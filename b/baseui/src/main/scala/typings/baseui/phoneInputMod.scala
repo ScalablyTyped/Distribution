@@ -759,731 +759,489 @@ object phoneInputMod {
     @js.native
     val ^ : COUNTRIES = js.native
     
-    @scala.inline
-    implicit class COUNTRIESMutableBuilder[Self <: COUNTRIES] (val x: Self) extends AnyVal {
+    extension [Self <: COUNTRIES](x: Self) {
       
-      @scala.inline
-      def setAD(value: DialCodeIdLabel): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
+      inline def setAD(value: DialCodeIdLabel): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAE(value: `222`): Self = StObject.set(x, "AE", value.asInstanceOf[js.Any])
+      inline def setAE(value: `222`): Self = StObject.set(x, "AE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAF(value: DialCode): Self = StObject.set(x, "AF", value.asInstanceOf[js.Any])
+      inline def setAF(value: DialCode): Self = StObject.set(x, "AF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAG(value: `2`): Self = StObject.set(x, "AG", value.asInstanceOf[js.Any])
+      inline def setAG(value: `2`): Self = StObject.set(x, "AG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAI(value: `1`): Self = StObject.set(x, "AI", value.asInstanceOf[js.Any])
+      inline def setAI(value: `1`): Self = StObject.set(x, "AI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAL(value: Label): Self = StObject.set(x, "AL", value.asInstanceOf[js.Any])
+      inline def setAL(value: Label): Self = StObject.set(x, "AL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAM(value: `4`): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
+      inline def setAM(value: `4`): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAO(value: `0`): Self = StObject.set(x, "AO", value.asInstanceOf[js.Any])
+      inline def setAO(value: `0`): Self = StObject.set(x, "AO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAR(value: `3`): Self = StObject.set(x, "AR", value.asInstanceOf[js.Any])
+      inline def setAR(value: `3`): Self = StObject.set(x, "AR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAS(value: IdLabel): Self = StObject.set(x, "AS", value.asInstanceOf[js.Any])
+      inline def setAS(value: IdLabel): Self = StObject.set(x, "AS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAT(value: `7`): Self = StObject.set(x, "AT", value.asInstanceOf[js.Any])
+      inline def setAT(value: `7`): Self = StObject.set(x, "AT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAU(value: `6`): Self = StObject.set(x, "AU", value.asInstanceOf[js.Any])
+      inline def setAU(value: `6`): Self = StObject.set(x, "AU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAW(value: `5`): Self = StObject.set(x, "AW", value.asInstanceOf[js.Any])
+      inline def setAW(value: `5`): Self = StObject.set(x, "AW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAX(value: `235`): Self = StObject.set(x, "AX", value.asInstanceOf[js.Any])
+      inline def setAX(value: `235`): Self = StObject.set(x, "AX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAZ(value: `8`): Self = StObject.set(x, "AZ", value.asInstanceOf[js.Any])
+      inline def setAZ(value: `8`): Self = StObject.set(x, "AZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBA(value: `20`): Self = StObject.set(x, "BA", value.asInstanceOf[js.Any])
+      inline def setBA(value: `20`): Self = StObject.set(x, "BA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBB(value: `12`): Self = StObject.set(x, "BB", value.asInstanceOf[js.Any])
+      inline def setBB(value: `12`): Self = StObject.set(x, "BB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBD(value: `11`): Self = StObject.set(x, "BD", value.asInstanceOf[js.Any])
+      inline def setBD(value: `11`): Self = StObject.set(x, "BD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBE(value: `14`): Self = StObject.set(x, "BE", value.asInstanceOf[js.Any])
+      inline def setBE(value: `14`): Self = StObject.set(x, "BE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBF(value: `27`): Self = StObject.set(x, "BF", value.asInstanceOf[js.Any])
+      inline def setBF(value: `27`): Self = StObject.set(x, "BF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBG(value: `26`): Self = StObject.set(x, "BG", value.asInstanceOf[js.Any])
+      inline def setBG(value: `26`): Self = StObject.set(x, "BG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBH(value: `10`): Self = StObject.set(x, "BH", value.asInstanceOf[js.Any])
+      inline def setBH(value: `10`): Self = StObject.set(x, "BH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBI(value: `28`): Self = StObject.set(x, "BI", value.asInstanceOf[js.Any])
+      inline def setBI(value: `28`): Self = StObject.set(x, "BI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBJ(value: `16`): Self = StObject.set(x, "BJ", value.asInstanceOf[js.Any])
+      inline def setBJ(value: `16`): Self = StObject.set(x, "BJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBL(value: `172`): Self = StObject.set(x, "BL", value.asInstanceOf[js.Any])
+      inline def setBL(value: `172`): Self = StObject.set(x, "BL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBM(value: `17`): Self = StObject.set(x, "BM", value.asInstanceOf[js.Any])
+      inline def setBM(value: `17`): Self = StObject.set(x, "BM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBN(value: `25`): Self = StObject.set(x, "BN", value.asInstanceOf[js.Any])
+      inline def setBN(value: `25`): Self = StObject.set(x, "BN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBO(value: `19`): Self = StObject.set(x, "BO", value.asInstanceOf[js.Any])
+      inline def setBO(value: `19`): Self = StObject.set(x, "BO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBR(value: `22`): Self = StObject.set(x, "BR", value.asInstanceOf[js.Any])
+      inline def setBR(value: `22`): Self = StObject.set(x, "BR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBS(value: `9`): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
+      inline def setBS(value: `9`): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBT(value: `18`): Self = StObject.set(x, "BT", value.asInstanceOf[js.Any])
+      inline def setBT(value: `18`): Self = StObject.set(x, "BT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBW(value: `21`): Self = StObject.set(x, "BW", value.asInstanceOf[js.Any])
+      inline def setBW(value: `21`): Self = StObject.set(x, "BW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBY(value: `13`): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
+      inline def setBY(value: `13`): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBZ(value: `15`): Self = StObject.set(x, "BZ", value.asInstanceOf[js.Any])
+      inline def setBZ(value: `15`): Self = StObject.set(x, "BZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCA(value: `31`): Self = StObject.set(x, "CA", value.asInstanceOf[js.Any])
+      inline def setCA(value: `31`): Self = StObject.set(x, "CA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCC(value: `39`): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
+      inline def setCC(value: `39`): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCD(value: `42`): Self = StObject.set(x, "CD", value.asInstanceOf[js.Any])
+      inline def setCD(value: `42`): Self = StObject.set(x, "CD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCF(value: `34`): Self = StObject.set(x, "CF", value.asInstanceOf[js.Any])
+      inline def setCF(value: `34`): Self = StObject.set(x, "CF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCG(value: `43`): Self = StObject.set(x, "CG", value.asInstanceOf[js.Any])
+      inline def setCG(value: `43`): Self = StObject.set(x, "CG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCH(value: `203`): Self = StObject.set(x, "CH", value.asInstanceOf[js.Any])
+      inline def setCH(value: `203`): Self = StObject.set(x, "CH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCI(value: `46`): Self = StObject.set(x, "CI", value.asInstanceOf[js.Any])
+      inline def setCI(value: `46`): Self = StObject.set(x, "CI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCK(value: `44`): Self = StObject.set(x, "CK", value.asInstanceOf[js.Any])
+      inline def setCK(value: `44`): Self = StObject.set(x, "CK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCL(value: `36`): Self = StObject.set(x, "CL", value.asInstanceOf[js.Any])
+      inline def setCL(value: `36`): Self = StObject.set(x, "CL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCM(value: `30`): Self = StObject.set(x, "CM", value.asInstanceOf[js.Any])
+      inline def setCM(value: `30`): Self = StObject.set(x, "CM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCN(value: `37`): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
+      inline def setCN(value: `37`): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCO(value: `40`): Self = StObject.set(x, "CO", value.asInstanceOf[js.Any])
+      inline def setCO(value: `40`): Self = StObject.set(x, "CO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCR(value: `45`): Self = StObject.set(x, "CR", value.asInstanceOf[js.Any])
+      inline def setCR(value: `45`): Self = StObject.set(x, "CR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCU(value: `48`): Self = StObject.set(x, "CU", value.asInstanceOf[js.Any])
+      inline def setCU(value: `48`): Self = StObject.set(x, "CU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCV(value: `32`): Self = StObject.set(x, "CV", value.asInstanceOf[js.Any])
+      inline def setCV(value: `32`): Self = StObject.set(x, "CV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCW(value: `49`): Self = StObject.set(x, "CW", value.asInstanceOf[js.Any])
+      inline def setCW(value: `49`): Self = StObject.set(x, "CW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCX(value: `38`): Self = StObject.set(x, "CX", value.asInstanceOf[js.Any])
+      inline def setCX(value: `38`): Self = StObject.set(x, "CX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCY(value: `50`): Self = StObject.set(x, "CY", value.asInstanceOf[js.Any])
+      inline def setCY(value: `50`): Self = StObject.set(x, "CY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCZ(value: `51`): Self = StObject.set(x, "CZ", value.asInstanceOf[js.Any])
+      inline def setCZ(value: `51`): Self = StObject.set(x, "CZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDE(value: `73`): Self = StObject.set(x, "DE", value.asInstanceOf[js.Any])
+      inline def setDE(value: `73`): Self = StObject.set(x, "DE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDJ(value: `53`): Self = StObject.set(x, "DJ", value.asInstanceOf[js.Any])
+      inline def setDJ(value: `53`): Self = StObject.set(x, "DJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDK(value: `52`): Self = StObject.set(x, "DK", value.asInstanceOf[js.Any])
+      inline def setDK(value: `52`): Self = StObject.set(x, "DK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDM(value: `54`): Self = StObject.set(x, "DM", value.asInstanceOf[js.Any])
+      inline def setDM(value: `54`): Self = StObject.set(x, "DM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDO(value: `55`): Self = StObject.set(x, "DO", value.asInstanceOf[js.Any])
+      inline def setDO(value: `55`): Self = StObject.set(x, "DO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDZ(value: DialCodeId): Self = StObject.set(x, "DZ", value.asInstanceOf[js.Any])
+      inline def setDZ(value: DialCodeId): Self = StObject.set(x, "DZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEC(value: `56`): Self = StObject.set(x, "EC", value.asInstanceOf[js.Any])
+      inline def setEC(value: `56`): Self = StObject.set(x, "EC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEE(value: `61`): Self = StObject.set(x, "EE", value.asInstanceOf[js.Any])
+      inline def setEE(value: `61`): Self = StObject.set(x, "EE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEG(value: `57`): Self = StObject.set(x, "EG", value.asInstanceOf[js.Any])
+      inline def setEG(value: `57`): Self = StObject.set(x, "EG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setER(value: `60`): Self = StObject.set(x, "ER", value.asInstanceOf[js.Any])
+      inline def setER(value: `60`): Self = StObject.set(x, "ER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setES(value: `196`): Self = StObject.set(x, "ES", value.asInstanceOf[js.Any])
+      inline def setES(value: `196`): Self = StObject.set(x, "ES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setET(value: `62`): Self = StObject.set(x, "ET", value.asInstanceOf[js.Any])
+      inline def setET(value: `62`): Self = StObject.set(x, "ET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFI(value: `66`): Self = StObject.set(x, "FI", value.asInstanceOf[js.Any])
+      inline def setFI(value: `66`): Self = StObject.set(x, "FI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFJ(value: `65`): Self = StObject.set(x, "FJ", value.asInstanceOf[js.Any])
+      inline def setFJ(value: `65`): Self = StObject.set(x, "FJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFK(value: `63`): Self = StObject.set(x, "FK", value.asInstanceOf[js.Any])
+      inline def setFK(value: `63`): Self = StObject.set(x, "FK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFM(value: `132`): Self = StObject.set(x, "FM", value.asInstanceOf[js.Any])
+      inline def setFM(value: `132`): Self = StObject.set(x, "FM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFO(value: `64`): Self = StObject.set(x, "FO", value.asInstanceOf[js.Any])
+      inline def setFO(value: `64`): Self = StObject.set(x, "FO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFR(value: `67`): Self = StObject.set(x, "FR", value.asInstanceOf[js.Any])
+      inline def setFR(value: `67`): Self = StObject.set(x, "FR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGA(value: `70`): Self = StObject.set(x, "GA", value.asInstanceOf[js.Any])
+      inline def setGA(value: `70`): Self = StObject.set(x, "GA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGB(value: `223`): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
+      inline def setGB(value: `223`): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGD(value: `78`): Self = StObject.set(x, "GD", value.asInstanceOf[js.Any])
+      inline def setGD(value: `78`): Self = StObject.set(x, "GD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGE(value: `72`): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
+      inline def setGE(value: `72`): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGF(value: `68`): Self = StObject.set(x, "GF", value.asInstanceOf[js.Any])
+      inline def setGF(value: `68`): Self = StObject.set(x, "GF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGG(value: `82`): Self = StObject.set(x, "GG", value.asInstanceOf[js.Any])
+      inline def setGG(value: `82`): Self = StObject.set(x, "GG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGH(value: `74`): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
+      inline def setGH(value: `74`): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGI(value: `75`): Self = StObject.set(x, "GI", value.asInstanceOf[js.Any])
+      inline def setGI(value: `75`): Self = StObject.set(x, "GI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGL(value: `77`): Self = StObject.set(x, "GL", value.asInstanceOf[js.Any])
+      inline def setGL(value: `77`): Self = StObject.set(x, "GL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGM(value: `71`): Self = StObject.set(x, "GM", value.asInstanceOf[js.Any])
+      inline def setGM(value: `71`): Self = StObject.set(x, "GM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGN(value: `83`): Self = StObject.set(x, "GN", value.asInstanceOf[js.Any])
+      inline def setGN(value: `83`): Self = StObject.set(x, "GN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGP(value: `79`): Self = StObject.set(x, "GP", value.asInstanceOf[js.Any])
+      inline def setGP(value: `79`): Self = StObject.set(x, "GP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGQ(value: `59`): Self = StObject.set(x, "GQ", value.asInstanceOf[js.Any])
+      inline def setGQ(value: `59`): Self = StObject.set(x, "GQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGR(value: `76`): Self = StObject.set(x, "GR", value.asInstanceOf[js.Any])
+      inline def setGR(value: `76`): Self = StObject.set(x, "GR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGT(value: `81`): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
+      inline def setGT(value: `81`): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGU(value: `80`): Self = StObject.set(x, "GU", value.asInstanceOf[js.Any])
+      inline def setGU(value: `80`): Self = StObject.set(x, "GU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGW(value: `84`): Self = StObject.set(x, "GW", value.asInstanceOf[js.Any])
+      inline def setGW(value: `84`): Self = StObject.set(x, "GW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGY(value: `85`): Self = StObject.set(x, "GY", value.asInstanceOf[js.Any])
+      inline def setGY(value: `85`): Self = StObject.set(x, "GY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHK(value: `88`): Self = StObject.set(x, "HK", value.asInstanceOf[js.Any])
+      inline def setHK(value: `88`): Self = StObject.set(x, "HK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHN(value: `87`): Self = StObject.set(x, "HN", value.asInstanceOf[js.Any])
+      inline def setHN(value: `87`): Self = StObject.set(x, "HN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHR(value: `47`): Self = StObject.set(x, "HR", value.asInstanceOf[js.Any])
+      inline def setHR(value: `47`): Self = StObject.set(x, "HR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHT(value: `86`): Self = StObject.set(x, "HT", value.asInstanceOf[js.Any])
+      inline def setHT(value: `86`): Self = StObject.set(x, "HT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHU(value: `89`): Self = StObject.set(x, "HU", value.asInstanceOf[js.Any])
+      inline def setHU(value: `89`): Self = StObject.set(x, "HU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: `92`): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: `92`): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIE(value: `95`): Self = StObject.set(x, "IE", value.asInstanceOf[js.Any])
+      inline def setIE(value: `95`): Self = StObject.set(x, "IE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIL(value: `97`): Self = StObject.set(x, "IL", value.asInstanceOf[js.Any])
+      inline def setIL(value: `97`): Self = StObject.set(x, "IL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIM(value: `96`): Self = StObject.set(x, "IM", value.asInstanceOf[js.Any])
+      inline def setIM(value: `96`): Self = StObject.set(x, "IM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIN(value: `91`): Self = StObject.set(x, "IN", value.asInstanceOf[js.Any])
+      inline def setIN(value: `91`): Self = StObject.set(x, "IN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIO(value: `23`): Self = StObject.set(x, "IO", value.asInstanceOf[js.Any])
+      inline def setIO(value: `23`): Self = StObject.set(x, "IO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIQ(value: `94`): Self = StObject.set(x, "IQ", value.asInstanceOf[js.Any])
+      inline def setIQ(value: `94`): Self = StObject.set(x, "IQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIR(value: `93`): Self = StObject.set(x, "IR", value.asInstanceOf[js.Any])
+      inline def setIR(value: `93`): Self = StObject.set(x, "IR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIS(value: `90`): Self = StObject.set(x, "IS", value.asInstanceOf[js.Any])
+      inline def setIS(value: `90`): Self = StObject.set(x, "IS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIT(value: `98`): Self = StObject.set(x, "IT", value.asInstanceOf[js.Any])
+      inline def setIT(value: `98`): Self = StObject.set(x, "IT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJE(value: `101`): Self = StObject.set(x, "JE", value.asInstanceOf[js.Any])
+      inline def setJE(value: `101`): Self = StObject.set(x, "JE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJM(value: `99`): Self = StObject.set(x, "JM", value.asInstanceOf[js.Any])
+      inline def setJM(value: `99`): Self = StObject.set(x, "JM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJO(value: `102`): Self = StObject.set(x, "JO", value.asInstanceOf[js.Any])
+      inline def setJO(value: `102`): Self = StObject.set(x, "JO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJP(value: `100`): Self = StObject.set(x, "JP", value.asInstanceOf[js.Any])
+      inline def setJP(value: `100`): Self = StObject.set(x, "JP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKE(value: `104`): Self = StObject.set(x, "KE", value.asInstanceOf[js.Any])
+      inline def setKE(value: `104`): Self = StObject.set(x, "KE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKG(value: `108`): Self = StObject.set(x, "KG", value.asInstanceOf[js.Any])
+      inline def setKG(value: `108`): Self = StObject.set(x, "KG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKH(value: `29`): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
+      inline def setKH(value: `29`): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKI(value: `105`): Self = StObject.set(x, "KI", value.asInstanceOf[js.Any])
+      inline def setKI(value: `105`): Self = StObject.set(x, "KI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKM(value: `41`): Self = StObject.set(x, "KM", value.asInstanceOf[js.Any])
+      inline def setKM(value: `41`): Self = StObject.set(x, "KM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKN(value: `174`): Self = StObject.set(x, "KN", value.asInstanceOf[js.Any])
+      inline def setKN(value: `174`): Self = StObject.set(x, "KN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKP(value: `152`): Self = StObject.set(x, "KP", value.asInstanceOf[js.Any])
+      inline def setKP(value: `152`): Self = StObject.set(x, "KP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKR(value: `194`): Self = StObject.set(x, "KR", value.asInstanceOf[js.Any])
+      inline def setKR(value: `194`): Self = StObject.set(x, "KR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKW(value: `107`): Self = StObject.set(x, "KW", value.asInstanceOf[js.Any])
+      inline def setKW(value: `107`): Self = StObject.set(x, "KW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKY(value: `33`): Self = StObject.set(x, "KY", value.asInstanceOf[js.Any])
+      inline def setKY(value: `33`): Self = StObject.set(x, "KY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKZ(value: `103`): Self = StObject.set(x, "KZ", value.asInstanceOf[js.Any])
+      inline def setKZ(value: `103`): Self = StObject.set(x, "KZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLA(value: `109`): Self = StObject.set(x, "LA", value.asInstanceOf[js.Any])
+      inline def setLA(value: `109`): Self = StObject.set(x, "LA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLB(value: `111`): Self = StObject.set(x, "LB", value.asInstanceOf[js.Any])
+      inline def setLB(value: `111`): Self = StObject.set(x, "LB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLC(value: `175`): Self = StObject.set(x, "LC", value.asInstanceOf[js.Any])
+      inline def setLC(value: `175`): Self = StObject.set(x, "LC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLI(value: `115`): Self = StObject.set(x, "LI", value.asInstanceOf[js.Any])
+      inline def setLI(value: `115`): Self = StObject.set(x, "LI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLK(value: `197`): Self = StObject.set(x, "LK", value.asInstanceOf[js.Any])
+      inline def setLK(value: `197`): Self = StObject.set(x, "LK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLR(value: `113`): Self = StObject.set(x, "LR", value.asInstanceOf[js.Any])
+      inline def setLR(value: `113`): Self = StObject.set(x, "LR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLS(value: `112`): Self = StObject.set(x, "LS", value.asInstanceOf[js.Any])
+      inline def setLS(value: `112`): Self = StObject.set(x, "LS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLT(value: `116`): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
+      inline def setLT(value: `116`): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLU(value: `117`): Self = StObject.set(x, "LU", value.asInstanceOf[js.Any])
+      inline def setLU(value: `117`): Self = StObject.set(x, "LU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLV(value: `110`): Self = StObject.set(x, "LV", value.asInstanceOf[js.Any])
+      inline def setLV(value: `110`): Self = StObject.set(x, "LV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLY(value: `114`): Self = StObject.set(x, "LY", value.asInstanceOf[js.Any])
+      inline def setLY(value: `114`): Self = StObject.set(x, "LY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMA(value: `138`): Self = StObject.set(x, "MA", value.asInstanceOf[js.Any])
+      inline def setMA(value: `138`): Self = StObject.set(x, "MA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMC(value: `134`): Self = StObject.set(x, "MC", value.asInstanceOf[js.Any])
+      inline def setMC(value: `134`): Self = StObject.set(x, "MC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMD(value: `133`): Self = StObject.set(x, "MD", value.asInstanceOf[js.Any])
+      inline def setMD(value: `133`): Self = StObject.set(x, "MD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setME(value: `136`): Self = StObject.set(x, "ME", value.asInstanceOf[js.Any])
+      inline def setME(value: `136`): Self = StObject.set(x, "ME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMF(value: `176`): Self = StObject.set(x, "MF", value.asInstanceOf[js.Any])
+      inline def setMF(value: `176`): Self = StObject.set(x, "MF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMG(value: `120`): Self = StObject.set(x, "MG", value.asInstanceOf[js.Any])
+      inline def setMG(value: `120`): Self = StObject.set(x, "MG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMH(value: `126`): Self = StObject.set(x, "MH", value.asInstanceOf[js.Any])
+      inline def setMH(value: `126`): Self = StObject.set(x, "MH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMK(value: `119`): Self = StObject.set(x, "MK", value.asInstanceOf[js.Any])
+      inline def setMK(value: `119`): Self = StObject.set(x, "MK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setML(value: `124`): Self = StObject.set(x, "ML", value.asInstanceOf[js.Any])
+      inline def setML(value: `124`): Self = StObject.set(x, "ML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMM(value: `140`): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
+      inline def setMM(value: `140`): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMN(value: `135`): Self = StObject.set(x, "MN", value.asInstanceOf[js.Any])
+      inline def setMN(value: `135`): Self = StObject.set(x, "MN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMO(value: `118`): Self = StObject.set(x, "MO", value.asInstanceOf[js.Any])
+      inline def setMO(value: `118`): Self = StObject.set(x, "MO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMP(value: `153`): Self = StObject.set(x, "MP", value.asInstanceOf[js.Any])
+      inline def setMP(value: `153`): Self = StObject.set(x, "MP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMQ(value: `127`): Self = StObject.set(x, "MQ", value.asInstanceOf[js.Any])
+      inline def setMQ(value: `127`): Self = StObject.set(x, "MQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMR(value: `128`): Self = StObject.set(x, "MR", value.asInstanceOf[js.Any])
+      inline def setMR(value: `128`): Self = StObject.set(x, "MR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMS(value: `137`): Self = StObject.set(x, "MS", value.asInstanceOf[js.Any])
+      inline def setMS(value: `137`): Self = StObject.set(x, "MS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMT(value: `125`): Self = StObject.set(x, "MT", value.asInstanceOf[js.Any])
+      inline def setMT(value: `125`): Self = StObject.set(x, "MT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMU(value: `129`): Self = StObject.set(x, "MU", value.asInstanceOf[js.Any])
+      inline def setMU(value: `129`): Self = StObject.set(x, "MU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMV(value: `123`): Self = StObject.set(x, "MV", value.asInstanceOf[js.Any])
+      inline def setMV(value: `123`): Self = StObject.set(x, "MV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMW(value: `121`): Self = StObject.set(x, "MW", value.asInstanceOf[js.Any])
+      inline def setMW(value: `121`): Self = StObject.set(x, "MW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMX(value: `131`): Self = StObject.set(x, "MX", value.asInstanceOf[js.Any])
+      inline def setMX(value: `131`): Self = StObject.set(x, "MX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMY(value: `122`): Self = StObject.set(x, "MY", value.asInstanceOf[js.Any])
+      inline def setMY(value: `122`): Self = StObject.set(x, "MY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMZ(value: `139`): Self = StObject.set(x, "MZ", value.asInstanceOf[js.Any])
+      inline def setMZ(value: `139`): Self = StObject.set(x, "MZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNA(value: `141`): Self = StObject.set(x, "NA", value.asInstanceOf[js.Any])
+      inline def setNA(value: `141`): Self = StObject.set(x, "NA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNC(value: `145`): Self = StObject.set(x, "NC", value.asInstanceOf[js.Any])
+      inline def setNC(value: `145`): Self = StObject.set(x, "NC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNE(value: `148`): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
+      inline def setNE(value: `148`): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNF(value: `151`): Self = StObject.set(x, "NF", value.asInstanceOf[js.Any])
+      inline def setNF(value: `151`): Self = StObject.set(x, "NF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNG(value: `149`): Self = StObject.set(x, "NG", value.asInstanceOf[js.Any])
+      inline def setNG(value: `149`): Self = StObject.set(x, "NG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNI(value: `147`): Self = StObject.set(x, "NI", value.asInstanceOf[js.Any])
+      inline def setNI(value: `147`): Self = StObject.set(x, "NI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNL(value: `144`): Self = StObject.set(x, "NL", value.asInstanceOf[js.Any])
+      inline def setNL(value: `144`): Self = StObject.set(x, "NL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO(value: `154`): Self = StObject.set(x, "NO", value.asInstanceOf[js.Any])
+      inline def setNO(value: `154`): Self = StObject.set(x, "NO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNP(value: `143`): Self = StObject.set(x, "NP", value.asInstanceOf[js.Any])
+      inline def setNP(value: `143`): Self = StObject.set(x, "NP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNR(value: `142`): Self = StObject.set(x, "NR", value.asInstanceOf[js.Any])
+      inline def setNR(value: `142`): Self = StObject.set(x, "NR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNU(value: `150`): Self = StObject.set(x, "NU", value.asInstanceOf[js.Any])
+      inline def setNU(value: `150`): Self = StObject.set(x, "NU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNZ(value: `146`): Self = StObject.set(x, "NZ", value.asInstanceOf[js.Any])
+      inline def setNZ(value: `146`): Self = StObject.set(x, "NZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOM(value: `155`): Self = StObject.set(x, "OM", value.asInstanceOf[js.Any])
+      inline def setOM(value: `155`): Self = StObject.set(x, "OM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPA(value: `159`): Self = StObject.set(x, "PA", value.asInstanceOf[js.Any])
+      inline def setPA(value: `159`): Self = StObject.set(x, "PA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPE(value: `162`): Self = StObject.set(x, "PE", value.asInstanceOf[js.Any])
+      inline def setPE(value: `162`): Self = StObject.set(x, "PE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPF(value: `69`): Self = StObject.set(x, "PF", value.asInstanceOf[js.Any])
+      inline def setPF(value: `69`): Self = StObject.set(x, "PF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPG(value: `160`): Self = StObject.set(x, "PG", value.asInstanceOf[js.Any])
+      inline def setPG(value: `160`): Self = StObject.set(x, "PG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPH(value: `163`): Self = StObject.set(x, "PH", value.asInstanceOf[js.Any])
+      inline def setPH(value: `163`): Self = StObject.set(x, "PH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPK(value: `156`): Self = StObject.set(x, "PK", value.asInstanceOf[js.Any])
+      inline def setPK(value: `156`): Self = StObject.set(x, "PK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPL(value: `164`): Self = StObject.set(x, "PL", value.asInstanceOf[js.Any])
+      inline def setPL(value: `164`): Self = StObject.set(x, "PL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPM(value: `177`): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
+      inline def setPM(value: `177`): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPR(value: `166`): Self = StObject.set(x, "PR", value.asInstanceOf[js.Any])
+      inline def setPR(value: `166`): Self = StObject.set(x, "PR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPS(value: `158`): Self = StObject.set(x, "PS", value.asInstanceOf[js.Any])
+      inline def setPS(value: `158`): Self = StObject.set(x, "PS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPT(value: `165`): Self = StObject.set(x, "PT", value.asInstanceOf[js.Any])
+      inline def setPT(value: `165`): Self = StObject.set(x, "PT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPW(value: `157`): Self = StObject.set(x, "PW", value.asInstanceOf[js.Any])
+      inline def setPW(value: `157`): Self = StObject.set(x, "PW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPY(value: `161`): Self = StObject.set(x, "PY", value.asInstanceOf[js.Any])
+      inline def setPY(value: `161`): Self = StObject.set(x, "PY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQA(value: `167`): Self = StObject.set(x, "QA", value.asInstanceOf[js.Any])
+      inline def setQA(value: `167`): Self = StObject.set(x, "QA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRE(value: `168`): Self = StObject.set(x, "RE", value.asInstanceOf[js.Any])
+      inline def setRE(value: `168`): Self = StObject.set(x, "RE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRO(value: `169`): Self = StObject.set(x, "RO", value.asInstanceOf[js.Any])
+      inline def setRO(value: `169`): Self = StObject.set(x, "RO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRS(value: `184`): Self = StObject.set(x, "RS", value.asInstanceOf[js.Any])
+      inline def setRS(value: `184`): Self = StObject.set(x, "RS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRU(value: `170`): Self = StObject.set(x, "RU", value.asInstanceOf[js.Any])
+      inline def setRU(value: `170`): Self = StObject.set(x, "RU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRW(value: `171`): Self = StObject.set(x, "RW", value.asInstanceOf[js.Any])
+      inline def setRW(value: `171`): Self = StObject.set(x, "RW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSA(value: `182`): Self = StObject.set(x, "SA", value.asInstanceOf[js.Any])
+      inline def setSA(value: `182`): Self = StObject.set(x, "SA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSB(value: `191`): Self = StObject.set(x, "SB", value.asInstanceOf[js.Any])
+      inline def setSB(value: `191`): Self = StObject.set(x, "SB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSC(value: `185`): Self = StObject.set(x, "SC", value.asInstanceOf[js.Any])
+      inline def setSC(value: `185`): Self = StObject.set(x, "SC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSD(value: `198`): Self = StObject.set(x, "SD", value.asInstanceOf[js.Any])
+      inline def setSD(value: `198`): Self = StObject.set(x, "SD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSE(value: `202`): Self = StObject.set(x, "SE", value.asInstanceOf[js.Any])
+      inline def setSE(value: `202`): Self = StObject.set(x, "SE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSG(value: `187`): Self = StObject.set(x, "SG", value.asInstanceOf[js.Any])
+      inline def setSG(value: `187`): Self = StObject.set(x, "SG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSH(value: `173`): Self = StObject.set(x, "SH", value.asInstanceOf[js.Any])
+      inline def setSH(value: `173`): Self = StObject.set(x, "SH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSI(value: `190`): Self = StObject.set(x, "SI", value.asInstanceOf[js.Any])
+      inline def setSI(value: `190`): Self = StObject.set(x, "SI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSJ(value: `200`): Self = StObject.set(x, "SJ", value.asInstanceOf[js.Any])
+      inline def setSJ(value: `200`): Self = StObject.set(x, "SJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSK(value: `189`): Self = StObject.set(x, "SK", value.asInstanceOf[js.Any])
+      inline def setSK(value: `189`): Self = StObject.set(x, "SK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSL(value: `186`): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
+      inline def setSL(value: `186`): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSM(value: `180`): Self = StObject.set(x, "SM", value.asInstanceOf[js.Any])
+      inline def setSM(value: `180`): Self = StObject.set(x, "SM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSN(value: `183`): Self = StObject.set(x, "SN", value.asInstanceOf[js.Any])
+      inline def setSN(value: `183`): Self = StObject.set(x, "SN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSO(value: `192`): Self = StObject.set(x, "SO", value.asInstanceOf[js.Any])
+      inline def setSO(value: `192`): Self = StObject.set(x, "SO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSR(value: `199`): Self = StObject.set(x, "SR", value.asInstanceOf[js.Any])
+      inline def setSR(value: `199`): Self = StObject.set(x, "SR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSS(value: `195`): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
+      inline def setSS(value: `195`): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setST(value: `181`): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
+      inline def setST(value: `181`): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSV(value: `58`): Self = StObject.set(x, "SV", value.asInstanceOf[js.Any])
+      inline def setSV(value: `58`): Self = StObject.set(x, "SV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSX(value: `188`): Self = StObject.set(x, "SX", value.asInstanceOf[js.Any])
+      inline def setSX(value: `188`): Self = StObject.set(x, "SX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSY(value: `204`): Self = StObject.set(x, "SY", value.asInstanceOf[js.Any])
+      inline def setSY(value: `204`): Self = StObject.set(x, "SY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSZ(value: `201`): Self = StObject.set(x, "SZ", value.asInstanceOf[js.Any])
+      inline def setSZ(value: `201`): Self = StObject.set(x, "SZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTC(value: `217`): Self = StObject.set(x, "TC", value.asInstanceOf[js.Any])
+      inline def setTC(value: `217`): Self = StObject.set(x, "TC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTD(value: `35`): Self = StObject.set(x, "TD", value.asInstanceOf[js.Any])
+      inline def setTD(value: `35`): Self = StObject.set(x, "TD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTG(value: `210`): Self = StObject.set(x, "TG", value.asInstanceOf[js.Any])
+      inline def setTG(value: `210`): Self = StObject.set(x, "TG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTH(value: `208`): Self = StObject.set(x, "TH", value.asInstanceOf[js.Any])
+      inline def setTH(value: `208`): Self = StObject.set(x, "TH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTJ(value: `206`): Self = StObject.set(x, "TJ", value.asInstanceOf[js.Any])
+      inline def setTJ(value: `206`): Self = StObject.set(x, "TJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTK(value: `211`): Self = StObject.set(x, "TK", value.asInstanceOf[js.Any])
+      inline def setTK(value: `211`): Self = StObject.set(x, "TK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTL(value: `209`): Self = StObject.set(x, "TL", value.asInstanceOf[js.Any])
+      inline def setTL(value: `209`): Self = StObject.set(x, "TL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTM(value: `216`): Self = StObject.set(x, "TM", value.asInstanceOf[js.Any])
+      inline def setTM(value: `216`): Self = StObject.set(x, "TM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTN(value: `214`): Self = StObject.set(x, "TN", value.asInstanceOf[js.Any])
+      inline def setTN(value: `214`): Self = StObject.set(x, "TN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTO(value: `212`): Self = StObject.set(x, "TO", value.asInstanceOf[js.Any])
+      inline def setTO(value: `212`): Self = StObject.set(x, "TO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTR(value: `215`): Self = StObject.set(x, "TR", value.asInstanceOf[js.Any])
+      inline def setTR(value: `215`): Self = StObject.set(x, "TR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTT(value: `213`): Self = StObject.set(x, "TT", value.asInstanceOf[js.Any])
+      inline def setTT(value: `213`): Self = StObject.set(x, "TT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTV(value: `218`): Self = StObject.set(x, "TV", value.asInstanceOf[js.Any])
+      inline def setTV(value: `218`): Self = StObject.set(x, "TV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTW(value: `205`): Self = StObject.set(x, "TW", value.asInstanceOf[js.Any])
+      inline def setTW(value: `205`): Self = StObject.set(x, "TW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTZ(value: `207`): Self = StObject.set(x, "TZ", value.asInstanceOf[js.Any])
+      inline def setTZ(value: `207`): Self = StObject.set(x, "TZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUA(value: `221`): Self = StObject.set(x, "UA", value.asInstanceOf[js.Any])
+      inline def setUA(value: `221`): Self = StObject.set(x, "UA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUG(value: `220`): Self = StObject.set(x, "UG", value.asInstanceOf[js.Any])
+      inline def setUG(value: `220`): Self = StObject.set(x, "UG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUS(value: `224`): Self = StObject.set(x, "US", value.asInstanceOf[js.Any])
+      inline def setUS(value: `224`): Self = StObject.set(x, "US", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUY(value: `225`): Self = StObject.set(x, "UY", value.asInstanceOf[js.Any])
+      inline def setUY(value: `225`): Self = StObject.set(x, "UY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUZ(value: `226`): Self = StObject.set(x, "UZ", value.asInstanceOf[js.Any])
+      inline def setUZ(value: `226`): Self = StObject.set(x, "UZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVA(value: `228`): Self = StObject.set(x, "VA", value.asInstanceOf[js.Any])
+      inline def setVA(value: `228`): Self = StObject.set(x, "VA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVC(value: `178`): Self = StObject.set(x, "VC", value.asInstanceOf[js.Any])
+      inline def setVC(value: `178`): Self = StObject.set(x, "VC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVE(value: `229`): Self = StObject.set(x, "VE", value.asInstanceOf[js.Any])
+      inline def setVE(value: `229`): Self = StObject.set(x, "VE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVG(value: `24`): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
+      inline def setVG(value: `24`): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVI(value: `219`): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
+      inline def setVI(value: `219`): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVN(value: `230`): Self = StObject.set(x, "VN", value.asInstanceOf[js.Any])
+      inline def setVN(value: `230`): Self = StObject.set(x, "VN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVU(value: `227`): Self = StObject.set(x, "VU", value.asInstanceOf[js.Any])
+      inline def setVU(value: `227`): Self = StObject.set(x, "VU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWF(value: `231`): Self = StObject.set(x, "WF", value.asInstanceOf[js.Any])
+      inline def setWF(value: `231`): Self = StObject.set(x, "WF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWS(value: `179`): Self = StObject.set(x, "WS", value.asInstanceOf[js.Any])
+      inline def setWS(value: `179`): Self = StObject.set(x, "WS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXK(value: `106`): Self = StObject.set(x, "XK", value.asInstanceOf[js.Any])
+      inline def setXK(value: `106`): Self = StObject.set(x, "XK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYE(value: `232`): Self = StObject.set(x, "YE", value.asInstanceOf[js.Any])
+      inline def setYE(value: `232`): Self = StObject.set(x, "YE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYT(value: `130`): Self = StObject.set(x, "YT", value.asInstanceOf[js.Any])
+      inline def setYT(value: `130`): Self = StObject.set(x, "YT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZA(value: `193`): Self = StObject.set(x, "ZA", value.asInstanceOf[js.Any])
+      inline def setZA(value: `193`): Self = StObject.set(x, "ZA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZM(value: `233`): Self = StObject.set(x, "ZM", value.asInstanceOf[js.Any])
+      inline def setZM(value: `233`): Self = StObject.set(x, "ZM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZW(value: `234`): Self = StObject.set(x, "ZW", value.asInstanceOf[js.Any])
+      inline def setZW(value: `234`): Self = StObject.set(x, "ZW", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1535,14 +1293,11 @@ object phoneInputMod {
     @js.native
     val ^ : STATE_CHANGE_TYPE = js.native
     
-    @scala.inline
-    implicit class STATE_CHANGE_TYPEMutableBuilder[Self <: STATE_CHANGE_TYPE] (val x: Self) extends AnyVal {
+    extension [Self <: STATE_CHANGE_TYPE](x: Self) {
       
-      @scala.inline
-      def setCountryChange(value: countryChange): Self = StObject.set(x, "countryChange", value.asInstanceOf[js.Any])
+      inline def setCountryChange(value: countryChange): Self = StObject.set(x, "countryChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextChange(value: textChange): Self = StObject.set(x, "textChange", value.asInstanceOf[js.Any])
+      inline def setTextChange(value: textChange): Self = StObject.set(x, "textChange", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1614,8 +1369,7 @@ object phoneInputMod {
   }
   object Country {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dialCode: String,
       id: /* keyof baseui.baseui/phone-input.COUNTRIES */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any,
       label: String
@@ -1624,19 +1378,15 @@ object phoneInputMod {
       __obj.asInstanceOf[Country]
     }
     
-    @scala.inline
-    implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
+    extension [Self <: Country](x: Self) {
       
-      @scala.inline
-      def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+      inline def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(
+      inline def setId(
         value: /* keyof baseui.baseui/phone-input.COUNTRIES */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any
       ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1654,44 +1404,32 @@ object phoneInputMod {
   }
   object CountrySelectDropdownProps {
     
-    @scala.inline
-    def apply(): CountrySelectDropdownProps = {
+    inline def apply(): CountrySelectDropdownProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CountrySelectDropdownProps]
     }
     
-    @scala.inline
-    implicit class CountrySelectDropdownPropsMutableBuilder[Self <: CountrySelectDropdownProps] (val x: Self) extends AnyVal {
+    extension [Self <: CountrySelectDropdownProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReadonlyArrayReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReadonlyArrayReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCountry(value: Country): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: Country): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
+      inline def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
+      inline def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
       
-      @scala.inline
-      def setMaxDropdownHeight(value: String): Self = StObject.set(x, "maxDropdownHeight", value.asInstanceOf[js.Any])
+      inline def setMaxDropdownHeight(value: String): Self = StObject.set(x, "maxDropdownHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDropdownHeightUndefined: Self = StObject.set(x, "maxDropdownHeight", js.undefined)
+      inline def setMaxDropdownHeightUndefined: Self = StObject.set(x, "maxDropdownHeight", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: typings.baseui.anon.CountrySelectDropdown): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: typings.baseui.anon.CountrySelectDropdown): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -1717,71 +1455,50 @@ object phoneInputMod {
   }
   object CountrySelectProps {
     
-    @scala.inline
-    def apply(countries: StringDictionary[Country]): CountrySelectProps = {
+    inline def apply(countries: StringDictionary[Country]): CountrySelectProps = {
       val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any])
       __obj.asInstanceOf[CountrySelectProps]
     }
     
-    @scala.inline
-    implicit class CountrySelectPropsMutableBuilder[Self <: CountrySelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: CountrySelectProps](x: Self) {
       
-      @scala.inline
-      def setCountries(value: StringDictionary[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+      inline def setCountries(value: StringDictionary[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: Country): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: Country): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefNull: Self = StObject.set(x, "inputRef", null)
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      @scala.inline
-      def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
+      inline def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
+      inline def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
       
-      @scala.inline
-      def setMaxDropdownHeight(value: String): Self = StObject.set(x, "maxDropdownHeight", value.asInstanceOf[js.Any])
+      inline def setMaxDropdownHeight(value: String): Self = StObject.set(x, "maxDropdownHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDropdownHeightUndefined: Self = StObject.set(x, "maxDropdownHeight", js.undefined)
+      inline def setMaxDropdownHeightUndefined: Self = StObject.set(x, "maxDropdownHeight", js.undefined)
       
-      @scala.inline
-      def setMaxDropdownWidth(value: String): Self = StObject.set(x, "maxDropdownWidth", value.asInstanceOf[js.Any])
+      inline def setMaxDropdownWidth(value: String): Self = StObject.set(x, "maxDropdownWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDropdownWidthUndefined: Self = StObject.set(x, "maxDropdownWidth", js.undefined)
+      inline def setMaxDropdownWidthUndefined: Self = StObject.set(x, "maxDropdownWidth", js.undefined)
       
-      @scala.inline
-      def setOnCountryChange(value: /* event */ OnChangeParams => js.Any): Self = StObject.set(x, "onCountryChange", js.Any.fromFunction1(value))
+      inline def setOnCountryChange(value: /* event */ OnChangeParams => js.Any): Self = StObject.set(x, "onCountryChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCountryChangeUndefined: Self = StObject.set(x, "onCountryChange", js.undefined)
+      inline def setOnCountryChangeUndefined: Self = StObject.set(x, "onCountryChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: typings.baseui.anon.CountrySelect): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: typings.baseui.anon.CountrySelect): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSize(value: mini | default_ | compact | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: mini | default_ | compact | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -1793,23 +1510,18 @@ object phoneInputMod {
   }
   object FlagProps {
     
-    @scala.inline
-    def apply(iso: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any): FlagProps = {
+    inline def apply(iso: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any): FlagProps = {
       val __obj = js.Dynamic.literal(iso = iso.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlagProps]
     }
     
-    @scala.inline
-    implicit class FlagPropsMutableBuilder[Self <: FlagProps] (val x: Self) extends AnyVal {
+    extension [Self <: FlagProps](x: Self) {
       
-      @scala.inline
-      def setIso(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
+      inline def setIso(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -1821,17 +1533,14 @@ object phoneInputMod {
   }
   object PhoneInputLiteProps {
     
-    @scala.inline
-    def apply(countries: StringDictionary[Country]): PhoneInputLiteProps = {
+    inline def apply(countries: StringDictionary[Country]): PhoneInputLiteProps = {
       val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhoneInputLiteProps]
     }
     
-    @scala.inline
-    implicit class PhoneInputLitePropsMutableBuilder[Self <: PhoneInputLiteProps] (val x: Self) extends AnyVal {
+    extension [Self <: PhoneInputLiteProps](x: Self) {
       
-      @scala.inline
-      def setCountries(value: StringDictionary[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+      inline def setCountries(value: StringDictionary[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1875,86 +1584,66 @@ object phoneInputMod {
   }
   object PhoneInputOverrides {
     
-    @scala.inline
-    def apply(): PhoneInputOverrides = {
+    inline def apply(): PhoneInputOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PhoneInputOverrides]
     }
     
-    @scala.inline
-    implicit class PhoneInputOverridesMutableBuilder[Self <: PhoneInputOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: PhoneInputOverrides](x: Self) {
       
-      @scala.inline
-      def setCountrySelect(
+      inline def setCountrySelect(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "CountrySelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountrySelectDropdown(
+      inline def setCountrySelectDropdown(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "CountrySelectDropdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountrySelectDropdownDialcodeColumn(
+      inline def setCountrySelectDropdownDialcodeColumn(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "CountrySelectDropdownDialcodeColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountrySelectDropdownDialcodeColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownDialcodeColumn", js.undefined)
+      inline def setCountrySelectDropdownDialcodeColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownDialcodeColumn", js.undefined)
       
-      @scala.inline
-      def setCountrySelectDropdownFlagColumn(
+      inline def setCountrySelectDropdownFlagColumn(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "CountrySelectDropdownFlagColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountrySelectDropdownFlagColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownFlagColumn", js.undefined)
+      inline def setCountrySelectDropdownFlagColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownFlagColumn", js.undefined)
       
-      @scala.inline
-      def setCountrySelectDropdownListItem(
+      inline def setCountrySelectDropdownListItem(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "CountrySelectDropdownListItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountrySelectDropdownListItemUndefined: Self = StObject.set(x, "CountrySelectDropdownListItem", js.undefined)
+      inline def setCountrySelectDropdownListItemUndefined: Self = StObject.set(x, "CountrySelectDropdownListItem", js.undefined)
       
-      @scala.inline
-      def setCountrySelectDropdownNameColumn(
+      inline def setCountrySelectDropdownNameColumn(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "CountrySelectDropdownNameColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountrySelectDropdownNameColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownNameColumn", js.undefined)
+      inline def setCountrySelectDropdownNameColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownNameColumn", js.undefined)
       
-      @scala.inline
-      def setCountrySelectDropdownUndefined: Self = StObject.set(x, "CountrySelectDropdown", js.undefined)
+      inline def setCountrySelectDropdownUndefined: Self = StObject.set(x, "CountrySelectDropdown", js.undefined)
       
-      @scala.inline
-      def setCountrySelectUndefined: Self = StObject.set(x, "CountrySelect", js.undefined)
+      inline def setCountrySelectUndefined: Self = StObject.set(x, "CountrySelect", js.undefined)
       
-      @scala.inline
-      def setDialCode(
+      inline def setDialCode(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "DialCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialCodeUndefined: Self = StObject.set(x, "DialCode", js.undefined)
+      inline def setDialCodeUndefined: Self = StObject.set(x, "DialCode", js.undefined)
       
-      @scala.inline
-      def setFlagContainer(
+      inline def setFlagContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "FlagContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagContainerUndefined: Self = StObject.set(x, "FlagContainer", js.undefined)
+      inline def setFlagContainerUndefined: Self = StObject.set(x, "FlagContainer", js.undefined)
       
-      @scala.inline
-      def setInput(
+      inline def setInput(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     }
   }
   
@@ -1981,62 +1670,44 @@ object phoneInputMod {
   }
   object PhoneInputProps {
     
-    @scala.inline
-    def apply(): PhoneInputProps = {
+    inline def apply(): PhoneInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PhoneInputProps]
     }
     
-    @scala.inline
-    implicit class PhoneInputPropsMutableBuilder[Self <: PhoneInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: PhoneInputProps](x: Self) {
       
-      @scala.inline
-      def setCountry(value: Country): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: Country): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
+      inline def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
+      inline def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
       
-      @scala.inline
-      def setMaxDropdownHeight(value: String): Self = StObject.set(x, "maxDropdownHeight", value.asInstanceOf[js.Any])
+      inline def setMaxDropdownHeight(value: String): Self = StObject.set(x, "maxDropdownHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDropdownHeightUndefined: Self = StObject.set(x, "maxDropdownHeight", js.undefined)
+      inline def setMaxDropdownHeightUndefined: Self = StObject.set(x, "maxDropdownHeight", js.undefined)
       
-      @scala.inline
-      def setMaxDropdownWidth(value: String): Self = StObject.set(x, "maxDropdownWidth", value.asInstanceOf[js.Any])
+      inline def setMaxDropdownWidth(value: String): Self = StObject.set(x, "maxDropdownWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDropdownWidthUndefined: Self = StObject.set(x, "maxDropdownWidth", js.undefined)
+      inline def setMaxDropdownWidthUndefined: Self = StObject.set(x, "maxDropdownWidth", js.undefined)
       
-      @scala.inline
-      def setOnCountryChange(value: /* event */ OnChangeParams => js.Any): Self = StObject.set(x, "onCountryChange", js.Any.fromFunction1(value))
+      inline def setOnCountryChange(value: /* event */ OnChangeParams => js.Any): Self = StObject.set(x, "onCountryChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCountryChangeUndefined: Self = StObject.set(x, "onCountryChange", js.undefined)
+      inline def setOnCountryChangeUndefined: Self = StObject.set(x, "onCountryChange", js.undefined)
       
-      @scala.inline
-      def setOnTextChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => js.Any): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
+      inline def setOnTextChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => js.Any): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTextChangeUndefined: Self = StObject.set(x, "onTextChange", js.undefined)
+      inline def setOnTextChangeUndefined: Self = StObject.set(x, "onTextChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: PhoneInputOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: PhoneInputOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -2048,23 +1719,18 @@ object phoneInputMod {
   }
   object State {
     
-    @scala.inline
-    def apply(country: ReadonlyCountry): State = {
+    inline def apply(country: ReadonlyCountry): State = {
       val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setCountry(value: ReadonlyCountry): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: ReadonlyCountry): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -2076,11 +1742,9 @@ object phoneInputMod {
   trait StateChange extends StObject
   object StateChange {
     
-    @scala.inline
-    def countryChange: typings.baseui.baseuiStrings.countryChange = "countryChange".asInstanceOf[typings.baseui.baseuiStrings.countryChange]
+    inline def countryChange: typings.baseui.baseuiStrings.countryChange = "countryChange".asInstanceOf[typings.baseui.baseuiStrings.countryChange]
     
-    @scala.inline
-    def textChange: typings.baseui.baseuiStrings.textChange = "textChange".asInstanceOf[typings.baseui.baseuiStrings.textChange]
+    inline def textChange: typings.baseui.baseuiStrings.textChange = "textChange".asInstanceOf[typings.baseui.baseuiStrings.textChange]
   }
   
   type StateReducer = js.Function3[/* type */ StateChange, /* nextState */ State, /* currentState */ State, State]
@@ -2105,62 +1769,44 @@ object phoneInputMod {
   }
   object StatefulPhoneInputContainerProps {
     
-    @scala.inline
-    def apply(): StatefulPhoneInputContainerProps = {
+    inline def apply(): StatefulPhoneInputContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatefulPhoneInputContainerProps]
     }
     
-    @scala.inline
-    implicit class StatefulPhoneInputContainerPropsMutableBuilder[Self <: StatefulPhoneInputContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulPhoneInputContainerProps](x: Self) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
+      inline def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
+      inline def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
       
-      @scala.inline
-      def setOnCountryChange(value: /* event */ OnChangeParams => js.Any): Self = StObject.set(x, "onCountryChange", js.Any.fromFunction1(value))
+      inline def setOnCountryChange(value: /* event */ OnChangeParams => js.Any): Self = StObject.set(x, "onCountryChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCountryChangeUndefined: Self = StObject.set(x, "onCountryChange", js.undefined)
+      inline def setOnCountryChangeUndefined: Self = StObject.set(x, "onCountryChange", js.undefined)
       
-      @scala.inline
-      def setOnTextChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => js.Any): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
+      inline def setOnTextChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => js.Any): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTextChangeUndefined: Self = StObject.set(x, "onTextChange", js.undefined)
+      inline def setOnTextChangeUndefined: Self = StObject.set(x, "onTextChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: PhoneInputOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: PhoneInputOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setStateReducer(value: (/* type */ StateChange, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+      inline def setStateReducer(value: (/* type */ StateChange, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     }
   }
   
@@ -2182,56 +1828,40 @@ object phoneInputMod {
   }
   object StatefulPhoneInputProps {
     
-    @scala.inline
-    def apply(): StatefulPhoneInputProps = {
+    inline def apply(): StatefulPhoneInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatefulPhoneInputProps]
     }
     
-    @scala.inline
-    implicit class StatefulPhoneInputPropsMutableBuilder[Self <: StatefulPhoneInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulPhoneInputProps](x: Self) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
+      inline def setMapIsoToLabel(value: /* iso */ String => String): Self = StObject.set(x, "mapIsoToLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
+      inline def setMapIsoToLabelUndefined: Self = StObject.set(x, "mapIsoToLabel", js.undefined)
       
-      @scala.inline
-      def setOnCountryChange(value: /* event */ OnChangeParams => js.Any): Self = StObject.set(x, "onCountryChange", js.Any.fromFunction1(value))
+      inline def setOnCountryChange(value: /* event */ OnChangeParams => js.Any): Self = StObject.set(x, "onCountryChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCountryChangeUndefined: Self = StObject.set(x, "onCountryChange", js.undefined)
+      inline def setOnCountryChangeUndefined: Self = StObject.set(x, "onCountryChange", js.undefined)
       
-      @scala.inline
-      def setOnTextChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => js.Any): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
+      inline def setOnTextChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => js.Any): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTextChangeUndefined: Self = StObject.set(x, "onTextChange", js.undefined)
+      inline def setOnTextChangeUndefined: Self = StObject.set(x, "onTextChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: PhoneInputOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: PhoneInputOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setStateReducer(value: (/* type */ StateChange, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+      inline def setStateReducer(value: (/* type */ StateChange, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     }
   }
 }

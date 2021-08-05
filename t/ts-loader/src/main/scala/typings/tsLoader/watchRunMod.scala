@@ -11,8 +11,7 @@ object watchRunMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeWatchRun(instance: TSInstance): js.Function2[
+  inline def makeWatchRun(instance: TSInstance): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
     /* callback */ js.Function0[Unit], 
     Unit

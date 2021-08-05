@@ -125,19 +125,19 @@ object commonJshandleMod {
       args: SerializableOrJSHandle*
     ): js.Promise[WrapElementHandle[ReturnType]] = js.native
     
-    var _clickablePoint: js.Any = js.native
+    /* private */ var _clickablePoint: js.Any = js.native
     
-    var _frameManager: js.Any = js.native
+    /* private */ var _frameManager: js.Any = js.native
     
-    var _fromProtocolQuad: js.Any = js.native
+    /* private */ var _fromProtocolQuad: js.Any = js.native
     
-    var _getBoxModel: js.Any = js.native
+    /* private */ var _getBoxModel: js.Any = js.native
     
-    var _intersectQuadWithViewport: js.Any = js.native
+    /* private */ var _intersectQuadWithViewport: js.Any = js.native
     
-    var _page: js.Any = js.native
+    /* private */ var _page: js.Any = js.native
     
-    var _scrollIntoViewIfNeeded: js.Any = js.native
+    /* private */ var _scrollIntoViewIfNeeded: js.Any = js.native
     
     /**
       * This method returns the bounding box of the element (relative to the main frame),
@@ -381,8 +381,7 @@ object commonJshandleMod {
     def jsonValue(): js.Promise[Record[String, js.Any]] = js.native
   }
   
-  @scala.inline
-  def createJSHandle(context: ExecutionContext, remoteObject: RemoteObject): JSHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSHandle")(context.asInstanceOf[js.Any], remoteObject.asInstanceOf[js.Any])).asInstanceOf[JSHandle]
+  inline def createJSHandle(context: ExecutionContext, remoteObject: RemoteObject): JSHandle = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSHandle")(context.asInstanceOf[js.Any], remoteObject.asInstanceOf[js.Any])).asInstanceOf[JSHandle]
   
   trait BoundingBox extends StObject {
     
@@ -408,26 +407,20 @@ object commonJshandleMod {
   }
   object BoundingBox {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): BoundingBox = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): BoundingBox = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoundingBox]
     }
     
-    @scala.inline
-    implicit class BoundingBoxMutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
+    extension [Self <: BoundingBox](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -447,8 +440,7 @@ object commonJshandleMod {
   }
   object BoxModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       border: js.Array[X],
       content: js.Array[X],
       height: Double,
@@ -460,38 +452,27 @@ object commonJshandleMod {
       __obj.asInstanceOf[BoxModel]
     }
     
-    @scala.inline
-    implicit class BoxModelMutableBuilder[Self <: BoxModel] (val x: Self) extends AnyVal {
+    extension [Self <: BoxModel](x: Self) {
       
-      @scala.inline
-      def setBorder(value: js.Array[X]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: js.Array[X]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderVarargs(value: X*): Self = StObject.set(x, "border", js.Array(value :_*))
+      inline def setBorderVarargs(value: X*): Self = StObject.set(x, "border", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: js.Array[X]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Array[X]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentVarargs(value: X*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: X*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMargin(value: js.Array[X]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: js.Array[X]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginVarargs(value: X*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      inline def setMarginVarargs(value: X*): Self = StObject.set(x, "margin", js.Array(value :_*))
       
-      @scala.inline
-      def setPadding(value: js.Array[X]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: js.Array[X]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingVarargs(value: X*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: X*): Self = StObject.set(x, "padding", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -516,32 +497,24 @@ object commonJshandleMod {
   }
   object ClickOptions {
     
-    @scala.inline
-    def apply(): ClickOptions = {
+    inline def apply(): ClickOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClickOptions]
     }
     
-    @scala.inline
-    implicit class ClickOptionsMutableBuilder[Self <: ClickOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClickOptions](x: Self) {
       
-      @scala.inline
-      def setButton(value: left | right | middle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: left | right | middle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
+      inline def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
+      inline def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     }
   }
   
@@ -559,26 +532,20 @@ object commonJshandleMod {
   }
   object PressOptions {
     
-    @scala.inline
-    def apply(): PressOptions = {
+    inline def apply(): PressOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PressOptions]
     }
     
-    @scala.inline
-    implicit class PressOptionsMutableBuilder[Self <: PressOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PressOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

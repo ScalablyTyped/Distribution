@@ -25,8 +25,7 @@ trait Advance extends StObject {
 }
 object Advance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentDJ: DJ,
     djs: js.Array[DJ],
     historyID: String,
@@ -39,31 +38,22 @@ object Advance {
     __obj.asInstanceOf[Advance]
   }
   
-  @scala.inline
-  implicit class AdvanceMutableBuilder[Self <: Advance] (val x: Self) extends AnyVal {
+  extension [Self <: Advance](x: Self) {
     
-    @scala.inline
-    def setCurrentDJ(value: DJ): Self = StObject.set(x, "currentDJ", value.asInstanceOf[js.Any])
+    inline def setCurrentDJ(value: DJ): Self = StObject.set(x, "currentDJ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDjs(value: js.Array[DJ]): Self = StObject.set(x, "djs", value.asInstanceOf[js.Any])
+    inline def setDjs(value: js.Array[DJ]): Self = StObject.set(x, "djs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDjsVarargs(value: DJ*): Self = StObject.set(x, "djs", js.Array(value :_*))
+    inline def setDjsVarargs(value: DJ*): Self = StObject.set(x, "djs", js.Array(value :_*))
     
-    @scala.inline
-    def setHistoryID(value: String): Self = StObject.set(x, "historyID", value.asInstanceOf[js.Any])
+    inline def setHistoryID(value: String): Self = StObject.set(x, "historyID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPlay(value: LastPlay): Self = StObject.set(x, "lastPlay", value.asInstanceOf[js.Any])
+    inline def setLastPlay(value: LastPlay): Self = StObject.set(x, "lastPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistID(value: Double): Self = StObject.set(x, "playlistID", value.asInstanceOf[js.Any])
+    inline def setPlaylistID(value: Double): Self = StObject.set(x, "playlistID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

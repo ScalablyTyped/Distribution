@@ -15,22 +15,17 @@ trait BatchGetItemInput extends StObject {
 }
 object BatchGetItemInput {
   
-  @scala.inline
-  def apply(RequestItems: BatchGetRequestMap): BatchGetItemInput = {
+  inline def apply(RequestItems: BatchGetRequestMap): BatchGetItemInput = {
     val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetItemInput]
   }
   
-  @scala.inline
-  implicit class BatchGetItemInputMutableBuilder[Self <: BatchGetItemInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetItemInput](x: Self) {
     
-    @scala.inline
-    def setRequestItems(value: BatchGetRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
+    inline def setRequestItems(value: BatchGetRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+    inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
   }
 }

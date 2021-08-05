@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def connect(config: typings.braintree.mod.GatewayConfig): typings.braintree.mod.BraintreeGateway = typings.braintree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[typings.braintree.mod.BraintreeGateway]
+inline def connect(config: typings.braintree.mod.GatewayConfig): typings.braintree.mod.BraintreeGateway = typings.braintree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[typings.braintree.mod.BraintreeGateway]
 
 type AccountUpdaterNotificationKind = typings.braintree.braintreeStrings.account_updater_daily_report
 

@@ -33,34 +33,25 @@ trait ExecuteSqlRequest extends StObject {
 }
 object ExecuteSqlRequest {
   
-  @scala.inline
-  def apply(awsSecretStoreArn: Arn, dbClusterOrInstanceArn: Arn, sqlStatements: SqlStatement): ExecuteSqlRequest = {
+  inline def apply(awsSecretStoreArn: Arn, dbClusterOrInstanceArn: Arn, sqlStatements: SqlStatement): ExecuteSqlRequest = {
     val __obj = js.Dynamic.literal(awsSecretStoreArn = awsSecretStoreArn.asInstanceOf[js.Any], dbClusterOrInstanceArn = dbClusterOrInstanceArn.asInstanceOf[js.Any], sqlStatements = sqlStatements.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteSqlRequest]
   }
   
-  @scala.inline
-  implicit class ExecuteSqlRequestMutableBuilder[Self <: ExecuteSqlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteSqlRequest](x: Self) {
     
-    @scala.inline
-    def setAwsSecretStoreArn(value: Arn): Self = StObject.set(x, "awsSecretStoreArn", value.asInstanceOf[js.Any])
+    inline def setAwsSecretStoreArn(value: Arn): Self = StObject.set(x, "awsSecretStoreArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: DbName): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setDbClusterOrInstanceArn(value: Arn): Self = StObject.set(x, "dbClusterOrInstanceArn", value.asInstanceOf[js.Any])
+    inline def setDbClusterOrInstanceArn(value: Arn): Self = StObject.set(x, "dbClusterOrInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: DbName): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setSqlStatements(value: SqlStatement): Self = StObject.set(x, "sqlStatements", value.asInstanceOf[js.Any])
+    inline def setSqlStatements(value: SqlStatement): Self = StObject.set(x, "sqlStatements", value.asInstanceOf[js.Any])
   }
 }

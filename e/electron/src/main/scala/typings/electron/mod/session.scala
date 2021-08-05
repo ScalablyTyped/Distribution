@@ -24,8 +24,7 @@ object session {
   @JSImport("electron", "session.defaultSession")
   @js.native
   def defaultSession: typings.electron.Electron.Session_ = js.native
-  @scala.inline
-  def defaultSession_=(x: typings.electron.Electron.Session_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSession")(x.asInstanceOf[js.Any])
+  inline def defaultSession_=(x: typings.electron.Electron.Session_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSession")(x.asInstanceOf[js.Any])
   
   // Docs: https://electronjs.org/docs/api/session
   /**
@@ -43,8 +42,6 @@ object session {
     * of an existing `Session` object.
     */
   /* static member */
-  @scala.inline
-  def fromPartition(partition: String): typings.electron.Electron.Session_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPartition")(partition.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.Session_]
-  @scala.inline
-  def fromPartition(partition: String, options: FromPartitionOptions): typings.electron.Electron.Session_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPartition")(partition.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.electron.Electron.Session_]
+  inline def fromPartition(partition: String): typings.electron.Electron.Session_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPartition")(partition.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.Session_]
+  inline def fromPartition(partition: String, options: FromPartitionOptions): typings.electron.Electron.Session_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPartition")(partition.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.electron.Electron.Session_]
 }

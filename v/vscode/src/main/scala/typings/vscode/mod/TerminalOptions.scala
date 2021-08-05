@@ -53,58 +53,41 @@ trait TerminalOptions extends StObject {
 }
 object TerminalOptions {
   
-  @scala.inline
-  def apply(): TerminalOptions = {
+  inline def apply(): TerminalOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminalOptions]
   }
   
-  @scala.inline
-  implicit class TerminalOptionsMutableBuilder[Self <: TerminalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TerminalOptions](x: Self) {
     
-    @scala.inline
-    def setCwd(value: String | Uri): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: String | Uri): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+    inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
-    @scala.inline
-    def setEnv(value: StringDictionary[String | Null]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: StringDictionary[String | Null]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setHideFromUser(value: Boolean): Self = StObject.set(x, "hideFromUser", value.asInstanceOf[js.Any])
+    inline def setHideFromUser(value: Boolean): Self = StObject.set(x, "hideFromUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideFromUserUndefined: Self = StObject.set(x, "hideFromUser", js.undefined)
+    inline def setHideFromUserUndefined: Self = StObject.set(x, "hideFromUser", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setShellArgs(value: js.Array[String] | String): Self = StObject.set(x, "shellArgs", value.asInstanceOf[js.Any])
+    inline def setShellArgs(value: js.Array[String] | String): Self = StObject.set(x, "shellArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellArgsUndefined: Self = StObject.set(x, "shellArgs", js.undefined)
+    inline def setShellArgsUndefined: Self = StObject.set(x, "shellArgs", js.undefined)
     
-    @scala.inline
-    def setShellArgsVarargs(value: String*): Self = StObject.set(x, "shellArgs", js.Array(value :_*))
+    inline def setShellArgsVarargs(value: String*): Self = StObject.set(x, "shellArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setShellPath(value: String): Self = StObject.set(x, "shellPath", value.asInstanceOf[js.Any])
+    inline def setShellPath(value: String): Self = StObject.set(x, "shellPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellPathUndefined: Self = StObject.set(x, "shellPath", js.undefined)
+    inline def setShellPathUndefined: Self = StObject.set(x, "shellPath", js.undefined)
     
-    @scala.inline
-    def setStrictEnv(value: Boolean): Self = StObject.set(x, "strictEnv", value.asInstanceOf[js.Any])
+    inline def setStrictEnv(value: Boolean): Self = StObject.set(x, "strictEnv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictEnvUndefined: Self = StObject.set(x, "strictEnv", js.undefined)
+    inline def setStrictEnvUndefined: Self = StObject.set(x, "strictEnv", js.undefined)
   }
 }

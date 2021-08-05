@@ -347,32 +347,23 @@ object crawlerMod {
   trait HTTPMethods extends StObject
   object HTTPMethods {
     
-    @scala.inline
-    def CONNECT: typings.simplecrawler.simplecrawlerStrings.CONNECT = "CONNECT".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.CONNECT]
+    inline def CONNECT: typings.simplecrawler.simplecrawlerStrings.CONNECT = "CONNECT".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.CONNECT]
     
-    @scala.inline
-    def DELETE: typings.simplecrawler.simplecrawlerStrings.DELETE = "DELETE".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.DELETE]
+    inline def DELETE: typings.simplecrawler.simplecrawlerStrings.DELETE = "DELETE".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.simplecrawler.simplecrawlerStrings.GET = "GET".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.GET]
+    inline def GET: typings.simplecrawler.simplecrawlerStrings.GET = "GET".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.simplecrawler.simplecrawlerStrings.HEAD = "HEAD".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.HEAD]
+    inline def HEAD: typings.simplecrawler.simplecrawlerStrings.HEAD = "HEAD".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.HEAD]
     
-    @scala.inline
-    def OPTIONS: typings.simplecrawler.simplecrawlerStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.OPTIONS]
+    inline def OPTIONS: typings.simplecrawler.simplecrawlerStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.simplecrawler.simplecrawlerStrings.PATCH = "PATCH".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.PATCH]
+    inline def PATCH: typings.simplecrawler.simplecrawlerStrings.PATCH = "PATCH".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.simplecrawler.simplecrawlerStrings.POST = "POST".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.POST]
+    inline def POST: typings.simplecrawler.simplecrawlerStrings.POST = "POST".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.POST]
     
-    @scala.inline
-    def PUT: typings.simplecrawler.simplecrawlerStrings.PUT = "PUT".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.PUT]
+    inline def PUT: typings.simplecrawler.simplecrawlerStrings.PUT = "PUT".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.PUT]
     
-    @scala.inline
-    def TRACE: typings.simplecrawler.simplecrawlerStrings.TRACE = "TRACE".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.TRACE]
+    inline def TRACE: typings.simplecrawler.simplecrawlerStrings.TRACE = "TRACE".asInstanceOf[typings.simplecrawler.simplecrawlerStrings.TRACE]
   }
   
   trait RequestOptions extends StObject {
@@ -389,32 +380,24 @@ object crawlerMod {
   }
   object RequestOptions {
     
-    @scala.inline
-    def apply(agent: Agent | typings.node.httpsMod.Agent, headers: Dictkey, host: String, method: HTTPMethods): RequestOptions = {
+    inline def apply(agent: Agent | typings.node.httpsMod.Agent, headers: Dictkey, host: String, method: HTTPMethods): RequestOptions = {
       val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestOptions]
     }
     
-    @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Dictkey): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Dictkey): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: HTTPMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: HTTPMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
 }

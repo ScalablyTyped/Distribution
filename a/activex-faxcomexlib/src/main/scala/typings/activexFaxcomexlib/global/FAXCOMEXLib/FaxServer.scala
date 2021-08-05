@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxServer Class */
 @JSGlobal("FAXCOMEXLib.FaxServer")
 @js.native
-class FaxServer protected ()
+/* private */ class FaxServer ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxServer {
   
@@ -44,7 +44,7 @@ class FaxServer protected ()
   /* CompleteClass */
   override def Disconnect(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxServer_typekey")
   var FAXCOMEXLibDotFaxServer_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxServer = js.native
   

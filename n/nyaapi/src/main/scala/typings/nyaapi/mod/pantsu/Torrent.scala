@@ -64,8 +64,7 @@ trait Torrent extends StObject {
 }
 object Torrent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     anidbid: Double,
     category: String,
     comments: js.Array[Comment],
@@ -99,100 +98,68 @@ object Torrent {
     __obj.asInstanceOf[Torrent]
   }
   
-  @scala.inline
-  implicit class TorrentMutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
+  extension [Self <: Torrent](x: Self) {
     
-    @scala.inline
-    def setAnidbid(value: Double): Self = StObject.set(x, "anidbid", value.asInstanceOf[js.Any])
+    inline def setAnidbid(value: Double): Self = StObject.set(x, "anidbid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDlsite(value: String): Self = StObject.set(x, "dlsite", value.asInstanceOf[js.Any])
+    inline def setDlsite(value: String): Self = StObject.set(x, "dlsite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_list(value: js.Array[String]): Self = StObject.set(x, "file_list", value.asInstanceOf[js.Any])
+    inline def setFile_list(value: js.Array[String]): Self = StObject.set(x, "file_list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_listVarargs(value: String*): Self = StObject.set(x, "file_list", js.Array(value :_*))
+    inline def setFile_listVarargs(value: String*): Self = StObject.set(x, "file_list", js.Array(value :_*))
     
-    @scala.inline
-    def setFilesize(value: Double): Self = StObject.set(x, "filesize", value.asInstanceOf[js.Any])
+    inline def setFilesize(value: Double): Self = StObject.set(x, "filesize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
-    @scala.inline
-    def setLast_scrape(value: String): Self = StObject.set(x, "last_scrape", value.asInstanceOf[js.Any])
+    inline def setLast_scrape(value: String): Self = StObject.set(x, "last_scrape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeechers(value: Double): Self = StObject.set(x, "leechers", value.asInstanceOf[js.Any])
+    inline def setLeechers(value: Double): Self = StObject.set(x, "leechers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnet(value: String): Self = StObject.set(x, "magnet", value.asInstanceOf[js.Any])
+    inline def setMagnet(value: String): Self = StObject.set(x, "magnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeeders(value: Double): Self = StObject.set(x, "seeders", value.asInstanceOf[js.Any])
+    inline def setSeeders(value: Double): Self = StObject.set(x, "seeders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSub_category(value: String): Self = StObject.set(x, "sub_category", value.asInstanceOf[js.Any])
+    inline def setSub_category(value: String): Self = StObject.set(x, "sub_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Null): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Null): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTorrent(value: String): Self = StObject.set(x, "torrent", value.asInstanceOf[js.Any])
+    inline def setTorrent(value: String): Self = StObject.set(x, "torrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploader_id(value: Double): Self = StObject.set(x, "uploader_id", value.asInstanceOf[js.Any])
+    inline def setUploader_id(value: Double): Self = StObject.set(x, "uploader_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploader_name(value: String): Self = StObject.set(x, "uploader_name", value.asInstanceOf[js.Any])
+    inline def setUploader_name(value: String): Self = StObject.set(x, "uploader_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploader_old(value: String): Self = StObject.set(x, "uploader_old", value.asInstanceOf[js.Any])
+    inline def setUploader_old(value: String): Self = StObject.set(x, "uploader_old", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVgmdbid(value: Double): Self = StObject.set(x, "vgmdbid", value.asInstanceOf[js.Any])
+    inline def setVgmdbid(value: Double): Self = StObject.set(x, "vgmdbid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoquality(value: String): Self = StObject.set(x, "videoquality", value.asInstanceOf[js.Any])
+    inline def setVideoquality(value: String): Self = StObject.set(x, "videoquality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVndbid(value: Double): Self = StObject.set(x, "vndbid", value.asInstanceOf[js.Any])
+    inline def setVndbid(value: Double): Self = StObject.set(x, "vndbid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsite_link(value: String): Self = StObject.set(x, "website_link", value.asInstanceOf[js.Any])
+    inline def setWebsite_link(value: String): Self = StObject.set(x, "website_link", value.asInstanceOf[js.Any])
   }
 }

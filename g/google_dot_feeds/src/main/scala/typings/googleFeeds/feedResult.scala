@@ -14,28 +14,21 @@ trait feedResult extends StObject {
 }
 object feedResult {
   
-  @scala.inline
-  def apply(feed: feedJSON): feedResult = {
+  inline def apply(feed: feedJSON): feedResult = {
     val __obj = js.Dynamic.literal(feed = feed.asInstanceOf[js.Any])
     __obj.asInstanceOf[feedResult]
   }
   
-  @scala.inline
-  implicit class feedResultMutableBuilder[Self <: feedResult] (val x: Self) extends AnyVal {
+  extension [Self <: feedResult](x: Self) {
     
-    @scala.inline
-    def setError(value: feedError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: feedError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFeed(value: feedJSON): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
+    inline def setFeed(value: feedJSON): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlDocument(value: String): Self = StObject.set(x, "xmlDocument", value.asInstanceOf[js.Any])
+    inline def setXmlDocument(value: String): Self = StObject.set(x, "xmlDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlDocumentUndefined: Self = StObject.set(x, "xmlDocument", js.undefined)
+    inline def setXmlDocumentUndefined: Self = StObject.set(x, "xmlDocument", js.undefined)
   }
 }

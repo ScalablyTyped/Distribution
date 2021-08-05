@@ -15,6 +15,5 @@ class SharedArrayBuffer protected ()
 }
 object SharedArrayBuffer {
   
-  @scala.inline
-  def apply: SharedArrayBufferConstructor = js.Dynamic.global.selectDynamic("SharedArrayBuffer").asInstanceOf[SharedArrayBufferConstructor]
+  inline def apply: SharedArrayBufferConstructor = js.Dynamic.global.selectDynamic("SharedArrayBuffer").asInstanceOf[SharedArrayBufferConstructor]
 }

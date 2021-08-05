@@ -15,6 +15,5 @@ object DirectorTimeController {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.directorTimeControllerMod.DirectorTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.directorTimeControllerMod.DirectorTimeController]
+  inline def create(): typings.wonderJs.directorTimeControllerMod.DirectorTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.directorTimeControllerMod.DirectorTimeController]
 }

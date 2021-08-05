@@ -19,34 +19,25 @@ trait RegisterCallbackParams extends StObject {
 }
 object RegisterCallbackParams {
   
-  @scala.inline
-  def apply(callback_url: String): RegisterCallbackParams = {
+  inline def apply(callback_url: String): RegisterCallbackParams = {
     val __obj = js.Dynamic.literal(callback_url = callback_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterCallbackParams]
   }
   
-  @scala.inline
-  implicit class RegisterCallbackParamsMutableBuilder[Self <: RegisterCallbackParams] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterCallbackParams](x: Self) {
     
-    @scala.inline
-    def setCallback_url(value: String): Self = StObject.set(x, "callback_url", value.asInstanceOf[js.Any])
+    inline def setCallback_url(value: String): Self = StObject.set(x, "callback_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setUser_secret(value: String): Self = StObject.set(x, "user_secret", value.asInstanceOf[js.Any])
+    inline def setUser_secret(value: String): Self = StObject.set(x, "user_secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_secretUndefined: Self = StObject.set(x, "user_secret", js.undefined)
+    inline def setUser_secretUndefined: Self = StObject.set(x, "user_secret", js.undefined)
   }
 }

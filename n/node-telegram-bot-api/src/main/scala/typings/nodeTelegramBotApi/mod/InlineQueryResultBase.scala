@@ -12,22 +12,17 @@ trait InlineQueryResultBase extends StObject {
 }
 object InlineQueryResultBase {
   
-  @scala.inline
-  def apply(id: String): InlineQueryResultBase = {
+  inline def apply(id: String): InlineQueryResultBase = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultBase]
   }
   
-  @scala.inline
-  implicit class InlineQueryResultBaseMutableBuilder[Self <: InlineQueryResultBase] (val x: Self) extends AnyVal {
+  extension [Self <: InlineQueryResultBase](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_markup(value: InlineKeyboardMarkup): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
+    inline def setReply_markup(value: InlineKeyboardMarkup): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_markupUndefined: Self = StObject.set(x, "reply_markup", js.undefined)
+    inline def setReply_markupUndefined: Self = StObject.set(x, "reply_markup", js.undefined)
   }
 }

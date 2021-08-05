@@ -9,8 +9,7 @@ object mod {
   /**
     * Yeast: A tiny growing id generator.
     */
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
   
   @JSImport("yeast", JSImport.Namespace)
   @js.native
@@ -19,12 +18,10 @@ object mod {
   /**
     * Return the integer value specified by the given string.
     */
-  @scala.inline
-  def decode(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def decode(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Return a string representing the specified number.
     */
-  @scala.inline
-  def encode(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(num.asInstanceOf[js.Any]).asInstanceOf[String]
 }

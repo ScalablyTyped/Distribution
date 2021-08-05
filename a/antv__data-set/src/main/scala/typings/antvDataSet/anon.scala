@@ -87,26 +87,20 @@ object anon {
   }
   object Edges {
     
-    @scala.inline
-    def apply(edges: js.Array[js.Any], nodes: js.Array[js.Any]): Edges = {
+    inline def apply(edges: js.Array[js.Any], nodes: js.Array[js.Any]): Edges = {
       val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Edges]
     }
     
-    @scala.inline
-    implicit class EdgesMutableBuilder[Self <: Edges] (val x: Self) extends AnyVal {
+    extension [Self <: Edges](x: Self) {
       
-      @scala.inline
-      def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
       
-      @scala.inline
-      def setNodes(value: js.Array[js.Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[js.Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: js.Any*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: js.Any*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
   
@@ -128,8 +122,7 @@ object anon {
   }
   object GEO {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       GEO: String,
       GEO_GRATICULE: String,
       GRAPH: String,
@@ -142,32 +135,23 @@ object anon {
       __obj.asInstanceOf[GEO]
     }
     
-    @scala.inline
-    implicit class GEOMutableBuilder[Self <: GEO] (val x: Self) extends AnyVal {
+    extension [Self <: GEO](x: Self) {
       
-      @scala.inline
-      def setGEO(value: String): Self = StObject.set(x, "GEO", value.asInstanceOf[js.Any])
+      inline def setGEO(value: String): Self = StObject.set(x, "GEO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGEO_GRATICULE(value: String): Self = StObject.set(x, "GEO_GRATICULE", value.asInstanceOf[js.Any])
+      inline def setGEO_GRATICULE(value: String): Self = StObject.set(x, "GEO_GRATICULE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGRAPH(value: String): Self = StObject.set(x, "GRAPH", value.asInstanceOf[js.Any])
+      inline def setGRAPH(value: String): Self = StObject.set(x, "GRAPH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHEX(value: String): Self = StObject.set(x, "HEX", value.asInstanceOf[js.Any])
+      inline def setHEX(value: String): Self = StObject.set(x, "HEX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHIERARCHY(value: String): Self = StObject.set(x, "HIERARCHY", value.asInstanceOf[js.Any])
+      inline def setHIERARCHY(value: String): Self = StObject.set(x, "HIERARCHY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTATISTICS_METHODS(value: js.Array[String]): Self = StObject.set(x, "STATISTICS_METHODS", value.asInstanceOf[js.Any])
+      inline def setSTATISTICS_METHODS(value: js.Array[String]): Self = StObject.set(x, "STATISTICS_METHODS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTATISTICS_METHODSVarargs(value: String*): Self = StObject.set(x, "STATISTICS_METHODS", js.Array(value :_*))
+      inline def setSTATISTICS_METHODSVarargs(value: String*): Self = StObject.set(x, "STATISTICS_METHODS", js.Array(value :_*))
       
-      @scala.inline
-      def setTABLE(value: String): Self = StObject.set(x, "TABLE", value.asInstanceOf[js.Any])
+      inline def setTABLE(value: String): Self = StObject.set(x, "TABLE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,18 +163,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply[T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */](`type`: T): Type[T] = {
+    inline def apply[T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */](`type`: T): Type[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type[T]]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[?], T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */] (val x: Self & Type[T]) extends AnyVal {
+    extension [Self <: Type[?], T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */](x: Self & Type[T]) {
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,18 +181,15 @@ object anon {
   }
   object TypeT {
     
-    @scala.inline
-    def apply[T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */](`type`: T): TypeT[T] = {
+    inline def apply[T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */](`type`: T): TypeT[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeT[T]]
     }
     
-    @scala.inline
-    implicit class TypeTMutableBuilder[Self <: TypeT[?], T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] (val x: Self & TypeT[T]) extends AnyVal {
+    extension [Self <: TypeT[?], T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */](x: Self & TypeT[T]) {
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

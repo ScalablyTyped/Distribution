@@ -23,10 +23,8 @@ object OauthAuthenticator {
   @js.native
   val ^ : OauthAuthenticatorStatic = js.native
   
-  @scala.inline
-  implicit class OauthAuthenticatorMutableBuilder[Self <: OauthAuthenticator] (val x: Self) extends AnyVal {
+  extension [Self <: OauthAuthenticator](x: Self) {
     
-    @scala.inline
-    def setAuthenticateRequest(value: OauthAuthenticatorRequest => OauthAuthenticatorRequest): Self = StObject.set(x, "authenticateRequest", js.Any.fromFunction1(value))
+    inline def setAuthenticateRequest(value: OauthAuthenticatorRequest => OauthAuthenticatorRequest): Self = StObject.set(x, "authenticateRequest", js.Any.fromFunction1(value))
   }
 }

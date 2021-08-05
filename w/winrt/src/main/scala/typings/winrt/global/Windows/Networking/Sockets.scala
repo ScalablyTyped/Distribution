@@ -140,10 +140,8 @@ object Sockets {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getEndpointPairsAsync(remoteHostName: typings.winrt.Windows.Networking.HostName, remoteServiceName: String): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.EndpointPair]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointPairsAsync")(remoteHostName.asInstanceOf[js.Any], remoteServiceName.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.EndpointPair]]]
-    @scala.inline
-    def getEndpointPairsAsync(
+    inline def getEndpointPairsAsync(remoteHostName: typings.winrt.Windows.Networking.HostName, remoteServiceName: String): IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.EndpointPair]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointPairsAsync")(remoteHostName.asInstanceOf[js.Any], remoteServiceName.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.Networking.EndpointPair]]]
+    inline def getEndpointPairsAsync(
       remoteHostName: typings.winrt.Windows.Networking.HostName,
       remoteServiceName: String,
       sortOptions: typings.winrt.Windows.Networking.HostNameSortOptions
@@ -283,8 +281,7 @@ object Sockets {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getStatus(hresult: Double): SocketErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[SocketErrorStatus]
+    inline def getStatus(hresult: Double): SocketErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[SocketErrorStatus]
   }
   
   @JSGlobal("Windows.Networking.Sockets.SocketErrorStatus")
@@ -595,8 +592,7 @@ object Sockets {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
+    inline def getStatus(hresult: Double): WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[WebErrorStatus]
   }
   
   @JSGlobal("Windows.Networking.Sockets.WebSocketKeepAlive")

@@ -46,164 +46,137 @@ object outputTypesUnionMod {
   trait OutputTypesUnion extends StObject
   object OutputTypesUnion {
     
-    @scala.inline
-    def AddTagsToStreamOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamOutputMod.AddTagsToStreamOutput = {
+    inline def AddTagsToStreamOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamOutputMod.AddTagsToStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesAddTagsToStreamOutputMod.AddTagsToStreamOutput]
     }
     
-    @scala.inline
-    def CreateStreamOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesCreateStreamOutputMod.CreateStreamOutput = {
+    inline def CreateStreamOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesCreateStreamOutputMod.CreateStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesCreateStreamOutputMod.CreateStreamOutput]
     }
     
-    @scala.inline
-    def DecreaseStreamRetentionPeriodOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesDecreaseStreamRetentionPeriodOutputMod.DecreaseStreamRetentionPeriodOutput = {
+    inline def DecreaseStreamRetentionPeriodOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesDecreaseStreamRetentionPeriodOutputMod.DecreaseStreamRetentionPeriodOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDecreaseStreamRetentionPeriodOutputMod.DecreaseStreamRetentionPeriodOutput]
     }
     
-    @scala.inline
-    def DeleteStreamOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesDeleteStreamOutputMod.DeleteStreamOutput = {
+    inline def DeleteStreamOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesDeleteStreamOutputMod.DeleteStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDeleteStreamOutputMod.DeleteStreamOutput]
     }
     
-    @scala.inline
-    def DeregisterStreamConsumerOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesDeregisterStreamConsumerOutputMod.DeregisterStreamConsumerOutput = {
+    inline def DeregisterStreamConsumerOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesDeregisterStreamConsumerOutputMod.DeregisterStreamConsumerOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDeregisterStreamConsumerOutputMod.DeregisterStreamConsumerOutput]
     }
     
-    @scala.inline
-    def DescribeLimitsOutput($metadata: ResponseMetadata, OpenShardCount: Double, ShardLimit: Double): typings.awsSdkClientKinesisBrowser.typesDescribeLimitsOutputMod.DescribeLimitsOutput = {
+    inline def DescribeLimitsOutput($metadata: ResponseMetadata, OpenShardCount: Double, ShardLimit: Double): typings.awsSdkClientKinesisBrowser.typesDescribeLimitsOutputMod.DescribeLimitsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], OpenShardCount = OpenShardCount.asInstanceOf[js.Any], ShardLimit = ShardLimit.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDescribeLimitsOutputMod.DescribeLimitsOutput]
     }
     
-    @scala.inline
-    def DescribeStreamConsumerOutput($metadata: ResponseMetadata, ConsumerDescription: UnmarshalledConsumerDescription): typings.awsSdkClientKinesisBrowser.typesDescribeStreamConsumerOutputMod.DescribeStreamConsumerOutput = {
+    inline def DescribeStreamConsumerOutput($metadata: ResponseMetadata, ConsumerDescription: UnmarshalledConsumerDescription): typings.awsSdkClientKinesisBrowser.typesDescribeStreamConsumerOutputMod.DescribeStreamConsumerOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ConsumerDescription = ConsumerDescription.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDescribeStreamConsumerOutputMod.DescribeStreamConsumerOutput]
     }
     
-    @scala.inline
-    def DescribeStreamOutput($metadata: ResponseMetadata, StreamDescription: UnmarshalledStreamDescription): typings.awsSdkClientKinesisBrowser.typesDescribeStreamOutputMod.DescribeStreamOutput = {
+    inline def DescribeStreamOutput($metadata: ResponseMetadata, StreamDescription: UnmarshalledStreamDescription): typings.awsSdkClientKinesisBrowser.typesDescribeStreamOutputMod.DescribeStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], StreamDescription = StreamDescription.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDescribeStreamOutputMod.DescribeStreamOutput]
     }
     
-    @scala.inline
-    def DescribeStreamSummaryOutput($metadata: ResponseMetadata, StreamDescriptionSummary: UnmarshalledStreamDescriptionSummary): typings.awsSdkClientKinesisBrowser.typesDescribeStreamSummaryOutputMod.DescribeStreamSummaryOutput = {
+    inline def DescribeStreamSummaryOutput($metadata: ResponseMetadata, StreamDescriptionSummary: UnmarshalledStreamDescriptionSummary): typings.awsSdkClientKinesisBrowser.typesDescribeStreamSummaryOutputMod.DescribeStreamSummaryOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], StreamDescriptionSummary = StreamDescriptionSummary.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDescribeStreamSummaryOutputMod.DescribeStreamSummaryOutput]
     }
     
-    @scala.inline
-    def DisableEnhancedMonitoringOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesDisableEnhancedMonitoringOutputMod.DisableEnhancedMonitoringOutput = {
+    inline def DisableEnhancedMonitoringOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesDisableEnhancedMonitoringOutputMod.DisableEnhancedMonitoringOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesDisableEnhancedMonitoringOutputMod.DisableEnhancedMonitoringOutput]
     }
     
-    @scala.inline
-    def EnableEnhancedMonitoringOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesEnableEnhancedMonitoringOutputMod.EnableEnhancedMonitoringOutput = {
+    inline def EnableEnhancedMonitoringOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesEnableEnhancedMonitoringOutputMod.EnableEnhancedMonitoringOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesEnableEnhancedMonitoringOutputMod.EnableEnhancedMonitoringOutput]
     }
     
-    @scala.inline
-    def GetRecordsOutput($metadata: ResponseMetadata, Records: js.Array[UnmarshalledRecord]): typings.awsSdkClientKinesisBrowser.typesGetRecordsOutputMod.GetRecordsOutput = {
+    inline def GetRecordsOutput($metadata: ResponseMetadata, Records: js.Array[UnmarshalledRecord]): typings.awsSdkClientKinesisBrowser.typesGetRecordsOutputMod.GetRecordsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesGetRecordsOutputMod.GetRecordsOutput]
     }
     
-    @scala.inline
-    def GetShardIteratorOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesGetShardIteratorOutputMod.GetShardIteratorOutput = {
+    inline def GetShardIteratorOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesGetShardIteratorOutputMod.GetShardIteratorOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesGetShardIteratorOutputMod.GetShardIteratorOutput]
     }
     
-    @scala.inline
-    def IncreaseStreamRetentionPeriodOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesIncreaseStreamRetentionPeriodOutputMod.IncreaseStreamRetentionPeriodOutput = {
+    inline def IncreaseStreamRetentionPeriodOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesIncreaseStreamRetentionPeriodOutputMod.IncreaseStreamRetentionPeriodOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesIncreaseStreamRetentionPeriodOutputMod.IncreaseStreamRetentionPeriodOutput]
     }
     
-    @scala.inline
-    def ListShardsOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesListShardsOutputMod.ListShardsOutput = {
+    inline def ListShardsOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesListShardsOutputMod.ListShardsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesListShardsOutputMod.ListShardsOutput]
     }
     
-    @scala.inline
-    def ListStreamConsumersOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesListStreamConsumersOutputMod.ListStreamConsumersOutput = {
+    inline def ListStreamConsumersOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesListStreamConsumersOutputMod.ListStreamConsumersOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesListStreamConsumersOutputMod.ListStreamConsumersOutput]
     }
     
-    @scala.inline
-    def ListStreamsOutput($metadata: ResponseMetadata, HasMoreStreams: Boolean, StreamNames: js.Array[String]): typings.awsSdkClientKinesisBrowser.typesListStreamsOutputMod.ListStreamsOutput = {
+    inline def ListStreamsOutput($metadata: ResponseMetadata, HasMoreStreams: Boolean, StreamNames: js.Array[String]): typings.awsSdkClientKinesisBrowser.typesListStreamsOutputMod.ListStreamsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], HasMoreStreams = HasMoreStreams.asInstanceOf[js.Any], StreamNames = StreamNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesListStreamsOutputMod.ListStreamsOutput]
     }
     
-    @scala.inline
-    def ListTagsForStreamOutput($metadata: ResponseMetadata, HasMoreTags: Boolean, Tags: js.Array[UnmarshalledTag]): typings.awsSdkClientKinesisBrowser.typesListTagsForStreamOutputMod.ListTagsForStreamOutput = {
+    inline def ListTagsForStreamOutput($metadata: ResponseMetadata, HasMoreTags: Boolean, Tags: js.Array[UnmarshalledTag]): typings.awsSdkClientKinesisBrowser.typesListTagsForStreamOutputMod.ListTagsForStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], HasMoreTags = HasMoreTags.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesListTagsForStreamOutputMod.ListTagsForStreamOutput]
     }
     
-    @scala.inline
-    def MergeShardsOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesMergeShardsOutputMod.MergeShardsOutput = {
+    inline def MergeShardsOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesMergeShardsOutputMod.MergeShardsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesMergeShardsOutputMod.MergeShardsOutput]
     }
     
-    @scala.inline
-    def PutRecordOutput($metadata: ResponseMetadata, SequenceNumber: String, ShardId: String): typings.awsSdkClientKinesisBrowser.typesPutRecordOutputMod.PutRecordOutput = {
+    inline def PutRecordOutput($metadata: ResponseMetadata, SequenceNumber: String, ShardId: String): typings.awsSdkClientKinesisBrowser.typesPutRecordOutputMod.PutRecordOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any], ShardId = ShardId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesPutRecordOutputMod.PutRecordOutput]
     }
     
-    @scala.inline
-    def PutRecordsOutput($metadata: ResponseMetadata, Records: js.Array[UnmarshalledPutRecordsResultEntry]): typings.awsSdkClientKinesisBrowser.typesPutRecordsOutputMod.PutRecordsOutput = {
+    inline def PutRecordsOutput($metadata: ResponseMetadata, Records: js.Array[UnmarshalledPutRecordsResultEntry]): typings.awsSdkClientKinesisBrowser.typesPutRecordsOutputMod.PutRecordsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesPutRecordsOutputMod.PutRecordsOutput]
     }
     
-    @scala.inline
-    def RegisterStreamConsumerOutput($metadata: ResponseMetadata, Consumer: UnmarshalledConsumer): typings.awsSdkClientKinesisBrowser.typesRegisterStreamConsumerOutputMod.RegisterStreamConsumerOutput = {
+    inline def RegisterStreamConsumerOutput($metadata: ResponseMetadata, Consumer: UnmarshalledConsumer): typings.awsSdkClientKinesisBrowser.typesRegisterStreamConsumerOutputMod.RegisterStreamConsumerOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], Consumer = Consumer.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesRegisterStreamConsumerOutputMod.RegisterStreamConsumerOutput]
     }
     
-    @scala.inline
-    def RemoveTagsFromStreamOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesRemoveTagsFromStreamOutputMod.RemoveTagsFromStreamOutput = {
+    inline def RemoveTagsFromStreamOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesRemoveTagsFromStreamOutputMod.RemoveTagsFromStreamOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesRemoveTagsFromStreamOutputMod.RemoveTagsFromStreamOutput]
     }
     
-    @scala.inline
-    def SplitShardOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesSplitShardOutputMod.SplitShardOutput = {
+    inline def SplitShardOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesSplitShardOutputMod.SplitShardOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesSplitShardOutputMod.SplitShardOutput]
     }
     
-    @scala.inline
-    def StartStreamEncryptionOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesStartStreamEncryptionOutputMod.StartStreamEncryptionOutput = {
+    inline def StartStreamEncryptionOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesStartStreamEncryptionOutputMod.StartStreamEncryptionOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesStartStreamEncryptionOutputMod.StartStreamEncryptionOutput]
     }
     
-    @scala.inline
-    def StopStreamEncryptionOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionOutputMod.StopStreamEncryptionOutput = {
+    inline def StopStreamEncryptionOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionOutputMod.StopStreamEncryptionOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesStopStreamEncryptionOutputMod.StopStreamEncryptionOutput]
     }
     
-    @scala.inline
-    def UpdateShardCountOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesUpdateShardCountOutputMod.UpdateShardCountOutput = {
+    inline def UpdateShardCountOutput($metadata: ResponseMetadata): typings.awsSdkClientKinesisBrowser.typesUpdateShardCountOutputMod.UpdateShardCountOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesUpdateShardCountOutputMod.UpdateShardCountOutput]
     }

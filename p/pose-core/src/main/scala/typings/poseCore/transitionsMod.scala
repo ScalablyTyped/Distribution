@@ -14,8 +14,7 @@ object transitionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[A, TD](
+  inline def default[A, TD](
     poses: PoseMap[A, TD],
     defaultTransitions: Map[String, (TransitionMap[A, TD]) | (TransitionMapFactory[A, TD])]
   ): PoseMap[A, TD] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(poses.asInstanceOf[js.Any], defaultTransitions.asInstanceOf[js.Any])).asInstanceOf[PoseMap[A, TD]]

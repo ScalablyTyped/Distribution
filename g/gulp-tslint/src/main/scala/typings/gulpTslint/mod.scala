@@ -37,56 +37,40 @@ object mod extends Shortcut {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(): PluginOptions = {
+    inline def apply(): PluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setConfiguration(value: js.Any): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: js.Any): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+      inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
       
-      @scala.inline
-      def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
+      inline def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
+      inline def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: String | js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      inline def setFormatter(value: String | js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setFormattersDirectory(value: String): Self = StObject.set(x, "formattersDirectory", value.asInstanceOf[js.Any])
+      inline def setFormattersDirectory(value: String): Self = StObject.set(x, "formattersDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattersDirectoryUndefined: Self = StObject.set(x, "formattersDirectory", js.undefined)
+      inline def setFormattersDirectoryUndefined: Self = StObject.set(x, "formattersDirectory", js.undefined)
       
-      @scala.inline
-      def setProgram(value: js.Any): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: js.Any): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      @scala.inline
-      def setRulesDirectory(value: String): Self = StObject.set(x, "rulesDirectory", value.asInstanceOf[js.Any])
+      inline def setRulesDirectory(value: String): Self = StObject.set(x, "rulesDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesDirectoryUndefined: Self = StObject.set(x, "rulesDirectory", js.undefined)
+      inline def setRulesDirectoryUndefined: Self = StObject.set(x, "rulesDirectory", js.undefined)
       
-      @scala.inline
-      def setTslint(value: js.Any): Self = StObject.set(x, "tslint", value.asInstanceOf[js.Any])
+      inline def setTslint(value: js.Any): Self = StObject.set(x, "tslint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTslintUndefined: Self = StObject.set(x, "tslint", js.undefined)
+      inline def setTslintUndefined: Self = StObject.set(x, "tslint", js.undefined)
     }
   }
   
@@ -102,38 +86,28 @@ object mod extends Shortcut {
   }
   object ReportOptions {
     
-    @scala.inline
-    def apply(): ReportOptions = {
+    inline def apply(): ReportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReportOptions]
     }
     
-    @scala.inline
-    implicit class ReportOptionsMutableBuilder[Self <: ReportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReportOptions](x: Self) {
       
-      @scala.inline
-      def setAllowWarnings(value: Boolean): Self = StObject.set(x, "allowWarnings", value.asInstanceOf[js.Any])
+      inline def setAllowWarnings(value: Boolean): Self = StObject.set(x, "allowWarnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowWarningsUndefined: Self = StObject.set(x, "allowWarnings", js.undefined)
+      inline def setAllowWarningsUndefined: Self = StObject.set(x, "allowWarnings", js.undefined)
       
-      @scala.inline
-      def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
+      inline def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitErrorUndefined: Self = StObject.set(x, "emitError", js.undefined)
+      inline def setEmitErrorUndefined: Self = StObject.set(x, "emitError", js.undefined)
       
-      @scala.inline
-      def setReportLimit(value: Double): Self = StObject.set(x, "reportLimit", value.asInstanceOf[js.Any])
+      inline def setReportLimit(value: Double): Self = StObject.set(x, "reportLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportLimitUndefined: Self = StObject.set(x, "reportLimit", js.undefined)
+      inline def setReportLimitUndefined: Self = StObject.set(x, "reportLimit", js.undefined)
       
-      @scala.inline
-      def setSummarizeFailureOutput(value: Boolean): Self = StObject.set(x, "summarizeFailureOutput", value.asInstanceOf[js.Any])
+      inline def setSummarizeFailureOutput(value: Boolean): Self = StObject.set(x, "summarizeFailureOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummarizeFailureOutputUndefined: Self = StObject.set(x, "summarizeFailureOutput", js.undefined)
+      inline def setSummarizeFailureOutputUndefined: Self = StObject.set(x, "summarizeFailureOutput", js.undefined)
     }
   }
   
@@ -153,8 +127,7 @@ object mod extends Shortcut {
   }
   object TslintFile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contents: Buffer | js.Any,
       isNull: () => Boolean,
       isStream: () => Boolean,
@@ -166,26 +139,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TslintFile]
     }
     
-    @scala.inline
-    implicit class TslintFileMutableBuilder[Self <: TslintFile] (val x: Self) extends AnyVal {
+    extension [Self <: TslintFile](x: Self) {
       
-      @scala.inline
-      def setContents(value: Buffer | js.Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Buffer | js.Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNull(value: () => Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction0(value))
+      inline def setIsNull(value: () => Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsStream(value: () => Boolean): Self = StObject.set(x, "isStream", js.Any.fromFunction0(value))
+      inline def setIsStream(value: () => Boolean): Self = StObject.set(x, "isStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelative(value: String): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: String): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTslint(value: js.Any): Self = StObject.set(x, "tslint", value.asInstanceOf[js.Any])
+      inline def setTslint(value: js.Any): Self = StObject.set(x, "tslint", value.asInstanceOf[js.Any])
     }
   }
   

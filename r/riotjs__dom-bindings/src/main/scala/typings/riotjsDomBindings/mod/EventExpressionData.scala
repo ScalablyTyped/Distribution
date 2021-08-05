@@ -13,17 +13,14 @@ trait EventExpressionData
 }
 object EventExpressionData {
   
-  @scala.inline
-  def apply(evaluate: js.Any => js.Any, name: String, `type`: ExpressionType): EventExpressionData = {
+  inline def apply(evaluate: js.Any => js.Any, name: String, `type`: ExpressionType): EventExpressionData = {
     val __obj = js.Dynamic.literal(evaluate = js.Any.fromFunction1(evaluate), name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventExpressionData]
   }
   
-  @scala.inline
-  implicit class EventExpressionDataMutableBuilder[Self <: EventExpressionData] (val x: Self) extends AnyVal {
+  extension [Self <: EventExpressionData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

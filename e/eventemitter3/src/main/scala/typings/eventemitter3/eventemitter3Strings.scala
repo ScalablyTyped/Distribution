@@ -8,6 +8,5 @@ object eventemitter3Strings {
   
   @js.native
   sealed trait ArgumentMap extends StObject
-  @scala.inline
-  def ArgumentMap: ArgumentMap = "ArgumentMap".asInstanceOf[ArgumentMap]
+  inline def ArgumentMap: ArgumentMap = "ArgumentMap".asInstanceOf[ArgumentMap]
 }

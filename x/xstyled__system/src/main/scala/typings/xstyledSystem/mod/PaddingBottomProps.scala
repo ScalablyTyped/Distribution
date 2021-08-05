@@ -20,42 +20,34 @@ trait PaddingBottomProps[TLength] extends StObject {
 }
 object PaddingBottomProps {
   
-  @scala.inline
-  def apply[TLength](): PaddingBottomProps[TLength] = {
+  inline def apply[TLength](): PaddingBottomProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaddingBottomProps[TLength]]
   }
   
-  @scala.inline
-  implicit class PaddingBottomPropsMutableBuilder[Self <: PaddingBottomProps[?], TLength] (val x: Self & PaddingBottomProps[TLength]) extends AnyVal {
+  extension [Self <: PaddingBottomProps[?], TLength](x: Self & PaddingBottomProps[TLength]) {
     
-    @scala.inline
-    def setPaddingBottom(
+    inline def setPaddingBottom(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+    inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
-    @scala.inline
-    def setPaddingBottomVarargs(
+    inline def setPaddingBottomVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any)*
     ): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
     
-    @scala.inline
-    def setPb(
+    inline def setPb(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
+    inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
     
-    @scala.inline
-    def setPbVarargs(
+    inline def setPbVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any)*
     ): Self = StObject.set(x, "pb", js.Array(value :_*))
   }

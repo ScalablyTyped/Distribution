@@ -25,25 +25,19 @@ trait ParamsResourcePipelinesDelete
 }
 object ParamsResourcePipelinesDelete {
   
-  @scala.inline
-  def apply(): ParamsResourcePipelinesDelete = {
+  inline def apply(): ParamsResourcePipelinesDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePipelinesDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePipelinesDeleteMutableBuilder[Self <: ParamsResourcePipelinesDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePipelinesDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPipelineId(value: String): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: String): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineIdUndefined: Self = StObject.set(x, "pipelineId", js.undefined)
+    inline def setPipelineIdUndefined: Self = StObject.set(x, "pipelineId", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait CancelReplayRequest extends StObject {
 }
 object CancelReplayRequest {
   
-  @scala.inline
-  def apply(ReplayName: ReplayName): CancelReplayRequest = {
+  inline def apply(ReplayName: ReplayName): CancelReplayRequest = {
     val __obj = js.Dynamic.literal(ReplayName = ReplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelReplayRequest]
   }
   
-  @scala.inline
-  implicit class CancelReplayRequestMutableBuilder[Self <: CancelReplayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelReplayRequest](x: Self) {
     
-    @scala.inline
-    def setReplayName(value: ReplayName): Self = StObject.set(x, "ReplayName", value.asInstanceOf[js.Any])
+    inline def setReplayName(value: ReplayName): Self = StObject.set(x, "ReplayName", value.asInstanceOf[js.Any])
   }
 }

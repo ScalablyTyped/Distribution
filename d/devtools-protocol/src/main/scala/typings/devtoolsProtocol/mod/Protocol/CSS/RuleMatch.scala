@@ -19,22 +19,17 @@ trait RuleMatch extends StObject {
 }
 object RuleMatch {
   
-  @scala.inline
-  def apply(matchingSelectors: js.Array[integer], rule: CSSRule): RuleMatch = {
+  inline def apply(matchingSelectors: js.Array[integer], rule: CSSRule): RuleMatch = {
     val __obj = js.Dynamic.literal(matchingSelectors = matchingSelectors.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleMatch]
   }
   
-  @scala.inline
-  implicit class RuleMatchMutableBuilder[Self <: RuleMatch] (val x: Self) extends AnyVal {
+  extension [Self <: RuleMatch](x: Self) {
     
-    @scala.inline
-    def setMatchingSelectors(value: js.Array[integer]): Self = StObject.set(x, "matchingSelectors", value.asInstanceOf[js.Any])
+    inline def setMatchingSelectors(value: js.Array[integer]): Self = StObject.set(x, "matchingSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingSelectorsVarargs(value: integer*): Self = StObject.set(x, "matchingSelectors", js.Array(value :_*))
+    inline def setMatchingSelectorsVarargs(value: integer*): Self = StObject.set(x, "matchingSelectors", js.Array(value :_*))
     
-    @scala.inline
-    def setRule(value: CSSRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: CSSRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }
 }

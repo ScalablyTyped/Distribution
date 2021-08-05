@@ -16,37 +16,27 @@ trait CubeEffectOptions extends StObject {
 }
 object CubeEffectOptions {
   
-  @scala.inline
-  def apply(): CubeEffectOptions = {
+  inline def apply(): CubeEffectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CubeEffectOptions]
   }
   
-  @scala.inline
-  implicit class CubeEffectOptionsMutableBuilder[Self <: CubeEffectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CubeEffectOptions](x: Self) {
     
-    @scala.inline
-    def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    inline def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
+    inline def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     
-    @scala.inline
-    def setShadowScale(value: Double): Self = StObject.set(x, "shadowScale", value.asInstanceOf[js.Any])
+    inline def setShadowScale(value: Double): Self = StObject.set(x, "shadowScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowScaleUndefined: Self = StObject.set(x, "shadowScale", js.undefined)
+    inline def setShadowScaleUndefined: Self = StObject.set(x, "shadowScale", js.undefined)
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    @scala.inline
-    def setSlideShadows(value: Boolean): Self = StObject.set(x, "slideShadows", value.asInstanceOf[js.Any])
+    inline def setSlideShadows(value: Boolean): Self = StObject.set(x, "slideShadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShadowsUndefined: Self = StObject.set(x, "slideShadows", js.undefined)
+    inline def setSlideShadowsUndefined: Self = StObject.set(x, "slideShadows", js.undefined)
   }
 }

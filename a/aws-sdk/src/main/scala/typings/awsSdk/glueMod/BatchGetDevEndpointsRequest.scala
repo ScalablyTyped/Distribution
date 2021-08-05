@@ -13,19 +13,15 @@ trait BatchGetDevEndpointsRequest extends StObject {
 }
 object BatchGetDevEndpointsRequest {
   
-  @scala.inline
-  def apply(DevEndpointNames: DevEndpointNames): BatchGetDevEndpointsRequest = {
+  inline def apply(DevEndpointNames: DevEndpointNames): BatchGetDevEndpointsRequest = {
     val __obj = js.Dynamic.literal(DevEndpointNames = DevEndpointNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetDevEndpointsRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetDevEndpointsRequestMutableBuilder[Self <: BatchGetDevEndpointsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetDevEndpointsRequest](x: Self) {
     
-    @scala.inline
-    def setDevEndpointNames(value: DevEndpointNames): Self = StObject.set(x, "DevEndpointNames", value.asInstanceOf[js.Any])
+    inline def setDevEndpointNames(value: DevEndpointNames): Self = StObject.set(x, "DevEndpointNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevEndpointNamesVarargs(value: GenericString*): Self = StObject.set(x, "DevEndpointNames", js.Array(value :_*))
+    inline def setDevEndpointNamesVarargs(value: GenericString*): Self = StObject.set(x, "DevEndpointNames", js.Array(value :_*))
   }
 }

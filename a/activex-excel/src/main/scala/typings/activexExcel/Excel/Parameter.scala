@@ -12,7 +12,7 @@ trait Parameter extends StObject {
   
   var DataType: XlParameterDataType
   
-  @JSName("Excel.Parameter_typekey")
+  /* private */ @JSName("Excel.Parameter_typekey")
   var ExcelDotParameter_typekey: Parameter
   
   var Name: String
@@ -37,8 +37,7 @@ trait Parameter extends StObject {
 }
 object Parameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     DataType: XlParameterDataType,
@@ -57,43 +56,30 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  @scala.inline
-  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+  extension [Self <: Parameter](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataType(value: XlParameterDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: XlParameterDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotParameter_typekey(value: Parameter): Self = StObject.set(x, "Excel.Parameter_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotParameter_typekey(value: Parameter): Self = StObject.set(x, "Excel.Parameter_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptString(value: String): Self = StObject.set(x, "PromptString", value.asInstanceOf[js.Any])
+    inline def setPromptString(value: String): Self = StObject.set(x, "PromptString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshOnChange(value: Boolean): Self = StObject.set(x, "RefreshOnChange", value.asInstanceOf[js.Any])
+    inline def setRefreshOnChange(value: Boolean): Self = StObject.set(x, "RefreshOnChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetParam(value: (XlParameterType, js.Any) => Unit): Self = StObject.set(x, "SetParam", js.Any.fromFunction2(value))
+    inline def setSetParam(value: (XlParameterType, js.Any) => Unit): Self = StObject.set(x, "SetParam", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSourceRange(value: Range): Self = StObject.set(x, "SourceRange", value.asInstanceOf[js.Any])
+    inline def setSourceRange(value: Range): Self = StObject.set(x, "SourceRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XlParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object libMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateIonicEnvironment(ctx: IonicContext, pargv: js.Array[String]): js.Promise[Env] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateIonicEnvironment")(ctx.asInstanceOf[js.Any], pargv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Env]]
+  inline def generateIonicEnvironment(ctx: IonicContext, pargv: js.Array[String]): js.Promise[Env] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateIonicEnvironment")(ctx.asInstanceOf[js.Any], pargv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Env]]
 }

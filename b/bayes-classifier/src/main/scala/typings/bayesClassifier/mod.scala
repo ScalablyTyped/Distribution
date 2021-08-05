@@ -47,8 +47,7 @@ object mod {
   }
   object BayesClassifier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addDocument: (String, String) => Unit,
       addDocuments: (js.Array[String], String) => Unit,
       classify: String => String,
@@ -60,26 +59,19 @@ object mod {
       __obj.asInstanceOf[BayesClassifier]
     }
     
-    @scala.inline
-    implicit class BayesClassifierMutableBuilder[Self <: BayesClassifier] (val x: Self) extends AnyVal {
+    extension [Self <: BayesClassifier](x: Self) {
       
-      @scala.inline
-      def setAddDocument(value: (String, String) => Unit): Self = StObject.set(x, "addDocument", js.Any.fromFunction2(value))
+      inline def setAddDocument(value: (String, String) => Unit): Self = StObject.set(x, "addDocument", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddDocuments(value: (js.Array[String], String) => Unit): Self = StObject.set(x, "addDocuments", js.Any.fromFunction2(value))
+      inline def setAddDocuments(value: (js.Array[String], String) => Unit): Self = StObject.set(x, "addDocuments", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClassify(value: String => String): Self = StObject.set(x, "classify", js.Any.fromFunction1(value))
+      inline def setClassify(value: String => String): Self = StObject.set(x, "classify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetClassifications(value: String => Classifications): Self = StObject.set(x, "getClassifications", js.Any.fromFunction1(value))
+      inline def setGetClassifications(value: String => Classifications): Self = StObject.set(x, "getClassifications", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRestore(value: js.Any => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
+      inline def setRestore(value: js.Any => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrain(value: () => Unit): Self = StObject.set(x, "train", js.Any.fromFunction0(value))
+      inline def setTrain(value: () => Unit): Self = StObject.set(x, "train", js.Any.fromFunction0(value))
     }
   }
   
@@ -91,20 +83,16 @@ object mod {
   }
   object Classifications {
     
-    @scala.inline
-    def apply(label: String, value: Double): Classifications = {
+    inline def apply(label: String, value: Double): Classifications = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Classifications]
     }
     
-    @scala.inline
-    implicit class ClassificationsMutableBuilder[Self <: Classifications] (val x: Self) extends AnyVal {
+    extension [Self <: Classifications](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

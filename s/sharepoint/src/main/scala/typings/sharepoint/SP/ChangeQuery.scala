@@ -130,8 +130,7 @@ trait ChangeQuery
 }
 object ChangeQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -202,187 +201,126 @@ object ChangeQuery {
     __obj.asInstanceOf[ChangeQuery]
   }
   
-  @scala.inline
-  implicit class ChangeQueryMutableBuilder[Self <: ChangeQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeQuery](x: Self) {
     
-    @scala.inline
-    def setGet_add(value: () => Boolean): Self = StObject.set(x, "get_add", js.Any.fromFunction0(value))
+    inline def setGet_add(value: () => Boolean): Self = StObject.set(x, "get_add", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_alert(value: () => Boolean): Self = StObject.set(x, "get_alert", js.Any.fromFunction0(value))
+    inline def setGet_alert(value: () => Boolean): Self = StObject.set(x, "get_alert", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_changeTokenEnd(value: () => ChangeToken): Self = StObject.set(x, "get_changeTokenEnd", js.Any.fromFunction0(value))
+    inline def setGet_changeTokenEnd(value: () => ChangeToken): Self = StObject.set(x, "get_changeTokenEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_changeTokenStart(value: () => ChangeToken): Self = StObject.set(x, "get_changeTokenStart", js.Any.fromFunction0(value))
+    inline def setGet_changeTokenStart(value: () => ChangeToken): Self = StObject.set(x, "get_changeTokenStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_contentType(value: () => Boolean): Self = StObject.set(x, "get_contentType", js.Any.fromFunction0(value))
+    inline def setGet_contentType(value: () => Boolean): Self = StObject.set(x, "get_contentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_deleteObject(value: () => Boolean): Self = StObject.set(x, "get_deleteObject", js.Any.fromFunction0(value))
+    inline def setGet_deleteObject(value: () => Boolean): Self = StObject.set(x, "get_deleteObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_field(value: () => Boolean): Self = StObject.set(x, "get_field", js.Any.fromFunction0(value))
+    inline def setGet_field(value: () => Boolean): Self = StObject.set(x, "get_field", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_file(value: () => Boolean): Self = StObject.set(x, "get_file", js.Any.fromFunction0(value))
+    inline def setGet_file(value: () => Boolean): Self = StObject.set(x, "get_file", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_folder(value: () => Boolean): Self = StObject.set(x, "get_folder", js.Any.fromFunction0(value))
+    inline def setGet_folder(value: () => Boolean): Self = StObject.set(x, "get_folder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_group(value: () => Boolean): Self = StObject.set(x, "get_group", js.Any.fromFunction0(value))
+    inline def setGet_group(value: () => Boolean): Self = StObject.set(x, "get_group", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_groupMembershipAdd(value: () => Boolean): Self = StObject.set(x, "get_groupMembershipAdd", js.Any.fromFunction0(value))
+    inline def setGet_groupMembershipAdd(value: () => Boolean): Self = StObject.set(x, "get_groupMembershipAdd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_groupMembershipDelete(value: () => Boolean): Self = StObject.set(x, "get_groupMembershipDelete", js.Any.fromFunction0(value))
+    inline def setGet_groupMembershipDelete(value: () => Boolean): Self = StObject.set(x, "get_groupMembershipDelete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_item(value: () => Boolean): Self = StObject.set(x, "get_item", js.Any.fromFunction0(value))
+    inline def setGet_item(value: () => Boolean): Self = StObject.set(x, "get_item", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_list(value: () => Boolean): Self = StObject.set(x, "get_list", js.Any.fromFunction0(value))
+    inline def setGet_list(value: () => Boolean): Self = StObject.set(x, "get_list", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_move(value: () => Boolean): Self = StObject.set(x, "get_move", js.Any.fromFunction0(value))
+    inline def setGet_move(value: () => Boolean): Self = StObject.set(x, "get_move", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_navigation(value: () => Boolean): Self = StObject.set(x, "get_navigation", js.Any.fromFunction0(value))
+    inline def setGet_navigation(value: () => Boolean): Self = StObject.set(x, "get_navigation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_rename(value: () => Boolean): Self = StObject.set(x, "get_rename", js.Any.fromFunction0(value))
+    inline def setGet_rename(value: () => Boolean): Self = StObject.set(x, "get_rename", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_restore(value: () => Boolean): Self = StObject.set(x, "get_restore", js.Any.fromFunction0(value))
+    inline def setGet_restore(value: () => Boolean): Self = StObject.set(x, "get_restore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_roleAssignmentAdd(value: () => Boolean): Self = StObject.set(x, "get_roleAssignmentAdd", js.Any.fromFunction0(value))
+    inline def setGet_roleAssignmentAdd(value: () => Boolean): Self = StObject.set(x, "get_roleAssignmentAdd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_roleAssignmentDelete(value: () => Boolean): Self = StObject.set(x, "get_roleAssignmentDelete", js.Any.fromFunction0(value))
+    inline def setGet_roleAssignmentDelete(value: () => Boolean): Self = StObject.set(x, "get_roleAssignmentDelete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_roleDefinitionAdd(value: () => Boolean): Self = StObject.set(x, "get_roleDefinitionAdd", js.Any.fromFunction0(value))
+    inline def setGet_roleDefinitionAdd(value: () => Boolean): Self = StObject.set(x, "get_roleDefinitionAdd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_roleDefinitionDelete(value: () => Boolean): Self = StObject.set(x, "get_roleDefinitionDelete", js.Any.fromFunction0(value))
+    inline def setGet_roleDefinitionDelete(value: () => Boolean): Self = StObject.set(x, "get_roleDefinitionDelete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_roleDefinitionUpdate(value: () => Boolean): Self = StObject.set(x, "get_roleDefinitionUpdate", js.Any.fromFunction0(value))
+    inline def setGet_roleDefinitionUpdate(value: () => Boolean): Self = StObject.set(x, "get_roleDefinitionUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_securityPolicy(value: () => Boolean): Self = StObject.set(x, "get_securityPolicy", js.Any.fromFunction0(value))
+    inline def setGet_securityPolicy(value: () => Boolean): Self = StObject.set(x, "get_securityPolicy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_site(value: () => Boolean): Self = StObject.set(x, "get_site", js.Any.fromFunction0(value))
+    inline def setGet_site(value: () => Boolean): Self = StObject.set(x, "get_site", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_systemUpdate(value: () => Boolean): Self = StObject.set(x, "get_systemUpdate", js.Any.fromFunction0(value))
+    inline def setGet_systemUpdate(value: () => Boolean): Self = StObject.set(x, "get_systemUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_update(value: () => Boolean): Self = StObject.set(x, "get_update", js.Any.fromFunction0(value))
+    inline def setGet_update(value: () => Boolean): Self = StObject.set(x, "get_update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_user(value: () => Boolean): Self = StObject.set(x, "get_user", js.Any.fromFunction0(value))
+    inline def setGet_user(value: () => Boolean): Self = StObject.set(x, "get_user", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_view(value: () => Boolean): Self = StObject.set(x, "get_view", js.Any.fromFunction0(value))
+    inline def setGet_view(value: () => Boolean): Self = StObject.set(x, "get_view", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_web(value: () => Boolean): Self = StObject.set(x, "get_web", js.Any.fromFunction0(value))
+    inline def setGet_web(value: () => Boolean): Self = StObject.set(x, "get_web", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_add(value: Boolean => Unit): Self = StObject.set(x, "set_add", js.Any.fromFunction1(value))
+    inline def setSet_add(value: Boolean => Unit): Self = StObject.set(x, "set_add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_alert(value: Boolean => Unit): Self = StObject.set(x, "set_alert", js.Any.fromFunction1(value))
+    inline def setSet_alert(value: Boolean => Unit): Self = StObject.set(x, "set_alert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_changeTokenEnd(value: ChangeToken => Unit): Self = StObject.set(x, "set_changeTokenEnd", js.Any.fromFunction1(value))
+    inline def setSet_changeTokenEnd(value: ChangeToken => Unit): Self = StObject.set(x, "set_changeTokenEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_changeTokenStart(value: ChangeToken => Unit): Self = StObject.set(x, "set_changeTokenStart", js.Any.fromFunction1(value))
+    inline def setSet_changeTokenStart(value: ChangeToken => Unit): Self = StObject.set(x, "set_changeTokenStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_contentType(value: Boolean => Unit): Self = StObject.set(x, "set_contentType", js.Any.fromFunction1(value))
+    inline def setSet_contentType(value: Boolean => Unit): Self = StObject.set(x, "set_contentType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_deleteObject(value: Boolean => Unit): Self = StObject.set(x, "set_deleteObject", js.Any.fromFunction1(value))
+    inline def setSet_deleteObject(value: Boolean => Unit): Self = StObject.set(x, "set_deleteObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_field(value: Boolean => Unit): Self = StObject.set(x, "set_field", js.Any.fromFunction1(value))
+    inline def setSet_field(value: Boolean => Unit): Self = StObject.set(x, "set_field", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_file(value: Boolean => Unit): Self = StObject.set(x, "set_file", js.Any.fromFunction1(value))
+    inline def setSet_file(value: Boolean => Unit): Self = StObject.set(x, "set_file", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_folder(value: Boolean => Unit): Self = StObject.set(x, "set_folder", js.Any.fromFunction1(value))
+    inline def setSet_folder(value: Boolean => Unit): Self = StObject.set(x, "set_folder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_group(value: Boolean => Unit): Self = StObject.set(x, "set_group", js.Any.fromFunction1(value))
+    inline def setSet_group(value: Boolean => Unit): Self = StObject.set(x, "set_group", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_groupMembershipAdd(value: Boolean => Unit): Self = StObject.set(x, "set_groupMembershipAdd", js.Any.fromFunction1(value))
+    inline def setSet_groupMembershipAdd(value: Boolean => Unit): Self = StObject.set(x, "set_groupMembershipAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_groupMembershipDelete(value: Boolean => Unit): Self = StObject.set(x, "set_groupMembershipDelete", js.Any.fromFunction1(value))
+    inline def setSet_groupMembershipDelete(value: Boolean => Unit): Self = StObject.set(x, "set_groupMembershipDelete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_item(value: Boolean => Unit): Self = StObject.set(x, "set_item", js.Any.fromFunction1(value))
+    inline def setSet_item(value: Boolean => Unit): Self = StObject.set(x, "set_item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_list(value: Boolean => Unit): Self = StObject.set(x, "set_list", js.Any.fromFunction1(value))
+    inline def setSet_list(value: Boolean => Unit): Self = StObject.set(x, "set_list", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_move(value: Boolean => Unit): Self = StObject.set(x, "set_move", js.Any.fromFunction1(value))
+    inline def setSet_move(value: Boolean => Unit): Self = StObject.set(x, "set_move", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_navigation(value: Boolean => Unit): Self = StObject.set(x, "set_navigation", js.Any.fromFunction1(value))
+    inline def setSet_navigation(value: Boolean => Unit): Self = StObject.set(x, "set_navigation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_rename(value: Boolean => Unit): Self = StObject.set(x, "set_rename", js.Any.fromFunction1(value))
+    inline def setSet_rename(value: Boolean => Unit): Self = StObject.set(x, "set_rename", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_restore(value: Boolean => Unit): Self = StObject.set(x, "set_restore", js.Any.fromFunction1(value))
+    inline def setSet_restore(value: Boolean => Unit): Self = StObject.set(x, "set_restore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_roleAssignmentAdd(value: Boolean => Unit): Self = StObject.set(x, "set_roleAssignmentAdd", js.Any.fromFunction1(value))
+    inline def setSet_roleAssignmentAdd(value: Boolean => Unit): Self = StObject.set(x, "set_roleAssignmentAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_roleAssignmentDelete(value: Boolean => Unit): Self = StObject.set(x, "set_roleAssignmentDelete", js.Any.fromFunction1(value))
+    inline def setSet_roleAssignmentDelete(value: Boolean => Unit): Self = StObject.set(x, "set_roleAssignmentDelete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_roleDefinitionAdd(value: Boolean => Unit): Self = StObject.set(x, "set_roleDefinitionAdd", js.Any.fromFunction1(value))
+    inline def setSet_roleDefinitionAdd(value: Boolean => Unit): Self = StObject.set(x, "set_roleDefinitionAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_roleDefinitionDelete(value: Boolean => Unit): Self = StObject.set(x, "set_roleDefinitionDelete", js.Any.fromFunction1(value))
+    inline def setSet_roleDefinitionDelete(value: Boolean => Unit): Self = StObject.set(x, "set_roleDefinitionDelete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_roleDefinitionUpdate(value: Boolean => Unit): Self = StObject.set(x, "set_roleDefinitionUpdate", js.Any.fromFunction1(value))
+    inline def setSet_roleDefinitionUpdate(value: Boolean => Unit): Self = StObject.set(x, "set_roleDefinitionUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_securityPolicy(value: Boolean => Unit): Self = StObject.set(x, "set_securityPolicy", js.Any.fromFunction1(value))
+    inline def setSet_securityPolicy(value: Boolean => Unit): Self = StObject.set(x, "set_securityPolicy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_site(value: Boolean => Unit): Self = StObject.set(x, "set_site", js.Any.fromFunction1(value))
+    inline def setSet_site(value: Boolean => Unit): Self = StObject.set(x, "set_site", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_systemUpdate(value: Boolean => Unit): Self = StObject.set(x, "set_systemUpdate", js.Any.fromFunction1(value))
+    inline def setSet_systemUpdate(value: Boolean => Unit): Self = StObject.set(x, "set_systemUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_update(value: Boolean => Unit): Self = StObject.set(x, "set_update", js.Any.fromFunction1(value))
+    inline def setSet_update(value: Boolean => Unit): Self = StObject.set(x, "set_update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_user(value: Boolean => Unit): Self = StObject.set(x, "set_user", js.Any.fromFunction1(value))
+    inline def setSet_user(value: Boolean => Unit): Self = StObject.set(x, "set_user", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_view(value: Boolean => Unit): Self = StObject.set(x, "set_view", js.Any.fromFunction1(value))
+    inline def setSet_view(value: Boolean => Unit): Self = StObject.set(x, "set_view", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_web(value: Boolean => Unit): Self = StObject.set(x, "set_web", js.Any.fromFunction1(value))
+    inline def setSet_web(value: Boolean => Unit): Self = StObject.set(x, "set_web", js.Any.fromFunction1(value))
   }
 }

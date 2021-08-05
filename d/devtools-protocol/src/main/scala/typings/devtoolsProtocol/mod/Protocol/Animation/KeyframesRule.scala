@@ -18,25 +18,19 @@ trait KeyframesRule extends StObject {
 }
 object KeyframesRule {
   
-  @scala.inline
-  def apply(keyframes: js.Array[KeyframeStyle]): KeyframesRule = {
+  inline def apply(keyframes: js.Array[KeyframeStyle]): KeyframesRule = {
     val __obj = js.Dynamic.literal(keyframes = keyframes.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyframesRule]
   }
   
-  @scala.inline
-  implicit class KeyframesRuleMutableBuilder[Self <: KeyframesRule] (val x: Self) extends AnyVal {
+  extension [Self <: KeyframesRule](x: Self) {
     
-    @scala.inline
-    def setKeyframes(value: js.Array[KeyframeStyle]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+    inline def setKeyframes(value: js.Array[KeyframeStyle]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyframesVarargs(value: KeyframeStyle*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
+    inline def setKeyframesVarargs(value: KeyframeStyle*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

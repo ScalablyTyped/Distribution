@@ -31,19 +31,15 @@ trait VariantProperty extends StObject {
 }
 object VariantProperty {
   
-  @scala.inline
-  def apply(): VariantProperty = {
+  inline def apply(): VariantProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VariantProperty]
   }
   
-  @scala.inline
-  implicit class VariantPropertyMutableBuilder[Self <: VariantProperty] (val x: Self) extends AnyVal {
+  extension [Self <: VariantProperty](x: Self) {
     
-    @scala.inline
-    def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait PutRequest extends StObject {
 }
 object PutRequest {
   
-  @scala.inline
-  def apply(Item: PutItemInputAttributeMap): PutRequest = {
+  inline def apply(Item: PutItemInputAttributeMap): PutRequest = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRequest]
   }
   
-  @scala.inline
-  implicit class PutRequestMutableBuilder[Self <: PutRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutRequest](x: Self) {
     
-    @scala.inline
-    def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }
 }

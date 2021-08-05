@@ -30,19 +30,15 @@ trait IEngineTimingOptions extends StObject {
 }
 object IEngineTimingOptions {
   
-  @scala.inline
-  def apply(timeScale: Double, timestamp: Double): IEngineTimingOptions = {
+  inline def apply(timeScale: Double, timestamp: Double): IEngineTimingOptions = {
     val __obj = js.Dynamic.literal(timeScale = timeScale.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEngineTimingOptions]
   }
   
-  @scala.inline
-  implicit class IEngineTimingOptionsMutableBuilder[Self <: IEngineTimingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEngineTimingOptions](x: Self) {
     
-    @scala.inline
-    def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
+    inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

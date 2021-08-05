@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fitbit-asap"
-version := "1.2-dt-20201021Z-e7b7ed"
+version := "1.2-dt-20201021Z-fcd667"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

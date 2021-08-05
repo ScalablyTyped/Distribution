@@ -24,25 +24,19 @@ trait Registration extends StObject {
 }
 object Registration {
   
-  @scala.inline
-  def apply(id: String, method: String): Registration = {
+  inline def apply(id: String, method: String): Registration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[Registration]
   }
   
-  @scala.inline
-  implicit class RegistrationMutableBuilder[Self <: Registration] (val x: Self) extends AnyVal {
+  extension [Self <: Registration](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterOptions(value: js.Any): Self = StObject.set(x, "registerOptions", value.asInstanceOf[js.Any])
+    inline def setRegisterOptions(value: js.Any): Self = StObject.set(x, "registerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterOptionsUndefined: Self = StObject.set(x, "registerOptions", js.undefined)
+    inline def setRegisterOptionsUndefined: Self = StObject.set(x, "registerOptions", js.undefined)
   }
 }

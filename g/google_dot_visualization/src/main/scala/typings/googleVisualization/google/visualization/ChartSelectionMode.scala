@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartSelectionMode extends StObject
 object ChartSelectionMode {
   
-  @scala.inline
-  def multiple: typings.googleVisualization.googleVisualizationStrings.multiple = "multiple".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.multiple]
+  inline def multiple: typings.googleVisualization.googleVisualizationStrings.multiple = "multiple".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.multiple]
   
-  @scala.inline
-  def single: typings.googleVisualization.googleVisualizationStrings.single = "single".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.single]
+  inline def single: typings.googleVisualization.googleVisualizationStrings.single = "single".asInstanceOf[typings.googleVisualization.googleVisualizationStrings.single]
 }

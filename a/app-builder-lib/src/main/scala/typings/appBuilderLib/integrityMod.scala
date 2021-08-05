@@ -11,10 +11,8 @@ object integrityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeData(resourcesPath: String): js.Promise[AsarIntegrity] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeData")(resourcesPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AsarIntegrity]]
-  @scala.inline
-  def computeData(resourcesPath: String, options: AsarIntegrityOptions): js.Promise[AsarIntegrity] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeData")(resourcesPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AsarIntegrity]]
+  inline def computeData(resourcesPath: String): js.Promise[AsarIntegrity] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeData")(resourcesPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AsarIntegrity]]
+  inline def computeData(resourcesPath: String, options: AsarIntegrityOptions): js.Promise[AsarIntegrity] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeData")(resourcesPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AsarIntegrity]]
   
   trait AsarIntegrity
     extends StObject
@@ -24,17 +22,14 @@ object integrityMod {
   }
   object AsarIntegrity {
     
-    @scala.inline
-    def apply(checksums: StringDictionary[String]): AsarIntegrity = {
+    inline def apply(checksums: StringDictionary[String]): AsarIntegrity = {
       val __obj = js.Dynamic.literal(checksums = checksums.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsarIntegrity]
     }
     
-    @scala.inline
-    implicit class AsarIntegrityMutableBuilder[Self <: AsarIntegrity] (val x: Self) extends AnyVal {
+    extension [Self <: AsarIntegrity](x: Self) {
       
-      @scala.inline
-      def setChecksums(value: StringDictionary[String]): Self = StObject.set(x, "checksums", value.asInstanceOf[js.Any])
+      inline def setChecksums(value: StringDictionary[String]): Self = StObject.set(x, "checksums", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +44,16 @@ object integrityMod {
   }
   object AsarIntegrityOptions {
     
-    @scala.inline
-    def apply(): AsarIntegrityOptions = {
+    inline def apply(): AsarIntegrityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsarIntegrityOptions]
     }
     
-    @scala.inline
-    implicit class AsarIntegrityOptionsMutableBuilder[Self <: AsarIntegrityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsarIntegrityOptions](x: Self) {
       
-      @scala.inline
-      def setExternalAllowed(value: Boolean): Self = StObject.set(x, "externalAllowed", value.asInstanceOf[js.Any])
+      inline def setExternalAllowed(value: Boolean): Self = StObject.set(x, "externalAllowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalAllowedUndefined: Self = StObject.set(x, "externalAllowed", js.undefined)
+      inline def setExternalAllowedUndefined: Self = StObject.set(x, "externalAllowed", js.undefined)
     }
   }
 }

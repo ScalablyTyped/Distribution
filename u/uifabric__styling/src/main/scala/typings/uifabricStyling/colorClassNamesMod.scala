@@ -590,8 +590,7 @@ object colorClassNamesMod {
   }
   object IColorClassNames {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       black: String,
       blackBackground: String,
       blackBackgroundHover: String,
@@ -851,872 +850,583 @@ object colorClassNamesMod {
       __obj.asInstanceOf[IColorClassNames]
     }
     
-    @scala.inline
-    implicit class IColorClassNamesMutableBuilder[Self <: IColorClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: IColorClassNames](x: Self) {
       
-      @scala.inline
-      def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackBackground(value: String): Self = StObject.set(x, "blackBackground", value.asInstanceOf[js.Any])
+      inline def setBlackBackground(value: String): Self = StObject.set(x, "blackBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackBackgroundHover(value: String): Self = StObject.set(x, "blackBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setBlackBackgroundHover(value: String): Self = StObject.set(x, "blackBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackBorder(value: String): Self = StObject.set(x, "blackBorder", value.asInstanceOf[js.Any])
+      inline def setBlackBorder(value: String): Self = StObject.set(x, "blackBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackBorderHover(value: String): Self = StObject.set(x, "blackBorderHover", value.asInstanceOf[js.Any])
+      inline def setBlackBorderHover(value: String): Self = StObject.set(x, "blackBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackHover(value: String): Self = StObject.set(x, "blackHover", value.asInstanceOf[js.Any])
+      inline def setBlackHover(value: String): Self = StObject.set(x, "blackHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackTranslucent40(value: String): Self = StObject.set(x, "blackTranslucent40", value.asInstanceOf[js.Any])
+      inline def setBlackTranslucent40(value: String): Self = StObject.set(x, "blackTranslucent40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackTranslucent40Background(value: String): Self = StObject.set(x, "blackTranslucent40Background", value.asInstanceOf[js.Any])
+      inline def setBlackTranslucent40Background(value: String): Self = StObject.set(x, "blackTranslucent40Background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackTranslucent40BackgroundHover(value: String): Self = StObject.set(x, "blackTranslucent40BackgroundHover", value.asInstanceOf[js.Any])
+      inline def setBlackTranslucent40BackgroundHover(value: String): Self = StObject.set(x, "blackTranslucent40BackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackTranslucent40Border(value: String): Self = StObject.set(x, "blackTranslucent40Border", value.asInstanceOf[js.Any])
+      inline def setBlackTranslucent40Border(value: String): Self = StObject.set(x, "blackTranslucent40Border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackTranslucent40BorderHover(value: String): Self = StObject.set(x, "blackTranslucent40BorderHover", value.asInstanceOf[js.Any])
+      inline def setBlackTranslucent40BorderHover(value: String): Self = StObject.set(x, "blackTranslucent40BorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackTranslucent40Hover(value: String): Self = StObject.set(x, "blackTranslucent40Hover", value.asInstanceOf[js.Any])
+      inline def setBlackTranslucent40Hover(value: String): Self = StObject.set(x, "blackTranslucent40Hover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueBackground(value: String): Self = StObject.set(x, "blueBackground", value.asInstanceOf[js.Any])
+      inline def setBlueBackground(value: String): Self = StObject.set(x, "blueBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueBackgroundHover(value: String): Self = StObject.set(x, "blueBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setBlueBackgroundHover(value: String): Self = StObject.set(x, "blueBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueBorder(value: String): Self = StObject.set(x, "blueBorder", value.asInstanceOf[js.Any])
+      inline def setBlueBorder(value: String): Self = StObject.set(x, "blueBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueBorderHover(value: String): Self = StObject.set(x, "blueBorderHover", value.asInstanceOf[js.Any])
+      inline def setBlueBorderHover(value: String): Self = StObject.set(x, "blueBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueDark(value: String): Self = StObject.set(x, "blueDark", value.asInstanceOf[js.Any])
+      inline def setBlueDark(value: String): Self = StObject.set(x, "blueDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueDarkBackground(value: String): Self = StObject.set(x, "blueDarkBackground", value.asInstanceOf[js.Any])
+      inline def setBlueDarkBackground(value: String): Self = StObject.set(x, "blueDarkBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueDarkBackgroundHover(value: String): Self = StObject.set(x, "blueDarkBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setBlueDarkBackgroundHover(value: String): Self = StObject.set(x, "blueDarkBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueDarkBorder(value: String): Self = StObject.set(x, "blueDarkBorder", value.asInstanceOf[js.Any])
+      inline def setBlueDarkBorder(value: String): Self = StObject.set(x, "blueDarkBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueDarkBorderHover(value: String): Self = StObject.set(x, "blueDarkBorderHover", value.asInstanceOf[js.Any])
+      inline def setBlueDarkBorderHover(value: String): Self = StObject.set(x, "blueDarkBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueDarkHover(value: String): Self = StObject.set(x, "blueDarkHover", value.asInstanceOf[js.Any])
+      inline def setBlueDarkHover(value: String): Self = StObject.set(x, "blueDarkHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueHover(value: String): Self = StObject.set(x, "blueHover", value.asInstanceOf[js.Any])
+      inline def setBlueHover(value: String): Self = StObject.set(x, "blueHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueLight(value: String): Self = StObject.set(x, "blueLight", value.asInstanceOf[js.Any])
+      inline def setBlueLight(value: String): Self = StObject.set(x, "blueLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueLightBackground(value: String): Self = StObject.set(x, "blueLightBackground", value.asInstanceOf[js.Any])
+      inline def setBlueLightBackground(value: String): Self = StObject.set(x, "blueLightBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueLightBackgroundHover(value: String): Self = StObject.set(x, "blueLightBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setBlueLightBackgroundHover(value: String): Self = StObject.set(x, "blueLightBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueLightBorder(value: String): Self = StObject.set(x, "blueLightBorder", value.asInstanceOf[js.Any])
+      inline def setBlueLightBorder(value: String): Self = StObject.set(x, "blueLightBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueLightBorderHover(value: String): Self = StObject.set(x, "blueLightBorderHover", value.asInstanceOf[js.Any])
+      inline def setBlueLightBorderHover(value: String): Self = StObject.set(x, "blueLightBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueLightHover(value: String): Self = StObject.set(x, "blueLightHover", value.asInstanceOf[js.Any])
+      inline def setBlueLightHover(value: String): Self = StObject.set(x, "blueLightHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueMid(value: String): Self = StObject.set(x, "blueMid", value.asInstanceOf[js.Any])
+      inline def setBlueMid(value: String): Self = StObject.set(x, "blueMid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueMidBackground(value: String): Self = StObject.set(x, "blueMidBackground", value.asInstanceOf[js.Any])
+      inline def setBlueMidBackground(value: String): Self = StObject.set(x, "blueMidBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueMidBackgroundHover(value: String): Self = StObject.set(x, "blueMidBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setBlueMidBackgroundHover(value: String): Self = StObject.set(x, "blueMidBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueMidBorder(value: String): Self = StObject.set(x, "blueMidBorder", value.asInstanceOf[js.Any])
+      inline def setBlueMidBorder(value: String): Self = StObject.set(x, "blueMidBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueMidBorderHover(value: String): Self = StObject.set(x, "blueMidBorderHover", value.asInstanceOf[js.Any])
+      inline def setBlueMidBorderHover(value: String): Self = StObject.set(x, "blueMidBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueMidHover(value: String): Self = StObject.set(x, "blueMidHover", value.asInstanceOf[js.Any])
+      inline def setBlueMidHover(value: String): Self = StObject.set(x, "blueMidHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenBackground(value: String): Self = StObject.set(x, "greenBackground", value.asInstanceOf[js.Any])
+      inline def setGreenBackground(value: String): Self = StObject.set(x, "greenBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenBackgroundHover(value: String): Self = StObject.set(x, "greenBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setGreenBackgroundHover(value: String): Self = StObject.set(x, "greenBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenBorder(value: String): Self = StObject.set(x, "greenBorder", value.asInstanceOf[js.Any])
+      inline def setGreenBorder(value: String): Self = StObject.set(x, "greenBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenBorderHover(value: String): Self = StObject.set(x, "greenBorderHover", value.asInstanceOf[js.Any])
+      inline def setGreenBorderHover(value: String): Self = StObject.set(x, "greenBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenDark(value: String): Self = StObject.set(x, "greenDark", value.asInstanceOf[js.Any])
+      inline def setGreenDark(value: String): Self = StObject.set(x, "greenDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenDarkBackground(value: String): Self = StObject.set(x, "greenDarkBackground", value.asInstanceOf[js.Any])
+      inline def setGreenDarkBackground(value: String): Self = StObject.set(x, "greenDarkBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenDarkBackgroundHover(value: String): Self = StObject.set(x, "greenDarkBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setGreenDarkBackgroundHover(value: String): Self = StObject.set(x, "greenDarkBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenDarkBorder(value: String): Self = StObject.set(x, "greenDarkBorder", value.asInstanceOf[js.Any])
+      inline def setGreenDarkBorder(value: String): Self = StObject.set(x, "greenDarkBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenDarkBorderHover(value: String): Self = StObject.set(x, "greenDarkBorderHover", value.asInstanceOf[js.Any])
+      inline def setGreenDarkBorderHover(value: String): Self = StObject.set(x, "greenDarkBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenDarkHover(value: String): Self = StObject.set(x, "greenDarkHover", value.asInstanceOf[js.Any])
+      inline def setGreenDarkHover(value: String): Self = StObject.set(x, "greenDarkHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenHover(value: String): Self = StObject.set(x, "greenHover", value.asInstanceOf[js.Any])
+      inline def setGreenHover(value: String): Self = StObject.set(x, "greenHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenLight(value: String): Self = StObject.set(x, "greenLight", value.asInstanceOf[js.Any])
+      inline def setGreenLight(value: String): Self = StObject.set(x, "greenLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenLightBackground(value: String): Self = StObject.set(x, "greenLightBackground", value.asInstanceOf[js.Any])
+      inline def setGreenLightBackground(value: String): Self = StObject.set(x, "greenLightBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenLightBackgroundHover(value: String): Self = StObject.set(x, "greenLightBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setGreenLightBackgroundHover(value: String): Self = StObject.set(x, "greenLightBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenLightBorder(value: String): Self = StObject.set(x, "greenLightBorder", value.asInstanceOf[js.Any])
+      inline def setGreenLightBorder(value: String): Self = StObject.set(x, "greenLightBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenLightBorderHover(value: String): Self = StObject.set(x, "greenLightBorderHover", value.asInstanceOf[js.Any])
+      inline def setGreenLightBorderHover(value: String): Self = StObject.set(x, "greenLightBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenLightHover(value: String): Self = StObject.set(x, "greenLightHover", value.asInstanceOf[js.Any])
+      inline def setGreenLightHover(value: String): Self = StObject.set(x, "greenLightHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagenta(value: String): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
+      inline def setMagenta(value: String): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaBackground(value: String): Self = StObject.set(x, "magentaBackground", value.asInstanceOf[js.Any])
+      inline def setMagentaBackground(value: String): Self = StObject.set(x, "magentaBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaBackgroundHover(value: String): Self = StObject.set(x, "magentaBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setMagentaBackgroundHover(value: String): Self = StObject.set(x, "magentaBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaBorder(value: String): Self = StObject.set(x, "magentaBorder", value.asInstanceOf[js.Any])
+      inline def setMagentaBorder(value: String): Self = StObject.set(x, "magentaBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaBorderHover(value: String): Self = StObject.set(x, "magentaBorderHover", value.asInstanceOf[js.Any])
+      inline def setMagentaBorderHover(value: String): Self = StObject.set(x, "magentaBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaDark(value: String): Self = StObject.set(x, "magentaDark", value.asInstanceOf[js.Any])
+      inline def setMagentaDark(value: String): Self = StObject.set(x, "magentaDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaDarkBackground(value: String): Self = StObject.set(x, "magentaDarkBackground", value.asInstanceOf[js.Any])
+      inline def setMagentaDarkBackground(value: String): Self = StObject.set(x, "magentaDarkBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaDarkBackgroundHover(value: String): Self = StObject.set(x, "magentaDarkBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setMagentaDarkBackgroundHover(value: String): Self = StObject.set(x, "magentaDarkBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaDarkBorder(value: String): Self = StObject.set(x, "magentaDarkBorder", value.asInstanceOf[js.Any])
+      inline def setMagentaDarkBorder(value: String): Self = StObject.set(x, "magentaDarkBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaDarkBorderHover(value: String): Self = StObject.set(x, "magentaDarkBorderHover", value.asInstanceOf[js.Any])
+      inline def setMagentaDarkBorderHover(value: String): Self = StObject.set(x, "magentaDarkBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaDarkHover(value: String): Self = StObject.set(x, "magentaDarkHover", value.asInstanceOf[js.Any])
+      inline def setMagentaDarkHover(value: String): Self = StObject.set(x, "magentaDarkHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaHover(value: String): Self = StObject.set(x, "magentaHover", value.asInstanceOf[js.Any])
+      inline def setMagentaHover(value: String): Self = StObject.set(x, "magentaHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaLight(value: String): Self = StObject.set(x, "magentaLight", value.asInstanceOf[js.Any])
+      inline def setMagentaLight(value: String): Self = StObject.set(x, "magentaLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaLightBackground(value: String): Self = StObject.set(x, "magentaLightBackground", value.asInstanceOf[js.Any])
+      inline def setMagentaLightBackground(value: String): Self = StObject.set(x, "magentaLightBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaLightBackgroundHover(value: String): Self = StObject.set(x, "magentaLightBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setMagentaLightBackgroundHover(value: String): Self = StObject.set(x, "magentaLightBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaLightBorder(value: String): Self = StObject.set(x, "magentaLightBorder", value.asInstanceOf[js.Any])
+      inline def setMagentaLightBorder(value: String): Self = StObject.set(x, "magentaLightBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaLightBorderHover(value: String): Self = StObject.set(x, "magentaLightBorderHover", value.asInstanceOf[js.Any])
+      inline def setMagentaLightBorderHover(value: String): Self = StObject.set(x, "magentaLightBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagentaLightHover(value: String): Self = StObject.set(x, "magentaLightHover", value.asInstanceOf[js.Any])
+      inline def setMagentaLightHover(value: String): Self = StObject.set(x, "magentaLightHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralDark(value: String): Self = StObject.set(x, "neutralDark", value.asInstanceOf[js.Any])
+      inline def setNeutralDark(value: String): Self = StObject.set(x, "neutralDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralDarkBackground(value: String): Self = StObject.set(x, "neutralDarkBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralDarkBackground(value: String): Self = StObject.set(x, "neutralDarkBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralDarkBackgroundHover(value: String): Self = StObject.set(x, "neutralDarkBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralDarkBackgroundHover(value: String): Self = StObject.set(x, "neutralDarkBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralDarkBorder(value: String): Self = StObject.set(x, "neutralDarkBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralDarkBorder(value: String): Self = StObject.set(x, "neutralDarkBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralDarkBorderHover(value: String): Self = StObject.set(x, "neutralDarkBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralDarkBorderHover(value: String): Self = StObject.set(x, "neutralDarkBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralDarkHover(value: String): Self = StObject.set(x, "neutralDarkHover", value.asInstanceOf[js.Any])
+      inline def setNeutralDarkHover(value: String): Self = StObject.set(x, "neutralDarkHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLight(value: String): Self = StObject.set(x, "neutralLight", value.asInstanceOf[js.Any])
+      inline def setNeutralLight(value: String): Self = StObject.set(x, "neutralLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLightBackground(value: String): Self = StObject.set(x, "neutralLightBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralLightBackground(value: String): Self = StObject.set(x, "neutralLightBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLightBackgroundHover(value: String): Self = StObject.set(x, "neutralLightBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralLightBackgroundHover(value: String): Self = StObject.set(x, "neutralLightBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLightBorder(value: String): Self = StObject.set(x, "neutralLightBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralLightBorder(value: String): Self = StObject.set(x, "neutralLightBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLightBorderHover(value: String): Self = StObject.set(x, "neutralLightBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralLightBorderHover(value: String): Self = StObject.set(x, "neutralLightBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLightHover(value: String): Self = StObject.set(x, "neutralLightHover", value.asInstanceOf[js.Any])
+      inline def setNeutralLightHover(value: String): Self = StObject.set(x, "neutralLightHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighter(value: String): Self = StObject.set(x, "neutralLighter", value.asInstanceOf[js.Any])
+      inline def setNeutralLighter(value: String): Self = StObject.set(x, "neutralLighter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterAlt(value: String): Self = StObject.set(x, "neutralLighterAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterAlt(value: String): Self = StObject.set(x, "neutralLighterAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterAltBackground(value: String): Self = StObject.set(x, "neutralLighterAltBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterAltBackground(value: String): Self = StObject.set(x, "neutralLighterAltBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterAltBackgroundHover(value: String): Self = StObject.set(x, "neutralLighterAltBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterAltBackgroundHover(value: String): Self = StObject.set(x, "neutralLighterAltBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterAltBorder(value: String): Self = StObject.set(x, "neutralLighterAltBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterAltBorder(value: String): Self = StObject.set(x, "neutralLighterAltBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterAltBorderHover(value: String): Self = StObject.set(x, "neutralLighterAltBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterAltBorderHover(value: String): Self = StObject.set(x, "neutralLighterAltBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterAltHover(value: String): Self = StObject.set(x, "neutralLighterAltHover", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterAltHover(value: String): Self = StObject.set(x, "neutralLighterAltHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterBackground(value: String): Self = StObject.set(x, "neutralLighterBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterBackground(value: String): Self = StObject.set(x, "neutralLighterBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterBackgroundHover(value: String): Self = StObject.set(x, "neutralLighterBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterBackgroundHover(value: String): Self = StObject.set(x, "neutralLighterBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterBorder(value: String): Self = StObject.set(x, "neutralLighterBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterBorder(value: String): Self = StObject.set(x, "neutralLighterBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterBorderHover(value: String): Self = StObject.set(x, "neutralLighterBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterBorderHover(value: String): Self = StObject.set(x, "neutralLighterBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralLighterHover(value: String): Self = StObject.set(x, "neutralLighterHover", value.asInstanceOf[js.Any])
+      inline def setNeutralLighterHover(value: String): Self = StObject.set(x, "neutralLighterHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimary(value: String): Self = StObject.set(x, "neutralPrimary", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimary(value: String): Self = StObject.set(x, "neutralPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryAlt(value: String): Self = StObject.set(x, "neutralPrimaryAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryAlt(value: String): Self = StObject.set(x, "neutralPrimaryAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryAltBackground(value: String): Self = StObject.set(x, "neutralPrimaryAltBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryAltBackground(value: String): Self = StObject.set(x, "neutralPrimaryAltBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryAltBackgroundHover(value: String): Self = StObject.set(x, "neutralPrimaryAltBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryAltBackgroundHover(value: String): Self = StObject.set(x, "neutralPrimaryAltBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryAltBorder(value: String): Self = StObject.set(x, "neutralPrimaryAltBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryAltBorder(value: String): Self = StObject.set(x, "neutralPrimaryAltBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryAltBorderHover(value: String): Self = StObject.set(x, "neutralPrimaryAltBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryAltBorderHover(value: String): Self = StObject.set(x, "neutralPrimaryAltBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryAltHover(value: String): Self = StObject.set(x, "neutralPrimaryAltHover", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryAltHover(value: String): Self = StObject.set(x, "neutralPrimaryAltHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryBackground(value: String): Self = StObject.set(x, "neutralPrimaryBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryBackground(value: String): Self = StObject.set(x, "neutralPrimaryBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryBackgroundHover(value: String): Self = StObject.set(x, "neutralPrimaryBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryBackgroundHover(value: String): Self = StObject.set(x, "neutralPrimaryBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryBorder(value: String): Self = StObject.set(x, "neutralPrimaryBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryBorder(value: String): Self = StObject.set(x, "neutralPrimaryBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryBorderHover(value: String): Self = StObject.set(x, "neutralPrimaryBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryBorderHover(value: String): Self = StObject.set(x, "neutralPrimaryBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralPrimaryHover(value: String): Self = StObject.set(x, "neutralPrimaryHover", value.asInstanceOf[js.Any])
+      inline def setNeutralPrimaryHover(value: String): Self = StObject.set(x, "neutralPrimaryHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternary(value: String): Self = StObject.set(x, "neutralQuaternary", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternary(value: String): Self = StObject.set(x, "neutralQuaternary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryAlt(value: String): Self = StObject.set(x, "neutralQuaternaryAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryAlt(value: String): Self = StObject.set(x, "neutralQuaternaryAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryAltBackground(value: String): Self = StObject.set(x, "neutralQuaternaryAltBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryAltBackground(value: String): Self = StObject.set(x, "neutralQuaternaryAltBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryAltBackgroundHover(value: String): Self = StObject.set(x, "neutralQuaternaryAltBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryAltBackgroundHover(value: String): Self = StObject.set(x, "neutralQuaternaryAltBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryAltBorder(value: String): Self = StObject.set(x, "neutralQuaternaryAltBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryAltBorder(value: String): Self = StObject.set(x, "neutralQuaternaryAltBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryAltBorderHover(value: String): Self = StObject.set(x, "neutralQuaternaryAltBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryAltBorderHover(value: String): Self = StObject.set(x, "neutralQuaternaryAltBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryAltHover(value: String): Self = StObject.set(x, "neutralQuaternaryAltHover", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryAltHover(value: String): Self = StObject.set(x, "neutralQuaternaryAltHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryBackground(value: String): Self = StObject.set(x, "neutralQuaternaryBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryBackground(value: String): Self = StObject.set(x, "neutralQuaternaryBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryBackgroundHover(value: String): Self = StObject.set(x, "neutralQuaternaryBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryBackgroundHover(value: String): Self = StObject.set(x, "neutralQuaternaryBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryBorder(value: String): Self = StObject.set(x, "neutralQuaternaryBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryBorder(value: String): Self = StObject.set(x, "neutralQuaternaryBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryBorderHover(value: String): Self = StObject.set(x, "neutralQuaternaryBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryBorderHover(value: String): Self = StObject.set(x, "neutralQuaternaryBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralQuaternaryHover(value: String): Self = StObject.set(x, "neutralQuaternaryHover", value.asInstanceOf[js.Any])
+      inline def setNeutralQuaternaryHover(value: String): Self = StObject.set(x, "neutralQuaternaryHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondary(value: String): Self = StObject.set(x, "neutralSecondary", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondary(value: String): Self = StObject.set(x, "neutralSecondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryAlt(value: String): Self = StObject.set(x, "neutralSecondaryAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryAlt(value: String): Self = StObject.set(x, "neutralSecondaryAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryAltBackground(value: String): Self = StObject.set(x, "neutralSecondaryAltBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryAltBackground(value: String): Self = StObject.set(x, "neutralSecondaryAltBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryAltBackgroundHover(value: String): Self = StObject.set(x, "neutralSecondaryAltBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryAltBackgroundHover(value: String): Self = StObject.set(x, "neutralSecondaryAltBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryAltBorder(value: String): Self = StObject.set(x, "neutralSecondaryAltBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryAltBorder(value: String): Self = StObject.set(x, "neutralSecondaryAltBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryAltBorderHover(value: String): Self = StObject.set(x, "neutralSecondaryAltBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryAltBorderHover(value: String): Self = StObject.set(x, "neutralSecondaryAltBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryAltHover(value: String): Self = StObject.set(x, "neutralSecondaryAltHover", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryAltHover(value: String): Self = StObject.set(x, "neutralSecondaryAltHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryBackground(value: String): Self = StObject.set(x, "neutralSecondaryBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryBackground(value: String): Self = StObject.set(x, "neutralSecondaryBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryBackgroundHover(value: String): Self = StObject.set(x, "neutralSecondaryBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryBackgroundHover(value: String): Self = StObject.set(x, "neutralSecondaryBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryBorder(value: String): Self = StObject.set(x, "neutralSecondaryBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryBorder(value: String): Self = StObject.set(x, "neutralSecondaryBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryBorderHover(value: String): Self = StObject.set(x, "neutralSecondaryBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryBorderHover(value: String): Self = StObject.set(x, "neutralSecondaryBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralSecondaryHover(value: String): Self = StObject.set(x, "neutralSecondaryHover", value.asInstanceOf[js.Any])
+      inline def setNeutralSecondaryHover(value: String): Self = StObject.set(x, "neutralSecondaryHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiary(value: String): Self = StObject.set(x, "neutralTertiary", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiary(value: String): Self = StObject.set(x, "neutralTertiary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryAlt(value: String): Self = StObject.set(x, "neutralTertiaryAlt", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryAlt(value: String): Self = StObject.set(x, "neutralTertiaryAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryAltBackground(value: String): Self = StObject.set(x, "neutralTertiaryAltBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryAltBackground(value: String): Self = StObject.set(x, "neutralTertiaryAltBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryAltBackgroundHover(value: String): Self = StObject.set(x, "neutralTertiaryAltBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryAltBackgroundHover(value: String): Self = StObject.set(x, "neutralTertiaryAltBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryAltBorder(value: String): Self = StObject.set(x, "neutralTertiaryAltBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryAltBorder(value: String): Self = StObject.set(x, "neutralTertiaryAltBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryAltBorderHover(value: String): Self = StObject.set(x, "neutralTertiaryAltBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryAltBorderHover(value: String): Self = StObject.set(x, "neutralTertiaryAltBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryAltHover(value: String): Self = StObject.set(x, "neutralTertiaryAltHover", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryAltHover(value: String): Self = StObject.set(x, "neutralTertiaryAltHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryBackground(value: String): Self = StObject.set(x, "neutralTertiaryBackground", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryBackground(value: String): Self = StObject.set(x, "neutralTertiaryBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryBackgroundHover(value: String): Self = StObject.set(x, "neutralTertiaryBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryBackgroundHover(value: String): Self = StObject.set(x, "neutralTertiaryBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryBorder(value: String): Self = StObject.set(x, "neutralTertiaryBorder", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryBorder(value: String): Self = StObject.set(x, "neutralTertiaryBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryBorderHover(value: String): Self = StObject.set(x, "neutralTertiaryBorderHover", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryBorderHover(value: String): Self = StObject.set(x, "neutralTertiaryBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralTertiaryHover(value: String): Self = StObject.set(x, "neutralTertiaryHover", value.asInstanceOf[js.Any])
+      inline def setNeutralTertiaryHover(value: String): Self = StObject.set(x, "neutralTertiaryHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrange(value: String): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
+      inline def setOrange(value: String): Self = StObject.set(x, "orange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeBackground(value: String): Self = StObject.set(x, "orangeBackground", value.asInstanceOf[js.Any])
+      inline def setOrangeBackground(value: String): Self = StObject.set(x, "orangeBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeBackgroundHover(value: String): Self = StObject.set(x, "orangeBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setOrangeBackgroundHover(value: String): Self = StObject.set(x, "orangeBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeBorder(value: String): Self = StObject.set(x, "orangeBorder", value.asInstanceOf[js.Any])
+      inline def setOrangeBorder(value: String): Self = StObject.set(x, "orangeBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeBorderHover(value: String): Self = StObject.set(x, "orangeBorderHover", value.asInstanceOf[js.Any])
+      inline def setOrangeBorderHover(value: String): Self = StObject.set(x, "orangeBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeHover(value: String): Self = StObject.set(x, "orangeHover", value.asInstanceOf[js.Any])
+      inline def setOrangeHover(value: String): Self = StObject.set(x, "orangeHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLight(value: String): Self = StObject.set(x, "orangeLight", value.asInstanceOf[js.Any])
+      inline def setOrangeLight(value: String): Self = StObject.set(x, "orangeLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLightBackground(value: String): Self = StObject.set(x, "orangeLightBackground", value.asInstanceOf[js.Any])
+      inline def setOrangeLightBackground(value: String): Self = StObject.set(x, "orangeLightBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLightBackgroundHover(value: String): Self = StObject.set(x, "orangeLightBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setOrangeLightBackgroundHover(value: String): Self = StObject.set(x, "orangeLightBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLightBorder(value: String): Self = StObject.set(x, "orangeLightBorder", value.asInstanceOf[js.Any])
+      inline def setOrangeLightBorder(value: String): Self = StObject.set(x, "orangeLightBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLightBorderHover(value: String): Self = StObject.set(x, "orangeLightBorderHover", value.asInstanceOf[js.Any])
+      inline def setOrangeLightBorderHover(value: String): Self = StObject.set(x, "orangeLightBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLightHover(value: String): Self = StObject.set(x, "orangeLightHover", value.asInstanceOf[js.Any])
+      inline def setOrangeLightHover(value: String): Self = StObject.set(x, "orangeLightHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLighter(value: String): Self = StObject.set(x, "orangeLighter", value.asInstanceOf[js.Any])
+      inline def setOrangeLighter(value: String): Self = StObject.set(x, "orangeLighter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLighterBackground(value: String): Self = StObject.set(x, "orangeLighterBackground", value.asInstanceOf[js.Any])
+      inline def setOrangeLighterBackground(value: String): Self = StObject.set(x, "orangeLighterBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLighterBackgroundHover(value: String): Self = StObject.set(x, "orangeLighterBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setOrangeLighterBackgroundHover(value: String): Self = StObject.set(x, "orangeLighterBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLighterBorder(value: String): Self = StObject.set(x, "orangeLighterBorder", value.asInstanceOf[js.Any])
+      inline def setOrangeLighterBorder(value: String): Self = StObject.set(x, "orangeLighterBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLighterBorderHover(value: String): Self = StObject.set(x, "orangeLighterBorderHover", value.asInstanceOf[js.Any])
+      inline def setOrangeLighterBorderHover(value: String): Self = StObject.set(x, "orangeLighterBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrangeLighterHover(value: String): Self = StObject.set(x, "orangeLighterHover", value.asInstanceOf[js.Any])
+      inline def setOrangeLighterHover(value: String): Self = StObject.set(x, "orangeLighterHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurple(value: String): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
+      inline def setPurple(value: String): Self = StObject.set(x, "purple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleBackground(value: String): Self = StObject.set(x, "purpleBackground", value.asInstanceOf[js.Any])
+      inline def setPurpleBackground(value: String): Self = StObject.set(x, "purpleBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleBackgroundHover(value: String): Self = StObject.set(x, "purpleBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setPurpleBackgroundHover(value: String): Self = StObject.set(x, "purpleBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleBorder(value: String): Self = StObject.set(x, "purpleBorder", value.asInstanceOf[js.Any])
+      inline def setPurpleBorder(value: String): Self = StObject.set(x, "purpleBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleBorderHover(value: String): Self = StObject.set(x, "purpleBorderHover", value.asInstanceOf[js.Any])
+      inline def setPurpleBorderHover(value: String): Self = StObject.set(x, "purpleBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleDark(value: String): Self = StObject.set(x, "purpleDark", value.asInstanceOf[js.Any])
+      inline def setPurpleDark(value: String): Self = StObject.set(x, "purpleDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleDarkBackground(value: String): Self = StObject.set(x, "purpleDarkBackground", value.asInstanceOf[js.Any])
+      inline def setPurpleDarkBackground(value: String): Self = StObject.set(x, "purpleDarkBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleDarkBackgroundHover(value: String): Self = StObject.set(x, "purpleDarkBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setPurpleDarkBackgroundHover(value: String): Self = StObject.set(x, "purpleDarkBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleDarkBorder(value: String): Self = StObject.set(x, "purpleDarkBorder", value.asInstanceOf[js.Any])
+      inline def setPurpleDarkBorder(value: String): Self = StObject.set(x, "purpleDarkBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleDarkBorderHover(value: String): Self = StObject.set(x, "purpleDarkBorderHover", value.asInstanceOf[js.Any])
+      inline def setPurpleDarkBorderHover(value: String): Self = StObject.set(x, "purpleDarkBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleDarkHover(value: String): Self = StObject.set(x, "purpleDarkHover", value.asInstanceOf[js.Any])
+      inline def setPurpleDarkHover(value: String): Self = StObject.set(x, "purpleDarkHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleHover(value: String): Self = StObject.set(x, "purpleHover", value.asInstanceOf[js.Any])
+      inline def setPurpleHover(value: String): Self = StObject.set(x, "purpleHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleLight(value: String): Self = StObject.set(x, "purpleLight", value.asInstanceOf[js.Any])
+      inline def setPurpleLight(value: String): Self = StObject.set(x, "purpleLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleLightBackground(value: String): Self = StObject.set(x, "purpleLightBackground", value.asInstanceOf[js.Any])
+      inline def setPurpleLightBackground(value: String): Self = StObject.set(x, "purpleLightBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleLightBackgroundHover(value: String): Self = StObject.set(x, "purpleLightBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setPurpleLightBackgroundHover(value: String): Self = StObject.set(x, "purpleLightBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleLightBorder(value: String): Self = StObject.set(x, "purpleLightBorder", value.asInstanceOf[js.Any])
+      inline def setPurpleLightBorder(value: String): Self = StObject.set(x, "purpleLightBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleLightBorderHover(value: String): Self = StObject.set(x, "purpleLightBorderHover", value.asInstanceOf[js.Any])
+      inline def setPurpleLightBorderHover(value: String): Self = StObject.set(x, "purpleLightBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurpleLightHover(value: String): Self = StObject.set(x, "purpleLightHover", value.asInstanceOf[js.Any])
+      inline def setPurpleLightHover(value: String): Self = StObject.set(x, "purpleLightHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedBackground(value: String): Self = StObject.set(x, "redBackground", value.asInstanceOf[js.Any])
+      inline def setRedBackground(value: String): Self = StObject.set(x, "redBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedBackgroundHover(value: String): Self = StObject.set(x, "redBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setRedBackgroundHover(value: String): Self = StObject.set(x, "redBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedBorder(value: String): Self = StObject.set(x, "redBorder", value.asInstanceOf[js.Any])
+      inline def setRedBorder(value: String): Self = StObject.set(x, "redBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedBorderHover(value: String): Self = StObject.set(x, "redBorderHover", value.asInstanceOf[js.Any])
+      inline def setRedBorderHover(value: String): Self = StObject.set(x, "redBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedDark(value: String): Self = StObject.set(x, "redDark", value.asInstanceOf[js.Any])
+      inline def setRedDark(value: String): Self = StObject.set(x, "redDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedDarkBackground(value: String): Self = StObject.set(x, "redDarkBackground", value.asInstanceOf[js.Any])
+      inline def setRedDarkBackground(value: String): Self = StObject.set(x, "redDarkBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedDarkBackgroundHover(value: String): Self = StObject.set(x, "redDarkBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setRedDarkBackgroundHover(value: String): Self = StObject.set(x, "redDarkBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedDarkBorder(value: String): Self = StObject.set(x, "redDarkBorder", value.asInstanceOf[js.Any])
+      inline def setRedDarkBorder(value: String): Self = StObject.set(x, "redDarkBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedDarkBorderHover(value: String): Self = StObject.set(x, "redDarkBorderHover", value.asInstanceOf[js.Any])
+      inline def setRedDarkBorderHover(value: String): Self = StObject.set(x, "redDarkBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedDarkHover(value: String): Self = StObject.set(x, "redDarkHover", value.asInstanceOf[js.Any])
+      inline def setRedDarkHover(value: String): Self = StObject.set(x, "redDarkHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedHover(value: String): Self = StObject.set(x, "redHover", value.asInstanceOf[js.Any])
+      inline def setRedHover(value: String): Self = StObject.set(x, "redHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeal(value: String): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
+      inline def setTeal(value: String): Self = StObject.set(x, "teal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealBackground(value: String): Self = StObject.set(x, "tealBackground", value.asInstanceOf[js.Any])
+      inline def setTealBackground(value: String): Self = StObject.set(x, "tealBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealBackgroundHover(value: String): Self = StObject.set(x, "tealBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setTealBackgroundHover(value: String): Self = StObject.set(x, "tealBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealBorder(value: String): Self = StObject.set(x, "tealBorder", value.asInstanceOf[js.Any])
+      inline def setTealBorder(value: String): Self = StObject.set(x, "tealBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealBorderHover(value: String): Self = StObject.set(x, "tealBorderHover", value.asInstanceOf[js.Any])
+      inline def setTealBorderHover(value: String): Self = StObject.set(x, "tealBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealDark(value: String): Self = StObject.set(x, "tealDark", value.asInstanceOf[js.Any])
+      inline def setTealDark(value: String): Self = StObject.set(x, "tealDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealDarkBackground(value: String): Self = StObject.set(x, "tealDarkBackground", value.asInstanceOf[js.Any])
+      inline def setTealDarkBackground(value: String): Self = StObject.set(x, "tealDarkBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealDarkBackgroundHover(value: String): Self = StObject.set(x, "tealDarkBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setTealDarkBackgroundHover(value: String): Self = StObject.set(x, "tealDarkBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealDarkBorder(value: String): Self = StObject.set(x, "tealDarkBorder", value.asInstanceOf[js.Any])
+      inline def setTealDarkBorder(value: String): Self = StObject.set(x, "tealDarkBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealDarkBorderHover(value: String): Self = StObject.set(x, "tealDarkBorderHover", value.asInstanceOf[js.Any])
+      inline def setTealDarkBorderHover(value: String): Self = StObject.set(x, "tealDarkBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealDarkHover(value: String): Self = StObject.set(x, "tealDarkHover", value.asInstanceOf[js.Any])
+      inline def setTealDarkHover(value: String): Self = StObject.set(x, "tealDarkHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealHover(value: String): Self = StObject.set(x, "tealHover", value.asInstanceOf[js.Any])
+      inline def setTealHover(value: String): Self = StObject.set(x, "tealHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealLight(value: String): Self = StObject.set(x, "tealLight", value.asInstanceOf[js.Any])
+      inline def setTealLight(value: String): Self = StObject.set(x, "tealLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealLightBackground(value: String): Self = StObject.set(x, "tealLightBackground", value.asInstanceOf[js.Any])
+      inline def setTealLightBackground(value: String): Self = StObject.set(x, "tealLightBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealLightBackgroundHover(value: String): Self = StObject.set(x, "tealLightBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setTealLightBackgroundHover(value: String): Self = StObject.set(x, "tealLightBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealLightBorder(value: String): Self = StObject.set(x, "tealLightBorder", value.asInstanceOf[js.Any])
+      inline def setTealLightBorder(value: String): Self = StObject.set(x, "tealLightBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealLightBorderHover(value: String): Self = StObject.set(x, "tealLightBorderHover", value.asInstanceOf[js.Any])
+      inline def setTealLightBorderHover(value: String): Self = StObject.set(x, "tealLightBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTealLightHover(value: String): Self = StObject.set(x, "tealLightHover", value.asInstanceOf[js.Any])
+      inline def setTealLightHover(value: String): Self = StObject.set(x, "tealLightHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDark(value: String): Self = StObject.set(x, "themeDark", value.asInstanceOf[js.Any])
+      inline def setThemeDark(value: String): Self = StObject.set(x, "themeDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkAlt(value: String): Self = StObject.set(x, "themeDarkAlt", value.asInstanceOf[js.Any])
+      inline def setThemeDarkAlt(value: String): Self = StObject.set(x, "themeDarkAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkAltBackground(value: String): Self = StObject.set(x, "themeDarkAltBackground", value.asInstanceOf[js.Any])
+      inline def setThemeDarkAltBackground(value: String): Self = StObject.set(x, "themeDarkAltBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkAltBackgroundHover(value: String): Self = StObject.set(x, "themeDarkAltBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setThemeDarkAltBackgroundHover(value: String): Self = StObject.set(x, "themeDarkAltBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkAltBorder(value: String): Self = StObject.set(x, "themeDarkAltBorder", value.asInstanceOf[js.Any])
+      inline def setThemeDarkAltBorder(value: String): Self = StObject.set(x, "themeDarkAltBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkAltBorderHover(value: String): Self = StObject.set(x, "themeDarkAltBorderHover", value.asInstanceOf[js.Any])
+      inline def setThemeDarkAltBorderHover(value: String): Self = StObject.set(x, "themeDarkAltBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkAltHover(value: String): Self = StObject.set(x, "themeDarkAltHover", value.asInstanceOf[js.Any])
+      inline def setThemeDarkAltHover(value: String): Self = StObject.set(x, "themeDarkAltHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkBackground(value: String): Self = StObject.set(x, "themeDarkBackground", value.asInstanceOf[js.Any])
+      inline def setThemeDarkBackground(value: String): Self = StObject.set(x, "themeDarkBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkBackgroundHover(value: String): Self = StObject.set(x, "themeDarkBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setThemeDarkBackgroundHover(value: String): Self = StObject.set(x, "themeDarkBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkBorder(value: String): Self = StObject.set(x, "themeDarkBorder", value.asInstanceOf[js.Any])
+      inline def setThemeDarkBorder(value: String): Self = StObject.set(x, "themeDarkBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkBorderHover(value: String): Self = StObject.set(x, "themeDarkBorderHover", value.asInstanceOf[js.Any])
+      inline def setThemeDarkBorderHover(value: String): Self = StObject.set(x, "themeDarkBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkHover(value: String): Self = StObject.set(x, "themeDarkHover", value.asInstanceOf[js.Any])
+      inline def setThemeDarkHover(value: String): Self = StObject.set(x, "themeDarkHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarker(value: String): Self = StObject.set(x, "themeDarker", value.asInstanceOf[js.Any])
+      inline def setThemeDarker(value: String): Self = StObject.set(x, "themeDarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkerBackground(value: String): Self = StObject.set(x, "themeDarkerBackground", value.asInstanceOf[js.Any])
+      inline def setThemeDarkerBackground(value: String): Self = StObject.set(x, "themeDarkerBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkerBackgroundHover(value: String): Self = StObject.set(x, "themeDarkerBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setThemeDarkerBackgroundHover(value: String): Self = StObject.set(x, "themeDarkerBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkerBorder(value: String): Self = StObject.set(x, "themeDarkerBorder", value.asInstanceOf[js.Any])
+      inline def setThemeDarkerBorder(value: String): Self = StObject.set(x, "themeDarkerBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkerBorderHover(value: String): Self = StObject.set(x, "themeDarkerBorderHover", value.asInstanceOf[js.Any])
+      inline def setThemeDarkerBorderHover(value: String): Self = StObject.set(x, "themeDarkerBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeDarkerHover(value: String): Self = StObject.set(x, "themeDarkerHover", value.asInstanceOf[js.Any])
+      inline def setThemeDarkerHover(value: String): Self = StObject.set(x, "themeDarkerHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLight(value: String): Self = StObject.set(x, "themeLight", value.asInstanceOf[js.Any])
+      inline def setThemeLight(value: String): Self = StObject.set(x, "themeLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLightBackground(value: String): Self = StObject.set(x, "themeLightBackground", value.asInstanceOf[js.Any])
+      inline def setThemeLightBackground(value: String): Self = StObject.set(x, "themeLightBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLightBackgroundHover(value: String): Self = StObject.set(x, "themeLightBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setThemeLightBackgroundHover(value: String): Self = StObject.set(x, "themeLightBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLightBorder(value: String): Self = StObject.set(x, "themeLightBorder", value.asInstanceOf[js.Any])
+      inline def setThemeLightBorder(value: String): Self = StObject.set(x, "themeLightBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLightBorderHover(value: String): Self = StObject.set(x, "themeLightBorderHover", value.asInstanceOf[js.Any])
+      inline def setThemeLightBorderHover(value: String): Self = StObject.set(x, "themeLightBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLightHover(value: String): Self = StObject.set(x, "themeLightHover", value.asInstanceOf[js.Any])
+      inline def setThemeLightHover(value: String): Self = StObject.set(x, "themeLightHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighter(value: String): Self = StObject.set(x, "themeLighter", value.asInstanceOf[js.Any])
+      inline def setThemeLighter(value: String): Self = StObject.set(x, "themeLighter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterAlt(value: String): Self = StObject.set(x, "themeLighterAlt", value.asInstanceOf[js.Any])
+      inline def setThemeLighterAlt(value: String): Self = StObject.set(x, "themeLighterAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterAltBackground(value: String): Self = StObject.set(x, "themeLighterAltBackground", value.asInstanceOf[js.Any])
+      inline def setThemeLighterAltBackground(value: String): Self = StObject.set(x, "themeLighterAltBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterAltBackgroundHover(value: String): Self = StObject.set(x, "themeLighterAltBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setThemeLighterAltBackgroundHover(value: String): Self = StObject.set(x, "themeLighterAltBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterAltBorder(value: String): Self = StObject.set(x, "themeLighterAltBorder", value.asInstanceOf[js.Any])
+      inline def setThemeLighterAltBorder(value: String): Self = StObject.set(x, "themeLighterAltBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterAltBorderHover(value: String): Self = StObject.set(x, "themeLighterAltBorderHover", value.asInstanceOf[js.Any])
+      inline def setThemeLighterAltBorderHover(value: String): Self = StObject.set(x, "themeLighterAltBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterAltHover(value: String): Self = StObject.set(x, "themeLighterAltHover", value.asInstanceOf[js.Any])
+      inline def setThemeLighterAltHover(value: String): Self = StObject.set(x, "themeLighterAltHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterBackground(value: String): Self = StObject.set(x, "themeLighterBackground", value.asInstanceOf[js.Any])
+      inline def setThemeLighterBackground(value: String): Self = StObject.set(x, "themeLighterBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterBackgroundHover(value: String): Self = StObject.set(x, "themeLighterBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setThemeLighterBackgroundHover(value: String): Self = StObject.set(x, "themeLighterBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterBorder(value: String): Self = StObject.set(x, "themeLighterBorder", value.asInstanceOf[js.Any])
+      inline def setThemeLighterBorder(value: String): Self = StObject.set(x, "themeLighterBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterBorderHover(value: String): Self = StObject.set(x, "themeLighterBorderHover", value.asInstanceOf[js.Any])
+      inline def setThemeLighterBorderHover(value: String): Self = StObject.set(x, "themeLighterBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeLighterHover(value: String): Self = StObject.set(x, "themeLighterHover", value.asInstanceOf[js.Any])
+      inline def setThemeLighterHover(value: String): Self = StObject.set(x, "themeLighterHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemePrimary(value: String): Self = StObject.set(x, "themePrimary", value.asInstanceOf[js.Any])
+      inline def setThemePrimary(value: String): Self = StObject.set(x, "themePrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemePrimaryBackground(value: String): Self = StObject.set(x, "themePrimaryBackground", value.asInstanceOf[js.Any])
+      inline def setThemePrimaryBackground(value: String): Self = StObject.set(x, "themePrimaryBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemePrimaryBackgroundHover(value: String): Self = StObject.set(x, "themePrimaryBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setThemePrimaryBackgroundHover(value: String): Self = StObject.set(x, "themePrimaryBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemePrimaryBorder(value: String): Self = StObject.set(x, "themePrimaryBorder", value.asInstanceOf[js.Any])
+      inline def setThemePrimaryBorder(value: String): Self = StObject.set(x, "themePrimaryBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemePrimaryBorderHover(value: String): Self = StObject.set(x, "themePrimaryBorderHover", value.asInstanceOf[js.Any])
+      inline def setThemePrimaryBorderHover(value: String): Self = StObject.set(x, "themePrimaryBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemePrimaryHover(value: String): Self = StObject.set(x, "themePrimaryHover", value.asInstanceOf[js.Any])
+      inline def setThemePrimaryHover(value: String): Self = StObject.set(x, "themePrimaryHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeSecondary(value: String): Self = StObject.set(x, "themeSecondary", value.asInstanceOf[js.Any])
+      inline def setThemeSecondary(value: String): Self = StObject.set(x, "themeSecondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeSecondaryBackground(value: String): Self = StObject.set(x, "themeSecondaryBackground", value.asInstanceOf[js.Any])
+      inline def setThemeSecondaryBackground(value: String): Self = StObject.set(x, "themeSecondaryBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeSecondaryBackgroundHover(value: String): Self = StObject.set(x, "themeSecondaryBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setThemeSecondaryBackgroundHover(value: String): Self = StObject.set(x, "themeSecondaryBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeSecondaryBorder(value: String): Self = StObject.set(x, "themeSecondaryBorder", value.asInstanceOf[js.Any])
+      inline def setThemeSecondaryBorder(value: String): Self = StObject.set(x, "themeSecondaryBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeSecondaryBorderHover(value: String): Self = StObject.set(x, "themeSecondaryBorderHover", value.asInstanceOf[js.Any])
+      inline def setThemeSecondaryBorderHover(value: String): Self = StObject.set(x, "themeSecondaryBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeSecondaryHover(value: String): Self = StObject.set(x, "themeSecondaryHover", value.asInstanceOf[js.Any])
+      inline def setThemeSecondaryHover(value: String): Self = StObject.set(x, "themeSecondaryHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeTertiary(value: String): Self = StObject.set(x, "themeTertiary", value.asInstanceOf[js.Any])
+      inline def setThemeTertiary(value: String): Self = StObject.set(x, "themeTertiary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeTertiaryBackground(value: String): Self = StObject.set(x, "themeTertiaryBackground", value.asInstanceOf[js.Any])
+      inline def setThemeTertiaryBackground(value: String): Self = StObject.set(x, "themeTertiaryBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeTertiaryBackgroundHover(value: String): Self = StObject.set(x, "themeTertiaryBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setThemeTertiaryBackgroundHover(value: String): Self = StObject.set(x, "themeTertiaryBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeTertiaryBorder(value: String): Self = StObject.set(x, "themeTertiaryBorder", value.asInstanceOf[js.Any])
+      inline def setThemeTertiaryBorder(value: String): Self = StObject.set(x, "themeTertiaryBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeTertiaryBorderHover(value: String): Self = StObject.set(x, "themeTertiaryBorderHover", value.asInstanceOf[js.Any])
+      inline def setThemeTertiaryBorderHover(value: String): Self = StObject.set(x, "themeTertiaryBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeTertiaryHover(value: String): Self = StObject.set(x, "themeTertiaryHover", value.asInstanceOf[js.Any])
+      inline def setThemeTertiaryHover(value: String): Self = StObject.set(x, "themeTertiaryHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteBackground(value: String): Self = StObject.set(x, "whiteBackground", value.asInstanceOf[js.Any])
+      inline def setWhiteBackground(value: String): Self = StObject.set(x, "whiteBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteBackgroundHover(value: String): Self = StObject.set(x, "whiteBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setWhiteBackgroundHover(value: String): Self = StObject.set(x, "whiteBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteBorder(value: String): Self = StObject.set(x, "whiteBorder", value.asInstanceOf[js.Any])
+      inline def setWhiteBorder(value: String): Self = StObject.set(x, "whiteBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteBorderHover(value: String): Self = StObject.set(x, "whiteBorderHover", value.asInstanceOf[js.Any])
+      inline def setWhiteBorderHover(value: String): Self = StObject.set(x, "whiteBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteHover(value: String): Self = StObject.set(x, "whiteHover", value.asInstanceOf[js.Any])
+      inline def setWhiteHover(value: String): Self = StObject.set(x, "whiteHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteTranslucent40(value: String): Self = StObject.set(x, "whiteTranslucent40", value.asInstanceOf[js.Any])
+      inline def setWhiteTranslucent40(value: String): Self = StObject.set(x, "whiteTranslucent40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteTranslucent40Background(value: String): Self = StObject.set(x, "whiteTranslucent40Background", value.asInstanceOf[js.Any])
+      inline def setWhiteTranslucent40Background(value: String): Self = StObject.set(x, "whiteTranslucent40Background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteTranslucent40BackgroundHover(value: String): Self = StObject.set(x, "whiteTranslucent40BackgroundHover", value.asInstanceOf[js.Any])
+      inline def setWhiteTranslucent40BackgroundHover(value: String): Self = StObject.set(x, "whiteTranslucent40BackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteTranslucent40Border(value: String): Self = StObject.set(x, "whiteTranslucent40Border", value.asInstanceOf[js.Any])
+      inline def setWhiteTranslucent40Border(value: String): Self = StObject.set(x, "whiteTranslucent40Border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteTranslucent40BorderHover(value: String): Self = StObject.set(x, "whiteTranslucent40BorderHover", value.asInstanceOf[js.Any])
+      inline def setWhiteTranslucent40BorderHover(value: String): Self = StObject.set(x, "whiteTranslucent40BorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteTranslucent40Hover(value: String): Self = StObject.set(x, "whiteTranslucent40Hover", value.asInstanceOf[js.Any])
+      inline def setWhiteTranslucent40Hover(value: String): Self = StObject.set(x, "whiteTranslucent40Hover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellow(value: String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+      inline def setYellow(value: String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowBackground(value: String): Self = StObject.set(x, "yellowBackground", value.asInstanceOf[js.Any])
+      inline def setYellowBackground(value: String): Self = StObject.set(x, "yellowBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowBackgroundHover(value: String): Self = StObject.set(x, "yellowBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setYellowBackgroundHover(value: String): Self = StObject.set(x, "yellowBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowBorder(value: String): Self = StObject.set(x, "yellowBorder", value.asInstanceOf[js.Any])
+      inline def setYellowBorder(value: String): Self = StObject.set(x, "yellowBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowBorderHover(value: String): Self = StObject.set(x, "yellowBorderHover", value.asInstanceOf[js.Any])
+      inline def setYellowBorderHover(value: String): Self = StObject.set(x, "yellowBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowHover(value: String): Self = StObject.set(x, "yellowHover", value.asInstanceOf[js.Any])
+      inline def setYellowHover(value: String): Self = StObject.set(x, "yellowHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowLight(value: String): Self = StObject.set(x, "yellowLight", value.asInstanceOf[js.Any])
+      inline def setYellowLight(value: String): Self = StObject.set(x, "yellowLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowLightBackground(value: String): Self = StObject.set(x, "yellowLightBackground", value.asInstanceOf[js.Any])
+      inline def setYellowLightBackground(value: String): Self = StObject.set(x, "yellowLightBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowLightBackgroundHover(value: String): Self = StObject.set(x, "yellowLightBackgroundHover", value.asInstanceOf[js.Any])
+      inline def setYellowLightBackgroundHover(value: String): Self = StObject.set(x, "yellowLightBackgroundHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowLightBorder(value: String): Self = StObject.set(x, "yellowLightBorder", value.asInstanceOf[js.Any])
+      inline def setYellowLightBorder(value: String): Self = StObject.set(x, "yellowLightBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowLightBorderHover(value: String): Self = StObject.set(x, "yellowLightBorderHover", value.asInstanceOf[js.Any])
+      inline def setYellowLightBorderHover(value: String): Self = StObject.set(x, "yellowLightBorderHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYellowLightHover(value: String): Self = StObject.set(x, "yellowLightHover", value.asInstanceOf[js.Any])
+      inline def setYellowLightHover(value: String): Self = StObject.set(x, "yellowLightHover", value.asInstanceOf[js.Any])
     }
   }
 }

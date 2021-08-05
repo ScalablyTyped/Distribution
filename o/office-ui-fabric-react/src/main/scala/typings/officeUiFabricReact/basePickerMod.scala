@@ -39,50 +39,50 @@ object basePickerMod {
     /**
       * @deprecated this is no longer necessary as typescript now supports generic elements
       */
-    var SuggestionOfProperType: Instantiable1[/* props */ ISuggestionsProps[T], Suggestions[T]] = js.native
+    /* protected */ var SuggestionOfProperType: Instantiable1[/* props */ ISuggestionsProps[T], Suggestions[T]] = js.native
     
-    var _ariaMap: IPickerAriaIds = js.native
+    /* protected */ var _ariaMap: IPickerAriaIds = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _completeGenericSuggestion: js.Any = js.native
+    /* private */ var _completeGenericSuggestion: js.Any = js.native
     
     /**
       * Suggestions are normally shown after the user updates text and the text
       * is non-empty, but also when the user clicks on the input element.
       * @returns True if suggestions should be shown.
       */
-    var _getShowSuggestions: js.Any = js.native
+    /* private */ var _getShowSuggestions: js.Any = js.native
     
-    var _getTextFromItem: js.Any = js.native
+    /* private */ var _getTextFromItem: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _onResolveSuggestions: js.Any = js.native
+    /* private */ var _onResolveSuggestions: js.Any = js.native
     
-    var _onSelectedItemsUpdated: js.Any = js.native
+    /* private */ var _onSelectedItemsUpdated: js.Any = js.native
     
     /* protected */ def _shouldFocusZoneEnterInnerZone(ev: KeyboardEvent[HTMLElement]): Boolean = js.native
     
-    var _styledSuggestions: js.Any = js.native
+    /* private */ var _styledSuggestions: js.Any = js.native
     
     /**
       * Takes in the current updated value and either resolves it with the new suggestions
       * or if updated value is undefined then it clears out currently suggested items
       */
-    var _updateAndResolveValue: js.Any = js.native
+    /* private */ var _updateAndResolveValue: js.Any = js.native
     
     /**
       * Controls what happens whenever there is an action that impacts the selected items.
       * If `selectedItems` is provided, this will act as a controlled component and it will not update its own state.
       */
-    var _updateSelectedItems: js.Any = js.native
+    /* private */ var _updateSelectedItems: js.Any = js.native
     
     /**
       * This should be called when the user does something other than use text entry to trigger suggestions.
       *
       */
-    var _userTriggeredSuggestions: js.Any = js.native
+    /* private */ var _userTriggeredSuggestions: js.Any = js.native
     
     /* protected */ def addItem(item: T): Unit = js.native
     
@@ -101,19 +101,19 @@ object basePickerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MBasePicker(): Unit = js.native
     
-    var currentPromise: js.UndefOr[js.Thenable[js.Any]] = js.native
+    /* protected */ var currentPromise: js.UndefOr[js.Thenable[js.Any]] = js.native
     
     def dismissSuggestions(): Unit = js.native
     def dismissSuggestions(ev: js.Any): Unit = js.native
     
-    var focusZone: RefObject[IFocusZone] = js.native
+    /* protected */ var focusZone: RefObject[IFocusZone] = js.native
     
     /* protected */ def getActiveDescendant(): js.UndefOr[String] = js.native
     
     /* protected */ def getSuggestionsAlert(): js.UndefOr[Element] = js.native
     /* protected */ def getSuggestionsAlert(suggestionAlertClassName: String): js.UndefOr[Element] = js.native
     
-    var input: RefObject[IAutofill] = js.native
+    /* protected */ var input: RefObject[IAutofill] = js.native
     
     @JSName("items")
     val items_BasePicker: js.Array[T] = js.native
@@ -173,13 +173,13 @@ object basePickerMod {
     
     /* protected */ def resolveNewValue(updatedValue: String, suggestions: js.Array[T]): Unit = js.native
     
-    var root: RefObject[HTMLDivElement] = js.native
+    /* protected */ var root: RefObject[HTMLDivElement] = js.native
     
-    var selection: Selection[IObjectWithKey] = js.native
+    /* protected */ var selection: Selection[IObjectWithKey] = js.native
     
-    var suggestionElement: RefObject[ISuggestions[T]] = js.native
+    /* protected */ var suggestionElement: RefObject[ISuggestions[T]] = js.native
     
-    var suggestionStore: SuggestionsController[T] = js.native
+    /* protected */ var suggestionStore: SuggestionsController[T] = js.native
     
     /* protected */ def updateSuggestions(suggestions: js.Array[js.Any]): Unit = js.native
     
@@ -197,8 +197,7 @@ object basePickerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDerivedStateFromProps(newProps: IBasePickerProps[js.Any]): Items | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any]).asInstanceOf[Items | Null]
+    inline def getDerivedStateFromProps(newProps: IBasePickerProps[js.Any]): Items | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any]).asInstanceOf[Items | Null]
   }
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/BasePicker", "BasePickerListBelow")
@@ -231,77 +230,54 @@ object basePickerMod {
   }
   object IBasePickerState {
     
-    @scala.inline
-    def apply(): IBasePickerState = {
+    inline def apply(): IBasePickerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBasePickerState]
     }
     
-    @scala.inline
-    implicit class IBasePickerStateMutableBuilder[Self <: IBasePickerState] (val x: Self) extends AnyVal {
+    extension [Self <: IBasePickerState](x: Self) {
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
+      inline def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
       
-      @scala.inline
-      def setIsMostRecentlyUsedVisible(value: Boolean): Self = StObject.set(x, "isMostRecentlyUsedVisible", value.asInstanceOf[js.Any])
+      inline def setIsMostRecentlyUsedVisible(value: Boolean): Self = StObject.set(x, "isMostRecentlyUsedVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMostRecentlyUsedVisibleUndefined: Self = StObject.set(x, "isMostRecentlyUsedVisible", js.undefined)
+      inline def setIsMostRecentlyUsedVisibleUndefined: Self = StObject.set(x, "isMostRecentlyUsedVisible", js.undefined)
       
-      @scala.inline
-      def setIsResultsFooterVisible(value: Boolean): Self = StObject.set(x, "isResultsFooterVisible", value.asInstanceOf[js.Any])
+      inline def setIsResultsFooterVisible(value: Boolean): Self = StObject.set(x, "isResultsFooterVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsResultsFooterVisibleUndefined: Self = StObject.set(x, "isResultsFooterVisible", js.undefined)
+      inline def setIsResultsFooterVisibleUndefined: Self = StObject.set(x, "isResultsFooterVisible", js.undefined)
       
-      @scala.inline
-      def setIsSearching(value: Boolean): Self = StObject.set(x, "isSearching", value.asInstanceOf[js.Any])
+      inline def setIsSearching(value: Boolean): Self = StObject.set(x, "isSearching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSearchingUndefined: Self = StObject.set(x, "isSearching", js.undefined)
+      inline def setIsSearchingUndefined: Self = StObject.set(x, "isSearching", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setMoreSuggestionsAvailable(value: Boolean): Self = StObject.set(x, "moreSuggestionsAvailable", value.asInstanceOf[js.Any])
+      inline def setMoreSuggestionsAvailable(value: Boolean): Self = StObject.set(x, "moreSuggestionsAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoreSuggestionsAvailableUndefined: Self = StObject.set(x, "moreSuggestionsAvailable", js.undefined)
+      inline def setMoreSuggestionsAvailableUndefined: Self = StObject.set(x, "moreSuggestionsAvailable", js.undefined)
       
-      @scala.inline
-      def setSelectedIndices(value: js.Array[Double]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
+      inline def setSelectedIndices(value: js.Array[Double]): Self = StObject.set(x, "selectedIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
+      inline def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
       
-      @scala.inline
-      def setSelectedIndicesVarargs(value: Double*): Self = StObject.set(x, "selectedIndices", js.Array(value :_*))
+      inline def setSelectedIndicesVarargs(value: Double*): Self = StObject.set(x, "selectedIndices", js.Array(value :_*))
       
-      @scala.inline
-      def setSuggestedDisplayValue(value: String): Self = StObject.set(x, "suggestedDisplayValue", value.asInstanceOf[js.Any])
+      inline def setSuggestedDisplayValue(value: String): Self = StObject.set(x, "suggestedDisplayValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestedDisplayValueUndefined: Self = StObject.set(x, "suggestedDisplayValue", js.undefined)
+      inline def setSuggestedDisplayValueUndefined: Self = StObject.set(x, "suggestedDisplayValue", js.undefined)
       
-      @scala.inline
-      def setSuggestionsLoading(value: Boolean): Self = StObject.set(x, "suggestionsLoading", value.asInstanceOf[js.Any])
+      inline def setSuggestionsLoading(value: Boolean): Self = StObject.set(x, "suggestionsLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsLoadingUndefined: Self = StObject.set(x, "suggestionsLoading", js.undefined)
+      inline def setSuggestionsLoadingUndefined: Self = StObject.set(x, "suggestionsLoading", js.undefined)
       
-      @scala.inline
-      def setSuggestionsVisible(value: Boolean): Self = StObject.set(x, "suggestionsVisible", value.asInstanceOf[js.Any])
+      inline def setSuggestionsVisible(value: Boolean): Self = StObject.set(x, "suggestionsVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsVisibleUndefined: Self = StObject.set(x, "suggestionsVisible", js.undefined)
+      inline def setSuggestionsVisibleUndefined: Self = StObject.set(x, "suggestionsVisible", js.undefined)
     }
   }
   
@@ -324,23 +300,18 @@ object basePickerMod {
   }
   object IPickerAriaIds {
     
-    @scala.inline
-    def apply(selectedItems: String, selectedSuggestionAlert: String, suggestionList: String): IPickerAriaIds = {
+    inline def apply(selectedItems: String, selectedSuggestionAlert: String, suggestionList: String): IPickerAriaIds = {
       val __obj = js.Dynamic.literal(selectedItems = selectedItems.asInstanceOf[js.Any], selectedSuggestionAlert = selectedSuggestionAlert.asInstanceOf[js.Any], suggestionList = suggestionList.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPickerAriaIds]
     }
     
-    @scala.inline
-    implicit class IPickerAriaIdsMutableBuilder[Self <: IPickerAriaIds] (val x: Self) extends AnyVal {
+    extension [Self <: IPickerAriaIds](x: Self) {
       
-      @scala.inline
-      def setSelectedItems(value: String): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: String): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedSuggestionAlert(value: String): Self = StObject.set(x, "selectedSuggestionAlert", value.asInstanceOf[js.Any])
+      inline def setSelectedSuggestionAlert(value: String): Self = StObject.set(x, "selectedSuggestionAlert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionList(value: String): Self = StObject.set(x, "suggestionList", value.asInstanceOf[js.Any])
+      inline def setSuggestionList(value: String): Self = StObject.set(x, "suggestionList", value.asInstanceOf[js.Any])
     }
   }
 }

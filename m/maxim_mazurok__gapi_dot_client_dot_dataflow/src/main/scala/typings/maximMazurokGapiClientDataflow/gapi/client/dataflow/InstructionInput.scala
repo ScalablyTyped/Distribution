@@ -17,25 +17,19 @@ trait InstructionInput extends StObject {
 }
 object InstructionInput {
   
-  @scala.inline
-  def apply(): InstructionInput = {
+  inline def apply(): InstructionInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstructionInput]
   }
   
-  @scala.inline
-  implicit class InstructionInputMutableBuilder[Self <: InstructionInput] (val x: Self) extends AnyVal {
+  extension [Self <: InstructionInput](x: Self) {
     
-    @scala.inline
-    def setOutputNum(value: Double): Self = StObject.set(x, "outputNum", value.asInstanceOf[js.Any])
+    inline def setOutputNum(value: Double): Self = StObject.set(x, "outputNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputNumUndefined: Self = StObject.set(x, "outputNum", js.undefined)
+    inline def setOutputNumUndefined: Self = StObject.set(x, "outputNum", js.undefined)
     
-    @scala.inline
-    def setProducerInstructionIndex(value: Double): Self = StObject.set(x, "producerInstructionIndex", value.asInstanceOf[js.Any])
+    inline def setProducerInstructionIndex(value: Double): Self = StObject.set(x, "producerInstructionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerInstructionIndexUndefined: Self = StObject.set(x, "producerInstructionIndex", js.undefined)
+    inline def setProducerInstructionIndexUndefined: Self = StObject.set(x, "producerInstructionIndex", js.undefined)
   }
 }

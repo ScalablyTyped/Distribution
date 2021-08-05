@@ -13,16 +13,13 @@ trait EnableDirectoryResponse extends StObject {
 }
 object EnableDirectoryResponse {
   
-  @scala.inline
-  def apply(DirectoryArn: Arn): EnableDirectoryResponse = {
+  inline def apply(DirectoryArn: Arn): EnableDirectoryResponse = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableDirectoryResponse]
   }
   
-  @scala.inline
-  implicit class EnableDirectoryResponseMutableBuilder[Self <: EnableDirectoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EnableDirectoryResponse](x: Self) {
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait Front extends StObject {
 }
 object Front {
   
-  @scala.inline
-  def apply(): Front = {
+  inline def apply(): Front = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Front]
   }
   
-  @scala.inline
-  implicit class FrontMutableBuilder[Self <: Front] (val x: Self) extends AnyVal {
+  extension [Self <: Front](x: Self) {
     
-    @scala.inline
-    def setFront(value: Boolean): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
+    inline def setFront(value: Boolean): Self = StObject.set(x, "front", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrontUndefined: Self = StObject.set(x, "front", js.undefined)
+    inline def setFrontUndefined: Self = StObject.set(x, "front", js.undefined)
   }
 }

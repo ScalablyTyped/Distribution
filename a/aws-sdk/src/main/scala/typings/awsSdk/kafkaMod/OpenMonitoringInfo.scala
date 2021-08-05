@@ -15,16 +15,13 @@ trait OpenMonitoringInfo extends StObject {
 }
 object OpenMonitoringInfo {
   
-  @scala.inline
-  def apply(Prometheus: PrometheusInfo): OpenMonitoringInfo = {
+  inline def apply(Prometheus: PrometheusInfo): OpenMonitoringInfo = {
     val __obj = js.Dynamic.literal(Prometheus = Prometheus.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenMonitoringInfo]
   }
   
-  @scala.inline
-  implicit class OpenMonitoringInfoMutableBuilder[Self <: OpenMonitoringInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OpenMonitoringInfo](x: Self) {
     
-    @scala.inline
-    def setPrometheus(value: PrometheusInfo): Self = StObject.set(x, "Prometheus", value.asInstanceOf[js.Any])
+    inline def setPrometheus(value: PrometheusInfo): Self = StObject.set(x, "Prometheus", value.asInstanceOf[js.Any])
   }
 }

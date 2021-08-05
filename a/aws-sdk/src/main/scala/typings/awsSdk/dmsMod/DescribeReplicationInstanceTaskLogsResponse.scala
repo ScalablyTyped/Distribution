@@ -23,34 +23,25 @@ trait DescribeReplicationInstanceTaskLogsResponse extends StObject {
 }
 object DescribeReplicationInstanceTaskLogsResponse {
   
-  @scala.inline
-  def apply(): DescribeReplicationInstanceTaskLogsResponse = {
+  inline def apply(): DescribeReplicationInstanceTaskLogsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReplicationInstanceTaskLogsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeReplicationInstanceTaskLogsResponseMutableBuilder[Self <: DescribeReplicationInstanceTaskLogsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReplicationInstanceTaskLogsResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceArnUndefined: Self = StObject.set(x, "ReplicationInstanceArn", js.undefined)
+    inline def setReplicationInstanceArnUndefined: Self = StObject.set(x, "ReplicationInstanceArn", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceTaskLogs(value: ReplicationInstanceTaskLogsList): Self = StObject.set(x, "ReplicationInstanceTaskLogs", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceTaskLogs(value: ReplicationInstanceTaskLogsList): Self = StObject.set(x, "ReplicationInstanceTaskLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceTaskLogsUndefined: Self = StObject.set(x, "ReplicationInstanceTaskLogs", js.undefined)
+    inline def setReplicationInstanceTaskLogsUndefined: Self = StObject.set(x, "ReplicationInstanceTaskLogs", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceTaskLogsVarargs(value: ReplicationInstanceTaskLog*): Self = StObject.set(x, "ReplicationInstanceTaskLogs", js.Array(value :_*))
+    inline def setReplicationInstanceTaskLogsVarargs(value: ReplicationInstanceTaskLog*): Self = StObject.set(x, "ReplicationInstanceTaskLogs", js.Array(value :_*))
   }
 }

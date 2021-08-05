@@ -132,252 +132,171 @@ trait AllowEditImage extends StObject {
 }
 object AllowEditImage {
   
-  @scala.inline
-  def apply(): AllowEditImage = {
+  inline def apply(): AllowEditImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowEditImage]
   }
   
-  @scala.inline
-  implicit class AllowEditImageMutableBuilder[Self <: AllowEditImage] (val x: Self) extends AnyVal {
+  extension [Self <: AllowEditImage](x: Self) {
     
-    @scala.inline
-    def setAllowEditImage(value: Boolean): Self = StObject.set(x, "allowEditImage", value.asInstanceOf[js.Any])
+    inline def setAllowEditImage(value: Boolean): Self = StObject.set(x, "allowEditImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEditImageUndefined: Self = StObject.set(x, "allowEditImage", js.undefined)
+    inline def setAllowEditImageUndefined: Self = StObject.set(x, "allowEditImage", js.undefined)
     
-    @scala.inline
-    def setAllowEditText(value: Boolean): Self = StObject.set(x, "allowEditText", value.asInstanceOf[js.Any])
+    inline def setAllowEditText(value: Boolean): Self = StObject.set(x, "allowEditText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEditTextUndefined: Self = StObject.set(x, "allowEditText", js.undefined)
+    inline def setAllowEditTextUndefined: Self = StObject.set(x, "allowEditText", js.undefined)
     
-    @scala.inline
-    def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
+    inline def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowResizeUndefined: Self = StObject.set(x, "allowResize", js.undefined)
+    inline def setAllowResizeUndefined: Self = StObject.set(x, "allowResize", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageHeight(value: Double): Self = StObject.set(x, "backgroundImageHeight", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageHeight(value: Double): Self = StObject.set(x, "backgroundImageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageHeightUndefined: Self = StObject.set(x, "backgroundImageHeight", js.undefined)
+    inline def setBackgroundImageHeightUndefined: Self = StObject.set(x, "backgroundImageHeight", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageLeft(value: Double): Self = StObject.set(x, "backgroundImageLeft", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageLeft(value: Double): Self = StObject.set(x, "backgroundImageLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageLeftUndefined: Self = StObject.set(x, "backgroundImageLeft", js.undefined)
+    inline def setBackgroundImageLeftUndefined: Self = StObject.set(x, "backgroundImageLeft", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageToolboxUrl(value: String): Self = StObject.set(x, "backgroundImageToolboxUrl", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageToolboxUrl(value: String): Self = StObject.set(x, "backgroundImageToolboxUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageToolboxUrlUndefined: Self = StObject.set(x, "backgroundImageToolboxUrl", js.undefined)
+    inline def setBackgroundImageToolboxUrlUndefined: Self = StObject.set(x, "backgroundImageToolboxUrl", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageTop(value: Double): Self = StObject.set(x, "backgroundImageTop", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageTop(value: Double): Self = StObject.set(x, "backgroundImageTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageTopUndefined: Self = StObject.set(x, "backgroundImageTop", js.undefined)
+    inline def setBackgroundImageTopUndefined: Self = StObject.set(x, "backgroundImageTop", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageUrl(value: String): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageUrl(value: String): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageUrlUndefined: Self = StObject.set(x, "backgroundImageUrl", js.undefined)
+    inline def setBackgroundImageUrlUndefined: Self = StObject.set(x, "backgroundImageUrl", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageWidth(value: Double): Self = StObject.set(x, "backgroundImageWidth", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageWidth(value: Double): Self = StObject.set(x, "backgroundImageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageWidthUndefined: Self = StObject.set(x, "backgroundImageWidth", js.undefined)
+    inline def setBackgroundImageWidthUndefined: Self = StObject.set(x, "backgroundImageWidth", js.undefined)
     
-    @scala.inline
-    def setBaseType(
+    inline def setBaseType(
       value: text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
     ): Self = StObject.set(x, "baseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseTypeUndefined: Self = StObject.set(x, "baseType", js.undefined)
+    inline def setBaseTypeUndefined: Self = StObject.set(x, "baseType", js.undefined)
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setConnectionPoints(value: js.Array[Y]): Self = StObject.set(x, "connectionPoints", value.asInstanceOf[js.Any])
+    inline def setConnectionPoints(value: js.Array[Y]): Self = StObject.set(x, "connectionPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPointsUndefined: Self = StObject.set(x, "connectionPoints", js.undefined)
+    inline def setConnectionPointsUndefined: Self = StObject.set(x, "connectionPoints", js.undefined)
     
-    @scala.inline
-    def setConnectionPointsVarargs(value: Y*): Self = StObject.set(x, "connectionPoints", js.Array(value :_*))
+    inline def setConnectionPointsVarargs(value: Y*): Self = StObject.set(x, "connectionPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
+    inline def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
+    inline def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
     
-    @scala.inline
-    def setDefaultImageUrl(value: String): Self = StObject.set(x, "defaultImageUrl", value.asInstanceOf[js.Any])
+    inline def setDefaultImageUrl(value: String): Self = StObject.set(x, "defaultImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultImageUrlUndefined: Self = StObject.set(x, "defaultImageUrl", js.undefined)
+    inline def setDefaultImageUrlUndefined: Self = StObject.set(x, "defaultImageUrl", js.undefined)
     
-    @scala.inline
-    def setDefaultText(value: String): Self = StObject.set(x, "defaultText", value.asInstanceOf[js.Any])
+    inline def setDefaultText(value: String): Self = StObject.set(x, "defaultText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTextUndefined: Self = StObject.set(x, "defaultText", js.undefined)
+    inline def setDefaultTextUndefined: Self = StObject.set(x, "defaultText", js.undefined)
     
-    @scala.inline
-    def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
+    inline def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultWidthUndefined: Self = StObject.set(x, "defaultWidth", js.undefined)
+    inline def setDefaultWidthUndefined: Self = StObject.set(x, "defaultWidth", js.undefined)
     
-    @scala.inline
-    def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
+    inline def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
+    inline def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
     
-    @scala.inline
-    def setImageLeft(value: Double): Self = StObject.set(x, "imageLeft", value.asInstanceOf[js.Any])
+    inline def setImageLeft(value: Double): Self = StObject.set(x, "imageLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageLeftUndefined: Self = StObject.set(x, "imageLeft", js.undefined)
+    inline def setImageLeftUndefined: Self = StObject.set(x, "imageLeft", js.undefined)
     
-    @scala.inline
-    def setImageTop(value: Double): Self = StObject.set(x, "imageTop", value.asInstanceOf[js.Any])
+    inline def setImageTop(value: Double): Self = StObject.set(x, "imageTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTopUndefined: Self = StObject.set(x, "imageTop", js.undefined)
+    inline def setImageTopUndefined: Self = StObject.set(x, "imageTop", js.undefined)
     
-    @scala.inline
-    def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
+    inline def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
+    inline def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
     
-    @scala.inline
-    def setKeepRatioOnAutoSize(value: Boolean): Self = StObject.set(x, "keepRatioOnAutoSize", value.asInstanceOf[js.Any])
+    inline def setKeepRatioOnAutoSize(value: Boolean): Self = StObject.set(x, "keepRatioOnAutoSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepRatioOnAutoSizeUndefined: Self = StObject.set(x, "keepRatioOnAutoSize", js.undefined)
+    inline def setKeepRatioOnAutoSizeUndefined: Self = StObject.set(x, "keepRatioOnAutoSize", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    inline def setTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTemplateHeight(value: Double): Self = StObject.set(x, "templateHeight", value.asInstanceOf[js.Any])
+    inline def setTemplateHeight(value: Double): Self = StObject.set(x, "templateHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateHeightUndefined: Self = StObject.set(x, "templateHeight", js.undefined)
+    inline def setTemplateHeightUndefined: Self = StObject.set(x, "templateHeight", js.undefined)
     
-    @scala.inline
-    def setTemplateLeft(value: Double): Self = StObject.set(x, "templateLeft", value.asInstanceOf[js.Any])
+    inline def setTemplateLeft(value: Double): Self = StObject.set(x, "templateLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateLeftUndefined: Self = StObject.set(x, "templateLeft", js.undefined)
+    inline def setTemplateLeftUndefined: Self = StObject.set(x, "templateLeft", js.undefined)
     
-    @scala.inline
-    def setTemplateTop(value: Double): Self = StObject.set(x, "templateTop", value.asInstanceOf[js.Any])
+    inline def setTemplateTop(value: Double): Self = StObject.set(x, "templateTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateTopUndefined: Self = StObject.set(x, "templateTop", js.undefined)
+    inline def setTemplateTopUndefined: Self = StObject.set(x, "templateTop", js.undefined)
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTemplateWidth(value: Double): Self = StObject.set(x, "templateWidth", value.asInstanceOf[js.Any])
+    inline def setTemplateWidth(value: Double): Self = StObject.set(x, "templateWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateWidthUndefined: Self = StObject.set(x, "templateWidth", js.undefined)
+    inline def setTemplateWidthUndefined: Self = StObject.set(x, "templateWidth", js.undefined)
     
-    @scala.inline
-    def setTextHeight(value: Double): Self = StObject.set(x, "textHeight", value.asInstanceOf[js.Any])
+    inline def setTextHeight(value: Double): Self = StObject.set(x, "textHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextHeightUndefined: Self = StObject.set(x, "textHeight", js.undefined)
+    inline def setTextHeightUndefined: Self = StObject.set(x, "textHeight", js.undefined)
     
-    @scala.inline
-    def setTextLeft(value: Double): Self = StObject.set(x, "textLeft", value.asInstanceOf[js.Any])
+    inline def setTextLeft(value: Double): Self = StObject.set(x, "textLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextLeftUndefined: Self = StObject.set(x, "textLeft", js.undefined)
+    inline def setTextLeftUndefined: Self = StObject.set(x, "textLeft", js.undefined)
     
-    @scala.inline
-    def setTextTop(value: Double): Self = StObject.set(x, "textTop", value.asInstanceOf[js.Any])
+    inline def setTextTop(value: Double): Self = StObject.set(x, "textTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTopUndefined: Self = StObject.set(x, "textTop", js.undefined)
+    inline def setTextTopUndefined: Self = StObject.set(x, "textTop", js.undefined)
     
-    @scala.inline
-    def setTextWidth(value: Double): Self = StObject.set(x, "textWidth", value.asInstanceOf[js.Any])
+    inline def setTextWidth(value: Double): Self = StObject.set(x, "textWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextWidthUndefined: Self = StObject.set(x, "textWidth", js.undefined)
+    inline def setTextWidthUndefined: Self = StObject.set(x, "textWidth", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setToolboxTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])): Self = StObject.set(x, "toolboxTemplate", value.asInstanceOf[js.Any])
+    inline def setToolboxTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])): Self = StObject.set(x, "toolboxTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolboxTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "toolboxTemplate", js.Any.fromFunction2(value))
+    inline def setToolboxTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "toolboxTemplate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToolboxTemplateUndefined: Self = StObject.set(x, "toolboxTemplate", js.undefined)
+    inline def setToolboxTemplateUndefined: Self = StObject.set(x, "toolboxTemplate", js.undefined)
     
-    @scala.inline
-    def setToolboxWidthToHeightRatio(value: Double): Self = StObject.set(x, "toolboxWidthToHeightRatio", value.asInstanceOf[js.Any])
+    inline def setToolboxWidthToHeightRatio(value: Double): Self = StObject.set(x, "toolboxWidthToHeightRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolboxWidthToHeightRatioUndefined: Self = StObject.set(x, "toolboxWidthToHeightRatio", js.undefined)
+    inline def setToolboxWidthToHeightRatioUndefined: Self = StObject.set(x, "toolboxWidthToHeightRatio", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

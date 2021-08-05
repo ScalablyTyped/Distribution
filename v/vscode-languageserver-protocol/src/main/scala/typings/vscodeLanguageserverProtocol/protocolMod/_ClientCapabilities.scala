@@ -28,37 +28,27 @@ trait _ClientCapabilities extends StObject {
 }
 object _ClientCapabilities {
   
-  @scala.inline
-  def apply(): _ClientCapabilities = {
+  inline def apply(): _ClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[_ClientCapabilities]
   }
   
-  @scala.inline
-  implicit class _ClientCapabilitiesMutableBuilder[Self <: _ClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: _ClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setExperimental(value: js.Object): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    inline def setExperimental(value: js.Object): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+    inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentClientCapabilities): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentClientCapabilities): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDocumentUndefined: Self = StObject.set(x, "textDocument", js.undefined)
+    inline def setTextDocumentUndefined: Self = StObject.set(x, "textDocument", js.undefined)
     
-    @scala.inline
-    def setWindow(value: js.Object): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: js.Object): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     
-    @scala.inline
-    def setWorkspace(value: WorkspaceClientCapabilities): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+    inline def setWorkspace(value: WorkspaceClientCapabilities): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
+    inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
   }
 }

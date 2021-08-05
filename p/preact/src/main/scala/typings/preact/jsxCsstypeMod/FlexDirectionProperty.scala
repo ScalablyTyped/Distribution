@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlexDirectionProperty extends StObject
 object FlexDirectionProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def column: typings.preact.preactStrings.column = "column".asInstanceOf[typings.preact.preactStrings.column]
+  inline def column: typings.preact.preactStrings.column = "column".asInstanceOf[typings.preact.preactStrings.column]
   
-  @scala.inline
-  def `column-reverse`: typings.preact.preactStrings.`column-reverse` = "column-reverse".asInstanceOf[typings.preact.preactStrings.`column-reverse`]
+  inline def `column-reverse`: typings.preact.preactStrings.`column-reverse` = "column-reverse".asInstanceOf[typings.preact.preactStrings.`column-reverse`]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def row: typings.preact.preactStrings.row = "row".asInstanceOf[typings.preact.preactStrings.row]
+  inline def row: typings.preact.preactStrings.row = "row".asInstanceOf[typings.preact.preactStrings.row]
   
-  @scala.inline
-  def `row-reverse`: typings.preact.preactStrings.`row-reverse` = "row-reverse".asInstanceOf[typings.preact.preactStrings.`row-reverse`]
+  inline def `row-reverse`: typings.preact.preactStrings.`row-reverse` = "row-reverse".asInstanceOf[typings.preact.preactStrings.`row-reverse`]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
 }

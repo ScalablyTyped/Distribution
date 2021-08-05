@@ -13,16 +13,13 @@ trait InputProcessingConfigurationUpdate extends StObject {
 }
 object InputProcessingConfigurationUpdate {
   
-  @scala.inline
-  def apply(InputLambdaProcessorUpdate: InputLambdaProcessorUpdate): InputProcessingConfigurationUpdate = {
+  inline def apply(InputLambdaProcessorUpdate: InputLambdaProcessorUpdate): InputProcessingConfigurationUpdate = {
     val __obj = js.Dynamic.literal(InputLambdaProcessorUpdate = InputLambdaProcessorUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputProcessingConfigurationUpdate]
   }
   
-  @scala.inline
-  implicit class InputProcessingConfigurationUpdateMutableBuilder[Self <: InputProcessingConfigurationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: InputProcessingConfigurationUpdate](x: Self) {
     
-    @scala.inline
-    def setInputLambdaProcessorUpdate(value: InputLambdaProcessorUpdate): Self = StObject.set(x, "InputLambdaProcessorUpdate", value.asInstanceOf[js.Any])
+    inline def setInputLambdaProcessorUpdate(value: InputLambdaProcessorUpdate): Self = StObject.set(x, "InputLambdaProcessorUpdate", value.asInstanceOf[js.Any])
   }
 }

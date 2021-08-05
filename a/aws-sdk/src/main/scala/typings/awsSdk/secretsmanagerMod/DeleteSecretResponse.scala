@@ -23,31 +23,23 @@ trait DeleteSecretResponse extends StObject {
 }
 object DeleteSecretResponse {
   
-  @scala.inline
-  def apply(): DeleteSecretResponse = {
+  inline def apply(): DeleteSecretResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSecretResponse]
   }
   
-  @scala.inline
-  implicit class DeleteSecretResponseMutableBuilder[Self <: DeleteSecretResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSecretResponse](x: Self) {
     
-    @scala.inline
-    def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setDeletionDate(value: DeletionDateType): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+    inline def setDeletionDate(value: DeletionDateType): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
+    inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
     
-    @scala.inline
-    def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

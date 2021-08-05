@@ -11,19 +11,15 @@ trait HttpData extends StObject {
 }
 object HttpData {
   
-  @scala.inline
-  def apply(): HttpData = {
+  inline def apply(): HttpData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpData]
   }
   
-  @scala.inline
-  implicit class HttpDataMutableBuilder[Self <: HttpData] (val x: Self) extends AnyVal {
+  extension [Self <: HttpData](x: Self) {
     
-    @scala.inline
-    def setListUrl(value: String): Self = StObject.set(x, "listUrl", value.asInstanceOf[js.Any])
+    inline def setListUrl(value: String): Self = StObject.set(x, "listUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUrlUndefined: Self = StObject.set(x, "listUrl", js.undefined)
+    inline def setListUrlUndefined: Self = StObject.set(x, "listUrl", js.undefined)
   }
 }

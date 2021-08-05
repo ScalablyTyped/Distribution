@@ -110,8 +110,7 @@ object treeMod {
   }
   object ParseTreeListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       enterEveryRule: ParserRuleContext => Unit,
       exitEveryRule: ParserRuleContext => Unit,
       visitErrorNode: ErrorNode => Unit,
@@ -121,20 +120,15 @@ object treeMod {
       __obj.asInstanceOf[ParseTreeListener]
     }
     
-    @scala.inline
-    implicit class ParseTreeListenerMutableBuilder[Self <: ParseTreeListener] (val x: Self) extends AnyVal {
+    extension [Self <: ParseTreeListener](x: Self) {
       
-      @scala.inline
-      def setEnterEveryRule(value: ParserRuleContext => Unit): Self = StObject.set(x, "enterEveryRule", js.Any.fromFunction1(value))
+      inline def setEnterEveryRule(value: ParserRuleContext => Unit): Self = StObject.set(x, "enterEveryRule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExitEveryRule(value: ParserRuleContext => Unit): Self = StObject.set(x, "exitEveryRule", js.Any.fromFunction1(value))
+      inline def setExitEveryRule(value: ParserRuleContext => Unit): Self = StObject.set(x, "exitEveryRule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitErrorNode(value: ErrorNode => Unit): Self = StObject.set(x, "visitErrorNode", js.Any.fromFunction1(value))
+      inline def setVisitErrorNode(value: ErrorNode => Unit): Self = StObject.set(x, "visitErrorNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitTerminal(value: TerminalNode => Unit): Self = StObject.set(x, "visitTerminal", js.Any.fromFunction1(value))
+      inline def setVisitTerminal(value: TerminalNode => Unit): Self = StObject.set(x, "visitTerminal", js.Any.fromFunction1(value))
     }
   }
 }

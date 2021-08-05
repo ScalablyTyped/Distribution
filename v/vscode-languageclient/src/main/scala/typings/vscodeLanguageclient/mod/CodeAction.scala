@@ -17,10 +17,8 @@ object CodeAction {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
-  @scala.inline
-  def create(title: String, command: typings.vscodeLanguageserverTypes.mod.Command): typings.vscodeLanguageserverTypes.mod.CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeAction]
-  @scala.inline
-  def create(
+  inline def create(title: String, command: typings.vscodeLanguageserverTypes.mod.Command): typings.vscodeLanguageserverTypes.mod.CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeAction]
+  inline def create(
     title: String,
     command: typings.vscodeLanguageserverTypes.mod.Command,
     kind: typings.vscodeLanguageserverTypes.mod.CodeActionKind
@@ -32,15 +30,12 @@ object CodeAction {
     * @param command The command to execute.
     * @param kind The kind of the code action.
     */
-  @scala.inline
-  def create(title: String, edit: typings.vscodeLanguageserverTypes.mod.WorkspaceEdit): typings.vscodeLanguageserverTypes.mod.CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeAction]
-  @scala.inline
-  def create(
+  inline def create(title: String, edit: typings.vscodeLanguageserverTypes.mod.WorkspaceEdit): typings.vscodeLanguageserverTypes.mod.CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeAction]
+  inline def create(
     title: String,
     edit: typings.vscodeLanguageserverTypes.mod.WorkspaceEdit,
     kind: typings.vscodeLanguageserverTypes.mod.CodeActionKind
   ): typings.vscodeLanguageserverTypes.mod.CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeAction]
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean]
 }

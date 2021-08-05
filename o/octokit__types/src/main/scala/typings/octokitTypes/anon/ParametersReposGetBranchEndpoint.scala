@@ -18,8 +18,7 @@ trait ParametersReposGetBranchEndpoint extends StObject {
 }
 object ParametersReposGetBranchEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetBranchEndpoint,
     request: ReposGetBranchRequestOptions,
     response: OctokitResponse[ReposGetBranchResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetBranchEndpoint {
     __obj.asInstanceOf[ParametersReposGetBranchEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetBranchEndpointMutableBuilder[Self <: ParametersReposGetBranchEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetBranchEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetBranchEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetBranchEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetBranchRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetBranchRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetBranchResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetBranchResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

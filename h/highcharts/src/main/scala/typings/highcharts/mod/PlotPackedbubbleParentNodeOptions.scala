@@ -14,19 +14,15 @@ trait PlotPackedbubbleParentNodeOptions extends StObject {
 }
 object PlotPackedbubbleParentNodeOptions {
   
-  @scala.inline
-  def apply(): PlotPackedbubbleParentNodeOptions = {
+  inline def apply(): PlotPackedbubbleParentNodeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotPackedbubbleParentNodeOptions]
   }
   
-  @scala.inline
-  implicit class PlotPackedbubbleParentNodeOptionsMutableBuilder[Self <: PlotPackedbubbleParentNodeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotPackedbubbleParentNodeOptions](x: Self) {
     
-    @scala.inline
-    def setAllowPointSelect(value: Boolean): Self = StObject.set(x, "allowPointSelect", value.asInstanceOf[js.Any])
+    inline def setAllowPointSelect(value: Boolean): Self = StObject.set(x, "allowPointSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
+    inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
   }
 }

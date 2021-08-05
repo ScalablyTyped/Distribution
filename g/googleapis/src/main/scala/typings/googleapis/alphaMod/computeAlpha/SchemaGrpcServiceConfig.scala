@@ -26,31 +26,23 @@ trait SchemaGrpcServiceConfig extends StObject {
 }
 object SchemaGrpcServiceConfig {
   
-  @scala.inline
-  def apply(): SchemaGrpcServiceConfig = {
+  inline def apply(): SchemaGrpcServiceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGrpcServiceConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGrpcServiceConfigMutableBuilder[Self <: SchemaGrpcServiceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGrpcServiceConfig](x: Self) {
     
-    @scala.inline
-    def setCallCredentials(value: SchemaCallCredentials): Self = StObject.set(x, "callCredentials", value.asInstanceOf[js.Any])
+    inline def setCallCredentials(value: SchemaCallCredentials): Self = StObject.set(x, "callCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallCredentialsUndefined: Self = StObject.set(x, "callCredentials", js.undefined)
+    inline def setCallCredentialsUndefined: Self = StObject.set(x, "callCredentials", js.undefined)
     
-    @scala.inline
-    def setChannelCredentials(value: SchemaChannelCredentials): Self = StObject.set(x, "channelCredentials", value.asInstanceOf[js.Any])
+    inline def setChannelCredentials(value: SchemaChannelCredentials): Self = StObject.set(x, "channelCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelCredentialsUndefined: Self = StObject.set(x, "channelCredentials", js.undefined)
+    inline def setChannelCredentialsUndefined: Self = StObject.set(x, "channelCredentials", js.undefined)
     
-    @scala.inline
-    def setTargetUri(value: String): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
+    inline def setTargetUri(value: String): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUriUndefined: Self = StObject.set(x, "targetUri", js.undefined)
+    inline def setTargetUriUndefined: Self = StObject.set(x, "targetUri", js.undefined)
   }
 }

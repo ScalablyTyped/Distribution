@@ -11,6 +11,5 @@ object bufferToBase64UrlSafeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bufferToBase64UrlSafe(array: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferToBase64UrlSafe")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bufferToBase64UrlSafe(array: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferToBase64UrlSafe")(array.asInstanceOf[js.Any]).asInstanceOf[String]
 }

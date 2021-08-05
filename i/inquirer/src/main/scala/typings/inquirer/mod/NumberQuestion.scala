@@ -23,17 +23,14 @@ trait NumberQuestion[T /* <: Answers */]
 }
 object NumberQuestion {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): NumberQuestion[T] = {
+  inline def apply[T /* <: Answers */](): NumberQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[NumberQuestion[T]]
   }
   
-  @scala.inline
-  implicit class NumberQuestionMutableBuilder[Self <: NumberQuestion[?], T /* <: Answers */] (val x: Self & NumberQuestion[T]) extends AnyVal {
+  extension [Self <: NumberQuestion[?], T /* <: Answers */](x: Self & NumberQuestion[T]) {
     
-    @scala.inline
-    def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

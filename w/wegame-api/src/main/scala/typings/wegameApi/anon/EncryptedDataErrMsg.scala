@@ -23,22 +23,17 @@ trait EncryptedDataErrMsg extends StObject {
 }
 object EncryptedDataErrMsg {
   
-  @scala.inline
-  def apply(encryptedData: String, errMsg: String, iv: String): EncryptedDataErrMsg = {
+  inline def apply(encryptedData: String, errMsg: String, iv: String): EncryptedDataErrMsg = {
     val __obj = js.Dynamic.literal(encryptedData = encryptedData.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptedDataErrMsg]
   }
   
-  @scala.inline
-  implicit class EncryptedDataErrMsgMutableBuilder[Self <: EncryptedDataErrMsg] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptedDataErrMsg](x: Self) {
     
-    @scala.inline
-    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
   }
 }

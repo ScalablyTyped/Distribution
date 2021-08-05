@@ -10,19 +10,15 @@ trait DeleteDBInstanceResult extends StObject {
 }
 object DeleteDBInstanceResult {
   
-  @scala.inline
-  def apply(): DeleteDBInstanceResult = {
+  inline def apply(): DeleteDBInstanceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDBInstanceResult]
   }
   
-  @scala.inline
-  implicit class DeleteDBInstanceResultMutableBuilder[Self <: DeleteDBInstanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBInstanceResult](x: Self) {
     
-    @scala.inline
-    def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
+    inline def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceUndefined: Self = StObject.set(x, "DBInstance", js.undefined)
+    inline def setDBInstanceUndefined: Self = StObject.set(x, "DBInstance", js.undefined)
   }
 }

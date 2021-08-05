@@ -18,28 +18,21 @@ trait UnindexedFace extends StObject {
 }
 object UnindexedFace {
   
-  @scala.inline
-  def apply(): UnindexedFace = {
+  inline def apply(): UnindexedFace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnindexedFace]
   }
   
-  @scala.inline
-  implicit class UnindexedFaceMutableBuilder[Self <: UnindexedFace] (val x: Self) extends AnyVal {
+  extension [Self <: UnindexedFace](x: Self) {
     
-    @scala.inline
-    def setFaceDetail(value: FaceDetail): Self = StObject.set(x, "FaceDetail", value.asInstanceOf[js.Any])
+    inline def setFaceDetail(value: FaceDetail): Self = StObject.set(x, "FaceDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceDetailUndefined: Self = StObject.set(x, "FaceDetail", js.undefined)
+    inline def setFaceDetailUndefined: Self = StObject.set(x, "FaceDetail", js.undefined)
     
-    @scala.inline
-    def setReasons(value: Reasons): Self = StObject.set(x, "Reasons", value.asInstanceOf[js.Any])
+    inline def setReasons(value: Reasons): Self = StObject.set(x, "Reasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonsUndefined: Self = StObject.set(x, "Reasons", js.undefined)
+    inline def setReasonsUndefined: Self = StObject.set(x, "Reasons", js.undefined)
     
-    @scala.inline
-    def setReasonsVarargs(value: Reason*): Self = StObject.set(x, "Reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: Reason*): Self = StObject.set(x, "Reasons", js.Array(value :_*))
   }
 }

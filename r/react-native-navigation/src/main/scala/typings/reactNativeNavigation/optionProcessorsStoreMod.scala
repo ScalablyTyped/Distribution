@@ -16,8 +16,8 @@ object optionProcessorsStoreMod {
     
     def getProcessors(optionPath: String): js.Array[OptionsProcessor[js.Any]] = js.native
     
-    var optionsProcessorsByObjectPath: js.Any = js.native
+    /* private */ var optionsProcessorsByObjectPath: js.Any = js.native
     
-    var removeProcessor: js.Any = js.native
+    /* private */ var removeProcessor: js.Any = js.native
   }
 }

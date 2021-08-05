@@ -757,6 +757,5 @@ object Terminal {
   @JSImport("xterm", "Terminal.strings")
   @js.native
   def strings: ILocalizableStrings = js.native
-  @scala.inline
-  def strings_=(x: ILocalizableStrings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strings")(x.asInstanceOf[js.Any])
+  inline def strings_=(x: ILocalizableStrings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strings")(x.asInstanceOf[js.Any])
 }

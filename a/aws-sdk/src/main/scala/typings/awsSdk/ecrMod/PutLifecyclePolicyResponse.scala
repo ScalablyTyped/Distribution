@@ -23,31 +23,23 @@ trait PutLifecyclePolicyResponse extends StObject {
 }
 object PutLifecyclePolicyResponse {
   
-  @scala.inline
-  def apply(): PutLifecyclePolicyResponse = {
+  inline def apply(): PutLifecyclePolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutLifecyclePolicyResponse]
   }
   
-  @scala.inline
-  implicit class PutLifecyclePolicyResponseMutableBuilder[Self <: PutLifecyclePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutLifecyclePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setLifecyclePolicyText(value: LifecyclePolicyText): Self = StObject.set(x, "lifecyclePolicyText", value.asInstanceOf[js.Any])
+    inline def setLifecyclePolicyText(value: LifecyclePolicyText): Self = StObject.set(x, "lifecyclePolicyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecyclePolicyTextUndefined: Self = StObject.set(x, "lifecyclePolicyText", js.undefined)
+    inline def setLifecyclePolicyTextUndefined: Self = StObject.set(x, "lifecyclePolicyText", js.undefined)
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

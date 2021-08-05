@@ -14,22 +14,17 @@ trait ReturnTypeSnapshotCommandLogResponse extends StObject {
 }
 object ReturnTypeSnapshotCommandLogResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SnapshotCommandLogRequest], returnType: SnapshotCommandLogResponse): ReturnTypeSnapshotCommandLogResponse = {
+  inline def apply(paramsType: js.Array[SnapshotCommandLogRequest], returnType: SnapshotCommandLogResponse): ReturnTypeSnapshotCommandLogResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeSnapshotCommandLogResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeSnapshotCommandLogResponseMutableBuilder[Self <: ReturnTypeSnapshotCommandLogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeSnapshotCommandLogResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SnapshotCommandLogRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SnapshotCommandLogRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SnapshotCommandLogRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SnapshotCommandLogRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: SnapshotCommandLogResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: SnapshotCommandLogResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait Element extends StObject {
 }
 object Element {
   
-  @scala.inline
-  def apply(winControl: js.Any): Element = {
+  inline def apply(winControl: js.Any): Element = {
     val __obj = js.Dynamic.literal(winControl = winControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def setWinControl(value: js.Any): Self = StObject.set(x, "winControl", value.asInstanceOf[js.Any])
+    inline def setWinControl(value: js.Any): Self = StObject.set(x, "winControl", value.asInstanceOf[js.Any])
   }
 }

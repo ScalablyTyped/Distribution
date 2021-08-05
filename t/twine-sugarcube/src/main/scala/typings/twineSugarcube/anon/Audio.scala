@@ -22,8 +22,7 @@ trait Audio extends StObject {
 }
 object Audio {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audio: Boolean,
     fileAPI: Boolean,
     geolocation: Boolean,
@@ -36,28 +35,20 @@ object Audio {
     __obj.asInstanceOf[Audio]
   }
   
-  @scala.inline
-  implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
+  extension [Self <: Audio](x: Self) {
     
-    @scala.inline
-    def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileAPI(value: Boolean): Self = StObject.set(x, "fileAPI", value.asInstanceOf[js.Any])
+    inline def setFileAPI(value: Boolean): Self = StObject.set(x, "fileAPI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeolocation(value: Boolean): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
+    inline def setGeolocation(value: Boolean): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutationObserver(value: Boolean): Self = StObject.set(x, "mutationObserver", value.asInstanceOf[js.Any])
+    inline def setMutationObserver(value: Boolean): Self = StObject.set(x, "mutationObserver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionEndEvent(value: String): Self = StObject.set(x, "transitionEndEvent", value.asInstanceOf[js.Any])
+    inline def setTransitionEndEvent(value: String): Self = StObject.set(x, "transitionEndEvent", value.asInstanceOf[js.Any])
   }
 }

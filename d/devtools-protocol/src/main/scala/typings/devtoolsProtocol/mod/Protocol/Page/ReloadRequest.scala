@@ -19,25 +19,19 @@ trait ReloadRequest extends StObject {
 }
 object ReloadRequest {
   
-  @scala.inline
-  def apply(): ReloadRequest = {
+  inline def apply(): ReloadRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReloadRequest]
   }
   
-  @scala.inline
-  implicit class ReloadRequestMutableBuilder[Self <: ReloadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReloadRequest](x: Self) {
     
-    @scala.inline
-    def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
+    inline def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCacheUndefined: Self = StObject.set(x, "ignoreCache", js.undefined)
+    inline def setIgnoreCacheUndefined: Self = StObject.set(x, "ignoreCache", js.undefined)
     
-    @scala.inline
-    def setScriptToEvaluateOnLoad(value: String): Self = StObject.set(x, "scriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
+    inline def setScriptToEvaluateOnLoad(value: String): Self = StObject.set(x, "scriptToEvaluateOnLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptToEvaluateOnLoadUndefined: Self = StObject.set(x, "scriptToEvaluateOnLoad", js.undefined)
+    inline def setScriptToEvaluateOnLoadUndefined: Self = StObject.set(x, "scriptToEvaluateOnLoad", js.undefined)
   }
 }

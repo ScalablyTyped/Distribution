@@ -19,7 +19,6 @@ object tableUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createTableColumnOptions(columnMetadata: ColumnMetadata, driver: Driver): TableColumnOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("createTableColumnOptions")(columnMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[TableColumnOptions]
+    inline def createTableColumnOptions(columnMetadata: ColumnMetadata, driver: Driver): TableColumnOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("createTableColumnOptions")(columnMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[TableColumnOptions]
   }
 }

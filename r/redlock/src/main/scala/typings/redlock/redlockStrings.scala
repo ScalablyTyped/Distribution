@@ -8,11 +8,9 @@ object redlockStrings {
   
   @js.native
   sealed trait LockError extends StObject
-  @scala.inline
-  def LockError: LockError = "LockError".asInstanceOf[LockError]
+  inline def LockError: LockError = "LockError".asInstanceOf[LockError]
   
   @js.native
   sealed trait clientError extends StObject
-  @scala.inline
-  def clientError: clientError = "clientError".asInstanceOf[clientError]
+  inline def clientError: clientError = "clientError".asInstanceOf[clientError]
 }

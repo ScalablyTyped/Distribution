@@ -20,8 +20,7 @@ trait LabelFormat extends StObject {
 }
 object LabelFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     day: TimeFormat,
     hour: TimeFormat,
     minute: TimeFormat,
@@ -33,25 +32,18 @@ object LabelFormat {
     __obj.asInstanceOf[LabelFormat]
   }
   
-  @scala.inline
-  implicit class LabelFormatMutableBuilder[Self <: LabelFormat] (val x: Self) extends AnyVal {
+  extension [Self <: LabelFormat](x: Self) {
     
-    @scala.inline
-    def setDay(value: TimeFormat): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: TimeFormat): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHour(value: TimeFormat): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: TimeFormat): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinute(value: TimeFormat): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: TimeFormat): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: TimeFormat): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: TimeFormat): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeek(value: TimeFormat): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: TimeFormat): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: TimeFormat): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: TimeFormat): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

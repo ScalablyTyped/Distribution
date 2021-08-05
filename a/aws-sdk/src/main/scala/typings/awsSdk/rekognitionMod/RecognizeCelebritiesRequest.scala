@@ -13,16 +13,13 @@ trait RecognizeCelebritiesRequest extends StObject {
 }
 object RecognizeCelebritiesRequest {
   
-  @scala.inline
-  def apply(Image: Image): RecognizeCelebritiesRequest = {
+  inline def apply(Image: Image): RecognizeCelebritiesRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecognizeCelebritiesRequest]
   }
   
-  @scala.inline
-  implicit class RecognizeCelebritiesRequestMutableBuilder[Self <: RecognizeCelebritiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RecognizeCelebritiesRequest](x: Self) {
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
   }
 }

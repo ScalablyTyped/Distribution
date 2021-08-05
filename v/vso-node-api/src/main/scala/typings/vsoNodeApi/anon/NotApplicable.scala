@@ -20,8 +20,7 @@ trait NotApplicable extends StObject {
 }
 object NotApplicable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error: scala.Double,
     failed: scala.Double,
     notApplicable: scala.Double,
@@ -33,25 +32,18 @@ object NotApplicable {
     __obj.asInstanceOf[NotApplicable]
   }
   
-  @scala.inline
-  implicit class NotApplicableMutableBuilder[Self <: NotApplicable] (val x: Self) extends AnyVal {
+  extension [Self <: NotApplicable](x: Self) {
     
-    @scala.inline
-    def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotApplicable(value: scala.Double): Self = StObject.set(x, "notApplicable", value.asInstanceOf[js.Any])
+    inline def setNotApplicable(value: scala.Double): Self = StObject.set(x, "notApplicable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
+    inline def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

@@ -33,34 +33,25 @@ trait SchemaObjectDefinition extends StObject {
 }
 object SchemaObjectDefinition {
   
-  @scala.inline
-  def apply(): SchemaObjectDefinition = {
+  inline def apply(): SchemaObjectDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaObjectDefinition]
   }
   
-  @scala.inline
-  implicit class SchemaObjectDefinitionMutableBuilder[Self <: SchemaObjectDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaObjectDefinition](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: SchemaObjectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SchemaObjectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPropertyDefinitions(value: js.Array[SchemaPropertyDefinition]): Self = StObject.set(x, "propertyDefinitions", value.asInstanceOf[js.Any])
+    inline def setPropertyDefinitions(value: js.Array[SchemaPropertyDefinition]): Self = StObject.set(x, "propertyDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDefinitionsUndefined: Self = StObject.set(x, "propertyDefinitions", js.undefined)
+    inline def setPropertyDefinitionsUndefined: Self = StObject.set(x, "propertyDefinitions", js.undefined)
     
-    @scala.inline
-    def setPropertyDefinitionsVarargs(value: SchemaPropertyDefinition*): Self = StObject.set(x, "propertyDefinitions", js.Array(value :_*))
+    inline def setPropertyDefinitionsVarargs(value: SchemaPropertyDefinition*): Self = StObject.set(x, "propertyDefinitions", js.Array(value :_*))
   }
 }

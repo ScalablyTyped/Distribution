@@ -41,8 +41,7 @@ object TileProviderError {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def handleError(
+  inline def handleError(
     previousError: TileProviderError,
     provider: ImageryProvider,
     event: Event[js.Array[TileProviderError]],
@@ -52,8 +51,7 @@ object TileProviderError {
     level: Double,
     retryFunction: RetryFunction
   ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("handleError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], retryFunction.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
-  @scala.inline
-  def handleError(
+  inline def handleError(
     previousError: TileProviderError,
     provider: ImageryProvider,
     event: Event[js.Array[TileProviderError]],
@@ -64,8 +62,7 @@ object TileProviderError {
     retryFunction: RetryFunction,
     errorDetails: Error
   ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("handleError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], retryFunction.asInstanceOf[js.Any], errorDetails.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
-  @scala.inline
-  def handleError(
+  inline def handleError(
     previousError: TileProviderError,
     provider: TerrainProvider,
     event: Event[js.Array[TileProviderError]],
@@ -75,8 +72,7 @@ object TileProviderError {
     level: Double,
     retryFunction: RetryFunction
   ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("handleError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], retryFunction.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
-  @scala.inline
-  def handleError(
+  inline def handleError(
     previousError: TileProviderError,
     provider: TerrainProvider,
     event: Event[js.Array[TileProviderError]],
@@ -89,8 +85,7 @@ object TileProviderError {
   ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("handleError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], retryFunction.asInstanceOf[js.Any], errorDetails.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
   
   /* static member */
-  @scala.inline
-  def handleSuccess(previousError: TileProviderError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleSuccess")(previousError.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleSuccess(previousError: TileProviderError): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleSuccess")(previousError.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type RetryFunction = js.Function0[Unit]
 }

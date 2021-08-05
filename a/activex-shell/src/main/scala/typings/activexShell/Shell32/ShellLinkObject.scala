@@ -40,7 +40,7 @@ trait ShellLinkObject extends StObject {
     */
   def SetIconLocation(sPath: String, iIcon: Double): Unit = js.native
   
-  @JSName("Shell32.ShellLinkObject_typekey")
+  /* private */ @JSName("Shell32.ShellLinkObject_typekey")
   var Shell32DotShellLinkObject_typekey: ShellLinkObject = js.native
   
   /** Get the Show Command for the link */

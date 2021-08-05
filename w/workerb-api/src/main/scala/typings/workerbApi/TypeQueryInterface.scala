@@ -23,19 +23,15 @@ trait TypeQueryInterface
 }
 object TypeQueryInterface {
   
-  @scala.inline
-  def apply(): TypeQueryInterface = {
+  inline def apply(): TypeQueryInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypeQueryInterface]
   }
   
-  @scala.inline
-  implicit class TypeQueryInterfaceMutableBuilder[Self <: TypeQueryInterface] (val x: Self) extends AnyVal {
+  extension [Self <: TypeQueryInterface](x: Self) {
     
-    @scala.inline
-    def setMethod(value: typeQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: typeQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
   }
 }

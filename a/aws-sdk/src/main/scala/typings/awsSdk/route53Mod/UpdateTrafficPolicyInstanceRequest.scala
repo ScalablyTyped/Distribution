@@ -28,8 +28,7 @@ trait UpdateTrafficPolicyInstanceRequest extends StObject {
 }
 object UpdateTrafficPolicyInstanceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Id: TrafficPolicyInstanceId,
     TTL: TTL,
     TrafficPolicyId: TrafficPolicyId,
@@ -39,19 +38,14 @@ object UpdateTrafficPolicyInstanceRequest {
     __obj.asInstanceOf[UpdateTrafficPolicyInstanceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTrafficPolicyInstanceRequestMutableBuilder[Self <: UpdateTrafficPolicyInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTrafficPolicyInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTTL(value: TTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
+    inline def setTTL(value: TTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicyId(value: TrafficPolicyId): Self = StObject.set(x, "TrafficPolicyId", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyId(value: TrafficPolicyId): Self = StObject.set(x, "TrafficPolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicyVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "TrafficPolicyVersion", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "TrafficPolicyVersion", value.asInstanceOf[js.Any])
   }
 }

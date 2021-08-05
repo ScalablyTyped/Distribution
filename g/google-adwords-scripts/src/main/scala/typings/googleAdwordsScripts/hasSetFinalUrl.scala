@@ -12,19 +12,15 @@ trait hasSetFinalUrl extends StObject {
 }
 object hasSetFinalUrl {
   
-  @scala.inline
-  def apply(setFinalUrl: String => Unit, setMobileFinalUrl: String => Unit): hasSetFinalUrl = {
+  inline def apply(setFinalUrl: String => Unit, setMobileFinalUrl: String => Unit): hasSetFinalUrl = {
     val __obj = js.Dynamic.literal(setFinalUrl = js.Any.fromFunction1(setFinalUrl), setMobileFinalUrl = js.Any.fromFunction1(setMobileFinalUrl))
     __obj.asInstanceOf[hasSetFinalUrl]
   }
   
-  @scala.inline
-  implicit class hasSetFinalUrlMutableBuilder[Self <: hasSetFinalUrl] (val x: Self) extends AnyVal {
+  extension [Self <: hasSetFinalUrl](x: Self) {
     
-    @scala.inline
-    def setSetFinalUrl(value: String => Unit): Self = StObject.set(x, "setFinalUrl", js.Any.fromFunction1(value))
+    inline def setSetFinalUrl(value: String => Unit): Self = StObject.set(x, "setFinalUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMobileFinalUrl(value: String => Unit): Self = StObject.set(x, "setMobileFinalUrl", js.Any.fromFunction1(value))
+    inline def setSetMobileFinalUrl(value: String => Unit): Self = StObject.set(x, "setMobileFinalUrl", js.Any.fromFunction1(value))
   }
 }

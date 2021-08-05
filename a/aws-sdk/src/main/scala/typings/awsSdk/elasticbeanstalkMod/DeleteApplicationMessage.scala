@@ -18,22 +18,17 @@ trait DeleteApplicationMessage extends StObject {
 }
 object DeleteApplicationMessage {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName): DeleteApplicationMessage = {
+  inline def apply(ApplicationName: ApplicationName): DeleteApplicationMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationMessage]
   }
   
-  @scala.inline
-  implicit class DeleteApplicationMessageMutableBuilder[Self <: DeleteApplicationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApplicationMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateEnvByForce(value: TerminateEnvForce): Self = StObject.set(x, "TerminateEnvByForce", value.asInstanceOf[js.Any])
+    inline def setTerminateEnvByForce(value: TerminateEnvForce): Self = StObject.set(x, "TerminateEnvByForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateEnvByForceUndefined: Self = StObject.set(x, "TerminateEnvByForce", js.undefined)
+    inline def setTerminateEnvByForceUndefined: Self = StObject.set(x, "TerminateEnvByForce", js.undefined)
   }
 }

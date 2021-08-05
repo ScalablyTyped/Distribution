@@ -13,22 +13,17 @@ trait AllocateHostsResult extends StObject {
 }
 object AllocateHostsResult {
   
-  @scala.inline
-  def apply(): AllocateHostsResult = {
+  inline def apply(): AllocateHostsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllocateHostsResult]
   }
   
-  @scala.inline
-  implicit class AllocateHostsResultMutableBuilder[Self <: AllocateHostsResult] (val x: Self) extends AnyVal {
+  extension [Self <: AllocateHostsResult](x: Self) {
     
-    @scala.inline
-    def setHostIds(value: ResponseHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
+    inline def setHostIds(value: ResponseHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostIdsUndefined: Self = StObject.set(x, "HostIds", js.undefined)
+    inline def setHostIdsUndefined: Self = StObject.set(x, "HostIds", js.undefined)
     
-    @scala.inline
-    def setHostIdsVarargs(value: String*): Self = StObject.set(x, "HostIds", js.Array(value :_*))
+    inline def setHostIdsVarargs(value: String*): Self = StObject.set(x, "HostIds", js.Array(value :_*))
   }
 }

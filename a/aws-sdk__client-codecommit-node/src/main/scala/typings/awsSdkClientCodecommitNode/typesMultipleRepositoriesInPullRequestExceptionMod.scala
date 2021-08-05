@@ -16,17 +16,14 @@ object typesMultipleRepositoriesInPullRequestExceptionMod {
   }
   object MultipleRepositoriesInPullRequestException {
     
-    @scala.inline
-    def apply(): MultipleRepositoriesInPullRequestException = {
+    inline def apply(): MultipleRepositoriesInPullRequestException = {
       val __obj = js.Dynamic.literal(name = "MultipleRepositoriesInPullRequestException")
       __obj.asInstanceOf[MultipleRepositoriesInPullRequestException]
     }
     
-    @scala.inline
-    implicit class MultipleRepositoriesInPullRequestExceptionMutableBuilder[Self <: MultipleRepositoriesInPullRequestException] (val x: Self) extends AnyVal {
+    extension [Self <: MultipleRepositoriesInPullRequestException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MultipleRepositoriesInPullRequestException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -14,19 +14,15 @@ trait Guide extends StObject {
 }
 object Guide {
   
-  @scala.inline
-  def apply(axis: X | Y, offset: Double): Guide = {
+  inline def apply(axis: X | Y, offset: Double): Guide = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Guide]
   }
   
-  @scala.inline
-  implicit class GuideMutableBuilder[Self <: Guide] (val x: Self) extends AnyVal {
+  extension [Self <: Guide](x: Self) {
     
-    @scala.inline
-    def setAxis(value: X | Y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: X | Y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

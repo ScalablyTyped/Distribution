@@ -36,43 +36,31 @@ trait ClassSpec extends StObject {
 }
 object ClassSpec {
   
-  @scala.inline
-  def apply(name: String): ClassSpec = {
+  inline def apply(name: String): ClassSpec = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassSpec]
   }
   
-  @scala.inline
-  implicit class ClassSpecMutableBuilder[Self <: ClassSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ClassSpec](x: Self) {
     
-    @scala.inline
-    def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setImplements(value: js.Array[typings.fridaGum.anon.Wrapper]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
+    inline def setImplements(value: js.Array[typings.fridaGum.anon.Wrapper]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplementsUndefined: Self = StObject.set(x, "implements", js.undefined)
+    inline def setImplementsUndefined: Self = StObject.set(x, "implements", js.undefined)
     
-    @scala.inline
-    def setImplementsVarargs(value: typings.fridaGum.anon.Wrapper*): Self = StObject.set(x, "implements", js.Array(value :_*))
+    inline def setImplementsVarargs(value: typings.fridaGum.anon.Wrapper*): Self = StObject.set(x, "implements", js.Array(value :_*))
     
-    @scala.inline
-    def setMethods(value: StringDictionary[MethodImplementation[js.Object] | MethodSpec | js.Array[MethodSpec]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: StringDictionary[MethodImplementation[js.Object] | MethodSpec | js.Array[MethodSpec]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+    inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperClass(value: typings.fridaGum.anon.Wrapper): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
+    inline def setSuperClass(value: typings.fridaGum.anon.Wrapper): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperClassUndefined: Self = StObject.set(x, "superClass", js.undefined)
+    inline def setSuperClassUndefined: Self = StObject.set(x, "superClass", js.undefined)
   }
 }

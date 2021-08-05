@@ -34,8 +34,7 @@ object basicMod {
        with _JsonValue
   object JsonObject {
     
-    @scala.inline
-    def apply(): JsonObject = {
+    inline def apply(): JsonObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonObject]
     }
@@ -71,17 +70,14 @@ object basicMod {
     }
     object SymbolConstructor {
       
-      @scala.inline
-      def apply(observable: js.Symbol): SymbolConstructor = {
+      inline def apply(observable: js.Symbol): SymbolConstructor = {
         val __obj = js.Dynamic.literal(observable = observable.asInstanceOf[js.Any])
         __obj.asInstanceOf[SymbolConstructor]
       }
       
-      @scala.inline
-      implicit class SymbolConstructorMutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
+      extension [Self <: SymbolConstructor](x: Self) {
         
-        @scala.inline
-        def setObservable(value: js.Symbol): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
+        inline def setObservable(value: js.Symbol): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
       }
     }
   }

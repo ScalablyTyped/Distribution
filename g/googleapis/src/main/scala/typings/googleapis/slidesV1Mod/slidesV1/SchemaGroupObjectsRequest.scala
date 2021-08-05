@@ -32,28 +32,21 @@ trait SchemaGroupObjectsRequest extends StObject {
 }
 object SchemaGroupObjectsRequest {
   
-  @scala.inline
-  def apply(): SchemaGroupObjectsRequest = {
+  inline def apply(): SchemaGroupObjectsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroupObjectsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGroupObjectsRequestMutableBuilder[Self <: SchemaGroupObjectsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroupObjectsRequest](x: Self) {
     
-    @scala.inline
-    def setChildrenObjectIds(value: js.Array[String]): Self = StObject.set(x, "childrenObjectIds", value.asInstanceOf[js.Any])
+    inline def setChildrenObjectIds(value: js.Array[String]): Self = StObject.set(x, "childrenObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenObjectIdsUndefined: Self = StObject.set(x, "childrenObjectIds", js.undefined)
+    inline def setChildrenObjectIdsUndefined: Self = StObject.set(x, "childrenObjectIds", js.undefined)
     
-    @scala.inline
-    def setChildrenObjectIdsVarargs(value: String*): Self = StObject.set(x, "childrenObjectIds", js.Array(value :_*))
+    inline def setChildrenObjectIdsVarargs(value: String*): Self = StObject.set(x, "childrenObjectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupObjectId(value: String): Self = StObject.set(x, "groupObjectId", value.asInstanceOf[js.Any])
+    inline def setGroupObjectId(value: String): Self = StObject.set(x, "groupObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupObjectIdUndefined: Self = StObject.set(x, "groupObjectId", js.undefined)
+    inline def setGroupObjectIdUndefined: Self = StObject.set(x, "groupObjectId", js.undefined)
   }
 }

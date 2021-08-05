@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Bookmark")
 @js.native
-class Bookmark protected ()
+/* private */ class Bookmark ()
   extends StObject
      with typings.activexWord.Word.Bookmark {
   
@@ -50,7 +50,7 @@ class Bookmark protected ()
   /* CompleteClass */
   override val StoryType: WdStoryType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Bookmark_typekey")
   var WordDotBookmark_typekey: typings.activexWord.Word.Bookmark = js.native
 }

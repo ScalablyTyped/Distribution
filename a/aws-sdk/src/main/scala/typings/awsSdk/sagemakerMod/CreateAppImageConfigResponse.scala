@@ -13,19 +13,15 @@ trait CreateAppImageConfigResponse extends StObject {
 }
 object CreateAppImageConfigResponse {
   
-  @scala.inline
-  def apply(): CreateAppImageConfigResponse = {
+  inline def apply(): CreateAppImageConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAppImageConfigResponse]
   }
   
-  @scala.inline
-  implicit class CreateAppImageConfigResponseMutableBuilder[Self <: CreateAppImageConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAppImageConfigResponse](x: Self) {
     
-    @scala.inline
-    def setAppImageConfigArn(value: AppImageConfigArn): Self = StObject.set(x, "AppImageConfigArn", value.asInstanceOf[js.Any])
+    inline def setAppImageConfigArn(value: AppImageConfigArn): Self = StObject.set(x, "AppImageConfigArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppImageConfigArnUndefined: Self = StObject.set(x, "AppImageConfigArn", js.undefined)
+    inline def setAppImageConfigArnUndefined: Self = StObject.set(x, "AppImageConfigArn", js.undefined)
   }
 }

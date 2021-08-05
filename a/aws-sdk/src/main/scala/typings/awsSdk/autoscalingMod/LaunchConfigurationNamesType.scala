@@ -23,34 +23,25 @@ trait LaunchConfigurationNamesType extends StObject {
 }
 object LaunchConfigurationNamesType {
   
-  @scala.inline
-  def apply(): LaunchConfigurationNamesType = {
+  inline def apply(): LaunchConfigurationNamesType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchConfigurationNamesType]
   }
   
-  @scala.inline
-  implicit class LaunchConfigurationNamesTypeMutableBuilder[Self <: LaunchConfigurationNamesType] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchConfigurationNamesType](x: Self) {
     
-    @scala.inline
-    def setLaunchConfigurationNames(value: LaunchConfigurationNames): Self = StObject.set(x, "LaunchConfigurationNames", value.asInstanceOf[js.Any])
+    inline def setLaunchConfigurationNames(value: LaunchConfigurationNames): Self = StObject.set(x, "LaunchConfigurationNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchConfigurationNamesUndefined: Self = StObject.set(x, "LaunchConfigurationNames", js.undefined)
+    inline def setLaunchConfigurationNamesUndefined: Self = StObject.set(x, "LaunchConfigurationNames", js.undefined)
     
-    @scala.inline
-    def setLaunchConfigurationNamesVarargs(value: ResourceName*): Self = StObject.set(x, "LaunchConfigurationNames", js.Array(value :_*))
+    inline def setLaunchConfigurationNamesVarargs(value: ResourceName*): Self = StObject.set(x, "LaunchConfigurationNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

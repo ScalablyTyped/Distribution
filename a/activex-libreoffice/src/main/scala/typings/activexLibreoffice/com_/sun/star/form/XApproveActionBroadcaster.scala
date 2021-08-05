@@ -29,8 +29,7 @@ trait XApproveActionBroadcaster
 }
 object XApproveActionBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addApproveActionListener: XApproveActionListener => Unit,
     queryInterface: `type` => js.Any,
@@ -41,13 +40,10 @@ object XApproveActionBroadcaster {
     __obj.asInstanceOf[XApproveActionBroadcaster]
   }
   
-  @scala.inline
-  implicit class XApproveActionBroadcasterMutableBuilder[Self <: XApproveActionBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XApproveActionBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddApproveActionListener(value: XApproveActionListener => Unit): Self = StObject.set(x, "addApproveActionListener", js.Any.fromFunction1(value))
+    inline def setAddApproveActionListener(value: XApproveActionListener => Unit): Self = StObject.set(x, "addApproveActionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveApproveActionListener(value: XApproveActionListener => Unit): Self = StObject.set(x, "removeApproveActionListener", js.Any.fromFunction1(value))
+    inline def setRemoveApproveActionListener(value: XApproveActionListener => Unit): Self = StObject.set(x, "removeApproveActionListener", js.Any.fromFunction1(value))
   }
 }

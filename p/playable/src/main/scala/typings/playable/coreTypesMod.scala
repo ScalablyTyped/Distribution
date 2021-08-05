@@ -13,17 +13,14 @@ object coreTypesMod {
   }
   object IStylable {
     
-    @scala.inline
-    def apply[TStyles](styleNames: TStyles): IStylable[TStyles] = {
+    inline def apply[TStyles](styleNames: TStyles): IStylable[TStyles] = {
       val __obj = js.Dynamic.literal(styleNames = styleNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStylable[TStyles]]
     }
     
-    @scala.inline
-    implicit class IStylableMutableBuilder[Self <: IStylable[?], TStyles] (val x: Self & IStylable[TStyles]) extends AnyVal {
+    extension [Self <: IStylable[?], TStyles](x: Self & IStylable[TStyles]) {
       
-      @scala.inline
-      def setStyleNames(value: TStyles): Self = StObject.set(x, "styleNames", value.asInstanceOf[js.Any])
+      inline def setStyleNames(value: TStyles): Self = StObject.set(x, "styleNames", value.asInstanceOf[js.Any])
     }
   }
   

@@ -36,31 +36,23 @@ trait ShapeGroupLoadOptions extends StObject {
 }
 object ShapeGroupLoadOptions {
   
-  @scala.inline
-  def apply(): ShapeGroupLoadOptions = {
+  inline def apply(): ShapeGroupLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeGroupLoadOptions]
   }
   
-  @scala.inline
-  implicit class ShapeGroupLoadOptionsMutableBuilder[Self <: ShapeGroupLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeGroupLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setShape(value: ShapeLoadOptions): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: ShapeLoadOptions): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFBuiltInObjectType extends StObject
 object MFBuiltInObjectType {
   
-  @scala.inline
-  def Assignment: `10` = 10.asInstanceOf[`10`]
+  inline def Assignment: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def Document: `0` = 0.asInstanceOf[`0`]
+  inline def Document: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def DocumentCollection: `9` = 9.asInstanceOf[`9`]
+  inline def DocumentCollection: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def DocumentOrDocumentCollection: `-102` = -102.asInstanceOf[`-102`]
+  inline def DocumentOrDocumentCollection: `-102` = -102.asInstanceOf[`-102`]
 }

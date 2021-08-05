@@ -12,6 +12,5 @@ object timePickerDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def timePickerDriverFactory(hasElementEventTrigger: Element): ClickTickerDown = ^.asInstanceOf[js.Dynamic].applyDynamic("timePickerDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[ClickTickerDown]
+  inline def timePickerDriverFactory(hasElementEventTrigger: Element): ClickTickerDown = ^.asInstanceOf[js.Dynamic].applyDynamic("timePickerDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[ClickTickerDown]
 }

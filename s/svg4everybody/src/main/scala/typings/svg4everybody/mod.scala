@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(options: Svg4everybodyOpts): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(options: Svg4everybodyOpts): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("svg4everybody", JSImport.Namespace)
   @js.native
@@ -35,44 +33,32 @@ object mod {
   }
   object Svg4everybodyOpts {
     
-    @scala.inline
-    def apply(): Svg4everybodyOpts = {
+    inline def apply(): Svg4everybodyOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Svg4everybodyOpts]
     }
     
-    @scala.inline
-    implicit class Svg4everybodyOptsMutableBuilder[Self <: Svg4everybodyOpts] (val x: Self) extends AnyVal {
+    extension [Self <: Svg4everybodyOpts](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+      inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
       
-      @scala.inline
-      def setFallback(value: (/* src */ String, /* svg */ SVGElement, /* use */ SVGUseElement) => String): Self = StObject.set(x, "fallback", js.Any.fromFunction3(value))
+      inline def setFallback(value: (/* src */ String, /* svg */ SVGElement, /* use */ SVGUseElement) => String): Self = StObject.set(x, "fallback", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setNosvg(value: Boolean): Self = StObject.set(x, "nosvg", value.asInstanceOf[js.Any])
+      inline def setNosvg(value: Boolean): Self = StObject.set(x, "nosvg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNosvgUndefined: Self = StObject.set(x, "nosvg", js.undefined)
+      inline def setNosvgUndefined: Self = StObject.set(x, "nosvg", js.undefined)
       
-      @scala.inline
-      def setPolyfill(value: Boolean): Self = StObject.set(x, "polyfill", value.asInstanceOf[js.Any])
+      inline def setPolyfill(value: Boolean): Self = StObject.set(x, "polyfill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolyfillUndefined: Self = StObject.set(x, "polyfill", js.undefined)
+      inline def setPolyfillUndefined: Self = StObject.set(x, "polyfill", js.undefined)
       
-      @scala.inline
-      def setValidate(value: (/* src */ String, /* svg */ SVGElement, /* use */ SVGUseElement) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
+      inline def setValidate(value: (/* src */ String, /* svg */ SVGElement, /* use */ SVGUseElement) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
 }

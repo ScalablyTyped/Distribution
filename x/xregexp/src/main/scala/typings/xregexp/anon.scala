@@ -19,26 +19,20 @@ object anon {
   }
   object Astral {
     
-    @scala.inline
-    def apply(): Astral = {
+    inline def apply(): Astral = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Astral]
     }
     
-    @scala.inline
-    implicit class AstralMutableBuilder[Self <: Astral] (val x: Self) extends AnyVal {
+    extension [Self <: Astral](x: Self) {
       
-      @scala.inline
-      def setAstral(value: Boolean): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
+      inline def setAstral(value: Boolean): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
+      inline def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
       
-      @scala.inline
-      def setNamespacing(value: Boolean): Self = StObject.set(x, "namespacing", value.asInstanceOf[js.Any])
+      inline def setNamespacing(value: Boolean): Self = StObject.set(x, "namespacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespacingUndefined: Self = StObject.set(x, "namespacing", js.undefined)
+      inline def setNamespacingUndefined: Self = StObject.set(x, "namespacing", js.undefined)
     }
   }
   
@@ -86,44 +80,32 @@ object anon {
   }
   object PickRequiredUnicodeCharac {
     
-    @scala.inline
-    def apply(astral: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharac = {
+    inline def apply(astral: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharac = {
       val __obj = js.Dynamic.literal(astral = astral.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickRequiredUnicodeCharac]
     }
     
-    @scala.inline
-    implicit class PickRequiredUnicodeCharacMutableBuilder[Self <: PickRequiredUnicodeCharac] (val x: Self) extends AnyVal {
+    extension [Self <: PickRequiredUnicodeCharac](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setAstral(value: js.UndefOr[String] & String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
+      inline def setAstral(value: js.UndefOr[String] & String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
+      inline def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
+      inline def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
       
-      @scala.inline
-      def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
+      inline def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseOfUndefined: Self = StObject.set(x, "inverseOf", js.undefined)
+      inline def setInverseOfUndefined: Self = StObject.set(x, "inverseOf", js.undefined)
       
-      @scala.inline
-      def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
+      inline def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
+      inline def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,44 +153,32 @@ object anon {
   }
   object PickRequiredUnicodeCharacAlias {
     
-    @scala.inline
-    def apply(bmp: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharacAlias = {
+    inline def apply(bmp: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharacAlias = {
       val __obj = js.Dynamic.literal(bmp = bmp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickRequiredUnicodeCharacAlias]
     }
     
-    @scala.inline
-    implicit class PickRequiredUnicodeCharacAliasMutableBuilder[Self <: PickRequiredUnicodeCharacAlias] (val x: Self) extends AnyVal {
+    extension [Self <: PickRequiredUnicodeCharacAlias](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setAstral(value: String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
+      inline def setAstral(value: String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
+      inline def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
       
-      @scala.inline
-      def setBmp(value: js.UndefOr[String] & String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
+      inline def setBmp(value: js.UndefOr[String] & String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
+      inline def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseOfUndefined: Self = StObject.set(x, "inverseOf", js.undefined)
+      inline def setInverseOfUndefined: Self = StObject.set(x, "inverseOf", js.undefined)
       
-      @scala.inline
-      def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
+      inline def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
+      inline def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,44 +226,32 @@ object anon {
   }
   object PickRequiredUnicodeCharacAstral {
     
-    @scala.inline
-    def apply(inverseOf: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharacAstral = {
+    inline def apply(inverseOf: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharacAstral = {
       val __obj = js.Dynamic.literal(inverseOf = inverseOf.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickRequiredUnicodeCharacAstral]
     }
     
-    @scala.inline
-    implicit class PickRequiredUnicodeCharacAstralMutableBuilder[Self <: PickRequiredUnicodeCharacAstral] (val x: Self) extends AnyVal {
+    extension [Self <: PickRequiredUnicodeCharacAstral](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setAstral(value: String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
+      inline def setAstral(value: String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
+      inline def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
       
-      @scala.inline
-      def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
+      inline def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
+      inline def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
       
-      @scala.inline
-      def setInverseOf(value: js.UndefOr[String] & String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
+      inline def setInverseOf(value: js.UndefOr[String] & String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
+      inline def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
+      inline def setIsBmpLastUndefined: Self = StObject.set(x, "isBmpLast", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,17 +262,14 @@ object anon {
   }
   object RequiredPickMatchRecursiv {
     
-    @scala.inline
-    def apply(valueNames: MatchRecursiveValueNames): RequiredPickMatchRecursiv = {
+    inline def apply(valueNames: MatchRecursiveValueNames): RequiredPickMatchRecursiv = {
       val __obj = js.Dynamic.literal(valueNames = valueNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredPickMatchRecursiv]
     }
     
-    @scala.inline
-    implicit class RequiredPickMatchRecursivMutableBuilder[Self <: RequiredPickMatchRecursiv] (val x: Self) extends AnyVal {
+    extension [Self <: RequiredPickMatchRecursiv](x: Self) {
       
-      @scala.inline
-      def setValueNames(value: MatchRecursiveValueNames): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
+      inline def setValueNames(value: MatchRecursiveValueNames): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
     }
   }
 }

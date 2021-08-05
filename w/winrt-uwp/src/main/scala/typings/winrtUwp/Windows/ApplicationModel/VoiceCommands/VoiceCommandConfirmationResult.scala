@@ -12,16 +12,13 @@ trait VoiceCommandConfirmationResult extends StObject {
 }
 object VoiceCommandConfirmationResult {
   
-  @scala.inline
-  def apply(confirmed: Boolean): VoiceCommandConfirmationResult = {
+  inline def apply(confirmed: Boolean): VoiceCommandConfirmationResult = {
     val __obj = js.Dynamic.literal(confirmed = confirmed.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceCommandConfirmationResult]
   }
   
-  @scala.inline
-  implicit class VoiceCommandConfirmationResultMutableBuilder[Self <: VoiceCommandConfirmationResult] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceCommandConfirmationResult](x: Self) {
     
-    @scala.inline
-    def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
+    inline def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
   }
 }

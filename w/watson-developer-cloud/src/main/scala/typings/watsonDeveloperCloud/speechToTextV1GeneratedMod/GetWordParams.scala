@@ -19,31 +19,23 @@ trait GetWordParams extends StObject {
 }
 object GetWordParams {
   
-  @scala.inline
-  def apply(customization_id: String, word_name: String): GetWordParams = {
+  inline def apply(customization_id: String, word_name: String): GetWordParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any], word_name = word_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetWordParams]
   }
   
-  @scala.inline
-  implicit class GetWordParamsMutableBuilder[Self <: GetWordParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetWordParams](x: Self) {
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setWord_name(value: String): Self = StObject.set(x, "word_name", value.asInstanceOf[js.Any])
+    inline def setWord_name(value: String): Self = StObject.set(x, "word_name", value.asInstanceOf[js.Any])
   }
 }

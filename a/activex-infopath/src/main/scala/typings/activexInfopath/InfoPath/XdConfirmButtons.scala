@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdConfirmButtons extends StObject
 object XdConfirmButtons {
   
-  @scala.inline
-  def xdOKCancel: `1` = 1.asInstanceOf[`1`]
+  inline def xdOKCancel: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xdYesNo: `4` = 4.asInstanceOf[`4`]
+  inline def xdYesNo: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xdYesNoCancel: `3` = 3.asInstanceOf[`3`]
+  inline def xdYesNoCancel: `3` = 3.asInstanceOf[`3`]
 }

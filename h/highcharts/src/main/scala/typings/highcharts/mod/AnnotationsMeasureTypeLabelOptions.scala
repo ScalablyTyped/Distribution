@@ -30,31 +30,23 @@ trait AnnotationsMeasureTypeLabelOptions extends StObject {
 }
 object AnnotationsMeasureTypeLabelOptions {
   
-  @scala.inline
-  def apply(): AnnotationsMeasureTypeLabelOptions = {
+  inline def apply(): AnnotationsMeasureTypeLabelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsMeasureTypeLabelOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsMeasureTypeLabelOptionsMutableBuilder[Self <: AnnotationsMeasureTypeLabelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsMeasureTypeLabelOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFormatter(value: js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setStyle(value: AnnotationsMeasureTypeLabelStyleOptions | CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: AnnotationsMeasureTypeLabelStyleOptions | CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

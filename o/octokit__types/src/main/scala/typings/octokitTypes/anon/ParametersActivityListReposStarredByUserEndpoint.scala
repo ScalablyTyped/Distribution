@@ -21,8 +21,7 @@ trait ParametersActivityListReposStarredByUserEndpoint extends StObject {
 }
 object ParametersActivityListReposStarredByUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListReposStarredByUserEndpoint,
     request: ActivityListReposStarredByUserRequestOptions,
     response: OctokitResponse[
@@ -33,17 +32,13 @@ object ParametersActivityListReposStarredByUserEndpoint {
     __obj.asInstanceOf[ParametersActivityListReposStarredByUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListReposStarredByUserEndpointMutableBuilder[Self <: ParametersActivityListReposStarredByUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListReposStarredByUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListReposStarredByUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListReposStarredByUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityListReposStarredByUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityListReposStarredByUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[
           ActivityListReposStarredByUserResponseData | ActivityListReposStarredByUserResponse200Data
         ]

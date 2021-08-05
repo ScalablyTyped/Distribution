@@ -14,25 +14,19 @@ trait ThemeConsumerProps extends StObject {
 }
 object ThemeConsumerProps {
   
-  @scala.inline
-  def apply(): ThemeConsumerProps = {
+  inline def apply(): ThemeConsumerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeConsumerProps]
   }
   
-  @scala.inline
-  implicit class ThemeConsumerPropsMutableBuilder[Self <: ThemeConsumerProps] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeConsumerProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setTheme(value: GlobalTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: GlobalTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

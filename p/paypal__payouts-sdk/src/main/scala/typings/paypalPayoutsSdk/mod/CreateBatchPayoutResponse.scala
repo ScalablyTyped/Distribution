@@ -12,28 +12,21 @@ trait CreateBatchPayoutResponse extends StObject {
 }
 object CreateBatchPayoutResponse {
   
-  @scala.inline
-  def apply(): CreateBatchPayoutResponse = {
+  inline def apply(): CreateBatchPayoutResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBatchPayoutResponse]
   }
   
-  @scala.inline
-  implicit class CreateBatchPayoutResponseMutableBuilder[Self <: CreateBatchPayoutResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBatchPayoutResponse](x: Self) {
     
-    @scala.inline
-    def setBatch_header(value: PayoutHeader): Self = StObject.set(x, "batch_header", value.asInstanceOf[js.Any])
+    inline def setBatch_header(value: PayoutHeader): Self = StObject.set(x, "batch_header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatch_headerUndefined: Self = StObject.set(x, "batch_header", js.undefined)
+    inline def setBatch_headerUndefined: Self = StObject.set(x, "batch_header", js.undefined)
     
-    @scala.inline
-    def setLinks(value: js.Array[LinkDescription]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[LinkDescription]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: LinkDescription*): Self = StObject.set(x, "links", js.Array(value :_*))
   }
 }

@@ -64,29 +64,22 @@ object ReactDataGrid {
   }
   object CellCopyPasteEvent {
     
-    @scala.inline
-    def apply(cellKey: String, fromRow: Double, rowIdx: Double, toRow: Double, value: js.Any): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellCopyPasteEvent = {
+    inline def apply(cellKey: String, fromRow: Double, rowIdx: Double, toRow: Double, value: js.Any): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellCopyPasteEvent = {
       val __obj = js.Dynamic.literal(cellKey = cellKey.asInstanceOf[js.Any], fromRow = fromRow.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any], toRow = toRow.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellCopyPasteEvent]
     }
     
-    @scala.inline
-    implicit class CellCopyPasteEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellCopyPasteEvent] (val x: Self) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellCopyPasteEvent](x: Self) {
       
-      @scala.inline
-      def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
+      inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
+      inline def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
+      inline def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
+      inline def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,26 +110,20 @@ object ReactDataGrid {
   }
   object CellDragEvent {
     
-    @scala.inline
-    def apply(cellKey: String, fromRow: Double, toRow: Double, value: js.Any): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellDragEvent = {
+    inline def apply(cellKey: String, fromRow: Double, toRow: Double, value: js.Any): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellDragEvent = {
       val __obj = js.Dynamic.literal(cellKey = cellKey.asInstanceOf[js.Any], fromRow = fromRow.asInstanceOf[js.Any], toRow = toRow.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellDragEvent]
     }
     
-    @scala.inline
-    implicit class CellDragEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellDragEvent] (val x: Self) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellDragEvent](x: Self) {
       
-      @scala.inline
-      def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
+      inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
+      inline def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
+      inline def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,26 +154,20 @@ object ReactDataGrid {
   }
   object CellExpandEvent {
     
-    @scala.inline
-    def apply[T](expandArgs: js.Any, idx: Double, rowData: T, rowIdx: Double): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T] = {
+    inline def apply[T](expandArgs: js.Any, idx: Double, rowData: T, rowIdx: Double): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T] = {
       val __obj = js.Dynamic.literal(expandArgs = expandArgs.asInstanceOf[js.Any], idx = idx.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T]]
     }
     
-    @scala.inline
-    implicit class CellExpandEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T]) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T]) {
       
-      @scala.inline
-      def setExpandArgs(value: js.Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
+      inline def setExpandArgs(value: js.Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+      inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowData(value: T): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: T): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
+      inline def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
     }
   }
   
@@ -303,108 +284,76 @@ object ReactDataGrid {
   }
   object Column {
     
-    @scala.inline
-    def apply[T](key: String, name: String): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T] = {
+    inline def apply[T](key: String, name: String): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T]]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T]) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T]) {
       
-      @scala.inline
-      def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
+      inline def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellClassUndefined: Self = StObject.set(x, "cellClass", js.undefined)
+      inline def setCellClassUndefined: Self = StObject.set(x, "cellClass", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+      inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
       
-      @scala.inline
-      def setEditor(
+      inline def setEditor(
         value: ReactElement | (ComponentClass[EditorBaseProps, ComponentState]) | StatelessComponent[EditorBaseProps]
       ): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+      inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
       
-      @scala.inline
-      def setEvents(value: StringDictionary[ColumnEventCallback]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: StringDictionary[ColumnEventCallback]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setFilterRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "filterRenderer", value.asInstanceOf[js.Any])
+      inline def setFilterRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "filterRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterRendererUndefined: Self = StObject.set(x, "filterRenderer", js.undefined)
+      inline def setFilterRendererUndefined: Self = StObject.set(x, "filterRenderer", js.undefined)
       
-      @scala.inline
-      def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+      inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+      inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      inline def setFormatter(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setGetRowMetaData(
+      inline def setGetRowMetaData(
         value: (/* rowdata */ T, /* column */ js.UndefOr[typings.reactDataGrid.AdazzleReactDataGrid.Column[T]]) => js.Any
       ): Self = StObject.set(x, "getRowMetaData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetRowMetaDataUndefined: Self = StObject.set(x, "getRowMetaData", js.undefined)
+      inline def setGetRowMetaDataUndefined: Self = StObject.set(x, "getRowMetaData", js.undefined)
       
-      @scala.inline
-      def setHeaderRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
+      inline def setHeaderRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderRendererUndefined: Self = StObject.set(x, "headerRenderer", js.undefined)
+      inline def setHeaderRendererUndefined: Self = StObject.set(x, "headerRenderer", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+      inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+      inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+      inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+      inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
-      @scala.inline
-      def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+      inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+      inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -436,26 +385,20 @@ object ReactDataGrid {
   }
   object DragHandleDoubleClickEvent {
     
-    @scala.inline
-    def apply[T](e: SyntheticEvent[js.Any, Event], idx: Double, rowData: T, rowIdx: Double): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T] = {
+    inline def apply[T](e: SyntheticEvent[js.Any, Event], idx: Double, rowData: T, rowIdx: Double): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T] = {
       val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], idx = idx.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T]]
     }
     
-    @scala.inline
-    implicit class DragHandleDoubleClickEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T]) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T]) {
       
-      @scala.inline
-      def setE(value: SyntheticEvent[js.Any, Event]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: SyntheticEvent[js.Any, Event]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+      inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowData(value: T): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: T): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
+      inline def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
     }
   }
   
@@ -476,20 +419,16 @@ object ReactDataGrid {
   }
   object Filter {
     
-    @scala.inline
-    def apply(columnKey: String, filterTerm: String): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Filter = {
+    inline def apply(columnKey: String, filterTerm: String): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Filter = {
       val __obj = js.Dynamic.literal(columnKey = columnKey.asInstanceOf[js.Any], filterTerm = filterTerm.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Filter] (val x: Self) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Filter](x: Self) {
       
-      @scala.inline
-      def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+      inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterTerm(value: String): Self = StObject.set(x, "filterTerm", value.asInstanceOf[js.Any])
+      inline def setFilterTerm(value: String): Self = StObject.set(x, "filterTerm", value.asInstanceOf[js.Any])
     }
   }
   
@@ -527,8 +466,7 @@ object ReactDataGrid {
   }
   object GridRowsUpdatedEvent {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       action: cellUpdate | cellDrag | columnFill | copyPaste,
       cellKey: String,
       fromRow: Double,
@@ -539,23 +477,17 @@ object ReactDataGrid {
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[T]]
     }
     
-    @scala.inline
-    implicit class GridRowsUpdatedEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[T]) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[T]) {
       
-      @scala.inline
-      def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
+      inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
+      inline def setFromRow(value: Double): Self = StObject.set(x, "fromRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
+      inline def setToRow(value: Double): Self = StObject.set(x, "toRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated(value: T): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: T): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -581,23 +513,18 @@ object ReactDataGrid {
   }
   object OnRowExpandToggle {
     
-    @scala.inline
-    def apply(columnGroupName: String, name: String, shouldExpand: Boolean): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.OnRowExpandToggle = {
+    inline def apply(columnGroupName: String, name: String, shouldExpand: Boolean): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.OnRowExpandToggle = {
       val __obj = js.Dynamic.literal(columnGroupName = columnGroupName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shouldExpand = shouldExpand.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.OnRowExpandToggle]
     }
     
-    @scala.inline
-    implicit class OnRowExpandToggleMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.OnRowExpandToggle] (val x: Self) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.OnRowExpandToggle](x: Self) {
       
-      @scala.inline
-      def setColumnGroupName(value: String): Self = StObject.set(x, "columnGroupName", value.asInstanceOf[js.Any])
+      inline def setColumnGroupName(value: String): Self = StObject.set(x, "columnGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldExpand(value: Boolean): Self = StObject.set(x, "shouldExpand", value.asInstanceOf[js.Any])
+      inline def setShouldExpand(value: Boolean): Self = StObject.set(x, "shouldExpand", value.asInstanceOf[js.Any])
     }
   }
   
@@ -631,26 +558,20 @@ object ReactDataGrid {
   }
   object RowUpdateEvent {
     
-    @scala.inline
-    def apply[T](cellKey: String, key: String, rowIdx: Double, updated: T): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T] = {
+    inline def apply[T](cellKey: String, key: String, rowIdx: Double, updated: T): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T] = {
       val __obj = js.Dynamic.literal(cellKey = cellKey.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T]]
     }
     
-    @scala.inline
-    implicit class RowUpdateEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T]) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T]) {
       
-      @scala.inline
-      def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
+      inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
+      inline def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated(value: T): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: T): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -662,20 +583,16 @@ object ReactDataGrid {
   }
   object SelectionParams {
     
-    @scala.inline
-    def apply[T](row: T, rowIdx: Double): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T] = {
+    inline def apply[T](row: T, rowIdx: Double): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T] = {
       val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T]]
     }
     
-    @scala.inline
-    implicit class SelectionParamsMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T]) extends AnyVal {
+    extension [Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[?], T](x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T]) {
       
-      @scala.inline
-      def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
+      inline def setRowIdx(value: Double): Self = StObject.set(x, "rowIdx", value.asInstanceOf[js.Any])
     }
   }
   

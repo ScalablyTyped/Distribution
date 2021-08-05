@@ -33,34 +33,25 @@ trait ListHealthChecksResponse extends StObject {
 }
 object ListHealthChecksResponse {
   
-  @scala.inline
-  def apply(HealthChecks: HealthChecks, IsTruncated: PageTruncated, Marker: PageMarker, MaxItems: PageMaxItems): ListHealthChecksResponse = {
+  inline def apply(HealthChecks: HealthChecks, IsTruncated: PageTruncated, Marker: PageMarker, MaxItems: PageMaxItems): ListHealthChecksResponse = {
     val __obj = js.Dynamic.literal(HealthChecks = HealthChecks.asInstanceOf[js.Any], IsTruncated = IsTruncated.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], MaxItems = MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHealthChecksResponse]
   }
   
-  @scala.inline
-  implicit class ListHealthChecksResponseMutableBuilder[Self <: ListHealthChecksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListHealthChecksResponse](x: Self) {
     
-    @scala.inline
-    def setHealthChecks(value: HealthChecks): Self = StObject.set(x, "HealthChecks", value.asInstanceOf[js.Any])
+    inline def setHealthChecks(value: HealthChecks): Self = StObject.set(x, "HealthChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthChecksVarargs(value: HealthCheck*): Self = StObject.set(x, "HealthChecks", js.Array(value :_*))
+    inline def setHealthChecksVarargs(value: HealthCheck*): Self = StObject.set(x, "HealthChecks", js.Array(value :_*))
     
-    @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarker(value: PageMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: PageMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

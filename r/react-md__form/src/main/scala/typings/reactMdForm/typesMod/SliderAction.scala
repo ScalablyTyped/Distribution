@@ -22,15 +22,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SliderAction extends StObject
 object SliderAction {
   
-  @scala.inline
-  def SliderDecrementAction(dragging: Boolean, max: Double, min: Double, step: Double): typings.reactMdForm.typesMod.SliderDecrementAction = {
+  inline def SliderDecrementAction(dragging: Boolean, max: Double, min: Double, step: Double): typings.reactMdForm.typesMod.SliderDecrementAction = {
     val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("decrement")
     __obj.asInstanceOf[typings.reactMdForm.typesMod.SliderDecrementAction]
   }
   
-  @scala.inline
-  def SliderDragAction(
+  inline def SliderDragAction(
     clientX: Double,
     clientY: Double,
     eventType: mousedown | mousemove | mouseup | touchstart | touchmove | touchend,
@@ -49,36 +47,31 @@ object SliderAction {
     __obj.asInstanceOf[typings.reactMdForm.typesMod.SliderDragAction]
   }
   
-  @scala.inline
-  def SliderIncrementAction(dragging: Boolean, max: Double, min: Double, step: Double): typings.reactMdForm.typesMod.SliderIncrementAction = {
+  inline def SliderIncrementAction(dragging: Boolean, max: Double, min: Double, step: Double): typings.reactMdForm.typesMod.SliderIncrementAction = {
     val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("increment")
     __obj.asInstanceOf[typings.reactMdForm.typesMod.SliderIncrementAction]
   }
   
-  @scala.inline
-  def SliderMaximumAction(max: Double): typings.reactMdForm.typesMod.SliderMaximumAction = {
+  inline def SliderMaximumAction(max: Double): typings.reactMdForm.typesMod.SliderMaximumAction = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("maximum")
     __obj.asInstanceOf[typings.reactMdForm.typesMod.SliderMaximumAction]
   }
   
-  @scala.inline
-  def SliderMinimumAction(min: Double): typings.reactMdForm.typesMod.SliderMinimumAction = {
+  inline def SliderMinimumAction(min: Double): typings.reactMdForm.typesMod.SliderMinimumAction = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("minimum")
     __obj.asInstanceOf[typings.reactMdForm.typesMod.SliderMinimumAction]
   }
   
-  @scala.inline
-  def SliderSetValueAction(value: Double): typings.reactMdForm.typesMod.SliderSetValueAction = {
+  inline def SliderSetValueAction(value: Double): typings.reactMdForm.typesMod.SliderSetValueAction = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("setValue")
     __obj.asInstanceOf[typings.reactMdForm.typesMod.SliderSetValueAction]
   }
   
-  @scala.inline
-  def SliderStopAction(): typings.reactMdForm.typesMod.SliderStopAction = {
+  inline def SliderStopAction(): typings.reactMdForm.typesMod.SliderStopAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("stop")
     __obj.asInstanceOf[typings.reactMdForm.typesMod.SliderStopAction]

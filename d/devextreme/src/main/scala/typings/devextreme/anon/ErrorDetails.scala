@@ -14,31 +14,23 @@ trait ErrorDetails extends StObject {
 }
 object ErrorDetails {
   
-  @scala.inline
-  def apply(): ErrorDetails = {
+  inline def apply(): ErrorDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorDetails]
   }
   
-  @scala.inline
-  implicit class ErrorDetailsMutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorDetails](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(value: js.Any): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: js.Any): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
+    inline def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
+    inline def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
     
-    @scala.inline
-    def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
   }
 }

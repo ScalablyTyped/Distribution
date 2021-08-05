@@ -19,31 +19,23 @@ trait ManagedZoneForwardingConfigNameServerTarget extends StObject {
 }
 object ManagedZoneForwardingConfigNameServerTarget {
   
-  @scala.inline
-  def apply(): ManagedZoneForwardingConfigNameServerTarget = {
+  inline def apply(): ManagedZoneForwardingConfigNameServerTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedZoneForwardingConfigNameServerTarget]
   }
   
-  @scala.inline
-  implicit class ManagedZoneForwardingConfigNameServerTargetMutableBuilder[Self <: ManagedZoneForwardingConfigNameServerTarget] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedZoneForwardingConfigNameServerTarget](x: Self) {
     
-    @scala.inline
-    def setForwardingPath(value: String): Self = StObject.set(x, "forwardingPath", value.asInstanceOf[js.Any])
+    inline def setForwardingPath(value: String): Self = StObject.set(x, "forwardingPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingPathUndefined: Self = StObject.set(x, "forwardingPath", js.undefined)
+    inline def setForwardingPathUndefined: Self = StObject.set(x, "forwardingPath", js.undefined)
     
-    @scala.inline
-    def setIpv4Address(value: String): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
+    inline def setIpv4Address(value: String): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
+    inline def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -114,44 +114,32 @@ object mod {
   }
   object StreamZipOptions {
     
-    @scala.inline
-    def apply(): StreamZipOptions = {
+    inline def apply(): StreamZipOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StreamZipOptions]
     }
     
-    @scala.inline
-    implicit class StreamZipOptionsMutableBuilder[Self <: StreamZipOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StreamZipOptions](x: Self) {
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+      inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
+      inline def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setSkipEntryNameValidation(value: Boolean): Self = StObject.set(x, "skipEntryNameValidation", value.asInstanceOf[js.Any])
+      inline def setSkipEntryNameValidation(value: Boolean): Self = StObject.set(x, "skipEntryNameValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipEntryNameValidationUndefined: Self = StObject.set(x, "skipEntryNameValidation", js.undefined)
+      inline def setSkipEntryNameValidationUndefined: Self = StObject.set(x, "skipEntryNameValidation", js.undefined)
       
-      @scala.inline
-      def setStoreEntries(value: Boolean): Self = StObject.set(x, "storeEntries", value.asInstanceOf[js.Any])
+      inline def setStoreEntries(value: Boolean): Self = StObject.set(x, "storeEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreEntriesUndefined: Self = StObject.set(x, "storeEntries", js.undefined)
+      inline def setStoreEntriesUndefined: Self = StObject.set(x, "storeEntries", js.undefined)
     }
   }
   
@@ -244,8 +232,7 @@ object mod {
   }
   object ZipEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attr: Double,
       comment: String,
       compressedSize: Double,
@@ -268,59 +255,41 @@ object mod {
       __obj.asInstanceOf[ZipEntry]
     }
     
-    @scala.inline
-    implicit class ZipEntryMutableBuilder[Self <: ZipEntry] (val x: Self) extends AnyVal {
+    extension [Self <: ZipEntry](x: Self) {
       
-      @scala.inline
-      def setAttr(value: Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+      inline def setAttr(value: Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressedSize(value: Double): Self = StObject.set(x, "compressedSize", value.asInstanceOf[js.Any])
+      inline def setCompressedSize(value: Double): Self = StObject.set(x, "compressedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrc(value: Double): Self = StObject.set(x, "crc", value.asInstanceOf[js.Any])
+      inline def setCrc(value: Double): Self = StObject.set(x, "crc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskStart(value: Double): Self = StObject.set(x, "diskStart", value.asInstanceOf[js.Any])
+      inline def setDiskStart(value: Double): Self = StObject.set(x, "diskStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInattr(value: Double): Self = StObject.set(x, "inattr", value.asInstanceOf[js.Any])
+      inline def setInattr(value: Double): Self = StObject.set(x, "inattr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+      inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
+      inline def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: Double): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Double): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerMade(value: Double): Self = StObject.set(x, "verMade", value.asInstanceOf[js.Any])
+      inline def setVerMade(value: Double): Self = StObject.set(x, "verMade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

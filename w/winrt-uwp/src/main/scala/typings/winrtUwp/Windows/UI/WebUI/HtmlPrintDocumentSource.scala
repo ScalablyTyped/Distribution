@@ -46,8 +46,7 @@ trait HtmlPrintDocumentSource extends StObject {
 }
 object HtmlPrintDocumentSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottomMargin: Double,
     close: () => Unit,
     content: PrintContent,
@@ -64,40 +63,28 @@ object HtmlPrintDocumentSource {
     __obj.asInstanceOf[HtmlPrintDocumentSource]
   }
   
-  @scala.inline
-  implicit class HtmlPrintDocumentSourceMutableBuilder[Self <: HtmlPrintDocumentSource] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlPrintDocumentSource](x: Self) {
     
-    @scala.inline
-    def setBottomMargin(value: Double): Self = StObject.set(x, "bottomMargin", value.asInstanceOf[js.Any])
+    inline def setBottomMargin(value: Double): Self = StObject.set(x, "bottomMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContent(value: PrintContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: PrintContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableHeaderFooter(value: Boolean): Self = StObject.set(x, "enableHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setEnableHeaderFooter(value: Boolean): Self = StObject.set(x, "enableHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftMargin(value: Double): Self = StObject.set(x, "leftMargin", value.asInstanceOf[js.Any])
+    inline def setLeftMargin(value: Double): Self = StObject.set(x, "leftMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageRange(value: String): Self = StObject.set(x, "pageRange", value.asInstanceOf[js.Any])
+    inline def setPageRange(value: String): Self = StObject.set(x, "pageRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentScale(value: Double): Self = StObject.set(x, "percentScale", value.asInstanceOf[js.Any])
+    inline def setPercentScale(value: Double): Self = StObject.set(x, "percentScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightMargin(value: Double): Self = StObject.set(x, "rightMargin", value.asInstanceOf[js.Any])
+    inline def setRightMargin(value: Double): Self = StObject.set(x, "rightMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
+    inline def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMargin(value: Double): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
+    inline def setTopMargin(value: Double): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrySetPageRange(value: String => Boolean): Self = StObject.set(x, "trySetPageRange", js.Any.fromFunction1(value))
+    inline def setTrySetPageRange(value: String => Boolean): Self = StObject.set(x, "trySetPageRange", js.Any.fromFunction1(value))
   }
 }

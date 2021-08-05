@@ -12,19 +12,15 @@ trait ITextProcessor extends StObject {
 }
 object ITextProcessor {
   
-  @scala.inline
-  def apply(processText: (String, Boolean) => String, processTextEx: (String, Boolean, Boolean) => js.Any): ITextProcessor = {
+  inline def apply(processText: (String, Boolean) => String, processTextEx: (String, Boolean, Boolean) => js.Any): ITextProcessor = {
     val __obj = js.Dynamic.literal(processText = js.Any.fromFunction2(processText), processTextEx = js.Any.fromFunction3(processTextEx))
     __obj.asInstanceOf[ITextProcessor]
   }
   
-  @scala.inline
-  implicit class ITextProcessorMutableBuilder[Self <: ITextProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: ITextProcessor](x: Self) {
     
-    @scala.inline
-    def setProcessText(value: (String, Boolean) => String): Self = StObject.set(x, "processText", js.Any.fromFunction2(value))
+    inline def setProcessText(value: (String, Boolean) => String): Self = StObject.set(x, "processText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProcessTextEx(value: (String, Boolean, Boolean) => js.Any): Self = StObject.set(x, "processTextEx", js.Any.fromFunction3(value))
+    inline def setProcessTextEx(value: (String, Boolean, Boolean) => js.Any): Self = StObject.set(x, "processTextEx", js.Any.fromFunction3(value))
   }
 }

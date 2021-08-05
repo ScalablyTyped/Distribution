@@ -33,43 +33,31 @@ trait IntArrayOptions extends StObject {
 }
 object IntArrayOptions {
   
-  @scala.inline
-  def apply(): IntArrayOptions = {
+  inline def apply(): IntArrayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntArrayOptions]
   }
   
-  @scala.inline
-  implicit class IntArrayOptionsMutableBuilder[Self <: IntArrayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IntArrayOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: Long): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Long): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setFacetEnabled(value: Boolean): Self = StObject.set(x, "FacetEnabled", value.asInstanceOf[js.Any])
+    inline def setFacetEnabled(value: Boolean): Self = StObject.set(x, "FacetEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetEnabledUndefined: Self = StObject.set(x, "FacetEnabled", js.undefined)
+    inline def setFacetEnabledUndefined: Self = StObject.set(x, "FacetEnabled", js.undefined)
     
-    @scala.inline
-    def setReturnEnabled(value: Boolean): Self = StObject.set(x, "ReturnEnabled", value.asInstanceOf[js.Any])
+    inline def setReturnEnabled(value: Boolean): Self = StObject.set(x, "ReturnEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnEnabledUndefined: Self = StObject.set(x, "ReturnEnabled", js.undefined)
+    inline def setReturnEnabledUndefined: Self = StObject.set(x, "ReturnEnabled", js.undefined)
     
-    @scala.inline
-    def setSearchEnabled(value: Boolean): Self = StObject.set(x, "SearchEnabled", value.asInstanceOf[js.Any])
+    inline def setSearchEnabled(value: Boolean): Self = StObject.set(x, "SearchEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchEnabledUndefined: Self = StObject.set(x, "SearchEnabled", js.undefined)
+    inline def setSearchEnabledUndefined: Self = StObject.set(x, "SearchEnabled", js.undefined)
     
-    @scala.inline
-    def setSourceFields(value: FieldNameCommaList): Self = StObject.set(x, "SourceFields", value.asInstanceOf[js.Any])
+    inline def setSourceFields(value: FieldNameCommaList): Self = StObject.set(x, "SourceFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFieldsUndefined: Self = StObject.set(x, "SourceFields", js.undefined)
+    inline def setSourceFieldsUndefined: Self = StObject.set(x, "SourceFields", js.undefined)
   }
 }

@@ -22,19 +22,15 @@ trait jsonUtils extends StObject {
 }
 object jsonUtils {
   
-  @scala.inline
-  def apply(fromJSON: js.Any => Geometry_, getJsonType: Geometry_ => String): jsonUtils = {
+  inline def apply(fromJSON: js.Any => Geometry_, getJsonType: Geometry_ => String): jsonUtils = {
     val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON), getJsonType = js.Any.fromFunction1(getJsonType))
     __obj.asInstanceOf[jsonUtils]
   }
   
-  @scala.inline
-  implicit class jsonUtilsMutableBuilder[Self <: jsonUtils] (val x: Self) extends AnyVal {
+  extension [Self <: jsonUtils](x: Self) {
     
-    @scala.inline
-    def setFromJSON(value: js.Any => Geometry_): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+    inline def setFromJSON(value: js.Any => Geometry_): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetJsonType(value: Geometry_ => String): Self = StObject.set(x, "getJsonType", js.Any.fromFunction1(value))
+    inline def setGetJsonType(value: Geometry_ => String): Self = StObject.set(x, "getJsonType", js.Any.fromFunction1(value))
   }
 }

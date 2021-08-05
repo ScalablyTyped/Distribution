@@ -13,19 +13,15 @@ trait StartTranscriptionJobResponse extends StObject {
 }
 object StartTranscriptionJobResponse {
   
-  @scala.inline
-  def apply(): StartTranscriptionJobResponse = {
+  inline def apply(): StartTranscriptionJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartTranscriptionJobResponse]
   }
   
-  @scala.inline
-  implicit class StartTranscriptionJobResponseMutableBuilder[Self <: StartTranscriptionJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartTranscriptionJobResponse](x: Self) {
     
-    @scala.inline
-    def setTranscriptionJob(value: TranscriptionJob): Self = StObject.set(x, "TranscriptionJob", value.asInstanceOf[js.Any])
+    inline def setTranscriptionJob(value: TranscriptionJob): Self = StObject.set(x, "TranscriptionJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptionJobUndefined: Self = StObject.set(x, "TranscriptionJob", js.undefined)
+    inline def setTranscriptionJobUndefined: Self = StObject.set(x, "TranscriptionJob", js.undefined)
   }
 }

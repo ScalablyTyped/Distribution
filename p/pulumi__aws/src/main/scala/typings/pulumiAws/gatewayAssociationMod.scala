@@ -83,21 +83,16 @@ object gatewayAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GatewayAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GatewayAssociationState): GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GatewayAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GatewayAssociationState, opts: CustomResourceOptions): GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayAssociation]
+    inline def get(name: String, id: Input[ID]): GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GatewayAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayAssociation]
+    inline def get(name: String, id: Input[ID], state: GatewayAssociationState): GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GatewayAssociation]
+    inline def get(name: String, id: Input[ID], state: GatewayAssociationState, opts: CustomResourceOptions): GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayAssociation]
     
     /**
       * Returns true if the given object is an instance of GatewayAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ Boolean]
   }
   
   trait GatewayAssociationArgs extends StObject {
@@ -132,44 +127,32 @@ object gatewayAssociationMod {
   }
   object GatewayAssociationArgs {
     
-    @scala.inline
-    def apply(dxGatewayId: Input[String]): GatewayAssociationArgs = {
+    inline def apply(dxGatewayId: Input[String]): GatewayAssociationArgs = {
       val __obj = js.Dynamic.literal(dxGatewayId = dxGatewayId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatewayAssociationArgs]
     }
     
-    @scala.inline
-    implicit class GatewayAssociationArgsMutableBuilder[Self <: GatewayAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setAllowedPrefixes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedPrefixes", value.asInstanceOf[js.Any])
+      inline def setAllowedPrefixes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedPrefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedPrefixesUndefined: Self = StObject.set(x, "allowedPrefixes", js.undefined)
+      inline def setAllowedPrefixesUndefined: Self = StObject.set(x, "allowedPrefixes", js.undefined)
       
-      @scala.inline
-      def setAllowedPrefixesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedPrefixes", js.Array(value :_*))
+      inline def setAllowedPrefixesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedPrefixes", js.Array(value :_*))
       
-      @scala.inline
-      def setAssociatedGatewayId(value: Input[String]): Self = StObject.set(x, "associatedGatewayId", value.asInstanceOf[js.Any])
+      inline def setAssociatedGatewayId(value: Input[String]): Self = StObject.set(x, "associatedGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociatedGatewayIdUndefined: Self = StObject.set(x, "associatedGatewayId", js.undefined)
+      inline def setAssociatedGatewayIdUndefined: Self = StObject.set(x, "associatedGatewayId", js.undefined)
       
-      @scala.inline
-      def setAssociatedGatewayOwnerAccountId(value: Input[String]): Self = StObject.set(x, "associatedGatewayOwnerAccountId", value.asInstanceOf[js.Any])
+      inline def setAssociatedGatewayOwnerAccountId(value: Input[String]): Self = StObject.set(x, "associatedGatewayOwnerAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociatedGatewayOwnerAccountIdUndefined: Self = StObject.set(x, "associatedGatewayOwnerAccountId", js.undefined)
+      inline def setAssociatedGatewayOwnerAccountIdUndefined: Self = StObject.set(x, "associatedGatewayOwnerAccountId", js.undefined)
       
-      @scala.inline
-      def setDxGatewayId(value: Input[String]): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
+      inline def setDxGatewayId(value: Input[String]): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProposalId(value: Input[String]): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
+      inline def setProposalId(value: Input[String]): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
+      inline def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
     }
   }
   
@@ -220,65 +203,46 @@ object gatewayAssociationMod {
   }
   object GatewayAssociationState {
     
-    @scala.inline
-    def apply(): GatewayAssociationState = {
+    inline def apply(): GatewayAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GatewayAssociationState]
     }
     
-    @scala.inline
-    implicit class GatewayAssociationStateMutableBuilder[Self <: GatewayAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayAssociationState](x: Self) {
       
-      @scala.inline
-      def setAllowedPrefixes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedPrefixes", value.asInstanceOf[js.Any])
+      inline def setAllowedPrefixes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedPrefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedPrefixesUndefined: Self = StObject.set(x, "allowedPrefixes", js.undefined)
+      inline def setAllowedPrefixesUndefined: Self = StObject.set(x, "allowedPrefixes", js.undefined)
       
-      @scala.inline
-      def setAllowedPrefixesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedPrefixes", js.Array(value :_*))
+      inline def setAllowedPrefixesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedPrefixes", js.Array(value :_*))
       
-      @scala.inline
-      def setAssociatedGatewayId(value: Input[String]): Self = StObject.set(x, "associatedGatewayId", value.asInstanceOf[js.Any])
+      inline def setAssociatedGatewayId(value: Input[String]): Self = StObject.set(x, "associatedGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociatedGatewayIdUndefined: Self = StObject.set(x, "associatedGatewayId", js.undefined)
+      inline def setAssociatedGatewayIdUndefined: Self = StObject.set(x, "associatedGatewayId", js.undefined)
       
-      @scala.inline
-      def setAssociatedGatewayOwnerAccountId(value: Input[String]): Self = StObject.set(x, "associatedGatewayOwnerAccountId", value.asInstanceOf[js.Any])
+      inline def setAssociatedGatewayOwnerAccountId(value: Input[String]): Self = StObject.set(x, "associatedGatewayOwnerAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociatedGatewayOwnerAccountIdUndefined: Self = StObject.set(x, "associatedGatewayOwnerAccountId", js.undefined)
+      inline def setAssociatedGatewayOwnerAccountIdUndefined: Self = StObject.set(x, "associatedGatewayOwnerAccountId", js.undefined)
       
-      @scala.inline
-      def setAssociatedGatewayType(value: Input[String]): Self = StObject.set(x, "associatedGatewayType", value.asInstanceOf[js.Any])
+      inline def setAssociatedGatewayType(value: Input[String]): Self = StObject.set(x, "associatedGatewayType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociatedGatewayTypeUndefined: Self = StObject.set(x, "associatedGatewayType", js.undefined)
+      inline def setAssociatedGatewayTypeUndefined: Self = StObject.set(x, "associatedGatewayType", js.undefined)
       
-      @scala.inline
-      def setDxGatewayAssociationId(value: Input[String]): Self = StObject.set(x, "dxGatewayAssociationId", value.asInstanceOf[js.Any])
+      inline def setDxGatewayAssociationId(value: Input[String]): Self = StObject.set(x, "dxGatewayAssociationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxGatewayAssociationIdUndefined: Self = StObject.set(x, "dxGatewayAssociationId", js.undefined)
+      inline def setDxGatewayAssociationIdUndefined: Self = StObject.set(x, "dxGatewayAssociationId", js.undefined)
       
-      @scala.inline
-      def setDxGatewayId(value: Input[String]): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
+      inline def setDxGatewayId(value: Input[String]): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxGatewayIdUndefined: Self = StObject.set(x, "dxGatewayId", js.undefined)
+      inline def setDxGatewayIdUndefined: Self = StObject.set(x, "dxGatewayId", js.undefined)
       
-      @scala.inline
-      def setDxGatewayOwnerAccountId(value: Input[String]): Self = StObject.set(x, "dxGatewayOwnerAccountId", value.asInstanceOf[js.Any])
+      inline def setDxGatewayOwnerAccountId(value: Input[String]): Self = StObject.set(x, "dxGatewayOwnerAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxGatewayOwnerAccountIdUndefined: Self = StObject.set(x, "dxGatewayOwnerAccountId", js.undefined)
+      inline def setDxGatewayOwnerAccountIdUndefined: Self = StObject.set(x, "dxGatewayOwnerAccountId", js.undefined)
       
-      @scala.inline
-      def setProposalId(value: Input[String]): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
+      inline def setProposalId(value: Input[String]): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
+      inline def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
     }
   }
 }

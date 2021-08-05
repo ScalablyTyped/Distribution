@@ -13,17 +13,14 @@ trait UserFeedback extends StObject {
 }
 object UserFeedback {
   
-  @scala.inline
-  def apply(`type`: FeedbackType): UserFeedback = {
+  inline def apply(`type`: FeedbackType): UserFeedback = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserFeedback]
   }
   
-  @scala.inline
-  implicit class UserFeedbackMutableBuilder[Self <: UserFeedback] (val x: Self) extends AnyVal {
+  extension [Self <: UserFeedback](x: Self) {
     
-    @scala.inline
-    def setType(value: FeedbackType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FeedbackType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ trait SignalResourceInput extends StObject {
 }
 object SignalResourceInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LogicalResourceId: LogicalResourceId,
     StackName: StackNameOrId,
     Status: ResourceSignalStatus,
@@ -39,19 +38,14 @@ object SignalResourceInput {
     __obj.asInstanceOf[SignalResourceInput]
   }
   
-  @scala.inline
-  implicit class SignalResourceInputMutableBuilder[Self <: SignalResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: SignalResourceInput](x: Self) {
     
-    @scala.inline
-    def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
+    inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ResourceSignalStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ResourceSignalStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueId(value: ResourceSignalUniqueId): Self = StObject.set(x, "UniqueId", value.asInstanceOf[js.Any])
+    inline def setUniqueId(value: ResourceSignalUniqueId): Self = StObject.set(x, "UniqueId", value.asInstanceOf[js.Any])
   }
 }

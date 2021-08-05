@@ -45,42 +45,33 @@ trait DirectLineMeasurement3DViewModelProperties extends StObject {
 }
 object DirectLineMeasurement3DViewModelProperties {
   
-  @scala.inline
-  def apply(): DirectLineMeasurement3DViewModelProperties = {
+  inline def apply(): DirectLineMeasurement3DViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectLineMeasurement3DViewModelProperties]
   }
   
-  @scala.inline
-  implicit class DirectLineMeasurement3DViewModelPropertiesMutableBuilder[Self <: DirectLineMeasurement3DViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DirectLineMeasurement3DViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setUnit(
+    inline def setUnit(
       value: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitOptions(
+    inline def setUnitOptions(
       value: js.Array[
           metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
         ]
     ): Self = StObject.set(x, "unitOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
+    inline def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
     
-    @scala.inline
-    def setUnitOptionsVarargs(
+    inline def setUnitOptionsVarargs(
       value: (metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_)*
     ): Self = StObject.set(x, "unitOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

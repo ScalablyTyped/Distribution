@@ -18,22 +18,17 @@ trait BucketObjectLockConfiguration extends StObject {
 }
 object BucketObjectLockConfiguration {
   
-  @scala.inline
-  def apply(objectLockEnabled: String): BucketObjectLockConfiguration = {
+  inline def apply(objectLockEnabled: String): BucketObjectLockConfiguration = {
     val __obj = js.Dynamic.literal(objectLockEnabled = objectLockEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketObjectLockConfiguration]
   }
   
-  @scala.inline
-  implicit class BucketObjectLockConfigurationMutableBuilder[Self <: BucketObjectLockConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BucketObjectLockConfiguration](x: Self) {
     
-    @scala.inline
-    def setObjectLockEnabled(value: String): Self = StObject.set(x, "objectLockEnabled", value.asInstanceOf[js.Any])
+    inline def setObjectLockEnabled(value: String): Self = StObject.set(x, "objectLockEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRule(value: BucketObjectLockConfigurationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: BucketObjectLockConfigurationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

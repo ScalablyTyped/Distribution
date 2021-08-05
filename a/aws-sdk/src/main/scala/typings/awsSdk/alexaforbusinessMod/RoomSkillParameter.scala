@@ -18,19 +18,15 @@ trait RoomSkillParameter extends StObject {
 }
 object RoomSkillParameter {
   
-  @scala.inline
-  def apply(ParameterKey: RoomSkillParameterKey, ParameterValue: RoomSkillParameterValue): RoomSkillParameter = {
+  inline def apply(ParameterKey: RoomSkillParameterKey, ParameterValue: RoomSkillParameterValue): RoomSkillParameter = {
     val __obj = js.Dynamic.literal(ParameterKey = ParameterKey.asInstanceOf[js.Any], ParameterValue = ParameterValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomSkillParameter]
   }
   
-  @scala.inline
-  implicit class RoomSkillParameterMutableBuilder[Self <: RoomSkillParameter] (val x: Self) extends AnyVal {
+  extension [Self <: RoomSkillParameter](x: Self) {
     
-    @scala.inline
-    def setParameterKey(value: RoomSkillParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
+    inline def setParameterKey(value: RoomSkillParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValue(value: RoomSkillParameterValue): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
+    inline def setParameterValue(value: RoomSkillParameterValue): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
   }
 }

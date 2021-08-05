@@ -26,28 +26,21 @@ trait FlattenTransform
 }
 object FlattenTransform {
   
-  @scala.inline
-  def apply(flatten: js.Array[FieldName]): FlattenTransform = {
+  inline def apply(flatten: js.Array[FieldName]): FlattenTransform = {
     val __obj = js.Dynamic.literal(flatten = flatten.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlattenTransform]
   }
   
-  @scala.inline
-  implicit class FlattenTransformMutableBuilder[Self <: FlattenTransform] (val x: Self) extends AnyVal {
+  extension [Self <: FlattenTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value :_*))
     
-    @scala.inline
-    def setFlatten(value: js.Array[FieldName]): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+    inline def setFlatten(value: js.Array[FieldName]): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlattenVarargs(value: FieldName*): Self = StObject.set(x, "flatten", js.Array(value :_*))
+    inline def setFlattenVarargs(value: FieldName*): Self = StObject.set(x, "flatten", js.Array(value :_*))
   }
 }

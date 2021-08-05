@@ -28,37 +28,27 @@ trait Invitation extends StObject {
 }
 object Invitation {
   
-  @scala.inline
-  def apply(): Invitation = {
+  inline def apply(): Invitation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invitation]
   }
   
-  @scala.inline
-  implicit class InvitationMutableBuilder[Self <: Invitation] (val x: Self) extends AnyVal {
+  extension [Self <: Invitation](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setInvitationId(value: NonEmptyString): Self = StObject.set(x, "InvitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: NonEmptyString): Self = StObject.set(x, "InvitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationIdUndefined: Self = StObject.set(x, "InvitationId", js.undefined)
+    inline def setInvitationIdUndefined: Self = StObject.set(x, "InvitationId", js.undefined)
     
-    @scala.inline
-    def setInvitedAt(value: Timestamp): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
+    inline def setInvitedAt(value: Timestamp): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedAtUndefined: Self = StObject.set(x, "InvitedAt", js.undefined)
+    inline def setInvitedAtUndefined: Self = StObject.set(x, "InvitedAt", js.undefined)
     
-    @scala.inline
-    def setMemberStatus(value: NonEmptyString): Self = StObject.set(x, "MemberStatus", value.asInstanceOf[js.Any])
+    inline def setMemberStatus(value: NonEmptyString): Self = StObject.set(x, "MemberStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberStatusUndefined: Self = StObject.set(x, "MemberStatus", js.undefined)
+    inline def setMemberStatusUndefined: Self = StObject.set(x, "MemberStatus", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait BuildBazelRemoteExecutionV2Platform extends StObject {
 }
 object BuildBazelRemoteExecutionV2Platform {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2Platform = {
+  inline def apply(): BuildBazelRemoteExecutionV2Platform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2Platform]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2PlatformMutableBuilder[Self <: BuildBazelRemoteExecutionV2Platform] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2Platform](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[BuildBazelRemoteExecutionV2PlatformProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[BuildBazelRemoteExecutionV2PlatformProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: BuildBazelRemoteExecutionV2PlatformProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: BuildBazelRemoteExecutionV2PlatformProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

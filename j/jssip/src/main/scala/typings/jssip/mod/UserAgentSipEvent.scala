@@ -13,19 +13,15 @@ trait UserAgentSipEvent extends StObject {
 }
 object UserAgentSipEvent {
   
-  @scala.inline
-  def apply(event: Event, request: IncomingRequest): UserAgentSipEvent = {
+  inline def apply(event: Event, request: IncomingRequest): UserAgentSipEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentSipEvent]
   }
   
-  @scala.inline
-  implicit class UserAgentSipEventMutableBuilder[Self <: UserAgentSipEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentSipEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: IncomingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: IncomingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

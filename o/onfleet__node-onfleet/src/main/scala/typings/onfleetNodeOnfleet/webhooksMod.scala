@@ -152,8 +152,7 @@ object webhooksMod {
   }
   object GetWebhookResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       count: Double,
       id: String,
       isEnabled: Boolean,
@@ -164,11 +163,9 @@ object webhooksMod {
       __obj.asInstanceOf[GetWebhookResult]
     }
     
-    @scala.inline
-    implicit class GetWebhookResultMutableBuilder[Self <: GetWebhookResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetWebhookResult](x: Self) {
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,8 +179,7 @@ object webhooksMod {
   }
   object OnfleetWebhook {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       trigger: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14`,
       url: String
     ): OnfleetWebhook = {
@@ -191,20 +187,15 @@ object webhooksMod {
       __obj.asInstanceOf[OnfleetWebhook]
     }
     
-    @scala.inline
-    implicit class OnfleetWebhookMutableBuilder[Self <: OnfleetWebhook] (val x: Self) extends AnyVal {
+    extension [Self <: OnfleetWebhook](x: Self) {
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14`): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14`): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,8 +209,7 @@ object webhooksMod {
   }
   object Webhook {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: OnfleetWebhook => js.Promise[WebhookResult],
       deleteOne: String => js.Promise[Unit],
       get: () => js.Promise[js.Array[GetWebhookResult]]
@@ -228,17 +218,13 @@ object webhooksMod {
       __obj.asInstanceOf[Webhook]
     }
     
-    @scala.inline
-    implicit class WebhookMutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
+    extension [Self <: Webhook](x: Self) {
       
-      @scala.inline
-      def setCreate(value: OnfleetWebhook => js.Promise[WebhookResult]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: OnfleetWebhook => js.Promise[WebhookResult]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteOne(value: String => js.Promise[Unit]): Self = StObject.set(x, "deleteOne", js.Any.fromFunction1(value))
+      inline def setDeleteOne(value: String => js.Promise[Unit]): Self = StObject.set(x, "deleteOne", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => js.Promise[js.Array[GetWebhookResult]]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => js.Promise[js.Array[GetWebhookResult]]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
   
@@ -254,8 +240,7 @@ object webhooksMod {
   }
   object WebhookResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       count: Double,
       id: String,
       trigger: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14`,
@@ -265,20 +250,15 @@ object webhooksMod {
       __obj.asInstanceOf[WebhookResult]
     }
     
-    @scala.inline
-    implicit class WebhookResultMutableBuilder[Self <: WebhookResult] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookResult](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrigger(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14`): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14`): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -301,86 +281,72 @@ object webhooksMod {
   trait WebhookTriggerType extends StObject
   object WebhookTriggerType {
     
-    @scala.inline
-    def TriggerId(triggerName: TaskStarted): typings.onfleetNodeOnfleet.anon.TriggerId = {
+    inline def TriggerId(triggerName: TaskStarted): typings.onfleetNodeOnfleet.anon.TriggerId = {
       val __obj = js.Dynamic.literal(triggerId = 0, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerId]
     }
     
-    @scala.inline
-    def TriggerIdTriggerName(triggerName: TaskArrival): typings.onfleetNodeOnfleet.anon.TriggerIdTriggerName = {
+    inline def TriggerIdTriggerName(triggerName: TaskArrival): typings.onfleetNodeOnfleet.anon.TriggerIdTriggerName = {
       val __obj = js.Dynamic.literal(triggerId = 2, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerIdTriggerName]
     }
     
-    @scala.inline
-    def TriggerName(triggerName: TaskEta): typings.onfleetNodeOnfleet.anon.TriggerName = {
+    inline def TriggerName(triggerName: TaskEta): typings.onfleetNodeOnfleet.anon.TriggerName = {
       val __obj = js.Dynamic.literal(triggerId = 1, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerName]
     }
     
-    @scala.inline
-    def TriggerNameSmsRecipientResponseMissed(triggerName: SmsRecipientResponseMissed): typings.onfleetNodeOnfleet.anon.TriggerNameSmsRecipientResponseMissed = {
+    inline def TriggerNameSmsRecipientResponseMissed(triggerName: SmsRecipientResponseMissed): typings.onfleetNodeOnfleet.anon.TriggerNameSmsRecipientResponseMissed = {
       val __obj = js.Dynamic.literal(triggerId = 14, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameSmsRecipientResponseMissed]
     }
     
-    @scala.inline
-    def TriggerNameTaskAssigned(triggerName: TaskAssigned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskAssigned = {
+    inline def TriggerNameTaskAssigned(triggerName: TaskAssigned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskAssigned = {
       val __obj = js.Dynamic.literal(triggerId = 9, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskAssigned]
     }
     
-    @scala.inline
-    def TriggerNameTaskCloned(triggerName: TaskCloned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCloned = {
+    inline def TriggerNameTaskCloned(triggerName: TaskCloned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCloned = {
       val __obj = js.Dynamic.literal(triggerId = 13, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskCloned]
     }
     
-    @scala.inline
-    def TriggerNameTaskCompleted(triggerName: TaskCompleted): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCompleted = {
+    inline def TriggerNameTaskCompleted(triggerName: TaskCompleted): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCompleted = {
       val __obj = js.Dynamic.literal(triggerId = 3, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskCompleted]
     }
     
-    @scala.inline
-    def TriggerNameTaskCreated(triggerName: TaskCreated): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCreated = {
+    inline def TriggerNameTaskCreated(triggerName: TaskCreated): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCreated = {
       val __obj = js.Dynamic.literal(triggerId = 6, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskCreated]
     }
     
-    @scala.inline
-    def TriggerNameTaskDelayed(triggerName: TaskDelayed): typings.onfleetNodeOnfleet.anon.TriggerNameTaskDelayed = {
+    inline def TriggerNameTaskDelayed(triggerName: TaskDelayed): typings.onfleetNodeOnfleet.anon.TriggerNameTaskDelayed = {
       val __obj = js.Dynamic.literal(triggerId = 12, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskDelayed]
     }
     
-    @scala.inline
-    def TriggerNameTaskDeleted(triggerName: TaskDeleted): typings.onfleetNodeOnfleet.anon.TriggerNameTaskDeleted = {
+    inline def TriggerNameTaskDeleted(triggerName: TaskDeleted): typings.onfleetNodeOnfleet.anon.TriggerNameTaskDeleted = {
       val __obj = js.Dynamic.literal(triggerId = 8, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskDeleted]
     }
     
-    @scala.inline
-    def TriggerNameTaskFailed(triggerName: TaskFailed): typings.onfleetNodeOnfleet.anon.TriggerNameTaskFailed = {
+    inline def TriggerNameTaskFailed(triggerName: TaskFailed): typings.onfleetNodeOnfleet.anon.TriggerNameTaskFailed = {
       val __obj = js.Dynamic.literal(triggerId = 4, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskFailed]
     }
     
-    @scala.inline
-    def TriggerNameTaskUnassigned(triggerName: TaskUnassigned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskUnassigned = {
+    inline def TriggerNameTaskUnassigned(triggerName: TaskUnassigned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskUnassigned = {
       val __obj = js.Dynamic.literal(triggerId = 10, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskUnassigned]
     }
     
-    @scala.inline
-    def TriggerNameTaskUpdated(triggerName: TaskUpdated): typings.onfleetNodeOnfleet.anon.TriggerNameTaskUpdated = {
+    inline def TriggerNameTaskUpdated(triggerName: TaskUpdated): typings.onfleetNodeOnfleet.anon.TriggerNameTaskUpdated = {
       val __obj = js.Dynamic.literal(triggerId = 7, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskUpdated]
     }
     
-    @scala.inline
-    def TriggerNameWorkerDuty(triggerName: WorkerDuty): typings.onfleetNodeOnfleet.anon.TriggerNameWorkerDuty = {
+    inline def TriggerNameWorkerDuty(triggerName: WorkerDuty): typings.onfleetNodeOnfleet.anon.TriggerNameWorkerDuty = {
       val __obj = js.Dynamic.literal(triggerId = 5, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameWorkerDuty]
     }

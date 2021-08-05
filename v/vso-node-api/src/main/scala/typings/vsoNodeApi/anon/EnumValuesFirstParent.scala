@@ -10,16 +10,13 @@ trait EnumValuesFirstParent extends StObject {
 }
 object EnumValuesFirstParent {
   
-  @scala.inline
-  def apply(enumValues: FirstParent): EnumValuesFirstParent = {
+  inline def apply(enumValues: FirstParent): EnumValuesFirstParent = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFirstParent]
   }
   
-  @scala.inline
-  implicit class EnumValuesFirstParentMutableBuilder[Self <: EnumValuesFirstParent] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFirstParent](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FirstParent): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FirstParent): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

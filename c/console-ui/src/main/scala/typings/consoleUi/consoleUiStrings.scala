@@ -11,27 +11,23 @@ object consoleUiStrings {
   sealed trait DEBUG
     extends StObject
        with WriteLevel
-  @scala.inline
-  def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
   sealed trait ERROR
     extends StObject
        with WriteLevel
-  @scala.inline
-  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
   sealed trait INFO
     extends StObject
        with WriteLevel
-  @scala.inline
-  def INFO: INFO = "INFO".asInstanceOf[INFO]
+  inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
   sealed trait WARNING
     extends StObject
        with WriteLevel
-  @scala.inline
-  def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
+  inline def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
 }

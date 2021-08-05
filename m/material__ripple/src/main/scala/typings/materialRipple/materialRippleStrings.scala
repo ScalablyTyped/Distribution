@@ -8,6 +8,5 @@ object materialRippleStrings {
   
   @js.native
   sealed trait resize extends StObject
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
+  inline def resize: resize = "resize".asInstanceOf[resize]
 }

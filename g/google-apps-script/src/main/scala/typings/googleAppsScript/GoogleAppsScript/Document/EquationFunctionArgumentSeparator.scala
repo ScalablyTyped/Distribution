@@ -14,8 +14,7 @@ trait EquationFunctionArgumentSeparator
      with Element
 object EquationFunctionArgumentSeparator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBody: () => Body,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,

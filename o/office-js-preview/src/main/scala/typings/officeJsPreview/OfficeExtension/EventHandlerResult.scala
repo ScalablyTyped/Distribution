@@ -13,19 +13,15 @@ trait EventHandlerResult[T] extends StObject {
 }
 object EventHandlerResult {
   
-  @scala.inline
-  def apply[T](context: ClientRequestContext, remove: () => Unit): EventHandlerResult[T] = {
+  inline def apply[T](context: ClientRequestContext, remove: () => Unit): EventHandlerResult[T] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove))
     __obj.asInstanceOf[EventHandlerResult[T]]
   }
   
-  @scala.inline
-  implicit class EventHandlerResultMutableBuilder[Self <: EventHandlerResult[?], T] (val x: Self & EventHandlerResult[T]) extends AnyVal {
+  extension [Self <: EventHandlerResult[?], T](x: Self & EventHandlerResult[T]) {
     
-    @scala.inline
-    def setContext(value: ClientRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: ClientRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

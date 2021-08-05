@@ -22,20 +22,16 @@ object mod extends Shortcut {
     }
     object setupOption {
       
-      @scala.inline
-      def apply(defaultDuration: Double, edgeOffset: Double): setupOption = {
+      inline def apply(defaultDuration: Double, edgeOffset: Double): setupOption = {
         val __obj = js.Dynamic.literal(defaultDuration = defaultDuration.asInstanceOf[js.Any], edgeOffset = edgeOffset.asInstanceOf[js.Any])
         __obj.asInstanceOf[setupOption]
       }
       
-      @scala.inline
-      implicit class setupOptionMutableBuilder[Self <: setupOption] (val x: Self) extends AnyVal {
+      extension [Self <: setupOption](x: Self) {
         
-        @scala.inline
-        def setDefaultDuration(value: Double): Self = StObject.set(x, "defaultDuration", value.asInstanceOf[js.Any])
+        inline def setDefaultDuration(value: Double): Self = StObject.set(x, "defaultDuration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEdgeOffset(value: Double): Self = StObject.set(x, "edgeOffset", value.asInstanceOf[js.Any])
+        inline def setEdgeOffset(value: Double): Self = StObject.set(x, "edgeOffset", value.asInstanceOf[js.Any])
       }
     }
     

@@ -11,22 +11,17 @@ trait AlignProperty extends StObject {
 }
 object AlignProperty {
   
-  @scala.inline
-  def apply(): AlignProperty = {
+  inline def apply(): AlignProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlignProperty]
   }
   
-  @scala.inline
-  implicit class AlignPropertyMutableBuilder[Self <: AlignProperty] (val x: Self) extends AnyVal {
+  extension [Self <: AlignProperty](x: Self) {
     
-    @scala.inline
-    def setAlign(value: ProductionRule[ScaledValueRef[Align]]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: ProductionRule[ScaledValueRef[Align]]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setAlignVarargs(value: (Test & ScaledValueRef[Align])*): Self = StObject.set(x, "align", js.Array(value :_*))
+    inline def setAlignVarargs(value: (Test & ScaledValueRef[Align])*): Self = StObject.set(x, "align", js.Array(value :_*))
   }
 }

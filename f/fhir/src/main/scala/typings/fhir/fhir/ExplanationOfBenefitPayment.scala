@@ -48,55 +48,39 @@ trait ExplanationOfBenefitPayment
 }
 object ExplanationOfBenefitPayment {
   
-  @scala.inline
-  def apply(): ExplanationOfBenefitPayment = {
+  inline def apply(): ExplanationOfBenefitPayment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExplanationOfBenefitPayment]
   }
   
-  @scala.inline
-  implicit class ExplanationOfBenefitPaymentMutableBuilder[Self <: ExplanationOfBenefitPayment] (val x: Self) extends AnyVal {
+  extension [Self <: ExplanationOfBenefitPayment](x: Self) {
     
-    @scala.inline
-    def setAdjustment(value: Money): Self = StObject.set(x, "adjustment", value.asInstanceOf[js.Any])
+    inline def setAdjustment(value: Money): Self = StObject.set(x, "adjustment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustmentReason(value: CodeableConcept): Self = StObject.set(x, "adjustmentReason", value.asInstanceOf[js.Any])
+    inline def setAdjustmentReason(value: CodeableConcept): Self = StObject.set(x, "adjustmentReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustmentReasonUndefined: Self = StObject.set(x, "adjustmentReason", js.undefined)
+    inline def setAdjustmentReasonUndefined: Self = StObject.set(x, "adjustmentReason", js.undefined)
     
-    @scala.inline
-    def setAdjustmentUndefined: Self = StObject.set(x, "adjustment", js.undefined)
+    inline def setAdjustmentUndefined: Self = StObject.set(x, "adjustment", js.undefined)
     
-    @scala.inline
-    def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setDate(value: date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
+    inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
+    inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
   }
 }

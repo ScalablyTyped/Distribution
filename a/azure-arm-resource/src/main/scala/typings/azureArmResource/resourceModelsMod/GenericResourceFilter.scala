@@ -23,31 +23,23 @@ trait GenericResourceFilter extends StObject {
 }
 object GenericResourceFilter {
   
-  @scala.inline
-  def apply(): GenericResourceFilter = {
+  inline def apply(): GenericResourceFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenericResourceFilter]
   }
   
-  @scala.inline
-  implicit class GenericResourceFilterMutableBuilder[Self <: GenericResourceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GenericResourceFilter](x: Self) {
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setTagname(value: String): Self = StObject.set(x, "tagname", value.asInstanceOf[js.Any])
+    inline def setTagname(value: String): Self = StObject.set(x, "tagname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagnameUndefined: Self = StObject.set(x, "tagname", js.undefined)
+    inline def setTagnameUndefined: Self = StObject.set(x, "tagname", js.undefined)
     
-    @scala.inline
-    def setTagvalue(value: String): Self = StObject.set(x, "tagvalue", value.asInstanceOf[js.Any])
+    inline def setTagvalue(value: String): Self = StObject.set(x, "tagvalue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagvalueUndefined: Self = StObject.set(x, "tagvalue", js.undefined)
+    inline def setTagvalueUndefined: Self = StObject.set(x, "tagvalue", js.undefined)
   }
 }

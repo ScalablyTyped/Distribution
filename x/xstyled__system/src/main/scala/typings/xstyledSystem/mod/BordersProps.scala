@@ -21,8 +21,7 @@ trait BordersProps
      with BorderRadiusProps[StyledSystemLength]
 object BordersProps {
   
-  @scala.inline
-  def apply(): BordersProps = {
+  inline def apply(): BordersProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BordersProps]
   }

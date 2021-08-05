@@ -14,19 +14,15 @@ trait StoreLocationPlugin extends StObject {
 }
 object StoreLocationPlugin {
   
-  @scala.inline
-  def apply(): StoreLocationPlugin = {
+  inline def apply(): StoreLocationPlugin = {
     val __obj = js.Dynamic.literal(CAPICOM_CURRENT_USER_STORE = 2, CAPICOM_LOCAL_MACHINE_STORE = 1)
     __obj.asInstanceOf[StoreLocationPlugin]
   }
   
-  @scala.inline
-  implicit class StoreLocationPluginMutableBuilder[Self <: StoreLocationPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: StoreLocationPlugin](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_CURRENT_USER_STORE(value: `2`): Self = StObject.set(x, "CAPICOM_CURRENT_USER_STORE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CURRENT_USER_STORE(value: `2`): Self = StObject.set(x, "CAPICOM_CURRENT_USER_STORE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_LOCAL_MACHINE_STORE(value: `1`): Self = StObject.set(x, "CAPICOM_LOCAL_MACHINE_STORE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_LOCAL_MACHINE_STORE(value: `1`): Self = StObject.set(x, "CAPICOM_LOCAL_MACHINE_STORE", value.asInstanceOf[js.Any])
   }
 }

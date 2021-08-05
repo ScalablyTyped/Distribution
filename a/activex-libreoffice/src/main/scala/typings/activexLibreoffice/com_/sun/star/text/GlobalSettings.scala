@@ -15,8 +15,7 @@ trait GlobalSettings
      with XViewSettingsSupplier
 object GlobalSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PrintSettings: XPropertySet,
     ViewSettings: XPropertySet,
     acquire: () => Unit,

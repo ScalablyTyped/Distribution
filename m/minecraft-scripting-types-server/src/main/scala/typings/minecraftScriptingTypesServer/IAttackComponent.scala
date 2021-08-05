@@ -17,16 +17,13 @@ trait IAttackComponent extends StObject {
 }
 object IAttackComponent {
   
-  @scala.inline
-  def apply(damage: Rangemax): IAttackComponent = {
+  inline def apply(damage: Rangemax): IAttackComponent = {
     val __obj = js.Dynamic.literal(damage = damage.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttackComponent]
   }
   
-  @scala.inline
-  implicit class IAttackComponentMutableBuilder[Self <: IAttackComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IAttackComponent](x: Self) {
     
-    @scala.inline
-    def setDamage(value: Rangemax): Self = StObject.set(x, "damage", value.asInstanceOf[js.Any])
+    inline def setDamage(value: Rangemax): Self = StObject.set(x, "damage", value.asInstanceOf[js.Any])
   }
 }

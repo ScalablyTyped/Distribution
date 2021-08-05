@@ -21,44 +21,32 @@ trait App extends StObject {
 }
 object App {
   
-  @scala.inline
-  def apply(id: String, name: String, slug: String): App = {
+  inline def apply(id: String, name: String, slug: String): App = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(null)
     __obj.asInstanceOf[App]
   }
   
-  @scala.inline
-  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+  extension [Self <: App](x: Self) {
     
-    @scala.inline
-    def setAssociation(value: AppAssociation): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
+    inline def setAssociation(value: AppAssociation): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationNull: Self = StObject.set(x, "association", null)
+    inline def setAssociationNull: Self = StObject.set(x, "association", null)
     
-    @scala.inline
-    def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
+    inline def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: Org): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: Org): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_Null: Self = StObject.set(x, "org", null)
+    inline def setOrg_Null: Self = StObject.set(x, "org", null)
     
-    @scala.inline
-    def setRepo_url(value: String): Self = StObject.set(x, "repo_url", value.asInstanceOf[js.Any])
+    inline def setRepo_url(value: String): Self = StObject.set(x, "repo_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo_urlUndefined: Self = StObject.set(x, "repo_url", js.undefined)
+    inline def setRepo_urlUndefined: Self = StObject.set(x, "repo_url", js.undefined)
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
   }
 }

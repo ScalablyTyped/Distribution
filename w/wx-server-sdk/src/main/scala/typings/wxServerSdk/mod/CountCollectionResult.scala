@@ -11,16 +11,13 @@ trait CountCollectionResult extends StObject {
 }
 object CountCollectionResult {
   
-  @scala.inline
-  def apply(stats: Total): CountCollectionResult = {
+  inline def apply(stats: Total): CountCollectionResult = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountCollectionResult]
   }
   
-  @scala.inline
-  implicit class CountCollectionResultMutableBuilder[Self <: CountCollectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CountCollectionResult](x: Self) {
     
-    @scala.inline
-    def setStats(value: Total): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Total): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

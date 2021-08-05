@@ -23,43 +23,31 @@ trait ReturnaddressCustomBatchRequestEntry extends StObject {
 }
 object ReturnaddressCustomBatchRequestEntry {
   
-  @scala.inline
-  def apply(): ReturnaddressCustomBatchRequestEntry = {
+  inline def apply(): ReturnaddressCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnaddressCustomBatchRequestEntry]
   }
   
-  @scala.inline
-  implicit class ReturnaddressCustomBatchRequestEntryMutableBuilder[Self <: ReturnaddressCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnaddressCustomBatchRequestEntry](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setReturnAddress(value: ReturnAddress): Self = StObject.set(x, "returnAddress", value.asInstanceOf[js.Any])
+    inline def setReturnAddress(value: ReturnAddress): Self = StObject.set(x, "returnAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnAddressId(value: String): Self = StObject.set(x, "returnAddressId", value.asInstanceOf[js.Any])
+    inline def setReturnAddressId(value: String): Self = StObject.set(x, "returnAddressId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnAddressIdUndefined: Self = StObject.set(x, "returnAddressId", js.undefined)
+    inline def setReturnAddressIdUndefined: Self = StObject.set(x, "returnAddressId", js.undefined)
     
-    @scala.inline
-    def setReturnAddressUndefined: Self = StObject.set(x, "returnAddress", js.undefined)
+    inline def setReturnAddressUndefined: Self = StObject.set(x, "returnAddress", js.undefined)
   }
 }

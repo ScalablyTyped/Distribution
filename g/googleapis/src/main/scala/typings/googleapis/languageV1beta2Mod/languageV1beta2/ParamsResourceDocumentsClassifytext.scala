@@ -24,25 +24,19 @@ trait ParamsResourceDocumentsClassifytext
 }
 object ParamsResourceDocumentsClassifytext {
   
-  @scala.inline
-  def apply(): ParamsResourceDocumentsClassifytext = {
+  inline def apply(): ParamsResourceDocumentsClassifytext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDocumentsClassifytext]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDocumentsClassifytextMutableBuilder[Self <: ParamsResourceDocumentsClassifytext] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDocumentsClassifytext](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaClassifyTextRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaClassifyTextRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

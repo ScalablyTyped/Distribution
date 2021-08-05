@@ -22,46 +22,33 @@ trait IosStoreApp
 }
 object IosStoreApp {
   
-  @scala.inline
-  def apply(): IosStoreApp = {
+  inline def apply(): IosStoreApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosStoreApp]
   }
   
-  @scala.inline
-  implicit class IosStoreAppMutableBuilder[Self <: IosStoreApp] (val x: Self) extends AnyVal {
+  extension [Self <: IosStoreApp](x: Self) {
     
-    @scala.inline
-    def setAppStoreUrl(value: NullableOption[String]): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
+    inline def setAppStoreUrl(value: NullableOption[String]): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppStoreUrlNull: Self = StObject.set(x, "appStoreUrl", null)
+    inline def setAppStoreUrlNull: Self = StObject.set(x, "appStoreUrl", null)
     
-    @scala.inline
-    def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
+    inline def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
     
-    @scala.inline
-    def setApplicableDeviceType(value: IosDeviceType): Self = StObject.set(x, "applicableDeviceType", value.asInstanceOf[js.Any])
+    inline def setApplicableDeviceType(value: IosDeviceType): Self = StObject.set(x, "applicableDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicableDeviceTypeUndefined: Self = StObject.set(x, "applicableDeviceType", js.undefined)
+    inline def setApplicableDeviceTypeUndefined: Self = StObject.set(x, "applicableDeviceType", js.undefined)
     
-    @scala.inline
-    def setBundleId(value: NullableOption[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: NullableOption[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdNull: Self = StObject.set(x, "bundleId", null)
+    inline def setBundleIdNull: Self = StObject.set(x, "bundleId", null)
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystem(value: NullableOption[IosMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
+    inline def setMinimumSupportedOperatingSystem(value: NullableOption[IosMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystemNull: Self = StObject.set(x, "minimumSupportedOperatingSystem", null)
+    inline def setMinimumSupportedOperatingSystemNull: Self = StObject.set(x, "minimumSupportedOperatingSystem", null)
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
+    inline def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
   }
 }

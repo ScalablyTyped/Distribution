@@ -120,89 +120,62 @@ object anon {
   }
   object ACCESSBACKGROUNDLOCATION {
     
-    @scala.inline
-    def apply(): ACCESSBACKGROUNDLOCATION = {
+    inline def apply(): ACCESSBACKGROUNDLOCATION = {
       val __obj = js.Dynamic.literal(ACCESS_BACKGROUND_LOCATION = "ACCESS_BACKGROUND_LOCATION", ACCESS_COARSE_LOCATION = "ACCESS_COARSE_LOCATION", ACCESS_FINE_LOCATION = "ACCESS_FINE_LOCATION", ADD_VOICEMAIL = "ADD_VOICEMAIL", BODY_SENSORS = "BODY_SENSORS", CALL_PHONE = "CALL_PHONE", CAMERA = "CAMERA", GET_ACCOUNTS = "GET_ACCOUNTS", PROCESS_OUTGOING_CALLS = "PROCESS_OUTGOING_CALLS", READ_CALENDAR = "READ_CALENDAR", READ_CALL_LOG = "READ_CALL_LOG", READ_CONTACTS = "READ_CONTACTS", READ_EXTERNAL_STORAGE = "READ_EXTERNAL_STORAGE", READ_PHONE_STATE = "READ_PHONE_STATE", READ_SMS = "READ_SMS", RECEIVE_MMS = "RECEIVE_MMS", RECEIVE_SMS = "RECEIVE_SMS", RECEIVE_WAP_PUSH = "RECEIVE_WAP_PUSH", RECORD_AUDIO = "RECORD_AUDIO", SEND_SMS = "SEND_SMS", USE_SIP = "USE_SIP", WRITE_CALENDAR = "WRITE_CALENDAR", WRITE_CALL_LOG = "WRITE_CALL_LOG", WRITE_CONTACTS = "WRITE_CONTACTS", WRITE_EXTERNAL_STORAGE = "WRITE_EXTERNAL_STORAGE")
       __obj.asInstanceOf[ACCESSBACKGROUNDLOCATION]
     }
     
-    @scala.inline
-    implicit class ACCESSBACKGROUNDLOCATIONMutableBuilder[Self <: ACCESSBACKGROUNDLOCATION] (val x: Self) extends AnyVal {
+    extension [Self <: ACCESSBACKGROUNDLOCATION](x: Self) {
       
-      @scala.inline
-      def setACCESS_BACKGROUND_LOCATION(value: ACCESS_BACKGROUND_LOCATION): Self = StObject.set(x, "ACCESS_BACKGROUND_LOCATION", value.asInstanceOf[js.Any])
+      inline def setACCESS_BACKGROUND_LOCATION(value: ACCESS_BACKGROUND_LOCATION): Self = StObject.set(x, "ACCESS_BACKGROUND_LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACCESS_COARSE_LOCATION(value: ACCESS_COARSE_LOCATION): Self = StObject.set(x, "ACCESS_COARSE_LOCATION", value.asInstanceOf[js.Any])
+      inline def setACCESS_COARSE_LOCATION(value: ACCESS_COARSE_LOCATION): Self = StObject.set(x, "ACCESS_COARSE_LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACCESS_FINE_LOCATION(value: ACCESS_FINE_LOCATION): Self = StObject.set(x, "ACCESS_FINE_LOCATION", value.asInstanceOf[js.Any])
+      inline def setACCESS_FINE_LOCATION(value: ACCESS_FINE_LOCATION): Self = StObject.set(x, "ACCESS_FINE_LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADD_VOICEMAIL(value: ADD_VOICEMAIL): Self = StObject.set(x, "ADD_VOICEMAIL", value.asInstanceOf[js.Any])
+      inline def setADD_VOICEMAIL(value: ADD_VOICEMAIL): Self = StObject.set(x, "ADD_VOICEMAIL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBODY_SENSORS(value: BODY_SENSORS): Self = StObject.set(x, "BODY_SENSORS", value.asInstanceOf[js.Any])
+      inline def setBODY_SENSORS(value: BODY_SENSORS): Self = StObject.set(x, "BODY_SENSORS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCALL_PHONE(value: CALL_PHONE): Self = StObject.set(x, "CALL_PHONE", value.asInstanceOf[js.Any])
+      inline def setCALL_PHONE(value: CALL_PHONE): Self = StObject.set(x, "CALL_PHONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAMERA(value: CAMERA): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
+      inline def setCAMERA(value: CAMERA): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGET_ACCOUNTS(value: GET_ACCOUNTS): Self = StObject.set(x, "GET_ACCOUNTS", value.asInstanceOf[js.Any])
+      inline def setGET_ACCOUNTS(value: GET_ACCOUNTS): Self = StObject.set(x, "GET_ACCOUNTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPROCESS_OUTGOING_CALLS(value: PROCESS_OUTGOING_CALLS): Self = StObject.set(x, "PROCESS_OUTGOING_CALLS", value.asInstanceOf[js.Any])
+      inline def setPROCESS_OUTGOING_CALLS(value: PROCESS_OUTGOING_CALLS): Self = StObject.set(x, "PROCESS_OUTGOING_CALLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_CALENDAR(value: READ_CALENDAR): Self = StObject.set(x, "READ_CALENDAR", value.asInstanceOf[js.Any])
+      inline def setREAD_CALENDAR(value: READ_CALENDAR): Self = StObject.set(x, "READ_CALENDAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_CALL_LOG(value: READ_CALL_LOG): Self = StObject.set(x, "READ_CALL_LOG", value.asInstanceOf[js.Any])
+      inline def setREAD_CALL_LOG(value: READ_CALL_LOG): Self = StObject.set(x, "READ_CALL_LOG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_CONTACTS(value: READ_CONTACTS): Self = StObject.set(x, "READ_CONTACTS", value.asInstanceOf[js.Any])
+      inline def setREAD_CONTACTS(value: READ_CONTACTS): Self = StObject.set(x, "READ_CONTACTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_EXTERNAL_STORAGE(value: READ_EXTERNAL_STORAGE): Self = StObject.set(x, "READ_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
+      inline def setREAD_EXTERNAL_STORAGE(value: READ_EXTERNAL_STORAGE): Self = StObject.set(x, "READ_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_PHONE_STATE(value: READ_PHONE_STATE): Self = StObject.set(x, "READ_PHONE_STATE", value.asInstanceOf[js.Any])
+      inline def setREAD_PHONE_STATE(value: READ_PHONE_STATE): Self = StObject.set(x, "READ_PHONE_STATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREAD_SMS(value: READ_SMS): Self = StObject.set(x, "READ_SMS", value.asInstanceOf[js.Any])
+      inline def setREAD_SMS(value: READ_SMS): Self = StObject.set(x, "READ_SMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECEIVE_MMS(value: RECEIVE_MMS): Self = StObject.set(x, "RECEIVE_MMS", value.asInstanceOf[js.Any])
+      inline def setRECEIVE_MMS(value: RECEIVE_MMS): Self = StObject.set(x, "RECEIVE_MMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECEIVE_SMS(value: RECEIVE_SMS): Self = StObject.set(x, "RECEIVE_SMS", value.asInstanceOf[js.Any])
+      inline def setRECEIVE_SMS(value: RECEIVE_SMS): Self = StObject.set(x, "RECEIVE_SMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECEIVE_WAP_PUSH(value: RECEIVE_WAP_PUSH): Self = StObject.set(x, "RECEIVE_WAP_PUSH", value.asInstanceOf[js.Any])
+      inline def setRECEIVE_WAP_PUSH(value: RECEIVE_WAP_PUSH): Self = StObject.set(x, "RECEIVE_WAP_PUSH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRECORD_AUDIO(value: RECORD_AUDIO): Self = StObject.set(x, "RECORD_AUDIO", value.asInstanceOf[js.Any])
+      inline def setRECORD_AUDIO(value: RECORD_AUDIO): Self = StObject.set(x, "RECORD_AUDIO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEND_SMS(value: SEND_SMS): Self = StObject.set(x, "SEND_SMS", value.asInstanceOf[js.Any])
+      inline def setSEND_SMS(value: SEND_SMS): Self = StObject.set(x, "SEND_SMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSE_SIP(value: USE_SIP): Self = StObject.set(x, "USE_SIP", value.asInstanceOf[js.Any])
+      inline def setUSE_SIP(value: USE_SIP): Self = StObject.set(x, "USE_SIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWRITE_CALENDAR(value: WRITE_CALENDAR): Self = StObject.set(x, "WRITE_CALENDAR", value.asInstanceOf[js.Any])
+      inline def setWRITE_CALENDAR(value: WRITE_CALENDAR): Self = StObject.set(x, "WRITE_CALENDAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWRITE_CALL_LOG(value: WRITE_CALL_LOG): Self = StObject.set(x, "WRITE_CALL_LOG", value.asInstanceOf[js.Any])
+      inline def setWRITE_CALL_LOG(value: WRITE_CALL_LOG): Self = StObject.set(x, "WRITE_CALL_LOG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWRITE_CONTACTS(value: WRITE_CONTACTS): Self = StObject.set(x, "WRITE_CONTACTS", value.asInstanceOf[js.Any])
+      inline def setWRITE_CONTACTS(value: WRITE_CONTACTS): Self = StObject.set(x, "WRITE_CONTACTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWRITE_EXTERNAL_STORAGE(value: WRITE_EXTERNAL_STORAGE): Self = StObject.set(x, "WRITE_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
+      inline def setWRITE_EXTERNAL_STORAGE(value: WRITE_EXTERNAL_STORAGE): Self = StObject.set(x, "WRITE_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,23 +189,18 @@ object anon {
   }
   object ALERT {
     
-    @scala.inline
-    def apply(): ALERT = {
+    inline def apply(): ALERT = {
       val __obj = js.Dynamic.literal(ALERT = "alert", BADGE = "badge", SOUND = "sound")
       __obj.asInstanceOf[ALERT]
     }
     
-    @scala.inline
-    implicit class ALERTMutableBuilder[Self <: ALERT] (val x: Self) extends AnyVal {
+    extension [Self <: ALERT](x: Self) {
       
-      @scala.inline
-      def setALERT(value: alert): Self = StObject.set(x, "ALERT", value.asInstanceOf[js.Any])
+      inline def setALERT(value: alert): Self = StObject.set(x, "ALERT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBADGE(value: badge): Self = StObject.set(x, "BADGE", value.asInstanceOf[js.Any])
+      inline def setBADGE(value: badge): Self = StObject.set(x, "BADGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOUND(value: sound): Self = StObject.set(x, "SOUND", value.asInstanceOf[js.Any])
+      inline def setSOUND(value: sound): Self = StObject.set(x, "SOUND", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,20 +212,16 @@ object anon {
   }
   object ALWAYS {
     
-    @scala.inline
-    def apply(): ALWAYS = {
+    inline def apply(): ALWAYS = {
       val __obj = js.Dynamic.literal(ALWAYS = "always", WHEN_IN_USE = "when_in_use")
       __obj.asInstanceOf[ALWAYS]
     }
     
-    @scala.inline
-    implicit class ALWAYSMutableBuilder[Self <: ALWAYS] (val x: Self) extends AnyVal {
+    extension [Self <: ALWAYS](x: Self) {
       
-      @scala.inline
-      def setALWAYS(value: always): Self = StObject.set(x, "ALWAYS", value.asInstanceOf[js.Any])
+      inline def setALWAYS(value: always): Self = StObject.set(x, "ALWAYS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWHEN_IN_USE(value: when_in_use): Self = StObject.set(x, "WHEN_IN_USE", value.asInstanceOf[js.Any])
+      inline def setWHEN_IN_USE(value: when_in_use): Self = StObject.set(x, "WHEN_IN_USE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,38 +247,28 @@ object anon {
   }
   object ARMv6 {
     
-    @scala.inline
-    def apply(): ARMv6 = {
+    inline def apply(): ARMv6 = {
       val __obj = js.Dynamic.literal(ARMv6 = "ARMv6", ARMv7 = "ARMv7", ARMv8 = "ARMv8", MIPS = "MIPS", MIPS_64 = "MIPS_64", UNKNOWN = "unknown", X86 = "X86", X86_64 = "X86_64")
       __obj.asInstanceOf[ARMv6]
     }
     
-    @scala.inline
-    implicit class ARMv6MutableBuilder[Self <: ARMv6] (val x: Self) extends AnyVal {
+    extension [Self <: ARMv6](x: Self) {
       
-      @scala.inline
-      def setARMv6(value: typings.cordovaPluginsDiagnostic.cordovaPluginsDiagnosticStrings.ARMv6): Self = StObject.set(x, "ARMv6", value.asInstanceOf[js.Any])
+      inline def setARMv6(value: typings.cordovaPluginsDiagnostic.cordovaPluginsDiagnosticStrings.ARMv6): Self = StObject.set(x, "ARMv6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARMv7(value: ARMv7): Self = StObject.set(x, "ARMv7", value.asInstanceOf[js.Any])
+      inline def setARMv7(value: ARMv7): Self = StObject.set(x, "ARMv7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARMv8(value: ARMv8): Self = StObject.set(x, "ARMv8", value.asInstanceOf[js.Any])
+      inline def setARMv8(value: ARMv8): Self = StObject.set(x, "ARMv8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIPS(value: MIPS): Self = StObject.set(x, "MIPS", value.asInstanceOf[js.Any])
+      inline def setMIPS(value: MIPS): Self = StObject.set(x, "MIPS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIPS_64(value: MIPS_64): Self = StObject.set(x, "MIPS_64", value.asInstanceOf[js.Any])
+      inline def setMIPS_64(value: MIPS_64): Self = StObject.set(x, "MIPS_64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNKNOWN(value: unknown): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+      inline def setUNKNOWN(value: unknown): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX86(value: X86): Self = StObject.set(x, "X86", value.asInstanceOf[js.Any])
+      inline def setX86(value: X86): Self = StObject.set(x, "X86", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX86_64(value: X86_64): Self = StObject.set(x, "X86_64", value.asInstanceOf[js.Any])
+      inline def setX86_64(value: X86_64): Self = StObject.set(x, "X86_64", value.asInstanceOf[js.Any])
     }
   }
   
@@ -330,26 +284,20 @@ object anon {
   }
   object BATTERYSAVING {
     
-    @scala.inline
-    def apply(): BATTERYSAVING = {
+    inline def apply(): BATTERYSAVING = {
       val __obj = js.Dynamic.literal(BATTERY_SAVING = "battery_saving", DEVICE_ONLY = "device_only", HIGH_ACCURACY = "high_accuracy", LOCATION_OFF = "location_off")
       __obj.asInstanceOf[BATTERYSAVING]
     }
     
-    @scala.inline
-    implicit class BATTERYSAVINGMutableBuilder[Self <: BATTERYSAVING] (val x: Self) extends AnyVal {
+    extension [Self <: BATTERYSAVING](x: Self) {
       
-      @scala.inline
-      def setBATTERY_SAVING(value: battery_saving): Self = StObject.set(x, "BATTERY_SAVING", value.asInstanceOf[js.Any])
+      inline def setBATTERY_SAVING(value: battery_saving): Self = StObject.set(x, "BATTERY_SAVING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEVICE_ONLY(value: device_only): Self = StObject.set(x, "DEVICE_ONLY", value.asInstanceOf[js.Any])
+      inline def setDEVICE_ONLY(value: device_only): Self = StObject.set(x, "DEVICE_ONLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHIGH_ACCURACY(value: high_accuracy): Self = StObject.set(x, "HIGH_ACCURACY", value.asInstanceOf[js.Any])
+      inline def setHIGH_ACCURACY(value: high_accuracy): Self = StObject.set(x, "HIGH_ACCURACY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATION_OFF(value: location_off): Self = StObject.set(x, "LOCATION_OFF", value.asInstanceOf[js.Any])
+      inline def setLOCATION_OFF(value: location_off): Self = StObject.set(x, "LOCATION_OFF", value.asInstanceOf[js.Any])
     }
   }
   
@@ -383,8 +331,7 @@ object anon {
   }
   object CALENDAR {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CALENDAR: js.Tuple2[READ_CALENDAR, WRITE_CALENDAR],
       CAMERA: js.Array[CAMERA],
       CONTACTS: js.Tuple3[READ_CONTACTS, WRITE_CONTACTS, GET_ACCOUNTS],
@@ -407,32 +354,23 @@ object anon {
       __obj.asInstanceOf[CALENDAR]
     }
     
-    @scala.inline
-    implicit class CALENDARMutableBuilder[Self <: CALENDAR] (val x: Self) extends AnyVal {
+    extension [Self <: CALENDAR](x: Self) {
       
-      @scala.inline
-      def setCALENDAR(value: js.Tuple2[READ_CALENDAR, WRITE_CALENDAR]): Self = StObject.set(x, "CALENDAR", value.asInstanceOf[js.Any])
+      inline def setCALENDAR(value: js.Tuple2[READ_CALENDAR, WRITE_CALENDAR]): Self = StObject.set(x, "CALENDAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAMERA(value: js.Array[CAMERA]): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
+      inline def setCAMERA(value: js.Array[CAMERA]): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAMERAVarargs(value: CAMERA*): Self = StObject.set(x, "CAMERA", js.Array(value :_*))
+      inline def setCAMERAVarargs(value: CAMERA*): Self = StObject.set(x, "CAMERA", js.Array(value :_*))
       
-      @scala.inline
-      def setCONTACTS(value: js.Tuple3[READ_CONTACTS, WRITE_CONTACTS, GET_ACCOUNTS]): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
+      inline def setCONTACTS(value: js.Tuple3[READ_CONTACTS, WRITE_CONTACTS, GET_ACCOUNTS]): Self = StObject.set(x, "CONTACTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOCATION(value: js.Tuple2[ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION]): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
+      inline def setLOCATION(value: js.Tuple2[ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION]): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMICROPHONE(value: js.Array[RECORD_AUDIO]): Self = StObject.set(x, "MICROPHONE", value.asInstanceOf[js.Any])
+      inline def setMICROPHONE(value: js.Array[RECORD_AUDIO]): Self = StObject.set(x, "MICROPHONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMICROPHONEVarargs(value: RECORD_AUDIO*): Self = StObject.set(x, "MICROPHONE", js.Array(value :_*))
+      inline def setMICROPHONEVarargs(value: RECORD_AUDIO*): Self = StObject.set(x, "MICROPHONE", js.Array(value :_*))
       
-      @scala.inline
-      def setPHONE(
+      inline def setPHONE(
         value: js.Tuple7[
               READ_PHONE_STATE, 
               CALL_PHONE, 
@@ -444,17 +382,13 @@ object anon {
             ]
       ): Self = StObject.set(x, "PHONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSENSORS(value: js.Array[BODY_SENSORS]): Self = StObject.set(x, "SENSORS", value.asInstanceOf[js.Any])
+      inline def setSENSORS(value: js.Array[BODY_SENSORS]): Self = StObject.set(x, "SENSORS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSENSORSVarargs(value: BODY_SENSORS*): Self = StObject.set(x, "SENSORS", js.Array(value :_*))
+      inline def setSENSORSVarargs(value: BODY_SENSORS*): Self = StObject.set(x, "SENSORS", js.Array(value :_*))
       
-      @scala.inline
-      def setSMS(value: js.Tuple5[SEND_SMS, RECEIVE_SMS, READ_SMS, RECEIVE_WAP_PUSH, RECEIVE_MMS]): Self = StObject.set(x, "SMS", value.asInstanceOf[js.Any])
+      inline def setSMS(value: js.Tuple5[SEND_SMS, RECEIVE_SMS, READ_SMS, RECEIVE_WAP_PUSH, RECEIVE_MMS]): Self = StObject.set(x, "SMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTORAGE(value: js.Tuple2[READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE]): Self = StObject.set(x, "STORAGE", value.asInstanceOf[js.Any])
+      inline def setSTORAGE(value: js.Tuple2[READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE]): Self = StObject.set(x, "STORAGE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -477,8 +411,7 @@ object anon {
   }
   object DENIEDALWAYS {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DENIED_ALWAYS: denied_always_ | DENIED_ALWAYS,
       GRANTED: authorized | typings.cordovaPluginsDiagnostic.cordovaPluginsDiagnosticStrings.GRANTED,
       NOT_REQUESTED: not_determined | NOT_REQUESTED
@@ -487,26 +420,19 @@ object anon {
       __obj.asInstanceOf[DENIEDALWAYS]
     }
     
-    @scala.inline
-    implicit class DENIEDALWAYSMutableBuilder[Self <: DENIEDALWAYS] (val x: Self) extends AnyVal {
+    extension [Self <: DENIEDALWAYS](x: Self) {
       
-      @scala.inline
-      def setDENIED_ALWAYS(value: denied_always_ | DENIED_ALWAYS): Self = StObject.set(x, "DENIED_ALWAYS", value.asInstanceOf[js.Any])
+      inline def setDENIED_ALWAYS(value: denied_always_ | DENIED_ALWAYS): Self = StObject.set(x, "DENIED_ALWAYS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDENIED_ONCE(value: DENIED_ONCE): Self = StObject.set(x, "DENIED_ONCE", value.asInstanceOf[js.Any])
+      inline def setDENIED_ONCE(value: DENIED_ONCE): Self = StObject.set(x, "DENIED_ONCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGRANTED(value: authorized | typings.cordovaPluginsDiagnostic.cordovaPluginsDiagnosticStrings.GRANTED): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
+      inline def setGRANTED(value: authorized | typings.cordovaPluginsDiagnostic.cordovaPluginsDiagnosticStrings.GRANTED): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGRANTED_WHEN_IN_USE(value: authorized_when_in_use): Self = StObject.set(x, "GRANTED_WHEN_IN_USE", value.asInstanceOf[js.Any])
+      inline def setGRANTED_WHEN_IN_USE(value: authorized_when_in_use): Self = StObject.set(x, "GRANTED_WHEN_IN_USE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_REQUESTED(value: not_determined | NOT_REQUESTED): Self = StObject.set(x, "NOT_REQUESTED", value.asInstanceOf[js.Any])
+      inline def setNOT_REQUESTED(value: not_determined | NOT_REQUESTED): Self = StObject.set(x, "NOT_REQUESTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESTRICTED(value: restricted): Self = StObject.set(x, "RESTRICTED", value.asInstanceOf[js.Any])
+      inline def setRESTRICTED(value: restricted): Self = StObject.set(x, "RESTRICTED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -518,20 +444,16 @@ object anon {
   }
   object FULL {
     
-    @scala.inline
-    def apply(): FULL = {
+    inline def apply(): FULL = {
       val __obj = js.Dynamic.literal(FULL = "full", REDUCED = "reduced")
       __obj.asInstanceOf[FULL]
     }
     
-    @scala.inline
-    implicit class FULLMutableBuilder[Self <: FULL] (val x: Self) extends AnyVal {
+    extension [Self <: FULL](x: Self) {
       
-      @scala.inline
-      def setFULL(value: full): Self = StObject.set(x, "FULL", value.asInstanceOf[js.Any])
+      inline def setFULL(value: full): Self = StObject.set(x, "FULL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREDUCED(value: reduced): Self = StObject.set(x, "REDUCED", value.asInstanceOf[js.Any])
+      inline def setREDUCED(value: reduced): Self = StObject.set(x, "REDUCED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -553,35 +475,26 @@ object anon {
   }
   object GRANTED {
     
-    @scala.inline
-    def apply(): GRANTED = {
+    inline def apply(): GRANTED = {
       val __obj = js.Dynamic.literal(DENIED_ALWAYS = "denied_always", GRANTED = "authorized", NOT_AVAILABLE = "not_available", NOT_DETERMINED = "not_determined", NOT_REQUESTED = "not_requested", RESTRICTED = "restricted", UNKNOWN = "unknown")
       __obj.asInstanceOf[GRANTED]
     }
     
-    @scala.inline
-    implicit class GRANTEDMutableBuilder[Self <: GRANTED] (val x: Self) extends AnyVal {
+    extension [Self <: GRANTED](x: Self) {
       
-      @scala.inline
-      def setDENIED_ALWAYS(value: denied_always_): Self = StObject.set(x, "DENIED_ALWAYS", value.asInstanceOf[js.Any])
+      inline def setDENIED_ALWAYS(value: denied_always_): Self = StObject.set(x, "DENIED_ALWAYS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGRANTED(value: authorized): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
+      inline def setGRANTED(value: authorized): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_AVAILABLE(value: not_available): Self = StObject.set(x, "NOT_AVAILABLE", value.asInstanceOf[js.Any])
+      inline def setNOT_AVAILABLE(value: not_available): Self = StObject.set(x, "NOT_AVAILABLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_DETERMINED(value: not_determined): Self = StObject.set(x, "NOT_DETERMINED", value.asInstanceOf[js.Any])
+      inline def setNOT_DETERMINED(value: not_determined): Self = StObject.set(x, "NOT_DETERMINED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOT_REQUESTED(value: not_requested_): Self = StObject.set(x, "NOT_REQUESTED", value.asInstanceOf[js.Any])
+      inline def setNOT_REQUESTED(value: not_requested_): Self = StObject.set(x, "NOT_REQUESTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESTRICTED(value: restricted): Self = StObject.set(x, "RESTRICTED", value.asInstanceOf[js.Any])
+      inline def setRESTRICTED(value: restricted): Self = StObject.set(x, "RESTRICTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNKNOWN(value: unknown): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+      inline def setUNKNOWN(value: unknown): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -608,38 +521,28 @@ object anon {
   }
   object POWEREDOFF {
     
-    @scala.inline
-    def apply(): POWEREDOFF = {
+    inline def apply(): POWEREDOFF = {
       val __obj = js.Dynamic.literal(POWERED_OFF = "powered_off", POWERED_ON = "powered_on", POWERING_OFF = "powering_off", POWERING_ON = "powering_on", RESETTING = "resetting", UNAUTHORIZED = "unauthorized", UNKNOWN = "unknown", UNSUPPORTED = "unsupported")
       __obj.asInstanceOf[POWEREDOFF]
     }
     
-    @scala.inline
-    implicit class POWEREDOFFMutableBuilder[Self <: POWEREDOFF] (val x: Self) extends AnyVal {
+    extension [Self <: POWEREDOFF](x: Self) {
       
-      @scala.inline
-      def setPOWERED_OFF(value: powered_off): Self = StObject.set(x, "POWERED_OFF", value.asInstanceOf[js.Any])
+      inline def setPOWERED_OFF(value: powered_off): Self = StObject.set(x, "POWERED_OFF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOWERED_ON(value: powered_on): Self = StObject.set(x, "POWERED_ON", value.asInstanceOf[js.Any])
+      inline def setPOWERED_ON(value: powered_on): Self = StObject.set(x, "POWERED_ON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOWERING_OFF(value: powering_off): Self = StObject.set(x, "POWERING_OFF", value.asInstanceOf[js.Any])
+      inline def setPOWERING_OFF(value: powering_off): Self = StObject.set(x, "POWERING_OFF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOWERING_ON(value: powering_on): Self = StObject.set(x, "POWERING_ON", value.asInstanceOf[js.Any])
+      inline def setPOWERING_ON(value: powering_on): Self = StObject.set(x, "POWERING_ON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESETTING(value: resetting): Self = StObject.set(x, "RESETTING", value.asInstanceOf[js.Any])
+      inline def setRESETTING(value: resetting): Self = StObject.set(x, "RESETTING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNAUTHORIZED(value: unauthorized): Self = StObject.set(x, "UNAUTHORIZED", value.asInstanceOf[js.Any])
+      inline def setUNAUTHORIZED(value: unauthorized): Self = StObject.set(x, "UNAUTHORIZED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNKNOWN(value: unknown): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+      inline def setUNKNOWN(value: unknown): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNSUPPORTED(value: unsupported): Self = StObject.set(x, "UNSUPPORTED", value.asInstanceOf[js.Any])
+      inline def setUNSUPPORTED(value: unsupported): Self = StObject.set(x, "UNSUPPORTED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -657,29 +560,22 @@ object anon {
   }
   object POWEREDON {
     
-    @scala.inline
-    def apply(): POWEREDON = {
+    inline def apply(): POWEREDON = {
       val __obj = js.Dynamic.literal(POWERED_OFF = "powered_off", POWERED_ON = "powered_on", POWERING_OFF = "powering_off", POWERING_ON = "powering_on", UNKNOWN = "unknown")
       __obj.asInstanceOf[POWEREDON]
     }
     
-    @scala.inline
-    implicit class POWEREDONMutableBuilder[Self <: POWEREDON] (val x: Self) extends AnyVal {
+    extension [Self <: POWEREDON](x: Self) {
       
-      @scala.inline
-      def setPOWERED_OFF(value: powered_off): Self = StObject.set(x, "POWERED_OFF", value.asInstanceOf[js.Any])
+      inline def setPOWERED_OFF(value: powered_off): Self = StObject.set(x, "POWERED_OFF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOWERED_ON(value: powered_on): Self = StObject.set(x, "POWERED_ON", value.asInstanceOf[js.Any])
+      inline def setPOWERED_ON(value: powered_on): Self = StObject.set(x, "POWERED_ON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOWERING_OFF(value: powering_off): Self = StObject.set(x, "POWERING_OFF", value.asInstanceOf[js.Any])
+      inline def setPOWERING_OFF(value: powering_off): Self = StObject.set(x, "POWERING_OFF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOWERING_ON(value: powering_on): Self = StObject.set(x, "POWERING_ON", value.asInstanceOf[js.Any])
+      inline def setPOWERING_ON(value: powering_on): Self = StObject.set(x, "POWERING_ON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNKNOWN(value: unknown): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+      inline def setUNKNOWN(value: unknown): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
     }
   }
 }

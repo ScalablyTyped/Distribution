@@ -10,15 +10,11 @@ object grant {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def code(issue: IssueGrantCodeFunction): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
-  @scala.inline
-  def code(options: Options, issue: IssueGrantCodeFunction): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("code")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
+  inline def code(issue: IssueGrantCodeFunction): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  inline def code(options: Options, issue: IssueGrantCodeFunction): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("code")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   
-  @scala.inline
-  def token(issue: IssueGrantTokenFunction): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
-  @scala.inline
-  def token(options: Options, issue: IssueGrantTokenFunction): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("token")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
+  inline def token(issue: IssueGrantTokenFunction): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  inline def token(options: Options, issue: IssueGrantTokenFunction): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("token")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   
   trait Options extends StObject {
     
@@ -31,20 +27,16 @@ object grant {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setScopeSeparator(value: String): Self = StObject.set(x, "scopeSeparator", value.asInstanceOf[js.Any])
+      inline def setScopeSeparator(value: String): Self = StObject.set(x, "scopeSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeSeparatorUndefined: Self = StObject.set(x, "scopeSeparator", js.undefined)
+      inline def setScopeSeparatorUndefined: Self = StObject.set(x, "scopeSeparator", js.undefined)
     }
   }
 }

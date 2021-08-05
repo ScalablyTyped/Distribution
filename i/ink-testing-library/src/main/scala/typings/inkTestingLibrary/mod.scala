@@ -11,11 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
+  inline def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
   
-  @scala.inline
-  def render(
+  inline def render(
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any
   ): RenderResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(tree.asInstanceOf[js.Any]).asInstanceOf[RenderResponse]
   
@@ -35,8 +33,7 @@ object mod {
   }
   object RenderResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       frames: js.Array[String],
       lastFrame: () => String,
       rerender: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any => Unit,
@@ -47,28 +44,21 @@ object mod {
       __obj.asInstanceOf[RenderResponse]
     }
     
-    @scala.inline
-    implicit class RenderResponseMutableBuilder[Self <: RenderResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RenderResponse](x: Self) {
       
-      @scala.inline
-      def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: String*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: String*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setLastFrame(value: () => String): Self = StObject.set(x, "lastFrame", js.Any.fromFunction0(value))
+      inline def setLastFrame(value: () => String): Self = StObject.set(x, "lastFrame", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRerender(
+      inline def setRerender(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkElement */ js.Any => Unit
       ): Self = StObject.set(x, "rerender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStdin(value: Write): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: Write): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmount(value: () => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction0(value))
+      inline def setUnmount(value: () => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction0(value))
     }
   }
 }

@@ -22,19 +22,15 @@ trait RefreshableLayer extends StObject {
 }
 object RefreshableLayer {
   
-  @scala.inline
-  def apply(refresh: () => Unit, refreshInterval: Double): RefreshableLayer = {
+  inline def apply(refresh: () => Unit, refreshInterval: Double): RefreshableLayer = {
     val __obj = js.Dynamic.literal(refresh = js.Any.fromFunction0(refresh), refreshInterval = refreshInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshableLayer]
   }
   
-  @scala.inline
-  implicit class RefreshableLayerMutableBuilder[Self <: RefreshableLayer] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshableLayer](x: Self) {
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+    inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
   }
 }

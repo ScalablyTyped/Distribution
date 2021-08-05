@@ -16,17 +16,14 @@ object typesTipsDivergenceExceededExceptionMod {
   }
   object TipsDivergenceExceededException {
     
-    @scala.inline
-    def apply(): TipsDivergenceExceededException = {
+    inline def apply(): TipsDivergenceExceededException = {
       val __obj = js.Dynamic.literal(name = "TipsDivergenceExceededException")
       __obj.asInstanceOf[TipsDivergenceExceededException]
     }
     
-    @scala.inline
-    implicit class TipsDivergenceExceededExceptionMutableBuilder[Self <: TipsDivergenceExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: TipsDivergenceExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TipsDivergenceExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

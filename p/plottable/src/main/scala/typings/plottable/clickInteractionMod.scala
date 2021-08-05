@@ -14,13 +14,13 @@ object clickInteractionMod {
   @js.native
   class Click () extends Interaction {
     
-    var _clickedDown: js.Any = js.native
+    /* private */ var _clickedDown: js.Any = js.native
     
-    var _clickedPoint: js.Any = js.native
+    /* private */ var _clickedPoint: js.Any = js.native
     
-    var _dblClickCallback: js.Any = js.native
+    /* private */ var _dblClickCallback: js.Any = js.native
     
-    var _doubleClicking: js.Any = js.native
+    /* private */ var _doubleClicking: js.Any = js.native
     
     /* private */ def _handleClickDown(p: js.Any, event: js.Any): js.Any = js.native
     
@@ -28,27 +28,27 @@ object clickInteractionMod {
     
     /* private */ def _handleDblClick(p: js.Any, event: js.Any): js.Any = js.native
     
-    var _mouseDispatcher: js.Any = js.native
+    /* private */ var _mouseDispatcher: js.Any = js.native
     
     /**
       * Note: we bind to mousedown, mouseup, touchstart and touchend because browsers
       * have a 300ms delay between touchstart and click to allow for scrolling cancelling etc.
       */
-    var _mouseDownCallback: js.Any = js.native
+    /* private */ var _mouseDownCallback: js.Any = js.native
     
-    var _mouseUpCallback: js.Any = js.native
+    /* private */ var _mouseUpCallback: js.Any = js.native
     
-    var _onClickCallbacks: js.Any = js.native
+    /* private */ var _onClickCallbacks: js.Any = js.native
     
-    var _onDoubleClickCallbacks: js.Any = js.native
+    /* private */ var _onDoubleClickCallbacks: js.Any = js.native
     
-    var _touchCancelCallback: js.Any = js.native
+    /* private */ var _touchCancelCallback: js.Any = js.native
     
-    var _touchDispatcher: js.Any = js.native
+    /* private */ var _touchDispatcher: js.Any = js.native
     
-    var _touchEndCallback: js.Any = js.native
+    /* private */ var _touchEndCallback: js.Any = js.native
     
-    var _touchStartCallback: js.Any = js.native
+    /* private */ var _touchStartCallback: js.Any = js.native
     
     /**
       * Removes a callback that would be called when the Component is clicked.
@@ -89,8 +89,7 @@ object clickInteractionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointsEqual")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointsEqual")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   type ClickCallback = js.Function2[/* point */ Point, /* event */ MouseEvent | TouchEvent, Unit]

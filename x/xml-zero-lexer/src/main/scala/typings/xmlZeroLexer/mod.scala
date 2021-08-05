@@ -46,10 +46,8 @@ object mod {
   
   object default {
     
-    @scala.inline
-    def apply(xml: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
-    @scala.inline
-    def apply(xml: String, options: Options): js.Array[Token] = (^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
+    inline def apply(xml: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    inline def apply(xml: String, options: Options): js.Array[Token] = (^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
     
     @JSImport("xml-zero-lexer", JSImport.Default)
     @js.native
@@ -86,14 +84,12 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.ATTRIBUTE_NODE")
     @js.native
     def ATTRIBUTE_NODE: `2` = js.native
-    @scala.inline
-    def ATTRIBUTE_NODE_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NODE")(x.asInstanceOf[js.Any])
+    inline def ATTRIBUTE_NODE_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NODE")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-zero-lexer", "NodeTypes.CDATA_SECTION_NODE")
     @js.native
     def CDATA_SECTION_NODE: `4` = js.native
-    @scala.inline
-    def CDATA_SECTION_NODE_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CDATA_SECTION_NODE")(x.asInstanceOf[js.Any])
+    inline def CDATA_SECTION_NODE_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CDATA_SECTION_NODE")(x.asInstanceOf[js.Any])
     
     /**
       * unofficial
@@ -101,14 +97,12 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.CLOSE_ELEMENT")
     @js.native
     def CLOSE_ELEMENT: `13` = js.native
-    @scala.inline
-    def CLOSE_ELEMENT_=(x: `13`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_ELEMENT")(x.asInstanceOf[js.Any])
+    inline def CLOSE_ELEMENT_=(x: `13`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_ELEMENT")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-zero-lexer", "NodeTypes.COMMENT_NODE")
     @js.native
     def COMMENT_NODE: `8` = js.native
-    @scala.inline
-    def COMMENT_NODE_=(x: `8`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMENT_NODE")(x.asInstanceOf[js.Any])
+    inline def COMMENT_NODE_=(x: `8`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMENT_NODE")(x.asInstanceOf[js.Any])
     
     /**
       * Don't support this either
@@ -116,8 +110,7 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.DOCUMENT_FRAGMENT_NODE")
     @js.native
     def DOCUMENT_FRAGMENT_NODE: `11` = js.native
-    @scala.inline
-    def DOCUMENT_FRAGMENT_NODE_=(x: `11`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCUMENT_FRAGMENT_NODE")(x.asInstanceOf[js.Any])
+    inline def DOCUMENT_FRAGMENT_NODE_=(x: `11`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCUMENT_FRAGMENT_NODE")(x.asInstanceOf[js.Any])
     
     /**
       * Not used. Root elements are just elements.
@@ -125,20 +118,17 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.DOCUMENT_NODE")
     @js.native
     def DOCUMENT_NODE: `9` = js.native
-    @scala.inline
-    def DOCUMENT_NODE_=(x: `9`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCUMENT_NODE")(x.asInstanceOf[js.Any])
+    inline def DOCUMENT_NODE_=(x: `9`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCUMENT_NODE")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-zero-lexer", "NodeTypes.DOCUMENT_TYPE_NODE")
     @js.native
     def DOCUMENT_TYPE_NODE: `10` = js.native
-    @scala.inline
-    def DOCUMENT_TYPE_NODE_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCUMENT_TYPE_NODE")(x.asInstanceOf[js.Any])
+    inline def DOCUMENT_TYPE_NODE_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCUMENT_TYPE_NODE")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-zero-lexer", "NodeTypes.ELEMENT_NODE")
     @js.native
     def ELEMENT_NODE: `1` = js.native
-    @scala.inline
-    def ELEMENT_NODE_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELEMENT_NODE")(x.asInstanceOf[js.Any])
+    inline def ELEMENT_NODE_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELEMENT_NODE")(x.asInstanceOf[js.Any])
     
     /**
       * Only supported as <!ENTITY ...> outside of <!DOCTYPE ...>
@@ -147,8 +137,7 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.ENTITY_NODE")
     @js.native
     def ENTITY_NODE: `6` = js.native
-    @scala.inline
-    def ENTITY_NODE_=(x: `6`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTITY_NODE")(x.asInstanceOf[js.Any])
+    inline def ENTITY_NODE_=(x: `6`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTITY_NODE")(x.asInstanceOf[js.Any])
     
     /**
       * Not used
@@ -171,8 +160,7 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.ENTITY_REFERENCE_NODE")
     @js.native
     def ENTITY_REFERENCE_NODE: `5` = js.native
-    @scala.inline
-    def ENTITY_REFERENCE_NODE_=(x: `5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTITY_REFERENCE_NODE")(x.asInstanceOf[js.Any])
+    inline def ENTITY_REFERENCE_NODE_=(x: `5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTITY_REFERENCE_NODE")(x.asInstanceOf[js.Any])
     
     /**
       * unofficial
@@ -180,8 +168,7 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.JSX")
     @js.native
     def JSX: `15` = js.native
-    @scala.inline
-    def JSX_=(x: `15`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSX")(x.asInstanceOf[js.Any])
+    inline def JSX_=(x: `15`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSX")(x.asInstanceOf[js.Any])
     
     /**
       * unofficial
@@ -189,20 +176,17 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.JSX_ATTRIBUTE")
     @js.native
     def JSX_ATTRIBUTE: `14` = js.native
-    @scala.inline
-    def JSX_ATTRIBUTE_=(x: `14`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSX_ATTRIBUTE")(x.asInstanceOf[js.Any])
+    inline def JSX_ATTRIBUTE_=(x: `14`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSX_ATTRIBUTE")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-zero-lexer", "NodeTypes.NOTATION_NODE")
     @js.native
     def NOTATION_NODE: `12` = js.native
-    @scala.inline
-    def NOTATION_NODE_=(x: `12`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTATION_NODE")(x.asInstanceOf[js.Any])
+    inline def NOTATION_NODE_=(x: `12`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTATION_NODE")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-zero-lexer", "NodeTypes.PROCESSING_INSTRUCTION_NODE")
     @js.native
     def PROCESSING_INSTRUCTION_NODE: `7` = js.native
-    @scala.inline
-    def PROCESSING_INSTRUCTION_NODE_=(x: `7`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESSING_INSTRUCTION_NODE")(x.asInstanceOf[js.Any])
+    inline def PROCESSING_INSTRUCTION_NODE_=(x: `7`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESSING_INSTRUCTION_NODE")(x.asInstanceOf[js.Any])
     
     /**
       * Note that these can include entities which should be resolved before display
@@ -210,8 +194,7 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.TEXT_NODE")
     @js.native
     def TEXT_NODE: `3` = js.native
-    @scala.inline
-    def TEXT_NODE_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_NODE")(x.asInstanceOf[js.Any])
+    inline def TEXT_NODE_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_NODE")(x.asInstanceOf[js.Any])
     
     /**
       * unofficial
@@ -226,38 +209,27 @@ object mod {
     @JSImport("xml-zero-lexer", "NodeTypes.XML_DECLARATION")
     @js.native
     def XML_DECLARATION: `0` = js.native
-    @scala.inline
-    def XML_DECLARATION_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XML_DECLARATION")(x.asInstanceOf[js.Any])
+    inline def XML_DECLARATION_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XML_DECLARATION")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def onAttribute(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onAttribute")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  inline def onAttribute(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onAttribute")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @scala.inline
-  def onBlackhole(xml: String, i: Double, inElement: Boolean, untilToken: Token): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onBlackhole")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any], untilToken.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  inline def onBlackhole(xml: String, i: Double, inElement: Boolean, untilToken: Token): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onBlackhole")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any], untilToken.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @scala.inline
-  def onClose(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onClose")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  inline def onClose(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onClose")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @scala.inline
-  def onElement(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onElement")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  inline def onElement(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onElement")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @scala.inline
-  def onEndTag(xml: String, i: Double): js.Tuple2[Double, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("onEndTag")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Boolean]]
+  inline def onEndTag(xml: String, i: Double): js.Tuple2[Double, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("onEndTag")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Boolean]]
   
-  @scala.inline
-  def onExclamation(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onExclamation")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  inline def onExclamation(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onExclamation")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @scala.inline
-  def onQuestionElement(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onQuestionElement")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  inline def onQuestionElement(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onQuestionElement")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @scala.inline
-  def onShorthandCDATA(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onShorthandCDATA")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  inline def onShorthandCDATA(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onShorthandCDATA")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @scala.inline
-  def onText(xml: String, i: Double): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onText")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
-  @scala.inline
-  def onText(xml: String, i: Double, jsx: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onText")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], jsx.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  inline def onText(xml: String, i: Double): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onText")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  inline def onText(xml: String, i: Double, jsx: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onText")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], jsx.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
   object Lexx {
     
@@ -280,35 +252,26 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setBlackholes(value: js.Array[String]): Self = StObject.set(x, "blackholes", value.asInstanceOf[js.Any])
+        inline def setBlackholes(value: js.Array[String]): Self = StObject.set(x, "blackholes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlackholesUndefined: Self = StObject.set(x, "blackholes", js.undefined)
+        inline def setBlackholesUndefined: Self = StObject.set(x, "blackholes", js.undefined)
         
-        @scala.inline
-        def setBlackholesVarargs(value: String*): Self = StObject.set(x, "blackholes", js.Array(value :_*))
+        inline def setBlackholesVarargs(value: String*): Self = StObject.set(x, "blackholes", js.Array(value :_*))
         
-        @scala.inline
-        def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+        inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+        inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
         
-        @scala.inline
-        def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
+        inline def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
+        inline def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
       }
     }
     

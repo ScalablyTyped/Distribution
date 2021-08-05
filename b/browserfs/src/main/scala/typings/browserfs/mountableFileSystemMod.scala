@@ -34,8 +34,7 @@ object mountableFileSystemMod {
     /**
       * Creates a MountableFileSystem instance with the given options.
       */
-    @scala.inline
-    def Create(opts: MountableFileSystemOptions, cb: BFSCallback[MountableFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: MountableFileSystemOptions, cb: BFSCallback[MountableFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/MountableFileSystem", "default.Name")
     @js.native
@@ -45,8 +44,7 @@ object mountableFileSystemMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -97,14 +95,14 @@ object mountableFileSystemMod {
     /* InferMemberOverrides */
     override def mkdirSync(p: String, mode: Double): Unit = js.native
     
-    var mntMap: js.Any = js.native
+    /* private */ var mntMap: js.Any = js.native
     
     /**
       * Mounts the file system at the given mount point.
       */
     def mount(mountPoint: String, fs: FileSystem): Unit = js.native
     
-    var mountList: js.Any = js.native
+    /* private */ var mountList: js.Any = js.native
     
     /* InferMemberOverrides */
     override def open(p: String, flag: FileFlag, mode: Double, cb: BFSCallback[File]): Unit = js.native
@@ -149,7 +147,7 @@ object mountableFileSystemMod {
     /* InferMemberOverrides */
     override def rmdirSync(p: String): Unit = js.native
     
-    var rootFs: js.Any = js.native
+    /* private */ var rootFs: js.Any = js.native
     
     /**
       * Fixes up error messages so they mention the mounted file location relative

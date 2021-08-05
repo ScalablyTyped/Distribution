@@ -14,28 +14,21 @@ trait ListTemplatesResponse extends StObject {
 }
 object ListTemplatesResponse {
   
-  @scala.inline
-  def apply(): ListTemplatesResponse = {
+  inline def apply(): ListTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class ListTemplatesResponseMutableBuilder[Self <: ListTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: js.Array[CustomTemplate]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Array[CustomTemplate]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTemplateVarargs(value: CustomTemplate*): Self = StObject.set(x, "template", js.Array(value :_*))
+    inline def setTemplateVarargs(value: CustomTemplate*): Self = StObject.set(x, "template", js.Array(value :_*))
   }
 }

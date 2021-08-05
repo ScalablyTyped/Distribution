@@ -19,6 +19,5 @@ class DataView protected ()
 }
 object DataView {
   
-  @scala.inline
-  def apply: DataViewConstructor = js.Dynamic.global.selectDynamic("DataView").asInstanceOf[DataViewConstructor]
+  inline def apply: DataViewConstructor = js.Dynamic.global.selectDynamic("DataView").asInstanceOf[DataViewConstructor]
 }

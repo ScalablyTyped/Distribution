@@ -13,16 +13,13 @@ trait SavingMessageDescriptorText
 }
 object SavingMessageDescriptorText {
   
-  @scala.inline
-  def apply(text: String): SavingMessageDescriptorText = {
+  inline def apply(text: String): SavingMessageDescriptorText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingMessageDescriptorText]
   }
   
-  @scala.inline
-  implicit class SavingMessageDescriptorTextMutableBuilder[Self <: SavingMessageDescriptorText] (val x: Self) extends AnyVal {
+  extension [Self <: SavingMessageDescriptorText](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait vbextVBAMode extends StObject
 object vbextVBAMode {
   
-  @scala.inline
-  def vbext_vm_Break: `1` = 1.asInstanceOf[`1`]
+  inline def vbext_vm_Break: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def vbext_vm_Design: `2` = 2.asInstanceOf[`2`]
+  inline def vbext_vm_Design: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def vbext_vm_Run: `0` = 0.asInstanceOf[`0`]
+  inline def vbext_vm_Run: `0` = 0.asInstanceOf[`0`]
 }

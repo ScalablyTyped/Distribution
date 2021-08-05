@@ -33,25 +33,19 @@ trait ASPxClientToolTipFreePosition
 }
 object ASPxClientToolTipFreePosition {
   
-  @scala.inline
-  def apply(dockPosition: String, offsetX: Double, offsetY: Double, paneID: Double): ASPxClientToolTipFreePosition = {
+  inline def apply(dockPosition: String, offsetX: Double, offsetY: Double, paneID: Double): ASPxClientToolTipFreePosition = {
     val __obj = js.Dynamic.literal(dockPosition = dockPosition.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], paneID = paneID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientToolTipFreePosition]
   }
   
-  @scala.inline
-  implicit class ASPxClientToolTipFreePositionMutableBuilder[Self <: ASPxClientToolTipFreePosition] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientToolTipFreePosition](x: Self) {
     
-    @scala.inline
-    def setDockPosition(value: String): Self = StObject.set(x, "dockPosition", value.asInstanceOf[js.Any])
+    inline def setDockPosition(value: String): Self = StObject.set(x, "dockPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneID(value: Double): Self = StObject.set(x, "paneID", value.asInstanceOf[js.Any])
+    inline def setPaneID(value: Double): Self = StObject.set(x, "paneID", value.asInstanceOf[js.Any])
   }
 }

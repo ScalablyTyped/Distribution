@@ -18,28 +18,21 @@ trait ListSharedProjectsOutput extends StObject {
 }
 object ListSharedProjectsOutput {
   
-  @scala.inline
-  def apply(): ListSharedProjectsOutput = {
+  inline def apply(): ListSharedProjectsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSharedProjectsOutput]
   }
   
-  @scala.inline
-  implicit class ListSharedProjectsOutputMutableBuilder[Self <: ListSharedProjectsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListSharedProjectsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setProjects(value: ProjectArns): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: ProjectArns): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+    inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
-    @scala.inline
-    def setProjectsVarargs(value: NonEmptyString*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: NonEmptyString*): Self = StObject.set(x, "projects", js.Array(value :_*))
   }
 }

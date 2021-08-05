@@ -18,19 +18,15 @@ trait DissociateEntityFromThingRequest extends StObject {
 }
 object DissociateEntityFromThingRequest {
   
-  @scala.inline
-  def apply(entityType: EntityType, thingName: ThingName): DissociateEntityFromThingRequest = {
+  inline def apply(entityType: EntityType, thingName: ThingName): DissociateEntityFromThingRequest = {
     val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DissociateEntityFromThingRequest]
   }
   
-  @scala.inline
-  implicit class DissociateEntityFromThingRequestMutableBuilder[Self <: DissociateEntityFromThingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DissociateEntityFromThingRequest](x: Self) {
     
-    @scala.inline
-    def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

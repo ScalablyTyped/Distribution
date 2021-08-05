@@ -14,8 +14,7 @@ trait SVGSVGElementEventMap
 }
 object SVGSVGElementEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SVGUnload: Event,
     SVGZoom: SVGZoomEvent,
     abort: UIEvent,
@@ -115,13 +114,10 @@ object SVGSVGElementEventMap {
     __obj.asInstanceOf[SVGSVGElementEventMap]
   }
   
-  @scala.inline
-  implicit class SVGSVGElementEventMapMutableBuilder[Self <: SVGSVGElementEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: SVGSVGElementEventMap](x: Self) {
     
-    @scala.inline
-    def setSVGUnload(value: Event): Self = StObject.set(x, "SVGUnload", value.asInstanceOf[js.Any])
+    inline def setSVGUnload(value: Event): Self = StObject.set(x, "SVGUnload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVGZoom(value: SVGZoomEvent): Self = StObject.set(x, "SVGZoom", value.asInstanceOf[js.Any])
+    inline def setSVGZoom(value: SVGZoomEvent): Self = StObject.set(x, "SVGZoom", value.asInstanceOf[js.Any])
   }
 }

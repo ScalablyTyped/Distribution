@@ -23,22 +23,17 @@ trait StyleDeclarationEdit extends StObject {
 }
 object StyleDeclarationEdit {
   
-  @scala.inline
-  def apply(range: SourceRange, styleSheetId: StyleSheetId, text: String): StyleDeclarationEdit = {
+  inline def apply(range: SourceRange, styleSheetId: StyleSheetId, text: String): StyleDeclarationEdit = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], styleSheetId = styleSheetId.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleDeclarationEdit]
   }
   
-  @scala.inline
-  implicit class StyleDeclarationEditMutableBuilder[Self <: StyleDeclarationEdit] (val x: Self) extends AnyVal {
+  extension [Self <: StyleDeclarationEdit](x: Self) {
     
-    @scala.inline
-    def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

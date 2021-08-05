@@ -14,28 +14,21 @@ trait OverlappingUIElements extends StObject {
 }
 object OverlappingUIElements {
   
-  @scala.inline
-  def apply(): OverlappingUIElements = {
+  inline def apply(): OverlappingUIElements = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverlappingUIElements]
   }
   
-  @scala.inline
-  implicit class OverlappingUIElementsMutableBuilder[Self <: OverlappingUIElements] (val x: Self) extends AnyVal {
+  extension [Self <: OverlappingUIElements](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: js.Array[String]): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: js.Array[String]): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceNameVarargs(value: String*): Self = StObject.set(x, "resourceName", js.Array(value :_*))
+    inline def setResourceNameVarargs(value: String*): Self = StObject.set(x, "resourceName", js.Array(value :_*))
     
-    @scala.inline
-    def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
+    inline def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenIdUndefined: Self = StObject.set(x, "screenId", js.undefined)
+    inline def setScreenIdUndefined: Self = StObject.set(x, "screenId", js.undefined)
   }
 }

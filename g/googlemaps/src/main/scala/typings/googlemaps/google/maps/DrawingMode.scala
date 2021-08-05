@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DrawingMode extends StObject
 object DrawingMode {
   
-  @scala.inline
-  def LineString: typings.googlemaps.googlemapsStrings.LineString = "LineString".asInstanceOf[typings.googlemaps.googlemapsStrings.LineString]
+  inline def LineString: typings.googlemaps.googlemapsStrings.LineString = "LineString".asInstanceOf[typings.googlemaps.googlemapsStrings.LineString]
   
-  @scala.inline
-  def Point: typings.googlemaps.googlemapsStrings.Point = "Point".asInstanceOf[typings.googlemaps.googlemapsStrings.Point]
+  inline def Point: typings.googlemaps.googlemapsStrings.Point = "Point".asInstanceOf[typings.googlemaps.googlemapsStrings.Point]
   
-  @scala.inline
-  def Polygon: typings.googlemaps.googlemapsStrings.Polygon = "Polygon".asInstanceOf[typings.googlemaps.googlemapsStrings.Polygon]
+  inline def Polygon: typings.googlemaps.googlemapsStrings.Polygon = "Polygon".asInstanceOf[typings.googlemaps.googlemapsStrings.Polygon]
 }

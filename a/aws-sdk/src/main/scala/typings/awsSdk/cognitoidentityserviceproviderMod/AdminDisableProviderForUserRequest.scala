@@ -18,19 +18,15 @@ trait AdminDisableProviderForUserRequest extends StObject {
 }
 object AdminDisableProviderForUserRequest {
   
-  @scala.inline
-  def apply(User: ProviderUserIdentifierType, UserPoolId: StringType): AdminDisableProviderForUserRequest = {
+  inline def apply(User: ProviderUserIdentifierType, UserPoolId: StringType): AdminDisableProviderForUserRequest = {
     val __obj = js.Dynamic.literal(User = User.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminDisableProviderForUserRequest]
   }
   
-  @scala.inline
-  implicit class AdminDisableProviderForUserRequestMutableBuilder[Self <: AdminDisableProviderForUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminDisableProviderForUserRequest](x: Self) {
     
-    @scala.inline
-    def setUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: StringType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: StringType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

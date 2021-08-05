@@ -14,19 +14,15 @@ trait DecorationPropsChangedEvent extends StObject {
 }
 object DecorationPropsChangedEvent {
   
-  @scala.inline
-  def apply(newProperties: DecorationOptions, oldProperties: DecorationOptions): DecorationPropsChangedEvent = {
+  inline def apply(newProperties: DecorationOptions, oldProperties: DecorationOptions): DecorationPropsChangedEvent = {
     val __obj = js.Dynamic.literal(newProperties = newProperties.asInstanceOf[js.Any], oldProperties = oldProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecorationPropsChangedEvent]
   }
   
-  @scala.inline
-  implicit class DecorationPropsChangedEventMutableBuilder[Self <: DecorationPropsChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DecorationPropsChangedEvent](x: Self) {
     
-    @scala.inline
-    def setNewProperties(value: DecorationOptions): Self = StObject.set(x, "newProperties", value.asInstanceOf[js.Any])
+    inline def setNewProperties(value: DecorationOptions): Self = StObject.set(x, "newProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldProperties(value: DecorationOptions): Self = StObject.set(x, "oldProperties", value.asInstanceOf[js.Any])
+    inline def setOldProperties(value: DecorationOptions): Self = StObject.set(x, "oldProperties", value.asInstanceOf[js.Any])
   }
 }

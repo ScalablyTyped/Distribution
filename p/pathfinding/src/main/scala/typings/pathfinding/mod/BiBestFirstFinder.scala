@@ -11,6 +11,5 @@ trait BiBestFirstFinder
      with BiAStarFinder
 object BiBestFirstFinder {
   
-  @scala.inline
-  def apply: BiBestFirstFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BiBestFirstFinder").asInstanceOf[BiBestFirstFinder]
+  inline def apply: BiBestFirstFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BiBestFirstFinder").asInstanceOf[BiBestFirstFinder]
 }

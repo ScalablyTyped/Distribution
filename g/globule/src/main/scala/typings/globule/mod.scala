@@ -30,43 +30,32 @@ object mod extends Shortcut {
   }
   object FindOptions {
     
-    @scala.inline
-    def apply(): FindOptions = {
+    inline def apply(): FindOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOptions]
     }
     
-    @scala.inline
-    implicit class FindOptionsMutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FindOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: String | (js.Function2[/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[js.Any], Boolean])
       ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction2(value: (/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilterFunction2(value: (/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setPrefixBase(value: Boolean): Self = StObject.set(x, "prefixBase", value.asInstanceOf[js.Any])
+      inline def setPrefixBase(value: Boolean): Self = StObject.set(x, "prefixBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixBaseUndefined: Self = StObject.set(x, "prefixBase", js.undefined)
+      inline def setPrefixBaseUndefined: Self = StObject.set(x, "prefixBase", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcBase(value: String): Self = StObject.set(x, "srcBase", value.asInstanceOf[js.Any])
+      inline def setSrcBase(value: String): Self = StObject.set(x, "srcBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcBaseUndefined: Self = StObject.set(x, "srcBase", js.undefined)
+      inline def setSrcBaseUndefined: Self = StObject.set(x, "srcBase", js.undefined)
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
   
@@ -170,44 +159,32 @@ object mod extends Shortcut {
   }
   object MappingOptions {
     
-    @scala.inline
-    def apply(): MappingOptions = {
+    inline def apply(): MappingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MappingOptions]
     }
     
-    @scala.inline
-    implicit class MappingOptionsMutableBuilder[Self <: MappingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MappingOptions](x: Self) {
       
-      @scala.inline
-      def setDestBase(value: String): Self = StObject.set(x, "destBase", value.asInstanceOf[js.Any])
+      inline def setDestBase(value: String): Self = StObject.set(x, "destBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestBaseUndefined: Self = StObject.set(x, "destBase", js.undefined)
+      inline def setDestBaseUndefined: Self = StObject.set(x, "destBase", js.undefined)
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtDot(value: first | last): Self = StObject.set(x, "extDot", value.asInstanceOf[js.Any])
+      inline def setExtDot(value: first | last): Self = StObject.set(x, "extDot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtDotUndefined: Self = StObject.set(x, "extDot", js.undefined)
+      inline def setExtDotUndefined: Self = StObject.set(x, "extDot", js.undefined)
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      @scala.inline
-      def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+      inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
+      inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
       
-      @scala.inline
-      def setRename(value: /* p */ String => String): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
+      inline def setRename(value: /* p */ String => String): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+      inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
     }
   }
   
@@ -219,23 +196,18 @@ object mod extends Shortcut {
   }
   object OneMapping {
     
-    @scala.inline
-    def apply(dest: String, src: js.Array[String]): OneMapping = {
+    inline def apply(dest: String, src: js.Array[String]): OneMapping = {
       val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[OneMapping]
     }
     
-    @scala.inline
-    implicit class OneMappingMutableBuilder[Self <: OneMapping] (val x: Self) extends AnyVal {
+    extension [Self <: OneMapping](x: Self) {
       
-      @scala.inline
-      def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
     }
   }
   

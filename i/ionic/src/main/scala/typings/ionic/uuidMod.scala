@@ -10,9 +10,7 @@ object uuidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUUID")().asInstanceOf[String]
+  inline def generateUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUUID")().asInstanceOf[String]
   
-  @scala.inline
-  def shortid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shortid")().asInstanceOf[String]
+  inline def shortid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shortid")().asInstanceOf[String]
 }

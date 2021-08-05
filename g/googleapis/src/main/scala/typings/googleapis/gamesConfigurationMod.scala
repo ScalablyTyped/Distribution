@@ -40,8 +40,7 @@ object gamesConfigurationMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Gamesconfiguration
       ] = js.native
-    @scala.inline
-    def v1configuration_=(
+    inline def v1configuration_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object gamesConfigurationMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object gamesConfigurationMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def gamesConfiguration(options: Options): Gamesconfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("gamesConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[Gamesconfiguration]
+  inline def gamesConfiguration(options: Options): Gamesconfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("gamesConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[Gamesconfiguration]
   
-  @scala.inline
-  def gamesConfiguration_v1configuration(version: v1configuration): Gamesconfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("gamesConfiguration")(version.asInstanceOf[js.Any]).asInstanceOf[Gamesconfiguration]
+  inline def gamesConfiguration_v1configuration(version: v1configuration): Gamesconfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("gamesConfiguration")(version.asInstanceOf[js.Any]).asInstanceOf[Gamesconfiguration]
 }

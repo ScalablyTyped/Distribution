@@ -60,8 +60,7 @@ trait XBufferController
 }
 object XBufferController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createBuffers: Double => Double,
     destroyBuffers: () => Unit,
@@ -74,19 +73,14 @@ object XBufferController {
     __obj.asInstanceOf[XBufferController]
   }
   
-  @scala.inline
-  implicit class XBufferControllerMutableBuilder[Self <: XBufferController] (val x: Self) extends AnyVal {
+  extension [Self <: XBufferController](x: Self) {
     
-    @scala.inline
-    def setCreateBuffers(value: Double => Double): Self = StObject.set(x, "createBuffers", js.Any.fromFunction1(value))
+    inline def setCreateBuffers(value: Double => Double): Self = StObject.set(x, "createBuffers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroyBuffers(value: () => Unit): Self = StObject.set(x, "destroyBuffers", js.Any.fromFunction0(value))
+    inline def setDestroyBuffers(value: () => Unit): Self = StObject.set(x, "destroyBuffers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowBuffer(value: Boolean => Boolean): Self = StObject.set(x, "showBuffer", js.Any.fromFunction1(value))
+    inline def setShowBuffer(value: Boolean => Boolean): Self = StObject.set(x, "showBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwitchBuffer(value: Boolean => Boolean): Self = StObject.set(x, "switchBuffer", js.Any.fromFunction1(value))
+    inline def setSwitchBuffer(value: Boolean => Boolean): Self = StObject.set(x, "switchBuffer", js.Any.fromFunction1(value))
   }
 }

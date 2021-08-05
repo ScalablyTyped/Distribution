@@ -83,21 +83,16 @@ object notificationRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NotificationRuleState): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NotificationRuleState, opts: CustomResourceOptions): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
+    inline def get(name: String, id: Input[ID]): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
+    inline def get(name: String, id: Input[ID], state: NotificationRuleState): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
+    inline def get(name: String, id: Input[ID], state: NotificationRuleState, opts: CustomResourceOptions): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
     
     /**
       * Returns true if the given object is an instance of NotificationRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codestarnotifications/notificationRule.NotificationRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codestarnotifications/notificationRule.NotificationRule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codestarnotifications/notificationRule.NotificationRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codestarnotifications/notificationRule.NotificationRule */ Boolean]
   }
   
   trait NotificationRuleArgs extends StObject {
@@ -144,57 +139,42 @@ object notificationRuleMod {
   }
   object NotificationRuleArgs {
     
-    @scala.inline
-    def apply(detailType: Input[String], eventTypeIds: Input[js.Array[Input[String]]], resource: Input[String]): NotificationRuleArgs = {
+    inline def apply(detailType: Input[String], eventTypeIds: Input[js.Array[Input[String]]], resource: Input[String]): NotificationRuleArgs = {
       val __obj = js.Dynamic.literal(detailType = detailType.asInstanceOf[js.Any], eventTypeIds = eventTypeIds.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationRuleArgs]
     }
     
-    @scala.inline
-    implicit class NotificationRuleArgsMutableBuilder[Self <: NotificationRuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationRuleArgs](x: Self) {
       
-      @scala.inline
-      def setDetailType(value: Input[String]): Self = StObject.set(x, "detailType", value.asInstanceOf[js.Any])
+      inline def setDetailType(value: Input[String]): Self = StObject.set(x, "detailType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTypeIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "eventTypeIds", value.asInstanceOf[js.Any])
+      inline def setEventTypeIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "eventTypeIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTypeIdsVarargs(value: Input[String]*): Self = StObject.set(x, "eventTypeIds", js.Array(value :_*))
+      inline def setEventTypeIdsVarargs(value: Input[String]*): Self = StObject.set(x, "eventTypeIds", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargets(
+      inline def setTargets(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.codestarnotifications.NotificationRuleTarget]]
             ]
       ): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.codestarnotifications.NotificationRuleTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.codestarnotifications.NotificationRuleTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
     }
   }
   
@@ -247,72 +227,52 @@ object notificationRuleMod {
   }
   object NotificationRuleState {
     
-    @scala.inline
-    def apply(): NotificationRuleState = {
+    inline def apply(): NotificationRuleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotificationRuleState]
     }
     
-    @scala.inline
-    implicit class NotificationRuleStateMutableBuilder[Self <: NotificationRuleState] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationRuleState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDetailType(value: Input[String]): Self = StObject.set(x, "detailType", value.asInstanceOf[js.Any])
+      inline def setDetailType(value: Input[String]): Self = StObject.set(x, "detailType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailTypeUndefined: Self = StObject.set(x, "detailType", js.undefined)
+      inline def setDetailTypeUndefined: Self = StObject.set(x, "detailType", js.undefined)
       
-      @scala.inline
-      def setEventTypeIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "eventTypeIds", value.asInstanceOf[js.Any])
+      inline def setEventTypeIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "eventTypeIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTypeIdsUndefined: Self = StObject.set(x, "eventTypeIds", js.undefined)
+      inline def setEventTypeIdsUndefined: Self = StObject.set(x, "eventTypeIds", js.undefined)
       
-      @scala.inline
-      def setEventTypeIdsVarargs(value: Input[String]*): Self = StObject.set(x, "eventTypeIds", js.Array(value :_*))
+      inline def setEventTypeIdsVarargs(value: Input[String]*): Self = StObject.set(x, "eventTypeIds", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargets(
+      inline def setTargets(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.codestarnotifications.NotificationRuleTarget]]
             ]
       ): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.codestarnotifications.NotificationRuleTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.codestarnotifications.NotificationRuleTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
     }
   }
 }

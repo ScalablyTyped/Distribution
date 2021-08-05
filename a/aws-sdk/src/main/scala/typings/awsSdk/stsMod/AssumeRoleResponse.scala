@@ -23,31 +23,23 @@ trait AssumeRoleResponse extends StObject {
 }
 object AssumeRoleResponse {
   
-  @scala.inline
-  def apply(): AssumeRoleResponse = {
+  inline def apply(): AssumeRoleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssumeRoleResponse]
   }
   
-  @scala.inline
-  implicit class AssumeRoleResponseMutableBuilder[Self <: AssumeRoleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssumeRoleResponse](x: Self) {
     
-    @scala.inline
-    def setAssumedRoleUser(value: AssumedRoleUser): Self = StObject.set(x, "AssumedRoleUser", value.asInstanceOf[js.Any])
+    inline def setAssumedRoleUser(value: AssumedRoleUser): Self = StObject.set(x, "AssumedRoleUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssumedRoleUserUndefined: Self = StObject.set(x, "AssumedRoleUser", js.undefined)
+    inline def setAssumedRoleUserUndefined: Self = StObject.set(x, "AssumedRoleUser", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
-    @scala.inline
-    def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
+    inline def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
+    inline def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait UpdateRecommenderConfigurationRequest extends StObject {
 }
 object UpdateRecommenderConfigurationRequest {
   
-  @scala.inline
-  def apply(RecommenderId: string, UpdateRecommenderConfiguration: UpdateRecommenderConfiguration): UpdateRecommenderConfigurationRequest = {
+  inline def apply(RecommenderId: string, UpdateRecommenderConfiguration: UpdateRecommenderConfiguration): UpdateRecommenderConfigurationRequest = {
     val __obj = js.Dynamic.literal(RecommenderId = RecommenderId.asInstanceOf[js.Any], UpdateRecommenderConfiguration = UpdateRecommenderConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRecommenderConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRecommenderConfigurationRequestMutableBuilder[Self <: UpdateRecommenderConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRecommenderConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
+    inline def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateRecommenderConfiguration(value: UpdateRecommenderConfiguration): Self = StObject.set(x, "UpdateRecommenderConfiguration", value.asInstanceOf[js.Any])
+    inline def setUpdateRecommenderConfiguration(value: UpdateRecommenderConfiguration): Self = StObject.set(x, "UpdateRecommenderConfiguration", value.asInstanceOf[js.Any])
   }
 }

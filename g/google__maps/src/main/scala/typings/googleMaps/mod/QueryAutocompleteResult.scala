@@ -23,8 +23,7 @@ trait QueryAutocompleteResult extends StObject {
 }
 object QueryAutocompleteResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     matched_substrings: js.Array[PredictionSubstring],
     terms: js.Array[PredictionTerm]
@@ -33,22 +32,16 @@ object QueryAutocompleteResult {
     __obj.asInstanceOf[QueryAutocompleteResult]
   }
   
-  @scala.inline
-  implicit class QueryAutocompleteResultMutableBuilder[Self <: QueryAutocompleteResult] (val x: Self) extends AnyVal {
+  extension [Self <: QueryAutocompleteResult](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "matched_substrings", value.asInstanceOf[js.Any])
+    inline def setMatched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "matched_substrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matched_substrings", js.Array(value :_*))
+    inline def setMatched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matched_substrings", js.Array(value :_*))
     
-    @scala.inline
-    def setTerms(value: js.Array[PredictionTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: js.Array[PredictionTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
+    inline def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
   }
 }

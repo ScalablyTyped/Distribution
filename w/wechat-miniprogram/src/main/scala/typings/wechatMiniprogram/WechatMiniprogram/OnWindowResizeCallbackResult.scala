@@ -10,16 +10,13 @@ trait OnWindowResizeCallbackResult extends StObject {
 }
 object OnWindowResizeCallbackResult {
   
-  @scala.inline
-  def apply(size: Size): OnWindowResizeCallbackResult = {
+  inline def apply(size: Size): OnWindowResizeCallbackResult = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnWindowResizeCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnWindowResizeCallbackResultMutableBuilder[Self <: OnWindowResizeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnWindowResizeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

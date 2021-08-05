@@ -25,52 +25,37 @@ trait ApkManifest extends StObject {
 }
 object ApkManifest {
   
-  @scala.inline
-  def apply(): ApkManifest = {
+  inline def apply(): ApkManifest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApkManifest]
   }
   
-  @scala.inline
-  implicit class ApkManifestMutableBuilder[Self <: ApkManifest] (val x: Self) extends AnyVal {
+  extension [Self <: ApkManifest](x: Self) {
     
-    @scala.inline
-    def setApplicationLabel(value: String): Self = StObject.set(x, "applicationLabel", value.asInstanceOf[js.Any])
+    inline def setApplicationLabel(value: String): Self = StObject.set(x, "applicationLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationLabelUndefined: Self = StObject.set(x, "applicationLabel", js.undefined)
+    inline def setApplicationLabelUndefined: Self = StObject.set(x, "applicationLabel", js.undefined)
     
-    @scala.inline
-    def setIntentFilters(value: js.Array[IntentFilter]): Self = StObject.set(x, "intentFilters", value.asInstanceOf[js.Any])
+    inline def setIntentFilters(value: js.Array[IntentFilter]): Self = StObject.set(x, "intentFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentFiltersUndefined: Self = StObject.set(x, "intentFilters", js.undefined)
+    inline def setIntentFiltersUndefined: Self = StObject.set(x, "intentFilters", js.undefined)
     
-    @scala.inline
-    def setIntentFiltersVarargs(value: IntentFilter*): Self = StObject.set(x, "intentFilters", js.Array(value :_*))
+    inline def setIntentFiltersVarargs(value: IntentFilter*): Self = StObject.set(x, "intentFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxSdkVersion(value: Double): Self = StObject.set(x, "maxSdkVersion", value.asInstanceOf[js.Any])
+    inline def setMaxSdkVersion(value: Double): Self = StObject.set(x, "maxSdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSdkVersionUndefined: Self = StObject.set(x, "maxSdkVersion", js.undefined)
+    inline def setMaxSdkVersionUndefined: Self = StObject.set(x, "maxSdkVersion", js.undefined)
     
-    @scala.inline
-    def setMinSdkVersion(value: Double): Self = StObject.set(x, "minSdkVersion", value.asInstanceOf[js.Any])
+    inline def setMinSdkVersion(value: Double): Self = StObject.set(x, "minSdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSdkVersionUndefined: Self = StObject.set(x, "minSdkVersion", js.undefined)
+    inline def setMinSdkVersionUndefined: Self = StObject.set(x, "minSdkVersion", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setTargetSdkVersion(value: Double): Self = StObject.set(x, "targetSdkVersion", value.asInstanceOf[js.Any])
+    inline def setTargetSdkVersion(value: Double): Self = StObject.set(x, "targetSdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSdkVersionUndefined: Self = StObject.set(x, "targetSdkVersion", js.undefined)
+    inline def setTargetSdkVersionUndefined: Self = StObject.set(x, "targetSdkVersion", js.undefined)
   }
 }

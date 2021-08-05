@@ -21,8 +21,7 @@ trait DisbursementDetails extends StObject {
 }
 object DisbursementDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disbursementDate: Date,
     fundsHeld: Boolean,
     settlementAmount: String,
@@ -34,25 +33,18 @@ object DisbursementDetails {
     __obj.asInstanceOf[DisbursementDetails]
   }
   
-  @scala.inline
-  implicit class DisbursementDetailsMutableBuilder[Self <: DisbursementDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DisbursementDetails](x: Self) {
     
-    @scala.inline
-    def setDisbursementDate(value: Date): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
+    inline def setDisbursementDate(value: Date): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFundsHeld(value: Boolean): Self = StObject.set(x, "fundsHeld", value.asInstanceOf[js.Any])
+    inline def setFundsHeld(value: Boolean): Self = StObject.set(x, "fundsHeld", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettlementAmount(value: String): Self = StObject.set(x, "settlementAmount", value.asInstanceOf[js.Any])
+    inline def setSettlementAmount(value: String): Self = StObject.set(x, "settlementAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettlementCurrencyExchangeRate(value: String): Self = StObject.set(x, "settlementCurrencyExchangeRate", value.asInstanceOf[js.Any])
+    inline def setSettlementCurrencyExchangeRate(value: String): Self = StObject.set(x, "settlementCurrencyExchangeRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettlementCurrencyIsoCode(value: String): Self = StObject.set(x, "settlementCurrencyIsoCode", value.asInstanceOf[js.Any])
+    inline def setSettlementCurrencyIsoCode(value: String): Self = StObject.set(x, "settlementCurrencyIsoCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

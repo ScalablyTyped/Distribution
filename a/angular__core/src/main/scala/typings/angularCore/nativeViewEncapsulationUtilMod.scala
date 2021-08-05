@@ -14,6 +14,5 @@ object nativeViewEncapsulationUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findNativeEncapsulationNodes(typeChecker: TypeChecker, sourceFile: SourceFile): Set[Identifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNativeEncapsulationNodes")(typeChecker.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[Set[Identifier]]
+  inline def findNativeEncapsulationNodes(typeChecker: TypeChecker, sourceFile: SourceFile): Set[Identifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNativeEncapsulationNodes")(typeChecker.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[Set[Identifier]]
 }

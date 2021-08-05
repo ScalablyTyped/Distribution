@@ -13,19 +13,15 @@ trait ImportAs extends StObject {
 }
 object ImportAs {
   
-  @scala.inline
-  def apply(importAs: StaticSymbol, symbol: StaticSymbol): ImportAs = {
+  inline def apply(importAs: StaticSymbol, symbol: StaticSymbol): ImportAs = {
     val __obj = js.Dynamic.literal(importAs = importAs.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportAs]
   }
   
-  @scala.inline
-  implicit class ImportAsMutableBuilder[Self <: ImportAs] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAs](x: Self) {
     
-    @scala.inline
-    def setImportAs(value: StaticSymbol): Self = StObject.set(x, "importAs", value.asInstanceOf[js.Any])
+    inline def setImportAs(value: StaticSymbol): Self = StObject.set(x, "importAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: StaticSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: StaticSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

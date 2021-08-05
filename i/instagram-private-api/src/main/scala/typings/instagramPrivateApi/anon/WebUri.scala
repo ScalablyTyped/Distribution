@@ -10,16 +10,13 @@ trait WebUri extends StObject {
 }
 object WebUri {
   
-  @scala.inline
-  def apply(webUri: String): WebUri = {
+  inline def apply(webUri: String): WebUri = {
     val __obj = js.Dynamic.literal(webUri = webUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebUri]
   }
   
-  @scala.inline
-  implicit class WebUriMutableBuilder[Self <: WebUri] (val x: Self) extends AnyVal {
+  extension [Self <: WebUri](x: Self) {
     
-    @scala.inline
-    def setWebUri(value: String): Self = StObject.set(x, "webUri", value.asInstanceOf[js.Any])
+    inline def setWebUri(value: String): Self = StObject.set(x, "webUri", value.asInstanceOf[js.Any])
   }
 }

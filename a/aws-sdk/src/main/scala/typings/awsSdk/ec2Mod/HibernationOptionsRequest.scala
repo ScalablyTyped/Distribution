@@ -13,19 +13,15 @@ trait HibernationOptionsRequest extends StObject {
 }
 object HibernationOptionsRequest {
   
-  @scala.inline
-  def apply(): HibernationOptionsRequest = {
+  inline def apply(): HibernationOptionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HibernationOptionsRequest]
   }
   
-  @scala.inline
-  implicit class HibernationOptionsRequestMutableBuilder[Self <: HibernationOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: HibernationOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigured(value: Boolean): Self = StObject.set(x, "Configured", value.asInstanceOf[js.Any])
+    inline def setConfigured(value: Boolean): Self = StObject.set(x, "Configured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguredUndefined: Self = StObject.set(x, "Configured", js.undefined)
+    inline def setConfiguredUndefined: Self = StObject.set(x, "Configured", js.undefined)
   }
 }

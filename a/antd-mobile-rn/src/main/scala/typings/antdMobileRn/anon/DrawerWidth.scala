@@ -14,22 +14,17 @@ trait DrawerWidth extends StObject {
 }
 object DrawerWidth {
   
-  @scala.inline
-  def apply(drawerWidth: Double, open: Boolean, position: String): DrawerWidth = {
+  inline def apply(drawerWidth: Double, open: Boolean, position: String): DrawerWidth = {
     val __obj = js.Dynamic.literal(drawerWidth = drawerWidth.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerWidth]
   }
   
-  @scala.inline
-  implicit class DrawerWidthMutableBuilder[Self <: DrawerWidth] (val x: Self) extends AnyVal {
+  extension [Self <: DrawerWidth](x: Self) {
     
-    @scala.inline
-    def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
+    inline def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

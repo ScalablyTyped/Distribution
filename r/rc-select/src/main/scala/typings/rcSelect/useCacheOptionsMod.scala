@@ -13,6 +13,5 @@ object useCacheOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[OptionsType /* <: js.Array[Disabled] */](values: js.Array[RawValueType], options: FlattenOptionsType[OptionsType]): js.Function1[/* vals */ js.Array[RawValueType], FlattenOptionsType[OptionsType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* vals */ js.Array[RawValueType], FlattenOptionsType[OptionsType]]]
+  inline def default[OptionsType /* <: js.Array[Disabled] */](values: js.Array[RawValueType], options: FlattenOptionsType[OptionsType]): js.Function1[/* vals */ js.Array[RawValueType], FlattenOptionsType[OptionsType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* vals */ js.Array[RawValueType], FlattenOptionsType[OptionsType]]]
 }

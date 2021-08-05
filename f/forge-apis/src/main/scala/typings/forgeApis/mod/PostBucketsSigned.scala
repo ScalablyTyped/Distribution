@@ -10,16 +10,13 @@ trait PostBucketsSigned extends StObject {
 }
 object PostBucketsSigned {
   
-  @scala.inline
-  def apply(minutesExpiration: Double): PostBucketsSigned = {
+  inline def apply(minutesExpiration: Double): PostBucketsSigned = {
     val __obj = js.Dynamic.literal(minutesExpiration = minutesExpiration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostBucketsSigned]
   }
   
-  @scala.inline
-  implicit class PostBucketsSignedMutableBuilder[Self <: PostBucketsSigned] (val x: Self) extends AnyVal {
+  extension [Self <: PostBucketsSigned](x: Self) {
     
-    @scala.inline
-    def setMinutesExpiration(value: Double): Self = StObject.set(x, "minutesExpiration", value.asInstanceOf[js.Any])
+    inline def setMinutesExpiration(value: Double): Self = StObject.set(x, "minutesExpiration", value.asInstanceOf[js.Any])
   }
 }

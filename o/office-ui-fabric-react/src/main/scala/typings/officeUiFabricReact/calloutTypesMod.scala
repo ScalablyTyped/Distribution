@@ -70,59 +70,42 @@ object calloutTypesMod {
   }
   object ICalloutContentStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ICalloutContentStyleProps = {
+    inline def apply(theme: ITheme): ICalloutContentStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICalloutContentStyleProps]
     }
     
-    @scala.inline
-    implicit class ICalloutContentStylePropsMutableBuilder[Self <: ICalloutContentStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICalloutContentStyleProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
+      inline def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakWidthUndefined: Self = StObject.set(x, "beakWidth", js.undefined)
+      inline def setBeakWidthUndefined: Self = StObject.set(x, "beakWidth", js.undefined)
       
-      @scala.inline
-      def setCalloutMaxWidth(value: Double): Self = StObject.set(x, "calloutMaxWidth", value.asInstanceOf[js.Any])
+      inline def setCalloutMaxWidth(value: Double): Self = StObject.set(x, "calloutMaxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutMaxWidthUndefined: Self = StObject.set(x, "calloutMaxWidth", js.undefined)
+      inline def setCalloutMaxWidthUndefined: Self = StObject.set(x, "calloutMaxWidth", js.undefined)
       
-      @scala.inline
-      def setCalloutWidth(value: Double): Self = StObject.set(x, "calloutWidth", value.asInstanceOf[js.Any])
+      inline def setCalloutWidth(value: Double): Self = StObject.set(x, "calloutWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutWidthUndefined: Self = StObject.set(x, "calloutWidth", js.undefined)
+      inline def setCalloutWidthUndefined: Self = StObject.set(x, "calloutWidth", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOverflowYHidden(value: Boolean): Self = StObject.set(x, "overflowYHidden", value.asInstanceOf[js.Any])
+      inline def setOverflowYHidden(value: Boolean): Self = StObject.set(x, "overflowYHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowYHiddenUndefined: Self = StObject.set(x, "overflowYHidden", js.undefined)
+      inline def setOverflowYHiddenUndefined: Self = StObject.set(x, "overflowYHidden", js.undefined)
       
-      @scala.inline
-      def setPositions(value: ICalloutPositionedInfo): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+      inline def setPositions(value: ICalloutPositionedInfo): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
+      inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,59 +138,42 @@ object calloutTypesMod {
   }
   object ICalloutContentStyles {
     
-    @scala.inline
-    def apply(): ICalloutContentStyles = {
+    inline def apply(): ICalloutContentStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICalloutContentStyles]
     }
     
-    @scala.inline
-    implicit class ICalloutContentStylesMutableBuilder[Self <: ICalloutContentStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ICalloutContentStyles](x: Self) {
       
-      @scala.inline
-      def setBeak(value: IStyle): Self = StObject.set(x, "beak", value.asInstanceOf[js.Any])
+      inline def setBeak(value: IStyle): Self = StObject.set(x, "beak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakCurtain(value: IStyle): Self = StObject.set(x, "beakCurtain", value.asInstanceOf[js.Any])
+      inline def setBeakCurtain(value: IStyle): Self = StObject.set(x, "beakCurtain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakCurtainNull: Self = StObject.set(x, "beakCurtain", null)
+      inline def setBeakCurtainNull: Self = StObject.set(x, "beakCurtain", null)
       
-      @scala.inline
-      def setBeakCurtainUndefined: Self = StObject.set(x, "beakCurtain", js.undefined)
+      inline def setBeakCurtainUndefined: Self = StObject.set(x, "beakCurtain", js.undefined)
       
-      @scala.inline
-      def setBeakNull: Self = StObject.set(x, "beak", null)
+      inline def setBeakNull: Self = StObject.set(x, "beak", null)
       
-      @scala.inline
-      def setBeakUndefined: Self = StObject.set(x, "beak", js.undefined)
+      inline def setBeakUndefined: Self = StObject.set(x, "beak", js.undefined)
       
-      @scala.inline
-      def setCalloutMain(value: IStyle): Self = StObject.set(x, "calloutMain", value.asInstanceOf[js.Any])
+      inline def setCalloutMain(value: IStyle): Self = StObject.set(x, "calloutMain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutMainNull: Self = StObject.set(x, "calloutMain", null)
+      inline def setCalloutMainNull: Self = StObject.set(x, "calloutMain", null)
       
-      @scala.inline
-      def setCalloutMainUndefined: Self = StObject.set(x, "calloutMain", js.undefined)
+      inline def setCalloutMainUndefined: Self = StObject.set(x, "calloutMain", js.undefined)
       
-      @scala.inline
-      def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -469,53 +435,38 @@ object calloutTypesMod {
   }
   object ICalloutProps {
     
-    @scala.inline
-    def apply(): ICalloutProps = {
+    inline def apply(): ICalloutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICalloutProps]
     }
     
-    @scala.inline
-    implicit class ICalloutPropsMutableBuilder[Self <: ICalloutProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICalloutProps](x: Self) {
       
-      @scala.inline
-      def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
+      inline def setAlignTargetEdge(value: Boolean): Self = StObject.set(x, "alignTargetEdge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignTargetEdgeUndefined: Self = StObject.set(x, "alignTargetEdge", js.undefined)
+      inline def setAlignTargetEdgeUndefined: Self = StObject.set(x, "alignTargetEdge", js.undefined)
       
-      @scala.inline
-      def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
+      inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
+      inline def setAriaDescribedByUndefined: Self = StObject.set(x, "ariaDescribedBy", js.undefined)
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
+      inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
+      inline def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakWidthUndefined: Self = StObject.set(x, "beakWidth", js.undefined)
+      inline def setBeakWidthUndefined: Self = StObject.set(x, "beakWidth", js.undefined)
       
-      @scala.inline
-      def setBounds(
+      inline def setBounds(
         value: IRectangle | (js.Function2[
               /* target */ js.UndefOr[Target], 
               /* targetWindow */ js.UndefOr[Window], 
@@ -523,207 +474,141 @@ object calloutTypesMod {
             ])
       ): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsFunction2(
+      inline def setBoundsFunction2(
         value: (/* target */ js.UndefOr[Target], /* targetWindow */ js.UndefOr[Window]) => js.UndefOr[IRectangle]
       ): Self = StObject.set(x, "bounds", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setCalloutMaxHeight(value: Double): Self = StObject.set(x, "calloutMaxHeight", value.asInstanceOf[js.Any])
+      inline def setCalloutMaxHeight(value: Double): Self = StObject.set(x, "calloutMaxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutMaxHeightUndefined: Self = StObject.set(x, "calloutMaxHeight", js.undefined)
+      inline def setCalloutMaxHeightUndefined: Self = StObject.set(x, "calloutMaxHeight", js.undefined)
       
-      @scala.inline
-      def setCalloutMaxWidth(value: Double): Self = StObject.set(x, "calloutMaxWidth", value.asInstanceOf[js.Any])
+      inline def setCalloutMaxWidth(value: Double): Self = StObject.set(x, "calloutMaxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutMaxWidthUndefined: Self = StObject.set(x, "calloutMaxWidth", js.undefined)
+      inline def setCalloutMaxWidthUndefined: Self = StObject.set(x, "calloutMaxWidth", js.undefined)
       
-      @scala.inline
-      def setCalloutWidth(value: Double): Self = StObject.set(x, "calloutWidth", value.asInstanceOf[js.Any])
+      inline def setCalloutWidth(value: Double): Self = StObject.set(x, "calloutWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutWidthUndefined: Self = StObject.set(x, "calloutWidth", js.undefined)
+      inline def setCalloutWidthUndefined: Self = StObject.set(x, "calloutWidth", js.undefined)
       
-      @scala.inline
-      def setCoverTarget(value: Boolean): Self = StObject.set(x, "coverTarget", value.asInstanceOf[js.Any])
+      inline def setCoverTarget(value: Boolean): Self = StObject.set(x, "coverTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverTargetUndefined: Self = StObject.set(x, "coverTarget", js.undefined)
+      inline def setCoverTargetUndefined: Self = StObject.set(x, "coverTarget", js.undefined)
       
-      @scala.inline
-      def setDirectionalHint(value: DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
+      inline def setDirectionalHint(value: DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintFixed(value: Boolean): Self = StObject.set(x, "directionalHintFixed", value.asInstanceOf[js.Any])
+      inline def setDirectionalHintFixed(value: Boolean): Self = StObject.set(x, "directionalHintFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintFixedUndefined: Self = StObject.set(x, "directionalHintFixed", js.undefined)
+      inline def setDirectionalHintFixedUndefined: Self = StObject.set(x, "directionalHintFixed", js.undefined)
       
-      @scala.inline
-      def setDirectionalHintForRTL(value: DirectionalHint): Self = StObject.set(x, "directionalHintForRTL", value.asInstanceOf[js.Any])
+      inline def setDirectionalHintForRTL(value: DirectionalHint): Self = StObject.set(x, "directionalHintForRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalHintForRTLUndefined: Self = StObject.set(x, "directionalHintForRTL", js.undefined)
+      inline def setDirectionalHintForRTLUndefined: Self = StObject.set(x, "directionalHintForRTL", js.undefined)
       
-      @scala.inline
-      def setDirectionalHintUndefined: Self = StObject.set(x, "directionalHint", js.undefined)
+      inline def setDirectionalHintUndefined: Self = StObject.set(x, "directionalHint", js.undefined)
       
-      @scala.inline
-      def setDismissOnTargetClick(value: Boolean): Self = StObject.set(x, "dismissOnTargetClick", value.asInstanceOf[js.Any])
+      inline def setDismissOnTargetClick(value: Boolean): Self = StObject.set(x, "dismissOnTargetClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissOnTargetClickUndefined: Self = StObject.set(x, "dismissOnTargetClick", js.undefined)
+      inline def setDismissOnTargetClickUndefined: Self = StObject.set(x, "dismissOnTargetClick", js.undefined)
       
-      @scala.inline
-      def setDoNotLayer(value: Boolean): Self = StObject.set(x, "doNotLayer", value.asInstanceOf[js.Any])
+      inline def setDoNotLayer(value: Boolean): Self = StObject.set(x, "doNotLayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoNotLayerUndefined: Self = StObject.set(x, "doNotLayer", js.undefined)
+      inline def setDoNotLayerUndefined: Self = StObject.set(x, "doNotLayer", js.undefined)
       
-      @scala.inline
-      def setFinalHeight(value: Double): Self = StObject.set(x, "finalHeight", value.asInstanceOf[js.Any])
+      inline def setFinalHeight(value: Double): Self = StObject.set(x, "finalHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalHeightUndefined: Self = StObject.set(x, "finalHeight", js.undefined)
+      inline def setFinalHeightUndefined: Self = StObject.set(x, "finalHeight", js.undefined)
       
-      @scala.inline
-      def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
+      inline def setGapSpace(value: Double): Self = StObject.set(x, "gapSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapSpaceUndefined: Self = StObject.set(x, "gapSpace", js.undefined)
+      inline def setGapSpaceUndefined: Self = StObject.set(x, "gapSpace", js.undefined)
       
-      @scala.inline
-      def setHideOverflow(value: Boolean): Self = StObject.set(x, "hideOverflow", value.asInstanceOf[js.Any])
+      inline def setHideOverflow(value: Boolean): Self = StObject.set(x, "hideOverflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideOverflowUndefined: Self = StObject.set(x, "hideOverflow", js.undefined)
+      inline def setHideOverflowUndefined: Self = StObject.set(x, "hideOverflow", js.undefined)
       
-      @scala.inline
-      def setIsBeakVisible(value: Boolean): Self = StObject.set(x, "isBeakVisible", value.asInstanceOf[js.Any])
+      inline def setIsBeakVisible(value: Boolean): Self = StObject.set(x, "isBeakVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBeakVisibleUndefined: Self = StObject.set(x, "isBeakVisible", js.undefined)
+      inline def setIsBeakVisibleUndefined: Self = StObject.set(x, "isBeakVisible", js.undefined)
       
-      @scala.inline
-      def setLayerProps(value: ILayerProps): Self = StObject.set(x, "layerProps", value.asInstanceOf[js.Any])
+      inline def setLayerProps(value: ILayerProps): Self = StObject.set(x, "layerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerPropsUndefined: Self = StObject.set(x, "layerProps", js.undefined)
+      inline def setLayerPropsUndefined: Self = StObject.set(x, "layerProps", js.undefined)
       
-      @scala.inline
-      def setMinPagePadding(value: Double): Self = StObject.set(x, "minPagePadding", value.asInstanceOf[js.Any])
+      inline def setMinPagePadding(value: Double): Self = StObject.set(x, "minPagePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPagePaddingUndefined: Self = StObject.set(x, "minPagePadding", js.undefined)
+      inline def setMinPagePaddingUndefined: Self = StObject.set(x, "minPagePadding", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setOnLayerMounted(value: () => Unit): Self = StObject.set(x, "onLayerMounted", js.Any.fromFunction0(value))
+      inline def setOnLayerMounted(value: () => Unit): Self = StObject.set(x, "onLayerMounted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLayerMountedUndefined: Self = StObject.set(x, "onLayerMounted", js.undefined)
+      inline def setOnLayerMountedUndefined: Self = StObject.set(x, "onLayerMounted", js.undefined)
       
-      @scala.inline
-      def setOnPositioned(value: /* positions */ js.UndefOr[ICalloutPositionedInfo] => Unit): Self = StObject.set(x, "onPositioned", js.Any.fromFunction1(value))
+      inline def setOnPositioned(value: /* positions */ js.UndefOr[ICalloutPositionedInfo] => Unit): Self = StObject.set(x, "onPositioned", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPositionedUndefined: Self = StObject.set(x, "onPositioned", js.undefined)
+      inline def setOnPositionedUndefined: Self = StObject.set(x, "onPositioned", js.undefined)
       
-      @scala.inline
-      def setOnRestoreFocus(value: /* options */ ContainsFocus => Unit): Self = StObject.set(x, "onRestoreFocus", js.Any.fromFunction1(value))
+      inline def setOnRestoreFocus(value: /* options */ ContainsFocus => Unit): Self = StObject.set(x, "onRestoreFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRestoreFocusUndefined: Self = StObject.set(x, "onRestoreFocus", js.undefined)
+      inline def setOnRestoreFocusUndefined: Self = StObject.set(x, "onRestoreFocus", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: () => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
+      inline def setOnScroll(value: () => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setPreventDismissOnEvent(
+      inline def setPreventDismissOnEvent(
         value: /* ev */ Event | FocusEvent[Element] | KeyboardEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) => Boolean
       ): Self = StObject.set(x, "preventDismissOnEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreventDismissOnEventUndefined: Self = StObject.set(x, "preventDismissOnEvent", js.undefined)
+      inline def setPreventDismissOnEventUndefined: Self = StObject.set(x, "preventDismissOnEvent", js.undefined)
       
-      @scala.inline
-      def setPreventDismissOnLostFocus(value: Boolean): Self = StObject.set(x, "preventDismissOnLostFocus", value.asInstanceOf[js.Any])
+      inline def setPreventDismissOnLostFocus(value: Boolean): Self = StObject.set(x, "preventDismissOnLostFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDismissOnLostFocusUndefined: Self = StObject.set(x, "preventDismissOnLostFocus", js.undefined)
+      inline def setPreventDismissOnLostFocusUndefined: Self = StObject.set(x, "preventDismissOnLostFocus", js.undefined)
       
-      @scala.inline
-      def setPreventDismissOnResize(value: Boolean): Self = StObject.set(x, "preventDismissOnResize", value.asInstanceOf[js.Any])
+      inline def setPreventDismissOnResize(value: Boolean): Self = StObject.set(x, "preventDismissOnResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDismissOnResizeUndefined: Self = StObject.set(x, "preventDismissOnResize", js.undefined)
+      inline def setPreventDismissOnResizeUndefined: Self = StObject.set(x, "preventDismissOnResize", js.undefined)
       
-      @scala.inline
-      def setPreventDismissOnScroll(value: Boolean): Self = StObject.set(x, "preventDismissOnScroll", value.asInstanceOf[js.Any])
+      inline def setPreventDismissOnScroll(value: Boolean): Self = StObject.set(x, "preventDismissOnScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDismissOnScrollUndefined: Self = StObject.set(x, "preventDismissOnScroll", js.undefined)
+      inline def setPreventDismissOnScrollUndefined: Self = StObject.set(x, "preventDismissOnScroll", js.undefined)
       
-      @scala.inline
-      def setSetInitialFocus(value: Boolean): Self = StObject.set(x, "setInitialFocus", value.asInstanceOf[js.Any])
+      inline def setSetInitialFocus(value: Boolean): Self = StObject.set(x, "setInitialFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetInitialFocusUndefined: Self = StObject.set(x, "setInitialFocus", js.undefined)
+      inline def setSetInitialFocusUndefined: Self = StObject.set(x, "setInitialFocus", js.undefined)
       
-      @scala.inline
-      def setShouldDismissOnWindowFocus(value: Boolean): Self = StObject.set(x, "shouldDismissOnWindowFocus", value.asInstanceOf[js.Any])
+      inline def setShouldDismissOnWindowFocus(value: Boolean): Self = StObject.set(x, "shouldDismissOnWindowFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldDismissOnWindowFocusUndefined: Self = StObject.set(x, "shouldDismissOnWindowFocus", js.undefined)
+      inline def setShouldDismissOnWindowFocusUndefined: Self = StObject.set(x, "shouldDismissOnWindowFocus", js.undefined)
       
-      @scala.inline
-      def setShouldRestoreFocus(value: Boolean): Self = StObject.set(x, "shouldRestoreFocus", value.asInstanceOf[js.Any])
+      inline def setShouldRestoreFocus(value: Boolean): Self = StObject.set(x, "shouldRestoreFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRestoreFocusUndefined: Self = StObject.set(x, "shouldRestoreFocus", js.undefined)
+      inline def setShouldRestoreFocusUndefined: Self = StObject.set(x, "shouldRestoreFocus", js.undefined)
       
-      @scala.inline
-      def setShouldUpdateWhenHidden(value: Boolean): Self = StObject.set(x, "shouldUpdateWhenHidden", value.asInstanceOf[js.Any])
+      inline def setShouldUpdateWhenHidden(value: Boolean): Self = StObject.set(x, "shouldUpdateWhenHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldUpdateWhenHiddenUndefined: Self = StObject.set(x, "shouldUpdateWhenHidden", js.undefined)
+      inline def setShouldUpdateWhenHiddenUndefined: Self = StObject.set(x, "shouldUpdateWhenHidden", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ICalloutContentStyleProps, ICalloutContentStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ICalloutContentStyleProps, ICalloutContentStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ICalloutContentStyleProps => DeepPartial[ICalloutContentStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ICalloutContentStyleProps => DeepPartial[ICalloutContentStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

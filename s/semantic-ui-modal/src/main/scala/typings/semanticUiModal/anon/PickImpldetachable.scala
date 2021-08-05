@@ -11,16 +11,13 @@ trait PickImpldetachable extends StObject {
 }
 object PickImpldetachable {
   
-  @scala.inline
-  def apply(detachable: Boolean): PickImpldetachable = {
+  inline def apply(detachable: Boolean): PickImpldetachable = {
     val __obj = js.Dynamic.literal(detachable = detachable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldetachable]
   }
   
-  @scala.inline
-  implicit class PickImpldetachableMutableBuilder[Self <: PickImpldetachable] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldetachable](x: Self) {
     
-    @scala.inline
-    def setDetachable(value: Boolean): Self = StObject.set(x, "detachable", value.asInstanceOf[js.Any])
+    inline def setDetachable(value: Boolean): Self = StObject.set(x, "detachable", value.asInstanceOf[js.Any])
   }
 }

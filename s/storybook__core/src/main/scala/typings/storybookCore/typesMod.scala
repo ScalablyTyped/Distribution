@@ -19,26 +19,20 @@ object typesMod {
   }
   object PreviewError {
     
-    @scala.inline
-    def apply(): PreviewError = {
+    inline def apply(): PreviewError = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreviewError]
     }
     
-    @scala.inline
-    implicit class PreviewErrorMutableBuilder[Self <: PreviewError] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   

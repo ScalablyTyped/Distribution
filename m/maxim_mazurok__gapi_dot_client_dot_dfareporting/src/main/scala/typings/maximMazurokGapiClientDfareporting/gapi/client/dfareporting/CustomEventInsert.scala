@@ -29,49 +29,35 @@ trait CustomEventInsert extends StObject {
 }
 object CustomEventInsert {
   
-  @scala.inline
-  def apply(): CustomEventInsert = {
+  inline def apply(): CustomEventInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomEventInsert]
   }
   
-  @scala.inline
-  implicit class CustomEventInsertMutableBuilder[Self <: CustomEventInsert] (val x: Self) extends AnyVal {
+  extension [Self <: CustomEventInsert](x: Self) {
     
-    @scala.inline
-    def setCmDimensions(value: CampaignManagerIds): Self = StObject.set(x, "cmDimensions", value.asInstanceOf[js.Any])
+    inline def setCmDimensions(value: CampaignManagerIds): Self = StObject.set(x, "cmDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmDimensionsUndefined: Self = StObject.set(x, "cmDimensions", js.undefined)
+    inline def setCmDimensionsUndefined: Self = StObject.set(x, "cmDimensions", js.undefined)
     
-    @scala.inline
-    def setDv3Dimensions(value: DV3Ids): Self = StObject.set(x, "dv3Dimensions", value.asInstanceOf[js.Any])
+    inline def setDv3Dimensions(value: DV3Ids): Self = StObject.set(x, "dv3Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDv3DimensionsUndefined: Self = StObject.set(x, "dv3Dimensions", js.undefined)
+    inline def setDv3DimensionsUndefined: Self = StObject.set(x, "dv3Dimensions", js.undefined)
     
-    @scala.inline
-    def setInsertEventType(value: String): Self = StObject.set(x, "insertEventType", value.asInstanceOf[js.Any])
+    inline def setInsertEventType(value: String): Self = StObject.set(x, "insertEventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertEventTypeUndefined: Self = StObject.set(x, "insertEventType", js.undefined)
+    inline def setInsertEventTypeUndefined: Self = StObject.set(x, "insertEventType", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMatchId(value: String): Self = StObject.set(x, "matchId", value.asInstanceOf[js.Any])
+    inline def setMatchId(value: String): Self = StObject.set(x, "matchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchIdUndefined: Self = StObject.set(x, "matchId", js.undefined)
+    inline def setMatchIdUndefined: Self = StObject.set(x, "matchId", js.undefined)
     
-    @scala.inline
-    def setMobileDeviceId(value: String): Self = StObject.set(x, "mobileDeviceId", value.asInstanceOf[js.Any])
+    inline def setMobileDeviceId(value: String): Self = StObject.set(x, "mobileDeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileDeviceIdUndefined: Self = StObject.set(x, "mobileDeviceId", js.undefined)
+    inline def setMobileDeviceIdUndefined: Self = StObject.set(x, "mobileDeviceId", js.undefined)
   }
 }

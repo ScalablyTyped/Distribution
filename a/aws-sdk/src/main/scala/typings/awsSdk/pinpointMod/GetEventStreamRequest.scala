@@ -13,16 +13,13 @@ trait GetEventStreamRequest extends StObject {
 }
 object GetEventStreamRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): GetEventStreamRequest = {
+  inline def apply(ApplicationId: string): GetEventStreamRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEventStreamRequest]
   }
   
-  @scala.inline
-  implicit class GetEventStreamRequestMutableBuilder[Self <: GetEventStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEventStreamRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

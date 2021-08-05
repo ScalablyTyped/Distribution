@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createInMemoryCache(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemoryCache")().asInstanceOf[Cache]
-  @scala.inline
-  def createInMemoryCache(options: InMemoryCacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemoryCache")(options.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  inline def createInMemoryCache(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemoryCache")().asInstanceOf[Cache]
+  inline def createInMemoryCache(options: InMemoryCacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemoryCache")(options.asInstanceOf[js.Any]).asInstanceOf[Cache]
   
   trait InMemoryCacheOptions extends StObject {
     
@@ -25,20 +23,16 @@ object mod {
   }
   object InMemoryCacheOptions {
     
-    @scala.inline
-    def apply(): InMemoryCacheOptions = {
+    inline def apply(): InMemoryCacheOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InMemoryCacheOptions]
     }
     
-    @scala.inline
-    implicit class InMemoryCacheOptionsMutableBuilder[Self <: InMemoryCacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InMemoryCacheOptions](x: Self) {
       
-      @scala.inline
-      def setSerializable(value: Boolean): Self = StObject.set(x, "serializable", value.asInstanceOf[js.Any])
+      inline def setSerializable(value: Boolean): Self = StObject.set(x, "serializable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializableUndefined: Self = StObject.set(x, "serializable", js.undefined)
+      inline def setSerializableUndefined: Self = StObject.set(x, "serializable", js.undefined)
     }
   }
 }

@@ -17,25 +17,19 @@ trait PartialButtonTypeProps extends StObject {
 }
 object PartialButtonTypeProps {
   
-  @scala.inline
-  def apply(): PartialButtonTypeProps = {
+  inline def apply(): PartialButtonTypeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialButtonTypeProps]
   }
   
-  @scala.inline
-  implicit class PartialButtonTypePropsMutableBuilder[Self <: PartialButtonTypeProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialButtonTypeProps](x: Self) {
     
-    @scala.inline
-    def setKnob(value: ButtonTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: ButtonTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
+    inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: /* knob */ ButtonTypeKnob => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* knob */ ButtonTypeKnob => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

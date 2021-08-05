@@ -18,8 +18,7 @@ trait Argv extends StObject {
 }
 object Argv {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argv: js.Array[java.lang.String],
     build_info: java.lang.String,
     exit_status: Double,
@@ -30,28 +29,20 @@ object Argv {
     __obj.asInstanceOf[Argv]
   }
   
-  @scala.inline
-  implicit class ArgvMutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
+  extension [Self <: Argv](x: Self) {
     
-    @scala.inline
-    def setArgv(value: js.Array[java.lang.String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+    inline def setArgv(value: js.Array[java.lang.String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgvVarargs(value: java.lang.String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+    inline def setArgvVarargs(value: java.lang.String*): Self = StObject.set(x, "argv", js.Array(value :_*))
     
-    @scala.inline
-    def setBuild_info(value: java.lang.String): Self = StObject.set(x, "build_info", value.asInstanceOf[js.Any])
+    inline def setBuild_info(value: java.lang.String): Self = StObject.set(x, "build_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExit_status(value: Double): Self = StObject.set(x, "exit_status", value.asInstanceOf[js.Any])
+    inline def setExit_status(value: Double): Self = StObject.set(x, "exit_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform_info(value: java.lang.String): Self = StObject.set(x, "platform_info", value.asInstanceOf[js.Any])
+    inline def setPlatform_info(value: java.lang.String): Self = StObject.set(x, "platform_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: js.Array[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: js.Array[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

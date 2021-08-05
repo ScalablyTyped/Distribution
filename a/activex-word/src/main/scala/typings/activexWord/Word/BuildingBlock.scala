@@ -34,6 +34,6 @@ trait BuildingBlock extends StObject {
   
   var Value: String = js.native
   
-  @JSName("Word.BuildingBlock_typekey")
+  /* private */ @JSName("Word.BuildingBlock_typekey")
   var WordDotBuildingBlock_typekey: BuildingBlock = js.native
 }

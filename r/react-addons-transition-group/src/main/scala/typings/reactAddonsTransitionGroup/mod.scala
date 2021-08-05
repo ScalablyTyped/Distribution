@@ -47,26 +47,20 @@ object mod extends Shortcut {
     }
     object HTMLTransitionGroupProps {
       
-      @scala.inline
-      def apply[T](): HTMLTransitionGroupProps[T] = {
+      inline def apply[T](): HTMLTransitionGroupProps[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HTMLTransitionGroupProps[T]]
       }
       
-      @scala.inline
-      implicit class HTMLTransitionGroupPropsMutableBuilder[Self <: HTMLTransitionGroupProps[?], T] (val x: Self & HTMLTransitionGroupProps[T]) extends AnyVal {
+      extension [Self <: HTMLTransitionGroupProps[?], T](x: Self & HTMLTransitionGroupProps[T]) {
         
-        @scala.inline
-        def setChildFactory(value: /* child */ ReactElement => ReactElement): Self = StObject.set(x, "childFactory", js.Any.fromFunction1(value))
+        inline def setChildFactory(value: /* child */ ReactElement => ReactElement): Self = StObject.set(x, "childFactory", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setChildFactoryUndefined: Self = StObject.set(x, "childFactory", js.undefined)
+        inline def setChildFactoryUndefined: Self = StObject.set(x, "childFactory", js.undefined)
         
-        @scala.inline
-        def setComponent(value: ReactType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+        inline def setComponent(value: ReactType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+        inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       }
     }
     
@@ -75,8 +69,7 @@ object mod extends Shortcut {
          with HTMLTransitionGroupProps[ReactTransitionGroup]
     object TransitionGroupProps {
       
-      @scala.inline
-      def apply(): TransitionGroupProps = {
+      inline def apply(): TransitionGroupProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TransitionGroupProps]
       }

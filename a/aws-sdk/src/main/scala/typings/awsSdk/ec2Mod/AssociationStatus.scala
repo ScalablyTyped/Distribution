@@ -18,25 +18,19 @@ trait AssociationStatus extends StObject {
 }
 object AssociationStatus {
   
-  @scala.inline
-  def apply(): AssociationStatus = {
+  inline def apply(): AssociationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociationStatus]
   }
   
-  @scala.inline
-  implicit class AssociationStatusMutableBuilder[Self <: AssociationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationStatus](x: Self) {
     
-    @scala.inline
-    def setCode(value: AssociationStatusCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: AssociationStatusCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

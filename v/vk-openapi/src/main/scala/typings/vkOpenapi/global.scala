@@ -11,6 +11,5 @@ object global {
   @js.native
   def VK_ : API_ = js.native
   
-  @scala.inline
-  def VK__=(x: API_): Unit = js.Dynamic.global.updateDynamic("VK")(x.asInstanceOf[js.Any])
+  inline def VK__=(x: API_): Unit = js.Dynamic.global.updateDynamic("VK")(x.asInstanceOf[js.Any])
 }

@@ -25,8 +25,7 @@ trait Typeofremote extends StObject {
 }
 object Typeofremote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DriverService: (Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]) & TypeofDriverService,
     FileDetector: Instantiable0[FileDetector],
     SeleniumServer: Instantiable1[/* jar */ String, SeleniumServer]
@@ -35,18 +34,14 @@ object Typeofremote {
     __obj.asInstanceOf[Typeofremote]
   }
   
-  @scala.inline
-  implicit class TypeofremoteMutableBuilder[Self <: Typeofremote] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofremote](x: Self) {
     
-    @scala.inline
-    def setDriverService(
+    inline def setDriverService(
       value: (Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]) & TypeofDriverService
     ): Self = StObject.set(x, "DriverService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileDetector(value: Instantiable0[FileDetector]): Self = StObject.set(x, "FileDetector", value.asInstanceOf[js.Any])
+    inline def setFileDetector(value: Instantiable0[FileDetector]): Self = StObject.set(x, "FileDetector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeleniumServer(value: Instantiable1[/* jar */ String, SeleniumServer]): Self = StObject.set(x, "SeleniumServer", value.asInstanceOf[js.Any])
+    inline def setSeleniumServer(value: Instantiable1[/* jar */ String, SeleniumServer]): Self = StObject.set(x, "SeleniumServer", value.asInstanceOf[js.Any])
   }
 }

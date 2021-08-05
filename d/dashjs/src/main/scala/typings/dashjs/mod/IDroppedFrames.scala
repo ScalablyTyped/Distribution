@@ -13,19 +13,15 @@ trait IDroppedFrames extends StObject {
 }
 object IDroppedFrames {
   
-  @scala.inline
-  def apply(droppedFrames: Double, time: Date): IDroppedFrames = {
+  inline def apply(droppedFrames: Double, time: Date): IDroppedFrames = {
     val __obj = js.Dynamic.literal(droppedFrames = droppedFrames.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDroppedFrames]
   }
   
-  @scala.inline
-  implicit class IDroppedFramesMutableBuilder[Self <: IDroppedFrames] (val x: Self) extends AnyVal {
+  extension [Self <: IDroppedFrames](x: Self) {
     
-    @scala.inline
-    def setDroppedFrames(value: Double): Self = StObject.set(x, "droppedFrames", value.asInstanceOf[js.Any])
+    inline def setDroppedFrames(value: Double): Self = StObject.set(x, "droppedFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

@@ -16,26 +16,20 @@ object anon {
   }
   object Filename {
     
-    @scala.inline
-    def apply(id: String, stream: js.Any): Filename = {
+    inline def apply(id: String, stream: js.Any): Filename = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filename]
     }
     
-    @scala.inline
-    implicit class FilenameMutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
+    extension [Self <: Filename](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +41,16 @@ object anon {
   }
   object FilenameId {
     
-    @scala.inline
-    def apply(filename: String, id: String): FilenameId = {
+    inline def apply(filename: String, id: String): FilenameId = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilenameId]
     }
     
-    @scala.inline
-    implicit class FilenameIdMutableBuilder[Self <: FilenameId] (val x: Self) extends AnyVal {
+    extension [Self <: FilenameId](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,17 +60,14 @@ object anon {
   }
   object FilenameString {
     
-    @scala.inline
-    def apply(filename: String): FilenameString = {
+    inline def apply(filename: String): FilenameString = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilenameString]
     }
     
-    @scala.inline
-    implicit class FilenameStringMutableBuilder[Self <: FilenameString] (val x: Self) extends AnyVal {
+    extension [Self <: FilenameString](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,20 +79,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String, originalFilename: String): Id = {
+    inline def apply(id: String, originalFilename: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], originalFilename = originalFilename.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalFilename(value: String): Self = StObject.set(x, "originalFilename", value.asInstanceOf[js.Any])
+      inline def setOriginalFilename(value: String): Self = StObject.set(x, "originalFilename", value.asInstanceOf[js.Any])
     }
   }
 }

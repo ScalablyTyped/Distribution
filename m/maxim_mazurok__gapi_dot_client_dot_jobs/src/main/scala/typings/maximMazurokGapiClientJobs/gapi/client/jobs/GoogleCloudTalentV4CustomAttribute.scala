@@ -30,43 +30,31 @@ trait GoogleCloudTalentV4CustomAttribute extends StObject {
 }
 object GoogleCloudTalentV4CustomAttribute {
   
-  @scala.inline
-  def apply(): GoogleCloudTalentV4CustomAttribute = {
+  inline def apply(): GoogleCloudTalentV4CustomAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudTalentV4CustomAttribute]
   }
   
-  @scala.inline
-  implicit class GoogleCloudTalentV4CustomAttributeMutableBuilder[Self <: GoogleCloudTalentV4CustomAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudTalentV4CustomAttribute](x: Self) {
     
-    @scala.inline
-    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
-    @scala.inline
-    def setKeywordSearchable(value: Boolean): Self = StObject.set(x, "keywordSearchable", value.asInstanceOf[js.Any])
+    inline def setKeywordSearchable(value: Boolean): Self = StObject.set(x, "keywordSearchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordSearchableUndefined: Self = StObject.set(x, "keywordSearchable", js.undefined)
+    inline def setKeywordSearchableUndefined: Self = StObject.set(x, "keywordSearchable", js.undefined)
     
-    @scala.inline
-    def setLongValues(value: js.Array[String]): Self = StObject.set(x, "longValues", value.asInstanceOf[js.Any])
+    inline def setLongValues(value: js.Array[String]): Self = StObject.set(x, "longValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongValuesUndefined: Self = StObject.set(x, "longValues", js.undefined)
+    inline def setLongValuesUndefined: Self = StObject.set(x, "longValues", js.undefined)
     
-    @scala.inline
-    def setLongValuesVarargs(value: String*): Self = StObject.set(x, "longValues", js.Array(value :_*))
+    inline def setLongValuesVarargs(value: String*): Self = StObject.set(x, "longValues", js.Array(value :_*))
     
-    @scala.inline
-    def setStringValues(value: js.Array[String]): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
+    inline def setStringValues(value: js.Array[String]): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValuesUndefined: Self = StObject.set(x, "stringValues", js.undefined)
+    inline def setStringValuesUndefined: Self = StObject.set(x, "stringValues", js.undefined)
     
-    @scala.inline
-    def setStringValuesVarargs(value: String*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
+    inline def setStringValuesVarargs(value: String*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
   }
 }

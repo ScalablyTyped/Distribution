@@ -22,20 +22,16 @@ object promoteMod extends Shortcut {
   }
   object PromoteProps {
     
-    @scala.inline
-    def apply(): PromoteProps = {
+    inline def apply(): PromoteProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PromoteProps]
     }
     
-    @scala.inline
-    implicit class PromotePropsMutableBuilder[Self <: PromoteProps] (val x: Self) extends AnyVal {
+    extension [Self <: PromoteProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

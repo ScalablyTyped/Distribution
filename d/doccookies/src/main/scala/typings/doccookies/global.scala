@@ -9,6 +9,5 @@ object global {
   @JSGlobal("docCookies")
   @js.native
   def docCookies: typings.doccookies.docCookies = js.native
-  @scala.inline
-  def docCookies_=(x: docCookies): Unit = js.Dynamic.global.updateDynamic("docCookies")(x.asInstanceOf[js.Any])
+  inline def docCookies_=(x: docCookies): Unit = js.Dynamic.global.updateDynamic("docCookies")(x.asInstanceOf[js.Any])
 }

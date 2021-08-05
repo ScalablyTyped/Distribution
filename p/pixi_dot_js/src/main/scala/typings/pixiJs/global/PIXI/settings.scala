@@ -37,8 +37,7 @@ object settings {
   @JSGlobal("PIXI.settings.ANISOTROPIC_LEVEL")
   @js.native
   def ANISOTROPIC_LEVEL: Double = js.native
-  @scala.inline
-  def ANISOTROPIC_LEVEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANISOTROPIC_LEVEL")(x.asInstanceOf[js.Any])
+  inline def ANISOTROPIC_LEVEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANISOTROPIC_LEVEL")(x.asInstanceOf[js.Any])
   
   /**
     * Can we upload the same buffer in a single frame?
@@ -51,8 +50,7 @@ object settings {
   @JSGlobal("PIXI.settings.CAN_UPLOAD_SAME_BUFFER")
   @js.native
   def CAN_UPLOAD_SAME_BUFFER: Boolean = js.native
-  @scala.inline
-  def CAN_UPLOAD_SAME_BUFFER_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAN_UPLOAD_SAME_BUFFER")(x.asInstanceOf[js.Any])
+  inline def CAN_UPLOAD_SAME_BUFFER_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAN_UPLOAD_SAME_BUFFER")(x.asInstanceOf[js.Any])
   
   /**
     * Enables bitmap creation before image load. This feature is experimental.
@@ -66,8 +64,7 @@ object settings {
   @JSGlobal("PIXI.settings.CREATE_IMAGE_BITMAP")
   @js.native
   def CREATE_IMAGE_BITMAP: Boolean = js.native
-  @scala.inline
-  def CREATE_IMAGE_BITMAP_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATE_IMAGE_BITMAP")(x.asInstanceOf[js.Any])
+  inline def CREATE_IMAGE_BITMAP_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATE_IMAGE_BITMAP")(x.asInstanceOf[js.Any])
   
   /**
     * Should the `failIfMajorPerformanceCaveat` flag be enabled as a context option used in the `isWebGLSupported` function.
@@ -83,8 +80,7 @@ object settings {
   @JSGlobal("PIXI.settings.FAIL_IF_MAJOR_PERFORMANCE_CAVEAT")
   @js.native
   def FAIL_IF_MAJOR_PERFORMANCE_CAVEAT: Boolean = js.native
-  @scala.inline
-  def FAIL_IF_MAJOR_PERFORMANCE_CAVEAT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAIL_IF_MAJOR_PERFORMANCE_CAVEAT")(x.asInstanceOf[js.Any])
+  inline def FAIL_IF_MAJOR_PERFORMANCE_CAVEAT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAIL_IF_MAJOR_PERFORMANCE_CAVEAT")(x.asInstanceOf[js.Any])
   
   /**
     * Default filter resolution.
@@ -98,8 +94,7 @@ object settings {
   @JSGlobal("PIXI.settings.FILTER_RESOLUTION")
   @js.native
   def FILTER_RESOLUTION: Double = js.native
-  @scala.inline
-  def FILTER_RESOLUTION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILTER_RESOLUTION")(x.asInstanceOf[js.Any])
+  inline def FILTER_RESOLUTION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILTER_RESOLUTION")(x.asInstanceOf[js.Any])
   
   /**
     * Default Garbage Collection maximum check count.
@@ -113,8 +108,7 @@ object settings {
   @JSGlobal("PIXI.settings.GC_MAX_CHECK_COUNT")
   @js.native
   def GC_MAX_CHECK_COUNT: Double = js.native
-  @scala.inline
-  def GC_MAX_CHECK_COUNT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GC_MAX_CHECK_COUNT")(x.asInstanceOf[js.Any])
+  inline def GC_MAX_CHECK_COUNT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GC_MAX_CHECK_COUNT")(x.asInstanceOf[js.Any])
   
   /**
     * Default Garbage Collection max idle.
@@ -128,8 +122,7 @@ object settings {
   @JSGlobal("PIXI.settings.GC_MAX_IDLE")
   @js.native
   def GC_MAX_IDLE: Double = js.native
-  @scala.inline
-  def GC_MAX_IDLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GC_MAX_IDLE")(x.asInstanceOf[js.Any])
+  inline def GC_MAX_IDLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GC_MAX_IDLE")(x.asInstanceOf[js.Any])
   
   /**
     * Default Garbage Collection mode.
@@ -143,8 +136,7 @@ object settings {
   @JSGlobal("PIXI.settings.GC_MODE")
   @js.native
   def GC_MODE: typings.pixiJs.PIXI.GC_MODES = js.native
-  @scala.inline
-  def GC_MODE_=(x: typings.pixiJs.PIXI.GC_MODES): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GC_MODE")(x.asInstanceOf[js.Any])
+  inline def GC_MODE_=(x: typings.pixiJs.PIXI.GC_MODES): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GC_MODE")(x.asInstanceOf[js.Any])
   
   /**
     * If set to true WebGL will attempt make textures mimpaped by default.
@@ -159,8 +151,7 @@ object settings {
   @JSGlobal("PIXI.settings.MIPMAP_TEXTURES")
   @js.native
   def MIPMAP_TEXTURES: typings.pixiJs.PIXI.MIPMAP_MODES = js.native
-  @scala.inline
-  def MIPMAP_TEXTURES_=(x: typings.pixiJs.PIXI.MIPMAP_MODES): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIPMAP_TEXTURES")(x.asInstanceOf[js.Any])
+  inline def MIPMAP_TEXTURES_=(x: typings.pixiJs.PIXI.MIPMAP_MODES): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIPMAP_TEXTURES")(x.asInstanceOf[js.Any])
   
   /**
     * Default specify float precision in fragment shader.
@@ -175,8 +166,7 @@ object settings {
   @JSGlobal("PIXI.settings.PRECISION_FRAGMENT")
   @js.native
   def PRECISION_FRAGMENT: typings.pixiJs.PIXI.PRECISION = js.native
-  @scala.inline
-  def PRECISION_FRAGMENT_=(x: typings.pixiJs.PIXI.PRECISION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRECISION_FRAGMENT")(x.asInstanceOf[js.Any])
+  inline def PRECISION_FRAGMENT_=(x: typings.pixiJs.PIXI.PRECISION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRECISION_FRAGMENT")(x.asInstanceOf[js.Any])
   
   /**
     * Default specify float precision in vertex shader.
@@ -190,8 +180,7 @@ object settings {
   @JSGlobal("PIXI.settings.PRECISION_VERTEX")
   @js.native
   def PRECISION_VERTEX: typings.pixiJs.PIXI.PRECISION = js.native
-  @scala.inline
-  def PRECISION_VERTEX_=(x: typings.pixiJs.PIXI.PRECISION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRECISION_VERTEX")(x.asInstanceOf[js.Any])
+  inline def PRECISION_VERTEX_=(x: typings.pixiJs.PIXI.PRECISION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRECISION_VERTEX")(x.asInstanceOf[js.Any])
   
   /**
     * The maximum support for using WebGL. If a device does not
@@ -212,8 +201,7 @@ object settings {
   @JSGlobal("PIXI.settings.PREFER_ENV")
   @js.native
   def PREFER_ENV: Double = js.native
-  @scala.inline
-  def PREFER_ENV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREFER_ENV")(x.asInstanceOf[js.Any])
+  inline def PREFER_ENV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREFER_ENV")(x.asInstanceOf[js.Any])
   
   /**
     * The default render options if none are supplied to {@link PIXI.Renderer}
@@ -244,68 +232,57 @@ object settings {
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.antialias")
     @js.native
     def antialias: Boolean = js.native
-    @scala.inline
-    def antialias_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("antialias")(x.asInstanceOf[js.Any])
+    inline def antialias_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("antialias")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.autoDensity")
     @js.native
     def autoDensity: Boolean = js.native
-    @scala.inline
-    def autoDensity_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoDensity")(x.asInstanceOf[js.Any])
+    inline def autoDensity_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoDensity")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.backgroundColor")
     @js.native
     def backgroundColor: Double = js.native
-    @scala.inline
-    def backgroundColor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundColor")(x.asInstanceOf[js.Any])
+    inline def backgroundColor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundColor")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.clearBeforeRender")
     @js.native
     def clearBeforeRender: Boolean = js.native
-    @scala.inline
-    def clearBeforeRender_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearBeforeRender")(x.asInstanceOf[js.Any])
+    inline def clearBeforeRender_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearBeforeRender")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.height")
     @js.native
     def height: Double = js.native
-    @scala.inline
-    def height_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
+    inline def height_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.legacy")
     @js.native
     def legacy: Boolean = js.native
-    @scala.inline
-    def legacy_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legacy")(x.asInstanceOf[js.Any])
+    inline def legacy_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legacy")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.preserveDrawingBuffer")
     @js.native
     def preserveDrawingBuffer: Boolean = js.native
-    @scala.inline
-    def preserveDrawingBuffer_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preserveDrawingBuffer")(x.asInstanceOf[js.Any])
+    inline def preserveDrawingBuffer_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preserveDrawingBuffer")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.resolution")
     @js.native
     def resolution: Double = js.native
-    @scala.inline
-    def resolution_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolution")(x.asInstanceOf[js.Any])
+    inline def resolution_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolution")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.transparent")
     @js.native
     def transparent: Boolean = js.native
-    @scala.inline
-    def transparent_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transparent")(x.asInstanceOf[js.Any])
+    inline def transparent_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transparent")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.view")
     @js.native
     def view: HTMLCanvasElement = js.native
-    @scala.inline
-    def view_=(x: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("view")(x.asInstanceOf[js.Any])
+    inline def view_=(x: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("view")(x.asInstanceOf[js.Any])
     
     @JSGlobal("PIXI.settings.RENDER_OPTIONS.width")
     @js.native
     def width: Double = js.native
-    @scala.inline
-    def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
+    inline def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -320,8 +297,7 @@ object settings {
   @JSGlobal("PIXI.settings.RESOLUTION")
   @js.native
   def RESOLUTION: Double = js.native
-  @scala.inline
-  def RESOLUTION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESOLUTION")(x.asInstanceOf[js.Any])
+  inline def RESOLUTION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESOLUTION")(x.asInstanceOf[js.Any])
   
   /**
     * The prefix that denotes a URL is for a retina asset.
@@ -336,8 +312,7 @@ object settings {
   @JSGlobal("PIXI.settings.RETINA_PREFIX")
   @js.native
   def RETINA_PREFIX: RegExp = js.native
-  @scala.inline
-  def RETINA_PREFIX_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RETINA_PREFIX")(x.asInstanceOf[js.Any])
+  inline def RETINA_PREFIX_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RETINA_PREFIX")(x.asInstanceOf[js.Any])
   
   /**
     * If true PixiJS will Math.floor() x/y values when rendering, stopping pixel interpolation.
@@ -353,8 +328,7 @@ object settings {
   @JSGlobal("PIXI.settings.ROUND_PIXELS")
   @js.native
   def ROUND_PIXELS: Boolean = js.native
-  @scala.inline
-  def ROUND_PIXELS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROUND_PIXELS")(x.asInstanceOf[js.Any])
+  inline def ROUND_PIXELS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROUND_PIXELS")(x.asInstanceOf[js.Any])
   
   /**
     * Default scale mode for textures.
@@ -368,8 +342,7 @@ object settings {
   @JSGlobal("PIXI.settings.SCALE_MODE")
   @js.native
   def SCALE_MODE: typings.pixiJs.PIXI.SCALE_MODES = js.native
-  @scala.inline
-  def SCALE_MODE_=(x: typings.pixiJs.PIXI.SCALE_MODES): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCALE_MODE")(x.asInstanceOf[js.Any])
+  inline def SCALE_MODE_=(x: typings.pixiJs.PIXI.SCALE_MODES): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCALE_MODE")(x.asInstanceOf[js.Any])
   
   /**
     * Sets the default value for the container property 'sortableChildren'.
@@ -393,8 +366,7 @@ object settings {
   @JSGlobal("PIXI.settings.SORTABLE_CHILDREN")
   @js.native
   def SORTABLE_CHILDREN: Boolean = js.native
-  @scala.inline
-  def SORTABLE_CHILDREN_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SORTABLE_CHILDREN")(x.asInstanceOf[js.Any])
+  inline def SORTABLE_CHILDREN_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SORTABLE_CHILDREN")(x.asInstanceOf[js.Any])
   
   /**
     * The default sprite batch size.
@@ -410,8 +382,7 @@ object settings {
   @JSGlobal("PIXI.settings.SPRITE_BATCH_SIZE")
   @js.native
   def SPRITE_BATCH_SIZE: Double = js.native
-  @scala.inline
-  def SPRITE_BATCH_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPRITE_BATCH_SIZE")(x.asInstanceOf[js.Any])
+  inline def SPRITE_BATCH_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPRITE_BATCH_SIZE")(x.asInstanceOf[js.Any])
   
   /**
     * The maximum textures that this device supports.
@@ -425,8 +396,7 @@ object settings {
   @JSGlobal("PIXI.settings.SPRITE_MAX_TEXTURES")
   @js.native
   def SPRITE_MAX_TEXTURES: Double = js.native
-  @scala.inline
-  def SPRITE_MAX_TEXTURES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPRITE_MAX_TEXTURES")(x.asInstanceOf[js.Any])
+  inline def SPRITE_MAX_TEXTURES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPRITE_MAX_TEXTURES")(x.asInstanceOf[js.Any])
   
   /**
     * If set to `true`, *only* Textures and BaseTexture objects stored
@@ -447,8 +417,7 @@ object settings {
   @JSGlobal("PIXI.settings.STRICT_TEXTURE_CACHE")
   @js.native
   def STRICT_TEXTURE_CACHE: Boolean = js.native
-  @scala.inline
-  def STRICT_TEXTURE_CACHE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRICT_TEXTURE_CACHE")(x.asInstanceOf[js.Any])
+  inline def STRICT_TEXTURE_CACHE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRICT_TEXTURE_CACHE")(x.asInstanceOf[js.Any])
   
   /**
     * Target frames per millisecond.
@@ -462,8 +431,7 @@ object settings {
   @JSGlobal("PIXI.settings.TARGET_FPMS")
   @js.native
   def TARGET_FPMS: Double = js.native
-  @scala.inline
-  def TARGET_FPMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TARGET_FPMS")(x.asInstanceOf[js.Any])
+  inline def TARGET_FPMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TARGET_FPMS")(x.asInstanceOf[js.Any])
   
   /**
     * Default number of uploads per frame using prepare plugin.
@@ -477,8 +445,7 @@ object settings {
   @JSGlobal("PIXI.settings.UPLOADS_PER_FRAME")
   @js.native
   def UPLOADS_PER_FRAME: Double = js.native
-  @scala.inline
-  def UPLOADS_PER_FRAME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPLOADS_PER_FRAME")(x.asInstanceOf[js.Any])
+  inline def UPLOADS_PER_FRAME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPLOADS_PER_FRAME")(x.asInstanceOf[js.Any])
   
   /**
     * Default wrap modes that are supported by pixi.
@@ -492,6 +459,5 @@ object settings {
   @JSGlobal("PIXI.settings.WRAP_MODE")
   @js.native
   def WRAP_MODE: typings.pixiJs.PIXI.WRAP_MODES = js.native
-  @scala.inline
-  def WRAP_MODE_=(x: typings.pixiJs.PIXI.WRAP_MODES): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WRAP_MODE")(x.asInstanceOf[js.Any])
+  inline def WRAP_MODE_=(x: typings.pixiJs.PIXI.WRAP_MODES): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WRAP_MODE")(x.asInstanceOf[js.Any])
 }

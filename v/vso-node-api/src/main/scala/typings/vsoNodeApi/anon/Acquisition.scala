@@ -20,8 +20,7 @@ trait Acquisition extends StObject {
 }
 object Acquisition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquisition: scala.Double,
     install: scala.Double,
     other: scala.Double,
@@ -33,25 +32,18 @@ object Acquisition {
     __obj.asInstanceOf[Acquisition]
   }
   
-  @scala.inline
-  implicit class AcquisitionMutableBuilder[Self <: Acquisition] (val x: Self) extends AnyVal {
+  extension [Self <: Acquisition](x: Self) {
     
-    @scala.inline
-    def setAcquisition(value: scala.Double): Self = StObject.set(x, "acquisition", value.asInstanceOf[js.Any])
+    inline def setAcquisition(value: scala.Double): Self = StObject.set(x, "acquisition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstall(value: scala.Double): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
+    inline def setInstall(value: scala.Double): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: scala.Double): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: scala.Double): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReview(value: scala.Double): Self = StObject.set(x, "review", value.asInstanceOf[js.Any])
+    inline def setReview(value: scala.Double): Self = StObject.set(x, "review", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSales(value: scala.Double): Self = StObject.set(x, "sales", value.asInstanceOf[js.Any])
+    inline def setSales(value: scala.Double): Self = StObject.set(x, "sales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninstall(value: scala.Double): Self = StObject.set(x, "uninstall", value.asInstanceOf[js.Any])
+    inline def setUninstall(value: scala.Double): Self = StObject.set(x, "uninstall", value.asInstanceOf[js.Any])
   }
 }

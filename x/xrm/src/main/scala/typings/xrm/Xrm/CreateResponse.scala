@@ -15,19 +15,15 @@ trait CreateResponse extends StObject {
 }
 object CreateResponse {
   
-  @scala.inline
-  def apply(entityType: String, id: String): CreateResponse = {
+  inline def apply(entityType: String, id: String): CreateResponse = {
     val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResponse]
   }
   
-  @scala.inline
-  implicit class CreateResponseMutableBuilder[Self <: CreateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResponse](x: Self) {
     
-    @scala.inline
-    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

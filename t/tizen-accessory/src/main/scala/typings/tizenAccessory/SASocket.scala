@@ -22,8 +22,7 @@ trait SASocket extends StObject {
 }
 object SASocket {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     isConnected: () => Boolean,
     peerAgent: SAPeerAgent,
@@ -36,28 +35,20 @@ object SASocket {
     __obj.asInstanceOf[SASocket]
   }
   
-  @scala.inline
-  implicit class SASocketMutableBuilder[Self <: SASocket] (val x: Self) extends AnyVal {
+  extension [Self <: SASocket](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
+    inline def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPeerAgent(value: SAPeerAgent): Self = StObject.set(x, "peerAgent", value.asInstanceOf[js.Any])
+    inline def setPeerAgent(value: SAPeerAgent): Self = StObject.set(x, "peerAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendData(value: (Double, String) => Unit): Self = StObject.set(x, "sendData", js.Any.fromFunction2(value))
+    inline def setSendData(value: (Double, String) => Unit): Self = StObject.set(x, "sendData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSendSecureData(value: (Double, String) => Unit): Self = StObject.set(x, "sendSecureData", js.Any.fromFunction2(value))
+    inline def setSendSecureData(value: (Double, String) => Unit): Self = StObject.set(x, "sendSecureData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDataReceiveListener(value: js.Function2[/* channelId */ Double, /* data */ String, Unit] => Unit): Self = StObject.set(x, "setDataReceiveListener", js.Any.fromFunction1(value))
+    inline def setSetDataReceiveListener(value: js.Function2[/* channelId */ Double, /* data */ String, Unit] => Unit): Self = StObject.set(x, "setDataReceiveListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSocketStatusListener(value: js.Function1[/* reason */ String, Unit] => Unit): Self = StObject.set(x, "setSocketStatusListener", js.Any.fromFunction1(value))
+    inline def setSetSocketStatusListener(value: js.Function1[/* reason */ String, Unit] => Unit): Self = StObject.set(x, "setSocketStatusListener", js.Any.fromFunction1(value))
   }
 }

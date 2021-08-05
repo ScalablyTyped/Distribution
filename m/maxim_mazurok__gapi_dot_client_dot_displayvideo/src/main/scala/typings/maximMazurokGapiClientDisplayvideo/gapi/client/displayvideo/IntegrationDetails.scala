@@ -17,25 +17,19 @@ trait IntegrationDetails extends StObject {
 }
 object IntegrationDetails {
   
-  @scala.inline
-  def apply(): IntegrationDetails = {
+  inline def apply(): IntegrationDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegrationDetails]
   }
   
-  @scala.inline
-  implicit class IntegrationDetailsMutableBuilder[Self <: IntegrationDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IntegrationDetails](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setIntegrationCode(value: String): Self = StObject.set(x, "integrationCode", value.asInstanceOf[js.Any])
+    inline def setIntegrationCode(value: String): Self = StObject.set(x, "integrationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationCodeUndefined: Self = StObject.set(x, "integrationCode", js.undefined)
+    inline def setIntegrationCodeUndefined: Self = StObject.set(x, "integrationCode", js.undefined)
   }
 }

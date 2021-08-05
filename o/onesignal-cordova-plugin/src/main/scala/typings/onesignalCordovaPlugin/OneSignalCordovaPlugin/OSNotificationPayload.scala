@@ -46,8 +46,7 @@ trait OSNotificationPayload extends StObject {
 }
 object OSNotificationPayload {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionButtons: js.Array[OSActionButton],
     body: String,
     notificationID: String,
@@ -59,106 +58,72 @@ object OSNotificationPayload {
     __obj.asInstanceOf[OSNotificationPayload]
   }
   
-  @scala.inline
-  implicit class OSNotificationPayloadMutableBuilder[Self <: OSNotificationPayload] (val x: Self) extends AnyVal {
+  extension [Self <: OSNotificationPayload](x: Self) {
     
-    @scala.inline
-    def setActionButtons(value: js.Array[OSActionButton]): Self = StObject.set(x, "actionButtons", value.asInstanceOf[js.Any])
+    inline def setActionButtons(value: js.Array[OSActionButton]): Self = StObject.set(x, "actionButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionButtonsVarargs(value: OSActionButton*): Self = StObject.set(x, "actionButtons", js.Array(value :_*))
+    inline def setActionButtonsVarargs(value: OSActionButton*): Self = StObject.set(x, "actionButtons", js.Array(value :_*))
     
-    @scala.inline
-    def setAdditionalData(value: js.Any): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+    inline def setAdditionalData(value: js.Any): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
+    inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageLayout(value: OSBackgroundImageLayout): Self = StObject.set(x, "backgroundImageLayout", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageLayout(value: OSBackgroundImageLayout): Self = StObject.set(x, "backgroundImageLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageLayoutUndefined: Self = StObject.set(x, "backgroundImageLayout", js.undefined)
+    inline def setBackgroundImageLayoutUndefined: Self = StObject.set(x, "backgroundImageLayout", js.undefined)
     
-    @scala.inline
-    def setBigPicture(value: String): Self = StObject.set(x, "bigPicture", value.asInstanceOf[js.Any])
+    inline def setBigPicture(value: String): Self = StObject.set(x, "bigPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigPictureUndefined: Self = StObject.set(x, "bigPicture", js.undefined)
+    inline def setBigPictureUndefined: Self = StObject.set(x, "bigPicture", js.undefined)
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromProjectNumber(value: String): Self = StObject.set(x, "fromProjectNumber", value.asInstanceOf[js.Any])
+    inline def setFromProjectNumber(value: String): Self = StObject.set(x, "fromProjectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromProjectNumberUndefined: Self = StObject.set(x, "fromProjectNumber", js.undefined)
+    inline def setFromProjectNumberUndefined: Self = StObject.set(x, "fromProjectNumber", js.undefined)
     
-    @scala.inline
-    def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
+    inline def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
+    inline def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
     
-    @scala.inline
-    def setGroupMessage(value: String): Self = StObject.set(x, "groupMessage", value.asInstanceOf[js.Any])
+    inline def setGroupMessage(value: String): Self = StObject.set(x, "groupMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupMessageUndefined: Self = StObject.set(x, "groupMessage", js.undefined)
+    inline def setGroupMessageUndefined: Self = StObject.set(x, "groupMessage", js.undefined)
     
-    @scala.inline
-    def setLargeIcon(value: String): Self = StObject.set(x, "largeIcon", value.asInstanceOf[js.Any])
+    inline def setLargeIcon(value: String): Self = StObject.set(x, "largeIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeIconUndefined: Self = StObject.set(x, "largeIcon", js.undefined)
+    inline def setLargeIconUndefined: Self = StObject.set(x, "largeIcon", js.undefined)
     
-    @scala.inline
-    def setLaunchURL(value: String): Self = StObject.set(x, "launchURL", value.asInstanceOf[js.Any])
+    inline def setLaunchURL(value: String): Self = StObject.set(x, "launchURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchURLUndefined: Self = StObject.set(x, "launchURL", js.undefined)
+    inline def setLaunchURLUndefined: Self = StObject.set(x, "launchURL", js.undefined)
     
-    @scala.inline
-    def setLedColor(value: String): Self = StObject.set(x, "ledColor", value.asInstanceOf[js.Any])
+    inline def setLedColor(value: String): Self = StObject.set(x, "ledColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLedColorUndefined: Self = StObject.set(x, "ledColor", js.undefined)
+    inline def setLedColorUndefined: Self = StObject.set(x, "ledColor", js.undefined)
     
-    @scala.inline
-    def setLockScreenVisibility(value: OSLockScreenVisibility): Self = StObject.set(x, "lockScreenVisibility", value.asInstanceOf[js.Any])
+    inline def setLockScreenVisibility(value: OSLockScreenVisibility): Self = StObject.set(x, "lockScreenVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockScreenVisibilityUndefined: Self = StObject.set(x, "lockScreenVisibility", js.undefined)
+    inline def setLockScreenVisibilityUndefined: Self = StObject.set(x, "lockScreenVisibility", js.undefined)
     
-    @scala.inline
-    def setNotificationID(value: String): Self = StObject.set(x, "notificationID", value.asInstanceOf[js.Any])
+    inline def setNotificationID(value: String): Self = StObject.set(x, "notificationID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setRawPayload(value: String): Self = StObject.set(x, "rawPayload", value.asInstanceOf[js.Any])
+    inline def setRawPayload(value: String): Self = StObject.set(x, "rawPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallIcon(value: String): Self = StObject.set(x, "smallIcon", value.asInstanceOf[js.Any])
+    inline def setSmallIcon(value: String): Self = StObject.set(x, "smallIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallIconAccentColor(value: String): Self = StObject.set(x, "smallIconAccentColor", value.asInstanceOf[js.Any])
+    inline def setSmallIconAccentColor(value: String): Self = StObject.set(x, "smallIconAccentColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallIconAccentColorUndefined: Self = StObject.set(x, "smallIconAccentColor", js.undefined)
+    inline def setSmallIconAccentColorUndefined: Self = StObject.set(x, "smallIconAccentColor", js.undefined)
     
-    @scala.inline
-    def setSmallIconUndefined: Self = StObject.set(x, "smallIcon", js.undefined)
+    inline def setSmallIconUndefined: Self = StObject.set(x, "smallIcon", js.undefined)
     
-    @scala.inline
-    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -26,31 +26,23 @@ trait IonHeader extends StObject {
 }
 object IonHeader {
   
-  @scala.inline
-  def apply(): IonHeader = {
+  inline def apply(): IonHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonHeader]
   }
   
-  @scala.inline
-  implicit class IonHeaderMutableBuilder[Self <: IonHeader] (val x: Self) extends AnyVal {
+  extension [Self <: IonHeader](x: Self) {
     
-    @scala.inline
-    def setCollapse(value: condense): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+    inline def setCollapse(value: condense): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

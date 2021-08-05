@@ -47,8 +47,7 @@ object anon {
   }
   object GetServerSideProps {
     
-    @scala.inline
-    def apply[S /* <: js.Object */, A /* <: Action[js.Any] */](
+    inline def apply[S /* <: js.Object */, A /* <: Action[js.Any] */](
       getServerSideProps: js.Function1[/* context */ GetServerSidePropsContext & (Store[S, A]), Unit | js.Any] => typings.next.mod.GetServerSideProps[js.Any, ParsedUrlQuery],
       getStaticProps: js.Function1[/* context */ GetStaticPropsContext & (Store[S, A]), Unit | js.Any] => GetStaticProps[js.Any, ParsedUrlQuery],
       withRedux: js.Any => FunctionComponentWrapperP
@@ -57,21 +56,17 @@ object anon {
       __obj.asInstanceOf[GetServerSideProps[S, A]]
     }
     
-    @scala.inline
-    implicit class GetServerSidePropsMutableBuilder[Self <: GetServerSideProps[?, ?], S /* <: js.Object */, A /* <: Action[js.Any] */] (val x: Self & (GetServerSideProps[S, A])) extends AnyVal {
+    extension [Self <: GetServerSideProps[?, ?], S /* <: js.Object */, A /* <: Action[js.Any] */](x: Self & (GetServerSideProps[S, A])) {
       
-      @scala.inline
-      def setGetServerSideProps(
+      inline def setGetServerSideProps(
         value: js.Function1[/* context */ GetServerSidePropsContext & (Store[S, A]), Unit | js.Any] => typings.next.mod.GetServerSideProps[js.Any, ParsedUrlQuery]
       ): Self = StObject.set(x, "getServerSideProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStaticProps(
+      inline def setGetStaticProps(
         value: js.Function1[/* context */ GetStaticPropsContext & (Store[S, A]), Unit | js.Any] => GetStaticProps[js.Any, ParsedUrlQuery]
       ): Self = StObject.set(x, "getStaticProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWithRedux(value: js.Any => FunctionComponentWrapperP): Self = StObject.set(x, "withRedux", js.Any.fromFunction1(value))
+      inline def setWithRedux(value: js.Any => FunctionComponentWrapperP): Self = StObject.set(x, "withRedux", js.Any.fromFunction1(value))
     }
   }
   
@@ -86,32 +81,24 @@ object anon {
   }
   object PartialWrapperProps {
     
-    @scala.inline
-    def apply(): PartialWrapperProps = {
+    inline def apply(): PartialWrapperProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialWrapperProps]
     }
     
-    @scala.inline
-    implicit class PartialWrapperPropsMutableBuilder[Self <: PartialWrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: PartialWrapperProps](x: Self) {
       
-      @scala.inline
-      def setInitialProps(value: js.Any): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
+      inline def setInitialProps(value: js.Any): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPropsUndefined: Self = StObject.set(x, "initialProps", js.undefined)
+      inline def setInitialPropsUndefined: Self = StObject.set(x, "initialProps", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: js.Any): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: js.Any): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setPageProps(value: js.Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
+      inline def setPageProps(value: js.Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagePropsUndefined: Self = StObject.set(x, "pageProps", js.undefined)
+      inline def setPagePropsUndefined: Self = StObject.set(x, "pageProps", js.undefined)
     }
   }
   
@@ -121,17 +108,14 @@ object anon {
   }
   object Store {
     
-    @scala.inline
-    def apply[S /* <: js.Object */, A /* <: Action[js.Any] */](store: typings.redux.mod.Store[S, A]): Store[S, A] = {
+    inline def apply[S /* <: js.Object */, A /* <: Action[js.Any] */](store: typings.redux.mod.Store[S, A]): Store[S, A] = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[Store[S, A]]
     }
     
-    @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store[?, ?], S /* <: js.Object */, A /* <: Action[js.Any] */] (val x: Self & (Store[S, A])) extends AnyVal {
+    extension [Self <: Store[?, ?], S /* <: js.Object */, A /* <: Action[js.Any] */](x: Self & (Store[S, A])) {
       
-      @scala.inline
-      def setStore(value: typings.redux.mod.Store[S, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: typings.redux.mod.Store[S, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,32 +130,24 @@ object anon {
   }
   object WeakValidationMapWrapperP {
     
-    @scala.inline
-    def apply(): WeakValidationMapWrapperP = {
+    inline def apply(): WeakValidationMapWrapperP = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WeakValidationMapWrapperP]
     }
     
-    @scala.inline
-    implicit class WeakValidationMapWrapperPMutableBuilder[Self <: WeakValidationMapWrapperP] (val x: Self) extends AnyVal {
+    extension [Self <: WeakValidationMapWrapperP](x: Self) {
       
-      @scala.inline
-      def setInitialProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
+      inline def setInitialProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPropsUndefined: Self = StObject.set(x, "initialProps", js.undefined)
+      inline def setInitialPropsUndefined: Self = StObject.set(x, "initialProps", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setPageProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
+      inline def setPageProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagePropsUndefined: Self = StObject.set(x, "pageProps", js.undefined)
+      inline def setPagePropsUndefined: Self = StObject.set(x, "pageProps", js.undefined)
     }
   }
 }

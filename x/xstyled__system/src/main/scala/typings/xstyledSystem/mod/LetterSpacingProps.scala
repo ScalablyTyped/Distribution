@@ -14,27 +14,22 @@ trait LetterSpacingProps[TLength] extends StObject {
 }
 object LetterSpacingProps {
   
-  @scala.inline
-  def apply[TLength](): LetterSpacingProps[TLength] = {
+  inline def apply[TLength](): LetterSpacingProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LetterSpacingProps[TLength]]
   }
   
-  @scala.inline
-  implicit class LetterSpacingPropsMutableBuilder[Self <: LetterSpacingProps[?], TLength] (val x: Self & LetterSpacingProps[TLength]) extends AnyVal {
+  extension [Self <: LetterSpacingProps[?], TLength](x: Self & LetterSpacingProps[TLength]) {
     
-    @scala.inline
-    def setLetterSpacing(
+    inline def setLetterSpacing(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
-    @scala.inline
-    def setLetterSpacingVarargs(
+    inline def setLetterSpacingVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any)*
     ): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
   }

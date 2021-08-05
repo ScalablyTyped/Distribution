@@ -13,16 +13,13 @@ trait CompromisedCredentialsActionsType extends StObject {
 }
 object CompromisedCredentialsActionsType {
   
-  @scala.inline
-  def apply(EventAction: CompromisedCredentialsEventActionType): CompromisedCredentialsActionsType = {
+  inline def apply(EventAction: CompromisedCredentialsEventActionType): CompromisedCredentialsActionsType = {
     val __obj = js.Dynamic.literal(EventAction = EventAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompromisedCredentialsActionsType]
   }
   
-  @scala.inline
-  implicit class CompromisedCredentialsActionsTypeMutableBuilder[Self <: CompromisedCredentialsActionsType] (val x: Self) extends AnyVal {
+  extension [Self <: CompromisedCredentialsActionsType](x: Self) {
     
-    @scala.inline
-    def setEventAction(value: CompromisedCredentialsEventActionType): Self = StObject.set(x, "EventAction", value.asInstanceOf[js.Any])
+    inline def setEventAction(value: CompromisedCredentialsEventActionType): Self = StObject.set(x, "EventAction", value.asInstanceOf[js.Any])
   }
 }

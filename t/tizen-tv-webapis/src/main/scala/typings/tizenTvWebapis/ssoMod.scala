@@ -41,17 +41,14 @@ object ssoMod {
   }
   object SsoCallData {
     
-    @scala.inline
-    def apply(status: String): SsoCallData = {
+    inline def apply(status: String): SsoCallData = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[SsoCallData]
     }
     
-    @scala.inline
-    implicit class SsoCallDataMutableBuilder[Self <: SsoCallData] (val x: Self) extends AnyVal {
+    extension [Self <: SsoCallData](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,29 +68,22 @@ object ssoMod {
   }
   object SsoData {
     
-    @scala.inline
-    def apply(authToken: String, bLogin: Boolean, guid: String, id: String, uid: String): SsoData = {
+    inline def apply(authToken: String, bLogin: Boolean, guid: String, id: String, uid: String): SsoData = {
       val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], bLogin = bLogin.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
       __obj.asInstanceOf[SsoData]
     }
     
-    @scala.inline
-    implicit class SsoDataMutableBuilder[Self <: SsoData] (val x: Self) extends AnyVal {
+    extension [Self <: SsoData](x: Self) {
       
-      @scala.inline
-      def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+      inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLogin(value: Boolean): Self = StObject.set(x, "bLogin", value.asInstanceOf[js.Any])
+      inline def setBLogin(value: Boolean): Self = StObject.set(x, "bLogin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+      inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
   

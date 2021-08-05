@@ -13,22 +13,17 @@ trait GetContainerAPIMetadataResult extends StObject {
 }
 object GetContainerAPIMetadataResult {
   
-  @scala.inline
-  def apply(): GetContainerAPIMetadataResult = {
+  inline def apply(): GetContainerAPIMetadataResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContainerAPIMetadataResult]
   }
   
-  @scala.inline
-  implicit class GetContainerAPIMetadataResultMutableBuilder[Self <: GetContainerAPIMetadataResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetContainerAPIMetadataResult](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: ContainerServiceMetadataEntryList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ContainerServiceMetadataEntryList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setMetadataVarargs(value: ContainerServiceMetadataEntry*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: ContainerServiceMetadataEntry*): Self = StObject.set(x, "metadata", js.Array(value :_*))
   }
 }

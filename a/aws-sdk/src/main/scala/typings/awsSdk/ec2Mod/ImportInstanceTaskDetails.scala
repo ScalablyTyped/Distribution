@@ -28,40 +28,29 @@ trait ImportInstanceTaskDetails extends StObject {
 }
 object ImportInstanceTaskDetails {
   
-  @scala.inline
-  def apply(): ImportInstanceTaskDetails = {
+  inline def apply(): ImportInstanceTaskDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportInstanceTaskDetails]
   }
   
-  @scala.inline
-  implicit class ImportInstanceTaskDetailsMutableBuilder[Self <: ImportInstanceTaskDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ImportInstanceTaskDetails](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: PlatformValues): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: PlatformValues): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
-    @scala.inline
-    def setVolumes(value: ImportInstanceVolumeDetailSet): Self = StObject.set(x, "Volumes", value.asInstanceOf[js.Any])
+    inline def setVolumes(value: ImportInstanceVolumeDetailSet): Self = StObject.set(x, "Volumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesUndefined: Self = StObject.set(x, "Volumes", js.undefined)
+    inline def setVolumesUndefined: Self = StObject.set(x, "Volumes", js.undefined)
     
-    @scala.inline
-    def setVolumesVarargs(value: ImportInstanceVolumeDetailItem*): Self = StObject.set(x, "Volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: ImportInstanceVolumeDetailItem*): Self = StObject.set(x, "Volumes", js.Array(value :_*))
   }
 }

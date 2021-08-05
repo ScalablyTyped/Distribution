@@ -25,61 +25,43 @@ trait WebHookOptions extends StObject {
 }
 object WebHookOptions {
   
-  @scala.inline
-  def apply(): WebHookOptions = {
+  inline def apply(): WebHookOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebHookOptions]
   }
   
-  @scala.inline
-  implicit class WebHookOptionsMutableBuilder[Self <: WebHookOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebHookOptions](x: Self) {
     
-    @scala.inline
-    def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
+    inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
+    inline def setAutoOpenUndefined: Self = StObject.set(x, "autoOpen", js.undefined)
     
-    @scala.inline
-    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
-    @scala.inline
-    def setHealthEndpoint(value: String): Self = StObject.set(x, "healthEndpoint", value.asInstanceOf[js.Any])
+    inline def setHealthEndpoint(value: String): Self = StObject.set(x, "healthEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthEndpointUndefined: Self = StObject.set(x, "healthEndpoint", js.undefined)
+    inline def setHealthEndpointUndefined: Self = StObject.set(x, "healthEndpoint", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setHttps(value: ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    inline def setHttps(value: ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+    inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+    inline def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
+    inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

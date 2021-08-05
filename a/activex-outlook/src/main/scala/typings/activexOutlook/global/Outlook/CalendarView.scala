@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.CalendarView")
 @js.native
-class CalendarView protected ()
+/* private */ class CalendarView ()
   extends StObject
      with typings.activexOutlook.Outlook.CalendarView {
   
@@ -82,7 +82,7 @@ class CalendarView protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.CalendarView_typekey")
   var OutlookDotCalendarView_typekey: typings.activexOutlook.Outlook.CalendarView = js.native
   

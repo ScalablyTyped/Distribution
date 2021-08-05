@@ -21,11 +21,9 @@ object localeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapLocale(http: AxiosInstance, data: LocaleProps): Locale = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapLocale")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Locale]
+  inline def wrapLocale(http: AxiosInstance, data: LocaleProps): Locale = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapLocale")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Locale]
   
-  @scala.inline
-  def wrapLocaleCollection(http: AxiosInstance, data: CollectionProp[LocaleProps]): Collection[Locale, LocaleProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapLocaleCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Locale, LocaleProps]]
+  inline def wrapLocaleCollection(http: AxiosInstance, data: CollectionProp[LocaleProps]): Collection[Locale, LocaleProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapLocaleCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Locale, LocaleProps]]
   
   type CreateLocaleProps = SetOptional[
     ExceptLocalePropssys, 
@@ -80,8 +78,7 @@ object localeMod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: String,
       contentDeliveryApi: Boolean,
       contentManagementApi: Boolean,
@@ -98,14 +95,11 @@ object localeMod {
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[Locale]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[Locale]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -150,8 +144,7 @@ object localeMod {
   }
   object LocaleProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: String,
       contentDeliveryApi: Boolean,
       contentManagementApi: Boolean,
@@ -165,32 +158,23 @@ object localeMod {
       __obj.asInstanceOf[LocaleProps]
     }
     
-    @scala.inline
-    implicit class LocalePropsMutableBuilder[Self <: LocaleProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocaleProps](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentDeliveryApi(value: Boolean): Self = StObject.set(x, "contentDeliveryApi", value.asInstanceOf[js.Any])
+      inline def setContentDeliveryApi(value: Boolean): Self = StObject.set(x, "contentDeliveryApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentManagementApi(value: Boolean): Self = StObject.set(x, "contentManagementApi", value.asInstanceOf[js.Any])
+      inline def setContentManagementApi(value: Boolean): Self = StObject.set(x, "contentManagementApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackCode(value: String): Self = StObject.set(x, "fallbackCode", value.asInstanceOf[js.Any])
+      inline def setFallbackCode(value: String): Self = StObject.set(x, "fallbackCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

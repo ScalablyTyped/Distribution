@@ -107,8 +107,7 @@ object mod {
   }
   object Art {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       artwork: (/* options */ js.Object, /* callback */ js.UndefOr[Cb]) => Art,
       font: (/* text */ String, /* font */ js.UndefOr[String], /* styleOrCallback */ js.UndefOr[String | Cb], /* callback */ js.UndefOr[Cb]) => Art,
       image: (/* options */ js.Object, /* callback */ js.UndefOr[Cb]) => Art,
@@ -124,40 +123,29 @@ object mod {
       __obj.asInstanceOf[Art]
     }
     
-    @scala.inline
-    implicit class ArtMutableBuilder[Self <: Art] (val x: Self) extends AnyVal {
+    extension [Self <: Art](x: Self) {
       
-      @scala.inline
-      def setArtwork(value: (/* options */ js.Object, /* callback */ js.UndefOr[Cb]) => Art): Self = StObject.set(x, "artwork", js.Any.fromFunction2(value))
+      inline def setArtwork(value: (/* options */ js.Object, /* callback */ js.UndefOr[Cb]) => Art): Self = StObject.set(x, "artwork", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFont(
+      inline def setFont(
         value: (/* text */ String, /* font */ js.UndefOr[String], /* styleOrCallback */ js.UndefOr[String | Cb], /* callback */ js.UndefOr[Cb]) => Art
       ): Self = StObject.set(x, "font", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setImage(value: (/* options */ js.Object, /* callback */ js.UndefOr[Cb]) => Art): Self = StObject.set(x, "image", js.Any.fromFunction2(value))
+      inline def setImage(value: (/* options */ js.Object, /* callback */ js.UndefOr[Cb]) => Art): Self = StObject.set(x, "image", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setJoin(value: JoinType): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      inline def setJoin(value: JoinType): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: LinesType): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: LinesType): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlay(value: OverlayType): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: OverlayType): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: (/* text */ String, /* style */ js.UndefOr[String], /* close */ js.UndefOr[Boolean]) => Art): Self = StObject.set(x, "style", js.Any.fromFunction3(value))
+      inline def setStyle(value: (/* text */ String, /* style */ js.UndefOr[String], /* close */ js.UndefOr[Boolean]) => Art): Self = StObject.set(x, "style", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTable(value: (/* options */ js.Object, /* callback */ js.UndefOr[Cb]) => Art): Self = StObject.set(x, "table", js.Any.fromFunction2(value))
+      inline def setTable(value: (/* options */ js.Object, /* callback */ js.UndefOr[Cb]) => Art): Self = StObject.set(x, "table", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToPromise(value: () => js.Promise[String]): Self = StObject.set(x, "toPromise", js.Any.fromFunction0(value))
+      inline def setToPromise(value: () => js.Promise[String]): Self = StObject.set(x, "toPromise", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWorking(value: Boolean): Self = StObject.set(x, "working", value.asInstanceOf[js.Any])
+      inline def setWorking(value: Boolean): Self = StObject.set(x, "working", value.asInstanceOf[js.Any])
     }
   }
   

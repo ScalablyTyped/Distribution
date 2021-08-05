@@ -31,8 +31,7 @@ trait XHyperlinkControl
 }
 object XHyperlinkControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ControlContext: XPropertyControlContext,
     ControlType: Double,
     ControlWindow: XWindow,
@@ -47,13 +46,10 @@ object XHyperlinkControl {
     __obj.asInstanceOf[XHyperlinkControl]
   }
   
-  @scala.inline
-  implicit class XHyperlinkControlMutableBuilder[Self <: XHyperlinkControl] (val x: Self) extends AnyVal {
+  extension [Self <: XHyperlinkControl](x: Self) {
     
-    @scala.inline
-    def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
+    inline def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveActionListener(value: XActionListener => Unit): Self = StObject.set(x, "removeActionListener", js.Any.fromFunction1(value))
+    inline def setRemoveActionListener(value: XActionListener => Unit): Self = StObject.set(x, "removeActionListener", js.Any.fromFunction1(value))
   }
 }

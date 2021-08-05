@@ -12,6 +12,5 @@ object dialogStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IDialogStyleProps): IDialogStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDialogStyles]
+  inline def getStyles(props: IDialogStyleProps): IDialogStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDialogStyles]
 }

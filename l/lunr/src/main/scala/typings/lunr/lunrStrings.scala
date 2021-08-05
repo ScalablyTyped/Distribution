@@ -8,6 +8,5 @@ object lunrStrings {
   
   @js.native
   sealed trait QueryParseError extends StObject
-  @scala.inline
-  def QueryParseError: QueryParseError = "QueryParseError".asInstanceOf[QueryParseError]
+  inline def QueryParseError: QueryParseError = "QueryParseError".asInstanceOf[QueryParseError]
 }

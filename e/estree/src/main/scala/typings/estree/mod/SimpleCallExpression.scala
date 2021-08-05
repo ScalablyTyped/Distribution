@@ -17,20 +17,16 @@ trait SimpleCallExpression
 }
 object SimpleCallExpression {
   
-  @scala.inline
-  def apply(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super, optional: Boolean): SimpleCallExpression = {
+  inline def apply(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super, optional: Boolean): SimpleCallExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CallExpression")
     __obj.asInstanceOf[SimpleCallExpression]
   }
   
-  @scala.inline
-  implicit class SimpleCallExpressionMutableBuilder[Self <: SimpleCallExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleCallExpression](x: Self) {
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.CallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.CallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

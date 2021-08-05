@@ -13,22 +13,17 @@ trait ExecuteSqlResponse extends StObject {
 }
 object ExecuteSqlResponse {
   
-  @scala.inline
-  def apply(): ExecuteSqlResponse = {
+  inline def apply(): ExecuteSqlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecuteSqlResponse]
   }
   
-  @scala.inline
-  implicit class ExecuteSqlResponseMutableBuilder[Self <: ExecuteSqlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteSqlResponse](x: Self) {
     
-    @scala.inline
-    def setSqlStatementResults(value: SqlStatementResults): Self = StObject.set(x, "sqlStatementResults", value.asInstanceOf[js.Any])
+    inline def setSqlStatementResults(value: SqlStatementResults): Self = StObject.set(x, "sqlStatementResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlStatementResultsUndefined: Self = StObject.set(x, "sqlStatementResults", js.undefined)
+    inline def setSqlStatementResultsUndefined: Self = StObject.set(x, "sqlStatementResults", js.undefined)
     
-    @scala.inline
-    def setSqlStatementResultsVarargs(value: SqlStatementResult*): Self = StObject.set(x, "sqlStatementResults", js.Array(value :_*))
+    inline def setSqlStatementResultsVarargs(value: SqlStatementResult*): Self = StObject.set(x, "sqlStatementResults", js.Array(value :_*))
   }
 }

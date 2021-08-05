@@ -14,17 +14,14 @@ trait I18nFormatModule
 }
 object I18nFormatModule {
   
-  @scala.inline
-  def apply(): I18nFormatModule = {
+  inline def apply(): I18nFormatModule = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("i18nFormat")
     __obj.asInstanceOf[I18nFormatModule]
   }
   
-  @scala.inline
-  implicit class I18nFormatModuleMutableBuilder[Self <: I18nFormatModule] (val x: Self) extends AnyVal {
+  extension [Self <: I18nFormatModule](x: Self) {
     
-    @scala.inline
-    def setType(value: i18nFormat): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: i18nFormat): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait InternalLocation extends StObject {
 }
 object InternalLocation {
   
-  @scala.inline
-  def apply(latitude: Double, longitude: Double): InternalLocation = {
+  inline def apply(latitude: Double, longitude: Double): InternalLocation = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalLocation]
   }
   
-  @scala.inline
-  implicit class InternalLocationMutableBuilder[Self <: InternalLocation] (val x: Self) extends AnyVal {
+  extension [Self <: InternalLocation](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }
 }

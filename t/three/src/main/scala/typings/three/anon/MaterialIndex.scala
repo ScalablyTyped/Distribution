@@ -14,25 +14,19 @@ trait MaterialIndex extends StObject {
 }
 object MaterialIndex {
   
-  @scala.inline
-  def apply(count: Double, start: Double): MaterialIndex = {
+  inline def apply(count: Double, start: Double): MaterialIndex = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterialIndex]
   }
   
-  @scala.inline
-  implicit class MaterialIndexMutableBuilder[Self <: MaterialIndex] (val x: Self) extends AnyVal {
+  extension [Self <: MaterialIndex](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialIndex(value: Double): Self = StObject.set(x, "materialIndex", value.asInstanceOf[js.Any])
+    inline def setMaterialIndex(value: Double): Self = StObject.set(x, "materialIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialIndexUndefined: Self = StObject.set(x, "materialIndex", js.undefined)
+    inline def setMaterialIndexUndefined: Self = StObject.set(x, "materialIndex", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

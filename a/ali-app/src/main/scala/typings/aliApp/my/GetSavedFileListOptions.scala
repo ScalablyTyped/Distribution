@@ -14,19 +14,15 @@ trait GetSavedFileListOptions
 }
 object GetSavedFileListOptions {
   
-  @scala.inline
-  def apply(): GetSavedFileListOptions = {
+  inline def apply(): GetSavedFileListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSavedFileListOptions]
   }
   
-  @scala.inline
-  implicit class GetSavedFileListOptionsMutableBuilder[Self <: GetSavedFileListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavedFileListOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ FileList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ FileList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

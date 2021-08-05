@@ -21,20 +21,17 @@ trait RubyAdjust extends StObject
 object RubyAdjust {
   
   /** adjusted to both borders / stretched */
-  @scala.inline
-  def BLOCK: `3` = 3.asInstanceOf[`3`]
+  inline def BLOCK: `3` = 3.asInstanceOf[`3`]
   
   /**
     * the object is adjusted to the center.
     *
     * centric adjusted.
     */
-  @scala.inline
-  def CENTER: `1` = 1.asInstanceOf[`1`]
+  inline def CENTER: `1` = 1.asInstanceOf[`1`]
   
   /** adjusted to both borders except for a small indent on both sides */
-  @scala.inline
-  def INDENT_BLOCK: `4` = 4.asInstanceOf[`4`]
+  inline def INDENT_BLOCK: `4` = 4.asInstanceOf[`4`]
   
   /**
     * the object is left adjusted.
@@ -43,8 +40,7 @@ object RubyAdjust {
     *
     * text flows to the left side of the object.
     */
-  @scala.inline
-  def LEFT: `0` = 0.asInstanceOf[`0`]
+  inline def LEFT: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the object is right adjusted.
@@ -53,6 +49,5 @@ object RubyAdjust {
     *
     * text flows to the right side of the object.
     */
-  @scala.inline
-  def RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def RIGHT: `2` = 2.asInstanceOf[`2`]
 }

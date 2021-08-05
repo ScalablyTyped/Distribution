@@ -89,7 +89,7 @@ trait XMLNode extends StObject {
   
   val ValidationStatus: WdXMLValidationStatus = js.native
   
-  @JSName("Word.XMLNode_typekey")
+  /* private */ @JSName("Word.XMLNode_typekey")
   var WordDotXMLNode_typekey: XMLNode = js.native
   
   val WordOpenXML: String = js.native

@@ -22,19 +22,14 @@ object EnumBooleanBody {
   @js.native
   val ^ : Type[EnumBooleanBody] = js.native
   
-  @scala.inline
-  implicit class EnumBooleanBodyMutableBuilder[Self <: EnumBooleanBody] (val x: Self) extends AnyVal {
+  extension [Self <: EnumBooleanBody](x: Self) {
     
-    @scala.inline
-    def setExplicitType(value: Boolean): Self = StObject.set(x, "explicitType", value.asInstanceOf[js.Any])
+    inline def setExplicitType(value: Boolean): Self = StObject.set(x, "explicitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: js.Array[EnumBooleanMemberKind]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[EnumBooleanMemberKind]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: EnumBooleanMemberKind*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: EnumBooleanMemberKind*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.EnumBooleanBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.EnumBooleanBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -84,8 +84,7 @@ trait XCell
 }
 object XCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Error: Double,
     Formula: String,
     Type: CellContentType,
@@ -104,37 +103,26 @@ object XCell {
     __obj.asInstanceOf[XCell]
   }
   
-  @scala.inline
-  implicit class XCellMutableBuilder[Self <: XCell] (val x: Self) extends AnyVal {
+  extension [Self <: XCell](x: Self) {
     
-    @scala.inline
-    def setError(value: Double): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: Double): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetError(value: () => Double): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+    inline def setGetError(value: () => Double): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
+    inline def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => CellContentType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => CellContentType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFormula(value: String => Unit): Self = StObject.set(x, "setFormula", js.Any.fromFunction1(value))
+    inline def setSetFormula(value: String => Unit): Self = StObject.set(x, "setFormula", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: CellContentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: CellContentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

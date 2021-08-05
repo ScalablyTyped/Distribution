@@ -22,8 +22,7 @@ trait XLocalizable
 }
 object XLocalizable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Locale: Locale,
     acquire: () => Unit,
     getLocale: () => Locale,
@@ -35,16 +34,12 @@ object XLocalizable {
     __obj.asInstanceOf[XLocalizable]
   }
   
-  @scala.inline
-  implicit class XLocalizableMutableBuilder[Self <: XLocalizable] (val x: Self) extends AnyVal {
+  extension [Self <: XLocalizable](x: Self) {
     
-    @scala.inline
-    def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
+    inline def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetLocale(value: Locale => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
+    inline def setSetLocale(value: Locale => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
   }
 }

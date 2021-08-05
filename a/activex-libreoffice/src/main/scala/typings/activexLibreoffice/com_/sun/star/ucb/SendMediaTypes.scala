@@ -16,19 +16,15 @@ trait SendMediaTypes extends StObject {
 }
 object SendMediaTypes {
   
-  @scala.inline
-  def apply(ProtocolType: String, Value: SafeArray[String]): SendMediaTypes = {
+  inline def apply(ProtocolType: String, Value: SafeArray[String]): SendMediaTypes = {
     val __obj = js.Dynamic.literal(ProtocolType = ProtocolType.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMediaTypes]
   }
   
-  @scala.inline
-  implicit class SendMediaTypesMutableBuilder[Self <: SendMediaTypes] (val x: Self) extends AnyVal {
+  extension [Self <: SendMediaTypes](x: Self) {
     
-    @scala.inline
-    def setProtocolType(value: String): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
+    inline def setProtocolType(value: String): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: SafeArray[String]): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SafeArray[String]): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

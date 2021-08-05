@@ -66,8 +66,7 @@ trait Chart extends StObject {
 object Chart {
   
   /* static member */
-  @scala.inline
-  def apply: Instantiable2[
+  inline def apply: Instantiable2[
     /* context */ String | CanvasRenderingContext2D | HTMLCanvasElement | (ArrayLike[CanvasRenderingContext2D | HTMLCanvasElement]), 
     /* options */ ChartConfiguration, 
     Chart

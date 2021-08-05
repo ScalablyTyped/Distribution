@@ -70,6 +70,6 @@ trait ChartTitle extends StObject {
   
   val Width: Double = js.native
   
-  @JSName("Word.ChartTitle_typekey")
+  /* private */ @JSName("Word.ChartTitle_typekey")
   var WordDotChartTitle_typekey: ChartTitle = js.native
 }

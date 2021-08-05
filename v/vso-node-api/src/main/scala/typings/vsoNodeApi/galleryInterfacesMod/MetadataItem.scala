@@ -18,19 +18,15 @@ trait MetadataItem extends StObject {
 }
 object MetadataItem {
   
-  @scala.inline
-  def apply(count: Double, name: String): MetadataItem = {
+  inline def apply(count: Double, name: String): MetadataItem = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataItem]
   }
   
-  @scala.inline
-  implicit class MetadataItemMutableBuilder[Self <: MetadataItem] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataItem](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

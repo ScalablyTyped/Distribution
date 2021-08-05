@@ -60,8 +60,7 @@ trait MeshCreateBoxParams
 }
 object MeshCreateBoxParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -70,39 +69,28 @@ object MeshCreateBoxParams {
     __obj.asInstanceOf[MeshCreateBoxParams]
   }
   
-  @scala.inline
-  implicit class MeshCreateBoxParamsMutableBuilder[Self <: MeshCreateBoxParams] (val x: Self) extends AnyVal {
+  extension [Self <: MeshCreateBoxParams](x: Self) {
     
-    @scala.inline
-    def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
+    inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
+    inline def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
     
-    @scala.inline
-    def setImageFace(value: String): Self = StObject.set(x, "imageFace", value.asInstanceOf[js.Any])
+    inline def setImageFace(value: String): Self = StObject.set(x, "imageFace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageFaceUndefined: Self = StObject.set(x, "imageFace", js.undefined)
+    inline def setImageFaceUndefined: Self = StObject.set(x, "imageFace", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: MeshMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: MeshMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | MeshCreateBoxParamsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | MeshCreateBoxParamsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setUnit(
+    inline def setUnit(
       value: millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
     ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

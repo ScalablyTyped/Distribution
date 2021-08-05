@@ -28,37 +28,27 @@ trait NetworkPathComponent extends StObject {
 }
 object NetworkPathComponent {
   
-  @scala.inline
-  def apply(): NetworkPathComponent = {
+  inline def apply(): NetworkPathComponent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkPathComponent]
   }
   
-  @scala.inline
-  implicit class NetworkPathComponentMutableBuilder[Self <: NetworkPathComponent] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPathComponent](x: Self) {
     
-    @scala.inline
-    def setComponentId(value: NonEmptyString): Self = StObject.set(x, "ComponentId", value.asInstanceOf[js.Any])
+    inline def setComponentId(value: NonEmptyString): Self = StObject.set(x, "ComponentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentIdUndefined: Self = StObject.set(x, "ComponentId", js.undefined)
+    inline def setComponentIdUndefined: Self = StObject.set(x, "ComponentId", js.undefined)
     
-    @scala.inline
-    def setComponentType(value: NonEmptyString): Self = StObject.set(x, "ComponentType", value.asInstanceOf[js.Any])
+    inline def setComponentType(value: NonEmptyString): Self = StObject.set(x, "ComponentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentTypeUndefined: Self = StObject.set(x, "ComponentType", js.undefined)
+    inline def setComponentTypeUndefined: Self = StObject.set(x, "ComponentType", js.undefined)
     
-    @scala.inline
-    def setEgress(value: NetworkHeader): Self = StObject.set(x, "Egress", value.asInstanceOf[js.Any])
+    inline def setEgress(value: NetworkHeader): Self = StObject.set(x, "Egress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEgressUndefined: Self = StObject.set(x, "Egress", js.undefined)
+    inline def setEgressUndefined: Self = StObject.set(x, "Egress", js.undefined)
     
-    @scala.inline
-    def setIngress(value: NetworkHeader): Self = StObject.set(x, "Ingress", value.asInstanceOf[js.Any])
+    inline def setIngress(value: NetworkHeader): Self = StObject.set(x, "Ingress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressUndefined: Self = StObject.set(x, "Ingress", js.undefined)
+    inline def setIngressUndefined: Self = StObject.set(x, "Ingress", js.undefined)
   }
 }

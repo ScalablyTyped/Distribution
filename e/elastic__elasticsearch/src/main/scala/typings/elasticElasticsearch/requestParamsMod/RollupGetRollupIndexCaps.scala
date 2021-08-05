@@ -12,16 +12,13 @@ trait RollupGetRollupIndexCaps
 }
 object RollupGetRollupIndexCaps {
   
-  @scala.inline
-  def apply(index: String): RollupGetRollupIndexCaps = {
+  inline def apply(index: String): RollupGetRollupIndexCaps = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupGetRollupIndexCaps]
   }
   
-  @scala.inline
-  implicit class RollupGetRollupIndexCapsMutableBuilder[Self <: RollupGetRollupIndexCaps] (val x: Self) extends AnyVal {
+  extension [Self <: RollupGetRollupIndexCaps](x: Self) {
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

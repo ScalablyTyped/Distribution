@@ -41,43 +41,31 @@ trait BuildingSceneLayerProperties
 }
 object BuildingSceneLayerProperties {
   
-  @scala.inline
-  def apply(): BuildingSceneLayerProperties = {
+  inline def apply(): BuildingSceneLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildingSceneLayerProperties]
   }
   
-  @scala.inline
-  implicit class BuildingSceneLayerPropertiesMutableBuilder[Self <: BuildingSceneLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingSceneLayerProperties](x: Self) {
     
-    @scala.inline
-    def setActiveFilterId(value: String): Self = StObject.set(x, "activeFilterId", value.asInstanceOf[js.Any])
+    inline def setActiveFilterId(value: String): Self = StObject.set(x, "activeFilterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveFilterIdUndefined: Self = StObject.set(x, "activeFilterId", js.undefined)
+    inline def setActiveFilterIdUndefined: Self = StObject.set(x, "activeFilterId", js.undefined)
     
-    @scala.inline
-    def setElevationInfo(value: BuildingSceneLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
+    inline def setElevationInfo(value: BuildingSceneLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
+    inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
-    @scala.inline
-    def setFilters(value: CollectionProperties[BuildingFilterProperties]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: CollectionProperties[BuildingFilterProperties]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: BuildingFilterProperties*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: BuildingFilterProperties*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
+    inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
+    inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
   }
 }

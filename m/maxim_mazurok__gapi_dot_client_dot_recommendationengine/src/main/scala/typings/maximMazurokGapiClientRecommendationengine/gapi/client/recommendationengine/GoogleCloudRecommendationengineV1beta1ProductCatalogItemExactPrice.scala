@@ -14,25 +14,19 @@ trait GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice extends
 }
 object GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPriceMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice](x: Self) {
     
-    @scala.inline
-    def setDisplayPrice(value: Double): Self = StObject.set(x, "displayPrice", value.asInstanceOf[js.Any])
+    inline def setDisplayPrice(value: Double): Self = StObject.set(x, "displayPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPriceUndefined: Self = StObject.set(x, "displayPrice", js.undefined)
+    inline def setDisplayPriceUndefined: Self = StObject.set(x, "displayPrice", js.undefined)
     
-    @scala.inline
-    def setOriginalPrice(value: Double): Self = StObject.set(x, "originalPrice", value.asInstanceOf[js.Any])
+    inline def setOriginalPrice(value: Double): Self = StObject.set(x, "originalPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPriceUndefined: Self = StObject.set(x, "originalPrice", js.undefined)
+    inline def setOriginalPriceUndefined: Self = StObject.set(x, "originalPrice", js.undefined)
   }
 }

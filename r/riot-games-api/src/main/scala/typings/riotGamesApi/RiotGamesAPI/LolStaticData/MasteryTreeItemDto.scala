@@ -12,19 +12,15 @@ trait MasteryTreeItemDto extends StObject {
 }
 object MasteryTreeItemDto {
   
-  @scala.inline
-  def apply(masteryId: Double, prereq: String): MasteryTreeItemDto = {
+  inline def apply(masteryId: Double, prereq: String): MasteryTreeItemDto = {
     val __obj = js.Dynamic.literal(masteryId = masteryId.asInstanceOf[js.Any], prereq = prereq.asInstanceOf[js.Any])
     __obj.asInstanceOf[MasteryTreeItemDto]
   }
   
-  @scala.inline
-  implicit class MasteryTreeItemDtoMutableBuilder[Self <: MasteryTreeItemDto] (val x: Self) extends AnyVal {
+  extension [Self <: MasteryTreeItemDto](x: Self) {
     
-    @scala.inline
-    def setMasteryId(value: Double): Self = StObject.set(x, "masteryId", value.asInstanceOf[js.Any])
+    inline def setMasteryId(value: Double): Self = StObject.set(x, "masteryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrereq(value: String): Self = StObject.set(x, "prereq", value.asInstanceOf[js.Any])
+    inline def setPrereq(value: String): Self = StObject.set(x, "prereq", value.asInstanceOf[js.Any])
   }
 }

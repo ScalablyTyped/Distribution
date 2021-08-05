@@ -16,9 +16,7 @@ object xmbMod {
   @js.native
   class Xmb () extends Serializer
   
-  @scala.inline
-  def digest(message: Message): String = ^.asInstanceOf[js.Dynamic].applyDynamic("digest")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def digest(message: Message): String = ^.asInstanceOf[js.Dynamic].applyDynamic("digest")(message.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toPublicName(internalName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toPublicName")(internalName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toPublicName(internalName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toPublicName")(internalName.asInstanceOf[js.Any]).asInstanceOf[String]
 }

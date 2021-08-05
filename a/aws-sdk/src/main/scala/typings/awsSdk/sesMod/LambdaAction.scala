@@ -23,28 +23,21 @@ trait LambdaAction extends StObject {
 }
 object LambdaAction {
   
-  @scala.inline
-  def apply(FunctionArn: AmazonResourceName): LambdaAction = {
+  inline def apply(FunctionArn: AmazonResourceName): LambdaAction = {
     val __obj = js.Dynamic.literal(FunctionArn = FunctionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaAction]
   }
   
-  @scala.inline
-  implicit class LambdaActionMutableBuilder[Self <: LambdaAction] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaAction](x: Self) {
     
-    @scala.inline
-    def setFunctionArn(value: AmazonResourceName): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
+    inline def setFunctionArn(value: AmazonResourceName): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationType(value: InvocationType): Self = StObject.set(x, "InvocationType", value.asInstanceOf[js.Any])
+    inline def setInvocationType(value: InvocationType): Self = StObject.set(x, "InvocationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationTypeUndefined: Self = StObject.set(x, "InvocationType", js.undefined)
+    inline def setInvocationTypeUndefined: Self = StObject.set(x, "InvocationType", js.undefined)
     
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
+    inline def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait FileManagerViews extends StObject {
 }
 object FileManagerViews {
   
-  @scala.inline
-  def apply(): FileManagerViews = {
+  inline def apply(): FileManagerViews = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerViews]
   }
   
-  @scala.inline
-  implicit class FileManagerViewsMutableBuilder[Self <: FileManagerViews] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerViews](x: Self) {
     
-    @scala.inline
-    def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    @scala.inline
-    def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    @scala.inline
-    def setTree(value: js.Any): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: js.Any): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
+    inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
   }
 }

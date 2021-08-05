@@ -18,8 +18,7 @@ trait AnalyticsResult extends StObject {
 }
 object AnalyticsResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adamId: String,
     data: js.Array[AnalyticsDataPoint],
     meetsThreshold: Boolean,
@@ -29,28 +28,20 @@ object AnalyticsResult {
     __obj.asInstanceOf[AnalyticsResult]
   }
   
-  @scala.inline
-  implicit class AnalyticsResultMutableBuilder[Self <: AnalyticsResult] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsResult](x: Self) {
     
-    @scala.inline
-    def setAdamId(value: String): Self = StObject.set(x, "adamId", value.asInstanceOf[js.Any])
+    inline def setAdamId(value: String): Self = StObject.set(x, "adamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[AnalyticsDataPoint]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[AnalyticsDataPoint]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: AnalyticsDataPoint*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: AnalyticsDataPoint*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setGroup(value: AnalyticsGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: AnalyticsGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNull: Self = StObject.set(x, "group", null)
+    inline def setGroupNull: Self = StObject.set(x, "group", null)
     
-    @scala.inline
-    def setMeetsThreshold(value: Boolean): Self = StObject.set(x, "meetsThreshold", value.asInstanceOf[js.Any])
+    inline def setMeetsThreshold(value: Boolean): Self = StObject.set(x, "meetsThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotals(value: AnalyticsTotals): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
+    inline def setTotals(value: AnalyticsTotals): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
   }
 }

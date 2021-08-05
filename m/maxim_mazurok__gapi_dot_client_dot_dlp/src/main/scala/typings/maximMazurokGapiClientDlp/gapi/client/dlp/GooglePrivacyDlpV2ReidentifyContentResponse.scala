@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2ReidentifyContentResponse extends StObject {
 }
 object GooglePrivacyDlpV2ReidentifyContentResponse {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ReidentifyContentResponse = {
+  inline def apply(): GooglePrivacyDlpV2ReidentifyContentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ReidentifyContentResponse]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ReidentifyContentResponseMutableBuilder[Self <: GooglePrivacyDlpV2ReidentifyContentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ReidentifyContentResponse](x: Self) {
     
-    @scala.inline
-    def setItem(value: GooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: GooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setOverview(value: GooglePrivacyDlpV2TransformationOverview): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
+    inline def setOverview(value: GooglePrivacyDlpV2TransformationOverview): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
+    inline def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
   }
 }

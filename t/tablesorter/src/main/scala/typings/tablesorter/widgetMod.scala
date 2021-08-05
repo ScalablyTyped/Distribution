@@ -93,8 +93,7 @@ object widgetMod {
   }
   object Widget {
     
-    @scala.inline
-    def apply[TElement](
+    inline def apply[TElement](
       format: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[js.Any], Boolean) => Unit,
       id: String,
       init: (TElement, Widget[TElement], TablesorterConfigurationStore[TElement], StringDictionary[js.Any]) => Unit,
@@ -106,30 +105,23 @@ object widgetMod {
       __obj.asInstanceOf[Widget[TElement]]
     }
     
-    @scala.inline
-    implicit class WidgetMutableBuilder[Self <: Widget[?], TElement] (val x: Self & Widget[TElement]) extends AnyVal {
+    extension [Self <: Widget[?], TElement](x: Self & Widget[TElement]) {
       
-      @scala.inline
-      def setFormat(
+      inline def setFormat(
         value: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[js.Any], Boolean) => Unit
       ): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit(
+      inline def setInit(
         value: (TElement, Widget[TElement], TablesorterConfigurationStore[TElement], StringDictionary[js.Any]) => Unit
       ): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(
+      inline def setRemove(
         value: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[js.Any], Boolean) => Unit
       ): Self = StObject.set(x, "remove", js.Any.fromFunction4(value))
     }

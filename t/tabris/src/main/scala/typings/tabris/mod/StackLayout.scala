@@ -41,6 +41,5 @@ object StackLayout {
   @JSImport("tabris", "StackLayout.default")
   @js.native
   def default: StackLayout = js.native
-  @scala.inline
-  def default_=(x: StackLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: StackLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

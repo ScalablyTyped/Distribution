@@ -11,19 +11,15 @@ trait DisableServiceResponse extends StObject {
 }
 object DisableServiceResponse {
   
-  @scala.inline
-  def apply(): DisableServiceResponse = {
+  inline def apply(): DisableServiceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableServiceResponse]
   }
   
-  @scala.inline
-  implicit class DisableServiceResponseMutableBuilder[Self <: DisableServiceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisableServiceResponse](x: Self) {
     
-    @scala.inline
-    def setService(value: GoogleApiServiceusageV1Service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: GoogleApiServiceusageV1Service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

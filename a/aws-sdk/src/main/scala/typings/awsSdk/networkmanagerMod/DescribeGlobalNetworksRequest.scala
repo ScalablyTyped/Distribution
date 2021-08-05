@@ -23,34 +23,25 @@ trait DescribeGlobalNetworksRequest extends StObject {
 }
 object DescribeGlobalNetworksRequest {
   
-  @scala.inline
-  def apply(): DescribeGlobalNetworksRequest = {
+  inline def apply(): DescribeGlobalNetworksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeGlobalNetworksRequest]
   }
   
-  @scala.inline
-  implicit class DescribeGlobalNetworksRequestMutableBuilder[Self <: DescribeGlobalNetworksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGlobalNetworksRequest](x: Self) {
     
-    @scala.inline
-    def setGlobalNetworkIds(value: StringList): Self = StObject.set(x, "GlobalNetworkIds", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkIds(value: StringList): Self = StObject.set(x, "GlobalNetworkIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkIdsUndefined: Self = StObject.set(x, "GlobalNetworkIds", js.undefined)
+    inline def setGlobalNetworkIdsUndefined: Self = StObject.set(x, "GlobalNetworkIds", js.undefined)
     
-    @scala.inline
-    def setGlobalNetworkIdsVarargs(value: String*): Self = StObject.set(x, "GlobalNetworkIds", js.Array(value :_*))
+    inline def setGlobalNetworkIdsVarargs(value: String*): Self = StObject.set(x, "GlobalNetworkIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -19,6 +19,5 @@ object Speech {
     * @param text - Text to speak.
     * @see https://docs.scriptable.app/speech/#speak
     */
-  @scala.inline
-  def speak(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("speak")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def speak(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("speak")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

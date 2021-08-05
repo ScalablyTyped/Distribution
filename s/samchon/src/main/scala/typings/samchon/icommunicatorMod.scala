@@ -35,8 +35,7 @@ object icommunicatorMod {
   }
   object ICommunicator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       isConnected: () => Boolean,
       onClose: js.Function,
@@ -47,17 +46,13 @@ object icommunicatorMod {
       __obj.asInstanceOf[ICommunicator]
     }
     
-    @scala.inline
-    implicit class ICommunicatorMutableBuilder[Self <: ICommunicator] (val x: Self) extends AnyVal {
+    extension [Self <: ICommunicator](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
+      inline def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClose(value: js.Function): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+      inline def setOnClose(value: js.Function): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     }
   }
 }

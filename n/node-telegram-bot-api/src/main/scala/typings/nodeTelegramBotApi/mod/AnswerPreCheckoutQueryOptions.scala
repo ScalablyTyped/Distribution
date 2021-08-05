@@ -10,19 +10,15 @@ trait AnswerPreCheckoutQueryOptions extends StObject {
 }
 object AnswerPreCheckoutQueryOptions {
   
-  @scala.inline
-  def apply(): AnswerPreCheckoutQueryOptions = {
+  inline def apply(): AnswerPreCheckoutQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnswerPreCheckoutQueryOptions]
   }
   
-  @scala.inline
-  implicit class AnswerPreCheckoutQueryOptionsMutableBuilder[Self <: AnswerPreCheckoutQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnswerPreCheckoutQueryOptions](x: Self) {
     
-    @scala.inline
-    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+    inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_messageUndefined: Self = StObject.set(x, "error_message", js.undefined)
+    inline def setError_messageUndefined: Self = StObject.set(x, "error_message", js.undefined)
   }
 }

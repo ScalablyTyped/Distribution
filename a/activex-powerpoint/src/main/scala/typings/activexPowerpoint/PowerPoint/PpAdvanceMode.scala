@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpAdvanceMode extends StObject
 object PpAdvanceMode {
   
-  @scala.inline
-  def ppAdvanceModeMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppAdvanceModeMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppAdvanceOnClick: `1` = 1.asInstanceOf[`1`]
+  inline def ppAdvanceOnClick: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppAdvanceOnTime: `2` = 2.asInstanceOf[`2`]
+  inline def ppAdvanceOnTime: `2` = 2.asInstanceOf[`2`]
 }

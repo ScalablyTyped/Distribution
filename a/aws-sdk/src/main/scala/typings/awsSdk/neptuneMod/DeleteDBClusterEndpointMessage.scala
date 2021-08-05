@@ -13,16 +13,13 @@ trait DeleteDBClusterEndpointMessage extends StObject {
 }
 object DeleteDBClusterEndpointMessage {
   
-  @scala.inline
-  def apply(DBClusterEndpointIdentifier: String): DeleteDBClusterEndpointMessage = {
+  inline def apply(DBClusterEndpointIdentifier: String): DeleteDBClusterEndpointMessage = {
     val __obj = js.Dynamic.literal(DBClusterEndpointIdentifier = DBClusterEndpointIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBClusterEndpointMessage]
   }
   
-  @scala.inline
-  implicit class DeleteDBClusterEndpointMessageMutableBuilder[Self <: DeleteDBClusterEndpointMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBClusterEndpointMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterEndpointIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterEndpointIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
   }
 }

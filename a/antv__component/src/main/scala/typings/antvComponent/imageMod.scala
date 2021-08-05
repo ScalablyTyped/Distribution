@@ -15,8 +15,8 @@ object imageMod {
   trait ImageAnnotation
     extends typings.antvComponent.groupComponentMod.default[ImageAnnotationCfg] {
     
-    var getImageAttrs: js.Any = js.native
+    /* private */ var getImageAttrs: js.Any = js.native
     
-    var renderImage: js.Any = js.native
+    /* private */ var renderImage: js.Any = js.native
   }
 }

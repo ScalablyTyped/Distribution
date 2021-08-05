@@ -51,139 +51,95 @@ trait TouchOptions extends StObject {
 }
 object TouchOptions {
   
-  @scala.inline
-  def apply(): TouchOptions = {
+  inline def apply(): TouchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchOptions]
   }
   
-  @scala.inline
-  implicit class TouchOptionsMutableBuilder[Self <: TouchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchOptions](x: Self) {
     
-    @scala.inline
-    def setDoubleTapTimeout(value: Double): Self = StObject.set(x, "doubleTapTimeout", value.asInstanceOf[js.Any])
+    inline def setDoubleTapTimeout(value: Double): Self = StObject.set(x, "doubleTapTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleTapTimeoutUndefined: Self = StObject.set(x, "doubleTapTimeout", js.undefined)
+    inline def setDoubleTapTimeoutUndefined: Self = StObject.set(x, "doubleTapTimeout", js.undefined)
     
-    @scala.inline
-    def setDoubletap(value: /* e */ TouchDoubletapEvent => Unit): Self = StObject.set(x, "doubletap", js.Any.fromFunction1(value))
+    inline def setDoubletap(value: /* e */ TouchDoubletapEvent => Unit): Self = StObject.set(x, "doubletap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoubletapUndefined: Self = StObject.set(x, "doubletap", js.undefined)
+    inline def setDoubletapUndefined: Self = StObject.set(x, "doubletap", js.undefined)
     
-    @scala.inline
-    def setDrag(value: /* e */ TouchDragEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
+    inline def setDrag(value: /* e */ TouchDragEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
-    @scala.inline
-    def setDragend(value: /* e */ TouchDragendEvent => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
+    inline def setDragend(value: /* e */ TouchDragendEvent => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
+    inline def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
     
-    @scala.inline
-    def setDragstart(value: /* e */ TouchDragstartEvent => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
+    inline def setDragstart(value: /* e */ TouchDragstartEvent => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
+    inline def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
     
-    @scala.inline
-    def setEnableSwipe(value: Boolean): Self = StObject.set(x, "enableSwipe", value.asInstanceOf[js.Any])
+    inline def setEnableSwipe(value: Boolean): Self = StObject.set(x, "enableSwipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSwipeUndefined: Self = StObject.set(x, "enableSwipe", js.undefined)
+    inline def setEnableSwipeUndefined: Self = StObject.set(x, "enableSwipe", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGesturechange(value: /* e */ TouchGesturechangeEvent => Unit): Self = StObject.set(x, "gesturechange", js.Any.fromFunction1(value))
+    inline def setGesturechange(value: /* e */ TouchGesturechangeEvent => Unit): Self = StObject.set(x, "gesturechange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGesturechangeUndefined: Self = StObject.set(x, "gesturechange", js.undefined)
+    inline def setGesturechangeUndefined: Self = StObject.set(x, "gesturechange", js.undefined)
     
-    @scala.inline
-    def setGestureend(value: /* e */ TouchGestureendEvent => Unit): Self = StObject.set(x, "gestureend", js.Any.fromFunction1(value))
+    inline def setGestureend(value: /* e */ TouchGestureendEvent => Unit): Self = StObject.set(x, "gestureend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGestureendUndefined: Self = StObject.set(x, "gestureend", js.undefined)
+    inline def setGestureendUndefined: Self = StObject.set(x, "gestureend", js.undefined)
     
-    @scala.inline
-    def setGesturestart(value: /* e */ TouchGesturestartEvent => Unit): Self = StObject.set(x, "gesturestart", js.Any.fromFunction1(value))
+    inline def setGesturestart(value: /* e */ TouchGesturestartEvent => Unit): Self = StObject.set(x, "gesturestart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGesturestartUndefined: Self = StObject.set(x, "gesturestart", js.undefined)
+    inline def setGesturestartUndefined: Self = StObject.set(x, "gesturestart", js.undefined)
     
-    @scala.inline
-    def setHold(value: /* e */ TouchHoldEvent => Unit): Self = StObject.set(x, "hold", js.Any.fromFunction1(value))
+    inline def setHold(value: /* e */ TouchHoldEvent => Unit): Self = StObject.set(x, "hold", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
+    inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
     
-    @scala.inline
-    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
+    inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
-    @scala.inline
-    def setMaxYDelta(value: Double): Self = StObject.set(x, "maxYDelta", value.asInstanceOf[js.Any])
+    inline def setMaxYDelta(value: Double): Self = StObject.set(x, "maxYDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxYDeltaUndefined: Self = StObject.set(x, "maxYDelta", js.undefined)
+    inline def setMaxYDeltaUndefined: Self = StObject.set(x, "maxYDelta", js.undefined)
     
-    @scala.inline
-    def setMinHold(value: Double): Self = StObject.set(x, "minHold", value.asInstanceOf[js.Any])
+    inline def setMinHold(value: Double): Self = StObject.set(x, "minHold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHoldUndefined: Self = StObject.set(x, "minHold", js.undefined)
+    inline def setMinHoldUndefined: Self = StObject.set(x, "minHold", js.undefined)
     
-    @scala.inline
-    def setMinXDelta(value: Double): Self = StObject.set(x, "minXDelta", value.asInstanceOf[js.Any])
+    inline def setMinXDelta(value: Double): Self = StObject.set(x, "minXDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinXDeltaUndefined: Self = StObject.set(x, "minXDelta", js.undefined)
+    inline def setMinXDeltaUndefined: Self = StObject.set(x, "minXDelta", js.undefined)
     
-    @scala.inline
-    def setMultiTouch(value: Boolean): Self = StObject.set(x, "multiTouch", value.asInstanceOf[js.Any])
+    inline def setMultiTouch(value: Boolean): Self = StObject.set(x, "multiTouch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiTouchUndefined: Self = StObject.set(x, "multiTouch", js.undefined)
+    inline def setMultiTouchUndefined: Self = StObject.set(x, "multiTouch", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSurface(value: JQuery): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
+    inline def setSurface(value: JQuery): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurfaceUndefined: Self = StObject.set(x, "surface", js.undefined)
+    inline def setSurfaceUndefined: Self = StObject.set(x, "surface", js.undefined)
     
-    @scala.inline
-    def setSwipe(value: /* e */ TouchSwipeEvent => Unit): Self = StObject.set(x, "swipe", js.Any.fromFunction1(value))
+    inline def setSwipe(value: /* e */ TouchSwipeEvent => Unit): Self = StObject.set(x, "swipe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
+    inline def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
     
-    @scala.inline
-    def setTap(value: /* e */ TouchTapEvent => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
+    inline def setTap(value: /* e */ TouchTapEvent => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
+    inline def setTapUndefined: Self = StObject.set(x, "tap", js.undefined)
     
-    @scala.inline
-    def setTouchstart(value: /* e */ TouchTouchstartEvent => Unit): Self = StObject.set(x, "touchstart", js.Any.fromFunction1(value))
+    inline def setTouchstart(value: /* e */ TouchTouchstartEvent => Unit): Self = StObject.set(x, "touchstart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
+    inline def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
   }
 }

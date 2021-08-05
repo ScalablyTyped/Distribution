@@ -23,8 +23,7 @@ trait ASPxClientNavBarGroupClickEventArgs
 }
 object ASPxClientNavBarGroupClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     group: ASPxClientNavBarGroup,
     htmlElement: js.Any,
@@ -35,13 +34,10 @@ object ASPxClientNavBarGroupClickEventArgs {
     __obj.asInstanceOf[ASPxClientNavBarGroupClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientNavBarGroupClickEventArgsMutableBuilder[Self <: ASPxClientNavBarGroupClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientNavBarGroupClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

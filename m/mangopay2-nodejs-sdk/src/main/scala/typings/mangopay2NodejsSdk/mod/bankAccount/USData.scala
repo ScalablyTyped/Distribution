@@ -29,8 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object USData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ABA: String,
     AccountNumber: String,
     Active: Boolean,
@@ -46,19 +45,14 @@ object USData {
     __obj.asInstanceOf[USData]
   }
   
-  @scala.inline
-  implicit class USDataMutableBuilder[Self <: USData] (val x: Self) extends AnyVal {
+  extension [Self <: USData](x: Self) {
     
-    @scala.inline
-    def setABA(value: String): Self = StObject.set(x, "ABA", value.asInstanceOf[js.Any])
+    inline def setABA(value: String): Self = StObject.set(x, "ABA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
+    inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepositAccountType(value: DepositAccountType): Self = StObject.set(x, "DepositAccountType", value.asInstanceOf[js.Any])
+    inline def setDepositAccountType(value: DepositAccountType): Self = StObject.set(x, "DepositAccountType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepositAccountTypeUndefined: Self = StObject.set(x, "DepositAccountType", js.undefined)
+    inline def setDepositAccountTypeUndefined: Self = StObject.set(x, "DepositAccountType", js.undefined)
   }
 }

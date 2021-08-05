@@ -13,16 +13,13 @@ trait RestoreBackupRequest extends StObject {
 }
 object RestoreBackupRequest {
   
-  @scala.inline
-  def apply(BackupId: BackupId): RestoreBackupRequest = {
+  inline def apply(BackupId: BackupId): RestoreBackupRequest = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreBackupRequest]
   }
   
-  @scala.inline
-  implicit class RestoreBackupRequestMutableBuilder[Self <: RestoreBackupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreBackupRequest](x: Self) {
     
-    @scala.inline
-    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
+    inline def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
   }
 }

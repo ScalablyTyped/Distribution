@@ -23,54 +23,39 @@ trait IVoice extends StObject {
 }
 object IVoice {
   
-  @scala.inline
-  def apply(): IVoice = {
+  inline def apply(): IVoice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IVoice]
   }
   
-  @scala.inline
-  implicit class IVoiceMutableBuilder[Self <: IVoice] (val x: Self) extends AnyVal {
+  extension [Self <: IVoice](x: Self) {
     
-    @scala.inline
-    def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
+    inline def setLanguageCodes(value: js.Array[String]): Self = StObject.set(x, "languageCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodesNull: Self = StObject.set(x, "languageCodes", null)
+    inline def setLanguageCodesNull: Self = StObject.set(x, "languageCodes", null)
     
-    @scala.inline
-    def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
+    inline def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
     
-    @scala.inline
-    def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
+    inline def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNaturalSampleRateHertz(value: Double): Self = StObject.set(x, "naturalSampleRateHertz", value.asInstanceOf[js.Any])
+    inline def setNaturalSampleRateHertz(value: Double): Self = StObject.set(x, "naturalSampleRateHertz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNaturalSampleRateHertzNull: Self = StObject.set(x, "naturalSampleRateHertz", null)
+    inline def setNaturalSampleRateHertzNull: Self = StObject.set(x, "naturalSampleRateHertz", null)
     
-    @scala.inline
-    def setNaturalSampleRateHertzUndefined: Self = StObject.set(x, "naturalSampleRateHertz", js.undefined)
+    inline def setNaturalSampleRateHertzUndefined: Self = StObject.set(x, "naturalSampleRateHertz", js.undefined)
     
-    @scala.inline
-    def setSsmlGender(
+    inline def setSsmlGender(
       value: SsmlVoiceGender | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.texttospeech.v1beta1.SsmlVoiceGender * / any */ String)
     ): Self = StObject.set(x, "ssmlGender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlGenderNull: Self = StObject.set(x, "ssmlGender", null)
+    inline def setSsmlGenderNull: Self = StObject.set(x, "ssmlGender", null)
     
-    @scala.inline
-    def setSsmlGenderUndefined: Self = StObject.set(x, "ssmlGender", js.undefined)
+    inline def setSsmlGenderUndefined: Self = StObject.set(x, "ssmlGender", js.undefined)
   }
 }

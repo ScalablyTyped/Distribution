@@ -11,6 +11,5 @@ object timingFunctionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(timingFunction: TimingFunction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(timingFunction.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(timingFunction: TimingFunction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(timingFunction.asInstanceOf[js.Any]).asInstanceOf[String]
 }

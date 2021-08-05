@@ -12,16 +12,13 @@ trait FrameFocusControl extends StObject {
 }
 object FrameFocusControl {
   
-  @scala.inline
-  def apply(value: Double): FrameFocusControl = {
+  inline def apply(value: Double): FrameFocusControl = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameFocusControl]
   }
   
-  @scala.inline
-  implicit class FrameFocusControlMutableBuilder[Self <: FrameFocusControl] (val x: Self) extends AnyVal {
+  extension [Self <: FrameFocusControl](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -14,32 +14,24 @@ object setBestiesInputMod {
   }
   object SetBestiesInput {
     
-    @scala.inline
-    def apply(): SetBestiesInput = {
+    inline def apply(): SetBestiesInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetBestiesInput]
     }
     
-    @scala.inline
-    implicit class SetBestiesInputMutableBuilder[Self <: SetBestiesInput] (val x: Self) extends AnyVal {
+    extension [Self <: SetBestiesInput](x: Self) {
       
-      @scala.inline
-      def setAdd(value: js.Array[String | Double]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+      inline def setAdd(value: js.Array[String | Double]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+      inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
       
-      @scala.inline
-      def setAddVarargs(value: (String | Double)*): Self = StObject.set(x, "add", js.Array(value :_*))
+      inline def setAddVarargs(value: (String | Double)*): Self = StObject.set(x, "add", js.Array(value :_*))
       
-      @scala.inline
-      def setRemove(value: js.Array[String | Double]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: js.Array[String | Double]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setRemoveVarargs(value: (String | Double)*): Self = StObject.set(x, "remove", js.Array(value :_*))
+      inline def setRemoveVarargs(value: (String | Double)*): Self = StObject.set(x, "remove", js.Array(value :_*))
     }
   }
 }

@@ -26,22 +26,17 @@ trait MetaLink extends StObject {
 }
 object MetaLink {
   
-  @scala.inline
-  def apply(category: String, name: String, url: String): MetaLink = {
+  inline def apply(category: String, name: String, url: String): MetaLink = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaLink]
   }
   
-  @scala.inline
-  implicit class MetaLinkMutableBuilder[Self <: MetaLink] (val x: Self) extends AnyVal {
+  extension [Self <: MetaLink](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

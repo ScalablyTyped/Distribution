@@ -13,19 +13,15 @@ trait DeleteRegexPatternSetResponse extends StObject {
 }
 object DeleteRegexPatternSetResponse {
   
-  @scala.inline
-  def apply(): DeleteRegexPatternSetResponse = {
+  inline def apply(): DeleteRegexPatternSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteRegexPatternSetResponse]
   }
   
-  @scala.inline
-  implicit class DeleteRegexPatternSetResponseMutableBuilder[Self <: DeleteRegexPatternSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRegexPatternSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

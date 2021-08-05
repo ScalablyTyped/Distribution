@@ -23,31 +23,23 @@ trait PutImageScanningConfigurationResponse extends StObject {
 }
 object PutImageScanningConfigurationResponse {
   
-  @scala.inline
-  def apply(): PutImageScanningConfigurationResponse = {
+  inline def apply(): PutImageScanningConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutImageScanningConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class PutImageScanningConfigurationResponseMutableBuilder[Self <: PutImageScanningConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutImageScanningConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
+    inline def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
+    inline def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

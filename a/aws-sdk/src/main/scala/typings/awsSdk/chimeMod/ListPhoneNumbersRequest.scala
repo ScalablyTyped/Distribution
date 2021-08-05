@@ -38,49 +38,35 @@ trait ListPhoneNumbersRequest extends StObject {
 }
 object ListPhoneNumbersRequest {
   
-  @scala.inline
-  def apply(): ListPhoneNumbersRequest = {
+  inline def apply(): ListPhoneNumbersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPhoneNumbersRequest]
   }
   
-  @scala.inline
-  implicit class ListPhoneNumbersRequestMutableBuilder[Self <: ListPhoneNumbersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPhoneNumbersRequest](x: Self) {
     
-    @scala.inline
-    def setFilterName(value: PhoneNumberAssociationName): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: PhoneNumberAssociationName): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterNameUndefined: Self = StObject.set(x, "FilterName", js.undefined)
+    inline def setFilterNameUndefined: Self = StObject.set(x, "FilterName", js.undefined)
     
-    @scala.inline
-    def setFilterValue(value: String): Self = StObject.set(x, "FilterValue", value.asInstanceOf[js.Any])
+    inline def setFilterValue(value: String): Self = StObject.set(x, "FilterValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterValueUndefined: Self = StObject.set(x, "FilterValue", js.undefined)
+    inline def setFilterValueUndefined: Self = StObject.set(x, "FilterValue", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: ResultMax): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ResultMax): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProductType(value: PhoneNumberProductType): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
+    inline def setProductType(value: PhoneNumberProductType): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductTypeUndefined: Self = StObject.set(x, "ProductType", js.undefined)
+    inline def setProductTypeUndefined: Self = StObject.set(x, "ProductType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: PhoneNumberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PhoneNumberStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

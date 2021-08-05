@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFacetSearchFlags extends StObject
 object MFFacetSearchFlags {
   
-  @scala.inline
-  def AscendingOrder: `32` = 32.asInstanceOf[`32`]
+  inline def AscendingOrder: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def IgnoreFacetGroupPermissions: `4` = 4.asInstanceOf[`4`]
+  inline def IgnoreFacetGroupPermissions: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def IgnoreFacetValuePermissions: `8` = 8.asInstanceOf[`8`]
+  inline def IgnoreFacetValuePermissions: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def IgnoreSearchPermissions: `2` = 2.asInstanceOf[`2`]
+  inline def IgnoreSearchPermissions: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def OverrideByConfiguration: `64` = 64.asInstanceOf[`64`]
+  inline def OverrideByConfiguration: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def SortFacetValues: `16` = 16.asInstanceOf[`16`]
+  inline def SortFacetValues: `16` = 16.asInstanceOf[`16`]
 }

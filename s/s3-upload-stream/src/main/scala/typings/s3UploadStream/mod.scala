@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(client: S3): S3StreamUploader = ^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any]).asInstanceOf[S3StreamUploader]
+  inline def apply(client: S3): S3StreamUploader = ^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any]).asInstanceOf[S3StreamUploader]
   
   @JSImport("s3-upload-stream", JSImport.Namespace)
   @js.native

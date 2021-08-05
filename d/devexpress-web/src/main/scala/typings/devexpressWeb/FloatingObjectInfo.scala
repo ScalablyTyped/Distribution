@@ -21,19 +21,15 @@ trait FloatingObjectInfo extends StObject {
 }
 object FloatingObjectInfo {
   
-  @scala.inline
-  def apply(parentSubDocument: SubDocument, position: Double): FloatingObjectInfo = {
+  inline def apply(parentSubDocument: SubDocument, position: Double): FloatingObjectInfo = {
     val __obj = js.Dynamic.literal(parentSubDocument = parentSubDocument.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatingObjectInfo]
   }
   
-  @scala.inline
-  implicit class FloatingObjectInfoMutableBuilder[Self <: FloatingObjectInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingObjectInfo](x: Self) {
     
-    @scala.inline
-    def setParentSubDocument(value: SubDocument): Self = StObject.set(x, "parentSubDocument", value.asInstanceOf[js.Any])
+    inline def setParentSubDocument(value: SubDocument): Self = StObject.set(x, "parentSubDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

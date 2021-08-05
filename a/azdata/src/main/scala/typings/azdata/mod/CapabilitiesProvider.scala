@@ -13,8 +13,7 @@ trait CapabilitiesProvider
 }
 object CapabilitiesProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getServerCapabilities: DataProtocolClientCapabilities => Thenable[DataProtocolServerCapabilities],
     providerId: String
   ): CapabilitiesProvider = {
@@ -22,10 +21,8 @@ object CapabilitiesProvider {
     __obj.asInstanceOf[CapabilitiesProvider]
   }
   
-  @scala.inline
-  implicit class CapabilitiesProviderMutableBuilder[Self <: CapabilitiesProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CapabilitiesProvider](x: Self) {
     
-    @scala.inline
-    def setGetServerCapabilities(value: DataProtocolClientCapabilities => Thenable[DataProtocolServerCapabilities]): Self = StObject.set(x, "getServerCapabilities", js.Any.fromFunction1(value))
+    inline def setGetServerCapabilities(value: DataProtocolClientCapabilities => Thenable[DataProtocolServerCapabilities]): Self = StObject.set(x, "getServerCapabilities", js.Any.fromFunction1(value))
   }
 }

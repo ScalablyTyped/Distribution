@@ -20,31 +20,23 @@ trait applePayCreateOptions extends StObject {
 }
 object applePayCreateOptions {
   
-  @scala.inline
-  def apply(displayName: String, paymentRequest: ApplePayPaymentRequest): applePayCreateOptions = {
+  inline def apply(displayName: String, paymentRequest: ApplePayPaymentRequest): applePayCreateOptions = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], paymentRequest = paymentRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[applePayCreateOptions]
   }
   
-  @scala.inline
-  implicit class applePayCreateOptionsMutableBuilder[Self <: applePayCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: applePayCreateOptions](x: Self) {
     
-    @scala.inline
-    def setApplePaySessionVersion(value: Double): Self = StObject.set(x, "applePaySessionVersion", value.asInstanceOf[js.Any])
+    inline def setApplePaySessionVersion(value: Double): Self = StObject.set(x, "applePaySessionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplePaySessionVersionUndefined: Self = StObject.set(x, "applePaySessionVersion", js.undefined)
+    inline def setApplePaySessionVersionUndefined: Self = StObject.set(x, "applePaySessionVersion", js.undefined)
     
-    @scala.inline
-    def setButtonStyle(value: black | white | `white-outline`): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+    inline def setButtonStyle(value: black | white | `white-outline`): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+    inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentRequest(value: ApplePayPaymentRequest): Self = StObject.set(x, "paymentRequest", value.asInstanceOf[js.Any])
+    inline def setPaymentRequest(value: ApplePayPaymentRequest): Self = StObject.set(x, "paymentRequest", value.asInstanceOf[js.Any])
   }
 }

@@ -42,44 +42,32 @@ object typesGetServiceGraphOutputMod {
   }
   object GetServiceGraphOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetServiceGraphOutput = {
+    inline def apply($metadata: ResponseMetadata): GetServiceGraphOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetServiceGraphOutput]
     }
     
-    @scala.inline
-    implicit class GetServiceGraphOutputMutableBuilder[Self <: GetServiceGraphOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetServiceGraphOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setServices(value: js.Array[UnmarshalledService]): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
+      inline def setServices(value: js.Array[UnmarshalledService]): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
+      inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
       
-      @scala.inline
-      def setServicesVarargs(value: UnmarshalledService*): Self = StObject.set(x, "Services", js.Array(value :_*))
+      inline def setServicesVarargs(value: UnmarshalledService*): Self = StObject.set(x, "Services", js.Array(value :_*))
       
-      @scala.inline
-      def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     }
   }
 }

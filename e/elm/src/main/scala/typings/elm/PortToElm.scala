@@ -10,16 +10,13 @@ trait PortToElm[V] extends StObject {
 }
 object PortToElm {
   
-  @scala.inline
-  def apply[V](send: V => Unit): PortToElm[V] = {
+  inline def apply[V](send: V => Unit): PortToElm[V] = {
     val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
     __obj.asInstanceOf[PortToElm[V]]
   }
   
-  @scala.inline
-  implicit class PortToElmMutableBuilder[Self <: PortToElm[?], V] (val x: Self & PortToElm[V]) extends AnyVal {
+  extension [Self <: PortToElm[?], V](x: Self & PortToElm[V]) {
     
-    @scala.inline
-    def setSend(value: V => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+    inline def setSend(value: V => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }
 }

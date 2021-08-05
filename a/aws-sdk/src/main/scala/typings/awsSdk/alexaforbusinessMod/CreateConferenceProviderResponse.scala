@@ -13,19 +13,15 @@ trait CreateConferenceProviderResponse extends StObject {
 }
 object CreateConferenceProviderResponse {
   
-  @scala.inline
-  def apply(): CreateConferenceProviderResponse = {
+  inline def apply(): CreateConferenceProviderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateConferenceProviderResponse]
   }
   
-  @scala.inline
-  implicit class CreateConferenceProviderResponseMutableBuilder[Self <: CreateConferenceProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConferenceProviderResponse](x: Self) {
     
-    @scala.inline
-    def setConferenceProviderArn(value: Arn): Self = StObject.set(x, "ConferenceProviderArn", value.asInstanceOf[js.Any])
+    inline def setConferenceProviderArn(value: Arn): Self = StObject.set(x, "ConferenceProviderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceProviderArnUndefined: Self = StObject.set(x, "ConferenceProviderArn", js.undefined)
+    inline def setConferenceProviderArnUndefined: Self = StObject.set(x, "ConferenceProviderArn", js.undefined)
   }
 }

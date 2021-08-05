@@ -13,16 +13,13 @@ trait RewardedVideoAdOnCloseCallbackResult extends StObject {
 }
 object RewardedVideoAdOnCloseCallbackResult {
   
-  @scala.inline
-  def apply(isEnded: Boolean): RewardedVideoAdOnCloseCallbackResult = {
+  inline def apply(isEnded: Boolean): RewardedVideoAdOnCloseCallbackResult = {
     val __obj = js.Dynamic.literal(isEnded = isEnded.asInstanceOf[js.Any])
     __obj.asInstanceOf[RewardedVideoAdOnCloseCallbackResult]
   }
   
-  @scala.inline
-  implicit class RewardedVideoAdOnCloseCallbackResultMutableBuilder[Self <: RewardedVideoAdOnCloseCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RewardedVideoAdOnCloseCallbackResult](x: Self) {
     
-    @scala.inline
-    def setIsEnded(value: Boolean): Self = StObject.set(x, "isEnded", value.asInstanceOf[js.Any])
+    inline def setIsEnded(value: Boolean): Self = StObject.set(x, "isEnded", value.asInstanceOf[js.Any])
   }
 }

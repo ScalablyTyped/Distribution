@@ -21,13 +21,11 @@ object Validator {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Validator]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Validator]
   
   /* static member */
   @JSGlobal("kendo.ui.Validator.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.Validator = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.Validator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.Validator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

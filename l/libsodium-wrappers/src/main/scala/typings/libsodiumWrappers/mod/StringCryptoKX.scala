@@ -12,19 +12,15 @@ trait StringCryptoKX extends StObject {
 }
 object StringCryptoKX {
   
-  @scala.inline
-  def apply(sharedRx: String, sharedTx: String): StringCryptoKX = {
+  inline def apply(sharedRx: String, sharedTx: String): StringCryptoKX = {
     val __obj = js.Dynamic.literal(sharedRx = sharedRx.asInstanceOf[js.Any], sharedTx = sharedTx.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringCryptoKX]
   }
   
-  @scala.inline
-  implicit class StringCryptoKXMutableBuilder[Self <: StringCryptoKX] (val x: Self) extends AnyVal {
+  extension [Self <: StringCryptoKX](x: Self) {
     
-    @scala.inline
-    def setSharedRx(value: String): Self = StObject.set(x, "sharedRx", value.asInstanceOf[js.Any])
+    inline def setSharedRx(value: String): Self = StObject.set(x, "sharedRx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedTx(value: String): Self = StObject.set(x, "sharedTx", value.asInstanceOf[js.Any])
+    inline def setSharedTx(value: String): Self = StObject.set(x, "sharedTx", value.asInstanceOf[js.Any])
   }
 }

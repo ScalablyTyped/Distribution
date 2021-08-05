@@ -8,6 +8,5 @@ object avaStrings {
   
   @js.native
   sealed trait experimental extends StObject
-  @scala.inline
-  def experimental: experimental = "experimental".asInstanceOf[experimental]
+  inline def experimental: experimental = "experimental".asInstanceOf[experimental]
 }

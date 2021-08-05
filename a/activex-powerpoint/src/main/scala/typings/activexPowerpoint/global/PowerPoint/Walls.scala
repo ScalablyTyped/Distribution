@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Walls")
 @js.native
-class Walls protected ()
+/* private */ class Walls ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Walls {
   
@@ -46,7 +46,7 @@ class Walls protected ()
   /* CompleteClass */
   var PictureUnit: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Walls_typekey")
   var PowerPointDotWalls_typekey: typings.activexPowerpoint.PowerPoint.Walls = js.native
   

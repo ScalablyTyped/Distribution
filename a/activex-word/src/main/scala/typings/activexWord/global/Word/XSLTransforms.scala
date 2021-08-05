@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.XSLTransforms")
 @js.native
-class XSLTransforms protected ()
+/* private */ class XSLTransforms ()
   extends StObject
      with typings.activexWord.Word.XSLTransforms

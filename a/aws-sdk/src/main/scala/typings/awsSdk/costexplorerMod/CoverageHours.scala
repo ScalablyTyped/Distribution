@@ -28,37 +28,27 @@ trait CoverageHours extends StObject {
 }
 object CoverageHours {
   
-  @scala.inline
-  def apply(): CoverageHours = {
+  inline def apply(): CoverageHours = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoverageHours]
   }
   
-  @scala.inline
-  implicit class CoverageHoursMutableBuilder[Self <: CoverageHours] (val x: Self) extends AnyVal {
+  extension [Self <: CoverageHours](x: Self) {
     
-    @scala.inline
-    def setCoverageHoursPercentage(value: CoverageHoursPercentage): Self = StObject.set(x, "CoverageHoursPercentage", value.asInstanceOf[js.Any])
+    inline def setCoverageHoursPercentage(value: CoverageHoursPercentage): Self = StObject.set(x, "CoverageHoursPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageHoursPercentageUndefined: Self = StObject.set(x, "CoverageHoursPercentage", js.undefined)
+    inline def setCoverageHoursPercentageUndefined: Self = StObject.set(x, "CoverageHoursPercentage", js.undefined)
     
-    @scala.inline
-    def setOnDemandHours(value: OnDemandHours): Self = StObject.set(x, "OnDemandHours", value.asInstanceOf[js.Any])
+    inline def setOnDemandHours(value: OnDemandHours): Self = StObject.set(x, "OnDemandHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandHoursUndefined: Self = StObject.set(x, "OnDemandHours", js.undefined)
+    inline def setOnDemandHoursUndefined: Self = StObject.set(x, "OnDemandHours", js.undefined)
     
-    @scala.inline
-    def setReservedHours(value: ReservedHours): Self = StObject.set(x, "ReservedHours", value.asInstanceOf[js.Any])
+    inline def setReservedHours(value: ReservedHours): Self = StObject.set(x, "ReservedHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedHoursUndefined: Self = StObject.set(x, "ReservedHours", js.undefined)
+    inline def setReservedHoursUndefined: Self = StObject.set(x, "ReservedHours", js.undefined)
     
-    @scala.inline
-    def setTotalRunningHours(value: TotalRunningHours): Self = StObject.set(x, "TotalRunningHours", value.asInstanceOf[js.Any])
+    inline def setTotalRunningHours(value: TotalRunningHours): Self = StObject.set(x, "TotalRunningHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRunningHoursUndefined: Self = StObject.set(x, "TotalRunningHours", js.undefined)
+    inline def setTotalRunningHoursUndefined: Self = StObject.set(x, "TotalRunningHours", js.undefined)
   }
 }

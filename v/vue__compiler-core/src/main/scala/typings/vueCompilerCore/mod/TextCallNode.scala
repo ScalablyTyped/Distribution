@@ -19,8 +19,7 @@ trait TextCallNode
 }
 object TextCallNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     codegenNode: CallExpression | SimpleExpressionNode,
     content: TextNode | InterpolationNode | CompoundExpressionNode,
     loc: SourceLocation
@@ -30,16 +29,12 @@ object TextCallNode {
     __obj.asInstanceOf[TextCallNode]
   }
   
-  @scala.inline
-  implicit class TextCallNodeMutableBuilder[Self <: TextCallNode] (val x: Self) extends AnyVal {
+  extension [Self <: TextCallNode](x: Self) {
     
-    @scala.inline
-    def setCodegenNode(value: CallExpression | SimpleExpressionNode): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
+    inline def setCodegenNode(value: CallExpression | SimpleExpressionNode): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: TextNode | InterpolationNode | CompoundExpressionNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: TextNode | InterpolationNode | CompoundExpressionNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `12`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `12`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

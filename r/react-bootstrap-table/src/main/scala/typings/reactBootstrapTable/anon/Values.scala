@@ -12,26 +12,21 @@ trait Values[TRow /* <: js.Object */] extends StObject {
 }
 object Values {
   
-  @scala.inline
-  def apply[TRow /* <: js.Object */](
+  inline def apply[TRow /* <: js.Object */](
     values: EditSelectOptionValue | EditCheckboxOptionValue | (js.Function1[/* row */ TRow, EditCheckboxOptionValue | EditSelectOptionValue])
   ): Values[TRow] = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Values[TRow]]
   }
   
-  @scala.inline
-  implicit class ValuesMutableBuilder[Self <: Values[?], TRow /* <: js.Object */] (val x: Self & Values[TRow]) extends AnyVal {
+  extension [Self <: Values[?], TRow /* <: js.Object */](x: Self & Values[TRow]) {
     
-    @scala.inline
-    def setValues(
+    inline def setValues(
       value: EditSelectOptionValue | EditCheckboxOptionValue | (js.Function1[/* row */ TRow, EditCheckboxOptionValue | EditSelectOptionValue])
     ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesFunction1(value: /* row */ TRow => EditCheckboxOptionValue | EditSelectOptionValue): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
+    inline def setValuesFunction1(value: /* row */ TRow => EditCheckboxOptionValue | EditSelectOptionValue): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValuesVarargs(value: (Double | String | Value)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (Double | String | Value)*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

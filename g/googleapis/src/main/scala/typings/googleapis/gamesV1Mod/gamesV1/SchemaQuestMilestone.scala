@@ -44,46 +44,33 @@ trait SchemaQuestMilestone extends StObject {
 }
 object SchemaQuestMilestone {
   
-  @scala.inline
-  def apply(): SchemaQuestMilestone = {
+  inline def apply(): SchemaQuestMilestone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuestMilestone]
   }
   
-  @scala.inline
-  implicit class SchemaQuestMilestoneMutableBuilder[Self <: SchemaQuestMilestone] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuestMilestone](x: Self) {
     
-    @scala.inline
-    def setCompletionRewardData(value: String): Self = StObject.set(x, "completionRewardData", value.asInstanceOf[js.Any])
+    inline def setCompletionRewardData(value: String): Self = StObject.set(x, "completionRewardData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionRewardDataUndefined: Self = StObject.set(x, "completionRewardData", js.undefined)
+    inline def setCompletionRewardDataUndefined: Self = StObject.set(x, "completionRewardData", js.undefined)
     
-    @scala.inline
-    def setCriteria(value: js.Array[SchemaQuestCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: js.Array[SchemaQuestCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setCriteriaVarargs(value: SchemaQuestCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: SchemaQuestCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

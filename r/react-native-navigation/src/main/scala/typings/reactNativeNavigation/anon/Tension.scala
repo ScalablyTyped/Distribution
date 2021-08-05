@@ -16,23 +16,18 @@ trait Tension
 }
 object Tension {
   
-  @scala.inline
-  def apply(): Tension = {
+  inline def apply(): Tension = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("overshoot")
     __obj.asInstanceOf[Tension]
   }
   
-  @scala.inline
-  implicit class TensionMutableBuilder[Self <: Tension] (val x: Self) extends AnyVal {
+  extension [Self <: Tension](x: Self) {
     
-    @scala.inline
-    def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
+    inline def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
+    inline def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
     
-    @scala.inline
-    def setType(value: overshoot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: overshoot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

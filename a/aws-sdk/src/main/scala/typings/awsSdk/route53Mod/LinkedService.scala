@@ -18,25 +18,19 @@ trait LinkedService extends StObject {
 }
 object LinkedService {
   
-  @scala.inline
-  def apply(): LinkedService = {
+  inline def apply(): LinkedService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkedService]
   }
   
-  @scala.inline
-  implicit class LinkedServiceMutableBuilder[Self <: LinkedService] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedService](x: Self) {
     
-    @scala.inline
-    def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
+    inline def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePrincipalUndefined: Self = StObject.set(x, "ServicePrincipal", js.undefined)
+    inline def setServicePrincipalUndefined: Self = StObject.set(x, "ServicePrincipal", js.undefined)
   }
 }

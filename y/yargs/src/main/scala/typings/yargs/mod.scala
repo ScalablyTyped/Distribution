@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyExtends(config: Dictionary[js.Any], cwd: String): Dictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyExtends")(config.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Dictionary[js.Any]]
-  @scala.inline
-  def applyExtends(config: Dictionary[js.Any], cwd: String, mergeExtends: Boolean): Dictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyExtends")(config.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], mergeExtends.asInstanceOf[js.Any])).asInstanceOf[Dictionary[js.Any]]
+  inline def applyExtends(config: Dictionary[js.Any], cwd: String): Dictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyExtends")(config.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Dictionary[js.Any]]
+  inline def applyExtends(config: Dictionary[js.Any], cwd: String, mergeExtends: Boolean): Dictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyExtends")(config.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], mergeExtends.asInstanceOf[js.Any])).asInstanceOf[Dictionary[js.Any]]
 }

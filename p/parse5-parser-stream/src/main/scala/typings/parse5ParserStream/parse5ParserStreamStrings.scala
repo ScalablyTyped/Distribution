@@ -8,6 +8,5 @@ object parse5ParserStreamStrings {
   
   @js.native
   sealed trait script extends StObject
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
+  inline def script: script = "script".asInstanceOf[script]
 }

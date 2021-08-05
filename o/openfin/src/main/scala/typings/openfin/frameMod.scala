@@ -23,21 +23,17 @@ object frameMod {
   }
   object FrameEvent {
     
-    @scala.inline
-    def apply[Type](frameName: String, name: String, `type`: Type, uuid: String): FrameEvent[Type] = {
+    inline def apply[Type](frameName: String, name: String, `type`: Type, uuid: String): FrameEvent[Type] = {
       val __obj = js.Dynamic.literal(entityType = "iframe", frameName = frameName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], topic = "frame", uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FrameEvent[Type]]
     }
     
-    @scala.inline
-    implicit class FrameEventMutableBuilder[Self <: FrameEvent[?], Type] (val x: Self & FrameEvent[Type]) extends AnyVal {
+    extension [Self <: FrameEvent[?], Type](x: Self & FrameEvent[Type]) {
       
-      @scala.inline
-      def setEntityType(value: iframe): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+      inline def setEntityType(value: iframe): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
+      inline def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,8 +47,7 @@ object frameMod {
   }
   object FrameEvents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connected: FrameEvent[connected],
       disconnected: FrameEvent[disconnected],
       listenerRemoved: String,
@@ -62,14 +57,11 @@ object frameMod {
       __obj.asInstanceOf[FrameEvents]
     }
     
-    @scala.inline
-    implicit class FrameEventsMutableBuilder[Self <: FrameEvents] (val x: Self) extends AnyVal {
+    extension [Self <: FrameEvents](x: Self) {
       
-      @scala.inline
-      def setConnected(value: FrameEvent[connected]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: FrameEvent[connected]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnected(value: FrameEvent[disconnected]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
+      inline def setDisconnected(value: FrameEvent[disconnected]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     }
   }
 }

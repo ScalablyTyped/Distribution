@@ -23,17 +23,14 @@ trait CheckboxQuestion[T /* <: Answers */]
 }
 object CheckboxQuestion {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): CheckboxQuestion[T] = {
+  inline def apply[T /* <: Answers */](): CheckboxQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("checkbox")
     __obj.asInstanceOf[CheckboxQuestion[T]]
   }
   
-  @scala.inline
-  implicit class CheckboxQuestionMutableBuilder[Self <: CheckboxQuestion[?], T /* <: Answers */] (val x: Self & CheckboxQuestion[T]) extends AnyVal {
+  extension [Self <: CheckboxQuestion[?], T /* <: Answers */](x: Self & CheckboxQuestion[T]) {
     
-    @scala.inline
-    def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoScroll extends StObject
 object AutoScroll {
   
-  @scala.inline
-  def apply: AutoScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoScroll").asInstanceOf[AutoScroll]
+  inline def apply: AutoScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("AutoScroll").asInstanceOf[AutoScroll]
 }

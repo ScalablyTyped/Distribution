@@ -36,8 +36,7 @@ trait ASPxClientAppointmentDragInfo extends StObject {
 }
 object ASPxClientAppointmentDragInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appointmentId: String,
     newInterval: ASPxClientTimeInterval,
     newResources: js.Array[String],
@@ -48,28 +47,20 @@ object ASPxClientAppointmentDragInfo {
     __obj.asInstanceOf[ASPxClientAppointmentDragInfo]
   }
   
-  @scala.inline
-  implicit class ASPxClientAppointmentDragInfoMutableBuilder[Self <: ASPxClientAppointmentDragInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAppointmentDragInfo](x: Self) {
     
-    @scala.inline
-    def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
+    inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
+    inline def setNewInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewResources(value: js.Array[String]): Self = StObject.set(x, "newResources", value.asInstanceOf[js.Any])
+    inline def setNewResources(value: js.Array[String]): Self = StObject.set(x, "newResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewResourcesVarargs(value: String*): Self = StObject.set(x, "newResources", js.Array(value :_*))
+    inline def setNewResourcesVarargs(value: String*): Self = StObject.set(x, "newResources", js.Array(value :_*))
     
-    @scala.inline
-    def setOldInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
+    inline def setOldInterval(value: ASPxClientTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldResources(value: js.Array[String]): Self = StObject.set(x, "oldResources", value.asInstanceOf[js.Any])
+    inline def setOldResources(value: js.Array[String]): Self = StObject.set(x, "oldResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldResourcesVarargs(value: String*): Self = StObject.set(x, "oldResources", js.Array(value :_*))
+    inline def setOldResourcesVarargs(value: String*): Self = StObject.set(x, "oldResources", js.Array(value :_*))
   }
 }

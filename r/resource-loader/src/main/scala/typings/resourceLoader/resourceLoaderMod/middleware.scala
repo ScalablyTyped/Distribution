@@ -25,8 +25,7 @@ object middleware {
     * @param {Resource} resource - Current Resource
     * @param {function} next - Callback when complete
     */
-  @scala.inline
-  def caching(resource: Resource, next: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("caching")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def caching(resource: Resource, next: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("caching")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * A middleware for transforming XHR loaded Blobs into more useful objects
@@ -40,6 +39,5 @@ object middleware {
     * @param {Resource} resource - Current Resource
     * @param {function} next - Callback when complete
     */
-  @scala.inline
-  def parsing(resource: Resource, next: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parsing")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parsing(resource: Resource, next: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parsing")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

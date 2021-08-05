@@ -12,9 +12,9 @@ object componentMetadataProviderMod {
   @js.native
   class ComponentMetadataProvider () extends StObject {
     
-    var agComponentUtils: js.Any = js.native
+    /* private */ var agComponentUtils: js.Any = js.native
     
-    var componentMetaData: js.Any = js.native
+    /* private */ var componentMetaData: js.Any = js.native
     
     def postConstruct(): Unit = js.native
     
@@ -33,32 +33,24 @@ object componentMetadataProviderMod {
   }
   object ComponentMetadata {
     
-    @scala.inline
-    def apply(mandatoryMethodList: js.Array[String], optionalMethodList: js.Array[String]): ComponentMetadata = {
+    inline def apply(mandatoryMethodList: js.Array[String], optionalMethodList: js.Array[String]): ComponentMetadata = {
       val __obj = js.Dynamic.literal(mandatoryMethodList = mandatoryMethodList.asInstanceOf[js.Any], optionalMethodList = optionalMethodList.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentMetadata]
     }
     
-    @scala.inline
-    implicit class ComponentMetadataMutableBuilder[Self <: ComponentMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentMetadata](x: Self) {
       
-      @scala.inline
-      def setFunctionAdapter(value: /* callback */ AgGridComponentFunctionInput => InstantiableIComponent): Self = StObject.set(x, "functionAdapter", js.Any.fromFunction1(value))
+      inline def setFunctionAdapter(value: /* callback */ AgGridComponentFunctionInput => InstantiableIComponent): Self = StObject.set(x, "functionAdapter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFunctionAdapterUndefined: Self = StObject.set(x, "functionAdapter", js.undefined)
+      inline def setFunctionAdapterUndefined: Self = StObject.set(x, "functionAdapter", js.undefined)
       
-      @scala.inline
-      def setMandatoryMethodList(value: js.Array[String]): Self = StObject.set(x, "mandatoryMethodList", value.asInstanceOf[js.Any])
+      inline def setMandatoryMethodList(value: js.Array[String]): Self = StObject.set(x, "mandatoryMethodList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMandatoryMethodListVarargs(value: String*): Self = StObject.set(x, "mandatoryMethodList", js.Array(value :_*))
+      inline def setMandatoryMethodListVarargs(value: String*): Self = StObject.set(x, "mandatoryMethodList", js.Array(value :_*))
       
-      @scala.inline
-      def setOptionalMethodList(value: js.Array[String]): Self = StObject.set(x, "optionalMethodList", value.asInstanceOf[js.Any])
+      inline def setOptionalMethodList(value: js.Array[String]): Self = StObject.set(x, "optionalMethodList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalMethodListVarargs(value: String*): Self = StObject.set(x, "optionalMethodList", js.Array(value :_*))
+      inline def setOptionalMethodListVarargs(value: String*): Self = StObject.set(x, "optionalMethodList", js.Array(value :_*))
     }
   }
 }

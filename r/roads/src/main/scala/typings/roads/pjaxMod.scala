@@ -26,17 +26,17 @@ object pjaxMod {
       */
     def this(road: typings.roads.roadMod.default, container_element: HTMLElement, window: Window) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _container_element: HTMLElement = js.native
     
     /**
       * Handles all click events, and directs
       * @param {MouseEvent} event
       */
-    /* CompleteClass */
-    /* protected */ override def _pjaxEventMonitor(event: MouseEvent): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def _pjaxEventMonitor(event: MouseEvent): Unit = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _road: typings.roads.roadMod.default = js.native
     
     /**
@@ -44,18 +44,18 @@ object pjaxMod {
       *
       * @param {HTMLFormElement} form
       */
-    /* CompleteClass */
-    /* protected */ override def _roadsFormEvent(form: HTMLFormElement): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def _roadsFormEvent(form: HTMLFormElement): Unit = js.native
     
     /**
       * Follows the link and renders the UI
       *
       * @param  {HTMLAnchorElement} link
       */
-    /* CompleteClass */
-    /* protected */ override def _roadsLinkEvent(link: HTMLAnchorElement): Unit = js.native
+    /* protected */ /* CompleteClass */
+    override def _roadsLinkEvent(link: HTMLAnchorElement): Unit = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _window: Window = js.native
     
     /**
@@ -100,9 +100,9 @@ object pjaxMod {
   
   trait RoadsPjax extends StObject {
     
-    var _container_element: HTMLElement
+    /* protected */ var _container_element: HTMLElement
     
-    var _page_title: js.UndefOr[String] = js.undefined
+    /* protected */ var _page_title: js.UndefOr[String] = js.undefined
     
     /**
       * Handles all click events, and directs
@@ -110,7 +110,7 @@ object pjaxMod {
       */
     /* protected */ def _pjaxEventMonitor(event: MouseEvent): Unit
     
-    var _road: typings.roads.roadMod.default
+    /* protected */ var _road: typings.roads.roadMod.default
     
     /**
       * Submits the form and re-renders the UI
@@ -126,7 +126,7 @@ object pjaxMod {
       */
     /* protected */ def _roadsLinkEvent(link: HTMLAnchorElement): Unit
     
-    var _window: Window
+    /* protected */ var _window: Window
     
     /**
       * Assigns the cookie middlware to the road to properly handle cookies
@@ -164,8 +164,7 @@ object pjaxMod {
   }
   object RoadsPjax {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _container_element: HTMLElement,
       _pjaxEventMonitor: MouseEvent => Unit,
       _road: typings.roads.roadMod.default,
@@ -182,47 +181,33 @@ object pjaxMod {
       __obj.asInstanceOf[RoadsPjax]
     }
     
-    @scala.inline
-    implicit class RoadsPjaxMutableBuilder[Self <: RoadsPjax] (val x: Self) extends AnyVal {
+    extension [Self <: RoadsPjax](x: Self) {
       
-      @scala.inline
-      def setAddCookieMiddleware(value: Document => RoadsPjax): Self = StObject.set(x, "addCookieMiddleware", js.Any.fromFunction1(value))
+      inline def setAddCookieMiddleware(value: Document => RoadsPjax): Self = StObject.set(x, "addCookieMiddleware", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddTitleMiddleware(value: () => RoadsPjax): Self = StObject.set(x, "addTitleMiddleware", js.Any.fromFunction0(value))
+      inline def setAddTitleMiddleware(value: () => RoadsPjax): Self = StObject.set(x, "addTitleMiddleware", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
+      inline def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterAdditionalElement(value: HTMLAnchorElement => Unit): Self = StObject.set(x, "registerAdditionalElement", js.Any.fromFunction1(value))
+      inline def setRegisterAdditionalElement(value: HTMLAnchorElement => Unit): Self = StObject.set(x, "registerAdditionalElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRender(value: typings.roads.responseMod.default => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: typings.roads.responseMod.default => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_container_element(value: HTMLElement): Self = StObject.set(x, "_container_element", value.asInstanceOf[js.Any])
+      inline def set_container_element(value: HTMLElement): Self = StObject.set(x, "_container_element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_page_title(value: String): Self = StObject.set(x, "_page_title", value.asInstanceOf[js.Any])
+      inline def set_page_title(value: String): Self = StObject.set(x, "_page_title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_page_titleUndefined: Self = StObject.set(x, "_page_title", js.undefined)
+      inline def set_page_titleUndefined: Self = StObject.set(x, "_page_title", js.undefined)
       
-      @scala.inline
-      def set_pjaxEventMonitor(value: MouseEvent => Unit): Self = StObject.set(x, "_pjaxEventMonitor", js.Any.fromFunction1(value))
+      inline def set_pjaxEventMonitor(value: MouseEvent => Unit): Self = StObject.set(x, "_pjaxEventMonitor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_road(value: typings.roads.roadMod.default): Self = StObject.set(x, "_road", value.asInstanceOf[js.Any])
+      inline def set_road(value: typings.roads.roadMod.default): Self = StObject.set(x, "_road", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_roadsFormEvent(value: HTMLFormElement => Unit): Self = StObject.set(x, "_roadsFormEvent", js.Any.fromFunction1(value))
+      inline def set_roadsFormEvent(value: HTMLFormElement => Unit): Self = StObject.set(x, "_roadsFormEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_roadsLinkEvent(value: HTMLAnchorElement => Unit): Self = StObject.set(x, "_roadsLinkEvent", js.Any.fromFunction1(value))
+      inline def set_roadsLinkEvent(value: HTMLAnchorElement => Unit): Self = StObject.set(x, "_roadsLinkEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_window(value: Window): Self = StObject.set(x, "_window", value.asInstanceOf[js.Any])
+      inline def set_window(value: Window): Self = StObject.set(x, "_window", value.asInstanceOf[js.Any])
     }
   }
 }

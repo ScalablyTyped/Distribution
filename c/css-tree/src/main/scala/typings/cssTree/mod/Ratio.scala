@@ -19,23 +19,18 @@ trait Ratio
 }
 object Ratio {
   
-  @scala.inline
-  def apply(left: String, right: String): Ratio = {
+  inline def apply(left: String, right: String): Ratio = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Ratio")
     __obj.asInstanceOf[Ratio]
   }
   
-  @scala.inline
-  implicit class RatioMutableBuilder[Self <: Ratio] (val x: Self) extends AnyVal {
+  extension [Self <: Ratio](x: Self) {
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Ratio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Ratio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

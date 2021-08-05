@@ -26,8 +26,7 @@ trait Configuration
 }
 object Configuration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addResource: XResourceId => Unit,
     create: () => Unit,
@@ -42,10 +41,8 @@ object Configuration {
     __obj.asInstanceOf[Configuration]
   }
   
-  @scala.inline
-  implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+  extension [Self <: Configuration](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }
 }

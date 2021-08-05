@@ -16,8 +16,7 @@ trait ConversationLink
 }
 object ConversationLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -29,16 +28,12 @@ object ConversationLink {
     __obj.asInstanceOf[ConversationLink]
   }
   
-  @scala.inline
-  implicit class ConversationLinkMutableBuilder[Self <: ConversationLink] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationLink](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRef(value: InteractionNode): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
+    inline def setSourceRef(value: InteractionNode): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRef(value: InteractionNode): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+    inline def setTargetRef(value: InteractionNode): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
   }
 }

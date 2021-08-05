@@ -13,16 +13,13 @@ trait GetBlacklistReportsResponse extends StObject {
 }
 object GetBlacklistReportsResponse {
   
-  @scala.inline
-  def apply(BlacklistReport: BlacklistReport): GetBlacklistReportsResponse = {
+  inline def apply(BlacklistReport: BlacklistReport): GetBlacklistReportsResponse = {
     val __obj = js.Dynamic.literal(BlacklistReport = BlacklistReport.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBlacklistReportsResponse]
   }
   
-  @scala.inline
-  implicit class GetBlacklistReportsResponseMutableBuilder[Self <: GetBlacklistReportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBlacklistReportsResponse](x: Self) {
     
-    @scala.inline
-    def setBlacklistReport(value: BlacklistReport): Self = StObject.set(x, "BlacklistReport", value.asInstanceOf[js.Any])
+    inline def setBlacklistReport(value: BlacklistReport): Self = StObject.set(x, "BlacklistReport", value.asInstanceOf[js.Any])
   }
 }

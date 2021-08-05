@@ -21,32 +21,24 @@ object releaseNotesMod {
   }
   object ReleaseNotes {
     
-    @scala.inline
-    def apply(): ReleaseNotes = {
+    inline def apply(): ReleaseNotes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReleaseNotes]
     }
     
-    @scala.inline
-    implicit class ReleaseNotesMutableBuilder[Self <: ReleaseNotes] (val x: Self) extends AnyVal {
+    extension [Self <: ReleaseNotes](x: Self) {
       
-      @scala.inline
-      def setCurrentVersion(value: String): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
+      inline def setCurrentVersion(value: String): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
+      inline def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
       
-      @scala.inline
-      def setShowOnFirstLaunch(value: Boolean): Self = StObject.set(x, "showOnFirstLaunch", value.asInstanceOf[js.Any])
+      inline def setShowOnFirstLaunch(value: Boolean): Self = StObject.set(x, "showOnFirstLaunch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOnFirstLaunchUndefined: Self = StObject.set(x, "showOnFirstLaunch", js.undefined)
+      inline def setShowOnFirstLaunchUndefined: Self = StObject.set(x, "showOnFirstLaunch", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
@@ -60,8 +52,7 @@ object releaseNotesMod {
   }
   object SubAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       releaseNotesVersion: () => String,
       setDidViewReleaseNotes: () => Unit,
       showReleaseNotesOnLaunch: () => Boolean
@@ -70,17 +61,13 @@ object releaseNotesMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    @scala.inline
-    implicit class SubAPIMutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
+    extension [Self <: SubAPI](x: Self) {
       
-      @scala.inline
-      def setReleaseNotesVersion(value: () => String): Self = StObject.set(x, "releaseNotesVersion", js.Any.fromFunction0(value))
+      inline def setReleaseNotesVersion(value: () => String): Self = StObject.set(x, "releaseNotesVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetDidViewReleaseNotes(value: () => Unit): Self = StObject.set(x, "setDidViewReleaseNotes", js.Any.fromFunction0(value))
+      inline def setSetDidViewReleaseNotes(value: () => Unit): Self = StObject.set(x, "setDidViewReleaseNotes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowReleaseNotesOnLaunch(value: () => Boolean): Self = StObject.set(x, "showReleaseNotesOnLaunch", js.Any.fromFunction0(value))
+      inline def setShowReleaseNotesOnLaunch(value: () => Boolean): Self = StObject.set(x, "showReleaseNotesOnLaunch", js.Any.fromFunction0(value))
     }
   }
   
@@ -90,20 +77,16 @@ object releaseNotesMod {
   }
   object SubState {
     
-    @scala.inline
-    def apply(releaseNotesViewed: js.Array[String]): SubState = {
+    inline def apply(releaseNotesViewed: js.Array[String]): SubState = {
       val __obj = js.Dynamic.literal(releaseNotesViewed = releaseNotesViewed.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubState]
     }
     
-    @scala.inline
-    implicit class SubStateMutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
+    extension [Self <: SubState](x: Self) {
       
-      @scala.inline
-      def setReleaseNotesViewed(value: js.Array[String]): Self = StObject.set(x, "releaseNotesViewed", value.asInstanceOf[js.Any])
+      inline def setReleaseNotesViewed(value: js.Array[String]): Self = StObject.set(x, "releaseNotesViewed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseNotesViewedVarargs(value: String*): Self = StObject.set(x, "releaseNotesViewed", js.Array(value :_*))
+      inline def setReleaseNotesViewedVarargs(value: String*): Self = StObject.set(x, "releaseNotesViewed", js.Array(value :_*))
     }
   }
 }

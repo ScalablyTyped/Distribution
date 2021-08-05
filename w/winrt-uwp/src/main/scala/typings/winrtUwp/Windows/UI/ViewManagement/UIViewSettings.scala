@@ -12,16 +12,13 @@ trait UIViewSettings extends StObject {
 }
 object UIViewSettings {
   
-  @scala.inline
-  def apply(userInteractionMode: UserInteractionMode): UIViewSettings = {
+  inline def apply(userInteractionMode: UserInteractionMode): UIViewSettings = {
     val __obj = js.Dynamic.literal(userInteractionMode = userInteractionMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIViewSettings]
   }
   
-  @scala.inline
-  implicit class UIViewSettingsMutableBuilder[Self <: UIViewSettings] (val x: Self) extends AnyVal {
+  extension [Self <: UIViewSettings](x: Self) {
     
-    @scala.inline
-    def setUserInteractionMode(value: UserInteractionMode): Self = StObject.set(x, "userInteractionMode", value.asInstanceOf[js.Any])
+    inline def setUserInteractionMode(value: UserInteractionMode): Self = StObject.set(x, "userInteractionMode", value.asInstanceOf[js.Any])
   }
 }

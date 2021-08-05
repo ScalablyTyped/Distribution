@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectIdActionType extends StObject
 object ObjectIdActionType {
   
-  @scala.inline
-  def open_graph: typings.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph = "open_graph".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph]
+  inline def open_graph: typings.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph = "open_graph".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph]
   
-  @scala.inline
-  def page: typings.reactNativeFbsdk.reactNativeFbsdkStrings.page = "page".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.page]
+  inline def page: typings.reactNativeFbsdk.reactNativeFbsdkStrings.page = "page".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.page]
   
-  @scala.inline
-  def unknown: typings.reactNativeFbsdk.reactNativeFbsdkStrings.unknown = "unknown".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.unknown]
+  inline def unknown: typings.reactNativeFbsdk.reactNativeFbsdkStrings.unknown = "unknown".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.unknown]
 }

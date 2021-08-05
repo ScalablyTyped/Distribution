@@ -128,8 +128,7 @@ trait IUtilAnimEase extends StObject {
 }
 object IUtilAnimEase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     easeInBack: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double,
     easeInBounce: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double,
     easeInCirc: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double,
@@ -165,97 +164,66 @@ object IUtilAnimEase {
     __obj.asInstanceOf[IUtilAnimEase]
   }
   
-  @scala.inline
-  implicit class IUtilAnimEaseMutableBuilder[Self <: IUtilAnimEase] (val x: Self) extends AnyVal {
+  extension [Self <: IUtilAnimEase](x: Self) {
     
-    @scala.inline
-    def setEaseInBack(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInBack", js.Any.fromFunction4(value))
+    inline def setEaseInBack(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInBack", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInBounce(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInBounce", js.Any.fromFunction4(value))
+    inline def setEaseInBounce(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInBounce", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInCirc(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInCirc", js.Any.fromFunction4(value))
+    inline def setEaseInCirc(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInCirc", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInCubic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInCubic", js.Any.fromFunction4(value))
+    inline def setEaseInCubic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInCubic", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInElastic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInElastic", js.Any.fromFunction4(value))
+    inline def setEaseInElastic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInElastic", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInExpo(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInExpo", js.Any.fromFunction4(value))
+    inline def setEaseInExpo(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInExpo", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutBack(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutBack", js.Any.fromFunction4(value))
+    inline def setEaseInOutBack(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutBack", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutBounce(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutBounce", js.Any.fromFunction4(value))
+    inline def setEaseInOutBounce(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutBounce", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutCirc(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutCirc", js.Any.fromFunction4(value))
+    inline def setEaseInOutCirc(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutCirc", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutCubic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutCubic", js.Any.fromFunction4(value))
+    inline def setEaseInOutCubic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutCubic", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutElastic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutElastic", js.Any.fromFunction4(value))
+    inline def setEaseInOutElastic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutElastic", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutExpo(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutExpo", js.Any.fromFunction4(value))
+    inline def setEaseInOutExpo(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutExpo", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutQuad(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutQuad", js.Any.fromFunction4(value))
+    inline def setEaseInOutQuad(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutQuad", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutQuart(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutQuart", js.Any.fromFunction4(value))
+    inline def setEaseInOutQuart(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutQuart", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutQuint(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutQuint", js.Any.fromFunction4(value))
+    inline def setEaseInOutQuint(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutQuint", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInOutSine(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutSine", js.Any.fromFunction4(value))
+    inline def setEaseInOutSine(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInOutSine", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInQuad(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInQuad", js.Any.fromFunction4(value))
+    inline def setEaseInQuad(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInQuad", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInQuart(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInQuart", js.Any.fromFunction4(value))
+    inline def setEaseInQuart(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInQuart", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInQuint(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInQuint", js.Any.fromFunction4(value))
+    inline def setEaseInQuint(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInQuint", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseInSine(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInSine", js.Any.fromFunction4(value))
+    inline def setEaseInSine(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeInSine", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutBack(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutBack", js.Any.fromFunction4(value))
+    inline def setEaseOutBack(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutBack", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutBounce(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutBounce", js.Any.fromFunction4(value))
+    inline def setEaseOutBounce(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutBounce", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutCirc(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutCirc", js.Any.fromFunction4(value))
+    inline def setEaseOutCirc(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutCirc", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutCubic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutCubic", js.Any.fromFunction4(value))
+    inline def setEaseOutCubic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutCubic", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutElastic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutElastic", js.Any.fromFunction4(value))
+    inline def setEaseOutElastic(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutElastic", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutExpo(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutExpo", js.Any.fromFunction4(value))
+    inline def setEaseOutExpo(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutExpo", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutQuad(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutQuad", js.Any.fromFunction4(value))
+    inline def setEaseOutQuad(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutQuad", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutQuart(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutQuart", js.Any.fromFunction4(value))
+    inline def setEaseOutQuart(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutQuart", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutQuint(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutQuint", js.Any.fromFunction4(value))
+    inline def setEaseOutQuint(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutQuint", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEaseOutSine(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutSine", js.Any.fromFunction4(value))
+    inline def setEaseOutSine(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeOutSine", js.Any.fromFunction4(value))
   }
 }

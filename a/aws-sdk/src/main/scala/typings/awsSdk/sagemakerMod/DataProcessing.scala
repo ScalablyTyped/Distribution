@@ -23,31 +23,23 @@ trait DataProcessing extends StObject {
 }
 object DataProcessing {
   
-  @scala.inline
-  def apply(): DataProcessing = {
+  inline def apply(): DataProcessing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataProcessing]
   }
   
-  @scala.inline
-  implicit class DataProcessingMutableBuilder[Self <: DataProcessing] (val x: Self) extends AnyVal {
+  extension [Self <: DataProcessing](x: Self) {
     
-    @scala.inline
-    def setInputFilter(value: JsonPath): Self = StObject.set(x, "InputFilter", value.asInstanceOf[js.Any])
+    inline def setInputFilter(value: JsonPath): Self = StObject.set(x, "InputFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFilterUndefined: Self = StObject.set(x, "InputFilter", js.undefined)
+    inline def setInputFilterUndefined: Self = StObject.set(x, "InputFilter", js.undefined)
     
-    @scala.inline
-    def setJoinSource(value: JoinSource): Self = StObject.set(x, "JoinSource", value.asInstanceOf[js.Any])
+    inline def setJoinSource(value: JoinSource): Self = StObject.set(x, "JoinSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinSourceUndefined: Self = StObject.set(x, "JoinSource", js.undefined)
+    inline def setJoinSourceUndefined: Self = StObject.set(x, "JoinSource", js.undefined)
     
-    @scala.inline
-    def setOutputFilter(value: JsonPath): Self = StObject.set(x, "OutputFilter", value.asInstanceOf[js.Any])
+    inline def setOutputFilter(value: JsonPath): Self = StObject.set(x, "OutputFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFilterUndefined: Self = StObject.set(x, "OutputFilter", js.undefined)
+    inline def setOutputFilterUndefined: Self = StObject.set(x, "OutputFilter", js.undefined)
   }
 }

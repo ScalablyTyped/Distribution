@@ -11,19 +11,15 @@ trait SetInstanceMachineTypeRequest extends StObject {
 }
 object SetInstanceMachineTypeRequest {
   
-  @scala.inline
-  def apply(): SetInstanceMachineTypeRequest = {
+  inline def apply(): SetInstanceMachineTypeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetInstanceMachineTypeRequest]
   }
   
-  @scala.inline
-  implicit class SetInstanceMachineTypeRequestMutableBuilder[Self <: SetInstanceMachineTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetInstanceMachineTypeRequest](x: Self) {
     
-    @scala.inline
-    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
+    inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
   }
 }

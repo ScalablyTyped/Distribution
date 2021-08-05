@@ -87,8 +87,7 @@ trait XNumberFormats
 }
 object XNumberFormats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addNew: (String, Locale) => Double,
     addNewConverted: (String, Locale, Locale) => Double,
@@ -104,28 +103,20 @@ object XNumberFormats {
     __obj.asInstanceOf[XNumberFormats]
   }
   
-  @scala.inline
-  implicit class XNumberFormatsMutableBuilder[Self <: XNumberFormats] (val x: Self) extends AnyVal {
+  extension [Self <: XNumberFormats](x: Self) {
     
-    @scala.inline
-    def setAddNew(value: (String, Locale) => Double): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
+    inline def setAddNew(value: (String, Locale) => Double): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddNewConverted(value: (String, Locale, Locale) => Double): Self = StObject.set(x, "addNewConverted", js.Any.fromFunction3(value))
+    inline def setAddNewConverted(value: (String, Locale, Locale) => Double): Self = StObject.set(x, "addNewConverted", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGenerateFormat(value: (Double, Locale, Boolean, Boolean, Double, Double) => String): Self = StObject.set(x, "generateFormat", js.Any.fromFunction6(value))
+    inline def setGenerateFormat(value: (Double, Locale, Boolean, Boolean, Double, Double) => String): Self = StObject.set(x, "generateFormat", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setGetByKey(value: Double => XPropertySet): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
+    inline def setGetByKey(value: Double => XPropertySet): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryKey(value: (String, Locale, Boolean) => Double): Self = StObject.set(x, "queryKey", js.Any.fromFunction3(value))
+    inline def setQueryKey(value: (String, Locale, Boolean) => Double): Self = StObject.set(x, "queryKey", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQueryKeys(value: (Double, Locale, Boolean) => SafeArray[Double]): Self = StObject.set(x, "queryKeys", js.Any.fromFunction3(value))
+    inline def setQueryKeys(value: (Double, Locale, Boolean) => SafeArray[Double]): Self = StObject.set(x, "queryKeys", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveByKey(value: Double => Unit): Self = StObject.set(x, "removeByKey", js.Any.fromFunction1(value))
+    inline def setRemoveByKey(value: Double => Unit): Self = StObject.set(x, "removeByKey", js.Any.fromFunction1(value))
   }
 }

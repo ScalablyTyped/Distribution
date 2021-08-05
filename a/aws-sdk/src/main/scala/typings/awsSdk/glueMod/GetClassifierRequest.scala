@@ -13,16 +13,13 @@ trait GetClassifierRequest extends StObject {
 }
 object GetClassifierRequest {
   
-  @scala.inline
-  def apply(Name: NameString): GetClassifierRequest = {
+  inline def apply(Name: NameString): GetClassifierRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClassifierRequest]
   }
   
-  @scala.inline
-  implicit class GetClassifierRequestMutableBuilder[Self <: GetClassifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetClassifierRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

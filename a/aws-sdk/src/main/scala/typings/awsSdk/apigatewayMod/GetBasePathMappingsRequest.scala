@@ -23,28 +23,21 @@ trait GetBasePathMappingsRequest extends StObject {
 }
 object GetBasePathMappingsRequest {
   
-  @scala.inline
-  def apply(domainName: String): GetBasePathMappingsRequest = {
+  inline def apply(domainName: String): GetBasePathMappingsRequest = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBasePathMappingsRequest]
   }
   
-  @scala.inline
-  implicit class GetBasePathMappingsRequestMutableBuilder[Self <: GetBasePathMappingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBasePathMappingsRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

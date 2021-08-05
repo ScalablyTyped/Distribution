@@ -20,25 +20,19 @@ trait MediaContentRatingAustralia extends StObject {
 }
 object MediaContentRatingAustralia {
   
-  @scala.inline
-  def apply(): MediaContentRatingAustralia = {
+  inline def apply(): MediaContentRatingAustralia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaContentRatingAustralia]
   }
   
-  @scala.inline
-  implicit class MediaContentRatingAustraliaMutableBuilder[Self <: MediaContentRatingAustralia] (val x: Self) extends AnyVal {
+  extension [Self <: MediaContentRatingAustralia](x: Self) {
     
-    @scala.inline
-    def setMovieRating(value: RatingAustraliaMoviesType): Self = StObject.set(x, "movieRating", value.asInstanceOf[js.Any])
+    inline def setMovieRating(value: RatingAustraliaMoviesType): Self = StObject.set(x, "movieRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovieRatingUndefined: Self = StObject.set(x, "movieRating", js.undefined)
+    inline def setMovieRatingUndefined: Self = StObject.set(x, "movieRating", js.undefined)
     
-    @scala.inline
-    def setTvRating(value: RatingAustraliaTelevisionType): Self = StObject.set(x, "tvRating", value.asInstanceOf[js.Any])
+    inline def setTvRating(value: RatingAustraliaTelevisionType): Self = StObject.set(x, "tvRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvRatingUndefined: Self = StObject.set(x, "tvRating", js.undefined)
+    inline def setTvRatingUndefined: Self = StObject.set(x, "tvRating", js.undefined)
   }
 }

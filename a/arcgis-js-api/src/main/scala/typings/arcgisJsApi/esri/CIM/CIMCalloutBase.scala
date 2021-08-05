@@ -20,29 +20,22 @@ trait CIMCalloutBase extends StObject {
 }
 object CIMCalloutBase {
   
-  @scala.inline
-  def apply(`type`: String): CIMCalloutBase = {
+  inline def apply(`type`: String): CIMCalloutBase = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMCalloutBase]
   }
   
-  @scala.inline
-  implicit class CIMCalloutBaseMutableBuilder[Self <: CIMCalloutBase] (val x: Self) extends AnyVal {
+  extension [Self <: CIMCalloutBase](x: Self) {
     
-    @scala.inline
-    def setLeaderOffset(value: Double): Self = StObject.set(x, "leaderOffset", value.asInstanceOf[js.Any])
+    inline def setLeaderOffset(value: Double): Self = StObject.set(x, "leaderOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderOffsetUndefined: Self = StObject.set(x, "leaderOffset", js.undefined)
+    inline def setLeaderOffsetUndefined: Self = StObject.set(x, "leaderOffset", js.undefined)
     
-    @scala.inline
-    def setLeaderTolerance(value: Double): Self = StObject.set(x, "leaderTolerance", value.asInstanceOf[js.Any])
+    inline def setLeaderTolerance(value: Double): Self = StObject.set(x, "leaderTolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderToleranceUndefined: Self = StObject.set(x, "leaderTolerance", js.undefined)
+    inline def setLeaderToleranceUndefined: Self = StObject.set(x, "leaderTolerance", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

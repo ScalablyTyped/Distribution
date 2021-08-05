@@ -18,25 +18,19 @@ trait NonCompliantSummary extends StObject {
 }
 object NonCompliantSummary {
   
-  @scala.inline
-  def apply(): NonCompliantSummary = {
+  inline def apply(): NonCompliantSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonCompliantSummary]
   }
   
-  @scala.inline
-  implicit class NonCompliantSummaryMutableBuilder[Self <: NonCompliantSummary] (val x: Self) extends AnyVal {
+  extension [Self <: NonCompliantSummary](x: Self) {
     
-    @scala.inline
-    def setNonCompliantCount(value: ComplianceSummaryCount): Self = StObject.set(x, "NonCompliantCount", value.asInstanceOf[js.Any])
+    inline def setNonCompliantCount(value: ComplianceSummaryCount): Self = StObject.set(x, "NonCompliantCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonCompliantCountUndefined: Self = StObject.set(x, "NonCompliantCount", js.undefined)
+    inline def setNonCompliantCountUndefined: Self = StObject.set(x, "NonCompliantCount", js.undefined)
     
-    @scala.inline
-    def setSeveritySummary(value: SeveritySummary): Self = StObject.set(x, "SeveritySummary", value.asInstanceOf[js.Any])
+    inline def setSeveritySummary(value: SeveritySummary): Self = StObject.set(x, "SeveritySummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeveritySummaryUndefined: Self = StObject.set(x, "SeveritySummary", js.undefined)
+    inline def setSeveritySummaryUndefined: Self = StObject.set(x, "SeveritySummary", js.undefined)
   }
 }

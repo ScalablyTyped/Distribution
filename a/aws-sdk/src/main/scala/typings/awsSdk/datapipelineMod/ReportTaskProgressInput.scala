@@ -18,25 +18,19 @@ trait ReportTaskProgressInput extends StObject {
 }
 object ReportTaskProgressInput {
   
-  @scala.inline
-  def apply(taskId: taskId): ReportTaskProgressInput = {
+  inline def apply(taskId: taskId): ReportTaskProgressInput = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportTaskProgressInput]
   }
   
-  @scala.inline
-  implicit class ReportTaskProgressInputMutableBuilder[Self <: ReportTaskProgressInput] (val x: Self) extends AnyVal {
+  extension [Self <: ReportTaskProgressInput](x: Self) {
     
-    @scala.inline
-    def setFields(value: fieldList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: fieldList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskId(value: taskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: taskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

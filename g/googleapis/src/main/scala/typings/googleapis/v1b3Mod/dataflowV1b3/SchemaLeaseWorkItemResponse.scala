@@ -22,28 +22,21 @@ trait SchemaLeaseWorkItemResponse extends StObject {
 }
 object SchemaLeaseWorkItemResponse {
   
-  @scala.inline
-  def apply(): SchemaLeaseWorkItemResponse = {
+  inline def apply(): SchemaLeaseWorkItemResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLeaseWorkItemResponse]
   }
   
-  @scala.inline
-  implicit class SchemaLeaseWorkItemResponseMutableBuilder[Self <: SchemaLeaseWorkItemResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLeaseWorkItemResponse](x: Self) {
     
-    @scala.inline
-    def setUnifiedWorkerResponse(value: StringDictionary[js.Any]): Self = StObject.set(x, "unifiedWorkerResponse", value.asInstanceOf[js.Any])
+    inline def setUnifiedWorkerResponse(value: StringDictionary[js.Any]): Self = StObject.set(x, "unifiedWorkerResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnifiedWorkerResponseUndefined: Self = StObject.set(x, "unifiedWorkerResponse", js.undefined)
+    inline def setUnifiedWorkerResponseUndefined: Self = StObject.set(x, "unifiedWorkerResponse", js.undefined)
     
-    @scala.inline
-    def setWorkItems(value: js.Array[SchemaWorkItem]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
+    inline def setWorkItems(value: js.Array[SchemaWorkItem]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemsUndefined: Self = StObject.set(x, "workItems", js.undefined)
+    inline def setWorkItemsUndefined: Self = StObject.set(x, "workItems", js.undefined)
     
-    @scala.inline
-    def setWorkItemsVarargs(value: SchemaWorkItem*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: SchemaWorkItem*): Self = StObject.set(x, "workItems", js.Array(value :_*))
   }
 }

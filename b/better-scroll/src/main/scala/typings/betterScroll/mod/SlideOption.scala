@@ -23,8 +23,7 @@ trait SlideOption extends StObject {
 }
 object SlideOption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     el: Element,
     listenFlick: Boolean,
     loop: Boolean,
@@ -37,28 +36,20 @@ object SlideOption {
     __obj.asInstanceOf[SlideOption]
   }
   
-  @scala.inline
-  implicit class SlideOptionMutableBuilder[Self <: SlideOption] (val x: Self) extends AnyVal {
+  extension [Self <: SlideOption](x: Self) {
     
-    @scala.inline
-    def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenFlick(value: Boolean): Self = StObject.set(x, "listenFlick", value.asInstanceOf[js.Any])
+    inline def setListenFlick(value: Boolean): Self = StObject.set(x, "listenFlick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
+    inline def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
+    inline def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

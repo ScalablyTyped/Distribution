@@ -22,38 +22,28 @@ trait CustomPropertySwitch
 }
 object CustomPropertySwitch {
   
-  @scala.inline
-  def apply(): CustomPropertySwitch = {
+  inline def apply(): CustomPropertySwitch = {
     val __obj = js.Dynamic.literal(component = "switch")
     __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[CustomPropertySwitch]
   }
   
-  @scala.inline
-  implicit class CustomPropertySwitchMutableBuilder[Self <: CustomPropertySwitch] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertySwitch](x: Self) {
     
-    @scala.inline
-    def setComponent(value: switch): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: switch): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setOptions(value: CustomPropertyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: CustomPropertyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsFunction0(value: () => js.Array[CustomPropertyOption]): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
+    inline def setOptionsFunction0(value: () => js.Array[CustomPropertyOption]): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: CustomPropertyOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: CustomPropertyOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

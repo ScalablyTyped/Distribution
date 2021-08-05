@@ -18,43 +18,31 @@ trait QueryTimelineSample extends StObject {
 }
 object QueryTimelineSample {
   
-  @scala.inline
-  def apply(): QueryTimelineSample = {
+  inline def apply(): QueryTimelineSample = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryTimelineSample]
   }
   
-  @scala.inline
-  implicit class QueryTimelineSampleMutableBuilder[Self <: QueryTimelineSample] (val x: Self) extends AnyVal {
+  extension [Self <: QueryTimelineSample](x: Self) {
     
-    @scala.inline
-    def setActiveUnits(value: String): Self = StObject.set(x, "activeUnits", value.asInstanceOf[js.Any])
+    inline def setActiveUnits(value: String): Self = StObject.set(x, "activeUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUnitsUndefined: Self = StObject.set(x, "activeUnits", js.undefined)
+    inline def setActiveUnitsUndefined: Self = StObject.set(x, "activeUnits", js.undefined)
     
-    @scala.inline
-    def setCompletedUnits(value: String): Self = StObject.set(x, "completedUnits", value.asInstanceOf[js.Any])
+    inline def setCompletedUnits(value: String): Self = StObject.set(x, "completedUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedUnitsUndefined: Self = StObject.set(x, "completedUnits", js.undefined)
+    inline def setCompletedUnitsUndefined: Self = StObject.set(x, "completedUnits", js.undefined)
     
-    @scala.inline
-    def setElapsedMs(value: String): Self = StObject.set(x, "elapsedMs", value.asInstanceOf[js.Any])
+    inline def setElapsedMs(value: String): Self = StObject.set(x, "elapsedMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedMsUndefined: Self = StObject.set(x, "elapsedMs", js.undefined)
+    inline def setElapsedMsUndefined: Self = StObject.set(x, "elapsedMs", js.undefined)
     
-    @scala.inline
-    def setPendingUnits(value: String): Self = StObject.set(x, "pendingUnits", value.asInstanceOf[js.Any])
+    inline def setPendingUnits(value: String): Self = StObject.set(x, "pendingUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUnitsUndefined: Self = StObject.set(x, "pendingUnits", js.undefined)
+    inline def setPendingUnitsUndefined: Self = StObject.set(x, "pendingUnits", js.undefined)
     
-    @scala.inline
-    def setTotalSlotMs(value: String): Self = StObject.set(x, "totalSlotMs", value.asInstanceOf[js.Any])
+    inline def setTotalSlotMs(value: String): Self = StObject.set(x, "totalSlotMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSlotMsUndefined: Self = StObject.set(x, "totalSlotMs", js.undefined)
+    inline def setTotalSlotMsUndefined: Self = StObject.set(x, "totalSlotMs", js.undefined)
   }
 }

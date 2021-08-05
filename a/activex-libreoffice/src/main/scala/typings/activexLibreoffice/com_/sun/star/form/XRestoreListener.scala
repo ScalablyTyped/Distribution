@@ -26,8 +26,7 @@ trait XRestoreListener
 }
 object XRestoreListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -38,10 +37,8 @@ object XRestoreListener {
     __obj.asInstanceOf[XRestoreListener]
   }
   
-  @scala.inline
-  implicit class XRestoreListenerMutableBuilder[Self <: XRestoreListener] (val x: Self) extends AnyVal {
+  extension [Self <: XRestoreListener](x: Self) {
     
-    @scala.inline
-    def setRestored(value: EventObject => Unit): Self = StObject.set(x, "restored", js.Any.fromFunction1(value))
+    inline def setRestored(value: EventObject => Unit): Self = StObject.set(x, "restored", js.Any.fromFunction1(value))
   }
 }

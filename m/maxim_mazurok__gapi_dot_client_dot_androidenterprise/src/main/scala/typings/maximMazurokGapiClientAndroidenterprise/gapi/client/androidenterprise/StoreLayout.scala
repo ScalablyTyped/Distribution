@@ -20,25 +20,19 @@ trait StoreLayout extends StObject {
 }
 object StoreLayout {
   
-  @scala.inline
-  def apply(): StoreLayout = {
+  inline def apply(): StoreLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StoreLayout]
   }
   
-  @scala.inline
-  implicit class StoreLayoutMutableBuilder[Self <: StoreLayout] (val x: Self) extends AnyVal {
+  extension [Self <: StoreLayout](x: Self) {
     
-    @scala.inline
-    def setHomepageId(value: String): Self = StObject.set(x, "homepageId", value.asInstanceOf[js.Any])
+    inline def setHomepageId(value: String): Self = StObject.set(x, "homepageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomepageIdUndefined: Self = StObject.set(x, "homepageId", js.undefined)
+    inline def setHomepageIdUndefined: Self = StObject.set(x, "homepageId", js.undefined)
     
-    @scala.inline
-    def setStoreLayoutType(value: String): Self = StObject.set(x, "storeLayoutType", value.asInstanceOf[js.Any])
+    inline def setStoreLayoutType(value: String): Self = StObject.set(x, "storeLayoutType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreLayoutTypeUndefined: Self = StObject.set(x, "storeLayoutType", js.undefined)
+    inline def setStoreLayoutTypeUndefined: Self = StObject.set(x, "storeLayoutType", js.undefined)
   }
 }

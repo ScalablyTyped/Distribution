@@ -99,139 +99,95 @@ trait VideoStream extends StObject {
 }
 object VideoStream {
   
-  @scala.inline
-  def apply(): VideoStream = {
+  inline def apply(): VideoStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoStream]
   }
   
-  @scala.inline
-  implicit class VideoStreamMutableBuilder[Self <: VideoStream] (val x: Self) extends AnyVal {
+  extension [Self <: VideoStream](x: Self) {
     
-    @scala.inline
-    def setAllowOpenGop(value: Boolean): Self = StObject.set(x, "allowOpenGop", value.asInstanceOf[js.Any])
+    inline def setAllowOpenGop(value: Boolean): Self = StObject.set(x, "allowOpenGop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowOpenGopUndefined: Self = StObject.set(x, "allowOpenGop", js.undefined)
+    inline def setAllowOpenGopUndefined: Self = StObject.set(x, "allowOpenGop", js.undefined)
     
-    @scala.inline
-    def setAqStrength(value: Double): Self = StObject.set(x, "aqStrength", value.asInstanceOf[js.Any])
+    inline def setAqStrength(value: Double): Self = StObject.set(x, "aqStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAqStrengthUndefined: Self = StObject.set(x, "aqStrength", js.undefined)
+    inline def setAqStrengthUndefined: Self = StObject.set(x, "aqStrength", js.undefined)
     
-    @scala.inline
-    def setBFrameCount(value: Double): Self = StObject.set(x, "bFrameCount", value.asInstanceOf[js.Any])
+    inline def setBFrameCount(value: Double): Self = StObject.set(x, "bFrameCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBFrameCountUndefined: Self = StObject.set(x, "bFrameCount", js.undefined)
+    inline def setBFrameCountUndefined: Self = StObject.set(x, "bFrameCount", js.undefined)
     
-    @scala.inline
-    def setBPyramid(value: Boolean): Self = StObject.set(x, "bPyramid", value.asInstanceOf[js.Any])
+    inline def setBPyramid(value: Boolean): Self = StObject.set(x, "bPyramid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBPyramidUndefined: Self = StObject.set(x, "bPyramid", js.undefined)
+    inline def setBPyramidUndefined: Self = StObject.set(x, "bPyramid", js.undefined)
     
-    @scala.inline
-    def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
+    inline def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
+    inline def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    @scala.inline
-    def setCrfLevel(value: Double): Self = StObject.set(x, "crfLevel", value.asInstanceOf[js.Any])
+    inline def setCrfLevel(value: Double): Self = StObject.set(x, "crfLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrfLevelUndefined: Self = StObject.set(x, "crfLevel", js.undefined)
+    inline def setCrfLevelUndefined: Self = StObject.set(x, "crfLevel", js.undefined)
     
-    @scala.inline
-    def setEnableTwoPass(value: Boolean): Self = StObject.set(x, "enableTwoPass", value.asInstanceOf[js.Any])
+    inline def setEnableTwoPass(value: Boolean): Self = StObject.set(x, "enableTwoPass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableTwoPassUndefined: Self = StObject.set(x, "enableTwoPass", js.undefined)
+    inline def setEnableTwoPassUndefined: Self = StObject.set(x, "enableTwoPass", js.undefined)
     
-    @scala.inline
-    def setEntropyCoder(value: String): Self = StObject.set(x, "entropyCoder", value.asInstanceOf[js.Any])
+    inline def setEntropyCoder(value: String): Self = StObject.set(x, "entropyCoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntropyCoderUndefined: Self = StObject.set(x, "entropyCoder", js.undefined)
+    inline def setEntropyCoderUndefined: Self = StObject.set(x, "entropyCoder", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
-    @scala.inline
-    def setGopDuration(value: String): Self = StObject.set(x, "gopDuration", value.asInstanceOf[js.Any])
+    inline def setGopDuration(value: String): Self = StObject.set(x, "gopDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopDurationUndefined: Self = StObject.set(x, "gopDuration", js.undefined)
+    inline def setGopDurationUndefined: Self = StObject.set(x, "gopDuration", js.undefined)
     
-    @scala.inline
-    def setGopFrameCount(value: Double): Self = StObject.set(x, "gopFrameCount", value.asInstanceOf[js.Any])
+    inline def setGopFrameCount(value: Double): Self = StObject.set(x, "gopFrameCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopFrameCountUndefined: Self = StObject.set(x, "gopFrameCount", js.undefined)
+    inline def setGopFrameCountUndefined: Self = StObject.set(x, "gopFrameCount", js.undefined)
     
-    @scala.inline
-    def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
+    inline def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightPixelsUndefined: Self = StObject.set(x, "heightPixels", js.undefined)
+    inline def setHeightPixelsUndefined: Self = StObject.set(x, "heightPixels", js.undefined)
     
-    @scala.inline
-    def setPixelFormat(value: String): Self = StObject.set(x, "pixelFormat", value.asInstanceOf[js.Any])
+    inline def setPixelFormat(value: String): Self = StObject.set(x, "pixelFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelFormatUndefined: Self = StObject.set(x, "pixelFormat", js.undefined)
+    inline def setPixelFormatUndefined: Self = StObject.set(x, "pixelFormat", js.undefined)
     
-    @scala.inline
-    def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+    inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     
-    @scala.inline
-    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setRateControlMode(value: String): Self = StObject.set(x, "rateControlMode", value.asInstanceOf[js.Any])
+    inline def setRateControlMode(value: String): Self = StObject.set(x, "rateControlMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateControlModeUndefined: Self = StObject.set(x, "rateControlMode", js.undefined)
+    inline def setRateControlModeUndefined: Self = StObject.set(x, "rateControlMode", js.undefined)
     
-    @scala.inline
-    def setTune(value: String): Self = StObject.set(x, "tune", value.asInstanceOf[js.Any])
+    inline def setTune(value: String): Self = StObject.set(x, "tune", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuneUndefined: Self = StObject.set(x, "tune", js.undefined)
+    inline def setTuneUndefined: Self = StObject.set(x, "tune", js.undefined)
     
-    @scala.inline
-    def setVbvFullnessBits(value: Double): Self = StObject.set(x, "vbvFullnessBits", value.asInstanceOf[js.Any])
+    inline def setVbvFullnessBits(value: Double): Self = StObject.set(x, "vbvFullnessBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVbvFullnessBitsUndefined: Self = StObject.set(x, "vbvFullnessBits", js.undefined)
+    inline def setVbvFullnessBitsUndefined: Self = StObject.set(x, "vbvFullnessBits", js.undefined)
     
-    @scala.inline
-    def setVbvSizeBits(value: Double): Self = StObject.set(x, "vbvSizeBits", value.asInstanceOf[js.Any])
+    inline def setVbvSizeBits(value: Double): Self = StObject.set(x, "vbvSizeBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVbvSizeBitsUndefined: Self = StObject.set(x, "vbvSizeBits", js.undefined)
+    inline def setVbvSizeBitsUndefined: Self = StObject.set(x, "vbvSizeBits", js.undefined)
     
-    @scala.inline
-    def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
+    inline def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthPixelsUndefined: Self = StObject.set(x, "widthPixels", js.undefined)
+    inline def setWidthPixelsUndefined: Self = StObject.set(x, "widthPixels", js.undefined)
   }
 }

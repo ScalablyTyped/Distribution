@@ -31,34 +31,25 @@ trait TextOptions extends StObject {
 }
 object TextOptions {
   
-  @scala.inline
-  def apply(): TextOptions = {
+  inline def apply(): TextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextOptions]
   }
   
-  @scala.inline
-  implicit class TextOptionsMutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultResponseError(value: String): Self = StObject.set(x, "defaultResponseError", value.asInstanceOf[js.Any])
+    inline def setDefaultResponseError(value: String): Self = StObject.set(x, "defaultResponseError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultResponseErrorUndefined: Self = StObject.set(x, "defaultResponseError", js.undefined)
+    inline def setDefaultResponseErrorUndefined: Self = StObject.set(x, "defaultResponseError", js.undefined)
     
-    @scala.inline
-    def setFileInputTitle(value: String): Self = StObject.set(x, "fileInputTitle", value.asInstanceOf[js.Any])
+    inline def setFileInputTitle(value: String): Self = StObject.set(x, "fileInputTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileInputTitleUndefined: Self = StObject.set(x, "fileInputTitle", js.undefined)
+    inline def setFileInputTitleUndefined: Self = StObject.set(x, "fileInputTitle", js.undefined)
     
-    @scala.inline
-    def setSizeSymbols(value: js.Array[String]): Self = StObject.set(x, "sizeSymbols", value.asInstanceOf[js.Any])
+    inline def setSizeSymbols(value: js.Array[String]): Self = StObject.set(x, "sizeSymbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeSymbolsUndefined: Self = StObject.set(x, "sizeSymbols", js.undefined)
+    inline def setSizeSymbolsUndefined: Self = StObject.set(x, "sizeSymbols", js.undefined)
     
-    @scala.inline
-    def setSizeSymbolsVarargs(value: String*): Self = StObject.set(x, "sizeSymbols", js.Array(value :_*))
+    inline def setSizeSymbolsVarargs(value: String*): Self = StObject.set(x, "sizeSymbols", js.Array(value :_*))
   }
 }

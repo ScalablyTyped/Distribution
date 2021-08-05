@@ -22,25 +22,19 @@ trait IAudio
 }
 object IAudio {
   
-  @scala.inline
-  def apply(): IAudio = {
+  inline def apply(): IAudio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAudio]
   }
   
-  @scala.inline
-  implicit class IAudioMutableBuilder[Self <: IAudio] (val x: Self) extends AnyVal {
+  extension [Self <: IAudio](x: Self) {
     
-    @scala.inline
-    def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
+    inline def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
+    inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
-    @scala.inline
-    def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
+    inline def setSetCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
+    inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
   }
 }

@@ -21,19 +21,15 @@ trait IBookmarkVariableItem extends StObject {
 }
 object IBookmarkVariableItem {
   
-  @scala.inline
-  def apply(qName: String, qValue: IFieldValue): IBookmarkVariableItem = {
+  inline def apply(qName: String, qValue: IFieldValue): IBookmarkVariableItem = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBookmarkVariableItem]
   }
   
-  @scala.inline
-  implicit class IBookmarkVariableItemMutableBuilder[Self <: IBookmarkVariableItem] (val x: Self) extends AnyVal {
+  extension [Self <: IBookmarkVariableItem](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValue(value: IFieldValue): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
+    inline def setQValue(value: IFieldValue): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

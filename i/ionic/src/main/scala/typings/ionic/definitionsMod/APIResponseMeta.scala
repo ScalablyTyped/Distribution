@@ -14,22 +14,17 @@ trait APIResponseMeta extends StObject {
 }
 object APIResponseMeta {
   
-  @scala.inline
-  def apply(request_id: String, status: Double, version: String): APIResponseMeta = {
+  inline def apply(request_id: String, status: Double, version: String): APIResponseMeta = {
     val __obj = js.Dynamic.literal(request_id = request_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIResponseMeta]
   }
   
-  @scala.inline
-  implicit class APIResponseMetaMutableBuilder[Self <: APIResponseMeta] (val x: Self) extends AnyVal {
+  extension [Self <: APIResponseMeta](x: Self) {
     
-    @scala.inline
-    def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+    inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

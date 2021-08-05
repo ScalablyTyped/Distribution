@@ -11,16 +11,13 @@ trait PickImpluseFailSafe extends StObject {
 }
 object PickImpluseFailSafe {
   
-  @scala.inline
-  def apply(useFailSafe: Boolean): PickImpluseFailSafe = {
+  inline def apply(useFailSafe: Boolean): PickImpluseFailSafe = {
     val __obj = js.Dynamic.literal(useFailSafe = useFailSafe.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpluseFailSafe]
   }
   
-  @scala.inline
-  implicit class PickImpluseFailSafeMutableBuilder[Self <: PickImpluseFailSafe] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpluseFailSafe](x: Self) {
     
-    @scala.inline
-    def setUseFailSafe(value: Boolean): Self = StObject.set(x, "useFailSafe", value.asInstanceOf[js.Any])
+    inline def setUseFailSafe(value: Boolean): Self = StObject.set(x, "useFailSafe", value.asInstanceOf[js.Any])
   }
 }

@@ -47,53 +47,39 @@ trait HttpTarget extends StObject {
 }
 object HttpTarget {
   
-  @scala.inline
-  def apply(): HttpTarget = {
+  inline def apply(): HttpTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpTarget]
   }
   
-  @scala.inline
-  implicit class HttpTargetMutableBuilder[Self <: HttpTarget] (val x: Self) extends AnyVal {
+  extension [Self <: HttpTarget](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHeaders(
+    inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudscheduler.maximMazurokGapiClientCloudschedulerStrings.HttpTarget & TopLevel[js.Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+    inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
-    @scala.inline
-    def setOauthToken(value: OAuthToken): Self = StObject.set(x, "oauthToken", value.asInstanceOf[js.Any])
+    inline def setOauthToken(value: OAuthToken): Self = StObject.set(x, "oauthToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauthTokenUndefined: Self = StObject.set(x, "oauthToken", js.undefined)
+    inline def setOauthTokenUndefined: Self = StObject.set(x, "oauthToken", js.undefined)
     
-    @scala.inline
-    def setOidcToken(value: OidcToken): Self = StObject.set(x, "oidcToken", value.asInstanceOf[js.Any])
+    inline def setOidcToken(value: OidcToken): Self = StObject.set(x, "oidcToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidcTokenUndefined: Self = StObject.set(x, "oidcToken", js.undefined)
+    inline def setOidcTokenUndefined: Self = StObject.set(x, "oidcToken", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

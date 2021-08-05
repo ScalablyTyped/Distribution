@@ -17,34 +17,25 @@ trait Otherwise extends StObject {
 }
 object Otherwise {
   
-  @scala.inline
-  def apply(): Otherwise = {
+  inline def apply(): Otherwise = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Otherwise]
   }
   
-  @scala.inline
-  implicit class OtherwiseMutableBuilder[Self <: Otherwise] (val x: Self) extends AnyVal {
+  extension [Self <: Otherwise](x: Self) {
     
-    @scala.inline
-    def setOtherwise(value: String): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
+    inline def setOtherwise(value: String): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
+    inline def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
     
-    @scala.inline
-    def setPrivacy(value: default | public | `private`): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
+    inline def setPrivacy(value: default | public | `private`): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
+    inline def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
     
-    @scala.inline
-    def setStatuses(value: js.Array[Double]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: js.Array[Double]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
+    inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
-    @scala.inline
-    def setStatusesVarargs(value: Double*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: Double*): Self = StObject.set(x, "statuses", js.Array(value :_*))
   }
 }

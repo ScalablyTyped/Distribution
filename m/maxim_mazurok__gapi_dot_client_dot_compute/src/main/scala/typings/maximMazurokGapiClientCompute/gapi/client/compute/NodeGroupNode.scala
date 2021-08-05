@@ -28,58 +28,41 @@ trait NodeGroupNode extends StObject {
 }
 object NodeGroupNode {
   
-  @scala.inline
-  def apply(): NodeGroupNode = {
+  inline def apply(): NodeGroupNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeGroupNode]
   }
   
-  @scala.inline
-  implicit class NodeGroupNodeMutableBuilder[Self <: NodeGroupNode] (val x: Self) extends AnyVal {
+  extension [Self <: NodeGroupNode](x: Self) {
     
-    @scala.inline
-    def setCpuOvercommitType(value: String): Self = StObject.set(x, "cpuOvercommitType", value.asInstanceOf[js.Any])
+    inline def setCpuOvercommitType(value: String): Self = StObject.set(x, "cpuOvercommitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuOvercommitTypeUndefined: Self = StObject.set(x, "cpuOvercommitType", js.undefined)
+    inline def setCpuOvercommitTypeUndefined: Self = StObject.set(x, "cpuOvercommitType", js.undefined)
     
-    @scala.inline
-    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
+    inline def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
     
-    @scala.inline
-    def setServerBinding(value: ServerBinding): Self = StObject.set(x, "serverBinding", value.asInstanceOf[js.Any])
+    inline def setServerBinding(value: ServerBinding): Self = StObject.set(x, "serverBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerBindingUndefined: Self = StObject.set(x, "serverBinding", js.undefined)
+    inline def setServerBindingUndefined: Self = StObject.set(x, "serverBinding", js.undefined)
     
-    @scala.inline
-    def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
+    inline def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

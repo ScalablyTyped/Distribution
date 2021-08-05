@@ -21,28 +21,21 @@ trait SchemaListReleasesResponse extends StObject {
 }
 object SchemaListReleasesResponse {
   
-  @scala.inline
-  def apply(): SchemaListReleasesResponse = {
+  inline def apply(): SchemaListReleasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListReleasesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListReleasesResponseMutableBuilder[Self <: SchemaListReleasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListReleasesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setReleases(value: js.Array[SchemaRelease]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
+    inline def setReleases(value: js.Array[SchemaRelease]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
+    inline def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
     
-    @scala.inline
-    def setReleasesVarargs(value: SchemaRelease*): Self = StObject.set(x, "releases", js.Array(value :_*))
+    inline def setReleasesVarargs(value: SchemaRelease*): Self = StObject.set(x, "releases", js.Array(value :_*))
   }
 }

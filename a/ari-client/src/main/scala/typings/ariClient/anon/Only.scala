@@ -10,22 +10,17 @@ trait Only extends StObject {
 }
 object Only {
   
-  @scala.inline
-  def apply(): Only = {
+  inline def apply(): Only = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Only]
   }
   
-  @scala.inline
-  implicit class OnlyMutableBuilder[Self <: Only] (val x: Self) extends AnyVal {
+  extension [Self <: Only](x: Self) {
     
-    @scala.inline
-    def setOnly(value: String | js.Array[String]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+    inline def setOnly(value: String | js.Array[String]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+    inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
-    @scala.inline
-    def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
+    inline def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
   }
 }

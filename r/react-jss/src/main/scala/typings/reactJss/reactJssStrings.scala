@@ -8,6 +8,5 @@ object reactJssStrings {
   
   @js.native
   sealed trait classes extends StObject
-  @scala.inline
-  def classes: classes = "classes".asInstanceOf[classes]
+  inline def classes: classes = "classes".asInstanceOf[classes]
 }

@@ -17,8 +17,7 @@ trait ProviderCredentialsOptions extends StObject {
 }
 object ProviderCredentialsOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorize: Record[String, String] => js.Promise[GenericReturnConfig | Null],
     credentials: CredentialInput,
     name: String
@@ -27,22 +26,16 @@ object ProviderCredentialsOptions {
     __obj.asInstanceOf[ProviderCredentialsOptions]
   }
   
-  @scala.inline
-  implicit class ProviderCredentialsOptionsMutableBuilder[Self <: ProviderCredentialsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderCredentialsOptions](x: Self) {
     
-    @scala.inline
-    def setAuthorize(value: Record[String, String] => js.Promise[GenericReturnConfig | Null]): Self = StObject.set(x, "authorize", js.Any.fromFunction1(value))
+    inline def setAuthorize(value: Record[String, String] => js.Promise[GenericReturnConfig | Null]): Self = StObject.set(x, "authorize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCredentials(value: CredentialInput): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: CredentialInput): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

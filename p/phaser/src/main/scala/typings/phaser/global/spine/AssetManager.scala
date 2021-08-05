@@ -26,13 +26,11 @@ object AssetManager {
   @JSGlobal("spine.AssetManager.downloadBinary")
   @js.native
   def downloadBinary: js.Any = js.native
-  @scala.inline
-  def downloadBinary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("downloadBinary")(x.asInstanceOf[js.Any])
+  inline def downloadBinary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("downloadBinary")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.AssetManager.downloadText")
   @js.native
   def downloadText: js.Any = js.native
-  @scala.inline
-  def downloadText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("downloadText")(x.asInstanceOf[js.Any])
+  inline def downloadText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("downloadText")(x.asInstanceOf[js.Any])
 }

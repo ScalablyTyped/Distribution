@@ -14,22 +14,17 @@ trait GeoMultiLineString
 }
 object GeoMultiLineString {
   
-  @scala.inline
-  def apply(lines: js.Array[GeoLineString], toJSON: () => IGeoJSONMultiLineString): GeoMultiLineString = {
+  inline def apply(lines: js.Array[GeoLineString], toJSON: () => IGeoJSONMultiLineString): GeoMultiLineString = {
     val __obj = js.Dynamic.literal(lines = lines.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[GeoMultiLineString]
   }
   
-  @scala.inline
-  implicit class GeoMultiLineStringMutableBuilder[Self <: GeoMultiLineString] (val x: Self) extends AnyVal {
+  extension [Self <: GeoMultiLineString](x: Self) {
     
-    @scala.inline
-    def setLines(value: js.Array[GeoLineString]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[GeoLineString]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesVarargs(value: GeoLineString*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: GeoLineString*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
-    @scala.inline
-    def setToJSON(value: () => IGeoJSONMultiLineString): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => IGeoJSONMultiLineString): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

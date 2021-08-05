@@ -10,6 +10,5 @@ object lenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(a: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(a: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

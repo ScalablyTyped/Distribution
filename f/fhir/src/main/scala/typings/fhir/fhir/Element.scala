@@ -36,52 +36,37 @@ trait Element extends StObject {
 }
 object Element {
   
-  @scala.inline
-  def apply(): Element = {
+  inline def apply(): Element = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def setExtension(value: js.Array[Extension]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: js.Array[Extension]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setExtensionVarargs(value: Extension*): Self = StObject.set(x, "extension", js.Array(value :_*))
+    inline def setExtensionVarargs(value: Extension*): Self = StObject.set(x, "extension", js.Array(value :_*))
     
-    @scala.inline
-    def setFhir_comments(value: js.Array[String]): Self = StObject.set(x, "fhir_comments", value.asInstanceOf[js.Any])
+    inline def setFhir_comments(value: js.Array[String]): Self = StObject.set(x, "fhir_comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFhir_commentsUndefined: Self = StObject.set(x, "fhir_comments", js.undefined)
+    inline def setFhir_commentsUndefined: Self = StObject.set(x, "fhir_comments", js.undefined)
     
-    @scala.inline
-    def setFhir_commentsVarargs(value: String*): Self = StObject.set(x, "fhir_comments", js.Array(value :_*))
+    inline def setFhir_commentsVarargs(value: String*): Self = StObject.set(x, "fhir_comments", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def set_fhir_comments(value: js.Array[Element]): Self = StObject.set(x, "_fhir_comments", value.asInstanceOf[js.Any])
+    inline def set_fhir_comments(value: js.Array[Element]): Self = StObject.set(x, "_fhir_comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_fhir_commentsUndefined: Self = StObject.set(x, "_fhir_comments", js.undefined)
+    inline def set_fhir_commentsUndefined: Self = StObject.set(x, "_fhir_comments", js.undefined)
     
-    @scala.inline
-    def set_fhir_commentsVarargs(value: Element*): Self = StObject.set(x, "_fhir_comments", js.Array(value :_*))
+    inline def set_fhir_commentsVarargs(value: Element*): Self = StObject.set(x, "_fhir_comments", js.Array(value :_*))
     
-    @scala.inline
-    def set_id(value: Element): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: Element): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+    inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
   }
 }

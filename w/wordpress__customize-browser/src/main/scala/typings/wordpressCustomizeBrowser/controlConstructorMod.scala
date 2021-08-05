@@ -47,8 +47,7 @@ object controlConstructorMod {
   }
   object ControlConstructor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       background: Instantiable0[BackgroundControl],
       background_position: Instantiable0[BackgroundPositionControl],
       code_editor: Instantiable0[CodeEditorControl],
@@ -66,44 +65,31 @@ object controlConstructorMod {
       __obj.asInstanceOf[ControlConstructor]
     }
     
-    @scala.inline
-    implicit class ControlConstructorMutableBuilder[Self <: ControlConstructor] (val x: Self) extends AnyVal {
+    extension [Self <: ControlConstructor](x: Self) {
       
-      @scala.inline
-      def setBackground(value: Instantiable0[BackgroundControl]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Instantiable0[BackgroundControl]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackground_position(value: Instantiable0[BackgroundPositionControl]): Self = StObject.set(x, "background_position", value.asInstanceOf[js.Any])
+      inline def setBackground_position(value: Instantiable0[BackgroundPositionControl]): Self = StObject.set(x, "background_position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode_editor(value: Instantiable0[CodeEditorControl]): Self = StObject.set(x, "code_editor", value.asInstanceOf[js.Any])
+      inline def setCode_editor(value: Instantiable0[CodeEditorControl]): Self = StObject.set(x, "code_editor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: Instantiable0[ColorControl]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Instantiable0[ColorControl]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropped_image(value: Instantiable0[CroppedImageControl]): Self = StObject.set(x, "cropped_image", value.asInstanceOf[js.Any])
+      inline def setCropped_image(value: Instantiable0[CroppedImageControl]): Self = StObject.set(x, "cropped_image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate_time(value: Instantiable0[DateTimeControl]): Self = StObject.set(x, "date_time", value.asInstanceOf[js.Any])
+      inline def setDate_time(value: Instantiable0[DateTimeControl]): Self = StObject.set(x, "date_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: Instantiable0[HeaderControl]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Instantiable0[HeaderControl]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: Instantiable0[ImageControl]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Instantiable0[ImageControl]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia(value: Instantiable0[MediaControl]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: Instantiable0[MediaControl]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSite_icon(value: Instantiable0[SiteIconControl]): Self = StObject.set(x, "site_icon", value.asInstanceOf[js.Any])
+      inline def setSite_icon(value: Instantiable0[SiteIconControl]): Self = StObject.set(x, "site_icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: Instantiable0[ThemeControl]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Instantiable0[ThemeControl]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload(value: Instantiable0[UploadControl]): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+      inline def setUpload(value: Instantiable0[UploadControl]): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     }
   }
 }

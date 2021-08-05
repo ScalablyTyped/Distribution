@@ -23,28 +23,21 @@ trait SchemaLinks extends StObject {
 }
 object SchemaLinks {
   
-  @scala.inline
-  def apply(): SchemaLinks = {
+  inline def apply(): SchemaLinks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLinks]
   }
   
-  @scala.inline
-  implicit class SchemaLinksMutableBuilder[Self <: SchemaLinks] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLinks](x: Self) {
     
-    @scala.inline
-    def setDroppedLinksCount(value: Double): Self = StObject.set(x, "droppedLinksCount", value.asInstanceOf[js.Any])
+    inline def setDroppedLinksCount(value: Double): Self = StObject.set(x, "droppedLinksCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppedLinksCountUndefined: Self = StObject.set(x, "droppedLinksCount", js.undefined)
+    inline def setDroppedLinksCountUndefined: Self = StObject.set(x, "droppedLinksCount", js.undefined)
     
-    @scala.inline
-    def setLink(value: js.Array[SchemaLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: js.Array[SchemaLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setLinkVarargs(value: SchemaLink*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: SchemaLink*): Self = StObject.set(x, "link", js.Array(value :_*))
   }
 }

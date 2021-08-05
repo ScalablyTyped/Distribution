@@ -8,11 +8,9 @@ object antvDataSetNumbers {
   
   @js.native
   sealed trait `0` extends StObject
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `0.5` extends StObject
-  @scala.inline
-  def `0.5`: `0.5` = 0.5.asInstanceOf[`0.5`]
+  inline def `0.5`: `0.5` = 0.5.asInstanceOf[`0.5`]
 }

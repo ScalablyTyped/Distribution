@@ -31,8 +31,7 @@ trait ReactiveSocket[D, M]
 }
 object ReactiveSocket {
   
-  @scala.inline
-  def apply[D, M](
+  inline def apply[D, M](
     availability: () => Double,
     close: () => Unit,
     connectionStatus: () => Flowable[ConnectionStatus],
@@ -46,16 +45,12 @@ object ReactiveSocket {
     __obj.asInstanceOf[ReactiveSocket[D, M]]
   }
   
-  @scala.inline
-  implicit class ReactiveSocketMutableBuilder[Self <: ReactiveSocket[?, ?], D, M] (val x: Self & (ReactiveSocket[D, M])) extends AnyVal {
+  extension [Self <: ReactiveSocket[?, ?], D, M](x: Self & (ReactiveSocket[D, M])) {
     
-    @scala.inline
-    def setAvailability(value: () => Double): Self = StObject.set(x, "availability", js.Any.fromFunction0(value))
+    inline def setAvailability(value: () => Double): Self = StObject.set(x, "availability", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConnectionStatus(value: () => Flowable[ConnectionStatus]): Self = StObject.set(x, "connectionStatus", js.Any.fromFunction0(value))
+    inline def setConnectionStatus(value: () => Flowable[ConnectionStatus]): Self = StObject.set(x, "connectionStatus", js.Any.fromFunction0(value))
   }
 }

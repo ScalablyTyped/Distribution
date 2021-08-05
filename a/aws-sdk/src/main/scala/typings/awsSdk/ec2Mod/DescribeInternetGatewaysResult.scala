@@ -18,28 +18,21 @@ trait DescribeInternetGatewaysResult extends StObject {
 }
 object DescribeInternetGatewaysResult {
   
-  @scala.inline
-  def apply(): DescribeInternetGatewaysResult = {
+  inline def apply(): DescribeInternetGatewaysResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInternetGatewaysResult]
   }
   
-  @scala.inline
-  implicit class DescribeInternetGatewaysResultMutableBuilder[Self <: DescribeInternetGatewaysResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInternetGatewaysResult](x: Self) {
     
-    @scala.inline
-    def setInternetGateways(value: InternetGatewayList): Self = StObject.set(x, "InternetGateways", value.asInstanceOf[js.Any])
+    inline def setInternetGateways(value: InternetGatewayList): Self = StObject.set(x, "InternetGateways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternetGatewaysUndefined: Self = StObject.set(x, "InternetGateways", js.undefined)
+    inline def setInternetGatewaysUndefined: Self = StObject.set(x, "InternetGateways", js.undefined)
     
-    @scala.inline
-    def setInternetGatewaysVarargs(value: InternetGateway*): Self = StObject.set(x, "InternetGateways", js.Array(value :_*))
+    inline def setInternetGatewaysVarargs(value: InternetGateway*): Self = StObject.set(x, "InternetGateways", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

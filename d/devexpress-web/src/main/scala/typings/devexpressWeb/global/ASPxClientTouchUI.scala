@@ -23,12 +23,8 @@ object ASPxClientTouchUI {
     * @param options An ASPxClientTouchUIOptions object that provides options affecting the touch scrolling functionality.
     */
   /* static member */
-  @scala.inline
-  def MakeScrollable(id: String): typings.devexpressWeb.ScrollExtender = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ScrollExtender]
-  @scala.inline
-  def MakeScrollable(id: String, options: typings.devexpressWeb.ASPxClientTouchUIOptions): typings.devexpressWeb.ScrollExtender = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ScrollExtender]
-  @scala.inline
-  def MakeScrollable(id: js.Any): typings.devexpressWeb.ScrollExtender = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ScrollExtender]
-  @scala.inline
-  def MakeScrollable(id: js.Any, options: typings.devexpressWeb.ASPxClientTouchUIOptions): typings.devexpressWeb.ScrollExtender = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ScrollExtender]
+  inline def MakeScrollable(id: String): typings.devexpressWeb.ScrollExtender = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ScrollExtender]
+  inline def MakeScrollable(id: String, options: typings.devexpressWeb.ASPxClientTouchUIOptions): typings.devexpressWeb.ScrollExtender = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ScrollExtender]
+  inline def MakeScrollable(id: js.Any): typings.devexpressWeb.ScrollExtender = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ScrollExtender]
+  inline def MakeScrollable(id: js.Any, options: typings.devexpressWeb.ASPxClientTouchUIOptions): typings.devexpressWeb.ScrollExtender = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ScrollExtender]
 }

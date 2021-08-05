@@ -13,22 +13,17 @@ trait PortForwardingConfig extends StObject {
 }
 object PortForwardingConfig {
   
-  @scala.inline
-  def apply(): PortForwardingConfig = {
+  inline def apply(): PortForwardingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortForwardingConfig]
   }
   
-  @scala.inline
-  implicit class PortForwardingConfigMutableBuilder[Self <: PortForwardingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PortForwardingConfig](x: Self) {
     
-    @scala.inline
-    def setPortMappings(value: PortMappingList): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
+    inline def setPortMappings(value: PortMappingList): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
+    inline def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
     
-    @scala.inline
-    def setPortMappingsVarargs(value: PortMapping*): Self = StObject.set(x, "portMappings", js.Array(value :_*))
+    inline def setPortMappingsVarargs(value: PortMapping*): Self = StObject.set(x, "portMappings", js.Array(value :_*))
   }
 }

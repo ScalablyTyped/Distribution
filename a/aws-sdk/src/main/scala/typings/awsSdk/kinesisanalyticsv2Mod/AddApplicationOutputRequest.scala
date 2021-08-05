@@ -23,8 +23,7 @@ trait AddApplicationOutputRequest extends StObject {
 }
 object AddApplicationOutputRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationName: ApplicationName,
     CurrentApplicationVersionId: ApplicationVersionId,
     Output: Output
@@ -33,16 +32,12 @@ object AddApplicationOutputRequest {
     __obj.asInstanceOf[AddApplicationOutputRequest]
   }
   
-  @scala.inline
-  implicit class AddApplicationOutputRequestMutableBuilder[Self <: AddApplicationOutputRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddApplicationOutputRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: Output): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Output): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
   }
 }

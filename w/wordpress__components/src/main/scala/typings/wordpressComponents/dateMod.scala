@@ -51,35 +51,26 @@ object dateMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(onChange: String => Unit): Props = {
+      inline def apply(onChange: String => Unit): Props = {
         val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setCurrentDate(value: String): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
+        inline def setCurrentDate(value: String): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
+        inline def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
         
-        @scala.inline
-        def setIs12Hour(value: Boolean): Self = StObject.set(x, "is12Hour", value.asInstanceOf[js.Any])
+        inline def setIs12Hour(value: Boolean): Self = StObject.set(x, "is12Hour", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIs12HourUndefined: Self = StObject.set(x, "is12Hour", js.undefined)
+        inline def setIs12HourUndefined: Self = StObject.set(x, "is12Hour", js.undefined)
         
-        @scala.inline
-        def setIsInvalidDate(value: /* date */ Date => Boolean): Self = StObject.set(x, "isInvalidDate", js.Any.fromFunction1(value))
+        inline def setIsInvalidDate(value: /* date */ Date => Boolean): Self = StObject.set(x, "isInvalidDate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIsInvalidDateUndefined: Self = StObject.set(x, "isInvalidDate", js.undefined)
+        inline def setIsInvalidDateUndefined: Self = StObject.set(x, "isInvalidDate", js.undefined)
         
-        @scala.inline
-        def setOnChange(value: String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       }
     }
   }

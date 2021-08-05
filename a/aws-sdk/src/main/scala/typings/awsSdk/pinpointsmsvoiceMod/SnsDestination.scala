@@ -13,19 +13,15 @@ trait SnsDestination extends StObject {
 }
 object SnsDestination {
   
-  @scala.inline
-  def apply(): SnsDestination = {
+  inline def apply(): SnsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnsDestination]
   }
   
-  @scala.inline
-  implicit class SnsDestinationMutableBuilder[Self <: SnsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SnsDestination](x: Self) {
     
-    @scala.inline
-    def setTopicArn(value: String): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: String): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
+    inline def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

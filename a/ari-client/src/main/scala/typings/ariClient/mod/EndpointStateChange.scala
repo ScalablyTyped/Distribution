@@ -16,17 +16,14 @@ trait EndpointStateChange
 }
 object EndpointStateChange {
   
-  @scala.inline
-  def apply(application: String, endpoint: Endpoint, timestamp: Date, `type`: String): EndpointStateChange = {
+  inline def apply(application: String, endpoint: Endpoint, timestamp: Date, `type`: String): EndpointStateChange = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointStateChange]
   }
   
-  @scala.inline
-  implicit class EndpointStateChangeMutableBuilder[Self <: EndpointStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointStateChange](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
   }
 }

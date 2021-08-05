@@ -26,8 +26,7 @@ trait Arc
 }
 object Arc {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: js.Tuple7[
       Position, 
       // End point: x, y, <z>, <m>
@@ -48,11 +47,9 @@ object Arc {
     __obj.asInstanceOf[Arc]
   }
   
-  @scala.inline
-  implicit class ArcMutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
+  extension [Self <: Arc](x: Self) {
     
-    @scala.inline
-    def setA(
+    inline def setA(
       value: js.Tuple7[
           Position, 
           // End point: x, y, <z>, <m>

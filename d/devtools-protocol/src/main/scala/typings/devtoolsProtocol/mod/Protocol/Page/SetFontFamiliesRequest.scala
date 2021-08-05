@@ -13,16 +13,13 @@ trait SetFontFamiliesRequest extends StObject {
 }
 object SetFontFamiliesRequest {
   
-  @scala.inline
-  def apply(fontFamilies: FontFamilies): SetFontFamiliesRequest = {
+  inline def apply(fontFamilies: FontFamilies): SetFontFamiliesRequest = {
     val __obj = js.Dynamic.literal(fontFamilies = fontFamilies.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetFontFamiliesRequest]
   }
   
-  @scala.inline
-  implicit class SetFontFamiliesRequestMutableBuilder[Self <: SetFontFamiliesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetFontFamiliesRequest](x: Self) {
     
-    @scala.inline
-    def setFontFamilies(value: FontFamilies): Self = StObject.set(x, "fontFamilies", value.asInstanceOf[js.Any])
+    inline def setFontFamilies(value: FontFamilies): Self = StObject.set(x, "fontFamilies", value.asInstanceOf[js.Any])
   }
 }

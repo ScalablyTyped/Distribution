@@ -27,35 +27,27 @@ object Store {
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.appId")
     @js.native
     def appId: String = js.native
-    @scala.inline
-    def appId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appId")(x.asInstanceOf[js.Any])
+    inline def appId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appId")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getAppReceiptAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IAsyncOperation[String]]
+    inline def getAppReceiptAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IAsyncOperation[String]]
     
-    @scala.inline
-    def getProductReceiptAsync(productId: String): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
+    inline def getProductReceiptAsync(productId: String): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
     
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.licenseInformation")
     @js.native
     def licenseInformation: typings.winrt.Windows.ApplicationModel.Store.LicenseInformation = js.native
-    @scala.inline
-    def licenseInformation_=(x: typings.winrt.Windows.ApplicationModel.Store.LicenseInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("licenseInformation")(x.asInstanceOf[js.Any])
+    inline def licenseInformation_=(x: typings.winrt.Windows.ApplicationModel.Store.LicenseInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("licenseInformation")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.linkUri")
     @js.native
     def linkUri: Uri = js.native
-    @scala.inline
-    def linkUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linkUri")(x.asInstanceOf[js.Any])
+    inline def linkUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linkUri")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def loadListingInformationAsync(): IAsyncOperation[typings.winrt.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.ApplicationModel.Store.ListingInformation]]
+    inline def loadListingInformationAsync(): IAsyncOperation[typings.winrt.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.ApplicationModel.Store.ListingInformation]]
     
-    @scala.inline
-    def requestAppPurchaseAsync(includeReceipt: Boolean): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
+    inline def requestAppPurchaseAsync(includeReceipt: Boolean): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
     
-    @scala.inline
-    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[String]]
+    inline def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[String]]
   }
   
   @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator")
@@ -73,38 +65,29 @@ object Store {
     @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.appId")
     @js.native
     def appId: String = js.native
-    @scala.inline
-    def appId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appId")(x.asInstanceOf[js.Any])
+    inline def appId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appId")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getAppReceiptAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IAsyncOperation[String]]
+    inline def getAppReceiptAsync(): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppReceiptAsync")().asInstanceOf[IAsyncOperation[String]]
     
-    @scala.inline
-    def getProductReceiptAsync(productId: String): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
+    inline def getProductReceiptAsync(productId: String): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductReceiptAsync")(productId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
     
     @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.licenseInformation")
     @js.native
     def licenseInformation: typings.winrt.Windows.ApplicationModel.Store.LicenseInformation = js.native
-    @scala.inline
-    def licenseInformation_=(x: typings.winrt.Windows.ApplicationModel.Store.LicenseInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("licenseInformation")(x.asInstanceOf[js.Any])
+    inline def licenseInformation_=(x: typings.winrt.Windows.ApplicationModel.Store.LicenseInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("licenseInformation")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator.linkUri")
     @js.native
     def linkUri: Uri = js.native
-    @scala.inline
-    def linkUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linkUri")(x.asInstanceOf[js.Any])
+    inline def linkUri_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linkUri")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def loadListingInformationAsync(): IAsyncOperation[typings.winrt.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.ApplicationModel.Store.ListingInformation]]
+    inline def loadListingInformationAsync(): IAsyncOperation[typings.winrt.Windows.ApplicationModel.Store.ListingInformation] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadListingInformationAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.ApplicationModel.Store.ListingInformation]]
     
-    @scala.inline
-    def reloadSimulatorAsync(simulatorSettingsFile: StorageFile): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSimulatorAsync")(simulatorSettingsFile.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
+    inline def reloadSimulatorAsync(simulatorSettingsFile: StorageFile): IAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSimulatorAsync")(simulatorSettingsFile.asInstanceOf[js.Any]).asInstanceOf[IAsyncAction]
     
-    @scala.inline
-    def requestAppPurchaseAsync(includeReceipt: Boolean): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
+    inline def requestAppPurchaseAsync(includeReceipt: Boolean): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAppPurchaseAsync")(includeReceipt.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
     
-    @scala.inline
-    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[String]]
+    inline def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestProductPurchaseAsync")(productId.asInstanceOf[js.Any], includeReceipt.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[String]]
   }
   
   @JSGlobal("Windows.ApplicationModel.Store.LicenseInformation")

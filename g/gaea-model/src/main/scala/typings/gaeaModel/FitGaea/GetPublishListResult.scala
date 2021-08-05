@@ -14,19 +14,15 @@ trait GetPublishListResult extends StObject {
 }
 object GetPublishListResult {
   
-  @scala.inline
-  def apply(description: String, version: String): GetPublishListResult = {
+  inline def apply(description: String, version: String): GetPublishListResult = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPublishListResult]
   }
   
-  @scala.inline
-  implicit class GetPublishListResultMutableBuilder[Self <: GetPublishListResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetPublishListResult](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

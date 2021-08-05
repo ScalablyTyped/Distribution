@@ -12,19 +12,15 @@ trait TypeofpatchAppendData extends StObject {
 }
 object TypeofpatchAppendData {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_12: Typeofoptions12): TypeofpatchAppendData = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_12: Typeofoptions12): TypeofpatchAppendData = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options_12 = options_12.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofpatchAppendData]
   }
   
-  @scala.inline
-  implicit class TypeofpatchAppendDataMutableBuilder[Self <: TypeofpatchAppendData] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofpatchAppendData](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_12(value: Typeofoptions12): Self = StObject.set(x, "options_12", value.asInstanceOf[js.Any])
+    inline def setOptions_12(value: Typeofoptions12): Self = StObject.set(x, "options_12", value.asInstanceOf[js.Any])
   }
 }

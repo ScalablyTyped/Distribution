@@ -8,26 +8,21 @@ object soapStrings {
   
   @js.native
   sealed trait headers extends StObject
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
+  inline def headers: headers = "headers".asInstanceOf[headers]
   
   @js.native
   sealed trait message extends StObject
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
   sealed trait request extends StObject
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
+  inline def request: request = "request".asInstanceOf[request]
   
   @js.native
   sealed trait response extends StObject
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
+  inline def response: response = "response".asInstanceOf[response]
   
   @js.native
   sealed trait soapError extends StObject
-  @scala.inline
-  def soapError: soapError = "soapError".asInstanceOf[soapError]
+  inline def soapError: soapError = "soapError".asInstanceOf[soapError]
 }

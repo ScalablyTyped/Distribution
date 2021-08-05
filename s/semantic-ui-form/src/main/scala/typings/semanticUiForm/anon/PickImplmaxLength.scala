@@ -11,16 +11,13 @@ trait PickImplmaxLength extends StObject {
 }
 object PickImplmaxLength {
   
-  @scala.inline
-  def apply(maxLength: String): PickImplmaxLength = {
+  inline def apply(maxLength: String): PickImplmaxLength = {
     val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmaxLength]
   }
   
-  @scala.inline
-  implicit class PickImplmaxLengthMutableBuilder[Self <: PickImplmaxLength] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmaxLength](x: Self) {
     
-    @scala.inline
-    def setMaxLength(value: String): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: String): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
   }
 }

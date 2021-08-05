@@ -31,26 +31,20 @@ object serializationEventsMod {
   }
   object SerializeEventData {
     
-    @scala.inline
-    def apply(): SerializeEventData = {
+    inline def apply(): SerializeEventData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SerializeEventData]
     }
     
-    @scala.inline
-    implicit class SerializeEventDataMutableBuilder[Self <: SerializeEventData] (val x: Self) extends AnyVal {
+    extension [Self <: SerializeEventData](x: Self) {
       
-      @scala.inline
-      def setOutputDirectory(value: String): Self = StObject.set(x, "outputDirectory", value.asInstanceOf[js.Any])
+      inline def setOutputDirectory(value: String): Self = StObject.set(x, "outputDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputDirectoryUndefined: Self = StObject.set(x, "outputDirectory", js.undefined)
+      inline def setOutputDirectoryUndefined: Self = StObject.set(x, "outputDirectory", js.undefined)
       
-      @scala.inline
-      def setOutputFile(value: String): Self = StObject.set(x, "outputFile", value.asInstanceOf[js.Any])
+      inline def setOutputFile(value: String): Self = StObject.set(x, "outputFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFileUndefined: Self = StObject.set(x, "outputFile", js.undefined)
+      inline def setOutputFileUndefined: Self = StObject.set(x, "outputFile", js.undefined)
     }
   }
 }

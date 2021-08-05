@@ -13,16 +13,13 @@ trait DescribeConnectionsOnInterconnectRequest extends StObject {
 }
 object DescribeConnectionsOnInterconnectRequest {
   
-  @scala.inline
-  def apply(interconnectId: InterconnectId): DescribeConnectionsOnInterconnectRequest = {
+  inline def apply(interconnectId: InterconnectId): DescribeConnectionsOnInterconnectRequest = {
     val __obj = js.Dynamic.literal(interconnectId = interconnectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConnectionsOnInterconnectRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConnectionsOnInterconnectRequestMutableBuilder[Self <: DescribeConnectionsOnInterconnectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConnectionsOnInterconnectRequest](x: Self) {
     
-    @scala.inline
-    def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
+    inline def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
   }
 }

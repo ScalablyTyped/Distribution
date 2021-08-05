@@ -19,16 +19,13 @@ trait UserImportOptions extends StObject {
 }
 object UserImportOptions {
   
-  @scala.inline
-  def apply(hash: Algorithm): UserImportOptions = {
+  inline def apply(hash: Algorithm): UserImportOptions = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserImportOptions]
   }
   
-  @scala.inline
-  implicit class UserImportOptionsMutableBuilder[Self <: UserImportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UserImportOptions](x: Self) {
     
-    @scala.inline
-    def setHash(value: Algorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: Algorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
   }
 }

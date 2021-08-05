@@ -11,19 +11,15 @@ trait Seed extends StObject {
 }
 object Seed {
   
-  @scala.inline
-  def apply(): Seed = {
+  inline def apply(): Seed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Seed]
   }
   
-  @scala.inline
-  implicit class SeedMutableBuilder[Self <: Seed] (val x: Self) extends AnyVal {
+  extension [Self <: Seed](x: Self) {
     
-    @scala.inline
-    def setSeed(value: NativeBuffer | String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: NativeBuffer | String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

@@ -33,46 +33,33 @@ trait ContextRowRenderedEventUIParam extends StObject {
 }
 object ContextRowRenderedEventUIParam {
   
-  @scala.inline
-  def apply(): ContextRowRenderedEventUIParam = {
+  inline def apply(): ContextRowRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContextRowRenderedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ContextRowRenderedEventUIParamMutableBuilder[Self <: ContextRowRenderedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ContextRowRenderedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
+    inline def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextRowModeUndefined: Self = StObject.set(x, "contextRowMode", js.undefined)
+    inline def setContextRowModeUndefined: Self = StObject.set(x, "contextRowMode", js.undefined)
     
-    @scala.inline
-    def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
+    inline def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
     
-    @scala.inline
-    def setDataRow(value: js.Any): Self = StObject.set(x, "dataRow", value.asInstanceOf[js.Any])
+    inline def setDataRow(value: js.Any): Self = StObject.set(x, "dataRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRowUndefined: Self = StObject.set(x, "dataRow", js.undefined)
+    inline def setDataRowUndefined: Self = StObject.set(x, "dataRow", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setParentRows(value: js.Array[js.Any]): Self = StObject.set(x, "parentRows", value.asInstanceOf[js.Any])
+    inline def setParentRows(value: js.Array[js.Any]): Self = StObject.set(x, "parentRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRowsUndefined: Self = StObject.set(x, "parentRows", js.undefined)
+    inline def setParentRowsUndefined: Self = StObject.set(x, "parentRows", js.undefined)
     
-    @scala.inline
-    def setParentRowsVarargs(value: js.Any*): Self = StObject.set(x, "parentRows", js.Array(value :_*))
+    inline def setParentRowsVarargs(value: js.Any*): Self = StObject.set(x, "parentRows", js.Array(value :_*))
   }
 }

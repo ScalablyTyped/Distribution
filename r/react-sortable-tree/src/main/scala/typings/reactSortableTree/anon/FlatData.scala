@@ -30,38 +30,29 @@ trait FlatData[T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P
 }
 object FlatData {
   
-  @scala.inline
-  def apply[T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */](flatData: NumberDictionary[T] | StringDictionary[T]): FlatData[T, I, K, P] = {
+  inline def apply[T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */](flatData: NumberDictionary[T] | StringDictionary[T]): FlatData[T, I, K, P] = {
     val __obj = js.Dynamic.literal(flatData = flatData.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlatData[T, I, K, P]]
   }
   
-  @scala.inline
-  implicit class FlatDataMutableBuilder[Self <: FlatData[?, ?, ?, ?], T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */] (val x: Self & (FlatData[T, I, K, P])) extends AnyVal {
+  extension [Self <: FlatData[?, ?, ?, ?], T, I /* <: String | Double */, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */](x: Self & (FlatData[T, I, K, P])) {
     
-    @scala.inline
-    def setFlatData(value: NumberDictionary[T] | StringDictionary[T]): Self = StObject.set(x, "flatData", value.asInstanceOf[js.Any])
+    inline def setFlatData(value: NumberDictionary[T] | StringDictionary[T]): Self = StObject.set(x, "flatData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKey(
+    inline def setGetKey(
       value: /* item */ T => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
     ): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
+    inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
     
-    @scala.inline
-    def setGetParentKey(
+    inline def setGetParentKey(
       value: /* item */ T => /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
     ): Self = StObject.set(x, "getParentKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParentKeyUndefined: Self = StObject.set(x, "getParentKey", js.undefined)
+    inline def setGetParentKeyUndefined: Self = StObject.set(x, "getParentKey", js.undefined)
     
-    @scala.inline
-    def setRootKey(value: I): Self = StObject.set(x, "rootKey", value.asInstanceOf[js.Any])
+    inline def setRootKey(value: I): Self = StObject.set(x, "rootKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootKeyUndefined: Self = StObject.set(x, "rootKey", js.undefined)
+    inline def setRootKeyUndefined: Self = StObject.set(x, "rootKey", js.undefined)
   }
 }

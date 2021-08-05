@@ -14,19 +14,15 @@ trait EnrichPutPolicy[T]
 }
 object EnrichPutPolicy {
   
-  @scala.inline
-  def apply[T](body: T, name: String): EnrichPutPolicy[T] = {
+  inline def apply[T](body: T, name: String): EnrichPutPolicy[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnrichPutPolicy[T]]
   }
   
-  @scala.inline
-  implicit class EnrichPutPolicyMutableBuilder[Self <: EnrichPutPolicy[?], T] (val x: Self & EnrichPutPolicy[T]) extends AnyVal {
+  extension [Self <: EnrichPutPolicy[?], T](x: Self & EnrichPutPolicy[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

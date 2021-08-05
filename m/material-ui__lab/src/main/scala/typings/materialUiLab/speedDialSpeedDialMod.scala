@@ -22,8 +22,7 @@ object speedDialSpeedDialMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: SpeedDialProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: SpeedDialProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiLab.materialUiLabStrings.toggle
@@ -34,17 +33,13 @@ object speedDialSpeedDialMod {
   trait CloseReason extends StObject
   object CloseReason {
     
-    @scala.inline
-    def blur: typings.materialUiLab.materialUiLabStrings.blur = "blur".asInstanceOf[typings.materialUiLab.materialUiLabStrings.blur]
+    inline def blur: typings.materialUiLab.materialUiLabStrings.blur = "blur".asInstanceOf[typings.materialUiLab.materialUiLabStrings.blur]
     
-    @scala.inline
-    def escapeKeyDown: typings.materialUiLab.materialUiLabStrings.escapeKeyDown = "escapeKeyDown".asInstanceOf[typings.materialUiLab.materialUiLabStrings.escapeKeyDown]
+    inline def escapeKeyDown: typings.materialUiLab.materialUiLabStrings.escapeKeyDown = "escapeKeyDown".asInstanceOf[typings.materialUiLab.materialUiLabStrings.escapeKeyDown]
     
-    @scala.inline
-    def mouseLeave: typings.materialUiLab.materialUiLabStrings.mouseLeave = "mouseLeave".asInstanceOf[typings.materialUiLab.materialUiLabStrings.mouseLeave]
+    inline def mouseLeave: typings.materialUiLab.materialUiLabStrings.mouseLeave = "mouseLeave".asInstanceOf[typings.materialUiLab.materialUiLabStrings.mouseLeave]
     
-    @scala.inline
-    def toggle: typings.materialUiLab.materialUiLabStrings.toggle = "toggle".asInstanceOf[typings.materialUiLab.materialUiLabStrings.toggle]
+    inline def toggle: typings.materialUiLab.materialUiLabStrings.toggle = "toggle".asInstanceOf[typings.materialUiLab.materialUiLabStrings.toggle]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -55,14 +50,11 @@ object speedDialSpeedDialMod {
   trait OpenReason extends StObject
   object OpenReason {
     
-    @scala.inline
-    def focus: typings.materialUiLab.materialUiLabStrings.focus = "focus".asInstanceOf[typings.materialUiLab.materialUiLabStrings.focus]
+    inline def focus: typings.materialUiLab.materialUiLabStrings.focus = "focus".asInstanceOf[typings.materialUiLab.materialUiLabStrings.focus]
     
-    @scala.inline
-    def mouseEnter: typings.materialUiLab.materialUiLabStrings.mouseEnter = "mouseEnter".asInstanceOf[typings.materialUiLab.materialUiLabStrings.mouseEnter]
+    inline def mouseEnter: typings.materialUiLab.materialUiLabStrings.mouseEnter = "mouseEnter".asInstanceOf[typings.materialUiLab.materialUiLabStrings.mouseEnter]
     
-    @scala.inline
-    def toggle: typings.materialUiLab.materialUiLabStrings.toggle = "toggle".asInstanceOf[typings.materialUiLab.materialUiLabStrings.toggle]
+    inline def toggle: typings.materialUiLab.materialUiLabStrings.toggle = "toggle".asInstanceOf[typings.materialUiLab.materialUiLabStrings.toggle]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -78,29 +70,21 @@ object speedDialSpeedDialMod {
   trait SpeedDialClassKey extends StObject
   object SpeedDialClassKey {
     
-    @scala.inline
-    def actions: typings.materialUiLab.materialUiLabStrings.actions = "actions".asInstanceOf[typings.materialUiLab.materialUiLabStrings.actions]
+    inline def actions: typings.materialUiLab.materialUiLabStrings.actions = "actions".asInstanceOf[typings.materialUiLab.materialUiLabStrings.actions]
     
-    @scala.inline
-    def actionsClosed: typings.materialUiLab.materialUiLabStrings.actionsClosed = "actionsClosed".asInstanceOf[typings.materialUiLab.materialUiLabStrings.actionsClosed]
+    inline def actionsClosed: typings.materialUiLab.materialUiLabStrings.actionsClosed = "actionsClosed".asInstanceOf[typings.materialUiLab.materialUiLabStrings.actionsClosed]
     
-    @scala.inline
-    def directionDown: typings.materialUiLab.materialUiLabStrings.directionDown = "directionDown".asInstanceOf[typings.materialUiLab.materialUiLabStrings.directionDown]
+    inline def directionDown: typings.materialUiLab.materialUiLabStrings.directionDown = "directionDown".asInstanceOf[typings.materialUiLab.materialUiLabStrings.directionDown]
     
-    @scala.inline
-    def directionLeft: typings.materialUiLab.materialUiLabStrings.directionLeft = "directionLeft".asInstanceOf[typings.materialUiLab.materialUiLabStrings.directionLeft]
+    inline def directionLeft: typings.materialUiLab.materialUiLabStrings.directionLeft = "directionLeft".asInstanceOf[typings.materialUiLab.materialUiLabStrings.directionLeft]
     
-    @scala.inline
-    def directionRight: typings.materialUiLab.materialUiLabStrings.directionRight = "directionRight".asInstanceOf[typings.materialUiLab.materialUiLabStrings.directionRight]
+    inline def directionRight: typings.materialUiLab.materialUiLabStrings.directionRight = "directionRight".asInstanceOf[typings.materialUiLab.materialUiLabStrings.directionRight]
     
-    @scala.inline
-    def directionUp: typings.materialUiLab.materialUiLabStrings.directionUp = "directionUp".asInstanceOf[typings.materialUiLab.materialUiLabStrings.directionUp]
+    inline def directionUp: typings.materialUiLab.materialUiLabStrings.directionUp = "directionUp".asInstanceOf[typings.materialUiLab.materialUiLabStrings.directionUp]
     
-    @scala.inline
-    def fab: typings.materialUiLab.materialUiLabStrings.fab = "fab".asInstanceOf[typings.materialUiLab.materialUiLabStrings.fab]
+    inline def fab: typings.materialUiLab.materialUiLabStrings.fab = "fab".asInstanceOf[typings.materialUiLab.materialUiLabStrings.fab]
     
-    @scala.inline
-    def root: typings.materialUiLab.materialUiLabStrings.root = "root".asInstanceOf[typings.materialUiLab.materialUiLabStrings.root]
+    inline def root: typings.materialUiLab.materialUiLabStrings.root = "root".asInstanceOf[typings.materialUiLab.materialUiLabStrings.root]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -198,94 +182,68 @@ object speedDialSpeedDialMod {
   }
   object SpeedDialProps {
     
-    @scala.inline
-    def apply(ariaLabel: String, open: Boolean): SpeedDialProps = {
+    inline def apply(ariaLabel: String, open: Boolean): SpeedDialProps = {
       val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpeedDialProps]
     }
     
-    @scala.inline
-    implicit class SpeedDialPropsMutableBuilder[Self <: SpeedDialProps] (val x: Self) extends AnyVal {
+    extension [Self <: SpeedDialProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDirection(value: up | down | left | right): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: up | down | left | right): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setFabProps(value: PartialFabProps): Self = StObject.set(x, "FabProps", value.asInstanceOf[js.Any])
+      inline def setFabProps(value: PartialFabProps): Self = StObject.set(x, "FabProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFabPropsUndefined: Self = StObject.set(x, "FabProps", js.undefined)
+      inline def setFabPropsUndefined: Self = StObject.set(x, "FabProps", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: (/* event */ SyntheticEvent[js.Object, Event], /* reason */ CloseReason) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+      inline def setOnClose(value: (/* event */ SyntheticEvent[js.Object, Event], /* reason */ CloseReason) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: (/* event */ SyntheticEvent[js.Object, Event], /* reason */ OpenReason) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
+      inline def setOnOpen(value: (/* event */ SyntheticEvent[js.Object, Event], /* reason */ OpenReason) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenIcon(value: ReactNode): Self = StObject.set(x, "openIcon", value.asInstanceOf[js.Any])
+      inline def setOpenIcon(value: ReactNode): Self = StObject.set(x, "openIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenIconUndefined: Self = StObject.set(x, "openIcon", js.undefined)
+      inline def setOpenIconUndefined: Self = StObject.set(x, "openIcon", js.undefined)
       
-      @scala.inline
-      def setTransitionComponent(
+      inline def setTransitionComponent(
         value: ComponentType[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps */ js.Any
             ]
       ): Self = StObject.set(x, "TransitionComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionComponentUndefined: Self = StObject.set(x, "TransitionComponent", js.undefined)
+      inline def setTransitionComponentUndefined: Self = StObject.set(x, "TransitionComponent", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(
+      inline def setTransitionDuration(
         value: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps * / any['timeout'] */ js.Any
       ): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      @scala.inline
-      def setTransitionProps(
+      inline def setTransitionProps(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps */ js.Any
       ): Self = StObject.set(x, "TransitionProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionPropsUndefined: Self = StObject.set(x, "TransitionProps", js.undefined)
+      inline def setTransitionPropsUndefined: Self = StObject.set(x, "TransitionProps", js.undefined)
     }
   }
 }

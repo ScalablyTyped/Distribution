@@ -10,19 +10,15 @@ trait PlotAbandsBottomLineOptions extends StObject {
 }
 object PlotAbandsBottomLineOptions {
   
-  @scala.inline
-  def apply(): PlotAbandsBottomLineOptions = {
+  inline def apply(): PlotAbandsBottomLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotAbandsBottomLineOptions]
   }
   
-  @scala.inline
-  implicit class PlotAbandsBottomLineOptionsMutableBuilder[Self <: PlotAbandsBottomLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotAbandsBottomLineOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotAbandsBottomLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotAbandsBottomLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

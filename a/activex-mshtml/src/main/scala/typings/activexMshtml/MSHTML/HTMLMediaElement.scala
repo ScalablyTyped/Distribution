@@ -10,7 +10,7 @@ trait HTMLMediaElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLMediaElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLMediaElement_typekey")
   var MSHTMLDotHTMLMediaElement_typekey: HTMLMediaElement = js.native
   
   var accessKey: String = js.native

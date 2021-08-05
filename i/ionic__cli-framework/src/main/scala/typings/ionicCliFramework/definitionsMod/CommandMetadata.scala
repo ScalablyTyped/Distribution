@@ -16,40 +16,29 @@ trait CommandMetadata[I, O]
 }
 object CommandMetadata {
   
-  @scala.inline
-  def apply[I, O](name: String, summary: String): CommandMetadata[I, O] = {
+  inline def apply[I, O](name: String, summary: String): CommandMetadata[I, O] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandMetadata[I, O]]
   }
   
-  @scala.inline
-  implicit class CommandMetadataMutableBuilder[Self <: CommandMetadata[?, ?], I, O] (val x: Self & (CommandMetadata[I, O])) extends AnyVal {
+  extension [Self <: CommandMetadata[?, ?], I, O](x: Self & (CommandMetadata[I, O])) {
     
-    @scala.inline
-    def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])
+    inline def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExampleCommandsUndefined: Self = StObject.set(x, "exampleCommands", js.undefined)
+    inline def setExampleCommandsUndefined: Self = StObject.set(x, "exampleCommands", js.undefined)
     
-    @scala.inline
-    def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value :_*))
+    inline def setExampleCommandsVarargs(value: String*): Self = StObject.set(x, "exampleCommands", js.Array(value :_*))
     
-    @scala.inline
-    def setInputs(value: js.Array[I]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[I]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: I*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: I*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: js.Array[O]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[O]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: O*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: O*): Self = StObject.set(x, "options", js.Array(value :_*))
   }
 }

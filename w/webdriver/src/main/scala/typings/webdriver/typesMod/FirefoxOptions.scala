@@ -21,52 +21,37 @@ trait FirefoxOptions extends StObject {
 }
 object FirefoxOptions {
   
-  @scala.inline
-  def apply(): FirefoxOptions = {
+  inline def apply(): FirefoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirefoxOptions]
   }
   
-  @scala.inline
-  implicit class FirefoxOptionsMutableBuilder[Self <: FirefoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FirefoxOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
-    @scala.inline
-    def setDebuggerAddress(value: String): Self = StObject.set(x, "debuggerAddress", value.asInstanceOf[js.Any])
+    inline def setDebuggerAddress(value: String): Self = StObject.set(x, "debuggerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebuggerAddressUndefined: Self = StObject.set(x, "debuggerAddress", js.undefined)
+    inline def setDebuggerAddressUndefined: Self = StObject.set(x, "debuggerAddress", js.undefined)
     
-    @scala.inline
-    def setLog(value: FirefoxLogObject): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: FirefoxLogObject): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setPrefs(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+    inline def setPrefs(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
+    inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     
-    @scala.inline
-    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
   }
 }

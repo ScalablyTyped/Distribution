@@ -946,8 +946,7 @@ object Object {
   @JSImport("fabric/fabric-impl", "Object.NUM_FRACTION_DIGITS")
   @js.native
   def NUM_FRACTION_DIGITS: js.UndefOr[Double] = js.native
-  @scala.inline
-  def NUM_FRACTION_DIGITS_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUM_FRACTION_DIGITS")(x.asInstanceOf[js.Any])
+  inline def NUM_FRACTION_DIGITS_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUM_FRACTION_DIGITS")(x.asInstanceOf[js.Any])
   
   /**
     * Creates fabric Object instance
@@ -958,12 +957,8 @@ object Object {
     * @private
     * @return {fabric.Object}
     */
-  @scala.inline
-  def _fromObject(className: String, `object`: Object): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Object]
-  @scala.inline
-  def _fromObject(className: String, `object`: Object, callback: js.Function): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Object]
-  @scala.inline
-  def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: js.Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
-  @scala.inline
-  def _fromObject(className: String, `object`: Object, callback: Unit, extraParam: js.Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
+  inline def _fromObject(className: String, `object`: Object): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Object]
+  inline def _fromObject(className: String, `object`: Object, callback: js.Function): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Object]
+  inline def _fromObject(className: String, `object`: Object, callback: js.Function, extraParam: js.Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
+  inline def _fromObject(className: String, `object`: Object, callback: Unit, extraParam: js.Any): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], extraParam.asInstanceOf[js.Any])).asInstanceOf[Object]
 }

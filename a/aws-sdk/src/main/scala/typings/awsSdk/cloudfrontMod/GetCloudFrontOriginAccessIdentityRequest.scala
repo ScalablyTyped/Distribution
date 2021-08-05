@@ -13,16 +13,13 @@ trait GetCloudFrontOriginAccessIdentityRequest extends StObject {
 }
 object GetCloudFrontOriginAccessIdentityRequest {
   
-  @scala.inline
-  def apply(Id: String): GetCloudFrontOriginAccessIdentityRequest = {
+  inline def apply(Id: String): GetCloudFrontOriginAccessIdentityRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCloudFrontOriginAccessIdentityRequest]
   }
   
-  @scala.inline
-  implicit class GetCloudFrontOriginAccessIdentityRequestMutableBuilder[Self <: GetCloudFrontOriginAccessIdentityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCloudFrontOriginAccessIdentityRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

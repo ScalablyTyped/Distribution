@@ -15,17 +15,14 @@ trait ColumnGroupOpenedEvent
 }
 object ColumnGroupOpenedEvent {
   
-  @scala.inline
-  def apply(api: GridApi, columnApi: ColumnApi, columnGroup: OriginalColumnGroup, `type`: String): ColumnGroupOpenedEvent = {
+  inline def apply(api: GridApi, columnApi: ColumnApi, columnGroup: OriginalColumnGroup, `type`: String): ColumnGroupOpenedEvent = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], columnGroup = columnGroup.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupOpenedEvent]
   }
   
-  @scala.inline
-  implicit class ColumnGroupOpenedEventMutableBuilder[Self <: ColumnGroupOpenedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnGroupOpenedEvent](x: Self) {
     
-    @scala.inline
-    def setColumnGroup(value: OriginalColumnGroup): Self = StObject.set(x, "columnGroup", value.asInstanceOf[js.Any])
+    inline def setColumnGroup(value: OriginalColumnGroup): Self = StObject.set(x, "columnGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait CreateEmailIdentityPolicyRequest extends StObject {
 }
 object CreateEmailIdentityPolicyRequest {
   
-  @scala.inline
-  def apply(EmailIdentity: Identity, Policy: Policy, PolicyName: PolicyName): CreateEmailIdentityPolicyRequest = {
+  inline def apply(EmailIdentity: Identity, Policy: Policy, PolicyName: PolicyName): CreateEmailIdentityPolicyRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEmailIdentityPolicyRequest]
   }
   
-  @scala.inline
-  implicit class CreateEmailIdentityPolicyRequestMutableBuilder[Self <: CreateEmailIdentityPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEmailIdentityPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
+    inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

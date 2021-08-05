@@ -13,19 +13,15 @@ trait DeleteReplicationTaskResponse extends StObject {
 }
 object DeleteReplicationTaskResponse {
   
-  @scala.inline
-  def apply(): DeleteReplicationTaskResponse = {
+  inline def apply(): DeleteReplicationTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteReplicationTaskResponse]
   }
   
-  @scala.inline
-  implicit class DeleteReplicationTaskResponseMutableBuilder[Self <: DeleteReplicationTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteReplicationTaskResponse](x: Self) {
     
-    @scala.inline
-    def setReplicationTask(value: ReplicationTask): Self = StObject.set(x, "ReplicationTask", value.asInstanceOf[js.Any])
+    inline def setReplicationTask(value: ReplicationTask): Self = StObject.set(x, "ReplicationTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskUndefined: Self = StObject.set(x, "ReplicationTask", js.undefined)
+    inline def setReplicationTaskUndefined: Self = StObject.set(x, "ReplicationTask", js.undefined)
   }
 }

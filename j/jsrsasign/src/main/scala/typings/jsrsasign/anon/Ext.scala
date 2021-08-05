@@ -22,8 +22,7 @@ trait Ext extends StObject {
 }
 object Ext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     sbjprvkey: RSAKey | ECDSA | DSA | JsonWebKey | E | String,
     sbjpubkey: RSAKey | ECDSA | DSA | JsonWebKey | E | String,
     sigalg: String,
@@ -33,28 +32,20 @@ object Ext {
     __obj.asInstanceOf[Ext]
   }
   
-  @scala.inline
-  implicit class ExtMutableBuilder[Self <: Ext] (val x: Self) extends AnyVal {
+  extension [Self <: Ext](x: Self) {
     
-    @scala.inline
-    def setExt(value: js.Array[SubjectAltName]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: js.Array[SubjectAltName]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+    inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
-    @scala.inline
-    def setExtVarargs(value: SubjectAltName*): Self = StObject.set(x, "ext", js.Array(value :_*))
+    inline def setExtVarargs(value: SubjectAltName*): Self = StObject.set(x, "ext", js.Array(value :_*))
     
-    @scala.inline
-    def setSbjprvkey(value: RSAKey | ECDSA | DSA | JsonWebKey | E | String): Self = StObject.set(x, "sbjprvkey", value.asInstanceOf[js.Any])
+    inline def setSbjprvkey(value: RSAKey | ECDSA | DSA | JsonWebKey | E | String): Self = StObject.set(x, "sbjprvkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSbjpubkey(value: RSAKey | ECDSA | DSA | JsonWebKey | E | String): Self = StObject.set(x, "sbjpubkey", value.asInstanceOf[js.Any])
+    inline def setSbjpubkey(value: RSAKey | ECDSA | DSA | JsonWebKey | E | String): Self = StObject.set(x, "sbjpubkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigalg(value: String): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
+    inline def setSigalg(value: String): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: StringParamcertissuerstri | X500NameParamcertissuerst | Certissuer): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: StringParamcertissuerstri | X500NameParamcertissuerst | Certissuer): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }
 }

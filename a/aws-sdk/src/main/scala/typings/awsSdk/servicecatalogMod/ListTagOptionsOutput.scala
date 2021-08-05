@@ -18,28 +18,21 @@ trait ListTagOptionsOutput extends StObject {
 }
 object ListTagOptionsOutput {
   
-  @scala.inline
-  def apply(): ListTagOptionsOutput = {
+  inline def apply(): ListTagOptionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTagOptionsOutput]
   }
   
-  @scala.inline
-  implicit class ListTagOptionsOutputMutableBuilder[Self <: ListTagOptionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagOptionsOutput](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
-    @scala.inline
-    def setTagOptionDetails(value: TagOptionDetails): Self = StObject.set(x, "TagOptionDetails", value.asInstanceOf[js.Any])
+    inline def setTagOptionDetails(value: TagOptionDetails): Self = StObject.set(x, "TagOptionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagOptionDetailsUndefined: Self = StObject.set(x, "TagOptionDetails", js.undefined)
+    inline def setTagOptionDetailsUndefined: Self = StObject.set(x, "TagOptionDetails", js.undefined)
     
-    @scala.inline
-    def setTagOptionDetailsVarargs(value: TagOptionDetail*): Self = StObject.set(x, "TagOptionDetails", js.Array(value :_*))
+    inline def setTagOptionDetailsVarargs(value: TagOptionDetail*): Self = StObject.set(x, "TagOptionDetails", js.Array(value :_*))
   }
 }

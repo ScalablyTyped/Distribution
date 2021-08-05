@@ -49,79 +49,57 @@ trait LintStateOptions extends StObject {
 }
 object LintStateOptions {
   
-  @scala.inline
-  def apply(): LintStateOptions = {
+  inline def apply(): LintStateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LintStateOptions]
   }
   
-  @scala.inline
-  implicit class LintStateOptionsMutableBuilder[Self <: LintStateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LintStateOptions](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setFormatAnnotation(value: /* annotation */ Annotation => Annotation): Self = StObject.set(x, "formatAnnotation", js.Any.fromFunction1(value))
+    inline def setFormatAnnotation(value: /* annotation */ Annotation => Annotation): Self = StObject.set(x, "formatAnnotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatAnnotationUndefined: Self = StObject.set(x, "formatAnnotation", js.undefined)
+    inline def setFormatAnnotationUndefined: Self = StObject.set(x, "formatAnnotation", js.undefined)
     
-    @scala.inline
-    def setGetAnnotations(value: Linter | AsyncLinter): Self = StObject.set(x, "getAnnotations", value.asInstanceOf[js.Any])
+    inline def setGetAnnotations(value: Linter | AsyncLinter): Self = StObject.set(x, "getAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAnnotationsFunction3(
+    inline def setGetAnnotationsFunction3(
       value: (/* content */ String, /* options */ LintStateOptions | js.Any, /* codeMirror */ Editor) => js.Array[Annotation] | js.Thenable[js.Array[Annotation]]
     ): Self = StObject.set(x, "getAnnotations", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAnnotationsFunction4(
+    inline def setGetAnnotationsFunction4(
       value: (/* content */ String, /* updateLintingCallback */ UpdateLintingCallback, /* options */ LintStateOptions | js.Any, /* codeMirror */ Editor) => Unit
     ): Self = StObject.set(x, "getAnnotations", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetAnnotationsUndefined: Self = StObject.set(x, "getAnnotations", js.undefined)
+    inline def setGetAnnotationsUndefined: Self = StObject.set(x, "getAnnotations", js.undefined)
     
-    @scala.inline
-    def setHasGutters(value: Boolean): Self = StObject.set(x, "hasGutters", value.asInstanceOf[js.Any])
+    inline def setHasGutters(value: Boolean): Self = StObject.set(x, "hasGutters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasGuttersUndefined: Self = StObject.set(x, "hasGutters", js.undefined)
+    inline def setHasGuttersUndefined: Self = StObject.set(x, "hasGutters", js.undefined)
     
-    @scala.inline
-    def setLintOnChange(value: Boolean): Self = StObject.set(x, "lintOnChange", value.asInstanceOf[js.Any])
+    inline def setLintOnChange(value: Boolean): Self = StObject.set(x, "lintOnChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLintOnChangeUndefined: Self = StObject.set(x, "lintOnChange", js.undefined)
+    inline def setLintOnChangeUndefined: Self = StObject.set(x, "lintOnChange", js.undefined)
     
-    @scala.inline
-    def setOnUpdateLinting(
+    inline def setOnUpdateLinting(
       value: (/* annotationsNotSorted */ js.Array[Annotation], /* annotations */ js.Array[Annotation], /* codeMirror */ Editor) => Unit
     ): Self = StObject.set(x, "onUpdateLinting", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnUpdateLintingUndefined: Self = StObject.set(x, "onUpdateLinting", js.undefined)
+    inline def setOnUpdateLintingUndefined: Self = StObject.set(x, "onUpdateLinting", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setTooltips(value: Boolean | gutter): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
+    inline def setTooltips(value: Boolean | gutter): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
+    inline def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
   }
 }

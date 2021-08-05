@@ -36,8 +36,7 @@ trait GitConflict extends StObject {
 }
 object GitConflict {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     conflictId: Double,
     conflictPath: String,
@@ -56,46 +55,32 @@ object GitConflict {
     __obj.asInstanceOf[GitConflict]
   }
   
-  @scala.inline
-  implicit class GitConflictMutableBuilder[Self <: GitConflict] (val x: Self) extends AnyVal {
+  extension [Self <: GitConflict](x: Self) {
     
-    @scala.inline
-    def setConflictId(value: Double): Self = StObject.set(x, "conflictId", value.asInstanceOf[js.Any])
+    inline def setConflictId(value: Double): Self = StObject.set(x, "conflictId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictPath(value: String): Self = StObject.set(x, "conflictPath", value.asInstanceOf[js.Any])
+    inline def setConflictPath(value: String): Self = StObject.set(x, "conflictPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictType(value: GitConflictType): Self = StObject.set(x, "conflictType", value.asInstanceOf[js.Any])
+    inline def setConflictType(value: GitConflictType): Self = StObject.set(x, "conflictType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeBaseCommit(value: GitCommitRef): Self = StObject.set(x, "mergeBaseCommit", value.asInstanceOf[js.Any])
+    inline def setMergeBaseCommit(value: GitCommitRef): Self = StObject.set(x, "mergeBaseCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOrigin(value: GitMergeOriginRef): Self = StObject.set(x, "mergeOrigin", value.asInstanceOf[js.Any])
+    inline def setMergeOrigin(value: GitMergeOriginRef): Self = StObject.set(x, "mergeOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeSourceCommit(value: GitCommitRef): Self = StObject.set(x, "mergeSourceCommit", value.asInstanceOf[js.Any])
+    inline def setMergeSourceCommit(value: GitCommitRef): Self = StObject.set(x, "mergeSourceCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeTargetCommit(value: GitCommitRef): Self = StObject.set(x, "mergeTargetCommit", value.asInstanceOf[js.Any])
+    inline def setMergeTargetCommit(value: GitCommitRef): Self = StObject.set(x, "mergeTargetCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionError(value: GitResolutionError): Self = StObject.set(x, "resolutionError", value.asInstanceOf[js.Any])
+    inline def setResolutionError(value: GitResolutionError): Self = StObject.set(x, "resolutionError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionStatus(value: GitResolutionStatus): Self = StObject.set(x, "resolutionStatus", value.asInstanceOf[js.Any])
+    inline def setResolutionStatus(value: GitResolutionStatus): Self = StObject.set(x, "resolutionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedBy(value: IdentityRef): Self = StObject.set(x, "resolvedBy", value.asInstanceOf[js.Any])
+    inline def setResolvedBy(value: IdentityRef): Self = StObject.set(x, "resolvedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedDate(value: Date): Self = StObject.set(x, "resolvedDate", value.asInstanceOf[js.Any])
+    inline def setResolvedDate(value: Date): Self = StObject.set(x, "resolvedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

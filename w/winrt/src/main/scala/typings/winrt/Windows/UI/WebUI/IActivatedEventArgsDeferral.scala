@@ -10,16 +10,13 @@ trait IActivatedEventArgsDeferral extends StObject {
 }
 object IActivatedEventArgsDeferral {
   
-  @scala.inline
-  def apply(activatedOperation: ActivatedOperation): IActivatedEventArgsDeferral = {
+  inline def apply(activatedOperation: ActivatedOperation): IActivatedEventArgsDeferral = {
     val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActivatedEventArgsDeferral]
   }
   
-  @scala.inline
-  implicit class IActivatedEventArgsDeferralMutableBuilder[Self <: IActivatedEventArgsDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: IActivatedEventArgsDeferral](x: Self) {
     
-    @scala.inline
-    def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
+    inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
   }
 }

@@ -162,15 +162,14 @@ trait Find[TParent] extends StObject {
   
   var Text: String
   
-  @JSName("Word.Find_typekey")
+  /* private */ @JSName("Word.Find_typekey")
   var WordDotFind_typekey: Find[Range | Selection]
   
   var Wrap: WdFindWrap
 }
 object Find {
   
-  @scala.inline
-  def apply[TParent](
+  inline def apply[TParent](
     Application: Application,
     ClearAllFuzzyOptions: () => Unit,
     ClearFormatting: () => Unit,
@@ -222,150 +221,104 @@ object Find {
     __obj.asInstanceOf[Find[TParent]]
   }
   
-  @scala.inline
-  implicit class FindMutableBuilder[Self <: Find[?], TParent] (val x: Self & Find[TParent]) extends AnyVal {
+  extension [Self <: Find[?], TParent](x: Self & Find[TParent]) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearAllFuzzyOptions(value: () => Unit): Self = StObject.set(x, "ClearAllFuzzyOptions", js.Any.fromFunction0(value))
+    inline def setClearAllFuzzyOptions(value: () => Unit): Self = StObject.set(x, "ClearAllFuzzyOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearFormatting(value: () => Unit): Self = StObject.set(x, "ClearFormatting", js.Any.fromFunction0(value))
+    inline def setClearFormatting(value: () => Unit): Self = StObject.set(x, "ClearFormatting", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearHitHighlight(value: () => Boolean): Self = StObject.set(x, "ClearHitHighlight", js.Any.fromFunction0(value))
+    inline def setClearHitHighlight(value: () => Boolean): Self = StObject.set(x, "ClearHitHighlight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCorrectHangulEndings(value: Boolean): Self = StObject.set(x, "CorrectHangulEndings", value.asInstanceOf[js.Any])
+    inline def setCorrectHangulEndings(value: Boolean): Self = StObject.set(x, "CorrectHangulEndings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecute(
+    inline def setExecute(
       value: (js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[WdFindWrap], js.UndefOr[Boolean], js.UndefOr[String], js.UndefOr[WdReplace], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Boolean
     ): Self = StObject.set(x, "Execute", js.Any.fromFunction15(value))
     
-    @scala.inline
-    def setExecute2007(
+    inline def setExecute2007(
       value: (js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[WdFindWrap], js.UndefOr[Boolean], js.UndefOr[String], js.UndefOr[WdReplace], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean]) => Boolean
     ): Self = StObject.set(x, "Execute2007", js.Any.fromFunction20(value))
     
-    @scala.inline
-    def setExecuteOld(
+    inline def setExecuteOld(
       value: (js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[Boolean], js.UndefOr[WdFindWrap], js.UndefOr[Boolean], js.UndefOr[String], js.UndefOr[WdReplace]) => Boolean
     ): Self = StObject.set(x, "ExecuteOld", js.Any.fromFunction11(value))
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: Boolean): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Boolean): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForward(value: Boolean): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Boolean): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFound(value: Boolean): Self = StObject.set(x, "Found", value.asInstanceOf[js.Any])
+    inline def setFound(value: Boolean): Self = StObject.set(x, "Found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: Frame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: Frame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHanjaPhoneticHangul(value: Boolean): Self = StObject.set(x, "HanjaPhoneticHangul", value.asInstanceOf[js.Any])
+    inline def setHanjaPhoneticHangul(value: Boolean): Self = StObject.set(x, "HanjaPhoneticHangul", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlight(value: Double): Self = StObject.set(x, "Highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Double): Self = StObject.set(x, "Highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitHighlight(
+    inline def setHitHighlight(
       value: (js.Any, js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Boolean
     ): Self = StObject.set(x, "HitHighlight", js.Any.fromFunction20(value))
     
-    @scala.inline
-    def setIgnorePunct(value: Boolean): Self = StObject.set(x, "IgnorePunct", value.asInstanceOf[js.Any])
+    inline def setIgnorePunct(value: Boolean): Self = StObject.set(x, "IgnorePunct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreSpace(value: Boolean): Self = StObject.set(x, "IgnoreSpace", value.asInstanceOf[js.Any])
+    inline def setIgnoreSpace(value: Boolean): Self = StObject.set(x, "IgnoreSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageID(value: WdLanguageID): Self = StObject.set(x, "LanguageID", value.asInstanceOf[js.Any])
+    inline def setLanguageID(value: WdLanguageID): Self = StObject.set(x, "LanguageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageIDFarEast(value: WdLanguageID): Self = StObject.set(x, "LanguageIDFarEast", value.asInstanceOf[js.Any])
+    inline def setLanguageIDFarEast(value: WdLanguageID): Self = StObject.set(x, "LanguageIDFarEast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageIDOther(value: WdLanguageID): Self = StObject.set(x, "LanguageIDOther", value.asInstanceOf[js.Any])
+    inline def setLanguageIDOther(value: WdLanguageID): Self = StObject.set(x, "LanguageIDOther", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchAlefHamza(value: Boolean): Self = StObject.set(x, "MatchAlefHamza", value.asInstanceOf[js.Any])
+    inline def setMatchAlefHamza(value: Boolean): Self = StObject.set(x, "MatchAlefHamza", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchAllWordForms(value: Boolean): Self = StObject.set(x, "MatchAllWordForms", value.asInstanceOf[js.Any])
+    inline def setMatchAllWordForms(value: Boolean): Self = StObject.set(x, "MatchAllWordForms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchByte(value: Boolean): Self = StObject.set(x, "MatchByte", value.asInstanceOf[js.Any])
+    inline def setMatchByte(value: Boolean): Self = StObject.set(x, "MatchByte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "MatchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "MatchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchControl(value: Boolean): Self = StObject.set(x, "MatchControl", value.asInstanceOf[js.Any])
+    inline def setMatchControl(value: Boolean): Self = StObject.set(x, "MatchControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchDiacritics(value: Boolean): Self = StObject.set(x, "MatchDiacritics", value.asInstanceOf[js.Any])
+    inline def setMatchDiacritics(value: Boolean): Self = StObject.set(x, "MatchDiacritics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchFuzzy(value: Boolean): Self = StObject.set(x, "MatchFuzzy", value.asInstanceOf[js.Any])
+    inline def setMatchFuzzy(value: Boolean): Self = StObject.set(x, "MatchFuzzy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchKashida(value: Boolean): Self = StObject.set(x, "MatchKashida", value.asInstanceOf[js.Any])
+    inline def setMatchKashida(value: Boolean): Self = StObject.set(x, "MatchKashida", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchPhrase(value: Boolean): Self = StObject.set(x, "MatchPhrase", value.asInstanceOf[js.Any])
+    inline def setMatchPhrase(value: Boolean): Self = StObject.set(x, "MatchPhrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchPrefix(value: Boolean): Self = StObject.set(x, "MatchPrefix", value.asInstanceOf[js.Any])
+    inline def setMatchPrefix(value: Boolean): Self = StObject.set(x, "MatchPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchSoundsLike(value: Boolean): Self = StObject.set(x, "MatchSoundsLike", value.asInstanceOf[js.Any])
+    inline def setMatchSoundsLike(value: Boolean): Self = StObject.set(x, "MatchSoundsLike", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchSuffix(value: Boolean): Self = StObject.set(x, "MatchSuffix", value.asInstanceOf[js.Any])
+    inline def setMatchSuffix(value: Boolean): Self = StObject.set(x, "MatchSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchWholeWord(value: Boolean): Self = StObject.set(x, "MatchWholeWord", value.asInstanceOf[js.Any])
+    inline def setMatchWholeWord(value: Boolean): Self = StObject.set(x, "MatchWholeWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchWildcards(value: Boolean): Self = StObject.set(x, "MatchWildcards", value.asInstanceOf[js.Any])
+    inline def setMatchWildcards(value: Boolean): Self = StObject.set(x, "MatchWildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoProofing(value: Double): Self = StObject.set(x, "NoProofing", value.asInstanceOf[js.Any])
+    inline def setNoProofing(value: Double): Self = StObject.set(x, "NoProofing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphFormat(value: ParagraphFormat): Self = StObject.set(x, "ParagraphFormat", value.asInstanceOf[js.Any])
+    inline def setParagraphFormat(value: ParagraphFormat): Self = StObject.set(x, "ParagraphFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: TParent): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: TParent): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacement(value: Replacement): Self = StObject.set(x, "Replacement", value.asInstanceOf[js.Any])
+    inline def setReplacement(value: Replacement): Self = StObject.set(x, "Replacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAllFuzzyOptions(value: () => Unit): Self = StObject.set(x, "SetAllFuzzyOptions", js.Any.fromFunction0(value))
+    inline def setSetAllFuzzyOptions(value: () => Unit): Self = StObject.set(x, "SetAllFuzzyOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotFind_typekey(value: Find[Range | Selection]): Self = StObject.set(x, "Word.Find_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotFind_typekey(value: Find[Range | Selection]): Self = StObject.set(x, "Word.Find_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrap(value: WdFindWrap): Self = StObject.set(x, "Wrap", value.asInstanceOf[js.Any])
+    inline def setWrap(value: WdFindWrap): Self = StObject.set(x, "Wrap", value.asInstanceOf[js.Any])
   }
 }

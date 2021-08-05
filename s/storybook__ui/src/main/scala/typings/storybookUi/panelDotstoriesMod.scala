@@ -21,17 +21,14 @@ object panelDotstoriesMod {
     @JSImport("@storybook/ui/dist/containers/panel.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def AllAddons(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AllAddons")().asInstanceOf[Element]
+  inline def AllAddons(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("AllAddons")().asInstanceOf[Element]
   
   object FilteredAddons {
     
-    @scala.inline
-    def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
+    inline def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
     
     @JSImport("@storybook/ui/dist/containers/panel.stories", "FilteredAddons")
     @js.native
@@ -40,7 +37,6 @@ object panelDotstoriesMod {
     @JSImport("@storybook/ui/dist/containers/panel.stories", "FilteredAddons.parameters")
     @js.native
     def parameters: A11y = js.native
-    @scala.inline
-    def parameters_=(x: A11y): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
+    inline def parameters_=(x: A11y): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
   }
 }

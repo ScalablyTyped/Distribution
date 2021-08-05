@@ -30,8 +30,7 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def isTypeSupported(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTypeSupported(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSGlobal("MediaRecorderErrorEvent")

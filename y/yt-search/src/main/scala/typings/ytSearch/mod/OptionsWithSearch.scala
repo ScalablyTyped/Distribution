@@ -13,16 +13,13 @@ trait OptionsWithSearch
 }
 object OptionsWithSearch {
   
-  @scala.inline
-  def apply(search: String): OptionsWithSearch = {
+  inline def apply(search: String): OptionsWithSearch = {
     val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsWithSearch]
   }
   
-  @scala.inline
-  implicit class OptionsWithSearchMutableBuilder[Self <: OptionsWithSearch] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsWithSearch](x: Self) {
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
   }
 }

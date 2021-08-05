@@ -10,19 +10,15 @@ trait PatternExisting extends StObject {
 }
 object PatternExisting {
   
-  @scala.inline
-  def apply(source: js.Array[String]): PatternExisting = {
+  inline def apply(source: js.Array[String]): PatternExisting = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternExisting]
   }
   
-  @scala.inline
-  implicit class PatternExistingMutableBuilder[Self <: PatternExisting] (val x: Self) extends AnyVal {
+  extension [Self <: PatternExisting](x: Self) {
     
-    @scala.inline
-    def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
   }
 }

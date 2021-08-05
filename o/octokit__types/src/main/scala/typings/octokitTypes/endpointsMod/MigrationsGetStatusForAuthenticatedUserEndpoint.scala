@@ -14,16 +14,13 @@ trait MigrationsGetStatusForAuthenticatedUserEndpoint
 }
 object MigrationsGetStatusForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[wyandotte], migration_id: Double): MigrationsGetStatusForAuthenticatedUserEndpoint = {
+  inline def apply(mediaType: `0`[wyandotte], migration_id: Double): MigrationsGetStatusForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], migration_id = migration_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsGetStatusForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsGetStatusForAuthenticatedUserEndpointMutableBuilder[Self <: MigrationsGetStatusForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsGetStatusForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
+    inline def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
   }
 }

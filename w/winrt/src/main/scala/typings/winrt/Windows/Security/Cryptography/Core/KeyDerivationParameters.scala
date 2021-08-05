@@ -10,8 +10,7 @@ trait KeyDerivationParameters
      with IKeyDerivationParameters
 object KeyDerivationParameters {
   
-  @scala.inline
-  def apply(iterationCount: Double, kdfGenericBinary: IBuffer): KeyDerivationParameters = {
+  inline def apply(iterationCount: Double, kdfGenericBinary: IBuffer): KeyDerivationParameters = {
     val __obj = js.Dynamic.literal(iterationCount = iterationCount.asInstanceOf[js.Any], kdfGenericBinary = kdfGenericBinary.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyDerivationParameters]
   }

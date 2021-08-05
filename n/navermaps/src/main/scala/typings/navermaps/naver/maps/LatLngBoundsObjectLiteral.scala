@@ -16,25 +16,19 @@ trait LatLngBoundsObjectLiteral extends StObject {
 }
 object LatLngBoundsObjectLiteral {
   
-  @scala.inline
-  def apply(east: Double, north: Double, south: Double, west: Double): LatLngBoundsObjectLiteral = {
+  inline def apply(east: Double, north: Double, south: Double, west: Double): LatLngBoundsObjectLiteral = {
     val __obj = js.Dynamic.literal(east = east.asInstanceOf[js.Any], north = north.asInstanceOf[js.Any], south = south.asInstanceOf[js.Any], west = west.asInstanceOf[js.Any])
     __obj.asInstanceOf[LatLngBoundsObjectLiteral]
   }
   
-  @scala.inline
-  implicit class LatLngBoundsObjectLiteralMutableBuilder[Self <: LatLngBoundsObjectLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: LatLngBoundsObjectLiteral](x: Self) {
     
-    @scala.inline
-    def setEast(value: Double): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
+    inline def setEast(value: Double): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNorth(value: Double): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
+    inline def setNorth(value: Double): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSouth(value: Double): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
+    inline def setSouth(value: Double): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWest(value: Double): Self = StObject.set(x, "west", value.asInstanceOf[js.Any])
+    inline def setWest(value: Double): Self = StObject.set(x, "west", value.asInstanceOf[js.Any])
   }
 }

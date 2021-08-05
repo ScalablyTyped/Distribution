@@ -53,18 +53,18 @@ object interpreterMod {
       options: PartialInterpreterOptions
     ) = this()
     
-    var _initialState: js.Any = js.native
+    /* private */ var _initialState: js.Any = js.native
     
     /**
       * The current state of the interpreted machine.
       */
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
-    var attachDev: js.Any = js.native
+    /* private */ var attachDev: js.Any = js.native
     
-    var batch: js.Any = js.native
+    /* private */ var batch: js.Any = js.native
     
-    var cancel: js.Any = js.native
+    /* private */ var cancel: js.Any = js.native
     
     var children: Map[String | Double, Actor[js.Any, AnyEventObject]] = js.native
     
@@ -73,19 +73,19 @@ object interpreterMod {
       */
     var clock: Clock = js.native
     
-    var contextListeners: js.Any = js.native
+    /* private */ var contextListeners: js.Any = js.native
     
-    var defer: js.Any = js.native
+    /* private */ var defer: js.Any = js.native
     
-    var delayedEventsMap: js.Any = js.native
+    /* private */ var delayedEventsMap: js.Any = js.native
     
-    var devTools: js.Any = js.native
+    /* private */ var devTools: js.Any = js.native
     
-    var doneListeners: js.Any = js.native
+    /* private */ var doneListeners: js.Any = js.native
     
-    var eventListeners: js.Any = js.native
+    /* private */ var eventListeners: js.Any = js.native
     
-    var exec: js.Any = js.native
+    /* private */ var exec: js.Any = js.native
     
     /**
       * Executes the actions of the given state, with that state's `context` and `event`.
@@ -99,9 +99,9 @@ object interpreterMod {
       actionsConfig: ActionFunctionMap[TContext, TEvent]
     ): Unit = js.native
     
-    var forward: js.Any = js.native
+    /* private */ var forward: js.Any = js.native
     
-    var forwardTo: js.Any = js.native
+    /* private */ var forwardTo: js.Any = js.native
     
     /**
       * Alias for Interpreter.prototype.start
@@ -118,9 +118,9 @@ object interpreterMod {
       */
     var initialized: Boolean = js.native
     
-    var listeners: js.Any = js.native
+    /* private */ var listeners: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     var machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate] = js.native
     
@@ -176,17 +176,17 @@ object interpreterMod {
     
     var parent: js.UndefOr[Interpreter[js.Any, js.Any, EventObject, ContextAny]] = js.native
     
-    var removeChild: js.Any = js.native
+    /* private */ var removeChild: js.Any = js.native
     
-    var scheduler: js.Any = js.native
+    /* private */ var scheduler: js.Any = js.native
     
     def send(event: typings.xstate.typesMod.SCXML.Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     def send(event: typings.xstate.typesMod.SCXML.Event[TEvent], payload: EventData): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     def send(event: SingleOrArray[Event[TEvent]], payload: EventData): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     
-    var sendListeners: js.Any = js.native
+    /* private */ var sendListeners: js.Any = js.native
     
-    var sendTo: js.Any = js.native
+    /* private */ var sendTo: js.Any = js.native
     
     /**
       * Returns a send function bound to this interpreter instance.
@@ -203,13 +203,13 @@ object interpreterMod {
     def spawn(entity: Spawnable, name: String): Actor[js.Any, AnyEventObject] = js.native
     def spawn(entity: Spawnable, name: String, options: SpawnOptions): Actor[js.Any, AnyEventObject] = js.native
     
-    var spawnActivity: js.Any = js.native
+    /* private */ var spawnActivity: js.Any = js.native
     
-    var spawnActor: js.Any = js.native
+    /* private */ var spawnActor: js.Any = js.native
     
-    var spawnCallback: js.Any = js.native
+    /* private */ var spawnCallback: js.Any = js.native
     
-    var spawnEffect: js.Any = js.native
+    /* private */ var spawnEffect: js.Any = js.native
     
     def spawnMachine[TChildContext, TChildStateSchema, TChildEvent /* <: EventObject */](
       machine: StateMachine[TChildContext, TChildStateSchema, TChildEvent, ContextTChildContext[TChildContext]]
@@ -219,9 +219,9 @@ object interpreterMod {
       options: AutoForward
     ): Interpreter[TChildContext, TChildStateSchema, TChildEvent, ContextTChildContext[TChildContext]] = js.native
     
-    var spawnObservable: js.Any = js.native
+    /* private */ var spawnObservable: js.Any = js.native
     
-    var spawnPromise: js.Any = js.native
+    /* private */ var spawnPromise: js.Any = js.native
     
     /**
       * Starts the interpreter from the given state, or the initial state.
@@ -236,9 +236,9 @@ object interpreterMod {
     
     var status: InterpreterStatus = js.native
     
-    var stopChild: js.Any = js.native
+    /* private */ var stopChild: js.Any = js.native
     
-    var stopListeners: js.Any = js.native
+    /* private */ var stopListeners: js.Any = js.native
     
     /**
       * Stops the interpreter and unsubscribe all listeners.
@@ -250,7 +250,7 @@ object interpreterMod {
     
     def subscribe(observer: Observer[State[TContext, TEvent, js.Any, TTypestate]]): Unsubscribable = js.native
     
-    var update: js.Any = js.native
+    /* private */ var update: js.Any = js.native
   }
   /* static members */
   object Interpreter {
@@ -268,21 +268,17 @@ object interpreterMod {
     @JSImport("xstate/lib/interpreter", "Interpreter.defaultOptions")
     @js.native
     def defaultOptions: InterpreterOptions = js.native
-    @scala.inline
-    def defaultOptions_=(x: InterpreterOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    inline def defaultOptions_=(x: InterpreterOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
     @JSImport("xstate/lib/interpreter", "Interpreter.interpret")
     @js.native
     def interpret: FnCallMachineOptions = js.native
-    @scala.inline
-    def interpret[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any]).asInstanceOf[Interpreter[TContext, TStateSchema, TEvent, TTypestate]]
-    @scala.inline
-    def interpret[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](
+    inline def interpret[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any]).asInstanceOf[Interpreter[TContext, TStateSchema, TEvent, TTypestate]]
+    inline def interpret[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](
       machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
       options: PartialInterpreterOptions
     ): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Interpreter[TContext, TStateSchema, TEvent, TTypestate]]
-    @scala.inline
-    def interpret_=(x: FnCallMachineOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interpret")(x.asInstanceOf[js.Any])
+    inline def interpret_=(x: FnCallMachineOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interpret")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -313,26 +309,18 @@ object interpreterMod {
     /* 2 */ val Stopped: typings.xstate.interpreterMod.InterpreterStatus.Stopped & Double = js.native
   }
   
-  @scala.inline
-  def interpret[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any]).asInstanceOf[Interpreter[TContext, TStateSchema, TEvent, TTypestate]]
-  @scala.inline
-  def interpret[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](
+  inline def interpret[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate]): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any]).asInstanceOf[Interpreter[TContext, TStateSchema, TEvent, TTypestate]]
+  inline def interpret[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */](
     machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
     options: PartialInterpreterOptions
   ): Interpreter[TContext, TStateSchema, TEvent, TTypestate] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Interpreter[TContext, TStateSchema, TEvent, TTypestate]]
   
-  @scala.inline
-  def spawn(entity: Spawnable): Actor[js.Any, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any]).asInstanceOf[Actor[js.Any, AnyEventObject]]
-  @scala.inline
-  def spawn(entity: Spawnable, nameOrOptions: String): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any], nameOrOptions.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
-  @scala.inline
-  def spawn(entity: Spawnable, nameOrOptions: SpawnOptions): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any], nameOrOptions.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
-  @scala.inline
-  def spawn[TC, TE /* <: EventObject */](entity: StateMachine[TC, js.Any, TE, Context[TC]]): Actor[State[TC, TE, js.Any, Context[TC]], TE] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any]).asInstanceOf[Actor[State[TC, TE, js.Any, Context[TC]], TE]]
-  @scala.inline
-  def spawn[TC, TE /* <: EventObject */](entity: StateMachine[TC, js.Any, TE, Context[TC]], nameOrOptions: String): Actor[State[TC, TE, js.Any, Context[TC]], TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any], nameOrOptions.asInstanceOf[js.Any])).asInstanceOf[Actor[State[TC, TE, js.Any, Context[TC]], TE]]
-  @scala.inline
-  def spawn[TC, TE /* <: EventObject */](entity: StateMachine[TC, js.Any, TE, Context[TC]], nameOrOptions: SpawnOptions): Actor[State[TC, TE, js.Any, Context[TC]], TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any], nameOrOptions.asInstanceOf[js.Any])).asInstanceOf[Actor[State[TC, TE, js.Any, Context[TC]], TE]]
+  inline def spawn(entity: Spawnable): Actor[js.Any, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any]).asInstanceOf[Actor[js.Any, AnyEventObject]]
+  inline def spawn(entity: Spawnable, nameOrOptions: String): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any], nameOrOptions.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
+  inline def spawn(entity: Spawnable, nameOrOptions: SpawnOptions): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any], nameOrOptions.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
+  inline def spawn[TC, TE /* <: EventObject */](entity: StateMachine[TC, js.Any, TE, Context[TC]]): Actor[State[TC, TE, js.Any, Context[TC]], TE] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any]).asInstanceOf[Actor[State[TC, TE, js.Any, Context[TC]], TE]]
+  inline def spawn[TC, TE /* <: EventObject */](entity: StateMachine[TC, js.Any, TE, Context[TC]], nameOrOptions: String): Actor[State[TC, TE, js.Any, Context[TC]], TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any], nameOrOptions.asInstanceOf[js.Any])).asInstanceOf[Actor[State[TC, TE, js.Any, Context[TC]], TE]]
+  inline def spawn[TC, TE /* <: EventObject */](entity: StateMachine[TC, js.Any, TE, Context[TC]], nameOrOptions: SpawnOptions): Actor[State[TC, TE, js.Any, Context[TC]], TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(entity.asInstanceOf[js.Any], nameOrOptions.asInstanceOf[js.Any])).asInstanceOf[Actor[State[TC, TE, js.Any, Context[TC]], TE]]
   
   trait Clock extends StObject {
     
@@ -342,8 +330,7 @@ object interpreterMod {
   }
   object Clock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearTimeout: js.Any => Unit,
       setTimeout: (js.Function1[/* repeated */ js.Any, Unit], Double) => js.Any
     ): Clock = {
@@ -351,14 +338,11 @@ object interpreterMod {
       __obj.asInstanceOf[Clock]
     }
     
-    @scala.inline
-    implicit class ClockMutableBuilder[Self <: Clock] (val x: Self) extends AnyVal {
+    extension [Self <: Clock](x: Self) {
       
-      @scala.inline
-      def setClearTimeout(value: js.Any => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
+      inline def setClearTimeout(value: js.Any => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTimeout(value: (js.Function1[/* repeated */ js.Any, Unit], Double) => js.Any): Self = StObject.set(x, "setTimeout", js.Any.fromFunction2(value))
+      inline def setSetTimeout(value: (js.Function1[/* repeated */ js.Any, Unit], Double) => js.Any): Self = StObject.set(x, "setTimeout", js.Any.fromFunction2(value))
     }
   }
   
@@ -378,32 +362,24 @@ object interpreterMod {
   }
   object SpawnOptions {
     
-    @scala.inline
-    def apply(): SpawnOptions = {
+    inline def apply(): SpawnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpawnOptions]
     }
     
-    @scala.inline
-    implicit class SpawnOptionsMutableBuilder[Self <: SpawnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpawnOptions](x: Self) {
       
-      @scala.inline
-      def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
+      inline def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
+      inline def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
   

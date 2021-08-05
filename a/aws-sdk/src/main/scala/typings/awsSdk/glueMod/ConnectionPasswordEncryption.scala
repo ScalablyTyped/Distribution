@@ -18,22 +18,17 @@ trait ConnectionPasswordEncryption extends StObject {
 }
 object ConnectionPasswordEncryption {
   
-  @scala.inline
-  def apply(ReturnConnectionPasswordEncrypted: Boolean): ConnectionPasswordEncryption = {
+  inline def apply(ReturnConnectionPasswordEncrypted: Boolean): ConnectionPasswordEncryption = {
     val __obj = js.Dynamic.literal(ReturnConnectionPasswordEncrypted = ReturnConnectionPasswordEncrypted.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionPasswordEncryption]
   }
   
-  @scala.inline
-  implicit class ConnectionPasswordEncryptionMutableBuilder[Self <: ConnectionPasswordEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionPasswordEncryption](x: Self) {
     
-    @scala.inline
-    def setAwsKmsKeyId(value: NameString): Self = StObject.set(x, "AwsKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setAwsKmsKeyId(value: NameString): Self = StObject.set(x, "AwsKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsKmsKeyIdUndefined: Self = StObject.set(x, "AwsKmsKeyId", js.undefined)
+    inline def setAwsKmsKeyIdUndefined: Self = StObject.set(x, "AwsKmsKeyId", js.undefined)
     
-    @scala.inline
-    def setReturnConnectionPasswordEncrypted(value: Boolean): Self = StObject.set(x, "ReturnConnectionPasswordEncrypted", value.asInstanceOf[js.Any])
+    inline def setReturnConnectionPasswordEncrypted(value: Boolean): Self = StObject.set(x, "ReturnConnectionPasswordEncrypted", value.asInstanceOf[js.Any])
   }
 }

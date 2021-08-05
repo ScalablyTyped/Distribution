@@ -19,25 +19,19 @@ trait DigestOptions
 }
 object DigestOptions {
   
-  @scala.inline
-  def apply(counter: Double, secret: String): DigestOptions = {
+  inline def apply(counter: Double, secret: String): DigestOptions = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[DigestOptions]
   }
   
-  @scala.inline
-  implicit class DigestOptionsMutableBuilder[Self <: DigestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DigestOptions](x: Self) {
     
-    @scala.inline
-    def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
   }
 }

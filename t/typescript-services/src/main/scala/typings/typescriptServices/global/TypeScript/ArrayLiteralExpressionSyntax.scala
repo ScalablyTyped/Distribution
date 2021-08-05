@@ -110,10 +110,8 @@ object ArrayLiteralExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(openBracketToken: ISyntaxToken, closeBracketToken: ISyntaxToken): typings.typescriptServices.TypeScript.ArrayLiteralExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openBracketToken.asInstanceOf[js.Any], closeBracketToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ArrayLiteralExpressionSyntax]
+  inline def create(openBracketToken: ISyntaxToken, closeBracketToken: ISyntaxToken): typings.typescriptServices.TypeScript.ArrayLiteralExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openBracketToken.asInstanceOf[js.Any], closeBracketToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ArrayLiteralExpressionSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.ArrayLiteralExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ArrayLiteralExpressionSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.ArrayLiteralExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ArrayLiteralExpressionSyntax]
 }

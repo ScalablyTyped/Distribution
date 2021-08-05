@@ -26,8 +26,7 @@ trait StreamWebSocketControl extends StObject {
 }
 object StreamWebSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     noDelay: Boolean,
     outboundBufferSizeInBytes: Double,
     proxyCredential: PasswordCredential,
@@ -38,22 +37,16 @@ object StreamWebSocketControl {
     __obj.asInstanceOf[StreamWebSocketControl]
   }
   
-  @scala.inline
-  implicit class StreamWebSocketControlMutableBuilder[Self <: StreamWebSocketControl] (val x: Self) extends AnyVal {
+  extension [Self <: StreamWebSocketControl](x: Self) {
     
-    @scala.inline
-    def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
+    inline def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
+    inline def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
+    inline def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedProtocols(value: IVector[String]): Self = StObject.set(x, "supportedProtocols", value.asInstanceOf[js.Any])
+    inline def setSupportedProtocols(value: IVector[String]): Self = StObject.set(x, "supportedProtocols", value.asInstanceOf[js.Any])
   }
 }

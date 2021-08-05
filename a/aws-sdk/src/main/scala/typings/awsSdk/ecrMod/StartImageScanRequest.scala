@@ -20,25 +20,19 @@ trait StartImageScanRequest extends StObject {
 }
 object StartImageScanRequest {
   
-  @scala.inline
-  def apply(imageId: ImageIdentifier, repositoryName: RepositoryName): StartImageScanRequest = {
+  inline def apply(imageId: ImageIdentifier, repositoryName: RepositoryName): StartImageScanRequest = {
     val __obj = js.Dynamic.literal(imageId = imageId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImageScanRequest]
   }
   
-  @scala.inline
-  implicit class StartImageScanRequestMutableBuilder[Self <: StartImageScanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartImageScanRequest](x: Self) {
     
-    @scala.inline
-    def setImageId(value: ImageIdentifier): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: ImageIdentifier): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

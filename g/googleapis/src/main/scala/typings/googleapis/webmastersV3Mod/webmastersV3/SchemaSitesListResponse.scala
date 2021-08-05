@@ -17,22 +17,17 @@ trait SchemaSitesListResponse extends StObject {
 }
 object SchemaSitesListResponse {
   
-  @scala.inline
-  def apply(): SchemaSitesListResponse = {
+  inline def apply(): SchemaSitesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSitesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSitesListResponseMutableBuilder[Self <: SchemaSitesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSitesListResponse](x: Self) {
     
-    @scala.inline
-    def setSiteEntry(value: js.Array[SchemaWmxSite]): Self = StObject.set(x, "siteEntry", value.asInstanceOf[js.Any])
+    inline def setSiteEntry(value: js.Array[SchemaWmxSite]): Self = StObject.set(x, "siteEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteEntryUndefined: Self = StObject.set(x, "siteEntry", js.undefined)
+    inline def setSiteEntryUndefined: Self = StObject.set(x, "siteEntry", js.undefined)
     
-    @scala.inline
-    def setSiteEntryVarargs(value: SchemaWmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value :_*))
+    inline def setSiteEntryVarargs(value: SchemaWmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value :_*))
   }
 }

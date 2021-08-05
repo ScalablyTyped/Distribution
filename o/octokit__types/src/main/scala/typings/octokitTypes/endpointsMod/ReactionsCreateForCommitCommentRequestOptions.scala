@@ -20,25 +20,19 @@ trait ReactionsCreateForCommitCommentRequestOptions extends StObject {
 }
 object ReactionsCreateForCommitCommentRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReactionsCreateForCommitCommentRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReactionsCreateForCommitCommentRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/comments/:comment_id/reactions")
     __obj.asInstanceOf[ReactionsCreateForCommitCommentRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReactionsCreateForCommitCommentRequestOptionsMutableBuilder[Self <: ReactionsCreateForCommitCommentRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionsCreateForCommitCommentRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcDefReportView extends StObject
 object AcDefReportView {
   
-  @scala.inline
-  def acDefViewPreview: `0` = 0.asInstanceOf[`0`]
+  inline def acDefViewPreview: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acDefViewReportBrowse: `1` = 1.asInstanceOf[`1`]
+  inline def acDefViewReportBrowse: `1` = 1.asInstanceOf[`1`]
 }

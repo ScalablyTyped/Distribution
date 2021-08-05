@@ -21,28 +21,21 @@ trait JoinAggregateTransform
 }
 object JoinAggregateTransform {
   
-  @scala.inline
-  def apply(joinaggregate: js.Array[JoinAggregateFieldDef]): JoinAggregateTransform = {
+  inline def apply(joinaggregate: js.Array[JoinAggregateFieldDef]): JoinAggregateTransform = {
     val __obj = js.Dynamic.literal(joinaggregate = joinaggregate.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoinAggregateTransform]
   }
   
-  @scala.inline
-  implicit class JoinAggregateTransformMutableBuilder[Self <: JoinAggregateTransform] (val x: Self) extends AnyVal {
+  extension [Self <: JoinAggregateTransform](x: Self) {
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setJoinaggregate(value: js.Array[JoinAggregateFieldDef]): Self = StObject.set(x, "joinaggregate", value.asInstanceOf[js.Any])
+    inline def setJoinaggregate(value: js.Array[JoinAggregateFieldDef]): Self = StObject.set(x, "joinaggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinaggregateVarargs(value: JoinAggregateFieldDef*): Self = StObject.set(x, "joinaggregate", js.Array(value :_*))
+    inline def setJoinaggregateVarargs(value: JoinAggregateFieldDef*): Self = StObject.set(x, "joinaggregate", js.Array(value :_*))
   }
 }

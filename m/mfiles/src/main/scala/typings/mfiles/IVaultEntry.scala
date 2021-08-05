@@ -18,8 +18,7 @@ trait IVaultEntry extends StObject {
 }
 object IVaultEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Events: IVaultEntryEvents,
     NotifyVaultEntry: (String, js.Any, js.Any) => js.Any,
     Vault: IVault,
@@ -30,22 +29,16 @@ object IVaultEntry {
     __obj.asInstanceOf[IVaultEntry]
   }
   
-  @scala.inline
-  implicit class IVaultEntryMutableBuilder[Self <: IVaultEntry] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultEntry](x: Self) {
     
-    @scala.inline
-    def setEvents(value: IVaultEntryEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IVaultEntryEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyVaultEntry(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "NotifyVaultEntry", js.Any.fromFunction3(value))
+    inline def setNotifyVaultEntry(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "NotifyVaultEntry", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setVault(value: IVault): Self = StObject.set(x, "Vault", value.asInstanceOf[js.Any])
+    inline def setVault(value: IVault): Self = StObject.set(x, "Vault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultCore(value: IVaultCore): Self = StObject.set(x, "VaultCore", value.asInstanceOf[js.Any])
+    inline def setVaultCore(value: IVaultCore): Self = StObject.set(x, "VaultCore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultUI(value: IVaultUI): Self = StObject.set(x, "VaultUI", value.asInstanceOf[js.Any])
+    inline def setVaultUI(value: IVaultUI): Self = StObject.set(x, "VaultUI", value.asInstanceOf[js.Any])
   }
 }

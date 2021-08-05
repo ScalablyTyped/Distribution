@@ -17,31 +17,23 @@ trait Match extends StObject {
 }
 object Match {
   
-  @scala.inline
-  def apply(): Match = {
+  inline def apply(): Match = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Match]
   }
   
-  @scala.inline
-  implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
+  extension [Self <: Match](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setEsme_address(value: String): Self = StObject.set(x, "esme_address", value.asInstanceOf[js.Any])
+    inline def setEsme_address(value: String): Self = StObject.set(x, "esme_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEsme_addressUndefined: Self = StObject.set(x, "esme_address", js.undefined)
+    inline def setEsme_addressUndefined: Self = StObject.set(x, "esme_address", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }
 }

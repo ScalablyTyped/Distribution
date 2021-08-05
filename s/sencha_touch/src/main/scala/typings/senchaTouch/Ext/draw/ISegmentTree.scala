@@ -54,41 +54,31 @@ trait ISegmentTree
 }
 object ISegmentTree {
   
-  @scala.inline
-  def apply(): ISegmentTree = {
+  inline def apply(): ISegmentTree = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISegmentTree]
   }
   
-  @scala.inline
-  implicit class ISegmentTreeMutableBuilder[Self <: ISegmentTree] (val x: Self) extends AnyVal {
+  extension [Self <: ISegmentTree](x: Self) {
     
-    @scala.inline
-    def setGetAggregation(
+    inline def setGetAggregation(
       value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* estStep */ js.UndefOr[Double]) => js.Any
     ): Self = StObject.set(x, "getAggregation", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAggregationUndefined: Self = StObject.set(x, "getAggregation", js.undefined)
+    inline def setGetAggregationUndefined: Self = StObject.set(x, "getAggregation", js.undefined)
     
-    @scala.inline
-    def setGetStrategy(value: () => String): Self = StObject.set(x, "getStrategy", js.Any.fromFunction0(value))
+    inline def setGetStrategy(value: () => String): Self = StObject.set(x, "getStrategy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStrategyUndefined: Self = StObject.set(x, "getStrategy", js.undefined)
+    inline def setGetStrategyUndefined: Self = StObject.set(x, "getStrategy", js.undefined)
     
-    @scala.inline
-    def setSetData(
+    inline def setSetData(
       value: (/* dataX */ js.UndefOr[Double], /* dataOpen */ js.UndefOr[Double], /* dataHigh */ js.UndefOr[Double], /* dataLow */ js.UndefOr[Double], /* dataClose */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "setData", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
+    inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
     
-    @scala.inline
-    def setSetStrategy(value: /* strategy */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStrategy", js.Any.fromFunction1(value))
+    inline def setSetStrategy(value: /* strategy */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStrategy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStrategyUndefined: Self = StObject.set(x, "setStrategy", js.undefined)
+    inline def setSetStrategyUndefined: Self = StObject.set(x, "setStrategy", js.undefined)
   }
 }

@@ -17,20 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhoneInfoOptions extends StObject
 object PhoneInfoOptions {
   
-  @scala.inline
-  def PhoneMultiFactorEnrollInfoOptions(phoneNumber: String, session: MultiFactorSession): typings.firebase.mod.firebase.auth.PhoneMultiFactorEnrollInfoOptions = {
+  inline def PhoneMultiFactorEnrollInfoOptions(phoneNumber: String, session: MultiFactorSession): typings.firebase.mod.firebase.auth.PhoneMultiFactorEnrollInfoOptions = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.firebase.mod.firebase.auth.PhoneMultiFactorEnrollInfoOptions]
   }
   
-  @scala.inline
-  def PhoneMultiFactorSignInInfoOptions(session: MultiFactorSession): typings.firebase.mod.firebase.auth.PhoneMultiFactorSignInInfoOptions = {
+  inline def PhoneMultiFactorSignInInfoOptions(session: MultiFactorSession): typings.firebase.mod.firebase.auth.PhoneMultiFactorSignInInfoOptions = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.firebase.mod.firebase.auth.PhoneMultiFactorSignInInfoOptions]
   }
   
-  @scala.inline
-  def PhoneSingleFactorInfoOptions(phoneNumber: String): typings.firebase.mod.firebase.auth.PhoneSingleFactorInfoOptions = {
+  inline def PhoneSingleFactorInfoOptions(phoneNumber: String): typings.firebase.mod.firebase.auth.PhoneSingleFactorInfoOptions = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.firebase.mod.firebase.auth.PhoneSingleFactorInfoOptions]
   }

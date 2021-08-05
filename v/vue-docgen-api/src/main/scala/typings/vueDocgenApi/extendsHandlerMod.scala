@@ -13,8 +13,7 @@ object extendsHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     documentation: typings.vueDocgenApi.documentationMod.default,
     componentDefinition: NodePath[js.Any, js.Any],
     astPath: File_,

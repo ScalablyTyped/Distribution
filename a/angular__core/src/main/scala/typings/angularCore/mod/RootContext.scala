@@ -41,8 +41,7 @@ trait RootContext extends StObject {
 }
 object RootContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clean: js.Promise[Null],
     components: js.Array[js.Object],
     flags: RootContextFlags,
@@ -52,28 +51,20 @@ object RootContext {
     __obj.asInstanceOf[RootContext]
   }
   
-  @scala.inline
-  implicit class RootContextMutableBuilder[Self <: RootContext] (val x: Self) extends AnyVal {
+  extension [Self <: RootContext](x: Self) {
     
-    @scala.inline
-    def setClean(value: js.Promise[Null]): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+    inline def setClean(value: js.Promise[Null]): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponents(value: js.Array[js.Object]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Array[js.Object]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsVarargs(value: js.Object*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: js.Object*): Self = StObject.set(x, "components", js.Array(value :_*))
     
-    @scala.inline
-    def setFlags(value: RootContextFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: RootContextFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerHandler(value: ɵPlayerHandler): Self = StObject.set(x, "playerHandler", value.asInstanceOf[js.Any])
+    inline def setPlayerHandler(value: ɵPlayerHandler): Self = StObject.set(x, "playerHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerHandlerNull: Self = StObject.set(x, "playerHandler", null)
+    inline def setPlayerHandlerNull: Self = StObject.set(x, "playerHandler", null)
     
-    @scala.inline
-    def setScheduler(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "scheduler", js.Any.fromFunction1(value))
+    inline def setScheduler(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "scheduler", js.Any.fromFunction1(value))
   }
 }

@@ -13,16 +13,13 @@ trait GetLayerVersionByArnRequest extends StObject {
 }
 object GetLayerVersionByArnRequest {
   
-  @scala.inline
-  def apply(Arn: LayerVersionArn): GetLayerVersionByArnRequest = {
+  inline def apply(Arn: LayerVersionArn): GetLayerVersionByArnRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLayerVersionByArnRequest]
   }
   
-  @scala.inline
-  implicit class GetLayerVersionByArnRequestMutableBuilder[Self <: GetLayerVersionByArnRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetLayerVersionByArnRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: LayerVersionArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: LayerVersionArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }
 }

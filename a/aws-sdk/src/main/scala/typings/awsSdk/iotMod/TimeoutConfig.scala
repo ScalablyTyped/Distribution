@@ -13,19 +13,15 @@ trait TimeoutConfig extends StObject {
 }
 object TimeoutConfig {
   
-  @scala.inline
-  def apply(): TimeoutConfig = {
+  inline def apply(): TimeoutConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeoutConfig]
   }
   
-  @scala.inline
-  implicit class TimeoutConfigMutableBuilder[Self <: TimeoutConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TimeoutConfig](x: Self) {
     
-    @scala.inline
-    def setInProgressTimeoutInMinutes(value: InProgressTimeoutInMinutes): Self = StObject.set(x, "inProgressTimeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setInProgressTimeoutInMinutes(value: InProgressTimeoutInMinutes): Self = StObject.set(x, "inProgressTimeoutInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgressTimeoutInMinutesUndefined: Self = StObject.set(x, "inProgressTimeoutInMinutes", js.undefined)
+    inline def setInProgressTimeoutInMinutesUndefined: Self = StObject.set(x, "inProgressTimeoutInMinutes", js.undefined)
   }
 }

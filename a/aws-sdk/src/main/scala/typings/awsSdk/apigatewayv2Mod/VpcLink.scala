@@ -53,8 +53,7 @@ trait VpcLink extends StObject {
 }
 object VpcLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: StringWithLengthBetween1And128,
     SecurityGroupIds: SecurityGroupIdList,
     SubnetIds: SubnetIdList,
@@ -64,55 +63,38 @@ object VpcLink {
     __obj.asInstanceOf[VpcLink]
   }
   
-  @scala.inline
-  implicit class VpcLinkMutableBuilder[Self <: VpcLink] (val x: Self) extends AnyVal {
+  extension [Self <: VpcLink](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIds(value: SecurityGroupIdList): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: SecurityGroupIdList): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: string*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: string*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetIds(value: SubnetIdList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: SubnetIdList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: string*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: string*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setVpcLinkId(value: Id): Self = StObject.set(x, "VpcLinkId", value.asInstanceOf[js.Any])
+    inline def setVpcLinkId(value: Id): Self = StObject.set(x, "VpcLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcLinkStatus(value: VpcLinkStatus): Self = StObject.set(x, "VpcLinkStatus", value.asInstanceOf[js.Any])
+    inline def setVpcLinkStatus(value: VpcLinkStatus): Self = StObject.set(x, "VpcLinkStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcLinkStatusMessage(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "VpcLinkStatusMessage", value.asInstanceOf[js.Any])
+    inline def setVpcLinkStatusMessage(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "VpcLinkStatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcLinkStatusMessageUndefined: Self = StObject.set(x, "VpcLinkStatusMessage", js.undefined)
+    inline def setVpcLinkStatusMessageUndefined: Self = StObject.set(x, "VpcLinkStatusMessage", js.undefined)
     
-    @scala.inline
-    def setVpcLinkStatusUndefined: Self = StObject.set(x, "VpcLinkStatus", js.undefined)
+    inline def setVpcLinkStatusUndefined: Self = StObject.set(x, "VpcLinkStatus", js.undefined)
     
-    @scala.inline
-    def setVpcLinkVersion(value: VpcLinkVersion): Self = StObject.set(x, "VpcLinkVersion", value.asInstanceOf[js.Any])
+    inline def setVpcLinkVersion(value: VpcLinkVersion): Self = StObject.set(x, "VpcLinkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcLinkVersionUndefined: Self = StObject.set(x, "VpcLinkVersion", js.undefined)
+    inline def setVpcLinkVersionUndefined: Self = StObject.set(x, "VpcLinkVersion", js.undefined)
   }
 }

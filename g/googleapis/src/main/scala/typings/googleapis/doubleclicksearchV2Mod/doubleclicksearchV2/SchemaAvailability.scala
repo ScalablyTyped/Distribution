@@ -45,49 +45,35 @@ trait SchemaAvailability extends StObject {
 }
 object SchemaAvailability {
   
-  @scala.inline
-  def apply(): SchemaAvailability = {
+  inline def apply(): SchemaAvailability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAvailability]
   }
   
-  @scala.inline
-  implicit class SchemaAvailabilityMutableBuilder[Self <: SchemaAvailability] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAvailability](x: Self) {
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
+    inline def setAgencyId(value: String): Self = StObject.set(x, "agencyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
+    inline def setAgencyIdUndefined: Self = StObject.set(x, "agencyId", js.undefined)
     
-    @scala.inline
-    def setAvailabilityTimestamp(value: String): Self = StObject.set(x, "availabilityTimestamp", value.asInstanceOf[js.Any])
+    inline def setAvailabilityTimestamp(value: String): Self = StObject.set(x, "availabilityTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityTimestampUndefined: Self = StObject.set(x, "availabilityTimestamp", js.undefined)
+    inline def setAvailabilityTimestampUndefined: Self = StObject.set(x, "availabilityTimestamp", js.undefined)
     
-    @scala.inline
-    def setSegmentationId(value: String): Self = StObject.set(x, "segmentationId", value.asInstanceOf[js.Any])
+    inline def setSegmentationId(value: String): Self = StObject.set(x, "segmentationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentationIdUndefined: Self = StObject.set(x, "segmentationId", js.undefined)
+    inline def setSegmentationIdUndefined: Self = StObject.set(x, "segmentationId", js.undefined)
     
-    @scala.inline
-    def setSegmentationName(value: String): Self = StObject.set(x, "segmentationName", value.asInstanceOf[js.Any])
+    inline def setSegmentationName(value: String): Self = StObject.set(x, "segmentationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentationNameUndefined: Self = StObject.set(x, "segmentationName", js.undefined)
+    inline def setSegmentationNameUndefined: Self = StObject.set(x, "segmentationName", js.undefined)
     
-    @scala.inline
-    def setSegmentationType(value: String): Self = StObject.set(x, "segmentationType", value.asInstanceOf[js.Any])
+    inline def setSegmentationType(value: String): Self = StObject.set(x, "segmentationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentationTypeUndefined: Self = StObject.set(x, "segmentationType", js.undefined)
+    inline def setSegmentationTypeUndefined: Self = StObject.set(x, "segmentationType", js.undefined)
   }
 }

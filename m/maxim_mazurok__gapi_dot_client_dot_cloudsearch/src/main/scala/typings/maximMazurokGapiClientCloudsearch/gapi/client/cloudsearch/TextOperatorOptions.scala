@@ -23,25 +23,19 @@ trait TextOperatorOptions extends StObject {
 }
 object TextOperatorOptions {
   
-  @scala.inline
-  def apply(): TextOperatorOptions = {
+  inline def apply(): TextOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextOperatorOptions]
   }
   
-  @scala.inline
-  implicit class TextOperatorOptionsMutableBuilder[Self <: TextOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setExactMatchWithOperator(value: Boolean): Self = StObject.set(x, "exactMatchWithOperator", value.asInstanceOf[js.Any])
+    inline def setExactMatchWithOperator(value: Boolean): Self = StObject.set(x, "exactMatchWithOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactMatchWithOperatorUndefined: Self = StObject.set(x, "exactMatchWithOperator", js.undefined)
+    inline def setExactMatchWithOperatorUndefined: Self = StObject.set(x, "exactMatchWithOperator", js.undefined)
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

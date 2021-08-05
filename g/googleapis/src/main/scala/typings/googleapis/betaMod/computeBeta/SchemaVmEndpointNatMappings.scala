@@ -18,28 +18,21 @@ trait SchemaVmEndpointNatMappings extends StObject {
 }
 object SchemaVmEndpointNatMappings {
   
-  @scala.inline
-  def apply(): SchemaVmEndpointNatMappings = {
+  inline def apply(): SchemaVmEndpointNatMappings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVmEndpointNatMappings]
   }
   
-  @scala.inline
-  implicit class SchemaVmEndpointNatMappingsMutableBuilder[Self <: SchemaVmEndpointNatMappings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVmEndpointNatMappings](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+    inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
-    @scala.inline
-    def setInterfaceNatMappings(value: js.Array[SchemaVmEndpointNatMappingsInterfaceNatMappings]): Self = StObject.set(x, "interfaceNatMappings", value.asInstanceOf[js.Any])
+    inline def setInterfaceNatMappings(value: js.Array[SchemaVmEndpointNatMappingsInterfaceNatMappings]): Self = StObject.set(x, "interfaceNatMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceNatMappingsUndefined: Self = StObject.set(x, "interfaceNatMappings", js.undefined)
+    inline def setInterfaceNatMappingsUndefined: Self = StObject.set(x, "interfaceNatMappings", js.undefined)
     
-    @scala.inline
-    def setInterfaceNatMappingsVarargs(value: SchemaVmEndpointNatMappingsInterfaceNatMappings*): Self = StObject.set(x, "interfaceNatMappings", js.Array(value :_*))
+    inline def setInterfaceNatMappingsVarargs(value: SchemaVmEndpointNatMappingsInterfaceNatMappings*): Self = StObject.set(x, "interfaceNatMappings", js.Array(value :_*))
   }
 }

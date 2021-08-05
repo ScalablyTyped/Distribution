@@ -15,8 +15,7 @@ trait EncryptResultmessageMessaMessage extends StObject {
 }
 object EncryptResultmessageMessaMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     message: typings.openpgp.mod.message.Message,
     sessionKey: AeadAlgorithm,
     signature: typings.openpgp.mod.signature.Signature
@@ -25,16 +24,12 @@ object EncryptResultmessageMessaMessage {
     __obj.asInstanceOf[EncryptResultmessageMessaMessage]
   }
   
-  @scala.inline
-  implicit class EncryptResultmessageMessaMessageMutableBuilder[Self <: EncryptResultmessageMessaMessage] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptResultmessageMessaMessage](x: Self) {
     
-    @scala.inline
-    def setMessage(value: typings.openpgp.mod.message.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: typings.openpgp.mod.message.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionKey(value: AeadAlgorithm): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+    inline def setSessionKey(value: AeadAlgorithm): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: typings.openpgp.mod.signature.Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: typings.openpgp.mod.signature.Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

@@ -50,8 +50,7 @@ trait SwipeView extends StObject {
 }
 object SwipeView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentMasterPage: Double,
     destroy: () => Unit,
     goToPage: Double => Unit,
@@ -73,58 +72,40 @@ object SwipeView {
     __obj.asInstanceOf[SwipeView]
   }
   
-  @scala.inline
-  implicit class SwipeViewMutableBuilder[Self <: SwipeView] (val x: Self) extends AnyVal {
+  extension [Self <: SwipeView](x: Self) {
     
-    @scala.inline
-    def setCurrentMasterPage(value: Double): Self = StObject.set(x, "currentMasterPage", value.asInstanceOf[js.Any])
+    inline def setCurrentMasterPage(value: Double): Self = StObject.set(x, "currentMasterPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGoToPage(value: Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
+    inline def setGoToPage(value: Double => Unit): Self = StObject.set(x, "goToPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleEvent(value: Event => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+    inline def setHandleEvent(value: Event => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMasterPages(value: js.Array[HTMLElement]): Self = StObject.set(x, "masterPages", value.asInstanceOf[js.Any])
+    inline def setMasterPages(value: js.Array[HTMLElement]): Self = StObject.set(x, "masterPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterPagesVarargs(value: HTMLElement*): Self = StObject.set(x, "masterPages", js.Array(value :_*))
+    inline def setMasterPagesVarargs(value: HTMLElement*): Self = StObject.set(x, "masterPages", js.Array(value :_*))
     
-    @scala.inline
-    def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFlip(value: /* fn */ js.Function => Unit): Self = StObject.set(x, "onFlip", js.Any.fromFunction1(value))
+    inline def setOnFlip(value: /* fn */ js.Function => Unit): Self = StObject.set(x, "onFlip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMoveIn(value: /* fn */ js.Function => Unit): Self = StObject.set(x, "onMoveIn", js.Any.fromFunction1(value))
+    inline def setOnMoveIn(value: /* fn */ js.Function => Unit): Self = StObject.set(x, "onMoveIn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMoveOut(value: /* fn */ js.Function => Unit): Self = StObject.set(x, "onMoveOut", js.Any.fromFunction1(value))
+    inline def setOnMoveOut(value: /* fn */ js.Function => Unit): Self = StObject.set(x, "onMoveOut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTouchStart(value: /* fn */ js.Function => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+    inline def setOnTouchStart(value: /* fn */ js.Function => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+    inline def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshSize(value: () => Unit): Self = StObject.set(x, "refreshSize", js.Any.fromFunction0(value))
+    inline def setRefreshSize(value: () => Unit): Self = StObject.set(x, "refreshSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSlider(value: HTMLElement): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+    inline def setSlider(value: HTMLElement): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatePageCount(value: Double => Unit): Self = StObject.set(x, "updatePageCount", js.Any.fromFunction1(value))
+    inline def setUpdatePageCount(value: Double => Unit): Self = StObject.set(x, "updatePageCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrapper(value: HTMLElement): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+    inline def setWrapper(value: HTMLElement): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperHeight(value: Double): Self = StObject.set(x, "wrapperHeight", value.asInstanceOf[js.Any])
+    inline def setWrapperHeight(value: Double): Self = StObject.set(x, "wrapperHeight", value.asInstanceOf[js.Any])
   }
 }

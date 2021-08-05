@@ -9,8 +9,7 @@ trait ISpaceFillingChart
      with IAbstractChart
 object ISpaceFillingChart {
   
-  @scala.inline
-  def apply(): ISpaceFillingChart = {
+  inline def apply(): ISpaceFillingChart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISpaceFillingChart]
   }

@@ -15,31 +15,23 @@ trait OnPotSealed extends StObject {
 }
 object OnPotSealed {
   
-  @scala.inline
-  def apply(): OnPotSealed = {
+  inline def apply(): OnPotSealed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnPotSealed]
   }
   
-  @scala.inline
-  implicit class OnPotSealedMutableBuilder[Self <: OnPotSealed] (val x: Self) extends AnyVal {
+  extension [Self <: OnPotSealed](x: Self) {
     
-    @scala.inline
-    def setOnPotSealed(value: /* pot */ KnuddelPot => Unit): Self = StObject.set(x, "onPotSealed", js.Any.fromFunction1(value))
+    inline def setOnPotSealed(value: /* pot */ KnuddelPot => Unit): Self = StObject.set(x, "onPotSealed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPotSealedUndefined: Self = StObject.set(x, "onPotSealed", js.undefined)
+    inline def setOnPotSealedUndefined: Self = StObject.set(x, "onPotSealed", js.undefined)
     
-    @scala.inline
-    def setPayoutTimeoutMinutes(value: Double): Self = StObject.set(x, "payoutTimeoutMinutes", value.asInstanceOf[js.Any])
+    inline def setPayoutTimeoutMinutes(value: Double): Self = StObject.set(x, "payoutTimeoutMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayoutTimeoutMinutesUndefined: Self = StObject.set(x, "payoutTimeoutMinutes", js.undefined)
+    inline def setPayoutTimeoutMinutesUndefined: Self = StObject.set(x, "payoutTimeoutMinutes", js.undefined)
     
-    @scala.inline
-    def setShouldSealPot(value: /* pot */ KnuddelPot => Boolean): Self = StObject.set(x, "shouldSealPot", js.Any.fromFunction1(value))
+    inline def setShouldSealPot(value: /* pot */ KnuddelPot => Boolean): Self = StObject.set(x, "shouldSealPot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShouldSealPotUndefined: Self = StObject.set(x, "shouldSealPot", js.undefined)
+    inline def setShouldSealPotUndefined: Self = StObject.set(x, "shouldSealPot", js.undefined)
   }
 }

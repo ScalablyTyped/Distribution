@@ -18,17 +18,14 @@ object typesRepositoryNotAssociatedWithPullRequestExceptionMod {
   }
   object RepositoryNotAssociatedWithPullRequestException {
     
-    @scala.inline
-    def apply(): RepositoryNotAssociatedWithPullRequestException = {
+    inline def apply(): RepositoryNotAssociatedWithPullRequestException = {
       val __obj = js.Dynamic.literal(name = "RepositoryNotAssociatedWithPullRequestException")
       __obj.asInstanceOf[RepositoryNotAssociatedWithPullRequestException]
     }
     
-    @scala.inline
-    implicit class RepositoryNotAssociatedWithPullRequestExceptionMutableBuilder[Self <: RepositoryNotAssociatedWithPullRequestException] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryNotAssociatedWithPullRequestException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNotAssociatedWithPullRequestException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

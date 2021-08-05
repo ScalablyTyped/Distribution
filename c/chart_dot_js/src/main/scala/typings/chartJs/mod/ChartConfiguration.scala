@@ -16,40 +16,29 @@ trait ChartConfiguration extends StObject {
 }
 object ChartConfiguration {
   
-  @scala.inline
-  def apply(): ChartConfiguration = {
+  inline def apply(): ChartConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartConfiguration]
   }
   
-  @scala.inline
-  implicit class ChartConfigurationMutableBuilder[Self <: ChartConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ChartConfiguration](x: Self) {
     
-    @scala.inline
-    def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setOptions(value: ChartOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ChartOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPlugins(value: js.Array[PluginServiceRegistrationOptions]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[PluginServiceRegistrationOptions]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    @scala.inline
-    def setPluginsVarargs(value: PluginServiceRegistrationOptions*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: PluginServiceRegistrationOptions*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ChartType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

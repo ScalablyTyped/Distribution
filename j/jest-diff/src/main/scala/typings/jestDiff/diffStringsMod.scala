@@ -11,6 +11,5 @@ object diffStringsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(a: String, b: String): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
+  inline def default(a: String, b: String): js.Array[Diff] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff]]
 }

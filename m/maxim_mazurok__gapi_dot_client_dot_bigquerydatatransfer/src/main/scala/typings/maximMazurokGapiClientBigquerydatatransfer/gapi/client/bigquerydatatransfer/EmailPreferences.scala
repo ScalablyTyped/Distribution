@@ -11,19 +11,15 @@ trait EmailPreferences extends StObject {
 }
 object EmailPreferences {
   
-  @scala.inline
-  def apply(): EmailPreferences = {
+  inline def apply(): EmailPreferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailPreferences]
   }
   
-  @scala.inline
-  implicit class EmailPreferencesMutableBuilder[Self <: EmailPreferences] (val x: Self) extends AnyVal {
+  extension [Self <: EmailPreferences](x: Self) {
     
-    @scala.inline
-    def setEnableFailureEmail(value: Boolean): Self = StObject.set(x, "enableFailureEmail", value.asInstanceOf[js.Any])
+    inline def setEnableFailureEmail(value: Boolean): Self = StObject.set(x, "enableFailureEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFailureEmailUndefined: Self = StObject.set(x, "enableFailureEmail", js.undefined)
+    inline def setEnableFailureEmailUndefined: Self = StObject.set(x, "enableFailureEmail", js.undefined)
   }
 }

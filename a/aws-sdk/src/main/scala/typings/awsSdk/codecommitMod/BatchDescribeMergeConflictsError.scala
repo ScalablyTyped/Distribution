@@ -23,22 +23,17 @@ trait BatchDescribeMergeConflictsError extends StObject {
 }
 object BatchDescribeMergeConflictsError {
   
-  @scala.inline
-  def apply(exceptionName: ExceptionName, filePath: Path, message: Message): BatchDescribeMergeConflictsError = {
+  inline def apply(exceptionName: ExceptionName, filePath: Path, message: Message): BatchDescribeMergeConflictsError = {
     val __obj = js.Dynamic.literal(exceptionName = exceptionName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDescribeMergeConflictsError]
   }
   
-  @scala.inline
-  implicit class BatchDescribeMergeConflictsErrorMutableBuilder[Self <: BatchDescribeMergeConflictsError] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDescribeMergeConflictsError](x: Self) {
     
-    @scala.inline
-    def setExceptionName(value: ExceptionName): Self = StObject.set(x, "exceptionName", value.asInstanceOf[js.Any])
+    inline def setExceptionName(value: ExceptionName): Self = StObject.set(x, "exceptionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

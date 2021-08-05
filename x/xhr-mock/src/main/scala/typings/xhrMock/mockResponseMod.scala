@@ -16,13 +16,13 @@ object mockResponseMod {
   @js.native
   trait MockResponse extends StObject {
     
-    var _body: js.Any = js.native
+    /* private */ var _body: js.Any = js.native
     
-    var _headers: js.Any = js.native
+    /* private */ var _headers: js.Any = js.native
     
-    var _reason: js.Any = js.native
+    /* private */ var _reason: js.Any = js.native
     
-    var _status: js.Any = js.native
+    /* private */ var _status: js.Any = js.native
     
     def body(): js.Any = js.native
     def body(body: js.Any): MockResponse = js.native

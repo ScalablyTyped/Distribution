@@ -14,26 +14,20 @@ object anon {
   }
   object Leading {
     
-    @scala.inline
-    def apply(): Leading = {
+    inline def apply(): Leading = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Leading]
     }
     
-    @scala.inline
-    implicit class LeadingMutableBuilder[Self <: Leading] (val x: Self) extends AnyVal {
+    extension [Self <: Leading](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
   
@@ -46,26 +40,20 @@ object anon {
   }
   object PartialReactResizeDetecto {
     
-    @scala.inline
-    def apply(): PartialReactResizeDetecto = {
+    inline def apply(): PartialReactResizeDetecto = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialReactResizeDetecto]
     }
     
-    @scala.inline
-    implicit class PartialReactResizeDetectoMutableBuilder[Self <: PartialReactResizeDetecto] (val x: Self) extends AnyVal {
+    extension [Self <: PartialReactResizeDetecto](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

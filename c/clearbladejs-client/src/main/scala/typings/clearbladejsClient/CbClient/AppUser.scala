@@ -30,8 +30,7 @@ trait AppUser extends StObject {
 }
 object AppUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     allUsers: (Query, CbCallback) => Unit,
     callTimeout: Double,
@@ -48,40 +47,28 @@ object AppUser {
     __obj.asInstanceOf[AppUser]
   }
   
-  @scala.inline
-  implicit class AppUserMutableBuilder[Self <: AppUser] (val x: Self) extends AnyVal {
+  extension [Self <: AppUser](x: Self) {
     
-    @scala.inline
-    def setAllUsers(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "allUsers", js.Any.fromFunction2(value))
+    inline def setAllUsers(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "allUsers", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
+    inline def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "count", js.Any.fromFunction2(value))
+    inline def setCount(value: (Query, CbCallback) => Unit): Self = StObject.set(x, "count", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUser(value: CbCallback => Unit): Self = StObject.set(x, "getUser", js.Any.fromFunction1(value))
+    inline def setGetUser(value: CbCallback => Unit): Self = StObject.set(x, "getUser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPassword(value: (String, String, CbCallback) => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction3(value))
+    inline def setSetPassword(value: (String, String, CbCallback) => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetUser(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "setUser", js.Any.fromFunction2(value))
+    inline def setSetUser(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "setUser", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

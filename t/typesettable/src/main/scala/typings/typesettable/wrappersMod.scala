@@ -20,8 +20,7 @@ object wrappersMod {
     @JSImport("typesettable/build/src/wrappers", "SingleLineWrapper.NO_WRAP_ITERATIONS")
     @js.native
     def NO_WRAP_ITERATIONS: js.Any = js.native
-    @scala.inline
-    def NO_WRAP_ITERATIONS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_WRAP_ITERATIONS")(x.asInstanceOf[js.Any])
+    inline def NO_WRAP_ITERATIONS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_WRAP_ITERATIONS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typesettable/build/src/wrappers", "Wrapper")

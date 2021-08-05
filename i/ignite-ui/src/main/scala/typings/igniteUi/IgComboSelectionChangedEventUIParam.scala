@@ -23,31 +23,23 @@ trait IgComboSelectionChangedEventUIParam extends StObject {
 }
 object IgComboSelectionChangedEventUIParam {
   
-  @scala.inline
-  def apply(): IgComboSelectionChangedEventUIParam = {
+  inline def apply(): IgComboSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgComboSelectionChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class IgComboSelectionChangedEventUIParamMutableBuilder[Self <: IgComboSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: IgComboSelectionChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setOldItems(value: js.Any): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
+    inline def setOldItems(value: js.Any): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldItemsUndefined: Self = StObject.set(x, "oldItems", js.undefined)
+    inline def setOldItemsUndefined: Self = StObject.set(x, "oldItems", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

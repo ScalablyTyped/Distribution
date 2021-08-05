@@ -23,31 +23,23 @@ trait DateFilter extends StObject {
 }
 object DateFilter {
   
-  @scala.inline
-  def apply(): DateFilter = {
+  inline def apply(): DateFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateFilter]
   }
   
-  @scala.inline
-  implicit class DateFilterMutableBuilder[Self <: DateFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DateFilter](x: Self) {
     
-    @scala.inline
-    def setDateRange(value: DateRange): Self = StObject.set(x, "DateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: DateRange): Self = StObject.set(x, "DateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeUndefined: Self = StObject.set(x, "DateRange", js.undefined)
+    inline def setDateRangeUndefined: Self = StObject.set(x, "DateRange", js.undefined)
     
-    @scala.inline
-    def setEnd(value: NonEmptyString): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: NonEmptyString): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
-    @scala.inline
-    def setStart(value: NonEmptyString): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: NonEmptyString): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
   }
 }

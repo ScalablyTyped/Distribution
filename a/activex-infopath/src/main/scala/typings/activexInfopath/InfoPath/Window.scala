@@ -17,7 +17,7 @@ trait Window extends StObject {
   
   val CommandBars: js.Any = js.native
   
-  @JSName("InfoPath.Window_typekey")
+  /* private */ @JSName("InfoPath.Window_typekey")
   var InfoPathDotWindow_typekey: Window = js.native
   
   val MailEnvelope: MailEnvelopeObject = js.native

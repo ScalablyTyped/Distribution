@@ -24,8 +24,7 @@ trait XWebDAVCommandEnvironment
 }
 object XWebDAVCommandEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InteractionHandler: XInteractionHandler,
     ProgressHandler: XProgressHandler,
     acquire: () => Unit,
@@ -39,10 +38,8 @@ object XWebDAVCommandEnvironment {
     __obj.asInstanceOf[XWebDAVCommandEnvironment]
   }
   
-  @scala.inline
-  implicit class XWebDAVCommandEnvironmentMutableBuilder[Self <: XWebDAVCommandEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: XWebDAVCommandEnvironment](x: Self) {
     
-    @scala.inline
-    def setGetUserRequestHeaders(value: (String, WebDAVHTTPMethod) => SafeArray[StringPair]): Self = StObject.set(x, "getUserRequestHeaders", js.Any.fromFunction2(value))
+    inline def setGetUserRequestHeaders(value: (String, WebDAVHTTPMethod) => SafeArray[StringPair]): Self = StObject.set(x, "getUserRequestHeaders", js.Any.fromFunction2(value))
   }
 }

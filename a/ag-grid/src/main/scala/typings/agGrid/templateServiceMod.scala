@@ -10,15 +10,15 @@ object templateServiceMod {
   @js.native
   class TemplateService () extends StObject {
     
-    @JSName("$scope")
+    /* private */ @JSName("$scope")
     var $scope: js.Any = js.native
     
     def getTemplate(url: js.Any, callback: js.Any): js.Any = js.native
     
     def handleHttpResult(httpResult: js.Any, url: js.Any): Unit = js.native
     
-    var templateCache: js.Any = js.native
+    /* private */ var templateCache: js.Any = js.native
     
-    var waitingCallbacks: js.Any = js.native
+    /* private */ var waitingCallbacks: js.Any = js.native
   }
 }

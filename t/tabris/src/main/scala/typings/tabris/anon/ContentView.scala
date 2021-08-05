@@ -15,22 +15,17 @@ trait ContentView extends StObject {
 }
 object ContentView {
   
-  @scala.inline
-  def apply(): ContentView = {
+  inline def apply(): ContentView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentView]
   }
   
-  @scala.inline
-  implicit class ContentViewMutableBuilder[Self <: ContentView] (val x: Self) extends AnyVal {
+  extension [Self <: ContentView](x: Self) {
     
-    @scala.inline
-    def setChildren(value: JSXChildren[Widget]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: JSXChildren[Widget]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: (Widget | WidgetCollection[Widget])*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (Widget | WidgetCollection[Widget])*): Self = StObject.set(x, "children", js.Array(value :_*))
   }
 }

@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Transport]
-  @scala.inline
-  def default(base: String): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(base.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  inline def default(): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Transport]
+  inline def default(base: String): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(base.asInstanceOf[js.Any]).asInstanceOf[Transport]
   
   type Handler = js.Function2[
     /* connection */ js.Any, 
@@ -81,8 +79,7 @@ object mod {
   }
   object Transport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       angular: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult],
       angularHttpClient: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult],
       axios: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult],
@@ -95,29 +92,21 @@ object mod {
       __obj.asInstanceOf[Transport]
     }
     
-    @scala.inline
-    implicit class TransportMutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
+    extension [Self <: Transport](x: Self) {
       
-      @scala.inline
-      def setAngular(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "angular", js.Any.fromFunction2(value))
+      inline def setAngular(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "angular", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAngularHttpClient(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "angularHttpClient", js.Any.fromFunction2(value))
+      inline def setAngularHttpClient(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "angularHttpClient", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAxios(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "axios", js.Any.fromFunction2(value))
+      inline def setAxios(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "axios", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFetch(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
+      inline def setFetch(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setJquery(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "jquery", js.Any.fromFunction2(value))
+      inline def setJquery(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "jquery", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequest(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
+      inline def setRequest(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuperagent(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "superagent", js.Any.fromFunction2(value))
+      inline def setSuperagent(value: (/* connection */ js.Any, /* options */ js.UndefOr[js.Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "superagent", js.Any.fromFunction2(value))
     }
   }
 }

@@ -13,25 +13,19 @@ trait LogicalAndInputs extends StObject {
 }
 object LogicalAndInputs {
   
-  @scala.inline
-  def apply(): LogicalAndInputs = {
+  inline def apply(): LogicalAndInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogicalAndInputs]
   }
   
-  @scala.inline
-  implicit class LogicalAndInputsMutableBuilder[Self <: LogicalAndInputs] (val x: Self) extends AnyVal {
+  extension [Self <: LogicalAndInputs](x: Self) {
     
-    @scala.inline
-    def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+    inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
-    @scala.inline
-    def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
   }
 }

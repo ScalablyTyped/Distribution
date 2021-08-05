@@ -12,19 +12,15 @@ trait GPXOptions extends StObject {
 }
 object GPXOptions {
   
-  @scala.inline
-  def apply(): GPXOptions = {
+  inline def apply(): GPXOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GPXOptions]
   }
   
-  @scala.inline
-  implicit class GPXOptionsMutableBuilder[Self <: GPXOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GPXOptions](x: Self) {
     
-    @scala.inline
-    def setReadExtensions(value: (/* feature */ Feature, /* node */ Node) => js.Any): Self = StObject.set(x, "readExtensions", js.Any.fromFunction2(value))
+    inline def setReadExtensions(value: (/* feature */ Feature, /* node */ Node) => js.Any): Self = StObject.set(x, "readExtensions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReadExtensionsUndefined: Self = StObject.set(x, "readExtensions", js.undefined)
+    inline def setReadExtensionsUndefined: Self = StObject.set(x, "readExtensions", js.undefined)
   }
 }

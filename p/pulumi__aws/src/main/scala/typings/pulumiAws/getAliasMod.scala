@@ -11,10 +11,8 @@ object getAliasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAliasResult]]
-  @scala.inline
-  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAliasResult]]
+  inline def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAliasResult]]
+  inline def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAliasResult]]
   
   trait GetAliasArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getAliasMod {
   }
   object GetAliasArgs {
     
-    @scala.inline
-    def apply(name: String): GetAliasArgs = {
+    inline def apply(name: String): GetAliasArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAliasArgs]
     }
     
-    @scala.inline
-    implicit class GetAliasArgsMutableBuilder[Self <: GetAliasArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetAliasArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,29 +60,22 @@ object getAliasMod {
   }
   object GetAliasResult {
     
-    @scala.inline
-    def apply(arn: String, id: String, name: String, targetKeyArn: String, targetKeyId: String): GetAliasResult = {
+    inline def apply(arn: String, id: String, name: String, targetKeyArn: String, targetKeyId: String): GetAliasResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], targetKeyArn = targetKeyArn.asInstanceOf[js.Any], targetKeyId = targetKeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAliasResult]
     }
     
-    @scala.inline
-    implicit class GetAliasResultMutableBuilder[Self <: GetAliasResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetAliasResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetKeyArn(value: String): Self = StObject.set(x, "targetKeyArn", value.asInstanceOf[js.Any])
+      inline def setTargetKeyArn(value: String): Self = StObject.set(x, "targetKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetKeyId(value: String): Self = StObject.set(x, "targetKeyId", value.asInstanceOf[js.Any])
+      inline def setTargetKeyId(value: String): Self = StObject.set(x, "targetKeyId", value.asInstanceOf[js.Any])
     }
   }
 }

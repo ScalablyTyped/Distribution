@@ -18,24 +18,15 @@ object mod {
   @js.native
   val punctuation: js.Array[String] = js.native
   
-  @scala.inline
-  def scrabbleify(inputString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def scrabbleify(inputString: String, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def scrabbleify(inputString: String, separator: String, inviolates: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def scrabbleify(inputString: String, separator: String, inviolates: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def scrabbleify(inputString: String, separator: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def scrabbleify(inputString: String, separator: js.Array[String], inviolates: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def scrabbleify(inputString: String, separator: js.Array[String], inviolates: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def scrabbleify(inputString: String, separator: Unit, inviolates: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def scrabbleify(inputString: String, separator: Unit, inviolates: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scrabbleify(inputString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def scrabbleify(inputString: String, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scrabbleify(inputString: String, separator: String, inviolates: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scrabbleify(inputString: String, separator: String, inviolates: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scrabbleify(inputString: String, separator: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scrabbleify(inputString: String, separator: js.Array[String], inviolates: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scrabbleify(inputString: String, separator: js.Array[String], inviolates: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scrabbleify(inputString: String, separator: Unit, inviolates: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def scrabbleify(inputString: String, separator: Unit, inviolates: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scrabbleify")(inputString.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], inviolates.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@hyggedyne/scrabbleify", "symbols")
   @js.native

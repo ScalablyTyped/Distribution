@@ -15,19 +15,15 @@ trait DeleteExpressionRequest extends StObject {
 }
 object DeleteExpressionRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, ExpressionName: StandardName): DeleteExpressionRequest = {
+  inline def apply(DomainName: DomainName, ExpressionName: StandardName): DeleteExpressionRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], ExpressionName = ExpressionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteExpressionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteExpressionRequestMutableBuilder[Self <: DeleteExpressionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteExpressionRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionName(value: StandardName): Self = StObject.set(x, "ExpressionName", value.asInstanceOf[js.Any])
+    inline def setExpressionName(value: StandardName): Self = StObject.set(x, "ExpressionName", value.asInstanceOf[js.Any])
   }
 }

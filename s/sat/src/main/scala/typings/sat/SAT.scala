@@ -18,26 +18,20 @@ object SAT {
   }
   object Box {
     
-    @scala.inline
-    def apply(h: Double, pos: Vector, toPolygon: () => Polygon, w: Double): Box = {
+    inline def apply(h: Double, pos: Vector, toPolygon: () => Polygon, w: Double): Box = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], toPolygon = js.Any.fromFunction0(toPolygon), w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[Box]
     }
     
-    @scala.inline
-    implicit class BoxMutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
+    extension [Self <: Box](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: Vector): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Vector): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToPolygon(value: () => Polygon): Self = StObject.set(x, "toPolygon", js.Any.fromFunction0(value))
+      inline def setToPolygon(value: () => Polygon): Self = StObject.set(x, "toPolygon", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +43,16 @@ object SAT {
   }
   object Circle {
     
-    @scala.inline
-    def apply(pos: Vector, r: Double): Circle = {
+    inline def apply(pos: Vector, r: Double): Circle = {
       val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[Circle]
     }
     
-    @scala.inline
-    implicit class CircleMutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
+    extension [Self <: Circle](x: Self) {
       
-      @scala.inline
-      def setPos(value: Vector): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Vector): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,8 +88,7 @@ object SAT {
   }
   object Polygon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       angle: Double,
       calcPoints: js.Array[Vector],
       edges: js.Array[Vector],
@@ -119,62 +108,43 @@ object SAT {
       __obj.asInstanceOf[Polygon]
     }
     
-    @scala.inline
-    implicit class PolygonMutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
+    extension [Self <: Polygon](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalcPoints(value: js.Array[Vector]): Self = StObject.set(x, "calcPoints", value.asInstanceOf[js.Any])
+      inline def setCalcPoints(value: js.Array[Vector]): Self = StObject.set(x, "calcPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalcPointsVarargs(value: Vector*): Self = StObject.set(x, "calcPoints", js.Array(value :_*))
+      inline def setCalcPointsVarargs(value: Vector*): Self = StObject.set(x, "calcPoints", js.Array(value :_*))
       
-      @scala.inline
-      def setEdges(value: js.Array[Vector]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[Vector]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesVarargs(value: Vector*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Vector*): Self = StObject.set(x, "edges", js.Array(value :_*))
       
-      @scala.inline
-      def setGetAABB(value: () => Polygon): Self = StObject.set(x, "getAABB", js.Any.fromFunction0(value))
+      inline def setGetAABB(value: () => Polygon): Self = StObject.set(x, "getAABB", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCentroid(value: () => Vector): Self = StObject.set(x, "getCentroid", js.Any.fromFunction0(value))
+      inline def setGetCentroid(value: () => Vector): Self = StObject.set(x, "getCentroid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNormals(value: js.Array[Vector]): Self = StObject.set(x, "normals", value.asInstanceOf[js.Any])
+      inline def setNormals(value: js.Array[Vector]): Self = StObject.set(x, "normals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalsVarargs(value: Vector*): Self = StObject.set(x, "normals", js.Array(value :_*))
+      inline def setNormalsVarargs(value: Vector*): Self = StObject.set(x, "normals", js.Array(value :_*))
       
-      @scala.inline
-      def setOffset(value: Vector): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Vector): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoints(value: js.Array[Vector]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[Vector]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsVarargs(value: Vector*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Vector*): Self = StObject.set(x, "points", js.Array(value :_*))
       
-      @scala.inline
-      def setPos(value: Vector): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Vector): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotate(value: Double => Polygon): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
+      inline def setRotate(value: Double => Polygon): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAngle(value: Double => Polygon): Self = StObject.set(x, "setAngle", js.Any.fromFunction1(value))
+      inline def setSetAngle(value: Double => Polygon): Self = StObject.set(x, "setAngle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOffset(value: Vector => Polygon): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
+      inline def setSetOffset(value: Vector => Polygon): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPoints(value: js.Array[Vector] => Polygon): Self = StObject.set(x, "setPoints", js.Any.fromFunction1(value))
+      inline def setSetPoints(value: js.Array[Vector] => Polygon): Self = StObject.set(x, "setPoints", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTranslate(value: (Double, Double) => Polygon): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
+      inline def setTranslate(value: (Double, Double) => Polygon): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
     }
   }
   
@@ -198,8 +168,7 @@ object SAT {
   }
   object Response {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       a: js.Any,
       aInB: Boolean,
       b: js.Any,
@@ -213,32 +182,23 @@ object SAT {
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAInB(value: Boolean): Self = StObject.set(x, "aInB", value.asInstanceOf[js.Any])
+      inline def setAInB(value: Boolean): Self = StObject.set(x, "aInB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBInA(value: Boolean): Self = StObject.set(x, "bInA", value.asInstanceOf[js.Any])
+      inline def setBInA(value: Boolean): Self = StObject.set(x, "bInA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClear(value: () => Response): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Response): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOverlap(value: Double): Self = StObject.set(x, "overlap", value.asInstanceOf[js.Any])
+      inline def setOverlap(value: Double): Self = StObject.set(x, "overlap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlapN(value: Vector): Self = StObject.set(x, "overlapN", value.asInstanceOf[js.Any])
+      inline def setOverlapN(value: Vector): Self = StObject.set(x, "overlapN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlapV(value: Vector): Self = StObject.set(x, "overlapV", value.asInstanceOf[js.Any])
+      inline def setOverlapV(value: Vector): Self = StObject.set(x, "overlapV", value.asInstanceOf[js.Any])
     }
   }
   

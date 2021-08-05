@@ -20,22 +20,17 @@ trait SchemaModifyColumnFamiliesRequest extends StObject {
 }
 object SchemaModifyColumnFamiliesRequest {
   
-  @scala.inline
-  def apply(): SchemaModifyColumnFamiliesRequest = {
+  inline def apply(): SchemaModifyColumnFamiliesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModifyColumnFamiliesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaModifyColumnFamiliesRequestMutableBuilder[Self <: SchemaModifyColumnFamiliesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModifyColumnFamiliesRequest](x: Self) {
     
-    @scala.inline
-    def setModifications(value: js.Array[SchemaModification]): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
+    inline def setModifications(value: js.Array[SchemaModification]): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
+    inline def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
     
-    @scala.inline
-    def setModificationsVarargs(value: SchemaModification*): Self = StObject.set(x, "modifications", js.Array(value :_*))
+    inline def setModificationsVarargs(value: SchemaModification*): Self = StObject.set(x, "modifications", js.Array(value :_*))
   }
 }

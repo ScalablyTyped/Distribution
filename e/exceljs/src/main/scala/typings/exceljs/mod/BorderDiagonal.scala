@@ -15,19 +15,15 @@ trait BorderDiagonal
 }
 object BorderDiagonal {
   
-  @scala.inline
-  def apply(color: PartialColor, down: Boolean, style: BorderStyle, up: Boolean): BorderDiagonal = {
+  inline def apply(color: PartialColor, down: Boolean, style: BorderStyle, up: Boolean): BorderDiagonal = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderDiagonal]
   }
   
-  @scala.inline
-  implicit class BorderDiagonalMutableBuilder[Self <: BorderDiagonal] (val x: Self) extends AnyVal {
+  extension [Self <: BorderDiagonal](x: Self) {
     
-    @scala.inline
-    def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+    inline def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    inline def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
   }
 }

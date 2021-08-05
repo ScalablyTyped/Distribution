@@ -15,31 +15,23 @@ trait TextFieldStyle extends StObject {
 }
 object TextFieldStyle {
   
-  @scala.inline
-  def apply(): TextFieldStyle = {
+  inline def apply(): TextFieldStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextFieldStyle]
   }
   
-  @scala.inline
-  implicit class TextFieldStyleMutableBuilder[Self <: TextFieldStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TextFieldStyle](x: Self) {
     
-    @scala.inline
-    def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+    inline def setHighlightColor(value: String): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
+    inline def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
     
-    @scala.inline
-    def setTextInputStyle(value: Color): Self = StObject.set(x, "textInputStyle", value.asInstanceOf[js.Any])
+    inline def setTextInputStyle(value: Color): Self = StObject.set(x, "textInputStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextInputStyleUndefined: Self = StObject.set(x, "textInputStyle", js.undefined)
+    inline def setTextInputStyleUndefined: Self = StObject.set(x, "textInputStyle", js.undefined)
     
-    @scala.inline
-    def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+    inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+    inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
   }
 }

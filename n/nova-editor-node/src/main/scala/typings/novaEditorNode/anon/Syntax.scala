@@ -10,16 +10,13 @@ trait Syntax extends StObject {
 }
 object Syntax {
   
-  @scala.inline
-  def apply(syntax: String): Syntax = {
+  inline def apply(syntax: String): Syntax = {
     val __obj = js.Dynamic.literal(syntax = syntax.asInstanceOf[js.Any])
     __obj.asInstanceOf[Syntax]
   }
   
-  @scala.inline
-  implicit class SyntaxMutableBuilder[Self <: Syntax] (val x: Self) extends AnyVal {
+  extension [Self <: Syntax](x: Self) {
     
-    @scala.inline
-    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait CacheSecurityGroupMembership extends StObject {
 }
 object CacheSecurityGroupMembership {
   
-  @scala.inline
-  def apply(): CacheSecurityGroupMembership = {
+  inline def apply(): CacheSecurityGroupMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheSecurityGroupMembership]
   }
   
-  @scala.inline
-  implicit class CacheSecurityGroupMembershipMutableBuilder[Self <: CacheSecurityGroupMembership] (val x: Self) extends AnyVal {
+  extension [Self <: CacheSecurityGroupMembership](x: Self) {
     
-    @scala.inline
-    def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheSecurityGroupName(value: String): Self = StObject.set(x, "CacheSecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSecurityGroupNameUndefined: Self = StObject.set(x, "CacheSecurityGroupName", js.undefined)
+    inline def setCacheSecurityGroupNameUndefined: Self = StObject.set(x, "CacheSecurityGroupName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

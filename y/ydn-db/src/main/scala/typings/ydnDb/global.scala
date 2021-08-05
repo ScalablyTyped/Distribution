@@ -109,8 +109,7 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        @scala.inline
-        def where(store_name: String, index_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], index_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        inline def where(store_name: String, index_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], index_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       }
       
       @JSGlobal("ydn.db.IndexValueIterator")
@@ -130,8 +129,7 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        @scala.inline
-        def where(store_name: String, index_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], index_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        inline def where(store_name: String, index_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], index_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       }
       
       @JSGlobal("ydn.db.Iterator")
@@ -168,8 +166,7 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        @scala.inline
-        def where(store_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        inline def where(store_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       }
       
       @JSGlobal("ydn.db.Op")
@@ -296,17 +293,13 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        @scala.inline
-        def where(store_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+        inline def where(store_name: String, op: Op, value: js.Any, op2: Op, value2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(store_name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], value.asInstanceOf[js.Any], op2.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       }
       
-      @scala.inline
-      def cmp(first: js.Any, second: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def cmp(first: js.Any, second: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @scala.inline
-      def deleteDatabase(db_name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(db_name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      @scala.inline
-      def deleteDatabase(db_name: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(db_name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def deleteDatabase(db_name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(db_name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def deleteDatabase(db_name: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")(db_name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object events {
         

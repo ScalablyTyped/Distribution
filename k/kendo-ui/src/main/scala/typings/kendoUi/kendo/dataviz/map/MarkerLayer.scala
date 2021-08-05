@@ -24,8 +24,7 @@ trait MarkerLayer
 }
 object MarkerLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: Marker => Unit,
     clear: () => Unit,
     hide: () => Unit,
@@ -40,25 +39,18 @@ object MarkerLayer {
     __obj.asInstanceOf[MarkerLayer]
   }
   
-  @scala.inline
-  implicit class MarkerLayerMutableBuilder[Self <: MarkerLayer] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerLayer](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Marker => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Marker => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: MarkerLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MarkerLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: Marker => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Marker => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDataSource(value: js.Any => Unit): Self = StObject.set(x, "setDataSource", js.Any.fromFunction1(value))
+    inline def setSetDataSource(value: js.Any => Unit): Self = StObject.set(x, "setDataSource", js.Any.fromFunction1(value))
   }
 }

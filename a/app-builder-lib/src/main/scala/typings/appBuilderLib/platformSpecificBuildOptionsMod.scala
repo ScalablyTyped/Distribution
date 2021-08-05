@@ -29,29 +29,22 @@ object platformSpecificBuildOptionsMod {
   }
   object AsarOptions {
     
-    @scala.inline
-    def apply(): AsarOptions = {
+    inline def apply(): AsarOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsarOptions]
     }
     
-    @scala.inline
-    implicit class AsarOptionsMutableBuilder[Self <: AsarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AsarOptions](x: Self) {
       
-      @scala.inline
-      def setOrdering(value: String): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
+      inline def setOrdering(value: String): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderingNull: Self = StObject.set(x, "ordering", null)
+      inline def setOrderingNull: Self = StObject.set(x, "ordering", null)
       
-      @scala.inline
-      def setOrderingUndefined: Self = StObject.set(x, "ordering", js.undefined)
+      inline def setOrderingUndefined: Self = StObject.set(x, "ordering", js.undefined)
       
-      @scala.inline
-      def setSmartUnpack(value: Boolean): Self = StObject.set(x, "smartUnpack", value.asInstanceOf[js.Any])
+      inline def setSmartUnpack(value: Boolean): Self = StObject.set(x, "smartUnpack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartUnpackUndefined: Self = StObject.set(x, "smartUnpack", js.undefined)
+      inline def setSmartUnpackUndefined: Self = StObject.set(x, "smartUnpack", js.undefined)
     }
   }
   
@@ -74,35 +67,26 @@ object platformSpecificBuildOptionsMod {
   }
   object FileSet {
     
-    @scala.inline
-    def apply(): FileSet = {
+    inline def apply(): FileSet = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileSet]
     }
     
-    @scala.inline
-    implicit class FileSetMutableBuilder[Self <: FileSet] (val x: Self) extends AnyVal {
+    extension [Self <: FileSet](x: Self) {
       
-      @scala.inline
-      def setFilter(value: js.Array[String] | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.Array[String] | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -196,179 +180,122 @@ object platformSpecificBuildOptionsMod {
   }
   object PlatformSpecificBuildOptions {
     
-    @scala.inline
-    def apply(): PlatformSpecificBuildOptions = {
+    inline def apply(): PlatformSpecificBuildOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PlatformSpecificBuildOptions]
     }
     
-    @scala.inline
-    implicit class PlatformSpecificBuildOptionsMutableBuilder[Self <: PlatformSpecificBuildOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PlatformSpecificBuildOptions](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIdNull: Self = StObject.set(x, "appId", null)
+      inline def setAppIdNull: Self = StObject.set(x, "appId", null)
       
-      @scala.inline
-      def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+      inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
       
-      @scala.inline
-      def setAsar(value: AsarOptions | Boolean): Self = StObject.set(x, "asar", value.asInstanceOf[js.Any])
+      inline def setAsar(value: AsarOptions | Boolean): Self = StObject.set(x, "asar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsarNull: Self = StObject.set(x, "asar", null)
+      inline def setAsarNull: Self = StObject.set(x, "asar", null)
       
-      @scala.inline
-      def setAsarUndefined: Self = StObject.set(x, "asar", js.undefined)
+      inline def setAsarUndefined: Self = StObject.set(x, "asar", js.undefined)
       
-      @scala.inline
-      def setAsarUnpack(value: js.Array[String] | String): Self = StObject.set(x, "asarUnpack", value.asInstanceOf[js.Any])
+      inline def setAsarUnpack(value: js.Array[String] | String): Self = StObject.set(x, "asarUnpack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsarUnpackNull: Self = StObject.set(x, "asarUnpack", null)
+      inline def setAsarUnpackNull: Self = StObject.set(x, "asarUnpack", null)
       
-      @scala.inline
-      def setAsarUnpackUndefined: Self = StObject.set(x, "asarUnpack", js.undefined)
+      inline def setAsarUnpackUndefined: Self = StObject.set(x, "asarUnpack", js.undefined)
       
-      @scala.inline
-      def setAsarUnpackVarargs(value: String*): Self = StObject.set(x, "asarUnpack", js.Array(value :_*))
+      inline def setAsarUnpackVarargs(value: String*): Self = StObject.set(x, "asarUnpack", js.Array(value :_*))
       
-      @scala.inline
-      def setCompression(value: CompressionLevel): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: CompressionLevel): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionNull: Self = StObject.set(x, "compression", null)
+      inline def setCompressionNull: Self = StObject.set(x, "compression", null)
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setCscKeyPassword(value: String): Self = StObject.set(x, "cscKeyPassword", value.asInstanceOf[js.Any])
+      inline def setCscKeyPassword(value: String): Self = StObject.set(x, "cscKeyPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCscKeyPasswordNull: Self = StObject.set(x, "cscKeyPassword", null)
+      inline def setCscKeyPasswordNull: Self = StObject.set(x, "cscKeyPassword", null)
       
-      @scala.inline
-      def setCscKeyPasswordUndefined: Self = StObject.set(x, "cscKeyPassword", js.undefined)
+      inline def setCscKeyPasswordUndefined: Self = StObject.set(x, "cscKeyPassword", js.undefined)
       
-      @scala.inline
-      def setCscLink(value: String): Self = StObject.set(x, "cscLink", value.asInstanceOf[js.Any])
+      inline def setCscLink(value: String): Self = StObject.set(x, "cscLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCscLinkNull: Self = StObject.set(x, "cscLink", null)
+      inline def setCscLinkNull: Self = StObject.set(x, "cscLink", null)
       
-      @scala.inline
-      def setCscLinkUndefined: Self = StObject.set(x, "cscLink", js.undefined)
+      inline def setCscLinkUndefined: Self = StObject.set(x, "cscLink", js.undefined)
       
-      @scala.inline
-      def setDetectUpdateChannel(value: Boolean): Self = StObject.set(x, "detectUpdateChannel", value.asInstanceOf[js.Any])
+      inline def setDetectUpdateChannel(value: Boolean): Self = StObject.set(x, "detectUpdateChannel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectUpdateChannelUndefined: Self = StObject.set(x, "detectUpdateChannel", js.undefined)
+      inline def setDetectUpdateChannelUndefined: Self = StObject.set(x, "detectUpdateChannel", js.undefined)
       
-      @scala.inline
-      def setElectronUpdaterCompatibility(value: String): Self = StObject.set(x, "electronUpdaterCompatibility", value.asInstanceOf[js.Any])
+      inline def setElectronUpdaterCompatibility(value: String): Self = StObject.set(x, "electronUpdaterCompatibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectronUpdaterCompatibilityNull: Self = StObject.set(x, "electronUpdaterCompatibility", null)
+      inline def setElectronUpdaterCompatibilityNull: Self = StObject.set(x, "electronUpdaterCompatibility", null)
       
-      @scala.inline
-      def setElectronUpdaterCompatibilityUndefined: Self = StObject.set(x, "electronUpdaterCompatibility", js.undefined)
+      inline def setElectronUpdaterCompatibilityUndefined: Self = StObject.set(x, "electronUpdaterCompatibility", js.undefined)
       
-      @scala.inline
-      def setExtraFiles(value: (js.Array[FileSet | String]) | FileSet | String): Self = StObject.set(x, "extraFiles", value.asInstanceOf[js.Any])
+      inline def setExtraFiles(value: (js.Array[FileSet | String]) | FileSet | String): Self = StObject.set(x, "extraFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraFilesNull: Self = StObject.set(x, "extraFiles", null)
+      inline def setExtraFilesNull: Self = StObject.set(x, "extraFiles", null)
       
-      @scala.inline
-      def setExtraFilesUndefined: Self = StObject.set(x, "extraFiles", js.undefined)
+      inline def setExtraFilesUndefined: Self = StObject.set(x, "extraFiles", js.undefined)
       
-      @scala.inline
-      def setExtraFilesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "extraFiles", js.Array(value :_*))
+      inline def setExtraFilesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "extraFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setExtraResources(value: (js.Array[FileSet | String]) | FileSet | String): Self = StObject.set(x, "extraResources", value.asInstanceOf[js.Any])
+      inline def setExtraResources(value: (js.Array[FileSet | String]) | FileSet | String): Self = StObject.set(x, "extraResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraResourcesNull: Self = StObject.set(x, "extraResources", null)
+      inline def setExtraResourcesNull: Self = StObject.set(x, "extraResources", null)
       
-      @scala.inline
-      def setExtraResourcesUndefined: Self = StObject.set(x, "extraResources", js.undefined)
+      inline def setExtraResourcesUndefined: Self = StObject.set(x, "extraResources", js.undefined)
       
-      @scala.inline
-      def setExtraResourcesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "extraResources", js.Array(value :_*))
+      inline def setExtraResourcesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "extraResources", js.Array(value :_*))
       
-      @scala.inline
-      def setFileAssociations(value: js.Array[FileAssociation] | FileAssociation): Self = StObject.set(x, "fileAssociations", value.asInstanceOf[js.Any])
+      inline def setFileAssociations(value: js.Array[FileAssociation] | FileAssociation): Self = StObject.set(x, "fileAssociations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileAssociationsUndefined: Self = StObject.set(x, "fileAssociations", js.undefined)
+      inline def setFileAssociationsUndefined: Self = StObject.set(x, "fileAssociations", js.undefined)
       
-      @scala.inline
-      def setFileAssociationsVarargs(value: FileAssociation*): Self = StObject.set(x, "fileAssociations", js.Array(value :_*))
+      inline def setFileAssociationsVarargs(value: FileAssociation*): Self = StObject.set(x, "fileAssociations", js.Array(value :_*))
       
-      @scala.inline
-      def setFiles(value: (js.Array[FileSet | String]) | FileSet | String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: (js.Array[FileSet | String]) | FileSet | String): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesNull: Self = StObject.set(x, "files", null)
+      inline def setFilesNull: Self = StObject.set(x, "files", null)
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: (FileSet | String)*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setForceCodeSigning(value: Boolean): Self = StObject.set(x, "forceCodeSigning", value.asInstanceOf[js.Any])
+      inline def setForceCodeSigning(value: Boolean): Self = StObject.set(x, "forceCodeSigning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceCodeSigningUndefined: Self = StObject.set(x, "forceCodeSigning", js.undefined)
+      inline def setForceCodeSigningUndefined: Self = StObject.set(x, "forceCodeSigning", js.undefined)
       
-      @scala.inline
-      def setGenerateUpdatesFilesForAllChannels(value: Boolean): Self = StObject.set(x, "generateUpdatesFilesForAllChannels", value.asInstanceOf[js.Any])
+      inline def setGenerateUpdatesFilesForAllChannels(value: Boolean): Self = StObject.set(x, "generateUpdatesFilesForAllChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateUpdatesFilesForAllChannelsUndefined: Self = StObject.set(x, "generateUpdatesFilesForAllChannels", js.undefined)
+      inline def setGenerateUpdatesFilesForAllChannelsUndefined: Self = StObject.set(x, "generateUpdatesFilesForAllChannels", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setProtocols(value: js.Array[Protocol] | Protocol): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Array[Protocol] | Protocol): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+      inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      @scala.inline
-      def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
       
-      @scala.inline
-      def setReleaseInfo(value: ReleaseInfo): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
+      inline def setReleaseInfo(value: ReleaseInfo): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseInfoUndefined: Self = StObject.set(x, "releaseInfo", js.undefined)
+      inline def setReleaseInfoUndefined: Self = StObject.set(x, "releaseInfo", js.undefined)
       
-      @scala.inline
-      def setTarget(value: (js.Array[String | TargetConfiguration]) | String | TargetConfiguration): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: (js.Array[String | TargetConfiguration]) | String | TargetConfiguration): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTargetVarargs(value: (String | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: (String | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value :_*))
     }
   }
   
@@ -392,29 +319,22 @@ object platformSpecificBuildOptionsMod {
   }
   object Protocol {
     
-    @scala.inline
-    def apply(name: String, schemes: js.Array[String]): Protocol = {
+    inline def apply(name: String, schemes: js.Array[String]): Protocol = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], schemes = schemes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Protocol]
     }
     
-    @scala.inline
-    implicit class ProtocolMutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
+    extension [Self <: Protocol](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: Editor | Viewer | Shell | None): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Editor | Viewer | Shell | None): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
+      inline def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
     }
   }
   
@@ -442,47 +362,34 @@ object platformSpecificBuildOptionsMod {
   }
   object ReleaseInfo {
     
-    @scala.inline
-    def apply(): ReleaseInfo = {
+    inline def apply(): ReleaseInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReleaseInfo]
     }
     
-    @scala.inline
-    implicit class ReleaseInfoMutableBuilder[Self <: ReleaseInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ReleaseInfo](x: Self) {
       
-      @scala.inline
-      def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
+      inline def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseDateUndefined: Self = StObject.set(x, "releaseDate", js.undefined)
+      inline def setReleaseDateUndefined: Self = StObject.set(x, "releaseDate", js.undefined)
       
-      @scala.inline
-      def setReleaseName(value: String): Self = StObject.set(x, "releaseName", value.asInstanceOf[js.Any])
+      inline def setReleaseName(value: String): Self = StObject.set(x, "releaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseNameNull: Self = StObject.set(x, "releaseName", null)
+      inline def setReleaseNameNull: Self = StObject.set(x, "releaseName", null)
       
-      @scala.inline
-      def setReleaseNameUndefined: Self = StObject.set(x, "releaseName", js.undefined)
+      inline def setReleaseNameUndefined: Self = StObject.set(x, "releaseName", js.undefined)
       
-      @scala.inline
-      def setReleaseNotes(value: String): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
+      inline def setReleaseNotes(value: String): Self = StObject.set(x, "releaseNotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseNotesFile(value: String): Self = StObject.set(x, "releaseNotesFile", value.asInstanceOf[js.Any])
+      inline def setReleaseNotesFile(value: String): Self = StObject.set(x, "releaseNotesFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseNotesFileNull: Self = StObject.set(x, "releaseNotesFile", null)
+      inline def setReleaseNotesFileNull: Self = StObject.set(x, "releaseNotesFile", null)
       
-      @scala.inline
-      def setReleaseNotesFileUndefined: Self = StObject.set(x, "releaseNotesFile", js.undefined)
+      inline def setReleaseNotesFileUndefined: Self = StObject.set(x, "releaseNotesFile", js.undefined)
       
-      @scala.inline
-      def setReleaseNotesNull: Self = StObject.set(x, "releaseNotes", null)
+      inline def setReleaseNotesNull: Self = StObject.set(x, "releaseNotes", null)
       
-      @scala.inline
-      def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
+      inline def setReleaseNotesUndefined: Self = StObject.set(x, "releaseNotes", js.undefined)
     }
   }
 }

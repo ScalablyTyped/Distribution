@@ -18,8 +18,7 @@ trait CustomGallery extends StObject {
 }
 object CustomGallery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     account_url: String,
     item_count: Double,
     items: js.Array[GalleryItem],
@@ -30,28 +29,20 @@ object CustomGallery {
     __obj.asInstanceOf[CustomGallery]
   }
   
-  @scala.inline
-  implicit class CustomGalleryMutableBuilder[Self <: CustomGallery] (val x: Self) extends AnyVal {
+  extension [Self <: CustomGallery](x: Self) {
     
-    @scala.inline
-    def setAccount_url(value: String): Self = StObject.set(x, "account_url", value.asInstanceOf[js.Any])
+    inline def setAccount_url(value: String): Self = StObject.set(x, "account_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_count(value: Double): Self = StObject.set(x, "item_count", value.asInstanceOf[js.Any])
+    inline def setItem_count(value: Double): Self = StObject.set(x, "item_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[GalleryItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[GalleryItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: GalleryItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GalleryItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

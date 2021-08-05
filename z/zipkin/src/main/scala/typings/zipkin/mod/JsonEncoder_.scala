@@ -12,16 +12,13 @@ trait JsonEncoder_ extends StObject {
 }
 object JsonEncoder_ {
   
-  @scala.inline
-  def apply(encode: Span => String): JsonEncoder_ = {
+  inline def apply(encode: Span => String): JsonEncoder_ = {
     val __obj = js.Dynamic.literal(encode = js.Any.fromFunction1(encode))
     __obj.asInstanceOf[JsonEncoder_]
   }
   
-  @scala.inline
-  implicit class JsonEncoder_MutableBuilder[Self <: JsonEncoder_] (val x: Self) extends AnyVal {
+  extension [Self <: JsonEncoder_](x: Self) {
     
-    @scala.inline
-    def setEncode(value: Span => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: Span => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
   }
 }

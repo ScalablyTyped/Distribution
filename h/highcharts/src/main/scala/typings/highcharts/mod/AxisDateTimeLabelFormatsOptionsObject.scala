@@ -12,25 +12,19 @@ trait AxisDateTimeLabelFormatsOptionsObject extends StObject {
 }
 object AxisDateTimeLabelFormatsOptionsObject {
   
-  @scala.inline
-  def apply(): AxisDateTimeLabelFormatsOptionsObject = {
+  inline def apply(): AxisDateTimeLabelFormatsOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisDateTimeLabelFormatsOptionsObject]
   }
   
-  @scala.inline
-  implicit class AxisDateTimeLabelFormatsOptionsObjectMutableBuilder[Self <: AxisDateTimeLabelFormatsOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: AxisDateTimeLabelFormatsOptionsObject](x: Self) {
     
-    @scala.inline
-    def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+    inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+    inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
     
-    @scala.inline
-    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

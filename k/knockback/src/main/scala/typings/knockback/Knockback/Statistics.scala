@@ -22,8 +22,7 @@ trait Statistics extends StObject {
 }
 object Statistics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addModelEvent: String => js.Any,
     clear: () => js.Any,
     modelEventsStatsString: () => js.Any,
@@ -36,28 +35,20 @@ object Statistics {
     __obj.asInstanceOf[Statistics]
   }
   
-  @scala.inline
-  implicit class StatisticsMutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
+  extension [Self <: Statistics](x: Self) {
     
-    @scala.inline
-    def setAddModelEvent(value: String => js.Any): Self = StObject.set(x, "addModelEvent", js.Any.fromFunction1(value))
+    inline def setAddModelEvent(value: String => js.Any): Self = StObject.set(x, "addModelEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModelEventsStatsString(value: () => js.Any): Self = StObject.set(x, "modelEventsStatsString", js.Any.fromFunction0(value))
+    inline def setModelEventsStatsString(value: () => js.Any): Self = StObject.set(x, "modelEventsStatsString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegister(value: (String, js.Any) => js.Any): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+    inline def setRegister(value: (String, js.Any) => js.Any): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisteredCount(value: js.Any => Double): Self = StObject.set(x, "registeredCount", js.Any.fromFunction1(value))
+    inline def setRegisteredCount(value: js.Any => Double): Self = StObject.set(x, "registeredCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisteredStatsString(value: String => String): Self = StObject.set(x, "registeredStatsString", js.Any.fromFunction1(value))
+    inline def setRegisteredStatsString(value: String => String): Self = StObject.set(x, "registeredStatsString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnregister(value: (String, js.Any) => js.Any): Self = StObject.set(x, "unregister", js.Any.fromFunction2(value))
+    inline def setUnregister(value: (String, js.Any) => js.Any): Self = StObject.set(x, "unregister", js.Any.fromFunction2(value))
   }
 }

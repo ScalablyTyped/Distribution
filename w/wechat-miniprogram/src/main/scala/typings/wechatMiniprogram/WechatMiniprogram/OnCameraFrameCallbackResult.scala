@@ -18,22 +18,17 @@ trait OnCameraFrameCallbackResult extends StObject {
 }
 object OnCameraFrameCallbackResult {
   
-  @scala.inline
-  def apply(data: ArrayBuffer, height: Double, width: Double): OnCameraFrameCallbackResult = {
+  inline def apply(data: ArrayBuffer, height: Double, width: Double): OnCameraFrameCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCameraFrameCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnCameraFrameCallbackResultMutableBuilder[Self <: OnCameraFrameCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnCameraFrameCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

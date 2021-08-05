@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalAccessStatus extends StObject
 object ConditionalAccessStatus {
   
-  @scala.inline
-  def failure: typings.microsoftGraph.microsoftGraphStrings.failure = "failure".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.failure]
+  inline def failure: typings.microsoftGraph.microsoftGraphStrings.failure = "failure".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.failure]
   
-  @scala.inline
-  def notApplied: typings.microsoftGraph.microsoftGraphStrings.notApplied = "notApplied".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notApplied]
+  inline def notApplied: typings.microsoftGraph.microsoftGraphStrings.notApplied = "notApplied".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notApplied]
   
-  @scala.inline
-  def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
+  inline def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

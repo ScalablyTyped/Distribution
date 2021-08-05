@@ -20,49 +20,35 @@ trait Family extends StObject {
 }
 object Family {
   
-  @scala.inline
-  def apply(): Family = {
+  inline def apply(): Family = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Family]
   }
   
-  @scala.inline
-  implicit class FamilyMutableBuilder[Self <: Family] (val x: Self) extends AnyVal {
+  extension [Self <: Family](x: Self) {
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setFirmwareVersion(value: String): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
+    inline def setFirmwareVersion(value: String): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirmwareVersionUndefined: Self = StObject.set(x, "firmwareVersion", js.undefined)
+    inline def setFirmwareVersionUndefined: Self = StObject.set(x, "firmwareVersion", js.undefined)
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
-    @scala.inline
-    def setSpecLevel(value: String): Self = StObject.set(x, "specLevel", value.asInstanceOf[js.Any])
+    inline def setSpecLevel(value: String): Self = StObject.set(x, "specLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecLevelUndefined: Self = StObject.set(x, "specLevel", js.undefined)
+    inline def setSpecLevelUndefined: Self = StObject.set(x, "specLevel", js.undefined)
     
-    @scala.inline
-    def setTpmModel(value: String): Self = StObject.set(x, "tpmModel", value.asInstanceOf[js.Any])
+    inline def setTpmModel(value: String): Self = StObject.set(x, "tpmModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpmModelUndefined: Self = StObject.set(x, "tpmModel", js.undefined)
+    inline def setTpmModelUndefined: Self = StObject.set(x, "tpmModel", js.undefined)
     
-    @scala.inline
-    def setVendorSpecific(value: String): Self = StObject.set(x, "vendorSpecific", value.asInstanceOf[js.Any])
+    inline def setVendorSpecific(value: String): Self = StObject.set(x, "vendorSpecific", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorSpecificUndefined: Self = StObject.set(x, "vendorSpecific", js.undefined)
+    inline def setVendorSpecificUndefined: Self = StObject.set(x, "vendorSpecific", js.undefined)
   }
 }

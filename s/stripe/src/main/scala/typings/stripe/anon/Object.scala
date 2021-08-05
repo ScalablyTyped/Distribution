@@ -18,17 +18,14 @@ trait Object extends StObject {
 }
 object Object {
   
-  @scala.inline
-  def apply(`object`: all | alipay_account | bitcoin_receiver | card): Object = {
+  inline def apply(`object`: all | alipay_account | bitcoin_receiver | card): Object = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Object]
   }
   
-  @scala.inline
-  implicit class ObjectMutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
+  extension [Self <: Object](x: Self) {
     
-    @scala.inline
-    def setObject(value: all | alipay_account | bitcoin_receiver | card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: all | alipay_account | bitcoin_receiver | card): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

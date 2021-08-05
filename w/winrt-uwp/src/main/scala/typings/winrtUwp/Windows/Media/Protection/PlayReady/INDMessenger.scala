@@ -56,8 +56,7 @@ trait INDMessenger extends StObject {
 }
 object INDMessenger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     sendLicenseFetchRequestAsync: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult],
     sendProximityDetectionResponseAsync: (NDProximityDetectionType, js.Array[Double], js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult],
     sendProximityDetectionStartAsync: (NDProximityDetectionType, js.Array[Double], js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult],
@@ -67,23 +66,18 @@ object INDMessenger {
     __obj.asInstanceOf[INDMessenger]
   }
   
-  @scala.inline
-  implicit class INDMessengerMutableBuilder[Self <: INDMessenger] (val x: Self) extends AnyVal {
+  extension [Self <: INDMessenger](x: Self) {
     
-    @scala.inline
-    def setSendLicenseFetchRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = StObject.set(x, "sendLicenseFetchRequestAsync", js.Any.fromFunction2(value))
+    inline def setSendLicenseFetchRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = StObject.set(x, "sendLicenseFetchRequestAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSendProximityDetectionResponseAsync(
+    inline def setSendProximityDetectionResponseAsync(
       value: (NDProximityDetectionType, js.Array[Double], js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]
     ): Self = StObject.set(x, "sendProximityDetectionResponseAsync", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSendProximityDetectionStartAsync(
+    inline def setSendProximityDetectionStartAsync(
       value: (NDProximityDetectionType, js.Array[Double], js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]
     ): Self = StObject.set(x, "sendProximityDetectionStartAsync", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSendRegistrationRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = StObject.set(x, "sendRegistrationRequestAsync", js.Any.fromFunction2(value))
+    inline def setSendRegistrationRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = StObject.set(x, "sendRegistrationRequestAsync", js.Any.fromFunction2(value))
   }
 }

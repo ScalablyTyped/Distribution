@@ -31,47 +31,34 @@ object anon {
   }
   object DamerauLevenshteinDistanc {
     
-    @scala.inline
-    def apply(search: js.UndefOr[Boolean] & `true`): DamerauLevenshteinDistanc = {
+    inline def apply(search: js.UndefOr[Boolean] & `true`): DamerauLevenshteinDistanc = {
       val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[DamerauLevenshteinDistanc]
     }
     
-    @scala.inline
-    implicit class DamerauLevenshteinDistancMutableBuilder[Self <: DamerauLevenshteinDistanc] (val x: Self) extends AnyVal {
+    extension [Self <: DamerauLevenshteinDistanc](x: Self) {
       
-      @scala.inline
-      def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
+      inline def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletion_costUndefined: Self = StObject.set(x, "deletion_cost", js.undefined)
+      inline def setDeletion_costUndefined: Self = StObject.set(x, "deletion_cost", js.undefined)
       
-      @scala.inline
-      def setInsertion_cost(value: Double): Self = StObject.set(x, "insertion_cost", value.asInstanceOf[js.Any])
+      inline def setInsertion_cost(value: Double): Self = StObject.set(x, "insertion_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertion_costUndefined: Self = StObject.set(x, "insertion_cost", js.undefined)
+      inline def setInsertion_costUndefined: Self = StObject.set(x, "insertion_cost", js.undefined)
       
-      @scala.inline
-      def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
+      inline def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
+      inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
       
-      @scala.inline
-      def setSearch(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
+      inline def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitution_costUndefined: Self = StObject.set(x, "substitution_cost", js.undefined)
+      inline def setSubstitution_costUndefined: Self = StObject.set(x, "substitution_cost", js.undefined)
       
-      @scala.inline
-      def setTransposition_cost(value: Double): Self = StObject.set(x, "transposition_cost", value.asInstanceOf[js.Any])
+      inline def setTransposition_cost(value: Double): Self = StObject.set(x, "transposition_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransposition_costUndefined: Self = StObject.set(x, "transposition_cost", js.undefined)
+      inline def setTransposition_costUndefined: Self = StObject.set(x, "transposition_cost", js.undefined)
     }
   }
   
@@ -98,47 +85,34 @@ object anon {
   }
   object DamerauLevenshteinDistancDeletioncost {
     
-    @scala.inline
-    def apply(search: js.UndefOr[Boolean] & js.UndefOr[`false`]): DamerauLevenshteinDistancDeletioncost = {
+    inline def apply(search: js.UndefOr[Boolean] & js.UndefOr[`false`]): DamerauLevenshteinDistancDeletioncost = {
       val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[DamerauLevenshteinDistancDeletioncost]
     }
     
-    @scala.inline
-    implicit class DamerauLevenshteinDistancDeletioncostMutableBuilder[Self <: DamerauLevenshteinDistancDeletioncost] (val x: Self) extends AnyVal {
+    extension [Self <: DamerauLevenshteinDistancDeletioncost](x: Self) {
       
-      @scala.inline
-      def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
+      inline def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletion_costUndefined: Self = StObject.set(x, "deletion_cost", js.undefined)
+      inline def setDeletion_costUndefined: Self = StObject.set(x, "deletion_cost", js.undefined)
       
-      @scala.inline
-      def setInsertion_cost(value: Double): Self = StObject.set(x, "insertion_cost", value.asInstanceOf[js.Any])
+      inline def setInsertion_cost(value: Double): Self = StObject.set(x, "insertion_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertion_costUndefined: Self = StObject.set(x, "insertion_cost", js.undefined)
+      inline def setInsertion_costUndefined: Self = StObject.set(x, "insertion_cost", js.undefined)
       
-      @scala.inline
-      def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
+      inline def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
+      inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
       
-      @scala.inline
-      def setSearch(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
+      inline def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitution_costUndefined: Self = StObject.set(x, "substitution_cost", js.undefined)
+      inline def setSubstitution_costUndefined: Self = StObject.set(x, "substitution_cost", js.undefined)
       
-      @scala.inline
-      def setTransposition_cost(value: Double): Self = StObject.set(x, "transposition_cost", value.asInstanceOf[js.Any])
+      inline def setTransposition_cost(value: Double): Self = StObject.set(x, "transposition_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransposition_costUndefined: Self = StObject.set(x, "transposition_cost", js.undefined)
+      inline def setTransposition_costUndefined: Self = StObject.set(x, "transposition_cost", js.undefined)
     }
   }
   
@@ -165,47 +139,34 @@ object anon {
   }
   object DamerauLevenshteinDistancInsertioncost {
     
-    @scala.inline
-    def apply(search: js.UndefOr[Boolean] & Boolean): DamerauLevenshteinDistancInsertioncost = {
+    inline def apply(search: js.UndefOr[Boolean] & Boolean): DamerauLevenshteinDistancInsertioncost = {
       val __obj = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[DamerauLevenshteinDistancInsertioncost]
     }
     
-    @scala.inline
-    implicit class DamerauLevenshteinDistancInsertioncostMutableBuilder[Self <: DamerauLevenshteinDistancInsertioncost] (val x: Self) extends AnyVal {
+    extension [Self <: DamerauLevenshteinDistancInsertioncost](x: Self) {
       
-      @scala.inline
-      def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
+      inline def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletion_costUndefined: Self = StObject.set(x, "deletion_cost", js.undefined)
+      inline def setDeletion_costUndefined: Self = StObject.set(x, "deletion_cost", js.undefined)
       
-      @scala.inline
-      def setInsertion_cost(value: Double): Self = StObject.set(x, "insertion_cost", value.asInstanceOf[js.Any])
+      inline def setInsertion_cost(value: Double): Self = StObject.set(x, "insertion_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertion_costUndefined: Self = StObject.set(x, "insertion_cost", js.undefined)
+      inline def setInsertion_costUndefined: Self = StObject.set(x, "insertion_cost", js.undefined)
       
-      @scala.inline
-      def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
+      inline def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
+      inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
       
-      @scala.inline
-      def setSearch(value: js.UndefOr[Boolean] & Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: js.UndefOr[Boolean] & Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
+      inline def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubstitution_costUndefined: Self = StObject.set(x, "substitution_cost", js.undefined)
+      inline def setSubstitution_costUndefined: Self = StObject.set(x, "substitution_cost", js.undefined)
       
-      @scala.inline
-      def setTransposition_cost(value: Double): Self = StObject.set(x, "transposition_cost", value.asInstanceOf[js.Any])
+      inline def setTransposition_cost(value: Double): Self = StObject.set(x, "transposition_cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransposition_costUndefined: Self = StObject.set(x, "transposition_cost", js.undefined)
+      inline def setTransposition_costUndefined: Self = StObject.set(x, "transposition_cost", js.undefined)
     }
   }
 }

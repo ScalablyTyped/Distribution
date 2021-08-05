@@ -16,8 +16,7 @@ trait OSPermissionState extends StObject {
 }
 object OSPermissionState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasPrompted: Boolean,
     provisional: Boolean,
     state: OSNotificationPermissionState,
@@ -27,19 +26,14 @@ object OSPermissionState {
     __obj.asInstanceOf[OSPermissionState]
   }
   
-  @scala.inline
-  implicit class OSPermissionStateMutableBuilder[Self <: OSPermissionState] (val x: Self) extends AnyVal {
+  extension [Self <: OSPermissionState](x: Self) {
     
-    @scala.inline
-    def setHasPrompted(value: Boolean): Self = StObject.set(x, "hasPrompted", value.asInstanceOf[js.Any])
+    inline def setHasPrompted(value: Boolean): Self = StObject.set(x, "hasPrompted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisional(value: Boolean): Self = StObject.set(x, "provisional", value.asInstanceOf[js.Any])
+    inline def setProvisional(value: Boolean): Self = StObject.set(x, "provisional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: OSNotificationPermissionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: OSNotificationPermissionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OSNotificationPermission): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OSNotificationPermission): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

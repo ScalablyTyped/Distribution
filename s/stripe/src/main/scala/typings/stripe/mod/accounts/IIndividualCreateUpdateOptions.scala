@@ -24,25 +24,19 @@ trait IIndividualCreateUpdateOptions
 }
 object IIndividualCreateUpdateOptions {
   
-  @scala.inline
-  def apply(): IIndividualCreateUpdateOptions = {
+  inline def apply(): IIndividualCreateUpdateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IIndividualCreateUpdateOptions]
   }
   
-  @scala.inline
-  implicit class IIndividualCreateUpdateOptionsMutableBuilder[Self <: IIndividualCreateUpdateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IIndividualCreateUpdateOptions](x: Self) {
     
-    @scala.inline
-    def setId_number(value: String): Self = StObject.set(x, "id_number", value.asInstanceOf[js.Any])
+    inline def setId_number(value: String): Self = StObject.set(x, "id_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId_numberUndefined: Self = StObject.set(x, "id_number", js.undefined)
+    inline def setId_numberUndefined: Self = StObject.set(x, "id_number", js.undefined)
     
-    @scala.inline
-    def setSsn_last_4(value: String): Self = StObject.set(x, "ssn_last_4", value.asInstanceOf[js.Any])
+    inline def setSsn_last_4(value: String): Self = StObject.set(x, "ssn_last_4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsn_last_4Undefined: Self = StObject.set(x, "ssn_last_4", js.undefined)
+    inline def setSsn_last_4Undefined: Self = StObject.set(x, "ssn_last_4", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait IlmRetry
 }
 object IlmRetry {
   
-  @scala.inline
-  def apply(index: String): IlmRetry = {
+  inline def apply(index: String): IlmRetry = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IlmRetry]
   }
   
-  @scala.inline
-  implicit class IlmRetryMutableBuilder[Self <: IlmRetry] (val x: Self) extends AnyVal {
+  extension [Self <: IlmRetry](x: Self) {
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

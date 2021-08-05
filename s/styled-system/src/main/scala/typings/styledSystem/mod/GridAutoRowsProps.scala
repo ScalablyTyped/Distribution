@@ -15,25 +15,19 @@ trait GridAutoRowsProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ext
 }
 object GridAutoRowsProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): GridAutoRowsProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): GridAutoRowsProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridAutoRowsProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class GridAutoRowsPropsMutableBuilder[Self <: GridAutoRowsProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (GridAutoRowsProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: GridAutoRowsProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (GridAutoRowsProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setGridAutoRows(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
+    inline def setGridAutoRows(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridAutoRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoRowsNull: Self = StObject.set(x, "gridAutoRows", null)
+    inline def setGridAutoRowsNull: Self = StObject.set(x, "gridAutoRows", null)
     
-    @scala.inline
-    def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
+    inline def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
     
-    @scala.inline
-    def setGridAutoRowsVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridAutoRows", js.Array(value :_*))
+    inline def setGridAutoRowsVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridAutoRows", js.Array(value :_*))
   }
 }

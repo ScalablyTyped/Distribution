@@ -22,28 +22,21 @@ trait SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse extends StObject {
 }
 object SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse = {
+  inline def apply(): SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1beta2ListFieldsResponseMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFirestoreAdminV1beta2ListFieldsResponse](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[SchemaGoogleFirestoreAdminV1beta2Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[SchemaGoogleFirestoreAdminV1beta2Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: SchemaGoogleFirestoreAdminV1beta2Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: SchemaGoogleFirestoreAdminV1beta2Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

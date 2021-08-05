@@ -13,16 +13,13 @@ trait DeleteOutcomeRequest extends StObject {
 }
 object DeleteOutcomeRequest {
   
-  @scala.inline
-  def apply(name: identifier): DeleteOutcomeRequest = {
+  inline def apply(name: identifier): DeleteOutcomeRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOutcomeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteOutcomeRequestMutableBuilder[Self <: DeleteOutcomeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOutcomeRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

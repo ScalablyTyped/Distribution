@@ -22,20 +22,16 @@ object shadowsMod extends Shortcut {
   }
   object ShadowsProps {
     
-    @scala.inline
-    def apply(): ShadowsProps = {
+    inline def apply(): ShadowsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShadowsProps]
     }
     
-    @scala.inline
-    implicit class ShadowsPropsMutableBuilder[Self <: ShadowsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ShadowsProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

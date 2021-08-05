@@ -18,22 +18,17 @@ trait IdOnBehalfOfContentOwner extends StObject {
 }
 object IdOnBehalfOfContentOwner {
   
-  @scala.inline
-  def apply(id: String): IdOnBehalfOfContentOwner = {
+  inline def apply(id: String): IdOnBehalfOfContentOwner = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdOnBehalfOfContentOwner]
   }
   
-  @scala.inline
-  implicit class IdOnBehalfOfContentOwnerMutableBuilder[Self <: IdOnBehalfOfContentOwner] (val x: Self) extends AnyVal {
+  extension [Self <: IdOnBehalfOfContentOwner](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
+    inline def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
   }
 }

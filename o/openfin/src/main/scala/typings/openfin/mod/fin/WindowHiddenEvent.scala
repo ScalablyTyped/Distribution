@@ -22,20 +22,16 @@ trait WindowHiddenEvent
 }
 object WindowHiddenEvent {
   
-  @scala.inline
-  def apply(name: String, reason: hide | `hide-on-close`, uuid: String): WindowHiddenEvent = {
+  inline def apply(name: String, reason: hide | `hide-on-close`, uuid: String): WindowHiddenEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], topic = "window", uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("hidden")
     __obj.asInstanceOf[WindowHiddenEvent]
   }
   
-  @scala.inline
-  implicit class WindowHiddenEventMutableBuilder[Self <: WindowHiddenEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowHiddenEvent](x: Self) {
     
-    @scala.inline
-    def setReason(value: hide | `hide-on-close`): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: hide | `hide-on-close`): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: hidden): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: hidden): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

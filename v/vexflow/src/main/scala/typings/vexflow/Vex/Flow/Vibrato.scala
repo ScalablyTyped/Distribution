@@ -16,8 +16,7 @@ trait Vibrato
 }
 object Vibrato {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
     getCategory: () => String,
@@ -43,13 +42,10 @@ object Vibrato {
     __obj.asInstanceOf[Vibrato]
   }
   
-  @scala.inline
-  implicit class VibratoMutableBuilder[Self <: Vibrato] (val x: Self) extends AnyVal {
+  extension [Self <: Vibrato](x: Self) {
     
-    @scala.inline
-    def setSetHarsh(value: Boolean => Vibrato): Self = StObject.set(x, "setHarsh", js.Any.fromFunction1(value))
+    inline def setSetHarsh(value: Boolean => Vibrato): Self = StObject.set(x, "setHarsh", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVibratoWidth(value: Double => Vibrato): Self = StObject.set(x, "setVibratoWidth", js.Any.fromFunction1(value))
+    inline def setSetVibratoWidth(value: Double => Vibrato): Self = StObject.set(x, "setVibratoWidth", js.Any.fromFunction1(value))
   }
 }

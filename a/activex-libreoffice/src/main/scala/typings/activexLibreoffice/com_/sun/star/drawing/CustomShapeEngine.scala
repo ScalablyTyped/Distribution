@@ -16,8 +16,7 @@ trait CustomShapeEngine
      with XCustomShapeEngine
 object CustomShapeEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Interaction: SafeArray[XCustomShapeHandle],
     LineGeometry: PolyPolygonBezierCoords,
     TextBounds: Rectangle,

@@ -11,15 +11,11 @@ object serializeClosureMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def serializeFunction(func: js.Function): js.Promise[SerializedFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SerializedFunction]]
-  @scala.inline
-  def serializeFunction(func: js.Function, args: SerializeFunctionArgs): js.Promise[SerializedFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SerializedFunction]]
+  inline def serializeFunction(func: js.Function): js.Promise[SerializedFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SerializedFunction]]
+  inline def serializeFunction(func: js.Function, args: SerializeFunctionArgs): js.Promise[SerializedFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SerializedFunction]]
   
-  @scala.inline
-  def serializeFunctionAsync(func: js.Function): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, Boolean]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any], serialize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def serializeFunctionAsync(func: js.Function): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, Boolean]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any], serialize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   trait SerializeFunctionArgs extends StObject {
     
@@ -53,38 +49,28 @@ object serializeClosureMod {
   }
   object SerializeFunctionArgs {
     
-    @scala.inline
-    def apply(): SerializeFunctionArgs = {
+    inline def apply(): SerializeFunctionArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SerializeFunctionArgs]
     }
     
-    @scala.inline
-    implicit class SerializeFunctionArgsMutableBuilder[Self <: SerializeFunctionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SerializeFunctionArgs](x: Self) {
       
-      @scala.inline
-      def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
+      inline def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportNameUndefined: Self = StObject.set(x, "exportName", js.undefined)
+      inline def setExportNameUndefined: Self = StObject.set(x, "exportName", js.undefined)
       
-      @scala.inline
-      def setIsFactoryFunction(value: Boolean): Self = StObject.set(x, "isFactoryFunction", value.asInstanceOf[js.Any])
+      inline def setIsFactoryFunction(value: Boolean): Self = StObject.set(x, "isFactoryFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFactoryFunctionUndefined: Self = StObject.set(x, "isFactoryFunction", js.undefined)
+      inline def setIsFactoryFunctionUndefined: Self = StObject.set(x, "isFactoryFunction", js.undefined)
       
-      @scala.inline
-      def setLogResource(value: Resource): Self = StObject.set(x, "logResource", value.asInstanceOf[js.Any])
+      inline def setLogResource(value: Resource): Self = StObject.set(x, "logResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogResourceUndefined: Self = StObject.set(x, "logResource", js.undefined)
+      inline def setLogResourceUndefined: Self = StObject.set(x, "logResource", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: /* o */ js.Any => Boolean): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: /* o */ js.Any => Boolean): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     }
   }
   
@@ -104,20 +90,16 @@ object serializeClosureMod {
   }
   object SerializedFunction {
     
-    @scala.inline
-    def apply(exportName: String, text: String): SerializedFunction = {
+    inline def apply(exportName: String, text: String): SerializedFunction = {
       val __obj = js.Dynamic.literal(exportName = exportName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedFunction]
     }
     
-    @scala.inline
-    implicit class SerializedFunctionMutableBuilder[Self <: SerializedFunction] (val x: Self) extends AnyVal {
+    extension [Self <: SerializedFunction](x: Self) {
       
-      @scala.inline
-      def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
+      inline def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

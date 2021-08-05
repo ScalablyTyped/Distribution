@@ -18,25 +18,19 @@ trait MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters exten
 }
 object MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters {
   
-  @scala.inline
-  def apply(): MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters = {
+  inline def apply(): MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersMutableBuilder[Self <: MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters](x: Self) {
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

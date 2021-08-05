@@ -11,19 +11,15 @@ trait StreamingStageLocation extends StObject {
 }
 object StreamingStageLocation {
   
-  @scala.inline
-  def apply(): StreamingStageLocation = {
+  inline def apply(): StreamingStageLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamingStageLocation]
   }
   
-  @scala.inline
-  implicit class StreamingStageLocationMutableBuilder[Self <: StreamingStageLocation] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingStageLocation](x: Self) {
     
-    @scala.inline
-    def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
   }
 }

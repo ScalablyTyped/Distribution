@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compose(manifest: Manifest): js.Promise[Server] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Server]]
-  @scala.inline
-  def compose(manifest: Manifest, options: Options): js.Promise[Server] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Server]]
+  inline def compose(manifest: Manifest): js.Promise[Server] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Server]]
+  inline def compose(manifest: Manifest, options: Options): js.Promise[Server] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Server]]
   
   trait Manifest extends StObject {
     
@@ -26,23 +24,18 @@ object mod {
   }
   object Manifest {
     
-    @scala.inline
-    def apply(server: ServerOptions): Manifest = {
+    inline def apply(server: ServerOptions): Manifest = {
       val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[Manifest]
     }
     
-    @scala.inline
-    implicit class ManifestMutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
+    extension [Self <: Manifest](x: Self) {
       
-      @scala.inline
-      def setRegister(value: Plugins): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+      inline def setRegister(value: Plugins): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+      inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
       
-      @scala.inline
-      def setServer(value: ServerOptions): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: ServerOptions): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,29 +53,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(relativeTo: String): Options = {
+    inline def apply(relativeTo: String): Options = {
       val __obj = js.Dynamic.literal(relativeTo = relativeTo.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPreConnections(value: (/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "preConnections", js.Any.fromFunction2(value))
+      inline def setPreConnections(value: (/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "preConnections", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreConnectionsUndefined: Self = StObject.set(x, "preConnections", js.undefined)
+      inline def setPreConnectionsUndefined: Self = StObject.set(x, "preConnections", js.undefined)
       
-      @scala.inline
-      def setPreRegister(value: (/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "preRegister", js.Any.fromFunction2(value))
+      inline def setPreRegister(value: (/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "preRegister", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreRegisterUndefined: Self = StObject.set(x, "preRegister", js.undefined)
+      inline def setPreRegisterUndefined: Self = StObject.set(x, "preRegister", js.undefined)
       
-      @scala.inline
-      def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+      inline def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,29 +82,22 @@ object mod {
   }
   object Plugin {
     
-    @scala.inline
-    def apply(plugin: String | typings.glue.anon.Options): Plugin = {
+    inline def apply(plugin: String | typings.glue.anon.Options): Plugin = {
       val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Plugin]
     }
     
-    @scala.inline
-    implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+    extension [Self <: Plugin](x: Self) {
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: String | typings.glue.anon.Options): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: String | typings.glue.anon.Options): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     }
   }
 }

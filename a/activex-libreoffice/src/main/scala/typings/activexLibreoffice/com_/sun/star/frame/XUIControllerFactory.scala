@@ -26,8 +26,7 @@ trait XUIControllerFactory
      with XUIControllerRegistration
 object XUIControllerFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableServiceNames: SafeArray[String],
     acquire: () => Unit,
     createInstanceWithArgumentsAndContext: (String, SeqEquiv[js.Any], XComponentContext) => XInterface,

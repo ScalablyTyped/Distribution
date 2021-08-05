@@ -134,22 +134,17 @@ object ASPxClientHint {
     * Hides a hint window.
     */
   /* static member */
-  @scala.inline
-  def Hide(targetSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Hide")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def Hide(targetSelector: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Hide")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Hide(targetSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Hide")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Hide(targetSelector: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Hide")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Hides all hints.
     */
   /* static member */
-  @scala.inline
-  def HideAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HideAll")().asInstanceOf[Unit]
+  inline def HideAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HideAll")().asInstanceOf[Unit]
   
-  @scala.inline
-  def Register(targetSelector: String, options: String): typings.devexpressWeb.ASPxClientHint = (^.asInstanceOf[js.Dynamic].applyDynamic("Register")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ASPxClientHint]
-  @scala.inline
-  def Register(
+  inline def Register(targetSelector: String, options: String): typings.devexpressWeb.ASPxClientHint = (^.asInstanceOf[js.Dynamic].applyDynamic("Register")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ASPxClientHint]
+  inline def Register(
     targetSelector: String,
     options: typings.devexpressWeb.ASPxClientEvent[ASPxClientHintShowingEventHandler]
   ): typings.devexpressWeb.ASPxClientHint = (^.asInstanceOf[js.Dynamic].applyDynamic("Register")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ASPxClientHint]
@@ -159,8 +154,7 @@ object ASPxClientHint {
     * @param options An ASPxClientHintOptions object that is the hint's options.
     */
   /* static member */
-  @scala.inline
-  def Register(targetSelector: String, options: typings.devexpressWeb.ASPxClientHintOptions): typings.devexpressWeb.ASPxClientHint = (^.asInstanceOf[js.Dynamic].applyDynamic("Register")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ASPxClientHint]
+  inline def Register(targetSelector: String, options: typings.devexpressWeb.ASPxClientHintOptions): typings.devexpressWeb.ASPxClientHint = (^.asInstanceOf[js.Dynamic].applyDynamic("Register")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ASPxClientHint]
   
   /**
     * Invokes a hint.
@@ -168,24 +162,15 @@ object ASPxClientHint {
     * @param options An ASPxClientHintOptions object that is the hint's options.
     */
   /* static member */
-  @scala.inline
-  def Show(targetSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def Show(targetSelector: String, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def Show(targetSelector: String, options: typings.devexpressWeb.ASPxClientHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def Show(targetSelector: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def Show(targetSelector: js.Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def Show(targetSelector: js.Any, options: typings.devexpressWeb.ASPxClientHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def Show(targetSelector: typings.devexpressWeb.ASPxClientHintOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def Show(targetSelector: typings.devexpressWeb.ASPxClientHintOptions, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def Show(
+  inline def Show(targetSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Show(targetSelector: String, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Show(targetSelector: String, options: typings.devexpressWeb.ASPxClientHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Show(targetSelector: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Show(targetSelector: js.Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Show(targetSelector: js.Any, options: typings.devexpressWeb.ASPxClientHintOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Show(targetSelector: typings.devexpressWeb.ASPxClientHintOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Show(targetSelector: typings.devexpressWeb.ASPxClientHintOptions, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def Show(
     targetSelector: typings.devexpressWeb.ASPxClientHintOptions,
     options: typings.devexpressWeb.ASPxClientHintOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Show")(targetSelector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -194,16 +179,13 @@ object ASPxClientHint {
     * Forces the hint to reselect target UI elements according to the specified CSS selector.
     */
   /* static member */
-  @scala.inline
-  def Update(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Update")().asInstanceOf[Unit]
+  inline def Update(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Update")().asInstanceOf[Unit]
   
   /**
     * Forces the hint to recalculate its position.
     * @param hintElementOrTargetElement An object that is the hint element or the target element.
     */
   /* static member */
-  @scala.inline
-  def UpdatePosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdatePosition")().asInstanceOf[Unit]
-  @scala.inline
-  def UpdatePosition(hintElementOrTargetElement: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdatePosition")(hintElementOrTargetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def UpdatePosition(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdatePosition")().asInstanceOf[Unit]
+  inline def UpdatePosition(hintElementOrTargetElement: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdatePosition")(hintElementOrTargetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

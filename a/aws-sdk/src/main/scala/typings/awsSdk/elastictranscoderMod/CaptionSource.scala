@@ -33,43 +33,31 @@ trait CaptionSource extends StObject {
 }
 object CaptionSource {
   
-  @scala.inline
-  def apply(): CaptionSource = {
+  inline def apply(): CaptionSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionSource]
   }
   
-  @scala.inline
-  implicit class CaptionSourceMutableBuilder[Self <: CaptionSource] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionSource](x: Self) {
     
-    @scala.inline
-    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setKey(value: LongKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: LongKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setLabel(value: Name): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Name): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: Key): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Key): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
     
-    @scala.inline
-    def setTimeOffset(value: TimeOffset): Self = StObject.set(x, "TimeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: TimeOffset): Self = StObject.set(x, "TimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffsetUndefined: Self = StObject.set(x, "TimeOffset", js.undefined)
+    inline def setTimeOffsetUndefined: Self = StObject.set(x, "TimeOffset", js.undefined)
   }
 }

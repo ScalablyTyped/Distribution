@@ -12,19 +12,15 @@ trait Card extends StObject {
 }
 object Card {
   
-  @scala.inline
-  def apply(card: js.Any, hostedFields: typings.braintreeWeb.hostedFieldsMod.HostedFields): Card = {
+  inline def apply(card: js.Any, hostedFields: typings.braintreeWeb.hostedFieldsMod.HostedFields): Card = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], hostedFields = hostedFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[Card]
   }
   
-  @scala.inline
-  implicit class CardMutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
+  extension [Self <: Card](x: Self) {
     
-    @scala.inline
-    def setCard(value: js.Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: js.Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedFields(value: typings.braintreeWeb.hostedFieldsMod.HostedFields): Self = StObject.set(x, "hostedFields", value.asInstanceOf[js.Any])
+    inline def setHostedFields(value: typings.braintreeWeb.hostedFieldsMod.HostedFields): Self = StObject.set(x, "hostedFields", value.asInstanceOf[js.Any])
   }
 }

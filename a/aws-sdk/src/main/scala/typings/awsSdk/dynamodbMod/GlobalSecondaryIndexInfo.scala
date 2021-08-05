@@ -28,40 +28,29 @@ trait GlobalSecondaryIndexInfo extends StObject {
 }
 object GlobalSecondaryIndexInfo {
   
-  @scala.inline
-  def apply(): GlobalSecondaryIndexInfo = {
+  inline def apply(): GlobalSecondaryIndexInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalSecondaryIndexInfo]
   }
   
-  @scala.inline
-  implicit class GlobalSecondaryIndexInfoMutableBuilder[Self <: GlobalSecondaryIndexInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalSecondaryIndexInfo](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+    inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+    inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
-    @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
-    @scala.inline
-    def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
     
-    @scala.inline
-    def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+    inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+    inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
   }
 }

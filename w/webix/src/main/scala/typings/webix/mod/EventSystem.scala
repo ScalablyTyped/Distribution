@@ -25,6 +25,5 @@ trait EventSystem extends StObject {
 }
 object EventSystem {
   
-  @scala.inline
-  def apply: EventSystem = ^.asInstanceOf[js.Dynamic].selectDynamic("EventSystem").asInstanceOf[EventSystem]
+  inline def apply: EventSystem = ^.asInstanceOf[js.Dynamic].selectDynamic("EventSystem").asInstanceOf[EventSystem]
 }

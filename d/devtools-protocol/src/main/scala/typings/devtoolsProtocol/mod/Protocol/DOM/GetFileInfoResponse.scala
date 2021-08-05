@@ -10,16 +10,13 @@ trait GetFileInfoResponse extends StObject {
 }
 object GetFileInfoResponse {
   
-  @scala.inline
-  def apply(path: String): GetFileInfoResponse = {
+  inline def apply(path: String): GetFileInfoResponse = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileInfoResponse]
   }
   
-  @scala.inline
-  implicit class GetFileInfoResponseMutableBuilder[Self <: GetFileInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileInfoResponse](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

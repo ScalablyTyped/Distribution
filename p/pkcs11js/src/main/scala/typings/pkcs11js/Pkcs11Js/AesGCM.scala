@@ -19,32 +19,24 @@ trait AesGCM
 }
 object AesGCM {
   
-  @scala.inline
-  def apply(ivBits: Double, tagBits: Double, `type`: Double): AesGCM = {
+  inline def apply(ivBits: Double, tagBits: Double, `type`: Double): AesGCM = {
     val __obj = js.Dynamic.literal(ivBits = ivBits.asInstanceOf[js.Any], tagBits = tagBits.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesGCM]
   }
   
-  @scala.inline
-  implicit class AesGCMMutableBuilder[Self <: AesGCM] (val x: Self) extends AnyVal {
+  extension [Self <: AesGCM](x: Self) {
     
-    @scala.inline
-    def setAad(value: Buffer): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
+    inline def setAad(value: Buffer): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAadUndefined: Self = StObject.set(x, "aad", js.undefined)
+    inline def setAadUndefined: Self = StObject.set(x, "aad", js.undefined)
     
-    @scala.inline
-    def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIvBits(value: Double): Self = StObject.set(x, "ivBits", value.asInstanceOf[js.Any])
+    inline def setIvBits(value: Double): Self = StObject.set(x, "ivBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+    inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
     
-    @scala.inline
-    def setTagBits(value: Double): Self = StObject.set(x, "tagBits", value.asInstanceOf[js.Any])
+    inline def setTagBits(value: Double): Self = StObject.set(x, "tagBits", value.asInstanceOf[js.Any])
   }
 }

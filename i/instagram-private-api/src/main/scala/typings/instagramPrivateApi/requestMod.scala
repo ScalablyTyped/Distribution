@@ -22,7 +22,7 @@ object requestMod {
     
     var attemptOptions: PartialAttemptOptionsany = js.native
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
     var defaults: Partial[Options] = js.native
     
@@ -36,7 +36,7 @@ object requestMod {
     
     def getDefaultHeaders(): AcceptEncoding = js.native
     
-    var handleResponseError: js.Any = js.native
+    /* private */ var handleResponseError: js.Any = js.native
     
     def send[T](userOptions: Options): js.Promise[IgResponse[T]] = js.native
     def send[T](userOptions: Options, onlyCheckHttpStatus: Boolean): js.Promise[IgResponse[T]] = js.native
@@ -45,7 +45,7 @@ object requestMod {
     
     def signature(data: String): String = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
     
     def userBreadcrumb(size: Double): String = js.native
   }
@@ -59,14 +59,12 @@ object requestMod {
     @JSImport("instagram-private-api/dist/core/request", "Request.requestDebug")
     @js.native
     def requestDebug: js.Any = js.native
-    @scala.inline
-    def requestDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestDebug")(x.asInstanceOf[js.Any])
+    inline def requestDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestDebug")(x.asInstanceOf[js.Any])
     
     @JSImport("instagram-private-api/dist/core/request", "Request.requestTransform")
     @js.native
     def requestTransform: js.Any = js.native
-    @scala.inline
-    def requestTransform_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestTransform")(x.asInstanceOf[js.Any])
+    inline def requestTransform_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestTransform")(x.asInstanceOf[js.Any])
   }
   
   type Payload = StringDictionary[js.Any] | String
@@ -79,20 +77,16 @@ object requestMod {
   }
   object SignedPost {
     
-    @scala.inline
-    def apply(ig_sig_key_version: String, signed_body: String): SignedPost = {
+    inline def apply(ig_sig_key_version: String, signed_body: String): SignedPost = {
       val __obj = js.Dynamic.literal(ig_sig_key_version = ig_sig_key_version.asInstanceOf[js.Any], signed_body = signed_body.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignedPost]
     }
     
-    @scala.inline
-    implicit class SignedPostMutableBuilder[Self <: SignedPost] (val x: Self) extends AnyVal {
+    extension [Self <: SignedPost](x: Self) {
       
-      @scala.inline
-      def setIg_sig_key_version(value: String): Self = StObject.set(x, "ig_sig_key_version", value.asInstanceOf[js.Any])
+      inline def setIg_sig_key_version(value: String): Self = StObject.set(x, "ig_sig_key_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigned_body(value: String): Self = StObject.set(x, "signed_body", value.asInstanceOf[js.Any])
+      inline def setSigned_body(value: String): Self = StObject.set(x, "signed_body", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,20 +11,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hackerHot(): HackerNewsHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("hackerHot")().asInstanceOf[HackerNewsHotFunction]
-  @scala.inline
-  def hackerHot(gravity: Double): HackerNewsHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("hackerHot")(gravity.asInstanceOf[js.Any]).asInstanceOf[HackerNewsHotFunction]
+  inline def hackerHot(): HackerNewsHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("hackerHot")().asInstanceOf[HackerNewsHotFunction]
+  inline def hackerHot(gravity: Double): HackerNewsHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("hackerHot")(gravity.asInstanceOf[js.Any]).asInstanceOf[HackerNewsHotFunction]
   
-  @scala.inline
-  def redditHot(): RedditHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("redditHot")().asInstanceOf[RedditHotFunction]
-  @scala.inline
-  def redditHot(decay: Double): RedditHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("redditHot")(decay.asInstanceOf[js.Any]).asInstanceOf[RedditHotFunction]
+  inline def redditHot(): RedditHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("redditHot")().asInstanceOf[RedditHotFunction]
+  inline def redditHot(decay: Double): RedditHotFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("redditHot")(decay.asInstanceOf[js.Any]).asInstanceOf[RedditHotFunction]
   
-  @scala.inline
-  def wilsonScore(): WilsonScoreFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("wilsonScore")().asInstanceOf[WilsonScoreFunction]
-  @scala.inline
-  def wilsonScore(confidence: Double): WilsonScoreFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("wilsonScore")(confidence.asInstanceOf[js.Any]).asInstanceOf[WilsonScoreFunction]
+  inline def wilsonScore(): WilsonScoreFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("wilsonScore")().asInstanceOf[WilsonScoreFunction]
+  inline def wilsonScore(confidence: Double): WilsonScoreFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("wilsonScore")(confidence.asInstanceOf[js.Any]).asInstanceOf[WilsonScoreFunction]
   
   type HackerNewsHotFunction = js.Function2[/* votes */ Double, /* date */ Date, Double]
   

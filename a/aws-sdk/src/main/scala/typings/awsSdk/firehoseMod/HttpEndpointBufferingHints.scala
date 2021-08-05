@@ -18,25 +18,19 @@ trait HttpEndpointBufferingHints extends StObject {
 }
 object HttpEndpointBufferingHints {
   
-  @scala.inline
-  def apply(): HttpEndpointBufferingHints = {
+  inline def apply(): HttpEndpointBufferingHints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpEndpointBufferingHints]
   }
   
-  @scala.inline
-  implicit class HttpEndpointBufferingHintsMutableBuilder[Self <: HttpEndpointBufferingHints] (val x: Self) extends AnyVal {
+  extension [Self <: HttpEndpointBufferingHints](x: Self) {
     
-    @scala.inline
-    def setIntervalInSeconds(value: HttpEndpointBufferingIntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
+    inline def setIntervalInSeconds(value: HttpEndpointBufferingIntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalInSecondsUndefined: Self = StObject.set(x, "IntervalInSeconds", js.undefined)
+    inline def setIntervalInSecondsUndefined: Self = StObject.set(x, "IntervalInSeconds", js.undefined)
     
-    @scala.inline
-    def setSizeInMBs(value: HttpEndpointBufferingSizeInMBs): Self = StObject.set(x, "SizeInMBs", value.asInstanceOf[js.Any])
+    inline def setSizeInMBs(value: HttpEndpointBufferingSizeInMBs): Self = StObject.set(x, "SizeInMBs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInMBsUndefined: Self = StObject.set(x, "SizeInMBs", js.undefined)
+    inline def setSizeInMBsUndefined: Self = StObject.set(x, "SizeInMBs", js.undefined)
   }
 }

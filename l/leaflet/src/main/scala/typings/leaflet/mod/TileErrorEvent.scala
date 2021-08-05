@@ -14,8 +14,7 @@ trait TileErrorEvent
 }
 object TileErrorEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coords: Coords,
     error: Error,
     layer: js.Any,
@@ -30,10 +29,8 @@ object TileErrorEvent {
     __obj.asInstanceOf[TileErrorEvent]
   }
   
-  @scala.inline
-  implicit class TileErrorEventMutableBuilder[Self <: TileErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TileErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

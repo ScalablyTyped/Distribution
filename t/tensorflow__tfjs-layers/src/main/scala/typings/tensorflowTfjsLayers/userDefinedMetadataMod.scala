@@ -14,11 +14,8 @@ object userDefinedMetadataMod {
   @js.native
   val MAX_USER_DEFINED_METADATA_SERIALIZED_LENGTH: Double = js.native
   
-  @scala.inline
-  def checkUserDefinedMetadata(userDefinedMetadata: js.Object, modelName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUserDefinedMetadata")(userDefinedMetadata.asInstanceOf[js.Any], modelName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def checkUserDefinedMetadata(userDefinedMetadata: js.Object, modelName: String, checkSize: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUserDefinedMetadata")(userDefinedMetadata.asInstanceOf[js.Any], modelName.asInstanceOf[js.Any], checkSize.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkUserDefinedMetadata(userDefinedMetadata: js.Object, modelName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUserDefinedMetadata")(userDefinedMetadata.asInstanceOf[js.Any], modelName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkUserDefinedMetadata(userDefinedMetadata: js.Object, modelName: String, checkSize: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkUserDefinedMetadata")(userDefinedMetadata.asInstanceOf[js.Any], modelName.asInstanceOf[js.Any], checkSize.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def plainObjectCheck(x: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("plainObjectCheck")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def plainObjectCheck(x: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("plainObjectCheck")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -20,31 +20,23 @@ trait PrivateClusterConfig extends StObject {
 }
 object PrivateClusterConfig {
   
-  @scala.inline
-  def apply(): PrivateClusterConfig = {
+  inline def apply(): PrivateClusterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrivateClusterConfig]
   }
   
-  @scala.inline
-  implicit class PrivateClusterConfigMutableBuilder[Self <: PrivateClusterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PrivateClusterConfig](x: Self) {
     
-    @scala.inline
-    def setEnablePrivateEndpoint(value: Boolean): Self = StObject.set(x, "enablePrivateEndpoint", value.asInstanceOf[js.Any])
+    inline def setEnablePrivateEndpoint(value: Boolean): Self = StObject.set(x, "enablePrivateEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePrivateEndpointUndefined: Self = StObject.set(x, "enablePrivateEndpoint", js.undefined)
+    inline def setEnablePrivateEndpointUndefined: Self = StObject.set(x, "enablePrivateEndpoint", js.undefined)
     
-    @scala.inline
-    def setMasterIpv4CidrBlock(value: String): Self = StObject.set(x, "masterIpv4CidrBlock", value.asInstanceOf[js.Any])
+    inline def setMasterIpv4CidrBlock(value: String): Self = StObject.set(x, "masterIpv4CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterIpv4CidrBlockUndefined: Self = StObject.set(x, "masterIpv4CidrBlock", js.undefined)
+    inline def setMasterIpv4CidrBlockUndefined: Self = StObject.set(x, "masterIpv4CidrBlock", js.undefined)
     
-    @scala.inline
-    def setMasterIpv4ReservedRange(value: String): Self = StObject.set(x, "masterIpv4ReservedRange", value.asInstanceOf[js.Any])
+    inline def setMasterIpv4ReservedRange(value: String): Self = StObject.set(x, "masterIpv4ReservedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterIpv4ReservedRangeUndefined: Self = StObject.set(x, "masterIpv4ReservedRange", js.undefined)
+    inline def setMasterIpv4ReservedRangeUndefined: Self = StObject.set(x, "masterIpv4ReservedRange", js.undefined)
   }
 }

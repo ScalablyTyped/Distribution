@@ -10,16 +10,13 @@ trait Expand extends StObject {
 }
 object Expand {
   
-  @scala.inline
-  def apply(Expand: Boolean): Expand = {
+  inline def apply(Expand: Boolean): Expand = {
     val __obj = js.Dynamic.literal(Expand = Expand.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expand]
   }
   
-  @scala.inline
-  implicit class ExpandMutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
+  extension [Self <: Expand](x: Self) {
     
-    @scala.inline
-    def setExpand(value: Boolean): Self = StObject.set(x, "Expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: Boolean): Self = StObject.set(x, "Expand", value.asInstanceOf[js.Any])
   }
 }

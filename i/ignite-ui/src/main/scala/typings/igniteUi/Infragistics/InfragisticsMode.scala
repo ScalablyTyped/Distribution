@@ -10,16 +10,13 @@ trait InfragisticsMode extends StObject {
 }
 object InfragisticsMode {
   
-  @scala.inline
-  def apply(isActive: () => Unit): InfragisticsMode = {
+  inline def apply(isActive: () => Unit): InfragisticsMode = {
     val __obj = js.Dynamic.literal(isActive = js.Any.fromFunction0(isActive))
     __obj.asInstanceOf[InfragisticsMode]
   }
   
-  @scala.inline
-  implicit class InfragisticsModeMutableBuilder[Self <: InfragisticsMode] (val x: Self) extends AnyVal {
+  extension [Self <: InfragisticsMode](x: Self) {
     
-    @scala.inline
-    def setIsActive(value: () => Unit): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Unit): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
   }
 }

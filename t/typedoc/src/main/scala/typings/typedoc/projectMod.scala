@@ -21,11 +21,11 @@ object projectMod {
     
     var files: js.Array[SourceFile] = js.native
     
-    var fqnToReflectionIdMap: js.Any = js.native
+    /* private */ var fqnToReflectionIdMap: js.Any = js.native
     
     def getDanglingReferences(): js.Array[String] = js.native
     
-    var getReferenceGraph: js.Any = js.native
+    /* private */ var getReferenceGraph: js.Any = js.native
     
     def getReflectionById(id: Double): js.UndefOr[Reflection] = js.native
     
@@ -37,9 +37,9 @@ object projectMod {
     
     var readme: js.UndefOr[String] = js.native
     
-    var referenceGraph: js.Any = js.native
+    /* private */ var referenceGraph: js.Any = js.native
     
-    var reflectionToSymbolIdMap: js.Any = js.native
+    /* private */ var reflectionToSymbolIdMap: js.Any = js.native
     
     var reflections: NumberDictionary[Reflection] = js.native
     
@@ -49,6 +49,6 @@ object projectMod {
     def removeReflection(reflection: Reflection): Unit = js.native
     def removeReflection(reflection: Reflection, removeReferences: Boolean): Unit = js.native
     
-    var symbolIdToReflectionIdMap: js.Any = js.native
+    /* private */ var symbolIdToReflectionIdMap: js.Any = js.native
   }
 }

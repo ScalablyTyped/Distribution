@@ -10,6 +10,5 @@ object wrapBehaviorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(obj: js.Object, action: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def default(obj: js.Object, action: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 }

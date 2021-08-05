@@ -362,50 +362,36 @@ object Projects extends Shortcut {
   }
   object CreateParams {
     
-    @scala.inline
-    def apply(): CreateParams = {
+    inline def apply(): CreateParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateParams]
     }
     
-    @scala.inline
-    implicit class CreateParamsMutableBuilder[Self <: CreateParams] (val x: Self) extends AnyVal {
+    extension [Self <: CreateParams](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDue_date(value: String): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
+      inline def setDue_date(value: String): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
+      inline def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+      inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
       
-      @scala.inline
-      def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      @scala.inline
-      def setTeam(value: String | Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String | Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
     }
   }
   
@@ -421,32 +407,24 @@ object Projects extends Shortcut {
   }
   object FindAllParams {
     
-    @scala.inline
-    def apply(): FindAllParams = {
+    inline def apply(): FindAllParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindAllParams]
     }
     
-    @scala.inline
-    implicit class FindAllParamsMutableBuilder[Self <: FindAllParams] (val x: Self) extends AnyVal {
+    extension [Self <: FindAllParams](x: Self) {
       
-      @scala.inline
-      def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+      inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
+      inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
       
-      @scala.inline
-      def setTeam(value: String | Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String | Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
       
-      @scala.inline
-      def setWorkspace(value: String | Double): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+      inline def setWorkspace(value: String | Double): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
+      inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
     }
   }
   
@@ -458,20 +436,16 @@ object Projects extends Shortcut {
   }
   object FindByParams {
     
-    @scala.inline
-    def apply(): FindByParams = {
+    inline def apply(): FindByParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindByParams]
     }
     
-    @scala.inline
-    implicit class FindByParamsMutableBuilder[Self <: FindByParams] (val x: Self) extends AnyVal {
+    extension [Self <: FindByParams](x: Self) {
       
-      @scala.inline
-      def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+      inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
+      inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     }
   }
   
@@ -481,20 +455,16 @@ object Projects extends Shortcut {
   }
   object FollowersParams {
     
-    @scala.inline
-    def apply(followers: js.Array[Double | String]): FollowersParams = {
+    inline def apply(followers: js.Array[Double | String]): FollowersParams = {
       val __obj = js.Dynamic.literal(followers = followers.asInstanceOf[js.Any])
       __obj.asInstanceOf[FollowersParams]
     }
     
-    @scala.inline
-    implicit class FollowersParamsMutableBuilder[Self <: FollowersParams] (val x: Self) extends AnyVal {
+    extension [Self <: FollowersParams](x: Self) {
       
-      @scala.inline
-      def setFollowers(value: js.Array[Double | String]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+      inline def setFollowers(value: js.Array[Double | String]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowersVarargs(value: (Double | String)*): Self = StObject.set(x, "followers", js.Array(value :_*))
+      inline def setFollowersVarargs(value: (Double | String)*): Self = StObject.set(x, "followers", js.Array(value :_*))
     }
   }
   
@@ -504,20 +474,16 @@ object Projects extends Shortcut {
   }
   object MembersParams {
     
-    @scala.inline
-    def apply(members: js.Array[Double | String]): MembersParams = {
+    inline def apply(members: js.Array[Double | String]): MembersParams = {
       val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
       __obj.asInstanceOf[MembersParams]
     }
     
-    @scala.inline
-    implicit class MembersParamsMutableBuilder[Self <: MembersParams] (val x: Self) extends AnyVal {
+    extension [Self <: MembersParams](x: Self) {
       
-      @scala.inline
-      def setMembers(value: js.Array[Double | String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[Double | String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersVarargs(value: (Double | String)*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: (Double | String)*): Self = StObject.set(x, "members", js.Array(value :_*))
     }
   }
   
@@ -535,29 +501,22 @@ object Projects extends Shortcut {
   }
   object Status {
     
-    @scala.inline
-    def apply(author: Resource, color: String, html_text: String, modified_at: String, text: String): Status = {
+    inline def apply(author: Resource, color: String, html_text: String, modified_at: String, text: String): Status = {
       val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], html_text = html_text.asInstanceOf[js.Any], modified_at = modified_at.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Status]
     }
     
-    @scala.inline
-    implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+    extension [Self <: Status](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: Resource): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: Resource): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml_text(value: String): Self = StObject.set(x, "html_text", value.asInstanceOf[js.Any])
+      inline def setHtml_text(value: String): Self = StObject.set(x, "html_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified_at(value: String): Self = StObject.set(x, "modified_at", value.asInstanceOf[js.Any])
+      inline def setModified_at(value: String): Self = StObject.set(x, "modified_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   

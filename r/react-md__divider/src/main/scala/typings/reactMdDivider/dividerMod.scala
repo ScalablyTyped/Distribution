@@ -44,26 +44,20 @@ object dividerMod {
   }
   object DividerProps {
     
-    @scala.inline
-    def apply(): DividerProps = {
+    inline def apply(): DividerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DividerProps]
     }
     
-    @scala.inline
-    implicit class DividerPropsMutableBuilder[Self <: DividerProps] (val x: Self) extends AnyVal {
+    extension [Self <: DividerProps](x: Self) {
       
-      @scala.inline
-      def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+      inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+      inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
 }

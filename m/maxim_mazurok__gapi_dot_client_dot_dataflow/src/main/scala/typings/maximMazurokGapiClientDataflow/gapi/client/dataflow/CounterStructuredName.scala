@@ -41,73 +41,51 @@ trait CounterStructuredName extends StObject {
 }
 object CounterStructuredName {
   
-  @scala.inline
-  def apply(): CounterStructuredName = {
+  inline def apply(): CounterStructuredName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CounterStructuredName]
   }
   
-  @scala.inline
-  implicit class CounterStructuredNameMutableBuilder[Self <: CounterStructuredName] (val x: Self) extends AnyVal {
+  extension [Self <: CounterStructuredName](x: Self) {
     
-    @scala.inline
-    def setComponentStepName(value: String): Self = StObject.set(x, "componentStepName", value.asInstanceOf[js.Any])
+    inline def setComponentStepName(value: String): Self = StObject.set(x, "componentStepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentStepNameUndefined: Self = StObject.set(x, "componentStepName", js.undefined)
+    inline def setComponentStepNameUndefined: Self = StObject.set(x, "componentStepName", js.undefined)
     
-    @scala.inline
-    def setExecutionStepName(value: String): Self = StObject.set(x, "executionStepName", value.asInstanceOf[js.Any])
+    inline def setExecutionStepName(value: String): Self = StObject.set(x, "executionStepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStepNameUndefined: Self = StObject.set(x, "executionStepName", js.undefined)
+    inline def setExecutionStepNameUndefined: Self = StObject.set(x, "executionStepName", js.undefined)
     
-    @scala.inline
-    def setInputIndex(value: Double): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
+    inline def setInputIndex(value: Double): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputIndexUndefined: Self = StObject.set(x, "inputIndex", js.undefined)
+    inline def setInputIndexUndefined: Self = StObject.set(x, "inputIndex", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginNamespace(value: String): Self = StObject.set(x, "originNamespace", value.asInstanceOf[js.Any])
+    inline def setOriginNamespace(value: String): Self = StObject.set(x, "originNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginNamespaceUndefined: Self = StObject.set(x, "originNamespace", js.undefined)
+    inline def setOriginNamespaceUndefined: Self = StObject.set(x, "originNamespace", js.undefined)
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setOriginalRequestingStepName(value: String): Self = StObject.set(x, "originalRequestingStepName", value.asInstanceOf[js.Any])
+    inline def setOriginalRequestingStepName(value: String): Self = StObject.set(x, "originalRequestingStepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalRequestingStepNameUndefined: Self = StObject.set(x, "originalRequestingStepName", js.undefined)
+    inline def setOriginalRequestingStepNameUndefined: Self = StObject.set(x, "originalRequestingStepName", js.undefined)
     
-    @scala.inline
-    def setOriginalStepName(value: String): Self = StObject.set(x, "originalStepName", value.asInstanceOf[js.Any])
+    inline def setOriginalStepName(value: String): Self = StObject.set(x, "originalStepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalStepNameUndefined: Self = StObject.set(x, "originalStepName", js.undefined)
+    inline def setOriginalStepNameUndefined: Self = StObject.set(x, "originalStepName", js.undefined)
     
-    @scala.inline
-    def setPortion(value: String): Self = StObject.set(x, "portion", value.asInstanceOf[js.Any])
+    inline def setPortion(value: String): Self = StObject.set(x, "portion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortionUndefined: Self = StObject.set(x, "portion", js.undefined)
+    inline def setPortionUndefined: Self = StObject.set(x, "portion", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

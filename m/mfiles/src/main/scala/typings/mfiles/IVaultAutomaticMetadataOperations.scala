@@ -14,8 +14,7 @@ trait IVaultAutomaticMetadataOperations extends StObject {
 }
 object IVaultAutomaticMetadataOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAutomaticMetadataForObject: IObjVer => IAutomaticMetadataResult,
     GetAutomaticMetadataForTemporaryFile: Double => IAutomaticMetadataResult,
     GetAutomaticMetadataForTemporaryFiles: IIDs => IAutomaticMetadataResult
@@ -24,16 +23,12 @@ object IVaultAutomaticMetadataOperations {
     __obj.asInstanceOf[IVaultAutomaticMetadataOperations]
   }
   
-  @scala.inline
-  implicit class IVaultAutomaticMetadataOperationsMutableBuilder[Self <: IVaultAutomaticMetadataOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultAutomaticMetadataOperations](x: Self) {
     
-    @scala.inline
-    def setGetAutomaticMetadataForObject(value: IObjVer => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForObject", js.Any.fromFunction1(value))
+    inline def setGetAutomaticMetadataForObject(value: IObjVer => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAutomaticMetadataForTemporaryFile(value: Double => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForTemporaryFile", js.Any.fromFunction1(value))
+    inline def setGetAutomaticMetadataForTemporaryFile(value: Double => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForTemporaryFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAutomaticMetadataForTemporaryFiles(value: IIDs => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForTemporaryFiles", js.Any.fromFunction1(value))
+    inline def setGetAutomaticMetadataForTemporaryFiles(value: IIDs => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForTemporaryFiles", js.Any.fromFunction1(value))
   }
 }

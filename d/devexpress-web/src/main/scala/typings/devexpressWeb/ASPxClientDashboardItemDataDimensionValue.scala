@@ -26,22 +26,17 @@ trait ASPxClientDashboardItemDataDimensionValue extends StObject {
 }
 object ASPxClientDashboardItemDataDimensionValue {
   
-  @scala.inline
-  def apply(GetDisplayText: () => String, GetUniqueValue: () => js.Any, GetValue: () => js.Any): ASPxClientDashboardItemDataDimensionValue = {
+  inline def apply(GetDisplayText: () => String, GetUniqueValue: () => js.Any, GetValue: () => js.Any): ASPxClientDashboardItemDataDimensionValue = {
     val __obj = js.Dynamic.literal(GetDisplayText = js.Any.fromFunction0(GetDisplayText), GetUniqueValue = js.Any.fromFunction0(GetUniqueValue), GetValue = js.Any.fromFunction0(GetValue))
     __obj.asInstanceOf[ASPxClientDashboardItemDataDimensionValue]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemDataDimensionValueMutableBuilder[Self <: ASPxClientDashboardItemDataDimensionValue] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemDataDimensionValue](x: Self) {
     
-    @scala.inline
-    def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
+    inline def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUniqueValue(value: () => js.Any): Self = StObject.set(x, "GetUniqueValue", js.Any.fromFunction0(value))
+    inline def setGetUniqueValue(value: () => js.Any): Self = StObject.set(x, "GetUniqueValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
   }
 }

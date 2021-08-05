@@ -35,40 +35,28 @@ object Months {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def APRIL: `3` = 3.asInstanceOf[`3`]
+    inline def APRIL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def AUGUST: `7` = 7.asInstanceOf[`7`]
+    inline def AUGUST: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def DECEMBER: `11` = 11.asInstanceOf[`11`]
+    inline def DECEMBER: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def FEBURARY: `1` = 1.asInstanceOf[`1`]
+    inline def FEBURARY: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def JANUARY: `0` = 0.asInstanceOf[`0`]
+    inline def JANUARY: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def JULY: `6` = 6.asInstanceOf[`6`]
+    inline def JULY: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def JUNE: `5` = 5.asInstanceOf[`5`]
+    inline def JUNE: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def MARCH: `2` = 2.asInstanceOf[`2`]
+    inline def MARCH: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MAY: `4` = 4.asInstanceOf[`4`]
+    inline def MAY: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def NOVEMBER: `10` = 10.asInstanceOf[`10`]
+    inline def NOVEMBER: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def OCTOBER: `9` = 9.asInstanceOf[`9`]
+    inline def OCTOBER: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def SEPTEMBER: `8` = 8.asInstanceOf[`8`]
+    inline def SEPTEMBER: `8` = 8.asInstanceOf[`8`]
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StateOptions extends StObject
 object StateOptions {
   
-  @scala.inline
-  def closed: typings.jqueryPnotify.jqueryPnotifyStrings.closed = "closed".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.closed]
+  inline def closed: typings.jqueryPnotify.jqueryPnotifyStrings.closed = "closed".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.closed]
   
-  @scala.inline
-  def closing: typings.jqueryPnotify.jqueryPnotifyStrings.closing = "closing".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.closing]
+  inline def closing: typings.jqueryPnotify.jqueryPnotifyStrings.closing = "closing".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.closing]
   
-  @scala.inline
-  def initializing: typings.jqueryPnotify.jqueryPnotifyStrings.initializing = "initializing".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.initializing]
+  inline def initializing: typings.jqueryPnotify.jqueryPnotifyStrings.initializing = "initializing".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.initializing]
   
-  @scala.inline
-  def open: typings.jqueryPnotify.jqueryPnotifyStrings.open = "open".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.open]
+  inline def open: typings.jqueryPnotify.jqueryPnotifyStrings.open = "open".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.open]
   
-  @scala.inline
-  def opening: typings.jqueryPnotify.jqueryPnotifyStrings.opening = "opening".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.opening]
+  inline def opening: typings.jqueryPnotify.jqueryPnotifyStrings.opening = "opening".asInstanceOf[typings.jqueryPnotify.jqueryPnotifyStrings.opening]
 }

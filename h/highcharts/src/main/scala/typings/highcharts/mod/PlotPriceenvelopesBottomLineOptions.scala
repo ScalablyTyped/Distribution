@@ -10,19 +10,15 @@ trait PlotPriceenvelopesBottomLineOptions extends StObject {
 }
 object PlotPriceenvelopesBottomLineOptions {
   
-  @scala.inline
-  def apply(): PlotPriceenvelopesBottomLineOptions = {
+  inline def apply(): PlotPriceenvelopesBottomLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotPriceenvelopesBottomLineOptions]
   }
   
-  @scala.inline
-  implicit class PlotPriceenvelopesBottomLineOptionsMutableBuilder[Self <: PlotPriceenvelopesBottomLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotPriceenvelopesBottomLineOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotPriceenvelopesBottomLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotPriceenvelopesBottomLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait NexGuardFileMarkerSettings extends StObject {
 }
 object NexGuardFileMarkerSettings {
   
-  @scala.inline
-  def apply(): NexGuardFileMarkerSettings = {
+  inline def apply(): NexGuardFileMarkerSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NexGuardFileMarkerSettings]
   }
   
-  @scala.inline
-  implicit class NexGuardFileMarkerSettingsMutableBuilder[Self <: NexGuardFileMarkerSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NexGuardFileMarkerSettings](x: Self) {
     
-    @scala.inline
-    def setLicense(value: stringMin1Max100000): Self = StObject.set(x, "License", value.asInstanceOf[js.Any])
+    inline def setLicense(value: stringMin1Max100000): Self = StObject.set(x, "License", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseUndefined: Self = StObject.set(x, "License", js.undefined)
+    inline def setLicenseUndefined: Self = StObject.set(x, "License", js.undefined)
     
-    @scala.inline
-    def setPayload(value: integerMin0Max4194303): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: integerMin0Max4194303): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
-    @scala.inline
-    def setPreset(value: stringMin1Max256): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: stringMin1Max256): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
+    inline def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
     
-    @scala.inline
-    def setStrength(value: WatermarkingStrength): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: WatermarkingStrength): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
   }
 }

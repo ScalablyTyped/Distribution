@@ -109,8 +109,7 @@ object util {
     @JSGlobal("H.util.ContextItem.SEPARATOR")
     @js.native
     def SEPARATOR: typings.heremaps.H.util.ContextItem = js.native
-    @scala.inline
-    def SEPARATOR_=(x: typings.heremaps.H.util.ContextItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPARATOR")(x.asInstanceOf[js.Any])
+    inline def SEPARATOR_=(x: typings.heremaps.H.util.ContextItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPARATOR")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -343,8 +342,7 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @scala.inline
-      def EASE_IN_OUT_QUINT(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_IN_OUT_QUINT")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+      inline def EASE_IN_OUT_QUINT(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_IN_OUT_QUINT")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * This function defines quadratic ease in.
@@ -352,8 +350,7 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @scala.inline
-      def EASE_IN_QUAD(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_IN_QUAD")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+      inline def EASE_IN_QUAD(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_IN_QUAD")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * This function defines ease out with circ function.
@@ -361,8 +358,7 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @scala.inline
-      def EASE_OUT_CIRC(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_OUT_CIRC")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+      inline def EASE_OUT_CIRC(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_OUT_CIRC")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * This function defines quadratic ease out.
@@ -370,8 +366,7 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @scala.inline
-      def EASE_OUT_QUAD(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_OUT_QUAD")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+      inline def EASE_OUT_QUAD(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_OUT_QUAD")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * This function defines linear ease.
@@ -379,8 +374,7 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @scala.inline
-      def LINEAR(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEAR")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+      inline def LINEAR(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEAR")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
   }
   

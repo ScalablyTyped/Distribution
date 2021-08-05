@@ -18,8 +18,7 @@ trait EventListener extends StObject {
 }
 object EventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddListenerParam: String,
     AllListener: XAllListener,
     EventMethod: String,
@@ -30,22 +29,16 @@ object EventListener {
     __obj.asInstanceOf[EventListener]
   }
   
-  @scala.inline
-  implicit class EventListenerMutableBuilder[Self <: EventListener] (val x: Self) extends AnyVal {
+  extension [Self <: EventListener](x: Self) {
     
-    @scala.inline
-    def setAddListenerParam(value: String): Self = StObject.set(x, "AddListenerParam", value.asInstanceOf[js.Any])
+    inline def setAddListenerParam(value: String): Self = StObject.set(x, "AddListenerParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllListener(value: XAllListener): Self = StObject.set(x, "AllListener", value.asInstanceOf[js.Any])
+    inline def setAllListener(value: XAllListener): Self = StObject.set(x, "AllListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventMethod(value: String): Self = StObject.set(x, "EventMethod", value.asInstanceOf[js.Any])
+    inline def setEventMethod(value: String): Self = StObject.set(x, "EventMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelper(value: js.Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: js.Any): Self = StObject.set(x, "Helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerType(value: String): Self = StObject.set(x, "ListenerType", value.asInstanceOf[js.Any])
+    inline def setListenerType(value: String): Self = StObject.set(x, "ListenerType", value.asInstanceOf[js.Any])
   }
 }

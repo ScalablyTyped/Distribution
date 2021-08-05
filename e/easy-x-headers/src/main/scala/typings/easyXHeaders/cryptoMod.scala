@@ -13,53 +13,38 @@ object cryptoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createCipher(algorithm: String, password: js.Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Cipher]
+  inline def createCipher(algorithm: String, password: js.Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Cipher]
   
-  @scala.inline
-  def createCipheriv(algorithm: String, key: js.Any, iv: js.Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Cipher]
+  inline def createCipheriv(algorithm: String, key: js.Any, iv: js.Any): Cipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createCipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Cipher]
   
-  @scala.inline
-  def createCredentials(details: CredentialDetails): Credentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createCredentials")(details.asInstanceOf[js.Any]).asInstanceOf[Credentials]
+  inline def createCredentials(details: CredentialDetails): Credentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createCredentials")(details.asInstanceOf[js.Any]).asInstanceOf[Credentials]
   
-  @scala.inline
-  def createDecipher(algorithm: String, password: js.Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Decipher]
+  inline def createDecipher(algorithm: String, password: js.Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipher")(algorithm.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Decipher]
   
-  @scala.inline
-  def createDecipheriv(algorithm: String, key: js.Any, iv: js.Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Decipher]
+  inline def createDecipheriv(algorithm: String, key: js.Any, iv: js.Any): Decipher = (^.asInstanceOf[js.Dynamic].applyDynamic("createDecipheriv")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Decipher]
   
-  @scala.inline
-  def createDiffieHellman(prime_length: Double): DiffieHellman = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime_length.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman]
-  @scala.inline
-  def createDiffieHellman(prime: Double, encoding: String): DiffieHellman = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman]
+  inline def createDiffieHellman(prime_length: Double): DiffieHellman = ^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime_length.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman]
+  inline def createDiffieHellman(prime: Double, encoding: String): DiffieHellman = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiffieHellman")(prime.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[DiffieHellman]
   
-  @scala.inline
-  def createHash(algorithm: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  inline def createHash(algorithm: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hash]
   
-  @scala.inline
-  def createHmac(algorithm: String, key: String): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
-  @scala.inline
-  def createHmac(algorithm: String, key: Buffer): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
+  inline def createHmac(algorithm: String, key: String): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
+  inline def createHmac(algorithm: String, key: Buffer): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
   
-  @scala.inline
-  def createSign(algorithm: String): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Signer]
+  inline def createSign(algorithm: String): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Signer]
   
-  @scala.inline
-  def createVerify(algorith: String): Verify = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(algorith.asInstanceOf[js.Any]).asInstanceOf[Verify]
+  inline def createVerify(algorith: String): Verify = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(algorith.asInstanceOf[js.Any]).asInstanceOf[Verify]
   
-  @scala.inline
-  def getDiffieHellman(group_name: String): DiffieHellman = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiffieHellman")(group_name.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman]
+  inline def getDiffieHellman(group_name: String): DiffieHellman = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiffieHellman")(group_name.asInstanceOf[js.Any]).asInstanceOf[DiffieHellman]
   
-  @scala.inline
-  def pbkdf2(
+  inline def pbkdf2(
     password: String,
     salt: String,
     iterations: Double,
     keylen: Double,
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def pbkdf2(
+  inline def pbkdf2(
     password: String,
     salt: String,
     iterations: Double,
@@ -68,20 +53,14 @@ object cryptoMod {
     callback: js.Function2[/* err */ Error, /* derivedKey */ Buffer, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2Sync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2Sync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2Sync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def pbkdf2Sync(password: String, salt: String, iterations: Double, keylen: Double, digest: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2Sync")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], digest.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def pseudoRandomBytes(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def pseudoRandomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def pseudoRandomBytes(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def pseudoRandomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pseudoRandomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def randomBytes(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def randomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def randomBytes(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def randomBytes(size: Double, callback: js.Function2[/* err */ Error, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Cipher extends StObject {
@@ -118,8 +97,7 @@ object cryptoMod {
   }
   object CredentialDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ca: js.Any,
       cert: String,
       ciphers: String,
@@ -132,29 +110,21 @@ object cryptoMod {
       __obj.asInstanceOf[CredentialDetails]
     }
     
-    @scala.inline
-    implicit class CredentialDetailsMutableBuilder[Self <: CredentialDetails] (val x: Self) extends AnyVal {
+    extension [Self <: CredentialDetails](x: Self) {
       
-      @scala.inline
-      def setCa(value: js.Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: js.Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
+      inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrl(value: js.Any): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
+      inline def setCrl(value: js.Any): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+      inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,20 +134,16 @@ object cryptoMod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(): Credentials = {
+    inline def apply(): Credentials = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     }
   }
   
@@ -257,20 +223,16 @@ object cryptoMod {
   }
   object Signer {
     
-    @scala.inline
-    def apply(sign: (String, String) => String, update: js.Any => Unit): Signer = {
+    inline def apply(sign: (String, String) => String, update: js.Any => Unit): Signer = {
       val __obj = js.Dynamic.literal(sign = js.Any.fromFunction2(sign), update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[Signer]
     }
     
-    @scala.inline
-    implicit class SignerMutableBuilder[Self <: Signer] (val x: Self) extends AnyVal {
+    extension [Self <: Signer](x: Self) {
       
-      @scala.inline
-      def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
+      inline def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Tables")
 @js.native
-class Tables protected ()
+/* private */ class Tables ()
   extends StObject
      with typings.activexWord.Word.Tables

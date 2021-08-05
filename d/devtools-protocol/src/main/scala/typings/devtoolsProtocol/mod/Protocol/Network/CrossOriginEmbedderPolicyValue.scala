@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CrossOriginEmbedderPolicyValue extends StObject
 object CrossOriginEmbedderPolicyValue {
   
-  @scala.inline
-  def None: typings.devtoolsProtocol.devtoolsProtocolStrings.None = "None".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.None]
+  inline def None: typings.devtoolsProtocol.devtoolsProtocolStrings.None = "None".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.None]
   
-  @scala.inline
-  def RequireCorp: typings.devtoolsProtocol.devtoolsProtocolStrings.RequireCorp = "RequireCorp".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RequireCorp]
+  inline def RequireCorp: typings.devtoolsProtocol.devtoolsProtocolStrings.RequireCorp = "RequireCorp".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.RequireCorp]
 }

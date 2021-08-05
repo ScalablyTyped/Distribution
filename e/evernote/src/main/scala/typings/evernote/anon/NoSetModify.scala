@@ -16,37 +16,27 @@ trait NoSetModify extends StObject {
 }
 object NoSetModify {
   
-  @scala.inline
-  def apply(): NoSetModify = {
+  inline def apply(): NoSetModify = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoSetModify]
   }
   
-  @scala.inline
-  implicit class NoSetModifyMutableBuilder[Self <: NoSetModify] (val x: Self) extends AnyVal {
+  extension [Self <: NoSetModify](x: Self) {
     
-    @scala.inline
-    def setNoSetFullAccess(value: Boolean): Self = StObject.set(x, "noSetFullAccess", value.asInstanceOf[js.Any])
+    inline def setNoSetFullAccess(value: Boolean): Self = StObject.set(x, "noSetFullAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSetFullAccessUndefined: Self = StObject.set(x, "noSetFullAccess", js.undefined)
+    inline def setNoSetFullAccessUndefined: Self = StObject.set(x, "noSetFullAccess", js.undefined)
     
-    @scala.inline
-    def setNoSetModify(value: Boolean): Self = StObject.set(x, "noSetModify", value.asInstanceOf[js.Any])
+    inline def setNoSetModify(value: Boolean): Self = StObject.set(x, "noSetModify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSetModifyUndefined: Self = StObject.set(x, "noSetModify", js.undefined)
+    inline def setNoSetModifyUndefined: Self = StObject.set(x, "noSetModify", js.undefined)
     
-    @scala.inline
-    def setNoSetReadOnly(value: Boolean): Self = StObject.set(x, "noSetReadOnly", value.asInstanceOf[js.Any])
+    inline def setNoSetReadOnly(value: Boolean): Self = StObject.set(x, "noSetReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSetReadOnlyUndefined: Self = StObject.set(x, "noSetReadOnly", js.undefined)
+    inline def setNoSetReadOnlyUndefined: Self = StObject.set(x, "noSetReadOnly", js.undefined)
     
-    @scala.inline
-    def setNoSetReadPlusActivity(value: Boolean): Self = StObject.set(x, "noSetReadPlusActivity", value.asInstanceOf[js.Any])
+    inline def setNoSetReadPlusActivity(value: Boolean): Self = StObject.set(x, "noSetReadPlusActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSetReadPlusActivityUndefined: Self = StObject.set(x, "noSetReadPlusActivity", js.undefined)
+    inline def setNoSetReadPlusActivityUndefined: Self = StObject.set(x, "noSetReadPlusActivity", js.undefined)
   }
 }

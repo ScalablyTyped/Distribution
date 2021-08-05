@@ -18,25 +18,19 @@ trait KernelGatewayImageConfig extends StObject {
 }
 object KernelGatewayImageConfig {
   
-  @scala.inline
-  def apply(KernelSpecs: KernelSpecs): KernelGatewayImageConfig = {
+  inline def apply(KernelSpecs: KernelSpecs): KernelGatewayImageConfig = {
     val __obj = js.Dynamic.literal(KernelSpecs = KernelSpecs.asInstanceOf[js.Any])
     __obj.asInstanceOf[KernelGatewayImageConfig]
   }
   
-  @scala.inline
-  implicit class KernelGatewayImageConfigMutableBuilder[Self <: KernelGatewayImageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: KernelGatewayImageConfig](x: Self) {
     
-    @scala.inline
-    def setFileSystemConfig(value: FileSystemConfig): Self = StObject.set(x, "FileSystemConfig", value.asInstanceOf[js.Any])
+    inline def setFileSystemConfig(value: FileSystemConfig): Self = StObject.set(x, "FileSystemConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemConfigUndefined: Self = StObject.set(x, "FileSystemConfig", js.undefined)
+    inline def setFileSystemConfigUndefined: Self = StObject.set(x, "FileSystemConfig", js.undefined)
     
-    @scala.inline
-    def setKernelSpecs(value: KernelSpecs): Self = StObject.set(x, "KernelSpecs", value.asInstanceOf[js.Any])
+    inline def setKernelSpecs(value: KernelSpecs): Self = StObject.set(x, "KernelSpecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelSpecsVarargs(value: KernelSpec*): Self = StObject.set(x, "KernelSpecs", js.Array(value :_*))
+    inline def setKernelSpecsVarargs(value: KernelSpec*): Self = StObject.set(x, "KernelSpecs", js.Array(value :_*))
   }
 }

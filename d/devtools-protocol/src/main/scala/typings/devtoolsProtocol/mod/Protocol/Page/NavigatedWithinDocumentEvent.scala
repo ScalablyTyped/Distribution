@@ -18,19 +18,15 @@ trait NavigatedWithinDocumentEvent extends StObject {
 }
 object NavigatedWithinDocumentEvent {
   
-  @scala.inline
-  def apply(frameId: FrameId, url: String): NavigatedWithinDocumentEvent = {
+  inline def apply(frameId: FrameId, url: String): NavigatedWithinDocumentEvent = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatedWithinDocumentEvent]
   }
   
-  @scala.inline
-  implicit class NavigatedWithinDocumentEventMutableBuilder[Self <: NavigatedWithinDocumentEvent] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatedWithinDocumentEvent](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

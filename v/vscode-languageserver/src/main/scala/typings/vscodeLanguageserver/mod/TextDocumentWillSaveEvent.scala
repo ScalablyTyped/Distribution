@@ -18,19 +18,15 @@ trait TextDocumentWillSaveEvent[T] extends StObject {
 }
 object TextDocumentWillSaveEvent {
   
-  @scala.inline
-  def apply[T](document: T, reason: typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentSaveReason): TextDocumentWillSaveEvent[T] = {
+  inline def apply[T](document: T, reason: typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentSaveReason): TextDocumentWillSaveEvent[T] = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDocumentWillSaveEvent[T]]
   }
   
-  @scala.inline
-  implicit class TextDocumentWillSaveEventMutableBuilder[Self <: TextDocumentWillSaveEvent[?], T] (val x: Self & TextDocumentWillSaveEvent[T]) extends AnyVal {
+  extension [Self <: TextDocumentWillSaveEvent[?], T](x: Self & TextDocumentWillSaveEvent[T]) {
     
-    @scala.inline
-    def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentSaveReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentSaveReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

@@ -77,20 +77,16 @@ object replyMod {
   }
   object ReplyGenericInterface {
     
-    @scala.inline
-    def apply(): ReplyGenericInterface = {
+    inline def apply(): ReplyGenericInterface = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplyGenericInterface]
     }
     
-    @scala.inline
-    implicit class ReplyGenericInterfaceMutableBuilder[Self <: ReplyGenericInterface] (val x: Self) extends AnyVal {
+    extension [Self <: ReplyGenericInterface](x: Self) {
       
-      @scala.inline
-      def setReply(value: ReplyDefault): Self = StObject.set(x, "Reply", value.asInstanceOf[js.Any])
+      inline def setReply(value: ReplyDefault): Self = StObject.set(x, "Reply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyUndefined: Self = StObject.set(x, "Reply", js.undefined)
+      inline def setReplyUndefined: Self = StObject.set(x, "Reply", js.undefined)
     }
   }
 }

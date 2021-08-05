@@ -16,19 +16,15 @@ trait SchemaImageProperties extends StObject {
 }
 object SchemaImageProperties {
   
-  @scala.inline
-  def apply(): SchemaImageProperties = {
+  inline def apply(): SchemaImageProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImageProperties]
   }
   
-  @scala.inline
-  implicit class SchemaImagePropertiesMutableBuilder[Self <: SchemaImageProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImageProperties](x: Self) {
     
-    @scala.inline
-    def setDominantColors(value: SchemaDominantColorsAnnotation): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
+    inline def setDominantColors(value: SchemaDominantColorsAnnotation): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDominantColorsUndefined: Self = StObject.set(x, "dominantColors", js.undefined)
+    inline def setDominantColorsUndefined: Self = StObject.set(x, "dominantColors", js.undefined)
   }
 }

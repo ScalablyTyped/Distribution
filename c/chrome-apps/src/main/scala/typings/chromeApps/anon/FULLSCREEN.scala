@@ -20,25 +20,19 @@ trait FULLSCREEN extends StObject {
 }
 object FULLSCREEN {
   
-  @scala.inline
-  def apply(): FULLSCREEN = {
+  inline def apply(): FULLSCREEN = {
     val __obj = js.Dynamic.literal(FULLSCREEN = "fullscreen", MAXIMIZED = "maximized", MINIMIZED = "minimized", NORMAL = "normal")
     __obj.asInstanceOf[FULLSCREEN]
   }
   
-  @scala.inline
-  implicit class FULLSCREENMutableBuilder[Self <: FULLSCREEN] (val x: Self) extends AnyVal {
+  extension [Self <: FULLSCREEN](x: Self) {
     
-    @scala.inline
-    def setFULLSCREEN(value: fullscreen_): Self = StObject.set(x, "FULLSCREEN", value.asInstanceOf[js.Any])
+    inline def setFULLSCREEN(value: fullscreen_): Self = StObject.set(x, "FULLSCREEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAXIMIZED(value: maximized_): Self = StObject.set(x, "MAXIMIZED", value.asInstanceOf[js.Any])
+    inline def setMAXIMIZED(value: maximized_): Self = StObject.set(x, "MAXIMIZED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMINIMIZED(value: minimized_): Self = StObject.set(x, "MINIMIZED", value.asInstanceOf[js.Any])
+    inline def setMINIMIZED(value: minimized_): Self = StObject.set(x, "MINIMIZED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNORMAL(value: normal_): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
+    inline def setNORMAL(value: normal_): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
   }
 }

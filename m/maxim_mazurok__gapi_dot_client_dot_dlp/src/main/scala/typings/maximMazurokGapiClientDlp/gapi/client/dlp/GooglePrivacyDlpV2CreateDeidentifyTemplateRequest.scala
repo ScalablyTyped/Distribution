@@ -20,31 +20,23 @@ trait GooglePrivacyDlpV2CreateDeidentifyTemplateRequest extends StObject {
 }
 object GooglePrivacyDlpV2CreateDeidentifyTemplateRequest {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2CreateDeidentifyTemplateRequest = {
+  inline def apply(): GooglePrivacyDlpV2CreateDeidentifyTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2CreateDeidentifyTemplateRequest]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2CreateDeidentifyTemplateRequestMutableBuilder[Self <: GooglePrivacyDlpV2CreateDeidentifyTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2CreateDeidentifyTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setDeidentifyTemplate(value: GooglePrivacyDlpV2DeidentifyTemplate): Self = StObject.set(x, "deidentifyTemplate", value.asInstanceOf[js.Any])
+    inline def setDeidentifyTemplate(value: GooglePrivacyDlpV2DeidentifyTemplate): Self = StObject.set(x, "deidentifyTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeidentifyTemplateUndefined: Self = StObject.set(x, "deidentifyTemplate", js.undefined)
+    inline def setDeidentifyTemplateUndefined: Self = StObject.set(x, "deidentifyTemplate", js.undefined)
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

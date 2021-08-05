@@ -35,9 +35,7 @@ object Times {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): Times = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Times]
+  inline def create(): Times = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Times]
   
-  @scala.inline
-  def read(xmlNode: Node): Times = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any]).asInstanceOf[Times]
+  inline def read(xmlNode: Node): Times = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any]).asInstanceOf[Times]
 }

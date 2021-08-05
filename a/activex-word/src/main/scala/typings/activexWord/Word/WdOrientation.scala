@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOrientation extends StObject
 object WdOrientation {
   
-  @scala.inline
-  def wdOrientLandscape: `1` = 1.asInstanceOf[`1`]
+  inline def wdOrientLandscape: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdOrientPortrait: `0` = 0.asInstanceOf[`0`]
+  inline def wdOrientPortrait: `0` = 0.asInstanceOf[`0`]
 }

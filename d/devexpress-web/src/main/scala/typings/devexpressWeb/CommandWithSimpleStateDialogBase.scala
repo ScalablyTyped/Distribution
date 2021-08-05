@@ -16,16 +16,13 @@ trait CommandWithSimpleStateDialogBase extends StObject {
 }
 object CommandWithSimpleStateDialogBase {
   
-  @scala.inline
-  def apply(getState: () => SimpleCommandState): CommandWithSimpleStateDialogBase = {
+  inline def apply(getState: () => SimpleCommandState): CommandWithSimpleStateDialogBase = {
     val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[CommandWithSimpleStateDialogBase]
   }
   
-  @scala.inline
-  implicit class CommandWithSimpleStateDialogBaseMutableBuilder[Self <: CommandWithSimpleStateDialogBase] (val x: Self) extends AnyVal {
+  extension [Self <: CommandWithSimpleStateDialogBase](x: Self) {
     
-    @scala.inline
-    def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

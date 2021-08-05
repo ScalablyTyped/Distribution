@@ -17,22 +17,22 @@ class SyntaxInformationMap protected ()
      with typings.typescriptServices.TypeScript.SyntaxInformationMap {
   def this(trackParents: Boolean, trackPreviousToken: Boolean) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _currentPosition: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _elementToParent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _parentStack: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _previousToken: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _previousTokenInformation: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var elementToPosition: js.Any = js.native
   
   /* CompleteClass */
@@ -47,8 +47,8 @@ class SyntaxInformationMap protected ()
   /* CompleteClass */
   override def isFirstTokenInLine(token: ISyntaxToken): Boolean = js.native
   
-  /* CompleteClass */
-  /* private */ override def isFirstTokenInLineWorker(information: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def isFirstTokenInLineWorker(information: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def parent(element: ISyntaxElement): typings.typescriptServices.TypeScript.SyntaxNode = js.native
@@ -62,13 +62,13 @@ class SyntaxInformationMap protected ()
   /* CompleteClass */
   override def tokenInformation(token: ISyntaxToken): ITokenInformation = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var tokenToInformation: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var trackParents: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var trackPreviousToken: js.Any = js.native
   
   /* CompleteClass */
@@ -257,8 +257,8 @@ class SyntaxInformationMap protected ()
   /* CompleteClass */
   override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
   
-  /* CompleteClass */
-  /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def visitOptionalToken(token: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def visitParameter(node: typings.typescriptServices.TypeScript.ParameterSyntax): js.Any = js.native
@@ -357,8 +357,7 @@ object SyntaxInformationMap {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     node: typings.typescriptServices.TypeScript.SyntaxNode,
     trackParents: Boolean,
     trackPreviousToken: Boolean

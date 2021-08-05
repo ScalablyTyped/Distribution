@@ -27,8 +27,7 @@ trait RowSelectionChanged[TEntity] extends StObject {
 }
 object RowSelectionChanged {
   
-  @scala.inline
-  def apply[TEntity](
+  inline def apply[TEntity](
     rowSelectionChanged: (IScope, rowSelectionChangedHandler[TEntity]) => Unit,
     rowSelectionChangedBatch: (IScope, rowSelectionChangedBatchHandler[TEntity]) => Unit
   ): RowSelectionChanged[TEntity] = {
@@ -36,13 +35,10 @@ object RowSelectionChanged {
     __obj.asInstanceOf[RowSelectionChanged[TEntity]]
   }
   
-  @scala.inline
-  implicit class RowSelectionChangedMutableBuilder[Self <: RowSelectionChanged[?], TEntity] (val x: Self & RowSelectionChanged[TEntity]) extends AnyVal {
+  extension [Self <: RowSelectionChanged[?], TEntity](x: Self & RowSelectionChanged[TEntity]) {
     
-    @scala.inline
-    def setRowSelectionChanged(value: (IScope, rowSelectionChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowSelectionChanged", js.Any.fromFunction2(value))
+    inline def setRowSelectionChanged(value: (IScope, rowSelectionChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowSelectionChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRowSelectionChangedBatch(value: (IScope, rowSelectionChangedBatchHandler[TEntity]) => Unit): Self = StObject.set(x, "rowSelectionChangedBatch", js.Any.fromFunction2(value))
+    inline def setRowSelectionChangedBatch(value: (IScope, rowSelectionChangedBatchHandler[TEntity]) => Unit): Self = StObject.set(x, "rowSelectionChangedBatch", js.Any.fromFunction2(value))
   }
 }

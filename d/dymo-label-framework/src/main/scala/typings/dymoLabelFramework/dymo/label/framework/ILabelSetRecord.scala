@@ -42,8 +42,7 @@ trait ILabelSetRecord extends StObject {
 }
 object ILabelSetRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setBase64Image: (String, String) => ILabelSetRecord,
     setText: (String, String) => ILabelSetRecord,
     setTextMarkup: (String, String) => ILabelSetRecord
@@ -52,16 +51,12 @@ object ILabelSetRecord {
     __obj.asInstanceOf[ILabelSetRecord]
   }
   
-  @scala.inline
-  implicit class ILabelSetRecordMutableBuilder[Self <: ILabelSetRecord] (val x: Self) extends AnyVal {
+  extension [Self <: ILabelSetRecord](x: Self) {
     
-    @scala.inline
-    def setSetBase64Image(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setBase64Image", js.Any.fromFunction2(value))
+    inline def setSetBase64Image(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setBase64Image", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetText(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setText", js.Any.fromFunction2(value))
+    inline def setSetText(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetTextMarkup(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setTextMarkup", js.Any.fromFunction2(value))
+    inline def setSetTextMarkup(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setTextMarkup", js.Any.fromFunction2(value))
   }
 }

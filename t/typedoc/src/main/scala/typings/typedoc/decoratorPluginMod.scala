@@ -14,14 +14,14 @@ object decoratorPluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    var extractArguments: js.Any = js.native
+    /* private */ var extractArguments: js.Any = js.native
     
-    var onBegin: js.Any = js.native
+    /* private */ var onBegin: js.Any = js.native
     
-    var onBeginResolve: js.Any = js.native
+    /* private */ var onBeginResolve: js.Any = js.native
     
-    var onDeclaration: js.Any = js.native
+    /* private */ var onDeclaration: js.Any = js.native
     
-    var usages: js.Any = js.native
+    /* private */ var usages: js.Any = js.native
   }
 }

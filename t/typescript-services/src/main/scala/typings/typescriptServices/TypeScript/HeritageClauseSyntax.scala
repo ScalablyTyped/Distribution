@@ -9,7 +9,7 @@ trait HeritageClauseSyntax
   extends StObject
      with SyntaxNode {
   
-  var _kind: js.Any = js.native
+  /* private */ var _kind: js.Any = js.native
   
   var extendsOrImplementsKeyword: ISyntaxToken = js.native
   

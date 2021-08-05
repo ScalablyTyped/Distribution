@@ -13,22 +13,17 @@ trait DetachDiskResult extends StObject {
 }
 object DetachDiskResult {
   
-  @scala.inline
-  def apply(): DetachDiskResult = {
+  inline def apply(): DetachDiskResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetachDiskResult]
   }
   
-  @scala.inline
-  implicit class DetachDiskResultMutableBuilder[Self <: DetachDiskResult] (val x: Self) extends AnyVal {
+  extension [Self <: DetachDiskResult](x: Self) {
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

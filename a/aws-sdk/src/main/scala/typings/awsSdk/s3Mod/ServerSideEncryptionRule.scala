@@ -13,19 +13,15 @@ trait ServerSideEncryptionRule extends StObject {
 }
 object ServerSideEncryptionRule {
   
-  @scala.inline
-  def apply(): ServerSideEncryptionRule = {
+  inline def apply(): ServerSideEncryptionRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerSideEncryptionRule]
   }
   
-  @scala.inline
-  implicit class ServerSideEncryptionRuleMutableBuilder[Self <: ServerSideEncryptionRule] (val x: Self) extends AnyVal {
+  extension [Self <: ServerSideEncryptionRule](x: Self) {
     
-    @scala.inline
-    def setApplyServerSideEncryptionByDefault(value: ServerSideEncryptionByDefault): Self = StObject.set(x, "ApplyServerSideEncryptionByDefault", value.asInstanceOf[js.Any])
+    inline def setApplyServerSideEncryptionByDefault(value: ServerSideEncryptionByDefault): Self = StObject.set(x, "ApplyServerSideEncryptionByDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyServerSideEncryptionByDefaultUndefined: Self = StObject.set(x, "ApplyServerSideEncryptionByDefault", js.undefined)
+    inline def setApplyServerSideEncryptionByDefaultUndefined: Self = StObject.set(x, "ApplyServerSideEncryptionByDefault", js.undefined)
   }
 }

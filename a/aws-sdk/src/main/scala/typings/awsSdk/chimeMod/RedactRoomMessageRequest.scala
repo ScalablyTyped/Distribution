@@ -23,22 +23,17 @@ trait RedactRoomMessageRequest extends StObject {
 }
 object RedactRoomMessageRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, MessageId: NonEmptyString, RoomId: NonEmptyString): RedactRoomMessageRequest = {
+  inline def apply(AccountId: NonEmptyString, MessageId: NonEmptyString, RoomId: NonEmptyString): RedactRoomMessageRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any], RoomId = RoomId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedactRoomMessageRequest]
   }
   
-  @scala.inline
-  implicit class RedactRoomMessageRequestMutableBuilder[Self <: RedactRoomMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RedactRoomMessageRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageId(value: NonEmptyString): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: NonEmptyString): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomId(value: NonEmptyString): Self = StObject.set(x, "RoomId", value.asInstanceOf[js.Any])
+    inline def setRoomId(value: NonEmptyString): Self = StObject.set(x, "RoomId", value.asInstanceOf[js.Any])
   }
 }

@@ -20,40 +20,29 @@ trait QuerySource extends StObject {
 }
 object QuerySource {
   
-  @scala.inline
-  def apply(): QuerySource = {
+  inline def apply(): QuerySource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuerySource]
   }
   
-  @scala.inline
-  implicit class QuerySourceMutableBuilder[Self <: QuerySource] (val x: Self) extends AnyVal {
+  extension [Self <: QuerySource](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setOperators(value: js.Array[QueryOperator]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    inline def setOperators(value: js.Array[QueryOperator]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
+    inline def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
     
-    @scala.inline
-    def setOperatorsVarargs(value: QueryOperator*): Self = StObject.set(x, "operators", js.Array(value :_*))
+    inline def setOperatorsVarargs(value: QueryOperator*): Self = StObject.set(x, "operators", js.Array(value :_*))
     
-    @scala.inline
-    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+    inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+    inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material__progress-indicator"
-version := "8.0.0-e405c0"
+version := "8.0.0-d99d22"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

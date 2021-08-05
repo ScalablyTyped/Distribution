@@ -10,15 +10,11 @@ object mathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterFloat(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("filterFloat")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def filterFloat(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("filterFloat")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def isInt(n: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInt")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInt(n: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInt")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def positiveModulo(value: Double, modulo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("positiveModulo")(value.asInstanceOf[js.Any], modulo.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def positiveModulo(value: Double, modulo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("positiveModulo")(value.asInstanceOf[js.Any], modulo.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def roundSym(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("roundSym")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def roundSym(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("roundSym")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

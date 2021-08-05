@@ -14,31 +14,23 @@ trait INotebookMetadata extends StObject {
 }
 object INotebookMetadata {
   
-  @scala.inline
-  def apply(kernelspec: IKernelInfo): INotebookMetadata = {
+  inline def apply(kernelspec: IKernelInfo): INotebookMetadata = {
     val __obj = js.Dynamic.literal(kernelspec = kernelspec.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotebookMetadata]
   }
   
-  @scala.inline
-  implicit class INotebookMetadataMutableBuilder[Self <: INotebookMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: INotebookMetadata](x: Self) {
     
-    @scala.inline
-    def setKernelspec(value: IKernelInfo): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
+    inline def setKernelspec(value: IKernelInfo): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage_info(value: ILanguageInfo): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
+    inline def setLanguage_info(value: ILanguageInfo): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage_infoUndefined: Self = StObject.set(x, "language_info", js.undefined)
+    inline def setLanguage_infoUndefined: Self = StObject.set(x, "language_info", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

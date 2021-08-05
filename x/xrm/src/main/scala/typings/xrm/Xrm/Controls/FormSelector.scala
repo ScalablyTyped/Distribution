@@ -25,19 +25,15 @@ trait FormSelector extends StObject {
 }
 object FormSelector {
   
-  @scala.inline
-  def apply(getCurrentItem: () => FormItem, items: ItemCollection[FormItem]): FormSelector = {
+  inline def apply(getCurrentItem: () => FormItem, items: ItemCollection[FormItem]): FormSelector = {
     val __obj = js.Dynamic.literal(getCurrentItem = js.Any.fromFunction0(getCurrentItem), items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormSelector]
   }
   
-  @scala.inline
-  implicit class FormSelectorMutableBuilder[Self <: FormSelector] (val x: Self) extends AnyVal {
+  extension [Self <: FormSelector](x: Self) {
     
-    @scala.inline
-    def setGetCurrentItem(value: () => FormItem): Self = StObject.set(x, "getCurrentItem", js.Any.fromFunction0(value))
+    inline def setGetCurrentItem(value: () => FormItem): Self = StObject.set(x, "getCurrentItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItems(value: ItemCollection[FormItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ItemCollection[FormItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

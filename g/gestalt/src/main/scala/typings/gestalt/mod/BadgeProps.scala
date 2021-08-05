@@ -14,22 +14,17 @@ trait BadgeProps extends StObject {
 }
 object BadgeProps {
   
-  @scala.inline
-  def apply(text: String): BadgeProps = {
+  inline def apply(text: String): BadgeProps = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeProps]
   }
   
-  @scala.inline
-  implicit class BadgePropsMutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
+  extension [Self <: BadgeProps](x: Self) {
     
-    @scala.inline
-    def setPosition(value: middle | top): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: middle | top): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

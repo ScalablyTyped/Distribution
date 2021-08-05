@@ -29,8 +29,7 @@ trait GetAuthTypeResponse extends StObject {
 }
 object GetAuthTypeResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: () => GetAuthTypeResponse,
     printJson: () => String,
     setAuthType: AuthType => GetAuthTypeResponse,
@@ -40,19 +39,14 @@ object GetAuthTypeResponse {
     __obj.asInstanceOf[GetAuthTypeResponse]
   }
   
-  @scala.inline
-  implicit class GetAuthTypeResponseMutableBuilder[Self <: GetAuthTypeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAuthTypeResponse](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => GetAuthTypeResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => GetAuthTypeResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAuthType(value: AuthType => GetAuthTypeResponse): Self = StObject.set(x, "setAuthType", js.Any.fromFunction1(value))
+    inline def setSetAuthType(value: AuthType => GetAuthTypeResponse): Self = StObject.set(x, "setAuthType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHelpUrl(value: String => GetAuthTypeResponse): Self = StObject.set(x, "setHelpUrl", js.Any.fromFunction1(value))
+    inline def setSetHelpUrl(value: String => GetAuthTypeResponse): Self = StObject.set(x, "setHelpUrl", js.Any.fromFunction1(value))
   }
 }

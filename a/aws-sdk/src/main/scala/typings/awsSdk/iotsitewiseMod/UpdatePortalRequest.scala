@@ -40,43 +40,31 @@ trait UpdatePortalRequest extends StObject {
 }
 object UpdatePortalRequest {
   
-  @scala.inline
-  def apply(portalContactEmail: Email, portalId: ID, portalName: Name, roleArn: ARN): UpdatePortalRequest = {
+  inline def apply(portalContactEmail: Email, portalId: ID, portalName: Name, roleArn: ARN): UpdatePortalRequest = {
     val __obj = js.Dynamic.literal(portalContactEmail = portalContactEmail.asInstanceOf[js.Any], portalId = portalId.asInstanceOf[js.Any], portalName = portalName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePortalRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePortalRequestMutableBuilder[Self <: UpdatePortalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePortalRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setPortalContactEmail(value: Email): Self = StObject.set(x, "portalContactEmail", value.asInstanceOf[js.Any])
+    inline def setPortalContactEmail(value: Email): Self = StObject.set(x, "portalContactEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalDescription(value: Description): Self = StObject.set(x, "portalDescription", value.asInstanceOf[js.Any])
+    inline def setPortalDescription(value: Description): Self = StObject.set(x, "portalDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalDescriptionUndefined: Self = StObject.set(x, "portalDescription", js.undefined)
+    inline def setPortalDescriptionUndefined: Self = StObject.set(x, "portalDescription", js.undefined)
     
-    @scala.inline
-    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
+    inline def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalLogoImage(value: Image): Self = StObject.set(x, "portalLogoImage", value.asInstanceOf[js.Any])
+    inline def setPortalLogoImage(value: Image): Self = StObject.set(x, "portalLogoImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalLogoImageUndefined: Self = StObject.set(x, "portalLogoImage", js.undefined)
+    inline def setPortalLogoImageUndefined: Self = StObject.set(x, "portalLogoImage", js.undefined)
     
-    @scala.inline
-    def setPortalName(value: Name): Self = StObject.set(x, "portalName", value.asInstanceOf[js.Any])
+    inline def setPortalName(value: Name): Self = StObject.set(x, "portalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: ARN): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: ARN): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

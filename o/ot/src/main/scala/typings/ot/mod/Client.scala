@@ -76,14 +76,11 @@ object Client {
     @js.native
     def apply(outstanding: TextOperation): AwaitingConfirm = js.native
     
-    @scala.inline
-    implicit class AwaitingConfirmMutableBuilder[Self <: AwaitingConfirm] (val x: Self) extends AnyVal {
+    extension [Self <: AwaitingConfirm](x: Self) {
       
-      @scala.inline
-      def setOutstanding(value: TextOperation): Self = StObject.set(x, "outstanding", value.asInstanceOf[js.Any])
+      inline def setOutstanding(value: TextOperation): Self = StObject.set(x, "outstanding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResend(value: Client => Unit): Self = StObject.set(x, "resend", js.Any.fromFunction1(value))
+      inline def setResend(value: Client => Unit): Self = StObject.set(x, "resend", js.Any.fromFunction1(value))
     }
   }
   
@@ -107,17 +104,13 @@ object Client {
     @js.native
     def apply(outstanding: TextOperation, buffer: TextOperation): AwaitingWithBuffer = js.native
     
-    @scala.inline
-    implicit class AwaitingWithBufferMutableBuilder[Self <: AwaitingWithBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: AwaitingWithBuffer](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: TextOperation): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: TextOperation): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutstanding(value: TextOperation): Self = StObject.set(x, "outstanding", value.asInstanceOf[js.Any])
+      inline def setOutstanding(value: TextOperation): Self = StObject.set(x, "outstanding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResend(value: Client => Unit): Self = StObject.set(x, "resend", js.Any.fromFunction1(value))
+      inline def setResend(value: Client => Unit): Self = StObject.set(x, "resend", js.Any.fromFunction1(value))
     }
   }
   
@@ -147,8 +140,7 @@ object Client {
   }
   object Sync {
     
-    @scala.inline
-    def apply[C, S, A](
+    inline def apply[C, S, A](
       applyClient: (Client, TextOperation) => C,
       applyServer: (Client, TextOperation) => S,
       serverAck: () => A,
@@ -158,20 +150,15 @@ object Client {
       __obj.asInstanceOf[Sync[C, S, A]]
     }
     
-    @scala.inline
-    implicit class SyncMutableBuilder[Self <: Sync[?, ?, ?], C, S, A] (val x: Self & (Sync[C, S, A])) extends AnyVal {
+    extension [Self <: Sync[?, ?, ?], C, S, A](x: Self & (Sync[C, S, A])) {
       
-      @scala.inline
-      def setApplyClient(value: (Client, TextOperation) => C): Self = StObject.set(x, "applyClient", js.Any.fromFunction2(value))
+      inline def setApplyClient(value: (Client, TextOperation) => C): Self = StObject.set(x, "applyClient", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setApplyServer(value: (Client, TextOperation) => S): Self = StObject.set(x, "applyServer", js.Any.fromFunction2(value))
+      inline def setApplyServer(value: (Client, TextOperation) => S): Self = StObject.set(x, "applyServer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setServerAck(value: () => A): Self = StObject.set(x, "serverAck", js.Any.fromFunction0(value))
+      inline def setServerAck(value: () => A): Self = StObject.set(x, "serverAck", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTransformSelection(value: Selection => Selection): Self = StObject.set(x, "transformSelection", js.Any.fromFunction1(value))
+      inline def setTransformSelection(value: Selection => Selection): Self = StObject.set(x, "transformSelection", js.Any.fromFunction1(value))
     }
   }
 }

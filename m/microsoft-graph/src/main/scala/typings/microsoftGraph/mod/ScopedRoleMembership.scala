@@ -19,31 +19,23 @@ trait ScopedRoleMembership
 }
 object ScopedRoleMembership {
   
-  @scala.inline
-  def apply(): ScopedRoleMembership = {
+  inline def apply(): ScopedRoleMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScopedRoleMembership]
   }
   
-  @scala.inline
-  implicit class ScopedRoleMembershipMutableBuilder[Self <: ScopedRoleMembership] (val x: Self) extends AnyVal {
+  extension [Self <: ScopedRoleMembership](x: Self) {
     
-    @scala.inline
-    def setAdministrativeUnitId(value: String): Self = StObject.set(x, "administrativeUnitId", value.asInstanceOf[js.Any])
+    inline def setAdministrativeUnitId(value: String): Self = StObject.set(x, "administrativeUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdministrativeUnitIdUndefined: Self = StObject.set(x, "administrativeUnitId", js.undefined)
+    inline def setAdministrativeUnitIdUndefined: Self = StObject.set(x, "administrativeUnitId", js.undefined)
     
-    @scala.inline
-    def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
+    inline def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
+    inline def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
     
-    @scala.inline
-    def setRoleMemberInfo(value: Identity): Self = StObject.set(x, "roleMemberInfo", value.asInstanceOf[js.Any])
+    inline def setRoleMemberInfo(value: Identity): Self = StObject.set(x, "roleMemberInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleMemberInfoUndefined: Self = StObject.set(x, "roleMemberInfo", js.undefined)
+    inline def setRoleMemberInfoUndefined: Self = StObject.set(x, "roleMemberInfo", js.undefined)
   }
 }

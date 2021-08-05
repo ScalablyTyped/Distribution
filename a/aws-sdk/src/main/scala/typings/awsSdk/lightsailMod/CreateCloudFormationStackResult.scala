@@ -13,22 +13,17 @@ trait CreateCloudFormationStackResult extends StObject {
 }
 object CreateCloudFormationStackResult {
   
-  @scala.inline
-  def apply(): CreateCloudFormationStackResult = {
+  inline def apply(): CreateCloudFormationStackResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCloudFormationStackResult]
   }
   
-  @scala.inline
-  implicit class CreateCloudFormationStackResultMutableBuilder[Self <: CreateCloudFormationStackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCloudFormationStackResult](x: Self) {
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

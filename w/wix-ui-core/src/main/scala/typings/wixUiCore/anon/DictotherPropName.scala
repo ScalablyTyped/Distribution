@@ -15,25 +15,19 @@ trait DictotherPropName
 }
 object DictotherPropName {
   
-  @scala.inline
-  def apply(): DictotherPropName = {
+  inline def apply(): DictotherPropName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DictotherPropName]
   }
   
-  @scala.inline
-  implicit class DictotherPropNameMutableBuilder[Self <: DictotherPropName] (val x: Self) extends AnyVal {
+  extension [Self <: DictotherPropName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

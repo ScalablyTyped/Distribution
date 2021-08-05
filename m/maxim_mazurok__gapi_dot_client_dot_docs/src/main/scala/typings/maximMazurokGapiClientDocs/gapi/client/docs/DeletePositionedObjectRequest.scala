@@ -11,19 +11,15 @@ trait DeletePositionedObjectRequest extends StObject {
 }
 object DeletePositionedObjectRequest {
   
-  @scala.inline
-  def apply(): DeletePositionedObjectRequest = {
+  inline def apply(): DeletePositionedObjectRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeletePositionedObjectRequest]
   }
   
-  @scala.inline
-  implicit class DeletePositionedObjectRequestMutableBuilder[Self <: DeletePositionedObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePositionedObjectRequest](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

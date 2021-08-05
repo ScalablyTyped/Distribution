@@ -34,8 +34,8 @@ class TextureUvs ()
     * @param {PIXI.Rectangle} baseFrame - The base frame of the texture
     * @param {number} rotate - Rotation of frame, see {@link PIXI.groupD8}
     */
-  /* CompleteClass */
-  /* protected */ override def set(frame: typings.pixiJs.PIXI.Rectangle, baseFrame: typings.pixiJs.PIXI.Rectangle, rotate: Double): Unit = js.native
+  /* protected */ /* CompleteClass */
+  override def set(frame: typings.pixiJs.PIXI.Rectangle, baseFrame: typings.pixiJs.PIXI.Rectangle, rotate: Double): Unit = js.native
   
   /**
     * X-component of top-left corner `(x0,y0)`.

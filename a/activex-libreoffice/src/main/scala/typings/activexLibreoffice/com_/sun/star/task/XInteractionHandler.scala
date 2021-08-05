@@ -16,8 +16,7 @@ trait XInteractionHandler
 }
 object XInteractionHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     handle: XInteractionRequest => Unit,
     queryInterface: `type` => js.Any,
@@ -27,10 +26,8 @@ object XInteractionHandler {
     __obj.asInstanceOf[XInteractionHandler]
   }
   
-  @scala.inline
-  implicit class XInteractionHandlerMutableBuilder[Self <: XInteractionHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionHandler](x: Self) {
     
-    @scala.inline
-    def setHandle(value: XInteractionRequest => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+    inline def setHandle(value: XInteractionRequest => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
   }
 }

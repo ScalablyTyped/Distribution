@@ -43,8 +43,7 @@ trait INDTransmitterProperties extends StObject {
 }
 object INDTransmitterProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     certificateType: NDCertificateType,
     clientID: Double,
     expirationDate: Date,
@@ -61,40 +60,28 @@ object INDTransmitterProperties {
     __obj.asInstanceOf[INDTransmitterProperties]
   }
   
-  @scala.inline
-  implicit class INDTransmitterPropertiesMutableBuilder[Self <: INDTransmitterProperties] (val x: Self) extends AnyVal {
+  extension [Self <: INDTransmitterProperties](x: Self) {
     
-    @scala.inline
-    def setCertificateType(value: NDCertificateType): Self = StObject.set(x, "certificateType", value.asInstanceOf[js.Any])
+    inline def setCertificateType(value: NDCertificateType): Self = StObject.set(x, "certificateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientID(value: Double): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+    inline def setClientID(value: Double): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelDigest(value: Double): Self = StObject.set(x, "modelDigest", value.asInstanceOf[js.Any])
+    inline def setModelDigest(value: Double): Self = StObject.set(x, "modelDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelManufacturerName(value: String): Self = StObject.set(x, "modelManufacturerName", value.asInstanceOf[js.Any])
+    inline def setModelManufacturerName(value: String): Self = StObject.set(x, "modelManufacturerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
+    inline def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformIdentifier(value: NDCertificatePlatformID): Self = StObject.set(x, "platformIdentifier", value.asInstanceOf[js.Any])
+    inline def setPlatformIdentifier(value: NDCertificatePlatformID): Self = StObject.set(x, "platformIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityLevel(value: Double): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
+    inline def setSecurityLevel(value: Double): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityVersion(value: Double): Self = StObject.set(x, "securityVersion", value.asInstanceOf[js.Any])
+    inline def setSecurityVersion(value: Double): Self = StObject.set(x, "securityVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedFeatures(value: NDCertificateFeature): Self = StObject.set(x, "supportedFeatures", value.asInstanceOf[js.Any])
+    inline def setSupportedFeatures(value: NDCertificateFeature): Self = StObject.set(x, "supportedFeatures", value.asInstanceOf[js.Any])
   }
 }

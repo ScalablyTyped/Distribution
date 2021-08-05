@@ -19,19 +19,15 @@ trait CredentialCommand extends StObject {
 }
 object CredentialCommand {
   
-  @scala.inline
-  def apply(credentialDeleted: /* command */ CredentialCommand => Unit, passwordCredential: PasswordCredential): CredentialCommand = {
+  inline def apply(credentialDeleted: /* command */ CredentialCommand => Unit, passwordCredential: PasswordCredential): CredentialCommand = {
     val __obj = js.Dynamic.literal(credentialDeleted = js.Any.fromFunction1(credentialDeleted), passwordCredential = passwordCredential.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialCommand]
   }
   
-  @scala.inline
-  implicit class CredentialCommandMutableBuilder[Self <: CredentialCommand] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialCommand](x: Self) {
     
-    @scala.inline
-    def setCredentialDeleted(value: /* command */ CredentialCommand => Unit): Self = StObject.set(x, "credentialDeleted", js.Any.fromFunction1(value))
+    inline def setCredentialDeleted(value: /* command */ CredentialCommand => Unit): Self = StObject.set(x, "credentialDeleted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPasswordCredential(value: PasswordCredential): Self = StObject.set(x, "passwordCredential", value.asInstanceOf[js.Any])
+    inline def setPasswordCredential(value: PasswordCredential): Self = StObject.set(x, "passwordCredential", value.asInstanceOf[js.Any])
   }
 }

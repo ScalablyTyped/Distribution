@@ -12,17 +12,14 @@ object downloaderMod {
   }
   object Downloader {
     
-    @scala.inline
-    def apply[T](download: (String, String, T) => js.Promise[Unit]): Downloader[T] = {
+    inline def apply[T](download: (String, String, T) => js.Promise[Unit]): Downloader[T] = {
       val __obj = js.Dynamic.literal(download = js.Any.fromFunction3(download))
       __obj.asInstanceOf[Downloader[T]]
     }
     
-    @scala.inline
-    implicit class DownloaderMutableBuilder[Self <: Downloader[?], T] (val x: Self & Downloader[T]) extends AnyVal {
+    extension [Self <: Downloader[?], T](x: Self & Downloader[T]) {
       
-      @scala.inline
-      def setDownload(value: (String, String, T) => js.Promise[Unit]): Self = StObject.set(x, "download", js.Any.fromFunction3(value))
+      inline def setDownload(value: (String, String, T) => js.Promise[Unit]): Self = StObject.set(x, "download", js.Any.fromFunction3(value))
     }
   }
 }

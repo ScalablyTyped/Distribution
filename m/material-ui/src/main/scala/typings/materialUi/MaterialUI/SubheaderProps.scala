@@ -13,25 +13,19 @@ trait SubheaderProps extends StObject {
 }
 object SubheaderProps {
   
-  @scala.inline
-  def apply(): SubheaderProps = {
+  inline def apply(): SubheaderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubheaderProps]
   }
   
-  @scala.inline
-  implicit class SubheaderPropsMutableBuilder[Self <: SubheaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: SubheaderProps](x: Self) {
     
-    @scala.inline
-    def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

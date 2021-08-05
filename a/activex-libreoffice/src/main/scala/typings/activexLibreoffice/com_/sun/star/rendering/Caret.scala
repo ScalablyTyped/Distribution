@@ -37,22 +37,17 @@ trait Caret extends StObject {
 }
 object Caret {
   
-  @scala.inline
-  def apply(CaretAngle: Double, MainCaretIndex: Double, SecondaryCaretIndex: Double): Caret = {
+  inline def apply(CaretAngle: Double, MainCaretIndex: Double, SecondaryCaretIndex: Double): Caret = {
     val __obj = js.Dynamic.literal(CaretAngle = CaretAngle.asInstanceOf[js.Any], MainCaretIndex = MainCaretIndex.asInstanceOf[js.Any], SecondaryCaretIndex = SecondaryCaretIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Caret]
   }
   
-  @scala.inline
-  implicit class CaretMutableBuilder[Self <: Caret] (val x: Self) extends AnyVal {
+  extension [Self <: Caret](x: Self) {
     
-    @scala.inline
-    def setCaretAngle(value: Double): Self = StObject.set(x, "CaretAngle", value.asInstanceOf[js.Any])
+    inline def setCaretAngle(value: Double): Self = StObject.set(x, "CaretAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainCaretIndex(value: Double): Self = StObject.set(x, "MainCaretIndex", value.asInstanceOf[js.Any])
+    inline def setMainCaretIndex(value: Double): Self = StObject.set(x, "MainCaretIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryCaretIndex(value: Double): Self = StObject.set(x, "SecondaryCaretIndex", value.asInstanceOf[js.Any])
+    inline def setSecondaryCaretIndex(value: Double): Self = StObject.set(x, "SecondaryCaretIndex", value.asInstanceOf[js.Any])
   }
 }

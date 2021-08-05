@@ -16,8 +16,7 @@ trait GitPullRequestCommentThread
 }
 object GitPullRequestCommentThread {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     comments: js.Array[Comment],
     id: Double,
@@ -33,10 +32,8 @@ object GitPullRequestCommentThread {
     __obj.asInstanceOf[GitPullRequestCommentThread]
   }
   
-  @scala.inline
-  implicit class GitPullRequestCommentThreadMutableBuilder[Self <: GitPullRequestCommentThread] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestCommentThread](x: Self) {
     
-    @scala.inline
-    def setPullRequestThreadContext(value: GitPullRequestCommentThreadContext): Self = StObject.set(x, "pullRequestThreadContext", value.asInstanceOf[js.Any])
+    inline def setPullRequestThreadContext(value: GitPullRequestCommentThreadContext): Self = StObject.set(x, "pullRequestThreadContext", value.asInstanceOf[js.Any])
   }
 }

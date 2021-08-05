@@ -14,31 +14,23 @@ trait GetMessageActionsResponse extends StObject {
 }
 object GetMessageActionsResponse {
   
-  @scala.inline
-  def apply(data: js.Array[MessageAction]): GetMessageActionsResponse = {
+  inline def apply(data: js.Array[MessageAction]): GetMessageActionsResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMessageActionsResponse]
   }
   
-  @scala.inline
-  implicit class GetMessageActionsResponseMutableBuilder[Self <: GetMessageActionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMessageActionsResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[MessageAction]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[MessageAction]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: MessageAction*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: MessageAction*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

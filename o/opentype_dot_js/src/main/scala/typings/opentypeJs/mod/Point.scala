@@ -10,19 +10,15 @@ trait Point extends StObject {
 }
 object Point {
   
-  @scala.inline
-  def apply(): Point = {
+  inline def apply(): Point = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Point]
   }
   
-  @scala.inline
-  implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+  extension [Self <: Point](x: Self) {
     
-    @scala.inline
-    def setLastPointOfContour(value: Boolean): Self = StObject.set(x, "lastPointOfContour", value.asInstanceOf[js.Any])
+    inline def setLastPointOfContour(value: Boolean): Self = StObject.set(x, "lastPointOfContour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPointOfContourUndefined: Self = StObject.set(x, "lastPointOfContour", js.undefined)
+    inline def setLastPointOfContourUndefined: Self = StObject.set(x, "lastPointOfContour", js.undefined)
   }
 }

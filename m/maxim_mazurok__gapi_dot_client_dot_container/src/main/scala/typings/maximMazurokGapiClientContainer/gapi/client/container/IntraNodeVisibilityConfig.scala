@@ -11,19 +11,15 @@ trait IntraNodeVisibilityConfig extends StObject {
 }
 object IntraNodeVisibilityConfig {
   
-  @scala.inline
-  def apply(): IntraNodeVisibilityConfig = {
+  inline def apply(): IntraNodeVisibilityConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntraNodeVisibilityConfig]
   }
   
-  @scala.inline
-  implicit class IntraNodeVisibilityConfigMutableBuilder[Self <: IntraNodeVisibilityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IntraNodeVisibilityConfig](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

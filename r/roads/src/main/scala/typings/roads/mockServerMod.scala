@@ -11,8 +11,7 @@ object mockServerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Promise[Server] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Server]]
+  inline def default(): js.Promise[Server] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Server]]
   
   @JSImport("roads/types/tests/resources/mockServer", "port")
   @js.native

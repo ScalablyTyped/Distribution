@@ -23,31 +23,23 @@ trait GetBluetoothAdapterStateSuccess extends StObject {
 }
 object GetBluetoothAdapterStateSuccess {
   
-  @scala.inline
-  def apply(): GetBluetoothAdapterStateSuccess = {
+  inline def apply(): GetBluetoothAdapterStateSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBluetoothAdapterStateSuccess]
   }
   
-  @scala.inline
-  implicit class GetBluetoothAdapterStateSuccessMutableBuilder[Self <: GetBluetoothAdapterStateSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: GetBluetoothAdapterStateSuccess](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
+    inline def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
-    @scala.inline
-    def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
+    inline def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoveringUndefined: Self = StObject.set(x, "discovering", js.undefined)
+    inline def setDiscoveringUndefined: Self = StObject.set(x, "discovering", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
   }
 }

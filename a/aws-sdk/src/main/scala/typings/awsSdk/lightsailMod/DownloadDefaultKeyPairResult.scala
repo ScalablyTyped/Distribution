@@ -18,25 +18,19 @@ trait DownloadDefaultKeyPairResult extends StObject {
 }
 object DownloadDefaultKeyPairResult {
   
-  @scala.inline
-  def apply(): DownloadDefaultKeyPairResult = {
+  inline def apply(): DownloadDefaultKeyPairResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DownloadDefaultKeyPairResult]
   }
   
-  @scala.inline
-  implicit class DownloadDefaultKeyPairResultMutableBuilder[Self <: DownloadDefaultKeyPairResult] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadDefaultKeyPairResult](x: Self) {
     
-    @scala.inline
-    def setPrivateKeyBase64(value: Base64): Self = StObject.set(x, "privateKeyBase64", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyBase64(value: Base64): Self = StObject.set(x, "privateKeyBase64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyBase64Undefined: Self = StObject.set(x, "privateKeyBase64", js.undefined)
+    inline def setPrivateKeyBase64Undefined: Self = StObject.set(x, "privateKeyBase64", js.undefined)
     
-    @scala.inline
-    def setPublicKeyBase64(value: Base64): Self = StObject.set(x, "publicKeyBase64", value.asInstanceOf[js.Any])
+    inline def setPublicKeyBase64(value: Base64): Self = StObject.set(x, "publicKeyBase64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyBase64Undefined: Self = StObject.set(x, "publicKeyBase64", js.undefined)
+    inline def setPublicKeyBase64Undefined: Self = StObject.set(x, "publicKeyBase64", js.undefined)
   }
 }

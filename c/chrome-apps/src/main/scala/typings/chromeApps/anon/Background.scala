@@ -10,16 +10,13 @@ trait Background extends StObject {
 }
 object Background {
   
-  @scala.inline
-  def apply(background: Scripts): Background = {
+  inline def apply(background: Scripts): Background = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any])
     __obj.asInstanceOf[Background]
   }
   
-  @scala.inline
-  implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
+  extension [Self <: Background](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Scripts): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Scripts): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
   }
 }

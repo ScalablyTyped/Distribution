@@ -38,8 +38,7 @@ object repudiation {
   }
   object RepudiationData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AuthorId: String,
       CreationDate: Double,
       CreditedFunds: MoneyData,
@@ -63,20 +62,15 @@ object repudiation {
       __obj.asInstanceOf[RepudiationData]
     }
     
-    @scala.inline
-    implicit class RepudiationDataMutableBuilder[Self <: RepudiationData] (val x: Self) extends AnyVal {
+    extension [Self <: RepudiationData](x: Self) {
       
-      @scala.inline
-      def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
+      inline def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
+      inline def setInitialTransactionType(value: TransactionType): Self = StObject.set(x, "InitialTransactionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNature(value: REPUDIATION): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
+      inline def setNature(value: REPUDIATION): Self = StObject.set(x, "Nature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefundReason(value: RefundReason): Self = StObject.set(x, "RefundReason", value.asInstanceOf[js.Any])
+      inline def setRefundReason(value: RefundReason): Self = StObject.set(x, "RefundReason", value.asInstanceOf[js.Any])
     }
   }
 }

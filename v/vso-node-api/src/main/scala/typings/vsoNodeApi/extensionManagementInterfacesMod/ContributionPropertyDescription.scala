@@ -28,26 +28,20 @@ trait ContributionPropertyDescription extends StObject {
 }
 object ContributionPropertyDescription {
   
-  @scala.inline
-  def apply(description: String, name: String, required: Boolean, `type`: ContributionPropertyType): ContributionPropertyDescription = {
+  inline def apply(description: String, name: String, required: Boolean, `type`: ContributionPropertyType): ContributionPropertyDescription = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContributionPropertyDescription]
   }
   
-  @scala.inline
-  implicit class ContributionPropertyDescriptionMutableBuilder[Self <: ContributionPropertyDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ContributionPropertyDescription](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ContributionPropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ContributionPropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

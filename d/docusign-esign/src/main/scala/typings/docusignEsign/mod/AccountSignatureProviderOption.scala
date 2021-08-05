@@ -23,31 +23,23 @@ trait AccountSignatureProviderOption extends StObject {
 }
 object AccountSignatureProviderOption {
   
-  @scala.inline
-  def apply(): AccountSignatureProviderOption = {
+  inline def apply(): AccountSignatureProviderOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountSignatureProviderOption]
   }
   
-  @scala.inline
-  implicit class AccountSignatureProviderOptionMutableBuilder[Self <: AccountSignatureProviderOption] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSignatureProviderOption](x: Self) {
     
-    @scala.inline
-    def setSignatureProviderOptionDisplayName(value: String): Self = StObject.set(x, "signatureProviderOptionDisplayName", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderOptionDisplayName(value: String): Self = StObject.set(x, "signatureProviderOptionDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderOptionDisplayNameUndefined: Self = StObject.set(x, "signatureProviderOptionDisplayName", js.undefined)
+    inline def setSignatureProviderOptionDisplayNameUndefined: Self = StObject.set(x, "signatureProviderOptionDisplayName", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderOptionId(value: String): Self = StObject.set(x, "signatureProviderOptionId", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderOptionId(value: String): Self = StObject.set(x, "signatureProviderOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderOptionIdUndefined: Self = StObject.set(x, "signatureProviderOptionId", js.undefined)
+    inline def setSignatureProviderOptionIdUndefined: Self = StObject.set(x, "signatureProviderOptionId", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderOptionName(value: String): Self = StObject.set(x, "signatureProviderOptionName", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderOptionName(value: String): Self = StObject.set(x, "signatureProviderOptionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderOptionNameUndefined: Self = StObject.set(x, "signatureProviderOptionName", js.undefined)
+    inline def setSignatureProviderOptionNameUndefined: Self = StObject.set(x, "signatureProviderOptionName", js.undefined)
   }
 }

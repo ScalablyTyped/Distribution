@@ -16,37 +16,27 @@ trait HlsCdnSettings extends StObject {
 }
 object HlsCdnSettings {
   
-  @scala.inline
-  def apply(): HlsCdnSettings = {
+  inline def apply(): HlsCdnSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsCdnSettings]
   }
   
-  @scala.inline
-  implicit class HlsCdnSettingsMutableBuilder[Self <: HlsCdnSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsCdnSettings](x: Self) {
     
-    @scala.inline
-    def setHlsAkamaiSettings(value: HlsAkamaiSettings): Self = StObject.set(x, "HlsAkamaiSettings", value.asInstanceOf[js.Any])
+    inline def setHlsAkamaiSettings(value: HlsAkamaiSettings): Self = StObject.set(x, "HlsAkamaiSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsAkamaiSettingsUndefined: Self = StObject.set(x, "HlsAkamaiSettings", js.undefined)
+    inline def setHlsAkamaiSettingsUndefined: Self = StObject.set(x, "HlsAkamaiSettings", js.undefined)
     
-    @scala.inline
-    def setHlsBasicPutSettings(value: HlsBasicPutSettings): Self = StObject.set(x, "HlsBasicPutSettings", value.asInstanceOf[js.Any])
+    inline def setHlsBasicPutSettings(value: HlsBasicPutSettings): Self = StObject.set(x, "HlsBasicPutSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsBasicPutSettingsUndefined: Self = StObject.set(x, "HlsBasicPutSettings", js.undefined)
+    inline def setHlsBasicPutSettingsUndefined: Self = StObject.set(x, "HlsBasicPutSettings", js.undefined)
     
-    @scala.inline
-    def setHlsMediaStoreSettings(value: HlsMediaStoreSettings): Self = StObject.set(x, "HlsMediaStoreSettings", value.asInstanceOf[js.Any])
+    inline def setHlsMediaStoreSettings(value: HlsMediaStoreSettings): Self = StObject.set(x, "HlsMediaStoreSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsMediaStoreSettingsUndefined: Self = StObject.set(x, "HlsMediaStoreSettings", js.undefined)
+    inline def setHlsMediaStoreSettingsUndefined: Self = StObject.set(x, "HlsMediaStoreSettings", js.undefined)
     
-    @scala.inline
-    def setHlsWebdavSettings(value: HlsWebdavSettings): Self = StObject.set(x, "HlsWebdavSettings", value.asInstanceOf[js.Any])
+    inline def setHlsWebdavSettings(value: HlsWebdavSettings): Self = StObject.set(x, "HlsWebdavSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsWebdavSettingsUndefined: Self = StObject.set(x, "HlsWebdavSettings", js.undefined)
+    inline def setHlsWebdavSettingsUndefined: Self = StObject.set(x, "HlsWebdavSettings", js.undefined)
   }
 }

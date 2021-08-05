@@ -12,25 +12,19 @@ trait FormatLang extends StObject {
 }
 object FormatLang {
   
-  @scala.inline
-  def apply(): FormatLang = {
+  inline def apply(): FormatLang = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatLang]
   }
   
-  @scala.inline
-  implicit class FormatLangMutableBuilder[Self <: FormatLang] (val x: Self) extends AnyVal {
+  extension [Self <: FormatLang](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
   }
 }

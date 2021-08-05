@@ -11,16 +11,13 @@ trait PickImplscrollLock extends StObject {
 }
 object PickImplscrollLock {
   
-  @scala.inline
-  def apply(scrollLock: Boolean): PickImplscrollLock = {
+  inline def apply(scrollLock: Boolean): PickImplscrollLock = {
     val __obj = js.Dynamic.literal(scrollLock = scrollLock.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplscrollLock]
   }
   
-  @scala.inline
-  implicit class PickImplscrollLockMutableBuilder[Self <: PickImplscrollLock] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplscrollLock](x: Self) {
     
-    @scala.inline
-    def setScrollLock(value: Boolean): Self = StObject.set(x, "scrollLock", value.asInstanceOf[js.Any])
+    inline def setScrollLock(value: Boolean): Self = StObject.set(x, "scrollLock", value.asInstanceOf[js.Any])
   }
 }

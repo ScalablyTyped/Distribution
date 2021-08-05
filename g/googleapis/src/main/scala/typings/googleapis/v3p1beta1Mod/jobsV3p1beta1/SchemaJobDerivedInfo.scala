@@ -22,31 +22,23 @@ trait SchemaJobDerivedInfo extends StObject {
 }
 object SchemaJobDerivedInfo {
   
-  @scala.inline
-  def apply(): SchemaJobDerivedInfo = {
+  inline def apply(): SchemaJobDerivedInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobDerivedInfo]
   }
   
-  @scala.inline
-  implicit class SchemaJobDerivedInfoMutableBuilder[Self <: SchemaJobDerivedInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobDerivedInfo](x: Self) {
     
-    @scala.inline
-    def setJobCategories(value: js.Array[String]): Self = StObject.set(x, "jobCategories", value.asInstanceOf[js.Any])
+    inline def setJobCategories(value: js.Array[String]): Self = StObject.set(x, "jobCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobCategoriesUndefined: Self = StObject.set(x, "jobCategories", js.undefined)
+    inline def setJobCategoriesUndefined: Self = StObject.set(x, "jobCategories", js.undefined)
     
-    @scala.inline
-    def setJobCategoriesVarargs(value: String*): Self = StObject.set(x, "jobCategories", js.Array(value :_*))
+    inline def setJobCategoriesVarargs(value: String*): Self = StObject.set(x, "jobCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setLocations(value: js.Array[SchemaLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[SchemaLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: SchemaLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: SchemaLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

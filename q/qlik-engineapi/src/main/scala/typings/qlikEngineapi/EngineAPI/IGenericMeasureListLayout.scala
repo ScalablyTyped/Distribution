@@ -15,16 +15,13 @@ trait IGenericMeasureListLayout
 }
 object IGenericMeasureListLayout {
   
-  @scala.inline
-  def apply(qInfo: INxInfo, qMeassureListObject: IMeassureList, qMeta: INxMeta): IGenericMeasureListLayout = {
+  inline def apply(qInfo: INxInfo, qMeassureListObject: IMeassureList, qMeta: INxMeta): IGenericMeasureListLayout = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qMeassureListObject = qMeassureListObject.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericMeasureListLayout]
   }
   
-  @scala.inline
-  implicit class IGenericMeasureListLayoutMutableBuilder[Self <: IGenericMeasureListLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericMeasureListLayout](x: Self) {
     
-    @scala.inline
-    def setQMeassureListObject(value: IMeassureList): Self = StObject.set(x, "qMeassureListObject", value.asInstanceOf[js.Any])
+    inline def setQMeassureListObject(value: IMeassureList): Self = StObject.set(x, "qMeassureListObject", value.asInstanceOf[js.Any])
   }
 }

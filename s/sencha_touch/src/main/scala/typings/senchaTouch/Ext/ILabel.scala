@@ -14,19 +14,15 @@ trait ILabel
 }
 object ILabel {
   
-  @scala.inline
-  def apply(): ILabel = {
+  inline def apply(): ILabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILabel]
   }
   
-  @scala.inline
-  implicit class ILabelMutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
+  extension [Self <: ILabel](x: Self) {
     
-    @scala.inline
-    def setHtml(value: java.lang.String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: java.lang.String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
   }
 }

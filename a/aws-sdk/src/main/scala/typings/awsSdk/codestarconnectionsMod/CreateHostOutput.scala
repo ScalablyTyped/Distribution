@@ -13,19 +13,15 @@ trait CreateHostOutput extends StObject {
 }
 object CreateHostOutput {
   
-  @scala.inline
-  def apply(): CreateHostOutput = {
+  inline def apply(): CreateHostOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateHostOutput]
   }
   
-  @scala.inline
-  implicit class CreateHostOutputMutableBuilder[Self <: CreateHostOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHostOutput](x: Self) {
     
-    @scala.inline
-    def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
+    inline def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostArnUndefined: Self = StObject.set(x, "HostArn", js.undefined)
+    inline def setHostArnUndefined: Self = StObject.set(x, "HostArn", js.undefined)
   }
 }

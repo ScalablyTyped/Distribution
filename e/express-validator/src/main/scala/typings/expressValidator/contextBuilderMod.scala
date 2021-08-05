@@ -18,13 +18,13 @@ object contextBuilderMod {
     
     def build(): Context = js.native
     
-    var fields: js.Any = js.native
+    /* private */ var fields: js.Any = js.native
     
-    var locations: js.Any = js.native
+    /* private */ var locations: js.Any = js.native
     
-    var message: js.Any = js.native
+    /* private */ var message: js.Any = js.native
     
-    var optional: js.Any = js.native
+    /* private */ var optional: js.Any = js.native
     
     def setFields(fields: js.Array[String]): this.type = js.native
     
@@ -34,6 +34,6 @@ object contextBuilderMod {
     
     def setOptional(options: Optional): this.type = js.native
     
-    val stack: js.Any = js.native
+    /* private */ val stack: js.Any = js.native
   }
 }

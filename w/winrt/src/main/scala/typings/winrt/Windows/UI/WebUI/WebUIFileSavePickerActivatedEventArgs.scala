@@ -15,8 +15,7 @@ trait WebUIFileSavePickerActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIFileSavePickerActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     fileSavePickerUI: FileSavePickerUI,
     kind: ActivationKind,

@@ -64,8 +64,7 @@ object global {
     @JSGlobal("Waypoint.Adapter")
     @js.native
     def Adapter: typings.waypoints.WaypointAdapter = js.native
-    @scala.inline
-    def Adapter_=(x: typings.waypoints.WaypointAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Adapter")(x.asInstanceOf[js.Any])
+    inline def Adapter_=(x: typings.waypoints.WaypointAdapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Adapter")(x.asInstanceOf[js.Any])
     
     // Waypoint.Context
     /* static member */
@@ -75,8 +74,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def findByElement(element: HTMLElement): js.UndefOr[typings.waypoints.WaypointContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByElement")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.waypoints.WaypointContext]]
+      inline def findByElement(element: HTMLElement): js.UndefOr[typings.waypoints.WaypointContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByElement")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.waypoints.WaypointContext]]
     }
     
     /* static member */
@@ -89,35 +87,28 @@ object global {
       @JSGlobal("Waypoint.adapters.push")
       @js.native
       def push: Adapter = js.native
-      @scala.inline
-      def push_=(x: Adapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("push")(x.asInstanceOf[js.Any])
+      inline def push_=(x: Adapter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("push")(x.asInstanceOf[js.Any])
     }
     
     // actually `null` not string
     // Class Methods
     /* static member */
-    @scala.inline
-    def destroyAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")().asInstanceOf[Unit]
+    inline def destroyAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyAll")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def disableAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableAll")().asInstanceOf[Unit]
+    inline def disableAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableAll")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def enableAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAll")().asInstanceOf[Unit]
+    inline def enableAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAll")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def refreshAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshAll")().asInstanceOf[Unit]
+    inline def refreshAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshAll")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def viewportHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("viewportHeight")().asInstanceOf[Double]
+    inline def viewportHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("viewportHeight")().asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def viewportWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("viewportWidth")().asInstanceOf[Double]
+    inline def viewportWidth(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("viewportWidth")().asInstanceOf[Double]
   }
   
   @JSGlobal("WaypointAdapter")
@@ -161,16 +152,13 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(objects: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def extend(objects: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def inArray(value: js.Any, array: js.Array[js.Any], startIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def inArray(value: js.Any, array: js.Array[js.Any], startIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def isEmptyObject(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isEmptyObject(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSGlobal("WaypointContext")

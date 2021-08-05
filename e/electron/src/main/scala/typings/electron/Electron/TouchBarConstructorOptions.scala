@@ -18,38 +18,30 @@ trait TouchBarConstructorOptions extends StObject {
 }
 object TouchBarConstructorOptions {
   
-  @scala.inline
-  def apply(): TouchBarConstructorOptions = {
+  inline def apply(): TouchBarConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchBarConstructorOptions]
   }
   
-  @scala.inline
-  implicit class TouchBarConstructorOptionsMutableBuilder[Self <: TouchBarConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchBarConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setEscapeItem(
+    inline def setEscapeItem(
       value: TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer
     ): Self = StObject.set(x, "escapeItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeItemNull: Self = StObject.set(x, "escapeItem", null)
+    inline def setEscapeItemNull: Self = StObject.set(x, "escapeItem", null)
     
-    @scala.inline
-    def setEscapeItemUndefined: Self = StObject.set(x, "escapeItem", js.undefined)
+    inline def setEscapeItemUndefined: Self = StObject.set(x, "escapeItem", js.undefined)
     
-    @scala.inline
-    def setItems(
+    inline def setItems(
       value: js.Array[
           TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer
         ]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(
+    inline def setItemsVarargs(
       value: (TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer)*
     ): Self = StObject.set(x, "items", js.Array(value :_*))
   }

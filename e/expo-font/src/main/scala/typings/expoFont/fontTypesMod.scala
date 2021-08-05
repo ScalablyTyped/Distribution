@@ -78,23 +78,18 @@ object fontTypesMod {
   }
   object FontResource {
     
-    @scala.inline
-    def apply(uri: String | Double): FontResource = {
+    inline def apply(uri: String | Double): FontResource = {
       val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontResource]
     }
     
-    @scala.inline
-    implicit class FontResourceMutableBuilder[Self <: FontResource] (val x: Self) extends AnyVal {
+    extension [Self <: FontResource](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setUri(value: String | Double): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String | Double): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,20 +102,16 @@ object fontTypesMod {
   }
   object UnloadFontOptions {
     
-    @scala.inline
-    def apply(): UnloadFontOptions = {
+    inline def apply(): UnloadFontOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnloadFontOptions]
     }
     
-    @scala.inline
-    implicit class UnloadFontOptionsMutableBuilder[Self <: UnloadFontOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UnloadFontOptions](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     }
   }
 }

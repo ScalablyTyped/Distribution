@@ -16,37 +16,27 @@ trait LineScatterCandleRadarConfig extends StObject {
 }
 object LineScatterCandleRadarConfig {
   
-  @scala.inline
-  def apply(): LineScatterCandleRadarConfig = {
+  inline def apply(): LineScatterCandleRadarConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineScatterCandleRadarConfig]
   }
   
-  @scala.inline
-  implicit class LineScatterCandleRadarConfigMutableBuilder[Self <: LineScatterCandleRadarConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LineScatterCandleRadarConfig](x: Self) {
     
-    @scala.inline
-    def setDrawHighlightIndicators(value: Boolean): Self = StObject.set(x, "drawHighlightIndicators", value.asInstanceOf[js.Any])
+    inline def setDrawHighlightIndicators(value: Boolean): Self = StObject.set(x, "drawHighlightIndicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawHighlightIndicatorsUndefined: Self = StObject.set(x, "drawHighlightIndicators", js.undefined)
+    inline def setDrawHighlightIndicatorsUndefined: Self = StObject.set(x, "drawHighlightIndicators", js.undefined)
     
-    @scala.inline
-    def setDrawHorizontalHighlightIndicator(value: Boolean): Self = StObject.set(x, "drawHorizontalHighlightIndicator", value.asInstanceOf[js.Any])
+    inline def setDrawHorizontalHighlightIndicator(value: Boolean): Self = StObject.set(x, "drawHorizontalHighlightIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawHorizontalHighlightIndicatorUndefined: Self = StObject.set(x, "drawHorizontalHighlightIndicator", js.undefined)
+    inline def setDrawHorizontalHighlightIndicatorUndefined: Self = StObject.set(x, "drawHorizontalHighlightIndicator", js.undefined)
     
-    @scala.inline
-    def setDrawVerticalHighlightIndicator(value: Boolean): Self = StObject.set(x, "drawVerticalHighlightIndicator", value.asInstanceOf[js.Any])
+    inline def setDrawVerticalHighlightIndicator(value: Boolean): Self = StObject.set(x, "drawVerticalHighlightIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawVerticalHighlightIndicatorUndefined: Self = StObject.set(x, "drawVerticalHighlightIndicator", js.undefined)
+    inline def setDrawVerticalHighlightIndicatorUndefined: Self = StObject.set(x, "drawVerticalHighlightIndicator", js.undefined)
     
-    @scala.inline
-    def setHighlightLineWidth(value: Double): Self = StObject.set(x, "highlightLineWidth", value.asInstanceOf[js.Any])
+    inline def setHighlightLineWidth(value: Double): Self = StObject.set(x, "highlightLineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightLineWidthUndefined: Self = StObject.set(x, "highlightLineWidth", js.undefined)
+    inline def setHighlightLineWidthUndefined: Self = StObject.set(x, "highlightLineWidth", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait BLEPeripheralService extends StObject {
 }
 object BLEPeripheralService {
   
-  @scala.inline
-  def apply(characteristics: js.Array[Characteristic], uuid: String): BLEPeripheralService = {
+  inline def apply(characteristics: js.Array[Characteristic], uuid: String): BLEPeripheralService = {
     val __obj = js.Dynamic.literal(characteristics = characteristics.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[BLEPeripheralService]
   }
   
-  @scala.inline
-  implicit class BLEPeripheralServiceMutableBuilder[Self <: BLEPeripheralService] (val x: Self) extends AnyVal {
+  extension [Self <: BLEPeripheralService](x: Self) {
     
-    @scala.inline
-    def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
+    inline def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+    inline def setCharacteristicsVarargs(value: Characteristic*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

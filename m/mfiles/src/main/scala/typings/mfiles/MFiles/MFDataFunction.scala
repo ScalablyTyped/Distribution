@@ -29,33 +29,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFDataFunction extends StObject
 object MFDataFunction {
   
-  @scala.inline
-  def Date: `4` = 4.asInstanceOf[`4`]
+  inline def Date: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def DaysFrom: `5` = 5.asInstanceOf[`5`]
+  inline def DaysFrom: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def DaysTo: `6` = 6.asInstanceOf[`6`]
+  inline def DaysTo: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def InitialCharGroup: `9` = 9.asInstanceOf[`9`]
+  inline def InitialCharGroup: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def IntegerSegment: `7` = 7.asInstanceOf[`7`]
+  inline def IntegerSegment: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def LeftChars: `8` = 8.asInstanceOf[`8`]
+  inline def LeftChars: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def Month: `2` = 2.asInstanceOf[`2`]
+  inline def Month: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def NoOp: `0` = 0.asInstanceOf[`0`]
+  inline def NoOp: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Year: `1` = 1.asInstanceOf[`1`]
+  inline def Year: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def YearAndMonth: `3` = 3.asInstanceOf[`3`]
+  inline def YearAndMonth: `3` = 3.asInstanceOf[`3`]
 }

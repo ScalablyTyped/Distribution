@@ -9,8 +9,7 @@ trait BitmapTransform
      with IBitmapTransform
 object BitmapTransform {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: BitmapBounds,
     flip: BitmapFlip,
     interpolationMode: BitmapInterpolationMode,

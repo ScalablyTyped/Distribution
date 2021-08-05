@@ -33,8 +33,7 @@ trait GlobalTransferCommandArgument extends StObject {
 }
 object GlobalTransferCommandArgument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NameClash: Double,
     NewTitle: String,
     Operation: TransferCommandOperation,
@@ -45,22 +44,16 @@ object GlobalTransferCommandArgument {
     __obj.asInstanceOf[GlobalTransferCommandArgument]
   }
   
-  @scala.inline
-  implicit class GlobalTransferCommandArgumentMutableBuilder[Self <: GlobalTransferCommandArgument] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalTransferCommandArgument](x: Self) {
     
-    @scala.inline
-    def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
+    inline def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTitle(value: String): Self = StObject.set(x, "NewTitle", value.asInstanceOf[js.Any])
+    inline def setNewTitle(value: String): Self = StObject.set(x, "NewTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: TransferCommandOperation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: TransferCommandOperation): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceURL(value: String): Self = StObject.set(x, "SourceURL", value.asInstanceOf[js.Any])
+    inline def setSourceURL(value: String): Self = StObject.set(x, "SourceURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetURL(value: String): Self = StObject.set(x, "TargetURL", value.asInstanceOf[js.Any])
+    inline def setTargetURL(value: String): Self = StObject.set(x, "TargetURL", value.asInstanceOf[js.Any])
   }
 }

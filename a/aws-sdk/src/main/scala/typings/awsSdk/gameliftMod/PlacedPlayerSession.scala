@@ -18,25 +18,19 @@ trait PlacedPlayerSession extends StObject {
 }
 object PlacedPlayerSession {
   
-  @scala.inline
-  def apply(): PlacedPlayerSession = {
+  inline def apply(): PlacedPlayerSession = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacedPlayerSession]
   }
   
-  @scala.inline
-  implicit class PlacedPlayerSessionMutableBuilder[Self <: PlacedPlayerSession] (val x: Self) extends AnyVal {
+  extension [Self <: PlacedPlayerSession](x: Self) {
     
-    @scala.inline
-    def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
+    inline def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
     
-    @scala.inline
-    def setPlayerSessionId(value: PlayerSessionId): Self = StObject.set(x, "PlayerSessionId", value.asInstanceOf[js.Any])
+    inline def setPlayerSessionId(value: PlayerSessionId): Self = StObject.set(x, "PlayerSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerSessionIdUndefined: Self = StObject.set(x, "PlayerSessionId", js.undefined)
+    inline def setPlayerSessionIdUndefined: Self = StObject.set(x, "PlayerSessionId", js.undefined)
   }
 }

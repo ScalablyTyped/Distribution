@@ -33,31 +33,23 @@ trait ApplicationUsageFilter extends StObject {
 }
 object ApplicationUsageFilter {
   
-  @scala.inline
-  def apply(): ApplicationUsageFilter = {
+  inline def apply(): ApplicationUsageFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationUsageFilter]
   }
   
-  @scala.inline
-  implicit class ApplicationUsageFilterMutableBuilder[Self <: ApplicationUsageFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationUsageFilter](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTimeSpan(value: Double): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
+    inline def setTimeSpan(value: Double): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
+    inline def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
   }
 }

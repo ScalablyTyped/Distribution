@@ -12,19 +12,15 @@ trait LocaleMatcher extends StObject {
 }
 object LocaleMatcher {
   
-  @scala.inline
-  def apply(): LocaleMatcher = {
+  inline def apply(): LocaleMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocaleMatcher]
   }
   
-  @scala.inline
-  implicit class LocaleMatcherMutableBuilder[Self <: LocaleMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleMatcher](x: Self) {
     
-    @scala.inline
-    def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+    inline def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+    inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
   }
 }

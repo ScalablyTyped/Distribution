@@ -9,8 +9,7 @@ object global {
   @JSGlobal("ko")
   @js.native
   def ko: KnockoutStatic = js.native
-  @scala.inline
-  def ko_=(x: KnockoutStatic): Unit = js.Dynamic.global.updateDynamic("ko")(x.asInstanceOf[js.Any])
+  inline def ko_=(x: KnockoutStatic): Unit = js.Dynamic.global.updateDynamic("ko")(x.asInstanceOf[js.Any])
   
   //
   // namespace for ko.plus types

@@ -14,19 +14,15 @@ trait LookupOneOptions
 }
 object LookupOneOptions {
   
-  @scala.inline
-  def apply(): LookupOneOptions = {
+  inline def apply(): LookupOneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LookupOneOptions]
   }
   
-  @scala.inline
-  implicit class LookupOneOptionsMutableBuilder[Self <: LookupOneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LookupOneOptions](x: Self) {
     
-    @scala.inline
-    def setAll(value: `false`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: `false`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
   }
 }

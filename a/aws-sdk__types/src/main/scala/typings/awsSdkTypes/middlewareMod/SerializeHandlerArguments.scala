@@ -20,19 +20,15 @@ trait SerializeHandlerArguments[Input /* <: js.Object */]
 }
 object SerializeHandlerArguments {
   
-  @scala.inline
-  def apply[Input /* <: js.Object */](input: Input): SerializeHandlerArguments[Input] = {
+  inline def apply[Input /* <: js.Object */](input: Input): SerializeHandlerArguments[Input] = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializeHandlerArguments[Input]]
   }
   
-  @scala.inline
-  implicit class SerializeHandlerArgumentsMutableBuilder[Self <: SerializeHandlerArguments[?], Input /* <: js.Object */] (val x: Self & SerializeHandlerArguments[Input]) extends AnyVal {
+  extension [Self <: SerializeHandlerArguments[?], Input /* <: js.Object */](x: Self & SerializeHandlerArguments[Input]) {
     
-    @scala.inline
-    def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
   }
 }

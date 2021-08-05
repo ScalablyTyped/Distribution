@@ -33,43 +33,31 @@ trait ResumableFileObject extends StObject {
 }
 object ResumableFileObject {
   
-  @scala.inline
-  def apply(): ResumableFileObject = {
+  inline def apply(): ResumableFileObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResumableFileObject]
   }
   
-  @scala.inline
-  implicit class ResumableFileObjectMutableBuilder[Self <: ResumableFileObject] (val x: Self) extends AnyVal {
+  extension [Self <: ResumableFileObject](x: Self) {
     
-    @scala.inline
-    def setCustomResumeData(value: js.Any): Self = StObject.set(x, "customResumeData", value.asInstanceOf[js.Any])
+    inline def setCustomResumeData(value: js.Any): Self = StObject.set(x, "customResumeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomResumeDataUndefined: Self = StObject.set(x, "customResumeData", js.undefined)
+    inline def setCustomResumeDataUndefined: Self = StObject.set(x, "customResumeData", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+    inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
+    inline def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setUuid(value: Double): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: Double): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

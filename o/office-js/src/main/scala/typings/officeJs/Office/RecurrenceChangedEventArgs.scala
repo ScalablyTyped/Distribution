@@ -23,20 +23,16 @@ trait RecurrenceChangedEventArgs extends StObject {
 }
 object RecurrenceChangedEventArgs {
   
-  @scala.inline
-  def apply(recurrence: Recurrence): RecurrenceChangedEventArgs = {
+  inline def apply(recurrence: Recurrence): RecurrenceChangedEventArgs = {
     val __obj = js.Dynamic.literal(recurrence = recurrence.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("olkRecurrenceChanged")
     __obj.asInstanceOf[RecurrenceChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class RecurrenceChangedEventArgsMutableBuilder[Self <: RecurrenceChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RecurrenceChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRecurrence(value: Recurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
+    inline def setRecurrence(value: Recurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: olkRecurrenceChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: olkRecurrenceChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

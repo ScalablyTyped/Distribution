@@ -10,16 +10,13 @@ trait NavigationOptionsOptions[Options] extends StObject {
 }
 object NavigationOptionsOptions {
   
-  @scala.inline
-  def apply[Options](navigationOptions: Options): NavigationOptionsOptions[Options] = {
+  inline def apply[Options](navigationOptions: Options): NavigationOptionsOptions[Options] = {
     val __obj = js.Dynamic.literal(navigationOptions = navigationOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationOptionsOptions[Options]]
   }
   
-  @scala.inline
-  implicit class NavigationOptionsOptionsMutableBuilder[Self <: NavigationOptionsOptions[?], Options] (val x: Self & NavigationOptionsOptions[Options]) extends AnyVal {
+  extension [Self <: NavigationOptionsOptions[?], Options](x: Self & NavigationOptionsOptions[Options]) {
     
-    @scala.inline
-    def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
+    inline def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
   }
 }

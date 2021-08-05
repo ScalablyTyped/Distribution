@@ -27,32 +27,24 @@ object imagebuilder {
   }
   object DistributionConfigurationDistribution {
     
-    @scala.inline
-    def apply(region: Input[String]): DistributionConfigurationDistribution = {
+    inline def apply(region: Input[String]): DistributionConfigurationDistribution = {
       val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
       __obj.asInstanceOf[DistributionConfigurationDistribution]
     }
     
-    @scala.inline
-    implicit class DistributionConfigurationDistributionMutableBuilder[Self <: DistributionConfigurationDistribution] (val x: Self) extends AnyVal {
+    extension [Self <: DistributionConfigurationDistribution](x: Self) {
       
-      @scala.inline
-      def setAmiDistributionConfiguration(value: Input[DistributionConfigurationDistributionAmiDistributionConfiguration]): Self = StObject.set(x, "amiDistributionConfiguration", value.asInstanceOf[js.Any])
+      inline def setAmiDistributionConfiguration(value: Input[DistributionConfigurationDistributionAmiDistributionConfiguration]): Self = StObject.set(x, "amiDistributionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmiDistributionConfigurationUndefined: Self = StObject.set(x, "amiDistributionConfiguration", js.undefined)
+      inline def setAmiDistributionConfigurationUndefined: Self = StObject.set(x, "amiDistributionConfiguration", js.undefined)
       
-      @scala.inline
-      def setLicenseConfigurationArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "licenseConfigurationArns", value.asInstanceOf[js.Any])
+      inline def setLicenseConfigurationArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "licenseConfigurationArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseConfigurationArnsUndefined: Self = StObject.set(x, "licenseConfigurationArns", js.undefined)
+      inline def setLicenseConfigurationArnsUndefined: Self = StObject.set(x, "licenseConfigurationArns", js.undefined)
       
-      @scala.inline
-      def setLicenseConfigurationArnsVarargs(value: Input[String]*): Self = StObject.set(x, "licenseConfigurationArns", js.Array(value :_*))
+      inline def setLicenseConfigurationArnsVarargs(value: Input[String]*): Self = StObject.set(x, "licenseConfigurationArns", js.Array(value :_*))
       
-      @scala.inline
-      def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Input[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,57 +86,42 @@ object imagebuilder {
   }
   object DistributionConfigurationDistributionAmiDistributionConfiguration {
     
-    @scala.inline
-    def apply(): DistributionConfigurationDistributionAmiDistributionConfiguration = {
+    inline def apply(): DistributionConfigurationDistributionAmiDistributionConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DistributionConfigurationDistributionAmiDistributionConfiguration]
     }
     
-    @scala.inline
-    implicit class DistributionConfigurationDistributionAmiDistributionConfigurationMutableBuilder[Self <: DistributionConfigurationDistributionAmiDistributionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: DistributionConfigurationDistributionAmiDistributionConfiguration](x: Self) {
       
-      @scala.inline
-      def setAmiTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "amiTags", value.asInstanceOf[js.Any])
+      inline def setAmiTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "amiTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmiTagsUndefined: Self = StObject.set(x, "amiTags", js.undefined)
+      inline def setAmiTagsUndefined: Self = StObject.set(x, "amiTags", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setLaunchPermission(
+      inline def setLaunchPermission(
         value: Input[
               DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission
             ]
       ): Self = StObject.set(x, "launchPermission", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchPermissionUndefined: Self = StObject.set(x, "launchPermission", js.undefined)
+      inline def setLaunchPermissionUndefined: Self = StObject.set(x, "launchPermission", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTargetAccountIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "targetAccountIds", value.asInstanceOf[js.Any])
+      inline def setTargetAccountIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "targetAccountIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetAccountIdsUndefined: Self = StObject.set(x, "targetAccountIds", js.undefined)
+      inline def setTargetAccountIdsUndefined: Self = StObject.set(x, "targetAccountIds", js.undefined)
       
-      @scala.inline
-      def setTargetAccountIdsVarargs(value: Input[String]*): Self = StObject.set(x, "targetAccountIds", js.Array(value :_*))
+      inline def setTargetAccountIdsVarargs(value: Input[String]*): Self = StObject.set(x, "targetAccountIds", js.Array(value :_*))
     }
   }
   
@@ -162,32 +139,24 @@ object imagebuilder {
   }
   object DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission {
     
-    @scala.inline
-    def apply(): DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission = {
+    inline def apply(): DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission]
     }
     
-    @scala.inline
-    implicit class DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionMutableBuilder[Self <: DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission] (val x: Self) extends AnyVal {
+    extension [Self <: DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission](x: Self) {
       
-      @scala.inline
-      def setUserGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "userGroups", value.asInstanceOf[js.Any])
+      inline def setUserGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "userGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserGroupsUndefined: Self = StObject.set(x, "userGroups", js.undefined)
+      inline def setUserGroupsUndefined: Self = StObject.set(x, "userGroups", js.undefined)
       
-      @scala.inline
-      def setUserGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "userGroups", js.Array(value :_*))
+      inline def setUserGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "userGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setUserIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
+      inline def setUserIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdsUndefined: Self = StObject.set(x, "userIds", js.undefined)
+      inline def setUserIdsUndefined: Self = StObject.set(x, "userIds", js.undefined)
       
-      @scala.inline
-      def setUserIdsVarargs(value: Input[String]*): Self = StObject.set(x, "userIds", js.Array(value :_*))
+      inline def setUserIdsVarargs(value: Input[String]*): Self = StObject.set(x, "userIds", js.Array(value :_*))
     }
   }
   
@@ -200,17 +169,14 @@ object imagebuilder {
   }
   object InfrastructureConfigurationLogging {
     
-    @scala.inline
-    def apply(s3Logs: Input[InfrastructureConfigurationLoggingS3Logs]): InfrastructureConfigurationLogging = {
+    inline def apply(s3Logs: Input[InfrastructureConfigurationLoggingS3Logs]): InfrastructureConfigurationLogging = {
       val __obj = js.Dynamic.literal(s3Logs = s3Logs.asInstanceOf[js.Any])
       __obj.asInstanceOf[InfrastructureConfigurationLogging]
     }
     
-    @scala.inline
-    implicit class InfrastructureConfigurationLoggingMutableBuilder[Self <: InfrastructureConfigurationLogging] (val x: Self) extends AnyVal {
+    extension [Self <: InfrastructureConfigurationLogging](x: Self) {
       
-      @scala.inline
-      def setS3Logs(value: Input[InfrastructureConfigurationLoggingS3Logs]): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
+      inline def setS3Logs(value: Input[InfrastructureConfigurationLoggingS3Logs]): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,23 +194,18 @@ object imagebuilder {
   }
   object InfrastructureConfigurationLoggingS3Logs {
     
-    @scala.inline
-    def apply(s3BucketName: Input[String]): InfrastructureConfigurationLoggingS3Logs = {
+    inline def apply(s3BucketName: Input[String]): InfrastructureConfigurationLoggingS3Logs = {
       val __obj = js.Dynamic.literal(s3BucketName = s3BucketName.asInstanceOf[js.Any])
       __obj.asInstanceOf[InfrastructureConfigurationLoggingS3Logs]
     }
     
-    @scala.inline
-    implicit class InfrastructureConfigurationLoggingS3LogsMutableBuilder[Self <: InfrastructureConfigurationLoggingS3Logs] (val x: Self) extends AnyVal {
+    extension [Self <: InfrastructureConfigurationLoggingS3Logs](x: Self) {
       
-      @scala.inline
-      def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+      inline def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+      inline def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+      inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
     }
   }
 }

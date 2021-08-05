@@ -13,16 +13,13 @@ trait DescribeProjectResponse extends StObject {
 }
 object DescribeProjectResponse {
   
-  @scala.inline
-  def apply(project: ProjectDescription): DescribeProjectResponse = {
+  inline def apply(project: ProjectDescription): DescribeProjectResponse = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProjectResponse]
   }
   
-  @scala.inline
-  implicit class DescribeProjectResponseMutableBuilder[Self <: DescribeProjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProjectResponse](x: Self) {
     
-    @scala.inline
-    def setProject(value: ProjectDescription): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectDescription): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
   }
 }

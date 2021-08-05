@@ -22,20 +22,16 @@ trait IonRippleEffect extends StObject {
 }
 object IonRippleEffect {
   
-  @scala.inline
-  def apply(addRipple: (Double, Double) => js.Promise[js.Function0[Unit]], `type`: bounded | unbounded): IonRippleEffect = {
+  inline def apply(addRipple: (Double, Double) => js.Promise[js.Function0[Unit]], `type`: bounded | unbounded): IonRippleEffect = {
     val __obj = js.Dynamic.literal(addRipple = js.Any.fromFunction2(addRipple))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRippleEffect]
   }
   
-  @scala.inline
-  implicit class IonRippleEffectMutableBuilder[Self <: IonRippleEffect] (val x: Self) extends AnyVal {
+  extension [Self <: IonRippleEffect](x: Self) {
     
-    @scala.inline
-    def setAddRipple(value: (Double, Double) => js.Promise[js.Function0[Unit]]): Self = StObject.set(x, "addRipple", js.Any.fromFunction2(value))
+    inline def setAddRipple(value: (Double, Double) => js.Promise[js.Function0[Unit]]): Self = StObject.set(x, "addRipple", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: bounded | unbounded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bounded | unbounded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

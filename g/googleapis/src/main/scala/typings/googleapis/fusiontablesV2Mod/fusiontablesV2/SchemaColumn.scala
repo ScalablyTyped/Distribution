@@ -100,88 +100,61 @@ trait SchemaColumn extends StObject {
 }
 object SchemaColumn {
   
-  @scala.inline
-  def apply(): SchemaColumn = {
+  inline def apply(): SchemaColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaColumn]
   }
   
-  @scala.inline
-  implicit class SchemaColumnMutableBuilder[Self <: SchemaColumn] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaColumn](x: Self) {
     
-    @scala.inline
-    def setBaseColumn(value: ColumnId): Self = StObject.set(x, "baseColumn", value.asInstanceOf[js.Any])
+    inline def setBaseColumn(value: ColumnId): Self = StObject.set(x, "baseColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseColumnUndefined: Self = StObject.set(x, "baseColumn", js.undefined)
+    inline def setBaseColumnUndefined: Self = StObject.set(x, "baseColumn", js.undefined)
     
-    @scala.inline
-    def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
+    inline def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
+    inline def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
     
-    @scala.inline
-    def setColumnJsonSchema(value: String): Self = StObject.set(x, "columnJsonSchema", value.asInstanceOf[js.Any])
+    inline def setColumnJsonSchema(value: String): Self = StObject.set(x, "columnJsonSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnJsonSchemaUndefined: Self = StObject.set(x, "columnJsonSchema", js.undefined)
+    inline def setColumnJsonSchemaUndefined: Self = StObject.set(x, "columnJsonSchema", js.undefined)
     
-    @scala.inline
-    def setColumnPropertiesJson(value: String): Self = StObject.set(x, "columnPropertiesJson", value.asInstanceOf[js.Any])
+    inline def setColumnPropertiesJson(value: String): Self = StObject.set(x, "columnPropertiesJson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnPropertiesJsonUndefined: Self = StObject.set(x, "columnPropertiesJson", js.undefined)
+    inline def setColumnPropertiesJsonUndefined: Self = StObject.set(x, "columnPropertiesJson", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFormatPattern(value: String): Self = StObject.set(x, "formatPattern", value.asInstanceOf[js.Any])
+    inline def setFormatPattern(value: String): Self = StObject.set(x, "formatPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatPatternUndefined: Self = StObject.set(x, "formatPattern", js.undefined)
+    inline def setFormatPatternUndefined: Self = StObject.set(x, "formatPattern", js.undefined)
     
-    @scala.inline
-    def setGraphPredicate(value: String): Self = StObject.set(x, "graphPredicate", value.asInstanceOf[js.Any])
+    inline def setGraphPredicate(value: String): Self = StObject.set(x, "graphPredicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphPredicateUndefined: Self = StObject.set(x, "graphPredicate", js.undefined)
+    inline def setGraphPredicateUndefined: Self = StObject.set(x, "graphPredicate", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidValues(value: js.Array[String]): Self = StObject.set(x, "validValues", value.asInstanceOf[js.Any])
+    inline def setValidValues(value: js.Array[String]): Self = StObject.set(x, "validValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidValuesUndefined: Self = StObject.set(x, "validValues", js.undefined)
+    inline def setValidValuesUndefined: Self = StObject.set(x, "validValues", js.undefined)
     
-    @scala.inline
-    def setValidValuesVarargs(value: String*): Self = StObject.set(x, "validValues", js.Array(value :_*))
+    inline def setValidValuesVarargs(value: String*): Self = StObject.set(x, "validValues", js.Array(value :_*))
     
-    @scala.inline
-    def setValidateData(value: Boolean): Self = StObject.set(x, "validateData", value.asInstanceOf[js.Any])
+    inline def setValidateData(value: Boolean): Self = StObject.set(x, "validateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateDataUndefined: Self = StObject.set(x, "validateData", js.undefined)
+    inline def setValidateDataUndefined: Self = StObject.set(x, "validateData", js.undefined)
   }
 }

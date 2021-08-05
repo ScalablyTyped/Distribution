@@ -29,43 +29,31 @@ trait CreateManagedShortLinkRequest extends StObject {
 }
 object CreateManagedShortLinkRequest {
   
-  @scala.inline
-  def apply(): CreateManagedShortLinkRequest = {
+  inline def apply(): CreateManagedShortLinkRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateManagedShortLinkRequest]
   }
   
-  @scala.inline
-  implicit class CreateManagedShortLinkRequestMutableBuilder[Self <: CreateManagedShortLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateManagedShortLinkRequest](x: Self) {
     
-    @scala.inline
-    def setDynamicLinkInfo(value: DynamicLinkInfo): Self = StObject.set(x, "dynamicLinkInfo", value.asInstanceOf[js.Any])
+    inline def setDynamicLinkInfo(value: DynamicLinkInfo): Self = StObject.set(x, "dynamicLinkInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicLinkInfoUndefined: Self = StObject.set(x, "dynamicLinkInfo", js.undefined)
+    inline def setDynamicLinkInfoUndefined: Self = StObject.set(x, "dynamicLinkInfo", js.undefined)
     
-    @scala.inline
-    def setLongDynamicLink(value: String): Self = StObject.set(x, "longDynamicLink", value.asInstanceOf[js.Any])
+    inline def setLongDynamicLink(value: String): Self = StObject.set(x, "longDynamicLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongDynamicLinkUndefined: Self = StObject.set(x, "longDynamicLink", js.undefined)
+    inline def setLongDynamicLinkUndefined: Self = StObject.set(x, "longDynamicLink", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
+    inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
+    inline def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: Suffix): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: Suffix): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

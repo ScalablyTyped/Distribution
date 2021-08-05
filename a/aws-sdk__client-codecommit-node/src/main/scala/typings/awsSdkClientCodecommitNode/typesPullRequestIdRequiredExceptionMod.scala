@@ -30,17 +30,14 @@ object typesPullRequestIdRequiredExceptionMod {
   }
   object PullRequestIdRequiredException {
     
-    @scala.inline
-    def apply(): PullRequestIdRequiredException = {
+    inline def apply(): PullRequestIdRequiredException = {
       val __obj = js.Dynamic.literal(name = "PullRequestIdRequiredException")
       __obj.asInstanceOf[PullRequestIdRequiredException]
     }
     
-    @scala.inline
-    implicit class PullRequestIdRequiredExceptionMutableBuilder[Self <: PullRequestIdRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: PullRequestIdRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestIdRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.CertificateObject")
 @js.native
-class CertificateObject protected ()
+/* private */ class CertificateObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.CertificateObject {
   
   /* CompleteClass */
   override val ExpirationDate: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.CertificateObject_typekey")
   var InfoPathDotCertificateObject_typekey: typings.activexInfopath.InfoPath.CertificateObject = js.native
   

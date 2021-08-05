@@ -11,8 +11,7 @@ object tapErrorToLogMessageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tapErrorToLogMessage(
+  inline def tapErrorToLogMessage(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     configuration: ForkTsCheckerWebpackPluginConfiguration
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tapErrorToLogMessage")(compiler.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]

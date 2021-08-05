@@ -37,68 +37,48 @@ object ReactBootstrapDaterangepicker {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
+      inline def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
+      inline def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
       
-      @scala.inline
-      def setContainerStyles(value: CSSProperties): Self = StObject.set(x, "containerStyles", value.asInstanceOf[js.Any])
+      inline def setContainerStyles(value: CSSProperties): Self = StObject.set(x, "containerStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStylesUndefined: Self = StObject.set(x, "containerStyles", js.undefined)
+      inline def setContainerStylesUndefined: Self = StObject.set(x, "containerStyles", js.undefined)
       
-      @scala.inline
-      def setOnApply(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onApply", js.Any.fromFunction2(value))
+      inline def setOnApply(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onApply", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnApplyUndefined: Self = StObject.set(x, "onApply", js.undefined)
+      inline def setOnApplyUndefined: Self = StObject.set(x, "onApply", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
+      inline def setOnCancel(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnEvent(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onEvent", js.Any.fromFunction2(value))
+      inline def setOnEvent(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
+      inline def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
+      inline def setOnHide(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHideCalendar(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onHideCalendar", js.Any.fromFunction2(value))
+      inline def setOnHideCalendar(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onHideCalendar", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHideCalendarUndefined: Self = StObject.set(x, "onHideCalendar", js.undefined)
+      inline def setOnHideCalendarUndefined: Self = StObject.set(x, "onHideCalendar", js.undefined)
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction2(value))
+      inline def setOnShow(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnShowCalendar(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onShowCalendar", js.Any.fromFunction2(value))
+      inline def setOnShowCalendar(value: (/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "onShowCalendar", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnShowCalendarUndefined: Self = StObject.set(x, "onShowCalendar", js.undefined)
+      inline def setOnShowCalendarUndefined: Self = StObject.set(x, "onShowCalendar", js.undefined)
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     }
   }
 }

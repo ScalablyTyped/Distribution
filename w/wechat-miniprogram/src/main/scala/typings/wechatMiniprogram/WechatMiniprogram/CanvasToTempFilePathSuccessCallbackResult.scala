@@ -13,19 +13,15 @@ trait CanvasToTempFilePathSuccessCallbackResult extends StObject {
 }
 object CanvasToTempFilePathSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, tempFilePath: String): CanvasToTempFilePathSuccessCallbackResult = {
+  inline def apply(errMsg: String, tempFilePath: String): CanvasToTempFilePathSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasToTempFilePathSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class CanvasToTempFilePathSuccessCallbackResultMutableBuilder[Self <: CanvasToTempFilePathSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasToTempFilePathSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }
 }

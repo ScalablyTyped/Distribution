@@ -1551,8 +1551,7 @@ object Arcade {
   }
   object Collider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       callbackContext: js.Object,
       collideCallback: (/* object1 */ GameObjectWithBody, /* object2 */ GameObjectWithBody) => Unit,
@@ -1570,54 +1569,39 @@ object Arcade {
       __obj.asInstanceOf[Collider]
     }
     
-    @scala.inline
-    implicit class ColliderMutableBuilder[Self <: Collider] (val x: Self) extends AnyVal {
+    extension [Self <: Collider](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackContext(value: js.Object): Self = StObject.set(x, "callbackContext", value.asInstanceOf[js.Any])
+      inline def setCallbackContext(value: js.Object): Self = StObject.set(x, "callbackContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollideCallback(value: (/* object1 */ GameObjectWithBody, /* object2 */ GameObjectWithBody) => Unit): Self = StObject.set(x, "collideCallback", js.Any.fromFunction2(value))
+      inline def setCollideCallback(value: (/* object1 */ GameObjectWithBody, /* object2 */ GameObjectWithBody) => Unit): Self = StObject.set(x, "collideCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject1(value: ArcadeColliderType): Self = StObject.set(x, "object1", value.asInstanceOf[js.Any])
+      inline def setObject1(value: ArcadeColliderType): Self = StObject.set(x, "object1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject1Varargs(
+      inline def setObject1Varargs(
         value: (DynamicTilemapLayer | GameObject | Group | Image | Sprite | StaticGroup | StaticTilemapLayer)*
       ): Self = StObject.set(x, "object1", js.Array(value :_*))
       
-      @scala.inline
-      def setObject2(value: ArcadeColliderType): Self = StObject.set(x, "object2", value.asInstanceOf[js.Any])
+      inline def setObject2(value: ArcadeColliderType): Self = StObject.set(x, "object2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject2Varargs(
+      inline def setObject2Varargs(
         value: (DynamicTilemapLayer | GameObject | Group | Image | Sprite | StaticGroup | StaticTilemapLayer)*
       ): Self = StObject.set(x, "object2", js.Array(value :_*))
       
-      @scala.inline
-      def setOverlapOnly(value: Boolean): Self = StObject.set(x, "overlapOnly", value.asInstanceOf[js.Any])
+      inline def setOverlapOnly(value: Boolean): Self = StObject.set(x, "overlapOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessCallback(value: (/* object1 */ GameObjectWithBody, /* object2 */ GameObjectWithBody) => Unit): Self = StObject.set(x, "processCallback", js.Any.fromFunction2(value))
+      inline def setProcessCallback(value: (/* object1 */ GameObjectWithBody, /* object2 */ GameObjectWithBody) => Unit): Self = StObject.set(x, "processCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetName(value: String => Collider): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+      inline def setSetName(value: String => Collider): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWorld(value: World): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
+      inline def setWorld(value: World): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1683,8 +1667,7 @@ object Arcade {
     }
     object Angular {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         setAngularAcceleration: Double => Angular,
         setAngularDrag: Double => Angular,
         setAngularVelocity: Double => Angular
@@ -1693,17 +1676,13 @@ object Arcade {
         __obj.asInstanceOf[Angular]
       }
       
-      @scala.inline
-      implicit class AngularMutableBuilder[Self <: Angular] (val x: Self) extends AnyVal {
+      extension [Self <: Angular](x: Self) {
         
-        @scala.inline
-        def setSetAngularAcceleration(value: Double => Angular): Self = StObject.set(x, "setAngularAcceleration", js.Any.fromFunction1(value))
+        inline def setSetAngularAcceleration(value: Double => Angular): Self = StObject.set(x, "setAngularAcceleration", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetAngularDrag(value: Double => Angular): Self = StObject.set(x, "setAngularDrag", js.Any.fromFunction1(value))
+        inline def setSetAngularDrag(value: Double => Angular): Self = StObject.set(x, "setAngularDrag", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetAngularVelocity(value: Double => Angular): Self = StObject.set(x, "setAngularVelocity", js.Any.fromFunction1(value))
+        inline def setSetAngularVelocity(value: Double => Angular): Self = StObject.set(x, "setAngularVelocity", js.Any.fromFunction1(value))
       }
     }
     
@@ -1793,8 +1772,7 @@ object Arcade {
     }
     object Debug {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         debugBodyColor: Double,
         debugShowBody: Boolean,
         debugShowVelocity: Boolean,
@@ -1805,23 +1783,17 @@ object Arcade {
         __obj.asInstanceOf[Debug]
       }
       
-      @scala.inline
-      implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+      extension [Self <: Debug](x: Self) {
         
-        @scala.inline
-        def setDebugBodyColor(value: Double): Self = StObject.set(x, "debugBodyColor", value.asInstanceOf[js.Any])
+        inline def setDebugBodyColor(value: Double): Self = StObject.set(x, "debugBodyColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebugShowBody(value: Boolean): Self = StObject.set(x, "debugShowBody", value.asInstanceOf[js.Any])
+        inline def setDebugShowBody(value: Boolean): Self = StObject.set(x, "debugShowBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebugShowVelocity(value: Boolean): Self = StObject.set(x, "debugShowVelocity", value.asInstanceOf[js.Any])
+        inline def setDebugShowVelocity(value: Boolean): Self = StObject.set(x, "debugShowVelocity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetDebug(value: (Boolean, Boolean, Double) => Debug): Self = StObject.set(x, "setDebug", js.Any.fromFunction3(value))
+        inline def setSetDebug(value: (Boolean, Boolean, Double) => Debug): Self = StObject.set(x, "setDebug", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSetDebugBodyColor(value: Double => Debug): Self = StObject.set(x, "setDebugBodyColor", js.Any.fromFunction1(value))
+        inline def setSetDebugBodyColor(value: Double => Debug): Self = StObject.set(x, "setDebugBodyColor", js.Any.fromFunction1(value))
       }
     }
     
@@ -2023,17 +1995,14 @@ object Arcade {
     }
     object Mass {
       
-      @scala.inline
-      def apply(setMass: Double => Mass): Mass = {
+      inline def apply(setMass: Double => Mass): Mass = {
         val __obj = js.Dynamic.literal(setMass = js.Any.fromFunction1(setMass))
         __obj.asInstanceOf[Mass]
       }
       
-      @scala.inline
-      implicit class MassMutableBuilder[Self <: Mass] (val x: Self) extends AnyVal {
+      extension [Self <: Mass](x: Self) {
         
-        @scala.inline
-        def setSetMass(value: Double => Mass): Self = StObject.set(x, "setMass", js.Any.fromFunction1(value))
+        inline def setSetMass(value: Double => Mass): Self = StObject.set(x, "setMass", js.Any.fromFunction1(value))
       }
     }
     

@@ -49,15 +49,10 @@ object ValidationError {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatError(message: String): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any]).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
-  @scala.inline
-  def formatError(message: String, params: js.Any): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
-  @scala.inline
-  def formatError(message: js.Function1[/* params */ js.UndefOr[js.Any], String]): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any]).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
-  @scala.inline
-  def formatError(message: js.Function1[/* params */ js.UndefOr[js.Any], String], params: js.Any): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
+  inline def formatError(message: String): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any]).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
+  inline def formatError(message: String, params: js.Any): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
+  inline def formatError(message: js.Function1[/* params */ js.UndefOr[js.Any], String]): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any]).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
+  inline def formatError(message: js.Function1[/* params */ js.UndefOr[js.Any], String], params: js.Any): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
   
-  @scala.inline
-  def isError(err: js.Any): /* is yup.yup.ValidationError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(err.asInstanceOf[js.Any]).asInstanceOf[/* is yup.yup.ValidationError */ Boolean]
+  inline def isError(err: js.Any): /* is yup.yup.ValidationError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(err.asInstanceOf[js.Any]).asInstanceOf[/* is yup.yup.ValidationError */ Boolean]
 }

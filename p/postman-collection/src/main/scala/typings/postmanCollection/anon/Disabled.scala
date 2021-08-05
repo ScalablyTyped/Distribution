@@ -12,19 +12,15 @@ trait Disabled[TDefinition /* <: js.Object */] extends StObject {
 }
 object Disabled {
   
-  @scala.inline
-  def apply[TDefinition /* <: js.Object */](disabled: Boolean, info: TDefinition): Disabled[TDefinition] = {
+  inline def apply[TDefinition /* <: js.Object */](disabled: Boolean, info: TDefinition): Disabled[TDefinition] = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
     __obj.asInstanceOf[Disabled[TDefinition]]
   }
   
-  @scala.inline
-  implicit class DisabledMutableBuilder[Self <: Disabled[?], TDefinition /* <: js.Object */] (val x: Self & Disabled[TDefinition]) extends AnyVal {
+  extension [Self <: Disabled[?], TDefinition /* <: js.Object */](x: Self & Disabled[TDefinition]) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: TDefinition): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: TDefinition): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }
 }

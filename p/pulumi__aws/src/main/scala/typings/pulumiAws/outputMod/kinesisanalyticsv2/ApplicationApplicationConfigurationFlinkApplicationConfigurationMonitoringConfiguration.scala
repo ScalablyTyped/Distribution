@@ -23,22 +23,17 @@ trait ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoring
 }
 object ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration {
   
-  @scala.inline
-  def apply(configurationType: String, logLevel: String, metricsLevel: String): ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration = {
+  inline def apply(configurationType: String, logLevel: String, metricsLevel: String): ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration = {
     val __obj = js.Dynamic.literal(configurationType = configurationType.asInstanceOf[js.Any], logLevel = logLevel.asInstanceOf[js.Any], metricsLevel = metricsLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
+    inline def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsLevel(value: String): Self = StObject.set(x, "metricsLevel", value.asInstanceOf[js.Any])
+    inline def setMetricsLevel(value: String): Self = StObject.set(x, "metricsLevel", value.asInstanceOf[js.Any])
   }
 }

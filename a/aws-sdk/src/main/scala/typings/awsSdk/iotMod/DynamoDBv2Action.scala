@@ -18,19 +18,15 @@ trait DynamoDBv2Action extends StObject {
 }
 object DynamoDBv2Action {
   
-  @scala.inline
-  def apply(putItem: PutItemInput, roleArn: AwsArn): DynamoDBv2Action = {
+  inline def apply(putItem: PutItemInput, roleArn: AwsArn): DynamoDBv2Action = {
     val __obj = js.Dynamic.literal(putItem = putItem.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamoDBv2Action]
   }
   
-  @scala.inline
-  implicit class DynamoDBv2ActionMutableBuilder[Self <: DynamoDBv2Action] (val x: Self) extends AnyVal {
+  extension [Self <: DynamoDBv2Action](x: Self) {
     
-    @scala.inline
-    def setPutItem(value: PutItemInput): Self = StObject.set(x, "putItem", value.asInstanceOf[js.Any])
+    inline def setPutItem(value: PutItemInput): Self = StObject.set(x, "putItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

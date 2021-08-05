@@ -12,22 +12,17 @@ trait ListEnvironmentsResponse extends StObject {
 }
 object ListEnvironmentsResponse {
   
-  @scala.inline
-  def apply(): ListEnvironmentsResponse = {
+  inline def apply(): ListEnvironmentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEnvironmentsResponse]
   }
   
-  @scala.inline
-  implicit class ListEnvironmentsResponseMutableBuilder[Self <: ListEnvironmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEnvironmentsResponse](x: Self) {
     
-    @scala.inline
-    def setEnvironments(value: js.Array[Environment]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+    inline def setEnvironments(value: js.Array[Environment]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
+    inline def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
     
-    @scala.inline
-    def setEnvironmentsVarargs(value: Environment*): Self = StObject.set(x, "environments", js.Array(value :_*))
+    inline def setEnvironmentsVarargs(value: Environment*): Self = StObject.set(x, "environments", js.Array(value :_*))
   }
 }

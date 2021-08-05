@@ -18,16 +18,13 @@ trait Typeofinput extends StObject {
 }
 object Typeofinput {
   
-  @scala.inline
-  def apply(ime: Typeofime): Typeofinput = {
+  inline def apply(ime: Typeofime): Typeofinput = {
     val __obj = js.Dynamic.literal(ime = ime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofinput]
   }
   
-  @scala.inline
-  implicit class TypeofinputMutableBuilder[Self <: Typeofinput] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofinput](x: Self) {
     
-    @scala.inline
-    def setIme(value: Typeofime): Self = StObject.set(x, "ime", value.asInstanceOf[js.Any])
+    inline def setIme(value: Typeofime): Self = StObject.set(x, "ime", value.asInstanceOf[js.Any])
   }
 }

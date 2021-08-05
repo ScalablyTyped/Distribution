@@ -70,8 +70,6 @@ object RenderTexture {
     * @return {PIXI.RenderTexture} The new render texture
     */
   /* static member */
-  @scala.inline
-  def create(): typings.pixiJs.PIXI.RenderTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.pixiJs.PIXI.RenderTexture]
-  @scala.inline
-  def create(options: Resolution): typings.pixiJs.PIXI.RenderTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.RenderTexture]
+  inline def create(): typings.pixiJs.PIXI.RenderTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.pixiJs.PIXI.RenderTexture]
+  inline def create(options: Resolution): typings.pixiJs.PIXI.RenderTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.RenderTexture]
 }

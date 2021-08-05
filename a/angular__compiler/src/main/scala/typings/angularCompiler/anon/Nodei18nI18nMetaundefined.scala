@@ -18,25 +18,19 @@ trait Nodei18nI18nMetaundefined extends StObject {
 }
 object Nodei18nI18nMetaundefined {
   
-  @scala.inline
-  def apply(sourceSpan: ParseSourceSpan, visit: Visitor[js.Any] => js.Any): Nodei18nI18nMetaundefined = {
+  inline def apply(sourceSpan: ParseSourceSpan, visit: Visitor[js.Any] => js.Any): Nodei18nI18nMetaundefined = {
     val __obj = js.Dynamic.literal(sourceSpan = sourceSpan.asInstanceOf[js.Any], visit = js.Any.fromFunction1(visit))
     __obj.asInstanceOf[Nodei18nI18nMetaundefined]
   }
   
-  @scala.inline
-  implicit class Nodei18nI18nMetaundefinedMutableBuilder[Self <: Nodei18nI18nMetaundefined] (val x: Self) extends AnyVal {
+  extension [Self <: Nodei18nI18nMetaundefined](x: Self) {
     
-    @scala.inline
-    def setI18n(value: I18nMeta): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: I18nMeta): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
+    inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
     
-    @scala.inline
-    def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
+    inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisit(value: Visitor[js.Any] => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
+    inline def setVisit(value: Visitor[js.Any] => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
   }
 }

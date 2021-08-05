@@ -15,10 +15,10 @@ object storiesInsightsFeedMod {
   class StoriesInsightsFeed protected () extends Feed[StoriesInsightsFeedResponseRootObject, StoriesInsightsFeedResponseEdgesItem] {
     def this(client: IgApiClient) = this()
     
-    var nextCursor: js.Any = js.native
+    /* private */ var nextCursor: js.Any = js.native
     
     def request(): js.Promise[StoriesInsightsFeedResponseRootObject] = js.native
     
-    var timeframe: js.Any = js.native
+    /* private */ var timeframe: js.Any = js.native
   }
 }

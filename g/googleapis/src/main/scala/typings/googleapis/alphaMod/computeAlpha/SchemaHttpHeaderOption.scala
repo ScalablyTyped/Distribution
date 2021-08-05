@@ -28,31 +28,23 @@ trait SchemaHttpHeaderOption extends StObject {
 }
 object SchemaHttpHeaderOption {
   
-  @scala.inline
-  def apply(): SchemaHttpHeaderOption = {
+  inline def apply(): SchemaHttpHeaderOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpHeaderOption]
   }
   
-  @scala.inline
-  implicit class SchemaHttpHeaderOptionMutableBuilder[Self <: SchemaHttpHeaderOption] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHttpHeaderOption](x: Self) {
     
-    @scala.inline
-    def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
+    inline def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
     
-    @scala.inline
-    def setHeaderValue(value: String): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
+    inline def setHeaderValue(value: String): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
+    inline def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
     
-    @scala.inline
-    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
   }
 }

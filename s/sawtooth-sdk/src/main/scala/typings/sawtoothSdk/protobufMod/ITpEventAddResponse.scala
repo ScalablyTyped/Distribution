@@ -12,22 +12,17 @@ trait ITpEventAddResponse extends StObject {
 }
 object ITpEventAddResponse {
   
-  @scala.inline
-  def apply(): ITpEventAddResponse = {
+  inline def apply(): ITpEventAddResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITpEventAddResponse]
   }
   
-  @scala.inline
-  implicit class ITpEventAddResponseMutableBuilder[Self <: ITpEventAddResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ITpEventAddResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

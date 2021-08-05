@@ -27,17 +27,14 @@ object mod {
       }
       object ChaiStatic {
         
-        @scala.inline
-        def apply(tv4: TV4): ChaiStatic = {
+        inline def apply(tv4: TV4): ChaiStatic = {
           val __obj = js.Dynamic.literal(tv4 = tv4.asInstanceOf[js.Any])
           __obj.asInstanceOf[ChaiStatic]
         }
         
-        @scala.inline
-        implicit class ChaiStaticMutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
+        extension [Self <: ChaiStatic](x: Self) {
           
-          @scala.inline
-          def setTv4(value: TV4): Self = StObject.set(x, "tv4", value.asInstanceOf[js.Any])
+          inline def setTv4(value: TV4): Self = StObject.set(x, "tv4", value.asInstanceOf[js.Any])
         }
       }
       

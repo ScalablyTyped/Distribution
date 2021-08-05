@@ -10,16 +10,13 @@ trait ICompassStatics extends StObject {
 }
 object ICompassStatics {
   
-  @scala.inline
-  def apply(getDefault: () => Compass): ICompassStatics = {
+  inline def apply(getDefault: () => Compass): ICompassStatics = {
     val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
     __obj.asInstanceOf[ICompassStatics]
   }
   
-  @scala.inline
-  implicit class ICompassStaticsMutableBuilder[Self <: ICompassStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ICompassStatics](x: Self) {
     
-    @scala.inline
-    def setGetDefault(value: () => Compass): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+    inline def setGetDefault(value: () => Compass): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }
 }

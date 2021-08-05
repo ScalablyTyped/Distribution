@@ -8,26 +8,21 @@ object tressStrings {
   
   @js.native
   sealed trait active extends StObject
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait failed extends StObject
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
   sealed trait finished extends StObject
-  @scala.inline
-  def finished: finished = "finished".asInstanceOf[finished]
+  inline def finished: finished = "finished".asInstanceOf[finished]
   
   @js.native
   sealed trait missing extends StObject
-  @scala.inline
-  def missing: missing = "missing".asInstanceOf[missing]
+  inline def missing: missing = "missing".asInstanceOf[missing]
   
   @js.native
   sealed trait waiting extends StObject
-  @scala.inline
-  def waiting: waiting = "waiting".asInstanceOf[waiting]
+  inline def waiting: waiting = "waiting".asInstanceOf[waiting]
 }

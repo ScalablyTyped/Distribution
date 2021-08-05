@@ -27,31 +27,23 @@ trait SchemaFilter extends StObject {
 }
 object SchemaFilter {
   
-  @scala.inline
-  def apply(): SchemaFilter = {
+  inline def apply(): SchemaFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilter]
   }
   
-  @scala.inline
-  implicit class SchemaFilterMutableBuilder[Self <: SchemaFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFilter](x: Self) {
     
-    @scala.inline
-    def setAction(value: SchemaFilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: SchemaFilterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setCriteria(value: SchemaFilterCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: SchemaFilterCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

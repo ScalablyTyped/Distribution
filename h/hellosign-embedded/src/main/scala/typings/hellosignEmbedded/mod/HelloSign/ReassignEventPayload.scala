@@ -16,25 +16,19 @@ trait ReassignEventPayload extends StObject {
 }
 object ReassignEventPayload {
   
-  @scala.inline
-  def apply(email: String, name: String, reason: String, signatureId: String): ReassignEventPayload = {
+  inline def apply(email: String, name: String, reason: String, signatureId: String): ReassignEventPayload = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], signatureId = signatureId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReassignEventPayload]
   }
   
-  @scala.inline
-  implicit class ReassignEventPayloadMutableBuilder[Self <: ReassignEventPayload] (val x: Self) extends AnyVal {
+  extension [Self <: ReassignEventPayload](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureId(value: String): Self = StObject.set(x, "signatureId", value.asInstanceOf[js.Any])
+    inline def setSignatureId(value: String): Self = StObject.set(x, "signatureId", value.asInstanceOf[js.Any])
   }
 }

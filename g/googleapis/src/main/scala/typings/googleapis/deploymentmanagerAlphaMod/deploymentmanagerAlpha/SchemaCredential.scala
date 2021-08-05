@@ -28,31 +28,23 @@ trait SchemaCredential extends StObject {
 }
 object SchemaCredential {
   
-  @scala.inline
-  def apply(): SchemaCredential = {
+  inline def apply(): SchemaCredential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCredential]
   }
   
-  @scala.inline
-  implicit class SchemaCredentialMutableBuilder[Self <: SchemaCredential] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCredential](x: Self) {
     
-    @scala.inline
-    def setBasicAuth(value: SchemaBasicAuth): Self = StObject.set(x, "basicAuth", value.asInstanceOf[js.Any])
+    inline def setBasicAuth(value: SchemaBasicAuth): Self = StObject.set(x, "basicAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicAuthUndefined: Self = StObject.set(x, "basicAuth", js.undefined)
+    inline def setBasicAuthUndefined: Self = StObject.set(x, "basicAuth", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: SchemaServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: SchemaServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setUseProjectDefault(value: Boolean): Self = StObject.set(x, "useProjectDefault", value.asInstanceOf[js.Any])
+    inline def setUseProjectDefault(value: Boolean): Self = StObject.set(x, "useProjectDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseProjectDefaultUndefined: Self = StObject.set(x, "useProjectDefault", js.undefined)
+    inline def setUseProjectDefaultUndefined: Self = StObject.set(x, "useProjectDefault", js.undefined)
   }
 }

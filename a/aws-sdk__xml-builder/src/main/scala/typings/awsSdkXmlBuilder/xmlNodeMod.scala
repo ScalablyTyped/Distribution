@@ -17,11 +17,11 @@ object xmlNodeMod {
     
     def addChildNode(child: Stringable): XmlNode = js.native
     
-    var attributes: js.Any = js.native
+    /* private */ var attributes: js.Any = js.native
     
     val children: js.Array[Stringable] = js.native
     
-    var name: js.Any = js.native
+    /* private */ var name: js.Any = js.native
     
     def removeAttribute(name: String): XmlNode = js.native
     

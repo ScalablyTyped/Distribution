@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLDefaults")
 @js.native
-class HTMLDefaults protected ()
+/* private */ class HTMLDefaults ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLDefaults {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLDefaults_typekey")
   var MSHTMLDotHTMLDefaults_typekey: typings.activexMshtml.MSHTML.HTMLDefaults = js.native
   

@@ -62,44 +62,37 @@ object projectAnalysisInterfacesMod {
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.AggregationType")
     @js.native
     def AggregationType: EnumValuesHourly = js.native
-    @scala.inline
-    def AggregationType_=(x: EnumValuesHourly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AggregationType")(x.asInstanceOf[js.Any])
+    inline def AggregationType_=(x: EnumValuesHourly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AggregationType")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.CodeChangeTrendItem")
     @js.native
     def CodeChangeTrendItem: js.Any = js.native
-    @scala.inline
-    def CodeChangeTrendItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CodeChangeTrendItem")(x.asInstanceOf[js.Any])
+    inline def CodeChangeTrendItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CodeChangeTrendItem")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.ProjectActivityMetrics")
     @js.native
     def ProjectActivityMetrics: js.Any = js.native
-    @scala.inline
-    def ProjectActivityMetrics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectActivityMetrics")(x.asInstanceOf[js.Any])
+    inline def ProjectActivityMetrics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectActivityMetrics")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.ProjectLanguageAnalytics")
     @js.native
     def ProjectLanguageAnalytics: js.Any = js.native
-    @scala.inline
-    def ProjectLanguageAnalytics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectLanguageAnalytics")(x.asInstanceOf[js.Any])
+    inline def ProjectLanguageAnalytics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectLanguageAnalytics")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.RepositoryActivityMetrics")
     @js.native
     def RepositoryActivityMetrics: js.Any = js.native
-    @scala.inline
-    def RepositoryActivityMetrics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RepositoryActivityMetrics")(x.asInstanceOf[js.Any])
+    inline def RepositoryActivityMetrics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RepositoryActivityMetrics")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.RepositoryLanguageAnalytics")
     @js.native
     def RepositoryLanguageAnalytics: js.Any = js.native
-    @scala.inline
-    def RepositoryLanguageAnalytics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RepositoryLanguageAnalytics")(x.asInstanceOf[js.Any])
+    inline def RepositoryLanguageAnalytics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RepositoryLanguageAnalytics")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.ResultPhase")
     @js.native
     def ResultPhase: EnumValuesPreliminary = js.native
-    @scala.inline
-    def ResultPhase_=(x: EnumValuesPreliminary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ResultPhase")(x.asInstanceOf[js.Any])
+    inline def ResultPhase_=(x: EnumValuesPreliminary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ResultPhase")(x.asInstanceOf[js.Any])
   }
   
   trait AnalyzerDescriptor extends StObject {
@@ -118,8 +111,7 @@ object projectAnalysisInterfacesMod {
   }
   object AnalyzerDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       id: String,
       majorVersion: Double,
@@ -131,26 +123,19 @@ object projectAnalysisInterfacesMod {
       __obj.asInstanceOf[AnalyzerDescriptor]
     }
     
-    @scala.inline
-    implicit class AnalyzerDescriptorMutableBuilder[Self <: AnalyzerDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyzerDescriptor](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
+      inline def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorVersion(value: Double): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
+      inline def setMinorVersion(value: Double): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchVersion(value: Double): Self = StObject.set(x, "patchVersion", value.asInstanceOf[js.Any])
+      inline def setPatchVersion(value: Double): Self = StObject.set(x, "patchVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,20 +147,16 @@ object projectAnalysisInterfacesMod {
   }
   object CodeChangeTrendItem {
     
-    @scala.inline
-    def apply(time: Date, value: Double): CodeChangeTrendItem = {
+    inline def apply(time: Date, value: Double): CodeChangeTrendItem = {
       val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeChangeTrendItem]
     }
     
-    @scala.inline
-    implicit class CodeChangeTrendItemMutableBuilder[Self <: CodeChangeTrendItem] (val x: Self) extends AnyVal {
+    extension [Self <: CodeChangeTrendItem](x: Self) {
       
-      @scala.inline
-      def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,29 +174,22 @@ object projectAnalysisInterfacesMod {
   }
   object LanguageStatistics {
     
-    @scala.inline
-    def apply(bytes: Double, files: Double, filesPercentage: Double, languagePercentage: Double, name: String): LanguageStatistics = {
+    inline def apply(bytes: Double, files: Double, filesPercentage: Double, languagePercentage: Double, name: String): LanguageStatistics = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], filesPercentage = filesPercentage.asInstanceOf[js.Any], languagePercentage = languagePercentage.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[LanguageStatistics]
     }
     
-    @scala.inline
-    implicit class LanguageStatisticsMutableBuilder[Self <: LanguageStatistics] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageStatistics](x: Self) {
       
-      @scala.inline
-      def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesPercentage(value: Double): Self = StObject.set(x, "filesPercentage", value.asInstanceOf[js.Any])
+      inline def setFilesPercentage(value: Double): Self = StObject.set(x, "filesPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguagePercentage(value: Double): Self = StObject.set(x, "languagePercentage", value.asInstanceOf[js.Any])
+      inline def setLanguagePercentage(value: Double): Self = StObject.set(x, "languagePercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,8 +209,7 @@ object projectAnalysisInterfacesMod {
   }
   object ProjectActivityMetrics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authorsCount: Double,
       codeChangesCount: Double,
       codeChangesTrend: js.Array[CodeChangeTrendItem],
@@ -248,29 +221,21 @@ object projectAnalysisInterfacesMod {
       __obj.asInstanceOf[ProjectActivityMetrics]
     }
     
-    @scala.inline
-    implicit class ProjectActivityMetricsMutableBuilder[Self <: ProjectActivityMetrics] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectActivityMetrics](x: Self) {
       
-      @scala.inline
-      def setAuthorsCount(value: Double): Self = StObject.set(x, "authorsCount", value.asInstanceOf[js.Any])
+      inline def setAuthorsCount(value: Double): Self = StObject.set(x, "authorsCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeChangesCount(value: Double): Self = StObject.set(x, "codeChangesCount", value.asInstanceOf[js.Any])
+      inline def setCodeChangesCount(value: Double): Self = StObject.set(x, "codeChangesCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeChangesTrend(value: js.Array[CodeChangeTrendItem]): Self = StObject.set(x, "codeChangesTrend", value.asInstanceOf[js.Any])
+      inline def setCodeChangesTrend(value: js.Array[CodeChangeTrendItem]): Self = StObject.set(x, "codeChangesTrend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeChangesTrendVarargs(value: CodeChangeTrendItem*): Self = StObject.set(x, "codeChangesTrend", js.Array(value :_*))
+      inline def setCodeChangesTrendVarargs(value: CodeChangeTrendItem*): Self = StObject.set(x, "codeChangesTrend", js.Array(value :_*))
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestsCompletedCount(value: Double): Self = StObject.set(x, "pullRequestsCompletedCount", value.asInstanceOf[js.Any])
+      inline def setPullRequestsCompletedCount(value: Double): Self = StObject.set(x, "pullRequestsCompletedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestsCreatedCount(value: Double): Self = StObject.set(x, "pullRequestsCreatedCount", value.asInstanceOf[js.Any])
+      inline def setPullRequestsCreatedCount(value: Double): Self = StObject.set(x, "pullRequestsCreatedCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,8 +253,7 @@ object projectAnalysisInterfacesMod {
   }
   object ProjectLanguageAnalytics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       languageBreakdown: js.Array[LanguageStatistics],
       repositoryLanguageAnalytics: js.Array[RepositoryLanguageAnalytics],
@@ -300,29 +264,21 @@ object projectAnalysisInterfacesMod {
       __obj.asInstanceOf[ProjectLanguageAnalytics]
     }
     
-    @scala.inline
-    implicit class ProjectLanguageAnalyticsMutableBuilder[Self <: ProjectLanguageAnalytics] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectLanguageAnalytics](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageBreakdown(value: js.Array[LanguageStatistics]): Self = StObject.set(x, "languageBreakdown", value.asInstanceOf[js.Any])
+      inline def setLanguageBreakdown(value: js.Array[LanguageStatistics]): Self = StObject.set(x, "languageBreakdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageBreakdownVarargs(value: LanguageStatistics*): Self = StObject.set(x, "languageBreakdown", js.Array(value :_*))
+      inline def setLanguageBreakdownVarargs(value: LanguageStatistics*): Self = StObject.set(x, "languageBreakdown", js.Array(value :_*))
       
-      @scala.inline
-      def setRepositoryLanguageAnalytics(value: js.Array[RepositoryLanguageAnalytics]): Self = StObject.set(x, "repositoryLanguageAnalytics", value.asInstanceOf[js.Any])
+      inline def setRepositoryLanguageAnalytics(value: js.Array[RepositoryLanguageAnalytics]): Self = StObject.set(x, "repositoryLanguageAnalytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryLanguageAnalyticsVarargs(value: RepositoryLanguageAnalytics*): Self = StObject.set(x, "repositoryLanguageAnalytics", js.Array(value :_*))
+      inline def setRepositoryLanguageAnalyticsVarargs(value: RepositoryLanguageAnalytics*): Self = StObject.set(x, "repositoryLanguageAnalytics", js.Array(value :_*))
       
-      @scala.inline
-      def setResultPhase(value: ResultPhase): Self = StObject.set(x, "resultPhase", value.asInstanceOf[js.Any])
+      inline def setResultPhase(value: ResultPhase): Self = StObject.set(x, "resultPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -336,26 +292,20 @@ object projectAnalysisInterfacesMod {
   }
   object RepositoryActivityMetrics {
     
-    @scala.inline
-    def apply(codeChangesCount: Double, codeChangesTrend: js.Array[CodeChangeTrendItem], repositoryId: String): RepositoryActivityMetrics = {
+    inline def apply(codeChangesCount: Double, codeChangesTrend: js.Array[CodeChangeTrendItem], repositoryId: String): RepositoryActivityMetrics = {
       val __obj = js.Dynamic.literal(codeChangesCount = codeChangesCount.asInstanceOf[js.Any], codeChangesTrend = codeChangesTrend.asInstanceOf[js.Any], repositoryId = repositoryId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RepositoryActivityMetrics]
     }
     
-    @scala.inline
-    implicit class RepositoryActivityMetricsMutableBuilder[Self <: RepositoryActivityMetrics] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryActivityMetrics](x: Self) {
       
-      @scala.inline
-      def setCodeChangesCount(value: Double): Self = StObject.set(x, "codeChangesCount", value.asInstanceOf[js.Any])
+      inline def setCodeChangesCount(value: Double): Self = StObject.set(x, "codeChangesCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeChangesTrend(value: js.Array[CodeChangeTrendItem]): Self = StObject.set(x, "codeChangesTrend", value.asInstanceOf[js.Any])
+      inline def setCodeChangesTrend(value: js.Array[CodeChangeTrendItem]): Self = StObject.set(x, "codeChangesTrend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeChangesTrendVarargs(value: CodeChangeTrendItem*): Self = StObject.set(x, "codeChangesTrend", js.Array(value :_*))
+      inline def setCodeChangesTrendVarargs(value: CodeChangeTrendItem*): Self = StObject.set(x, "codeChangesTrend", js.Array(value :_*))
       
-      @scala.inline
-      def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+      inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -373,8 +323,7 @@ object projectAnalysisInterfacesMod {
   }
   object RepositoryLanguageAnalytics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       languageBreakdown: js.Array[LanguageStatistics],
       name: String,
@@ -385,26 +334,19 @@ object projectAnalysisInterfacesMod {
       __obj.asInstanceOf[RepositoryLanguageAnalytics]
     }
     
-    @scala.inline
-    implicit class RepositoryLanguageAnalyticsMutableBuilder[Self <: RepositoryLanguageAnalytics] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryLanguageAnalytics](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageBreakdown(value: js.Array[LanguageStatistics]): Self = StObject.set(x, "languageBreakdown", value.asInstanceOf[js.Any])
+      inline def setLanguageBreakdown(value: js.Array[LanguageStatistics]): Self = StObject.set(x, "languageBreakdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageBreakdownVarargs(value: LanguageStatistics*): Self = StObject.set(x, "languageBreakdown", js.Array(value :_*))
+      inline def setLanguageBreakdownVarargs(value: LanguageStatistics*): Self = StObject.set(x, "languageBreakdown", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultPhase(value: ResultPhase): Self = StObject.set(x, "resultPhase", value.asInstanceOf[js.Any])
+      inline def setResultPhase(value: ResultPhase): Self = StObject.set(x, "resultPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedTime(value: Date): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
+      inline def setUpdatedTime(value: Date): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
     }
   }
 }

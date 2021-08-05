@@ -11,16 +11,13 @@ trait IBackgroundTaskRegistrationStatics extends StObject {
 }
 object IBackgroundTaskRegistrationStatics {
   
-  @scala.inline
-  def apply(allTasks: IMapView[String, IBackgroundTaskRegistration]): IBackgroundTaskRegistrationStatics = {
+  inline def apply(allTasks: IMapView[String, IBackgroundTaskRegistration]): IBackgroundTaskRegistrationStatics = {
     val __obj = js.Dynamic.literal(allTasks = allTasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundTaskRegistrationStatics]
   }
   
-  @scala.inline
-  implicit class IBackgroundTaskRegistrationStaticsMutableBuilder[Self <: IBackgroundTaskRegistrationStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundTaskRegistrationStatics](x: Self) {
     
-    @scala.inline
-    def setAllTasks(value: IMapView[String, IBackgroundTaskRegistration]): Self = StObject.set(x, "allTasks", value.asInstanceOf[js.Any])
+    inline def setAllTasks(value: IMapView[String, IBackgroundTaskRegistration]): Self = StObject.set(x, "allTasks", value.asInstanceOf[js.Any])
   }
 }

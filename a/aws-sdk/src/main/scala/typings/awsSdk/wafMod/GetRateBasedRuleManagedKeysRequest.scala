@@ -18,22 +18,17 @@ trait GetRateBasedRuleManagedKeysRequest extends StObject {
 }
 object GetRateBasedRuleManagedKeysRequest {
   
-  @scala.inline
-  def apply(RuleId: ResourceId): GetRateBasedRuleManagedKeysRequest = {
+  inline def apply(RuleId: ResourceId): GetRateBasedRuleManagedKeysRequest = {
     val __obj = js.Dynamic.literal(RuleId = RuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRateBasedRuleManagedKeysRequest]
   }
   
-  @scala.inline
-  implicit class GetRateBasedRuleManagedKeysRequestMutableBuilder[Self <: GetRateBasedRuleManagedKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRateBasedRuleManagedKeysRequest](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }
 }

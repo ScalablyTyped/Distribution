@@ -23,28 +23,21 @@ trait CrawlerJdbcTarget extends StObject {
 }
 object CrawlerJdbcTarget {
   
-  @scala.inline
-  def apply(connectionName: String, path: String): CrawlerJdbcTarget = {
+  inline def apply(connectionName: String, path: String): CrawlerJdbcTarget = {
     val __obj = js.Dynamic.literal(connectionName = connectionName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrawlerJdbcTarget]
   }
   
-  @scala.inline
-  implicit class CrawlerJdbcTargetMutableBuilder[Self <: CrawlerJdbcTarget] (val x: Self) extends AnyVal {
+  extension [Self <: CrawlerJdbcTarget](x: Self) {
     
-    @scala.inline
-    def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
+    inline def setConnectionName(value: String): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusions(value: js.Array[String]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
+    inline def setExclusions(value: js.Array[String]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
+    inline def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
-    @scala.inline
-    def setExclusionsVarargs(value: String*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
+    inline def setExclusionsVarargs(value: String*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

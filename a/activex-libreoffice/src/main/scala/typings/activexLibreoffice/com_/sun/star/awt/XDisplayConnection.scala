@@ -52,8 +52,7 @@ trait XDisplayConnection
 }
 object XDisplayConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Identifier: js.Any,
     acquire: () => Unit,
     addErrorHandler: XEventHandler => Unit,
@@ -68,25 +67,18 @@ object XDisplayConnection {
     __obj.asInstanceOf[XDisplayConnection]
   }
   
-  @scala.inline
-  implicit class XDisplayConnectionMutableBuilder[Self <: XDisplayConnection] (val x: Self) extends AnyVal {
+  extension [Self <: XDisplayConnection](x: Self) {
     
-    @scala.inline
-    def setAddErrorHandler(value: XEventHandler => Unit): Self = StObject.set(x, "addErrorHandler", js.Any.fromFunction1(value))
+    inline def setAddErrorHandler(value: XEventHandler => Unit): Self = StObject.set(x, "addErrorHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddEventHandler(value: (js.Any, XEventHandler, Double) => Unit): Self = StObject.set(x, "addEventHandler", js.Any.fromFunction3(value))
+    inline def setAddEventHandler(value: (js.Any, XEventHandler, Double) => Unit): Self = StObject.set(x, "addEventHandler", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetIdentifier(value: () => js.Any): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
+    inline def setGetIdentifier(value: () => js.Any): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIdentifier(value: js.Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Any): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveErrorHandler(value: XEventHandler => Unit): Self = StObject.set(x, "removeErrorHandler", js.Any.fromFunction1(value))
+    inline def setRemoveErrorHandler(value: XEventHandler => Unit): Self = StObject.set(x, "removeErrorHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveEventHandler(value: (js.Any, XEventHandler) => Unit): Self = StObject.set(x, "removeEventHandler", js.Any.fromFunction2(value))
+    inline def setRemoveEventHandler(value: (js.Any, XEventHandler) => Unit): Self = StObject.set(x, "removeEventHandler", js.Any.fromFunction2(value))
   }
 }

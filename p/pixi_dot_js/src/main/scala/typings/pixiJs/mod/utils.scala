@@ -47,8 +47,7 @@ object utils {
   @JSImport("pixi.js", "utils.BaseTextureCache")
   @js.native
   def BaseTextureCache: js.Any = js.native
-  @scala.inline
-  def BaseTextureCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseTextureCache")(x.asInstanceOf[js.Any])
+  inline def BaseTextureCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseTextureCache")(x.asInstanceOf[js.Any])
   
   /**
     * Creates a Canvas element of the given size to be used as a target for rendering to.
@@ -139,8 +138,7 @@ object utils {
   @JSImport("pixi.js", "utils.ProgramCache")
   @js.native
   def ProgramCache: js.Any = js.native
-  @scala.inline
-  def ProgramCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgramCache")(x.asInstanceOf[js.Any])
+  inline def ProgramCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgramCache")(x.asInstanceOf[js.Any])
   
   /**
     * @todo Describe property usage
@@ -153,8 +151,7 @@ object utils {
   @JSImport("pixi.js", "utils.TextureCache")
   @js.native
   def TextureCache: js.Any = js.native
-  @scala.inline
-  def TextureCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextureCache")(x.asInstanceOf[js.Any])
+  inline def TextureCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextureCache")(x.asInstanceOf[js.Any])
   
   /**
     * Removes all textures from cache, but does not destroy them
@@ -162,8 +159,7 @@ object utils {
     * @memberof PIXI.utils
     * @function clearTextureCache
     */
-  @scala.inline
-  def clearTextureCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTextureCache")().asInstanceOf[Unit]
+  inline def clearTextureCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTextureCache")().asInstanceOf[Unit]
   
   /**
     * changes blendMode according to texture format
@@ -174,8 +170,7 @@ object utils {
     * @param {boolean} premultiplied - whether source is premultiplied
     * @returns {number} true blend mode for this texture
     */
-  @scala.inline
-  def correctBlendMode(blendMode: Double, premultiplied: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("correctBlendMode")(blendMode.asInstanceOf[js.Any], premultiplied.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def correctBlendMode(blendMode: Double, premultiplied: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("correctBlendMode")(blendMode.asInstanceOf[js.Any], premultiplied.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Generic Mask Stack data structure
@@ -186,12 +181,9 @@ object utils {
     * @param {Uint16Array|Uint32Array} [outBuffer] - Buffer for output, length has to be `6 * size`
     * @return {Uint16Array|Uint32Array} - Resulting index buffer
     */
-  @scala.inline
-  def createIndicesForQuads(size: Double): Uint16Array | Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any]).asInstanceOf[Uint16Array | Uint32Array]
-  @scala.inline
-  def createIndicesForQuads(size: Double, outBuffer: Uint16Array): Uint16Array | Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any], outBuffer.asInstanceOf[js.Any])).asInstanceOf[Uint16Array | Uint32Array]
-  @scala.inline
-  def createIndicesForQuads(size: Double, outBuffer: Uint32Array): Uint16Array | Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any], outBuffer.asInstanceOf[js.Any])).asInstanceOf[Uint16Array | Uint32Array]
+  inline def createIndicesForQuads(size: Double): Uint16Array | Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any]).asInstanceOf[Uint16Array | Uint32Array]
+  inline def createIndicesForQuads(size: Double, outBuffer: Uint16Array): Uint16Array | Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any], outBuffer.asInstanceOf[js.Any])).asInstanceOf[Uint16Array | Uint32Array]
+  inline def createIndicesForQuads(size: Double, outBuffer: Uint32Array): Uint16Array | Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any], outBuffer.asInstanceOf[js.Any])).asInstanceOf[Uint16Array | Uint32Array]
   
   /**
     * Split a data URI into components. Returns undefined if
@@ -202,8 +194,7 @@ object utils {
     * @param {string} dataUri - the data URI to check
     * @return {PIXI.utils.DecomposedDataUri|undefined} The decomposed data uri or undefined
     */
-  @scala.inline
-  def decomposeDataUri(dataUri: String): js.UndefOr[DecomposedDataUri] = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeDataUri")(dataUri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DecomposedDataUri]]
+  inline def decomposeDataUri(dataUri: String): js.UndefOr[DecomposedDataUri] = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeDataUri")(dataUri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DecomposedDataUri]]
   
   /**
     * Helper for warning developers about deprecated features & settings.
@@ -217,10 +208,8 @@ object utils {
     * @param {number} [ignoreDepth=3] - The number of steps to ignore at the top of the error stack
     *        this is mostly to ignore internal deprecation calls.
     */
-  @scala.inline
-  def deprecation(version: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecation")(version.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def deprecation(version: String, message: String, ignoreDepth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecation")(version.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ignoreDepth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deprecation(version: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecation")(version.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deprecation(version: String, message: String, ignoreDepth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecation")(version.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ignoreDepth.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Destroys all texture in the cache
@@ -228,8 +217,7 @@ object utils {
     * @memberof PIXI.utils
     * @function destroyTextureCache
     */
-  @scala.inline
-  def destroyTextureCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyTextureCache")().asInstanceOf[Unit]
+  inline def destroyTextureCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyTextureCache")().asInstanceOf[Unit]
   
   /**
     * A polygon triangulation library
@@ -243,14 +231,10 @@ object utils {
     * @param {number} [dimensions=2] - The number of coordinates per vertex in the input array
     * @return {number[]} Triangulated polygon
     */
-  @scala.inline
-  def earcut(vertices: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def earcut(vertices: js.Array[Double], holes: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def earcut(vertices: js.Array[Double], holes: js.Array[Double], dimensions: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def earcut(vertices: js.Array[Double], holes: Unit, dimensions: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def earcut(vertices: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def earcut(vertices: js.Array[Double], holes: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def earcut(vertices: js.Array[Double], holes: js.Array[Double], dimensions: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def earcut(vertices: js.Array[Double], holes: Unit, dimensions: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("earcut")(vertices.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], dimensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /**
     * get the resolution / device pixel ratio of an asset by looking for the prefix
@@ -262,10 +246,8 @@ object utils {
     * @param {number} [defaultValue=1] - the defaultValue if no filename prefix is set.
     * @return {number} resolution / device pixel ratio of an asset
     */
-  @scala.inline
-  def getResolutionOfUrl(url: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolutionOfUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getResolutionOfUrl(url: String, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolutionOfUrl")(url.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getResolutionOfUrl(url: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolutionOfUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getResolutionOfUrl(url: String, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolutionOfUrl")(url.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Converts a hexadecimal color number to an [R, G, B] array of normalized floats (numbers from 0.0 to 1.0).
@@ -278,10 +260,8 @@ object utils {
     * @param  {number[]} [out=[]] - If supplied, this array will be used rather than returning a new one
     * @return {number[]} An array representing the [R, G, B] of the color where all values are floats.
     */
-  @scala.inline
-  def hex2rgb(hex: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2rgb")(hex.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def hex2rgb(hex: Double, out: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2rgb")(hex.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def hex2rgb(hex: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2rgb")(hex.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def hex2rgb(hex: Double, out: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2rgb")(hex.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /**
     * Converts a hexadecimal color number to a string.
@@ -293,8 +273,7 @@ object utils {
     * @param {number} hex - Number in hex (e.g., `0xffffff`)
     * @return {string} The string color (e.g., `"#ffffff"`).
     */
-  @scala.inline
-  def hex2string(hex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2string")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hex2string(hex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2string")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * A simple JS library that detects mobile devices.
@@ -334,44 +313,37 @@ object utils {
     @JSImport("pixi.js", "utils.isMobile.amazon")
     @js.native
     def amazon: Phone = js.native
-    @scala.inline
-    def amazon_=(x: Phone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("amazon")(x.asInstanceOf[js.Any])
+    inline def amazon_=(x: Phone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("amazon")(x.asInstanceOf[js.Any])
     
     @JSImport("pixi.js", "utils.isMobile.android")
     @js.native
     def android: Phone = js.native
-    @scala.inline
-    def android_=(x: Phone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("android")(x.asInstanceOf[js.Any])
+    inline def android_=(x: Phone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("android")(x.asInstanceOf[js.Any])
     
     @JSImport("pixi.js", "utils.isMobile.any")
     @js.native
     def any: Boolean = js.native
-    @scala.inline
-    def any_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
+    inline def any_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
     
     @JSImport("pixi.js", "utils.isMobile.apple")
     @js.native
     def apple: Device = js.native
-    @scala.inline
-    def apple_=(x: Device): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("apple")(x.asInstanceOf[js.Any])
+    inline def apple_=(x: Device): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("apple")(x.asInstanceOf[js.Any])
     
     @JSImport("pixi.js", "utils.isMobile.phone")
     @js.native
     def phone: Boolean = js.native
-    @scala.inline
-    def phone_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phone")(x.asInstanceOf[js.Any])
+    inline def phone_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phone")(x.asInstanceOf[js.Any])
     
     @JSImport("pixi.js", "utils.isMobile.tablet")
     @js.native
     def tablet: Boolean = js.native
-    @scala.inline
-    def tablet_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tablet")(x.asInstanceOf[js.Any])
+    inline def tablet_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tablet")(x.asInstanceOf[js.Any])
     
     @JSImport("pixi.js", "utils.isMobile.windows")
     @js.native
     def windows: Phone = js.native
-    @scala.inline
-    def windows_=(x: Phone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windows")(x.asInstanceOf[js.Any])
+    inline def windows_=(x: Phone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windows")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -382,8 +354,7 @@ object utils {
     * @param {number} v - input value
     * @return {boolean} `true` if value is power of two
     */
-  @scala.inline
-  def isPow2(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPow2")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPow2(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPow2")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Helper for checking for WebGL support.
@@ -392,8 +363,7 @@ object utils {
     * @function isWebGLSupported
     * @return {boolean} Is WebGL supported.
     */
-  @scala.inline
-  def isWebGLSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLSupported")().asInstanceOf[Boolean]
+  inline def isWebGLSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLSupported")().asInstanceOf[Boolean]
   
   /**
     * Computes ceil of log base 2
@@ -403,8 +373,7 @@ object utils {
     * @param {number} v - input value
     * @return {number} logarithm base 2
     */
-  @scala.inline
-  def log2(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def log2(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Rounds to next power of two.
@@ -414,8 +383,7 @@ object utils {
     * @param {number} v - input value
     * @return {number}
     */
-  @scala.inline
-  def nextPow2(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextPow2")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def nextPow2(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextPow2")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * maps premultiply flag and blendMode to adjusted blendMode
@@ -426,17 +394,12 @@ object utils {
   @JSImport("pixi.js", "utils.premultiplyBlendMode")
   @js.native
   def premultiplyBlendMode: js.Array[js.Array[Double]] = js.native
-  @scala.inline
-  def premultiplyBlendMode_=(x: js.Array[js.Array[Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("premultiplyBlendMode")(x.asInstanceOf[js.Any])
+  inline def premultiplyBlendMode_=(x: js.Array[js.Array[Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("premultiplyBlendMode")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Unit, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyRgba(rgb: js.Array[Double], alpha: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Unit, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   /**
     * combines rgb and alpha to out array
     *
@@ -448,14 +411,10 @@ object utils {
     * @param {boolean} [premultiply=true] - do premultiply it
     * @returns {Float32Array} vec4 rgba
     */
-  @scala.inline
-  def premultiplyRgba(rgb: Float32Array, alpha: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Unit, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyRgba(rgb: Float32Array, alpha: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Unit, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyRgba(rgb: Float32Array, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   
   /**
     * premultiplies tint
@@ -466,8 +425,7 @@ object utils {
     * @param {number} alpha - floating point alpha (0.0-1.0)
     * @returns {number} tint multiplied by alpha
     */
-  @scala.inline
-  def premultiplyTint(tint: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTint")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def premultiplyTint(tint: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTint")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * converts integer tint and float alpha to vec4 form, premultiplies by default
@@ -480,14 +438,10 @@ object utils {
     * @param {boolean} [premultiply=true] - do premultiply it
     * @returns {Float32Array} vec4 rgba
     */
-  @scala.inline
-  def premultiplyTintToRgba(tint: Double, alpha: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def premultiplyTintToRgba(tint: Double, alpha: Double, out: Unit, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-  @scala.inline
-  def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyTintToRgba(tint: Double, alpha: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyTintToRgba(tint: Double, alpha: Double, out: Unit, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  inline def premultiplyTintToRgba(tint: Double, alpha: Double, out: Float32Array, premultiply: Boolean): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   
   /**
     * Remove items from a javascript array without generating garbage
@@ -498,8 +452,7 @@ object utils {
     * @param {number} startIdx - starting index
     * @param {number} removeCount - how many to remove
     */
-  @scala.inline
-  def removeItems(arr: js.Array[js.Any], startIdx: Double, removeCount: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeItems")(arr.asInstanceOf[js.Any], startIdx.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeItems(arr: js.Array[js.Any], startIdx: Double, removeCount: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeItems")(arr.asInstanceOf[js.Any], startIdx.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Converts a color as an [R, G, B] array of normalized floats to a hexadecimal number.
@@ -511,8 +464,7 @@ object utils {
     * @param {number[]} rgb - Array of numbers where all values are normalized floats from 0.0 to 1.0.
     * @return {number} Number in hexadecimal.
     */
-  @scala.inline
-  def rgb2hex(rgb: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def rgb2hex(rgb: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Logs out the version and renderer information for this running instance of PIXI.
@@ -524,8 +476,7 @@ object utils {
     * @memberof PIXI.utils
     * @param {string} type - The string renderer type to log.
     */
-  @scala.inline
-  def sayHello(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sayHello")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sayHello(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sayHello")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns sign of number
@@ -535,8 +486,7 @@ object utils {
     * @param {number} n - the number to check the sign of
     * @returns {number} 0 if `n` is 0, -1 if `n` is negative, 1 if `n` is positive
     */
-  @scala.inline
-  def sign(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def sign(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Skips the hello message of renderers that are created after this is run.
@@ -544,8 +494,7 @@ object utils {
     * @function skipHello
     * @memberof PIXI.utils
     */
-  @scala.inline
-  def skipHello(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("skipHello")().asInstanceOf[Unit]
+  inline def skipHello(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("skipHello")().asInstanceOf[Unit]
   
   /**
     * Converts a hexadecimal string to a hexadecimal color number.
@@ -557,8 +506,7 @@ object utils {
     * @param {string} string - The string color (e.g., `"#ffffff"`)
     * @return {number} Number in hexadecimal.
     */
-  @scala.inline
-  def string2hex(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("string2hex")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def string2hex(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("string2hex")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Trim transparent borders from a canvas
@@ -568,8 +516,7 @@ object utils {
     * @param {HTMLCanvasElement} canvas - the canvas to trim
     * @returns {object} Trim data
     */
-  @scala.inline
-  def trimCanvas(canvas: HTMLCanvasElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trimCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def trimCanvas(canvas: HTMLCanvasElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trimCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets the next unique identifier
@@ -578,8 +525,7 @@ object utils {
     * @function uid
     * @return {number} The next unique identifier to use.
     */
-  @scala.inline
-  def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+  inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   
   /**
     * Node.js compatible URL utilities.
@@ -593,6 +539,5 @@ object utils {
   @JSImport("pixi.js", "utils.url")
   @js.native
   def url: js.Any = js.native
-  @scala.inline
-  def url_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("url")(x.asInstanceOf[js.Any])
+  inline def url_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("url")(x.asInstanceOf[js.Any])
 }

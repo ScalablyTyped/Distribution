@@ -17,8 +17,7 @@ trait ReadonlySet[T]
 }
 object ReadonlySet {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     entries: () => Iterator[js.Tuple2[T, T]],
     forEach: js.Function2[/* value */ T, /* key */ T, Unit] => Unit,
     has: T => Boolean,
@@ -30,16 +29,12 @@ object ReadonlySet {
     __obj.asInstanceOf[ReadonlySet[T]]
   }
   
-  @scala.inline
-  implicit class ReadonlySetMutableBuilder[Self <: ReadonlySet[?], T] (val x: Self & ReadonlySet[T]) extends AnyVal {
+  extension [Self <: ReadonlySet[?], T](x: Self & ReadonlySet[T]) {
     
-    @scala.inline
-    def setEntries(value: () => Iterator[js.Tuple2[T, T]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+    inline def setEntries(value: () => Iterator[js.Tuple2[T, T]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForEach(value: js.Function2[/* value */ T, /* key */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+    inline def setForEach(value: js.Function2[/* value */ T, /* key */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValues(value: () => Iterator[T]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+    inline def setValues(value: () => Iterator[T]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
   }
 }

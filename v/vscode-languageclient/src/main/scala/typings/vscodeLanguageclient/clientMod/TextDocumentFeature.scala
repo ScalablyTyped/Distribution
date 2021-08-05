@@ -11,11 +11,11 @@ abstract class TextDocumentFeature[PO, RO /* <: typings.vscodeLanguageserverProt
      with DynamicFeature[RO] {
   def this(_client: BaseLanguageClient, _message: typings.vscodeJsonrpc.messagesMod.MessageType) = this()
   
-  var _client: BaseLanguageClient = js.native
+  /* protected */ var _client: BaseLanguageClient = js.native
   
-  var _message: js.Any = js.native
+  /* private */ var _message: js.Any = js.native
   
-  var _registrations: js.Any = js.native
+  /* private */ var _registrations: js.Any = js.native
   
   def getProvider(textDocument: typings.vscode.mod.TextDocument): PR = js.native
   

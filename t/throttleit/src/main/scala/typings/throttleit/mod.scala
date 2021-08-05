@@ -13,8 +13,7 @@ object mod {
     * @param wait Number of milliseconds that must elapse between `func` invocations.
     * @return A new function that wraps the `func` function passed in.
     */
-  @scala.inline
-  def apply[GFunction /* <: AnyFunction */](fn: GFunction, wait: Double): GFunction = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[GFunction]
+  inline def apply[GFunction /* <: AnyFunction */](fn: GFunction, wait: Double): GFunction = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[GFunction]
   
   @JSImport("throttleit", JSImport.Namespace)
   @js.native

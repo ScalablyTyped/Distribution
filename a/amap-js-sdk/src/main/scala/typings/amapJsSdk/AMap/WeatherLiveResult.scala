@@ -29,8 +29,7 @@ trait WeatherLiveResult extends StObject {
 }
 object WeatherLiveResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adcode: String,
     city: String,
     humidity: String,
@@ -46,37 +45,26 @@ object WeatherLiveResult {
     __obj.asInstanceOf[WeatherLiveResult]
   }
   
-  @scala.inline
-  implicit class WeatherLiveResultMutableBuilder[Self <: WeatherLiveResult] (val x: Self) extends AnyVal {
+  extension [Self <: WeatherLiveResult](x: Self) {
     
-    @scala.inline
-    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+    inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumidity(value: String): Self = StObject.set(x, "humidity", value.asInstanceOf[js.Any])
+    inline def setHumidity(value: String): Self = StObject.set(x, "humidity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
+    inline def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
+    inline def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeather(value: String): Self = StObject.set(x, "weather", value.asInstanceOf[js.Any])
+    inline def setWeather(value: String): Self = StObject.set(x, "weather", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindDirection(value: String): Self = StObject.set(x, "windDirection", value.asInstanceOf[js.Any])
+    inline def setWindDirection(value: String): Self = StObject.set(x, "windDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindPower(value: Double): Self = StObject.set(x, "windPower", value.asInstanceOf[js.Any])
+    inline def setWindPower(value: Double): Self = StObject.set(x, "windPower", value.asInstanceOf[js.Any])
   }
 }

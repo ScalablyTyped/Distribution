@@ -16,8 +16,7 @@ trait LabeledStatement
 }
 object LabeledStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,16 +44,12 @@ object LabeledStatement {
     __obj.asInstanceOf[LabeledStatement]
   }
   
-  @scala.inline
-  implicit class LabeledStatementMutableBuilder[Self <: LabeledStatement] (val x: Self) extends AnyVal {
+  extension [Self <: LabeledStatement](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (LabeledStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (LabeledStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

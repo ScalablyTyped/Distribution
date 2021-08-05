@@ -25,61 +25,43 @@ trait SwipeOptions extends StObject {
 }
 object SwipeOptions {
   
-  @scala.inline
-  def apply(): SwipeOptions = {
+  inline def apply(): SwipeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SwipeOptions]
   }
   
-  @scala.inline
-  implicit class SwipeOptionsMutableBuilder[Self <: SwipeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SwipeOptions](x: Self) {
     
-    @scala.inline
-    def setAuto(value: Double): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Double): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
-    @scala.inline
-    def setCallback(value: (/* index */ Double, /* elem */ HTMLElement) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (/* index */ Double, /* elem */ HTMLElement) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+    inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
-    @scala.inline
-    def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+    inline def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
+    inline def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
-    @scala.inline
-    def setStartSlide(value: Double): Self = StObject.set(x, "startSlide", value.asInstanceOf[js.Any])
+    inline def setStartSlide(value: Double): Self = StObject.set(x, "startSlide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSlideUndefined: Self = StObject.set(x, "startSlide", js.undefined)
+    inline def setStartSlideUndefined: Self = StObject.set(x, "startSlide", js.undefined)
     
-    @scala.inline
-    def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+    inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
     
-    @scala.inline
-    def setTransitionEnd(value: (/* index */ Double, /* elem */ HTMLElement) => Unit): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
+    inline def setTransitionEnd(value: (/* index */ Double, /* elem */ HTMLElement) => Unit): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTransitionEndUndefined: Self = StObject.set(x, "transitionEnd", js.undefined)
+    inline def setTransitionEndUndefined: Self = StObject.set(x, "transitionEnd", js.undefined)
   }
 }

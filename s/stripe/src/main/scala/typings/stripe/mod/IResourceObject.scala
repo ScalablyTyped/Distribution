@@ -12,17 +12,14 @@ trait IResourceObject
 }
 object IResourceObject {
   
-  @scala.inline
-  def apply(id: String, `object`: String): IResourceObject = {
+  inline def apply(id: String, `object`: String): IResourceObject = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceObject]
   }
   
-  @scala.inline
-  implicit class IResourceObjectMutableBuilder[Self <: IResourceObject] (val x: Self) extends AnyVal {
+  extension [Self <: IResourceObject](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

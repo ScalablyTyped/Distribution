@@ -23,34 +23,25 @@ trait SchemaOrderpaymentsNotifyRefundRequest extends StObject {
 }
 object SchemaOrderpaymentsNotifyRefundRequest {
   
-  @scala.inline
-  def apply(): SchemaOrderpaymentsNotifyRefundRequest = {
+  inline def apply(): SchemaOrderpaymentsNotifyRefundRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderpaymentsNotifyRefundRequest]
   }
   
-  @scala.inline
-  implicit class SchemaOrderpaymentsNotifyRefundRequestMutableBuilder[Self <: SchemaOrderpaymentsNotifyRefundRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderpaymentsNotifyRefundRequest](x: Self) {
     
-    @scala.inline
-    def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
+    inline def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
+    inline def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
     
-    @scala.inline
-    def setInvoiceIds(value: js.Array[String]): Self = StObject.set(x, "invoiceIds", value.asInstanceOf[js.Any])
+    inline def setInvoiceIds(value: js.Array[String]): Self = StObject.set(x, "invoiceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceIdsUndefined: Self = StObject.set(x, "invoiceIds", js.undefined)
+    inline def setInvoiceIdsUndefined: Self = StObject.set(x, "invoiceIds", js.undefined)
     
-    @scala.inline
-    def setInvoiceIdsVarargs(value: String*): Self = StObject.set(x, "invoiceIds", js.Array(value :_*))
+    inline def setInvoiceIdsVarargs(value: String*): Self = StObject.set(x, "invoiceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRefundState(value: String): Self = StObject.set(x, "refundState", value.asInstanceOf[js.Any])
+    inline def setRefundState(value: String): Self = StObject.set(x, "refundState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefundStateUndefined: Self = StObject.set(x, "refundState", js.undefined)
+    inline def setRefundStateUndefined: Self = StObject.set(x, "refundState", js.undefined)
   }
 }

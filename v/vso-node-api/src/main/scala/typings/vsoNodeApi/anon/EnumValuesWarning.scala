@@ -10,16 +10,13 @@ trait EnumValuesWarning extends StObject {
 }
 object EnumValuesWarning {
   
-  @scala.inline
-  def apply(enumValues: Warning): EnumValuesWarning = {
+  inline def apply(enumValues: Warning): EnumValuesWarning = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesWarning]
   }
   
-  @scala.inline
-  implicit class EnumValuesWarningMutableBuilder[Self <: EnumValuesWarning] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesWarning](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Warning): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Warning): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

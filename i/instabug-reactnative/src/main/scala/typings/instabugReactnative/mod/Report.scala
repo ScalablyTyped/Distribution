@@ -28,8 +28,7 @@ trait Report extends StObject {
 }
 object Report {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addFileAttachmentWithData: (String, String) => Unit,
     addFileAttachmentWithUrl: (String, String) => Unit,
     appendConsoleLog: String => Unit,
@@ -45,37 +44,26 @@ object Report {
     __obj.asInstanceOf[Report]
   }
   
-  @scala.inline
-  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
+  extension [Self <: Report](x: Self) {
     
-    @scala.inline
-    def setAddFileAttachmentWithData(value: (String, String) => Unit): Self = StObject.set(x, "addFileAttachmentWithData", js.Any.fromFunction2(value))
+    inline def setAddFileAttachmentWithData(value: (String, String) => Unit): Self = StObject.set(x, "addFileAttachmentWithData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddFileAttachmentWithUrl(value: (String, String) => Unit): Self = StObject.set(x, "addFileAttachmentWithUrl", js.Any.fromFunction2(value))
+    inline def setAddFileAttachmentWithUrl(value: (String, String) => Unit): Self = StObject.set(x, "addFileAttachmentWithUrl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAppendConsoleLog(value: String => Unit): Self = StObject.set(x, "appendConsoleLog", js.Any.fromFunction1(value))
+    inline def setAppendConsoleLog(value: String => Unit): Self = StObject.set(x, "appendConsoleLog", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendTag(value: String => Unit): Self = StObject.set(x, "appendTag", js.Any.fromFunction1(value))
+    inline def setAppendTag(value: String => Unit): Self = StObject.set(x, "appendTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogDebug(value: String => Unit): Self = StObject.set(x, "logDebug", js.Any.fromFunction1(value))
+    inline def setLogDebug(value: String => Unit): Self = StObject.set(x, "logDebug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogError(value: String => Unit): Self = StObject.set(x, "logError", js.Any.fromFunction1(value))
+    inline def setLogError(value: String => Unit): Self = StObject.set(x, "logError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogInfo(value: String => Unit): Self = StObject.set(x, "logInfo", js.Any.fromFunction1(value))
+    inline def setLogInfo(value: String => Unit): Self = StObject.set(x, "logInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogVerbose(value: String => Unit): Self = StObject.set(x, "logVerbose", js.Any.fromFunction1(value))
+    inline def setLogVerbose(value: String => Unit): Self = StObject.set(x, "logVerbose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogWarn(value: String => Unit): Self = StObject.set(x, "logWarn", js.Any.fromFunction1(value))
+    inline def setLogWarn(value: String => Unit): Self = StObject.set(x, "logWarn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUserAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setUserAttribute", js.Any.fromFunction2(value))
+    inline def setSetUserAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setUserAttribute", js.Any.fromFunction2(value))
   }
 }

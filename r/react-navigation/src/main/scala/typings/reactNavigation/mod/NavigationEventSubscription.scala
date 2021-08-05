@@ -10,16 +10,13 @@ trait NavigationEventSubscription extends StObject {
 }
 object NavigationEventSubscription {
   
-  @scala.inline
-  def apply(remove: () => Unit): NavigationEventSubscription = {
+  inline def apply(remove: () => Unit): NavigationEventSubscription = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
     __obj.asInstanceOf[NavigationEventSubscription]
   }
   
-  @scala.inline
-  implicit class NavigationEventSubscriptionMutableBuilder[Self <: NavigationEventSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationEventSubscription](x: Self) {
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

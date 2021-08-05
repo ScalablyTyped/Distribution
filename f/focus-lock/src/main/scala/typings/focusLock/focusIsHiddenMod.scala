@@ -10,6 +10,5 @@ object focusIsHiddenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def focusIsHidden(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusIsHidden")().asInstanceOf[Boolean]
+  inline def focusIsHidden(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusIsHidden")().asInstanceOf[Boolean]
 }

@@ -12,25 +12,19 @@ trait AppCatalogs
 }
 object AppCatalogs {
   
-  @scala.inline
-  def apply(): AppCatalogs = {
+  inline def apply(): AppCatalogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppCatalogs]
   }
   
-  @scala.inline
-  implicit class AppCatalogsMutableBuilder[Self <: AppCatalogs] (val x: Self) extends AnyVal {
+  extension [Self <: AppCatalogs](x: Self) {
     
-    @scala.inline
-    def setTeamsApps(value: NullableOption[js.Array[TeamsApp]]): Self = StObject.set(x, "teamsApps", value.asInstanceOf[js.Any])
+    inline def setTeamsApps(value: NullableOption[js.Array[TeamsApp]]): Self = StObject.set(x, "teamsApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamsAppsNull: Self = StObject.set(x, "teamsApps", null)
+    inline def setTeamsAppsNull: Self = StObject.set(x, "teamsApps", null)
     
-    @scala.inline
-    def setTeamsAppsUndefined: Self = StObject.set(x, "teamsApps", js.undefined)
+    inline def setTeamsAppsUndefined: Self = StObject.set(x, "teamsApps", js.undefined)
     
-    @scala.inline
-    def setTeamsAppsVarargs(value: TeamsApp*): Self = StObject.set(x, "teamsApps", js.Array(value :_*))
+    inline def setTeamsAppsVarargs(value: TeamsApp*): Self = StObject.set(x, "teamsApps", js.Array(value :_*))
   }
 }

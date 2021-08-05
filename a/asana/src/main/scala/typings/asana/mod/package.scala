@@ -5,13 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Client_=(x: typings.asana.mod.ClientStatic): scala.Unit = typings.asana.mod.^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
+inline def Client_=(x: typings.asana.mod.ClientStatic): scala.Unit = typings.asana.mod.^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def Dispatcher_=(x: typings.asana.mod.DispatcherStatic): scala.Unit = typings.asana.mod.^.asInstanceOf[js.Dynamic].updateDynamic("Dispatcher")(x.asInstanceOf[js.Any])
+inline def Dispatcher_=(x: typings.asana.mod.DispatcherStatic): scala.Unit = typings.asana.mod.^.asInstanceOf[js.Dynamic].updateDynamic("Dispatcher")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def VERSION: java.lang.String = typings.asana.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
-@scala.inline
-def VERSION_=(x: java.lang.String): scala.Unit = typings.asana.mod.^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+inline def VERSION: java.lang.String = typings.asana.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION_=(x: java.lang.String): scala.Unit = typings.asana.mod.^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])

@@ -12,25 +12,19 @@ trait TransactionOptions extends StObject {
 }
 object TransactionOptions {
   
-  @scala.inline
-  def apply(): TransactionOptions = {
+  inline def apply(): TransactionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransactionOptions]
   }
   
-  @scala.inline
-  implicit class TransactionOptionsMutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionOptions](x: Self) {
     
-    @scala.inline
-    def setChildOf(value: Transaction | Span | String): Self = StObject.set(x, "childOf", value.asInstanceOf[js.Any])
+    inline def setChildOf(value: Transaction | Span | String): Self = StObject.set(x, "childOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildOfUndefined: Self = StObject.set(x, "childOf", js.undefined)
+    inline def setChildOfUndefined: Self = StObject.set(x, "childOf", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

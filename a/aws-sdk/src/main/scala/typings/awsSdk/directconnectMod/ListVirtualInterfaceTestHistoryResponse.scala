@@ -18,28 +18,21 @@ trait ListVirtualInterfaceTestHistoryResponse extends StObject {
 }
 object ListVirtualInterfaceTestHistoryResponse {
   
-  @scala.inline
-  def apply(): ListVirtualInterfaceTestHistoryResponse = {
+  inline def apply(): ListVirtualInterfaceTestHistoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVirtualInterfaceTestHistoryResponse]
   }
   
-  @scala.inline
-  implicit class ListVirtualInterfaceTestHistoryResponseMutableBuilder[Self <: ListVirtualInterfaceTestHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListVirtualInterfaceTestHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setVirtualInterfaceTestHistory(value: VirtualInterfaceTestHistoryList): Self = StObject.set(x, "virtualInterfaceTestHistory", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceTestHistory(value: VirtualInterfaceTestHistoryList): Self = StObject.set(x, "virtualInterfaceTestHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceTestHistoryUndefined: Self = StObject.set(x, "virtualInterfaceTestHistory", js.undefined)
+    inline def setVirtualInterfaceTestHistoryUndefined: Self = StObject.set(x, "virtualInterfaceTestHistory", js.undefined)
     
-    @scala.inline
-    def setVirtualInterfaceTestHistoryVarargs(value: VirtualInterfaceTestHistory*): Self = StObject.set(x, "virtualInterfaceTestHistory", js.Array(value :_*))
+    inline def setVirtualInterfaceTestHistoryVarargs(value: VirtualInterfaceTestHistory*): Self = StObject.set(x, "virtualInterfaceTestHistory", js.Array(value :_*))
   }
 }

@@ -44,7 +44,7 @@ trait InputBase
     * supported for the specified
     * type.https://html.spec.whatwg.org/multipage/forms.html#input-type-attr-summary
     */
-  var bShowLabelAsPlaceholder: js.Any = js.native
+  /* protected */ var bShowLabelAsPlaceholder: js.Any = js.native
   
   /**
     * Registers an event listener to the browser input event.

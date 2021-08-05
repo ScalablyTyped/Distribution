@@ -7,22 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(aff: String): NSpell = ^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any]).asInstanceOf[NSpell]
-  @scala.inline
-  def apply(aff: String, dic: String): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
-  @scala.inline
-  def apply(aff: String, dic: Buffer): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
-  @scala.inline
-  def apply(aff: Buffer): NSpell = ^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any]).asInstanceOf[NSpell]
-  @scala.inline
-  def apply(aff: Buffer, dic: String): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
-  @scala.inline
-  def apply(aff: Buffer, dic: Buffer): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
-  @scala.inline
-  def apply(dictionary: js.Array[Dictionary]): NSpell = ^.asInstanceOf[js.Dynamic].apply(dictionary.asInstanceOf[js.Any]).asInstanceOf[NSpell]
-  @scala.inline
-  def apply(dictionary: Dictionary): NSpell = ^.asInstanceOf[js.Dynamic].apply(dictionary.asInstanceOf[js.Any]).asInstanceOf[NSpell]
+  inline def apply(aff: String): NSpell = ^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any]).asInstanceOf[NSpell]
+  inline def apply(aff: String, dic: String): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
+  inline def apply(aff: String, dic: Buffer): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
+  inline def apply(aff: Buffer): NSpell = ^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any]).asInstanceOf[NSpell]
+  inline def apply(aff: Buffer, dic: String): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
+  inline def apply(aff: Buffer, dic: Buffer): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
+  inline def apply(dictionary: js.Array[Dictionary]): NSpell = ^.asInstanceOf[js.Dynamic].apply(dictionary.asInstanceOf[js.Any]).asInstanceOf[NSpell]
+  inline def apply(dictionary: Dictionary): NSpell = ^.asInstanceOf[js.Dynamic].apply(dictionary.asInstanceOf[js.Any]).asInstanceOf[NSpell]
   
   /**
     * Describes instance of NSpell, which is returned by the default factory function.
@@ -53,23 +45,18 @@ object mod {
   }
   object Dictionary {
     
-    @scala.inline
-    def apply(aff: Buffer | String): Dictionary = {
+    inline def apply(aff: Buffer | String): Dictionary = {
       val __obj = js.Dynamic.literal(aff = aff.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictionary]
     }
     
-    @scala.inline
-    implicit class DictionaryMutableBuilder[Self <: Dictionary] (val x: Self) extends AnyVal {
+    extension [Self <: Dictionary](x: Self) {
       
-      @scala.inline
-      def setAff(value: Buffer | String): Self = StObject.set(x, "aff", value.asInstanceOf[js.Any])
+      inline def setAff(value: Buffer | String): Self = StObject.set(x, "aff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDic(value: Buffer | String): Self = StObject.set(x, "dic", value.asInstanceOf[js.Any])
+      inline def setDic(value: Buffer | String): Self = StObject.set(x, "dic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDicUndefined: Self = StObject.set(x, "dic", js.undefined)
+      inline def setDicUndefined: Self = StObject.set(x, "dic", js.undefined)
     }
   }
   
@@ -150,23 +137,18 @@ object mod {
   }
   object SpellCheck {
     
-    @scala.inline
-    def apply(correct: Boolean, forbidden: Boolean, warn: Boolean): SpellCheck = {
+    inline def apply(correct: Boolean, forbidden: Boolean, warn: Boolean): SpellCheck = {
       val __obj = js.Dynamic.literal(correct = correct.asInstanceOf[js.Any], forbidden = forbidden.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpellCheck]
     }
     
-    @scala.inline
-    implicit class SpellCheckMutableBuilder[Self <: SpellCheck] (val x: Self) extends AnyVal {
+    extension [Self <: SpellCheck](x: Self) {
       
-      @scala.inline
-      def setCorrect(value: Boolean): Self = StObject.set(x, "correct", value.asInstanceOf[js.Any])
+      inline def setCorrect(value: Boolean): Self = StObject.set(x, "correct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForbidden(value: Boolean): Self = StObject.set(x, "forbidden", value.asInstanceOf[js.Any])
+      inline def setForbidden(value: Boolean): Self = StObject.set(x, "forbidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
 }

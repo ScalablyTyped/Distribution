@@ -18,28 +18,21 @@ trait KernelGatewayAppSettings extends StObject {
 }
 object KernelGatewayAppSettings {
   
-  @scala.inline
-  def apply(): KernelGatewayAppSettings = {
+  inline def apply(): KernelGatewayAppSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KernelGatewayAppSettings]
   }
   
-  @scala.inline
-  implicit class KernelGatewayAppSettingsMutableBuilder[Self <: KernelGatewayAppSettings] (val x: Self) extends AnyVal {
+  extension [Self <: KernelGatewayAppSettings](x: Self) {
     
-    @scala.inline
-    def setCustomImages(value: CustomImages): Self = StObject.set(x, "CustomImages", value.asInstanceOf[js.Any])
+    inline def setCustomImages(value: CustomImages): Self = StObject.set(x, "CustomImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomImagesUndefined: Self = StObject.set(x, "CustomImages", js.undefined)
+    inline def setCustomImagesUndefined: Self = StObject.set(x, "CustomImages", js.undefined)
     
-    @scala.inline
-    def setCustomImagesVarargs(value: CustomImage*): Self = StObject.set(x, "CustomImages", js.Array(value :_*))
+    inline def setCustomImagesVarargs(value: CustomImage*): Self = StObject.set(x, "CustomImages", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
+    inline def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultResourceSpecUndefined: Self = StObject.set(x, "DefaultResourceSpec", js.undefined)
+    inline def setDefaultResourceSpecUndefined: Self = StObject.set(x, "DefaultResourceSpec", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ object inputWithOptionsDotProtractorDriverMod {
        with DropdownDriver
   object InputWithOptionsDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       dropdownContent: () => DropdownContentDriver,
       element: () => ElementFinder,

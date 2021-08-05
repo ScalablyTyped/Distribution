@@ -13,25 +13,19 @@ trait BuyTradeFormResponse extends StObject {
 }
 object BuyTradeFormResponse {
   
-  @scala.inline
-  def apply(): BuyTradeFormResponse = {
+  inline def apply(): BuyTradeFormResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuyTradeFormResponse]
   }
   
-  @scala.inline
-  implicit class BuyTradeFormResponseMutableBuilder[Self <: BuyTradeFormResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BuyTradeFormResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setForm(value: Fields): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: Fields): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
   }
 }

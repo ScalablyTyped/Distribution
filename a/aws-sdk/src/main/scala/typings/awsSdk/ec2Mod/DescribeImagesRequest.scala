@@ -33,55 +33,39 @@ trait DescribeImagesRequest extends StObject {
 }
 object DescribeImagesRequest {
   
-  @scala.inline
-  def apply(): DescribeImagesRequest = {
+  inline def apply(): DescribeImagesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeImagesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeImagesRequestMutableBuilder[Self <: DescribeImagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeImagesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setExecutableUsers(value: ExecutableByStringList): Self = StObject.set(x, "ExecutableUsers", value.asInstanceOf[js.Any])
+    inline def setExecutableUsers(value: ExecutableByStringList): Self = StObject.set(x, "ExecutableUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutableUsersUndefined: Self = StObject.set(x, "ExecutableUsers", js.undefined)
+    inline def setExecutableUsersUndefined: Self = StObject.set(x, "ExecutableUsers", js.undefined)
     
-    @scala.inline
-    def setExecutableUsersVarargs(value: String*): Self = StObject.set(x, "ExecutableUsers", js.Array(value :_*))
+    inline def setExecutableUsersVarargs(value: String*): Self = StObject.set(x, "ExecutableUsers", js.Array(value :_*))
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setImageIds(value: ImageIdStringList): Self = StObject.set(x, "ImageIds", value.asInstanceOf[js.Any])
+    inline def setImageIds(value: ImageIdStringList): Self = StObject.set(x, "ImageIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdsUndefined: Self = StObject.set(x, "ImageIds", js.undefined)
+    inline def setImageIdsUndefined: Self = StObject.set(x, "ImageIds", js.undefined)
     
-    @scala.inline
-    def setImageIdsVarargs(value: ImageId*): Self = StObject.set(x, "ImageIds", js.Array(value :_*))
+    inline def setImageIdsVarargs(value: ImageId*): Self = StObject.set(x, "ImageIds", js.Array(value :_*))
     
-    @scala.inline
-    def setOwners(value: OwnerStringList): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
+    inline def setOwners(value: OwnerStringList): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
+    inline def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
     
-    @scala.inline
-    def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
   }
 }

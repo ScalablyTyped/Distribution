@@ -22,19 +22,15 @@ trait CryptographicHash extends StObject {
 }
 object CryptographicHash {
   
-  @scala.inline
-  def apply(append: IBuffer => Unit, getValueAndReset: () => IBuffer): CryptographicHash = {
+  inline def apply(append: IBuffer => Unit, getValueAndReset: () => IBuffer): CryptographicHash = {
     val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), getValueAndReset = js.Any.fromFunction0(getValueAndReset))
     __obj.asInstanceOf[CryptographicHash]
   }
   
-  @scala.inline
-  implicit class CryptographicHashMutableBuilder[Self <: CryptographicHash] (val x: Self) extends AnyVal {
+  extension [Self <: CryptographicHash](x: Self) {
     
-    @scala.inline
-    def setAppend(value: IBuffer => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+    inline def setAppend(value: IBuffer => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValueAndReset(value: () => IBuffer): Self = StObject.set(x, "getValueAndReset", js.Any.fromFunction0(value))
+    inline def setGetValueAndReset(value: () => IBuffer): Self = StObject.set(x, "getValueAndReset", js.Any.fromFunction0(value))
   }
 }

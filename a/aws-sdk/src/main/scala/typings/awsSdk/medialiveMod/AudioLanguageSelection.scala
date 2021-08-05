@@ -18,22 +18,17 @@ trait AudioLanguageSelection extends StObject {
 }
 object AudioLanguageSelection {
   
-  @scala.inline
-  def apply(LanguageCode: string): AudioLanguageSelection = {
+  inline def apply(LanguageCode: string): AudioLanguageSelection = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioLanguageSelection]
   }
   
-  @scala.inline
-  implicit class AudioLanguageSelectionMutableBuilder[Self <: AudioLanguageSelection] (val x: Self) extends AnyVal {
+  extension [Self <: AudioLanguageSelection](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: string): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: string): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageSelectionPolicy(value: AudioLanguageSelectionPolicy): Self = StObject.set(x, "LanguageSelectionPolicy", value.asInstanceOf[js.Any])
+    inline def setLanguageSelectionPolicy(value: AudioLanguageSelectionPolicy): Self = StObject.set(x, "LanguageSelectionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageSelectionPolicyUndefined: Self = StObject.set(x, "LanguageSelectionPolicy", js.undefined)
+    inline def setLanguageSelectionPolicyUndefined: Self = StObject.set(x, "LanguageSelectionPolicy", js.undefined)
   }
 }

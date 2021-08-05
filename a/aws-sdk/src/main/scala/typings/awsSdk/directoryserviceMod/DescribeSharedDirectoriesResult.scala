@@ -18,28 +18,21 @@ trait DescribeSharedDirectoriesResult extends StObject {
 }
 object DescribeSharedDirectoriesResult {
   
-  @scala.inline
-  def apply(): DescribeSharedDirectoriesResult = {
+  inline def apply(): DescribeSharedDirectoriesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSharedDirectoriesResult]
   }
   
-  @scala.inline
-  implicit class DescribeSharedDirectoriesResultMutableBuilder[Self <: DescribeSharedDirectoriesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSharedDirectoriesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSharedDirectories(value: SharedDirectories): Self = StObject.set(x, "SharedDirectories", value.asInstanceOf[js.Any])
+    inline def setSharedDirectories(value: SharedDirectories): Self = StObject.set(x, "SharedDirectories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedDirectoriesUndefined: Self = StObject.set(x, "SharedDirectories", js.undefined)
+    inline def setSharedDirectoriesUndefined: Self = StObject.set(x, "SharedDirectories", js.undefined)
     
-    @scala.inline
-    def setSharedDirectoriesVarargs(value: SharedDirectory*): Self = StObject.set(x, "SharedDirectories", js.Array(value :_*))
+    inline def setSharedDirectoriesVarargs(value: SharedDirectory*): Self = StObject.set(x, "SharedDirectories", js.Array(value :_*))
   }
 }

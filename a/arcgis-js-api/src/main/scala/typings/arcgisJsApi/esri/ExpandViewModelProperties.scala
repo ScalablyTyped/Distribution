@@ -36,37 +36,27 @@ trait ExpandViewModelProperties extends StObject {
 }
 object ExpandViewModelProperties {
   
-  @scala.inline
-  def apply(): ExpandViewModelProperties = {
+  inline def apply(): ExpandViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpandViewModelProperties]
   }
   
-  @scala.inline
-  implicit class ExpandViewModelPropertiesMutableBuilder[Self <: ExpandViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ExpandViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
+    inline def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCollapseUndefined: Self = StObject.set(x, "autoCollapse", js.undefined)
+    inline def setAutoCollapseUndefined: Self = StObject.set(x, "autoCollapse", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

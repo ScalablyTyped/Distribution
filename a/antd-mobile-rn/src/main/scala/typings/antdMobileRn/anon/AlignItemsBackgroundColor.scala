@@ -18,8 +18,7 @@ trait AlignItemsBackgroundColor extends StObject {
 }
 object AlignItemsBackgroundColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignItems: String,
     backgroundColor: String,
     flexDirection: String,
@@ -30,22 +29,16 @@ object AlignItemsBackgroundColor {
     __obj.asInstanceOf[AlignItemsBackgroundColor]
   }
   
-  @scala.inline
-  implicit class AlignItemsBackgroundColorMutableBuilder[Self <: AlignItemsBackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: AlignItemsBackgroundColor](x: Self) {
     
-    @scala.inline
-    def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
   }
 }

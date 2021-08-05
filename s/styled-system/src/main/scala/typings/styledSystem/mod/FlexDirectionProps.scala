@@ -21,31 +21,25 @@ trait FlexDirectionProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends 
 }
 object FlexDirectionProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FlexDirectionProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FlexDirectionProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexDirectionProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class FlexDirectionPropsMutableBuilder[Self <: FlexDirectionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FlexDirectionProps[ThemeType]) extends AnyVal {
+  extension [Self <: FlexDirectionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & FlexDirectionProps[ThemeType]) {
     
-    @scala.inline
-    def setFlexDirection(
+    inline def setFlexDirection(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexDirectionNull: Self = StObject.set(x, "flexDirection", null)
+    inline def setFlexDirectionNull: Self = StObject.set(x, "flexDirection", null)
     
-    @scala.inline
-    def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
+    inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
     
-    @scala.inline
-    def setFlexDirectionVarargs(
+    inline def setFlexDirectionVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any) | Null)*
     ): Self = StObject.set(x, "flexDirection", js.Array(value :_*))
   }

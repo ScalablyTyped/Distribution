@@ -18,19 +18,15 @@ trait SchemaAcknowledgeTaskRequest extends StObject {
 }
 object SchemaAcknowledgeTaskRequest {
   
-  @scala.inline
-  def apply(): SchemaAcknowledgeTaskRequest = {
+  inline def apply(): SchemaAcknowledgeTaskRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAcknowledgeTaskRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAcknowledgeTaskRequestMutableBuilder[Self <: SchemaAcknowledgeTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAcknowledgeTaskRequest](x: Self) {
     
-    @scala.inline
-    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
+    inline def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
+    inline def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
   }
 }

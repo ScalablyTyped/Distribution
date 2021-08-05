@@ -29,64 +29,45 @@ trait AppliedConditionalAccessPolicy extends StObject {
 }
 object AppliedConditionalAccessPolicy {
   
-  @scala.inline
-  def apply(): AppliedConditionalAccessPolicy = {
+  inline def apply(): AppliedConditionalAccessPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppliedConditionalAccessPolicy]
   }
   
-  @scala.inline
-  implicit class AppliedConditionalAccessPolicyMutableBuilder[Self <: AppliedConditionalAccessPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AppliedConditionalAccessPolicy](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnforcedGrantControls(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "enforcedGrantControls", value.asInstanceOf[js.Any])
+    inline def setEnforcedGrantControls(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "enforcedGrantControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcedGrantControlsNull: Self = StObject.set(x, "enforcedGrantControls", null)
+    inline def setEnforcedGrantControlsNull: Self = StObject.set(x, "enforcedGrantControls", null)
     
-    @scala.inline
-    def setEnforcedGrantControlsUndefined: Self = StObject.set(x, "enforcedGrantControls", js.undefined)
+    inline def setEnforcedGrantControlsUndefined: Self = StObject.set(x, "enforcedGrantControls", js.undefined)
     
-    @scala.inline
-    def setEnforcedGrantControlsVarargs(value: String*): Self = StObject.set(x, "enforcedGrantControls", js.Array(value :_*))
+    inline def setEnforcedGrantControlsVarargs(value: String*): Self = StObject.set(x, "enforcedGrantControls", js.Array(value :_*))
     
-    @scala.inline
-    def setEnforcedSessionControls(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "enforcedSessionControls", value.asInstanceOf[js.Any])
+    inline def setEnforcedSessionControls(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "enforcedSessionControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcedSessionControlsNull: Self = StObject.set(x, "enforcedSessionControls", null)
+    inline def setEnforcedSessionControlsNull: Self = StObject.set(x, "enforcedSessionControls", null)
     
-    @scala.inline
-    def setEnforcedSessionControlsUndefined: Self = StObject.set(x, "enforcedSessionControls", js.undefined)
+    inline def setEnforcedSessionControlsUndefined: Self = StObject.set(x, "enforcedSessionControls", js.undefined)
     
-    @scala.inline
-    def setEnforcedSessionControlsVarargs(value: String*): Self = StObject.set(x, "enforcedSessionControls", js.Array(value :_*))
+    inline def setEnforcedSessionControlsVarargs(value: String*): Self = StObject.set(x, "enforcedSessionControls", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setResult(value: NullableOption[AppliedConditionalAccessPolicyResult]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: NullableOption[AppliedConditionalAccessPolicyResult]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultNull: Self = StObject.set(x, "result", null)
+    inline def setResultNull: Self = StObject.set(x, "result", null)
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

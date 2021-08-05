@@ -16,25 +16,19 @@ trait Edit extends StObject {
 }
 object Edit {
   
-  @scala.inline
-  def apply(edit: String, editDisabled: String, remove: String, removeDisabled: String): Edit = {
+  inline def apply(edit: String, editDisabled: String, remove: String, removeDisabled: String): Edit = {
     val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], editDisabled = editDisabled.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], removeDisabled = removeDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Edit]
   }
   
-  @scala.inline
-  implicit class EditMutableBuilder[Self <: Edit] (val x: Self) extends AnyVal {
+  extension [Self <: Edit](x: Self) {
     
-    @scala.inline
-    def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditDisabled(value: String): Self = StObject.set(x, "editDisabled", value.asInstanceOf[js.Any])
+    inline def setEditDisabled(value: String): Self = StObject.set(x, "editDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveDisabled(value: String): Self = StObject.set(x, "removeDisabled", value.asInstanceOf[js.Any])
+    inline def setRemoveDisabled(value: String): Self = StObject.set(x, "removeDisabled", value.asInstanceOf[js.Any])
   }
 }

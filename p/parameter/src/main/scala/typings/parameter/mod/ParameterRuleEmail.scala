@@ -20,29 +20,22 @@ trait ParameterRuleEmail
 }
 object ParameterRuleEmail {
   
-  @scala.inline
-  def apply(`type`: email | emailQuestionmark): ParameterRuleEmail = {
+  inline def apply(`type`: email | emailQuestionmark): ParameterRuleEmail = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRuleEmail]
   }
   
-  @scala.inline
-  implicit class ParameterRuleEmailMutableBuilder[Self <: ParameterRuleEmail] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterRuleEmail](x: Self) {
     
-    @scala.inline
-    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
+    inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+    inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setType(value: email | emailQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: email | emailQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

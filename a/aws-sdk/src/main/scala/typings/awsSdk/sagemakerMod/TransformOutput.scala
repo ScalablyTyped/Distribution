@@ -28,34 +28,25 @@ trait TransformOutput extends StObject {
 }
 object TransformOutput {
   
-  @scala.inline
-  def apply(S3OutputPath: S3Uri): TransformOutput = {
+  inline def apply(S3OutputPath: S3Uri): TransformOutput = {
     val __obj = js.Dynamic.literal(S3OutputPath = S3OutputPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformOutput]
   }
   
-  @scala.inline
-  implicit class TransformOutputMutableBuilder[Self <: TransformOutput] (val x: Self) extends AnyVal {
+  extension [Self <: TransformOutput](x: Self) {
     
-    @scala.inline
-    def setAccept(value: Accept): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: Accept): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptUndefined: Self = StObject.set(x, "Accept", js.undefined)
+    inline def setAcceptUndefined: Self = StObject.set(x, "Accept", js.undefined)
     
-    @scala.inline
-    def setAssembleWith(value: AssemblyType): Self = StObject.set(x, "AssembleWith", value.asInstanceOf[js.Any])
+    inline def setAssembleWith(value: AssemblyType): Self = StObject.set(x, "AssembleWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssembleWithUndefined: Self = StObject.set(x, "AssembleWith", js.undefined)
+    inline def setAssembleWithUndefined: Self = StObject.set(x, "AssembleWith", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
+    inline def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
   }
 }

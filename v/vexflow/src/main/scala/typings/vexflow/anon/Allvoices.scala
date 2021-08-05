@@ -10,19 +10,15 @@ trait Allvoices extends StObject {
 }
 object Allvoices {
   
-  @scala.inline
-  def apply(): Allvoices = {
+  inline def apply(): Allvoices = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Allvoices]
   }
   
-  @scala.inline
-  implicit class AllvoicesMutableBuilder[Self <: Allvoices] (val x: Self) extends AnyVal {
+  extension [Self <: Allvoices](x: Self) {
     
-    @scala.inline
-    def setAll_voices(value: Boolean): Self = StObject.set(x, "all_voices", value.asInstanceOf[js.Any])
+    inline def setAll_voices(value: Boolean): Self = StObject.set(x, "all_voices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAll_voicesUndefined: Self = StObject.set(x, "all_voices", js.undefined)
+    inline def setAll_voicesUndefined: Self = StObject.set(x, "all_voices", js.undefined)
   }
 }

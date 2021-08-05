@@ -12,19 +12,15 @@ trait CcrFollowInfo
 }
 object CcrFollowInfo {
   
-  @scala.inline
-  def apply(index: String | js.Array[String]): CcrFollowInfo = {
+  inline def apply(index: String | js.Array[String]): CcrFollowInfo = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[CcrFollowInfo]
   }
   
-  @scala.inline
-  implicit class CcrFollowInfoMutableBuilder[Self <: CcrFollowInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CcrFollowInfo](x: Self) {
     
-    @scala.inline
-    def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
   }
 }

@@ -9,16 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Middleware = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware]
-  @scala.inline
-  def apply(opts: Unit, stream: DestinationStream): Middleware = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Middleware]
-  @scala.inline
-  def apply(opts: Options): Middleware = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware]
-  @scala.inline
-  def apply(opts: Options, stream: DestinationStream): Middleware = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Middleware]
-  @scala.inline
-  def apply(stream: DestinationStream): Middleware = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def apply(): Middleware = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware]
+  inline def apply(opts: Unit, stream: DestinationStream): Middleware = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Middleware]
+  inline def apply(opts: Options): Middleware = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def apply(opts: Options, stream: DestinationStream): Middleware = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Middleware]
+  inline def apply(stream: DestinationStream): Middleware = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
   @JSImport("koa-pino-logger", JSImport.Namespace)
   @js.native
@@ -31,17 +26,14 @@ object mod {
   }
   object Middleware {
     
-    @scala.inline
-    def apply(logger: Logger): Middleware = {
+    inline def apply(logger: Logger): Middleware = {
       val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[Middleware]
     }
     
-    @scala.inline
-    implicit class MiddlewareMutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
+    extension [Self <: Middleware](x: Self) {
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,17 +46,14 @@ object mod {
     }
     object ExtendableContext {
       
-      @scala.inline
-      def apply(log: Logger): ExtendableContext = {
+      inline def apply(log: Logger): ExtendableContext = {
         val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
         __obj.asInstanceOf[ExtendableContext]
       }
       
-      @scala.inline
-      implicit class ExtendableContextMutableBuilder[Self <: ExtendableContext] (val x: Self) extends AnyVal {
+      extension [Self <: ExtendableContext](x: Self) {
         
-        @scala.inline
-        def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+        inline def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       }
     }
   }

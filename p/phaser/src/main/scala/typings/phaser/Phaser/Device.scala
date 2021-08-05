@@ -61,8 +61,7 @@ object Device {
   }
   object Audio {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       audioData: Boolean,
       dolby: Boolean,
       m4a: Boolean,
@@ -77,35 +76,25 @@ object Device {
       __obj.asInstanceOf[Audio]
     }
     
-    @scala.inline
-    implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
+    extension [Self <: Audio](x: Self) {
       
-      @scala.inline
-      def setAudioData(value: Boolean): Self = StObject.set(x, "audioData", value.asInstanceOf[js.Any])
+      inline def setAudioData(value: Boolean): Self = StObject.set(x, "audioData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDolby(value: Boolean): Self = StObject.set(x, "dolby", value.asInstanceOf[js.Any])
+      inline def setDolby(value: Boolean): Self = StObject.set(x, "dolby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM4a(value: Boolean): Self = StObject.set(x, "m4a", value.asInstanceOf[js.Any])
+      inline def setM4a(value: Boolean): Self = StObject.set(x, "m4a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMp3(value: Boolean): Self = StObject.set(x, "mp3", value.asInstanceOf[js.Any])
+      inline def setMp3(value: Boolean): Self = StObject.set(x, "mp3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgg(value: Boolean): Self = StObject.set(x, "ogg", value.asInstanceOf[js.Any])
+      inline def setOgg(value: Boolean): Self = StObject.set(x, "ogg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpus(value: Boolean): Self = StObject.set(x, "opus", value.asInstanceOf[js.Any])
+      inline def setOpus(value: Boolean): Self = StObject.set(x, "opus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWav(value: Boolean): Self = StObject.set(x, "wav", value.asInstanceOf[js.Any])
+      inline def setWav(value: Boolean): Self = StObject.set(x, "wav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebAudio(value: Boolean): Self = StObject.set(x, "webAudio", value.asInstanceOf[js.Any])
+      inline def setWebAudio(value: Boolean): Self = StObject.set(x, "webAudio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebm(value: Boolean): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
+      inline def setWebm(value: Boolean): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,8 +178,7 @@ object Device {
   }
   object Browser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chrome: Boolean,
       chromeVersion: Double,
       edge: Boolean,
@@ -210,50 +198,35 @@ object Device {
       __obj.asInstanceOf[Browser]
     }
     
-    @scala.inline
-    implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+    extension [Self <: Browser](x: Self) {
       
-      @scala.inline
-      def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromeVersion(value: Double): Self = StObject.set(x, "chromeVersion", value.asInstanceOf[js.Any])
+      inline def setChromeVersion(value: Double): Self = StObject.set(x, "chromeVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
+      inline def setFirefox(value: Boolean): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirefoxVersion(value: Double): Self = StObject.set(x, "firefoxVersion", value.asInstanceOf[js.Any])
+      inline def setFirefoxVersion(value: Double): Self = StObject.set(x, "firefoxVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
+      inline def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIeVersion(value: Double): Self = StObject.set(x, "ieVersion", value.asInstanceOf[js.Any])
+      inline def setIeVersion(value: Double): Self = StObject.set(x, "ieVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileSafari(value: Boolean): Self = StObject.set(x, "mobileSafari", value.asInstanceOf[js.Any])
+      inline def setMobileSafari(value: Boolean): Self = StObject.set(x, "mobileSafari", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
+      inline def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
+      inline def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafariVersion(value: Double): Self = StObject.set(x, "safariVersion", value.asInstanceOf[js.Any])
+      inline def setSafariVersion(value: Double): Self = StObject.set(x, "safariVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilk(value: Boolean): Self = StObject.set(x, "silk", value.asInstanceOf[js.Any])
+      inline def setSilk(value: Boolean): Self = StObject.set(x, "silk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrident(value: Boolean): Self = StObject.set(x, "trident", value.asInstanceOf[js.Any])
+      inline def setTrident(value: Boolean): Self = StObject.set(x, "trident", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTridentVersion(value: Double): Self = StObject.set(x, "tridentVersion", value.asInstanceOf[js.Any])
+      inline def setTridentVersion(value: Double): Self = StObject.set(x, "tridentVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,20 +250,16 @@ object Device {
   }
   object CanvasFeatures {
     
-    @scala.inline
-    def apply(supportInverseAlpha: Boolean, supportNewBlendModes: Boolean): CanvasFeatures = {
+    inline def apply(supportInverseAlpha: Boolean, supportNewBlendModes: Boolean): CanvasFeatures = {
       val __obj = js.Dynamic.literal(supportInverseAlpha = supportInverseAlpha.asInstanceOf[js.Any], supportNewBlendModes = supportNewBlendModes.asInstanceOf[js.Any])
       __obj.asInstanceOf[CanvasFeatures]
     }
     
-    @scala.inline
-    implicit class CanvasFeaturesMutableBuilder[Self <: CanvasFeatures] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasFeatures](x: Self) {
       
-      @scala.inline
-      def setSupportInverseAlpha(value: Boolean): Self = StObject.set(x, "supportInverseAlpha", value.asInstanceOf[js.Any])
+      inline def setSupportInverseAlpha(value: Boolean): Self = StObject.set(x, "supportInverseAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportNewBlendModes(value: Boolean): Self = StObject.set(x, "supportNewBlendModes", value.asInstanceOf[js.Any])
+      inline def setSupportNewBlendModes(value: Boolean): Self = StObject.set(x, "supportNewBlendModes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -364,8 +333,7 @@ object Device {
   }
   object Features {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canvas: Boolean,
       canvasBitBltShift: Boolean,
       file: Boolean,
@@ -383,44 +351,31 @@ object Device {
       __obj.asInstanceOf[Features]
     }
     
-    @scala.inline
-    implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
+    extension [Self <: Features](x: Self) {
       
-      @scala.inline
-      def setCanvas(value: Boolean): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: Boolean): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvasBitBltShift(value: Boolean): Self = StObject.set(x, "canvasBitBltShift", value.asInstanceOf[js.Any])
+      inline def setCanvasBitBltShift(value: Boolean): Self = StObject.set(x, "canvasBitBltShift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystem(value: Boolean): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
+      inline def setFileSystem(value: Boolean): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetUserMedia(value: Boolean): Self = StObject.set(x, "getUserMedia", value.asInstanceOf[js.Any])
+      inline def setGetUserMedia(value: Boolean): Self = StObject.set(x, "getUserMedia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLittleEndian(value: Boolean): Self = StObject.set(x, "littleEndian", value.asInstanceOf[js.Any])
+      inline def setLittleEndian(value: Boolean): Self = StObject.set(x, "littleEndian", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      inline def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerLock(value: Boolean): Self = StObject.set(x, "pointerLock", value.asInstanceOf[js.Any])
+      inline def setPointerLock(value: Boolean): Self = StObject.set(x, "pointerLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupport32bit(value: Boolean): Self = StObject.set(x, "support32bit", value.asInstanceOf[js.Any])
+      inline def setSupport32bit(value: Boolean): Self = StObject.set(x, "support32bit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVibration(value: Boolean): Self = StObject.set(x, "vibration", value.asInstanceOf[js.Any])
+      inline def setVibration(value: Boolean): Self = StObject.set(x, "vibration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebGL(value: Boolean): Self = StObject.set(x, "webGL", value.asInstanceOf[js.Any])
+      inline def setWebGL(value: Boolean): Self = StObject.set(x, "webGL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+      inline def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     }
   }
   
@@ -454,26 +409,20 @@ object Device {
   }
   object Fullscreen {
     
-    @scala.inline
-    def apply(available: Boolean, cancel: String, keyboard: Boolean, request: String): Fullscreen = {
+    inline def apply(available: Boolean, cancel: String, keyboard: Boolean, request: String): Fullscreen = {
       val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fullscreen]
     }
     
-    @scala.inline
-    implicit class FullscreenMutableBuilder[Self <: Fullscreen] (val x: Self) extends AnyVal {
+    extension [Self <: Fullscreen](x: Self) {
       
-      @scala.inline
-      def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+      inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -507,26 +456,20 @@ object Device {
   }
   object Input {
     
-    @scala.inline
-    def apply(gamepads: Boolean, mspointer: Boolean, touch: Boolean, wheelType: String): typings.phaser.Phaser.Device.Input = {
+    inline def apply(gamepads: Boolean, mspointer: Boolean, touch: Boolean, wheelType: String): typings.phaser.Phaser.Device.Input = {
       val __obj = js.Dynamic.literal(gamepads = gamepads.asInstanceOf[js.Any], mspointer = mspointer.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any], wheelType = wheelType.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.phaser.Phaser.Device.Input]
     }
     
-    @scala.inline
-    implicit class InputMutableBuilder[Self <: typings.phaser.Phaser.Device.Input] (val x: Self) extends AnyVal {
+    extension [Self <: typings.phaser.Phaser.Device.Input](x: Self) {
       
-      @scala.inline
-      def setGamepads(value: Boolean): Self = StObject.set(x, "gamepads", value.asInstanceOf[js.Any])
+      inline def setGamepads(value: Boolean): Self = StObject.set(x, "gamepads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMspointer(value: Boolean): Self = StObject.set(x, "mspointer", value.asInstanceOf[js.Any])
+      inline def setMspointer(value: Boolean): Self = StObject.set(x, "mspointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+      inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelType(value: String): Self = StObject.set(x, "wheelType", value.asInstanceOf[js.Any])
+      inline def setWheelType(value: String): Self = StObject.set(x, "wheelType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -640,8 +583,7 @@ object Device {
   }
   object OS {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       android: Boolean,
       chromeOS: Boolean,
       cordova: Boolean,
@@ -667,68 +609,47 @@ object Device {
       __obj.asInstanceOf[OS]
     }
     
-    @scala.inline
-    implicit class OSMutableBuilder[Self <: OS] (val x: Self) extends AnyVal {
+    extension [Self <: OS](x: Self) {
       
-      @scala.inline
-      def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromeOS(value: Boolean): Self = StObject.set(x, "chromeOS", value.asInstanceOf[js.Any])
+      inline def setChromeOS(value: Boolean): Self = StObject.set(x, "chromeOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCordova(value: Boolean): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
+      inline def setCordova(value: Boolean): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrosswalk(value: Boolean): Self = StObject.set(x, "crosswalk", value.asInstanceOf[js.Any])
+      inline def setCrosswalk(value: Boolean): Self = StObject.set(x, "crosswalk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEjecta(value: Boolean): Self = StObject.set(x, "ejecta", value.asInstanceOf[js.Any])
+      inline def setEjecta(value: Boolean): Self = StObject.set(x, "ejecta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectron(value: Boolean): Self = StObject.set(x, "electron", value.asInstanceOf[js.Any])
+      inline def setElectron(value: Boolean): Self = StObject.set(x, "electron", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
+      inline def setIOS(value: Boolean): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIOSVersion(value: Double): Self = StObject.set(x, "iOSVersion", value.asInstanceOf[js.Any])
+      inline def setIOSVersion(value: Double): Self = StObject.set(x, "iOSVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
+      inline def setIPad(value: Boolean): Self = StObject.set(x, "iPad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPhone(value: Boolean): Self = StObject.set(x, "iPhone", value.asInstanceOf[js.Any])
+      inline def setIPhone(value: Boolean): Self = StObject.set(x, "iPhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindle(value: Boolean): Self = StObject.set(x, "kindle", value.asInstanceOf[js.Any])
+      inline def setKindle(value: Boolean): Self = StObject.set(x, "kindle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinux(value: Boolean): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
+      inline def setLinux(value: Boolean): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacOS(value: Boolean): Self = StObject.set(x, "macOS", value.asInstanceOf[js.Any])
+      inline def setMacOS(value: Boolean): Self = StObject.set(x, "macOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Boolean): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Boolean): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeWebkit(value: Boolean): Self = StObject.set(x, "nodeWebkit", value.asInstanceOf[js.Any])
+      inline def setNodeWebkit(value: Boolean): Self = StObject.set(x, "nodeWebkit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebApp(value: Boolean): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
+      inline def setWebApp(value: Boolean): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: Boolean): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsPhone(value: Boolean): Self = StObject.set(x, "windowsPhone", value.asInstanceOf[js.Any])
+      inline def setWindowsPhone(value: Boolean): Self = StObject.set(x, "windowsPhone", value.asInstanceOf[js.Any])
     }
   }
   
@@ -774,32 +695,24 @@ object Device {
   }
   object Video {
     
-    @scala.inline
-    def apply(h264: Boolean, hls: Boolean, mp4: Boolean, ogg: Boolean, vp9: Boolean, webm: Boolean): Video = {
+    inline def apply(h264: Boolean, hls: Boolean, mp4: Boolean, ogg: Boolean, vp9: Boolean, webm: Boolean): Video = {
       val __obj = js.Dynamic.literal(h264 = h264.asInstanceOf[js.Any], hls = hls.asInstanceOf[js.Any], mp4 = mp4.asInstanceOf[js.Any], ogg = ogg.asInstanceOf[js.Any], vp9 = vp9.asInstanceOf[js.Any], webm = webm.asInstanceOf[js.Any])
       __obj.asInstanceOf[Video]
     }
     
-    @scala.inline
-    implicit class VideoMutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
+    extension [Self <: Video](x: Self) {
       
-      @scala.inline
-      def setH264(value: Boolean): Self = StObject.set(x, "h264", value.asInstanceOf[js.Any])
+      inline def setH264(value: Boolean): Self = StObject.set(x, "h264", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHls(value: Boolean): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
+      inline def setHls(value: Boolean): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMp4(value: Boolean): Self = StObject.set(x, "mp4", value.asInstanceOf[js.Any])
+      inline def setMp4(value: Boolean): Self = StObject.set(x, "mp4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOgg(value: Boolean): Self = StObject.set(x, "ogg", value.asInstanceOf[js.Any])
+      inline def setOgg(value: Boolean): Self = StObject.set(x, "ogg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVp9(value: Boolean): Self = StObject.set(x, "vp9", value.asInstanceOf[js.Any])
+      inline def setVp9(value: Boolean): Self = StObject.set(x, "vp9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebm(value: Boolean): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
+      inline def setWebm(value: Boolean): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
     }
   }
 }

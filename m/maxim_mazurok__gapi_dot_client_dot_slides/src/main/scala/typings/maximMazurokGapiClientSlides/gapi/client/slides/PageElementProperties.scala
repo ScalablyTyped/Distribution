@@ -17,31 +17,23 @@ trait PageElementProperties extends StObject {
 }
 object PageElementProperties {
   
-  @scala.inline
-  def apply(): PageElementProperties = {
+  inline def apply(): PageElementProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageElementProperties]
   }
   
-  @scala.inline
-  implicit class PageElementPropertiesMutableBuilder[Self <: PageElementProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PageElementProperties](x: Self) {
     
-    @scala.inline
-    def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
+    inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
+    inline def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTransform(value: AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

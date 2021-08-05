@@ -13,22 +13,17 @@ trait SetSecurityGroupsOutput extends StObject {
 }
 object SetSecurityGroupsOutput {
   
-  @scala.inline
-  def apply(): SetSecurityGroupsOutput = {
+  inline def apply(): SetSecurityGroupsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetSecurityGroupsOutput]
   }
   
-  @scala.inline
-  implicit class SetSecurityGroupsOutputMutableBuilder[Self <: SetSecurityGroupsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SetSecurityGroupsOutput](x: Self) {
     
-    @scala.inline
-    def setSecurityGroupIds(value: SecurityGroups): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: SecurityGroups): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
+    inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
   }
 }

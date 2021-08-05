@@ -20,8 +20,7 @@ object radioRadioMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object RadioProps {
     
-    @scala.inline
-    def apply(): RadioProps = {
+    inline def apply(): RadioProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadioProps]
     }
@@ -32,8 +31,7 @@ object radioRadioMod extends Shortcut {
        with StrictCheckboxProps
   object StrictRadioProps {
     
-    @scala.inline
-    def apply(): StrictRadioProps = {
+    inline def apply(): StrictRadioProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictRadioProps]
     }

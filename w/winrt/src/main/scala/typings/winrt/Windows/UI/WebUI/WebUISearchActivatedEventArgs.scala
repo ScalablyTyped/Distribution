@@ -14,8 +14,7 @@ trait WebUISearchActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUISearchActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     kind: ActivationKind,
     language: String,

@@ -209,8 +209,7 @@ trait XReportDefinition
 }
 object XReportDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveConnection: XConnection,
     Args: SafeArray[PropertyValue],
     AvailableMimeTypes: SafeArray[String],
@@ -327,82 +326,56 @@ object XReportDefinition {
     __obj.asInstanceOf[XReportDefinition]
   }
   
-  @scala.inline
-  implicit class XReportDefinitionMutableBuilder[Self <: XReportDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: XReportDefinition](x: Self) {
     
-    @scala.inline
-    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
+    inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableMimeTypes(value: SafeArray[String]): Self = StObject.set(x, "AvailableMimeTypes", value.asInstanceOf[js.Any])
+    inline def setAvailableMimeTypes(value: SafeArray[String]): Self = StObject.set(x, "AvailableMimeTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
+    inline def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceName(value: String): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
+    inline def setDataSourceName(value: String): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetail(value: XSection): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: XSection): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
+    inline def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBroadcaster(value: XEventBroadcaster): Self = StObject.set(x, "EventBroadcaster", value.asInstanceOf[js.Any])
+    inline def setEventBroadcaster(value: XEventBroadcaster): Self = StObject.set(x, "EventBroadcaster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAvailableMimeTypes(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableMimeTypes", js.Any.fromFunction0(value))
+    inline def setGetAvailableMimeTypes(value: () => SafeArray[String]): Self = StObject.set(x, "getAvailableMimeTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEventBroadcaster(value: () => XEventBroadcaster): Self = StObject.set(x, "getEventBroadcaster", js.Any.fromFunction0(value))
+    inline def setGetEventBroadcaster(value: () => XEventBroadcaster): Self = StObject.set(x, "getEventBroadcaster", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGroupKeepTogether(value: Double): Self = StObject.set(x, "GroupKeepTogether", value.asInstanceOf[js.Any])
+    inline def setGroupKeepTogether(value: Double): Self = StObject.set(x, "GroupKeepTogether", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: XGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: XGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageFooter(value: XSection): Self = StObject.set(x, "PageFooter", value.asInstanceOf[js.Any])
+    inline def setPageFooter(value: XSection): Self = StObject.set(x, "PageFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageFooterOn(value: Boolean): Self = StObject.set(x, "PageFooterOn", value.asInstanceOf[js.Any])
+    inline def setPageFooterOn(value: Boolean): Self = StObject.set(x, "PageFooterOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageFooterOption(value: Double): Self = StObject.set(x, "PageFooterOption", value.asInstanceOf[js.Any])
+    inline def setPageFooterOption(value: Double): Self = StObject.set(x, "PageFooterOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHeader(value: XSection): Self = StObject.set(x, "PageHeader", value.asInstanceOf[js.Any])
+    inline def setPageHeader(value: XSection): Self = StObject.set(x, "PageHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHeaderOn(value: Boolean): Self = StObject.set(x, "PageHeaderOn", value.asInstanceOf[js.Any])
+    inline def setPageHeaderOn(value: Boolean): Self = StObject.set(x, "PageHeaderOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHeaderOption(value: Double): Self = StObject.set(x, "PageHeaderOption", value.asInstanceOf[js.Any])
+    inline def setPageHeaderOption(value: Double): Self = StObject.set(x, "PageHeaderOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportFooter(value: XSection): Self = StObject.set(x, "ReportFooter", value.asInstanceOf[js.Any])
+    inline def setReportFooter(value: XSection): Self = StObject.set(x, "ReportFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportFooterOn(value: Boolean): Self = StObject.set(x, "ReportFooterOn", value.asInstanceOf[js.Any])
+    inline def setReportFooterOn(value: Boolean): Self = StObject.set(x, "ReportFooterOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportHeader(value: XSection): Self = StObject.set(x, "ReportHeader", value.asInstanceOf[js.Any])
+    inline def setReportHeader(value: XSection): Self = StObject.set(x, "ReportHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportHeaderOn(value: Boolean): Self = StObject.set(x, "ReportHeaderOn", value.asInstanceOf[js.Any])
+    inline def setReportHeaderOn(value: Boolean): Self = StObject.set(x, "ReportHeaderOn", value.asInstanceOf[js.Any])
   }
 }

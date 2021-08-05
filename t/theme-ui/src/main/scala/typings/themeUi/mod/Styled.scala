@@ -79,8 +79,7 @@ object Styled {
   def a: SxComponent[
     (DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def a_=(
+  inline def a_=(
     x: SxComponent[
       (DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]) & SxProps
     ]
@@ -104,8 +103,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.b")
   @js.native
   def b: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps] = js.native
-  @scala.inline
-  def b_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b")(x.asInstanceOf[js.Any])
+  inline def b_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.blockquote")
@@ -127,8 +125,7 @@ object Styled {
   def blockquote: SxComponent[
     (DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def blockquote_=(
+  inline def blockquote_=(
     x: SxComponent[
       (DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]) & SxProps
     ]
@@ -137,8 +134,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.childContextTypes")
   @js.native
   def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-  @scala.inline
-  def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+  inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.code")
@@ -158,20 +154,17 @@ object Styled {
   @JSImport("theme-ui", "Styled.code")
   @js.native
   def code: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps] = js.native
-  @scala.inline
-  def code_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code")(x.asInstanceOf[js.Any])
+  inline def code_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code")(x.asInstanceOf[js.Any])
   
   @JSImport("theme-ui", "Styled.contextType")
   @js.native
   def contextType: js.UndefOr[typings.react.mod.Context[js.Any]] = js.native
-  @scala.inline
-  def contextType_=(x: js.UndefOr[typings.react.mod.Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  inline def contextType_=(x: js.UndefOr[typings.react.mod.Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   
   @JSImport("theme-ui", "Styled.contextTypes")
   @js.native
   def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-  @scala.inline
-  def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("theme-ui", "Styled.defaultProps")
   @js.native
@@ -180,8 +173,7 @@ object Styled {
       (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) & SxProps & As
     ]
   ] = js.native
-  @scala.inline
-  def defaultProps_=(
+  inline def defaultProps_=(
     x: js.UndefOr[
       Partial[
         (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) & SxProps & As
@@ -207,14 +199,12 @@ object Styled {
   @JSImport("theme-ui", "Styled.delete")
   @js.native
   def delete: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps] = js.native
-  @scala.inline
-  def delete_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delete")(x.asInstanceOf[js.Any])
+  inline def delete_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delete")(x.asInstanceOf[js.Any])
   
   @JSImport("theme-ui", "Styled.displayName")
   @js.native
   def displayName: js.UndefOr[String] = js.native
-  @scala.inline
-  def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.div")
@@ -234,8 +224,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.div")
   @js.native
   def div: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps] = js.native
-  @scala.inline
-  def div_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("div")(x.asInstanceOf[js.Any])
+  inline def div_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("div")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.em")
@@ -255,8 +244,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.em")
   @js.native
   def em: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps] = js.native
-  @scala.inline
-  def em_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("em")(x.asInstanceOf[js.Any])
+  inline def em_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("em")(x.asInstanceOf[js.Any])
   
   @JSImport("theme-ui", "Styled.getDerivedStateFromError")
   @js.native
@@ -266,8 +254,7 @@ object Styled {
       ComponentState
     ]
   ] = js.native
-  @scala.inline
-  def getDerivedStateFromError_=(
+  inline def getDerivedStateFromError_=(
     x: js.UndefOr[
       GetDerivedStateFromError[
         (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) & SxProps & As, 
@@ -284,8 +271,7 @@ object Styled {
       ComponentState
     ]
   ] = js.native
-  @scala.inline
-  def getDerivedStateFromProps_=(
+  inline def getDerivedStateFromProps_=(
     x: js.UndefOr[
       GetDerivedStateFromProps[
         (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) & SxProps & As, 
@@ -314,8 +300,7 @@ object Styled {
   def h1: SxComponent[
     (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def h1_=(
+  inline def h1_=(
     x: SxComponent[
       (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
     ]
@@ -341,8 +326,7 @@ object Styled {
   def h2: SxComponent[
     (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def h2_=(
+  inline def h2_=(
     x: SxComponent[
       (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
     ]
@@ -368,8 +352,7 @@ object Styled {
   def h3: SxComponent[
     (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def h3_=(
+  inline def h3_=(
     x: SxComponent[
       (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
     ]
@@ -395,8 +378,7 @@ object Styled {
   def h4: SxComponent[
     (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def h4_=(
+  inline def h4_=(
     x: SxComponent[
       (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
     ]
@@ -422,8 +404,7 @@ object Styled {
   def h5: SxComponent[
     (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def h5_=(
+  inline def h5_=(
     x: SxComponent[
       (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
     ]
@@ -449,8 +430,7 @@ object Styled {
   def h6: SxComponent[
     (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def h6_=(
+  inline def h6_=(
     x: SxComponent[
       (DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]) & SxProps
     ]
@@ -474,8 +454,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.hr")
   @js.native
   def hr: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]) & SxProps] = js.native
-  @scala.inline
-  def hr_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hr")(x.asInstanceOf[js.Any])
+  inline def hr_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hr")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.i")
@@ -495,8 +474,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.i")
   @js.native
   def i: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps] = js.native
-  @scala.inline
-  def i_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i")(x.asInstanceOf[js.Any])
+  inline def i_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.img")
@@ -518,8 +496,7 @@ object Styled {
   def img: SxComponent[
     (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def img_=(
+  inline def img_=(
     x: SxComponent[
       (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]) & SxProps
     ]
@@ -543,8 +520,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.inlineCode")
   @js.native
   def inlineCode: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps] = js.native
-  @scala.inline
-  def inlineCode_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineCode")(x.asInstanceOf[js.Any])
+  inline def inlineCode_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineCode")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.li")
@@ -564,8 +540,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.li")
   @js.native
   def li: SxComponent[(DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]) & SxProps] = js.native
-  @scala.inline
-  def li_=(x: SxComponent[(DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("li")(x.asInstanceOf[js.Any])
+  inline def li_=(x: SxComponent[(DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("li")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.ol")
@@ -587,8 +562,7 @@ object Styled {
   def ol: SxComponent[
     (DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def ol_=(
+  inline def ol_=(
     x: SxComponent[
       (DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]) & SxProps
     ]
@@ -614,8 +588,7 @@ object Styled {
   def p: SxComponent[
     (DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def p_=(
+  inline def p_=(
     x: SxComponent[
       (DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]) & SxProps
     ]
@@ -639,8 +612,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.pre")
   @js.native
   def pre: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]) & SxProps] = js.native
-  @scala.inline
-  def pre_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pre")(x.asInstanceOf[js.Any])
+  inline def pre_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pre")(x.asInstanceOf[js.Any])
   
   @JSImport("theme-ui", "Styled.propTypes")
   @js.native
@@ -649,8 +621,7 @@ object Styled {
       (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) & SxProps & As
     ]
   ] = js.native
-  @scala.inline
-  def propTypes_=(
+  inline def propTypes_=(
     x: js.UndefOr[
       WeakValidationMap[
         (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements['div'] */ js.Any) & SxProps & As
@@ -676,8 +647,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.root")
   @js.native
   def root: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps] = js.native
-  @scala.inline
-  def root_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
+  inline def root_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.strong")
@@ -697,8 +667,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.strong")
   @js.native
   def strong: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps] = js.native
-  @scala.inline
-  def strong_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strong")(x.asInstanceOf[js.Any])
+  inline def strong_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strong")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.table")
@@ -720,8 +689,7 @@ object Styled {
   def table: SxComponent[
     (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def table_=(
+  inline def table_=(
     x: SxComponent[
       (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]) & SxProps
     ]
@@ -747,8 +715,7 @@ object Styled {
   def td: SxComponent[
     (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def td_=(
+  inline def td_=(
     x: SxComponent[
       (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]) & SxProps
     ]
@@ -774,8 +741,7 @@ object Styled {
   def th: SxComponent[
     (DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def th_=(
+  inline def th_=(
     x: SxComponent[
       (DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement]) & SxProps
     ]
@@ -799,8 +765,7 @@ object Styled {
   @JSImport("theme-ui", "Styled.thematicBreak")
   @js.native
   def thematicBreak: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps] = js.native
-  @scala.inline
-  def thematicBreak_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thematicBreak")(x.asInstanceOf[js.Any])
+  inline def thematicBreak_=(x: SxComponent[(DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) & SxProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thematicBreak")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("theme-ui", "Styled.tr")
@@ -822,8 +787,7 @@ object Styled {
   def tr: SxComponent[
     (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def tr_=(
+  inline def tr_=(
     x: SxComponent[
       (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]) & SxProps
     ]
@@ -849,8 +813,7 @@ object Styled {
   def ul: SxComponent[
     (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]) & SxProps
   ] = js.native
-  @scala.inline
-  def ul_=(
+  inline def ul_=(
     x: SxComponent[
       (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]) & SxProps
     ]

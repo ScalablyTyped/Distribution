@@ -13,17 +13,14 @@ object anon {
   }
   object Mdurl {
     
-    @scala.inline
-    def apply(mdurl: Typeofmdurl): Mdurl = {
+    inline def apply(mdurl: Typeofmdurl): Mdurl = {
       val __obj = js.Dynamic.literal(mdurl = mdurl.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mdurl]
     }
     
-    @scala.inline
-    implicit class MdurlMutableBuilder[Self <: Mdurl] (val x: Self) extends AnyVal {
+    extension [Self <: Mdurl](x: Self) {
       
-      @scala.inline
-      def setMdurl(value: Typeofmdurl): Self = StObject.set(x, "mdurl", value.asInstanceOf[js.Any])
+      inline def setMdurl(value: Typeofmdurl): Self = StObject.set(x, "mdurl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,26 +66,20 @@ object anon {
   }
   object Typeofmdurl {
     
-    @scala.inline
-    def apply(decode: Typeofdecode, encode: Typeofencode, format: Typeofformat, parse: Typeofparse): Typeofmdurl = {
+    inline def apply(decode: Typeofdecode, encode: Typeofencode, format: Typeofformat, parse: Typeofparse): Typeofmdurl = {
       val __obj = js.Dynamic.literal(decode = decode.asInstanceOf[js.Any], encode = encode.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofmdurl]
     }
     
-    @scala.inline
-    implicit class TypeofmdurlMutableBuilder[Self <: Typeofmdurl] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofmdurl](x: Self) {
       
-      @scala.inline
-      def setDecode(value: Typeofdecode): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
+      inline def setDecode(value: Typeofdecode): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncode(value: Typeofencode): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      inline def setEncode(value: Typeofencode): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: Typeofformat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Typeofformat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParse(value: Typeofparse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: Typeofparse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     }
   }
   

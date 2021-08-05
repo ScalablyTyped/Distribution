@@ -20,25 +20,19 @@ trait ExecuteCommandParams
 }
 object ExecuteCommandParams {
   
-  @scala.inline
-  def apply(command: String): ExecuteCommandParams = {
+  inline def apply(command: String): ExecuteCommandParams = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteCommandParams]
   }
   
-  @scala.inline
-  implicit class ExecuteCommandParamsMutableBuilder[Self <: ExecuteCommandParams] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteCommandParams](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }
 }

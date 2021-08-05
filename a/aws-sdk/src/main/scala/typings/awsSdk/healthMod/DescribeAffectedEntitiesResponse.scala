@@ -18,28 +18,21 @@ trait DescribeAffectedEntitiesResponse extends StObject {
 }
 object DescribeAffectedEntitiesResponse {
   
-  @scala.inline
-  def apply(): DescribeAffectedEntitiesResponse = {
+  inline def apply(): DescribeAffectedEntitiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAffectedEntitiesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAffectedEntitiesResponseMutableBuilder[Self <: DescribeAffectedEntitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAffectedEntitiesResponse](x: Self) {
     
-    @scala.inline
-    def setEntities(value: EntityList): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: EntityList): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: AffectedEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: AffectedEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

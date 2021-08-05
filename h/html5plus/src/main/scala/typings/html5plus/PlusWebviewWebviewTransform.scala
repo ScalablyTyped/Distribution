@@ -48,43 +48,31 @@ trait PlusWebviewWebviewTransform extends StObject {
 }
 object PlusWebviewWebviewTransform {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewTransform = {
+  inline def apply(): PlusWebviewWebviewTransform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewTransform]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewTransformMutableBuilder[Self <: PlusWebviewWebviewTransform] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewTransform](x: Self) {
     
-    @scala.inline
-    def setMatrix(value: String): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: String): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
+    inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
-    @scala.inline
-    def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setSkew(value: String): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
+    inline def setSkew(value: String): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
+    inline def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
     
-    @scala.inline
-    def setTranslate(value: String): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: String): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
   }
 }

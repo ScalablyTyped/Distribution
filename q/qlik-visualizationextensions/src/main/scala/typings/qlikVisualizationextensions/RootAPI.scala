@@ -45,47 +45,34 @@ object RootAPI {
   }
   object IAppConfig {
     
-    @scala.inline
-    def apply(port: String | Double): IAppConfig = {
+    inline def apply(port: String | Double): IAppConfig = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAppConfig]
     }
     
-    @scala.inline
-    implicit class IAppConfigMutableBuilder[Self <: IAppConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IAppConfig](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+      inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
       
-      @scala.inline
-      def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
+      inline def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
+      inline def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
       
-      @scala.inline
-      def setOpenWithoutData(value: Boolean): Self = StObject.set(x, "openWithoutData", value.asInstanceOf[js.Any])
+      inline def setOpenWithoutData(value: Boolean): Self = StObject.set(x, "openWithoutData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenWithoutDataUndefined: Self = StObject.set(x, "openWithoutData", js.undefined)
+      inline def setOpenWithoutDataUndefined: Self = StObject.set(x, "openWithoutData", js.undefined)
       
-      @scala.inline
-      def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -118,29 +105,22 @@ object RootAPI {
   }
   object IGlobalConfig {
     
-    @scala.inline
-    def apply(host: String, identity: String, isSecure: Boolean, port: String, prefix: String): IGlobalConfig = {
+    inline def apply(host: String, identity: String, isSecure: Boolean, port: String, prefix: String): IGlobalConfig = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], isSecure = isSecure.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGlobalConfig]
     }
     
-    @scala.inline
-    implicit class IGlobalConfigMutableBuilder[Self <: IGlobalConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IGlobalConfig](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
+      inline def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,8 +330,7 @@ object RootAPI {
   }
   object ISessionAppConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       identity: String,
       isSecure: Boolean,
       openWithoutData: Boolean,
@@ -362,29 +341,21 @@ object RootAPI {
       __obj.asInstanceOf[ISessionAppConfig]
     }
     
-    @scala.inline
-    implicit class ISessionAppConfigMutableBuilder[Self <: ISessionAppConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ISessionAppConfig](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
+      inline def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenWithoutData(value: Boolean): Self = StObject.set(x, "openWithoutData", value.asInstanceOf[js.Any])
+      inline def setOpenWithoutData(value: Boolean): Self = StObject.set(x, "openWithoutData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
 }

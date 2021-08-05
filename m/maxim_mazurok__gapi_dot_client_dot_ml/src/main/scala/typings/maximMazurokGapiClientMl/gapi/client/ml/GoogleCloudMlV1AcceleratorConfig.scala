@@ -14,25 +14,19 @@ trait GoogleCloudMlV1AcceleratorConfig extends StObject {
 }
 object GoogleCloudMlV1AcceleratorConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1AcceleratorConfig = {
+  inline def apply(): GoogleCloudMlV1AcceleratorConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1AcceleratorConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1AcceleratorConfigMutableBuilder[Self <: GoogleCloudMlV1AcceleratorConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1AcceleratorConfig](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

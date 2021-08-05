@@ -44,85 +44,59 @@ trait Subtotals extends StObject {
 }
 object Subtotals {
   
-  @scala.inline
-  def apply(): Subtotals = {
+  inline def apply(): Subtotals = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Subtotals]
   }
   
-  @scala.inline
-  implicit class SubtotalsMutableBuilder[Self <: Subtotals] (val x: Self) extends AnyVal {
+  extension [Self <: Subtotals](x: Self) {
     
-    @scala.inline
-    def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+    inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
+    inline def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
     
-    @scala.inline
-    def setAverage(value: Boolean): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+    inline def setAverage(value: Boolean): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
+    inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
-    @scala.inline
-    def setCount(value: Boolean): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Boolean): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountNumbers(value: Boolean): Self = StObject.set(x, "countNumbers", value.asInstanceOf[js.Any])
+    inline def setCountNumbers(value: Boolean): Self = StObject.set(x, "countNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountNumbersUndefined: Self = StObject.set(x, "countNumbers", js.undefined)
+    inline def setCountNumbersUndefined: Self = StObject.set(x, "countNumbers", js.undefined)
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setProduct(value: Boolean): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: Boolean): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    @scala.inline
-    def setStandardDeviation(value: Boolean): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
+    inline def setStandardDeviation(value: Boolean): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardDeviationP(value: Boolean): Self = StObject.set(x, "standardDeviationP", value.asInstanceOf[js.Any])
+    inline def setStandardDeviationP(value: Boolean): Self = StObject.set(x, "standardDeviationP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardDeviationPUndefined: Self = StObject.set(x, "standardDeviationP", js.undefined)
+    inline def setStandardDeviationPUndefined: Self = StObject.set(x, "standardDeviationP", js.undefined)
     
-    @scala.inline
-    def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
+    inline def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
     
-    @scala.inline
-    def setSum(value: Boolean): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Boolean): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
     
-    @scala.inline
-    def setVariance(value: Boolean): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: Boolean): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarianceP(value: Boolean): Self = StObject.set(x, "varianceP", value.asInstanceOf[js.Any])
+    inline def setVarianceP(value: Boolean): Self = StObject.set(x, "varianceP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariancePUndefined: Self = StObject.set(x, "varianceP", js.undefined)
+    inline def setVariancePUndefined: Self = StObject.set(x, "varianceP", js.undefined)
     
-    @scala.inline
-    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
+    inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
   }
 }

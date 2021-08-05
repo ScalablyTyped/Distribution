@@ -14,17 +14,14 @@ object Xsl {
   }
   object IXsltProcessor {
     
-    @scala.inline
-    def apply(transformToString: IXmlNode => String): IXsltProcessor = {
+    inline def apply(transformToString: IXmlNode => String): IXsltProcessor = {
       val __obj = js.Dynamic.literal(transformToString = js.Any.fromFunction1(transformToString))
       __obj.asInstanceOf[IXsltProcessor]
     }
     
-    @scala.inline
-    implicit class IXsltProcessorMutableBuilder[Self <: IXsltProcessor] (val x: Self) extends AnyVal {
+    extension [Self <: IXsltProcessor](x: Self) {
       
-      @scala.inline
-      def setTransformToString(value: IXmlNode => String): Self = StObject.set(x, "transformToString", js.Any.fromFunction1(value))
+      inline def setTransformToString(value: IXmlNode => String): Self = StObject.set(x, "transformToString", js.Any.fromFunction1(value))
     }
   }
   
@@ -34,17 +31,14 @@ object Xsl {
   }
   object IXsltProcessorFactory {
     
-    @scala.inline
-    def apply(createInstance: XmlDocument => XsltProcessor): IXsltProcessorFactory = {
+    inline def apply(createInstance: XmlDocument => XsltProcessor): IXsltProcessorFactory = {
       val __obj = js.Dynamic.literal(createInstance = js.Any.fromFunction1(createInstance))
       __obj.asInstanceOf[IXsltProcessorFactory]
     }
     
-    @scala.inline
-    implicit class IXsltProcessorFactoryMutableBuilder[Self <: IXsltProcessorFactory] (val x: Self) extends AnyVal {
+    extension [Self <: IXsltProcessorFactory](x: Self) {
       
-      @scala.inline
-      def setCreateInstance(value: XmlDocument => XsltProcessor): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
+      inline def setCreateInstance(value: XmlDocument => XsltProcessor): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
     }
   }
   
@@ -53,8 +47,7 @@ object Xsl {
        with IXsltProcessor
   object XsltProcessor {
     
-    @scala.inline
-    def apply(transformToString: IXmlNode => String): XsltProcessor = {
+    inline def apply(transformToString: IXmlNode => String): XsltProcessor = {
       val __obj = js.Dynamic.literal(transformToString = js.Any.fromFunction1(transformToString))
       __obj.asInstanceOf[XsltProcessor]
     }

@@ -23,28 +23,21 @@ trait ListHostedZonesByVPCResponse extends StObject {
 }
 object ListHostedZonesByVPCResponse {
   
-  @scala.inline
-  def apply(HostedZoneSummaries: HostedZoneSummaries, MaxItems: PageMaxItems): ListHostedZonesByVPCResponse = {
+  inline def apply(HostedZoneSummaries: HostedZoneSummaries, MaxItems: PageMaxItems): ListHostedZonesByVPCResponse = {
     val __obj = js.Dynamic.literal(HostedZoneSummaries = HostedZoneSummaries.asInstanceOf[js.Any], MaxItems = MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHostedZonesByVPCResponse]
   }
   
-  @scala.inline
-  implicit class ListHostedZonesByVPCResponseMutableBuilder[Self <: ListHostedZonesByVPCResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListHostedZonesByVPCResponse](x: Self) {
     
-    @scala.inline
-    def setHostedZoneSummaries(value: HostedZoneSummaries): Self = StObject.set(x, "HostedZoneSummaries", value.asInstanceOf[js.Any])
+    inline def setHostedZoneSummaries(value: HostedZoneSummaries): Self = StObject.set(x, "HostedZoneSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneSummariesVarargs(value: HostedZoneSummary*): Self = StObject.set(x, "HostedZoneSummaries", js.Array(value :_*))
+    inline def setHostedZoneSummariesVarargs(value: HostedZoneSummary*): Self = StObject.set(x, "HostedZoneSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

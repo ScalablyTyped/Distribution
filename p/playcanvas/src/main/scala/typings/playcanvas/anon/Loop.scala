@@ -16,37 +16,27 @@ trait Loop extends StObject {
 }
 object Loop {
   
-  @scala.inline
-  def apply(): Loop = {
+  inline def apply(): Loop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Loop]
   }
   
-  @scala.inline
-  implicit class LoopMutableBuilder[Self <: Loop] (val x: Self) extends AnyVal {
+  extension [Self <: Loop](x: Self) {
     
-    @scala.inline
-    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+    inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+    inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
-    @scala.inline
-    def setLoop(value: js.Any): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: js.Any): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSpriteAsset(value: Double): Self = StObject.set(x, "spriteAsset", value.asInstanceOf[js.Any])
+    inline def setSpriteAsset(value: Double): Self = StObject.set(x, "spriteAsset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpriteAssetUndefined: Self = StObject.set(x, "spriteAsset", js.undefined)
+    inline def setSpriteAssetUndefined: Self = StObject.set(x, "spriteAsset", js.undefined)
   }
 }

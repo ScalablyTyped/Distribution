@@ -13,19 +13,15 @@ trait AcceptReservedInstancesExchangeQuoteResult extends StObject {
 }
 object AcceptReservedInstancesExchangeQuoteResult {
   
-  @scala.inline
-  def apply(): AcceptReservedInstancesExchangeQuoteResult = {
+  inline def apply(): AcceptReservedInstancesExchangeQuoteResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcceptReservedInstancesExchangeQuoteResult]
   }
   
-  @scala.inline
-  implicit class AcceptReservedInstancesExchangeQuoteResultMutableBuilder[Self <: AcceptReservedInstancesExchangeQuoteResult] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptReservedInstancesExchangeQuoteResult](x: Self) {
     
-    @scala.inline
-    def setExchangeId(value: String): Self = StObject.set(x, "ExchangeId", value.asInstanceOf[js.Any])
+    inline def setExchangeId(value: String): Self = StObject.set(x, "ExchangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeIdUndefined: Self = StObject.set(x, "ExchangeId", js.undefined)
+    inline def setExchangeIdUndefined: Self = StObject.set(x, "ExchangeId", js.undefined)
   }
 }

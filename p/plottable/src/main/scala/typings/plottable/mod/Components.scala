@@ -31,8 +31,7 @@ object Components {
     @JSImport("plottable", "Components.AxisLabel.AXIS_LABEL_CLASS")
     @js.native
     def AXIS_LABEL_CLASS: String = js.native
-    @scala.inline
-    def AXIS_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AXIS_LABEL_CLASS")(x.asInstanceOf[js.Any])
+    inline def AXIS_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AXIS_LABEL_CLASS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Components.DragBoxLayer")
@@ -105,14 +104,12 @@ object Components {
     @JSImport("plottable", "Components.GuideLineLayer.ORIENTATION_HORIZONTAL")
     @js.native
     def ORIENTATION_HORIZONTAL: String = js.native
-    @scala.inline
-    def ORIENTATION_HORIZONTAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_HORIZONTAL")(x.asInstanceOf[js.Any])
+    inline def ORIENTATION_HORIZONTAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_HORIZONTAL")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable", "Components.GuideLineLayer.ORIENTATION_VERTICAL")
     @js.native
     def ORIENTATION_VERTICAL: String = js.native
-    @scala.inline
-    def ORIENTATION_VERTICAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_VERTICAL")(x.asInstanceOf[js.Any])
+    inline def ORIENTATION_VERTICAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION_VERTICAL")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Components.InterpolatedColorLegend")
@@ -144,17 +141,14 @@ object Components {
     @JSImport("plottable", "Components.InterpolatedColorLegend.LEGEND_LABEL_CLASS")
     @js.native
     def LEGEND_LABEL_CLASS: String = js.native
-    @scala.inline
-    def LEGEND_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_LABEL_CLASS")(x.asInstanceOf[js.Any])
+    inline def LEGEND_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_LABEL_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable", "Components.InterpolatedColorLegend._DEFAULT_NUM_SWATCHES")
     @js.native
     def _DEFAULT_NUM_SWATCHES: js.Any = js.native
-    @scala.inline
-    def _DEFAULT_NUM_SWATCHES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
+    inline def _DEFAULT_NUM_SWATCHES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def _ensureOrientation(orientation: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_ensureOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def _ensureOrientation(orientation: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_ensureOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("plottable", "Components.Label")
@@ -198,8 +192,7 @@ object Components {
     @JSImport("plottable", "Components.Legend.LEGEND_ENTRY_CLASS")
     @js.native
     def LEGEND_ENTRY_CLASS: String = js.native
-    @scala.inline
-    def LEGEND_ENTRY_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ENTRY_CLASS")(x.asInstanceOf[js.Any])
+    inline def LEGEND_ENTRY_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ENTRY_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each legend row
@@ -207,8 +200,7 @@ object Components {
     @JSImport("plottable", "Components.Legend.LEGEND_ROW_CLASS")
     @js.native
     def LEGEND_ROW_CLASS: String = js.native
-    @scala.inline
-    def LEGEND_ROW_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ROW_CLASS")(x.asInstanceOf[js.Any])
+    inline def LEGEND_ROW_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ROW_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each legend symbol
@@ -216,8 +208,7 @@ object Components {
     @JSImport("plottable", "Components.Legend.LEGEND_SYMBOL_CLASS")
     @js.native
     def LEGEND_SYMBOL_CLASS: String = js.native
-    @scala.inline
-    def LEGEND_SYMBOL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_SYMBOL_CLASS")(x.asInstanceOf[js.Any])
+    inline def LEGEND_SYMBOL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_SYMBOL_CLASS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Components.PlotGroup")
@@ -278,14 +269,11 @@ object Components {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcComponentWeights")(setWeights.asInstanceOf[js.Any], componentGroups.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcComponentWeights")(setWeights.asInstanceOf[js.Any], componentGroups.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcProportionalSpace")(weights.asInstanceOf[js.Any], freeSpace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcProportionalSpace")(weights.asInstanceOf[js.Any], freeSpace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_fixedSpace")(componentGroup.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_fixedSpace")(componentGroup.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("plottable", "Components.TitleLabel")
@@ -311,8 +299,7 @@ object Components {
     @JSImport("plottable", "Components.TitleLabel.TITLE_LABEL_CLASS")
     @js.native
     def TITLE_LABEL_CLASS: String = js.native
-    @scala.inline
-    def TITLE_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TITLE_LABEL_CLASS")(x.asInstanceOf[js.Any])
+    inline def TITLE_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TITLE_LABEL_CLASS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Components.WrappedLabel")

@@ -29,8 +29,7 @@ trait Typeoferrors extends StObject {
 }
 object Typeoferrors {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ParameterizedQueryError: Instantiable0[ParameterizedQueryError],
     PreparedStatementError: Instantiable0[PreparedStatementError],
     QueryFileError: Instantiable0[QueryFileError],
@@ -40,19 +39,14 @@ object Typeoferrors {
     __obj.asInstanceOf[Typeoferrors]
   }
   
-  @scala.inline
-  implicit class TypeoferrorsMutableBuilder[Self <: Typeoferrors] (val x: Self) extends AnyVal {
+  extension [Self <: Typeoferrors](x: Self) {
     
-    @scala.inline
-    def setParameterizedQueryError(value: Instantiable0[ParameterizedQueryError]): Self = StObject.set(x, "ParameterizedQueryError", value.asInstanceOf[js.Any])
+    inline def setParameterizedQueryError(value: Instantiable0[ParameterizedQueryError]): Self = StObject.set(x, "ParameterizedQueryError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreparedStatementError(value: Instantiable0[PreparedStatementError]): Self = StObject.set(x, "PreparedStatementError", value.asInstanceOf[js.Any])
+    inline def setPreparedStatementError(value: Instantiable0[PreparedStatementError]): Self = StObject.set(x, "PreparedStatementError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryFileError(value: Instantiable0[QueryFileError]): Self = StObject.set(x, "QueryFileError", value.asInstanceOf[js.Any])
+    inline def setQueryFileError(value: Instantiable0[QueryFileError]): Self = StObject.set(x, "QueryFileError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryResultError(value: Instantiable0[QueryResultError]): Self = StObject.set(x, "QueryResultError", value.asInstanceOf[js.Any])
+    inline def setQueryResultError(value: Instantiable0[QueryResultError]): Self = StObject.set(x, "QueryResultError", value.asInstanceOf[js.Any])
   }
 }

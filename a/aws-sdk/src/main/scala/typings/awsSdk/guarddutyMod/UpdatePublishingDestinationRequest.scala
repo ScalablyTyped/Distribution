@@ -23,25 +23,19 @@ trait UpdatePublishingDestinationRequest extends StObject {
 }
 object UpdatePublishingDestinationRequest {
   
-  @scala.inline
-  def apply(DestinationId: String, DetectorId: DetectorId): UpdatePublishingDestinationRequest = {
+  inline def apply(DestinationId: String, DetectorId: DetectorId): UpdatePublishingDestinationRequest = {
     val __obj = js.Dynamic.literal(DestinationId = DestinationId.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePublishingDestinationRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePublishingDestinationRequestMutableBuilder[Self <: UpdatePublishingDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePublishingDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
+    inline def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationProperties(value: DestinationProperties): Self = StObject.set(x, "DestinationProperties", value.asInstanceOf[js.Any])
+    inline def setDestinationProperties(value: DestinationProperties): Self = StObject.set(x, "DestinationProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPropertiesUndefined: Self = StObject.set(x, "DestinationProperties", js.undefined)
+    inline def setDestinationPropertiesUndefined: Self = StObject.set(x, "DestinationProperties", js.undefined)
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

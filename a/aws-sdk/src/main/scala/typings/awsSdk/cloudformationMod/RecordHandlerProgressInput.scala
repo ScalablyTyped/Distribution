@@ -43,49 +43,35 @@ trait RecordHandlerProgressInput extends StObject {
 }
 object RecordHandlerProgressInput {
   
-  @scala.inline
-  def apply(BearerToken: ClientToken, OperationStatus: OperationStatus): RecordHandlerProgressInput = {
+  inline def apply(BearerToken: ClientToken, OperationStatus: OperationStatus): RecordHandlerProgressInput = {
     val __obj = js.Dynamic.literal(BearerToken = BearerToken.asInstanceOf[js.Any], OperationStatus = OperationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordHandlerProgressInput]
   }
   
-  @scala.inline
-  implicit class RecordHandlerProgressInputMutableBuilder[Self <: RecordHandlerProgressInput] (val x: Self) extends AnyVal {
+  extension [Self <: RecordHandlerProgressInput](x: Self) {
     
-    @scala.inline
-    def setBearerToken(value: ClientToken): Self = StObject.set(x, "BearerToken", value.asInstanceOf[js.Any])
+    inline def setBearerToken(value: ClientToken): Self = StObject.set(x, "BearerToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setCurrentOperationStatus(value: OperationStatus): Self = StObject.set(x, "CurrentOperationStatus", value.asInstanceOf[js.Any])
+    inline def setCurrentOperationStatus(value: OperationStatus): Self = StObject.set(x, "CurrentOperationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentOperationStatusUndefined: Self = StObject.set(x, "CurrentOperationStatus", js.undefined)
+    inline def setCurrentOperationStatusUndefined: Self = StObject.set(x, "CurrentOperationStatus", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: HandlerErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: HandlerErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setOperationStatus(value: OperationStatus): Self = StObject.set(x, "OperationStatus", value.asInstanceOf[js.Any])
+    inline def setOperationStatus(value: OperationStatus): Self = StObject.set(x, "OperationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceModel(value: ResourceModel): Self = StObject.set(x, "ResourceModel", value.asInstanceOf[js.Any])
+    inline def setResourceModel(value: ResourceModel): Self = StObject.set(x, "ResourceModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceModelUndefined: Self = StObject.set(x, "ResourceModel", js.undefined)
+    inline def setResourceModelUndefined: Self = StObject.set(x, "ResourceModel", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
   }
 }

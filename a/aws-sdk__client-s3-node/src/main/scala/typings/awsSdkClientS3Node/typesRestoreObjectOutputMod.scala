@@ -27,26 +27,20 @@ object typesRestoreObjectOutputMod {
   }
   object RestoreObjectOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): RestoreObjectOutput = {
+    inline def apply($metadata: ResponseMetadata): RestoreObjectOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestoreObjectOutput]
     }
     
-    @scala.inline
-    implicit class RestoreObjectOutputMutableBuilder[Self <: RestoreObjectOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RestoreObjectOutput](x: Self) {
       
-      @scala.inline
-      def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+      inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+      inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
       
-      @scala.inline
-      def setRestoreOutputPath(value: String): Self = StObject.set(x, "RestoreOutputPath", value.asInstanceOf[js.Any])
+      inline def setRestoreOutputPath(value: String): Self = StObject.set(x, "RestoreOutputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreOutputPathUndefined: Self = StObject.set(x, "RestoreOutputPath", js.undefined)
+      inline def setRestoreOutputPathUndefined: Self = StObject.set(x, "RestoreOutputPath", js.undefined)
     }
   }
 }

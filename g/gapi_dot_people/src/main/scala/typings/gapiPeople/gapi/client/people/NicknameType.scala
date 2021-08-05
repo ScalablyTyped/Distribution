@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NicknameType extends StObject
 object NicknameType {
   
-  @scala.inline
-  def DEFAULT: typings.gapiPeople.gapiPeopleStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.DEFAULT]
+  inline def DEFAULT: typings.gapiPeople.gapiPeopleStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.DEFAULT]
   
-  @scala.inline
-  def GPLUS: typings.gapiPeople.gapiPeopleStrings.GPLUS = "GPLUS".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.GPLUS]
+  inline def GPLUS: typings.gapiPeople.gapiPeopleStrings.GPLUS = "GPLUS".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.GPLUS]
   
-  @scala.inline
-  def INITIALS: typings.gapiPeople.gapiPeopleStrings.INITIALS = "INITIALS".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.INITIALS]
+  inline def INITIALS: typings.gapiPeople.gapiPeopleStrings.INITIALS = "INITIALS".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.INITIALS]
   
-  @scala.inline
-  def MAIDEN_NAME: typings.gapiPeople.gapiPeopleStrings.MAIDEN_NAME = "MAIDEN_NAME".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.MAIDEN_NAME]
+  inline def MAIDEN_NAME: typings.gapiPeople.gapiPeopleStrings.MAIDEN_NAME = "MAIDEN_NAME".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.MAIDEN_NAME]
   
-  @scala.inline
-  def OTHER_NAME: typings.gapiPeople.gapiPeopleStrings.OTHER_NAME = "OTHER_NAME".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.OTHER_NAME]
+  inline def OTHER_NAME: typings.gapiPeople.gapiPeopleStrings.OTHER_NAME = "OTHER_NAME".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.OTHER_NAME]
 }

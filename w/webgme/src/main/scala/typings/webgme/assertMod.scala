@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object assertMod {
   
-  @scala.inline
-  def apply(condition: Boolean): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def apply(condition: Boolean): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
   @JSImport("common/util/assert", JSImport.Namespace)
   @js.native

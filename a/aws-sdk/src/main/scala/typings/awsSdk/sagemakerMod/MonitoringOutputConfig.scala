@@ -18,25 +18,19 @@ trait MonitoringOutputConfig extends StObject {
 }
 object MonitoringOutputConfig {
   
-  @scala.inline
-  def apply(MonitoringOutputs: MonitoringOutputs): MonitoringOutputConfig = {
+  inline def apply(MonitoringOutputs: MonitoringOutputs): MonitoringOutputConfig = {
     val __obj = js.Dynamic.literal(MonitoringOutputs = MonitoringOutputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringOutputConfig]
   }
   
-  @scala.inline
-  implicit class MonitoringOutputConfigMutableBuilder[Self <: MonitoringOutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringOutputConfig](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setMonitoringOutputs(value: MonitoringOutputs): Self = StObject.set(x, "MonitoringOutputs", value.asInstanceOf[js.Any])
+    inline def setMonitoringOutputs(value: MonitoringOutputs): Self = StObject.set(x, "MonitoringOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringOutputsVarargs(value: MonitoringOutput*): Self = StObject.set(x, "MonitoringOutputs", js.Array(value :_*))
+    inline def setMonitoringOutputsVarargs(value: MonitoringOutput*): Self = StObject.set(x, "MonitoringOutputs", js.Array(value :_*))
   }
 }

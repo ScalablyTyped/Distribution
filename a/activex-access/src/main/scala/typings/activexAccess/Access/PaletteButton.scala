@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PaletteButton extends StObject {
   
-  @JSName("Access.PaletteButton_typekey")
+  /* private */ @JSName("Access.PaletteButton_typekey")
   var AccessDotPaletteButton_typekey: PaletteButton = js.native
   
   var AddColon: Boolean = js.native

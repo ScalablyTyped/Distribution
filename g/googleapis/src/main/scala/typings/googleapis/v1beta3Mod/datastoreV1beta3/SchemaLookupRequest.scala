@@ -21,28 +21,21 @@ trait SchemaLookupRequest extends StObject {
 }
 object SchemaLookupRequest {
   
-  @scala.inline
-  def apply(): SchemaLookupRequest = {
+  inline def apply(): SchemaLookupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLookupRequest]
   }
   
-  @scala.inline
-  implicit class SchemaLookupRequestMutableBuilder[Self <: SchemaLookupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLookupRequest](x: Self) {
     
-    @scala.inline
-    def setKeys(value: js.Array[SchemaKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[SchemaKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: SchemaKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: SchemaKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setReadOptions(value: SchemaReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
+    inline def setReadOptions(value: SchemaReadOptions): Self = StObject.set(x, "readOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOptionsUndefined: Self = StObject.set(x, "readOptions", js.undefined)
+    inline def setReadOptionsUndefined: Self = StObject.set(x, "readOptions", js.undefined)
   }
 }

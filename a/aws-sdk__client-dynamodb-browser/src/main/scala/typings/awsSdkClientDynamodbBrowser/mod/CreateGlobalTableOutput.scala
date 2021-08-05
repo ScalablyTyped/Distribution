@@ -10,8 +10,7 @@ trait CreateGlobalTableOutput
      with typings.awsSdkClientDynamodbBrowser.typesCreateGlobalTableOutputMod.CreateGlobalTableOutput
 object CreateGlobalTableOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): CreateGlobalTableOutput = {
+  inline def apply($metadata: ResponseMetadata): CreateGlobalTableOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGlobalTableOutput]
   }

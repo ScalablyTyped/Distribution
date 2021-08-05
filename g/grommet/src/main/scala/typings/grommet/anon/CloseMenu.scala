@@ -12,25 +12,19 @@ trait CloseMenu extends StObject {
 }
 object CloseMenu {
   
-  @scala.inline
-  def apply(): CloseMenu = {
+  inline def apply(): CloseMenu = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloseMenu]
   }
   
-  @scala.inline
-  implicit class CloseMenuMutableBuilder[Self <: CloseMenu] (val x: Self) extends AnyVal {
+  extension [Self <: CloseMenu](x: Self) {
     
-    @scala.inline
-    def setCloseMenu(value: String): Self = StObject.set(x, "closeMenu", value.asInstanceOf[js.Any])
+    inline def setCloseMenu(value: String): Self = StObject.set(x, "closeMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseMenuUndefined: Self = StObject.set(x, "closeMenu", js.undefined)
+    inline def setCloseMenuUndefined: Self = StObject.set(x, "closeMenu", js.undefined)
     
-    @scala.inline
-    def setOpenMenu(value: String): Self = StObject.set(x, "openMenu", value.asInstanceOf[js.Any])
+    inline def setOpenMenu(value: String): Self = StObject.set(x, "openMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenMenuUndefined: Self = StObject.set(x, "openMenu", js.undefined)
+    inline def setOpenMenuUndefined: Self = StObject.set(x, "openMenu", js.undefined)
   }
 }

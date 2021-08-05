@@ -14,25 +14,25 @@ class EmitOptions protected ()
     resolvePath: js.Function1[/* path */ String, String]
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _commonDirectoryPath: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _diagnostic: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _outputDirectory: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _settings: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _sharedOutputFile: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _sourceMapRootDirectory: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _sourceRootDirectory: js.Any = js.native
   
   /* CompleteClass */
@@ -41,8 +41,8 @@ class EmitOptions protected ()
   /* CompleteClass */
   override def compilationSettings(): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = js.native
   
-  /* CompleteClass */
-  /* private */ override def determineCommonDirectoryPath(compiler: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def determineCommonDirectoryPath(compiler: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def diagnostic(): typings.typescriptServices.TypeScript.Diagnostic = js.native

@@ -12,22 +12,17 @@ trait AddressInputs extends StObject {
 }
 object AddressInputs {
   
-  @scala.inline
-  def apply(address: String, inputs: js.Array[String]): AddressInputs = {
+  inline def apply(address: String, inputs: js.Array[String]): AddressInputs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressInputs]
   }
   
-  @scala.inline
-  implicit class AddressInputsMutableBuilder[Self <: AddressInputs] (val x: Self) extends AnyVal {
+  extension [Self <: AddressInputs](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
   }
 }

@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoArrowheadStyle extends StObject
 object MsoArrowheadStyle {
   
-  @scala.inline
-  def msoArrowheadDiamond: `5` = 5.asInstanceOf[`5`]
+  inline def msoArrowheadDiamond: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoArrowheadNone: `1` = 1.asInstanceOf[`1`]
+  inline def msoArrowheadNone: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoArrowheadOpen: `3` = 3.asInstanceOf[`3`]
+  inline def msoArrowheadOpen: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoArrowheadOval: `6` = 6.asInstanceOf[`6`]
+  inline def msoArrowheadOval: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoArrowheadStealth: `4` = 4.asInstanceOf[`4`]
+  inline def msoArrowheadStealth: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoArrowheadStyleMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoArrowheadStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoArrowheadTriangle: `2` = 2.asInstanceOf[`2`]
+  inline def msoArrowheadTriangle: `2` = 2.asInstanceOf[`2`]
 }

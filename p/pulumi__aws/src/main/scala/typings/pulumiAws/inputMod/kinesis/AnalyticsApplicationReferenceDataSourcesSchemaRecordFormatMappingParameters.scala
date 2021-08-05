@@ -25,25 +25,19 @@ trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameter
 }
 object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters {
   
-  @scala.inline
-  def apply(): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters = {
+  inline def apply(): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersMutableBuilder[Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters](x: Self) {
     
-    @scala.inline
-    def setCsv(value: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv]): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+    inline def setCsv(value: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv]): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+    inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
     
-    @scala.inline
-    def setJson(value: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
   }
 }

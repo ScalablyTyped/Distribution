@@ -11,22 +11,17 @@ trait BatchClearValuesRequest extends StObject {
 }
 object BatchClearValuesRequest {
   
-  @scala.inline
-  def apply(): BatchClearValuesRequest = {
+  inline def apply(): BatchClearValuesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchClearValuesRequest]
   }
   
-  @scala.inline
-  implicit class BatchClearValuesRequestMutableBuilder[Self <: BatchClearValuesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchClearValuesRequest](x: Self) {
     
-    @scala.inline
-    def setRanges(value: js.Array[String]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: js.Array[String]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    @scala.inline
-    def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: String*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

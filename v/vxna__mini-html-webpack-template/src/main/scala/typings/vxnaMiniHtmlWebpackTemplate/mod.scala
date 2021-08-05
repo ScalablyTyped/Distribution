@@ -10,8 +10,7 @@ object mod {
   /**
     * Template for `mini-html-webpack-plugin` that extends default features with useful subset of options
     */
-  @scala.inline
-  def apply(ctx: PluginContext): String = ^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(ctx: PluginContext): String = ^.asInstanceOf[js.Dynamic].apply(ctx.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@vxna/mini-html-webpack-template", JSImport.Namespace)
   @js.native

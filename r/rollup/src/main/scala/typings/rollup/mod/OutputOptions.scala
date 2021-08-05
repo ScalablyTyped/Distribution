@@ -96,283 +96,191 @@ trait OutputOptions extends StObject {
 }
 object OutputOptions {
   
-  @scala.inline
-  def apply(): OutputOptions = {
+  inline def apply(): OutputOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputOptions]
   }
   
-  @scala.inline
-  implicit class OutputOptionsMutableBuilder[Self <: OutputOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OutputOptions](x: Self) {
     
-    @scala.inline
-    def setAmd(value: Define): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
+    inline def setAmd(value: Define): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
+    inline def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
     
-    @scala.inline
-    def setAssetFileNames(value: String | (js.Function1[/* chunkInfo */ PreRenderedAsset, String])): Self = StObject.set(x, "assetFileNames", value.asInstanceOf[js.Any])
+    inline def setAssetFileNames(value: String | (js.Function1[/* chunkInfo */ PreRenderedAsset, String])): Self = StObject.set(x, "assetFileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetFileNamesFunction1(value: /* chunkInfo */ PreRenderedAsset => String): Self = StObject.set(x, "assetFileNames", js.Any.fromFunction1(value))
+    inline def setAssetFileNamesFunction1(value: /* chunkInfo */ PreRenderedAsset => String): Self = StObject.set(x, "assetFileNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssetFileNamesUndefined: Self = StObject.set(x, "assetFileNames", js.undefined)
+    inline def setAssetFileNamesUndefined: Self = StObject.set(x, "assetFileNames", js.undefined)
     
-    @scala.inline
-    def setBanner(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    inline def setBanner(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "banner", js.Any.fromFunction0(value))
+    inline def setBannerFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "banner", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
+    inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
-    @scala.inline
-    def setChunkFileNames(value: String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])): Self = StObject.set(x, "chunkFileNames", value.asInstanceOf[js.Any])
+    inline def setChunkFileNames(value: String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])): Self = StObject.set(x, "chunkFileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkFileNamesFunction1(value: /* chunkInfo */ PreRenderedChunk => String): Self = StObject.set(x, "chunkFileNames", js.Any.fromFunction1(value))
+    inline def setChunkFileNamesFunction1(value: /* chunkInfo */ PreRenderedChunk => String): Self = StObject.set(x, "chunkFileNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChunkFileNamesUndefined: Self = StObject.set(x, "chunkFileNames", js.undefined)
+    inline def setChunkFileNamesUndefined: Self = StObject.set(x, "chunkFileNames", js.undefined)
     
-    @scala.inline
-    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+    inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setDynamicImportFunction(value: String): Self = StObject.set(x, "dynamicImportFunction", value.asInstanceOf[js.Any])
+    inline def setDynamicImportFunction(value: String): Self = StObject.set(x, "dynamicImportFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicImportFunctionUndefined: Self = StObject.set(x, "dynamicImportFunction", js.undefined)
+    inline def setDynamicImportFunctionUndefined: Self = StObject.set(x, "dynamicImportFunction", js.undefined)
     
-    @scala.inline
-    def setEntryFileNames(value: String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])): Self = StObject.set(x, "entryFileNames", value.asInstanceOf[js.Any])
+    inline def setEntryFileNames(value: String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String])): Self = StObject.set(x, "entryFileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryFileNamesFunction1(value: /* chunkInfo */ PreRenderedChunk => String): Self = StObject.set(x, "entryFileNames", js.Any.fromFunction1(value))
+    inline def setEntryFileNamesFunction1(value: /* chunkInfo */ PreRenderedChunk => String): Self = StObject.set(x, "entryFileNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEntryFileNamesUndefined: Self = StObject.set(x, "entryFileNames", js.undefined)
+    inline def setEntryFileNamesUndefined: Self = StObject.set(x, "entryFileNames", js.undefined)
     
-    @scala.inline
-    def setEsModule(value: Boolean): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
+    inline def setEsModule(value: Boolean): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
+    inline def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
     
-    @scala.inline
-    def setExports(value: default | named | none | auto): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: default | named | none | auto): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
+    inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
-    @scala.inline
-    def setExtend(value: Boolean): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: Boolean): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setExternalLiveBindings(value: Boolean): Self = StObject.set(x, "externalLiveBindings", value.asInstanceOf[js.Any])
+    inline def setExternalLiveBindings(value: Boolean): Self = StObject.set(x, "externalLiveBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalLiveBindingsUndefined: Self = StObject.set(x, "externalLiveBindings", js.undefined)
+    inline def setExternalLiveBindingsUndefined: Self = StObject.set(x, "externalLiveBindings", js.undefined)
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setFooter(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "footer", js.Any.fromFunction0(value))
+    inline def setFooterFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "footer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFreeze(value: Boolean): Self = StObject.set(x, "freeze", value.asInstanceOf[js.Any])
+    inline def setFreeze(value: Boolean): Self = StObject.set(x, "freeze", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreezeUndefined: Self = StObject.set(x, "freeze", js.undefined)
+    inline def setFreezeUndefined: Self = StObject.set(x, "freeze", js.undefined)
     
-    @scala.inline
-    def setGlobals(value: GlobalsOption): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: GlobalsOption): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalsFunction1(value: /* name */ String => String): Self = StObject.set(x, "globals", js.Any.fromFunction1(value))
+    inline def setGlobalsFunction1(value: /* name */ String => String): Self = StObject.set(x, "globals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+    inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     
-    @scala.inline
-    def setHoistTransitiveImports(value: Boolean): Self = StObject.set(x, "hoistTransitiveImports", value.asInstanceOf[js.Any])
+    inline def setHoistTransitiveImports(value: Boolean): Self = StObject.set(x, "hoistTransitiveImports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoistTransitiveImportsUndefined: Self = StObject.set(x, "hoistTransitiveImports", js.undefined)
+    inline def setHoistTransitiveImportsUndefined: Self = StObject.set(x, "hoistTransitiveImports", js.undefined)
     
-    @scala.inline
-    def setIndent(value: String | Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: String | Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
-    @scala.inline
-    def setInlineDynamicImports(value: Boolean): Self = StObject.set(x, "inlineDynamicImports", value.asInstanceOf[js.Any])
+    inline def setInlineDynamicImports(value: Boolean): Self = StObject.set(x, "inlineDynamicImports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineDynamicImportsUndefined: Self = StObject.set(x, "inlineDynamicImports", js.undefined)
+    inline def setInlineDynamicImportsUndefined: Self = StObject.set(x, "inlineDynamicImports", js.undefined)
     
-    @scala.inline
-    def setInterop(value: InteropType | GetInterop): Self = StObject.set(x, "interop", value.asInstanceOf[js.Any])
+    inline def setInterop(value: InteropType | GetInterop): Self = StObject.set(x, "interop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteropFunction1(value: /* id */ String | Null => InteropType): Self = StObject.set(x, "interop", js.Any.fromFunction1(value))
+    inline def setInteropFunction1(value: /* id */ String | Null => InteropType): Self = StObject.set(x, "interop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInteropUndefined: Self = StObject.set(x, "interop", js.undefined)
+    inline def setInteropUndefined: Self = StObject.set(x, "interop", js.undefined)
     
-    @scala.inline
-    def setIntro(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
+    inline def setIntro(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntroFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "intro", js.Any.fromFunction0(value))
+    inline def setIntroFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "intro", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIntroUndefined: Self = StObject.set(x, "intro", js.undefined)
+    inline def setIntroUndefined: Self = StObject.set(x, "intro", js.undefined)
     
-    @scala.inline
-    def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
+    inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
+    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => js.UndefOr[String | Null]): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
+    inline def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
     
-    @scala.inline
-    def setMinifyInternalExports(value: Boolean): Self = StObject.set(x, "minifyInternalExports", value.asInstanceOf[js.Any])
+    inline def setMinifyInternalExports(value: Boolean): Self = StObject.set(x, "minifyInternalExports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinifyInternalExportsUndefined: Self = StObject.set(x, "minifyInternalExports", js.undefined)
+    inline def setMinifyInternalExportsUndefined: Self = StObject.set(x, "minifyInternalExports", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNamespaceToStringTag(value: Boolean): Self = StObject.set(x, "namespaceToStringTag", value.asInstanceOf[js.Any])
+    inline def setNamespaceToStringTag(value: Boolean): Self = StObject.set(x, "namespaceToStringTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceToStringTagUndefined: Self = StObject.set(x, "namespaceToStringTag", js.undefined)
+    inline def setNamespaceToStringTagUndefined: Self = StObject.set(x, "namespaceToStringTag", js.undefined)
     
-    @scala.inline
-    def setNoConflict(value: Boolean): Self = StObject.set(x, "noConflict", value.asInstanceOf[js.Any])
+    inline def setNoConflict(value: Boolean): Self = StObject.set(x, "noConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoConflictUndefined: Self = StObject.set(x, "noConflict", js.undefined)
+    inline def setNoConflictUndefined: Self = StObject.set(x, "noConflict", js.undefined)
     
-    @scala.inline
-    def setOutro(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "outro", value.asInstanceOf[js.Any])
+    inline def setOutro(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "outro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutroFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "outro", js.Any.fromFunction0(value))
+    inline def setOutroFunction0(value: () => String | js.Promise[String]): Self = StObject.set(x, "outro", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOutroUndefined: Self = StObject.set(x, "outro", js.undefined)
+    inline def setOutroUndefined: Self = StObject.set(x, "outro", js.undefined)
     
-    @scala.inline
-    def setPaths(value: OptionsPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: OptionsPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsFunction1(value: /* id */ String => String): Self = StObject.set(x, "paths", js.Any.fromFunction1(value))
+    inline def setPathsFunction1(value: /* id */ String => String): Self = StObject.set(x, "paths", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setPlugins(value: js.Array[OutputPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[OutputPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    @scala.inline
-    def setPluginsVarargs(value: OutputPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: OutputPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
-    @scala.inline
-    def setPreferConst(value: Boolean): Self = StObject.set(x, "preferConst", value.asInstanceOf[js.Any])
+    inline def setPreferConst(value: Boolean): Self = StObject.set(x, "preferConst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferConstUndefined: Self = StObject.set(x, "preferConst", js.undefined)
+    inline def setPreferConstUndefined: Self = StObject.set(x, "preferConst", js.undefined)
     
-    @scala.inline
-    def setPreserveModules(value: Boolean): Self = StObject.set(x, "preserveModules", value.asInstanceOf[js.Any])
+    inline def setPreserveModules(value: Boolean): Self = StObject.set(x, "preserveModules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveModulesRoot(value: String): Self = StObject.set(x, "preserveModulesRoot", value.asInstanceOf[js.Any])
+    inline def setPreserveModulesRoot(value: String): Self = StObject.set(x, "preserveModulesRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveModulesRootUndefined: Self = StObject.set(x, "preserveModulesRoot", js.undefined)
+    inline def setPreserveModulesRootUndefined: Self = StObject.set(x, "preserveModulesRoot", js.undefined)
     
-    @scala.inline
-    def setPreserveModulesUndefined: Self = StObject.set(x, "preserveModules", js.undefined)
+    inline def setPreserveModulesUndefined: Self = StObject.set(x, "preserveModules", js.undefined)
     
-    @scala.inline
-    def setSourcemap(value: Boolean | `inline` | hidden): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
+    inline def setSourcemap(value: Boolean | `inline` | hidden): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcemapExcludeSources(value: Boolean): Self = StObject.set(x, "sourcemapExcludeSources", value.asInstanceOf[js.Any])
+    inline def setSourcemapExcludeSources(value: Boolean): Self = StObject.set(x, "sourcemapExcludeSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcemapExcludeSourcesUndefined: Self = StObject.set(x, "sourcemapExcludeSources", js.undefined)
+    inline def setSourcemapExcludeSourcesUndefined: Self = StObject.set(x, "sourcemapExcludeSources", js.undefined)
     
-    @scala.inline
-    def setSourcemapFile(value: String): Self = StObject.set(x, "sourcemapFile", value.asInstanceOf[js.Any])
+    inline def setSourcemapFile(value: String): Self = StObject.set(x, "sourcemapFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcemapFileUndefined: Self = StObject.set(x, "sourcemapFile", js.undefined)
+    inline def setSourcemapFileUndefined: Self = StObject.set(x, "sourcemapFile", js.undefined)
     
-    @scala.inline
-    def setSourcemapPathTransform(value: (/* relativeSourcePath */ String, /* sourcemapPath */ String) => String): Self = StObject.set(x, "sourcemapPathTransform", js.Any.fromFunction2(value))
+    inline def setSourcemapPathTransform(value: (/* relativeSourcePath */ String, /* sourcemapPath */ String) => String): Self = StObject.set(x, "sourcemapPathTransform", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSourcemapPathTransformUndefined: Self = StObject.set(x, "sourcemapPathTransform", js.undefined)
+    inline def setSourcemapPathTransformUndefined: Self = StObject.set(x, "sourcemapPathTransform", js.undefined)
     
-    @scala.inline
-    def setSourcemapUndefined: Self = StObject.set(x, "sourcemap", js.undefined)
+    inline def setSourcemapUndefined: Self = StObject.set(x, "sourcemap", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
-    @scala.inline
-    def setSystemNullSetters(value: Boolean): Self = StObject.set(x, "systemNullSetters", value.asInstanceOf[js.Any])
+    inline def setSystemNullSetters(value: Boolean): Self = StObject.set(x, "systemNullSetters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemNullSettersUndefined: Self = StObject.set(x, "systemNullSetters", js.undefined)
+    inline def setSystemNullSettersUndefined: Self = StObject.set(x, "systemNullSetters", js.undefined)
   }
 }

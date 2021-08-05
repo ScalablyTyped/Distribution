@@ -35,11 +35,9 @@ object mod {
     @JSImport("complex.js", "default.EPSILON")
     @js.native
     def EPSILON: Double = js.native
-    @scala.inline
-    def EPSILON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPSILON")(x.asInstanceOf[js.Any])
+    inline def EPSILON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPSILON")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def E_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("E")(x.asInstanceOf[js.Any])
+    inline def E_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("E")(x.asInstanceOf[js.Any])
     
     /**
       * An imaginary number i instance.
@@ -56,11 +54,9 @@ object mod {
     @JSImport("complex.js", "default.INFINITY")
     @js.native
     def INFINITY: Complex = js.native
-    @scala.inline
-    def INFINITY_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFINITY")(x.asInstanceOf[js.Any])
+    inline def INFINITY_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFINITY")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def I_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("I")(x.asInstanceOf[js.Any])
+    inline def I_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("I")(x.asInstanceOf[js.Any])
     
     /**
       * A complex NaN value (not on the Riemann Sphere).
@@ -69,8 +65,7 @@ object mod {
     @JSImport("complex.js", "default.NAN")
     @js.native
     def NAN: Complex = js.native
-    @scala.inline
-    def NAN_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAN")(x.asInstanceOf[js.Any])
+    inline def NAN_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAN")(x.asInstanceOf[js.Any])
     
     /**
       * A complex one instance.
@@ -79,8 +74,7 @@ object mod {
     @JSImport("complex.js", "default.ONE")
     @js.native
     def ONE: Complex = js.native
-    @scala.inline
-    def ONE_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+    inline def ONE_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
     
     /**
       * A complex PI instance.
@@ -89,8 +83,7 @@ object mod {
     @JSImport("complex.js", "default.PI")
     @js.native
     def PI: Complex = js.native
-    @scala.inline
-    def PI_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI")(x.asInstanceOf[js.Any])
+    inline def PI_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI")(x.asInstanceOf[js.Any])
     
     /**
       * A complex zero value (south pole on the Riemann Sphere).
@@ -99,8 +92,7 @@ object mod {
     @JSImport("complex.js", "default.ZERO")
     @js.native
     def ZERO: Complex = js.native
-    @scala.inline
-    def ZERO_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    inline def ZERO_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   }
   
   @js.native

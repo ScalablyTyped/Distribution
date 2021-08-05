@@ -16,8 +16,7 @@ trait TriggerMeta
 }
 object TriggerMeta {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _self: String,
     _ts: Double,
     body: String,
@@ -29,16 +28,12 @@ object TriggerMeta {
     __obj.asInstanceOf[TriggerMeta]
   }
   
-  @scala.inline
-  implicit class TriggerMetaMutableBuilder[Self <: TriggerMeta] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerMeta](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerOperation(value: String): Self = StObject.set(x, "triggerOperation", value.asInstanceOf[js.Any])
+    inline def setTriggerOperation(value: String): Self = StObject.set(x, "triggerOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }
 }

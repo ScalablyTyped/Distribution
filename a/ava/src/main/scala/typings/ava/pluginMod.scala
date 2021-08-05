@@ -14,8 +14,7 @@ object pluginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerSharedWorker_experimental[Data](options: RegistrationOptions[experimental, Data]): Protocol[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSharedWorker")(options.asInstanceOf[js.Any]).asInstanceOf[Protocol[Data]]
+  inline def registerSharedWorker_experimental[Data](options: RegistrationOptions[experimental, Data]): Protocol[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSharedWorker")(options.asInstanceOf[js.Any]).asInstanceOf[Protocol[Data]]
   
   object SharedWorker {
     
@@ -29,20 +28,16 @@ object pluginMod {
       }
       object BroadcastMessage {
         
-        @scala.inline
-        def apply[Data](id: String, replies: () => AsyncIterableIterator[ReceivedMessage[Data]]): BroadcastMessage[Data] = {
+        inline def apply[Data](id: String, replies: () => AsyncIterableIterator[ReceivedMessage[Data]]): BroadcastMessage[Data] = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], replies = js.Any.fromFunction0(replies))
           __obj.asInstanceOf[BroadcastMessage[Data]]
         }
         
-        @scala.inline
-        implicit class BroadcastMessageMutableBuilder[Self <: BroadcastMessage[?], Data] (val x: Self & BroadcastMessage[Data]) extends AnyVal {
+        extension [Self <: BroadcastMessage[?], Data](x: Self & BroadcastMessage[Data]) {
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReplies(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "replies", js.Any.fromFunction0(value))
+          inline def setReplies(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "replies", js.Any.fromFunction0(value))
         }
       }
       
@@ -62,8 +57,7 @@ object pluginMod {
       }
       object Protocol {
         
-        @scala.inline
-        def apply[Data](
+        inline def apply[Data](
           broadcast: Data => BroadcastMessage[Data],
           initialData: Data,
           ready: () => typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data],
@@ -74,26 +68,19 @@ object pluginMod {
           __obj.asInstanceOf[typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]]
         }
         
-        @scala.inline
-        implicit class ProtocolMutableBuilder[Self <: typings.ava.pluginMod.SharedWorker.Experimental.Protocol[?], Data] (val x: Self & typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]) extends AnyVal {
+        extension [Self <: typings.ava.pluginMod.SharedWorker.Experimental.Protocol[?], Data](x: Self & typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]) {
           
-          @scala.inline
-          def setBroadcast(value: Data => BroadcastMessage[Data]): Self = StObject.set(x, "broadcast", js.Any.fromFunction1(value))
+          inline def setBroadcast(value: Data => BroadcastMessage[Data]): Self = StObject.set(x, "broadcast", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setInitialData(value: Data): Self = StObject.set(x, "initialData", value.asInstanceOf[js.Any])
+          inline def setInitialData(value: Data): Self = StObject.set(x, "initialData", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProtocol(value: experimental): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+          inline def setProtocol(value: experimental): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReady(value: () => typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+          inline def setReady(value: () => typings.ava.pluginMod.SharedWorker.Experimental.Protocol[Data]): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setSubscribe(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "subscribe", js.Any.fromFunction0(value))
+          inline def setSubscribe(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "subscribe", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setTestWorkers(value: () => AsyncIterableIterator[TestWorker[Data]]): Self = StObject.set(x, "testWorkers", js.Any.fromFunction0(value))
+          inline def setTestWorkers(value: () => AsyncIterableIterator[TestWorker[Data]]): Self = StObject.set(x, "testWorkers", js.Any.fromFunction0(value))
         }
       }
       
@@ -105,20 +92,16 @@ object pluginMod {
       }
       object PublishedMessage {
         
-        @scala.inline
-        def apply[Data](id: String, replies: () => AsyncIterableIterator[ReceivedMessage[Data]]): PublishedMessage[Data] = {
+        inline def apply[Data](id: String, replies: () => AsyncIterableIterator[ReceivedMessage[Data]]): PublishedMessage[Data] = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], replies = js.Any.fromFunction0(replies))
           __obj.asInstanceOf[PublishedMessage[Data]]
         }
         
-        @scala.inline
-        implicit class PublishedMessageMutableBuilder[Self <: PublishedMessage[?], Data] (val x: Self & PublishedMessage[Data]) extends AnyVal {
+        extension [Self <: PublishedMessage[?], Data](x: Self & PublishedMessage[Data]) {
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReplies(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "replies", js.Any.fromFunction0(value))
+          inline def setReplies(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "replies", js.Any.fromFunction0(value))
         }
       }
       
@@ -134,26 +117,20 @@ object pluginMod {
       }
       object ReceivedMessage {
         
-        @scala.inline
-        def apply[Data](data: Data, id: String, reply: Data => PublishedMessage[Data], testWorker: TestWorker[js.Any]): ReceivedMessage[Data] = {
+        inline def apply[Data](data: Data, id: String, reply: Data => PublishedMessage[Data], testWorker: TestWorker[js.Any]): ReceivedMessage[Data] = {
           val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], reply = js.Any.fromFunction1(reply), testWorker = testWorker.asInstanceOf[js.Any])
           __obj.asInstanceOf[ReceivedMessage[Data]]
         }
         
-        @scala.inline
-        implicit class ReceivedMessageMutableBuilder[Self <: ReceivedMessage[?], Data] (val x: Self & ReceivedMessage[Data]) extends AnyVal {
+        extension [Self <: ReceivedMessage[?], Data](x: Self & ReceivedMessage[Data]) {
           
-          @scala.inline
-          def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReply(value: Data => PublishedMessage[Data]): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
+          inline def setReply(value: Data => PublishedMessage[Data]): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setTestWorker(value: TestWorker[js.Any]): Self = StObject.set(x, "testWorker", value.asInstanceOf[js.Any])
+          inline def setTestWorker(value: TestWorker[js.Any]): Self = StObject.set(x, "testWorker", value.asInstanceOf[js.Any])
         }
       }
       
@@ -171,8 +148,7 @@ object pluginMod {
       }
       object TestWorker {
         
-        @scala.inline
-        def apply[Data](
+        inline def apply[Data](
           file: String,
           id: String,
           publish: Data => PublishedMessage[Data],
@@ -183,23 +159,17 @@ object pluginMod {
           __obj.asInstanceOf[TestWorker[Data]]
         }
         
-        @scala.inline
-        implicit class TestWorkerMutableBuilder[Self <: TestWorker[?], Data] (val x: Self & TestWorker[Data]) extends AnyVal {
+        extension [Self <: TestWorker[?], Data](x: Self & TestWorker[Data]) {
           
-          @scala.inline
-          def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+          inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPublish(value: Data => PublishedMessage[Data]): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
+          inline def setPublish(value: Data => PublishedMessage[Data]): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setSubscribe(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "subscribe", js.Any.fromFunction0(value))
+          inline def setSubscribe(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "subscribe", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setTeardown(value: js.Any => js.Any): Self = StObject.set(x, "teardown", js.Any.fromFunction1(value))
+          inline def setTeardown(value: js.Any => js.Any): Self = StObject.set(x, "teardown", js.Any.fromFunction1(value))
         }
       }
     }
@@ -213,19 +183,16 @@ object pluginMod {
     }
     object FactoryOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         negotiateProtocol: js.Array[experimental] => typings.ava.pluginMod.SharedWorker.Experimental.Protocol[js.Any]
       ): FactoryOptions = {
         val __obj = js.Dynamic.literal(negotiateProtocol = js.Any.fromFunction1(negotiateProtocol))
         __obj.asInstanceOf[FactoryOptions]
       }
       
-      @scala.inline
-      implicit class FactoryOptionsMutableBuilder[Self <: FactoryOptions] (val x: Self) extends AnyVal {
+      extension [Self <: FactoryOptions](x: Self) {
         
-        @scala.inline
-        def setNegotiateProtocol(value: js.Array[experimental] => typings.ava.pluginMod.SharedWorker.Experimental.Protocol[js.Any]): Self = StObject.set(x, "negotiateProtocol", js.Any.fromFunction1(value))
+        inline def setNegotiateProtocol(value: js.Array[experimental] => typings.ava.pluginMod.SharedWorker.Experimental.Protocol[js.Any]): Self = StObject.set(x, "negotiateProtocol", js.Any.fromFunction1(value))
       }
     }
     
@@ -247,8 +214,7 @@ object pluginMod {
         }
         object Protocol {
           
-          @scala.inline
-          def apply[Data](
+          inline def apply[Data](
             available: js.Promise[Unit],
             currentlyAvailable: Boolean,
             publish: Data => PublishedMessage[Data],
@@ -258,23 +224,17 @@ object pluginMod {
             __obj.asInstanceOf[Protocol[Data]]
           }
           
-          @scala.inline
-          implicit class ProtocolMutableBuilder[Self <: Protocol[?], Data] (val x: Self & Protocol[Data]) extends AnyVal {
+          extension [Self <: Protocol[?], Data](x: Self & Protocol[Data]) {
             
-            @scala.inline
-            def setAvailable(value: js.Promise[Unit]): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+            inline def setAvailable(value: js.Promise[Unit]): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setCurrentlyAvailable(value: Boolean): Self = StObject.set(x, "currentlyAvailable", value.asInstanceOf[js.Any])
+            inline def setCurrentlyAvailable(value: Boolean): Self = StObject.set(x, "currentlyAvailable", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setProtocol(value: experimental): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+            inline def setProtocol(value: experimental): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setPublish(value: Data => PublishedMessage[Data]): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
+            inline def setPublish(value: Data => PublishedMessage[Data]): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setSubscribe(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "subscribe", js.Any.fromFunction0(value))
+            inline def setSubscribe(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "subscribe", js.Any.fromFunction0(value))
           }
         }
         
@@ -286,20 +246,16 @@ object pluginMod {
         }
         object PublishedMessage {
           
-          @scala.inline
-          def apply[Data](id: String, replies: () => AsyncIterableIterator[ReceivedMessage[Data]]): PublishedMessage[Data] = {
+          inline def apply[Data](id: String, replies: () => AsyncIterableIterator[ReceivedMessage[Data]]): PublishedMessage[Data] = {
             val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], replies = js.Any.fromFunction0(replies))
             __obj.asInstanceOf[PublishedMessage[Data]]
           }
           
-          @scala.inline
-          implicit class PublishedMessageMutableBuilder[Self <: PublishedMessage[?], Data] (val x: Self & PublishedMessage[Data]) extends AnyVal {
+          extension [Self <: PublishedMessage[?], Data](x: Self & PublishedMessage[Data]) {
             
-            @scala.inline
-            def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+            inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setReplies(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "replies", js.Any.fromFunction0(value))
+            inline def setReplies(value: () => AsyncIterableIterator[ReceivedMessage[Data]]): Self = StObject.set(x, "replies", js.Any.fromFunction0(value))
           }
         }
         
@@ -313,23 +269,18 @@ object pluginMod {
         }
         object ReceivedMessage {
           
-          @scala.inline
-          def apply[Data](data: Data, id: String, reply: Data => PublishedMessage[Data]): ReceivedMessage[Data] = {
+          inline def apply[Data](data: Data, id: String, reply: Data => PublishedMessage[Data]): ReceivedMessage[Data] = {
             val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], reply = js.Any.fromFunction1(reply))
             __obj.asInstanceOf[ReceivedMessage[Data]]
           }
           
-          @scala.inline
-          implicit class ReceivedMessageMutableBuilder[Self <: ReceivedMessage[?], Data] (val x: Self & ReceivedMessage[Data]) extends AnyVal {
+          extension [Self <: ReceivedMessage[?], Data](x: Self & ReceivedMessage[Data]) {
             
-            @scala.inline
-            def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+            inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+            inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setReply(value: Data => PublishedMessage[Data]): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
+            inline def setReply(value: Data => PublishedMessage[Data]): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
           }
         }
       }
@@ -346,35 +297,26 @@ object pluginMod {
       }
       object RegistrationOptions {
         
-        @scala.inline
-        def apply[Identifier /* <: ProtocolIdentifier */, Data](filename: String, supportedProtocols: js.Array[Identifier]): RegistrationOptions[Identifier, Data] = {
+        inline def apply[Identifier /* <: ProtocolIdentifier */, Data](filename: String, supportedProtocols: js.Array[Identifier]): RegistrationOptions[Identifier, Data] = {
           val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], supportedProtocols = supportedProtocols.asInstanceOf[js.Any])
           __obj.asInstanceOf[RegistrationOptions[Identifier, Data]]
         }
         
-        @scala.inline
-        implicit class RegistrationOptionsMutableBuilder[Self <: RegistrationOptions[?, ?], Identifier /* <: ProtocolIdentifier */, Data] (val x: Self & (RegistrationOptions[Identifier, Data])) extends AnyVal {
+        extension [Self <: RegistrationOptions[?, ?], Identifier /* <: ProtocolIdentifier */, Data](x: Self & (RegistrationOptions[Identifier, Data])) {
           
-          @scala.inline
-          def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+          inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInitialData(value: Data): Self = StObject.set(x, "initialData", value.asInstanceOf[js.Any])
+          inline def setInitialData(value: Data): Self = StObject.set(x, "initialData", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInitialDataUndefined: Self = StObject.set(x, "initialData", js.undefined)
+          inline def setInitialDataUndefined: Self = StObject.set(x, "initialData", js.undefined)
           
-          @scala.inline
-          def setSupportedProtocols(value: js.Array[Identifier]): Self = StObject.set(x, "supportedProtocols", value.asInstanceOf[js.Any])
+          inline def setSupportedProtocols(value: js.Array[Identifier]): Self = StObject.set(x, "supportedProtocols", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSupportedProtocolsVarargs(value: Identifier*): Self = StObject.set(x, "supportedProtocols", js.Array(value :_*))
+          inline def setSupportedProtocolsVarargs(value: Identifier*): Self = StObject.set(x, "supportedProtocols", js.Array(value :_*))
           
-          @scala.inline
-          def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
+          inline def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
+          inline def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
         }
       }
     }

@@ -18,26 +18,20 @@ trait GraphPattern
 }
 object GraphPattern {
   
-  @scala.inline
-  def apply(name: IriTerm, patterns: js.Array[Pattern]): GraphPattern = {
+  inline def apply(name: IriTerm, patterns: js.Array[Pattern]): GraphPattern = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[GraphPattern]
   }
   
-  @scala.inline
-  implicit class GraphPatternMutableBuilder[Self <: GraphPattern] (val x: Self) extends AnyVal {
+  extension [Self <: GraphPattern](x: Self) {
     
-    @scala.inline
-    def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: graph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: graph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

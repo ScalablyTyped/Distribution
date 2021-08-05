@@ -11,16 +11,13 @@ trait PickImplminLength extends StObject {
 }
 object PickImplminLength {
   
-  @scala.inline
-  def apply(minLength: String): PickImplminLength = {
+  inline def apply(minLength: String): PickImplminLength = {
     val __obj = js.Dynamic.literal(minLength = minLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplminLength]
   }
   
-  @scala.inline
-  implicit class PickImplminLengthMutableBuilder[Self <: PickImplminLength] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplminLength](x: Self) {
     
-    @scala.inline
-    def setMinLength(value: String): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: String): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
   }
 }

@@ -25,32 +25,28 @@ object ChatMessageManager {
     * @return The message transport.
     */
   /* static member */
-  @scala.inline
-  def getTransportAsync(transportId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageTransport] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportAsync")(transportId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageTransport]]
+  inline def getTransportAsync(transportId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageTransport] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportAsync")(transportId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageTransport]]
   
   /**
     * Asynchronously gets the chat message transports available on the device.
     * @return An asynchronous operation that returns a list of transports on successful completion.
     */
   /* static member */
-  @scala.inline
-  def getTransportsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def getTransportsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
   
   /**
     * Asynchronously registers the app as a ChatMessageTransport in order to post messages to the ChatMessageStore .
     * @return The transport ID for the newly registered ChatMessageTransport .
     */
   /* static member */
-  @scala.inline
-  def registerTransportAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTransportAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+  inline def registerTransportAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTransportAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
   
   /**
     * Returns the SMS messaging store for the phone.
     * @return An asynchronous operation that returns a ChatMessageStore on successful completion.
     */
   /* static member */
-  @scala.inline
-  def requestStoreAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageStore]]
+  inline def requestStoreAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageStore]]
   
   /**
     * Shows the compose SMS dialog, pre-populated with data from the supplied ChatMessage object, allowing the user to send an SMS message.
@@ -58,11 +54,9 @@ object ChatMessageManager {
     * @return An asynchronous action.
     */
   /* static member */
-  @scala.inline
-  def showComposeSmsMessageAsync(message: typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessage): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showComposeSmsMessageAsync")(message.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def showComposeSmsMessageAsync(message: typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessage): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showComposeSmsMessageAsync")(message.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
   
   /** Launches the device's SMS settings app. */
   /* static member */
-  @scala.inline
-  def showSmsSettings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showSmsSettings")().asInstanceOf[Unit]
+  inline def showSmsSettings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showSmsSettings")().asInstanceOf[Unit]
 }

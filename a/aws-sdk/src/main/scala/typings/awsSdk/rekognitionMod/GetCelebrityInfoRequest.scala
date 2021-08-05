@@ -13,16 +13,13 @@ trait GetCelebrityInfoRequest extends StObject {
 }
 object GetCelebrityInfoRequest {
   
-  @scala.inline
-  def apply(Id: RekognitionUniqueId): GetCelebrityInfoRequest = {
+  inline def apply(Id: RekognitionUniqueId): GetCelebrityInfoRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCelebrityInfoRequest]
   }
   
-  @scala.inline
-  implicit class GetCelebrityInfoRequestMutableBuilder[Self <: GetCelebrityInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCelebrityInfoRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: RekognitionUniqueId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: RekognitionUniqueId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

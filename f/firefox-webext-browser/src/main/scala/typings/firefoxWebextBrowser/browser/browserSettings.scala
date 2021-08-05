@@ -21,11 +21,9 @@ object browserSettings {
   trait ContextMenuMouseEvent extends StObject
   object ContextMenuMouseEvent {
     
-    @scala.inline
-    def mousedown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mousedown = "mousedown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mousedown]
+    inline def mousedown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mousedown = "mousedown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mousedown]
     
-    @scala.inline
-    def mouseup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mouseup = "mouseup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mouseup]
+    inline def mouseup: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mouseup = "mouseup".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mouseup]
   }
   
   /* browserSettings types */
@@ -38,13 +36,10 @@ object browserSettings {
   trait ImageAnimationBehavior extends StObject
   object ImageAnimationBehavior {
     
-    @scala.inline
-    def none: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none = "none".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none]
+    inline def none: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none = "none".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.none]
     
-    @scala.inline
-    def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
+    inline def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
     
-    @scala.inline
-    def once: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.once = "once".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.once]
+    inline def once: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.once = "once".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.once]
   }
 }

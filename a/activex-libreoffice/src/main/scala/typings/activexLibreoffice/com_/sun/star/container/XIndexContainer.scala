@@ -25,8 +25,7 @@ trait XIndexContainer
 }
 object XIndexContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -44,13 +43,10 @@ object XIndexContainer {
     __obj.asInstanceOf[XIndexContainer]
   }
   
-  @scala.inline
-  implicit class XIndexContainerMutableBuilder[Self <: XIndexContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XIndexContainer](x: Self) {
     
-    @scala.inline
-    def setInsertByIndex(value: (Double, js.Any) => Unit): Self = StObject.set(x, "insertByIndex", js.Any.fromFunction2(value))
+    inline def setInsertByIndex(value: (Double, js.Any) => Unit): Self = StObject.set(x, "insertByIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
+    inline def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
   }
 }

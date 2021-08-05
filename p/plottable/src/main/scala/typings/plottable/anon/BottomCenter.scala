@@ -17,22 +17,17 @@ trait BottomCenter extends StObject {
 }
 object BottomCenter {
   
-  @scala.inline
-  def apply(): BottomCenter = {
+  inline def apply(): BottomCenter = {
     val __obj = js.Dynamic.literal(bottom = "bottom", center = "center", top = "top")
     __obj.asInstanceOf[BottomCenter]
   }
   
-  @scala.inline
-  implicit class BottomCenterMutableBuilder[Self <: BottomCenter] (val x: Self) extends AnyVal {
+  extension [Self <: BottomCenter](x: Self) {
     
-    @scala.inline
-    def setBottom(value: bottom): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: bottom): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenter(value: center): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: center): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: top): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: top): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

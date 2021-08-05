@@ -35,31 +35,23 @@ trait SchemaDicomStore extends StObject {
 }
 object SchemaDicomStore {
   
-  @scala.inline
-  def apply(): SchemaDicomStore = {
+  inline def apply(): SchemaDicomStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDicomStore]
   }
   
-  @scala.inline
-  implicit class SchemaDicomStoreMutableBuilder[Self <: SchemaDicomStore] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDicomStore](x: Self) {
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotificationConfig(value: SchemaNotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
+    inline def setNotificationConfig(value: SchemaNotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
+    inline def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
   }
 }

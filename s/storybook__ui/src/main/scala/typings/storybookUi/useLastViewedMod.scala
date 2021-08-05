@@ -12,6 +12,5 @@ object useLastViewedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useLastViewed(selection: Selection): GetLastViewed = ^.asInstanceOf[js.Dynamic].applyDynamic("useLastViewed")(selection.asInstanceOf[js.Any]).asInstanceOf[GetLastViewed]
+  inline def useLastViewed(selection: Selection): GetLastViewed = ^.asInstanceOf[js.Dynamic].applyDynamic("useLastViewed")(selection.asInstanceOf[js.Any]).asInstanceOf[GetLastViewed]
 }

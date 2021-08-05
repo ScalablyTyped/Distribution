@@ -65,67 +65,47 @@ trait ParamsResourceScoresListwindow
 }
 object ParamsResourceScoresListwindow {
   
-  @scala.inline
-  def apply(): ParamsResourceScoresListwindow = {
+  inline def apply(): ParamsResourceScoresListwindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceScoresListwindow]
   }
   
-  @scala.inline
-  implicit class ParamsResourceScoresListwindowMutableBuilder[Self <: ParamsResourceScoresListwindow] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceScoresListwindow](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+    inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
+    inline def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
+    inline def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setResultsAbove(value: Double): Self = StObject.set(x, "resultsAbove", value.asInstanceOf[js.Any])
+    inline def setResultsAbove(value: Double): Self = StObject.set(x, "resultsAbove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsAboveUndefined: Self = StObject.set(x, "resultsAbove", js.undefined)
+    inline def setResultsAboveUndefined: Self = StObject.set(x, "resultsAbove", js.undefined)
     
-    @scala.inline
-    def setReturnTopIfAbsent(value: Boolean): Self = StObject.set(x, "returnTopIfAbsent", value.asInstanceOf[js.Any])
+    inline def setReturnTopIfAbsent(value: Boolean): Self = StObject.set(x, "returnTopIfAbsent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnTopIfAbsentUndefined: Self = StObject.set(x, "returnTopIfAbsent", js.undefined)
+    inline def setReturnTopIfAbsentUndefined: Self = StObject.set(x, "returnTopIfAbsent", js.undefined)
     
-    @scala.inline
-    def setTimeSpan(value: String): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
+    inline def setTimeSpan(value: String): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
+    inline def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
   }
 }

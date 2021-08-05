@@ -90,8 +90,7 @@ trait GitQueryCommitsCriteria extends StObject {
 }
 object GitQueryCommitsCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $skip: Double,
     $top: Double,
     author: String,
@@ -113,58 +112,40 @@ object GitQueryCommitsCriteria {
     __obj.asInstanceOf[GitQueryCommitsCriteria]
   }
   
-  @scala.inline
-  implicit class GitQueryCommitsCriteriaMutableBuilder[Self <: GitQueryCommitsCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: GitQueryCommitsCriteria](x: Self) {
     
-    @scala.inline
-    def set$skip(value: Double): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
+    inline def set$skip(value: Double): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$top(value: Double): Self = StObject.set(x, "$top", value.asInstanceOf[js.Any])
+    inline def set$top(value: Double): Self = StObject.set(x, "$top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareVersion(value: GitVersionDescriptor): Self = StObject.set(x, "compareVersion", value.asInstanceOf[js.Any])
+    inline def setCompareVersion(value: GitVersionDescriptor): Self = StObject.set(x, "compareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDeletes(value: Boolean): Self = StObject.set(x, "excludeDeletes", value.asInstanceOf[js.Any])
+    inline def setExcludeDeletes(value: Boolean): Self = StObject.set(x, "excludeDeletes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromCommitId(value: String): Self = StObject.set(x, "fromCommitId", value.asInstanceOf[js.Any])
+    inline def setFromCommitId(value: String): Self = StObject.set(x, "fromCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+    inline def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryMode(value: GitHistoryMode): Self = StObject.set(x, "historyMode", value.asInstanceOf[js.Any])
+    inline def setHistoryMode(value: GitHistoryMode): Self = StObject.set(x, "historyMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
+    inline def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeWorkItems(value: Boolean): Self = StObject.set(x, "includeWorkItems", value.asInstanceOf[js.Any])
+    inline def setIncludeWorkItems(value: Boolean): Self = StObject.set(x, "includeWorkItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
+    inline def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemVersion(value: GitVersionDescriptor): Self = StObject.set(x, "itemVersion", value.asInstanceOf[js.Any])
+    inline def setItemVersion(value: GitVersionDescriptor): Self = StObject.set(x, "itemVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToCommitId(value: String): Self = StObject.set(x, "toCommitId", value.asInstanceOf[js.Any])
+    inline def setToCommitId(value: String): Self = StObject.set(x, "toCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+    inline def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

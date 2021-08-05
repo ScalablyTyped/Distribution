@@ -18,22 +18,17 @@ trait SetEffectivePropertyValueForNodeRequest extends StObject {
 }
 object SetEffectivePropertyValueForNodeRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId, propertyName: String, value: String): SetEffectivePropertyValueForNodeRequest = {
+  inline def apply(nodeId: NodeId, propertyName: String, value: String): SetEffectivePropertyValueForNodeRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetEffectivePropertyValueForNodeRequest]
   }
   
-  @scala.inline
-  implicit class SetEffectivePropertyValueForNodeRequestMutableBuilder[Self <: SetEffectivePropertyValueForNodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetEffectivePropertyValueForNodeRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

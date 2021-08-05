@@ -22,22 +22,17 @@ trait DeleteClusterRequest extends StObject {
 }
 object DeleteClusterRequest {
   
-  @scala.inline
-  def apply(ClusterArn: string): DeleteClusterRequest = {
+  inline def apply(ClusterArn: string): DeleteClusterRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClusterRequest]
   }
   
-  @scala.inline
-  implicit class DeleteClusterRequestMutableBuilder[Self <: DeleteClusterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteClusterRequest](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
   }
 }

@@ -46,55 +46,39 @@ trait DebugInfo extends StObject {
 }
 object DebugInfo {
   
-  @scala.inline
-  def apply(code: String, message: String): DebugInfo = {
+  inline def apply(code: String, message: String): DebugInfo = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugInfo]
   }
   
-  @scala.inline
-  implicit class DebugInfoMutableBuilder[Self <: DebugInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DebugInfo](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorLocation(value: String): Self = StObject.set(x, "errorLocation", value.asInstanceOf[js.Any])
+    inline def setErrorLocation(value: String): Self = StObject.set(x, "errorLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorLocationUndefined: Self = StObject.set(x, "errorLocation", js.undefined)
+    inline def setErrorLocationUndefined: Self = StObject.set(x, "errorLocation", js.undefined)
     
-    @scala.inline
-    def setFullStatements(value: js.Array[String]): Self = StObject.set(x, "fullStatements", value.asInstanceOf[js.Any])
+    inline def setFullStatements(value: js.Array[String]): Self = StObject.set(x, "fullStatements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullStatementsUndefined: Self = StObject.set(x, "fullStatements", js.undefined)
+    inline def setFullStatementsUndefined: Self = StObject.set(x, "fullStatements", js.undefined)
     
-    @scala.inline
-    def setFullStatementsVarargs(value: String*): Self = StObject.set(x, "fullStatements", js.Array(value :_*))
+    inline def setFullStatementsVarargs(value: String*): Self = StObject.set(x, "fullStatements", js.Array(value :_*))
     
-    @scala.inline
-    def setInnerError(value: DebugInfo | String): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
+    inline def setInnerError(value: DebugInfo | String): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerErrorUndefined: Self = StObject.set(x, "innerError", js.undefined)
+    inline def setInnerErrorUndefined: Self = StObject.set(x, "innerError", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatements(value: String): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: String): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+    inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
-    @scala.inline
-    def setSurroundingStatements(value: js.Array[String]): Self = StObject.set(x, "surroundingStatements", value.asInstanceOf[js.Any])
+    inline def setSurroundingStatements(value: js.Array[String]): Self = StObject.set(x, "surroundingStatements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurroundingStatementsUndefined: Self = StObject.set(x, "surroundingStatements", js.undefined)
+    inline def setSurroundingStatementsUndefined: Self = StObject.set(x, "surroundingStatements", js.undefined)
     
-    @scala.inline
-    def setSurroundingStatementsVarargs(value: String*): Self = StObject.set(x, "surroundingStatements", js.Array(value :_*))
+    inline def setSurroundingStatementsVarargs(value: String*): Self = StObject.set(x, "surroundingStatements", js.Array(value :_*))
   }
 }

@@ -13,25 +13,19 @@ trait OutlookUser
 }
 object OutlookUser {
   
-  @scala.inline
-  def apply(): OutlookUser = {
+  inline def apply(): OutlookUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutlookUser]
   }
   
-  @scala.inline
-  implicit class OutlookUserMutableBuilder[Self <: OutlookUser] (val x: Self) extends AnyVal {
+  extension [Self <: OutlookUser](x: Self) {
     
-    @scala.inline
-    def setMasterCategories(value: NullableOption[js.Array[OutlookCategory]]): Self = StObject.set(x, "masterCategories", value.asInstanceOf[js.Any])
+    inline def setMasterCategories(value: NullableOption[js.Array[OutlookCategory]]): Self = StObject.set(x, "masterCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterCategoriesNull: Self = StObject.set(x, "masterCategories", null)
+    inline def setMasterCategoriesNull: Self = StObject.set(x, "masterCategories", null)
     
-    @scala.inline
-    def setMasterCategoriesUndefined: Self = StObject.set(x, "masterCategories", js.undefined)
+    inline def setMasterCategoriesUndefined: Self = StObject.set(x, "masterCategories", js.undefined)
     
-    @scala.inline
-    def setMasterCategoriesVarargs(value: OutlookCategory*): Self = StObject.set(x, "masterCategories", js.Array(value :_*))
+    inline def setMasterCategoriesVarargs(value: OutlookCategory*): Self = StObject.set(x, "masterCategories", js.Array(value :_*))
   }
 }

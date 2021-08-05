@@ -83,8 +83,7 @@ trait Curve extends StObject {
 }
 object Curve {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (Double, Double) => js.Array[Double],
     get: Double => js.Array[Double],
     length: Double,
@@ -98,28 +97,20 @@ object Curve {
     __obj.asInstanceOf[Curve]
   }
   
-  @scala.inline
-  implicit class CurveMutableBuilder[Self <: Curve] (val x: Self) extends AnyVal {
+  extension [Self <: Curve](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, Double) => js.Array[Double]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGet(value: Double => js.Array[Double]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Double => js.Array[Double]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: () => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
+    inline def setSort(value: () => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
+    inline def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double => Double): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+    inline def setValue(value: Double => Double): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

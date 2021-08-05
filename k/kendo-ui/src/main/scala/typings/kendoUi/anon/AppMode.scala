@@ -24,8 +24,7 @@ trait AppMode extends StObject {
 }
 object AppMode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appMode: Boolean,
     browser: String,
     device: String,
@@ -39,31 +38,22 @@ object AppMode {
     __obj.asInstanceOf[AppMode]
   }
   
-  @scala.inline
-  implicit class AppModeMutableBuilder[Self <: AppMode] (val x: Self) extends AnyVal {
+  extension [Self <: AppMode](x: Self) {
     
-    @scala.inline
-    def setAppMode(value: Boolean): Self = StObject.set(x, "appMode", value.asInstanceOf[js.Any])
+    inline def setAppMode(value: Boolean): Self = StObject.set(x, "appMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatVersion(value: Double): Self = StObject.set(x, "flatVersion", value.asInstanceOf[js.Any])
+    inline def setFlatVersion(value: Double): Self = StObject.set(x, "flatVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
+    inline def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorVersion(value: String): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
+    inline def setMinorVersion(value: String): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablet(value: js.Any): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+    inline def setTablet(value: js.Any): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
   }
 }

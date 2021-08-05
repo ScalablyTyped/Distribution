@@ -12,25 +12,19 @@ trait MinLength extends StObject {
 }
 object MinLength {
   
-  @scala.inline
-  def apply(): MinLength = {
+  inline def apply(): MinLength = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinLength]
   }
   
-  @scala.inline
-  implicit class MinLengthMutableBuilder[Self <: MinLength] (val x: Self) extends AnyVal {
+  extension [Self <: MinLength](x: Self) {
     
-    @scala.inline
-    def setMinLength(value: String | Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: String | Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

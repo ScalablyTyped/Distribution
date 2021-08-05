@@ -103,8 +103,7 @@ object SwitchStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     switchKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
     expression: IExpressionSyntax,
@@ -114,6 +113,5 @@ object SwitchStatementSyntax {
   ): typings.typescriptServices.TypeScript.SwitchStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(switchKeyword.asInstanceOf[js.Any], openParenToken.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], closeParenToken.asInstanceOf[js.Any], openBraceToken.asInstanceOf[js.Any], closeBraceToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SwitchStatementSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(expression: IExpressionSyntax): typings.typescriptServices.TypeScript.SwitchStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SwitchStatementSyntax]
+  inline def create1(expression: IExpressionSyntax): typings.typescriptServices.TypeScript.SwitchStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.SwitchStatementSyntax]
 }

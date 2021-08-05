@@ -28,40 +28,29 @@ trait Account extends StObject {
 }
 object Account {
   
-  @scala.inline
-  def apply(): Account = {
+  inline def apply(): Account = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Account]
   }
   
-  @scala.inline
-  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+  extension [Self <: Account](x: Self) {
     
-    @scala.inline
-    def setApiKeyVersion(value: String): Self = StObject.set(x, "apiKeyVersion", value.asInstanceOf[js.Any])
+    inline def setApiKeyVersion(value: String): Self = StObject.set(x, "apiKeyVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiKeyVersionUndefined: Self = StObject.set(x, "apiKeyVersion", js.undefined)
+    inline def setApiKeyVersionUndefined: Self = StObject.set(x, "apiKeyVersion", js.undefined)
     
-    @scala.inline
-    def setCloudwatchRoleArn(value: String): Self = StObject.set(x, "cloudwatchRoleArn", value.asInstanceOf[js.Any])
+    inline def setCloudwatchRoleArn(value: String): Self = StObject.set(x, "cloudwatchRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatchRoleArnUndefined: Self = StObject.set(x, "cloudwatchRoleArn", js.undefined)
+    inline def setCloudwatchRoleArnUndefined: Self = StObject.set(x, "cloudwatchRoleArn", js.undefined)
     
-    @scala.inline
-    def setFeatures(value: ListOfString): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: ListOfString): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setThrottleSettings(value: ThrottleSettings): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
+    inline def setThrottleSettings(value: ThrottleSettings): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottleSettingsUndefined: Self = StObject.set(x, "throttleSettings", js.undefined)
+    inline def setThrottleSettingsUndefined: Self = StObject.set(x, "throttleSettings", js.undefined)
   }
 }

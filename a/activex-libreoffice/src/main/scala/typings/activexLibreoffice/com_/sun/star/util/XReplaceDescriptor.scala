@@ -24,8 +24,7 @@ trait XReplaceDescriptor
 }
 object XReplaceDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     ReplaceString: String,
     SearchString: String,
@@ -48,16 +47,12 @@ object XReplaceDescriptor {
     __obj.asInstanceOf[XReplaceDescriptor]
   }
   
-  @scala.inline
-  implicit class XReplaceDescriptorMutableBuilder[Self <: XReplaceDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: XReplaceDescriptor](x: Self) {
     
-    @scala.inline
-    def setGetReplaceString(value: () => String): Self = StObject.set(x, "getReplaceString", js.Any.fromFunction0(value))
+    inline def setGetReplaceString(value: () => String): Self = StObject.set(x, "getReplaceString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplaceString(value: String): Self = StObject.set(x, "ReplaceString", value.asInstanceOf[js.Any])
+    inline def setReplaceString(value: String): Self = StObject.set(x, "ReplaceString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetReplaceString(value: String => Unit): Self = StObject.set(x, "setReplaceString", js.Any.fromFunction1(value))
+    inline def setSetReplaceString(value: String => Unit): Self = StObject.set(x, "setReplaceString", js.Any.fromFunction1(value))
   }
 }

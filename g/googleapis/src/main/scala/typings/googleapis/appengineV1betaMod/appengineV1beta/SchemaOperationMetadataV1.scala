@@ -51,64 +51,45 @@ trait SchemaOperationMetadataV1 extends StObject {
 }
 object SchemaOperationMetadataV1 {
   
-  @scala.inline
-  def apply(): SchemaOperationMetadataV1 = {
+  inline def apply(): SchemaOperationMetadataV1 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperationMetadataV1]
   }
   
-  @scala.inline
-  implicit class SchemaOperationMetadataV1MutableBuilder[Self <: SchemaOperationMetadataV1] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperationMetadataV1](x: Self) {
     
-    @scala.inline
-    def setCreateVersionMetadata(value: SchemaCreateVersionMetadataV1): Self = StObject.set(x, "createVersionMetadata", value.asInstanceOf[js.Any])
+    inline def setCreateVersionMetadata(value: SchemaCreateVersionMetadataV1): Self = StObject.set(x, "createVersionMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateVersionMetadataUndefined: Self = StObject.set(x, "createVersionMetadata", js.undefined)
+    inline def setCreateVersionMetadataUndefined: Self = StObject.set(x, "createVersionMetadata", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setEphemeralMessage(value: String): Self = StObject.set(x, "ephemeralMessage", value.asInstanceOf[js.Any])
+    inline def setEphemeralMessage(value: String): Self = StObject.set(x, "ephemeralMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEphemeralMessageUndefined: Self = StObject.set(x, "ephemeralMessage", js.undefined)
+    inline def setEphemeralMessageUndefined: Self = StObject.set(x, "ephemeralMessage", js.undefined)
     
-    @scala.inline
-    def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
+    inline def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
+    inline def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def setWarning(value: js.Array[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: js.Array[String]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     
-    @scala.inline
-    def setWarningVarargs(value: String*): Self = StObject.set(x, "warning", js.Array(value :_*))
+    inline def setWarningVarargs(value: String*): Self = StObject.set(x, "warning", js.Array(value :_*))
   }
 }

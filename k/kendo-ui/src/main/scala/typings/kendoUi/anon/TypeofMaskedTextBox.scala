@@ -15,19 +15,15 @@ trait TypeofMaskedTextBox extends StObject {
 }
 object TypeofMaskedTextBox {
   
-  @scala.inline
-  def apply(extend: js.Object => MaskedTextBox, fn: MaskedTextBox): TypeofMaskedTextBox = {
+  inline def apply(extend: js.Object => MaskedTextBox, fn: MaskedTextBox): TypeofMaskedTextBox = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofMaskedTextBox]
   }
   
-  @scala.inline
-  implicit class TypeofMaskedTextBoxMutableBuilder[Self <: TypeofMaskedTextBox] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofMaskedTextBox](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => MaskedTextBox): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => MaskedTextBox): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: MaskedTextBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: MaskedTextBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

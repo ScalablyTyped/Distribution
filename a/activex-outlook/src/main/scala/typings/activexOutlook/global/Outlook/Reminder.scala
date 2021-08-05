@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Reminder")
 @js.native
-class Reminder protected ()
+/* private */ class Reminder ()
   extends StObject
      with typings.activexOutlook.Outlook.Reminder

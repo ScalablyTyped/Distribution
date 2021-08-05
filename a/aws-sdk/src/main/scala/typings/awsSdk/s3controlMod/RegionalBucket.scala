@@ -33,34 +33,25 @@ trait RegionalBucket extends StObject {
 }
 object RegionalBucket {
   
-  @scala.inline
-  def apply(Bucket: BucketName, CreationDate: CreationDate, PublicAccessBlockEnabled: PublicAccessBlockEnabled): RegionalBucket = {
+  inline def apply(Bucket: BucketName, CreationDate: CreationDate, PublicAccessBlockEnabled: PublicAccessBlockEnabled): RegionalBucket = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], PublicAccessBlockEnabled = PublicAccessBlockEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegionalBucket]
   }
   
-  @scala.inline
-  implicit class RegionalBucketMutableBuilder[Self <: RegionalBucket] (val x: Self) extends AnyVal {
+  extension [Self <: RegionalBucket](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketArn(value: S3RegionalBucketArn): Self = StObject.set(x, "BucketArn", value.asInstanceOf[js.Any])
+    inline def setBucketArn(value: S3RegionalBucketArn): Self = StObject.set(x, "BucketArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketArnUndefined: Self = StObject.set(x, "BucketArn", js.undefined)
+    inline def setBucketArnUndefined: Self = StObject.set(x, "BucketArn", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostId(value: NonEmptyMaxLength64String): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
+    inline def setOutpostId(value: NonEmptyMaxLength64String): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
+    inline def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
     
-    @scala.inline
-    def setPublicAccessBlockEnabled(value: PublicAccessBlockEnabled): Self = StObject.set(x, "PublicAccessBlockEnabled", value.asInstanceOf[js.Any])
+    inline def setPublicAccessBlockEnabled(value: PublicAccessBlockEnabled): Self = StObject.set(x, "PublicAccessBlockEnabled", value.asInstanceOf[js.Any])
   }
 }

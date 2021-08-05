@@ -11,16 +11,13 @@ trait ReturnedDetails extends StObject {
 }
 object ReturnedDetails {
   
-  @scala.inline
-  def apply(setting: js.Any): ReturnedDetails = {
+  inline def apply(setting: js.Any): ReturnedDetails = {
     val __obj = js.Dynamic.literal(setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnedDetails]
   }
   
-  @scala.inline
-  implicit class ReturnedDetailsMutableBuilder[Self <: ReturnedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnedDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

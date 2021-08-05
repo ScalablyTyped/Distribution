@@ -13,22 +13,17 @@ trait DataLookup extends StObject {
 }
 object DataLookup {
   
-  @scala.inline
-  def apply(data: js.Array[DataIndex], lookup: NumberDictionary[Boolean]): DataLookup = {
+  inline def apply(data: js.Array[DataIndex], lookup: NumberDictionary[Boolean]): DataLookup = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLookup]
   }
   
-  @scala.inline
-  implicit class DataLookupMutableBuilder[Self <: DataLookup] (val x: Self) extends AnyVal {
+  extension [Self <: DataLookup](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[DataIndex]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[DataIndex]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: DataIndex*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: DataIndex*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setLookup(value: NumberDictionary[Boolean]): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+    inline def setLookup(value: NumberDictionary[Boolean]): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
   }
 }

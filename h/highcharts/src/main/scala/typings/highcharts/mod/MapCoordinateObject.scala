@@ -21,22 +21,17 @@ trait MapCoordinateObject extends StObject {
 }
 object MapCoordinateObject {
   
-  @scala.inline
-  def apply(x: Double): MapCoordinateObject = {
+  inline def apply(x: Double): MapCoordinateObject = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = null)
     __obj.asInstanceOf[MapCoordinateObject]
   }
   
-  @scala.inline
-  implicit class MapCoordinateObjectMutableBuilder[Self <: MapCoordinateObject] (val x: Self) extends AnyVal {
+  extension [Self <: MapCoordinateObject](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYNull: Self = StObject.set(x, "y", null)
+    inline def setYNull: Self = StObject.set(x, "y", null)
   }
 }

@@ -25,33 +25,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uDitgital extends StObject
 object uDitgital {
   
-  @scala.inline
-  def B: typings.convertUnits.convertUnitsStrings.B = "B".asInstanceOf[typings.convertUnits.convertUnitsStrings.B]
+  inline def B: typings.convertUnits.convertUnitsStrings.B = "B".asInstanceOf[typings.convertUnits.convertUnitsStrings.B]
   
-  @scala.inline
-  def GB: typings.convertUnits.convertUnitsStrings.GB = "GB".asInstanceOf[typings.convertUnits.convertUnitsStrings.GB]
+  inline def GB: typings.convertUnits.convertUnitsStrings.GB = "GB".asInstanceOf[typings.convertUnits.convertUnitsStrings.GB]
   
-  @scala.inline
-  def Gb: Gb_ = "Gb".asInstanceOf[Gb_]
+  inline def Gb: Gb_ = "Gb".asInstanceOf[Gb_]
   
-  @scala.inline
-  def KB: typings.convertUnits.convertUnitsStrings.KB = "KB".asInstanceOf[typings.convertUnits.convertUnitsStrings.KB]
+  inline def KB: typings.convertUnits.convertUnitsStrings.KB = "KB".asInstanceOf[typings.convertUnits.convertUnitsStrings.KB]
   
-  @scala.inline
-  def Kb: Kb_ = "Kb".asInstanceOf[Kb_]
+  inline def Kb: Kb_ = "Kb".asInstanceOf[Kb_]
   
-  @scala.inline
-  def MB: typings.convertUnits.convertUnitsStrings.MB = "MB".asInstanceOf[typings.convertUnits.convertUnitsStrings.MB]
+  inline def MB: typings.convertUnits.convertUnitsStrings.MB = "MB".asInstanceOf[typings.convertUnits.convertUnitsStrings.MB]
   
-  @scala.inline
-  def Mb: Mb_ = "Mb".asInstanceOf[Mb_]
+  inline def Mb: Mb_ = "Mb".asInstanceOf[Mb_]
   
-  @scala.inline
-  def TB: typings.convertUnits.convertUnitsStrings.TB = "TB".asInstanceOf[typings.convertUnits.convertUnitsStrings.TB]
+  inline def TB: typings.convertUnits.convertUnitsStrings.TB = "TB".asInstanceOf[typings.convertUnits.convertUnitsStrings.TB]
   
-  @scala.inline
-  def Tb: Tb_ = "Tb".asInstanceOf[Tb_]
+  inline def Tb: Tb_ = "Tb".asInstanceOf[Tb_]
   
-  @scala.inline
-  def b: b_ = "b".asInstanceOf[b_]
+  inline def b: b_ = "b".asInstanceOf[b_]
 }

@@ -12,6 +12,5 @@ object moduleResolverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDefaultResolver(fileSystem: MinimalFS, resolveOptions: js.Any): ModuleResolver = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultResolver")(fileSystem.asInstanceOf[js.Any], resolveOptions.asInstanceOf[js.Any])).asInstanceOf[ModuleResolver]
+  inline def createDefaultResolver(fileSystem: MinimalFS, resolveOptions: js.Any): ModuleResolver = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultResolver")(fileSystem.asInstanceOf[js.Any], resolveOptions.asInstanceOf[js.Any])).asInstanceOf[ModuleResolver]
 }

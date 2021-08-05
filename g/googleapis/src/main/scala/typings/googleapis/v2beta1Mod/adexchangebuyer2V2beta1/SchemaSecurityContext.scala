@@ -16,22 +16,17 @@ trait SchemaSecurityContext extends StObject {
 }
 object SchemaSecurityContext {
   
-  @scala.inline
-  def apply(): SchemaSecurityContext = {
+  inline def apply(): SchemaSecurityContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityContext]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityContextMutableBuilder[Self <: SchemaSecurityContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityContext](x: Self) {
     
-    @scala.inline
-    def setSecurities(value: js.Array[String]): Self = StObject.set(x, "securities", value.asInstanceOf[js.Any])
+    inline def setSecurities(value: js.Array[String]): Self = StObject.set(x, "securities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecuritiesUndefined: Self = StObject.set(x, "securities", js.undefined)
+    inline def setSecuritiesUndefined: Self = StObject.set(x, "securities", js.undefined)
     
-    @scala.inline
-    def setSecuritiesVarargs(value: String*): Self = StObject.set(x, "securities", js.Array(value :_*))
+    inline def setSecuritiesVarargs(value: String*): Self = StObject.set(x, "securities", js.Array(value :_*))
   }
 }

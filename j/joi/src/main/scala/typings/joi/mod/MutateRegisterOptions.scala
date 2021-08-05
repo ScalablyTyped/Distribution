@@ -12,25 +12,19 @@ trait MutateRegisterOptions extends StObject {
 }
 object MutateRegisterOptions {
   
-  @scala.inline
-  def apply(): MutateRegisterOptions = {
+  inline def apply(): MutateRegisterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MutateRegisterOptions]
   }
   
-  @scala.inline
-  implicit class MutateRegisterOptionsMutableBuilder[Self <: MutateRegisterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MutateRegisterOptions](x: Self) {
     
-    @scala.inline
-    def setFamily(value: js.Any): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: js.Any): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

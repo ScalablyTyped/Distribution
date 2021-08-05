@@ -14,8 +14,7 @@ trait Popper extends StObject {
 }
 object Popper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     popper: js.Array[typings.std.Element | Window | VisualViewport],
     reference: js.Array[typings.std.Element | Window | VisualViewport]
   ): Popper = {
@@ -23,19 +22,14 @@ object Popper {
     __obj.asInstanceOf[Popper]
   }
   
-  @scala.inline
-  implicit class PopperMutableBuilder[Self <: Popper] (val x: Self) extends AnyVal {
+  extension [Self <: Popper](x: Self) {
     
-    @scala.inline
-    def setPopper(value: js.Array[typings.std.Element | Window | VisualViewport]): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+    inline def setPopper(value: js.Array[typings.std.Element | Window | VisualViewport]): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopperVarargs(value: (typings.std.Element | Window | VisualViewport)*): Self = StObject.set(x, "popper", js.Array(value :_*))
+    inline def setPopperVarargs(value: (typings.std.Element | Window | VisualViewport)*): Self = StObject.set(x, "popper", js.Array(value :_*))
     
-    @scala.inline
-    def setReference(value: js.Array[typings.std.Element | Window | VisualViewport]): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: js.Array[typings.std.Element | Window | VisualViewport]): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceVarargs(value: (typings.std.Element | Window | VisualViewport)*): Self = StObject.set(x, "reference", js.Array(value :_*))
+    inline def setReferenceVarargs(value: (typings.std.Element | Window | VisualViewport)*): Self = StObject.set(x, "reference", js.Array(value :_*))
   }
 }

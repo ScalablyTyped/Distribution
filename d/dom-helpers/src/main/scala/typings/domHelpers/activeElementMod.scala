@@ -12,8 +12,6 @@ object activeElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element | Null]
-  @scala.inline
-  def default(doc: Document): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(doc.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element | Null]
+  inline def default(doc: Document): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(doc.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
 }

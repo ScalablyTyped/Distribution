@@ -14,16 +14,13 @@ trait BucketOwnershipControlsRule extends StObject {
 }
 object BucketOwnershipControlsRule {
   
-  @scala.inline
-  def apply(objectOwnership: Input[String]): BucketOwnershipControlsRule = {
+  inline def apply(objectOwnership: Input[String]): BucketOwnershipControlsRule = {
     val __obj = js.Dynamic.literal(objectOwnership = objectOwnership.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketOwnershipControlsRule]
   }
   
-  @scala.inline
-  implicit class BucketOwnershipControlsRuleMutableBuilder[Self <: BucketOwnershipControlsRule] (val x: Self) extends AnyVal {
+  extension [Self <: BucketOwnershipControlsRule](x: Self) {
     
-    @scala.inline
-    def setObjectOwnership(value: Input[String]): Self = StObject.set(x, "objectOwnership", value.asInstanceOf[js.Any])
+    inline def setObjectOwnership(value: Input[String]): Self = StObject.set(x, "objectOwnership", value.asInstanceOf[js.Any])
   }
 }

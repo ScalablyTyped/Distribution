@@ -37,50 +37,36 @@ object alertMod {
   }
   object AlertProps {
     
-    @scala.inline
-    def apply(): AlertProps = {
+    inline def apply(): AlertProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlertProps]
     }
     
-    @scala.inline
-    implicit class AlertPropsMutableBuilder[Self <: AlertProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlertProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+      inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+      inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      @scala.inline
-      def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
+      inline def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
+      inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      @scala.inline
-      def setCloseLabel(value: String): Self = StObject.set(x, "closeLabel", value.asInstanceOf[js.Any])
+      inline def setCloseLabel(value: String): Self = StObject.set(x, "closeLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseLabelUndefined: Self = StObject.set(x, "closeLabel", js.undefined)
+      inline def setCloseLabelUndefined: Self = StObject.set(x, "closeLabel", js.undefined)
       
-      @scala.inline
-      def setDismissAfter(value: Double): Self = StObject.set(x, "dismissAfter", value.asInstanceOf[js.Any])
+      inline def setDismissAfter(value: Double): Self = StObject.set(x, "dismissAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissAfterUndefined: Self = StObject.set(x, "dismissAfter", js.undefined)
+      inline def setDismissAfterUndefined: Self = StObject.set(x, "dismissAfter", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: js.Function): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
+      inline def setOnDismiss(value: js.Function): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
     }
   }
 }

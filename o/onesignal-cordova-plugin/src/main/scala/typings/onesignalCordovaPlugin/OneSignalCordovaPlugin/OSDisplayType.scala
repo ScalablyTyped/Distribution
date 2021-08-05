@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OSDisplayType extends StObject
 object OSDisplayType {
   
-  @scala.inline
-  def InAppAlert: `1` = 1.asInstanceOf[`1`]
+  inline def InAppAlert: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Notification: `2` = 2.asInstanceOf[`2`]
+  inline def Notification: `2` = 2.asInstanceOf[`2`]
 }

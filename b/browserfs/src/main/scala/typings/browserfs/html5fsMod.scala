@@ -51,8 +51,7 @@ object html5fsMod {
     /**
       * Creates an HTML5FS instance with the given options.
       */
-    @scala.inline
-    def Create(opts: HTML5FSOptions, cb: BFSCallback[HTML5FS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: HTML5FSOptions, cb: BFSCallback[HTML5FS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/HTML5FS", "default.Name")
     @js.native
@@ -62,8 +61,7 @@ object html5fsMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/backend/HTML5FS", "HTML5FSFile")
@@ -87,7 +85,7 @@ object html5fsMod {
       contents: Buffer
     ) = this()
     
-    var _entry: js.Any = js.native
+    /* private */ var _entry: js.Any = js.native
     
     /* InferMemberOverrides */
     override def chmod(mode: Double, cb: BFSOneArgCallback): Unit = js.native
@@ -369,7 +367,7 @@ object html5fsMod {
     /* InferMemberOverrides */
     override def rmdirSync(p: String): Unit = js.native
     
-    var size: js.Any = js.native
+    /* private */ var size: js.Any = js.native
     
     /* InferMemberOverrides */
     override def stat(p: String, isLstat: Boolean, cb: BFSCallback[typings.browserfs.nodeFsStatsMod.default]): Unit = js.native
@@ -398,7 +396,7 @@ object html5fsMod {
     /* InferMemberOverrides */
     override def truncateSync(p: String, len: Double): Unit = js.native
     
-    var `type`: js.Any = js.native
+    /* private */ var `type`: js.Any = js.native
     
     /* InferMemberOverrides */
     override def unlink(p: String, cb: BFSOneArgCallback): Unit = js.native
@@ -426,26 +424,20 @@ object html5fsMod {
   }
   object HTML5FSOptions {
     
-    @scala.inline
-    def apply(): HTML5FSOptions = {
+    inline def apply(): HTML5FSOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HTML5FSOptions]
     }
     
-    @scala.inline
-    implicit class HTML5FSOptionsMutableBuilder[Self <: HTML5FSOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HTML5FSOptions](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

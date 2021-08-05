@@ -12,20 +12,16 @@ object anon {
   }
   object About {
     
-    @scala.inline
-    def apply(): About = {
+    inline def apply(): About = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[About]
     }
     
-    @scala.inline
-    implicit class AboutMutableBuilder[Self <: About] (val x: Self) extends AnyVal {
+    extension [Self <: About](x: Self) {
       
-      @scala.inline
-      def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
+      inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
+      inline def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
     }
   }
   
@@ -37,26 +33,20 @@ object anon {
   }
   object Parameter {
     
-    @scala.inline
-    def apply(): Parameter = {
+    inline def apply(): Parameter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Parameter]
     }
     
-    @scala.inline
-    implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+    extension [Self <: Parameter](x: Self) {
       
-      @scala.inline
-      def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+      inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+      inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
       
-      @scala.inline
-      def setPointer(value: String): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+      inline def setPointer(value: String): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerUndefined: Self = StObject.set(x, "pointer", js.undefined)
+      inline def setPointerUndefined: Self = StObject.set(x, "pointer", js.undefined)
     }
   }
 }

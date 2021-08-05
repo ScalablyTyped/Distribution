@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object joinMod {
   
-  @scala.inline
-  def apply(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("memory-fs/lib/join", JSImport.Namespace)
   @js.native

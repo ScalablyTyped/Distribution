@@ -14,28 +14,21 @@ trait BrowsersListResponse extends StObject {
 }
 object BrowsersListResponse {
   
-  @scala.inline
-  def apply(): BrowsersListResponse = {
+  inline def apply(): BrowsersListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrowsersListResponse]
   }
   
-  @scala.inline
-  implicit class BrowsersListResponseMutableBuilder[Self <: BrowsersListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BrowsersListResponse](x: Self) {
     
-    @scala.inline
-    def setBrowsers(value: js.Array[Browser]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+    inline def setBrowsers(value: js.Array[Browser]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
+    inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
     
-    @scala.inline
-    def setBrowsersVarargs(value: Browser*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+    inline def setBrowsersVarargs(value: Browser*): Self = StObject.set(x, "browsers", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ClusterDbRevisionsMessage extends StObject {
 }
 object ClusterDbRevisionsMessage {
   
-  @scala.inline
-  def apply(): ClusterDbRevisionsMessage = {
+  inline def apply(): ClusterDbRevisionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterDbRevisionsMessage]
   }
   
-  @scala.inline
-  implicit class ClusterDbRevisionsMessageMutableBuilder[Self <: ClusterDbRevisionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterDbRevisionsMessage](x: Self) {
     
-    @scala.inline
-    def setClusterDbRevisions(value: ClusterDbRevisionsList): Self = StObject.set(x, "ClusterDbRevisions", value.asInstanceOf[js.Any])
+    inline def setClusterDbRevisions(value: ClusterDbRevisionsList): Self = StObject.set(x, "ClusterDbRevisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterDbRevisionsUndefined: Self = StObject.set(x, "ClusterDbRevisions", js.undefined)
+    inline def setClusterDbRevisionsUndefined: Self = StObject.set(x, "ClusterDbRevisions", js.undefined)
     
-    @scala.inline
-    def setClusterDbRevisionsVarargs(value: ClusterDbRevision*): Self = StObject.set(x, "ClusterDbRevisions", js.Array(value :_*))
+    inline def setClusterDbRevisionsVarargs(value: ClusterDbRevision*): Self = StObject.set(x, "ClusterDbRevisions", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

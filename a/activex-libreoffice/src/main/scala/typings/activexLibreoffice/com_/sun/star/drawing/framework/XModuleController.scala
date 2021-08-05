@@ -17,16 +17,13 @@ trait XModuleController extends StObject {
 }
 object XModuleController {
   
-  @scala.inline
-  def apply(requestResource: String => Unit): XModuleController = {
+  inline def apply(requestResource: String => Unit): XModuleController = {
     val __obj = js.Dynamic.literal(requestResource = js.Any.fromFunction1(requestResource))
     __obj.asInstanceOf[XModuleController]
   }
   
-  @scala.inline
-  implicit class XModuleControllerMutableBuilder[Self <: XModuleController] (val x: Self) extends AnyVal {
+  extension [Self <: XModuleController](x: Self) {
     
-    @scala.inline
-    def setRequestResource(value: String => Unit): Self = StObject.set(x, "requestResource", js.Any.fromFunction1(value))
+    inline def setRequestResource(value: String => Unit): Self = StObject.set(x, "requestResource", js.Any.fromFunction1(value))
   }
 }

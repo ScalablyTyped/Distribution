@@ -93,67 +93,47 @@ trait SchemaGceClusterConfig extends StObject {
 }
 object SchemaGceClusterConfig {
   
-  @scala.inline
-  def apply(): SchemaGceClusterConfig = {
+  inline def apply(): SchemaGceClusterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGceClusterConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGceClusterConfigMutableBuilder[Self <: SchemaGceClusterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGceClusterConfig](x: Self) {
     
-    @scala.inline
-    def setInternalIpOnly(value: Boolean): Self = StObject.set(x, "internalIpOnly", value.asInstanceOf[js.Any])
+    inline def setInternalIpOnly(value: Boolean): Self = StObject.set(x, "internalIpOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalIpOnlyUndefined: Self = StObject.set(x, "internalIpOnly", js.undefined)
+    inline def setInternalIpOnlyUndefined: Self = StObject.set(x, "internalIpOnly", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
+    inline def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
+    inline def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountScopes(value: js.Array[String]): Self = StObject.set(x, "serviceAccountScopes", value.asInstanceOf[js.Any])
+    inline def setServiceAccountScopes(value: js.Array[String]): Self = StObject.set(x, "serviceAccountScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountScopesUndefined: Self = StObject.set(x, "serviceAccountScopes", js.undefined)
+    inline def setServiceAccountScopesUndefined: Self = StObject.set(x, "serviceAccountScopes", js.undefined)
     
-    @scala.inline
-    def setServiceAccountScopesVarargs(value: String*): Self = StObject.set(x, "serviceAccountScopes", js.Array(value :_*))
+    inline def setServiceAccountScopesVarargs(value: String*): Self = StObject.set(x, "serviceAccountScopes", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setSubnetworkUri(value: String): Self = StObject.set(x, "subnetworkUri", value.asInstanceOf[js.Any])
+    inline def setSubnetworkUri(value: String): Self = StObject.set(x, "subnetworkUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUriUndefined: Self = StObject.set(x, "subnetworkUri", js.undefined)
+    inline def setSubnetworkUriUndefined: Self = StObject.set(x, "subnetworkUri", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setZoneUri(value: String): Self = StObject.set(x, "zoneUri", value.asInstanceOf[js.Any])
+    inline def setZoneUri(value: String): Self = StObject.set(x, "zoneUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUriUndefined: Self = StObject.set(x, "zoneUri", js.undefined)
+    inline def setZoneUriUndefined: Self = StObject.set(x, "zoneUri", js.undefined)
   }
 }

@@ -13,17 +13,14 @@ object anon {
   }
   object After {
     
-    @scala.inline
-    def apply(after: _empty): After = {
+    inline def apply(after: _empty): After = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
       __obj.asInstanceOf[After]
     }
     
-    @scala.inline
-    implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
+    extension [Self <: After](x: Self) {
       
-      @scala.inline
-      def setAfter(value: _empty): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: _empty): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,18 +35,15 @@ object anon {
   }
   object _empty {
     
-    @scala.inline
-    def apply(SlashAsterisk: (js.Any, js.Any, js.Function0[js.Any]) => js.Any): _empty = {
+    inline def apply(SlashAsterisk: (js.Any, js.Any, js.Function0[js.Any]) => js.Any): _empty = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("/*")(js.Any.fromFunction3(SlashAsterisk))
       __obj.asInstanceOf[_empty]
     }
     
-    @scala.inline
-    implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
+    extension [Self <: _empty](x: Self) {
       
-      @scala.inline
-      def setSlashAsterisk(value: (js.Any, js.Any, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "/*", js.Any.fromFunction3(value))
+      inline def setSlashAsterisk(value: (js.Any, js.Any, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "/*", js.Any.fromFunction3(value))
     }
   }
 }

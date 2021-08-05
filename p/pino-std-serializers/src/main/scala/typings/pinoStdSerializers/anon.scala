@@ -14,17 +14,14 @@ object anon {
   }
   object Req {
     
-    @scala.inline
-    def apply(req: SerializedRequest): Req = {
+    inline def apply(req: SerializedRequest): Req = {
       val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any])
       __obj.asInstanceOf[Req]
     }
     
-    @scala.inline
-    implicit class ReqMutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
+    extension [Self <: Req](x: Self) {
       
-      @scala.inline
-      def setReq(value: SerializedRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: SerializedRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,17 +31,14 @@ object anon {
   }
   object Res {
     
-    @scala.inline
-    def apply(res: SerializedResponse): Res = {
+    inline def apply(res: SerializedResponse): Res = {
       val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
       __obj.asInstanceOf[Res]
     }
     
-    @scala.inline
-    implicit class ResMutableBuilder[Self <: Res] (val x: Self) extends AnyVal {
+    extension [Self <: Res](x: Self) {
       
-      @scala.inline
-      def setRes(value: SerializedResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: SerializedResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }
   }
 }

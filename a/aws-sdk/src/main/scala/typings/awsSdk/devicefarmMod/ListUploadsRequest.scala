@@ -23,28 +23,21 @@ trait ListUploadsRequest extends StObject {
 }
 object ListUploadsRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): ListUploadsRequest = {
+  inline def apply(arn: AmazonResourceName): ListUploadsRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUploadsRequest]
   }
   
-  @scala.inline
-  implicit class ListUploadsRequestMutableBuilder[Self <: ListUploadsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListUploadsRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setType(value: UploadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UploadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

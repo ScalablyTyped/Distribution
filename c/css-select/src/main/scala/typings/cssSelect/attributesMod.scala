@@ -24,14 +24,12 @@ object attributesMod {
         /* options */ InternalOptions[js.Any, js.Any], 
         CompiledQuery[js.Any]
       ] = js.native
-    @scala.inline
-    def any[Node, ElementNode /* <: Node */](
+    inline def any[Node, ElementNode /* <: Node */](
       next: CompiledQuery[ElementNode],
       data: AttributeSelector,
       options: InternalOptions[Node, ElementNode]
     ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(next.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
-    @scala.inline
-    def any_=(
+    inline def any_=(
       x: js.Function3[
           /* next */ CompiledQuery[js.Any], 
           /* data */ AttributeSelector, 
@@ -48,14 +46,12 @@ object attributesMod {
         /* options */ InternalOptions[js.Any, js.Any], 
         CompiledQuery[js.Any]
       ] = js.native
-    @scala.inline
-    def element[Node, ElementNode /* <: Node */](
+    inline def element[Node, ElementNode /* <: Node */](
       next: CompiledQuery[ElementNode],
       data: AttributeSelector,
       options: InternalOptions[Node, ElementNode]
     ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("element")(next.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
-    @scala.inline
-    def element_=(
+    inline def element_=(
       x: js.Function3[
           /* next */ CompiledQuery[js.Any], 
           /* data */ AttributeSelector, 
@@ -72,14 +68,12 @@ object attributesMod {
         /* options */ InternalOptions[js.Any, js.Any], 
         CompiledQuery[js.Any]
       ] = js.native
-    @scala.inline
-    def end[Node, ElementNode /* <: Node */](
+    inline def end[Node, ElementNode /* <: Node */](
       next: CompiledQuery[ElementNode],
       data: AttributeSelector,
       options: InternalOptions[Node, ElementNode]
     ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(next.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
-    @scala.inline
-    def end_=(
+    inline def end_=(
       x: js.Function3[
           /* next */ CompiledQuery[js.Any], 
           /* data */ AttributeSelector, 
@@ -97,14 +91,12 @@ object attributesMod {
         CompiledQuery[js.Any]
       ] = js.native
     
-    @scala.inline
-    def equals_[Node, ElementNode /* <: Node */](
+    inline def equals_[Node, ElementNode /* <: Node */](
       next: CompiledQuery[ElementNode],
       data: AttributeSelector,
       options: InternalOptions[Node, ElementNode]
     ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(next.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
-    @scala.inline
-    def equals__=(
+    inline def equals__=(
       x: js.Function3[
           /* next */ CompiledQuery[js.Any], 
           /* data */ AttributeSelector, 
@@ -121,14 +113,12 @@ object attributesMod {
         /* options */ InternalOptions[js.Any, js.Any], 
         CompiledQuery[js.Any]
       ] = js.native
-    @scala.inline
-    def exists[Node, ElementNode /* <: Node */](
+    inline def exists[Node, ElementNode /* <: Node */](
       next: CompiledQuery[ElementNode],
       data: AttributeSelector,
       options: InternalOptions[Node, ElementNode]
     ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(next.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
-    @scala.inline
-    def exists_=(
+    inline def exists_=(
       x: js.Function3[
           /* next */ CompiledQuery[js.Any], 
           /* data */ AttributeSelector, 
@@ -145,14 +135,12 @@ object attributesMod {
         /* options */ InternalOptions[js.Any, js.Any], 
         CompiledQuery[js.Any]
       ] = js.native
-    @scala.inline
-    def hyphen[Node, ElementNode /* <: Node */](
+    inline def hyphen[Node, ElementNode /* <: Node */](
       next: CompiledQuery[ElementNode],
       data: AttributeSelector,
       options: InternalOptions[Node, ElementNode]
     ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hyphen")(next.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
-    @scala.inline
-    def hyphen_=(
+    inline def hyphen_=(
       x: js.Function3[
           /* next */ CompiledQuery[js.Any], 
           /* data */ AttributeSelector, 
@@ -169,14 +157,12 @@ object attributesMod {
         /* options */ InternalOptions[js.Any, js.Any], 
         CompiledQuery[js.Any]
       ] = js.native
-    @scala.inline
-    def not[Node, ElementNode /* <: Node */](
+    inline def not[Node, ElementNode /* <: Node */](
       next: CompiledQuery[ElementNode],
       data: AttributeSelector,
       options: InternalOptions[Node, ElementNode]
     ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("not")(next.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
-    @scala.inline
-    def not_=(
+    inline def not_=(
       x: js.Function3[
           /* next */ CompiledQuery[js.Any], 
           /* data */ AttributeSelector, 
@@ -193,14 +179,12 @@ object attributesMod {
         /* options */ InternalOptions[js.Any, js.Any], 
         CompiledQuery[js.Any]
       ] = js.native
-    @scala.inline
-    def start[Node, ElementNode /* <: Node */](
+    inline def start[Node, ElementNode /* <: Node */](
       next: CompiledQuery[ElementNode],
       data: AttributeSelector,
       options: InternalOptions[Node, ElementNode]
     ): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(next.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
-    @scala.inline
-    def start_=(
+    inline def start_=(
       x: js.Function3[
           /* next */ CompiledQuery[js.Any], 
           /* data */ AttributeSelector, 

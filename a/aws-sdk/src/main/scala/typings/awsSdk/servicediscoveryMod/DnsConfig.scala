@@ -23,31 +23,23 @@ trait DnsConfig extends StObject {
 }
 object DnsConfig {
   
-  @scala.inline
-  def apply(DnsRecords: DnsRecordList): DnsConfig = {
+  inline def apply(DnsRecords: DnsRecordList): DnsConfig = {
     val __obj = js.Dynamic.literal(DnsRecords = DnsRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[DnsConfig]
   }
   
-  @scala.inline
-  implicit class DnsConfigMutableBuilder[Self <: DnsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DnsConfig](x: Self) {
     
-    @scala.inline
-    def setDnsRecords(value: DnsRecordList): Self = StObject.set(x, "DnsRecords", value.asInstanceOf[js.Any])
+    inline def setDnsRecords(value: DnsRecordList): Self = StObject.set(x, "DnsRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsRecordsVarargs(value: DnsRecord*): Self = StObject.set(x, "DnsRecords", js.Array(value :_*))
+    inline def setDnsRecordsVarargs(value: DnsRecord*): Self = StObject.set(x, "DnsRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setNamespaceId(value: ResourceId): Self = StObject.set(x, "NamespaceId", value.asInstanceOf[js.Any])
+    inline def setNamespaceId(value: ResourceId): Self = StObject.set(x, "NamespaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceIdUndefined: Self = StObject.set(x, "NamespaceId", js.undefined)
+    inline def setNamespaceIdUndefined: Self = StObject.set(x, "NamespaceId", js.undefined)
     
-    @scala.inline
-    def setRoutingPolicy(value: RoutingPolicy): Self = StObject.set(x, "RoutingPolicy", value.asInstanceOf[js.Any])
+    inline def setRoutingPolicy(value: RoutingPolicy): Self = StObject.set(x, "RoutingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingPolicyUndefined: Self = StObject.set(x, "RoutingPolicy", js.undefined)
+    inline def setRoutingPolicyUndefined: Self = StObject.set(x, "RoutingPolicy", js.undefined)
   }
 }

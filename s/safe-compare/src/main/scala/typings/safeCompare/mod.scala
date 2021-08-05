@@ -11,8 +11,7 @@ object mod {
     * against each other to get a constant time. This method does not short-cut
     * if the two string's length differs.
     */
-  @scala.inline
-  def apply(a: String, b: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: String, b: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("safe-compare", JSImport.Namespace)
   @js.native

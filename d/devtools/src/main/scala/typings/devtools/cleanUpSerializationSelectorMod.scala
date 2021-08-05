@@ -11,8 +11,6 @@ object cleanUpSerializationSelectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(elem: js.Array[Element], dataProperty: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(elem: Element, dataProperty: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(elem: js.Array[Element], dataProperty: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(elem: Element, dataProperty: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any], dataProperty.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

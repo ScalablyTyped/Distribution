@@ -18,28 +18,21 @@ trait DBSnapshotAttributesResult extends StObject {
 }
 object DBSnapshotAttributesResult {
   
-  @scala.inline
-  def apply(): DBSnapshotAttributesResult = {
+  inline def apply(): DBSnapshotAttributesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBSnapshotAttributesResult]
   }
   
-  @scala.inline
-  implicit class DBSnapshotAttributesResultMutableBuilder[Self <: DBSnapshotAttributesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DBSnapshotAttributesResult](x: Self) {
     
-    @scala.inline
-    def setDBSnapshotAttributes(value: DBSnapshotAttributeList): Self = StObject.set(x, "DBSnapshotAttributes", value.asInstanceOf[js.Any])
+    inline def setDBSnapshotAttributes(value: DBSnapshotAttributeList): Self = StObject.set(x, "DBSnapshotAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSnapshotAttributesUndefined: Self = StObject.set(x, "DBSnapshotAttributes", js.undefined)
+    inline def setDBSnapshotAttributesUndefined: Self = StObject.set(x, "DBSnapshotAttributes", js.undefined)
     
-    @scala.inline
-    def setDBSnapshotAttributesVarargs(value: DBSnapshotAttribute*): Self = StObject.set(x, "DBSnapshotAttributes", js.Array(value :_*))
+    inline def setDBSnapshotAttributesVarargs(value: DBSnapshotAttribute*): Self = StObject.set(x, "DBSnapshotAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setDBSnapshotIdentifier(value: String): Self = StObject.set(x, "DBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBSnapshotIdentifier(value: String): Self = StObject.set(x, "DBSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSnapshotIdentifierUndefined: Self = StObject.set(x, "DBSnapshotIdentifier", js.undefined)
+    inline def setDBSnapshotIdentifierUndefined: Self = StObject.set(x, "DBSnapshotIdentifier", js.undefined)
   }
 }

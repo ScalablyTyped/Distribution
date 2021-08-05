@@ -20,8 +20,7 @@ trait Solver extends StObject {
 }
 object Solver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEquation: Equation => Unit,
     equations: js.Array[Equation],
     iterations: Double,
@@ -33,28 +32,20 @@ object Solver {
     __obj.asInstanceOf[Solver]
   }
   
-  @scala.inline
-  implicit class SolverMutableBuilder[Self <: Solver] (val x: Self) extends AnyVal {
+  extension [Self <: Solver](x: Self) {
     
-    @scala.inline
-    def setAddEquation(value: Equation => Unit): Self = StObject.set(x, "addEquation", js.Any.fromFunction1(value))
+    inline def setAddEquation(value: Equation => Unit): Self = StObject.set(x, "addEquation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEquations(value: js.Array[Equation]): Self = StObject.set(x, "equations", value.asInstanceOf[js.Any])
+    inline def setEquations(value: js.Array[Equation]): Self = StObject.set(x, "equations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquationsVarargs(value: Equation*): Self = StObject.set(x, "equations", js.Array(value :_*))
+    inline def setEquationsVarargs(value: Equation*): Self = StObject.set(x, "equations", js.Array(value :_*))
     
-    @scala.inline
-    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAllEquations(value: () => Unit): Self = StObject.set(x, "removeAllEquations", js.Any.fromFunction0(value))
+    inline def setRemoveAllEquations(value: () => Unit): Self = StObject.set(x, "removeAllEquations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveEquation(value: Equation => Unit): Self = StObject.set(x, "removeEquation", js.Any.fromFunction1(value))
+    inline def setRemoveEquation(value: Equation => Unit): Self = StObject.set(x, "removeEquation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSolve(value: (Double, World) => Double): Self = StObject.set(x, "solve", js.Any.fromFunction2(value))
+    inline def setSolve(value: (Double, World) => Double): Self = StObject.set(x, "solve", js.Any.fromFunction2(value))
   }
 }

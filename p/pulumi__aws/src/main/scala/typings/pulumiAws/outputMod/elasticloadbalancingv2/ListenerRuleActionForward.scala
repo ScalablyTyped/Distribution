@@ -18,25 +18,19 @@ trait ListenerRuleActionForward extends StObject {
 }
 object ListenerRuleActionForward {
   
-  @scala.inline
-  def apply(targetGroups: js.Array[ListenerRuleActionForwardTargetGroup]): ListenerRuleActionForward = {
+  inline def apply(targetGroups: js.Array[ListenerRuleActionForwardTargetGroup]): ListenerRuleActionForward = {
     val __obj = js.Dynamic.literal(targetGroups = targetGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleActionForward]
   }
   
-  @scala.inline
-  implicit class ListenerRuleActionForwardMutableBuilder[Self <: ListenerRuleActionForward] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleActionForward](x: Self) {
     
-    @scala.inline
-    def setStickiness(value: ListenerRuleActionForwardStickiness): Self = StObject.set(x, "stickiness", value.asInstanceOf[js.Any])
+    inline def setStickiness(value: ListenerRuleActionForwardStickiness): Self = StObject.set(x, "stickiness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickinessUndefined: Self = StObject.set(x, "stickiness", js.undefined)
+    inline def setStickinessUndefined: Self = StObject.set(x, "stickiness", js.undefined)
     
-    @scala.inline
-    def setTargetGroups(value: js.Array[ListenerRuleActionForwardTargetGroup]): Self = StObject.set(x, "targetGroups", value.asInstanceOf[js.Any])
+    inline def setTargetGroups(value: js.Array[ListenerRuleActionForwardTargetGroup]): Self = StObject.set(x, "targetGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupsVarargs(value: ListenerRuleActionForwardTargetGroup*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
+    inline def setTargetGroupsVarargs(value: ListenerRuleActionForwardTargetGroup*): Self = StObject.set(x, "targetGroups", js.Array(value :_*))
   }
 }

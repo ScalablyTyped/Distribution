@@ -18,28 +18,21 @@ trait ConformancePackComplianceFilters extends StObject {
 }
 object ConformancePackComplianceFilters {
   
-  @scala.inline
-  def apply(): ConformancePackComplianceFilters = {
+  inline def apply(): ConformancePackComplianceFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConformancePackComplianceFilters]
   }
   
-  @scala.inline
-  implicit class ConformancePackComplianceFiltersMutableBuilder[Self <: ConformancePackComplianceFilters] (val x: Self) extends AnyVal {
+  extension [Self <: ConformancePackComplianceFilters](x: Self) {
     
-    @scala.inline
-    def setComplianceType(value: ConformancePackComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
+    inline def setComplianceType(value: ConformancePackComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
+    inline def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
-    @scala.inline
-    def setConfigRuleNames(value: ConformancePackConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
+    inline def setConfigRuleNames(value: ConformancePackConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
+    inline def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
     
-    @scala.inline
-    def setConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
+    inline def setConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
   }
 }

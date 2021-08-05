@@ -74,91 +74,63 @@ trait RenderConfig extends StObject {
 }
 object RenderConfig {
   
-  @scala.inline
-  def apply(): RenderConfig = {
+  inline def apply(): RenderConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderConfig]
   }
   
-  @scala.inline
-  implicit class RenderConfigMutableBuilder[Self <: RenderConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RenderConfig](x: Self) {
     
-    @scala.inline
-    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+    inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntialiasGL(value: Boolean): Self = StObject.set(x, "antialiasGL", value.asInstanceOf[js.Any])
+    inline def setAntialiasGL(value: Boolean): Self = StObject.set(x, "antialiasGL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntialiasGLUndefined: Self = StObject.set(x, "antialiasGL", js.undefined)
+    inline def setAntialiasGLUndefined: Self = StObject.set(x, "antialiasGL", js.undefined)
     
-    @scala.inline
-    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
+    inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
-    @scala.inline
-    def setBatchSize(value: integer): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: integer): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
-    @scala.inline
-    def setClearBeforeRender(value: Boolean): Self = StObject.set(x, "clearBeforeRender", value.asInstanceOf[js.Any])
+    inline def setClearBeforeRender(value: Boolean): Self = StObject.set(x, "clearBeforeRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearBeforeRenderUndefined: Self = StObject.set(x, "clearBeforeRender", js.undefined)
+    inline def setClearBeforeRenderUndefined: Self = StObject.set(x, "clearBeforeRender", js.undefined)
     
-    @scala.inline
-    def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
+    inline def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesynchronizedUndefined: Self = StObject.set(x, "desynchronized", js.undefined)
+    inline def setDesynchronizedUndefined: Self = StObject.set(x, "desynchronized", js.undefined)
     
-    @scala.inline
-    def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+    inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
+    inline def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
     
-    @scala.inline
-    def setMaxLights(value: integer): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
+    inline def setMaxLights(value: integer): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLightsUndefined: Self = StObject.set(x, "maxLights", js.undefined)
+    inline def setMaxLightsUndefined: Self = StObject.set(x, "maxLights", js.undefined)
     
-    @scala.inline
-    def setMipmapFilter(value: String): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
+    inline def setMipmapFilter(value: String): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMipmapFilterUndefined: Self = StObject.set(x, "mipmapFilter", js.undefined)
+    inline def setMipmapFilterUndefined: Self = StObject.set(x, "mipmapFilter", js.undefined)
     
-    @scala.inline
-    def setPixelArt(value: Boolean): Self = StObject.set(x, "pixelArt", value.asInstanceOf[js.Any])
+    inline def setPixelArt(value: Boolean): Self = StObject.set(x, "pixelArt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelArtUndefined: Self = StObject.set(x, "pixelArt", js.undefined)
+    inline def setPixelArtUndefined: Self = StObject.set(x, "pixelArt", js.undefined)
     
-    @scala.inline
-    def setPowerPreference(value: String): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
+    inline def setPowerPreference(value: String): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPreferenceUndefined: Self = StObject.set(x, "powerPreference", js.undefined)
+    inline def setPowerPreferenceUndefined: Self = StObject.set(x, "powerPreference", js.undefined)
     
-    @scala.inline
-    def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
+    inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
+    inline def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
     
-    @scala.inline
-    def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
+    inline def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundPixelsUndefined: Self = StObject.set(x, "roundPixels", js.undefined)
+    inline def setRoundPixelsUndefined: Self = StObject.set(x, "roundPixels", js.undefined)
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
   }
 }

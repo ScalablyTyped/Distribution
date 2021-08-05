@@ -16,25 +16,19 @@ trait UrlClassification extends StObject {
 }
 object UrlClassification {
   
-  @scala.inline
-  def apply(firstParty: UrlClassificationParty, thirdParty: UrlClassificationParty): UrlClassification = {
+  inline def apply(firstParty: UrlClassificationParty, thirdParty: UrlClassificationParty): UrlClassification = {
     val __obj = js.Dynamic.literal(firstParty = firstParty.asInstanceOf[js.Any], thirdParty = thirdParty.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlClassification]
   }
   
-  @scala.inline
-  implicit class UrlClassificationMutableBuilder[Self <: UrlClassification] (val x: Self) extends AnyVal {
+  extension [Self <: UrlClassification](x: Self) {
     
-    @scala.inline
-    def setFirstParty(value: UrlClassificationParty): Self = StObject.set(x, "firstParty", value.asInstanceOf[js.Any])
+    inline def setFirstParty(value: UrlClassificationParty): Self = StObject.set(x, "firstParty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPartyVarargs(value: UrlClassificationFlags*): Self = StObject.set(x, "firstParty", js.Array(value :_*))
+    inline def setFirstPartyVarargs(value: UrlClassificationFlags*): Self = StObject.set(x, "firstParty", js.Array(value :_*))
     
-    @scala.inline
-    def setThirdParty(value: UrlClassificationParty): Self = StObject.set(x, "thirdParty", value.asInstanceOf[js.Any])
+    inline def setThirdParty(value: UrlClassificationParty): Self = StObject.set(x, "thirdParty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyVarargs(value: UrlClassificationFlags*): Self = StObject.set(x, "thirdParty", js.Array(value :_*))
+    inline def setThirdPartyVarargs(value: UrlClassificationFlags*): Self = StObject.set(x, "thirdParty", js.Array(value :_*))
   }
 }

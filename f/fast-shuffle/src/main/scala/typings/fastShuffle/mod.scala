@@ -10,8 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](deck: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(deck.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def default[T](deck: js.Array[T], random: js.Function0[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(deck.asInstanceOf[js.Any], random.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def default[T](deck: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(deck.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def default[T](deck: js.Array[T], random: js.Function0[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(deck.asInstanceOf[js.Any], random.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

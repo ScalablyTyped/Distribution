@@ -41,43 +41,31 @@ trait SchemaMutation extends StObject {
 }
 object SchemaMutation {
   
-  @scala.inline
-  def apply(): SchemaMutation = {
+  inline def apply(): SchemaMutation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMutation]
   }
   
-  @scala.inline
-  implicit class SchemaMutationMutableBuilder[Self <: SchemaMutation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMutation](x: Self) {
     
-    @scala.inline
-    def setBaseVersion(value: String): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
+    inline def setBaseVersion(value: String): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVersionUndefined: Self = StObject.set(x, "baseVersion", js.undefined)
+    inline def setBaseVersionUndefined: Self = StObject.set(x, "baseVersion", js.undefined)
     
-    @scala.inline
-    def setDelete(value: SchemaKey): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: SchemaKey): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setInsert(value: SchemaEntity): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: SchemaEntity): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+    inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: SchemaEntity): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: SchemaEntity): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    @scala.inline
-    def setUpsert(value: SchemaEntity): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+    inline def setUpsert(value: SchemaEntity): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+    inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

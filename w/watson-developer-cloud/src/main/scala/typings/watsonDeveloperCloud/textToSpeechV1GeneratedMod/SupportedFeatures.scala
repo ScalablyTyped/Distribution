@@ -15,19 +15,15 @@ trait SupportedFeatures extends StObject {
 }
 object SupportedFeatures {
   
-  @scala.inline
-  def apply(custom_pronunciation: Boolean, voice_transformation: Boolean): SupportedFeatures = {
+  inline def apply(custom_pronunciation: Boolean, voice_transformation: Boolean): SupportedFeatures = {
     val __obj = js.Dynamic.literal(custom_pronunciation = custom_pronunciation.asInstanceOf[js.Any], voice_transformation = voice_transformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportedFeatures]
   }
   
-  @scala.inline
-  implicit class SupportedFeaturesMutableBuilder[Self <: SupportedFeatures] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedFeatures](x: Self) {
     
-    @scala.inline
-    def setCustom_pronunciation(value: Boolean): Self = StObject.set(x, "custom_pronunciation", value.asInstanceOf[js.Any])
+    inline def setCustom_pronunciation(value: Boolean): Self = StObject.set(x, "custom_pronunciation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoice_transformation(value: Boolean): Self = StObject.set(x, "voice_transformation", value.asInstanceOf[js.Any])
+    inline def setVoice_transformation(value: Boolean): Self = StObject.set(x, "voice_transformation", value.asInstanceOf[js.Any])
   }
 }

@@ -36,8 +36,7 @@ trait WordsSegmenter extends StObject {
 }
 object WordsSegmenter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getTokenAt: (String, Double) => WordSegment,
     getTokens: String => IVectorView[WordSegment],
     resolvedLanguage: String,
@@ -47,19 +46,14 @@ object WordsSegmenter {
     __obj.asInstanceOf[WordsSegmenter]
   }
   
-  @scala.inline
-  implicit class WordsSegmenterMutableBuilder[Self <: WordsSegmenter] (val x: Self) extends AnyVal {
+  extension [Self <: WordsSegmenter](x: Self) {
     
-    @scala.inline
-    def setGetTokenAt(value: (String, Double) => WordSegment): Self = StObject.set(x, "getTokenAt", js.Any.fromFunction2(value))
+    inline def setGetTokenAt(value: (String, Double) => WordSegment): Self = StObject.set(x, "getTokenAt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetTokens(value: String => IVectorView[WordSegment]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
+    inline def setGetTokens(value: String => IVectorView[WordSegment]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
+    inline def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenize(value: (String, Double, WordSegmentsTokenizingHandler) => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
+    inline def setTokenize(value: (String, Double, WordSegmentsTokenizingHandler) => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
   }
 }

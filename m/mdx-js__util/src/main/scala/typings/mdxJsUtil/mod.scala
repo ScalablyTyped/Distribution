@@ -14,30 +14,21 @@ object mod {
   @js.native
   val EMPTY_NEWLINE: String = js.native
   
-  @scala.inline
-  def getCommentContents(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCommentContents")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getCommentContents(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCommentContents")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isComment(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComment")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isComment(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComment")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isExport(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExport")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExport(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExport")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isExportDefault(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportDefault")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExportDefault(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportDefault")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isImport(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImport")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isImport(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImport")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isImportOrExport(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportOrExport")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isImportOrExport(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportOrExport")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def paramCase(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("paramCase")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def paramCase(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("paramCase")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def startsWithCapitalLetter(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("startsWithCapitalLetter")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def startsWithCapitalLetter(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("startsWithCapitalLetter")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def toTemplateLiteral(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTemplateLiteral")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTemplateLiteral(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTemplateLiteral")(text.asInstanceOf[js.Any]).asInstanceOf[String]
 }

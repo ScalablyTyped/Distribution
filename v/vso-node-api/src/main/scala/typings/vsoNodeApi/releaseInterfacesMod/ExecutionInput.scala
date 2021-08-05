@@ -10,16 +10,13 @@ trait ExecutionInput extends StObject {
 }
 object ExecutionInput {
   
-  @scala.inline
-  def apply(parallelExecutionType: ParallelExecutionTypes): ExecutionInput = {
+  inline def apply(parallelExecutionType: ParallelExecutionTypes): ExecutionInput = {
     val __obj = js.Dynamic.literal(parallelExecutionType = parallelExecutionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutionInput]
   }
   
-  @scala.inline
-  implicit class ExecutionInputMutableBuilder[Self <: ExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionInput](x: Self) {
     
-    @scala.inline
-    def setParallelExecutionType(value: ParallelExecutionTypes): Self = StObject.set(x, "parallelExecutionType", value.asInstanceOf[js.Any])
+    inline def setParallelExecutionType(value: ParallelExecutionTypes): Self = StObject.set(x, "parallelExecutionType", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCategoryLabelLevel extends StObject
 object XlCategoryLabelLevel {
   
-  @scala.inline
-  def xlCategoryLabelLevelAll: `-1` = -1.asInstanceOf[`-1`]
+  inline def xlCategoryLabelLevelAll: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def xlCategoryLabelLevelCustom: `-2` = -2.asInstanceOf[`-2`]
+  inline def xlCategoryLabelLevelCustom: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def xlCategoryLabelLevelNone: `-3` = -3.asInstanceOf[`-3`]
+  inline def xlCategoryLabelLevelNone: `-3` = -3.asInstanceOf[`-3`]
 }

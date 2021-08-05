@@ -21,34 +21,25 @@ trait ArrayOperator[Type] extends StObject {
 }
 object ArrayOperator {
   
-  @scala.inline
-  def apply[Type]($each: Type): ArrayOperator[Type] = {
+  inline def apply[Type]($each: Type): ArrayOperator[Type] = {
     val __obj = js.Dynamic.literal($each = $each.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayOperator[Type]]
   }
   
-  @scala.inline
-  implicit class ArrayOperatorMutableBuilder[Self <: ArrayOperator[?], Type] (val x: Self & ArrayOperator[Type]) extends AnyVal {
+  extension [Self <: ArrayOperator[?], Type](x: Self & ArrayOperator[Type]) {
     
-    @scala.inline
-    def set$each(value: Type): Self = StObject.set(x, "$each", value.asInstanceOf[js.Any])
+    inline def set$each(value: Type): Self = StObject.set(x, "$each", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$position(value: scala.Double): Self = StObject.set(x, "$position", value.asInstanceOf[js.Any])
+    inline def set$position(value: scala.Double): Self = StObject.set(x, "$position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$positionUndefined: Self = StObject.set(x, "$position", js.undefined)
+    inline def set$positionUndefined: Self = StObject.set(x, "$position", js.undefined)
     
-    @scala.inline
-    def set$slice(value: scala.Double): Self = StObject.set(x, "$slice", value.asInstanceOf[js.Any])
+    inline def set$slice(value: scala.Double): Self = StObject.set(x, "$slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$sliceUndefined: Self = StObject.set(x, "$slice", js.undefined)
+    inline def set$sliceUndefined: Self = StObject.set(x, "$slice", js.undefined)
     
-    @scala.inline
-    def set$sort(value: SortValues | (Record[String, SortValues])): Self = StObject.set(x, "$sort", value.asInstanceOf[js.Any])
+    inline def set$sort(value: SortValues | (Record[String, SortValues])): Self = StObject.set(x, "$sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$sortUndefined: Self = StObject.set(x, "$sort", js.undefined)
+    inline def set$sortUndefined: Self = StObject.set(x, "$sort", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait XRangeSelectionChangeListener
 }
 object XRangeSelectionChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     descriptorChanged: RangeSelectionEvent => Unit,
     disposing: EventObject => Unit,
@@ -32,10 +31,8 @@ object XRangeSelectionChangeListener {
     __obj.asInstanceOf[XRangeSelectionChangeListener]
   }
   
-  @scala.inline
-  implicit class XRangeSelectionChangeListenerMutableBuilder[Self <: XRangeSelectionChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XRangeSelectionChangeListener](x: Self) {
     
-    @scala.inline
-    def setDescriptorChanged(value: RangeSelectionEvent => Unit): Self = StObject.set(x, "descriptorChanged", js.Any.fromFunction1(value))
+    inline def setDescriptorChanged(value: RangeSelectionEvent => Unit): Self = StObject.set(x, "descriptorChanged", js.Any.fromFunction1(value))
   }
 }

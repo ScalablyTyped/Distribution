@@ -8,6 +8,5 @@ object azureKustoDataStrings {
   
   @js.native
   sealed trait KustoResultRow extends StObject
-  @scala.inline
-  def KustoResultRow: KustoResultRow = "KustoResultRow".asInstanceOf[KustoResultRow]
+  inline def KustoResultRow: KustoResultRow = "KustoResultRow".asInstanceOf[KustoResultRow]
 }

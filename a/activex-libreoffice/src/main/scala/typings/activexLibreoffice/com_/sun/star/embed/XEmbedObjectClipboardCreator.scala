@@ -35,8 +35,7 @@ trait XEmbedObjectClipboardCreator
 }
 object XEmbedObjectClipboardCreator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createInstanceInitFromClipboard: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo,
     queryInterface: `type` => js.Any,
@@ -46,10 +45,8 @@ object XEmbedObjectClipboardCreator {
     __obj.asInstanceOf[XEmbedObjectClipboardCreator]
   }
   
-  @scala.inline
-  implicit class XEmbedObjectClipboardCreatorMutableBuilder[Self <: XEmbedObjectClipboardCreator] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbedObjectClipboardCreator](x: Self) {
     
-    @scala.inline
-    def setCreateInstanceInitFromClipboard(value: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo): Self = StObject.set(x, "createInstanceInitFromClipboard", js.Any.fromFunction3(value))
+    inline def setCreateInstanceInitFromClipboard(value: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo): Self = StObject.set(x, "createInstanceInitFromClipboard", js.Any.fromFunction3(value))
   }
 }

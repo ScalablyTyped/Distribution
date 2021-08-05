@@ -57,11 +57,9 @@ object Program {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Program]
+  inline def deserializeBinary(bytes: Uint8Array): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Program]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: Program, reader: BinaryReader): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def deserializeBinaryFromReader(message: Program, reader: BinaryReader): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Program]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "Program.extensions")
   @js.native
@@ -70,17 +68,13 @@ object Program {
   @JSImport("libra-core/lib/@/generated/transaction_pb", "Program.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: Program, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: Program, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: Program): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: Program): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -92,8 +86,7 @@ object Program {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       argumentsList: js.Array[typings.libraCore.transactionPbMod.TransactionArgument.AsObject],
       code: Uint8Array | String,
       modulesList: js.Array[Uint8Array | String]
@@ -102,23 +95,17 @@ object Program {
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setArgumentsList(value: js.Array[typings.libraCore.transactionPbMod.TransactionArgument.AsObject]): Self = StObject.set(x, "argumentsList", value.asInstanceOf[js.Any])
+      inline def setArgumentsList(value: js.Array[typings.libraCore.transactionPbMod.TransactionArgument.AsObject]): Self = StObject.set(x, "argumentsList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsListVarargs(value: typings.libraCore.transactionPbMod.TransactionArgument.AsObject*): Self = StObject.set(x, "argumentsList", js.Array(value :_*))
+      inline def setArgumentsListVarargs(value: typings.libraCore.transactionPbMod.TransactionArgument.AsObject*): Self = StObject.set(x, "argumentsList", js.Array(value :_*))
       
-      @scala.inline
-      def setCode(value: Uint8Array | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Uint8Array | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesList(value: js.Array[Uint8Array | String]): Self = StObject.set(x, "modulesList", value.asInstanceOf[js.Any])
+      inline def setModulesList(value: js.Array[Uint8Array | String]): Self = StObject.set(x, "modulesList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesListVarargs(value: (Uint8Array | String)*): Self = StObject.set(x, "modulesList", js.Array(value :_*))
+      inline def setModulesListVarargs(value: (Uint8Array | String)*): Self = StObject.set(x, "modulesList", js.Array(value :_*))
     }
   }
 }

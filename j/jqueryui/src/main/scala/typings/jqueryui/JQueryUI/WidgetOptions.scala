@@ -15,31 +15,23 @@ trait WidgetOptions extends StObject {
 }
 object WidgetOptions {
   
-  @scala.inline
-  def apply(): WidgetOptions = {
+  inline def apply(): WidgetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WidgetOptions]
   }
   
-  @scala.inline
-  implicit class WidgetOptionsMutableBuilder[Self <: WidgetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetOptions](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setHide(value: js.Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: js.Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setShow(value: js.Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: js.Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait PDFViewerMessagesDialogsExportAsDialogLabels extends StObject {
 }
 object PDFViewerMessagesDialogsExportAsDialogLabels {
   
-  @scala.inline
-  def apply(): PDFViewerMessagesDialogsExportAsDialogLabels = {
+  inline def apply(): PDFViewerMessagesDialogsExportAsDialogLabels = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PDFViewerMessagesDialogsExportAsDialogLabels]
   }
   
-  @scala.inline
-  implicit class PDFViewerMessagesDialogsExportAsDialogLabelsMutableBuilder[Self <: PDFViewerMessagesDialogsExportAsDialogLabels] (val x: Self) extends AnyVal {
+  extension [Self <: PDFViewerMessagesDialogsExportAsDialogLabels](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setSaveAsType(value: String): Self = StObject.set(x, "saveAsType", value.asInstanceOf[js.Any])
+    inline def setSaveAsType(value: String): Self = StObject.set(x, "saveAsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveAsTypeUndefined: Self = StObject.set(x, "saveAsType", js.undefined)
+    inline def setSaveAsTypeUndefined: Self = StObject.set(x, "saveAsType", js.undefined)
   }
 }

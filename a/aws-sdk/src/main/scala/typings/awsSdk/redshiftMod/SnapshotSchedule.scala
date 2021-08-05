@@ -43,67 +43,47 @@ trait SnapshotSchedule extends StObject {
 }
 object SnapshotSchedule {
   
-  @scala.inline
-  def apply(): SnapshotSchedule = {
+  inline def apply(): SnapshotSchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotSchedule]
   }
   
-  @scala.inline
-  implicit class SnapshotScheduleMutableBuilder[Self <: SnapshotSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotSchedule](x: Self) {
     
-    @scala.inline
-    def setAssociatedClusterCount(value: IntegerOptional): Self = StObject.set(x, "AssociatedClusterCount", value.asInstanceOf[js.Any])
+    inline def setAssociatedClusterCount(value: IntegerOptional): Self = StObject.set(x, "AssociatedClusterCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedClusterCountUndefined: Self = StObject.set(x, "AssociatedClusterCount", js.undefined)
+    inline def setAssociatedClusterCountUndefined: Self = StObject.set(x, "AssociatedClusterCount", js.undefined)
     
-    @scala.inline
-    def setAssociatedClusters(value: AssociatedClusterList): Self = StObject.set(x, "AssociatedClusters", value.asInstanceOf[js.Any])
+    inline def setAssociatedClusters(value: AssociatedClusterList): Self = StObject.set(x, "AssociatedClusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedClustersUndefined: Self = StObject.set(x, "AssociatedClusters", js.undefined)
+    inline def setAssociatedClustersUndefined: Self = StObject.set(x, "AssociatedClusters", js.undefined)
     
-    @scala.inline
-    def setAssociatedClustersVarargs(value: ClusterAssociatedToSchedule*): Self = StObject.set(x, "AssociatedClusters", js.Array(value :_*))
+    inline def setAssociatedClustersVarargs(value: ClusterAssociatedToSchedule*): Self = StObject.set(x, "AssociatedClusters", js.Array(value :_*))
     
-    @scala.inline
-    def setNextInvocations(value: ScheduledSnapshotTimeList): Self = StObject.set(x, "NextInvocations", value.asInstanceOf[js.Any])
+    inline def setNextInvocations(value: ScheduledSnapshotTimeList): Self = StObject.set(x, "NextInvocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextInvocationsUndefined: Self = StObject.set(x, "NextInvocations", js.undefined)
+    inline def setNextInvocationsUndefined: Self = StObject.set(x, "NextInvocations", js.undefined)
     
-    @scala.inline
-    def setNextInvocationsVarargs(value: TStamp*): Self = StObject.set(x, "NextInvocations", js.Array(value :_*))
+    inline def setNextInvocationsVarargs(value: TStamp*): Self = StObject.set(x, "NextInvocations", js.Array(value :_*))
     
-    @scala.inline
-    def setScheduleDefinitions(value: ScheduleDefinitionList): Self = StObject.set(x, "ScheduleDefinitions", value.asInstanceOf[js.Any])
+    inline def setScheduleDefinitions(value: ScheduleDefinitionList): Self = StObject.set(x, "ScheduleDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleDefinitionsUndefined: Self = StObject.set(x, "ScheduleDefinitions", js.undefined)
+    inline def setScheduleDefinitionsUndefined: Self = StObject.set(x, "ScheduleDefinitions", js.undefined)
     
-    @scala.inline
-    def setScheduleDefinitionsVarargs(value: String*): Self = StObject.set(x, "ScheduleDefinitions", js.Array(value :_*))
+    inline def setScheduleDefinitionsVarargs(value: String*): Self = StObject.set(x, "ScheduleDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setScheduleDescription(value: String): Self = StObject.set(x, "ScheduleDescription", value.asInstanceOf[js.Any])
+    inline def setScheduleDescription(value: String): Self = StObject.set(x, "ScheduleDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleDescriptionUndefined: Self = StObject.set(x, "ScheduleDescription", js.undefined)
+    inline def setScheduleDescriptionUndefined: Self = StObject.set(x, "ScheduleDescription", js.undefined)
     
-    @scala.inline
-    def setScheduleIdentifier(value: String): Self = StObject.set(x, "ScheduleIdentifier", value.asInstanceOf[js.Any])
+    inline def setScheduleIdentifier(value: String): Self = StObject.set(x, "ScheduleIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleIdentifierUndefined: Self = StObject.set(x, "ScheduleIdentifier", js.undefined)
+    inline def setScheduleIdentifierUndefined: Self = StObject.set(x, "ScheduleIdentifier", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

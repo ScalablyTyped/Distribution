@@ -11,6 +11,5 @@ object wonkaOperatorOnStartMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def onStart[A](f: js.Function1[/* value */ A, Unit]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("onStart")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def onStart[A](f: js.Function1[/* value */ A, Unit]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("onStart")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

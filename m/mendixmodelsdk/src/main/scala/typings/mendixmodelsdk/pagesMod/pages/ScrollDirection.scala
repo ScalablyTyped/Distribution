@@ -21,13 +21,11 @@ object ScrollDirection {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollDirection.Horizontal")
   @js.native
   def Horizontal: ScrollDirection = js.native
-  @scala.inline
-  def Horizontal_=(x: ScrollDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
+  inline def Horizontal_=(x: ScrollDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ScrollDirection.Vertical")
   @js.native
   def Vertical: ScrollDirection = js.native
-  @scala.inline
-  def Vertical_=(x: ScrollDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
+  inline def Vertical_=(x: ScrollDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
 }

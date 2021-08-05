@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): typings.pumpify.mod.^ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.pumpify.mod.^]
-  @scala.inline
-  def apply(options: Options): typings.pumpify.mod.^ = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.pumpify.mod.^]
+  inline def apply(): typings.pumpify.mod.^ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.pumpify.mod.^]
+  inline def apply(options: Options): typings.pumpify.mod.^ = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.pumpify.mod.^]
   
   @JSImport("csv2json", JSImport.Namespace)
   @js.native
@@ -23,26 +21,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDynamicTyping(value: Boolean): Self = StObject.set(x, "dynamicTyping", value.asInstanceOf[js.Any])
+      inline def setDynamicTyping(value: Boolean): Self = StObject.set(x, "dynamicTyping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicTypingUndefined: Self = StObject.set(x, "dynamicTyping", js.undefined)
+      inline def setDynamicTypingUndefined: Self = StObject.set(x, "dynamicTyping", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
 }

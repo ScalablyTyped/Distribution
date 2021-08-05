@@ -18,25 +18,19 @@ trait DataCatalogSummary extends StObject {
 }
 object DataCatalogSummary {
   
-  @scala.inline
-  def apply(): DataCatalogSummary = {
+  inline def apply(): DataCatalogSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataCatalogSummary]
   }
   
-  @scala.inline
-  implicit class DataCatalogSummaryMutableBuilder[Self <: DataCatalogSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DataCatalogSummary](x: Self) {
     
-    @scala.inline
-    def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
+    inline def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogNameUndefined: Self = StObject.set(x, "CatalogName", js.undefined)
+    inline def setCatalogNameUndefined: Self = StObject.set(x, "CatalogName", js.undefined)
     
-    @scala.inline
-    def setType(value: DataCatalogType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DataCatalogType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

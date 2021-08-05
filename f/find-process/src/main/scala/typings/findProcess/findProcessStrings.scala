@@ -8,16 +8,13 @@ object findProcessStrings {
   
   @js.native
   sealed trait name extends StObject
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait pid extends StObject
-  @scala.inline
-  def pid: pid = "pid".asInstanceOf[pid]
+  inline def pid: pid = "pid".asInstanceOf[pid]
   
   @js.native
   sealed trait port extends StObject
-  @scala.inline
-  def port: port = "port".asInstanceOf[port]
+  inline def port: port = "port".asInstanceOf[port]
 }

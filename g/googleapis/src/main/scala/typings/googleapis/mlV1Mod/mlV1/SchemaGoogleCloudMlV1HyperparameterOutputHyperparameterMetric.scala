@@ -21,25 +21,19 @@ trait SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric extends StOb
 }
 object SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric = {
+  inline def apply(): SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetricMutableBuilder[Self <: SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudMlV1HyperparameterOutputHyperparameterMetric](x: Self) {
     
-    @scala.inline
-    def setObjectiveValue(value: Double): Self = StObject.set(x, "objectiveValue", value.asInstanceOf[js.Any])
+    inline def setObjectiveValue(value: Double): Self = StObject.set(x, "objectiveValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectiveValueUndefined: Self = StObject.set(x, "objectiveValue", js.undefined)
+    inline def setObjectiveValueUndefined: Self = StObject.set(x, "objectiveValue", js.undefined)
     
-    @scala.inline
-    def setTrainingStep(value: String): Self = StObject.set(x, "trainingStep", value.asInstanceOf[js.Any])
+    inline def setTrainingStep(value: String): Self = StObject.set(x, "trainingStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingStepUndefined: Self = StObject.set(x, "trainingStep", js.undefined)
+    inline def setTrainingStepUndefined: Self = StObject.set(x, "trainingStep", js.undefined)
   }
 }

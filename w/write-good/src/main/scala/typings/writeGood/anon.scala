@@ -14,8 +14,7 @@ object anon {
   }
   object Explanation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       explanation: String,
       fn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ js.Any
     ): Explanation = {
@@ -23,14 +22,11 @@ object anon {
       __obj.asInstanceOf[Explanation]
     }
     
-    @scala.inline
-    implicit class ExplanationMutableBuilder[Self <: Explanation] (val x: Self) extends AnyVal {
+    extension [Self <: Explanation](x: Self) {
       
-      @scala.inline
-      def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
+      inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFn(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ js.Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ js.Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     }
   }
 }

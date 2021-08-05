@@ -16,8 +16,7 @@ trait ShapeLayer
 }
 object ShapeLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hide: () => Unit,
     map: Map,
     options: ShapeLayerOptions,
@@ -28,13 +27,10 @@ object ShapeLayer {
     __obj.asInstanceOf[ShapeLayer]
   }
   
-  @scala.inline
-  implicit class ShapeLayerMutableBuilder[Self <: ShapeLayer] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeLayer](x: Self) {
     
-    @scala.inline
-    def setOptions(value: ShapeLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ShapeLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDataSource(value: () => Unit): Self = StObject.set(x, "setDataSource", js.Any.fromFunction0(value))
+    inline def setSetDataSource(value: () => Unit): Self = StObject.set(x, "setDataSource", js.Any.fromFunction0(value))
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsLayoutValue extends StObject
 object OptionsLayoutValue {
   
-  @scala.inline
-  def horizontal: typings.highcharts.highchartsStrings.horizontal = "horizontal".asInstanceOf[typings.highcharts.highchartsStrings.horizontal]
+  inline def horizontal: typings.highcharts.highchartsStrings.horizontal = "horizontal".asInstanceOf[typings.highcharts.highchartsStrings.horizontal]
   
-  @scala.inline
-  def proximate: typings.highcharts.highchartsStrings.proximate = "proximate".asInstanceOf[typings.highcharts.highchartsStrings.proximate]
+  inline def proximate: typings.highcharts.highchartsStrings.proximate = "proximate".asInstanceOf[typings.highcharts.highchartsStrings.proximate]
   
-  @scala.inline
-  def vertical: typings.highcharts.highchartsStrings.vertical = "vertical".asInstanceOf[typings.highcharts.highchartsStrings.vertical]
+  inline def vertical: typings.highcharts.highchartsStrings.vertical = "vertical".asInstanceOf[typings.highcharts.highchartsStrings.vertical]
 }

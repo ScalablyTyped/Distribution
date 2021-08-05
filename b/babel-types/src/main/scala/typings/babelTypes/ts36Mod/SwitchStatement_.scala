@@ -21,8 +21,7 @@ trait SwitchStatement_
 }
 object SwitchStatement_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cases: js.Array[SwitchCase_],
     discriminant: Expression,
     end: Double,
@@ -34,19 +33,14 @@ object SwitchStatement_ {
     __obj.asInstanceOf[SwitchStatement_]
   }
   
-  @scala.inline
-  implicit class SwitchStatement_MutableBuilder[Self <: SwitchStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchStatement_](x: Self) {
     
-    @scala.inline
-    def setCases(value: js.Array[SwitchCase_]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
+    inline def setCases(value: js.Array[SwitchCase_]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCasesVarargs(value: SwitchCase_ *): Self = StObject.set(x, "cases", js.Array(value :_*))
+    inline def setCasesVarargs(value: SwitchCase_ *): Self = StObject.set(x, "cases", js.Array(value :_*))
     
-    @scala.inline
-    def setDiscriminant(value: Expression): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
+    inline def setDiscriminant(value: Expression): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SwitchStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SwitchStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

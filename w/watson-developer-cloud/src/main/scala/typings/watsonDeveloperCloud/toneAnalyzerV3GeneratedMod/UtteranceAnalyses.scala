@@ -15,25 +15,19 @@ trait UtteranceAnalyses extends StObject {
 }
 object UtteranceAnalyses {
   
-  @scala.inline
-  def apply(utterances_tone: js.Array[UtteranceAnalysis]): UtteranceAnalyses = {
+  inline def apply(utterances_tone: js.Array[UtteranceAnalysis]): UtteranceAnalyses = {
     val __obj = js.Dynamic.literal(utterances_tone = utterances_tone.asInstanceOf[js.Any])
     __obj.asInstanceOf[UtteranceAnalyses]
   }
   
-  @scala.inline
-  implicit class UtteranceAnalysesMutableBuilder[Self <: UtteranceAnalyses] (val x: Self) extends AnyVal {
+  extension [Self <: UtteranceAnalyses](x: Self) {
     
-    @scala.inline
-    def setUtterances_tone(value: js.Array[UtteranceAnalysis]): Self = StObject.set(x, "utterances_tone", value.asInstanceOf[js.Any])
+    inline def setUtterances_tone(value: js.Array[UtteranceAnalysis]): Self = StObject.set(x, "utterances_tone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtterances_toneVarargs(value: UtteranceAnalysis*): Self = StObject.set(x, "utterances_tone", js.Array(value :_*))
+    inline def setUtterances_toneVarargs(value: UtteranceAnalysis*): Self = StObject.set(x, "utterances_tone", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

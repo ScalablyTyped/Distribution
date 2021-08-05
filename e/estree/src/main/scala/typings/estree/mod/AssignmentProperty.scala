@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object AssignmentProperty {
   
-  @scala.inline
-  def apply(computed: Boolean, key: Expression, method: Boolean, shorthand: Boolean, value: Pattern): AssignmentProperty = {
+  inline def apply(computed: Boolean, key: Expression, method: Boolean, shorthand: Boolean, value: Pattern): AssignmentProperty = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = "init", method = method.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Property")
     __obj.asInstanceOf[AssignmentProperty]
   }
   
-  @scala.inline
-  implicit class AssignmentPropertyMutableBuilder[Self <: AssignmentProperty] (val x: Self) extends AnyVal {
+  extension [Self <: AssignmentProperty](x: Self) {
     
-    @scala.inline
-    def setKind(value: init): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: init): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Pattern): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Pattern): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

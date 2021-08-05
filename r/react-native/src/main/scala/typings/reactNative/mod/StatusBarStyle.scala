@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StatusBarStyle extends StObject
 object StatusBarStyle {
   
-  @scala.inline
-  def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
+  inline def default: typings.reactNative.reactNativeStrings.default = "default".asInstanceOf[typings.reactNative.reactNativeStrings.default]
   
-  @scala.inline
-  def `dark-content`: typings.reactNative.reactNativeStrings.`dark-content` = "dark-content".asInstanceOf[typings.reactNative.reactNativeStrings.`dark-content`]
+  inline def `dark-content`: typings.reactNative.reactNativeStrings.`dark-content` = "dark-content".asInstanceOf[typings.reactNative.reactNativeStrings.`dark-content`]
   
-  @scala.inline
-  def `light-content`: typings.reactNative.reactNativeStrings.`light-content` = "light-content".asInstanceOf[typings.reactNative.reactNativeStrings.`light-content`]
+  inline def `light-content`: typings.reactNative.reactNativeStrings.`light-content` = "light-content".asInstanceOf[typings.reactNative.reactNativeStrings.`light-content`]
 }

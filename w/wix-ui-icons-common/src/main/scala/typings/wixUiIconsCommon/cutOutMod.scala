@@ -22,20 +22,16 @@ object cutOutMod extends Shortcut {
   }
   object CutOutProps {
     
-    @scala.inline
-    def apply(): CutOutProps = {
+    inline def apply(): CutOutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CutOutProps]
     }
     
-    @scala.inline
-    implicit class CutOutPropsMutableBuilder[Self <: CutOutProps] (val x: Self) extends AnyVal {
+    extension [Self <: CutOutProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

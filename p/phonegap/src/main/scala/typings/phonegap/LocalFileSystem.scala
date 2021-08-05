@@ -17,19 +17,15 @@ trait LocalFileSystem extends StObject {
 }
 object LocalFileSystem {
   
-  @scala.inline
-  def apply(PERSISTENT: Double, TEMPORARY: Double): LocalFileSystem = {
+  inline def apply(PERSISTENT: Double, TEMPORARY: Double): LocalFileSystem = {
     val __obj = js.Dynamic.literal(PERSISTENT = PERSISTENT.asInstanceOf[js.Any], TEMPORARY = TEMPORARY.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalFileSystem]
   }
   
-  @scala.inline
-  implicit class LocalFileSystemMutableBuilder[Self <: LocalFileSystem] (val x: Self) extends AnyVal {
+  extension [Self <: LocalFileSystem](x: Self) {
     
-    @scala.inline
-    def setPERSISTENT(value: Double): Self = StObject.set(x, "PERSISTENT", value.asInstanceOf[js.Any])
+    inline def setPERSISTENT(value: Double): Self = StObject.set(x, "PERSISTENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTEMPORARY(value: Double): Self = StObject.set(x, "TEMPORARY", value.asInstanceOf[js.Any])
+    inline def setTEMPORARY(value: Double): Self = StObject.set(x, "TEMPORARY", value.asInstanceOf[js.Any])
   }
 }

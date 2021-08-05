@@ -8,11 +8,11 @@ trait AST
   extends StObject
      with IASTSpan {
   
-  var _astID: js.Any
+  /* private */ var _astID: js.Any
   
-  var _postComments: js.Any
+  /* private */ var _postComments: js.Any
   
-  var _preComments: js.Any
+  /* private */ var _preComments: js.Any
   
   var _trailingTriviaWidth: Double
   
@@ -42,8 +42,7 @@ trait AST
 }
 object AST {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -69,55 +68,38 @@ object AST {
     __obj.asInstanceOf[AST]
   }
   
-  @scala.inline
-  implicit class ASTMutableBuilder[Self <: AST] (val x: Self) extends AnyVal {
+  extension [Self <: AST](x: Self) {
     
-    @scala.inline
-    def setFileName(value: () => String): Self = StObject.set(x, "fileName", js.Any.fromFunction0(value))
+    inline def setFileName(value: () => String): Self = StObject.set(x, "fileName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsExpression(value: () => Boolean): Self = StObject.set(x, "isExpression", js.Any.fromFunction0(value))
+    inline def setIsExpression(value: () => Boolean): Self = StObject.set(x, "isExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
+    inline def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: AST): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: AST): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostComments(value: () => js.Array[Comment]): Self = StObject.set(x, "postComments", js.Any.fromFunction0(value))
+    inline def setPostComments(value: () => js.Array[Comment]): Self = StObject.set(x, "postComments", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreComments(value: () => js.Array[Comment]): Self = StObject.set(x, "preComments", js.Any.fromFunction0(value))
+    inline def setPreComments(value: () => js.Array[Comment]): Self = StObject.set(x, "preComments", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPostComments(value: js.Array[Comment] => Unit): Self = StObject.set(x, "setPostComments", js.Any.fromFunction1(value))
+    inline def setSetPostComments(value: js.Array[Comment] => Unit): Self = StObject.set(x, "setPostComments", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPreComments(value: js.Array[Comment] => Unit): Self = StObject.set(x, "setPreComments", js.Any.fromFunction1(value))
+    inline def setSetPreComments(value: js.Array[Comment] => Unit): Self = StObject.set(x, "setPreComments", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStructuralEquals(value: (AST, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (AST, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSyntaxID(value: () => Double): Self = StObject.set(x, "syntaxID", js.Any.fromFunction0(value))
+    inline def setSyntaxID(value: () => Double): Self = StObject.set(x, "syntaxID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTrailingTriviaWidth(value: () => Double): Self = StObject.set(x, "trailingTriviaWidth", js.Any.fromFunction0(value))
+    inline def setTrailingTriviaWidth(value: () => Double): Self = StObject.set(x, "trailingTriviaWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
+    inline def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_astID(value: js.Any): Self = StObject.set(x, "_astID", value.asInstanceOf[js.Any])
+    inline def set_astID(value: js.Any): Self = StObject.set(x, "_astID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_postComments(value: js.Any): Self = StObject.set(x, "_postComments", value.asInstanceOf[js.Any])
+    inline def set_postComments(value: js.Any): Self = StObject.set(x, "_postComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_preComments(value: js.Any): Self = StObject.set(x, "_preComments", value.asInstanceOf[js.Any])
+    inline def set_preComments(value: js.Any): Self = StObject.set(x, "_preComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_trailingTriviaWidth(value: Double): Self = StObject.set(x, "_trailingTriviaWidth", value.asInstanceOf[js.Any])
+    inline def set_trailingTriviaWidth(value: Double): Self = StObject.set(x, "_trailingTriviaWidth", value.asInstanceOf[js.Any])
   }
 }

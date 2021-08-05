@@ -43,8 +43,7 @@ trait VideoContext extends StObject {
 }
 object VideoContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exitFullScreen: () => Unit,
     pause: () => Unit,
     play: () => Unit,
@@ -57,28 +56,20 @@ object VideoContext {
     __obj.asInstanceOf[VideoContext]
   }
   
-  @scala.inline
-  implicit class VideoContextMutableBuilder[Self <: VideoContext] (val x: Self) extends AnyVal {
+  extension [Self <: VideoContext](x: Self) {
     
-    @scala.inline
-    def setExitFullScreen(value: () => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction0(value))
+    inline def setExitFullScreen(value: () => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlaybackRate(value: () => Unit): Self = StObject.set(x, "playbackRate", js.Any.fromFunction0(value))
+    inline def setPlaybackRate(value: () => Unit): Self = StObject.set(x, "playbackRate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestFullScreen(value: () => Unit): Self = StObject.set(x, "requestFullScreen", js.Any.fromFunction0(value))
+    inline def setRequestFullScreen(value: () => Unit): Self = StObject.set(x, "requestFullScreen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
+    inline def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSendDanmu(value: () => Unit): Self = StObject.set(x, "sendDanmu", js.Any.fromFunction0(value))
+    inline def setSendDanmu(value: () => Unit): Self = StObject.set(x, "sendDanmu", js.Any.fromFunction0(value))
   }
 }

@@ -48,61 +48,43 @@ trait CrawlerMetrics extends StObject {
 }
 object CrawlerMetrics {
   
-  @scala.inline
-  def apply(): CrawlerMetrics = {
+  inline def apply(): CrawlerMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrawlerMetrics]
   }
   
-  @scala.inline
-  implicit class CrawlerMetricsMutableBuilder[Self <: CrawlerMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: CrawlerMetrics](x: Self) {
     
-    @scala.inline
-    def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
+    inline def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlerNameUndefined: Self = StObject.set(x, "CrawlerName", js.undefined)
+    inline def setCrawlerNameUndefined: Self = StObject.set(x, "CrawlerName", js.undefined)
     
-    @scala.inline
-    def setLastRuntimeSeconds(value: NonNegativeDouble): Self = StObject.set(x, "LastRuntimeSeconds", value.asInstanceOf[js.Any])
+    inline def setLastRuntimeSeconds(value: NonNegativeDouble): Self = StObject.set(x, "LastRuntimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRuntimeSecondsUndefined: Self = StObject.set(x, "LastRuntimeSeconds", js.undefined)
+    inline def setLastRuntimeSecondsUndefined: Self = StObject.set(x, "LastRuntimeSeconds", js.undefined)
     
-    @scala.inline
-    def setMedianRuntimeSeconds(value: NonNegativeDouble): Self = StObject.set(x, "MedianRuntimeSeconds", value.asInstanceOf[js.Any])
+    inline def setMedianRuntimeSeconds(value: NonNegativeDouble): Self = StObject.set(x, "MedianRuntimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianRuntimeSecondsUndefined: Self = StObject.set(x, "MedianRuntimeSeconds", js.undefined)
+    inline def setMedianRuntimeSecondsUndefined: Self = StObject.set(x, "MedianRuntimeSeconds", js.undefined)
     
-    @scala.inline
-    def setStillEstimating(value: Boolean): Self = StObject.set(x, "StillEstimating", value.asInstanceOf[js.Any])
+    inline def setStillEstimating(value: Boolean): Self = StObject.set(x, "StillEstimating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStillEstimatingUndefined: Self = StObject.set(x, "StillEstimating", js.undefined)
+    inline def setStillEstimatingUndefined: Self = StObject.set(x, "StillEstimating", js.undefined)
     
-    @scala.inline
-    def setTablesCreated(value: NonNegativeInteger): Self = StObject.set(x, "TablesCreated", value.asInstanceOf[js.Any])
+    inline def setTablesCreated(value: NonNegativeInteger): Self = StObject.set(x, "TablesCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesCreatedUndefined: Self = StObject.set(x, "TablesCreated", js.undefined)
+    inline def setTablesCreatedUndefined: Self = StObject.set(x, "TablesCreated", js.undefined)
     
-    @scala.inline
-    def setTablesDeleted(value: NonNegativeInteger): Self = StObject.set(x, "TablesDeleted", value.asInstanceOf[js.Any])
+    inline def setTablesDeleted(value: NonNegativeInteger): Self = StObject.set(x, "TablesDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesDeletedUndefined: Self = StObject.set(x, "TablesDeleted", js.undefined)
+    inline def setTablesDeletedUndefined: Self = StObject.set(x, "TablesDeleted", js.undefined)
     
-    @scala.inline
-    def setTablesUpdated(value: NonNegativeInteger): Self = StObject.set(x, "TablesUpdated", value.asInstanceOf[js.Any])
+    inline def setTablesUpdated(value: NonNegativeInteger): Self = StObject.set(x, "TablesUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesUpdatedUndefined: Self = StObject.set(x, "TablesUpdated", js.undefined)
+    inline def setTablesUpdatedUndefined: Self = StObject.set(x, "TablesUpdated", js.undefined)
     
-    @scala.inline
-    def setTimeLeftSeconds(value: NonNegativeDouble): Self = StObject.set(x, "TimeLeftSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeLeftSeconds(value: NonNegativeDouble): Self = StObject.set(x, "TimeLeftSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeLeftSecondsUndefined: Self = StObject.set(x, "TimeLeftSeconds", js.undefined)
+    inline def setTimeLeftSecondsUndefined: Self = StObject.set(x, "TimeLeftSeconds", js.undefined)
   }
 }

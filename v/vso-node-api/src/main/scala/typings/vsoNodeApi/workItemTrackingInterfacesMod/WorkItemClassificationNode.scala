@@ -46,8 +46,7 @@ trait WorkItemClassificationNode
 }
 object WorkItemClassificationNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     attributes: StringDictionary[js.Any],
     children: js.Array[WorkItemClassificationNode],
@@ -62,31 +61,22 @@ object WorkItemClassificationNode {
     __obj.asInstanceOf[WorkItemClassificationNode]
   }
   
-  @scala.inline
-  implicit class WorkItemClassificationNodeMutableBuilder[Self <: WorkItemClassificationNode] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemClassificationNode](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: js.Array[WorkItemClassificationNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[WorkItemClassificationNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: WorkItemClassificationNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: WorkItemClassificationNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
+    inline def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructureType(value: TreeNodeStructureType): Self = StObject.set(x, "structureType", value.asInstanceOf[js.Any])
+    inline def setStructureType(value: TreeNodeStructureType): Self = StObject.set(x, "structureType", value.asInstanceOf[js.Any])
   }
 }

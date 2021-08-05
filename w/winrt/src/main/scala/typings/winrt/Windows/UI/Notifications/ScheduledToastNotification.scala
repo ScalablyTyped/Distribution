@@ -11,8 +11,7 @@ trait ScheduledToastNotification
      with IScheduledToastNotification
 object ScheduledToastNotification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: XmlDocument,
     deliveryTime: Date,
     id: String,

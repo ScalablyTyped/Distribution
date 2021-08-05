@@ -77,6 +77,5 @@ object Listeners {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getListenerStore(target: js.Object): PickNativeObjectonoffonce = ^.asInstanceOf[js.Dynamic].applyDynamic("getListenerStore")(target.asInstanceOf[js.Any]).asInstanceOf[PickNativeObjectonoffonce]
+  inline def getListenerStore(target: js.Object): PickNativeObjectonoffonce = ^.asInstanceOf[js.Dynamic].applyDynamic("getListenerStore")(target.asInstanceOf[js.Any]).asInstanceOf[PickNativeObjectonoffonce]
 }

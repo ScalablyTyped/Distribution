@@ -38,8 +38,7 @@ object datastoreMod {
     @JSImport("googleapis/build/src/apis/datastore", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Datastore] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Datastore]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -58,8 +57,7 @@ object datastoreMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -82,8 +80,7 @@ object datastoreMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore
       ] = js.native
-    @scala.inline
-    def v1beta3_=(
+    inline def v1beta3_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -125,8 +122,7 @@ object datastoreMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -170,19 +166,13 @@ object datastoreMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def datastore(options: Options): Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(options.asInstanceOf[js.Any]).asInstanceOf[Datastore]
-  @scala.inline
-  def datastore(options: typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Options): typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore]
-  @scala.inline
-  def datastore(options: typings.googleapis.v1beta3Mod.datastoreV1beta3.Options): typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore]
+  inline def datastore(options: Options): Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(options.asInstanceOf[js.Any]).asInstanceOf[Datastore]
+  inline def datastore(options: typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Options): typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore]
+  inline def datastore(options: typings.googleapis.v1beta3Mod.datastoreV1beta3.Options): typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore]
   
-  @scala.inline
-  def datastore_v1(version: v1): Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(version.asInstanceOf[js.Any]).asInstanceOf[Datastore]
+  inline def datastore_v1(version: v1): Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(version.asInstanceOf[js.Any]).asInstanceOf[Datastore]
   
-  @scala.inline
-  def datastore_v1beta1(version: v1beta1): typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore]
+  inline def datastore_v1beta1(version: v1beta1): typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1.Datastore]
   
-  @scala.inline
-  def datastore_v1beta3(version: v1beta3): typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore]
+  inline def datastore_v1beta3(version: v1beta3): typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore = ^.asInstanceOf[js.Dynamic].applyDynamic("datastore")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta3Mod.datastoreV1beta3.Datastore]
 }

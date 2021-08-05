@@ -49,8 +49,7 @@ trait MediaCaptureSettings extends StObject {
 }
 object MediaCaptureSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audioDeviceId: String,
     audioProcessing: AudioProcessing,
     cameraSoundRequiredForRegion: Boolean,
@@ -69,46 +68,32 @@ object MediaCaptureSettings {
     __obj.asInstanceOf[MediaCaptureSettings]
   }
   
-  @scala.inline
-  implicit class MediaCaptureSettingsMutableBuilder[Self <: MediaCaptureSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MediaCaptureSettings](x: Self) {
     
-    @scala.inline
-    def setAudioDeviceId(value: String): Self = StObject.set(x, "audioDeviceId", value.asInstanceOf[js.Any])
+    inline def setAudioDeviceId(value: String): Self = StObject.set(x, "audioDeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioProcessing(value: AudioProcessing): Self = StObject.set(x, "audioProcessing", value.asInstanceOf[js.Any])
+    inline def setAudioProcessing(value: AudioProcessing): Self = StObject.set(x, "audioProcessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraSoundRequiredForRegion(value: Boolean): Self = StObject.set(x, "cameraSoundRequiredForRegion", value.asInstanceOf[js.Any])
+    inline def setCameraSoundRequiredForRegion(value: Boolean): Self = StObject.set(x, "cameraSoundRequiredForRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrentRecordAndPhotoSequenceSupported(value: Boolean): Self = StObject.set(x, "concurrentRecordAndPhotoSequenceSupported", value.asInstanceOf[js.Any])
+    inline def setConcurrentRecordAndPhotoSequenceSupported(value: Boolean): Self = StObject.set(x, "concurrentRecordAndPhotoSequenceSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrentRecordAndPhotoSupported(value: Boolean): Self = StObject.set(x, "concurrentRecordAndPhotoSupported", value.asInstanceOf[js.Any])
+    inline def setConcurrentRecordAndPhotoSupported(value: Boolean): Self = StObject.set(x, "concurrentRecordAndPhotoSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontal35mmEquivalentFocalLength(value: Double): Self = StObject.set(x, "horizontal35mmEquivalentFocalLength", value.asInstanceOf[js.Any])
+    inline def setHorizontal35mmEquivalentFocalLength(value: Double): Self = StObject.set(x, "horizontal35mmEquivalentFocalLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaCategory(value: MediaCategory): Self = StObject.set(x, "mediaCategory", value.asInstanceOf[js.Any])
+    inline def setMediaCategory(value: MediaCategory): Self = StObject.set(x, "mediaCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoCaptureSource(value: PhotoCaptureSource): Self = StObject.set(x, "photoCaptureSource", value.asInstanceOf[js.Any])
+    inline def setPhotoCaptureSource(value: PhotoCaptureSource): Self = StObject.set(x, "photoCaptureSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchOffsetDegrees(value: Double): Self = StObject.set(x, "pitchOffsetDegrees", value.asInstanceOf[js.Any])
+    inline def setPitchOffsetDegrees(value: Double): Self = StObject.set(x, "pitchOffsetDegrees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingCaptureMode(value: StreamingCaptureMode): Self = StObject.set(x, "streamingCaptureMode", value.asInstanceOf[js.Any])
+    inline def setStreamingCaptureMode(value: StreamingCaptureMode): Self = StObject.set(x, "streamingCaptureMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertical35mmEquivalentFocalLength(value: Double): Self = StObject.set(x, "vertical35mmEquivalentFocalLength", value.asInstanceOf[js.Any])
+    inline def setVertical35mmEquivalentFocalLength(value: Double): Self = StObject.set(x, "vertical35mmEquivalentFocalLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDeviceCharacteristic(value: VideoDeviceCharacteristic): Self = StObject.set(x, "videoDeviceCharacteristic", value.asInstanceOf[js.Any])
+    inline def setVideoDeviceCharacteristic(value: VideoDeviceCharacteristic): Self = StObject.set(x, "videoDeviceCharacteristic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDeviceId(value: String): Self = StObject.set(x, "videoDeviceId", value.asInstanceOf[js.Any])
+    inline def setVideoDeviceId(value: String): Self = StObject.set(x, "videoDeviceId", value.asInstanceOf[js.Any])
   }
 }

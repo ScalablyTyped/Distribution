@@ -13,16 +13,13 @@ trait UpdateAnomalyMonitorResponse extends StObject {
 }
 object UpdateAnomalyMonitorResponse {
   
-  @scala.inline
-  def apply(MonitorArn: GenericString): UpdateAnomalyMonitorResponse = {
+  inline def apply(MonitorArn: GenericString): UpdateAnomalyMonitorResponse = {
     val __obj = js.Dynamic.literal(MonitorArn = MonitorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAnomalyMonitorResponse]
   }
   
-  @scala.inline
-  implicit class UpdateAnomalyMonitorResponseMutableBuilder[Self <: UpdateAnomalyMonitorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAnomalyMonitorResponse](x: Self) {
     
-    @scala.inline
-    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
+    inline def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
   }
 }

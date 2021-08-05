@@ -11,8 +11,7 @@ trait ModelFetchOptions
      with Parseable
 object ModelFetchOptions {
   
-  @scala.inline
-  def apply(): ModelFetchOptions = {
+  inline def apply(): ModelFetchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelFetchOptions]
   }

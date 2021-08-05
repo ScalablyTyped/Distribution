@@ -29,31 +29,23 @@ trait TileMatrixSetProperties extends StObject {
 }
 object TileMatrixSetProperties {
   
-  @scala.inline
-  def apply(): TileMatrixSetProperties = {
+  inline def apply(): TileMatrixSetProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileMatrixSetProperties]
   }
   
-  @scala.inline
-  implicit class TileMatrixSetPropertiesMutableBuilder[Self <: TileMatrixSetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TileMatrixSetProperties](x: Self) {
     
-    @scala.inline
-    def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
+    inline def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullExtentUndefined: Self = StObject.set(x, "fullExtent", js.undefined)
+    inline def setFullExtentUndefined: Self = StObject.set(x, "fullExtent", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
+    inline def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
   }
 }

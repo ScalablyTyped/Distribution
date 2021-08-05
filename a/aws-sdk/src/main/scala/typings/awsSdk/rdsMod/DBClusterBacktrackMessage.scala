@@ -18,28 +18,21 @@ trait DBClusterBacktrackMessage extends StObject {
 }
 object DBClusterBacktrackMessage {
   
-  @scala.inline
-  def apply(): DBClusterBacktrackMessage = {
+  inline def apply(): DBClusterBacktrackMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterBacktrackMessage]
   }
   
-  @scala.inline
-  implicit class DBClusterBacktrackMessageMutableBuilder[Self <: DBClusterBacktrackMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterBacktrackMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterBacktracks(value: DBClusterBacktrackList): Self = StObject.set(x, "DBClusterBacktracks", value.asInstanceOf[js.Any])
+    inline def setDBClusterBacktracks(value: DBClusterBacktrackList): Self = StObject.set(x, "DBClusterBacktracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterBacktracksUndefined: Self = StObject.set(x, "DBClusterBacktracks", js.undefined)
+    inline def setDBClusterBacktracksUndefined: Self = StObject.set(x, "DBClusterBacktracks", js.undefined)
     
-    @scala.inline
-    def setDBClusterBacktracksVarargs(value: DBClusterBacktrack*): Self = StObject.set(x, "DBClusterBacktracks", js.Array(value :_*))
+    inline def setDBClusterBacktracksVarargs(value: DBClusterBacktrack*): Self = StObject.set(x, "DBClusterBacktracks", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

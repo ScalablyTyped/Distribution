@@ -58,8 +58,7 @@ object signatureMod {
   }
   object Signature {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Confirmed: Boolean,
       Domain: String,
       EmailAddress: String,
@@ -71,26 +70,19 @@ object signatureMod {
       __obj.asInstanceOf[Signature]
     }
     
-    @scala.inline
-    implicit class SignatureMutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
+    extension [Self <: Signature](x: Self) {
       
-      @scala.inline
-      def setConfirmed(value: Boolean): Self = StObject.set(x, "Confirmed", value.asInstanceOf[js.Any])
+      inline def setConfirmed(value: Boolean): Self = StObject.set(x, "Confirmed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+      inline def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyToEmailAddress(value: String): Self = StObject.set(x, "ReplyToEmailAddress", value.asInstanceOf[js.Any])
+      inline def setReplyToEmailAddress(value: String): Self = StObject.set(x, "ReplyToEmailAddress", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,8 +100,7 @@ object signatureMod {
   }
   object SignatureDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Confirmed: Boolean,
       DKIMHost: String,
       DKIMPendingHost: String,
@@ -137,20 +128,15 @@ object signatureMod {
       __obj.asInstanceOf[SignatureDetails]
     }
     
-    @scala.inline
-    implicit class SignatureDetailsMutableBuilder[Self <: SignatureDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureDetails](x: Self) {
       
-      @scala.inline
-      def setConfirmed(value: Boolean): Self = StObject.set(x, "Confirmed", value.asInstanceOf[js.Any])
+      inline def setConfirmed(value: Boolean): Self = StObject.set(x, "Confirmed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+      inline def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyToEmailAddress(value: String): Self = StObject.set(x, "ReplyToEmailAddress", value.asInstanceOf[js.Any])
+      inline def setReplyToEmailAddress(value: String): Self = StObject.set(x, "ReplyToEmailAddress", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,23 +148,18 @@ object signatureMod {
   }
   object Signatures {
     
-    @scala.inline
-    def apply(SenderSignatures: js.Array[Signature], TotalCount: Double): Signatures = {
+    inline def apply(SenderSignatures: js.Array[Signature], TotalCount: Double): Signatures = {
       val __obj = js.Dynamic.literal(SenderSignatures = SenderSignatures.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[Signatures]
     }
     
-    @scala.inline
-    implicit class SignaturesMutableBuilder[Self <: Signatures] (val x: Self) extends AnyVal {
+    extension [Self <: Signatures](x: Self) {
       
-      @scala.inline
-      def setSenderSignatures(value: js.Array[Signature]): Self = StObject.set(x, "SenderSignatures", value.asInstanceOf[js.Any])
+      inline def setSenderSignatures(value: js.Array[Signature]): Self = StObject.set(x, "SenderSignatures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderSignaturesVarargs(value: Signature*): Self = StObject.set(x, "SenderSignatures", js.Array(value :_*))
+      inline def setSenderSignaturesVarargs(value: Signature*): Self = StObject.set(x, "SenderSignatures", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
 }

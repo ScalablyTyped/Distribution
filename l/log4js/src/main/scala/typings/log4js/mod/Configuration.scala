@@ -22,43 +22,31 @@ trait Configuration extends StObject {
 }
 object Configuration {
   
-  @scala.inline
-  def apply(appenders: StringDictionary[Appender], categories: StringDictionary[Appenders]): Configuration = {
+  inline def apply(appenders: StringDictionary[Appender], categories: StringDictionary[Appenders]): Configuration = {
     val __obj = js.Dynamic.literal(appenders = appenders.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
   
-  @scala.inline
-  implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+  extension [Self <: Configuration](x: Self) {
     
-    @scala.inline
-    def setAppenders(value: StringDictionary[Appender]): Self = StObject.set(x, "appenders", value.asInstanceOf[js.Any])
+    inline def setAppenders(value: StringDictionary[Appender]): Self = StObject.set(x, "appenders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategories(value: StringDictionary[Appenders]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: StringDictionary[Appenders]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableClustering(value: Boolean): Self = StObject.set(x, "disableClustering", value.asInstanceOf[js.Any])
+    inline def setDisableClustering(value: Boolean): Self = StObject.set(x, "disableClustering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableClusteringUndefined: Self = StObject.set(x, "disableClustering", js.undefined)
+    inline def setDisableClusteringUndefined: Self = StObject.set(x, "disableClustering", js.undefined)
     
-    @scala.inline
-    def setLevels(value: Levels_): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: Levels_): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    @scala.inline
-    def setPm2(value: Boolean): Self = StObject.set(x, "pm2", value.asInstanceOf[js.Any])
+    inline def setPm2(value: Boolean): Self = StObject.set(x, "pm2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPm2InstanceVar(value: String): Self = StObject.set(x, "pm2InstanceVar", value.asInstanceOf[js.Any])
+    inline def setPm2InstanceVar(value: String): Self = StObject.set(x, "pm2InstanceVar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPm2InstanceVarUndefined: Self = StObject.set(x, "pm2InstanceVar", js.undefined)
+    inline def setPm2InstanceVarUndefined: Self = StObject.set(x, "pm2InstanceVar", js.undefined)
     
-    @scala.inline
-    def setPm2Undefined: Self = StObject.set(x, "pm2", js.undefined)
+    inline def setPm2Undefined: Self = StObject.set(x, "pm2", js.undefined)
   }
 }

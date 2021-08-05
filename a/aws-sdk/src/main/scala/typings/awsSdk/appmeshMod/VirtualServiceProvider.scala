@@ -18,25 +18,19 @@ trait VirtualServiceProvider extends StObject {
 }
 object VirtualServiceProvider {
   
-  @scala.inline
-  def apply(): VirtualServiceProvider = {
+  inline def apply(): VirtualServiceProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualServiceProvider]
   }
   
-  @scala.inline
-  implicit class VirtualServiceProviderMutableBuilder[Self <: VirtualServiceProvider] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualServiceProvider](x: Self) {
     
-    @scala.inline
-    def setVirtualNode(value: VirtualNodeServiceProvider): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
+    inline def setVirtualNode(value: VirtualNodeServiceProvider): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualNodeUndefined: Self = StObject.set(x, "virtualNode", js.undefined)
+    inline def setVirtualNodeUndefined: Self = StObject.set(x, "virtualNode", js.undefined)
     
-    @scala.inline
-    def setVirtualRouter(value: VirtualRouterServiceProvider): Self = StObject.set(x, "virtualRouter", value.asInstanceOf[js.Any])
+    inline def setVirtualRouter(value: VirtualRouterServiceProvider): Self = StObject.set(x, "virtualRouter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualRouterUndefined: Self = StObject.set(x, "virtualRouter", js.undefined)
+    inline def setVirtualRouterUndefined: Self = StObject.set(x, "virtualRouter", js.undefined)
   }
 }

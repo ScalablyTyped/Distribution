@@ -10,16 +10,13 @@ trait EnumValuesLinksOneHopDoesNotContain extends StObject {
 }
 object EnumValuesLinksOneHopDoesNotContain {
   
-  @scala.inline
-  def apply(enumValues: LinksOneHopDoesNotContain): EnumValuesLinksOneHopDoesNotContain = {
+  inline def apply(enumValues: LinksOneHopDoesNotContain): EnumValuesLinksOneHopDoesNotContain = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesLinksOneHopDoesNotContain]
   }
   
-  @scala.inline
-  implicit class EnumValuesLinksOneHopDoesNotContainMutableBuilder[Self <: EnumValuesLinksOneHopDoesNotContain] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesLinksOneHopDoesNotContain](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: LinksOneHopDoesNotContain): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: LinksOneHopDoesNotContain): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

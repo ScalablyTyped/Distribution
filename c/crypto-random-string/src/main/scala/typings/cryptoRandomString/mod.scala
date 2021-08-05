@@ -24,10 +24,8 @@ object mod {
   	//=> '2cf05d94db'
   	```
   	*/
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("crypto-random-string", JSImport.Namespace)
   @js.native
@@ -43,10 +41,8 @@ object mod {
   	//=> '2cf05d94db'
   	```
   	*/
-  @scala.inline
-  def async(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")().asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def async(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def async(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")().asInstanceOf[js.Promise[String]]
+  inline def async(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   trait BaseOptions extends StObject {
     
@@ -57,17 +53,14 @@ object mod {
   }
   object BaseOptions {
     
-    @scala.inline
-    def apply(length: Double): BaseOptions = {
+    inline def apply(length: Double): BaseOptions = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseOptions]
     }
     
-    @scala.inline
-    implicit class BaseOptionsMutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseOptions](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,20 +81,16 @@ object mod {
   }
   object CharactersOption {
     
-    @scala.inline
-    def apply(): CharactersOption = {
+    inline def apply(): CharactersOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CharactersOption]
     }
     
-    @scala.inline
-    implicit class CharactersOptionMutableBuilder[Self <: CharactersOption] (val x: Self) extends AnyVal {
+    extension [Self <: CharactersOption](x: Self) {
       
-      @scala.inline
-      def setCharacters(value: String): Self = StObject.set(x, "characters", value.asInstanceOf[js.Any])
+      inline def setCharacters(value: String): Self = StObject.set(x, "characters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharactersUndefined: Self = StObject.set(x, "characters", js.undefined)
+      inline def setCharactersUndefined: Self = StObject.set(x, "characters", js.undefined)
     }
   }
   
@@ -141,20 +130,16 @@ object mod {
   }
   object TypeOption {
     
-    @scala.inline
-    def apply(): TypeOption = {
+    inline def apply(): TypeOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypeOption]
     }
     
-    @scala.inline
-    implicit class TypeOptionMutableBuilder[Self <: TypeOption] (val x: Self) extends AnyVal {
+    extension [Self <: TypeOption](x: Self) {
       
-      @scala.inline
-      def setType(value: hex | base64 | `url-safe` | numeric | distinguishable | `ascii-printable` | alphanumeric): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: hex | base64 | `url-safe` | numeric | distinguishable | `ascii-printable` | alphanumeric): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

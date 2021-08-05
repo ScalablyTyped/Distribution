@@ -14,10 +14,7 @@ object esmSafeFindDOMNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Element | Text | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element | Text | Null]
-  @scala.inline
-  def default(componentOrElement: ComponentClass[js.Object, ComponentState]): Element | Text | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Element | Text | Null]
-  @scala.inline
-  def default(componentOrElement: Element): Element | Text | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Element | Text | Null]
+  inline def default(): Element | Text | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element | Text | Null]
+  inline def default(componentOrElement: ComponentClass[js.Object, ComponentState]): Element | Text | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Element | Text | Null]
+  inline def default(componentOrElement: Element): Element | Text | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Element | Text | Null]
 }

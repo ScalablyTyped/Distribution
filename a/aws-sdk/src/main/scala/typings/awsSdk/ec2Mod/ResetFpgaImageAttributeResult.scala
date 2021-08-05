@@ -13,19 +13,15 @@ trait ResetFpgaImageAttributeResult extends StObject {
 }
 object ResetFpgaImageAttributeResult {
   
-  @scala.inline
-  def apply(): ResetFpgaImageAttributeResult = {
+  inline def apply(): ResetFpgaImageAttributeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetFpgaImageAttributeResult]
   }
   
-  @scala.inline
-  implicit class ResetFpgaImageAttributeResultMutableBuilder[Self <: ResetFpgaImageAttributeResult] (val x: Self) extends AnyVal {
+  extension [Self <: ResetFpgaImageAttributeResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

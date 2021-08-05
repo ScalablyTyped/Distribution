@@ -22,20 +22,16 @@ object previewSmallMod extends Shortcut {
   }
   object PreviewSmallProps {
     
-    @scala.inline
-    def apply(): PreviewSmallProps = {
+    inline def apply(): PreviewSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreviewSmallProps]
     }
     
-    @scala.inline
-    implicit class PreviewSmallPropsMutableBuilder[Self <: PreviewSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

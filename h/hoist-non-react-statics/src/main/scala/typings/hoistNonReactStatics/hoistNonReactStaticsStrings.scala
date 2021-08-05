@@ -8,6 +8,5 @@ object hoistNonReactStaticsStrings {
   
   @js.native
   sealed trait NonReactStatics extends StObject
-  @scala.inline
-  def NonReactStatics: NonReactStatics = "NonReactStatics".asInstanceOf[NonReactStatics]
+  inline def NonReactStatics: NonReactStatics = "NonReactStatics".asInstanceOf[NonReactStatics]
 }

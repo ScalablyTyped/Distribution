@@ -16,26 +16,20 @@ object anon {
   }
   object Rect {
     
-    @scala.inline
-    def apply(rect: DOMRect): Rect = {
+    inline def apply(rect: DOMRect): Rect = {
       val __obj = js.Dynamic.literal(rect = rect.asInstanceOf[js.Any], ref = null)
       __obj.asInstanceOf[Rect]
     }
     
-    @scala.inline
-    implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
+    extension [Self <: Rect](x: Self) {
       
-      @scala.inline
-      def setRect(value: DOMRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+      inline def setRect(value: DOMRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
     }
   }
 }

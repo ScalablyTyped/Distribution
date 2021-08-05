@@ -13,16 +13,13 @@ trait DescribeLoadBalancerAttributesInput extends StObject {
 }
 object DescribeLoadBalancerAttributesInput {
   
-  @scala.inline
-  def apply(LoadBalancerArn: LoadBalancerArn): DescribeLoadBalancerAttributesInput = {
+  inline def apply(LoadBalancerArn: LoadBalancerArn): DescribeLoadBalancerAttributesInput = {
     val __obj = js.Dynamic.literal(LoadBalancerArn = LoadBalancerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLoadBalancerAttributesInput]
   }
   
-  @scala.inline
-  implicit class DescribeLoadBalancerAttributesInputMutableBuilder[Self <: DescribeLoadBalancerAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoadBalancerAttributesInput](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
   }
 }

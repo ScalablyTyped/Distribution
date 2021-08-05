@@ -58,73 +58,51 @@ trait ScheduleActionSettings extends StObject {
 }
 object ScheduleActionSettings {
   
-  @scala.inline
-  def apply(): ScheduleActionSettings = {
+  inline def apply(): ScheduleActionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class ScheduleActionSettingsMutableBuilder[Self <: ScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setHlsId3SegmentTaggingSettings(value: HlsId3SegmentTaggingScheduleActionSettings): Self = StObject.set(x, "HlsId3SegmentTaggingSettings", value.asInstanceOf[js.Any])
+    inline def setHlsId3SegmentTaggingSettings(value: HlsId3SegmentTaggingScheduleActionSettings): Self = StObject.set(x, "HlsId3SegmentTaggingSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsId3SegmentTaggingSettingsUndefined: Self = StObject.set(x, "HlsId3SegmentTaggingSettings", js.undefined)
+    inline def setHlsId3SegmentTaggingSettingsUndefined: Self = StObject.set(x, "HlsId3SegmentTaggingSettings", js.undefined)
     
-    @scala.inline
-    def setHlsTimedMetadataSettings(value: HlsTimedMetadataScheduleActionSettings): Self = StObject.set(x, "HlsTimedMetadataSettings", value.asInstanceOf[js.Any])
+    inline def setHlsTimedMetadataSettings(value: HlsTimedMetadataScheduleActionSettings): Self = StObject.set(x, "HlsTimedMetadataSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsTimedMetadataSettingsUndefined: Self = StObject.set(x, "HlsTimedMetadataSettings", js.undefined)
+    inline def setHlsTimedMetadataSettingsUndefined: Self = StObject.set(x, "HlsTimedMetadataSettings", js.undefined)
     
-    @scala.inline
-    def setInputPrepareSettings(value: InputPrepareScheduleActionSettings): Self = StObject.set(x, "InputPrepareSettings", value.asInstanceOf[js.Any])
+    inline def setInputPrepareSettings(value: InputPrepareScheduleActionSettings): Self = StObject.set(x, "InputPrepareSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPrepareSettingsUndefined: Self = StObject.set(x, "InputPrepareSettings", js.undefined)
+    inline def setInputPrepareSettingsUndefined: Self = StObject.set(x, "InputPrepareSettings", js.undefined)
     
-    @scala.inline
-    def setInputSwitchSettings(value: InputSwitchScheduleActionSettings): Self = StObject.set(x, "InputSwitchSettings", value.asInstanceOf[js.Any])
+    inline def setInputSwitchSettings(value: InputSwitchScheduleActionSettings): Self = StObject.set(x, "InputSwitchSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSwitchSettingsUndefined: Self = StObject.set(x, "InputSwitchSettings", js.undefined)
+    inline def setInputSwitchSettingsUndefined: Self = StObject.set(x, "InputSwitchSettings", js.undefined)
     
-    @scala.inline
-    def setPauseStateSettings(value: PauseStateScheduleActionSettings): Self = StObject.set(x, "PauseStateSettings", value.asInstanceOf[js.Any])
+    inline def setPauseStateSettings(value: PauseStateScheduleActionSettings): Self = StObject.set(x, "PauseStateSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPauseStateSettingsUndefined: Self = StObject.set(x, "PauseStateSettings", js.undefined)
+    inline def setPauseStateSettingsUndefined: Self = StObject.set(x, "PauseStateSettings", js.undefined)
     
-    @scala.inline
-    def setScte35ReturnToNetworkSettings(value: Scte35ReturnToNetworkScheduleActionSettings): Self = StObject.set(x, "Scte35ReturnToNetworkSettings", value.asInstanceOf[js.Any])
+    inline def setScte35ReturnToNetworkSettings(value: Scte35ReturnToNetworkScheduleActionSettings): Self = StObject.set(x, "Scte35ReturnToNetworkSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35ReturnToNetworkSettingsUndefined: Self = StObject.set(x, "Scte35ReturnToNetworkSettings", js.undefined)
+    inline def setScte35ReturnToNetworkSettingsUndefined: Self = StObject.set(x, "Scte35ReturnToNetworkSettings", js.undefined)
     
-    @scala.inline
-    def setScte35SpliceInsertSettings(value: Scte35SpliceInsertScheduleActionSettings): Self = StObject.set(x, "Scte35SpliceInsertSettings", value.asInstanceOf[js.Any])
+    inline def setScte35SpliceInsertSettings(value: Scte35SpliceInsertScheduleActionSettings): Self = StObject.set(x, "Scte35SpliceInsertSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35SpliceInsertSettingsUndefined: Self = StObject.set(x, "Scte35SpliceInsertSettings", js.undefined)
+    inline def setScte35SpliceInsertSettingsUndefined: Self = StObject.set(x, "Scte35SpliceInsertSettings", js.undefined)
     
-    @scala.inline
-    def setScte35TimeSignalSettings(value: Scte35TimeSignalScheduleActionSettings): Self = StObject.set(x, "Scte35TimeSignalSettings", value.asInstanceOf[js.Any])
+    inline def setScte35TimeSignalSettings(value: Scte35TimeSignalScheduleActionSettings): Self = StObject.set(x, "Scte35TimeSignalSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35TimeSignalSettingsUndefined: Self = StObject.set(x, "Scte35TimeSignalSettings", js.undefined)
+    inline def setScte35TimeSignalSettingsUndefined: Self = StObject.set(x, "Scte35TimeSignalSettings", js.undefined)
     
-    @scala.inline
-    def setStaticImageActivateSettings(value: StaticImageActivateScheduleActionSettings): Self = StObject.set(x, "StaticImageActivateSettings", value.asInstanceOf[js.Any])
+    inline def setStaticImageActivateSettings(value: StaticImageActivateScheduleActionSettings): Self = StObject.set(x, "StaticImageActivateSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticImageActivateSettingsUndefined: Self = StObject.set(x, "StaticImageActivateSettings", js.undefined)
+    inline def setStaticImageActivateSettingsUndefined: Self = StObject.set(x, "StaticImageActivateSettings", js.undefined)
     
-    @scala.inline
-    def setStaticImageDeactivateSettings(value: StaticImageDeactivateScheduleActionSettings): Self = StObject.set(x, "StaticImageDeactivateSettings", value.asInstanceOf[js.Any])
+    inline def setStaticImageDeactivateSettings(value: StaticImageDeactivateScheduleActionSettings): Self = StObject.set(x, "StaticImageDeactivateSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticImageDeactivateSettingsUndefined: Self = StObject.set(x, "StaticImageDeactivateSettings", js.undefined)
+    inline def setStaticImageDeactivateSettingsUndefined: Self = StObject.set(x, "StaticImageDeactivateSettings", js.undefined)
   }
 }

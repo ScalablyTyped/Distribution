@@ -18,16 +18,13 @@ trait ConstraintFactory extends StObject {
 }
 object ConstraintFactory {
   
-  @scala.inline
-  def apply(create: IConstraintDefinition => ConstraintType): ConstraintFactory = {
+  inline def apply(create: IConstraintDefinition => ConstraintType): ConstraintFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[ConstraintFactory]
   }
   
-  @scala.inline
-  implicit class ConstraintFactoryMutableBuilder[Self <: ConstraintFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ConstraintFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: IConstraintDefinition => ConstraintType): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: IConstraintDefinition => ConstraintType): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

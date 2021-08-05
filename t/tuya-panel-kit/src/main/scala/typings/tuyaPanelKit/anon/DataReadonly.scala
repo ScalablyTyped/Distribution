@@ -10,16 +10,13 @@ trait DataReadonly[Data] extends StObject {
 }
 object DataReadonly {
   
-  @scala.inline
-  def apply[Data](data: Data): DataReadonly[Data] = {
+  inline def apply[Data](data: Data): DataReadonly[Data] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataReadonly[Data]]
   }
   
-  @scala.inline
-  implicit class DataReadonlyMutableBuilder[Self <: DataReadonly[?], Data] (val x: Self & DataReadonly[Data]) extends AnyVal {
+  extension [Self <: DataReadonly[?], Data](x: Self & DataReadonly[Data]) {
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

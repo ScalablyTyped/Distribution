@@ -10,8 +10,7 @@ object pathMatchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function1[
+  inline def default(): js.Function1[
     /* path */ String, 
     js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[

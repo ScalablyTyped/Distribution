@@ -20,20 +20,16 @@ trait DeclareVariable_
 }
 object DeclareVariable_ {
   
-  @scala.inline
-  def apply(end: Double, id: Identifier_, loc: SourceLocation, start: Double): DeclareVariable_ = {
+  inline def apply(end: Double, id: Identifier_, loc: SourceLocation, start: Double): DeclareVariable_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclareVariable")
     __obj.asInstanceOf[DeclareVariable_]
   }
   
-  @scala.inline
-  implicit class DeclareVariable_MutableBuilder[Self <: DeclareVariable_] (val x: Self) extends AnyVal {
+  extension [Self <: DeclareVariable_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DeclareVariable): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeclareVariable): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

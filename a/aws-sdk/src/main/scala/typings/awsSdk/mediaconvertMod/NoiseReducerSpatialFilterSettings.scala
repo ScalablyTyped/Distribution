@@ -23,31 +23,23 @@ trait NoiseReducerSpatialFilterSettings extends StObject {
 }
 object NoiseReducerSpatialFilterSettings {
   
-  @scala.inline
-  def apply(): NoiseReducerSpatialFilterSettings = {
+  inline def apply(): NoiseReducerSpatialFilterSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoiseReducerSpatialFilterSettings]
   }
   
-  @scala.inline
-  implicit class NoiseReducerSpatialFilterSettingsMutableBuilder[Self <: NoiseReducerSpatialFilterSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NoiseReducerSpatialFilterSettings](x: Self) {
     
-    @scala.inline
-    def setPostFilterSharpenStrength(value: integerMin0Max3): Self = StObject.set(x, "PostFilterSharpenStrength", value.asInstanceOf[js.Any])
+    inline def setPostFilterSharpenStrength(value: integerMin0Max3): Self = StObject.set(x, "PostFilterSharpenStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostFilterSharpenStrengthUndefined: Self = StObject.set(x, "PostFilterSharpenStrength", js.undefined)
+    inline def setPostFilterSharpenStrengthUndefined: Self = StObject.set(x, "PostFilterSharpenStrength", js.undefined)
     
-    @scala.inline
-    def setSpeed(value: integerMinNegative2Max3): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: integerMinNegative2Max3): Self = StObject.set(x, "Speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedUndefined: Self = StObject.set(x, "Speed", js.undefined)
+    inline def setSpeedUndefined: Self = StObject.set(x, "Speed", js.undefined)
     
-    @scala.inline
-    def setStrength(value: integerMin0Max16): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: integerMin0Max16): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
+    inline def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
   }
 }

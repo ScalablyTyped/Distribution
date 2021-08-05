@@ -226,44 +226,32 @@ object diagramEngineMod {
   }
   object DiagramEngineListener {
     
-    @scala.inline
-    def apply(): DiagramEngineListener = {
+    inline def apply(): DiagramEngineListener = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiagramEngineListener]
     }
     
-    @scala.inline
-    implicit class DiagramEngineListenerMutableBuilder[Self <: DiagramEngineListener] (val x: Self) extends AnyVal {
+    extension [Self <: DiagramEngineListener](x: Self) {
       
-      @scala.inline
-      def setLabelFactoriesUpdated(value: () => Unit): Self = StObject.set(x, "labelFactoriesUpdated", js.Any.fromFunction0(value))
+      inline def setLabelFactoriesUpdated(value: () => Unit): Self = StObject.set(x, "labelFactoriesUpdated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLabelFactoriesUpdatedUndefined: Self = StObject.set(x, "labelFactoriesUpdated", js.undefined)
+      inline def setLabelFactoriesUpdatedUndefined: Self = StObject.set(x, "labelFactoriesUpdated", js.undefined)
       
-      @scala.inline
-      def setLinkFactoriesUpdated(value: () => Unit): Self = StObject.set(x, "linkFactoriesUpdated", js.Any.fromFunction0(value))
+      inline def setLinkFactoriesUpdated(value: () => Unit): Self = StObject.set(x, "linkFactoriesUpdated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLinkFactoriesUpdatedUndefined: Self = StObject.set(x, "linkFactoriesUpdated", js.undefined)
+      inline def setLinkFactoriesUpdatedUndefined: Self = StObject.set(x, "linkFactoriesUpdated", js.undefined)
       
-      @scala.inline
-      def setNodeFactoriesUpdated(value: () => Unit): Self = StObject.set(x, "nodeFactoriesUpdated", js.Any.fromFunction0(value))
+      inline def setNodeFactoriesUpdated(value: () => Unit): Self = StObject.set(x, "nodeFactoriesUpdated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNodeFactoriesUpdatedUndefined: Self = StObject.set(x, "nodeFactoriesUpdated", js.undefined)
+      inline def setNodeFactoriesUpdatedUndefined: Self = StObject.set(x, "nodeFactoriesUpdated", js.undefined)
       
-      @scala.inline
-      def setPortFactoriesUpdated(value: () => Unit): Self = StObject.set(x, "portFactoriesUpdated", js.Any.fromFunction0(value))
+      inline def setPortFactoriesUpdated(value: () => Unit): Self = StObject.set(x, "portFactoriesUpdated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPortFactoriesUpdatedUndefined: Self = StObject.set(x, "portFactoriesUpdated", js.undefined)
+      inline def setPortFactoriesUpdatedUndefined: Self = StObject.set(x, "portFactoriesUpdated", js.undefined)
       
-      @scala.inline
-      def setRepaintCanvas(value: () => Unit): Self = StObject.set(x, "repaintCanvas", js.Any.fromFunction0(value))
+      inline def setRepaintCanvas(value: () => Unit): Self = StObject.set(x, "repaintCanvas", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRepaintCanvasUndefined: Self = StObject.set(x, "repaintCanvas", js.undefined)
+      inline def setRepaintCanvasUndefined: Self = StObject.set(x, "repaintCanvas", js.undefined)
     }
   }
 }

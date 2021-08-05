@@ -51,31 +51,23 @@ trait SystemInfoBattery
 }
 object SystemInfoBattery {
   
-  @scala.inline
-  def apply(isCharging: Boolean, level: Double): SystemInfoBattery = {
+  inline def apply(isCharging: Boolean, level: Double): SystemInfoBattery = {
     val __obj = js.Dynamic.literal(isCharging = isCharging.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoBattery]
   }
   
-  @scala.inline
-  implicit class SystemInfoBatteryMutableBuilder[Self <: SystemInfoBattery] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoBattery](x: Self) {
     
-    @scala.inline
-    def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
+    inline def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToDischarge(value: Double): Self = StObject.set(x, "timeToDischarge", value.asInstanceOf[js.Any])
+    inline def setTimeToDischarge(value: Double): Self = StObject.set(x, "timeToDischarge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToDischargeUndefined: Self = StObject.set(x, "timeToDischarge", js.undefined)
+    inline def setTimeToDischargeUndefined: Self = StObject.set(x, "timeToDischarge", js.undefined)
     
-    @scala.inline
-    def setTimeToFullCharge(value: Double): Self = StObject.set(x, "timeToFullCharge", value.asInstanceOf[js.Any])
+    inline def setTimeToFullCharge(value: Double): Self = StObject.set(x, "timeToFullCharge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToFullChargeUndefined: Self = StObject.set(x, "timeToFullCharge", js.undefined)
+    inline def setTimeToFullChargeUndefined: Self = StObject.set(x, "timeToFullCharge", js.undefined)
   }
 }

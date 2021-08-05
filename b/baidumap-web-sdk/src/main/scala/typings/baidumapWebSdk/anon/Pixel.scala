@@ -16,8 +16,7 @@ trait Pixel extends StObject {
 }
 object Pixel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     pixel: typings.baidumapWebSdk.BMap.Pixel,
     point: typings.baidumapWebSdk.BMap.Point,
     target: js.Any,
@@ -28,19 +27,14 @@ object Pixel {
     __obj.asInstanceOf[Pixel]
   }
   
-  @scala.inline
-  implicit class PixelMutableBuilder[Self <: Pixel] (val x: Self) extends AnyVal {
+  extension [Self <: Pixel](x: Self) {
     
-    @scala.inline
-    def setPixel(value: typings.baidumapWebSdk.BMap.Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
+    inline def setPixel(value: typings.baidumapWebSdk.BMap.Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: typings.baidumapWebSdk.BMap.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: typings.baidumapWebSdk.BMap.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

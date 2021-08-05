@@ -50,68 +50,49 @@ trait Printer[T] extends StObject {
 }
 object Printer {
   
-  @scala.inline
-  def apply[T](print: (FastPath[T], ParserOptions[T], js.Function1[/* path */ FastPath[T], Doc_]) => Doc_): Printer[T] = {
+  inline def apply[T](print: (FastPath[T], ParserOptions[T], js.Function1[/* path */ FastPath[T], Doc_]) => Doc_): Printer[T] = {
     val __obj = js.Dynamic.literal(print = js.Any.fromFunction3(print))
     __obj.asInstanceOf[Printer[T]]
   }
   
-  @scala.inline
-  implicit class PrinterMutableBuilder[Self <: Printer[?], T] (val x: Self & Printer[T]) extends AnyVal {
+  extension [Self <: Printer[?], T](x: Self & Printer[T]) {
     
-    @scala.inline
-    def setCanAttachComment(value: /* node */ T => Boolean): Self = StObject.set(x, "canAttachComment", js.Any.fromFunction1(value))
+    inline def setCanAttachComment(value: /* node */ T => Boolean): Self = StObject.set(x, "canAttachComment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCanAttachCommentUndefined: Self = StObject.set(x, "canAttachComment", js.undefined)
+    inline def setCanAttachCommentUndefined: Self = StObject.set(x, "canAttachComment", js.undefined)
     
-    @scala.inline
-    def setEmbed(
+    inline def setEmbed(
       value: (/* path */ FastPath[T], /* print */ js.Function1[/* path */ FastPath[T], Doc_], /* textToDoc */ js.Function2[/* text */ String, /* options */ Options, Doc_], /* options */ ParserOptions[T]) => Doc_ | Null
     ): Self = StObject.set(x, "embed", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
+    inline def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
     
-    @scala.inline
-    def setHandleComments(value: EndOfLine[T]): Self = StObject.set(x, "handleComments", value.asInstanceOf[js.Any])
+    inline def setHandleComments(value: EndOfLine[T]): Self = StObject.set(x, "handleComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleCommentsUndefined: Self = StObject.set(x, "handleComments", js.undefined)
+    inline def setHandleCommentsUndefined: Self = StObject.set(x, "handleComments", js.undefined)
     
-    @scala.inline
-    def setHasPrettierIgnore(value: /* path */ FastPath[T] => Boolean): Self = StObject.set(x, "hasPrettierIgnore", js.Any.fromFunction1(value))
+    inline def setHasPrettierIgnore(value: /* path */ FastPath[T] => Boolean): Self = StObject.set(x, "hasPrettierIgnore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasPrettierIgnoreUndefined: Self = StObject.set(x, "hasPrettierIgnore", js.undefined)
+    inline def setHasPrettierIgnoreUndefined: Self = StObject.set(x, "hasPrettierIgnore", js.undefined)
     
-    @scala.inline
-    def setInsertPragma(value: /* text */ String => String): Self = StObject.set(x, "insertPragma", js.Any.fromFunction1(value))
+    inline def setInsertPragma(value: /* text */ String => String): Self = StObject.set(x, "insertPragma", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertPragmaUndefined: Self = StObject.set(x, "insertPragma", js.undefined)
+    inline def setInsertPragmaUndefined: Self = StObject.set(x, "insertPragma", js.undefined)
     
-    @scala.inline
-    def setMassageAstNode(value: (/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any) => js.Any): Self = StObject.set(x, "massageAstNode", js.Any.fromFunction3(value))
+    inline def setMassageAstNode(value: (/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any) => js.Any): Self = StObject.set(x, "massageAstNode", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMassageAstNodeUndefined: Self = StObject.set(x, "massageAstNode", js.undefined)
+    inline def setMassageAstNodeUndefined: Self = StObject.set(x, "massageAstNode", js.undefined)
     
-    @scala.inline
-    def setPrint(value: (FastPath[T], ParserOptions[T], js.Function1[/* path */ FastPath[T], Doc_]) => Doc_): Self = StObject.set(x, "print", js.Any.fromFunction3(value))
+    inline def setPrint(value: (FastPath[T], ParserOptions[T], js.Function1[/* path */ FastPath[T], Doc_]) => Doc_): Self = StObject.set(x, "print", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPrintComments(
+    inline def setPrintComments(
       value: (/* path */ FastPath[T], /* print */ js.Function1[/* path */ FastPath[T], Doc_], /* options */ ParserOptions[T], /* needsSemi */ Boolean) => Doc_
     ): Self = StObject.set(x, "printComments", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setPrintCommentsUndefined: Self = StObject.set(x, "printComments", js.undefined)
+    inline def setPrintCommentsUndefined: Self = StObject.set(x, "printComments", js.undefined)
     
-    @scala.inline
-    def setWillPrintOwnComments(value: /* path */ FastPath[T] => Boolean): Self = StObject.set(x, "willPrintOwnComments", js.Any.fromFunction1(value))
+    inline def setWillPrintOwnComments(value: /* path */ FastPath[T] => Boolean): Self = StObject.set(x, "willPrintOwnComments", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWillPrintOwnCommentsUndefined: Self = StObject.set(x, "willPrintOwnComments", js.undefined)
+    inline def setWillPrintOwnCommentsUndefined: Self = StObject.set(x, "willPrintOwnComments", js.undefined)
   }
 }

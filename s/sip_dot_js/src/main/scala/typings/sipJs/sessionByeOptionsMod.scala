@@ -18,26 +18,20 @@ object sessionByeOptionsMod {
   }
   object SessionByeOptions {
     
-    @scala.inline
-    def apply(): SessionByeOptions = {
+    inline def apply(): SessionByeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionByeOptions]
     }
     
-    @scala.inline
-    implicit class SessionByeOptionsMutableBuilder[Self <: SessionByeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SessionByeOptions](x: Self) {
       
-      @scala.inline
-      def setRequestDelegate(value: OutgoingRequestDelegate): Self = StObject.set(x, "requestDelegate", value.asInstanceOf[js.Any])
+      inline def setRequestDelegate(value: OutgoingRequestDelegate): Self = StObject.set(x, "requestDelegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDelegateUndefined: Self = StObject.set(x, "requestDelegate", js.undefined)
+      inline def setRequestDelegateUndefined: Self = StObject.set(x, "requestDelegate", js.undefined)
       
-      @scala.inline
-      def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+      inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+      inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     }
   }
 }

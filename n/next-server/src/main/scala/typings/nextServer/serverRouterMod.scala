@@ -32,8 +32,7 @@ object serverRouterMod {
     var routes: js.Array[Route_] = js.native
   }
   
-  @scala.inline
-  def route(path: String): js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], js.Any]]
+  inline def route(path: String): js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], js.Any]]
   
   type Params = StringDictionary[js.Any]
   
@@ -47,8 +46,7 @@ object serverRouterMod {
   }
   object Route_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fn: (IncomingMessage, ServerResponse, Params, UrlWithParsedQuery) => Unit,
       `match`: /* pathname */ js.UndefOr[String] => `false` | Params
     ): Route_ = {
@@ -57,14 +55,11 @@ object serverRouterMod {
       __obj.asInstanceOf[Route_]
     }
     
-    @scala.inline
-    implicit class Route_MutableBuilder[Self <: Route_] (val x: Self) extends AnyVal {
+    extension [Self <: Route_](x: Self) {
       
-      @scala.inline
-      def setFn(value: (IncomingMessage, ServerResponse, Params, UrlWithParsedQuery) => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction4(value))
+      inline def setFn(value: (IncomingMessage, ServerResponse, Params, UrlWithParsedQuery) => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setMatch(value: /* pathname */ js.UndefOr[String] => `false` | Params): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+      inline def setMatch(value: /* pathname */ js.UndefOr[String] => `false` | Params): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
     }
   }
   
@@ -78,8 +73,7 @@ object serverRouterMod {
   }
   object Router {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Route_ => Unit,
       `match`: (IncomingMessage, ServerResponse, UrlWithParsedQuery) => js.UndefOr[js.Function0[Unit]],
       routes: js.Array[Route_]
@@ -89,20 +83,15 @@ object serverRouterMod {
       __obj.asInstanceOf[Router]
     }
     
-    @scala.inline
-    implicit class RouterMutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
+    extension [Self <: Router](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Route_ => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Route_ => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatch(value: (IncomingMessage, ServerResponse, UrlWithParsedQuery) => js.UndefOr[js.Function0[Unit]]): Self = StObject.set(x, "match", js.Any.fromFunction3(value))
+      inline def setMatch(value: (IncomingMessage, ServerResponse, UrlWithParsedQuery) => js.UndefOr[js.Function0[Unit]]): Self = StObject.set(x, "match", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRoutes(value: js.Array[Route_]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[Route_]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: Route_ *): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: Route_ *): Self = StObject.set(x, "routes", js.Array(value :_*))
     }
   }
 }

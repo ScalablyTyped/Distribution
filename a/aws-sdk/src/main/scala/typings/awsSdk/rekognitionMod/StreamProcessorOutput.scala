@@ -13,19 +13,15 @@ trait StreamProcessorOutput extends StObject {
 }
 object StreamProcessorOutput {
   
-  @scala.inline
-  def apply(): StreamProcessorOutput = {
+  inline def apply(): StreamProcessorOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamProcessorOutput]
   }
   
-  @scala.inline
-  implicit class StreamProcessorOutputMutableBuilder[Self <: StreamProcessorOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StreamProcessorOutput](x: Self) {
     
-    @scala.inline
-    def setKinesisDataStream(value: KinesisDataStream): Self = StObject.set(x, "KinesisDataStream", value.asInstanceOf[js.Any])
+    inline def setKinesisDataStream(value: KinesisDataStream): Self = StObject.set(x, "KinesisDataStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisDataStreamUndefined: Self = StObject.set(x, "KinesisDataStream", js.undefined)
+    inline def setKinesisDataStreamUndefined: Self = StObject.set(x, "KinesisDataStream", js.undefined)
   }
 }

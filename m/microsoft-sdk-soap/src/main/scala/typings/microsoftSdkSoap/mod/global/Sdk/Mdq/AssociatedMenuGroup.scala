@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociatedMenuGroup extends StObject
 object AssociatedMenuGroup {
   
-  @scala.inline
-  def Details: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Details = "Details".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Details]
+  inline def Details: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Details = "Details".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Details]
   
-  @scala.inline
-  def Marketing: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Marketing = "Marketing".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Marketing]
+  inline def Marketing: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Marketing = "Marketing".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Marketing]
   
-  @scala.inline
-  def Sales: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Sales = "Sales".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Sales]
+  inline def Sales: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Sales = "Sales".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Sales]
   
-  @scala.inline
-  def Service: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Service = "Service".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Service]
+  inline def Service: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Service = "Service".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Service]
 }

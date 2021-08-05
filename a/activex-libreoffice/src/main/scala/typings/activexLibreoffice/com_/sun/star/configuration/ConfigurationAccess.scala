@@ -165,8 +165,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ConfigurationAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AsProperty: Property,
     DefaultAsProperty: XInterface,
     ElementNames: SafeArray[String],
@@ -247,16 +246,12 @@ object ConfigurationAccess {
     __obj.asInstanceOf[ConfigurationAccess]
   }
   
-  @scala.inline
-  implicit class ConfigurationAccessMutableBuilder[Self <: ConfigurationAccess] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationAccess](x: Self) {
     
-    @scala.inline
-    def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
+    inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
   }
 }

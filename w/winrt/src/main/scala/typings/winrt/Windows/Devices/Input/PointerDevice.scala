@@ -11,8 +11,7 @@ trait PointerDevice
      with IPointerDevice
 object PointerDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isIntegrated: Boolean,
     maxContacts: Double,
     physicalDeviceRect: Rect,

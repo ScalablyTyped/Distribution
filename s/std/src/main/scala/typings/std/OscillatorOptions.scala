@@ -18,37 +18,27 @@ trait OscillatorOptions
 }
 object OscillatorOptions {
   
-  @scala.inline
-  def apply(): OscillatorOptions = {
+  inline def apply(): OscillatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OscillatorOptions]
   }
   
-  @scala.inline
-  implicit class OscillatorOptionsMutableBuilder[Self <: OscillatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OscillatorOptions](x: Self) {
     
-    @scala.inline
-    def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
+    inline def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetuneUndefined: Self = StObject.set(x, "detune", js.undefined)
+    inline def setDetuneUndefined: Self = StObject.set(x, "detune", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
-    @scala.inline
-    def setPeriodicWave(value: PeriodicWave): Self = StObject.set(x, "periodicWave", value.asInstanceOf[js.Any])
+    inline def setPeriodicWave(value: PeriodicWave): Self = StObject.set(x, "periodicWave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodicWaveUndefined: Self = StObject.set(x, "periodicWave", js.undefined)
+    inline def setPeriodicWaveUndefined: Self = StObject.set(x, "periodicWave", js.undefined)
     
-    @scala.inline
-    def setType(value: OscillatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OscillatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

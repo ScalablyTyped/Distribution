@@ -21,39 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Types extends StObject
 object Types {
   
-  @scala.inline
-  def alternatives: typings.hapiJoi.hapiJoiStrings.alternatives = "alternatives".asInstanceOf[typings.hapiJoi.hapiJoiStrings.alternatives]
+  inline def alternatives: typings.hapiJoi.hapiJoiStrings.alternatives = "alternatives".asInstanceOf[typings.hapiJoi.hapiJoiStrings.alternatives]
   
-  @scala.inline
-  def any: typings.hapiJoi.hapiJoiStrings.any = "any".asInstanceOf[typings.hapiJoi.hapiJoiStrings.any]
+  inline def any: typings.hapiJoi.hapiJoiStrings.any = "any".asInstanceOf[typings.hapiJoi.hapiJoiStrings.any]
   
-  @scala.inline
-  def array: typings.hapiJoi.hapiJoiStrings.array = "array".asInstanceOf[typings.hapiJoi.hapiJoiStrings.array]
+  inline def array: typings.hapiJoi.hapiJoiStrings.array = "array".asInstanceOf[typings.hapiJoi.hapiJoiStrings.array]
   
-  @scala.inline
-  def binary: typings.hapiJoi.hapiJoiStrings.binary = "binary".asInstanceOf[typings.hapiJoi.hapiJoiStrings.binary]
+  inline def binary: typings.hapiJoi.hapiJoiStrings.binary = "binary".asInstanceOf[typings.hapiJoi.hapiJoiStrings.binary]
   
-  @scala.inline
-  def boolean: typings.hapiJoi.hapiJoiStrings.boolean = "boolean".asInstanceOf[typings.hapiJoi.hapiJoiStrings.boolean]
+  inline def boolean: typings.hapiJoi.hapiJoiStrings.boolean = "boolean".asInstanceOf[typings.hapiJoi.hapiJoiStrings.boolean]
   
-  @scala.inline
-  def date: typings.hapiJoi.hapiJoiStrings.date = "date".asInstanceOf[typings.hapiJoi.hapiJoiStrings.date]
+  inline def date: typings.hapiJoi.hapiJoiStrings.date = "date".asInstanceOf[typings.hapiJoi.hapiJoiStrings.date]
   
-  @scala.inline
-  def function: typings.hapiJoi.hapiJoiStrings.function = "function".asInstanceOf[typings.hapiJoi.hapiJoiStrings.function]
+  inline def function: typings.hapiJoi.hapiJoiStrings.function = "function".asInstanceOf[typings.hapiJoi.hapiJoiStrings.function]
   
-  @scala.inline
-  def link: typings.hapiJoi.hapiJoiStrings.link = "link".asInstanceOf[typings.hapiJoi.hapiJoiStrings.link]
+  inline def link: typings.hapiJoi.hapiJoiStrings.link = "link".asInstanceOf[typings.hapiJoi.hapiJoiStrings.link]
   
-  @scala.inline
-  def number: typings.hapiJoi.hapiJoiStrings.number = "number".asInstanceOf[typings.hapiJoi.hapiJoiStrings.number]
+  inline def number: typings.hapiJoi.hapiJoiStrings.number = "number".asInstanceOf[typings.hapiJoi.hapiJoiStrings.number]
   
-  @scala.inline
-  def `object`: typings.hapiJoi.hapiJoiStrings.`object` = "object".asInstanceOf[typings.hapiJoi.hapiJoiStrings.`object`]
+  inline def `object`: typings.hapiJoi.hapiJoiStrings.`object` = "object".asInstanceOf[typings.hapiJoi.hapiJoiStrings.`object`]
   
-  @scala.inline
-  def string: typings.hapiJoi.hapiJoiStrings.string = "string".asInstanceOf[typings.hapiJoi.hapiJoiStrings.string]
+  inline def string: typings.hapiJoi.hapiJoiStrings.string = "string".asInstanceOf[typings.hapiJoi.hapiJoiStrings.string]
   
-  @scala.inline
-  def symbol: typings.hapiJoi.hapiJoiStrings.symbol = "symbol".asInstanceOf[typings.hapiJoi.hapiJoiStrings.symbol]
+  inline def symbol: typings.hapiJoi.hapiJoiStrings.symbol = "symbol".asInstanceOf[typings.hapiJoi.hapiJoiStrings.symbol]
 }

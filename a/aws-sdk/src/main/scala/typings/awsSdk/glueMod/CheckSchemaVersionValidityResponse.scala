@@ -18,25 +18,19 @@ trait CheckSchemaVersionValidityResponse extends StObject {
 }
 object CheckSchemaVersionValidityResponse {
   
-  @scala.inline
-  def apply(): CheckSchemaVersionValidityResponse = {
+  inline def apply(): CheckSchemaVersionValidityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckSchemaVersionValidityResponse]
   }
   
-  @scala.inline
-  implicit class CheckSchemaVersionValidityResponseMutableBuilder[Self <: CheckSchemaVersionValidityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CheckSchemaVersionValidityResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: SchemaValidationError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: SchemaValidationError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setValid(value: IsVersionValid): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: IsVersionValid): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUndefined: Self = StObject.set(x, "Valid", js.undefined)
+    inline def setValidUndefined: Self = StObject.set(x, "Valid", js.undefined)
   }
 }

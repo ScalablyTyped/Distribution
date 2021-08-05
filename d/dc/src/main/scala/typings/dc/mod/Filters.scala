@@ -16,8 +16,7 @@ trait Filters extends StObject {
 }
 object Filters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HierarchyFilter: String => Filter,
     RangedFilter: (Double, Double) => Filter,
     RangedTwoDimensionalFilter: js.Array[js.Array[Double]] => Filter,
@@ -27,19 +26,14 @@ object Filters {
     __obj.asInstanceOf[Filters]
   }
   
-  @scala.inline
-  implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
+  extension [Self <: Filters](x: Self) {
     
-    @scala.inline
-    def setHierarchyFilter(value: String => Filter): Self = StObject.set(x, "HierarchyFilter", js.Any.fromFunction1(value))
+    inline def setHierarchyFilter(value: String => Filter): Self = StObject.set(x, "HierarchyFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRangedFilter(value: (Double, Double) => Filter): Self = StObject.set(x, "RangedFilter", js.Any.fromFunction2(value))
+    inline def setRangedFilter(value: (Double, Double) => Filter): Self = StObject.set(x, "RangedFilter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRangedTwoDimensionalFilter(value: js.Array[js.Array[Double]] => Filter): Self = StObject.set(x, "RangedTwoDimensionalFilter", js.Any.fromFunction1(value))
+    inline def setRangedTwoDimensionalFilter(value: js.Array[js.Array[Double]] => Filter): Self = StObject.set(x, "RangedTwoDimensionalFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTwoDimensionalFilter(value: js.Array[Double] => Filter): Self = StObject.set(x, "TwoDimensionalFilter", js.Any.fromFunction1(value))
+    inline def setTwoDimensionalFilter(value: js.Array[Double] => Filter): Self = StObject.set(x, "TwoDimensionalFilter", js.Any.fromFunction1(value))
   }
 }

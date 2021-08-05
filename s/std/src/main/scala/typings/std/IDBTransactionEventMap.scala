@@ -14,22 +14,17 @@ trait IDBTransactionEventMap extends StObject {
 }
 object IDBTransactionEventMap {
   
-  @scala.inline
-  def apply(abort: Event, complete: Event, error: Event): IDBTransactionEventMap = {
+  inline def apply(abort: Event, complete: Event, error: Event): IDBTransactionEventMap = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBTransactionEventMap]
   }
   
-  @scala.inline
-  implicit class IDBTransactionEventMapMutableBuilder[Self <: IDBTransactionEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: IDBTransactionEventMap](x: Self) {
     
-    @scala.inline
-    def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+    inline def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplete(value: Event): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    inline def setComplete(value: Event): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

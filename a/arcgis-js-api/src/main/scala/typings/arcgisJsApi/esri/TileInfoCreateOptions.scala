@@ -33,8 +33,7 @@ trait TileInfoCreateOptions
 }
 object TileInfoCreateOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,28 +42,20 @@ object TileInfoCreateOptions {
     __obj.asInstanceOf[TileInfoCreateOptions]
   }
   
-  @scala.inline
-  implicit class TileInfoCreateOptionsMutableBuilder[Self <: TileInfoCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TileInfoCreateOptions](x: Self) {
     
-    @scala.inline
-    def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    inline def setScales(value: js.Array[Double]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
+    inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
     
-    @scala.inline
-    def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value :_*))
+    inline def setScalesVarargs(value: Double*): Self = StObject.set(x, "scales", js.Array(value :_*))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

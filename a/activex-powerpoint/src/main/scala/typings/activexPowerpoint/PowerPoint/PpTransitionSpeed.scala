@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpTransitionSpeed extends StObject
 object PpTransitionSpeed {
   
-  @scala.inline
-  def ppTransitionSpeedFast: `3` = 3.asInstanceOf[`3`]
+  inline def ppTransitionSpeedFast: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppTransitionSpeedMedium: `2` = 2.asInstanceOf[`2`]
+  inline def ppTransitionSpeedMedium: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppTransitionSpeedMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppTransitionSpeedMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppTransitionSpeedSlow: `1` = 1.asInstanceOf[`1`]
+  inline def ppTransitionSpeedSlow: `1` = 1.asInstanceOf[`1`]
 }

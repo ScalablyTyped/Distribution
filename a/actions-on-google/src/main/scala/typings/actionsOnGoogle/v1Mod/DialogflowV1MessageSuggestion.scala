@@ -10,19 +10,15 @@ trait DialogflowV1MessageSuggestion extends StObject {
 }
 object DialogflowV1MessageSuggestion {
   
-  @scala.inline
-  def apply(): DialogflowV1MessageSuggestion = {
+  inline def apply(): DialogflowV1MessageSuggestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1MessageSuggestion]
   }
   
-  @scala.inline
-  implicit class DialogflowV1MessageSuggestionMutableBuilder[Self <: DialogflowV1MessageSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1MessageSuggestion](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

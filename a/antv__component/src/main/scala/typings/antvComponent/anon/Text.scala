@@ -12,19 +12,15 @@ trait Text extends StObject {
 }
 object Text {
   
-  @scala.inline
-  def apply(style: TextAlign, text: AutoRotate): Text = {
+  inline def apply(style: TextAlign, text: AutoRotate): Text = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setStyle(value: TextAlign): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: TextAlign): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: AutoRotate): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: AutoRotate): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

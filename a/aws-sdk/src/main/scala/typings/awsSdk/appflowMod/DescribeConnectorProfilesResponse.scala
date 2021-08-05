@@ -18,28 +18,21 @@ trait DescribeConnectorProfilesResponse extends StObject {
 }
 object DescribeConnectorProfilesResponse {
   
-  @scala.inline
-  def apply(): DescribeConnectorProfilesResponse = {
+  inline def apply(): DescribeConnectorProfilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConnectorProfilesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConnectorProfilesResponseMutableBuilder[Self <: DescribeConnectorProfilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConnectorProfilesResponse](x: Self) {
     
-    @scala.inline
-    def setConnectorProfileDetails(value: ConnectorProfileDetailList): Self = StObject.set(x, "connectorProfileDetails", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileDetails(value: ConnectorProfileDetailList): Self = StObject.set(x, "connectorProfileDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileDetailsUndefined: Self = StObject.set(x, "connectorProfileDetails", js.undefined)
+    inline def setConnectorProfileDetailsUndefined: Self = StObject.set(x, "connectorProfileDetails", js.undefined)
     
-    @scala.inline
-    def setConnectorProfileDetailsVarargs(value: ConnectorProfile*): Self = StObject.set(x, "connectorProfileDetails", js.Array(value :_*))
+    inline def setConnectorProfileDetailsVarargs(value: ConnectorProfile*): Self = StObject.set(x, "connectorProfileDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

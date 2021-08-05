@@ -17,31 +17,23 @@ trait PartialCameraCenter extends StObject {
 }
 object PartialCameraCenter {
   
-  @scala.inline
-  def apply(): PartialCameraCenter = {
+  inline def apply(): PartialCameraCenter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCameraCenter]
   }
   
-  @scala.inline
-  implicit class PartialCameraCenterMutableBuilder[Self <: PartialCameraCenter] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCameraCenter](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Partial[Point]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Partial[Point]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setEye(value: Partial[Point]): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
+    inline def setEye(value: Partial[Point]): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEyeUndefined: Self = StObject.set(x, "eye", js.undefined)
+    inline def setEyeUndefined: Self = StObject.set(x, "eye", js.undefined)
     
-    @scala.inline
-    def setUp(value: Partial[Point]): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    inline def setUp(value: Partial[Point]): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+    inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
   }
 }

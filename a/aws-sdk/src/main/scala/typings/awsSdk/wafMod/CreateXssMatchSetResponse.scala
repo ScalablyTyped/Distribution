@@ -18,25 +18,19 @@ trait CreateXssMatchSetResponse extends StObject {
 }
 object CreateXssMatchSetResponse {
   
-  @scala.inline
-  def apply(): CreateXssMatchSetResponse = {
+  inline def apply(): CreateXssMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateXssMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateXssMatchSetResponseMutableBuilder[Self <: CreateXssMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateXssMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
-    @scala.inline
-    def setXssMatchSet(value: XssMatchSet): Self = StObject.set(x, "XssMatchSet", value.asInstanceOf[js.Any])
+    inline def setXssMatchSet(value: XssMatchSet): Self = StObject.set(x, "XssMatchSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssMatchSetUndefined: Self = StObject.set(x, "XssMatchSet", js.undefined)
+    inline def setXssMatchSetUndefined: Self = StObject.set(x, "XssMatchSet", js.undefined)
   }
 }

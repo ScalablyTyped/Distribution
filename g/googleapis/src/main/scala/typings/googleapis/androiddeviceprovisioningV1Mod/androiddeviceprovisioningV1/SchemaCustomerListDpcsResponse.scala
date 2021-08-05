@@ -17,22 +17,17 @@ trait SchemaCustomerListDpcsResponse extends StObject {
 }
 object SchemaCustomerListDpcsResponse {
   
-  @scala.inline
-  def apply(): SchemaCustomerListDpcsResponse = {
+  inline def apply(): SchemaCustomerListDpcsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomerListDpcsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCustomerListDpcsResponseMutableBuilder[Self <: SchemaCustomerListDpcsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomerListDpcsResponse](x: Self) {
     
-    @scala.inline
-    def setDpcs(value: js.Array[SchemaDpc]): Self = StObject.set(x, "dpcs", value.asInstanceOf[js.Any])
+    inline def setDpcs(value: js.Array[SchemaDpc]): Self = StObject.set(x, "dpcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpcsUndefined: Self = StObject.set(x, "dpcs", js.undefined)
+    inline def setDpcsUndefined: Self = StObject.set(x, "dpcs", js.undefined)
     
-    @scala.inline
-    def setDpcsVarargs(value: SchemaDpc*): Self = StObject.set(x, "dpcs", js.Array(value :_*))
+    inline def setDpcsVarargs(value: SchemaDpc*): Self = StObject.set(x, "dpcs", js.Array(value :_*))
   }
 }

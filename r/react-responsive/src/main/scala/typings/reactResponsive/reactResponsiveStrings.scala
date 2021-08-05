@@ -11,96 +11,81 @@ object reactResponsiveStrings {
   sealed trait all
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait aural
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def aural: aural = "aural".asInstanceOf[aural]
+  inline def aural: aural = "aural".asInstanceOf[aural]
   
   @js.native
   sealed trait braille
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def braille: braille = "braille".asInstanceOf[braille]
+  inline def braille: braille = "braille".asInstanceOf[braille]
   
   @js.native
   sealed trait embossed
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def embossed: embossed = "embossed".asInstanceOf[embossed]
+  inline def embossed: embossed = "embossed".asInstanceOf[embossed]
   
   @js.native
   sealed trait grid
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
+  inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
   sealed trait handheld
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def handheld: handheld = "handheld".asInstanceOf[handheld]
+  inline def handheld: handheld = "handheld".asInstanceOf[handheld]
   
   @js.native
   sealed trait interlace extends StObject
-  @scala.inline
-  def interlace: interlace = "interlace".asInstanceOf[interlace]
+  inline def interlace: interlace = "interlace".asInstanceOf[interlace]
   
   @js.native
   sealed trait landscape extends StObject
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait portrait extends StObject
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
   sealed trait print
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def print: print = "print".asInstanceOf[print]
+  inline def print: print = "print".asInstanceOf[print]
   
   @js.native
   sealed trait progressive extends StObject
-  @scala.inline
-  def progressive: progressive = "progressive".asInstanceOf[progressive]
+  inline def progressive: progressive = "progressive".asInstanceOf[progressive]
   
   @js.native
   sealed trait projection
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def projection: projection = "projection".asInstanceOf[projection]
+  inline def projection: projection = "projection".asInstanceOf[projection]
   
   @js.native
   sealed trait screen
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
+  inline def screen: screen = "screen".asInstanceOf[screen]
   
   @js.native
   sealed trait tty
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def tty: tty = "tty".asInstanceOf[tty]
+  inline def tty: tty = "tty".asInstanceOf[tty]
   
   @js.native
   sealed trait tv
     extends StObject
        with MediaQueryType
-  @scala.inline
-  def tv: tv = "tv".asInstanceOf[tv]
+  inline def tv: tv = "tv".asInstanceOf[tv]
 }

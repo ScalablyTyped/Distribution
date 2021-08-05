@@ -219,17 +219,14 @@ object transformerMod {
   }
   object Box {
     
-    @scala.inline
-    def apply(height: Double, rotation: Double, width: Double, x: Double, y: Double): Box = {
+    inline def apply(height: Double, rotation: Double, width: Double, x: Double, y: Double): Box = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Box]
     }
     
-    @scala.inline
-    implicit class BoxMutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
+    extension [Self <: Box](x: Self) {
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,137 +274,94 @@ object transformerMod {
   }
   object TransformerConfig {
     
-    @scala.inline
-    def apply(): TransformerConfig = {
+    inline def apply(): TransformerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransformerConfig]
     }
     
-    @scala.inline
-    implicit class TransformerConfigMutableBuilder[Self <: TransformerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TransformerConfig](x: Self) {
       
-      @scala.inline
-      def setAnchorFill(value: String): Self = StObject.set(x, "anchorFill", value.asInstanceOf[js.Any])
+      inline def setAnchorFill(value: String): Self = StObject.set(x, "anchorFill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorFillUndefined: Self = StObject.set(x, "anchorFill", js.undefined)
+      inline def setAnchorFillUndefined: Self = StObject.set(x, "anchorFill", js.undefined)
       
-      @scala.inline
-      def setAnchorSize(value: Double): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
+      inline def setAnchorSize(value: Double): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
+      inline def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
       
-      @scala.inline
-      def setAnchorStroke(value: String): Self = StObject.set(x, "anchorStroke", value.asInstanceOf[js.Any])
+      inline def setAnchorStroke(value: String): Self = StObject.set(x, "anchorStroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorStrokeUndefined: Self = StObject.set(x, "anchorStroke", js.undefined)
+      inline def setAnchorStrokeUndefined: Self = StObject.set(x, "anchorStroke", js.undefined)
       
-      @scala.inline
-      def setAnchorStrokeWidth(value: Double): Self = StObject.set(x, "anchorStrokeWidth", value.asInstanceOf[js.Any])
+      inline def setAnchorStrokeWidth(value: Double): Self = StObject.set(x, "anchorStrokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorStrokeWidthUndefined: Self = StObject.set(x, "anchorStrokeWidth", js.undefined)
+      inline def setAnchorStrokeWidthUndefined: Self = StObject.set(x, "anchorStrokeWidth", js.undefined)
       
-      @scala.inline
-      def setBorderDash(value: js.Array[Double]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
+      inline def setBorderDash(value: js.Array[Double]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderDashUndefined: Self = StObject.set(x, "borderDash", js.undefined)
+      inline def setBorderDashUndefined: Self = StObject.set(x, "borderDash", js.undefined)
       
-      @scala.inline
-      def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value :_*))
+      inline def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value :_*))
       
-      @scala.inline
-      def setBorderEnabled(value: Boolean): Self = StObject.set(x, "borderEnabled", value.asInstanceOf[js.Any])
+      inline def setBorderEnabled(value: Boolean): Self = StObject.set(x, "borderEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderEnabledUndefined: Self = StObject.set(x, "borderEnabled", js.undefined)
+      inline def setBorderEnabledUndefined: Self = StObject.set(x, "borderEnabled", js.undefined)
       
-      @scala.inline
-      def setBorderStroke(value: String): Self = StObject.set(x, "borderStroke", value.asInstanceOf[js.Any])
+      inline def setBorderStroke(value: String): Self = StObject.set(x, "borderStroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStrokeUndefined: Self = StObject.set(x, "borderStroke", js.undefined)
+      inline def setBorderStrokeUndefined: Self = StObject.set(x, "borderStroke", js.undefined)
       
-      @scala.inline
-      def setBorderStrokeWidth(value: Double): Self = StObject.set(x, "borderStrokeWidth", value.asInstanceOf[js.Any])
+      inline def setBorderStrokeWidth(value: Double): Self = StObject.set(x, "borderStrokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStrokeWidthUndefined: Self = StObject.set(x, "borderStrokeWidth", js.undefined)
+      inline def setBorderStrokeWidthUndefined: Self = StObject.set(x, "borderStrokeWidth", js.undefined)
       
-      @scala.inline
-      def setBoundBoxFunc(value: (/* oldBox */ Box, /* newBox */ Box) => Box): Self = StObject.set(x, "boundBoxFunc", js.Any.fromFunction2(value))
+      inline def setBoundBoxFunc(value: (/* oldBox */ Box, /* newBox */ Box) => Box): Self = StObject.set(x, "boundBoxFunc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBoundBoxFuncUndefined: Self = StObject.set(x, "boundBoxFunc", js.undefined)
+      inline def setBoundBoxFuncUndefined: Self = StObject.set(x, "boundBoxFunc", js.undefined)
       
-      @scala.inline
-      def setCenteredScaling(value: Boolean): Self = StObject.set(x, "centeredScaling", value.asInstanceOf[js.Any])
+      inline def setCenteredScaling(value: Boolean): Self = StObject.set(x, "centeredScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredScalingUndefined: Self = StObject.set(x, "centeredScaling", js.undefined)
+      inline def setCenteredScalingUndefined: Self = StObject.set(x, "centeredScaling", js.undefined)
       
-      @scala.inline
-      def setEnabledAnchors(value: js.Array[String]): Self = StObject.set(x, "enabledAnchors", value.asInstanceOf[js.Any])
+      inline def setEnabledAnchors(value: js.Array[String]): Self = StObject.set(x, "enabledAnchors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledAnchorsUndefined: Self = StObject.set(x, "enabledAnchors", js.undefined)
+      inline def setEnabledAnchorsUndefined: Self = StObject.set(x, "enabledAnchors", js.undefined)
       
-      @scala.inline
-      def setEnabledAnchorsVarargs(value: String*): Self = StObject.set(x, "enabledAnchors", js.Array(value :_*))
+      inline def setEnabledAnchorsVarargs(value: String*): Self = StObject.set(x, "enabledAnchors", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreStroke(value: Boolean): Self = StObject.set(x, "ignoreStroke", value.asInstanceOf[js.Any])
+      inline def setIgnoreStroke(value: Boolean): Self = StObject.set(x, "ignoreStroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreStrokeUndefined: Self = StObject.set(x, "ignoreStroke", js.undefined)
+      inline def setIgnoreStrokeUndefined: Self = StObject.set(x, "ignoreStroke", js.undefined)
       
-      @scala.inline
-      def setKeepRatio(value: Boolean): Self = StObject.set(x, "keepRatio", value.asInstanceOf[js.Any])
+      inline def setKeepRatio(value: Boolean): Self = StObject.set(x, "keepRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepRatioUndefined: Self = StObject.set(x, "keepRatio", js.undefined)
+      inline def setKeepRatioUndefined: Self = StObject.set(x, "keepRatio", js.undefined)
       
-      @scala.inline
-      def setNode(value: Rect): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Rect): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      @scala.inline
-      def setResizeEnabled(value: Boolean): Self = StObject.set(x, "resizeEnabled", value.asInstanceOf[js.Any])
+      inline def setResizeEnabled(value: Boolean): Self = StObject.set(x, "resizeEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeEnabledUndefined: Self = StObject.set(x, "resizeEnabled", js.undefined)
+      inline def setResizeEnabledUndefined: Self = StObject.set(x, "resizeEnabled", js.undefined)
       
-      @scala.inline
-      def setRotateAnchorOffset(value: Double): Self = StObject.set(x, "rotateAnchorOffset", value.asInstanceOf[js.Any])
+      inline def setRotateAnchorOffset(value: Double): Self = StObject.set(x, "rotateAnchorOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateAnchorOffsetUndefined: Self = StObject.set(x, "rotateAnchorOffset", js.undefined)
+      inline def setRotateAnchorOffsetUndefined: Self = StObject.set(x, "rotateAnchorOffset", js.undefined)
       
-      @scala.inline
-      def setRotateEnabled(value: Boolean): Self = StObject.set(x, "rotateEnabled", value.asInstanceOf[js.Any])
+      inline def setRotateEnabled(value: Boolean): Self = StObject.set(x, "rotateEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateEnabledUndefined: Self = StObject.set(x, "rotateEnabled", js.undefined)
+      inline def setRotateEnabledUndefined: Self = StObject.set(x, "rotateEnabled", js.undefined)
       
-      @scala.inline
-      def setRotationSnapTolerance(value: Double): Self = StObject.set(x, "rotationSnapTolerance", value.asInstanceOf[js.Any])
+      inline def setRotationSnapTolerance(value: Double): Self = StObject.set(x, "rotationSnapTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationSnapToleranceUndefined: Self = StObject.set(x, "rotationSnapTolerance", js.undefined)
+      inline def setRotationSnapToleranceUndefined: Self = StObject.set(x, "rotationSnapTolerance", js.undefined)
       
-      @scala.inline
-      def setRotationSnaps(value: js.Array[Double]): Self = StObject.set(x, "rotationSnaps", value.asInstanceOf[js.Any])
+      inline def setRotationSnaps(value: js.Array[Double]): Self = StObject.set(x, "rotationSnaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationSnapsUndefined: Self = StObject.set(x, "rotationSnaps", js.undefined)
+      inline def setRotationSnapsUndefined: Self = StObject.set(x, "rotationSnaps", js.undefined)
       
-      @scala.inline
-      def setRotationSnapsVarargs(value: Double*): Self = StObject.set(x, "rotationSnaps", js.Array(value :_*))
+      inline def setRotationSnapsVarargs(value: Double*): Self = StObject.set(x, "rotationSnaps", js.Array(value :_*))
     }
   }
 }

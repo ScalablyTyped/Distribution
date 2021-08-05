@@ -22,19 +22,15 @@ trait IWorkInfo extends StObject {
 }
 object IWorkInfo {
   
-  @scala.inline
-  def apply(employer: Name, position: Name): IWorkInfo = {
+  inline def apply(employer: Name, position: Name): IWorkInfo = {
     val __obj = js.Dynamic.literal(employer = employer.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWorkInfo]
   }
   
-  @scala.inline
-  implicit class IWorkInfoMutableBuilder[Self <: IWorkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IWorkInfo](x: Self) {
     
-    @scala.inline
-    def setEmployer(value: Name): Self = StObject.set(x, "employer", value.asInstanceOf[js.Any])
+    inline def setEmployer(value: Name): Self = StObject.set(x, "employer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Name): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Name): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

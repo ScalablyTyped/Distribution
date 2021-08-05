@@ -809,11 +809,11 @@ object widgets {
   class Composite[ChildType /* <: Widget */] () extends Widget {
     def this(properties: Properties[typings.tabris.mod.widgets.Composite[Widget], OmitCompositeWidgetset[ChildType]]) = this()
     
-    @JSName("$children")
+    /* private */ @JSName("$children")
     var $children: js.Array[Widget] = js.native
     
-    @JSName("$flushChildren")
-    /* private */ def $flushChildren(): Unit = js.native
+    /* private */ @JSName("$flushChildren")
+    def $flushChildren(): Unit = js.native
     
     /**
       * Called by the framework with each widget that is about to be added as a child of this composite. May
@@ -856,22 +856,22 @@ object widgets {
       rules: js.Function1[/* widget */ this.type, StringDictionary[js.Object]]
     ): this.type = js.native
     /* protected */ def _apply[Target](options: ModeTrigger[Target], rules: StringDictionary[js.Object]): this.type = js.native
-    @JSName("_apply")
-    /* protected */ def _apply_default(mode: default, rules: js.Function1[/* widget */ this.type, StringDictionary[js.Object]]): this.type = js.native
+    /* protected */ @JSName("_apply")
+    def _apply_default(mode: default, rules: js.Function1[/* widget */ this.type, StringDictionary[js.Object]]): this.type = js.native
     /**
       * Identical to the `apply(mode, rules)` method, but intended to be used by subclasses in case the
       * `children` method was overwritten . See "[Encapsulation](../selector.md#encapsulation)"
       * @param mode If this is set to `'strict'` the function checks that all selector match at least one widget, and that id selector match exactly one widget.
       * @param rules The ruleset to apply. May also be given as a callback which is passed to the widget instance and must return the actual ruleset.
       */
-    @JSName("_apply")
-    /* protected */ def _apply_default(mode: default, rules: StringDictionary[js.Object]): this.type = js.native
-    @JSName("_apply")
-    /* protected */ def _apply_strict(mode: strict, rules: js.Function1[/* widget */ this.type, StringDictionary[js.Object]]): this.type = js.native
-    @JSName("_apply")
-    /* protected */ def _apply_strict(mode: strict, rules: StringDictionary[js.Object]): this.type = js.native
-    @JSName("_apply")
-    /* protected */ def _apply_update(trigger: update): this.type = js.native
+    /* protected */ @JSName("_apply")
+    def _apply_default(mode: default, rules: StringDictionary[js.Object]): this.type = js.native
+    /* protected */ @JSName("_apply")
+    def _apply_strict(mode: strict, rules: js.Function1[/* widget */ this.type, StringDictionary[js.Object]]): this.type = js.native
+    /* protected */ @JSName("_apply")
+    def _apply_strict(mode: strict, rules: StringDictionary[js.Object]): this.type = js.native
+    /* protected */ @JSName("_apply")
+    def _apply_update(trigger: update): this.type = js.native
     
     /**
       * Called by the framework with the layout about to be assigned to this composite. May be overwritten to
@@ -906,7 +906,7 @@ object widgets {
     /* protected */ def _initLayout(): Unit = js.native
     /* protected */ def _initLayout(props: typings.tabris.anon.Layout): Unit = js.native
     
-    var _layout: Layout = js.native
+    /* private */ var _layout: Layout = js.native
     
     /**
       * Called by the framework with a child to be removed from this composite. Triggers the 'removeChild'

@@ -33,43 +33,31 @@ trait GetBackupSelectionOutput extends StObject {
 }
 object GetBackupSelectionOutput {
   
-  @scala.inline
-  def apply(): GetBackupSelectionOutput = {
+  inline def apply(): GetBackupSelectionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBackupSelectionOutput]
   }
   
-  @scala.inline
-  implicit class GetBackupSelectionOutputMutableBuilder[Self <: GetBackupSelectionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackupSelectionOutput](x: Self) {
     
-    @scala.inline
-    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
+    inline def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
+    inline def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
     
-    @scala.inline
-    def setBackupSelection(value: BackupSelection): Self = StObject.set(x, "BackupSelection", value.asInstanceOf[js.Any])
+    inline def setBackupSelection(value: BackupSelection): Self = StObject.set(x, "BackupSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupSelectionUndefined: Self = StObject.set(x, "BackupSelection", js.undefined)
+    inline def setBackupSelectionUndefined: Self = StObject.set(x, "BackupSelection", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
+    inline def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
+    inline def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
     
-    @scala.inline
-    def setSelectionId(value: String): Self = StObject.set(x, "SelectionId", value.asInstanceOf[js.Any])
+    inline def setSelectionId(value: String): Self = StObject.set(x, "SelectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionIdUndefined: Self = StObject.set(x, "SelectionId", js.undefined)
+    inline def setSelectionIdUndefined: Self = StObject.set(x, "SelectionId", js.undefined)
   }
 }

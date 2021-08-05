@@ -10,16 +10,13 @@ trait IStreamSocketListenerControl extends StObject {
 }
 object IStreamSocketListenerControl {
   
-  @scala.inline
-  def apply(qualityOfService: SocketQualityOfService): IStreamSocketListenerControl = {
+  inline def apply(qualityOfService: SocketQualityOfService): IStreamSocketListenerControl = {
     val __obj = js.Dynamic.literal(qualityOfService = qualityOfService.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamSocketListenerControl]
   }
   
-  @scala.inline
-  implicit class IStreamSocketListenerControlMutableBuilder[Self <: IStreamSocketListenerControl] (val x: Self) extends AnyVal {
+  extension [Self <: IStreamSocketListenerControl](x: Self) {
     
-    @scala.inline
-    def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
+    inline def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
   }
 }

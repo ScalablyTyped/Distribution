@@ -43,8 +43,7 @@ trait DescribeProjectResponse extends StObject {
 }
 object DescribeProjectResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     portalId: ID,
     projectArn: ARN,
     projectCreationDate: Timestamp,
@@ -56,31 +55,22 @@ object DescribeProjectResponse {
     __obj.asInstanceOf[DescribeProjectResponse]
   }
   
-  @scala.inline
-  implicit class DescribeProjectResponseMutableBuilder[Self <: DescribeProjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProjectResponse](x: Self) {
     
-    @scala.inline
-    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
+    inline def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectArn(value: ARN): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: ARN): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectCreationDate(value: Timestamp): Self = StObject.set(x, "projectCreationDate", value.asInstanceOf[js.Any])
+    inline def setProjectCreationDate(value: Timestamp): Self = StObject.set(x, "projectCreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectDescription(value: Description): Self = StObject.set(x, "projectDescription", value.asInstanceOf[js.Any])
+    inline def setProjectDescription(value: Description): Self = StObject.set(x, "projectDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectDescriptionUndefined: Self = StObject.set(x, "projectDescription", js.undefined)
+    inline def setProjectDescriptionUndefined: Self = StObject.set(x, "projectDescription", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectLastUpdateDate(value: Timestamp): Self = StObject.set(x, "projectLastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setProjectLastUpdateDate(value: Timestamp): Self = StObject.set(x, "projectLastUpdateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectName(value: Name): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: Name): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

@@ -39,8 +39,7 @@ trait IBufferNamespace extends StObject {
 }
 object IBufferNamespace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: IBuffer,
     alternate: IBuffer,
     normal: IBuffer,
@@ -50,19 +49,14 @@ object IBufferNamespace {
     __obj.asInstanceOf[IBufferNamespace]
   }
   
-  @scala.inline
-  implicit class IBufferNamespaceMutableBuilder[Self <: IBufferNamespace] (val x: Self) extends AnyVal {
+  extension [Self <: IBufferNamespace](x: Self) {
     
-    @scala.inline
-    def setActive(value: IBuffer): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: IBuffer): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternate(value: IBuffer): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: IBuffer): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: IBuffer): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: IBuffer): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBufferChange(value: /* listener */ js.Function2[IBuffer, Unit, js.Any] => IDisposable): Self = StObject.set(x, "onBufferChange", js.Any.fromFunction1(value))
+    inline def setOnBufferChange(value: /* listener */ js.Function2[IBuffer, Unit, js.Any] => IDisposable): Self = StObject.set(x, "onBufferChange", js.Any.fromFunction1(value))
   }
 }

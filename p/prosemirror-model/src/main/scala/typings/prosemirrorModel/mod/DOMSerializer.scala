@@ -65,14 +65,12 @@ object DOMSerializer {
     * Build a serializer using the [`toDOM`](#model.NodeSpec.toDOM)
     * properties in a schema's node and mark specs.
     */
-  @scala.inline
-  def fromSchema[S /* <: Schema[js.Any, js.Any] */](schema: S): DOMSerializer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[DOMSerializer[S]]
+  inline def fromSchema[S /* <: Schema[js.Any, js.Any] */](schema: S): DOMSerializer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[DOMSerializer[S]]
   
   /**
     * Render an [output spec](#model.DOMOutputSpec) to a DOM node. If
     * the spec has a hole (zero) in it, `contentDOM` will point at the
     * node with the hole.
     */
-  @scala.inline
-  def renderSpec(doc: Document, structure: DOMOutputSpec): ContentDOM = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSpec")(doc.asInstanceOf[js.Any], structure.asInstanceOf[js.Any])).asInstanceOf[ContentDOM]
+  inline def renderSpec(doc: Document, structure: DOMOutputSpec): ContentDOM = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSpec")(doc.asInstanceOf[js.Any], structure.asInstanceOf[js.Any])).asInstanceOf[ContentDOM]
 }

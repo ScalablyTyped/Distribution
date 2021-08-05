@@ -19,19 +19,15 @@ trait ProjectsCreateColumnEndpoint
 }
 object ProjectsCreateColumnEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[inertia], name: String, project_id: Double): ProjectsCreateColumnEndpoint = {
+  inline def apply(mediaType: `0`[inertia], name: String, project_id: Double): ProjectsCreateColumnEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsCreateColumnEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsCreateColumnEndpointMutableBuilder[Self <: ProjectsCreateColumnEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsCreateColumnEndpoint](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
   }
 }

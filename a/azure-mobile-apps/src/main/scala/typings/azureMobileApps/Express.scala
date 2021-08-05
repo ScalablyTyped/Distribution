@@ -14,17 +14,14 @@ object Express {
   }
   object Request {
     
-    @scala.inline
-    def apply(azureMobile: Context): Request = {
+    inline def apply(azureMobile: Context): Request = {
       val __obj = js.Dynamic.literal(azureMobile = azureMobile.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setAzureMobile(value: Context): Self = StObject.set(x, "azureMobile", value.asInstanceOf[js.Any])
+      inline def setAzureMobile(value: Context): Self = StObject.set(x, "azureMobile", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,20 +31,16 @@ object Express {
   }
   object Response {
     
-    @scala.inline
-    def apply(): Response = {
+    inline def apply(): Response = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setResults(value: js.Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     }
   }
 }

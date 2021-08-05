@@ -17,6 +17,5 @@ object parseBodyMod {
   @JSImport("roads/types/middleware/parseBody", JSImport.Default)
   @js.native
   def default: Middleware = js.native
-  @scala.inline
-  def default_=(x: Middleware): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Middleware): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

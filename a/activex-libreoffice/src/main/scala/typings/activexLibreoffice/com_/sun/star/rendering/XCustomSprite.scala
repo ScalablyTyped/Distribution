@@ -41,8 +41,7 @@ trait XCustomSprite
 }
 object XCustomSprite {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentCanvas: XCanvas,
     acquire: () => Unit,
     clip: XPolyPolygon2D => Unit,
@@ -60,13 +59,10 @@ object XCustomSprite {
     __obj.asInstanceOf[XCustomSprite]
   }
   
-  @scala.inline
-  implicit class XCustomSpriteMutableBuilder[Self <: XCustomSprite] (val x: Self) extends AnyVal {
+  extension [Self <: XCustomSprite](x: Self) {
     
-    @scala.inline
-    def setContentCanvas(value: XCanvas): Self = StObject.set(x, "ContentCanvas", value.asInstanceOf[js.Any])
+    inline def setContentCanvas(value: XCanvas): Self = StObject.set(x, "ContentCanvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContentCanvas(value: () => XCanvas): Self = StObject.set(x, "getContentCanvas", js.Any.fromFunction0(value))
+    inline def setGetContentCanvas(value: () => XCanvas): Self = StObject.set(x, "getContentCanvas", js.Any.fromFunction0(value))
   }
 }

@@ -15,31 +15,23 @@ trait ElementTarget extends StObject {
 }
 object ElementTarget {
   
-  @scala.inline
-  def apply(): ElementTarget = {
+  inline def apply(): ElementTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElementTarget]
   }
   
-  @scala.inline
-  implicit class ElementTargetMutableBuilder[Self <: ElementTarget] (val x: Self) extends AnyVal {
+  extension [Self <: ElementTarget](x: Self) {
     
-    @scala.inline
-    def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setTarget(value: basePointObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: basePointObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

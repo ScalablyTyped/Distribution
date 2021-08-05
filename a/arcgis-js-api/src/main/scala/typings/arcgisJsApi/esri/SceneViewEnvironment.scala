@@ -47,8 +47,7 @@ trait SceneViewEnvironment
 }
 object SceneViewEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -60,37 +59,26 @@ object SceneViewEnvironment {
     __obj.asInstanceOf[SceneViewEnvironment]
   }
   
-  @scala.inline
-  implicit class SceneViewEnvironmentMutableBuilder[Self <: SceneViewEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewEnvironment](x: Self) {
     
-    @scala.inline
-    def setAtmosphere(value: SceneViewEnvironmentAtmosphere): Self = StObject.set(x, "atmosphere", value.asInstanceOf[js.Any])
+    inline def setAtmosphere(value: SceneViewEnvironmentAtmosphere): Self = StObject.set(x, "atmosphere", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtmosphereEnabled(value: Boolean): Self = StObject.set(x, "atmosphereEnabled", value.asInstanceOf[js.Any])
+    inline def setAtmosphereEnabled(value: Boolean): Self = StObject.set(x, "atmosphereEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtmosphereEnabledUndefined: Self = StObject.set(x, "atmosphereEnabled", js.undefined)
+    inline def setAtmosphereEnabledUndefined: Self = StObject.set(x, "atmosphereEnabled", js.undefined)
     
-    @scala.inline
-    def setAtmosphereUndefined: Self = StObject.set(x, "atmosphere", js.undefined)
+    inline def setAtmosphereUndefined: Self = StObject.set(x, "atmosphere", js.undefined)
     
-    @scala.inline
-    def setBackground(value: Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setLighting(value: SceneViewEnvironmentLighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
+    inline def setLighting(value: SceneViewEnvironmentLighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
+    inline def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
     
-    @scala.inline
-    def setStarsEnabled(value: Boolean): Self = StObject.set(x, "starsEnabled", value.asInstanceOf[js.Any])
+    inline def setStarsEnabled(value: Boolean): Self = StObject.set(x, "starsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarsEnabledUndefined: Self = StObject.set(x, "starsEnabled", js.undefined)
+    inline def setStarsEnabledUndefined: Self = StObject.set(x, "starsEnabled", js.undefined)
   }
 }

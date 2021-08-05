@@ -32,28 +32,21 @@ trait RouteStep extends StObject {
 }
 object RouteStep {
   
-  @scala.inline
-  def apply(distance: Double, instructions: String, path: js.Array[Coordinate], transportType: Transport): RouteStep = {
+  inline def apply(distance: Double, instructions: String, path: js.Array[Coordinate], transportType: Transport): RouteStep = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instructions = instructions.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], transportType = transportType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteStep]
   }
   
-  @scala.inline
-  implicit class RouteStepMutableBuilder[Self <: RouteStep] (val x: Self) extends AnyVal {
+  extension [Self <: RouteStep](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+    inline def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Array[Coordinate]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[Coordinate]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: Coordinate*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Coordinate*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
+    inline def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
   }
 }

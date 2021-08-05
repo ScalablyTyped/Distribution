@@ -10,19 +10,15 @@ trait Refreshtoken extends StObject {
 }
 object Refreshtoken {
   
-  @scala.inline
-  def apply(): Refreshtoken = {
+  inline def apply(): Refreshtoken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Refreshtoken]
   }
   
-  @scala.inline
-  implicit class RefreshtokenMutableBuilder[Self <: Refreshtoken] (val x: Self) extends AnyVal {
+  extension [Self <: Refreshtoken](x: Self) {
     
-    @scala.inline
-    def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+    inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
+    inline def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
   }
 }

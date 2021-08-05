@@ -23,25 +23,19 @@ trait SchemaSignupUrl extends StObject {
 }
 object SchemaSignupUrl {
   
-  @scala.inline
-  def apply(): SchemaSignupUrl = {
+  inline def apply(): SchemaSignupUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSignupUrl]
   }
   
-  @scala.inline
-  implicit class SchemaSignupUrlMutableBuilder[Self <: SchemaSignupUrl] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSignupUrl](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait ClusterEncryptionInfo extends StObject {
 }
 object ClusterEncryptionInfo {
   
-  @scala.inline
-  def apply(encryptionAtRestKmsKeyArn: String): ClusterEncryptionInfo = {
+  inline def apply(encryptionAtRestKmsKeyArn: String): ClusterEncryptionInfo = {
     val __obj = js.Dynamic.literal(encryptionAtRestKmsKeyArn = encryptionAtRestKmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterEncryptionInfo]
   }
   
-  @scala.inline
-  implicit class ClusterEncryptionInfoMutableBuilder[Self <: ClusterEncryptionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterEncryptionInfo](x: Self) {
     
-    @scala.inline
-    def setEncryptionAtRestKmsKeyArn(value: String): Self = StObject.set(x, "encryptionAtRestKmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setEncryptionAtRestKmsKeyArn(value: String): Self = StObject.set(x, "encryptionAtRestKmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionInTransit(value: ClusterEncryptionInfoEncryptionInTransit): Self = StObject.set(x, "encryptionInTransit", value.asInstanceOf[js.Any])
+    inline def setEncryptionInTransit(value: ClusterEncryptionInfoEncryptionInTransit): Self = StObject.set(x, "encryptionInTransit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionInTransitUndefined: Self = StObject.set(x, "encryptionInTransit", js.undefined)
+    inline def setEncryptionInTransitUndefined: Self = StObject.set(x, "encryptionInTransit", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait HttpMethod extends StObject {
 }
 object HttpMethod {
   
-  @scala.inline
-  def apply(method: String): HttpMethod = {
+  inline def apply(method: String): HttpMethod = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpMethod]
   }
   
-  @scala.inline
-  implicit class HttpMethodMutableBuilder[Self <: HttpMethod] (val x: Self) extends AnyVal {
+  extension [Self <: HttpMethod](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }
 }

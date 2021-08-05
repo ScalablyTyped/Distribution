@@ -23,34 +23,25 @@ trait GetEnabledStandardsRequest extends StObject {
 }
 object GetEnabledStandardsRequest {
   
-  @scala.inline
-  def apply(): GetEnabledStandardsRequest = {
+  inline def apply(): GetEnabledStandardsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEnabledStandardsRequest]
   }
   
-  @scala.inline
-  implicit class GetEnabledStandardsRequestMutableBuilder[Self <: GetEnabledStandardsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEnabledStandardsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStandardsSubscriptionArns(value: StandardsSubscriptionArns): Self = StObject.set(x, "StandardsSubscriptionArns", value.asInstanceOf[js.Any])
+    inline def setStandardsSubscriptionArns(value: StandardsSubscriptionArns): Self = StObject.set(x, "StandardsSubscriptionArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsSubscriptionArnsUndefined: Self = StObject.set(x, "StandardsSubscriptionArns", js.undefined)
+    inline def setStandardsSubscriptionArnsUndefined: Self = StObject.set(x, "StandardsSubscriptionArns", js.undefined)
     
-    @scala.inline
-    def setStandardsSubscriptionArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "StandardsSubscriptionArns", js.Array(value :_*))
+    inline def setStandardsSubscriptionArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "StandardsSubscriptionArns", js.Array(value :_*))
   }
 }

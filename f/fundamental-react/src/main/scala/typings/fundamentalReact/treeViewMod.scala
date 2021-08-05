@@ -54,50 +54,42 @@ object treeViewMod {
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.childContextTypes")
       @js.native
       def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.contextType")
       @js.native
       def contextType: js.UndefOr[Context[js.Any]] = js.native
-      @scala.inline
-      def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.contextTypes")
       @js.native
       def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.defaultProps")
       @js.native
       def defaultProps: js.UndefOr[js.Object] = js.native
-      @scala.inline
-      def defaultProps_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+      inline def defaultProps_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.displayName")
       @js.native
       def displayName: js.UndefOr[String | TreeViewDotBranch] = js.native
-      @scala.inline
-      def displayName_=(x: js.UndefOr[String | TreeViewDotBranch]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: js.UndefOr[String | TreeViewDotBranch]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.getDerivedStateFromError")
       @js.native
       def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[js.Object, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[js.Object, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[js.Object, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.getDerivedStateFromProps")
       @js.native
       def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[js.Object, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[js.Object, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[js.Object, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Branch.propTypes")
       @js.native
       def propTypes: js.UndefOr[js.Object] = js.native
-      @scala.inline
-      def propTypes_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+      inline def propTypes_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -119,50 +111,42 @@ object treeViewMod {
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.childContextTypes")
       @js.native
       def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.contextType")
       @js.native
       def contextType: js.UndefOr[Context[js.Any]] = js.native
-      @scala.inline
-      def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.contextTypes")
       @js.native
       def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.defaultProps")
       @js.native
       def defaultProps: js.UndefOr[PartialTreeColProps] = js.native
-      @scala.inline
-      def defaultProps_=(x: js.UndefOr[PartialTreeColProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+      inline def defaultProps_=(x: js.UndefOr[PartialTreeColProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.displayName")
       @js.native
       def displayName: js.UndefOr[String | TreeViewDotCol] = js.native
-      @scala.inline
-      def displayName_=(x: js.UndefOr[String | TreeViewDotCol]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: js.UndefOr[String | TreeViewDotCol]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.getDerivedStateFromError")
       @js.native
       def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[TreeColProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[TreeColProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[TreeColProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.getDerivedStateFromProps")
       @js.native
       def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[TreeColProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[TreeColProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[TreeColProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Col.propTypes")
       @js.native
       def propTypes: js.UndefOr[WeakValidationMapTreeColP] = js.native
-      @scala.inline
-      def propTypes_=(x: js.UndefOr[WeakValidationMapTreeColP]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+      inline def propTypes_=(x: js.UndefOr[WeakValidationMapTreeColP]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -184,50 +168,42 @@ object treeViewMod {
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.childContextTypes")
       @js.native
       def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.contextType")
       @js.native
       def contextType: js.UndefOr[Context[js.Any]] = js.native
-      @scala.inline
-      def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.contextTypes")
       @js.native
       def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.defaultProps")
       @js.native
       def defaultProps: js.UndefOr[PartialTreeHeadProps] = js.native
-      @scala.inline
-      def defaultProps_=(x: js.UndefOr[PartialTreeHeadProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+      inline def defaultProps_=(x: js.UndefOr[PartialTreeHeadProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.displayName")
       @js.native
       def displayName: js.UndefOr[String | TreeViewDotHead] = js.native
-      @scala.inline
-      def displayName_=(x: js.UndefOr[String | TreeViewDotHead]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: js.UndefOr[String | TreeViewDotHead]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.getDerivedStateFromError")
       @js.native
       def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[TreeHeadProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[TreeHeadProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[TreeHeadProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.getDerivedStateFromProps")
       @js.native
       def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[TreeHeadProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[TreeHeadProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[TreeHeadProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Head.propTypes")
       @js.native
       def propTypes: js.UndefOr[WeakValidationMapTreeHead] = js.native
-      @scala.inline
-      def propTypes_=(x: js.UndefOr[WeakValidationMapTreeHead]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+      inline def propTypes_=(x: js.UndefOr[WeakValidationMapTreeHead]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -249,50 +225,42 @@ object treeViewMod {
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.childContextTypes")
       @js.native
       def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.contextType")
       @js.native
       def contextType: js.UndefOr[Context[js.Any]] = js.native
-      @scala.inline
-      def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.contextTypes")
       @js.native
       def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.defaultProps")
       @js.native
       def defaultProps: js.UndefOr[PartialTreeItemProps] = js.native
-      @scala.inline
-      def defaultProps_=(x: js.UndefOr[PartialTreeItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+      inline def defaultProps_=(x: js.UndefOr[PartialTreeItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.displayName")
       @js.native
       def displayName: js.UndefOr[String | TreeViewDotItem] = js.native
-      @scala.inline
-      def displayName_=(x: js.UndefOr[String | TreeViewDotItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: js.UndefOr[String | TreeViewDotItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.getDerivedStateFromError")
       @js.native
       def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[TreeItemProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[TreeItemProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[TreeItemProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.getDerivedStateFromProps")
       @js.native
       def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[TreeItemProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[TreeItemProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[TreeItemProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Item.propTypes")
       @js.native
       def propTypes: js.UndefOr[WeakValidationMapTreeItem] = js.native
-      @scala.inline
-      def propTypes_=(x: js.UndefOr[WeakValidationMapTreeItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+      inline def propTypes_=(x: js.UndefOr[WeakValidationMapTreeItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -314,50 +282,42 @@ object treeViewMod {
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.childContextTypes")
       @js.native
       def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.contextType")
       @js.native
       def contextType: js.UndefOr[Context[js.Any]] = js.native
-      @scala.inline
-      def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.contextTypes")
       @js.native
       def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.defaultProps")
       @js.native
       def defaultProps: js.UndefOr[PartialTreeRowProps] = js.native
-      @scala.inline
-      def defaultProps_=(x: js.UndefOr[PartialTreeRowProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+      inline def defaultProps_=(x: js.UndefOr[PartialTreeRowProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.displayName")
       @js.native
       def displayName: js.UndefOr[String | TreeViewDotRow] = js.native
-      @scala.inline
-      def displayName_=(x: js.UndefOr[String | TreeViewDotRow]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: js.UndefOr[String | TreeViewDotRow]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.getDerivedStateFromError")
       @js.native
       def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[TreeRowProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[TreeRowProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[TreeRowProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.getDerivedStateFromProps")
       @js.native
       def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[TreeRowProps, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[TreeRowProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[TreeRowProps, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Row.propTypes")
       @js.native
       def propTypes: js.UndefOr[WeakValidationMapTreeRowP] = js.native
-      @scala.inline
-      def propTypes_=(x: js.UndefOr[WeakValidationMapTreeRowP]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+      inline def propTypes_=(x: js.UndefOr[WeakValidationMapTreeRowP]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -379,50 +339,42 @@ object treeViewMod {
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.childContextTypes")
       @js.native
       def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+      inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.contextType")
       @js.native
       def contextType: js.UndefOr[Context[js.Any]] = js.native
-      @scala.inline
-      def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+      inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.contextTypes")
       @js.native
       def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-      @scala.inline
-      def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+      inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.defaultProps")
       @js.native
       def defaultProps: js.UndefOr[js.Object] = js.native
-      @scala.inline
-      def defaultProps_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+      inline def defaultProps_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.displayName")
       @js.native
       def displayName: js.UndefOr[String | TreeViewDotTree] = js.native
-      @scala.inline
-      def displayName_=(x: js.UndefOr[String | TreeViewDotTree]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: js.UndefOr[String | TreeViewDotTree]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.getDerivedStateFromError")
       @js.native
       def getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[js.Object, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[js.Object, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromError_=(x: js.UndefOr[GetDerivedStateFromError[js.Object, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.getDerivedStateFromProps")
       @js.native
       def getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[js.Object, ComponentState]] = js.native
-      @scala.inline
-      def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[js.Object, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+      inline def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[js.Object, ComponentState]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
       
       @JSImport("fundamental-react/lib/TreeView/TreeView", "default.Tree.propTypes")
       @js.native
       def propTypes: js.UndefOr[js.Object] = js.native
-      @scala.inline
-      def propTypes_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+      inline def propTypes_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -431,8 +383,7 @@ object treeViewMod {
        with HTMLAttributes[HTMLDivElement]
   object TreeColProps {
     
-    @scala.inline
-    def apply(): TreeColProps = {
+    inline def apply(): TreeColProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeColProps]
     }
@@ -450,32 +401,24 @@ object treeViewMod {
   }
   object TreeHeadProps {
     
-    @scala.inline
-    def apply(): TreeHeadProps = {
+    inline def apply(): TreeHeadProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeHeadProps]
     }
     
-    @scala.inline
-    implicit class TreeHeadPropsMutableBuilder[Self <: TreeHeadProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeHeadProps](x: Self) {
       
-      @scala.inline
-      def setButtonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+      inline def setButtonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
+      inline def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      @scala.inline
-      def setOnExpandAll(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onExpandAll", js.Any.fromFunction1(value))
+      inline def setOnExpandAll(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onExpandAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpandAllUndefined: Self = StObject.set(x, "onExpandAll", js.undefined)
+      inline def setOnExpandAllUndefined: Self = StObject.set(x, "onExpandAll", js.undefined)
     }
   }
   
@@ -489,26 +432,20 @@ object treeViewMod {
   }
   object TreeItemProps {
     
-    @scala.inline
-    def apply(): TreeItemProps = {
+    inline def apply(): TreeItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeItemProps]
     }
     
-    @scala.inline
-    implicit class TreeItemPropsMutableBuilder[Self <: TreeItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeItemProps](x: Self) {
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      @scala.inline
-      def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+      inline def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
+      inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
     }
   }
   
@@ -526,38 +463,28 @@ object treeViewMod {
   }
   object TreeRowProps {
     
-    @scala.inline
-    def apply(): TreeRowProps = {
+    inline def apply(): TreeRowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeRowProps]
     }
     
-    @scala.inline
-    implicit class TreeRowPropsMutableBuilder[Self <: TreeRowProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeRowProps](x: Self) {
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      @scala.inline
-      def setIsParent(value: Boolean): Self = StObject.set(x, "isParent", value.asInstanceOf[js.Any])
+      inline def setIsParent(value: Boolean): Self = StObject.set(x, "isParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsParentUndefined: Self = StObject.set(x, "isParent", js.undefined)
+      inline def setIsParentUndefined: Self = StObject.set(x, "isParent", js.undefined)
       
-      @scala.inline
-      def setOnExpandClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onExpandClick", js.Any.fromFunction1(value))
+      inline def setOnExpandClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onExpandClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpandClickUndefined: Self = StObject.set(x, "onExpandClick", js.undefined)
+      inline def setOnExpandClickUndefined: Self = StObject.set(x, "onExpandClick", js.undefined)
       
-      @scala.inline
-      def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+      inline def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
+      inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
     }
   }
   
@@ -582,38 +509,28 @@ object treeViewMod {
   }
   object TreeViewProps {
     
-    @scala.inline
-    def apply(): TreeViewProps = {
+    inline def apply(): TreeViewProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeViewProps]
     }
     
-    @scala.inline
-    implicit class TreeViewPropsMutableBuilder[Self <: TreeViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeViewProps](x: Self) {
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setExpandData(value: StringDictionary[Boolean]): Self = StObject.set(x, "expandData", value.asInstanceOf[js.Any])
+      inline def setExpandData(value: StringDictionary[Boolean]): Self = StObject.set(x, "expandData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandDataUndefined: Self = StObject.set(x, "expandData", js.undefined)
+      inline def setExpandDataUndefined: Self = StObject.set(x, "expandData", js.undefined)
       
-      @scala.inline
-      def setIsExpandAll(value: Boolean): Self = StObject.set(x, "isExpandAll", value.asInstanceOf[js.Any])
+      inline def setIsExpandAll(value: Boolean): Self = StObject.set(x, "isExpandAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandAllUndefined: Self = StObject.set(x, "isExpandAll", js.undefined)
+      inline def setIsExpandAllUndefined: Self = StObject.set(x, "isExpandAll", js.undefined)
       
-      @scala.inline
-      def setOnExpandChange(value: /* expandData */ StringDictionary[Boolean] => Unit): Self = StObject.set(x, "onExpandChange", js.Any.fromFunction1(value))
+      inline def setOnExpandChange(value: /* expandData */ StringDictionary[Boolean] => Unit): Self = StObject.set(x, "onExpandChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpandChangeUndefined: Self = StObject.set(x, "onExpandChange", js.undefined)
+      inline def setOnExpandChangeUndefined: Self = StObject.set(x, "onExpandChange", js.undefined)
     }
   }
 }

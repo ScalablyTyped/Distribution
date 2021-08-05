@@ -10,16 +10,13 @@ trait NavigationOrientationInjectedProps extends StObject {
 }
 object NavigationOrientationInjectedProps {
   
-  @scala.inline
-  def apply(isLandscape: Boolean): NavigationOrientationInjectedProps = {
+  inline def apply(isLandscape: Boolean): NavigationOrientationInjectedProps = {
     val __obj = js.Dynamic.literal(isLandscape = isLandscape.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationOrientationInjectedProps]
   }
   
-  @scala.inline
-  implicit class NavigationOrientationInjectedPropsMutableBuilder[Self <: NavigationOrientationInjectedProps] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationOrientationInjectedProps](x: Self) {
     
-    @scala.inline
-    def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
+    inline def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
   }
 }

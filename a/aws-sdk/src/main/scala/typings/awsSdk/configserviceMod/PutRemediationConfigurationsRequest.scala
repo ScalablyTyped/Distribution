@@ -13,19 +13,15 @@ trait PutRemediationConfigurationsRequest extends StObject {
 }
 object PutRemediationConfigurationsRequest {
   
-  @scala.inline
-  def apply(RemediationConfigurations: RemediationConfigurations): PutRemediationConfigurationsRequest = {
+  inline def apply(RemediationConfigurations: RemediationConfigurations): PutRemediationConfigurationsRequest = {
     val __obj = js.Dynamic.literal(RemediationConfigurations = RemediationConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRemediationConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class PutRemediationConfigurationsRequestMutableBuilder[Self <: PutRemediationConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutRemediationConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setRemediationConfigurations(value: RemediationConfigurations): Self = StObject.set(x, "RemediationConfigurations", value.asInstanceOf[js.Any])
+    inline def setRemediationConfigurations(value: RemediationConfigurations): Self = StObject.set(x, "RemediationConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemediationConfigurationsVarargs(value: RemediationConfiguration*): Self = StObject.set(x, "RemediationConfigurations", js.Array(value :_*))
+    inline def setRemediationConfigurationsVarargs(value: RemediationConfiguration*): Self = StObject.set(x, "RemediationConfigurations", js.Array(value :_*))
   }
 }

@@ -24,8 +24,7 @@ trait OwnedStructure[T /* <: StructureConstant */]
 }
 object OwnedStructure {
   
-  @scala.inline
-  def apply[T /* <: StructureConstant */](
+  inline def apply[T /* <: StructureConstant */](
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,
@@ -42,16 +41,12 @@ object OwnedStructure {
     __obj.asInstanceOf[OwnedStructure[T]]
   }
   
-  @scala.inline
-  implicit class OwnedStructureMutableBuilder[Self <: OwnedStructure[?], T /* <: StructureConstant */] (val x: Self & OwnedStructure[T]) extends AnyVal {
+  extension [Self <: OwnedStructure[?], T /* <: StructureConstant */](x: Self & OwnedStructure[T]) {
     
-    @scala.inline
-    def setMy(value: Boolean): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    inline def setMy(value: Boolean): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: Owner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Owner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

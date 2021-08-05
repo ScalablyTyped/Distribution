@@ -17,34 +17,25 @@ trait IMarkdownString extends StObject {
 }
 object IMarkdownString {
   
-  @scala.inline
-  def apply(value: String): IMarkdownString = {
+  inline def apply(value: String): IMarkdownString = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarkdownString]
   }
   
-  @scala.inline
-  implicit class IMarkdownStringMutableBuilder[Self <: IMarkdownString] (val x: Self) extends AnyVal {
+  extension [Self <: IMarkdownString](x: Self) {
     
-    @scala.inline
-    def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+    inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
+    inline def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
     
-    @scala.inline
-    def setSupportThemeIcons(value: Boolean): Self = StObject.set(x, "supportThemeIcons", value.asInstanceOf[js.Any])
+    inline def setSupportThemeIcons(value: Boolean): Self = StObject.set(x, "supportThemeIcons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportThemeIconsUndefined: Self = StObject.set(x, "supportThemeIcons", js.undefined)
+    inline def setSupportThemeIconsUndefined: Self = StObject.set(x, "supportThemeIcons", js.undefined)
     
-    @scala.inline
-    def setUris(value: StringDictionary[UriComponents]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
+    inline def setUris(value: StringDictionary[UriComponents]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
+    inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

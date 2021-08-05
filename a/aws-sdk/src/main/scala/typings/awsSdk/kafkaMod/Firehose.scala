@@ -12,22 +12,17 @@ trait Firehose extends StObject {
 }
 object Firehose {
   
-  @scala.inline
-  def apply(Enabled: boolean): Firehose = {
+  inline def apply(Enabled: boolean): Firehose = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Firehose]
   }
   
-  @scala.inline
-  implicit class FirehoseMutableBuilder[Self <: Firehose] (val x: Self) extends AnyVal {
+  extension [Self <: Firehose](x: Self) {
     
-    @scala.inline
-    def setDeliveryStream(value: string): Self = StObject.set(x, "DeliveryStream", value.asInstanceOf[js.Any])
+    inline def setDeliveryStream(value: string): Self = StObject.set(x, "DeliveryStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamUndefined: Self = StObject.set(x, "DeliveryStream", js.undefined)
+    inline def setDeliveryStreamUndefined: Self = StObject.set(x, "DeliveryStream", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }
 }

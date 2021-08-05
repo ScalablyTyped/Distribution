@@ -18,6 +18,5 @@ object String {
   /**
     * Allows manipulation and formatting of text strings and determination and location of substrings within strings.
     */
-  @scala.inline
-  def apply: StringConstructor = js.Dynamic.global.selectDynamic("String").asInstanceOf[StringConstructor]
+  inline def apply: StringConstructor = js.Dynamic.global.selectDynamic("String").asInstanceOf[StringConstructor]
 }

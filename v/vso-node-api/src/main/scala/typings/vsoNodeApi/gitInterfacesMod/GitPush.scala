@@ -18,8 +18,7 @@ trait GitPush
 }
 object GitPush {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     commits: js.Array[GitCommitRef],
     date: Date,
@@ -34,22 +33,16 @@ object GitPush {
     __obj.asInstanceOf[GitPush]
   }
   
-  @scala.inline
-  implicit class GitPushMutableBuilder[Self <: GitPush] (val x: Self) extends AnyVal {
+  extension [Self <: GitPush](x: Self) {
     
-    @scala.inline
-    def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
     
-    @scala.inline
-    def setRefUpdates(value: js.Array[GitRefUpdate]): Self = StObject.set(x, "refUpdates", value.asInstanceOf[js.Any])
+    inline def setRefUpdates(value: js.Array[GitRefUpdate]): Self = StObject.set(x, "refUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUpdatesVarargs(value: GitRefUpdate*): Self = StObject.set(x, "refUpdates", js.Array(value :_*))
+    inline def setRefUpdatesVarargs(value: GitRefUpdate*): Self = StObject.set(x, "refUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

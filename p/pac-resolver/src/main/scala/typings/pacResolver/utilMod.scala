@@ -12,9 +12,7 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dnsLookup(host: String, opts: LookupOptions): js.Promise[String | js.Array[LookupAddress]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dnsLookup")(host.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.Array[LookupAddress]]]
+  inline def dnsLookup(host: String, opts: LookupOptions): js.Promise[String | js.Array[LookupAddress]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dnsLookup")(host.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.Array[LookupAddress]]]
   
-  @scala.inline
-  def isGMT(v: js.Any): /* is pac-resolver.pac-resolver.GMT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGMT")(v.asInstanceOf[js.Any]).asInstanceOf[/* is pac-resolver.pac-resolver.GMT */ Boolean]
+  inline def isGMT(v: js.Any): /* is pac-resolver.pac-resolver.GMT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGMT")(v.asInstanceOf[js.Any]).asInstanceOf[/* is pac-resolver.pac-resolver.GMT */ Boolean]
 }

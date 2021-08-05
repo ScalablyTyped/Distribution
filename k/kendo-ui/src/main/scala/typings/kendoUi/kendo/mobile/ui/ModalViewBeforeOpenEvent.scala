@@ -13,19 +13,15 @@ trait ModalViewBeforeOpenEvent
 }
 object ModalViewBeforeOpenEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ModalView): ModalViewBeforeOpenEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ModalView): ModalViewBeforeOpenEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalViewBeforeOpenEvent]
   }
   
-  @scala.inline
-  implicit class ModalViewBeforeOpenEventMutableBuilder[Self <: ModalViewBeforeOpenEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ModalViewBeforeOpenEvent](x: Self) {
     
-    @scala.inline
-    def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Function0[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[String]]
+  inline def apply(): js.Function0[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[String]]
   
   @JSImport("elegant-spinner", JSImport.Namespace)
   @js.native
@@ -16,6 +15,5 @@ object mod {
   @JSImport("elegant-spinner", "frames")
   @js.native
   def frames: js.Array[String] = js.native
-  @scala.inline
-  def frames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frames")(x.asInstanceOf[js.Any])
+  inline def frames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frames")(x.asInstanceOf[js.Any])
 }

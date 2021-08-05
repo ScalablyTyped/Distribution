@@ -13,25 +13,19 @@ trait Locale extends StObject {
 }
 object Locale {
   
-  @scala.inline
-  def apply(): Locale = {
+  inline def apply(): Locale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Locale]
   }
   
-  @scala.inline
-  implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+  extension [Self <: Locale](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setRuleResults(value: StringDictionary[LocalizedRuleName]): Self = StObject.set(x, "ruleResults", value.asInstanceOf[js.Any])
+    inline def setRuleResults(value: StringDictionary[LocalizedRuleName]): Self = StObject.set(x, "ruleResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleResultsUndefined: Self = StObject.set(x, "ruleResults", js.undefined)
+    inline def setRuleResultsUndefined: Self = StObject.set(x, "ruleResults", js.undefined)
   }
 }

@@ -98,187 +98,127 @@ trait GoogleAppsCloudidentityDevicesV1Device extends StObject {
 }
 object GoogleAppsCloudidentityDevicesV1Device {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1Device = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1Device = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1Device]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1DeviceMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1Device] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1Device](x: Self) {
     
-    @scala.inline
-    def setAndroidSpecificAttributes(value: GoogleAppsCloudidentityDevicesV1AndroidAttributes): Self = StObject.set(x, "androidSpecificAttributes", value.asInstanceOf[js.Any])
+    inline def setAndroidSpecificAttributes(value: GoogleAppsCloudidentityDevicesV1AndroidAttributes): Self = StObject.set(x, "androidSpecificAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidSpecificAttributesUndefined: Self = StObject.set(x, "androidSpecificAttributes", js.undefined)
+    inline def setAndroidSpecificAttributesUndefined: Self = StObject.set(x, "androidSpecificAttributes", js.undefined)
     
-    @scala.inline
-    def setAssetTag(value: String): Self = StObject.set(x, "assetTag", value.asInstanceOf[js.Any])
+    inline def setAssetTag(value: String): Self = StObject.set(x, "assetTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTagUndefined: Self = StObject.set(x, "assetTag", js.undefined)
+    inline def setAssetTagUndefined: Self = StObject.set(x, "assetTag", js.undefined)
     
-    @scala.inline
-    def setBasebandVersion(value: String): Self = StObject.set(x, "basebandVersion", value.asInstanceOf[js.Any])
+    inline def setBasebandVersion(value: String): Self = StObject.set(x, "basebandVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasebandVersionUndefined: Self = StObject.set(x, "basebandVersion", js.undefined)
+    inline def setBasebandVersionUndefined: Self = StObject.set(x, "basebandVersion", js.undefined)
     
-    @scala.inline
-    def setBootloaderVersion(value: String): Self = StObject.set(x, "bootloaderVersion", value.asInstanceOf[js.Any])
+    inline def setBootloaderVersion(value: String): Self = StObject.set(x, "bootloaderVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootloaderVersionUndefined: Self = StObject.set(x, "bootloaderVersion", js.undefined)
+    inline def setBootloaderVersionUndefined: Self = StObject.set(x, "bootloaderVersion", js.undefined)
     
-    @scala.inline
-    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
+    inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
-    @scala.inline
-    def setBuildNumber(value: String): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
+    inline def setBuildNumber(value: String): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildNumberUndefined: Self = StObject.set(x, "buildNumber", js.undefined)
+    inline def setBuildNumberUndefined: Self = StObject.set(x, "buildNumber", js.undefined)
     
-    @scala.inline
-    def setCompromisedState(value: String): Self = StObject.set(x, "compromisedState", value.asInstanceOf[js.Any])
+    inline def setCompromisedState(value: String): Self = StObject.set(x, "compromisedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompromisedStateUndefined: Self = StObject.set(x, "compromisedState", js.undefined)
+    inline def setCompromisedStateUndefined: Self = StObject.set(x, "compromisedState", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
+    inline def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
     
-    @scala.inline
-    def setEnabledDeveloperOptions(value: Boolean): Self = StObject.set(x, "enabledDeveloperOptions", value.asInstanceOf[js.Any])
+    inline def setEnabledDeveloperOptions(value: Boolean): Self = StObject.set(x, "enabledDeveloperOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledDeveloperOptionsUndefined: Self = StObject.set(x, "enabledDeveloperOptions", js.undefined)
+    inline def setEnabledDeveloperOptionsUndefined: Self = StObject.set(x, "enabledDeveloperOptions", js.undefined)
     
-    @scala.inline
-    def setEnabledUsbDebugging(value: Boolean): Self = StObject.set(x, "enabledUsbDebugging", value.asInstanceOf[js.Any])
+    inline def setEnabledUsbDebugging(value: Boolean): Self = StObject.set(x, "enabledUsbDebugging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUsbDebuggingUndefined: Self = StObject.set(x, "enabledUsbDebugging", js.undefined)
+    inline def setEnabledUsbDebuggingUndefined: Self = StObject.set(x, "enabledUsbDebugging", js.undefined)
     
-    @scala.inline
-    def setEncryptionState(value: String): Self = StObject.set(x, "encryptionState", value.asInstanceOf[js.Any])
+    inline def setEncryptionState(value: String): Self = StObject.set(x, "encryptionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionStateUndefined: Self = StObject.set(x, "encryptionState", js.undefined)
+    inline def setEncryptionStateUndefined: Self = StObject.set(x, "encryptionState", js.undefined)
     
-    @scala.inline
-    def setImei(value: String): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
+    inline def setImei(value: String): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImeiUndefined: Self = StObject.set(x, "imei", js.undefined)
+    inline def setImeiUndefined: Self = StObject.set(x, "imei", js.undefined)
     
-    @scala.inline
-    def setKernelVersion(value: String): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
+    inline def setKernelVersion(value: String): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelVersionUndefined: Self = StObject.set(x, "kernelVersion", js.undefined)
+    inline def setKernelVersionUndefined: Self = StObject.set(x, "kernelVersion", js.undefined)
     
-    @scala.inline
-    def setLastSyncTime(value: String): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
+    inline def setLastSyncTime(value: String): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSyncTimeUndefined: Self = StObject.set(x, "lastSyncTime", js.undefined)
+    inline def setLastSyncTimeUndefined: Self = StObject.set(x, "lastSyncTime", js.undefined)
     
-    @scala.inline
-    def setManagementState(value: String): Self = StObject.set(x, "managementState", value.asInstanceOf[js.Any])
+    inline def setManagementState(value: String): Self = StObject.set(x, "managementState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagementStateUndefined: Self = StObject.set(x, "managementState", js.undefined)
+    inline def setManagementStateUndefined: Self = StObject.set(x, "managementState", js.undefined)
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
-    @scala.inline
-    def setMeid(value: String): Self = StObject.set(x, "meid", value.asInstanceOf[js.Any])
+    inline def setMeid(value: String): Self = StObject.set(x, "meid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeidUndefined: Self = StObject.set(x, "meid", js.undefined)
+    inline def setMeidUndefined: Self = StObject.set(x, "meid", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetworkOperator(value: String): Self = StObject.set(x, "networkOperator", value.asInstanceOf[js.Any])
+    inline def setNetworkOperator(value: String): Self = StObject.set(x, "networkOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkOperatorUndefined: Self = StObject.set(x, "networkOperator", js.undefined)
+    inline def setNetworkOperatorUndefined: Self = StObject.set(x, "networkOperator", js.undefined)
     
-    @scala.inline
-    def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
+    inline def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
+    inline def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
     
-    @scala.inline
-    def setOtherAccounts(value: js.Array[String]): Self = StObject.set(x, "otherAccounts", value.asInstanceOf[js.Any])
+    inline def setOtherAccounts(value: js.Array[String]): Self = StObject.set(x, "otherAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherAccountsUndefined: Self = StObject.set(x, "otherAccounts", js.undefined)
+    inline def setOtherAccountsUndefined: Self = StObject.set(x, "otherAccounts", js.undefined)
     
-    @scala.inline
-    def setOtherAccountsVarargs(value: String*): Self = StObject.set(x, "otherAccounts", js.Array(value :_*))
+    inline def setOtherAccountsVarargs(value: String*): Self = StObject.set(x, "otherAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setOwnerType(value: String): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
+    inline def setOwnerType(value: String): Self = StObject.set(x, "ownerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
+    inline def setOwnerTypeUndefined: Self = StObject.set(x, "ownerType", js.undefined)
     
-    @scala.inline
-    def setReleaseVersion(value: String): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
+    inline def setReleaseVersion(value: String): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
+    inline def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
     
-    @scala.inline
-    def setSecurityPatchTime(value: String): Self = StObject.set(x, "securityPatchTime", value.asInstanceOf[js.Any])
+    inline def setSecurityPatchTime(value: String): Self = StObject.set(x, "securityPatchTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityPatchTimeUndefined: Self = StObject.set(x, "securityPatchTime", js.undefined)
+    inline def setSecurityPatchTimeUndefined: Self = StObject.set(x, "securityPatchTime", js.undefined)
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
+    inline def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
     
-    @scala.inline
-    def setWifiMacAddresses(value: js.Array[String]): Self = StObject.set(x, "wifiMacAddresses", value.asInstanceOf[js.Any])
+    inline def setWifiMacAddresses(value: js.Array[String]): Self = StObject.set(x, "wifiMacAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiMacAddressesUndefined: Self = StObject.set(x, "wifiMacAddresses", js.undefined)
+    inline def setWifiMacAddressesUndefined: Self = StObject.set(x, "wifiMacAddresses", js.undefined)
     
-    @scala.inline
-    def setWifiMacAddressesVarargs(value: String*): Self = StObject.set(x, "wifiMacAddresses", js.Array(value :_*))
+    inline def setWifiMacAddressesVarargs(value: String*): Self = StObject.set(x, "wifiMacAddresses", js.Array(value :_*))
   }
 }

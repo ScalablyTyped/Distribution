@@ -10,16 +10,13 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSt
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration {
   
-  @scala.inline
-  def apply(inputStartingPosition: String): ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration = {
+  inline def apply(inputStartingPosition: String): ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration = {
     val __obj = js.Dynamic.literal(inputStartingPosition = inputStartingPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration](x: Self) {
     
-    @scala.inline
-    def setInputStartingPosition(value: String): Self = StObject.set(x, "inputStartingPosition", value.asInstanceOf[js.Any])
+    inline def setInputStartingPosition(value: String): Self = StObject.set(x, "inputStartingPosition", value.asInstanceOf[js.Any])
   }
 }

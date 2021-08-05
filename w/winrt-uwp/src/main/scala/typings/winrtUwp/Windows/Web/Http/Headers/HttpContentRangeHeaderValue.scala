@@ -21,25 +21,19 @@ trait HttpContentRangeHeaderValue extends StObject {
 }
 object HttpContentRangeHeaderValue {
   
-  @scala.inline
-  def apply(firstBytePosition: Double, lastBytePosition: Double, length: Double, unit: String): HttpContentRangeHeaderValue = {
+  inline def apply(firstBytePosition: Double, lastBytePosition: Double, length: Double, unit: String): HttpContentRangeHeaderValue = {
     val __obj = js.Dynamic.literal(firstBytePosition = firstBytePosition.asInstanceOf[js.Any], lastBytePosition = lastBytePosition.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpContentRangeHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpContentRangeHeaderValueMutableBuilder[Self <: HttpContentRangeHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpContentRangeHeaderValue](x: Self) {
     
-    @scala.inline
-    def setFirstBytePosition(value: Double): Self = StObject.set(x, "firstBytePosition", value.asInstanceOf[js.Any])
+    inline def setFirstBytePosition(value: Double): Self = StObject.set(x, "firstBytePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastBytePosition(value: Double): Self = StObject.set(x, "lastBytePosition", value.asInstanceOf[js.Any])
+    inline def setLastBytePosition(value: Double): Self = StObject.set(x, "lastBytePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

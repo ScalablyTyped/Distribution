@@ -23,31 +23,23 @@ trait BannerHiddenEventUIParam extends StObject {
 }
 object BannerHiddenEventUIParam {
   
-  @scala.inline
-  def apply(): BannerHiddenEventUIParam = {
+  inline def apply(): BannerHiddenEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BannerHiddenEventUIParam]
   }
   
-  @scala.inline
-  implicit class BannerHiddenEventUIParamMutableBuilder[Self <: BannerHiddenEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: BannerHiddenEventUIParam](x: Self) {
     
-    @scala.inline
-    def setBanner(value: js.Any): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    inline def setBanner(value: js.Any): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerElement(value: js.Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
+    inline def setBannerElement(value: js.Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerElementUndefined: Self = StObject.set(x, "bannerElement", js.undefined)
+    inline def setBannerElementUndefined: Self = StObject.set(x, "bannerElement", js.undefined)
     
-    @scala.inline
-    def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
+    inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

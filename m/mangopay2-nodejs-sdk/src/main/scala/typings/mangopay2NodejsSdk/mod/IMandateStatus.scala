@@ -20,25 +20,19 @@ trait IMandateStatus extends StObject {
 }
 object IMandateStatus {
   
-  @scala.inline
-  def apply(): IMandateStatus = {
+  inline def apply(): IMandateStatus = {
     val __obj = js.Dynamic.literal(Active = "ACTIVE", Created = "CREATED", Failed = "FAILED", Submitted = "SUBMITTED")
     __obj.asInstanceOf[IMandateStatus]
   }
   
-  @scala.inline
-  implicit class IMandateStatusMutableBuilder[Self <: IMandateStatus] (val x: Self) extends AnyVal {
+  extension [Self <: IMandateStatus](x: Self) {
     
-    @scala.inline
-    def setActive(value: ACTIVE): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: ACTIVE): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailed(value: FAILED): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: FAILED): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitted(value: SUBMITTED): Self = StObject.set(x, "Submitted", value.asInstanceOf[js.Any])
+    inline def setSubmitted(value: SUBMITTED): Self = StObject.set(x, "Submitted", value.asInstanceOf[js.Any])
   }
 }

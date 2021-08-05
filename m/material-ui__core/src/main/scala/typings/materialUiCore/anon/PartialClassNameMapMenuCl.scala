@@ -11,19 +11,15 @@ trait PartialClassNameMapMenuCl extends StObject {
 }
 object PartialClassNameMapMenuCl {
   
-  @scala.inline
-  def apply(): PartialClassNameMapMenuCl = {
+  inline def apply(): PartialClassNameMapMenuCl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapMenuCl]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapMenuClMutableBuilder[Self <: PartialClassNameMapMenuCl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapMenuCl](x: Self) {
     
-    @scala.inline
-    def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
+    inline def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
+    inline def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
   }
 }

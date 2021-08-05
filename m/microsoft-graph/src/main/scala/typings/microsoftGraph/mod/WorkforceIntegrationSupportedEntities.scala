@@ -18,27 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkforceIntegrationSupportedEntities extends StObject
 object WorkforceIntegrationSupportedEntities {
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def offerShiftRequest: typings.microsoftGraph.microsoftGraphStrings.offerShiftRequest = "offerShiftRequest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.offerShiftRequest]
+  inline def offerShiftRequest: typings.microsoftGraph.microsoftGraphStrings.offerShiftRequest = "offerShiftRequest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.offerShiftRequest]
   
-  @scala.inline
-  def openShift: typings.microsoftGraph.microsoftGraphStrings.openShift = "openShift".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.openShift]
+  inline def openShift: typings.microsoftGraph.microsoftGraphStrings.openShift = "openShift".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.openShift]
   
-  @scala.inline
-  def openShiftRequest: typings.microsoftGraph.microsoftGraphStrings.openShiftRequest = "openShiftRequest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.openShiftRequest]
+  inline def openShiftRequest: typings.microsoftGraph.microsoftGraphStrings.openShiftRequest = "openShiftRequest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.openShiftRequest]
   
-  @scala.inline
-  def shift: typings.microsoftGraph.microsoftGraphStrings.shift = "shift".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.shift]
+  inline def shift: typings.microsoftGraph.microsoftGraphStrings.shift = "shift".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.shift]
   
-  @scala.inline
-  def swapRequest: typings.microsoftGraph.microsoftGraphStrings.swapRequest = "swapRequest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.swapRequest]
+  inline def swapRequest: typings.microsoftGraph.microsoftGraphStrings.swapRequest = "swapRequest".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.swapRequest]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def userShiftPreferences: typings.microsoftGraph.microsoftGraphStrings.userShiftPreferences = "userShiftPreferences".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userShiftPreferences]
+  inline def userShiftPreferences: typings.microsoftGraph.microsoftGraphStrings.userShiftPreferences = "userShiftPreferences".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userShiftPreferences]
 }

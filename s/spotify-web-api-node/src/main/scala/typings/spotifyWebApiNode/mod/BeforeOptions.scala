@@ -12,19 +12,15 @@ trait BeforeOptions
 }
 object BeforeOptions {
   
-  @scala.inline
-  def apply(): BeforeOptions = {
+  inline def apply(): BeforeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BeforeOptions]
   }
   
-  @scala.inline
-  implicit class BeforeOptionsMutableBuilder[Self <: BeforeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BeforeOptions](x: Self) {
     
-    @scala.inline
-    def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
   }
 }

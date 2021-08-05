@@ -11,50 +11,41 @@ object inkBoxStrings {
   sealed trait center
     extends StObject
        with Alignment
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait classic extends StObject
-  @scala.inline
-  def classic: classic = "classic".asInstanceOf[classic]
+  inline def classic: classic = "classic".asInstanceOf[classic]
   
   @js.native
   sealed trait double extends StObject
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait doubleSingle extends StObject
-  @scala.inline
-  def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
+  inline def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
   
   @js.native
   sealed trait left
     extends StObject
        with Alignment
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait right
     extends StObject
        with Alignment
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait round extends StObject
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
   sealed trait single extends StObject
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
+  inline def single: single = "single".asInstanceOf[single]
   
   @js.native
   sealed trait singleDouble extends StObject
-  @scala.inline
-  def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
+  inline def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
 }

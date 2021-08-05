@@ -134,8 +134,7 @@ object faceMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getMaxNdnPacketSize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxNdnPacketSize")().asInstanceOf[Double]
+    inline def getMaxNdnPacketSize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxNdnPacketSize")().asInstanceOf[Double]
   }
   
   @JSImport("ndn-js/face", "ForwardingFlags")
@@ -174,53 +173,38 @@ object faceMod {
   }
   object FaceCtorOptions {
     
-    @scala.inline
-    def apply(): FaceCtorOptions = {
+    inline def apply(): FaceCtorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FaceCtorOptions]
     }
     
-    @scala.inline
-    implicit class FaceCtorOptionsMutableBuilder[Self <: FaceCtorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FaceCtorOptions](x: Self) {
       
-      @scala.inline
-      def setConnectionInfo(value: TransportConnectionInfo): Self = StObject.set(x, "connectionInfo", value.asInstanceOf[js.Any])
+      inline def setConnectionInfo(value: TransportConnectionInfo): Self = StObject.set(x, "connectionInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionInfoNull: Self = StObject.set(x, "connectionInfo", null)
+      inline def setConnectionInfoNull: Self = StObject.set(x, "connectionInfo", null)
       
-      @scala.inline
-      def setConnectionInfoUndefined: Self = StObject.set(x, "connectionInfo", js.undefined)
+      inline def setConnectionInfoUndefined: Self = StObject.set(x, "connectionInfo", js.undefined)
       
-      @scala.inline
-      def setGetConnectionInfo(value: () => TransportConnectionInfo): Self = StObject.set(x, "getConnectionInfo", js.Any.fromFunction0(value))
+      inline def setGetConnectionInfo(value: () => TransportConnectionInfo): Self = StObject.set(x, "getConnectionInfo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetConnectionInfoUndefined: Self = StObject.set(x, "getConnectionInfo", js.undefined)
+      inline def setGetConnectionInfoUndefined: Self = StObject.set(x, "getConnectionInfo", js.undefined)
       
-      @scala.inline
-      def setGetTransport(value: () => Transport): Self = StObject.set(x, "getTransport", js.Any.fromFunction0(value))
+      inline def setGetTransport(value: () => Transport): Self = StObject.set(x, "getTransport", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTransportUndefined: Self = StObject.set(x, "getTransport", js.undefined)
+      inline def setGetTransportUndefined: Self = StObject.set(x, "getTransport", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostNull: Self = StObject.set(x, "host", null)
+      inline def setHostNull: Self = StObject.set(x, "host", null)
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortNull: Self = StObject.set(x, "port", null)
+      inline def setPortNull: Self = StObject.set(x, "port", null)
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   

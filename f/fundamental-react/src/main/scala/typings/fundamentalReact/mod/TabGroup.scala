@@ -18,6 +18,5 @@ object TabGroup {
   @JSImport("fundamental-react", "TabGroup.displayName")
   @js.native
   def displayName: typings.fundamentalReact.fundamentalReactStrings.TabGroup = js.native
-  @scala.inline
-  def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.TabGroup): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.TabGroup): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

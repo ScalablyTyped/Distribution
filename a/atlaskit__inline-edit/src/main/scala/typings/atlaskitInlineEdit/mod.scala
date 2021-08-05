@@ -74,95 +74,66 @@ object mod {
   }
   object BaseProps {
     
-    @scala.inline
-    def apply(onCancel: () => Unit, onConfirm: () => Unit, readView: ReactElement): BaseProps = {
+    inline def apply(onCancel: () => Unit, onConfirm: () => Unit, readView: ReactElement): BaseProps = {
       val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction0(onCancel), onConfirm = js.Any.fromFunction0(onConfirm), readView = readView.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseProps]
     }
     
-    @scala.inline
-    implicit class BasePropsMutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: BaseProps](x: Self) {
       
-      @scala.inline
-      def setAreActionButtonsHidden(value: Boolean): Self = StObject.set(x, "areActionButtonsHidden", value.asInstanceOf[js.Any])
+      inline def setAreActionButtonsHidden(value: Boolean): Self = StObject.set(x, "areActionButtonsHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAreActionButtonsHiddenUndefined: Self = StObject.set(x, "areActionButtonsHidden", js.undefined)
+      inline def setAreActionButtonsHiddenUndefined: Self = StObject.set(x, "areActionButtonsHidden", js.undefined)
       
-      @scala.inline
-      def setDisableEditViewFieldBase(value: Boolean): Self = StObject.set(x, "disableEditViewFieldBase", value.asInstanceOf[js.Any])
+      inline def setDisableEditViewFieldBase(value: Boolean): Self = StObject.set(x, "disableEditViewFieldBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEditViewFieldBaseUndefined: Self = StObject.set(x, "disableEditViewFieldBase", js.undefined)
+      inline def setDisableEditViewFieldBaseUndefined: Self = StObject.set(x, "disableEditViewFieldBase", js.undefined)
       
-      @scala.inline
-      def setEditView(value: ReactElement): Self = StObject.set(x, "editView", value.asInstanceOf[js.Any])
+      inline def setEditView(value: ReactElement): Self = StObject.set(x, "editView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditViewUndefined: Self = StObject.set(x, "editView", js.undefined)
+      inline def setEditViewUndefined: Self = StObject.set(x, "editView", js.undefined)
       
-      @scala.inline
-      def setInvalidMessage(value: ReactElement): Self = StObject.set(x, "invalidMessage", value.asInstanceOf[js.Any])
+      inline def setInvalidMessage(value: ReactElement): Self = StObject.set(x, "invalidMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidMessageUndefined: Self = StObject.set(x, "invalidMessage", js.undefined)
+      inline def setInvalidMessageUndefined: Self = StObject.set(x, "invalidMessage", js.undefined)
       
-      @scala.inline
-      def setIsConfirmOnBlurDisabled(value: Boolean): Self = StObject.set(x, "isConfirmOnBlurDisabled", value.asInstanceOf[js.Any])
+      inline def setIsConfirmOnBlurDisabled(value: Boolean): Self = StObject.set(x, "isConfirmOnBlurDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsConfirmOnBlurDisabledUndefined: Self = StObject.set(x, "isConfirmOnBlurDisabled", js.undefined)
+      inline def setIsConfirmOnBlurDisabledUndefined: Self = StObject.set(x, "isConfirmOnBlurDisabled", js.undefined)
       
-      @scala.inline
-      def setIsFitContainerWidthReadView(value: Boolean): Self = StObject.set(x, "isFitContainerWidthReadView", value.asInstanceOf[js.Any])
+      inline def setIsFitContainerWidthReadView(value: Boolean): Self = StObject.set(x, "isFitContainerWidthReadView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFitContainerWidthReadViewUndefined: Self = StObject.set(x, "isFitContainerWidthReadView", js.undefined)
+      inline def setIsFitContainerWidthReadViewUndefined: Self = StObject.set(x, "isFitContainerWidthReadView", js.undefined)
       
-      @scala.inline
-      def setIsInvalid(value: Boolean): Self = StObject.set(x, "isInvalid", value.asInstanceOf[js.Any])
+      inline def setIsInvalid(value: Boolean): Self = StObject.set(x, "isInvalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInvalidUndefined: Self = StObject.set(x, "isInvalid", js.undefined)
+      inline def setIsInvalidUndefined: Self = StObject.set(x, "isInvalid", js.undefined)
       
-      @scala.inline
-      def setIsLabelHidden(value: Boolean): Self = StObject.set(x, "isLabelHidden", value.asInstanceOf[js.Any])
+      inline def setIsLabelHidden(value: Boolean): Self = StObject.set(x, "isLabelHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLabelHiddenUndefined: Self = StObject.set(x, "isLabelHidden", js.undefined)
+      inline def setIsLabelHiddenUndefined: Self = StObject.set(x, "isLabelHidden", js.undefined)
       
-      @scala.inline
-      def setIsWaiting(value: Boolean): Self = StObject.set(x, "isWaiting", value.asInstanceOf[js.Any])
+      inline def setIsWaiting(value: Boolean): Self = StObject.set(x, "isWaiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWaitingUndefined: Self = StObject.set(x, "isWaiting", js.undefined)
+      inline def setIsWaitingUndefined: Self = StObject.set(x, "isWaiting", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelHtmlFor(value: String): Self = StObject.set(x, "labelHtmlFor", value.asInstanceOf[js.Any])
+      inline def setLabelHtmlFor(value: String): Self = StObject.set(x, "labelHtmlFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelHtmlForUndefined: Self = StObject.set(x, "labelHtmlFor", js.undefined)
+      inline def setLabelHtmlForUndefined: Self = StObject.set(x, "labelHtmlFor", js.undefined)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnConfirm(value: () => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction0(value))
+      inline def setOnConfirm(value: () => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadView(value: ReactElement): Self = StObject.set(x, "readView", value.asInstanceOf[js.Any])
+      inline def setReadView(value: ReactElement): Self = StObject.set(x, "readView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldConfirmOnEnter(value: Boolean): Self = StObject.set(x, "shouldConfirmOnEnter", value.asInstanceOf[js.Any])
+      inline def setShouldConfirmOnEnter(value: Boolean): Self = StObject.set(x, "shouldConfirmOnEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldConfirmOnEnterUndefined: Self = StObject.set(x, "shouldConfirmOnEnter", js.undefined)
+      inline def setShouldConfirmOnEnterUndefined: Self = StObject.set(x, "shouldConfirmOnEnter", js.undefined)
     }
   }
   
@@ -182,8 +153,7 @@ object mod {
   }
   object StatelessProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isEditing: Boolean,
       onCancel: () => Unit,
       onConfirm: () => Unit,
@@ -194,14 +164,11 @@ object mod {
       __obj.asInstanceOf[StatelessProps]
     }
     
-    @scala.inline
-    implicit class StatelessPropsMutableBuilder[Self <: StatelessProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatelessProps](x: Self) {
       
-      @scala.inline
-      def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
+      inline def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEditRequested(value: () => Unit): Self = StObject.set(x, "onEditRequested", js.Any.fromFunction0(value))
+      inline def setOnEditRequested(value: () => Unit): Self = StObject.set(x, "onEditRequested", js.Any.fromFunction0(value))
     }
   }
 }

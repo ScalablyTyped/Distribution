@@ -13,16 +13,13 @@ trait DescribeSecurityConfigurationInput extends StObject {
 }
 object DescribeSecurityConfigurationInput {
   
-  @scala.inline
-  def apply(Name: XmlString): DescribeSecurityConfigurationInput = {
+  inline def apply(Name: XmlString): DescribeSecurityConfigurationInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSecurityConfigurationInput]
   }
   
-  @scala.inline
-  implicit class DescribeSecurityConfigurationInputMutableBuilder[Self <: DescribeSecurityConfigurationInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSecurityConfigurationInput](x: Self) {
     
-    @scala.inline
-    def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

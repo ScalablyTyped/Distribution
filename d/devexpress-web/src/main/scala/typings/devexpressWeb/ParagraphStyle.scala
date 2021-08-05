@@ -38,8 +38,7 @@ trait ParagraphStyle
 }
 object ParagraphStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isDeleted: Boolean,
     linkedStyle: CharacterStyle,
     listIndex: Double,
@@ -52,22 +51,16 @@ object ParagraphStyle {
     __obj.asInstanceOf[ParagraphStyle]
   }
   
-  @scala.inline
-  implicit class ParagraphStyleMutableBuilder[Self <: ParagraphStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphStyle](x: Self) {
     
-    @scala.inline
-    def setLinkedStyle(value: CharacterStyle): Self = StObject.set(x, "linkedStyle", value.asInstanceOf[js.Any])
+    inline def setLinkedStyle(value: CharacterStyle): Self = StObject.set(x, "linkedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIndex(value: Double): Self = StObject.set(x, "listIndex", value.asInstanceOf[js.Any])
+    inline def setListIndex(value: Double): Self = StObject.set(x, "listIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListLevelIndex(value: Double): Self = StObject.set(x, "listLevelIndex", value.asInstanceOf[js.Any])
+    inline def setListLevelIndex(value: Double): Self = StObject.set(x, "listLevelIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextStyle(value: ParagraphStyle): Self = StObject.set(x, "nextStyle", value.asInstanceOf[js.Any])
+    inline def setNextStyle(value: ParagraphStyle): Self = StObject.set(x, "nextStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: ParagraphStyle): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ParagraphStyle): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }
 }

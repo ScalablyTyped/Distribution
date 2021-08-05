@@ -13,19 +13,15 @@ trait Range extends StObject {
 }
 object Range {
   
-  @scala.inline
-  def apply(pos: RoomPosition, range: Double): Range = {
+  inline def apply(pos: RoomPosition, range: Double): Range = {
     val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]
   }
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

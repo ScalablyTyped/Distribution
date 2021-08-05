@@ -14,13 +14,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clickShare(channelId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickShare")(channelId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clickShare(channelId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickShare")(channelId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clickStat(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickStat")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def clickStat(`type`: String, params: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clickStat")(`type`.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def clickStat(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickStat")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clickStat(`type`: String, params: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clickStat")(`type`.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object conf {
     
@@ -31,57 +28,47 @@ object mod {
     @JSImport("mta-h5-analysis", "conf.autoReport")
     @js.native
     def autoReport: `0` | `1` = js.native
-    @scala.inline
-    def autoReport_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoReport")(x.asInstanceOf[js.Any])
+    inline def autoReport_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoReport")(x.asInstanceOf[js.Any])
     
     @JSImport("mta-h5-analysis", "conf.cid")
     @js.native
     def cid: String = js.native
-    @scala.inline
-    def cid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid")(x.asInstanceOf[js.Any])
+    inline def cid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid")(x.asInstanceOf[js.Any])
     
     @JSImport("mta-h5-analysis", "conf.ignoreParams")
     @js.native
     def ignoreParams: js.Array[String] = js.native
-    @scala.inline
-    def ignoreParams_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoreParams")(x.asInstanceOf[js.Any])
+    inline def ignoreParams_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoreParams")(x.asInstanceOf[js.Any])
     
     @JSImport("mta-h5-analysis", "conf.performanceMonitor")
     @js.native
     def performanceMonitor: `0` | `1` = js.native
-    @scala.inline
-    def performanceMonitor_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("performanceMonitor")(x.asInstanceOf[js.Any])
+    inline def performanceMonitor_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("performanceMonitor")(x.asInstanceOf[js.Any])
     
     @JSImport("mta-h5-analysis", "conf.senseHash")
     @js.native
     def senseHash: `0` | `1` = js.native
-    @scala.inline
-    def senseHash_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("senseHash")(x.asInstanceOf[js.Any])
+    inline def senseHash_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("senseHash")(x.asInstanceOf[js.Any])
     
     @JSImport("mta-h5-analysis", "conf.senseQuery")
     @js.native
     def senseQuery: `0` | `1` = js.native
-    @scala.inline
-    def senseQuery_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("senseQuery")(x.asInstanceOf[js.Any])
+    inline def senseQuery_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("senseQuery")(x.asInstanceOf[js.Any])
     
     @JSImport("mta-h5-analysis", "conf.sid")
     @js.native
     def sid: String = js.native
-    @scala.inline
-    def sid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sid")(x.asInstanceOf[js.Any])
+    inline def sid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sid")(x.asInstanceOf[js.Any])
     
     @JSImport("mta-h5-analysis", "conf.userReport")
     @js.native
     def userReport: `0` | `1` = js.native
-    @scala.inline
-    def userReport_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("userReport")(x.asInstanceOf[js.Any])
+    inline def userReport_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("userReport")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def init(params: AutoReport): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(params: AutoReport): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def pgv(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pgv")().asInstanceOf[Unit]
+  inline def pgv(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pgv")().asInstanceOf[Unit]
   
   @JSImport("mta-h5-analysis", "version")
   @js.native

@@ -29,8 +29,7 @@ trait HashAlgorithmProvider extends StObject {
 }
 object HashAlgorithmProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     algorithmName: String,
     createHash: () => CryptographicHash,
     hashData: IBuffer => IBuffer,
@@ -40,19 +39,14 @@ object HashAlgorithmProvider {
     __obj.asInstanceOf[HashAlgorithmProvider]
   }
   
-  @scala.inline
-  implicit class HashAlgorithmProviderMutableBuilder[Self <: HashAlgorithmProvider] (val x: Self) extends AnyVal {
+  extension [Self <: HashAlgorithmProvider](x: Self) {
     
-    @scala.inline
-    def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
+    inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateHash(value: () => CryptographicHash): Self = StObject.set(x, "createHash", js.Any.fromFunction0(value))
+    inline def setCreateHash(value: () => CryptographicHash): Self = StObject.set(x, "createHash", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHashData(value: IBuffer => IBuffer): Self = StObject.set(x, "hashData", js.Any.fromFunction1(value))
+    inline def setHashData(value: IBuffer => IBuffer): Self = StObject.set(x, "hashData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHashLength(value: Double): Self = StObject.set(x, "hashLength", value.asInstanceOf[js.Any])
+    inline def setHashLength(value: Double): Self = StObject.set(x, "hashLength", value.asInstanceOf[js.Any])
   }
 }

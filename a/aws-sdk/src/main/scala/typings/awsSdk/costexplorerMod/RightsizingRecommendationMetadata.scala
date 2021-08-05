@@ -23,31 +23,23 @@ trait RightsizingRecommendationMetadata extends StObject {
 }
 object RightsizingRecommendationMetadata {
   
-  @scala.inline
-  def apply(): RightsizingRecommendationMetadata = {
+  inline def apply(): RightsizingRecommendationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RightsizingRecommendationMetadata]
   }
   
-  @scala.inline
-  implicit class RightsizingRecommendationMetadataMutableBuilder[Self <: RightsizingRecommendationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: RightsizingRecommendationMetadata](x: Self) {
     
-    @scala.inline
-    def setGenerationTimestamp(value: GenericString): Self = StObject.set(x, "GenerationTimestamp", value.asInstanceOf[js.Any])
+    inline def setGenerationTimestamp(value: GenericString): Self = StObject.set(x, "GenerationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationTimestampUndefined: Self = StObject.set(x, "GenerationTimestamp", js.undefined)
+    inline def setGenerationTimestampUndefined: Self = StObject.set(x, "GenerationTimestamp", js.undefined)
     
-    @scala.inline
-    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
+    inline def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
     
-    @scala.inline
-    def setRecommendationId(value: GenericString): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
+    inline def setRecommendationId(value: GenericString): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
+    inline def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
   }
 }

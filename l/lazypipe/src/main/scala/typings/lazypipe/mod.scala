@@ -10,8 +10,7 @@ object mod {
   /**
     * Initializes a lazypipe.
     */
-  @scala.inline
-  def apply(): IPipelineBuilder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[IPipelineBuilder]
+  inline def apply(): IPipelineBuilder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[IPipelineBuilder]
   
   @JSImport("lazypipe", JSImport.Namespace)
   @js.native

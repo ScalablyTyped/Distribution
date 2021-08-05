@@ -12,17 +12,14 @@ object refresherInterfaceMod {
   }
   object RefresherEventDetail {
     
-    @scala.inline
-    def apply(complete: () => Unit): RefresherEventDetail = {
+    inline def apply(complete: () => Unit): RefresherEventDetail = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
       __obj.asInstanceOf[RefresherEventDetail]
     }
     
-    @scala.inline
-    implicit class RefresherEventDetailMutableBuilder[Self <: RefresherEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: RefresherEventDetail](x: Self) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
   }
 }

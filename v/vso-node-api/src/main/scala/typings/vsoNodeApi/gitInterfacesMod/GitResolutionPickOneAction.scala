@@ -12,16 +12,13 @@ trait GitResolutionPickOneAction
 }
 object GitResolutionPickOneAction {
   
-  @scala.inline
-  def apply(action: GitResolutionWhichAction): GitResolutionPickOneAction = {
+  inline def apply(action: GitResolutionWhichAction): GitResolutionPickOneAction = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitResolutionPickOneAction]
   }
   
-  @scala.inline
-  implicit class GitResolutionPickOneActionMutableBuilder[Self <: GitResolutionPickOneAction] (val x: Self) extends AnyVal {
+  extension [Self <: GitResolutionPickOneAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: GitResolutionWhichAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: GitResolutionWhichAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

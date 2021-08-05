@@ -13,17 +13,14 @@ trait Atom extends StObject {
 }
 object Atom {
   
-  @scala.inline
-  def apply(`type`: String): Atom = {
+  inline def apply(`type`: String): Atom = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Atom]
   }
   
-  @scala.inline
-  implicit class AtomMutableBuilder[Self <: Atom] (val x: Self) extends AnyVal {
+  extension [Self <: Atom](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

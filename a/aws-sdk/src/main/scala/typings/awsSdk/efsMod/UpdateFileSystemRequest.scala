@@ -23,28 +23,21 @@ trait UpdateFileSystemRequest extends StObject {
 }
 object UpdateFileSystemRequest {
   
-  @scala.inline
-  def apply(FileSystemId: FileSystemId): UpdateFileSystemRequest = {
+  inline def apply(FileSystemId: FileSystemId): UpdateFileSystemRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFileSystemRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFileSystemRequestMutableBuilder[Self <: UpdateFileSystemRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFileSystemRequest](x: Self) {
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedThroughputInMibps(value: ProvisionedThroughputInMibps): Self = StObject.set(x, "ProvisionedThroughputInMibps", value.asInstanceOf[js.Any])
+    inline def setProvisionedThroughputInMibps(value: ProvisionedThroughputInMibps): Self = StObject.set(x, "ProvisionedThroughputInMibps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedThroughputInMibpsUndefined: Self = StObject.set(x, "ProvisionedThroughputInMibps", js.undefined)
+    inline def setProvisionedThroughputInMibpsUndefined: Self = StObject.set(x, "ProvisionedThroughputInMibps", js.undefined)
     
-    @scala.inline
-    def setThroughputMode(value: ThroughputMode): Self = StObject.set(x, "ThroughputMode", value.asInstanceOf[js.Any])
+    inline def setThroughputMode(value: ThroughputMode): Self = StObject.set(x, "ThroughputMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThroughputModeUndefined: Self = StObject.set(x, "ThroughputMode", js.undefined)
+    inline def setThroughputModeUndefined: Self = StObject.set(x, "ThroughputMode", js.undefined)
   }
 }

@@ -31,7 +31,7 @@ object tokenFormatterBuilderMod {
     /* CompleteClass */
     override def startRule(ruleType: RuleType): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tokensText: js.Any = js.native
   }
   
@@ -49,12 +49,11 @@ object tokenFormatterBuilderMod {
     
     def startRule(ruleType: RuleType): Unit
     
-    var tokensText: js.Any
+    /* private */ var tokensText: js.Any
   }
   object TokenFormatterBuilder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       build: typings.gherkin.tokenMod.default => Unit,
       endRule: RuleType => Unit,
       formatToken: typings.gherkin.tokenMod.default => String,
@@ -67,29 +66,21 @@ object tokenFormatterBuilderMod {
       __obj.asInstanceOf[TokenFormatterBuilder]
     }
     
-    @scala.inline
-    implicit class TokenFormatterBuilderMutableBuilder[Self <: TokenFormatterBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: TokenFormatterBuilder](x: Self) {
       
-      @scala.inline
-      def setBuild(value: typings.gherkin.tokenMod.default => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
+      inline def setBuild(value: typings.gherkin.tokenMod.default => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEndRule(value: RuleType => Unit): Self = StObject.set(x, "endRule", js.Any.fromFunction1(value))
+      inline def setEndRule(value: RuleType => Unit): Self = StObject.set(x, "endRule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatToken(value: typings.gherkin.tokenMod.default => String): Self = StObject.set(x, "formatToken", js.Any.fromFunction1(value))
+      inline def setFormatToken(value: typings.gherkin.tokenMod.default => String): Self = StObject.set(x, "formatToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetResult(value: () => String): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
+      inline def setGetResult(value: () => String): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartRule(value: RuleType => Unit): Self = StObject.set(x, "startRule", js.Any.fromFunction1(value))
+      inline def setStartRule(value: RuleType => Unit): Self = StObject.set(x, "startRule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTokensText(value: js.Any): Self = StObject.set(x, "tokensText", value.asInstanceOf[js.Any])
+      inline def setTokensText(value: js.Any): Self = StObject.set(x, "tokensText", value.asInstanceOf[js.Any])
     }
   }
 }

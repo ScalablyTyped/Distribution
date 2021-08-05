@@ -10,22 +10,17 @@ trait Buttons extends StObject {
 }
 object Buttons {
   
-  @scala.inline
-  def apply(): Buttons = {
+  inline def apply(): Buttons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Buttons]
   }
   
-  @scala.inline
-  implicit class ButtonsMutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
+  extension [Self <: Buttons](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
   }
 }

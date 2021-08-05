@@ -21,25 +21,19 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton extends StO
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButton](x: Self) {
     
-    @scala.inline
-    def setOpenUriAction(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction): Self = StObject.set(x, "openUriAction", value.asInstanceOf[js.Any])
+    inline def setOpenUriAction(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction): Self = StObject.set(x, "openUriAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUriActionUndefined: Self = StObject.set(x, "openUriAction", js.undefined)
+    inline def setOpenUriActionUndefined: Self = StObject.set(x, "openUriAction", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

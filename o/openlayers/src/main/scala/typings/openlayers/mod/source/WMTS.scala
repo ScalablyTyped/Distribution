@@ -113,6 +113,5 @@ object WMTS {
     * @api
     */
   /* static member */
-  @scala.inline
-  def optionsFromCapabilities(wmtsCap: GlobalObject, config: GlobalObject): WMTSOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsFromCapabilities")(wmtsCap.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WMTSOptions]
+  inline def optionsFromCapabilities(wmtsCap: GlobalObject, config: GlobalObject): WMTSOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsFromCapabilities")(wmtsCap.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WMTSOptions]
 }

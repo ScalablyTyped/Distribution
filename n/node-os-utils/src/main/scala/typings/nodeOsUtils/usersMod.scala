@@ -22,17 +22,14 @@ object usersMod {
   }
   object Users {
     
-    @scala.inline
-    def apply(openedCount: () => js.Promise[Double | String]): Users = {
+    inline def apply(openedCount: () => js.Promise[Double | String]): Users = {
       val __obj = js.Dynamic.literal(openedCount = js.Any.fromFunction0(openedCount))
       __obj.asInstanceOf[Users]
     }
     
-    @scala.inline
-    implicit class UsersMutableBuilder[Self <: Users] (val x: Self) extends AnyVal {
+    extension [Self <: Users](x: Self) {
       
-      @scala.inline
-      def setOpenedCount(value: () => js.Promise[Double | String]): Self = StObject.set(x, "openedCount", js.Any.fromFunction0(value))
+      inline def setOpenedCount(value: () => js.Promise[Double | String]): Self = StObject.set(x, "openedCount", js.Any.fromFunction0(value))
     }
   }
 }

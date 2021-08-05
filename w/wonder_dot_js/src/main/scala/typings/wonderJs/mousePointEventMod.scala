@@ -34,7 +34,6 @@ object mousePointEventMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(eventName: EEventName): MousePointEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any]).asInstanceOf[MousePointEvent]
+    inline def create(eventName: EEventName): MousePointEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eventName.asInstanceOf[js.Any]).asInstanceOf[MousePointEvent]
   }
 }

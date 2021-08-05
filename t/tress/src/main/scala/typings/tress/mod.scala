@@ -23,10 +23,8 @@ object mod {
     * should be run in parallel. If omitted, the concurrency defaults to 1.
     * If negative - no parallel and delay between worker functions (concurrency -1,000 sets 1 second delay)
     */
-  @scala.inline
-  def apply(worker: js.Function2[/* job */ TressJobData, /* done */ TressWorkerDoneCallback, Unit]): TressStatic = ^.asInstanceOf[js.Dynamic].apply(worker.asInstanceOf[js.Any]).asInstanceOf[TressStatic]
-  @scala.inline
-  def apply(
+  inline def apply(worker: js.Function2[/* job */ TressJobData, /* done */ TressWorkerDoneCallback, Unit]): TressStatic = ^.asInstanceOf[js.Dynamic].apply(worker.asInstanceOf[js.Any]).asInstanceOf[TressStatic]
+  inline def apply(
     worker: js.Function2[/* job */ TressJobData, /* done */ TressWorkerDoneCallback, Unit],
     concurrency: Double
   ): TressStatic = (^.asInstanceOf[js.Dynamic].apply(worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[TressStatic]
@@ -45,20 +43,16 @@ object mod {
   }
   object TressJob {
     
-    @scala.inline
-    def apply(callback: TressJobCallback, data: TressJobData): TressJob = {
+    inline def apply(callback: TressJobCallback, data: TressJobData): TressJob = {
       val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[TressJob]
     }
     
-    @scala.inline
-    implicit class TressJobMutableBuilder[Self <: TressJob] (val x: Self) extends AnyVal {
+    extension [Self <: TressJob](x: Self) {
       
-      @scala.inline
-      def setCallback(value: TressJobCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: TressJobCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: TressJobData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TressJobData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,32 +74,24 @@ object mod {
   }
   object TressJobQueues {
     
-    @scala.inline
-    def apply(failed: js.Array[TressJobData], finished: js.Array[TressJobData], waiting: js.Array[TressJobData]): TressJobQueues = {
+    inline def apply(failed: js.Array[TressJobData], finished: js.Array[TressJobData], waiting: js.Array[TressJobData]): TressJobQueues = {
       val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], finished = finished.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any])
       __obj.asInstanceOf[TressJobQueues]
     }
     
-    @scala.inline
-    implicit class TressJobQueuesMutableBuilder[Self <: TressJobQueues] (val x: Self) extends AnyVal {
+    extension [Self <: TressJobQueues](x: Self) {
       
-      @scala.inline
-      def setFailed(value: js.Array[TressJobData]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+      inline def setFailed(value: js.Array[TressJobData]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedVarargs(value: TressJobData*): Self = StObject.set(x, "failed", js.Array(value :_*))
+      inline def setFailedVarargs(value: TressJobData*): Self = StObject.set(x, "failed", js.Array(value :_*))
       
-      @scala.inline
-      def setFinished(value: js.Array[TressJobData]): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+      inline def setFinished(value: js.Array[TressJobData]): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinishedVarargs(value: TressJobData*): Self = StObject.set(x, "finished", js.Array(value :_*))
+      inline def setFinishedVarargs(value: TressJobData*): Self = StObject.set(x, "finished", js.Array(value :_*))
       
-      @scala.inline
-      def setWaiting(value: js.Array[TressJobData]): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
+      inline def setWaiting(value: js.Array[TressJobData]): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitingVarargs(value: TressJobData*): Self = StObject.set(x, "waiting", js.Array(value :_*))
+      inline def setWaitingVarargs(value: TressJobData*): Self = StObject.set(x, "waiting", js.Array(value :_*))
     }
   }
   

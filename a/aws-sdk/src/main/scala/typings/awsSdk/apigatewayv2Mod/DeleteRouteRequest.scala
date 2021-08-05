@@ -18,19 +18,15 @@ trait DeleteRouteRequest extends StObject {
 }
 object DeleteRouteRequest {
   
-  @scala.inline
-  def apply(ApiId: string, RouteId: string): DeleteRouteRequest = {
+  inline def apply(ApiId: string, RouteId: string): DeleteRouteRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], RouteId = RouteId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRouteRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRouteRequestMutableBuilder[Self <: DeleteRouteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRouteRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteId(value: string): Self = StObject.set(x, "RouteId", value.asInstanceOf[js.Any])
+    inline def setRouteId(value: string): Self = StObject.set(x, "RouteId", value.asInstanceOf[js.Any])
   }
 }

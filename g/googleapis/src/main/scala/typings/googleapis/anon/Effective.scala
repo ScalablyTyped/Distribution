@@ -10,22 +10,17 @@ trait Effective extends StObject {
 }
 object Effective {
   
-  @scala.inline
-  def apply(): Effective = {
+  inline def apply(): Effective = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Effective]
   }
   
-  @scala.inline
-  implicit class EffectiveMutableBuilder[Self <: Effective] (val x: Self) extends AnyVal {
+  extension [Self <: Effective](x: Self) {
     
-    @scala.inline
-    def setEffective(value: js.Array[String]): Self = StObject.set(x, "effective", value.asInstanceOf[js.Any])
+    inline def setEffective(value: js.Array[String]): Self = StObject.set(x, "effective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveUndefined: Self = StObject.set(x, "effective", js.undefined)
+    inline def setEffectiveUndefined: Self = StObject.set(x, "effective", js.undefined)
     
-    @scala.inline
-    def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value :_*))
+    inline def setEffectiveVarargs(value: String*): Self = StObject.set(x, "effective", js.Array(value :_*))
   }
 }

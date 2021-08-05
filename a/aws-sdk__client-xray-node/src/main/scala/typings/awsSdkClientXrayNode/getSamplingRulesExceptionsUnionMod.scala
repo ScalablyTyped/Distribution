@@ -13,14 +13,12 @@ object getSamplingRulesExceptionsUnionMod {
   trait GetSamplingRulesExceptionsUnion extends StObject
   object GetSamplingRulesExceptionsUnion {
     
-    @scala.inline
-    def InvalidRequestException(): typings.awsSdkClientXrayNode.typesInvalidRequestExceptionMod.InvalidRequestException = {
+    inline def InvalidRequestException(): typings.awsSdkClientXrayNode.typesInvalidRequestExceptionMod.InvalidRequestException = {
       val __obj = js.Dynamic.literal(name = "InvalidRequestException")
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesInvalidRequestExceptionMod.InvalidRequestException]
     }
     
-    @scala.inline
-    def ThrottledException(): typings.awsSdkClientXrayNode.typesThrottledExceptionMod.ThrottledException = {
+    inline def ThrottledException(): typings.awsSdkClientXrayNode.typesThrottledExceptionMod.ThrottledException = {
       val __obj = js.Dynamic.literal(name = "ThrottledException")
       __obj.asInstanceOf[typings.awsSdkClientXrayNode.typesThrottledExceptionMod.ThrottledException]
     }

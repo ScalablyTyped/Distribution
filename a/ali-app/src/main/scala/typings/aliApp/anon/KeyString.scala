@@ -10,16 +10,13 @@ trait KeyString extends StObject {
 }
 object KeyString {
   
-  @scala.inline
-  def apply(key: String): KeyString = {
+  inline def apply(key: String): KeyString = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyString]
   }
   
-  @scala.inline
-  implicit class KeyStringMutableBuilder[Self <: KeyString] (val x: Self) extends AnyVal {
+  extension [Self <: KeyString](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

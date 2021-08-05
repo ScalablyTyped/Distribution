@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TextRetrievalMode")
 @js.native
-class TextRetrievalMode protected ()
+/* private */ class TextRetrievalMode ()
   extends StObject
      with typings.activexWord.Word.TextRetrievalMode {
   
@@ -32,7 +32,7 @@ class TextRetrievalMode protected ()
   /* CompleteClass */
   var ViewType: WdViewType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TextRetrievalMode_typekey")
   var WordDotTextRetrievalMode_typekey: typings.activexWord.Word.TextRetrievalMode = js.native
 }

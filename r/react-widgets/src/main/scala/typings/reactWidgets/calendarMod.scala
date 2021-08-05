@@ -49,26 +49,20 @@ object calendarMod extends Shortcut {
   }
   object CalendarMessages {
     
-    @scala.inline
-    def apply(): CalendarMessages = {
+    inline def apply(): CalendarMessages = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CalendarMessages]
     }
     
-    @scala.inline
-    implicit class CalendarMessagesMutableBuilder[Self <: CalendarMessages] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarMessages](x: Self) {
       
-      @scala.inline
-      def setMoveBack(value: String): Self = StObject.set(x, "moveBack", value.asInstanceOf[js.Any])
+      inline def setMoveBack(value: String): Self = StObject.set(x, "moveBack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveBackUndefined: Self = StObject.set(x, "moveBack", js.undefined)
+      inline def setMoveBackUndefined: Self = StObject.set(x, "moveBack", js.undefined)
       
-      @scala.inline
-      def setMoveForward(value: String): Self = StObject.set(x, "moveForward", value.asInstanceOf[js.Any])
+      inline def setMoveForward(value: String): Self = StObject.set(x, "moveForward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveForwardUndefined: Self = StObject.set(x, "moveForward", js.undefined)
+      inline def setMoveForwardUndefined: Self = StObject.set(x, "moveForward", js.undefined)
     }
   }
   
@@ -225,203 +219,138 @@ object calendarMod extends Shortcut {
   }
   object CalendarProps {
     
-    @scala.inline
-    def apply(): CalendarProps = {
+    inline def apply(): CalendarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CalendarProps]
     }
     
-    @scala.inline
-    implicit class CalendarPropsMutableBuilder[Self <: CalendarProps] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarProps](x: Self) {
       
-      @scala.inline
-      def setCenturyFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "centuryFormat", value.asInstanceOf[js.Any])
+      inline def setCenturyFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "centuryFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenturyFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "centuryFormat", js.Any.fromFunction1(value))
+      inline def setCenturyFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "centuryFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCenturyFormatUndefined: Self = StObject.set(x, "centuryFormat", js.undefined)
+      inline def setCenturyFormatUndefined: Self = StObject.set(x, "centuryFormat", js.undefined)
       
-      @scala.inline
-      def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+      inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+      inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
       
-      @scala.inline
-      def setCurrentDate(value: Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
+      inline def setCurrentDate(value: Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
+      inline def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
       
-      @scala.inline
-      def setDateFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "dateFormat", js.Any.fromFunction1(value))
+      inline def setDateFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "dateFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+      inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      @scala.inline
-      def setDayComponent(value: ReactType[js.Any]): Self = StObject.set(x, "dayComponent", value.asInstanceOf[js.Any])
+      inline def setDayComponent(value: ReactType[js.Any]): Self = StObject.set(x, "dayComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayComponentUndefined: Self = StObject.set(x, "dayComponent", js.undefined)
+      inline def setDayComponentUndefined: Self = StObject.set(x, "dayComponent", js.undefined)
       
-      @scala.inline
-      def setDayFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
+      inline def setDayFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "dayFormat", js.Any.fromFunction1(value))
+      inline def setDayFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "dayFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDayFormatUndefined: Self = StObject.set(x, "dayFormat", js.undefined)
+      inline def setDayFormatUndefined: Self = StObject.set(x, "dayFormat", js.undefined)
       
-      @scala.inline
-      def setDecadeFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "decadeFormat", value.asInstanceOf[js.Any])
+      inline def setDecadeFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "decadeFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecadeFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "decadeFormat", js.Any.fromFunction1(value))
+      inline def setDecadeFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "decadeFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecadeFormatUndefined: Self = StObject.set(x, "decadeFormat", js.undefined)
+      inline def setDecadeFormatUndefined: Self = StObject.set(x, "decadeFormat", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultView(value: CalendarView): Self = StObject.set(x, "defaultView", value.asInstanceOf[js.Any])
+      inline def setDefaultView(value: CalendarView): Self = StObject.set(x, "defaultView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultViewUndefined: Self = StObject.set(x, "defaultView", js.undefined)
+      inline def setDefaultViewUndefined: Self = StObject.set(x, "defaultView", js.undefined)
       
-      @scala.inline
-      def setFinalView(value: month | year | decade | century): Self = StObject.set(x, "finalView", value.asInstanceOf[js.Any])
+      inline def setFinalView(value: month | year | decade | century): Self = StObject.set(x, "finalView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalViewUndefined: Self = StObject.set(x, "finalView", js.undefined)
+      inline def setFinalViewUndefined: Self = StObject.set(x, "finalView", js.undefined)
       
-      @scala.inline
-      def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "footerFormat", value.asInstanceOf[js.Any])
+      inline def setFooterFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "footerFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "footerFormat", js.Any.fromFunction1(value))
+      inline def setFooterFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "footerFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFooterFormatUndefined: Self = StObject.set(x, "footerFormat", js.undefined)
+      inline def setFooterFormatUndefined: Self = StObject.set(x, "footerFormat", js.undefined)
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setHeaderFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "headerFormat", value.asInstanceOf[js.Any])
+      inline def setHeaderFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "headerFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "headerFormat", js.Any.fromFunction1(value))
+      inline def setHeaderFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "headerFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeaderFormatUndefined: Self = StObject.set(x, "headerFormat", js.undefined)
+      inline def setHeaderFormatUndefined: Self = StObject.set(x, "headerFormat", js.undefined)
       
-      @scala.inline
-      def setInitialView(value: month | year | decade | century): Self = StObject.set(x, "initialView", value.asInstanceOf[js.Any])
+      inline def setInitialView(value: month | year | decade | century): Self = StObject.set(x, "initialView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialViewUndefined: Self = StObject.set(x, "initialView", js.undefined)
+      inline def setInitialViewUndefined: Self = StObject.set(x, "initialView", js.undefined)
       
-      @scala.inline
-      def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMessages(value: CalendarMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: CalendarMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setMonthFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
+      inline def setMonthFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "monthFormat", js.Any.fromFunction1(value))
+      inline def setMonthFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "monthFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
+      inline def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* date */ js.UndefOr[Date] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* date */ js.UndefOr[Date] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnCurrentDateChange(value: /* date */ js.UndefOr[Date] => Unit): Self = StObject.set(x, "onCurrentDateChange", js.Any.fromFunction1(value))
+      inline def setOnCurrentDateChange(value: /* date */ js.UndefOr[Date] => Unit): Self = StObject.set(x, "onCurrentDateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCurrentDateChangeUndefined: Self = StObject.set(x, "onCurrentDateChange", js.undefined)
+      inline def setOnCurrentDateChangeUndefined: Self = StObject.set(x, "onCurrentDateChange", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* event */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* event */ KeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnNavigate(value: (/* date */ Date, /* direction */ String, /* view */ String) => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction3(value))
+      inline def setOnNavigate(value: (/* date */ Date, /* direction */ String, /* view */ String) => Unit): Self = StObject.set(x, "onNavigate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
+      inline def setOnNavigateUndefined: Self = StObject.set(x, "onNavigate", js.undefined)
       
-      @scala.inline
-      def setOnViewChange(value: () => Unit): Self = StObject.set(x, "onViewChange", js.Any.fromFunction0(value))
+      inline def setOnViewChange(value: () => Unit): Self = StObject.set(x, "onViewChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnViewChangeUndefined: Self = StObject.set(x, "onViewChange", js.undefined)
+      inline def setOnViewChangeUndefined: Self = StObject.set(x, "onViewChange", js.undefined)
       
-      @scala.inline
-      def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setView(value: CalendarView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: CalendarView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       
-      @scala.inline
-      def setViews(value: js.Array[CalendarView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: js.Array[CalendarView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
       
-      @scala.inline
-      def setViewsVarargs(value: CalendarView*): Self = StObject.set(x, "views", js.Array(value :_*))
+      inline def setViewsVarargs(value: CalendarView*): Self = StObject.set(x, "views", js.Array(value :_*))
       
-      @scala.inline
-      def setYearFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "yearFormat", value.asInstanceOf[js.Any])
+      inline def setYearFormat(value: String | (js.Function1[/* day */ Date, String])): Self = StObject.set(x, "yearFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "yearFormat", js.Any.fromFunction1(value))
+      inline def setYearFormatFunction1(value: /* day */ Date => String): Self = StObject.set(x, "yearFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setYearFormatUndefined: Self = StObject.set(x, "yearFormat", js.undefined)
+      inline def setYearFormatUndefined: Self = StObject.set(x, "yearFormat", js.undefined)
     }
   }
   
@@ -434,17 +363,13 @@ object calendarMod extends Shortcut {
   trait CalendarView extends StObject
   object CalendarView {
     
-    @scala.inline
-    def century: typings.reactWidgets.reactWidgetsStrings.century = "century".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.century]
+    inline def century: typings.reactWidgets.reactWidgetsStrings.century = "century".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.century]
     
-    @scala.inline
-    def decade: typings.reactWidgets.reactWidgetsStrings.decade = "decade".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.decade]
+    inline def decade: typings.reactWidgets.reactWidgetsStrings.decade = "decade".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.decade]
     
-    @scala.inline
-    def month: typings.reactWidgets.reactWidgetsStrings.month = "month".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.month]
+    inline def month: typings.reactWidgets.reactWidgetsStrings.month = "month".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.month]
     
-    @scala.inline
-    def year: typings.reactWidgets.reactWidgetsStrings.year = "year".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.year]
+    inline def year: typings.reactWidgets.reactWidgetsStrings.year = "year".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.year]
   }
   
   type _To = js.Object & CalendarClass

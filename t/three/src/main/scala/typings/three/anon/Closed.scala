@@ -20,8 +20,7 @@ trait Closed extends StObject {
 }
 object Closed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closed: Boolean,
     path: Curve[Vector3],
     radialSegments: Double,
@@ -32,22 +31,16 @@ object Closed {
     __obj.asInstanceOf[Closed]
   }
   
-  @scala.inline
-  implicit class ClosedMutableBuilder[Self <: Closed] (val x: Self) extends AnyVal {
+  extension [Self <: Closed](x: Self) {
     
-    @scala.inline
-    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+    inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Curve[Vector3]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Curve[Vector3]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
+    inline def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTubularSegments(value: Double): Self = StObject.set(x, "tubularSegments", value.asInstanceOf[js.Any])
+    inline def setTubularSegments(value: Double): Self = StObject.set(x, "tubularSegments", value.asInstanceOf[js.Any])
   }
 }

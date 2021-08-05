@@ -32,37 +32,27 @@ trait ServerInjectOptions
 }
 object ServerInjectOptions {
   
-  @scala.inline
-  def apply(url: String): ServerInjectOptions = {
+  inline def apply(url: String): ServerInjectOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInjectOptions]
   }
   
-  @scala.inline
-  implicit class ServerInjectOptionsMutableBuilder[Self <: ServerInjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerInjectOptions](x: Self) {
     
-    @scala.inline
-    def setAllowInternals(value: Boolean): Self = StObject.set(x, "allowInternals", value.asInstanceOf[js.Any])
+    inline def setAllowInternals(value: Boolean): Self = StObject.set(x, "allowInternals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowInternalsUndefined: Self = StObject.set(x, "allowInternals", js.undefined)
+    inline def setAllowInternalsUndefined: Self = StObject.set(x, "allowInternals", js.undefined)
     
-    @scala.inline
-    def setApp(value: RequestApplicationState): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: RequestApplicationState): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
-    @scala.inline
-    def setAuth(value: Artifacts): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: Artifacts): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPlugins(value: PluginsStates): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: PluginsStates): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
   }
 }

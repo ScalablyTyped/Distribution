@@ -13,19 +13,15 @@ trait ResetPersonalPINResponse extends StObject {
 }
 object ResetPersonalPINResponse {
   
-  @scala.inline
-  def apply(): ResetPersonalPINResponse = {
+  inline def apply(): ResetPersonalPINResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetPersonalPINResponse]
   }
   
-  @scala.inline
-  implicit class ResetPersonalPINResponseMutableBuilder[Self <: ResetPersonalPINResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResetPersonalPINResponse](x: Self) {
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

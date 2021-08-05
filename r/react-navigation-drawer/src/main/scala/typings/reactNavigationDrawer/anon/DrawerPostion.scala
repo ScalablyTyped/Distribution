@@ -24,8 +24,7 @@ trait DrawerPostion extends StObject {
 }
 object DrawerPostion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     drawerPostion: String,
     drawerType: String,
     gestureEnabled: Boolean,
@@ -39,31 +38,22 @@ object DrawerPostion {
     __obj.asInstanceOf[DrawerPostion]
   }
   
-  @scala.inline
-  implicit class DrawerPostionMutableBuilder[Self <: DrawerPostion] (val x: Self) extends AnyVal {
+  extension [Self <: DrawerPostion](x: Self) {
     
-    @scala.inline
-    def setDrawerPostion(value: String): Self = StObject.set(x, "drawerPostion", value.asInstanceOf[js.Any])
+    inline def setDrawerPostion(value: String): Self = StObject.set(x, "drawerPostion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawerType(value: String): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
+    inline def setDrawerType(value: String): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
+    inline def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideStatusBar(value: Boolean): Self = StObject.set(x, "hideStatusBar", value.asInstanceOf[js.Any])
+    inline def setHideStatusBar(value: Boolean): Self = StObject.set(x, "hideStatusBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardDismissMode(value: String): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+    inline def setKeyboardDismissMode(value: String): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarAnimation(value: String): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
+    inline def setStatusBarAnimation(value: String): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeEdgeWidth(value: Double): Self = StObject.set(x, "swipeEdgeWidth", value.asInstanceOf[js.Any])
+    inline def setSwipeEdgeWidth(value: Double): Self = StObject.set(x, "swipeEdgeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeVelocityThreshold(value: Double): Self = StObject.set(x, "swipeVelocityThreshold", value.asInstanceOf[js.Any])
+    inline def setSwipeVelocityThreshold(value: Double): Self = StObject.set(x, "swipeVelocityThreshold", value.asInstanceOf[js.Any])
   }
 }

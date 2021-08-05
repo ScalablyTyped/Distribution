@@ -60,8 +60,7 @@ trait AuthenticationRequest
 }
 object AuthenticationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Account: String,
     Classification: InteractionClassification,
     Context: XInterface,
@@ -80,37 +79,26 @@ object AuthenticationRequest {
     __obj.asInstanceOf[AuthenticationRequest]
   }
   
-  @scala.inline
-  implicit class AuthenticationRequestMutableBuilder[Self <: AuthenticationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationRequest](x: Self) {
     
-    @scala.inline
-    def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnostic(value: String): Self = StObject.set(x, "Diagnostic", value.asInstanceOf[js.Any])
+    inline def setDiagnostic(value: String): Self = StObject.set(x, "Diagnostic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAccount(value: Boolean): Self = StObject.set(x, "HasAccount", value.asInstanceOf[js.Any])
+    inline def setHasAccount(value: Boolean): Self = StObject.set(x, "HasAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPassword(value: Boolean): Self = StObject.set(x, "HasPassword", value.asInstanceOf[js.Any])
+    inline def setHasPassword(value: Boolean): Self = StObject.set(x, "HasPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasRealm(value: Boolean): Self = StObject.set(x, "HasRealm", value.asInstanceOf[js.Any])
+    inline def setHasRealm(value: Boolean): Self = StObject.set(x, "HasRealm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasUserName(value: Boolean): Self = StObject.set(x, "HasUserName", value.asInstanceOf[js.Any])
+    inline def setHasUserName(value: Boolean): Self = StObject.set(x, "HasUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealm(value: String): Self = StObject.set(x, "Realm", value.asInstanceOf[js.Any])
+    inline def setRealm(value: String): Self = StObject.set(x, "Realm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

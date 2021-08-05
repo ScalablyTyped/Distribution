@@ -24,8 +24,7 @@ object anon {
   }
   object Process {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       process: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String,
       time: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String
     ): Process = {
@@ -33,14 +32,11 @@ object anon {
       __obj.asInstanceOf[Process]
     }
     
-    @scala.inline
-    implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
+    extension [Self <: Process](x: Self) {
       
-      @scala.inline
-      def setProcess(value: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
+      inline def setProcess(value: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTime(value: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String): Self = StObject.set(x, "time", js.Any.fromFunction2(value))
+      inline def setTime(value: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String): Self = StObject.set(x, "time", js.Any.fromFunction2(value))
     }
   }
 }

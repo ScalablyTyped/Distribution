@@ -33,7 +33,6 @@ object oidMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromString(str: String): Oid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Oid]
+    inline def fromString(str: String): Oid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Oid]
   }
 }

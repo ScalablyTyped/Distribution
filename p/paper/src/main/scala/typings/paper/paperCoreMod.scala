@@ -57,8 +57,7 @@ object paperCoreMod {
     /* alpha */ js.UndefOr[Double], 
     typings.paper.paper.Color
   ]) = js.native
-  @scala.inline
-  def Color_=(
+  inline def Color_=(
     x: TypeofColor & (Instantiable4[
       /* red */ Double, 
       /* green */ Double, 
@@ -86,8 +85,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "CompoundPath")
   @js.native
   def CompoundPath: Instantiable1[/* pathData */ String, typings.paper.paper.CompoundPath] = js.native
-  @scala.inline
-  def CompoundPath_=(x: Instantiable1[/* pathData */ String, typings.paper.paper.CompoundPath]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompoundPath")(x.asInstanceOf[js.Any])
+  inline def CompoundPath_=(x: Instantiable1[/* pathData */ String, typings.paper.paper.CompoundPath]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompoundPath")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Curve")
@@ -265,8 +263,7 @@ object paperCoreMod {
     /* point */ js.UndefOr[typings.paper.paper.Point], 
     typings.paper.paper.CurveLocation
   ] = js.native
-  @scala.inline
-  def CurveLocation_=(
+  inline def CurveLocation_=(
     x: Instantiable3[
       /* curve */ typings.paper.paper.Curve, 
       /* time */ Double, 
@@ -275,8 +272,7 @@ object paperCoreMod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CurveLocation")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Curve_=(
+  inline def Curve_=(
     x: Instantiable2[
       /* segment1 */ typings.paper.paper.Segment, 
       /* segment2 */ typings.paper.paper.Segment, 
@@ -332,8 +328,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Event")
   @js.native
   def Event: Instantiable0[typings.paper.paper.Event] = js.native
-  @scala.inline
-  def Event_=(x: Instantiable0[typings.paper.paper.Event]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Event")(x.asInstanceOf[js.Any])
+  inline def Event_=(x: Instantiable0[typings.paper.paper.Event]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Event")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Gradient")
@@ -403,8 +398,7 @@ object paperCoreMod {
     /* offset */ js.UndefOr[Double], 
     typings.paper.paper.GradientStop
   ] = js.native
-  @scala.inline
-  def GradientStop_=(
+  inline def GradientStop_=(
     x: Instantiable2[
       /* color */ js.UndefOr[typings.paper.paper.Color], 
       /* offset */ js.UndefOr[Double], 
@@ -412,8 +406,7 @@ object paperCoreMod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GradientStop")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Gradient_=(x: Instantiable0[typings.paper.paper.Gradient]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Gradient")(x.asInstanceOf[js.Any])
+  inline def Gradient_=(x: Instantiable0[typings.paper.paper.Gradient]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Gradient")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Group")
@@ -435,8 +428,7 @@ object paperCoreMod {
     /* children */ js.UndefOr[js.Array[typings.paper.paper.Item]], 
     typings.paper.paper.Group
   ] = js.native
-  @scala.inline
-  def Group_=(
+  inline def Group_=(
     x: Instantiable1[
       /* children */ js.UndefOr[js.Array[typings.paper.paper.Item]], 
       typings.paper.paper.Group
@@ -502,8 +494,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "HitResult")
   @js.native
   def HitResult: Instantiable0[typings.paper.paper.HitResult] = js.native
-  @scala.inline
-  def HitResult_=(x: Instantiable0[typings.paper.paper.HitResult]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HitResult")(x.asInstanceOf[js.Any])
+  inline def HitResult_=(x: Instantiable0[typings.paper.paper.HitResult]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HitResult")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Item")
@@ -514,8 +505,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Item")
   @js.native
   def Item: Instantiable0[typings.paper.paper.Item] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[typings.paper.paper.Item]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[typings.paper.paper.Item]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Key")
@@ -596,11 +586,9 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "KeyEvent")
   @js.native
   def KeyEvent: Instantiable0[typings.paper.paper.KeyEvent] = js.native
-  @scala.inline
-  def KeyEvent_=(x: Instantiable0[typings.paper.paper.KeyEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeyEvent")(x.asInstanceOf[js.Any])
+  inline def KeyEvent_=(x: Instantiable0[typings.paper.paper.KeyEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeyEvent")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Key_=(x: TypeofKey & Instantiable0[typings.paper.paper.Key]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Key")(x.asInstanceOf[js.Any])
+  inline def Key_=(x: TypeofKey & Instantiable0[typings.paper.paper.Key]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Key")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Layer")
@@ -624,8 +612,7 @@ object paperCoreMod {
     /* children */ js.UndefOr[js.Array[typings.paper.paper.Item]], 
     typings.paper.paper.Layer
   ] = js.native
-  @scala.inline
-  def Layer_=(
+  inline def Layer_=(
     x: Instantiable1[
       /* children */ js.UndefOr[js.Array[typings.paper.paper.Item]], 
       typings.paper.paper.Layer
@@ -645,8 +632,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Matrix")
   @js.native
   def Matrix: Instantiable0[typings.paper.paper.Matrix] = js.native
-  @scala.inline
-  def Matrix_=(x: Instantiable0[typings.paper.paper.Matrix]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matrix")(x.asInstanceOf[js.Any])
+  inline def Matrix_=(x: Instantiable0[typings.paper.paper.Matrix]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Matrix")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "MouseEvent")
@@ -729,8 +715,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "MouseEvent")
   @js.native
   def MouseEvent: Instantiable0[typings.paper.paper.MouseEvent] = js.native
-  @scala.inline
-  def MouseEvent_=(x: Instantiable0[typings.paper.paper.MouseEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MouseEvent")(x.asInstanceOf[js.Any])
+  inline def MouseEvent_=(x: Instantiable0[typings.paper.paper.MouseEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MouseEvent")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "PaperScope")
@@ -744,8 +729,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "PaperScope")
   @js.native
   def PaperScope: TypeofPaperScope & Instantiable0[typings.paper.paper.PaperScope] = js.native
-  @scala.inline
-  def PaperScope_=(x: TypeofPaperScope & Instantiable0[typings.paper.paper.PaperScope]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PaperScope")(x.asInstanceOf[js.Any])
+  inline def PaperScope_=(x: TypeofPaperScope & Instantiable0[typings.paper.paper.PaperScope]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PaperScope")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Path")
@@ -777,11 +761,9 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "PathItem")
   @js.native
   def PathItem: TypeofPathItem & Instantiable0[typings.paper.paper.PathItem] = js.native
-  @scala.inline
-  def PathItem_=(x: TypeofPathItem & Instantiable0[typings.paper.paper.PathItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathItem")(x.asInstanceOf[js.Any])
+  inline def PathItem_=(x: TypeofPathItem & Instantiable0[typings.paper.paper.PathItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PathItem")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Path_=(
+  inline def Path_=(
     x: TypeofPath & (Instantiable1[
       /* segments */ js.UndefOr[js.Array[typings.paper.paper.Segment]], 
       typings.paper.paper.Path
@@ -822,11 +804,9 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "PointText")
   @js.native
   def PointText: Instantiable1[/* point */ typings.paper.paper.Point, typings.paper.paper.PointText] = js.native
-  @scala.inline
-  def PointText_=(x: Instantiable1[/* point */ typings.paper.paper.Point, typings.paper.paper.PointText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PointText")(x.asInstanceOf[js.Any])
+  inline def PointText_=(x: Instantiable1[/* point */ typings.paper.paper.Point, typings.paper.paper.PointText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PointText")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Point_=(x: TypeofPoint & (Instantiable2[/* x */ Double, /* y */ Double, typings.paper.paper.Point])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Point")(x.asInstanceOf[js.Any])
+  inline def Point_=(x: TypeofPoint & (Instantiable2[/* x */ Double, /* y */ Double, typings.paper.paper.Point])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Point")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Project")
@@ -857,8 +837,7 @@ object paperCoreMod {
     typings.paper.paper.Project
   ] = js.native
   
-  @scala.inline
-  def Project__=(
+  inline def Project__=(
     x: Instantiable1[
       /* element */ HTMLCanvasElement | String | typings.paper.paper.Size, 
       typings.paper.paper.Project
@@ -897,8 +876,7 @@ object paperCoreMod {
     /* position */ js.UndefOr[typings.paper.paper.Point], 
     typings.paper.paper.Raster
   ] = js.native
-  @scala.inline
-  def Raster_=(
+  inline def Raster_=(
     x: Instantiable2[
       /* source */ js.UndefOr[HTMLImageElement | HTMLCanvasElement | String], 
       /* position */ js.UndefOr[typings.paper.paper.Point], 
@@ -927,8 +905,7 @@ object paperCoreMod {
     /* size */ typings.paper.paper.Size, 
     typings.paper.paper.Rectangle
   ] = js.native
-  @scala.inline
-  def Rectangle_=(
+  inline def Rectangle_=(
     x: Instantiable2[
       /* point */ typings.paper.paper.Point, 
       /* size */ typings.paper.paper.Size, 
@@ -973,8 +950,7 @@ object paperCoreMod {
     /* handleOut */ js.UndefOr[typings.paper.paper.Point], 
     typings.paper.paper.Segment
   ] = js.native
-  @scala.inline
-  def Segment_=(
+  inline def Segment_=(
     x: Instantiable3[
       /* point */ js.UndefOr[typings.paper.paper.Point], 
       /* handleIn */ js.UndefOr[typings.paper.paper.Point], 
@@ -992,8 +968,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Shape")
   @js.native
   def Shape: TypeofShape & Instantiable0[typings.paper.paper.Shape] = js.native
-  @scala.inline
-  def Shape_=(x: TypeofShape & Instantiable0[typings.paper.paper.Shape]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Shape")(x.asInstanceOf[js.Any])
+  inline def Shape_=(x: TypeofShape & Instantiable0[typings.paper.paper.Shape]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Shape")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Size")
@@ -1012,8 +987,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Size")
   @js.native
   def Size: TypeofSize & (Instantiable2[/* width */ Double, /* height */ Double, typings.paper.paper.Size]) = js.native
-  @scala.inline
-  def Size_=(x: TypeofSize & (Instantiable2[/* width */ Double, /* height */ Double, typings.paper.paper.Size])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Size")(x.asInstanceOf[js.Any])
+  inline def Size_=(x: TypeofSize & (Instantiable2[/* width */ Double, /* height */ Double, typings.paper.paper.Size])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Size")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Style")
@@ -1162,8 +1136,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "Style")
   @js.native
   def Style: Instantiable1[/* style */ js.Object, typings.paper.paper.Style] = js.native
-  @scala.inline
-  def Style_=(x: Instantiable1[/* style */ js.Object, typings.paper.paper.Style]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Style")(x.asInstanceOf[js.Any])
+  inline def Style_=(x: Instantiable1[/* style */ js.Object, typings.paper.paper.Style]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Style")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "SymbolDefinition")
@@ -1187,8 +1160,7 @@ object paperCoreMod {
     /* dontCenter */ js.UndefOr[Boolean], 
     typings.paper.paper.SymbolDefinition
   ] = js.native
-  @scala.inline
-  def SymbolDefinition_=(
+  inline def SymbolDefinition_=(
     x: Instantiable2[
       /* item */ typings.paper.paper.Item, 
       /* dontCenter */ js.UndefOr[Boolean], 
@@ -1221,8 +1193,7 @@ object paperCoreMod {
     /* point */ js.UndefOr[typings.paper.paper.Point], 
     typings.paper.paper.SymbolItem
   ] = js.native
-  @scala.inline
-  def SymbolItem_=(
+  inline def SymbolItem_=(
     x: Instantiable2[
       /* definition */ typings.paper.paper.SymbolDefinition | typings.paper.paper.Item, 
       /* point */ js.UndefOr[typings.paper.paper.Point], 
@@ -1239,8 +1210,7 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "TextItem")
   @js.native
   def TextItem: Instantiable0[typings.paper.paper.TextItem] = js.native
-  @scala.inline
-  def TextItem_=(x: Instantiable0[typings.paper.paper.TextItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextItem")(x.asInstanceOf[js.Any])
+  inline def TextItem_=(x: Instantiable0[typings.paper.paper.TextItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextItem")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Tool")
@@ -1357,15 +1327,13 @@ object paperCoreMod {
   @JSImport("paper/dist/paper-core", "ToolEvent")
   @js.native
   def ToolEvent: Instantiable0[typings.paper.paper.ToolEvent] = js.native
-  @scala.inline
-  def ToolEvent_=(x: Instantiable0[typings.paper.paper.ToolEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ToolEvent")(x.asInstanceOf[js.Any])
+  inline def ToolEvent_=(x: Instantiable0[typings.paper.paper.ToolEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ToolEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "Tool")
   @js.native
   def Tool_ : Instantiable0[typings.paper.paper.Tool] = js.native
   
-  @scala.inline
-  def Tool__=(x: Instantiable0[typings.paper.paper.Tool]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tool")(x.asInstanceOf[js.Any])
+  inline def Tool__=(x: Instantiable0[typings.paper.paper.Tool]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tool")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("paper/dist/paper-core", "Tween")
@@ -1452,8 +1420,7 @@ object paperCoreMod {
     /* start */ js.UndefOr[Boolean], 
     typings.paper.paper.Tween
   ] = js.native
-  @scala.inline
-  def Tween_=(
+  inline def Tween_=(
     x: Instantiable6[
       /* object */ js.Object, 
       /* from */ js.Object, 
@@ -1475,87 +1442,68 @@ object paperCoreMod {
   @js.native
   def View_ : Instantiable0[typings.paper.paper.View] = js.native
   
-  @scala.inline
-  def View__=(x: Instantiable0[typings.paper.paper.View]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+  inline def View__=(x: Instantiable0[typings.paper.paper.View]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def activate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activate")().asInstanceOf[Unit]
+  inline def activate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("activate")().asInstanceOf[Unit]
   @JSImport("paper/dist/paper-core", "activate")
   @js.native
   def activate_FpaperCoreMod: js.Function0[Unit] = js.native
   
-  @scala.inline
-  def activate_FpaperCoreMod_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activate")(x.asInstanceOf[js.Any])
+  inline def activate_FpaperCoreMod_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activate")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "execute")
   @js.native
   def execute: js.Function2[/* code */ String, /* options */ js.UndefOr[js.Object], Unit] = js.native
-  @scala.inline
-  def execute(code: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def execute(code: String, options: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def execute_=(x: js.Function2[/* code */ String, /* options */ js.UndefOr[js.Object], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("execute")(x.asInstanceOf[js.Any])
+  inline def execute(code: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def execute(code: String, options: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def execute_=(x: js.Function2[/* code */ String, /* options */ js.UndefOr[js.Object], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("execute")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "install")
   @js.native
   def install: js.Function1[/* scope */ js.Any, Unit] = js.native
-  @scala.inline
-  def install(scope: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def install_=(x: js.Function1[/* scope */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
+  inline def install(scope: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install_=(x: js.Function1[/* scope */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "project")
   @js.native
   def project: typings.paper.paper.Project = js.native
-  @scala.inline
-  def project_=(x: typings.paper.paper.Project): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("project")(x.asInstanceOf[js.Any])
+  inline def project_=(x: typings.paper.paper.Project): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("project")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "projects")
   @js.native
   def projects: js.Array[typings.paper.paper.Project] = js.native
-  @scala.inline
-  def projects_=(x: js.Array[typings.paper.paper.Project]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("projects")(x.asInstanceOf[js.Any])
+  inline def projects_=(x: js.Array[typings.paper.paper.Project]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("projects")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "settings")
   @js.native
   def settings: js.Any = js.native
-  @scala.inline
-  def settings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
+  inline def settings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "setup")
   @js.native
   def setup: js.Function1[/* element */ HTMLCanvasElement | String | typings.paper.paper.Size, Unit] = js.native
-  @scala.inline
-  def setup(element: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setup(element: typings.paper.paper.Size): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setup(element: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setup_=(x: js.Function1[/* element */ HTMLCanvasElement | String | typings.paper.paper.Size, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setup")(x.asInstanceOf[js.Any])
+  inline def setup(element: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup(element: typings.paper.paper.Size): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup(element: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setup_=(x: js.Function1[/* element */ HTMLCanvasElement | String | typings.paper.paper.Size, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setup")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "tool")
   @js.native
   def tool: typings.paper.paper.Tool = js.native
-  @scala.inline
-  def tool_=(x: typings.paper.paper.Tool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tool")(x.asInstanceOf[js.Any])
+  inline def tool_=(x: typings.paper.paper.Tool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tool")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "tools")
   @js.native
   def tools: js.Array[typings.paper.paper.Tool] = js.native
-  @scala.inline
-  def tools_=(x: js.Array[typings.paper.paper.Tool]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tools")(x.asInstanceOf[js.Any])
+  inline def tools_=(x: js.Array[typings.paper.paper.Tool]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tools")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   @JSImport("paper/dist/paper-core", "view")
   @js.native
   def view: typings.paper.paper.View = js.native
-  @scala.inline
-  def view_=(x: typings.paper.paper.View): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("view")(x.asInstanceOf[js.Any])
+  inline def view_=(x: typings.paper.paper.View): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("view")(x.asInstanceOf[js.Any])
 }

@@ -23,22 +23,17 @@ trait GetTableMetadataInput extends StObject {
 }
 object GetTableMetadataInput {
   
-  @scala.inline
-  def apply(CatalogName: CatalogNameString, DatabaseName: NameString, TableName: NameString): GetTableMetadataInput = {
+  inline def apply(CatalogName: CatalogNameString, DatabaseName: NameString, TableName: NameString): GetTableMetadataInput = {
     val __obj = js.Dynamic.literal(CatalogName = CatalogName.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTableMetadataInput]
   }
   
-  @scala.inline
-  implicit class GetTableMetadataInputMutableBuilder[Self <: GetTableMetadataInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetTableMetadataInput](x: Self) {
     
-    @scala.inline
-    def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
+    inline def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

@@ -91,188 +91,157 @@ object mod {
     @JSImport("esprima", "Syntax.ArrayExpression")
     @js.native
     def ArrayExpression: typings.esprima.esprimaStrings.ArrayExpression = js.native
-    @scala.inline
-    def ArrayExpression_=(x: ArrayExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrayExpression")(x.asInstanceOf[js.Any])
+    inline def ArrayExpression_=(x: ArrayExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrayExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ArrayPattern")
     @js.native
     def ArrayPattern: typings.esprima.esprimaStrings.ArrayPattern = js.native
-    @scala.inline
-    def ArrayPattern_=(x: ArrayPattern): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrayPattern")(x.asInstanceOf[js.Any])
+    inline def ArrayPattern_=(x: ArrayPattern): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrayPattern")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ArrowFunctionExpression")
     @js.native
     def ArrowFunctionExpression: typings.esprima.esprimaStrings.ArrowFunctionExpression = js.native
-    @scala.inline
-    def ArrowFunctionExpression_=(x: ArrowFunctionExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrowFunctionExpression")(x.asInstanceOf[js.Any])
+    inline def ArrowFunctionExpression_=(x: ArrowFunctionExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ArrowFunctionExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.AssignmentExpression")
     @js.native
     def AssignmentExpression: typings.esprima.esprimaStrings.AssignmentExpression = js.native
-    @scala.inline
-    def AssignmentExpression_=(x: AssignmentExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AssignmentExpression")(x.asInstanceOf[js.Any])
+    inline def AssignmentExpression_=(x: AssignmentExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AssignmentExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.AssignmentPattern")
     @js.native
     def AssignmentPattern: typings.esprima.esprimaStrings.AssignmentPattern = js.native
-    @scala.inline
-    def AssignmentPattern_=(x: AssignmentPattern): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AssignmentPattern")(x.asInstanceOf[js.Any])
+    inline def AssignmentPattern_=(x: AssignmentPattern): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AssignmentPattern")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.AwaitExpression")
     @js.native
     def AwaitExpression: typings.esprima.esprimaStrings.AwaitExpression = js.native
-    @scala.inline
-    def AwaitExpression_=(x: AwaitExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AwaitExpression")(x.asInstanceOf[js.Any])
+    inline def AwaitExpression_=(x: AwaitExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AwaitExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.BinaryExpression")
     @js.native
     def BinaryExpression: typings.esprima.esprimaStrings.BinaryExpression = js.native
-    @scala.inline
-    def BinaryExpression_=(x: BinaryExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BinaryExpression")(x.asInstanceOf[js.Any])
+    inline def BinaryExpression_=(x: BinaryExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BinaryExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.BlockStatement")
     @js.native
     def BlockStatement: typings.esprima.esprimaStrings.BlockStatement = js.native
-    @scala.inline
-    def BlockStatement_=(x: BlockStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BlockStatement")(x.asInstanceOf[js.Any])
+    inline def BlockStatement_=(x: BlockStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BlockStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.BreakStatement")
     @js.native
     def BreakStatement: typings.esprima.esprimaStrings.BreakStatement = js.native
-    @scala.inline
-    def BreakStatement_=(x: BreakStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BreakStatement")(x.asInstanceOf[js.Any])
+    inline def BreakStatement_=(x: BreakStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BreakStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.CallExpression")
     @js.native
     def CallExpression: typings.esprima.esprimaStrings.CallExpression = js.native
-    @scala.inline
-    def CallExpression_=(x: CallExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CallExpression")(x.asInstanceOf[js.Any])
+    inline def CallExpression_=(x: CallExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CallExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.CatchClause")
     @js.native
     def CatchClause: typings.esprima.esprimaStrings.CatchClause = js.native
-    @scala.inline
-    def CatchClause_=(x: CatchClause): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CatchClause")(x.asInstanceOf[js.Any])
+    inline def CatchClause_=(x: CatchClause): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CatchClause")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ClassBody")
     @js.native
     def ClassBody: typings.esprima.esprimaStrings.ClassBody = js.native
-    @scala.inline
-    def ClassBody_=(x: ClassBody): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClassBody")(x.asInstanceOf[js.Any])
+    inline def ClassBody_=(x: ClassBody): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClassBody")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ClassDeclaration")
     @js.native
     def ClassDeclaration: typings.esprima.esprimaStrings.ClassDeclaration = js.native
-    @scala.inline
-    def ClassDeclaration_=(x: ClassDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClassDeclaration")(x.asInstanceOf[js.Any])
+    inline def ClassDeclaration_=(x: ClassDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClassDeclaration")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ClassExpression")
     @js.native
     def ClassExpression: typings.esprima.esprimaStrings.ClassExpression = js.native
-    @scala.inline
-    def ClassExpression_=(x: ClassExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClassExpression")(x.asInstanceOf[js.Any])
+    inline def ClassExpression_=(x: ClassExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClassExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ConditionalExpression")
     @js.native
     def ConditionalExpression: typings.esprima.esprimaStrings.ConditionalExpression = js.native
-    @scala.inline
-    def ConditionalExpression_=(x: ConditionalExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConditionalExpression")(x.asInstanceOf[js.Any])
+    inline def ConditionalExpression_=(x: ConditionalExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConditionalExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ContinueStatement")
     @js.native
     def ContinueStatement: typings.esprima.esprimaStrings.ContinueStatement = js.native
-    @scala.inline
-    def ContinueStatement_=(x: ContinueStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContinueStatement")(x.asInstanceOf[js.Any])
+    inline def ContinueStatement_=(x: ContinueStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContinueStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.DebuggerStatement")
     @js.native
     def DebuggerStatement: typings.esprima.esprimaStrings.DebuggerStatement = js.native
-    @scala.inline
-    def DebuggerStatement_=(x: DebuggerStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DebuggerStatement")(x.asInstanceOf[js.Any])
+    inline def DebuggerStatement_=(x: DebuggerStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DebuggerStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.DoWhileStatement")
     @js.native
     def DoWhileStatement: typings.esprima.esprimaStrings.DoWhileStatement = js.native
-    @scala.inline
-    def DoWhileStatement_=(x: DoWhileStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DoWhileStatement")(x.asInstanceOf[js.Any])
+    inline def DoWhileStatement_=(x: DoWhileStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DoWhileStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.EmptyStatement")
     @js.native
     def EmptyStatement: typings.esprima.esprimaStrings.EmptyStatement = js.native
-    @scala.inline
-    def EmptyStatement_=(x: EmptyStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmptyStatement")(x.asInstanceOf[js.Any])
+    inline def EmptyStatement_=(x: EmptyStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmptyStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ExportAllDeclaration")
     @js.native
     def ExportAllDeclaration: typings.esprima.esprimaStrings.ExportAllDeclaration = js.native
-    @scala.inline
-    def ExportAllDeclaration_=(x: ExportAllDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExportAllDeclaration")(x.asInstanceOf[js.Any])
+    inline def ExportAllDeclaration_=(x: ExportAllDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExportAllDeclaration")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ExportDefaultDeclaration")
     @js.native
     def ExportDefaultDeclaration: typings.esprima.esprimaStrings.ExportDefaultDeclaration = js.native
-    @scala.inline
-    def ExportDefaultDeclaration_=(x: ExportDefaultDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExportDefaultDeclaration")(x.asInstanceOf[js.Any])
+    inline def ExportDefaultDeclaration_=(x: ExportDefaultDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExportDefaultDeclaration")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ExportNamedDeclaration")
     @js.native
     def ExportNamedDeclaration: typings.esprima.esprimaStrings.ExportNamedDeclaration = js.native
-    @scala.inline
-    def ExportNamedDeclaration_=(x: ExportNamedDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExportNamedDeclaration")(x.asInstanceOf[js.Any])
+    inline def ExportNamedDeclaration_=(x: ExportNamedDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExportNamedDeclaration")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ExportSpecifier")
     @js.native
     def ExportSpecifier: typings.esprima.esprimaStrings.ExportSpecifier = js.native
-    @scala.inline
-    def ExportSpecifier_=(x: ExportSpecifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExportSpecifier")(x.asInstanceOf[js.Any])
+    inline def ExportSpecifier_=(x: ExportSpecifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExportSpecifier")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ExpressionStatement")
     @js.native
     def ExpressionStatement: typings.esprima.esprimaStrings.ExpressionStatement = js.native
-    @scala.inline
-    def ExpressionStatement_=(x: ExpressionStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExpressionStatement")(x.asInstanceOf[js.Any])
+    inline def ExpressionStatement_=(x: ExpressionStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExpressionStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ForInStatement")
     @js.native
     def ForInStatement: typings.esprima.esprimaStrings.ForInStatement = js.native
-    @scala.inline
-    def ForInStatement_=(x: ForInStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForInStatement")(x.asInstanceOf[js.Any])
+    inline def ForInStatement_=(x: ForInStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForInStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ForOfStatement")
     @js.native
     def ForOfStatement: typings.esprima.esprimaStrings.ForOfStatement = js.native
-    @scala.inline
-    def ForOfStatement_=(x: ForOfStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForOfStatement")(x.asInstanceOf[js.Any])
+    inline def ForOfStatement_=(x: ForOfStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForOfStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ForStatement")
     @js.native
     def ForStatement: typings.esprima.esprimaStrings.ForStatement = js.native
-    @scala.inline
-    def ForStatement_=(x: ForStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForStatement")(x.asInstanceOf[js.Any])
+    inline def ForStatement_=(x: ForStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.FunctionDeclaration")
     @js.native
     def FunctionDeclaration: typings.esprima.esprimaStrings.FunctionDeclaration = js.native
-    @scala.inline
-    def FunctionDeclaration_=(x: FunctionDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FunctionDeclaration")(x.asInstanceOf[js.Any])
+    inline def FunctionDeclaration_=(x: FunctionDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FunctionDeclaration")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.FunctionExpression")
     @js.native
     def FunctionExpression: typings.esprima.esprimaStrings.FunctionExpression = js.native
-    @scala.inline
-    def FunctionExpression_=(x: FunctionExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FunctionExpression")(x.asInstanceOf[js.Any])
+    inline def FunctionExpression_=(x: FunctionExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FunctionExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.Identifier")
     @js.native
     def Identifier: typings.esprima.esprimaStrings.Identifier = js.native
-    @scala.inline
-    def Identifier_=(x: Identifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Identifier")(x.asInstanceOf[js.Any])
+    inline def Identifier_=(x: Identifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Identifier")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.IfStatement")
     @js.native
     def IfStatement: typings.esprima.esprimaStrings.IfStatement = js.native
-    @scala.inline
-    def IfStatement_=(x: IfStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IfStatement")(x.asInstanceOf[js.Any])
+    inline def IfStatement_=(x: IfStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IfStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.Import")
     @js.native
@@ -281,247 +250,201 @@ object mod {
     @JSImport("esprima", "Syntax.ImportDeclaration")
     @js.native
     def ImportDeclaration: typings.esprima.esprimaStrings.ImportDeclaration = js.native
-    @scala.inline
-    def ImportDeclaration_=(x: ImportDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportDeclaration")(x.asInstanceOf[js.Any])
+    inline def ImportDeclaration_=(x: ImportDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportDeclaration")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ImportDefaultSpecifier")
     @js.native
     def ImportDefaultSpecifier: typings.esprima.esprimaStrings.ImportDefaultSpecifier = js.native
-    @scala.inline
-    def ImportDefaultSpecifier_=(x: ImportDefaultSpecifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportDefaultSpecifier")(x.asInstanceOf[js.Any])
+    inline def ImportDefaultSpecifier_=(x: ImportDefaultSpecifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportDefaultSpecifier")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ImportNamespaceSpecifier")
     @js.native
     def ImportNamespaceSpecifier: typings.esprima.esprimaStrings.ImportNamespaceSpecifier = js.native
-    @scala.inline
-    def ImportNamespaceSpecifier_=(x: ImportNamespaceSpecifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportNamespaceSpecifier")(x.asInstanceOf[js.Any])
+    inline def ImportNamespaceSpecifier_=(x: ImportNamespaceSpecifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportNamespaceSpecifier")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ImportSpecifier")
     @js.native
     def ImportSpecifier: typings.esprima.esprimaStrings.ImportSpecifier = js.native
-    @scala.inline
-    def ImportSpecifier_=(x: ImportSpecifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportSpecifier")(x.asInstanceOf[js.Any])
+    inline def ImportSpecifier_=(x: ImportSpecifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportSpecifier")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Import_=(x: Import): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Import")(x.asInstanceOf[js.Any])
+    inline def Import_=(x: Import): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Import")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.LabeledStatement")
     @js.native
     def LabeledStatement: typings.esprima.esprimaStrings.LabeledStatement = js.native
-    @scala.inline
-    def LabeledStatement_=(x: LabeledStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LabeledStatement")(x.asInstanceOf[js.Any])
+    inline def LabeledStatement_=(x: LabeledStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LabeledStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.Literal")
     @js.native
     def Literal: typings.esprima.esprimaStrings.Literal = js.native
-    @scala.inline
-    def Literal_=(x: Literal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Literal")(x.asInstanceOf[js.Any])
+    inline def Literal_=(x: Literal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Literal")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.LogicalExpression")
     @js.native
     def LogicalExpression: typings.esprima.esprimaStrings.LogicalExpression = js.native
-    @scala.inline
-    def LogicalExpression_=(x: LogicalExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogicalExpression")(x.asInstanceOf[js.Any])
+    inline def LogicalExpression_=(x: LogicalExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LogicalExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.MemberExpression")
     @js.native
     def MemberExpression: typings.esprima.esprimaStrings.MemberExpression = js.native
-    @scala.inline
-    def MemberExpression_=(x: MemberExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MemberExpression")(x.asInstanceOf[js.Any])
+    inline def MemberExpression_=(x: MemberExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MemberExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.MetaProperty")
     @js.native
     def MetaProperty: typings.esprima.esprimaStrings.MetaProperty = js.native
-    @scala.inline
-    def MetaProperty_=(x: MetaProperty): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MetaProperty")(x.asInstanceOf[js.Any])
+    inline def MetaProperty_=(x: MetaProperty): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MetaProperty")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.MethodDefinition")
     @js.native
     def MethodDefinition: typings.esprima.esprimaStrings.MethodDefinition = js.native
-    @scala.inline
-    def MethodDefinition_=(x: MethodDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MethodDefinition")(x.asInstanceOf[js.Any])
+    inline def MethodDefinition_=(x: MethodDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MethodDefinition")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.NewExpression")
     @js.native
     def NewExpression: typings.esprima.esprimaStrings.NewExpression = js.native
-    @scala.inline
-    def NewExpression_=(x: NewExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NewExpression")(x.asInstanceOf[js.Any])
+    inline def NewExpression_=(x: NewExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NewExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ObjectExpression")
     @js.native
     def ObjectExpression: typings.esprima.esprimaStrings.ObjectExpression = js.native
-    @scala.inline
-    def ObjectExpression_=(x: ObjectExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectExpression")(x.asInstanceOf[js.Any])
+    inline def ObjectExpression_=(x: ObjectExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ObjectPattern")
     @js.native
     def ObjectPattern: typings.esprima.esprimaStrings.ObjectPattern = js.native
-    @scala.inline
-    def ObjectPattern_=(x: ObjectPattern): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectPattern")(x.asInstanceOf[js.Any])
+    inline def ObjectPattern_=(x: ObjectPattern): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectPattern")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.Program")
     @js.native
     def Program: typings.esprima.esprimaStrings.Program = js.native
-    @scala.inline
-    def Program_=(x: typings.esprima.esprimaStrings.Program): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Program")(x.asInstanceOf[js.Any])
+    inline def Program_=(x: typings.esprima.esprimaStrings.Program): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Program")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.Property")
     @js.native
     def Property: typings.esprima.esprimaStrings.Property = js.native
-    @scala.inline
-    def Property_=(x: Property): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
+    inline def Property_=(x: Property): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.RestElement")
     @js.native
     def RestElement: typings.esprima.esprimaStrings.RestElement = js.native
-    @scala.inline
-    def RestElement_=(x: RestElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RestElement")(x.asInstanceOf[js.Any])
+    inline def RestElement_=(x: RestElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RestElement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ReturnStatement")
     @js.native
     def ReturnStatement: typings.esprima.esprimaStrings.ReturnStatement = js.native
-    @scala.inline
-    def ReturnStatement_=(x: ReturnStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReturnStatement")(x.asInstanceOf[js.Any])
+    inline def ReturnStatement_=(x: ReturnStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReturnStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.SequenceExpression")
     @js.native
     def SequenceExpression: typings.esprima.esprimaStrings.SequenceExpression = js.native
-    @scala.inline
-    def SequenceExpression_=(x: SequenceExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceExpression")(x.asInstanceOf[js.Any])
+    inline def SequenceExpression_=(x: SequenceExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.SpreadElement")
     @js.native
     def SpreadElement: typings.esprima.esprimaStrings.SpreadElement = js.native
-    @scala.inline
-    def SpreadElement_=(x: SpreadElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpreadElement")(x.asInstanceOf[js.Any])
+    inline def SpreadElement_=(x: SpreadElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpreadElement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.Super")
     @js.native
     def Super: typings.esprima.esprimaStrings.Super = js.native
-    @scala.inline
-    def Super_=(x: Super): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Super")(x.asInstanceOf[js.Any])
+    inline def Super_=(x: Super): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Super")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.SwitchCase")
     @js.native
     def SwitchCase: typings.esprima.esprimaStrings.SwitchCase = js.native
-    @scala.inline
-    def SwitchCase_=(x: SwitchCase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SwitchCase")(x.asInstanceOf[js.Any])
+    inline def SwitchCase_=(x: SwitchCase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SwitchCase")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.SwitchStatement")
     @js.native
     def SwitchStatement: typings.esprima.esprimaStrings.SwitchStatement = js.native
-    @scala.inline
-    def SwitchStatement_=(x: SwitchStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SwitchStatement")(x.asInstanceOf[js.Any])
+    inline def SwitchStatement_=(x: SwitchStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SwitchStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.TaggedTemplateExpression")
     @js.native
     def TaggedTemplateExpression: typings.esprima.esprimaStrings.TaggedTemplateExpression = js.native
-    @scala.inline
-    def TaggedTemplateExpression_=(x: TaggedTemplateExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TaggedTemplateExpression")(x.asInstanceOf[js.Any])
+    inline def TaggedTemplateExpression_=(x: TaggedTemplateExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TaggedTemplateExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.TemplateElement")
     @js.native
     def TemplateElement: typings.esprima.esprimaStrings.TemplateElement = js.native
-    @scala.inline
-    def TemplateElement_=(x: TemplateElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TemplateElement")(x.asInstanceOf[js.Any])
+    inline def TemplateElement_=(x: TemplateElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TemplateElement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.TemplateLiteral")
     @js.native
     def TemplateLiteral: typings.esprima.esprimaStrings.TemplateLiteral = js.native
-    @scala.inline
-    def TemplateLiteral_=(x: TemplateLiteral): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TemplateLiteral")(x.asInstanceOf[js.Any])
+    inline def TemplateLiteral_=(x: TemplateLiteral): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TemplateLiteral")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ThisExpression")
     @js.native
     def ThisExpression: typings.esprima.esprimaStrings.ThisExpression = js.native
-    @scala.inline
-    def ThisExpression_=(x: ThisExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThisExpression")(x.asInstanceOf[js.Any])
+    inline def ThisExpression_=(x: ThisExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThisExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.ThrowStatement")
     @js.native
     def ThrowStatement: typings.esprima.esprimaStrings.ThrowStatement = js.native
-    @scala.inline
-    def ThrowStatement_=(x: ThrowStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThrowStatement")(x.asInstanceOf[js.Any])
+    inline def ThrowStatement_=(x: ThrowStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ThrowStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.TryStatement")
     @js.native
     def TryStatement: typings.esprima.esprimaStrings.TryStatement = js.native
-    @scala.inline
-    def TryStatement_=(x: TryStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TryStatement")(x.asInstanceOf[js.Any])
+    inline def TryStatement_=(x: TryStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TryStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.UnaryExpression")
     @js.native
     def UnaryExpression: typings.esprima.esprimaStrings.UnaryExpression = js.native
-    @scala.inline
-    def UnaryExpression_=(x: UnaryExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryExpression")(x.asInstanceOf[js.Any])
+    inline def UnaryExpression_=(x: UnaryExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.UpdateExpression")
     @js.native
     def UpdateExpression: typings.esprima.esprimaStrings.UpdateExpression = js.native
-    @scala.inline
-    def UpdateExpression_=(x: UpdateExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpdateExpression")(x.asInstanceOf[js.Any])
+    inline def UpdateExpression_=(x: UpdateExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpdateExpression")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.VariableDeclaration")
     @js.native
     def VariableDeclaration: typings.esprima.esprimaStrings.VariableDeclaration = js.native
-    @scala.inline
-    def VariableDeclaration_=(x: VariableDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VariableDeclaration")(x.asInstanceOf[js.Any])
+    inline def VariableDeclaration_=(x: VariableDeclaration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VariableDeclaration")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.VariableDeclarator")
     @js.native
     def VariableDeclarator: typings.esprima.esprimaStrings.VariableDeclarator = js.native
-    @scala.inline
-    def VariableDeclarator_=(x: VariableDeclarator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VariableDeclarator")(x.asInstanceOf[js.Any])
+    inline def VariableDeclarator_=(x: VariableDeclarator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VariableDeclarator")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.WhileStatement")
     @js.native
     def WhileStatement: typings.esprima.esprimaStrings.WhileStatement = js.native
-    @scala.inline
-    def WhileStatement_=(x: WhileStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WhileStatement")(x.asInstanceOf[js.Any])
+    inline def WhileStatement_=(x: WhileStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WhileStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.WithStatement")
     @js.native
     def WithStatement: typings.esprima.esprimaStrings.WithStatement = js.native
-    @scala.inline
-    def WithStatement_=(x: WithStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WithStatement")(x.asInstanceOf[js.Any])
+    inline def WithStatement_=(x: WithStatement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WithStatement")(x.asInstanceOf[js.Any])
     
     @JSImport("esprima", "Syntax.YieldExpression")
     @js.native
     def YieldExpression: typings.esprima.esprimaStrings.YieldExpression = js.native
-    @scala.inline
-    def YieldExpression_=(x: YieldExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YieldExpression")(x.asInstanceOf[js.Any])
+    inline def YieldExpression_=(x: YieldExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YieldExpression")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def parseModule(input: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any]).asInstanceOf[Program]
-  @scala.inline
-  def parseModule(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
-  @scala.inline
-  def parseModule(input: String, config: ParseOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Program]
-  @scala.inline
-  def parseModule(
+  inline def parseModule(input: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any]).asInstanceOf[Program]
+  inline def parseModule(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def parseModule(input: String, config: ParseOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def parseModule(
     input: String,
     config: ParseOptions,
     delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]
   ): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
   
-  @scala.inline
-  def parseScript(input: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any]).asInstanceOf[Program]
-  @scala.inline
-  def parseScript(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
-  @scala.inline
-  def parseScript(input: String, config: ParseOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Program]
-  @scala.inline
-  def parseScript(
+  inline def parseScript(input: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any]).asInstanceOf[Program]
+  inline def parseScript(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def parseScript(input: String, config: ParseOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Program]
+  inline def parseScript(
     input: String,
     config: ParseOptions,
     delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]
   ): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
   
-  @scala.inline
-  def tokenize(input: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
-  @scala.inline
-  def tokenize(input: String, config: TokenizeOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
+  inline def tokenize(input: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  inline def tokenize(input: String, config: TokenizeOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
   @JSImport("esprima", "version")
   @js.native
@@ -543,50 +466,36 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
+      inline def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
+      inline def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
       
-      @scala.inline
-      def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+      inline def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+      inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
       
-      @scala.inline
-      def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setTokens(value: Boolean): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: Boolean): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
       
-      @scala.inline
-      def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
+      inline def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
+      inline def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
     }
   }
   
@@ -598,24 +507,19 @@ object mod {
   }
   object Program {
     
-    @scala.inline
-    def apply(body: js.Array[Directive | Statement | ModuleDeclaration], sourceType: script | module): Program = {
+    inline def apply(body: js.Array[Directive | Statement | ModuleDeclaration], sourceType: script | module): Program = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("Program")
       __obj.asInstanceOf[Program]
     }
     
-    @scala.inline
-    implicit class ProgramMutableBuilder[Self <: Program] (val x: Self) extends AnyVal {
+    extension [Self <: Program](x: Self) {
       
-      @scala.inline
-      def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
       
-      @scala.inline
-      def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
     }
   }
   
@@ -627,21 +531,17 @@ object mod {
   }
   object Token {
     
-    @scala.inline
-    def apply(`type`: String, value: String): Token = {
+    inline def apply(`type`: String, value: String): Token = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -657,38 +557,28 @@ object mod {
   }
   object TokenizeOptions {
     
-    @scala.inline
-    def apply(): TokenizeOptions = {
+    inline def apply(): TokenizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokenizeOptions]
     }
     
-    @scala.inline
-    implicit class TokenizeOptionsMutableBuilder[Self <: TokenizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TokenizeOptions](x: Self) {
       
-      @scala.inline
-      def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+      inline def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+      inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
       
-      @scala.inline
-      def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
+      inline def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
+      inline def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
     }
   }
 }

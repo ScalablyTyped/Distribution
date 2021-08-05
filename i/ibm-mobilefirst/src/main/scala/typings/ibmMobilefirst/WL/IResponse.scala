@@ -10,19 +10,15 @@ trait IResponse extends StObject {
 }
 object IResponse {
   
-  @scala.inline
-  def apply(): IResponse = {
+  inline def apply(): IResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IResponse]
   }
   
-  @scala.inline
-  implicit class IResponseMutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IResponse](x: Self) {
     
-    @scala.inline
-    def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
+    inline def setInvocationContext(value: js.Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
+    inline def setInvocationContextUndefined: Self = StObject.set(x, "invocationContext", js.undefined)
   }
 }

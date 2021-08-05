@@ -19,8 +19,7 @@ trait FullTreeindexnumbergetNod extends StObject {
 }
 object FullTreeindexnumbergetNod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNodeKey: /* data */ TreeIndex & TreeNode => String | Double,
     index: Double,
     treeData: js.Array[TreeItem]
@@ -29,19 +28,14 @@ object FullTreeindexnumbergetNod {
     __obj.asInstanceOf[FullTreeindexnumbergetNod]
   }
   
-  @scala.inline
-  implicit class FullTreeindexnumbergetNodMutableBuilder[Self <: FullTreeindexnumbergetNod] (val x: Self) extends AnyVal {
+  extension [Self <: FullTreeindexnumbergetNod](x: Self) {
     
-    @scala.inline
-    def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+    inline def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
+    inline def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
+    inline def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

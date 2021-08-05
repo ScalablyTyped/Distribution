@@ -12,16 +12,13 @@ trait SlmDeleteLifecycle
 }
 object SlmDeleteLifecycle {
   
-  @scala.inline
-  def apply(policy_id: String): SlmDeleteLifecycle = {
+  inline def apply(policy_id: String): SlmDeleteLifecycle = {
     val __obj = js.Dynamic.literal(policy_id = policy_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlmDeleteLifecycle]
   }
   
-  @scala.inline
-  implicit class SlmDeleteLifecycleMutableBuilder[Self <: SlmDeleteLifecycle] (val x: Self) extends AnyVal {
+  extension [Self <: SlmDeleteLifecycle](x: Self) {
     
-    @scala.inline
-    def setPolicy_id(value: String): Self = StObject.set(x, "policy_id", value.asInstanceOf[js.Any])
+    inline def setPolicy_id(value: String): Self = StObject.set(x, "policy_id", value.asInstanceOf[js.Any])
   }
 }

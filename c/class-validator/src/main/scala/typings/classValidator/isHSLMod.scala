@@ -16,11 +16,8 @@ object isHSLMod {
   @js.native
   val IS_HSL: /* "isHSL" */ String = js.native
   
-  @scala.inline
-  def IsHSL_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHSL")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def IsHSL_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHSL")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def IsHSL_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHSL")().asInstanceOf[PropertyDecorator]
+  inline def IsHSL_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsHSL")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @scala.inline
-  def isHSL(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHSL")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHSL(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHSL")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

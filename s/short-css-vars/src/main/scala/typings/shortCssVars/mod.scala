@@ -67,29 +67,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFormatter(value: /* name */ String => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* name */ String => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: IgnoreType): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: IgnoreType): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreFunction1(value: /* name */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
+      inline def setIgnoreFunction1(value: /* name */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     }
   }
   
@@ -122,8 +115,7 @@ object mod {
   }
   object ShortCssVars {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getMap: () => StringDictionary[String],
       replaceCss: String => String,
       replaceName: String => String
@@ -132,17 +124,13 @@ object mod {
       __obj.asInstanceOf[ShortCssVars]
     }
     
-    @scala.inline
-    implicit class ShortCssVarsMutableBuilder[Self <: ShortCssVars] (val x: Self) extends AnyVal {
+    extension [Self <: ShortCssVars](x: Self) {
       
-      @scala.inline
-      def setGetMap(value: () => StringDictionary[String]): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
+      inline def setGetMap(value: () => StringDictionary[String]): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReplaceCss(value: String => String): Self = StObject.set(x, "replaceCss", js.Any.fromFunction1(value))
+      inline def setReplaceCss(value: String => String): Self = StObject.set(x, "replaceCss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReplaceName(value: String => String): Self = StObject.set(x, "replaceName", js.Any.fromFunction1(value))
+      inline def setReplaceName(value: String => String): Self = StObject.set(x, "replaceName", js.Any.fromFunction1(value))
     }
   }
 }

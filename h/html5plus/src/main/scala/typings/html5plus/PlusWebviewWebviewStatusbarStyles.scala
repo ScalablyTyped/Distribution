@@ -23,19 +23,15 @@ trait PlusWebviewWebviewStatusbarStyles extends StObject {
 }
 object PlusWebviewWebviewStatusbarStyles {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewStatusbarStyles = {
+  inline def apply(): PlusWebviewWebviewStatusbarStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewStatusbarStyles]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewStatusbarStylesMutableBuilder[Self <: PlusWebviewWebviewStatusbarStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewStatusbarStyles](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
   }
 }

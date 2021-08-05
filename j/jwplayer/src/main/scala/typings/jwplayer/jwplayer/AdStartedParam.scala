@@ -12,19 +12,15 @@ trait AdStartedParam extends StObject {
 }
 object AdStartedParam {
   
-  @scala.inline
-  def apply(creativetype: String, tag: String): AdStartedParam = {
+  inline def apply(creativetype: String, tag: String): AdStartedParam = {
     val __obj = js.Dynamic.literal(creativetype = creativetype.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdStartedParam]
   }
   
-  @scala.inline
-  implicit class AdStartedParamMutableBuilder[Self <: AdStartedParam] (val x: Self) extends AnyVal {
+  extension [Self <: AdStartedParam](x: Self) {
     
-    @scala.inline
-    def setCreativetype(value: String): Self = StObject.set(x, "creativetype", value.asInstanceOf[js.Any])
+    inline def setCreativetype(value: String): Self = StObject.set(x, "creativetype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

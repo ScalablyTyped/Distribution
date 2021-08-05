@@ -28,8 +28,7 @@ trait Note extends StObject {
 }
 object Note {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: Double,
     desc: String,
     height: Double,
@@ -44,34 +43,24 @@ object Note {
     __obj.asInstanceOf[Note]
   }
   
-  @scala.inline
-  implicit class NoteMutableBuilder[Self <: Note] (val x: Self) extends AnyVal {
+  extension [Self <: Note](x: Self) {
     
-    @scala.inline
-    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: HTMLDivElement | PseudoNull): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: HTMLDivElement | PseudoNull): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
+    inline def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPic(value: Icon | _empty): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
+    inline def setPic(value: Icon | _empty): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuick(value: Double): Self = StObject.set(x, "quick", value.asInstanceOf[js.Any])
+    inline def setQuick(value: Double): Self = StObject.set(x, "quick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ object xDnsPrefetchControlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function3[
+  inline def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -25,8 +24,7 @@ object xDnsPrefetchControlMod {
     /* next */ js.Function0[Unit], 
     Unit
   ]]
-  @scala.inline
-  def default(options: ReadonlyXDnsPrefetchContr): js.Function3[
+  inline def default(options: ReadonlyXDnsPrefetchContr): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -44,20 +42,16 @@ object xDnsPrefetchControlMod {
   }
   object XDnsPrefetchControlOptions {
     
-    @scala.inline
-    def apply(): XDnsPrefetchControlOptions = {
+    inline def apply(): XDnsPrefetchControlOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XDnsPrefetchControlOptions]
     }
     
-    @scala.inline
-    implicit class XDnsPrefetchControlOptionsMutableBuilder[Self <: XDnsPrefetchControlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XDnsPrefetchControlOptions](x: Self) {
       
-      @scala.inline
-      def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+      inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
+      inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     }
   }
 }

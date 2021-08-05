@@ -14,8 +14,7 @@ trait RemoteVideoStats
 }
 object RemoteVideoStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bytesReceived: Double,
     framesDecoded: Double,
     framesHeight: Double,
@@ -27,10 +26,8 @@ object RemoteVideoStats {
     __obj.asInstanceOf[RemoteVideoStats]
   }
   
-  @scala.inline
-  implicit class RemoteVideoStatsMutableBuilder[Self <: RemoteVideoStats] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteVideoStats](x: Self) {
     
-    @scala.inline
-    def setFramesDecoded(value: Double): Self = StObject.set(x, "framesDecoded", value.asInstanceOf[js.Any])
+    inline def setFramesDecoded(value: Double): Self = StObject.set(x, "framesDecoded", value.asInstanceOf[js.Any])
   }
 }

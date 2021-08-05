@@ -21,25 +21,19 @@ trait SchemaMatchRange extends StObject {
 }
 object SchemaMatchRange {
   
-  @scala.inline
-  def apply(): SchemaMatchRange = {
+  inline def apply(): SchemaMatchRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMatchRange]
   }
   
-  @scala.inline
-  implicit class SchemaMatchRangeMutableBuilder[Self <: SchemaMatchRange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMatchRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

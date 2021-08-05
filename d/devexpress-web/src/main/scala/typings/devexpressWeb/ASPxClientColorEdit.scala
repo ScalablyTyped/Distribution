@@ -40,8 +40,7 @@ trait ASPxClientColorEdit
 }
 object ASPxClientColorEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     AdjustDropDownWindow: () => Unit,
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],
@@ -106,22 +105,16 @@ object ASPxClientColorEdit {
     __obj.asInstanceOf[ASPxClientColorEdit]
   }
   
-  @scala.inline
-  implicit class ASPxClientColorEditMutableBuilder[Self <: ASPxClientColorEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientColorEdit](x: Self) {
     
-    @scala.inline
-    def setColorChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]): Self = StObject.set(x, "ColorChanged", value.asInstanceOf[js.Any])
+    inline def setColorChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]): Self = StObject.set(x, "ColorChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColor(value: () => String): Self = StObject.set(x, "GetColor", js.Any.fromFunction0(value))
+    inline def setGetColor(value: () => String): Self = StObject.set(x, "GetColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAutomaticColorSelected(value: () => Boolean): Self = StObject.set(x, "IsAutomaticColorSelected", js.Any.fromFunction0(value))
+    inline def setIsAutomaticColorSelected(value: () => Boolean): Self = StObject.set(x, "IsAutomaticColorSelected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetColor(value: String => Unit): Self = StObject.set(x, "SetColor", js.Any.fromFunction1(value))
+    inline def setSetColor(value: String => Unit): Self = StObject.set(x, "SetColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
+    inline def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
   }
 }

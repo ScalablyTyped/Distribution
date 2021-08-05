@@ -17,31 +17,23 @@ trait TimePickerMinutes extends StObject {
 }
 object TimePickerMinutes {
   
-  @scala.inline
-  def apply(): TimePickerMinutes = {
+  inline def apply(): TimePickerMinutes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimePickerMinutes]
   }
   
-  @scala.inline
-  implicit class TimePickerMinutesMutableBuilder[Self <: TimePickerMinutes] (val x: Self) extends AnyVal {
+  extension [Self <: TimePickerMinutes](x: Self) {
     
-    @scala.inline
-    def setEnds(value: Double): Self = StObject.set(x, "ends", value.asInstanceOf[js.Any])
+    inline def setEnds(value: Double): Self = StObject.set(x, "ends", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndsUndefined: Self = StObject.set(x, "ends", js.undefined)
+    inline def setEndsUndefined: Self = StObject.set(x, "ends", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setStarts(value: Double): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
+    inline def setStarts(value: Double): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartsUndefined: Self = StObject.set(x, "starts", js.undefined)
+    inline def setStartsUndefined: Self = StObject.set(x, "starts", js.undefined)
   }
 }

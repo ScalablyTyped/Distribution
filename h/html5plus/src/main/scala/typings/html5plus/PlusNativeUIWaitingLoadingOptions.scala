@@ -61,37 +61,27 @@ trait PlusNativeUIWaitingLoadingOptions extends StObject {
 }
 object PlusNativeUIWaitingLoadingOptions {
   
-  @scala.inline
-  def apply(): PlusNativeUIWaitingLoadingOptions = {
+  inline def apply(): PlusNativeUIWaitingLoadingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeUIWaitingLoadingOptions]
   }
   
-  @scala.inline
-  implicit class PlusNativeUIWaitingLoadingOptionsMutableBuilder[Self <: PlusNativeUIWaitingLoadingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeUIWaitingLoadingOptions](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: block | `inline` | none): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: block | `inline` | none): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
   }
 }

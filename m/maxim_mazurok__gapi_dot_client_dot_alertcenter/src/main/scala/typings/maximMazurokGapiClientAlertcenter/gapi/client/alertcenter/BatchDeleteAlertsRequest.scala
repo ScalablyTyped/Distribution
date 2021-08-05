@@ -14,28 +14,21 @@ trait BatchDeleteAlertsRequest extends StObject {
 }
 object BatchDeleteAlertsRequest {
   
-  @scala.inline
-  def apply(): BatchDeleteAlertsRequest = {
+  inline def apply(): BatchDeleteAlertsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteAlertsRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteAlertsRequestMutableBuilder[Self <: BatchDeleteAlertsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteAlertsRequest](x: Self) {
     
-    @scala.inline
-    def setAlertId(value: js.Array[String]): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
+    inline def setAlertId(value: js.Array[String]): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
+    inline def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
     
-    @scala.inline
-    def setAlertIdVarargs(value: String*): Self = StObject.set(x, "alertId", js.Array(value :_*))
+    inline def setAlertIdVarargs(value: String*): Self = StObject.set(x, "alertId", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
   }
 }

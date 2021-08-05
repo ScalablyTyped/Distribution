@@ -12,41 +12,35 @@ object cachefactoryStrings {
   sealed trait aggressive
     extends StObject
        with DeleteOnExpire
-  @scala.inline
-  def aggressive: aggressive = "aggressive".asInstanceOf[aggressive]
+  inline def aggressive: aggressive = "aggressive".asInstanceOf[aggressive]
   
   @js.native
   sealed trait localStorage
     extends StObject
        with StorageMode
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
   @js.native
   sealed trait memory
     extends StObject
        with StorageMode
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
+  inline def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
   sealed trait none
     extends StObject
        with DeleteOnExpire
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait passive
     extends StObject
        with DeleteOnExpire
-  @scala.inline
-  def passive: passive = "passive".asInstanceOf[passive]
+  inline def passive: passive = "passive".asInstanceOf[passive]
   
   @js.native
   sealed trait sessionStorage
     extends StObject
        with StorageMode
-  @scala.inline
-  def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
+  inline def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
 }

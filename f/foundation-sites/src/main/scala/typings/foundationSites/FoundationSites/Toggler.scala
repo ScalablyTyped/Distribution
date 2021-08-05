@@ -13,19 +13,15 @@ trait Toggler extends StObject {
 }
 object Toggler {
   
-  @scala.inline
-  def apply(destroy: () => Unit, toggle: () => Unit): Toggler = {
+  inline def apply(destroy: () => Unit, toggle: () => Unit): Toggler = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), toggle = js.Any.fromFunction0(toggle))
     __obj.asInstanceOf[Toggler]
   }
   
-  @scala.inline
-  implicit class TogglerMutableBuilder[Self <: Toggler] (val x: Self) extends AnyVal {
+  extension [Self <: Toggler](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

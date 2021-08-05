@@ -14,16 +14,13 @@ trait IIconPickerOptions extends StObject {
 }
 object IIconPickerOptions {
   
-  @scala.inline
-  def apply(callback: js.Function): IIconPickerOptions = {
+  inline def apply(callback: js.Function): IIconPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIconPickerOptions]
   }
   
-  @scala.inline
-  implicit class IIconPickerOptionsMutableBuilder[Self <: IIconPickerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IIconPickerOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
   }
 }

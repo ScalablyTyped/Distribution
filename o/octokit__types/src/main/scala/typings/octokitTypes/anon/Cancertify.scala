@@ -32,8 +32,7 @@ trait Cancertify extends StObject {
 }
 object Cancertify {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     can_certify: Boolean,
     can_encrypt_comms: Boolean,
     can_encrypt_storage: Boolean,
@@ -51,49 +50,34 @@ object Cancertify {
     __obj.asInstanceOf[Cancertify]
   }
   
-  @scala.inline
-  implicit class CancertifyMutableBuilder[Self <: Cancertify] (val x: Self) extends AnyVal {
+  extension [Self <: Cancertify](x: Self) {
     
-    @scala.inline
-    def setCan_certify(value: Boolean): Self = StObject.set(x, "can_certify", value.asInstanceOf[js.Any])
+    inline def setCan_certify(value: Boolean): Self = StObject.set(x, "can_certify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCan_encrypt_comms(value: Boolean): Self = StObject.set(x, "can_encrypt_comms", value.asInstanceOf[js.Any])
+    inline def setCan_encrypt_comms(value: Boolean): Self = StObject.set(x, "can_encrypt_comms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCan_encrypt_storage(value: Boolean): Self = StObject.set(x, "can_encrypt_storage", value.asInstanceOf[js.Any])
+    inline def setCan_encrypt_storage(value: Boolean): Self = StObject.set(x, "can_encrypt_storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCan_sign(value: Boolean): Self = StObject.set(x, "can_sign", value.asInstanceOf[js.Any])
+    inline def setCan_sign(value: Boolean): Self = StObject.set(x, "can_sign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmails(value: js.Array[js.Any]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[js.Any]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsVarargs(value: js.Any*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: js.Any*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
-    @scala.inline
-    def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+    inline def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
+    inline def setKey_id(value: String): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary_key_id(value: Double): Self = StObject.set(x, "primary_key_id", value.asInstanceOf[js.Any])
+    inline def setPrimary_key_id(value: Double): Self = StObject.set(x, "primary_key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
+    inline def setPublic_key(value: String): Self = StObject.set(x, "public_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubkeys(value: js.Array[js.Any]): Self = StObject.set(x, "subkeys", value.asInstanceOf[js.Any])
+    inline def setSubkeys(value: js.Array[js.Any]): Self = StObject.set(x, "subkeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubkeysVarargs(value: js.Any*): Self = StObject.set(x, "subkeys", js.Array(value :_*))
+    inline def setSubkeysVarargs(value: js.Any*): Self = StObject.set(x, "subkeys", js.Array(value :_*))
   }
 }

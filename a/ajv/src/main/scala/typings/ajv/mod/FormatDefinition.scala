@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormatDefinition extends StObject
 object FormatDefinition {
   
-  @scala.inline
-  def NumberFormatDefinition(validate: /* data */ Double => Boolean | js.Thenable[js.Any]): typings.ajv.mod.NumberFormatDefinition = {
+  inline def NumberFormatDefinition(validate: /* data */ Double => Boolean | js.Thenable[js.Any]): typings.ajv.mod.NumberFormatDefinition = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate))
     __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[typings.ajv.mod.NumberFormatDefinition]
   }
   
-  @scala.inline
-  def StringFormatDefinition(validate: FormatValidator): typings.ajv.mod.StringFormatDefinition = {
+  inline def StringFormatDefinition(validate: FormatValidator): typings.ajv.mod.StringFormatDefinition = {
     val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ajv.mod.StringFormatDefinition]
   }

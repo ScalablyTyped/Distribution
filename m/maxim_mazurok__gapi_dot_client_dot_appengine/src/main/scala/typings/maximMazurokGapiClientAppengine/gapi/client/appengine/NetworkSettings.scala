@@ -11,19 +11,15 @@ trait NetworkSettings extends StObject {
 }
 object NetworkSettings {
   
-  @scala.inline
-  def apply(): NetworkSettings = {
+  inline def apply(): NetworkSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkSettings]
   }
   
-  @scala.inline
-  implicit class NetworkSettingsMutableBuilder[Self <: NetworkSettings] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkSettings](x: Self) {
     
-    @scala.inline
-    def setIngressTrafficAllowed(value: String): Self = StObject.set(x, "ingressTrafficAllowed", value.asInstanceOf[js.Any])
+    inline def setIngressTrafficAllowed(value: String): Self = StObject.set(x, "ingressTrafficAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressTrafficAllowedUndefined: Self = StObject.set(x, "ingressTrafficAllowed", js.undefined)
+    inline def setIngressTrafficAllowedUndefined: Self = StObject.set(x, "ingressTrafficAllowed", js.undefined)
   }
 }

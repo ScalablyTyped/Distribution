@@ -515,25 +515,18 @@ object TextBuffer {
     *  Restore a TextBuffer based on an earlier state created using the
     *  TextBuffer::serialize method.
     */
-  @scala.inline
-  def deserialize(params: js.Object): js.Promise[TextBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TextBuffer]]
+  inline def deserialize(params: js.Object): js.Promise[TextBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TextBuffer]]
   
   /** Create a new buffer backed by the given file path. */
-  @scala.inline
-  def load(filePath: String): js.Promise[TextBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TextBuffer]]
-  @scala.inline
-  def load(filePath: String, params: BufferLoadOptions): js.Promise[TextBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TextBuffer]]
-  @scala.inline
-  def load(filePath: TextBufferFileBackend): js.Promise[TextBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TextBuffer]]
-  @scala.inline
-  def load(filePath: TextBufferFileBackend, params: BufferLoadOptions): js.Promise[TextBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TextBuffer]]
+  inline def load(filePath: String): js.Promise[TextBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TextBuffer]]
+  inline def load(filePath: String, params: BufferLoadOptions): js.Promise[TextBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TextBuffer]]
+  inline def load(filePath: TextBufferFileBackend): js.Promise[TextBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TextBuffer]]
+  inline def load(filePath: TextBufferFileBackend, params: BufferLoadOptions): js.Promise[TextBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TextBuffer]]
   
   /**
     *  Create a new buffer backed by the given file path. For better performance,
     *  use TextBuffer.load instead.
     */
-  @scala.inline
-  def loadSync(filePath: String): TextBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[TextBuffer]
-  @scala.inline
-  def loadSync(filePath: String, params: BufferLoadOptions): TextBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filePath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TextBuffer]
+  inline def loadSync(filePath: String): TextBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[TextBuffer]
+  inline def loadSync(filePath: String, params: BufferLoadOptions): TextBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filePath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TextBuffer]
 }

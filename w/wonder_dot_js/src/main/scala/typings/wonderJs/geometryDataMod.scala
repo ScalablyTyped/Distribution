@@ -17,7 +17,7 @@ object geometryDataMod {
     
     var faces: js.Array[Face3] = js.native
     
-    var geometry: Geometry = js.native
+    /* protected */ var geometry: Geometry = js.native
     
     val indices: js.Array[Double] = js.native
     

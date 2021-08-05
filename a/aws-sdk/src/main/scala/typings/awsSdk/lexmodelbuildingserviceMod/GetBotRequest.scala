@@ -18,19 +18,15 @@ trait GetBotRequest extends StObject {
 }
 object GetBotRequest {
   
-  @scala.inline
-  def apply(name: BotName, versionOrAlias: String): GetBotRequest = {
+  inline def apply(name: BotName, versionOrAlias: String): GetBotRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], versionOrAlias = versionOrAlias.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBotRequest]
   }
   
-  @scala.inline
-  implicit class GetBotRequestMutableBuilder[Self <: GetBotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBotRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionOrAlias(value: String): Self = StObject.set(x, "versionOrAlias", value.asInstanceOf[js.Any])
+    inline def setVersionOrAlias(value: String): Self = StObject.set(x, "versionOrAlias", value.asInstanceOf[js.Any])
   }
 }

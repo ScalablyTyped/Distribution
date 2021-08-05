@@ -11,10 +11,8 @@ object playerApiDecoratorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
-  @scala.inline
-  def default(name: String): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
+  inline def default(): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
+  inline def default(name: String): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
   
   @JSImport("playable/dist/src/core/player-api-decorator", "PLAYER_API_PROPERTY")
   @js.native

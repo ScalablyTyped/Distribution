@@ -83,46 +83,32 @@ object derivationMod {
     /* 0 */ val NONE: typings.mobx.derivationMod.TraceMode.NONE & Double = js.native
   }
   
-  @scala.inline
-  def allowStateReadsEnd(prev: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateReadsEnd")(prev.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def allowStateReadsEnd(prev: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateReadsEnd")(prev.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def allowStateReadsStart(allowStateReads: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateReadsStart")(allowStateReads.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def allowStateReadsStart(allowStateReads: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStateReadsStart")(allowStateReads.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def changeDependenciesStateTo0(derivation: IDerivation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("changeDependenciesStateTo0")(derivation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def changeDependenciesStateTo0(derivation: IDerivation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("changeDependenciesStateTo0")(derivation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def checkIfStateModificationsAreAllowed(atom: IAtom): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIfStateModificationsAreAllowed")(atom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkIfStateModificationsAreAllowed(atom: IAtom): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIfStateModificationsAreAllowed")(atom.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def checkIfStateReadsAreAllowed(observable: IObservable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIfStateReadsAreAllowed")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkIfStateReadsAreAllowed(observable: IObservable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIfStateReadsAreAllowed")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearObserving(derivation: IDerivation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearObserving")(derivation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearObserving(derivation: IDerivation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearObserving")(derivation.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def isCaughtException(e: js.Any): /* is mobx.mobx/lib/core/derivation.CaughtException */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCaughtException")(e.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/derivation.CaughtException */ Boolean]
+  inline def isCaughtException(e: js.Any): /* is mobx.mobx/lib/core/derivation.CaughtException */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCaughtException")(e.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/derivation.CaughtException */ Boolean]
   
-  @scala.inline
-  def isComputingDerivation(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputingDerivation")().asInstanceOf[Boolean]
+  inline def isComputingDerivation(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputingDerivation")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def shouldCompute(derivation: IDerivation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldCompute")(derivation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def shouldCompute(derivation: IDerivation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldCompute")(derivation.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def trackDerivedFunction[T](derivation: IDerivation, f: js.Function0[T], context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trackDerivedFunction")(derivation.asInstanceOf[js.Any], f.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def trackDerivedFunction[T](derivation: IDerivation, f: js.Function0[T], context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trackDerivedFunction")(derivation.asInstanceOf[js.Any], f.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def untracked[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("untracked")(action.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def untracked[T](action: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("untracked")(action.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def untrackedEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("untrackedEnd")().asInstanceOf[Unit]
-  @scala.inline
-  def untrackedEnd(prev: IDerivation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("untrackedEnd")(prev.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def untrackedEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("untrackedEnd")().asInstanceOf[Unit]
+  inline def untrackedEnd(prev: IDerivation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("untrackedEnd")(prev.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def untrackedStart(): IDerivation | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("untrackedStart")().asInstanceOf[IDerivation | Null]
+  inline def untrackedStart(): IDerivation | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("untrackedStart")().asInstanceOf[IDerivation | Null]
   
   trait IDerivation
     extends StObject
@@ -159,8 +145,7 @@ object derivationMod {
   }
   object IDerivation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       __mapid: String,
       dependenciesState: IDerivationState,
       isTracing: TraceMode,
@@ -174,47 +159,33 @@ object derivationMod {
       __obj.asInstanceOf[IDerivation]
     }
     
-    @scala.inline
-    implicit class IDerivationMutableBuilder[Self <: IDerivation] (val x: Self) extends AnyVal {
+    extension [Self <: IDerivation](x: Self) {
       
-      @scala.inline
-      def setDependenciesState(value: IDerivationState): Self = StObject.set(x, "dependenciesState", value.asInstanceOf[js.Any])
+      inline def setDependenciesState(value: IDerivationState): Self = StObject.set(x, "dependenciesState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTracing(value: TraceMode): Self = StObject.set(x, "isTracing", value.asInstanceOf[js.Any])
+      inline def setIsTracing(value: TraceMode): Self = StObject.set(x, "isTracing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewObserving(value: js.Array[IObservable]): Self = StObject.set(x, "newObserving", value.asInstanceOf[js.Any])
+      inline def setNewObserving(value: js.Array[IObservable]): Self = StObject.set(x, "newObserving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewObservingNull: Self = StObject.set(x, "newObserving", null)
+      inline def setNewObservingNull: Self = StObject.set(x, "newObserving", null)
       
-      @scala.inline
-      def setNewObservingVarargs(value: IObservable*): Self = StObject.set(x, "newObserving", js.Array(value :_*))
+      inline def setNewObservingVarargs(value: IObservable*): Self = StObject.set(x, "newObserving", js.Array(value :_*))
       
-      @scala.inline
-      def setObserving(value: js.Array[IObservable]): Self = StObject.set(x, "observing", value.asInstanceOf[js.Any])
+      inline def setObserving(value: js.Array[IObservable]): Self = StObject.set(x, "observing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObservingVarargs(value: IObservable*): Self = StObject.set(x, "observing", js.Array(value :_*))
+      inline def setObservingVarargs(value: IObservable*): Self = StObject.set(x, "observing", js.Array(value :_*))
       
-      @scala.inline
-      def setOnBecomeStale(value: () => Unit): Self = StObject.set(x, "onBecomeStale", js.Any.fromFunction0(value))
+      inline def setOnBecomeStale(value: () => Unit): Self = StObject.set(x, "onBecomeStale", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequiresObservable(value: Boolean): Self = StObject.set(x, "requiresObservable", value.asInstanceOf[js.Any])
+      inline def setRequiresObservable(value: Boolean): Self = StObject.set(x, "requiresObservable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresObservableUndefined: Self = StObject.set(x, "requiresObservable", js.undefined)
+      inline def setRequiresObservableUndefined: Self = StObject.set(x, "requiresObservable", js.undefined)
       
-      @scala.inline
-      def setRunId(value: Double): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
+      inline def setRunId(value: Double): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnboundDepsCount(value: Double): Self = StObject.set(x, "unboundDepsCount", value.asInstanceOf[js.Any])
+      inline def setUnboundDepsCount(value: Double): Self = StObject.set(x, "unboundDepsCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__mapid(value: String): Self = StObject.set(x, "__mapid", value.asInstanceOf[js.Any])
+      inline def set__mapid(value: String): Self = StObject.set(x, "__mapid", value.asInstanceOf[js.Any])
     }
   }
 }

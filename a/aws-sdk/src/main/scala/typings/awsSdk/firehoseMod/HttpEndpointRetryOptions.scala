@@ -13,19 +13,15 @@ trait HttpEndpointRetryOptions extends StObject {
 }
 object HttpEndpointRetryOptions {
   
-  @scala.inline
-  def apply(): HttpEndpointRetryOptions = {
+  inline def apply(): HttpEndpointRetryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpEndpointRetryOptions]
   }
   
-  @scala.inline
-  implicit class HttpEndpointRetryOptionsMutableBuilder[Self <: HttpEndpointRetryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HttpEndpointRetryOptions](x: Self) {
     
-    @scala.inline
-    def setDurationInSeconds(value: HttpEndpointRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: HttpEndpointRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
+    inline def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
   }
 }

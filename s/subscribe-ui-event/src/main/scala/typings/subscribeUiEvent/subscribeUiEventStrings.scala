@@ -11,112 +11,97 @@ object subscribeUiEventStrings {
   
   @js.native
   sealed trait _empty extends StObject
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait resize
     extends StObject
        with EventType
        with UIEventType
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
   sealed trait resizeEnd
     extends StObject
        with EventType
        with UIEventType
-  @scala.inline
-  def resizeEnd: resizeEnd = "resizeEnd".asInstanceOf[resizeEnd]
+  inline def resizeEnd: resizeEnd = "resizeEnd".asInstanceOf[resizeEnd]
   
   @js.native
   sealed trait resizeStart
     extends StObject
        with EventType
        with UIEventType
-  @scala.inline
-  def resizeStart: resizeStart = "resizeStart".asInstanceOf[resizeStart]
+  inline def resizeStart: resizeStart = "resizeStart".asInstanceOf[resizeStart]
   
   @js.native
   sealed trait scroll
     extends StObject
        with EventType
        with UIEventType
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
   sealed trait scrollEnd
     extends StObject
        with EventType
        with UIEventType
-  @scala.inline
-  def scrollEnd: scrollEnd = "scrollEnd".asInstanceOf[scrollEnd]
+  inline def scrollEnd: scrollEnd = "scrollEnd".asInstanceOf[scrollEnd]
   
   @js.native
   sealed trait scrollStart
     extends StObject
        with EventType
        with UIEventType
-  @scala.inline
-  def scrollStart: scrollStart = "scrollStart".asInstanceOf[scrollStart]
+  inline def scrollStart: scrollStart = "scrollStart".asInstanceOf[scrollStart]
   
   @js.native
   sealed trait touchend
     extends StObject
        with EventType
        with TouchEventType
-  @scala.inline
-  def touchend: touchend = "touchend".asInstanceOf[touchend]
+  inline def touchend: touchend = "touchend".asInstanceOf[touchend]
   
   @js.native
   sealed trait touchmove
     extends StObject
        with EventType
        with TouchEventType
-  @scala.inline
-  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
+  inline def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   
   @js.native
   sealed trait touchmoveEnd
     extends StObject
        with EventType
        with TouchEventType
-  @scala.inline
-  def touchmoveEnd: touchmoveEnd = "touchmoveEnd".asInstanceOf[touchmoveEnd]
+  inline def touchmoveEnd: touchmoveEnd = "touchmoveEnd".asInstanceOf[touchmoveEnd]
   
   @js.native
   sealed trait touchmoveStart
     extends StObject
        with EventType
        with TouchEventType
-  @scala.inline
-  def touchmoveStart: touchmoveStart = "touchmoveStart".asInstanceOf[touchmoveStart]
+  inline def touchmoveStart: touchmoveStart = "touchmoveStart".asInstanceOf[touchmoveStart]
   
   @js.native
   sealed trait touchstart
     extends StObject
        with EventType
        with TouchEventType
-  @scala.inline
-  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  inline def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   
   @js.native
   sealed trait visibilitychange
     extends StObject
        with EventType
        with UIEventType
-  @scala.inline
-  def visibilitychange: visibilitychange = "visibilitychange".asInstanceOf[visibilitychange]
+  inline def visibilitychange: visibilitychange = "visibilitychange".asInstanceOf[visibilitychange]
   
   @js.native
   sealed trait x extends StObject
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
   sealed trait y extends StObject
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  inline def y: y = "y".asInstanceOf[y]
 }

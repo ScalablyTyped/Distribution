@@ -16,31 +16,23 @@ trait CardProps extends StObject {
 }
 object CardProps {
   
-  @scala.inline
-  def apply(): CardProps = {
+  inline def apply(): CardProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardProps]
   }
   
-  @scala.inline
-  implicit class CardPropsMutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
+  extension [Self <: CardProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setStyle(value: `0`): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: `0`): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait Backend extends StObject {
 }
 object Backend {
   
-  @scala.inline
-  def apply(): Backend = {
+  inline def apply(): Backend = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Backend]
   }
   
-  @scala.inline
-  implicit class BackendMutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
+  extension [Self <: Backend](x: Self) {
     
-    @scala.inline
-    def setVirtualService(value: VirtualServiceBackend): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
+    inline def setVirtualService(value: VirtualServiceBackend): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualServiceUndefined: Self = StObject.set(x, "virtualService", js.undefined)
+    inline def setVirtualServiceUndefined: Self = StObject.set(x, "virtualService", js.undefined)
   }
 }

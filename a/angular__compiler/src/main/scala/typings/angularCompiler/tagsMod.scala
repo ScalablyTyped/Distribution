@@ -42,25 +42,18 @@ object tagsMod {
     /* 0 */ val RAW_TEXT: typings.angularCompiler.tagsMod.TagContentType.RAW_TEXT & Double = js.native
   }
   
-  @scala.inline
-  def getNsPrefix(fullName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNsPrefix")(fullName.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getNsPrefix(fullName: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNsPrefix")(fullName.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def getNsPrefix(fullName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNsPrefix")(fullName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getNsPrefix(fullName: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNsPrefix")(fullName.asInstanceOf[js.Any]).asInstanceOf[Null]
   
-  @scala.inline
-  def isNgContainer(tagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNgContainer")(tagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNgContainer(tagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNgContainer")(tagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNgContent(tagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNgContent")(tagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNgContent(tagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNgContent")(tagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNgTemplate(tagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNgTemplate")(tagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNgTemplate(tagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNgTemplate")(tagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def mergeNsAndName(prefix: String, localName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeNsAndName")(prefix.asInstanceOf[js.Any], localName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def mergeNsAndName(prefix: String, localName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeNsAndName")(prefix.asInstanceOf[js.Any], localName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def splitNsName(elementName: String): js.Tuple2[String | Null, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitNsName")(elementName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String | Null, String]]
+  inline def splitNsName(elementName: String): js.Tuple2[String | Null, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitNsName")(elementName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String | Null, String]]
   
   trait TagDefinition extends StObject {
     
@@ -82,8 +75,7 @@ object tagsMod {
   }
   object TagDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canSelfClose: Boolean,
       closedByParent: Boolean,
       contentType: TagContentType,
@@ -96,35 +88,25 @@ object tagsMod {
       __obj.asInstanceOf[TagDefinition]
     }
     
-    @scala.inline
-    implicit class TagDefinitionMutableBuilder[Self <: TagDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: TagDefinition](x: Self) {
       
-      @scala.inline
-      def setCanSelfClose(value: Boolean): Self = StObject.set(x, "canSelfClose", value.asInstanceOf[js.Any])
+      inline def setCanSelfClose(value: Boolean): Self = StObject.set(x, "canSelfClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosedByParent(value: Boolean): Self = StObject.set(x, "closedByParent", value.asInstanceOf[js.Any])
+      inline def setClosedByParent(value: Boolean): Self = StObject.set(x, "closedByParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentType(value: TagContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: TagContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreFirstLf(value: Boolean): Self = StObject.set(x, "ignoreFirstLf", value.asInstanceOf[js.Any])
+      inline def setIgnoreFirstLf(value: Boolean): Self = StObject.set(x, "ignoreFirstLf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplicitNamespacePrefix(value: String): Self = StObject.set(x, "implicitNamespacePrefix", value.asInstanceOf[js.Any])
+      inline def setImplicitNamespacePrefix(value: String): Self = StObject.set(x, "implicitNamespacePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplicitNamespacePrefixNull: Self = StObject.set(x, "implicitNamespacePrefix", null)
+      inline def setImplicitNamespacePrefixNull: Self = StObject.set(x, "implicitNamespacePrefix", null)
       
-      @scala.inline
-      def setIsClosedByChild(value: String => Boolean): Self = StObject.set(x, "isClosedByChild", js.Any.fromFunction1(value))
+      inline def setIsClosedByChild(value: String => Boolean): Self = StObject.set(x, "isClosedByChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsVoid(value: Boolean): Self = StObject.set(x, "isVoid", value.asInstanceOf[js.Any])
+      inline def setIsVoid(value: Boolean): Self = StObject.set(x, "isVoid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventNamespaceInheritance(value: Boolean): Self = StObject.set(x, "preventNamespaceInheritance", value.asInstanceOf[js.Any])
+      inline def setPreventNamespaceInheritance(value: Boolean): Self = StObject.set(x, "preventNamespaceInheritance", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,16 +13,13 @@ trait MobileBroadbandPinLockStateChangeTriggerDetails extends StObject {
 }
 object MobileBroadbandPinLockStateChangeTriggerDetails {
   
-  @scala.inline
-  def apply(pinLockStateChanges: IVectorView[MobileBroadbandPinLockStateChange]): MobileBroadbandPinLockStateChangeTriggerDetails = {
+  inline def apply(pinLockStateChanges: IVectorView[MobileBroadbandPinLockStateChange]): MobileBroadbandPinLockStateChangeTriggerDetails = {
     val __obj = js.Dynamic.literal(pinLockStateChanges = pinLockStateChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandPinLockStateChangeTriggerDetails]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandPinLockStateChangeTriggerDetailsMutableBuilder[Self <: MobileBroadbandPinLockStateChangeTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandPinLockStateChangeTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setPinLockStateChanges(value: IVectorView[MobileBroadbandPinLockStateChange]): Self = StObject.set(x, "pinLockStateChanges", value.asInstanceOf[js.Any])
+    inline def setPinLockStateChanges(value: IVectorView[MobileBroadbandPinLockStateChange]): Self = StObject.set(x, "pinLockStateChanges", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ object textInputMod {
     @JSImport("carbon-components/components/text-input/text-input", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -43,20 +42,16 @@ object textInputMod {
   }
   object TextInput {
     
-    @scala.inline
-    def apply(_setIconVisibility: js.Any => Unit, _toggle: js.Any => Unit): TextInput = {
+    inline def apply(_setIconVisibility: js.Any => Unit, _toggle: js.Any => Unit): TextInput = {
       val __obj = js.Dynamic.literal(_setIconVisibility = js.Any.fromFunction1(_setIconVisibility), _toggle = js.Any.fromFunction1(_toggle))
       __obj.asInstanceOf[TextInput]
     }
     
-    @scala.inline
-    implicit class TextInputMutableBuilder[Self <: TextInput] (val x: Self) extends AnyVal {
+    extension [Self <: TextInput](x: Self) {
       
-      @scala.inline
-      def set_setIconVisibility(value: js.Any => Unit): Self = StObject.set(x, "_setIconVisibility", js.Any.fromFunction1(value))
+      inline def set_setIconVisibility(value: js.Any => Unit): Self = StObject.set(x, "_setIconVisibility", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_toggle(value: js.Any => Unit): Self = StObject.set(x, "_toggle", js.Any.fromFunction1(value))
+      inline def set_toggle(value: js.Any => Unit): Self = StObject.set(x, "_toggle", js.Any.fromFunction1(value))
     }
   }
 }

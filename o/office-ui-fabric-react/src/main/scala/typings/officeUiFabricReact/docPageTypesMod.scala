@@ -29,17 +29,13 @@ object docPageTypesMod {
   trait ApiKind extends StObject
   object ApiKind {
     
-    @scala.inline
-    def `class`: typings.officeUiFabricReact.officeUiFabricReactStrings.`class` = "class".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.`class`]
+    inline def `class`: typings.officeUiFabricReact.officeUiFabricReactStrings.`class` = "class".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.`class`]
     
-    @scala.inline
-    def `enum`: typings.officeUiFabricReact.officeUiFabricReactStrings.`enum` = "enum".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.`enum`]
+    inline def `enum`: typings.officeUiFabricReact.officeUiFabricReactStrings.`enum` = "enum".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.`enum`]
     
-    @scala.inline
-    def interface: typings.officeUiFabricReact.officeUiFabricReactStrings.interface = "interface".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.interface]
+    inline def interface: typings.officeUiFabricReact.officeUiFabricReactStrings.interface = "interface".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.interface]
     
-    @scala.inline
-    def typeAlias: typings.officeUiFabricReact.officeUiFabricReactStrings.typeAlias = "typeAlias".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.typeAlias]
+    inline def typeAlias: typings.officeUiFabricReact.officeUiFabricReactStrings.typeAlias = "typeAlias".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.typeAlias]
   }
   
   trait IDocPageProps extends StObject {
@@ -111,128 +107,88 @@ object docPageTypesMod {
   }
   object IDocPageProps {
     
-    @scala.inline
-    def apply(componentName: String, componentUrl: String, isHeaderVisible: Boolean, title: String): IDocPageProps = {
+    inline def apply(componentName: String, componentUrl: String, isHeaderVisible: Boolean, title: String): IDocPageProps = {
       val __obj = js.Dynamic.literal(componentName = componentName.asInstanceOf[js.Any], componentUrl = componentUrl.asInstanceOf[js.Any], isHeaderVisible = isHeaderVisible.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDocPageProps]
     }
     
-    @scala.inline
-    implicit class IDocPagePropsMutableBuilder[Self <: IDocPageProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDocPageProps](x: Self) {
       
-      @scala.inline
-      def setAccessibility(value: String): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+      inline def setAccessibility(value: String): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+      inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
       
-      @scala.inline
-      def setAllowNativeProps(value: Boolean): Self = StObject.set(x, "allowNativeProps", value.asInstanceOf[js.Any])
+      inline def setAllowNativeProps(value: Boolean): Self = StObject.set(x, "allowNativeProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNativePropsForComponentName(value: String): Self = StObject.set(x, "allowNativePropsForComponentName", value.asInstanceOf[js.Any])
+      inline def setAllowNativePropsForComponentName(value: String): Self = StObject.set(x, "allowNativePropsForComponentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNativePropsForComponentNameUndefined: Self = StObject.set(x, "allowNativePropsForComponentName", js.undefined)
+      inline def setAllowNativePropsForComponentNameUndefined: Self = StObject.set(x, "allowNativePropsForComponentName", js.undefined)
       
-      @scala.inline
-      def setAllowNativePropsUndefined: Self = StObject.set(x, "allowNativeProps", js.undefined)
+      inline def setAllowNativePropsUndefined: Self = StObject.set(x, "allowNativeProps", js.undefined)
       
-      @scala.inline
-      def setBestPractices(value: String): Self = StObject.set(x, "bestPractices", value.asInstanceOf[js.Any])
+      inline def setBestPractices(value: String): Self = StObject.set(x, "bestPractices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBestPracticesUndefined: Self = StObject.set(x, "bestPractices", js.undefined)
+      inline def setBestPracticesUndefined: Self = StObject.set(x, "bestPractices", js.undefined)
       
-      @scala.inline
-      def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
+      inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUrl(value: String): Self = StObject.set(x, "componentUrl", value.asInstanceOf[js.Any])
+      inline def setComponentUrl(value: String): Self = StObject.set(x, "componentUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDonts(value: String): Self = StObject.set(x, "donts", value.asInstanceOf[js.Any])
+      inline def setDonts(value: String): Self = StObject.set(x, "donts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDontsUndefined: Self = StObject.set(x, "donts", js.undefined)
+      inline def setDontsUndefined: Self = StObject.set(x, "donts", js.undefined)
       
-      @scala.inline
-      def setDos(value: String): Self = StObject.set(x, "dos", value.asInstanceOf[js.Any])
+      inline def setDos(value: String): Self = StObject.set(x, "dos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDosUndefined: Self = StObject.set(x, "dos", js.undefined)
+      inline def setDosUndefined: Self = StObject.set(x, "dos", js.undefined)
       
-      @scala.inline
-      def setExampleKnobs(value: Element): Self = StObject.set(x, "exampleKnobs", value.asInstanceOf[js.Any])
+      inline def setExampleKnobs(value: Element): Self = StObject.set(x, "exampleKnobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExampleKnobsUndefined: Self = StObject.set(x, "exampleKnobs", js.undefined)
+      inline def setExampleKnobsUndefined: Self = StObject.set(x, "exampleKnobs", js.undefined)
       
-      @scala.inline
-      def setExamples(value: js.Array[IExample]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+      inline def setExamples(value: js.Array[IExample]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+      inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
       
-      @scala.inline
-      def setExamplesVarargs(value: IExample*): Self = StObject.set(x, "examples", js.Array(value :_*))
+      inline def setExamplesVarargs(value: IExample*): Self = StObject.set(x, "examples", js.Array(value :_*))
       
-      @scala.inline
-      def setIsFeedbackVisible(value: Boolean): Self = StObject.set(x, "isFeedbackVisible", value.asInstanceOf[js.Any])
+      inline def setIsFeedbackVisible(value: Boolean): Self = StObject.set(x, "isFeedbackVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFeedbackVisibleUndefined: Self = StObject.set(x, "isFeedbackVisible", js.undefined)
+      inline def setIsFeedbackVisibleUndefined: Self = StObject.set(x, "isFeedbackVisible", js.undefined)
       
-      @scala.inline
-      def setIsHeaderVisible(value: Boolean): Self = StObject.set(x, "isHeaderVisible", value.asInstanceOf[js.Any])
+      inline def setIsHeaderVisible(value: Boolean): Self = StObject.set(x, "isHeaderVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonDocs(value: IPageJson): Self = StObject.set(x, "jsonDocs", value.asInstanceOf[js.Any])
+      inline def setJsonDocs(value: IPageJson): Self = StObject.set(x, "jsonDocs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonDocsUndefined: Self = StObject.set(x, "jsonDocs", js.undefined)
+      inline def setJsonDocsUndefined: Self = StObject.set(x, "jsonDocs", js.undefined)
       
-      @scala.inline
-      def setNativePropsElement(value: String | js.Array[String]): Self = StObject.set(x, "nativePropsElement", value.asInstanceOf[js.Any])
+      inline def setNativePropsElement(value: String | js.Array[String]): Self = StObject.set(x, "nativePropsElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativePropsElementUndefined: Self = StObject.set(x, "nativePropsElement", js.undefined)
+      inline def setNativePropsElementUndefined: Self = StObject.set(x, "nativePropsElement", js.undefined)
       
-      @scala.inline
-      def setNativePropsElementVarargs(value: String*): Self = StObject.set(x, "nativePropsElement", js.Array(value :_*))
+      inline def setNativePropsElementVarargs(value: String*): Self = StObject.set(x, "nativePropsElement", js.Array(value :_*))
       
-      @scala.inline
-      def setOtherSections(value: js.Array[Section]): Self = StObject.set(x, "otherSections", value.asInstanceOf[js.Any])
+      inline def setOtherSections(value: js.Array[Section]): Self = StObject.set(x, "otherSections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherSectionsUndefined: Self = StObject.set(x, "otherSections", js.undefined)
+      inline def setOtherSectionsUndefined: Self = StObject.set(x, "otherSections", js.undefined)
       
-      @scala.inline
-      def setOtherSectionsVarargs(value: Section*): Self = StObject.set(x, "otherSections", js.Array(value :_*))
+      inline def setOtherSectionsVarargs(value: Section*): Self = StObject.set(x, "otherSections", js.Array(value :_*))
       
-      @scala.inline
-      def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
+      inline def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
+      inline def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
       
-      @scala.inline
-      def setPropertiesTablesSources(value: js.Array[String]): Self = StObject.set(x, "propertiesTablesSources", value.asInstanceOf[js.Any])
+      inline def setPropertiesTablesSources(value: js.Array[String]): Self = StObject.set(x, "propertiesTablesSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesTablesSourcesUndefined: Self = StObject.set(x, "propertiesTablesSources", js.undefined)
+      inline def setPropertiesTablesSourcesUndefined: Self = StObject.set(x, "propertiesTablesSources", js.undefined)
       
-      @scala.inline
-      def setPropertiesTablesSourcesVarargs(value: String*): Self = StObject.set(x, "propertiesTablesSources", js.Array(value :_*))
+      inline def setPropertiesTablesSourcesVarargs(value: String*): Self = StObject.set(x, "propertiesTablesSources", js.Array(value :_*))
       
-      @scala.inline
-      def setRelated(value: Element): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+      inline def setRelated(value: Element): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
+      inline def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -259,44 +215,32 @@ object docPageTypesMod {
   }
   object IExample {
     
-    @scala.inline
-    def apply(code: String, title: String, view: Element): IExample = {
+    inline def apply(code: String, title: String, view: Element): IExample = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[IExample]
     }
     
-    @scala.inline
-    implicit class IExampleMutableBuilder[Self <: IExample] (val x: Self) extends AnyVal {
+    extension [Self <: IExample](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodepenJS(value: String): Self = StObject.set(x, "codepenJS", value.asInstanceOf[js.Any])
+      inline def setCodepenJS(value: String): Self = StObject.set(x, "codepenJS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodepenJSUndefined: Self = StObject.set(x, "codepenJS", js.undefined)
+      inline def setCodepenJSUndefined: Self = StObject.set(x, "codepenJS", js.undefined)
       
-      @scala.inline
-      def setIsScrollable(value: Boolean): Self = StObject.set(x, "isScrollable", value.asInstanceOf[js.Any])
+      inline def setIsScrollable(value: Boolean): Self = StObject.set(x, "isScrollable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsScrollableUndefined: Self = StObject.set(x, "isScrollable", js.undefined)
+      inline def setIsScrollableUndefined: Self = StObject.set(x, "isScrollable", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[Theme, Root]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[Theme, Root]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: Theme => DeepPartial[Root]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: Theme => DeepPartial[Root]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: Element): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: Element): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
   
@@ -312,29 +256,22 @@ object docPageTypesMod {
   }
   object ILinkToken {
     
-    @scala.inline
-    def apply(text: String): ILinkToken = {
+    inline def apply(text: String): ILinkToken = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILinkToken]
     }
     
-    @scala.inline
-    implicit class ILinkTokenMutableBuilder[Self <: ILinkToken] (val x: Self) extends AnyVal {
+    extension [Self <: ILinkToken](x: Self) {
       
-      @scala.inline
-      def setLinkedPage(value: String): Self = StObject.set(x, "linkedPage", value.asInstanceOf[js.Any])
+      inline def setLinkedPage(value: String): Self = StObject.set(x, "linkedPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkedPageGroup(value: String): Self = StObject.set(x, "linkedPageGroup", value.asInstanceOf[js.Any])
+      inline def setLinkedPageGroup(value: String): Self = StObject.set(x, "linkedPageGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkedPageGroupUndefined: Self = StObject.set(x, "linkedPageGroup", js.undefined)
+      inline def setLinkedPageGroupUndefined: Self = StObject.set(x, "linkedPageGroup", js.undefined)
       
-      @scala.inline
-      def setLinkedPageUndefined: Self = StObject.set(x, "linkedPage", js.undefined)
+      inline def setLinkedPageUndefined: Self = StObject.set(x, "linkedPage", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -348,29 +285,22 @@ object docPageTypesMod {
   }
   object IPageJson {
     
-    @scala.inline
-    def apply(name: String, tables: js.Array[ITableJson]): IPageJson = {
+    inline def apply(name: String, tables: js.Array[ITableJson]): IPageJson = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPageJson]
     }
     
-    @scala.inline
-    implicit class IPageJsonMutableBuilder[Self <: IPageJson] (val x: Self) extends AnyVal {
+    extension [Self <: IPageJson](x: Self) {
       
-      @scala.inline
-      def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTables(value: js.Array[ITableJson]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+      inline def setTables(value: js.Array[ITableJson]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablesVarargs(value: ITableJson*): Self = StObject.set(x, "tables", js.Array(value :_*))
+      inline def setTablesVarargs(value: ITableJson*): Self = StObject.set(x, "tables", js.Array(value :_*))
     }
   }
   
@@ -396,50 +326,36 @@ object docPageTypesMod {
   }
   object ITableJson {
     
-    @scala.inline
-    def apply(description: String, extendsTokens: js.Array[ILinkToken], kind: ApiKind, name: String): ITableJson = {
+    inline def apply(description: String, extendsTokens: js.Array[ILinkToken], kind: ApiKind, name: String): ITableJson = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], extendsTokens = extendsTokens.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITableJson]
     }
     
-    @scala.inline
-    implicit class ITableJsonMutableBuilder[Self <: ITableJson] (val x: Self) extends AnyVal {
+    extension [Self <: ITableJson](x: Self) {
       
-      @scala.inline
-      def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedMessage(value: String): Self = StObject.set(x, "deprecatedMessage", value.asInstanceOf[js.Any])
+      inline def setDeprecatedMessage(value: String): Self = StObject.set(x, "deprecatedMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedMessageUndefined: Self = StObject.set(x, "deprecatedMessage", js.undefined)
+      inline def setDeprecatedMessageUndefined: Self = StObject.set(x, "deprecatedMessage", js.undefined)
       
-      @scala.inline
-      def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendsTokens(value: js.Array[ILinkToken]): Self = StObject.set(x, "extendsTokens", value.asInstanceOf[js.Any])
+      inline def setExtendsTokens(value: js.Array[ILinkToken]): Self = StObject.set(x, "extendsTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendsTokensVarargs(value: ILinkToken*): Self = StObject.set(x, "extendsTokens", js.Array(value :_*))
+      inline def setExtendsTokensVarargs(value: ILinkToken*): Self = StObject.set(x, "extendsTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setKind(value: ApiKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: ApiKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers(value: js.Array[IEnumTableRowJson | ITableRowJson]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[IEnumTableRowJson | ITableRowJson]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+      inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
       
-      @scala.inline
-      def setMembersVarargs(value: (IEnumTableRowJson | ITableRowJson)*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: (IEnumTableRowJson | ITableRowJson)*): Self = StObject.set(x, "members", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -468,53 +384,38 @@ object docPageTypesMod {
   }
   object ITableRowJson {
     
-    @scala.inline
-    def apply(deprecated: Boolean, description: String, name: String, typeTokens: js.Array[ILinkToken]): ITableRowJson = {
+    inline def apply(deprecated: Boolean, description: String, name: String, typeTokens: js.Array[ILinkToken]): ITableRowJson = {
       val __obj = js.Dynamic.literal(deprecated = deprecated.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], typeTokens = typeTokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITableRowJson]
     }
     
-    @scala.inline
-    implicit class ITableRowJsonMutableBuilder[Self <: ITableRowJson] (val x: Self) extends AnyVal {
+    extension [Self <: ITableRowJson](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedMessage(value: String): Self = StObject.set(x, "deprecatedMessage", value.asInstanceOf[js.Any])
+      inline def setDeprecatedMessage(value: String): Self = StObject.set(x, "deprecatedMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedMessageUndefined: Self = StObject.set(x, "deprecatedMessage", js.undefined)
+      inline def setDeprecatedMessageUndefined: Self = StObject.set(x, "deprecatedMessage", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: method | property): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: method | property): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setTypeTokens(value: js.Array[ILinkToken]): Self = StObject.set(x, "typeTokens", value.asInstanceOf[js.Any])
+      inline def setTypeTokens(value: js.Array[ILinkToken]): Self = StObject.set(x, "typeTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeTokensVarargs(value: ILinkToken*): Self = StObject.set(x, "typeTokens", js.Array(value :_*))
+      inline def setTypeTokensVarargs(value: ILinkToken*): Self = StObject.set(x, "typeTokens", js.Array(value :_*))
     }
   }
   
@@ -525,10 +426,8 @@ object docPageTypesMod {
   trait PageKind extends StObject
   object PageKind {
     
-    @scala.inline
-    def Components: typings.officeUiFabricReact.officeUiFabricReactStrings.Components = "Components".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.Components]
+    inline def Components: typings.officeUiFabricReact.officeUiFabricReactStrings.Components = "Components".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.Components]
     
-    @scala.inline
-    def References: typings.officeUiFabricReact.officeUiFabricReactStrings.References = "References".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.References]
+    inline def References: typings.officeUiFabricReact.officeUiFabricReactStrings.References = "References".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.References]
   }
 }

@@ -21,31 +21,23 @@ trait GoogleMapsPlayablelocationsV3Impression extends StObject {
 }
 object GoogleMapsPlayablelocationsV3Impression {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3Impression = {
+  inline def apply(): GoogleMapsPlayablelocationsV3Impression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3Impression]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3ImpressionMutableBuilder[Self <: GoogleMapsPlayablelocationsV3Impression] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3Impression](x: Self) {
     
-    @scala.inline
-    def setGameObjectType(value: Double): Self = StObject.set(x, "gameObjectType", value.asInstanceOf[js.Any])
+    inline def setGameObjectType(value: Double): Self = StObject.set(x, "gameObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameObjectTypeUndefined: Self = StObject.set(x, "gameObjectType", js.undefined)
+    inline def setGameObjectTypeUndefined: Self = StObject.set(x, "gameObjectType", js.undefined)
     
-    @scala.inline
-    def setImpressionType(value: String): Self = StObject.set(x, "impressionType", value.asInstanceOf[js.Any])
+    inline def setImpressionType(value: String): Self = StObject.set(x, "impressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionTypeUndefined: Self = StObject.set(x, "impressionType", js.undefined)
+    inline def setImpressionTypeUndefined: Self = StObject.set(x, "impressionType", js.undefined)
     
-    @scala.inline
-    def setLocationName(value: String): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
+    inline def setLocationName(value: String): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
+    inline def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
   }
 }

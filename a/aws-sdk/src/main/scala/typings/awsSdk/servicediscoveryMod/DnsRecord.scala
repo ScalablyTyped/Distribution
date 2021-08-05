@@ -18,19 +18,15 @@ trait DnsRecord extends StObject {
 }
 object DnsRecord {
   
-  @scala.inline
-  def apply(TTL: RecordTTL, Type: RecordType): DnsRecord = {
+  inline def apply(TTL: RecordTTL, Type: RecordType): DnsRecord = {
     val __obj = js.Dynamic.literal(TTL = TTL.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DnsRecord]
   }
   
-  @scala.inline
-  implicit class DnsRecordMutableBuilder[Self <: DnsRecord] (val x: Self) extends AnyVal {
+  extension [Self <: DnsRecord](x: Self) {
     
-    @scala.inline
-    def setTTL(value: RecordTTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
+    inline def setTTL(value: RecordTTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RecordType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RecordType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait SplitShardInput extends StObject {
 }
 object SplitShardInput {
   
-  @scala.inline
-  def apply(NewStartingHashKey: HashKey, ShardToSplit: ShardId, StreamName: StreamName): SplitShardInput = {
+  inline def apply(NewStartingHashKey: HashKey, ShardToSplit: ShardId, StreamName: StreamName): SplitShardInput = {
     val __obj = js.Dynamic.literal(NewStartingHashKey = NewStartingHashKey.asInstanceOf[js.Any], ShardToSplit = ShardToSplit.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitShardInput]
   }
   
-  @scala.inline
-  implicit class SplitShardInputMutableBuilder[Self <: SplitShardInput] (val x: Self) extends AnyVal {
+  extension [Self <: SplitShardInput](x: Self) {
     
-    @scala.inline
-    def setNewStartingHashKey(value: HashKey): Self = StObject.set(x, "NewStartingHashKey", value.asInstanceOf[js.Any])
+    inline def setNewStartingHashKey(value: HashKey): Self = StObject.set(x, "NewStartingHashKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardToSplit(value: ShardId): Self = StObject.set(x, "ShardToSplit", value.asInstanceOf[js.Any])
+    inline def setShardToSplit(value: ShardId): Self = StObject.set(x, "ShardToSplit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

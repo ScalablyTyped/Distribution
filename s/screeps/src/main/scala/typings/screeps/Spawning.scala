@@ -47,8 +47,7 @@ trait Spawning extends StObject {
 }
 object Spawning {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: () => ScreepsReturnCode & (OK | ERR_NOT_OWNER),
     directions: js.Array[DirectionConstant],
     name: String,
@@ -61,31 +60,22 @@ object Spawning {
     __obj.asInstanceOf[Spawning]
   }
   
-  @scala.inline
-  implicit class SpawningMutableBuilder[Self <: Spawning] (val x: Self) extends AnyVal {
+  extension [Self <: Spawning](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => ScreepsReturnCode & (OK | ERR_NOT_OWNER)): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => ScreepsReturnCode & (OK | ERR_NOT_OWNER)): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDirections(value: js.Array[DirectionConstant]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
+    inline def setDirections(value: js.Array[DirectionConstant]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsVarargs(value: DirectionConstant*): Self = StObject.set(x, "directions", js.Array(value :_*))
+    inline def setDirectionsVarargs(value: DirectionConstant*): Self = StObject.set(x, "directions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedTime(value: Double): Self = StObject.set(x, "needTime", value.asInstanceOf[js.Any])
+    inline def setNeedTime(value: Double): Self = StObject.set(x, "needTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingTime(value: Double): Self = StObject.set(x, "remainingTime", value.asInstanceOf[js.Any])
+    inline def setRemainingTime(value: Double): Self = StObject.set(x, "remainingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDirections(value: js.Array[DirectionConstant] => ScreepsReturnCode & (OK | ERR_NOT_OWNER | ERR_INVALID_ARGS)): Self = StObject.set(x, "setDirections", js.Any.fromFunction1(value))
+    inline def setSetDirections(value: js.Array[DirectionConstant] => ScreepsReturnCode & (OK | ERR_NOT_OWNER | ERR_INVALID_ARGS)): Self = StObject.set(x, "setDirections", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpawn(value: StructureSpawn): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
+    inline def setSpawn(value: StructureSpawn): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
   }
 }

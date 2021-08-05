@@ -11,6 +11,5 @@ object linearRegressionLineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(mb: M): js.Function1[/* x */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(mb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* x */ Double, Double]]
+  inline def default(mb: M): js.Function1[/* x */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(mb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* x */ Double, Double]]
 }

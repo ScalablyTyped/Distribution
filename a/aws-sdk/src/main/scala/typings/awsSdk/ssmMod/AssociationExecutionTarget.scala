@@ -53,67 +53,47 @@ trait AssociationExecutionTarget extends StObject {
 }
 object AssociationExecutionTarget {
   
-  @scala.inline
-  def apply(): AssociationExecutionTarget = {
+  inline def apply(): AssociationExecutionTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociationExecutionTarget]
   }
   
-  @scala.inline
-  implicit class AssociationExecutionTargetMutableBuilder[Self <: AssociationExecutionTarget] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationExecutionTarget](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
-    @scala.inline
-    def setAssociationVersion(value: AssociationVersion): Self = StObject.set(x, "AssociationVersion", value.asInstanceOf[js.Any])
+    inline def setAssociationVersion(value: AssociationVersion): Self = StObject.set(x, "AssociationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationVersionUndefined: Self = StObject.set(x, "AssociationVersion", js.undefined)
+    inline def setAssociationVersionUndefined: Self = StObject.set(x, "AssociationVersion", js.undefined)
     
-    @scala.inline
-    def setDetailedStatus(value: StatusName): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
+    inline def setDetailedStatus(value: StatusName): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedStatusUndefined: Self = StObject.set(x, "DetailedStatus", js.undefined)
+    inline def setDetailedStatusUndefined: Self = StObject.set(x, "DetailedStatus", js.undefined)
     
-    @scala.inline
-    def setExecutionId(value: AssociationExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: AssociationExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
     
-    @scala.inline
-    def setLastExecutionDate(value: DateTime): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
+    inline def setLastExecutionDate(value: DateTime): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastExecutionDateUndefined: Self = StObject.set(x, "LastExecutionDate", js.undefined)
+    inline def setLastExecutionDateUndefined: Self = StObject.set(x, "LastExecutionDate", js.undefined)
     
-    @scala.inline
-    def setOutputSource(value: OutputSource): Self = StObject.set(x, "OutputSource", value.asInstanceOf[js.Any])
+    inline def setOutputSource(value: OutputSource): Self = StObject.set(x, "OutputSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSourceUndefined: Self = StObject.set(x, "OutputSource", js.undefined)
+    inline def setOutputSourceUndefined: Self = StObject.set(x, "OutputSource", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: AssociationResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: AssociationResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: AssociationResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: AssociationResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusName): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusName): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

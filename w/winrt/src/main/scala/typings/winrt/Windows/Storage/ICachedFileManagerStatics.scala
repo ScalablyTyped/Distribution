@@ -14,8 +14,7 @@ trait ICachedFileManagerStatics extends StObject {
 }
 object ICachedFileManagerStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completeUpdatesAsync: IStorageFile => IAsyncOperation[FileUpdateStatus],
     deferUpdates: IStorageFile => Unit
   ): ICachedFileManagerStatics = {
@@ -23,13 +22,10 @@ object ICachedFileManagerStatics {
     __obj.asInstanceOf[ICachedFileManagerStatics]
   }
   
-  @scala.inline
-  implicit class ICachedFileManagerStaticsMutableBuilder[Self <: ICachedFileManagerStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ICachedFileManagerStatics](x: Self) {
     
-    @scala.inline
-    def setCompleteUpdatesAsync(value: IStorageFile => IAsyncOperation[FileUpdateStatus]): Self = StObject.set(x, "completeUpdatesAsync", js.Any.fromFunction1(value))
+    inline def setCompleteUpdatesAsync(value: IStorageFile => IAsyncOperation[FileUpdateStatus]): Self = StObject.set(x, "completeUpdatesAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeferUpdates(value: IStorageFile => Unit): Self = StObject.set(x, "deferUpdates", js.Any.fromFunction1(value))
+    inline def setDeferUpdates(value: IStorageFile => Unit): Self = StObject.set(x, "deferUpdates", js.Any.fromFunction1(value))
   }
 }

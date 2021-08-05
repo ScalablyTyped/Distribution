@@ -26,13 +26,12 @@ object mod {
       * Creates a `CancelSubscription` object for an `unsubscribe` callback.
       * @param unsubscribe The callback to execute when the `unsubscribe()` method is called.
       */
-    @scala.inline
-    def create(unsubscribe: js.Function0[Unit]): typings.esfxCancelable.distMod.CancelSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(unsubscribe.asInstanceOf[js.Any]).asInstanceOf[typings.esfxCancelable.distMod.CancelSubscription]
+    inline def create(unsubscribe: js.Function0[Unit]): typings.esfxCancelable.distMod.CancelSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(unsubscribe.asInstanceOf[js.Any]).asInstanceOf[typings.esfxCancelable.distMod.CancelSubscription]
   }
   
   @JSImport("@esfx/async-canceltoken", "CancelToken")
   @js.native
-  class CancelToken protected ()
+  /* private */ class CancelToken ()
     extends typings.esfxAsyncCanceltoken.distMod.CancelToken
   /* static members */
   object CancelToken {
@@ -45,8 +44,7 @@ object mod {
       * Returns a CancelToken that becomes signaled when **all** of the provided cancelables are signaled.
       * @param cancelables An iterable of Cancelable objects.
       */
-    @scala.inline
-    def all(cancelables: Iterable[Cancelable]): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(cancelables.asInstanceOf[js.Any]).asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
+    inline def all(cancelables: Iterable[Cancelable]): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(cancelables.asInstanceOf[js.Any]).asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
     
     @JSImport("@esfx/async-canceltoken", "CancelToken.canceled")
     @js.native
@@ -55,10 +53,8 @@ object mod {
     /**
       * Gets a CancelToken from a cancelable.
       */
-    @scala.inline
-    def from(): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
-    @scala.inline
-    def from(cancelable: Cancelable): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
+    inline def from(): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
+    inline def from(cancelable: Cancelable): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
     
     @JSImport("@esfx/async-canceltoken", "CancelToken.none")
     @js.native
@@ -68,13 +64,11 @@ object mod {
       * Returns a CancelToken that becomes signaled when **any** of the provided cancelables are signaled.
       * @param cancelables An iterable of Cancelable objects.
       */
-    @scala.inline
-    def race(cancelables: Iterable[Cancelable]): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(cancelables.asInstanceOf[js.Any]).asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
+    inline def race(cancelables: Iterable[Cancelable]): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(cancelables.asInstanceOf[js.Any]).asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
     
     /**
       * Creates a new CancelSource.
       */
-    @scala.inline
-    def source(): CancelSource = ^.asInstanceOf[js.Dynamic].applyDynamic("source")().asInstanceOf[CancelSource]
+    inline def source(): CancelSource = ^.asInstanceOf[js.Dynamic].applyDynamic("source")().asInstanceOf[CancelSource]
   }
 }

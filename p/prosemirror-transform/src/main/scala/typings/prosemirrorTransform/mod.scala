@@ -207,8 +207,7 @@ object mod {
       * Deserialize a step from its JSON representation. Will call
       * through to the step class' own implementation of this method.
       */
-    @scala.inline
-    def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): Step[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Step[S]]
+    inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): Step[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Step[S]]
     
     /**
       * To be able to serialize steps to JSON, each step needs a string
@@ -216,8 +215,7 @@ object mod {
       * register an ID for your step classes. Try to pick something
       * that's unlikely to clash with steps from other modules.
       */
-    @scala.inline
-    def jsonID(id: String, stepClass: Instantiable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonID")(id.asInstanceOf[js.Any], stepClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def jsonID(id: String, stepClass: Instantiable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonID")(id.asInstanceOf[js.Any], stepClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("prosemirror-transform", "StepMap")
@@ -264,8 +262,7 @@ object mod {
       * negative). This can be useful when applying steps meant for a
       * sub-document to a larger document, or vice-versa.
       */
-    @scala.inline
-    def offset(n: Double): StepMap = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(n.asInstanceOf[js.Any]).asInstanceOf[StepMap]
+    inline def offset(n: Double): StepMap = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(n.asInstanceOf[js.Any]).asInstanceOf[StepMap]
   }
   
   @JSImport("prosemirror-transform", "StepResult")
@@ -292,22 +289,19 @@ object mod {
     /**
       * Create a failed step result.
       */
-    @scala.inline
-    def fail(message: String): StepResult[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[StepResult[js.Any]]
+    inline def fail(message: String): StepResult[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[StepResult[js.Any]]
     
     /**
       * Call [`Node.replace`](#model.Node.replace) with the given
       * arguments. Create a successful result if it succeeds, and a
       * failed one if it throws a `ReplaceError`.
       */
-    @scala.inline
-    def fromReplace[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Double, slice: Slice[S]): StepResult[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromReplace")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[StepResult[S]]
+    inline def fromReplace[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Double, slice: Slice[S]): StepResult[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromReplace")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[StepResult[S]]
     
     /**
       * Create a successful step result.
       */
-    @scala.inline
-    def ok[S /* <: Schema[js.Any, js.Any] */](doc: Node[S]): StepResult[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(doc.asInstanceOf[js.Any]).asInstanceOf[StepResult[S]]
+    inline def ok[S /* <: Schema[js.Any, js.Any] */](doc: Node[S]): StepResult[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(doc.asInstanceOf[js.Any]).asInstanceOf[StepResult[S]]
   }
   
   @JSImport("prosemirror-transform", "Transform")
@@ -511,54 +505,36 @@ object mod {
     def wrap(range: NodeRange[S], wrappers: js.Array[Attrs[S]]): this.type = js.native
   }
   
-  @scala.inline
-  def canJoin(doc: Node[js.Any], pos: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canJoin")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def canJoin(doc: Node[js.Any], pos: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canJoin")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, depth: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, depth: Double, typesAfter: js.Array[js.UndefOr[Attrs[S] | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], typesAfter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, depth: Unit, typesAfter: js.Array[js.UndefOr[Attrs[S] | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], typesAfter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, depth: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, depth: Double, typesAfter: js.Array[js.UndefOr[Attrs[S] | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], typesAfter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def canSplit[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, depth: Unit, typesAfter: js.Array[js.UndefOr[Attrs[S] | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canSplit")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], typesAfter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def dropPoint[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, slice: Slice[S]): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("dropPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
+  inline def dropPoint[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, slice: Slice[S]): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("dropPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
   
-  @scala.inline
-  def findWrapping[S /* <: Schema[js.Any, js.Any] */](range: NodeRange[S], nodeType: NodeType[S]): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
-  @scala.inline
-  def findWrapping[S /* <: Schema[js.Any, js.Any] */](range: NodeRange[S], nodeType: NodeType[S], attrs: StringDictionary[js.Any]): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
-  @scala.inline
-  def findWrapping[S /* <: Schema[js.Any, js.Any] */](
+  inline def findWrapping[S /* <: Schema[js.Any, js.Any] */](range: NodeRange[S], nodeType: NodeType[S]): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
+  inline def findWrapping[S /* <: Schema[js.Any, js.Any] */](range: NodeRange[S], nodeType: NodeType[S], attrs: StringDictionary[js.Any]): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
+  inline def findWrapping[S /* <: Schema[js.Any, js.Any] */](
     range: NodeRange[S],
     nodeType: NodeType[S],
     attrs: StringDictionary[js.Any],
     innerRange: NodeRange[S]
   ): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], innerRange.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
-  @scala.inline
-  def findWrapping[S /* <: Schema[js.Any, js.Any] */](range: NodeRange[S], nodeType: NodeType[S], attrs: Unit, innerRange: NodeRange[S]): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], innerRange.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
+  inline def findWrapping[S /* <: Schema[js.Any, js.Any] */](range: NodeRange[S], nodeType: NodeType[S], attrs: Unit, innerRange: NodeRange[S]): js.UndefOr[js.Array[Attrs[S]] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findWrapping")(range.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], innerRange.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Attrs[S]] | Null]]
   
-  @scala.inline
-  def insertPoint[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, nodeType: NodeType[S]): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
+  inline def insertPoint[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], pos: Double, nodeType: NodeType[S]): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], nodeType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
   
-  @scala.inline
-  def joinPoint(doc: Node[js.Any], pos: Double): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
-  @scala.inline
-  def joinPoint(doc: Node[js.Any], pos: Double, dir: Double): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
+  inline def joinPoint(doc: Node[js.Any], pos: Double): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
+  inline def joinPoint(doc: Node[js.Any], pos: Double, dir: Double): js.UndefOr[Double | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinPoint")(doc.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | Null]]
   
-  @scala.inline
-  def liftTarget(range: NodeRange[js.Any]): js.UndefOr[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("liftTarget")(range.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double | Null]]
+  inline def liftTarget(range: NodeRange[js.Any]): js.UndefOr[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("liftTarget")(range.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double | Null]]
   
-  @scala.inline
-  def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
-  @scala.inline
-  def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Double): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
-  @scala.inline
-  def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Double, slice: Slice[S]): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
-  @scala.inline
-  def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Unit, slice: Slice[S]): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
+  inline def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
+  inline def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Double): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
+  inline def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Double, slice: Slice[S]): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
+  inline def replaceStep[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double, to: Unit, slice: Slice[S]): js.UndefOr[Step[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStep")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Step[S] | Null]]
   
   @js.native
   trait Mappable extends StObject {

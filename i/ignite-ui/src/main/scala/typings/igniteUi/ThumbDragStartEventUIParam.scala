@@ -18,25 +18,19 @@ trait ThumbDragStartEventUIParam extends StObject {
 }
 object ThumbDragStartEventUIParam {
   
-  @scala.inline
-  def apply(): ThumbDragStartEventUIParam = {
+  inline def apply(): ThumbDragStartEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThumbDragStartEventUIParam]
   }
   
-  @scala.inline
-  implicit class ThumbDragStartEventUIParamMutableBuilder[Self <: ThumbDragStartEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ThumbDragStartEventUIParam](x: Self) {
     
-    @scala.inline
-    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

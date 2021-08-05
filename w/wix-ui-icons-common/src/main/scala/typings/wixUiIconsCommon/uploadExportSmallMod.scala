@@ -22,20 +22,16 @@ object uploadExportSmallMod extends Shortcut {
   }
   object UploadExportSmallProps {
     
-    @scala.inline
-    def apply(): UploadExportSmallProps = {
+    inline def apply(): UploadExportSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UploadExportSmallProps]
     }
     
-    @scala.inline
-    implicit class UploadExportSmallPropsMutableBuilder[Self <: UploadExportSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: UploadExportSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

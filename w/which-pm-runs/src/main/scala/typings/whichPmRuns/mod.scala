@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.UndefOr[Name] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.UndefOr[Name]]
+  inline def apply(): js.UndefOr[Name] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.UndefOr[Name]]
   
   @JSImport("which-pm-runs", JSImport.Namespace)
   @js.native

@@ -12,21 +12,21 @@ object dragLineLayerMod {
   class DragLineLayer[D] protected () extends GuideLineLayer[D] {
     def this(orientation: String) = this()
     
-    var _detectionEdge: js.Any = js.native
+    /* private */ var _detectionEdge: js.Any = js.native
     
-    var _detectionRadius: js.Any = js.native
+    /* private */ var _detectionRadius: js.Any = js.native
     
-    var _disconnectInteraction: js.Any = js.native
+    /* private */ var _disconnectInteraction: js.Any = js.native
     
-    var _dragCallbacks: js.Any = js.native
+    /* private */ var _dragCallbacks: js.Any = js.native
     
-    var _dragEndCallbacks: js.Any = js.native
+    /* private */ var _dragEndCallbacks: js.Any = js.native
     
-    var _dragInteraction: js.Any = js.native
+    /* private */ var _dragInteraction: js.Any = js.native
     
-    var _dragStartCallbacks: js.Any = js.native
+    /* private */ var _dragStartCallbacks: js.Any = js.native
     
-    var _enabled: js.Any = js.native
+    /* private */ var _enabled: js.Any = js.native
     
     /**
       * Gets the detection radius of the drag line in pixels.

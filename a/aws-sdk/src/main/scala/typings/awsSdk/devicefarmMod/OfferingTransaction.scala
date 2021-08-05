@@ -33,43 +33,31 @@ trait OfferingTransaction extends StObject {
 }
 object OfferingTransaction {
   
-  @scala.inline
-  def apply(): OfferingTransaction = {
+  inline def apply(): OfferingTransaction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OfferingTransaction]
   }
   
-  @scala.inline
-  implicit class OfferingTransactionMutableBuilder[Self <: OfferingTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: OfferingTransaction](x: Self) {
     
-    @scala.inline
-    def setCost(value: MonetaryAmount): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+    inline def setCost(value: MonetaryAmount): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
+    inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
     
-    @scala.inline
-    def setCreatedOn(value: DateTime): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: DateTime): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
+    inline def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
     
-    @scala.inline
-    def setOfferingPromotionId(value: OfferingPromotionIdentifier): Self = StObject.set(x, "offeringPromotionId", value.asInstanceOf[js.Any])
+    inline def setOfferingPromotionId(value: OfferingPromotionIdentifier): Self = StObject.set(x, "offeringPromotionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingPromotionIdUndefined: Self = StObject.set(x, "offeringPromotionId", js.undefined)
+    inline def setOfferingPromotionIdUndefined: Self = StObject.set(x, "offeringPromotionId", js.undefined)
     
-    @scala.inline
-    def setOfferingStatus(value: OfferingStatus): Self = StObject.set(x, "offeringStatus", value.asInstanceOf[js.Any])
+    inline def setOfferingStatus(value: OfferingStatus): Self = StObject.set(x, "offeringStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingStatusUndefined: Self = StObject.set(x, "offeringStatus", js.undefined)
+    inline def setOfferingStatusUndefined: Self = StObject.set(x, "offeringStatus", js.undefined)
     
-    @scala.inline
-    def setTransactionId(value: TransactionIdentifier): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: TransactionIdentifier): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

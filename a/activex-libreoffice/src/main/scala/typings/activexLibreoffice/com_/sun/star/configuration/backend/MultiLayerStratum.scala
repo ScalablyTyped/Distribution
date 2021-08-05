@@ -14,8 +14,7 @@ trait MultiLayerStratum
      with XBackendEntities
 object MultiLayerStratum {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdminEntity: String,
     OwnerEntity: String,
     acquire: () => Unit,

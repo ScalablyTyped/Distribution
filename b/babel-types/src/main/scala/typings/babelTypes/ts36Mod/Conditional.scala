@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Conditional extends StObject
 object Conditional {
   
-  @scala.inline
-  def ConditionalExpression_(
+  inline def ConditionalExpression_(
     alternate: Expression,
     consequent: Expression,
     end: Double,
@@ -25,8 +24,7 @@ object Conditional {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ConditionalExpression_]
   }
   
-  @scala.inline
-  def IfStatement_(
+  inline def IfStatement_(
     alternate: Statement,
     consequent: Statement,
     end: Double,

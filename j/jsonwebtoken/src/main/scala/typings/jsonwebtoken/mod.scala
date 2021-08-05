@@ -53,68 +53,41 @@ object mod {
     var expiredAt: Date = js.native
   }
   
-  @scala.inline
-  def decode(token: String): Null | StringDictionary[js.Any] | String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any]).asInstanceOf[Null | StringDictionary[js.Any] | String]
-  @scala.inline
-  def decode(token: String, options: DecodeOptionsjsontrue): Null | StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[js.Any]]
-  @scala.inline
-  def decode(token: String, options: DecodeOptions): Null | StringDictionary[js.Any] | String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[js.Any] | String]
+  inline def decode(token: String): Null | StringDictionary[js.Any] | String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any]).asInstanceOf[Null | StringDictionary[js.Any] | String]
+  inline def decode(token: String, options: DecodeOptionsjsontrue): Null | StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[js.Any]]
+  inline def decode(token: String, options: DecodeOptions): Null | StringDictionary[js.Any] | String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | StringDictionary[js.Any] | String]
   
-  @scala.inline
-  def sign(payload: String, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sign(payload: String, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sign(payload: js.Object, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sign(payload: js.Object, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sign(payload: Buffer, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sign(payload: Buffer, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(payload: String, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(payload: String, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(payload: js.Object, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(payload: js.Object, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(payload: Buffer, secretOrPrivateKey: Secret): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(payload: Buffer, secretOrPrivateKey: Secret, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: Unit, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: VerifyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def verify(
+  inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: Unit, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: GetPublicKeyOrSecret, options: VerifyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(
     token: String,
     secretOrPublicKey: GetPublicKeyOrSecret,
     options: VerifyOptions,
     callback: VerifyCallback
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def verify(token: String, secretOrPublicKey: Secret): js.Object | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[js.Object | String]
-  @scala.inline
-  def verify(token: String, secretOrPublicKey: Secret, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def verify(token: String, secretOrPublicKey: Secret, options: Unit, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions): js.Object | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object | String]
-  @scala.inline
-  def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: Secret): js.Object | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[js.Object | String]
+  inline def verify(token: String, secretOrPublicKey: Secret, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: Secret, options: Unit, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions): js.Object | String = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object | String]
+  inline def verify(token: String, secretOrPublicKey: Secret, options: VerifyOptions, callback: VerifyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def verify_Unit(token: String, secretOrPublicKey: Secret): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def verify_Unit(token: String, secretOrPublicKey: Secret, options: VerifyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify_Unit(token: String, secretOrPublicKey: Secret): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verify_Unit(token: String, secretOrPublicKey: Secret, options: VerifyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.jsonwebtoken.jsonwebtokenStrings.HS256
@@ -134,44 +107,31 @@ object mod {
   trait Algorithm extends StObject
   object Algorithm {
     
-    @scala.inline
-    def ES256: typings.jsonwebtoken.jsonwebtokenStrings.ES256 = "ES256".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.ES256]
+    inline def ES256: typings.jsonwebtoken.jsonwebtokenStrings.ES256 = "ES256".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.ES256]
     
-    @scala.inline
-    def ES384: typings.jsonwebtoken.jsonwebtokenStrings.ES384 = "ES384".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.ES384]
+    inline def ES384: typings.jsonwebtoken.jsonwebtokenStrings.ES384 = "ES384".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.ES384]
     
-    @scala.inline
-    def ES512: typings.jsonwebtoken.jsonwebtokenStrings.ES512 = "ES512".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.ES512]
+    inline def ES512: typings.jsonwebtoken.jsonwebtokenStrings.ES512 = "ES512".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.ES512]
     
-    @scala.inline
-    def HS256: typings.jsonwebtoken.jsonwebtokenStrings.HS256 = "HS256".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.HS256]
+    inline def HS256: typings.jsonwebtoken.jsonwebtokenStrings.HS256 = "HS256".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.HS256]
     
-    @scala.inline
-    def HS384: typings.jsonwebtoken.jsonwebtokenStrings.HS384 = "HS384".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.HS384]
+    inline def HS384: typings.jsonwebtoken.jsonwebtokenStrings.HS384 = "HS384".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.HS384]
     
-    @scala.inline
-    def HS512: typings.jsonwebtoken.jsonwebtokenStrings.HS512 = "HS512".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.HS512]
+    inline def HS512: typings.jsonwebtoken.jsonwebtokenStrings.HS512 = "HS512".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.HS512]
     
-    @scala.inline
-    def PS256: typings.jsonwebtoken.jsonwebtokenStrings.PS256 = "PS256".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.PS256]
+    inline def PS256: typings.jsonwebtoken.jsonwebtokenStrings.PS256 = "PS256".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.PS256]
     
-    @scala.inline
-    def PS384: typings.jsonwebtoken.jsonwebtokenStrings.PS384 = "PS384".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.PS384]
+    inline def PS384: typings.jsonwebtoken.jsonwebtokenStrings.PS384 = "PS384".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.PS384]
     
-    @scala.inline
-    def PS512: typings.jsonwebtoken.jsonwebtokenStrings.PS512 = "PS512".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.PS512]
+    inline def PS512: typings.jsonwebtoken.jsonwebtokenStrings.PS512 = "PS512".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.PS512]
     
-    @scala.inline
-    def RS256: typings.jsonwebtoken.jsonwebtokenStrings.RS256 = "RS256".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.RS256]
+    inline def RS256: typings.jsonwebtoken.jsonwebtokenStrings.RS256 = "RS256".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.RS256]
     
-    @scala.inline
-    def RS384: typings.jsonwebtoken.jsonwebtokenStrings.RS384 = "RS384".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.RS384]
+    inline def RS384: typings.jsonwebtoken.jsonwebtokenStrings.RS384 = "RS384".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.RS384]
     
-    @scala.inline
-    def RS512: typings.jsonwebtoken.jsonwebtokenStrings.RS512 = "RS512".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.RS512]
+    inline def RS512: typings.jsonwebtoken.jsonwebtokenStrings.RS512 = "RS512".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.RS512]
     
-    @scala.inline
-    def none: typings.jsonwebtoken.jsonwebtokenStrings.none = "none".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.none]
+    inline def none: typings.jsonwebtoken.jsonwebtokenStrings.none = "none".asInstanceOf[typings.jsonwebtoken.jsonwebtokenStrings.none]
   }
   
   trait DecodeOptions extends StObject {
@@ -182,26 +142,20 @@ object mod {
   }
   object DecodeOptions {
     
-    @scala.inline
-    def apply(): DecodeOptions = {
+    inline def apply(): DecodeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecodeOptions]
     }
     
-    @scala.inline
-    implicit class DecodeOptionsMutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DecodeOptions](x: Self) {
       
-      @scala.inline
-      def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     }
   }
   
@@ -223,47 +177,34 @@ object mod {
   }
   object JwtHeader {
     
-    @scala.inline
-    def apply(alg: String): JwtHeader = {
+    inline def apply(alg: String): JwtHeader = {
       val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
       __obj.asInstanceOf[JwtHeader]
     }
     
-    @scala.inline
-    implicit class JwtHeaderMutableBuilder[Self <: JwtHeader] (val x: Self) extends AnyVal {
+    extension [Self <: JwtHeader](x: Self) {
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJku(value: String): Self = StObject.set(x, "jku", value.asInstanceOf[js.Any])
+      inline def setJku(value: String): Self = StObject.set(x, "jku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJkuUndefined: Self = StObject.set(x, "jku", js.undefined)
+      inline def setJkuUndefined: Self = StObject.set(x, "jku", js.undefined)
       
-      @scala.inline
-      def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
+      inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKidUndefined: Self = StObject.set(x, "kid", js.undefined)
+      inline def setKidUndefined: Self = StObject.set(x, "kid", js.undefined)
       
-      @scala.inline
-      def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
+      inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
+      inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
       
-      @scala.inline
-      def setX5t(value: String): Self = StObject.set(x, "x5t", value.asInstanceOf[js.Any])
+      inline def setX5t(value: String): Self = StObject.set(x, "x5t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX5tUndefined: Self = StObject.set(x, "x5t", js.undefined)
+      inline def setX5tUndefined: Self = StObject.set(x, "x5t", js.undefined)
       
-      @scala.inline
-      def setX5u(value: String): Self = StObject.set(x, "x5u", value.asInstanceOf[js.Any])
+      inline def setX5u(value: String): Self = StObject.set(x, "x5u", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX5uUndefined: Self = StObject.set(x, "x5u", js.undefined)
+      inline def setX5uUndefined: Self = StObject.set(x, "x5u", js.undefined)
     }
   }
   
@@ -314,89 +255,62 @@ object mod {
   }
   object SignOptions {
     
-    @scala.inline
-    def apply(): SignOptions = {
+    inline def apply(): SignOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignOptions]
     }
     
-    @scala.inline
-    implicit class SignOptionsMutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SignOptions](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      @scala.inline
-      def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setExpiresIn(value: String | Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: String | Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+      inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
       
-      @scala.inline
-      def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      @scala.inline
-      def setJwtid(value: String): Self = StObject.set(x, "jwtid", value.asInstanceOf[js.Any])
+      inline def setJwtid(value: String): Self = StObject.set(x, "jwtid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJwtidUndefined: Self = StObject.set(x, "jwtid", js.undefined)
+      inline def setJwtidUndefined: Self = StObject.set(x, "jwtid", js.undefined)
       
-      @scala.inline
-      def setKeyid(value: String): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
+      inline def setKeyid(value: String): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyidUndefined: Self = StObject.set(x, "keyid", js.undefined)
+      inline def setKeyidUndefined: Self = StObject.set(x, "keyid", js.undefined)
       
-      @scala.inline
-      def setMutatePayload(value: Boolean): Self = StObject.set(x, "mutatePayload", value.asInstanceOf[js.Any])
+      inline def setMutatePayload(value: Boolean): Self = StObject.set(x, "mutatePayload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutatePayloadUndefined: Self = StObject.set(x, "mutatePayload", js.undefined)
+      inline def setMutatePayloadUndefined: Self = StObject.set(x, "mutatePayload", js.undefined)
       
-      @scala.inline
-      def setNoTimestamp(value: Boolean): Self = StObject.set(x, "noTimestamp", value.asInstanceOf[js.Any])
+      inline def setNoTimestamp(value: Boolean): Self = StObject.set(x, "noTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoTimestampUndefined: Self = StObject.set(x, "noTimestamp", js.undefined)
+      inline def setNoTimestampUndefined: Self = StObject.set(x, "noTimestamp", js.undefined)
       
-      @scala.inline
-      def setNotBefore(value: String | Double): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+      inline def setNotBefore(value: String | Double): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
+      inline def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     }
   }
   
@@ -448,95 +362,66 @@ object mod {
   }
   object VerifyOptions {
     
-    @scala.inline
-    def apply(): VerifyOptions = {
+    inline def apply(): VerifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    @scala.inline
-    implicit class VerifyOptionsMutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptions](x: Self) {
       
-      @scala.inline
-      def setAlgorithms(value: js.Array[Algorithm]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setAlgorithms(value: js.Array[Algorithm]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      @scala.inline
-      def setAlgorithmsVarargs(value: Algorithm*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: Algorithm*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setAudience(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      @scala.inline
-      def setAudienceVarargs(value: (String | RegExp)*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: (String | RegExp)*): Self = StObject.set(x, "audience", js.Array(value :_*))
       
-      @scala.inline
-      def setClockTimestamp(value: Double): Self = StObject.set(x, "clockTimestamp", value.asInstanceOf[js.Any])
+      inline def setClockTimestamp(value: Double): Self = StObject.set(x, "clockTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockTimestampUndefined: Self = StObject.set(x, "clockTimestamp", js.undefined)
+      inline def setClockTimestampUndefined: Self = StObject.set(x, "clockTimestamp", js.undefined)
       
-      @scala.inline
-      def setClockTolerance(value: Double): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
+      inline def setClockTolerance(value: Double): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
+      inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
-      @scala.inline
-      def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setIgnoreExpiration(value: Boolean): Self = StObject.set(x, "ignoreExpiration", value.asInstanceOf[js.Any])
+      inline def setIgnoreExpiration(value: Boolean): Self = StObject.set(x, "ignoreExpiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExpirationUndefined: Self = StObject.set(x, "ignoreExpiration", js.undefined)
+      inline def setIgnoreExpirationUndefined: Self = StObject.set(x, "ignoreExpiration", js.undefined)
       
-      @scala.inline
-      def setIgnoreNotBefore(value: Boolean): Self = StObject.set(x, "ignoreNotBefore", value.asInstanceOf[js.Any])
+      inline def setIgnoreNotBefore(value: Boolean): Self = StObject.set(x, "ignoreNotBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNotBeforeUndefined: Self = StObject.set(x, "ignoreNotBefore", js.undefined)
+      inline def setIgnoreNotBeforeUndefined: Self = StObject.set(x, "ignoreNotBefore", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: String | js.Array[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String | js.Array[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      @scala.inline
-      def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
+      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
       
-      @scala.inline
-      def setJwtid(value: String): Self = StObject.set(x, "jwtid", value.asInstanceOf[js.Any])
+      inline def setJwtid(value: String): Self = StObject.set(x, "jwtid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJwtidUndefined: Self = StObject.set(x, "jwtid", js.undefined)
+      inline def setJwtidUndefined: Self = StObject.set(x, "jwtid", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     }
   }
 }

@@ -24,22 +24,17 @@ trait ASPxClientCustomizeMenuActionsEventArgs
 }
 object ASPxClientCustomizeMenuActionsEventArgs {
   
-  @scala.inline
-  def apply(Actions: js.Array[ASPxClientMenuAction], GetById: String => ASPxClientMenuAction): ASPxClientCustomizeMenuActionsEventArgs = {
+  inline def apply(Actions: js.Array[ASPxClientMenuAction], GetById: String => ASPxClientMenuAction): ASPxClientCustomizeMenuActionsEventArgs = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], GetById = js.Any.fromFunction1(GetById))
     __obj.asInstanceOf[ASPxClientCustomizeMenuActionsEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCustomizeMenuActionsEventArgsMutableBuilder[Self <: ASPxClientCustomizeMenuActionsEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCustomizeMenuActionsEventArgs](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[ASPxClientMenuAction]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ASPxClientMenuAction]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: ASPxClientMenuAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ASPxClientMenuAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setGetById(value: String => ASPxClientMenuAction): Self = StObject.set(x, "GetById", js.Any.fromFunction1(value))
+    inline def setGetById(value: String => ASPxClientMenuAction): Self = StObject.set(x, "GetById", js.Any.fromFunction1(value))
   }
 }

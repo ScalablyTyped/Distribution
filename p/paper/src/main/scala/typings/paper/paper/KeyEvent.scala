@@ -34,8 +34,7 @@ trait KeyEvent
 }
 object KeyEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     character: String,
     key: String,
     modifiers: js.Any,
@@ -50,16 +49,12 @@ object KeyEvent {
     __obj.asInstanceOf[KeyEvent]
   }
   
-  @scala.inline
-  implicit class KeyEventMutableBuilder[Self <: KeyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyEvent](x: Self) {
     
-    @scala.inline
-    def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

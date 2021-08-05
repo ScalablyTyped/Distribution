@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcCloseSave extends StObject
 object AcCloseSave {
   
-  @scala.inline
-  def acSaveNo: `2` = 2.asInstanceOf[`2`]
+  inline def acSaveNo: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acSavePrompt: `0` = 0.asInstanceOf[`0`]
+  inline def acSavePrompt: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acSaveYes: `1` = 1.asInstanceOf[`1`]
+  inline def acSaveYes: `1` = 1.asInstanceOf[`1`]
 }

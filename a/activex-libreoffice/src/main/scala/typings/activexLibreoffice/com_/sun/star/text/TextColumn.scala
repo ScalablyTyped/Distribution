@@ -30,22 +30,17 @@ trait TextColumn extends StObject {
 }
 object TextColumn {
   
-  @scala.inline
-  def apply(LeftMargin: Double, RightMargin: Double, Width: Double): TextColumn = {
+  inline def apply(LeftMargin: Double, RightMargin: Double, Width: Double): TextColumn = {
     val __obj = js.Dynamic.literal(LeftMargin = LeftMargin.asInstanceOf[js.Any], RightMargin = RightMargin.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextColumn]
   }
   
-  @scala.inline
-  implicit class TextColumnMutableBuilder[Self <: TextColumn] (val x: Self) extends AnyVal {
+  extension [Self <: TextColumn](x: Self) {
     
-    @scala.inline
-    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
+    inline def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
+    inline def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

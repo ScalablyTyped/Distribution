@@ -20,22 +20,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Trigger extends StObject
 object Trigger {
   
-  @scala.inline
-  def `1`(`type`: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): typings.figma.anon.`1` = {
+  inline def `1`(`type`: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): typings.figma.anon.`1` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.figma.anon.`1`]
   }
   
-  @scala.inline
-  def Delay(delay: Double, `type`: MOUSE_ENTER | MOUSE_LEAVE | MOUSE_UP | MOUSE_DOWN): typings.figma.anon.Delay = {
+  inline def Delay(delay: Double, `type`: MOUSE_ENTER | MOUSE_LEAVE | MOUSE_UP | MOUSE_DOWN): typings.figma.anon.Delay = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.figma.anon.Delay]
   }
   
-  @scala.inline
-  def Timeout(timeout: Double): typings.figma.anon.Timeout = {
+  inline def Timeout(timeout: Double): typings.figma.anon.Timeout = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AFTER_TIMEOUT")
     __obj.asInstanceOf[typings.figma.anon.Timeout]

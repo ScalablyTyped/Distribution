@@ -33,43 +33,31 @@ trait ListArchivesRequest extends StObject {
 }
 object ListArchivesRequest {
   
-  @scala.inline
-  def apply(): ListArchivesRequest = {
+  inline def apply(): ListArchivesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListArchivesRequest]
   }
   
-  @scala.inline
-  implicit class ListArchivesRequestMutableBuilder[Self <: ListArchivesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListArchivesRequest](x: Self) {
     
-    @scala.inline
-    def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
+    inline def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
+    inline def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
     
-    @scala.inline
-    def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNamePrefix(value: ArchiveName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
+    inline def setNamePrefix(value: ArchiveName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePrefixUndefined: Self = StObject.set(x, "NamePrefix", js.undefined)
+    inline def setNamePrefixUndefined: Self = StObject.set(x, "NamePrefix", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setState(value: ArchiveState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ArchiveState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

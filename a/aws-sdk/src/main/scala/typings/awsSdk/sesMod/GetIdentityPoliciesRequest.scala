@@ -18,22 +18,17 @@ trait GetIdentityPoliciesRequest extends StObject {
 }
 object GetIdentityPoliciesRequest {
   
-  @scala.inline
-  def apply(Identity: Identity, PolicyNames: PolicyNameList): GetIdentityPoliciesRequest = {
+  inline def apply(Identity: Identity, PolicyNames: PolicyNameList): GetIdentityPoliciesRequest = {
     val __obj = js.Dynamic.literal(Identity = Identity.asInstanceOf[js.Any], PolicyNames = PolicyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIdentityPoliciesRequest]
   }
   
-  @scala.inline
-  implicit class GetIdentityPoliciesRequestMutableBuilder[Self <: GetIdentityPoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityPoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNames(value: PolicyNameList): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
+    inline def setPolicyNames(value: PolicyNameList): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNamesVarargs(value: PolicyName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: PolicyName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait DeleteFileOptions extends StObject {
 }
 object DeleteFileOptions {
   
-  @scala.inline
-  def apply(): DeleteFileOptions = {
+  inline def apply(): DeleteFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFileOptions]
   }
   
-  @scala.inline
-  implicit class DeleteFileOptionsMutableBuilder[Self <: DeleteFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFileOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreIfNotExists(value: Boolean): Self = StObject.set(x, "ignoreIfNotExists", value.asInstanceOf[js.Any])
+    inline def setIgnoreIfNotExists(value: Boolean): Self = StObject.set(x, "ignoreIfNotExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreIfNotExistsUndefined: Self = StObject.set(x, "ignoreIfNotExists", js.undefined)
+    inline def setIgnoreIfNotExistsUndefined: Self = StObject.set(x, "ignoreIfNotExists", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

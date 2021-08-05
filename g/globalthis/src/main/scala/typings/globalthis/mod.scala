@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
   
   @JSImport("globalthis", JSImport.Namespace)
   @js.native
@@ -17,8 +16,7 @@ object mod {
   /**
     * Gets the `globalThis` object.
     */
-  @scala.inline
-  def getPolyfill(): ReturnType[
+  inline def getPolyfill(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
     ]
@@ -38,8 +36,7 @@ object mod {
   /**
     * Installs the `globalThis` property onto the global object.
     */
-  @scala.inline
-  def shim(): ReturnType[
+  inline def shim(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
     ]

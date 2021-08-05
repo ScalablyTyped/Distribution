@@ -62,11 +62,9 @@ object groupedListMod {
     @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedListBase.defaultProps")
     @js.native
     def defaultProps: Compact = js.native
-    @scala.inline
-    def defaultProps_=(x: Compact): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Compact): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(
+    inline def getDerivedStateFromProps(
       nextProps: typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps,
       previousState: IGroupedListState
     ): IGroupedListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IGroupedListState]

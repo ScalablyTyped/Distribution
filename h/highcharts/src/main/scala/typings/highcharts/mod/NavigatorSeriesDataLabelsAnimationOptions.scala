@@ -15,19 +15,15 @@ trait NavigatorSeriesDataLabelsAnimationOptions extends StObject {
 }
 object NavigatorSeriesDataLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): NavigatorSeriesDataLabelsAnimationOptions = {
+  inline def apply(): NavigatorSeriesDataLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigatorSeriesDataLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class NavigatorSeriesDataLabelsAnimationOptionsMutableBuilder[Self <: NavigatorSeriesDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorSeriesDataLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

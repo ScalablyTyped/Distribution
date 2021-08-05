@@ -24,26 +24,20 @@ trait IncludesType
 }
 object IncludesType {
   
-  @scala.inline
-  def apply(extAttrs: js.Array[ExtendedAttribute], includes: String, parent: Null, target: String): IncludesType = {
+  inline def apply(extAttrs: js.Array[ExtendedAttribute], includes: String, parent: Null, target: String): IncludesType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("includes")
     __obj.asInstanceOf[IncludesType]
   }
   
-  @scala.inline
-  implicit class IncludesTypeMutableBuilder[Self <: IncludesType] (val x: Self) extends AnyVal {
+  extension [Self <: IncludesType](x: Self) {
     
-    @scala.inline
-    def setIncludes(value: String): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: String): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: includes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: includes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

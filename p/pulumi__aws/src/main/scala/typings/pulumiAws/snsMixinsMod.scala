@@ -60,8 +60,7 @@ object snsMixinsMod {
   }
   object SNSItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Message: String,
       MessageAttributes: StringDictionary[SNSMessageAttribute],
       MessageId: String,
@@ -78,41 +77,29 @@ object snsMixinsMod {
       __obj.asInstanceOf[SNSItem]
     }
     
-    @scala.inline
-    implicit class SNSItemMutableBuilder[Self <: SNSItem] (val x: Self) extends AnyVal {
+    extension [Self <: SNSItem](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageAttributes(value: StringDictionary[SNSMessageAttribute]): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
+      inline def setMessageAttributes(value: StringDictionary[SNSMessageAttribute]): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureVersion(value: String): Self = StObject.set(x, "SignatureVersion", value.asInstanceOf[js.Any])
+      inline def setSignatureVersion(value: String): Self = StObject.set(x, "SignatureVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningCertUrl(value: String): Self = StObject.set(x, "SigningCertUrl", value.asInstanceOf[js.Any])
+      inline def setSigningCertUrl(value: String): Self = StObject.set(x, "SigningCertUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArn(value: String): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: String): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribeUrl(value: String): Self = StObject.set(x, "UnsubscribeUrl", value.asInstanceOf[js.Any])
+      inline def setUnsubscribeUrl(value: String): Self = StObject.set(x, "UnsubscribeUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,20 +111,16 @@ object snsMixinsMod {
   }
   object SNSMessageAttribute {
     
-    @scala.inline
-    def apply(Type: String, Value: String): SNSMessageAttribute = {
+    inline def apply(Type: String, Value: String): SNSMessageAttribute = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SNSMessageAttribute]
     }
     
-    @scala.inline
-    implicit class SNSMessageAttributeMutableBuilder[Self <: SNSMessageAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: SNSMessageAttribute](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,20 +130,16 @@ object snsMixinsMod {
   }
   object TopicEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[TopicRecord]): TopicEvent = {
+    inline def apply(Records: js.Array[TopicRecord]): TopicEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopicEvent]
     }
     
-    @scala.inline
-    implicit class TopicEventMutableBuilder[Self <: TopicEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TopicEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[TopicRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[TopicRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: TopicRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: TopicRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -180,26 +159,20 @@ object snsMixinsMod {
   }
   object TopicRecord {
     
-    @scala.inline
-    def apply(EventSource: String, EventSubscriptionArn: String, EventVersion: String, Sns: SNSItem): TopicRecord = {
+    inline def apply(EventSource: String, EventSubscriptionArn: String, EventVersion: String, Sns: SNSItem): TopicRecord = {
       val __obj = js.Dynamic.literal(EventSource = EventSource.asInstanceOf[js.Any], EventSubscriptionArn = EventSubscriptionArn.asInstanceOf[js.Any], EventVersion = EventVersion.asInstanceOf[js.Any], Sns = Sns.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopicRecord]
     }
     
-    @scala.inline
-    implicit class TopicRecordMutableBuilder[Self <: TopicRecord] (val x: Self) extends AnyVal {
+    extension [Self <: TopicRecord](x: Self) {
       
-      @scala.inline
-      def setEventSource(value: String): Self = StObject.set(x, "EventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: String): Self = StObject.set(x, "EventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSubscriptionArn(value: String): Self = StObject.set(x, "EventSubscriptionArn", value.asInstanceOf[js.Any])
+      inline def setEventSubscriptionArn(value: String): Self = StObject.set(x, "EventSubscriptionArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventVersion(value: String): Self = StObject.set(x, "EventVersion", value.asInstanceOf[js.Any])
+      inline def setEventVersion(value: String): Self = StObject.set(x, "EventVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSns(value: SNSItem): Self = StObject.set(x, "Sns", value.asInstanceOf[js.Any])
+      inline def setSns(value: SNSItem): Self = StObject.set(x, "Sns", value.asInstanceOf[js.Any])
     }
   }
   

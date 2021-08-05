@@ -16,8 +16,7 @@ trait SerialisedDocumentStore[T] extends StObject {
 }
 object SerialisedDocumentStore {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     docInfo: StringDictionary[
       typings.elasticlunr.elasticlunrStrings.SerialisedDocumentStore & TopLevel[js.Any]
     ],
@@ -27,17 +26,14 @@ object SerialisedDocumentStore {
     __obj.asInstanceOf[SerialisedDocumentStore[T]]
   }
   
-  @scala.inline
-  implicit class SerialisedDocumentStoreMutableBuilder[Self <: SerialisedDocumentStore[?], T] (val x: Self & SerialisedDocumentStore[T]) extends AnyVal {
+  extension [Self <: SerialisedDocumentStore[?], T](x: Self & SerialisedDocumentStore[T]) {
     
-    @scala.inline
-    def setDocInfo(
+    inline def setDocInfo(
       value: StringDictionary[
           typings.elasticlunr.elasticlunrStrings.SerialisedDocumentStore & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "docInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocs(value: StringDictionary[T]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    inline def setDocs(value: StringDictionary[T]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
   }
 }

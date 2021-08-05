@@ -47,52 +47,37 @@ trait Basis extends StObject {
 }
 object Basis {
   
-  @scala.inline
-  def apply(): Basis = {
+  inline def apply(): Basis = {
     val __obj = js.Dynamic.literal(basis = "basis", basisClosed = "basisClosed", basisOpen = "basisOpen", bundle = "bundle", cardinal = "cardinal", cardinalClosed = "cardinalClosed", cardinalOpen = "cardinalOpen", linear = "linear", linearClosed = "linearClosed", monotone = "monotone", step = "step", stepAfter = "stepAfter", stepBefore = "stepBefore")
     __obj.asInstanceOf[Basis]
   }
   
-  @scala.inline
-  implicit class BasisMutableBuilder[Self <: Basis] (val x: Self) extends AnyVal {
+  extension [Self <: Basis](x: Self) {
     
-    @scala.inline
-    def setBasis(value: basis): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
+    inline def setBasis(value: basis): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasisClosed(value: basisClosed): Self = StObject.set(x, "basisClosed", value.asInstanceOf[js.Any])
+    inline def setBasisClosed(value: basisClosed): Self = StObject.set(x, "basisClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasisOpen(value: basisOpen): Self = StObject.set(x, "basisOpen", value.asInstanceOf[js.Any])
+    inline def setBasisOpen(value: basisOpen): Self = StObject.set(x, "basisOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundle(value: bundle): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
+    inline def setBundle(value: bundle): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardinal(value: cardinal): Self = StObject.set(x, "cardinal", value.asInstanceOf[js.Any])
+    inline def setCardinal(value: cardinal): Self = StObject.set(x, "cardinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardinalClosed(value: cardinalClosed): Self = StObject.set(x, "cardinalClosed", value.asInstanceOf[js.Any])
+    inline def setCardinalClosed(value: cardinalClosed): Self = StObject.set(x, "cardinalClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardinalOpen(value: cardinalOpen): Self = StObject.set(x, "cardinalOpen", value.asInstanceOf[js.Any])
+    inline def setCardinalOpen(value: cardinalOpen): Self = StObject.set(x, "cardinalOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinear(value: linear): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
+    inline def setLinear(value: linear): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearClosed(value: linearClosed): Self = StObject.set(x, "linearClosed", value.asInstanceOf[js.Any])
+    inline def setLinearClosed(value: linearClosed): Self = StObject.set(x, "linearClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonotone(value: monotone): Self = StObject.set(x, "monotone", value.asInstanceOf[js.Any])
+    inline def setMonotone(value: monotone): Self = StObject.set(x, "monotone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepAfter(value: stepAfter): Self = StObject.set(x, "stepAfter", value.asInstanceOf[js.Any])
+    inline def setStepAfter(value: stepAfter): Self = StObject.set(x, "stepAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepBefore(value: stepBefore): Self = StObject.set(x, "stepBefore", value.asInstanceOf[js.Any])
+    inline def setStepBefore(value: stepBefore): Self = StObject.set(x, "stepBefore", value.asInstanceOf[js.Any])
   }
 }

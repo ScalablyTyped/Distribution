@@ -20,22 +20,17 @@ trait SchemaSourceInstanceParams extends StObject {
 }
 object SchemaSourceInstanceParams {
   
-  @scala.inline
-  def apply(): SchemaSourceInstanceParams = {
+  inline def apply(): SchemaSourceInstanceParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceInstanceParams]
   }
   
-  @scala.inline
-  implicit class SchemaSourceInstanceParamsMutableBuilder[Self <: SchemaSourceInstanceParams] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceInstanceParams](x: Self) {
     
-    @scala.inline
-    def setDiskConfigs(value: js.Array[SchemaDiskInstantiationConfig]): Self = StObject.set(x, "diskConfigs", value.asInstanceOf[js.Any])
+    inline def setDiskConfigs(value: js.Array[SchemaDiskInstantiationConfig]): Self = StObject.set(x, "diskConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskConfigsUndefined: Self = StObject.set(x, "diskConfigs", js.undefined)
+    inline def setDiskConfigsUndefined: Self = StObject.set(x, "diskConfigs", js.undefined)
     
-    @scala.inline
-    def setDiskConfigsVarargs(value: SchemaDiskInstantiationConfig*): Self = StObject.set(x, "diskConfigs", js.Array(value :_*))
+    inline def setDiskConfigsVarargs(value: SchemaDiskInstantiationConfig*): Self = StObject.set(x, "diskConfigs", js.Array(value :_*))
   }
 }

@@ -23,34 +23,25 @@ trait DevToolsConfig[Instance, TextInstance] extends StObject {
 }
 object DevToolsConfig {
   
-  @scala.inline
-  def apply[Instance, TextInstance](bundleType: BundleType, rendererPackageName: String, version: String): DevToolsConfig[Instance, TextInstance] = {
+  inline def apply[Instance, TextInstance](bundleType: BundleType, rendererPackageName: String, version: String): DevToolsConfig[Instance, TextInstance] = {
     val __obj = js.Dynamic.literal(bundleType = bundleType.asInstanceOf[js.Any], rendererPackageName = rendererPackageName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevToolsConfig[Instance, TextInstance]]
   }
   
-  @scala.inline
-  implicit class DevToolsConfigMutableBuilder[Self <: DevToolsConfig[?, ?], Instance, TextInstance] (val x: Self & (DevToolsConfig[Instance, TextInstance])) extends AnyVal {
+  extension [Self <: DevToolsConfig[?, ?], Instance, TextInstance](x: Self & (DevToolsConfig[Instance, TextInstance])) {
     
-    @scala.inline
-    def setBundleType(value: BundleType): Self = StObject.set(x, "bundleType", value.asInstanceOf[js.Any])
+    inline def setBundleType(value: BundleType): Self = StObject.set(x, "bundleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindFiberByHostInstance(value: /* instance */ Instance | TextInstance => Fiber): Self = StObject.set(x, "findFiberByHostInstance", js.Any.fromFunction1(value))
+    inline def setFindFiberByHostInstance(value: /* instance */ Instance | TextInstance => Fiber): Self = StObject.set(x, "findFiberByHostInstance", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindFiberByHostInstanceUndefined: Self = StObject.set(x, "findFiberByHostInstance", js.undefined)
+    inline def setFindFiberByHostInstanceUndefined: Self = StObject.set(x, "findFiberByHostInstance", js.undefined)
     
-    @scala.inline
-    def setGetInspectorDataForViewTag(value: /* tag */ Double => js.Object): Self = StObject.set(x, "getInspectorDataForViewTag", js.Any.fromFunction1(value))
+    inline def setGetInspectorDataForViewTag(value: /* tag */ Double => js.Object): Self = StObject.set(x, "getInspectorDataForViewTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInspectorDataForViewTagUndefined: Self = StObject.set(x, "getInspectorDataForViewTag", js.undefined)
+    inline def setGetInspectorDataForViewTagUndefined: Self = StObject.set(x, "getInspectorDataForViewTag", js.undefined)
     
-    @scala.inline
-    def setRendererPackageName(value: String): Self = StObject.set(x, "rendererPackageName", value.asInstanceOf[js.Any])
+    inline def setRendererPackageName(value: String): Self = StObject.set(x, "rendererPackageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

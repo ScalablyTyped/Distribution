@@ -63,7 +63,7 @@ trait Assistant extends StObject {
   
   val NewBalloon: Balloon = js.native
   
-  @JSName("Office.Assistant_typekey")
+  /* private */ @JSName("Office.Assistant_typekey")
   var OfficeDotAssistant_typekey: Assistant = js.native
   
   var On: Boolean = js.native

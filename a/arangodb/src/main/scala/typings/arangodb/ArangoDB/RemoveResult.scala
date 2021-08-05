@@ -12,19 +12,15 @@ trait RemoveResult[T /* <: js.Object */]
 }
 object RemoveResult {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](_id: String, _key: String, _rev: String): RemoveResult[T] = {
+  inline def apply[T /* <: js.Object */](_id: String, _key: String, _rev: String): RemoveResult[T] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _key = _key.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveResult[T]]
   }
   
-  @scala.inline
-  implicit class RemoveResultMutableBuilder[Self <: RemoveResult[?], T /* <: js.Object */] (val x: Self & RemoveResult[T]) extends AnyVal {
+  extension [Self <: RemoveResult[?], T /* <: js.Object */](x: Self & RemoveResult[T]) {
     
-    @scala.inline
-    def setOld(value: Document[T]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+    inline def setOld(value: Document[T]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
+    inline def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
   }
 }

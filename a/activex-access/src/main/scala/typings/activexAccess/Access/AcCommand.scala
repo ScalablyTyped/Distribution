@@ -1419,2118 +1419,1413 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcCommand extends StObject
 object AcCommand {
   
-  @scala.inline
-  def acCmdAboutMicrosoftAccess: `35` = 35.asInstanceOf[`35`]
+  inline def acCmdAboutMicrosoftAccess: `35` = 35.asInstanceOf[`35`]
   
-  @scala.inline
-  def acCmdAddDataMacroAfterDelete: `720` = 720.asInstanceOf[`720`]
+  inline def acCmdAddDataMacroAfterDelete: `720` = 720.asInstanceOf[`720`]
   
-  @scala.inline
-  def acCmdAddDataMacroAfterInsert: `718` = 718.asInstanceOf[`718`]
+  inline def acCmdAddDataMacroAfterInsert: `718` = 718.asInstanceOf[`718`]
   
-  @scala.inline
-  def acCmdAddDataMacroAfterUpdate: `719` = 719.asInstanceOf[`719`]
+  inline def acCmdAddDataMacroAfterUpdate: `719` = 719.asInstanceOf[`719`]
   
-  @scala.inline
-  def acCmdAddDataMacroBeforeChange: `722` = 722.asInstanceOf[`722`]
+  inline def acCmdAddDataMacroBeforeChange: `722` = 722.asInstanceOf[`722`]
   
-  @scala.inline
-  def acCmdAddDataMacroBeforeDelete: `721` = 721.asInstanceOf[`721`]
+  inline def acCmdAddDataMacroBeforeDelete: `721` = 721.asInstanceOf[`721`]
   
-  @scala.inline
-  def acCmdAddFromOutlook: `583` = 583.asInstanceOf[`583`]
+  inline def acCmdAddFromOutlook: `583` = 583.asInstanceOf[`583`]
   
-  @scala.inline
-  def acCmdAddInManager: `526` = 526.asInstanceOf[`526`]
+  inline def acCmdAddInManager: `526` = 526.asInstanceOf[`526`]
   
-  @scala.inline
-  def acCmdAddNamedDataMacro: `723` = 723.asInstanceOf[`723`]
+  inline def acCmdAddNamedDataMacro: `723` = 723.asInstanceOf[`723`]
   
-  @scala.inline
-  def acCmdAddToNewGroup: `494` = 494.asInstanceOf[`494`]
+  inline def acCmdAddToNewGroup: `494` = 494.asInstanceOf[`494`]
   
-  @scala.inline
-  def acCmdAddWatch: `201` = 201.asInstanceOf[`201`]
+  inline def acCmdAddWatch: `201` = 201.asInstanceOf[`201`]
   
-  @scala.inline
-  def acCmdAdvancedFilterSort: `99` = 99.asInstanceOf[`99`]
+  inline def acCmdAdvancedFilterSort: `99` = 99.asInstanceOf[`99`]
   
-  @scala.inline
-  def acCmdAlignBottom: `46` = 46.asInstanceOf[`46`]
+  inline def acCmdAlignBottom: `46` = 46.asInstanceOf[`46`]
   
-  @scala.inline
-  def acCmdAlignCenter: `477` = 477.asInstanceOf[`477`]
+  inline def acCmdAlignCenter: `477` = 477.asInstanceOf[`477`]
   
-  @scala.inline
-  def acCmdAlignLeft: `43` = 43.asInstanceOf[`43`]
+  inline def acCmdAlignLeft: `43` = 43.asInstanceOf[`43`]
   
-  @scala.inline
-  def acCmdAlignMiddle: `476` = 476.asInstanceOf[`476`]
+  inline def acCmdAlignMiddle: `476` = 476.asInstanceOf[`476`]
   
-  @scala.inline
-  def acCmdAlignRight: `44` = 44.asInstanceOf[`44`]
+  inline def acCmdAlignRight: `44` = 44.asInstanceOf[`44`]
   
-  @scala.inline
-  def acCmdAlignToGrid: `47` = 47.asInstanceOf[`47`]
+  inline def acCmdAlignToGrid: `47` = 47.asInstanceOf[`47`]
   
-  @scala.inline
-  def acCmdAlignToShortest: `153` = 153.asInstanceOf[`153`]
+  inline def acCmdAlignToShortest: `153` = 153.asInstanceOf[`153`]
   
-  @scala.inline
-  def acCmdAlignToTallest: `154` = 154.asInstanceOf[`154`]
+  inline def acCmdAlignToTallest: `154` = 154.asInstanceOf[`154`]
   
-  @scala.inline
-  def acCmdAlignTop: `45` = 45.asInstanceOf[`45`]
+  inline def acCmdAlignTop: `45` = 45.asInstanceOf[`45`]
   
-  @scala.inline
-  def acCmdAlignmentAndSizing: `478` = 478.asInstanceOf[`478`]
+  inline def acCmdAlignmentAndSizing: `478` = 478.asInstanceOf[`478`]
   
-  @scala.inline
-  def acCmdAnalyzePerformance: `283` = 283.asInstanceOf[`283`]
+  inline def acCmdAnalyzePerformance: `283` = 283.asInstanceOf[`283`]
   
-  @scala.inline
-  def acCmdAnalyzeTable: `284` = 284.asInstanceOf[`284`]
+  inline def acCmdAnalyzeTable: `284` = 284.asInstanceOf[`284`]
   
-  @scala.inline
-  def acCmdAnchorBottomLeft: `616` = 616.asInstanceOf[`616`]
+  inline def acCmdAnchorBottomLeft: `616` = 616.asInstanceOf[`616`]
   
-  @scala.inline
-  def acCmdAnchorBottomRight: `618` = 618.asInstanceOf[`618`]
+  inline def acCmdAnchorBottomRight: `618` = 618.asInstanceOf[`618`]
   
-  @scala.inline
-  def acCmdAnchorBottomStretchAcross: `617` = 617.asInstanceOf[`617`]
+  inline def acCmdAnchorBottomStretchAcross: `617` = 617.asInstanceOf[`617`]
   
-  @scala.inline
-  def acCmdAnchorStretchAcross: `611` = 611.asInstanceOf[`611`]
+  inline def acCmdAnchorStretchAcross: `611` = 611.asInstanceOf[`611`]
   
-  @scala.inline
-  def acCmdAnchorStretchDown: `613` = 613.asInstanceOf[`613`]
+  inline def acCmdAnchorStretchDown: `613` = 613.asInstanceOf[`613`]
   
-  @scala.inline
-  def acCmdAnchorStretchDownAcross: `614` = 614.asInstanceOf[`614`]
+  inline def acCmdAnchorStretchDownAcross: `614` = 614.asInstanceOf[`614`]
   
-  @scala.inline
-  def acCmdAnchorStretchDownRight: `615` = 615.asInstanceOf[`615`]
+  inline def acCmdAnchorStretchDownRight: `615` = 615.asInstanceOf[`615`]
   
-  @scala.inline
-  def acCmdAnchorTopLeft: `610` = 610.asInstanceOf[`610`]
+  inline def acCmdAnchorTopLeft: `610` = 610.asInstanceOf[`610`]
   
-  @scala.inline
-  def acCmdAnchorTopRight: `612` = 612.asInstanceOf[`612`]
+  inline def acCmdAnchorTopRight: `612` = 612.asInstanceOf[`612`]
   
-  @scala.inline
-  def acCmdAnswerWizard: `235` = 235.asInstanceOf[`235`]
+  inline def acCmdAnswerWizard: `235` = 235.asInstanceOf[`235`]
   
-  @scala.inline
-  def acCmdAppMaximize: `10` = 10.asInstanceOf[`10`]
+  inline def acCmdAppMaximize: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def acCmdAppMinimize: `11` = 11.asInstanceOf[`11`]
+  inline def acCmdAppMinimize: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def acCmdAppMove: `12` = 12.asInstanceOf[`12`]
+  inline def acCmdAppMove: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def acCmdAppRestore: `9` = 9.asInstanceOf[`9`]
+  inline def acCmdAppRestore: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def acCmdAppSize: `13` = 13.asInstanceOf[`13`]
+  inline def acCmdAppSize: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat1: `648` = 648.asInstanceOf[`648`]
+  inline def acCmdApplyAutoFormat1: `648` = 648.asInstanceOf[`648`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat10: `657` = 657.asInstanceOf[`657`]
+  inline def acCmdApplyAutoFormat10: `657` = 657.asInstanceOf[`657`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat11: `658` = 658.asInstanceOf[`658`]
+  inline def acCmdApplyAutoFormat11: `658` = 658.asInstanceOf[`658`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat12: `659` = 659.asInstanceOf[`659`]
+  inline def acCmdApplyAutoFormat12: `659` = 659.asInstanceOf[`659`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat13: `660` = 660.asInstanceOf[`660`]
+  inline def acCmdApplyAutoFormat13: `660` = 660.asInstanceOf[`660`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat14: `661` = 661.asInstanceOf[`661`]
+  inline def acCmdApplyAutoFormat14: `661` = 661.asInstanceOf[`661`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat15: `662` = 662.asInstanceOf[`662`]
+  inline def acCmdApplyAutoFormat15: `662` = 662.asInstanceOf[`662`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat16: `663` = 663.asInstanceOf[`663`]
+  inline def acCmdApplyAutoFormat16: `663` = 663.asInstanceOf[`663`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat17: `664` = 664.asInstanceOf[`664`]
+  inline def acCmdApplyAutoFormat17: `664` = 664.asInstanceOf[`664`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat18: `665` = 665.asInstanceOf[`665`]
+  inline def acCmdApplyAutoFormat18: `665` = 665.asInstanceOf[`665`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat19: `666` = 666.asInstanceOf[`666`]
+  inline def acCmdApplyAutoFormat19: `666` = 666.asInstanceOf[`666`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat2: `649` = 649.asInstanceOf[`649`]
+  inline def acCmdApplyAutoFormat2: `649` = 649.asInstanceOf[`649`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat20: `667` = 667.asInstanceOf[`667`]
+  inline def acCmdApplyAutoFormat20: `667` = 667.asInstanceOf[`667`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat21: `668` = 668.asInstanceOf[`668`]
+  inline def acCmdApplyAutoFormat21: `668` = 668.asInstanceOf[`668`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat22: `669` = 669.asInstanceOf[`669`]
+  inline def acCmdApplyAutoFormat22: `669` = 669.asInstanceOf[`669`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat23: `670` = 670.asInstanceOf[`670`]
+  inline def acCmdApplyAutoFormat23: `670` = 670.asInstanceOf[`670`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat24: `671` = 671.asInstanceOf[`671`]
+  inline def acCmdApplyAutoFormat24: `671` = 671.asInstanceOf[`671`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat25: `672` = 672.asInstanceOf[`672`]
+  inline def acCmdApplyAutoFormat25: `672` = 672.asInstanceOf[`672`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat3: `650` = 650.asInstanceOf[`650`]
+  inline def acCmdApplyAutoFormat3: `650` = 650.asInstanceOf[`650`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat4: `651` = 651.asInstanceOf[`651`]
+  inline def acCmdApplyAutoFormat4: `651` = 651.asInstanceOf[`651`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat5: `652` = 652.asInstanceOf[`652`]
+  inline def acCmdApplyAutoFormat5: `652` = 652.asInstanceOf[`652`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat6: `653` = 653.asInstanceOf[`653`]
+  inline def acCmdApplyAutoFormat6: `653` = 653.asInstanceOf[`653`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat7: `654` = 654.asInstanceOf[`654`]
+  inline def acCmdApplyAutoFormat7: `654` = 654.asInstanceOf[`654`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat8: `655` = 655.asInstanceOf[`655`]
+  inline def acCmdApplyAutoFormat8: `655` = 655.asInstanceOf[`655`]
   
-  @scala.inline
-  def acCmdApplyAutoFormat9: `656` = 656.asInstanceOf[`656`]
+  inline def acCmdApplyAutoFormat9: `656` = 656.asInstanceOf[`656`]
   
-  @scala.inline
-  def acCmdApplyDefault: `55` = 55.asInstanceOf[`55`]
+  inline def acCmdApplyDefault: `55` = 55.asInstanceOf[`55`]
   
-  @scala.inline
-  def acCmdApplyFilterSort: `93` = 93.asInstanceOf[`93`]
+  inline def acCmdApplyFilterSort: `93` = 93.asInstanceOf[`93`]
   
-  @scala.inline
-  def acCmdArrangeIconsAuto: `218` = 218.asInstanceOf[`218`]
+  inline def acCmdArrangeIconsAuto: `218` = 218.asInstanceOf[`218`]
   
-  @scala.inline
-  def acCmdArrangeIconsByCreated: `216` = 216.asInstanceOf[`216`]
+  inline def acCmdArrangeIconsByCreated: `216` = 216.asInstanceOf[`216`]
   
-  @scala.inline
-  def acCmdArrangeIconsByModified: `217` = 217.asInstanceOf[`217`]
+  inline def acCmdArrangeIconsByModified: `217` = 217.asInstanceOf[`217`]
   
-  @scala.inline
-  def acCmdArrangeIconsByName: `214` = 214.asInstanceOf[`214`]
+  inline def acCmdArrangeIconsByName: `214` = 214.asInstanceOf[`214`]
   
-  @scala.inline
-  def acCmdArrangeIconsByType: `215` = 215.asInstanceOf[`215`]
+  inline def acCmdArrangeIconsByType: `215` = 215.asInstanceOf[`215`]
   
-  @scala.inline
-  def acCmdAutoCorrect: `261` = 261.asInstanceOf[`261`]
+  inline def acCmdAutoCorrect: `261` = 261.asInstanceOf[`261`]
   
-  @scala.inline
-  def acCmdAutoDial: `192` = 192.asInstanceOf[`192`]
+  inline def acCmdAutoDial: `192` = 192.asInstanceOf[`192`]
   
-  @scala.inline
-  def acCmdAutoFormat: `270` = 270.asInstanceOf[`270`]
+  inline def acCmdAutoFormat: `270` = 270.asInstanceOf[`270`]
   
-  @scala.inline
-  def acCmdBackgroundPicture: `474` = 474.asInstanceOf[`474`]
+  inline def acCmdBackgroundPicture: `474` = 474.asInstanceOf[`474`]
   
-  @scala.inline
-  def acCmdBackgroundSound: `475` = 475.asInstanceOf[`475`]
+  inline def acCmdBackgroundSound: `475` = 475.asInstanceOf[`475`]
   
-  @scala.inline
-  def acCmdBackup: `513` = 513.asInstanceOf[`513`]
+  inline def acCmdBackup: `513` = 513.asInstanceOf[`513`]
   
-  @scala.inline
-  def acCmdBookmarksClearAll: `310` = 310.asInstanceOf[`310`]
+  inline def acCmdBookmarksClearAll: `310` = 310.asInstanceOf[`310`]
   
-  @scala.inline
-  def acCmdBookmarksNext: `308` = 308.asInstanceOf[`308`]
+  inline def acCmdBookmarksNext: `308` = 308.asInstanceOf[`308`]
   
-  @scala.inline
-  def acCmdBookmarksPrevious: `309` = 309.asInstanceOf[`309`]
+  inline def acCmdBookmarksPrevious: `309` = 309.asInstanceOf[`309`]
   
-  @scala.inline
-  def acCmdBookmarksToggle: `307` = 307.asInstanceOf[`307`]
+  inline def acCmdBookmarksToggle: `307` = 307.asInstanceOf[`307`]
   
-  @scala.inline
-  def acCmdBringToFront: `52` = 52.asInstanceOf[`52`]
+  inline def acCmdBringToFront: `52` = 52.asInstanceOf[`52`]
   
-  @scala.inline
-  def acCmdBrowseSharePointList: `621` = 621.asInstanceOf[`621`]
+  inline def acCmdBrowseSharePointList: `621` = 621.asInstanceOf[`621`]
   
-  @scala.inline
-  def acCmdCalculatedColumn: `698` = 698.asInstanceOf[`698`]
+  inline def acCmdCalculatedColumn: `698` = 698.asInstanceOf[`698`]
   
-  @scala.inline
-  def acCmdCallStack: `172` = 172.asInstanceOf[`172`]
+  inline def acCmdCallStack: `172` = 172.asInstanceOf[`172`]
   
-  @scala.inline
-  def acCmdChangeToCheckBox: `231` = 231.asInstanceOf[`231`]
+  inline def acCmdChangeToCheckBox: `231` = 231.asInstanceOf[`231`]
   
-  @scala.inline
-  def acCmdChangeToComboBox: `230` = 230.asInstanceOf[`230`]
+  inline def acCmdChangeToComboBox: `230` = 230.asInstanceOf[`230`]
   
-  @scala.inline
-  def acCmdChangeToCommandButton: `501` = 501.asInstanceOf[`501`]
+  inline def acCmdChangeToCommandButton: `501` = 501.asInstanceOf[`501`]
   
-  @scala.inline
-  def acCmdChangeToImage: `234` = 234.asInstanceOf[`234`]
+  inline def acCmdChangeToImage: `234` = 234.asInstanceOf[`234`]
   
-  @scala.inline
-  def acCmdChangeToLabel: `228` = 228.asInstanceOf[`228`]
+  inline def acCmdChangeToLabel: `228` = 228.asInstanceOf[`228`]
   
-  @scala.inline
-  def acCmdChangeToListBox: `229` = 229.asInstanceOf[`229`]
+  inline def acCmdChangeToListBox: `229` = 229.asInstanceOf[`229`]
   
-  @scala.inline
-  def acCmdChangeToOptionButton: `233` = 233.asInstanceOf[`233`]
+  inline def acCmdChangeToOptionButton: `233` = 233.asInstanceOf[`233`]
   
-  @scala.inline
-  def acCmdChangeToTextBox: `227` = 227.asInstanceOf[`227`]
+  inline def acCmdChangeToTextBox: `227` = 227.asInstanceOf[`227`]
   
-  @scala.inline
-  def acCmdChangeToToggleButton: `232` = 232.asInstanceOf[`232`]
+  inline def acCmdChangeToToggleButton: `232` = 232.asInstanceOf[`232`]
   
-  @scala.inline
-  def acCmdClearAll: `146` = 146.asInstanceOf[`146`]
+  inline def acCmdClearAll: `146` = 146.asInstanceOf[`146`]
   
-  @scala.inline
-  def acCmdClearAllBreakpoints: `132` = 132.asInstanceOf[`132`]
+  inline def acCmdClearAllBreakpoints: `132` = 132.asInstanceOf[`132`]
   
-  @scala.inline
-  def acCmdClearGrid: `71` = 71.asInstanceOf[`71`]
+  inline def acCmdClearGrid: `71` = 71.asInstanceOf[`71`]
   
-  @scala.inline
-  def acCmdClearHyperlink: `343` = 343.asInstanceOf[`343`]
+  inline def acCmdClearHyperlink: `343` = 343.asInstanceOf[`343`]
   
-  @scala.inline
-  def acCmdClearItemDefaults: `237` = 237.asInstanceOf[`237`]
+  inline def acCmdClearItemDefaults: `237` = 237.asInstanceOf[`237`]
   
-  @scala.inline
-  def acCmdClose: `58` = 58.asInstanceOf[`58`]
+  inline def acCmdClose: `58` = 58.asInstanceOf[`58`]
   
-  @scala.inline
-  def acCmdCloseAll: `646` = 646.asInstanceOf[`646`]
+  inline def acCmdCloseAll: `646` = 646.asInstanceOf[`646`]
   
-  @scala.inline
-  def acCmdCloseDatabase: `538` = 538.asInstanceOf[`538`]
+  inline def acCmdCloseDatabase: `538` = 538.asInstanceOf[`538`]
   
-  @scala.inline
-  def acCmdCloseWindow: `186` = 186.asInstanceOf[`186`]
+  inline def acCmdCloseWindow: `186` = 186.asInstanceOf[`186`]
   
-  @scala.inline
-  def acCmdCollectDataViaEmail: `608` = 608.asInstanceOf[`608`]
+  inline def acCmdCollectDataViaEmail: `608` = 608.asInstanceOf[`608`]
   
-  @scala.inline
-  def acCmdColumnWidth: `117` = 117.asInstanceOf[`117`]
+  inline def acCmdColumnWidth: `117` = 117.asInstanceOf[`117`]
   
-  @scala.inline
-  def acCmdCompactDatabase: `4` = 4.asInstanceOf[`4`]
+  inline def acCmdCompactDatabase: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def acCmdCompatCheckCurrentObject: `696` = 696.asInstanceOf[`696`]
+  inline def acCmdCompatCheckCurrentObject: `696` = 696.asInstanceOf[`696`]
   
-  @scala.inline
-  def acCmdCompatCheckDatabase: `695` = 695.asInstanceOf[`695`]
+  inline def acCmdCompatCheckDatabase: `695` = 695.asInstanceOf[`695`]
   
-  @scala.inline
-  def acCmdCompileAllModules: `125` = 125.asInstanceOf[`125`]
+  inline def acCmdCompileAllModules: `125` = 125.asInstanceOf[`125`]
   
-  @scala.inline
-  def acCmdCompileAndSaveAllModules: `126` = 126.asInstanceOf[`126`]
+  inline def acCmdCompileAndSaveAllModules: `126` = 126.asInstanceOf[`126`]
   
-  @scala.inline
-  def acCmdCompileLoadedModules: `290` = 290.asInstanceOf[`290`]
+  inline def acCmdCompileLoadedModules: `290` = 290.asInstanceOf[`290`]
   
-  @scala.inline
-  def acCmdCompleteWord: `306` = 306.asInstanceOf[`306`]
+  inline def acCmdCompleteWord: `306` = 306.asInstanceOf[`306`]
   
-  @scala.inline
-  def acCmdConditionalFormatting: `500` = 500.asInstanceOf[`500`]
+  inline def acCmdConditionalFormatting: `500` = 500.asInstanceOf[`500`]
   
-  @scala.inline
-  def acCmdConnection: `383` = 383.asInstanceOf[`383`]
+  inline def acCmdConnection: `383` = 383.asInstanceOf[`383`]
   
-  @scala.inline
-  def acCmdControlMarginsMedium: `630` = 630.asInstanceOf[`630`]
+  inline def acCmdControlMarginsMedium: `630` = 630.asInstanceOf[`630`]
   
-  @scala.inline
-  def acCmdControlMarginsNarrow: `629` = 629.asInstanceOf[`629`]
+  inline def acCmdControlMarginsNarrow: `629` = 629.asInstanceOf[`629`]
   
-  @scala.inline
-  def acCmdControlMarginsNone: `628` = 628.asInstanceOf[`628`]
+  inline def acCmdControlMarginsNone: `628` = 628.asInstanceOf[`628`]
   
-  @scala.inline
-  def acCmdControlMarginsWide: `631` = 631.asInstanceOf[`631`]
+  inline def acCmdControlMarginsWide: `631` = 631.asInstanceOf[`631`]
   
-  @scala.inline
-  def acCmdControlPaddingMedium: `634` = 634.asInstanceOf[`634`]
+  inline def acCmdControlPaddingMedium: `634` = 634.asInstanceOf[`634`]
   
-  @scala.inline
-  def acCmdControlPaddingNarrow: `633` = 633.asInstanceOf[`633`]
+  inline def acCmdControlPaddingNarrow: `633` = 633.asInstanceOf[`633`]
   
-  @scala.inline
-  def acCmdControlPaddingNone: `632` = 632.asInstanceOf[`632`]
+  inline def acCmdControlPaddingNone: `632` = 632.asInstanceOf[`632`]
   
-  @scala.inline
-  def acCmdControlPaddingWide: `635` = 635.asInstanceOf[`635`]
+  inline def acCmdControlPaddingWide: `635` = 635.asInstanceOf[`635`]
   
-  @scala.inline
-  def acCmdControlWizardsToggle: `197` = 197.asInstanceOf[`197`]
+  inline def acCmdControlWizardsToggle: `197` = 197.asInstanceOf[`197`]
   
-  @scala.inline
-  def acCmdConvertDatabase: `171` = 171.asInstanceOf[`171`]
+  inline def acCmdConvertDatabase: `171` = 171.asInstanceOf[`171`]
   
-  @scala.inline
-  def acCmdConvertLinkedTableToLocal: `700` = 700.asInstanceOf[`700`]
+  inline def acCmdConvertLinkedTableToLocal: `700` = 700.asInstanceOf[`700`]
   
-  @scala.inline
-  def acCmdConvertMacrosToVisualBasic: `279` = 279.asInstanceOf[`279`]
+  inline def acCmdConvertMacrosToVisualBasic: `279` = 279.asInstanceOf[`279`]
   
-  @scala.inline
-  def acCmdCopy: `190` = 190.asInstanceOf[`190`]
+  inline def acCmdCopy: `190` = 190.asInstanceOf[`190`]
   
-  @scala.inline
-  def acCmdCopyDatabaseFile: `516` = 516.asInstanceOf[`516`]
+  inline def acCmdCopyDatabaseFile: `516` = 516.asInstanceOf[`516`]
   
-  @scala.inline
-  def acCmdCopyHyperlink: `328` = 328.asInstanceOf[`328`]
+  inline def acCmdCopyHyperlink: `328` = 328.asInstanceOf[`328`]
   
-  @scala.inline
-  def acCmdCreateMenuFromMacro: `334` = 334.asInstanceOf[`334`]
+  inline def acCmdCreateMenuFromMacro: `334` = 334.asInstanceOf[`334`]
   
-  @scala.inline
-  def acCmdCreateRelationship: `150` = 150.asInstanceOf[`150`]
+  inline def acCmdCreateRelationship: `150` = 150.asInstanceOf[`150`]
   
-  @scala.inline
-  def acCmdCreateReplica: `263` = 263.asInstanceOf[`263`]
+  inline def acCmdCreateReplica: `263` = 263.asInstanceOf[`263`]
   
-  @scala.inline
-  def acCmdCreateShortcut: `219` = 219.asInstanceOf[`219`]
+  inline def acCmdCreateShortcut: `219` = 219.asInstanceOf[`219`]
   
-  @scala.inline
-  def acCmdCreateShortcutMenuFromMacro: `336` = 336.asInstanceOf[`336`]
+  inline def acCmdCreateShortcutMenuFromMacro: `336` = 336.asInstanceOf[`336`]
   
-  @scala.inline
-  def acCmdCreateToolbarFromMacro: `335` = 335.asInstanceOf[`335`]
+  inline def acCmdCreateToolbarFromMacro: `335` = 335.asInstanceOf[`335`]
   
-  @scala.inline
-  def acCmdCut: `189` = 189.asInstanceOf[`189`]
+  inline def acCmdCut: `189` = 189.asInstanceOf[`189`]
   
-  @scala.inline
-  def acCmdDataAccessPageAddToPage: `480` = 480.asInstanceOf[`480`]
+  inline def acCmdDataAccessPageAddToPage: `480` = 480.asInstanceOf[`480`]
   
-  @scala.inline
-  def acCmdDataAccessPageBrowse: `344` = 344.asInstanceOf[`344`]
+  inline def acCmdDataAccessPageBrowse: `344` = 344.asInstanceOf[`344`]
   
-  @scala.inline
-  def acCmdDataAccessPageDesignView: `385` = 385.asInstanceOf[`385`]
+  inline def acCmdDataAccessPageDesignView: `385` = 385.asInstanceOf[`385`]
   
-  @scala.inline
-  def acCmdDataAccessPageFieldListRefresh: `479` = 479.asInstanceOf[`479`]
+  inline def acCmdDataAccessPageFieldListRefresh: `479` = 479.asInstanceOf[`479`]
   
-  @scala.inline
-  def acCmdDataEntry: `78` = 78.asInstanceOf[`78`]
+  inline def acCmdDataEntry: `78` = 78.asInstanceOf[`78`]
   
-  @scala.inline
-  def acCmdDataOutline: `468` = 468.asInstanceOf[`468`]
+  inline def acCmdDataOutline: `468` = 468.asInstanceOf[`468`]
   
-  @scala.inline
-  def acCmdDatabaseProperties: `256` = 256.asInstanceOf[`256`]
+  inline def acCmdDatabaseProperties: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def acCmdDatabaseSplitter: `520` = 520.asInstanceOf[`520`]
+  inline def acCmdDatabaseSplitter: `520` = 520.asInstanceOf[`520`]
   
-  @scala.inline
-  def acCmdDatasheetView: `282` = 282.asInstanceOf[`282`]
+  inline def acCmdDatasheetView: `282` = 282.asInstanceOf[`282`]
   
-  @scala.inline
-  def acCmdDateAndTime: `226` = 226.asInstanceOf[`226`]
+  inline def acCmdDateAndTime: `226` = 226.asInstanceOf[`226`]
   
-  @scala.inline
-  def acCmdDebugWindow: `123` = 123.asInstanceOf[`123`]
+  inline def acCmdDebugWindow: `123` = 123.asInstanceOf[`123`]
   
-  @scala.inline
-  def acCmdDelete: `337` = 337.asInstanceOf[`337`]
+  inline def acCmdDelete: `337` = 337.asInstanceOf[`337`]
   
-  @scala.inline
-  def acCmdDeleteGroup: `493` = 493.asInstanceOf[`493`]
+  inline def acCmdDeleteGroup: `493` = 493.asInstanceOf[`493`]
   
-  @scala.inline
-  def acCmdDeletePage: `332` = 332.asInstanceOf[`332`]
+  inline def acCmdDeletePage: `332` = 332.asInstanceOf[`332`]
   
-  @scala.inline
-  def acCmdDeleteQueryColumn: `81` = 81.asInstanceOf[`81`]
+  inline def acCmdDeleteQueryColumn: `81` = 81.asInstanceOf[`81`]
   
-  @scala.inline
-  def acCmdDeleteRecord: `223` = 223.asInstanceOf[`223`]
+  inline def acCmdDeleteRecord: `223` = 223.asInstanceOf[`223`]
   
-  @scala.inline
-  def acCmdDeleteRows: `188` = 188.asInstanceOf[`188`]
+  inline def acCmdDeleteRows: `188` = 188.asInstanceOf[`188`]
   
-  @scala.inline
-  def acCmdDeleteSharePointList: `627` = 627.asInstanceOf[`627`]
+  inline def acCmdDeleteSharePointList: `627` = 627.asInstanceOf[`627`]
   
-  @scala.inline
-  def acCmdDeleteTab: `255` = 255.asInstanceOf[`255`]
+  inline def acCmdDeleteTab: `255` = 255.asInstanceOf[`255`]
   
-  @scala.inline
-  def acCmdDeleteTable: `489` = 489.asInstanceOf[`489`]
+  inline def acCmdDeleteTable: `489` = 489.asInstanceOf[`489`]
   
-  @scala.inline
-  def acCmdDeleteTableColumn: `271` = 271.asInstanceOf[`271`]
+  inline def acCmdDeleteTableColumn: `271` = 271.asInstanceOf[`271`]
   
-  @scala.inline
-  def acCmdDeleteWatch: `267` = 267.asInstanceOf[`267`]
+  inline def acCmdDeleteWatch: `267` = 267.asInstanceOf[`267`]
   
-  @scala.inline
-  def acCmdDemote: `388` = 388.asInstanceOf[`388`]
+  inline def acCmdDemote: `388` = 388.asInstanceOf[`388`]
   
-  @scala.inline
-  def acCmdDesignObject: `697` = 697.asInstanceOf[`697`]
+  inline def acCmdDesignObject: `697` = 697.asInstanceOf[`697`]
   
-  @scala.inline
-  def acCmdDesignView: `183` = 183.asInstanceOf[`183`]
+  inline def acCmdDesignView: `183` = 183.asInstanceOf[`183`]
   
-  @scala.inline
-  def acCmdDiagramAddRelatedTables: `373` = 373.asInstanceOf[`373`]
+  inline def acCmdDiagramAddRelatedTables: `373` = 373.asInstanceOf[`373`]
   
-  @scala.inline
-  def acCmdDiagramAutosizeSelectedTables: `378` = 378.asInstanceOf[`378`]
+  inline def acCmdDiagramAutosizeSelectedTables: `378` = 378.asInstanceOf[`378`]
   
-  @scala.inline
-  def acCmdDiagramDeleteRelationship: `382` = 382.asInstanceOf[`382`]
+  inline def acCmdDiagramDeleteRelationship: `382` = 382.asInstanceOf[`382`]
   
-  @scala.inline
-  def acCmdDiagramLayoutDiagram: `380` = 380.asInstanceOf[`380`]
+  inline def acCmdDiagramLayoutDiagram: `380` = 380.asInstanceOf[`380`]
   
-  @scala.inline
-  def acCmdDiagramLayoutSelection: `379` = 379.asInstanceOf[`379`]
+  inline def acCmdDiagramLayoutSelection: `379` = 379.asInstanceOf[`379`]
   
-  @scala.inline
-  def acCmdDiagramModifyUserDefinedView: `375` = 375.asInstanceOf[`375`]
+  inline def acCmdDiagramModifyUserDefinedView: `375` = 375.asInstanceOf[`375`]
   
-  @scala.inline
-  def acCmdDiagramNewLabel: `372` = 372.asInstanceOf[`372`]
+  inline def acCmdDiagramNewLabel: `372` = 372.asInstanceOf[`372`]
   
-  @scala.inline
-  def acCmdDiagramNewTable: `381` = 381.asInstanceOf[`381`]
+  inline def acCmdDiagramNewTable: `381` = 381.asInstanceOf[`381`]
   
-  @scala.inline
-  def acCmdDiagramRecalculatePageBreaks: `377` = 377.asInstanceOf[`377`]
+  inline def acCmdDiagramRecalculatePageBreaks: `377` = 377.asInstanceOf[`377`]
   
-  @scala.inline
-  def acCmdDiagramShowRelationshipLabels: `374` = 374.asInstanceOf[`374`]
+  inline def acCmdDiagramShowRelationshipLabels: `374` = 374.asInstanceOf[`374`]
   
-  @scala.inline
-  def acCmdDiagramViewPageBreaks: `376` = 376.asInstanceOf[`376`]
+  inline def acCmdDiagramViewPageBreaks: `376` = 376.asInstanceOf[`376`]
   
-  @scala.inline
-  def acCmdDiscardChanges: `639` = 639.asInstanceOf[`639`]
+  inline def acCmdDiscardChanges: `639` = 639.asInstanceOf[`639`]
   
-  @scala.inline
-  def acCmdDiscardChangesAndRefresh: `640` = 640.asInstanceOf[`640`]
+  inline def acCmdDiscardChangesAndRefresh: `640` = 640.asInstanceOf[`640`]
   
-  @scala.inline
-  def acCmdDocMaximize: `15` = 15.asInstanceOf[`15`]
+  inline def acCmdDocMaximize: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def acCmdDocMinimize: `60` = 60.asInstanceOf[`60`]
+  inline def acCmdDocMinimize: `60` = 60.asInstanceOf[`60`]
   
-  @scala.inline
-  def acCmdDocMove: `16` = 16.asInstanceOf[`16`]
+  inline def acCmdDocMove: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def acCmdDocRestore: `14` = 14.asInstanceOf[`14`]
+  inline def acCmdDocRestore: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def acCmdDocSize: `17` = 17.asInstanceOf[`17`]
+  inline def acCmdDocSize: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def acCmdDocumenter: `285` = 285.asInstanceOf[`285`]
+  inline def acCmdDocumenter: `285` = 285.asInstanceOf[`285`]
   
-  @scala.inline
-  def acCmdDropSQLDatabase: `517` = 517.asInstanceOf[`517`]
+  inline def acCmdDropSQLDatabase: `517` = 517.asInstanceOf[`517`]
   
-  @scala.inline
-  def acCmdDuplicate: `34` = 34.asInstanceOf[`34`]
+  inline def acCmdDuplicate: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def acCmdEditHyperlink: `325` = 325.asInstanceOf[`325`]
+  inline def acCmdEditHyperlink: `325` = 325.asInstanceOf[`325`]
   
-  @scala.inline
-  def acCmdEditListItems: `607` = 607.asInstanceOf[`607`]
+  inline def acCmdEditListItems: `607` = 607.asInstanceOf[`607`]
   
-  @scala.inline
-  def acCmdEditRelationship: `151` = 151.asInstanceOf[`151`]
+  inline def acCmdEditRelationship: `151` = 151.asInstanceOf[`151`]
   
-  @scala.inline
-  def acCmdEditTriggers: `384` = 384.asInstanceOf[`384`]
+  inline def acCmdEditTriggers: `384` = 384.asInstanceOf[`384`]
   
-  @scala.inline
-  def acCmdEditWatch: `202` = 202.asInstanceOf[`202`]
+  inline def acCmdEditWatch: `202` = 202.asInstanceOf[`202`]
   
-  @scala.inline
-  def acCmdEditingAllowed: `70` = 70.asInstanceOf[`70`]
+  inline def acCmdEditingAllowed: `70` = 70.asInstanceOf[`70`]
   
-  @scala.inline
-  def acCmdEncryptDecryptDatabase: `5` = 5.asInstanceOf[`5`]
+  inline def acCmdEncryptDecryptDatabase: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def acCmdEnd: `198` = 198.asInstanceOf[`198`]
+  inline def acCmdEnd: `198` = 198.asInstanceOf[`198`]
   
-  @scala.inline
-  def acCmdExit: `3` = 3.asInstanceOf[`3`]
+  inline def acCmdExit: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acCmdExport: `487` = 487.asInstanceOf[`487`]
+  inline def acCmdExport: `487` = 487.asInstanceOf[`487`]
   
-  @scala.inline
-  def acCmdExportAccess: `559` = 559.asInstanceOf[`559`]
+  inline def acCmdExportAccess: `559` = 559.asInstanceOf[`559`]
   
-  @scala.inline
-  def acCmdExportExcel: `556` = 556.asInstanceOf[`556`]
+  inline def acCmdExportExcel: `556` = 556.asInstanceOf[`556`]
   
-  @scala.inline
-  def acCmdExportFixedFormat: `592` = 592.asInstanceOf[`592`]
+  inline def acCmdExportFixedFormat: `592` = 592.asInstanceOf[`592`]
   
-  @scala.inline
-  def acCmdExportHTML: `564` = 564.asInstanceOf[`564`]
+  inline def acCmdExportHTML: `564` = 564.asInstanceOf[`564`]
   
-  @scala.inline
-  def acCmdExportLotus: `567` = 567.asInstanceOf[`567`]
+  inline def acCmdExportLotus: `567` = 567.asInstanceOf[`567`]
   
-  @scala.inline
-  def acCmdExportODBC: `562` = 562.asInstanceOf[`562`]
+  inline def acCmdExportODBC: `562` = 562.asInstanceOf[`562`]
   
-  @scala.inline
-  def acCmdExportParadox: `566` = 566.asInstanceOf[`566`]
+  inline def acCmdExportParadox: `566` = 566.asInstanceOf[`566`]
   
-  @scala.inline
-  def acCmdExportRTF: `558` = 558.asInstanceOf[`558`]
+  inline def acCmdExportRTF: `558` = 558.asInstanceOf[`558`]
   
-  @scala.inline
-  def acCmdExportSharePointList: `557` = 557.asInstanceOf[`557`]
+  inline def acCmdExportSharePointList: `557` = 557.asInstanceOf[`557`]
   
-  @scala.inline
-  def acCmdExportSnapShot: `563` = 563.asInstanceOf[`563`]
+  inline def acCmdExportSnapShot: `563` = 563.asInstanceOf[`563`]
   
-  @scala.inline
-  def acCmdExportText: `560` = 560.asInstanceOf[`560`]
+  inline def acCmdExportText: `560` = 560.asInstanceOf[`560`]
   
-  @scala.inline
-  def acCmdExportXML: `561` = 561.asInstanceOf[`561`]
+  inline def acCmdExportXML: `561` = 561.asInstanceOf[`561`]
   
-  @scala.inline
-  def acCmdExportdBase: `565` = 565.asInstanceOf[`565`]
+  inline def acCmdExportdBase: `565` = 565.asInstanceOf[`565`]
   
-  @scala.inline
-  def acCmdFavoritesAddTo: `299` = 299.asInstanceOf[`299`]
+  inline def acCmdFavoritesAddTo: `299` = 299.asInstanceOf[`299`]
   
-  @scala.inline
-  def acCmdFavoritesOpen: `298` = 298.asInstanceOf[`298`]
+  inline def acCmdFavoritesOpen: `298` = 298.asInstanceOf[`298`]
   
-  @scala.inline
-  def acCmdFieldList: `42` = 42.asInstanceOf[`42`]
+  inline def acCmdFieldList: `42` = 42.asInstanceOf[`42`]
   
-  @scala.inline
-  def acCmdFieldTemplates: `647` = 647.asInstanceOf[`647`]
+  inline def acCmdFieldTemplates: `647` = 647.asInstanceOf[`647`]
   
-  @scala.inline
-  def acCmdFilterByForm: `207` = 207.asInstanceOf[`207`]
+  inline def acCmdFilterByForm: `207` = 207.asInstanceOf[`207`]
   
-  @scala.inline
-  def acCmdFilterBySelection: `208` = 208.asInstanceOf[`208`]
+  inline def acCmdFilterBySelection: `208` = 208.asInstanceOf[`208`]
   
-  @scala.inline
-  def acCmdFilterExcludingSelection: `277` = 277.asInstanceOf[`277`]
+  inline def acCmdFilterExcludingSelection: `277` = 277.asInstanceOf[`277`]
   
-  @scala.inline
-  def acCmdFilterMenu: `619` = 619.asInstanceOf[`619`]
+  inline def acCmdFilterMenu: `619` = 619.asInstanceOf[`619`]
   
-  @scala.inline
-  def acCmdFind: `30` = 30.asInstanceOf[`30`]
+  inline def acCmdFind: `30` = 30.asInstanceOf[`30`]
   
-  @scala.inline
-  def acCmdFindNext: `341` = 341.asInstanceOf[`341`]
+  inline def acCmdFindNext: `341` = 341.asInstanceOf[`341`]
   
-  @scala.inline
-  def acCmdFindNextWordUnderCursor: `313` = 313.asInstanceOf[`313`]
+  inline def acCmdFindNextWordUnderCursor: `313` = 313.asInstanceOf[`313`]
   
-  @scala.inline
-  def acCmdFindPrevWordUnderCursor: `312` = 312.asInstanceOf[`312`]
+  inline def acCmdFindPrevWordUnderCursor: `312` = 312.asInstanceOf[`312`]
   
-  @scala.inline
-  def acCmdFindPrevious: `120` = 120.asInstanceOf[`120`]
+  inline def acCmdFindPrevious: `120` = 120.asInstanceOf[`120`]
   
-  @scala.inline
-  def acCmdFitToWindow: `245` = 245.asInstanceOf[`245`]
+  inline def acCmdFitToWindow: `245` = 245.asInstanceOf[`245`]
   
-  @scala.inline
-  def acCmdFont: `19` = 19.asInstanceOf[`19`]
+  inline def acCmdFont: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def acCmdFormHdrFtr: `36` = 36.asInstanceOf[`36`]
+  inline def acCmdFormHdrFtr: `36` = 36.asInstanceOf[`36`]
   
-  @scala.inline
-  def acCmdFormView: `281` = 281.asInstanceOf[`281`]
+  inline def acCmdFormView: `281` = 281.asInstanceOf[`281`]
   
-  @scala.inline
-  def acCmdFormatCells: `77` = 77.asInstanceOf[`77`]
+  inline def acCmdFormatCells: `77` = 77.asInstanceOf[`77`]
   
-  @scala.inline
-  def acCmdFreezeColumn: `105` = 105.asInstanceOf[`105`]
+  inline def acCmdFreezeColumn: `105` = 105.asInstanceOf[`105`]
   
-  @scala.inline
-  def acCmdGoBack: `294` = 294.asInstanceOf[`294`]
+  inline def acCmdGoBack: `294` = 294.asInstanceOf[`294`]
   
-  @scala.inline
-  def acCmdGoContinue: `127` = 127.asInstanceOf[`127`]
+  inline def acCmdGoContinue: `127` = 127.asInstanceOf[`127`]
   
-  @scala.inline
-  def acCmdGoForward: `295` = 295.asInstanceOf[`295`]
+  inline def acCmdGoForward: `295` = 295.asInstanceOf[`295`]
   
-  @scala.inline
-  def acCmdGroupByTable: `387` = 387.asInstanceOf[`387`]
+  inline def acCmdGroupByTable: `387` = 387.asInstanceOf[`387`]
   
-  @scala.inline
-  def acCmdGroupControls: `484` = 484.asInstanceOf[`484`]
+  inline def acCmdGroupControls: `484` = 484.asInstanceOf[`484`]
   
-  @scala.inline
-  def acCmdHideColumns: `79` = 79.asInstanceOf[`79`]
+  inline def acCmdHideColumns: `79` = 79.asInstanceOf[`79`]
   
-  @scala.inline
-  def acCmdHideMessageBar: `677` = 677.asInstanceOf[`677`]
+  inline def acCmdHideMessageBar: `677` = 677.asInstanceOf[`677`]
   
-  @scala.inline
-  def acCmdHidePane: `365` = 365.asInstanceOf[`365`]
+  inline def acCmdHidePane: `365` = 365.asInstanceOf[`365`]
   
-  @scala.inline
-  def acCmdHideTable: `147` = 147.asInstanceOf[`147`]
+  inline def acCmdHideTable: `147` = 147.asInstanceOf[`147`]
   
-  @scala.inline
-  def acCmdHorizontalSpacingDecrease: `158` = 158.asInstanceOf[`158`]
+  inline def acCmdHorizontalSpacingDecrease: `158` = 158.asInstanceOf[`158`]
   
-  @scala.inline
-  def acCmdHorizontalSpacingIncrease: `159` = 159.asInstanceOf[`159`]
+  inline def acCmdHorizontalSpacingIncrease: `159` = 159.asInstanceOf[`159`]
   
-  @scala.inline
-  def acCmdHorizontalSpacingMakeEqual: `157` = 157.asInstanceOf[`157`]
+  inline def acCmdHorizontalSpacingMakeEqual: `157` = 157.asInstanceOf[`157`]
   
-  @scala.inline
-  def acCmdHyperlinkDisplayText: `329` = 329.asInstanceOf[`329`]
+  inline def acCmdHyperlinkDisplayText: `329` = 329.asInstanceOf[`329`]
   
-  @scala.inline
-  def acCmdImport: `257` = 257.asInstanceOf[`257`]
+  inline def acCmdImport: `257` = 257.asInstanceOf[`257`]
   
-  @scala.inline
-  def acCmdImportAttachAccess: `544` = 544.asInstanceOf[`544`]
+  inline def acCmdImportAttachAccess: `544` = 544.asInstanceOf[`544`]
   
-  @scala.inline
-  def acCmdImportAttachExcel: `545` = 545.asInstanceOf[`545`]
+  inline def acCmdImportAttachExcel: `545` = 545.asInstanceOf[`545`]
   
-  @scala.inline
-  def acCmdImportAttachHTML: `550` = 550.asInstanceOf[`550`]
+  inline def acCmdImportAttachHTML: `550` = 550.asInstanceOf[`550`]
   
-  @scala.inline
-  def acCmdImportAttachLotus: `554` = 554.asInstanceOf[`554`]
+  inline def acCmdImportAttachLotus: `554` = 554.asInstanceOf[`554`]
   
-  @scala.inline
-  def acCmdImportAttachODBC: `549` = 549.asInstanceOf[`549`]
+  inline def acCmdImportAttachODBC: `549` = 549.asInstanceOf[`549`]
   
-  @scala.inline
-  def acCmdImportAttachOutlook: `551` = 551.asInstanceOf[`551`]
+  inline def acCmdImportAttachOutlook: `551` = 551.asInstanceOf[`551`]
   
-  @scala.inline
-  def acCmdImportAttachParadox: `553` = 553.asInstanceOf[`553`]
+  inline def acCmdImportAttachParadox: `553` = 553.asInstanceOf[`553`]
   
-  @scala.inline
-  def acCmdImportAttachSharePointList: `547` = 547.asInstanceOf[`547`]
+  inline def acCmdImportAttachSharePointList: `547` = 547.asInstanceOf[`547`]
   
-  @scala.inline
-  def acCmdImportAttachText: `546` = 546.asInstanceOf[`546`]
+  inline def acCmdImportAttachText: `546` = 546.asInstanceOf[`546`]
   
-  @scala.inline
-  def acCmdImportAttachXML: `548` = 548.asInstanceOf[`548`]
+  inline def acCmdImportAttachXML: `548` = 548.asInstanceOf[`548`]
   
-  @scala.inline
-  def acCmdImportAttachdBase: `552` = 552.asInstanceOf[`552`]
+  inline def acCmdImportAttachdBase: `552` = 552.asInstanceOf[`552`]
   
-  @scala.inline
-  def acCmdIndent: `205` = 205.asInstanceOf[`205`]
+  inline def acCmdIndent: `205` = 205.asInstanceOf[`205`]
   
-  @scala.inline
-  def acCmdIndexes: `152` = 152.asInstanceOf[`152`]
+  inline def acCmdIndexes: `152` = 152.asInstanceOf[`152`]
   
-  @scala.inline
-  def acCmdInsertActiveXControl: `258` = 258.asInstanceOf[`258`]
+  inline def acCmdInsertActiveXControl: `258` = 258.asInstanceOf[`258`]
   
-  @scala.inline
-  def acCmdInsertChart: `293` = 293.asInstanceOf[`293`]
+  inline def acCmdInsertChart: `293` = 293.asInstanceOf[`293`]
   
-  @scala.inline
-  def acCmdInsertFile: `39` = 39.asInstanceOf[`39`]
+  inline def acCmdInsertFile: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def acCmdInsertFileIntoModule: `118` = 118.asInstanceOf[`118`]
+  inline def acCmdInsertFileIntoModule: `118` = 118.asInstanceOf[`118`]
   
-  @scala.inline
-  def acCmdInsertHyperlink: `259` = 259.asInstanceOf[`259`]
+  inline def acCmdInsertHyperlink: `259` = 259.asInstanceOf[`259`]
   
-  @scala.inline
-  def acCmdInsertLogo: `585` = 585.asInstanceOf[`585`]
+  inline def acCmdInsertLogo: `585` = 585.asInstanceOf[`585`]
   
-  @scala.inline
-  def acCmdInsertLookupColumn: `273` = 273.asInstanceOf[`273`]
+  inline def acCmdInsertLookupColumn: `273` = 273.asInstanceOf[`273`]
   
-  @scala.inline
-  def acCmdInsertLookupField: `291` = 291.asInstanceOf[`291`]
+  inline def acCmdInsertLookupField: `291` = 291.asInstanceOf[`291`]
   
-  @scala.inline
-  def acCmdInsertMovieFromFile: `469` = 469.asInstanceOf[`469`]
+  inline def acCmdInsertMovieFromFile: `469` = 469.asInstanceOf[`469`]
   
-  @scala.inline
-  def acCmdInsertNavigationButton: `724` = 724.asInstanceOf[`724`]
+  inline def acCmdInsertNavigationButton: `724` = 724.asInstanceOf[`724`]
   
-  @scala.inline
-  def acCmdInsertObject: `33` = 33.asInstanceOf[`33`]
+  inline def acCmdInsertObject: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def acCmdInsertPage: `331` = 331.asInstanceOf[`331`]
+  inline def acCmdInsertPage: `331` = 331.asInstanceOf[`331`]
   
-  @scala.inline
-  def acCmdInsertPicture: `222` = 222.asInstanceOf[`222`]
+  inline def acCmdInsertPicture: `222` = 222.asInstanceOf[`222`]
   
-  @scala.inline
-  def acCmdInsertPivotTable: `470` = 470.asInstanceOf[`470`]
+  inline def acCmdInsertPivotTable: `470` = 470.asInstanceOf[`470`]
   
-  @scala.inline
-  def acCmdInsertProcedure: `262` = 262.asInstanceOf[`262`]
+  inline def acCmdInsertProcedure: `262` = 262.asInstanceOf[`262`]
   
-  @scala.inline
-  def acCmdInsertQueryColumn: `82` = 82.asInstanceOf[`82`]
+  inline def acCmdInsertQueryColumn: `82` = 82.asInstanceOf[`82`]
   
-  @scala.inline
-  def acCmdInsertRows: `187` = 187.asInstanceOf[`187`]
+  inline def acCmdInsertRows: `187` = 187.asInstanceOf[`187`]
   
-  @scala.inline
-  def acCmdInsertSpreadsheet: `471` = 471.asInstanceOf[`471`]
+  inline def acCmdInsertSpreadsheet: `471` = 471.asInstanceOf[`471`]
   
-  @scala.inline
-  def acCmdInsertSubdatasheet: `499` = 499.asInstanceOf[`499`]
+  inline def acCmdInsertSubdatasheet: `499` = 499.asInstanceOf[`499`]
   
-  @scala.inline
-  def acCmdInsertTableColumn: `272` = 272.asInstanceOf[`272`]
+  inline def acCmdInsertTableColumn: `272` = 272.asInstanceOf[`272`]
   
-  @scala.inline
-  def acCmdInsertTitle: `586` = 586.asInstanceOf[`586`]
+  inline def acCmdInsertTitle: `586` = 586.asInstanceOf[`586`]
   
-  @scala.inline
-  def acCmdInsertUnboundSection: `472` = 472.asInstanceOf[`472`]
+  inline def acCmdInsertUnboundSection: `472` = 472.asInstanceOf[`472`]
   
-  @scala.inline
-  def acCmdInvokeBuilder: `178` = 178.asInstanceOf[`178`]
+  inline def acCmdInvokeBuilder: `178` = 178.asInstanceOf[`178`]
   
-  @scala.inline
-  def acCmdJoinProperties: `72` = 72.asInstanceOf[`72`]
+  inline def acCmdJoinProperties: `72` = 72.asInstanceOf[`72`]
   
-  @scala.inline
-  def acCmdLastPosition: `339` = 339.asInstanceOf[`339`]
+  inline def acCmdLastPosition: `339` = 339.asInstanceOf[`339`]
   
-  @scala.inline
-  def acCmdLayoutGridlinesBoth: `574` = 574.asInstanceOf[`574`]
+  inline def acCmdLayoutGridlinesBoth: `574` = 574.asInstanceOf[`574`]
   
-  @scala.inline
-  def acCmdLayoutGridlinesBottom: `580` = 580.asInstanceOf[`580`]
+  inline def acCmdLayoutGridlinesBottom: `580` = 580.asInstanceOf[`580`]
   
-  @scala.inline
-  def acCmdLayoutGridlinesCrossHatch: `578` = 578.asInstanceOf[`578`]
+  inline def acCmdLayoutGridlinesCrossHatch: `578` = 578.asInstanceOf[`578`]
   
-  @scala.inline
-  def acCmdLayoutGridlinesHorizontal: `576` = 576.asInstanceOf[`576`]
+  inline def acCmdLayoutGridlinesHorizontal: `576` = 576.asInstanceOf[`576`]
   
-  @scala.inline
-  def acCmdLayoutGridlinesNone: `577` = 577.asInstanceOf[`577`]
+  inline def acCmdLayoutGridlinesNone: `577` = 577.asInstanceOf[`577`]
   
-  @scala.inline
-  def acCmdLayoutGridlinesOutline: `581` = 581.asInstanceOf[`581`]
+  inline def acCmdLayoutGridlinesOutline: `581` = 581.asInstanceOf[`581`]
   
-  @scala.inline
-  def acCmdLayoutGridlinesTop: `579` = 579.asInstanceOf[`579`]
+  inline def acCmdLayoutGridlinesTop: `579` = 579.asInstanceOf[`579`]
   
-  @scala.inline
-  def acCmdLayoutGridlinesVertical: `575` = 575.asInstanceOf[`575`]
+  inline def acCmdLayoutGridlinesVertical: `575` = 575.asInstanceOf[`575`]
   
-  @scala.inline
-  def acCmdLayoutInsertColumnLeft: `680` = 680.asInstanceOf[`680`]
+  inline def acCmdLayoutInsertColumnLeft: `680` = 680.asInstanceOf[`680`]
   
-  @scala.inline
-  def acCmdLayoutInsertColumnRight: `681` = 681.asInstanceOf[`681`]
+  inline def acCmdLayoutInsertColumnRight: `681` = 681.asInstanceOf[`681`]
   
-  @scala.inline
-  def acCmdLayoutInsertRowAbove: `678` = 678.asInstanceOf[`678`]
+  inline def acCmdLayoutInsertRowAbove: `678` = 678.asInstanceOf[`678`]
   
-  @scala.inline
-  def acCmdLayoutInsertRowBelow: `679` = 679.asInstanceOf[`679`]
+  inline def acCmdLayoutInsertRowBelow: `679` = 679.asInstanceOf[`679`]
   
-  @scala.inline
-  def acCmdLayoutMergeCells: `682` = 682.asInstanceOf[`682`]
+  inline def acCmdLayoutMergeCells: `682` = 682.asInstanceOf[`682`]
   
-  @scala.inline
-  def acCmdLayoutPreview: `141` = 141.asInstanceOf[`141`]
+  inline def acCmdLayoutPreview: `141` = 141.asInstanceOf[`141`]
   
-  @scala.inline
-  def acCmdLayoutSplitColumnCell: `683` = 683.asInstanceOf[`683`]
+  inline def acCmdLayoutSplitColumnCell: `683` = 683.asInstanceOf[`683`]
   
-  @scala.inline
-  def acCmdLayoutSplitRowCell: `684` = 684.asInstanceOf[`684`]
+  inline def acCmdLayoutSplitRowCell: `684` = 684.asInstanceOf[`684`]
   
-  @scala.inline
-  def acCmdLayoutView: `593` = 593.asInstanceOf[`593`]
+  inline def acCmdLayoutView: `593` = 593.asInstanceOf[`593`]
   
-  @scala.inline
-  def acCmdLineUpIcons: `213` = 213.asInstanceOf[`213`]
+  inline def acCmdLineUpIcons: `213` = 213.asInstanceOf[`213`]
   
-  @scala.inline
-  def acCmdLinkTables: `102` = 102.asInstanceOf[`102`]
+  inline def acCmdLinkTables: `102` = 102.asInstanceOf[`102`]
   
-  @scala.inline
-  def acCmdLinkedTableManager: `519` = 519.asInstanceOf[`519`]
+  inline def acCmdLinkedTableManager: `519` = 519.asInstanceOf[`519`]
   
-  @scala.inline
-  def acCmdListConstants: `303` = 303.asInstanceOf[`303`]
+  inline def acCmdListConstants: `303` = 303.asInstanceOf[`303`]
   
-  @scala.inline
-  def acCmdLoadFromQuery: `95` = 95.asInstanceOf[`95`]
+  inline def acCmdLoadFromQuery: `95` = 95.asInstanceOf[`95`]
   
-  @scala.inline
-  def acCmdMacroAllActions: `589` = 589.asInstanceOf[`589`]
+  inline def acCmdMacroAllActions: `589` = 589.asInstanceOf[`589`]
   
-  @scala.inline
-  def acCmdMacroArguments: `588` = 588.asInstanceOf[`588`]
+  inline def acCmdMacroArguments: `588` = 588.asInstanceOf[`588`]
   
-  @scala.inline
-  def acCmdMacroConditions: `87` = 87.asInstanceOf[`87`]
+  inline def acCmdMacroConditions: `87` = 87.asInstanceOf[`87`]
   
-  @scala.inline
-  def acCmdMacroNames: `86` = 86.asInstanceOf[`86`]
+  inline def acCmdMacroNames: `86` = 86.asInstanceOf[`86`]
   
-  @scala.inline
-  def acCmdMakeMDEFile: `7` = 7.asInstanceOf[`7`]
+  inline def acCmdMakeMDEFile: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def acCmdManageAttachments: `673` = 673.asInstanceOf[`673`]
+  inline def acCmdManageAttachments: `673` = 673.asInstanceOf[`673`]
   
-  @scala.inline
-  def acCmdManageReplies: `609` = 609.asInstanceOf[`609`]
+  inline def acCmdManageReplies: `609` = 609.asInstanceOf[`609`]
   
-  @scala.inline
-  def acCmdManageTableEvents: `717` = 717.asInstanceOf[`717`]
+  inline def acCmdManageTableEvents: `717` = 717.asInstanceOf[`717`]
   
-  @scala.inline
-  def acCmdMaximiumRecords: `508` = 508.asInstanceOf[`508`]
+  inline def acCmdMaximiumRecords: `508` = 508.asInstanceOf[`508`]
   
-  @scala.inline
-  def acCmdMicrosoftAccessHelpTopics: `100` = 100.asInstanceOf[`100`]
+  inline def acCmdMicrosoftAccessHelpTopics: `100` = 100.asInstanceOf[`100`]
   
-  @scala.inline
-  def acCmdMicrosoftOnTheWeb: `236` = 236.asInstanceOf[`236`]
+  inline def acCmdMicrosoftOnTheWeb: `236` = 236.asInstanceOf[`236`]
   
-  @scala.inline
-  def acCmdMicrosoftScriptEditor: `390` = 390.asInstanceOf[`390`]
+  inline def acCmdMicrosoftScriptEditor: `390` = 390.asInstanceOf[`390`]
   
-  @scala.inline
-  def acCmdModifySharePointList: `622` = 622.asInstanceOf[`622`]
+  inline def acCmdModifySharePointList: `622` = 622.asInstanceOf[`622`]
   
-  @scala.inline
-  def acCmdModifySharePointListAlerts: `623` = 623.asInstanceOf[`623`]
+  inline def acCmdModifySharePointListAlerts: `623` = 623.asInstanceOf[`623`]
   
-  @scala.inline
-  def acCmdModifySharePointListPermissions: `625` = 625.asInstanceOf[`625`]
+  inline def acCmdModifySharePointListPermissions: `625` = 625.asInstanceOf[`625`]
   
-  @scala.inline
-  def acCmdModifySharePointListWorkflow: `624` = 624.asInstanceOf[`624`]
+  inline def acCmdModifySharePointListWorkflow: `624` = 624.asInstanceOf[`624`]
   
-  @scala.inline
-  def acCmdMoreWindows: `8` = 8.asInstanceOf[`8`]
+  inline def acCmdMoreWindows: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def acCmdMoveColumnCellDown: `573` = 573.asInstanceOf[`573`]
+  inline def acCmdMoveColumnCellDown: `573` = 573.asInstanceOf[`573`]
   
-  @scala.inline
-  def acCmdMoveColumnCellUp: `572` = 572.asInstanceOf[`572`]
+  inline def acCmdMoveColumnCellUp: `572` = 572.asInstanceOf[`572`]
   
-  @scala.inline
-  def acCmdNewDatabase: `26` = 26.asInstanceOf[`26`]
+  inline def acCmdNewDatabase: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def acCmdNewGroup: `491` = 491.asInstanceOf[`491`]
+  inline def acCmdNewGroup: `491` = 491.asInstanceOf[`491`]
   
-  @scala.inline
-  def acCmdNewObjectAutoForm: `193` = 193.asInstanceOf[`193`]
+  inline def acCmdNewObjectAutoForm: `193` = 193.asInstanceOf[`193`]
   
-  @scala.inline
-  def acCmdNewObjectAutoFormWeb: `705` = 705.asInstanceOf[`705`]
+  inline def acCmdNewObjectAutoFormWeb: `705` = 705.asInstanceOf[`705`]
   
-  @scala.inline
-  def acCmdNewObjectAutoReport: `194` = 194.asInstanceOf[`194`]
+  inline def acCmdNewObjectAutoReport: `194` = 194.asInstanceOf[`194`]
   
-  @scala.inline
-  def acCmdNewObjectAutoReportWeb: `706` = 706.asInstanceOf[`706`]
+  inline def acCmdNewObjectAutoReportWeb: `706` = 706.asInstanceOf[`706`]
   
-  @scala.inline
-  def acCmdNewObjectBlankForm: `600` = 600.asInstanceOf[`600`]
+  inline def acCmdNewObjectBlankForm: `600` = 600.asInstanceOf[`600`]
   
-  @scala.inline
-  def acCmdNewObjectBlankFormWeb: `703` = 703.asInstanceOf[`703`]
+  inline def acCmdNewObjectBlankFormWeb: `703` = 703.asInstanceOf[`703`]
   
-  @scala.inline
-  def acCmdNewObjectBlankReport: `602` = 602.asInstanceOf[`602`]
+  inline def acCmdNewObjectBlankReport: `602` = 602.asInstanceOf[`602`]
   
-  @scala.inline
-  def acCmdNewObjectBlankReportWeb: `704` = 704.asInstanceOf[`704`]
+  inline def acCmdNewObjectBlankReportWeb: `704` = 704.asInstanceOf[`704`]
   
-  @scala.inline
-  def acCmdNewObjectClassModule: `140` = 140.asInstanceOf[`140`]
+  inline def acCmdNewObjectClassModule: `140` = 140.asInstanceOf[`140`]
   
-  @scala.inline
-  def acCmdNewObjectContinuousForm: `594` = 594.asInstanceOf[`594`]
+  inline def acCmdNewObjectContinuousForm: `594` = 594.asInstanceOf[`594`]
   
-  @scala.inline
-  def acCmdNewObjectContinuousFormWeb: `701` = 701.asInstanceOf[`701`]
+  inline def acCmdNewObjectContinuousFormWeb: `701` = 701.asInstanceOf[`701`]
   
-  @scala.inline
-  def acCmdNewObjectDataAccessPage: `346` = 346.asInstanceOf[`346`]
+  inline def acCmdNewObjectDataAccessPage: `346` = 346.asInstanceOf[`346`]
   
-  @scala.inline
-  def acCmdNewObjectDatasheetForm: `598` = 598.asInstanceOf[`598`]
+  inline def acCmdNewObjectDatasheetForm: `598` = 598.asInstanceOf[`598`]
   
-  @scala.inline
-  def acCmdNewObjectDatasheetFormWeb: `702` = 702.asInstanceOf[`702`]
+  inline def acCmdNewObjectDatasheetFormWeb: `702` = 702.asInstanceOf[`702`]
   
-  @scala.inline
-  def acCmdNewObjectDesignForm: `604` = 604.asInstanceOf[`604`]
+  inline def acCmdNewObjectDesignForm: `604` = 604.asInstanceOf[`604`]
   
-  @scala.inline
-  def acCmdNewObjectDesignQuery: `603` = 603.asInstanceOf[`603`]
+  inline def acCmdNewObjectDesignQuery: `603` = 603.asInstanceOf[`603`]
   
-  @scala.inline
-  def acCmdNewObjectDesignReport: `605` = 605.asInstanceOf[`605`]
+  inline def acCmdNewObjectDesignReport: `605` = 605.asInstanceOf[`605`]
   
-  @scala.inline
-  def acCmdNewObjectDesignTable: `606` = 606.asInstanceOf[`606`]
+  inline def acCmdNewObjectDesignTable: `606` = 606.asInstanceOf[`606`]
   
-  @scala.inline
-  def acCmdNewObjectDiagram: `352` = 352.asInstanceOf[`352`]
+  inline def acCmdNewObjectDiagram: `352` = 352.asInstanceOf[`352`]
   
-  @scala.inline
-  def acCmdNewObjectForm: `136` = 136.asInstanceOf[`136`]
+  inline def acCmdNewObjectForm: `136` = 136.asInstanceOf[`136`]
   
-  @scala.inline
-  def acCmdNewObjectFunction: `394` = 394.asInstanceOf[`394`]
+  inline def acCmdNewObjectFunction: `394` = 394.asInstanceOf[`394`]
   
-  @scala.inline
-  def acCmdNewObjectLabelsReport: `601` = 601.asInstanceOf[`601`]
+  inline def acCmdNewObjectLabelsReport: `601` = 601.asInstanceOf[`601`]
   
-  @scala.inline
-  def acCmdNewObjectMacro: `138` = 138.asInstanceOf[`138`]
+  inline def acCmdNewObjectMacro: `138` = 138.asInstanceOf[`138`]
   
-  @scala.inline
-  def acCmdNewObjectMacroWeb: `708` = 708.asInstanceOf[`708`]
+  inline def acCmdNewObjectMacroWeb: `708` = 708.asInstanceOf[`708`]
   
-  @scala.inline
-  def acCmdNewObjectModalForm: `599` = 599.asInstanceOf[`599`]
+  inline def acCmdNewObjectModalForm: `599` = 599.asInstanceOf[`599`]
   
-  @scala.inline
-  def acCmdNewObjectModule: `139` = 139.asInstanceOf[`139`]
+  inline def acCmdNewObjectModule: `139` = 139.asInstanceOf[`139`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationLeft: `690` = 690.asInstanceOf[`690`]
+  inline def acCmdNewObjectNavigationLeft: `690` = 690.asInstanceOf[`690`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationLeftWeb: `710` = 710.asInstanceOf[`710`]
+  inline def acCmdNewObjectNavigationLeftWeb: `710` = 710.asInstanceOf[`710`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationRight: `691` = 691.asInstanceOf[`691`]
+  inline def acCmdNewObjectNavigationRight: `691` = 691.asInstanceOf[`691`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationRightWeb: `711` = 711.asInstanceOf[`711`]
+  inline def acCmdNewObjectNavigationRightWeb: `711` = 711.asInstanceOf[`711`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationTop: `689` = 689.asInstanceOf[`689`]
+  inline def acCmdNewObjectNavigationTop: `689` = 689.asInstanceOf[`689`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationTopLeft: `693` = 693.asInstanceOf[`693`]
+  inline def acCmdNewObjectNavigationTopLeft: `693` = 693.asInstanceOf[`693`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationTopLeftWeb: `713` = 713.asInstanceOf[`713`]
+  inline def acCmdNewObjectNavigationTopLeftWeb: `713` = 713.asInstanceOf[`713`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationTopRight: `694` = 694.asInstanceOf[`694`]
+  inline def acCmdNewObjectNavigationTopRight: `694` = 694.asInstanceOf[`694`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationTopRightWeb: `714` = 714.asInstanceOf[`714`]
+  inline def acCmdNewObjectNavigationTopRightWeb: `714` = 714.asInstanceOf[`714`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationTopTop: `692` = 692.asInstanceOf[`692`]
+  inline def acCmdNewObjectNavigationTopTop: `692` = 692.asInstanceOf[`692`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationTopTopWeb: `712` = 712.asInstanceOf[`712`]
+  inline def acCmdNewObjectNavigationTopTopWeb: `712` = 712.asInstanceOf[`712`]
   
-  @scala.inline
-  def acCmdNewObjectNavigationTopWeb: `709` = 709.asInstanceOf[`709`]
+  inline def acCmdNewObjectNavigationTopWeb: `709` = 709.asInstanceOf[`709`]
   
-  @scala.inline
-  def acCmdNewObjectPivotChart: `596` = 596.asInstanceOf[`596`]
+  inline def acCmdNewObjectPivotChart: `596` = 596.asInstanceOf[`596`]
   
-  @scala.inline
-  def acCmdNewObjectPivotTable: `597` = 597.asInstanceOf[`597`]
+  inline def acCmdNewObjectPivotTable: `597` = 597.asInstanceOf[`597`]
   
-  @scala.inline
-  def acCmdNewObjectQuery: `135` = 135.asInstanceOf[`135`]
+  inline def acCmdNewObjectQuery: `135` = 135.asInstanceOf[`135`]
   
-  @scala.inline
-  def acCmdNewObjectQueryWeb: `707` = 707.asInstanceOf[`707`]
+  inline def acCmdNewObjectQueryWeb: `707` = 707.asInstanceOf[`707`]
   
-  @scala.inline
-  def acCmdNewObjectReport: `137` = 137.asInstanceOf[`137`]
+  inline def acCmdNewObjectReport: `137` = 137.asInstanceOf[`137`]
   
-  @scala.inline
-  def acCmdNewObjectSplitForm: `595` = 595.asInstanceOf[`595`]
+  inline def acCmdNewObjectSplitForm: `595` = 595.asInstanceOf[`595`]
   
-  @scala.inline
-  def acCmdNewObjectStoredProcedure: `351` = 351.asInstanceOf[`351`]
+  inline def acCmdNewObjectStoredProcedure: `351` = 351.asInstanceOf[`351`]
   
-  @scala.inline
-  def acCmdNewObjectTable: `134` = 134.asInstanceOf[`134`]
+  inline def acCmdNewObjectTable: `134` = 134.asInstanceOf[`134`]
   
-  @scala.inline
-  def acCmdNewObjectView: `350` = 350.asInstanceOf[`350`]
+  inline def acCmdNewObjectView: `350` = 350.asInstanceOf[`350`]
   
-  @scala.inline
-  def acCmdOLEDDELinks: `27` = 27.asInstanceOf[`27`]
+  inline def acCmdOLEDDELinks: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def acCmdOLEObjectConvert: `167` = 167.asInstanceOf[`167`]
+  inline def acCmdOLEObjectConvert: `167` = 167.asInstanceOf[`167`]
   
-  @scala.inline
-  def acCmdOLEObjectDefaultVerb: `57` = 57.asInstanceOf[`57`]
+  inline def acCmdOLEObjectDefaultVerb: `57` = 57.asInstanceOf[`57`]
   
-  @scala.inline
-  def acCmdObjBrwFindWholeWordOnly: `314` = 314.asInstanceOf[`314`]
+  inline def acCmdObjBrwFindWholeWordOnly: `314` = 314.asInstanceOf[`314`]
   
-  @scala.inline
-  def acCmdObjBrwGroupMembers: `318` = 318.asInstanceOf[`318`]
+  inline def acCmdObjBrwGroupMembers: `318` = 318.asInstanceOf[`318`]
   
-  @scala.inline
-  def acCmdObjBrwHelp: `316` = 316.asInstanceOf[`316`]
+  inline def acCmdObjBrwHelp: `316` = 316.asInstanceOf[`316`]
   
-  @scala.inline
-  def acCmdObjBrwShowHiddenMembers: `315` = 315.asInstanceOf[`315`]
+  inline def acCmdObjBrwShowHiddenMembers: `315` = 315.asInstanceOf[`315`]
   
-  @scala.inline
-  def acCmdObjBrwViewDefinition: `317` = 317.asInstanceOf[`317`]
+  inline def acCmdObjBrwViewDefinition: `317` = 317.asInstanceOf[`317`]
   
-  @scala.inline
-  def acCmdObjectBrowser: `200` = 200.asInstanceOf[`200`]
+  inline def acCmdObjectBrowser: `200` = 200.asInstanceOf[`200`]
   
-  @scala.inline
-  def acCmdOfficeClipboard: `488` = 488.asInstanceOf[`488`]
+  inline def acCmdOfficeClipboard: `488` = 488.asInstanceOf[`488`]
   
-  @scala.inline
-  def acCmdOpenDatabase: `25` = 25.asInstanceOf[`25`]
+  inline def acCmdOpenDatabase: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def acCmdOpenHyperlink: `326` = 326.asInstanceOf[`326`]
+  inline def acCmdOpenHyperlink: `326` = 326.asInstanceOf[`326`]
   
-  @scala.inline
-  def acCmdOpenNewHyperlink: `327` = 327.asInstanceOf[`327`]
+  inline def acCmdOpenNewHyperlink: `327` = 327.asInstanceOf[`327`]
   
-  @scala.inline
-  def acCmdOpenSearchPage: `253` = 253.asInstanceOf[`253`]
+  inline def acCmdOpenSearchPage: `253` = 253.asInstanceOf[`253`]
   
-  @scala.inline
-  def acCmdOpenStartPage: `252` = 252.asInstanceOf[`252`]
+  inline def acCmdOpenStartPage: `252` = 252.asInstanceOf[`252`]
   
-  @scala.inline
-  def acCmdOpenTable: `221` = 221.asInstanceOf[`221`]
+  inline def acCmdOpenTable: `221` = 221.asInstanceOf[`221`]
   
-  @scala.inline
-  def acCmdOpenURL: `251` = 251.asInstanceOf[`251`]
+  inline def acCmdOpenURL: `251` = 251.asInstanceOf[`251`]
   
-  @scala.inline
-  def acCmdOptions: `49` = 49.asInstanceOf[`49`]
+  inline def acCmdOptions: `49` = 49.asInstanceOf[`49`]
   
-  @scala.inline
-  def acCmdOutdent: `206` = 206.asInstanceOf[`206`]
+  inline def acCmdOutdent: `206` = 206.asInstanceOf[`206`]
   
-  @scala.inline
-  def acCmdOutputToExcel: `175` = 175.asInstanceOf[`175`]
+  inline def acCmdOutputToExcel: `175` = 175.asInstanceOf[`175`]
   
-  @scala.inline
-  def acCmdOutputToRTF: `176` = 176.asInstanceOf[`176`]
+  inline def acCmdOutputToRTF: `176` = 176.asInstanceOf[`176`]
   
-  @scala.inline
-  def acCmdOutputToText: `177` = 177.asInstanceOf[`177`]
+  inline def acCmdOutputToText: `177` = 177.asInstanceOf[`177`]
   
-  @scala.inline
-  def acCmdPageHdrFtr: `182` = 182.asInstanceOf[`182`]
+  inline def acCmdPageHdrFtr: `182` = 182.asInstanceOf[`182`]
   
-  @scala.inline
-  def acCmdPageNumber: `225` = 225.asInstanceOf[`225`]
+  inline def acCmdPageNumber: `225` = 225.asInstanceOf[`225`]
   
-  @scala.inline
-  def acCmdPageProperties: `467` = 467.asInstanceOf[`467`]
+  inline def acCmdPageProperties: `467` = 467.asInstanceOf[`467`]
   
-  @scala.inline
-  def acCmdPageSetup: `32` = 32.asInstanceOf[`32`]
+  inline def acCmdPageSetup: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def acCmdParameterInfo: `305` = 305.asInstanceOf[`305`]
+  inline def acCmdParameterInfo: `305` = 305.asInstanceOf[`305`]
   
-  @scala.inline
-  def acCmdPartialReplicaWizard: `524` = 524.asInstanceOf[`524`]
+  inline def acCmdPartialReplicaWizard: `524` = 524.asInstanceOf[`524`]
   
-  @scala.inline
-  def acCmdPaste: `191` = 191.asInstanceOf[`191`]
+  inline def acCmdPaste: `191` = 191.asInstanceOf[`191`]
   
-  @scala.inline
-  def acCmdPasteAppend: `38` = 38.asInstanceOf[`38`]
+  inline def acCmdPasteAppend: `38` = 38.asInstanceOf[`38`]
   
-  @scala.inline
-  def acCmdPasteAsHyperlink: `490` = 490.asInstanceOf[`490`]
+  inline def acCmdPasteAsHyperlink: `490` = 490.asInstanceOf[`490`]
   
-  @scala.inline
-  def acCmdPasteFormatting: `587` = 587.asInstanceOf[`587`]
+  inline def acCmdPasteFormatting: `587` = 587.asInstanceOf[`587`]
   
-  @scala.inline
-  def acCmdPasteSpecial: `64` = 64.asInstanceOf[`64`]
+  inline def acCmdPasteSpecial: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def acCmdPivotAutoAverage: `416` = 416.asInstanceOf[`416`]
+  inline def acCmdPivotAutoAverage: `416` = 416.asInstanceOf[`416`]
   
-  @scala.inline
-  def acCmdPivotAutoCount: `413` = 413.asInstanceOf[`413`]
+  inline def acCmdPivotAutoCount: `413` = 413.asInstanceOf[`413`]
   
-  @scala.inline
-  def acCmdPivotAutoFilter: `398` = 398.asInstanceOf[`398`]
+  inline def acCmdPivotAutoFilter: `398` = 398.asInstanceOf[`398`]
   
-  @scala.inline
-  def acCmdPivotAutoMax: `415` = 415.asInstanceOf[`415`]
+  inline def acCmdPivotAutoMax: `415` = 415.asInstanceOf[`415`]
   
-  @scala.inline
-  def acCmdPivotAutoMin: `414` = 414.asInstanceOf[`414`]
+  inline def acCmdPivotAutoMin: `414` = 414.asInstanceOf[`414`]
   
-  @scala.inline
-  def acCmdPivotAutoStdDev: `417` = 417.asInstanceOf[`417`]
+  inline def acCmdPivotAutoStdDev: `417` = 417.asInstanceOf[`417`]
   
-  @scala.inline
-  def acCmdPivotAutoStdDevP: `419` = 419.asInstanceOf[`419`]
+  inline def acCmdPivotAutoStdDevP: `419` = 419.asInstanceOf[`419`]
   
-  @scala.inline
-  def acCmdPivotAutoSum: `412` = 412.asInstanceOf[`412`]
+  inline def acCmdPivotAutoSum: `412` = 412.asInstanceOf[`412`]
   
-  @scala.inline
-  def acCmdPivotAutoVar: `418` = 418.asInstanceOf[`418`]
+  inline def acCmdPivotAutoVar: `418` = 418.asInstanceOf[`418`]
   
-  @scala.inline
-  def acCmdPivotAutoVarP: `420` = 420.asInstanceOf[`420`]
+  inline def acCmdPivotAutoVarP: `420` = 420.asInstanceOf[`420`]
   
-  @scala.inline
-  def acCmdPivotChartByRowByColumn: `456` = 456.asInstanceOf[`456`]
+  inline def acCmdPivotChartByRowByColumn: `456` = 456.asInstanceOf[`456`]
   
-  @scala.inline
-  def acCmdPivotChartDrillInto: `457` = 457.asInstanceOf[`457`]
+  inline def acCmdPivotChartDrillInto: `457` = 457.asInstanceOf[`457`]
   
-  @scala.inline
-  def acCmdPivotChartDrillOut: `532` = 532.asInstanceOf[`532`]
+  inline def acCmdPivotChartDrillOut: `532` = 532.asInstanceOf[`532`]
   
-  @scala.inline
-  def acCmdPivotChartMultiplePlots: `458` = 458.asInstanceOf[`458`]
+  inline def acCmdPivotChartMultiplePlots: `458` = 458.asInstanceOf[`458`]
   
-  @scala.inline
-  def acCmdPivotChartMultiplePlotsUnifiedScale: `459` = 459.asInstanceOf[`459`]
+  inline def acCmdPivotChartMultiplePlotsUnifiedScale: `459` = 459.asInstanceOf[`459`]
   
-  @scala.inline
-  def acCmdPivotChartShowLegend: `455` = 455.asInstanceOf[`455`]
+  inline def acCmdPivotChartShowLegend: `455` = 455.asInstanceOf[`455`]
   
-  @scala.inline
-  def acCmdPivotChartSortAscByTotal: `534` = 534.asInstanceOf[`534`]
+  inline def acCmdPivotChartSortAscByTotal: `534` = 534.asInstanceOf[`534`]
   
-  @scala.inline
-  def acCmdPivotChartSortDescByTotal: `535` = 535.asInstanceOf[`535`]
+  inline def acCmdPivotChartSortDescByTotal: `535` = 535.asInstanceOf[`535`]
   
-  @scala.inline
-  def acCmdPivotChartType: `453` = 453.asInstanceOf[`453`]
+  inline def acCmdPivotChartType: `453` = 453.asInstanceOf[`453`]
   
-  @scala.inline
-  def acCmdPivotChartUndo: `460` = 460.asInstanceOf[`460`]
+  inline def acCmdPivotChartUndo: `460` = 460.asInstanceOf[`460`]
   
-  @scala.inline
-  def acCmdPivotChartView: `397` = 397.asInstanceOf[`397`]
+  inline def acCmdPivotChartView: `397` = 397.asInstanceOf[`397`]
   
-  @scala.inline
-  def acCmdPivotCollapse: `400` = 400.asInstanceOf[`400`]
+  inline def acCmdPivotCollapse: `400` = 400.asInstanceOf[`400`]
   
-  @scala.inline
-  def acCmdPivotDelete: `454` = 454.asInstanceOf[`454`]
+  inline def acCmdPivotDelete: `454` = 454.asInstanceOf[`454`]
   
-  @scala.inline
-  def acCmdPivotDropAreas: `452` = 452.asInstanceOf[`452`]
+  inline def acCmdPivotDropAreas: `452` = 452.asInstanceOf[`452`]
   
-  @scala.inline
-  def acCmdPivotExpand: `401` = 401.asInstanceOf[`401`]
+  inline def acCmdPivotExpand: `401` = 401.asInstanceOf[`401`]
   
-  @scala.inline
-  def acCmdPivotRefresh: `404` = 404.asInstanceOf[`404`]
+  inline def acCmdPivotRefresh: `404` = 404.asInstanceOf[`404`]
   
-  @scala.inline
-  def acCmdPivotShowAll: `461` = 461.asInstanceOf[`461`]
+  inline def acCmdPivotShowAll: `461` = 461.asInstanceOf[`461`]
   
-  @scala.inline
-  def acCmdPivotShowBottom1: `432` = 432.asInstanceOf[`432`]
+  inline def acCmdPivotShowBottom1: `432` = 432.asInstanceOf[`432`]
   
-  @scala.inline
-  def acCmdPivotShowBottom10: `435` = 435.asInstanceOf[`435`]
+  inline def acCmdPivotShowBottom10: `435` = 435.asInstanceOf[`435`]
   
-  @scala.inline
-  def acCmdPivotShowBottom10Percent: `440` = 440.asInstanceOf[`440`]
+  inline def acCmdPivotShowBottom10Percent: `440` = 440.asInstanceOf[`440`]
   
-  @scala.inline
-  def acCmdPivotShowBottom1Percent: `437` = 437.asInstanceOf[`437`]
+  inline def acCmdPivotShowBottom1Percent: `437` = 437.asInstanceOf[`437`]
   
-  @scala.inline
-  def acCmdPivotShowBottom2: `433` = 433.asInstanceOf[`433`]
+  inline def acCmdPivotShowBottom2: `433` = 433.asInstanceOf[`433`]
   
-  @scala.inline
-  def acCmdPivotShowBottom25: `436` = 436.asInstanceOf[`436`]
+  inline def acCmdPivotShowBottom25: `436` = 436.asInstanceOf[`436`]
   
-  @scala.inline
-  def acCmdPivotShowBottom25Percent: `441` = 441.asInstanceOf[`441`]
+  inline def acCmdPivotShowBottom25Percent: `441` = 441.asInstanceOf[`441`]
   
-  @scala.inline
-  def acCmdPivotShowBottom2Percent: `438` = 438.asInstanceOf[`438`]
+  inline def acCmdPivotShowBottom2Percent: `438` = 438.asInstanceOf[`438`]
   
-  @scala.inline
-  def acCmdPivotShowBottom5: `434` = 434.asInstanceOf[`434`]
+  inline def acCmdPivotShowBottom5: `434` = 434.asInstanceOf[`434`]
   
-  @scala.inline
-  def acCmdPivotShowBottom5Percent: `439` = 439.asInstanceOf[`439`]
+  inline def acCmdPivotShowBottom5Percent: `439` = 439.asInstanceOf[`439`]
   
-  @scala.inline
-  def acCmdPivotShowBottomOther: `442` = 442.asInstanceOf[`442`]
+  inline def acCmdPivotShowBottomOther: `442` = 442.asInstanceOf[`442`]
   
-  @scala.inline
-  def acCmdPivotShowTop1: `421` = 421.asInstanceOf[`421`]
+  inline def acCmdPivotShowTop1: `421` = 421.asInstanceOf[`421`]
   
-  @scala.inline
-  def acCmdPivotShowTop10: `424` = 424.asInstanceOf[`424`]
+  inline def acCmdPivotShowTop10: `424` = 424.asInstanceOf[`424`]
   
-  @scala.inline
-  def acCmdPivotShowTop10Percent: `429` = 429.asInstanceOf[`429`]
+  inline def acCmdPivotShowTop10Percent: `429` = 429.asInstanceOf[`429`]
   
-  @scala.inline
-  def acCmdPivotShowTop1Percent: `426` = 426.asInstanceOf[`426`]
+  inline def acCmdPivotShowTop1Percent: `426` = 426.asInstanceOf[`426`]
   
-  @scala.inline
-  def acCmdPivotShowTop2: `422` = 422.asInstanceOf[`422`]
+  inline def acCmdPivotShowTop2: `422` = 422.asInstanceOf[`422`]
   
-  @scala.inline
-  def acCmdPivotShowTop25: `425` = 425.asInstanceOf[`425`]
+  inline def acCmdPivotShowTop25: `425` = 425.asInstanceOf[`425`]
   
-  @scala.inline
-  def acCmdPivotShowTop25Percent: `430` = 430.asInstanceOf[`430`]
+  inline def acCmdPivotShowTop25Percent: `430` = 430.asInstanceOf[`430`]
   
-  @scala.inline
-  def acCmdPivotShowTop2Percent: `427` = 427.asInstanceOf[`427`]
+  inline def acCmdPivotShowTop2Percent: `427` = 427.asInstanceOf[`427`]
   
-  @scala.inline
-  def acCmdPivotShowTop5: `423` = 423.asInstanceOf[`423`]
+  inline def acCmdPivotShowTop5: `423` = 423.asInstanceOf[`423`]
   
-  @scala.inline
-  def acCmdPivotShowTop5Percent: `428` = 428.asInstanceOf[`428`]
+  inline def acCmdPivotShowTop5Percent: `428` = 428.asInstanceOf[`428`]
   
-  @scala.inline
-  def acCmdPivotShowTopOther: `431` = 431.asInstanceOf[`431`]
+  inline def acCmdPivotShowTopOther: `431` = 431.asInstanceOf[`431`]
   
-  @scala.inline
-  def acCmdPivotTableClearCustomOrdering: `527` = 527.asInstanceOf[`527`]
+  inline def acCmdPivotTableClearCustomOrdering: `527` = 527.asInstanceOf[`527`]
   
-  @scala.inline
-  def acCmdPivotTableCreateCalcField: `444` = 444.asInstanceOf[`444`]
+  inline def acCmdPivotTableCreateCalcField: `444` = 444.asInstanceOf[`444`]
   
-  @scala.inline
-  def acCmdPivotTableCreateCalcTotal: `443` = 443.asInstanceOf[`443`]
+  inline def acCmdPivotTableCreateCalcTotal: `443` = 443.asInstanceOf[`443`]
   
-  @scala.inline
-  def acCmdPivotTableDemote: `411` = 411.asInstanceOf[`411`]
+  inline def acCmdPivotTableDemote: `411` = 411.asInstanceOf[`411`]
   
-  @scala.inline
-  def acCmdPivotTableExpandIndicators: `451` = 451.asInstanceOf[`451`]
+  inline def acCmdPivotTableExpandIndicators: `451` = 451.asInstanceOf[`451`]
   
-  @scala.inline
-  def acCmdPivotTableExportToExcel: `405` = 405.asInstanceOf[`405`]
+  inline def acCmdPivotTableExportToExcel: `405` = 405.asInstanceOf[`405`]
   
-  @scala.inline
-  def acCmdPivotTableFilterBySelection: `528` = 528.asInstanceOf[`528`]
+  inline def acCmdPivotTableFilterBySelection: `528` = 528.asInstanceOf[`528`]
   
-  @scala.inline
-  def acCmdPivotTableGroupItems: `530` = 530.asInstanceOf[`530`]
+  inline def acCmdPivotTableGroupItems: `530` = 530.asInstanceOf[`530`]
   
-  @scala.inline
-  def acCmdPivotTableHideDetails: `402` = 402.asInstanceOf[`402`]
+  inline def acCmdPivotTableHideDetails: `402` = 402.asInstanceOf[`402`]
   
-  @scala.inline
-  def acCmdPivotTableMoveToColumnArea: `407` = 407.asInstanceOf[`407`]
+  inline def acCmdPivotTableMoveToColumnArea: `407` = 407.asInstanceOf[`407`]
   
-  @scala.inline
-  def acCmdPivotTableMoveToDetailArea: `409` = 409.asInstanceOf[`409`]
+  inline def acCmdPivotTableMoveToDetailArea: `409` = 409.asInstanceOf[`409`]
   
-  @scala.inline
-  def acCmdPivotTableMoveToFilterArea: `408` = 408.asInstanceOf[`408`]
+  inline def acCmdPivotTableMoveToFilterArea: `408` = 408.asInstanceOf[`408`]
   
-  @scala.inline
-  def acCmdPivotTableMoveToRowArea: `406` = 406.asInstanceOf[`406`]
+  inline def acCmdPivotTableMoveToRowArea: `406` = 406.asInstanceOf[`406`]
   
-  @scala.inline
-  def acCmdPivotTablePercentColumnTotal: `447` = 447.asInstanceOf[`447`]
+  inline def acCmdPivotTablePercentColumnTotal: `447` = 447.asInstanceOf[`447`]
   
-  @scala.inline
-  def acCmdPivotTablePercentGrandTotal: `450` = 450.asInstanceOf[`450`]
+  inline def acCmdPivotTablePercentGrandTotal: `450` = 450.asInstanceOf[`450`]
   
-  @scala.inline
-  def acCmdPivotTablePercentParentColumnItem: `449` = 449.asInstanceOf[`449`]
+  inline def acCmdPivotTablePercentParentColumnItem: `449` = 449.asInstanceOf[`449`]
   
-  @scala.inline
-  def acCmdPivotTablePercentParentRowItem: `448` = 448.asInstanceOf[`448`]
+  inline def acCmdPivotTablePercentParentRowItem: `448` = 448.asInstanceOf[`448`]
   
-  @scala.inline
-  def acCmdPivotTablePercentRowTotal: `446` = 446.asInstanceOf[`446`]
+  inline def acCmdPivotTablePercentRowTotal: `446` = 446.asInstanceOf[`446`]
   
-  @scala.inline
-  def acCmdPivotTablePromote: `410` = 410.asInstanceOf[`410`]
+  inline def acCmdPivotTablePromote: `410` = 410.asInstanceOf[`410`]
   
-  @scala.inline
-  def acCmdPivotTableRemove: `529` = 529.asInstanceOf[`529`]
+  inline def acCmdPivotTableRemove: `529` = 529.asInstanceOf[`529`]
   
-  @scala.inline
-  def acCmdPivotTableShowAsNormal: `445` = 445.asInstanceOf[`445`]
+  inline def acCmdPivotTableShowAsNormal: `445` = 445.asInstanceOf[`445`]
   
-  @scala.inline
-  def acCmdPivotTableShowDetails: `403` = 403.asInstanceOf[`403`]
+  inline def acCmdPivotTableShowDetails: `403` = 403.asInstanceOf[`403`]
   
-  @scala.inline
-  def acCmdPivotTableSubtotal: `399` = 399.asInstanceOf[`399`]
+  inline def acCmdPivotTableSubtotal: `399` = 399.asInstanceOf[`399`]
   
-  @scala.inline
-  def acCmdPivotTableUngroupItems: `531` = 531.asInstanceOf[`531`]
+  inline def acCmdPivotTableUngroupItems: `531` = 531.asInstanceOf[`531`]
   
-  @scala.inline
-  def acCmdPivotTableView: `396` = 396.asInstanceOf[`396`]
+  inline def acCmdPivotTableView: `396` = 396.asInstanceOf[`396`]
   
-  @scala.inline
-  def acCmdPrepareDatabaseForWeb: `716` = 716.asInstanceOf[`716`]
+  inline def acCmdPrepareDatabaseForWeb: `716` = 716.asInstanceOf[`716`]
   
-  @scala.inline
-  def acCmdPreviewEightPages: `249` = 249.asInstanceOf[`249`]
+  inline def acCmdPreviewEightPages: `249` = 249.asInstanceOf[`249`]
   
-  @scala.inline
-  def acCmdPreviewFourPages: `248` = 248.asInstanceOf[`248`]
+  inline def acCmdPreviewFourPages: `248` = 248.asInstanceOf[`248`]
   
-  @scala.inline
-  def acCmdPreviewOnePage: `246` = 246.asInstanceOf[`246`]
+  inline def acCmdPreviewOnePage: `246` = 246.asInstanceOf[`246`]
   
-  @scala.inline
-  def acCmdPreviewTwelvePages: `250` = 250.asInstanceOf[`250`]
+  inline def acCmdPreviewTwelvePages: `250` = 250.asInstanceOf[`250`]
   
-  @scala.inline
-  def acCmdPreviewTwoPages: `247` = 247.asInstanceOf[`247`]
+  inline def acCmdPreviewTwoPages: `247` = 247.asInstanceOf[`247`]
   
-  @scala.inline
-  def acCmdPrimaryKey: `107` = 107.asInstanceOf[`107`]
+  inline def acCmdPrimaryKey: `107` = 107.asInstanceOf[`107`]
   
-  @scala.inline
-  def acCmdPrint: `340` = 340.asInstanceOf[`340`]
+  inline def acCmdPrint: `340` = 340.asInstanceOf[`340`]
   
-  @scala.inline
-  def acCmdPrintPreview: `54` = 54.asInstanceOf[`54`]
+  inline def acCmdPrintPreview: `54` = 54.asInstanceOf[`54`]
   
-  @scala.inline
-  def acCmdPrintRelationships: `483` = 483.asInstanceOf[`483`]
+  inline def acCmdPrintRelationships: `483` = 483.asInstanceOf[`483`]
   
-  @scala.inline
-  def acCmdPrintSelection: `590` = 590.asInstanceOf[`590`]
+  inline def acCmdPrintSelection: `590` = 590.asInstanceOf[`590`]
   
-  @scala.inline
-  def acCmdProcedureDefinition: `122` = 122.asInstanceOf[`122`]
+  inline def acCmdProcedureDefinition: `122` = 122.asInstanceOf[`122`]
   
-  @scala.inline
-  def acCmdPromote: `386` = 386.asInstanceOf[`386`]
+  inline def acCmdPromote: `386` = 386.asInstanceOf[`386`]
   
-  @scala.inline
-  def acCmdProperties: `287` = 287.asInstanceOf[`287`]
+  inline def acCmdProperties: `287` = 287.asInstanceOf[`287`]
   
-  @scala.inline
-  def acCmdPublishDatabase: `537` = 537.asInstanceOf[`537`]
+  inline def acCmdPublishDatabase: `537` = 537.asInstanceOf[`537`]
   
-  @scala.inline
-  def acCmdPublishDefaults: `324` = 324.asInstanceOf[`324`]
+  inline def acCmdPublishDefaults: `324` = 324.asInstanceOf[`324`]
   
-  @scala.inline
-  def acCmdPublishFixedFormat: `591` = 591.asInstanceOf[`591`]
+  inline def acCmdPublishFixedFormat: `591` = 591.asInstanceOf[`591`]
   
-  @scala.inline
-  def acCmdQueryAddToOutput: `362` = 362.asInstanceOf[`362`]
+  inline def acCmdQueryAddToOutput: `362` = 362.asInstanceOf[`362`]
   
-  @scala.inline
-  def acCmdQueryGroupBy: `361` = 361.asInstanceOf[`361`]
+  inline def acCmdQueryGroupBy: `361` = 361.asInstanceOf[`361`]
   
-  @scala.inline
-  def acCmdQueryParameters: `76` = 76.asInstanceOf[`76`]
+  inline def acCmdQueryParameters: `76` = 76.asInstanceOf[`76`]
   
-  @scala.inline
-  def acCmdQueryTotals: `73` = 73.asInstanceOf[`73`]
+  inline def acCmdQueryTotals: `73` = 73.asInstanceOf[`73`]
   
-  @scala.inline
-  def acCmdQueryTypeAppend: `91` = 91.asInstanceOf[`91`]
+  inline def acCmdQueryTypeAppend: `91` = 91.asInstanceOf[`91`]
   
-  @scala.inline
-  def acCmdQueryTypeCrosstab: `74` = 74.asInstanceOf[`74`]
+  inline def acCmdQueryTypeCrosstab: `74` = 74.asInstanceOf[`74`]
   
-  @scala.inline
-  def acCmdQueryTypeDelete: `92` = 92.asInstanceOf[`92`]
+  inline def acCmdQueryTypeDelete: `92` = 92.asInstanceOf[`92`]
   
-  @scala.inline
-  def acCmdQueryTypeMakeTable: `94` = 94.asInstanceOf[`94`]
+  inline def acCmdQueryTypeMakeTable: `94` = 94.asInstanceOf[`94`]
   
-  @scala.inline
-  def acCmdQueryTypeSQLDataDefinition: `168` = 168.asInstanceOf[`168`]
+  inline def acCmdQueryTypeSQLDataDefinition: `168` = 168.asInstanceOf[`168`]
   
-  @scala.inline
-  def acCmdQueryTypeSQLPassThrough: `169` = 169.asInstanceOf[`169`]
+  inline def acCmdQueryTypeSQLPassThrough: `169` = 169.asInstanceOf[`169`]
   
-  @scala.inline
-  def acCmdQueryTypeSQLUnion: `180` = 180.asInstanceOf[`180`]
+  inline def acCmdQueryTypeSQLUnion: `180` = 180.asInstanceOf[`180`]
   
-  @scala.inline
-  def acCmdQueryTypeSelect: `89` = 89.asInstanceOf[`89`]
+  inline def acCmdQueryTypeSelect: `89` = 89.asInstanceOf[`89`]
   
-  @scala.inline
-  def acCmdQueryTypeUpdate: `90` = 90.asInstanceOf[`90`]
+  inline def acCmdQueryTypeUpdate: `90` = 90.asInstanceOf[`90`]
   
-  @scala.inline
-  def acCmdQuickInfo: `304` = 304.asInstanceOf[`304`]
+  inline def acCmdQuickInfo: `304` = 304.asInstanceOf[`304`]
   
-  @scala.inline
-  def acCmdQuickPrint: `278` = 278.asInstanceOf[`278`]
+  inline def acCmdQuickPrint: `278` = 278.asInstanceOf[`278`]
   
-  @scala.inline
-  def acCmdQuickWatch: `203` = 203.asInstanceOf[`203`]
+  inline def acCmdQuickWatch: `203` = 203.asInstanceOf[`203`]
   
-  @scala.inline
-  def acCmdRecordsGoToFirst: `67` = 67.asInstanceOf[`67`]
+  inline def acCmdRecordsGoToFirst: `67` = 67.asInstanceOf[`67`]
   
-  @scala.inline
-  def acCmdRecordsGoToLast: `68` = 68.asInstanceOf[`68`]
+  inline def acCmdRecordsGoToLast: `68` = 68.asInstanceOf[`68`]
   
-  @scala.inline
-  def acCmdRecordsGoToNew: `28` = 28.asInstanceOf[`28`]
+  inline def acCmdRecordsGoToNew: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def acCmdRecordsGoToNext: `65` = 65.asInstanceOf[`65`]
+  inline def acCmdRecordsGoToNext: `65` = 65.asInstanceOf[`65`]
   
-  @scala.inline
-  def acCmdRecordsGoToPrevious: `66` = 66.asInstanceOf[`66`]
+  inline def acCmdRecordsGoToPrevious: `66` = 66.asInstanceOf[`66`]
   
-  @scala.inline
-  def acCmdRecoverDesignMaster: `265` = 265.asInstanceOf[`265`]
+  inline def acCmdRecoverDesignMaster: `265` = 265.asInstanceOf[`265`]
   
-  @scala.inline
-  def acCmdRedo: `199` = 199.asInstanceOf[`199`]
+  inline def acCmdRedo: `199` = 199.asInstanceOf[`199`]
   
-  @scala.inline
-  def acCmdReferences: `260` = 260.asInstanceOf[`260`]
+  inline def acCmdReferences: `260` = 260.asInstanceOf[`260`]
   
-  @scala.inline
-  def acCmdRefresh: `18` = 18.asInstanceOf[`18`]
+  inline def acCmdRefresh: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def acCmdRefreshData: `541` = 541.asInstanceOf[`541`]
+  inline def acCmdRefreshData: `541` = 541.asInstanceOf[`541`]
   
-  @scala.inline
-  def acCmdRefreshPage: `297` = 297.asInstanceOf[`297`]
+  inline def acCmdRefreshPage: `297` = 297.asInstanceOf[`297`]
   
-  @scala.inline
-  def acCmdRefreshSharePointList: `626` = 626.asInstanceOf[`626`]
+  inline def acCmdRefreshSharePointList: `626` = 626.asInstanceOf[`626`]
   
-  @scala.inline
-  def acCmdRegisterActiveXControls: `254` = 254.asInstanceOf[`254`]
+  inline def acCmdRegisterActiveXControls: `254` = 254.asInstanceOf[`254`]
   
-  @scala.inline
-  def acCmdRelationships: `133` = 133.asInstanceOf[`133`]
+  inline def acCmdRelationships: `133` = 133.asInstanceOf[`133`]
   
-  @scala.inline
-  def acCmdRemove: `366` = 366.asInstanceOf[`366`]
+  inline def acCmdRemove: `366` = 366.asInstanceOf[`366`]
   
-  @scala.inline
-  def acCmdRemoveAllFilters: `644` = 644.asInstanceOf[`644`]
+  inline def acCmdRemoveAllFilters: `644` = 644.asInstanceOf[`644`]
   
-  @scala.inline
-  def acCmdRemoveAllSorts: `645` = 645.asInstanceOf[`645`]
+  inline def acCmdRemoveAllSorts: `645` = 645.asInstanceOf[`645`]
   
-  @scala.inline
-  def acCmdRemoveFilterFromCurrentColumn: `643` = 643.asInstanceOf[`643`]
+  inline def acCmdRemoveFilterFromCurrentColumn: `643` = 643.asInstanceOf[`643`]
   
-  @scala.inline
-  def acCmdRemoveFilterSort: `144` = 144.asInstanceOf[`144`]
+  inline def acCmdRemoveFilterSort: `144` = 144.asInstanceOf[`144`]
   
-  @scala.inline
-  def acCmdRemoveFromLayout: `582` = 582.asInstanceOf[`582`]
+  inline def acCmdRemoveFromLayout: `582` = 582.asInstanceOf[`582`]
   
-  @scala.inline
-  def acCmdRemoveTable: `84` = 84.asInstanceOf[`84`]
+  inline def acCmdRemoveTable: `84` = 84.asInstanceOf[`84`]
   
-  @scala.inline
-  def acCmdRename: `143` = 143.asInstanceOf[`143`]
+  inline def acCmdRename: `143` = 143.asInstanceOf[`143`]
   
-  @scala.inline
-  def acCmdRenameColumn: `274` = 274.asInstanceOf[`274`]
+  inline def acCmdRenameColumn: `274` = 274.asInstanceOf[`274`]
   
-  @scala.inline
-  def acCmdRenameGroup: `492` = 492.asInstanceOf[`492`]
+  inline def acCmdRenameGroup: `492` = 492.asInstanceOf[`492`]
   
-  @scala.inline
-  def acCmdRepairDatabase: `6` = 6.asInstanceOf[`6`]
+  inline def acCmdRepairDatabase: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def acCmdReplace: `29` = 29.asInstanceOf[`29`]
+  inline def acCmdReplace: `29` = 29.asInstanceOf[`29`]
   
-  @scala.inline
-  def acCmdReportHdrFtr: `37` = 37.asInstanceOf[`37`]
+  inline def acCmdReportHdrFtr: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def acCmdReportView: `539` = 539.asInstanceOf[`539`]
+  inline def acCmdReportView: `539` = 539.asInstanceOf[`539`]
   
-  @scala.inline
-  def acCmdReset: `124` = 124.asInstanceOf[`124`]
+  inline def acCmdReset: `124` = 124.asInstanceOf[`124`]
   
-  @scala.inline
-  def acCmdResolveConflicts: `266` = 266.asInstanceOf[`266`]
+  inline def acCmdResolveConflicts: `266` = 266.asInstanceOf[`266`]
   
-  @scala.inline
-  def acCmdRestore: `514` = 514.asInstanceOf[`514`]
+  inline def acCmdRestore: `514` = 514.asInstanceOf[`514`]
   
-  @scala.inline
-  def acCmdRowHeight: `116` = 116.asInstanceOf[`116`]
+  inline def acCmdRowHeight: `116` = 116.asInstanceOf[`116`]
   
-  @scala.inline
-  def acCmdRun: `181` = 181.asInstanceOf[`181`]
+  inline def acCmdRun: `181` = 181.asInstanceOf[`181`]
   
-  @scala.inline
-  def acCmdRunMacro: `31` = 31.asInstanceOf[`31`]
+  inline def acCmdRunMacro: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def acCmdRunOpenMacro: `338` = 338.asInstanceOf[`338`]
+  inline def acCmdRunOpenMacro: `338` = 338.asInstanceOf[`338`]
   
-  @scala.inline
-  def acCmdSQLView: `184` = 184.asInstanceOf[`184`]
+  inline def acCmdSQLView: `184` = 184.asInstanceOf[`184`]
   
-  @scala.inline
-  def acCmdSave: `20` = 20.asInstanceOf[`20`]
+  inline def acCmdSave: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def acCmdSaveAllModules: `280` = 280.asInstanceOf[`280`]
+  inline def acCmdSaveAllModules: `280` = 280.asInstanceOf[`280`]
   
-  @scala.inline
-  def acCmdSaveAs: `21` = 21.asInstanceOf[`21`]
+  inline def acCmdSaveAs: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def acCmdSaveAsASP: `323` = 323.asInstanceOf[`323`]
+  inline def acCmdSaveAsASP: `323` = 323.asInstanceOf[`323`]
   
-  @scala.inline
-  def acCmdSaveAsDataAccessPage: `389` = 389.asInstanceOf[`389`]
+  inline def acCmdSaveAsDataAccessPage: `389` = 389.asInstanceOf[`389`]
   
-  @scala.inline
-  def acCmdSaveAsHTML: `321` = 321.asInstanceOf[`321`]
+  inline def acCmdSaveAsHTML: `321` = 321.asInstanceOf[`321`]
   
-  @scala.inline
-  def acCmdSaveAsIDC: `322` = 322.asInstanceOf[`322`]
+  inline def acCmdSaveAsIDC: `322` = 322.asInstanceOf[`322`]
   
-  @scala.inline
-  def acCmdSaveAsOutlookContact: `584` = 584.asInstanceOf[`584`]
+  inline def acCmdSaveAsOutlookContact: `584` = 584.asInstanceOf[`584`]
   
-  @scala.inline
-  def acCmdSaveAsQuery: `96` = 96.asInstanceOf[`96`]
+  inline def acCmdSaveAsQuery: `96` = 96.asInstanceOf[`96`]
   
-  @scala.inline
-  def acCmdSaveAsReport: `142` = 142.asInstanceOf[`142`]
+  inline def acCmdSaveAsReport: `142` = 142.asInstanceOf[`142`]
   
-  @scala.inline
-  def acCmdSaveAsTemplate: `686` = 686.asInstanceOf[`686`]
+  inline def acCmdSaveAsTemplate: `686` = 686.asInstanceOf[`686`]
   
-  @scala.inline
-  def acCmdSaveDatabaseAsNewTemplatePart: `687` = 687.asInstanceOf[`687`]
+  inline def acCmdSaveDatabaseAsNewTemplatePart: `687` = 687.asInstanceOf[`687`]
   
-  @scala.inline
-  def acCmdSaveLayout: `145` = 145.asInstanceOf[`145`]
+  inline def acCmdSaveLayout: `145` = 145.asInstanceOf[`145`]
   
-  @scala.inline
-  def acCmdSaveModuleAsText: `119` = 119.asInstanceOf[`119`]
+  inline def acCmdSaveModuleAsText: `119` = 119.asInstanceOf[`119`]
   
-  @scala.inline
-  def acCmdSaveRecord: `97` = 97.asInstanceOf[`97`]
+  inline def acCmdSaveRecord: `97` = 97.asInstanceOf[`97`]
   
-  @scala.inline
-  def acCmdSaveSelectionAsNewDataType: `688` = 688.asInstanceOf[`688`]
+  inline def acCmdSaveSelectionAsNewDataType: `688` = 688.asInstanceOf[`688`]
   
-  @scala.inline
-  def acCmdSavedExports: `555` = 555.asInstanceOf[`555`]
+  inline def acCmdSavedExports: `555` = 555.asInstanceOf[`555`]
   
-  @scala.inline
-  def acCmdSavedImports: `543` = 543.asInstanceOf[`543`]
+  inline def acCmdSavedImports: `543` = 543.asInstanceOf[`543`]
   
-  @scala.inline
-  def acCmdSelectAll: `333` = 333.asInstanceOf[`333`]
+  inline def acCmdSelectAll: `333` = 333.asInstanceOf[`333`]
   
-  @scala.inline
-  def acCmdSelectAllRecords: `109` = 109.asInstanceOf[`109`]
+  inline def acCmdSelectAllRecords: `109` = 109.asInstanceOf[`109`]
   
-  @scala.inline
-  def acCmdSelectDataAccessPage: `347` = 347.asInstanceOf[`347`]
+  inline def acCmdSelectDataAccessPage: `347` = 347.asInstanceOf[`347`]
   
-  @scala.inline
-  def acCmdSelectEntireColumn: `571` = 571.asInstanceOf[`571`]
+  inline def acCmdSelectEntireColumn: `571` = 571.asInstanceOf[`571`]
   
-  @scala.inline
-  def acCmdSelectEntireLayout: `715` = 715.asInstanceOf[`715`]
+  inline def acCmdSelectEntireLayout: `715` = 715.asInstanceOf[`715`]
   
-  @scala.inline
-  def acCmdSelectEntireRow: `570` = 570.asInstanceOf[`570`]
+  inline def acCmdSelectEntireRow: `570` = 570.asInstanceOf[`570`]
   
-  @scala.inline
-  def acCmdSelectForm: `40` = 40.asInstanceOf[`40`]
+  inline def acCmdSelectForm: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def acCmdSelectRecord: `50` = 50.asInstanceOf[`50`]
+  inline def acCmdSelectRecord: `50` = 50.asInstanceOf[`50`]
   
-  @scala.inline
-  def acCmdSelectReport: `319` = 319.asInstanceOf[`319`]
+  inline def acCmdSelectReport: `319` = 319.asInstanceOf[`319`]
   
-  @scala.inline
-  def acCmdSend: `173` = 173.asInstanceOf[`173`]
+  inline def acCmdSend: `173` = 173.asInstanceOf[`173`]
   
-  @scala.inline
-  def acCmdSendToBack: `53` = 53.asInstanceOf[`53`]
+  inline def acCmdSendToBack: `53` = 53.asInstanceOf[`53`]
   
-  @scala.inline
-  def acCmdServerFilterByForm: `507` = 507.asInstanceOf[`507`]
+  inline def acCmdServerFilterByForm: `507` = 507.asInstanceOf[`507`]
   
-  @scala.inline
-  def acCmdServerProperties: `496` = 496.asInstanceOf[`496`]
+  inline def acCmdServerProperties: `496` = 496.asInstanceOf[`496`]
   
-  @scala.inline
-  def acCmdSetCaption: `637` = 637.asInstanceOf[`637`]
+  inline def acCmdSetCaption: `637` = 637.asInstanceOf[`637`]
   
-  @scala.inline
-  def acCmdSetControlDefaults: `56` = 56.asInstanceOf[`56`]
+  inline def acCmdSetControlDefaults: `56` = 56.asInstanceOf[`56`]
   
-  @scala.inline
-  def acCmdSetDatabasePassword: `275` = 275.asInstanceOf[`275`]
+  inline def acCmdSetDatabasePassword: `275` = 275.asInstanceOf[`275`]
   
-  @scala.inline
-  def acCmdSetNextStatement: `129` = 129.asInstanceOf[`129`]
+  inline def acCmdSetNextStatement: `129` = 129.asInstanceOf[`129`]
   
-  @scala.inline
-  def acCmdShareOnSharePoint: `542` = 542.asInstanceOf[`542`]
+  inline def acCmdShareOnSharePoint: `542` = 542.asInstanceOf[`542`]
   
-  @scala.inline
-  def acCmdSharePointSiteRecycleBin: `641` = 641.asInstanceOf[`641`]
+  inline def acCmdSharePointSiteRecycleBin: `641` = 641.asInstanceOf[`641`]
   
-  @scala.inline
-  def acCmdShowAllRelationships: `149` = 149.asInstanceOf[`149`]
+  inline def acCmdShowAllRelationships: `149` = 149.asInstanceOf[`149`]
   
-  @scala.inline
-  def acCmdShowColumnHistory: `620` = 620.asInstanceOf[`620`]
+  inline def acCmdShowColumnHistory: `620` = 620.asInstanceOf[`620`]
   
-  @scala.inline
-  def acCmdShowDatePicker: `636` = 636.asInstanceOf[`636`]
+  inline def acCmdShowDatePicker: `636` = 636.asInstanceOf[`636`]
   
-  @scala.inline
-  def acCmdShowDirectRelationships: `148` = 148.asInstanceOf[`148`]
+  inline def acCmdShowDirectRelationships: `148` = 148.asInstanceOf[`148`]
   
-  @scala.inline
-  def acCmdShowEnvelope: `533` = 533.asInstanceOf[`533`]
+  inline def acCmdShowEnvelope: `533` = 533.asInstanceOf[`533`]
   
-  @scala.inline
-  def acCmdShowLogicCatalog: `685` = 685.asInstanceOf[`685`]
+  inline def acCmdShowLogicCatalog: `685` = 685.asInstanceOf[`685`]
   
-  @scala.inline
-  def acCmdShowMembers: `302` = 302.asInstanceOf[`302`]
+  inline def acCmdShowMembers: `302` = 302.asInstanceOf[`302`]
   
-  @scala.inline
-  def acCmdShowMessageBar: `676` = 676.asInstanceOf[`676`]
+  inline def acCmdShowMessageBar: `676` = 676.asInstanceOf[`676`]
   
-  @scala.inline
-  def acCmdShowNextStatement: `130` = 130.asInstanceOf[`130`]
+  inline def acCmdShowNextStatement: `130` = 130.asInstanceOf[`130`]
   
-  @scala.inline
-  def acCmdShowOnlyWebToolbar: `300` = 300.asInstanceOf[`300`]
+  inline def acCmdShowOnlyWebToolbar: `300` = 300.asInstanceOf[`300`]
   
-  @scala.inline
-  def acCmdShowTable: `185` = 185.asInstanceOf[`185`]
+  inline def acCmdShowTable: `185` = 185.asInstanceOf[`185`]
   
-  @scala.inline
-  def acCmdSingleStep: `88` = 88.asInstanceOf[`88`]
+  inline def acCmdSingleStep: `88` = 88.asInstanceOf[`88`]
   
-  @scala.inline
-  def acCmdSizeToFit: `59` = 59.asInstanceOf[`59`]
+  inline def acCmdSizeToFit: `59` = 59.asInstanceOf[`59`]
   
-  @scala.inline
-  def acCmdSizeToFitForm: `69` = 69.asInstanceOf[`69`]
+  inline def acCmdSizeToFitForm: `69` = 69.asInstanceOf[`69`]
   
-  @scala.inline
-  def acCmdSizeToGrid: `48` = 48.asInstanceOf[`48`]
+  inline def acCmdSizeToGrid: `48` = 48.asInstanceOf[`48`]
   
-  @scala.inline
-  def acCmdSizeToNarrowest: `155` = 155.asInstanceOf[`155`]
+  inline def acCmdSizeToNarrowest: `155` = 155.asInstanceOf[`155`]
   
-  @scala.inline
-  def acCmdSizeToWidest: `156` = 156.asInstanceOf[`156`]
+  inline def acCmdSizeToWidest: `156` = 156.asInstanceOf[`156`]
   
-  @scala.inline
-  def acCmdSnapToGrid: `62` = 62.asInstanceOf[`62`]
+  inline def acCmdSnapToGrid: `62` = 62.asInstanceOf[`62`]
   
-  @scala.inline
-  def acCmdSortAscending: `163` = 163.asInstanceOf[`163`]
+  inline def acCmdSortAscending: `163` = 163.asInstanceOf[`163`]
   
-  @scala.inline
-  def acCmdSortDescending: `164` = 164.asInstanceOf[`164`]
+  inline def acCmdSortDescending: `164` = 164.asInstanceOf[`164`]
   
-  @scala.inline
-  def acCmdSortingAndGrouping: `51` = 51.asInstanceOf[`51`]
+  inline def acCmdSortingAndGrouping: `51` = 51.asInstanceOf[`51`]
   
-  @scala.inline
-  def acCmdSpeech: `511` = 511.asInstanceOf[`511`]
+  inline def acCmdSpeech: `511` = 511.asInstanceOf[`511`]
   
-  @scala.inline
-  def acCmdSpelling: `269` = 269.asInstanceOf[`269`]
+  inline def acCmdSpelling: `269` = 269.asInstanceOf[`269`]
   
-  @scala.inline
-  def acCmdStackedLayout: `568` = 568.asInstanceOf[`568`]
+  inline def acCmdStackedLayout: `568` = 568.asInstanceOf[`568`]
   
-  @scala.inline
-  def acCmdStartNewWorkflow: `675` = 675.asInstanceOf[`675`]
+  inline def acCmdStartNewWorkflow: `675` = 675.asInstanceOf[`675`]
   
-  @scala.inline
-  def acCmdStartupProperties: `224` = 224.asInstanceOf[`224`]
+  inline def acCmdStartupProperties: `224` = 224.asInstanceOf[`224`]
   
-  @scala.inline
-  def acCmdStepInto: `342` = 342.asInstanceOf[`342`]
+  inline def acCmdStepInto: `342` = 342.asInstanceOf[`342`]
   
-  @scala.inline
-  def acCmdStepOut: `311` = 311.asInstanceOf[`311`]
+  inline def acCmdStepOut: `311` = 311.asInstanceOf[`311`]
   
-  @scala.inline
-  def acCmdStepOver: `128` = 128.asInstanceOf[`128`]
+  inline def acCmdStepOver: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def acCmdStepToCursor: `204` = 204.asInstanceOf[`204`]
+  inline def acCmdStepToCursor: `204` = 204.asInstanceOf[`204`]
   
-  @scala.inline
-  def acCmdStopLoadingPage: `296` = 296.asInstanceOf[`296`]
+  inline def acCmdStopLoadingPage: `296` = 296.asInstanceOf[`296`]
   
-  @scala.inline
-  def acCmdSubdatasheetCollapseAll: `505` = 505.asInstanceOf[`505`]
+  inline def acCmdSubdatasheetCollapseAll: `505` = 505.asInstanceOf[`505`]
   
-  @scala.inline
-  def acCmdSubdatasheetExpandAll: `504` = 504.asInstanceOf[`504`]
+  inline def acCmdSubdatasheetExpandAll: `504` = 504.asInstanceOf[`504`]
   
-  @scala.inline
-  def acCmdSubdatasheetRemove: `506` = 506.asInstanceOf[`506`]
+  inline def acCmdSubdatasheetRemove: `506` = 506.asInstanceOf[`506`]
   
-  @scala.inline
-  def acCmdSubformDatasheet: `108` = 108.asInstanceOf[`108`]
+  inline def acCmdSubformDatasheet: `108` = 108.asInstanceOf[`108`]
   
-  @scala.inline
-  def acCmdSubformDatasheetView: `463` = 463.asInstanceOf[`463`]
+  inline def acCmdSubformDatasheetView: `463` = 463.asInstanceOf[`463`]
   
-  @scala.inline
-  def acCmdSubformFormView: `462` = 462.asInstanceOf[`462`]
+  inline def acCmdSubformFormView: `462` = 462.asInstanceOf[`462`]
   
-  @scala.inline
-  def acCmdSubformInNewWindow: `495` = 495.asInstanceOf[`495`]
+  inline def acCmdSubformInNewWindow: `495` = 495.asInstanceOf[`495`]
   
-  @scala.inline
-  def acCmdSubformPivotChartView: `465` = 465.asInstanceOf[`465`]
+  inline def acCmdSubformPivotChartView: `465` = 465.asInstanceOf[`465`]
   
-  @scala.inline
-  def acCmdSubformPivotTableView: `464` = 464.asInstanceOf[`464`]
+  inline def acCmdSubformPivotTableView: `464` = 464.asInstanceOf[`464`]
   
-  @scala.inline
-  def acCmdSwitchboardManager: `521` = 521.asInstanceOf[`521`]
+  inline def acCmdSwitchboardManager: `521` = 521.asInstanceOf[`521`]
   
-  @scala.inline
-  def acCmdSyncWebApplication: `699` = 699.asInstanceOf[`699`]
+  inline def acCmdSyncWebApplication: `699` = 699.asInstanceOf[`699`]
   
-  @scala.inline
-  def acCmdSynchronize: `638` = 638.asInstanceOf[`638`]
+  inline def acCmdSynchronize: `638` = 638.asInstanceOf[`638`]
   
-  @scala.inline
-  def acCmdSynchronizeNow: `264` = 264.asInstanceOf[`264`]
+  inline def acCmdSynchronizeNow: `264` = 264.asInstanceOf[`264`]
   
-  @scala.inline
-  def acCmdTabControlPageOrder: `330` = 330.asInstanceOf[`330`]
+  inline def acCmdTabControlPageOrder: `330` = 330.asInstanceOf[`330`]
   
-  @scala.inline
-  def acCmdTabOrder: `41` = 41.asInstanceOf[`41`]
+  inline def acCmdTabOrder: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def acCmdTableAddTable: `498` = 498.asInstanceOf[`498`]
+  inline def acCmdTableAddTable: `498` = 498.asInstanceOf[`498`]
   
-  @scala.inline
-  def acCmdTableCustomView: `497` = 497.asInstanceOf[`497`]
+  inline def acCmdTableCustomView: `497` = 497.asInstanceOf[`497`]
   
-  @scala.inline
-  def acCmdTableNames: `75` = 75.asInstanceOf[`75`]
+  inline def acCmdTableNames: `75` = 75.asInstanceOf[`75`]
   
-  @scala.inline
-  def acCmdTabularLayout: `569` = 569.asInstanceOf[`569`]
+  inline def acCmdTabularLayout: `569` = 569.asInstanceOf[`569`]
   
-  @scala.inline
-  def acCmdTestValidationRules: `196` = 196.asInstanceOf[`196`]
+  inline def acCmdTestValidationRules: `196` = 196.asInstanceOf[`196`]
   
-  @scala.inline
-  def acCmdTileHorizontally: `286` = 286.asInstanceOf[`286`]
+  inline def acCmdTileHorizontally: `286` = 286.asInstanceOf[`286`]
   
-  @scala.inline
-  def acCmdTileVertically: `23` = 23.asInstanceOf[`23`]
+  inline def acCmdTileVertically: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def acCmdToggleBreakpoint: `131` = 131.asInstanceOf[`131`]
+  inline def acCmdToggleBreakpoint: `131` = 131.asInstanceOf[`131`]
   
-  @scala.inline
-  def acCmdToggleCacheListData: `642` = 642.asInstanceOf[`642`]
+  inline def acCmdToggleCacheListData: `642` = 642.asInstanceOf[`642`]
   
-  @scala.inline
-  def acCmdToggleFilter: `220` = 220.asInstanceOf[`220`]
+  inline def acCmdToggleFilter: `220` = 220.asInstanceOf[`220`]
   
-  @scala.inline
-  def acCmdToggleOffline: `540` = 540.asInstanceOf[`540`]
+  inline def acCmdToggleOffline: `540` = 540.asInstanceOf[`540`]
   
-  @scala.inline
-  def acCmdToolbarControlProperties: `301` = 301.asInstanceOf[`301`]
+  inline def acCmdToolbarControlProperties: `301` = 301.asInstanceOf[`301`]
   
-  @scala.inline
-  def acCmdToolbarsCustomize: `165` = 165.asInstanceOf[`165`]
+  inline def acCmdToolbarsCustomize: `165` = 165.asInstanceOf[`165`]
   
-  @scala.inline
-  def acCmdTransferSQLDatabase: `515` = 515.asInstanceOf[`515`]
+  inline def acCmdTransferSQLDatabase: `515` = 515.asInstanceOf[`515`]
   
-  @scala.inline
-  def acCmdTransparentBackground: `288` = 288.asInstanceOf[`288`]
+  inline def acCmdTransparentBackground: `288` = 288.asInstanceOf[`288`]
   
-  @scala.inline
-  def acCmdTransparentBorder: `289` = 289.asInstanceOf[`289`]
+  inline def acCmdTransparentBorder: `289` = 289.asInstanceOf[`289`]
   
-  @scala.inline
-  def acCmdUndo: `292` = 292.asInstanceOf[`292`]
+  inline def acCmdUndo: `292` = 292.asInstanceOf[`292`]
   
-  @scala.inline
-  def acCmdUnfreezeAllColumns: `106` = 106.asInstanceOf[`106`]
+  inline def acCmdUnfreezeAllColumns: `106` = 106.asInstanceOf[`106`]
   
-  @scala.inline
-  def acCmdUngroupControls: `485` = 485.asInstanceOf[`485`]
+  inline def acCmdUngroupControls: `485` = 485.asInstanceOf[`485`]
   
-  @scala.inline
-  def acCmdUnhideColumns: `80` = 80.asInstanceOf[`80`]
+  inline def acCmdUnhideColumns: `80` = 80.asInstanceOf[`80`]
   
-  @scala.inline
-  def acCmdUpsizingWizard: `522` = 522.asInstanceOf[`522`]
+  inline def acCmdUpsizingWizard: `522` = 522.asInstanceOf[`522`]
   
-  @scala.inline
-  def acCmdUserAndGroupAccounts: `104` = 104.asInstanceOf[`104`]
+  inline def acCmdUserAndGroupAccounts: `104` = 104.asInstanceOf[`104`]
   
-  @scala.inline
-  def acCmdUserAndGroupPermissions: `103` = 103.asInstanceOf[`103`]
+  inline def acCmdUserAndGroupPermissions: `103` = 103.asInstanceOf[`103`]
   
-  @scala.inline
-  def acCmdUserLevelSecurityWizard: `276` = 276.asInstanceOf[`276`]
+  inline def acCmdUserLevelSecurityWizard: `276` = 276.asInstanceOf[`276`]
   
-  @scala.inline
-  def acCmdVerticalSpacingDecrease: `161` = 161.asInstanceOf[`161`]
+  inline def acCmdVerticalSpacingDecrease: `161` = 161.asInstanceOf[`161`]
   
-  @scala.inline
-  def acCmdVerticalSpacingIncrease: `162` = 162.asInstanceOf[`162`]
+  inline def acCmdVerticalSpacingIncrease: `162` = 162.asInstanceOf[`162`]
   
-  @scala.inline
-  def acCmdVerticalSpacingMakeEqual: `160` = 160.asInstanceOf[`160`]
+  inline def acCmdVerticalSpacingMakeEqual: `160` = 160.asInstanceOf[`160`]
   
-  @scala.inline
-  def acCmdViewCode: `170` = 170.asInstanceOf[`170`]
+  inline def acCmdViewCode: `170` = 170.asInstanceOf[`170`]
   
-  @scala.inline
-  def acCmdViewDataAccessPages: `349` = 349.asInstanceOf[`349`]
+  inline def acCmdViewDataAccessPages: `349` = 349.asInstanceOf[`349`]
   
-  @scala.inline
-  def acCmdViewDetails: `210` = 210.asInstanceOf[`210`]
+  inline def acCmdViewDetails: `210` = 210.asInstanceOf[`210`]
   
-  @scala.inline
-  def acCmdViewDiagrams: `354` = 354.asInstanceOf[`354`]
+  inline def acCmdViewDiagrams: `354` = 354.asInstanceOf[`354`]
   
-  @scala.inline
-  def acCmdViewFieldList: `353` = 353.asInstanceOf[`353`]
+  inline def acCmdViewFieldList: `353` = 353.asInstanceOf[`353`]
   
-  @scala.inline
-  def acCmdViewForms: `112` = 112.asInstanceOf[`112`]
+  inline def acCmdViewForms: `112` = 112.asInstanceOf[`112`]
   
-  @scala.inline
-  def acCmdViewFunctions: `395` = 395.asInstanceOf[`395`]
+  inline def acCmdViewFunctions: `395` = 395.asInstanceOf[`395`]
   
-  @scala.inline
-  def acCmdViewGrid: `63` = 63.asInstanceOf[`63`]
+  inline def acCmdViewGrid: `63` = 63.asInstanceOf[`63`]
   
-  @scala.inline
-  def acCmdViewLargeIcons: `209` = 209.asInstanceOf[`209`]
+  inline def acCmdViewLargeIcons: `209` = 209.asInstanceOf[`209`]
   
-  @scala.inline
-  def acCmdViewList: `212` = 212.asInstanceOf[`212`]
+  inline def acCmdViewList: `212` = 212.asInstanceOf[`212`]
   
-  @scala.inline
-  def acCmdViewMacros: `114` = 114.asInstanceOf[`114`]
+  inline def acCmdViewMacros: `114` = 114.asInstanceOf[`114`]
   
-  @scala.inline
-  def acCmdViewModules: `115` = 115.asInstanceOf[`115`]
+  inline def acCmdViewModules: `115` = 115.asInstanceOf[`115`]
   
-  @scala.inline
-  def acCmdViewObjectDependencies: `536` = 536.asInstanceOf[`536`]
+  inline def acCmdViewObjectDependencies: `536` = 536.asInstanceOf[`536`]
   
-  @scala.inline
-  def acCmdViewQueries: `111` = 111.asInstanceOf[`111`]
+  inline def acCmdViewQueries: `111` = 111.asInstanceOf[`111`]
   
-  @scala.inline
-  def acCmdViewReports: `113` = 113.asInstanceOf[`113`]
+  inline def acCmdViewReports: `113` = 113.asInstanceOf[`113`]
   
-  @scala.inline
-  def acCmdViewRuler: `61` = 61.asInstanceOf[`61`]
+  inline def acCmdViewRuler: `61` = 61.asInstanceOf[`61`]
   
-  @scala.inline
-  def acCmdViewShowPaneDiagram: `358` = 358.asInstanceOf[`358`]
+  inline def acCmdViewShowPaneDiagram: `358` = 358.asInstanceOf[`358`]
   
-  @scala.inline
-  def acCmdViewShowPaneGrid: `359` = 359.asInstanceOf[`359`]
+  inline def acCmdViewShowPaneGrid: `359` = 359.asInstanceOf[`359`]
   
-  @scala.inline
-  def acCmdViewShowPaneSQL: `357` = 357.asInstanceOf[`357`]
+  inline def acCmdViewShowPaneSQL: `357` = 357.asInstanceOf[`357`]
   
-  @scala.inline
-  def acCmdViewSmallIcons: `211` = 211.asInstanceOf[`211`]
+  inline def acCmdViewSmallIcons: `211` = 211.asInstanceOf[`211`]
   
-  @scala.inline
-  def acCmdViewStoredProcedures: `355` = 355.asInstanceOf[`355`]
+  inline def acCmdViewStoredProcedures: `355` = 355.asInstanceOf[`355`]
   
-  @scala.inline
-  def acCmdViewTableColumnNames: `363` = 363.asInstanceOf[`363`]
+  inline def acCmdViewTableColumnNames: `363` = 363.asInstanceOf[`363`]
   
-  @scala.inline
-  def acCmdViewTableColumnProperties: `368` = 368.asInstanceOf[`368`]
+  inline def acCmdViewTableColumnProperties: `368` = 368.asInstanceOf[`368`]
   
-  @scala.inline
-  def acCmdViewTableKeys: `369` = 369.asInstanceOf[`369`]
+  inline def acCmdViewTableKeys: `369` = 369.asInstanceOf[`369`]
   
-  @scala.inline
-  def acCmdViewTableNameOnly: `364` = 364.asInstanceOf[`364`]
+  inline def acCmdViewTableNameOnly: `364` = 364.asInstanceOf[`364`]
   
-  @scala.inline
-  def acCmdViewTableUserView: `370` = 370.asInstanceOf[`370`]
+  inline def acCmdViewTableUserView: `370` = 370.asInstanceOf[`370`]
   
-  @scala.inline
-  def acCmdViewTables: `110` = 110.asInstanceOf[`110`]
+  inline def acCmdViewTables: `110` = 110.asInstanceOf[`110`]
   
-  @scala.inline
-  def acCmdViewToolbox: `85` = 85.asInstanceOf[`85`]
+  inline def acCmdViewToolbox: `85` = 85.asInstanceOf[`85`]
   
-  @scala.inline
-  def acCmdViewVerifySQL: `360` = 360.asInstanceOf[`360`]
+  inline def acCmdViewVerifySQL: `360` = 360.asInstanceOf[`360`]
   
-  @scala.inline
-  def acCmdViewViews: `356` = 356.asInstanceOf[`356`]
+  inline def acCmdViewViews: `356` = 356.asInstanceOf[`356`]
   
-  @scala.inline
-  def acCmdVisualBasicEditor: `525` = 525.asInstanceOf[`525`]
+  inline def acCmdVisualBasicEditor: `525` = 525.asInstanceOf[`525`]
   
-  @scala.inline
-  def acCmdWebPagePreview: `466` = 466.asInstanceOf[`466`]
+  inline def acCmdWebPagePreview: `466` = 466.asInstanceOf[`466`]
   
-  @scala.inline
-  def acCmdWebPageProperties: `486` = 486.asInstanceOf[`486`]
+  inline def acCmdWebPageProperties: `486` = 486.asInstanceOf[`486`]
   
-  @scala.inline
-  def acCmdWebTheme: `473` = 473.asInstanceOf[`473`]
+  inline def acCmdWebTheme: `473` = 473.asInstanceOf[`473`]
   
-  @scala.inline
-  def acCmdWindowArrangeIcons: `24` = 24.asInstanceOf[`24`]
+  inline def acCmdWindowArrangeIcons: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def acCmdWindowCascade: `22` = 22.asInstanceOf[`22`]
+  inline def acCmdWindowCascade: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def acCmdWindowHide: `2` = 2.asInstanceOf[`2`]
+  inline def acCmdWindowHide: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acCmdWindowSplit: `121` = 121.asInstanceOf[`121`]
+  inline def acCmdWindowSplit: `121` = 121.asInstanceOf[`121`]
   
-  @scala.inline
-  def acCmdWindowUnhide: `1` = 1.asInstanceOf[`1`]
+  inline def acCmdWindowUnhide: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acCmdWordMailMerge: `195` = 195.asInstanceOf[`195`]
+  inline def acCmdWordMailMerge: `195` = 195.asInstanceOf[`195`]
   
-  @scala.inline
-  def acCmdWorkflowTasks: `674` = 674.asInstanceOf[`674`]
+  inline def acCmdWorkflowTasks: `674` = 674.asInstanceOf[`674`]
   
-  @scala.inline
-  def acCmdWorkgroupAdministrator: `391` = 391.asInstanceOf[`391`]
+  inline def acCmdWorkgroupAdministrator: `391` = 391.asInstanceOf[`391`]
   
-  @scala.inline
-  def acCmdZoom10: `244` = 244.asInstanceOf[`244`]
+  inline def acCmdZoom10: `244` = 244.asInstanceOf[`244`]
   
-  @scala.inline
-  def acCmdZoom100: `240` = 240.asInstanceOf[`240`]
+  inline def acCmdZoom100: `240` = 240.asInstanceOf[`240`]
   
-  @scala.inline
-  def acCmdZoom1000: `482` = 482.asInstanceOf[`482`]
+  inline def acCmdZoom1000: `482` = 482.asInstanceOf[`482`]
   
-  @scala.inline
-  def acCmdZoom150: `239` = 239.asInstanceOf[`239`]
+  inline def acCmdZoom150: `239` = 239.asInstanceOf[`239`]
   
-  @scala.inline
-  def acCmdZoom200: `238` = 238.asInstanceOf[`238`]
+  inline def acCmdZoom200: `238` = 238.asInstanceOf[`238`]
   
-  @scala.inline
-  def acCmdZoom25: `243` = 243.asInstanceOf[`243`]
+  inline def acCmdZoom25: `243` = 243.asInstanceOf[`243`]
   
-  @scala.inline
-  def acCmdZoom50: `242` = 242.asInstanceOf[`242`]
+  inline def acCmdZoom50: `242` = 242.asInstanceOf[`242`]
   
-  @scala.inline
-  def acCmdZoom500: `481` = 481.asInstanceOf[`481`]
+  inline def acCmdZoom500: `481` = 481.asInstanceOf[`481`]
   
-  @scala.inline
-  def acCmdZoom75: `241` = 241.asInstanceOf[`241`]
+  inline def acCmdZoom75: `241` = 241.asInstanceOf[`241`]
   
-  @scala.inline
-  def acCmdZoomBox: `179` = 179.asInstanceOf[`179`]
+  inline def acCmdZoomBox: `179` = 179.asInstanceOf[`179`]
   
-  @scala.inline
-  def acCmdZoomSelection: `371` = 371.asInstanceOf[`371`]
+  inline def acCmdZoomSelection: `371` = 371.asInstanceOf[`371`]
 }

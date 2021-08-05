@@ -11,17 +11,14 @@ trait FilePlaceholder extends StObject {
 }
 object FilePlaceholder {
   
-  @scala.inline
-  def apply(): FilePlaceholder = {
+  inline def apply(): FilePlaceholder = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("placeholder")
     __obj.asInstanceOf[FilePlaceholder]
   }
   
-  @scala.inline
-  implicit class FilePlaceholderMutableBuilder[Self <: FilePlaceholder] (val x: Self) extends AnyVal {
+  extension [Self <: FilePlaceholder](x: Self) {
     
-    @scala.inline
-    def setType(value: placeholder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: placeholder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

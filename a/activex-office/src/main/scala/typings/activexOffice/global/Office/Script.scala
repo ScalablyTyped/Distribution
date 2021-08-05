@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Script")
 @js.native
-class Script protected ()
+/* private */ class Script ()
   extends StObject
      with typings.activexOffice.Office.Script {
   
@@ -33,7 +33,7 @@ class Script protected ()
   /* CompleteClass */
   override val Location: MsoScriptLocation = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.Script_typekey")
   var OfficeDotScript_typekey: typings.activexOffice.Office.Script = js.native
   

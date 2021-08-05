@@ -39,8 +39,7 @@ object interfacesMod {
   }
   object FormsyContextInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachToForm: InputComponent[js.Any] => Unit,
       detachFromForm: InputComponent[js.Any] => Unit,
       isFormDisabled: Boolean,
@@ -52,26 +51,19 @@ object interfacesMod {
       __obj.asInstanceOf[FormsyContextInterface]
     }
     
-    @scala.inline
-    implicit class FormsyContextInterfaceMutableBuilder[Self <: FormsyContextInterface] (val x: Self) extends AnyVal {
+    extension [Self <: FormsyContextInterface](x: Self) {
       
-      @scala.inline
-      def setAttachToForm(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "attachToForm", js.Any.fromFunction1(value))
+      inline def setAttachToForm(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "attachToForm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDetachFromForm(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "detachFromForm", js.Any.fromFunction1(value))
+      inline def setDetachFromForm(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "detachFromForm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFormDisabled(value: Boolean): Self = StObject.set(x, "isFormDisabled", value.asInstanceOf[js.Any])
+      inline def setIsFormDisabled(value: Boolean): Self = StObject.set(x, "isFormDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValidValue(value: (InputComponent[js.Any], js.Any) => Boolean): Self = StObject.set(x, "isValidValue", js.Any.fromFunction2(value))
+      inline def setIsValidValue(value: (InputComponent[js.Any], js.Any) => Boolean): Self = StObject.set(x, "isValidValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRunValidation(value: InputComponent[js.Any] => IsRequired): Self = StObject.set(x, "runValidation", js.Any.fromFunction1(value))
+      inline def setRunValidation(value: InputComponent[js.Any] => IsRequired): Self = StObject.set(x, "runValidation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidate(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: InputComponent[js.Any] => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
   }
   

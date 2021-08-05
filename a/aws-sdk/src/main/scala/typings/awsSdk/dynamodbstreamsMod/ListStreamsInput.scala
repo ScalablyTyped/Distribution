@@ -23,31 +23,23 @@ trait ListStreamsInput extends StObject {
 }
 object ListStreamsInput {
   
-  @scala.inline
-  def apply(): ListStreamsInput = {
+  inline def apply(): ListStreamsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStreamsInput]
   }
   
-  @scala.inline
-  implicit class ListStreamsInputMutableBuilder[Self <: ListStreamsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStreamsInput](x: Self) {
     
-    @scala.inline
-    def setExclusiveStartStreamArn(value: StreamArn): Self = StObject.set(x, "ExclusiveStartStreamArn", value.asInstanceOf[js.Any])
+    inline def setExclusiveStartStreamArn(value: StreamArn): Self = StObject.set(x, "ExclusiveStartStreamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartStreamArnUndefined: Self = StObject.set(x, "ExclusiveStartStreamArn", js.undefined)
+    inline def setExclusiveStartStreamArnUndefined: Self = StObject.set(x, "ExclusiveStartStreamArn", js.undefined)
     
-    @scala.inline
-    def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

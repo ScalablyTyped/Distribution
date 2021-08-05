@@ -17,20 +17,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object FootnoteReferenceOpenToken {
   
-  @scala.inline
-  def apply(id: Double, label: String, level: Double): FootnoteReferenceOpenToken = {
+  inline def apply(id: Double, label: String, level: Double): FootnoteReferenceOpenToken = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("footnote_reference_open")
     __obj.asInstanceOf[FootnoteReferenceOpenToken]
   }
   
-  @scala.inline
-  implicit class FootnoteReferenceOpenTokenMutableBuilder[Self <: FootnoteReferenceOpenToken] (val x: Self) extends AnyVal {
+  extension [Self <: FootnoteReferenceOpenToken](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: footnote_reference_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: footnote_reference_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

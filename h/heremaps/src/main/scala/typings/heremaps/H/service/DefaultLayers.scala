@@ -17,19 +17,15 @@ trait DefaultLayers extends StObject {
 }
 object DefaultLayers {
   
-  @scala.inline
-  def apply(raster: Satellite, vector: Normal): DefaultLayers = {
+  inline def apply(raster: Satellite, vector: Normal): DefaultLayers = {
     val __obj = js.Dynamic.literal(raster = raster.asInstanceOf[js.Any], vector = vector.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultLayers]
   }
   
-  @scala.inline
-  implicit class DefaultLayersMutableBuilder[Self <: DefaultLayers] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultLayers](x: Self) {
     
-    @scala.inline
-    def setRaster(value: Satellite): Self = StObject.set(x, "raster", value.asInstanceOf[js.Any])
+    inline def setRaster(value: Satellite): Self = StObject.set(x, "raster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVector(value: Normal): Self = StObject.set(x, "vector", value.asInstanceOf[js.Any])
+    inline def setVector(value: Normal): Self = StObject.set(x, "vector", value.asInstanceOf[js.Any])
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ICanvasTextMetrics")
 @js.native
-class ICanvasTextMetrics protected ()
+/* private */ class ICanvasTextMetrics ()
   extends StObject
      with typings.activexMshtml.MSHTML.ICanvasTextMetrics {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.ICanvasTextMetrics_typekey")
   var MSHTMLDotICanvasTextMetrics_typekey: typings.activexMshtml.MSHTML.ICanvasTextMetrics = js.native
   

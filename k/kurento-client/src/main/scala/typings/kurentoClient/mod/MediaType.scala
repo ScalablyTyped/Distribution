@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaType extends StObject
 object MediaType {
   
-  @scala.inline
-  def AUDIO: typings.kurentoClient.kurentoClientStrings.AUDIO = "AUDIO".asInstanceOf[typings.kurentoClient.kurentoClientStrings.AUDIO]
+  inline def AUDIO: typings.kurentoClient.kurentoClientStrings.AUDIO = "AUDIO".asInstanceOf[typings.kurentoClient.kurentoClientStrings.AUDIO]
   
-  @scala.inline
-  def SpaceDATA: typings.kurentoClient.kurentoClientStrings.SpaceDATA = (" DATA").asInstanceOf[typings.kurentoClient.kurentoClientStrings.SpaceDATA]
+  inline def SpaceDATA: typings.kurentoClient.kurentoClientStrings.SpaceDATA = (" DATA").asInstanceOf[typings.kurentoClient.kurentoClientStrings.SpaceDATA]
   
-  @scala.inline
-  def VIDEO: typings.kurentoClient.kurentoClientStrings.VIDEO = "VIDEO".asInstanceOf[typings.kurentoClient.kurentoClientStrings.VIDEO]
+  inline def VIDEO: typings.kurentoClient.kurentoClientStrings.VIDEO = "VIDEO".asInstanceOf[typings.kurentoClient.kurentoClientStrings.VIDEO]
 }

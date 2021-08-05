@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFValueListItemPropertyDef extends StObject
 object MFValueListItemPropertyDef {
   
-  @scala.inline
-  def Deleted: `5` = 5.asInstanceOf[`5`]
+  inline def Deleted: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ExtID: `7` = 7.asInstanceOf[`7`]
+  inline def ExtID: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def ID: `1` = 1.asInstanceOf[`1`]
+  inline def ID: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Name: `2` = 2.asInstanceOf[`2`]
+  inline def Name: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ObjectType: `6` = 6.asInstanceOf[`6`]
+  inline def ObjectType: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def Owner: `3` = 3.asInstanceOf[`3`]
+  inline def Owner: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Parent: `4` = 4.asInstanceOf[`4`]
+  inline def Parent: `4` = 4.asInstanceOf[`4`]
 }

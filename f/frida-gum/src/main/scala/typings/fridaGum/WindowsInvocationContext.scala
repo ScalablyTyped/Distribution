@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object WindowsInvocationContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     context: CpuContext,
     depth: Double,
     lastError: Double,
@@ -28,10 +27,8 @@ object WindowsInvocationContext {
     __obj.asInstanceOf[WindowsInvocationContext]
   }
   
-  @scala.inline
-  implicit class WindowsInvocationContextMutableBuilder[Self <: WindowsInvocationContext] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsInvocationContext](x: Self) {
     
-    @scala.inline
-    def setLastError(value: Double): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
+    inline def setLastError(value: Double): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait ASPxDesignerToolboxItem extends StObject {
 }
 object ASPxDesignerToolboxItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultVal: js.Any,
     info: js.Array[ASPxDesignerElementSerializationInfo],
     isToolboxItem: Boolean,
@@ -37,34 +36,24 @@ object ASPxDesignerToolboxItem {
     __obj.asInstanceOf[ASPxDesignerToolboxItem]
   }
   
-  @scala.inline
-  implicit class ASPxDesignerToolboxItemMutableBuilder[Self <: ASPxDesignerToolboxItem] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxDesignerToolboxItem](x: Self) {
     
-    @scala.inline
-    def setDefaultVal(value: js.Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
+    inline def setDefaultVal(value: js.Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: js.Array[ASPxDesignerElementSerializationInfo]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: js.Array[ASPxDesignerElementSerializationInfo]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoVarargs(value: ASPxDesignerElementSerializationInfo*): Self = StObject.set(x, "info", js.Array(value :_*))
+    inline def setInfoVarargs(value: ASPxDesignerElementSerializationInfo*): Self = StObject.set(x, "info", js.Array(value :_*))
     
-    @scala.inline
-    def setIsToolboxItem(value: Boolean): Self = StObject.set(x, "isToolboxItem", value.asInstanceOf[js.Any])
+    inline def setIsToolboxItem(value: Boolean): Self = StObject.set(x, "isToolboxItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopularProperties(value: js.Array[String]): Self = StObject.set(x, "popularProperties", value.asInstanceOf[js.Any])
+    inline def setPopularProperties(value: js.Array[String]): Self = StObject.set(x, "popularProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopularPropertiesVarargs(value: String*): Self = StObject.set(x, "popularProperties", js.Array(value :_*))
+    inline def setPopularPropertiesVarargs(value: String*): Self = StObject.set(x, "popularProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setSurfaceType(value: js.Any): Self = StObject.set(x, "surfaceType", value.asInstanceOf[js.Any])
+    inline def setSurfaceType(value: js.Any): Self = StObject.set(x, "surfaceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolboxIndex(value: Double): Self = StObject.set(x, "toolboxIndex", value.asInstanceOf[js.Any])
+    inline def setToolboxIndex(value: Double): Self = StObject.set(x, "toolboxIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

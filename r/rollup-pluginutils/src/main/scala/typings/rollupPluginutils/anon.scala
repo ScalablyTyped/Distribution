@@ -13,23 +13,18 @@ object anon {
   }
   object Resolve {
     
-    @scala.inline
-    def apply(): Resolve = {
+    inline def apply(): Resolve = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Resolve]
     }
     
-    @scala.inline
-    implicit class ResolveMutableBuilder[Self <: Resolve] (val x: Self) extends AnyVal {
+    extension [Self <: Resolve](x: Self) {
       
-      @scala.inline
-      def setResolve(value: String | `false`): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: String | `false`): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveNull: Self = StObject.set(x, "resolve", null)
+      inline def setResolveNull: Self = StObject.set(x, "resolve", null)
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     }
   }
 }

@@ -24,8 +24,7 @@ object moonLoaderMod {
     @JSImport("react-spinners/MoonLoader", "default.defaultProps")
     @js.native
     def defaultProps: LoaderSizeProps = js.native
-    @scala.inline
-    def defaultProps_=(x: LoaderSizeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: LoaderSizeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type BallStyleFunction = js.Function1[/* size */ Double, PrecompiledCss]

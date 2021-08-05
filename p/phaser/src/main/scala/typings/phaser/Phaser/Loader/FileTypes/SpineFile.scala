@@ -16,8 +16,7 @@ trait SpineFile
 }
 object SpineFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => js.Any,
     addToMultiFile: File => MultiFile,
     baseURL: String,
@@ -40,10 +39,8 @@ object SpineFile {
     __obj.asInstanceOf[SpineFile]
   }
   
-  @scala.inline
-  implicit class SpineFileMutableBuilder[Self <: SpineFile] (val x: Self) extends AnyVal {
+  extension [Self <: SpineFile](x: Self) {
     
-    @scala.inline
-    def setAddToCache(value: () => js.Any): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
+    inline def setAddToCache(value: () => js.Any): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }
 }

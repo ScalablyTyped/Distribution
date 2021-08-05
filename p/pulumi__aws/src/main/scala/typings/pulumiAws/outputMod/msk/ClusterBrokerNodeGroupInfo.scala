@@ -33,8 +33,7 @@ trait ClusterBrokerNodeGroupInfo extends StObject {
 }
 object ClusterBrokerNodeGroupInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientSubnets: js.Array[String],
     ebsVolumeSize: Double,
     instanceType: String,
@@ -44,31 +43,22 @@ object ClusterBrokerNodeGroupInfo {
     __obj.asInstanceOf[ClusterBrokerNodeGroupInfo]
   }
   
-  @scala.inline
-  implicit class ClusterBrokerNodeGroupInfoMutableBuilder[Self <: ClusterBrokerNodeGroupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterBrokerNodeGroupInfo](x: Self) {
     
-    @scala.inline
-    def setAzDistribution(value: String): Self = StObject.set(x, "azDistribution", value.asInstanceOf[js.Any])
+    inline def setAzDistribution(value: String): Self = StObject.set(x, "azDistribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzDistributionUndefined: Self = StObject.set(x, "azDistribution", js.undefined)
+    inline def setAzDistributionUndefined: Self = StObject.set(x, "azDistribution", js.undefined)
     
-    @scala.inline
-    def setClientSubnets(value: js.Array[String]): Self = StObject.set(x, "clientSubnets", value.asInstanceOf[js.Any])
+    inline def setClientSubnets(value: js.Array[String]): Self = StObject.set(x, "clientSubnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSubnetsVarargs(value: String*): Self = StObject.set(x, "clientSubnets", js.Array(value :_*))
+    inline def setClientSubnetsVarargs(value: String*): Self = StObject.set(x, "clientSubnets", js.Array(value :_*))
     
-    @scala.inline
-    def setEbsVolumeSize(value: Double): Self = StObject.set(x, "ebsVolumeSize", value.asInstanceOf[js.Any])
+    inline def setEbsVolumeSize(value: Double): Self = StObject.set(x, "ebsVolumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
   }
 }

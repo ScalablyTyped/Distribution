@@ -22,25 +22,19 @@ trait ProjectedVolumeSource extends StObject {
 }
 object ProjectedVolumeSource {
   
-  @scala.inline
-  def apply(sources: Input[js.Array[Input[VolumeProjection]]]): ProjectedVolumeSource = {
+  inline def apply(sources: Input[js.Array[Input[VolumeProjection]]]): ProjectedVolumeSource = {
     val __obj = js.Dynamic.literal(sources = sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectedVolumeSource]
   }
   
-  @scala.inline
-  implicit class ProjectedVolumeSourceMutableBuilder[Self <: ProjectedVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectedVolumeSource](x: Self) {
     
-    @scala.inline
-    def setDefaultMode(value: Input[Double]): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
+    inline def setDefaultMode(value: Input[Double]): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultModeUndefined: Self = StObject.set(x, "defaultMode", js.undefined)
+    inline def setDefaultModeUndefined: Self = StObject.set(x, "defaultMode", js.undefined)
     
-    @scala.inline
-    def setSources(value: Input[js.Array[Input[VolumeProjection]]]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: Input[js.Array[Input[VolumeProjection]]]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesVarargs(value: Input[VolumeProjection]*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Input[VolumeProjection]*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

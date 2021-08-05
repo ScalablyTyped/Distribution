@@ -25,8 +25,7 @@ object LoaderResource {
   @JSImport("pixi.js", "LoaderResource.EMPTY_GIF")
   @js.native
   def EMPTY_GIF: String = js.native
-  @scala.inline
-  def EMPTY_GIF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_GIF")(x.asInstanceOf[js.Any])
+  inline def EMPTY_GIF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_GIF")(x.asInstanceOf[js.Any])
   
   @JSImport("pixi.js", "LoaderResource.LOAD_TYPE")
   @js.native
@@ -102,9 +101,7 @@ object LoaderResource {
     /* "text" */ val TEXT: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.TEXT & String = js.native
   }
   
-  @scala.inline
-  def setExtensionLoadType(extname: String, loadType: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtensionLoadType")(extname.asInstanceOf[js.Any], loadType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setExtensionLoadType(extname: String, loadType: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtensionLoadType")(extname.asInstanceOf[js.Any], loadType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setExtensionXhrType(extname: String, xhrType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtensionXhrType")(extname.asInstanceOf[js.Any], xhrType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setExtensionXhrType(extname: String, xhrType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtensionXhrType")(extname.asInstanceOf[js.Any], xhrType.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

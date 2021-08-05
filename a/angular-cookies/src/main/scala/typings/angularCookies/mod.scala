@@ -63,44 +63,32 @@ object mod extends Shortcut {
       }
       object ICookiesOptions {
         
-        @scala.inline
-        def apply(): ICookiesOptions = {
+        inline def apply(): ICookiesOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ICookiesOptions]
         }
         
-        @scala.inline
-        implicit class ICookiesOptionsMutableBuilder[Self <: ICookiesOptions] (val x: Self) extends AnyVal {
+        extension [Self <: ICookiesOptions](x: Self) {
           
-          @scala.inline
-          def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+          inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+          inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
           
-          @scala.inline
-          def setExpires(value: String | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+          inline def setExpires(value: String | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+          inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
           
-          @scala.inline
-          def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+          inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+          inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
           
-          @scala.inline
-          def setSamesite(value: String): Self = StObject.set(x, "samesite", value.asInstanceOf[js.Any])
+          inline def setSamesite(value: String): Self = StObject.set(x, "samesite", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSamesiteUndefined: Self = StObject.set(x, "samesite", js.undefined)
+          inline def setSamesiteUndefined: Self = StObject.set(x, "samesite", js.undefined)
           
-          @scala.inline
-          def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+          inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+          inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
         }
       }
       
@@ -117,17 +105,14 @@ object mod extends Shortcut {
       }
       object ICookiesProvider {
         
-        @scala.inline
-        def apply(defaults: ICookiesOptions): ICookiesProvider = {
+        inline def apply(defaults: ICookiesOptions): ICookiesProvider = {
           val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
           __obj.asInstanceOf[ICookiesProvider]
         }
         
-        @scala.inline
-        implicit class ICookiesProviderMutableBuilder[Self <: ICookiesProvider] (val x: Self) extends AnyVal {
+        extension [Self <: ICookiesProvider](x: Self) {
           
-          @scala.inline
-          def setDefaults(value: ICookiesOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+          inline def setDefaults(value: ICookiesOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
         }
       }
       

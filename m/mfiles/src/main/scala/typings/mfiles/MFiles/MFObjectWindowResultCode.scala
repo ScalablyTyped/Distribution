@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFObjectWindowResultCode extends StObject
 object MFObjectWindowResultCode {
   
-  @scala.inline
-  def Cancel: `1` = 1.asInstanceOf[`1`]
+  inline def Cancel: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Ok: `0` = 0.asInstanceOf[`0`]
+  inline def Ok: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def OkToAll: `2` = 2.asInstanceOf[`2`]
+  inline def OkToAll: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SkipThis: `3` = 3.asInstanceOf[`3`]
+  inline def SkipThis: `3` = 3.asInstanceOf[`3`]
 }

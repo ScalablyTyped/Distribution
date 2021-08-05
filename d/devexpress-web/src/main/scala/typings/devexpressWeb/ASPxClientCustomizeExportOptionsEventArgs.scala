@@ -37,8 +37,7 @@ trait ASPxClientCustomizeExportOptionsEventArgs
 }
 object ASPxClientCustomizeExportOptionsEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetExportOptionsModel: js.Any => js.Any,
     HideExportOptionsPanel: () => Unit,
     HideFormat: js.Any => Unit,
@@ -48,19 +47,14 @@ object ASPxClientCustomizeExportOptionsEventArgs {
     __obj.asInstanceOf[ASPxClientCustomizeExportOptionsEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCustomizeExportOptionsEventArgsMutableBuilder[Self <: ASPxClientCustomizeExportOptionsEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCustomizeExportOptionsEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetExportOptionsModel(value: js.Any => js.Any): Self = StObject.set(x, "GetExportOptionsModel", js.Any.fromFunction1(value))
+    inline def setGetExportOptionsModel(value: js.Any => js.Any): Self = StObject.set(x, "GetExportOptionsModel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideExportOptionsPanel(value: () => Unit): Self = StObject.set(x, "HideExportOptionsPanel", js.Any.fromFunction0(value))
+    inline def setHideExportOptionsPanel(value: () => Unit): Self = StObject.set(x, "HideExportOptionsPanel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideFormat(value: js.Any => Unit): Self = StObject.set(x, "HideFormat", js.Any.fromFunction1(value))
+    inline def setHideFormat(value: js.Any => Unit): Self = StObject.set(x, "HideFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideProperties(value: (js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "HideProperties", js.Any.fromFunction2(value))
+    inline def setHideProperties(value: (js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "HideProperties", js.Any.fromFunction2(value))
   }
 }

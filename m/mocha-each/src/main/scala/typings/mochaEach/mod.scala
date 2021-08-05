@@ -17,14 +17,10 @@ object mod {
     * a series of mocha tests, defined using the `it` or `describe` notation common to
     * Mocha.
     */
-  @scala.inline
-  def apply(parameters: js.Array[js.Any]): Describe = ^.asInstanceOf[js.Dynamic].apply(parameters.asInstanceOf[js.Any]).asInstanceOf[Describe]
-  @scala.inline
-  def apply(parameters: js.Array[js.Any], dIt: Unit, dDescribe: SuiteFunction): Describe = (^.asInstanceOf[js.Dynamic].apply(parameters.asInstanceOf[js.Any], dIt.asInstanceOf[js.Any], dDescribe.asInstanceOf[js.Any])).asInstanceOf[Describe]
-  @scala.inline
-  def apply(parameters: js.Array[js.Any], dIt: TestFunction): Describe = (^.asInstanceOf[js.Dynamic].apply(parameters.asInstanceOf[js.Any], dIt.asInstanceOf[js.Any])).asInstanceOf[Describe]
-  @scala.inline
-  def apply(parameters: js.Array[js.Any], dIt: TestFunction, dDescribe: SuiteFunction): Describe = (^.asInstanceOf[js.Dynamic].apply(parameters.asInstanceOf[js.Any], dIt.asInstanceOf[js.Any], dDescribe.asInstanceOf[js.Any])).asInstanceOf[Describe]
+  inline def apply(parameters: js.Array[js.Any]): Describe = ^.asInstanceOf[js.Dynamic].apply(parameters.asInstanceOf[js.Any]).asInstanceOf[Describe]
+  inline def apply(parameters: js.Array[js.Any], dIt: Unit, dDescribe: SuiteFunction): Describe = (^.asInstanceOf[js.Dynamic].apply(parameters.asInstanceOf[js.Any], dIt.asInstanceOf[js.Any], dDescribe.asInstanceOf[js.Any])).asInstanceOf[Describe]
+  inline def apply(parameters: js.Array[js.Any], dIt: TestFunction): Describe = (^.asInstanceOf[js.Dynamic].apply(parameters.asInstanceOf[js.Any], dIt.asInstanceOf[js.Any])).asInstanceOf[Describe]
+  inline def apply(parameters: js.Array[js.Any], dIt: TestFunction, dDescribe: SuiteFunction): Describe = (^.asInstanceOf[js.Dynamic].apply(parameters.asInstanceOf[js.Any], dIt.asInstanceOf[js.Any], dDescribe.asInstanceOf[js.Any])).asInstanceOf[Describe]
   
   @JSImport("mocha-each", JSImport.Namespace)
   @js.native

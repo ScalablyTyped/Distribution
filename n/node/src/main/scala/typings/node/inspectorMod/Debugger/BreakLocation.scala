@@ -26,31 +26,23 @@ trait BreakLocation extends StObject {
 }
 object BreakLocation {
   
-  @scala.inline
-  def apply(lineNumber: Double, scriptId: ScriptId): BreakLocation = {
+  inline def apply(lineNumber: Double, scriptId: ScriptId): BreakLocation = {
     val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreakLocation]
   }
   
-  @scala.inline
-  implicit class BreakLocationMutableBuilder[Self <: BreakLocation] (val x: Self) extends AnyVal {
+  extension [Self <: BreakLocation](x: Self) {
     
-    @scala.inline
-    def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+    inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

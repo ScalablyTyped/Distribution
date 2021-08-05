@@ -11,8 +11,7 @@ trait StreamSocketInformation
      with IStreamSocketInformation
 object StreamSocketInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bandwidthStatistics: BandwidthStatistics,
     localAddress: HostName,
     localPort: String,

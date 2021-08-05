@@ -24,20 +24,16 @@ object memory {
   }
   object MemoryInfo {
     
-    @scala.inline
-    def apply(availableCapacity: Double, capacity: Double): MemoryInfo = {
+    inline def apply(availableCapacity: Double, capacity: Double): MemoryInfo = {
       val __obj = js.Dynamic.literal(availableCapacity = availableCapacity.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemoryInfo]
     }
     
-    @scala.inline
-    implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MemoryInfo](x: Self) {
       
-      @scala.inline
-      def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
+      inline def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     }
   }
 }

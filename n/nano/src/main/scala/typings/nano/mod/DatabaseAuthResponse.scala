@@ -18,25 +18,19 @@ trait DatabaseAuthResponse extends StObject {
 }
 object DatabaseAuthResponse {
   
-  @scala.inline
-  def apply(name: String, ok: Boolean, roles: js.Array[String]): DatabaseAuthResponse = {
+  inline def apply(name: String, ok: Boolean, roles: js.Array[String]): DatabaseAuthResponse = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseAuthResponse]
   }
   
-  @scala.inline
-  implicit class DatabaseAuthResponseMutableBuilder[Self <: DatabaseAuthResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseAuthResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

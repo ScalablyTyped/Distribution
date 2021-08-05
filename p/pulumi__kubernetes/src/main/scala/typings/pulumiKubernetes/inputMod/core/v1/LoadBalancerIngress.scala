@@ -22,25 +22,19 @@ trait LoadBalancerIngress extends StObject {
 }
 object LoadBalancerIngress {
   
-  @scala.inline
-  def apply(): LoadBalancerIngress = {
+  inline def apply(): LoadBalancerIngress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerIngress]
   }
   
-  @scala.inline
-  implicit class LoadBalancerIngressMutableBuilder[Self <: LoadBalancerIngress] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerIngress](x: Self) {
     
-    @scala.inline
-    def setHostname(value: Input[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: Input[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+    inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
   }
 }

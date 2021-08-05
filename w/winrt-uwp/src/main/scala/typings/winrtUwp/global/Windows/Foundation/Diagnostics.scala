@@ -32,28 +32,23 @@ object Diagnostics {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_tracingstatuschanged(`type`: tracingstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_tracingstatuschanged(`type`: tracingstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Raised when a client starts listening to the causality trace. */
     /* static member */
     @JSGlobal("Windows.Foundation.Diagnostics.AsyncCausalityTracer.ontracingstatuschanged")
     @js.native
     def ontracingstatuschanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def ontracingstatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ontracingstatuschanged")(x.asInstanceOf[js.Any])
+    inline def ontracingstatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ontracingstatuschanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_tracingstatuschanged(`type`: tracingstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_tracingstatuschanged(`type`: tracingstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Indicates that a previously created asynchronous operation has completed all of its asynchronous work.
@@ -64,8 +59,7 @@ object Diagnostics {
       * @param status The completion status of the asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def traceOperationCompletion(
+    inline def traceOperationCompletion(
       traceLevel: CausalityTraceLevel,
       source: CausalitySource,
       platformId: String,
@@ -83,8 +77,7 @@ object Diagnostics {
       * @param relatedContext Additional information related to this operation.
       */
     /* static member */
-    @scala.inline
-    def traceOperationCreation(
+    inline def traceOperationCreation(
       traceLevel: CausalityTraceLevel,
       source: CausalitySource,
       platformId: String,
@@ -102,8 +95,7 @@ object Diagnostics {
       * @param relation The relationship between the synchronous work item and asynchronous operation identified by operationId.
       */
     /* static member */
-    @scala.inline
-    def traceOperationRelation(
+    inline def traceOperationRelation(
       traceLevel: CausalityTraceLevel,
       source: CausalitySource,
       platformId: String,
@@ -118,8 +110,7 @@ object Diagnostics {
       * @param work Indicates the type of completion.
       */
     /* static member */
-    @scala.inline
-    def traceSynchronousWorkCompletion(traceLevel: CausalityTraceLevel, source: CausalitySource, work: CausalitySynchronousWork): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceSynchronousWorkCompletion")(traceLevel.asInstanceOf[js.Any], source.asInstanceOf[js.Any], work.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def traceSynchronousWorkCompletion(traceLevel: CausalityTraceLevel, source: CausalitySource, work: CausalitySynchronousWork): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceSynchronousWorkCompletion")(traceLevel.asInstanceOf[js.Any], source.asInstanceOf[js.Any], work.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Indicates that the specified asynchronous operation is scheduling synchronous work on the thread that the TraceSynchronousWorkStart method is called on.
@@ -130,8 +121,7 @@ object Diagnostics {
       * @param work The relationship between the work item and the asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def traceSynchronousWorkStart(
+    inline def traceSynchronousWorkStart(
       traceLevel: CausalityTraceLevel,
       source: CausalitySource,
       platformId: String,
@@ -237,8 +227,7 @@ object Diagnostics {
       * @return The newly created ErrorDetails object representing the error.
       */
     /* static member */
-    @scala.inline
-    def createFromHResultAsync(errorCode: Double): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Foundation.Diagnostics.ErrorDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHResultAsync")(errorCode.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Foundation.Diagnostics.ErrorDetails]]
+    inline def createFromHResultAsync(errorCode: Double): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Foundation.Diagnostics.ErrorDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHResultAsync")(errorCode.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Foundation.Diagnostics.ErrorDetails]]
   }
   
   /** Specifies the type of diagnostic error reporting for a thread. */

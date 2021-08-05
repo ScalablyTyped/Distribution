@@ -16,37 +16,27 @@ trait Audio extends StObject {
 }
 object Audio {
   
-  @scala.inline
-  def apply(): Audio = {
+  inline def apply(): Audio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Audio]
   }
   
-  @scala.inline
-  implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
+  extension [Self <: Audio](x: Self) {
     
-    @scala.inline
-    def setAudio(value: Double): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: Double): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
-    @scala.inline
-    def setClosedCaptions(value: Double): Self = StObject.set(x, "closedCaptions", value.asInstanceOf[js.Any])
+    inline def setClosedCaptions(value: Double): Self = StObject.set(x, "closedCaptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosedCaptionsUndefined: Self = StObject.set(x, "closedCaptions", js.undefined)
+    inline def setClosedCaptionsUndefined: Self = StObject.set(x, "closedCaptions", js.undefined)
     
-    @scala.inline
-    def setSubtitles(value: Double): Self = StObject.set(x, "subtitles", value.asInstanceOf[js.Any])
+    inline def setSubtitles(value: Double): Self = StObject.set(x, "subtitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitlesUndefined: Self = StObject.set(x, "subtitles", js.undefined)
+    inline def setSubtitlesUndefined: Self = StObject.set(x, "subtitles", js.undefined)
     
-    @scala.inline
-    def setVideo(value: Double): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Double): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

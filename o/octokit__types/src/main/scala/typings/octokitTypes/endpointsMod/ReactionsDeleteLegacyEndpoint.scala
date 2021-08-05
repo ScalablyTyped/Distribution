@@ -14,16 +14,13 @@ trait ReactionsDeleteLegacyEndpoint
 }
 object ReactionsDeleteLegacyEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[`squirrel-girl`], reaction_id: Double): ReactionsDeleteLegacyEndpoint = {
+  inline def apply(mediaType: `0`[`squirrel-girl`], reaction_id: Double): ReactionsDeleteLegacyEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], reaction_id = reaction_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactionsDeleteLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class ReactionsDeleteLegacyEndpointMutableBuilder[Self <: ReactionsDeleteLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionsDeleteLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setReaction_id(value: Double): Self = StObject.set(x, "reaction_id", value.asInstanceOf[js.Any])
+    inline def setReaction_id(value: Double): Self = StObject.set(x, "reaction_id", value.asInstanceOf[js.Any])
   }
 }

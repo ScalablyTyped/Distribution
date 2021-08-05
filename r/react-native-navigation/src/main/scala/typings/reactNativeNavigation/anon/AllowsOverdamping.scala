@@ -24,47 +24,34 @@ trait AllowsOverdamping
 }
 object AllowsOverdamping {
   
-  @scala.inline
-  def apply(): AllowsOverdamping = {
+  inline def apply(): AllowsOverdamping = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("spring")
     __obj.asInstanceOf[AllowsOverdamping]
   }
   
-  @scala.inline
-  implicit class AllowsOverdampingMutableBuilder[Self <: AllowsOverdamping] (val x: Self) extends AnyVal {
+  extension [Self <: AllowsOverdamping](x: Self) {
     
-    @scala.inline
-    def setAllowsOverdamping(value: Boolean): Self = StObject.set(x, "allowsOverdamping", value.asInstanceOf[js.Any])
+    inline def setAllowsOverdamping(value: Boolean): Self = StObject.set(x, "allowsOverdamping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowsOverdampingUndefined: Self = StObject.set(x, "allowsOverdamping", js.undefined)
+    inline def setAllowsOverdampingUndefined: Self = StObject.set(x, "allowsOverdamping", js.undefined)
     
-    @scala.inline
-    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+    inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+    inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
     
-    @scala.inline
-    def setInitialVelocity(value: Double): Self = StObject.set(x, "initialVelocity", value.asInstanceOf[js.Any])
+    inline def setInitialVelocity(value: Double): Self = StObject.set(x, "initialVelocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialVelocityUndefined: Self = StObject.set(x, "initialVelocity", js.undefined)
+    inline def setInitialVelocityUndefined: Self = StObject.set(x, "initialVelocity", js.undefined)
     
-    @scala.inline
-    def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+    inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
+    inline def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
     
-    @scala.inline
-    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+    inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+    inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     
-    @scala.inline
-    def setType(value: spring): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: spring): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

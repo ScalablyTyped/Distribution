@@ -28,31 +28,23 @@ trait RenderUiTemplateRequest extends StObject {
 }
 object RenderUiTemplateRequest {
   
-  @scala.inline
-  def apply(RoleArn: RoleArn, Task: RenderableTask): RenderUiTemplateRequest = {
+  inline def apply(RoleArn: RoleArn, Task: RenderableTask): RenderUiTemplateRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], Task = Task.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderUiTemplateRequest]
   }
   
-  @scala.inline
-  implicit class RenderUiTemplateRequestMutableBuilder[Self <: RenderUiTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RenderUiTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
+    inline def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanTaskUiArnUndefined: Self = StObject.set(x, "HumanTaskUiArn", js.undefined)
+    inline def setHumanTaskUiArnUndefined: Self = StObject.set(x, "HumanTaskUiArn", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask(value: RenderableTask): Self = StObject.set(x, "Task", value.asInstanceOf[js.Any])
+    inline def setTask(value: RenderableTask): Self = StObject.set(x, "Task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiTemplate(value: UiTemplate): Self = StObject.set(x, "UiTemplate", value.asInstanceOf[js.Any])
+    inline def setUiTemplate(value: UiTemplate): Self = StObject.set(x, "UiTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiTemplateUndefined: Self = StObject.set(x, "UiTemplate", js.undefined)
+    inline def setUiTemplateUndefined: Self = StObject.set(x, "UiTemplate", js.undefined)
   }
 }

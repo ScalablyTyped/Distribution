@@ -38,38 +38,28 @@ object HeadlessExperimental {
   }
   object BeginFrameRequest {
     
-    @scala.inline
-    def apply(): BeginFrameRequest = {
+    inline def apply(): BeginFrameRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeginFrameRequest]
     }
     
-    @scala.inline
-    implicit class BeginFrameRequestMutableBuilder[Self <: BeginFrameRequest] (val x: Self) extends AnyVal {
+    extension [Self <: BeginFrameRequest](x: Self) {
       
-      @scala.inline
-      def setFrameTimeTicks(value: Double): Self = StObject.set(x, "frameTimeTicks", value.asInstanceOf[js.Any])
+      inline def setFrameTimeTicks(value: Double): Self = StObject.set(x, "frameTimeTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameTimeTicksUndefined: Self = StObject.set(x, "frameTimeTicks", js.undefined)
+      inline def setFrameTimeTicksUndefined: Self = StObject.set(x, "frameTimeTicks", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setNoDisplayUpdates(value: Boolean): Self = StObject.set(x, "noDisplayUpdates", value.asInstanceOf[js.Any])
+      inline def setNoDisplayUpdates(value: Boolean): Self = StObject.set(x, "noDisplayUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoDisplayUpdatesUndefined: Self = StObject.set(x, "noDisplayUpdates", js.undefined)
+      inline def setNoDisplayUpdatesUndefined: Self = StObject.set(x, "noDisplayUpdates", js.undefined)
       
-      @scala.inline
-      def setScreenshot(value: ScreenshotParams): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
+      inline def setScreenshot(value: ScreenshotParams): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
+      inline def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
     }
   }
   
@@ -88,23 +78,18 @@ object HeadlessExperimental {
   }
   object BeginFrameResponse {
     
-    @scala.inline
-    def apply(hasDamage: Boolean): BeginFrameResponse = {
+    inline def apply(hasDamage: Boolean): BeginFrameResponse = {
       val __obj = js.Dynamic.literal(hasDamage = hasDamage.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeginFrameResponse]
     }
     
-    @scala.inline
-    implicit class BeginFrameResponseMutableBuilder[Self <: BeginFrameResponse] (val x: Self) extends AnyVal {
+    extension [Self <: BeginFrameResponse](x: Self) {
       
-      @scala.inline
-      def setHasDamage(value: Boolean): Self = StObject.set(x, "hasDamage", value.asInstanceOf[js.Any])
+      inline def setHasDamage(value: Boolean): Self = StObject.set(x, "hasDamage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenshotData(value: String): Self = StObject.set(x, "screenshotData", value.asInstanceOf[js.Any])
+      inline def setScreenshotData(value: String): Self = StObject.set(x, "screenshotData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenshotDataUndefined: Self = StObject.set(x, "screenshotData", js.undefined)
+      inline def setScreenshotDataUndefined: Self = StObject.set(x, "screenshotData", js.undefined)
     }
   }
   
@@ -117,17 +102,14 @@ object HeadlessExperimental {
   }
   object NeedsBeginFramesChangedEvent {
     
-    @scala.inline
-    def apply(needsBeginFrames: Boolean): NeedsBeginFramesChangedEvent = {
+    inline def apply(needsBeginFrames: Boolean): NeedsBeginFramesChangedEvent = {
       val __obj = js.Dynamic.literal(needsBeginFrames = needsBeginFrames.asInstanceOf[js.Any])
       __obj.asInstanceOf[NeedsBeginFramesChangedEvent]
     }
     
-    @scala.inline
-    implicit class NeedsBeginFramesChangedEventMutableBuilder[Self <: NeedsBeginFramesChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: NeedsBeginFramesChangedEvent](x: Self) {
       
-      @scala.inline
-      def setNeedsBeginFrames(value: Boolean): Self = StObject.set(x, "needsBeginFrames", value.asInstanceOf[js.Any])
+      inline def setNeedsBeginFrames(value: Boolean): Self = StObject.set(x, "needsBeginFrames", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,26 +127,20 @@ object HeadlessExperimental {
   }
   object ScreenshotParams {
     
-    @scala.inline
-    def apply(): ScreenshotParams = {
+    inline def apply(): ScreenshotParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScreenshotParams]
     }
     
-    @scala.inline
-    implicit class ScreenshotParamsMutableBuilder[Self <: ScreenshotParams] (val x: Self) extends AnyVal {
+    extension [Self <: ScreenshotParams](x: Self) {
       
-      @scala.inline
-      def setFormat(value: jpeg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: jpeg | png): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setQuality(value: integer): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: integer): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     }
   }
   
@@ -175,10 +151,8 @@ object HeadlessExperimental {
   trait ScreenshotParamsFormat extends StObject
   object ScreenshotParamsFormat {
     
-    @scala.inline
-    def Jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+    inline def Jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
     
-    @scala.inline
-    def Png: png = "png".asInstanceOf[png]
+    inline def Png: png = "png".asInstanceOf[png]
   }
 }

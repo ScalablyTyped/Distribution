@@ -23,25 +23,19 @@ trait ApplicationSslConfiguration extends StObject {
 }
 object ApplicationSslConfiguration {
   
-  @scala.inline
-  def apply(certificate: String, privateKey: String): ApplicationSslConfiguration = {
+  inline def apply(certificate: String, privateKey: String): ApplicationSslConfiguration = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationSslConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationSslConfigurationMutableBuilder[Self <: ApplicationSslConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationSslConfiguration](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChain(value: String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
+    inline def setChain(value: String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
+    inline def setChainUndefined: Self = StObject.set(x, "chain", js.undefined)
     
-    @scala.inline
-    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
   }
 }

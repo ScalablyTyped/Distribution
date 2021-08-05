@@ -16,19 +16,14 @@ object emptySortingMod {
   trait EmptySorting extends StObject
   object EmptySorting {
     
-    @scala.inline
-    def bottom: typings.tablesorter.tablesorterStrings.bottom = "bottom".asInstanceOf[typings.tablesorter.tablesorterStrings.bottom]
+    inline def bottom: typings.tablesorter.tablesorterStrings.bottom = "bottom".asInstanceOf[typings.tablesorter.tablesorterStrings.bottom]
     
-    @scala.inline
-    def emptyMax: typings.tablesorter.tablesorterStrings.emptyMax = "emptyMax".asInstanceOf[typings.tablesorter.tablesorterStrings.emptyMax]
+    inline def emptyMax: typings.tablesorter.tablesorterStrings.emptyMax = "emptyMax".asInstanceOf[typings.tablesorter.tablesorterStrings.emptyMax]
     
-    @scala.inline
-    def emptyMin: typings.tablesorter.tablesorterStrings.emptyMin = "emptyMin".asInstanceOf[typings.tablesorter.tablesorterStrings.emptyMin]
+    inline def emptyMin: typings.tablesorter.tablesorterStrings.emptyMin = "emptyMin".asInstanceOf[typings.tablesorter.tablesorterStrings.emptyMin]
     
-    @scala.inline
-    def top: typings.tablesorter.tablesorterStrings.top = "top".asInstanceOf[typings.tablesorter.tablesorterStrings.top]
+    inline def top: typings.tablesorter.tablesorterStrings.top = "top".asInstanceOf[typings.tablesorter.tablesorterStrings.top]
     
-    @scala.inline
-    def zero: typings.tablesorter.tablesorterStrings.zero = "zero".asInstanceOf[typings.tablesorter.tablesorterStrings.zero]
+    inline def zero: typings.tablesorter.tablesorterStrings.zero = "zero".asInstanceOf[typings.tablesorter.tablesorterStrings.zero]
   }
 }

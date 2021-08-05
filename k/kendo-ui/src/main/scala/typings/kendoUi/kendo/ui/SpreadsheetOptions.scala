@@ -86,250 +86,169 @@ trait SpreadsheetOptions extends StObject {
 }
 object SpreadsheetOptions {
   
-  @scala.inline
-  def apply(): SpreadsheetOptions = {
+  inline def apply(): SpreadsheetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpreadsheetOptions]
   }
   
-  @scala.inline
-  implicit class SpreadsheetOptionsMutableBuilder[Self <: SpreadsheetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetOptions](x: Self) {
     
-    @scala.inline
-    def setActiveSheet(value: String): Self = StObject.set(x, "activeSheet", value.asInstanceOf[js.Any])
+    inline def setActiveSheet(value: String): Self = StObject.set(x, "activeSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveSheetUndefined: Self = StObject.set(x, "activeSheet", js.undefined)
+    inline def setActiveSheetUndefined: Self = StObject.set(x, "activeSheet", js.undefined)
     
-    @scala.inline
-    def setChange(value: /* e */ SpreadsheetChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ SpreadsheetChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeFormat(value: /* e */ SpreadsheetChangeFormatEvent => Unit): Self = StObject.set(x, "changeFormat", js.Any.fromFunction1(value))
+    inline def setChangeFormat(value: /* e */ SpreadsheetChangeFormatEvent => Unit): Self = StObject.set(x, "changeFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeFormatUndefined: Self = StObject.set(x, "changeFormat", js.undefined)
+    inline def setChangeFormatUndefined: Self = StObject.set(x, "changeFormat", js.undefined)
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setChanging(value: /* e */ SpreadsheetChangingEvent => Unit): Self = StObject.set(x, "changing", js.Any.fromFunction1(value))
+    inline def setChanging(value: /* e */ SpreadsheetChangingEvent => Unit): Self = StObject.set(x, "changing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangingUndefined: Self = StObject.set(x, "changing", js.undefined)
+    inline def setChangingUndefined: Self = StObject.set(x, "changing", js.undefined)
     
-    @scala.inline
-    def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setCopy(value: /* e */ SpreadsheetCopyEvent => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+    inline def setCopy(value: /* e */ SpreadsheetCopyEvent => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+    inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
-    @scala.inline
-    def setCut(value: /* e */ SpreadsheetCutEvent => Unit): Self = StObject.set(x, "cut", js.Any.fromFunction1(value))
+    inline def setCut(value: /* e */ SpreadsheetCutEvent => Unit): Self = StObject.set(x, "cut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCutUndefined: Self = StObject.set(x, "cut", js.undefined)
+    inline def setCutUndefined: Self = StObject.set(x, "cut", js.undefined)
     
-    @scala.inline
-    def setDataBinding(value: /* e */ SpreadsheetDataBindingEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
+    inline def setDataBinding(value: /* e */ SpreadsheetDataBindingEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
+    inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
-    @scala.inline
-    def setDataBound(value: /* e */ SpreadsheetDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
+    inline def setDataBound(value: /* e */ SpreadsheetDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    @scala.inline
-    def setDefaultCellStyle(value: SpreadsheetDefaultCellStyle): Self = StObject.set(x, "defaultCellStyle", value.asInstanceOf[js.Any])
+    inline def setDefaultCellStyle(value: SpreadsheetDefaultCellStyle): Self = StObject.set(x, "defaultCellStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCellStyleUndefined: Self = StObject.set(x, "defaultCellStyle", js.undefined)
+    inline def setDefaultCellStyleUndefined: Self = StObject.set(x, "defaultCellStyle", js.undefined)
     
-    @scala.inline
-    def setDeleteColumn(value: /* e */ SpreadsheetDeleteColumnEvent => Unit): Self = StObject.set(x, "deleteColumn", js.Any.fromFunction1(value))
+    inline def setDeleteColumn(value: /* e */ SpreadsheetDeleteColumnEvent => Unit): Self = StObject.set(x, "deleteColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteColumnUndefined: Self = StObject.set(x, "deleteColumn", js.undefined)
+    inline def setDeleteColumnUndefined: Self = StObject.set(x, "deleteColumn", js.undefined)
     
-    @scala.inline
-    def setDeleteRow(value: /* e */ SpreadsheetDeleteRowEvent => Unit): Self = StObject.set(x, "deleteRow", js.Any.fromFunction1(value))
+    inline def setDeleteRow(value: /* e */ SpreadsheetDeleteRowEvent => Unit): Self = StObject.set(x, "deleteRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteRowUndefined: Self = StObject.set(x, "deleteRow", js.undefined)
+    inline def setDeleteRowUndefined: Self = StObject.set(x, "deleteRow", js.undefined)
     
-    @scala.inline
-    def setExcel(value: SpreadsheetExcel): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
+    inline def setExcel(value: SpreadsheetExcel): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelExport(value: /* e */ SpreadsheetExcelExportEvent => Unit): Self = StObject.set(x, "excelExport", js.Any.fromFunction1(value))
+    inline def setExcelExport(value: /* e */ SpreadsheetExcelExportEvent => Unit): Self = StObject.set(x, "excelExport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExcelExportUndefined: Self = StObject.set(x, "excelExport", js.undefined)
+    inline def setExcelExportUndefined: Self = StObject.set(x, "excelExport", js.undefined)
     
-    @scala.inline
-    def setExcelImport(value: /* e */ SpreadsheetExcelImportEvent => Unit): Self = StObject.set(x, "excelImport", js.Any.fromFunction1(value))
+    inline def setExcelImport(value: /* e */ SpreadsheetExcelImportEvent => Unit): Self = StObject.set(x, "excelImport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExcelImportUndefined: Self = StObject.set(x, "excelImport", js.undefined)
+    inline def setExcelImportUndefined: Self = StObject.set(x, "excelImport", js.undefined)
     
-    @scala.inline
-    def setExcelUndefined: Self = StObject.set(x, "excel", js.undefined)
+    inline def setExcelUndefined: Self = StObject.set(x, "excel", js.undefined)
     
-    @scala.inline
-    def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+    inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
+    inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
     
-    @scala.inline
-    def setHeaderWidth(value: Double): Self = StObject.set(x, "headerWidth", value.asInstanceOf[js.Any])
+    inline def setHeaderWidth(value: Double): Self = StObject.set(x, "headerWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderWidthUndefined: Self = StObject.set(x, "headerWidth", js.undefined)
+    inline def setHeaderWidthUndefined: Self = StObject.set(x, "headerWidth", js.undefined)
     
-    @scala.inline
-    def setHideColumn(value: /* e */ SpreadsheetHideColumnEvent => Unit): Self = StObject.set(x, "hideColumn", js.Any.fromFunction1(value))
+    inline def setHideColumn(value: /* e */ SpreadsheetHideColumnEvent => Unit): Self = StObject.set(x, "hideColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideColumnUndefined: Self = StObject.set(x, "hideColumn", js.undefined)
+    inline def setHideColumnUndefined: Self = StObject.set(x, "hideColumn", js.undefined)
     
-    @scala.inline
-    def setHideRow(value: /* e */ SpreadsheetHideRowEvent => Unit): Self = StObject.set(x, "hideRow", js.Any.fromFunction1(value))
+    inline def setHideRow(value: /* e */ SpreadsheetHideRowEvent => Unit): Self = StObject.set(x, "hideRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideRowUndefined: Self = StObject.set(x, "hideRow", js.undefined)
+    inline def setHideRowUndefined: Self = StObject.set(x, "hideRow", js.undefined)
     
-    @scala.inline
-    def setInsertColumn(value: /* e */ SpreadsheetInsertColumnEvent => Unit): Self = StObject.set(x, "insertColumn", js.Any.fromFunction1(value))
+    inline def setInsertColumn(value: /* e */ SpreadsheetInsertColumnEvent => Unit): Self = StObject.set(x, "insertColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertColumnUndefined: Self = StObject.set(x, "insertColumn", js.undefined)
+    inline def setInsertColumnUndefined: Self = StObject.set(x, "insertColumn", js.undefined)
     
-    @scala.inline
-    def setInsertRow(value: /* e */ SpreadsheetInsertRowEvent => Unit): Self = StObject.set(x, "insertRow", js.Any.fromFunction1(value))
+    inline def setInsertRow(value: /* e */ SpreadsheetInsertRowEvent => Unit): Self = StObject.set(x, "insertRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertRowUndefined: Self = StObject.set(x, "insertRow", js.undefined)
+    inline def setInsertRowUndefined: Self = StObject.set(x, "insertRow", js.undefined)
     
-    @scala.inline
-    def setInsertSheet(value: /* e */ SpreadsheetInsertSheetEvent => Unit): Self = StObject.set(x, "insertSheet", js.Any.fromFunction1(value))
+    inline def setInsertSheet(value: /* e */ SpreadsheetInsertSheetEvent => Unit): Self = StObject.set(x, "insertSheet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertSheetUndefined: Self = StObject.set(x, "insertSheet", js.undefined)
+    inline def setInsertSheetUndefined: Self = StObject.set(x, "insertSheet", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPaste(value: /* e */ SpreadsheetPasteEvent => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
+    inline def setPaste(value: /* e */ SpreadsheetPasteEvent => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+    inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
     
-    @scala.inline
-    def setPdf(value: SpreadsheetPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    inline def setPdf(value: SpreadsheetPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfExport(value: /* e */ SpreadsheetPdfExportEvent => Unit): Self = StObject.set(x, "pdfExport", js.Any.fromFunction1(value))
+    inline def setPdfExport(value: /* e */ SpreadsheetPdfExportEvent => Unit): Self = StObject.set(x, "pdfExport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPdfExportUndefined: Self = StObject.set(x, "pdfExport", js.undefined)
+    inline def setPdfExportUndefined: Self = StObject.set(x, "pdfExport", js.undefined)
     
-    @scala.inline
-    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+    inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
-    @scala.inline
-    def setRemoveSheet(value: /* e */ SpreadsheetRemoveSheetEvent => Unit): Self = StObject.set(x, "removeSheet", js.Any.fromFunction1(value))
+    inline def setRemoveSheet(value: /* e */ SpreadsheetRemoveSheetEvent => Unit): Self = StObject.set(x, "removeSheet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSheetUndefined: Self = StObject.set(x, "removeSheet", js.undefined)
+    inline def setRemoveSheetUndefined: Self = StObject.set(x, "removeSheet", js.undefined)
     
-    @scala.inline
-    def setRenameSheet(value: /* e */ SpreadsheetRenameSheetEvent => Unit): Self = StObject.set(x, "renameSheet", js.Any.fromFunction1(value))
+    inline def setRenameSheet(value: /* e */ SpreadsheetRenameSheetEvent => Unit): Self = StObject.set(x, "renameSheet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameSheetUndefined: Self = StObject.set(x, "renameSheet", js.undefined)
+    inline def setRenameSheetUndefined: Self = StObject.set(x, "renameSheet", js.undefined)
     
-    @scala.inline
-    def setRender(value: /* e */ SpreadsheetRenderEvent => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* e */ SpreadsheetRenderEvent => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setSelect(value: /* e */ SpreadsheetSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: /* e */ SpreadsheetSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectSheet(value: /* e */ SpreadsheetSelectSheetEvent => Unit): Self = StObject.set(x, "selectSheet", js.Any.fromFunction1(value))
+    inline def setSelectSheet(value: /* e */ SpreadsheetSelectSheetEvent => Unit): Self = StObject.set(x, "selectSheet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectSheetUndefined: Self = StObject.set(x, "selectSheet", js.undefined)
+    inline def setSelectSheetUndefined: Self = StObject.set(x, "selectSheet", js.undefined)
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSheets(value: js.Array[SpreadsheetSheet]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
+    inline def setSheets(value: js.Array[SpreadsheetSheet]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
+    inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
     
-    @scala.inline
-    def setSheetsVarargs(value: SpreadsheetSheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: SpreadsheetSheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
     
-    @scala.inline
-    def setSheetsbar(value: Boolean): Self = StObject.set(x, "sheetsbar", value.asInstanceOf[js.Any])
+    inline def setSheetsbar(value: Boolean): Self = StObject.set(x, "sheetsbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetsbarUndefined: Self = StObject.set(x, "sheetsbar", js.undefined)
+    inline def setSheetsbarUndefined: Self = StObject.set(x, "sheetsbar", js.undefined)
     
-    @scala.inline
-    def setToolbar(value: Boolean | SpreadsheetToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: Boolean | SpreadsheetToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    @scala.inline
-    def setUnhideColumn(value: /* e */ SpreadsheetUnhideColumnEvent => Unit): Self = StObject.set(x, "unhideColumn", js.Any.fromFunction1(value))
+    inline def setUnhideColumn(value: /* e */ SpreadsheetUnhideColumnEvent => Unit): Self = StObject.set(x, "unhideColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnhideColumnUndefined: Self = StObject.set(x, "unhideColumn", js.undefined)
+    inline def setUnhideColumnUndefined: Self = StObject.set(x, "unhideColumn", js.undefined)
     
-    @scala.inline
-    def setUnhideRow(value: /* e */ SpreadsheetUnhideRowEvent => Unit): Self = StObject.set(x, "unhideRow", js.Any.fromFunction1(value))
+    inline def setUnhideRow(value: /* e */ SpreadsheetUnhideRowEvent => Unit): Self = StObject.set(x, "unhideRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnhideRowUndefined: Self = StObject.set(x, "unhideRow", js.undefined)
+    inline def setUnhideRowUndefined: Self = StObject.set(x, "unhideRow", js.undefined)
   }
 }

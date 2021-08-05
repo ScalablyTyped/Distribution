@@ -15,23 +15,15 @@ object xhrMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asyncDownloadFile(p: String, `type`: String, cb: BFSCallback[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def asyncDownloadFile(p: String, `type`: buffer, cb: BFSCallback[Buffer]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def asyncDownloadFile(p: String, `type`: json, cb: BFSCallback[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def asyncDownloadFile(p: String, `type`: String, cb: BFSCallback[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def asyncDownloadFile(p: String, `type`: buffer, cb: BFSCallback[Buffer]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def asyncDownloadFile(p: String, `type`: json, cb: BFSCallback[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getFileSizeAsync(p: String, cb: js.Function2[/* err */ ApiError, /* size */ js.UndefOr[Double], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSizeAsync")(p.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getFileSizeAsync(p: String, cb: js.Function2[/* err */ ApiError, /* size */ js.UndefOr[Double], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSizeAsync")(p.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getFileSizeSync(p: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSizeSync")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getFileSizeSync(p: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSizeSync")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def syncDownloadFile(p: String, `type`: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def syncDownloadFile(p: String, `type`: buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def syncDownloadFile(p: String, `type`: json): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def syncDownloadFile(p: String, `type`: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def syncDownloadFile(p: String, `type`: buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def syncDownloadFile(p: String, `type`: json): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("syncDownloadFile")(p.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

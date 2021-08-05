@@ -18,8 +18,7 @@ trait ASPxClientSpreadsheetCellEndEditEventArgs
 }
 object ASPxClientSpreadsheetCellEndEditEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     columnIndex: Double,
     displayText: String,
@@ -33,10 +32,8 @@ object ASPxClientSpreadsheetCellEndEditEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetCellEndEditEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetCellEndEditEventArgsMutableBuilder[Self <: ASPxClientSpreadsheetCellEndEditEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetCellEndEditEventArgs](x: Self) {
     
-    @scala.inline
-    def setEditorText(value: String): Self = StObject.set(x, "editorText", value.asInstanceOf[js.Any])
+    inline def setEditorText(value: String): Self = StObject.set(x, "editorText", value.asInstanceOf[js.Any])
   }
 }

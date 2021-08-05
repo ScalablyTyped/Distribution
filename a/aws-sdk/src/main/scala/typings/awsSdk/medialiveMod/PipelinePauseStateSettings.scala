@@ -13,16 +13,13 @@ trait PipelinePauseStateSettings extends StObject {
 }
 object PipelinePauseStateSettings {
   
-  @scala.inline
-  def apply(PipelineId: PipelineId): PipelinePauseStateSettings = {
+  inline def apply(PipelineId: PipelineId): PipelinePauseStateSettings = {
     val __obj = js.Dynamic.literal(PipelineId = PipelineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelinePauseStateSettings]
   }
   
-  @scala.inline
-  implicit class PipelinePauseStateSettingsMutableBuilder[Self <: PipelinePauseStateSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PipelinePauseStateSettings](x: Self) {
     
-    @scala.inline
-    def setPipelineId(value: PipelineId): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: PipelineId): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
   }
 }

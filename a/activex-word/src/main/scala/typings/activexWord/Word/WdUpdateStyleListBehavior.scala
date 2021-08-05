@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdUpdateStyleListBehavior extends StObject
 object WdUpdateStyleListBehavior {
   
-  @scala.inline
-  def wdListBehaviorAddBulletsNumbering: `1` = 1.asInstanceOf[`1`]
+  inline def wdListBehaviorAddBulletsNumbering: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdListBehaviorKeepPreviousPattern: `0` = 0.asInstanceOf[`0`]
+  inline def wdListBehaviorKeepPreviousPattern: `0` = 0.asInstanceOf[`0`]
 }

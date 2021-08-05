@@ -47,8 +47,7 @@ trait ageUtilsGetAgeExpressionsParams
 }
 object ageUtilsGetAgeExpressionsParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     endTime: Date | String | Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -60,22 +59,16 @@ object ageUtilsGetAgeExpressionsParams {
     __obj.asInstanceOf[ageUtilsGetAgeExpressionsParams]
   }
   
-  @scala.inline
-  implicit class ageUtilsGetAgeExpressionsParamsMutableBuilder[Self <: ageUtilsGetAgeExpressionsParams] (val x: Self) extends AnyVal {
+  extension [Self <: ageUtilsGetAgeExpressionsParams](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: years | months | days | hours | minutes | seconds): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: years | months | days | hours | minutes | seconds): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

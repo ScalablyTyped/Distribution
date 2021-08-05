@@ -10,20 +10,16 @@ trait EnumSchema[Enum] extends StObject {
 }
 object EnumSchema {
   
-  @scala.inline
-  def apply[Enum](`enum`: js.Array[Enum]): EnumSchema[Enum] = {
+  inline def apply[Enum](`enum`: js.Array[Enum]): EnumSchema[Enum] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumSchema[Enum]]
   }
   
-  @scala.inline
-  implicit class EnumSchemaMutableBuilder[Self <: EnumSchema[?], Enum] (val x: Self & EnumSchema[Enum]) extends AnyVal {
+  extension [Self <: EnumSchema[?], Enum](x: Self & EnumSchema[Enum]) {
     
-    @scala.inline
-    def setEnum(value: js.Array[Enum]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: js.Array[Enum]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumVarargs(value: Enum*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: Enum*): Self = StObject.set(x, "enum", js.Array(value :_*))
   }
 }

@@ -10,6 +10,5 @@ object emojiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def emoji(x: String, fallback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emoji")(x.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def emoji(x: String, fallback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("emoji")(x.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[String]
 }

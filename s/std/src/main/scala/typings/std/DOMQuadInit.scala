@@ -16,37 +16,27 @@ trait DOMQuadInit extends StObject {
 }
 object DOMQuadInit {
   
-  @scala.inline
-  def apply(): DOMQuadInit = {
+  inline def apply(): DOMQuadInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DOMQuadInit]
   }
   
-  @scala.inline
-  implicit class DOMQuadInitMutableBuilder[Self <: DOMQuadInit] (val x: Self) extends AnyVal {
+  extension [Self <: DOMQuadInit](x: Self) {
     
-    @scala.inline
-    def setP1(value: DOMPointInit): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+    inline def setP1(value: DOMPointInit): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP1Undefined: Self = StObject.set(x, "p1", js.undefined)
+    inline def setP1Undefined: Self = StObject.set(x, "p1", js.undefined)
     
-    @scala.inline
-    def setP2(value: DOMPointInit): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+    inline def setP2(value: DOMPointInit): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP2Undefined: Self = StObject.set(x, "p2", js.undefined)
+    inline def setP2Undefined: Self = StObject.set(x, "p2", js.undefined)
     
-    @scala.inline
-    def setP3(value: DOMPointInit): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
+    inline def setP3(value: DOMPointInit): Self = StObject.set(x, "p3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP3Undefined: Self = StObject.set(x, "p3", js.undefined)
+    inline def setP3Undefined: Self = StObject.set(x, "p3", js.undefined)
     
-    @scala.inline
-    def setP4(value: DOMPointInit): Self = StObject.set(x, "p4", value.asInstanceOf[js.Any])
+    inline def setP4(value: DOMPointInit): Self = StObject.set(x, "p4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP4Undefined: Self = StObject.set(x, "p4", js.undefined)
+    inline def setP4Undefined: Self = StObject.set(x, "p4", js.undefined)
   }
 }

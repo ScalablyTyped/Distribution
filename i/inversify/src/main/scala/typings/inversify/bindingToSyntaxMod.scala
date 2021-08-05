@@ -23,7 +23,7 @@ object bindingToSyntaxMod {
        with typings.inversify.interfacesMod.interfaces.BindingToSyntax[T] {
     def this(binding: Binding[T]) = this()
     
-    var _binding: js.Any = js.native
+    /* private */ var _binding: js.Any = js.native
     
     /* CompleteClass */
     override def to(constructor: Instantiable[T]): BindingInWhenOnSyntax[T] = js.native

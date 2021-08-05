@@ -20,8 +20,7 @@ trait Blackberry extends StObject {
 }
 object Blackberry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blackberry: js.Any,
     blackberry10: js.Any,
     chrome: js.Any,
@@ -33,25 +32,18 @@ object Blackberry {
     __obj.asInstanceOf[Blackberry]
   }
   
-  @scala.inline
-  implicit class BlackberryMutableBuilder[Self <: Blackberry] (val x: Self) extends AnyVal {
+  extension [Self <: Blackberry](x: Self) {
     
-    @scala.inline
-    def setBlackberry(value: js.Any): Self = StObject.set(x, "blackberry", value.asInstanceOf[js.Any])
+    inline def setBlackberry(value: js.Any): Self = StObject.set(x, "blackberry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlackberry10(value: js.Any): Self = StObject.set(x, "blackberry10", value.asInstanceOf[js.Any])
+    inline def setBlackberry10(value: js.Any): Self = StObject.set(x, "blackberry10", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChrome(value: js.Any): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+    inline def setChrome(value: js.Any): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice(value: js.Any): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: js.Any): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirefox(value: js.Any): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
+    inline def setFirefox(value: js.Any): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpera(value: js.Any): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
+    inline def setOpera(value: js.Any): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
   }
 }

@@ -15,6 +15,5 @@ trait IDAStarFinder
      with Instantiable1[/* opt */ IDAStarFinderOptions, IDAStarFinder]
 object IDAStarFinder {
   
-  @scala.inline
-  def apply: IDAStarFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("IDAStarFinder").asInstanceOf[IDAStarFinder]
+  inline def apply: IDAStarFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("IDAStarFinder").asInstanceOf[IDAStarFinder]
 }

@@ -10,16 +10,13 @@ trait PostsInsightsFeedResponseData extends StObject {
 }
 object PostsInsightsFeedResponseData {
   
-  @scala.inline
-  def apply(user: PostsInsightsFeedResponseUser): PostsInsightsFeedResponseData = {
+  inline def apply(user: PostsInsightsFeedResponseUser): PostsInsightsFeedResponseData = {
     val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseData]
   }
   
-  @scala.inline
-  implicit class PostsInsightsFeedResponseDataMutableBuilder[Self <: PostsInsightsFeedResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: PostsInsightsFeedResponseData](x: Self) {
     
-    @scala.inline
-    def setUser(value: PostsInsightsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: PostsInsightsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

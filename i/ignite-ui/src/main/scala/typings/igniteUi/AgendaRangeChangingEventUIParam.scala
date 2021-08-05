@@ -28,37 +28,27 @@ trait AgendaRangeChangingEventUIParam extends StObject {
 }
 object AgendaRangeChangingEventUIParam {
   
-  @scala.inline
-  def apply(): AgendaRangeChangingEventUIParam = {
+  inline def apply(): AgendaRangeChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AgendaRangeChangingEventUIParam]
   }
   
-  @scala.inline
-  implicit class AgendaRangeChangingEventUIParamMutableBuilder[Self <: AgendaRangeChangingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: AgendaRangeChangingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCurrentAgendaRangeStartDate(value: js.Any): Self = StObject.set(x, "currentAgendaRangeStartDate", value.asInstanceOf[js.Any])
+    inline def setCurrentAgendaRangeStartDate(value: js.Any): Self = StObject.set(x, "currentAgendaRangeStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentAgendaRangeStartDateUndefined: Self = StObject.set(x, "currentAgendaRangeStartDate", js.undefined)
+    inline def setCurrentAgendaRangeStartDateUndefined: Self = StObject.set(x, "currentAgendaRangeStartDate", js.undefined)
     
-    @scala.inline
-    def setDateRangeInterval(value: Double): Self = StObject.set(x, "dateRangeInterval", value.asInstanceOf[js.Any])
+    inline def setDateRangeInterval(value: Double): Self = StObject.set(x, "dateRangeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeIntervalUndefined: Self = StObject.set(x, "dateRangeInterval", js.undefined)
+    inline def setDateRangeIntervalUndefined: Self = StObject.set(x, "dateRangeInterval", js.undefined)
     
-    @scala.inline
-    def setNewAgendaRangeStartDate(value: js.Any): Self = StObject.set(x, "newAgendaRangeStartDate", value.asInstanceOf[js.Any])
+    inline def setNewAgendaRangeStartDate(value: js.Any): Self = StObject.set(x, "newAgendaRangeStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewAgendaRangeStartDateUndefined: Self = StObject.set(x, "newAgendaRangeStartDate", js.undefined)
+    inline def setNewAgendaRangeStartDateUndefined: Self = StObject.set(x, "newAgendaRangeStartDate", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

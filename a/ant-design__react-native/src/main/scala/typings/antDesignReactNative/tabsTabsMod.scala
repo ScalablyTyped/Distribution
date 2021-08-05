@@ -87,7 +87,7 @@ object tabsTabsMod {
     
     def handleLayout(e: LayoutChangeEvent): Unit = js.native
     
-    var instanceId: Double = js.native
+    /* protected */ var instanceId: Double = js.native
     
     def isTabVertical(): Boolean = js.native
     @JSName("isTabVertical")
@@ -96,11 +96,11 @@ object tabsTabsMod {
     def isTabVertical_vertical(direction: vertical): Boolean = js.native
     
     /** compatible for different between react and preact in `setState`. */
-    var nextCurrentTab: js.Any = js.native
+    /* private */ var nextCurrentTab: js.Any = js.native
     
     def onMomentumScrollEnd(e: NativeSyntheticEvent[NativeScrollEvent]): Unit = js.native
     
-    var prevCurrentTab: Double = js.native
+    /* protected */ var prevCurrentTab: Double = js.native
     
     def renderContent(): Element = js.native
     def renderContent(
@@ -118,7 +118,7 @@ object tabsTabsMod {
     
     def shouldRenderTab(idx: Double): Boolean = js.native
     
-    var tabCache: NumberDictionary[ReactNode] = js.native
+    /* protected */ var tabCache: NumberDictionary[ReactNode] = js.native
     
     def tabClickGoToTab(index: Double): Unit = js.native
     
@@ -134,14 +134,12 @@ object tabsTabsMod {
     @JSImport("@ant-design/react-native/lib/tabs/Tabs", "Tabs.DefaultTabBar")
     @js.native
     def DefaultTabBar: TypeofDefaultTabBar = js.native
-    @scala.inline
-    def DefaultTabBar_=(x: TypeofDefaultTabBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTabBar")(x.asInstanceOf[js.Any])
+    inline def DefaultTabBar_=(x: TypeofDefaultTabBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTabBar")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/tabs/Tabs", "Tabs.defaultProps")
     @js.native
     def defaultProps: PropsType = js.native
-    @scala.inline
-    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait StateType extends StObject {
@@ -156,26 +154,20 @@ object tabsTabsMod {
   }
   object StateType {
     
-    @scala.inline
-    def apply(containerWidth: Double, currentTab: Double, scrollValue: Value, scrollX: Value): StateType = {
+    inline def apply(containerWidth: Double, currentTab: Double, scrollValue: Value, scrollX: Value): StateType = {
       val __obj = js.Dynamic.literal(containerWidth = containerWidth.asInstanceOf[js.Any], currentTab = currentTab.asInstanceOf[js.Any], scrollValue = scrollValue.asInstanceOf[js.Any], scrollX = scrollX.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateType]
     }
     
-    @scala.inline
-    implicit class StateTypeMutableBuilder[Self <: StateType] (val x: Self) extends AnyVal {
+    extension [Self <: StateType](x: Self) {
       
-      @scala.inline
-      def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
+      inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTab(value: Double): Self = StObject.set(x, "currentTab", value.asInstanceOf[js.Any])
+      inline def setCurrentTab(value: Double): Self = StObject.set(x, "currentTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
+      inline def setScrollValue(value: Value): Self = StObject.set(x, "scrollValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollX(value: Value): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
+      inline def setScrollX(value: Value): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,8 +177,7 @@ object tabsTabsMod {
        with WithThemeStyles[TabsStyle]
   object TabsProps {
     
-    @scala.inline
-    def apply(tabs: js.Array[TabData]): TabsProps = {
+    inline def apply(tabs: js.Array[TabData]): TabsProps = {
       val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabsProps]
     }

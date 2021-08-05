@@ -18,31 +18,23 @@ trait MlPostData[T]
 }
 object MlPostData {
   
-  @scala.inline
-  def apply[T](body: T, job_id: String): MlPostData[T] = {
+  inline def apply[T](body: T, job_id: String): MlPostData[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], job_id = job_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlPostData[T]]
   }
   
-  @scala.inline
-  implicit class MlPostDataMutableBuilder[Self <: MlPostData[?], T] (val x: Self & MlPostData[T]) extends AnyVal {
+  extension [Self <: MlPostData[?], T](x: Self & MlPostData[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset_end(value: String): Self = StObject.set(x, "reset_end", value.asInstanceOf[js.Any])
+    inline def setReset_end(value: String): Self = StObject.set(x, "reset_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset_endUndefined: Self = StObject.set(x, "reset_end", js.undefined)
+    inline def setReset_endUndefined: Self = StObject.set(x, "reset_end", js.undefined)
     
-    @scala.inline
-    def setReset_start(value: String): Self = StObject.set(x, "reset_start", value.asInstanceOf[js.Any])
+    inline def setReset_start(value: String): Self = StObject.set(x, "reset_start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset_startUndefined: Self = StObject.set(x, "reset_start", js.undefined)
+    inline def setReset_startUndefined: Self = StObject.set(x, "reset_start", js.undefined)
   }
 }

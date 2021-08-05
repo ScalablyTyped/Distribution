@@ -14,19 +14,15 @@ trait DirectionFullScreen extends StObject {
 }
 object DirectionFullScreen {
   
-  @scala.inline
-  def apply(direction: vertical | horizontal, fullScreen: Boolean): DirectionFullScreen = {
+  inline def apply(direction: vertical | horizontal, fullScreen: Boolean): DirectionFullScreen = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], fullScreen = fullScreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionFullScreen]
   }
   
-  @scala.inline
-  implicit class DirectionFullScreenMutableBuilder[Self <: DirectionFullScreen] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionFullScreen](x: Self) {
     
-    @scala.inline
-    def setDirection(value: vertical | horizontal): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: vertical | horizontal): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
   }
 }

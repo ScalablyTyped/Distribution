@@ -13,16 +13,13 @@ trait ExportJournalToS3Response extends StObject {
 }
 object ExportJournalToS3Response {
   
-  @scala.inline
-  def apply(ExportId: UniqueId): ExportJournalToS3Response = {
+  inline def apply(ExportId: UniqueId): ExportJournalToS3Response = {
     val __obj = js.Dynamic.literal(ExportId = ExportId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportJournalToS3Response]
   }
   
-  @scala.inline
-  implicit class ExportJournalToS3ResponseMutableBuilder[Self <: ExportJournalToS3Response] (val x: Self) extends AnyVal {
+  extension [Self <: ExportJournalToS3Response](x: Self) {
     
-    @scala.inline
-    def setExportId(value: UniqueId): Self = StObject.set(x, "ExportId", value.asInstanceOf[js.Any])
+    inline def setExportId(value: UniqueId): Self = StObject.set(x, "ExportId", value.asInstanceOf[js.Any])
   }
 }

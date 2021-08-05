@@ -57,69 +57,53 @@ trait WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchState
 }
 object WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatch {
   
-  @scala.inline
-  def apply(): WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatch = {
+  inline def apply(): WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatch]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatchMutableBuilder[Self <: WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatch] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatch](x: Self) {
     
-    @scala.inline
-    def setAllQueryArguments(
+    inline def setAllQueryArguments(
       value: WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatchAllQueryArguments
     ): Self = StObject.set(x, "allQueryArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllQueryArgumentsUndefined: Self = StObject.set(x, "allQueryArguments", js.undefined)
+    inline def setAllQueryArgumentsUndefined: Self = StObject.set(x, "allQueryArguments", js.undefined)
     
-    @scala.inline
-    def setBody(
+    inline def setBody(
       value: WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatchBody
     ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setMethod(
+    inline def setMethod(
       value: WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatchMethod
     ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setQueryString(
+    inline def setQueryString(
       value: WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatchQueryString
     ): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
+    inline def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
     
-    @scala.inline
-    def setSingleHeader(
+    inline def setSingleHeader(
       value: WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatchSingleHeader
     ): Self = StObject.set(x, "singleHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleHeaderUndefined: Self = StObject.set(x, "singleHeader", js.undefined)
+    inline def setSingleHeaderUndefined: Self = StObject.set(x, "singleHeader", js.undefined)
     
-    @scala.inline
-    def setSingleQueryArgument(
+    inline def setSingleQueryArgument(
       value: WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument
     ): Self = StObject.set(x, "singleQueryArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleQueryArgumentUndefined: Self = StObject.set(x, "singleQueryArgument", js.undefined)
+    inline def setSingleQueryArgumentUndefined: Self = StObject.set(x, "singleQueryArgument", js.undefined)
     
-    @scala.inline
-    def setUriPath(
+    inline def setUriPath(
       value: WebAclRuleStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatchUriPath
     ): Self = StObject.set(x, "uriPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriPathUndefined: Self = StObject.set(x, "uriPath", js.undefined)
+    inline def setUriPathUndefined: Self = StObject.set(x, "uriPath", js.undefined)
   }
 }

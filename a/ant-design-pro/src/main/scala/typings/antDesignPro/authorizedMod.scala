@@ -20,8 +20,7 @@ object authorizedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(currentAuthority: String): TypeofAuthorized = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentAuthority.asInstanceOf[js.Any]).asInstanceOf[TypeofAuthorized]
+  inline def default(currentAuthority: String): TypeofAuthorized = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentAuthority.asInstanceOf[js.Any]).asInstanceOf[TypeofAuthorized]
   
   @JSImport("ant-design-pro/lib/Authorized", "Authorized")
   @js.native
@@ -44,20 +43,17 @@ object authorizedMod {
     @JSImport("ant-design-pro/lib/Authorized", "Authorized.AuthorizedRoute")
     @js.native
     def AuthorizedRoute: Instantiable0[default] = js.native
-    @scala.inline
-    def AuthorizedRoute_=(x: Instantiable0[default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AuthorizedRoute")(x.asInstanceOf[js.Any])
+    inline def AuthorizedRoute_=(x: Instantiable0[default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AuthorizedRoute")(x.asInstanceOf[js.Any])
     
     @JSImport("ant-design-pro/lib/Authorized", "Authorized.Secured")
     @js.native
     def Secured: typings.antDesignPro.authorizedMod.Secured = js.native
-    @scala.inline
-    def Secured_=(x: Secured): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Secured")(x.asInstanceOf[js.Any])
+    inline def Secured_=(x: Secured): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Secured")(x.asInstanceOf[js.Any])
     
     @JSImport("ant-design-pro/lib/Authorized", "Authorized.check")
     @js.native
     def check: typings.antDesignPro.authorizedMod.check = js.native
-    @scala.inline
-    def check_=(x: check): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
+    inline def check_=(x: check): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
   }
   
   trait IAuthorizedProps extends StObject {
@@ -68,29 +64,22 @@ object authorizedMod {
   }
   object IAuthorizedProps {
     
-    @scala.inline
-    def apply(authority: authority): IAuthorizedProps = {
+    inline def apply(authority: authority): IAuthorizedProps = {
       val __obj = js.Dynamic.literal(authority = authority.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAuthorizedProps]
     }
     
-    @scala.inline
-    implicit class IAuthorizedPropsMutableBuilder[Self <: IAuthorizedProps] (val x: Self) extends AnyVal {
+    extension [Self <: IAuthorizedProps](x: Self) {
       
-      @scala.inline
-      def setAuthority(value: authority): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+      inline def setAuthority(value: authority): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorityFunction1(value: /* currentAuthority */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "authority", js.Any.fromFunction1(value))
+      inline def setAuthorityFunction1(value: /* currentAuthority */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "authority", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAuthorityVarargs(value: String*): Self = StObject.set(x, "authority", js.Array(value :_*))
+      inline def setAuthorityVarargs(value: String*): Self = StObject.set(x, "authority", js.Array(value :_*))
       
-      @scala.inline
-      def setNoMatch(value: ReactNode): Self = StObject.set(x, "noMatch", value.asInstanceOf[js.Any])
+      inline def setNoMatch(value: ReactNode): Self = StObject.set(x, "noMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoMatchUndefined: Self = StObject.set(x, "noMatch", js.undefined)
+      inline def setNoMatchUndefined: Self = StObject.set(x, "noMatch", js.undefined)
     }
   }
   

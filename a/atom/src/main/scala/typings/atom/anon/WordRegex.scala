@@ -11,19 +11,15 @@ trait WordRegex extends StObject {
 }
 object WordRegex {
   
-  @scala.inline
-  def apply(): WordRegex = {
+  inline def apply(): WordRegex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WordRegex]
   }
   
-  @scala.inline
-  implicit class WordRegexMutableBuilder[Self <: WordRegex] (val x: Self) extends AnyVal {
+  extension [Self <: WordRegex](x: Self) {
     
-    @scala.inline
-    def setWordRegex(value: RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
+    inline def setWordRegex(value: RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordRegexUndefined: Self = StObject.set(x, "wordRegex", js.undefined)
+    inline def setWordRegexUndefined: Self = StObject.set(x, "wordRegex", js.undefined)
   }
 }

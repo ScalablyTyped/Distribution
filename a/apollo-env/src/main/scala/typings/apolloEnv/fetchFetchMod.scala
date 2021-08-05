@@ -52,26 +52,21 @@ object fetchFetchMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def error(): typings.nodeFetch.mod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.nodeFetch.mod.Response]
+    inline def error(): typings.nodeFetch.mod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.nodeFetch.mod.Response]
     
-    @scala.inline
-    def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.nodeFetch.mod.Response]
+    inline def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.nodeFetch.mod.Response]
   }
   
   object fetch {
     
-    @scala.inline
-    def apply(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
-    @scala.inline
-    def apply(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
+    inline def apply(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
+    inline def apply(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
     
     @JSImport("apollo-env/lib/fetch/fetch", "fetch")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -88,32 +83,23 @@ object fetchFetchMod {
   trait ReferrerPolicy extends StObject
   object ReferrerPolicy {
     
-    @scala.inline
-    def _empty: typings.apolloEnv.apolloEnvStrings._empty = "".asInstanceOf[typings.apolloEnv.apolloEnvStrings._empty]
+    inline def _empty: typings.apolloEnv.apolloEnvStrings._empty = "".asInstanceOf[typings.apolloEnv.apolloEnvStrings._empty]
     
-    @scala.inline
-    def `no-referrer`: typings.apolloEnv.apolloEnvStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`no-referrer`]
+    inline def `no-referrer`: typings.apolloEnv.apolloEnvStrings.`no-referrer` = "no-referrer".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`no-referrer`]
     
-    @scala.inline
-    def `no-referrer-when-downgrade`: typings.apolloEnv.apolloEnvStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`no-referrer-when-downgrade`]
+    inline def `no-referrer-when-downgrade`: typings.apolloEnv.apolloEnvStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`no-referrer-when-downgrade`]
     
-    @scala.inline
-    def origin: typings.apolloEnv.apolloEnvStrings.origin = "origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.origin]
+    inline def origin: typings.apolloEnv.apolloEnvStrings.origin = "origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.origin]
     
-    @scala.inline
-    def `origin-when-cross-origin`: typings.apolloEnv.apolloEnvStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`origin-when-cross-origin`]
+    inline def `origin-when-cross-origin`: typings.apolloEnv.apolloEnvStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`origin-when-cross-origin`]
     
-    @scala.inline
-    def `same-origin`: typings.apolloEnv.apolloEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`same-origin`]
+    inline def `same-origin`: typings.apolloEnv.apolloEnvStrings.`same-origin` = "same-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`same-origin`]
     
-    @scala.inline
-    def `strict-origin`: typings.apolloEnv.apolloEnvStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`strict-origin`]
+    inline def `strict-origin`: typings.apolloEnv.apolloEnvStrings.`strict-origin` = "strict-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`strict-origin`]
     
-    @scala.inline
-    def `strict-origin-when-cross-origin`: typings.apolloEnv.apolloEnvStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`strict-origin-when-cross-origin`]
+    inline def `strict-origin-when-cross-origin`: typings.apolloEnv.apolloEnvStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`strict-origin-when-cross-origin`]
     
-    @scala.inline
-    def `unsafe-url`: typings.apolloEnv.apolloEnvStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`unsafe-url`]
+    inline def `unsafe-url`: typings.apolloEnv.apolloEnvStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typings.apolloEnv.apolloEnvStrings.`unsafe-url`]
   }
   
   type RequestAgent = Agent | typings.node.httpsMod.Agent

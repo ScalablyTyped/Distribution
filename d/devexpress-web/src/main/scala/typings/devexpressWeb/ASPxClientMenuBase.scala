@@ -71,8 +71,7 @@ trait ASPxClientMenuBase
 }
 object ASPxClientMenuBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     CloseUp: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]],
     GetClientVisible: () => Boolean,
@@ -104,40 +103,28 @@ object ASPxClientMenuBase {
     __obj.asInstanceOf[ASPxClientMenuBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientMenuBaseMutableBuilder[Self <: ASPxClientMenuBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientMenuBase](x: Self) {
     
-    @scala.inline
-    def setCloseUp(value: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "CloseUp", value.asInstanceOf[js.Any])
+    inline def setCloseUp(value: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "CloseUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetItem(value: Double => ASPxClientMenuItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: Double => ASPxClientMenuItem): Self = StObject.set(x, "GetItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemByName(value: String => ASPxClientMenuItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
+    inline def setGetItemByName(value: String => ASPxClientMenuItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
+    inline def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRootItem(value: () => ASPxClientMenuItem): Self = StObject.set(x, "GetRootItem", js.Any.fromFunction0(value))
+    inline def setGetRootItem(value: () => ASPxClientMenuItem): Self = StObject.set(x, "GetRootItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedItem(value: () => ASPxClientMenuItem): Self = StObject.set(x, "GetSelectedItem", js.Any.fromFunction0(value))
+    inline def setGetSelectedItem(value: () => ASPxClientMenuItem): Self = StObject.set(x, "GetSelectedItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemClick(value: ASPxClientEvent[ASPxClientMenuItemClickEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
+    inline def setItemClick(value: ASPxClientEvent[ASPxClientMenuItemClickEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemMouseOut(value: ASPxClientEvent[ASPxClientMenuItemMouseEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "ItemMouseOut", value.asInstanceOf[js.Any])
+    inline def setItemMouseOut(value: ASPxClientEvent[ASPxClientMenuItemMouseEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "ItemMouseOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemMouseOver(value: ASPxClientEvent[ASPxClientMenuItemMouseEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "ItemMouseOver", value.asInstanceOf[js.Any])
+    inline def setItemMouseOver(value: ASPxClientEvent[ASPxClientMenuItemMouseEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "ItemMouseOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopUp(value: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "PopUp", value.asInstanceOf[js.Any])
+    inline def setPopUp(value: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "PopUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSelectedItem(value: ASPxClientMenuItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
+    inline def setSetSelectedItem(value: ASPxClientMenuItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }
 }

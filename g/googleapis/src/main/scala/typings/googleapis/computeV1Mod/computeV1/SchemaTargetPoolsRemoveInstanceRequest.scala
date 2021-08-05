@@ -13,22 +13,17 @@ trait SchemaTargetPoolsRemoveInstanceRequest extends StObject {
 }
 object SchemaTargetPoolsRemoveInstanceRequest {
   
-  @scala.inline
-  def apply(): SchemaTargetPoolsRemoveInstanceRequest = {
+  inline def apply(): SchemaTargetPoolsRemoveInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetPoolsRemoveInstanceRequest]
   }
   
-  @scala.inline
-  implicit class SchemaTargetPoolsRemoveInstanceRequestMutableBuilder[Self <: SchemaTargetPoolsRemoveInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetPoolsRemoveInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[SchemaInstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[SchemaInstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: SchemaInstanceReference*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: SchemaInstanceReference*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

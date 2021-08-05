@@ -162,8 +162,7 @@ object Capture {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def show(mediaCapture: typings.winrt.Windows.Media.Capture.MediaCapture): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(mediaCapture.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def show(mediaCapture: typings.winrt.Windows.Media.Capture.MediaCapture): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(mediaCapture.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("Windows.Media.Capture.MediaCapture")

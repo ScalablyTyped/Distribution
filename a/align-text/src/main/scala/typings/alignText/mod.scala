@@ -6,18 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(text: String, fn: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(text: String, fn: Callback): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(text: js.Array[js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def apply(text: js.Array[js.Any], fn: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def apply(text: js.Array[js.Any], fn: Callback): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(text: String, fn: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, fn: Callback): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: js.Array[js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def apply(text: js.Array[js.Any], fn: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(text: js.Array[js.Any], fn: Callback): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("align-text", JSImport.Namespace)
   @js.native
@@ -50,23 +44,18 @@ object mod {
   }
   object TransformResult {
     
-    @scala.inline
-    def apply(character: String, indent: Double, prefix: String): TransformResult = {
+    inline def apply(character: String, indent: Double, prefix: String): TransformResult = {
       val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransformResult]
     }
     
-    @scala.inline
-    implicit class TransformResultMutableBuilder[Self <: TransformResult] (val x: Self) extends AnyVal {
+    extension [Self <: TransformResult](x: Self) {
       
-      @scala.inline
-      def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
 }

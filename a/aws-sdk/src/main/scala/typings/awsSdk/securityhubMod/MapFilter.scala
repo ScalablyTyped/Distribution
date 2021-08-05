@@ -23,31 +23,23 @@ trait MapFilter extends StObject {
 }
 object MapFilter {
   
-  @scala.inline
-  def apply(): MapFilter = {
+  inline def apply(): MapFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapFilter]
   }
   
-  @scala.inline
-  implicit class MapFilterMutableBuilder[Self <: MapFilter] (val x: Self) extends AnyVal {
+  extension [Self <: MapFilter](x: Self) {
     
-    @scala.inline
-    def setComparison(value: MapFilterComparison): Self = StObject.set(x, "Comparison", value.asInstanceOf[js.Any])
+    inline def setComparison(value: MapFilterComparison): Self = StObject.set(x, "Comparison", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonUndefined: Self = StObject.set(x, "Comparison", js.undefined)
+    inline def setComparisonUndefined: Self = StObject.set(x, "Comparison", js.undefined)
     
-    @scala.inline
-    def setKey(value: NonEmptyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: NonEmptyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

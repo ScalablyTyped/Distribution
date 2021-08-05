@@ -18,22 +18,17 @@ trait RegisterCertificateWithoutCARequest extends StObject {
 }
 object RegisterCertificateWithoutCARequest {
   
-  @scala.inline
-  def apply(certificatePem: CertificatePem): RegisterCertificateWithoutCARequest = {
+  inline def apply(certificatePem: CertificatePem): RegisterCertificateWithoutCARequest = {
     val __obj = js.Dynamic.literal(certificatePem = certificatePem.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterCertificateWithoutCARequest]
   }
   
-  @scala.inline
-  implicit class RegisterCertificateWithoutCARequestMutableBuilder[Self <: RegisterCertificateWithoutCARequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterCertificateWithoutCARequest](x: Self) {
     
-    @scala.inline
-    def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
+    inline def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: CertificateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CertificateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

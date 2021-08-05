@@ -13,19 +13,15 @@ trait DetectorStateSummary extends StObject {
 }
 object DetectorStateSummary {
   
-  @scala.inline
-  def apply(): DetectorStateSummary = {
+  inline def apply(): DetectorStateSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectorStateSummary]
   }
   
-  @scala.inline
-  implicit class DetectorStateSummaryMutableBuilder[Self <: DetectorStateSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DetectorStateSummary](x: Self) {
     
-    @scala.inline
-    def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
+    inline def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNameUndefined: Self = StObject.set(x, "stateName", js.undefined)
+    inline def setStateNameUndefined: Self = StObject.set(x, "stateName", js.undefined)
   }
 }

@@ -63,8 +63,7 @@ object AppServiceCallParameterMapping {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): AppServiceCallParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AppServiceCallParameterMapping]
+  inline def create(model: IModel): AppServiceCallParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AppServiceCallParameterMapping]
   
   /**
     * Creates and returns a new AppServiceCallParameterMapping instance in the SDK and on the server.
@@ -72,20 +71,17 @@ object AppServiceCallParameterMapping {
     * of the parent AppServiceCallAction element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createIn(container: AppServiceCallAction): AppServiceCallParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AppServiceCallParameterMapping]
+  inline def createIn(container: AppServiceCallAction): AppServiceCallParameterMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[AppServiceCallParameterMapping]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallParameterMapping.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.AppServiceCallParameterMapping.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

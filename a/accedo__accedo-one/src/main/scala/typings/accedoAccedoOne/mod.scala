@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(config: AccedoConfig): AccedoClient = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[AccedoClient]
+  inline def apply(config: AccedoConfig): AccedoClient = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[AccedoClient]
   
   @JSImport("@accedo/accedo-one", JSImport.Namespace)
   @js.native
@@ -72,47 +71,34 @@ object mod {
     }
     object Details {
       
-      @scala.inline
-      def apply(message: String): Details = {
+      inline def apply(message: String): Details = {
         val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
         __obj.asInstanceOf[Details]
       }
       
-      @scala.inline
-      implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+      extension [Self <: Details](x: Self) {
         
-        @scala.inline
-        def setDim1(value: String): Self = StObject.set(x, "dim1", value.asInstanceOf[js.Any])
+        inline def setDim1(value: String): Self = StObject.set(x, "dim1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDim1Undefined: Self = StObject.set(x, "dim1", js.undefined)
+        inline def setDim1Undefined: Self = StObject.set(x, "dim1", js.undefined)
         
-        @scala.inline
-        def setDim2(value: String): Self = StObject.set(x, "dim2", value.asInstanceOf[js.Any])
+        inline def setDim2(value: String): Self = StObject.set(x, "dim2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDim2Undefined: Self = StObject.set(x, "dim2", js.undefined)
+        inline def setDim2Undefined: Self = StObject.set(x, "dim2", js.undefined)
         
-        @scala.inline
-        def setDim3(value: String): Self = StObject.set(x, "dim3", value.asInstanceOf[js.Any])
+        inline def setDim3(value: String): Self = StObject.set(x, "dim3", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDim3Undefined: Self = StObject.set(x, "dim3", js.undefined)
+        inline def setDim3Undefined: Self = StObject.set(x, "dim3", js.undefined)
         
-        @scala.inline
-        def setDim4(value: String): Self = StObject.set(x, "dim4", value.asInstanceOf[js.Any])
+        inline def setDim4(value: String): Self = StObject.set(x, "dim4", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDim4Undefined: Self = StObject.set(x, "dim4", js.undefined)
+        inline def setDim4Undefined: Self = StObject.set(x, "dim4", js.undefined)
         
-        @scala.inline
-        def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+        inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+        inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       }
     }
     
@@ -137,26 +123,20 @@ object mod {
     }
     object Logobject {
       
-      @scala.inline
-      def apply(logType: Level, message: String, timestamp: String | Double): Logobject = {
+      inline def apply(logType: Level, message: String, timestamp: String | Double): Logobject = {
         val __obj = js.Dynamic.literal(logType = logType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
         __obj.asInstanceOf[Logobject]
       }
       
-      @scala.inline
-      implicit class LogobjectMutableBuilder[Self <: Logobject] (val x: Self) extends AnyVal {
+      extension [Self <: Logobject](x: Self) {
         
-        @scala.inline
-        def setLogType(value: Level): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
+        inline def setLogType(value: Level): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setTimestamp(value: String | Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+        inline def setTimestamp(value: String | Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -427,65 +407,46 @@ object mod {
   }
   object AccedoConfig {
     
-    @scala.inline
-    def apply(appKey: String): AccedoConfig = {
+    inline def apply(appKey: String): AccedoConfig = {
       val __obj = js.Dynamic.literal(appKey = appKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccedoConfig]
     }
     
-    @scala.inline
-    implicit class AccedoConfigMutableBuilder[Self <: AccedoConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AccedoConfig](x: Self) {
       
-      @scala.inline
-      def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
+      inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserInfoProvider(value: () => DeviceId): Self = StObject.set(x, "browserInfoProvider", js.Any.fromFunction0(value))
+      inline def setBrowserInfoProvider(value: () => DeviceId): Self = StObject.set(x, "browserInfoProvider", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBrowserInfoProviderUndefined: Self = StObject.set(x, "browserInfoProvider", js.undefined)
+      inline def setBrowserInfoProviderUndefined: Self = StObject.set(x, "browserInfoProvider", js.undefined)
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+      inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
       
-      @scala.inline
-      def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setOnDeviceIdGenerated(value: /* deviceId */ String => Unit): Self = StObject.set(x, "onDeviceIdGenerated", js.Any.fromFunction1(value))
+      inline def setOnDeviceIdGenerated(value: /* deviceId */ String => Unit): Self = StObject.set(x, "onDeviceIdGenerated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeviceIdGeneratedUndefined: Self = StObject.set(x, "onDeviceIdGenerated", js.undefined)
+      inline def setOnDeviceIdGeneratedUndefined: Self = StObject.set(x, "onDeviceIdGenerated", js.undefined)
       
-      @scala.inline
-      def setOnSessionKeyChanged(value: /* sessionKey */ String => Unit): Self = StObject.set(x, "onSessionKeyChanged", js.Any.fromFunction1(value))
+      inline def setOnSessionKeyChanged(value: /* sessionKey */ String => Unit): Self = StObject.set(x, "onSessionKeyChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSessionKeyChangedUndefined: Self = StObject.set(x, "onSessionKeyChanged", js.undefined)
+      inline def setOnSessionKeyChangedUndefined: Self = StObject.set(x, "onSessionKeyChanged", js.undefined)
       
-      @scala.inline
-      def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+      inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
+      inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -526,77 +487,54 @@ object mod {
   }
   object AccedoEntryParams {
     
-    @scala.inline
-    def apply(): AccedoEntryParams = {
+    inline def apply(): AccedoEntryParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccedoEntryParams]
     }
     
-    @scala.inline
-    implicit class AccedoEntryParamsMutableBuilder[Self <: AccedoEntryParams] (val x: Self) extends AnyVal {
+    extension [Self <: AccedoEntryParams](x: Self) {
       
-      @scala.inline
-      def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
       
-      @scala.inline
-      def setAt(value: String | Date): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+      inline def setAt(value: String | Date): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+      inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
       
-      @scala.inline
-      def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Array[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
+      inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+      inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTypeAlias(value: String): Self = StObject.set(x, "typeAlias", value.asInstanceOf[js.Any])
+      inline def setTypeAlias(value: String): Self = StObject.set(x, "typeAlias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeAliasUndefined: Self = StObject.set(x, "typeAlias", js.undefined)
+      inline def setTypeAliasUndefined: Self = StObject.set(x, "typeAlias", js.undefined)
       
-      @scala.inline
-      def setTypeId(value: js.Array[String]): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
+      inline def setTypeId(value: js.Array[String]): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeIdUndefined: Self = StObject.set(x, "typeId", js.undefined)
+      inline def setTypeIdUndefined: Self = StObject.set(x, "typeId", js.undefined)
       
-      @scala.inline
-      def setTypeIdVarargs(value: String*): Self = StObject.set(x, "typeId", js.Array(value :_*))
+      inline def setTypeIdVarargs(value: String*): Self = StObject.set(x, "typeId", js.Array(value :_*))
     }
   }
   
@@ -610,23 +548,18 @@ object mod {
   }
   object AccedoLocale {
     
-    @scala.inline
-    def apply(code: String, countryInfo: Alpha2Code, displayName: String): AccedoLocale = {
+    inline def apply(code: String, countryInfo: Alpha2Code, displayName: String): AccedoLocale = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], countryInfo = countryInfo.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccedoLocale]
     }
     
-    @scala.inline
-    implicit class AccedoLocaleMutableBuilder[Self <: AccedoLocale] (val x: Self) extends AnyVal {
+    extension [Self <: AccedoLocale](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryInfo(value: Alpha2Code): Self = StObject.set(x, "countryInfo", value.asInstanceOf[js.Any])
+      inline def setCountryInfo(value: Alpha2Code): Self = StObject.set(x, "countryInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -642,26 +575,20 @@ object mod {
   }
   object AccedoProfile {
     
-    @scala.inline
-    def apply(profileDescription: String, profileId: String, profileLastModified: String, profileName: String): AccedoProfile = {
+    inline def apply(profileDescription: String, profileId: String, profileLastModified: String, profileName: String): AccedoProfile = {
       val __obj = js.Dynamic.literal(profileDescription = profileDescription.asInstanceOf[js.Any], profileId = profileId.asInstanceOf[js.Any], profileLastModified = profileLastModified.asInstanceOf[js.Any], profileName = profileName.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccedoProfile]
     }
     
-    @scala.inline
-    implicit class AccedoProfileMutableBuilder[Self <: AccedoProfile] (val x: Self) extends AnyVal {
+    extension [Self <: AccedoProfile](x: Self) {
       
-      @scala.inline
-      def setProfileDescription(value: String): Self = StObject.set(x, "profileDescription", value.asInstanceOf[js.Any])
+      inline def setProfileDescription(value: String): Self = StObject.set(x, "profileDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+      inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileLastModified(value: String): Self = StObject.set(x, "profileLastModified", value.asInstanceOf[js.Any])
+      inline def setProfileLastModified(value: String): Self = StObject.set(x, "profileLastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileName(value: String): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
+      inline def setProfileName(value: String): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
     }
   }
 }

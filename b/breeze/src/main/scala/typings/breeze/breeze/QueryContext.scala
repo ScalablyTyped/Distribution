@@ -18,8 +18,7 @@ trait QueryContext extends StObject {
 }
 object QueryContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataService: DataService,
     entityManager: EntityManager,
     query: EntityQuery | String,
@@ -30,22 +29,16 @@ object QueryContext {
     __obj.asInstanceOf[QueryContext]
   }
   
-  @scala.inline
-  implicit class QueryContextMutableBuilder[Self <: QueryContext] (val x: Self) extends AnyVal {
+  extension [Self <: QueryContext](x: Self) {
     
-    @scala.inline
-    def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
+    inline def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityManager(value: EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
+    inline def setEntityManager(value: EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: EntityQuery | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: EntityQuery | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
+    inline def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

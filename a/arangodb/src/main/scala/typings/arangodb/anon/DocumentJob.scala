@@ -59,8 +59,7 @@ trait DocumentJob
 }
 object DocumentJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _id: String,
     _key: String,
     _rev: String,
@@ -85,88 +84,60 @@ object DocumentJob {
     __obj.asInstanceOf[DocumentJob]
   }
   
-  @scala.inline
-  implicit class DocumentJobMutableBuilder[Self <: DocumentJob] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentJob](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUntil(value: Double): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
+    inline def setDelayUntil(value: Double): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+    inline def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+    inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
     
-    @scala.inline
-    def setFailures(value: js.Array[js.Object]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: js.Array[js.Object]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresVarargs(value: js.Object*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: js.Object*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
+    inline def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModified(value: Double): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: Double): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+    inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatTimes(value: Double): Self = StObject.set(x, "repeatTimes", value.asInstanceOf[js.Any])
+    inline def setRepeatTimes(value: Double): Self = StObject.set(x, "repeatTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUntil(value: Double): Self = StObject.set(x, "repeatUntil", value.asInstanceOf[js.Any])
+    inline def setRepeatUntil(value: Double): Self = StObject.set(x, "repeatUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunFailures(value: Double): Self = StObject.set(x, "runFailures", value.asInstanceOf[js.Any])
+    inline def setRunFailures(value: Double): Self = StObject.set(x, "runFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+    inline def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setType(value: Script): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Script): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_from(value: String): Self = StObject.set(x, "_from", value.asInstanceOf[js.Any])
+    inline def set_from(value: String): Self = StObject.set(x, "_from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_fromUndefined: Self = StObject.set(x, "_from", js.undefined)
+    inline def set_fromUndefined: Self = StObject.set(x, "_from", js.undefined)
     
-    @scala.inline
-    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
+    inline def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
+    inline def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_to(value: String): Self = StObject.set(x, "_to", value.asInstanceOf[js.Any])
+    inline def set_to(value: String): Self = StObject.set(x, "_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_toUndefined: Self = StObject.set(x, "_to", js.undefined)
+    inline def set_toUndefined: Self = StObject.set(x, "_to", js.undefined)
   }
 }

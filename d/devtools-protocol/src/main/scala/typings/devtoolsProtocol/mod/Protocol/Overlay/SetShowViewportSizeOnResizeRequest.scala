@@ -13,16 +13,13 @@ trait SetShowViewportSizeOnResizeRequest extends StObject {
 }
 object SetShowViewportSizeOnResizeRequest {
   
-  @scala.inline
-  def apply(show: Boolean): SetShowViewportSizeOnResizeRequest = {
+  inline def apply(show: Boolean): SetShowViewportSizeOnResizeRequest = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetShowViewportSizeOnResizeRequest]
   }
   
-  @scala.inline
-  implicit class SetShowViewportSizeOnResizeRequestMutableBuilder[Self <: SetShowViewportSizeOnResizeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetShowViewportSizeOnResizeRequest](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

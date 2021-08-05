@@ -42,8 +42,7 @@ object packBuilderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(repo: Repository): Packbuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[Packbuilder]
+    inline def create(repo: Repository): Packbuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[Packbuilder]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -52,11 +51,9 @@ object packBuilderMod {
     trait STAGE extends StObject
     object STAGE {
       
-      @scala.inline
-      def ADDING_OBJECTS: `0` = 0.asInstanceOf[`0`]
+      inline def ADDING_OBJECTS: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def DELTAFICATION: `1` = 1.asInstanceOf[`1`]
+      inline def DELTAFICATION: `1` = 1.asInstanceOf[`1`]
     }
   }
 }

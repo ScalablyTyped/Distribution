@@ -23,34 +23,25 @@ trait ComplianceStringFilter extends StObject {
 }
 object ComplianceStringFilter {
   
-  @scala.inline
-  def apply(): ComplianceStringFilter = {
+  inline def apply(): ComplianceStringFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComplianceStringFilter]
   }
   
-  @scala.inline
-  implicit class ComplianceStringFilterMutableBuilder[Self <: ComplianceStringFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ComplianceStringFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: ComplianceStringFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ComplianceStringFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setType(value: ComplianceQueryOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ComplianceQueryOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValues(value: ComplianceStringFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ComplianceStringFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: ComplianceFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ComplianceFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

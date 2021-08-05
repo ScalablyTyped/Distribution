@@ -10,16 +10,13 @@ trait EnumValuesKeepSourceDeleteTarget extends StObject {
 }
 object EnumValuesKeepSourceDeleteTarget {
   
-  @scala.inline
-  def apply(enumValues: KeepSourceDeleteTarget): EnumValuesKeepSourceDeleteTarget = {
+  inline def apply(enumValues: KeepSourceDeleteTarget): EnumValuesKeepSourceDeleteTarget = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesKeepSourceDeleteTarget]
   }
   
-  @scala.inline
-  implicit class EnumValuesKeepSourceDeleteTargetMutableBuilder[Self <: EnumValuesKeepSourceDeleteTarget] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesKeepSourceDeleteTarget](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: KeepSourceDeleteTarget): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: KeepSourceDeleteTarget): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

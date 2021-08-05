@@ -14,22 +14,17 @@ trait RuleConditionModel extends StObject {
 }
 object RuleConditionModel {
   
-  @scala.inline
-  def apply(conditionType: String, field: String, value: String): RuleConditionModel = {
+  inline def apply(conditionType: String, field: String, value: String): RuleConditionModel = {
     val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleConditionModel]
   }
   
-  @scala.inline
-  implicit class RuleConditionModelMutableBuilder[Self <: RuleConditionModel] (val x: Self) extends AnyVal {
+  extension [Self <: RuleConditionModel](x: Self) {
     
-    @scala.inline
-    def setConditionType(value: String): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: String): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

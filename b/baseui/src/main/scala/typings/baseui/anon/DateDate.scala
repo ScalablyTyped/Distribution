@@ -10,16 +10,13 @@ trait DateDate extends StObject {
 }
 object DateDate {
   
-  @scala.inline
-  def apply(date: typings.std.Date): DateDate = {
+  inline def apply(date: typings.std.Date): DateDate = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateDate]
   }
   
-  @scala.inline
-  implicit class DateDateMutableBuilder[Self <: DateDate] (val x: Self) extends AnyVal {
+  extension [Self <: DateDate](x: Self) {
     
-    @scala.inline
-    def setDate(value: typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

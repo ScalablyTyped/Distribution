@@ -11,6 +11,5 @@ object routeLifecycleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Dependencies](router: Router[Dependencies]): Router[Dependencies] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any]).asInstanceOf[Router[Dependencies]]
+  inline def default[Dependencies](router: Router[Dependencies]): Router[Dependencies] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any]).asInstanceOf[Router[Dependencies]]
 }

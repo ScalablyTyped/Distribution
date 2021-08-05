@@ -14,16 +14,13 @@ trait ContentText
 }
 object ContentText {
   
-  @scala.inline
-  def apply(text: Content): ContentText = {
+  inline def apply(text: Content): ContentText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentText]
   }
   
-  @scala.inline
-  implicit class ContentTextMutableBuilder[Self <: ContentText] (val x: Self) extends AnyVal {
+  extension [Self <: ContentText](x: Self) {
     
-    @scala.inline
-    def setText(value: Content): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Content): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait ASPxClientSchedulerToolTipData extends StObject {
 }
 object ASPxClientSchedulerToolTipData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAppointment: () => ASPxClientAppointment,
     GetInterval: () => ASPxClientTimeInterval,
     GetResources: () => js.Array[String]
@@ -36,16 +35,12 @@ object ASPxClientSchedulerToolTipData {
     __obj.asInstanceOf[ASPxClientSchedulerToolTipData]
   }
   
-  @scala.inline
-  implicit class ASPxClientSchedulerToolTipDataMutableBuilder[Self <: ASPxClientSchedulerToolTipData] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSchedulerToolTipData](x: Self) {
     
-    @scala.inline
-    def setGetAppointment(value: () => ASPxClientAppointment): Self = StObject.set(x, "GetAppointment", js.Any.fromFunction0(value))
+    inline def setGetAppointment(value: () => ASPxClientAppointment): Self = StObject.set(x, "GetAppointment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInterval(value: () => ASPxClientTimeInterval): Self = StObject.set(x, "GetInterval", js.Any.fromFunction0(value))
+    inline def setGetInterval(value: () => ASPxClientTimeInterval): Self = StObject.set(x, "GetInterval", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResources(value: () => js.Array[String]): Self = StObject.set(x, "GetResources", js.Any.fromFunction0(value))
+    inline def setGetResources(value: () => js.Array[String]): Self = StObject.set(x, "GetResources", js.Any.fromFunction0(value))
   }
 }

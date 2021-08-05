@@ -18,28 +18,21 @@ trait ReplicationGroupMessage extends StObject {
 }
 object ReplicationGroupMessage {
   
-  @scala.inline
-  def apply(): ReplicationGroupMessage = {
+  inline def apply(): ReplicationGroupMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationGroupMessage]
   }
   
-  @scala.inline
-  implicit class ReplicationGroupMessageMutableBuilder[Self <: ReplicationGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationGroupMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReplicationGroups(value: ReplicationGroupList): Self = StObject.set(x, "ReplicationGroups", value.asInstanceOf[js.Any])
+    inline def setReplicationGroups(value: ReplicationGroupList): Self = StObject.set(x, "ReplicationGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupsUndefined: Self = StObject.set(x, "ReplicationGroups", js.undefined)
+    inline def setReplicationGroupsUndefined: Self = StObject.set(x, "ReplicationGroups", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupsVarargs(value: ReplicationGroup*): Self = StObject.set(x, "ReplicationGroups", js.Array(value :_*))
+    inline def setReplicationGroupsVarargs(value: ReplicationGroup*): Self = StObject.set(x, "ReplicationGroups", js.Array(value :_*))
   }
 }

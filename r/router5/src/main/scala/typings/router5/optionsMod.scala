@@ -12,6 +12,5 @@ object optionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Dependencies](options: PartialOptions): js.Function1[/* router */ Router[Dependencies], Router[Dependencies]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* router */ Router[Dependencies], Router[Dependencies]]]
+  inline def default[Dependencies](options: PartialOptions): js.Function1[/* router */ Router[Dependencies], Router[Dependencies]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* router */ Router[Dependencies], Router[Dependencies]]]
 }

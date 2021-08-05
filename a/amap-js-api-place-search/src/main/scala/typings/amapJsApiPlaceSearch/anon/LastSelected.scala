@@ -23,8 +23,7 @@ trait LastSelected extends StObject {
 }
 object LastSelected {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     selected: SelectChangeEventData | (SelectChangeEvent[
       markerClick | listElementClick, 
       (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
@@ -34,22 +33,18 @@ object LastSelected {
     __obj.asInstanceOf[LastSelected]
   }
   
-  @scala.inline
-  implicit class LastSelectedMutableBuilder[Self <: LastSelected] (val x: Self) extends AnyVal {
+  extension [Self <: LastSelected](x: Self) {
     
-    @scala.inline
-    def setLastSelected(
+    inline def setLastSelected(
       value: SelectChangeEventData | (SelectChangeEvent[
           markerClick | listElementClick, 
           (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent
         ])
     ): Self = StObject.set(x, "lastSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSelectedNull: Self = StObject.set(x, "lastSelected", null)
+    inline def setLastSelectedNull: Self = StObject.set(x, "lastSelected", null)
     
-    @scala.inline
-    def setSelected(
+    inline def setSelected(
       value: SelectChangeEventData | (SelectChangeEvent[
           markerClick | listElementClick, 
           (/* import warning: importer.ImportType#apply Failed type conversion: amap-js-api.AMap.Marker.EventMap<amap-js-api.AMap.Marker<any>>['click'] */ js.Any) | MouseEvent

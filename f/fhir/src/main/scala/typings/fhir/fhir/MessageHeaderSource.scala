@@ -58,64 +58,45 @@ trait MessageHeaderSource
 }
 object MessageHeaderSource {
   
-  @scala.inline
-  def apply(endpoint: uri): MessageHeaderSource = {
+  inline def apply(endpoint: uri): MessageHeaderSource = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageHeaderSource]
   }
   
-  @scala.inline
-  implicit class MessageHeaderSourceMutableBuilder[Self <: MessageHeaderSource] (val x: Self) extends AnyVal {
+  extension [Self <: MessageHeaderSource](x: Self) {
     
-    @scala.inline
-    def setContact(value: ContactPoint): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: ContactPoint): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: uri): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: uri): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSoftware(value: String): Self = StObject.set(x, "software", value.asInstanceOf[js.Any])
+    inline def setSoftware(value: String): Self = StObject.set(x, "software", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareUndefined: Self = StObject.set(x, "software", js.undefined)
+    inline def setSoftwareUndefined: Self = StObject.set(x, "software", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def set_endpoint(value: Element): Self = StObject.set(x, "_endpoint", value.asInstanceOf[js.Any])
+    inline def set_endpoint(value: Element): Self = StObject.set(x, "_endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_endpointUndefined: Self = StObject.set(x, "_endpoint", js.undefined)
+    inline def set_endpointUndefined: Self = StObject.set(x, "_endpoint", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_software(value: Element): Self = StObject.set(x, "_software", value.asInstanceOf[js.Any])
+    inline def set_software(value: Element): Self = StObject.set(x, "_software", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_softwareUndefined: Self = StObject.set(x, "_software", js.undefined)
+    inline def set_softwareUndefined: Self = StObject.set(x, "_software", js.undefined)
     
-    @scala.inline
-    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
+    inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

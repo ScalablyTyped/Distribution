@@ -18,8 +18,7 @@ trait ParametersLicensesGetAllCommonlyUsedEndpoint extends StObject {
 }
 object ParametersLicensesGetAllCommonlyUsedEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: LicensesGetAllCommonlyUsedEndpoint,
     request: LicensesGetAllCommonlyUsedRequestOptions,
     response: OctokitResponse[LicensesGetAllCommonlyUsedResponseData]
@@ -28,16 +27,12 @@ object ParametersLicensesGetAllCommonlyUsedEndpoint {
     __obj.asInstanceOf[ParametersLicensesGetAllCommonlyUsedEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersLicensesGetAllCommonlyUsedEndpointMutableBuilder[Self <: ParametersLicensesGetAllCommonlyUsedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersLicensesGetAllCommonlyUsedEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: LicensesGetAllCommonlyUsedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: LicensesGetAllCommonlyUsedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: LicensesGetAllCommonlyUsedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: LicensesGetAllCommonlyUsedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[LicensesGetAllCommonlyUsedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[LicensesGetAllCommonlyUsedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

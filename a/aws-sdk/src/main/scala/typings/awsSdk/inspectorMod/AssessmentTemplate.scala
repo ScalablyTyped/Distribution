@@ -53,8 +53,7 @@ trait AssessmentTemplate extends StObject {
 }
 object AssessmentTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arn: Arn,
     assessmentRunCount: ArnCount,
     assessmentTargetArn: Arn,
@@ -68,43 +67,30 @@ object AssessmentTemplate {
     __obj.asInstanceOf[AssessmentTemplate]
   }
   
-  @scala.inline
-  implicit class AssessmentTemplateMutableBuilder[Self <: AssessmentTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: AssessmentTemplate](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentRunCount(value: ArnCount): Self = StObject.set(x, "assessmentRunCount", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunCount(value: ArnCount): Self = StObject.set(x, "assessmentRunCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSeconds(value: AssessmentRunDuration): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: AssessmentRunDuration): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAssessmentRunArn(value: Arn): Self = StObject.set(x, "lastAssessmentRunArn", value.asInstanceOf[js.Any])
+    inline def setLastAssessmentRunArn(value: Arn): Self = StObject.set(x, "lastAssessmentRunArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAssessmentRunArnUndefined: Self = StObject.set(x, "lastAssessmentRunArn", js.undefined)
+    inline def setLastAssessmentRunArnUndefined: Self = StObject.set(x, "lastAssessmentRunArn", js.undefined)
     
-    @scala.inline
-    def setName(value: AssessmentTemplateName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AssessmentTemplateName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesPackageArns(value: AssessmentTemplateRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
+    inline def setRulesPackageArns(value: AssessmentTemplateRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
     
-    @scala.inline
-    def setUserAttributesForFindings(value: UserAttributeList): Self = StObject.set(x, "userAttributesForFindings", value.asInstanceOf[js.Any])
+    inline def setUserAttributesForFindings(value: UserAttributeList): Self = StObject.set(x, "userAttributesForFindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAttributesForFindingsVarargs(value: Attribute*): Self = StObject.set(x, "userAttributesForFindings", js.Array(value :_*))
+    inline def setUserAttributesForFindingsVarargs(value: Attribute*): Self = StObject.set(x, "userAttributesForFindings", js.Array(value :_*))
   }
 }

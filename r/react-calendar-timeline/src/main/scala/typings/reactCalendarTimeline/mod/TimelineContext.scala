@@ -18,8 +18,7 @@ trait TimelineContext extends StObject {
 }
 object TimelineContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canvasTimeEnd: Double,
     canvasTimeStart: Double,
     timelineWidth: Double,
@@ -30,22 +29,16 @@ object TimelineContext {
     __obj.asInstanceOf[TimelineContext]
   }
   
-  @scala.inline
-  implicit class TimelineContextMutableBuilder[Self <: TimelineContext] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineContext](x: Self) {
     
-    @scala.inline
-    def setCanvasTimeEnd(value: Double): Self = StObject.set(x, "canvasTimeEnd", value.asInstanceOf[js.Any])
+    inline def setCanvasTimeEnd(value: Double): Self = StObject.set(x, "canvasTimeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasTimeStart(value: Double): Self = StObject.set(x, "canvasTimeStart", value.asInstanceOf[js.Any])
+    inline def setCanvasTimeStart(value: Double): Self = StObject.set(x, "canvasTimeStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineWidth(value: Double): Self = StObject.set(x, "timelineWidth", value.asInstanceOf[js.Any])
+    inline def setTimelineWidth(value: Double): Self = StObject.set(x, "timelineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleTimeEnd(value: Double): Self = StObject.set(x, "visibleTimeEnd", value.asInstanceOf[js.Any])
+    inline def setVisibleTimeEnd(value: Double): Self = StObject.set(x, "visibleTimeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleTimeStart(value: Double): Self = StObject.set(x, "visibleTimeStart", value.asInstanceOf[js.Any])
+    inline def setVisibleTimeStart(value: Double): Self = StObject.set(x, "visibleTimeStart", value.asInstanceOf[js.Any])
   }
 }

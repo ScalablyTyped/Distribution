@@ -43,8 +43,7 @@ object Tech {
     *        The options passed to the tech
     * @return 'probably', 'maybe', or '' (empty string)
     */
-  @scala.inline
-  def canPlaySource(srcObj: js.Any, options: js.Any): problably | maybe | _empty = (^.asInstanceOf[js.Dynamic].applyDynamic("canPlaySource")(srcObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[problably | maybe | _empty]
+  inline def canPlaySource(srcObj: js.Any, options: js.Any): problably | maybe | _empty = (^.asInstanceOf[js.Dynamic].applyDynamic("canPlaySource")(srcObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[problably | maybe | _empty]
   
   /**
     * Check if the type is supported by this tech.
@@ -56,8 +55,7 @@ object Tech {
     *        The media type to check
     * @return Returns the native video element's response
     */
-  @scala.inline
-  def canPlayType(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("canPlayType")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def canPlayType(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("canPlayType")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Get a `Tech` from the shared list by name.
@@ -67,8 +65,7 @@ object Tech {
     *
     * @return The `Tech` or undefined if there was no tech with the name requested.
     */
-  @scala.inline
-  def getTech(name: String): js.UndefOr[typings.videoJs.mod.videojs.Tech] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTech")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.videoJs.mod.videojs.Tech]]
+  inline def getTech(name: String): js.UndefOr[typings.videoJs.mod.videojs.Tech] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTech")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.videoJs.mod.videojs.Tech]]
   
   /**
     * Return whether the argument is a Tech or not.
@@ -81,8 +78,7 @@ object Tech {
     *         - True if it is a tech
     *         - False if it is not
     */
-  @scala.inline
-  def isTech(component: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTech")(component.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTech(component: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTech")(component.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Registers a `Tech` into a shared list for videojs.
@@ -93,8 +89,7 @@ object Tech {
     * @param tech
     *        The `Tech` class to register.
     */
-  @scala.inline
-  def registerTech(name: String, tech: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTech")(name.asInstanceOf[js.Any], tech.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerTech(name: String, tech: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTech")(name.asInstanceOf[js.Any], tech.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * A functional mixin for techs that want to use the Source Handler pattern.
@@ -107,6 +102,5 @@ object Tech {
     *        The tech to add source handler functions to.
     *
     */
-  @scala.inline
-  def withSourceHandlers(tech: TypeofTech): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("withSourceHandlers")(tech.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def withSourceHandlers(tech: TypeofTech): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("withSourceHandlers")(tech.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

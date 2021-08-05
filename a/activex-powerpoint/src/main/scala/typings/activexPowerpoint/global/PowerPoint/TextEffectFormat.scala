@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TextEffectFormat")
 @js.native
-class TextEffectFormat protected ()
+/* private */ class TextEffectFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TextEffectFormat {
   
@@ -44,7 +44,7 @@ class TextEffectFormat protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.TextEffectFormat_typekey")
   var PowerPointDotTextEffectFormat_typekey: typings.activexPowerpoint.PowerPoint.TextEffectFormat = js.native
   

@@ -26,7 +26,7 @@ object ajaxUploaderMod {
   trait AjaxUploader
     extends Component[UploadProps, js.Object, js.Any] {
     
-    var _isMounted: js.Any = js.native
+    /* private */ var _isMounted: js.Any = js.native
     
     def abort(): Unit = js.native
     def abort(file: js.Any): Unit = js.native
@@ -37,7 +37,7 @@ object ajaxUploaderMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MAjaxUploader(): Unit = js.native
     
-    var fileInput: js.Any = js.native
+    /* private */ var fileInput: js.Any = js.native
     
     def onChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
     

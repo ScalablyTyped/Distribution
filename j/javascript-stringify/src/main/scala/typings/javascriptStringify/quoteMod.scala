@@ -17,15 +17,11 @@ object quoteMod {
   @js.native
   val IS_VALID_IDENTIFIER: RegExp = js.native
   
-  @scala.inline
-  def isValidVariableName(name: PropertyKey): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidVariableName")(name.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  inline def isValidVariableName(name: PropertyKey): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidVariableName")(name.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  @scala.inline
-  def quoteKey(key: PropertyKey, next: Next): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("quoteKey")(key.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def quoteKey(key: PropertyKey, next: Next): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("quoteKey")(key.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def quoteString(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quoteString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def quoteString(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quoteString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stringifyPath(path: js.Array[PropertyKey], next: Next): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPath")(path.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyPath(path: js.Array[PropertyKey], next: Next): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyPath")(path.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[String]
 }

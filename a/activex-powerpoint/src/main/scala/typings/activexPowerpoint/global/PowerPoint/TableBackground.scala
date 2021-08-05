@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TableBackground")
 @js.native
-class TableBackground protected ()
+/* private */ class TableBackground ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TableBackground {
   
@@ -17,7 +17,7 @@ class TableBackground protected ()
   /* CompleteClass */
   override val Picture: typings.activexPowerpoint.PowerPoint.PictureFormat = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.TableBackground_typekey")
   var PowerPointDotTableBackground_typekey: typings.activexPowerpoint.PowerPoint.TableBackground = js.native
   

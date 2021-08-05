@@ -15,15 +15,15 @@ object sortControllerMod {
     
     /* private */ def clearSortBarThisColumn(columnToSkip: js.Any, source: js.Any): js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
     /* private */ def compareColIds(sortModelEntry: js.Any, column: js.Any): js.Any = js.native
     
     /* private */ def dispatchSortChangedEvents(): js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     def getColumnsWithSortingOrdered(): js.Array[Column] = js.native
     
@@ -33,9 +33,9 @@ object sortControllerMod {
     
     def getSortModel(): js.Array[ColId] = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     def onSortChanged(): Unit = js.native
     
@@ -58,7 +58,6 @@ object sortControllerMod {
     @JSImport("ag-grid/dist/lib/sortController", "SortController.DEFAULT_SORTING_ORDER")
     @js.native
     def DEFAULT_SORTING_ORDER: js.Any = js.native
-    @scala.inline
-    def DEFAULT_SORTING_ORDER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SORTING_ORDER")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_SORTING_ORDER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SORTING_ORDER")(x.asInstanceOf[js.Any])
   }
 }

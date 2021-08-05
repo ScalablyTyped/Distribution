@@ -14,22 +14,17 @@ trait pluploadResponse extends StObject {
 }
 object pluploadResponse {
   
-  @scala.inline
-  def apply(response: String, responseHeaders: String, status: Double): pluploadResponse = {
+  inline def apply(response: String, responseHeaders: String, status: Double): pluploadResponse = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[pluploadResponse]
   }
   
-  @scala.inline
-  implicit class pluploadResponseMutableBuilder[Self <: pluploadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: pluploadResponse](x: Self) {
     
-    @scala.inline
-    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeaders(value: String): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: String): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

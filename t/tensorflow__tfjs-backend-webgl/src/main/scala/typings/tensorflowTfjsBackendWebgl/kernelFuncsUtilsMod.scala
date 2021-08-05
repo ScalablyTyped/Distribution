@@ -26,13 +26,11 @@ object kernelFuncsUtilsMod {
   @js.native
   val CHECK_NAN_SNIPPET_UNARY: /* "if (isnan(x)) return x;" */ String = js.native
   
-  @scala.inline
-  def binaryKernelFunc(
+  inline def binaryKernelFunc(
     hasOpSnippetPackedOpSnippetCheckOutOfBoundsSupportsComplexCpuKernelImplDtype: BinaryKernelFuncConfig
   ): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(hasOpSnippetPackedOpSnippetCheckOutOfBoundsSupportsComplexCpuKernelImplDtype.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
   
-  @scala.inline
-  def unaryKernelFunc(opSnippet: String): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(opSnippet.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
+  inline def unaryKernelFunc(opSnippet: String): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(opSnippet.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
   
   trait BinaryKernelFuncConfig extends StObject {
     
@@ -50,49 +48,36 @@ object kernelFuncsUtilsMod {
   }
   object BinaryKernelFuncConfig {
     
-    @scala.inline
-    def apply(opSnippet: String): BinaryKernelFuncConfig = {
+    inline def apply(opSnippet: String): BinaryKernelFuncConfig = {
       val __obj = js.Dynamic.literal(opSnippet = opSnippet.asInstanceOf[js.Any])
       __obj.asInstanceOf[BinaryKernelFuncConfig]
     }
     
-    @scala.inline
-    implicit class BinaryKernelFuncConfigMutableBuilder[Self <: BinaryKernelFuncConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BinaryKernelFuncConfig](x: Self) {
       
-      @scala.inline
-      def setCheckOutOfBounds(value: Boolean): Self = StObject.set(x, "checkOutOfBounds", value.asInstanceOf[js.Any])
+      inline def setCheckOutOfBounds(value: Boolean): Self = StObject.set(x, "checkOutOfBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckOutOfBoundsUndefined: Self = StObject.set(x, "checkOutOfBounds", js.undefined)
+      inline def setCheckOutOfBoundsUndefined: Self = StObject.set(x, "checkOutOfBounds", js.undefined)
       
-      @scala.inline
-      def setCpuKernelImpl(
+      inline def setCpuKernelImpl(
         value: (/* aShape */ js.Array[Double], /* bShape */ js.Array[Double], /* aVals */ TypedArray, /* bVals */ TypedArray, /* dtype */ DataType) => js.Tuple2[TypedArray, js.Array[Double]]
       ): Self = StObject.set(x, "cpuKernelImpl", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setCpuKernelImplUndefined: Self = StObject.set(x, "cpuKernelImpl", js.undefined)
+      inline def setCpuKernelImplUndefined: Self = StObject.set(x, "cpuKernelImpl", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setOpSnippet(value: String): Self = StObject.set(x, "opSnippet", value.asInstanceOf[js.Any])
+      inline def setOpSnippet(value: String): Self = StObject.set(x, "opSnippet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackedOpSnippet(value: String): Self = StObject.set(x, "packedOpSnippet", value.asInstanceOf[js.Any])
+      inline def setPackedOpSnippet(value: String): Self = StObject.set(x, "packedOpSnippet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackedOpSnippetUndefined: Self = StObject.set(x, "packedOpSnippet", js.undefined)
+      inline def setPackedOpSnippetUndefined: Self = StObject.set(x, "packedOpSnippet", js.undefined)
       
-      @scala.inline
-      def setSupportsComplex(value: Boolean): Self = StObject.set(x, "supportsComplex", value.asInstanceOf[js.Any])
+      inline def setSupportsComplex(value: Boolean): Self = StObject.set(x, "supportsComplex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsComplexUndefined: Self = StObject.set(x, "supportsComplex", js.undefined)
+      inline def setSupportsComplexUndefined: Self = StObject.set(x, "supportsComplex", js.undefined)
     }
   }
 }

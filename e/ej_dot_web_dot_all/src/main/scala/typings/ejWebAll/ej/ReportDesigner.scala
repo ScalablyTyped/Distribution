@@ -474,47 +474,34 @@ object ReportDesigner {
   }
   object AjaxBeforeLoadEventArgs {
     
-    @scala.inline
-    def apply(): AjaxBeforeLoadEventArgs = {
+    inline def apply(): AjaxBeforeLoadEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AjaxBeforeLoadEventArgs]
     }
     
-    @scala.inline
-    implicit class AjaxBeforeLoadEventArgsMutableBuilder[Self <: AjaxBeforeLoadEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AjaxBeforeLoadEventArgs](x: Self) {
       
-      @scala.inline
-      def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+      inline def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+      inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setReportDesignerToken(value: String): Self = StObject.set(x, "reportDesignerToken", value.asInstanceOf[js.Any])
+      inline def setReportDesignerToken(value: String): Self = StObject.set(x, "reportDesignerToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportDesignerTokenUndefined: Self = StObject.set(x, "reportDesignerToken", js.undefined)
+      inline def setReportDesignerTokenUndefined: Self = StObject.set(x, "reportDesignerToken", js.undefined)
       
-      @scala.inline
-      def setServiceAuthorizationToken(value: String): Self = StObject.set(x, "serviceAuthorizationToken", value.asInstanceOf[js.Any])
+      inline def setServiceAuthorizationToken(value: String): Self = StObject.set(x, "serviceAuthorizationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAuthorizationTokenUndefined: Self = StObject.set(x, "serviceAuthorizationToken", js.undefined)
+      inline def setServiceAuthorizationTokenUndefined: Self = StObject.set(x, "serviceAuthorizationToken", js.undefined)
     }
   }
   
@@ -536,26 +523,20 @@ object ReportDesigner {
   }
   object ConfigurePaneSettings {
     
-    @scala.inline
-    def apply(): ConfigurePaneSettings = {
+    inline def apply(): ConfigurePaneSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurePaneSettings]
     }
     
-    @scala.inline
-    implicit class ConfigurePaneSettingsMutableBuilder[Self <: ConfigurePaneSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurePaneSettings](x: Self) {
       
-      @scala.inline
-      def setItems(value: ConfigureItems | String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: ConfigureItems | String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setShowConfigurePane(value: Boolean): Self = StObject.set(x, "showConfigurePane", value.asInstanceOf[js.Any])
+      inline def setShowConfigurePane(value: Boolean): Self = StObject.set(x, "showConfigurePane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowConfigurePaneUndefined: Self = StObject.set(x, "showConfigurePane", js.undefined)
+      inline def setShowConfigurePaneUndefined: Self = StObject.set(x, "showConfigurePane", js.undefined)
     }
   }
   
@@ -681,176 +662,120 @@ object ReportDesigner {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.ReportDesigner.Model = {
+    inline def apply(): typings.ejWebAll.ej.ReportDesigner.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.ReportDesigner.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.ReportDesigner.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.ReportDesigner.Model](x: Self) {
       
-      @scala.inline
-      def setAjaxBeforeLoad(value: /* e */ AjaxBeforeLoadEventArgs => Unit): Self = StObject.set(x, "ajaxBeforeLoad", js.Any.fromFunction1(value))
+      inline def setAjaxBeforeLoad(value: /* e */ AjaxBeforeLoadEventArgs => Unit): Self = StObject.set(x, "ajaxBeforeLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAjaxBeforeLoadUndefined: Self = StObject.set(x, "ajaxBeforeLoad", js.undefined)
+      inline def setAjaxBeforeLoadUndefined: Self = StObject.set(x, "ajaxBeforeLoad", js.undefined)
       
-      @scala.inline
-      def setAjaxError(value: /* e */ AjaxErrorEventArgs => Unit): Self = StObject.set(x, "ajaxError", js.Any.fromFunction1(value))
+      inline def setAjaxError(value: /* e */ AjaxErrorEventArgs => Unit): Self = StObject.set(x, "ajaxError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAjaxErrorUndefined: Self = StObject.set(x, "ajaxError", js.undefined)
+      inline def setAjaxErrorUndefined: Self = StObject.set(x, "ajaxError", js.undefined)
       
-      @scala.inline
-      def setAjaxSuccess(value: /* e */ AjaxSuccessEventArgs => Unit): Self = StObject.set(x, "ajaxSuccess", js.Any.fromFunction1(value))
+      inline def setAjaxSuccess(value: /* e */ AjaxSuccessEventArgs => Unit): Self = StObject.set(x, "ajaxSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAjaxSuccessUndefined: Self = StObject.set(x, "ajaxSuccess", js.undefined)
+      inline def setAjaxSuccessUndefined: Self = StObject.set(x, "ajaxSuccess", js.undefined)
       
-      @scala.inline
-      def setConfigurePaneSettings(value: ConfigurePaneSettings): Self = StObject.set(x, "configurePaneSettings", value.asInstanceOf[js.Any])
+      inline def setConfigurePaneSettings(value: ConfigurePaneSettings): Self = StObject.set(x, "configurePaneSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurePaneSettingsUndefined: Self = StObject.set(x, "configurePaneSettings", js.undefined)
+      inline def setConfigurePaneSettingsUndefined: Self = StObject.set(x, "configurePaneSettings", js.undefined)
       
-      @scala.inline
-      def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setNewDataClick(value: /* e */ NewDataClickEventArgs => Unit): Self = StObject.set(x, "newDataClick", js.Any.fromFunction1(value))
+      inline def setNewDataClick(value: /* e */ NewDataClickEventArgs => Unit): Self = StObject.set(x, "newDataClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNewDataClickUndefined: Self = StObject.set(x, "newDataClick", js.undefined)
+      inline def setNewDataClickUndefined: Self = StObject.set(x, "newDataClick", js.undefined)
       
-      @scala.inline
-      def setOpenReportClick(value: /* e */ OpenReportClickEventArgs => Unit): Self = StObject.set(x, "openReportClick", js.Any.fromFunction1(value))
+      inline def setOpenReportClick(value: /* e */ OpenReportClickEventArgs => Unit): Self = StObject.set(x, "openReportClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenReportClickUndefined: Self = StObject.set(x, "openReportClick", js.undefined)
+      inline def setOpenReportClickUndefined: Self = StObject.set(x, "openReportClick", js.undefined)
       
-      @scala.inline
-      def setPermissionSettings(value: PermissionSettings): Self = StObject.set(x, "permissionSettings", value.asInstanceOf[js.Any])
+      inline def setPermissionSettings(value: PermissionSettings): Self = StObject.set(x, "permissionSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionSettingsUndefined: Self = StObject.set(x, "permissionSettings", js.undefined)
+      inline def setPermissionSettingsUndefined: Self = StObject.set(x, "permissionSettings", js.undefined)
       
-      @scala.inline
-      def setPreviewReport(value: /* e */ PreviewReportEventArgs => Unit): Self = StObject.set(x, "previewReport", js.Any.fromFunction1(value))
+      inline def setPreviewReport(value: /* e */ PreviewReportEventArgs => Unit): Self = StObject.set(x, "previewReport", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreviewReportUndefined: Self = StObject.set(x, "previewReport", js.undefined)
+      inline def setPreviewReportUndefined: Self = StObject.set(x, "previewReport", js.undefined)
       
-      @scala.inline
-      def setReportDataExtensions(value: js.Array[ReportDataExtension]): Self = StObject.set(x, "reportDataExtensions", value.asInstanceOf[js.Any])
+      inline def setReportDataExtensions(value: js.Array[ReportDataExtension]): Self = StObject.set(x, "reportDataExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportDataExtensionsUndefined: Self = StObject.set(x, "reportDataExtensions", js.undefined)
+      inline def setReportDataExtensionsUndefined: Self = StObject.set(x, "reportDataExtensions", js.undefined)
       
-      @scala.inline
-      def setReportDataExtensionsVarargs(value: ReportDataExtension*): Self = StObject.set(x, "reportDataExtensions", js.Array(value :_*))
+      inline def setReportDataExtensionsVarargs(value: ReportDataExtension*): Self = StObject.set(x, "reportDataExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setReportItemExtensions(value: js.Array[ReportItemExtension]): Self = StObject.set(x, "reportItemExtensions", value.asInstanceOf[js.Any])
+      inline def setReportItemExtensions(value: js.Array[ReportItemExtension]): Self = StObject.set(x, "reportItemExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportItemExtensionsUndefined: Self = StObject.set(x, "reportItemExtensions", js.undefined)
+      inline def setReportItemExtensionsUndefined: Self = StObject.set(x, "reportItemExtensions", js.undefined)
       
-      @scala.inline
-      def setReportItemExtensionsVarargs(value: ReportItemExtension*): Self = StObject.set(x, "reportItemExtensions", js.Array(value :_*))
+      inline def setReportItemExtensionsVarargs(value: ReportItemExtension*): Self = StObject.set(x, "reportItemExtensions", js.Array(value :_*))
       
-      @scala.inline
-      def setReportModified(value: /* e */ ReportModifiedEventArgs => Unit): Self = StObject.set(x, "reportModified", js.Any.fromFunction1(value))
+      inline def setReportModified(value: /* e */ ReportModifiedEventArgs => Unit): Self = StObject.set(x, "reportModified", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReportModifiedUndefined: Self = StObject.set(x, "reportModified", js.undefined)
+      inline def setReportModifiedUndefined: Self = StObject.set(x, "reportModified", js.undefined)
       
-      @scala.inline
-      def setReportOpened(value: /* e */ ReportOpenedEventArgs => Unit): Self = StObject.set(x, "reportOpened", js.Any.fromFunction1(value))
+      inline def setReportOpened(value: /* e */ ReportOpenedEventArgs => Unit): Self = StObject.set(x, "reportOpened", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReportOpenedUndefined: Self = StObject.set(x, "reportOpened", js.undefined)
+      inline def setReportOpenedUndefined: Self = StObject.set(x, "reportOpened", js.undefined)
       
-      @scala.inline
-      def setReportPath(value: String): Self = StObject.set(x, "reportPath", value.asInstanceOf[js.Any])
+      inline def setReportPath(value: String): Self = StObject.set(x, "reportPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportPathUndefined: Self = StObject.set(x, "reportPath", js.undefined)
+      inline def setReportPathUndefined: Self = StObject.set(x, "reportPath", js.undefined)
       
-      @scala.inline
-      def setReportSaved(value: /* e */ ReportSavedEventArgs => Unit): Self = StObject.set(x, "reportSaved", js.Any.fromFunction1(value))
+      inline def setReportSaved(value: /* e */ ReportSavedEventArgs => Unit): Self = StObject.set(x, "reportSaved", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReportSavedUndefined: Self = StObject.set(x, "reportSaved", js.undefined)
+      inline def setReportSavedUndefined: Self = StObject.set(x, "reportSaved", js.undefined)
       
-      @scala.inline
-      def setReportServerUrl(value: String): Self = StObject.set(x, "reportServerUrl", value.asInstanceOf[js.Any])
+      inline def setReportServerUrl(value: String): Self = StObject.set(x, "reportServerUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportServerUrlUndefined: Self = StObject.set(x, "reportServerUrl", js.undefined)
+      inline def setReportServerUrlUndefined: Self = StObject.set(x, "reportServerUrl", js.undefined)
       
-      @scala.inline
-      def setReportType(value: String): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
+      inline def setReportType(value: String): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
+      inline def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
       
-      @scala.inline
-      def setSaveReportClick(value: /* e */ SaveReportClickEventArgs => Unit): Self = StObject.set(x, "saveReportClick", js.Any.fromFunction1(value))
+      inline def setSaveReportClick(value: /* e */ SaveReportClickEventArgs => Unit): Self = StObject.set(x, "saveReportClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSaveReportClickUndefined: Self = StObject.set(x, "saveReportClick", js.undefined)
+      inline def setSaveReportClickUndefined: Self = StObject.set(x, "saveReportClick", js.undefined)
       
-      @scala.inline
-      def setServiceAuthorizationToken(value: String): Self = StObject.set(x, "serviceAuthorizationToken", value.asInstanceOf[js.Any])
+      inline def setServiceAuthorizationToken(value: String): Self = StObject.set(x, "serviceAuthorizationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAuthorizationTokenUndefined: Self = StObject.set(x, "serviceAuthorizationToken", js.undefined)
+      inline def setServiceAuthorizationTokenUndefined: Self = StObject.set(x, "serviceAuthorizationToken", js.undefined)
       
-      @scala.inline
-      def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
+      inline def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUrlUndefined: Self = StObject.set(x, "serviceUrl", js.undefined)
+      inline def setServiceUrlUndefined: Self = StObject.set(x, "serviceUrl", js.undefined)
       
-      @scala.inline
-      def setTenantName(value: String): Self = StObject.set(x, "tenantName", value.asInstanceOf[js.Any])
+      inline def setTenantName(value: String): Self = StObject.set(x, "tenantName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantNameUndefined: Self = StObject.set(x, "tenantName", js.undefined)
+      inline def setTenantNameUndefined: Self = StObject.set(x, "tenantName", js.undefined)
       
-      @scala.inline
-      def setToolbarClick(value: /* e */ ToolbarClickEventArgs => Unit): Self = StObject.set(x, "toolbarClick", js.Any.fromFunction1(value))
+      inline def setToolbarClick(value: /* e */ ToolbarClickEventArgs => Unit): Self = StObject.set(x, "toolbarClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToolbarClickUndefined: Self = StObject.set(x, "toolbarClick", js.undefined)
+      inline def setToolbarClickUndefined: Self = StObject.set(x, "toolbarClick", js.undefined)
       
-      @scala.inline
-      def setToolbarRendering(value: /* e */ ToolbarRenderingEventArgs => Unit): Self = StObject.set(x, "toolbarRendering", js.Any.fromFunction1(value))
+      inline def setToolbarRendering(value: /* e */ ToolbarRenderingEventArgs => Unit): Self = StObject.set(x, "toolbarRendering", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToolbarRenderingUndefined: Self = StObject.set(x, "toolbarRendering", js.undefined)
+      inline def setToolbarRenderingUndefined: Self = StObject.set(x, "toolbarRendering", js.undefined)
       
-      @scala.inline
-      def setToolbarSettings(value: ToolbarSettings): Self = StObject.set(x, "toolbarSettings", value.asInstanceOf[js.Any])
+      inline def setToolbarSettings(value: ToolbarSettings): Self = StObject.set(x, "toolbarSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolbarSettingsUndefined: Self = StObject.set(x, "toolbarSettings", js.undefined)
+      inline def setToolbarSettingsUndefined: Self = StObject.set(x, "toolbarSettings", js.undefined)
     }
   }
   
@@ -868,26 +793,20 @@ object ReportDesigner {
   }
   object OpenReportClickEventArgs {
     
-    @scala.inline
-    def apply(): OpenReportClickEventArgs = {
+    inline def apply(): OpenReportClickEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenReportClickEventArgs]
     }
     
-    @scala.inline
-    implicit class OpenReportClickEventArgsMutableBuilder[Self <: OpenReportClickEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenReportClickEventArgs](x: Self) {
       
-      @scala.inline
-      def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -900,20 +819,16 @@ object ReportDesigner {
   }
   object PermissionSettings {
     
-    @scala.inline
-    def apply(): PermissionSettings = {
+    inline def apply(): PermissionSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PermissionSettings]
     }
     
-    @scala.inline
-    implicit class PermissionSettingsMutableBuilder[Self <: PermissionSettings] (val x: Self) extends AnyVal {
+    extension [Self <: PermissionSettings](x: Self) {
       
-      @scala.inline
-      def setDataSource(value: Permission | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Permission | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+      inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     }
   }
   
@@ -933,35 +848,26 @@ object ReportDesigner {
   }
   object PreviewReportEventArgs {
     
-    @scala.inline
-    def apply(): PreviewReportEventArgs = {
+    inline def apply(): PreviewReportEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreviewReportEventArgs]
     }
     
-    @scala.inline
-    implicit class PreviewReportEventArgsMutableBuilder[Self <: PreviewReportEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewReportEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancelDataInputDialog(value: Boolean): Self = StObject.set(x, "cancelDataInputDialog", value.asInstanceOf[js.Any])
+      inline def setCancelDataInputDialog(value: Boolean): Self = StObject.set(x, "cancelDataInputDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelDataInputDialogUndefined: Self = StObject.set(x, "cancelDataInputDialog", js.undefined)
+      inline def setCancelDataInputDialogUndefined: Self = StObject.set(x, "cancelDataInputDialog", js.undefined)
       
-      @scala.inline
-      def setDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+      inline def setDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
+      inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
       
-      @scala.inline
-      def setDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+      inline def setDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
       
-      @scala.inline
-      def setReportViewer(value: js.Any): Self = StObject.set(x, "reportViewer", value.asInstanceOf[js.Any])
+      inline def setReportViewer(value: js.Any): Self = StObject.set(x, "reportViewer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportViewerUndefined: Self = StObject.set(x, "reportViewer", js.undefined)
+      inline def setReportViewerUndefined: Self = StObject.set(x, "reportViewer", js.undefined)
     }
   }
   
@@ -989,38 +895,28 @@ object ReportDesigner {
   }
   object ReportDataExtension {
     
-    @scala.inline
-    def apply(): ReportDataExtension = {
+    inline def apply(): ReportDataExtension = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReportDataExtension]
     }
     
-    @scala.inline
-    implicit class ReportDataExtensionMutableBuilder[Self <: ReportDataExtension] (val x: Self) extends AnyVal {
+    extension [Self <: ReportDataExtension](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setImageClass(value: String): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
+      inline def setImageClass(value: String): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
+      inline def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -1058,50 +954,36 @@ object ReportDesigner {
   }
   object ReportItemExtension {
     
-    @scala.inline
-    def apply(): ReportItemExtension = {
+    inline def apply(): ReportItemExtension = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReportItemExtension]
     }
     
-    @scala.inline
-    implicit class ReportItemExtensionMutableBuilder[Self <: ReportItemExtension] (val x: Self) extends AnyVal {
+    extension [Self <: ReportItemExtension](x: Self) {
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setImageClass(value: String): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
+      inline def setImageClass(value: String): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
+      inline def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setToolTip(value: js.Any): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+      inline def setToolTip(value: js.Any): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
+      inline def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
     }
   }
   
@@ -1117,26 +999,20 @@ object ReportDesigner {
   }
   object ReportModifiedEventArgs {
     
-    @scala.inline
-    def apply(): ReportModifiedEventArgs = {
+    inline def apply(): ReportModifiedEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReportModifiedEventArgs]
     }
     
-    @scala.inline
-    implicit class ReportModifiedEventArgsMutableBuilder[Self <: ReportModifiedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReportModifiedEventArgs](x: Self) {
       
-      @scala.inline
-      def setIsModified(value: Boolean): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
+      inline def setIsModified(value: Boolean): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsModifiedUndefined: Self = StObject.set(x, "isModified", js.undefined)
+      inline def setIsModifiedUndefined: Self = StObject.set(x, "isModified", js.undefined)
       
-      @scala.inline
-      def setReportName(value: String): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
+      inline def setReportName(value: String): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
+      inline def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
     }
   }
   
@@ -1152,26 +1028,20 @@ object ReportDesigner {
   }
   object ReportOpenedEventArgs {
     
-    @scala.inline
-    def apply(): ReportOpenedEventArgs = {
+    inline def apply(): ReportOpenedEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReportOpenedEventArgs]
     }
     
-    @scala.inline
-    implicit class ReportOpenedEventArgsMutableBuilder[Self <: ReportOpenedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReportOpenedEventArgs](x: Self) {
       
-      @scala.inline
-      def setIsServerReport(value: Boolean): Self = StObject.set(x, "isServerReport", value.asInstanceOf[js.Any])
+      inline def setIsServerReport(value: Boolean): Self = StObject.set(x, "isServerReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsServerReportUndefined: Self = StObject.set(x, "isServerReport", js.undefined)
+      inline def setIsServerReportUndefined: Self = StObject.set(x, "isServerReport", js.undefined)
       
-      @scala.inline
-      def setReportName(value: String): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
+      inline def setReportName(value: String): Self = StObject.set(x, "reportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
+      inline def setReportNameUndefined: Self = StObject.set(x, "reportName", js.undefined)
     }
   }
   
@@ -1187,26 +1057,20 @@ object ReportDesigner {
   }
   object ReportSavedEventArgs {
     
-    @scala.inline
-    def apply(): ReportSavedEventArgs = {
+    inline def apply(): ReportSavedEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReportSavedEventArgs]
     }
     
-    @scala.inline
-    implicit class ReportSavedEventArgsMutableBuilder[Self <: ReportSavedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReportSavedEventArgs](x: Self) {
       
-      @scala.inline
-      def setIsServerReport(value: Boolean): Self = StObject.set(x, "isServerReport", value.asInstanceOf[js.Any])
+      inline def setIsServerReport(value: Boolean): Self = StObject.set(x, "isServerReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsServerReportUndefined: Self = StObject.set(x, "isServerReport", js.undefined)
+      inline def setIsServerReportUndefined: Self = StObject.set(x, "isServerReport", js.undefined)
       
-      @scala.inline
-      def setReportAction(value: String): Self = StObject.set(x, "reportAction", value.asInstanceOf[js.Any])
+      inline def setReportAction(value: String): Self = StObject.set(x, "reportAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportActionUndefined: Self = StObject.set(x, "reportAction", js.undefined)
+      inline def setReportActionUndefined: Self = StObject.set(x, "reportAction", js.undefined)
     }
   }
   
@@ -1222,26 +1086,20 @@ object ReportDesigner {
   }
   object SaveReportClickEventArgs {
     
-    @scala.inline
-    def apply(): SaveReportClickEventArgs = {
+    inline def apply(): SaveReportClickEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SaveReportClickEventArgs]
     }
     
-    @scala.inline
-    implicit class SaveReportClickEventArgsMutableBuilder[Self <: SaveReportClickEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SaveReportClickEventArgs](x: Self) {
       
-      @scala.inline
-      def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -1257,26 +1115,20 @@ object ReportDesigner {
   }
   object ToolbarClickEventArgs {
     
-    @scala.inline
-    def apply(): ToolbarClickEventArgs = {
+    inline def apply(): ToolbarClickEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarClickEventArgs]
     }
     
-    @scala.inline
-    implicit class ToolbarClickEventArgsMutableBuilder[Self <: ToolbarClickEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarClickEventArgs](x: Self) {
       
-      @scala.inline
-      def setClick(value: String): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+      inline def setClick(value: String): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+      inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
-      @scala.inline
-      def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -1301,32 +1153,24 @@ object ReportDesigner {
   }
   object ToolbarSettings {
     
-    @scala.inline
-    def apply(): ToolbarSettings = {
+    inline def apply(): ToolbarSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToolbarSettings]
     }
     
-    @scala.inline
-    implicit class ToolbarSettingsMutableBuilder[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ToolbarSettings](x: Self) {
       
-      @scala.inline
-      def setItems(value: ToolbarItems | String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: ToolbarItems | String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setShowToolbar(value: Boolean): Self = StObject.set(x, "showToolbar", value.asInstanceOf[js.Any])
+      inline def setShowToolbar(value: Boolean): Self = StObject.set(x, "showToolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowToolbarUndefined: Self = StObject.set(x, "showToolbar", js.undefined)
+      inline def setShowToolbarUndefined: Self = StObject.set(x, "showToolbar", js.undefined)
       
-      @scala.inline
-      def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+      inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+      inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
     }
   }
 }

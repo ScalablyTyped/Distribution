@@ -20,37 +20,27 @@ trait Modification extends StObject {
 }
 object Modification {
   
-  @scala.inline
-  def apply(): Modification = {
+  inline def apply(): Modification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Modification]
   }
   
-  @scala.inline
-  implicit class ModificationMutableBuilder[Self <: Modification] (val x: Self) extends AnyVal {
+  extension [Self <: Modification](x: Self) {
     
-    @scala.inline
-    def setCreate(value: ColumnFamily): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: ColumnFamily): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: ColumnFamily): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: ColumnFamily): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

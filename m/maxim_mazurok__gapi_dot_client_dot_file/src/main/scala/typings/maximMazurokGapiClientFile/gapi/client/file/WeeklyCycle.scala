@@ -11,22 +11,17 @@ trait WeeklyCycle extends StObject {
 }
 object WeeklyCycle {
   
-  @scala.inline
-  def apply(): WeeklyCycle = {
+  inline def apply(): WeeklyCycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeeklyCycle]
   }
   
-  @scala.inline
-  implicit class WeeklyCycleMutableBuilder[Self <: WeeklyCycle] (val x: Self) extends AnyVal {
+  extension [Self <: WeeklyCycle](x: Self) {
     
-    @scala.inline
-    def setSchedule(value: js.Array[Schedule]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: js.Array[Schedule]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    @scala.inline
-    def setScheduleVarargs(value: Schedule*): Self = StObject.set(x, "schedule", js.Array(value :_*))
+    inline def setScheduleVarargs(value: Schedule*): Self = StObject.set(x, "schedule", js.Array(value :_*))
   }
 }

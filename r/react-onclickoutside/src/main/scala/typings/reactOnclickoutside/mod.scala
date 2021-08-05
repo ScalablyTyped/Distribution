@@ -25,18 +25,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[P](component: ComponentClass[P, ComponentState]): WrapperClass[P, ComponentClass[P, ComponentState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[WrapperClass[P, ComponentClass[P, ComponentState]]]
-  @scala.inline
-  def default[P](component: ComponentClass[P, ComponentState], config: ConfigObject): WrapperClass[P, ComponentClass[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WrapperClass[P, ComponentClass[P, ComponentState]]]
-  @scala.inline
-  def default[P](component: FunctionComponent[P]): WrapperClass[P, FunctionComponent[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[WrapperClass[P, FunctionComponent[P]]]
-  @scala.inline
-  def default[P](component: FunctionComponent[P], config: ConfigObject): WrapperClass[P, FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WrapperClass[P, FunctionComponent[P]]]
-  @scala.inline
-  def default[P](component: ClickOutComponentClass[P]): WrapperClass[P, ClickOutComponentClass[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[WrapperClass[P, ClickOutComponentClass[P]]]
-  @scala.inline
-  def default[P](component: ClickOutComponentClass[P], config: ConfigObject): WrapperClass[P, ClickOutComponentClass[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WrapperClass[P, ClickOutComponentClass[P]]]
+  inline def default[P](component: ComponentClass[P, ComponentState]): WrapperClass[P, ComponentClass[P, ComponentState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[WrapperClass[P, ComponentClass[P, ComponentState]]]
+  inline def default[P](component: ComponentClass[P, ComponentState], config: ConfigObject): WrapperClass[P, ComponentClass[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WrapperClass[P, ComponentClass[P, ComponentState]]]
+  inline def default[P](component: FunctionComponent[P]): WrapperClass[P, FunctionComponent[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[WrapperClass[P, FunctionComponent[P]]]
+  inline def default[P](component: FunctionComponent[P], config: ConfigObject): WrapperClass[P, FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WrapperClass[P, FunctionComponent[P]]]
+  inline def default[P](component: ClickOutComponentClass[P]): WrapperClass[P, ClickOutComponentClass[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[WrapperClass[P, ClickOutComponentClass[P]]]
+  inline def default[P](component: ClickOutComponentClass[P], config: ConfigObject): WrapperClass[P, ClickOutComponentClass[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WrapperClass[P, ClickOutComponentClass[P]]]
   
   trait AdditionalProps
     extends StObject
@@ -54,47 +48,34 @@ object mod {
   }
   object AdditionalProps {
     
-    @scala.inline
-    def apply(): AdditionalProps = {
+    inline def apply(): AdditionalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdditionalProps]
     }
     
-    @scala.inline
-    implicit class AdditionalPropsMutableBuilder[Self <: AdditionalProps] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalProps](x: Self) {
       
-      @scala.inline
-      def setDisableOnClickOutside(value: Boolean): Self = StObject.set(x, "disableOnClickOutside", value.asInstanceOf[js.Any])
+      inline def setDisableOnClickOutside(value: Boolean): Self = StObject.set(x, "disableOnClickOutside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableOnClickOutsideUndefined: Self = StObject.set(x, "disableOnClickOutside", js.undefined)
+      inline def setDisableOnClickOutsideUndefined: Self = StObject.set(x, "disableOnClickOutside", js.undefined)
       
-      @scala.inline
-      def setEventTypes(value: String | js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
+      inline def setEventTypes(value: String | js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
+      inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
       
-      @scala.inline
-      def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+      inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setOutsideClickIgnoreClass(value: String): Self = StObject.set(x, "outsideClickIgnoreClass", value.asInstanceOf[js.Any])
+      inline def setOutsideClickIgnoreClass(value: String): Self = StObject.set(x, "outsideClickIgnoreClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutsideClickIgnoreClassUndefined: Self = StObject.set(x, "outsideClickIgnoreClass", js.undefined)
+      inline def setOutsideClickIgnoreClassUndefined: Self = StObject.set(x, "outsideClickIgnoreClass", js.undefined)
       
-      @scala.inline
-      def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+      inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
       
-      @scala.inline
-      def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+      inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+      inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
     }
   }
   
@@ -113,26 +94,20 @@ object mod {
   }
   object ConfigObject {
     
-    @scala.inline
-    def apply(): ConfigObject = {
+    inline def apply(): ConfigObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigObject]
     }
     
-    @scala.inline
-    implicit class ConfigObjectMutableBuilder[Self <: ConfigObject] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigObject](x: Self) {
       
-      @scala.inline
-      def setExcludeScrollbar(value: Boolean): Self = StObject.set(x, "excludeScrollbar", value.asInstanceOf[js.Any])
+      inline def setExcludeScrollbar(value: Boolean): Self = StObject.set(x, "excludeScrollbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeScrollbarUndefined: Self = StObject.set(x, "excludeScrollbar", js.undefined)
+      inline def setExcludeScrollbarUndefined: Self = StObject.set(x, "excludeScrollbar", js.undefined)
       
-      @scala.inline
-      def setHandleClickOutside(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
+      inline def setHandleClickOutside(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleClickOutsideUndefined: Self = StObject.set(x, "handleClickOutside", js.undefined)
+      inline def setHandleClickOutsideUndefined: Self = StObject.set(x, "handleClickOutside", js.undefined)
     }
   }
   
@@ -142,17 +117,14 @@ object mod {
   }
   object HandleClickOutside {
     
-    @scala.inline
-    def apply[T](handleClickOutside: MouseEvent[T, NativeMouseEvent] => Unit): HandleClickOutside[T] = {
+    inline def apply[T](handleClickOutside: MouseEvent[T, NativeMouseEvent] => Unit): HandleClickOutside[T] = {
       val __obj = js.Dynamic.literal(handleClickOutside = js.Any.fromFunction1(handleClickOutside))
       __obj.asInstanceOf[HandleClickOutside[T]]
     }
     
-    @scala.inline
-    implicit class HandleClickOutsideMutableBuilder[Self <: HandleClickOutside[?], T] (val x: Self & HandleClickOutside[T]) extends AnyVal {
+    extension [Self <: HandleClickOutside[?], T](x: Self & HandleClickOutside[T]) {
       
-      @scala.inline
-      def setHandleClickOutside(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
+      inline def setHandleClickOutside(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
     }
   }
   
@@ -164,20 +136,16 @@ object mod {
   }
   object InjectedOnClickOutProps {
     
-    @scala.inline
-    def apply(disableOnClickOutside: () => Unit, enableOnClickOutside: () => Unit): InjectedOnClickOutProps = {
+    inline def apply(disableOnClickOutside: () => Unit, enableOnClickOutside: () => Unit): InjectedOnClickOutProps = {
       val __obj = js.Dynamic.literal(disableOnClickOutside = js.Any.fromFunction0(disableOnClickOutside), enableOnClickOutside = js.Any.fromFunction0(enableOnClickOutside))
       __obj.asInstanceOf[InjectedOnClickOutProps]
     }
     
-    @scala.inline
-    implicit class InjectedOnClickOutPropsMutableBuilder[Self <: InjectedOnClickOutProps] (val x: Self) extends AnyVal {
+    extension [Self <: InjectedOnClickOutProps](x: Self) {
       
-      @scala.inline
-      def setDisableOnClickOutside(value: () => Unit): Self = StObject.set(x, "disableOnClickOutside", js.Any.fromFunction0(value))
+      inline def setDisableOnClickOutside(value: () => Unit): Self = StObject.set(x, "disableOnClickOutside", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableOnClickOutside(value: () => Unit): Self = StObject.set(x, "enableOnClickOutside", js.Any.fromFunction0(value))
+      inline def setEnableOnClickOutside(value: () => Unit): Self = StObject.set(x, "enableOnClickOutside", js.Any.fromFunction0(value))
     }
   }
   

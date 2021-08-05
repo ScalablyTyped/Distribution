@@ -15,8 +15,7 @@ trait EndInstallTypes
 }
 object EndInstallTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventId: Double,
     installSuccess: Boolean,
     kind: EventEndInstallTypes,
@@ -28,13 +27,10 @@ object EndInstallTypes {
     __obj.asInstanceOf[EndInstallTypes]
   }
   
-  @scala.inline
-  implicit class EndInstallTypesMutableBuilder[Self <: EndInstallTypes] (val x: Self) extends AnyVal {
+  extension [Self <: EndInstallTypes](x: Self) {
     
-    @scala.inline
-    def setInstallSuccess(value: Boolean): Self = StObject.set(x, "installSuccess", value.asInstanceOf[js.Any])
+    inline def setInstallSuccess(value: Boolean): Self = StObject.set(x, "installSuccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: EventEndInstallTypes): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: EventEndInstallTypes): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

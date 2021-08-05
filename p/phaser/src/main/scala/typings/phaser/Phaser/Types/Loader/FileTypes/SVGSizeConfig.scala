@@ -24,31 +24,23 @@ trait SVGSizeConfig extends StObject {
 }
 object SVGSizeConfig {
   
-  @scala.inline
-  def apply(): SVGSizeConfig = {
+  inline def apply(): SVGSizeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGSizeConfig]
   }
   
-  @scala.inline
-  implicit class SVGSizeConfigMutableBuilder[Self <: SVGSizeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SVGSizeConfig](x: Self) {
     
-    @scala.inline
-    def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

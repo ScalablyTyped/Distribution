@@ -17,20 +17,16 @@ object pad {
   }
   object IPaddingImpl {
     
-    @scala.inline
-    def apply(pad: (WordArray, Double) => Unit, unpad: WordArray => Unit): IPaddingImpl = {
+    inline def apply(pad: (WordArray, Double) => Unit, unpad: WordArray => Unit): IPaddingImpl = {
       val __obj = js.Dynamic.literal(pad = js.Any.fromFunction2(pad), unpad = js.Any.fromFunction1(unpad))
       __obj.asInstanceOf[IPaddingImpl]
     }
     
-    @scala.inline
-    implicit class IPaddingImplMutableBuilder[Self <: IPaddingImpl] (val x: Self) extends AnyVal {
+    extension [Self <: IPaddingImpl](x: Self) {
       
-      @scala.inline
-      def setPad(value: (WordArray, Double) => Unit): Self = StObject.set(x, "pad", js.Any.fromFunction2(value))
+      inline def setPad(value: (WordArray, Double) => Unit): Self = StObject.set(x, "pad", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnpad(value: WordArray => Unit): Self = StObject.set(x, "unpad", js.Any.fromFunction1(value))
+      inline def setUnpad(value: WordArray => Unit): Self = StObject.set(x, "unpad", js.Any.fromFunction1(value))
     }
   }
   
@@ -56,8 +52,7 @@ object pad {
   }
   object PadStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AnsiX923: AnsiX923,
       Iso10126: Iso10126,
       Iso97971: Iso97971,
@@ -69,26 +64,19 @@ object pad {
       __obj.asInstanceOf[PadStatic]
     }
     
-    @scala.inline
-    implicit class PadStaticMutableBuilder[Self <: PadStatic] (val x: Self) extends AnyVal {
+    extension [Self <: PadStatic](x: Self) {
       
-      @scala.inline
-      def setAnsiX923(value: AnsiX923): Self = StObject.set(x, "AnsiX923", value.asInstanceOf[js.Any])
+      inline def setAnsiX923(value: AnsiX923): Self = StObject.set(x, "AnsiX923", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIso10126(value: Iso10126): Self = StObject.set(x, "Iso10126", value.asInstanceOf[js.Any])
+      inline def setIso10126(value: Iso10126): Self = StObject.set(x, "Iso10126", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIso97971(value: Iso97971): Self = StObject.set(x, "Iso97971", value.asInstanceOf[js.Any])
+      inline def setIso97971(value: Iso97971): Self = StObject.set(x, "Iso97971", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoPadding(value: NoPadding): Self = StObject.set(x, "NoPadding", value.asInstanceOf[js.Any])
+      inline def setNoPadding(value: NoPadding): Self = StObject.set(x, "NoPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkcs7(value: Pkcs7): Self = StObject.set(x, "Pkcs7", value.asInstanceOf[js.Any])
+      inline def setPkcs7(value: Pkcs7): Self = StObject.set(x, "Pkcs7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroPadding(value: ZeroPadding): Self = StObject.set(x, "ZeroPadding", value.asInstanceOf[js.Any])
+      inline def setZeroPadding(value: ZeroPadding): Self = StObject.set(x, "ZeroPadding", value.asInstanceOf[js.Any])
     }
   }
   

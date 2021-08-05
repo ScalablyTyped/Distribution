@@ -16,8 +16,7 @@ trait `4`[Name /* <: formatDate | formatTime */] extends StObject {
 }
 object `4` {
   
-  @scala.inline
-  def apply[Name /* <: formatDate | formatTime */](
+  inline def apply[Name /* <: formatDate | formatTime */](
     children: js.Array[DateTimeFormatPart] => ReactElement | Null,
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.react-intl/src/types.IntlShape[Name]>[0] */ js.Any
   ): `4`[Name] = {
@@ -25,14 +24,11 @@ object `4` {
     __obj.asInstanceOf[`4`[Name]]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`[?], Name /* <: formatDate | formatTime */] (val x: Self & `4`[Name]) extends AnyVal {
+  extension [Self <: `4`[?], Name /* <: formatDate | formatTime */](x: Self & `4`[Name]) {
     
-    @scala.inline
-    def setChildren(value: js.Array[DateTimeFormatPart] => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: js.Array[DateTimeFormatPart] => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(
+    inline def setValue(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.react-intl/src/types.IntlShape[Name]>[0] */ js.Any
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

@@ -14,22 +14,17 @@ trait ICopyright extends StObject {
 }
 object ICopyright {
   
-  @scala.inline
-  def apply(CopyrightURL: String, Sources: js.Array[ICopyrightSource]): ICopyright = {
+  inline def apply(CopyrightURL: String, Sources: js.Array[ICopyrightSource]): ICopyright = {
     val __obj = js.Dynamic.literal(CopyrightURL = CopyrightURL.asInstanceOf[js.Any], Sources = Sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICopyright]
   }
   
-  @scala.inline
-  implicit class ICopyrightMutableBuilder[Self <: ICopyright] (val x: Self) extends AnyVal {
+  extension [Self <: ICopyright](x: Self) {
     
-    @scala.inline
-    def setCopyrightURL(value: String): Self = StObject.set(x, "CopyrightURL", value.asInstanceOf[js.Any])
+    inline def setCopyrightURL(value: String): Self = StObject.set(x, "CopyrightURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSources(value: js.Array[ICopyrightSource]): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[ICopyrightSource]): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesVarargs(value: ICopyrightSource*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: ICopyrightSource*): Self = StObject.set(x, "Sources", js.Array(value :_*))
   }
 }

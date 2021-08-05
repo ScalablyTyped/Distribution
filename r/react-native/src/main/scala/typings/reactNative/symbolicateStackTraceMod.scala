@@ -11,6 +11,5 @@ object symbolicateStackTraceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(stack: js.Array[StackFrame]): js.Promise[js.Array[StackFrame]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[StackFrame]]]
+  inline def default(stack: js.Array[StackFrame]): js.Promise[js.Array[StackFrame]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[StackFrame]]]
 }

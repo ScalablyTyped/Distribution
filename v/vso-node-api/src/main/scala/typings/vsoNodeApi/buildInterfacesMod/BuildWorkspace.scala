@@ -10,19 +10,15 @@ trait BuildWorkspace extends StObject {
 }
 object BuildWorkspace {
   
-  @scala.inline
-  def apply(mappings: js.Array[MappingDetails]): BuildWorkspace = {
+  inline def apply(mappings: js.Array[MappingDetails]): BuildWorkspace = {
     val __obj = js.Dynamic.literal(mappings = mappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildWorkspace]
   }
   
-  @scala.inline
-  implicit class BuildWorkspaceMutableBuilder[Self <: BuildWorkspace] (val x: Self) extends AnyVal {
+  extension [Self <: BuildWorkspace](x: Self) {
     
-    @scala.inline
-    def setMappings(value: js.Array[MappingDetails]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+    inline def setMappings(value: js.Array[MappingDetails]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingsVarargs(value: MappingDetails*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: MappingDetails*): Self = StObject.set(x, "mappings", js.Array(value :_*))
   }
 }

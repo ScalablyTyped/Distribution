@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlEnableCancelKey extends StObject
 object XlEnableCancelKey {
   
-  @scala.inline
-  def xlDisabled: `0` = 0.asInstanceOf[`0`]
+  inline def xlDisabled: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlErrorHandler: `2` = 2.asInstanceOf[`2`]
+  inline def xlErrorHandler: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlInterrupt: `1` = 1.asInstanceOf[`1`]
+  inline def xlInterrupt: `1` = 1.asInstanceOf[`1`]
 }

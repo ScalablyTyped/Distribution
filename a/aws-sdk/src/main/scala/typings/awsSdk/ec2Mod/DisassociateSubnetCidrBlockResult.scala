@@ -18,25 +18,19 @@ trait DisassociateSubnetCidrBlockResult extends StObject {
 }
 object DisassociateSubnetCidrBlockResult {
   
-  @scala.inline
-  def apply(): DisassociateSubnetCidrBlockResult = {
+  inline def apply(): DisassociateSubnetCidrBlockResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateSubnetCidrBlockResult]
   }
   
-  @scala.inline
-  implicit class DisassociateSubnetCidrBlockResultMutableBuilder[Self <: DisassociateSubnetCidrBlockResult] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateSubnetCidrBlockResult](x: Self) {
     
-    @scala.inline
-    def setIpv6CidrBlockAssociation(value: SubnetIpv6CidrBlockAssociation): Self = StObject.set(x, "Ipv6CidrBlockAssociation", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrBlockAssociation(value: SubnetIpv6CidrBlockAssociation): Self = StObject.set(x, "Ipv6CidrBlockAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrBlockAssociationUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociation", js.undefined)
+    inline def setIpv6CidrBlockAssociationUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociation", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: String): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
   }
 }

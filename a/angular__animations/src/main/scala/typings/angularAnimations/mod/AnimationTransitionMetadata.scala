@@ -34,8 +34,7 @@ trait AnimationTransitionMetadata
 }
 object AnimationTransitionMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animation: AnimationMetadata | js.Array[AnimationMetadata],
     expr: String | (js.Function4[
       /* fromState */ String, 
@@ -51,17 +50,13 @@ object AnimationTransitionMetadata {
     __obj.asInstanceOf[AnimationTransitionMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationTransitionMetadataMutableBuilder[Self <: AnimationTransitionMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationTransitionMetadata](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value :_*))
+    inline def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value :_*))
     
-    @scala.inline
-    def setExpr(
+    inline def setExpr(
       value: String | (js.Function4[
           /* fromState */ String, 
           /* toState */ String, 
@@ -71,15 +66,12 @@ object AnimationTransitionMetadata {
         ])
     ): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprFunction4(
+    inline def setExprFunction4(
       value: (/* fromState */ String, /* toState */ String, /* element */ js.UndefOr[js.Any], /* params */ js.UndefOr[StringDictionary[js.Any]]) => Boolean
     ): Self = StObject.set(x, "expr", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
   }
 }

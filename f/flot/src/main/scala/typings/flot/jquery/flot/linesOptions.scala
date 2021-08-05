@@ -12,19 +12,15 @@ trait linesOptions
 }
 object linesOptions {
   
-  @scala.inline
-  def apply(): linesOptions = {
+  inline def apply(): linesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[linesOptions]
   }
   
-  @scala.inline
-  implicit class linesOptionsMutableBuilder[Self <: linesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: linesOptions](x: Self) {
     
-    @scala.inline
-    def setSteps(value: Boolean): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: Boolean): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
   }
 }

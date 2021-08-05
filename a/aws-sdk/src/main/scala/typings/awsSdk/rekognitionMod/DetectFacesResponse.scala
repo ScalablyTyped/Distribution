@@ -18,28 +18,21 @@ trait DetectFacesResponse extends StObject {
 }
 object DetectFacesResponse {
   
-  @scala.inline
-  def apply(): DetectFacesResponse = {
+  inline def apply(): DetectFacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectFacesResponse]
   }
   
-  @scala.inline
-  implicit class DetectFacesResponseMutableBuilder[Self <: DetectFacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectFacesResponse](x: Self) {
     
-    @scala.inline
-    def setFaceDetails(value: FaceDetailList): Self = StObject.set(x, "FaceDetails", value.asInstanceOf[js.Any])
+    inline def setFaceDetails(value: FaceDetailList): Self = StObject.set(x, "FaceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceDetailsUndefined: Self = StObject.set(x, "FaceDetails", js.undefined)
+    inline def setFaceDetailsUndefined: Self = StObject.set(x, "FaceDetails", js.undefined)
     
-    @scala.inline
-    def setFaceDetailsVarargs(value: FaceDetail*): Self = StObject.set(x, "FaceDetails", js.Array(value :_*))
+    inline def setFaceDetailsVarargs(value: FaceDetail*): Self = StObject.set(x, "FaceDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
+    inline def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationCorrectionUndefined: Self = StObject.set(x, "OrientationCorrection", js.undefined)
+    inline def setOrientationCorrectionUndefined: Self = StObject.set(x, "OrientationCorrection", js.undefined)
   }
 }

@@ -13,16 +13,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reload(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[js.Any]
+  inline def reload(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def server(): ConnectAppOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("server")().asInstanceOf[ConnectAppOptions]
-  @scala.inline
-  def server(options: ConnectAppOptions): ConnectAppOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("server")(options.asInstanceOf[js.Any]).asInstanceOf[ConnectAppOptions]
+  inline def server(): ConnectAppOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("server")().asInstanceOf[ConnectAppOptions]
+  inline def server(options: ConnectAppOptions): ConnectAppOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("server")(options.asInstanceOf[js.Any]).asInstanceOf[ConnectAppOptions]
   
-  @scala.inline
-  def serverClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serverClose")().asInstanceOf[Unit]
+  inline def serverClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serverClose")().asInstanceOf[Unit]
   
   trait ConnectAppOptions extends StObject {
     
@@ -68,94 +64,66 @@ object mod {
   }
   object ConnectAppOptions {
     
-    @scala.inline
-    def apply(): ConnectAppOptions = {
+    inline def apply(): ConnectAppOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectAppOptions]
     }
     
-    @scala.inline
-    implicit class ConnectAppOptionsMutableBuilder[Self <: ConnectAppOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectAppOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setHttps(value: Boolean | ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(value: Boolean | ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
       
-      @scala.inline
-      def setLivereload(value: Boolean | LiveReloadOptions): Self = StObject.set(x, "livereload", value.asInstanceOf[js.Any])
+      inline def setLivereload(value: Boolean | LiveReloadOptions): Self = StObject.set(x, "livereload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivereloadUndefined: Self = StObject.set(x, "livereload", js.undefined)
+      inline def setLivereloadUndefined: Self = StObject.set(x, "livereload", js.undefined)
       
-      @scala.inline
-      def setMiddleware(
+      inline def setMiddleware(
         value: (/* connect */ js.Function0[typings.connect.mod.Server], /* options */ ConnectAppOptions) => js.Array[HandleFunction | ConnectRouteHandler]
       ): Self = StObject.set(x, "middleware", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
+      inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String | js.Array[String]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String | js.Array[String]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setRootVarargs(value: String*): Self = StObject.set(x, "root", js.Array(value :_*))
+      inline def setRootVarargs(value: String*): Self = StObject.set(x, "root", js.Array(value :_*))
       
-      @scala.inline
-      def setServerInit(value: /* server */ Server | typings.node.httpsMod.Server => Unit): Self = StObject.set(x, "serverInit", js.Any.fromFunction1(value))
+      inline def setServerInit(value: /* server */ Server | typings.node.httpsMod.Server => Unit): Self = StObject.set(x, "serverInit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServerInitUndefined: Self = StObject.set(x, "serverInit", js.undefined)
+      inline def setServerInitUndefined: Self = StObject.set(x, "serverInit", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   
@@ -171,23 +139,18 @@ object mod {
   }
   object LiveReloadOptions {
     
-    @scala.inline
-    def apply(port: Double): LiveReloadOptions = {
+    inline def apply(port: Double): LiveReloadOptions = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[LiveReloadOptions]
     }
     
-    @scala.inline
-    implicit class LiveReloadOptionsMutableBuilder[Self <: LiveReloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LiveReloadOptions](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   

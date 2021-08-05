@@ -12,25 +12,19 @@ trait GanttTooltip extends StObject {
 }
 object GanttTooltip {
   
-  @scala.inline
-  def apply(): GanttTooltip = {
+  inline def apply(): GanttTooltip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GanttTooltip]
   }
   
-  @scala.inline
-  implicit class GanttTooltipMutableBuilder[Self <: GanttTooltip] (val x: Self) extends AnyVal {
+  extension [Self <: GanttTooltip](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

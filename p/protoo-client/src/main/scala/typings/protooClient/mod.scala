@@ -79,26 +79,20 @@ object mod {
   }
   object ProtooNotification {
     
-    @scala.inline
-    def apply(method: String): ProtooNotification = {
+    inline def apply(method: String): ProtooNotification = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], notification = true)
       __obj.asInstanceOf[ProtooNotification]
     }
     
-    @scala.inline
-    implicit class ProtooNotificationMutableBuilder[Self <: ProtooNotification] (val x: Self) extends AnyVal {
+    extension [Self <: ProtooNotification](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification(value: `true`): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: `true`): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,29 +108,22 @@ object mod {
   }
   object ProtooRequest {
     
-    @scala.inline
-    def apply(id: Double, method: String): ProtooRequest = {
+    inline def apply(id: Double, method: String): ProtooRequest = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = true)
       __obj.asInstanceOf[ProtooRequest]
     }
     
-    @scala.inline
-    implicit class ProtooRequestMutableBuilder[Self <: ProtooRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ProtooRequest](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: `true`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: `true`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,14 +134,12 @@ object mod {
   trait ProtooResponse extends StObject
   object ProtooResponse {
     
-    @scala.inline
-    def Data(data: js.Any, id: Double): typings.protooClient.anon.Data = {
+    inline def Data(data: js.Any, id: Double): typings.protooClient.anon.Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = true, response = true)
       __obj.asInstanceOf[typings.protooClient.anon.Data]
     }
     
-    @scala.inline
-    def ErrorCode(errorCode: Double, errorReason: String, id: Double): typings.protooClient.anon.ErrorCode = {
+    inline def ErrorCode(errorCode: Double, errorReason: String, id: Double): typings.protooClient.anon.ErrorCode = {
       val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorReason = errorReason.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = false, response = true)
       __obj.asInstanceOf[typings.protooClient.anon.ErrorCode]
     }

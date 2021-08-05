@@ -22,55 +22,39 @@ trait AbideOptions extends StObject {
 }
 object AbideOptions {
   
-  @scala.inline
-  def apply(): AbideOptions = {
+  inline def apply(): AbideOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AbideOptions]
   }
   
-  @scala.inline
-  implicit class AbideOptionsMutableBuilder[Self <: AbideOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AbideOptions](x: Self) {
     
-    @scala.inline
-    def setError_labels(value: Boolean): Self = StObject.set(x, "error_labels", value.asInstanceOf[js.Any])
+    inline def setError_labels(value: Boolean): Self = StObject.set(x, "error_labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError_labelsUndefined: Self = StObject.set(x, "error_labels", js.undefined)
+    inline def setError_labelsUndefined: Self = StObject.set(x, "error_labels", js.undefined)
     
-    @scala.inline
-    def setFocus_on_invalid(value: Boolean): Self = StObject.set(x, "focus_on_invalid", value.asInstanceOf[js.Any])
+    inline def setFocus_on_invalid(value: Boolean): Self = StObject.set(x, "focus_on_invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus_on_invalidUndefined: Self = StObject.set(x, "focus_on_invalid", js.undefined)
+    inline def setFocus_on_invalidUndefined: Self = StObject.set(x, "focus_on_invalid", js.undefined)
     
-    @scala.inline
-    def setLive_validate(value: Boolean): Self = StObject.set(x, "live_validate", value.asInstanceOf[js.Any])
+    inline def setLive_validate(value: Boolean): Self = StObject.set(x, "live_validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLive_validateUndefined: Self = StObject.set(x, "live_validate", js.undefined)
+    inline def setLive_validateUndefined: Self = StObject.set(x, "live_validate", js.undefined)
     
-    @scala.inline
-    def setPatterns(value: AbidePatterns): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    inline def setPatterns(value: AbidePatterns): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
+    inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setValidate_on_blur(value: Boolean): Self = StObject.set(x, "validate_on_blur", value.asInstanceOf[js.Any])
+    inline def setValidate_on_blur(value: Boolean): Self = StObject.set(x, "validate_on_blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate_on_blurUndefined: Self = StObject.set(x, "validate_on_blur", js.undefined)
+    inline def setValidate_on_blurUndefined: Self = StObject.set(x, "validate_on_blur", js.undefined)
     
-    @scala.inline
-    def setValidators(value: js.Object): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: js.Object): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
+    inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
   }
 }

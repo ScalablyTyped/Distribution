@@ -283,20 +283,16 @@ object messagesMod {
   }
   object BackendMessage {
     
-    @scala.inline
-    def apply(length: Double, name: MessageName): BackendMessage = {
+    inline def apply(length: Double, name: MessageName): BackendMessage = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BackendMessage]
     }
     
-    @scala.inline
-    implicit class BackendMessageMutableBuilder[Self <: BackendMessage] (val x: Self) extends AnyVal {
+    extension [Self <: BackendMessage](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: MessageName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: MessageName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -331,83 +327,57 @@ object messagesMod {
   trait MessageName extends StObject
   object MessageName {
     
-    @scala.inline
-    def authenticationCleartextPassword: typings.pgProtocol.pgProtocolStrings.authenticationCleartextPassword = "authenticationCleartextPassword".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationCleartextPassword]
+    inline def authenticationCleartextPassword: typings.pgProtocol.pgProtocolStrings.authenticationCleartextPassword = "authenticationCleartextPassword".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationCleartextPassword]
     
-    @scala.inline
-    def authenticationMD5Password: typings.pgProtocol.pgProtocolStrings.authenticationMD5Password = "authenticationMD5Password".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationMD5Password]
+    inline def authenticationMD5Password: typings.pgProtocol.pgProtocolStrings.authenticationMD5Password = "authenticationMD5Password".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationMD5Password]
     
-    @scala.inline
-    def authenticationOk: typings.pgProtocol.pgProtocolStrings.authenticationOk = "authenticationOk".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationOk]
+    inline def authenticationOk: typings.pgProtocol.pgProtocolStrings.authenticationOk = "authenticationOk".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationOk]
     
-    @scala.inline
-    def authenticationSASL: typings.pgProtocol.pgProtocolStrings.authenticationSASL = "authenticationSASL".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationSASL]
+    inline def authenticationSASL: typings.pgProtocol.pgProtocolStrings.authenticationSASL = "authenticationSASL".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationSASL]
     
-    @scala.inline
-    def authenticationSASLContinue: typings.pgProtocol.pgProtocolStrings.authenticationSASLContinue = "authenticationSASLContinue".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationSASLContinue]
+    inline def authenticationSASLContinue: typings.pgProtocol.pgProtocolStrings.authenticationSASLContinue = "authenticationSASLContinue".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationSASLContinue]
     
-    @scala.inline
-    def authenticationSASLFinal: typings.pgProtocol.pgProtocolStrings.authenticationSASLFinal = "authenticationSASLFinal".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationSASLFinal]
+    inline def authenticationSASLFinal: typings.pgProtocol.pgProtocolStrings.authenticationSASLFinal = "authenticationSASLFinal".asInstanceOf[typings.pgProtocol.pgProtocolStrings.authenticationSASLFinal]
     
-    @scala.inline
-    def backendKeyData: typings.pgProtocol.pgProtocolStrings.backendKeyData = "backendKeyData".asInstanceOf[typings.pgProtocol.pgProtocolStrings.backendKeyData]
+    inline def backendKeyData: typings.pgProtocol.pgProtocolStrings.backendKeyData = "backendKeyData".asInstanceOf[typings.pgProtocol.pgProtocolStrings.backendKeyData]
     
-    @scala.inline
-    def bindComplete: typings.pgProtocol.pgProtocolStrings.bindComplete = "bindComplete".asInstanceOf[typings.pgProtocol.pgProtocolStrings.bindComplete]
+    inline def bindComplete: typings.pgProtocol.pgProtocolStrings.bindComplete = "bindComplete".asInstanceOf[typings.pgProtocol.pgProtocolStrings.bindComplete]
     
-    @scala.inline
-    def closeComplete: typings.pgProtocol.pgProtocolStrings.closeComplete = "closeComplete".asInstanceOf[typings.pgProtocol.pgProtocolStrings.closeComplete]
+    inline def closeComplete: typings.pgProtocol.pgProtocolStrings.closeComplete = "closeComplete".asInstanceOf[typings.pgProtocol.pgProtocolStrings.closeComplete]
     
-    @scala.inline
-    def commandComplete: typings.pgProtocol.pgProtocolStrings.commandComplete = "commandComplete".asInstanceOf[typings.pgProtocol.pgProtocolStrings.commandComplete]
+    inline def commandComplete: typings.pgProtocol.pgProtocolStrings.commandComplete = "commandComplete".asInstanceOf[typings.pgProtocol.pgProtocolStrings.commandComplete]
     
-    @scala.inline
-    def copyData: typings.pgProtocol.pgProtocolStrings.copyData = "copyData".asInstanceOf[typings.pgProtocol.pgProtocolStrings.copyData]
+    inline def copyData: typings.pgProtocol.pgProtocolStrings.copyData = "copyData".asInstanceOf[typings.pgProtocol.pgProtocolStrings.copyData]
     
-    @scala.inline
-    def copyDone: typings.pgProtocol.pgProtocolStrings.copyDone = "copyDone".asInstanceOf[typings.pgProtocol.pgProtocolStrings.copyDone]
+    inline def copyDone: typings.pgProtocol.pgProtocolStrings.copyDone = "copyDone".asInstanceOf[typings.pgProtocol.pgProtocolStrings.copyDone]
     
-    @scala.inline
-    def copyInResponse: typings.pgProtocol.pgProtocolStrings.copyInResponse = "copyInResponse".asInstanceOf[typings.pgProtocol.pgProtocolStrings.copyInResponse]
+    inline def copyInResponse: typings.pgProtocol.pgProtocolStrings.copyInResponse = "copyInResponse".asInstanceOf[typings.pgProtocol.pgProtocolStrings.copyInResponse]
     
-    @scala.inline
-    def copyOutResponse: typings.pgProtocol.pgProtocolStrings.copyOutResponse = "copyOutResponse".asInstanceOf[typings.pgProtocol.pgProtocolStrings.copyOutResponse]
+    inline def copyOutResponse: typings.pgProtocol.pgProtocolStrings.copyOutResponse = "copyOutResponse".asInstanceOf[typings.pgProtocol.pgProtocolStrings.copyOutResponse]
     
-    @scala.inline
-    def dataRow: typings.pgProtocol.pgProtocolStrings.dataRow = "dataRow".asInstanceOf[typings.pgProtocol.pgProtocolStrings.dataRow]
+    inline def dataRow: typings.pgProtocol.pgProtocolStrings.dataRow = "dataRow".asInstanceOf[typings.pgProtocol.pgProtocolStrings.dataRow]
     
-    @scala.inline
-    def emptyQuery: typings.pgProtocol.pgProtocolStrings.emptyQuery = "emptyQuery".asInstanceOf[typings.pgProtocol.pgProtocolStrings.emptyQuery]
+    inline def emptyQuery: typings.pgProtocol.pgProtocolStrings.emptyQuery = "emptyQuery".asInstanceOf[typings.pgProtocol.pgProtocolStrings.emptyQuery]
     
-    @scala.inline
-    def error: typings.pgProtocol.pgProtocolStrings.error = "error".asInstanceOf[typings.pgProtocol.pgProtocolStrings.error]
+    inline def error: typings.pgProtocol.pgProtocolStrings.error = "error".asInstanceOf[typings.pgProtocol.pgProtocolStrings.error]
     
-    @scala.inline
-    def noData: typings.pgProtocol.pgProtocolStrings.noData = "noData".asInstanceOf[typings.pgProtocol.pgProtocolStrings.noData]
+    inline def noData: typings.pgProtocol.pgProtocolStrings.noData = "noData".asInstanceOf[typings.pgProtocol.pgProtocolStrings.noData]
     
-    @scala.inline
-    def notice: typings.pgProtocol.pgProtocolStrings.notice = "notice".asInstanceOf[typings.pgProtocol.pgProtocolStrings.notice]
+    inline def notice: typings.pgProtocol.pgProtocolStrings.notice = "notice".asInstanceOf[typings.pgProtocol.pgProtocolStrings.notice]
     
-    @scala.inline
-    def notification: typings.pgProtocol.pgProtocolStrings.notification = "notification".asInstanceOf[typings.pgProtocol.pgProtocolStrings.notification]
+    inline def notification: typings.pgProtocol.pgProtocolStrings.notification = "notification".asInstanceOf[typings.pgProtocol.pgProtocolStrings.notification]
     
-    @scala.inline
-    def parameterStatus: typings.pgProtocol.pgProtocolStrings.parameterStatus = "parameterStatus".asInstanceOf[typings.pgProtocol.pgProtocolStrings.parameterStatus]
+    inline def parameterStatus: typings.pgProtocol.pgProtocolStrings.parameterStatus = "parameterStatus".asInstanceOf[typings.pgProtocol.pgProtocolStrings.parameterStatus]
     
-    @scala.inline
-    def parseComplete: typings.pgProtocol.pgProtocolStrings.parseComplete = "parseComplete".asInstanceOf[typings.pgProtocol.pgProtocolStrings.parseComplete]
+    inline def parseComplete: typings.pgProtocol.pgProtocolStrings.parseComplete = "parseComplete".asInstanceOf[typings.pgProtocol.pgProtocolStrings.parseComplete]
     
-    @scala.inline
-    def portalSuspended: typings.pgProtocol.pgProtocolStrings.portalSuspended = "portalSuspended".asInstanceOf[typings.pgProtocol.pgProtocolStrings.portalSuspended]
+    inline def portalSuspended: typings.pgProtocol.pgProtocolStrings.portalSuspended = "portalSuspended".asInstanceOf[typings.pgProtocol.pgProtocolStrings.portalSuspended]
     
-    @scala.inline
-    def readyForQuery: typings.pgProtocol.pgProtocolStrings.readyForQuery = "readyForQuery".asInstanceOf[typings.pgProtocol.pgProtocolStrings.readyForQuery]
+    inline def readyForQuery: typings.pgProtocol.pgProtocolStrings.readyForQuery = "readyForQuery".asInstanceOf[typings.pgProtocol.pgProtocolStrings.readyForQuery]
     
-    @scala.inline
-    def replicationStart: typings.pgProtocol.pgProtocolStrings.replicationStart = "replicationStart".asInstanceOf[typings.pgProtocol.pgProtocolStrings.replicationStart]
+    inline def replicationStart: typings.pgProtocol.pgProtocolStrings.replicationStart = "replicationStart".asInstanceOf[typings.pgProtocol.pgProtocolStrings.replicationStart]
     
-    @scala.inline
-    def rowDescription: typings.pgProtocol.pgProtocolStrings.rowDescription = "rowDescription".asInstanceOf[typings.pgProtocol.pgProtocolStrings.rowDescription]
+    inline def rowDescription: typings.pgProtocol.pgProtocolStrings.rowDescription = "rowDescription".asInstanceOf[typings.pgProtocol.pgProtocolStrings.rowDescription]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -417,11 +387,9 @@ object messagesMod {
   trait Mode extends StObject
   object Mode {
     
-    @scala.inline
-    def binary: typings.pgProtocol.pgProtocolStrings.binary = "binary".asInstanceOf[typings.pgProtocol.pgProtocolStrings.binary]
+    inline def binary: typings.pgProtocol.pgProtocolStrings.binary = "binary".asInstanceOf[typings.pgProtocol.pgProtocolStrings.binary]
     
-    @scala.inline
-    def text: typings.pgProtocol.pgProtocolStrings.text = "text".asInstanceOf[typings.pgProtocol.pgProtocolStrings.text]
+    inline def text: typings.pgProtocol.pgProtocolStrings.text = "text".asInstanceOf[typings.pgProtocol.pgProtocolStrings.text]
   }
   
   trait NoticeOrError extends StObject {
@@ -462,116 +430,80 @@ object messagesMod {
   }
   object NoticeOrError {
     
-    @scala.inline
-    def apply(): NoticeOrError = {
+    inline def apply(): NoticeOrError = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NoticeOrError]
     }
     
-    @scala.inline
-    implicit class NoticeOrErrorMutableBuilder[Self <: NoticeOrError] (val x: Self) extends AnyVal {
+    extension [Self <: NoticeOrError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+      inline def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+      inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
       
-      @scala.inline
-      def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+      inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+      inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
       
-      @scala.inline
-      def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+      inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
       
-      @scala.inline
-      def setInternalPosition(value: String): Self = StObject.set(x, "internalPosition", value.asInstanceOf[js.Any])
+      inline def setInternalPosition(value: String): Self = StObject.set(x, "internalPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalPositionUndefined: Self = StObject.set(x, "internalPosition", js.undefined)
+      inline def setInternalPositionUndefined: Self = StObject.set(x, "internalPosition", js.undefined)
       
-      @scala.inline
-      def setInternalQuery(value: String): Self = StObject.set(x, "internalQuery", value.asInstanceOf[js.Any])
+      inline def setInternalQuery(value: String): Self = StObject.set(x, "internalQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalQueryUndefined: Self = StObject.set(x, "internalQuery", js.undefined)
+      inline def setInternalQueryUndefined: Self = StObject.set(x, "internalQuery", js.undefined)
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+      inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setRoutine(value: String): Self = StObject.set(x, "routine", value.asInstanceOf[js.Any])
+      inline def setRoutine(value: String): Self = StObject.set(x, "routine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutineUndefined: Self = StObject.set(x, "routine", js.undefined)
+      inline def setRoutineUndefined: Self = StObject.set(x, "routine", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+      inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      @scala.inline
-      def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+      inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+      inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     }
   }
 }

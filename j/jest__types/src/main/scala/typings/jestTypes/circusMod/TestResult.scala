@@ -23,8 +23,7 @@ trait TestResult extends StObject {
 }
 object TestResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errors: js.Array[FormattedError],
     errorsDetailed: js.Array[MatcherResults | js.Any],
     invocations: Double,
@@ -35,49 +34,34 @@ object TestResult {
     __obj.asInstanceOf[TestResult]
   }
   
-  @scala.inline
-  implicit class TestResultMutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
+  extension [Self <: TestResult](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationNull: Self = StObject.set(x, "duration", null)
+    inline def setDurationNull: Self = StObject.set(x, "duration", null)
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[FormattedError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[FormattedError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsDetailed(value: js.Array[MatcherResults | js.Any]): Self = StObject.set(x, "errorsDetailed", value.asInstanceOf[js.Any])
+    inline def setErrorsDetailed(value: js.Array[MatcherResults | js.Any]): Self = StObject.set(x, "errorsDetailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsDetailedVarargs(value: (MatcherResults | js.Any)*): Self = StObject.set(x, "errorsDetailed", js.Array(value :_*))
+    inline def setErrorsDetailedVarargs(value: (MatcherResults | js.Any)*): Self = StObject.set(x, "errorsDetailed", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorsVarargs(value: FormattedError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: FormattedError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setInvocations(value: Double): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
+    inline def setInvocations(value: Double): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Column): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Column): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationNull: Self = StObject.set(x, "location", null)
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPath(value: js.Array[TestName | BlockName]): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
+    inline def setTestPath(value: js.Array[TestName | BlockName]): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPathVarargs(value: (TestName | BlockName)*): Self = StObject.set(x, "testPath", js.Array(value :_*))
+    inline def setTestPathVarargs(value: (TestName | BlockName)*): Self = StObject.set(x, "testPath", js.Array(value :_*))
   }
 }

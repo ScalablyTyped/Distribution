@@ -11,19 +11,15 @@ trait MailOptions extends StObject {
 }
 object MailOptions {
   
-  @scala.inline
-  def apply(): MailOptions = {
+  inline def apply(): MailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MailOptions]
   }
   
-  @scala.inline
-  implicit class MailOptionsMutableBuilder[Self <: MailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MailOptions](x: Self) {
     
-    @scala.inline
-    def setExcludeDrafts(value: Boolean): Self = StObject.set(x, "excludeDrafts", value.asInstanceOf[js.Any])
+    inline def setExcludeDrafts(value: Boolean): Self = StObject.set(x, "excludeDrafts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDraftsUndefined: Self = StObject.set(x, "excludeDrafts", js.undefined)
+    inline def setExcludeDraftsUndefined: Self = StObject.set(x, "excludeDrafts", js.undefined)
   }
 }

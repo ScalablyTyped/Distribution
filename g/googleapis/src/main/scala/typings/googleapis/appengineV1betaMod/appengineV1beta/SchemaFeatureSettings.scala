@@ -29,25 +29,19 @@ trait SchemaFeatureSettings extends StObject {
 }
 object SchemaFeatureSettings {
   
-  @scala.inline
-  def apply(): SchemaFeatureSettings = {
+  inline def apply(): SchemaFeatureSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFeatureSettings]
   }
   
-  @scala.inline
-  implicit class SchemaFeatureSettingsMutableBuilder[Self <: SchemaFeatureSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFeatureSettings](x: Self) {
     
-    @scala.inline
-    def setSplitHealthChecks(value: Boolean): Self = StObject.set(x, "splitHealthChecks", value.asInstanceOf[js.Any])
+    inline def setSplitHealthChecks(value: Boolean): Self = StObject.set(x, "splitHealthChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitHealthChecksUndefined: Self = StObject.set(x, "splitHealthChecks", js.undefined)
+    inline def setSplitHealthChecksUndefined: Self = StObject.set(x, "splitHealthChecks", js.undefined)
     
-    @scala.inline
-    def setUseContainerOptimizedOs(value: Boolean): Self = StObject.set(x, "useContainerOptimizedOs", value.asInstanceOf[js.Any])
+    inline def setUseContainerOptimizedOs(value: Boolean): Self = StObject.set(x, "useContainerOptimizedOs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseContainerOptimizedOsUndefined: Self = StObject.set(x, "useContainerOptimizedOs", js.undefined)
+    inline def setUseContainerOptimizedOsUndefined: Self = StObject.set(x, "useContainerOptimizedOs", js.undefined)
   }
 }

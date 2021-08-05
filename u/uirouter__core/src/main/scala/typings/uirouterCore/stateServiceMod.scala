@@ -36,7 +36,7 @@ object stateServiceMod {
     var $current: StateObject = js.native
     
     /** @internal */
-    var _defaultErrorHandler: js.Any = js.native
+    /* private */ var _defaultErrorHandler: js.Any = js.native
     
     /**
       * Handler for when [[transitionTo]] is called with an invalid state.
@@ -49,7 +49,7 @@ object stateServiceMod {
       *
       * @internal
       */
-    var _handleInvalidTargetState: js.Any = js.native
+    /* private */ var _handleInvalidTargetState: js.Any = js.native
     
     /**
       * The current [[StateDeclaration]]
@@ -105,7 +105,7 @@ object stateServiceMod {
     def get(stateOrName: StateOrName, base: StateOrName): StateDeclaration = js.native
     
     /** @internal */
-    var getCurrentPath: js.Any = js.native
+    /* private */ var getCurrentPath: js.Any = js.native
     
     /**
       * Transition to a different state and/or parameters
@@ -350,7 +350,7 @@ object stateServiceMod {
     def reload(): js.Promise[StateObject] = js.native
     def reload(reloadState: StateOrName): js.Promise[StateObject] = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     /**
       * Creates a [[TargetState]]

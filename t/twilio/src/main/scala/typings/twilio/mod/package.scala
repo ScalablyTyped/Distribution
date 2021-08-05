@@ -5,25 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(): typings.twilio.mod.RestClient = typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.twilio.mod.RestClient]
-@scala.inline
-def apply(sid: java.lang.String): typings.twilio.mod.RestClient = typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any]).asInstanceOf[typings.twilio.mod.RestClient]
-@scala.inline
-def apply(sid: java.lang.String, tkn: java.lang.String): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
-@scala.inline
-def apply(sid: java.lang.String, tkn: java.lang.String, options: typings.twilio.mod.ClientOptions): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
-@scala.inline
-def apply(sid: java.lang.String, tkn: scala.Unit, options: typings.twilio.mod.ClientOptions): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
-@scala.inline
-def apply(sid: scala.Unit, tkn: java.lang.String): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
-@scala.inline
-def apply(sid: scala.Unit, tkn: java.lang.String, options: typings.twilio.mod.ClientOptions): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
-@scala.inline
-def apply(sid: scala.Unit, tkn: scala.Unit, options: typings.twilio.mod.ClientOptions): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
+inline def apply(): typings.twilio.mod.RestClient = typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.twilio.mod.RestClient]
+inline def apply(sid: java.lang.String): typings.twilio.mod.RestClient = typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any]).asInstanceOf[typings.twilio.mod.RestClient]
+inline def apply(sid: java.lang.String, tkn: java.lang.String): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
+inline def apply(sid: java.lang.String, tkn: java.lang.String, options: typings.twilio.mod.ClientOptions): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
+inline def apply(sid: java.lang.String, tkn: scala.Unit, options: typings.twilio.mod.ClientOptions): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
+inline def apply(sid: scala.Unit, tkn: java.lang.String): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
+inline def apply(sid: scala.Unit, tkn: java.lang.String, options: typings.twilio.mod.ClientOptions): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
+inline def apply(sid: scala.Unit, tkn: scala.Unit, options: typings.twilio.mod.ClientOptions): typings.twilio.mod.RestClient = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].apply(sid.asInstanceOf[js.Any], tkn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.RestClient]
 
-@scala.inline
-def validateExpressRequest(
+inline def validateExpressRequest(
   request: typings.express.mod.Request_[
   typings.expressServeStaticCore.mod.ParamsDictionary, 
   js.Any, 
@@ -32,8 +23,7 @@ def validateExpressRequest(
 ],
   authToken: java.lang.String
 ): scala.Boolean = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validateExpressRequest")(request.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-@scala.inline
-def validateExpressRequest(
+inline def validateExpressRequest(
   request: typings.express.mod.Request_[
   typings.expressServeStaticCore.mod.ParamsDictionary, 
   js.Any, 
@@ -44,19 +34,13 @@ def validateExpressRequest(
   options: typings.twilio.mod.WebhookExpressOptions
 ): scala.Boolean = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validateExpressRequest")(request.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def validateRequest(authToken: java.lang.String, twilioHeader: java.lang.String, url: java.lang.String): scala.Boolean = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validateRequest")(authToken.asInstanceOf[js.Any], twilioHeader.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-@scala.inline
-def validateRequest(authToken: java.lang.String, twilioHeader: java.lang.String, url: java.lang.String, params: js.Any): scala.Boolean = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validateRequest")(authToken.asInstanceOf[js.Any], twilioHeader.asInstanceOf[js.Any], url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def validateRequest(authToken: java.lang.String, twilioHeader: java.lang.String, url: java.lang.String): scala.Boolean = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validateRequest")(authToken.asInstanceOf[js.Any], twilioHeader.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def validateRequest(authToken: java.lang.String, twilioHeader: java.lang.String, url: java.lang.String, params: js.Any): scala.Boolean = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validateRequest")(authToken.asInstanceOf[js.Any], twilioHeader.asInstanceOf[js.Any], url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def webhook(): typings.twilio.mod.MiddlewareFunction = typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("webhook")().asInstanceOf[typings.twilio.mod.MiddlewareFunction]
-@scala.inline
-def webhook(authToken: java.lang.String): typings.twilio.mod.MiddlewareFunction = typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(authToken.asInstanceOf[js.Any]).asInstanceOf[typings.twilio.mod.MiddlewareFunction]
-@scala.inline
-def webhook(authToken: java.lang.String, options: typings.twilio.mod.WebhookOptions): typings.twilio.mod.MiddlewareFunction = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(authToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.MiddlewareFunction]
-@scala.inline
-def webhook(options: typings.twilio.mod.WebhookOptions): typings.twilio.mod.MiddlewareFunction = typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(options.asInstanceOf[js.Any]).asInstanceOf[typings.twilio.mod.MiddlewareFunction]
+inline def webhook(): typings.twilio.mod.MiddlewareFunction = typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("webhook")().asInstanceOf[typings.twilio.mod.MiddlewareFunction]
+inline def webhook(authToken: java.lang.String): typings.twilio.mod.MiddlewareFunction = typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(authToken.asInstanceOf[js.Any]).asInstanceOf[typings.twilio.mod.MiddlewareFunction]
+inline def webhook(authToken: java.lang.String, options: typings.twilio.mod.WebhookOptions): typings.twilio.mod.MiddlewareFunction = (typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(authToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.twilio.mod.MiddlewareFunction]
+inline def webhook(options: typings.twilio.mod.WebhookOptions): typings.twilio.mod.MiddlewareFunction = typings.twilio.mod.^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(options.asInstanceOf[js.Any]).asInstanceOf[typings.twilio.mod.MiddlewareFunction]
 
 type AddressResource = typings.twilio.mod.ListMappedResource[typings.twilio.mod.AddressInstance]
 

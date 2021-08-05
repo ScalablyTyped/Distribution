@@ -14,22 +14,17 @@ trait ManagedThirdPartyVPNProperties extends StObject {
 }
 object ManagedThirdPartyVPNProperties {
   
-  @scala.inline
-  def apply(ExtensionID: ManagedDOMString): ManagedThirdPartyVPNProperties = {
+  inline def apply(ExtensionID: ManagedDOMString): ManagedThirdPartyVPNProperties = {
     val __obj = js.Dynamic.literal(ExtensionID = ExtensionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedThirdPartyVPNProperties]
   }
   
-  @scala.inline
-  implicit class ManagedThirdPartyVPNPropertiesMutableBuilder[Self <: ManagedThirdPartyVPNProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedThirdPartyVPNProperties](x: Self) {
     
-    @scala.inline
-    def setExtensionID(value: ManagedDOMString): Self = StObject.set(x, "ExtensionID", value.asInstanceOf[js.Any])
+    inline def setExtensionID(value: ManagedDOMString): Self = StObject.set(x, "ExtensionID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderName(value: String): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: String): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
+    inline def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
   }
 }

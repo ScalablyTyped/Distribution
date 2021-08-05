@@ -54,61 +54,43 @@ trait SchemaKeyValue extends StObject {
 }
 object SchemaKeyValue {
   
-  @scala.inline
-  def apply(): SchemaKeyValue = {
+  inline def apply(): SchemaKeyValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaKeyValue]
   }
   
-  @scala.inline
-  implicit class SchemaKeyValueMutableBuilder[Self <: SchemaKeyValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaKeyValue](x: Self) {
     
-    @scala.inline
-    def setBottomLabel(value: String): Self = StObject.set(x, "bottomLabel", value.asInstanceOf[js.Any])
+    inline def setBottomLabel(value: String): Self = StObject.set(x, "bottomLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomLabelUndefined: Self = StObject.set(x, "bottomLabel", js.undefined)
+    inline def setBottomLabelUndefined: Self = StObject.set(x, "bottomLabel", js.undefined)
     
-    @scala.inline
-    def setButton(value: SchemaButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: SchemaButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMultiline(value: Boolean): Self = StObject.set(x, "contentMultiline", value.asInstanceOf[js.Any])
+    inline def setContentMultiline(value: Boolean): Self = StObject.set(x, "contentMultiline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentMultilineUndefined: Self = StObject.set(x, "contentMultiline", js.undefined)
+    inline def setContentMultilineUndefined: Self = StObject.set(x, "contentMultiline", js.undefined)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+    inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: SchemaOnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: SchemaOnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setTopLabel(value: String): Self = StObject.set(x, "topLabel", value.asInstanceOf[js.Any])
+    inline def setTopLabel(value: String): Self = StObject.set(x, "topLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopLabelUndefined: Self = StObject.set(x, "topLabel", js.undefined)
+    inline def setTopLabelUndefined: Self = StObject.set(x, "topLabel", js.undefined)
   }
 }

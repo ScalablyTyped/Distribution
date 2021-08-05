@@ -48,61 +48,43 @@ trait ConfigurationRecorderStatus extends StObject {
 }
 object ConfigurationRecorderStatus {
   
-  @scala.inline
-  def apply(): ConfigurationRecorderStatus = {
+  inline def apply(): ConfigurationRecorderStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationRecorderStatus]
   }
   
-  @scala.inline
-  implicit class ConfigurationRecorderStatusMutableBuilder[Self <: ConfigurationRecorderStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationRecorderStatus](x: Self) {
     
-    @scala.inline
-    def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
+    inline def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorCodeUndefined: Self = StObject.set(x, "lastErrorCode", js.undefined)
+    inline def setLastErrorCodeUndefined: Self = StObject.set(x, "lastErrorCode", js.undefined)
     
-    @scala.inline
-    def setLastErrorMessage(value: String): Self = StObject.set(x, "lastErrorMessage", value.asInstanceOf[js.Any])
+    inline def setLastErrorMessage(value: String): Self = StObject.set(x, "lastErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorMessageUndefined: Self = StObject.set(x, "lastErrorMessage", js.undefined)
+    inline def setLastErrorMessageUndefined: Self = StObject.set(x, "lastErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLastStartTime(value: Date): Self = StObject.set(x, "lastStartTime", value.asInstanceOf[js.Any])
+    inline def setLastStartTime(value: Date): Self = StObject.set(x, "lastStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStartTimeUndefined: Self = StObject.set(x, "lastStartTime", js.undefined)
+    inline def setLastStartTimeUndefined: Self = StObject.set(x, "lastStartTime", js.undefined)
     
-    @scala.inline
-    def setLastStatus(value: RecorderStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
+    inline def setLastStatus(value: RecorderStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusChangeTime(value: Date): Self = StObject.set(x, "lastStatusChangeTime", value.asInstanceOf[js.Any])
+    inline def setLastStatusChangeTime(value: Date): Self = StObject.set(x, "lastStatusChangeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusChangeTimeUndefined: Self = StObject.set(x, "lastStatusChangeTime", js.undefined)
+    inline def setLastStatusChangeTimeUndefined: Self = StObject.set(x, "lastStatusChangeTime", js.undefined)
     
-    @scala.inline
-    def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
+    inline def setLastStatusUndefined: Self = StObject.set(x, "lastStatus", js.undefined)
     
-    @scala.inline
-    def setLastStopTime(value: Date): Self = StObject.set(x, "lastStopTime", value.asInstanceOf[js.Any])
+    inline def setLastStopTime(value: Date): Self = StObject.set(x, "lastStopTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStopTimeUndefined: Self = StObject.set(x, "lastStopTime", js.undefined)
+    inline def setLastStopTimeUndefined: Self = StObject.set(x, "lastStopTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRecording(value: Boolean): Self = StObject.set(x, "recording", value.asInstanceOf[js.Any])
+    inline def setRecording(value: Boolean): Self = StObject.set(x, "recording", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingUndefined: Self = StObject.set(x, "recording", js.undefined)
+    inline def setRecordingUndefined: Self = StObject.set(x, "recording", js.undefined)
   }
 }

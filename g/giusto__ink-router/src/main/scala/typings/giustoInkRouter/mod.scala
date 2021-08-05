@@ -68,8 +68,7 @@ object mod {
     def this(props: SwitchProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def withRouter(component: ComponentType[js.Any]): js.Function1[/* props */ js.Any, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRouter")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.Any, Element]]
+  inline def withRouter(component: ComponentType[js.Any]): js.Function1[/* props */ js.Any, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRouter")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.Any, Element]]
   
   trait CommandLineRouterProps extends StObject {
     
@@ -83,44 +82,32 @@ object mod {
   }
   object CommandLineRouterProps {
     
-    @scala.inline
-    def apply(): CommandLineRouterProps = {
+    inline def apply(): CommandLineRouterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommandLineRouterProps]
     }
     
-    @scala.inline
-    implicit class CommandLineRouterPropsMutableBuilder[Self <: CommandLineRouterProps] (val x: Self) extends AnyVal {
+    extension [Self <: CommandLineRouterProps](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setInitialEntries(value: js.Array[String]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
+      inline def setInitialEntries(value: js.Array[String]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
+      inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
       
-      @scala.inline
-      def setInitialEntriesVarargs(value: String*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
+      inline def setInitialEntriesVarargs(value: String*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
       
-      @scala.inline
-      def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
+      inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
+      inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Record[String, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Record[String, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -134,24 +121,19 @@ object mod {
   }
   object RouteComponentProps {
     
-    @scala.inline
-    def apply[T /* <: Record[String, js.Any] */](history: History[js.Object], location: Location[js.Object], `match`: Params[T]): RouteComponentProps[T] = {
+    inline def apply[T /* <: Record[String, js.Any] */](history: History[js.Object], location: Location[js.Object], `match`: Params[T]): RouteComponentProps[T] = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteComponentProps[T]]
     }
     
-    @scala.inline
-    implicit class RouteComponentPropsMutableBuilder[Self <: RouteComponentProps[?], T /* <: Record[String, js.Any] */] (val x: Self & RouteComponentProps[T]) extends AnyVal {
+    extension [Self <: RouteComponentProps[?], T /* <: Record[String, js.Any] */](x: Self & RouteComponentProps[T]) {
       
-      @scala.inline
-      def setHistory(value: History[js.Object]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: History[js.Object]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Location[js.Object]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location[js.Object]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: Params[T]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Params[T]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,32 +149,24 @@ object mod {
   }
   object RouteProps {
     
-    @scala.inline
-    def apply(component: ComponentType[js.Any], path: String): RouteProps = {
+    inline def apply(component: ComponentType[js.Any], path: String): RouteProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteProps]
     }
     
-    @scala.inline
-    implicit class RoutePropsMutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
+    extension [Self <: RouteProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Key): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Key): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,41 +182,30 @@ object mod {
   }
   object RouterProps {
     
-    @scala.inline
-    def apply(): RouterProps = {
+    inline def apply(): RouterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouterProps]
     }
     
-    @scala.inline
-    implicit class RouterPropsMutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
+    extension [Self <: RouterProps](x: Self) {
       
-      @scala.inline
-      def setGetUserConfirmation(value: () => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction0(value))
+      inline def setGetUserConfirmation(value: () => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
+      inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
       
-      @scala.inline
-      def setInitialEntries(value: js.Array[String | Hash]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
+      inline def setInitialEntries(value: js.Array[String | Hash]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
+      inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
       
-      @scala.inline
-      def setInitialEntriesVarargs(value: (String | Hash)*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
+      inline def setInitialEntriesVarargs(value: (String | Hash)*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
       
-      @scala.inline
-      def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
+      inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
+      inline def setInitialIndexUndefined: Self = StObject.set(x, "initialIndex", js.undefined)
       
-      @scala.inline
-      def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+      inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
+      inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
     }
   }
   
@@ -254,32 +217,24 @@ object mod {
   }
   object SwitchProps {
     
-    @scala.inline
-    def apply(): SwitchProps = {
+    inline def apply(): SwitchProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwitchProps]
     }
     
-    @scala.inline
-    implicit class SwitchPropsMutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwitchProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setNotFound(value: js.Function0[js.Any] | ComponentType[js.Any]): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+      inline def setNotFound(value: js.Function0[js.Any] | ComponentType[js.Any]): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotFoundFunction0(value: () => js.Any): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
+      inline def setNotFoundFunction0(value: () => js.Any): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
+      inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
     }
   }
 }

@@ -19,25 +19,19 @@ trait GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument extends St
 }
 object GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument = {
+  inline def apply(): GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrumentMutableBuilder[Self <: GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument](x: Self) {
     
-    @scala.inline
-    def setBillingAddress(value: GoogleTypePostalAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    inline def setBillingAddress(value: GoogleTypePostalAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+    inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
-    @scala.inline
-    def setInstrumentToken(value: String): Self = StObject.set(x, "instrumentToken", value.asInstanceOf[js.Any])
+    inline def setInstrumentToken(value: String): Self = StObject.set(x, "instrumentToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstrumentTokenUndefined: Self = StObject.set(x, "instrumentToken", js.undefined)
+    inline def setInstrumentTokenUndefined: Self = StObject.set(x, "instrumentToken", js.undefined)
   }
 }

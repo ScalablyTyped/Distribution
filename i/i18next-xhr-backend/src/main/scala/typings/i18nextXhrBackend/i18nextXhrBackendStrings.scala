@@ -8,6 +8,5 @@ object i18nextXhrBackendStrings {
   
   @js.native
   sealed trait backend extends StObject
-  @scala.inline
-  def backend: backend = "backend".asInstanceOf[backend]
+  inline def backend: backend = "backend".asInstanceOf[backend]
 }

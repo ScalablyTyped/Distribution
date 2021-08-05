@@ -18,8 +18,6 @@ object GroupDisposable {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderFrp.groupDisposableMod.GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.groupDisposableMod.GroupDisposable]
-  @scala.inline
-  def create(disposable: IDisposable): typings.wonderFrp.groupDisposableMod.GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposable.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.groupDisposableMod.GroupDisposable]
+  inline def create(): typings.wonderFrp.groupDisposableMod.GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.groupDisposableMod.GroupDisposable]
+  inline def create(disposable: IDisposable): typings.wonderFrp.groupDisposableMod.GroupDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposable.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.groupDisposableMod.GroupDisposable]
 }

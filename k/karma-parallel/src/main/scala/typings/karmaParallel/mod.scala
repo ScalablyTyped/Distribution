@@ -21,20 +21,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setParallelOptions(value: ParallelOptions): Self = StObject.set(x, "parallelOptions", value.asInstanceOf[js.Any])
+      inline def setParallelOptions(value: ParallelOptions): Self = StObject.set(x, "parallelOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelOptionsUndefined: Self = StObject.set(x, "parallelOptions", js.undefined)
+      inline def setParallelOptionsUndefined: Self = StObject.set(x, "parallelOptions", js.undefined)
     }
   }
   
@@ -71,44 +67,32 @@ object mod {
   }
   object ParallelOptions {
     
-    @scala.inline
-    def apply(): ParallelOptions = {
+    inline def apply(): ParallelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParallelOptions]
     }
     
-    @scala.inline
-    implicit class ParallelOptionsMutableBuilder[Self <: ParallelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParallelOptions](x: Self) {
       
-      @scala.inline
-      def setAggregatedReporterTest(value: (js.Function1[/* reporter */ js.Object, Boolean]) | RegExp): Self = StObject.set(x, "aggregatedReporterTest", value.asInstanceOf[js.Any])
+      inline def setAggregatedReporterTest(value: (js.Function1[/* reporter */ js.Object, Boolean]) | RegExp): Self = StObject.set(x, "aggregatedReporterTest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregatedReporterTestFunction1(value: /* reporter */ js.Object => Boolean): Self = StObject.set(x, "aggregatedReporterTest", js.Any.fromFunction1(value))
+      inline def setAggregatedReporterTestFunction1(value: /* reporter */ js.Object => Boolean): Self = StObject.set(x, "aggregatedReporterTest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAggregatedReporterTestNull: Self = StObject.set(x, "aggregatedReporterTest", null)
+      inline def setAggregatedReporterTestNull: Self = StObject.set(x, "aggregatedReporterTest", null)
       
-      @scala.inline
-      def setAggregatedReporterTestUndefined: Self = StObject.set(x, "aggregatedReporterTest", js.undefined)
+      inline def setAggregatedReporterTestUndefined: Self = StObject.set(x, "aggregatedReporterTest", js.undefined)
       
-      @scala.inline
-      def setCustomShardStrategy(value: /* options */ ShardStrategOptions => Boolean): Self = StObject.set(x, "customShardStrategy", js.Any.fromFunction1(value))
+      inline def setCustomShardStrategy(value: /* options */ ShardStrategOptions => Boolean): Self = StObject.set(x, "customShardStrategy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomShardStrategyUndefined: Self = StObject.set(x, "customShardStrategy", js.undefined)
+      inline def setCustomShardStrategyUndefined: Self = StObject.set(x, "customShardStrategy", js.undefined)
       
-      @scala.inline
-      def setExecutors(value: Double): Self = StObject.set(x, "executors", value.asInstanceOf[js.Any])
+      inline def setExecutors(value: Double): Self = StObject.set(x, "executors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutorsUndefined: Self = StObject.set(x, "executors", js.undefined)
+      inline def setExecutorsUndefined: Self = StObject.set(x, "executors", js.undefined)
       
-      @scala.inline
-      def setShardStrategy(value: `round-robin` | `description-length` | custom): Self = StObject.set(x, "shardStrategy", value.asInstanceOf[js.Any])
+      inline def setShardStrategy(value: `round-robin` | `description-length` | custom): Self = StObject.set(x, "shardStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardStrategyUndefined: Self = StObject.set(x, "shardStrategy", js.undefined)
+      inline def setShardStrategyUndefined: Self = StObject.set(x, "shardStrategy", js.undefined)
     }
   }
   
@@ -131,23 +115,18 @@ object mod {
   }
   object ShardStrategOptions {
     
-    @scala.inline
-    def apply(description: String, executors: Double, shardIndex: Double): ShardStrategOptions = {
+    inline def apply(description: String, executors: Double, shardIndex: Double): ShardStrategOptions = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], executors = executors.asInstanceOf[js.Any], shardIndex = shardIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShardStrategOptions]
     }
     
-    @scala.inline
-    implicit class ShardStrategOptionsMutableBuilder[Self <: ShardStrategOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShardStrategOptions](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutors(value: Double): Self = StObject.set(x, "executors", value.asInstanceOf[js.Any])
+      inline def setExecutors(value: Double): Self = StObject.set(x, "executors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardIndex(value: Double): Self = StObject.set(x, "shardIndex", value.asInstanceOf[js.Any])
+      inline def setShardIndex(value: Double): Self = StObject.set(x, "shardIndex", value.asInstanceOf[js.Any])
     }
   }
 }

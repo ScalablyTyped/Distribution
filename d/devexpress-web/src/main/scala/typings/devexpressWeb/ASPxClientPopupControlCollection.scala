@@ -18,8 +18,7 @@ trait ASPxClientPopupControlCollection
 }
 object ASPxClientPopupControlCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeginCallback: ASPxClientEvent[ASPxClientGlobalBeginCallbackEventHandler[ASPxClientControlCollection]],
     BrowserWindowResized: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlCollection]],
     CallbackError: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[ASPxClientControlCollection]],
@@ -37,10 +36,8 @@ object ASPxClientPopupControlCollection {
     __obj.asInstanceOf[ASPxClientPopupControlCollection]
   }
   
-  @scala.inline
-  implicit class ASPxClientPopupControlCollectionMutableBuilder[Self <: ASPxClientPopupControlCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPopupControlCollection](x: Self) {
     
-    @scala.inline
-    def setHideAllWindows(value: () => Unit): Self = StObject.set(x, "HideAllWindows", js.Any.fromFunction0(value))
+    inline def setHideAllWindows(value: () => Unit): Self = StObject.set(x, "HideAllWindows", js.Any.fromFunction0(value))
   }
 }

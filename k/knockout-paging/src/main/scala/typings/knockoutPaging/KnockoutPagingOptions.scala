@@ -13,19 +13,15 @@ trait KnockoutPagingOptions extends StObject {
 }
 object KnockoutPagingOptions {
   
-  @scala.inline
-  def apply(defaults: KnockoutPagingDefaultOptions, generators: Dictname): KnockoutPagingOptions = {
+  inline def apply(defaults: KnockoutPagingDefaultOptions, generators: Dictname): KnockoutPagingOptions = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any], generators = generators.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutPagingOptions]
   }
   
-  @scala.inline
-  implicit class KnockoutPagingOptionsMutableBuilder[Self <: KnockoutPagingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutPagingOptions](x: Self) {
     
-    @scala.inline
-    def setDefaults(value: KnockoutPagingDefaultOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: KnockoutPagingDefaultOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerators(value: Dictname): Self = StObject.set(x, "generators", value.asInstanceOf[js.Any])
+    inline def setGenerators(value: Dictname): Self = StObject.set(x, "generators", value.asInstanceOf[js.Any])
   }
 }

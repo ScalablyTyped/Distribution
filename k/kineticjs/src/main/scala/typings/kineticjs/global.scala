@@ -148,8 +148,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def parsePathData(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def parsePathData(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

@@ -14,31 +14,23 @@ trait AllowHalfOpen extends StObject {
 }
 object AllowHalfOpen {
   
-  @scala.inline
-  def apply(): AllowHalfOpen = {
+  inline def apply(): AllowHalfOpen = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowHalfOpen]
   }
   
-  @scala.inline
-  implicit class AllowHalfOpenMutableBuilder[Self <: AllowHalfOpen] (val x: Self) extends AnyVal {
+  extension [Self <: AllowHalfOpen](x: Self) {
     
-    @scala.inline
-    def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
+    inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+    inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
     
-    @scala.inline
-    def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+    inline def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
+    inline def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

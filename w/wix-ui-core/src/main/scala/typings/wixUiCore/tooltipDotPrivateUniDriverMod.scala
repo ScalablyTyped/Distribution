@@ -11,6 +11,5 @@ object tooltipDotPrivateUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tooltipPrivateDriverFactory(base: js.Any, body: js.Any): GetAriaDescribedBy = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltipPrivateDriverFactory")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAriaDescribedBy]
+  inline def tooltipPrivateDriverFactory(base: js.Any, body: js.Any): GetAriaDescribedBy = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltipPrivateDriverFactory")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetAriaDescribedBy]
 }

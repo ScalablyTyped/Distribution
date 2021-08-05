@@ -28,31 +28,23 @@ trait KeyRange extends StObject {
 }
 object KeyRange {
   
-  @scala.inline
-  def apply(lowerOpen: Boolean, upperOpen: Boolean): KeyRange = {
+  inline def apply(lowerOpen: Boolean, upperOpen: Boolean): KeyRange = {
     val __obj = js.Dynamic.literal(lowerOpen = lowerOpen.asInstanceOf[js.Any], upperOpen = upperOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyRange]
   }
   
-  @scala.inline
-  implicit class KeyRangeMutableBuilder[Self <: KeyRange] (val x: Self) extends AnyVal {
+  extension [Self <: KeyRange](x: Self) {
     
-    @scala.inline
-    def setLower(value: Key): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
+    inline def setLower(value: Key): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerOpen(value: Boolean): Self = StObject.set(x, "lowerOpen", value.asInstanceOf[js.Any])
+    inline def setLowerOpen(value: Boolean): Self = StObject.set(x, "lowerOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
+    inline def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
     
-    @scala.inline
-    def setUpper(value: Key): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
+    inline def setUpper(value: Key): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperOpen(value: Boolean): Self = StObject.set(x, "upperOpen", value.asInstanceOf[js.Any])
+    inline def setUpperOpen(value: Boolean): Self = StObject.set(x, "upperOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
+    inline def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
   }
 }

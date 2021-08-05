@@ -18,21 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(app: js.Any): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SuperTest[Test]]
+  inline def apply(app: js.Any): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SuperTest[Test]]
   
   @JSImport("supertest", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def agent(): SuperAgentTest = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")().asInstanceOf[SuperAgentTest]
-  @scala.inline
-  def agent(app: js.Any): SuperAgentTest = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any]).asInstanceOf[SuperAgentTest]
-  @scala.inline
-  def agent(app: js.Any, options: AgentOptions): SuperAgentTest = (^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SuperAgentTest]
-  @scala.inline
-  def agent(app: Unit, options: AgentOptions): SuperAgentTest = (^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SuperAgentTest]
+  inline def agent(): SuperAgentTest = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")().asInstanceOf[SuperAgentTest]
+  inline def agent(app: js.Any): SuperAgentTest = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any]).asInstanceOf[SuperAgentTest]
+  inline def agent(app: js.Any, options: AgentOptions): SuperAgentTest = (^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SuperAgentTest]
+  inline def agent(app: Unit, options: AgentOptions): SuperAgentTest = (^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SuperAgentTest]
   
   trait AgentOptions extends StObject {
     
@@ -40,20 +35,16 @@ object mod {
   }
   object AgentOptions {
     
-    @scala.inline
-    def apply(): AgentOptions = {
+    inline def apply(): AgentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AgentOptions]
     }
     
-    @scala.inline
-    implicit class AgentOptionsMutableBuilder[Self <: AgentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AgentOptions](x: Self) {
       
-      @scala.inline
-      def setCa(value: js.Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: js.Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+      inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     }
   }
   

@@ -22,17 +22,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deleteDb(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDb")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def deleteDb(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDb")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def openDb(name: String): js.Promise[DB] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DB]]
-  @scala.inline
-  def openDb(name: String, version: Double): js.Promise[DB] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DB]]
-  @scala.inline
-  def openDb(name: String, version: Double, upgradeCallback: js.Function1[/* db */ UpgradeDB, Unit]): js.Promise[DB] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], upgradeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DB]]
-  @scala.inline
-  def openDb(name: String, version: Unit, upgradeCallback: js.Function1[/* db */ UpgradeDB, Unit]): js.Promise[DB] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], upgradeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DB]]
+  inline def openDb(name: String): js.Promise[DB] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DB]]
+  inline def openDb(name: String, version: Double): js.Promise[DB] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DB]]
+  inline def openDb(name: String, version: Double, upgradeCallback: js.Function1[/* db */ UpgradeDB, Unit]): js.Promise[DB] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], upgradeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DB]]
+  inline def openDb(name: String, version: Unit, upgradeCallback: js.Function1[/* db */ UpgradeDB, Unit]): js.Promise[DB] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], upgradeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DB]]
   
   @js.native
   trait Cursor[TValue, TKey] extends StObject {
@@ -485,8 +480,7 @@ object mod {
   }
   object Transaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: () => Unit,
       complete: js.Promise[Unit],
       mode: readonly | readwrite | versionchange,
@@ -497,23 +491,17 @@ object mod {
       __obj.asInstanceOf[Transaction]
     }
     
-    @scala.inline
-    implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+    extension [Self <: Transaction](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComplete(value: js.Promise[Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: js.Promise[Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: readonly | readwrite | versionchange): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: readonly | readwrite | versionchange): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectStore(value: String => ObjectStore[js.Any, js.Any]): Self = StObject.set(x, "objectStore", js.Any.fromFunction1(value))
+      inline def setObjectStore(value: String => ObjectStore[js.Any, js.Any]): Self = StObject.set(x, "objectStore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setObjectStoreNames(value: DOMStringList): Self = StObject.set(x, "objectStoreNames", value.asInstanceOf[js.Any])
+      inline def setObjectStoreNames(value: DOMStringList): Self = StObject.set(x, "objectStoreNames", value.asInstanceOf[js.Any])
     }
   }
   

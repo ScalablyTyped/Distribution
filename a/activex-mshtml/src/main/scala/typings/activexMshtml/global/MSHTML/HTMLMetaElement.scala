@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLMetaElement")
 @js.native
-class HTMLMetaElement protected ()
+/* private */ class HTMLMetaElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLMetaElement

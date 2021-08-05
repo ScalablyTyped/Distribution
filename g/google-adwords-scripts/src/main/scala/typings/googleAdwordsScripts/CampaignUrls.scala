@@ -13,8 +13,7 @@ trait CampaignUrls
 }
 object CampaignUrls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearTrackingTemplate: () => Unit,
     getCustomParameters: () => js.Object,
     getTrackingTemplate: () => String,
@@ -25,10 +24,8 @@ object CampaignUrls {
     __obj.asInstanceOf[CampaignUrls]
   }
   
-  @scala.inline
-  implicit class CampaignUrlsMutableBuilder[Self <: CampaignUrls] (val x: Self) extends AnyVal {
+  extension [Self <: CampaignUrls](x: Self) {
     
-    @scala.inline
-    def setClearTrackingTemplate(value: () => Unit): Self = StObject.set(x, "clearTrackingTemplate", js.Any.fromFunction0(value))
+    inline def setClearTrackingTemplate(value: () => Unit): Self = StObject.set(x, "clearTrackingTemplate", js.Any.fromFunction0(value))
   }
 }

@@ -19,6 +19,5 @@ object pageCapture {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def saveAsMHTML(details: SaveDetails, callback: js.Function1[/* mhtmlData */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAsMHTML")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAsMHTML(details: SaveDetails, callback: js.Function1[/* mhtmlData */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAsMHTML")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -35,13 +35,12 @@ trait Revision extends StObject {
   
   val Type: WdRevisionType
   
-  @JSName("Word.Revision_typekey")
+  /* private */ @JSName("Word.Revision_typekey")
   var WordDotRevision_typekey: Revision
 }
 object Revision {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Accept: () => Unit,
     Application: Application,
     Author: String,
@@ -63,52 +62,36 @@ object Revision {
     __obj.asInstanceOf[Revision]
   }
   
-  @scala.inline
-  implicit class RevisionMutableBuilder[Self <: Revision] (val x: Self) extends AnyVal {
+  extension [Self <: Revision](x: Self) {
     
-    @scala.inline
-    def setAccept(value: () => Unit): Self = StObject.set(x, "Accept", js.Any.fromFunction0(value))
+    inline def setAccept(value: () => Unit): Self = StObject.set(x, "Accept", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCells(value: Cells): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: Cells): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatDescription(value: String): Self = StObject.set(x, "FormatDescription", value.asInstanceOf[js.Any])
+    inline def setFormatDescription(value: String): Self = StObject.set(x, "FormatDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovedRange(value: Range): Self = StObject.set(x, "MovedRange", value.asInstanceOf[js.Any])
+    inline def setMovedRange(value: Range): Self = StObject.set(x, "MovedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReject(value: () => Unit): Self = StObject.set(x, "Reject", js.Any.fromFunction0(value))
+    inline def setReject(value: () => Unit): Self = StObject.set(x, "Reject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyle(value: Style): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Style): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WdRevisionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WdRevisionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotRevision_typekey(value: Revision): Self = StObject.set(x, "Word.Revision_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotRevision_typekey(value: Revision): Self = StObject.set(x, "Word.Revision_typekey", value.asInstanceOf[js.Any])
   }
 }

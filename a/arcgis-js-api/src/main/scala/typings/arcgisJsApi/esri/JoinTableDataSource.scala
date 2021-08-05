@@ -57,8 +57,7 @@ trait JoinTableDataSource
 }
 object JoinTableDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     joinType: `left-outer-join` | `left-inner-join`,
@@ -73,25 +72,18 @@ object JoinTableDataSource {
     __obj.asInstanceOf[JoinTableDataSource]
   }
   
-  @scala.inline
-  implicit class JoinTableDataSourceMutableBuilder[Self <: JoinTableDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: JoinTableDataSource](x: Self) {
     
-    @scala.inline
-    def setJoinType(value: `left-outer-join` | `left-inner-join`): Self = StObject.set(x, "joinType", value.asInstanceOf[js.Any])
+    inline def setJoinType(value: `left-outer-join` | `left-inner-join`): Self = StObject.set(x, "joinType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftTableKey(value: String): Self = StObject.set(x, "leftTableKey", value.asInstanceOf[js.Any])
+    inline def setLeftTableKey(value: String): Self = StObject.set(x, "leftTableKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftTableSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "leftTableSource", value.asInstanceOf[js.Any])
+    inline def setLeftTableSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "leftTableSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightTableKey(value: String): Self = StObject.set(x, "rightTableKey", value.asInstanceOf[js.Any])
+    inline def setRightTableKey(value: String): Self = StObject.set(x, "rightTableKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightTableSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "rightTableSource", value.asInstanceOf[js.Any])
+    inline def setRightTableSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "rightTableSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `join-table`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `join-table`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

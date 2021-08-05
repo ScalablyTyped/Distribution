@@ -85,7 +85,7 @@ object feedFactoryMod {
     
     def blockedUsers(): BlockedUsersFeed = js.native
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
     def directInbox(): DirectInboxFeed = js.native
     

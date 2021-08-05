@@ -20,17 +20,14 @@ object typesPutKeyPolicyOutputMod {
   }
   object PutKeyPolicyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutKeyPolicyOutput = {
+    inline def apply($metadata: ResponseMetadata): PutKeyPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutKeyPolicyOutput]
     }
     
-    @scala.inline
-    implicit class PutKeyPolicyOutputMutableBuilder[Self <: PutKeyPolicyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutKeyPolicyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesAlwaysReturnBasicInformation extends StObject {
 }
 object EnumValuesAlwaysReturnBasicInformation {
   
-  @scala.inline
-  def apply(enumValues: AlwaysReturnBasicInformation): EnumValuesAlwaysReturnBasicInformation = {
+  inline def apply(enumValues: AlwaysReturnBasicInformation): EnumValuesAlwaysReturnBasicInformation = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAlwaysReturnBasicInformation]
   }
   
-  @scala.inline
-  implicit class EnumValuesAlwaysReturnBasicInformationMutableBuilder[Self <: EnumValuesAlwaysReturnBasicInformation] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAlwaysReturnBasicInformation](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AlwaysReturnBasicInformation): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AlwaysReturnBasicInformation): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

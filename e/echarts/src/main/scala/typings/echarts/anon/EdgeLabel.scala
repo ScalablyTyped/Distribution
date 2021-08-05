@@ -28,37 +28,27 @@ trait EdgeLabel extends StObject {
 }
 object EdgeLabel {
   
-  @scala.inline
-  def apply(): EdgeLabel = {
+  inline def apply(): EdgeLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EdgeLabel]
   }
   
-  @scala.inline
-  implicit class EdgeLabelMutableBuilder[Self <: EdgeLabel] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeLabel](x: Self) {
     
-    @scala.inline
-    def setEdgeLabel(value: FontSize): Self = StObject.set(x, "edgeLabel", value.asInstanceOf[js.Any])
+    inline def setEdgeLabel(value: FontSize): Self = StObject.set(x, "edgeLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeLabelUndefined: Self = StObject.set(x, "edgeLabel", js.undefined)
+    inline def setEdgeLabelUndefined: Self = StObject.set(x, "edgeLabel", js.undefined)
     
-    @scala.inline
-    def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: Distance): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Distance): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

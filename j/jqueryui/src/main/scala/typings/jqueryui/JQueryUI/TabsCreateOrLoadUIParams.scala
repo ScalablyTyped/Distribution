@@ -13,19 +13,15 @@ trait TabsCreateOrLoadUIParams extends StObject {
 }
 object TabsCreateOrLoadUIParams {
   
-  @scala.inline
-  def apply(panel: JQuery, tab: JQuery): TabsCreateOrLoadUIParams = {
+  inline def apply(panel: JQuery, tab: JQuery): TabsCreateOrLoadUIParams = {
     val __obj = js.Dynamic.literal(panel = panel.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsCreateOrLoadUIParams]
   }
   
-  @scala.inline
-  implicit class TabsCreateOrLoadUIParamsMutableBuilder[Self <: TabsCreateOrLoadUIParams] (val x: Self) extends AnyVal {
+  extension [Self <: TabsCreateOrLoadUIParams](x: Self) {
     
-    @scala.inline
-    def setPanel(value: JQuery): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: JQuery): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTab(value: JQuery): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: JQuery): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait SamplingStrategy extends StObject {
 }
 object SamplingStrategy {
   
-  @scala.inline
-  def apply(): SamplingStrategy = {
+  inline def apply(): SamplingStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SamplingStrategy]
   }
   
-  @scala.inline
-  implicit class SamplingStrategyMutableBuilder[Self <: SamplingStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: SamplingStrategy](x: Self) {
     
-    @scala.inline
-    def setName(value: SamplingStrategyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SamplingStrategyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValue(value: NullableDouble): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableDouble): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

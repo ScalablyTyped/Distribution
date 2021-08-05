@@ -26,8 +26,7 @@ trait PixelData
 }
 object PixelData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     extent: Extent,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object PixelData {
     __obj.asInstanceOf[PixelData]
   }
   
-  @scala.inline
-  implicit class PixelDataMutableBuilder[Self <: PixelData] (val x: Self) extends AnyVal {
+  extension [Self <: PixelData](x: Self) {
     
-    @scala.inline
-    def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelBlock(value: PixelBlock): Self = StObject.set(x, "pixelBlock", value.asInstanceOf[js.Any])
+    inline def setPixelBlock(value: PixelBlock): Self = StObject.set(x, "pixelBlock", value.asInstanceOf[js.Any])
   }
 }

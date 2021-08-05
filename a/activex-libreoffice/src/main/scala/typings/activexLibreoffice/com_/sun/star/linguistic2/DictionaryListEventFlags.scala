@@ -27,28 +27,20 @@ object DictionaryListEventFlags {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ACTIVATE_NEG_DIC: `64` = 64.asInstanceOf[`64`]
+    inline def ACTIVATE_NEG_DIC: `64` = 64.asInstanceOf[`64`]
     
-    @scala.inline
-    def ACTIVATE_POS_DIC: `16` = 16.asInstanceOf[`16`]
+    inline def ACTIVATE_POS_DIC: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def ADD_NEG_ENTRY: `4` = 4.asInstanceOf[`4`]
+    inline def ADD_NEG_ENTRY: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def ADD_POS_ENTRY: `1` = 1.asInstanceOf[`1`]
+    inline def ADD_POS_ENTRY: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def DEACTIVATE_NEG_DIC: `128` = 128.asInstanceOf[`128`]
+    inline def DEACTIVATE_NEG_DIC: `128` = 128.asInstanceOf[`128`]
     
-    @scala.inline
-    def DEACTIVATE_POS_DIC: `32` = 32.asInstanceOf[`32`]
+    inline def DEACTIVATE_POS_DIC: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def DEL_NEG_ENTRY: `8` = 8.asInstanceOf[`8`]
+    inline def DEL_NEG_ENTRY: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def DEL_POS_ENTRY: `2` = 2.asInstanceOf[`2`]
+    inline def DEL_POS_ENTRY: `2` = 2.asInstanceOf[`2`]
   }
 }

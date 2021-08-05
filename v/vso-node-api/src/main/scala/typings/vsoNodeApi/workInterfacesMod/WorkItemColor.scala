@@ -14,22 +14,17 @@ trait WorkItemColor extends StObject {
 }
 object WorkItemColor {
   
-  @scala.inline
-  def apply(icon: String, primaryColor: String, workItemTypeName: String): WorkItemColor = {
+  inline def apply(icon: String, primaryColor: String, workItemTypeName: String): WorkItemColor = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], primaryColor = primaryColor.asInstanceOf[js.Any], workItemTypeName = workItemTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemColor]
   }
   
-  @scala.inline
-  implicit class WorkItemColorMutableBuilder[Self <: WorkItemColor] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemColor](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+    inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypeName(value: String): Self = StObject.set(x, "workItemTypeName", value.asInstanceOf[js.Any])
+    inline def setWorkItemTypeName(value: String): Self = StObject.set(x, "workItemTypeName", value.asInstanceOf[js.Any])
   }
 }

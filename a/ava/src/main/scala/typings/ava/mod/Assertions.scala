@@ -263,8 +263,7 @@ trait Assertions extends StObject {
 }
 object Assertions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assert: AssertAssertion,
     deepEqual: DeepEqualAssertion,
     fail: FailAssertion,
@@ -291,64 +290,44 @@ object Assertions {
     __obj.asInstanceOf[Assertions]
   }
   
-  @scala.inline
-  implicit class AssertionsMutableBuilder[Self <: Assertions] (val x: Self) extends AnyVal {
+  extension [Self <: Assertions](x: Self) {
     
-    @scala.inline
-    def setAssert(value: AssertAssertion): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: AssertAssertion): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeepEqual(value: DeepEqualAssertion): Self = StObject.set(x, "deepEqual", value.asInstanceOf[js.Any])
+    inline def setDeepEqual(value: DeepEqualAssertion): Self = StObject.set(x, "deepEqual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFail(value: FailAssertion): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
+    inline def setFail(value: FailAssertion): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalse(value: FalseAssertion): Self = StObject.set(x, "false", value.asInstanceOf[js.Any])
+    inline def setFalse(value: FalseAssertion): Self = StObject.set(x, "false", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalsy(value: FalsyAssertion): Self = StObject.set(x, "falsy", value.asInstanceOf[js.Any])
+    inline def setFalsy(value: FalsyAssertion): Self = StObject.set(x, "falsy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs(value: IsAssertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    inline def setIs(value: IsAssertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLike(value: LikeAssertion): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
+    inline def setLike(value: LikeAssertion): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNot(value: NotAssertion): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: NotAssertion): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotDeepEqual(value: NotDeepEqualAssertion): Self = StObject.set(x, "notDeepEqual", value.asInstanceOf[js.Any])
+    inline def setNotDeepEqual(value: NotDeepEqualAssertion): Self = StObject.set(x, "notDeepEqual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotRegex(value: NotRegexAssertion): Self = StObject.set(x, "notRegex", value.asInstanceOf[js.Any])
+    inline def setNotRegex(value: NotRegexAssertion): Self = StObject.set(x, "notRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotThrows(value: NotThrowsAssertion): Self = StObject.set(x, "notThrows", value.asInstanceOf[js.Any])
+    inline def setNotThrows(value: NotThrowsAssertion): Self = StObject.set(x, "notThrows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotThrowsAsync(value: NotThrowsAsyncAssertion): Self = StObject.set(x, "notThrowsAsync", value.asInstanceOf[js.Any])
+    inline def setNotThrowsAsync(value: NotThrowsAsyncAssertion): Self = StObject.set(x, "notThrowsAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPass(value: PassAssertion): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+    inline def setPass(value: PassAssertion): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegex(value: RegexAssertion): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: RegexAssertion): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshot(value: SnapshotAssertion): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: SnapshotAssertion): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrows(value: ThrowsAssertion): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
+    inline def setThrows(value: ThrowsAssertion): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrowsAsync(value: ThrowsAsyncAssertion): Self = StObject.set(x, "throwsAsync", value.asInstanceOf[js.Any])
+    inline def setThrowsAsync(value: ThrowsAsyncAssertion): Self = StObject.set(x, "throwsAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrue(value: TrueAssertion): Self = StObject.set(x, "true", value.asInstanceOf[js.Any])
+    inline def setTrue(value: TrueAssertion): Self = StObject.set(x, "true", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruthy(value: TruthyAssertion): Self = StObject.set(x, "truthy", value.asInstanceOf[js.Any])
+    inline def setTruthy(value: TruthyAssertion): Self = StObject.set(x, "truthy", value.asInstanceOf[js.Any])
   }
 }

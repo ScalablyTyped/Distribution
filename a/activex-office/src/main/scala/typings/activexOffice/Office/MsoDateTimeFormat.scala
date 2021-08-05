@@ -39,48 +39,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoDateTimeFormat extends StObject
 object MsoDateTimeFormat {
   
-  @scala.inline
-  def msoDateTimeFigureOut: `14` = 14.asInstanceOf[`14`]
+  inline def msoDateTimeFigureOut: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def msoDateTimeFormatMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoDateTimeFormatMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoDateTimeHmm: `10` = 10.asInstanceOf[`10`]
+  inline def msoDateTimeHmm: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoDateTimeHmmss: `11` = 11.asInstanceOf[`11`]
+  inline def msoDateTimeHmmss: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def msoDateTimeMMMMdyyyy: `4` = 4.asInstanceOf[`4`]
+  inline def msoDateTimeMMMMdyyyy: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoDateTimeMMMMyy: `6` = 6.asInstanceOf[`6`]
+  inline def msoDateTimeMMMMyy: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoDateTimeMMddyyHmm: `8` = 8.asInstanceOf[`8`]
+  inline def msoDateTimeMMddyyHmm: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoDateTimeMMddyyhmmAMPM: `9` = 9.asInstanceOf[`9`]
+  inline def msoDateTimeMMddyyhmmAMPM: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoDateTimeMMyy: `7` = 7.asInstanceOf[`7`]
+  inline def msoDateTimeMMyy: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoDateTimeMdyy: `1` = 1.asInstanceOf[`1`]
+  inline def msoDateTimeMdyy: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoDateTimedMMMMyyyy: `3` = 3.asInstanceOf[`3`]
+  inline def msoDateTimedMMMMyyyy: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoDateTimedMMMyy: `5` = 5.asInstanceOf[`5`]
+  inline def msoDateTimedMMMyy: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoDateTimeddddMMMMddyyyy: `2` = 2.asInstanceOf[`2`]
+  inline def msoDateTimeddddMMMMddyyyy: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoDateTimehmmAMPM: `12` = 12.asInstanceOf[`12`]
+  inline def msoDateTimehmmAMPM: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def msoDateTimehmmssAMPM: `13` = 13.asInstanceOf[`13`]
+  inline def msoDateTimehmmssAMPM: `13` = 13.asInstanceOf[`13`]
 }

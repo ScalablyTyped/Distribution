@@ -36,31 +36,23 @@ trait CustomXmlPartLoadOptions extends StObject {
 }
 object CustomXmlPartLoadOptions {
   
-  @scala.inline
-  def apply(): CustomXmlPartLoadOptions = {
+  inline def apply(): CustomXmlPartLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomXmlPartLoadOptions]
   }
   
-  @scala.inline
-  implicit class CustomXmlPartLoadOptionsMutableBuilder[Self <: CustomXmlPartLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CustomXmlPartLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setNamespaceUri(value: Boolean): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
+    inline def setNamespaceUri(value: Boolean): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUriUndefined: Self = StObject.set(x, "namespaceUri", js.undefined)
+    inline def setNamespaceUriUndefined: Self = StObject.set(x, "namespaceUri", js.undefined)
   }
 }

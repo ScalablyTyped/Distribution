@@ -14,25 +14,19 @@ trait VideoOffset extends StObject {
 }
 object VideoOffset {
   
-  @scala.inline
-  def apply(): VideoOffset = {
+  inline def apply(): VideoOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoOffset]
   }
   
-  @scala.inline
-  implicit class VideoOffsetMutableBuilder[Self <: VideoOffset] (val x: Self) extends AnyVal {
+  extension [Self <: VideoOffset](x: Self) {
     
-    @scala.inline
-    def setOffsetPercentage(value: Double): Self = StObject.set(x, "offsetPercentage", value.asInstanceOf[js.Any])
+    inline def setOffsetPercentage(value: Double): Self = StObject.set(x, "offsetPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetPercentageUndefined: Self = StObject.set(x, "offsetPercentage", js.undefined)
+    inline def setOffsetPercentageUndefined: Self = StObject.set(x, "offsetPercentage", js.undefined)
     
-    @scala.inline
-    def setOffsetSeconds(value: Double): Self = StObject.set(x, "offsetSeconds", value.asInstanceOf[js.Any])
+    inline def setOffsetSeconds(value: Double): Self = StObject.set(x, "offsetSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetSecondsUndefined: Self = StObject.set(x, "offsetSeconds", js.undefined)
+    inline def setOffsetSecondsUndefined: Self = StObject.set(x, "offsetSeconds", js.undefined)
   }
 }

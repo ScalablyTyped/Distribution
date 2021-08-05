@@ -38,43 +38,31 @@ trait UpdateSchemaRequest extends StObject {
 }
 object UpdateSchemaRequest {
   
-  @scala.inline
-  def apply(RegistryName: string, SchemaName: string): UpdateSchemaRequest = {
+  inline def apply(RegistryName: string, SchemaName: string): UpdateSchemaRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSchemaRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSchemaRequestMutableBuilder[Self <: UpdateSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setClientTokenId(value: stringMin0Max36): Self = StObject.set(x, "ClientTokenId", value.asInstanceOf[js.Any])
+    inline def setClientTokenId(value: stringMin0Max36): Self = StObject.set(x, "ClientTokenId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenIdUndefined: Self = StObject.set(x, "ClientTokenId", js.undefined)
+    inline def setClientTokenIdUndefined: Self = StObject.set(x, "ClientTokenId", js.undefined)
     
-    @scala.inline
-    def setContent(value: stringMin1Max100000): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: stringMin1Max100000): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: stringMin0Max256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

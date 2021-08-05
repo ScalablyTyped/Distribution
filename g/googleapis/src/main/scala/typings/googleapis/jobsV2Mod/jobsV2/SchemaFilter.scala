@@ -20,19 +20,15 @@ trait SchemaFilter extends StObject {
 }
 object SchemaFilter {
   
-  @scala.inline
-  def apply(): SchemaFilter = {
+  inline def apply(): SchemaFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilter]
   }
   
-  @scala.inline
-  implicit class SchemaFilterMutableBuilder[Self <: SchemaFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFilter](x: Self) {
     
-    @scala.inline
-    def setRequisitionId(value: String): Self = StObject.set(x, "requisitionId", value.asInstanceOf[js.Any])
+    inline def setRequisitionId(value: String): Self = StObject.set(x, "requisitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequisitionIdUndefined: Self = StObject.set(x, "requisitionId", js.undefined)
+    inline def setRequisitionIdUndefined: Self = StObject.set(x, "requisitionId", js.undefined)
   }
 }

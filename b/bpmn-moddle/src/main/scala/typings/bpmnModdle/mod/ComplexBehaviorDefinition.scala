@@ -14,8 +14,7 @@ trait ComplexBehaviorDefinition
 }
 object ComplexBehaviorDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     condition: FormalExpression,
@@ -26,13 +25,10 @@ object ComplexBehaviorDefinition {
     __obj.asInstanceOf[ComplexBehaviorDefinition]
   }
   
-  @scala.inline
-  implicit class ComplexBehaviorDefinitionMutableBuilder[Self <: ComplexBehaviorDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ComplexBehaviorDefinition](x: Self) {
     
-    @scala.inline
-    def setCondition(value: FormalExpression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: FormalExpression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: ImplicitThrowEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: ImplicitThrowEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

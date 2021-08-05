@@ -17,8 +17,7 @@ trait BootstrapClientSparkline
 }
 object BootstrapClientSparkline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Disposing: ASPxClientEvent[BootstrapUIWidgetDisposingEventHandler[BootstrapUIWidgetBase]],
     Drawn: ASPxClientEvent[BootstrapUIWidgetDrawnEventHandler[BootstrapUIWidgetBase]],
@@ -56,15 +55,12 @@ object BootstrapClientSparkline {
     __obj.asInstanceOf[BootstrapClientSparkline]
   }
   
-  @scala.inline
-  implicit class BootstrapClientSparklineMutableBuilder[Self <: BootstrapClientSparkline] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientSparkline](x: Self) {
     
-    @scala.inline
-    def setTooltipHidden(
+    inline def setTooltipHidden(
       value: ASPxClientEvent[BootstrapClientSparklineTooltipHiddenEventHandler[BootstrapClientSparkline]]
     ): Self = StObject.set(x, "TooltipHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipShown(value: ASPxClientEvent[BootstrapClientSparklineTooltipShownEventHandler[BootstrapClientSparkline]]): Self = StObject.set(x, "TooltipShown", value.asInstanceOf[js.Any])
+    inline def setTooltipShown(value: ASPxClientEvent[BootstrapClientSparklineTooltipShownEventHandler[BootstrapClientSparkline]]): Self = StObject.set(x, "TooltipShown", value.asInstanceOf[js.Any])
   }
 }

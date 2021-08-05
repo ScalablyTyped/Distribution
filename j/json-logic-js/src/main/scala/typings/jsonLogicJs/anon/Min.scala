@@ -15,8 +15,7 @@ trait Min
 }
 object Min {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     min: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
     ]
@@ -25,18 +24,15 @@ object Min {
     __obj.asInstanceOf[Min]
   }
   
-  @scala.inline
-  implicit class MinMutableBuilder[Self <: Min] (val x: Self) extends AnyVal {
+  extension [Self <: Min](x: Self) {
     
-    @scala.inline
-    def setMin(
+    inline def setMin(
       value: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
         ]
     ): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinVarargs(
+    inline def setMinVarargs(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object)*
     ): Self = StObject.set(x, "min", js.Array(value :_*))
   }

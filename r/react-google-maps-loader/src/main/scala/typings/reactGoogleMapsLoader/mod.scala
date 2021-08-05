@@ -40,8 +40,7 @@ object mod {
     }
     object GoogleMaps {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         Data: js.Any,
         Marker: js.Any,
         OverlayView: js.Any,
@@ -56,35 +55,25 @@ object mod {
         __obj.asInstanceOf[GoogleMaps]
       }
       
-      @scala.inline
-      implicit class GoogleMapsMutableBuilder[Self <: GoogleMaps] (val x: Self) extends AnyVal {
+      extension [Self <: GoogleMaps](x: Self) {
         
-        @scala.inline
-        def setAdsense(value: js.Any): Self = StObject.set(x, "adsense", value.asInstanceOf[js.Any])
+        inline def setAdsense(value: js.Any): Self = StObject.set(x, "adsense", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDrawing(value: js.Any): Self = StObject.set(x, "drawing", value.asInstanceOf[js.Any])
+        inline def setDrawing(value: js.Any): Self = StObject.set(x, "drawing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+        inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGeometry(value: Typeofgeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+        inline def setGeometry(value: Typeofgeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarker(value: js.Any): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+        inline def setMarker(value: js.Any): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlayView(value: js.Any): Self = StObject.set(x, "OverlayView", value.asInstanceOf[js.Any])
+        inline def setOverlayView(value: js.Any): Self = StObject.set(x, "OverlayView", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaces(value: js.Any): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+        inline def setPlaces(value: js.Any): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisualization(value: js.Any): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
+        inline def setVisualization(value: js.Any): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
       }
     }
     
@@ -96,23 +85,18 @@ object mod {
     }
     object Params {
       
-      @scala.inline
-      def apply(key: String): Params = {
+      inline def apply(key: String): Params = {
         val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
         __obj.asInstanceOf[Params]
       }
       
-      @scala.inline
-      implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+      extension [Self <: Params](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLibraries(value: String): Self = StObject.set(x, "libraries", value.asInstanceOf[js.Any])
+        inline def setLibraries(value: String): Self = StObject.set(x, "libraries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLibrariesUndefined: Self = StObject.set(x, "libraries", js.undefined)
+        inline def setLibrariesUndefined: Self = StObject.set(x, "libraries", js.undefined)
       }
     }
     

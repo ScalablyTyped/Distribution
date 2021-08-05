@@ -14,23 +14,18 @@ object livePostLiveThumbnailsResponseMod {
   }
   object LivePostLiveThumbnailsResponseRootObject {
     
-    @scala.inline
-    def apply(status: String, thumbnails: js.Array[String]): LivePostLiveThumbnailsResponseRootObject = {
+    inline def apply(status: String, thumbnails: js.Array[String]): LivePostLiveThumbnailsResponseRootObject = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], thumbnails = thumbnails.asInstanceOf[js.Any])
       __obj.asInstanceOf[LivePostLiveThumbnailsResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LivePostLiveThumbnailsResponseRootObjectMutableBuilder[Self <: LivePostLiveThumbnailsResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LivePostLiveThumbnailsResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnails(value: js.Array[String]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+      inline def setThumbnails(value: js.Array[String]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailsVarargs(value: String*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
+      inline def setThumbnailsVarargs(value: String*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
     }
   }
 }

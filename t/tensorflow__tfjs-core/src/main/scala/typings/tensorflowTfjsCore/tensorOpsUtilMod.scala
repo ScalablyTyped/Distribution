@@ -14,8 +14,6 @@ object tensorOpsUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeTensor(values: TensorLike, shape: js.Array[Double], inferredShape: js.Array[Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], inferredShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
-  @scala.inline
-  def makeTensor(values: TensorLike, shape: js.Array[Double], inferredShape: js.Array[Double], dtype: DataType): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], inferredShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def makeTensor(values: TensorLike, shape: js.Array[Double], inferredShape: js.Array[Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], inferredShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def makeTensor(values: TensorLike, shape: js.Array[Double], inferredShape: js.Array[Double], dtype: DataType): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], inferredShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
 }

@@ -41,8 +41,7 @@ object typesMod {
   }
   object TypeLookup {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       array: js.Array[js.Any],
       boolean: Boolean,
       date: Date,
@@ -60,44 +59,31 @@ object typesMod {
       __obj.asInstanceOf[TypeLookup]
     }
     
-    @scala.inline
-    implicit class TypeLookupMutableBuilder[Self <: TypeLookup] (val x: Self) extends AnyVal {
+    extension [Self <: TypeLookup](x: Self) {
       
-      @scala.inline
-      def setArray(value: js.Array[js.Any]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: js.Array[js.Any]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayVarargs(value: js.Any*): Self = StObject.set(x, "array", js.Array(value :_*))
+      inline def setArrayVarargs(value: js.Any*): Self = StObject.set(x, "array", js.Array(value :_*))
       
-      @scala.inline
-      def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      inline def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilelist(value: FileList): Self = StObject.set(x, "filelist", value.asInstanceOf[js.Any])
+      inline def setFilelist(value: FileList): Self = StObject.set(x, "filelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunction(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "function", js.Any.fromFunction1(value))
+      inline def setFunction(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "function", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNull(value: Null): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
+      inline def setNull(value: Null): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndefined(value: Unit): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+      inline def setUndefined(value: Unit): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
     }
   }
   

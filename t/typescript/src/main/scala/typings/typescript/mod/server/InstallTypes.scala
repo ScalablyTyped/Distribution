@@ -19,8 +19,7 @@ trait InstallTypes
 }
 object InstallTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventId: Double,
     kind: EventBeginInstallTypes | EventEndInstallTypes,
     packagesToInstall: js.Array[String],
@@ -31,22 +30,16 @@ object InstallTypes {
     __obj.asInstanceOf[InstallTypes]
   }
   
-  @scala.inline
-  implicit class InstallTypesMutableBuilder[Self <: InstallTypes] (val x: Self) extends AnyVal {
+  extension [Self <: InstallTypes](x: Self) {
     
-    @scala.inline
-    def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: EventBeginInstallTypes | EventEndInstallTypes): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: EventBeginInstallTypes | EventEndInstallTypes): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagesToInstall(value: js.Array[String]): Self = StObject.set(x, "packagesToInstall", value.asInstanceOf[js.Any])
+    inline def setPackagesToInstall(value: js.Array[String]): Self = StObject.set(x, "packagesToInstall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackagesToInstallVarargs(value: String*): Self = StObject.set(x, "packagesToInstall", js.Array(value :_*))
+    inline def setPackagesToInstallVarargs(value: String*): Self = StObject.set(x, "packagesToInstall", js.Array(value :_*))
     
-    @scala.inline
-    def setTypingsInstallerVersion(value: String): Self = StObject.set(x, "typingsInstallerVersion", value.asInstanceOf[js.Any])
+    inline def setTypingsInstallerVersion(value: String): Self = StObject.set(x, "typingsInstallerVersion", value.asInstanceOf[js.Any])
   }
 }

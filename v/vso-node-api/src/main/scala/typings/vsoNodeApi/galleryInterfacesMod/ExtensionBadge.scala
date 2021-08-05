@@ -14,22 +14,17 @@ trait ExtensionBadge extends StObject {
 }
 object ExtensionBadge {
   
-  @scala.inline
-  def apply(description: String, imgUri: String, link: String): ExtensionBadge = {
+  inline def apply(description: String, imgUri: String, link: String): ExtensionBadge = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], imgUri = imgUri.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionBadge]
   }
   
-  @scala.inline
-  implicit class ExtensionBadgeMutableBuilder[Self <: ExtensionBadge] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionBadge](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgUri(value: String): Self = StObject.set(x, "imgUri", value.asInstanceOf[js.Any])
+    inline def setImgUri(value: String): Self = StObject.set(x, "imgUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
   }
 }

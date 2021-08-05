@@ -95,19 +95,13 @@ object map {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(a: js.Any): typings.kendoUi.kendo.dataviz.map.Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
-    @scala.inline
-    def create(a: js.Any, b: js.Any): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
-    @scala.inline
-    def create(a: js.Any, b: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: js.Any): typings.kendoUi.kendo.dataviz.map.Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: js.Any, b: js.Any): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: js.Any, b: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
     /* static member */
-    @scala.inline
-    def create(a: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
-    @scala.inline
-    def create(a: typings.kendoUi.kendo.dataviz.map.Location, b: js.Any): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
-    @scala.inline
-    def create(a: typings.kendoUi.kendo.dataviz.map.Location, b: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: typings.kendoUi.kendo.dataviz.map.Location, b: js.Any): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
+    inline def create(a: typings.kendoUi.kendo.dataviz.map.Location, b: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Extent]
   }
   
   @JSGlobal("kendo.dataviz.map.Layer")
@@ -172,28 +166,20 @@ object map {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(lat: js.Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
-    @scala.inline
-    def create(lat: js.Any, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def create(lat: js.Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def create(lat: js.Any, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
     /* static member */
-    @scala.inline
-    def create(lat: Double): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
-    @scala.inline
-    def create(lat: Double, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def create(lat: Double): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def create(lat: Double, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
     /* static member */
-    @scala.inline
-    def create(lat: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
-    @scala.inline
-    def create(lat: typings.kendoUi.kendo.dataviz.map.Location, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def create(lat: typings.kendoUi.kendo.dataviz.map.Location): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def create(lat: typings.kendoUi.kendo.dataviz.map.Location, lng: Double): typings.kendoUi.kendo.dataviz.map.Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(lat.asInstanceOf[js.Any], lng.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
     
     /* static member */
-    @scala.inline
-    def fromLatLng(lnglat: js.Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(lnglat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def fromLatLng(lnglat: js.Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(lnglat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
     
     /* static member */
-    @scala.inline
-    def fromLngLat(lnglat: js.Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLngLat")(lnglat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
+    inline def fromLngLat(lnglat: js.Any): typings.kendoUi.kendo.dataviz.map.Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLngLat")(lnglat.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.map.Location]
   }
   
   @JSGlobal("kendo.dataviz.map.Marker")

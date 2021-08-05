@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeteringMode extends StObject
 object MeteringMode {
   
-  @scala.inline
-  def continuous: typings.w3cImageCapture.w3cImageCaptureStrings.continuous = "continuous".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.continuous]
+  inline def continuous: typings.w3cImageCapture.w3cImageCaptureStrings.continuous = "continuous".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.continuous]
   
-  @scala.inline
-  def manual: typings.w3cImageCapture.w3cImageCaptureStrings.manual = "manual".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.manual]
+  inline def manual: typings.w3cImageCapture.w3cImageCaptureStrings.manual = "manual".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.manual]
   
-  @scala.inline
-  def none: typings.w3cImageCapture.w3cImageCaptureStrings.none = "none".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.none]
+  inline def none: typings.w3cImageCapture.w3cImageCaptureStrings.none = "none".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.none]
   
-  @scala.inline
-  def `single-shot`: typings.w3cImageCapture.w3cImageCaptureStrings.`single-shot` = "single-shot".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.`single-shot`]
+  inline def `single-shot`: typings.w3cImageCapture.w3cImageCaptureStrings.`single-shot` = "single-shot".asInstanceOf[typings.w3cImageCapture.w3cImageCaptureStrings.`single-shot`]
 }

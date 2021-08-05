@@ -14,22 +14,17 @@ trait GetListenerDefaultActionFixedResponse extends StObject {
 }
 object GetListenerDefaultActionFixedResponse {
   
-  @scala.inline
-  def apply(contentType: String, messageBody: String, statusCode: String): GetListenerDefaultActionFixedResponse = {
+  inline def apply(contentType: String, messageBody: String, statusCode: String): GetListenerDefaultActionFixedResponse = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], messageBody = messageBody.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetListenerDefaultActionFixedResponse]
   }
   
-  @scala.inline
-  implicit class GetListenerDefaultActionFixedResponseMutableBuilder[Self <: GetListenerDefaultActionFixedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetListenerDefaultActionFixedResponse](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageBody(value: String): Self = StObject.set(x, "messageBody", value.asInstanceOf[js.Any])
+    inline def setMessageBody(value: String): Self = StObject.set(x, "messageBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

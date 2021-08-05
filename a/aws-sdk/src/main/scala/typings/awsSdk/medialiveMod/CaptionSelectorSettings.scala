@@ -22,55 +22,39 @@ trait CaptionSelectorSettings extends StObject {
 }
 object CaptionSelectorSettings {
   
-  @scala.inline
-  def apply(): CaptionSelectorSettings = {
+  inline def apply(): CaptionSelectorSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionSelectorSettings]
   }
   
-  @scala.inline
-  implicit class CaptionSelectorSettingsMutableBuilder[Self <: CaptionSelectorSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionSelectorSettings](x: Self) {
     
-    @scala.inline
-    def setAncillarySourceSettings(value: AncillarySourceSettings): Self = StObject.set(x, "AncillarySourceSettings", value.asInstanceOf[js.Any])
+    inline def setAncillarySourceSettings(value: AncillarySourceSettings): Self = StObject.set(x, "AncillarySourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncillarySourceSettingsUndefined: Self = StObject.set(x, "AncillarySourceSettings", js.undefined)
+    inline def setAncillarySourceSettingsUndefined: Self = StObject.set(x, "AncillarySourceSettings", js.undefined)
     
-    @scala.inline
-    def setAribSourceSettings(value: AribSourceSettings): Self = StObject.set(x, "AribSourceSettings", value.asInstanceOf[js.Any])
+    inline def setAribSourceSettings(value: AribSourceSettings): Self = StObject.set(x, "AribSourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAribSourceSettingsUndefined: Self = StObject.set(x, "AribSourceSettings", js.undefined)
+    inline def setAribSourceSettingsUndefined: Self = StObject.set(x, "AribSourceSettings", js.undefined)
     
-    @scala.inline
-    def setDvbSubSourceSettings(value: DvbSubSourceSettings): Self = StObject.set(x, "DvbSubSourceSettings", value.asInstanceOf[js.Any])
+    inline def setDvbSubSourceSettings(value: DvbSubSourceSettings): Self = StObject.set(x, "DvbSubSourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDvbSubSourceSettingsUndefined: Self = StObject.set(x, "DvbSubSourceSettings", js.undefined)
+    inline def setDvbSubSourceSettingsUndefined: Self = StObject.set(x, "DvbSubSourceSettings", js.undefined)
     
-    @scala.inline
-    def setEmbeddedSourceSettings(value: EmbeddedSourceSettings): Self = StObject.set(x, "EmbeddedSourceSettings", value.asInstanceOf[js.Any])
+    inline def setEmbeddedSourceSettings(value: EmbeddedSourceSettings): Self = StObject.set(x, "EmbeddedSourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedSourceSettingsUndefined: Self = StObject.set(x, "EmbeddedSourceSettings", js.undefined)
+    inline def setEmbeddedSourceSettingsUndefined: Self = StObject.set(x, "EmbeddedSourceSettings", js.undefined)
     
-    @scala.inline
-    def setScte20SourceSettings(value: Scte20SourceSettings): Self = StObject.set(x, "Scte20SourceSettings", value.asInstanceOf[js.Any])
+    inline def setScte20SourceSettings(value: Scte20SourceSettings): Self = StObject.set(x, "Scte20SourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte20SourceSettingsUndefined: Self = StObject.set(x, "Scte20SourceSettings", js.undefined)
+    inline def setScte20SourceSettingsUndefined: Self = StObject.set(x, "Scte20SourceSettings", js.undefined)
     
-    @scala.inline
-    def setScte27SourceSettings(value: Scte27SourceSettings): Self = StObject.set(x, "Scte27SourceSettings", value.asInstanceOf[js.Any])
+    inline def setScte27SourceSettings(value: Scte27SourceSettings): Self = StObject.set(x, "Scte27SourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte27SourceSettingsUndefined: Self = StObject.set(x, "Scte27SourceSettings", js.undefined)
+    inline def setScte27SourceSettingsUndefined: Self = StObject.set(x, "Scte27SourceSettings", js.undefined)
     
-    @scala.inline
-    def setTeletextSourceSettings(value: TeletextSourceSettings): Self = StObject.set(x, "TeletextSourceSettings", value.asInstanceOf[js.Any])
+    inline def setTeletextSourceSettings(value: TeletextSourceSettings): Self = StObject.set(x, "TeletextSourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeletextSourceSettingsUndefined: Self = StObject.set(x, "TeletextSourceSettings", js.undefined)
+    inline def setTeletextSourceSettingsUndefined: Self = StObject.set(x, "TeletextSourceSettings", js.undefined)
   }
 }

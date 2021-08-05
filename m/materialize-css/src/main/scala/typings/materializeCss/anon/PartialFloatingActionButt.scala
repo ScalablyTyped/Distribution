@@ -19,31 +19,23 @@ trait PartialFloatingActionButt extends StObject {
 }
 object PartialFloatingActionButt {
   
-  @scala.inline
-  def apply(): PartialFloatingActionButt = {
+  inline def apply(): PartialFloatingActionButt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialFloatingActionButt]
   }
   
-  @scala.inline
-  implicit class PartialFloatingActionButtMutableBuilder[Self <: PartialFloatingActionButt] (val x: Self) extends AnyVal {
+  extension [Self <: PartialFloatingActionButt](x: Self) {
     
-    @scala.inline
-    def setDirection(value: top | right | buttom | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: top | right | buttom | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setHoverEnabled(value: Boolean): Self = StObject.set(x, "hoverEnabled", value.asInstanceOf[js.Any])
+    inline def setHoverEnabled(value: Boolean): Self = StObject.set(x, "hoverEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverEnabledUndefined: Self = StObject.set(x, "hoverEnabled", js.undefined)
+    inline def setHoverEnabledUndefined: Self = StObject.set(x, "hoverEnabled", js.undefined)
     
-    @scala.inline
-    def setToolbarEnabled(value: Boolean): Self = StObject.set(x, "toolbarEnabled", value.asInstanceOf[js.Any])
+    inline def setToolbarEnabled(value: Boolean): Self = StObject.set(x, "toolbarEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarEnabledUndefined: Self = StObject.set(x, "toolbarEnabled", js.undefined)
+    inline def setToolbarEnabledUndefined: Self = StObject.set(x, "toolbarEnabled", js.undefined)
   }
 }

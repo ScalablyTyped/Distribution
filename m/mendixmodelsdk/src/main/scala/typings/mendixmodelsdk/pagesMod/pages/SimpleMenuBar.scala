@@ -45,8 +45,7 @@ object SimpleMenuBar {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def create(model: IModel): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -57,8 +56,7 @@ object SimpleMenuBar {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInBuildingBlockUnderWidget(container: BuildingBlock): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -69,8 +67,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -81,8 +78,7 @@ object SimpleMenuBar {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInDataViewUnderFooterWidget(container: DataView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -93,8 +89,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidgets(container: DataView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInDataViewUnderFooterWidgets(container: DataView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -105,8 +100,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInDataViewUnderWidget(container: DataView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -117,8 +111,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidgets(container: DataView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInDataViewUnderWidgets(container: DataView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -129,8 +122,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInDivContainerUnderWidget(container: DivContainer): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -141,8 +133,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidgets(container: DivContainer): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInDivContainerUnderWidgets(container: DivContainer): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -153,8 +144,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -165,8 +155,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidgets(container: GroupBox): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInGroupBoxUnderWidgets(container: GroupBox): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -177,8 +166,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInHeaderUnderLeftWidget(container: Header): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -189,8 +177,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidgets(container: Header): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInHeaderUnderLeftWidgets(container: Header): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -201,8 +188,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInHeaderUnderRightWidget(container: Header): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -213,8 +199,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidgets(container: Header): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInHeaderUnderRightWidgets(container: Header): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -225,8 +210,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -237,8 +221,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -249,8 +232,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -261,8 +243,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -273,8 +254,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInLayoutUnderWidget(container: Layout): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -285,8 +265,7 @@ object SimpleMenuBar {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidgets(container: Layout): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInLayoutUnderWidgets(container: Layout): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -297,8 +276,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -309,8 +287,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -321,8 +298,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInListViewUnderWidget(container: ListView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -333,8 +309,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidgets(container: ListView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInListViewUnderWidgets(container: ListView): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -345,8 +320,7 @@ object SimpleMenuBar {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -357,8 +331,7 @@ object SimpleMenuBar {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -369,8 +342,7 @@ object SimpleMenuBar {
     *  8.5.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -381,8 +353,7 @@ object SimpleMenuBar {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -393,8 +364,7 @@ object SimpleMenuBar {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -405,8 +375,7 @@ object SimpleMenuBar {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInNativeLayoutUnderWidgets(container: NativeLayout): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -417,8 +386,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -429,8 +397,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -441,8 +408,7 @@ object SimpleMenuBar {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -453,8 +419,7 @@ object SimpleMenuBar {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -465,8 +430,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -477,8 +441,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -489,8 +452,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInSnippetUnderWidget(container: Snippet): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -501,8 +463,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidgets(container: Snippet): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInSnippetUnderWidgets(container: Snippet): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -513,8 +474,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -525,8 +485,7 @@ object SimpleMenuBar {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -537,8 +496,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -549,8 +507,7 @@ object SimpleMenuBar {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -561,8 +518,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInTabPageUnderWidget(container: TabPage): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -573,8 +529,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidgets(container: TabPage): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInTabPageUnderWidgets(container: TabPage): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -585,8 +540,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInTableCellUnderWidget(container: TableCell): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -597,8 +551,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidgets(container: TableCell): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInTableCellUnderWidgets(container: TableCell): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -609,8 +562,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -621,8 +573,7 @@ object SimpleMenuBar {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -633,8 +584,7 @@ object SimpleMenuBar {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -645,8 +595,7 @@ object SimpleMenuBar {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /**
     * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
@@ -657,20 +606,17 @@ object SimpleMenuBar {
     *  8.2.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderWidgets(container: WidgetValue): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
+  inline def createInWidgetValueUnderWidgets(container: WidgetValue): SimpleMenuBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SimpleMenuBar]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SimpleMenuBar.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SimpleMenuBar.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

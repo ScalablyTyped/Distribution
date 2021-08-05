@@ -45,9 +45,9 @@ object membershipCacheMod {
       */
     def isUserRegistered(userId: String): Boolean = js.native
     
-    var membershipMap: js.Any = js.native
+    /* private */ var membershipMap: js.Any = js.native
     
-    var registeredUsers: js.Any = js.native
+    /* private */ var registeredUsers: js.Any = js.native
     
     /**
       * Set the *cached* state of a user's membership for a room.
@@ -81,26 +81,20 @@ object membershipCacheMod {
   }
   object UserProfile {
     
-    @scala.inline
-    def apply(): UserProfile = {
+    inline def apply(): UserProfile = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserProfile]
     }
     
-    @scala.inline
-    implicit class UserProfileMutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
+    extension [Self <: UserProfile](x: Self) {
       
-      @scala.inline
-      def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+      inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
+      inline def setAvatar_urlUndefined: Self = StObject.set(x, "avatar_url", js.undefined)
       
-      @scala.inline
-      def setDisplayname(value: String): Self = StObject.set(x, "displayname", value.asInstanceOf[js.Any])
+      inline def setDisplayname(value: String): Self = StObject.set(x, "displayname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplaynameUndefined: Self = StObject.set(x, "displayname", js.undefined)
+      inline def setDisplaynameUndefined: Self = StObject.set(x, "displayname", js.undefined)
     }
   }
   

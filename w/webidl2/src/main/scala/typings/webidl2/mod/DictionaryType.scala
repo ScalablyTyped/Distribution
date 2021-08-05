@@ -24,8 +24,7 @@ trait DictionaryType
 }
 object DictionaryType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     members: js.Array[DictionaryMemberType],
     name: String,
@@ -37,25 +36,18 @@ object DictionaryType {
     __obj.asInstanceOf[DictionaryType]
   }
   
-  @scala.inline
-  implicit class DictionaryTypeMutableBuilder[Self <: DictionaryType] (val x: Self) extends AnyVal {
+  extension [Self <: DictionaryType](x: Self) {
     
-    @scala.inline
-    def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
+    inline def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritanceNull: Self = StObject.set(x, "inheritance", null)
+    inline def setInheritanceNull: Self = StObject.set(x, "inheritance", null)
     
-    @scala.inline
-    def setMembers(value: js.Array[DictionaryMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[DictionaryMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: DictionaryMemberType*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: DictionaryMemberType*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: dictionary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: dictionary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

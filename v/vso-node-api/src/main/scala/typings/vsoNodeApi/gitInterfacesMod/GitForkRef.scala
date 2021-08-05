@@ -16,8 +16,7 @@ trait GitForkRef
 }
 object GitForkRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     isLocked: Boolean,
     isLockedBy: IdentityRef,
@@ -32,10 +31,8 @@ object GitForkRef {
     __obj.asInstanceOf[GitForkRef]
   }
   
-  @scala.inline
-  implicit class GitForkRefMutableBuilder[Self <: GitForkRef] (val x: Self) extends AnyVal {
+  extension [Self <: GitForkRef](x: Self) {
     
-    @scala.inline
-    def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

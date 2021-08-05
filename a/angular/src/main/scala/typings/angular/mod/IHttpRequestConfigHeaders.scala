@@ -24,43 +24,31 @@ trait IHttpRequestConfigHeaders
 }
 object IHttpRequestConfigHeaders {
   
-  @scala.inline
-  def apply(): IHttpRequestConfigHeaders = {
+  inline def apply(): IHttpRequestConfigHeaders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHttpRequestConfigHeaders]
   }
   
-  @scala.inline
-  implicit class IHttpRequestConfigHeadersMutableBuilder[Self <: IHttpRequestConfigHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: IHttpRequestConfigHeaders](x: Self) {
     
-    @scala.inline
-    def setCommon(value: js.Any): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: js.Any): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+    inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
-    @scala.inline
-    def setGet(value: js.Any): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: js.Any): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setPatch(value: js.Any): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: js.Any): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+    inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     
-    @scala.inline
-    def setPost(value: js.Any): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: js.Any): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    @scala.inline
-    def setPut(value: js.Any): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: js.Any): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
+    inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
   }
 }

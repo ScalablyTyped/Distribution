@@ -36,31 +36,23 @@ trait INxDataPage extends StObject {
 }
 object INxDataPage {
   
-  @scala.inline
-  def apply(qArea: IRect, qIsReduced: Boolean, qMatrix: js.Array[INxCellRows], qTails: js.Array[INxGroupTail]): INxDataPage = {
+  inline def apply(qArea: IRect, qIsReduced: Boolean, qMatrix: js.Array[INxCellRows], qTails: js.Array[INxGroupTail]): INxDataPage = {
     val __obj = js.Dynamic.literal(qArea = qArea.asInstanceOf[js.Any], qIsReduced = qIsReduced.asInstanceOf[js.Any], qMatrix = qMatrix.asInstanceOf[js.Any], qTails = qTails.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxDataPage]
   }
   
-  @scala.inline
-  implicit class INxDataPageMutableBuilder[Self <: INxDataPage] (val x: Self) extends AnyVal {
+  extension [Self <: INxDataPage](x: Self) {
     
-    @scala.inline
-    def setQArea(value: IRect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
+    inline def setQArea(value: IRect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsReduced(value: Boolean): Self = StObject.set(x, "qIsReduced", value.asInstanceOf[js.Any])
+    inline def setQIsReduced(value: Boolean): Self = StObject.set(x, "qIsReduced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMatrix(value: js.Array[INxCellRows]): Self = StObject.set(x, "qMatrix", value.asInstanceOf[js.Any])
+    inline def setQMatrix(value: js.Array[INxCellRows]): Self = StObject.set(x, "qMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMatrixVarargs(value: INxCellRows*): Self = StObject.set(x, "qMatrix", js.Array(value :_*))
+    inline def setQMatrixVarargs(value: INxCellRows*): Self = StObject.set(x, "qMatrix", js.Array(value :_*))
     
-    @scala.inline
-    def setQTails(value: js.Array[INxGroupTail]): Self = StObject.set(x, "qTails", value.asInstanceOf[js.Any])
+    inline def setQTails(value: js.Array[INxGroupTail]): Self = StObject.set(x, "qTails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTailsVarargs(value: INxGroupTail*): Self = StObject.set(x, "qTails", js.Array(value :_*))
+    inline def setQTailsVarargs(value: INxGroupTail*): Self = StObject.set(x, "qTails", js.Array(value :_*))
   }
 }

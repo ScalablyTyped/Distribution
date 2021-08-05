@@ -24,19 +24,15 @@ trait IgValidatorField
 }
 object IgValidatorField {
   
-  @scala.inline
-  def apply(): IgValidatorField = {
+  inline def apply(): IgValidatorField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgValidatorField]
   }
   
-  @scala.inline
-  implicit class IgValidatorFieldMutableBuilder[Self <: IgValidatorField] (val x: Self) extends AnyVal {
+  extension [Self <: IgValidatorField](x: Self) {
     
-    @scala.inline
-    def setSelector(value: String | js.Object): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String | js.Object): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

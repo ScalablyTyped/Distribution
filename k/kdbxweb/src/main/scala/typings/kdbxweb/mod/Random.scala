@@ -11,6 +11,5 @@ object Random {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBytes(len: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(len.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def getBytes(len: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(len.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
 }

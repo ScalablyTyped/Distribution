@@ -12,16 +12,13 @@ trait AsyncRefOperationCommitLevelEventNotification
 }
 object AsyncRefOperationCommitLevelEventNotification {
   
-  @scala.inline
-  def apply(commitId: String, operationId: Double): AsyncRefOperationCommitLevelEventNotification = {
+  inline def apply(commitId: String, operationId: Double): AsyncRefOperationCommitLevelEventNotification = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], operationId = operationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncRefOperationCommitLevelEventNotification]
   }
   
-  @scala.inline
-  implicit class AsyncRefOperationCommitLevelEventNotificationMutableBuilder[Self <: AsyncRefOperationCommitLevelEventNotification] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncRefOperationCommitLevelEventNotification](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
   }
 }

@@ -15,14 +15,10 @@ object ElementBuffer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(data: js.Array[Double]): typings.wonderJs.elementBufferMod.ElementBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.elementBufferMod.ElementBuffer]
-  @scala.inline
-  def create(data: js.Array[Double], `type`: Unit, usage: typings.wonderJs.ebufferusageMod.EBufferUsage): typings.wonderJs.elementBufferMod.ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.elementBufferMod.ElementBuffer]
-  @scala.inline
-  def create(data: js.Array[Double], `type`: typings.wonderJs.ebuffertypeMod.EBufferType): typings.wonderJs.elementBufferMod.ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.elementBufferMod.ElementBuffer]
-  @scala.inline
-  def create(
+  inline def create(data: js.Array[Double]): typings.wonderJs.elementBufferMod.ElementBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.elementBufferMod.ElementBuffer]
+  inline def create(data: js.Array[Double], `type`: Unit, usage: typings.wonderJs.ebufferusageMod.EBufferUsage): typings.wonderJs.elementBufferMod.ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.elementBufferMod.ElementBuffer]
+  inline def create(data: js.Array[Double], `type`: typings.wonderJs.ebuffertypeMod.EBufferType): typings.wonderJs.elementBufferMod.ElementBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.elementBufferMod.ElementBuffer]
+  inline def create(
     data: js.Array[Double],
     `type`: typings.wonderJs.ebuffertypeMod.EBufferType,
     usage: typings.wonderJs.ebufferusageMod.EBufferUsage

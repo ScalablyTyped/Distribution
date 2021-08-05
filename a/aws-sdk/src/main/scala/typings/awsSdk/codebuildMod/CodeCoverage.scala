@@ -58,73 +58,51 @@ trait CodeCoverage extends StObject {
 }
 object CodeCoverage {
   
-  @scala.inline
-  def apply(): CodeCoverage = {
+  inline def apply(): CodeCoverage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeCoverage]
   }
   
-  @scala.inline
-  implicit class CodeCoverageMutableBuilder[Self <: CodeCoverage] (val x: Self) extends AnyVal {
+  extension [Self <: CodeCoverage](x: Self) {
     
-    @scala.inline
-    def setBranchCoveragePercentage(value: Percentage): Self = StObject.set(x, "branchCoveragePercentage", value.asInstanceOf[js.Any])
+    inline def setBranchCoveragePercentage(value: Percentage): Self = StObject.set(x, "branchCoveragePercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchCoveragePercentageUndefined: Self = StObject.set(x, "branchCoveragePercentage", js.undefined)
+    inline def setBranchCoveragePercentageUndefined: Self = StObject.set(x, "branchCoveragePercentage", js.undefined)
     
-    @scala.inline
-    def setBranchesCovered(value: NonNegativeInt): Self = StObject.set(x, "branchesCovered", value.asInstanceOf[js.Any])
+    inline def setBranchesCovered(value: NonNegativeInt): Self = StObject.set(x, "branchesCovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchesCoveredUndefined: Self = StObject.set(x, "branchesCovered", js.undefined)
+    inline def setBranchesCoveredUndefined: Self = StObject.set(x, "branchesCovered", js.undefined)
     
-    @scala.inline
-    def setBranchesMissed(value: NonNegativeInt): Self = StObject.set(x, "branchesMissed", value.asInstanceOf[js.Any])
+    inline def setBranchesMissed(value: NonNegativeInt): Self = StObject.set(x, "branchesMissed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchesMissedUndefined: Self = StObject.set(x, "branchesMissed", js.undefined)
+    inline def setBranchesMissedUndefined: Self = StObject.set(x, "branchesMissed", js.undefined)
     
-    @scala.inline
-    def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+    inline def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
+    inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: NonEmptyString): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: NonEmptyString): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLineCoveragePercentage(value: Percentage): Self = StObject.set(x, "lineCoveragePercentage", value.asInstanceOf[js.Any])
+    inline def setLineCoveragePercentage(value: Percentage): Self = StObject.set(x, "lineCoveragePercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCoveragePercentageUndefined: Self = StObject.set(x, "lineCoveragePercentage", js.undefined)
+    inline def setLineCoveragePercentageUndefined: Self = StObject.set(x, "lineCoveragePercentage", js.undefined)
     
-    @scala.inline
-    def setLinesCovered(value: NonNegativeInt): Self = StObject.set(x, "linesCovered", value.asInstanceOf[js.Any])
+    inline def setLinesCovered(value: NonNegativeInt): Self = StObject.set(x, "linesCovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesCoveredUndefined: Self = StObject.set(x, "linesCovered", js.undefined)
+    inline def setLinesCoveredUndefined: Self = StObject.set(x, "linesCovered", js.undefined)
     
-    @scala.inline
-    def setLinesMissed(value: NonNegativeInt): Self = StObject.set(x, "linesMissed", value.asInstanceOf[js.Any])
+    inline def setLinesMissed(value: NonNegativeInt): Self = StObject.set(x, "linesMissed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesMissedUndefined: Self = StObject.set(x, "linesMissed", js.undefined)
+    inline def setLinesMissedUndefined: Self = StObject.set(x, "linesMissed", js.undefined)
     
-    @scala.inline
-    def setReportARN(value: NonEmptyString): Self = StObject.set(x, "reportARN", value.asInstanceOf[js.Any])
+    inline def setReportARN(value: NonEmptyString): Self = StObject.set(x, "reportARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportARNUndefined: Self = StObject.set(x, "reportARN", js.undefined)
+    inline def setReportARNUndefined: Self = StObject.set(x, "reportARN", js.undefined)
   }
 }

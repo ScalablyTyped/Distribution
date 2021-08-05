@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MIME_TYPE extends StObject
 object MIME_TYPE {
   
-  @scala.inline
-  def imageSlashbmp: typings.escpos.escposStrings.imageSlashbmp = "image/bmp".asInstanceOf[typings.escpos.escposStrings.imageSlashbmp]
+  inline def imageSlashbmp: typings.escpos.escposStrings.imageSlashbmp = "image/bmp".asInstanceOf[typings.escpos.escposStrings.imageSlashbmp]
   
-  @scala.inline
-  def imageSlashgif: typings.escpos.escposStrings.imageSlashgif = "image/gif".asInstanceOf[typings.escpos.escposStrings.imageSlashgif]
+  inline def imageSlashgif: typings.escpos.escposStrings.imageSlashgif = "image/gif".asInstanceOf[typings.escpos.escposStrings.imageSlashgif]
   
-  @scala.inline
-  def imageSlashjpeg: typings.escpos.escposStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typings.escpos.escposStrings.imageSlashjpeg]
+  inline def imageSlashjpeg: typings.escpos.escposStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typings.escpos.escposStrings.imageSlashjpeg]
   
-  @scala.inline
-  def imageSlashjpg: typings.escpos.escposStrings.imageSlashjpg = "image/jpg".asInstanceOf[typings.escpos.escposStrings.imageSlashjpg]
+  inline def imageSlashjpg: typings.escpos.escposStrings.imageSlashjpg = "image/jpg".asInstanceOf[typings.escpos.escposStrings.imageSlashjpg]
   
-  @scala.inline
-  def imageSlashpng: typings.escpos.escposStrings.imageSlashpng = "image/png".asInstanceOf[typings.escpos.escposStrings.imageSlashpng]
+  inline def imageSlashpng: typings.escpos.escposStrings.imageSlashpng = "image/png".asInstanceOf[typings.escpos.escposStrings.imageSlashpng]
 }

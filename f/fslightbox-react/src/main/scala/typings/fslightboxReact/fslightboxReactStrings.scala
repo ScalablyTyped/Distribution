@@ -11,20 +11,17 @@ object fslightboxReactStrings {
   sealed trait image
     extends StObject
        with _SourceType
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
   sealed trait video
     extends StObject
        with _SourceType
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
+  inline def video: video = "video".asInstanceOf[video]
   
   @js.native
   sealed trait youtube
     extends StObject
        with _SourceType
-  @scala.inline
-  def youtube: youtube = "youtube".asInstanceOf[youtube]
+  inline def youtube: youtube = "youtube".asInstanceOf[youtube]
 }

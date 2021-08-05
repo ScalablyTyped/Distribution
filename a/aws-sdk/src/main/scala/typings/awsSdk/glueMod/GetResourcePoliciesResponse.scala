@@ -18,28 +18,21 @@ trait GetResourcePoliciesResponse extends StObject {
 }
 object GetResourcePoliciesResponse {
   
-  @scala.inline
-  def apply(): GetResourcePoliciesResponse = {
+  inline def apply(): GetResourcePoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourcePoliciesResponse]
   }
   
-  @scala.inline
-  implicit class GetResourcePoliciesResponseMutableBuilder[Self <: GetResourcePoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourcePoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setGetResourcePoliciesResponseList(value: GetResourcePoliciesResponseList): Self = StObject.set(x, "GetResourcePoliciesResponseList", value.asInstanceOf[js.Any])
+    inline def setGetResourcePoliciesResponseList(value: GetResourcePoliciesResponseList): Self = StObject.set(x, "GetResourcePoliciesResponseList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetResourcePoliciesResponseListUndefined: Self = StObject.set(x, "GetResourcePoliciesResponseList", js.undefined)
+    inline def setGetResourcePoliciesResponseListUndefined: Self = StObject.set(x, "GetResourcePoliciesResponseList", js.undefined)
     
-    @scala.inline
-    def setGetResourcePoliciesResponseListVarargs(value: GluePolicy*): Self = StObject.set(x, "GetResourcePoliciesResponseList", js.Array(value :_*))
+    inline def setGetResourcePoliciesResponseListVarargs(value: GluePolicy*): Self = StObject.set(x, "GetResourcePoliciesResponseList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

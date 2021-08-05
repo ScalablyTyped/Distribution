@@ -234,7 +234,7 @@ trait PivotTable extends StObject {
   
   var ErrorString: String = js.native
   
-  @JSName("Excel.PivotTable_typekey")
+  /* private */ @JSName("Excel.PivotTable_typekey")
   var ExcelDotPivotTable_typekey: PivotTable = js.native
   
   var FieldListSortAscending: Boolean = js.native

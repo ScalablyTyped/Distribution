@@ -124,17 +124,14 @@ object mod {
   }
   object UICollection {
     
-    @scala.inline
-    def apply(destroy: () => Unit): UICollection = {
+    inline def apply(destroy: () => Unit): UICollection = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
       __obj.asInstanceOf[UICollection]
     }
     
-    @scala.inline
-    implicit class UICollectionMutableBuilder[Self <: UICollection] (val x: Self) extends AnyVal {
+    extension [Self <: UICollection](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
   }
   
@@ -214,8 +211,7 @@ object mod {
   }
   object UICore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addValid: (String, js.Array[js.Any]) => Unit,
       callAfter: (String, js.Function0[Unit]) => Unit,
       callBefore: (String, js.Function0[Unit]) => Unit,
@@ -231,56 +227,39 @@ object mod {
       __obj.asInstanceOf[UICore]
     }
     
-    @scala.inline
-    implicit class UICoreMutableBuilder[Self <: UICore] (val x: Self) extends AnyVal {
+    extension [Self <: UICore](x: Self) {
       
-      @scala.inline
-      def setAddValid(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "addValid", js.Any.fromFunction2(value))
+      inline def setAddValid(value: (String, js.Array[js.Any]) => Unit): Self = StObject.set(x, "addValid", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallAfter(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "callAfter", js.Any.fromFunction2(value))
+      inline def setCallAfter(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "callAfter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallBefore(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "callBefore", js.Any.fromFunction2(value))
+      inline def setCallBefore(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "callBefore", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallDelay(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "callDelay", js.Any.fromFunction2(value))
+      inline def setCallDelay(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "callDelay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmit(value: (String, js.Function0[Unit]) => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, js.Function0[Unit]) => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setOff(value: String => Unit): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
+      inline def setOff(value: String => Unit): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSetOption(value: (String, js.Any) => Unit): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
+      inline def setSetOption(value: (String, js.Any) => Unit): Self = StObject.set(x, "setOption", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTpl(value: (String, String) => Unit): Self = StObject.set(x, "setTpl", js.Any.fromFunction2(value))
+      inline def setSetTpl(value: (String, String) => Unit): Self = StObject.set(x, "setTpl", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+      inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+      inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     }
   }
   
@@ -295,8 +274,7 @@ object mod {
   }
   object UIEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addValid: (String, js.Array[js.Any]) => Unit,
       callAfter: (String, js.Function0[Unit]) => Unit,
       callBefore: (String, js.Function0[Unit]) => Unit,
@@ -313,11 +291,9 @@ object mod {
       __obj.asInstanceOf[UIEvent]
     }
     
-    @scala.inline
-    implicit class UIEventMutableBuilder[Self <: UIEvent] (val x: Self) extends AnyVal {
+    extension [Self <: UIEvent](x: Self) {
       
-      @scala.inline
-      def setFind(value: js.Any => JQuery[HTMLElement]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+      inline def setFind(value: js.Any => JQuery[HTMLElement]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     }
   }
   
@@ -546,20 +522,16 @@ object mod {
   }
   object UtilBase64 {
     
-    @scala.inline
-    def apply(decode: String => String, encode: String => String): UtilBase64 = {
+    inline def apply(decode: String => String, encode: String => String): UtilBase64 = {
       val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
       __obj.asInstanceOf[UtilBase64]
     }
     
-    @scala.inline
-    implicit class UtilBase64MutableBuilder[Self <: UtilBase64] (val x: Self) extends AnyVal {
+    extension [Self <: UtilBase64](x: Self) {
       
-      @scala.inline
-      def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }
   }
   
@@ -660,8 +632,7 @@ object mod {
   }
   object UtilColor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       HSVtoRGB: (Double, Double, Double) => js.Any,
       RGBtoHSV: (Double, Double, Double) => js.Any,
       darken: (String, Double) => String,
@@ -675,32 +646,23 @@ object mod {
       __obj.asInstanceOf[UtilColor]
     }
     
-    @scala.inline
-    implicit class UtilColorMutableBuilder[Self <: UtilColor] (val x: Self) extends AnyVal {
+    extension [Self <: UtilColor](x: Self) {
       
-      @scala.inline
-      def setDarken(value: (String, Double) => String): Self = StObject.set(x, "darken", js.Any.fromFunction2(value))
+      inline def setDarken(value: (String, Double) => String): Self = StObject.set(x, "darken", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormat(value: (js.Any, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (js.Any, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHSVtoRGB(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "HSVtoRGB", js.Any.fromFunction3(value))
+      inline def setHSVtoRGB(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "HSVtoRGB", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLighten(value: (String, Double) => String): Self = StObject.set(x, "lighten", js.Any.fromFunction2(value))
+      inline def setLighten(value: (String, Double) => String): Self = StObject.set(x, "lighten", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(value: (js.Array[String], Double) => js.Array[String]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (js.Array[String], Double) => js.Array[String]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRGBtoHSV(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "RGBtoHSV", js.Any.fromFunction3(value))
+      inline def setRGBtoHSV(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "RGBtoHSV", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRgb(value: String => js.Any): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
+      inline def setRgb(value: String => js.Any): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScale(value: () => ColorScale): Self = StObject.set(x, "scale", js.Any.fromFunction0(value))
+      inline def setScale(value: () => ColorScale): Self = StObject.set(x, "scale", js.Any.fromFunction0(value))
     }
   }
   
@@ -718,8 +680,7 @@ object mod {
   }
   object UtilKeyParser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changeIndex: (String, String, String) => String,
       getIndexList: String => Boolean,
       getNextIndex: String => String,
@@ -730,23 +691,17 @@ object mod {
       __obj.asInstanceOf[UtilKeyParser]
     }
     
-    @scala.inline
-    implicit class UtilKeyParserMutableBuilder[Self <: UtilKeyParser] (val x: Self) extends AnyVal {
+    extension [Self <: UtilKeyParser](x: Self) {
       
-      @scala.inline
-      def setChangeIndex(value: (String, String, String) => String): Self = StObject.set(x, "changeIndex", js.Any.fromFunction3(value))
+      inline def setChangeIndex(value: (String, String, String) => String): Self = StObject.set(x, "changeIndex", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetIndexList(value: String => Boolean): Self = StObject.set(x, "getIndexList", js.Any.fromFunction1(value))
+      inline def setGetIndexList(value: String => Boolean): Self = StObject.set(x, "getIndexList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNextIndex(value: String => String): Self = StObject.set(x, "getNextIndex", js.Any.fromFunction1(value))
+      inline def setGetNextIndex(value: String => String): Self = StObject.set(x, "getNextIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetParentIndex(value: String => String): Self = StObject.set(x, "getParentIndex", js.Any.fromFunction1(value))
+      inline def setGetParentIndex(value: String => String): Self = StObject.set(x, "getParentIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsIndexDepth(value: String => Boolean): Self = StObject.set(x, "isIndexDepth", js.Any.fromFunction1(value))
+      inline def setIsIndexDepth(value: String => Boolean): Self = StObject.set(x, "isIndexDepth", js.Any.fromFunction1(value))
     }
   }
   
@@ -816,8 +771,7 @@ object mod {
   }
   object UtilMath {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       angle: (Double, Double, Double, Double) => Double,
       degree: Double => Double,
       div: (Double, Double) => Double,
@@ -840,59 +794,41 @@ object mod {
       __obj.asInstanceOf[UtilMath]
     }
     
-    @scala.inline
-    implicit class UtilMathMutableBuilder[Self <: UtilMath] (val x: Self) extends AnyVal {
+    extension [Self <: UtilMath](x: Self) {
       
-      @scala.inline
-      def setAngle(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "angle", js.Any.fromFunction4(value))
+      inline def setAngle(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "angle", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setDegree(value: Double => Double): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
+      inline def setDegree(value: Double => Double): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDiv(value: (Double, Double) => Double): Self = StObject.set(x, "div", js.Any.fromFunction2(value))
+      inline def setDiv(value: (Double, Double) => Double): Self = StObject.set(x, "div", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInterpolateNumber(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "interpolateNumber", js.Any.fromFunction2(value))
+      inline def setInterpolateNumber(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "interpolateNumber", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInterpolateRound(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "interpolateRound", js.Any.fromFunction2(value))
+      inline def setInterpolateRound(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "interpolateRound", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInverseMatrix3d(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "inverseMatrix3d", js.Any.fromFunction1(value))
+      inline def setInverseMatrix3d(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "inverseMatrix3d", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatrix(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "matrix", js.Any.fromFunction2(value))
+      inline def setMatrix(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "matrix", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMatrix3d(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "matrix3d", js.Any.fromFunction2(value))
+      inline def setMatrix3d(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "matrix3d", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMinus(value: (Double, Double) => Double): Self = StObject.set(x, "minus", js.Any.fromFunction2(value))
+      inline def setMinus(value: (Double, Double) => Double): Self = StObject.set(x, "minus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMulti(value: (Double, Double) => Double): Self = StObject.set(x, "multi", js.Any.fromFunction2(value))
+      inline def setMulti(value: (Double, Double) => Double): Self = StObject.set(x, "multi", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNice(value: (Double, Double, Double, Boolean) => js.Any): Self = StObject.set(x, "nice", js.Any.fromFunction4(value))
+      inline def setNice(value: (Double, Double, Double, Boolean) => js.Any): Self = StObject.set(x, "nice", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPlus(value: (Double, Double) => Double): Self = StObject.set(x, "plus", js.Any.fromFunction2(value))
+      inline def setPlus(value: (Double, Double) => Double): Self = StObject.set(x, "plus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRadian(value: Double => Double): Self = StObject.set(x, "radian", js.Any.fromFunction1(value))
+      inline def setRadian(value: Double => Double): Self = StObject.set(x, "radian", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemain(value: (Double, Double) => Double): Self = StObject.set(x, "remain", js.Any.fromFunction2(value))
+      inline def setRemain(value: (Double, Double) => Double): Self = StObject.set(x, "remain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResize(value: (Double, Double, Double, Double) => js.Any): Self = StObject.set(x, "resize", js.Any.fromFunction4(value))
+      inline def setResize(value: (Double, Double, Double, Double) => js.Any): Self = StObject.set(x, "resize", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRotate(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "rotate", js.Any.fromFunction3(value))
+      inline def setRotate(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "rotate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRound(value: (Double, Double) => Double): Self = StObject.set(x, "round", js.Any.fromFunction2(value))
+      inline def setRound(value: (Double, Double) => Double): Self = StObject.set(x, "round", js.Any.fromFunction2(value))
     }
   }
   

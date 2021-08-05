@@ -18,25 +18,19 @@ trait FieldPatterns extends StObject {
 }
 object FieldPatterns {
   
-  @scala.inline
-  def apply(Quantity: integer): FieldPatterns = {
+  inline def apply(Quantity: integer): FieldPatterns = {
     val __obj = js.Dynamic.literal(Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldPatterns]
   }
   
-  @scala.inline
-  implicit class FieldPatternsMutableBuilder[Self <: FieldPatterns] (val x: Self) extends AnyVal {
+  extension [Self <: FieldPatterns](x: Self) {
     
-    @scala.inline
-    def setItems(value: FieldPatternList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: FieldPatternList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

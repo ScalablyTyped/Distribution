@@ -12,25 +12,19 @@ trait SchemaValueMapValEntry extends StObject {
 }
 object SchemaValueMapValEntry {
   
-  @scala.inline
-  def apply(): SchemaValueMapValEntry = {
+  inline def apply(): SchemaValueMapValEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaValueMapValEntry]
   }
   
-  @scala.inline
-  implicit class SchemaValueMapValEntryMutableBuilder[Self <: SchemaValueMapValEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaValueMapValEntry](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: SchemaMapValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SchemaMapValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

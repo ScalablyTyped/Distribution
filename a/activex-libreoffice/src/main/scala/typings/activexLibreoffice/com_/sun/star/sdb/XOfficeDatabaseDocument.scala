@@ -22,8 +22,7 @@ trait XOfficeDatabaseDocument
 }
 object XOfficeDatabaseDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataSource: XDataSource,
     DocumentSubStoragesNames: SafeArray[String],
     FormDocuments: XNameAccess,
@@ -40,10 +39,8 @@ object XOfficeDatabaseDocument {
     __obj.asInstanceOf[XOfficeDatabaseDocument]
   }
   
-  @scala.inline
-  implicit class XOfficeDatabaseDocumentMutableBuilder[Self <: XOfficeDatabaseDocument] (val x: Self) extends AnyVal {
+  extension [Self <: XOfficeDatabaseDocument](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: XDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: XDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
   }
 }

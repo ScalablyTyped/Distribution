@@ -26,23 +26,18 @@ object typesRestoreTableFromBackupOutputMod {
   }
   object RestoreTableFromBackupOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): RestoreTableFromBackupOutput = {
+    inline def apply($metadata: ResponseMetadata): RestoreTableFromBackupOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestoreTableFromBackupOutput]
     }
     
-    @scala.inline
-    implicit class RestoreTableFromBackupOutputMutableBuilder[Self <: RestoreTableFromBackupOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RestoreTableFromBackupOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescription(value: UnmarshalledTableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+      inline def setTableDescription(value: UnmarshalledTableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+      inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
     }
   }
 }

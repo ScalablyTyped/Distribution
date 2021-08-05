@@ -18,12 +18,10 @@ object SwitchInputTypes {
   @JSImport("react-foundation/enums", "SwitchInputTypes.CHECKBOX")
   @js.native
   def CHECKBOX: SwitchInputTypes = js.native
-  @scala.inline
-  def CHECKBOX_=(x: SwitchInputTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKBOX")(x.asInstanceOf[js.Any])
+  inline def CHECKBOX_=(x: SwitchInputTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKBOX")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "SwitchInputTypes.RADIO")
   @js.native
   def RADIO: SwitchInputTypes = js.native
-  @scala.inline
-  def RADIO_=(x: SwitchInputTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RADIO")(x.asInstanceOf[js.Any])
+  inline def RADIO_=(x: SwitchInputTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RADIO")(x.asInstanceOf[js.Any])
 }

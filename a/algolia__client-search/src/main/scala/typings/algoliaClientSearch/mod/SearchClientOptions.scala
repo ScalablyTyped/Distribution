@@ -25,25 +25,19 @@ trait SearchClientOptions extends StObject {
 }
 object SearchClientOptions {
   
-  @scala.inline
-  def apply(apiKey: String, appId: String): SearchClientOptions = {
+  inline def apply(apiKey: String, appId: String): SearchClientOptions = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchClientOptions]
   }
   
-  @scala.inline
-  implicit class SearchClientOptionsMutableBuilder[Self <: SearchClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchClientOptions](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthMode(value: AuthModeType): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
+    inline def setAuthMode(value: AuthModeType): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthModeUndefined: Self = StObject.set(x, "authMode", js.undefined)
+    inline def setAuthModeUndefined: Self = StObject.set(x, "authMode", js.undefined)
   }
 }

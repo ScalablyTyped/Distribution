@@ -26,8 +26,7 @@ trait XEncryptionProtectedSource
 }
 object XEncryptionProtectedSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -38,13 +37,10 @@ object XEncryptionProtectedSource {
     __obj.asInstanceOf[XEncryptionProtectedSource]
   }
   
-  @scala.inline
-  implicit class XEncryptionProtectedSourceMutableBuilder[Self <: XEncryptionProtectedSource] (val x: Self) extends AnyVal {
+  extension [Self <: XEncryptionProtectedSource](x: Self) {
     
-    @scala.inline
-    def setRemoveEncryption(value: () => Unit): Self = StObject.set(x, "removeEncryption", js.Any.fromFunction0(value))
+    inline def setRemoveEncryption(value: () => Unit): Self = StObject.set(x, "removeEncryption", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEncryptionPassword(value: String => Unit): Self = StObject.set(x, "setEncryptionPassword", js.Any.fromFunction1(value))
+    inline def setSetEncryptionPassword(value: String => Unit): Self = StObject.set(x, "setEncryptionPassword", js.Any.fromFunction1(value))
   }
 }

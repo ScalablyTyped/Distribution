@@ -13,19 +13,15 @@ trait UpdateInstanceProfileResult extends StObject {
 }
 object UpdateInstanceProfileResult {
   
-  @scala.inline
-  def apply(): UpdateInstanceProfileResult = {
+  inline def apply(): UpdateInstanceProfileResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateInstanceProfileResult]
   }
   
-  @scala.inline
-  implicit class UpdateInstanceProfileResultMutableBuilder[Self <: UpdateInstanceProfileResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInstanceProfileResult](x: Self) {
     
-    @scala.inline
-    def setInstanceProfile(value: InstanceProfile): Self = StObject.set(x, "instanceProfile", value.asInstanceOf[js.Any])
+    inline def setInstanceProfile(value: InstanceProfile): Self = StObject.set(x, "instanceProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceProfileUndefined: Self = StObject.set(x, "instanceProfile", js.undefined)
+    inline def setInstanceProfileUndefined: Self = StObject.set(x, "instanceProfile", js.undefined)
   }
 }

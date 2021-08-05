@@ -22,55 +22,39 @@ trait PartialFrame extends StObject {
 }
 object PartialFrame {
   
-  @scala.inline
-  def apply(): PartialFrame = {
+  inline def apply(): PartialFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialFrame]
   }
   
-  @scala.inline
-  implicit class PartialFrameMutableBuilder[Self <: PartialFrame] (val x: Self) extends AnyVal {
+  extension [Self <: PartialFrame](x: Self) {
     
-    @scala.inline
-    def setBaseframe(value: String): Self = StObject.set(x, "baseframe", value.asInstanceOf[js.Any])
+    inline def setBaseframe(value: String): Self = StObject.set(x, "baseframe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseframeUndefined: Self = StObject.set(x, "baseframe", js.undefined)
+    inline def setBaseframeUndefined: Self = StObject.set(x, "baseframe", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setLayout(value: PartialLayoutAngularaxis): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: PartialLayoutAngularaxis): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTraces(value: js.Array[Double]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
+    inline def setTraces(value: js.Array[Double]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
+    inline def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
     
-    @scala.inline
-    def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value :_*))
+    inline def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value :_*))
   }
 }

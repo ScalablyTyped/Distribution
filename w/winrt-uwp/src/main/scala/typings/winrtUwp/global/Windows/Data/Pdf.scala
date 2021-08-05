@@ -47,8 +47,7 @@ object Pdf {
       * @return The asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def loadFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument]]
+    inline def loadFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument]]
     /**
       * Outputs an asynchronous operation. When the operation completes, a PdfDocument object is returned, which represents a Portable Document Format (PDF) document. Use this method if the PDF document is password-protected.
       * @param file The file, which represents a PDF document.
@@ -56,8 +55,7 @@ object Pdf {
       * @return The asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def loadFromFileAsync(file: IStorageFile, password: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument]]
+    inline def loadFromFileAsync(file: IStorageFile, password: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromFileAsync")(file.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument]]
     
     /**
       * Creates a PdfDocument object, representing a Portable Document Format (PDF) document, from a stream of data that represents a PDF document in the file system.
@@ -65,8 +63,7 @@ object Pdf {
       * @return The asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def loadFromStreamAsync(inputStream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromStreamAsync")(inputStream.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument]]
+    inline def loadFromStreamAsync(inputStream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromStreamAsync")(inputStream.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument]]
     /**
       * Creates a PdfDocument object, representing a Portable Document Format (PDF) document, from a stream of data that represents a PDF document in the file system. Use this method if the PDF document is password-protected.
       * @param inputStream The stream of data, which represents a PDF document.
@@ -74,8 +71,7 @@ object Pdf {
       * @return The asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def loadFromStreamAsync(inputStream: IRandomAccessStream, password: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromStreamAsync")(inputStream.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument]]
+    inline def loadFromStreamAsync(inputStream: IRandomAccessStream, password: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFromStreamAsync")(inputStream.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Data.Pdf.PdfDocument]]
   }
   
   /** Represents a single page in a Portable Document Format (PDF) document. */

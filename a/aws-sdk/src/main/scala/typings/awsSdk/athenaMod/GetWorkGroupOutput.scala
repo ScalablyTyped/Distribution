@@ -13,19 +13,15 @@ trait GetWorkGroupOutput extends StObject {
 }
 object GetWorkGroupOutput {
   
-  @scala.inline
-  def apply(): GetWorkGroupOutput = {
+  inline def apply(): GetWorkGroupOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetWorkGroupOutput]
   }
   
-  @scala.inline
-  implicit class GetWorkGroupOutputMutableBuilder[Self <: GetWorkGroupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetWorkGroupOutput](x: Self) {
     
-    @scala.inline
-    def setWorkGroup(value: WorkGroup): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
+    inline def setWorkGroup(value: WorkGroup): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
+    inline def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
   }
 }

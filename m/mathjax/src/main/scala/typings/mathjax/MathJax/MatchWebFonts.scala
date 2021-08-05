@@ -17,31 +17,23 @@ trait MatchWebFonts extends StObject {
 }
 object MatchWebFonts {
   
-  @scala.inline
-  def apply(): MatchWebFonts = {
+  inline def apply(): MatchWebFonts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchWebFonts]
   }
   
-  @scala.inline
-  implicit class MatchWebFontsMutableBuilder[Self <: MatchWebFonts] (val x: Self) extends AnyVal {
+  extension [Self <: MatchWebFonts](x: Self) {
     
-    @scala.inline
-    def setFontCheckDelay(value: Double): Self = StObject.set(x, "fontCheckDelay", value.asInstanceOf[js.Any])
+    inline def setFontCheckDelay(value: Double): Self = StObject.set(x, "fontCheckDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontCheckDelayUndefined: Self = StObject.set(x, "fontCheckDelay", js.undefined)
+    inline def setFontCheckDelayUndefined: Self = StObject.set(x, "fontCheckDelay", js.undefined)
     
-    @scala.inline
-    def setFontCheckTimeout(value: Double): Self = StObject.set(x, "fontCheckTimeout", value.asInstanceOf[js.Any])
+    inline def setFontCheckTimeout(value: Double): Self = StObject.set(x, "fontCheckTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontCheckTimeoutUndefined: Self = StObject.set(x, "fontCheckTimeout", js.undefined)
+    inline def setFontCheckTimeoutUndefined: Self = StObject.set(x, "fontCheckTimeout", js.undefined)
     
-    @scala.inline
-    def setMatchFor(value: MatchFor): Self = StObject.set(x, "matchFor", value.asInstanceOf[js.Any])
+    inline def setMatchFor(value: MatchFor): Self = StObject.set(x, "matchFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchForUndefined: Self = StObject.set(x, "matchFor", js.undefined)
+    inline def setMatchForUndefined: Self = StObject.set(x, "matchFor", js.undefined)
   }
 }

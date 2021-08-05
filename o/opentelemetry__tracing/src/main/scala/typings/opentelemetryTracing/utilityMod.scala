@@ -12,6 +12,5 @@ object utilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeConfig(userConfig: TracerConfig): logLevelLogLevelsamplerAl = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeConfig")(userConfig.asInstanceOf[js.Any]).asInstanceOf[logLevelLogLevelsamplerAl]
+  inline def mergeConfig(userConfig: TracerConfig): logLevelLogLevelsamplerAl = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeConfig")(userConfig.asInstanceOf[js.Any]).asInstanceOf[logLevelLogLevelsamplerAl]
 }

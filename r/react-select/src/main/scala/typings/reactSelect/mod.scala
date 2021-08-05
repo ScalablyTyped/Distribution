@@ -61,8 +61,7 @@ object mod {
     @JSImport("react-select", "default.defaultProps")
     @js.native
     def defaultProps: DefaultProps[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: DefaultProps[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DefaultProps[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select", "NonceProvider")
@@ -87,32 +86,27 @@ object mod {
     @JSImport("react-select", "components.ClearIndicator")
     @js.native
     def ClearIndicator: NonNullable[IndicatorComponentType[js.Any] | Null] = js.native
-    @scala.inline
-    def ClearIndicator_=(x: NonNullable[IndicatorComponentType[js.Any] | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearIndicator")(x.asInstanceOf[js.Any])
+    inline def ClearIndicator_=(x: NonNullable[IndicatorComponentType[js.Any] | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearIndicator")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.Control")
     @js.native
     def Control: NonNullable[ComponentType[ControlProps[js.Any]]] = js.native
-    @scala.inline
-    def Control_=(x: NonNullable[ComponentType[ControlProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
+    inline def Control_=(x: NonNullable[ComponentType[ControlProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.CrossIcon")
     @js.native
     def CrossIcon: NonNullable[ComponentType[js.Any]] = js.native
-    @scala.inline
-    def CrossIcon_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CrossIcon")(x.asInstanceOf[js.Any])
+    inline def CrossIcon_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CrossIcon")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.DownChevron")
     @js.native
     def DownChevron: NonNullable[ComponentType[js.Any]] = js.native
-    @scala.inline
-    def DownChevron_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DownChevron")(x.asInstanceOf[js.Any])
+    inline def DownChevron_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DownChevron")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.DropdownIndicator")
     @js.native
     def DropdownIndicator: NonNullable[IndicatorComponentType[js.Any] | Null] = js.native
-    @scala.inline
-    def DropdownIndicator_=(x: NonNullable[IndicatorComponentType[js.Any] | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DropdownIndicator")(x.asInstanceOf[js.Any])
+    inline def DropdownIndicator_=(x: NonNullable[IndicatorComponentType[js.Any] | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DropdownIndicator")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.Group")
     @js.native
@@ -121,41 +115,34 @@ object mod {
     @JSImport("react-select", "components.GroupHeading")
     @js.native
     def GroupHeading: NonNullable[ComponentType[js.Any]] = js.native
-    @scala.inline
-    def GroupHeading_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupHeading")(x.asInstanceOf[js.Any])
+    inline def GroupHeading_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupHeading")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Group_=(x: NonNullable[ComponentType[GroupProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
+    inline def Group_=(x: NonNullable[ComponentType[GroupProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.IndicatorSeparator")
     @js.native
     def IndicatorSeparator: NonNullable[IndicatorComponentType[js.Any] | Null] = js.native
-    @scala.inline
-    def IndicatorSeparator_=(x: NonNullable[IndicatorComponentType[js.Any] | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndicatorSeparator")(x.asInstanceOf[js.Any])
+    inline def IndicatorSeparator_=(x: NonNullable[IndicatorComponentType[js.Any] | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndicatorSeparator")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.IndicatorsContainer")
     @js.native
     def IndicatorsContainer: NonNullable[ComponentType[IndicatorContainerProps[js.Any]]] = js.native
-    @scala.inline
-    def IndicatorsContainer_=(x: NonNullable[ComponentType[IndicatorContainerProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndicatorsContainer")(x.asInstanceOf[js.Any])
+    inline def IndicatorsContainer_=(x: NonNullable[ComponentType[IndicatorContainerProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndicatorsContainer")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.Input")
     @js.native
     def Input: NonNullable[ComponentType[InputProps]] = js.native
-    @scala.inline
-    def Input_=(x: NonNullable[ComponentType[InputProps]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
+    inline def Input_=(x: NonNullable[ComponentType[InputProps]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.LoadingIndicator")
     @js.native
     def LoadingIndicator: NonNullable[ComponentType[LoadingIconProps[js.Any]] | Null] = js.native
-    @scala.inline
-    def LoadingIndicator_=(x: NonNullable[ComponentType[LoadingIconProps[js.Any]] | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoadingIndicator")(x.asInstanceOf[js.Any])
+    inline def LoadingIndicator_=(x: NonNullable[ComponentType[LoadingIconProps[js.Any]] | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoadingIndicator")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.LoadingMessage")
     @js.native
     def LoadingMessage: NonNullable[ComponentType[NoticeProps[js.Any]]] = js.native
-    @scala.inline
-    def LoadingMessage_=(x: NonNullable[ComponentType[NoticeProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoadingMessage")(x.asInstanceOf[js.Any])
+    inline def LoadingMessage_=(x: NonNullable[ComponentType[NoticeProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoadingMessage")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.Menu")
     @js.native
@@ -164,17 +151,14 @@ object mod {
     @JSImport("react-select", "components.MenuList")
     @js.native
     def MenuList: NonNullable[ComponentType[MenuListComponentProps[js.Any]]] = js.native
-    @scala.inline
-    def MenuList_=(x: NonNullable[ComponentType[MenuListComponentProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MenuList")(x.asInstanceOf[js.Any])
+    inline def MenuList_=(x: NonNullable[ComponentType[MenuListComponentProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MenuList")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.MenuPortal")
     @js.native
     def MenuPortal: NonNullable[ComponentType[MenuPortalProps[js.Any]]] = js.native
-    @scala.inline
-    def MenuPortal_=(x: NonNullable[ComponentType[MenuPortalProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MenuPortal")(x.asInstanceOf[js.Any])
+    inline def MenuPortal_=(x: NonNullable[ComponentType[MenuPortalProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MenuPortal")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Menu_=(x: NonNullable[ComponentType[MenuProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Menu")(x.asInstanceOf[js.Any])
+    inline def Menu_=(x: NonNullable[ComponentType[MenuProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Menu")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.MultiValue")
     @js.native
@@ -183,70 +167,57 @@ object mod {
     @JSImport("react-select", "components.MultiValueContainer")
     @js.native
     def MultiValueContainer: NonNullable[ComponentType[js.Any]] = js.native
-    @scala.inline
-    def MultiValueContainer_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiValueContainer")(x.asInstanceOf[js.Any])
+    inline def MultiValueContainer_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiValueContainer")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.MultiValueLabel")
     @js.native
     def MultiValueLabel: NonNullable[ComponentType[js.Any]] = js.native
-    @scala.inline
-    def MultiValueLabel_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiValueLabel")(x.asInstanceOf[js.Any])
+    inline def MultiValueLabel_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiValueLabel")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.MultiValueRemove")
     @js.native
     def MultiValueRemove: NonNullable[ComponentType[js.Any]] = js.native
-    @scala.inline
-    def MultiValueRemove_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiValueRemove")(x.asInstanceOf[js.Any])
+    inline def MultiValueRemove_=(x: NonNullable[ComponentType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiValueRemove")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def MultiValue_=(x: NonNullable[ComponentType[MultiValueProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiValue")(x.asInstanceOf[js.Any])
+    inline def MultiValue_=(x: NonNullable[ComponentType[MultiValueProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MultiValue")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.NoOptionsMessage")
     @js.native
     def NoOptionsMessage: NonNullable[ComponentType[NoticeProps[js.Any]]] = js.native
-    @scala.inline
-    def NoOptionsMessage_=(x: NonNullable[ComponentType[NoticeProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoOptionsMessage")(x.asInstanceOf[js.Any])
+    inline def NoOptionsMessage_=(x: NonNullable[ComponentType[NoticeProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoOptionsMessage")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.Option")
     @js.native
     def Option: NonNullable[ComponentType[OptionProps[js.Any]]] = js.native
-    @scala.inline
-    def Option_=(x: NonNullable[ComponentType[OptionProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
+    inline def Option_=(x: NonNullable[ComponentType[OptionProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.Placeholder")
     @js.native
     def Placeholder: NonNullable[ComponentType[PlaceholderProps[js.Any]]] = js.native
-    @scala.inline
-    def Placeholder_=(x: NonNullable[ComponentType[PlaceholderProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Placeholder")(x.asInstanceOf[js.Any])
+    inline def Placeholder_=(x: NonNullable[ComponentType[PlaceholderProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Placeholder")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.SelectContainer")
     @js.native
     def SelectContainer: NonNullable[ComponentType[ContainerProps[js.Any]]] = js.native
-    @scala.inline
-    def SelectContainer_=(x: NonNullable[ComponentType[ContainerProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectContainer")(x.asInstanceOf[js.Any])
+    inline def SelectContainer_=(x: NonNullable[ComponentType[ContainerProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectContainer")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.SingleValue")
     @js.native
     def SingleValue: NonNullable[ComponentType[SingleValueProps[js.Any]]] = js.native
-    @scala.inline
-    def SingleValue_=(x: NonNullable[ComponentType[SingleValueProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleValue")(x.asInstanceOf[js.Any])
+    inline def SingleValue_=(x: NonNullable[ComponentType[SingleValueProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleValue")(x.asInstanceOf[js.Any])
     
     @JSImport("react-select", "components.ValueContainer")
     @js.native
     def ValueContainer: NonNullable[ComponentType[ValueContainerProps[js.Any]]] = js.native
-    @scala.inline
-    def ValueContainer_=(x: NonNullable[ComponentType[ValueContainerProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueContainer")(x.asInstanceOf[js.Any])
+    inline def ValueContainer_=(x: NonNullable[ComponentType[ValueContainerProps[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValueContainer")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createFilter(): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")().asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
-  @scala.inline
-  def createFilter(config: Config): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
+  inline def createFilter(): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")().asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
+  inline def createFilter(config: Config): js.Function2[/* option */ Option, /* rawInput */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* option */ Option, /* rawInput */ String, Boolean]]
   
   @JSImport("react-select", "defaultTheme")
   @js.native
   val defaultTheme: Theme = js.native
   
-  @scala.inline
-  def mergeStyles(source: StylesConfig, target: StylesConfig): StylesConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StylesConfig]
+  inline def mergeStyles(source: StylesConfig, target: StylesConfig): StylesConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StylesConfig]
 }

@@ -120,80 +120,56 @@ object mod {
   }
   object TabNavigatorItemProps {
     
-    @scala.inline
-    def apply(): TabNavigatorItemProps = {
+    inline def apply(): TabNavigatorItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabNavigatorItemProps]
     }
     
-    @scala.inline
-    implicit class TabNavigatorItemPropsMutableBuilder[Self <: TabNavigatorItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabNavigatorItemProps](x: Self) {
       
-      @scala.inline
-      def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
+      inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
+      inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
       
-      @scala.inline
-      def setBadgeText(value: String | Double): Self = StObject.set(x, "badgeText", value.asInstanceOf[js.Any])
+      inline def setBadgeText(value: String | Double): Self = StObject.set(x, "badgeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeTextUndefined: Self = StObject.set(x, "badgeText", js.undefined)
+      inline def setBadgeTextUndefined: Self = StObject.set(x, "badgeText", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setRenderBadge(value: () => Element): Self = StObject.set(x, "renderBadge", js.Any.fromFunction0(value))
+      inline def setRenderBadge(value: () => Element): Self = StObject.set(x, "renderBadge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderBadgeUndefined: Self = StObject.set(x, "renderBadge", js.undefined)
+      inline def setRenderBadgeUndefined: Self = StObject.set(x, "renderBadge", js.undefined)
       
-      @scala.inline
-      def setRenderIcon(value: () => Element): Self = StObject.set(x, "renderIcon", js.Any.fromFunction0(value))
+      inline def setRenderIcon(value: () => Element): Self = StObject.set(x, "renderIcon", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
+      inline def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
       
-      @scala.inline
-      def setRenderSelectedIcon(value: () => Element): Self = StObject.set(x, "renderSelectedIcon", js.Any.fromFunction0(value))
+      inline def setRenderSelectedIcon(value: () => Element): Self = StObject.set(x, "renderSelectedIcon", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderSelectedIconUndefined: Self = StObject.set(x, "renderSelectedIcon", js.undefined)
+      inline def setRenderSelectedIconUndefined: Self = StObject.set(x, "renderSelectedIcon", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedTitleStyle(value: TextStyle): Self = StObject.set(x, "selectedTitleStyle", value.asInstanceOf[js.Any])
+      inline def setSelectedTitleStyle(value: TextStyle): Self = StObject.set(x, "selectedTitleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedTitleStyleUndefined: Self = StObject.set(x, "selectedTitleStyle", js.undefined)
+      inline def setSelectedTitleStyleUndefined: Self = StObject.set(x, "selectedTitleStyle", js.undefined)
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setTabStyle(value: ViewStyle): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
+      inline def setTabStyle(value: ViewStyle): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
+      inline def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStyle(value: TextStyle): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+      inline def setTitleStyle(value: TextStyle): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+      inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -223,38 +199,28 @@ object mod {
   }
   object TabNavigatorProps {
     
-    @scala.inline
-    def apply(): TabNavigatorProps = {
+    inline def apply(): TabNavigatorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabNavigatorProps]
     }
     
-    @scala.inline
-    implicit class TabNavigatorPropsMutableBuilder[Self <: TabNavigatorProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabNavigatorProps](x: Self) {
       
-      @scala.inline
-      def setHidesTabTouch(value: Boolean): Self = StObject.set(x, "hidesTabTouch", value.asInstanceOf[js.Any])
+      inline def setHidesTabTouch(value: Boolean): Self = StObject.set(x, "hidesTabTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidesTabTouchUndefined: Self = StObject.set(x, "hidesTabTouch", js.undefined)
+      inline def setHidesTabTouchUndefined: Self = StObject.set(x, "hidesTabTouch", js.undefined)
       
-      @scala.inline
-      def setSceneStyle(value: ViewStyle): Self = StObject.set(x, "sceneStyle", value.asInstanceOf[js.Any])
+      inline def setSceneStyle(value: ViewStyle): Self = StObject.set(x, "sceneStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSceneStyleUndefined: Self = StObject.set(x, "sceneStyle", js.undefined)
+      inline def setSceneStyleUndefined: Self = StObject.set(x, "sceneStyle", js.undefined)
       
-      @scala.inline
-      def setTabBarShadowStyle(value: ViewStyle): Self = StObject.set(x, "tabBarShadowStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarShadowStyle(value: ViewStyle): Self = StObject.set(x, "tabBarShadowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarShadowStyleUndefined: Self = StObject.set(x, "tabBarShadowStyle", js.undefined)
+      inline def setTabBarShadowStyleUndefined: Self = StObject.set(x, "tabBarShadowStyle", js.undefined)
       
-      @scala.inline
-      def setTabBarStyle(value: ViewStyle): Self = StObject.set(x, "tabBarStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarStyle(value: ViewStyle): Self = StObject.set(x, "tabBarStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarStyleUndefined: Self = StObject.set(x, "tabBarStyle", js.undefined)
+      inline def setTabBarStyleUndefined: Self = StObject.set(x, "tabBarStyle", js.undefined)
     }
   }
 }

@@ -92,21 +92,16 @@ object clusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    inline def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudhsmv2/cluster.Cluster */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudhsmv2/cluster.Cluster */ Boolean]
   }
   
   trait ClusterArgs extends StObject {
@@ -133,35 +128,26 @@ object clusterMod {
   }
   object ClusterArgs {
     
-    @scala.inline
-    def apply(hsmType: Input[String], subnetIds: Input[js.Array[Input[String]]]): ClusterArgs = {
+    inline def apply(hsmType: Input[String], subnetIds: Input[js.Array[Input[String]]]): ClusterArgs = {
       val __obj = js.Dynamic.literal(hsmType = hsmType.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterArgs]
     }
     
-    @scala.inline
-    implicit class ClusterArgsMutableBuilder[Self <: ClusterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterArgs](x: Self) {
       
-      @scala.inline
-      def setHsmType(value: Input[String]): Self = StObject.set(x, "hsmType", value.asInstanceOf[js.Any])
+      inline def setHsmType(value: Input[String]): Self = StObject.set(x, "hsmType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceBackupIdentifier(value: Input[String]): Self = StObject.set(x, "sourceBackupIdentifier", value.asInstanceOf[js.Any])
+      inline def setSourceBackupIdentifier(value: Input[String]): Self = StObject.set(x, "sourceBackupIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceBackupIdentifierUndefined: Self = StObject.set(x, "sourceBackupIdentifier", js.undefined)
+      inline def setSourceBackupIdentifierUndefined: Self = StObject.set(x, "sourceBackupIdentifier", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -221,74 +207,52 @@ object clusterMod {
   }
   object ClusterState {
     
-    @scala.inline
-    def apply(): ClusterState = {
+    inline def apply(): ClusterState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterState]
     }
     
-    @scala.inline
-    implicit class ClusterStateMutableBuilder[Self <: ClusterState] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterState](x: Self) {
       
-      @scala.inline
-      def setClusterCertificates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudhsmv2.ClusterClusterCertificate]]]): Self = StObject.set(x, "clusterCertificates", value.asInstanceOf[js.Any])
+      inline def setClusterCertificates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudhsmv2.ClusterClusterCertificate]]]): Self = StObject.set(x, "clusterCertificates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterCertificatesUndefined: Self = StObject.set(x, "clusterCertificates", js.undefined)
+      inline def setClusterCertificatesUndefined: Self = StObject.set(x, "clusterCertificates", js.undefined)
       
-      @scala.inline
-      def setClusterCertificatesVarargs(value: Input[typings.pulumiAws.inputMod.cloudhsmv2.ClusterClusterCertificate]*): Self = StObject.set(x, "clusterCertificates", js.Array(value :_*))
+      inline def setClusterCertificatesVarargs(value: Input[typings.pulumiAws.inputMod.cloudhsmv2.ClusterClusterCertificate]*): Self = StObject.set(x, "clusterCertificates", js.Array(value :_*))
       
-      @scala.inline
-      def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+      inline def setClusterId(value: Input[String]): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+      inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
       
-      @scala.inline
-      def setClusterState(value: Input[String]): Self = StObject.set(x, "clusterState", value.asInstanceOf[js.Any])
+      inline def setClusterState(value: Input[String]): Self = StObject.set(x, "clusterState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterStateUndefined: Self = StObject.set(x, "clusterState", js.undefined)
+      inline def setClusterStateUndefined: Self = StObject.set(x, "clusterState", js.undefined)
       
-      @scala.inline
-      def setHsmType(value: Input[String]): Self = StObject.set(x, "hsmType", value.asInstanceOf[js.Any])
+      inline def setHsmType(value: Input[String]): Self = StObject.set(x, "hsmType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsmTypeUndefined: Self = StObject.set(x, "hsmType", js.undefined)
+      inline def setHsmTypeUndefined: Self = StObject.set(x, "hsmType", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupId(value: Input[String]): Self = StObject.set(x, "securityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdUndefined: Self = StObject.set(x, "securityGroupId", js.undefined)
+      inline def setSecurityGroupIdUndefined: Self = StObject.set(x, "securityGroupId", js.undefined)
       
-      @scala.inline
-      def setSourceBackupIdentifier(value: Input[String]): Self = StObject.set(x, "sourceBackupIdentifier", value.asInstanceOf[js.Any])
+      inline def setSourceBackupIdentifier(value: Input[String]): Self = StObject.set(x, "sourceBackupIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceBackupIdentifierUndefined: Self = StObject.set(x, "sourceBackupIdentifier", js.undefined)
+      inline def setSourceBackupIdentifierUndefined: Self = StObject.set(x, "sourceBackupIdentifier", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

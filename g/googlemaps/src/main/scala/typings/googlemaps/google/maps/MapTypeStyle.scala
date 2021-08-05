@@ -14,34 +14,25 @@ trait MapTypeStyle extends StObject {
 }
 object MapTypeStyle {
   
-  @scala.inline
-  def apply(): MapTypeStyle = {
+  inline def apply(): MapTypeStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapTypeStyle]
   }
   
-  @scala.inline
-  implicit class MapTypeStyleMutableBuilder[Self <: MapTypeStyle] (val x: Self) extends AnyVal {
+  extension [Self <: MapTypeStyle](x: Self) {
     
-    @scala.inline
-    def setElementType(value: MapTypeStyleElementType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: MapTypeStyleElementType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
+    inline def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
     
-    @scala.inline
-    def setFeatureType(value: MapTypeStyleFeatureType): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+    inline def setFeatureType(value: MapTypeStyleFeatureType): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
+    inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
     
-    @scala.inline
-    def setStylers(value: js.Array[MapTypeStyler]): Self = StObject.set(x, "stylers", value.asInstanceOf[js.Any])
+    inline def setStylers(value: js.Array[MapTypeStyler]): Self = StObject.set(x, "stylers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylersUndefined: Self = StObject.set(x, "stylers", js.undefined)
+    inline def setStylersUndefined: Self = StObject.set(x, "stylers", js.undefined)
     
-    @scala.inline
-    def setStylersVarargs(value: MapTypeStyler*): Self = StObject.set(x, "stylers", js.Array(value :_*))
+    inline def setStylersVarargs(value: MapTypeStyler*): Self = StObject.set(x, "stylers", js.Array(value :_*))
   }
 }

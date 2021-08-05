@@ -10,16 +10,13 @@ trait IEditSessionOperationParams extends StObject {
 }
 object IEditSessionOperationParams {
   
-  @scala.inline
-  def apply(ownerUri: String): IEditSessionOperationParams = {
+  inline def apply(ownerUri: String): IEditSessionOperationParams = {
     val __obj = js.Dynamic.literal(ownerUri = ownerUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditSessionOperationParams]
   }
   
-  @scala.inline
-  implicit class IEditSessionOperationParamsMutableBuilder[Self <: IEditSessionOperationParams] (val x: Self) extends AnyVal {
+  extension [Self <: IEditSessionOperationParams](x: Self) {
     
-    @scala.inline
-    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
+    inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
   }
 }

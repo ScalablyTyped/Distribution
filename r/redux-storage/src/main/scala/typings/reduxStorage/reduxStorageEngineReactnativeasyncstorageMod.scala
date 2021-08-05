@@ -11,8 +11,7 @@ object reduxStorageEngineReactnativeasyncstorageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(key: String): ReactNativeAsyncStorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any]).asInstanceOf[ReactNativeAsyncStorageEngine]
+  inline def default(key: String): ReactNativeAsyncStorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any]).asInstanceOf[ReactNativeAsyncStorageEngine]
   
   type ReactNativeAsyncStorageEngine = StorageEngine
 }

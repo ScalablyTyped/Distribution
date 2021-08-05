@@ -9,8 +9,7 @@ trait LightSensor
      with ILightSensor
 object LightSensor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentReading: () => LightSensorReading,
     minimumReportInterval: Double,
     onreadingchanged: js.Any,

@@ -15,8 +15,7 @@ trait Gateway
 }
 object Gateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -32,10 +31,8 @@ object Gateway {
     __obj.asInstanceOf[Gateway]
   }
   
-  @scala.inline
-  implicit class GatewayMutableBuilder[Self <: Gateway] (val x: Self) extends AnyVal {
+  extension [Self <: Gateway](x: Self) {
     
-    @scala.inline
-    def setGatewayDirection(value: GatewayDirection): Self = StObject.set(x, "gatewayDirection", value.asInstanceOf[js.Any])
+    inline def setGatewayDirection(value: GatewayDirection): Self = StObject.set(x, "gatewayDirection", value.asInstanceOf[js.Any])
   }
 }

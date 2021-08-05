@@ -198,8 +198,7 @@ object VoiceCommands {
       * @return An asynchronous handler called when the operation is complete.
       */
     /* static member */
-    @scala.inline
-    def installCommandDefinitionsFromStorageFileAsync(file: StorageFile): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("installCommandDefinitionsFromStorageFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def installCommandDefinitionsFromStorageFileAsync(file: StorageFile): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("installCommandDefinitionsFromStorageFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /** A dictionary that contains all installed command sets that have a Name attribute set in the Voice Command Definition (VCD) file. */
     /* static member */
@@ -209,8 +208,7 @@ object VoiceCommands {
         String, 
         typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition
       ] = js.native
-    @scala.inline
-    def installedCommandDefinitions_=(
+    inline def installedCommandDefinitions_=(
       x: IMapView[
           String, 
           typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition
@@ -266,8 +264,7 @@ object VoiceCommands {
       * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
       */
     /* static member */
-    @scala.inline
-    def createResponse(
+    inline def createResponse(
       message: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage,
       contentTiles: IIterable[typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile]
     ): typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(message.asInstanceOf[js.Any], contentTiles.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse]
@@ -277,8 +274,7 @@ object VoiceCommands {
       * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
       */
     /* static member */
-    @scala.inline
-    def createResponse(userMessage: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage): typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(userMessage.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse]
+    inline def createResponse(userMessage: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage): typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponse")(userMessage.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse]
     
     /**
       * Creates a VoiceCommandResponse object used in calls to RequestConfirmationAsync or RequestDisambiguationAsync .
@@ -287,8 +283,7 @@ object VoiceCommands {
       * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
       */
     /* static member */
-    @scala.inline
-    def createResponseForPrompt(
+    inline def createResponseForPrompt(
       message: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage,
       repeatMessage: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage
     ): typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("createResponseForPrompt")(message.asInstanceOf[js.Any], repeatMessage.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse]
@@ -300,8 +295,7 @@ object VoiceCommands {
       * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
       */
     /* static member */
-    @scala.inline
-    def createResponseForPrompt(
+    inline def createResponseForPrompt(
       message: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage,
       repeatMessage: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage,
       contentTiles: IIterable[typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile]
@@ -312,8 +306,7 @@ object VoiceCommands {
     @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse.maxSupportedVoiceCommandContentTiles")
     @js.native
     def maxSupportedVoiceCommandContentTiles: Double = js.native
-    @scala.inline
-    def maxSupportedVoiceCommandContentTiles_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSupportedVoiceCommandContentTiles")(x.asInstanceOf[js.Any])
+    inline def maxSupportedVoiceCommandContentTiles_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSupportedVoiceCommandContentTiles")(x.asInstanceOf[js.Any])
   }
   
   /** The background app service connection to Cortana. */
@@ -334,8 +327,7 @@ object VoiceCommands {
       * @return The background app service connection to Cortana.
       */
     /* static member */
-    @scala.inline
-    def fromAppServiceTriggerDetails(triggerDetails: AppServiceTriggerDetails): typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAppServiceTriggerDetails")(triggerDetails.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection]
+    inline def fromAppServiceTriggerDetails(triggerDetails: AppServiceTriggerDetails): typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAppServiceTriggerDetails")(triggerDetails.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection]
   }
   
   /** The message that is spoken by Cortana and shown on the Cortana canvas. */

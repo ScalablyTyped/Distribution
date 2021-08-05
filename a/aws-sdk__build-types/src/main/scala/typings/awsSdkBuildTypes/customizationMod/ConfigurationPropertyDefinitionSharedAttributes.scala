@@ -55,40 +55,29 @@ trait ConfigurationPropertyDefinitionSharedAttributes extends StObject {
 }
 object ConfigurationPropertyDefinitionSharedAttributes {
   
-  @scala.inline
-  def apply(documentation: String, inputType: String): ConfigurationPropertyDefinitionSharedAttributes = {
+  inline def apply(documentation: String, inputType: String): ConfigurationPropertyDefinitionSharedAttributes = {
     val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], inputType = inputType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationPropertyDefinitionSharedAttributes]
   }
   
-  @scala.inline
-  implicit class ConfigurationPropertyDefinitionSharedAttributesMutableBuilder[Self <: ConfigurationPropertyDefinitionSharedAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationPropertyDefinitionSharedAttributes](x: Self) {
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    @scala.inline
-    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
-    @scala.inline
-    def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+    inline def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+    inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
-    @scala.inline
-    def setResolvedType(value: String): Self = StObject.set(x, "resolvedType", value.asInstanceOf[js.Any])
+    inline def setResolvedType(value: String): Self = StObject.set(x, "resolvedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedTypeUndefined: Self = StObject.set(x, "resolvedType", js.undefined)
+    inline def setResolvedTypeUndefined: Self = StObject.set(x, "resolvedType", js.undefined)
   }
 }

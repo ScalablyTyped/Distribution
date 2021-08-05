@@ -14,16 +14,13 @@ trait GetTopUserIDsResponse extends StObject {
 }
 object GetTopUserIDsResponse {
   
-  @scala.inline
-  def apply(topUsers: Record[String, js.Array[UserIDResponse]]): GetTopUserIDsResponse = {
+  inline def apply(topUsers: Record[String, js.Array[UserIDResponse]]): GetTopUserIDsResponse = {
     val __obj = js.Dynamic.literal(topUsers = topUsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTopUserIDsResponse]
   }
   
-  @scala.inline
-  implicit class GetTopUserIDsResponseMutableBuilder[Self <: GetTopUserIDsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTopUserIDsResponse](x: Self) {
     
-    @scala.inline
-    def setTopUsers(value: Record[String, js.Array[UserIDResponse]]): Self = StObject.set(x, "topUsers", value.asInstanceOf[js.Any])
+    inline def setTopUsers(value: Record[String, js.Array[UserIDResponse]]): Self = StObject.set(x, "topUsers", value.asInstanceOf[js.Any])
   }
 }

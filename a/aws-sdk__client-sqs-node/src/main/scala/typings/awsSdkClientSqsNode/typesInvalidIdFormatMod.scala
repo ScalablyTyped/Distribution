@@ -16,17 +16,14 @@ object typesInvalidIdFormatMod {
   }
   object InvalidIdFormat {
     
-    @scala.inline
-    def apply(): InvalidIdFormat = {
+    inline def apply(): InvalidIdFormat = {
       val __obj = js.Dynamic.literal(name = "InvalidIdFormat")
       __obj.asInstanceOf[InvalidIdFormat]
     }
     
-    @scala.inline
-    implicit class InvalidIdFormatMutableBuilder[Self <: InvalidIdFormat] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidIdFormat](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidIdFormat): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidIdFormat): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

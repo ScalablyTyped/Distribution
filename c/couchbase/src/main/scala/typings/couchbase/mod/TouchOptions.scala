@@ -18,25 +18,19 @@ trait TouchOptions extends StObject {
 }
 object TouchOptions {
   
-  @scala.inline
-  def apply(): TouchOptions = {
+  inline def apply(): TouchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchOptions]
   }
   
-  @scala.inline
-  implicit class TouchOptionsMutableBuilder[Self <: TouchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchOptions](x: Self) {
     
-    @scala.inline
-    def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
+    inline def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
+    inline def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
     
-    @scala.inline
-    def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
+    inline def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
+    inline def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
   }
 }

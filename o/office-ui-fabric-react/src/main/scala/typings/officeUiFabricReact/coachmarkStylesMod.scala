@@ -20,15 +20,11 @@ object coachmarkStylesMod {
   @js.native
   val COACHMARK_WIDTH: /* 32 */ Double = js.native
   
-  @scala.inline
-  def getStyles(props: ICoachmarkStyleProps): ICoachmarkStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICoachmarkStyles]
+  inline def getStyles(props: ICoachmarkStyleProps): ICoachmarkStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICoachmarkStyles]
   
-  @scala.inline
-  def rotateOne(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rotateOne")().asInstanceOf[String]
+  inline def rotateOne(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rotateOne")().asInstanceOf[String]
   
-  @scala.inline
-  def scaleOne(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOne")().asInstanceOf[String]
+  inline def scaleOne(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOne")().asInstanceOf[String]
   
-  @scala.inline
-  def translateOne(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("translateOne")().asInstanceOf[String]
+  inline def translateOne(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("translateOne")().asInstanceOf[String]
 }

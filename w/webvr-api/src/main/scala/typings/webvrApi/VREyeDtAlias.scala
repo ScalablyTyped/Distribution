@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VREyeDtAlias extends StObject
 object VREyeDtAlias {
   
-  @scala.inline
-  def left: typings.webvrApi.webvrApiStrings.left = "left".asInstanceOf[typings.webvrApi.webvrApiStrings.left]
+  inline def left: typings.webvrApi.webvrApiStrings.left = "left".asInstanceOf[typings.webvrApi.webvrApiStrings.left]
   
-  @scala.inline
-  def right: typings.webvrApi.webvrApiStrings.right = "right".asInstanceOf[typings.webvrApi.webvrApiStrings.right]
+  inline def right: typings.webvrApi.webvrApiStrings.right = "right".asInstanceOf[typings.webvrApi.webvrApiStrings.right]
 }

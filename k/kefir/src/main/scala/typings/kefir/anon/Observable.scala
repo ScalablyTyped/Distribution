@@ -10,16 +10,13 @@ trait Observable extends StObject {
 }
 object Observable {
   
-  @scala.inline
-  def apply(Observable: Ap): Observable = {
+  inline def apply(Observable: Ap): Observable = {
     val __obj = js.Dynamic.literal(Observable = Observable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Observable]
   }
   
-  @scala.inline
-  implicit class ObservableMutableBuilder[Self <: Observable] (val x: Self) extends AnyVal {
+  extension [Self <: Observable](x: Self) {
     
-    @scala.inline
-    def setObservable(value: Ap): Self = StObject.set(x, "Observable", value.asInstanceOf[js.Any])
+    inline def setObservable(value: Ap): Self = StObject.set(x, "Observable", value.asInstanceOf[js.Any])
   }
 }

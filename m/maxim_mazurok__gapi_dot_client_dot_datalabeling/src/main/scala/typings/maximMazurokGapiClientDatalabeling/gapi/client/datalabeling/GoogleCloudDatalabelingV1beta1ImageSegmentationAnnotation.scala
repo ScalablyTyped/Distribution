@@ -22,35 +22,27 @@ trait GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation extends StObject
 }
 object GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotationMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation](x: Self) {
     
-    @scala.inline
-    def setAnnotationColors(
+    inline def setAnnotationColors(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datalabeling.gapi.client.datalabeling.GoogleCloudDatalabelingV1beta1AnnotationSpec}
       */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation & TopLevel[js.Any]
     ): Self = StObject.set(x, "annotationColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationColorsUndefined: Self = StObject.set(x, "annotationColors", js.undefined)
+    inline def setAnnotationColorsUndefined: Self = StObject.set(x, "annotationColors", js.undefined)
     
-    @scala.inline
-    def setImageBytes(value: String): Self = StObject.set(x, "imageBytes", value.asInstanceOf[js.Any])
+    inline def setImageBytes(value: String): Self = StObject.set(x, "imageBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageBytesUndefined: Self = StObject.set(x, "imageBytes", js.undefined)
+    inline def setImageBytesUndefined: Self = StObject.set(x, "imageBytes", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

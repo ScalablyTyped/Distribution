@@ -11,8 +11,7 @@ trait DialogTitleProps
      with CustomRenderedComponent
 object DialogTitleProps {
   
-  @scala.inline
-  def apply(): DialogTitleProps = {
+  inline def apply(): DialogTitleProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogTitleProps]
   }

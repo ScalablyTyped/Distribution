@@ -16,34 +16,25 @@ trait CloudErrorParameters extends StObject {
 }
 object CloudErrorParameters {
   
-  @scala.inline
-  def apply(code: String, message: String): CloudErrorParameters = {
+  inline def apply(code: String, message: String): CloudErrorParameters = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudErrorParameters]
   }
   
-  @scala.inline
-  implicit class CloudErrorParametersMutableBuilder[Self <: CloudErrorParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CloudErrorParameters](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: js.Array[CloudError]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[CloudError]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setDetailsVarargs(value: CloudError*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: CloudError*): Self = StObject.set(x, "details", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

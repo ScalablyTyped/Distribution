@@ -40,19 +40,16 @@ trait showAuthGuideOptions
 }
 object showAuthGuideOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authType: BACKGROUNDER | SHORTCUT | MICROPHONE | ADDRESSBOOK | CAMERA | PHOTO | NOTIFICATION | SELFSTARTING | LBSSERVICE | LBS
   ): showAuthGuideOptions = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any])
     __obj.asInstanceOf[showAuthGuideOptions]
   }
   
-  @scala.inline
-  implicit class showAuthGuideOptionsMutableBuilder[Self <: showAuthGuideOptions] (val x: Self) extends AnyVal {
+  extension [Self <: showAuthGuideOptions](x: Self) {
     
-    @scala.inline
-    def setAuthType(
+    inline def setAuthType(
       value: BACKGROUNDER | SHORTCUT | MICROPHONE | ADDRESSBOOK | CAMERA | PHOTO | NOTIFICATION | SELFSTARTING | LBSSERVICE | LBS
     ): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
   }

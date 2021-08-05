@@ -18,16 +18,13 @@ trait InsertTableCellWithShiftToTheLeftCommand
 }
 object InsertTableCellWithShiftToTheLeftCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertTableCellWithShiftToTheLeftCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertTableCellWithShiftToTheLeftCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertTableCellWithShiftToTheLeftCommand]
   }
   
-  @scala.inline
-  implicit class InsertTableCellWithShiftToTheLeftCommandMutableBuilder[Self <: InsertTableCellWithShiftToTheLeftCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertTableCellWithShiftToTheLeftCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

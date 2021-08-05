@@ -15,16 +15,13 @@ trait NodeExporter extends StObject {
 }
 object NodeExporter {
   
-  @scala.inline
-  def apply(EnabledInBroker: boolean): NodeExporter = {
+  inline def apply(EnabledInBroker: boolean): NodeExporter = {
     val __obj = js.Dynamic.literal(EnabledInBroker = EnabledInBroker.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeExporter]
   }
   
-  @scala.inline
-  implicit class NodeExporterMutableBuilder[Self <: NodeExporter] (val x: Self) extends AnyVal {
+  extension [Self <: NodeExporter](x: Self) {
     
-    @scala.inline
-    def setEnabledInBroker(value: boolean): Self = StObject.set(x, "EnabledInBroker", value.asInstanceOf[js.Any])
+    inline def setEnabledInBroker(value: boolean): Self = StObject.set(x, "EnabledInBroker", value.asInstanceOf[js.Any])
   }
 }

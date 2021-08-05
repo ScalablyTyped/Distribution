@@ -13,16 +13,13 @@ trait DeleteEndpointMessage extends StObject {
 }
 object DeleteEndpointMessage {
   
-  @scala.inline
-  def apply(EndpointArn: String): DeleteEndpointMessage = {
+  inline def apply(EndpointArn: String): DeleteEndpointMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEndpointMessage]
   }
   
-  @scala.inline
-  implicit class DeleteEndpointMessageMutableBuilder[Self <: DeleteEndpointMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEndpointMessage](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }
 }

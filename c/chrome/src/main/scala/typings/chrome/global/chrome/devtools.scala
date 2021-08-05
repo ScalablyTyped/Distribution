@@ -33,45 +33,36 @@ object devtools {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def eval[T](expression: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def eval[T](
+    inline def eval[T](expression: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def eval[T](
       expression: String,
       callback: js.Function2[/* result */ T, /* exceptionInfo */ EvaluationExceptionInfo, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def eval[T](expression: String, options: EvalOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def eval[T](
+    inline def eval[T](expression: String, options: EvalOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def eval[T](
       expression: String,
       options: EvalOptions,
       callback: js.Function2[/* result */ T, /* exceptionInfo */ EvaluationExceptionInfo, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def getResources(callback: js.Function1[/* resources */ js.Array[Resource], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getResources")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getResources(callback: js.Function1[/* resources */ js.Array[Resource], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getResources")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.inspectedWindow.onResourceAdded")
     @js.native
     def onResourceAdded: ResourceAddedEvent = js.native
-    @scala.inline
-    def onResourceAdded_=(x: ResourceAddedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResourceAdded")(x.asInstanceOf[js.Any])
+    inline def onResourceAdded_=(x: ResourceAddedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResourceAdded")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.devtools.inspectedWindow.onResourceContentCommitted")
     @js.native
     def onResourceContentCommitted: ResourceContentCommittedEvent = js.native
-    @scala.inline
-    def onResourceContentCommitted_=(x: ResourceContentCommittedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResourceContentCommitted")(x.asInstanceOf[js.Any])
+    inline def onResourceContentCommitted_=(x: ResourceContentCommittedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResourceContentCommitted")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def reload(reloadOptions: ReloadOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(reloadOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def reload(reloadOptions: ReloadOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(reloadOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.inspectedWindow.tabId")
     @js.native
     def tabId: Double = js.native
-    @scala.inline
-    def tabId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabId")(x.asInstanceOf[js.Any])
+    inline def tabId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabId")(x.asInstanceOf[js.Any])
   }
   
   ////////////////////
@@ -87,20 +78,17 @@ object devtools {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getHAR(callback: js.Function1[/* harLog */ HARLog, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getHAR")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getHAR(callback: js.Function1[/* harLog */ HARLog, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getHAR")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.network.onNavigated")
     @js.native
     def onNavigated: NavigatedEvent = js.native
-    @scala.inline
-    def onNavigated_=(x: NavigatedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onNavigated")(x.asInstanceOf[js.Any])
+    inline def onNavigated_=(x: NavigatedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onNavigated")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.devtools.network.onRequestFinished")
     @js.native
     def onRequestFinished: RequestFinishedEvent = js.native
-    @scala.inline
-    def onRequestFinished_=(x: RequestFinishedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequestFinished")(x.asInstanceOf[js.Any])
+    inline def onRequestFinished_=(x: RequestFinishedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequestFinished")(x.asInstanceOf[js.Any])
   }
   
   ////////////////////
@@ -116,10 +104,8 @@ object devtools {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(title: String, iconPath: String, pagePath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], iconPath.asInstanceOf[js.Any], pagePath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def create(
+    inline def create(title: String, iconPath: String, pagePath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], iconPath.asInstanceOf[js.Any], pagePath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def create(
       title: String,
       iconPath: String,
       pagePath: String,
@@ -129,27 +115,21 @@ object devtools {
     @JSGlobal("chrome.devtools.panels.elements")
     @js.native
     def elements: ElementsPanel = js.native
-    @scala.inline
-    def elements_=(x: ElementsPanel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
+    inline def elements_=(x: ElementsPanel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def openResource(url: String, lineNumber: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openResource")(url.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def openResource(url: String, lineNumber: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openResource")(url.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setOpenResourceHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpenResourceHandler")().asInstanceOf[Unit]
-    @scala.inline
-    def setOpenResourceHandler(callback: js.Function1[/* resource */ Resource, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpenResourceHandler")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setOpenResourceHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpenResourceHandler")().asInstanceOf[Unit]
+    inline def setOpenResourceHandler(callback: js.Function1[/* resource */ Resource, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpenResourceHandler")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.panels.sources")
     @js.native
     def sources: SourcesPanel = js.native
-    @scala.inline
-    def sources_=(x: SourcesPanel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sources")(x.asInstanceOf[js.Any])
+    inline def sources_=(x: SourcesPanel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sources")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.devtools.panels.themeName")
     @js.native
     def themeName: default | dark = js.native
-    @scala.inline
-    def themeName_=(x: default | dark): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("themeName")(x.asInstanceOf[js.Any])
+    inline def themeName_=(x: default | dark): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("themeName")(x.asInstanceOf[js.Any])
   }
 }

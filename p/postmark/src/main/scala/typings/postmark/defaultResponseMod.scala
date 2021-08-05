@@ -14,20 +14,16 @@ object defaultResponseMod {
   }
   object DefaultResponse {
     
-    @scala.inline
-    def apply(ErrorCode: Double, Message: String): DefaultResponse = {
+    inline def apply(ErrorCode: Double, Message: String): DefaultResponse = {
       val __obj = js.Dynamic.literal(ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultResponse]
     }
     
-    @scala.inline
-    implicit class DefaultResponseMutableBuilder[Self <: DefaultResponse] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultResponse](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     }
   }
 }

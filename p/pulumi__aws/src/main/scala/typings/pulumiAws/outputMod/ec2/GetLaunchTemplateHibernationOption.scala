@@ -10,16 +10,13 @@ trait GetLaunchTemplateHibernationOption extends StObject {
 }
 object GetLaunchTemplateHibernationOption {
   
-  @scala.inline
-  def apply(configured: Boolean): GetLaunchTemplateHibernationOption = {
+  inline def apply(configured: Boolean): GetLaunchTemplateHibernationOption = {
     val __obj = js.Dynamic.literal(configured = configured.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLaunchTemplateHibernationOption]
   }
   
-  @scala.inline
-  implicit class GetLaunchTemplateHibernationOptionMutableBuilder[Self <: GetLaunchTemplateHibernationOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchTemplateHibernationOption](x: Self) {
     
-    @scala.inline
-    def setConfigured(value: Boolean): Self = StObject.set(x, "configured", value.asInstanceOf[js.Any])
+    inline def setConfigured(value: Boolean): Self = StObject.set(x, "configured", value.asInstanceOf[js.Any])
   }
 }

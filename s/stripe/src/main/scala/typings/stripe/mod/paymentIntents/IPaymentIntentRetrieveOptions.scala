@@ -15,16 +15,13 @@ trait IPaymentIntentRetrieveOptions extends StObject {
 }
 object IPaymentIntentRetrieveOptions {
   
-  @scala.inline
-  def apply(client_secret: String): IPaymentIntentRetrieveOptions = {
+  inline def apply(client_secret: String): IPaymentIntentRetrieveOptions = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentRetrieveOptions]
   }
   
-  @scala.inline
-  implicit class IPaymentIntentRetrieveOptionsMutableBuilder[Self <: IPaymentIntentRetrieveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentIntentRetrieveOptions](x: Self) {
     
-    @scala.inline
-    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+    inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
   }
 }

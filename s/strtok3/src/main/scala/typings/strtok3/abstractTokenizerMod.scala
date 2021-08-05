@@ -13,12 +13,12 @@ object abstractTokenizerMod {
   
   @JSImport("strtok3/lib/AbstractTokenizer", "AbstractTokenizer")
   @js.native
-  abstract class AbstractTokenizer protected ()
+  /* protected */ abstract class AbstractTokenizer ()
     extends StObject
        with ITokenizer {
-    protected def this(fileInfo: IFileInfo) = this()
+    /* protected */ def this(fileInfo: IFileInfo) = this()
     
-    var numBuffer: js.Any = js.native
+    /* private */ var numBuffer: js.Any = js.native
     
     def peekBuffer(buffer: Uint8Array): js.Promise[Double] = js.native
     def peekBuffer(buffer: Uint8Array, options: IReadChunkOptions): js.Promise[Double] = js.native

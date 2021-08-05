@@ -54,8 +54,7 @@ trait XDiagramPositioning
 }
 object XDiagramPositioning {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     calculateDiagramPositionExcludingAxes: () => Rectangle,
     calculateDiagramPositionIncludingAxes: () => Rectangle,
@@ -73,34 +72,24 @@ object XDiagramPositioning {
     __obj.asInstanceOf[XDiagramPositioning]
   }
   
-  @scala.inline
-  implicit class XDiagramPositioningMutableBuilder[Self <: XDiagramPositioning] (val x: Self) extends AnyVal {
+  extension [Self <: XDiagramPositioning](x: Self) {
     
-    @scala.inline
-    def setCalculateDiagramPositionExcludingAxes(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionExcludingAxes", js.Any.fromFunction0(value))
+    inline def setCalculateDiagramPositionExcludingAxes(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionExcludingAxes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCalculateDiagramPositionIncludingAxes(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionIncludingAxes", js.Any.fromFunction0(value))
+    inline def setCalculateDiagramPositionIncludingAxes(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionIncludingAxes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCalculateDiagramPositionIncludingAxesAndAxisTitles(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionIncludingAxesAndAxisTitles", js.Any.fromFunction0(value))
+    inline def setCalculateDiagramPositionIncludingAxesAndAxisTitles(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionIncludingAxesAndAxisTitles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAutomaticDiagramPositioning(value: () => Boolean): Self = StObject.set(x, "isAutomaticDiagramPositioning", js.Any.fromFunction0(value))
+    inline def setIsAutomaticDiagramPositioning(value: () => Boolean): Self = StObject.set(x, "isAutomaticDiagramPositioning", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsExcludingDiagramPositioning(value: () => Boolean): Self = StObject.set(x, "isExcludingDiagramPositioning", js.Any.fromFunction0(value))
+    inline def setIsExcludingDiagramPositioning(value: () => Boolean): Self = StObject.set(x, "isExcludingDiagramPositioning", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAutomaticDiagramPositioning(value: () => Unit): Self = StObject.set(x, "setAutomaticDiagramPositioning", js.Any.fromFunction0(value))
+    inline def setSetAutomaticDiagramPositioning(value: () => Unit): Self = StObject.set(x, "setAutomaticDiagramPositioning", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDiagramPositionExcludingAxes(value: Rectangle => Unit): Self = StObject.set(x, "setDiagramPositionExcludingAxes", js.Any.fromFunction1(value))
+    inline def setSetDiagramPositionExcludingAxes(value: Rectangle => Unit): Self = StObject.set(x, "setDiagramPositionExcludingAxes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDiagramPositionIncludingAxes(value: Rectangle => Unit): Self = StObject.set(x, "setDiagramPositionIncludingAxes", js.Any.fromFunction1(value))
+    inline def setSetDiagramPositionIncludingAxes(value: Rectangle => Unit): Self = StObject.set(x, "setDiagramPositionIncludingAxes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDiagramPositionIncludingAxesAndAxisTitles(value: Rectangle => Unit): Self = StObject.set(x, "setDiagramPositionIncludingAxesAndAxisTitles", js.Any.fromFunction1(value))
+    inline def setSetDiagramPositionIncludingAxesAndAxisTitles(value: Rectangle => Unit): Self = StObject.set(x, "setDiagramPositionIncludingAxesAndAxisTitles", js.Any.fromFunction1(value))
   }
 }

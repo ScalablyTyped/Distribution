@@ -11,16 +11,13 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(options: PartialStylableWebpackPlu => StylableWebpackPluginOptions): Options = {
+  inline def apply(options: PartialStylableWebpackPlu => StylableWebpackPluginOptions): Options = {
     val __obj = js.Dynamic.literal(options = js.Any.fromFunction1(options))
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setOptions(value: PartialStylableWebpackPlu => StylableWebpackPluginOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+    inline def setOptions(value: PartialStylableWebpackPlu => StylableWebpackPluginOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
   }
 }

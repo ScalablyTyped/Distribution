@@ -20,17 +20,14 @@ object io {
   }
   object GeoJSONReader {
     
-    @scala.inline
-    def apply(read: js.Object => Geometry): GeoJSONReader = {
+    inline def apply(read: js.Object => Geometry): GeoJSONReader = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read))
       __obj.asInstanceOf[GeoJSONReader]
     }
     
-    @scala.inline
-    implicit class GeoJSONReaderMutableBuilder[Self <: GeoJSONReader] (val x: Self) extends AnyVal {
+    extension [Self <: GeoJSONReader](x: Self) {
       
-      @scala.inline
-      def setRead(value: js.Object => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: js.Object => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     }
   }
   
@@ -47,17 +44,14 @@ object io {
   }
   object GeoJSONWriter {
     
-    @scala.inline
-    def apply(write: Geometry => js.Object): GeoJSONWriter = {
+    inline def apply(write: Geometry => js.Object): GeoJSONWriter = {
       val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[GeoJSONWriter]
     }
     
-    @scala.inline
-    implicit class GeoJSONWriterMutableBuilder[Self <: GeoJSONWriter] (val x: Self) extends AnyVal {
+    extension [Self <: GeoJSONWriter](x: Self) {
       
-      @scala.inline
-      def setWrite(value: Geometry => js.Object): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: Geometry => js.Object): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -69,20 +63,16 @@ object io {
   }
   object OL3Parser {
     
-    @scala.inline
-    def apply(read: js.Any => Geometry, write: Geometry => js.Any): OL3Parser = {
+    inline def apply(read: js.Any => Geometry, write: Geometry => js.Any): OL3Parser = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[OL3Parser]
     }
     
-    @scala.inline
-    implicit class OL3ParserMutableBuilder[Self <: OL3Parser] (val x: Self) extends AnyVal {
+    extension [Self <: OL3Parser](x: Self) {
       
-      @scala.inline
-      def setRead(value: js.Any => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: js.Any => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: Geometry => js.Any): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: Geometry => js.Any): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -103,20 +93,16 @@ object io {
   }
   object WKTReader {
     
-    @scala.inline
-    def apply(read: String => Geometry, reducePrecision: Geometry => Unit): WKTReader = {
+    inline def apply(read: String => Geometry, reducePrecision: Geometry => Unit): WKTReader = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), reducePrecision = js.Any.fromFunction1(reducePrecision))
       __obj.asInstanceOf[WKTReader]
     }
     
-    @scala.inline
-    implicit class WKTReaderMutableBuilder[Self <: WKTReader] (val x: Self) extends AnyVal {
+    extension [Self <: WKTReader](x: Self) {
       
-      @scala.inline
-      def setRead(value: String => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: String => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReducePrecision(value: Geometry => Unit): Self = StObject.set(x, "reducePrecision", js.Any.fromFunction1(value))
+      inline def setReducePrecision(value: Geometry => Unit): Self = StObject.set(x, "reducePrecision", js.Any.fromFunction1(value))
     }
   }
   

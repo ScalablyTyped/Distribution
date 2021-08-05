@@ -19,25 +19,19 @@ trait GetUsersResult extends StObject {
 }
 object GetUsersResult {
   
-  @scala.inline
-  def apply(notFound: js.Array[UserIdentifier], users: js.Array[UserRecord]): GetUsersResult = {
+  inline def apply(notFound: js.Array[UserIdentifier], users: js.Array[UserRecord]): GetUsersResult = {
     val __obj = js.Dynamic.literal(notFound = notFound.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsersResult]
   }
   
-  @scala.inline
-  implicit class GetUsersResultMutableBuilder[Self <: GetUsersResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsersResult](x: Self) {
     
-    @scala.inline
-    def setNotFound(value: js.Array[UserIdentifier]): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: js.Array[UserIdentifier]): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundVarargs(value: UserIdentifier*): Self = StObject.set(x, "notFound", js.Array(value :_*))
+    inline def setNotFoundVarargs(value: UserIdentifier*): Self = StObject.set(x, "notFound", js.Array(value :_*))
     
-    @scala.inline
-    def setUsers(value: js.Array[UserRecord]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[UserRecord]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: UserRecord*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserRecord*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

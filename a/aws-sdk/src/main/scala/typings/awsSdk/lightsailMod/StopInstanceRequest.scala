@@ -18,22 +18,17 @@ trait StopInstanceRequest extends StObject {
 }
 object StopInstanceRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName): StopInstanceRequest = {
+  inline def apply(instanceName: ResourceName): StopInstanceRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopInstanceRequest]
   }
   
-  @scala.inline
-  implicit class StopInstanceRequestMutableBuilder[Self <: StopInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

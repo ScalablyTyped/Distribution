@@ -31,8 +31,7 @@ object esScrollSyncMod {
     @JSImport("react-virtualized/dist/es/ScrollSync", "ScrollSync.propTypes")
     @js.native
     def propTypes: ChildrenValidator = js.native
-    @scala.inline
-    def propTypes_=(x: ChildrenValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: ChildrenValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait OnScrollParams extends StObject {
@@ -51,8 +50,7 @@ object esScrollSyncMod {
   }
   object OnScrollParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientHeight: Double,
       clientWidth: Double,
       scrollHeight: Double,
@@ -64,26 +62,19 @@ object esScrollSyncMod {
       __obj.asInstanceOf[OnScrollParams]
     }
     
-    @scala.inline
-    implicit class OnScrollParamsMutableBuilder[Self <: OnScrollParams] (val x: Self) extends AnyVal {
+    extension [Self <: OnScrollParams](x: Self) {
       
-      @scala.inline
-      def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
+      inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
+      inline def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+      inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+      inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
+      inline def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +96,7 @@ object esScrollSyncMod {
   }
   object ScrollSyncChildProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientHeight: Double,
       clientWidth: Double,
       onScroll: OnScrollParams => Unit,
@@ -119,29 +109,21 @@ object esScrollSyncMod {
       __obj.asInstanceOf[ScrollSyncChildProps]
     }
     
-    @scala.inline
-    implicit class ScrollSyncChildPropsMutableBuilder[Self <: ScrollSyncChildProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollSyncChildProps](x: Self) {
       
-      @scala.inline
-      def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
+      inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
+      inline def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnScroll(value: OnScrollParams => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: OnScrollParams => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+      inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+      inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
+      inline def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,17 +147,14 @@ object esScrollSyncMod {
   }
   object ScrollSyncProps {
     
-    @scala.inline
-    def apply(children: ScrollSyncChildProps => ReactNode): ScrollSyncProps = {
+    inline def apply(children: ScrollSyncChildProps => ReactNode): ScrollSyncProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[ScrollSyncProps]
     }
     
-    @scala.inline
-    implicit class ScrollSyncPropsMutableBuilder[Self <: ScrollSyncProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollSyncProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ScrollSyncChildProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: ScrollSyncChildProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -195,8 +174,7 @@ object esScrollSyncMod {
   }
   object ScrollSyncState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientHeight: Double,
       clientWidth: Double,
       scrollHeight: Double,
@@ -208,26 +186,19 @@ object esScrollSyncMod {
       __obj.asInstanceOf[ScrollSyncState]
     }
     
-    @scala.inline
-    implicit class ScrollSyncStateMutableBuilder[Self <: ScrollSyncState] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollSyncState](x: Self) {
       
-      @scala.inline
-      def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
+      inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
+      inline def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+      inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+      inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
+      inline def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,8 +10,7 @@ trait LocateViewModelProperties
      with GoToProperties
 object LocateViewModelProperties {
   
-  @scala.inline
-  def apply(): LocateViewModelProperties = {
+  inline def apply(): LocateViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocateViewModelProperties]
   }

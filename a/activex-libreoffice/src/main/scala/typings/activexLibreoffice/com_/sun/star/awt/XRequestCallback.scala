@@ -16,16 +16,13 @@ trait XRequestCallback extends StObject {
 }
 object XRequestCallback {
   
-  @scala.inline
-  def apply(addCallback: (XCallback, js.Any) => Unit): XRequestCallback = {
+  inline def apply(addCallback: (XCallback, js.Any) => Unit): XRequestCallback = {
     val __obj = js.Dynamic.literal(addCallback = js.Any.fromFunction2(addCallback))
     __obj.asInstanceOf[XRequestCallback]
   }
   
-  @scala.inline
-  implicit class XRequestCallbackMutableBuilder[Self <: XRequestCallback] (val x: Self) extends AnyVal {
+  extension [Self <: XRequestCallback](x: Self) {
     
-    @scala.inline
-    def setAddCallback(value: (XCallback, js.Any) => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction2(value))
+    inline def setAddCallback(value: (XCallback, js.Any) => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction2(value))
   }
 }

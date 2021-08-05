@@ -19,15 +19,13 @@ object Revert {
   /**
     * Reverts the given commit against the given "our" commit, producing an index that reflects the result of the revert.
     */
-  @scala.inline
-  def commit(
+  inline def commit(
     repo: typings.nodegit.repositoryMod.Repository,
     revertCommit: typings.nodegit.commitMod.Commit,
     ourCommit: typings.nodegit.commitMod.Commit,
     mainline: Double
   ): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], revertCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
-  @scala.inline
-  def commit(
+  inline def commit(
     repo: typings.nodegit.repositoryMod.Repository,
     revertCommit: typings.nodegit.commitMod.Commit,
     ourCommit: typings.nodegit.commitMod.Commit,
@@ -35,10 +33,8 @@ object Revert {
     mergeOptions: typings.nodegit.mergeOptionsMod.MergeOptions
   ): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("commit")(repo.asInstanceOf[js.Any], revertCommit.asInstanceOf[js.Any], ourCommit.asInstanceOf[js.Any], mainline.asInstanceOf[js.Any], mergeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
   
-  @scala.inline
-  def revert(repo: typings.nodegit.repositoryMod.Repository, commit: typings.nodegit.commitMod.Commit): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("revert")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
-  @scala.inline
-  def revert(
+  inline def revert(repo: typings.nodegit.repositoryMod.Repository, commit: typings.nodegit.commitMod.Commit): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("revert")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  inline def revert(
     repo: typings.nodegit.repositoryMod.Repository,
     commit: typings.nodegit.commitMod.Commit,
     givenOpts: RevertOptions

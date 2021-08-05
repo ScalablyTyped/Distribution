@@ -26,6 +26,5 @@ object formikContextMod {
   @js.native
   val FormikProvider: Provider[FormikContextType[js.Any]] = js.native
   
-  @scala.inline
-  def useFormikContext[Values](): FormikContextType[Values] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormikContext")().asInstanceOf[FormikContextType[Values]]
+  inline def useFormikContext[Values](): FormikContextType[Values] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFormikContext")().asInstanceOf[FormikContextType[Values]]
 }

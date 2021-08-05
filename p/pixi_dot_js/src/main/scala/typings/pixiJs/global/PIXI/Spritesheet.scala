@@ -54,6 +54,5 @@ object Spritesheet {
   @JSGlobal("PIXI.Spritesheet.BATCH_SIZE")
   @js.native
   def BATCH_SIZE: Double = js.native
-  @scala.inline
-  def BATCH_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_SIZE")(x.asInstanceOf[js.Any])
+  inline def BATCH_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_SIZE")(x.asInstanceOf[js.Any])
 }

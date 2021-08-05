@@ -31,64 +31,45 @@ trait UpdateWebhook extends StObject {
 }
 object UpdateWebhook {
   
-  @scala.inline
-  def apply(): UpdateWebhook = {
+  inline def apply(): UpdateWebhook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateWebhook]
   }
   
-  @scala.inline
-  implicit class UpdateWebhookMutableBuilder[Self <: UpdateWebhook] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWebhook](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAuth_credentials(value: js.Any): Self = StObject.set(x, "auth_credentials", value.asInstanceOf[js.Any])
+    inline def setAuth_credentials(value: js.Any): Self = StObject.set(x, "auth_credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth_credentialsUndefined: Self = StObject.set(x, "auth_credentials", js.undefined)
+    inline def setAuth_credentialsUndefined: Self = StObject.set(x, "auth_credentials", js.undefined)
     
-    @scala.inline
-    def setAuth_request_details(value: js.Any): Self = StObject.set(x, "auth_request_details", value.asInstanceOf[js.Any])
+    inline def setAuth_request_details(value: js.Any): Self = StObject.set(x, "auth_request_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth_request_detailsUndefined: Self = StObject.set(x, "auth_request_details", js.undefined)
+    inline def setAuth_request_detailsUndefined: Self = StObject.set(x, "auth_request_details", js.undefined)
     
-    @scala.inline
-    def setAuth_token(value: String): Self = StObject.set(x, "auth_token", value.asInstanceOf[js.Any])
+    inline def setAuth_token(value: String): Self = StObject.set(x, "auth_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth_tokenUndefined: Self = StObject.set(x, "auth_token", js.undefined)
+    inline def setAuth_tokenUndefined: Self = StObject.set(x, "auth_token", js.undefined)
     
-    @scala.inline
-    def setAuth_type(value: String): Self = StObject.set(x, "auth_type", value.asInstanceOf[js.Any])
+    inline def setAuth_type(value: String): Self = StObject.set(x, "auth_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth_typeUndefined: Self = StObject.set(x, "auth_type", js.undefined)
+    inline def setAuth_typeUndefined: Self = StObject.set(x, "auth_type", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EmitOptions extends StObject {
   
-  var _commonDirectoryPath: js.Any
+  /* private */ var _commonDirectoryPath: js.Any
   
-  var _diagnostic: js.Any
+  /* private */ var _diagnostic: js.Any
   
-  var _outputDirectory: js.Any
+  /* private */ var _outputDirectory: js.Any
   
-  var _settings: js.Any
+  /* private */ var _settings: js.Any
   
-  var _sharedOutputFile: js.Any
+  /* private */ var _sharedOutputFile: js.Any
   
-  var _sourceMapRootDirectory: js.Any
+  /* private */ var _sourceMapRootDirectory: js.Any
   
-  var _sourceRootDirectory: js.Any
+  /* private */ var _sourceRootDirectory: js.Any
   
   def commonDirectoryPath(): String
   
@@ -40,8 +40,7 @@ trait EmitOptions extends StObject {
 }
 object EmitOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _commonDirectoryPath: js.Any,
     _diagnostic: js.Any,
     _outputDirectory: js.Any,
@@ -63,55 +62,38 @@ object EmitOptions {
     __obj.asInstanceOf[EmitOptions]
   }
   
-  @scala.inline
-  implicit class EmitOptionsMutableBuilder[Self <: EmitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EmitOptions](x: Self) {
     
-    @scala.inline
-    def setCommonDirectoryPath(value: () => String): Self = StObject.set(x, "commonDirectoryPath", js.Any.fromFunction0(value))
+    inline def setCommonDirectoryPath(value: () => String): Self = StObject.set(x, "commonDirectoryPath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompilationSettings(value: () => ImmutableCompilationSettings): Self = StObject.set(x, "compilationSettings", js.Any.fromFunction0(value))
+    inline def setCompilationSettings(value: () => ImmutableCompilationSettings): Self = StObject.set(x, "compilationSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetermineCommonDirectoryPath(value: js.Any => js.Any): Self = StObject.set(x, "determineCommonDirectoryPath", js.Any.fromFunction1(value))
+    inline def setDetermineCommonDirectoryPath(value: js.Any => js.Any): Self = StObject.set(x, "determineCommonDirectoryPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDiagnostic(value: () => Diagnostic): Self = StObject.set(x, "diagnostic", js.Any.fromFunction0(value))
+    inline def setDiagnostic(value: () => Diagnostic): Self = StObject.set(x, "diagnostic", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOutputDirectory(value: () => String): Self = StObject.set(x, "outputDirectory", js.Any.fromFunction0(value))
+    inline def setOutputDirectory(value: () => String): Self = StObject.set(x, "outputDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResolvePath(value: String => String): Self = StObject.set(x, "resolvePath", js.Any.fromFunction1(value))
+    inline def setResolvePath(value: String => String): Self = StObject.set(x, "resolvePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSharedOutputFile(value: () => String): Self = StObject.set(x, "sharedOutputFile", js.Any.fromFunction0(value))
+    inline def setSharedOutputFile(value: () => String): Self = StObject.set(x, "sharedOutputFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSourceMapRootDirectory(value: () => String): Self = StObject.set(x, "sourceMapRootDirectory", js.Any.fromFunction0(value))
+    inline def setSourceMapRootDirectory(value: () => String): Self = StObject.set(x, "sourceMapRootDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSourceRootDirectory(value: () => String): Self = StObject.set(x, "sourceRootDirectory", js.Any.fromFunction0(value))
+    inline def setSourceRootDirectory(value: () => String): Self = StObject.set(x, "sourceRootDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_commonDirectoryPath(value: js.Any): Self = StObject.set(x, "_commonDirectoryPath", value.asInstanceOf[js.Any])
+    inline def set_commonDirectoryPath(value: js.Any): Self = StObject.set(x, "_commonDirectoryPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_diagnostic(value: js.Any): Self = StObject.set(x, "_diagnostic", value.asInstanceOf[js.Any])
+    inline def set_diagnostic(value: js.Any): Self = StObject.set(x, "_diagnostic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_outputDirectory(value: js.Any): Self = StObject.set(x, "_outputDirectory", value.asInstanceOf[js.Any])
+    inline def set_outputDirectory(value: js.Any): Self = StObject.set(x, "_outputDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+    inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sharedOutputFile(value: js.Any): Self = StObject.set(x, "_sharedOutputFile", value.asInstanceOf[js.Any])
+    inline def set_sharedOutputFile(value: js.Any): Self = StObject.set(x, "_sharedOutputFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sourceMapRootDirectory(value: js.Any): Self = StObject.set(x, "_sourceMapRootDirectory", value.asInstanceOf[js.Any])
+    inline def set_sourceMapRootDirectory(value: js.Any): Self = StObject.set(x, "_sourceMapRootDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sourceRootDirectory(value: js.Any): Self = StObject.set(x, "_sourceRootDirectory", value.asInstanceOf[js.Any])
+    inline def set_sourceRootDirectory(value: js.Any): Self = StObject.set(x, "_sourceRootDirectory", value.asInstanceOf[js.Any])
   }
 }

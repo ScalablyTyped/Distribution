@@ -47,21 +47,16 @@ object encryptionByDefaultMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EncryptionByDefaultState): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EncryptionByDefaultState, opts: CustomResourceOptions): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
+    inline def get(name: String, id: Input[ID]): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
+    inline def get(name: String, id: Input[ID], state: EncryptionByDefaultState): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
+    inline def get(name: String, id: Input[ID], state: EncryptionByDefaultState, opts: CustomResourceOptions): EncryptionByDefault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionByDefault]
     
     /**
       * Returns true if the given object is an instance of EncryptionByDefault.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/encryptionByDefault.EncryptionByDefault */ Boolean]
   }
   
   trait EncryptionByDefaultArgs extends StObject {
@@ -73,20 +68,16 @@ object encryptionByDefaultMod {
   }
   object EncryptionByDefaultArgs {
     
-    @scala.inline
-    def apply(): EncryptionByDefaultArgs = {
+    inline def apply(): EncryptionByDefaultArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncryptionByDefaultArgs]
     }
     
-    @scala.inline
-    implicit class EncryptionByDefaultArgsMutableBuilder[Self <: EncryptionByDefaultArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionByDefaultArgs](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     }
   }
   
@@ -99,20 +90,16 @@ object encryptionByDefaultMod {
   }
   object EncryptionByDefaultState {
     
-    @scala.inline
-    def apply(): EncryptionByDefaultState = {
+    inline def apply(): EncryptionByDefaultState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncryptionByDefaultState]
     }
     
-    @scala.inline
-    implicit class EncryptionByDefaultStateMutableBuilder[Self <: EncryptionByDefaultState] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionByDefaultState](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     }
   }
 }

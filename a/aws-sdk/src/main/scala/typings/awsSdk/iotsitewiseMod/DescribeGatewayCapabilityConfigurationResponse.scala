@@ -28,8 +28,7 @@ trait DescribeGatewayCapabilityConfigurationResponse extends StObject {
 }
 object DescribeGatewayCapabilityConfigurationResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capabilityConfiguration: CapabilityConfiguration,
     capabilityNamespace: CapabilityNamespace,
     capabilitySyncStatus: CapabilitySyncStatus,
@@ -39,19 +38,14 @@ object DescribeGatewayCapabilityConfigurationResponse {
     __obj.asInstanceOf[DescribeGatewayCapabilityConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeGatewayCapabilityConfigurationResponseMutableBuilder[Self <: DescribeGatewayCapabilityConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGatewayCapabilityConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setCapabilityConfiguration(value: CapabilityConfiguration): Self = StObject.set(x, "capabilityConfiguration", value.asInstanceOf[js.Any])
+    inline def setCapabilityConfiguration(value: CapabilityConfiguration): Self = StObject.set(x, "capabilityConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilityNamespace(value: CapabilityNamespace): Self = StObject.set(x, "capabilityNamespace", value.asInstanceOf[js.Any])
+    inline def setCapabilityNamespace(value: CapabilityNamespace): Self = StObject.set(x, "capabilityNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitySyncStatus(value: CapabilitySyncStatus): Self = StObject.set(x, "capabilitySyncStatus", value.asInstanceOf[js.Any])
+    inline def setCapabilitySyncStatus(value: CapabilitySyncStatus): Self = StObject.set(x, "capabilitySyncStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
   }
 }

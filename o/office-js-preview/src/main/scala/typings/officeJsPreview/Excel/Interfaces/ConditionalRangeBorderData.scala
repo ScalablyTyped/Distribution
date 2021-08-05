@@ -47,31 +47,23 @@ trait ConditionalRangeBorderData extends StObject {
 }
 object ConditionalRangeBorderData {
   
-  @scala.inline
-  def apply(): ConditionalRangeBorderData = {
+  inline def apply(): ConditionalRangeBorderData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalRangeBorderData]
   }
   
-  @scala.inline
-  implicit class ConditionalRangeBorderDataMutableBuilder[Self <: ConditionalRangeBorderData] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalRangeBorderData](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSideIndex(value: ConditionalRangeBorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
+    inline def setSideIndex(value: ConditionalRangeBorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
+    inline def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ConditionalRangeBorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ConditionalRangeBorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait HlsConfiguration extends StObject {
 }
 object HlsConfiguration {
   
-  @scala.inline
-  def apply(): HlsConfiguration = {
+  inline def apply(): HlsConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsConfiguration]
   }
   
-  @scala.inline
-  implicit class HlsConfigurationMutableBuilder[Self <: HlsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: HlsConfiguration](x: Self) {
     
-    @scala.inline
-    def setManifestEndpointPrefix(value: string): Self = StObject.set(x, "ManifestEndpointPrefix", value.asInstanceOf[js.Any])
+    inline def setManifestEndpointPrefix(value: string): Self = StObject.set(x, "ManifestEndpointPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestEndpointPrefixUndefined: Self = StObject.set(x, "ManifestEndpointPrefix", js.undefined)
+    inline def setManifestEndpointPrefixUndefined: Self = StObject.set(x, "ManifestEndpointPrefix", js.undefined)
   }
 }

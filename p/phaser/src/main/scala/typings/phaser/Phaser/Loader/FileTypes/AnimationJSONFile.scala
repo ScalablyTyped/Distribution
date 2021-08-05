@@ -32,8 +32,7 @@ trait AnimationJSONFile
 }
 object AnimationJSONFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,
@@ -70,10 +69,8 @@ object AnimationJSONFile {
     __obj.asInstanceOf[AnimationJSONFile]
   }
   
-  @scala.inline
-  implicit class AnimationJSONFileMutableBuilder[Self <: AnimationJSONFile] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationJSONFile](x: Self) {
     
-    @scala.inline
-    def setOnLoadComplete(value: () => Unit): Self = StObject.set(x, "onLoadComplete", js.Any.fromFunction0(value))
+    inline def setOnLoadComplete(value: () => Unit): Self = StObject.set(x, "onLoadComplete", js.Any.fromFunction0(value))
   }
 }

@@ -20,25 +20,19 @@ trait MoveCursor
 }
 object MoveCursor {
   
-  @scala.inline
-  def apply(): MoveCursor = {
+  inline def apply(): MoveCursor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveCursor]
   }
   
-  @scala.inline
-  implicit class MoveCursorMutableBuilder[Self <: MoveCursor] (val x: Self) extends AnyVal {
+  extension [Self <: MoveCursor](x: Self) {
     
-    @scala.inline
-    def setBy(value: js.Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    inline def setBy(value: js.Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByUndefined: Self = StObject.set(x, "by", js.undefined)
+    inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
     
-    @scala.inline
-    def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

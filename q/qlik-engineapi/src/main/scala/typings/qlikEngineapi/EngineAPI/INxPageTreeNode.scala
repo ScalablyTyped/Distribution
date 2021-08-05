@@ -21,19 +21,15 @@ trait INxPageTreeNode extends StObject {
 }
 object INxPageTreeNode {
   
-  @scala.inline
-  def apply(qAllValues: Boolean, qArea: IRect): INxPageTreeNode = {
+  inline def apply(qAllValues: Boolean, qArea: IRect): INxPageTreeNode = {
     val __obj = js.Dynamic.literal(qAllValues = qAllValues.asInstanceOf[js.Any], qArea = qArea.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxPageTreeNode]
   }
   
-  @scala.inline
-  implicit class INxPageTreeNodeMutableBuilder[Self <: INxPageTreeNode] (val x: Self) extends AnyVal {
+  extension [Self <: INxPageTreeNode](x: Self) {
     
-    @scala.inline
-    def setQAllValues(value: Boolean): Self = StObject.set(x, "qAllValues", value.asInstanceOf[js.Any])
+    inline def setQAllValues(value: Boolean): Self = StObject.set(x, "qAllValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQArea(value: IRect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
+    inline def setQArea(value: IRect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
   }
 }

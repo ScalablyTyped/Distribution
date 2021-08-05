@@ -26,8 +26,7 @@ trait Url[T] extends StObject {
 }
 object Url {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     hash: String,
     host: String,
     href: String,
@@ -42,34 +41,24 @@ object Url {
     __obj.asInstanceOf[Url[T]]
   }
   
-  @scala.inline
-  implicit class UrlMutableBuilder[Self <: Url[?], T] (val x: Self & Url[T]) extends AnyVal {
+  extension [Self <: Url[?], T](x: Self & Url[T]) {
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+    inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: T): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: T): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

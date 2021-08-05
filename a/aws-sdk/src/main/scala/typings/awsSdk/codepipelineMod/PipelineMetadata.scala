@@ -23,31 +23,23 @@ trait PipelineMetadata extends StObject {
 }
 object PipelineMetadata {
   
-  @scala.inline
-  def apply(): PipelineMetadata = {
+  inline def apply(): PipelineMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PipelineMetadata]
   }
   
-  @scala.inline
-  implicit class PipelineMetadataMutableBuilder[Self <: PipelineMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineMetadata](x: Self) {
     
-    @scala.inline
-    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setPipelineArn(value: PipelineArn): Self = StObject.set(x, "pipelineArn", value.asInstanceOf[js.Any])
+    inline def setPipelineArn(value: PipelineArn): Self = StObject.set(x, "pipelineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineArnUndefined: Self = StObject.set(x, "pipelineArn", js.undefined)
+    inline def setPipelineArnUndefined: Self = StObject.set(x, "pipelineArn", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

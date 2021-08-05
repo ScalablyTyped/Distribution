@@ -24,8 +24,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(config: CreateConfig): js.Promise[Evaporate] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Evaporate]]
+  inline def create(config: CreateConfig): js.Promise[Evaporate] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Evaporate]]
   
   trait AddConfig extends StObject {
     
@@ -75,134 +74,92 @@ object mod {
   }
   object AddConfig {
     
-    @scala.inline
-    def apply(file: File, name: String): AddConfig = {
+    inline def apply(file: File, name: String): AddConfig = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddConfig]
     }
     
-    @scala.inline
-    implicit class AddConfigMutableBuilder[Self <: AddConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AddConfig](x: Self) {
       
-      @scala.inline
-      def setBeforeSigner(value: (/* xhr */ XMLHttpRequest, /* url */ String) => Unit): Self = StObject.set(x, "beforeSigner", js.Any.fromFunction2(value))
+      inline def setBeforeSigner(value: (/* xhr */ XMLHttpRequest, /* url */ String) => Unit): Self = StObject.set(x, "beforeSigner", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeSignerUndefined: Self = StObject.set(x, "beforeSigner", js.undefined)
+      inline def setBeforeSignerUndefined: Self = StObject.set(x, "beforeSigner", js.undefined)
       
-      @scala.inline
-      def setCancelled(value: () => Unit): Self = StObject.set(x, "cancelled", js.Any.fromFunction0(value))
+      inline def setCancelled(value: () => Unit): Self = StObject.set(x, "cancelled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
+      inline def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
       
-      @scala.inline
-      def setComplete(value: (/* xhr */ XMLHttpRequest, /* awsObjectKey */ String, /* stats */ TransferStats) => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction3(value))
+      inline def setComplete(value: (/* xhr */ XMLHttpRequest, /* awsObjectKey */ String, /* stats */ TransferStats) => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* msg */ String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: /* msg */ String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* msg */ String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameChanged(value: /* awsObjectKey */ String => Unit): Self = StObject.set(x, "nameChanged", js.Any.fromFunction1(value))
+      inline def setNameChanged(value: /* awsObjectKey */ String => Unit): Self = StObject.set(x, "nameChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNameChangedUndefined: Self = StObject.set(x, "nameChanged", js.undefined)
+      inline def setNameChangedUndefined: Self = StObject.set(x, "nameChanged", js.undefined)
       
-      @scala.inline
-      def setNotSignedHeadersAtInitiate(value: StringDictionary[String]): Self = StObject.set(x, "notSignedHeadersAtInitiate", value.asInstanceOf[js.Any])
+      inline def setNotSignedHeadersAtInitiate(value: StringDictionary[String]): Self = StObject.set(x, "notSignedHeadersAtInitiate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotSignedHeadersAtInitiateUndefined: Self = StObject.set(x, "notSignedHeadersAtInitiate", js.undefined)
+      inline def setNotSignedHeadersAtInitiateUndefined: Self = StObject.set(x, "notSignedHeadersAtInitiate", js.undefined)
       
-      @scala.inline
-      def setPaused(value: /* file_key */ String => Unit): Self = StObject.set(x, "paused", js.Any.fromFunction1(value))
+      inline def setPaused(value: /* file_key */ String => Unit): Self = StObject.set(x, "paused", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setPausing(value: /* file_key */ String => Unit): Self = StObject.set(x, "pausing", js.Any.fromFunction1(value))
+      inline def setPausing(value: /* file_key */ String => Unit): Self = StObject.set(x, "pausing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPausingUndefined: Self = StObject.set(x, "pausing", js.undefined)
+      inline def setPausingUndefined: Self = StObject.set(x, "pausing", js.undefined)
       
-      @scala.inline
-      def setProgress(value: (/* p */ Double, /* stats */ TransferStats) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+      inline def setProgress(value: (/* p */ Double, /* stats */ TransferStats) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setResumed(value: /* file_key */ String => Unit): Self = StObject.set(x, "resumed", js.Any.fromFunction1(value))
+      inline def setResumed(value: /* file_key */ String => Unit): Self = StObject.set(x, "resumed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResumedUndefined: Self = StObject.set(x, "resumed", js.undefined)
+      inline def setResumedUndefined: Self = StObject.set(x, "resumed", js.undefined)
       
-      @scala.inline
-      def setStarted(value: /* file_key */ String => Unit): Self = StObject.set(x, "started", js.Any.fromFunction1(value))
+      inline def setStarted(value: /* file_key */ String => Unit): Self = StObject.set(x, "started", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
+      inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
       
-      @scala.inline
-      def setUploadInitiated(value: /* s3UploadId */ js.UndefOr[String] => Unit): Self = StObject.set(x, "uploadInitiated", js.Any.fromFunction1(value))
+      inline def setUploadInitiated(value: /* s3UploadId */ js.UndefOr[String] => Unit): Self = StObject.set(x, "uploadInitiated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUploadInitiatedUndefined: Self = StObject.set(x, "uploadInitiated", js.undefined)
+      inline def setUploadInitiatedUndefined: Self = StObject.set(x, "uploadInitiated", js.undefined)
       
-      @scala.inline
-      def setWarn(value: /* msg */ String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* msg */ String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
-      @scala.inline
-      def setXAmzHeadersAtComplete(value: StringDictionary[String]): Self = StObject.set(x, "xAmzHeadersAtComplete", value.asInstanceOf[js.Any])
+      inline def setXAmzHeadersAtComplete(value: StringDictionary[String]): Self = StObject.set(x, "xAmzHeadersAtComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXAmzHeadersAtCompleteUndefined: Self = StObject.set(x, "xAmzHeadersAtComplete", js.undefined)
+      inline def setXAmzHeadersAtCompleteUndefined: Self = StObject.set(x, "xAmzHeadersAtComplete", js.undefined)
       
-      @scala.inline
-      def setXAmzHeadersAtInitiate(value: StringDictionary[String]): Self = StObject.set(x, "xAmzHeadersAtInitiate", value.asInstanceOf[js.Any])
+      inline def setXAmzHeadersAtInitiate(value: StringDictionary[String]): Self = StObject.set(x, "xAmzHeadersAtInitiate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXAmzHeadersAtInitiateUndefined: Self = StObject.set(x, "xAmzHeadersAtInitiate", js.undefined)
+      inline def setXAmzHeadersAtInitiateUndefined: Self = StObject.set(x, "xAmzHeadersAtInitiate", js.undefined)
       
-      @scala.inline
-      def setXAmzHeadersAtUpload(value: StringDictionary[String]): Self = StObject.set(x, "xAmzHeadersAtUpload", value.asInstanceOf[js.Any])
+      inline def setXAmzHeadersAtUpload(value: StringDictionary[String]): Self = StObject.set(x, "xAmzHeadersAtUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXAmzHeadersAtUploadUndefined: Self = StObject.set(x, "xAmzHeadersAtUpload", js.undefined)
+      inline def setXAmzHeadersAtUploadUndefined: Self = StObject.set(x, "xAmzHeadersAtUpload", js.undefined)
       
-      @scala.inline
-      def setXAmzHeadersCommon(value: StringDictionary[String]): Self = StObject.set(x, "xAmzHeadersCommon", value.asInstanceOf[js.Any])
+      inline def setXAmzHeadersCommon(value: StringDictionary[String]): Self = StObject.set(x, "xAmzHeadersCommon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXAmzHeadersCommonUndefined: Self = StObject.set(x, "xAmzHeadersCommon", js.undefined)
+      inline def setXAmzHeadersCommonUndefined: Self = StObject.set(x, "xAmzHeadersCommon", js.undefined)
     }
   }
   
@@ -234,71 +191,49 @@ object mod {
   trait AddOverrideOptionKeys extends StObject
   object AddOverrideOptionKeys {
     
-    @scala.inline
-    def abortCompletionThrottlingMs: typings.evaporate.evaporateStrings.abortCompletionThrottlingMs = "abortCompletionThrottlingMs".asInstanceOf[typings.evaporate.evaporateStrings.abortCompletionThrottlingMs]
+    inline def abortCompletionThrottlingMs: typings.evaporate.evaporateStrings.abortCompletionThrottlingMs = "abortCompletionThrottlingMs".asInstanceOf[typings.evaporate.evaporateStrings.abortCompletionThrottlingMs]
     
-    @scala.inline
-    def aws_key: typings.evaporate.evaporateStrings.aws_key = "aws_key".asInstanceOf[typings.evaporate.evaporateStrings.aws_key]
+    inline def aws_key: typings.evaporate.evaporateStrings.aws_key = "aws_key".asInstanceOf[typings.evaporate.evaporateStrings.aws_key]
     
-    @scala.inline
-    def aws_url: typings.evaporate.evaporateStrings.aws_url = "aws_url".asInstanceOf[typings.evaporate.evaporateStrings.aws_url]
+    inline def aws_url: typings.evaporate.evaporateStrings.aws_url = "aws_url".asInstanceOf[typings.evaporate.evaporateStrings.aws_url]
     
-    @scala.inline
-    def bucket: typings.evaporate.evaporateStrings.bucket = "bucket".asInstanceOf[typings.evaporate.evaporateStrings.bucket]
+    inline def bucket: typings.evaporate.evaporateStrings.bucket = "bucket".asInstanceOf[typings.evaporate.evaporateStrings.bucket]
     
-    @scala.inline
-    def customAuthMethod: typings.evaporate.evaporateStrings.customAuthMethod = "customAuthMethod".asInstanceOf[typings.evaporate.evaporateStrings.customAuthMethod]
+    inline def customAuthMethod: typings.evaporate.evaporateStrings.customAuthMethod = "customAuthMethod".asInstanceOf[typings.evaporate.evaporateStrings.customAuthMethod]
     
-    @scala.inline
-    def localTimeOffset: typings.evaporate.evaporateStrings.localTimeOffset = "localTimeOffset".asInstanceOf[typings.evaporate.evaporateStrings.localTimeOffset]
+    inline def localTimeOffset: typings.evaporate.evaporateStrings.localTimeOffset = "localTimeOffset".asInstanceOf[typings.evaporate.evaporateStrings.localTimeOffset]
     
-    @scala.inline
-    def maxFileSize: typings.evaporate.evaporateStrings.maxFileSize = "maxFileSize".asInstanceOf[typings.evaporate.evaporateStrings.maxFileSize]
+    inline def maxFileSize: typings.evaporate.evaporateStrings.maxFileSize = "maxFileSize".asInstanceOf[typings.evaporate.evaporateStrings.maxFileSize]
     
-    @scala.inline
-    def maxRetryBackoffSecs: typings.evaporate.evaporateStrings.maxRetryBackoffSecs = "maxRetryBackoffSecs".asInstanceOf[typings.evaporate.evaporateStrings.maxRetryBackoffSecs]
+    inline def maxRetryBackoffSecs: typings.evaporate.evaporateStrings.maxRetryBackoffSecs = "maxRetryBackoffSecs".asInstanceOf[typings.evaporate.evaporateStrings.maxRetryBackoffSecs]
     
-    @scala.inline
-    def mockLocalStorage: typings.evaporate.evaporateStrings.mockLocalStorage = "mockLocalStorage".asInstanceOf[typings.evaporate.evaporateStrings.mockLocalStorage]
+    inline def mockLocalStorage: typings.evaporate.evaporateStrings.mockLocalStorage = "mockLocalStorage".asInstanceOf[typings.evaporate.evaporateStrings.mockLocalStorage]
     
-    @scala.inline
-    def partSize: typings.evaporate.evaporateStrings.partSize = "partSize".asInstanceOf[typings.evaporate.evaporateStrings.partSize]
+    inline def partSize: typings.evaporate.evaporateStrings.partSize = "partSize".asInstanceOf[typings.evaporate.evaporateStrings.partSize]
     
-    @scala.inline
-    def progressIntervalMS: typings.evaporate.evaporateStrings.progressIntervalMS = "progressIntervalMS".asInstanceOf[typings.evaporate.evaporateStrings.progressIntervalMS]
+    inline def progressIntervalMS: typings.evaporate.evaporateStrings.progressIntervalMS = "progressIntervalMS".asInstanceOf[typings.evaporate.evaporateStrings.progressIntervalMS]
     
-    @scala.inline
-    def readableStreamPartMethod: typings.evaporate.evaporateStrings.readableStreamPartMethod = "readableStreamPartMethod".asInstanceOf[typings.evaporate.evaporateStrings.readableStreamPartMethod]
+    inline def readableStreamPartMethod: typings.evaporate.evaporateStrings.readableStreamPartMethod = "readableStreamPartMethod".asInstanceOf[typings.evaporate.evaporateStrings.readableStreamPartMethod]
     
-    @scala.inline
-    def readableStreams: typings.evaporate.evaporateStrings.readableStreams = "readableStreams".asInstanceOf[typings.evaporate.evaporateStrings.readableStreams]
+    inline def readableStreams: typings.evaporate.evaporateStrings.readableStreams = "readableStreams".asInstanceOf[typings.evaporate.evaporateStrings.readableStreams]
     
-    @scala.inline
-    def retryBackoffPower: typings.evaporate.evaporateStrings.retryBackoffPower = "retryBackoffPower".asInstanceOf[typings.evaporate.evaporateStrings.retryBackoffPower]
+    inline def retryBackoffPower: typings.evaporate.evaporateStrings.retryBackoffPower = "retryBackoffPower".asInstanceOf[typings.evaporate.evaporateStrings.retryBackoffPower]
     
-    @scala.inline
-    def s3Acceleration: typings.evaporate.evaporateStrings.s3Acceleration = "s3Acceleration".asInstanceOf[typings.evaporate.evaporateStrings.s3Acceleration]
+    inline def s3Acceleration: typings.evaporate.evaporateStrings.s3Acceleration = "s3Acceleration".asInstanceOf[typings.evaporate.evaporateStrings.s3Acceleration]
     
-    @scala.inline
-    def s3FileCacheHoursAgo: typings.evaporate.evaporateStrings.s3FileCacheHoursAgo = "s3FileCacheHoursAgo".asInstanceOf[typings.evaporate.evaporateStrings.s3FileCacheHoursAgo]
+    inline def s3FileCacheHoursAgo: typings.evaporate.evaporateStrings.s3FileCacheHoursAgo = "s3FileCacheHoursAgo".asInstanceOf[typings.evaporate.evaporateStrings.s3FileCacheHoursAgo]
     
-    @scala.inline
-    def sendCanonicalRequestToSignerUrl: typings.evaporate.evaporateStrings.sendCanonicalRequestToSignerUrl = "sendCanonicalRequestToSignerUrl".asInstanceOf[typings.evaporate.evaporateStrings.sendCanonicalRequestToSignerUrl]
+    inline def sendCanonicalRequestToSignerUrl: typings.evaporate.evaporateStrings.sendCanonicalRequestToSignerUrl = "sendCanonicalRequestToSignerUrl".asInstanceOf[typings.evaporate.evaporateStrings.sendCanonicalRequestToSignerUrl]
     
-    @scala.inline
-    def signHeaders: typings.evaporate.evaporateStrings.signHeaders = "signHeaders".asInstanceOf[typings.evaporate.evaporateStrings.signHeaders]
+    inline def signHeaders: typings.evaporate.evaporateStrings.signHeaders = "signHeaders".asInstanceOf[typings.evaporate.evaporateStrings.signHeaders]
     
-    @scala.inline
-    def signParams: typings.evaporate.evaporateStrings.signParams = "signParams".asInstanceOf[typings.evaporate.evaporateStrings.signParams]
+    inline def signParams: typings.evaporate.evaporateStrings.signParams = "signParams".asInstanceOf[typings.evaporate.evaporateStrings.signParams]
     
-    @scala.inline
-    def signResponseHandler: typings.evaporate.evaporateStrings.signResponseHandler = "signResponseHandler".asInstanceOf[typings.evaporate.evaporateStrings.signResponseHandler]
+    inline def signResponseHandler: typings.evaporate.evaporateStrings.signResponseHandler = "signResponseHandler".asInstanceOf[typings.evaporate.evaporateStrings.signResponseHandler]
     
-    @scala.inline
-    def signerUrl: typings.evaporate.evaporateStrings.signerUrl = "signerUrl".asInstanceOf[typings.evaporate.evaporateStrings.signerUrl]
+    inline def signerUrl: typings.evaporate.evaporateStrings.signerUrl = "signerUrl".asInstanceOf[typings.evaporate.evaporateStrings.signerUrl]
     
-    @scala.inline
-    def xhrWithCredentials: typings.evaporate.evaporateStrings.xhrWithCredentials = "xhrWithCredentials".asInstanceOf[typings.evaporate.evaporateStrings.xhrWithCredentials]
+    inline def xhrWithCredentials: typings.evaporate.evaporateStrings.xhrWithCredentials = "xhrWithCredentials".asInstanceOf[typings.evaporate.evaporateStrings.xhrWithCredentials]
   }
   
   /* Inlined parent std.Pick<evaporate.evaporate.CreateConfig, evaporate.evaporate.AddOverrideOptionKeys> */
@@ -368,159 +303,110 @@ object mod {
   }
   object AddOverrideOptions {
     
-    @scala.inline
-    def apply(bucket: String): AddOverrideOptions = {
+    inline def apply(bucket: String): AddOverrideOptions = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddOverrideOptions]
     }
     
-    @scala.inline
-    implicit class AddOverrideOptionsMutableBuilder[Self <: AddOverrideOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddOverrideOptions](x: Self) {
       
-      @scala.inline
-      def setAbortCompletionThrottlingMs(value: Double): Self = StObject.set(x, "abortCompletionThrottlingMs", value.asInstanceOf[js.Any])
+      inline def setAbortCompletionThrottlingMs(value: Double): Self = StObject.set(x, "abortCompletionThrottlingMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortCompletionThrottlingMsUndefined: Self = StObject.set(x, "abortCompletionThrottlingMs", js.undefined)
+      inline def setAbortCompletionThrottlingMsUndefined: Self = StObject.set(x, "abortCompletionThrottlingMs", js.undefined)
       
-      @scala.inline
-      def setAws_key(value: String): Self = StObject.set(x, "aws_key", value.asInstanceOf[js.Any])
+      inline def setAws_key(value: String): Self = StObject.set(x, "aws_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAws_keyUndefined: Self = StObject.set(x, "aws_key", js.undefined)
+      inline def setAws_keyUndefined: Self = StObject.set(x, "aws_key", js.undefined)
       
-      @scala.inline
-      def setAws_url(value: String): Self = StObject.set(x, "aws_url", value.asInstanceOf[js.Any])
+      inline def setAws_url(value: String): Self = StObject.set(x, "aws_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAws_urlUndefined: Self = StObject.set(x, "aws_url", js.undefined)
+      inline def setAws_urlUndefined: Self = StObject.set(x, "aws_url", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomAuthMethod(
+      inline def setCustomAuthMethod(
         value: (/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String]
       ): Self = StObject.set(x, "customAuthMethod", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setCustomAuthMethodNull: Self = StObject.set(x, "customAuthMethod", null)
+      inline def setCustomAuthMethodNull: Self = StObject.set(x, "customAuthMethod", null)
       
-      @scala.inline
-      def setCustomAuthMethodUndefined: Self = StObject.set(x, "customAuthMethod", js.undefined)
+      inline def setCustomAuthMethodUndefined: Self = StObject.set(x, "customAuthMethod", js.undefined)
       
-      @scala.inline
-      def setLocalTimeOffset(value: Double): Self = StObject.set(x, "localTimeOffset", value.asInstanceOf[js.Any])
+      inline def setLocalTimeOffset(value: Double): Self = StObject.set(x, "localTimeOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalTimeOffsetUndefined: Self = StObject.set(x, "localTimeOffset", js.undefined)
+      inline def setLocalTimeOffsetUndefined: Self = StObject.set(x, "localTimeOffset", js.undefined)
       
-      @scala.inline
-      def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+      inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+      inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
       
-      @scala.inline
-      def setMaxRetryBackoffSecs(value: Double): Self = StObject.set(x, "maxRetryBackoffSecs", value.asInstanceOf[js.Any])
+      inline def setMaxRetryBackoffSecs(value: Double): Self = StObject.set(x, "maxRetryBackoffSecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetryBackoffSecsUndefined: Self = StObject.set(x, "maxRetryBackoffSecs", js.undefined)
+      inline def setMaxRetryBackoffSecsUndefined: Self = StObject.set(x, "maxRetryBackoffSecs", js.undefined)
       
-      @scala.inline
-      def setMockLocalStorage(value: Boolean): Self = StObject.set(x, "mockLocalStorage", value.asInstanceOf[js.Any])
+      inline def setMockLocalStorage(value: Boolean): Self = StObject.set(x, "mockLocalStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMockLocalStorageUndefined: Self = StObject.set(x, "mockLocalStorage", js.undefined)
+      inline def setMockLocalStorageUndefined: Self = StObject.set(x, "mockLocalStorage", js.undefined)
       
-      @scala.inline
-      def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+      inline def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+      inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
       
-      @scala.inline
-      def setProgressIntervalMS(value: Double): Self = StObject.set(x, "progressIntervalMS", value.asInstanceOf[js.Any])
+      inline def setProgressIntervalMS(value: Double): Self = StObject.set(x, "progressIntervalMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressIntervalMSUndefined: Self = StObject.set(x, "progressIntervalMS", js.undefined)
+      inline def setProgressIntervalMSUndefined: Self = StObject.set(x, "progressIntervalMS", js.undefined)
       
-      @scala.inline
-      def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[js.Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
+      inline def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[js.Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReadableStreamPartMethodNull: Self = StObject.set(x, "readableStreamPartMethod", null)
+      inline def setReadableStreamPartMethodNull: Self = StObject.set(x, "readableStreamPartMethod", null)
       
-      @scala.inline
-      def setReadableStreamPartMethodUndefined: Self = StObject.set(x, "readableStreamPartMethod", js.undefined)
+      inline def setReadableStreamPartMethodUndefined: Self = StObject.set(x, "readableStreamPartMethod", js.undefined)
       
-      @scala.inline
-      def setReadableStreams(value: Boolean): Self = StObject.set(x, "readableStreams", value.asInstanceOf[js.Any])
+      inline def setReadableStreams(value: Boolean): Self = StObject.set(x, "readableStreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableStreamsUndefined: Self = StObject.set(x, "readableStreams", js.undefined)
+      inline def setReadableStreamsUndefined: Self = StObject.set(x, "readableStreams", js.undefined)
       
-      @scala.inline
-      def setRetryBackoffPower(value: Double): Self = StObject.set(x, "retryBackoffPower", value.asInstanceOf[js.Any])
+      inline def setRetryBackoffPower(value: Double): Self = StObject.set(x, "retryBackoffPower", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryBackoffPowerUndefined: Self = StObject.set(x, "retryBackoffPower", js.undefined)
+      inline def setRetryBackoffPowerUndefined: Self = StObject.set(x, "retryBackoffPower", js.undefined)
       
-      @scala.inline
-      def setS3Acceleration(value: Boolean): Self = StObject.set(x, "s3Acceleration", value.asInstanceOf[js.Any])
+      inline def setS3Acceleration(value: Boolean): Self = StObject.set(x, "s3Acceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3AccelerationUndefined: Self = StObject.set(x, "s3Acceleration", js.undefined)
+      inline def setS3AccelerationUndefined: Self = StObject.set(x, "s3Acceleration", js.undefined)
       
-      @scala.inline
-      def setS3FileCacheHoursAgo(value: Double): Self = StObject.set(x, "s3FileCacheHoursAgo", value.asInstanceOf[js.Any])
+      inline def setS3FileCacheHoursAgo(value: Double): Self = StObject.set(x, "s3FileCacheHoursAgo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3FileCacheHoursAgoNull: Self = StObject.set(x, "s3FileCacheHoursAgo", null)
+      inline def setS3FileCacheHoursAgoNull: Self = StObject.set(x, "s3FileCacheHoursAgo", null)
       
-      @scala.inline
-      def setS3FileCacheHoursAgoUndefined: Self = StObject.set(x, "s3FileCacheHoursAgo", js.undefined)
+      inline def setS3FileCacheHoursAgoUndefined: Self = StObject.set(x, "s3FileCacheHoursAgo", js.undefined)
       
-      @scala.inline
-      def setSendCanonicalRequestToSignerUrl(value: Boolean): Self = StObject.set(x, "sendCanonicalRequestToSignerUrl", value.asInstanceOf[js.Any])
+      inline def setSendCanonicalRequestToSignerUrl(value: Boolean): Self = StObject.set(x, "sendCanonicalRequestToSignerUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendCanonicalRequestToSignerUrlUndefined: Self = StObject.set(x, "sendCanonicalRequestToSignerUrl", js.undefined)
+      inline def setSendCanonicalRequestToSignerUrlUndefined: Self = StObject.set(x, "sendCanonicalRequestToSignerUrl", js.undefined)
       
-      @scala.inline
-      def setSignHeaders(value: js.Object): Self = StObject.set(x, "signHeaders", value.asInstanceOf[js.Any])
+      inline def setSignHeaders(value: js.Object): Self = StObject.set(x, "signHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignHeadersUndefined: Self = StObject.set(x, "signHeaders", js.undefined)
+      inline def setSignHeadersUndefined: Self = StObject.set(x, "signHeaders", js.undefined)
       
-      @scala.inline
-      def setSignParams(value: js.Object): Self = StObject.set(x, "signParams", value.asInstanceOf[js.Any])
+      inline def setSignParams(value: js.Object): Self = StObject.set(x, "signParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignParamsUndefined: Self = StObject.set(x, "signParams", js.undefined)
+      inline def setSignParamsUndefined: Self = StObject.set(x, "signParams", js.undefined)
       
-      @scala.inline
-      def setSignResponseHandler(
+      inline def setSignResponseHandler(
         value: (/* response */ js.Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String]
       ): Self = StObject.set(x, "signResponseHandler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSignResponseHandlerNull: Self = StObject.set(x, "signResponseHandler", null)
+      inline def setSignResponseHandlerNull: Self = StObject.set(x, "signResponseHandler", null)
       
-      @scala.inline
-      def setSignResponseHandlerUndefined: Self = StObject.set(x, "signResponseHandler", js.undefined)
+      inline def setSignResponseHandlerUndefined: Self = StObject.set(x, "signResponseHandler", js.undefined)
       
-      @scala.inline
-      def setSignerUrl(value: String): Self = StObject.set(x, "signerUrl", value.asInstanceOf[js.Any])
+      inline def setSignerUrl(value: String): Self = StObject.set(x, "signerUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerUrlUndefined: Self = StObject.set(x, "signerUrl", js.undefined)
+      inline def setSignerUrlUndefined: Self = StObject.set(x, "signerUrl", js.undefined)
       
-      @scala.inline
-      def setXhrWithCredentials(value: Boolean): Self = StObject.set(x, "xhrWithCredentials", value.asInstanceOf[js.Any])
+      inline def setXhrWithCredentials(value: Boolean): Self = StObject.set(x, "xhrWithCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrWithCredentialsUndefined: Self = StObject.set(x, "xhrWithCredentials", js.undefined)
+      inline def setXhrWithCredentialsUndefined: Self = StObject.set(x, "xhrWithCredentials", js.undefined)
     }
   }
   
@@ -616,243 +502,166 @@ object mod {
   }
   object CreateConfig {
     
-    @scala.inline
-    def apply(bucket: String): CreateConfig = {
+    inline def apply(bucket: String): CreateConfig = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateConfig]
     }
     
-    @scala.inline
-    implicit class CreateConfigMutableBuilder[Self <: CreateConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CreateConfig](x: Self) {
       
-      @scala.inline
-      def setAbortCompletionThrottlingMs(value: Double): Self = StObject.set(x, "abortCompletionThrottlingMs", value.asInstanceOf[js.Any])
+      inline def setAbortCompletionThrottlingMs(value: Double): Self = StObject.set(x, "abortCompletionThrottlingMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortCompletionThrottlingMsUndefined: Self = StObject.set(x, "abortCompletionThrottlingMs", js.undefined)
+      inline def setAbortCompletionThrottlingMsUndefined: Self = StObject.set(x, "abortCompletionThrottlingMs", js.undefined)
       
-      @scala.inline
-      def setAllowS3ExistenceOptimization(value: Boolean): Self = StObject.set(x, "allowS3ExistenceOptimization", value.asInstanceOf[js.Any])
+      inline def setAllowS3ExistenceOptimization(value: Boolean): Self = StObject.set(x, "allowS3ExistenceOptimization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowS3ExistenceOptimizationUndefined: Self = StObject.set(x, "allowS3ExistenceOptimization", js.undefined)
+      inline def setAllowS3ExistenceOptimizationUndefined: Self = StObject.set(x, "allowS3ExistenceOptimization", js.undefined)
       
-      @scala.inline
-      def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
+      inline def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
       
-      @scala.inline
-      def setAwsSignatureVersion(value: `2` | `4`): Self = StObject.set(x, "awsSignatureVersion", value.asInstanceOf[js.Any])
+      inline def setAwsSignatureVersion(value: `2` | `4`): Self = StObject.set(x, "awsSignatureVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsSignatureVersionUndefined: Self = StObject.set(x, "awsSignatureVersion", js.undefined)
+      inline def setAwsSignatureVersionUndefined: Self = StObject.set(x, "awsSignatureVersion", js.undefined)
       
-      @scala.inline
-      def setAws_key(value: String): Self = StObject.set(x, "aws_key", value.asInstanceOf[js.Any])
+      inline def setAws_key(value: String): Self = StObject.set(x, "aws_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAws_keyUndefined: Self = StObject.set(x, "aws_key", js.undefined)
+      inline def setAws_keyUndefined: Self = StObject.set(x, "aws_key", js.undefined)
       
-      @scala.inline
-      def setAws_url(value: String): Self = StObject.set(x, "aws_url", value.asInstanceOf[js.Any])
+      inline def setAws_url(value: String): Self = StObject.set(x, "aws_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAws_urlUndefined: Self = StObject.set(x, "aws_url", js.undefined)
+      inline def setAws_urlUndefined: Self = StObject.set(x, "aws_url", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudfront(value: Boolean): Self = StObject.set(x, "cloudfront", value.asInstanceOf[js.Any])
+      inline def setCloudfront(value: Boolean): Self = StObject.set(x, "cloudfront", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudfrontUndefined: Self = StObject.set(x, "cloudfront", js.undefined)
+      inline def setCloudfrontUndefined: Self = StObject.set(x, "cloudfront", js.undefined)
       
-      @scala.inline
-      def setComputeContentMd5(value: Boolean): Self = StObject.set(x, "computeContentMd5", value.asInstanceOf[js.Any])
+      inline def setComputeContentMd5(value: Boolean): Self = StObject.set(x, "computeContentMd5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeContentMd5Undefined: Self = StObject.set(x, "computeContentMd5", js.undefined)
+      inline def setComputeContentMd5Undefined: Self = StObject.set(x, "computeContentMd5", js.undefined)
       
-      @scala.inline
-      def setCryptoHexEncodedHash256(value: /* data */ String | ArrayBuffer | Null => String): Self = StObject.set(x, "cryptoHexEncodedHash256", js.Any.fromFunction1(value))
+      inline def setCryptoHexEncodedHash256(value: /* data */ String | ArrayBuffer | Null => String): Self = StObject.set(x, "cryptoHexEncodedHash256", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCryptoHexEncodedHash256Null: Self = StObject.set(x, "cryptoHexEncodedHash256", null)
+      inline def setCryptoHexEncodedHash256Null: Self = StObject.set(x, "cryptoHexEncodedHash256", null)
       
-      @scala.inline
-      def setCryptoHexEncodedHash256Undefined: Self = StObject.set(x, "cryptoHexEncodedHash256", js.undefined)
+      inline def setCryptoHexEncodedHash256Undefined: Self = StObject.set(x, "cryptoHexEncodedHash256", js.undefined)
       
-      @scala.inline
-      def setCryptoMd5Method(value: /* data */ ArrayBuffer => String): Self = StObject.set(x, "cryptoMd5Method", js.Any.fromFunction1(value))
+      inline def setCryptoMd5Method(value: /* data */ ArrayBuffer => String): Self = StObject.set(x, "cryptoMd5Method", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCryptoMd5MethodNull: Self = StObject.set(x, "cryptoMd5Method", null)
+      inline def setCryptoMd5MethodNull: Self = StObject.set(x, "cryptoMd5Method", null)
       
-      @scala.inline
-      def setCryptoMd5MethodUndefined: Self = StObject.set(x, "cryptoMd5Method", js.undefined)
+      inline def setCryptoMd5MethodUndefined: Self = StObject.set(x, "cryptoMd5Method", js.undefined)
       
-      @scala.inline
-      def setCustomAuthMethod(
+      inline def setCustomAuthMethod(
         value: (/* signParams */ String, /* signHeaders */ String, /* stringToSign */ String, /* signatureDateTime */ String, /* canonicalRequest */ String) => js.Promise[String]
       ): Self = StObject.set(x, "customAuthMethod", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setCustomAuthMethodNull: Self = StObject.set(x, "customAuthMethod", null)
+      inline def setCustomAuthMethodNull: Self = StObject.set(x, "customAuthMethod", null)
       
-      @scala.inline
-      def setCustomAuthMethodUndefined: Self = StObject.set(x, "customAuthMethod", js.undefined)
+      inline def setCustomAuthMethodUndefined: Self = StObject.set(x, "customAuthMethod", js.undefined)
       
-      @scala.inline
-      def setEncodeFilename(value: Boolean): Self = StObject.set(x, "encodeFilename", value.asInstanceOf[js.Any])
+      inline def setEncodeFilename(value: Boolean): Self = StObject.set(x, "encodeFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeFilenameUndefined: Self = StObject.set(x, "encodeFilename", js.undefined)
+      inline def setEncodeFilenameUndefined: Self = StObject.set(x, "encodeFilename", js.undefined)
       
-      @scala.inline
-      def setEvaporateChanged(value: (/* evaporate */ Evaporate, /* evaporatingCount */ Double) => Unit): Self = StObject.set(x, "evaporateChanged", js.Any.fromFunction2(value))
+      inline def setEvaporateChanged(value: (/* evaporate */ Evaporate, /* evaporatingCount */ Double) => Unit): Self = StObject.set(x, "evaporateChanged", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvaporateChangedUndefined: Self = StObject.set(x, "evaporateChanged", js.undefined)
+      inline def setEvaporateChangedUndefined: Self = StObject.set(x, "evaporateChanged", js.undefined)
       
-      @scala.inline
-      def setLocalTimeOffset(value: Double): Self = StObject.set(x, "localTimeOffset", value.asInstanceOf[js.Any])
+      inline def setLocalTimeOffset(value: Double): Self = StObject.set(x, "localTimeOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalTimeOffsetUndefined: Self = StObject.set(x, "localTimeOffset", js.undefined)
+      inline def setLocalTimeOffsetUndefined: Self = StObject.set(x, "localTimeOffset", js.undefined)
       
-      @scala.inline
-      def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+      inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrentParts(value: Double): Self = StObject.set(x, "maxConcurrentParts", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrentParts(value: Double): Self = StObject.set(x, "maxConcurrentParts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrentPartsUndefined: Self = StObject.set(x, "maxConcurrentParts", js.undefined)
+      inline def setMaxConcurrentPartsUndefined: Self = StObject.set(x, "maxConcurrentParts", js.undefined)
       
-      @scala.inline
-      def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+      inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+      inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
       
-      @scala.inline
-      def setMaxRetryBackoffSecs(value: Double): Self = StObject.set(x, "maxRetryBackoffSecs", value.asInstanceOf[js.Any])
+      inline def setMaxRetryBackoffSecs(value: Double): Self = StObject.set(x, "maxRetryBackoffSecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetryBackoffSecsUndefined: Self = StObject.set(x, "maxRetryBackoffSecs", js.undefined)
+      inline def setMaxRetryBackoffSecsUndefined: Self = StObject.set(x, "maxRetryBackoffSecs", js.undefined)
       
-      @scala.inline
-      def setMockLocalStorage(value: Boolean): Self = StObject.set(x, "mockLocalStorage", value.asInstanceOf[js.Any])
+      inline def setMockLocalStorage(value: Boolean): Self = StObject.set(x, "mockLocalStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMockLocalStorageUndefined: Self = StObject.set(x, "mockLocalStorage", js.undefined)
+      inline def setMockLocalStorageUndefined: Self = StObject.set(x, "mockLocalStorage", js.undefined)
       
-      @scala.inline
-      def setOnlyRetryForSameFileName(value: Boolean): Self = StObject.set(x, "onlyRetryForSameFileName", value.asInstanceOf[js.Any])
+      inline def setOnlyRetryForSameFileName(value: Boolean): Self = StObject.set(x, "onlyRetryForSameFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyRetryForSameFileNameUndefined: Self = StObject.set(x, "onlyRetryForSameFileName", js.undefined)
+      inline def setOnlyRetryForSameFileNameUndefined: Self = StObject.set(x, "onlyRetryForSameFileName", js.undefined)
       
-      @scala.inline
-      def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+      inline def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+      inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
       
-      @scala.inline
-      def setProgressIntervalMS(value: Double): Self = StObject.set(x, "progressIntervalMS", value.asInstanceOf[js.Any])
+      inline def setProgressIntervalMS(value: Double): Self = StObject.set(x, "progressIntervalMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressIntervalMSUndefined: Self = StObject.set(x, "progressIntervalMS", js.undefined)
+      inline def setProgressIntervalMSUndefined: Self = StObject.set(x, "progressIntervalMS", js.undefined)
       
-      @scala.inline
-      def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[js.Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
+      inline def setReadableStreamPartMethod(value: (/* file */ File, /* start */ Double, /* end */ Double) => ReadableStream[js.Any]): Self = StObject.set(x, "readableStreamPartMethod", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReadableStreamPartMethodNull: Self = StObject.set(x, "readableStreamPartMethod", null)
+      inline def setReadableStreamPartMethodNull: Self = StObject.set(x, "readableStreamPartMethod", null)
       
-      @scala.inline
-      def setReadableStreamPartMethodUndefined: Self = StObject.set(x, "readableStreamPartMethod", js.undefined)
+      inline def setReadableStreamPartMethodUndefined: Self = StObject.set(x, "readableStreamPartMethod", js.undefined)
       
-      @scala.inline
-      def setReadableStreams(value: Boolean): Self = StObject.set(x, "readableStreams", value.asInstanceOf[js.Any])
+      inline def setReadableStreams(value: Boolean): Self = StObject.set(x, "readableStreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableStreamsUndefined: Self = StObject.set(x, "readableStreams", js.undefined)
+      inline def setReadableStreamsUndefined: Self = StObject.set(x, "readableStreams", js.undefined)
       
-      @scala.inline
-      def setRetryBackoffPower(value: Double): Self = StObject.set(x, "retryBackoffPower", value.asInstanceOf[js.Any])
+      inline def setRetryBackoffPower(value: Double): Self = StObject.set(x, "retryBackoffPower", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryBackoffPowerUndefined: Self = StObject.set(x, "retryBackoffPower", js.undefined)
+      inline def setRetryBackoffPowerUndefined: Self = StObject.set(x, "retryBackoffPower", js.undefined)
       
-      @scala.inline
-      def setS3Acceleration(value: Boolean): Self = StObject.set(x, "s3Acceleration", value.asInstanceOf[js.Any])
+      inline def setS3Acceleration(value: Boolean): Self = StObject.set(x, "s3Acceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3AccelerationUndefined: Self = StObject.set(x, "s3Acceleration", js.undefined)
+      inline def setS3AccelerationUndefined: Self = StObject.set(x, "s3Acceleration", js.undefined)
       
-      @scala.inline
-      def setS3FileCacheHoursAgo(value: Double): Self = StObject.set(x, "s3FileCacheHoursAgo", value.asInstanceOf[js.Any])
+      inline def setS3FileCacheHoursAgo(value: Double): Self = StObject.set(x, "s3FileCacheHoursAgo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3FileCacheHoursAgoNull: Self = StObject.set(x, "s3FileCacheHoursAgo", null)
+      inline def setS3FileCacheHoursAgoNull: Self = StObject.set(x, "s3FileCacheHoursAgo", null)
       
-      @scala.inline
-      def setS3FileCacheHoursAgoUndefined: Self = StObject.set(x, "s3FileCacheHoursAgo", js.undefined)
+      inline def setS3FileCacheHoursAgoUndefined: Self = StObject.set(x, "s3FileCacheHoursAgo", js.undefined)
       
-      @scala.inline
-      def setSendCanonicalRequestToSignerUrl(value: Boolean): Self = StObject.set(x, "sendCanonicalRequestToSignerUrl", value.asInstanceOf[js.Any])
+      inline def setSendCanonicalRequestToSignerUrl(value: Boolean): Self = StObject.set(x, "sendCanonicalRequestToSignerUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendCanonicalRequestToSignerUrlUndefined: Self = StObject.set(x, "sendCanonicalRequestToSignerUrl", js.undefined)
+      inline def setSendCanonicalRequestToSignerUrlUndefined: Self = StObject.set(x, "sendCanonicalRequestToSignerUrl", js.undefined)
       
-      @scala.inline
-      def setSignHeaders(value: js.Object): Self = StObject.set(x, "signHeaders", value.asInstanceOf[js.Any])
+      inline def setSignHeaders(value: js.Object): Self = StObject.set(x, "signHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignHeadersUndefined: Self = StObject.set(x, "signHeaders", js.undefined)
+      inline def setSignHeadersUndefined: Self = StObject.set(x, "signHeaders", js.undefined)
       
-      @scala.inline
-      def setSignParams(value: js.Object): Self = StObject.set(x, "signParams", value.asInstanceOf[js.Any])
+      inline def setSignParams(value: js.Object): Self = StObject.set(x, "signParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignParamsUndefined: Self = StObject.set(x, "signParams", js.undefined)
+      inline def setSignParamsUndefined: Self = StObject.set(x, "signParams", js.undefined)
       
-      @scala.inline
-      def setSignResponseHandler(
+      inline def setSignResponseHandler(
         value: (/* response */ js.Any, /* stringToSign */ String, /* signatureDateTime */ String) => js.Promise[String]
       ): Self = StObject.set(x, "signResponseHandler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSignResponseHandlerNull: Self = StObject.set(x, "signResponseHandler", null)
+      inline def setSignResponseHandlerNull: Self = StObject.set(x, "signResponseHandler", null)
       
-      @scala.inline
-      def setSignResponseHandlerUndefined: Self = StObject.set(x, "signResponseHandler", js.undefined)
+      inline def setSignResponseHandlerUndefined: Self = StObject.set(x, "signResponseHandler", js.undefined)
       
-      @scala.inline
-      def setSignerUrl(value: String): Self = StObject.set(x, "signerUrl", value.asInstanceOf[js.Any])
+      inline def setSignerUrl(value: String): Self = StObject.set(x, "signerUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerUrlUndefined: Self = StObject.set(x, "signerUrl", js.undefined)
+      inline def setSignerUrlUndefined: Self = StObject.set(x, "signerUrl", js.undefined)
       
-      @scala.inline
-      def setTimeUrl(value: String): Self = StObject.set(x, "timeUrl", value.asInstanceOf[js.Any])
+      inline def setTimeUrl(value: String): Self = StObject.set(x, "timeUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUrlUndefined: Self = StObject.set(x, "timeUrl", js.undefined)
+      inline def setTimeUrlUndefined: Self = StObject.set(x, "timeUrl", js.undefined)
       
-      @scala.inline
-      def setXhrWithCredentials(value: Boolean): Self = StObject.set(x, "xhrWithCredentials", value.asInstanceOf[js.Any])
+      inline def setXhrWithCredentials(value: Boolean): Self = StObject.set(x, "xhrWithCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrWithCredentialsUndefined: Self = StObject.set(x, "xhrWithCredentials", js.undefined)
+      inline def setXhrWithCredentialsUndefined: Self = StObject.set(x, "xhrWithCredentials", js.undefined)
     }
   }
   
@@ -894,44 +703,31 @@ object mod {
   trait ImmutableOptionKeys extends StObject
   object ImmutableOptionKeys {
     
-    @scala.inline
-    def allowS3ExistenceOptimization: typings.evaporate.evaporateStrings.allowS3ExistenceOptimization = "allowS3ExistenceOptimization".asInstanceOf[typings.evaporate.evaporateStrings.allowS3ExistenceOptimization]
+    inline def allowS3ExistenceOptimization: typings.evaporate.evaporateStrings.allowS3ExistenceOptimization = "allowS3ExistenceOptimization".asInstanceOf[typings.evaporate.evaporateStrings.allowS3ExistenceOptimization]
     
-    @scala.inline
-    def awsRegion: typings.evaporate.evaporateStrings.awsRegion = "awsRegion".asInstanceOf[typings.evaporate.evaporateStrings.awsRegion]
+    inline def awsRegion: typings.evaporate.evaporateStrings.awsRegion = "awsRegion".asInstanceOf[typings.evaporate.evaporateStrings.awsRegion]
     
-    @scala.inline
-    def awsSignatureVersion: typings.evaporate.evaporateStrings.awsSignatureVersion = "awsSignatureVersion".asInstanceOf[typings.evaporate.evaporateStrings.awsSignatureVersion]
+    inline def awsSignatureVersion: typings.evaporate.evaporateStrings.awsSignatureVersion = "awsSignatureVersion".asInstanceOf[typings.evaporate.evaporateStrings.awsSignatureVersion]
     
-    @scala.inline
-    def cloudfront: typings.evaporate.evaporateStrings.cloudfront = "cloudfront".asInstanceOf[typings.evaporate.evaporateStrings.cloudfront]
+    inline def cloudfront: typings.evaporate.evaporateStrings.cloudfront = "cloudfront".asInstanceOf[typings.evaporate.evaporateStrings.cloudfront]
     
-    @scala.inline
-    def computeContentMd5: typings.evaporate.evaporateStrings.computeContentMd5 = "computeContentMd5".asInstanceOf[typings.evaporate.evaporateStrings.computeContentMd5]
+    inline def computeContentMd5: typings.evaporate.evaporateStrings.computeContentMd5 = "computeContentMd5".asInstanceOf[typings.evaporate.evaporateStrings.computeContentMd5]
     
-    @scala.inline
-    def cryptoHexEncodedHash256: typings.evaporate.evaporateStrings.cryptoHexEncodedHash256 = "cryptoHexEncodedHash256".asInstanceOf[typings.evaporate.evaporateStrings.cryptoHexEncodedHash256]
+    inline def cryptoHexEncodedHash256: typings.evaporate.evaporateStrings.cryptoHexEncodedHash256 = "cryptoHexEncodedHash256".asInstanceOf[typings.evaporate.evaporateStrings.cryptoHexEncodedHash256]
     
-    @scala.inline
-    def cryptoMd5Method: typings.evaporate.evaporateStrings.cryptoMd5Method = "cryptoMd5Method".asInstanceOf[typings.evaporate.evaporateStrings.cryptoMd5Method]
+    inline def cryptoMd5Method: typings.evaporate.evaporateStrings.cryptoMd5Method = "cryptoMd5Method".asInstanceOf[typings.evaporate.evaporateStrings.cryptoMd5Method]
     
-    @scala.inline
-    def encodeFilename: typings.evaporate.evaporateStrings.encodeFilename = "encodeFilename".asInstanceOf[typings.evaporate.evaporateStrings.encodeFilename]
+    inline def encodeFilename: typings.evaporate.evaporateStrings.encodeFilename = "encodeFilename".asInstanceOf[typings.evaporate.evaporateStrings.encodeFilename]
     
-    @scala.inline
-    def evaporateChanged: typings.evaporate.evaporateStrings.evaporateChanged = "evaporateChanged".asInstanceOf[typings.evaporate.evaporateStrings.evaporateChanged]
+    inline def evaporateChanged: typings.evaporate.evaporateStrings.evaporateChanged = "evaporateChanged".asInstanceOf[typings.evaporate.evaporateStrings.evaporateChanged]
     
-    @scala.inline
-    def logging: typings.evaporate.evaporateStrings.logging = "logging".asInstanceOf[typings.evaporate.evaporateStrings.logging]
+    inline def logging: typings.evaporate.evaporateStrings.logging = "logging".asInstanceOf[typings.evaporate.evaporateStrings.logging]
     
-    @scala.inline
-    def maxConcurrentParts: typings.evaporate.evaporateStrings.maxConcurrentParts = "maxConcurrentParts".asInstanceOf[typings.evaporate.evaporateStrings.maxConcurrentParts]
+    inline def maxConcurrentParts: typings.evaporate.evaporateStrings.maxConcurrentParts = "maxConcurrentParts".asInstanceOf[typings.evaporate.evaporateStrings.maxConcurrentParts]
     
-    @scala.inline
-    def onlyRetryForSameFileName: typings.evaporate.evaporateStrings.onlyRetryForSameFileName = "onlyRetryForSameFileName".asInstanceOf[typings.evaporate.evaporateStrings.onlyRetryForSameFileName]
+    inline def onlyRetryForSameFileName: typings.evaporate.evaporateStrings.onlyRetryForSameFileName = "onlyRetryForSameFileName".asInstanceOf[typings.evaporate.evaporateStrings.onlyRetryForSameFileName]
     
-    @scala.inline
-    def timeUrl: typings.evaporate.evaporateStrings.timeUrl = "timeUrl".asInstanceOf[typings.evaporate.evaporateStrings.timeUrl]
+    inline def timeUrl: typings.evaporate.evaporateStrings.timeUrl = "timeUrl".asInstanceOf[typings.evaporate.evaporateStrings.timeUrl]
   }
   
   trait PauseConfig extends StObject {
@@ -940,20 +736,16 @@ object mod {
   }
   object PauseConfig {
     
-    @scala.inline
-    def apply(): PauseConfig = {
+    inline def apply(): PauseConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PauseConfig]
     }
     
-    @scala.inline
-    implicit class PauseConfigMutableBuilder[Self <: PauseConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PauseConfig](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     }
   }
   
@@ -975,8 +767,7 @@ object mod {
   }
   object TransferStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fileSize: Double,
       loaded: Double,
       readableSpeed: String,
@@ -989,29 +780,21 @@ object mod {
       __obj.asInstanceOf[TransferStats]
     }
     
-    @scala.inline
-    implicit class TransferStatsMutableBuilder[Self <: TransferStats] (val x: Self) extends AnyVal {
+    extension [Self <: TransferStats](x: Self) {
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableSpeed(value: String): Self = StObject.set(x, "readableSpeed", value.asInstanceOf[js.Any])
+      inline def setReadableSpeed(value: String): Self = StObject.set(x, "readableSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemainingSize(value: Double): Self = StObject.set(x, "remainingSize", value.asInstanceOf[js.Any])
+      inline def setRemainingSize(value: Double): Self = StObject.set(x, "remainingSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsLeft(value: Double): Self = StObject.set(x, "secondsLeft", value.asInstanceOf[js.Any])
+      inline def setSecondsLeft(value: Double): Self = StObject.set(x, "secondsLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUploaded(value: Double): Self = StObject.set(x, "totalUploaded", value.asInstanceOf[js.Any])
+      inline def setTotalUploaded(value: Double): Self = StObject.set(x, "totalUploaded", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,25 +18,19 @@ trait AdvancedBackupSetting extends StObject {
 }
 object AdvancedBackupSetting {
   
-  @scala.inline
-  def apply(): AdvancedBackupSetting = {
+  inline def apply(): AdvancedBackupSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvancedBackupSetting]
   }
   
-  @scala.inline
-  implicit class AdvancedBackupSettingMutableBuilder[Self <: AdvancedBackupSetting] (val x: Self) extends AnyVal {
+  extension [Self <: AdvancedBackupSetting](x: Self) {
     
-    @scala.inline
-    def setBackupOptions(value: BackupOptions): Self = StObject.set(x, "BackupOptions", value.asInstanceOf[js.Any])
+    inline def setBackupOptions(value: BackupOptions): Self = StObject.set(x, "BackupOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupOptionsUndefined: Self = StObject.set(x, "BackupOptions", js.undefined)
+    inline def setBackupOptionsUndefined: Self = StObject.set(x, "BackupOptions", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

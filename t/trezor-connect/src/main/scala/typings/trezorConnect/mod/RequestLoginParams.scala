@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestLoginParams extends StObject
 object RequestLoginParams {
   
-  @scala.inline
-  def CommonParamscallbackLogin(callback: () => LoginChallenge): typings.trezorConnect.anon.CommonParamscallbackLogin = {
+  inline def CommonParamscallbackLogin(callback: () => LoginChallenge): typings.trezorConnect.anon.CommonParamscallbackLogin = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback))
     __obj.asInstanceOf[typings.trezorConnect.anon.CommonParamscallbackLogin]
   }
   
-  @scala.inline
-  def LoginChallenge(challengeHidden: String, challengeVisual: String): typings.trezorConnect.mod.LoginChallenge = {
+  inline def LoginChallenge(challengeHidden: String, challengeVisual: String): typings.trezorConnect.mod.LoginChallenge = {
     val __obj = js.Dynamic.literal(challengeHidden = challengeHidden.asInstanceOf[js.Any], challengeVisual = challengeVisual.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.trezorConnect.mod.LoginChallenge]
   }

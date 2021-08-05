@@ -35,8 +35,7 @@ trait AjaxNavigate extends StObject {
 }
 object AjaxNavigate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add_navigate: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit] => Unit,
     convertMDSURLtoRegularURL: String => String,
     getParam: String => String,
@@ -52,37 +51,26 @@ object AjaxNavigate {
     __obj.asInstanceOf[AjaxNavigate]
   }
   
-  @scala.inline
-  implicit class AjaxNavigateMutableBuilder[Self <: AjaxNavigate] (val x: Self) extends AnyVal {
+  extension [Self <: AjaxNavigate](x: Self) {
     
-    @scala.inline
-    def setAdd_navigate(value: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit] => Unit): Self = StObject.set(x, "add_navigate", js.Any.fromFunction1(value))
+    inline def setAdd_navigate(value: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit] => Unit): Self = StObject.set(x, "add_navigate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertMDSURLtoRegularURL(value: String => String): Self = StObject.set(x, "convertMDSURLtoRegularURL", js.Any.fromFunction1(value))
+    inline def setConvertMDSURLtoRegularURL(value: String => String): Self = StObject.set(x, "convertMDSURLtoRegularURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParam(value: String => String): Self = StObject.set(x, "getParam", js.Any.fromFunction1(value))
+    inline def setGetParam(value: String => String): Self = StObject.set(x, "getParam", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSavedFormAction(value: () => String): Self = StObject.set(x, "getSavedFormAction", js.Any.fromFunction0(value))
+    inline def setGetSavedFormAction(value: () => String): Self = StObject.set(x, "getSavedFormAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_hash(value: () => String): Self = StObject.set(x, "get_hash", js.Any.fromFunction0(value))
+    inline def setGet_hash(value: () => String): Self = StObject.set(x, "get_hash", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_href(value: () => String): Self = StObject.set(x, "get_href", js.Any.fromFunction0(value))
+    inline def setGet_href(value: () => String): Self = StObject.set(x, "get_href", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_search(value: () => String): Self = StObject.set(x, "get_search", js.Any.fromFunction0(value))
+    inline def setGet_search(value: () => String): Self = StObject.set(x, "get_search", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove_navigate(value: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit] => Unit): Self = StObject.set(x, "remove_navigate", js.Any.fromFunction1(value))
+    inline def setRemove_navigate(value: js.Function2[/* obj */ js.Any, /* eventArgs */ js.Any, Unit] => Unit): Self = StObject.set(x, "remove_navigate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubmit(value: HTMLFormElement => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+    inline def setSubmit(value: HTMLFormElement => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: (String, StringDictionary[String | Double], Boolean, String) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
+    inline def setUpdate(value: (String, StringDictionary[String | Double], Boolean, String) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
   }
 }

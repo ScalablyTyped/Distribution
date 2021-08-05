@@ -14,16 +14,13 @@ trait VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile ext
 }
 object VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile {
   
-  @scala.inline
-  def apply(certificateChain: Input[String]): VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile = {
+  inline def apply(certificateChain: Input[String]): VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile = {
     val __obj = js.Dynamic.literal(certificateChain = certificateChain.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileMutableBuilder[Self <: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile](x: Self) {
     
-    @scala.inline
-    def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: Input[String]): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
   }
 }

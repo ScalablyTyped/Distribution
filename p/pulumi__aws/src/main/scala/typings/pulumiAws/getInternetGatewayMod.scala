@@ -14,14 +14,10 @@ object getInternetGatewayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInternetGateway(): js.Promise[GetInternetGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")().asInstanceOf[js.Promise[GetInternetGatewayResult]]
-  @scala.inline
-  def getInternetGateway(args: Unit, opts: InvokeOptions): js.Promise[GetInternetGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInternetGatewayResult]]
-  @scala.inline
-  def getInternetGateway(args: GetInternetGatewayArgs): js.Promise[GetInternetGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInternetGatewayResult]]
-  @scala.inline
-  def getInternetGateway(args: GetInternetGatewayArgs, opts: InvokeOptions): js.Promise[GetInternetGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInternetGatewayResult]]
+  inline def getInternetGateway(): js.Promise[GetInternetGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")().asInstanceOf[js.Promise[GetInternetGatewayResult]]
+  inline def getInternetGateway(args: Unit, opts: InvokeOptions): js.Promise[GetInternetGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInternetGatewayResult]]
+  inline def getInternetGateway(args: GetInternetGatewayArgs): js.Promise[GetInternetGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInternetGatewayResult]]
+  inline def getInternetGateway(args: GetInternetGatewayArgs, opts: InvokeOptions): js.Promise[GetInternetGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInternetGatewayResult]]
   
   trait GetInternetGatewayArgs extends StObject {
     
@@ -43,35 +39,26 @@ object getInternetGatewayMod {
   }
   object GetInternetGatewayArgs {
     
-    @scala.inline
-    def apply(): GetInternetGatewayArgs = {
+    inline def apply(): GetInternetGatewayArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetInternetGatewayArgs]
     }
     
-    @scala.inline
-    implicit class GetInternetGatewayArgsMutableBuilder[Self <: GetInternetGatewayArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetInternetGatewayArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetInternetGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetInternetGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetInternetGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetInternetGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setInternetGatewayId(value: String): Self = StObject.set(x, "internetGatewayId", value.asInstanceOf[js.Any])
+      inline def setInternetGatewayId(value: String): Self = StObject.set(x, "internetGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternetGatewayIdUndefined: Self = StObject.set(x, "internetGatewayId", js.undefined)
+      inline def setInternetGatewayIdUndefined: Self = StObject.set(x, "internetGatewayId", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -102,8 +89,7 @@ object getInternetGatewayMod {
   }
   object GetInternetGatewayResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       attachments: js.Array[GetInternetGatewayAttachment],
       id: String,
@@ -115,38 +101,27 @@ object getInternetGatewayMod {
       __obj.asInstanceOf[GetInternetGatewayResult]
     }
     
-    @scala.inline
-    implicit class GetInternetGatewayResultMutableBuilder[Self <: GetInternetGatewayResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetInternetGatewayResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachments(value: js.Array[GetInternetGatewayAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[GetInternetGatewayAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsVarargs(value: GetInternetGatewayAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: GetInternetGatewayAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInternetGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInternetGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetInternetGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetInternetGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternetGatewayId(value: String): Self = StObject.set(x, "internetGatewayId", value.asInstanceOf[js.Any])
+      inline def setInternetGatewayId(value: String): Self = StObject.set(x, "internetGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

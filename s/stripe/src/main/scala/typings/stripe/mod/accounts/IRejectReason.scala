@@ -17,16 +17,13 @@ trait IRejectReason extends StObject {
 }
 object IRejectReason {
   
-  @scala.inline
-  def apply(reason: fraud | terms_of_service | other): IRejectReason = {
+  inline def apply(reason: fraud | terms_of_service | other): IRejectReason = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRejectReason]
   }
   
-  @scala.inline
-  implicit class IRejectReasonMutableBuilder[Self <: IRejectReason] (val x: Self) extends AnyVal {
+  extension [Self <: IRejectReason](x: Self) {
     
-    @scala.inline
-    def setReason(value: fraud | terms_of_service | other): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: fraud | terms_of_service | other): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

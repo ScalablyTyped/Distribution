@@ -19,8 +19,7 @@ trait ASPxClientReportToolbar
 }
 object ASPxClientReportToolbar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -42,10 +41,8 @@ object ASPxClientReportToolbar {
     __obj.asInstanceOf[ASPxClientReportToolbar]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportToolbarMutableBuilder[Self <: ASPxClientReportToolbar] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportToolbar](x: Self) {
     
-    @scala.inline
-    def setGetItemTemplateControl(value: String => ASPxClientControl): Self = StObject.set(x, "GetItemTemplateControl", js.Any.fromFunction1(value))
+    inline def setGetItemTemplateControl(value: String => ASPxClientControl): Self = StObject.set(x, "GetItemTemplateControl", js.Any.fromFunction1(value))
   }
 }

@@ -170,8 +170,7 @@ object cades {
   }
   object CompleteCertificateRefs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -187,11 +186,9 @@ object cades {
       __obj.asInstanceOf[CompleteCertificateRefs]
     }
     
-    @scala.inline
-    implicit class CompleteCertificateRefsMutableBuilder[Self <: CompleteCertificateRefs] (val x: Self) extends AnyVal {
+    extension [Self <: CompleteCertificateRefs](x: Self) {
       
-      @scala.inline
-      def setSetByArray(value: js.Array[OtherCertID] => Unit): Self = StObject.set(x, "setByArray", js.Any.fromFunction1(value))
+      inline def setSetByArray(value: js.Array[OtherCertID] => Unit): Self = StObject.set(x, "setByArray", js.Any.fromFunction1(value))
     }
   }
   
@@ -224,8 +221,7 @@ object cades {
   }
   object OtherCertID {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -241,11 +237,9 @@ object cades {
       __obj.asInstanceOf[OtherCertID]
     }
     
-    @scala.inline
-    implicit class OtherCertIDMutableBuilder[Self <: OtherCertID] (val x: Self) extends AnyVal {
+    extension [Self <: OtherCertID](x: Self) {
       
-      @scala.inline
-      def setSetByCertPEM(value: String => Unit): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1(value))
+      inline def setSetByCertPEM(value: String => Unit): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1(value))
     }
   }
   
@@ -282,8 +276,7 @@ object cades {
   }
   object OtherHash {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -299,11 +292,9 @@ object cades {
       __obj.asInstanceOf[OtherHash]
     }
     
-    @scala.inline
-    implicit class OtherHashMutableBuilder[Self <: OtherHash] (val x: Self) extends AnyVal {
+    extension [Self <: OtherHash](x: Self) {
       
-      @scala.inline
-      def setSetByCertPEM(value: String => Unit): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1(value))
+      inline def setSetByCertPEM(value: String => Unit): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1(value))
     }
   }
   

@@ -24,25 +24,19 @@ trait SmartMappingSliderViewModelProperties
 }
 object SmartMappingSliderViewModelProperties {
   
-  @scala.inline
-  def apply(): SmartMappingSliderViewModelProperties = {
+  inline def apply(): SmartMappingSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SmartMappingSliderViewModelProperties]
   }
   
-  @scala.inline
-  implicit class SmartMappingSliderViewModelPropertiesMutableBuilder[Self <: SmartMappingSliderViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SmartMappingSliderViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setZoomOptions(value: SmartMappingSliderViewModelZoomOptions): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
+    inline def setZoomOptions(value: SmartMappingSliderViewModelZoomOptions): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOptionsUndefined: Self = StObject.set(x, "zoomOptions", js.undefined)
+    inline def setZoomOptionsUndefined: Self = StObject.set(x, "zoomOptions", js.undefined)
     
-    @scala.inline
-    def setZoomingEnabled(value: Boolean): Self = StObject.set(x, "zoomingEnabled", value.asInstanceOf[js.Any])
+    inline def setZoomingEnabled(value: Boolean): Self = StObject.set(x, "zoomingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomingEnabledUndefined: Self = StObject.set(x, "zoomingEnabled", js.undefined)
+    inline def setZoomingEnabledUndefined: Self = StObject.set(x, "zoomingEnabled", js.undefined)
   }
 }

@@ -34,43 +34,31 @@ trait ReportingDescriptorReference extends StObject {
 }
 object ReportingDescriptorReference {
   
-  @scala.inline
-  def apply(): ReportingDescriptorReference = {
+  inline def apply(): ReportingDescriptorReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportingDescriptorReference]
   }
   
-  @scala.inline
-  implicit class ReportingDescriptorReferenceMutableBuilder[Self <: ReportingDescriptorReference] (val x: Self) extends AnyVal {
+  extension [Self <: ReportingDescriptorReference](x: Self) {
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+    inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setToolComponent(value: ToolComponentReference): Self = StObject.set(x, "toolComponent", value.asInstanceOf[js.Any])
+    inline def setToolComponent(value: ToolComponentReference): Self = StObject.set(x, "toolComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolComponentUndefined: Self = StObject.set(x, "toolComponent", js.undefined)
+    inline def setToolComponentUndefined: Self = StObject.set(x, "toolComponent", js.undefined)
   }
 }

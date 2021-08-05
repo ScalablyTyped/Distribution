@@ -19,8 +19,7 @@ trait ICanvas extends StObject {
 }
 object ICanvas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _canvas: HTMLCanvasElement,
     getPixelRatio: () => Double,
     height: Double,
@@ -31,22 +30,16 @@ object ICanvas {
     __obj.asInstanceOf[ICanvas]
   }
   
-  @scala.inline
-  implicit class ICanvasMutableBuilder[Self <: ICanvas] (val x: Self) extends AnyVal {
+  extension [Self <: ICanvas](x: Self) {
     
-    @scala.inline
-    def setGetPixelRatio(value: () => Double): Self = StObject.set(x, "getPixelRatio", js.Any.fromFunction0(value))
+    inline def setGetPixelRatio(value: () => Double): Self = StObject.set(x, "getPixelRatio", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPixelRatio(value: Double => js.Any): Self = StObject.set(x, "setPixelRatio", js.Any.fromFunction1(value))
+    inline def setSetPixelRatio(value: Double => js.Any): Self = StObject.set(x, "setPixelRatio", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_canvas(value: HTMLCanvasElement): Self = StObject.set(x, "_canvas", value.asInstanceOf[js.Any])
+    inline def set_canvas(value: HTMLCanvasElement): Self = StObject.set(x, "_canvas", value.asInstanceOf[js.Any])
   }
 }

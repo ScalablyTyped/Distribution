@@ -16,15 +16,14 @@ trait ResampleMediaTasks extends StObject {
   
   val PercentComplete: Double
   
-  @JSName("PowerPoint.ResampleMediaTasks_typekey")
+  /* private */ @JSName("PowerPoint.ResampleMediaTasks_typekey")
   var PowerPointDotResampleMediaTasks_typekey: ResampleMediaTasks
   
   def Resume(): Unit
 }
 object ResampleMediaTasks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Cancel: () => Unit,
     Count: Double,
     Item: Double => ResampleMediaTask,
@@ -38,28 +37,20 @@ object ResampleMediaTasks {
     __obj.asInstanceOf[ResampleMediaTasks]
   }
   
-  @scala.inline
-  implicit class ResampleMediaTasksMutableBuilder[Self <: ResampleMediaTasks] (val x: Self) extends AnyVal {
+  extension [Self <: ResampleMediaTasks](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "Cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "Cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => ResampleMediaTask): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => ResampleMediaTask): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "Pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "Pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPercentComplete(value: Double): Self = StObject.set(x, "PercentComplete", value.asInstanceOf[js.Any])
+    inline def setPercentComplete(value: Double): Self = StObject.set(x, "PercentComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotResampleMediaTasks_typekey(value: ResampleMediaTasks): Self = StObject.set(x, "PowerPoint.ResampleMediaTasks_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotResampleMediaTasks_typekey(value: ResampleMediaTasks): Self = StObject.set(x, "PowerPoint.ResampleMediaTasks_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "Resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "Resume", js.Any.fromFunction0(value))
   }
 }

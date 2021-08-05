@@ -17,23 +17,18 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(onBeforeunload: /* arg */ Event => js.UndefOr[String | Unit]): Children = {
+    inline def apply(onBeforeunload: /* arg */ Event => js.UndefOr[String | Unit]): Children = {
       val __obj = js.Dynamic.literal(onBeforeunload = js.Any.fromFunction1(onBeforeunload))
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOnBeforeunload(value: /* arg */ Event => js.UndefOr[String | Unit]): Self = StObject.set(x, "onBeforeunload", js.Any.fromFunction1(value))
+      inline def setOnBeforeunload(value: /* arg */ Event => js.UndefOr[String | Unit]): Self = StObject.set(x, "onBeforeunload", js.Any.fromFunction1(value))
     }
   }
 }

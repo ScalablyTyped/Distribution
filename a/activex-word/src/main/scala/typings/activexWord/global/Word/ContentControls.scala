@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ContentControls")
 @js.native
-class ContentControls protected ()
+/* private */ class ContentControls ()
   extends StObject
      with typings.activexWord.Word.ContentControls

@@ -24,8 +24,7 @@ trait UserInfoResponse extends StObject {
 }
 object UserInfoResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Any,
     encryptData: String,
     iv: js.Any,
@@ -37,25 +36,18 @@ object UserInfoResponse {
     __obj.asInstanceOf[UserInfoResponse]
   }
   
-  @scala.inline
-  implicit class UserInfoResponseMutableBuilder[Self <: UserInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UserInfoResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptData(value: String): Self = StObject.set(x, "encryptData", value.asInstanceOf[js.Any])
+    inline def setEncryptData(value: String): Self = StObject.set(x, "encryptData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIv(value: js.Any): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: js.Any): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

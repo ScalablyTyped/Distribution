@@ -19,8 +19,7 @@ trait XDiagramProvider
 }
 object XDiagramProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Diagram: XDiagram,
     acquire: () => Unit,
     getDiagram: () => XDiagram,
@@ -32,16 +31,12 @@ object XDiagramProvider {
     __obj.asInstanceOf[XDiagramProvider]
   }
   
-  @scala.inline
-  implicit class XDiagramProviderMutableBuilder[Self <: XDiagramProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XDiagramProvider](x: Self) {
     
-    @scala.inline
-    def setDiagram(value: XDiagram): Self = StObject.set(x, "Diagram", value.asInstanceOf[js.Any])
+    inline def setDiagram(value: XDiagram): Self = StObject.set(x, "Diagram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDiagram(value: () => XDiagram): Self = StObject.set(x, "getDiagram", js.Any.fromFunction0(value))
+    inline def setGetDiagram(value: () => XDiagram): Self = StObject.set(x, "getDiagram", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDiagram(value: XDiagram => Unit): Self = StObject.set(x, "setDiagram", js.Any.fromFunction1(value))
+    inline def setSetDiagram(value: XDiagram => Unit): Self = StObject.set(x, "setDiagram", js.Any.fromFunction1(value))
   }
 }

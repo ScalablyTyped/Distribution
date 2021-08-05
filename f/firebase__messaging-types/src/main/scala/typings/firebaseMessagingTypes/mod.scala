@@ -22,26 +22,20 @@ object mod {
   }
   object FcmOptions {
     
-    @scala.inline
-    def apply(): FcmOptions = {
+    inline def apply(): FcmOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FcmOptions]
     }
     
-    @scala.inline
-    implicit class FcmOptionsMutableBuilder[Self <: FcmOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FcmOptions](x: Self) {
       
-      @scala.inline
-      def setAnalyticsLabel(value: String): Self = StObject.set(x, "analyticsLabel", value.asInstanceOf[js.Any])
+      inline def setAnalyticsLabel(value: String): Self = StObject.set(x, "analyticsLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalyticsLabelUndefined: Self = StObject.set(x, "analyticsLabel", js.undefined)
+      inline def setAnalyticsLabelUndefined: Self = StObject.set(x, "analyticsLabel", js.undefined)
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     }
   }
   
@@ -113,38 +107,28 @@ object mod {
   }
   object MessagePayload {
     
-    @scala.inline
-    def apply(collapseKey: String, from: String): MessagePayload = {
+    inline def apply(collapseKey: String, from: String): MessagePayload = {
       val __obj = js.Dynamic.literal(collapseKey = collapseKey.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessagePayload]
     }
     
-    @scala.inline
-    implicit class MessagePayloadMutableBuilder[Self <: MessagePayload] (val x: Self) extends AnyVal {
+    extension [Self <: MessagePayload](x: Self) {
       
-      @scala.inline
-      def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
+      inline def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFcmOptions(value: FcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
+      inline def setFcmOptions(value: FcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
+      inline def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification(value: NotificationPayload): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: NotificationPayload): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+      inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     }
   }
   
@@ -158,32 +142,24 @@ object mod {
   }
   object NotificationPayload {
     
-    @scala.inline
-    def apply(): NotificationPayload = {
+    inline def apply(): NotificationPayload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotificationPayload]
     }
     
-    @scala.inline
-    implicit class NotificationPayloadMutableBuilder[Self <: NotificationPayload] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationPayload](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -195,17 +171,14 @@ object mod {
     }
     object NameServiceMapping {
       
-      @scala.inline
-      def apply(messaging: FirebaseMessaging): NameServiceMapping = {
+      inline def apply(messaging: FirebaseMessaging): NameServiceMapping = {
         val __obj = js.Dynamic.literal(messaging = messaging.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      @scala.inline
-      implicit class NameServiceMappingMutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+      extension [Self <: NameServiceMapping](x: Self) {
         
-        @scala.inline
-        def setMessaging(value: FirebaseMessaging): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
+        inline def setMessaging(value: FirebaseMessaging): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
       }
     }
   }

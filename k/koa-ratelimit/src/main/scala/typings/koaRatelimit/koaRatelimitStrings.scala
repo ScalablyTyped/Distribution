@@ -8,11 +8,9 @@ object koaRatelimitStrings {
   
   @js.native
   sealed trait memory extends StObject
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
+  inline def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
   sealed trait redis extends StObject
-  @scala.inline
-  def redis: redis = "redis".asInstanceOf[redis]
+  inline def redis: redis = "redis".asInstanceOf[redis]
 }

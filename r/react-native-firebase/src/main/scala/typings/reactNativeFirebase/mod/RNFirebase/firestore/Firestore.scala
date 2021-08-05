@@ -27,8 +27,7 @@ trait Firestore extends StObject {
 }
 object Firestore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     app: App,
     batch: () => WriteBatch,
     collection: String => CollectionReference,
@@ -43,34 +42,24 @@ object Firestore {
     __obj.asInstanceOf[Firestore]
   }
   
-  @scala.inline
-  implicit class FirestoreMutableBuilder[Self <: Firestore] (val x: Self) extends AnyVal {
+  extension [Self <: Firestore](x: Self) {
     
-    @scala.inline
-    def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatch(value: () => WriteBatch): Self = StObject.set(x, "batch", js.Any.fromFunction0(value))
+    inline def setBatch(value: () => WriteBatch): Self = StObject.set(x, "batch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollection(value: String => CollectionReference): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
+    inline def setCollection(value: String => CollectionReference): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisableNetwork(value: () => js.Promise[Unit]): Self = StObject.set(x, "disableNetwork", js.Any.fromFunction0(value))
+    inline def setDisableNetwork(value: () => js.Promise[Unit]): Self = StObject.set(x, "disableNetwork", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoc(value: String => DocumentReference): Self = StObject.set(x, "doc", js.Any.fromFunction1(value))
+    inline def setDoc(value: String => DocumentReference): Self = StObject.set(x, "doc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnableNetwork(value: () => js.Promise[Unit]): Self = StObject.set(x, "enableNetwork", js.Any.fromFunction0(value))
+    inline def setEnableNetwork(value: () => js.Promise[Unit]): Self = StObject.set(x, "enableNetwork", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnablePersistence(value: Boolean => js.Promise[Unit]): Self = StObject.set(x, "enablePersistence", js.Any.fromFunction1(value))
+    inline def setEnablePersistence(value: Boolean => js.Promise[Unit]): Self = StObject.set(x, "enablePersistence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRunTransaction(value: js.Function1[/* transaction */ Transaction, js.Promise[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "runTransaction", js.Any.fromFunction1(value))
+    inline def setRunTransaction(value: js.Function1[/* transaction */ Transaction, js.Promise[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "runTransaction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSettings(value: Settings => js.Promise[Unit]): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
+    inline def setSettings(value: Settings => js.Promise[Unit]): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
   }
 }

@@ -18,26 +18,20 @@ object logoTypesMod {
   }
   object ILogoAPI {
     
-    @scala.inline
-    def apply(): ILogoAPI = {
+    inline def apply(): ILogoAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILogoAPI]
     }
     
-    @scala.inline
-    implicit class ILogoAPIMutableBuilder[Self <: ILogoAPI] (val x: Self) extends AnyVal {
+    extension [Self <: ILogoAPI](x: Self) {
       
-      @scala.inline
-      def setSetLogo(value: /* src */ String => Unit): Self = StObject.set(x, "setLogo", js.Any.fromFunction1(value))
+      inline def setSetLogo(value: /* src */ String => Unit): Self = StObject.set(x, "setLogo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLogoClickCallback(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "setLogoClickCallback", js.Any.fromFunction1(value))
+      inline def setSetLogoClickCallback(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "setLogoClickCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLogoClickCallbackUndefined: Self = StObject.set(x, "setLogoClickCallback", js.undefined)
+      inline def setSetLogoClickCallbackUndefined: Self = StObject.set(x, "setLogoClickCallback", js.undefined)
       
-      @scala.inline
-      def setSetLogoUndefined: Self = StObject.set(x, "setLogo", js.undefined)
+      inline def setSetLogoUndefined: Self = StObject.set(x, "setLogo", js.undefined)
     }
   }
   
@@ -64,17 +58,14 @@ object logoTypesMod {
   }
   object ILogoViewCallbacks {
     
-    @scala.inline
-    def apply(onLogoClick: () => Unit): ILogoViewCallbacks = {
+    inline def apply(onLogoClick: () => Unit): ILogoViewCallbacks = {
       val __obj = js.Dynamic.literal(onLogoClick = js.Any.fromFunction0(onLogoClick))
       __obj.asInstanceOf[ILogoViewCallbacks]
     }
     
-    @scala.inline
-    implicit class ILogoViewCallbacksMutableBuilder[Self <: ILogoViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: ILogoViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnLogoClick(value: () => Unit): Self = StObject.set(x, "onLogoClick", js.Any.fromFunction0(value))
+      inline def setOnLogoClick(value: () => Unit): Self = StObject.set(x, "onLogoClick", js.Any.fromFunction0(value))
     }
   }
   
@@ -92,8 +83,7 @@ object logoTypesMod {
   }
   object ILogoViewConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbacks: ILogoViewCallbacks,
       textMap: ITextMap,
       theme: IThemeService,
@@ -103,26 +93,19 @@ object logoTypesMod {
       __obj.asInstanceOf[ILogoViewConfig]
     }
     
-    @scala.inline
-    implicit class ILogoViewConfigMutableBuilder[Self <: ILogoViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ILogoViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: ILogoViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: ILogoViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+      inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      @scala.inline
-      def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+      inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+      inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,26 +121,20 @@ object logoTypesMod {
   }
   object ILogoViewStyles {
     
-    @scala.inline
-    def apply(hidden: String, logoButton: String, logoImage: String, logoWrapper: String): ILogoViewStyles = {
+    inline def apply(hidden: String, logoButton: String, logoImage: String, logoWrapper: String): ILogoViewStyles = {
       val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], logoButton = logoButton.asInstanceOf[js.Any], logoImage = logoImage.asInstanceOf[js.Any], logoWrapper = logoWrapper.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILogoViewStyles]
     }
     
-    @scala.inline
-    implicit class ILogoViewStylesMutableBuilder[Self <: ILogoViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ILogoViewStyles](x: Self) {
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoButton(value: String): Self = StObject.set(x, "logoButton", value.asInstanceOf[js.Any])
+      inline def setLogoButton(value: String): Self = StObject.set(x, "logoButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoImage(value: String): Self = StObject.set(x, "logoImage", value.asInstanceOf[js.Any])
+      inline def setLogoImage(value: String): Self = StObject.set(x, "logoImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoWrapper(value: String): Self = StObject.set(x, "logoWrapper", value.asInstanceOf[js.Any])
+      inline def setLogoWrapper(value: String): Self = StObject.set(x, "logoWrapper", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,19 +10,15 @@ trait GetTrailResponse extends StObject {
 }
 object GetTrailResponse {
   
-  @scala.inline
-  def apply(): GetTrailResponse = {
+  inline def apply(): GetTrailResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTrailResponse]
   }
   
-  @scala.inline
-  implicit class GetTrailResponseMutableBuilder[Self <: GetTrailResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTrailResponse](x: Self) {
     
-    @scala.inline
-    def setTrail(value: Trail): Self = StObject.set(x, "Trail", value.asInstanceOf[js.Any])
+    inline def setTrail(value: Trail): Self = StObject.set(x, "Trail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailUndefined: Self = StObject.set(x, "Trail", js.undefined)
+    inline def setTrailUndefined: Self = StObject.set(x, "Trail", js.undefined)
   }
 }

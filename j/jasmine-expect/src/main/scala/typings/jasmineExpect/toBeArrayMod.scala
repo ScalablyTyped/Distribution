@@ -22,17 +22,14 @@ object toBeArrayMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toBeArray: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
+        inline def apply[T](toBeArray: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toBeArray = js.Any.fromFunction1(toBeArray))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToBeArray(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeArray", js.Any.fromFunction1(value))
+          inline def setToBeArray(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeArray", js.Any.fromFunction1(value))
         }
       }
     }

@@ -13,8 +13,7 @@ object mod {
     * @param {Blob} blob
     * @returns {AsyncIterable<Uint8Array>}
     */
-  @scala.inline
-  def apply(blob: Blob): AsyncIterable[Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(blob.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Uint8Array]]
+  inline def apply(blob: Blob): AsyncIterable[Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(blob.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Uint8Array]]
   
   @JSImport("blob-to-it/dist", JSImport.Namespace)
   @js.native

@@ -11,16 +11,13 @@ trait GetInlineStylesForNodeRequest extends StObject {
 }
 object GetInlineStylesForNodeRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId): GetInlineStylesForNodeRequest = {
+  inline def apply(nodeId: NodeId): GetInlineStylesForNodeRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInlineStylesForNodeRequest]
   }
   
-  @scala.inline
-  implicit class GetInlineStylesForNodeRequestMutableBuilder[Self <: GetInlineStylesForNodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInlineStylesForNodeRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

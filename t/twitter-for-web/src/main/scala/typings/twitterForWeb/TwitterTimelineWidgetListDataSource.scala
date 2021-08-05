@@ -13,14 +13,12 @@ trait TwitterTimelineWidgetListDataSource
      with _TwitterTimelineWidgetDataSource
 object TwitterTimelineWidgetListDataSource {
   
-  @scala.inline
-  def Id(id: String): typings.twitterForWeb.anon.Id = {
+  inline def Id(id: String): typings.twitterForWeb.anon.Id = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = "list")
     __obj.asInstanceOf[typings.twitterForWeb.anon.Id]
   }
   
-  @scala.inline
-  def OwnerScreenName(ownerScreenName: String, slug: String): typings.twitterForWeb.anon.OwnerScreenName = {
+  inline def OwnerScreenName(ownerScreenName: String, slug: String): typings.twitterForWeb.anon.OwnerScreenName = {
     val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = "list")
     __obj.asInstanceOf[typings.twitterForWeb.anon.OwnerScreenName]
   }

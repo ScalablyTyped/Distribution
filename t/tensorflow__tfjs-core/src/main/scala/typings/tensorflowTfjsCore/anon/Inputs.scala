@@ -14,19 +14,15 @@ trait Inputs extends StObject {
 }
 object Inputs {
   
-  @scala.inline
-  def apply(inputs: StringDictionary[SavedModelTensorInfo], outputs: StringDictionary[SavedModelTensorInfo]): Inputs = {
+  inline def apply(inputs: StringDictionary[SavedModelTensorInfo], outputs: StringDictionary[SavedModelTensorInfo]): Inputs = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inputs]
   }
   
-  @scala.inline
-  implicit class InputsMutableBuilder[Self <: Inputs] (val x: Self) extends AnyVal {
+  extension [Self <: Inputs](x: Self) {
     
-    @scala.inline
-    def setInputs(value: StringDictionary[SavedModelTensorInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: StringDictionary[SavedModelTensorInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputs(value: StringDictionary[SavedModelTensorInfo]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: StringDictionary[SavedModelTensorInfo]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
   }
 }

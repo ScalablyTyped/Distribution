@@ -159,8 +159,7 @@ trait JSONSchemaProps extends StObject {
 }
 object JSONSchemaProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $ref: String,
     $schema: String,
     additionalItems: JSONSchemaProps | Boolean,
@@ -211,157 +210,106 @@ object JSONSchemaProps {
     __obj.asInstanceOf[JSONSchemaProps]
   }
   
-  @scala.inline
-  implicit class JSONSchemaPropsMutableBuilder[Self <: JSONSchemaProps] (val x: Self) extends AnyVal {
+  extension [Self <: JSONSchemaProps](x: Self) {
     
-    @scala.inline
-    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
+    inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
+    inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalItems(value: JSONSchemaProps | Boolean): Self = StObject.set(x, "additionalItems", value.asInstanceOf[js.Any])
+    inline def setAdditionalItems(value: JSONSchemaProps | Boolean): Self = StObject.set(x, "additionalItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalProperties(value: JSONSchemaProps | Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+    inline def setAdditionalProperties(value: JSONSchemaProps | Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllOf(value: js.Array[JSONSchemaProps]): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
+    inline def setAllOf(value: js.Array[JSONSchemaProps]): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllOfVarargs(value: JSONSchemaProps*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+    inline def setAllOfVarargs(value: JSONSchemaProps*): Self = StObject.set(x, "allOf", js.Array(value :_*))
     
-    @scala.inline
-    def setAnyOf(value: js.Array[JSONSchemaProps]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
+    inline def setAnyOf(value: js.Array[JSONSchemaProps]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyOfVarargs(value: JSONSchemaProps*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+    inline def setAnyOfVarargs(value: JSONSchemaProps*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitions(value: StringDictionary[JSONSchemaProps]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+    inline def setDefinitions(value: StringDictionary[JSONSchemaProps]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencies(value: StringDictionary[JSONSchemaProps | js.Array[String]]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: StringDictionary[JSONSchemaProps | js.Array[String]]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
-    @scala.inline
-    def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    inline def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
+    inline def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveMinimum(value: Boolean): Self = StObject.set(x, "exclusiveMinimum", value.asInstanceOf[js.Any])
+    inline def setExclusiveMinimum(value: Boolean): Self = StObject.set(x, "exclusiveMinimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalDocs(value: ExternalDocumentation): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
+    inline def setExternalDocs(value: ExternalDocumentation): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: JSONSchemaProps | js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: JSONSchemaProps | js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxProperties(value: Double): Self = StObject.set(x, "maxProperties", value.asInstanceOf[js.Any])
+    inline def setMaxProperties(value: Double): Self = StObject.set(x, "maxProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
+    inline def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinProperties(value: Double): Self = StObject.set(x, "minProperties", value.asInstanceOf[js.Any])
+    inline def setMinProperties(value: Double): Self = StObject.set(x, "minProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleOf(value: Double): Self = StObject.set(x, "multipleOf", value.asInstanceOf[js.Any])
+    inline def setMultipleOf(value: Double): Self = StObject.set(x, "multipleOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNot(value: JSONSchemaProps): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    inline def setNot(value: JSONSchemaProps): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneOf(value: js.Array[JSONSchemaProps]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
+    inline def setOneOf(value: js.Array[JSONSchemaProps]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneOfVarargs(value: JSONSchemaProps*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+    inline def setOneOfVarargs(value: JSONSchemaProps*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternProperties(value: StringDictionary[JSONSchemaProps]): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
+    inline def setPatternProperties(value: StringDictionary[JSONSchemaProps]): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: StringDictionary[JSONSchemaProps]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[JSONSchemaProps]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
+    inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX_kubernetes_embedded_resource(value: Boolean): Self = StObject.set(x, "x_kubernetes_embedded_resource", value.asInstanceOf[js.Any])
+    inline def setX_kubernetes_embedded_resource(value: Boolean): Self = StObject.set(x, "x_kubernetes_embedded_resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX_kubernetes_int_or_string(value: Boolean): Self = StObject.set(x, "x_kubernetes_int_or_string", value.asInstanceOf[js.Any])
+    inline def setX_kubernetes_int_or_string(value: Boolean): Self = StObject.set(x, "x_kubernetes_int_or_string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX_kubernetes_list_map_keys(value: js.Array[String]): Self = StObject.set(x, "x_kubernetes_list_map_keys", value.asInstanceOf[js.Any])
+    inline def setX_kubernetes_list_map_keys(value: js.Array[String]): Self = StObject.set(x, "x_kubernetes_list_map_keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX_kubernetes_list_map_keysVarargs(value: String*): Self = StObject.set(x, "x_kubernetes_list_map_keys", js.Array(value :_*))
+    inline def setX_kubernetes_list_map_keysVarargs(value: String*): Self = StObject.set(x, "x_kubernetes_list_map_keys", js.Array(value :_*))
     
-    @scala.inline
-    def setX_kubernetes_list_type(value: String): Self = StObject.set(x, "x_kubernetes_list_type", value.asInstanceOf[js.Any])
+    inline def setX_kubernetes_list_type(value: String): Self = StObject.set(x, "x_kubernetes_list_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX_kubernetes_map_type(value: String): Self = StObject.set(x, "x_kubernetes_map_type", value.asInstanceOf[js.Any])
+    inline def setX_kubernetes_map_type(value: String): Self = StObject.set(x, "x_kubernetes_map_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX_kubernetes_preserve_unknown_fields(value: Boolean): Self = StObject.set(x, "x_kubernetes_preserve_unknown_fields", value.asInstanceOf[js.Any])
+    inline def setX_kubernetes_preserve_unknown_fields(value: Boolean): Self = StObject.set(x, "x_kubernetes_preserve_unknown_fields", value.asInstanceOf[js.Any])
   }
 }

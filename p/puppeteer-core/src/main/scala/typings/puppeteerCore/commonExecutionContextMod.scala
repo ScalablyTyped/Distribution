@@ -48,7 +48,7 @@ object commonExecutionContextMod {
       */
     var _contextId: Double = js.native
     
-    var _evaluateInternal: js.Any = js.native
+    /* private */ var _evaluateInternal: js.Any = js.native
     
     /**
       * @internal

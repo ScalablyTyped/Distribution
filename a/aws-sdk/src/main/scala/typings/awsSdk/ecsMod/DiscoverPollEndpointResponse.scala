@@ -18,25 +18,19 @@ trait DiscoverPollEndpointResponse extends StObject {
 }
 object DiscoverPollEndpointResponse {
   
-  @scala.inline
-  def apply(): DiscoverPollEndpointResponse = {
+  inline def apply(): DiscoverPollEndpointResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiscoverPollEndpointResponse]
   }
   
-  @scala.inline
-  implicit class DiscoverPollEndpointResponseMutableBuilder[Self <: DiscoverPollEndpointResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DiscoverPollEndpointResponse](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setTelemetryEndpoint(value: String): Self = StObject.set(x, "telemetryEndpoint", value.asInstanceOf[js.Any])
+    inline def setTelemetryEndpoint(value: String): Self = StObject.set(x, "telemetryEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelemetryEndpointUndefined: Self = StObject.set(x, "telemetryEndpoint", js.undefined)
+    inline def setTelemetryEndpointUndefined: Self = StObject.set(x, "telemetryEndpoint", js.undefined)
   }
 }

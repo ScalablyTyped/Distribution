@@ -30,26 +30,20 @@ object snackbarQueueMod {
   }
   object SnackbarQueueProps {
     
-    @scala.inline
-    def apply[M /* <: ToastMessage */](id: String, queue: js.Array[M]): SnackbarQueueProps[M] = {
+    inline def apply[M /* <: ToastMessage */](id: String, queue: js.Array[M]): SnackbarQueueProps[M] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnackbarQueueProps[M]]
     }
     
-    @scala.inline
-    implicit class SnackbarQueuePropsMutableBuilder[Self <: SnackbarQueueProps[?], M /* <: ToastMessage */] (val x: Self & SnackbarQueueProps[M]) extends AnyVal {
+    extension [Self <: SnackbarQueueProps[?], M /* <: ToastMessage */](x: Self & SnackbarQueueProps[M]) {
       
-      @scala.inline
-      def setOnActionClick(value: (M, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
+      inline def setOnActionClick(value: (M, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
+      inline def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
       
-      @scala.inline
-      def setQueue(value: js.Array[M]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: js.Array[M]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueVarargs(value: M*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: M*): Self = StObject.set(x, "queue", js.Array(value :_*))
     }
   }
 }

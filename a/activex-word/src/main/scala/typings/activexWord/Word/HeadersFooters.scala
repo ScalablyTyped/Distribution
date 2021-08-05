@@ -16,13 +16,12 @@ trait HeadersFooters extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.HeadersFooters_typekey")
+  /* private */ @JSName("Word.HeadersFooters_typekey")
   var WordDotHeadersFooters_typekey: HeadersFooters
 }
 object HeadersFooters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object HeadersFooters {
     __obj.asInstanceOf[HeadersFooters]
   }
   
-  @scala.inline
-  implicit class HeadersFootersMutableBuilder[Self <: HeadersFooters] (val x: Self) extends AnyVal {
+  extension [Self <: HeadersFooters](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: WdHeaderFooterIndex => HeaderFooter): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: WdHeaderFooterIndex => HeaderFooter): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotHeadersFooters_typekey(value: HeadersFooters): Self = StObject.set(x, "Word.HeadersFooters_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotHeadersFooters_typekey(value: HeadersFooters): Self = StObject.set(x, "Word.HeadersFooters_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait CSSStyleRule
 }
 object CSSStyleRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CHARSET_RULE: Double,
     FONT_FACE_RULE: Double,
     IMPORT_RULE: Double,
@@ -37,13 +36,10 @@ object CSSStyleRule {
     __obj.asInstanceOf[CSSStyleRule]
   }
   
-  @scala.inline
-  implicit class CSSStyleRuleMutableBuilder[Self <: CSSStyleRule] (val x: Self) extends AnyVal {
+  extension [Self <: CSSStyleRule](x: Self) {
     
-    @scala.inline
-    def setSelectorText(value: java.lang.String): Self = StObject.set(x, "selectorText", value.asInstanceOf[js.Any])
+    inline def setSelectorText(value: java.lang.String): Self = StObject.set(x, "selectorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: CSSStyleDeclaration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSStyleDeclaration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

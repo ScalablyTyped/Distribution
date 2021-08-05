@@ -30,34 +30,25 @@ trait SchemaConfigurationVariables extends StObject {
 }
 object SchemaConfigurationVariables {
   
-  @scala.inline
-  def apply(): SchemaConfigurationVariables = {
+  inline def apply(): SchemaConfigurationVariables = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfigurationVariables]
   }
   
-  @scala.inline
-  implicit class SchemaConfigurationVariablesMutableBuilder[Self <: SchemaConfigurationVariables] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConfigurationVariables](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMcmId(value: String): Self = StObject.set(x, "mcmId", value.asInstanceOf[js.Any])
+    inline def setMcmId(value: String): Self = StObject.set(x, "mcmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMcmIdUndefined: Self = StObject.set(x, "mcmId", js.undefined)
+    inline def setMcmIdUndefined: Self = StObject.set(x, "mcmId", js.undefined)
     
-    @scala.inline
-    def setVariableSet(value: js.Array[SchemaVariableSet]): Self = StObject.set(x, "variableSet", value.asInstanceOf[js.Any])
+    inline def setVariableSet(value: js.Array[SchemaVariableSet]): Self = StObject.set(x, "variableSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableSetUndefined: Self = StObject.set(x, "variableSet", js.undefined)
+    inline def setVariableSetUndefined: Self = StObject.set(x, "variableSet", js.undefined)
     
-    @scala.inline
-    def setVariableSetVarargs(value: SchemaVariableSet*): Self = StObject.set(x, "variableSet", js.Array(value :_*))
+    inline def setVariableSetVarargs(value: SchemaVariableSet*): Self = StObject.set(x, "variableSet", js.Array(value :_*))
   }
 }

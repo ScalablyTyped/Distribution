@@ -23,31 +23,23 @@ trait TaggedResource extends StObject {
 }
 object TaggedResource {
   
-  @scala.inline
-  def apply(): TaggedResource = {
+  inline def apply(): TaggedResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaggedResource]
   }
   
-  @scala.inline
-  implicit class TaggedResourceMutableBuilder[Self <: TaggedResource] (val x: Self) extends AnyVal {
+  extension [Self <: TaggedResource](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setTag(value: Tag): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Tag): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
   }
 }

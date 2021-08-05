@@ -18,28 +18,21 @@ trait DescribeComplianceByConfigRuleResponse extends StObject {
 }
 object DescribeComplianceByConfigRuleResponse {
   
-  @scala.inline
-  def apply(): DescribeComplianceByConfigRuleResponse = {
+  inline def apply(): DescribeComplianceByConfigRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeComplianceByConfigRuleResponse]
   }
   
-  @scala.inline
-  implicit class DescribeComplianceByConfigRuleResponseMutableBuilder[Self <: DescribeComplianceByConfigRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeComplianceByConfigRuleResponse](x: Self) {
     
-    @scala.inline
-    def setComplianceByConfigRules(value: ComplianceByConfigRules): Self = StObject.set(x, "ComplianceByConfigRules", value.asInstanceOf[js.Any])
+    inline def setComplianceByConfigRules(value: ComplianceByConfigRules): Self = StObject.set(x, "ComplianceByConfigRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceByConfigRulesUndefined: Self = StObject.set(x, "ComplianceByConfigRules", js.undefined)
+    inline def setComplianceByConfigRulesUndefined: Self = StObject.set(x, "ComplianceByConfigRules", js.undefined)
     
-    @scala.inline
-    def setComplianceByConfigRulesVarargs(value: ComplianceByConfigRule*): Self = StObject.set(x, "ComplianceByConfigRules", js.Array(value :_*))
+    inline def setComplianceByConfigRulesVarargs(value: ComplianceByConfigRule*): Self = StObject.set(x, "ComplianceByConfigRules", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

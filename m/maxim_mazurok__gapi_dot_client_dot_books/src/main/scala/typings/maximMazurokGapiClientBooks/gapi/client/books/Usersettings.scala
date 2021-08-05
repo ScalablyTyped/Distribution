@@ -18,31 +18,23 @@ trait Usersettings extends StObject {
 }
 object Usersettings {
   
-  @scala.inline
-  def apply(): Usersettings = {
+  inline def apply(): Usersettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Usersettings]
   }
   
-  @scala.inline
-  implicit class UsersettingsMutableBuilder[Self <: Usersettings] (val x: Self) extends AnyVal {
+  extension [Self <: Usersettings](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNotesExport(value: FolderName): Self = StObject.set(x, "notesExport", value.asInstanceOf[js.Any])
+    inline def setNotesExport(value: FolderName): Self = StObject.set(x, "notesExport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesExportUndefined: Self = StObject.set(x, "notesExport", js.undefined)
+    inline def setNotesExportUndefined: Self = StObject.set(x, "notesExport", js.undefined)
     
-    @scala.inline
-    def setNotification(value: MatchMyInterests): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: MatchMyInterests): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
   }
 }

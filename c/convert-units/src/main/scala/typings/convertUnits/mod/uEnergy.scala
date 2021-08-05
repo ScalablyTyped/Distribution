@@ -18,24 +18,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uEnergy extends StObject
 object uEnergy {
   
-  @scala.inline
-  def GWh: typings.convertUnits.convertUnitsStrings.GWh = "GWh".asInstanceOf[typings.convertUnits.convertUnitsStrings.GWh]
+  inline def GWh: typings.convertUnits.convertUnitsStrings.GWh = "GWh".asInstanceOf[typings.convertUnits.convertUnitsStrings.GWh]
   
-  @scala.inline
-  def J: typings.convertUnits.convertUnitsStrings.J = "J".asInstanceOf[typings.convertUnits.convertUnitsStrings.J]
+  inline def J: typings.convertUnits.convertUnitsStrings.J = "J".asInstanceOf[typings.convertUnits.convertUnitsStrings.J]
   
-  @scala.inline
-  def MWh: typings.convertUnits.convertUnitsStrings.MWh = "MWh".asInstanceOf[typings.convertUnits.convertUnitsStrings.MWh]
+  inline def MWh: typings.convertUnits.convertUnitsStrings.MWh = "MWh".asInstanceOf[typings.convertUnits.convertUnitsStrings.MWh]
   
-  @scala.inline
-  def Wh: typings.convertUnits.convertUnitsStrings.Wh = "Wh".asInstanceOf[typings.convertUnits.convertUnitsStrings.Wh]
+  inline def Wh: typings.convertUnits.convertUnitsStrings.Wh = "Wh".asInstanceOf[typings.convertUnits.convertUnitsStrings.Wh]
   
-  @scala.inline
-  def kJ: typings.convertUnits.convertUnitsStrings.kJ = "kJ".asInstanceOf[typings.convertUnits.convertUnitsStrings.kJ]
+  inline def kJ: typings.convertUnits.convertUnitsStrings.kJ = "kJ".asInstanceOf[typings.convertUnits.convertUnitsStrings.kJ]
   
-  @scala.inline
-  def kWh: typings.convertUnits.convertUnitsStrings.kWh = "kWh".asInstanceOf[typings.convertUnits.convertUnitsStrings.kWh]
+  inline def kWh: typings.convertUnits.convertUnitsStrings.kWh = "kWh".asInstanceOf[typings.convertUnits.convertUnitsStrings.kWh]
   
-  @scala.inline
-  def mWh: mWh_ = "mWh".asInstanceOf[mWh_]
+  inline def mWh: mWh_ = "mWh".asInstanceOf[mWh_]
 }

@@ -34,7 +34,7 @@ object menuToggleMod {
       */
     var menu: js.UndefOr[String] = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
     @JSName("render")
     def render_MMenuToggle(): js.Any = js.native

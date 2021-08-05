@@ -14,19 +14,15 @@ trait UploadServiceAccountKeyRequest extends StObject {
 }
 object UploadServiceAccountKeyRequest {
   
-  @scala.inline
-  def apply(): UploadServiceAccountKeyRequest = {
+  inline def apply(): UploadServiceAccountKeyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadServiceAccountKeyRequest]
   }
   
-  @scala.inline
-  implicit class UploadServiceAccountKeyRequestMutableBuilder[Self <: UploadServiceAccountKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UploadServiceAccountKeyRequest](x: Self) {
     
-    @scala.inline
-    def setPublicKeyData(value: String): Self = StObject.set(x, "publicKeyData", value.asInstanceOf[js.Any])
+    inline def setPublicKeyData(value: String): Self = StObject.set(x, "publicKeyData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyDataUndefined: Self = StObject.set(x, "publicKeyData", js.undefined)
+    inline def setPublicKeyDataUndefined: Self = StObject.set(x, "publicKeyData", js.undefined)
   }
 }

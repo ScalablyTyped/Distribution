@@ -19,23 +19,18 @@ object rootRefRootRefMod extends Shortcut {
   }
   object RootRefProps {
     
-    @scala.inline
-    def apply[T](): RootRefProps[T] = {
+    inline def apply[T](): RootRefProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RootRefProps[T]]
     }
     
-    @scala.inline
-    implicit class RootRefPropsMutableBuilder[Self <: RootRefProps[?], T] (val x: Self & RootRefProps[T]) extends AnyVal {
+    extension [Self <: RootRefProps[?], T](x: Self & RootRefProps[T]) {
       
-      @scala.inline
-      def setRootRef(value: (js.Function1[/* instance */ T | Null, Unit]) | RefObject[T]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
+      inline def setRootRef(value: (js.Function1[/* instance */ T | Null, Unit]) | RefObject[T]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootRefFunction1(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "rootRef", js.Any.fromFunction1(value))
+      inline def setRootRefFunction1(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "rootRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRootRefUndefined: Self = StObject.set(x, "rootRef", js.undefined)
+      inline def setRootRefUndefined: Self = StObject.set(x, "rootRef", js.undefined)
     }
   }
   

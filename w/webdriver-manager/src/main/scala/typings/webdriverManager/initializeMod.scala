@@ -11,8 +11,7 @@ object initializeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def android(
+  inline def android(
     sdkPath: String,
     apiLevels: js.Array[String],
     architectures: js.Array[String],
@@ -24,6 +23,5 @@ object initializeMod {
     verbose: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("android")(sdkPath.asInstanceOf[js.Any], apiLevels.asInstanceOf[js.Any], architectures.asInstanceOf[js.Any], platforms.asInstanceOf[js.Any], acceptLicenses.asInstanceOf[js.Any], version.asInstanceOf[js.Any], oldAVDs.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def iOS(logger: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("iOS")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def iOS(logger: Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("iOS")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

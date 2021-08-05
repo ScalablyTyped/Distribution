@@ -12,137 +12,117 @@ object pacResolverStrings {
   sealed trait APR
     extends StObject
        with Month
-  @scala.inline
-  def APR: APR = "APR".asInstanceOf[APR]
+  inline def APR: APR = "APR".asInstanceOf[APR]
   
   @js.native
   sealed trait AUG
     extends StObject
        with Month
-  @scala.inline
-  def AUG: AUG = "AUG".asInstanceOf[AUG]
+  inline def AUG: AUG = "AUG".asInstanceOf[AUG]
   
   @js.native
   sealed trait DEC
     extends StObject
        with Month
-  @scala.inline
-  def DEC: DEC = "DEC".asInstanceOf[DEC]
+  inline def DEC: DEC = "DEC".asInstanceOf[DEC]
   
   @js.native
   sealed trait FEB
     extends StObject
        with Month
-  @scala.inline
-  def FEB: FEB = "FEB".asInstanceOf[FEB]
+  inline def FEB: FEB = "FEB".asInstanceOf[FEB]
   
   @js.native
   sealed trait FRI
     extends StObject
        with Weekday
-  @scala.inline
-  def FRI: FRI = "FRI".asInstanceOf[FRI]
+  inline def FRI: FRI = "FRI".asInstanceOf[FRI]
   
   @js.native
   sealed trait GMT extends StObject
-  @scala.inline
-  def GMT: GMT = "GMT".asInstanceOf[GMT]
+  inline def GMT: GMT = "GMT".asInstanceOf[GMT]
   
   @js.native
   sealed trait JAN
     extends StObject
        with Month
-  @scala.inline
-  def JAN: JAN = "JAN".asInstanceOf[JAN]
+  inline def JAN: JAN = "JAN".asInstanceOf[JAN]
   
   @js.native
   sealed trait JUL
     extends StObject
        with Month
-  @scala.inline
-  def JUL: JUL = "JUL".asInstanceOf[JUL]
+  inline def JUL: JUL = "JUL".asInstanceOf[JUL]
   
   @js.native
   sealed trait JUN
     extends StObject
        with Month
-  @scala.inline
-  def JUN: JUN = "JUN".asInstanceOf[JUN]
+  inline def JUN: JUN = "JUN".asInstanceOf[JUN]
   
   @js.native
   sealed trait MAR
     extends StObject
        with Month
-  @scala.inline
-  def MAR: MAR = "MAR".asInstanceOf[MAR]
+  inline def MAR: MAR = "MAR".asInstanceOf[MAR]
   
   @js.native
   sealed trait MAY
     extends StObject
        with Month
-  @scala.inline
-  def MAY: MAY = "MAY".asInstanceOf[MAY]
+  inline def MAY: MAY = "MAY".asInstanceOf[MAY]
   
   @js.native
   sealed trait MON
     extends StObject
        with Weekday
-  @scala.inline
-  def MON: MON = "MON".asInstanceOf[MON]
+  inline def MON: MON = "MON".asInstanceOf[MON]
   
   @js.native
   sealed trait NOV
     extends StObject
        with Month
-  @scala.inline
-  def NOV: NOV = "NOV".asInstanceOf[NOV]
+  inline def NOV: NOV = "NOV".asInstanceOf[NOV]
   
   @js.native
   sealed trait OCT
     extends StObject
        with Month
-  @scala.inline
-  def OCT: OCT = "OCT".asInstanceOf[OCT]
+  inline def OCT: OCT = "OCT".asInstanceOf[OCT]
   
   @js.native
   sealed trait SAT
     extends StObject
        with Weekday
-  @scala.inline
-  def SAT: SAT = "SAT".asInstanceOf[SAT]
+  inline def SAT: SAT = "SAT".asInstanceOf[SAT]
   
   @js.native
   sealed trait SEP
     extends StObject
        with Month
-  @scala.inline
-  def SEP: SEP = "SEP".asInstanceOf[SEP]
+  inline def SEP: SEP = "SEP".asInstanceOf[SEP]
   
   @js.native
   sealed trait SUN
     extends StObject
        with Weekday
-  @scala.inline
-  def SUN: SUN = "SUN".asInstanceOf[SUN]
+  inline def SUN: SUN = "SUN".asInstanceOf[SUN]
   
   @js.native
   sealed trait THU
     extends StObject
        with Weekday
-  @scala.inline
-  def THU: THU = "THU".asInstanceOf[THU]
+  inline def THU: THU = "THU".asInstanceOf[THU]
   
   @js.native
   sealed trait TUE
     extends StObject
        with Weekday
-  @scala.inline
-  def TUE: TUE = "TUE".asInstanceOf[TUE]
+  inline def TUE: TUE = "TUE".asInstanceOf[TUE]
   
   @js.native
   sealed trait WED
     extends StObject
        with Weekday
-  @scala.inline
-  def WED: WED = "WED".asInstanceOf[WED]
+  inline def WED: WED = "WED".asInstanceOf[WED]
 }

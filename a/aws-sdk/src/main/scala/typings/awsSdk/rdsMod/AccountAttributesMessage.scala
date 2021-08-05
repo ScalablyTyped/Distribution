@@ -13,22 +13,17 @@ trait AccountAttributesMessage extends StObject {
 }
 object AccountAttributesMessage {
   
-  @scala.inline
-  def apply(): AccountAttributesMessage = {
+  inline def apply(): AccountAttributesMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountAttributesMessage]
   }
   
-  @scala.inline
-  implicit class AccountAttributesMessageMutableBuilder[Self <: AccountAttributesMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AccountAttributesMessage](x: Self) {
     
-    @scala.inline
-    def setAccountQuotas(value: AccountQuotaList): Self = StObject.set(x, "AccountQuotas", value.asInstanceOf[js.Any])
+    inline def setAccountQuotas(value: AccountQuotaList): Self = StObject.set(x, "AccountQuotas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountQuotasUndefined: Self = StObject.set(x, "AccountQuotas", js.undefined)
+    inline def setAccountQuotasUndefined: Self = StObject.set(x, "AccountQuotas", js.undefined)
     
-    @scala.inline
-    def setAccountQuotasVarargs(value: AccountQuota*): Self = StObject.set(x, "AccountQuotas", js.Array(value :_*))
+    inline def setAccountQuotasVarargs(value: AccountQuota*): Self = StObject.set(x, "AccountQuotas", js.Array(value :_*))
   }
 }

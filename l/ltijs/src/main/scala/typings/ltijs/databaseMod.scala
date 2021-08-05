@@ -46,29 +46,22 @@ object databaseMod {
   }
   object DatabaseOptions {
     
-    @scala.inline
-    def apply(url: String): DatabaseOptions = {
+    inline def apply(url: String): DatabaseOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatabaseOptions]
     }
     
-    @scala.inline
-    implicit class DatabaseOptionsMutableBuilder[Self <: DatabaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DatabaseOptions](x: Self) {
       
-      @scala.inline
-      def setConnection(value: KeepAlive): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: KeepAlive): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+      inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: js.Object): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: js.Object): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

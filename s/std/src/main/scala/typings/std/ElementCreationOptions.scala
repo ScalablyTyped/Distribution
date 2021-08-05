@@ -10,19 +10,15 @@ trait ElementCreationOptions extends StObject {
 }
 object ElementCreationOptions {
   
-  @scala.inline
-  def apply(): ElementCreationOptions = {
+  inline def apply(): ElementCreationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElementCreationOptions]
   }
   
-  @scala.inline
-  implicit class ElementCreationOptionsMutableBuilder[Self <: ElementCreationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ElementCreationOptions](x: Self) {
     
-    @scala.inline
-    def setIs(value: java.lang.String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    inline def setIs(value: java.lang.String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+    inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait AlterColumnFamilyQueryBuilder[T]
      with FieldValueQueryBuilder[T]
 object AlterColumnFamilyQueryBuilder {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     alter: (js.Any, String) => AlterColumnFamilyQueryBuilder[T],
     ascii: js.Any => TypeMatchedValue[T, js.Any, String, AlterColumnFamilyQueryBuilder[T]],
     bigint: js.Any => TypeMatchedValue[T, js.Any, Long, AlterColumnFamilyQueryBuilder[T]],

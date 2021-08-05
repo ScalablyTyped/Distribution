@@ -21,84 +21,55 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
+  inline def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
   
-  @scala.inline
-  def currentUser(): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("currentUser")().asInstanceOf[User | Null]
+  inline def currentUser(): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("currentUser")().asInstanceOf[User | Null]
   
-  @scala.inline
-  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-  @scala.inline
-  def init(opts: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  inline def init(opts: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def logout(): js.UndefOr[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[js.UndefOr[js.Promise[Unit]]]
+  inline def logout(): js.UndefOr[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[js.UndefOr[js.Promise[Unit]]]
   
-  @scala.inline
-  def off_close(event: close): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def off_close(event: close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off_close(event: close): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def off_close(event: close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def off_error(event: error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def off_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off_error(event: error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def off_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def off_init(event: init): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def off_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off_init(event: init): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def off_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def off_login(event: login): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def off_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off_login(event: login): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def off_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def off_logout(event: logout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def off_logout(event: logout, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off_logout(event: logout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def off_logout(event: logout, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def off_open(event: open): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def off_open(event: open, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off_open(event: open): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def off_open(event: open, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def on_close(event: close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_close(event: close, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def on_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_error(event: error, cb: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def on_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_init(event: init, cb: js.Function1[/* user */ User | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def on_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_login(event: login, cb: js.Function1[/* user */ User, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def on_logout(event: logout, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_logout(event: logout, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def on_open(event: open, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_open(event: open, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def open(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Unit]
+  inline def open(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Unit]
   
-  @scala.inline
-  def open_login(tabName: login): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(tabName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def open_login(tabName: login): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(tabName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def open_signup(tabName: signup): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(tabName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def open_signup(tabName: signup): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(tabName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def refresh(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def refresh(force: Boolean): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")(force.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def refresh(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[js.Promise[String]]
+  inline def refresh(force: Boolean): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")(force.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def setLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait InitOptions extends StObject {
     
@@ -124,44 +95,32 @@ object mod {
   }
   object InitOptions {
     
-    @scala.inline
-    def apply(): InitOptions = {
+    inline def apply(): InitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitOptions]
     }
     
-    @scala.inline
-    implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitOptions](x: Self) {
       
-      @scala.inline
-      def setAPIUrl(value: String): Self = StObject.set(x, "APIUrl", value.asInstanceOf[js.Any])
+      inline def setAPIUrl(value: String): Self = StObject.set(x, "APIUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPIUrlUndefined: Self = StObject.set(x, "APIUrl", js.undefined)
+      inline def setAPIUrlUndefined: Self = StObject.set(x, "APIUrl", js.undefined)
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLogo(value: Boolean): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: Boolean): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+      inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      @scala.inline
-      def setNamePlaceholder(value: String): Self = StObject.set(x, "namePlaceholder", value.asInstanceOf[js.Any])
+      inline def setNamePlaceholder(value: String): Self = StObject.set(x, "namePlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePlaceholderUndefined: Self = StObject.set(x, "namePlaceholder", js.undefined)
+      inline def setNamePlaceholderUndefined: Self = StObject.set(x, "namePlaceholder", js.undefined)
     }
   }
   
@@ -179,8 +138,7 @@ object mod {
   }
   object Token {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       access_token: String,
       expires_at: String | Double,
       expires_in: String | Double,
@@ -191,23 +149,17 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_at(value: String | Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+      inline def setExpires_at(value: String | Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_in(value: String | Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+      inline def setExpires_in(value: String | Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+      inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
+      inline def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,8 +197,7 @@ object mod {
   }
   object User {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       api: ApiURL,
       app_metadata: Provider,
       aud: String,
@@ -265,59 +216,41 @@ object mod {
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setApi(value: ApiURL): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: ApiURL): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApp_metadata(value: Provider): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])
+      inline def setApp_metadata(value: Provider): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
+      inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudience(value: js.Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: js.Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      @scala.inline
-      def setConfirmed_at(value: String): Self = StObject.set(x, "confirmed_at", value.asInstanceOf[js.Any])
+      inline def setConfirmed_at(value: String): Self = StObject.set(x, "confirmed_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvited_at(value: String): Self = StObject.set(x, "invited_at", value.asInstanceOf[js.Any])
+      inline def setInvited_at(value: String): Self = StObject.set(x, "invited_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecovery_sent_at(value: String): Self = StObject.set(x, "recovery_sent_at", value.asInstanceOf[js.Any])
+      inline def setRecovery_sent_at(value: String): Self = StObject.set(x, "recovery_sent_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_metadata(value: Avatarurl): Self = StObject.set(x, "user_metadata", value.asInstanceOf[js.Any])
+      inline def setUser_metadata(value: Avatarurl): Self = StObject.set(x, "user_metadata", value.asInstanceOf[js.Any])
     }
   }
 }

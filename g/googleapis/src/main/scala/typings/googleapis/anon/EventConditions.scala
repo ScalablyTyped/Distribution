@@ -12,28 +12,21 @@ trait EventConditions extends StObject {
 }
 object EventConditions {
   
-  @scala.inline
-  def apply(): EventConditions = {
+  inline def apply(): EventConditions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventConditions]
   }
   
-  @scala.inline
-  implicit class EventConditionsMutableBuilder[Self <: EventConditions] (val x: Self) extends AnyVal {
+  extension [Self <: EventConditions](x: Self) {
     
-    @scala.inline
-    def setEventConditions(value: js.Array[ComparisonType]): Self = StObject.set(x, "eventConditions", value.asInstanceOf[js.Any])
+    inline def setEventConditions(value: js.Array[ComparisonType]): Self = StObject.set(x, "eventConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventConditionsUndefined: Self = StObject.set(x, "eventConditions", js.undefined)
+    inline def setEventConditionsUndefined: Self = StObject.set(x, "eventConditions", js.undefined)
     
-    @scala.inline
-    def setEventConditionsVarargs(value: ComparisonType*): Self = StObject.set(x, "eventConditions", js.Array(value :_*))
+    inline def setEventConditionsVarargs(value: ComparisonType*): Self = StObject.set(x, "eventConditions", js.Array(value :_*))
     
-    @scala.inline
-    def setUseEventValue(value: Boolean): Self = StObject.set(x, "useEventValue", value.asInstanceOf[js.Any])
+    inline def setUseEventValue(value: Boolean): Self = StObject.set(x, "useEventValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseEventValueUndefined: Self = StObject.set(x, "useEventValue", js.undefined)
+    inline def setUseEventValueUndefined: Self = StObject.set(x, "useEventValue", js.undefined)
   }
 }

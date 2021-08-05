@@ -29,76 +29,53 @@ trait Dependencyfile extends StObject {
 }
 object Dependencyfile {
   
-  @scala.inline
-  def apply(name: String): Dependencyfile = {
+  inline def apply(name: String): Dependencyfile = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dependencyfile]
   }
   
-  @scala.inline
-  implicit class DependencyfileMutableBuilder[Self <: Dependencyfile] (val x: Self) extends AnyVal {
+  extension [Self <: Dependencyfile](x: Self) {
     
-    @scala.inline
-    def setDependency_file(value: String): Self = StObject.set(x, "dependency_file", value.asInstanceOf[js.Any])
+    inline def setDependency_file(value: String): Self = StObject.set(x, "dependency_file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependency_fileUndefined: Self = StObject.set(x, "dependency_file", js.undefined)
+    inline def setDependency_fileUndefined: Self = StObject.set(x, "dependency_file", js.undefined)
     
-    @scala.inline
-    def setExecution_position(value: before_compile | after_compile | any): Self = StObject.set(x, "execution_position", value.asInstanceOf[js.Any])
+    inline def setExecution_position(value: before_compile | after_compile | any): Self = StObject.set(x, "execution_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecution_positionUndefined: Self = StObject.set(x, "execution_position", js.undefined)
+    inline def setExecution_positionUndefined: Self = StObject.set(x, "execution_position", js.undefined)
     
-    @scala.inline
-    def setInput_file_lists(value: js.Array[String]): Self = StObject.set(x, "input_file_lists", value.asInstanceOf[js.Any])
+    inline def setInput_file_lists(value: js.Array[String]): Self = StObject.set(x, "input_file_lists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_file_listsUndefined: Self = StObject.set(x, "input_file_lists", js.undefined)
+    inline def setInput_file_listsUndefined: Self = StObject.set(x, "input_file_lists", js.undefined)
     
-    @scala.inline
-    def setInput_file_listsVarargs(value: String*): Self = StObject.set(x, "input_file_lists", js.Array(value :_*))
+    inline def setInput_file_listsVarargs(value: String*): Self = StObject.set(x, "input_file_lists", js.Array(value :_*))
     
-    @scala.inline
-    def setInput_files(value: js.Array[String]): Self = StObject.set(x, "input_files", value.asInstanceOf[js.Any])
+    inline def setInput_files(value: js.Array[String]): Self = StObject.set(x, "input_files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput_filesUndefined: Self = StObject.set(x, "input_files", js.undefined)
+    inline def setInput_filesUndefined: Self = StObject.set(x, "input_files", js.undefined)
     
-    @scala.inline
-    def setInput_filesVarargs(value: String*): Self = StObject.set(x, "input_files", js.Array(value :_*))
+    inline def setInput_filesVarargs(value: String*): Self = StObject.set(x, "input_files", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_file_lists(value: js.Array[String]): Self = StObject.set(x, "output_file_lists", value.asInstanceOf[js.Any])
+    inline def setOutput_file_lists(value: js.Array[String]): Self = StObject.set(x, "output_file_lists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_file_listsUndefined: Self = StObject.set(x, "output_file_lists", js.undefined)
+    inline def setOutput_file_listsUndefined: Self = StObject.set(x, "output_file_lists", js.undefined)
     
-    @scala.inline
-    def setOutput_file_listsVarargs(value: String*): Self = StObject.set(x, "output_file_lists", js.Array(value :_*))
+    inline def setOutput_file_listsVarargs(value: String*): Self = StObject.set(x, "output_file_lists", js.Array(value :_*))
     
-    @scala.inline
-    def setOutput_files(value: js.Array[String]): Self = StObject.set(x, "output_files", value.asInstanceOf[js.Any])
+    inline def setOutput_files(value: js.Array[String]): Self = StObject.set(x, "output_files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_filesUndefined: Self = StObject.set(x, "output_files", js.undefined)
+    inline def setOutput_filesUndefined: Self = StObject.set(x, "output_files", js.undefined)
     
-    @scala.inline
-    def setOutput_filesVarargs(value: String*): Self = StObject.set(x, "output_files", js.Array(value :_*))
+    inline def setOutput_filesVarargs(value: String*): Self = StObject.set(x, "output_files", js.Array(value :_*))
     
-    @scala.inline
-    def setShell_path(value: String): Self = StObject.set(x, "shell_path", value.asInstanceOf[js.Any])
+    inline def setShell_path(value: String): Self = StObject.set(x, "shell_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShell_pathUndefined: Self = StObject.set(x, "shell_path", js.undefined)
+    inline def setShell_pathUndefined: Self = StObject.set(x, "shell_path", js.undefined)
     
-    @scala.inline
-    def setShow_env_vars_in_log(value: Boolean): Self = StObject.set(x, "show_env_vars_in_log", value.asInstanceOf[js.Any])
+    inline def setShow_env_vars_in_log(value: Boolean): Self = StObject.set(x, "show_env_vars_in_log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_env_vars_in_logUndefined: Self = StObject.set(x, "show_env_vars_in_log", js.undefined)
+    inline def setShow_env_vars_in_logUndefined: Self = StObject.set(x, "show_env_vars_in_log", js.undefined)
   }
 }

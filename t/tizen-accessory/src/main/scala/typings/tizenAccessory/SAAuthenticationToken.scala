@@ -12,19 +12,15 @@ trait SAAuthenticationToken extends StObject {
 }
 object SAAuthenticationToken {
   
-  @scala.inline
-  def apply(authenticationType: String, key: String): SAAuthenticationToken = {
+  inline def apply(authenticationType: String, key: String): SAAuthenticationToken = {
     val __obj = js.Dynamic.literal(authenticationType = authenticationType.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAAuthenticationToken]
   }
   
-  @scala.inline
-  implicit class SAAuthenticationTokenMutableBuilder[Self <: SAAuthenticationToken] (val x: Self) extends AnyVal {
+  extension [Self <: SAAuthenticationToken](x: Self) {
     
-    @scala.inline
-    def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

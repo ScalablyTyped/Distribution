@@ -12,19 +12,15 @@ trait NodeCheckedEventParameters[T] extends StObject {
 }
 object NodeCheckedEventParameters {
   
-  @scala.inline
-  def apply[T](checked: Boolean, element: T): NodeCheckedEventParameters[T] = {
+  inline def apply[T](checked: Boolean, element: T): NodeCheckedEventParameters[T] = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeCheckedEventParameters[T]]
   }
   
-  @scala.inline
-  implicit class NodeCheckedEventParametersMutableBuilder[Self <: NodeCheckedEventParameters[?], T] (val x: Self & NodeCheckedEventParameters[T]) extends AnyVal {
+  extension [Self <: NodeCheckedEventParameters[?], T](x: Self & NodeCheckedEventParameters[T]) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

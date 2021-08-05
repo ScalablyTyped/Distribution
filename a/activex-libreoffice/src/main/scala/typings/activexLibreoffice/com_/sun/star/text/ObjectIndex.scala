@@ -38,8 +38,7 @@ trait ObjectIndex
 }
 object ObjectIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     BackColor: Color,
     BackGraphicFilter: String,
@@ -90,25 +89,18 @@ object ObjectIndex {
     __obj.asInstanceOf[ObjectIndex]
   }
   
-  @scala.inline
-  implicit class ObjectIndexMutableBuilder[Self <: ObjectIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectIndex](x: Self) {
     
-    @scala.inline
-    def setCreateFromOtherEmbeddedObjects(value: Boolean): Self = StObject.set(x, "CreateFromOtherEmbeddedObjects", value.asInstanceOf[js.Any])
+    inline def setCreateFromOtherEmbeddedObjects(value: Boolean): Self = StObject.set(x, "CreateFromOtherEmbeddedObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromStarCalc(value: Boolean): Self = StObject.set(x, "CreateFromStarCalc", value.asInstanceOf[js.Any])
+    inline def setCreateFromStarCalc(value: Boolean): Self = StObject.set(x, "CreateFromStarCalc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromStarChart(value: Boolean): Self = StObject.set(x, "CreateFromStarChart", value.asInstanceOf[js.Any])
+    inline def setCreateFromStarChart(value: Boolean): Self = StObject.set(x, "CreateFromStarChart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromStarDraw(value: Boolean): Self = StObject.set(x, "CreateFromStarDraw", value.asInstanceOf[js.Any])
+    inline def setCreateFromStarDraw(value: Boolean): Self = StObject.set(x, "CreateFromStarDraw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromStarImage(value: Boolean): Self = StObject.set(x, "CreateFromStarImage", value.asInstanceOf[js.Any])
+    inline def setCreateFromStarImage(value: Boolean): Self = StObject.set(x, "CreateFromStarImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromStarMath(value: Boolean): Self = StObject.set(x, "CreateFromStarMath", value.asInstanceOf[js.Any])
+    inline def setCreateFromStarMath(value: Boolean): Self = StObject.set(x, "CreateFromStarMath", value.asInstanceOf[js.Any])
   }
 }

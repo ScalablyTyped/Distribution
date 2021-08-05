@@ -11,14 +11,13 @@ trait DeclReferenceCompletionEntry
   
   var decl: PullDecl
   
-  var hasBeenResolved: js.Any
+  /* private */ var hasBeenResolved: js.Any
   
   def resolve(`type`: String, fullSymbolName: String, docComments: String): Unit
 }
 object DeclReferenceCompletionEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decl: PullDecl,
     docComment: String,
     fullSymbolName: String,
@@ -35,16 +34,12 @@ object DeclReferenceCompletionEntry {
     __obj.asInstanceOf[DeclReferenceCompletionEntry]
   }
   
-  @scala.inline
-  implicit class DeclReferenceCompletionEntryMutableBuilder[Self <: DeclReferenceCompletionEntry] (val x: Self) extends AnyVal {
+  extension [Self <: DeclReferenceCompletionEntry](x: Self) {
     
-    @scala.inline
-    def setDecl(value: PullDecl): Self = StObject.set(x, "decl", value.asInstanceOf[js.Any])
+    inline def setDecl(value: PullDecl): Self = StObject.set(x, "decl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasBeenResolved(value: js.Any): Self = StObject.set(x, "hasBeenResolved", value.asInstanceOf[js.Any])
+    inline def setHasBeenResolved(value: js.Any): Self = StObject.set(x, "hasBeenResolved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolve(value: (String, String, String) => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
+    inline def setResolve(value: (String, String, String) => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
   }
 }

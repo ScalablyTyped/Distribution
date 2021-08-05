@@ -22,8 +22,7 @@ trait UseComboboxActions[Item] extends StObject {
 }
 object UseComboboxActions {
   
-  @scala.inline
-  def apply[Item](
+  inline def apply[Item](
     closeMenu: () => Unit,
     openMenu: () => Unit,
     reset: () => Unit,
@@ -36,28 +35,20 @@ object UseComboboxActions {
     __obj.asInstanceOf[UseComboboxActions[Item]]
   }
   
-  @scala.inline
-  implicit class UseComboboxActionsMutableBuilder[Self <: UseComboboxActions[?], Item] (val x: Self & UseComboboxActions[Item]) extends AnyVal {
+  extension [Self <: UseComboboxActions[?], Item](x: Self & UseComboboxActions[Item]) {
     
-    @scala.inline
-    def setCloseMenu(value: () => Unit): Self = StObject.set(x, "closeMenu", js.Any.fromFunction0(value))
+    inline def setCloseMenu(value: () => Unit): Self = StObject.set(x, "closeMenu", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenMenu(value: () => Unit): Self = StObject.set(x, "openMenu", js.Any.fromFunction0(value))
+    inline def setOpenMenu(value: () => Unit): Self = StObject.set(x, "openMenu", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectItem(value: Item => Unit): Self = StObject.set(x, "selectItem", js.Any.fromFunction1(value))
+    inline def setSelectItem(value: Item => Unit): Self = StObject.set(x, "selectItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHighlightedIndex(value: Double => Unit): Self = StObject.set(x, "setHighlightedIndex", js.Any.fromFunction1(value))
+    inline def setSetHighlightedIndex(value: Double => Unit): Self = StObject.set(x, "setHighlightedIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInputValue(value: String => Unit): Self = StObject.set(x, "setInputValue", js.Any.fromFunction1(value))
+    inline def setSetInputValue(value: String => Unit): Self = StObject.set(x, "setInputValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleMenu(value: () => Unit): Self = StObject.set(x, "toggleMenu", js.Any.fromFunction0(value))
+    inline def setToggleMenu(value: () => Unit): Self = StObject.set(x, "toggleMenu", js.Any.fromFunction0(value))
   }
 }

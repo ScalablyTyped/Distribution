@@ -16,6 +16,5 @@ class Number ()
 object Number {
   
   /** An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers. */
-  @scala.inline
-  def apply: NumberConstructor = js.Dynamic.global.selectDynamic("Number").asInstanceOf[NumberConstructor]
+  inline def apply: NumberConstructor = js.Dynamic.global.selectDynamic("Number").asInstanceOf[NumberConstructor]
 }

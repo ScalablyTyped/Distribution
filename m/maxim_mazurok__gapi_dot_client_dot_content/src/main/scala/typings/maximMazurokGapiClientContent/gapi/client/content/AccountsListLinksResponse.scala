@@ -17,34 +17,25 @@ trait AccountsListLinksResponse extends StObject {
 }
 object AccountsListLinksResponse {
   
-  @scala.inline
-  def apply(): AccountsListLinksResponse = {
+  inline def apply(): AccountsListLinksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountsListLinksResponse]
   }
   
-  @scala.inline
-  implicit class AccountsListLinksResponseMutableBuilder[Self <: AccountsListLinksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AccountsListLinksResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLinks(value: js.Array[LinkedAccount]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[LinkedAccount]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: LinkedAccount*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: LinkedAccount*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

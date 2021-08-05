@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlignYType extends StObject
 object AlignYType {
   
-  @scala.inline
-  def bottom: typings.bizcharts.bizchartsStrings.bottom = "bottom".asInstanceOf[typings.bizcharts.bizchartsStrings.bottom]
+  inline def bottom: typings.bizcharts.bizchartsStrings.bottom = "bottom".asInstanceOf[typings.bizcharts.bizchartsStrings.bottom]
   
-  @scala.inline
-  def middle: typings.bizcharts.bizchartsStrings.middle = "middle".asInstanceOf[typings.bizcharts.bizchartsStrings.middle]
+  inline def middle: typings.bizcharts.bizchartsStrings.middle = "middle".asInstanceOf[typings.bizcharts.bizchartsStrings.middle]
   
-  @scala.inline
-  def top: typings.bizcharts.bizchartsStrings.top = "top".asInstanceOf[typings.bizcharts.bizchartsStrings.top]
+  inline def top: typings.bizcharts.bizchartsStrings.top = "top".asInstanceOf[typings.bizcharts.bizchartsStrings.top]
 }

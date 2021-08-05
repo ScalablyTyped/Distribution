@@ -67,16 +67,16 @@ object rawlistMod {
       */
     /* protected */ def getCurrentValue(index: Double): js.Any = js.native
     
-    @JSName("onArrowKey")
-    /* protected */ def onArrowKey_down(`type`: down): Unit = js.native
+    /* protected */ @JSName("onArrowKey")
+    def onArrowKey_down(`type`: down): Unit = js.native
     /**
       * Handles the `ArrowKey`-event of the prompt.
       *
       * @param type
       * A value indicating whether the up or the down-arrow is being pressed.
       */
-    @JSName("onArrowKey")
-    /* protected */ def onArrowKey_up(`type`: up): Unit = js.native
+    /* protected */ @JSName("onArrowKey")
+    def onArrowKey_up(`type`: up): Unit = js.native
     
     /**
       * Handles the `DownKey`-event of the prompt.
@@ -112,12 +112,12 @@ object rawlistMod {
     /**
       * Gets or sets an object for paginating the content.
       */
-    var paginator: typings.inquirer.paginatorMod.^ = js.native
+    /* protected */ var paginator: typings.inquirer.paginatorMod.^ = js.native
     
     /**
       * Gets or sets the default index.
       */
-    var rawDefault: Double = js.native
+    /* protected */ var rawDefault: Double = js.native
     
     /**
       * Renders the prompt.
@@ -131,6 +131,6 @@ object rawlistMod {
     /**
       * The index of the selected choice.
       */
-    var selected: Double = js.native
+    /* protected */ var selected: Double = js.native
   }
 }

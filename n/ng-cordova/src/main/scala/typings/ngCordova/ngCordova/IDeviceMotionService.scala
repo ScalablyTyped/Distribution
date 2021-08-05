@@ -15,8 +15,7 @@ trait IDeviceMotionService extends StObject {
 }
 object IDeviceMotionService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearWatch: Double => Unit,
     getCurrentAcceleration: () => IPromise[IDeviceMotionAcceleration],
     watchAcceleration: IDeviceMotionAccelerometerOptions => IDeviceMotionWatchPromise
@@ -25,16 +24,12 @@ object IDeviceMotionService {
     __obj.asInstanceOf[IDeviceMotionService]
   }
   
-  @scala.inline
-  implicit class IDeviceMotionServiceMutableBuilder[Self <: IDeviceMotionService] (val x: Self) extends AnyVal {
+  extension [Self <: IDeviceMotionService](x: Self) {
     
-    @scala.inline
-    def setClearWatch(value: Double => Unit): Self = StObject.set(x, "clearWatch", js.Any.fromFunction1(value))
+    inline def setClearWatch(value: Double => Unit): Self = StObject.set(x, "clearWatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurrentAcceleration(value: () => IPromise[IDeviceMotionAcceleration]): Self = StObject.set(x, "getCurrentAcceleration", js.Any.fromFunction0(value))
+    inline def setGetCurrentAcceleration(value: () => IPromise[IDeviceMotionAcceleration]): Self = StObject.set(x, "getCurrentAcceleration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWatchAcceleration(value: IDeviceMotionAccelerometerOptions => IDeviceMotionWatchPromise): Self = StObject.set(x, "watchAcceleration", js.Any.fromFunction1(value))
+    inline def setWatchAcceleration(value: IDeviceMotionAccelerometerOptions => IDeviceMotionWatchPromise): Self = StObject.set(x, "watchAcceleration", js.Any.fromFunction1(value))
   }
 }

@@ -10,6 +10,5 @@ object global {
   @JSGlobal("Arbiter")
   @js.native
   def Arbiter: ArbiterStatic = js.native
-  @scala.inline
-  def Arbiter_=(x: ArbiterStatic): Unit = js.Dynamic.global.updateDynamic("Arbiter")(x.asInstanceOf[js.Any])
+  inline def Arbiter_=(x: ArbiterStatic): Unit = js.Dynamic.global.updateDynamic("Arbiter")(x.asInstanceOf[js.Any])
 }

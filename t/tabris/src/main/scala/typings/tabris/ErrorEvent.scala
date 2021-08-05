@@ -29,8 +29,7 @@ trait ErrorEvent
 }
 object ErrorEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AT_TARGET: Double,
     BUBBLING_PHASE: Double,
     CAPTURING_PHASE: Double,
@@ -59,25 +58,18 @@ object ErrorEvent {
     __obj.asInstanceOf[ErrorEvent]
   }
   
-  @scala.inline
-  implicit class ErrorEventMutableBuilder[Self <: ErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorEvent](x: Self) {
     
-    @scala.inline
-    def setColno(value: Double): Self = StObject.set(x, "colno", value.asInstanceOf[js.Any])
+    inline def setColno(value: Double): Self = StObject.set(x, "colno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitErrorEvent(value: (String, Boolean, Boolean, String, String, Double) => Unit): Self = StObject.set(x, "initErrorEvent", js.Any.fromFunction6(value))
+    inline def setInitErrorEvent(value: (String, Boolean, Boolean, String, String, Double) => Unit): Self = StObject.set(x, "initErrorEvent", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+    inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

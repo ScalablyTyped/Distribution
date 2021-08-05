@@ -26,23 +26,18 @@ object mediaconvert {
   }
   object QueueReservationPlanSettings {
     
-    @scala.inline
-    def apply(commitment: Input[String], renewalType: Input[String], reservedSlots: Input[Double]): QueueReservationPlanSettings = {
+    inline def apply(commitment: Input[String], renewalType: Input[String], reservedSlots: Input[Double]): QueueReservationPlanSettings = {
       val __obj = js.Dynamic.literal(commitment = commitment.asInstanceOf[js.Any], renewalType = renewalType.asInstanceOf[js.Any], reservedSlots = reservedSlots.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueueReservationPlanSettings]
     }
     
-    @scala.inline
-    implicit class QueueReservationPlanSettingsMutableBuilder[Self <: QueueReservationPlanSettings] (val x: Self) extends AnyVal {
+    extension [Self <: QueueReservationPlanSettings](x: Self) {
       
-      @scala.inline
-      def setCommitment(value: Input[String]): Self = StObject.set(x, "commitment", value.asInstanceOf[js.Any])
+      inline def setCommitment(value: Input[String]): Self = StObject.set(x, "commitment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenewalType(value: Input[String]): Self = StObject.set(x, "renewalType", value.asInstanceOf[js.Any])
+      inline def setRenewalType(value: Input[String]): Self = StObject.set(x, "renewalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedSlots(value: Input[Double]): Self = StObject.set(x, "reservedSlots", value.asInstanceOf[js.Any])
+      inline def setReservedSlots(value: Input[Double]): Self = StObject.set(x, "reservedSlots", value.asInstanceOf[js.Any])
     }
   }
 }

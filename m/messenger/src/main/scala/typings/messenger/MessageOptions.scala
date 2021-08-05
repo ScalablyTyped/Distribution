@@ -48,58 +48,41 @@ trait MessageOptions extends StObject {
 }
 object MessageOptions {
   
-  @scala.inline
-  def apply(message: String): MessageOptions = {
+  inline def apply(message: String): MessageOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageOptions]
   }
   
-  @scala.inline
-  implicit class MessageOptionsMutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessageOptions](x: Self) {
     
-    @scala.inline
-    def setHideAfter(value: Double): Self = StObject.set(x, "hideAfter", value.asInstanceOf[js.Any])
+    inline def setHideAfter(value: Double): Self = StObject.set(x, "hideAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideAfterUndefined: Self = StObject.set(x, "hideAfter", js.undefined)
+    inline def setHideAfterUndefined: Self = StObject.set(x, "hideAfter", js.undefined)
     
-    @scala.inline
-    def setHideOnNavigate(value: Boolean): Self = StObject.set(x, "hideOnNavigate", value.asInstanceOf[js.Any])
+    inline def setHideOnNavigate(value: Boolean): Self = StObject.set(x, "hideOnNavigate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideOnNavigateUndefined: Self = StObject.set(x, "hideOnNavigate", js.undefined)
+    inline def setHideOnNavigateUndefined: Self = StObject.set(x, "hideOnNavigate", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+    inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+    inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
     
-    @scala.inline
-    def setSingleton(value: Boolean): Self = StObject.set(x, "singleton", value.asInstanceOf[js.Any])
+    inline def setSingleton(value: Boolean): Self = StObject.set(x, "singleton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingletonUndefined: Self = StObject.set(x, "singleton", js.undefined)
+    inline def setSingletonUndefined: Self = StObject.set(x, "singleton", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

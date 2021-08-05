@@ -18,43 +18,31 @@ trait IStageGLOptions extends StObject {
 }
 object IStageGLOptions {
   
-  @scala.inline
-  def apply(): IStageGLOptions = {
+  inline def apply(): IStageGLOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStageGLOptions]
   }
   
-  @scala.inline
-  implicit class IStageGLOptionsMutableBuilder[Self <: IStageGLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IStageGLOptions](x: Self) {
     
-    @scala.inline
-    def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+    inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
+    inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
     
-    @scala.inline
-    def setAutoPurge(value: Double): Self = StObject.set(x, "autoPurge", value.asInstanceOf[js.Any])
+    inline def setAutoPurge(value: Double): Self = StObject.set(x, "autoPurge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPurgeUndefined: Self = StObject.set(x, "autoPurge", js.undefined)
+    inline def setAutoPurgeUndefined: Self = StObject.set(x, "autoPurge", js.undefined)
     
-    @scala.inline
-    def setPremultiply(value: Boolean): Self = StObject.set(x, "premultiply", value.asInstanceOf[js.Any])
+    inline def setPremultiply(value: Boolean): Self = StObject.set(x, "premultiply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPremultiplyUndefined: Self = StObject.set(x, "premultiply", js.undefined)
+    inline def setPremultiplyUndefined: Self = StObject.set(x, "premultiply", js.undefined)
     
-    @scala.inline
-    def setPreserveBuffer(value: Boolean): Self = StObject.set(x, "preserveBuffer", value.asInstanceOf[js.Any])
+    inline def setPreserveBuffer(value: Boolean): Self = StObject.set(x, "preserveBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveBufferUndefined: Self = StObject.set(x, "preserveBuffer", js.undefined)
+    inline def setPreserveBufferUndefined: Self = StObject.set(x, "preserveBuffer", js.undefined)
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
   }
 }

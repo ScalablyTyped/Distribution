@@ -12,19 +12,15 @@ trait IBUDDY_ERROR extends StObject {
 }
 object IBUDDY_ERROR {
   
-  @scala.inline
-  def apply(errorCode: Double, errorMessage: String): IBUDDY_ERROR = {
+  inline def apply(errorCode: Double, errorMessage: String): IBUDDY_ERROR = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBUDDY_ERROR]
   }
   
-  @scala.inline
-  implicit class IBUDDY_ERRORMutableBuilder[Self <: IBUDDY_ERROR] (val x: Self) extends AnyVal {
+  extension [Self <: IBUDDY_ERROR](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }
 }

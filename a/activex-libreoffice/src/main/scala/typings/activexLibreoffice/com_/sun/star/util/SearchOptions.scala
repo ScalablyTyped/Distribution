@@ -39,8 +39,7 @@ trait SearchOptions extends StObject {
 }
 object SearchOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Locale: Locale,
     algorithmType: SearchAlgorithms,
     changedChars: Double,
@@ -55,34 +54,24 @@ object SearchOptions {
     __obj.asInstanceOf[SearchOptions]
   }
   
-  @scala.inline
-  implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchOptions](x: Self) {
     
-    @scala.inline
-    def setAlgorithmType(value: SearchAlgorithms): Self = StObject.set(x, "algorithmType", value.asInstanceOf[js.Any])
+    inline def setAlgorithmType(value: SearchAlgorithms): Self = StObject.set(x, "algorithmType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedChars(value: Double): Self = StObject.set(x, "changedChars", value.asInstanceOf[js.Any])
+    inline def setChangedChars(value: Double): Self = StObject.set(x, "changedChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedChars(value: Double): Self = StObject.set(x, "deletedChars", value.asInstanceOf[js.Any])
+    inline def setDeletedChars(value: Double): Self = StObject.set(x, "deletedChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedChars(value: Double): Self = StObject.set(x, "insertedChars", value.asInstanceOf[js.Any])
+    inline def setInsertedChars(value: Double): Self = StObject.set(x, "insertedChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceString(value: String): Self = StObject.set(x, "replaceString", value.asInstanceOf[js.Any])
+    inline def setReplaceString(value: String): Self = StObject.set(x, "replaceString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFlag(value: Double): Self = StObject.set(x, "searchFlag", value.asInstanceOf[js.Any])
+    inline def setSearchFlag(value: Double): Self = StObject.set(x, "searchFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
+    inline def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransliterateFlags(value: Double): Self = StObject.set(x, "transliterateFlags", value.asInstanceOf[js.Any])
+    inline def setTransliterateFlags(value: Double): Self = StObject.set(x, "transliterateFlags", value.asInstanceOf[js.Any])
   }
 }

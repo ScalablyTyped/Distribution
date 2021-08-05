@@ -17,19 +17,14 @@ object mod {
   class default ()
     extends Component[ScrollableAnchorProps, js.Object, js.Any]
   
-  @scala.inline
-  def configureAnchors(options: ConfigureAnchorsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureAnchors")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configureAnchors(options: ConfigureAnchorsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureAnchors")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def goToAnchor(anchorId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goToAnchor")(anchorId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def goToAnchor(anchorId: String, saveHashUpdate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("goToAnchor")(anchorId.asInstanceOf[js.Any], saveHashUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def goToAnchor(anchorId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goToAnchor")(anchorId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def goToAnchor(anchorId: String, saveHashUpdate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("goToAnchor")(anchorId.asInstanceOf[js.Any], saveHashUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def goToTop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goToTop")().asInstanceOf[Unit]
+  inline def goToTop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goToTop")().asInstanceOf[Unit]
   
-  @scala.inline
-  def removeHash(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHash")().asInstanceOf[Unit]
+  inline def removeHash(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHash")().asInstanceOf[Unit]
   
   trait ConfigureAnchorsOptions extends StObject {
     
@@ -41,32 +36,24 @@ object mod {
   }
   object ConfigureAnchorsOptions {
     
-    @scala.inline
-    def apply(): ConfigureAnchorsOptions = {
+    inline def apply(): ConfigureAnchorsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigureAnchorsOptions]
     }
     
-    @scala.inline
-    implicit class ConfigureAnchorsOptionsMutableBuilder[Self <: ConfigureAnchorsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigureAnchorsOptions](x: Self) {
       
-      @scala.inline
-      def setKeepLastAnchorHash(value: Boolean): Self = StObject.set(x, "keepLastAnchorHash", value.asInstanceOf[js.Any])
+      inline def setKeepLastAnchorHash(value: Boolean): Self = StObject.set(x, "keepLastAnchorHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepLastAnchorHashUndefined: Self = StObject.set(x, "keepLastAnchorHash", js.undefined)
+      inline def setKeepLastAnchorHashUndefined: Self = StObject.set(x, "keepLastAnchorHash", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
+      inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
+      inline def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
     }
   }
   
@@ -80,23 +67,18 @@ object mod {
   }
   object ScrollableAnchorProps {
     
-    @scala.inline
-    def apply(id: String): ScrollableAnchorProps = {
+    inline def apply(id: String): ScrollableAnchorProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollableAnchorProps]
     }
     
-    @scala.inline
-    implicit class ScrollableAnchorPropsMutableBuilder[Self <: ScrollableAnchorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollableAnchorProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

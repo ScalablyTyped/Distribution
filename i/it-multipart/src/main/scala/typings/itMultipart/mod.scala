@@ -23,10 +23,8 @@ object mod {
     * @param {string} [boundary]
     * @returns {AsyncIterable<{headers:IncomingHttpHeaders, body:It<Buffer>}>}
     */
-  @scala.inline
-  def apply(source: IncomingMessage): AsyncIterable[Body] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Body]]
-  @scala.inline
-  def apply(source: IncomingMessage, boundary: String): AsyncIterable[Body] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[Body]]
+  inline def apply(source: IncomingMessage): AsyncIterable[Body] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Body]]
+  inline def apply(source: IncomingMessage, boundary: String): AsyncIterable[Body] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[Body]]
   
   @JSImport("it-multipart/dist", JSImport.Namespace)
   @js.native
@@ -46,17 +44,14 @@ object mod {
   }
   object PrefixPush {
     
-    @scala.inline
-    def apply[T](push: T => Unit): PrefixPush[T] = {
+    inline def apply[T](push: T => Unit): PrefixPush[T] = {
       val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
       __obj.asInstanceOf[PrefixPush[T]]
     }
     
-    @scala.inline
-    implicit class PrefixPushMutableBuilder[Self <: PrefixPush[?], T] (val x: Self & PrefixPush[T]) extends AnyVal {
+    extension [Self <: PrefixPush[?], T](x: Self & PrefixPush[T]) {
       
-      @scala.inline
-      def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
   

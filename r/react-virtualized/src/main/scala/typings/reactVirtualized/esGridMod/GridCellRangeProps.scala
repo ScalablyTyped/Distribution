@@ -52,8 +52,7 @@ trait GridCellRangeProps extends StObject {
 }
 object GridCellRangeProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cellCache: Map[js.Any],
     cellRenderer: /* props */ GridCellProps => ReactNode,
     columnSizeAndPositionManager: CellSizeAndPositionManager,
@@ -78,64 +77,44 @@ object GridCellRangeProps {
     __obj.asInstanceOf[GridCellRangeProps]
   }
   
-  @scala.inline
-  implicit class GridCellRangePropsMutableBuilder[Self <: GridCellRangeProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridCellRangeProps](x: Self) {
     
-    @scala.inline
-    def setCellCache(value: Map[js.Any]): Self = StObject.set(x, "cellCache", value.asInstanceOf[js.Any])
+    inline def setCellCache(value: Map[js.Any]): Self = StObject.set(x, "cellCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellRenderer(value: /* props */ GridCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
+    inline def setCellRenderer(value: /* props */ GridCellProps => ReactNode): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setColumnSizeAndPositionManager(value: CellSizeAndPositionManager): Self = StObject.set(x, "columnSizeAndPositionManager", value.asInstanceOf[js.Any])
+    inline def setColumnSizeAndPositionManager(value: CellSizeAndPositionManager): Self = StObject.set(x, "columnSizeAndPositionManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnStartIndex(value: Double): Self = StObject.set(x, "columnStartIndex", value.asInstanceOf[js.Any])
+    inline def setColumnStartIndex(value: Double): Self = StObject.set(x, "columnStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnStopIndex(value: Double): Self = StObject.set(x, "columnStopIndex", value.asInstanceOf[js.Any])
+    inline def setColumnStopIndex(value: Double): Self = StObject.set(x, "columnStopIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredMeasurementCache(value: CellMeasurerCache): Self = StObject.set(x, "deferredMeasurementCache", value.asInstanceOf[js.Any])
+    inline def setDeferredMeasurementCache(value: CellMeasurerCache): Self = StObject.set(x, "deferredMeasurementCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalOffsetAdjustment(value: Double): Self = StObject.set(x, "horizontalOffsetAdjustment", value.asInstanceOf[js.Any])
+    inline def setHorizontalOffsetAdjustment(value: Double): Self = StObject.set(x, "horizontalOffsetAdjustment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+    inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScrollingOptOut(value: Boolean): Self = StObject.set(x, "isScrollingOptOut", value.asInstanceOf[js.Any])
+    inline def setIsScrollingOptOut(value: Boolean): Self = StObject.set(x, "isScrollingOptOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSizeAndPositionManager(value: CellSizeAndPositionManager): Self = StObject.set(x, "rowSizeAndPositionManager", value.asInstanceOf[js.Any])
+    inline def setRowSizeAndPositionManager(value: CellSizeAndPositionManager): Self = StObject.set(x, "rowSizeAndPositionManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowStartIndex(value: Double): Self = StObject.set(x, "rowStartIndex", value.asInstanceOf[js.Any])
+    inline def setRowStartIndex(value: Double): Self = StObject.set(x, "rowStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowStopIndex(value: Double): Self = StObject.set(x, "rowStopIndex", value.asInstanceOf[js.Any])
+    inline def setRowStopIndex(value: Double): Self = StObject.set(x, "rowStopIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleCache(value: Map[CSSProperties]): Self = StObject.set(x, "styleCache", value.asInstanceOf[js.Any])
+    inline def setStyleCache(value: Map[CSSProperties]): Self = StObject.set(x, "styleCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalOffsetAdjustment(value: Double): Self = StObject.set(x, "verticalOffsetAdjustment", value.asInstanceOf[js.Any])
+    inline def setVerticalOffsetAdjustment(value: Double): Self = StObject.set(x, "verticalOffsetAdjustment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleColumnIndices(value: VisibleCellRange): Self = StObject.set(x, "visibleColumnIndices", value.asInstanceOf[js.Any])
+    inline def setVisibleColumnIndices(value: VisibleCellRange): Self = StObject.set(x, "visibleColumnIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleRowIndices(value: VisibleCellRange): Self = StObject.set(x, "visibleRowIndices", value.asInstanceOf[js.Any])
+    inline def setVisibleRowIndices(value: VisibleCellRange): Self = StObject.set(x, "visibleRowIndices", value.asInstanceOf[js.Any])
   }
 }

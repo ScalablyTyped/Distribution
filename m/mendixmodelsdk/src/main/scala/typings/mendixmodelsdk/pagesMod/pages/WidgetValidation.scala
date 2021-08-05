@@ -65,8 +65,7 @@ object WidgetValidation {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetValidation]
+  inline def create(model: IModel): WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetValidation]
   
   /**
     * Creates and returns a new WidgetValidation instance in the SDK and on the server.
@@ -77,8 +76,7 @@ object WidgetValidation {
     *  7.6.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderValidation(container: AttributeWidget): WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValidation]
+  inline def createInAttributeWidgetUnderValidation(container: AttributeWidget): WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValidation]
   
   /**
     * Creates and returns a new WidgetValidation instance in the SDK and on the server.
@@ -89,20 +87,17 @@ object WidgetValidation {
     *  7.6.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInReferenceSelectorUnderValidation(container: ReferenceSelector): WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValidation]
+  inline def createInReferenceSelectorUnderValidation(container: ReferenceSelector): WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValidation]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WidgetValidation.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WidgetValidation.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

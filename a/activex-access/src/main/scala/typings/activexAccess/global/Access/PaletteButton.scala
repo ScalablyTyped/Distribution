@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.PaletteButton")
 @js.native
-class PaletteButton protected ()
+/* private */ class PaletteButton ()
   extends StObject
      with typings.activexAccess.Access.PaletteButton

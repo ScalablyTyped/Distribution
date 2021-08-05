@@ -27,8 +27,7 @@ trait CashDrawerCapabilities extends StObject {
 }
 object CashDrawerCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isDrawerOpenSensorAvailable: Boolean,
     isStatisticsReportingSupported: Boolean,
     isStatisticsUpdatingSupported: Boolean,
@@ -40,25 +39,18 @@ object CashDrawerCapabilities {
     __obj.asInstanceOf[CashDrawerCapabilities]
   }
   
-  @scala.inline
-  implicit class CashDrawerCapabilitiesMutableBuilder[Self <: CashDrawerCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: CashDrawerCapabilities](x: Self) {
     
-    @scala.inline
-    def setIsDrawerOpenSensorAvailable(value: Boolean): Self = StObject.set(x, "isDrawerOpenSensorAvailable", value.asInstanceOf[js.Any])
+    inline def setIsDrawerOpenSensorAvailable(value: Boolean): Self = StObject.set(x, "isDrawerOpenSensorAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatusMultiDrawerDetectSupported(value: Boolean): Self = StObject.set(x, "isStatusMultiDrawerDetectSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatusMultiDrawerDetectSupported(value: Boolean): Self = StObject.set(x, "isStatusMultiDrawerDetectSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatusReportingSupported(value: Boolean): Self = StObject.set(x, "isStatusReportingSupported", value.asInstanceOf[js.Any])
+    inline def setIsStatusReportingSupported(value: Boolean): Self = StObject.set(x, "isStatusReportingSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
+    inline def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
   }
 }

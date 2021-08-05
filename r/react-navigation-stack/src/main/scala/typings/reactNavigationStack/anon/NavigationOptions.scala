@@ -23,17 +23,14 @@ trait NavigationOptions[Params, ScreenProps] extends StObject {
 }
 object NavigationOptions {
   
-  @scala.inline
-  def apply[Params, ScreenProps](): NavigationOptions[Params, ScreenProps] = {
+  inline def apply[Params, ScreenProps](): NavigationOptions[Params, ScreenProps] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationOptions[Params, ScreenProps]]
   }
   
-  @scala.inline
-  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions[?, ?], Params, ScreenProps] (val x: Self & (NavigationOptions[Params, ScreenProps])) extends AnyVal {
+  extension [Self <: NavigationOptions[?, ?], Params, ScreenProps](x: Self & (NavigationOptions[Params, ScreenProps])) {
     
-    @scala.inline
-    def setNavigationOptions(
+    inline def setNavigationOptions(
       value: NavigationScreenConfig[
           StackNavigationOptions, 
           StackNavigationProp[NavigationRoute[NavigationParams], Params], 
@@ -41,12 +38,10 @@ object NavigationOptions {
         ]
     ): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOptionsFunction1(
+    inline def setNavigationOptionsFunction1(
       value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[StackNavigationProp[NavigationRoute[NavigationParams], Params], ScreenProps]) & NavigationOptionsOptions[StackNavigationOptions] => StackNavigationOptions
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
+    inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
   }
 }

@@ -18,31 +18,23 @@ trait WorkspaceSystemSettings extends StObject {
 }
 object WorkspaceSystemSettings {
   
-  @scala.inline
-  def apply(): WorkspaceSystemSettings = {
+  inline def apply(): WorkspaceSystemSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceSystemSettings]
   }
   
-  @scala.inline
-  implicit class WorkspaceSystemSettingsMutableBuilder[Self <: WorkspaceSystemSettings] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceSystemSettings](x: Self) {
     
-    @scala.inline
-    def setDisambiguation(value: WorkspaceSystemSettingsDisambiguation): Self = StObject.set(x, "disambiguation", value.asInstanceOf[js.Any])
+    inline def setDisambiguation(value: WorkspaceSystemSettingsDisambiguation): Self = StObject.set(x, "disambiguation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisambiguationUndefined: Self = StObject.set(x, "disambiguation", js.undefined)
+    inline def setDisambiguationUndefined: Self = StObject.set(x, "disambiguation", js.undefined)
     
-    @scala.inline
-    def setHuman_agent_assist(value: js.Object): Self = StObject.set(x, "human_agent_assist", value.asInstanceOf[js.Any])
+    inline def setHuman_agent_assist(value: js.Object): Self = StObject.set(x, "human_agent_assist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHuman_agent_assistUndefined: Self = StObject.set(x, "human_agent_assist", js.undefined)
+    inline def setHuman_agent_assistUndefined: Self = StObject.set(x, "human_agent_assist", js.undefined)
     
-    @scala.inline
-    def setTooling(value: WorkspaceSystemSettingsTooling): Self = StObject.set(x, "tooling", value.asInstanceOf[js.Any])
+    inline def setTooling(value: WorkspaceSystemSettingsTooling): Self = StObject.set(x, "tooling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolingUndefined: Self = StObject.set(x, "tooling", js.undefined)
+    inline def setToolingUndefined: Self = StObject.set(x, "tooling", js.undefined)
   }
 }

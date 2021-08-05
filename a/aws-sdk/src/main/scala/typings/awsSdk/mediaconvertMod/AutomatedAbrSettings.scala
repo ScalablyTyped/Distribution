@@ -23,31 +23,23 @@ trait AutomatedAbrSettings extends StObject {
 }
 object AutomatedAbrSettings {
   
-  @scala.inline
-  def apply(): AutomatedAbrSettings = {
+  inline def apply(): AutomatedAbrSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutomatedAbrSettings]
   }
   
-  @scala.inline
-  implicit class AutomatedAbrSettingsMutableBuilder[Self <: AutomatedAbrSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AutomatedAbrSettings](x: Self) {
     
-    @scala.inline
-    def setMaxAbrBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MaxAbrBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxAbrBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MaxAbrBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAbrBitrateUndefined: Self = StObject.set(x, "MaxAbrBitrate", js.undefined)
+    inline def setMaxAbrBitrateUndefined: Self = StObject.set(x, "MaxAbrBitrate", js.undefined)
     
-    @scala.inline
-    def setMaxRenditions(value: integerMin3Max15): Self = StObject.set(x, "MaxRenditions", value.asInstanceOf[js.Any])
+    inline def setMaxRenditions(value: integerMin3Max15): Self = StObject.set(x, "MaxRenditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRenditionsUndefined: Self = StObject.set(x, "MaxRenditions", js.undefined)
+    inline def setMaxRenditionsUndefined: Self = StObject.set(x, "MaxRenditions", js.undefined)
     
-    @scala.inline
-    def setMinAbrBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MinAbrBitrate", value.asInstanceOf[js.Any])
+    inline def setMinAbrBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MinAbrBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinAbrBitrateUndefined: Self = StObject.set(x, "MinAbrBitrate", js.undefined)
+    inline def setMinAbrBitrateUndefined: Self = StObject.set(x, "MinAbrBitrate", js.undefined)
   }
 }

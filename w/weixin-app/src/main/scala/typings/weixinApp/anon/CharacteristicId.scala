@@ -24,22 +24,17 @@ trait CharacteristicId extends StObject {
 }
 object CharacteristicId {
   
-  @scala.inline
-  def apply(characteristicId: String, serviceId: String, value: ArrayBuffer): CharacteristicId = {
+  inline def apply(characteristicId: String, serviceId: String, value: ArrayBuffer): CharacteristicId = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacteristicId]
   }
   
-  @scala.inline
-  implicit class CharacteristicIdMutableBuilder[Self <: CharacteristicId] (val x: Self) extends AnyVal {
+  extension [Self <: CharacteristicId](x: Self) {
     
-    @scala.inline
-    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

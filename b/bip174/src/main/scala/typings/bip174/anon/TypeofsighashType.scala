@@ -20,8 +20,7 @@ trait TypeofsighashType extends StObject {
 }
 object TypeofsighashType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canAdd: (js.Any, js.Any) => Boolean,
     check: js.Any => /* is bip174.bip174/src/lib/interfaces.SighashType */ Boolean,
     decode: KeyValue => SighashType,
@@ -32,22 +31,16 @@ object TypeofsighashType {
     __obj.asInstanceOf[TypeofsighashType]
   }
   
-  @scala.inline
-  implicit class TypeofsighashTypeMutableBuilder[Self <: TypeofsighashType] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofsighashType](x: Self) {
     
-    @scala.inline
-    def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
+    inline def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.SighashType */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.SighashType */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecode(value: KeyValue => SighashType): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: KeyValue => SighashType): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncode(value: SighashType => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: SighashType => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpected(value: /* "number" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: /* "number" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

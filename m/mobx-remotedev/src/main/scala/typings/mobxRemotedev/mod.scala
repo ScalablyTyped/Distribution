@@ -10,14 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](): js.Function2[/* component */ js.Any, /* config */ js.UndefOr[RemoteDevConfig], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function2[/* component */ js.Any, /* config */ js.UndefOr[RemoteDevConfig], Unit]]
-  @scala.inline
-  def default[T](config: RemoteDevConfig): js.Function2[/* component */ js.Any, /* config */ js.UndefOr[RemoteDevConfig], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* component */ js.Any, /* config */ js.UndefOr[RemoteDevConfig], Unit]]
-  @scala.inline
-  def default[T](store: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def default[T](store: T, config: RemoteDevConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](): js.Function2[/* component */ js.Any, /* config */ js.UndefOr[RemoteDevConfig], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function2[/* component */ js.Any, /* config */ js.UndefOr[RemoteDevConfig], Unit]]
+  inline def default[T](config: RemoteDevConfig): js.Function2[/* component */ js.Any, /* config */ js.UndefOr[RemoteDevConfig], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* component */ js.Any, /* config */ js.UndefOr[RemoteDevConfig], Unit]]
+  inline def default[T](store: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](store: T, config: RemoteDevConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   
   trait RemoteDevConfig extends StObject {
     
@@ -46,56 +42,40 @@ object mod {
   }
   object RemoteDevConfig {
     
-    @scala.inline
-    def apply(): RemoteDevConfig = {
+    inline def apply(): RemoteDevConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoteDevConfig]
     }
     
-    @scala.inline
-    implicit class RemoteDevConfigMutableBuilder[Self <: RemoteDevConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteDevConfig](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Object): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Object): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnlyActions(value: Boolean): Self = StObject.set(x, "onlyActions", value.asInstanceOf[js.Any])
+      inline def setOnlyActions(value: Boolean): Self = StObject.set(x, "onlyActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyActionsUndefined: Self = StObject.set(x, "onlyActions", js.undefined)
+      inline def setOnlyActionsUndefined: Self = StObject.set(x, "onlyActions", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRemote(value: Boolean): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: Boolean): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+      inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
     }
   }
 }

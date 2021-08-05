@@ -7,22 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(path: String): Reader = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Reader]
-  @scala.inline
-  def apply(path: String, encoding: String): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Reader]
-  @scala.inline
-  def apply(path: String, encoding: String, options: AppenderOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
-  @scala.inline
-  def apply(path: String, encoding: String, options: FullOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
-  @scala.inline
-  def apply(path: String, encoding: String, options: WriterOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
-  @scala.inline
-  def apply(path: String, encoding: Unit, options: AppenderOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
-  @scala.inline
-  def apply(path: String, encoding: Unit, options: FullOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
-  @scala.inline
-  def apply(path: String, encoding: Unit, options: WriterOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  inline def apply(path: String): Reader = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Reader]
+  inline def apply(path: String, encoding: String): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  inline def apply(path: String, encoding: String, options: AppenderOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  inline def apply(path: String, encoding: String, options: FullOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  inline def apply(path: String, encoding: String, options: WriterOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  inline def apply(path: String, encoding: Unit, options: AppenderOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  inline def apply(path: String, encoding: Unit, options: FullOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  inline def apply(path: String, encoding: Unit, options: WriterOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
   
   @JSImport("properties-reader", JSImport.Namespace)
   @js.native
@@ -34,17 +26,14 @@ object mod {
   }
   object AppenderOptions {
     
-    @scala.inline
-    def apply(allowDuplicateSections: Boolean): AppenderOptions = {
+    inline def apply(allowDuplicateSections: Boolean): AppenderOptions = {
       val __obj = js.Dynamic.literal(allowDuplicateSections = allowDuplicateSections.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppenderOptions]
     }
     
-    @scala.inline
-    implicit class AppenderOptionsMutableBuilder[Self <: AppenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AppenderOptions](x: Self) {
       
-      @scala.inline
-      def setAllowDuplicateSections(value: Boolean): Self = StObject.set(x, "allowDuplicateSections", value.asInstanceOf[js.Any])
+      inline def setAllowDuplicateSections(value: Boolean): Self = StObject.set(x, "allowDuplicateSections", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,26 +45,20 @@ object mod {
   }
   object FullOptions {
     
-    @scala.inline
-    def apply(): FullOptions = {
+    inline def apply(): FullOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FullOptions]
     }
     
-    @scala.inline
-    implicit class FullOptionsMutableBuilder[Self <: FullOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FullOptions](x: Self) {
       
-      @scala.inline
-      def setAppender(value: AppenderOptions): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
+      inline def setAppender(value: AppenderOptions): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppenderUndefined: Self = StObject.set(x, "appender", js.undefined)
+      inline def setAppenderUndefined: Self = StObject.set(x, "appender", js.undefined)
       
-      @scala.inline
-      def setWriter(value: WriterOptions): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
+      inline def setWriter(value: WriterOptions): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
+      inline def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
     }
   }
   
@@ -120,17 +103,14 @@ object mod {
   }
   object WriterOptions {
     
-    @scala.inline
-    def apply(saveSections: Boolean): WriterOptions = {
+    inline def apply(saveSections: Boolean): WriterOptions = {
       val __obj = js.Dynamic.literal(saveSections = saveSections.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriterOptions]
     }
     
-    @scala.inline
-    implicit class WriterOptionsMutableBuilder[Self <: WriterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WriterOptions](x: Self) {
       
-      @scala.inline
-      def setSaveSections(value: Boolean): Self = StObject.set(x, "saveSections", value.asInstanceOf[js.Any])
+      inline def setSaveSections(value: Boolean): Self = StObject.set(x, "saveSections", value.asInstanceOf[js.Any])
     }
   }
 }

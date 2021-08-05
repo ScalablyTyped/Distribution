@@ -17,31 +17,23 @@ trait TableBorderProperties extends StObject {
 }
 object TableBorderProperties {
   
-  @scala.inline
-  def apply(): TableBorderProperties = {
+  inline def apply(): TableBorderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableBorderProperties]
   }
   
-  @scala.inline
-  implicit class TableBorderPropertiesMutableBuilder[Self <: TableBorderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TableBorderProperties](x: Self) {
     
-    @scala.inline
-    def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    @scala.inline
-    def setTableBorderFill(value: TableBorderFill): Self = StObject.set(x, "tableBorderFill", value.asInstanceOf[js.Any])
+    inline def setTableBorderFill(value: TableBorderFill): Self = StObject.set(x, "tableBorderFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableBorderFillUndefined: Self = StObject.set(x, "tableBorderFill", js.undefined)
+    inline def setTableBorderFillUndefined: Self = StObject.set(x, "tableBorderFill", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

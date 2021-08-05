@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SeriesLines")
 @js.native
-class SeriesLines protected ()
+/* private */ class SeriesLines ()
   extends StObject
      with typings.activexExcel.Excel.SeriesLines {
   
@@ -23,7 +23,7 @@ class SeriesLines protected ()
   /* CompleteClass */
   override def Delete(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SeriesLines_typekey")
   var ExcelDotSeriesLines_typekey: typings.activexExcel.Excel.SeriesLines = js.native
   

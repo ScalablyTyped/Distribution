@@ -15,16 +15,13 @@ trait symbolsSupportJsonUtils extends StObject {
 }
 object symbolsSupportJsonUtils {
   
-  @scala.inline
-  def apply(fromJSON: js.Any => Symbol): symbolsSupportJsonUtils = {
+  inline def apply(fromJSON: js.Any => Symbol): symbolsSupportJsonUtils = {
     val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction1(fromJSON))
     __obj.asInstanceOf[symbolsSupportJsonUtils]
   }
   
-  @scala.inline
-  implicit class symbolsSupportJsonUtilsMutableBuilder[Self <: symbolsSupportJsonUtils] (val x: Self) extends AnyVal {
+  extension [Self <: symbolsSupportJsonUtils](x: Self) {
     
-    @scala.inline
-    def setFromJSON(value: js.Any => Symbol): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+    inline def setFromJSON(value: js.Any => Symbol): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
   }
 }

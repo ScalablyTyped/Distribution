@@ -13,16 +13,13 @@ trait StreamingNotificationTarget extends StObject {
 }
 object StreamingNotificationTarget {
   
-  @scala.inline
-  def apply(NotificationTarget: NotificationTarget): StreamingNotificationTarget = {
+  inline def apply(NotificationTarget: NotificationTarget): StreamingNotificationTarget = {
     val __obj = js.Dynamic.literal(NotificationTarget = NotificationTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingNotificationTarget]
   }
   
-  @scala.inline
-  implicit class StreamingNotificationTargetMutableBuilder[Self <: StreamingNotificationTarget] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingNotificationTarget](x: Self) {
     
-    @scala.inline
-    def setNotificationTarget(value: NotificationTarget): Self = StObject.set(x, "NotificationTarget", value.asInstanceOf[js.Any])
+    inline def setNotificationTarget(value: NotificationTarget): Self = StObject.set(x, "NotificationTarget", value.asInstanceOf[js.Any])
   }
 }

@@ -27,31 +27,23 @@ trait StartupOptions extends StObject {
 }
 object StartupOptions {
   
-  @scala.inline
-  def apply(): StartupOptions = {
+  inline def apply(): StartupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartupOptions]
   }
   
-  @scala.inline
-  implicit class StartupOptionsMutableBuilder[Self <: StartupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartupOptions](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setPfile(value: String): Self = StObject.set(x, "pfile", value.asInstanceOf[js.Any])
+    inline def setPfile(value: String): Self = StObject.set(x, "pfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPfileUndefined: Self = StObject.set(x, "pfile", js.undefined)
+    inline def setPfileUndefined: Self = StObject.set(x, "pfile", js.undefined)
     
-    @scala.inline
-    def setRestrict(value: Boolean): Self = StObject.set(x, "restrict", value.asInstanceOf[js.Any])
+    inline def setRestrict(value: Boolean): Self = StObject.set(x, "restrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictUndefined: Self = StObject.set(x, "restrict", js.undefined)
+    inline def setRestrictUndefined: Self = StObject.set(x, "restrict", js.undefined)
   }
 }

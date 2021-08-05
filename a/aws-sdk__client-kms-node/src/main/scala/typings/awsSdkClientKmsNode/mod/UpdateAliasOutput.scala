@@ -10,8 +10,7 @@ trait UpdateAliasOutput
      with typings.awsSdkClientKmsNode.typesUpdateAliasOutputMod.UpdateAliasOutput
 object UpdateAliasOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): UpdateAliasOutput = {
+  inline def apply($metadata: ResponseMetadata): UpdateAliasOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAliasOutput]
   }

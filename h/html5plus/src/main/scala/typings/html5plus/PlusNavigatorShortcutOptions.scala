@@ -62,49 +62,35 @@ trait PlusNavigatorShortcutOptions extends StObject {
 }
 object PlusNavigatorShortcutOptions {
   
-  @scala.inline
-  def apply(): PlusNavigatorShortcutOptions = {
+  inline def apply(): PlusNavigatorShortcutOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNavigatorShortcutOptions]
   }
   
-  @scala.inline
-  implicit class PlusNavigatorShortcutOptionsMutableBuilder[Self <: PlusNavigatorShortcutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNavigatorShortcutOptions](x: Self) {
     
-    @scala.inline
-    def setClassname(value: String): Self = StObject.set(x, "classname", value.asInstanceOf[js.Any])
+    inline def setClassname(value: String): Self = StObject.set(x, "classname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassnameUndefined: Self = StObject.set(x, "classname", js.undefined)
+    inline def setClassnameUndefined: Self = StObject.set(x, "classname", js.undefined)
     
-    @scala.inline
-    def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setToast(value: String): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
+    inline def setToast(value: String): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToastUndefined: Self = StObject.set(x, "toast", js.undefined)
+    inline def setToastUndefined: Self = StObject.set(x, "toast", js.undefined)
   }
 }

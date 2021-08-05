@@ -15,234 +15,146 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asciiToHex(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asciiToHex")(string.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def asciiToHex(string: String, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asciiToHex")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def asciiToHex(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asciiToHex")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def asciiToHex(string: String, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asciiToHex")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def bytesToHex(bytes: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bytesToHex(bytes: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def checkAddressChecksum(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAddressChecksum")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def checkAddressChecksum(address: String, chainId: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAddressChecksum")(address.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkAddressChecksum(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAddressChecksum")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkAddressChecksum(address: String, chainId: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAddressChecksum")(address.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def encodePacked(`val`: Mixed*): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePacked")(`val`.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def encodePacked(`val`: Mixed*): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePacked")(`val`.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def fromAscii(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAscii")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromAscii(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAscii")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fromDecimal(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def fromDecimal(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromDecimal(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromDecimal(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fromUtf8(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUtf8")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromUtf8(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUtf8")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fromWei(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWei")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def fromWei(value: String, unit: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWei")(value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def fromWei(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWei")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def fromWei(value: typings.bnJs.mod.^, unit: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWei")(value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fromWei(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWei")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromWei(value: String, unit: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWei")(value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fromWei(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWei")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromWei(value: typings.bnJs.mod.^, unit: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWei")(value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getSignatureParameters(signature: String): R = ^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureParameters")(signature.asInstanceOf[js.Any]).asInstanceOf[R]
+  inline def getSignatureParameters(signature: String): R = ^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureParameters")(signature.asInstanceOf[js.Any]).asInstanceOf[R]
   
-  @scala.inline
-  def getUnitValue(unit: Unit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnitValue")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUnitValue(unit: Unit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnitValue")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def hexToAscii(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToAscii")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hexToAscii(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToAscii")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def hexToBytes(hex: Hex): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToBytes")(hex.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def hexToBytes(hex: Hex): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToBytes")(hex.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def hexToNumber(hex: Hex): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToNumber")(hex.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def hexToNumber(hex: Hex): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToNumber")(hex.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def hexToNumberString(hex: Hex): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToNumberString")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hexToNumberString(hex: Hex): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToNumberString")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def hexToString(hex: Hex): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToString")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hexToString(hex: Hex): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToString")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def hexToUtf8(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToUtf8")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hexToUtf8(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToUtf8")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isAddress(address: String, chainId: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAddress")(address.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isAddress(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAddress")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAddress(address: String, chainId: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAddress")(address.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBN(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isBN(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBN(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBN(value: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBigNumber(value: typings.bnJs.mod.^): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBigNumber(value: typings.bnJs.mod.^): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBloom(bloom: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBloom")(bloom.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBloom(bloom: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBloom")(bloom.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isContractAddressInBloom(bloom: String, contractAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContractAddressInBloom")(bloom.asInstanceOf[js.Any], contractAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isContractAddressInBloom(bloom: String, contractAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContractAddressInBloom")(bloom.asInstanceOf[js.Any], contractAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isHex(hex: Hex): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHex(hex: Hex): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isHexStrict(hex: Hex): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHexStrict")(hex.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHexStrict(hex: Hex): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHexStrict")(hex.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isInBloom(bloom: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isInBloom(bloom: String, value: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isInBloom(bloom: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isInBloom(bloom: String, value: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInBloom")(bloom.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTopic(topic: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTopic")(topic.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTopic(topic: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTopic")(topic.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTopicInBloom(bloom: String, topic: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTopicInBloom")(bloom.asInstanceOf[js.Any], topic.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTopicInBloom(bloom: String, topic: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTopicInBloom")(bloom.asInstanceOf[js.Any], topic.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isUserEthereumAddressInBloom(bloom: String, ethereumAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUserEthereumAddressInBloom")(bloom.asInstanceOf[js.Any], ethereumAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isUserEthereumAddressInBloom(bloom: String, ethereumAddress: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUserEthereumAddressInBloom")(bloom.asInstanceOf[js.Any], ethereumAddress.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def jsonInterfaceMethodToString(abiItem: AbiItem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonInterfaceMethodToString")(abiItem.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def jsonInterfaceMethodToString(abiItem: AbiItem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonInterfaceMethodToString")(abiItem.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def keccak256(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def keccak256(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def keccak256(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def keccak256(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def leftPad(string: String, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("leftPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def leftPad(string: String, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("leftPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def leftPad(string: Double, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("leftPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def leftPad(string: Double, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("leftPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def leftPad(string: String, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("leftPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def leftPad(string: String, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("leftPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def leftPad(string: Double, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("leftPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def leftPad(string: Double, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("leftPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def numberToHex(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def numberToHex(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def numberToHex(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def numberToHex(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def numberToHex(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def numberToHex(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def padLeft(value: String, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def padLeft(value: String, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def padLeft(value: Double, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def padLeft(value: Double, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padLeft(value: String, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padLeft(value: String, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padLeft(value: Double, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padLeft(value: Double, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def padRight(string: String, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def padRight(string: String, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def padRight(string: Double, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def padRight(string: Double, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padRight(string: String, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padRight(string: String, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padRight(string: Double, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padRight(string: Double, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padRight")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def randomHex(bytesSize: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomHex")(bytesSize.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def randomHex(bytesSize: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomHex")(bytesSize.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def rightPad(string: String, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def rightPad(string: String, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def rightPad(string: Double, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def rightPad(string: Double, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def rightPad(string: String, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def rightPad(string: String, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def rightPad(string: Double, characterAmount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def rightPad(string: Double, characterAmount: Double, sign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rightPad")(string.asInstanceOf[js.Any], characterAmount.asInstanceOf[js.Any], sign.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def sha3(value: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  @scala.inline
-  def sha3(value: typings.bnJs.mod.^): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def sha3(value: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def sha3(value: typings.bnJs.mod.^): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def sha3Raw(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3Raw")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def sha3Raw(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3Raw")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sha3Raw(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3Raw")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sha3Raw(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha3Raw")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def soliditySha3(`val`: Mixed*): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("soliditySha3")(`val`.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def soliditySha3(`val`: Mixed*): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("soliditySha3")(`val`.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def soliditySha3Raw(`val`: Mixed*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("soliditySha3Raw")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def soliditySha3Raw(`val`: Mixed*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("soliditySha3Raw")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stringToHex(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToHex")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringToHex(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToHex")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stripHexPrefix(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripHexPrefix")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stripHexPrefix(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripHexPrefix")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def testAddress(bloom: String, address: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testAddress")(bloom.asInstanceOf[js.Any], address.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def testAddress(bloom: String, address: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testAddress")(bloom.asInstanceOf[js.Any], address.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def testTopic(bloom: String, topic: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testTopic")(bloom.asInstanceOf[js.Any], topic.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def testTopic(bloom: String, topic: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testTopic")(bloom.asInstanceOf[js.Any], topic.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def toAscii(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAscii")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toAscii(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAscii")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toBN(value: String): typings.bnJs.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("toBN")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bnJs.mod.^]
-  @scala.inline
-  def toBN(value: Double): typings.bnJs.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("toBN")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bnJs.mod.^]
+  inline def toBN(value: String): typings.bnJs.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("toBN")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bnJs.mod.^]
+  inline def toBN(value: Double): typings.bnJs.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("toBN")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bnJs.mod.^]
   
-  @scala.inline
-  def toChecksumAddress(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toChecksumAddress")(address.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toChecksumAddress(address: String, chainId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toChecksumAddress")(address.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toChecksumAddress(address: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toChecksumAddress")(address.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toChecksumAddress(address: String, chainId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toChecksumAddress")(address.asInstanceOf[js.Any], chainId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toDecimal(hex: Hex): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDecimal")(hex.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toDecimal(hex: Hex): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDecimal")(hex.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def toHex(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toHex(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toHex(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toHex(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toHex(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toHex(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHex")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toTwosComplement(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTwosComplement")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toTwosComplement(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTwosComplement")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toTwosComplement(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTwosComplement")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTwosComplement(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTwosComplement")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTwosComplement(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTwosComplement")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toTwosComplement(value: typings.bnJs.mod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTwosComplement")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toUtf8(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUtf8")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toUtf8(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUtf8")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toWei(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWei")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toWei(`val`: String, unit: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWei")(`val`.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toWei(`val`: typings.bnJs.mod.^): typings.bnJs.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("toWei")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.bnJs.mod.^]
-  @scala.inline
-  def toWei(`val`: typings.bnJs.mod.^, unit: Unit): typings.bnJs.mod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("toWei")(`val`.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[typings.bnJs.mod.^]
+  inline def toWei(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWei")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toWei(`val`: String, unit: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWei")(`val`.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toWei(`val`: typings.bnJs.mod.^): typings.bnJs.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("toWei")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.bnJs.mod.^]
+  inline def toWei(`val`: typings.bnJs.mod.^, unit: Unit): typings.bnJs.mod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("toWei")(`val`.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[typings.bnJs.mod.^]
   
-  @scala.inline
-  def unitMap(): Units = ^.asInstanceOf[js.Dynamic].applyDynamic("unitMap")().asInstanceOf[Units]
+  inline def unitMap(): Units = ^.asInstanceOf[js.Dynamic].applyDynamic("unitMap")().asInstanceOf[Units]
   
-  @scala.inline
-  def utf8ToHex(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8ToHex")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def utf8ToHex(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8ToHex")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait AbiInput extends StObject {
     
@@ -258,42 +170,31 @@ object mod {
   }
   object AbiInput {
     
-    @scala.inline
-    def apply(name: String, `type`: String): AbiInput = {
+    inline def apply(name: String, `type`: String): AbiInput = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbiInput]
     }
     
-    @scala.inline
-    implicit class AbiInputMutableBuilder[Self <: AbiInput] (val x: Self) extends AnyVal {
+    extension [Self <: AbiInput](x: Self) {
       
-      @scala.inline
-      def setComponents(value: js.Array[AbiInput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Array[AbiInput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setComponentsVarargs(value: AbiInput*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: AbiInput*): Self = StObject.set(x, "components", js.Array(value :_*))
       
-      @scala.inline
-      def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
+      inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
+      inline def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
       
-      @scala.inline
-      def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      inline def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalTypeUndefined: Self = StObject.set(x, "internalType", js.undefined)
+      inline def setInternalTypeUndefined: Self = StObject.set(x, "internalType", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -319,72 +220,51 @@ object mod {
   }
   object AbiItem {
     
-    @scala.inline
-    def apply(`type`: AbiType): AbiItem = {
+    inline def apply(`type`: AbiType): AbiItem = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbiItem]
     }
     
-    @scala.inline
-    implicit class AbiItemMutableBuilder[Self <: AbiItem] (val x: Self) extends AnyVal {
+    extension [Self <: AbiItem](x: Self) {
       
-      @scala.inline
-      def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+      inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
+      inline def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
       
-      @scala.inline
-      def setConstant(value: Boolean): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
+      inline def setConstant(value: Boolean): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
+      inline def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
       
-      @scala.inline
-      def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+      inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
+      inline def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
       
-      @scala.inline
-      def setInputs(value: js.Array[AbiInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: js.Array[AbiInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+      inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      @scala.inline
-      def setInputsVarargs(value: AbiInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: AbiInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutputs(value: js.Array[AbiOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: js.Array[AbiOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+      inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      @scala.inline
-      def setOutputsVarargs(value: AbiOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: AbiOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
       
-      @scala.inline
-      def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
+      inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayableUndefined: Self = StObject.set(x, "payable", js.undefined)
+      inline def setPayableUndefined: Self = StObject.set(x, "payable", js.undefined)
       
-      @scala.inline
-      def setStateMutability(value: StateMutabilityType): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
+      inline def setStateMutability(value: StateMutabilityType): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateMutabilityUndefined: Self = StObject.set(x, "stateMutability", js.undefined)
+      inline def setStateMutabilityUndefined: Self = StObject.set(x, "stateMutability", js.undefined)
       
-      @scala.inline
-      def setType(value: AbiType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AbiType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,36 +280,27 @@ object mod {
   }
   object AbiOutput {
     
-    @scala.inline
-    def apply(name: String, `type`: String): AbiOutput = {
+    inline def apply(name: String, `type`: String): AbiOutput = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbiOutput]
     }
     
-    @scala.inline
-    implicit class AbiOutputMutableBuilder[Self <: AbiOutput] (val x: Self) extends AnyVal {
+    extension [Self <: AbiOutput](x: Self) {
       
-      @scala.inline
-      def setComponents(value: js.Array[AbiOutput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Array[AbiOutput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setComponentsVarargs(value: AbiOutput*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: AbiOutput*): Self = StObject.set(x, "components", js.Array(value :_*))
       
-      @scala.inline
-      def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      inline def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalTypeUndefined: Self = StObject.set(x, "internalType", js.undefined)
+      inline def setInternalTypeUndefined: Self = StObject.set(x, "internalType", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -442,17 +313,13 @@ object mod {
   trait AbiType extends StObject
   object AbiType {
     
-    @scala.inline
-    def constructor: typings.web3Utils.web3UtilsStrings.constructor = "constructor".asInstanceOf[typings.web3Utils.web3UtilsStrings.constructor]
+    inline def constructor: typings.web3Utils.web3UtilsStrings.constructor = "constructor".asInstanceOf[typings.web3Utils.web3UtilsStrings.constructor]
     
-    @scala.inline
-    def event: typings.web3Utils.web3UtilsStrings.event = "event".asInstanceOf[typings.web3Utils.web3UtilsStrings.event]
+    inline def event: typings.web3Utils.web3UtilsStrings.event = "event".asInstanceOf[typings.web3Utils.web3UtilsStrings.event]
     
-    @scala.inline
-    def fallback: typings.web3Utils.web3UtilsStrings.fallback = "fallback".asInstanceOf[typings.web3Utils.web3UtilsStrings.fallback]
+    inline def fallback: typings.web3Utils.web3UtilsStrings.fallback = "fallback".asInstanceOf[typings.web3Utils.web3UtilsStrings.fallback]
     
-    @scala.inline
-    def function: typings.web3Utils.web3UtilsStrings.function = "function".asInstanceOf[typings.web3Utils.web3UtilsStrings.function]
+    inline def function: typings.web3Utils.web3UtilsStrings.function = "function".asInstanceOf[typings.web3Utils.web3UtilsStrings.function]
   }
   
   type Hex = String | Double
@@ -476,17 +343,13 @@ object mod {
   trait StateMutabilityType extends StObject
   object StateMutabilityType {
     
-    @scala.inline
-    def nonpayable: typings.web3Utils.web3UtilsStrings.nonpayable = "nonpayable".asInstanceOf[typings.web3Utils.web3UtilsStrings.nonpayable]
+    inline def nonpayable: typings.web3Utils.web3UtilsStrings.nonpayable = "nonpayable".asInstanceOf[typings.web3Utils.web3UtilsStrings.nonpayable]
     
-    @scala.inline
-    def payable: typings.web3Utils.web3UtilsStrings.payable = "payable".asInstanceOf[typings.web3Utils.web3UtilsStrings.payable]
+    inline def payable: typings.web3Utils.web3UtilsStrings.payable = "payable".asInstanceOf[typings.web3Utils.web3UtilsStrings.payable]
     
-    @scala.inline
-    def pure: typings.web3Utils.web3UtilsStrings.pure = "pure".asInstanceOf[typings.web3Utils.web3UtilsStrings.pure]
+    inline def pure: typings.web3Utils.web3UtilsStrings.pure = "pure".asInstanceOf[typings.web3Utils.web3UtilsStrings.pure]
     
-    @scala.inline
-    def view: typings.web3Utils.web3UtilsStrings.view = "view".asInstanceOf[typings.web3Utils.web3UtilsStrings.view]
+    inline def view: typings.web3Utils.web3UtilsStrings.view = "view".asInstanceOf[typings.web3Utils.web3UtilsStrings.view]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -521,86 +384,59 @@ object mod {
   trait Unit extends StObject
   object Unit {
     
-    @scala.inline
-    def Gwei: typings.web3Utils.web3UtilsStrings.Gwei = "Gwei".asInstanceOf[typings.web3Utils.web3UtilsStrings.Gwei]
+    inline def Gwei: typings.web3Utils.web3UtilsStrings.Gwei = "Gwei".asInstanceOf[typings.web3Utils.web3UtilsStrings.Gwei]
     
-    @scala.inline
-    def Kwei: typings.web3Utils.web3UtilsStrings.Kwei = "Kwei".asInstanceOf[typings.web3Utils.web3UtilsStrings.Kwei]
+    inline def Kwei: typings.web3Utils.web3UtilsStrings.Kwei = "Kwei".asInstanceOf[typings.web3Utils.web3UtilsStrings.Kwei]
     
-    @scala.inline
-    def Mwei: typings.web3Utils.web3UtilsStrings.Mwei = "Mwei".asInstanceOf[typings.web3Utils.web3UtilsStrings.Mwei]
+    inline def Mwei: typings.web3Utils.web3UtilsStrings.Mwei = "Mwei".asInstanceOf[typings.web3Utils.web3UtilsStrings.Mwei]
     
-    @scala.inline
-    def babbage: typings.web3Utils.web3UtilsStrings.babbage = "babbage".asInstanceOf[typings.web3Utils.web3UtilsStrings.babbage]
+    inline def babbage: typings.web3Utils.web3UtilsStrings.babbage = "babbage".asInstanceOf[typings.web3Utils.web3UtilsStrings.babbage]
     
-    @scala.inline
-    def ether: typings.web3Utils.web3UtilsStrings.ether = "ether".asInstanceOf[typings.web3Utils.web3UtilsStrings.ether]
+    inline def ether: typings.web3Utils.web3UtilsStrings.ether = "ether".asInstanceOf[typings.web3Utils.web3UtilsStrings.ether]
     
-    @scala.inline
-    def femtoether: typings.web3Utils.web3UtilsStrings.femtoether = "femtoether".asInstanceOf[typings.web3Utils.web3UtilsStrings.femtoether]
+    inline def femtoether: typings.web3Utils.web3UtilsStrings.femtoether = "femtoether".asInstanceOf[typings.web3Utils.web3UtilsStrings.femtoether]
     
-    @scala.inline
-    def finney: typings.web3Utils.web3UtilsStrings.finney = "finney".asInstanceOf[typings.web3Utils.web3UtilsStrings.finney]
+    inline def finney: typings.web3Utils.web3UtilsStrings.finney = "finney".asInstanceOf[typings.web3Utils.web3UtilsStrings.finney]
     
-    @scala.inline
-    def gether: typings.web3Utils.web3UtilsStrings.gether = "gether".asInstanceOf[typings.web3Utils.web3UtilsStrings.gether]
+    inline def gether: typings.web3Utils.web3UtilsStrings.gether = "gether".asInstanceOf[typings.web3Utils.web3UtilsStrings.gether]
     
-    @scala.inline
-    def grand: typings.web3Utils.web3UtilsStrings.grand = "grand".asInstanceOf[typings.web3Utils.web3UtilsStrings.grand]
+    inline def grand: typings.web3Utils.web3UtilsStrings.grand = "grand".asInstanceOf[typings.web3Utils.web3UtilsStrings.grand]
     
-    @scala.inline
-    def gwei: gwei_ = "gwei".asInstanceOf[gwei_]
+    inline def gwei: gwei_ = "gwei".asInstanceOf[gwei_]
     
-    @scala.inline
-    def kether: typings.web3Utils.web3UtilsStrings.kether = "kether".asInstanceOf[typings.web3Utils.web3UtilsStrings.kether]
+    inline def kether: typings.web3Utils.web3UtilsStrings.kether = "kether".asInstanceOf[typings.web3Utils.web3UtilsStrings.kether]
     
-    @scala.inline
-    def kwei: kwei_ = "kwei".asInstanceOf[kwei_]
+    inline def kwei: kwei_ = "kwei".asInstanceOf[kwei_]
     
-    @scala.inline
-    def lovelace: typings.web3Utils.web3UtilsStrings.lovelace = "lovelace".asInstanceOf[typings.web3Utils.web3UtilsStrings.lovelace]
+    inline def lovelace: typings.web3Utils.web3UtilsStrings.lovelace = "lovelace".asInstanceOf[typings.web3Utils.web3UtilsStrings.lovelace]
     
-    @scala.inline
-    def mether: typings.web3Utils.web3UtilsStrings.mether = "mether".asInstanceOf[typings.web3Utils.web3UtilsStrings.mether]
+    inline def mether: typings.web3Utils.web3UtilsStrings.mether = "mether".asInstanceOf[typings.web3Utils.web3UtilsStrings.mether]
     
-    @scala.inline
-    def micro: typings.web3Utils.web3UtilsStrings.micro = "micro".asInstanceOf[typings.web3Utils.web3UtilsStrings.micro]
+    inline def micro: typings.web3Utils.web3UtilsStrings.micro = "micro".asInstanceOf[typings.web3Utils.web3UtilsStrings.micro]
     
-    @scala.inline
-    def microether: typings.web3Utils.web3UtilsStrings.microether = "microether".asInstanceOf[typings.web3Utils.web3UtilsStrings.microether]
+    inline def microether: typings.web3Utils.web3UtilsStrings.microether = "microether".asInstanceOf[typings.web3Utils.web3UtilsStrings.microether]
     
-    @scala.inline
-    def milli: typings.web3Utils.web3UtilsStrings.milli = "milli".asInstanceOf[typings.web3Utils.web3UtilsStrings.milli]
+    inline def milli: typings.web3Utils.web3UtilsStrings.milli = "milli".asInstanceOf[typings.web3Utils.web3UtilsStrings.milli]
     
-    @scala.inline
-    def milliether: typings.web3Utils.web3UtilsStrings.milliether = "milliether".asInstanceOf[typings.web3Utils.web3UtilsStrings.milliether]
+    inline def milliether: typings.web3Utils.web3UtilsStrings.milliether = "milliether".asInstanceOf[typings.web3Utils.web3UtilsStrings.milliether]
     
-    @scala.inline
-    def mwei: mwei_ = "mwei".asInstanceOf[mwei_]
+    inline def mwei: mwei_ = "mwei".asInstanceOf[mwei_]
     
-    @scala.inline
-    def nano: typings.web3Utils.web3UtilsStrings.nano = "nano".asInstanceOf[typings.web3Utils.web3UtilsStrings.nano]
+    inline def nano: typings.web3Utils.web3UtilsStrings.nano = "nano".asInstanceOf[typings.web3Utils.web3UtilsStrings.nano]
     
-    @scala.inline
-    def nanoether: typings.web3Utils.web3UtilsStrings.nanoether = "nanoether".asInstanceOf[typings.web3Utils.web3UtilsStrings.nanoether]
+    inline def nanoether: typings.web3Utils.web3UtilsStrings.nanoether = "nanoether".asInstanceOf[typings.web3Utils.web3UtilsStrings.nanoether]
     
-    @scala.inline
-    def noether: typings.web3Utils.web3UtilsStrings.noether = "noether".asInstanceOf[typings.web3Utils.web3UtilsStrings.noether]
+    inline def noether: typings.web3Utils.web3UtilsStrings.noether = "noether".asInstanceOf[typings.web3Utils.web3UtilsStrings.noether]
     
-    @scala.inline
-    def picoether: typings.web3Utils.web3UtilsStrings.picoether = "picoether".asInstanceOf[typings.web3Utils.web3UtilsStrings.picoether]
+    inline def picoether: typings.web3Utils.web3UtilsStrings.picoether = "picoether".asInstanceOf[typings.web3Utils.web3UtilsStrings.picoether]
     
-    @scala.inline
-    def shannon: typings.web3Utils.web3UtilsStrings.shannon = "shannon".asInstanceOf[typings.web3Utils.web3UtilsStrings.shannon]
+    inline def shannon: typings.web3Utils.web3UtilsStrings.shannon = "shannon".asInstanceOf[typings.web3Utils.web3UtilsStrings.shannon]
     
-    @scala.inline
-    def szabo: typings.web3Utils.web3UtilsStrings.szabo = "szabo".asInstanceOf[typings.web3Utils.web3UtilsStrings.szabo]
+    inline def szabo: typings.web3Utils.web3UtilsStrings.szabo = "szabo".asInstanceOf[typings.web3Utils.web3UtilsStrings.szabo]
     
-    @scala.inline
-    def tether: typings.web3Utils.web3UtilsStrings.tether = "tether".asInstanceOf[typings.web3Utils.web3UtilsStrings.tether]
+    inline def tether: typings.web3Utils.web3UtilsStrings.tether = "tether".asInstanceOf[typings.web3Utils.web3UtilsStrings.tether]
     
-    @scala.inline
-    def wei: typings.web3Utils.web3UtilsStrings.wei = "wei".asInstanceOf[typings.web3Utils.web3UtilsStrings.wei]
+    inline def wei: typings.web3Utils.web3UtilsStrings.wei = "wei".asInstanceOf[typings.web3Utils.web3UtilsStrings.wei]
   }
   
   trait Units extends StObject {
@@ -661,8 +497,7 @@ object mod {
   }
   object Units {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Gwei: String,
       Kwei: String,
       Mwei: String,
@@ -695,80 +530,55 @@ object mod {
       __obj.asInstanceOf[Units]
     }
     
-    @scala.inline
-    implicit class UnitsMutableBuilder[Self <: Units] (val x: Self) extends AnyVal {
+    extension [Self <: Units](x: Self) {
       
-      @scala.inline
-      def setBabbage(value: String): Self = StObject.set(x, "babbage", value.asInstanceOf[js.Any])
+      inline def setBabbage(value: String): Self = StObject.set(x, "babbage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEther(value: String): Self = StObject.set(x, "ether", value.asInstanceOf[js.Any])
+      inline def setEther(value: String): Self = StObject.set(x, "ether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFemtoether(value: String): Self = StObject.set(x, "femtoether", value.asInstanceOf[js.Any])
+      inline def setFemtoether(value: String): Self = StObject.set(x, "femtoether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinney(value: String): Self = StObject.set(x, "finney", value.asInstanceOf[js.Any])
+      inline def setFinney(value: String): Self = StObject.set(x, "finney", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGether(value: String): Self = StObject.set(x, "gether", value.asInstanceOf[js.Any])
+      inline def setGether(value: String): Self = StObject.set(x, "gether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrand(value: String): Self = StObject.set(x, "grand", value.asInstanceOf[js.Any])
+      inline def setGrand(value: String): Self = StObject.set(x, "grand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGwei(value: String): Self = StObject.set(x, "Gwei", value.asInstanceOf[js.Any])
+      inline def setGwei(value: String): Self = StObject.set(x, "Gwei", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKether(value: String): Self = StObject.set(x, "kether", value.asInstanceOf[js.Any])
+      inline def setKether(value: String): Self = StObject.set(x, "kether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKwei(value: String): Self = StObject.set(x, "Kwei", value.asInstanceOf[js.Any])
+      inline def setKwei(value: String): Self = StObject.set(x, "Kwei", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLovelace(value: String): Self = StObject.set(x, "lovelace", value.asInstanceOf[js.Any])
+      inline def setLovelace(value: String): Self = StObject.set(x, "lovelace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMether(value: String): Self = StObject.set(x, "mether", value.asInstanceOf[js.Any])
+      inline def setMether(value: String): Self = StObject.set(x, "mether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicro(value: String): Self = StObject.set(x, "micro", value.asInstanceOf[js.Any])
+      inline def setMicro(value: String): Self = StObject.set(x, "micro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicroether(value: String): Self = StObject.set(x, "microether", value.asInstanceOf[js.Any])
+      inline def setMicroether(value: String): Self = StObject.set(x, "microether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilli(value: String): Self = StObject.set(x, "milli", value.asInstanceOf[js.Any])
+      inline def setMilli(value: String): Self = StObject.set(x, "milli", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilliether(value: String): Self = StObject.set(x, "milliether", value.asInstanceOf[js.Any])
+      inline def setMilliether(value: String): Self = StObject.set(x, "milliether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMwei(value: String): Self = StObject.set(x, "Mwei", value.asInstanceOf[js.Any])
+      inline def setMwei(value: String): Self = StObject.set(x, "Mwei", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNano(value: String): Self = StObject.set(x, "nano", value.asInstanceOf[js.Any])
+      inline def setNano(value: String): Self = StObject.set(x, "nano", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanoether(value: String): Self = StObject.set(x, "nanoether", value.asInstanceOf[js.Any])
+      inline def setNanoether(value: String): Self = StObject.set(x, "nanoether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoether(value: String): Self = StObject.set(x, "noether", value.asInstanceOf[js.Any])
+      inline def setNoether(value: String): Self = StObject.set(x, "noether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicoether(value: String): Self = StObject.set(x, "picoether", value.asInstanceOf[js.Any])
+      inline def setPicoether(value: String): Self = StObject.set(x, "picoether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShannon(value: String): Self = StObject.set(x, "shannon", value.asInstanceOf[js.Any])
+      inline def setShannon(value: String): Self = StObject.set(x, "shannon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSzabo(value: String): Self = StObject.set(x, "szabo", value.asInstanceOf[js.Any])
+      inline def setSzabo(value: String): Self = StObject.set(x, "szabo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTether(value: String): Self = StObject.set(x, "tether", value.asInstanceOf[js.Any])
+      inline def setTether(value: String): Self = StObject.set(x, "tether", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWei(value: String): Self = StObject.set(x, "wei", value.asInstanceOf[js.Any])
+      inline def setWei(value: String): Self = StObject.set(x, "wei", value.asInstanceOf[js.Any])
     }
   }
   
@@ -917,14 +727,12 @@ object mod {
   trait _Mixed extends StObject
   object _Mixed {
     
-    @scala.inline
-    def T(t: String, v: String | typings.bnJs.mod.^ | Double): typings.web3Utils.anon.T = {
+    inline def T(t: String, v: String | typings.bnJs.mod.^ | Double): typings.web3Utils.anon.T = {
       val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.web3Utils.anon.T]
     }
     
-    @scala.inline
-    def Type(`type`: String, value: String): typings.web3Utils.anon.Type = {
+    inline def Type(`type`: String, value: String): typings.web3Utils.anon.Type = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.web3Utils.anon.Type]

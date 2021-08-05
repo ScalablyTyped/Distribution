@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AndroidWorkProfileDefaultAppPermissionPolicyType extends StObject
 object AndroidWorkProfileDefaultAppPermissionPolicyType {
   
-  @scala.inline
-  def autoDeny: typings.microsoftGraph.microsoftGraphStrings.autoDeny = "autoDeny".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoDeny]
+  inline def autoDeny: typings.microsoftGraph.microsoftGraphStrings.autoDeny = "autoDeny".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoDeny]
   
-  @scala.inline
-  def autoGrant: typings.microsoftGraph.microsoftGraphStrings.autoGrant = "autoGrant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoGrant]
+  inline def autoGrant: typings.microsoftGraph.microsoftGraphStrings.autoGrant = "autoGrant".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.autoGrant]
   
-  @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  inline def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   
-  @scala.inline
-  def prompt: typings.microsoftGraph.microsoftGraphStrings.prompt = "prompt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.prompt]
+  inline def prompt: typings.microsoftGraph.microsoftGraphStrings.prompt = "prompt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.prompt]
 }

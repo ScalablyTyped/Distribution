@@ -11,19 +11,15 @@ trait AddDataSourceRequest extends StObject {
 }
 object AddDataSourceRequest {
   
-  @scala.inline
-  def apply(): AddDataSourceRequest = {
+  inline def apply(): AddDataSourceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class AddDataSourceRequestMutableBuilder[Self <: AddDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
   }
 }

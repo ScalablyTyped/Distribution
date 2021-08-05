@@ -16,22 +16,17 @@ trait FileSystemPermissionDescriptor
 }
 object FileSystemPermissionDescriptor {
   
-  @scala.inline
-  def apply(handle: FileSystemHandle, name: PermissionName): FileSystemPermissionDescriptor = {
+  inline def apply(handle: FileSystemHandle, name: PermissionName): FileSystemPermissionDescriptor = {
     val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemPermissionDescriptor]
   }
   
-  @scala.inline
-  implicit class FileSystemPermissionDescriptorMutableBuilder[Self <: FileSystemPermissionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemPermissionDescriptor](x: Self) {
     
-    @scala.inline
-    def setHandle(value: FileSystemHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: FileSystemHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: FileSystemPermissionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: FileSystemPermissionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

@@ -42,8 +42,7 @@ trait IAggregate extends StObject {
 }
 object IAggregate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aggChildren: js.Array[js.Any],
     aggIndex: Double,
     aggLabelFilter: js.Any,
@@ -66,64 +65,44 @@ object IAggregate {
     __obj.asInstanceOf[IAggregate]
   }
   
-  @scala.inline
-  implicit class IAggregateMutableBuilder[Self <: IAggregate] (val x: Self) extends AnyVal {
+  extension [Self <: IAggregate](x: Self) {
     
-    @scala.inline
-    def setAggChildren(value: js.Array[js.Any]): Self = StObject.set(x, "aggChildren", value.asInstanceOf[js.Any])
+    inline def setAggChildren(value: js.Array[js.Any]): Self = StObject.set(x, "aggChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggChildrenVarargs(value: js.Any*): Self = StObject.set(x, "aggChildren", js.Array(value :_*))
+    inline def setAggChildrenVarargs(value: js.Any*): Self = StObject.set(x, "aggChildren", js.Array(value :_*))
     
-    @scala.inline
-    def setAggIndex(value: Double): Self = StObject.set(x, "aggIndex", value.asInstanceOf[js.Any])
+    inline def setAggIndex(value: Double): Self = StObject.set(x, "aggIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggLabelFilter(value: js.Any): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
+    inline def setAggLabelFilter(value: js.Any): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity(value: js.Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: js.Any): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupInitState(value: Boolean): Self = StObject.set(x, "groupInitState", value.asInstanceOf[js.Any])
+    inline def setGroupInitState(value: Boolean): Self = StObject.set(x, "groupInitState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAggRow(value: Boolean): Self = StObject.set(x, "isAggRow", value.asInstanceOf[js.Any])
+    inline def setIsAggRow(value: Boolean): Self = StObject.set(x, "isAggRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
+    inline def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+    inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowFactory(value: IRowFactory): Self = StObject.set(x, "rowFactory", value.asInstanceOf[js.Any])
+    inline def setRowFactory(value: IRowFactory): Self = StObject.set(x, "rowFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesPartiallyResolved extends StObject {
 }
 object EnumValuesPartiallyResolved {
   
-  @scala.inline
-  def apply(enumValues: PartiallyResolved): EnumValuesPartiallyResolved = {
+  inline def apply(enumValues: PartiallyResolved): EnumValuesPartiallyResolved = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesPartiallyResolved]
   }
   
-  @scala.inline
-  implicit class EnumValuesPartiallyResolvedMutableBuilder[Self <: EnumValuesPartiallyResolved] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesPartiallyResolved](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: PartiallyResolved): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: PartiallyResolved): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ object mod extends Shortcut {
   }
   object detectPointer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anyCoarse: Boolean,
       anyFine: Boolean,
       anyNone: Boolean,
@@ -48,29 +47,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.detectPointer.mod.detectPointer]
     }
     
-    @scala.inline
-    implicit class detectPointerMutableBuilder[Self <: typings.detectPointer.mod.detectPointer] (val x: Self) extends AnyVal {
+    extension [Self <: typings.detectPointer.mod.detectPointer](x: Self) {
       
-      @scala.inline
-      def setAnyCoarse(value: Boolean): Self = StObject.set(x, "anyCoarse", value.asInstanceOf[js.Any])
+      inline def setAnyCoarse(value: Boolean): Self = StObject.set(x, "anyCoarse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnyFine(value: Boolean): Self = StObject.set(x, "anyFine", value.asInstanceOf[js.Any])
+      inline def setAnyFine(value: Boolean): Self = StObject.set(x, "anyFine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnyNone(value: Boolean): Self = StObject.set(x, "anyNone", value.asInstanceOf[js.Any])
+      inline def setAnyNone(value: Boolean): Self = StObject.set(x, "anyNone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoarse(value: Boolean): Self = StObject.set(x, "coarse", value.asInstanceOf[js.Any])
+      inline def setCoarse(value: Boolean): Self = StObject.set(x, "coarse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFine(value: Boolean): Self = StObject.set(x, "fine", value.asInstanceOf[js.Any])
+      inline def setFine(value: Boolean): Self = StObject.set(x, "fine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNone(value: Boolean): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+      inline def setNone(value: Boolean): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
 }

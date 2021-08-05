@@ -13,22 +13,17 @@ trait BatchDisassociateServiceActionFromProvisioningArtifactOutput extends StObj
 }
 object BatchDisassociateServiceActionFromProvisioningArtifactOutput {
   
-  @scala.inline
-  def apply(): BatchDisassociateServiceActionFromProvisioningArtifactOutput = {
+  inline def apply(): BatchDisassociateServiceActionFromProvisioningArtifactOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDisassociateServiceActionFromProvisioningArtifactOutput]
   }
   
-  @scala.inline
-  implicit class BatchDisassociateServiceActionFromProvisioningArtifactOutputMutableBuilder[Self <: BatchDisassociateServiceActionFromProvisioningArtifactOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDisassociateServiceActionFromProvisioningArtifactOutput](x: Self) {
     
-    @scala.inline
-    def setFailedServiceActionAssociations(value: FailedServiceActionAssociations): Self = StObject.set(x, "FailedServiceActionAssociations", value.asInstanceOf[js.Any])
+    inline def setFailedServiceActionAssociations(value: FailedServiceActionAssociations): Self = StObject.set(x, "FailedServiceActionAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedServiceActionAssociationsUndefined: Self = StObject.set(x, "FailedServiceActionAssociations", js.undefined)
+    inline def setFailedServiceActionAssociationsUndefined: Self = StObject.set(x, "FailedServiceActionAssociations", js.undefined)
     
-    @scala.inline
-    def setFailedServiceActionAssociationsVarargs(value: FailedServiceActionAssociation*): Self = StObject.set(x, "FailedServiceActionAssociations", js.Array(value :_*))
+    inline def setFailedServiceActionAssociationsVarargs(value: FailedServiceActionAssociation*): Self = StObject.set(x, "FailedServiceActionAssociations", js.Array(value :_*))
   }
 }

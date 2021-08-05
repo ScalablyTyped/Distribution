@@ -12,19 +12,15 @@ trait EventValue extends StObject {
 }
 object EventValue {
   
-  @scala.inline
-  def apply(event: typings.std.Event, value: js.Any): EventValue = {
+  inline def apply(event: typings.std.Event, value: js.Any): EventValue = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventValue]
   }
   
-  @scala.inline
-  implicit class EventValueMutableBuilder[Self <: EventValue] (val x: Self) extends AnyVal {
+  extension [Self <: EventValue](x: Self) {
     
-    @scala.inline
-    def setEvent(value: typings.std.Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: typings.std.Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

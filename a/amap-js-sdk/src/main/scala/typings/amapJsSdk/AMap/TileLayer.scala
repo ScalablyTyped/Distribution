@@ -22,8 +22,7 @@ object TileLayer {
   }
   object Traffic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoRefresh: Boolean,
       getTiles: () => js.Array[String],
       getZooms: () => js.Array[Double],
@@ -42,14 +41,11 @@ object TileLayer {
       __obj.asInstanceOf[Traffic]
     }
     
-    @scala.inline
-    implicit class TrafficMutableBuilder[Self <: Traffic] (val x: Self) extends AnyVal {
+    extension [Self <: Traffic](x: Self) {
       
-      @scala.inline
-      def setAutoRefresh(value: Boolean): Self = StObject.set(x, "autoRefresh", value.asInstanceOf[js.Any])
+      inline def setAutoRefresh(value: Boolean): Self = StObject.set(x, "autoRefresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     }
   }
 }

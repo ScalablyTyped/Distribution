@@ -15,7 +15,7 @@ class NgTemplateOutlet protected ()
      with OnChanges {
   def this(_viewContainerRef: ViewContainerRef) = this()
   
-  var _hasContextShapeChanged: js.Any = js.native
+  /* private */ var _hasContextShapeChanged: js.Any = js.native
   
   /**
     * We need to re-create existing embedded view if:
@@ -27,13 +27,13 @@ class NgTemplateOutlet protected ()
     * In other words we consider context with the same properties as "the same" even
     * if object reference changes (see https://github.com/angular/angular/issues/13407).
     */
-  var _shouldRecreateView: js.Any = js.native
+  /* private */ var _shouldRecreateView: js.Any = js.native
   
-  var _updateExistingContext: js.Any = js.native
+  /* private */ var _updateExistingContext: js.Any = js.native
   
-  var _viewContainerRef: js.Any = js.native
+  /* private */ var _viewContainerRef: js.Any = js.native
   
-  var _viewRef: js.Any = js.native
+  /* private */ var _viewRef: js.Any = js.native
   
   /**
     * A callback method that is invoked immediately after the

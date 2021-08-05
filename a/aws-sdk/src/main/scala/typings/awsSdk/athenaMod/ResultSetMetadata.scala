@@ -13,22 +13,17 @@ trait ResultSetMetadata extends StObject {
 }
 object ResultSetMetadata {
   
-  @scala.inline
-  def apply(): ResultSetMetadata = {
+  inline def apply(): ResultSetMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultSetMetadata]
   }
   
-  @scala.inline
-  implicit class ResultSetMetadataMutableBuilder[Self <: ResultSetMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ResultSetMetadata](x: Self) {
     
-    @scala.inline
-    def setColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "ColumnInfo", value.asInstanceOf[js.Any])
+    inline def setColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "ColumnInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnInfoUndefined: Self = StObject.set(x, "ColumnInfo", js.undefined)
+    inline def setColumnInfoUndefined: Self = StObject.set(x, "ColumnInfo", js.undefined)
     
-    @scala.inline
-    def setColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "ColumnInfo", js.Array(value :_*))
+    inline def setColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "ColumnInfo", js.Array(value :_*))
   }
 }

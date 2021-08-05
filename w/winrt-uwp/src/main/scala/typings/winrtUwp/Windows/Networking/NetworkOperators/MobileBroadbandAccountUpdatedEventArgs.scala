@@ -18,22 +18,17 @@ trait MobileBroadbandAccountUpdatedEventArgs extends StObject {
 }
 object MobileBroadbandAccountUpdatedEventArgs {
   
-  @scala.inline
-  def apply(hasDeviceInformationChanged: Boolean, hasNetworkChanged: Boolean, networkAccountId: String): MobileBroadbandAccountUpdatedEventArgs = {
+  inline def apply(hasDeviceInformationChanged: Boolean, hasNetworkChanged: Boolean, networkAccountId: String): MobileBroadbandAccountUpdatedEventArgs = {
     val __obj = js.Dynamic.literal(hasDeviceInformationChanged = hasDeviceInformationChanged.asInstanceOf[js.Any], hasNetworkChanged = hasNetworkChanged.asInstanceOf[js.Any], networkAccountId = networkAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandAccountUpdatedEventArgs]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandAccountUpdatedEventArgsMutableBuilder[Self <: MobileBroadbandAccountUpdatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandAccountUpdatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setHasDeviceInformationChanged(value: Boolean): Self = StObject.set(x, "hasDeviceInformationChanged", value.asInstanceOf[js.Any])
+    inline def setHasDeviceInformationChanged(value: Boolean): Self = StObject.set(x, "hasDeviceInformationChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNetworkChanged(value: Boolean): Self = StObject.set(x, "hasNetworkChanged", value.asInstanceOf[js.Any])
+    inline def setHasNetworkChanged(value: Boolean): Self = StObject.set(x, "hasNetworkChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
+    inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
   }
 }

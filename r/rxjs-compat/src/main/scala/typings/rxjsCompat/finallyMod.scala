@@ -10,6 +10,5 @@ object finallyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def `finally`[T](callback: js.Function0[Unit]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_finally")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def `finally`[T](callback: js.Function0[Unit]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_finally")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

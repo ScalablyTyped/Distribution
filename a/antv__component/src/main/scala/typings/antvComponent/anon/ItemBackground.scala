@@ -22,8 +22,7 @@ trait ItemBackground extends StObject {
 }
 object ItemBackground {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     background: Padding,
     itemBackground: StyleFillOpacity,
     itemName: Spacing,
@@ -36,28 +35,20 @@ object ItemBackground {
     __obj.asInstanceOf[ItemBackground]
   }
   
-  @scala.inline
-  implicit class ItemBackgroundMutableBuilder[Self <: ItemBackground] (val x: Self) extends AnyVal {
+  extension [Self <: ItemBackground](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Padding): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Padding): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemBackground(value: StyleFillOpacity): Self = StObject.set(x, "itemBackground", value.asInstanceOf[js.Any])
+    inline def setItemBackground(value: StyleFillOpacity): Self = StObject.set(x, "itemBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemName(value: Spacing): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: Spacing): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStates(value: Inactive): Self = StObject.set(x, "itemStates", value.asInstanceOf[js.Any])
+    inline def setItemStates(value: Inactive): Self = StObject.set(x, "itemStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemValue(value: AlignRight): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
+    inline def setItemValue(value: AlignRight): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: SpacingStyle): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: SpacingStyle): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: Spacing): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Spacing): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait LocationsResource extends StObject {
 }
 object LocationsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: ContentResource,
     deidentifyTemplates: DeidentifyTemplatesResource,
     dlpJobs: DlpJobsResource,
@@ -39,31 +38,22 @@ object LocationsResource {
     __obj.asInstanceOf[LocationsResource]
   }
   
-  @scala.inline
-  implicit class LocationsResourceMutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: LocationsResource](x: Self) {
     
-    @scala.inline
-    def setContent(value: ContentResource): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ContentResource): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeidentifyTemplates(value: DeidentifyTemplatesResource): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
+    inline def setDeidentifyTemplates(value: DeidentifyTemplatesResource): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDlpJobs(value: DlpJobsResource): Self = StObject.set(x, "dlpJobs", value.asInstanceOf[js.Any])
+    inline def setDlpJobs(value: DlpJobsResource): Self = StObject.set(x, "dlpJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: ImageResource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageResource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypes(value: InfoTypesResource): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
+    inline def setInfoTypes(value: InfoTypesResource): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectTemplates(value: InspectTemplatesResource): Self = StObject.set(x, "inspectTemplates", value.asInstanceOf[js.Any])
+    inline def setInspectTemplates(value: InspectTemplatesResource): Self = StObject.set(x, "inspectTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTriggers(value: JobTriggersResource): Self = StObject.set(x, "jobTriggers", value.asInstanceOf[js.Any])
+    inline def setJobTriggers(value: JobTriggersResource): Self = StObject.set(x, "jobTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoredInfoTypes(value: StoredInfoTypesResource): Self = StObject.set(x, "storedInfoTypes", value.asInstanceOf[js.Any])
+    inline def setStoredInfoTypes(value: StoredInfoTypesResource): Self = StObject.set(x, "storedInfoTypes", value.asInstanceOf[js.Any])
   }
 }

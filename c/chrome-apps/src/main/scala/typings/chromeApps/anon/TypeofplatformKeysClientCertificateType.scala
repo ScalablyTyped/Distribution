@@ -83,8 +83,7 @@ trait TypeofplatformKeysClientCertificateType extends StObject {
 }
 object TypeofplatformKeysClientCertificateType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClientCertificateType: ECDSASIGN,
     getKeyPair: (ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit,
     selectClientCertificates: (SelectDetails, js.Function1[/* matches */ js.Array[Match], Unit]) => Unit,
@@ -95,24 +94,18 @@ object TypeofplatformKeysClientCertificateType {
     __obj.asInstanceOf[TypeofplatformKeysClientCertificateType]
   }
   
-  @scala.inline
-  implicit class TypeofplatformKeysClientCertificateTypeMutableBuilder[Self <: TypeofplatformKeysClientCertificateType] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofplatformKeysClientCertificateType](x: Self) {
     
-    @scala.inline
-    def setClientCertificateType(value: ECDSASIGN): Self = StObject.set(x, "ClientCertificateType", value.asInstanceOf[js.Any])
+    inline def setClientCertificateType(value: ECDSASIGN): Self = StObject.set(x, "ClientCertificateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKeyPair(
+    inline def setGetKeyPair(
       value: (ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit
     ): Self = StObject.set(x, "getKeyPair", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSelectClientCertificates(value: (SelectDetails, js.Function1[/* matches */ js.Array[Match], Unit]) => Unit): Self = StObject.set(x, "selectClientCertificates", js.Any.fromFunction2(value))
+    inline def setSelectClientCertificates(value: (SelectDetails, js.Function1[/* matches */ js.Array[Match], Unit]) => Unit): Self = StObject.set(x, "selectClientCertificates", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSubtleCrypto(value: () => SubtleCrypto): Self = StObject.set(x, "subtleCrypto", js.Any.fromFunction0(value))
+    inline def setSubtleCrypto(value: () => SubtleCrypto): Self = StObject.set(x, "subtleCrypto", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVerifyTLSServerCertificate(value: (VerificationDetails, js.Function1[/* result */ VerificationResult, Unit]) => Unit): Self = StObject.set(x, "verifyTLSServerCertificate", js.Any.fromFunction2(value))
+    inline def setVerifyTLSServerCertificate(value: (VerificationDetails, js.Function1[/* result */ VerificationResult, Unit]) => Unit): Self = StObject.set(x, "verifyTLSServerCertificate", js.Any.fromFunction2(value))
   }
 }

@@ -154,10 +154,8 @@ object ReflectiveInjector {
     * expect(injector.get(Car) instanceof Car).toBe(true);
     * ```
     */
-  @scala.inline
-  def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider]): ReflectiveInjector = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResolvedProviders")(providers.asInstanceOf[js.Any]).asInstanceOf[ReflectiveInjector]
-  @scala.inline
-  def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider], parent: Injector): ReflectiveInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("fromResolvedProviders")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[ReflectiveInjector]
+  inline def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider]): ReflectiveInjector = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResolvedProviders")(providers.asInstanceOf[js.Any]).asInstanceOf[ReflectiveInjector]
+  inline def fromResolvedProviders(providers: js.Array[ResolvedReflectiveProvider], parent: Injector): ReflectiveInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("fromResolvedProviders")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[ReflectiveInjector]
   
   /**
     * Turns an array of provider definitions into an array of resolved providers.
@@ -192,8 +190,7 @@ object ReflectiveInjector {
     * ```
     *
     */
-  @scala.inline
-  def resolve(providers: js.Array[Provider]): js.Array[ResolvedReflectiveProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(providers.asInstanceOf[js.Any]).asInstanceOf[js.Array[ResolvedReflectiveProvider]]
+  inline def resolve(providers: js.Array[Provider]): js.Array[ResolvedReflectiveProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(providers.asInstanceOf[js.Any]).asInstanceOf[js.Array[ResolvedReflectiveProvider]]
   
   /**
     * Resolves an array of providers and creates an injector from those providers.
@@ -218,8 +215,6 @@ object ReflectiveInjector {
     * expect(injector.get(Car) instanceof Car).toBe(true);
     * ```
     */
-  @scala.inline
-  def resolveAndCreate(providers: js.Array[Provider]): ReflectiveInjector = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAndCreate")(providers.asInstanceOf[js.Any]).asInstanceOf[ReflectiveInjector]
-  @scala.inline
-  def resolveAndCreate(providers: js.Array[Provider], parent: Injector): ReflectiveInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAndCreate")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[ReflectiveInjector]
+  inline def resolveAndCreate(providers: js.Array[Provider]): ReflectiveInjector = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAndCreate")(providers.asInstanceOf[js.Any]).asInstanceOf[ReflectiveInjector]
+  inline def resolveAndCreate(providers: js.Array[Provider], parent: Injector): ReflectiveInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAndCreate")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[ReflectiveInjector]
 }

@@ -34,20 +34,16 @@ trait LocationIdentifier extends StObject {
 }
 object LocationIdentifier {
   
-  @scala.inline
-  def apply(id: String, `type`: LocationType | String): LocationIdentifier = {
+  inline def apply(id: String, `type`: LocationType | String): LocationIdentifier = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationIdentifier]
   }
   
-  @scala.inline
-  implicit class LocationIdentifierMutableBuilder[Self <: LocationIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: LocationIdentifier](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LocationType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LocationType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

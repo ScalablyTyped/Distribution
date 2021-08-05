@@ -208,7 +208,7 @@ object elementsMod {
     @JSName("$targetNamespace")
     var $targetNamespace: js.UndefOr[js.Any] = js.native
     
-    var _initializeOptions: js.Any = js.native
+    /* private */ var _initializeOptions: js.Any = js.native
     
     def addChild(child: Element): Unit = js.native
     
@@ -429,7 +429,7 @@ object elementsMod {
       * @returns {Object}
       * @private
       */
-    var _createLookupTypeObject: js.Any = js.native
+    /* private */ var _createLookupTypeObject: js.Any = js.native
     
     /**
       * Iterates through the element and every nested child to find any defined `$type`
@@ -441,7 +441,7 @@ object elementsMod {
       * @returns {String}
       * @private
       */
-    var _getNestedLookupTypeString: js.Any = js.native
+    /* private */ var _getNestedLookupTypeString: js.Any = js.native
     
     @JSName("allowedChildren")
     val allowedChildren_MessageElement: StringDictionary[
@@ -754,20 +754,16 @@ object elementsMod {
   }
   object IInclude {
     
-    @scala.inline
-    def apply(location: String, namespace: String): IInclude = {
+    inline def apply(location: String, namespace: String): IInclude = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[IInclude]
     }
     
-    @scala.inline
-    implicit class IIncludeMutableBuilder[Self <: IInclude] (val x: Self) extends AnyVal {
+    extension [Self <: IInclude](x: Self) {
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -779,20 +775,16 @@ object elementsMod {
   }
   object IPort {
     
-    @scala.inline
-    def apply(binding: BindingElement, location: String): IPort = {
+    inline def apply(binding: BindingElement, location: String): IPort = {
       val __obj = js.Dynamic.literal(binding = binding.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPort]
     }
     
-    @scala.inline
-    implicit class IPortMutableBuilder[Self <: IPort] (val x: Self) extends AnyVal {
+    extension [Self <: IPort](x: Self) {
       
-      @scala.inline
-      def setBinding(value: BindingElement): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+      inline def setBinding(value: BindingElement): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
   
@@ -804,20 +796,16 @@ object elementsMod {
   }
   object ITopElement {
     
-    @scala.inline
-    def apply(methodName: String, outputName: String): ITopElement = {
+    inline def apply(methodName: String, outputName: String): ITopElement = {
       val __obj = js.Dynamic.literal(methodName = methodName.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITopElement]
     }
     
-    @scala.inline
-    implicit class ITopElementMutableBuilder[Self <: ITopElement] (val x: Self) extends AnyVal {
+    extension [Self <: ITopElement](x: Self) {
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
+      inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -843,56 +831,40 @@ object elementsMod {
   }
   object IWsdlXmlns {
     
-    @scala.inline
-    def apply(): IWsdlXmlns = {
+    inline def apply(): IWsdlXmlns = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWsdlXmlns]
     }
     
-    @scala.inline
-    implicit class IWsdlXmlnsMutableBuilder[Self <: IWsdlXmlns] (val x: Self) extends AnyVal {
+    extension [Self <: IWsdlXmlns](x: Self) {
       
-      @scala.inline
-      def setSoap(value: String): Self = StObject.set(x, "soap", value.asInstanceOf[js.Any])
+      inline def setSoap(value: String): Self = StObject.set(x, "soap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoapUndefined: Self = StObject.set(x, "soap", js.undefined)
+      inline def setSoapUndefined: Self = StObject.set(x, "soap", js.undefined)
       
-      @scala.inline
-      def setTns(value: String): Self = StObject.set(x, "tns", value.asInstanceOf[js.Any])
+      inline def setTns(value: String): Self = StObject.set(x, "tns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTnsUndefined: Self = StObject.set(x, "tns", js.undefined)
+      inline def setTnsUndefined: Self = StObject.set(x, "tns", js.undefined)
       
-      @scala.inline
-      def setWsam(value: String): Self = StObject.set(x, "wsam", value.asInstanceOf[js.Any])
+      inline def setWsam(value: String): Self = StObject.set(x, "wsam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsamUndefined: Self = StObject.set(x, "wsam", js.undefined)
+      inline def setWsamUndefined: Self = StObject.set(x, "wsam", js.undefined)
       
-      @scala.inline
-      def setWsp(value: String): Self = StObject.set(x, "wsp", value.asInstanceOf[js.Any])
+      inline def setWsp(value: String): Self = StObject.set(x, "wsp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWspUndefined: Self = StObject.set(x, "wsp", js.undefined)
+      inline def setWspUndefined: Self = StObject.set(x, "wsp", js.undefined)
       
-      @scala.inline
-      def setWsu(value: String): Self = StObject.set(x, "wsu", value.asInstanceOf[js.Any])
+      inline def setWsu(value: String): Self = StObject.set(x, "wsu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsuUndefined: Self = StObject.set(x, "wsu", js.undefined)
+      inline def setWsuUndefined: Self = StObject.set(x, "wsu", js.undefined)
       
-      @scala.inline
-      def setXsd(value: String): Self = StObject.set(x, "xsd", value.asInstanceOf[js.Any])
+      inline def setXsd(value: String): Self = StObject.set(x, "xsd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsdUndefined: Self = StObject.set(x, "xsd", js.undefined)
+      inline def setXsdUndefined: Self = StObject.set(x, "xsd", js.undefined)
       
-      @scala.inline
-      def set__tns__(value: String): Self = StObject.set(x, "__tns__", value.asInstanceOf[js.Any])
+      inline def set__tns__(value: String): Self = StObject.set(x, "__tns__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__tns__Undefined: Self = StObject.set(x, "__tns__", js.undefined)
+      inline def set__tns__Undefined: Self = StObject.set(x, "__tns__", js.undefined)
     }
   }
   

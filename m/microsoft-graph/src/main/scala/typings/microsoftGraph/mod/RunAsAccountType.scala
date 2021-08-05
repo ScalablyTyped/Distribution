@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RunAsAccountType extends StObject
 object RunAsAccountType {
   
-  @scala.inline
-  def system: typings.microsoftGraph.microsoftGraphStrings.system = "system".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.system]
+  inline def system: typings.microsoftGraph.microsoftGraphStrings.system = "system".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.system]
   
-  @scala.inline
-  def user: typings.microsoftGraph.microsoftGraphStrings.user = "user".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.user]
+  inline def user: typings.microsoftGraph.microsoftGraphStrings.user = "user".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.user]
 }

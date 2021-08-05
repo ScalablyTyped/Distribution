@@ -27,28 +27,21 @@ trait SecuritySettings extends StObject {
 }
 object SecuritySettings {
   
-  @scala.inline
-  def apply(): SecuritySettings = {
+  inline def apply(): SecuritySettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecuritySettings]
   }
   
-  @scala.inline
-  implicit class SecuritySettingsMutableBuilder[Self <: SecuritySettings] (val x: Self) extends AnyVal {
+  extension [Self <: SecuritySettings](x: Self) {
     
-    @scala.inline
-    def setClientTlsPolicy(value: String): Self = StObject.set(x, "clientTlsPolicy", value.asInstanceOf[js.Any])
+    inline def setClientTlsPolicy(value: String): Self = StObject.set(x, "clientTlsPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTlsPolicyUndefined: Self = StObject.set(x, "clientTlsPolicy", js.undefined)
+    inline def setClientTlsPolicyUndefined: Self = StObject.set(x, "clientTlsPolicy", js.undefined)
     
-    @scala.inline
-    def setSubjectAltNames(value: js.Array[String]): Self = StObject.set(x, "subjectAltNames", value.asInstanceOf[js.Any])
+    inline def setSubjectAltNames(value: js.Array[String]): Self = StObject.set(x, "subjectAltNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectAltNamesUndefined: Self = StObject.set(x, "subjectAltNames", js.undefined)
+    inline def setSubjectAltNamesUndefined: Self = StObject.set(x, "subjectAltNames", js.undefined)
     
-    @scala.inline
-    def setSubjectAltNamesVarargs(value: String*): Self = StObject.set(x, "subjectAltNames", js.Array(value :_*))
+    inline def setSubjectAltNamesVarargs(value: String*): Self = StObject.set(x, "subjectAltNames", js.Array(value :_*))
   }
 }

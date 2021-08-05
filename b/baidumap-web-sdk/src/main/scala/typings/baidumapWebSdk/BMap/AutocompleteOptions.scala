@@ -17,40 +17,29 @@ trait AutocompleteOptions extends StObject {
 }
 object AutocompleteOptions {
   
-  @scala.inline
-  def apply(): AutocompleteOptions = {
+  inline def apply(): AutocompleteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutocompleteOptions]
   }
   
-  @scala.inline
-  implicit class AutocompleteOptionsMutableBuilder[Self <: AutocompleteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteOptions](x: Self) {
     
-    @scala.inline
-    def setInput(value: String | HTMLElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String | HTMLElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String | Map | Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String | Map | Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setOnSearchComplete(value: /* result */ AutocompleteResult => Unit): Self = StObject.set(x, "onSearchComplete", js.Any.fromFunction1(value))
+    inline def setOnSearchComplete(value: /* result */ AutocompleteResult => Unit): Self = StObject.set(x, "onSearchComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSearchCompleteUndefined: Self = StObject.set(x, "onSearchComplete", js.undefined)
+    inline def setOnSearchCompleteUndefined: Self = StObject.set(x, "onSearchComplete", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

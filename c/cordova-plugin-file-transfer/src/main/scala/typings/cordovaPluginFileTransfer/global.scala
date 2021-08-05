@@ -69,31 +69,26 @@ object global {
     @JSGlobal("FileTransferError.ABORT_ERR")
     @js.native
     def ABORT_ERR: Double = js.native
-    @scala.inline
-    def ABORT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABORT_ERR")(x.asInstanceOf[js.Any])
+    inline def ABORT_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABORT_ERR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("FileTransferError.CONNECTION_ERR")
     @js.native
     def CONNECTION_ERR: Double = js.native
-    @scala.inline
-    def CONNECTION_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_ERR")(x.asInstanceOf[js.Any])
+    inline def CONNECTION_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_ERR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("FileTransferError.FILE_NOT_FOUND_ERR")
     @js.native
     def FILE_NOT_FOUND_ERR: Double = js.native
-    @scala.inline
-    def FILE_NOT_FOUND_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_NOT_FOUND_ERR")(x.asInstanceOf[js.Any])
+    inline def FILE_NOT_FOUND_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILE_NOT_FOUND_ERR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("FileTransferError.INVALID_URL_ERR")
     @js.native
     def INVALID_URL_ERR: Double = js.native
-    @scala.inline
-    def INVALID_URL_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_URL_ERR")(x.asInstanceOf[js.Any])
+    inline def INVALID_URL_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_URL_ERR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("FileTransferError.NOT_MODIFIED_ERR")
     @js.native
     def NOT_MODIFIED_ERR: Double = js.native
-    @scala.inline
-    def NOT_MODIFIED_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_MODIFIED_ERR")(x.asInstanceOf[js.Any])
+    inline def NOT_MODIFIED_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_MODIFIED_ERR")(x.asInstanceOf[js.Any])
   }
 }

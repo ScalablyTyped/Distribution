@@ -28,34 +28,25 @@ trait SimulationApplicationConfig extends StObject {
 }
 object SimulationApplicationConfig {
   
-  @scala.inline
-  def apply(application: Arn, launchConfig: LaunchConfig): SimulationApplicationConfig = {
+  inline def apply(application: Arn, launchConfig: LaunchConfig): SimulationApplicationConfig = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], launchConfig = launchConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimulationApplicationConfig]
   }
   
-  @scala.inline
-  implicit class SimulationApplicationConfigMutableBuilder[Self <: SimulationApplicationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SimulationApplicationConfig](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersion(value: Version): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
+    inline def setApplicationVersion(value: Version): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
+    inline def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
-    @scala.inline
-    def setLaunchConfig(value: LaunchConfig): Self = StObject.set(x, "launchConfig", value.asInstanceOf[js.Any])
+    inline def setLaunchConfig(value: LaunchConfig): Self = StObject.set(x, "launchConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldConfigs(value: WorldConfigs): Self = StObject.set(x, "worldConfigs", value.asInstanceOf[js.Any])
+    inline def setWorldConfigs(value: WorldConfigs): Self = StObject.set(x, "worldConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldConfigsUndefined: Self = StObject.set(x, "worldConfigs", js.undefined)
+    inline def setWorldConfigsUndefined: Self = StObject.set(x, "worldConfigs", js.undefined)
     
-    @scala.inline
-    def setWorldConfigsVarargs(value: WorldConfig*): Self = StObject.set(x, "worldConfigs", js.Array(value :_*))
+    inline def setWorldConfigsVarargs(value: WorldConfig*): Self = StObject.set(x, "worldConfigs", js.Array(value :_*))
   }
 }

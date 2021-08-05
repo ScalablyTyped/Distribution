@@ -17,22 +17,17 @@ trait CONNECTED extends StObject {
 }
 object CONNECTED {
   
-  @scala.inline
-  def apply(): CONNECTED = {
+  inline def apply(): CONNECTED = {
     val __obj = js.Dynamic.literal(CONNECTED = "Connected", CONNECTING = "Connecting", DISCONNECTED = "Disconnected")
     __obj.asInstanceOf[CONNECTED]
   }
   
-  @scala.inline
-  implicit class CONNECTEDMutableBuilder[Self <: CONNECTED] (val x: Self) extends AnyVal {
+  extension [Self <: CONNECTED](x: Self) {
     
-    @scala.inline
-    def setCONNECTED(value: Connected_): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
+    inline def setCONNECTED(value: Connected_): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCONNECTING(value: Connecting_): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
+    inline def setCONNECTING(value: Connecting_): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDISCONNECTED(value: Disconnected_): Self = StObject.set(x, "DISCONNECTED", value.asInstanceOf[js.Any])
+    inline def setDISCONNECTED(value: Disconnected_): Self = StObject.set(x, "DISCONNECTED", value.asInstanceOf[js.Any])
   }
 }

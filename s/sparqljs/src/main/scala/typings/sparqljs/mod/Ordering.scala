@@ -12,22 +12,17 @@ trait Ordering extends StObject {
 }
 object Ordering {
   
-  @scala.inline
-  def apply(expression: Expression): Ordering = {
+  inline def apply(expression: Expression): Ordering = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ordering]
   }
   
-  @scala.inline
-  implicit class OrderingMutableBuilder[Self <: Ordering] (val x: Self) extends AnyVal {
+  extension [Self <: Ordering](x: Self) {
     
-    @scala.inline
-    def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
+    inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
+    inline def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }
 }

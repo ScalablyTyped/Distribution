@@ -18,28 +18,21 @@ trait DescribeSchemasResponse extends StObject {
 }
 object DescribeSchemasResponse {
   
-  @scala.inline
-  def apply(): DescribeSchemasResponse = {
+  inline def apply(): DescribeSchemasResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSchemasResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSchemasResponseMutableBuilder[Self <: DescribeSchemasResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSchemasResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setSchemas(value: SchemaList): Self = StObject.set(x, "Schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: SchemaList): Self = StObject.set(x, "Schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasUndefined: Self = StObject.set(x, "Schemas", js.undefined)
+    inline def setSchemasUndefined: Self = StObject.set(x, "Schemas", js.undefined)
     
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = StObject.set(x, "Schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: String*): Self = StObject.set(x, "Schemas", js.Array(value :_*))
   }
 }

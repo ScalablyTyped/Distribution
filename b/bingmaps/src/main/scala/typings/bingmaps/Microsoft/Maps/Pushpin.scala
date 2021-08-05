@@ -95,8 +95,7 @@ trait Pushpin
 }
 object Pushpin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAnchor: () => Point,
     getClickedStyleEnabled: () => Boolean,
     getColor: () => String | Color,
@@ -118,49 +117,34 @@ object Pushpin {
     __obj.asInstanceOf[Pushpin]
   }
   
-  @scala.inline
-  implicit class PushpinMutableBuilder[Self <: Pushpin] (val x: Self) extends AnyVal {
+  extension [Self <: Pushpin](x: Self) {
     
-    @scala.inline
-    def setGetAnchor(value: () => Point): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
+    inline def setGetAnchor(value: () => Point): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClickedStyleEnabled(value: () => Boolean): Self = StObject.set(x, "getClickedStyleEnabled", js.Any.fromFunction0(value))
+    inline def setGetClickedStyleEnabled(value: () => Boolean): Self = StObject.set(x, "getClickedStyleEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetColor(value: () => String | Color): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
+    inline def setGetColor(value: () => String | Color): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDraggable(value: () => Boolean): Self = StObject.set(x, "getDraggable", js.Any.fromFunction0(value))
+    inline def setGetDraggable(value: () => Boolean): Self = StObject.set(x, "getDraggable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHoverStyleEnabled(value: () => Boolean): Self = StObject.set(x, "getHoverStyleEnabled", js.Any.fromFunction0(value))
+    inline def setGetHoverStyleEnabled(value: () => Boolean): Self = StObject.set(x, "getHoverStyleEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIcon(value: () => String): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
+    inline def setGetIcon(value: () => String): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocation(value: () => Location): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
+    inline def setGetLocation(value: () => Location): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRoundClickableArea(value: () => Boolean): Self = StObject.set(x, "getRoundClickableArea", js.Any.fromFunction0(value))
+    inline def setGetRoundClickableArea(value: () => Boolean): Self = StObject.set(x, "getRoundClickableArea", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubTitle(value: () => String): Self = StObject.set(x, "getSubTitle", js.Any.fromFunction0(value))
+    inline def setGetSubTitle(value: () => String): Self = StObject.set(x, "getSubTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextOffset(value: () => Point): Self = StObject.set(x, "getTextOffset", js.Any.fromFunction0(value))
+    inline def setGetTextOffset(value: () => Point): Self = StObject.set(x, "getTextOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLocation(value: Location => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
+    inline def setSetLocation(value: Location => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOptions(value: IPushpinOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: IPushpinOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

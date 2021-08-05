@@ -18,25 +18,19 @@ trait ServiceNameAndResourceType extends StObject {
 }
 object ServiceNameAndResourceType {
   
-  @scala.inline
-  def apply(): ServiceNameAndResourceType = {
+  inline def apply(): ServiceNameAndResourceType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceNameAndResourceType]
   }
   
-  @scala.inline
-  implicit class ServiceNameAndResourceTypeMutableBuilder[Self <: ServiceNameAndResourceType] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceNameAndResourceType](x: Self) {
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

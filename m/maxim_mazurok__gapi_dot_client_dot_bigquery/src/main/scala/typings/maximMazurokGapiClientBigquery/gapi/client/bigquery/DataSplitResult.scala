@@ -14,25 +14,19 @@ trait DataSplitResult extends StObject {
 }
 object DataSplitResult {
   
-  @scala.inline
-  def apply(): DataSplitResult = {
+  inline def apply(): DataSplitResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSplitResult]
   }
   
-  @scala.inline
-  implicit class DataSplitResultMutableBuilder[Self <: DataSplitResult] (val x: Self) extends AnyVal {
+  extension [Self <: DataSplitResult](x: Self) {
     
-    @scala.inline
-    def setEvaluationTable(value: TableReference): Self = StObject.set(x, "evaluationTable", value.asInstanceOf[js.Any])
+    inline def setEvaluationTable(value: TableReference): Self = StObject.set(x, "evaluationTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationTableUndefined: Self = StObject.set(x, "evaluationTable", js.undefined)
+    inline def setEvaluationTableUndefined: Self = StObject.set(x, "evaluationTable", js.undefined)
     
-    @scala.inline
-    def setTrainingTable(value: TableReference): Self = StObject.set(x, "trainingTable", value.asInstanceOf[js.Any])
+    inline def setTrainingTable(value: TableReference): Self = StObject.set(x, "trainingTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingTableUndefined: Self = StObject.set(x, "trainingTable", js.undefined)
+    inline def setTrainingTableUndefined: Self = StObject.set(x, "trainingTable", js.undefined)
   }
 }

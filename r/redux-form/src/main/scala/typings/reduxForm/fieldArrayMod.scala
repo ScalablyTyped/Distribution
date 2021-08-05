@@ -82,8 +82,7 @@ object fieldArrayMod {
   }
   object FieldArrayMetaProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dirty: Boolean,
       form: String,
       invalid: Boolean,
@@ -96,41 +95,29 @@ object fieldArrayMod {
       __obj.asInstanceOf[FieldArrayMetaProps]
     }
     
-    @scala.inline
-    implicit class FieldArrayMetaPropsMutableBuilder[Self <: FieldArrayMetaProps] (val x: Self) extends AnyVal {
+    extension [Self <: FieldArrayMetaProps](x: Self) {
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
+      inline def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
+      inline def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
+      inline def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: js.Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: js.Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
@@ -160,20 +147,16 @@ object fieldArrayMod {
   }
   object WrappedFieldArrayProps {
     
-    @scala.inline
-    def apply[FieldValue](fields: FieldArrayFieldsProps[FieldValue], meta: FieldArrayMetaProps): WrappedFieldArrayProps[FieldValue] = {
+    inline def apply[FieldValue](fields: FieldArrayFieldsProps[FieldValue], meta: FieldArrayMetaProps): WrappedFieldArrayProps[FieldValue] = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrappedFieldArrayProps[FieldValue]]
     }
     
-    @scala.inline
-    implicit class WrappedFieldArrayPropsMutableBuilder[Self <: WrappedFieldArrayProps[?], FieldValue] (val x: Self & WrappedFieldArrayProps[FieldValue]) extends AnyVal {
+    extension [Self <: WrappedFieldArrayProps[?], FieldValue](x: Self & WrappedFieldArrayProps[FieldValue]) {
       
-      @scala.inline
-      def setFields(value: FieldArrayFieldsProps[FieldValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: FieldArrayFieldsProps[FieldValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: FieldArrayMetaProps): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: FieldArrayMetaProps): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,60 +176,44 @@ object fieldArrayMod {
   }
   object _BaseFieldArrayProps {
     
-    @scala.inline
-    def apply[P, FieldValue](component: ComponentType[WrappedFieldArrayProps[FieldValue] & P], name: String): _BaseFieldArrayProps[P, FieldValue] = {
+    inline def apply[P, FieldValue](component: ComponentType[WrappedFieldArrayProps[FieldValue] & P], name: String): _BaseFieldArrayProps[P, FieldValue] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[_BaseFieldArrayProps[P, FieldValue]]
     }
     
-    @scala.inline
-    implicit class _BaseFieldArrayPropsMutableBuilder[Self <: _BaseFieldArrayProps[?, ?], P, FieldValue] (val x: Self & (_BaseFieldArrayProps[P, FieldValue])) extends AnyVal {
+    extension [Self <: _BaseFieldArrayProps[?, ?], P, FieldValue](x: Self & (_BaseFieldArrayProps[P, FieldValue])) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[WrappedFieldArrayProps[FieldValue] & P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[WrappedFieldArrayProps[FieldValue] & P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRerenderOnEveryChange(value: Boolean): Self = StObject.set(x, "rerenderOnEveryChange", value.asInstanceOf[js.Any])
+      inline def setRerenderOnEveryChange(value: Boolean): Self = StObject.set(x, "rerenderOnEveryChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRerenderOnEveryChangeUndefined: Self = StObject.set(x, "rerenderOnEveryChange", js.undefined)
+      inline def setRerenderOnEveryChangeUndefined: Self = StObject.set(x, "rerenderOnEveryChange", js.undefined)
       
-      @scala.inline
-      def setValidate(value: Validator | js.Array[Validator]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Validator | js.Array[Validator]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFunction4(
+      inline def setValidateFunction4(
         value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      @scala.inline
-      def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      inline def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value :_*))
       
-      @scala.inline
-      def setWarn(value: Validator | js.Array[Validator]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Validator | js.Array[Validator]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnFunction4(
+      inline def setWarnFunction4(
         value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "warn", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
-      @scala.inline
-      def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value :_*))
       
-      @scala.inline
-      def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
+      inline def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
+      inline def setWithRefUndefined: Self = StObject.set(x, "withRef", js.undefined)
     }
   }
 }

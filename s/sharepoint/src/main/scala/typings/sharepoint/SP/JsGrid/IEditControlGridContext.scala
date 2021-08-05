@@ -16,8 +16,7 @@ trait IEditControlGridContext
 }
 object IEditControlGridContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OnActivateActor: () => Unit,
     OnDeactivateActor: () => Unit,
     OnKeyDown: DomEvent => Unit,
@@ -32,13 +31,10 @@ object IEditControlGridContext {
     __obj.asInstanceOf[IEditControlGridContext]
   }
   
-  @scala.inline
-  implicit class IEditControlGridContextMutableBuilder[Self <: IEditControlGridContext] (val x: Self) extends AnyVal {
+  extension [Self <: IEditControlGridContext](x: Self) {
     
-    @scala.inline
-    def setOnActivateActor(value: () => Unit): Self = StObject.set(x, "OnActivateActor", js.Any.fromFunction0(value))
+    inline def setOnActivateActor(value: () => Unit): Self = StObject.set(x, "OnActivateActor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDeactivateActor(value: () => Unit): Self = StObject.set(x, "OnDeactivateActor", js.Any.fromFunction0(value))
+    inline def setOnDeactivateActor(value: () => Unit): Self = StObject.set(x, "OnDeactivateActor", js.Any.fromFunction0(value))
   }
 }

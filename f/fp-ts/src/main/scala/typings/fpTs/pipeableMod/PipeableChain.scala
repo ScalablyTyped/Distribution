@@ -34,8 +34,7 @@ trait PipeableChain[F]
 }
 object PipeableChain {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     ap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ /* fab */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
@@ -72,11 +71,9 @@ object PipeableChain {
     __obj.asInstanceOf[PipeableChain[F]]
   }
   
-  @scala.inline
-  implicit class PipeableChainMutableBuilder[Self <: PipeableChain[?], F] (val x: Self & PipeableChain[F]) extends AnyVal {
+  extension [Self <: PipeableChain[?], F](x: Self & PipeableChain[F]) {
     
-    @scala.inline
-    def setChain(
+    inline def setChain(
       value: js.Function1[
           js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
@@ -86,8 +83,7 @@ object PipeableChain {
         ]
     ): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChainFirst(
+    inline def setChainFirst(
       value: js.Function1[
           js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
@@ -97,8 +93,7 @@ object PipeableChain {
         ]
     ): Self = StObject.set(x, "chainFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlatten(
+    inline def setFlatten(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<F, A>> */ js.Any => js.Any
     ): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
   }

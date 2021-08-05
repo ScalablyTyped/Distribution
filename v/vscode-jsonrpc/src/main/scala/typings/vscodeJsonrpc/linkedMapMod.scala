@@ -13,17 +13,17 @@ object linkedMapMod {
   @js.native
   class LinkedMap[K, V] () extends StObject {
     
-    var _head: js.Any = js.native
+    /* private */ var _head: js.Any = js.native
     
-    var _map: js.Any = js.native
+    /* private */ var _map: js.Any = js.native
     
-    var _size: js.Any = js.native
+    /* private */ var _size: js.Any = js.native
     
-    var _tail: js.Any = js.native
+    /* private */ var _tail: js.Any = js.native
     
-    var addItemFirst: js.Any = js.native
+    /* private */ var addItemFirst: js.Any = js.native
     
-    var addItemLast: js.Any = js.native
+    /* private */ var addItemLast: js.Any = js.native
     
     def clear(): Unit = js.native
     
@@ -49,7 +49,7 @@ object linkedMapMod {
     
     def keys(): js.Array[K] = js.native
     
-    var removeItem: js.Any = js.native
+    /* private */ var removeItem: js.Any = js.native
     
     def set(key: K, value: V): Unit = js.native
     def set(key: K, value: V, touch: Touch): Unit = js.native
@@ -58,7 +58,7 @@ object linkedMapMod {
     
     def size: Double = js.native
     
-    var touch: js.Any = js.native
+    /* private */ var touch: js.Any = js.native
     
     def values(): js.Array[V] = js.native
   }

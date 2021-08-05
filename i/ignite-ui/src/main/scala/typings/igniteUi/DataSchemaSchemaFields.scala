@@ -49,43 +49,31 @@ trait DataSchemaSchemaFields
 }
 object DataSchemaSchemaFields {
   
-  @scala.inline
-  def apply(): DataSchemaSchemaFields = {
+  inline def apply(): DataSchemaSchemaFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSchemaSchemaFields]
   }
   
-  @scala.inline
-  implicit class DataSchemaSchemaFieldsMutableBuilder[Self <: DataSchemaSchemaFields] (val x: Self) extends AnyVal {
+  extension [Self <: DataSchemaSchemaFields](x: Self) {
     
-    @scala.inline
-    def setFormatter(value: js.Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: js.Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setMapper(value: String | js.Function): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
+    inline def setMapper(value: String | js.Function): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapperUndefined: Self = StObject.set(x, "mapper", js.undefined)
+    inline def setMapperUndefined: Self = StObject.set(x, "mapper", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String | Double | Boolean | Date | js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String | Double | Boolean | Date | js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
+    inline def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
+    inline def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
   }
 }

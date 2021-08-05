@@ -18,8 +18,7 @@ trait ISurveyTriggerOwner extends StObject {
 }
 object ISurveyTriggerOwner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copyTriggerValue: (String, String) => js.Any,
     focusQuestion: String => Boolean,
     getObjects: (js.Array[String], js.Array[String]) => js.Array[js.Any],
@@ -30,22 +29,16 @@ object ISurveyTriggerOwner {
     __obj.asInstanceOf[ISurveyTriggerOwner]
   }
   
-  @scala.inline
-  implicit class ISurveyTriggerOwnerMutableBuilder[Self <: ISurveyTriggerOwner] (val x: Self) extends AnyVal {
+  extension [Self <: ISurveyTriggerOwner](x: Self) {
     
-    @scala.inline
-    def setCopyTriggerValue(value: (String, String) => js.Any): Self = StObject.set(x, "copyTriggerValue", js.Any.fromFunction2(value))
+    inline def setCopyTriggerValue(value: (String, String) => js.Any): Self = StObject.set(x, "copyTriggerValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFocusQuestion(value: String => Boolean): Self = StObject.set(x, "focusQuestion", js.Any.fromFunction1(value))
+    inline def setFocusQuestion(value: String => Boolean): Self = StObject.set(x, "focusQuestion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetObjects(value: (js.Array[String], js.Array[String]) => js.Array[js.Any]): Self = StObject.set(x, "getObjects", js.Any.fromFunction2(value))
+    inline def setGetObjects(value: (js.Array[String], js.Array[String]) => js.Array[js.Any]): Self = StObject.set(x, "getObjects", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetCompleted(value: () => js.Any): Self = StObject.set(x, "setCompleted", js.Any.fromFunction0(value))
+    inline def setSetCompleted(value: () => js.Any): Self = StObject.set(x, "setCompleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTriggerValue(value: (String, js.Any, Boolean) => js.Any): Self = StObject.set(x, "setTriggerValue", js.Any.fromFunction3(value))
+    inline def setSetTriggerValue(value: (String, js.Any, Boolean) => js.Any): Self = StObject.set(x, "setTriggerValue", js.Any.fromFunction3(value))
   }
 }

@@ -86,21 +86,16 @@ object topicSubscriptionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TopicSubscriptionState): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TopicSubscriptionState, opts: CustomResourceOptions): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
+    inline def get(name: String, id: Input[ID]): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
+    inline def get(name: String, id: Input[ID], state: TopicSubscriptionState): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
+    inline def get(name: String, id: Input[ID], state: TopicSubscriptionState, opts: CustomResourceOptions): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
     
     /**
       * Returns true if the given object is an instance of TopicSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicSubscription.TopicSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/topicSubscription.TopicSubscription */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicSubscription.TopicSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/topicSubscription.TopicSubscription */ Boolean]
   }
   
   trait TopicSubscriptionArgs extends StObject {
@@ -147,53 +142,38 @@ object topicSubscriptionMod {
   }
   object TopicSubscriptionArgs {
     
-    @scala.inline
-    def apply(endpoint: Input[String], protocol: Input[String], topic: Input[String | Topic]): TopicSubscriptionArgs = {
+    inline def apply(endpoint: Input[String], protocol: Input[String], topic: Input[String | Topic]): TopicSubscriptionArgs = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopicSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class TopicSubscriptionArgsMutableBuilder[Self <: TopicSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TopicSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setConfirmationTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "confirmationTimeoutInMinutes", value.asInstanceOf[js.Any])
+      inline def setConfirmationTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "confirmationTimeoutInMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmationTimeoutInMinutesUndefined: Self = StObject.set(x, "confirmationTimeoutInMinutes", js.undefined)
+      inline def setConfirmationTimeoutInMinutesUndefined: Self = StObject.set(x, "confirmationTimeoutInMinutes", js.undefined)
       
-      @scala.inline
-      def setDeliveryPolicy(value: Input[String]): Self = StObject.set(x, "deliveryPolicy", value.asInstanceOf[js.Any])
+      inline def setDeliveryPolicy(value: Input[String]): Self = StObject.set(x, "deliveryPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryPolicyUndefined: Self = StObject.set(x, "deliveryPolicy", js.undefined)
+      inline def setDeliveryPolicyUndefined: Self = StObject.set(x, "deliveryPolicy", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointAutoConfirms(value: Input[Boolean]): Self = StObject.set(x, "endpointAutoConfirms", value.asInstanceOf[js.Any])
+      inline def setEndpointAutoConfirms(value: Input[Boolean]): Self = StObject.set(x, "endpointAutoConfirms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointAutoConfirmsUndefined: Self = StObject.set(x, "endpointAutoConfirms", js.undefined)
+      inline def setEndpointAutoConfirmsUndefined: Self = StObject.set(x, "endpointAutoConfirms", js.undefined)
       
-      @scala.inline
-      def setFilterPolicy(value: Input[String]): Self = StObject.set(x, "filterPolicy", value.asInstanceOf[js.Any])
+      inline def setFilterPolicy(value: Input[String]): Self = StObject.set(x, "filterPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterPolicyUndefined: Self = StObject.set(x, "filterPolicy", js.undefined)
+      inline def setFilterPolicyUndefined: Self = StObject.set(x, "filterPolicy", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawMessageDelivery(value: Input[Boolean]): Self = StObject.set(x, "rawMessageDelivery", value.asInstanceOf[js.Any])
+      inline def setRawMessageDelivery(value: Input[Boolean]): Self = StObject.set(x, "rawMessageDelivery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawMessageDeliveryUndefined: Self = StObject.set(x, "rawMessageDelivery", js.undefined)
+      inline def setRawMessageDeliveryUndefined: Self = StObject.set(x, "rawMessageDelivery", js.undefined)
       
-      @scala.inline
-      def setTopic(value: Input[String | Topic]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: Input[String | Topic]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -246,68 +226,48 @@ object topicSubscriptionMod {
   }
   object TopicSubscriptionState {
     
-    @scala.inline
-    def apply(): TopicSubscriptionState = {
+    inline def apply(): TopicSubscriptionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TopicSubscriptionState]
     }
     
-    @scala.inline
-    implicit class TopicSubscriptionStateMutableBuilder[Self <: TopicSubscriptionState] (val x: Self) extends AnyVal {
+    extension [Self <: TopicSubscriptionState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setConfirmationTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "confirmationTimeoutInMinutes", value.asInstanceOf[js.Any])
+      inline def setConfirmationTimeoutInMinutes(value: Input[Double]): Self = StObject.set(x, "confirmationTimeoutInMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmationTimeoutInMinutesUndefined: Self = StObject.set(x, "confirmationTimeoutInMinutes", js.undefined)
+      inline def setConfirmationTimeoutInMinutesUndefined: Self = StObject.set(x, "confirmationTimeoutInMinutes", js.undefined)
       
-      @scala.inline
-      def setDeliveryPolicy(value: Input[String]): Self = StObject.set(x, "deliveryPolicy", value.asInstanceOf[js.Any])
+      inline def setDeliveryPolicy(value: Input[String]): Self = StObject.set(x, "deliveryPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryPolicyUndefined: Self = StObject.set(x, "deliveryPolicy", js.undefined)
+      inline def setDeliveryPolicyUndefined: Self = StObject.set(x, "deliveryPolicy", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointAutoConfirms(value: Input[Boolean]): Self = StObject.set(x, "endpointAutoConfirms", value.asInstanceOf[js.Any])
+      inline def setEndpointAutoConfirms(value: Input[Boolean]): Self = StObject.set(x, "endpointAutoConfirms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointAutoConfirmsUndefined: Self = StObject.set(x, "endpointAutoConfirms", js.undefined)
+      inline def setEndpointAutoConfirmsUndefined: Self = StObject.set(x, "endpointAutoConfirms", js.undefined)
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setFilterPolicy(value: Input[String]): Self = StObject.set(x, "filterPolicy", value.asInstanceOf[js.Any])
+      inline def setFilterPolicy(value: Input[String]): Self = StObject.set(x, "filterPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterPolicyUndefined: Self = StObject.set(x, "filterPolicy", js.undefined)
+      inline def setFilterPolicyUndefined: Self = StObject.set(x, "filterPolicy", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Input[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setRawMessageDelivery(value: Input[Boolean]): Self = StObject.set(x, "rawMessageDelivery", value.asInstanceOf[js.Any])
+      inline def setRawMessageDelivery(value: Input[Boolean]): Self = StObject.set(x, "rawMessageDelivery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawMessageDeliveryUndefined: Self = StObject.set(x, "rawMessageDelivery", js.undefined)
+      inline def setRawMessageDeliveryUndefined: Self = StObject.set(x, "rawMessageDelivery", js.undefined)
       
-      @scala.inline
-      def setTopic(value: Input[String | Topic]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: Input[String | Topic]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+      inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     }
   }
 }

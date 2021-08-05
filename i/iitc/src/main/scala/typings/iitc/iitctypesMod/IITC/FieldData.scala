@@ -13,22 +13,17 @@ trait FieldData extends StObject {
 }
 object FieldData {
   
-  @scala.inline
-  def apply(points: js.Array[LatE6], team: String): FieldData = {
+  inline def apply(points: js.Array[LatE6], team: String): FieldData = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldData]
   }
   
-  @scala.inline
-  implicit class FieldDataMutableBuilder[Self <: FieldData] (val x: Self) extends AnyVal {
+  extension [Self <: FieldData](x: Self) {
     
-    @scala.inline
-    def setPoints(value: js.Array[LatE6]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[LatE6]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: LatE6*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: LatE6*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+    inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
   }
 }

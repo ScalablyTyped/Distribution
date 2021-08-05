@@ -8,16 +8,13 @@ object maximMazurokGapiClientPolicytroubleshooterStrings {
   
   @js.native
   sealed trait GoogleCloudPolicytroubleshooterV1BindingExplanation extends StObject
-  @scala.inline
-  def GoogleCloudPolicytroubleshooterV1BindingExplanation: GoogleCloudPolicytroubleshooterV1BindingExplanation = "GoogleCloudPolicytroubleshooterV1BindingExplanation".asInstanceOf[GoogleCloudPolicytroubleshooterV1BindingExplanation]
+  inline def GoogleCloudPolicytroubleshooterV1BindingExplanation: GoogleCloudPolicytroubleshooterV1BindingExplanation = "GoogleCloudPolicytroubleshooterV1BindingExplanation".asInstanceOf[GoogleCloudPolicytroubleshooterV1BindingExplanation]
   
   @js.native
   sealed trait policytroubleshooter extends StObject
-  @scala.inline
-  def policytroubleshooter: policytroubleshooter = "policytroubleshooter".asInstanceOf[policytroubleshooter]
+  inline def policytroubleshooter: policytroubleshooter = "policytroubleshooter".asInstanceOf[policytroubleshooter]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

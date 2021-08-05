@@ -10,16 +10,13 @@ trait IgnoreRules extends StObject {
 }
 object IgnoreRules {
   
-  @scala.inline
-  def apply(lowerPriorityThan: Double): IgnoreRules = {
+  inline def apply(lowerPriorityThan: Double): IgnoreRules = {
     val __obj = js.Dynamic.literal(lowerPriorityThan = lowerPriorityThan.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgnoreRules]
   }
   
-  @scala.inline
-  implicit class IgnoreRulesMutableBuilder[Self <: IgnoreRules] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreRules](x: Self) {
     
-    @scala.inline
-    def setLowerPriorityThan(value: Double): Self = StObject.set(x, "lowerPriorityThan", value.asInstanceOf[js.Any])
+    inline def setLowerPriorityThan(value: Double): Self = StObject.set(x, "lowerPriorityThan", value.asInstanceOf[js.Any])
   }
 }

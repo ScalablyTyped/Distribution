@@ -21,6 +21,5 @@ trait CustomScroll extends StObject {
 }
 object CustomScroll {
   
-  @scala.inline
-  def apply: CustomScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomScroll").asInstanceOf[CustomScroll]
+  inline def apply: CustomScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomScroll").asInstanceOf[CustomScroll]
 }

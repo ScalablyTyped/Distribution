@@ -132,80 +132,56 @@ object Scroller {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
+      inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
+      inline def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
       
-      @scala.inline
-      def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+      inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+      inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
       
-      @scala.inline
-      def setBouncing(value: Boolean): Self = StObject.set(x, "bouncing", value.asInstanceOf[js.Any])
+      inline def setBouncing(value: Boolean): Self = StObject.set(x, "bouncing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBouncingUndefined: Self = StObject.set(x, "bouncing", js.undefined)
+      inline def setBouncingUndefined: Self = StObject.set(x, "bouncing", js.undefined)
       
-      @scala.inline
-      def setLocking(value: Boolean): Self = StObject.set(x, "locking", value.asInstanceOf[js.Any])
+      inline def setLocking(value: Boolean): Self = StObject.set(x, "locking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockingUndefined: Self = StObject.set(x, "locking", js.undefined)
+      inline def setLockingUndefined: Self = StObject.set(x, "locking", js.undefined)
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+      inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
       
-      @scala.inline
-      def setPaging(value: Boolean): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
+      inline def setPaging(value: Boolean): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
+      inline def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
       
-      @scala.inline
-      def setScrollingX(value: Boolean): Self = StObject.set(x, "scrollingX", value.asInstanceOf[js.Any])
+      inline def setScrollingX(value: Boolean): Self = StObject.set(x, "scrollingX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollingXUndefined: Self = StObject.set(x, "scrollingX", js.undefined)
+      inline def setScrollingXUndefined: Self = StObject.set(x, "scrollingX", js.undefined)
       
-      @scala.inline
-      def setScrollingY(value: Boolean): Self = StObject.set(x, "scrollingY", value.asInstanceOf[js.Any])
+      inline def setScrollingY(value: Boolean): Self = StObject.set(x, "scrollingY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollingYUndefined: Self = StObject.set(x, "scrollingY", js.undefined)
+      inline def setScrollingYUndefined: Self = StObject.set(x, "scrollingY", js.undefined)
       
-      @scala.inline
-      def setSnapping(value: Boolean): Self = StObject.set(x, "snapping", value.asInstanceOf[js.Any])
+      inline def setSnapping(value: Boolean): Self = StObject.set(x, "snapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnappingUndefined: Self = StObject.set(x, "snapping", js.undefined)
+      inline def setSnappingUndefined: Self = StObject.set(x, "snapping", js.undefined)
       
-      @scala.inline
-      def setZooming(value: Double): Self = StObject.set(x, "zooming", value.asInstanceOf[js.Any])
+      inline def setZooming(value: Double): Self = StObject.set(x, "zooming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomingUndefined: Self = StObject.set(x, "zooming", js.undefined)
+      inline def setZoomingUndefined: Self = StObject.set(x, "zooming", js.undefined)
     }
   }
 }

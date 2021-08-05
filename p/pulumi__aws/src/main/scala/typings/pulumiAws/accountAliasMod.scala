@@ -45,21 +45,16 @@ object accountAliasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccountAliasState): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccountAliasState, opts: CustomResourceOptions): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
+    inline def get(name: String, id: Input[ID]): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
+    inline def get(name: String, id: Input[ID], state: AccountAliasState): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
+    inline def get(name: String, id: Input[ID], state: AccountAliasState, opts: CustomResourceOptions): AccountAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountAlias]
     
     /**
       * Returns true if the given object is an instance of AccountAlias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ Boolean]
   }
   
   trait AccountAliasArgs extends StObject {
@@ -71,17 +66,14 @@ object accountAliasMod {
   }
   object AccountAliasArgs {
     
-    @scala.inline
-    def apply(accountAlias: Input[String]): AccountAliasArgs = {
+    inline def apply(accountAlias: Input[String]): AccountAliasArgs = {
       val __obj = js.Dynamic.literal(accountAlias = accountAlias.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountAliasArgs]
     }
     
-    @scala.inline
-    implicit class AccountAliasArgsMutableBuilder[Self <: AccountAliasArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AccountAliasArgs](x: Self) {
       
-      @scala.inline
-      def setAccountAlias(value: Input[String]): Self = StObject.set(x, "accountAlias", value.asInstanceOf[js.Any])
+      inline def setAccountAlias(value: Input[String]): Self = StObject.set(x, "accountAlias", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +86,16 @@ object accountAliasMod {
   }
   object AccountAliasState {
     
-    @scala.inline
-    def apply(): AccountAliasState = {
+    inline def apply(): AccountAliasState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccountAliasState]
     }
     
-    @scala.inline
-    implicit class AccountAliasStateMutableBuilder[Self <: AccountAliasState] (val x: Self) extends AnyVal {
+    extension [Self <: AccountAliasState](x: Self) {
       
-      @scala.inline
-      def setAccountAlias(value: Input[String]): Self = StObject.set(x, "accountAlias", value.asInstanceOf[js.Any])
+      inline def setAccountAlias(value: Input[String]): Self = StObject.set(x, "accountAlias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountAliasUndefined: Self = StObject.set(x, "accountAlias", js.undefined)
+      inline def setAccountAliasUndefined: Self = StObject.set(x, "accountAlias", js.undefined)
     }
   }
 }

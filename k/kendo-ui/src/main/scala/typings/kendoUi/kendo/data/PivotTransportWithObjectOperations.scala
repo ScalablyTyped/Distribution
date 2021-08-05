@@ -18,28 +18,21 @@ trait PivotTransportWithObjectOperations
 }
 object PivotTransportWithObjectOperations {
   
-  @scala.inline
-  def apply(connection: PivotTransportConnection): PivotTransportWithObjectOperations = {
+  inline def apply(connection: PivotTransportConnection): PivotTransportWithObjectOperations = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTransportWithObjectOperations]
   }
   
-  @scala.inline
-  implicit class PivotTransportWithObjectOperationsMutableBuilder[Self <: PivotTransportWithObjectOperations] (val x: Self) extends AnyVal {
+  extension [Self <: PivotTransportWithObjectOperations](x: Self) {
     
-    @scala.inline
-    def setConnection(value: PivotTransportConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: PivotTransportConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscover(value: PivotTransportDiscover): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
+    inline def setDiscover(value: PivotTransportDiscover): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoverUndefined: Self = StObject.set(x, "discover", js.undefined)
+    inline def setDiscoverUndefined: Self = StObject.set(x, "discover", js.undefined)
     
-    @scala.inline
-    def setRead(value: DataSourceTransportRead): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: DataSourceTransportRead): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait XImageButton
 }
 object XImageButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addActionListener: XActionListener => Unit,
     queryInterface: `type` => js.Any,
@@ -35,16 +34,12 @@ object XImageButton {
     __obj.asInstanceOf[XImageButton]
   }
   
-  @scala.inline
-  implicit class XImageButtonMutableBuilder[Self <: XImageButton] (val x: Self) extends AnyVal {
+  extension [Self <: XImageButton](x: Self) {
     
-    @scala.inline
-    def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
+    inline def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveActionListener(value: XActionListener => Unit): Self = StObject.set(x, "removeActionListener", js.Any.fromFunction1(value))
+    inline def setRemoveActionListener(value: XActionListener => Unit): Self = StObject.set(x, "removeActionListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActionCommand(value: String => Unit): Self = StObject.set(x, "setActionCommand", js.Any.fromFunction1(value))
+    inline def setSetActionCommand(value: String => Unit): Self = StObject.set(x, "setActionCommand", js.Any.fromFunction1(value))
   }
 }

@@ -28,37 +28,27 @@ trait DescribeTaskSetsRequest extends StObject {
 }
 object DescribeTaskSetsRequest {
   
-  @scala.inline
-  def apply(cluster: String, service: String): DescribeTaskSetsRequest = {
+  inline def apply(cluster: String, service: String): DescribeTaskSetsRequest = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTaskSetsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTaskSetsRequestMutableBuilder[Self <: DescribeTaskSetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTaskSetsRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude(value: TaskSetFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: TaskSetFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: TaskSetField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: TaskSetField*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskSets(value: StringList): Self = StObject.set(x, "taskSets", value.asInstanceOf[js.Any])
+    inline def setTaskSets(value: StringList): Self = StObject.set(x, "taskSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskSetsUndefined: Self = StObject.set(x, "taskSets", js.undefined)
+    inline def setTaskSetsUndefined: Self = StObject.set(x, "taskSets", js.undefined)
     
-    @scala.inline
-    def setTaskSetsVarargs(value: String*): Self = StObject.set(x, "taskSets", js.Array(value :_*))
+    inline def setTaskSetsVarargs(value: String*): Self = StObject.set(x, "taskSets", js.Array(value :_*))
   }
 }

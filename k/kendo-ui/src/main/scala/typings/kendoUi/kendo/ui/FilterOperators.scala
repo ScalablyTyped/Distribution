@@ -16,37 +16,27 @@ trait FilterOperators extends StObject {
 }
 object FilterOperators {
   
-  @scala.inline
-  def apply(): FilterOperators = {
+  inline def apply(): FilterOperators = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterOperators]
   }
   
-  @scala.inline
-  implicit class FilterOperatorsMutableBuilder[Self <: FilterOperators] (val x: Self) extends AnyVal {
+  extension [Self <: FilterOperators](x: Self) {
     
-    @scala.inline
-    def setBoolean(value: FilterOperatorsBoolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: FilterOperatorsBoolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+    inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
     
-    @scala.inline
-    def setDate(value: FilterOperatorsDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: FilterOperatorsDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setNumber(value: FilterOperatorsNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: FilterOperatorsNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setString(value: FilterOperatorsString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: FilterOperatorsString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait MessageEvent extends StObject {
 }
 object MessageEvent {
   
-  @scala.inline
-  def apply(originalEvent: MessageEvent): MessageEvent = {
+  inline def apply(originalEvent: MessageEvent): MessageEvent = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageEvent]
   }
   
-  @scala.inline
-  implicit class MessageEventMutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MessageEvent](x: Self) {
     
-    @scala.inline
-    def setOriginalEvent(value: MessageEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: MessageEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }
 }

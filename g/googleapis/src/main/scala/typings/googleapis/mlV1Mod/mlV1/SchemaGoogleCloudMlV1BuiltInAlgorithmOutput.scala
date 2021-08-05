@@ -32,37 +32,27 @@ trait SchemaGoogleCloudMlV1BuiltInAlgorithmOutput extends StObject {
 }
 object SchemaGoogleCloudMlV1BuiltInAlgorithmOutput {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudMlV1BuiltInAlgorithmOutput = {
+  inline def apply(): SchemaGoogleCloudMlV1BuiltInAlgorithmOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1BuiltInAlgorithmOutput]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudMlV1BuiltInAlgorithmOutputMutableBuilder[Self <: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput](x: Self) {
     
-    @scala.inline
-    def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+    inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
+    inline def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
     
-    @scala.inline
-    def setModelPath(value: String): Self = StObject.set(x, "modelPath", value.asInstanceOf[js.Any])
+    inline def setModelPath(value: String): Self = StObject.set(x, "modelPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelPathUndefined: Self = StObject.set(x, "modelPath", js.undefined)
+    inline def setModelPathUndefined: Self = StObject.set(x, "modelPath", js.undefined)
     
-    @scala.inline
-    def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
+    inline def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
+    inline def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
     
-    @scala.inline
-    def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
+    inline def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
+    inline def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
   }
 }

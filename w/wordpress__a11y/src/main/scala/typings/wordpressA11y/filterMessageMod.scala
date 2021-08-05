@@ -10,6 +10,5 @@ object filterMessageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(message.asInstanceOf[js.Any]).asInstanceOf[String]
 }

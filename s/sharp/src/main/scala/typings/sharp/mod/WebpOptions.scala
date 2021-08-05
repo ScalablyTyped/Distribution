@@ -26,43 +26,31 @@ trait WebpOptions
 }
 object WebpOptions {
   
-  @scala.inline
-  def apply(): WebpOptions = {
+  inline def apply(): WebpOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebpOptions]
   }
   
-  @scala.inline
-  implicit class WebpOptionsMutableBuilder[Self <: WebpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebpOptions](x: Self) {
     
-    @scala.inline
-    def setAlphaQuality(value: Double): Self = StObject.set(x, "alphaQuality", value.asInstanceOf[js.Any])
+    inline def setAlphaQuality(value: Double): Self = StObject.set(x, "alphaQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaQualityUndefined: Self = StObject.set(x, "alphaQuality", js.undefined)
+    inline def setAlphaQualityUndefined: Self = StObject.set(x, "alphaQuality", js.undefined)
     
-    @scala.inline
-    def setLossless(value: Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
+    inline def setLossless(value: Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
+    inline def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
     
-    @scala.inline
-    def setNearLossless(value: Boolean): Self = StObject.set(x, "nearLossless", value.asInstanceOf[js.Any])
+    inline def setNearLossless(value: Boolean): Self = StObject.set(x, "nearLossless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearLosslessUndefined: Self = StObject.set(x, "nearLossless", js.undefined)
+    inline def setNearLosslessUndefined: Self = StObject.set(x, "nearLossless", js.undefined)
     
-    @scala.inline
-    def setReductionEffort(value: Double): Self = StObject.set(x, "reductionEffort", value.asInstanceOf[js.Any])
+    inline def setReductionEffort(value: Double): Self = StObject.set(x, "reductionEffort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReductionEffortUndefined: Self = StObject.set(x, "reductionEffort", js.undefined)
+    inline def setReductionEffortUndefined: Self = StObject.set(x, "reductionEffort", js.undefined)
     
-    @scala.inline
-    def setSmartSubsample(value: Boolean): Self = StObject.set(x, "smartSubsample", value.asInstanceOf[js.Any])
+    inline def setSmartSubsample(value: Boolean): Self = StObject.set(x, "smartSubsample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartSubsampleUndefined: Self = StObject.set(x, "smartSubsample", js.undefined)
+    inline def setSmartSubsampleUndefined: Self = StObject.set(x, "smartSubsample", js.undefined)
   }
 }

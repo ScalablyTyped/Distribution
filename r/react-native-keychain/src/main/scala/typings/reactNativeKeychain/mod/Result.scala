@@ -12,19 +12,15 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(service: String, storage: String): Result = {
+  inline def apply(service: String, storage: String): Result = {
     val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }
 }

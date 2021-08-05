@@ -37,7 +37,7 @@ trait PivotCache extends StObject {
   
   var EnableRefresh: Boolean = js.native
   
-  @JSName("Excel.PivotCache_typekey")
+  /* private */ @JSName("Excel.PivotCache_typekey")
   var ExcelDotPivotCache_typekey: PivotCache = js.native
   
   val Index: Double = js.native

@@ -20,14 +20,10 @@ object mod {
     * the first match that was closed will be used.
     * For example, `{{a}` will match `['{', 'a', '']` and `{a}}` will match `['', 'a', '}']`
     */
-  @scala.inline
-  def apply(a: String, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  @scala.inline
-  def apply(a: String, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  @scala.inline
-  def apply(a: RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  @scala.inline
-  def apply(a: RegExp, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def apply(a: String, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def apply(a: String, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def apply(a: RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def apply(a: RegExp, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
   
   @JSImport("balanced-match", JSImport.Namespace)
   @js.native
@@ -37,14 +33,10 @@ object mod {
     * For the first non-nested matching pair of `a` and `b` in `str`,
     * return an array with indexes: `[ <a index>, <b index> ]`.
     */
-  @scala.inline
-  def range(a: String, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  @scala.inline
-  def range(a: String, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  @scala.inline
-  def range(a: RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  @scala.inline
-  def range(a: RegExp, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def range(a: String, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def range(a: String, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def range(a: RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def range(a: RegExp, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
   
   trait Output extends StObject {
     
@@ -75,29 +67,22 @@ object mod {
   }
   object Output {
     
-    @scala.inline
-    def apply(body: String, end: Double, post: String, pre: String, start: Double): Output = {
+    inline def apply(body: String, end: Double, post: String, pre: String, start: Double): Output = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+      inline def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPre(value: String): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      inline def setPre(value: String): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

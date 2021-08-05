@@ -12,8 +12,7 @@ object jasmineV1Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getJasmineV1Adapter(
+  inline def getJasmineV1Adapter(
     scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jasmine.Env */ js.Any
   ): js.Function2[
     /* name */ String, 

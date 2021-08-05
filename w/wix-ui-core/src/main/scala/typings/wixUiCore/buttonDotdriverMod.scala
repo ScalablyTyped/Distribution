@@ -33,8 +33,7 @@ object buttonDotdriverMod {
   }
   object ButtonDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Any,
       exists: () => Boolean,
       getTextContent: () => js.Any,
@@ -46,23 +45,17 @@ object buttonDotdriverMod {
       __obj.asInstanceOf[ButtonDriver]
     }
     
-    @scala.inline
-    implicit class ButtonDriverMutableBuilder[Self <: ButtonDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTextContent(value: () => js.Any): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
+      inline def setGetTextContent(value: () => js.Any): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetType(value: () => js.Any): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => js.Any): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStyles(value: GetBorderRadius): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: GetBorderRadius): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     }
   }
 }

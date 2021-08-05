@@ -36,8 +36,7 @@ object typesCorsruleMod {
   }
   object CORSRule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AllowedMethods: js.Array[String] | Iterable[String],
       AllowedOrigins: js.Array[String] | Iterable[String]
     ): CORSRule = {
@@ -45,44 +44,31 @@ object typesCorsruleMod {
       __obj.asInstanceOf[CORSRule]
     }
     
-    @scala.inline
-    implicit class CORSRuleMutableBuilder[Self <: CORSRule] (val x: Self) extends AnyVal {
+    extension [Self <: CORSRule](x: Self) {
       
-      @scala.inline
-      def setAllowedHeaders(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
+      inline def setAllowedHeaders(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedHeadersUndefined: Self = StObject.set(x, "AllowedHeaders", js.undefined)
+      inline def setAllowedHeadersUndefined: Self = StObject.set(x, "AllowedHeaders", js.undefined)
       
-      @scala.inline
-      def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "AllowedHeaders", js.Array(value :_*))
+      inline def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "AllowedHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedMethods(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AllowedMethods", value.asInstanceOf[js.Any])
+      inline def setAllowedMethods(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AllowedMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedMethodsVarargs(value: String*): Self = StObject.set(x, "AllowedMethods", js.Array(value :_*))
+      inline def setAllowedMethodsVarargs(value: String*): Self = StObject.set(x, "AllowedMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedOrigins(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AllowedOrigins", value.asInstanceOf[js.Any])
+      inline def setAllowedOrigins(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AllowedOrigins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedOriginsVarargs(value: String*): Self = StObject.set(x, "AllowedOrigins", js.Array(value :_*))
+      inline def setAllowedOriginsVarargs(value: String*): Self = StObject.set(x, "AllowedOrigins", js.Array(value :_*))
       
-      @scala.inline
-      def setExposeHeaders(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "ExposeHeaders", value.asInstanceOf[js.Any])
+      inline def setExposeHeaders(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "ExposeHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeHeadersUndefined: Self = StObject.set(x, "ExposeHeaders", js.undefined)
+      inline def setExposeHeadersUndefined: Self = StObject.set(x, "ExposeHeaders", js.undefined)
       
-      @scala.inline
-      def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "ExposeHeaders", js.Array(value :_*))
+      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "ExposeHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "MaxAgeSeconds", value.asInstanceOf[js.Any])
+      inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "MaxAgeSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeSecondsUndefined: Self = StObject.set(x, "MaxAgeSeconds", js.undefined)
+      inline def setMaxAgeSecondsUndefined: Self = StObject.set(x, "MaxAgeSeconds", js.undefined)
     }
   }
   
@@ -116,44 +102,32 @@ object typesCorsruleMod {
   }
   object UnmarshalledCORSRule {
     
-    @scala.inline
-    def apply(AllowedMethods: js.Array[String], AllowedOrigins: js.Array[String]): UnmarshalledCORSRule = {
+    inline def apply(AllowedMethods: js.Array[String], AllowedOrigins: js.Array[String]): UnmarshalledCORSRule = {
       val __obj = js.Dynamic.literal(AllowedMethods = AllowedMethods.asInstanceOf[js.Any], AllowedOrigins = AllowedOrigins.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledCORSRule]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCORSRuleMutableBuilder[Self <: UnmarshalledCORSRule] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCORSRule](x: Self) {
       
-      @scala.inline
-      def setAllowedHeaders(value: js.Array[String]): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
+      inline def setAllowedHeaders(value: js.Array[String]): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedHeadersUndefined: Self = StObject.set(x, "AllowedHeaders", js.undefined)
+      inline def setAllowedHeadersUndefined: Self = StObject.set(x, "AllowedHeaders", js.undefined)
       
-      @scala.inline
-      def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "AllowedHeaders", js.Array(value :_*))
+      inline def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "AllowedHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedMethods(value: js.Array[String]): Self = StObject.set(x, "AllowedMethods", value.asInstanceOf[js.Any])
+      inline def setAllowedMethods(value: js.Array[String]): Self = StObject.set(x, "AllowedMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedMethodsVarargs(value: String*): Self = StObject.set(x, "AllowedMethods", js.Array(value :_*))
+      inline def setAllowedMethodsVarargs(value: String*): Self = StObject.set(x, "AllowedMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedOrigins(value: js.Array[String]): Self = StObject.set(x, "AllowedOrigins", value.asInstanceOf[js.Any])
+      inline def setAllowedOrigins(value: js.Array[String]): Self = StObject.set(x, "AllowedOrigins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedOriginsVarargs(value: String*): Self = StObject.set(x, "AllowedOrigins", js.Array(value :_*))
+      inline def setAllowedOriginsVarargs(value: String*): Self = StObject.set(x, "AllowedOrigins", js.Array(value :_*))
       
-      @scala.inline
-      def setExposeHeaders(value: js.Array[String]): Self = StObject.set(x, "ExposeHeaders", value.asInstanceOf[js.Any])
+      inline def setExposeHeaders(value: js.Array[String]): Self = StObject.set(x, "ExposeHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeHeadersUndefined: Self = StObject.set(x, "ExposeHeaders", js.undefined)
+      inline def setExposeHeadersUndefined: Self = StObject.set(x, "ExposeHeaders", js.undefined)
       
-      @scala.inline
-      def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "ExposeHeaders", js.Array(value :_*))
+      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "ExposeHeaders", js.Array(value :_*))
     }
   }
 }

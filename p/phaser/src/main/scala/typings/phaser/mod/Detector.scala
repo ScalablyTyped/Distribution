@@ -32,8 +32,7 @@ object Detector {
     * @return {bool} `true` if collision can occur
     */
   /* static member */
-  @scala.inline
-  def canCollide(filterA: ICollisionFilter, filterB: ICollisionFilter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canCollide")(filterA.asInstanceOf[js.Any], filterB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def canCollide(filterA: ICollisionFilter, filterB: ICollisionFilter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canCollide")(filterA.asInstanceOf[js.Any], filterB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Finds all collisions given a list of pairs.
@@ -43,6 +42,5 @@ object Detector {
     * @return {ICollisionData[]} collisions
     */
   /* static member */
-  @scala.inline
-  def collisions(broadphasePairs: js.Array[IPair], engine: typings.phaser.MatterJS.Engine): js.Array[ICollisionData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collisions")(broadphasePairs.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[js.Array[ICollisionData]]
+  inline def collisions(broadphasePairs: js.Array[IPair], engine: typings.phaser.MatterJS.Engine): js.Array[ICollisionData] = (^.asInstanceOf[js.Dynamic].applyDynamic("collisions")(broadphasePairs.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[js.Array[ICollisionData]]
 }

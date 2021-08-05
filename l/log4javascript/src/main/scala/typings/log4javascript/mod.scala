@@ -929,8 +929,7 @@ object mod {
     @JSImport("log4javascript", "PatternLayout.ABSOLUTETIME_DATEFORMAT")
     @js.native
     def ABSOLUTETIME_DATEFORMAT: String = js.native
-    @scala.inline
-    def ABSOLUTETIME_DATEFORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTETIME_DATEFORMAT")(x.asInstanceOf[js.Any])
+    inline def ABSOLUTETIME_DATEFORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTETIME_DATEFORMAT")(x.asInstanceOf[js.Any])
     
     /**
     	 * Built-in date format, equivalent to dd MMM YYYY HH:mm:ss,SSS.
@@ -938,8 +937,7 @@ object mod {
     @JSImport("log4javascript", "PatternLayout.DATETIME_DATEFORMAT")
     @js.native
     def DATETIME_DATEFORMAT: String = js.native
-    @scala.inline
-    def DATETIME_DATEFORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATETIME_DATEFORMAT")(x.asInstanceOf[js.Any])
+    inline def DATETIME_DATEFORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATETIME_DATEFORMAT")(x.asInstanceOf[js.Any])
     
     /**
     	 * Built-in conversion pattern, equivalent to %m%n.
@@ -947,8 +945,7 @@ object mod {
     @JSImport("log4javascript", "PatternLayout.DEFAULT_CONVERSION_PATTERN")
     @js.native
     def DEFAULT_CONVERSION_PATTERN: String = js.native
-    @scala.inline
-    def DEFAULT_CONVERSION_PATTERN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_CONVERSION_PATTERN")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_CONVERSION_PATTERN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_CONVERSION_PATTERN")(x.asInstanceOf[js.Any])
     
     /**
     	 * Built-in date format (and also the default), equivalent to yyyy-MM-dd HH:mm:ss,SSS.
@@ -956,8 +953,7 @@ object mod {
     @JSImport("log4javascript", "PatternLayout.ISO8601_DATEFORMAT")
     @js.native
     def ISO8601_DATEFORMAT: String = js.native
-    @scala.inline
-    def ISO8601_DATEFORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO8601_DATEFORMAT")(x.asInstanceOf[js.Any])
+    inline def ISO8601_DATEFORMAT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO8601_DATEFORMAT")(x.asInstanceOf[js.Any])
     
     /**
     	 * Built-in conversion pattern, equivalent to %r %p %c - %m%n.
@@ -965,8 +961,7 @@ object mod {
     @JSImport("log4javascript", "PatternLayout.TTCC_CONVERSION_PATTERN")
     @js.native
     def TTCC_CONVERSION_PATTERN: String = js.native
-    @scala.inline
-    def TTCC_CONVERSION_PATTERN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TTCC_CONVERSION_PATTERN")(x.asInstanceOf[js.Any])
+    inline def TTCC_CONVERSION_PATTERN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TTCC_CONVERSION_PATTERN")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("log4javascript", "PopUpAppender")
@@ -1288,34 +1283,25 @@ object mod {
     def this(combineMessages: Boolean) = this()
   }
   
-  @scala.inline
-  def addEventListener(
+  inline def addEventListener(
     eventType: String,
     listener: js.Function3[/* sender */ js.Any, /* eventType */ String, /* eventArgs */ js.Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def dispatchEvent(eventType: String, eventArgs: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventType.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dispatchEvent(eventType: String, eventArgs: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventType.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def evalInScope(expr: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("evalInScope")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def evalInScope(expr: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("evalInScope")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getDefaultLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLogger")().asInstanceOf[Logger]
+  inline def getDefaultLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLogger")().asInstanceOf[Logger]
   
-  @scala.inline
-  def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
-  @scala.inline
-  def getLogger(loggerName: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(loggerName.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
+  inline def getLogger(loggerName: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(loggerName.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
-  @scala.inline
-  def getNullLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getNullLogger")().asInstanceOf[Logger]
+  inline def getNullLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getNullLogger")().asInstanceOf[Logger]
   
-  @scala.inline
-  def getRootLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootLogger")().asInstanceOf[Logger]
+  inline def getRootLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootLogger")().asInstanceOf[Logger]
   
-  @scala.inline
-  def isEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")().asInstanceOf[Boolean]
+  inline def isEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")().asInstanceOf[Boolean]
   
   object logLog {
     
@@ -1323,46 +1309,32 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def debug(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def debug(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def displayDebug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("displayDebug")().asInstanceOf[Unit]
+    inline def displayDebug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("displayDebug")().asInstanceOf[Unit]
     
-    @scala.inline
-    def error(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def error(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def error(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def error(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setAlertAllErrors(alertAllErrors: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAlertAllErrors")(alertAllErrors.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setAlertAllErrors(alertAllErrors: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAlertAllErrors")(alertAllErrors.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setQuietMode(quietMode: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setQuietMode")(quietMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setQuietMode(quietMode: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setQuietMode")(quietMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def warn(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def warn(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def removeEventListener(
+  inline def removeEventListener(
     eventType: String,
     listener: js.Function3[/* sender */ js.Any, /* eventType */ String, /* eventArgs */ js.Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def resetConfiguration(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetConfiguration")().asInstanceOf[Unit]
+  inline def resetConfiguration(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetConfiguration")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setEventTypes(eventTypes: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEventTypes")(eventTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEventTypes(eventTypes: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEventTypes")(eventTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setShowStackTraces(show: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShowStackTraces")(show.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setShowStackTraces(show: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShowStackTraces")(show.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

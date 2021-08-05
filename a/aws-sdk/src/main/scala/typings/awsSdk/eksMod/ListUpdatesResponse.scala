@@ -18,28 +18,21 @@ trait ListUpdatesResponse extends StObject {
 }
 object ListUpdatesResponse {
   
-  @scala.inline
-  def apply(): ListUpdatesResponse = {
+  inline def apply(): ListUpdatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUpdatesResponse]
   }
   
-  @scala.inline
-  implicit class ListUpdatesResponseMutableBuilder[Self <: ListUpdatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUpdatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setUpdateIds(value: StringList): Self = StObject.set(x, "updateIds", value.asInstanceOf[js.Any])
+    inline def setUpdateIds(value: StringList): Self = StObject.set(x, "updateIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateIdsUndefined: Self = StObject.set(x, "updateIds", js.undefined)
+    inline def setUpdateIdsUndefined: Self = StObject.set(x, "updateIds", js.undefined)
     
-    @scala.inline
-    def setUpdateIdsVarargs(value: String*): Self = StObject.set(x, "updateIds", js.Array(value :_*))
+    inline def setUpdateIdsVarargs(value: String*): Self = StObject.set(x, "updateIds", js.Array(value :_*))
   }
 }

@@ -11,19 +11,15 @@ trait UseGlobalFiltersColumnOptions[D /* <: js.Object */] extends StObject {
 }
 object UseGlobalFiltersColumnOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseGlobalFiltersColumnOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseGlobalFiltersColumnOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseGlobalFiltersColumnOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseGlobalFiltersColumnOptionsMutableBuilder[Self <: UseGlobalFiltersColumnOptions[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersColumnOptions[D]) extends AnyVal {
+  extension [Self <: UseGlobalFiltersColumnOptions[?], D /* <: js.Object */](x: Self & UseGlobalFiltersColumnOptions[D]) {
     
-    @scala.inline
-    def setDisableGlobalFilter(value: Boolean): Self = StObject.set(x, "disableGlobalFilter", value.asInstanceOf[js.Any])
+    inline def setDisableGlobalFilter(value: Boolean): Self = StObject.set(x, "disableGlobalFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableGlobalFilterUndefined: Self = StObject.set(x, "disableGlobalFilter", js.undefined)
+    inline def setDisableGlobalFilterUndefined: Self = StObject.set(x, "disableGlobalFilter", js.undefined)
   }
 }

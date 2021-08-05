@@ -138,26 +138,20 @@ object milkcocoa {
   }
   object DataStoreCallbackData {
     
-    @scala.inline
-    def apply(err: String, id: String, path: String, value: js.Any): DataStoreCallbackData = {
+    inline def apply(err: String, id: String, path: String, value: js.Any): DataStoreCallbackData = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataStoreCallbackData]
     }
     
-    @scala.inline
-    implicit class DataStoreCallbackDataMutableBuilder[Self <: DataStoreCallbackData] (val x: Self) extends AnyVal {
+    extension [Self <: DataStoreCallbackData](x: Self) {
       
-      @scala.inline
-      def setErr(value: String): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: String): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,8 +168,7 @@ object milkcocoa {
   }
   object Query {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       done: js.Function1[/* data */ js.Any, Unit] => Unit,
       limit: Double => Query,
       skip: Double => Query,
@@ -185,20 +178,15 @@ object milkcocoa {
       __obj.asInstanceOf[Query]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+    extension [Self <: Query](x: Self) {
       
-      @scala.inline
-      def setDone(value: js.Function1[/* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+      inline def setDone(value: js.Function1[/* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLimit(value: Double => Query): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
+      inline def setLimit(value: Double => Query): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkip(value: Double => Query): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+      inline def setSkip(value: Double => Query): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSort(value: String => Query): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+      inline def setSort(value: String => Query): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     }
   }
   
@@ -210,20 +198,16 @@ object milkcocoa {
   }
   object User {
     
-    @scala.inline
-    def apply(email: String, id: String): User = {
+    inline def apply(email: String, id: String): User = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

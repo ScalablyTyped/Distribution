@@ -10,16 +10,13 @@ trait IOrientationSensorStatics extends StObject {
 }
 object IOrientationSensorStatics {
   
-  @scala.inline
-  def apply(getDefault: () => OrientationSensor): IOrientationSensorStatics = {
+  inline def apply(getDefault: () => OrientationSensor): IOrientationSensorStatics = {
     val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
     __obj.asInstanceOf[IOrientationSensorStatics]
   }
   
-  @scala.inline
-  implicit class IOrientationSensorStaticsMutableBuilder[Self <: IOrientationSensorStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IOrientationSensorStatics](x: Self) {
     
-    @scala.inline
-    def setGetDefault(value: () => OrientationSensor): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+    inline def setGetDefault(value: () => OrientationSensor): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }
 }

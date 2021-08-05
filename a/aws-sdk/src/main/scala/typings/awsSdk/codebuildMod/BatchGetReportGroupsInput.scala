@@ -13,19 +13,15 @@ trait BatchGetReportGroupsInput extends StObject {
 }
 object BatchGetReportGroupsInput {
   
-  @scala.inline
-  def apply(reportGroupArns: ReportGroupArns): BatchGetReportGroupsInput = {
+  inline def apply(reportGroupArns: ReportGroupArns): BatchGetReportGroupsInput = {
     val __obj = js.Dynamic.literal(reportGroupArns = reportGroupArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetReportGroupsInput]
   }
   
-  @scala.inline
-  implicit class BatchGetReportGroupsInputMutableBuilder[Self <: BatchGetReportGroupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetReportGroupsInput](x: Self) {
     
-    @scala.inline
-    def setReportGroupArns(value: ReportGroupArns): Self = StObject.set(x, "reportGroupArns", value.asInstanceOf[js.Any])
+    inline def setReportGroupArns(value: ReportGroupArns): Self = StObject.set(x, "reportGroupArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportGroupArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportGroupArns", js.Array(value :_*))
+    inline def setReportGroupArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportGroupArns", js.Array(value :_*))
   }
 }

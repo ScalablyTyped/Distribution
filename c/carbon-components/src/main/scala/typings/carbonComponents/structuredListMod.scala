@@ -45,8 +45,7 @@ object structuredListMod {
     @JSImport("carbon-components/components/structured-list/structured-list", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -68,8 +67,7 @@ object structuredListMod {
   }
   object StructuredList {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _direction: js.Any => js.Any,
       _getInput: js.Any => js.Any,
       _handleClick: js.Any => Unit,
@@ -82,29 +80,21 @@ object structuredListMod {
       __obj.asInstanceOf[StructuredList]
     }
     
-    @scala.inline
-    implicit class StructuredListMutableBuilder[Self <: StructuredList] (val x: Self) extends AnyVal {
+    extension [Self <: StructuredList](x: Self) {
       
-      @scala.inline
-      def set_direction(value: js.Any => js.Any): Self = StObject.set(x, "_direction", js.Any.fromFunction1(value))
+      inline def set_direction(value: js.Any => js.Any): Self = StObject.set(x, "_direction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_getInput(value: js.Any => js.Any): Self = StObject.set(x, "_getInput", js.Any.fromFunction1(value))
+      inline def set_getInput(value: js.Any => js.Any): Self = StObject.set(x, "_getInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleClick(value: js.Any => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
+      inline def set_handleClick(value: js.Any => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleInputChecked(value: js.Any => Unit): Self = StObject.set(x, "_handleInputChecked", js.Any.fromFunction1(value))
+      inline def set_handleInputChecked(value: js.Any => Unit): Self = StObject.set(x, "_handleInputChecked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleKeydownArrow(value: js.Any => Unit): Self = StObject.set(x, "_handleKeydownArrow", js.Any.fromFunction1(value))
+      inline def set_handleKeydownArrow(value: js.Any => Unit): Self = StObject.set(x, "_handleKeydownArrow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleKeydownChecked(value: js.Any => Unit): Self = StObject.set(x, "_handleKeydownChecked", js.Any.fromFunction1(value))
+      inline def set_handleKeydownChecked(value: js.Any => Unit): Self = StObject.set(x, "_handleKeydownChecked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_nextIndex(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "_nextIndex", js.Any.fromFunction3(value))
+      inline def set_nextIndex(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "_nextIndex", js.Any.fromFunction3(value))
     }
   }
 }

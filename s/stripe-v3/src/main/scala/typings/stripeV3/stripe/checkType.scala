@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait checkType extends StObject
 object checkType {
   
-  @scala.inline
-  def fail: typings.stripeV3.stripeV3Strings.fail = "fail".asInstanceOf[typings.stripeV3.stripeV3Strings.fail]
+  inline def fail: typings.stripeV3.stripeV3Strings.fail = "fail".asInstanceOf[typings.stripeV3.stripeV3Strings.fail]
   
-  @scala.inline
-  def pass: typings.stripeV3.stripeV3Strings.pass = "pass".asInstanceOf[typings.stripeV3.stripeV3Strings.pass]
+  inline def pass: typings.stripeV3.stripeV3Strings.pass = "pass".asInstanceOf[typings.stripeV3.stripeV3Strings.pass]
   
-  @scala.inline
-  def unavailable: typings.stripeV3.stripeV3Strings.unavailable = "unavailable".asInstanceOf[typings.stripeV3.stripeV3Strings.unavailable]
+  inline def unavailable: typings.stripeV3.stripeV3Strings.unavailable = "unavailable".asInstanceOf[typings.stripeV3.stripeV3Strings.unavailable]
   
-  @scala.inline
-  def unchecked: typings.stripeV3.stripeV3Strings.unchecked = "unchecked".asInstanceOf[typings.stripeV3.stripeV3Strings.unchecked]
+  inline def unchecked: typings.stripeV3.stripeV3Strings.unchecked = "unchecked".asInstanceOf[typings.stripeV3.stripeV3Strings.unchecked]
 }

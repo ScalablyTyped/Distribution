@@ -10,16 +10,13 @@ trait TakeResponseBodyAsStreamRequest extends StObject {
 }
 object TakeResponseBodyAsStreamRequest {
   
-  @scala.inline
-  def apply(requestId: RequestId): TakeResponseBodyAsStreamRequest = {
+  inline def apply(requestId: RequestId): TakeResponseBodyAsStreamRequest = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TakeResponseBodyAsStreamRequest]
   }
   
-  @scala.inline
-  implicit class TakeResponseBodyAsStreamRequestMutableBuilder[Self <: TakeResponseBodyAsStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TakeResponseBodyAsStreamRequest](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

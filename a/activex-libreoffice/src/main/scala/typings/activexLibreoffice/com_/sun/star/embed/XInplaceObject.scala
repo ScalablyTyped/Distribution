@@ -48,8 +48,7 @@ trait XInplaceObject
 }
 object XInplaceObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     enableModeless: Boolean => Unit,
     queryInterface: `type` => js.Any,
@@ -61,16 +60,12 @@ object XInplaceObject {
     __obj.asInstanceOf[XInplaceObject]
   }
   
-  @scala.inline
-  implicit class XInplaceObjectMutableBuilder[Self <: XInplaceObject] (val x: Self) extends AnyVal {
+  extension [Self <: XInplaceObject](x: Self) {
     
-    @scala.inline
-    def setEnableModeless(value: Boolean => Unit): Self = StObject.set(x, "enableModeless", js.Any.fromFunction1(value))
+    inline def setEnableModeless(value: Boolean => Unit): Self = StObject.set(x, "enableModeless", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetObjectRectangles(value: (Rectangle, Rectangle) => Unit): Self = StObject.set(x, "setObjectRectangles", js.Any.fromFunction2(value))
+    inline def setSetObjectRectangles(value: (Rectangle, Rectangle) => Unit): Self = StObject.set(x, "setObjectRectangles", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTranslateAccelerators(value: SeqEquiv[KeyEvent] => Unit): Self = StObject.set(x, "translateAccelerators", js.Any.fromFunction1(value))
+    inline def setTranslateAccelerators(value: SeqEquiv[KeyEvent] => Unit): Self = StObject.set(x, "translateAccelerators", js.Any.fromFunction1(value))
   }
 }

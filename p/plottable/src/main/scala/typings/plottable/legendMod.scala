@@ -25,33 +25,33 @@ object legendMod {
     
     /* private */ def _buildLegendTable(width: js.Any, height: js.Any): js.Any = js.native
     
-    var _colorScale: js.Any = js.native
+    /* private */ var _colorScale: js.Any = js.native
     
-    var _comparator: js.Any = js.native
+    /* private */ var _comparator: js.Any = js.native
     
-    var _formatter: js.Any = js.native
+    /* private */ var _formatter: js.Any = js.native
     
-    var _maxEntriesPerRow: js.Any = js.native
+    /* private */ var _maxEntriesPerRow: js.Any = js.native
     
-    var _maxLinesPerEntry: js.Any = js.native
+    /* private */ var _maxLinesPerEntry: js.Any = js.native
     
-    var _maxWidth: js.Any = js.native
+    /* private */ var _maxWidth: js.Any = js.native
     
-    var _measurer: js.Any = js.native
+    /* private */ var _measurer: js.Any = js.native
     
-    var _padding: js.Any = js.native
+    /* private */ var _padding: js.Any = js.native
     
-    var _redrawCallback: js.Any = js.native
+    /* private */ var _redrawCallback: js.Any = js.native
     
-    var _rowBottomPadding: js.Any = js.native
+    /* private */ var _rowBottomPadding: js.Any = js.native
     
-    var _symbolFactoryAccessor: js.Any = js.native
+    /* private */ var _symbolFactoryAccessor: js.Any = js.native
     
-    var _symbolOpacityAccessor: js.Any = js.native
+    /* private */ var _symbolOpacityAccessor: js.Any = js.native
     
-    var _wrapper: js.Any = js.native
+    /* private */ var _wrapper: js.Any = js.native
     
-    var _writer: js.Any = js.native
+    /* private */ var _writer: js.Any = js.native
     
     /**
       * Gets the Color Scale.
@@ -190,8 +190,7 @@ object legendMod {
     @JSImport("plottable/build/src/components/legend", "Legend.LEGEND_ENTRY_CLASS")
     @js.native
     def LEGEND_ENTRY_CLASS: String = js.native
-    @scala.inline
-    def LEGEND_ENTRY_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ENTRY_CLASS")(x.asInstanceOf[js.Any])
+    inline def LEGEND_ENTRY_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ENTRY_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each legend row
@@ -199,8 +198,7 @@ object legendMod {
     @JSImport("plottable/build/src/components/legend", "Legend.LEGEND_ROW_CLASS")
     @js.native
     def LEGEND_ROW_CLASS: String = js.native
-    @scala.inline
-    def LEGEND_ROW_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ROW_CLASS")(x.asInstanceOf[js.Any])
+    inline def LEGEND_ROW_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_ROW_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each legend symbol
@@ -208,7 +206,6 @@ object legendMod {
     @JSImport("plottable/build/src/components/legend", "Legend.LEGEND_SYMBOL_CLASS")
     @js.native
     def LEGEND_SYMBOL_CLASS: String = js.native
-    @scala.inline
-    def LEGEND_SYMBOL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_SYMBOL_CLASS")(x.asInstanceOf[js.Any])
+    inline def LEGEND_SYMBOL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_SYMBOL_CLASS")(x.asInstanceOf[js.Any])
   }
 }

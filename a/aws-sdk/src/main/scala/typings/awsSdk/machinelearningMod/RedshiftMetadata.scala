@@ -17,31 +17,23 @@ trait RedshiftMetadata extends StObject {
 }
 object RedshiftMetadata {
   
-  @scala.inline
-  def apply(): RedshiftMetadata = {
+  inline def apply(): RedshiftMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RedshiftMetadata]
   }
   
-  @scala.inline
-  implicit class RedshiftMetadataMutableBuilder[Self <: RedshiftMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftMetadata](x: Self) {
     
-    @scala.inline
-    def setDatabaseUserName(value: RedshiftDatabaseUsername): Self = StObject.set(x, "DatabaseUserName", value.asInstanceOf[js.Any])
+    inline def setDatabaseUserName(value: RedshiftDatabaseUsername): Self = StObject.set(x, "DatabaseUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUserNameUndefined: Self = StObject.set(x, "DatabaseUserName", js.undefined)
+    inline def setDatabaseUserNameUndefined: Self = StObject.set(x, "DatabaseUserName", js.undefined)
     
-    @scala.inline
-    def setRedshiftDatabase(value: RedshiftDatabase): Self = StObject.set(x, "RedshiftDatabase", value.asInstanceOf[js.Any])
+    inline def setRedshiftDatabase(value: RedshiftDatabase): Self = StObject.set(x, "RedshiftDatabase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftDatabaseUndefined: Self = StObject.set(x, "RedshiftDatabase", js.undefined)
+    inline def setRedshiftDatabaseUndefined: Self = StObject.set(x, "RedshiftDatabase", js.undefined)
     
-    @scala.inline
-    def setSelectSqlQuery(value: RedshiftSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
+    inline def setSelectSqlQuery(value: RedshiftSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectSqlQueryUndefined: Self = StObject.set(x, "SelectSqlQuery", js.undefined)
+    inline def setSelectSqlQueryUndefined: Self = StObject.set(x, "SelectSqlQuery", js.undefined)
   }
 }

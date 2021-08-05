@@ -31,8 +31,7 @@ trait FloatingObjectAlignmentPositionSettings extends StObject {
 }
 object FloatingObjectAlignmentPositionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     horizontalPositionAlignment: FloatingObjectHorizontalPositionAlignment,
     horizontalPositionType: FloatingObjectHorizontalPositionType,
     verticalPositionAlignment: FloatingObjectVerticalPositionAlignment,
@@ -42,19 +41,14 @@ object FloatingObjectAlignmentPositionSettings {
     __obj.asInstanceOf[FloatingObjectAlignmentPositionSettings]
   }
   
-  @scala.inline
-  implicit class FloatingObjectAlignmentPositionSettingsMutableBuilder[Self <: FloatingObjectAlignmentPositionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingObjectAlignmentPositionSettings](x: Self) {
     
-    @scala.inline
-    def setHorizontalPositionAlignment(value: FloatingObjectHorizontalPositionAlignment): Self = StObject.set(x, "horizontalPositionAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalPositionAlignment(value: FloatingObjectHorizontalPositionAlignment): Self = StObject.set(x, "horizontalPositionAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalPositionType(value: FloatingObjectHorizontalPositionType): Self = StObject.set(x, "horizontalPositionType", value.asInstanceOf[js.Any])
+    inline def setHorizontalPositionType(value: FloatingObjectHorizontalPositionType): Self = StObject.set(x, "horizontalPositionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalPositionAlignment(value: FloatingObjectVerticalPositionAlignment): Self = StObject.set(x, "verticalPositionAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalPositionAlignment(value: FloatingObjectVerticalPositionAlignment): Self = StObject.set(x, "verticalPositionAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalPositionType(value: FloatingObjectVerticalPositionType): Self = StObject.set(x, "verticalPositionType", value.asInstanceOf[js.Any])
+    inline def setVerticalPositionType(value: FloatingObjectVerticalPositionType): Self = StObject.set(x, "verticalPositionType", value.asInstanceOf[js.Any])
   }
 }

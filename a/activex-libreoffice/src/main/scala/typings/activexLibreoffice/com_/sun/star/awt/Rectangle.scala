@@ -21,25 +21,19 @@ trait Rectangle extends StObject {
 }
 object Rectangle {
   
-  @scala.inline
-  def apply(Height: Double, Width: Double, X: Double, Y: Double): Rectangle = {
+  inline def apply(Height: Double, Width: Double, X: Double, Y: Double): Rectangle = {
     val __obj = js.Dynamic.literal(Height = Height.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rectangle]
   }
   
-  @scala.inline
-  implicit class RectangleMutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
+  extension [Self <: Rectangle](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

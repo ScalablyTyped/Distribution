@@ -18,8 +18,7 @@ trait Array extends StObject {
 }
 object Array {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boolean: FunctionComponentBooleanT,
     button: FunctionComponentButtonTy,
     files: FunctionComponentFilesTyp,
@@ -30,22 +29,16 @@ object Array {
     __obj.asInstanceOf[Array]
   }
   
-  @scala.inline
-  implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
+  extension [Self <: Array](x: Self) {
     
-    @scala.inline
-    def setBoolean(value: FunctionComponentBooleanT): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: FunctionComponentBooleanT): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton(value: FunctionComponentButtonTy): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: FunctionComponentButtonTy): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: FunctionComponentFilesTyp): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: FunctionComponentFilesTyp): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: FunctionComponentOptionsT): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: FunctionComponentOptionsT): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: FunctionComponentSelectTy): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: FunctionComponentSelectTy): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
   }
 }

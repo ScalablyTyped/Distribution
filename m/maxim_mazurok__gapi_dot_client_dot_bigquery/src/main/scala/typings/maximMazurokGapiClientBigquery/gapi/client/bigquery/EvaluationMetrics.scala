@@ -26,49 +26,35 @@ trait EvaluationMetrics extends StObject {
 }
 object EvaluationMetrics {
   
-  @scala.inline
-  def apply(): EvaluationMetrics = {
+  inline def apply(): EvaluationMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EvaluationMetrics]
   }
   
-  @scala.inline
-  implicit class EvaluationMetricsMutableBuilder[Self <: EvaluationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluationMetrics](x: Self) {
     
-    @scala.inline
-    def setArimaForecastingMetrics(value: ArimaForecastingMetrics): Self = StObject.set(x, "arimaForecastingMetrics", value.asInstanceOf[js.Any])
+    inline def setArimaForecastingMetrics(value: ArimaForecastingMetrics): Self = StObject.set(x, "arimaForecastingMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArimaForecastingMetricsUndefined: Self = StObject.set(x, "arimaForecastingMetrics", js.undefined)
+    inline def setArimaForecastingMetricsUndefined: Self = StObject.set(x, "arimaForecastingMetrics", js.undefined)
     
-    @scala.inline
-    def setBinaryClassificationMetrics(value: BinaryClassificationMetrics): Self = StObject.set(x, "binaryClassificationMetrics", value.asInstanceOf[js.Any])
+    inline def setBinaryClassificationMetrics(value: BinaryClassificationMetrics): Self = StObject.set(x, "binaryClassificationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryClassificationMetricsUndefined: Self = StObject.set(x, "binaryClassificationMetrics", js.undefined)
+    inline def setBinaryClassificationMetricsUndefined: Self = StObject.set(x, "binaryClassificationMetrics", js.undefined)
     
-    @scala.inline
-    def setClusteringMetrics(value: ClusteringMetrics): Self = StObject.set(x, "clusteringMetrics", value.asInstanceOf[js.Any])
+    inline def setClusteringMetrics(value: ClusteringMetrics): Self = StObject.set(x, "clusteringMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusteringMetricsUndefined: Self = StObject.set(x, "clusteringMetrics", js.undefined)
+    inline def setClusteringMetricsUndefined: Self = StObject.set(x, "clusteringMetrics", js.undefined)
     
-    @scala.inline
-    def setMultiClassClassificationMetrics(value: MultiClassClassificationMetrics): Self = StObject.set(x, "multiClassClassificationMetrics", value.asInstanceOf[js.Any])
+    inline def setMultiClassClassificationMetrics(value: MultiClassClassificationMetrics): Self = StObject.set(x, "multiClassClassificationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiClassClassificationMetricsUndefined: Self = StObject.set(x, "multiClassClassificationMetrics", js.undefined)
+    inline def setMultiClassClassificationMetricsUndefined: Self = StObject.set(x, "multiClassClassificationMetrics", js.undefined)
     
-    @scala.inline
-    def setRankingMetrics(value: RankingMetrics): Self = StObject.set(x, "rankingMetrics", value.asInstanceOf[js.Any])
+    inline def setRankingMetrics(value: RankingMetrics): Self = StObject.set(x, "rankingMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankingMetricsUndefined: Self = StObject.set(x, "rankingMetrics", js.undefined)
+    inline def setRankingMetricsUndefined: Self = StObject.set(x, "rankingMetrics", js.undefined)
     
-    @scala.inline
-    def setRegressionMetrics(value: RegressionMetrics): Self = StObject.set(x, "regressionMetrics", value.asInstanceOf[js.Any])
+    inline def setRegressionMetrics(value: RegressionMetrics): Self = StObject.set(x, "regressionMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegressionMetricsUndefined: Self = StObject.set(x, "regressionMetrics", js.undefined)
+    inline def setRegressionMetricsUndefined: Self = StObject.set(x, "regressionMetrics", js.undefined)
   }
 }

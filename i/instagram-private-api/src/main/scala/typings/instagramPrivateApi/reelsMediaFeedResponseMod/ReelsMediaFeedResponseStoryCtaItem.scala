@@ -10,19 +10,15 @@ trait ReelsMediaFeedResponseStoryCtaItem extends StObject {
 }
 object ReelsMediaFeedResponseStoryCtaItem {
   
-  @scala.inline
-  def apply(links: js.Array[ReelsMediaFeedResponseLinksItem]): ReelsMediaFeedResponseStoryCtaItem = {
+  inline def apply(links: js.Array[ReelsMediaFeedResponseLinksItem]): ReelsMediaFeedResponseStoryCtaItem = {
     val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsMediaFeedResponseStoryCtaItem]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponseStoryCtaItemMutableBuilder[Self <: ReelsMediaFeedResponseStoryCtaItem] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponseStoryCtaItem](x: Self) {
     
-    @scala.inline
-    def setLinks(value: js.Array[ReelsMediaFeedResponseLinksItem]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[ReelsMediaFeedResponseLinksItem]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksVarargs(value: ReelsMediaFeedResponseLinksItem*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: ReelsMediaFeedResponseLinksItem*): Self = StObject.set(x, "links", js.Array(value :_*))
   }
 }

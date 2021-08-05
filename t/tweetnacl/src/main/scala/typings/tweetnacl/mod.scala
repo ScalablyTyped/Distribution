@@ -24,20 +24,16 @@ object mod extends Shortcut {
   }
   object BoxKeyPair {
     
-    @scala.inline
-    def apply(publicKey: Uint8Array, secretKey: Uint8Array): BoxKeyPair = {
+    inline def apply(publicKey: Uint8Array, secretKey: Uint8Array): BoxKeyPair = {
       val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoxKeyPair]
     }
     
-    @scala.inline
-    implicit class BoxKeyPairMutableBuilder[Self <: BoxKeyPair] (val x: Self) extends AnyVal {
+    extension [Self <: BoxKeyPair](x: Self) {
       
-      @scala.inline
-      def setPublicKey(value: Uint8Array): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: Uint8Array): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKey(value: Uint8Array): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: Uint8Array): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +45,16 @@ object mod extends Shortcut {
   }
   object SignKeyPair {
     
-    @scala.inline
-    def apply(publicKey: Uint8Array, secretKey: Uint8Array): SignKeyPair = {
+    inline def apply(publicKey: Uint8Array, secretKey: Uint8Array): SignKeyPair = {
       val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignKeyPair]
     }
     
-    @scala.inline
-    implicit class SignKeyPairMutableBuilder[Self <: SignKeyPair] (val x: Self) extends AnyVal {
+    extension [Self <: SignKeyPair](x: Self) {
       
-      @scala.inline
-      def setPublicKey(value: Uint8Array): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: Uint8Array): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKey(value: Uint8Array): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: Uint8Array): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,8 +147,7 @@ object mod extends Shortcut {
   }
   object nacl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       box: box,
       hash: hash,
       randomBytes: Double => Uint8Array,
@@ -170,32 +161,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[nacl]
     }
     
-    @scala.inline
-    implicit class naclMutableBuilder[Self <: nacl] (val x: Self) extends AnyVal {
+    extension [Self <: nacl](x: Self) {
       
-      @scala.inline
-      def setBox(value: box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+      inline def setBox(value: box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomBytes(value: Double => Uint8Array): Self = StObject.set(x, "randomBytes", js.Any.fromFunction1(value))
+      inline def setRandomBytes(value: Double => Uint8Array): Self = StObject.set(x, "randomBytes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScalarMult(value: scalarMult): Self = StObject.set(x, "scalarMult", value.asInstanceOf[js.Any])
+      inline def setScalarMult(value: scalarMult): Self = StObject.set(x, "scalarMult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretbox(value: secretbox): Self = StObject.set(x, "secretbox", value.asInstanceOf[js.Any])
+      inline def setSecretbox(value: secretbox): Self = StObject.set(x, "secretbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetPRNG(value: js.Function2[/* x */ Uint8Array, /* n */ Double, Unit] => Unit): Self = StObject.set(x, "setPRNG", js.Any.fromFunction1(value))
+      inline def setSetPRNG(value: js.Function2[/* x */ Uint8Array, /* n */ Double, Unit] => Unit): Self = StObject.set(x, "setPRNG", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSign(value: sign): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
+      inline def setSign(value: sign): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerify(value: (Uint8Array, Uint8Array) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+      inline def setVerify(value: (Uint8Array, Uint8Array) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
     }
   }
   

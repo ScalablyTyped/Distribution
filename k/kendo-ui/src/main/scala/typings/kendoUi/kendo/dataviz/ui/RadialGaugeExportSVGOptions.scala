@@ -10,19 +10,15 @@ trait RadialGaugeExportSVGOptions extends StObject {
 }
 object RadialGaugeExportSVGOptions {
   
-  @scala.inline
-  def apply(): RadialGaugeExportSVGOptions = {
+  inline def apply(): RadialGaugeExportSVGOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadialGaugeExportSVGOptions]
   }
   
-  @scala.inline
-  implicit class RadialGaugeExportSVGOptionsMutableBuilder[Self <: RadialGaugeExportSVGOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RadialGaugeExportSVGOptions](x: Self) {
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
   }
 }

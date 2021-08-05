@@ -21,25 +21,19 @@ trait ARGBColor extends StObject {
 }
 object ARGBColor {
   
-  @scala.inline
-  def apply(Alpha: ColorComponent, Blue: ColorComponent, Green: ColorComponent, Red: ColorComponent): ARGBColor = {
+  inline def apply(Alpha: ColorComponent, Blue: ColorComponent, Green: ColorComponent, Red: ColorComponent): ARGBColor = {
     val __obj = js.Dynamic.literal(Alpha = Alpha.asInstanceOf[js.Any], Blue = Blue.asInstanceOf[js.Any], Green = Green.asInstanceOf[js.Any], Red = Red.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARGBColor]
   }
   
-  @scala.inline
-  implicit class ARGBColorMutableBuilder[Self <: ARGBColor] (val x: Self) extends AnyVal {
+  extension [Self <: ARGBColor](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: ColorComponent): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: ColorComponent): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlue(value: ColorComponent): Self = StObject.set(x, "Blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: ColorComponent): Self = StObject.set(x, "Blue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreen(value: ColorComponent): Self = StObject.set(x, "Green", value.asInstanceOf[js.Any])
+    inline def setGreen(value: ColorComponent): Self = StObject.set(x, "Green", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRed(value: ColorComponent): Self = StObject.set(x, "Red", value.asInstanceOf[js.Any])
+    inline def setRed(value: ColorComponent): Self = StObject.set(x, "Red", value.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecommendedTarget extends StObject
 object RecommendedTarget {
   
-  @scala.inline
-  def blank: typings.vkOpenapi.vkOpenapiStrings.blank = "blank".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.blank]
+  inline def blank: typings.vkOpenapi.vkOpenapiStrings.blank = "blank".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.blank]
   
-  @scala.inline
-  def parent: typings.vkOpenapi.vkOpenapiStrings.parent = "parent".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.parent]
+  inline def parent: typings.vkOpenapi.vkOpenapiStrings.parent = "parent".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.parent]
   
-  @scala.inline
-  def top: typings.vkOpenapi.vkOpenapiStrings.top = "top".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.top]
+  inline def top: typings.vkOpenapi.vkOpenapiStrings.top = "top".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.top]
 }

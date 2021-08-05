@@ -16,23 +16,18 @@ object outboundMessageOpenMod {
   }
   object ClientDetails {
     
-    @scala.inline
-    def apply(Company: String, Family: String, Name: String): ClientDetails = {
+    inline def apply(Company: String, Family: String, Name: String): ClientDetails = {
       val __obj = js.Dynamic.literal(Company = Company.asInstanceOf[js.Any], Family = Family.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientDetails]
     }
     
-    @scala.inline
-    implicit class ClientDetailsMutableBuilder[Self <: ClientDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ClientDetails](x: Self) {
       
-      @scala.inline
-      def setCompany(value: String): Self = StObject.set(x, "Company", value.asInstanceOf[js.Any])
+      inline def setCompany(value: String): Self = StObject.set(x, "Company", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,62 +51,44 @@ object outboundMessageOpenMod {
   }
   object GeoLocation {
     
-    @scala.inline
-    def apply(): GeoLocation = {
+    inline def apply(): GeoLocation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeoLocation]
     }
     
-    @scala.inline
-    implicit class GeoLocationMutableBuilder[Self <: GeoLocation] (val x: Self) extends AnyVal {
+    extension [Self <: GeoLocation](x: Self) {
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "City", js.undefined)
+      inline def setCityUndefined: Self = StObject.set(x, "City", js.undefined)
       
-      @scala.inline
-      def setCoords(value: String): Self = StObject.set(x, "Coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: String): Self = StObject.set(x, "Coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordsUndefined: Self = StObject.set(x, "Coords", js.undefined)
+      inline def setCoordsUndefined: Self = StObject.set(x, "Coords", js.undefined)
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryISOCode(value: String): Self = StObject.set(x, "CountryISOCode", value.asInstanceOf[js.Any])
+      inline def setCountryISOCode(value: String): Self = StObject.set(x, "CountryISOCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryISOCodeUndefined: Self = StObject.set(x, "CountryISOCode", js.undefined)
+      inline def setCountryISOCodeUndefined: Self = StObject.set(x, "CountryISOCode", js.undefined)
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
       
-      @scala.inline
-      def setIP(value: String): Self = StObject.set(x, "IP", value.asInstanceOf[js.Any])
+      inline def setIP(value: String): Self = StObject.set(x, "IP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPUndefined: Self = StObject.set(x, "IP", js.undefined)
+      inline def setIPUndefined: Self = StObject.set(x, "IP", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionISOCode(value: String): Self = StObject.set(x, "RegionISOCode", value.asInstanceOf[js.Any])
+      inline def setRegionISOCode(value: String): Self = StObject.set(x, "RegionISOCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionISOCodeUndefined: Self = StObject.set(x, "RegionISOCode", js.undefined)
+      inline def setRegionISOCodeUndefined: Self = StObject.set(x, "RegionISOCode", js.undefined)
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
       
-      @scala.inline
-      def setZip(value: String): Self = StObject.set(x, "Zip", value.asInstanceOf[js.Any])
+      inline def setZip(value: String): Self = StObject.set(x, "Zip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZipUndefined: Self = StObject.set(x, "Zip", js.undefined)
+      inline def setZipUndefined: Self = StObject.set(x, "Zip", js.undefined)
     }
   }
   
@@ -143,8 +120,7 @@ object outboundMessageOpenMod {
   }
   object OpenEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Client: ClientDetails,
       Geo: GeoLocation,
       MessageID: String,
@@ -162,44 +138,31 @@ object outboundMessageOpenMod {
       __obj.asInstanceOf[OpenEvent]
     }
     
-    @scala.inline
-    implicit class OpenEventMutableBuilder[Self <: OpenEvent] (val x: Self) extends AnyVal {
+    extension [Self <: OpenEvent](x: Self) {
       
-      @scala.inline
-      def setClient(value: ClientDetails): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
+      inline def setClient(value: ClientDetails): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeo(value: GeoLocation): Self = StObject.set(x, "Geo", value.asInstanceOf[js.Any])
+      inline def setGeo(value: GeoLocation): Self = StObject.set(x, "Geo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
+      inline def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
+      inline def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOS(value: ClientDetails): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
+      inline def setOS(value: ClientDetails): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadSeconds(value: Double): Self = StObject.set(x, "ReadSeconds", value.asInstanceOf[js.Any])
+      inline def setReadSeconds(value: Double): Self = StObject.set(x, "ReadSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceivedAt(value: String): Self = StObject.set(x, "ReceivedAt", value.asInstanceOf[js.Any])
+      inline def setReceivedAt(value: String): Self = StObject.set(x, "ReceivedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipient(value: String): Self = StObject.set(x, "Recipient", value.asInstanceOf[js.Any])
+      inline def setRecipient(value: String): Self = StObject.set(x, "Recipient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordType(value: String): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
+      inline def setRecordType(value: String): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "UserAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "UserAgent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,23 +174,18 @@ object outboundMessageOpenMod {
   }
   object OutboundMessageOpens {
     
-    @scala.inline
-    def apply(Opens: js.Array[OpenEvent], TotalCount: Double): OutboundMessageOpens = {
+    inline def apply(Opens: js.Array[OpenEvent], TotalCount: Double): OutboundMessageOpens = {
       val __obj = js.Dynamic.literal(Opens = Opens.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutboundMessageOpens]
     }
     
-    @scala.inline
-    implicit class OutboundMessageOpensMutableBuilder[Self <: OutboundMessageOpens] (val x: Self) extends AnyVal {
+    extension [Self <: OutboundMessageOpens](x: Self) {
       
-      @scala.inline
-      def setOpens(value: js.Array[OpenEvent]): Self = StObject.set(x, "Opens", value.asInstanceOf[js.Any])
+      inline def setOpens(value: js.Array[OpenEvent]): Self = StObject.set(x, "Opens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpensVarargs(value: OpenEvent*): Self = StObject.set(x, "Opens", js.Array(value :_*))
+      inline def setOpensVarargs(value: OpenEvent*): Self = StObject.set(x, "Opens", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
 }

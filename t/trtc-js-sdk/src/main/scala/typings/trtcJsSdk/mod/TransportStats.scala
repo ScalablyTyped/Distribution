@@ -11,16 +11,13 @@ trait TransportStats extends StObject {
 }
 object TransportStats {
   
-  @scala.inline
-  def apply(rtt: Double): TransportStats = {
+  inline def apply(rtt: Double): TransportStats = {
     val __obj = js.Dynamic.literal(rtt = rtt.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportStats]
   }
   
-  @scala.inline
-  implicit class TransportStatsMutableBuilder[Self <: TransportStats] (val x: Self) extends AnyVal {
+  extension [Self <: TransportStats](x: Self) {
     
-    @scala.inline
-    def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
+    inline def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
   }
 }

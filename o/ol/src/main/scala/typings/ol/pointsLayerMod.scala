@@ -25,8 +25,7 @@ object pointsLayerMod {
   }
   object CustomAttribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callback: (typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], StringDictionary[js.Any]) => Double,
       name: String
     ): CustomAttribute = {
@@ -34,16 +33,13 @@ object pointsLayerMod {
       __obj.asInstanceOf[CustomAttribute]
     }
     
-    @scala.inline
-    implicit class CustomAttributeMutableBuilder[Self <: CustomAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: CustomAttribute](x: Self) {
       
-      @scala.inline
-      def setCallback(
+      inline def setCallback(
         value: (typings.ol.olFeatureMod.default[typings.ol.geometryMod.default], StringDictionary[js.Any]) => Double
       ): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,8 +53,7 @@ object pointsLayerMod {
   }
   object FeatureCacheItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default],
       geometry: typings.ol.geometryMod.default,
       properties: StringDictionary[js.Any]
@@ -67,17 +62,13 @@ object pointsLayerMod {
       __obj.asInstanceOf[FeatureCacheItem]
     }
     
-    @scala.inline
-    implicit class FeatureCacheItemMutableBuilder[Self <: FeatureCacheItem] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureCacheItem](x: Self) {
       
-      @scala.inline
-      def setFeature(value: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometry(value: typings.ol.geometryMod.default): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: typings.ol.geometryMod.default): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,56 +90,40 @@ object pointsLayerMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(fragmentShader: String, vertexShader: String): Options = {
+    inline def apply(fragmentShader: String, vertexShader: String): Options = {
       val __obj = js.Dynamic.literal(fragmentShader = fragmentShader.asInstanceOf[js.Any], vertexShader = vertexShader.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
+      inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitFragmentShader(value: String): Self = StObject.set(x, "hitFragmentShader", value.asInstanceOf[js.Any])
+      inline def setHitFragmentShader(value: String): Self = StObject.set(x, "hitFragmentShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitFragmentShaderUndefined: Self = StObject.set(x, "hitFragmentShader", js.undefined)
+      inline def setHitFragmentShaderUndefined: Self = StObject.set(x, "hitFragmentShader", js.undefined)
       
-      @scala.inline
-      def setHitVertexShader(value: String): Self = StObject.set(x, "hitVertexShader", value.asInstanceOf[js.Any])
+      inline def setHitVertexShader(value: String): Self = StObject.set(x, "hitVertexShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitVertexShaderUndefined: Self = StObject.set(x, "hitVertexShader", js.undefined)
+      inline def setHitVertexShaderUndefined: Self = StObject.set(x, "hitVertexShader", js.undefined)
       
-      @scala.inline
-      def setPostProcesses(value: js.Array[PostProcessesOptions]): Self = StObject.set(x, "postProcesses", value.asInstanceOf[js.Any])
+      inline def setPostProcesses(value: js.Array[PostProcessesOptions]): Self = StObject.set(x, "postProcesses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostProcessesUndefined: Self = StObject.set(x, "postProcesses", js.undefined)
+      inline def setPostProcessesUndefined: Self = StObject.set(x, "postProcesses", js.undefined)
       
-      @scala.inline
-      def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value :_*))
+      inline def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value :_*))
       
-      @scala.inline
-      def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
+      inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
       
-      @scala.inline
-      def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
+      inline def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
     }
   }
   

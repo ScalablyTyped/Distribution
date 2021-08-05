@@ -16,10 +16,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeMiddleware(swaggerObject: js.Any, callback: InitializeMiddlewareCallback20): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initializeMiddleware(swaggerObject: js.Any, resources: js.Array[Resource], callback: InitializeMiddlewareCallback12): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeMiddleware(swaggerObject: js.Any, callback: InitializeMiddlewareCallback20): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeMiddleware(swaggerObject: js.Any, resources: js.Array[Resource], callback: InitializeMiddlewareCallback12): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type InitializeMiddlewareCallback12 = js.Function1[/* middleware */ Middleware12, Unit]
   
@@ -69,23 +67,18 @@ object mod {
   }
   object OperationParameter {
     
-    @scala.inline
-    def apply(path: js.Array[String], schema: SwaggerParameterSchema): OperationParameter = {
+    inline def apply(path: js.Array[String], schema: SwaggerParameterSchema): OperationParameter = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[OperationParameter]
     }
     
-    @scala.inline
-    implicit class OperationParameterMutableBuilder[Self <: OperationParameter] (val x: Self) extends AnyVal {
+    extension [Self <: OperationParameter](x: Self) {
       
-      @scala.inline
-      def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setSchema(value: SwaggerParameterSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: SwaggerParameterSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,17 +88,14 @@ object mod {
   }
   object Resource {
     
-    @scala.inline
-    def apply(resourcePath: String): Resource = {
+    inline def apply(resourcePath: String): Resource = {
       val __obj = js.Dynamic.literal(resourcePath = resourcePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Resource]
     }
     
-    @scala.inline
-    implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+    extension [Self <: Resource](x: Self) {
       
-      @scala.inline
-      def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
+      inline def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,56 +121,40 @@ object mod {
   }
   object Swagger20Operation {
     
-    @scala.inline
-    def apply(responses: StringDictionary[Swagger20Response]): Swagger20Operation = {
+    inline def apply(responses: StringDictionary[Swagger20Response]): Swagger20Operation = {
       val __obj = js.Dynamic.literal(responses = responses.asInstanceOf[js.Any])
       __obj.asInstanceOf[Swagger20Operation]
     }
     
-    @scala.inline
-    implicit class Swagger20OperationMutableBuilder[Self <: Swagger20Operation] (val x: Self) extends AnyVal {
+    extension [Self <: Swagger20Operation](x: Self) {
       
-      @scala.inline
-      def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+      inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+      inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
       
-      @scala.inline
-      def setParameters(value: js.Array[SwaggerParameterSchema]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[SwaggerParameterSchema]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setParametersVarargs(value: SwaggerParameterSchema*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: SwaggerParameterSchema*): Self = StObject.set(x, "parameters", js.Array(value :_*))
       
-      @scala.inline
-      def setResponses(value: StringDictionary[Swagger20Response]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+      inline def setResponses(value: StringDictionary[Swagger20Response]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity(value: js.Array[Swagger20Security]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+      inline def setSecurity(value: js.Array[Swagger20Security]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      @scala.inline
-      def setSecurityVarargs(value: Swagger20Security*): Self = StObject.set(x, "security", js.Array(value :_*))
+      inline def setSecurityVarargs(value: Swagger20Security*): Self = StObject.set(x, "security", js.Array(value :_*))
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -198,26 +172,20 @@ object mod {
   }
   object Swagger20Response {
     
-    @scala.inline
-    def apply(): Swagger20Response = {
+    inline def apply(): Swagger20Response = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Swagger20Response]
     }
     
-    @scala.inline
-    implicit class Swagger20ResponseMutableBuilder[Self <: Swagger20Response] (val x: Self) extends AnyVal {
+    extension [Self <: Swagger20Response](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     }
   }
   
@@ -247,69 +215,49 @@ object mod {
   }
   object SwaggerParameterSchema {
     
-    @scala.inline
-    def apply(name: String, `type`: String): SwaggerParameterSchema = {
+    inline def apply(name: String, `type`: String): SwaggerParameterSchema = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwaggerParameterSchema]
     }
     
-    @scala.inline
-    implicit class SwaggerParameterSchemaMutableBuilder[Self <: SwaggerParameterSchema] (val x: Self) extends AnyVal {
+    extension [Self <: SwaggerParameterSchema](x: Self) {
       
-      @scala.inline
-      def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
+      inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
+      inline def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      @scala.inline
-      def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+      inline def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+      inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
       
-      @scala.inline
-      def setMinimum(value: String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+      inline def setMinimum(value: String): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+      inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamType(value: String): Self = StObject.set(x, "paramType", value.asInstanceOf[js.Any])
+      inline def setParamType(value: String): Self = StObject.set(x, "paramType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamTypeUndefined: Self = StObject.set(x, "paramType", js.undefined)
+      inline def setParamTypeUndefined: Self = StObject.set(x, "paramType", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -325,29 +273,22 @@ object mod {
   }
   object SwaggerRequestParameter {
     
-    @scala.inline
-    def apply[T](originalValue: js.Any, path: js.Array[String], schema: SwaggerParameterSchema, value: T): SwaggerRequestParameter[T] = {
+    inline def apply[T](originalValue: js.Any, path: js.Array[String], schema: SwaggerParameterSchema, value: T): SwaggerRequestParameter[T] = {
       val __obj = js.Dynamic.literal(originalValue = originalValue.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwaggerRequestParameter[T]]
     }
     
-    @scala.inline
-    implicit class SwaggerRequestParameterMutableBuilder[Self <: SwaggerRequestParameter[?], T] (val x: Self & SwaggerRequestParameter[T]) extends AnyVal {
+    extension [Self <: SwaggerRequestParameter[?], T](x: Self & SwaggerRequestParameter[T]) {
       
-      @scala.inline
-      def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+      inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setSchema(value: SwaggerParameterSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: SwaggerParameterSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -370,35 +311,26 @@ object mod {
   }
   object SwaggerRouter12Options {
     
-    @scala.inline
-    def apply(): SwaggerRouter12Options = {
+    inline def apply(): SwaggerRouter12Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwaggerRouter12Options]
     }
     
-    @scala.inline
-    implicit class SwaggerRouter12OptionsMutableBuilder[Self <: SwaggerRouter12Options] (val x: Self) extends AnyVal {
+    extension [Self <: SwaggerRouter12Options](x: Self) {
       
-      @scala.inline
-      def setControllers(value: SwaggerRouter12OptionsControllers | String | js.Array[String]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
+      inline def setControllers(value: SwaggerRouter12OptionsControllers | String | js.Array[String]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
+      inline def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
       
-      @scala.inline
-      def setControllersVarargs(value: String*): Self = StObject.set(x, "controllers", js.Array(value :_*))
+      inline def setControllersVarargs(value: String*): Self = StObject.set(x, "controllers", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreMissingHandlers(value: Boolean): Self = StObject.set(x, "ignoreMissingHandlers", value.asInstanceOf[js.Any])
+      inline def setIgnoreMissingHandlers(value: Boolean): Self = StObject.set(x, "ignoreMissingHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreMissingHandlersUndefined: Self = StObject.set(x, "ignoreMissingHandlers", js.undefined)
+      inline def setIgnoreMissingHandlersUndefined: Self = StObject.set(x, "ignoreMissingHandlers", js.undefined)
       
-      @scala.inline
-      def setUseStubs(value: Boolean): Self = StObject.set(x, "useStubs", value.asInstanceOf[js.Any])
+      inline def setUseStubs(value: Boolean): Self = StObject.set(x, "useStubs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseStubsUndefined: Self = StObject.set(x, "useStubs", js.undefined)
+      inline def setUseStubsUndefined: Self = StObject.set(x, "useStubs", js.undefined)
     }
   }
   
@@ -421,35 +353,26 @@ object mod {
   }
   object SwaggerRouter20Options {
     
-    @scala.inline
-    def apply(): SwaggerRouter20Options = {
+    inline def apply(): SwaggerRouter20Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwaggerRouter20Options]
     }
     
-    @scala.inline
-    implicit class SwaggerRouter20OptionsMutableBuilder[Self <: SwaggerRouter20Options] (val x: Self) extends AnyVal {
+    extension [Self <: SwaggerRouter20Options](x: Self) {
       
-      @scala.inline
-      def setControllers(value: SwaggerRouter20OptionsControllers | String | js.Array[String]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
+      inline def setControllers(value: SwaggerRouter20OptionsControllers | String | js.Array[String]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
+      inline def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
       
-      @scala.inline
-      def setControllersVarargs(value: String*): Self = StObject.set(x, "controllers", js.Array(value :_*))
+      inline def setControllersVarargs(value: String*): Self = StObject.set(x, "controllers", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreMissingHandlers(value: Boolean): Self = StObject.set(x, "ignoreMissingHandlers", value.asInstanceOf[js.Any])
+      inline def setIgnoreMissingHandlers(value: Boolean): Self = StObject.set(x, "ignoreMissingHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreMissingHandlersUndefined: Self = StObject.set(x, "ignoreMissingHandlers", js.undefined)
+      inline def setIgnoreMissingHandlersUndefined: Self = StObject.set(x, "ignoreMissingHandlers", js.undefined)
       
-      @scala.inline
-      def setUseStubs(value: Boolean): Self = StObject.set(x, "useStubs", value.asInstanceOf[js.Any])
+      inline def setUseStubs(value: Boolean): Self = StObject.set(x, "useStubs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseStubsUndefined: Self = StObject.set(x, "useStubs", js.undefined)
+      inline def setUseStubsUndefined: Self = StObject.set(x, "useStubs", js.undefined)
     }
   }
   
@@ -469,38 +392,28 @@ object mod {
   }
   object SwaggerSecurityError {
     
-    @scala.inline
-    def apply(): SwaggerSecurityError = {
+    inline def apply(): SwaggerSecurityError = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwaggerSecurityError]
     }
     
-    @scala.inline
-    implicit class SwaggerSecurityErrorMutableBuilder[Self <: SwaggerSecurityError] (val x: Self) extends AnyVal {
+    extension [Self <: SwaggerSecurityError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
   
@@ -530,44 +443,32 @@ object mod {
   }
   object SwaggerUiOptions {
     
-    @scala.inline
-    def apply(): SwaggerUiOptions = {
+    inline def apply(): SwaggerUiOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwaggerUiOptions]
     }
     
-    @scala.inline
-    implicit class SwaggerUiOptionsMutableBuilder[Self <: SwaggerUiOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SwaggerUiOptions](x: Self) {
       
-      @scala.inline
-      def setApiDocs(value: String): Self = StObject.set(x, "apiDocs", value.asInstanceOf[js.Any])
+      inline def setApiDocs(value: String): Self = StObject.set(x, "apiDocs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiDocsPrefix(value: String): Self = StObject.set(x, "apiDocsPrefix", value.asInstanceOf[js.Any])
+      inline def setApiDocsPrefix(value: String): Self = StObject.set(x, "apiDocsPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiDocsPrefixUndefined: Self = StObject.set(x, "apiDocsPrefix", js.undefined)
+      inline def setApiDocsPrefixUndefined: Self = StObject.set(x, "apiDocsPrefix", js.undefined)
       
-      @scala.inline
-      def setApiDocsUndefined: Self = StObject.set(x, "apiDocs", js.undefined)
+      inline def setApiDocsUndefined: Self = StObject.set(x, "apiDocs", js.undefined)
       
-      @scala.inline
-      def setSwaggerUi(value: String): Self = StObject.set(x, "swaggerUi", value.asInstanceOf[js.Any])
+      inline def setSwaggerUi(value: String): Self = StObject.set(x, "swaggerUi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwaggerUiDir(value: String): Self = StObject.set(x, "swaggerUiDir", value.asInstanceOf[js.Any])
+      inline def setSwaggerUiDir(value: String): Self = StObject.set(x, "swaggerUiDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwaggerUiDirUndefined: Self = StObject.set(x, "swaggerUiDir", js.undefined)
+      inline def setSwaggerUiDirUndefined: Self = StObject.set(x, "swaggerUiDir", js.undefined)
       
-      @scala.inline
-      def setSwaggerUiPrefix(value: String): Self = StObject.set(x, "swaggerUiPrefix", value.asInstanceOf[js.Any])
+      inline def setSwaggerUiPrefix(value: String): Self = StObject.set(x, "swaggerUiPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwaggerUiPrefixUndefined: Self = StObject.set(x, "swaggerUiPrefix", js.undefined)
+      inline def setSwaggerUiPrefixUndefined: Self = StObject.set(x, "swaggerUiPrefix", js.undefined)
       
-      @scala.inline
-      def setSwaggerUiUndefined: Self = StObject.set(x, "swaggerUi", js.undefined)
+      inline def setSwaggerUiUndefined: Self = StObject.set(x, "swaggerUi", js.undefined)
     }
   }
   
@@ -577,20 +478,16 @@ object mod {
   }
   object SwaggerValidatorOptions {
     
-    @scala.inline
-    def apply(): SwaggerValidatorOptions = {
+    inline def apply(): SwaggerValidatorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwaggerValidatorOptions]
     }
     
-    @scala.inline
-    implicit class SwaggerValidatorOptionsMutableBuilder[Self <: SwaggerValidatorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SwaggerValidatorOptions](x: Self) {
       
-      @scala.inline
-      def setValidateResponse(value: Boolean): Self = StObject.set(x, "validateResponse", value.asInstanceOf[js.Any])
+      inline def setValidateResponse(value: Boolean): Self = StObject.set(x, "validateResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateResponseUndefined: Self = StObject.set(x, "validateResponse", js.undefined)
+      inline def setValidateResponseUndefined: Self = StObject.set(x, "validateResponse", js.undefined)
     }
   }
 }

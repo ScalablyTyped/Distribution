@@ -27,7 +27,6 @@ object lookupMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def make(parent: DataFlowNode, model: Model, transform: LookupTransform, counter: Double): LookupNode = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], counter.asInstanceOf[js.Any])).asInstanceOf[LookupNode]
+    inline def make(parent: DataFlowNode, model: Model, transform: LookupTransform, counter: Double): LookupNode = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], counter.asInstanceOf[js.Any])).asInstanceOf[LookupNode]
   }
 }

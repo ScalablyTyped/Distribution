@@ -43,40 +43,29 @@ trait PointCloudUniqueValueRendererProperties
 }
 object PointCloudUniqueValueRendererProperties {
   
-  @scala.inline
-  def apply(): PointCloudUniqueValueRendererProperties = {
+  inline def apply(): PointCloudUniqueValueRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointCloudUniqueValueRendererProperties]
   }
   
-  @scala.inline
-  implicit class PointCloudUniqueValueRendererPropertiesMutableBuilder[Self <: PointCloudUniqueValueRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudUniqueValueRendererProperties](x: Self) {
     
-    @scala.inline
-    def setColorUniqueValueInfos(value: js.Array[PointCloudUniqueValueRendererColorUniqueValueInfos]): Self = StObject.set(x, "colorUniqueValueInfos", value.asInstanceOf[js.Any])
+    inline def setColorUniqueValueInfos(value: js.Array[PointCloudUniqueValueRendererColorUniqueValueInfos]): Self = StObject.set(x, "colorUniqueValueInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUniqueValueInfosUndefined: Self = StObject.set(x, "colorUniqueValueInfos", js.undefined)
+    inline def setColorUniqueValueInfosUndefined: Self = StObject.set(x, "colorUniqueValueInfos", js.undefined)
     
-    @scala.inline
-    def setColorUniqueValueInfosVarargs(value: PointCloudUniqueValueRendererColorUniqueValueInfos*): Self = StObject.set(x, "colorUniqueValueInfos", js.Array(value :_*))
+    inline def setColorUniqueValueInfosVarargs(value: PointCloudUniqueValueRendererColorUniqueValueInfos*): Self = StObject.set(x, "colorUniqueValueInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTransformType(value: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`): Self = StObject.set(x, "fieldTransformType", value.asInstanceOf[js.Any])
+    inline def setFieldTransformType(value: none | `low-four-bit` | `high-four-bit` | `absolute-value` | `modulo-ten`): Self = StObject.set(x, "fieldTransformType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTransformTypeUndefined: Self = StObject.set(x, "fieldTransformType", js.undefined)
+    inline def setFieldTransformTypeUndefined: Self = StObject.set(x, "fieldTransformType", js.undefined)
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLegendOptions(value: PointCloudUniqueValueRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    inline def setLegendOptions(value: PointCloudUniqueValueRendererLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
   }
 }

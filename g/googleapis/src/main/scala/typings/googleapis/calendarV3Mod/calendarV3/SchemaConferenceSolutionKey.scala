@@ -19,19 +19,15 @@ trait SchemaConferenceSolutionKey extends StObject {
 }
 object SchemaConferenceSolutionKey {
   
-  @scala.inline
-  def apply(): SchemaConferenceSolutionKey = {
+  inline def apply(): SchemaConferenceSolutionKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConferenceSolutionKey]
   }
   
-  @scala.inline
-  implicit class SchemaConferenceSolutionKeyMutableBuilder[Self <: SchemaConferenceSolutionKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConferenceSolutionKey](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

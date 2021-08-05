@@ -12,8 +12,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(container: Container): LazyInject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(container.asInstanceOf[js.Any]).asInstanceOf[LazyInject]
-  @scala.inline
-  def default(container: Container, doCache: Boolean): LazyInject = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[LazyInject]
+  inline def default(container: Container): LazyInject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(container.asInstanceOf[js.Any]).asInstanceOf[LazyInject]
+  inline def default(container: Container, doCache: Boolean): LazyInject = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(container.asInstanceOf[js.Any], doCache.asInstanceOf[js.Any])).asInstanceOf[LazyInject]
 }

@@ -21,21 +21,17 @@ object mod extends Shortcut {
   }
   object ShareData {
     
-    @scala.inline
-    def apply(`type`: textSlashplain | imagesSlashAsterisk, value: String): ShareData = {
+    inline def apply(`type`: textSlashplain | imagesSlashAsterisk, value: String): ShareData = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShareData]
     }
     
-    @scala.inline
-    implicit class ShareDataMutableBuilder[Self <: ShareData] (val x: Self) extends AnyVal {
+    extension [Self <: ShareData](x: Self) {
       
-      @scala.inline
-      def setType(value: textSlashplain | imagesSlashAsterisk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: textSlashplain | imagesSlashAsterisk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,23 +45,18 @@ object mod extends Shortcut {
   }
   object ShareExtension {
     
-    @scala.inline
-    def apply(close: () => Unit, data: () => js.Promise[ShareData], openURL: String => Unit): ShareExtension = {
+    inline def apply(close: () => Unit, data: () => js.Promise[ShareData], openURL: String => Unit): ShareExtension = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), data = js.Any.fromFunction0(data), openURL = js.Any.fromFunction1(openURL))
       __obj.asInstanceOf[ShareExtension]
     }
     
-    @scala.inline
-    implicit class ShareExtensionMutableBuilder[Self <: ShareExtension] (val x: Self) extends AnyVal {
+    extension [Self <: ShareExtension](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setData(value: () => js.Promise[ShareData]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      inline def setData(value: () => js.Promise[ShareData]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpenURL(value: String => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction1(value))
+      inline def setOpenURL(value: String => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction1(value))
     }
   }
   

@@ -12,11 +12,9 @@ object tokenManagementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deleteToken(firebaseDependencies: FirebaseInternalDependencies, swRegistration: ServiceWorkerRegistration): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteToken")(firebaseDependencies.asInstanceOf[js.Any], swRegistration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def deleteToken(firebaseDependencies: FirebaseInternalDependencies, swRegistration: ServiceWorkerRegistration): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteToken")(firebaseDependencies.asInstanceOf[js.Any], swRegistration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def getToken(
+  inline def getToken(
     firebaseDependencies: FirebaseInternalDependencies,
     swRegistration: ServiceWorkerRegistration,
     vapidKey: String

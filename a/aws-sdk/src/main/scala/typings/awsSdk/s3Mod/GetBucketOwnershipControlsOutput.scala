@@ -13,19 +13,15 @@ trait GetBucketOwnershipControlsOutput extends StObject {
 }
 object GetBucketOwnershipControlsOutput {
   
-  @scala.inline
-  def apply(): GetBucketOwnershipControlsOutput = {
+  inline def apply(): GetBucketOwnershipControlsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketOwnershipControlsOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketOwnershipControlsOutputMutableBuilder[Self <: GetBucketOwnershipControlsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketOwnershipControlsOutput](x: Self) {
     
-    @scala.inline
-    def setOwnershipControls(value: OwnershipControls): Self = StObject.set(x, "OwnershipControls", value.asInstanceOf[js.Any])
+    inline def setOwnershipControls(value: OwnershipControls): Self = StObject.set(x, "OwnershipControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnershipControlsUndefined: Self = StObject.set(x, "OwnershipControls", js.undefined)
+    inline def setOwnershipControlsUndefined: Self = StObject.set(x, "OwnershipControls", js.undefined)
   }
 }

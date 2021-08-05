@@ -11,9 +11,7 @@ object urlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeQueryString(params: UrlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeQueryString")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def makeQueryString(params: UrlParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeQueryString")(params.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def makeUrl(urlPart: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")(urlPart.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def makeUrl(urlPart: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeUrl")(urlPart.asInstanceOf[js.Any]).asInstanceOf[String]
 }

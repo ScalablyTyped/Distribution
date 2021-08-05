@@ -14,7 +14,7 @@ object serverTransactionMod {
   @JSImport("sip.js/lib/core/transactions/server-transaction", "ServerTransaction")
   @js.native
   abstract class ServerTransaction protected () extends Transaction {
-    protected def this(
+    /* protected */ def this(
       _request: IncomingRequestMessage,
       transport: Transport,
       user: ServerTransactionUser,
@@ -22,7 +22,7 @@ object serverTransactionMod {
       loggerCategory: String
     ) = this()
     
-    var _request: js.Any = js.native
+    /* private */ var _request: js.Any = js.native
     
     /**
       * Receive incoming requests from the transport which match this transaction.
@@ -41,6 +41,6 @@ object serverTransactionMod {
     /** The incoming request the transaction handling. */
     def request: IncomingRequestMessage = js.native
     
-    var user: ServerTransactionUser = js.native
+    /* protected */ var user: ServerTransactionUser = js.native
   }
 }

@@ -27,8 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContentNode extends StObject
 object ContentNode {
   
-  @scala.inline
-  def Alias(
+  inline def Alias(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -42,8 +41,7 @@ object ContentNode {
     __obj.asInstanceOf[typings.yaml.parseCstMod.CST.Alias]
   }
   
-  @scala.inline
-  def BlockValue(
+  inline def BlockValue(
     chomping: CLIP | KEEP | STRIP,
     hasComment: Boolean,
     hasProps: Boolean,
@@ -58,8 +56,7 @@ object ContentNode {
     __obj.asInstanceOf[typings.yaml.parseCstMod.CST.BlockValue]
   }
   
-  @scala.inline
-  def FlowCollection(
+  inline def FlowCollection(
     hasComment: Boolean,
     hasProps: Boolean,
     items: js.Array[
@@ -75,8 +72,7 @@ object ContentNode {
     __obj.asInstanceOf[typings.yaml.parseCstMod.CST.FlowCollection]
   }
   
-  @scala.inline
-  def Map(
+  inline def Map(
     hasComment: Boolean,
     hasProps: Boolean,
     items: js.Array[BlankLine | Comment | Alias | Scalar | MapItem],
@@ -90,8 +86,7 @@ object ContentNode {
     __obj.asInstanceOf[typings.yaml.parseCstMod.CST.Map]
   }
   
-  @scala.inline
-  def PlainValue(
+  inline def PlainValue(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -104,8 +99,7 @@ object ContentNode {
     __obj.asInstanceOf[typings.yaml.parseCstMod.CST.PlainValue]
   }
   
-  @scala.inline
-  def QuoteValue(
+  inline def QuoteValue(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -118,8 +112,7 @@ object ContentNode {
     __obj.asInstanceOf[typings.yaml.parseCstMod.CST.QuoteValue]
   }
   
-  @scala.inline
-  def Seq(
+  inline def Seq(
     hasComment: Boolean,
     hasProps: Boolean,
     items: js.Array[BlankLine | Comment | SeqItem],

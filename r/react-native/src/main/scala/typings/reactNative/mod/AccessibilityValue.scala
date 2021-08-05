@@ -28,37 +28,27 @@ trait AccessibilityValue extends StObject {
 }
 object AccessibilityValue {
   
-  @scala.inline
-  def apply(): AccessibilityValue = {
+  inline def apply(): AccessibilityValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessibilityValue]
   }
   
-  @scala.inline
-  implicit class AccessibilityValueMutableBuilder[Self <: AccessibilityValue] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityValue](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+    inline def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+    inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

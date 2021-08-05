@@ -14,17 +14,14 @@ object anon {
   }
   object Ease {
     
-    @scala.inline
-    def apply(ease: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Ease = {
+    inline def apply(ease: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Ease = {
       val __obj = js.Dynamic.literal(ease = js.Any.fromFunction3(ease))
       __obj.asInstanceOf[Ease]
     }
     
-    @scala.inline
-    implicit class EaseMutableBuilder[Self <: Ease] (val x: Self) extends AnyVal {
+    extension [Self <: Ease](x: Self) {
       
-      @scala.inline
-      def setEase(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "ease", js.Any.fromFunction3(value))
+      inline def setEase(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "ease", js.Any.fromFunction3(value))
     }
   }
   
@@ -34,17 +31,14 @@ object anon {
   }
   object Subscribe {
     
-    @scala.inline
-    def apply(subscribe: js.Any): Subscribe = {
+    inline def apply(subscribe: js.Any): Subscribe = {
       val __obj = js.Dynamic.literal(subscribe = subscribe.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscribe]
     }
     
-    @scala.inline
-    implicit class SubscribeMutableBuilder[Self <: Subscribe] (val x: Self) extends AnyVal {
+    extension [Self <: Subscribe](x: Self) {
       
-      @scala.inline
-      def setSubscribe(value: js.Any): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
+      inline def setSubscribe(value: js.Any): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
     }
   }
 }

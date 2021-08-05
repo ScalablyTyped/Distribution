@@ -18,28 +18,21 @@ trait AddFlowOutputsResponse extends StObject {
 }
 object AddFlowOutputsResponse {
   
-  @scala.inline
-  def apply(): AddFlowOutputsResponse = {
+  inline def apply(): AddFlowOutputsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddFlowOutputsResponse]
   }
   
-  @scala.inline
-  implicit class AddFlowOutputsResponseMutableBuilder[Self <: AddFlowOutputsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddFlowOutputsResponse](x: Self) {
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: listOfOutput): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: listOfOutput): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    @scala.inline
-    def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
   }
 }

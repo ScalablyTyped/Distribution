@@ -16,15 +16,14 @@ trait HTMLSubmit extends StObject {
   
   var HTMLType: String
   
-  @JSName("MSForms.HTMLSubmit_typekey")
+  /* private */ @JSName("MSForms.HTMLSubmit_typekey")
   var MSFormsDotHTMLSubmit_typekey: HTMLSubmit
   
   var Method: String
 }
 object HTMLSubmit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Action: String,
     Caption: String,
     Encoding: String,
@@ -38,28 +37,20 @@ object HTMLSubmit {
     __obj.asInstanceOf[HTMLSubmit]
   }
   
-  @scala.inline
-  implicit class HTMLSubmitMutableBuilder[Self <: HTMLSubmit] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLSubmit](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
+    inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
+    inline def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotHTMLSubmit_typekey(value: HTMLSubmit): Self = StObject.set(x, "MSForms.HTMLSubmit_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotHTMLSubmit_typekey(value: HTMLSubmit): Self = StObject.set(x, "MSForms.HTMLSubmit_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
   }
 }

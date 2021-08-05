@@ -13,6 +13,5 @@ object createSvgIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: ReactNode, displayName: String): ComponentType[SvgIconProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[ComponentType[SvgIconProps]]
+  inline def default(path: ReactNode, displayName: String): ComponentType[SvgIconProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[ComponentType[SvgIconProps]]
 }

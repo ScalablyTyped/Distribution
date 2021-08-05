@@ -13,10 +13,8 @@ object getExtraFooterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(prefixCls: String, mode: PanelMode): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(prefixCls.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def default(
+  inline def default(prefixCls: String, mode: PanelMode): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(prefixCls.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def default(
     prefixCls: String,
     mode: PanelMode,
     renderExtraFooter: js.Function1[/* mode */ PanelMode, ReactNode]

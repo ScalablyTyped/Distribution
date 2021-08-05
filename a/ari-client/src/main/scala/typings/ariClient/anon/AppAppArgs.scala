@@ -14,25 +14,19 @@ trait AppAppArgs extends StObject {
 }
 object AppAppArgs {
   
-  @scala.inline
-  def apply(app: String, channelId: String): AppAppArgs = {
+  inline def apply(app: String, channelId: String): AppAppArgs = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppAppArgs]
   }
   
-  @scala.inline
-  implicit class AppAppArgsMutableBuilder[Self <: AppAppArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppAppArgs](x: Self) {
     
-    @scala.inline
-    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
+    inline def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
+    inline def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
   }
 }

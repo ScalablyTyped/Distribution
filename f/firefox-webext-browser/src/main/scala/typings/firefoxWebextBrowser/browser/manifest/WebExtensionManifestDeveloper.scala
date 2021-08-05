@@ -12,25 +12,19 @@ trait WebExtensionManifestDeveloper extends StObject {
 }
 object WebExtensionManifestDeveloper {
   
-  @scala.inline
-  def apply(): WebExtensionManifestDeveloper = {
+  inline def apply(): WebExtensionManifestDeveloper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebExtensionManifestDeveloper]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestDeveloperMutableBuilder[Self <: WebExtensionManifestDeveloper] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestDeveloper](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

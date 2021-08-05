@@ -15,8 +15,7 @@ trait ParametersOrgsListSamlSsoAuthorizationsEndpoint extends StObject {
 }
 object ParametersOrgsListSamlSsoAuthorizationsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: OrgsListSamlSsoAuthorizationsEndpoint,
     response: OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData]
   ): ParametersOrgsListSamlSsoAuthorizationsEndpoint = {
@@ -24,13 +23,10 @@ object ParametersOrgsListSamlSsoAuthorizationsEndpoint {
     __obj.asInstanceOf[ParametersOrgsListSamlSsoAuthorizationsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersOrgsListSamlSsoAuthorizationsEndpointMutableBuilder[Self <: ParametersOrgsListSamlSsoAuthorizationsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersOrgsListSamlSsoAuthorizationsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: OrgsListSamlSsoAuthorizationsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: OrgsListSamlSsoAuthorizationsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[OrgsListSamlSsoAuthorizationsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

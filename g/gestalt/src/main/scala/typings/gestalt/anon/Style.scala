@@ -11,16 +11,13 @@ trait Style extends StObject {
 }
 object Style {
   
-  @scala.inline
-  def apply(__style: StringDictionary[js.UndefOr[String | Double]]): Style = {
+  inline def apply(__style: StringDictionary[js.UndefOr[String | Double]]): Style = {
     val __obj = js.Dynamic.literal(__style = __style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Style]
   }
   
-  @scala.inline
-  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+  extension [Self <: Style](x: Self) {
     
-    @scala.inline
-    def set__style(value: StringDictionary[js.UndefOr[String | Double]]): Self = StObject.set(x, "__style", value.asInstanceOf[js.Any])
+    inline def set__style(value: StringDictionary[js.UndefOr[String | Double]]): Self = StObject.set(x, "__style", value.asInstanceOf[js.Any])
   }
 }

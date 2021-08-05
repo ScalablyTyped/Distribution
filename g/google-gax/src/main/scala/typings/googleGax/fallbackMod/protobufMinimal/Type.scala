@@ -32,10 +32,8 @@ object Type {
     * @param [typeName] Type name, defaults to the constructor's name
     * @returns Decorator function
     */
-  @scala.inline
-  def d[T /* <: typings.protobufjs.mod.Message[T] */](): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")().asInstanceOf[TypeDecorator[T]]
-  @scala.inline
-  def d[T /* <: typings.protobufjs.mod.Message[T] */](typeName: String): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(typeName.asInstanceOf[js.Any]).asInstanceOf[TypeDecorator[T]]
+  inline def d[T /* <: typings.protobufjs.mod.Message[T] */](): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")().asInstanceOf[TypeDecorator[T]]
+  inline def d[T /* <: typings.protobufjs.mod.Message[T] */](typeName: String): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(typeName.asInstanceOf[js.Any]).asInstanceOf[TypeDecorator[T]]
   
   /**
     * Creates a message type from a message type descriptor.
@@ -43,14 +41,12 @@ object Type {
     * @param json Message type descriptor
     * @returns Created message type
     */
-  @scala.inline
-  def fromJSON(name: String, json: IType): typings.protobufjs.mod.Type = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.Type]
+  inline def fromJSON(name: String, json: IType): typings.protobufjs.mod.Type = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.Type]
   
   /**
     * Generates a constructor function for the specified type.
     * @param mtype Message type
     * @returns Codegen instance
     */
-  @scala.inline
-  def generateConstructor(mtype: typings.protobufjs.mod.Type): Codegen = ^.asInstanceOf[js.Dynamic].applyDynamic("generateConstructor")(mtype.asInstanceOf[js.Any]).asInstanceOf[Codegen]
+  inline def generateConstructor(mtype: typings.protobufjs.mod.Type): Codegen = ^.asInstanceOf[js.Dynamic].applyDynamic("generateConstructor")(mtype.asInstanceOf[js.Any]).asInstanceOf[Codegen]
 }

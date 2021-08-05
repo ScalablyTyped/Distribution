@@ -13,16 +13,13 @@ trait LambdaOutput extends StObject {
 }
 object LambdaOutput {
   
-  @scala.inline
-  def apply(ResourceARN: ResourceARN): LambdaOutput = {
+  inline def apply(ResourceARN: ResourceARN): LambdaOutput = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaOutput]
   }
   
-  @scala.inline
-  implicit class LambdaOutputMutableBuilder[Self <: LambdaOutput] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaOutput](x: Self) {
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
   }
 }

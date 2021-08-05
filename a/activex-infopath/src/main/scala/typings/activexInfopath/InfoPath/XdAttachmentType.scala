@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdAttachmentType extends StObject
 object XdAttachmentType {
   
-  @scala.inline
-  def xdNone: `2` = 2.asInstanceOf[`2`]
+  inline def xdNone: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xdXml: `0` = 0.asInstanceOf[`0`]
+  inline def xdXml: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xdXmlXsn: `1` = 1.asInstanceOf[`1`]
+  inline def xdXmlXsn: `1` = 1.asInstanceOf[`1`]
 }

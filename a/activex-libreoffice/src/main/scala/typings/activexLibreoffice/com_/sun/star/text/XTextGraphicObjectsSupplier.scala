@@ -20,8 +20,7 @@ trait XTextGraphicObjectsSupplier
 }
 object XTextGraphicObjectsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GraphicObjects: XNameAccess,
     acquire: () => Unit,
     getGraphicObjects: () => XNameAccess,
@@ -32,13 +31,10 @@ object XTextGraphicObjectsSupplier {
     __obj.asInstanceOf[XTextGraphicObjectsSupplier]
   }
   
-  @scala.inline
-  implicit class XTextGraphicObjectsSupplierMutableBuilder[Self <: XTextGraphicObjectsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTextGraphicObjectsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetGraphicObjects(value: () => XNameAccess): Self = StObject.set(x, "getGraphicObjects", js.Any.fromFunction0(value))
+    inline def setGetGraphicObjects(value: () => XNameAccess): Self = StObject.set(x, "getGraphicObjects", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGraphicObjects(value: XNameAccess): Self = StObject.set(x, "GraphicObjects", value.asInstanceOf[js.Any])
+    inline def setGraphicObjects(value: XNameAccess): Self = StObject.set(x, "GraphicObjects", value.asInstanceOf[js.Any])
   }
 }

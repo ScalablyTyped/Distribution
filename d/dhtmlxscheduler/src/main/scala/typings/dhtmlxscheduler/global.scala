@@ -10,12 +10,10 @@ object global {
   @js.native
   def Scheduler_ : SchedulerEnterprise = js.native
   
-  @scala.inline
-  def Scheduler__=(x: SchedulerEnterprise): Unit = js.Dynamic.global.updateDynamic("Scheduler")(x.asInstanceOf[js.Any])
+  inline def Scheduler__=(x: SchedulerEnterprise): Unit = js.Dynamic.global.updateDynamic("Scheduler")(x.asInstanceOf[js.Any])
   
   @JSGlobal("scheduler")
   @js.native
   def scheduler: SchedulerStatic = js.native
-  @scala.inline
-  def scheduler_=(x: SchedulerStatic): Unit = js.Dynamic.global.updateDynamic("scheduler")(x.asInstanceOf[js.Any])
+  inline def scheduler_=(x: SchedulerStatic): Unit = js.Dynamic.global.updateDynamic("scheduler")(x.asInstanceOf[js.Any])
 }

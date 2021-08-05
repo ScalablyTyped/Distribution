@@ -223,163 +223,117 @@ trait CoreEvents extends StObject {
 }
 object CoreEvents {
   
-  @scala.inline
-  def apply(): CoreEvents = {
+  inline def apply(): CoreEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoreEvents]
   }
   
-  @scala.inline
-  implicit class CoreEventsMutableBuilder[Self <: CoreEvents] (val x: Self) extends AnyVal {
+  extension [Self <: CoreEvents](x: Self) {
     
-    @scala.inline
-    def setOnAllComplete(value: (/* succeeded */ js.Array[Double], /* failed */ js.Array[Double]) => Unit): Self = StObject.set(x, "onAllComplete", js.Any.fromFunction2(value))
+    inline def setOnAllComplete(value: (/* succeeded */ js.Array[Double], /* failed */ js.Array[Double]) => Unit): Self = StObject.set(x, "onAllComplete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnAllCompleteUndefined: Self = StObject.set(x, "onAllComplete", js.undefined)
+    inline def setOnAllCompleteUndefined: Self = StObject.set(x, "onAllComplete", js.undefined)
     
-    @scala.inline
-    def setOnAutoRetry(value: (/* id */ Double, /* name */ String, /* attemptNumber */ Double) => Unit): Self = StObject.set(x, "onAutoRetry", js.Any.fromFunction3(value))
+    inline def setOnAutoRetry(value: (/* id */ Double, /* name */ String, /* attemptNumber */ Double) => Unit): Self = StObject.set(x, "onAutoRetry", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnAutoRetryUndefined: Self = StObject.set(x, "onAutoRetry", js.undefined)
+    inline def setOnAutoRetryUndefined: Self = StObject.set(x, "onAutoRetry", js.undefined)
     
-    @scala.inline
-    def setOnCancel(value: (/* id */ Double, /* name */ String) => Boolean | PromiseOptions | Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
+    inline def setOnCancel(value: (/* id */ Double, /* name */ String) => Boolean | PromiseOptions | Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+    inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
-    @scala.inline
-    def setOnComplete(
+    inline def setOnComplete(
       value: (/* id */ Double, /* name */ String, /* responseJSON */ js.Any, /* xhr */ XMLHttpRequest) => Unit
     ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    @scala.inline
-    def setOnDelete(value: /* id */ Double => Unit): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
+    inline def setOnDelete(value: /* id */ Double => Unit): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDeleteComplete(value: (/* id */ Double, /* xhr */ XMLHttpRequest, /* isError */ Boolean) => Unit): Self = StObject.set(x, "onDeleteComplete", js.Any.fromFunction3(value))
+    inline def setOnDeleteComplete(value: (/* id */ Double, /* xhr */ XMLHttpRequest, /* isError */ Boolean) => Unit): Self = StObject.set(x, "onDeleteComplete", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnDeleteCompleteUndefined: Self = StObject.set(x, "onDeleteComplete", js.undefined)
+    inline def setOnDeleteCompleteUndefined: Self = StObject.set(x, "onDeleteComplete", js.undefined)
     
-    @scala.inline
-    def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+    inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
     
-    @scala.inline
-    def setOnError(
+    inline def setOnError(
       value: (/* id */ Double, /* name */ String, /* errorReason */ String, /* xhr */ XMLHttpRequest) => Unit
     ): Self = StObject.set(x, "onError", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnManualRetry(value: (/* id */ Double, /* name */ String) => Boolean | Unit): Self = StObject.set(x, "onManualRetry", js.Any.fromFunction2(value))
+    inline def setOnManualRetry(value: (/* id */ Double, /* name */ String) => Boolean | Unit): Self = StObject.set(x, "onManualRetry", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnManualRetryUndefined: Self = StObject.set(x, "onManualRetry", js.undefined)
+    inline def setOnManualRetryUndefined: Self = StObject.set(x, "onManualRetry", js.undefined)
     
-    @scala.inline
-    def setOnPasteReceived(value: /* blob */ Blob => PromiseOptions | Unit): Self = StObject.set(x, "onPasteReceived", js.Any.fromFunction1(value))
+    inline def setOnPasteReceived(value: /* blob */ Blob => PromiseOptions | Unit): Self = StObject.set(x, "onPasteReceived", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPasteReceivedUndefined: Self = StObject.set(x, "onPasteReceived", js.undefined)
+    inline def setOnPasteReceivedUndefined: Self = StObject.set(x, "onPasteReceived", js.undefined)
     
-    @scala.inline
-    def setOnProgress(
+    inline def setOnProgress(
       value: (/* id */ Double, /* name */ String, /* uploadedBytes */ Double, /* totalBytes */ Double) => Unit
     ): Self = StObject.set(x, "onProgress", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+    inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
-    @scala.inline
-    def setOnResume(
+    inline def setOnResume(
       value: (/* id */ Double, /* name */ String, /* chunkData */ js.Any, /* customResumeData */ js.Any) => Unit | js.Promise[js.Any]
     ): Self = StObject.set(x, "onResume", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnResumeUndefined: Self = StObject.set(x, "onResume", js.undefined)
+    inline def setOnResumeUndefined: Self = StObject.set(x, "onResume", js.undefined)
     
-    @scala.inline
-    def setOnSessionRequestComplete(
+    inline def setOnSessionRequestComplete(
       value: (/* response */ js.Array[js.Any], /* success */ Boolean, /* xhrOrXdr */ XMLHttpRequest) => Unit
     ): Self = StObject.set(x, "onSessionRequestComplete", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnSessionRequestCompleteUndefined: Self = StObject.set(x, "onSessionRequestComplete", js.undefined)
+    inline def setOnSessionRequestCompleteUndefined: Self = StObject.set(x, "onSessionRequestComplete", js.undefined)
     
-    @scala.inline
-    def setOnStatusChange(value: (/* id */ Double, /* oldStatus */ String, /* newStatus */ String) => Unit): Self = StObject.set(x, "onStatusChange", js.Any.fromFunction3(value))
+    inline def setOnStatusChange(value: (/* id */ Double, /* oldStatus */ String, /* newStatus */ String) => Unit): Self = StObject.set(x, "onStatusChange", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnStatusChangeUndefined: Self = StObject.set(x, "onStatusChange", js.undefined)
+    inline def setOnStatusChangeUndefined: Self = StObject.set(x, "onStatusChange", js.undefined)
     
-    @scala.inline
-    def setOnSubmit(value: (/* id */ Double, /* name */ String) => Boolean | PromiseOptions | Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
+    inline def setOnSubmit(value: (/* id */ Double, /* name */ String) => Boolean | PromiseOptions | Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSubmitDelete(value: /* id */ Double => PromiseOptions | Unit): Self = StObject.set(x, "onSubmitDelete", js.Any.fromFunction1(value))
+    inline def setOnSubmitDelete(value: /* id */ Double => PromiseOptions | Unit): Self = StObject.set(x, "onSubmitDelete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSubmitDeleteUndefined: Self = StObject.set(x, "onSubmitDelete", js.undefined)
+    inline def setOnSubmitDeleteUndefined: Self = StObject.set(x, "onSubmitDelete", js.undefined)
     
-    @scala.inline
-    def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+    inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
-    @scala.inline
-    def setOnSubmitted(value: (/* id */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onSubmitted", js.Any.fromFunction2(value))
+    inline def setOnSubmitted(value: (/* id */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onSubmitted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSubmittedUndefined: Self = StObject.set(x, "onSubmitted", js.undefined)
+    inline def setOnSubmittedUndefined: Self = StObject.set(x, "onSubmitted", js.undefined)
     
-    @scala.inline
-    def setOnTotalProgress(value: (/* totalUploadedBytes */ Double, /* totalBytes */ Double) => Unit): Self = StObject.set(x, "onTotalProgress", js.Any.fromFunction2(value))
+    inline def setOnTotalProgress(value: (/* totalUploadedBytes */ Double, /* totalBytes */ Double) => Unit): Self = StObject.set(x, "onTotalProgress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnTotalProgressUndefined: Self = StObject.set(x, "onTotalProgress", js.undefined)
+    inline def setOnTotalProgressUndefined: Self = StObject.set(x, "onTotalProgress", js.undefined)
     
-    @scala.inline
-    def setOnUpload(value: (/* id */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onUpload", js.Any.fromFunction2(value))
+    inline def setOnUpload(value: (/* id */ Double, /* name */ String) => Unit): Self = StObject.set(x, "onUpload", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnUploadChunk(
+    inline def setOnUploadChunk(
       value: (/* id */ Double, /* name */ String, /* chunkData */ ChunkData) => Unit | js.Promise[js.Any]
     ): Self = StObject.set(x, "onUploadChunk", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnUploadChunkSuccess(
+    inline def setOnUploadChunkSuccess(
       value: (/* id */ Double, /* chunkData */ ChunkData, /* responseJSON */ js.Any, /* xhr */ XMLHttpRequest) => Unit
     ): Self = StObject.set(x, "onUploadChunkSuccess", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnUploadChunkSuccessUndefined: Self = StObject.set(x, "onUploadChunkSuccess", js.undefined)
+    inline def setOnUploadChunkSuccessUndefined: Self = StObject.set(x, "onUploadChunkSuccess", js.undefined)
     
-    @scala.inline
-    def setOnUploadChunkUndefined: Self = StObject.set(x, "onUploadChunk", js.undefined)
+    inline def setOnUploadChunkUndefined: Self = StObject.set(x, "onUploadChunk", js.undefined)
     
-    @scala.inline
-    def setOnUploadUndefined: Self = StObject.set(x, "onUpload", js.undefined)
+    inline def setOnUploadUndefined: Self = StObject.set(x, "onUpload", js.undefined)
     
-    @scala.inline
-    def setOnValidate(
+    inline def setOnValidate(
       value: (/* data */ BlobDataObject, /* buttonContainer */ js.UndefOr[HTMLElement]) => PromiseOptions | Unit
     ): Self = StObject.set(x, "onValidate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnValidateBatch(
+    inline def setOnValidateBatch(
       value: (/* fileOrBlobDataArray */ js.Array[BlobDataObject], /* buttonContainer */ HTMLElement) => PromiseOptions | Unit
     ): Self = StObject.set(x, "onValidateBatch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnValidateBatchUndefined: Self = StObject.set(x, "onValidateBatch", js.undefined)
+    inline def setOnValidateBatchUndefined: Self = StObject.set(x, "onValidateBatch", js.undefined)
     
-    @scala.inline
-    def setOnValidateUndefined: Self = StObject.set(x, "onValidate", js.undefined)
+    inline def setOnValidateUndefined: Self = StObject.set(x, "onValidate", js.undefined)
   }
 }

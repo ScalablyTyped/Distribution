@@ -9,37 +9,31 @@ object reactHotkeysStrings {
   
   @js.native
   sealed trait ApplicationKeyMap extends StObject
-  @scala.inline
-  def ApplicationKeyMap: ApplicationKeyMap = "ApplicationKeyMap".asInstanceOf[ApplicationKeyMap]
+  inline def ApplicationKeyMap: ApplicationKeyMap = "ApplicationKeyMap".asInstanceOf[ApplicationKeyMap]
   
   @js.native
   sealed trait KeyCombination extends StObject
-  @scala.inline
-  def KeyCombination: KeyCombination = "KeyCombination".asInstanceOf[KeyCombination]
+  inline def KeyCombination: KeyCombination = "KeyCombination".asInstanceOf[KeyCombination]
   
   @js.native
   sealed trait KeyMap extends StObject
-  @scala.inline
-  def KeyMap: KeyMap = "KeyMap".asInstanceOf[KeyMap]
+  inline def KeyMap: KeyMap = "KeyMap".asInstanceOf[KeyMap]
   
   @js.native
   sealed trait keydown
     extends StObject
        with KeyEventName
-  @scala.inline
-  def keydown: keydown = "keydown".asInstanceOf[keydown]
+  inline def keydown: keydown = "keydown".asInstanceOf[keydown]
   
   @js.native
   sealed trait keypress
     extends StObject
        with KeyEventName
-  @scala.inline
-  def keypress: keypress = "keypress".asInstanceOf[keypress]
+  inline def keypress: keypress = "keypress".asInstanceOf[keypress]
   
   @js.native
   sealed trait keyup
     extends StObject
        with KeyEventName
-  @scala.inline
-  def keyup: keyup = "keyup".asInstanceOf[keyup]
+  inline def keyup: keyup = "keyup".asInstanceOf[keyup]
 }

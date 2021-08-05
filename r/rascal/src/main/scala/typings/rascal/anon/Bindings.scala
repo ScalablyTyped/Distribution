@@ -20,8 +20,7 @@ trait Bindings extends StObject {
 }
 object Bindings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindings: BindingKey,
     connection: Hostname,
     connectionStrategy: String,
@@ -33,25 +32,18 @@ object Bindings {
     __obj.asInstanceOf[Bindings]
   }
   
-  @scala.inline
-  implicit class BindingsMutableBuilder[Self <: Bindings] (val x: Self) extends AnyVal {
+  extension [Self <: Bindings](x: Self) {
     
-    @scala.inline
-    def setBindings(value: BindingKey): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: BindingKey): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnection(value: Hostname): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Hostname): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStrategy(value: String): Self = StObject.set(x, "connectionStrategy", value.asInstanceOf[js.Any])
+    inline def setConnectionStrategy(value: String): Self = StObject.set(x, "connectionStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchanges(value: Assert): Self = StObject.set(x, "exchanges", value.asInstanceOf[js.Any])
+    inline def setExchanges(value: Assert): Self = StObject.set(x, "exchanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicationChannelPools(value: RegularPool): Self = StObject.set(x, "publicationChannelPools", value.asInstanceOf[js.Any])
+    inline def setPublicationChannelPools(value: RegularPool): Self = StObject.set(x, "publicationChannelPools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueues(value: AssertBoolean): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
+    inline def setQueues(value: AssertBoolean): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
   }
 }

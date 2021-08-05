@@ -12,25 +12,19 @@ trait PoliciesPatchResponse extends StObject {
 }
 object PoliciesPatchResponse {
   
-  @scala.inline
-  def apply(): PoliciesPatchResponse = {
+  inline def apply(): PoliciesPatchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PoliciesPatchResponse]
   }
   
-  @scala.inline
-  implicit class PoliciesPatchResponseMutableBuilder[Self <: PoliciesPatchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PoliciesPatchResponse](x: Self) {
     
-    @scala.inline
-    def setHeader(value: ResponseHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: ResponseHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

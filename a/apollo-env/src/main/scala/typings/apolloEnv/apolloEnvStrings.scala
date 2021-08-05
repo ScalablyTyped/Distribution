@@ -9,69 +9,59 @@ object apolloEnvStrings {
   
   @js.native
   sealed trait DeepPartial extends StObject
-  @scala.inline
-  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
+  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   
   @js.native
   sealed trait _empty
     extends StObject
        with ReferrerPolicy
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait `no-referrer`
     extends StObject
        with ReferrerPolicy
-  @scala.inline
-  def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
+  inline def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
   
   @js.native
   sealed trait `no-referrer-when-downgrade`
     extends StObject
        with ReferrerPolicy
-  @scala.inline
-  def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
+  inline def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   
   @js.native
   sealed trait origin
     extends StObject
        with ReferrerPolicy
-  @scala.inline
-  def origin: origin = "origin".asInstanceOf[origin]
+  inline def origin: origin = "origin".asInstanceOf[origin]
   
   @js.native
   sealed trait `origin-when-cross-origin`
     extends StObject
        with ReferrerPolicy
-  @scala.inline
-  def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
+  inline def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
   
   @js.native
   sealed trait `same-origin`
     extends StObject
        with ReferrerPolicy
-  @scala.inline
-  def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
+  inline def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
   
   @js.native
   sealed trait `strict-origin`
     extends StObject
        with ReferrerPolicy
-  @scala.inline
-  def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
+  inline def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
   
   @js.native
   sealed trait `strict-origin-when-cross-origin`
     extends StObject
        with ReferrerPolicy
-  @scala.inline
-  def `strict-origin-when-cross-origin`: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
+  inline def `strict-origin-when-cross-origin`: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
   
   @js.native
   sealed trait `unsafe-url`
     extends StObject
        with ReferrerPolicy
-  @scala.inline
-  def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
+  inline def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
 }

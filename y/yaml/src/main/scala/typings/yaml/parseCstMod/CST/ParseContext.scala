@@ -29,8 +29,7 @@ trait ParseContext extends StObject {
 }
 object ParseContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     atLineStart: Boolean,
     inCollection: Boolean,
     inFlow: Boolean,
@@ -43,28 +42,20 @@ object ParseContext {
     __obj.asInstanceOf[ParseContext]
   }
   
-  @scala.inline
-  implicit class ParseContextMutableBuilder[Self <: ParseContext] (val x: Self) extends AnyVal {
+  extension [Self <: ParseContext](x: Self) {
     
-    @scala.inline
-    def setAtLineStart(value: Boolean): Self = StObject.set(x, "atLineStart", value.asInstanceOf[js.Any])
+    inline def setAtLineStart(value: Boolean): Self = StObject.set(x, "atLineStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInCollection(value: Boolean): Self = StObject.set(x, "inCollection", value.asInstanceOf[js.Any])
+    inline def setInCollection(value: Boolean): Self = StObject.set(x, "inCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInFlow(value: Boolean): Self = StObject.set(x, "inFlow", value.asInstanceOf[js.Any])
+    inline def setInFlow(value: Boolean): Self = StObject.set(x, "inFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStart(value: Double): Self = StObject.set(x, "lineStart", value.asInstanceOf[js.Any])
+    inline def setLineStart(value: Double): Self = StObject.set(x, "lineStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Node): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Node): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

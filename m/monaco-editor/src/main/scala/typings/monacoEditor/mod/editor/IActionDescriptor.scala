@@ -55,55 +55,39 @@ trait IActionDescriptor extends StObject {
 }
 object IActionDescriptor {
   
-  @scala.inline
-  def apply(id: String, label: String, run: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit]): IActionDescriptor = {
+  inline def apply(id: String, label: String, run: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit]): IActionDescriptor = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], run = js.Any.fromFunction2(run))
     __obj.asInstanceOf[IActionDescriptor]
   }
   
-  @scala.inline
-  implicit class IActionDescriptorMutableBuilder[Self <: IActionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: IActionDescriptor](x: Self) {
     
-    @scala.inline
-    def setContextMenuGroupId(value: String): Self = StObject.set(x, "contextMenuGroupId", value.asInstanceOf[js.Any])
+    inline def setContextMenuGroupId(value: String): Self = StObject.set(x, "contextMenuGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextMenuGroupIdUndefined: Self = StObject.set(x, "contextMenuGroupId", js.undefined)
+    inline def setContextMenuGroupIdUndefined: Self = StObject.set(x, "contextMenuGroupId", js.undefined)
     
-    @scala.inline
-    def setContextMenuOrder(value: Double): Self = StObject.set(x, "contextMenuOrder", value.asInstanceOf[js.Any])
+    inline def setContextMenuOrder(value: Double): Self = StObject.set(x, "contextMenuOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextMenuOrderUndefined: Self = StObject.set(x, "contextMenuOrder", js.undefined)
+    inline def setContextMenuOrderUndefined: Self = StObject.set(x, "contextMenuOrder", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeybindingContext(value: String): Self = StObject.set(x, "keybindingContext", value.asInstanceOf[js.Any])
+    inline def setKeybindingContext(value: String): Self = StObject.set(x, "keybindingContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeybindingContextUndefined: Self = StObject.set(x, "keybindingContext", js.undefined)
+    inline def setKeybindingContextUndefined: Self = StObject.set(x, "keybindingContext", js.undefined)
     
-    @scala.inline
-    def setKeybindings(value: js.Array[Double]): Self = StObject.set(x, "keybindings", value.asInstanceOf[js.Any])
+    inline def setKeybindings(value: js.Array[Double]): Self = StObject.set(x, "keybindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeybindingsUndefined: Self = StObject.set(x, "keybindings", js.undefined)
+    inline def setKeybindingsUndefined: Self = StObject.set(x, "keybindings", js.undefined)
     
-    @scala.inline
-    def setKeybindingsVarargs(value: Double*): Self = StObject.set(x, "keybindings", js.Array(value :_*))
+    inline def setKeybindingsVarargs(value: Double*): Self = StObject.set(x, "keybindings", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecondition(value: String): Self = StObject.set(x, "precondition", value.asInstanceOf[js.Any])
+    inline def setPrecondition(value: String): Self = StObject.set(x, "precondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreconditionUndefined: Self = StObject.set(x, "precondition", js.undefined)
+    inline def setPreconditionUndefined: Self = StObject.set(x, "precondition", js.undefined)
     
-    @scala.inline
-    def setRun(value: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
+    inline def setRun(value: (ICodeEditor, /* repeated */ js.Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
   }
 }

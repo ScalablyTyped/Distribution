@@ -28,38 +28,28 @@ object skeletonTextSkeletonTextMod extends Shortcut {
   }
   object SkeletonTextProps {
     
-    @scala.inline
-    def apply(): SkeletonTextProps = {
+    inline def apply(): SkeletonTextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkeletonTextProps]
     }
     
-    @scala.inline
-    implicit class SkeletonTextPropsMutableBuilder[Self <: SkeletonTextProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonTextProps](x: Self) {
       
-      @scala.inline
-      def setHeading(value: Boolean): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+      inline def setHeading(value: Boolean): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+      inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
       
-      @scala.inline
-      def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
+      inline def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineCountUndefined: Self = StObject.set(x, "lineCount", js.undefined)
+      inline def setLineCountUndefined: Self = StObject.set(x, "lineCount", js.undefined)
       
-      @scala.inline
-      def setParagraph(value: Boolean): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+      inline def setParagraph(value: Boolean): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+      inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

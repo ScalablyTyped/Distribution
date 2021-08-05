@@ -15,31 +15,23 @@ trait Environment extends StObject {
 }
 object Environment {
   
-  @scala.inline
-  def apply(): Environment = {
+  inline def apply(): Environment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Environment]
   }
   
-  @scala.inline
-  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+  extension [Self <: Environment](x: Self) {
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    @scala.inline
-    def setGetWorker(value: (/* workerId */ String, /* label */ String) => Worker): Self = StObject.set(x, "getWorker", js.Any.fromFunction2(value))
+    inline def setGetWorker(value: (/* workerId */ String, /* label */ String) => Worker): Self = StObject.set(x, "getWorker", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetWorkerUndefined: Self = StObject.set(x, "getWorker", js.undefined)
+    inline def setGetWorkerUndefined: Self = StObject.set(x, "getWorker", js.undefined)
     
-    @scala.inline
-    def setGetWorkerUrl(value: (/* workerId */ String, /* label */ String) => String): Self = StObject.set(x, "getWorkerUrl", js.Any.fromFunction2(value))
+    inline def setGetWorkerUrl(value: (/* workerId */ String, /* label */ String) => String): Self = StObject.set(x, "getWorkerUrl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetWorkerUrlUndefined: Self = StObject.set(x, "getWorkerUrl", js.undefined)
+    inline def setGetWorkerUrlUndefined: Self = StObject.set(x, "getWorkerUrl", js.undefined)
   }
 }

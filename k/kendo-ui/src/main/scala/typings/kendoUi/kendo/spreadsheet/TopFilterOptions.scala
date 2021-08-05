@@ -10,19 +10,15 @@ trait TopFilterOptions extends StObject {
 }
 object TopFilterOptions {
   
-  @scala.inline
-  def apply(): TopFilterOptions = {
+  inline def apply(): TopFilterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopFilterOptions]
   }
   
-  @scala.inline
-  implicit class TopFilterOptionsMutableBuilder[Self <: TopFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TopFilterOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

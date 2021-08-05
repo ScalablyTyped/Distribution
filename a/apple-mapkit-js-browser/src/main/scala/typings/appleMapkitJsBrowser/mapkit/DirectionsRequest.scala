@@ -44,43 +44,31 @@ trait DirectionsRequest extends StObject {
 }
 object DirectionsRequest {
   
-  @scala.inline
-  def apply(destination: String | Coordinate | Place, origin: String | Coordinate | Place): DirectionsRequest = {
+  inline def apply(destination: String | Coordinate | Place, origin: String | Coordinate | Place): DirectionsRequest = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsRequest]
   }
   
-  @scala.inline
-  implicit class DirectionsRequestMutableBuilder[Self <: DirectionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsRequest](x: Self) {
     
-    @scala.inline
-    def setArrivalDate(value: Date): Self = StObject.set(x, "arrivalDate", value.asInstanceOf[js.Any])
+    inline def setArrivalDate(value: Date): Self = StObject.set(x, "arrivalDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrivalDateUndefined: Self = StObject.set(x, "arrivalDate", js.undefined)
+    inline def setArrivalDateUndefined: Self = StObject.set(x, "arrivalDate", js.undefined)
     
-    @scala.inline
-    def setDepartureDate(value: Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
+    inline def setDepartureDate(value: Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartureDateUndefined: Self = StObject.set(x, "departureDate", js.undefined)
+    inline def setDepartureDateUndefined: Self = StObject.set(x, "departureDate", js.undefined)
     
-    @scala.inline
-    def setDestination(value: String | Coordinate | Place): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String | Coordinate | Place): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: String | Coordinate | Place): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String | Coordinate | Place): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsAlternateRoutes(value: Boolean): Self = StObject.set(x, "requestsAlternateRoutes", value.asInstanceOf[js.Any])
+    inline def setRequestsAlternateRoutes(value: Boolean): Self = StObject.set(x, "requestsAlternateRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsAlternateRoutesUndefined: Self = StObject.set(x, "requestsAlternateRoutes", js.undefined)
+    inline def setRequestsAlternateRoutesUndefined: Self = StObject.set(x, "requestsAlternateRoutes", js.undefined)
     
-    @scala.inline
-    def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
+    inline def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportTypeUndefined: Self = StObject.set(x, "transportType", js.undefined)
+    inline def setTransportTypeUndefined: Self = StObject.set(x, "transportType", js.undefined)
   }
 }

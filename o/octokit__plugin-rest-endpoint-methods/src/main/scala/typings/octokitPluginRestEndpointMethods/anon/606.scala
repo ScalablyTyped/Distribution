@@ -23,8 +23,7 @@ trait `606` extends StObject {
 }
 object `606` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[
       ActivityListRepoNotificationsForAuthenticatedUserEndpoint, 
       baseUrl | headers | mediaType
@@ -35,18 +34,15 @@ object `606` {
     __obj.asInstanceOf[`606`]
   }
   
-  @scala.inline
-  implicit class `606MutableBuilder`[Self <: `606`] (val x: Self) extends AnyVal {
+  extension [Self <: `606`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[
           ActivityListRepoNotificationsForAuthenticatedUserEndpoint, 
           baseUrl | headers | mediaType
         ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

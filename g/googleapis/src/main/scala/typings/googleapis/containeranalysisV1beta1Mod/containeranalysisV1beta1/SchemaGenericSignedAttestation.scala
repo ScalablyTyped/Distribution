@@ -37,34 +37,25 @@ trait SchemaGenericSignedAttestation extends StObject {
 }
 object SchemaGenericSignedAttestation {
   
-  @scala.inline
-  def apply(): SchemaGenericSignedAttestation = {
+  inline def apply(): SchemaGenericSignedAttestation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGenericSignedAttestation]
   }
   
-  @scala.inline
-  implicit class SchemaGenericSignedAttestationMutableBuilder[Self <: SchemaGenericSignedAttestation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGenericSignedAttestation](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setSerializedPayload(value: String): Self = StObject.set(x, "serializedPayload", value.asInstanceOf[js.Any])
+    inline def setSerializedPayload(value: String): Self = StObject.set(x, "serializedPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializedPayloadUndefined: Self = StObject.set(x, "serializedPayload", js.undefined)
+    inline def setSerializedPayloadUndefined: Self = StObject.set(x, "serializedPayload", js.undefined)
     
-    @scala.inline
-    def setSignatures(value: js.Array[SchemaSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[SchemaSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
+    inline def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
-    @scala.inline
-    def setSignaturesVarargs(value: SchemaSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: SchemaSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
   }
 }

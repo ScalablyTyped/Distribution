@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.AttachmentSelection")
 @js.native
-class AttachmentSelection protected ()
+/* private */ class AttachmentSelection ()
   extends StObject
      with typings.activexOutlook.Outlook.AttachmentSelection {
   
@@ -31,7 +31,7 @@ class AttachmentSelection protected ()
   /* CompleteClass */
   override val Location: OlSelectionLocation = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.AttachmentSelection_typekey")
   var OutlookDotAttachmentSelection_typekey: typings.activexOutlook.Outlook.AttachmentSelection = js.native
   

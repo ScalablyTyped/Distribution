@@ -23,16 +23,12 @@ object EnumBooleanMember {
   @js.native
   val ^ : Type[EnumBooleanMember] = js.native
   
-  @scala.inline
-  implicit class EnumBooleanMemberMutableBuilder[Self <: EnumBooleanMember] (val x: Self) extends AnyVal {
+  extension [Self <: EnumBooleanMember](x: Self) {
     
-    @scala.inline
-    def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: LiteralKind | Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: LiteralKind | Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.EnumBooleanMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.EnumBooleanMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ trait GitImportRequest extends StObject {
 }
 object GitImportRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     detailedStatus: GitImportStatusDetail,
     importRequestId: Double,
@@ -57,28 +56,20 @@ object GitImportRequest {
     __obj.asInstanceOf[GitImportRequest]
   }
   
-  @scala.inline
-  implicit class GitImportRequestMutableBuilder[Self <: GitImportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GitImportRequest](x: Self) {
     
-    @scala.inline
-    def setDetailedStatus(value: GitImportStatusDetail): Self = StObject.set(x, "detailedStatus", value.asInstanceOf[js.Any])
+    inline def setDetailedStatus(value: GitImportStatusDetail): Self = StObject.set(x, "detailedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportRequestId(value: Double): Self = StObject.set(x, "importRequestId", value.asInstanceOf[js.Any])
+    inline def setImportRequestId(value: Double): Self = StObject.set(x, "importRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: GitImportRequestParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GitImportRequestParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: GitAsyncOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GitAsyncOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

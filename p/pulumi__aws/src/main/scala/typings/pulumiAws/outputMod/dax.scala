@@ -21,26 +21,20 @@ object dax {
   }
   object ClusterNode {
     
-    @scala.inline
-    def apply(address: String, availabilityZone: String, id: String, port: Double): ClusterNode = {
+    inline def apply(address: String, availabilityZone: String, id: String, port: Double): ClusterNode = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterNode]
     }
     
-    @scala.inline
-    implicit class ClusterNodeMutableBuilder[Self <: ClusterNode] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterNode](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,20 +47,16 @@ object dax {
   }
   object ClusterServerSideEncryption {
     
-    @scala.inline
-    def apply(): ClusterServerSideEncryption = {
+    inline def apply(): ClusterServerSideEncryption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterServerSideEncryption]
     }
     
-    @scala.inline
-    implicit class ClusterServerSideEncryptionMutableBuilder[Self <: ClusterServerSideEncryption] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterServerSideEncryption](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     }
   }
   
@@ -84,20 +74,16 @@ object dax {
   }
   object ParameterGroupParameter {
     
-    @scala.inline
-    def apply(name: String, value: String): ParameterGroupParameter = {
+    inline def apply(name: String, value: String): ParameterGroupParameter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParameterGroupParameter]
     }
     
-    @scala.inline
-    implicit class ParameterGroupParameterMutableBuilder[Self <: ParameterGroupParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ParameterGroupParameter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

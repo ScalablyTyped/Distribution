@@ -23,46 +23,33 @@ trait AccountSummary extends StObject {
 }
 object AccountSummary {
   
-  @scala.inline
-  def apply(): AccountSummary = {
+  inline def apply(): AccountSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountSummary]
   }
   
-  @scala.inline
-  implicit class AccountSummaryMutableBuilder[Self <: AccountSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSummary](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
+    inline def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarredUndefined: Self = StObject.set(x, "starred", js.undefined)
+    inline def setStarredUndefined: Self = StObject.set(x, "starred", js.undefined)
     
-    @scala.inline
-    def setWebProperties(value: js.Array[WebPropertySummary]): Self = StObject.set(x, "webProperties", value.asInstanceOf[js.Any])
+    inline def setWebProperties(value: js.Array[WebPropertySummary]): Self = StObject.set(x, "webProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPropertiesUndefined: Self = StObject.set(x, "webProperties", js.undefined)
+    inline def setWebPropertiesUndefined: Self = StObject.set(x, "webProperties", js.undefined)
     
-    @scala.inline
-    def setWebPropertiesVarargs(value: WebPropertySummary*): Self = StObject.set(x, "webProperties", js.Array(value :_*))
+    inline def setWebPropertiesVarargs(value: WebPropertySummary*): Self = StObject.set(x, "webProperties", js.Array(value :_*))
   }
 }

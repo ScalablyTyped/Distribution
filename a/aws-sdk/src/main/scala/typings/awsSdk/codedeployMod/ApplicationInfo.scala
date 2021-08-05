@@ -38,49 +38,35 @@ trait ApplicationInfo extends StObject {
 }
 object ApplicationInfo {
   
-  @scala.inline
-  def apply(): ApplicationInfo = {
+  inline def apply(): ApplicationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationInfo]
   }
   
-  @scala.inline
-  implicit class ApplicationInfoMutableBuilder[Self <: ApplicationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationInfo](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: ApplicationId): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+    inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
-    @scala.inline
-    def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
+    inline def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
+    inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: Timestamp): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setGitHubAccountName(value: GitHubAccountTokenName): Self = StObject.set(x, "gitHubAccountName", value.asInstanceOf[js.Any])
+    inline def setGitHubAccountName(value: GitHubAccountTokenName): Self = StObject.set(x, "gitHubAccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitHubAccountNameUndefined: Self = StObject.set(x, "gitHubAccountName", js.undefined)
+    inline def setGitHubAccountNameUndefined: Self = StObject.set(x, "gitHubAccountName", js.undefined)
     
-    @scala.inline
-    def setLinkedToGitHub(value: Boolean): Self = StObject.set(x, "linkedToGitHub", value.asInstanceOf[js.Any])
+    inline def setLinkedToGitHub(value: Boolean): Self = StObject.set(x, "linkedToGitHub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedToGitHubUndefined: Self = StObject.set(x, "linkedToGitHub", js.undefined)
+    inline def setLinkedToGitHubUndefined: Self = StObject.set(x, "linkedToGitHub", js.undefined)
   }
 }

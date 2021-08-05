@@ -12,8 +12,7 @@ trait ScanWhereChain
 }
 object ScanWhereChain {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginsWith: js.Any => Scan,
     between: (js.Any, js.Any) => Scan,
     contains: js.Any => Scan,
@@ -38,10 +37,8 @@ object ScanWhereChain {
     __obj.asInstanceOf[ScanWhereChain]
   }
   
-  @scala.inline
-  implicit class ScanWhereChainMutableBuilder[Self <: ScanWhereChain] (val x: Self) extends AnyVal {
+  extension [Self <: ScanWhereChain](x: Self) {
     
-    @scala.inline
-    def setNotNull(value: () => Scan): Self = StObject.set(x, "notNull", js.Any.fromFunction0(value))
+    inline def setNotNull(value: () => Scan): Self = StObject.set(x, "notNull", js.Any.fromFunction0(value))
   }
 }

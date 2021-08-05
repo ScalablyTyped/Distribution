@@ -23,25 +23,19 @@ trait TransferCertificateRequest extends StObject {
 }
 object TransferCertificateRequest {
   
-  @scala.inline
-  def apply(certificateId: CertificateId, targetAwsAccount: AwsAccountId): TransferCertificateRequest = {
+  inline def apply(certificateId: CertificateId, targetAwsAccount: AwsAccountId): TransferCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any], targetAwsAccount = targetAwsAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferCertificateRequest]
   }
   
-  @scala.inline
-  implicit class TransferCertificateRequestMutableBuilder[Self <: TransferCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TransferCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAwsAccount(value: AwsAccountId): Self = StObject.set(x, "targetAwsAccount", value.asInstanceOf[js.Any])
+    inline def setTargetAwsAccount(value: AwsAccountId): Self = StObject.set(x, "targetAwsAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferMessage(value: Message): Self = StObject.set(x, "transferMessage", value.asInstanceOf[js.Any])
+    inline def setTransferMessage(value: Message): Self = StObject.set(x, "transferMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferMessageUndefined: Self = StObject.set(x, "transferMessage", js.undefined)
+    inline def setTransferMessageUndefined: Self = StObject.set(x, "transferMessage", js.undefined)
   }
 }

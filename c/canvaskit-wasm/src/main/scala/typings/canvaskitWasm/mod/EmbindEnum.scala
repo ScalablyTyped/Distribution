@@ -10,19 +10,15 @@ trait EmbindEnum extends StObject {
 }
 object EmbindEnum {
   
-  @scala.inline
-  def apply(values: js.Array[Double]): EmbindEnum = {
+  inline def apply(values: js.Array[Double]): EmbindEnum = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbindEnum]
   }
   
-  @scala.inline
-  implicit class EmbindEnumMutableBuilder[Self <: EmbindEnum] (val x: Self) extends AnyVal {
+  extension [Self <: EmbindEnum](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

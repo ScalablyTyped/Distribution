@@ -12,19 +12,15 @@ trait CandleStickChartProps
 }
 object CandleStickChartProps {
   
-  @scala.inline
-  def apply(): CandleStickChartProps = {
+  inline def apply(): CandleStickChartProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CandleStickChartProps]
   }
   
-  @scala.inline
-  implicit class CandleStickChartPropsMutableBuilder[Self <: CandleStickChartProps] (val x: Self) extends AnyVal {
+  extension [Self <: CandleStickChartProps](x: Self) {
     
-    @scala.inline
-    def setData(value: CandleStickData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CandleStickData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

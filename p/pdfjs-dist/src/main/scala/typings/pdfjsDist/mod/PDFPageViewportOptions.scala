@@ -20,8 +20,7 @@ trait PDFPageViewportOptions extends StObject {
 }
 object PDFPageViewportOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dontFlip: Boolean,
     offsetX: Double,
     offsetY: Double,
@@ -33,25 +32,18 @@ object PDFPageViewportOptions {
     __obj.asInstanceOf[PDFPageViewportOptions]
   }
   
-  @scala.inline
-  implicit class PDFPageViewportOptionsMutableBuilder[Self <: PDFPageViewportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PDFPageViewportOptions](x: Self) {
     
-    @scala.inline
-    def setDontFlip(value: Boolean): Self = StObject.set(x, "dontFlip", value.asInstanceOf[js.Any])
+    inline def setDontFlip(value: Boolean): Self = StObject.set(x, "dontFlip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewBox(value: js.Any): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+    inline def setViewBox(value: js.Any): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
   }
 }

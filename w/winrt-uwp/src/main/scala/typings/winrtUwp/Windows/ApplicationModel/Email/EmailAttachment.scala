@@ -40,8 +40,7 @@ trait EmailAttachment extends StObject {
 }
 object EmailAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentId: String,
     contentLocation: String,
     data: IRandomAccessStreamReference,
@@ -57,37 +56,26 @@ object EmailAttachment {
     __obj.asInstanceOf[EmailAttachment]
   }
   
-  @scala.inline
-  implicit class EmailAttachmentMutableBuilder[Self <: EmailAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: EmailAttachment](x: Self) {
     
-    @scala.inline
-    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+    inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentLocation(value: String): Self = StObject.set(x, "contentLocation", value.asInstanceOf[js.Any])
+    inline def setContentLocation(value: String): Self = StObject.set(x, "contentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: IRandomAccessStreamReference): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IRandomAccessStreamReference): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadState(value: EmailAttachmentDownloadState): Self = StObject.set(x, "downloadState", value.asInstanceOf[js.Any])
+    inline def setDownloadState(value: EmailAttachmentDownloadState): Self = StObject.set(x, "downloadState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedDownloadSizeInBytes(value: Double): Self = StObject.set(x, "estimatedDownloadSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setEstimatedDownloadSizeInBytes(value: Double): Self = StObject.set(x, "estimatedDownloadSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFromBaseMessage(value: Boolean): Self = StObject.set(x, "isFromBaseMessage", value.asInstanceOf[js.Any])
+    inline def setIsFromBaseMessage(value: Boolean): Self = StObject.set(x, "isFromBaseMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+    inline def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
   }
 }

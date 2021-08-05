@@ -30,8 +30,7 @@ trait AccessibleTextGraphicObject
      with XAccessibleEventBroadcaster
 object AccessibleTextGraphicObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleImageDescription: String,

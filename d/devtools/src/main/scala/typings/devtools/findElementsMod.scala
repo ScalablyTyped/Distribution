@@ -12,6 +12,5 @@ object findElementsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasUsingValue: Using): js.Promise[js.Array[Recordelement606611e4a52e]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Recordelement606611e4a52e]]]
+  inline def default(hasUsingValue: Using): js.Promise[js.Array[Recordelement606611e4a52e]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUsingValue.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Recordelement606611e4a52e]]]
 }

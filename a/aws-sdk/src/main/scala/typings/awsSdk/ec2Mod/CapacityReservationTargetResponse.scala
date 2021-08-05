@@ -18,25 +18,19 @@ trait CapacityReservationTargetResponse extends StObject {
 }
 object CapacityReservationTargetResponse {
   
-  @scala.inline
-  def apply(): CapacityReservationTargetResponse = {
+  inline def apply(): CapacityReservationTargetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CapacityReservationTargetResponse]
   }
   
-  @scala.inline
-  implicit class CapacityReservationTargetResponseMutableBuilder[Self <: CapacityReservationTargetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityReservationTargetResponse](x: Self) {
     
-    @scala.inline
-    def setCapacityReservationId(value: String): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationId(value: String): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityReservationIdUndefined: Self = StObject.set(x, "CapacityReservationId", js.undefined)
+    inline def setCapacityReservationIdUndefined: Self = StObject.set(x, "CapacityReservationId", js.undefined)
     
-    @scala.inline
-    def setCapacityReservationResourceGroupArn(value: String): Self = StObject.set(x, "CapacityReservationResourceGroupArn", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationResourceGroupArn(value: String): Self = StObject.set(x, "CapacityReservationResourceGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityReservationResourceGroupArnUndefined: Self = StObject.set(x, "CapacityReservationResourceGroupArn", js.undefined)
+    inline def setCapacityReservationResourceGroupArnUndefined: Self = StObject.set(x, "CapacityReservationResourceGroupArn", js.undefined)
   }
 }

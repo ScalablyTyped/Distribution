@@ -33,40 +33,29 @@ trait ListPullRequestsInput extends StObject {
 }
 object ListPullRequestsInput {
   
-  @scala.inline
-  def apply(repositoryName: RepositoryName): ListPullRequestsInput = {
+  inline def apply(repositoryName: RepositoryName): ListPullRequestsInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPullRequestsInput]
   }
   
-  @scala.inline
-  implicit class ListPullRequestsInputMutableBuilder[Self <: ListPullRequestsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListPullRequestsInput](x: Self) {
     
-    @scala.inline
-    def setAuthorArn(value: Arn): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
+    inline def setAuthorArn(value: Arn): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorArnUndefined: Self = StObject.set(x, "authorArn", js.undefined)
+    inline def setAuthorArnUndefined: Self = StObject.set(x, "authorArn", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPullRequestStatus(value: PullRequestStatusEnum): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
+    inline def setPullRequestStatus(value: PullRequestStatusEnum): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
+    inline def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

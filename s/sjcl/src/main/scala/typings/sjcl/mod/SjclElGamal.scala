@@ -19,8 +19,7 @@ trait SjclElGamal extends StObject {
 }
 object SjclElGamal {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     generateKeys: (/* curve */ SjclEllipticalCurve | Double, /* paranoia */ Double, /* sec */ js.UndefOr[BigNumber]) => SjclKeyPair[SjclElGamalPublicKey, SjclElGamalSecretKey],
     publicKey: SjclECCPublicKeyFactory[SjclElGamalPublicKey],
     secretKey: SjclECCSecretKeyFactory[SjclElGamalSecretKey]
@@ -29,18 +28,14 @@ object SjclElGamal {
     __obj.asInstanceOf[SjclElGamal]
   }
   
-  @scala.inline
-  implicit class SjclElGamalMutableBuilder[Self <: SjclElGamal] (val x: Self) extends AnyVal {
+  extension [Self <: SjclElGamal](x: Self) {
     
-    @scala.inline
-    def setGenerateKeys(
+    inline def setGenerateKeys(
       value: (/* curve */ SjclEllipticalCurve | Double, /* paranoia */ Double, /* sec */ js.UndefOr[BigNumber]) => SjclKeyPair[SjclElGamalPublicKey, SjclElGamalSecretKey]
     ): Self = StObject.set(x, "generateKeys", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPublicKey(value: SjclECCPublicKeyFactory[SjclElGamalPublicKey]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: SjclECCPublicKeyFactory[SjclElGamalPublicKey]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretKey(value: SjclECCSecretKeyFactory[SjclElGamalSecretKey]): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+    inline def setSecretKey(value: SjclECCSecretKeyFactory[SjclElGamalSecretKey]): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
   }
 }

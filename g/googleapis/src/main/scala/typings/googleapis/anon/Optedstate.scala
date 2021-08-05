@@ -10,19 +10,15 @@ trait Optedstate extends StObject {
 }
 object Optedstate {
   
-  @scala.inline
-  def apply(): Optedstate = {
+  inline def apply(): Optedstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Optedstate]
   }
   
-  @scala.inline
-  implicit class OptedstateMutableBuilder[Self <: Optedstate] (val x: Self) extends AnyVal {
+  extension [Self <: Optedstate](x: Self) {
     
-    @scala.inline
-    def setOpted_state(value: String): Self = StObject.set(x, "opted_state", value.asInstanceOf[js.Any])
+    inline def setOpted_state(value: String): Self = StObject.set(x, "opted_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpted_stateUndefined: Self = StObject.set(x, "opted_state", js.undefined)
+    inline def setOpted_stateUndefined: Self = StObject.set(x, "opted_state", js.undefined)
   }
 }

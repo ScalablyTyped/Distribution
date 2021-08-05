@@ -11,6 +11,5 @@ object wonkaSourceIntervalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def interval(interval: Double): Source[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")(interval.asInstanceOf[js.Any]).asInstanceOf[Source[Double]]
+  inline def interval(interval: Double): Source[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")(interval.asInstanceOf[js.Any]).asInstanceOf[Source[Double]]
 }

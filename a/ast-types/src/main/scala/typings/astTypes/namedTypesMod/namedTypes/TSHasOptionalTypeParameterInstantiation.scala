@@ -16,16 +16,12 @@ object TSHasOptionalTypeParameterInstantiation {
   @js.native
   val ^ : Type[TSHasOptionalTypeParameterInstantiation] = js.native
   
-  @scala.inline
-  implicit class TSHasOptionalTypeParameterInstantiationMutableBuilder[Self <: TSHasOptionalTypeParameterInstantiation] (val x: Self) extends AnyVal {
+  extension [Self <: TSHasOptionalTypeParameterInstantiation](x: Self) {
     
-    @scala.inline
-    def setTypeParameters(value: TSTypeParameterInstantiationKind): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TSTypeParameterInstantiationKind): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     
-    @scala.inline
-    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
+    inline def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

@@ -10,15 +10,11 @@ object idnaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def nameprep(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nameprep")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nameprep(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nameprep")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def nameprepTableA1(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_nameprepTableA1")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def nameprepTableA1(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_nameprepTableA1")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def nameprepTableB2(codepoint: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("_nameprepTableB2")(codepoint.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def nameprepTableB2(codepoint: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("_nameprepTableB2")(codepoint.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def nameprepTableC(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_nameprepTableC")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def nameprepTableC(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_nameprepTableC")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

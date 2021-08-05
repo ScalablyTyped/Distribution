@@ -18,8 +18,7 @@ trait SwitchStatement
 }
 object SwitchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -48,19 +47,14 @@ object SwitchStatement {
     __obj.asInstanceOf[SwitchStatement]
   }
   
-  @scala.inline
-  implicit class SwitchStatementMutableBuilder[Self <: SwitchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchStatement](x: Self) {
     
-    @scala.inline
-    def setCloseParenToken(value: ASTSpan): Self = StObject.set(x, "closeParenToken", value.asInstanceOf[js.Any])
+    inline def setCloseParenToken(value: ASTSpan): Self = StObject.set(x, "closeParenToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (SwitchStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (SwitchStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSwitchClauses(value: ISyntaxList2): Self = StObject.set(x, "switchClauses", value.asInstanceOf[js.Any])
+    inline def setSwitchClauses(value: ISyntaxList2): Self = StObject.set(x, "switchClauses", value.asInstanceOf[js.Any])
   }
 }

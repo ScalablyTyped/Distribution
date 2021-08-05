@@ -20,8 +20,7 @@ object withFormikMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withFormik[OuterProps /* <: js.Object */, Values /* <: FormikValues */, Payload](hasMapPropsToValuesConfig: WithFormikConfig[OuterProps, Values, Payload]): ComponentDecorator[OuterProps, OuterProps & FormikProps[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFormik")(hasMapPropsToValuesConfig.asInstanceOf[js.Any]).asInstanceOf[ComponentDecorator[OuterProps, OuterProps & FormikProps[Values]]]
+  inline def withFormik[OuterProps /* <: js.Object */, Values /* <: FormikValues */, Payload](hasMapPropsToValuesConfig: WithFormikConfig[OuterProps, Values, Payload]): ComponentDecorator[OuterProps, OuterProps & FormikProps[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFormik")(hasMapPropsToValuesConfig.asInstanceOf[js.Any]).asInstanceOf[ComponentDecorator[OuterProps, OuterProps & FormikProps[Values]]]
   
   type ComponentDecorator[TOwnProps, TMergedProps] = js.Function1[/* component */ CompositeComponent[TMergedProps], ComponentType[TOwnProps]]
   
@@ -93,68 +92,48 @@ object withFormikMod {
   }
   object WithFormikConfig {
     
-    @scala.inline
-    def apply[Props, Values /* <: FormikValues */, DeprecatedPayload](handleSubmit: (Values, FormikBag[Props, Values]) => Unit): WithFormikConfig[Props, Values, DeprecatedPayload] = {
+    inline def apply[Props, Values /* <: FormikValues */, DeprecatedPayload](handleSubmit: (Values, FormikBag[Props, Values]) => Unit): WithFormikConfig[Props, Values, DeprecatedPayload] = {
       val __obj = js.Dynamic.literal(handleSubmit = js.Any.fromFunction2(handleSubmit))
       __obj.asInstanceOf[WithFormikConfig[Props, Values, DeprecatedPayload]]
     }
     
-    @scala.inline
-    implicit class WithFormikConfigMutableBuilder[Self <: WithFormikConfig[?, ?, ?], Props, Values /* <: FormikValues */, DeprecatedPayload] (val x: Self & (WithFormikConfig[Props, Values, DeprecatedPayload])) extends AnyVal {
+    extension [Self <: WithFormikConfig[?, ?, ?], Props, Values /* <: FormikValues */, DeprecatedPayload](x: Self & (WithFormikConfig[Props, Values, DeprecatedPayload])) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setHandleSubmit(value: (Values, FormikBag[Props, Values]) => Unit): Self = StObject.set(x, "handleSubmit", js.Any.fromFunction2(value))
+      inline def setHandleSubmit(value: (Values, FormikBag[Props, Values]) => Unit): Self = StObject.set(x, "handleSubmit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMapPropsToErrors(value: /* props */ Props => FormikErrors[Values]): Self = StObject.set(x, "mapPropsToErrors", js.Any.fromFunction1(value))
+      inline def setMapPropsToErrors(value: /* props */ Props => FormikErrors[Values]): Self = StObject.set(x, "mapPropsToErrors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapPropsToErrorsUndefined: Self = StObject.set(x, "mapPropsToErrors", js.undefined)
+      inline def setMapPropsToErrorsUndefined: Self = StObject.set(x, "mapPropsToErrors", js.undefined)
       
-      @scala.inline
-      def setMapPropsToStatus(value: /* props */ Props => js.Any): Self = StObject.set(x, "mapPropsToStatus", js.Any.fromFunction1(value))
+      inline def setMapPropsToStatus(value: /* props */ Props => js.Any): Self = StObject.set(x, "mapPropsToStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapPropsToStatusUndefined: Self = StObject.set(x, "mapPropsToStatus", js.undefined)
+      inline def setMapPropsToStatusUndefined: Self = StObject.set(x, "mapPropsToStatus", js.undefined)
       
-      @scala.inline
-      def setMapPropsToTouched(value: /* props */ Props => FormikTouched[Values]): Self = StObject.set(x, "mapPropsToTouched", js.Any.fromFunction1(value))
+      inline def setMapPropsToTouched(value: /* props */ Props => FormikTouched[Values]): Self = StObject.set(x, "mapPropsToTouched", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapPropsToTouchedUndefined: Self = StObject.set(x, "mapPropsToTouched", js.undefined)
+      inline def setMapPropsToTouchedUndefined: Self = StObject.set(x, "mapPropsToTouched", js.undefined)
       
-      @scala.inline
-      def setMapPropsToValues(value: /* props */ Props => Values): Self = StObject.set(x, "mapPropsToValues", js.Any.fromFunction1(value))
+      inline def setMapPropsToValues(value: /* props */ Props => Values): Self = StObject.set(x, "mapPropsToValues", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapPropsToValuesUndefined: Self = StObject.set(x, "mapPropsToValues", js.undefined)
+      inline def setMapPropsToValuesUndefined: Self = StObject.set(x, "mapPropsToValues", js.undefined)
       
-      @scala.inline
-      def setMapValuesToPayload(value: /* values */ Values => DeprecatedPayload): Self = StObject.set(x, "mapValuesToPayload", js.Any.fromFunction1(value))
+      inline def setMapValuesToPayload(value: /* values */ Values => DeprecatedPayload): Self = StObject.set(x, "mapValuesToPayload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapValuesToPayloadUndefined: Self = StObject.set(x, "mapValuesToPayload", js.undefined)
+      inline def setMapValuesToPayloadUndefined: Self = StObject.set(x, "mapValuesToPayload", js.undefined)
       
-      @scala.inline
-      def setValidate(value: (/* values */ Values, /* props */ Props) => Unit | js.Object | js.Promise[js.Any]): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+      inline def setValidate(value: (/* values */ Values, /* props */ Props) => Unit | js.Object | js.Promise[js.Any]): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      @scala.inline
-      def setValidationSchema(value: js.Any | (js.Function1[/* props */ Props, js.Any])): Self = StObject.set(x, "validationSchema", value.asInstanceOf[js.Any])
+      inline def setValidationSchema(value: js.Any | (js.Function1[/* props */ Props, js.Any])): Self = StObject.set(x, "validationSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationSchemaFunction1(value: /* props */ Props => js.Any): Self = StObject.set(x, "validationSchema", js.Any.fromFunction1(value))
+      inline def setValidationSchemaFunction1(value: /* props */ Props => js.Any): Self = StObject.set(x, "validationSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidationSchemaUndefined: Self = StObject.set(x, "validationSchema", js.undefined)
+      inline def setValidationSchemaUndefined: Self = StObject.set(x, "validationSchema", js.undefined)
     }
   }
 }

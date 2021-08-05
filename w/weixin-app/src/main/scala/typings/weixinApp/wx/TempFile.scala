@@ -14,19 +14,15 @@ trait TempFile extends StObject {
 }
 object TempFile {
   
-  @scala.inline
-  def apply(path: String, size: Double): TempFile = {
+  inline def apply(path: String, size: Double): TempFile = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[TempFile]
   }
   
-  @scala.inline
-  implicit class TempFileMutableBuilder[Self <: TempFile] (val x: Self) extends AnyVal {
+  extension [Self <: TempFile](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

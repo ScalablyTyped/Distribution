@@ -76,67 +76,47 @@ trait SchemaDeviceRegistry extends StObject {
 }
 object SchemaDeviceRegistry {
   
-  @scala.inline
-  def apply(): SchemaDeviceRegistry = {
+  inline def apply(): SchemaDeviceRegistry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeviceRegistry]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceRegistryMutableBuilder[Self <: SchemaDeviceRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeviceRegistry](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: js.Array[SchemaRegistryCredential]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: js.Array[SchemaRegistryCredential]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setCredentialsVarargs(value: SchemaRegistryCredential*): Self = StObject.set(x, "credentials", js.Array(value :_*))
+    inline def setCredentialsVarargs(value: SchemaRegistryCredential*): Self = StObject.set(x, "credentials", js.Array(value :_*))
     
-    @scala.inline
-    def setEventNotificationConfigs(value: js.Array[SchemaEventNotificationConfig]): Self = StObject.set(x, "eventNotificationConfigs", value.asInstanceOf[js.Any])
+    inline def setEventNotificationConfigs(value: js.Array[SchemaEventNotificationConfig]): Self = StObject.set(x, "eventNotificationConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNotificationConfigsUndefined: Self = StObject.set(x, "eventNotificationConfigs", js.undefined)
+    inline def setEventNotificationConfigsUndefined: Self = StObject.set(x, "eventNotificationConfigs", js.undefined)
     
-    @scala.inline
-    def setEventNotificationConfigsVarargs(value: SchemaEventNotificationConfig*): Self = StObject.set(x, "eventNotificationConfigs", js.Array(value :_*))
+    inline def setEventNotificationConfigsVarargs(value: SchemaEventNotificationConfig*): Self = StObject.set(x, "eventNotificationConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setHttpConfig(value: SchemaHttpConfig): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
+    inline def setHttpConfig(value: SchemaHttpConfig): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
+    inline def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setMqttConfig(value: SchemaMqttConfig): Self = StObject.set(x, "mqttConfig", value.asInstanceOf[js.Any])
+    inline def setMqttConfig(value: SchemaMqttConfig): Self = StObject.set(x, "mqttConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMqttConfigUndefined: Self = StObject.set(x, "mqttConfig", js.undefined)
+    inline def setMqttConfigUndefined: Self = StObject.set(x, "mqttConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStateNotificationConfig(value: SchemaStateNotificationConfig): Self = StObject.set(x, "stateNotificationConfig", value.asInstanceOf[js.Any])
+    inline def setStateNotificationConfig(value: SchemaStateNotificationConfig): Self = StObject.set(x, "stateNotificationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNotificationConfigUndefined: Self = StObject.set(x, "stateNotificationConfig", js.undefined)
+    inline def setStateNotificationConfigUndefined: Self = StObject.set(x, "stateNotificationConfig", js.undefined)
   }
 }

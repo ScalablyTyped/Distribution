@@ -11,16 +11,13 @@ trait IWebRequestExecutorFactory extends StObject {
 }
 object IWebRequestExecutorFactory {
   
-  @scala.inline
-  def apply(createWebRequestExecutor: () => WebRequestExecutor): IWebRequestExecutorFactory = {
+  inline def apply(createWebRequestExecutor: () => WebRequestExecutor): IWebRequestExecutorFactory = {
     val __obj = js.Dynamic.literal(createWebRequestExecutor = js.Any.fromFunction0(createWebRequestExecutor))
     __obj.asInstanceOf[IWebRequestExecutorFactory]
   }
   
-  @scala.inline
-  implicit class IWebRequestExecutorFactoryMutableBuilder[Self <: IWebRequestExecutorFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IWebRequestExecutorFactory](x: Self) {
     
-    @scala.inline
-    def setCreateWebRequestExecutor(value: () => WebRequestExecutor): Self = StObject.set(x, "createWebRequestExecutor", js.Any.fromFunction0(value))
+    inline def setCreateWebRequestExecutor(value: () => WebRequestExecutor): Self = StObject.set(x, "createWebRequestExecutor", js.Any.fromFunction0(value))
   }
 }

@@ -12,19 +12,15 @@ trait PullsMergeResponse409Data extends StObject {
 }
 object PullsMergeResponse409Data {
   
-  @scala.inline
-  def apply(documentation_url: String, message: String): PullsMergeResponse409Data = {
+  inline def apply(documentation_url: String, message: String): PullsMergeResponse409Data = {
     val __obj = js.Dynamic.literal(documentation_url = documentation_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsMergeResponse409Data]
   }
   
-  @scala.inline
-  implicit class PullsMergeResponse409DataMutableBuilder[Self <: PullsMergeResponse409Data] (val x: Self) extends AnyVal {
+  extension [Self <: PullsMergeResponse409Data](x: Self) {
     
-    @scala.inline
-    def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
+    inline def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

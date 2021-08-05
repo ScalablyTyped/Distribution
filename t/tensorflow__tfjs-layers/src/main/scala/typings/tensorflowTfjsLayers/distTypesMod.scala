@@ -18,20 +18,16 @@ object distTypesMod {
   }
   object HasShape {
     
-    @scala.inline
-    def apply(shape: Shape): HasShape = {
+    inline def apply(shape: Shape): HasShape = {
       val __obj = js.Dynamic.literal(shape = shape.asInstanceOf[js.Any])
       __obj.asInstanceOf[HasShape]
     }
     
-    @scala.inline
-    implicit class HasShapeMutableBuilder[Self <: HasShape] (val x: Self) extends AnyVal {
+    extension [Self <: HasShape](x: Self) {
       
-      @scala.inline
-      def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value :_*))
     }
   }
   
@@ -47,20 +43,16 @@ object distTypesMod {
   }
   object NamedTensor {
     
-    @scala.inline
-    def apply(name: String, tensor: Tensor[Rank]): NamedTensor = {
+    inline def apply(name: String, tensor: Tensor[Rank]): NamedTensor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], tensor = tensor.asInstanceOf[js.Any])
       __obj.asInstanceOf[NamedTensor]
     }
     
-    @scala.inline
-    implicit class NamedTensorMutableBuilder[Self <: NamedTensor] (val x: Self) extends AnyVal {
+    extension [Self <: NamedTensor](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTensor(value: Tensor[Rank]): Self = StObject.set(x, "tensor", value.asInstanceOf[js.Any])
+      inline def setTensor(value: Tensor[Rank]): Self = StObject.set(x, "tensor", value.asInstanceOf[js.Any])
     }
   }
   

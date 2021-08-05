@@ -10,6 +10,5 @@ object isValidAuthorityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValidAuthority(authority: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAuthority")(authority.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidAuthority(authority: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAuthority")(authority.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

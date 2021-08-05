@@ -11,20 +11,17 @@ object sanitizeHtmlStrings {
   sealed trait discard
     extends StObject
        with DisallowedTagsModes
-  @scala.inline
-  def discard: discard = "discard".asInstanceOf[discard]
+  inline def discard: discard = "discard".asInstanceOf[discard]
   
   @js.native
   sealed trait escape
     extends StObject
        with DisallowedTagsModes
-  @scala.inline
-  def escape: escape = "escape".asInstanceOf[escape]
+  inline def escape: escape = "escape".asInstanceOf[escape]
   
   @js.native
   sealed trait recursiveEscape
     extends StObject
        with DisallowedTagsModes
-  @scala.inline
-  def recursiveEscape: recursiveEscape = "recursiveEscape".asInstanceOf[recursiveEscape]
+  inline def recursiveEscape: recursiveEscape = "recursiveEscape".asInstanceOf[recursiveEscape]
 }

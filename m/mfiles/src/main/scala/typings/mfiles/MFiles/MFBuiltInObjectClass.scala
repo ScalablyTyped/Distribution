@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFBuiltInObjectClass extends StObject
 object MFBuiltInObjectClass {
   
-  @scala.inline
-  def Any: `-3` = -3.asInstanceOf[`-3`]
+  inline def Any: `-3` = -3.asInstanceOf[`-3`]
   
-  @scala.inline
-  def GenericAssignment: `-100` = -100.asInstanceOf[`-100`]
+  inline def GenericAssignment: `-100` = -100.asInstanceOf[`-100`]
   
-  @scala.inline
-  def NotSet: `-2` = -2.asInstanceOf[`-2`]
+  inline def NotSet: `-2` = -2.asInstanceOf[`-2`]
 }

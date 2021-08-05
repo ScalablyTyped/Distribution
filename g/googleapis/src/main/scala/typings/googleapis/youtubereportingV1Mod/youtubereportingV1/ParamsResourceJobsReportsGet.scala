@@ -35,37 +35,27 @@ trait ParamsResourceJobsReportsGet
 }
 object ParamsResourceJobsReportsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceJobsReportsGet = {
+  inline def apply(): ParamsResourceJobsReportsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceJobsReportsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceJobsReportsGetMutableBuilder[Self <: ParamsResourceJobsReportsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceJobsReportsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
+    inline def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
-    @scala.inline
-    def setReportId(value: String): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
+    inline def setReportId(value: String): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportIdUndefined: Self = StObject.set(x, "reportId", js.undefined)
+    inline def setReportIdUndefined: Self = StObject.set(x, "reportId", js.undefined)
   }
 }

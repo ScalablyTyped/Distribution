@@ -19,25 +19,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def active(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("active")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def active(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("active")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def clear(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def clear(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def create(secret: String, payload: js.Any): JWT = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(secret.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[JWT]
-  @scala.inline
-  def create(secret: js.Function1[/* payload */ js.Any, String], payload: js.Any): JWT = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(secret.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[JWT]
+  inline def create(secret: String, payload: js.Any): JWT = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(secret.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[JWT]
+  inline def create(secret: js.Function1[/* payload */ js.Any, String], payload: js.Any): JWT = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(secret.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[JWT]
   
-  @scala.inline
-  def init(secret: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def init(secret: String, options: JWTExpressOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def init(secret: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def init(
+  inline def init(secret: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def init(secret: String, options: JWTExpressOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def init(secret: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def init(
     secret: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String],
     options: JWTExpressOptions
   ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
@@ -45,20 +37,14 @@ object mod {
   @JSImport("jwt-express", "options")
   @js.native
   def options: JWTExpressOptions = js.native
-  @scala.inline
-  def options_=(x: JWTExpressOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+  inline def options_=(x: JWTExpressOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def require(key: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def require(key: String, operator: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def require(key: String, operator: String, value: js.Any): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def require(key: String, operator: Unit, value: js.Any): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def require(key: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def require(key: String, operator: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def require(key: String, operator: String, value: js.Any): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def require(key: String, operator: Unit, value: js.Any): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(key.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def valid(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def valid(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   trait JWT extends StObject {
     
@@ -145,8 +131,7 @@ object mod {
   }
   object JWT {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expired: Boolean,
       options: JWTExpressOptions,
       payload: js.Any,
@@ -165,47 +150,33 @@ object mod {
       __obj.asInstanceOf[JWT]
     }
     
-    @scala.inline
-    implicit class JWTMutableBuilder[Self <: JWT] (val x: Self) extends AnyVal {
+    extension [Self <: JWT](x: Self) {
       
-      @scala.inline
-      def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+      inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: JWTExpressOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: JWTExpressOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResign(value: () => JWT): Self = StObject.set(x, "resign", js.Any.fromFunction0(value))
+      inline def setResign(value: () => JWT): Self = StObject.set(x, "resign", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRevoke(value: () => JWT): Self = StObject.set(x, "revoke", js.Any.fromFunction0(value))
+      inline def setRevoke(value: () => JWT): Self = StObject.set(x, "revoke", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSign(value: js.Any => JWT): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: js.Any => JWT): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStale(value: Boolean): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+      inline def setStale(value: Boolean): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore(value: Response_[js.Any] => JWT): Self = StObject.set(x, "store", js.Any.fromFunction1(value))
+      inline def setStore(value: Response_[js.Any] => JWT): Self = StObject.set(x, "store", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerify(value: String => JWT): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
+      inline def setVerify(value: String => JWT): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
     }
   }
   
@@ -214,8 +185,7 @@ object mod {
        with Error
   object JWTExpressError {
     
-    @scala.inline
-    def apply(message: String, name: String): JWTExpressError = {
+    inline def apply(message: String, name: String): JWTExpressError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[JWTExpressError]
     }
@@ -275,74 +245,52 @@ object mod {
   }
   object JWTExpressOptions {
     
-    @scala.inline
-    def apply(): JWTExpressOptions = {
+    inline def apply(): JWTExpressOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JWTExpressOptions]
     }
     
-    @scala.inline
-    implicit class JWTExpressOptionsMutableBuilder[Self <: JWTExpressOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JWTExpressOptions](x: Self) {
       
-      @scala.inline
-      def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieOptions(value: CookieOptions): Self = StObject.set(x, "cookieOptions", value.asInstanceOf[js.Any])
+      inline def setCookieOptions(value: CookieOptions): Self = StObject.set(x, "cookieOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieOptionsUndefined: Self = StObject.set(x, "cookieOptions", js.undefined)
+      inline def setCookieOptionsUndefined: Self = StObject.set(x, "cookieOptions", js.undefined)
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+      inline def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+      inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
       
-      @scala.inline
-      def setReqProperty(value: String): Self = StObject.set(x, "reqProperty", value.asInstanceOf[js.Any])
+      inline def setReqProperty(value: String): Self = StObject.set(x, "reqProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqPropertyUndefined: Self = StObject.set(x, "reqProperty", js.undefined)
+      inline def setReqPropertyUndefined: Self = StObject.set(x, "reqProperty", js.undefined)
       
-      @scala.inline
-      def setRevoke(value: /* jwt */ JWT => Unit): Self = StObject.set(x, "revoke", js.Any.fromFunction1(value))
+      inline def setRevoke(value: /* jwt */ JWT => Unit): Self = StObject.set(x, "revoke", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRevokeUndefined: Self = StObject.set(x, "revoke", js.undefined)
+      inline def setRevokeUndefined: Self = StObject.set(x, "revoke", js.undefined)
       
-      @scala.inline
-      def setSignOptions(value: SignOptions): Self = StObject.set(x, "signOptions", value.asInstanceOf[js.Any])
+      inline def setSignOptions(value: SignOptions): Self = StObject.set(x, "signOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignOptionsUndefined: Self = StObject.set(x, "signOptions", js.undefined)
+      inline def setSignOptionsUndefined: Self = StObject.set(x, "signOptions", js.undefined)
       
-      @scala.inline
-      def setStales(value: Double): Self = StObject.set(x, "stales", value.asInstanceOf[js.Any])
+      inline def setStales(value: Double): Self = StObject.set(x, "stales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStalesUndefined: Self = StObject.set(x, "stales", js.undefined)
+      inline def setStalesUndefined: Self = StObject.set(x, "stales", js.undefined)
       
-      @scala.inline
-      def setVerify(value: /* jwt */ JWT => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
+      inline def setVerify(value: /* jwt */ JWT => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerifyOptions(value: VerifyOptions): Self = StObject.set(x, "verifyOptions", value.asInstanceOf[js.Any])
+      inline def setVerifyOptions(value: VerifyOptions): Self = StObject.set(x, "verifyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifyOptionsUndefined: Self = StObject.set(x, "verifyOptions", js.undefined)
+      inline def setVerifyOptionsUndefined: Self = StObject.set(x, "verifyOptions", js.undefined)
       
-      @scala.inline
-      def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
+      inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
     }
   }
   
@@ -356,17 +304,14 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(jwt: JWT): Request = {
+        inline def apply(jwt: JWT): Request = {
           val __obj = js.Dynamic.literal(jwt = jwt.asInstanceOf[js.Any])
           __obj.asInstanceOf[Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+        extension [Self <: Request](x: Self) {
           
-          @scala.inline
-          def setJwt(value: JWT): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
+          inline def setJwt(value: JWT): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
         }
       }
       
@@ -383,17 +328,14 @@ object mod {
       }
       object Response {
         
-        @scala.inline
-        def apply(jwt: js.Any => JWT): Response = {
+        inline def apply(jwt: js.Any => JWT): Response = {
           val __obj = js.Dynamic.literal(jwt = js.Any.fromFunction1(jwt))
           __obj.asInstanceOf[Response]
         }
         
-        @scala.inline
-        implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+        extension [Self <: Response](x: Self) {
           
-          @scala.inline
-          def setJwt(value: js.Any => JWT): Self = StObject.set(x, "jwt", js.Any.fromFunction1(value))
+          inline def setJwt(value: js.Any => JWT): Self = StObject.set(x, "jwt", js.Any.fromFunction1(value))
         }
       }
     }

@@ -13,16 +13,13 @@ trait SubscriptionDiagnostics extends StObject {
 }
 object SubscriptionDiagnostics {
   
-  @scala.inline
-  def apply(notificationTracing: NotificationTracing): SubscriptionDiagnostics = {
+  inline def apply(notificationTracing: NotificationTracing): SubscriptionDiagnostics = {
     val __obj = js.Dynamic.literal(notificationTracing = notificationTracing.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionDiagnostics]
   }
   
-  @scala.inline
-  implicit class SubscriptionDiagnosticsMutableBuilder[Self <: SubscriptionDiagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionDiagnostics](x: Self) {
     
-    @scala.inline
-    def setNotificationTracing(value: NotificationTracing): Self = StObject.set(x, "notificationTracing", value.asInstanceOf[js.Any])
+    inline def setNotificationTracing(value: NotificationTracing): Self = StObject.set(x, "notificationTracing", value.asInstanceOf[js.Any])
   }
 }

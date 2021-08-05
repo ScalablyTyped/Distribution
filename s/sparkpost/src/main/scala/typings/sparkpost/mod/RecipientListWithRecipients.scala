@@ -13,8 +13,7 @@ trait RecipientListWithRecipients
 }
 object RecipientListWithRecipients {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: js.Any,
     description: String,
     id: String,
@@ -26,13 +25,10 @@ object RecipientListWithRecipients {
     __obj.asInstanceOf[RecipientListWithRecipients]
   }
   
-  @scala.inline
-  implicit class RecipientListWithRecipientsMutableBuilder[Self <: RecipientListWithRecipients] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientListWithRecipients](x: Self) {
     
-    @scala.inline
-    def setRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
   }
 }

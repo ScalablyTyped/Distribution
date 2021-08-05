@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoCompleteTrigger extends StObject
 object AutoCompleteTrigger {
   
-  @scala.inline
-  def focus: typings.jsoneditor.jsoneditorStrings.focus = "focus".asInstanceOf[typings.jsoneditor.jsoneditorStrings.focus]
+  inline def focus: typings.jsoneditor.jsoneditorStrings.focus = "focus".asInstanceOf[typings.jsoneditor.jsoneditorStrings.focus]
   
-  @scala.inline
-  def keydown: typings.jsoneditor.jsoneditorStrings.keydown = "keydown".asInstanceOf[typings.jsoneditor.jsoneditorStrings.keydown]
+  inline def keydown: typings.jsoneditor.jsoneditorStrings.keydown = "keydown".asInstanceOf[typings.jsoneditor.jsoneditorStrings.keydown]
 }

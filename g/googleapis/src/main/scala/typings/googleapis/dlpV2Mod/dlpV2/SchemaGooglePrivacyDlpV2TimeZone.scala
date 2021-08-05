@@ -14,19 +14,15 @@ trait SchemaGooglePrivacyDlpV2TimeZone extends StObject {
 }
 object SchemaGooglePrivacyDlpV2TimeZone {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2TimeZone = {
+  inline def apply(): SchemaGooglePrivacyDlpV2TimeZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TimeZone]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TimeZoneMutableBuilder[Self <: SchemaGooglePrivacyDlpV2TimeZone] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2TimeZone](x: Self) {
     
-    @scala.inline
-    def setOffsetMinutes(value: Double): Self = StObject.set(x, "offsetMinutes", value.asInstanceOf[js.Any])
+    inline def setOffsetMinutes(value: Double): Self = StObject.set(x, "offsetMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetMinutesUndefined: Self = StObject.set(x, "offsetMinutes", js.undefined)
+    inline def setOffsetMinutesUndefined: Self = StObject.set(x, "offsetMinutes", js.undefined)
   }
 }

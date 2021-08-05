@@ -12,28 +12,21 @@ trait DocBlockTags extends StObject {
 }
 object DocBlockTags {
   
-  @scala.inline
-  def apply(): DocBlockTags = {
+  inline def apply(): DocBlockTags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocBlockTags]
   }
   
-  @scala.inline
-  implicit class DocBlockTagsMutableBuilder[Self <: DocBlockTags] (val x: Self) extends AnyVal {
+  extension [Self <: DocBlockTags](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[ParamTag | Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[ParamTag | Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: (ParamTag | Tag)*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: (ParamTag | Tag)*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait BatchListObjectAttributesResponse extends StObject {
 }
 object BatchListObjectAttributesResponse {
   
-  @scala.inline
-  def apply(): BatchListObjectAttributesResponse = {
+  inline def apply(): BatchListObjectAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchListObjectAttributesResponse]
   }
   
-  @scala.inline
-  implicit class BatchListObjectAttributesResponseMutableBuilder[Self <: BatchListObjectAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchListObjectAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeKeyAndValueList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeKeyAndValueList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

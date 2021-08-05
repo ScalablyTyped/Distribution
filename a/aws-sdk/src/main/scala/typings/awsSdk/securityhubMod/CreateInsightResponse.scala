@@ -13,16 +13,13 @@ trait CreateInsightResponse extends StObject {
 }
 object CreateInsightResponse {
   
-  @scala.inline
-  def apply(InsightArn: NonEmptyString): CreateInsightResponse = {
+  inline def apply(InsightArn: NonEmptyString): CreateInsightResponse = {
     val __obj = js.Dynamic.literal(InsightArn = InsightArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInsightResponse]
   }
   
-  @scala.inline
-  implicit class CreateInsightResponseMutableBuilder[Self <: CreateInsightResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInsightResponse](x: Self) {
     
-    @scala.inline
-    def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
+    inline def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
   }
 }

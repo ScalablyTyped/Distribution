@@ -33,43 +33,31 @@ trait TaskRunProperties extends StObject {
 }
 object TaskRunProperties {
   
-  @scala.inline
-  def apply(): TaskRunProperties = {
+  inline def apply(): TaskRunProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskRunProperties]
   }
   
-  @scala.inline
-  implicit class TaskRunPropertiesMutableBuilder[Self <: TaskRunProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TaskRunProperties](x: Self) {
     
-    @scala.inline
-    def setExportLabelsTaskRunProperties(value: ExportLabelsTaskRunProperties): Self = StObject.set(x, "ExportLabelsTaskRunProperties", value.asInstanceOf[js.Any])
+    inline def setExportLabelsTaskRunProperties(value: ExportLabelsTaskRunProperties): Self = StObject.set(x, "ExportLabelsTaskRunProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportLabelsTaskRunPropertiesUndefined: Self = StObject.set(x, "ExportLabelsTaskRunProperties", js.undefined)
+    inline def setExportLabelsTaskRunPropertiesUndefined: Self = StObject.set(x, "ExportLabelsTaskRunProperties", js.undefined)
     
-    @scala.inline
-    def setFindMatchesTaskRunProperties(value: FindMatchesTaskRunProperties): Self = StObject.set(x, "FindMatchesTaskRunProperties", value.asInstanceOf[js.Any])
+    inline def setFindMatchesTaskRunProperties(value: FindMatchesTaskRunProperties): Self = StObject.set(x, "FindMatchesTaskRunProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindMatchesTaskRunPropertiesUndefined: Self = StObject.set(x, "FindMatchesTaskRunProperties", js.undefined)
+    inline def setFindMatchesTaskRunPropertiesUndefined: Self = StObject.set(x, "FindMatchesTaskRunProperties", js.undefined)
     
-    @scala.inline
-    def setImportLabelsTaskRunProperties(value: ImportLabelsTaskRunProperties): Self = StObject.set(x, "ImportLabelsTaskRunProperties", value.asInstanceOf[js.Any])
+    inline def setImportLabelsTaskRunProperties(value: ImportLabelsTaskRunProperties): Self = StObject.set(x, "ImportLabelsTaskRunProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportLabelsTaskRunPropertiesUndefined: Self = StObject.set(x, "ImportLabelsTaskRunProperties", js.undefined)
+    inline def setImportLabelsTaskRunPropertiesUndefined: Self = StObject.set(x, "ImportLabelsTaskRunProperties", js.undefined)
     
-    @scala.inline
-    def setLabelingSetGenerationTaskRunProperties(value: LabelingSetGenerationTaskRunProperties): Self = StObject.set(x, "LabelingSetGenerationTaskRunProperties", value.asInstanceOf[js.Any])
+    inline def setLabelingSetGenerationTaskRunProperties(value: LabelingSetGenerationTaskRunProperties): Self = StObject.set(x, "LabelingSetGenerationTaskRunProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingSetGenerationTaskRunPropertiesUndefined: Self = StObject.set(x, "LabelingSetGenerationTaskRunProperties", js.undefined)
+    inline def setLabelingSetGenerationTaskRunPropertiesUndefined: Self = StObject.set(x, "LabelingSetGenerationTaskRunProperties", js.undefined)
     
-    @scala.inline
-    def setTaskType(value: TaskType): Self = StObject.set(x, "TaskType", value.asInstanceOf[js.Any])
+    inline def setTaskType(value: TaskType): Self = StObject.set(x, "TaskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskTypeUndefined: Self = StObject.set(x, "TaskType", js.undefined)
+    inline def setTaskTypeUndefined: Self = StObject.set(x, "TaskType", js.undefined)
   }
 }

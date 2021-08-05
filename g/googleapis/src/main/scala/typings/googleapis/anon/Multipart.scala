@@ -12,25 +12,19 @@ trait Multipart extends StObject {
 }
 object Multipart {
   
-  @scala.inline
-  def apply(): Multipart = {
+  inline def apply(): Multipart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Multipart]
   }
   
-  @scala.inline
-  implicit class MultipartMutableBuilder[Self <: Multipart] (val x: Self) extends AnyVal {
+  extension [Self <: Multipart](x: Self) {
     
-    @scala.inline
-    def setMultipart(value: Boolean): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+    inline def setMultipart(value: Boolean): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
+    inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

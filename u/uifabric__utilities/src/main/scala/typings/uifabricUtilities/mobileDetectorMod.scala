@@ -10,6 +10,5 @@ object mobileDetectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isIOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[Boolean]
+  inline def isIOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[Boolean]
 }

@@ -16,43 +16,43 @@ class ReferenceResolver protected ()
     useCaseSensitiveFileResolution: Boolean
   ) = this()
   
-  /* CompleteClass */
-  /* private */ override def getNormalizedFilePath(path: js.Any, parentFilePath: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getNormalizedFilePath(path: js.Any, parentFilePath: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def getUniqueFileId(filePath: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def getUniqueFileId(filePath: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var host: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var inputFileNames: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def isSameFile(filePath1: js.Any, filePath2: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def isSameFile(filePath1: js.Any, filePath2: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def isVisited(filePath: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def isVisited(filePath: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def recordVisitedFile(filePath: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def recordVisitedFile(filePath: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def resolveFile(normalizedPath: js.Any, resolutionResult: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def resolveFile(normalizedPath: js.Any, resolutionResult: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def resolveImportedFile(path: js.Any, referenceLocation: js.Any, resolutionResult: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def resolveImportedFile(path: js.Any, referenceLocation: js.Any, resolutionResult: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def resolveIncludedFile(path: js.Any, referenceLocation: js.Any, resolutionResult: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def resolveIncludedFile(path: js.Any, referenceLocation: js.Any, resolutionResult: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def resolveInputFiles(): typings.typescriptServices.TypeScript.ReferenceResolutionResult = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var useCaseSensitiveFileResolution: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var visited: js.Any = js.native
 }
 object ReferenceResolver {
@@ -62,8 +62,7 @@ object ReferenceResolver {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def resolve(
+  inline def resolve(
     inputFileNames: js.Array[String],
     host: IReferenceResolverHost,
     useCaseSensitiveFileResolution: Boolean

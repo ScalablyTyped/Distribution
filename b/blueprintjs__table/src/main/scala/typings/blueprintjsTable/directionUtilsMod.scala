@@ -12,6 +12,5 @@ object directionUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def directionToDelta(direction: Direction): IMovementDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("directionToDelta")(direction.asInstanceOf[js.Any]).asInstanceOf[IMovementDelta]
+  inline def directionToDelta(direction: Direction): IMovementDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("directionToDelta")(direction.asInstanceOf[js.Any]).asInstanceOf[IMovementDelta]
 }

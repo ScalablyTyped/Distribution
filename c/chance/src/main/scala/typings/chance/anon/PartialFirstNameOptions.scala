@@ -16,25 +16,19 @@ trait PartialFirstNameOptions extends StObject {
 }
 object PartialFirstNameOptions {
   
-  @scala.inline
-  def apply(): PartialFirstNameOptions = {
+  inline def apply(): PartialFirstNameOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialFirstNameOptions]
   }
   
-  @scala.inline
-  implicit class PartialFirstNameOptionsMutableBuilder[Self <: PartialFirstNameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialFirstNameOptions](x: Self) {
     
-    @scala.inline
-    def setGender(value: male | female): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: male | female): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
-    @scala.inline
-    def setNationality(value: FirstNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
+    inline def setNationality(value: FirstNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNationalityUndefined: Self = StObject.set(x, "nationality", js.undefined)
+    inline def setNationalityUndefined: Self = StObject.set(x, "nationality", js.undefined)
   }
 }

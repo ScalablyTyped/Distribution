@@ -18,19 +18,15 @@ trait DoubleClick
 }
 object DoubleClick {
   
-  @scala.inline
-  def apply(): DoubleClick = {
+  inline def apply(): DoubleClick = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleClick]
   }
   
-  @scala.inline
-  implicit class DoubleClickMutableBuilder[Self <: DoubleClick] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleClick](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

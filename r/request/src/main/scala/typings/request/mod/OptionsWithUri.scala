@@ -12,8 +12,7 @@ trait OptionsWithUri
      with Options
 object OptionsWithUri {
   
-  @scala.inline
-  def apply(uri: String | Url): OptionsWithUri = {
+  inline def apply(uri: String | Url): OptionsWithUri = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsWithUri]
   }

@@ -30,31 +30,23 @@ trait WeightedBackendService extends StObject {
 }
 object WeightedBackendService {
   
-  @scala.inline
-  def apply(): WeightedBackendService = {
+  inline def apply(): WeightedBackendService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeightedBackendService]
   }
   
-  @scala.inline
-  implicit class WeightedBackendServiceMutableBuilder[Self <: WeightedBackendService] (val x: Self) extends AnyVal {
+  extension [Self <: WeightedBackendService](x: Self) {
     
-    @scala.inline
-    def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
+    inline def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
+    inline def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
     
-    @scala.inline
-    def setHeaderAction(value: HttpHeaderAction): Self = StObject.set(x, "headerAction", value.asInstanceOf[js.Any])
+    inline def setHeaderAction(value: HttpHeaderAction): Self = StObject.set(x, "headerAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderActionUndefined: Self = StObject.set(x, "headerAction", js.undefined)
+    inline def setHeaderActionUndefined: Self = StObject.set(x, "headerAction", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

@@ -13,7 +13,7 @@ object automationErrorsMod {
     extends StObject
        with Error {
     
-    var commandResult: js.Any = js.native
+    /* private */ var commandResult: js.Any = js.native
     
     /* CompleteClass */
     var message: String = js.native

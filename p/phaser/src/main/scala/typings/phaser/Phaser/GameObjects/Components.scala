@@ -615,8 +615,7 @@ object Components {
   }
   object ComputedSize {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       displayHeight: Double,
       displayWidth: Double,
       height: Double,
@@ -628,26 +627,19 @@ object Components {
       __obj.asInstanceOf[ComputedSize]
     }
     
-    @scala.inline
-    implicit class ComputedSizeMutableBuilder[Self <: ComputedSize] (val x: Self) extends AnyVal {
+    extension [Self <: ComputedSize](x: Self) {
       
-      @scala.inline
-      def setDisplayHeight(value: Double): Self = StObject.set(x, "displayHeight", value.asInstanceOf[js.Any])
+      inline def setDisplayHeight(value: Double): Self = StObject.set(x, "displayHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayWidth(value: Double): Self = StObject.set(x, "displayWidth", value.asInstanceOf[js.Any])
+      inline def setDisplayWidth(value: Double): Self = StObject.set(x, "displayWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDisplaySize(value: (Double, Double) => ComputedSize): Self = StObject.set(x, "setDisplaySize", js.Any.fromFunction2(value))
+      inline def setSetDisplaySize(value: (Double, Double) => ComputedSize): Self = StObject.set(x, "setDisplaySize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSize(value: (Double, Double) => ComputedSize): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
+      inline def setSetSize(value: (Double, Double) => ComputedSize): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -762,20 +754,16 @@ object Components {
   }
   object Depth {
     
-    @scala.inline
-    def apply(depth: Double, setDepth: integer => Depth): Depth = {
+    inline def apply(depth: Double, setDepth: integer => Depth): Depth = {
       val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], setDepth = js.Any.fromFunction1(setDepth))
       __obj.asInstanceOf[Depth]
     }
     
-    @scala.inline
-    implicit class DepthMutableBuilder[Self <: Depth] (val x: Self) extends AnyVal {
+    extension [Self <: Depth](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDepth(value: integer => Depth): Self = StObject.set(x, "setDepth", js.Any.fromFunction1(value))
+      inline def setSetDepth(value: integer => Depth): Self = StObject.set(x, "setDepth", js.Any.fromFunction1(value))
     }
   }
   
@@ -851,8 +839,7 @@ object Components {
   }
   object Flip {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       flipX: Boolean,
       flipY: Boolean,
       resetFlip: () => Flip,
@@ -866,32 +853,23 @@ object Components {
       __obj.asInstanceOf[Flip]
     }
     
-    @scala.inline
-    implicit class FlipMutableBuilder[Self <: Flip] (val x: Self) extends AnyVal {
+    extension [Self <: Flip](x: Self) {
       
-      @scala.inline
-      def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+      inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetFlip(value: () => Flip): Self = StObject.set(x, "resetFlip", js.Any.fromFunction0(value))
+      inline def setResetFlip(value: () => Flip): Self = StObject.set(x, "resetFlip", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetFlip(value: (Boolean, Boolean) => Flip): Self = StObject.set(x, "setFlip", js.Any.fromFunction2(value))
+      inline def setSetFlip(value: (Boolean, Boolean) => Flip): Self = StObject.set(x, "setFlip", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetFlipX(value: Boolean => Flip): Self = StObject.set(x, "setFlipX", js.Any.fromFunction1(value))
+      inline def setSetFlipX(value: Boolean => Flip): Self = StObject.set(x, "setFlipX", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFlipY(value: Boolean => Flip): Self = StObject.set(x, "setFlipY", js.Any.fromFunction1(value))
+      inline def setSetFlipY(value: Boolean => Flip): Self = StObject.set(x, "setFlipY", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggleFlipX(value: () => Flip): Self = StObject.set(x, "toggleFlipX", js.Any.fromFunction0(value))
+      inline def setToggleFlipX(value: () => Flip): Self = StObject.set(x, "toggleFlipX", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleFlipY(value: () => Flip): Self = StObject.set(x, "toggleFlipY", js.Any.fromFunction0(value))
+      inline def setToggleFlipY(value: () => Flip): Self = StObject.set(x, "toggleFlipY", js.Any.fromFunction0(value))
     }
   }
   
@@ -1424,8 +1402,7 @@ object Components {
   }
   object Size {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       displayHeight: Double,
       displayWidth: Double,
       height: Double,
@@ -1438,29 +1415,21 @@ object Components {
       __obj.asInstanceOf[Size]
     }
     
-    @scala.inline
-    implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+    extension [Self <: Size](x: Self) {
       
-      @scala.inline
-      def setDisplayHeight(value: Double): Self = StObject.set(x, "displayHeight", value.asInstanceOf[js.Any])
+      inline def setDisplayHeight(value: Double): Self = StObject.set(x, "displayHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayWidth(value: Double): Self = StObject.set(x, "displayWidth", value.asInstanceOf[js.Any])
+      inline def setDisplayWidth(value: Double): Self = StObject.set(x, "displayWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDisplaySize(value: (Double, Double) => Size): Self = StObject.set(x, "setDisplaySize", js.Any.fromFunction2(value))
+      inline def setSetDisplaySize(value: (Double, Double) => Size): Self = StObject.set(x, "setDisplaySize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSize(value: (Double, Double) => Size): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
+      inline def setSetSize(value: (Double, Double) => Size): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSizeToFrame(value: Frame => Size): Self = StObject.set(x, "setSizeToFrame", js.Any.fromFunction1(value))
+      inline def setSetSizeToFrame(value: Frame => Size): Self = StObject.set(x, "setSizeToFrame", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2251,20 +2220,16 @@ object Components {
   }
   object Visible {
     
-    @scala.inline
-    def apply(setVisible: Boolean => Visible, visible: Boolean): Visible = {
+    inline def apply(setVisible: Boolean => Visible, visible: Boolean): Visible = {
       val __obj = js.Dynamic.literal(setVisible = js.Any.fromFunction1(setVisible), visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[Visible]
     }
     
-    @scala.inline
-    implicit class VisibleMutableBuilder[Self <: Visible] (val x: Self) extends AnyVal {
+    extension [Self <: Visible](x: Self) {
       
-      @scala.inline
-      def setSetVisible(value: Boolean => Visible): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+      inline def setSetVisible(value: Boolean => Visible): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

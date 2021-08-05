@@ -34,31 +34,23 @@ trait IBANDetails
 }
 object IBANDetails {
   
-  @scala.inline
-  def apply(IBAN: String, OwnerAddress: AddressType, OwnerName: String): IBANDetails = {
+  inline def apply(IBAN: String, OwnerAddress: AddressType, OwnerName: String): IBANDetails = {
     val __obj = js.Dynamic.literal(IBAN = IBAN.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = "IBAN")
     __obj.asInstanceOf[IBANDetails]
   }
   
-  @scala.inline
-  implicit class IBANDetailsMutableBuilder[Self <: IBANDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IBANDetails](x: Self) {
     
-    @scala.inline
-    def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
+    inline def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBICUndefined: Self = StObject.set(x, "BIC", js.undefined)
+    inline def setBICUndefined: Self = StObject.set(x, "BIC", js.undefined)
     
-    @scala.inline
-    def setIBAN(value: String): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
+    inline def setIBAN(value: String): Self = StObject.set(x, "IBAN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
+    inline def setOwnerAddress(value: AddressType): Self = StObject.set(x, "OwnerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
+    inline def setOwnerName(value: String): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: IBAN): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: IBAN): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

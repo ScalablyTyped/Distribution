@@ -9,8 +9,7 @@ trait CoreAcceleratorKeys
      with ICoreAcceleratorKeys
 object CoreAcceleratorKeys {
   
-  @scala.inline
-  def apply(onacceleratorkeyactivated: js.Any): CoreAcceleratorKeys = {
+  inline def apply(onacceleratorkeyactivated: js.Any): CoreAcceleratorKeys = {
     val __obj = js.Dynamic.literal(onacceleratorkeyactivated = onacceleratorkeyactivated.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreAcceleratorKeys]
   }

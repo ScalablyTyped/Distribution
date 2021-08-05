@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdPreferredWidthType extends StObject
 object WdPreferredWidthType {
   
-  @scala.inline
-  def wdPreferredWidthAuto: `1` = 1.asInstanceOf[`1`]
+  inline def wdPreferredWidthAuto: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdPreferredWidthPercent: `2` = 2.asInstanceOf[`2`]
+  inline def wdPreferredWidthPercent: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdPreferredWidthPoints: `3` = 3.asInstanceOf[`3`]
+  inline def wdPreferredWidthPoints: `3` = 3.asInstanceOf[`3`]
 }

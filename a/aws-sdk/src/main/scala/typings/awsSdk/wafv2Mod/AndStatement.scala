@@ -13,19 +13,15 @@ trait AndStatement extends StObject {
 }
 object AndStatement {
   
-  @scala.inline
-  def apply(Statements: Statements): AndStatement = {
+  inline def apply(Statements: Statements): AndStatement = {
     val __obj = js.Dynamic.literal(Statements = Statements.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndStatement]
   }
   
-  @scala.inline
-  implicit class AndStatementMutableBuilder[Self <: AndStatement] (val x: Self) extends AnyVal {
+  extension [Self <: AndStatement](x: Self) {
     
-    @scala.inline
-    def setStatements(value: Statements): Self = StObject.set(x, "Statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: Statements): Self = StObject.set(x, "Statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "Statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "Statements", js.Array(value :_*))
   }
 }

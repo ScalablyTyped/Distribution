@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(content: String): js.Array[PropertyInfo] = ^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[PropertyInfo]]
+  inline def apply(content: String): js.Array[PropertyInfo] = ^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[PropertyInfo]]
   
   @JSImport("find-duplicated-property-keys", JSImport.Namespace)
   @js.native
@@ -42,8 +41,7 @@ object mod {
   }
   object PropertyInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isArray: Boolean,
       key: String,
       occurrence: Double,
@@ -54,23 +52,17 @@ object mod {
       __obj.asInstanceOf[PropertyInfo]
     }
     
-    @scala.inline
-    implicit class PropertyInfoMutableBuilder[Self <: PropertyInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PropertyInfo](x: Self) {
       
-      @scala.inline
-      def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
+      inline def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOccurrence(value: Double): Self = StObject.set(x, "occurrence", value.asInstanceOf[js.Any])
+      inline def setOccurrence(value: Double): Self = StObject.set(x, "occurrence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: PropertyInfo): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: PropertyInfo): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyPath(value: () => js.Array[String]): Self = StObject.set(x, "propertyPath", js.Any.fromFunction0(value))
+      inline def setPropertyPath(value: () => js.Array[String]): Self = StObject.set(x, "propertyPath", js.Any.fromFunction0(value))
     }
   }
 }

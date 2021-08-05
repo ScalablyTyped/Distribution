@@ -16,8 +16,7 @@ trait SimplesortOptions extends StObject {
 }
 object SimplesortOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     desc: Boolean,
     disableIndexIntersect: Boolean,
     forceIndexIntersect: Boolean,
@@ -27,19 +26,14 @@ object SimplesortOptions {
     __obj.asInstanceOf[SimplesortOptions]
   }
   
-  @scala.inline
-  implicit class SimplesortOptionsMutableBuilder[Self <: SimplesortOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SimplesortOptions](x: Self) {
     
-    @scala.inline
-    def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableIndexIntersect(value: Boolean): Self = StObject.set(x, "disableIndexIntersect", value.asInstanceOf[js.Any])
+    inline def setDisableIndexIntersect(value: Boolean): Self = StObject.set(x, "disableIndexIntersect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceIndexIntersect(value: Boolean): Self = StObject.set(x, "forceIndexIntersect", value.asInstanceOf[js.Any])
+    inline def setForceIndexIntersect(value: Boolean): Self = StObject.set(x, "forceIndexIntersect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseJavascriptSorting(value: Boolean): Self = StObject.set(x, "useJavascriptSorting", value.asInstanceOf[js.Any])
+    inline def setUseJavascriptSorting(value: Boolean): Self = StObject.set(x, "useJavascriptSorting", value.asInstanceOf[js.Any])
   }
 }

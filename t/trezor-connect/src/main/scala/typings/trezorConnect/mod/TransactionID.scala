@@ -10,16 +10,13 @@ trait TransactionID extends StObject {
 }
 object TransactionID {
   
-  @scala.inline
-  def apply(txid: String): TransactionID = {
+  inline def apply(txid: String): TransactionID = {
     val __obj = js.Dynamic.literal(txid = txid.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionID]
   }
   
-  @scala.inline
-  implicit class TransactionIDMutableBuilder[Self <: TransactionID] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionID](x: Self) {
     
-    @scala.inline
-    def setTxid(value: String): Self = StObject.set(x, "txid", value.asInstanceOf[js.Any])
+    inline def setTxid(value: String): Self = StObject.set(x, "txid", value.asInstanceOf[js.Any])
   }
 }

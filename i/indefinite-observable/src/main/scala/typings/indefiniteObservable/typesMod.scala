@@ -18,17 +18,14 @@ object typesMod {
   }
   object Observable {
     
-    @scala.inline
-    def apply[T](subscribe: ObserverOrNext[T] => Subscription): Observable[T] = {
+    inline def apply[T](subscribe: ObserverOrNext[T] => Subscription): Observable[T] = {
       val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
       __obj.asInstanceOf[Observable[T]]
     }
     
-    @scala.inline
-    implicit class ObservableMutableBuilder[Self <: Observable[?], T] (val x: Self & Observable[T]) extends AnyVal {
+    extension [Self <: Observable[?], T](x: Self & Observable[T]) {
       
-      @scala.inline
-      def setSubscribe(value: ObserverOrNext[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: ObserverOrNext[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -40,17 +37,14 @@ object typesMod {
   }
   object Observer {
     
-    @scala.inline
-    def apply[T](next: T => Unit): Observer[T] = {
+    inline def apply[T](next: T => Unit): Observer[T] = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Observer[T]]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
+    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
       
-      @scala.inline
-      def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -64,17 +58,14 @@ object typesMod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(unsubscribe: () => Unit): Subscription = {
+    inline def apply(unsubscribe: () => Unit): Subscription = {
       val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
   

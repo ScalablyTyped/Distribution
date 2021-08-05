@@ -33,8 +33,7 @@ trait CommentThreadContext extends StObject {
 }
 object CommentThreadContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filePath: String,
     leftFileEnd: CommentPosition,
     leftFileStart: CommentPosition,
@@ -45,22 +44,16 @@ object CommentThreadContext {
     __obj.asInstanceOf[CommentThreadContext]
   }
   
-  @scala.inline
-  implicit class CommentThreadContextMutableBuilder[Self <: CommentThreadContext] (val x: Self) extends AnyVal {
+  extension [Self <: CommentThreadContext](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftFileEnd(value: CommentPosition): Self = StObject.set(x, "leftFileEnd", value.asInstanceOf[js.Any])
+    inline def setLeftFileEnd(value: CommentPosition): Self = StObject.set(x, "leftFileEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftFileStart(value: CommentPosition): Self = StObject.set(x, "leftFileStart", value.asInstanceOf[js.Any])
+    inline def setLeftFileStart(value: CommentPosition): Self = StObject.set(x, "leftFileStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightFileEnd(value: CommentPosition): Self = StObject.set(x, "rightFileEnd", value.asInstanceOf[js.Any])
+    inline def setRightFileEnd(value: CommentPosition): Self = StObject.set(x, "rightFileEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightFileStart(value: CommentPosition): Self = StObject.set(x, "rightFileStart", value.asInstanceOf[js.Any])
+    inline def setRightFileStart(value: CommentPosition): Self = StObject.set(x, "rightFileStart", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait LifecyclePolicyPreviewSummary extends StObject {
 }
 object LifecyclePolicyPreviewSummary {
   
-  @scala.inline
-  def apply(): LifecyclePolicyPreviewSummary = {
+  inline def apply(): LifecyclePolicyPreviewSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LifecyclePolicyPreviewSummary]
   }
   
-  @scala.inline
-  implicit class LifecyclePolicyPreviewSummaryMutableBuilder[Self <: LifecyclePolicyPreviewSummary] (val x: Self) extends AnyVal {
+  extension [Self <: LifecyclePolicyPreviewSummary](x: Self) {
     
-    @scala.inline
-    def setExpiringImageTotalCount(value: ImageCount): Self = StObject.set(x, "expiringImageTotalCount", value.asInstanceOf[js.Any])
+    inline def setExpiringImageTotalCount(value: ImageCount): Self = StObject.set(x, "expiringImageTotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiringImageTotalCountUndefined: Self = StObject.set(x, "expiringImageTotalCount", js.undefined)
+    inline def setExpiringImageTotalCountUndefined: Self = StObject.set(x, "expiringImageTotalCount", js.undefined)
   }
 }

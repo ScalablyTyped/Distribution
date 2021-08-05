@@ -13,19 +13,15 @@ trait DialogDateResult extends StObject {
 }
 object DialogDateResult {
   
-  @scala.inline
-  def apply(buttonType: buttonType, timestamp: Double): DialogDateResult = {
+  inline def apply(buttonType: buttonType, timestamp: Double): DialogDateResult = {
     val __obj = js.Dynamic.literal(buttonType = buttonType.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogDateResult]
   }
   
-  @scala.inline
-  implicit class DialogDateResultMutableBuilder[Self <: DialogDateResult] (val x: Self) extends AnyVal {
+  extension [Self <: DialogDateResult](x: Self) {
     
-    @scala.inline
-    def setButtonType(value: buttonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+    inline def setButtonType(value: buttonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

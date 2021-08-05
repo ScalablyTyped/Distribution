@@ -21,19 +21,15 @@ trait ITooltipProvider
 }
 object ITooltipProvider {
   
-  @scala.inline
-  def apply($get: js.Any, options: ITooltipOptions => Unit, setTriggers: js.Object => Unit): ITooltipProvider = {
+  inline def apply($get: js.Any, options: ITooltipOptions => Unit, setTriggers: js.Object => Unit): ITooltipProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], options = js.Any.fromFunction1(options), setTriggers = js.Any.fromFunction1(setTriggers))
     __obj.asInstanceOf[ITooltipProvider]
   }
   
-  @scala.inline
-  implicit class ITooltipProviderMutableBuilder[Self <: ITooltipProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ITooltipProvider](x: Self) {
     
-    @scala.inline
-    def setOptions(value: ITooltipOptions => Unit): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+    inline def setOptions(value: ITooltipOptions => Unit): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTriggers(value: js.Object => Unit): Self = StObject.set(x, "setTriggers", js.Any.fromFunction1(value))
+    inline def setSetTriggers(value: js.Object => Unit): Self = StObject.set(x, "setTriggers", js.Any.fromFunction1(value))
   }
 }

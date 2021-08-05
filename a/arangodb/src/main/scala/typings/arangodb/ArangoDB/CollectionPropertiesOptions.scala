@@ -16,37 +16,27 @@ trait CollectionPropertiesOptions extends StObject {
 }
 object CollectionPropertiesOptions {
   
-  @scala.inline
-  def apply(): CollectionPropertiesOptions = {
+  inline def apply(): CollectionPropertiesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionPropertiesOptions]
   }
   
-  @scala.inline
-  implicit class CollectionPropertiesOptionsMutableBuilder[Self <: CollectionPropertiesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionPropertiesOptions](x: Self) {
     
-    @scala.inline
-    def setIndexBuckets(value: Double): Self = StObject.set(x, "indexBuckets", value.asInstanceOf[js.Any])
+    inline def setIndexBuckets(value: Double): Self = StObject.set(x, "indexBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexBucketsUndefined: Self = StObject.set(x, "indexBuckets", js.undefined)
+    inline def setIndexBucketsUndefined: Self = StObject.set(x, "indexBuckets", js.undefined)
     
-    @scala.inline
-    def setJournalSize(value: Double): Self = StObject.set(x, "journalSize", value.asInstanceOf[js.Any])
+    inline def setJournalSize(value: Double): Self = StObject.set(x, "journalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJournalSizeUndefined: Self = StObject.set(x, "journalSize", js.undefined)
+    inline def setJournalSizeUndefined: Self = StObject.set(x, "journalSize", js.undefined)
     
-    @scala.inline
-    def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
+    inline def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationFactorUndefined: Self = StObject.set(x, "replicationFactor", js.undefined)
+    inline def setReplicationFactorUndefined: Self = StObject.set(x, "replicationFactor", js.undefined)
     
-    @scala.inline
-    def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
+    inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
+    inline def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
   }
 }

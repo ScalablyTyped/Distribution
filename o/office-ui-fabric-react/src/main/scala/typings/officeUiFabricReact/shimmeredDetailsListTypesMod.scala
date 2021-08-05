@@ -76,73 +76,52 @@ object shimmeredDetailsListTypesMod {
   }
   object IShimmeredDetailsListProps {
     
-    @scala.inline
-    def apply(): IShimmeredDetailsListProps = {
+    inline def apply(): IShimmeredDetailsListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmeredDetailsListProps]
     }
     
-    @scala.inline
-    implicit class IShimmeredDetailsListPropsMutableBuilder[Self <: IShimmeredDetailsListProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmeredDetailsListProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabelForShimmer(value: String): Self = StObject.set(x, "ariaLabelForShimmer", value.asInstanceOf[js.Any])
+      inline def setAriaLabelForShimmer(value: String): Self = StObject.set(x, "ariaLabelForShimmer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelForShimmerUndefined: Self = StObject.set(x, "ariaLabelForShimmer", js.undefined)
+      inline def setAriaLabelForShimmerUndefined: Self = StObject.set(x, "ariaLabelForShimmer", js.undefined)
       
-      @scala.inline
-      def setDetailsListStyles(value: IStyleFunctionOrObject[IDetailsListStyleProps, IDetailsListStyles]): Self = StObject.set(x, "detailsListStyles", value.asInstanceOf[js.Any])
+      inline def setDetailsListStyles(value: IStyleFunctionOrObject[IDetailsListStyleProps, IDetailsListStyles]): Self = StObject.set(x, "detailsListStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsListStylesFunction1(value: IDetailsListStyleProps => DeepPartial[IDetailsListStyles]): Self = StObject.set(x, "detailsListStyles", js.Any.fromFunction1(value))
+      inline def setDetailsListStylesFunction1(value: IDetailsListStyleProps => DeepPartial[IDetailsListStyles]): Self = StObject.set(x, "detailsListStyles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDetailsListStylesUndefined: Self = StObject.set(x, "detailsListStyles", js.undefined)
+      inline def setDetailsListStylesUndefined: Self = StObject.set(x, "detailsListStyles", js.undefined)
       
-      @scala.inline
-      def setEnableShimmer(value: Boolean): Self = StObject.set(x, "enableShimmer", value.asInstanceOf[js.Any])
+      inline def setEnableShimmer(value: Boolean): Self = StObject.set(x, "enableShimmer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableShimmerUndefined: Self = StObject.set(x, "enableShimmer", js.undefined)
+      inline def setEnableShimmerUndefined: Self = StObject.set(x, "enableShimmer", js.undefined)
       
-      @scala.inline
-      def setOnRenderCustomPlaceholder(
+      inline def setOnRenderCustomPlaceholder(
         value: (/* rowProps */ IDetailsRowProps, /* index */ js.UndefOr[Double], /* defaultRender */ js.UndefOr[js.Function1[/* props */ IDetailsRowProps, ReactNode]]) => ReactNode
       ): Self = StObject.set(x, "onRenderCustomPlaceholder", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnRenderCustomPlaceholderUndefined: Self = StObject.set(x, "onRenderCustomPlaceholder", js.undefined)
+      inline def setOnRenderCustomPlaceholderUndefined: Self = StObject.set(x, "onRenderCustomPlaceholder", js.undefined)
       
-      @scala.inline
-      def setRemoveFadingOverlay(value: Boolean): Self = StObject.set(x, "removeFadingOverlay", value.asInstanceOf[js.Any])
+      inline def setRemoveFadingOverlay(value: Boolean): Self = StObject.set(x, "removeFadingOverlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveFadingOverlayUndefined: Self = StObject.set(x, "removeFadingOverlay", js.undefined)
+      inline def setRemoveFadingOverlayUndefined: Self = StObject.set(x, "removeFadingOverlay", js.undefined)
       
-      @scala.inline
-      def setShimmerLines(value: Double): Self = StObject.set(x, "shimmerLines", value.asInstanceOf[js.Any])
+      inline def setShimmerLines(value: Double): Self = StObject.set(x, "shimmerLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShimmerLinesUndefined: Self = StObject.set(x, "shimmerLines", js.undefined)
+      inline def setShimmerLinesUndefined: Self = StObject.set(x, "shimmerLines", js.undefined)
       
-      @scala.inline
-      def setShimmerOverlayStyles(value: IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles]): Self = StObject.set(x, "shimmerOverlayStyles", value.asInstanceOf[js.Any])
+      inline def setShimmerOverlayStyles(value: IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles]): Self = StObject.set(x, "shimmerOverlayStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShimmerOverlayStylesFunction1(value: IShimmeredDetailsListStyleProps => DeepPartial[IShimmeredDetailsListStyles]): Self = StObject.set(x, "shimmerOverlayStyles", js.Any.fromFunction1(value))
+      inline def setShimmerOverlayStylesFunction1(value: IShimmeredDetailsListStyleProps => DeepPartial[IShimmeredDetailsListStyles]): Self = StObject.set(x, "shimmerOverlayStyles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShimmerOverlayStylesUndefined: Self = StObject.set(x, "shimmerOverlayStyles", js.undefined)
+      inline def setShimmerOverlayStylesUndefined: Self = StObject.set(x, "shimmerOverlayStyles", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IShimmeredDetailsListStyleProps => DeepPartial[IShimmeredDetailsListStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IShimmeredDetailsListStyleProps => DeepPartial[IShimmeredDetailsListStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -153,17 +132,14 @@ object shimmeredDetailsListTypesMod {
   }
   object IShimmeredDetailsListStyleProps {
     
-    @scala.inline
-    def apply(theme: js.Any): IShimmeredDetailsListStyleProps = {
+    inline def apply(theme: js.Any): IShimmeredDetailsListStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShimmeredDetailsListStyleProps]
     }
     
-    @scala.inline
-    implicit class IShimmeredDetailsListStylePropsMutableBuilder[Self <: IShimmeredDetailsListStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmeredDetailsListStyleProps](x: Self) {
       
-      @scala.inline
-      def setTheme(value: js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,23 +152,18 @@ object shimmeredDetailsListTypesMod {
   }
   object IShimmeredDetailsListStyles {
     
-    @scala.inline
-    def apply(): IShimmeredDetailsListStyles = {
+    inline def apply(): IShimmeredDetailsListStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IShimmeredDetailsListStyles]
     }
     
-    @scala.inline
-    implicit class IShimmeredDetailsListStylesMutableBuilder[Self <: IShimmeredDetailsListStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IShimmeredDetailsListStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

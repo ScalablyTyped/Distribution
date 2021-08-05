@@ -13,17 +13,14 @@ trait IWechatPaymentMethodDetails
 }
 object IWechatPaymentMethodDetails {
   
-  @scala.inline
-  def apply(): IWechatPaymentMethodDetails = {
+  inline def apply(): IWechatPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("wechat")
     __obj.asInstanceOf[IWechatPaymentMethodDetails]
   }
   
-  @scala.inline
-  implicit class IWechatPaymentMethodDetailsMutableBuilder[Self <: IWechatPaymentMethodDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IWechatPaymentMethodDetails](x: Self) {
     
-    @scala.inline
-    def setType(value: wechat): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: wechat): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait ASPxClientReportParametersPanel
 }
 object ASPxClientReportParametersPanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     AssignParameter: (String, js.Any) => Unit,
     AssignParameters: js.Array[ASPxClientReportParameterInfo] => Unit,
@@ -63,19 +62,14 @@ object ASPxClientReportParametersPanel {
     __obj.asInstanceOf[ASPxClientReportParametersPanel]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportParametersPanelMutableBuilder[Self <: ASPxClientReportParametersPanel] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportParametersPanel](x: Self) {
     
-    @scala.inline
-    def setAssignParameter(value: (String, js.Any) => Unit): Self = StObject.set(x, "AssignParameter", js.Any.fromFunction2(value))
+    inline def setAssignParameter(value: (String, js.Any) => Unit): Self = StObject.set(x, "AssignParameter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAssignParameters(value: js.Array[ASPxClientReportParameterInfo] => Unit): Self = StObject.set(x, "AssignParameters", js.Any.fromFunction1(value))
+    inline def setAssignParameters(value: js.Array[ASPxClientReportParameterInfo] => Unit): Self = StObject.set(x, "AssignParameters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetEditorByParameterName(value: String => ASPxClientControl): Self = StObject.set(x, "GetEditorByParameterName", js.Any.fromFunction1(value))
+    inline def setGetEditorByParameterName(value: String => ASPxClientControl): Self = StObject.set(x, "GetEditorByParameterName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameterNames(value: () => js.Array[String]): Self = StObject.set(x, "GetParameterNames", js.Any.fromFunction0(value))
+    inline def setGetParameterNames(value: () => js.Array[String]): Self = StObject.set(x, "GetParameterNames", js.Any.fromFunction0(value))
   }
 }

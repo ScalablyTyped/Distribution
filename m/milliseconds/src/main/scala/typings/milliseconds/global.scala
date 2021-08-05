@@ -9,6 +9,5 @@ object global {
   @JSGlobal("milliseconds")
   @js.native
   def milliseconds: Milliseconds = js.native
-  @scala.inline
-  def milliseconds_=(x: Milliseconds): Unit = js.Dynamic.global.updateDynamic("milliseconds")(x.asInstanceOf[js.Any])
+  inline def milliseconds_=(x: Milliseconds): Unit = js.Dynamic.global.updateDynamic("milliseconds")(x.asInstanceOf[js.Any])
 }

@@ -23,31 +23,23 @@ trait FindOneAndDeleteOptions extends StObject {
 }
 object FindOneAndDeleteOptions {
   
-  @scala.inline
-  def apply(): FindOneAndDeleteOptions = {
+  inline def apply(): FindOneAndDeleteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindOneAndDeleteOptions]
   }
   
-  @scala.inline
-  implicit class FindOneAndDeleteOptionsMutableBuilder[Self <: FindOneAndDeleteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FindOneAndDeleteOptions](x: Self) {
     
-    @scala.inline
-    def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
+    inline def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
+    inline def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     
-    @scala.inline
-    def setProjection(value: js.Object): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: js.Object): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setSort(value: js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

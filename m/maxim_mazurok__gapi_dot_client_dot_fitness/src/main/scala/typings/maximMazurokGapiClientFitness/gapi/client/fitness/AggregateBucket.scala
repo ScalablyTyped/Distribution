@@ -26,52 +26,37 @@ trait AggregateBucket extends StObject {
 }
 object AggregateBucket {
   
-  @scala.inline
-  def apply(): AggregateBucket = {
+  inline def apply(): AggregateBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregateBucket]
   }
   
-  @scala.inline
-  implicit class AggregateBucketMutableBuilder[Self <: AggregateBucket] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateBucket](x: Self) {
     
-    @scala.inline
-    def setActivity(value: Double): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: Double): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
+    inline def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
     
-    @scala.inline
-    def setDataset(value: js.Array[Dataset]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: js.Array[Dataset]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setDatasetVarargs(value: Dataset*): Self = StObject.set(x, "dataset", js.Array(value :_*))
+    inline def setDatasetVarargs(value: Dataset*): Self = StObject.set(x, "dataset", js.Array(value :_*))
     
-    @scala.inline
-    def setEndTimeMillis(value: String): Self = StObject.set(x, "endTimeMillis", value.asInstanceOf[js.Any])
+    inline def setEndTimeMillis(value: String): Self = StObject.set(x, "endTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeMillisUndefined: Self = StObject.set(x, "endTimeMillis", js.undefined)
+    inline def setEndTimeMillisUndefined: Self = StObject.set(x, "endTimeMillis", js.undefined)
     
-    @scala.inline
-    def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    @scala.inline
-    def setStartTimeMillis(value: String): Self = StObject.set(x, "startTimeMillis", value.asInstanceOf[js.Any])
+    inline def setStartTimeMillis(value: String): Self = StObject.set(x, "startTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeMillisUndefined: Self = StObject.set(x, "startTimeMillis", js.undefined)
+    inline def setStartTimeMillisUndefined: Self = StObject.set(x, "startTimeMillis", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait SDPOLine extends StObject {
 }
 object SDPOLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: String,
     addressType: String,
     netType: String,
@@ -33,25 +32,18 @@ object SDPOLine {
     __obj.asInstanceOf[SDPOLine]
   }
   
-  @scala.inline
-  implicit class SDPOLineMutableBuilder[Self <: SDPOLine] (val x: Self) extends AnyVal {
+  extension [Self <: SDPOLine](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressType(value: String): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
+    inline def setAddressType(value: String): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
+    inline def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionVersion(value: Double): Self = StObject.set(x, "sessionVersion", value.asInstanceOf[js.Any])
+    inline def setSessionVersion(value: Double): Self = StObject.set(x, "sessionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

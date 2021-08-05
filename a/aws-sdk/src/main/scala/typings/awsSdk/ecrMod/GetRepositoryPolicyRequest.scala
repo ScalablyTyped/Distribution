@@ -18,22 +18,17 @@ trait GetRepositoryPolicyRequest extends StObject {
 }
 object GetRepositoryPolicyRequest {
   
-  @scala.inline
-  def apply(repositoryName: RepositoryName): GetRepositoryPolicyRequest = {
+  inline def apply(repositoryName: RepositoryName): GetRepositoryPolicyRequest = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRepositoryPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetRepositoryPolicyRequestMutableBuilder[Self <: GetRepositoryPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRepositoryPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

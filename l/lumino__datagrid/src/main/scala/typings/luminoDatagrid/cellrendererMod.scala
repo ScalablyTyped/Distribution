@@ -48,8 +48,7 @@ object cellrendererMod {
       *
       * @returns The resolved value for the option.
       */
-    @scala.inline
-    def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOption")(option.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOption")(option.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * An object which holds the configuration data for a cell.
@@ -103,8 +102,7 @@ object cellrendererMod {
     }
     object CellConfig {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         column: Double,
         height: Double,
         metadata: Metadata,
@@ -119,35 +117,25 @@ object cellrendererMod {
         __obj.asInstanceOf[CellConfig]
       }
       
-      @scala.inline
-      implicit class CellConfigMutableBuilder[Self <: CellConfig] (val x: Self) extends AnyVal {
+      extension [Self <: CellConfig](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegion(value: CellRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: CellRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+        inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
     

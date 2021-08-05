@@ -17,28 +17,21 @@ trait Arialabelledby extends StObject {
 }
 object Arialabelledby {
   
-  @scala.inline
-  def apply(ref: /* instance */ HTMLElement | Null => Unit): Arialabelledby = {
+  inline def apply(ref: /* instance */ HTMLElement | Null => Unit): Arialabelledby = {
     val __obj = js.Dynamic.literal(ref = js.Any.fromFunction1(ref))
     __obj.asInstanceOf[Arialabelledby]
   }
   
-  @scala.inline
-  implicit class ArialabelledbyMutableBuilder[Self <: Arialabelledby] (val x: Self) extends AnyVal {
+  extension [Self <: Arialabelledby](x: Self) {
     
-    @scala.inline
-    def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+    inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+    inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
     
-    @scala.inline
-    def setRef(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRef(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

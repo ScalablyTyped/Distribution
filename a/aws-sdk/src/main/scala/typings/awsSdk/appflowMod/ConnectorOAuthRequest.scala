@@ -18,25 +18,19 @@ trait ConnectorOAuthRequest extends StObject {
 }
 object ConnectorOAuthRequest {
   
-  @scala.inline
-  def apply(): ConnectorOAuthRequest = {
+  inline def apply(): ConnectorOAuthRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectorOAuthRequest]
   }
   
-  @scala.inline
-  implicit class ConnectorOAuthRequestMutableBuilder[Self <: ConnectorOAuthRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorOAuthRequest](x: Self) {
     
-    @scala.inline
-    def setAuthCode(value: AuthCode): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
+    inline def setAuthCode(value: AuthCode): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
+    inline def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
     
-    @scala.inline
-    def setRedirectUri(value: RedirectUri): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: RedirectUri): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
   }
 }

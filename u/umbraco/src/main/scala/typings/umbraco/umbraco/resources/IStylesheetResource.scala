@@ -79,8 +79,7 @@ trait IStylesheetResource extends StObject {
 }
 object IStylesheetResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAll: () => IPromise[IResourcePromise],
     getRules: Double => IPromise[IResourcePromise],
     getRulesByName: String => IPromise[IResourcePromise]
@@ -89,16 +88,12 @@ object IStylesheetResource {
     __obj.asInstanceOf[IStylesheetResource]
   }
   
-  @scala.inline
-  implicit class IStylesheetResourceMutableBuilder[Self <: IStylesheetResource] (val x: Self) extends AnyVal {
+  extension [Self <: IStylesheetResource](x: Self) {
     
-    @scala.inline
-    def setGetAll(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+    inline def setGetAll(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRules(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getRules", js.Any.fromFunction1(value))
+    inline def setGetRules(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getRules", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRulesByName(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getRulesByName", js.Any.fromFunction1(value))
+    inline def setGetRulesByName(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getRulesByName", js.Any.fromFunction1(value))
   }
 }

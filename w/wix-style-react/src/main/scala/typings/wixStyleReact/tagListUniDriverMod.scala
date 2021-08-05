@@ -27,8 +27,7 @@ object tagListUniDriverMod {
   }
   object TagListUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actionButtonExists: () => js.Promise[Boolean],
       actionButtonLabel: () => js.Promise[String],
       click: () => js.Promise[Unit],
@@ -44,29 +43,21 @@ object tagListUniDriverMod {
       __obj.asInstanceOf[TagListUniDriver]
     }
     
-    @scala.inline
-    implicit class TagListUniDriverMutableBuilder[Self <: TagListUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TagListUniDriver](x: Self) {
       
-      @scala.inline
-      def setActionButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "actionButtonExists", js.Any.fromFunction0(value))
+      inline def setActionButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "actionButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setActionButtonLabel(value: () => js.Promise[String]): Self = StObject.set(x, "actionButtonLabel", js.Any.fromFunction0(value))
+      inline def setActionButtonLabel(value: () => js.Promise[String]): Self = StObject.set(x, "actionButtonLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickActionButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickActionButton", js.Any.fromFunction0(value))
+      inline def setClickActionButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickActionButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickToggleMoreButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickToggleMoreButton", js.Any.fromFunction0(value))
+      inline def setClickToggleMoreButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickToggleMoreButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveTag(value: String => js.Promise[Unit]): Self = StObject.set(x, "removeTag", js.Any.fromFunction1(value))
+      inline def setRemoveTag(value: String => js.Promise[Unit]): Self = StObject.set(x, "removeTag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggleMoreButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "toggleMoreButtonExists", js.Any.fromFunction0(value))
+      inline def setToggleMoreButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "toggleMoreButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleMoreButtonLabel(value: () => js.Promise[String]): Self = StObject.set(x, "toggleMoreButtonLabel", js.Any.fromFunction0(value))
+      inline def setToggleMoreButtonLabel(value: () => js.Promise[String]): Self = StObject.set(x, "toggleMoreButtonLabel", js.Any.fromFunction0(value))
     }
   }
 }

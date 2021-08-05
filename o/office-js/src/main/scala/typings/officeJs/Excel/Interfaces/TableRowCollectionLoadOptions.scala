@@ -41,31 +41,23 @@ trait TableRowCollectionLoadOptions extends StObject {
 }
 object TableRowCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): TableRowCollectionLoadOptions = {
+  inline def apply(): TableRowCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableRowCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class TableRowCollectionLoadOptionsMutableBuilder[Self <: TableRowCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TableRowCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

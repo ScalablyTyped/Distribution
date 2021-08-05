@@ -20,8 +20,7 @@ trait MatchRoute
 }
 object MatchRoute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     confidence: Double,
     distance: Double,
     duration: Double,
@@ -33,10 +32,8 @@ object MatchRoute {
     __obj.asInstanceOf[MatchRoute]
   }
   
-  @scala.inline
-  implicit class MatchRouteMutableBuilder[Self <: MatchRoute] (val x: Self) extends AnyVal {
+  extension [Self <: MatchRoute](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
   }
 }

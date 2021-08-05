@@ -11,10 +11,8 @@ object getIpRangesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getIpRanges(args: GetIpRangesArgs): js.Promise[GetIpRangesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpRanges")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIpRangesResult]]
-  @scala.inline
-  def getIpRanges(args: GetIpRangesArgs, opts: InvokeOptions): js.Promise[GetIpRangesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIpRanges")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIpRangesResult]]
+  inline def getIpRanges(args: GetIpRangesArgs): js.Promise[GetIpRangesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIpRanges")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIpRangesResult]]
+  inline def getIpRanges(args: GetIpRangesArgs, opts: InvokeOptions): js.Promise[GetIpRangesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIpRanges")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIpRangesResult]]
   
   trait GetIpRangesArgs extends StObject {
     
@@ -41,35 +39,26 @@ object getIpRangesMod {
   }
   object GetIpRangesArgs {
     
-    @scala.inline
-    def apply(services: js.Array[String]): GetIpRangesArgs = {
+    inline def apply(services: js.Array[String]): GetIpRangesArgs = {
       val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetIpRangesArgs]
     }
     
-    @scala.inline
-    implicit class GetIpRangesArgsMutableBuilder[Self <: GetIpRangesArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetIpRangesArgs](x: Self) {
       
-      @scala.inline
-      def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+      inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      @scala.inline
-      def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
       
-      @scala.inline
-      def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+      inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+      inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -109,8 +98,7 @@ object getIpRangesMod {
   }
   object GetIpRangesResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cidrBlocks: js.Array[String],
       createDate: String,
       id: String,
@@ -122,50 +110,35 @@ object getIpRangesMod {
       __obj.asInstanceOf[GetIpRangesResult]
     }
     
-    @scala.inline
-    implicit class GetIpRangesResultMutableBuilder[Self <: GetIpRangesResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetIpRangesResult](x: Self) {
       
-      @scala.inline
-      def setCidrBlocks(value: js.Array[String]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
+      inline def setCidrBlocks(value: js.Array[String]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrBlocksVarargs(value: String*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
+      inline def setCidrBlocksVarargs(value: String*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
       
-      @scala.inline
-      def setCreateDate(value: String): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
+      inline def setCreateDate(value: String): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6CidrBlocks(value: js.Array[String]): Self = StObject.set(x, "ipv6CidrBlocks", value.asInstanceOf[js.Any])
+      inline def setIpv6CidrBlocks(value: js.Array[String]): Self = StObject.set(x, "ipv6CidrBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6CidrBlocksVarargs(value: String*): Self = StObject.set(x, "ipv6CidrBlocks", js.Array(value :_*))
+      inline def setIpv6CidrBlocksVarargs(value: String*): Self = StObject.set(x, "ipv6CidrBlocks", js.Array(value :_*))
       
-      @scala.inline
-      def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+      inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      @scala.inline
-      def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
       
-      @scala.inline
-      def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+      inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+      inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
       
-      @scala.inline
-      def setSyncToken(value: Double): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
+      inline def setSyncToken(value: Double): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

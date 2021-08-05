@@ -41,8 +41,7 @@ trait colorRamps extends StObject {
 }
 object colorRamps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: () => js.Array[colorRampsColorRamp],
     byName: String => colorRampsColorRamp,
     byTag: colorRampsByTagParams => js.Array[colorRampsColorRamp],
@@ -52,19 +51,14 @@ object colorRamps {
     __obj.asInstanceOf[colorRamps]
   }
   
-  @scala.inline
-  implicit class colorRampsMutableBuilder[Self <: colorRamps] (val x: Self) extends AnyVal {
+  extension [Self <: colorRamps](x: Self) {
     
-    @scala.inline
-    def setAll(value: () => js.Array[colorRampsColorRamp]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
+    inline def setAll(value: () => js.Array[colorRampsColorRamp]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setByName(value: String => colorRampsColorRamp): Self = StObject.set(x, "byName", js.Any.fromFunction1(value))
+    inline def setByName(value: String => colorRampsColorRamp): Self = StObject.set(x, "byName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setByTag(value: colorRampsByTagParams => js.Array[colorRampsColorRamp]): Self = StObject.set(x, "byTag", js.Any.fromFunction1(value))
+    inline def setByTag(value: colorRampsByTagParams => js.Array[colorRampsColorRamp]): Self = StObject.set(x, "byTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNames(value: () => js.Array[String]): Self = StObject.set(x, "names", js.Any.fromFunction0(value))
+    inline def setNames(value: () => js.Array[String]): Self = StObject.set(x, "names", js.Any.fromFunction0(value))
   }
 }

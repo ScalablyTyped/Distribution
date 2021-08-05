@@ -38,8 +38,7 @@ trait ContributionConstraint extends StObject {
 }
 object ContributionConstraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     group: Double,
     id: String,
     inverse: Boolean,
@@ -51,28 +50,20 @@ object ContributionConstraint {
     __obj.asInstanceOf[ContributionConstraint]
   }
   
-  @scala.inline
-  implicit class ContributionConstraintMutableBuilder[Self <: ContributionConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: ContributionConstraint](x: Self) {
     
-    @scala.inline
-    def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationships(value: js.Array[String]): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+    inline def setRelationships(value: js.Array[String]): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipsVarargs(value: String*): Self = StObject.set(x, "relationships", js.Array(value :_*))
+    inline def setRelationshipsVarargs(value: String*): Self = StObject.set(x, "relationships", js.Array(value :_*))
   }
 }

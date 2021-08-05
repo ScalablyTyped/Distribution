@@ -55,8 +55,7 @@ trait XStringKeyMap extends StObject {
 }
 object XStringKeyMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     getKeyByIndex: Double => String,
     getValue: String => js.Any,
@@ -68,25 +67,18 @@ object XStringKeyMap {
     __obj.asInstanceOf[XStringKeyMap]
   }
   
-  @scala.inline
-  implicit class XStringKeyMapMutableBuilder[Self <: XStringKeyMap] (val x: Self) extends AnyVal {
+  extension [Self <: XStringKeyMap](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKeyByIndex(value: Double => String): Self = StObject.set(x, "getKeyByIndex", js.Any.fromFunction1(value))
+    inline def setGetKeyByIndex(value: Double => String): Self = StObject.set(x, "getKeyByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValue(value: String => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: String => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValueByIndex(value: Double => js.Any): Self = StObject.set(x, "getValueByIndex", js.Any.fromFunction1(value))
+    inline def setGetValueByIndex(value: Double => js.Any): Self = StObject.set(x, "getValueByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasValue(value: String => Boolean): Self = StObject.set(x, "hasValue", js.Any.fromFunction1(value))
+    inline def setHasValue(value: String => Boolean): Self = StObject.set(x, "hasValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "insertValue", js.Any.fromFunction2(value))
+    inline def setInsertValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "insertValue", js.Any.fromFunction2(value))
   }
 }

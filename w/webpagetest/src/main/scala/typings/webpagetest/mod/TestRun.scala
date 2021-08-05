@@ -10,16 +10,13 @@ trait TestRun extends StObject {
 }
 object TestRun {
   
-  @scala.inline
-  def apply(firstView: js.Any): TestRun = {
+  inline def apply(firstView: js.Any): TestRun = {
     val __obj = js.Dynamic.literal(firstView = firstView.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRun]
   }
   
-  @scala.inline
-  implicit class TestRunMutableBuilder[Self <: TestRun] (val x: Self) extends AnyVal {
+  extension [Self <: TestRun](x: Self) {
     
-    @scala.inline
-    def setFirstView(value: js.Any): Self = StObject.set(x, "firstView", value.asInstanceOf[js.Any])
+    inline def setFirstView(value: js.Any): Self = StObject.set(x, "firstView", value.asInstanceOf[js.Any])
   }
 }

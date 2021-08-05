@@ -13,19 +13,15 @@ trait PutVoiceConnectorEmergencyCallingConfigurationResponse extends StObject {
 }
 object PutVoiceConnectorEmergencyCallingConfigurationResponse {
   
-  @scala.inline
-  def apply(): PutVoiceConnectorEmergencyCallingConfigurationResponse = {
+  inline def apply(): PutVoiceConnectorEmergencyCallingConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutVoiceConnectorEmergencyCallingConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class PutVoiceConnectorEmergencyCallingConfigurationResponseMutableBuilder[Self <: PutVoiceConnectorEmergencyCallingConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutVoiceConnectorEmergencyCallingConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setEmergencyCallingConfiguration(value: EmergencyCallingConfiguration): Self = StObject.set(x, "EmergencyCallingConfiguration", value.asInstanceOf[js.Any])
+    inline def setEmergencyCallingConfiguration(value: EmergencyCallingConfiguration): Self = StObject.set(x, "EmergencyCallingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmergencyCallingConfigurationUndefined: Self = StObject.set(x, "EmergencyCallingConfiguration", js.undefined)
+    inline def setEmergencyCallingConfigurationUndefined: Self = StObject.set(x, "EmergencyCallingConfiguration", js.undefined)
   }
 }

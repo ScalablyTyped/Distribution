@@ -13,17 +13,14 @@ object panelConstructorMod {
   }
   object PanelConstructor {
     
-    @scala.inline
-    def apply(themes: ThemesPanel): PanelConstructor = {
+    inline def apply(themes: ThemesPanel): PanelConstructor = {
       val __obj = js.Dynamic.literal(themes = themes.asInstanceOf[js.Any])
       __obj.asInstanceOf[PanelConstructor]
     }
     
-    @scala.inline
-    implicit class PanelConstructorMutableBuilder[Self <: PanelConstructor] (val x: Self) extends AnyVal {
+    extension [Self <: PanelConstructor](x: Self) {
       
-      @scala.inline
-      def setThemes(value: ThemesPanel): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
+      inline def setThemes(value: ThemesPanel): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
     }
   }
 }

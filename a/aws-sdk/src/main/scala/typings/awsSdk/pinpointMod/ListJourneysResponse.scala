@@ -10,16 +10,13 @@ trait ListJourneysResponse extends StObject {
 }
 object ListJourneysResponse {
   
-  @scala.inline
-  def apply(JourneysResponse: JourneysResponse): ListJourneysResponse = {
+  inline def apply(JourneysResponse: JourneysResponse): ListJourneysResponse = {
     val __obj = js.Dynamic.literal(JourneysResponse = JourneysResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJourneysResponse]
   }
   
-  @scala.inline
-  implicit class ListJourneysResponseMutableBuilder[Self <: ListJourneysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListJourneysResponse](x: Self) {
     
-    @scala.inline
-    def setJourneysResponse(value: JourneysResponse): Self = StObject.set(x, "JourneysResponse", value.asInstanceOf[js.Any])
+    inline def setJourneysResponse(value: JourneysResponse): Self = StObject.set(x, "JourneysResponse", value.asInstanceOf[js.Any])
   }
 }

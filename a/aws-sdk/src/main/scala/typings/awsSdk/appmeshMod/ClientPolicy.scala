@@ -13,19 +13,15 @@ trait ClientPolicy extends StObject {
 }
 object ClientPolicy {
   
-  @scala.inline
-  def apply(): ClientPolicy = {
+  inline def apply(): ClientPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientPolicy]
   }
   
-  @scala.inline
-  implicit class ClientPolicyMutableBuilder[Self <: ClientPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ClientPolicy](x: Self) {
     
-    @scala.inline
-    def setTls(value: ClientPolicyTls): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: ClientPolicyTls): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

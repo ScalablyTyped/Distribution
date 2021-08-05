@@ -22,25 +22,19 @@ trait SchemaCollectdValueError extends StObject {
 }
 object SchemaCollectdValueError {
   
-  @scala.inline
-  def apply(): SchemaCollectdValueError = {
+  inline def apply(): SchemaCollectdValueError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCollectdValueError]
   }
   
-  @scala.inline
-  implicit class SchemaCollectdValueErrorMutableBuilder[Self <: SchemaCollectdValueError] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCollectdValueError](x: Self) {
     
-    @scala.inline
-    def setError(value: SchemaStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: SchemaStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

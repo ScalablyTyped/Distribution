@@ -14,28 +14,21 @@ trait DimensionFilterClause extends StObject {
 }
 object DimensionFilterClause {
   
-  @scala.inline
-  def apply(): DimensionFilterClause = {
+  inline def apply(): DimensionFilterClause = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionFilterClause]
   }
   
-  @scala.inline
-  implicit class DimensionFilterClauseMutableBuilder[Self <: DimensionFilterClause] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionFilterClause](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[DimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[DimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: DimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
   }
 }

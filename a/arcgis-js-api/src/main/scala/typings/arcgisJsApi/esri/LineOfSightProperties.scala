@@ -24,25 +24,19 @@ trait LineOfSightProperties
 }
 object LineOfSightProperties {
   
-  @scala.inline
-  def apply(): LineOfSightProperties = {
+  inline def apply(): LineOfSightProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineOfSightProperties]
   }
   
-  @scala.inline
-  implicit class LineOfSightPropertiesMutableBuilder[Self <: LineOfSightProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LineOfSightProperties](x: Self) {
     
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: LineOfSightViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: LineOfSightViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

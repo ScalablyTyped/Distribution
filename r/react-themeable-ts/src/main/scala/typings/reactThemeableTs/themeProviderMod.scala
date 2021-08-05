@@ -32,14 +32,12 @@ object themeProviderMod {
     @JSImport("react-themeable-ts/build-es5/theme-provider", "ThemeProvider.childContextTypes")
     @js.native
     def childContextTypes: StringDictionary[Validator[js.Any]] = js.native
-    @scala.inline
-    def childContextTypes_=(x: StringDictionary[Validator[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    inline def childContextTypes_=(x: StringDictionary[Validator[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("react-themeable-ts/build-es5/theme-provider", "ThemeProvider.defaultProps")
     @js.native
     def defaultProps: StringDictionary[js.Object] = js.native
-    @scala.inline
-    def defaultProps_=(x: StringDictionary[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: StringDictionary[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IThemeProviderContext extends StObject {
@@ -48,17 +46,14 @@ object themeProviderMod {
   }
   object IThemeProviderContext {
     
-    @scala.inline
-    def apply(reactThemeable: js.Any): IThemeProviderContext = {
+    inline def apply(reactThemeable: js.Any): IThemeProviderContext = {
       val __obj = js.Dynamic.literal(reactThemeable = reactThemeable.asInstanceOf[js.Any])
       __obj.asInstanceOf[IThemeProviderContext]
     }
     
-    @scala.inline
-    implicit class IThemeProviderContextMutableBuilder[Self <: IThemeProviderContext] (val x: Self) extends AnyVal {
+    extension [Self <: IThemeProviderContext](x: Self) {
       
-      @scala.inline
-      def setReactThemeable(value: js.Any): Self = StObject.set(x, "reactThemeable", value.asInstanceOf[js.Any])
+      inline def setReactThemeable(value: js.Any): Self = StObject.set(x, "reactThemeable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,23 +65,18 @@ object themeProviderMod {
   }
   object IThemeProviderProps {
     
-    @scala.inline
-    def apply(reactThemeable: js.Any): IThemeProviderProps = {
+    inline def apply(reactThemeable: js.Any): IThemeProviderProps = {
       val __obj = js.Dynamic.literal(reactThemeable = reactThemeable.asInstanceOf[js.Any])
       __obj.asInstanceOf[IThemeProviderProps]
     }
     
-    @scala.inline
-    implicit class IThemeProviderPropsMutableBuilder[Self <: IThemeProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IThemeProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setReactThemeable(value: js.Any): Self = StObject.set(x, "reactThemeable", value.asInstanceOf[js.Any])
+      inline def setReactThemeable(value: js.Any): Self = StObject.set(x, "reactThemeable", value.asInstanceOf[js.Any])
     }
   }
 }

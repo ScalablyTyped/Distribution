@@ -73,113 +73,79 @@ trait TransferConfig extends StObject {
 }
 object TransferConfig {
   
-  @scala.inline
-  def apply(): TransferConfig = {
+  inline def apply(): TransferConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferConfig]
   }
   
-  @scala.inline
-  implicit class TransferConfigMutableBuilder[Self <: TransferConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TransferConfig](x: Self) {
     
-    @scala.inline
-    def setDataRefreshWindowDays(value: Double): Self = StObject.set(x, "dataRefreshWindowDays", value.asInstanceOf[js.Any])
+    inline def setDataRefreshWindowDays(value: Double): Self = StObject.set(x, "dataRefreshWindowDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRefreshWindowDaysUndefined: Self = StObject.set(x, "dataRefreshWindowDays", js.undefined)
+    inline def setDataRefreshWindowDaysUndefined: Self = StObject.set(x, "dataRefreshWindowDays", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
-    @scala.inline
-    def setDatasetRegion(value: String): Self = StObject.set(x, "datasetRegion", value.asInstanceOf[js.Any])
+    inline def setDatasetRegion(value: String): Self = StObject.set(x, "datasetRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetRegionUndefined: Self = StObject.set(x, "datasetRegion", js.undefined)
+    inline def setDatasetRegionUndefined: Self = StObject.set(x, "datasetRegion", js.undefined)
     
-    @scala.inline
-    def setDestinationDatasetId(value: String): Self = StObject.set(x, "destinationDatasetId", value.asInstanceOf[js.Any])
+    inline def setDestinationDatasetId(value: String): Self = StObject.set(x, "destinationDatasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDatasetIdUndefined: Self = StObject.set(x, "destinationDatasetId", js.undefined)
+    inline def setDestinationDatasetIdUndefined: Self = StObject.set(x, "destinationDatasetId", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEmailPreferences(value: EmailPreferences): Self = StObject.set(x, "emailPreferences", value.asInstanceOf[js.Any])
+    inline def setEmailPreferences(value: EmailPreferences): Self = StObject.set(x, "emailPreferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailPreferencesUndefined: Self = StObject.set(x, "emailPreferences", js.undefined)
+    inline def setEmailPreferencesUndefined: Self = StObject.set(x, "emailPreferences", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNextRunTime(value: String): Self = StObject.set(x, "nextRunTime", value.asInstanceOf[js.Any])
+    inline def setNextRunTime(value: String): Self = StObject.set(x, "nextRunTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextRunTimeUndefined: Self = StObject.set(x, "nextRunTime", js.undefined)
+    inline def setNextRunTimeUndefined: Self = StObject.set(x, "nextRunTime", js.undefined)
     
-    @scala.inline
-    def setNotificationPubsubTopic(value: String): Self = StObject.set(x, "notificationPubsubTopic", value.asInstanceOf[js.Any])
+    inline def setNotificationPubsubTopic(value: String): Self = StObject.set(x, "notificationPubsubTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationPubsubTopicUndefined: Self = StObject.set(x, "notificationPubsubTopic", js.undefined)
+    inline def setNotificationPubsubTopicUndefined: Self = StObject.set(x, "notificationPubsubTopic", js.undefined)
     
-    @scala.inline
-    def setParams(
+    inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientBigquerydatatransfer.maximMazurokGapiClientBigquerydatatransferStrings.TransferConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleOptions(value: ScheduleOptions): Self = StObject.set(x, "scheduleOptions", value.asInstanceOf[js.Any])
+    inline def setScheduleOptions(value: ScheduleOptions): Self = StObject.set(x, "scheduleOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleOptionsUndefined: Self = StObject.set(x, "scheduleOptions", js.undefined)
+    inline def setScheduleOptionsUndefined: Self = StObject.set(x, "scheduleOptions", js.undefined)
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ object formGroupMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object FormGroupProps {
     
-    @scala.inline
-    def apply(): FormGroupProps = {
+    inline def apply(): FormGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormGroupProps]
     }
@@ -54,56 +53,40 @@ object formGroupMod extends Shortcut {
   }
   object StrictFormGroupProps {
     
-    @scala.inline
-    def apply(): StrictFormGroupProps = {
+    inline def apply(): StrictFormGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictFormGroupProps]
     }
     
-    @scala.inline
-    implicit class StrictFormGroupPropsMutableBuilder[Self <: StrictFormGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictFormGroupProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
+      inline def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
+      inline def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
+      inline def setUnstackable(value: Boolean): Self = StObject.set(x, "unstackable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
+      inline def setUnstackableUndefined: Self = StObject.set(x, "unstackable", js.undefined)
       
-      @scala.inline
-      def setWidths(value: SemanticWIDTHS | equal): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+      inline def setWidths(value: SemanticWIDTHS | equal): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
+      inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
     }
   }
   

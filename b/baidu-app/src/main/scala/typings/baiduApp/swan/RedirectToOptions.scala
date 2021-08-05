@@ -13,16 +13,13 @@ trait RedirectToOptions
 }
 object RedirectToOptions {
   
-  @scala.inline
-  def apply(url: String): RedirectToOptions = {
+  inline def apply(url: String): RedirectToOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectToOptions]
   }
   
-  @scala.inline
-  implicit class RedirectToOptionsMutableBuilder[Self <: RedirectToOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectToOptions](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

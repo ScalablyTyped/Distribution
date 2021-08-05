@@ -14,22 +14,17 @@ trait AverageItemLength extends StObject {
 }
 object AverageItemLength {
   
-  @scala.inline
-  def apply(averageItemLength: Double, highestMeasuredFrameIndex: Double, index: Double): AverageItemLength = {
+  inline def apply(averageItemLength: Double, highestMeasuredFrameIndex: Double, index: Double): AverageItemLength = {
     val __obj = js.Dynamic.literal(averageItemLength = averageItemLength.asInstanceOf[js.Any], highestMeasuredFrameIndex = highestMeasuredFrameIndex.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[AverageItemLength]
   }
   
-  @scala.inline
-  implicit class AverageItemLengthMutableBuilder[Self <: AverageItemLength] (val x: Self) extends AnyVal {
+  extension [Self <: AverageItemLength](x: Self) {
     
-    @scala.inline
-    def setAverageItemLength(value: Double): Self = StObject.set(x, "averageItemLength", value.asInstanceOf[js.Any])
+    inline def setAverageItemLength(value: Double): Self = StObject.set(x, "averageItemLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighestMeasuredFrameIndex(value: Double): Self = StObject.set(x, "highestMeasuredFrameIndex", value.asInstanceOf[js.Any])
+    inline def setHighestMeasuredFrameIndex(value: Double): Self = StObject.set(x, "highestMeasuredFrameIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

@@ -14,34 +14,25 @@ trait StopProps extends StObject {
 }
 object StopProps {
   
-  @scala.inline
-  def apply(): StopProps = {
+  inline def apply(): StopProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopProps]
   }
   
-  @scala.inline
-  implicit class StopPropsMutableBuilder[Self <: StopProps] (val x: Self) extends AnyVal {
+  extension [Self <: StopProps](x: Self) {
     
-    @scala.inline
-    def setOffset(value: NumberProp): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: NumberProp): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setStopColor(value: Color): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
+    inline def setStopColor(value: Color): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
+    inline def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
     
-    @scala.inline
-    def setStopColorVarargs(value: Double*): Self = StObject.set(x, "stopColor", js.Array(value :_*))
+    inline def setStopColorVarargs(value: Double*): Self = StObject.set(x, "stopColor", js.Array(value :_*))
     
-    @scala.inline
-    def setStopOpacity(value: NumberProp): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
+    inline def setStopOpacity(value: NumberProp): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
+    inline def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
   }
 }

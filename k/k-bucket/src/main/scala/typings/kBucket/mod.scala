@@ -62,8 +62,7 @@ object mod {
   @JSImport("k-bucket", "arbiter")
   @js.native
   def arbiter: js.Function2[/* incumbent */ Contact, /* candidate */ Contact, Contact] = js.native
-  @scala.inline
-  def arbiter_=(x: js.Function2[/* incumbent */ Contact, /* candidate */ Contact, Contact]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arbiter")(x.asInstanceOf[js.Any])
+  inline def arbiter_=(x: js.Function2[/* incumbent */ Contact, /* candidate */ Contact, Contact]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arbiter")(x.asInstanceOf[js.Any])
   
   /**
     * Default distance function. Finds the XOR
@@ -77,8 +76,7 @@ object mod {
   @JSImport("k-bucket", "distance")
   @js.native
   def distance: Distance_ = js.native
-  @scala.inline
-  def distance_=(x: Distance_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("distance")(x.asInstanceOf[js.Any])
+  inline def distance_=(x: Distance_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("distance")(x.asInstanceOf[js.Any])
   
   type Arbiter_[T /* <: Contact */] = js.Function2[/* incumbent */ T, /* candidate */ T, T]
   
@@ -90,20 +88,16 @@ object mod {
   }
   object Contact {
     
-    @scala.inline
-    def apply(id: Uint8Array, vectorClock: Double): Contact = {
+    inline def apply(id: Uint8Array, vectorClock: Double): Contact = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], vectorClock = vectorClock.asInstanceOf[js.Any])
       __obj.asInstanceOf[Contact]
     }
     
-    @scala.inline
-    implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
+    extension [Self <: Contact](x: Self) {
       
-      @scala.inline
-      def setId(value: Uint8Array): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Uint8Array): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVectorClock(value: Double): Self = StObject.set(x, "vectorClock", value.asInstanceOf[js.Any])
+      inline def setVectorClock(value: Double): Self = StObject.set(x, "vectorClock", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,29 +201,22 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply[T /* <: Contact */](contacts: js.Array[T], dontSplit: Boolean, left: T, right: T): Node[T] = {
+    inline def apply[T /* <: Contact */](contacts: js.Array[T], dontSplit: Boolean, left: T, right: T): Node[T] = {
       val __obj = js.Dynamic.literal(contacts = contacts.asInstanceOf[js.Any], dontSplit = dontSplit.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node[T]]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node[?], T /* <: Contact */] (val x: Self & Node[T]) extends AnyVal {
+    extension [Self <: Node[?], T /* <: Contact */](x: Self & Node[T]) {
       
-      @scala.inline
-      def setContacts(value: js.Array[T]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+      inline def setContacts(value: js.Array[T]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactsVarargs(value: T*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+      inline def setContactsVarargs(value: T*): Self = StObject.set(x, "contacts", js.Array(value :_*))
       
-      @scala.inline
-      def setDontSplit(value: Boolean): Self = StObject.set(x, "dontSplit", value.asInstanceOf[js.Any])
+      inline def setDontSplit(value: Boolean): Self = StObject.set(x, "dontSplit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: T): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: T): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: T): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: T): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
 }

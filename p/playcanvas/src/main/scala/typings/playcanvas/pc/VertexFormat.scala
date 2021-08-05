@@ -112,22 +112,17 @@ trait VertexFormat extends StObject {
 }
 object VertexFormat {
   
-  @scala.inline
-  def apply(elements: js.Array[Name], update: () => Unit): VertexFormat = {
+  inline def apply(elements: js.Array[Name], update: () => Unit): VertexFormat = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[VertexFormat]
   }
   
-  @scala.inline
-  implicit class VertexFormatMutableBuilder[Self <: VertexFormat] (val x: Self) extends AnyVal {
+  extension [Self <: VertexFormat](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[Name]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[Name]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: Name*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Name*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

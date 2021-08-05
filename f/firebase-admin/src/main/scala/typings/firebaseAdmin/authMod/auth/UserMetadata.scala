@@ -33,31 +33,23 @@ trait UserMetadata extends StObject {
 }
 object UserMetadata {
   
-  @scala.inline
-  def apply(creationTime: String, lastSignInTime: String, toJSON: () => js.Object): UserMetadata = {
+  inline def apply(creationTime: String, lastSignInTime: String, toJSON: () => js.Object): UserMetadata = {
     val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], lastSignInTime = lastSignInTime.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[UserMetadata]
   }
   
-  @scala.inline
-  implicit class UserMetadataMutableBuilder[Self <: UserMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: UserMetadata](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
+    inline def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRefreshTimeNull: Self = StObject.set(x, "lastRefreshTime", null)
+    inline def setLastRefreshTimeNull: Self = StObject.set(x, "lastRefreshTime", null)
     
-    @scala.inline
-    def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
+    inline def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
     
-    @scala.inline
-    def setLastSignInTime(value: String): Self = StObject.set(x, "lastSignInTime", value.asInstanceOf[js.Any])
+    inline def setLastSignInTime(value: String): Self = StObject.set(x, "lastSignInTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

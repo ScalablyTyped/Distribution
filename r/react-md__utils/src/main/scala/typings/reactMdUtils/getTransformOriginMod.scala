@@ -11,6 +11,5 @@ object getTransformOriginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTransformOrigin(anchor: PositionAnchor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformOrigin")(anchor.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTransformOrigin(anchor: PositionAnchor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformOrigin")(anchor.asInstanceOf[js.Any]).asInstanceOf[String]
 }

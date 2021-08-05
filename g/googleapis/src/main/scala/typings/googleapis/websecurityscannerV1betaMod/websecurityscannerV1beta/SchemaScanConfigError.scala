@@ -27,25 +27,19 @@ trait SchemaScanConfigError extends StObject {
 }
 object SchemaScanConfigError {
   
-  @scala.inline
-  def apply(): SchemaScanConfigError = {
+  inline def apply(): SchemaScanConfigError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaScanConfigError]
   }
   
-  @scala.inline
-  implicit class SchemaScanConfigErrorMutableBuilder[Self <: SchemaScanConfigError] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaScanConfigError](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
   }
 }

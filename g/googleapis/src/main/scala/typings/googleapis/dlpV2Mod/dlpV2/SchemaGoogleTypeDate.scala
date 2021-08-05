@@ -37,31 +37,23 @@ trait SchemaGoogleTypeDate extends StObject {
 }
 object SchemaGoogleTypeDate {
   
-  @scala.inline
-  def apply(): SchemaGoogleTypeDate = {
+  inline def apply(): SchemaGoogleTypeDate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleTypeDate]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleTypeDateMutableBuilder[Self <: SchemaGoogleTypeDate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleTypeDate](x: Self) {
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

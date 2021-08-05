@@ -18,28 +18,21 @@ trait DescribeCapacityReservationsResult extends StObject {
 }
 object DescribeCapacityReservationsResult {
   
-  @scala.inline
-  def apply(): DescribeCapacityReservationsResult = {
+  inline def apply(): DescribeCapacityReservationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCapacityReservationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeCapacityReservationsResultMutableBuilder[Self <: DescribeCapacityReservationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCapacityReservationsResult](x: Self) {
     
-    @scala.inline
-    def setCapacityReservations(value: CapacityReservationSet): Self = StObject.set(x, "CapacityReservations", value.asInstanceOf[js.Any])
+    inline def setCapacityReservations(value: CapacityReservationSet): Self = StObject.set(x, "CapacityReservations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityReservationsUndefined: Self = StObject.set(x, "CapacityReservations", js.undefined)
+    inline def setCapacityReservationsUndefined: Self = StObject.set(x, "CapacityReservations", js.undefined)
     
-    @scala.inline
-    def setCapacityReservationsVarargs(value: CapacityReservation*): Self = StObject.set(x, "CapacityReservations", js.Array(value :_*))
+    inline def setCapacityReservationsVarargs(value: CapacityReservation*): Self = StObject.set(x, "CapacityReservations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

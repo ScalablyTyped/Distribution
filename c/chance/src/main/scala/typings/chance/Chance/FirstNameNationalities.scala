@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirstNameNationalities extends StObject
 object FirstNameNationalities {
   
-  @scala.inline
-  def en: typings.chance.chanceStrings.en = "en".asInstanceOf[typings.chance.chanceStrings.en]
+  inline def en: typings.chance.chanceStrings.en = "en".asInstanceOf[typings.chance.chanceStrings.en]
   
-  @scala.inline
-  def it: typings.chance.chanceStrings.it = "it".asInstanceOf[typings.chance.chanceStrings.it]
+  inline def it: typings.chance.chanceStrings.it = "it".asInstanceOf[typings.chance.chanceStrings.it]
 }

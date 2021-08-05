@@ -19,6 +19,5 @@ object Badge {
   @JSImport("@ant-design/react-native", "Badge.defaultProps")
   @js.native
   def defaultProps: Corner = js.native
-  @scala.inline
-  def defaultProps_=(x: Corner): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Corner): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

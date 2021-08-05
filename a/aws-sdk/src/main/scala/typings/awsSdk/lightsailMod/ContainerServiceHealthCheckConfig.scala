@@ -38,49 +38,35 @@ trait ContainerServiceHealthCheckConfig extends StObject {
 }
 object ContainerServiceHealthCheckConfig {
   
-  @scala.inline
-  def apply(): ContainerServiceHealthCheckConfig = {
+  inline def apply(): ContainerServiceHealthCheckConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerServiceHealthCheckConfig]
   }
   
-  @scala.inline
-  implicit class ContainerServiceHealthCheckConfigMutableBuilder[Self <: ContainerServiceHealthCheckConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerServiceHealthCheckConfig](x: Self) {
     
-    @scala.inline
-    def setHealthyThreshold(value: integer): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
+    inline def setHealthyThreshold(value: integer): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthyThresholdUndefined: Self = StObject.set(x, "healthyThreshold", js.undefined)
+    inline def setHealthyThresholdUndefined: Self = StObject.set(x, "healthyThreshold", js.undefined)
     
-    @scala.inline
-    def setIntervalSeconds(value: integer): Self = StObject.set(x, "intervalSeconds", value.asInstanceOf[js.Any])
+    inline def setIntervalSeconds(value: integer): Self = StObject.set(x, "intervalSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalSecondsUndefined: Self = StObject.set(x, "intervalSeconds", js.undefined)
+    inline def setIntervalSecondsUndefined: Self = StObject.set(x, "intervalSeconds", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSuccessCodes(value: String): Self = StObject.set(x, "successCodes", value.asInstanceOf[js.Any])
+    inline def setSuccessCodes(value: String): Self = StObject.set(x, "successCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessCodesUndefined: Self = StObject.set(x, "successCodes", js.undefined)
+    inline def setSuccessCodesUndefined: Self = StObject.set(x, "successCodes", js.undefined)
     
-    @scala.inline
-    def setTimeoutSeconds(value: integer): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutSeconds(value: integer): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
+    inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
     
-    @scala.inline
-    def setUnhealthyThreshold(value: integer): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
+    inline def setUnhealthyThreshold(value: integer): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhealthyThresholdUndefined: Self = StObject.set(x, "unhealthyThreshold", js.undefined)
+    inline def setUnhealthyThresholdUndefined: Self = StObject.set(x, "unhealthyThreshold", js.undefined)
   }
 }

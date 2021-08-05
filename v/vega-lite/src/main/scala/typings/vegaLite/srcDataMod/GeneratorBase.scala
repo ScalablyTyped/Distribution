@@ -13,19 +13,15 @@ trait GeneratorBase extends StObject {
 }
 object GeneratorBase {
   
-  @scala.inline
-  def apply(): GeneratorBase = {
+  inline def apply(): GeneratorBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeneratorBase]
   }
   
-  @scala.inline
-  implicit class GeneratorBaseMutableBuilder[Self <: GeneratorBase] (val x: Self) extends AnyVal {
+  extension [Self <: GeneratorBase](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

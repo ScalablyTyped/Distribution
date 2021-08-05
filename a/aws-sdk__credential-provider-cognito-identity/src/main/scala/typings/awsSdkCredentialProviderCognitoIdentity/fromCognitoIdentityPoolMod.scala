@@ -14,8 +14,7 @@ object fromCognitoIdentityPoolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromCognitoIdentityPool(
+  inline def fromCognitoIdentityPool(
     hasAccountIdCacheClientCustomRoleArnIdentityPoolIdLoginsUserIdentifier: FromCognitoIdentityPoolParameters
   ): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentityPool")(hasAccountIdCacheClientCustomRoleArnIdentityPoolIdLoginsUserIdentifier.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
   
@@ -59,35 +58,26 @@ object fromCognitoIdentityPoolMod {
   }
   object FromCognitoIdentityPoolParameters {
     
-    @scala.inline
-    def apply(client: CognitoIdentityClient, identityPoolId: String): FromCognitoIdentityPoolParameters = {
+    inline def apply(client: CognitoIdentityClient, identityPoolId: String): FromCognitoIdentityPoolParameters = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], identityPoolId = identityPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[FromCognitoIdentityPoolParameters]
     }
     
-    @scala.inline
-    implicit class FromCognitoIdentityPoolParametersMutableBuilder[Self <: FromCognitoIdentityPoolParameters] (val x: Self) extends AnyVal {
+    extension [Self <: FromCognitoIdentityPoolParameters](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setCache(value: Storage): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Storage): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setIdentityPoolId(value: String): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
+      inline def setIdentityPoolId(value: String): Self = StObject.set(x, "identityPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdentifier(value: String): Self = StObject.set(x, "userIdentifier", value.asInstanceOf[js.Any])
+      inline def setUserIdentifier(value: String): Self = StObject.set(x, "userIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdentifierUndefined: Self = StObject.set(x, "userIdentifier", js.undefined)
+      inline def setUserIdentifierUndefined: Self = StObject.set(x, "userIdentifier", js.undefined)
     }
   }
 }

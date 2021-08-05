@@ -10,16 +10,13 @@ trait AttachmentCardClickEvent extends StObject {
 }
 object AttachmentCardClickEvent {
   
-  @scala.inline
-  def apply(getDownloadURL: () => js.Promise[String]): AttachmentCardClickEvent = {
+  inline def apply(getDownloadURL: () => js.Promise[String]): AttachmentCardClickEvent = {
     val __obj = js.Dynamic.literal(getDownloadURL = js.Any.fromFunction0(getDownloadURL))
     __obj.asInstanceOf[AttachmentCardClickEvent]
   }
   
-  @scala.inline
-  implicit class AttachmentCardClickEventMutableBuilder[Self <: AttachmentCardClickEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentCardClickEvent](x: Self) {
     
-    @scala.inline
-    def setGetDownloadURL(value: () => js.Promise[String]): Self = StObject.set(x, "getDownloadURL", js.Any.fromFunction0(value))
+    inline def setGetDownloadURL(value: () => js.Promise[String]): Self = StObject.set(x, "getDownloadURL", js.Any.fromFunction0(value))
   }
 }

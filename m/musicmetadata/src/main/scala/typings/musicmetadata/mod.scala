@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(readStream: Readable, callback: js.Function2[/* err */ Error, /* metadata */ Metadata, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].apply(readStream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
-  @scala.inline
-  def apply(
+  inline def apply(readStream: Readable, callback: js.Function2[/* err */ Error, /* metadata */ Metadata, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].apply(readStream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  inline def apply(
     readStream: Readable,
     options: Options,
     callback: js.Function2[/* err */ Error, /* metadata */ Metadata, Unit]

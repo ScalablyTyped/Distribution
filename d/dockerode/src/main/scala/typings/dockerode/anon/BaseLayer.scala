@@ -14,31 +14,23 @@ trait BaseLayer extends StObject {
 }
 object BaseLayer {
   
-  @scala.inline
-  def apply(Type: String): BaseLayer = {
+  inline def apply(Type: String): BaseLayer = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseLayer]
   }
   
-  @scala.inline
-  implicit class BaseLayerMutableBuilder[Self <: BaseLayer] (val x: Self) extends AnyVal {
+  extension [Self <: BaseLayer](x: Self) {
     
-    @scala.inline
-    def setBaseLayer(value: String): Self = StObject.set(x, "BaseLayer", value.asInstanceOf[js.Any])
+    inline def setBaseLayer(value: String): Self = StObject.set(x, "BaseLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseLayerUndefined: Self = StObject.set(x, "BaseLayer", js.undefined)
+    inline def setBaseLayerUndefined: Self = StObject.set(x, "BaseLayer", js.undefined)
     
-    @scala.inline
-    def setLayers(value: js.Array[String]): Self = StObject.set(x, "Layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "Layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "Layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "Layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: String*): Self = StObject.set(x, "Layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "Layers", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait IntrospectionQuery_ extends StObject {
 }
 object IntrospectionQuery_ {
   
-  @scala.inline
-  def apply(__schema: IntrospectionSchema): IntrospectionQuery_ = {
+  inline def apply(__schema: IntrospectionSchema): IntrospectionQuery_ = {
     val __obj = js.Dynamic.literal(__schema = __schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionQuery_]
   }
   
-  @scala.inline
-  implicit class IntrospectionQuery_MutableBuilder[Self <: IntrospectionQuery_] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionQuery_](x: Self) {
     
-    @scala.inline
-    def set__schema(value: IntrospectionSchema): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
+    inline def set__schema(value: IntrospectionSchema): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
   }
 }

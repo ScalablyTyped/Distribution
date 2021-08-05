@@ -24,8 +24,7 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     analysisUTCTimestamp: String,
     captchaResult: String,
     id: String,
@@ -39,31 +38,22 @@ object Result {
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setAnalysisUTCTimestamp(value: String): Self = StObject.set(x, "analysisUTCTimestamp", value.asInstanceOf[js.Any])
+    inline def setAnalysisUTCTimestamp(value: String): Self = StObject.set(x, "analysisUTCTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptchaResult(value: String): Self = StObject.set(x, "captchaResult", value.asInstanceOf[js.Any])
+    inline def setCaptchaResult(value: String): Self = StObject.set(x, "captchaResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLighthouseResult(value: LighthouseResult): Self = StObject.set(x, "lighthouseResult", value.asInstanceOf[js.Any])
+    inline def setLighthouseResult(value: LighthouseResult): Self = StObject.set(x, "lighthouseResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingExperience(value: Experience): Self = StObject.set(x, "loadingExperience", value.asInstanceOf[js.Any])
+    inline def setLoadingExperience(value: Experience): Self = StObject.set(x, "loadingExperience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginLoadingExperience(value: Experience): Self = StObject.set(x, "originLoadingExperience", value.asInstanceOf[js.Any])
+    inline def setOriginLoadingExperience(value: Experience): Self = StObject.set(x, "originLoadingExperience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

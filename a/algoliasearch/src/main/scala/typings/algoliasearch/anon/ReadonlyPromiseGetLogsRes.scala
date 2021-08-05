@@ -16,8 +16,7 @@ trait ReadonlyPromiseGetLogsRes extends StObject {
 }
 object ReadonlyPromiseGetLogsRes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[GetLogsResponse | js.Any],
     `finally`: () => js.Promise[GetLogsResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyPromiseGetLogsRes {
     __obj.asInstanceOf[ReadonlyPromiseGetLogsRes]
   }
   
-  @scala.inline
-  implicit class ReadonlyPromiseGetLogsResMutableBuilder[Self <: ReadonlyPromiseGetLogsRes] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPromiseGetLogsRes](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[GetLogsResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[GetLogsResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[GetLogsResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[GetLogsResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

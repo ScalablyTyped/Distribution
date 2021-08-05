@@ -33,43 +33,31 @@ trait Fragment extends StObject {
 }
 object Fragment {
   
-  @scala.inline
-  def apply(): Fragment = {
+  inline def apply(): Fragment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fragment]
   }
   
-  @scala.inline
-  implicit class FragmentMutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
+  extension [Self <: Fragment](x: Self) {
     
-    @scala.inline
-    def setFragmentLengthInMilliseconds(value: Long): Self = StObject.set(x, "FragmentLengthInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setFragmentLengthInMilliseconds(value: Long): Self = StObject.set(x, "FragmentLengthInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentLengthInMillisecondsUndefined: Self = StObject.set(x, "FragmentLengthInMilliseconds", js.undefined)
+    inline def setFragmentLengthInMillisecondsUndefined: Self = StObject.set(x, "FragmentLengthInMilliseconds", js.undefined)
     
-    @scala.inline
-    def setFragmentNumber(value: FragmentNumberString): Self = StObject.set(x, "FragmentNumber", value.asInstanceOf[js.Any])
+    inline def setFragmentNumber(value: FragmentNumberString): Self = StObject.set(x, "FragmentNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentNumberUndefined: Self = StObject.set(x, "FragmentNumber", js.undefined)
+    inline def setFragmentNumberUndefined: Self = StObject.set(x, "FragmentNumber", js.undefined)
     
-    @scala.inline
-    def setFragmentSizeInBytes(value: Long): Self = StObject.set(x, "FragmentSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setFragmentSizeInBytes(value: Long): Self = StObject.set(x, "FragmentSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentSizeInBytesUndefined: Self = StObject.set(x, "FragmentSizeInBytes", js.undefined)
+    inline def setFragmentSizeInBytesUndefined: Self = StObject.set(x, "FragmentSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setProducerTimestamp(value: Timestamp): Self = StObject.set(x, "ProducerTimestamp", value.asInstanceOf[js.Any])
+    inline def setProducerTimestamp(value: Timestamp): Self = StObject.set(x, "ProducerTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerTimestampUndefined: Self = StObject.set(x, "ProducerTimestamp", js.undefined)
+    inline def setProducerTimestampUndefined: Self = StObject.set(x, "ProducerTimestamp", js.undefined)
     
-    @scala.inline
-    def setServerTimestamp(value: Timestamp): Self = StObject.set(x, "ServerTimestamp", value.asInstanceOf[js.Any])
+    inline def setServerTimestamp(value: Timestamp): Self = StObject.set(x, "ServerTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTimestampUndefined: Self = StObject.set(x, "ServerTimestamp", js.undefined)
+    inline def setServerTimestampUndefined: Self = StObject.set(x, "ServerTimestamp", js.undefined)
   }
 }

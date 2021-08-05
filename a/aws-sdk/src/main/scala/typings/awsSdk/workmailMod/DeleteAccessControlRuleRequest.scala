@@ -18,19 +18,15 @@ trait DeleteAccessControlRuleRequest extends StObject {
 }
 object DeleteAccessControlRuleRequest {
   
-  @scala.inline
-  def apply(Name: AccessControlRuleName, OrganizationId: OrganizationId): DeleteAccessControlRuleRequest = {
+  inline def apply(Name: AccessControlRuleName, OrganizationId: OrganizationId): DeleteAccessControlRuleRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccessControlRuleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAccessControlRuleRequestMutableBuilder[Self <: DeleteAccessControlRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccessControlRuleRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: AccessControlRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AccessControlRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

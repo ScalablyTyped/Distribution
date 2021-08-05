@@ -18,8 +18,7 @@ trait GetOptionsCount extends StObject {
 }
 object GetOptionsCount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exists: () => Boolean,
     getOptionsCount: () => js.Any,
     getSelectedOptionsCount: () => Double,
@@ -30,22 +29,16 @@ object GetOptionsCount {
     __obj.asInstanceOf[GetOptionsCount]
   }
   
-  @scala.inline
-  implicit class GetOptionsCountMutableBuilder[Self <: GetOptionsCount] (val x: Self) extends AnyVal {
+  extension [Self <: GetOptionsCount](x: Self) {
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptionsCount(value: () => js.Any): Self = StObject.set(x, "getOptionsCount", js.Any.fromFunction0(value))
+    inline def setGetOptionsCount(value: () => js.Any): Self = StObject.set(x, "getOptionsCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedOptionsCount(value: () => Double): Self = StObject.set(x, "getSelectedOptionsCount", js.Any.fromFunction0(value))
+    inline def setGetSelectedOptionsCount(value: () => Double): Self = StObject.set(x, "getSelectedOptionsCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptionAt(value: Double => ClassName): Self = StObject.set(x, "optionAt", js.Any.fromFunction1(value))
+    inline def setOptionAt(value: Double => ClassName): Self = StObject.set(x, "optionAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTriggerMouseDown(value: () => js.Any): Self = StObject.set(x, "triggerMouseDown", js.Any.fromFunction0(value))
+    inline def setTriggerMouseDown(value: () => js.Any): Self = StObject.set(x, "triggerMouseDown", js.Any.fromFunction0(value))
   }
 }

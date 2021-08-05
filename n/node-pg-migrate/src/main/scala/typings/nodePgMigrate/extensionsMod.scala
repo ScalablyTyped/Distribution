@@ -13,9 +13,7 @@ object extensionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createExtension(mOptions: MigrationOptions): CreateExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createExtension")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateExtension]
+  inline def createExtension(mOptions: MigrationOptions): CreateExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createExtension")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateExtension]
   
-  @scala.inline
-  def dropExtension(mOptions: MigrationOptions): DropExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("dropExtension")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropExtension]
+  inline def dropExtension(mOptions: MigrationOptions): DropExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("dropExtension")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropExtension]
 }

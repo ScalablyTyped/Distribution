@@ -10,11 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def format(options: ContentRangeFormatOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(options: ContentRangeFormatOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parse(str: String): ContentRangeParts | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[ContentRangeParts | Null]
+  inline def parse(str: String): ContentRangeParts | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[ContentRangeParts | Null]
   
   trait ContentRangeFormatOptions extends StObject {
     
@@ -30,41 +28,30 @@ object mod {
   }
   object ContentRangeFormatOptions {
     
-    @scala.inline
-    def apply(unit: String): ContentRangeFormatOptions = {
+    inline def apply(unit: String): ContentRangeFormatOptions = {
       val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], length = null)
       __obj.asInstanceOf[ContentRangeFormatOptions]
     }
     
-    @scala.inline
-    implicit class ContentRangeFormatOptionsMutableBuilder[Self <: ContentRangeFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ContentRangeFormatOptions](x: Self) {
       
-      @scala.inline
-      def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
-      @scala.inline
-      def setLast(value: Double): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: Double): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthNull: Self = StObject.set(x, "length", null)
+      inline def setLengthNull: Self = StObject.set(x, "length", null)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,35 +67,26 @@ object mod {
   }
   object ContentRangeParts {
     
-    @scala.inline
-    def apply(unit: String): ContentRangeParts = {
+    inline def apply(unit: String): ContentRangeParts = {
       val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], first = null, last = null, length = null)
       __obj.asInstanceOf[ContentRangeParts]
     }
     
-    @scala.inline
-    implicit class ContentRangePartsMutableBuilder[Self <: ContentRangeParts] (val x: Self) extends AnyVal {
+    extension [Self <: ContentRangeParts](x: Self) {
       
-      @scala.inline
-      def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstNull: Self = StObject.set(x, "first", null)
+      inline def setFirstNull: Self = StObject.set(x, "first", null)
       
-      @scala.inline
-      def setLast(value: Double): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: Double): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastNull: Self = StObject.set(x, "last", null)
+      inline def setLastNull: Self = StObject.set(x, "last", null)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthNull: Self = StObject.set(x, "length", null)
+      inline def setLengthNull: Self = StObject.set(x, "length", null)
       
-      @scala.inline
-      def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
   }
 }

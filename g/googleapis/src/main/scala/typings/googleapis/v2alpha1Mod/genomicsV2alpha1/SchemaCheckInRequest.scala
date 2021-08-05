@@ -32,37 +32,27 @@ trait SchemaCheckInRequest extends StObject {
 }
 object SchemaCheckInRequest {
   
-  @scala.inline
-  def apply(): SchemaCheckInRequest = {
+  inline def apply(): SchemaCheckInRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCheckInRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCheckInRequestMutableBuilder[Self <: SchemaCheckInRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCheckInRequest](x: Self) {
     
-    @scala.inline
-    def setDeadlineExpired(value: SchemaEmpty): Self = StObject.set(x, "deadlineExpired", value.asInstanceOf[js.Any])
+    inline def setDeadlineExpired(value: SchemaEmpty): Self = StObject.set(x, "deadlineExpired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadlineExpiredUndefined: Self = StObject.set(x, "deadlineExpired", js.undefined)
+    inline def setDeadlineExpiredUndefined: Self = StObject.set(x, "deadlineExpired", js.undefined)
     
-    @scala.inline
-    def setEvent(value: StringDictionary[js.Any]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: StringDictionary[js.Any]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setResult(value: SchemaStatus): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaStatus): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setWorkerStatus(value: SchemaWorkerStatus): Self = StObject.set(x, "workerStatus", value.asInstanceOf[js.Any])
+    inline def setWorkerStatus(value: SchemaWorkerStatus): Self = StObject.set(x, "workerStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerStatusUndefined: Self = StObject.set(x, "workerStatus", js.undefined)
+    inline def setWorkerStatusUndefined: Self = StObject.set(x, "workerStatus", js.undefined)
   }
 }

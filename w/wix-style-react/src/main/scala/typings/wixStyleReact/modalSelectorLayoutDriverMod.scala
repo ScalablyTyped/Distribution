@@ -54,8 +54,7 @@ object modalSelectorLayoutDriverMod {
   }
   object ModalSelectorLayoutDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelButtonDriver: () => buttonDriverFactory,
       clickOnClose: () => Unit,
       exists: () => Boolean,
@@ -79,59 +78,41 @@ object modalSelectorLayoutDriverMod {
       __obj.asInstanceOf[ModalSelectorLayoutDriver]
     }
     
-    @scala.inline
-    implicit class ModalSelectorLayoutDriverMutableBuilder[Self <: ModalSelectorLayoutDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ModalSelectorLayoutDriver](x: Self) {
       
-      @scala.inline
-      def setCancelButtonDriver(value: () => buttonDriverFactory): Self = StObject.set(x, "cancelButtonDriver", js.Any.fromFunction0(value))
+      inline def setCancelButtonDriver(value: () => buttonDriverFactory): Self = StObject.set(x, "cancelButtonDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnClose(value: () => Unit): Self = StObject.set(x, "clickOnClose", js.Any.fromFunction0(value))
+      inline def setClickOnClose(value: () => Unit): Self = StObject.set(x, "clickOnClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFooterSelector(value: () => CheckboxDriver): Self = StObject.set(x, "footerSelector", js.Any.fromFunction0(value))
+      inline def setFooterSelector(value: () => CheckboxDriver): Self = StObject.set(x, "footerSelector", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEmptyState(value: () => HTMLElement): Self = StObject.set(x, "getEmptyState", js.Any.fromFunction0(value))
+      inline def setGetEmptyState(value: () => HTMLElement): Self = StObject.set(x, "getEmptyState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNoResultsFoundState(value: () => HTMLElement): Self = StObject.set(x, "getNoResultsFoundState", js.Any.fromFunction0(value))
+      inline def setGetNoResultsFoundState(value: () => HTMLElement): Self = StObject.set(x, "getNoResultsFoundState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectorDriverAt(value: Double => SelectorDriver): Self = StObject.set(x, "getSelectorDriverAt", js.Any.fromFunction1(value))
+      inline def setGetSelectorDriverAt(value: Double => SelectorDriver): Self = StObject.set(x, "getSelectorDriverAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListExists(value: () => Boolean): Self = StObject.set(x, "listExists", js.Any.fromFunction0(value))
+      inline def setListExists(value: () => Boolean): Self = StObject.set(x, "listExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMainLoaderDriver(value: () => LoaderDriver): Self = StObject.set(x, "mainLoaderDriver", js.Any.fromFunction0(value))
+      inline def setMainLoaderDriver(value: () => LoaderDriver): Self = StObject.set(x, "mainLoaderDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextPageLoaderDriver(value: () => LoaderDriver): Self = StObject.set(x, "nextPageLoaderDriver", js.Any.fromFunction0(value))
+      inline def setNextPageLoaderDriver(value: () => LoaderDriver): Self = StObject.set(x, "nextPageLoaderDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNumberOfItemsInList(value: () => Double): Self = StObject.set(x, "numberOfItemsInList", js.Any.fromFunction0(value))
+      inline def setNumberOfItemsInList(value: () => Double): Self = StObject.set(x, "numberOfItemsInList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOkButtonDriver(value: () => buttonDriverFactory): Self = StObject.set(x, "okButtonDriver", js.Any.fromFunction0(value))
+      inline def setOkButtonDriver(value: () => buttonDriverFactory): Self = StObject.set(x, "okButtonDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScrollDown(value: () => Boolean): Self = StObject.set(x, "scrollDown", js.Any.fromFunction0(value))
+      inline def setScrollDown(value: () => Boolean): Self = StObject.set(x, "scrollDown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSearchDriver(value: () => SearchDriver): Self = StObject.set(x, "searchDriver", js.Any.fromFunction0(value))
+      inline def setSearchDriver(value: () => SearchDriver): Self = StObject.set(x, "searchDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowsEmptyState(value: () => Boolean): Self = StObject.set(x, "showsEmptyState", js.Any.fromFunction0(value))
+      inline def setShowsEmptyState(value: () => Boolean): Self = StObject.set(x, "showsEmptyState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowsNoResultsFoundState(value: () => Boolean): Self = StObject.set(x, "showsNoResultsFoundState", js.Any.fromFunction0(value))
+      inline def setShowsNoResultsFoundState(value: () => Boolean): Self = StObject.set(x, "showsNoResultsFoundState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSubtitleTextDriver(value: () => TextDriver): Self = StObject.set(x, "subtitleTextDriver", js.Any.fromFunction0(value))
+      inline def setSubtitleTextDriver(value: () => TextDriver): Self = StObject.set(x, "subtitleTextDriver", js.Any.fromFunction0(value))
     }
   }
 }

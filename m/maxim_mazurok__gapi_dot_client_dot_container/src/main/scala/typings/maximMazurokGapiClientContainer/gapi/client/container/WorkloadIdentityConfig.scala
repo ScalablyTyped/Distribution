@@ -11,19 +11,15 @@ trait WorkloadIdentityConfig extends StObject {
 }
 object WorkloadIdentityConfig {
   
-  @scala.inline
-  def apply(): WorkloadIdentityConfig = {
+  inline def apply(): WorkloadIdentityConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkloadIdentityConfig]
   }
   
-  @scala.inline
-  implicit class WorkloadIdentityConfigMutableBuilder[Self <: WorkloadIdentityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WorkloadIdentityConfig](x: Self) {
     
-    @scala.inline
-    def setWorkloadPool(value: String): Self = StObject.set(x, "workloadPool", value.asInstanceOf[js.Any])
+    inline def setWorkloadPool(value: String): Self = StObject.set(x, "workloadPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkloadPoolUndefined: Self = StObject.set(x, "workloadPool", js.undefined)
+    inline def setWorkloadPoolUndefined: Self = StObject.set(x, "workloadPool", js.undefined)
   }
 }

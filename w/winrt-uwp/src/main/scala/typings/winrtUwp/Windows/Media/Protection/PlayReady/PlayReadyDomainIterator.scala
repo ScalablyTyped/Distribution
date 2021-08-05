@@ -27,8 +27,7 @@ trait PlayReadyDomainIterator extends StObject {
 }
 object PlayReadyDomainIterator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     current: IPlayReadyDomain,
     getMany: () => ItemsIPlayReadyDomain,
     hasCurrent: Boolean,
@@ -38,19 +37,14 @@ object PlayReadyDomainIterator {
     __obj.asInstanceOf[PlayReadyDomainIterator]
   }
   
-  @scala.inline
-  implicit class PlayReadyDomainIteratorMutableBuilder[Self <: PlayReadyDomainIterator] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyDomainIterator](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: IPlayReadyDomain): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: IPlayReadyDomain): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMany(value: () => ItemsIPlayReadyDomain): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
+    inline def setGetMany(value: () => ItemsIPlayReadyDomain): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
+    inline def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
+    inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
   }
 }

@@ -12,19 +12,15 @@ trait IntegratedMeshLayerLayerviewCreateEvent extends StObject {
 }
 object IntegratedMeshLayerLayerviewCreateEvent {
   
-  @scala.inline
-  def apply(layerView: LayerView, view: View): IntegratedMeshLayerLayerviewCreateEvent = {
+  inline def apply(layerView: LayerView, view: View): IntegratedMeshLayerLayerviewCreateEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegratedMeshLayerLayerviewCreateEvent]
   }
   
-  @scala.inline
-  implicit class IntegratedMeshLayerLayerviewCreateEventMutableBuilder[Self <: IntegratedMeshLayerLayerviewCreateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IntegratedMeshLayerLayerviewCreateEvent](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object dotdotdotStrings {
   
   @js.native
   sealed trait window extends StObject
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  inline def window: window = "window".asInstanceOf[window]
 }

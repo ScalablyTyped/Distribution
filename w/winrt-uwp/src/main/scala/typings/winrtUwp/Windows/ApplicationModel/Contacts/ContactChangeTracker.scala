@@ -21,22 +21,17 @@ trait ContactChangeTracker extends StObject {
 }
 object ContactChangeTracker {
   
-  @scala.inline
-  def apply(enable: () => Unit, getChangeReader: () => ContactChangeReader, reset: () => Unit): ContactChangeTracker = {
+  inline def apply(enable: () => Unit, getChangeReader: () => ContactChangeReader, reset: () => Unit): ContactChangeTracker = {
     val __obj = js.Dynamic.literal(enable = js.Any.fromFunction0(enable), getChangeReader = js.Any.fromFunction0(getChangeReader), reset = js.Any.fromFunction0(reset))
     __obj.asInstanceOf[ContactChangeTracker]
   }
   
-  @scala.inline
-  implicit class ContactChangeTrackerMutableBuilder[Self <: ContactChangeTracker] (val x: Self) extends AnyVal {
+  extension [Self <: ContactChangeTracker](x: Self) {
     
-    @scala.inline
-    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetChangeReader(value: () => ContactChangeReader): Self = StObject.set(x, "getChangeReader", js.Any.fromFunction0(value))
+    inline def setGetChangeReader(value: () => ContactChangeReader): Self = StObject.set(x, "getChangeReader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

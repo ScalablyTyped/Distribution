@@ -18,8 +18,7 @@ trait ServiceFlags extends StObject {
 }
 object ServiceFlags {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disabled: scala.Double,
     none: scala.Double,
     serviceFlags: scala.Double,
@@ -30,22 +29,16 @@ object ServiceFlags {
     __obj.asInstanceOf[ServiceFlags]
   }
   
-  @scala.inline
-  implicit class ServiceFlagsMutableBuilder[Self <: ServiceFlags] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceFlags](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceFlags(value: scala.Double): Self = StObject.set(x, "serviceFlags", value.asInstanceOf[js.Any])
+    inline def setServiceFlags(value: scala.Double): Self = StObject.set(x, "serviceFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnChanged(value: scala.Double): Self = StObject.set(x, "unChanged", value.asInstanceOf[js.Any])
+    inline def setUnChanged(value: scala.Double): Self = StObject.set(x, "unChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified(value: scala.Double): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+    inline def setVerified(value: scala.Double): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
   }
 }

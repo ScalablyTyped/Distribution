@@ -18,31 +18,23 @@ trait SchemaBasicPerfSampleSeries extends StObject {
 }
 object SchemaBasicPerfSampleSeries {
   
-  @scala.inline
-  def apply(): SchemaBasicPerfSampleSeries = {
+  inline def apply(): SchemaBasicPerfSampleSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBasicPerfSampleSeries]
   }
   
-  @scala.inline
-  implicit class SchemaBasicPerfSampleSeriesMutableBuilder[Self <: SchemaBasicPerfSampleSeries] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBasicPerfSampleSeries](x: Self) {
     
-    @scala.inline
-    def setPerfMetricType(value: String): Self = StObject.set(x, "perfMetricType", value.asInstanceOf[js.Any])
+    inline def setPerfMetricType(value: String): Self = StObject.set(x, "perfMetricType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerfMetricTypeUndefined: Self = StObject.set(x, "perfMetricType", js.undefined)
+    inline def setPerfMetricTypeUndefined: Self = StObject.set(x, "perfMetricType", js.undefined)
     
-    @scala.inline
-    def setPerfUnit(value: String): Self = StObject.set(x, "perfUnit", value.asInstanceOf[js.Any])
+    inline def setPerfUnit(value: String): Self = StObject.set(x, "perfUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerfUnitUndefined: Self = StObject.set(x, "perfUnit", js.undefined)
+    inline def setPerfUnitUndefined: Self = StObject.set(x, "perfUnit", js.undefined)
     
-    @scala.inline
-    def setSampleSeriesLabel(value: String): Self = StObject.set(x, "sampleSeriesLabel", value.asInstanceOf[js.Any])
+    inline def setSampleSeriesLabel(value: String): Self = StObject.set(x, "sampleSeriesLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleSeriesLabelUndefined: Self = StObject.set(x, "sampleSeriesLabel", js.undefined)
+    inline def setSampleSeriesLabelUndefined: Self = StObject.set(x, "sampleSeriesLabel", js.undefined)
   }
 }

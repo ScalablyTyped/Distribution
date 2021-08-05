@@ -20,23 +20,18 @@ object anon {
   }
   object Notified {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](notified: Boolean, subscriber: T => Unit, subscription: Subscription): Notified[T] = {
+    inline def apply[T /* <: js.Object */](notified: Boolean, subscriber: T => Unit, subscription: Subscription): Notified[T] = {
       val __obj = js.Dynamic.literal(notified = notified.asInstanceOf[js.Any], subscriber = js.Any.fromFunction1(subscriber), subscription = subscription.asInstanceOf[js.Any])
       __obj.asInstanceOf[Notified[T]]
     }
     
-    @scala.inline
-    implicit class NotifiedMutableBuilder[Self <: Notified[?], T /* <: js.Object */] (val x: Self & Notified[T]) extends AnyVal {
+    extension [Self <: Notified[?], T /* <: js.Object */](x: Self & Notified[T]) {
       
-      @scala.inline
-      def setNotified(value: Boolean): Self = StObject.set(x, "notified", value.asInstanceOf[js.Any])
+      inline def setNotified(value: Boolean): Self = StObject.set(x, "notified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriber(value: T => Unit): Self = StObject.set(x, "subscriber", js.Any.fromFunction1(value))
+      inline def setSubscriber(value: T => Unit): Self = StObject.set(x, "subscriber", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscription(value: Subscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: Subscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     }
   }
 }

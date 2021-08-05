@@ -40,8 +40,7 @@ trait Typeofruntime extends StObject {
 }
 object Typeofruntime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionType: NEWNOTE,
     LaunchSource: ABOUTPAGE,
     PlayStoreStatus: AVAILABLE,
@@ -53,25 +52,18 @@ object Typeofruntime {
     __obj.asInstanceOf[Typeofruntime]
   }
   
-  @scala.inline
-  implicit class TypeofruntimeMutableBuilder[Self <: Typeofruntime] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofruntime](x: Self) {
     
-    @scala.inline
-    def setActionType(value: NEWNOTE): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: NEWNOTE): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchSource(value: ABOUTPAGE): Self = StObject.set(x, "LaunchSource", value.asInstanceOf[js.Any])
+    inline def setLaunchSource(value: ABOUTPAGE): Self = StObject.set(x, "LaunchSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEmbedRequested(value: Event[js.Function1[/* request */ EmbedRequest, Unit]]): Self = StObject.set(x, "onEmbedRequested", value.asInstanceOf[js.Any])
+    inline def setOnEmbedRequested(value: Event[js.Function1[/* request */ EmbedRequest, Unit]]): Self = StObject.set(x, "onEmbedRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLaunched(value: Event[js.Function1[/* launchData */ LaunchData, Unit]]): Self = StObject.set(x, "onLaunched", value.asInstanceOf[js.Any])
+    inline def setOnLaunched(value: Event[js.Function1[/* launchData */ LaunchData, Unit]]): Self = StObject.set(x, "onLaunched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRestarted(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onRestarted", value.asInstanceOf[js.Any])
+    inline def setOnRestarted(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onRestarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayStoreStatus(value: AVAILABLE): Self = StObject.set(x, "PlayStoreStatus", value.asInstanceOf[js.Any])
+    inline def setPlayStoreStatus(value: AVAILABLE): Self = StObject.set(x, "PlayStoreStatus", value.asInstanceOf[js.Any])
   }
 }

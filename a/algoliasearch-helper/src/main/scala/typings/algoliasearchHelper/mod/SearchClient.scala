@@ -13,25 +13,19 @@ trait SearchClient extends StObject {
 }
 object SearchClient {
   
-  @scala.inline
-  def apply(): SearchClient = {
+  inline def apply(): SearchClient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchClient]
   }
   
-  @scala.inline
-  implicit class SearchClientMutableBuilder[Self <: SearchClient] (val x: Self) extends AnyVal {
+  extension [Self <: SearchClient](x: Self) {
     
-    @scala.inline
-    def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchForFacetValues(value: js.Any): Self = StObject.set(x, "searchForFacetValues", value.asInstanceOf[js.Any])
+    inline def setSearchForFacetValues(value: js.Any): Self = StObject.set(x, "searchForFacetValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchForFacetValuesUndefined: Self = StObject.set(x, "searchForFacetValues", js.undefined)
+    inline def setSearchForFacetValuesUndefined: Self = StObject.set(x, "searchForFacetValues", js.undefined)
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
   }
 }

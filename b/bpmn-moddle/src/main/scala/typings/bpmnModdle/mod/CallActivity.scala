@@ -12,8 +12,7 @@ trait CallActivity
 }
 object CallActivity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -40,10 +39,8 @@ object CallActivity {
     __obj.asInstanceOf[CallActivity]
   }
   
-  @scala.inline
-  implicit class CallActivityMutableBuilder[Self <: CallActivity] (val x: Self) extends AnyVal {
+  extension [Self <: CallActivity](x: Self) {
     
-    @scala.inline
-    def setCalledElement(value: String): Self = StObject.set(x, "calledElement", value.asInstanceOf[js.Any])
+    inline def setCalledElement(value: String): Self = StObject.set(x, "calledElement", value.asInstanceOf[js.Any])
   }
 }

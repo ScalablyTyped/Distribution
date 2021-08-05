@@ -23,22 +23,17 @@ trait UpdateServicePrimaryTaskSetRequest extends StObject {
 }
 object UpdateServicePrimaryTaskSetRequest {
   
-  @scala.inline
-  def apply(cluster: String, primaryTaskSet: String, service: String): UpdateServicePrimaryTaskSetRequest = {
+  inline def apply(cluster: String, primaryTaskSet: String, service: String): UpdateServicePrimaryTaskSetRequest = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], primaryTaskSet = primaryTaskSet.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServicePrimaryTaskSetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateServicePrimaryTaskSetRequestMutableBuilder[Self <: UpdateServicePrimaryTaskSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateServicePrimaryTaskSetRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryTaskSet(value: String): Self = StObject.set(x, "primaryTaskSet", value.asInstanceOf[js.Any])
+    inline def setPrimaryTaskSet(value: String): Self = StObject.set(x, "primaryTaskSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
   }
 }

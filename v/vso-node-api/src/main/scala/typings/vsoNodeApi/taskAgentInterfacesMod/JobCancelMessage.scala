@@ -12,19 +12,15 @@ trait JobCancelMessage extends StObject {
 }
 object JobCancelMessage {
   
-  @scala.inline
-  def apply(jobId: String, timeout: js.Any): JobCancelMessage = {
+  inline def apply(jobId: String, timeout: js.Any): JobCancelMessage = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobCancelMessage]
   }
   
-  @scala.inline
-  implicit class JobCancelMessageMutableBuilder[Self <: JobCancelMessage] (val x: Self) extends AnyVal {
+  extension [Self <: JobCancelMessage](x: Self) {
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

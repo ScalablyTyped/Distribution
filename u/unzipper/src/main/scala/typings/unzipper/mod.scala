@@ -22,13 +22,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def BufferStream(entry: Entry): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("BufferStream")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def BufferStream(entry: Entry): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("BufferStream")(entry.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   
-  @scala.inline
-  def Extract(): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")().asInstanceOf[ParseStream]
-  @scala.inline
-  def Extract(opts: ParseOptions): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
+  inline def Extract(): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")().asInstanceOf[ParseStream]
+  inline def Extract(opts: ParseOptions): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
   
   object Open {
     
@@ -36,37 +33,25 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def buffer(data: Buffer): js.Promise[CentralDirectory] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CentralDirectory]]
+    inline def buffer(data: Buffer): js.Promise[CentralDirectory] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CentralDirectory]]
     
-    @scala.inline
-    def file(filename: String): js.Promise[CentralDirectory] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CentralDirectory]]
+    inline def file(filename: String): js.Promise[CentralDirectory] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CentralDirectory]]
     
-    @scala.inline
-    def s3(client: js.Any, params: js.Any): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("s3")(client.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
+    inline def s3(client: js.Any, params: js.Any): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("s3")(client.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
     
-    @scala.inline
-    def url(request: ClientRequest, opt: String): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(request.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
-    @scala.inline
-    def url(request: ClientRequest, opt: RequestOptions): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(request.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
+    inline def url(request: ClientRequest, opt: String): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(request.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
+    inline def url(request: ClientRequest, opt: RequestOptions): js.Promise[CentralDirectory] = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(request.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CentralDirectory]]
   }
   
-  @scala.inline
-  def Parse(): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[ParseStream]
-  @scala.inline
-  def Parse(opts: ParseOptions): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
+  inline def Parse(): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[ParseStream]
+  inline def Parse(opts: ParseOptions): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
   
-  @scala.inline
-  def ParseOne(): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")().asInstanceOf[Duplex]
-  @scala.inline
-  def ParseOne(`match`: Unit, opts: ParseOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Duplex]
-  @scala.inline
-  def ParseOne(`match`: RegExp): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any]).asInstanceOf[Duplex]
-  @scala.inline
-  def ParseOne(`match`: RegExp, opts: ParseOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def ParseOne(): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")().asInstanceOf[Duplex]
+  inline def ParseOne(`match`: Unit, opts: ParseOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+  inline def ParseOne(`match`: RegExp): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any]).asInstanceOf[Duplex]
+  inline def ParseOne(`match`: RegExp, opts: ParseOptions): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseOne")(`match`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Duplex]
   
-  @scala.inline
-  def unzip(source: Size, offset: Double, _password: String): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(source.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], _password.asInstanceOf[js.Any])).asInstanceOf[Entry]
+  inline def unzip(source: Size, offset: Double, _password: String): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("unzip")(source.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], _password.asInstanceOf[js.Any])).asInstanceOf[Entry]
   
   trait CentralDirectory extends StObject {
     
@@ -92,8 +77,7 @@ object mod {
   }
   object CentralDirectory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       commentLength: Double,
       diskNumber: Double,
       diskStart: Double,
@@ -109,41 +93,29 @@ object mod {
       __obj.asInstanceOf[CentralDirectory]
     }
     
-    @scala.inline
-    implicit class CentralDirectoryMutableBuilder[Self <: CentralDirectory] (val x: Self) extends AnyVal {
+    extension [Self <: CentralDirectory](x: Self) {
       
-      @scala.inline
-      def setCommentLength(value: Double): Self = StObject.set(x, "commentLength", value.asInstanceOf[js.Any])
+      inline def setCommentLength(value: Double): Self = StObject.set(x, "commentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskNumber(value: Double): Self = StObject.set(x, "diskNumber", value.asInstanceOf[js.Any])
+      inline def setDiskNumber(value: Double): Self = StObject.set(x, "diskNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskStart(value: Double): Self = StObject.set(x, "diskStart", value.asInstanceOf[js.Any])
+      inline def setDiskStart(value: Double): Self = StObject.set(x, "diskStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtract(value: ParseOptions => js.Promise[Unit]): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
+      inline def setExtract(value: ParseOptions => js.Promise[Unit]): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setNumberOfRecords(value: Double): Self = StObject.set(x, "numberOfRecords", value.asInstanceOf[js.Any])
+      inline def setNumberOfRecords(value: Double): Self = StObject.set(x, "numberOfRecords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfRecordsOnDisk(value: Double): Self = StObject.set(x, "numberOfRecordsOnDisk", value.asInstanceOf[js.Any])
+      inline def setNumberOfRecordsOnDisk(value: Double): Self = StObject.set(x, "numberOfRecordsOnDisk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetToStartOfCentralDirectory(value: Double): Self = StObject.set(x, "offsetToStartOfCentralDirectory", value.asInstanceOf[js.Any])
+      inline def setOffsetToStartOfCentralDirectory(value: Double): Self = StObject.set(x, "offsetToStartOfCentralDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: Double): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Double): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeOfCentralDirectory(value: Double): Self = StObject.set(x, "sizeOfCentralDirectory", value.asInstanceOf[js.Any])
+      inline def setSizeOfCentralDirectory(value: Double): Self = StObject.set(x, "sizeOfCentralDirectory", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,38 +205,28 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setForceStream(value: Boolean): Self = StObject.set(x, "forceStream", value.asInstanceOf[js.Any])
+      inline def setForceStream(value: Boolean): Self = StObject.set(x, "forceStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceStreamUndefined: Self = StObject.set(x, "forceStream", js.undefined)
+      inline def setForceStreamUndefined: Self = StObject.set(x, "forceStream", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   

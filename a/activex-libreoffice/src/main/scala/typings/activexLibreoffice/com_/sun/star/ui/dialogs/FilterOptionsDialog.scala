@@ -31,8 +31,7 @@ trait FilterOptionsDialog
      with XExecutableDialog
 object FilterOptionsDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertyValues: SafeArray[PropertyValue],
     acquire: () => Unit,
     execute: () => Double,

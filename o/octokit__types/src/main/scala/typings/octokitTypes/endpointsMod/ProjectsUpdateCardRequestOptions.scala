@@ -20,25 +20,19 @@ trait ProjectsUpdateCardRequestOptions extends StObject {
 }
 object ProjectsUpdateCardRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsUpdateCardRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsUpdateCardRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/projects/columns/cards/:card_id")
     __obj.asInstanceOf[ProjectsUpdateCardRequestOptions]
   }
   
-  @scala.inline
-  implicit class ProjectsUpdateCardRequestOptionsMutableBuilder[Self <: ProjectsUpdateCardRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsUpdateCardRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashprojectsSlashcolumnsSlashcardsSlashColoncard_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashprojectsSlashcolumnsSlashcardsSlashColoncard_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

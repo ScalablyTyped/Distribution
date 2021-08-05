@@ -22,8 +22,7 @@ trait FeedbackDesktop extends StObject {
 }
 object FeedbackDesktop {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     feedbackDesktop: scala.Double,
     feedbackWeb: scala.Double,
     sessionInsightsForAll: scala.Double,
@@ -36,28 +35,20 @@ object FeedbackDesktop {
     __obj.asInstanceOf[FeedbackDesktop]
   }
   
-  @scala.inline
-  implicit class FeedbackDesktopMutableBuilder[Self <: FeedbackDesktop] (val x: Self) extends AnyVal {
+  extension [Self <: FeedbackDesktop](x: Self) {
     
-    @scala.inline
-    def setFeedbackDesktop(value: scala.Double): Self = StObject.set(x, "feedbackDesktop", value.asInstanceOf[js.Any])
+    inline def setFeedbackDesktop(value: scala.Double): Self = StObject.set(x, "feedbackDesktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackWeb(value: scala.Double): Self = StObject.set(x, "feedbackWeb", value.asInstanceOf[js.Any])
+    inline def setFeedbackWeb(value: scala.Double): Self = StObject.set(x, "feedbackWeb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionInsightsForAll(value: scala.Double): Self = StObject.set(x, "sessionInsightsForAll", value.asInstanceOf[js.Any])
+    inline def setSessionInsightsForAll(value: scala.Double): Self = StObject.set(x, "sessionInsightsForAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
+    inline def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXTDesktop(value: scala.Double): Self = StObject.set(x, "xTDesktop", value.asInstanceOf[js.Any])
+    inline def setXTDesktop(value: scala.Double): Self = StObject.set(x, "xTDesktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXTDesktop2(value: scala.Double): Self = StObject.set(x, "xTDesktop2", value.asInstanceOf[js.Any])
+    inline def setXTDesktop2(value: scala.Double): Self = StObject.set(x, "xTDesktop2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXTWeb(value: scala.Double): Self = StObject.set(x, "xTWeb", value.asInstanceOf[js.Any])
+    inline def setXTWeb(value: scala.Double): Self = StObject.set(x, "xTWeb", value.asInstanceOf[js.Any])
   }
 }

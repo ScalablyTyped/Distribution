@@ -17,19 +17,15 @@ trait IMemberPickerOptions extends StObject {
 }
 object IMemberPickerOptions {
   
-  @scala.inline
-  def apply(callback: js.Function, multiPicker: Boolean): IMemberPickerOptions = {
+  inline def apply(callback: js.Function, multiPicker: Boolean): IMemberPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], multiPicker = multiPicker.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMemberPickerOptions]
   }
   
-  @scala.inline
-  implicit class IMemberPickerOptionsMutableBuilder[Self <: IMemberPickerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMemberPickerOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiPicker(value: Boolean): Self = StObject.set(x, "multiPicker", value.asInstanceOf[js.Any])
+    inline def setMultiPicker(value: Boolean): Self = StObject.set(x, "multiPicker", value.asInstanceOf[js.Any])
   }
 }

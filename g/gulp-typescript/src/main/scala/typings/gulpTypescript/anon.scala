@@ -410,23 +410,18 @@ object anon {
   }
   object Character {
     
-    @scala.inline
-    def apply(character: Double, line: Double, position: Double): Character = {
+    inline def apply(character: Double, line: Double, position: Double): Character = {
       val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[Character]
     }
     
-    @scala.inline
-    implicit class CharacterMutableBuilder[Self <: Character] (val x: Self) extends AnyVal {
+    extension [Self <: Character](x: Self) {
       
-      @scala.inline
-      def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -436,17 +431,14 @@ object anon {
   }
   object TypeofScriptSnapshot {
     
-    @scala.inline
-    def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
+    inline def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
       val __obj = js.Dynamic.literal(fromString = js.Any.fromFunction1(fromString))
       __obj.asInstanceOf[TypeofScriptSnapshot]
     }
     
-    @scala.inline
-    implicit class TypeofScriptSnapshotMutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofScriptSnapshot](x: Self) {
       
-      @scala.inline
-      def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
+      inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }
   }
   

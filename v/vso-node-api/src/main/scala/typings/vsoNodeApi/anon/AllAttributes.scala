@@ -40,8 +40,7 @@ trait AllAttributes extends StObject {
 }
 object AllAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allAttributes: scala.Double,
     excludeNonValidated: scala.Double,
     includeAssetUri: scala.Double,
@@ -63,55 +62,38 @@ object AllAttributes {
     __obj.asInstanceOf[AllAttributes]
   }
   
-  @scala.inline
-  implicit class AllAttributesMutableBuilder[Self <: AllAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: AllAttributes](x: Self) {
     
-    @scala.inline
-    def setAllAttributes(value: scala.Double): Self = StObject.set(x, "allAttributes", value.asInstanceOf[js.Any])
+    inline def setAllAttributes(value: scala.Double): Self = StObject.set(x, "allAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeNonValidated(value: scala.Double): Self = StObject.set(x, "excludeNonValidated", value.asInstanceOf[js.Any])
+    inline def setExcludeNonValidated(value: scala.Double): Self = StObject.set(x, "excludeNonValidated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAssetUri(value: scala.Double): Self = StObject.set(x, "includeAssetUri", value.asInstanceOf[js.Any])
+    inline def setIncludeAssetUri(value: scala.Double): Self = StObject.set(x, "includeAssetUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCategoryAndTags(value: scala.Double): Self = StObject.set(x, "includeCategoryAndTags", value.asInstanceOf[js.Any])
+    inline def setIncludeCategoryAndTags(value: scala.Double): Self = StObject.set(x, "includeCategoryAndTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFiles(value: scala.Double): Self = StObject.set(x, "includeFiles", value.asInstanceOf[js.Any])
+    inline def setIncludeFiles(value: scala.Double): Self = StObject.set(x, "includeFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeInstallationTargets(value: scala.Double): Self = StObject.set(x, "includeInstallationTargets", value.asInstanceOf[js.Any])
+    inline def setIncludeInstallationTargets(value: scala.Double): Self = StObject.set(x, "includeInstallationTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLatestVersionOnly(value: scala.Double): Self = StObject.set(x, "includeLatestVersionOnly", value.asInstanceOf[js.Any])
+    inline def setIncludeLatestVersionOnly(value: scala.Double): Self = StObject.set(x, "includeLatestVersionOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLcids(value: scala.Double): Self = StObject.set(x, "includeLcids", value.asInstanceOf[js.Any])
+    inline def setIncludeLcids(value: scala.Double): Self = StObject.set(x, "includeLcids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeMetadata(value: scala.Double): Self = StObject.set(x, "includeMetadata", value.asInstanceOf[js.Any])
+    inline def setIncludeMetadata(value: scala.Double): Self = StObject.set(x, "includeMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeMinimalPayloadForVsIde(value: scala.Double): Self = StObject.set(x, "includeMinimalPayloadForVsIde", value.asInstanceOf[js.Any])
+    inline def setIncludeMinimalPayloadForVsIde(value: scala.Double): Self = StObject.set(x, "includeMinimalPayloadForVsIde", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSharedAccounts(value: scala.Double): Self = StObject.set(x, "includeSharedAccounts", value.asInstanceOf[js.Any])
+    inline def setIncludeSharedAccounts(value: scala.Double): Self = StObject.set(x, "includeSharedAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeStatistics(value: scala.Double): Self = StObject.set(x, "includeStatistics", value.asInstanceOf[js.Any])
+    inline def setIncludeStatistics(value: scala.Double): Self = StObject.set(x, "includeStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeVersionProperties(value: scala.Double): Self = StObject.set(x, "includeVersionProperties", value.asInstanceOf[js.Any])
+    inline def setIncludeVersionProperties(value: scala.Double): Self = StObject.set(x, "includeVersionProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeVersions(value: scala.Double): Self = StObject.set(x, "includeVersions", value.asInstanceOf[js.Any])
+    inline def setIncludeVersions(value: scala.Double): Self = StObject.set(x, "includeVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFallbackAssetUri(value: scala.Double): Self = StObject.set(x, "useFallbackAssetUri", value.asInstanceOf[js.Any])
+    inline def setUseFallbackAssetUri(value: scala.Double): Self = StObject.set(x, "useFallbackAssetUri", value.asInstanceOf[js.Any])
   }
 }

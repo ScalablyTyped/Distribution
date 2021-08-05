@@ -13,19 +13,15 @@ trait Acl extends StObject {
 }
 object Acl {
   
-  @scala.inline
-  def apply(acl: String, res: NormalSuccessResponse): Acl = {
+  inline def apply(acl: String, res: NormalSuccessResponse): Acl = {
     val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[Acl]
   }
   
-  @scala.inline
-  implicit class AclMutableBuilder[Self <: Acl] (val x: Self) extends AnyVal {
+  extension [Self <: Acl](x: Self) {
     
-    @scala.inline
-    def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    inline def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

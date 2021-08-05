@@ -44,8 +44,7 @@ trait FeatureTemplateThumbnail
 }
 object FeatureTemplateThumbnail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     contentType: image | png | jpg | jpeg,
     hasOwnProperty: PropertyKey => Boolean,
@@ -58,19 +57,14 @@ object FeatureTemplateThumbnail {
     __obj.asInstanceOf[FeatureTemplateThumbnail]
   }
   
-  @scala.inline
-  implicit class FeatureTemplateThumbnailMutableBuilder[Self <: FeatureTemplateThumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureTemplateThumbnail](x: Self) {
     
-    @scala.inline
-    def setContentType(value: image | png | jpg | jpeg): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: image | png | jpg | jpeg): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageData(value: String): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
+    inline def setImageData(value: String): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

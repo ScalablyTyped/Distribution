@@ -26,50 +26,42 @@ object toastStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/toast/style/index.native", "default.centering")
     @js.native
     def centering: JustifyContentPadding = js.native
-    @scala.inline
-    def centering_=(x: JustifyContentPadding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("centering")(x.asInstanceOf[js.Any])
+    inline def centering_=(x: JustifyContentPadding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("centering")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/toast/style/index.native", "default.container")
     @js.native
     def container: BottomJustifyContent = js.native
-    @scala.inline
-    def container_=(x: BottomJustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("container")(x.asInstanceOf[js.Any])
+    inline def container_=(x: BottomJustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("container")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/toast/style/index.native", "default.content")
     @js.native
     def content: `0` = js.native
-    @scala.inline
-    def content_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content")(x.asInstanceOf[js.Any])
+    inline def content_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/toast/style/index.native", "default.iconToast")
     @js.native
     def iconToast: BorderRadiusPadding = js.native
-    @scala.inline
-    def iconToast_=(x: BorderRadiusPadding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconToast")(x.asInstanceOf[js.Any])
+    inline def iconToast_=(x: BorderRadiusPadding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iconToast")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/toast/style/index.native", "default.image")
     @js.native
     def image: HeightMarginBottom = js.native
-    @scala.inline
-    def image_=(x: HeightMarginBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("image")(x.asInstanceOf[js.Any])
+    inline def image_=(x: HeightMarginBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("image")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/toast/style/index.native", "default.innerContainer")
     @js.native
     def innerContainer: BackgroundColorString = js.native
-    @scala.inline
-    def innerContainer_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerContainer")(x.asInstanceOf[js.Any])
+    inline def innerContainer_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerContainer")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/toast/style/index.native", "default.innerWrap")
     @js.native
     def innerWrap: BackgroundColorMinWidth = js.native
-    @scala.inline
-    def innerWrap_=(x: BackgroundColorMinWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerWrap")(x.asInstanceOf[js.Any])
+    inline def innerWrap_=(x: BackgroundColorMinWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerWrap")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/toast/style/index.native", "default.textToast")
     @js.native
     def textToast: BorderRadiusPaddingHorizontal = js.native
-    @scala.inline
-    def textToast_=(x: BorderRadiusPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textToast")(x.asInstanceOf[js.Any])
+    inline def textToast_=(x: BorderRadiusPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textToast")(x.asInstanceOf[js.Any])
   }
   
   trait IToastStyle extends StObject {
@@ -92,8 +84,7 @@ object toastStyleIndexNativeMod {
   }
   object IToastStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       centering: ViewStyle,
       container: ViewStyle,
       content: TextStyle,
@@ -107,32 +98,23 @@ object toastStyleIndexNativeMod {
       __obj.asInstanceOf[IToastStyle]
     }
     
-    @scala.inline
-    implicit class IToastStyleMutableBuilder[Self <: IToastStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IToastStyle](x: Self) {
       
-      @scala.inline
-      def setCentering(value: ViewStyle): Self = StObject.set(x, "centering", value.asInstanceOf[js.Any])
+      inline def setCentering(value: ViewStyle): Self = StObject.set(x, "centering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: TextStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: TextStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconToast(value: ViewStyle): Self = StObject.set(x, "iconToast", value.asInstanceOf[js.Any])
+      inline def setIconToast(value: ViewStyle): Self = StObject.set(x, "iconToast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: ImageStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: ImageStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
+      inline def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerWrap(value: ViewStyle): Self = StObject.set(x, "innerWrap", value.asInstanceOf[js.Any])
+      inline def setInnerWrap(value: ViewStyle): Self = StObject.set(x, "innerWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextToast(value: ViewStyle): Self = StObject.set(x, "textToast", value.asInstanceOf[js.Any])
+      inline def setTextToast(value: ViewStyle): Self = StObject.set(x, "textToast", value.asInstanceOf[js.Any])
     }
   }
 }

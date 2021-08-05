@@ -24,8 +24,7 @@ trait XSearchableDictionary
 }
 object XSearchableDictionary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     DictionaryType: DictionaryType,
     Entries: SafeArray[XDictionaryEntry],
@@ -57,10 +56,8 @@ object XSearchableDictionary {
     __obj.asInstanceOf[XSearchableDictionary]
   }
   
-  @scala.inline
-  implicit class XSearchableDictionaryMutableBuilder[Self <: XSearchableDictionary] (val x: Self) extends AnyVal {
+  extension [Self <: XSearchableDictionary](x: Self) {
     
-    @scala.inline
-    def setSearchSimilarEntries(value: String => SafeArray[XDictionaryEntry]): Self = StObject.set(x, "searchSimilarEntries", js.Any.fromFunction1(value))
+    inline def setSearchSimilarEntries(value: String => SafeArray[XDictionaryEntry]): Self = StObject.set(x, "searchSimilarEntries", js.Any.fromFunction1(value))
   }
 }

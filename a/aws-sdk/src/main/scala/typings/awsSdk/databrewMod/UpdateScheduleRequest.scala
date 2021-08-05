@@ -23,28 +23,21 @@ trait UpdateScheduleRequest extends StObject {
 }
 object UpdateScheduleRequest {
   
-  @scala.inline
-  def apply(CronExpression: CronExpression, Name: ScheduleName): UpdateScheduleRequest = {
+  inline def apply(CronExpression: CronExpression, Name: ScheduleName): UpdateScheduleRequest = {
     val __obj = js.Dynamic.literal(CronExpression = CronExpression.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateScheduleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateScheduleRequestMutableBuilder[Self <: UpdateScheduleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateScheduleRequest](x: Self) {
     
-    @scala.inline
-    def setCronExpression(value: CronExpression): Self = StObject.set(x, "CronExpression", value.asInstanceOf[js.Any])
+    inline def setCronExpression(value: CronExpression): Self = StObject.set(x, "CronExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNames(value: JobNameList): Self = StObject.set(x, "JobNames", value.asInstanceOf[js.Any])
+    inline def setJobNames(value: JobNameList): Self = StObject.set(x, "JobNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNamesUndefined: Self = StObject.set(x, "JobNames", js.undefined)
+    inline def setJobNamesUndefined: Self = StObject.set(x, "JobNames", js.undefined)
     
-    @scala.inline
-    def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value :_*))
+    inline def setJobNamesVarargs(value: JobName*): Self = StObject.set(x, "JobNames", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -16,31 +16,23 @@ trait AnimationTime extends StObject {
 }
 object AnimationTime {
   
-  @scala.inline
-  def apply(animationTime: Double, springStiffness: Double): AnimationTime = {
+  inline def apply(animationTime: Double, springStiffness: Double): AnimationTime = {
     val __obj = js.Dynamic.literal(animationTime = animationTime.asInstanceOf[js.Any], springStiffness = springStiffness.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTime]
   }
   
-  @scala.inline
-  implicit class AnimationTimeMutableBuilder[Self <: AnimationTime] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationTime](x: Self) {
     
-    @scala.inline
-    def setAnimationTime(value: Double): Self = StObject.set(x, "animationTime", value.asInstanceOf[js.Any])
+    inline def setAnimationTime(value: Double): Self = StObject.set(x, "animationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExponential(value: Boolean): Self = StObject.set(x, "exponential", value.asInstanceOf[js.Any])
+    inline def setExponential(value: Boolean): Self = StObject.set(x, "exponential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExponentialUndefined: Self = StObject.set(x, "exponential", js.undefined)
+    inline def setExponentialUndefined: Self = StObject.set(x, "exponential", js.undefined)
     
-    @scala.inline
-    def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
-    @scala.inline
-    def setSpringStiffness(value: Double): Self = StObject.set(x, "springStiffness", value.asInstanceOf[js.Any])
+    inline def setSpringStiffness(value: Double): Self = StObject.set(x, "springStiffness", value.asInstanceOf[js.Any])
   }
 }

@@ -48,52 +48,37 @@ trait ClaimResponseError
 }
 object ClaimResponseError {
   
-  @scala.inline
-  def apply(code: CodeableConcept): ClaimResponseError = {
+  inline def apply(code: CodeableConcept): ClaimResponseError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimResponseError]
   }
   
-  @scala.inline
-  implicit class ClaimResponseErrorMutableBuilder[Self <: ClaimResponseError] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimResponseError](x: Self) {
     
-    @scala.inline
-    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailSequenceLinkId(value: positiveInt): Self = StObject.set(x, "detailSequenceLinkId", value.asInstanceOf[js.Any])
+    inline def setDetailSequenceLinkId(value: positiveInt): Self = StObject.set(x, "detailSequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailSequenceLinkIdUndefined: Self = StObject.set(x, "detailSequenceLinkId", js.undefined)
+    inline def setDetailSequenceLinkIdUndefined: Self = StObject.set(x, "detailSequenceLinkId", js.undefined)
     
-    @scala.inline
-    def setSequenceLinkId(value: positiveInt): Self = StObject.set(x, "sequenceLinkId", value.asInstanceOf[js.Any])
+    inline def setSequenceLinkId(value: positiveInt): Self = StObject.set(x, "sequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceLinkIdUndefined: Self = StObject.set(x, "sequenceLinkId", js.undefined)
+    inline def setSequenceLinkIdUndefined: Self = StObject.set(x, "sequenceLinkId", js.undefined)
     
-    @scala.inline
-    def setSubdetailSequenceLinkId(value: positiveInt): Self = StObject.set(x, "subdetailSequenceLinkId", value.asInstanceOf[js.Any])
+    inline def setSubdetailSequenceLinkId(value: positiveInt): Self = StObject.set(x, "subdetailSequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdetailSequenceLinkIdUndefined: Self = StObject.set(x, "subdetailSequenceLinkId", js.undefined)
+    inline def setSubdetailSequenceLinkIdUndefined: Self = StObject.set(x, "subdetailSequenceLinkId", js.undefined)
     
-    @scala.inline
-    def set_detailSequenceLinkId(value: Element): Self = StObject.set(x, "_detailSequenceLinkId", value.asInstanceOf[js.Any])
+    inline def set_detailSequenceLinkId(value: Element): Self = StObject.set(x, "_detailSequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_detailSequenceLinkIdUndefined: Self = StObject.set(x, "_detailSequenceLinkId", js.undefined)
+    inline def set_detailSequenceLinkIdUndefined: Self = StObject.set(x, "_detailSequenceLinkId", js.undefined)
     
-    @scala.inline
-    def set_sequenceLinkId(value: Element): Self = StObject.set(x, "_sequenceLinkId", value.asInstanceOf[js.Any])
+    inline def set_sequenceLinkId(value: Element): Self = StObject.set(x, "_sequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_sequenceLinkIdUndefined: Self = StObject.set(x, "_sequenceLinkId", js.undefined)
+    inline def set_sequenceLinkIdUndefined: Self = StObject.set(x, "_sequenceLinkId", js.undefined)
     
-    @scala.inline
-    def set_subdetailSequenceLinkId(value: Element): Self = StObject.set(x, "_subdetailSequenceLinkId", value.asInstanceOf[js.Any])
+    inline def set_subdetailSequenceLinkId(value: Element): Self = StObject.set(x, "_subdetailSequenceLinkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_subdetailSequenceLinkIdUndefined: Self = StObject.set(x, "_subdetailSequenceLinkId", js.undefined)
+    inline def set_subdetailSequenceLinkIdUndefined: Self = StObject.set(x, "_subdetailSequenceLinkId", js.undefined)
   }
 }

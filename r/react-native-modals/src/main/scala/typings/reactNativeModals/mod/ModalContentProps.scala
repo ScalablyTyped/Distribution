@@ -12,22 +12,17 @@ trait ModalContentProps extends StObject {
 }
 object ModalContentProps {
   
-  @scala.inline
-  def apply(): ModalContentProps = {
+  inline def apply(): ModalContentProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalContentProps]
   }
   
-  @scala.inline
-  implicit class ModalContentPropsMutableBuilder[Self <: ModalContentProps] (val x: Self) extends AnyVal {
+  extension [Self <: ModalContentProps](x: Self) {
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

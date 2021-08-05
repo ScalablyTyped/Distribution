@@ -43,8 +43,7 @@ trait XUIControllerRegistration
 }
 object XUIControllerRegistration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     deregisterController: (String, String) => Unit,
     hasController: (String, String) => Boolean,
@@ -56,16 +55,12 @@ object XUIControllerRegistration {
     __obj.asInstanceOf[XUIControllerRegistration]
   }
   
-  @scala.inline
-  implicit class XUIControllerRegistrationMutableBuilder[Self <: XUIControllerRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: XUIControllerRegistration](x: Self) {
     
-    @scala.inline
-    def setDeregisterController(value: (String, String) => Unit): Self = StObject.set(x, "deregisterController", js.Any.fromFunction2(value))
+    inline def setDeregisterController(value: (String, String) => Unit): Self = StObject.set(x, "deregisterController", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasController(value: (String, String) => Boolean): Self = StObject.set(x, "hasController", js.Any.fromFunction2(value))
+    inline def setHasController(value: (String, String) => Boolean): Self = StObject.set(x, "hasController", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterController(value: (String, String, String) => Unit): Self = StObject.set(x, "registerController", js.Any.fromFunction3(value))
+    inline def setRegisterController(value: (String, String, String) => Unit): Self = StObject.set(x, "registerController", js.Any.fromFunction3(value))
   }
 }

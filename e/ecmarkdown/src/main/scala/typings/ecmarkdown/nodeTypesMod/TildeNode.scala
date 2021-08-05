@@ -18,25 +18,19 @@ trait TildeNode
 }
 object TildeNode {
   
-  @scala.inline
-  def apply(contents: js.Array[FragmentNode], location: LocationRange): TildeNode = {
+  inline def apply(contents: js.Array[FragmentNode], location: LocationRange): TildeNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "tilde")
     __obj.asInstanceOf[TildeNode]
   }
   
-  @scala.inline
-  implicit class TildeNodeMutableBuilder[Self <: TildeNode] (val x: Self) extends AnyVal {
+  extension [Self <: TildeNode](x: Self) {
     
-    @scala.inline
-    def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsVarargs(value: FragmentNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: FragmentNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: tilde): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: tilde): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

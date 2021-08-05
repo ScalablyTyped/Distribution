@@ -17,22 +17,17 @@ trait AttrsConv3DAttrs extends StObject {
 }
 object AttrsConv3DAttrs {
   
-  @scala.inline
-  def apply(attrs: Conv3DAttrs, backend: MathBackendCPU, inputs: Conv3DInputs): AttrsConv3DAttrs = {
+  inline def apply(attrs: Conv3DAttrs, backend: MathBackendCPU, inputs: Conv3DInputs): AttrsConv3DAttrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsConv3DAttrs]
   }
   
-  @scala.inline
-  implicit class AttrsConv3DAttrsMutableBuilder[Self <: AttrsConv3DAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsConv3DAttrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: Conv3DAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: Conv3DAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: Conv3DInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: Conv3DInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

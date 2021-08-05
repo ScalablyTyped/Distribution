@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFileDataStorage extends StObject
 object MFFileDataStorage {
   
-  @scala.inline
-  def DB: `2` = 2.asInstanceOf[`2`]
+  inline def DB: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Default: `0` = 0.asInstanceOf[`0`]
+  inline def Default: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Disk: `1` = 1.asInstanceOf[`1`]
+  inline def Disk: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def External: `3` = 3.asInstanceOf[`3`]
+  inline def External: `3` = 3.asInstanceOf[`3`]
 }

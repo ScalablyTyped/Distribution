@@ -16,8 +16,7 @@ trait IFileActivatedEventArgs
 }
 object IFileActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     files: IVectorView[IStorageItem],
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -28,13 +27,10 @@ object IFileActivatedEventArgs {
     __obj.asInstanceOf[IFileActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class IFileActivatedEventArgsMutableBuilder[Self <: IFileActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IFileActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFiles(value: IVectorView[IStorageItem]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: IVectorView[IStorageItem]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }
 }

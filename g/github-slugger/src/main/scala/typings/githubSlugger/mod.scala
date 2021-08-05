@@ -21,14 +21,10 @@ object mod {
     * @param [maintainCase=false] Keep the current case, otherwise make all lowercase
     */
   /* static member */
-  @scala.inline
-  def slug(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def slug(value: String, maintainCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any], maintainCase.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def slug(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def slug(value: js.Any, maintainCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any], maintainCase.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def slug(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def slug(value: String, maintainCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any], maintainCase.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def slug(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def slug(value: js.Any, maintainCase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slug")(value.asInstanceOf[js.Any], maintainCase.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait BananaSlug extends StObject {

@@ -68,85 +68,59 @@ trait Hdr10Metadata extends StObject {
 }
 object Hdr10Metadata {
   
-  @scala.inline
-  def apply(): Hdr10Metadata = {
+  inline def apply(): Hdr10Metadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hdr10Metadata]
   }
   
-  @scala.inline
-  implicit class Hdr10MetadataMutableBuilder[Self <: Hdr10Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: Hdr10Metadata](x: Self) {
     
-    @scala.inline
-    def setBluePrimaryX(value: integerMin0Max50000): Self = StObject.set(x, "BluePrimaryX", value.asInstanceOf[js.Any])
+    inline def setBluePrimaryX(value: integerMin0Max50000): Self = StObject.set(x, "BluePrimaryX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBluePrimaryXUndefined: Self = StObject.set(x, "BluePrimaryX", js.undefined)
+    inline def setBluePrimaryXUndefined: Self = StObject.set(x, "BluePrimaryX", js.undefined)
     
-    @scala.inline
-    def setBluePrimaryY(value: integerMin0Max50000): Self = StObject.set(x, "BluePrimaryY", value.asInstanceOf[js.Any])
+    inline def setBluePrimaryY(value: integerMin0Max50000): Self = StObject.set(x, "BluePrimaryY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBluePrimaryYUndefined: Self = StObject.set(x, "BluePrimaryY", js.undefined)
+    inline def setBluePrimaryYUndefined: Self = StObject.set(x, "BluePrimaryY", js.undefined)
     
-    @scala.inline
-    def setGreenPrimaryX(value: integerMin0Max50000): Self = StObject.set(x, "GreenPrimaryX", value.asInstanceOf[js.Any])
+    inline def setGreenPrimaryX(value: integerMin0Max50000): Self = StObject.set(x, "GreenPrimaryX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreenPrimaryXUndefined: Self = StObject.set(x, "GreenPrimaryX", js.undefined)
+    inline def setGreenPrimaryXUndefined: Self = StObject.set(x, "GreenPrimaryX", js.undefined)
     
-    @scala.inline
-    def setGreenPrimaryY(value: integerMin0Max50000): Self = StObject.set(x, "GreenPrimaryY", value.asInstanceOf[js.Any])
+    inline def setGreenPrimaryY(value: integerMin0Max50000): Self = StObject.set(x, "GreenPrimaryY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreenPrimaryYUndefined: Self = StObject.set(x, "GreenPrimaryY", js.undefined)
+    inline def setGreenPrimaryYUndefined: Self = StObject.set(x, "GreenPrimaryY", js.undefined)
     
-    @scala.inline
-    def setMaxContentLightLevel(value: integerMin0Max65535): Self = StObject.set(x, "MaxContentLightLevel", value.asInstanceOf[js.Any])
+    inline def setMaxContentLightLevel(value: integerMin0Max65535): Self = StObject.set(x, "MaxContentLightLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxContentLightLevelUndefined: Self = StObject.set(x, "MaxContentLightLevel", js.undefined)
+    inline def setMaxContentLightLevelUndefined: Self = StObject.set(x, "MaxContentLightLevel", js.undefined)
     
-    @scala.inline
-    def setMaxFrameAverageLightLevel(value: integerMin0Max65535): Self = StObject.set(x, "MaxFrameAverageLightLevel", value.asInstanceOf[js.Any])
+    inline def setMaxFrameAverageLightLevel(value: integerMin0Max65535): Self = StObject.set(x, "MaxFrameAverageLightLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFrameAverageLightLevelUndefined: Self = StObject.set(x, "MaxFrameAverageLightLevel", js.undefined)
+    inline def setMaxFrameAverageLightLevelUndefined: Self = StObject.set(x, "MaxFrameAverageLightLevel", js.undefined)
     
-    @scala.inline
-    def setMaxLuminance(value: integerMin0Max2147483647): Self = StObject.set(x, "MaxLuminance", value.asInstanceOf[js.Any])
+    inline def setMaxLuminance(value: integerMin0Max2147483647): Self = StObject.set(x, "MaxLuminance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLuminanceUndefined: Self = StObject.set(x, "MaxLuminance", js.undefined)
+    inline def setMaxLuminanceUndefined: Self = StObject.set(x, "MaxLuminance", js.undefined)
     
-    @scala.inline
-    def setMinLuminance(value: integerMin0Max2147483647): Self = StObject.set(x, "MinLuminance", value.asInstanceOf[js.Any])
+    inline def setMinLuminance(value: integerMin0Max2147483647): Self = StObject.set(x, "MinLuminance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLuminanceUndefined: Self = StObject.set(x, "MinLuminance", js.undefined)
+    inline def setMinLuminanceUndefined: Self = StObject.set(x, "MinLuminance", js.undefined)
     
-    @scala.inline
-    def setRedPrimaryX(value: integerMin0Max50000): Self = StObject.set(x, "RedPrimaryX", value.asInstanceOf[js.Any])
+    inline def setRedPrimaryX(value: integerMin0Max50000): Self = StObject.set(x, "RedPrimaryX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedPrimaryXUndefined: Self = StObject.set(x, "RedPrimaryX", js.undefined)
+    inline def setRedPrimaryXUndefined: Self = StObject.set(x, "RedPrimaryX", js.undefined)
     
-    @scala.inline
-    def setRedPrimaryY(value: integerMin0Max50000): Self = StObject.set(x, "RedPrimaryY", value.asInstanceOf[js.Any])
+    inline def setRedPrimaryY(value: integerMin0Max50000): Self = StObject.set(x, "RedPrimaryY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedPrimaryYUndefined: Self = StObject.set(x, "RedPrimaryY", js.undefined)
+    inline def setRedPrimaryYUndefined: Self = StObject.set(x, "RedPrimaryY", js.undefined)
     
-    @scala.inline
-    def setWhitePointX(value: integerMin0Max50000): Self = StObject.set(x, "WhitePointX", value.asInstanceOf[js.Any])
+    inline def setWhitePointX(value: integerMin0Max50000): Self = StObject.set(x, "WhitePointX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitePointXUndefined: Self = StObject.set(x, "WhitePointX", js.undefined)
+    inline def setWhitePointXUndefined: Self = StObject.set(x, "WhitePointX", js.undefined)
     
-    @scala.inline
-    def setWhitePointY(value: integerMin0Max50000): Self = StObject.set(x, "WhitePointY", value.asInstanceOf[js.Any])
+    inline def setWhitePointY(value: integerMin0Max50000): Self = StObject.set(x, "WhitePointY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitePointYUndefined: Self = StObject.set(x, "WhitePointY", js.undefined)
+    inline def setWhitePointYUndefined: Self = StObject.set(x, "WhitePointY", js.undefined)
   }
 }

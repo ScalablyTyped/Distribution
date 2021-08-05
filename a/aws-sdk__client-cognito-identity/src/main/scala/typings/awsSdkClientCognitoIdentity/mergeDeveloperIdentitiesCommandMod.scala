@@ -30,7 +30,7 @@ object mergeDeveloperIdentitiesCommandMod {
         ] {
     def this(input: MergeDeveloperIdentitiesCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -42,7 +42,7 @@ object mergeDeveloperIdentitiesCommandMod {
       options: HttpHandlerOptions
     ): Handler[MergeDeveloperIdentitiesCommandInput, MergeDeveloperIdentitiesCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type MergeDeveloperIdentitiesCommandInput = MergeDeveloperIdentitiesInput
@@ -54,8 +54,7 @@ object mergeDeveloperIdentitiesCommandMod {
        with _ServiceOutputTypes
   object MergeDeveloperIdentitiesCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): MergeDeveloperIdentitiesCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): MergeDeveloperIdentitiesCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[MergeDeveloperIdentitiesCommandOutput]
     }

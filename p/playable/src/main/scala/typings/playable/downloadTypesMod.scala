@@ -24,8 +24,7 @@ object downloadTypesMod {
   }
   object IDownloadButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -36,23 +35,17 @@ object downloadTypesMod {
       __obj.asInstanceOf[IDownloadButton]
     }
     
-    @scala.inline
-    implicit class IDownloadButtonMutableBuilder[Self <: IDownloadButton] (val x: Self) extends AnyVal {
+    extension [Self <: IDownloadButton](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetDownloadClickCallback(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "setDownloadClickCallback", js.Any.fromFunction1(value))
+      inline def setSetDownloadClickCallback(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "setDownloadClickCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -62,20 +55,16 @@ object downloadTypesMod {
   }
   object IDownloadButtonAPI {
     
-    @scala.inline
-    def apply(): IDownloadButtonAPI = {
+    inline def apply(): IDownloadButtonAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDownloadButtonAPI]
     }
     
-    @scala.inline
-    implicit class IDownloadButtonAPIMutableBuilder[Self <: IDownloadButtonAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IDownloadButtonAPI](x: Self) {
       
-      @scala.inline
-      def setSetDownloadClickCallback(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "setDownloadClickCallback", js.Any.fromFunction1(value))
+      inline def setSetDownloadClickCallback(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "setDownloadClickCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDownloadClickCallbackUndefined: Self = StObject.set(x, "setDownloadClickCallback", js.undefined)
+      inline def setSetDownloadClickCallbackUndefined: Self = StObject.set(x, "setDownloadClickCallback", js.undefined)
     }
   }
   
@@ -85,17 +74,14 @@ object downloadTypesMod {
   }
   object IDownloadViewCallbacks {
     
-    @scala.inline
-    def apply(onButtonClick: () => Unit): IDownloadViewCallbacks = {
+    inline def apply(onButtonClick: () => Unit): IDownloadViewCallbacks = {
       val __obj = js.Dynamic.literal(onButtonClick = js.Any.fromFunction0(onButtonClick))
       __obj.asInstanceOf[IDownloadViewCallbacks]
     }
     
-    @scala.inline
-    implicit class IDownloadViewCallbacksMutableBuilder[Self <: IDownloadViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IDownloadViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnButtonClick(value: () => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction0(value))
+      inline def setOnButtonClick(value: () => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction0(value))
     }
   }
   
@@ -111,8 +97,7 @@ object downloadTypesMod {
   }
   object IDownloadViewConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbacks: IDownloadViewCallbacks,
       textMap: ITextMap,
       theme: IThemeService,
@@ -122,20 +107,15 @@ object downloadTypesMod {
       __obj.asInstanceOf[IDownloadViewConfig]
     }
     
-    @scala.inline
-    implicit class IDownloadViewConfigMutableBuilder[Self <: IDownloadViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IDownloadViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: IDownloadViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: IDownloadViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+      inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+      inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,23 +129,18 @@ object downloadTypesMod {
   }
   object IDownloadViewStyles {
     
-    @scala.inline
-    def apply(buttonWrapper: String, downloadButton: String, hidden: String): IDownloadViewStyles = {
+    inline def apply(buttonWrapper: String, downloadButton: String, hidden: String): IDownloadViewStyles = {
       val __obj = js.Dynamic.literal(buttonWrapper = buttonWrapper.asInstanceOf[js.Any], downloadButton = downloadButton.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDownloadViewStyles]
     }
     
-    @scala.inline
-    implicit class IDownloadViewStylesMutableBuilder[Self <: IDownloadViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDownloadViewStyles](x: Self) {
       
-      @scala.inline
-      def setButtonWrapper(value: String): Self = StObject.set(x, "buttonWrapper", value.asInstanceOf[js.Any])
+      inline def setButtonWrapper(value: String): Self = StObject.set(x, "buttonWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadButton(value: String): Self = StObject.set(x, "downloadButton", value.asInstanceOf[js.Any])
+      inline def setDownloadButton(value: String): Self = StObject.set(x, "downloadButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     }
   }
 }

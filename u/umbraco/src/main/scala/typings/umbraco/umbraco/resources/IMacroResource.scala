@@ -42,8 +42,7 @@ trait IMacroResource extends StObject {
 }
 object IMacroResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getMacroParameters: Double => js.Any,
     getMacroResultAsHtmlForEditor: (Double, Double, js.Array[js.Any]) => js.Any
   ): IMacroResource = {
@@ -51,13 +50,10 @@ object IMacroResource {
     __obj.asInstanceOf[IMacroResource]
   }
   
-  @scala.inline
-  implicit class IMacroResourceMutableBuilder[Self <: IMacroResource] (val x: Self) extends AnyVal {
+  extension [Self <: IMacroResource](x: Self) {
     
-    @scala.inline
-    def setGetMacroParameters(value: Double => js.Any): Self = StObject.set(x, "getMacroParameters", js.Any.fromFunction1(value))
+    inline def setGetMacroParameters(value: Double => js.Any): Self = StObject.set(x, "getMacroParameters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMacroResultAsHtmlForEditor(value: (Double, Double, js.Array[js.Any]) => js.Any): Self = StObject.set(x, "getMacroResultAsHtmlForEditor", js.Any.fromFunction3(value))
+    inline def setGetMacroResultAsHtmlForEditor(value: (Double, Double, js.Array[js.Any]) => js.Any): Self = StObject.set(x, "getMacroResultAsHtmlForEditor", js.Any.fromFunction3(value))
   }
 }

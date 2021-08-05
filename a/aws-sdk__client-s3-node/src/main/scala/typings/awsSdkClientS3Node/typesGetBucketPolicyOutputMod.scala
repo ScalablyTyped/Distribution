@@ -21,20 +21,16 @@ object typesGetBucketPolicyOutputMod {
   }
   object GetBucketPolicyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketPolicyOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketPolicyOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketPolicyOutputMutableBuilder[Self <: GetBucketPolicyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketPolicyOutput](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     }
   }
 }

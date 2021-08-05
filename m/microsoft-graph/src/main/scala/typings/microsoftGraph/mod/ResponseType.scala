@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResponseType extends StObject
 object ResponseType {
   
-  @scala.inline
-  def accepted: typings.microsoftGraph.microsoftGraphStrings.accepted = "accepted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.accepted]
+  inline def accepted: typings.microsoftGraph.microsoftGraphStrings.accepted = "accepted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.accepted]
   
-  @scala.inline
-  def declined: typings.microsoftGraph.microsoftGraphStrings.declined = "declined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.declined]
+  inline def declined: typings.microsoftGraph.microsoftGraphStrings.declined = "declined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.declined]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def notResponded: typings.microsoftGraph.microsoftGraphStrings.notResponded = "notResponded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notResponded]
+  inline def notResponded: typings.microsoftGraph.microsoftGraphStrings.notResponded = "notResponded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notResponded]
   
-  @scala.inline
-  def organizer: typings.microsoftGraph.microsoftGraphStrings.organizer = "organizer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organizer]
+  inline def organizer: typings.microsoftGraph.microsoftGraphStrings.organizer = "organizer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.organizer]
   
-  @scala.inline
-  def tentativelyAccepted: typings.microsoftGraph.microsoftGraphStrings.tentativelyAccepted = "tentativelyAccepted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tentativelyAccepted]
+  inline def tentativelyAccepted: typings.microsoftGraph.microsoftGraphStrings.tentativelyAccepted = "tentativelyAccepted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tentativelyAccepted]
 }

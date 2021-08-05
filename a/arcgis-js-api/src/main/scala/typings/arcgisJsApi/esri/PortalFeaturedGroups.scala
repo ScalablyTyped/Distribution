@@ -26,8 +26,7 @@ trait PortalFeaturedGroups
 }
 object PortalFeaturedGroups {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     owner: String,
@@ -38,13 +37,10 @@ object PortalFeaturedGroups {
     __obj.asInstanceOf[PortalFeaturedGroups]
   }
   
-  @scala.inline
-  implicit class PortalFeaturedGroupsMutableBuilder[Self <: PortalFeaturedGroups] (val x: Self) extends AnyVal {
+  extension [Self <: PortalFeaturedGroups](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

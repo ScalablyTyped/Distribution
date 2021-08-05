@@ -13,20 +13,16 @@ trait PickConditionalTypetypeTy extends StObject {
 }
 object PickConditionalTypetypeTy {
   
-  @scala.inline
-  def apply(`type`: ModelToObject[String] | String): PickConditionalTypetypeTy = {
+  inline def apply(`type`: ModelToObject[String] | String): PickConditionalTypetypeTy = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickConditionalTypetypeTy]
   }
   
-  @scala.inline
-  implicit class PickConditionalTypetypeTyMutableBuilder[Self <: PickConditionalTypetypeTy] (val x: Self) extends AnyVal {
+  extension [Self <: PickConditionalTypetypeTy](x: Self) {
     
-    @scala.inline
-    def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

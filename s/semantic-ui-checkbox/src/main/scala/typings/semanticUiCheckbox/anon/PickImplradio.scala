@@ -11,16 +11,13 @@ trait PickImplradio extends StObject {
 }
 object PickImplradio {
   
-  @scala.inline
-  def apply(radio: String): PickImplradio = {
+  inline def apply(radio: String): PickImplradio = {
     val __obj = js.Dynamic.literal(radio = radio.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplradio]
   }
   
-  @scala.inline
-  implicit class PickImplradioMutableBuilder[Self <: PickImplradio] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplradio](x: Self) {
     
-    @scala.inline
-    def setRadio(value: String): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+    inline def setRadio(value: String): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
   }
 }

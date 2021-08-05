@@ -33,25 +33,19 @@ trait ZoombarProviderDefaultSettings
 }
 object ZoombarProviderDefaultSettings {
   
-  @scala.inline
-  def apply(): ZoombarProviderDefaultSettings = {
+  inline def apply(): ZoombarProviderDefaultSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoombarProviderDefaultSettings]
   }
   
-  @scala.inline
-  implicit class ZoombarProviderDefaultSettingsMutableBuilder[Self <: ZoombarProviderDefaultSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ZoombarProviderDefaultSettings](x: Self) {
     
-    @scala.inline
-    def setTargetObject(value: js.Any): Self = StObject.set(x, "targetObject", value.asInstanceOf[js.Any])
+    inline def setTargetObject(value: js.Any): Self = StObject.set(x, "targetObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetObjectUndefined: Self = StObject.set(x, "targetObject", js.undefined)
+    inline def setTargetObjectUndefined: Self = StObject.set(x, "targetObject", js.undefined)
     
-    @scala.inline
-    def setZoomChangedCallback(value: js.Any): Self = StObject.set(x, "zoomChangedCallback", value.asInstanceOf[js.Any])
+    inline def setZoomChangedCallback(value: js.Any): Self = StObject.set(x, "zoomChangedCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomChangedCallbackUndefined: Self = StObject.set(x, "zoomChangedCallback", js.undefined)
+    inline def setZoomChangedCallbackUndefined: Self = StObject.set(x, "zoomChangedCallback", js.undefined)
   }
 }

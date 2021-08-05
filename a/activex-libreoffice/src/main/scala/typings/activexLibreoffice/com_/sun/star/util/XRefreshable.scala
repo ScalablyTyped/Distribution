@@ -22,8 +22,7 @@ trait XRefreshable
 }
 object XRefreshable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addRefreshListener: XRefreshListener => Unit,
     queryInterface: `type` => js.Any,
@@ -35,16 +34,12 @@ object XRefreshable {
     __obj.asInstanceOf[XRefreshable]
   }
   
-  @scala.inline
-  implicit class XRefreshableMutableBuilder[Self <: XRefreshable] (val x: Self) extends AnyVal {
+  extension [Self <: XRefreshable](x: Self) {
     
-    @scala.inline
-    def setAddRefreshListener(value: XRefreshListener => Unit): Self = StObject.set(x, "addRefreshListener", js.Any.fromFunction1(value))
+    inline def setAddRefreshListener(value: XRefreshListener => Unit): Self = StObject.set(x, "addRefreshListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveRefreshListener(value: XRefreshListener => Unit): Self = StObject.set(x, "removeRefreshListener", js.Any.fromFunction1(value))
+    inline def setRemoveRefreshListener(value: XRefreshListener => Unit): Self = StObject.set(x, "removeRefreshListener", js.Any.fromFunction1(value))
   }
 }

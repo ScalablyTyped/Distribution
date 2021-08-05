@@ -68,94 +68,65 @@ trait NodeStatus extends StObject {
 }
 object NodeStatus {
   
-  @scala.inline
-  def apply(): NodeStatus = {
+  inline def apply(): NodeStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeStatus]
   }
   
-  @scala.inline
-  implicit class NodeStatusMutableBuilder[Self <: NodeStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NodeStatus](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: Input[js.Array[Input[NodeAddress]]]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: Input[js.Array[Input[NodeAddress]]]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    @scala.inline
-    def setAddressesVarargs(value: Input[NodeAddress]*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: Input[NodeAddress]*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setAllocatable(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "allocatable", value.asInstanceOf[js.Any])
+    inline def setAllocatable(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "allocatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocatableUndefined: Self = StObject.set(x, "allocatable", js.undefined)
+    inline def setAllocatableUndefined: Self = StObject.set(x, "allocatable", js.undefined)
     
-    @scala.inline
-    def setCapacity(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
+    inline def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
     
-    @scala.inline
-    def setConditions(value: Input[js.Array[Input[NodeCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: Input[js.Array[Input[NodeCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: Input[NodeCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Input[NodeCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setConfig(value: Input[NodeConfigStatus]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Input[NodeConfigStatus]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDaemonEndpoints(value: Input[NodeDaemonEndpoints]): Self = StObject.set(x, "daemonEndpoints", value.asInstanceOf[js.Any])
+    inline def setDaemonEndpoints(value: Input[NodeDaemonEndpoints]): Self = StObject.set(x, "daemonEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaemonEndpointsUndefined: Self = StObject.set(x, "daemonEndpoints", js.undefined)
+    inline def setDaemonEndpointsUndefined: Self = StObject.set(x, "daemonEndpoints", js.undefined)
     
-    @scala.inline
-    def setImages(value: Input[js.Array[Input[ContainerImage]]]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: Input[js.Array[Input[ContainerImage]]]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: Input[ContainerImage]*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Input[ContainerImage]*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeInfo(value: Input[NodeSystemInfo]): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
+    inline def setNodeInfo(value: Input[NodeSystemInfo]): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeInfoUndefined: Self = StObject.set(x, "nodeInfo", js.undefined)
+    inline def setNodeInfoUndefined: Self = StObject.set(x, "nodeInfo", js.undefined)
     
-    @scala.inline
-    def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
+    inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
-    @scala.inline
-    def setVolumesAttached(value: Input[js.Array[Input[AttachedVolume]]]): Self = StObject.set(x, "volumesAttached", value.asInstanceOf[js.Any])
+    inline def setVolumesAttached(value: Input[js.Array[Input[AttachedVolume]]]): Self = StObject.set(x, "volumesAttached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesAttachedUndefined: Self = StObject.set(x, "volumesAttached", js.undefined)
+    inline def setVolumesAttachedUndefined: Self = StObject.set(x, "volumesAttached", js.undefined)
     
-    @scala.inline
-    def setVolumesAttachedVarargs(value: Input[AttachedVolume]*): Self = StObject.set(x, "volumesAttached", js.Array(value :_*))
+    inline def setVolumesAttachedVarargs(value: Input[AttachedVolume]*): Self = StObject.set(x, "volumesAttached", js.Array(value :_*))
     
-    @scala.inline
-    def setVolumesInUse(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "volumesInUse", value.asInstanceOf[js.Any])
+    inline def setVolumesInUse(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "volumesInUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesInUseUndefined: Self = StObject.set(x, "volumesInUse", js.undefined)
+    inline def setVolumesInUseUndefined: Self = StObject.set(x, "volumesInUse", js.undefined)
     
-    @scala.inline
-    def setVolumesInUseVarargs(value: Input[String]*): Self = StObject.set(x, "volumesInUse", js.Array(value :_*))
+    inline def setVolumesInUseVarargs(value: Input[String]*): Self = StObject.set(x, "volumesInUse", js.Array(value :_*))
   }
 }

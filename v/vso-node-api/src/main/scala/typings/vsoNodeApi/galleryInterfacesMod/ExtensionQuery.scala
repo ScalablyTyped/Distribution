@@ -23,28 +23,21 @@ trait ExtensionQuery extends StObject {
 }
 object ExtensionQuery {
   
-  @scala.inline
-  def apply(assetTypes: js.Array[String], filters: js.Array[QueryFilter], flags: ExtensionQueryFlags): ExtensionQuery = {
+  inline def apply(assetTypes: js.Array[String], filters: js.Array[QueryFilter], flags: ExtensionQueryFlags): ExtensionQuery = {
     val __obj = js.Dynamic.literal(assetTypes = assetTypes.asInstanceOf[js.Any], filters = filters.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionQuery]
   }
   
-  @scala.inline
-  implicit class ExtensionQueryMutableBuilder[Self <: ExtensionQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionQuery](x: Self) {
     
-    @scala.inline
-    def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
+    inline def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
+    inline def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setFilters(value: js.Array[QueryFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[QueryFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: QueryFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setFlags(value: ExtensionQueryFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: ExtensionQueryFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
   }
 }

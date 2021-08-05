@@ -12,19 +12,15 @@ trait JsMemoryEstimate extends StObject {
 }
 object JsMemoryEstimate {
   
-  @scala.inline
-  def apply(jsMemoryEstimate: Double, jsMemoryRange: js.Tuple2[Double, Double]): JsMemoryEstimate = {
+  inline def apply(jsMemoryEstimate: Double, jsMemoryRange: js.Tuple2[Double, Double]): JsMemoryEstimate = {
     val __obj = js.Dynamic.literal(jsMemoryEstimate = jsMemoryEstimate.asInstanceOf[js.Any], jsMemoryRange = jsMemoryRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsMemoryEstimate]
   }
   
-  @scala.inline
-  implicit class JsMemoryEstimateMutableBuilder[Self <: JsMemoryEstimate] (val x: Self) extends AnyVal {
+  extension [Self <: JsMemoryEstimate](x: Self) {
     
-    @scala.inline
-    def setJsMemoryEstimate(value: Double): Self = StObject.set(x, "jsMemoryEstimate", value.asInstanceOf[js.Any])
+    inline def setJsMemoryEstimate(value: Double): Self = StObject.set(x, "jsMemoryEstimate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsMemoryRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "jsMemoryRange", value.asInstanceOf[js.Any])
+    inline def setJsMemoryRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "jsMemoryRange", value.asInstanceOf[js.Any])
   }
 }

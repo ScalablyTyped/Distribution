@@ -14,40 +14,29 @@ trait PressableAndroidRippleConfig extends StObject {
 }
 object PressableAndroidRippleConfig {
   
-  @scala.inline
-  def apply(): PressableAndroidRippleConfig = {
+  inline def apply(): PressableAndroidRippleConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PressableAndroidRippleConfig]
   }
   
-  @scala.inline
-  implicit class PressableAndroidRippleConfigMutableBuilder[Self <: PressableAndroidRippleConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PressableAndroidRippleConfig](x: Self) {
     
-    @scala.inline
-    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderlessNull: Self = StObject.set(x, "borderless", null)
+    inline def setBorderlessNull: Self = StObject.set(x, "borderless", null)
     
-    @scala.inline
-    def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    @scala.inline
-    def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNull: Self = StObject.set(x, "color", null)
+    inline def setColorNull: Self = StObject.set(x, "color", null)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusNull: Self = StObject.set(x, "radius", null)
+    inline def setRadiusNull: Self = StObject.set(x, "radius", null)
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

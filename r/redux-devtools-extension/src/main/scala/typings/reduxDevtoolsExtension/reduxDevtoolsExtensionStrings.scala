@@ -8,6 +8,5 @@ object reduxDevtoolsExtensionStrings {
   
   @js.native
   sealed trait custom extends StObject
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
+  inline def custom: custom = "custom".asInstanceOf[custom]
 }

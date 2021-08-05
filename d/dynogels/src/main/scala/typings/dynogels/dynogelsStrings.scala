@@ -11,20 +11,17 @@ object dynogelsStrings {
   sealed trait create
     extends StObject
        with LifeCycleAction
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
   sealed trait destroy
     extends StObject
        with LifeCycleAction
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
   sealed trait update
     extends StObject
        with LifeCycleAction
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
 }

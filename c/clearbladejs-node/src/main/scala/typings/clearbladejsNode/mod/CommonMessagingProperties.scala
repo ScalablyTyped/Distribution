@@ -12,25 +12,19 @@ trait CommonMessagingProperties extends StObject {
 }
 object CommonMessagingProperties {
   
-  @scala.inline
-  def apply(): CommonMessagingProperties = {
+  inline def apply(): CommonMessagingProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonMessagingProperties]
   }
   
-  @scala.inline
-  implicit class CommonMessagingPropertiesMutableBuilder[Self <: CommonMessagingProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CommonMessagingProperties](x: Self) {
     
-    @scala.inline
-    def setHosts(value: String): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+    inline def setHosts(value: String): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+    inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
     
-    @scala.inline
-    def setPorts(value: String): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: String): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
   }
 }

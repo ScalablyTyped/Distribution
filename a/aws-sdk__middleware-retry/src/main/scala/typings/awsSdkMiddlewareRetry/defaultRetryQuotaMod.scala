@@ -11,6 +11,5 @@ object defaultRetryQuotaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDefaultRetryQuota(initialRetryTokens: Double): RetryQuota = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultRetryQuota")(initialRetryTokens.asInstanceOf[js.Any]).asInstanceOf[RetryQuota]
+  inline def getDefaultRetryQuota(initialRetryTokens: Double): RetryQuota = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultRetryQuota")(initialRetryTokens.asInstanceOf[js.Any]).asInstanceOf[RetryQuota]
 }

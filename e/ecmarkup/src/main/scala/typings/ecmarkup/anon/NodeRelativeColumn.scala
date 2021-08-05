@@ -25,8 +25,7 @@ trait NodeRelativeColumn
 }
 object NodeRelativeColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     message: String,
     node: Text | typings.std.Element,
     nodeRelativeColumn: Double,
@@ -38,25 +37,18 @@ object NodeRelativeColumn {
     __obj.asInstanceOf[NodeRelativeColumn]
   }
   
-  @scala.inline
-  implicit class NodeRelativeColumnMutableBuilder[Self <: NodeRelativeColumn] (val x: Self) extends AnyVal {
+  extension [Self <: NodeRelativeColumn](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: Text | typings.std.Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Text | typings.std.Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeRelativeColumn(value: Double): Self = StObject.set(x, "nodeRelativeColumn", value.asInstanceOf[js.Any])
+    inline def setNodeRelativeColumn(value: Double): Self = StObject.set(x, "nodeRelativeColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeRelativeLine(value: Double): Self = StObject.set(x, "nodeRelativeLine", value.asInstanceOf[js.Any])
+    inline def setNodeRelativeLine(value: Double): Self = StObject.set(x, "nodeRelativeLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: contents): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: contents): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

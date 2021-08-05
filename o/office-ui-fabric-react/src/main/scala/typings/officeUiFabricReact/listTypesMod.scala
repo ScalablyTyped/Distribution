@@ -41,8 +41,7 @@ object listTypesMod {
     @JSImport("office-ui-fabric-react/lib/components/List/List.types", "ScrollToMode.auto")
     @js.native
     def auto: `0` = js.native
-    @scala.inline
-    def auto_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto")(x.asInstanceOf[js.Any])
+    inline def auto_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto")(x.asInstanceOf[js.Any])
     
     /**
       * Attempts to scroll the list so the bottom of the desired item is aligned with the bottom of the viewport.
@@ -50,8 +49,7 @@ object listTypesMod {
     @JSImport("office-ui-fabric-react/lib/components/List/List.types", "ScrollToMode.bottom")
     @js.native
     def bottom: `2` = js.native
-    @scala.inline
-    def bottom_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+    inline def bottom_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
     
     /**
       * Attempts to scroll the list so the desired item is in the exact center of the viewport.
@@ -59,8 +57,7 @@ object listTypesMod {
     @JSImport("office-ui-fabric-react/lib/components/List/List.types", "ScrollToMode.center")
     @js.native
     def center: `3` = js.native
-    @scala.inline
-    def center_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
+    inline def center_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
     
     /**
       * Attempts to scroll the list so the top of the desired item is aligned with the top of the viewport.
@@ -68,8 +65,7 @@ object listTypesMod {
     @JSImport("office-ui-fabric-react/lib/components/List/List.types", "ScrollToMode.top")
     @js.native
     def top: `1` = js.native
-    @scala.inline
-    def top_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+    inline def top_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -139,38 +135,28 @@ object listTypesMod {
   }
   object IListOnRenderRootProps {
     
-    @scala.inline
-    def apply[T](divProps: HTMLAttributes[HTMLDivElement], pages: js.Array[IPage[T]]): IListOnRenderRootProps[T] = {
+    inline def apply[T](divProps: HTMLAttributes[HTMLDivElement], pages: js.Array[IPage[T]]): IListOnRenderRootProps[T] = {
       val __obj = js.Dynamic.literal(divProps = divProps.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], rootRef = null, surfaceElement = null)
       __obj.asInstanceOf[IListOnRenderRootProps[T]]
     }
     
-    @scala.inline
-    implicit class IListOnRenderRootPropsMutableBuilder[Self <: IListOnRenderRootProps[?], T] (val x: Self & IListOnRenderRootProps[T]) extends AnyVal {
+    extension [Self <: IListOnRenderRootProps[?], T](x: Self & IListOnRenderRootProps[T]) {
       
-      @scala.inline
-      def setDivProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "divProps", value.asInstanceOf[js.Any])
+      inline def setDivProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "divProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages(value: js.Array[IPage[T]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: js.Array[IPage[T]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value :_*))
       
-      @scala.inline
-      def setRootRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
+      inline def setRootRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "rootRef", js.Any.fromFunction1(value))
+      inline def setRootRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "rootRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRootRefNull: Self = StObject.set(x, "rootRef", null)
+      inline def setRootRefNull: Self = StObject.set(x, "rootRef", null)
       
-      @scala.inline
-      def setSurfaceElement(value: Element): Self = StObject.set(x, "surfaceElement", value.asInstanceOf[js.Any])
+      inline def setSurfaceElement(value: Element): Self = StObject.set(x, "surfaceElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurfaceElementNull: Self = StObject.set(x, "surfaceElement", null)
+      inline def setSurfaceElementNull: Self = StObject.set(x, "surfaceElement", null)
     }
   }
   
@@ -200,8 +186,7 @@ object listTypesMod {
   }
   object IListOnRenderSurfaceProps {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       divProps: HTMLAttributes[HTMLDivElement],
       pageElements: js.Array[Element],
       pages: js.Array[IPage[T]]
@@ -210,32 +195,23 @@ object listTypesMod {
       __obj.asInstanceOf[IListOnRenderSurfaceProps[T]]
     }
     
-    @scala.inline
-    implicit class IListOnRenderSurfacePropsMutableBuilder[Self <: IListOnRenderSurfaceProps[?], T] (val x: Self & IListOnRenderSurfaceProps[T]) extends AnyVal {
+    extension [Self <: IListOnRenderSurfaceProps[?], T](x: Self & IListOnRenderSurfaceProps[T]) {
       
-      @scala.inline
-      def setDivProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "divProps", value.asInstanceOf[js.Any])
+      inline def setDivProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "divProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageElements(value: js.Array[Element]): Self = StObject.set(x, "pageElements", value.asInstanceOf[js.Any])
+      inline def setPageElements(value: js.Array[Element]): Self = StObject.set(x, "pageElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageElementsVarargs(value: Element*): Self = StObject.set(x, "pageElements", js.Array(value :_*))
+      inline def setPageElementsVarargs(value: Element*): Self = StObject.set(x, "pageElements", js.Array(value :_*))
       
-      @scala.inline
-      def setPages(value: js.Array[IPage[T]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: js.Array[IPage[T]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value :_*))
       
-      @scala.inline
-      def setSurfaceRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "surfaceRef", value.asInstanceOf[js.Any])
+      inline def setSurfaceRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "surfaceRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurfaceRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "surfaceRef", js.Any.fromFunction1(value))
+      inline def setSurfaceRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "surfaceRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSurfaceRefNull: Self = StObject.set(x, "surfaceRef", null)
+      inline def setSurfaceRefNull: Self = StObject.set(x, "surfaceRef", null)
     }
   }
   
@@ -397,166 +373,118 @@ object listTypesMod {
   }
   object IListProps {
     
-    @scala.inline
-    def apply[T](): IListProps[T] = {
+    inline def apply[T](): IListProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IListProps[T]]
     }
     
-    @scala.inline
-    implicit class IListPropsMutableBuilder[Self <: IListProps[?], T] (val x: Self & IListProps[T]) extends AnyVal {
+    extension [Self <: IListProps[?], T](x: Self & IListProps[T]) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IList]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IList]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IList | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IList | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setGetItemCountForPage(value: (/* itemIndex */ js.UndefOr[Double], /* visibleRect */ js.UndefOr[IRectangle]) => Double): Self = StObject.set(x, "getItemCountForPage", js.Any.fromFunction2(value))
+      inline def setGetItemCountForPage(value: (/* itemIndex */ js.UndefOr[Double], /* visibleRect */ js.UndefOr[IRectangle]) => Double): Self = StObject.set(x, "getItemCountForPage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetItemCountForPageUndefined: Self = StObject.set(x, "getItemCountForPage", js.undefined)
+      inline def setGetItemCountForPageUndefined: Self = StObject.set(x, "getItemCountForPage", js.undefined)
       
-      @scala.inline
-      def setGetKey(value: (/* item */ T, /* index */ js.UndefOr[Double]) => String): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
+      inline def setGetKey(value: (/* item */ T, /* index */ js.UndefOr[Double]) => String): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
+      inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
       
-      @scala.inline
-      def setGetPageHeight(
+      inline def setGetPageHeight(
         value: (/* itemIndex */ js.UndefOr[Double], /* visibleRect */ js.UndefOr[IRectangle], /* itemCount */ js.UndefOr[Double]) => Double
       ): Self = StObject.set(x, "getPageHeight", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetPageHeightUndefined: Self = StObject.set(x, "getPageHeight", js.undefined)
+      inline def setGetPageHeightUndefined: Self = StObject.set(x, "getPageHeight", js.undefined)
       
-      @scala.inline
-      def setGetPageSpecification(
+      inline def setGetPageSpecification(
         value: (/* itemIndex */ js.UndefOr[Double], /* visibleRect */ js.UndefOr[IRectangle]) => IPageSpecification
       ): Self = StObject.set(x, "getPageSpecification", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPageSpecificationUndefined: Self = StObject.set(x, "getPageSpecification", js.undefined)
+      inline def setGetPageSpecificationUndefined: Self = StObject.set(x, "getPageSpecification", js.undefined)
       
-      @scala.inline
-      def setGetPageStyle(value: /* page */ IPage[T] => js.Any): Self = StObject.set(x, "getPageStyle", js.Any.fromFunction1(value))
+      inline def setGetPageStyle(value: /* page */ IPage[T] => js.Any): Self = StObject.set(x, "getPageStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageStyleUndefined: Self = StObject.set(x, "getPageStyle", js.undefined)
+      inline def setGetPageStyleUndefined: Self = StObject.set(x, "getPageStyle", js.undefined)
       
-      @scala.inline
-      def setIgnoreScrollingState(value: Boolean): Self = StObject.set(x, "ignoreScrollingState", value.asInstanceOf[js.Any])
+      inline def setIgnoreScrollingState(value: Boolean): Self = StObject.set(x, "ignoreScrollingState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreScrollingStateUndefined: Self = StObject.set(x, "ignoreScrollingState", js.undefined)
+      inline def setIgnoreScrollingStateUndefined: Self = StObject.set(x, "ignoreScrollingState", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOnPageAdded(value: /* page */ IPage[T] => Unit): Self = StObject.set(x, "onPageAdded", js.Any.fromFunction1(value))
+      inline def setOnPageAdded(value: /* page */ IPage[T] => Unit): Self = StObject.set(x, "onPageAdded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageAddedUndefined: Self = StObject.set(x, "onPageAdded", js.undefined)
+      inline def setOnPageAddedUndefined: Self = StObject.set(x, "onPageAdded", js.undefined)
       
-      @scala.inline
-      def setOnPageRemoved(value: /* page */ IPage[T] => Unit): Self = StObject.set(x, "onPageRemoved", js.Any.fromFunction1(value))
+      inline def setOnPageRemoved(value: /* page */ IPage[T] => Unit): Self = StObject.set(x, "onPageRemoved", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageRemovedUndefined: Self = StObject.set(x, "onPageRemoved", js.undefined)
+      inline def setOnPageRemovedUndefined: Self = StObject.set(x, "onPageRemoved", js.undefined)
       
-      @scala.inline
-      def setOnPagesUpdated(value: /* pages */ js.Array[IPage[T]] => Unit): Self = StObject.set(x, "onPagesUpdated", js.Any.fromFunction1(value))
+      inline def setOnPagesUpdated(value: /* pages */ js.Array[IPage[T]] => Unit): Self = StObject.set(x, "onPagesUpdated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPagesUpdatedUndefined: Self = StObject.set(x, "onPagesUpdated", js.undefined)
+      inline def setOnPagesUpdatedUndefined: Self = StObject.set(x, "onPagesUpdated", js.undefined)
       
-      @scala.inline
-      def setOnRenderCell(
+      inline def setOnRenderCell(
         value: (/* item */ js.UndefOr[T], /* index */ js.UndefOr[Double], /* isScrolling */ js.UndefOr[Boolean]) => ReactNode
       ): Self = StObject.set(x, "onRenderCell", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnRenderCellUndefined: Self = StObject.set(x, "onRenderCell", js.undefined)
+      inline def setOnRenderCellUndefined: Self = StObject.set(x, "onRenderCell", js.undefined)
       
-      @scala.inline
-      def setOnRenderPage(
+      inline def setOnRenderPage(
         value: (/* props */ js.UndefOr[IPageProps[T]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPageProps[T]], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderPage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderPageUndefined: Self = StObject.set(x, "onRenderPage", js.undefined)
+      inline def setOnRenderPageUndefined: Self = StObject.set(x, "onRenderPage", js.undefined)
       
-      @scala.inline
-      def setOnRenderRoot(
+      inline def setOnRenderRoot(
         value: (/* props */ js.UndefOr[IListOnRenderRootProps[T]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IListOnRenderRootProps[T]], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderRoot", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderRootUndefined: Self = StObject.set(x, "onRenderRoot", js.undefined)
+      inline def setOnRenderRootUndefined: Self = StObject.set(x, "onRenderRoot", js.undefined)
       
-      @scala.inline
-      def setOnRenderSurface(
+      inline def setOnRenderSurface(
         value: (/* props */ js.UndefOr[IListOnRenderSurfaceProps[T]], /* defaultRender */ js.UndefOr[
               js.Function1[/* props */ js.UndefOr[IListOnRenderSurfaceProps[T]], Element | Null]
             ]) => Element | Null
       ): Self = StObject.set(x, "onRenderSurface", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderSurfaceUndefined: Self = StObject.set(x, "onRenderSurface", js.undefined)
+      inline def setOnRenderSurfaceUndefined: Self = StObject.set(x, "onRenderSurface", js.undefined)
       
-      @scala.inline
-      def setOnShouldVirtualize(value: /* props */ IListProps[T] => Boolean): Self = StObject.set(x, "onShouldVirtualize", js.Any.fromFunction1(value))
+      inline def setOnShouldVirtualize(value: /* props */ IListProps[T] => Boolean): Self = StObject.set(x, "onShouldVirtualize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShouldVirtualizeUndefined: Self = StObject.set(x, "onShouldVirtualize", js.undefined)
+      inline def setOnShouldVirtualizeUndefined: Self = StObject.set(x, "onShouldVirtualize", js.undefined)
       
-      @scala.inline
-      def setRenderCount(value: Double): Self = StObject.set(x, "renderCount", value.asInstanceOf[js.Any])
+      inline def setRenderCount(value: Double): Self = StObject.set(x, "renderCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderCountUndefined: Self = StObject.set(x, "renderCount", js.undefined)
+      inline def setRenderCountUndefined: Self = StObject.set(x, "renderCount", js.undefined)
       
-      @scala.inline
-      def setRenderedWindowsAhead(value: Double): Self = StObject.set(x, "renderedWindowsAhead", value.asInstanceOf[js.Any])
+      inline def setRenderedWindowsAhead(value: Double): Self = StObject.set(x, "renderedWindowsAhead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedWindowsAheadUndefined: Self = StObject.set(x, "renderedWindowsAhead", js.undefined)
+      inline def setRenderedWindowsAheadUndefined: Self = StObject.set(x, "renderedWindowsAhead", js.undefined)
       
-      @scala.inline
-      def setRenderedWindowsBehind(value: Double): Self = StObject.set(x, "renderedWindowsBehind", value.asInstanceOf[js.Any])
+      inline def setRenderedWindowsBehind(value: Double): Self = StObject.set(x, "renderedWindowsBehind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedWindowsBehindUndefined: Self = StObject.set(x, "renderedWindowsBehind", js.undefined)
+      inline def setRenderedWindowsBehindUndefined: Self = StObject.set(x, "renderedWindowsBehind", js.undefined)
       
-      @scala.inline
-      def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+      inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
       
-      @scala.inline
-      def setUsePageCache(value: Boolean): Self = StObject.set(x, "usePageCache", value.asInstanceOf[js.Any])
+      inline def setUsePageCache(value: Boolean): Self = StObject.set(x, "usePageCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePageCacheUndefined: Self = StObject.set(x, "usePageCache", js.undefined)
+      inline def setUsePageCacheUndefined: Self = StObject.set(x, "usePageCache", js.undefined)
       
-      @scala.inline
-      def setVersion(value: js.Object): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: js.Object): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -584,8 +512,7 @@ object listTypesMod {
   }
   object IPage {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       height: Double,
       itemCount: Double,
       key: String,
@@ -597,53 +524,37 @@ object listTypesMod {
       __obj.asInstanceOf[IPage[T]]
     }
     
-    @scala.inline
-    implicit class IPageMutableBuilder[Self <: IPage[?], T] (val x: Self & IPage[T]) extends AnyVal {
+    extension [Self <: IPage[?], T](x: Self & IPage[T]) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSpacer(value: Boolean): Self = StObject.set(x, "isSpacer", value.asInstanceOf[js.Any])
+      inline def setIsSpacer(value: Boolean): Self = StObject.set(x, "isSpacer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSpacerUndefined: Self = StObject.set(x, "isSpacer", js.undefined)
+      inline def setIsSpacerUndefined: Self = StObject.set(x, "isSpacer", js.undefined)
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
+      inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
       
-      @scala.inline
-      def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -659,17 +570,14 @@ object listTypesMod {
   }
   object IPageProps {
     
-    @scala.inline
-    def apply[T](page: IPage[T]): IPageProps[T] = {
+    inline def apply[T](page: IPage[T]): IPageProps[T] = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPageProps[T]]
     }
     
-    @scala.inline
-    implicit class IPagePropsMutableBuilder[Self <: IPageProps[?], T] (val x: Self & IPageProps[T]) extends AnyVal {
+    extension [Self <: IPageProps[?], T](x: Self & IPageProps[T]) {
       
-      @scala.inline
-      def setPage(value: IPage[T]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: IPage[T]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
   }
   
@@ -697,38 +605,28 @@ object listTypesMod {
   }
   object IPageSpecification {
     
-    @scala.inline
-    def apply(): IPageSpecification = {
+    inline def apply(): IPageSpecification = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPageSpecification]
     }
     
-    @scala.inline
-    implicit class IPageSpecificationMutableBuilder[Self <: IPageSpecification] (val x: Self) extends AnyVal {
+    extension [Self <: IPageSpecification](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
+      inline def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
 }

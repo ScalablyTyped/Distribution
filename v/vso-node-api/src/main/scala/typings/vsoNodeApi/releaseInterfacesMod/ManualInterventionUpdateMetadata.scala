@@ -18,19 +18,15 @@ trait ManualInterventionUpdateMetadata extends StObject {
 }
 object ManualInterventionUpdateMetadata {
   
-  @scala.inline
-  def apply(comment: String, status: ManualInterventionStatus): ManualInterventionUpdateMetadata = {
+  inline def apply(comment: String, status: ManualInterventionStatus): ManualInterventionUpdateMetadata = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManualInterventionUpdateMetadata]
   }
   
-  @scala.inline
-  implicit class ManualInterventionUpdateMetadataMutableBuilder[Self <: ManualInterventionUpdateMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ManualInterventionUpdateMetadata](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ManualInterventionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ManualInterventionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

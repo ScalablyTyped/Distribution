@@ -48,43 +48,31 @@ trait SchemaAuthenticationPolicy extends StObject {
 }
 object SchemaAuthenticationPolicy {
   
-  @scala.inline
-  def apply(): SchemaAuthenticationPolicy = {
+  inline def apply(): SchemaAuthenticationPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthenticationPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaAuthenticationPolicyMutableBuilder[Self <: SchemaAuthenticationPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthenticationPolicy](x: Self) {
     
-    @scala.inline
-    def setOrigins(value: js.Array[SchemaOriginAuthenticationMethod]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+    inline def setOrigins(value: js.Array[SchemaOriginAuthenticationMethod]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
+    inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
     
-    @scala.inline
-    def setOriginsVarargs(value: SchemaOriginAuthenticationMethod*): Self = StObject.set(x, "origins", js.Array(value :_*))
+    inline def setOriginsVarargs(value: SchemaOriginAuthenticationMethod*): Self = StObject.set(x, "origins", js.Array(value :_*))
     
-    @scala.inline
-    def setPeers(value: js.Array[SchemaPeerAuthenticationMethod]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
+    inline def setPeers(value: js.Array[SchemaPeerAuthenticationMethod]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeersUndefined: Self = StObject.set(x, "peers", js.undefined)
+    inline def setPeersUndefined: Self = StObject.set(x, "peers", js.undefined)
     
-    @scala.inline
-    def setPeersVarargs(value: SchemaPeerAuthenticationMethod*): Self = StObject.set(x, "peers", js.Array(value :_*))
+    inline def setPeersVarargs(value: SchemaPeerAuthenticationMethod*): Self = StObject.set(x, "peers", js.Array(value :_*))
     
-    @scala.inline
-    def setPrincipalBinding(value: String): Self = StObject.set(x, "principalBinding", value.asInstanceOf[js.Any])
+    inline def setPrincipalBinding(value: String): Self = StObject.set(x, "principalBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalBindingUndefined: Self = StObject.set(x, "principalBinding", js.undefined)
+    inline def setPrincipalBindingUndefined: Self = StObject.set(x, "principalBinding", js.undefined)
     
-    @scala.inline
-    def setServerTlsContext(value: SchemaTlsContext): Self = StObject.set(x, "serverTlsContext", value.asInstanceOf[js.Any])
+    inline def setServerTlsContext(value: SchemaTlsContext): Self = StObject.set(x, "serverTlsContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTlsContextUndefined: Self = StObject.set(x, "serverTlsContext", js.undefined)
+    inline def setServerTlsContextUndefined: Self = StObject.set(x, "serverTlsContext", js.undefined)
   }
 }

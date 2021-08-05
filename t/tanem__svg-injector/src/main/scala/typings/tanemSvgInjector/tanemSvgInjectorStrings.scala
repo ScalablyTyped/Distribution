@@ -11,20 +11,17 @@ object tanemSvgInjectorStrings {
   sealed trait always
     extends StObject
        with EvalScripts
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait never
     extends StObject
        with EvalScripts
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
   sealed trait once
     extends StObject
        with EvalScripts
-  @scala.inline
-  def once: once = "once".asInstanceOf[once]
+  inline def once: once = "once".asInstanceOf[once]
 }

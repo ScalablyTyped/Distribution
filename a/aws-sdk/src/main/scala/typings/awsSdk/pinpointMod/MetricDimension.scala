@@ -18,19 +18,15 @@ trait MetricDimension extends StObject {
 }
 object MetricDimension {
   
-  @scala.inline
-  def apply(ComparisonOperator: string, Value: double): MetricDimension = {
+  inline def apply(ComparisonOperator: string, Value: double): MetricDimension = {
     val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDimension]
   }
   
-  @scala.inline
-  implicit class MetricDimensionMutableBuilder[Self <: MetricDimension] (val x: Self) extends AnyVal {
+  extension [Self <: MetricDimension](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: string): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: string): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -28,25 +28,19 @@ trait TeamContext extends StObject {
 }
 object TeamContext {
   
-  @scala.inline
-  def apply(project: String, projectId: String, team: String, teamId: String): TeamContext = {
+  inline def apply(project: String, projectId: String, team: String, teamId: String): TeamContext = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], teamId = teamId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamContext]
   }
   
-  @scala.inline
-  implicit class TeamContextMutableBuilder[Self <: TeamContext] (val x: Self) extends AnyVal {
+  extension [Self <: TeamContext](x: Self) {
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+    inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+    inline def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
   }
 }

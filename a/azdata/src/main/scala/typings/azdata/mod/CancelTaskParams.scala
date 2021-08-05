@@ -10,16 +10,13 @@ trait CancelTaskParams extends StObject {
 }
 object CancelTaskParams {
   
-  @scala.inline
-  def apply(taskId: String): CancelTaskParams = {
+  inline def apply(taskId: String): CancelTaskParams = {
     val __obj = js.Dynamic.literal(taskId = taskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelTaskParams]
   }
   
-  @scala.inline
-  implicit class CancelTaskParamsMutableBuilder[Self <: CancelTaskParams] (val x: Self) extends AnyVal {
+  extension [Self <: CancelTaskParams](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait GetSchemaCreationStatusResponse extends StObject {
 }
 object GetSchemaCreationStatusResponse {
   
-  @scala.inline
-  def apply(): GetSchemaCreationStatusResponse = {
+  inline def apply(): GetSchemaCreationStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSchemaCreationStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetSchemaCreationStatusResponseMutableBuilder[Self <: GetSchemaCreationStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSchemaCreationStatusResponse](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

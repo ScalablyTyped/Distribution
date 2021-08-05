@@ -58,70 +58,49 @@ trait UpdateRelationalDatabaseRequest extends StObject {
 }
 object UpdateRelationalDatabaseRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): UpdateRelationalDatabaseRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): UpdateRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRelationalDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRelationalDatabaseRequestMutableBuilder[Self <: UpdateRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRelationalDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
+    inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
+    inline def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
     
-    @scala.inline
-    def setCaCertificateIdentifier(value: String): Self = StObject.set(x, "caCertificateIdentifier", value.asInstanceOf[js.Any])
+    inline def setCaCertificateIdentifier(value: String): Self = StObject.set(x, "caCertificateIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaCertificateIdentifierUndefined: Self = StObject.set(x, "caCertificateIdentifier", js.undefined)
+    inline def setCaCertificateIdentifierUndefined: Self = StObject.set(x, "caCertificateIdentifier", js.undefined)
     
-    @scala.inline
-    def setDisableBackupRetention(value: Boolean): Self = StObject.set(x, "disableBackupRetention", value.asInstanceOf[js.Any])
+    inline def setDisableBackupRetention(value: Boolean): Self = StObject.set(x, "disableBackupRetention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableBackupRetentionUndefined: Self = StObject.set(x, "disableBackupRetention", js.undefined)
+    inline def setDisableBackupRetentionUndefined: Self = StObject.set(x, "disableBackupRetention", js.undefined)
     
-    @scala.inline
-    def setEnableBackupRetention(value: Boolean): Self = StObject.set(x, "enableBackupRetention", value.asInstanceOf[js.Any])
+    inline def setEnableBackupRetention(value: Boolean): Self = StObject.set(x, "enableBackupRetention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableBackupRetentionUndefined: Self = StObject.set(x, "enableBackupRetention", js.undefined)
+    inline def setEnableBackupRetentionUndefined: Self = StObject.set(x, "enableBackupRetention", js.undefined)
     
-    @scala.inline
-    def setMasterUserPassword(value: SensitiveString): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
+    inline def setMasterUserPassword(value: SensitiveString): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
+    inline def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
     
-    @scala.inline
-    def setPreferredBackupWindow(value: String): Self = StObject.set(x, "preferredBackupWindow", value.asInstanceOf[js.Any])
+    inline def setPreferredBackupWindow(value: String): Self = StObject.set(x, "preferredBackupWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredBackupWindowUndefined: Self = StObject.set(x, "preferredBackupWindow", js.undefined)
+    inline def setPreferredBackupWindowUndefined: Self = StObject.set(x, "preferredBackupWindow", js.undefined)
     
-    @scala.inline
-    def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    inline def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "preferredMaintenanceWindow", js.undefined)
+    inline def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "preferredMaintenanceWindow", js.undefined)
     
-    @scala.inline
-    def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
+    inline def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
+    inline def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateMasterUserPassword(value: Boolean): Self = StObject.set(x, "rotateMasterUserPassword", value.asInstanceOf[js.Any])
+    inline def setRotateMasterUserPassword(value: Boolean): Self = StObject.set(x, "rotateMasterUserPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateMasterUserPasswordUndefined: Self = StObject.set(x, "rotateMasterUserPassword", js.undefined)
+    inline def setRotateMasterUserPasswordUndefined: Self = StObject.set(x, "rotateMasterUserPassword", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait PickImplstandard extends StObject {
 }
 object PickImplstandard {
   
-  @scala.inline
-  def apply(standard: /* response */ js.Any => String): PickImplstandard = {
+  inline def apply(standard: /* response */ js.Any => String): PickImplstandard = {
     val __obj = js.Dynamic.literal(standard = js.Any.fromFunction1(standard))
     __obj.asInstanceOf[PickImplstandard]
   }
   
-  @scala.inline
-  implicit class PickImplstandardMutableBuilder[Self <: PickImplstandard] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplstandard](x: Self) {
     
-    @scala.inline
-    def setStandard(value: /* response */ js.Any => String): Self = StObject.set(x, "standard", js.Any.fromFunction1(value))
+    inline def setStandard(value: /* response */ js.Any => String): Self = StObject.set(x, "standard", js.Any.fromFunction1(value))
   }
 }

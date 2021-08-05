@@ -53,32 +53,24 @@ object mod {
     }
     object BackspaceProperties {
       
-      @scala.inline
-      def apply(): BackspaceProperties = {
+      inline def apply(): BackspaceProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BackspaceProperties]
       }
       
-      @scala.inline
-      implicit class BackspacePropertiesMutableBuilder[Self <: BackspaceProperties] (val x: Self) extends AnyVal {
+      extension [Self <: BackspaceProperties](x: Self) {
         
-        @scala.inline
-        def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+        inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
         
-        @scala.inline
-        def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+        inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+        inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
         
-        @scala.inline
-        def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+        inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+        inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       }
     }
     
@@ -90,17 +82,14 @@ object mod {
     }
     object DelayProperties {
       
-      @scala.inline
-      def apply(ms: Double): DelayProperties = {
+      inline def apply(ms: Double): DelayProperties = {
         val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any])
         __obj.asInstanceOf[DelayProperties]
       }
       
-      @scala.inline
-      implicit class DelayPropertiesMutableBuilder[Self <: DelayProperties] (val x: Self) extends AnyVal {
+      extension [Self <: DelayProperties](x: Self) {
         
-        @scala.inline
-        def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+        inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       }
     }
     
@@ -116,32 +105,24 @@ object mod {
     }
     object ResetProperties {
       
-      @scala.inline
-      def apply(): ResetProperties = {
+      inline def apply(): ResetProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ResetProperties]
       }
       
-      @scala.inline
-      implicit class ResetPropertiesMutableBuilder[Self <: ResetProperties] (val x: Self) extends AnyVal {
+      extension [Self <: ResetProperties](x: Self) {
         
-        @scala.inline
-        def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+        inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
         
-        @scala.inline
-        def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+        inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+        inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
         
-        @scala.inline
-        def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+        inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+        inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       }
     }
     
@@ -153,17 +134,14 @@ object mod {
     }
     object SpeedProperties {
       
-      @scala.inline
-      def apply(ms: Double): SpeedProperties = {
+      inline def apply(ms: Double): SpeedProperties = {
         val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any])
         __obj.asInstanceOf[SpeedProperties]
       }
       
-      @scala.inline
-      implicit class SpeedPropertiesMutableBuilder[Self <: SpeedProperties] (val x: Self) extends AnyVal {
+      extension [Self <: SpeedProperties](x: Self) {
         
-        @scala.inline
-        def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+        inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -197,86 +175,60 @@ object mod {
   }
   object TypingProps {
     
-    @scala.inline
-    def apply(): TypingProps = {
+    inline def apply(): TypingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypingProps]
     }
     
-    @scala.inline
-    implicit class TypingPropsMutableBuilder[Self <: TypingProps] (val x: Self) extends AnyVal {
+    extension [Self <: TypingProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCursor(value: ReactNode): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: ReactNode): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorClassName(value: String): Self = StObject.set(x, "cursorClassName", value.asInstanceOf[js.Any])
+      inline def setCursorClassName(value: String): Self = StObject.set(x, "cursorClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorClassNameUndefined: Self = StObject.set(x, "cursorClassName", js.undefined)
+      inline def setCursorClassNameUndefined: Self = StObject.set(x, "cursorClassName", js.undefined)
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setHideCursor(value: Boolean): Self = StObject.set(x, "hideCursor", value.asInstanceOf[js.Any])
+      inline def setHideCursor(value: Boolean): Self = StObject.set(x, "hideCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideCursorUndefined: Self = StObject.set(x, "hideCursor", js.undefined)
+      inline def setHideCursorUndefined: Self = StObject.set(x, "hideCursor", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setOnAfterType(value: () => Unit): Self = StObject.set(x, "onAfterType", js.Any.fromFunction0(value))
+      inline def setOnAfterType(value: () => Unit): Self = StObject.set(x, "onAfterType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnAfterTypeUndefined: Self = StObject.set(x, "onAfterType", js.undefined)
+      inline def setOnAfterTypeUndefined: Self = StObject.set(x, "onAfterType", js.undefined)
       
-      @scala.inline
-      def setOnBeforeType(value: () => Unit): Self = StObject.set(x, "onBeforeType", js.Any.fromFunction0(value))
+      inline def setOnBeforeType(value: () => Unit): Self = StObject.set(x, "onBeforeType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBeforeTypeUndefined: Self = StObject.set(x, "onBeforeType", js.undefined)
+      inline def setOnBeforeTypeUndefined: Self = StObject.set(x, "onBeforeType", js.undefined)
       
-      @scala.inline
-      def setOnFinishedTyping(value: () => Unit): Self = StObject.set(x, "onFinishedTyping", js.Any.fromFunction0(value))
+      inline def setOnFinishedTyping(value: () => Unit): Self = StObject.set(x, "onFinishedTyping", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnFinishedTypingUndefined: Self = StObject.set(x, "onFinishedTyping", js.undefined)
+      inline def setOnFinishedTypingUndefined: Self = StObject.set(x, "onFinishedTyping", js.undefined)
       
-      @scala.inline
-      def setOnStartedTyping(value: () => Unit): Self = StObject.set(x, "onStartedTyping", js.Any.fromFunction0(value))
+      inline def setOnStartedTyping(value: () => Unit): Self = StObject.set(x, "onStartedTyping", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnStartedTypingUndefined: Self = StObject.set(x, "onStartedTyping", js.undefined)
+      inline def setOnStartedTypingUndefined: Self = StObject.set(x, "onStartedTyping", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setStartDelay(value: Double): Self = StObject.set(x, "startDelay", value.asInstanceOf[js.Any])
+      inline def setStartDelay(value: Double): Self = StObject.set(x, "startDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDelayUndefined: Self = StObject.set(x, "startDelay", js.undefined)
+      inline def setStartDelayUndefined: Self = StObject.set(x, "startDelay", js.undefined)
     }
   }
 }

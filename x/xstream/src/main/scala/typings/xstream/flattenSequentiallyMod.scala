@@ -14,8 +14,7 @@ object flattenSequentiallyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](ins: Stream[Stream[T] | MemoryStream[T]]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ins.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
+  inline def default[T](ins: Stream[Stream[T] | MemoryStream[T]]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ins.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
   
   @JSImport("xstream/extra/flattenSequentially", "FlattenSeqOperator")
   @js.native
@@ -41,21 +40,21 @@ object flattenSequentiallyMod {
     /* CompleteClass */
     override def _stop(): Unit = js.native
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
-    var activeIL: js.Any = js.native
+    /* private */ var activeIL: js.Any = js.native
     
     /* CompleteClass */
     var ins: Stream[Stream[T]] = js.native
     
     def less(): Unit = js.native
     
-    var open: js.Any = js.native
+    /* private */ var open: js.Any = js.native
     
     /* CompleteClass */
     var out: Stream[T] = js.native
     
-    var seq: js.Any = js.native
+    /* private */ var seq: js.Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native

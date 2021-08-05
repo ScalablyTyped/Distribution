@@ -10,8 +10,7 @@ trait CompassReading
      with ICompassReading
 object CompassReading {
   
-  @scala.inline
-  def apply(headingMagneticNorth: Double, headingTrueNorth: Double, timestamp: Date): CompassReading = {
+  inline def apply(headingMagneticNorth: Double, headingTrueNorth: Double, timestamp: Date): CompassReading = {
     val __obj = js.Dynamic.literal(headingMagneticNorth = headingMagneticNorth.asInstanceOf[js.Any], headingTrueNorth = headingTrueNorth.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompassReading]
   }

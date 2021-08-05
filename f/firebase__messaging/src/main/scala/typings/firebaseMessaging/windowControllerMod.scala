@@ -25,7 +25,7 @@ object windowControllerMod {
     @JSName("app")
     def app_MWindowController: typings.firebaseMessaging.mod.FirebaseApp = js.native
     
-    val firebaseDependencies: js.Any = js.native
+    /* private */ val firebaseDependencies: js.Any = js.native
     
     def getSwReg(): js.UndefOr[ServiceWorkerRegistration] = js.native
     
@@ -33,13 +33,13 @@ object windowControllerMod {
     
     def getVapidKey(): String | Null = js.native
     
-    var logEvent: js.Any = js.native
+    /* private */ var logEvent: js.Any = js.native
     
-    var messageEventListener: js.Any = js.native
+    /* private */ var messageEventListener: js.Any = js.native
     
     def onBackgroundMessage(): Unsubscribe = js.native
     
-    var onMessageCallback: js.Any = js.native
+    /* private */ var onMessageCallback: js.Any = js.native
     
     /**
       * @deprecated No-op. It was initially designed with token rotation requests from server in mind.
@@ -47,11 +47,11 @@ object windowControllerMod {
       */
     def onTokenRefresh(): Unsubscribe = js.native
     
-    var registerDefaultSw: js.Any = js.native
+    /* private */ var registerDefaultSw: js.Any = js.native
     
     def setBackgroundMessageHandler(): Unit = js.native
     
-    var swRegistration: js.Any = js.native
+    /* private */ var swRegistration: js.Any = js.native
     
     def updateSwReg(): js.Promise[Unit] = js.native
     def updateSwReg(swRegistration: ServiceWorkerRegistration): js.Promise[Unit] = js.native
@@ -59,6 +59,6 @@ object windowControllerMod {
     def updateVapidKey(): js.Promise[Unit] = js.native
     def updateVapidKey(vapidKey: String): js.Promise[Unit] = js.native
     
-    var vapidKey: js.Any = js.native
+    /* private */ var vapidKey: js.Any = js.native
   }
 }

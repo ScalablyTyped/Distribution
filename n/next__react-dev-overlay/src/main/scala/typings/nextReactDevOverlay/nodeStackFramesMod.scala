@@ -12,12 +12,9 @@ object nodeStackFramesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFilesystemFrame(frame: StackFrame): StackFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilesystemFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[StackFrame]
+  inline def getFilesystemFrame(frame: StackFrame): StackFrame = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilesystemFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[StackFrame]
   
-  @scala.inline
-  def getNodeError(error: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeError")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def getNodeError(error: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeError")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @scala.inline
-  def isNodeError(error: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNodeError(error: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

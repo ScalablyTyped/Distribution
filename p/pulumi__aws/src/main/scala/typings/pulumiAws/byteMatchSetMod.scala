@@ -53,21 +53,16 @@ object byteMatchSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ByteMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ByteMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ByteMatchSetState): ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ByteMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ByteMatchSetState, opts: CustomResourceOptions): ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ByteMatchSet]
+    inline def get(name: String, id: Input[ID]): ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ByteMatchSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ByteMatchSet]
+    inline def get(name: String, id: Input[ID], state: ByteMatchSetState): ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ByteMatchSet]
+    inline def get(name: String, id: Input[ID], state: ByteMatchSetState, opts: CustomResourceOptions): ByteMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ByteMatchSet]
     
     /**
       * Returns true if the given object is an instance of ByteMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/byteMatchSet.ByteMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/byteMatchSet.ByteMatchSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/byteMatchSet.ByteMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafregional/byteMatchSet.ByteMatchSet */ Boolean]
   }
   
   trait ByteMatchSetArgs extends StObject {
@@ -88,33 +83,26 @@ object byteMatchSetMod {
   }
   object ByteMatchSetArgs {
     
-    @scala.inline
-    def apply(): ByteMatchSetArgs = {
+    inline def apply(): ByteMatchSetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ByteMatchSetArgs]
     }
     
-    @scala.inline
-    implicit class ByteMatchSetArgsMutableBuilder[Self <: ByteMatchSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ByteMatchSetArgs](x: Self) {
       
-      @scala.inline
-      def setByteMatchTuples(
+      inline def setByteMatchTuples(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.wafregional.ByteMatchSetByteMatchTuple]]
             ]
       ): Self = StObject.set(x, "byteMatchTuples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByteMatchTuplesUndefined: Self = StObject.set(x, "byteMatchTuples", js.undefined)
+      inline def setByteMatchTuplesUndefined: Self = StObject.set(x, "byteMatchTuples", js.undefined)
       
-      @scala.inline
-      def setByteMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.ByteMatchSetByteMatchTuple]*): Self = StObject.set(x, "byteMatchTuples", js.Array(value :_*))
+      inline def setByteMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.ByteMatchSetByteMatchTuple]*): Self = StObject.set(x, "byteMatchTuples", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -136,33 +124,26 @@ object byteMatchSetMod {
   }
   object ByteMatchSetState {
     
-    @scala.inline
-    def apply(): ByteMatchSetState = {
+    inline def apply(): ByteMatchSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ByteMatchSetState]
     }
     
-    @scala.inline
-    implicit class ByteMatchSetStateMutableBuilder[Self <: ByteMatchSetState] (val x: Self) extends AnyVal {
+    extension [Self <: ByteMatchSetState](x: Self) {
       
-      @scala.inline
-      def setByteMatchTuples(
+      inline def setByteMatchTuples(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.wafregional.ByteMatchSetByteMatchTuple]]
             ]
       ): Self = StObject.set(x, "byteMatchTuples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByteMatchTuplesUndefined: Self = StObject.set(x, "byteMatchTuples", js.undefined)
+      inline def setByteMatchTuplesUndefined: Self = StObject.set(x, "byteMatchTuples", js.undefined)
       
-      @scala.inline
-      def setByteMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.ByteMatchSetByteMatchTuple]*): Self = StObject.set(x, "byteMatchTuples", js.Array(value :_*))
+      inline def setByteMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.wafregional.ByteMatchSetByteMatchTuple]*): Self = StObject.set(x, "byteMatchTuples", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

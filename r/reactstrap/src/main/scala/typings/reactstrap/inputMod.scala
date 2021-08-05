@@ -49,74 +49,52 @@ object inputMod {
   }
   object InputProps {
     
-    @scala.inline
-    def apply(): InputProps = {
+    inline def apply(): InputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputProps]
     }
     
-    @scala.inline
-    implicit class InputPropsMutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputProps](x: Self) {
       
-      @scala.inline
-      def setAddon(value: Boolean): Self = StObject.set(x, "addon", value.asInstanceOf[js.Any])
+      inline def setAddon(value: Boolean): Self = StObject.set(x, "addon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddonUndefined: Self = StObject.set(x, "addon", js.undefined)
+      inline def setAddonUndefined: Self = StObject.set(x, "addon", js.undefined)
       
-      @scala.inline
-      def setBsSize(value: lg | sm): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+      inline def setBsSize(value: lg | sm): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+      inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setInnerRef(value: Ref[HTMLInputElement | HTMLTextAreaElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[HTMLInputElement | HTMLTextAreaElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ (HTMLInputElement | HTMLTextAreaElement) | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ (HTMLInputElement | HTMLTextAreaElement) | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setPlaintext(value: Boolean): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: Boolean): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
+      inline def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setType(value: InputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: InputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     }
   }
   
@@ -150,79 +128,54 @@ object inputMod {
   trait InputType extends StObject
   object InputType {
     
-    @scala.inline
-    def button: typings.reactstrap.reactstrapStrings.button = "button".asInstanceOf[typings.reactstrap.reactstrapStrings.button]
+    inline def button: typings.reactstrap.reactstrapStrings.button = "button".asInstanceOf[typings.reactstrap.reactstrapStrings.button]
     
-    @scala.inline
-    def checkbox: typings.reactstrap.reactstrapStrings.checkbox = "checkbox".asInstanceOf[typings.reactstrap.reactstrapStrings.checkbox]
+    inline def checkbox: typings.reactstrap.reactstrapStrings.checkbox = "checkbox".asInstanceOf[typings.reactstrap.reactstrapStrings.checkbox]
     
-    @scala.inline
-    def color: typings.reactstrap.reactstrapStrings.color = "color".asInstanceOf[typings.reactstrap.reactstrapStrings.color]
+    inline def color: typings.reactstrap.reactstrapStrings.color = "color".asInstanceOf[typings.reactstrap.reactstrapStrings.color]
     
-    @scala.inline
-    def date: typings.reactstrap.reactstrapStrings.date = "date".asInstanceOf[typings.reactstrap.reactstrapStrings.date]
+    inline def date: typings.reactstrap.reactstrapStrings.date = "date".asInstanceOf[typings.reactstrap.reactstrapStrings.date]
     
-    @scala.inline
-    def datetime: typings.reactstrap.reactstrapStrings.datetime = "datetime".asInstanceOf[typings.reactstrap.reactstrapStrings.datetime]
+    inline def datetime: typings.reactstrap.reactstrapStrings.datetime = "datetime".asInstanceOf[typings.reactstrap.reactstrapStrings.datetime]
     
-    @scala.inline
-    def `datetime-local`: typings.reactstrap.reactstrapStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.reactstrap.reactstrapStrings.`datetime-local`]
+    inline def `datetime-local`: typings.reactstrap.reactstrapStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.reactstrap.reactstrapStrings.`datetime-local`]
     
-    @scala.inline
-    def email: typings.reactstrap.reactstrapStrings.email = "email".asInstanceOf[typings.reactstrap.reactstrapStrings.email]
+    inline def email: typings.reactstrap.reactstrapStrings.email = "email".asInstanceOf[typings.reactstrap.reactstrapStrings.email]
     
-    @scala.inline
-    def file: typings.reactstrap.reactstrapStrings.file = "file".asInstanceOf[typings.reactstrap.reactstrapStrings.file]
+    inline def file: typings.reactstrap.reactstrapStrings.file = "file".asInstanceOf[typings.reactstrap.reactstrapStrings.file]
     
-    @scala.inline
-    def hidden: typings.reactstrap.reactstrapStrings.hidden = "hidden".asInstanceOf[typings.reactstrap.reactstrapStrings.hidden]
+    inline def hidden: typings.reactstrap.reactstrapStrings.hidden = "hidden".asInstanceOf[typings.reactstrap.reactstrapStrings.hidden]
     
-    @scala.inline
-    def image: typings.reactstrap.reactstrapStrings.image = "image".asInstanceOf[typings.reactstrap.reactstrapStrings.image]
+    inline def image: typings.reactstrap.reactstrapStrings.image = "image".asInstanceOf[typings.reactstrap.reactstrapStrings.image]
     
-    @scala.inline
-    def month: typings.reactstrap.reactstrapStrings.month = "month".asInstanceOf[typings.reactstrap.reactstrapStrings.month]
+    inline def month: typings.reactstrap.reactstrapStrings.month = "month".asInstanceOf[typings.reactstrap.reactstrapStrings.month]
     
-    @scala.inline
-    def number: typings.reactstrap.reactstrapStrings.number = "number".asInstanceOf[typings.reactstrap.reactstrapStrings.number]
+    inline def number: typings.reactstrap.reactstrapStrings.number = "number".asInstanceOf[typings.reactstrap.reactstrapStrings.number]
     
-    @scala.inline
-    def password: typings.reactstrap.reactstrapStrings.password = "password".asInstanceOf[typings.reactstrap.reactstrapStrings.password]
+    inline def password: typings.reactstrap.reactstrapStrings.password = "password".asInstanceOf[typings.reactstrap.reactstrapStrings.password]
     
-    @scala.inline
-    def radio: typings.reactstrap.reactstrapStrings.radio = "radio".asInstanceOf[typings.reactstrap.reactstrapStrings.radio]
+    inline def radio: typings.reactstrap.reactstrapStrings.radio = "radio".asInstanceOf[typings.reactstrap.reactstrapStrings.radio]
     
-    @scala.inline
-    def range: typings.reactstrap.reactstrapStrings.range = "range".asInstanceOf[typings.reactstrap.reactstrapStrings.range]
+    inline def range: typings.reactstrap.reactstrapStrings.range = "range".asInstanceOf[typings.reactstrap.reactstrapStrings.range]
     
-    @scala.inline
-    def reset: typings.reactstrap.reactstrapStrings.reset = "reset".asInstanceOf[typings.reactstrap.reactstrapStrings.reset]
+    inline def reset: typings.reactstrap.reactstrapStrings.reset = "reset".asInstanceOf[typings.reactstrap.reactstrapStrings.reset]
     
-    @scala.inline
-    def search: typings.reactstrap.reactstrapStrings.search = "search".asInstanceOf[typings.reactstrap.reactstrapStrings.search]
+    inline def search: typings.reactstrap.reactstrapStrings.search = "search".asInstanceOf[typings.reactstrap.reactstrapStrings.search]
     
-    @scala.inline
-    def select: typings.reactstrap.reactstrapStrings.select = "select".asInstanceOf[typings.reactstrap.reactstrapStrings.select]
+    inline def select: typings.reactstrap.reactstrapStrings.select = "select".asInstanceOf[typings.reactstrap.reactstrapStrings.select]
     
-    @scala.inline
-    def submit: typings.reactstrap.reactstrapStrings.submit = "submit".asInstanceOf[typings.reactstrap.reactstrapStrings.submit]
+    inline def submit: typings.reactstrap.reactstrapStrings.submit = "submit".asInstanceOf[typings.reactstrap.reactstrapStrings.submit]
     
-    @scala.inline
-    def tel: typings.reactstrap.reactstrapStrings.tel = "tel".asInstanceOf[typings.reactstrap.reactstrapStrings.tel]
+    inline def tel: typings.reactstrap.reactstrapStrings.tel = "tel".asInstanceOf[typings.reactstrap.reactstrapStrings.tel]
     
-    @scala.inline
-    def text: typings.reactstrap.reactstrapStrings.text = "text".asInstanceOf[typings.reactstrap.reactstrapStrings.text]
+    inline def text: typings.reactstrap.reactstrapStrings.text = "text".asInstanceOf[typings.reactstrap.reactstrapStrings.text]
     
-    @scala.inline
-    def textarea: typings.reactstrap.reactstrapStrings.textarea = "textarea".asInstanceOf[typings.reactstrap.reactstrapStrings.textarea]
+    inline def textarea: typings.reactstrap.reactstrapStrings.textarea = "textarea".asInstanceOf[typings.reactstrap.reactstrapStrings.textarea]
     
-    @scala.inline
-    def time: typings.reactstrap.reactstrapStrings.time = "time".asInstanceOf[typings.reactstrap.reactstrapStrings.time]
+    inline def time: typings.reactstrap.reactstrapStrings.time = "time".asInstanceOf[typings.reactstrap.reactstrapStrings.time]
     
-    @scala.inline
-    def url: typings.reactstrap.reactstrapStrings.url = "url".asInstanceOf[typings.reactstrap.reactstrapStrings.url]
+    inline def url: typings.reactstrap.reactstrapStrings.url = "url".asInstanceOf[typings.reactstrap.reactstrapStrings.url]
     
-    @scala.inline
-    def week: typings.reactstrap.reactstrapStrings.week = "week".asInstanceOf[typings.reactstrap.reactstrapStrings.week]
+    inline def week: typings.reactstrap.reactstrapStrings.week = "week".asInstanceOf[typings.reactstrap.reactstrapStrings.week]
   }
 }

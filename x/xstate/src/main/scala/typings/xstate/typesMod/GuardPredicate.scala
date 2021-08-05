@@ -16,8 +16,7 @@ trait GuardPredicate[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object GuardPredicate {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     predicate: (TContext, TEvent, /* meta */ GuardMeta[TContext, TEvent]) => Boolean,
     `type`: DefaultGuardType
   ): GuardPredicate[TContext, TEvent] = {
@@ -26,19 +25,14 @@ object GuardPredicate {
     __obj.asInstanceOf[GuardPredicate[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class GuardPredicateMutableBuilder[Self <: GuardPredicate[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (GuardPredicate[TContext, TEvent])) extends AnyVal {
+  extension [Self <: GuardPredicate[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (GuardPredicate[TContext, TEvent])) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPredicate(value: (TContext, TEvent, /* meta */ GuardMeta[TContext, TEvent]) => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction3(value))
+    inline def setPredicate(value: (TContext, TEvent, /* meta */ GuardMeta[TContext, TEvent]) => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setType(value: DefaultGuardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DefaultGuardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

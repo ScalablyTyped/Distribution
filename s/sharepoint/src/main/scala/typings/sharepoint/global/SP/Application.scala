@@ -38,8 +38,7 @@ object Application {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def getDefaultFormsInformation(requestor: DefaultFormsInformationRequestor, listId: typings.sharepoint.SP.Guid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormsInformation")(requestor.asInstanceOf[js.Any], listId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def getDefaultFormsInformation(requestor: DefaultFormsInformationRequestor, listId: typings.sharepoint.SP.Guid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFormsInformation")(requestor.asInstanceOf[js.Any], listId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     @JSGlobal("SP.Application.UI.FormsInfo")
@@ -701,23 +700,19 @@ object Application {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def getFilterMenuItemsCallback(): js.Function1[/* menuItems */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_filterMenuItemsCallback")().asInstanceOf[js.Function1[/* menuItems */ js.Any, js.Any]]
+      inline def getFilterMenuItemsCallback(): js.Function1[/* menuItems */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get_filterMenuItemsCallback")().asInstanceOf[js.Function1[/* menuItems */ js.Any, js.Any]]
       
       /* static member */
-      @scala.inline
-      def getViewInformation(
+      inline def getViewInformation(
         requestor: ViewInformationRequestor,
         options: typings.sharepoint.SP.Application.UI.ViewSelectorMenuOptions
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewInformation")(requestor.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @scala.inline
-      def setFilterMenuItemsCallback(value: js.Function1[/* menuItems */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_filterMenuItemsCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setFilterMenuItemsCallback(value: js.Function1[/* menuItems */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_filterMenuItemsCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /* static member */
-      @scala.inline
-      def showMenu(elem: HTMLElement, options: typings.sharepoint.SP.Application.UI.ViewSelectorMenuOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showMenu")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def showMenu(elem: HTMLElement, options: typings.sharepoint.SP.Application.UI.ViewSelectorMenuOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showMenu")(elem.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     @JSGlobal("SP.Application.UI.ViewSelectorMenuItem")

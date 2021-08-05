@@ -12,16 +12,13 @@ trait HeroWinRate
 }
 object HeroWinRate {
   
-  @scala.inline
-  def apply(hero: String, img: String, win_rate: String): HeroWinRate = {
+  inline def apply(hero: String, img: String, win_rate: String): HeroWinRate = {
     val __obj = js.Dynamic.literal(hero = hero.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], win_rate = win_rate.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeroWinRate]
   }
   
-  @scala.inline
-  implicit class HeroWinRateMutableBuilder[Self <: HeroWinRate] (val x: Self) extends AnyVal {
+  extension [Self <: HeroWinRate](x: Self) {
     
-    @scala.inline
-    def setWin_rate(value: String): Self = StObject.set(x, "win_rate", value.asInstanceOf[js.Any])
+    inline def setWin_rate(value: String): Self = StObject.set(x, "win_rate", value.asInstanceOf[js.Any])
   }
 }

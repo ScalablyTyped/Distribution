@@ -29,35 +29,27 @@ trait GoogleDatastoreAdminV1ExportEntitiesRequest extends StObject {
 }
 object GoogleDatastoreAdminV1ExportEntitiesRequest {
   
-  @scala.inline
-  def apply(): GoogleDatastoreAdminV1ExportEntitiesRequest = {
+  inline def apply(): GoogleDatastoreAdminV1ExportEntitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDatastoreAdminV1ExportEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class GoogleDatastoreAdminV1ExportEntitiesRequestMutableBuilder[Self <: GoogleDatastoreAdminV1ExportEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDatastoreAdminV1ExportEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setEntityFilter(value: GoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
+    inline def setEntityFilter(value: GoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
+    inline def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1ExportEntitiesRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setOutputUrlPrefix(value: String): Self = StObject.set(x, "outputUrlPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputUrlPrefix(value: String): Self = StObject.set(x, "outputUrlPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUrlPrefixUndefined: Self = StObject.set(x, "outputUrlPrefix", js.undefined)
+    inline def setOutputUrlPrefixUndefined: Self = StObject.set(x, "outputUrlPrefix", js.undefined)
   }
 }

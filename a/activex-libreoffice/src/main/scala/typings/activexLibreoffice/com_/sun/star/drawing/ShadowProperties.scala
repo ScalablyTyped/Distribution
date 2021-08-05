@@ -29,8 +29,7 @@ trait ShadowProperties extends StObject {
 }
 object ShadowProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Shadow: Boolean,
     ShadowColor: Color,
     ShadowTransparence: Double,
@@ -41,22 +40,16 @@ object ShadowProperties {
     __obj.asInstanceOf[ShadowProperties]
   }
   
-  @scala.inline
-  implicit class ShadowPropertiesMutableBuilder[Self <: ShadowProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ShadowProperties](x: Self) {
     
-    @scala.inline
-    def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColor(value: Color): Self = StObject.set(x, "ShadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: Color): Self = StObject.set(x, "ShadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowTransparence(value: Double): Self = StObject.set(x, "ShadowTransparence", value.asInstanceOf[js.Any])
+    inline def setShadowTransparence(value: Double): Self = StObject.set(x, "ShadowTransparence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowXDistance(value: Double): Self = StObject.set(x, "ShadowXDistance", value.asInstanceOf[js.Any])
+    inline def setShadowXDistance(value: Double): Self = StObject.set(x, "ShadowXDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowYDistance(value: Double): Self = StObject.set(x, "ShadowYDistance", value.asInstanceOf[js.Any])
+    inline def setShadowYDistance(value: Double): Self = StObject.set(x, "ShadowYDistance", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait AuthorizeDBSecurityGroupIngressResult extends StObject {
 }
 object AuthorizeDBSecurityGroupIngressResult {
   
-  @scala.inline
-  def apply(): AuthorizeDBSecurityGroupIngressResult = {
+  inline def apply(): AuthorizeDBSecurityGroupIngressResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizeDBSecurityGroupIngressResult]
   }
   
-  @scala.inline
-  implicit class AuthorizeDBSecurityGroupIngressResultMutableBuilder[Self <: AuthorizeDBSecurityGroupIngressResult] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeDBSecurityGroupIngressResult](x: Self) {
     
-    @scala.inline
-    def setDBSecurityGroup(value: DBSecurityGroup): Self = StObject.set(x, "DBSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroup(value: DBSecurityGroup): Self = StObject.set(x, "DBSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSecurityGroupUndefined: Self = StObject.set(x, "DBSecurityGroup", js.undefined)
+    inline def setDBSecurityGroupUndefined: Self = StObject.set(x, "DBSecurityGroup", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ object vueMod {
   }
   object Vue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $http: Call,
       $resource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify $resource */ js.Any
     ): Vue = {
@@ -32,14 +31,11 @@ object vueMod {
       __obj.asInstanceOf[Vue]
     }
     
-    @scala.inline
-    implicit class VueMutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
+    extension [Self <: Vue](x: Self) {
       
-      @scala.inline
-      def set$http(value: Call): Self = StObject.set(x, "$http", value.asInstanceOf[js.Any])
+      inline def set$http(value: Call): Self = StObject.set(x, "$http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$resource(
+      inline def set$resource(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify $resource */ js.Any
       ): Self = StObject.set(x, "$resource", value.asInstanceOf[js.Any])
     }

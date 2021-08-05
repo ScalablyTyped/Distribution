@@ -30,31 +30,23 @@ trait EntityInfo extends StObject {
 }
 object EntityInfo {
   
-  @scala.inline
-  def apply(Arn: arnType, Id: idType, Name: userNameType, Type: policyOwnerEntityType): EntityInfo = {
+  inline def apply(Arn: arnType, Id: idType, Name: userNameType, Type: policyOwnerEntityType): EntityInfo = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityInfo]
   }
   
-  @scala.inline
-  implicit class EntityInfoMutableBuilder[Self <: EntityInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EntityInfo](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: idType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: idType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: userNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: userNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
-    @scala.inline
-    def setType(value: policyOwnerEntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: policyOwnerEntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

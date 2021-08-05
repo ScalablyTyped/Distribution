@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "assert-never"
-version := "1.2.1-a5ba80"
+version := "1.2.1-f2299a"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

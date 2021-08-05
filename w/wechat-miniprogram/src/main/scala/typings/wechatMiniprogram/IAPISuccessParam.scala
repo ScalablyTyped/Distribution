@@ -12,16 +12,13 @@ trait IAPISuccessParam
 }
 object IAPISuccessParam {
   
-  @scala.inline
-  def apply(errMsg: String): IAPISuccessParam = {
+  inline def apply(errMsg: String): IAPISuccessParam = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAPISuccessParam]
   }
   
-  @scala.inline
-  implicit class IAPISuccessParamMutableBuilder[Self <: IAPISuccessParam] (val x: Self) extends AnyVal {
+  extension [Self <: IAPISuccessParam](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

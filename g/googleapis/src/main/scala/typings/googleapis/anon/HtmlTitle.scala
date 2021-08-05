@@ -16,37 +16,27 @@ trait HtmlTitle extends StObject {
 }
 object HtmlTitle {
   
-  @scala.inline
-  def apply(): HtmlTitle = {
+  inline def apply(): HtmlTitle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlTitle]
   }
   
-  @scala.inline
-  implicit class HtmlTitleMutableBuilder[Self <: HtmlTitle] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlTitle](x: Self) {
     
-    @scala.inline
-    def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
+    inline def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
+    inline def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

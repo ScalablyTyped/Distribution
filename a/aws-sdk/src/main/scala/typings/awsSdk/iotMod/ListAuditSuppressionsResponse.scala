@@ -18,28 +18,21 @@ trait ListAuditSuppressionsResponse extends StObject {
 }
 object ListAuditSuppressionsResponse {
   
-  @scala.inline
-  def apply(): ListAuditSuppressionsResponse = {
+  inline def apply(): ListAuditSuppressionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAuditSuppressionsResponse]
   }
   
-  @scala.inline
-  implicit class ListAuditSuppressionsResponseMutableBuilder[Self <: ListAuditSuppressionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAuditSuppressionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSuppressions(value: AuditSuppressionList): Self = StObject.set(x, "suppressions", value.asInstanceOf[js.Any])
+    inline def setSuppressions(value: AuditSuppressionList): Self = StObject.set(x, "suppressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressionsUndefined: Self = StObject.set(x, "suppressions", js.undefined)
+    inline def setSuppressionsUndefined: Self = StObject.set(x, "suppressions", js.undefined)
     
-    @scala.inline
-    def setSuppressionsVarargs(value: AuditSuppression*): Self = StObject.set(x, "suppressions", js.Array(value :_*))
+    inline def setSuppressionsVarargs(value: AuditSuppression*): Self = StObject.set(x, "suppressions", js.Array(value :_*))
   }
 }

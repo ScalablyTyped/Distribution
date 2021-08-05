@@ -18,19 +18,15 @@ trait GetJobTaggingRequest extends StObject {
 }
 object GetJobTaggingRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, JobId: JobId): GetJobTaggingRequest = {
+  inline def apply(AccountId: AccountId, JobId: JobId): GetJobTaggingRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJobTaggingRequest]
   }
   
-  @scala.inline
-  implicit class GetJobTaggingRequestMutableBuilder[Self <: GetJobTaggingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobTaggingRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

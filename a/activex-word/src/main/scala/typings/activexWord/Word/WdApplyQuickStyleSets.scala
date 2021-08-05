@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdApplyQuickStyleSets extends StObject
 object WdApplyQuickStyleSets {
   
-  @scala.inline
-  def wdSessionStartSet: `1` = 1.asInstanceOf[`1`]
+  inline def wdSessionStartSet: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdTemplateSet: `2` = 2.asInstanceOf[`2`]
+  inline def wdTemplateSet: `2` = 2.asInstanceOf[`2`]
 }

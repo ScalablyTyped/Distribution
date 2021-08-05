@@ -18,28 +18,21 @@ trait ListRobotApplicationsResponse extends StObject {
 }
 object ListRobotApplicationsResponse {
   
-  @scala.inline
-  def apply(): ListRobotApplicationsResponse = {
+  inline def apply(): ListRobotApplicationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRobotApplicationsResponse]
   }
   
-  @scala.inline
-  implicit class ListRobotApplicationsResponseMutableBuilder[Self <: ListRobotApplicationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRobotApplicationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRobotApplicationSummaries(value: RobotApplicationSummaries): Self = StObject.set(x, "robotApplicationSummaries", value.asInstanceOf[js.Any])
+    inline def setRobotApplicationSummaries(value: RobotApplicationSummaries): Self = StObject.set(x, "robotApplicationSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRobotApplicationSummariesUndefined: Self = StObject.set(x, "robotApplicationSummaries", js.undefined)
+    inline def setRobotApplicationSummariesUndefined: Self = StObject.set(x, "robotApplicationSummaries", js.undefined)
     
-    @scala.inline
-    def setRobotApplicationSummariesVarargs(value: RobotApplicationSummary*): Self = StObject.set(x, "robotApplicationSummaries", js.Array(value :_*))
+    inline def setRobotApplicationSummariesVarargs(value: RobotApplicationSummary*): Self = StObject.set(x, "robotApplicationSummaries", js.Array(value :_*))
   }
 }

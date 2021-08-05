@@ -63,13 +63,10 @@ object mod {
     @JSImport("events", "EventEmitter.defaultMaxListeners")
     @js.native
     def defaultMaxListeners: Double = js.native
-    @scala.inline
-    def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
+    inline def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def listenerCount(emitter: EventEmitter, `type`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def listenerCount(emitter: EventEmitter, `type`: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listenerCount(emitter: EventEmitter, `type`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listenerCount(emitter: EventEmitter, `type`: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @js.native

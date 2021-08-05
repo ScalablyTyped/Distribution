@@ -18,28 +18,21 @@ trait Pattern extends StObject {
 }
 object Pattern {
   
-  @scala.inline
-  def apply(): Pattern = {
+  inline def apply(): Pattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pattern]
   }
   
-  @scala.inline
-  implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+  extension [Self <: Pattern](x: Self) {
     
-    @scala.inline
-    def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+    inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
     
-    @scala.inline
-    def setThreshold(value: Max): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Max): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

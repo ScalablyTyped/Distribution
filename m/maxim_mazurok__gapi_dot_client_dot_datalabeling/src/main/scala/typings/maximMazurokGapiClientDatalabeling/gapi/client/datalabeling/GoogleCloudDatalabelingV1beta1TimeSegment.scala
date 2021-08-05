@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1TimeSegment extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1TimeSegment {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1TimeSegment = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1TimeSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1TimeSegment]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1TimeSegmentMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1TimeSegment] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1TimeSegment](x: Self) {
     
-    @scala.inline
-    def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
+    inline def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
+    inline def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
     
-    @scala.inline
-    def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
+    inline def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
+    inline def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
   }
 }

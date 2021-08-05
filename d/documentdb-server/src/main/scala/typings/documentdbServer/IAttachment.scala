@@ -18,8 +18,7 @@ trait IAttachment
 }
 object IAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     contentType: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -30,13 +29,10 @@ object IAttachment {
     __obj.asInstanceOf[IAttachment]
   }
   
-  @scala.inline
-  implicit class IAttachmentMutableBuilder[Self <: IAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: IAttachment](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }

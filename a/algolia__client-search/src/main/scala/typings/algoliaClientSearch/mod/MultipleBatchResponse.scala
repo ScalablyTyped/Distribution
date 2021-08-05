@@ -19,22 +19,17 @@ trait MultipleBatchResponse extends StObject {
 }
 object MultipleBatchResponse {
   
-  @scala.inline
-  def apply(objectIDs: js.Array[String], taskID: Record[String, Double]): MultipleBatchResponse = {
+  inline def apply(objectIDs: js.Array[String], taskID: Record[String, Double]): MultipleBatchResponse = {
     val __obj = js.Dynamic.literal(objectIDs = objectIDs.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleBatchResponse]
   }
   
-  @scala.inline
-  implicit class MultipleBatchResponseMutableBuilder[Self <: MultipleBatchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleBatchResponse](x: Self) {
     
-    @scala.inline
-    def setObjectIDs(value: js.Array[String]): Self = StObject.set(x, "objectIDs", value.asInstanceOf[js.Any])
+    inline def setObjectIDs(value: js.Array[String]): Self = StObject.set(x, "objectIDs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIDsVarargs(value: String*): Self = StObject.set(x, "objectIDs", js.Array(value :_*))
+    inline def setObjectIDsVarargs(value: String*): Self = StObject.set(x, "objectIDs", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskID(value: Record[String, Double]): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
+    inline def setTaskID(value: Record[String, Double]): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
   }
 }

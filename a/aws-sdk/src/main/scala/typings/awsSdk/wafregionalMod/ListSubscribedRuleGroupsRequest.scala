@@ -18,25 +18,19 @@ trait ListSubscribedRuleGroupsRequest extends StObject {
 }
 object ListSubscribedRuleGroupsRequest {
   
-  @scala.inline
-  def apply(): ListSubscribedRuleGroupsRequest = {
+  inline def apply(): ListSubscribedRuleGroupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSubscribedRuleGroupsRequest]
   }
   
-  @scala.inline
-  implicit class ListSubscribedRuleGroupsRequestMutableBuilder[Self <: ListSubscribedRuleGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSubscribedRuleGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

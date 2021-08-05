@@ -30,58 +30,41 @@ trait VideoSuggestions extends StObject {
 }
 object VideoSuggestions {
   
-  @scala.inline
-  def apply(): VideoSuggestions = {
+  inline def apply(): VideoSuggestions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoSuggestions]
   }
   
-  @scala.inline
-  implicit class VideoSuggestionsMutableBuilder[Self <: VideoSuggestions] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSuggestions](x: Self) {
     
-    @scala.inline
-    def setEditorSuggestions(value: js.Array[String]): Self = StObject.set(x, "editorSuggestions", value.asInstanceOf[js.Any])
+    inline def setEditorSuggestions(value: js.Array[String]): Self = StObject.set(x, "editorSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorSuggestionsUndefined: Self = StObject.set(x, "editorSuggestions", js.undefined)
+    inline def setEditorSuggestionsUndefined: Self = StObject.set(x, "editorSuggestions", js.undefined)
     
-    @scala.inline
-    def setEditorSuggestionsVarargs(value: String*): Self = StObject.set(x, "editorSuggestions", js.Array(value :_*))
+    inline def setEditorSuggestionsVarargs(value: String*): Self = StObject.set(x, "editorSuggestions", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessingErrors(value: js.Array[String]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
+    inline def setProcessingErrors(value: js.Array[String]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingErrorsUndefined: Self = StObject.set(x, "processingErrors", js.undefined)
+    inline def setProcessingErrorsUndefined: Self = StObject.set(x, "processingErrors", js.undefined)
     
-    @scala.inline
-    def setProcessingErrorsVarargs(value: String*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
+    inline def setProcessingErrorsVarargs(value: String*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessingHints(value: js.Array[String]): Self = StObject.set(x, "processingHints", value.asInstanceOf[js.Any])
+    inline def setProcessingHints(value: js.Array[String]): Self = StObject.set(x, "processingHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingHintsUndefined: Self = StObject.set(x, "processingHints", js.undefined)
+    inline def setProcessingHintsUndefined: Self = StObject.set(x, "processingHints", js.undefined)
     
-    @scala.inline
-    def setProcessingHintsVarargs(value: String*): Self = StObject.set(x, "processingHints", js.Array(value :_*))
+    inline def setProcessingHintsVarargs(value: String*): Self = StObject.set(x, "processingHints", js.Array(value :_*))
     
-    @scala.inline
-    def setProcessingWarnings(value: js.Array[String]): Self = StObject.set(x, "processingWarnings", value.asInstanceOf[js.Any])
+    inline def setProcessingWarnings(value: js.Array[String]): Self = StObject.set(x, "processingWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingWarningsUndefined: Self = StObject.set(x, "processingWarnings", js.undefined)
+    inline def setProcessingWarningsUndefined: Self = StObject.set(x, "processingWarnings", js.undefined)
     
-    @scala.inline
-    def setProcessingWarningsVarargs(value: String*): Self = StObject.set(x, "processingWarnings", js.Array(value :_*))
+    inline def setProcessingWarningsVarargs(value: String*): Self = StObject.set(x, "processingWarnings", js.Array(value :_*))
     
-    @scala.inline
-    def setTagSuggestions(value: js.Array[VideoSuggestionsTagSuggestion]): Self = StObject.set(x, "tagSuggestions", value.asInstanceOf[js.Any])
+    inline def setTagSuggestions(value: js.Array[VideoSuggestionsTagSuggestion]): Self = StObject.set(x, "tagSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSuggestionsUndefined: Self = StObject.set(x, "tagSuggestions", js.undefined)
+    inline def setTagSuggestionsUndefined: Self = StObject.set(x, "tagSuggestions", js.undefined)
     
-    @scala.inline
-    def setTagSuggestionsVarargs(value: VideoSuggestionsTagSuggestion*): Self = StObject.set(x, "tagSuggestions", js.Array(value :_*))
+    inline def setTagSuggestionsVarargs(value: VideoSuggestionsTagSuggestion*): Self = StObject.set(x, "tagSuggestions", js.Array(value :_*))
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdSignatureAppearanceType extends StObject
 object XdSignatureAppearanceType {
   
-  @scala.inline
-  def xdSignatureAppearanceTypeLine: `0` = 0.asInstanceOf[`0`]
+  inline def xdSignatureAppearanceTypeLine: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xdSignatureAppearanceTypeStamp: `1` = 1.asInstanceOf[`1`]
+  inline def xdSignatureAppearanceTypeStamp: `1` = 1.asInstanceOf[`1`]
 }

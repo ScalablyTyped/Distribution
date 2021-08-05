@@ -18,8 +18,7 @@ trait QueryableString extends StObject {
 }
 object QueryableString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contains: String => Boolean,
     endsWith: String => Boolean,
     equals_ : String => Boolean,
@@ -31,22 +30,16 @@ object QueryableString {
     __obj.asInstanceOf[QueryableString]
   }
   
-  @scala.inline
-  implicit class QueryableStringMutableBuilder[Self <: QueryableString] (val x: Self) extends AnyVal {
+  extension [Self <: QueryableString](x: Self) {
     
-    @scala.inline
-    def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndsWith(value: String => Boolean): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
+    inline def setEndsWith(value: String => Boolean): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEquals_(value: String => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: String => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartsWith(value: String => Boolean): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
+    inline def setStartsWith(value: String => Boolean): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: () => String): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+    inline def setValue(value: () => String): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
   }
 }

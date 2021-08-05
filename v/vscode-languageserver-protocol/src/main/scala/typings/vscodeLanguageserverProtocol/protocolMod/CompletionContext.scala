@@ -19,22 +19,17 @@ trait CompletionContext extends StObject {
 }
 object CompletionContext {
   
-  @scala.inline
-  def apply(triggerKind: CompletionTriggerKind): CompletionContext = {
+  inline def apply(triggerKind: CompletionTriggerKind): CompletionContext = {
     val __obj = js.Dynamic.literal(triggerKind = triggerKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionContext]
   }
   
-  @scala.inline
-  implicit class CompletionContextMutableBuilder[Self <: CompletionContext] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionContext](x: Self) {
     
-    @scala.inline
-    def setTriggerCharacter(value: String): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
+    inline def setTriggerCharacter(value: String): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerCharacterUndefined: Self = StObject.set(x, "triggerCharacter", js.undefined)
+    inline def setTriggerCharacterUndefined: Self = StObject.set(x, "triggerCharacter", js.undefined)
     
-    @scala.inline
-    def setTriggerKind(value: CompletionTriggerKind): Self = StObject.set(x, "triggerKind", value.asInstanceOf[js.Any])
+    inline def setTriggerKind(value: CompletionTriggerKind): Self = StObject.set(x, "triggerKind", value.asInstanceOf[js.Any])
   }
 }

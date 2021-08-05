@@ -33,8 +33,7 @@ trait PutVoiceConnectorProxyRequest extends StObject {
 }
 object PutVoiceConnectorProxyRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultSessionExpiryMinutes: Integer,
     PhoneNumberPoolCountries: CountryList,
     VoiceConnectorId: NonEmptyString128
@@ -43,31 +42,22 @@ object PutVoiceConnectorProxyRequest {
     __obj.asInstanceOf[PutVoiceConnectorProxyRequest]
   }
   
-  @scala.inline
-  implicit class PutVoiceConnectorProxyRequestMutableBuilder[Self <: PutVoiceConnectorProxyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutVoiceConnectorProxyRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultSessionExpiryMinutes(value: Integer): Self = StObject.set(x, "DefaultSessionExpiryMinutes", value.asInstanceOf[js.Any])
+    inline def setDefaultSessionExpiryMinutes(value: Integer): Self = StObject.set(x, "DefaultSessionExpiryMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
-    @scala.inline
-    def setFallBackPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "FallBackPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setFallBackPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "FallBackPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallBackPhoneNumberUndefined: Self = StObject.set(x, "FallBackPhoneNumber", js.undefined)
+    inline def setFallBackPhoneNumberUndefined: Self = StObject.set(x, "FallBackPhoneNumber", js.undefined)
     
-    @scala.inline
-    def setPhoneNumberPoolCountries(value: CountryList): Self = StObject.set(x, "PhoneNumberPoolCountries", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberPoolCountries(value: CountryList): Self = StObject.set(x, "PhoneNumberPoolCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberPoolCountriesVarargs(value: Country*): Self = StObject.set(x, "PhoneNumberPoolCountries", js.Array(value :_*))
+    inline def setPhoneNumberPoolCountriesVarargs(value: Country*): Self = StObject.set(x, "PhoneNumberPoolCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

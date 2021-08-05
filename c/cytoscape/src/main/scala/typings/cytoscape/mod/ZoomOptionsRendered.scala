@@ -11,16 +11,13 @@ trait ZoomOptionsRendered extends StObject {
 }
 object ZoomOptionsRendered {
   
-  @scala.inline
-  def apply(renderedPosition: Position): ZoomOptionsRendered = {
+  inline def apply(renderedPosition: Position): ZoomOptionsRendered = {
     val __obj = js.Dynamic.literal(renderedPosition = renderedPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOptionsRendered]
   }
   
-  @scala.inline
-  implicit class ZoomOptionsRenderedMutableBuilder[Self <: ZoomOptionsRendered] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomOptionsRendered](x: Self) {
     
-    @scala.inline
-    def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
+    inline def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
   }
 }

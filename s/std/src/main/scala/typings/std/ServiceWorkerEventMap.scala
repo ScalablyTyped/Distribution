@@ -12,16 +12,13 @@ trait ServiceWorkerEventMap
 }
 object ServiceWorkerEventMap {
   
-  @scala.inline
-  def apply(error: ErrorEvent, statechange: Event): ServiceWorkerEventMap = {
+  inline def apply(error: ErrorEvent, statechange: Event): ServiceWorkerEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], statechange = statechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceWorkerEventMap]
   }
   
-  @scala.inline
-  implicit class ServiceWorkerEventMapMutableBuilder[Self <: ServiceWorkerEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceWorkerEventMap](x: Self) {
     
-    @scala.inline
-    def setStatechange(value: Event): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
+    inline def setStatechange(value: Event): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
   }
 }

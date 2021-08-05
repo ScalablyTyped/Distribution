@@ -52,8 +52,7 @@ object iconImageMod {
     ) = this()
   }
   
-  @scala.inline
-  def get(
+  inline def get(
     image: HTMLCanvasElement,
     src: String,
     size: Size,
@@ -61,8 +60,7 @@ object iconImageMod {
     imageState: ImageState,
     color: Color
   ): IconImage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(image.asInstanceOf[js.Any], src.asInstanceOf[js.Any], size.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any], imageState.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[IconImage]
-  @scala.inline
-  def get(
+  inline def get(
     image: HTMLImageElement,
     src: String,
     size: Size,

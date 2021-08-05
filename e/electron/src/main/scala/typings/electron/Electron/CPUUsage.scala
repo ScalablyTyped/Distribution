@@ -20,19 +20,15 @@ trait CPUUsage extends StObject {
 }
 object CPUUsage {
   
-  @scala.inline
-  def apply(idleWakeupsPerSecond: Double, percentCPUUsage: Double): CPUUsage = {
+  inline def apply(idleWakeupsPerSecond: Double, percentCPUUsage: Double): CPUUsage = {
     val __obj = js.Dynamic.literal(idleWakeupsPerSecond = idleWakeupsPerSecond.asInstanceOf[js.Any], percentCPUUsage = percentCPUUsage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CPUUsage]
   }
   
-  @scala.inline
-  implicit class CPUUsageMutableBuilder[Self <: CPUUsage] (val x: Self) extends AnyVal {
+  extension [Self <: CPUUsage](x: Self) {
     
-    @scala.inline
-    def setIdleWakeupsPerSecond(value: Double): Self = StObject.set(x, "idleWakeupsPerSecond", value.asInstanceOf[js.Any])
+    inline def setIdleWakeupsPerSecond(value: Double): Self = StObject.set(x, "idleWakeupsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentCPUUsage(value: Double): Self = StObject.set(x, "percentCPUUsage", value.asInstanceOf[js.Any])
+    inline def setPercentCPUUsage(value: Double): Self = StObject.set(x, "percentCPUUsage", value.asInstanceOf[js.Any])
   }
 }

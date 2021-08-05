@@ -28,8 +28,7 @@ trait CreateDirectoryResponse extends StObject {
 }
 object CreateDirectoryResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AppliedSchemaArn: Arn,
     DirectoryArn: DirectoryArn,
     Name: DirectoryName,
@@ -39,19 +38,14 @@ object CreateDirectoryResponse {
     __obj.asInstanceOf[CreateDirectoryResponse]
   }
   
-  @scala.inline
-  implicit class CreateDirectoryResponseMutableBuilder[Self <: CreateDirectoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDirectoryResponse](x: Self) {
     
-    @scala.inline
-    def setAppliedSchemaArn(value: Arn): Self = StObject.set(x, "AppliedSchemaArn", value.asInstanceOf[js.Any])
+    inline def setAppliedSchemaArn(value: Arn): Self = StObject.set(x, "AppliedSchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryArn(value: DirectoryArn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: DirectoryArn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
+    inline def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait ClientTimestamps extends StObject {
 }
 object ClientTimestamps {
   
-  @scala.inline
-  def apply(lyrics_updated_at: Double, updated_by_human_at: Double): ClientTimestamps = {
+  inline def apply(lyrics_updated_at: Double, updated_by_human_at: Double): ClientTimestamps = {
     val __obj = js.Dynamic.literal(lyrics_updated_at = lyrics_updated_at.asInstanceOf[js.Any], updated_by_human_at = updated_by_human_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientTimestamps]
   }
   
-  @scala.inline
-  implicit class ClientTimestampsMutableBuilder[Self <: ClientTimestamps] (val x: Self) extends AnyVal {
+  extension [Self <: ClientTimestamps](x: Self) {
     
-    @scala.inline
-    def setLyrics_updated_at(value: Double): Self = StObject.set(x, "lyrics_updated_at", value.asInstanceOf[js.Any])
+    inline def setLyrics_updated_at(value: Double): Self = StObject.set(x, "lyrics_updated_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_by_human_at(value: Double): Self = StObject.set(x, "updated_by_human_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_by_human_at(value: Double): Self = StObject.set(x, "updated_by_human_at", value.asInstanceOf[js.Any])
   }
 }

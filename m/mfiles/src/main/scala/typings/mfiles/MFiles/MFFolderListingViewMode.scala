@@ -25,27 +25,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFolderListingViewMode extends StObject
 object MFFolderListingViewMode {
   
-  @scala.inline
-  def Content: `8` = 8.asInstanceOf[`8`]
+  inline def Content: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def Details: `4` = 4.asInstanceOf[`4`]
+  inline def Details: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def Icon: `1` = 1.asInstanceOf[`1`]
+  inline def Icon: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def List: `3` = 3.asInstanceOf[`3`]
+  inline def List: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def SmallIcon: `2` = 2.asInstanceOf[`2`]
+  inline def SmallIcon: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Thumbnail: `5` = 5.asInstanceOf[`5`]
+  inline def Thumbnail: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def Thumbstrip: `7` = 7.asInstanceOf[`7`]
+  inline def Thumbstrip: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def Tile: `6` = 6.asInstanceOf[`6`]
+  inline def Tile: `6` = 6.asInstanceOf[`6`]
 }

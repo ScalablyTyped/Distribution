@@ -18,25 +18,19 @@ trait IButtonConfig extends StObject {
 }
 object IButtonConfig {
   
-  @scala.inline
-  def apply(): IButtonConfig = {
+  inline def apply(): IButtonConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IButtonConfig]
   }
   
-  @scala.inline
-  implicit class IButtonConfigMutableBuilder[Self <: IButtonConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IButtonConfig](x: Self) {
     
-    @scala.inline
-    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+    inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+    inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
     
-    @scala.inline
-    def setToggleEvent(value: String): Self = StObject.set(x, "toggleEvent", value.asInstanceOf[js.Any])
+    inline def setToggleEvent(value: String): Self = StObject.set(x, "toggleEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleEventUndefined: Self = StObject.set(x, "toggleEvent", js.undefined)
+    inline def setToggleEventUndefined: Self = StObject.set(x, "toggleEvent", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsGridLineInterpolationValue extends StObject
 object OptionsGridLineInterpolationValue {
   
-  @scala.inline
-  def circle: typings.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typings.highcharts.highchartsStrings.circle]
+  inline def circle: typings.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typings.highcharts.highchartsStrings.circle]
   
-  @scala.inline
-  def polygon: typings.highcharts.highchartsStrings.polygon = "polygon".asInstanceOf[typings.highcharts.highchartsStrings.polygon]
+  inline def polygon: typings.highcharts.highchartsStrings.polygon = "polygon".asInstanceOf[typings.highcharts.highchartsStrings.polygon]
 }

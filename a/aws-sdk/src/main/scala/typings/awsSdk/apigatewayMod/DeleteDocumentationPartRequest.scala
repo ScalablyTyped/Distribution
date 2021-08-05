@@ -18,19 +18,15 @@ trait DeleteDocumentationPartRequest extends StObject {
 }
 object DeleteDocumentationPartRequest {
   
-  @scala.inline
-  def apply(documentationPartId: String, restApiId: String): DeleteDocumentationPartRequest = {
+  inline def apply(documentationPartId: String, restApiId: String): DeleteDocumentationPartRequest = {
     val __obj = js.Dynamic.literal(documentationPartId = documentationPartId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDocumentationPartRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDocumentationPartRequestMutableBuilder[Self <: DeleteDocumentationPartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDocumentationPartRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentationPartId(value: String): Self = StObject.set(x, "documentationPartId", value.asInstanceOf[js.Any])
+    inline def setDocumentationPartId(value: String): Self = StObject.set(x, "documentationPartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

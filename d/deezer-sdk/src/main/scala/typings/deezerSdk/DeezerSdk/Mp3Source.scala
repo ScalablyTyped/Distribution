@@ -17,22 +17,17 @@ trait Mp3Source extends StObject {
 }
 object Mp3Source {
   
-  @scala.inline
-  def apply(artist: String, title: String, url: String): Mp3Source = {
+  inline def apply(artist: String, title: String, url: String): Mp3Source = {
     val __obj = js.Dynamic.literal(artist = artist.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mp3Source]
   }
   
-  @scala.inline
-  implicit class Mp3SourceMutableBuilder[Self <: Mp3Source] (val x: Self) extends AnyVal {
+  extension [Self <: Mp3Source](x: Self) {
     
-    @scala.inline
-    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+    inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -42,8 +42,7 @@ trait XParagraphCursor
 }
 object XParagraphCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     End: XTextRange,
     Start: XTextRange,
     String: String,
@@ -74,25 +73,18 @@ object XParagraphCursor {
     __obj.asInstanceOf[XParagraphCursor]
   }
   
-  @scala.inline
-  implicit class XParagraphCursorMutableBuilder[Self <: XParagraphCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XParagraphCursor](x: Self) {
     
-    @scala.inline
-    def setGotoEndOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfParagraph", js.Any.fromFunction1(value))
+    inline def setGotoEndOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfParagraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoNextParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextParagraph", js.Any.fromFunction1(value))
+    inline def setGotoNextParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextParagraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoPreviousParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousParagraph", js.Any.fromFunction1(value))
+    inline def setGotoPreviousParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousParagraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoStartOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfParagraph", js.Any.fromFunction1(value))
+    inline def setGotoStartOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfParagraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEndOfParagraph(value: () => Boolean): Self = StObject.set(x, "isEndOfParagraph", js.Any.fromFunction0(value))
+    inline def setIsEndOfParagraph(value: () => Boolean): Self = StObject.set(x, "isEndOfParagraph", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsStartOfParagraph(value: () => Boolean): Self = StObject.set(x, "isStartOfParagraph", js.Any.fromFunction0(value))
+    inline def setIsStartOfParagraph(value: () => Boolean): Self = StObject.set(x, "isStartOfParagraph", js.Any.fromFunction0(value))
   }
 }

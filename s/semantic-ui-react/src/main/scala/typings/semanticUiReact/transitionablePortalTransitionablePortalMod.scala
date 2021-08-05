@@ -80,56 +80,40 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
   }
   object StrictTransitionablePortalProps {
     
-    @scala.inline
-    def apply(): StrictTransitionablePortalProps = {
+    inline def apply(): StrictTransitionablePortalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTransitionablePortalProps]
     }
     
-    @scala.inline
-    implicit class StrictTransitionablePortalPropsMutableBuilder[Self <: StrictTransitionablePortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTransitionablePortalProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: (/* nothing */ Null, /* data */ PortalProps & TransitionablePortalState) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+      inline def setOnClose(value: (/* nothing */ Null, /* data */ PortalProps & TransitionablePortalState) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: (/* nothing */ Null, /* data */ TransitionEventData & TransitionablePortalState) => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
+      inline def setOnHide(value: (/* nothing */ Null, /* data */ TransitionEventData & TransitionablePortalState) => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: (/* nothing */ Null, /* data */ PortalProps & TransitionablePortalState) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
+      inline def setOnOpen(value: (/* nothing */ Null, /* data */ PortalProps & TransitionablePortalState) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: (/* nothing */ Null, /* data */ TransitionEventData & TransitionablePortalState) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
+      inline def setOnStart(value: (/* nothing */ Null, /* data */ TransitionEventData & TransitionablePortalState) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setTransition(value: TransitionProps): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: TransitionProps): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
   
@@ -139,8 +123,7 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object TransitionablePortalProps {
     
-    @scala.inline
-    def apply(): TransitionablePortalProps = {
+    inline def apply(): TransitionablePortalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionablePortalProps]
     }
@@ -154,20 +137,16 @@ object transitionablePortalTransitionablePortalMod extends Shortcut {
   }
   object TransitionablePortalState {
     
-    @scala.inline
-    def apply(portalOpen: Boolean, transitionVisible: Boolean): TransitionablePortalState = {
+    inline def apply(portalOpen: Boolean, transitionVisible: Boolean): TransitionablePortalState = {
       val __obj = js.Dynamic.literal(portalOpen = portalOpen.asInstanceOf[js.Any], transitionVisible = transitionVisible.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionablePortalState]
     }
     
-    @scala.inline
-    implicit class TransitionablePortalStateMutableBuilder[Self <: TransitionablePortalState] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionablePortalState](x: Self) {
       
-      @scala.inline
-      def setPortalOpen(value: Boolean): Self = StObject.set(x, "portalOpen", value.asInstanceOf[js.Any])
+      inline def setPortalOpen(value: Boolean): Self = StObject.set(x, "portalOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionVisible(value: Boolean): Self = StObject.set(x, "transitionVisible", value.asInstanceOf[js.Any])
+      inline def setTransitionVisible(value: Boolean): Self = StObject.set(x, "transitionVisible", value.asInstanceOf[js.Any])
     }
   }
   

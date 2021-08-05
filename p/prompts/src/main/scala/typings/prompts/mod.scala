@@ -12,24 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: String */](questions: js.Array[PromptObject[T]]): js.Promise[Answers[T]] = ^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Answers[T]]]
-  @scala.inline
-  def apply[T /* <: String */](questions: js.Array[PromptObject[T]], options: Options): js.Promise[Answers[T]] = (^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Answers[T]]]
-  @scala.inline
-  def apply[T /* <: String */](questions: PromptObject[T]): js.Promise[Answers[T]] = ^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Answers[T]]]
-  @scala.inline
-  def apply[T /* <: String */](questions: PromptObject[T], options: Options): js.Promise[Answers[T]] = (^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Answers[T]]]
+  inline def apply[T /* <: String */](questions: js.Array[PromptObject[T]]): js.Promise[Answers[T]] = ^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Answers[T]]]
+  inline def apply[T /* <: String */](questions: js.Array[PromptObject[T]], options: Options): js.Promise[Answers[T]] = (^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Answers[T]]]
+  inline def apply[T /* <: String */](questions: PromptObject[T]): js.Promise[Answers[T]] = ^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Answers[T]]]
+  inline def apply[T /* <: String */](questions: PromptObject[T], options: Options): js.Promise[Answers[T]] = (^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Answers[T]]]
   
   @JSImport("prompts", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inject(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def inject(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def `override`(obj: StringDictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def `override`(obj: StringDictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Circular reference from prompts
   @JSImport("prompts", "prompt")
@@ -42,38 +36,27 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def autocomplete(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("autocomplete")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def autocomplete(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("autocomplete")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def confirm(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def confirm(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def date(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def date(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def invisible(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("invisible")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def invisible(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("invisible")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def list(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def list(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def multiselect(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("multiselect")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def multiselect(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("multiselect")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def number(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def number(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def password(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def password(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def select(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def select(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def text(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def text(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def toggle(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def toggle(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type Answers[T /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -95,38 +78,28 @@ object mod {
   }
   object Choice {
     
-    @scala.inline
-    def apply(title: String, value: js.Any): Choice = {
+    inline def apply(title: String, value: js.Any): Choice = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Choice]
     }
     
-    @scala.inline
-    implicit class ChoiceMutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
+    extension [Self <: Choice](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,28 +120,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnCancel(value: (/* prompt */ PromptObject[String], /* answers */ js.Any) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
+      inline def setOnCancel(value: (/* prompt */ PromptObject[String], /* answers */ js.Any) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(
+      inline def setOnSubmit(
         value: (/* prompt */ PromptObject[String], /* answer */ js.Any, /* answers */ js.Array[js.Any]) => Unit
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     }
   }
   
@@ -228,176 +195,122 @@ object mod {
   }
   object PromptObject {
     
-    @scala.inline
-    def apply[T /* <: String */](name: ValueOrFunc[T]): PromptObject[T] = {
+    inline def apply[T /* <: String */](name: ValueOrFunc[T]): PromptObject[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromptObject[T]]
     }
     
-    @scala.inline
-    implicit class PromptObjectMutableBuilder[Self <: PromptObject[?], T /* <: String */] (val x: Self & PromptObject[T]) extends AnyVal {
+    extension [Self <: PromptObject[?], T /* <: String */](x: Self & PromptObject[T]) {
       
-      @scala.inline
-      def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+      inline def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
+      inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
       
-      @scala.inline
-      def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
       
-      @scala.inline
-      def setFloat(value: Boolean): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: Boolean): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+      inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
       
-      @scala.inline
-      def setFormat(value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
+      inline def setFormat(value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+      inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
       
-      @scala.inline
-      def setInactive(value: String): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
+      inline def setInactive(value: String): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
+      inline def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
       
-      @scala.inline
-      def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+      inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
+      inline def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
       
-      @scala.inline
-      def setInitial(value: String | Double | Boolean | Date): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: String | Double | Boolean | Date): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+      inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
       
-      @scala.inline
-      def setInstructions(value: String | Boolean): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+      inline def setInstructions(value: String | Boolean): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
+      inline def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMessage(value: ValueOrFunc[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ValueOrFunc[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageFunction3(
+      inline def setMessageFunction3(
         value: (/* prev */ js.Any, /* values */ Answers[String], /* prompt */ PromptObject[String]) => String
       ): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setName(value: ValueOrFunc[T]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: ValueOrFunc[T]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFunction3(value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => T): Self = StObject.set(x, "name", js.Any.fromFunction3(value))
+      inline def setNameFunction3(value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => T): Self = StObject.set(x, "name", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnState(value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit): Self = StObject.set(x, "onState", js.Any.fromFunction3(value))
+      inline def setOnState(value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit): Self = StObject.set(x, "onState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnStateUndefined: Self = StObject.set(x, "onState", js.undefined)
+      inline def setOnStateUndefined: Self = StObject.set(x, "onState", js.undefined)
       
-      @scala.inline
-      def setRound(value: Double): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: Double): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setStdin(value: Readable): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: Readable): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
       
-      @scala.inline
-      def setStdout(value: Writable): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: Writable): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSuggest(value: (/* input */ js.Any, /* choices */ js.Array[Choice]) => js.Promise[js.Any]): Self = StObject.set(x, "suggest", js.Any.fromFunction2(value))
+      inline def setSuggest(value: (/* input */ js.Any, /* choices */ js.Array[Choice]) => js.Promise[js.Any]): Self = StObject.set(x, "suggest", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
+      inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
       
-      @scala.inline
-      def setType(value: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeFunction3(
+      inline def setTypeFunction3(
         value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => PromptType | Falsy
       ): Self = StObject.set(x, "type", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValidate(
+      inline def setValidate(
         value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Boolean | String | (js.Promise[Boolean | String])
       ): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -418,41 +331,29 @@ object mod {
   trait PromptType extends StObject
   object PromptType {
     
-    @scala.inline
-    def autocomplete: typings.prompts.promptsStrings.autocomplete = "autocomplete".asInstanceOf[typings.prompts.promptsStrings.autocomplete]
+    inline def autocomplete: typings.prompts.promptsStrings.autocomplete = "autocomplete".asInstanceOf[typings.prompts.promptsStrings.autocomplete]
     
-    @scala.inline
-    def autocompleteMultiselect: typings.prompts.promptsStrings.autocompleteMultiselect = "autocompleteMultiselect".asInstanceOf[typings.prompts.promptsStrings.autocompleteMultiselect]
+    inline def autocompleteMultiselect: typings.prompts.promptsStrings.autocompleteMultiselect = "autocompleteMultiselect".asInstanceOf[typings.prompts.promptsStrings.autocompleteMultiselect]
     
-    @scala.inline
-    def confirm: typings.prompts.promptsStrings.confirm = "confirm".asInstanceOf[typings.prompts.promptsStrings.confirm]
+    inline def confirm: typings.prompts.promptsStrings.confirm = "confirm".asInstanceOf[typings.prompts.promptsStrings.confirm]
     
-    @scala.inline
-    def date: typings.prompts.promptsStrings.date = "date".asInstanceOf[typings.prompts.promptsStrings.date]
+    inline def date: typings.prompts.promptsStrings.date = "date".asInstanceOf[typings.prompts.promptsStrings.date]
     
-    @scala.inline
-    def invisible: typings.prompts.promptsStrings.invisible = "invisible".asInstanceOf[typings.prompts.promptsStrings.invisible]
+    inline def invisible: typings.prompts.promptsStrings.invisible = "invisible".asInstanceOf[typings.prompts.promptsStrings.invisible]
     
-    @scala.inline
-    def list: typings.prompts.promptsStrings.list = "list".asInstanceOf[typings.prompts.promptsStrings.list]
+    inline def list: typings.prompts.promptsStrings.list = "list".asInstanceOf[typings.prompts.promptsStrings.list]
     
-    @scala.inline
-    def multiselect: typings.prompts.promptsStrings.multiselect = "multiselect".asInstanceOf[typings.prompts.promptsStrings.multiselect]
+    inline def multiselect: typings.prompts.promptsStrings.multiselect = "multiselect".asInstanceOf[typings.prompts.promptsStrings.multiselect]
     
-    @scala.inline
-    def number: typings.prompts.promptsStrings.number = "number".asInstanceOf[typings.prompts.promptsStrings.number]
+    inline def number: typings.prompts.promptsStrings.number = "number".asInstanceOf[typings.prompts.promptsStrings.number]
     
-    @scala.inline
-    def password: typings.prompts.promptsStrings.password = "password".asInstanceOf[typings.prompts.promptsStrings.password]
+    inline def password: typings.prompts.promptsStrings.password = "password".asInstanceOf[typings.prompts.promptsStrings.password]
     
-    @scala.inline
-    def select: typings.prompts.promptsStrings.select = "select".asInstanceOf[typings.prompts.promptsStrings.select]
+    inline def select: typings.prompts.promptsStrings.select = "select".asInstanceOf[typings.prompts.promptsStrings.select]
     
-    @scala.inline
-    def text: typings.prompts.promptsStrings.text = "text".asInstanceOf[typings.prompts.promptsStrings.text]
+    inline def text: typings.prompts.promptsStrings.text = "text".asInstanceOf[typings.prompts.promptsStrings.text]
     
-    @scala.inline
-    def toggle: typings.prompts.promptsStrings.toggle = "toggle".asInstanceOf[typings.prompts.promptsStrings.toggle]
+    inline def toggle: typings.prompts.promptsStrings.toggle = "toggle".asInstanceOf[typings.prompts.promptsStrings.toggle]
   }
   
   type ValueOrFunc[T /* <: String */] = T | (PrevCaller[T, T])

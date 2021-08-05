@@ -11,8 +11,7 @@ object mod {
     * @param num Any value that should be tested for being a number
     * @returns true if the parameter is a valid number, otherwise false
     */
-  @scala.inline
-  def apply(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("is-number", JSImport.Namespace)
   @js.native

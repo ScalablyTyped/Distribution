@@ -43,16 +43,13 @@ trait MultiFactorError
 }
 object MultiFactorError {
   
-  @scala.inline
-  def apply(code: String, message: String, resolver: MultiFactorResolver): MultiFactorError = {
+  inline def apply(code: String, message: String, resolver: MultiFactorResolver): MultiFactorError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], resolver = resolver.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiFactorError]
   }
   
-  @scala.inline
-  implicit class MultiFactorErrorMutableBuilder[Self <: MultiFactorError] (val x: Self) extends AnyVal {
+  extension [Self <: MultiFactorError](x: Self) {
     
-    @scala.inline
-    def setResolver(value: MultiFactorResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+    inline def setResolver(value: MultiFactorResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait SchemaInstanceGroupManagerStatus extends StObject {
 }
 object SchemaInstanceGroupManagerStatus {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagerStatus = {
+  inline def apply(): SchemaInstanceGroupManagerStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagerStatus]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagerStatusMutableBuilder[Self <: SchemaInstanceGroupManagerStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagerStatus](x: Self) {
     
-    @scala.inline
-    def setIsStable(value: Boolean): Self = StObject.set(x, "isStable", value.asInstanceOf[js.Any])
+    inline def setIsStable(value: Boolean): Self = StObject.set(x, "isStable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStableUndefined: Self = StObject.set(x, "isStable", js.undefined)
+    inline def setIsStableUndefined: Self = StObject.set(x, "isStable", js.undefined)
   }
 }

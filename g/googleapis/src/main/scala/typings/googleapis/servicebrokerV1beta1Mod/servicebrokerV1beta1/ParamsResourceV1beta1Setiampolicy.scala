@@ -30,31 +30,23 @@ trait ParamsResourceV1beta1Setiampolicy
 }
 object ParamsResourceV1beta1Setiampolicy {
   
-  @scala.inline
-  def apply(): ParamsResourceV1beta1Setiampolicy = {
+  inline def apply(): ParamsResourceV1beta1Setiampolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceV1beta1Setiampolicy]
   }
   
-  @scala.inline
-  implicit class ParamsResourceV1beta1SetiampolicyMutableBuilder[Self <: ParamsResourceV1beta1Setiampolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceV1beta1Setiampolicy](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaGoogleIamV1SetIamPolicyRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaGoogleIamV1SetIamPolicyRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

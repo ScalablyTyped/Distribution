@@ -30,44 +30,32 @@ object mod extends Shortcut {
   }
   object AutoBreadcrumbOptions {
     
-    @scala.inline
-    def apply(): AutoBreadcrumbOptions = {
+    inline def apply(): AutoBreadcrumbOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoBreadcrumbOptions]
     }
     
-    @scala.inline
-    implicit class AutoBreadcrumbOptionsMutableBuilder[Self <: AutoBreadcrumbOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AutoBreadcrumbOptions](x: Self) {
       
-      @scala.inline
-      def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+      inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
       
-      @scala.inline
-      def setDom(value: Boolean): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: Boolean): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
+      inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setSentry(value: Boolean): Self = StObject.set(x, "sentry", value.asInstanceOf[js.Any])
+      inline def setSentry(value: Boolean): Self = StObject.set(x, "sentry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentryUndefined: Self = StObject.set(x, "sentry", js.undefined)
+      inline def setSentryUndefined: Self = StObject.set(x, "sentry", js.undefined)
       
-      @scala.inline
-      def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
   
@@ -85,44 +73,32 @@ object mod extends Shortcut {
   }
   object Breadcrumb {
     
-    @scala.inline
-    def apply(): Breadcrumb = {
+    inline def apply(): Breadcrumb = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Breadcrumb]
     }
     
-    @scala.inline
-    implicit class BreadcrumbMutableBuilder[Self <: Breadcrumb] (val x: Self) extends AnyVal {
+    extension [Self <: Breadcrumb](x: Self) {
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setType(value: BreadcrumbType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: BreadcrumbType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -133,11 +109,9 @@ object mod extends Shortcut {
   trait BreadcrumbType extends StObject
   object BreadcrumbType {
     
-    @scala.inline
-    def http: typings.ravenJs.ravenJsStrings.http = "http".asInstanceOf[typings.ravenJs.ravenJsStrings.http]
+    inline def http: typings.ravenJs.ravenJsStrings.http = "http".asInstanceOf[typings.ravenJs.ravenJsStrings.http]
     
-    @scala.inline
-    def navigation: typings.ravenJs.ravenJsStrings.navigation = "navigation".asInstanceOf[typings.ravenJs.ravenJsStrings.navigation]
+    inline def navigation: typings.ravenJs.ravenJsStrings.navigation = "navigation".asInstanceOf[typings.ravenJs.ravenJsStrings.navigation]
   }
   
   /** Event/Breadcrumb Severity. `critical` is for Breadcrumbs only and `fatal` is for Events only. */
@@ -154,29 +128,21 @@ object mod extends Shortcut {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def critical: typings.ravenJs.ravenJsStrings.critical = "critical".asInstanceOf[typings.ravenJs.ravenJsStrings.critical]
+    inline def critical: typings.ravenJs.ravenJsStrings.critical = "critical".asInstanceOf[typings.ravenJs.ravenJsStrings.critical]
     
-    @scala.inline
-    def debug: typings.ravenJs.ravenJsStrings.debug = "debug".asInstanceOf[typings.ravenJs.ravenJsStrings.debug]
+    inline def debug: typings.ravenJs.ravenJsStrings.debug = "debug".asInstanceOf[typings.ravenJs.ravenJsStrings.debug]
     
-    @scala.inline
-    def error: typings.ravenJs.ravenJsStrings.error = "error".asInstanceOf[typings.ravenJs.ravenJsStrings.error]
+    inline def error: typings.ravenJs.ravenJsStrings.error = "error".asInstanceOf[typings.ravenJs.ravenJsStrings.error]
     
-    @scala.inline
-    def fatal: typings.ravenJs.ravenJsStrings.fatal = "fatal".asInstanceOf[typings.ravenJs.ravenJsStrings.fatal]
+    inline def fatal: typings.ravenJs.ravenJsStrings.fatal = "fatal".asInstanceOf[typings.ravenJs.ravenJsStrings.fatal]
     
-    @scala.inline
-    def info: typings.ravenJs.ravenJsStrings.info = "info".asInstanceOf[typings.ravenJs.ravenJsStrings.info]
+    inline def info: typings.ravenJs.ravenJsStrings.info = "info".asInstanceOf[typings.ravenJs.ravenJsStrings.info]
     
-    @scala.inline
-    def log: typings.ravenJs.ravenJsStrings.log = "log".asInstanceOf[typings.ravenJs.ravenJsStrings.log]
+    inline def log: typings.ravenJs.ravenJsStrings.log = "log".asInstanceOf[typings.ravenJs.ravenJsStrings.log]
     
-    @scala.inline
-    def warn: typings.ravenJs.ravenJsStrings.warn = "warn".asInstanceOf[typings.ravenJs.ravenJsStrings.warn]
+    inline def warn: typings.ravenJs.ravenJsStrings.warn = "warn".asInstanceOf[typings.ravenJs.ravenJsStrings.warn]
     
-    @scala.inline
-    def warning: typings.ravenJs.ravenJsStrings.warning = "warning".asInstanceOf[typings.ravenJs.ravenJsStrings.warning]
+    inline def warning: typings.ravenJs.ravenJsStrings.warning = "warning".asInstanceOf[typings.ravenJs.ravenJsStrings.warning]
   }
   
   type RavenCallback = js.Function2[
@@ -191,20 +157,16 @@ object mod extends Shortcut {
   }
   object RavenInstrumentationOptions {
     
-    @scala.inline
-    def apply(): RavenInstrumentationOptions = {
+    inline def apply(): RavenInstrumentationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RavenInstrumentationOptions]
     }
     
-    @scala.inline
-    implicit class RavenInstrumentationOptionsMutableBuilder[Self <: RavenInstrumentationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RavenInstrumentationOptions](x: Self) {
       
-      @scala.inline
-      def setTryCatch(value: Boolean): Self = StObject.set(x, "tryCatch", value.asInstanceOf[js.Any])
+      inline def setTryCatch(value: Boolean): Self = StObject.set(x, "tryCatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTryCatchUndefined: Self = StObject.set(x, "tryCatch", js.undefined)
+      inline def setTryCatchUndefined: Self = StObject.set(x, "tryCatch", js.undefined)
     }
   }
   
@@ -309,212 +271,144 @@ object mod extends Shortcut {
   }
   object RavenOptions {
     
-    @scala.inline
-    def apply(): RavenOptions = {
+    inline def apply(): RavenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RavenOptions]
     }
     
-    @scala.inline
-    implicit class RavenOptionsMutableBuilder[Self <: RavenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RavenOptions](x: Self) {
       
-      @scala.inline
-      def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
+      inline def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDuplicatesUndefined: Self = StObject.set(x, "allowDuplicates", js.undefined)
+      inline def setAllowDuplicatesUndefined: Self = StObject.set(x, "allowDuplicates", js.undefined)
       
-      @scala.inline
-      def setAllowSecretKey(value: Boolean): Self = StObject.set(x, "allowSecretKey", value.asInstanceOf[js.Any])
+      inline def setAllowSecretKey(value: Boolean): Self = StObject.set(x, "allowSecretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSecretKeyUndefined: Self = StObject.set(x, "allowSecretKey", js.undefined)
+      inline def setAllowSecretKeyUndefined: Self = StObject.set(x, "allowSecretKey", js.undefined)
       
-      @scala.inline
-      def setAutoBreadcrumbs(value: Boolean | AutoBreadcrumbOptions): Self = StObject.set(x, "autoBreadcrumbs", value.asInstanceOf[js.Any])
+      inline def setAutoBreadcrumbs(value: Boolean | AutoBreadcrumbOptions): Self = StObject.set(x, "autoBreadcrumbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoBreadcrumbsUndefined: Self = StObject.set(x, "autoBreadcrumbs", js.undefined)
+      inline def setAutoBreadcrumbsUndefined: Self = StObject.set(x, "autoBreadcrumbs", js.undefined)
       
-      @scala.inline
-      def setBreadcrumbCallback(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "breadcrumbCallback", js.Any.fromFunction1(value))
+      inline def setBreadcrumbCallback(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "breadcrumbCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBreadcrumbCallbackUndefined: Self = StObject.set(x, "breadcrumbCallback", js.undefined)
+      inline def setBreadcrumbCallbackUndefined: Self = StObject.set(x, "breadcrumbCallback", js.undefined)
       
-      @scala.inline
-      def setCaptureUnhandledRejections(value: Boolean): Self = StObject.set(x, "captureUnhandledRejections", value.asInstanceOf[js.Any])
+      inline def setCaptureUnhandledRejections(value: Boolean): Self = StObject.set(x, "captureUnhandledRejections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUnhandledRejectionsUndefined: Self = StObject.set(x, "captureUnhandledRejections", js.undefined)
+      inline def setCaptureUnhandledRejectionsUndefined: Self = StObject.set(x, "captureUnhandledRejections", js.undefined)
       
-      @scala.inline
-      def setDataCallback(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
+      inline def setDataCallback(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataCallbackUndefined: Self = StObject.set(x, "dataCallback", js.undefined)
+      inline def setDataCallbackUndefined: Self = StObject.set(x, "dataCallback", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setFetchParameters(value: StringDictionary[String | js.Function]): Self = StObject.set(x, "fetchParameters", value.asInstanceOf[js.Any])
+      inline def setFetchParameters(value: StringDictionary[String | js.Function]): Self = StObject.set(x, "fetchParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchParametersUndefined: Self = StObject.set(x, "fetchParameters", js.undefined)
+      inline def setFetchParametersUndefined: Self = StObject.set(x, "fetchParameters", js.undefined)
       
-      @scala.inline
-      def setFingerprint(value: js.Array[String]): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: js.Array[String]): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+      inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
       
-      @scala.inline
-      def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value :_*))
+      inline def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String | js.Function]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String | js.Function]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIgnoreErrors(value: js.Array[RegExp | String]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      inline def setIgnoreErrors(value: js.Array[RegExp | String]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+      inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
       
-      @scala.inline
-      def setIgnoreErrorsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "ignoreErrors", js.Array(value :_*))
+      inline def setIgnoreErrorsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "ignoreErrors", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreUrls(value: js.Array[RegExp | String]): Self = StObject.set(x, "ignoreUrls", value.asInstanceOf[js.Any])
+      inline def setIgnoreUrls(value: js.Array[RegExp | String]): Self = StObject.set(x, "ignoreUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUrlsUndefined: Self = StObject.set(x, "ignoreUrls", js.undefined)
+      inline def setIgnoreUrlsUndefined: Self = StObject.set(x, "ignoreUrls", js.undefined)
       
-      @scala.inline
-      def setIgnoreUrlsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "ignoreUrls", js.Array(value :_*))
+      inline def setIgnoreUrlsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "ignoreUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludePaths(value: js.Array[RegExp | String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
+      inline def setIncludePaths(value: js.Array[RegExp | String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
+      inline def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
       
-      @scala.inline
-      def setIncludePathsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
+      inline def setIncludePathsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setInstrument(value: Boolean | RavenInstrumentationOptions): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
+      inline def setInstrument(value: Boolean | RavenInstrumentationOptions): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstrumentUndefined: Self = StObject.set(x, "instrument", js.undefined)
+      inline def setInstrumentUndefined: Self = StObject.set(x, "instrument", js.undefined)
       
-      @scala.inline
-      def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setLogger(value: String): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: String): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setMaxBreadcrumbs(value: Double): Self = StObject.set(x, "maxBreadcrumbs", value.asInstanceOf[js.Any])
+      inline def setMaxBreadcrumbs(value: Double): Self = StObject.set(x, "maxBreadcrumbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBreadcrumbsUndefined: Self = StObject.set(x, "maxBreadcrumbs", js.undefined)
+      inline def setMaxBreadcrumbsUndefined: Self = StObject.set(x, "maxBreadcrumbs", js.undefined)
       
-      @scala.inline
-      def setMaxMessageLength(value: Double): Self = StObject.set(x, "maxMessageLength", value.asInstanceOf[js.Any])
+      inline def setMaxMessageLength(value: Double): Self = StObject.set(x, "maxMessageLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMessageLengthUndefined: Self = StObject.set(x, "maxMessageLength", js.undefined)
+      inline def setMaxMessageLengthUndefined: Self = StObject.set(x, "maxMessageLength", js.undefined)
       
-      @scala.inline
-      def setMaxUrlLength(value: Double): Self = StObject.set(x, "maxUrlLength", value.asInstanceOf[js.Any])
+      inline def setMaxUrlLength(value: Double): Self = StObject.set(x, "maxUrlLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUrlLengthUndefined: Self = StObject.set(x, "maxUrlLength", js.undefined)
+      inline def setMaxUrlLengthUndefined: Self = StObject.set(x, "maxUrlLength", js.undefined)
       
-      @scala.inline
-      def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
       
-      @scala.inline
-      def setSanitizeKeys(value: js.Array[RegExp | String]): Self = StObject.set(x, "sanitizeKeys", value.asInstanceOf[js.Any])
+      inline def setSanitizeKeys(value: js.Array[RegExp | String]): Self = StObject.set(x, "sanitizeKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSanitizeKeysUndefined: Self = StObject.set(x, "sanitizeKeys", js.undefined)
+      inline def setSanitizeKeysUndefined: Self = StObject.set(x, "sanitizeKeys", js.undefined)
       
-      @scala.inline
-      def setSanitizeKeysVarargs(value: (RegExp | String)*): Self = StObject.set(x, "sanitizeKeys", js.Array(value :_*))
+      inline def setSanitizeKeysVarargs(value: (RegExp | String)*): Self = StObject.set(x, "sanitizeKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setServerName(value: String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
+      inline def setServerName(value: String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
+      inline def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
       
-      @scala.inline
-      def setShouldSendCallback(value: /* data */ js.Any => Boolean): Self = StObject.set(x, "shouldSendCallback", js.Any.fromFunction1(value))
+      inline def setShouldSendCallback(value: /* data */ js.Any => Boolean): Self = StObject.set(x, "shouldSendCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldSendCallbackUndefined: Self = StObject.set(x, "shouldSendCallback", js.undefined)
+      inline def setShouldSendCallbackUndefined: Self = StObject.set(x, "shouldSendCallback", js.undefined)
       
-      @scala.inline
-      def setStacktrace(value: Boolean): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
+      inline def setStacktrace(value: Boolean): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStacktraceUndefined: Self = StObject.set(x, "stacktrace", js.undefined)
+      inline def setStacktraceUndefined: Self = StObject.set(x, "stacktrace", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransport(value: /* options */ RavenTransportOptions => Unit): Self = StObject.set(x, "transport", js.Any.fromFunction1(value))
+      inline def setTransport(value: /* options */ RavenTransportOptions => Unit): Self = StObject.set(x, "transport", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
-      @scala.inline
-      def setWhitelistUrls(value: js.Array[RegExp | String]): Self = StObject.set(x, "whitelistUrls", value.asInstanceOf[js.Any])
+      inline def setWhitelistUrls(value: js.Array[RegExp | String]): Self = StObject.set(x, "whitelistUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUrlsUndefined: Self = StObject.set(x, "whitelistUrls", js.undefined)
+      inline def setWhitelistUrlsUndefined: Self = StObject.set(x, "whitelistUrls", js.undefined)
       
-      @scala.inline
-      def setWhitelistUrlsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "whitelistUrls", js.Array(value :_*))
+      inline def setWhitelistUrlsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "whitelistUrls", js.Array(value :_*))
     }
   }
   
@@ -716,8 +610,7 @@ object mod extends Shortcut {
   }
   object RavenTransportOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auth: Sentryclient,
       data: js.Any,
       onError: ErrorrequestXMLHttpReques => Unit,
@@ -728,23 +621,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RavenTransportOptions]
     }
     
-    @scala.inline
-    implicit class RavenTransportOptionsMutableBuilder[Self <: RavenTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RavenTransportOptions](x: Self) {
       
-      @scala.inline
-      def setAuth(value: Sentryclient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Sentryclient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnError(value: ErrorrequestXMLHttpReques => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: ErrorrequestXMLHttpReques => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
+      inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

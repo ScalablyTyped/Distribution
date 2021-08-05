@@ -13,7 +13,7 @@ object innerSubscriptionGroupMod {
     extends StObject
        with IDisposable {
     
-    var _container: js.Any = js.native
+    /* private */ var _container: js.Any = js.native
     
     def addChild(child: IDisposable): Unit = js.native
     
@@ -27,7 +27,6 @@ object innerSubscriptionGroupMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): InnerSubscriptionGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[InnerSubscriptionGroup]
+    inline def create(): InnerSubscriptionGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[InnerSubscriptionGroup]
   }
 }

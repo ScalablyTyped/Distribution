@@ -12,28 +12,21 @@ trait MessageAcceptOptions extends StObject {
 }
 object MessageAcceptOptions {
   
-  @scala.inline
-  def apply(): MessageAcceptOptions = {
+  inline def apply(): MessageAcceptOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageAcceptOptions]
   }
   
-  @scala.inline
-  implicit class MessageAcceptOptionsMutableBuilder[Self <: MessageAcceptOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessageAcceptOptions](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+    inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+    inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
-    @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+    inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
   }
 }

@@ -28,34 +28,25 @@ trait SchemaBeaconInfo extends StObject {
 }
 object SchemaBeaconInfo {
   
-  @scala.inline
-  def apply(): SchemaBeaconInfo = {
+  inline def apply(): SchemaBeaconInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBeaconInfo]
   }
   
-  @scala.inline
-  implicit class SchemaBeaconInfoMutableBuilder[Self <: SchemaBeaconInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBeaconInfo](x: Self) {
     
-    @scala.inline
-    def setAdvertisedId(value: SchemaAdvertisedId): Self = StObject.set(x, "advertisedId", value.asInstanceOf[js.Any])
+    inline def setAdvertisedId(value: SchemaAdvertisedId): Self = StObject.set(x, "advertisedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisedIdUndefined: Self = StObject.set(x, "advertisedId", js.undefined)
+    inline def setAdvertisedIdUndefined: Self = StObject.set(x, "advertisedId", js.undefined)
     
-    @scala.inline
-    def setAttachments(value: js.Array[SchemaAttachmentInfo]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[SchemaAttachmentInfo]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: SchemaAttachmentInfo*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: SchemaAttachmentInfo*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
+    inline def setBeaconName(value: String): Self = StObject.set(x, "beaconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
+    inline def setBeaconNameUndefined: Self = StObject.set(x, "beaconName", js.undefined)
   }
 }

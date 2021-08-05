@@ -20,29 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UnaryLike extends StObject
 object UnaryLike {
   
-  @scala.inline
-  def RestProperty_(argument: LVal, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.RestProperty_ = {
+  inline def RestProperty_(argument: LVal, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.RestProperty_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RestProperty")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.RestProperty_]
   }
   
-  @scala.inline
-  def SpreadElement_(argument: Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.SpreadElement_ = {
+  inline def SpreadElement_(argument: Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.SpreadElement_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SpreadElement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.SpreadElement_]
   }
   
-  @scala.inline
-  def SpreadProperty_(argument: Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.SpreadProperty_ = {
+  inline def SpreadProperty_(argument: Expression, end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.SpreadProperty_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SpreadProperty")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.SpreadProperty_]
   }
   
-  @scala.inline
-  def UnaryExpression_(
+  inline def UnaryExpression_(
     argument: Expression,
     end: Double,
     loc: SourceLocation,

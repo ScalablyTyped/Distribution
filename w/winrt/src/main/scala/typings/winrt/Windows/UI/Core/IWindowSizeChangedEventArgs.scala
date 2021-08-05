@@ -13,16 +13,13 @@ trait IWindowSizeChangedEventArgs
 }
 object IWindowSizeChangedEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, size: Size): IWindowSizeChangedEventArgs = {
+  inline def apply(handled: Boolean, size: Size): IWindowSizeChangedEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWindowSizeChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class IWindowSizeChangedEventArgsMutableBuilder[Self <: IWindowSizeChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IWindowSizeChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait ChartDateTimeRule extends StObject {
 }
 object ChartDateTimeRule {
   
-  @scala.inline
-  def apply(): ChartDateTimeRule = {
+  inline def apply(): ChartDateTimeRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartDateTimeRule]
   }
   
-  @scala.inline
-  implicit class ChartDateTimeRuleMutableBuilder[Self <: ChartDateTimeRule] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDateTimeRule](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

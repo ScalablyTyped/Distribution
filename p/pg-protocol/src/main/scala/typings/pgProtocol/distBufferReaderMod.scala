@@ -12,7 +12,7 @@ object distBufferReaderMod {
   class BufferReader () extends StObject {
     def this(offset: Double) = this()
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
     def byte(): Double = js.native
     
@@ -20,13 +20,13 @@ object distBufferReaderMod {
     
     def cstring(): String = js.native
     
-    var encoding: js.Any = js.native
+    /* private */ var encoding: js.Any = js.native
     
     def int16(): Double = js.native
     
     def int32(): Double = js.native
     
-    var offset: js.Any = js.native
+    /* private */ var offset: js.Any = js.native
     
     def setBuffer(offset: Double, buffer: Buffer): Unit = js.native
     

@@ -11,16 +11,13 @@ trait TakePhotoSuccessCallbackResult extends StObject {
 }
 object TakePhotoSuccessCallbackResult {
   
-  @scala.inline
-  def apply(tempImagePath: String): TakePhotoSuccessCallbackResult = {
+  inline def apply(tempImagePath: String): TakePhotoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(tempImagePath = tempImagePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[TakePhotoSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class TakePhotoSuccessCallbackResultMutableBuilder[Self <: TakePhotoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: TakePhotoSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setTempImagePath(value: String): Self = StObject.set(x, "tempImagePath", value.asInstanceOf[js.Any])
+    inline def setTempImagePath(value: String): Self = StObject.set(x, "tempImagePath", value.asInstanceOf[js.Any])
   }
 }

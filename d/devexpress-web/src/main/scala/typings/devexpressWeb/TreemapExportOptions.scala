@@ -23,19 +23,15 @@ trait TreemapExportOptions extends StObject {
 }
 object TreemapExportOptions {
   
-  @scala.inline
-  def apply(AutomaticPageLayout: Boolean, SizeMode: String): TreemapExportOptions = {
+  inline def apply(AutomaticPageLayout: Boolean, SizeMode: String): TreemapExportOptions = {
     val __obj = js.Dynamic.literal(AutomaticPageLayout = AutomaticPageLayout.asInstanceOf[js.Any], SizeMode = SizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreemapExportOptions]
   }
   
-  @scala.inline
-  implicit class TreemapExportOptionsMutableBuilder[Self <: TreemapExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TreemapExportOptions](x: Self) {
     
-    @scala.inline
-    def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
+    inline def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeMode(value: String): Self = StObject.set(x, "SizeMode", value.asInstanceOf[js.Any])
+    inline def setSizeMode(value: String): Self = StObject.set(x, "SizeMode", value.asInstanceOf[js.Any])
   }
 }

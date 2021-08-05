@@ -23,8 +23,7 @@ trait XDatabaseEnvironment
 }
 object XDatabaseEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LoginTimeout: Double,
     acquire: () => Unit,
     createDatabaseAccess: (String, String) => XDatabaseAccess,
@@ -40,13 +39,10 @@ object XDatabaseEnvironment {
     __obj.asInstanceOf[XDatabaseEnvironment]
   }
   
-  @scala.inline
-  implicit class XDatabaseEnvironmentMutableBuilder[Self <: XDatabaseEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: XDatabaseEnvironment](x: Self) {
     
-    @scala.inline
-    def setCreateDatabaseAccess(value: (String, String) => XDatabaseAccess): Self = StObject.set(x, "createDatabaseAccess", js.Any.fromFunction2(value))
+    inline def setCreateDatabaseAccess(value: (String, String) => XDatabaseAccess): Self = StObject.set(x, "createDatabaseAccess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDatabaseAccess(value: String => XDatabaseAccess): Self = StObject.set(x, "getDatabaseAccess", js.Any.fromFunction1(value))
+    inline def setGetDatabaseAccess(value: String => XDatabaseAccess): Self = StObject.set(x, "getDatabaseAccess", js.Any.fromFunction1(value))
   }
 }

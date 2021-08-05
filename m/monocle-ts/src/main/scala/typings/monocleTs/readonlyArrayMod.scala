@@ -11,6 +11,5 @@ object readonlyArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def indexReadonlyArray[A](): Index_[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyArray")().asInstanceOf[Index_[js.Array[A], Double, A]]
+  inline def indexReadonlyArray[A](): Index_[js.Array[A], Double, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexReadonlyArray")().asInstanceOf[Index_[js.Array[A], Double, A]]
 }

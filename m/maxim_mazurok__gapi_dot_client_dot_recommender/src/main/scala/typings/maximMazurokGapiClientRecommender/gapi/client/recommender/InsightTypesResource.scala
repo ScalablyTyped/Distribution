@@ -10,16 +10,13 @@ trait InsightTypesResource extends StObject {
 }
 object InsightTypesResource {
   
-  @scala.inline
-  def apply(insights: InsightsResource): InsightTypesResource = {
+  inline def apply(insights: InsightsResource): InsightTypesResource = {
     val __obj = js.Dynamic.literal(insights = insights.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightTypesResource]
   }
   
-  @scala.inline
-  implicit class InsightTypesResourceMutableBuilder[Self <: InsightTypesResource] (val x: Self) extends AnyVal {
+  extension [Self <: InsightTypesResource](x: Self) {
     
-    @scala.inline
-    def setInsights(value: InsightsResource): Self = StObject.set(x, "insights", value.asInstanceOf[js.Any])
+    inline def setInsights(value: InsightsResource): Self = StObject.set(x, "insights", value.asInstanceOf[js.Any])
   }
 }

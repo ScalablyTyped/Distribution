@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TaskPane")
 @js.native
-class TaskPane protected ()
+/* private */ class TaskPane ()
   extends StObject
      with typings.activexWord.Word.TaskPane {
   
@@ -22,7 +22,7 @@ class TaskPane protected ()
   /* CompleteClass */
   var Visible: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TaskPane_typekey")
   var WordDotTaskPane_typekey: typings.activexWord.Word.TaskPane = js.native
 }

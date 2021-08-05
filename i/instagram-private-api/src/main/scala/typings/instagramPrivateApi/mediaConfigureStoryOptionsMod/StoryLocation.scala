@@ -14,8 +14,7 @@ trait StoryLocation
 }
 object StoryLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     is_sticker: Boolean,
     location_id: String,
@@ -28,13 +27,10 @@ object StoryLocation {
     __obj.asInstanceOf[StoryLocation]
   }
   
-  @scala.inline
-  implicit class StoryLocationMutableBuilder[Self <: StoryLocation] (val x: Self) extends AnyVal {
+  extension [Self <: StoryLocation](x: Self) {
     
-    @scala.inline
-    def setIs_sticker(value: Boolean): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
+    inline def setIs_sticker(value: Boolean): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation_id(value: String): Self = StObject.set(x, "location_id", value.asInstanceOf[js.Any])
+    inline def setLocation_id(value: String): Self = StObject.set(x, "location_id", value.asInstanceOf[js.Any])
   }
 }

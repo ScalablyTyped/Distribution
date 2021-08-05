@@ -21,9 +21,9 @@ object fileTransferMod {
     def this(host: String, port: Double, timeout: Double) = this()
     def this(host: String, port: Unit, timeout: Double) = this()
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    var bytesreceived: js.Any = js.native
+    /* private */ var bytesreceived: js.Any = js.native
     
     /**
       * Starts the download of a File
@@ -32,18 +32,18 @@ object fileTransferMod {
       */
     def download(ftkey: String, size: Double): js.Promise[Buffer] = js.native
     
-    var host: js.Any = js.native
+    /* private */ var host: js.Any = js.native
     
     /**
       * connects to the File Transfer Server
       * @param ftkey the Filetransfer Key
       * @returns returns a Promise Object with the socket
       */
-    var init: js.Any = js.native
+    /* private */ var init: js.Any = js.native
     
-    var port: js.Any = js.native
+    /* private */ var port: js.Any = js.native
     
-    var timeout: js.Any = js.native
+    /* private */ var timeout: js.Any = js.native
     
     /**
       * starts the upload of a File

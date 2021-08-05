@@ -51,20 +51,16 @@ object interfacesMod {
   }
   object RequestArgs {
     
-    @scala.inline
-    def apply(): RequestArgs = {
+    inline def apply(): RequestArgs = {
       val __obj = js.Dynamic.literal(url = null)
       __obj.asInstanceOf[RequestArgs]
     }
     
-    @scala.inline
-    implicit class RequestArgsMutableBuilder[Self <: RequestArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RequestArgs](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlNull: Self = StObject.set(x, "url", null)
+      inline def setUrlNull: Self = StObject.set(x, "url", null)
     }
   }
   
@@ -89,83 +85,58 @@ object interfacesMod {
   }
   object RequestOptionsArgs {
     
-    @scala.inline
-    def apply(): RequestOptionsArgs = {
+    inline def apply(): RequestOptionsArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestOptionsArgs]
     }
     
-    @scala.inline
-    implicit class RequestOptionsArgsMutableBuilder[Self <: RequestOptionsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOptionsArgs](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersNull: Self = StObject.set(x, "headers", null)
+      inline def setHeadersNull: Self = StObject.set(x, "headers", null)
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String | RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String | RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodNull: Self = StObject.set(x, "method", null)
+      inline def setMethodNull: Self = StObject.set(x, "method", null)
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setParams(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsNull: Self = StObject.set(x, "params", null)
+      inline def setParamsNull: Self = StObject.set(x, "params", null)
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: ResponseContentType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: ResponseContentType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTypeNull: Self = StObject.set(x, "responseType", null)
+      inline def setResponseTypeNull: Self = StObject.set(x, "responseType", null)
       
-      @scala.inline
-      def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      @scala.inline
-      def setSearch(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]])): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]])): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchNull: Self = StObject.set(x, "search", null)
+      inline def setSearchNull: Self = StObject.set(x, "search", null)
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlNull: Self = StObject.set(x, "url", null)
+      inline def setUrlNull: Self = StObject.set(x, "url", null)
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsNull: Self = StObject.set(x, "withCredentials", null)
+      inline def setWithCredentialsNull: Self = StObject.set(x, "withCredentials", null)
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   
@@ -185,68 +156,48 @@ object interfacesMod {
   }
   object ResponseOptionsArgs {
     
-    @scala.inline
-    def apply(): ResponseOptionsArgs = {
+    inline def apply(): ResponseOptionsArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponseOptionsArgs]
     }
     
-    @scala.inline
-    implicit class ResponseOptionsArgsMutableBuilder[Self <: ResponseOptionsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseOptionsArgs](x: Self) {
       
-      @scala.inline
-      def setBody(value: String | js.Object | FormData | ArrayBuffer | Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | js.Object | FormData | ArrayBuffer | Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersNull: Self = StObject.set(x, "headers", null)
+      inline def setHeadersNull: Self = StObject.set(x, "headers", null)
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusNull: Self = StObject.set(x, "status", null)
+      inline def setStatusNull: Self = StObject.set(x, "status", null)
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusTextNull: Self = StObject.set(x, "statusText", null)
+      inline def setStatusTextNull: Self = StObject.set(x, "statusText", null)
       
-      @scala.inline
-      def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+      inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setType(value: ResponseType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ResponseType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlNull: Self = StObject.set(x, "url", null)
+      inline def setUrlNull: Self = StObject.set(x, "url", null)
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

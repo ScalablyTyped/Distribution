@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RouteOptionsAccessEntity extends StObject
 object RouteOptionsAccessEntity {
   
-  @scala.inline
-  def any: typings.hapi.hapiStrings.any = "any".asInstanceOf[typings.hapi.hapiStrings.any]
+  inline def any: typings.hapi.hapiStrings.any = "any".asInstanceOf[typings.hapi.hapiStrings.any]
   
-  @scala.inline
-  def app: typings.hapi.hapiStrings.app = "app".asInstanceOf[typings.hapi.hapiStrings.app]
+  inline def app: typings.hapi.hapiStrings.app = "app".asInstanceOf[typings.hapi.hapiStrings.app]
   
-  @scala.inline
-  def user: typings.hapi.hapiStrings.user = "user".asInstanceOf[typings.hapi.hapiStrings.user]
+  inline def user: typings.hapi.hapiStrings.user = "user".asInstanceOf[typings.hapi.hapiStrings.user]
 }

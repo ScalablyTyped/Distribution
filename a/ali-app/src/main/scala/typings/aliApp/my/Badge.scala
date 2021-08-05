@@ -30,23 +30,18 @@ trait Badge extends StObject {
 }
 object Badge {
   
-  @scala.inline
-  def apply(index: Double, text: String, `type`: none | point | num | text | more | String): Badge = {
+  inline def apply(index: Double, text: String, `type`: none | point | num | text | more | String): Badge = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Badge]
   }
   
-  @scala.inline
-  implicit class BadgeMutableBuilder[Self <: Badge] (val x: Self) extends AnyVal {
+  extension [Self <: Badge](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: none | point | num | text | more | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: none | point | num | text | more | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

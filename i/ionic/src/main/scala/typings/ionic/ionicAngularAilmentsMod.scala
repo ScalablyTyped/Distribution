@@ -48,7 +48,7 @@ object ionicAngularAilmentsMod {
   abstract class IonicAngularAilment protected () extends Ailment {
     def this(deps: IonicAngularAilmentDeps) = this()
     
-    @JSName("project")
+    /* protected */ @JSName("project")
     val project_IonicAngularAilment: IonicAngularProject = js.native
     
     @JSName("projects")
@@ -108,8 +108,7 @@ object ionicAngularAilmentsMod {
   }
   object IonicAngularAilmentDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client: IClient,
       config: IConfig,
       log: ILogger,
@@ -121,11 +120,9 @@ object ionicAngularAilmentsMod {
       __obj.asInstanceOf[IonicAngularAilmentDeps]
     }
     
-    @scala.inline
-    implicit class IonicAngularAilmentDepsMutableBuilder[Self <: IonicAngularAilmentDeps] (val x: Self) extends AnyVal {
+    extension [Self <: IonicAngularAilmentDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

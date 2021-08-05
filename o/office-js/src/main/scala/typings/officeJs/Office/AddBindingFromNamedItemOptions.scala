@@ -21,25 +21,19 @@ trait AddBindingFromNamedItemOptions extends StObject {
 }
 object AddBindingFromNamedItemOptions {
   
-  @scala.inline
-  def apply(): AddBindingFromNamedItemOptions = {
+  inline def apply(): AddBindingFromNamedItemOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddBindingFromNamedItemOptions]
   }
   
-  @scala.inline
-  implicit class AddBindingFromNamedItemOptionsMutableBuilder[Self <: AddBindingFromNamedItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddBindingFromNamedItemOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

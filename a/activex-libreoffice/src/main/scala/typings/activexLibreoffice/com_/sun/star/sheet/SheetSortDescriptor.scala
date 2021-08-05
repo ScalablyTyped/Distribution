@@ -48,8 +48,7 @@ trait SheetSortDescriptor
 }
 object SheetSortDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BindFormatsToContent: Boolean,
     CollatorAlgorithm: String,
     CollatorLocale: Locale,
@@ -80,22 +79,16 @@ object SheetSortDescriptor {
     __obj.asInstanceOf[SheetSortDescriptor]
   }
   
-  @scala.inline
-  implicit class SheetSortDescriptorMutableBuilder[Self <: SheetSortDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: SheetSortDescriptor](x: Self) {
     
-    @scala.inline
-    def setBindFormatsToContent(value: Boolean): Self = StObject.set(x, "BindFormatsToContent", value.asInstanceOf[js.Any])
+    inline def setBindFormatsToContent(value: Boolean): Self = StObject.set(x, "BindFormatsToContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyOutputData(value: Boolean): Self = StObject.set(x, "CopyOutputData", value.asInstanceOf[js.Any])
+    inline def setCopyOutputData(value: Boolean): Self = StObject.set(x, "CopyOutputData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUserListEnabled(value: Boolean): Self = StObject.set(x, "IsUserListEnabled", value.asInstanceOf[js.Any])
+    inline def setIsUserListEnabled(value: Boolean): Self = StObject.set(x, "IsUserListEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputPosition(value: CellAddress): Self = StObject.set(x, "OutputPosition", value.asInstanceOf[js.Any])
+    inline def setOutputPosition(value: CellAddress): Self = StObject.set(x, "OutputPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserListIndex(value: Double): Self = StObject.set(x, "UserListIndex", value.asInstanceOf[js.Any])
+    inline def setUserListIndex(value: Double): Self = StObject.set(x, "UserListIndex", value.asInstanceOf[js.Any])
   }
 }

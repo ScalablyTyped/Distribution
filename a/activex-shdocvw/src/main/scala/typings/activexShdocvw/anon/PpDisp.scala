@@ -12,19 +12,15 @@ trait PpDisp extends StObject {
 }
 object PpDisp {
   
-  @scala.inline
-  def apply(Cancel: Boolean, ppDisp: js.Any): PpDisp = {
+  inline def apply(Cancel: Boolean, ppDisp: js.Any): PpDisp = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], ppDisp = ppDisp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PpDisp]
   }
   
-  @scala.inline
-  implicit class PpDispMutableBuilder[Self <: PpDisp] (val x: Self) extends AnyVal {
+  extension [Self <: PpDisp](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPpDisp(value: js.Any): Self = StObject.set(x, "ppDisp", value.asInstanceOf[js.Any])
+    inline def setPpDisp(value: js.Any): Self = StObject.set(x, "ppDisp", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait IExecuteRequest
 }
 object IExecuteRequest {
   
-  @scala.inline
-  def apply(code: String | js.Array[String]): IExecuteRequest = {
+  inline def apply(code: String | js.Array[String]): IExecuteRequest = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExecuteRequest]
   }
   
-  @scala.inline
-  implicit class IExecuteRequestMutableBuilder[Self <: IExecuteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IExecuteRequest](x: Self) {
     
-    @scala.inline
-    def setCode(value: String | js.Array[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String | js.Array[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeVarargs(value: String*): Self = StObject.set(x, "code", js.Array(value :_*))
+    inline def setCodeVarargs(value: String*): Self = StObject.set(x, "code", js.Array(value :_*))
   }
 }

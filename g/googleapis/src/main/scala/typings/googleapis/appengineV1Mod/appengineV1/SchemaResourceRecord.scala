@@ -28,31 +28,23 @@ trait SchemaResourceRecord extends StObject {
 }
 object SchemaResourceRecord {
   
-  @scala.inline
-  def apply(): SchemaResourceRecord = {
+  inline def apply(): SchemaResourceRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceRecord]
   }
   
-  @scala.inline
-  implicit class SchemaResourceRecordMutableBuilder[Self <: SchemaResourceRecord] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourceRecord](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRrdata(value: String): Self = StObject.set(x, "rrdata", value.asInstanceOf[js.Any])
+    inline def setRrdata(value: String): Self = StObject.set(x, "rrdata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRrdataUndefined: Self = StObject.set(x, "rrdata", js.undefined)
+    inline def setRrdataUndefined: Self = StObject.set(x, "rrdata", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

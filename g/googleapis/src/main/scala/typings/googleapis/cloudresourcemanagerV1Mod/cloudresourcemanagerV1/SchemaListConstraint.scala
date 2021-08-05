@@ -26,25 +26,19 @@ trait SchemaListConstraint extends StObject {
 }
 object SchemaListConstraint {
   
-  @scala.inline
-  def apply(): SchemaListConstraint = {
+  inline def apply(): SchemaListConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListConstraint]
   }
   
-  @scala.inline
-  implicit class SchemaListConstraintMutableBuilder[Self <: SchemaListConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListConstraint](x: Self) {
     
-    @scala.inline
-    def setSuggestedValue(value: String): Self = StObject.set(x, "suggestedValue", value.asInstanceOf[js.Any])
+    inline def setSuggestedValue(value: String): Self = StObject.set(x, "suggestedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedValueUndefined: Self = StObject.set(x, "suggestedValue", js.undefined)
+    inline def setSuggestedValueUndefined: Self = StObject.set(x, "suggestedValue", js.undefined)
     
-    @scala.inline
-    def setSupportsUnder(value: Boolean): Self = StObject.set(x, "supportsUnder", value.asInstanceOf[js.Any])
+    inline def setSupportsUnder(value: Boolean): Self = StObject.set(x, "supportsUnder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsUnderUndefined: Self = StObject.set(x, "supportsUnder", js.undefined)
+    inline def setSupportsUnderUndefined: Self = StObject.set(x, "supportsUnder", js.undefined)
   }
 }

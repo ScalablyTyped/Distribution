@@ -102,7 +102,7 @@ class TextureAtlas ()
   /* CompleteClass */
   override def findRegion(name: String): typings.pixiSpine.PIXI.spine.core.TextureAtlasRegion = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var load: js.Any = js.native
   
   /* CompleteClass */

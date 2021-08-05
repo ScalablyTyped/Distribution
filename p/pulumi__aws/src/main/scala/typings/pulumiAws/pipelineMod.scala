@@ -73,21 +73,16 @@ object pipelineMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PipelineState): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    inline def get(name: String, id: Input[ID]): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    inline def get(name: String, id: Input[ID], state: PipelineState): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    inline def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
     
     /**
       * Returns true if the given object is an instance of Pipeline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean]
   }
   
   trait PipelineArgs extends StObject {
@@ -119,8 +114,7 @@ object pipelineMod {
   }
   object PipelineArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       artifactStore: Input[typings.pulumiAws.inputMod.codepipeline.PipelineArtifactStore],
       roleArn: Input[String],
       stages: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]]]
@@ -129,32 +123,23 @@ object pipelineMod {
       __obj.asInstanceOf[PipelineArgs]
     }
     
-    @scala.inline
-    implicit class PipelineArgsMutableBuilder[Self <: PipelineArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineArgs](x: Self) {
       
-      @scala.inline
-      def setArtifactStore(value: Input[typings.pulumiAws.inputMod.codepipeline.PipelineArtifactStore]): Self = StObject.set(x, "artifactStore", value.asInstanceOf[js.Any])
+      inline def setArtifactStore(value: Input[typings.pulumiAws.inputMod.codepipeline.PipelineArtifactStore]): Self = StObject.set(x, "artifactStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStages(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]]]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
+      inline def setStages(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]]]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStagesVarargs(value: Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]*): Self = StObject.set(x, "stages", js.Array(value :_*))
+      inline def setStagesVarargs(value: Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]*): Self = StObject.set(x, "stages", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -192,53 +177,38 @@ object pipelineMod {
   }
   object PipelineState {
     
-    @scala.inline
-    def apply(): PipelineState = {
+    inline def apply(): PipelineState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PipelineState]
     }
     
-    @scala.inline
-    implicit class PipelineStateMutableBuilder[Self <: PipelineState] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setArtifactStore(value: Input[typings.pulumiAws.inputMod.codepipeline.PipelineArtifactStore]): Self = StObject.set(x, "artifactStore", value.asInstanceOf[js.Any])
+      inline def setArtifactStore(value: Input[typings.pulumiAws.inputMod.codepipeline.PipelineArtifactStore]): Self = StObject.set(x, "artifactStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtifactStoreUndefined: Self = StObject.set(x, "artifactStore", js.undefined)
+      inline def setArtifactStoreUndefined: Self = StObject.set(x, "artifactStore", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setStages(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]]]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
+      inline def setStages(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]]]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
+      inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
       
-      @scala.inline
-      def setStagesVarargs(value: Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]*): Self = StObject.set(x, "stages", js.Array(value :_*))
+      inline def setStagesVarargs(value: Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]*): Self = StObject.set(x, "stages", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

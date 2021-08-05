@@ -15,16 +15,13 @@ trait kernel extends StObject {
 }
 object kernel {
   
-  @scala.inline
-  def apply(version: String): kernel = {
+  inline def apply(version: String): kernel = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[kernel]
   }
   
-  @scala.inline
-  implicit class kernelMutableBuilder[Self <: kernel] (val x: Self) extends AnyVal {
+  extension [Self <: kernel](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

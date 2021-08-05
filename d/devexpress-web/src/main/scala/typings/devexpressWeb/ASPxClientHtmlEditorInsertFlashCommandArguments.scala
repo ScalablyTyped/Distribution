@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorInsertFlashCommandArguments
 }
 object ASPxClientHtmlEditorInsertFlashCommandArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCommandName: () => String,
     align: String,
     allowFullscreen: Boolean,
@@ -56,22 +55,16 @@ object ASPxClientHtmlEditorInsertFlashCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertFlashCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorInsertFlashCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorInsertFlashCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorInsertFlashCommandArguments](x: Self) {
     
-    @scala.inline
-    def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
+    inline def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+    inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFlashMenu(value: Boolean): Self = StObject.set(x, "enableFlashMenu", value.asInstanceOf[js.Any])
+    inline def setEnableFlashMenu(value: Boolean): Self = StObject.set(x, "enableFlashMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait DateTime extends StObject {
 }
 object DateTime {
   
-  @scala.inline
-  def apply(universalTime: Double): DateTime = {
+  inline def apply(universalTime: Double): DateTime = {
     val __obj = js.Dynamic.literal(universalTime = universalTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTime]
   }
   
-  @scala.inline
-  implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
+  extension [Self <: DateTime](x: Self) {
     
-    @scala.inline
-    def setUniversalTime(value: Double): Self = StObject.set(x, "universalTime", value.asInstanceOf[js.Any])
+    inline def setUniversalTime(value: Double): Self = StObject.set(x, "universalTime", value.asInstanceOf[js.Any])
   }
 }

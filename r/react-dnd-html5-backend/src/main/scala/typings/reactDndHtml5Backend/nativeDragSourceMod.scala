@@ -18,11 +18,11 @@ object nativeDragSourceMod {
     
     def canDrag(): Boolean = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     def endDrag(): Unit = js.native
     
-    var initializeExposedProperties: js.Any = js.native
+    /* private */ var initializeExposedProperties: js.Any = js.native
     
     def isDragging(monitor: DragDropMonitor, handle: String): Boolean = js.native
     

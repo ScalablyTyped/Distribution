@@ -19,25 +19,19 @@ trait IonTab extends StObject {
 }
 object IonTab {
   
-  @scala.inline
-  def apply(tab: String): IonTab = {
+  inline def apply(tab: String): IonTab = {
     val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonTab]
   }
   
-  @scala.inline
-  implicit class IonTabMutableBuilder[Self <: IonTab] (val x: Self) extends AnyVal {
+  extension [Self <: IonTab](x: Self) {
     
-    @scala.inline
-    def setComponent(value: ComponentRef): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentRef): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentNull: Self = StObject.set(x, "component", null)
+    inline def setComponentNull: Self = StObject.set(x, "component", null)
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: String): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

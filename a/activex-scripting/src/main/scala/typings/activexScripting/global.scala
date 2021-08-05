@@ -12,7 +12,7 @@ object global {
     /** Drive Object */
     @JSGlobal("Scripting.Drive")
     @js.native
-    class Drive protected ()
+    /* private */ class Drive ()
       extends StObject
          with typings.activexScripting.Scripting.Drive {
       
@@ -48,7 +48,7 @@ object global {
       /* CompleteClass */
       override val RootFolder: typings.activexScripting.Scripting.Folder = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("Scripting.Drive_typekey")
       var ScriptingDotDrive_typekey: typings.activexScripting.Scripting.Drive = js.native
       
@@ -72,28 +72,28 @@ object global {
     /** File object */
     @JSGlobal("Scripting.File")
     @js.native
-    class File protected ()
+    /* private */ class File ()
       extends StObject
          with typings.activexScripting.Scripting.File
     
     /** FileSystem Object */
     @JSGlobal("Scripting.FileSystemObject")
     @js.native
-    class FileSystemObject protected ()
+    /* private */ class FileSystemObject ()
       extends StObject
          with typings.activexScripting.Scripting.FileSystemObject
     
     /** Folder object */
     @JSGlobal("Scripting.Folder")
     @js.native
-    class Folder protected ()
+    /* private */ class Folder ()
       extends StObject
          with typings.activexScripting.Scripting.Folder
     
     /** TextStream object */
     @JSGlobal("Scripting.TextStream")
     @js.native
-    class TextStream protected ()
+    /* private */ class TextStream ()
       extends StObject
          with typings.activexScripting.Scripting.TextStream
   }

@@ -66,8 +66,7 @@ object typesImportKeyMaterialInputMod {
   }
   object ImportKeyMaterialInput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       EncryptedKeyMaterial: ArrayBuffer | ArrayBufferView | String,
       ImportToken: ArrayBuffer | ArrayBufferView | String,
       KeyId: String
@@ -76,49 +75,35 @@ object typesImportKeyMaterialInputMod {
       __obj.asInstanceOf[ImportKeyMaterialInput]
     }
     
-    @scala.inline
-    implicit class ImportKeyMaterialInputMutableBuilder[Self <: ImportKeyMaterialInput] (val x: Self) extends AnyVal {
+    extension [Self <: ImportKeyMaterialInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setEncryptedKeyMaterial(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "EncryptedKeyMaterial", value.asInstanceOf[js.Any])
+      inline def setEncryptedKeyMaterial(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "EncryptedKeyMaterial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationModel(value: KEY_MATERIAL_EXPIRES | KEY_MATERIAL_DOES_NOT_EXPIRE | String): Self = StObject.set(x, "ExpirationModel", value.asInstanceOf[js.Any])
+      inline def setExpirationModel(value: KEY_MATERIAL_EXPIRES | KEY_MATERIAL_DOES_NOT_EXPIRE | String): Self = StObject.set(x, "ExpirationModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationModelUndefined: Self = StObject.set(x, "ExpirationModel", js.undefined)
+      inline def setExpirationModelUndefined: Self = StObject.set(x, "ExpirationModel", js.undefined)
       
-      @scala.inline
-      def setImportToken(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "ImportToken", value.asInstanceOf[js.Any])
+      inline def setImportToken(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "ImportToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidTo(value: Date | String | Double): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
+      inline def setValidTo(value: Date | String | Double): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
+      inline def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
     }
   }
 }

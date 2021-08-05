@@ -18,10 +18,8 @@ object mod {
     * @param opts
     * @see {@link https://github.com/level/level-ttl#usage level-ttl Usage}
     */
-  @scala.inline
-  def apply[K, V](db: LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]): LevelTTL[K, V] = ^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any]).asInstanceOf[LevelTTL[K, V]]
-  @scala.inline
-  def apply[K, V](db: LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]], opts: LevelTTLOptions): LevelTTL[K, V] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelTTL[K, V]]
+  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]): LevelTTL[K, V] = ^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any]).asInstanceOf[LevelTTL[K, V]]
+  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]], opts: LevelTTLOptions): LevelTTL[K, V] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelTTL[K, V]]
   
   @JSImport("level-ttl", JSImport.Namespace)
   @js.native
@@ -84,56 +82,40 @@ object mod {
   }
   object LevelTTLOptions {
     
-    @scala.inline
-    def apply(): LevelTTLOptions = {
+    inline def apply(): LevelTTLOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LevelTTLOptions]
     }
     
-    @scala.inline
-    implicit class LevelTTLOptionsMutableBuilder[Self <: LevelTTLOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LevelTTLOptions](x: Self) {
       
-      @scala.inline
-      def setCheckFrequency(value: Double): Self = StObject.set(x, "checkFrequency", value.asInstanceOf[js.Any])
+      inline def setCheckFrequency(value: Double): Self = StObject.set(x, "checkFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckFrequencyUndefined: Self = StObject.set(x, "checkFrequency", js.undefined)
+      inline def setCheckFrequencyUndefined: Self = StObject.set(x, "checkFrequency", js.undefined)
       
-      @scala.inline
-      def setDefaultTTL(value: Double): Self = StObject.set(x, "defaultTTL", value.asInstanceOf[js.Any])
+      inline def setDefaultTTL(value: Double): Self = StObject.set(x, "defaultTTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTTLUndefined: Self = StObject.set(x, "defaultTTL", js.undefined)
+      inline def setDefaultTTLUndefined: Self = StObject.set(x, "defaultTTL", js.undefined)
       
-      @scala.inline
-      def setExpiryNamespace(value: String): Self = StObject.set(x, "expiryNamespace", value.asInstanceOf[js.Any])
+      inline def setExpiryNamespace(value: String): Self = StObject.set(x, "expiryNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiryNamespaceUndefined: Self = StObject.set(x, "expiryNamespace", js.undefined)
+      inline def setExpiryNamespaceUndefined: Self = StObject.set(x, "expiryNamespace", js.undefined)
       
-      @scala.inline
-      def setMethodPrefix(value: String): Self = StObject.set(x, "methodPrefix", value.asInstanceOf[js.Any])
+      inline def setMethodPrefix(value: String): Self = StObject.set(x, "methodPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodPrefixUndefined: Self = StObject.set(x, "methodPrefix", js.undefined)
+      inline def setMethodPrefixUndefined: Self = StObject.set(x, "methodPrefix", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setSub(value: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+      inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     }
   }
 }

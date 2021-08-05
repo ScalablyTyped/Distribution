@@ -15,22 +15,17 @@ trait IMODERATOR_MESSAGE extends StObject {
 }
 object IMODERATOR_MESSAGE {
   
-  @scala.inline
-  def apply(data: js.Object, message: String, sender: SFSUser): IMODERATOR_MESSAGE = {
+  inline def apply(data: js.Object, message: String, sender: SFSUser): IMODERATOR_MESSAGE = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMODERATOR_MESSAGE]
   }
   
-  @scala.inline
-  implicit class IMODERATOR_MESSAGEMutableBuilder[Self <: IMODERATOR_MESSAGE] (val x: Self) extends AnyVal {
+  extension [Self <: IMODERATOR_MESSAGE](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: SFSUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: SFSUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

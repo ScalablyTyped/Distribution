@@ -28,34 +28,25 @@ trait ServiceServiceRegistries extends StObject {
 }
 object ServiceServiceRegistries {
   
-  @scala.inline
-  def apply(registryArn: String): ServiceServiceRegistries = {
+  inline def apply(registryArn: String): ServiceServiceRegistries = {
     val __obj = js.Dynamic.literal(registryArn = registryArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceServiceRegistries]
   }
   
-  @scala.inline
-  implicit class ServiceServiceRegistriesMutableBuilder[Self <: ServiceServiceRegistries] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceServiceRegistries](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
-    @scala.inline
-    def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
+    inline def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
+    inline def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setRegistryArn(value: String): Self = StObject.set(x, "registryArn", value.asInstanceOf[js.Any])
+    inline def setRegistryArn(value: String): Self = StObject.set(x, "registryArn", value.asInstanceOf[js.Any])
   }
 }

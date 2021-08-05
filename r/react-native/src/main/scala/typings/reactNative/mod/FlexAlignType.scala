@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlexAlignType extends StObject
 object FlexAlignType {
   
-  @scala.inline
-  def baseline: typings.reactNative.reactNativeStrings.baseline = "baseline".asInstanceOf[typings.reactNative.reactNativeStrings.baseline]
+  inline def baseline: typings.reactNative.reactNativeStrings.baseline = "baseline".asInstanceOf[typings.reactNative.reactNativeStrings.baseline]
   
-  @scala.inline
-  def center: typings.reactNative.reactNativeStrings.center = "center".asInstanceOf[typings.reactNative.reactNativeStrings.center]
+  inline def center: typings.reactNative.reactNativeStrings.center = "center".asInstanceOf[typings.reactNative.reactNativeStrings.center]
   
-  @scala.inline
-  def `flex-end`: typings.reactNative.reactNativeStrings.`flex-end` = "flex-end".asInstanceOf[typings.reactNative.reactNativeStrings.`flex-end`]
+  inline def `flex-end`: typings.reactNative.reactNativeStrings.`flex-end` = "flex-end".asInstanceOf[typings.reactNative.reactNativeStrings.`flex-end`]
   
-  @scala.inline
-  def `flex-start`: typings.reactNative.reactNativeStrings.`flex-start` = "flex-start".asInstanceOf[typings.reactNative.reactNativeStrings.`flex-start`]
+  inline def `flex-start`: typings.reactNative.reactNativeStrings.`flex-start` = "flex-start".asInstanceOf[typings.reactNative.reactNativeStrings.`flex-start`]
   
-  @scala.inline
-  def stretch: typings.reactNative.reactNativeStrings.stretch = "stretch".asInstanceOf[typings.reactNative.reactNativeStrings.stretch]
+  inline def stretch: typings.reactNative.reactNativeStrings.stretch = "stretch".asInstanceOf[typings.reactNative.reactNativeStrings.stretch]
 }

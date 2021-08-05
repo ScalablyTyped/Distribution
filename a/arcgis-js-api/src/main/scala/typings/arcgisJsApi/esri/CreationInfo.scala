@@ -26,8 +26,7 @@ trait CreationInfo
 }
 object CreationInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer,
@@ -38,13 +37,10 @@ object CreationInfo {
     __obj.asInstanceOf[CreationInfo]
   }
   
-  @scala.inline
-  implicit class CreationInfoMutableBuilder[Self <: CreationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CreationInfo](x: Self) {
     
-    @scala.inline
-    def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: FeatureTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: FeatureTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

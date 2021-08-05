@@ -39,8 +39,7 @@ trait BackgroundOperationInfo extends StObject {
 }
 object BackgroundOperationInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     displayName: String,
     isCancelable: Boolean,
@@ -50,31 +49,22 @@ object BackgroundOperationInfo {
     __obj.asInstanceOf[BackgroundOperationInfo]
   }
   
-  @scala.inline
-  implicit class BackgroundOperationInfoMutableBuilder[Self <: BackgroundOperationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundOperationInfo](x: Self) {
     
-    @scala.inline
-    def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCancelable(value: Boolean): Self = StObject.set(x, "isCancelable", value.asInstanceOf[js.Any])
+    inline def setIsCancelable(value: Boolean): Self = StObject.set(x, "isCancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: BackgroundOperation => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction1(value))
+    inline def setOperation(value: BackgroundOperation => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
   }
 }

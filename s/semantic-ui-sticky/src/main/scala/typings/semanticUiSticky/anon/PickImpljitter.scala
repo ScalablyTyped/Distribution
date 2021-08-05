@@ -11,16 +11,13 @@ trait PickImpljitter extends StObject {
 }
 object PickImpljitter {
   
-  @scala.inline
-  def apply(jitter: Double): PickImpljitter = {
+  inline def apply(jitter: Double): PickImpljitter = {
     val __obj = js.Dynamic.literal(jitter = jitter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpljitter]
   }
   
-  @scala.inline
-  implicit class PickImpljitterMutableBuilder[Self <: PickImpljitter] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpljitter](x: Self) {
     
-    @scala.inline
-    def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+    inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
   }
 }

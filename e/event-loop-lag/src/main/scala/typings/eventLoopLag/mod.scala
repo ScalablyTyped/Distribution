@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(interval: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
+  inline def apply(interval: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   @JSImport("event-loop-lag", JSImport.Namespace)
   @js.native

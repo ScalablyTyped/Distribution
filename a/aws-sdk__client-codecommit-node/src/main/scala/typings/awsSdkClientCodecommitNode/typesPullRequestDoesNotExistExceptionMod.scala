@@ -30,17 +30,14 @@ object typesPullRequestDoesNotExistExceptionMod {
   }
   object PullRequestDoesNotExistException {
     
-    @scala.inline
-    def apply(): PullRequestDoesNotExistException = {
+    inline def apply(): PullRequestDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "PullRequestDoesNotExistException")
       __obj.asInstanceOf[PullRequestDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class PullRequestDoesNotExistExceptionMutableBuilder[Self <: PullRequestDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: PullRequestDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

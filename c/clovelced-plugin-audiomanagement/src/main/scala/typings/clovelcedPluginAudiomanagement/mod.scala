@@ -74,31 +74,26 @@ object mod {
     /* 2 */ val SYSTEM: typings.clovelcedPluginAudiomanagement.mod.VolumeType.SYSTEM & Double = js.native
   }
   
-  @scala.inline
-  def getAudioMode(
+  inline def getAudioMode(
     onSuccess: js.Function1[/* results */ typings.clovelcedPluginAudiomanagement.anon.AudioMode, Unit],
     onError: js.Function1[/* error */ js.Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAudioMode")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getMaxVolume(
+  inline def getMaxVolume(
     `type`: VolumeType,
     onSuccess: js.Function1[/* results */ MaxVolume, Unit],
     onError: js.Function1[/* error */ js.Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxVolume")(`type`.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getVolume(
+  inline def getVolume(
     `type`: VolumeType,
     onSuccess: js.Function1[/* results */ Volume, Unit],
     onError: js.Function1[/* error */ js.Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(`type`.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setAudioMode(mode: AudioMode, onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAudioMode")(mode.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setAudioMode(mode: AudioMode, onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAudioMode")(mode.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setVolume(
+  inline def setVolume(
     `type`: VolumeType,
     volume: Double,
     onSuccess: js.Function0[Unit],

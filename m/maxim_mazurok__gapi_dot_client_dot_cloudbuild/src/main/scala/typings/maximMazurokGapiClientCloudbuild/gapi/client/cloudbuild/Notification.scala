@@ -28,47 +28,35 @@ trait Notification extends StObject {
 }
 object Notification {
   
-  @scala.inline
-  def apply(): Notification = {
+  inline def apply(): Notification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Notification]
   }
   
-  @scala.inline
-  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
+  extension [Self <: Notification](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setHttpDelivery(value: HTTPDelivery): Self = StObject.set(x, "httpDelivery", value.asInstanceOf[js.Any])
+    inline def setHttpDelivery(value: HTTPDelivery): Self = StObject.set(x, "httpDelivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpDeliveryUndefined: Self = StObject.set(x, "httpDelivery", js.undefined)
+    inline def setHttpDeliveryUndefined: Self = StObject.set(x, "httpDelivery", js.undefined)
     
-    @scala.inline
-    def setSlackDelivery(value: SlackDelivery): Self = StObject.set(x, "slackDelivery", value.asInstanceOf[js.Any])
+    inline def setSlackDelivery(value: SlackDelivery): Self = StObject.set(x, "slackDelivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlackDeliveryUndefined: Self = StObject.set(x, "slackDelivery", js.undefined)
+    inline def setSlackDeliveryUndefined: Self = StObject.set(x, "slackDelivery", js.undefined)
     
-    @scala.inline
-    def setSmtpDelivery(value: SMTPDelivery): Self = StObject.set(x, "smtpDelivery", value.asInstanceOf[js.Any])
+    inline def setSmtpDelivery(value: SMTPDelivery): Self = StObject.set(x, "smtpDelivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmtpDeliveryUndefined: Self = StObject.set(x, "smtpDelivery", js.undefined)
+    inline def setSmtpDeliveryUndefined: Self = StObject.set(x, "smtpDelivery", js.undefined)
     
-    @scala.inline
-    def setStructDelivery(
+    inline def setStructDelivery(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification & TopLevel[js.Any]
     ): Self = StObject.set(x, "structDelivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructDeliveryUndefined: Self = StObject.set(x, "structDelivery", js.undefined)
+    inline def setStructDeliveryUndefined: Self = StObject.set(x, "structDelivery", js.undefined)
   }
 }

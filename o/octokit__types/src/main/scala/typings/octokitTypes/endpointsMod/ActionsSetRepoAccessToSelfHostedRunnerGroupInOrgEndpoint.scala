@@ -21,26 +21,20 @@ trait ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint extends StObject 
 }
 object ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, runner_group_id: Double, selected_repository_ids: js.Array[Double]): ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint = {
+  inline def apply(org_ : String, runner_group_id: Double, selected_repository_ids: js.Array[Double]): ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint = {
     val __obj = js.Dynamic.literal(runner_group_id = runner_group_id.asInstanceOf[js.Any], selected_repository_ids = selected_repository_ids.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpointMutableBuilder[Self <: ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
+    inline def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_repository_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
+    inline def setSelected_repository_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_repository_idsVarargs(value: Double*): Self = StObject.set(x, "selected_repository_ids", js.Array(value :_*))
+    inline def setSelected_repository_idsVarargs(value: Double*): Self = StObject.set(x, "selected_repository_ids", js.Array(value :_*))
   }
 }

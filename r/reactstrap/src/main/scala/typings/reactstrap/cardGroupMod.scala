@@ -30,26 +30,20 @@ object cardGroupMod {
   }
   object CardGroupProps {
     
-    @scala.inline
-    def apply(): CardGroupProps = {
+    inline def apply(): CardGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardGroupProps]
     }
     
-    @scala.inline
-    implicit class CardGroupPropsMutableBuilder[Self <: CardGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardGroupProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

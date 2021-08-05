@@ -8,8 +8,7 @@ object dateFnsIsDateMod {
   
   object default {
     
-    @scala.inline
-    def apply(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def apply(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("date-fns/isDate", JSImport.Default)
     @js.native

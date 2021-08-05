@@ -14,25 +14,19 @@ trait FrequencyCap extends StObject {
 }
 object FrequencyCap {
   
-  @scala.inline
-  def apply(): FrequencyCap = {
+  inline def apply(): FrequencyCap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FrequencyCap]
   }
   
-  @scala.inline
-  implicit class FrequencyCapMutableBuilder[Self <: FrequencyCap] (val x: Self) extends AnyVal {
+  extension [Self <: FrequencyCap](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setImpressions(value: String): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
+    inline def setImpressions(value: String): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
+    inline def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
   }
 }

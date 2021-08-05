@@ -11,16 +11,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(whale: Typeofwhale): Window = {
+  inline def apply(whale: Typeofwhale): Window = {
     val __obj = js.Dynamic.literal(whale = whale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setWhale(value: Typeofwhale): Self = StObject.set(x, "whale", value.asInstanceOf[js.Any])
+    inline def setWhale(value: Typeofwhale): Self = StObject.set(x, "whale", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait CreativeGroupAssignment extends StObject {
 }
 object CreativeGroupAssignment {
   
-  @scala.inline
-  def apply(): CreativeGroupAssignment = {
+  inline def apply(): CreativeGroupAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreativeGroupAssignment]
   }
   
-  @scala.inline
-  implicit class CreativeGroupAssignmentMutableBuilder[Self <: CreativeGroupAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: CreativeGroupAssignment](x: Self) {
     
-    @scala.inline
-    def setCreativeGroupId(value: String): Self = StObject.set(x, "creativeGroupId", value.asInstanceOf[js.Any])
+    inline def setCreativeGroupId(value: String): Self = StObject.set(x, "creativeGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeGroupIdUndefined: Self = StObject.set(x, "creativeGroupId", js.undefined)
+    inline def setCreativeGroupIdUndefined: Self = StObject.set(x, "creativeGroupId", js.undefined)
     
-    @scala.inline
-    def setCreativeGroupNumber(value: String): Self = StObject.set(x, "creativeGroupNumber", value.asInstanceOf[js.Any])
+    inline def setCreativeGroupNumber(value: String): Self = StObject.set(x, "creativeGroupNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeGroupNumberUndefined: Self = StObject.set(x, "creativeGroupNumber", js.undefined)
+    inline def setCreativeGroupNumberUndefined: Self = StObject.set(x, "creativeGroupNumber", js.undefined)
   }
 }

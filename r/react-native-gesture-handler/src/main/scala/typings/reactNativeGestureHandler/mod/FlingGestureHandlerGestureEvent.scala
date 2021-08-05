@@ -9,8 +9,7 @@ trait FlingGestureHandlerGestureEvent
      with GestureHandlerGestureEvent
 object FlingGestureHandlerGestureEvent {
   
-  @scala.inline
-  def apply(nativeEvent: GestureHandlerGestureEventNativeEvent): FlingGestureHandlerGestureEvent = {
+  inline def apply(nativeEvent: GestureHandlerGestureEventNativeEvent): FlingGestureHandlerGestureEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlingGestureHandlerGestureEvent]
   }

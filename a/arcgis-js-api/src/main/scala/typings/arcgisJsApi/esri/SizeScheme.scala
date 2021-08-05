@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SizeScheme extends StObject
 object SizeScheme {
   
-  @scala.inline
-  def SizeSchemeForPoint(
+  inline def SizeSchemeForPoint(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -31,8 +30,7 @@ object SizeScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.SizeSchemeForPoint]
   }
   
-  @scala.inline
-  def SizeSchemeForPolygon(
+  inline def SizeSchemeForPolygon(
     background: SizeSchemeForPolygonBackground,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -44,8 +42,7 @@ object SizeScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.SizeSchemeForPolygon]
   }
   
-  @scala.inline
-  def SizeSchemeForPolyline(
+  inline def SizeSchemeForPolyline(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PhononPopoverDirection extends StObject
 object PhononPopoverDirection {
   
-  @scala.inline
-  def left: typings.phonon.phononStrings.left = "left".asInstanceOf[typings.phonon.phononStrings.left]
+  inline def left: typings.phonon.phononStrings.left = "left".asInstanceOf[typings.phonon.phononStrings.left]
   
-  @scala.inline
-  def right: typings.phonon.phononStrings.right = "right".asInstanceOf[typings.phonon.phononStrings.right]
+  inline def right: typings.phonon.phononStrings.right = "right".asInstanceOf[typings.phonon.phononStrings.right]
   
-  @scala.inline
-  def title: typings.phonon.phononStrings.title = "title".asInstanceOf[typings.phonon.phononStrings.title]
+  inline def title: typings.phonon.phononStrings.title = "title".asInstanceOf[typings.phonon.phononStrings.title]
   
-  @scala.inline
-  def `title-left`: typings.phonon.phononStrings.`title-left` = "title-left".asInstanceOf[typings.phonon.phononStrings.`title-left`]
+  inline def `title-left`: typings.phonon.phononStrings.`title-left` = "title-left".asInstanceOf[typings.phonon.phononStrings.`title-left`]
 }

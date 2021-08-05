@@ -15,19 +15,15 @@ trait TypeofNumericTextBox extends StObject {
 }
 object TypeofNumericTextBox {
   
-  @scala.inline
-  def apply(extend: js.Object => NumericTextBox, fn: NumericTextBox): TypeofNumericTextBox = {
+  inline def apply(extend: js.Object => NumericTextBox, fn: NumericTextBox): TypeofNumericTextBox = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofNumericTextBox]
   }
   
-  @scala.inline
-  implicit class TypeofNumericTextBoxMutableBuilder[Self <: TypeofNumericTextBox] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofNumericTextBox](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => NumericTextBox): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => NumericTextBox): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: NumericTextBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: NumericTextBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

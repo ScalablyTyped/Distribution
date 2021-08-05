@@ -23,28 +23,25 @@ object xmlEntityRefMod {
   }
   object IXmlEntityRefOptions {
     
-    @scala.inline
-    def apply(name: String): IXmlEntityRefOptions = {
+    inline def apply(name: String): IXmlEntityRefOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlEntityRefOptions]
     }
     
-    @scala.inline
-    implicit class IXmlEntityRefOptionsMutableBuilder[Self <: IXmlEntityRefOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlEntityRefOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait XmlEntityRef[Parent] extends StObject {
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Gets the name of this entity reference.

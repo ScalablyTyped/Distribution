@@ -18,25 +18,19 @@ trait GetCloudFrontOriginAccessIdentityConfigResult extends StObject {
 }
 object GetCloudFrontOriginAccessIdentityConfigResult {
   
-  @scala.inline
-  def apply(): GetCloudFrontOriginAccessIdentityConfigResult = {
+  inline def apply(): GetCloudFrontOriginAccessIdentityConfigResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCloudFrontOriginAccessIdentityConfigResult]
   }
   
-  @scala.inline
-  implicit class GetCloudFrontOriginAccessIdentityConfigResultMutableBuilder[Self <: GetCloudFrontOriginAccessIdentityConfigResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetCloudFrontOriginAccessIdentityConfigResult](x: Self) {
     
-    @scala.inline
-    def setCloudFrontOriginAccessIdentityConfig(value: CloudFrontOriginAccessIdentityConfig): Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", value.asInstanceOf[js.Any])
+    inline def setCloudFrontOriginAccessIdentityConfig(value: CloudFrontOriginAccessIdentityConfig): Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudFrontOriginAccessIdentityConfigUndefined: Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", js.undefined)
+    inline def setCloudFrontOriginAccessIdentityConfigUndefined: Self = StObject.set(x, "CloudFrontOriginAccessIdentityConfig", js.undefined)
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
   }
 }

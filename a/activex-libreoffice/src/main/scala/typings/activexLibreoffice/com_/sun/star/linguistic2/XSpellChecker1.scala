@@ -18,8 +18,7 @@ trait XSpellChecker1
 }
 object XSpellChecker1 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Languages: SafeArray[Double],
     acquire: () => Unit,
     getLanguages: () => SafeArray[Double],
@@ -33,13 +32,10 @@ object XSpellChecker1 {
     __obj.asInstanceOf[XSpellChecker1]
   }
   
-  @scala.inline
-  implicit class XSpellChecker1MutableBuilder[Self <: XSpellChecker1] (val x: Self) extends AnyVal {
+  extension [Self <: XSpellChecker1](x: Self) {
     
-    @scala.inline
-    def setIsValid(value: (String, Double, PropertyValues) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction3(value))
+    inline def setIsValid(value: (String, Double, PropertyValues) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSpell(value: (String, Double, PropertyValues) => XSpellAlternatives): Self = StObject.set(x, "spell", js.Any.fromFunction3(value))
+    inline def setSpell(value: (String, Double, PropertyValues) => XSpellAlternatives): Self = StObject.set(x, "spell", js.Any.fromFunction3(value))
   }
 }

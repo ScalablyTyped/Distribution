@@ -11,6 +11,5 @@ object templateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def template(strings: TemplateStringsArray, keys: js.Any*): js.Function1[/* repeated */ js.Any, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(strings.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, String]]
+  inline def template(strings: TemplateStringsArray, keys: js.Any*): js.Function1[/* repeated */ js.Any, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(strings.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, String]]
 }

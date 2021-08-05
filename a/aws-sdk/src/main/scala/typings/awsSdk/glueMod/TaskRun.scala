@@ -58,73 +58,51 @@ trait TaskRun extends StObject {
 }
 object TaskRun {
   
-  @scala.inline
-  def apply(): TaskRun = {
+  inline def apply(): TaskRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskRun]
   }
   
-  @scala.inline
-  implicit class TaskRunMutableBuilder[Self <: TaskRun] (val x: Self) extends AnyVal {
+  extension [Self <: TaskRun](x: Self) {
     
-    @scala.inline
-    def setCompletedOn(value: Timestamp): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
+    inline def setCompletedOn(value: Timestamp): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
+    inline def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
     
-    @scala.inline
-    def setErrorString(value: GenericString): Self = StObject.set(x, "ErrorString", value.asInstanceOf[js.Any])
+    inline def setErrorString(value: GenericString): Self = StObject.set(x, "ErrorString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorStringUndefined: Self = StObject.set(x, "ErrorString", js.undefined)
+    inline def setErrorStringUndefined: Self = StObject.set(x, "ErrorString", js.undefined)
     
-    @scala.inline
-    def setExecutionTime(value: ExecutionTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
+    inline def setExecutionTime(value: ExecutionTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionTimeUndefined: Self = StObject.set(x, "ExecutionTime", js.undefined)
+    inline def setExecutionTimeUndefined: Self = StObject.set(x, "ExecutionTime", js.undefined)
     
-    @scala.inline
-    def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
+    inline def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: GenericString): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: GenericString): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
-    @scala.inline
-    def setProperties(value: TaskRunProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: TaskRunProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
     
-    @scala.inline
-    def setStartedOn(value: Timestamp): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
+    inline def setStartedOn(value: Timestamp): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
+    inline def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
+    inline def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskRunIdUndefined: Self = StObject.set(x, "TaskRunId", js.undefined)
+    inline def setTaskRunIdUndefined: Self = StObject.set(x, "TaskRunId", js.undefined)
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
+    inline def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
   }
 }

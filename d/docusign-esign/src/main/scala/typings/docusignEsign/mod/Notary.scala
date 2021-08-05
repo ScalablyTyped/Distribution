@@ -19,37 +19,27 @@ trait Notary extends StObject {
 }
 object Notary {
   
-  @scala.inline
-  def apply(): Notary = {
+  inline def apply(): Notary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Notary]
   }
   
-  @scala.inline
-  implicit class NotaryMutableBuilder[Self <: Notary] (val x: Self) extends AnyVal {
+  extension [Self <: Notary](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setSearchable(value: String): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+    inline def setSearchable(value: String): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
+    inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
     
-    @scala.inline
-    def setUserInfo(value: UserInformation): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: UserInformation): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
+    inline def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

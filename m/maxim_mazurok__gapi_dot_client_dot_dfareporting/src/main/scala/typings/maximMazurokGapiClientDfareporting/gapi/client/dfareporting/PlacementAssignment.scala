@@ -20,37 +20,27 @@ trait PlacementAssignment extends StObject {
 }
 object PlacementAssignment {
   
-  @scala.inline
-  def apply(): PlacementAssignment = {
+  inline def apply(): PlacementAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementAssignment]
   }
   
-  @scala.inline
-  implicit class PlacementAssignmentMutableBuilder[Self <: PlacementAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementAssignment](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
+    inline def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "placementIdDimensionValue", value.asInstanceOf[js.Any])
+    inline def setPlacementIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "placementIdDimensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementIdDimensionValueUndefined: Self = StObject.set(x, "placementIdDimensionValue", js.undefined)
+    inline def setPlacementIdDimensionValueUndefined: Self = StObject.set(x, "placementIdDimensionValue", js.undefined)
     
-    @scala.inline
-    def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
+    inline def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
     
-    @scala.inline
-    def setSslRequired(value: Boolean): Self = StObject.set(x, "sslRequired", value.asInstanceOf[js.Any])
+    inline def setSslRequired(value: Boolean): Self = StObject.set(x, "sslRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslRequiredUndefined: Self = StObject.set(x, "sslRequired", js.undefined)
+    inline def setSslRequiredUndefined: Self = StObject.set(x, "sslRequired", js.undefined)
   }
 }

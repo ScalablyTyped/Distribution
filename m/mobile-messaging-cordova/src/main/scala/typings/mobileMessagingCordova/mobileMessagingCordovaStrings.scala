@@ -13,97 +13,83 @@ object mobileMessagingCordovaStrings {
   sealed trait Android
     extends StObject
        with OS
-  @scala.inline
-  def Android: Android = "Android".asInstanceOf[Android]
+  inline def Android: Android = "Android".asInstanceOf[Android]
   
   @js.native
   sealed trait Female
     extends StObject
        with Gender
-  @scala.inline
-  def Female: Female = "Female".asInstanceOf[Female]
+  inline def Female: Female = "Female".asInstanceOf[Female]
   
   @js.native
   sealed trait Male
     extends StObject
        with Gender
-  @scala.inline
-  def Male: Male = "Male".asInstanceOf[Male]
+  inline def Male: Male = "Male".asInstanceOf[Male]
   
   @js.native
   sealed trait actionTapped
     extends StObject
        with Event
-  @scala.inline
-  def actionTapped: actionTapped = "actionTapped".asInstanceOf[actionTapped]
+  inline def actionTapped: actionTapped = "actionTapped".asInstanceOf[actionTapped]
   
   @js.native
   sealed trait depersonalized
     extends StObject
        with Event
-  @scala.inline
-  def depersonalized: depersonalized = "depersonalized".asInstanceOf[depersonalized]
+  inline def depersonalized: depersonalized = "depersonalized".asInstanceOf[depersonalized]
   
   @js.native
   sealed trait geofenceEntered
     extends StObject
        with Event
-  @scala.inline
-  def geofenceEntered: geofenceEntered = "geofenceEntered".asInstanceOf[geofenceEntered]
+  inline def geofenceEntered: geofenceEntered = "geofenceEntered".asInstanceOf[geofenceEntered]
   
   @js.native
   sealed trait iOS
     extends StObject
        with OS
-  @scala.inline
-  def iOS: iOS = "iOS".asInstanceOf[iOS]
+  inline def iOS: iOS = "iOS".asInstanceOf[iOS]
   
   @js.native
   sealed trait installationUpdated
     extends StObject
        with Event
-  @scala.inline
-  def installationUpdated: installationUpdated = "installationUpdated".asInstanceOf[installationUpdated]
+  inline def installationUpdated: installationUpdated = "installationUpdated".asInstanceOf[installationUpdated]
   
   @js.native
   sealed trait messageReceived
     extends StObject
        with Event
-  @scala.inline
-  def messageReceived: messageReceived = "messageReceived".asInstanceOf[messageReceived]
+  inline def messageReceived: messageReceived = "messageReceived".asInstanceOf[messageReceived]
   
   @js.native
   sealed trait notificationTapped
     extends StObject
        with Event
-  @scala.inline
-  def notificationTapped: notificationTapped = "notificationTapped".asInstanceOf[notificationTapped]
+  inline def notificationTapped: notificationTapped = "notificationTapped".asInstanceOf[notificationTapped]
   
   @js.native
   sealed trait personalized
     extends StObject
        with Event
-  @scala.inline
-  def personalized: personalized = "personalized".asInstanceOf[personalized]
+  inline def personalized: personalized = "personalized".asInstanceOf[personalized]
   
   @js.native
   sealed trait registrationUpdated
     extends StObject
        with Event
-  @scala.inline
-  def registrationUpdated: registrationUpdated = "registrationUpdated".asInstanceOf[registrationUpdated]
+  inline def registrationUpdated: registrationUpdated = "registrationUpdated".asInstanceOf[registrationUpdated]
   
   @js.native
   sealed trait tokenReceived
     extends StObject
        with Event
-  @scala.inline
-  def tokenReceived: tokenReceived = "tokenReceived".asInstanceOf[tokenReceived]
+  inline def tokenReceived: tokenReceived = "tokenReceived".asInstanceOf[tokenReceived]
   
   @js.native
   sealed trait userUpdated
     extends StObject
        with Event
-  @scala.inline
-  def userUpdated: userUpdated = "userUpdated".asInstanceOf[userUpdated]
+  inline def userUpdated: userUpdated = "userUpdated".asInstanceOf[userUpdated]
 }

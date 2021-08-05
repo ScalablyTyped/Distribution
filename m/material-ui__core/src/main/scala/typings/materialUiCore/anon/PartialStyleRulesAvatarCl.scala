@@ -16,31 +16,23 @@ trait PartialStyleRulesAvatarCl extends StObject {
 }
 object PartialStyleRulesAvatarCl {
   
-  @scala.inline
-  def apply(): PartialStyleRulesAvatarCl = {
+  inline def apply(): PartialStyleRulesAvatarCl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesAvatarCl]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesAvatarClMutableBuilder[Self <: PartialStyleRulesAvatarCl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesAvatarCl](x: Self) {
     
-    @scala.inline
-    def setColorDefault(value: CSSProperties): Self = StObject.set(x, "colorDefault", value.asInstanceOf[js.Any])
+    inline def setColorDefault(value: CSSProperties): Self = StObject.set(x, "colorDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorDefaultUndefined: Self = StObject.set(x, "colorDefault", js.undefined)
+    inline def setColorDefaultUndefined: Self = StObject.set(x, "colorDefault", js.undefined)
     
-    @scala.inline
-    def setImg(value: CSSProperties): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+    inline def setImg(value: CSSProperties): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+    inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

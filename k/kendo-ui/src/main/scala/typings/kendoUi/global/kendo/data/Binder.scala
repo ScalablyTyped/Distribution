@@ -21,13 +21,11 @@ object Binder {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(prototype: js.Object): typings.kendoUi.kendo.data.Binder = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(prototype.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.data.Binder]
+  inline def extend(prototype: js.Object): typings.kendoUi.kendo.data.Binder = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(prototype.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.data.Binder]
   
   /* static member */
   @JSGlobal("kendo.data.Binder.fn")
   @js.native
   def fn: typings.kendoUi.kendo.data.Binder = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.data.Binder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.data.Binder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

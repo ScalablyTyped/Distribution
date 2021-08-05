@@ -59,65 +59,46 @@ object pagination {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.pagination.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.pagination.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.pagination.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.pagination.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.pagination.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setEnablePagination(value: Boolean): Self = StObject.set(x, "enablePagination", value.asInstanceOf[js.Any])
+      inline def setEnablePagination(value: Boolean): Self = StObject.set(x, "enablePagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePaginationControls(value: Boolean): Self = StObject.set(x, "enablePaginationControls", value.asInstanceOf[js.Any])
+      inline def setEnablePaginationControls(value: Boolean): Self = StObject.set(x, "enablePaginationControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePaginationControlsUndefined: Self = StObject.set(x, "enablePaginationControls", js.undefined)
+      inline def setEnablePaginationControlsUndefined: Self = StObject.set(x, "enablePaginationControls", js.undefined)
       
-      @scala.inline
-      def setEnablePaginationUndefined: Self = StObject.set(x, "enablePagination", js.undefined)
+      inline def setEnablePaginationUndefined: Self = StObject.set(x, "enablePagination", js.undefined)
       
-      @scala.inline
-      def setPaginationCurrentPage(value: Double): Self = StObject.set(x, "paginationCurrentPage", value.asInstanceOf[js.Any])
+      inline def setPaginationCurrentPage(value: Double): Self = StObject.set(x, "paginationCurrentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationCurrentPageUndefined: Self = StObject.set(x, "paginationCurrentPage", js.undefined)
+      inline def setPaginationCurrentPageUndefined: Self = StObject.set(x, "paginationCurrentPage", js.undefined)
       
-      @scala.inline
-      def setPaginationPageSize(value: Double): Self = StObject.set(x, "paginationPageSize", value.asInstanceOf[js.Any])
+      inline def setPaginationPageSize(value: Double): Self = StObject.set(x, "paginationPageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationPageSizeUndefined: Self = StObject.set(x, "paginationPageSize", js.undefined)
+      inline def setPaginationPageSizeUndefined: Self = StObject.set(x, "paginationPageSize", js.undefined)
       
-      @scala.inline
-      def setPaginationPageSizes(value: js.Array[Double]): Self = StObject.set(x, "paginationPageSizes", value.asInstanceOf[js.Any])
+      inline def setPaginationPageSizes(value: js.Array[Double]): Self = StObject.set(x, "paginationPageSizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationPageSizesUndefined: Self = StObject.set(x, "paginationPageSizes", js.undefined)
+      inline def setPaginationPageSizesUndefined: Self = StObject.set(x, "paginationPageSizes", js.undefined)
       
-      @scala.inline
-      def setPaginationPageSizesVarargs(value: Double*): Self = StObject.set(x, "paginationPageSizes", js.Array(value :_*))
+      inline def setPaginationPageSizesVarargs(value: Double*): Self = StObject.set(x, "paginationPageSizes", js.Array(value :_*))
       
-      @scala.inline
-      def setPaginationTemplate(value: String): Self = StObject.set(x, "paginationTemplate", value.asInstanceOf[js.Any])
+      inline def setPaginationTemplate(value: String): Self = StObject.set(x, "paginationTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationTemplateUndefined: Self = StObject.set(x, "paginationTemplate", js.undefined)
+      inline def setPaginationTemplateUndefined: Self = StObject.set(x, "paginationTemplate", js.undefined)
       
-      @scala.inline
-      def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+      inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
+      inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
       
-      @scala.inline
-      def setUseExternalPagination(value: Boolean): Self = StObject.set(x, "useExternalPagination", value.asInstanceOf[js.Any])
+      inline def setUseExternalPagination(value: Boolean): Self = StObject.set(x, "useExternalPagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseExternalPaginationUndefined: Self = StObject.set(x, "useExternalPagination", js.undefined)
+      inline def setUseExternalPaginationUndefined: Self = StObject.set(x, "useExternalPagination", js.undefined)
     }
   }
   
@@ -157,8 +138,7 @@ object pagination {
   }
   object IGridPaginationApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getPage: () => Double,
       getTotalPages: () => Double,
       nextPage: () => Unit,
@@ -170,26 +150,19 @@ object pagination {
       __obj.asInstanceOf[IGridPaginationApi]
     }
     
-    @scala.inline
-    implicit class IGridPaginationApiMutableBuilder[Self <: IGridPaginationApi] (val x: Self) extends AnyVal {
+    extension [Self <: IGridPaginationApi](x: Self) {
       
-      @scala.inline
-      def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
+      inline def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTotalPages(value: () => Double): Self = StObject.set(x, "getTotalPages", js.Any.fromFunction0(value))
+      inline def setGetTotalPages(value: () => Double): Self = StObject.set(x, "getTotalPages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextPage(value: () => Unit): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
+      inline def setNextPage(value: () => Unit): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: PaginationChanged): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: PaginationChanged): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousPage(value: () => Unit): Self = StObject.set(x, "previousPage", js.Any.fromFunction0(value))
+      inline def setPreviousPage(value: () => Unit): Self = StObject.set(x, "previousPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+      inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     }
   }
   

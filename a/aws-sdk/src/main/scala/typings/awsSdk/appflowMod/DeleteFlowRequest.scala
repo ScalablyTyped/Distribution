@@ -18,22 +18,17 @@ trait DeleteFlowRequest extends StObject {
 }
 object DeleteFlowRequest {
   
-  @scala.inline
-  def apply(flowName: FlowName): DeleteFlowRequest = {
+  inline def apply(flowName: FlowName): DeleteFlowRequest = {
     val __obj = js.Dynamic.literal(flowName = flowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFlowRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFlowRequestMutableBuilder[Self <: DeleteFlowRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFlowRequest](x: Self) {
     
-    @scala.inline
-    def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
+    inline def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDelete(value: Boolean): Self = StObject.set(x, "forceDelete", value.asInstanceOf[js.Any])
+    inline def setForceDelete(value: Boolean): Self = StObject.set(x, "forceDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDeleteUndefined: Self = StObject.set(x, "forceDelete", js.undefined)
+    inline def setForceDeleteUndefined: Self = StObject.set(x, "forceDelete", js.undefined)
   }
 }

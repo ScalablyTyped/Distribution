@@ -41,6 +41,5 @@ object global {
   @JSGlobal("egg")
   @js.native
   def egg: Egg = js.native
-  @scala.inline
-  def egg_=(x: Egg): Unit = js.Dynamic.global.updateDynamic("egg")(x.asInstanceOf[js.Any])
+  inline def egg_=(x: Egg): Unit = js.Dynamic.global.updateDynamic("egg")(x.asInstanceOf[js.Any])
 }

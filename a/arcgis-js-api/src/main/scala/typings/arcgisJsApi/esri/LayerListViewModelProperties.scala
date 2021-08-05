@@ -22,25 +22,19 @@ trait LayerListViewModelProperties extends StObject {
 }
 object LayerListViewModelProperties {
   
-  @scala.inline
-  def apply(): LayerListViewModelProperties = {
+  inline def apply(): LayerListViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerListViewModelProperties]
   }
   
-  @scala.inline
-  implicit class LayerListViewModelPropertiesMutableBuilder[Self <: LayerListViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LayerListViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
+    inline def setListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setListItemCreatedFunctionUndefined: Self = StObject.set(x, "listItemCreatedFunction", js.undefined)
+    inline def setListItemCreatedFunctionUndefined: Self = StObject.set(x, "listItemCreatedFunction", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

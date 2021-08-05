@@ -8,7 +8,7 @@ trait PositionTrackingWalker
   extends StObject
      with SyntaxWalker {
   
-  var _position: js.Any
+  /* private */ var _position: js.Any
   
   def position(): Double
   
@@ -16,8 +16,7 @@ trait PositionTrackingWalker
 }
 object PositionTrackingWalker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _position: js.Any,
     position: () => Double,
     skip: ISyntaxElement => Unit,
@@ -119,16 +118,12 @@ object PositionTrackingWalker {
     __obj.asInstanceOf[PositionTrackingWalker]
   }
   
-  @scala.inline
-  implicit class PositionTrackingWalkerMutableBuilder[Self <: PositionTrackingWalker] (val x: Self) extends AnyVal {
+  extension [Self <: PositionTrackingWalker](x: Self) {
     
-    @scala.inline
-    def setPosition(value: () => Double): Self = StObject.set(x, "position", js.Any.fromFunction0(value))
+    inline def setPosition(value: () => Double): Self = StObject.set(x, "position", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSkip(value: ISyntaxElement => Unit): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+    inline def setSkip(value: ISyntaxElement => Unit): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_position(value: js.Any): Self = StObject.set(x, "_position", value.asInstanceOf[js.Any])
+    inline def set_position(value: js.Any): Self = StObject.set(x, "_position", value.asInstanceOf[js.Any])
   }
 }

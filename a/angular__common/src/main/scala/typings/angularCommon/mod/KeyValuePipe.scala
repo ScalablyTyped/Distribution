@@ -15,11 +15,11 @@ class KeyValuePipe protected ()
      with PipeTransform {
   def this(differs: KeyValueDiffers) = this()
   
-  var differ: js.Any = js.native
+  /* private */ var differ: js.Any = js.native
   
-  val differs: js.Any = js.native
+  /* private */ val differs: js.Any = js.native
   
-  var keyValues: js.Any = js.native
+  /* private */ var keyValues: js.Any = js.native
   
   def transform(): Null = js.native
   def transform(

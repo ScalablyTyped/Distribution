@@ -8,6 +8,5 @@ object ethersprojectProvidersNumbers {
   
   @js.native
   sealed trait `60` extends StObject
-  @scala.inline
-  def `60`: `60` = 60.asInstanceOf[`60`]
+  inline def `60`: `60` = 60.asInstanceOf[`60`]
 }

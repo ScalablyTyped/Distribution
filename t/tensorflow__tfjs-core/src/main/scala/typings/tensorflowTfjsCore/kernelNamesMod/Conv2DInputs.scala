@@ -13,25 +13,19 @@ trait Conv2DInputs extends StObject {
 }
 object Conv2DInputs {
   
-  @scala.inline
-  def apply(): Conv2DInputs = {
+  inline def apply(): Conv2DInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Conv2DInputs]
   }
   
-  @scala.inline
-  implicit class Conv2DInputsMutableBuilder[Self <: Conv2DInputs] (val x: Self) extends AnyVal {
+  extension [Self <: Conv2DInputs](x: Self) {
     
-    @scala.inline
-    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

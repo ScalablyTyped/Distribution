@@ -103,7 +103,7 @@ trait MeetingItem extends StObject {
   
   var OriginatorDeliveryReportRequested: Boolean = js.native
   
-  @JSName("Outlook.MeetingItem_typekey")
+  /* private */ @JSName("Outlook.MeetingItem_typekey")
   var OutlookDotMeetingItem_typekey: MeetingItem = js.native
   
   val OutlookInternalVersion: Double = js.native

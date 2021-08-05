@@ -102,8 +102,7 @@ trait IgGridSummariesMethods extends StObject {
 }
 object IgGridSummariesMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     calculateSummaries: () => Unit,
     calculateSummaryColumn: (String, js.Array[js.Any], js.Object, js.Object) => Unit,
     changeGlobalLanguage: () => Unit,
@@ -125,55 +124,38 @@ object IgGridSummariesMethods {
     __obj.asInstanceOf[IgGridSummariesMethods]
   }
   
-  @scala.inline
-  implicit class IgGridSummariesMethodsMutableBuilder[Self <: IgGridSummariesMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridSummariesMethods](x: Self) {
     
-    @scala.inline
-    def setCalculateSummaries(value: () => Unit): Self = StObject.set(x, "calculateSummaries", js.Any.fromFunction0(value))
+    inline def setCalculateSummaries(value: () => Unit): Self = StObject.set(x, "calculateSummaries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCalculateSummaryColumn(value: (String, js.Array[js.Any], js.Object, js.Object) => Unit): Self = StObject.set(x, "calculateSummaryColumn", js.Any.fromFunction4(value))
+    inline def setCalculateSummaryColumn(value: (String, js.Array[js.Any], js.Object, js.Object) => Unit): Self = StObject.set(x, "calculateSummaryColumn", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
+    inline def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeRegional(value: () => Unit): Self = StObject.set(x, "changeRegional", js.Any.fromFunction0(value))
+    inline def setChangeRegional(value: () => Unit): Self = StObject.set(x, "changeRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearAllFooterIcons(value: () => Unit): Self = StObject.set(x, "clearAllFooterIcons", js.Any.fromFunction0(value))
+    inline def setClearAllFooterIcons(value: () => Unit): Self = StObject.set(x, "clearAllFooterIcons", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSummariesRowsHidden(value: () => Unit): Self = StObject.set(x, "isSummariesRowsHidden", js.Any.fromFunction0(value))
+    inline def setIsSummariesRowsHidden(value: () => Unit): Self = StObject.set(x, "isSummariesRowsHidden", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectCheckBox(value: (js.Object, Boolean) => Unit): Self = StObject.set(x, "selectCheckBox", js.Any.fromFunction2(value))
+    inline def setSelectCheckBox(value: (js.Object, Boolean) => Unit): Self = StObject.set(x, "selectCheckBox", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowHideDialog(value: js.Object => Unit): Self = StObject.set(x, "showHideDialog", js.Any.fromFunction1(value))
+    inline def setShowHideDialog(value: js.Object => Unit): Self = StObject.set(x, "showHideDialog", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSummariesFor(value: js.Object => Unit): Self = StObject.set(x, "summariesFor", js.Any.fromFunction1(value))
+    inline def setSummariesFor(value: js.Object => Unit): Self = StObject.set(x, "summariesFor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSummaryCollection(value: () => Unit): Self = StObject.set(x, "summaryCollection", js.Any.fromFunction0(value))
+    inline def setSummaryCollection(value: () => Unit): Self = StObject.set(x, "summaryCollection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggleCheckstate(value: js.Object => Unit): Self = StObject.set(x, "toggleCheckstate", js.Any.fromFunction1(value))
+    inline def setToggleCheckstate(value: js.Object => Unit): Self = StObject.set(x, "toggleCheckstate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleDropDown(value: (String, js.Object) => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction2(value))
+    inline def setToggleDropDown(value: (String, js.Object) => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToggleSummariesRows(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "toggleSummariesRows", js.Any.fromFunction2(value))
+    inline def setToggleSummariesRows(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "toggleSummariesRows", js.Any.fromFunction2(value))
   }
 }

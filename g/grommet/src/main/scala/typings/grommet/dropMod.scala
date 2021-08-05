@@ -71,80 +71,56 @@ object dropMod {
   }
   object DropProps {
     
-    @scala.inline
-    def apply(): DropProps = {
+    inline def apply(): DropProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropProps]
     }
     
-    @scala.inline
-    implicit class DropPropsMutableBuilder[Self <: DropProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: Bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setElevation(value: ElevationType): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+      inline def setElevation(value: ElevationType): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+      inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
       
-      @scala.inline
-      def setOnClickOutside(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
+      inline def setOnClickOutside(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
+      inline def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
       
-      @scala.inline
-      def setOnEsc(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onEsc", js.Any.fromFunction1(value))
+      inline def setOnEsc(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onEsc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEscUndefined: Self = StObject.set(x, "onEsc", js.undefined)
+      inline def setOnEscUndefined: Self = StObject.set(x, "onEsc", js.undefined)
       
-      @scala.inline
-      def setOverflow(value: auto | hidden | scroll | visible | Horizontal | String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: auto | hidden | scroll | visible | Horizontal | String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+      inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      @scala.inline
-      def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+      inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
+      inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
       
-      @scala.inline
-      def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+      inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      @scala.inline
-      def setRestrictFocus(value: Boolean): Self = StObject.set(x, "restrictFocus", value.asInstanceOf[js.Any])
+      inline def setRestrictFocus(value: Boolean): Self = StObject.set(x, "restrictFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictFocusUndefined: Self = StObject.set(x, "restrictFocus", js.undefined)
+      inline def setRestrictFocusUndefined: Self = StObject.set(x, "restrictFocus", js.undefined)
       
-      @scala.inline
-      def setStretch(value: Boolean | align): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+      inline def setStretch(value: Boolean | align): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+      inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
+      inline def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
+      inline def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
     }
   }
   

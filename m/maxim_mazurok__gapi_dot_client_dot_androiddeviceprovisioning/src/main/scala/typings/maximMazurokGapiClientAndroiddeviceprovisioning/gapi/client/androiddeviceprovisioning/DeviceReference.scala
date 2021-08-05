@@ -14,25 +14,19 @@ trait DeviceReference extends StObject {
 }
 object DeviceReference {
   
-  @scala.inline
-  def apply(): DeviceReference = {
+  inline def apply(): DeviceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceReference]
   }
   
-  @scala.inline
-  implicit class DeviceReferenceMutableBuilder[Self <: DeviceReference] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceReference](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setDeviceIdentifier(value: DeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeviceIdentifier(value: DeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
+    inline def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
   }
 }

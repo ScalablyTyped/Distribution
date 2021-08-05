@@ -16,19 +16,15 @@ trait SchemaPeopleSuggestion extends StObject {
 }
 object SchemaPeopleSuggestion {
   
-  @scala.inline
-  def apply(): SchemaPeopleSuggestion = {
+  inline def apply(): SchemaPeopleSuggestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPeopleSuggestion]
   }
   
-  @scala.inline
-  implicit class SchemaPeopleSuggestionMutableBuilder[Self <: SchemaPeopleSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPeopleSuggestion](x: Self) {
     
-    @scala.inline
-    def setPerson(value: SchemaPerson): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
+    inline def setPerson(value: SchemaPerson): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
+    inline def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
   }
 }

@@ -16,9 +16,9 @@ object gridBaseMod {
   trait GridBase[T /* <: GroupComponentCfg */]
     extends typings.antvComponent.groupComponentMod.default[T] {
     
-    var drawAlternateRegion: js.Any = js.native
+    /* private */ var drawAlternateRegion: js.Any = js.native
     
-    var drawGrid: js.Any = js.native
+    /* private */ var drawGrid: js.Any = js.native
     
     /* protected */ def getAlternatePath(prePoints: js.Array[Point], points: js.Array[Point]): js.Array[js.Any] = js.native
     
@@ -37,6 +37,6 @@ object gridBaseMod {
       */
     /* protected */ def getLineType(): String = js.native
     
-    var getPathStyle: js.Any = js.native
+    /* private */ var getPathStyle: js.Any = js.native
   }
 }

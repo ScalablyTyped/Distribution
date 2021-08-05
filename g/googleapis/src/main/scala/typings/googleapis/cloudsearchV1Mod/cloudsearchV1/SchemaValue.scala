@@ -23,49 +23,35 @@ trait SchemaValue extends StObject {
 }
 object SchemaValue {
   
-  @scala.inline
-  def apply(): SchemaValue = {
+  inline def apply(): SchemaValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaValue]
   }
   
-  @scala.inline
-  implicit class SchemaValueMutableBuilder[Self <: SchemaValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaValue](x: Self) {
     
-    @scala.inline
-    def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
+    inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
+    inline def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
-    @scala.inline
-    def setDateValue(value: SchemaDate): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
+    inline def setDateValue(value: SchemaDate): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateValueUndefined: Self = StObject.set(x, "dateValue", js.undefined)
+    inline def setDateValueUndefined: Self = StObject.set(x, "dateValue", js.undefined)
     
-    @scala.inline
-    def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    inline def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
+    inline def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
-    @scala.inline
-    def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
+    inline def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
+    inline def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
-    @scala.inline
-    def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
+    inline def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
+    inline def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
   }
 }

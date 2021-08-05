@@ -12,16 +12,13 @@ trait Elastic
 }
 object Elastic {
   
-  @scala.inline
-  def apply(config: (Double, Double) => Elastic, getRatio: Double => Double): Elastic = {
+  inline def apply(config: (Double, Double) => Elastic, getRatio: Double => Double): Elastic = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction2(config), getRatio = js.Any.fromFunction1(getRatio))
     __obj.asInstanceOf[Elastic]
   }
   
-  @scala.inline
-  implicit class ElasticMutableBuilder[Self <: Elastic] (val x: Self) extends AnyVal {
+  extension [Self <: Elastic](x: Self) {
     
-    @scala.inline
-    def setConfig(value: (Double, Double) => Elastic): Self = StObject.set(x, "config", js.Any.fromFunction2(value))
+    inline def setConfig(value: (Double, Double) => Elastic): Self = StObject.set(x, "config", js.Any.fromFunction2(value))
   }
 }

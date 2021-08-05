@@ -11,9 +11,7 @@ object TypeUtil {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def IsArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsArray(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def IsNullOrUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNullOrUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsNullOrUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNullOrUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

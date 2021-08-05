@@ -11,16 +11,13 @@ trait AsReactType extends StObject {
 }
 object AsReactType {
   
-  @scala.inline
-  def apply(as: ReactType[js.Any]): AsReactType = {
+  inline def apply(as: ReactType[js.Any]): AsReactType = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsReactType]
   }
   
-  @scala.inline
-  implicit class AsReactTypeMutableBuilder[Self <: AsReactType] (val x: Self) extends AnyVal {
+  extension [Self <: AsReactType](x: Self) {
     
-    @scala.inline
-    def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
   }
 }

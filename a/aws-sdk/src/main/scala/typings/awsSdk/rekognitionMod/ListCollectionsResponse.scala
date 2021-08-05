@@ -23,37 +23,27 @@ trait ListCollectionsResponse extends StObject {
 }
 object ListCollectionsResponse {
   
-  @scala.inline
-  def apply(): ListCollectionsResponse = {
+  inline def apply(): ListCollectionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCollectionsResponse]
   }
   
-  @scala.inline
-  implicit class ListCollectionsResponseMutableBuilder[Self <: ListCollectionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCollectionsResponse](x: Self) {
     
-    @scala.inline
-    def setCollectionIds(value: CollectionIdList): Self = StObject.set(x, "CollectionIds", value.asInstanceOf[js.Any])
+    inline def setCollectionIds(value: CollectionIdList): Self = StObject.set(x, "CollectionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionIdsUndefined: Self = StObject.set(x, "CollectionIds", js.undefined)
+    inline def setCollectionIdsUndefined: Self = StObject.set(x, "CollectionIds", js.undefined)
     
-    @scala.inline
-    def setCollectionIdsVarargs(value: CollectionId*): Self = StObject.set(x, "CollectionIds", js.Array(value :_*))
+    inline def setCollectionIdsVarargs(value: CollectionId*): Self = StObject.set(x, "CollectionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setFaceModelVersions(value: FaceModelVersionList): Self = StObject.set(x, "FaceModelVersions", value.asInstanceOf[js.Any])
+    inline def setFaceModelVersions(value: FaceModelVersionList): Self = StObject.set(x, "FaceModelVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceModelVersionsUndefined: Self = StObject.set(x, "FaceModelVersions", js.undefined)
+    inline def setFaceModelVersionsUndefined: Self = StObject.set(x, "FaceModelVersions", js.undefined)
     
-    @scala.inline
-    def setFaceModelVersionsVarargs(value: String*): Self = StObject.set(x, "FaceModelVersions", js.Array(value :_*))
+    inline def setFaceModelVersionsVarargs(value: String*): Self = StObject.set(x, "FaceModelVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

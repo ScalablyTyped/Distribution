@@ -12,16 +12,13 @@ trait MlOpenJob
 }
 object MlOpenJob {
   
-  @scala.inline
-  def apply(job_id: String): MlOpenJob = {
+  inline def apply(job_id: String): MlOpenJob = {
     val __obj = js.Dynamic.literal(job_id = job_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlOpenJob]
   }
   
-  @scala.inline
-  implicit class MlOpenJobMutableBuilder[Self <: MlOpenJob] (val x: Self) extends AnyVal {
+  extension [Self <: MlOpenJob](x: Self) {
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
   }
 }

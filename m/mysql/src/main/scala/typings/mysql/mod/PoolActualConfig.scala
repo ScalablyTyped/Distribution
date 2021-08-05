@@ -12,16 +12,13 @@ trait PoolActualConfig
 }
 object PoolActualConfig {
   
-  @scala.inline
-  def apply(connectionConfig: ConnectionConfig): PoolActualConfig = {
+  inline def apply(connectionConfig: ConnectionConfig): PoolActualConfig = {
     val __obj = js.Dynamic.literal(connectionConfig = connectionConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[PoolActualConfig]
   }
   
-  @scala.inline
-  implicit class PoolActualConfigMutableBuilder[Self <: PoolActualConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PoolActualConfig](x: Self) {
     
-    @scala.inline
-    def setConnectionConfig(value: ConnectionConfig): Self = StObject.set(x, "connectionConfig", value.asInstanceOf[js.Any])
+    inline def setConnectionConfig(value: ConnectionConfig): Self = StObject.set(x, "connectionConfig", value.asInstanceOf[js.Any])
   }
 }

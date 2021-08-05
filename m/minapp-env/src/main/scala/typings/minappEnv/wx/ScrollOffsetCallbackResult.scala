@@ -20,25 +20,19 @@ trait ScrollOffsetCallbackResult extends StObject {
 }
 object ScrollOffsetCallbackResult {
   
-  @scala.inline
-  def apply(dataset: js.Object, id: String, scrollLeft: Double, scrollTop: Double): ScrollOffsetCallbackResult = {
+  inline def apply(dataset: js.Object, id: String, scrollLeft: Double, scrollTop: Double): ScrollOffsetCallbackResult = {
     val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollOffsetCallbackResult]
   }
   
-  @scala.inline
-  implicit class ScrollOffsetCallbackResultMutableBuilder[Self <: ScrollOffsetCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollOffsetCallbackResult](x: Self) {
     
-    @scala.inline
-    def setDataset(value: js.Object): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: js.Object): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
   }
 }

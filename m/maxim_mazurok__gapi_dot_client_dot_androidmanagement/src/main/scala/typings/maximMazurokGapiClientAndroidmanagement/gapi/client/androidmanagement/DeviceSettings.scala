@@ -29,55 +29,39 @@ trait DeviceSettings extends StObject {
 }
 object DeviceSettings {
   
-  @scala.inline
-  def apply(): DeviceSettings = {
+  inline def apply(): DeviceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceSettings]
   }
   
-  @scala.inline
-  implicit class DeviceSettingsMutableBuilder[Self <: DeviceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceSettings](x: Self) {
     
-    @scala.inline
-    def setAdbEnabled(value: Boolean): Self = StObject.set(x, "adbEnabled", value.asInstanceOf[js.Any])
+    inline def setAdbEnabled(value: Boolean): Self = StObject.set(x, "adbEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdbEnabledUndefined: Self = StObject.set(x, "adbEnabled", js.undefined)
+    inline def setAdbEnabledUndefined: Self = StObject.set(x, "adbEnabled", js.undefined)
     
-    @scala.inline
-    def setDevelopmentSettingsEnabled(value: Boolean): Self = StObject.set(x, "developmentSettingsEnabled", value.asInstanceOf[js.Any])
+    inline def setDevelopmentSettingsEnabled(value: Boolean): Self = StObject.set(x, "developmentSettingsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevelopmentSettingsEnabledUndefined: Self = StObject.set(x, "developmentSettingsEnabled", js.undefined)
+    inline def setDevelopmentSettingsEnabledUndefined: Self = StObject.set(x, "developmentSettingsEnabled", js.undefined)
     
-    @scala.inline
-    def setEncryptionStatus(value: String): Self = StObject.set(x, "encryptionStatus", value.asInstanceOf[js.Any])
+    inline def setEncryptionStatus(value: String): Self = StObject.set(x, "encryptionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionStatusUndefined: Self = StObject.set(x, "encryptionStatus", js.undefined)
+    inline def setEncryptionStatusUndefined: Self = StObject.set(x, "encryptionStatus", js.undefined)
     
-    @scala.inline
-    def setIsDeviceSecure(value: Boolean): Self = StObject.set(x, "isDeviceSecure", value.asInstanceOf[js.Any])
+    inline def setIsDeviceSecure(value: Boolean): Self = StObject.set(x, "isDeviceSecure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDeviceSecureUndefined: Self = StObject.set(x, "isDeviceSecure", js.undefined)
+    inline def setIsDeviceSecureUndefined: Self = StObject.set(x, "isDeviceSecure", js.undefined)
     
-    @scala.inline
-    def setIsEncrypted(value: Boolean): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
+    inline def setIsEncrypted(value: Boolean): Self = StObject.set(x, "isEncrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
+    inline def setIsEncryptedUndefined: Self = StObject.set(x, "isEncrypted", js.undefined)
     
-    @scala.inline
-    def setUnknownSourcesEnabled(value: Boolean): Self = StObject.set(x, "unknownSourcesEnabled", value.asInstanceOf[js.Any])
+    inline def setUnknownSourcesEnabled(value: Boolean): Self = StObject.set(x, "unknownSourcesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownSourcesEnabledUndefined: Self = StObject.set(x, "unknownSourcesEnabled", js.undefined)
+    inline def setUnknownSourcesEnabledUndefined: Self = StObject.set(x, "unknownSourcesEnabled", js.undefined)
     
-    @scala.inline
-    def setVerifyAppsEnabled(value: Boolean): Self = StObject.set(x, "verifyAppsEnabled", value.asInstanceOf[js.Any])
+    inline def setVerifyAppsEnabled(value: Boolean): Self = StObject.set(x, "verifyAppsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyAppsEnabledUndefined: Self = StObject.set(x, "verifyAppsEnabled", js.undefined)
+    inline def setVerifyAppsEnabledUndefined: Self = StObject.set(x, "verifyAppsEnabled", js.undefined)
   }
 }

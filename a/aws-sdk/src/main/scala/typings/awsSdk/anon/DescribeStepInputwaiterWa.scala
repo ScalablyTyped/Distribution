@@ -25,25 +25,19 @@ trait DescribeStepInputwaiterWa extends StObject {
 }
 object DescribeStepInputwaiterWa {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId, StepId: StepId): DescribeStepInputwaiterWa = {
+  inline def apply(ClusterId: ClusterId, StepId: StepId): DescribeStepInputwaiterWa = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], StepId = StepId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStepInputwaiterWa]
   }
   
-  @scala.inline
-  implicit class DescribeStepInputwaiterWaMutableBuilder[Self <: DescribeStepInputwaiterWa] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStepInputwaiterWa](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepId(value: StepId): Self = StObject.set(x, "StepId", value.asInstanceOf[js.Any])
+    inline def setStepId(value: StepId): Self = StObject.set(x, "StepId", value.asInstanceOf[js.Any])
   }
 }

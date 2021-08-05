@@ -15,9 +15,9 @@ object valueMod {
     def this(_source: ValueSource) = this()
     def this(_source: ValueSource, _value: String) = this()
     
-    val _source: js.Any = js.native
+    /* private */ val _source: js.Any = js.native
     
-    val _value: js.Any = js.native
+    /* private */ val _value: js.Any = js.native
     
     /**
       * Gets the value as a boolean.

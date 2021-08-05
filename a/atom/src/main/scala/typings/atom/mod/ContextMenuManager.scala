@@ -12,16 +12,13 @@ trait ContextMenuManager extends StObject {
 }
 object ContextMenuManager {
   
-  @scala.inline
-  def apply(add: StringDictionary[js.Array[ContextMenuOptions]] => Disposable): ContextMenuManager = {
+  inline def apply(add: StringDictionary[js.Array[ContextMenuOptions]] => Disposable): ContextMenuManager = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
     __obj.asInstanceOf[ContextMenuManager]
   }
   
-  @scala.inline
-  implicit class ContextMenuManagerMutableBuilder[Self <: ContextMenuManager] (val x: Self) extends AnyVal {
+  extension [Self <: ContextMenuManager](x: Self) {
     
-    @scala.inline
-    def setAdd(value: StringDictionary[js.Array[ContextMenuOptions]] => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: StringDictionary[js.Array[ContextMenuOptions]] => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
   }
 }

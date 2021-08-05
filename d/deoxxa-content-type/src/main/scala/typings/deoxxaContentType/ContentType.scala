@@ -18,27 +18,21 @@ object ContentType {
   }
   object MediaType {
     
-    @scala.inline
-    def apply(params: js.Any, `type`: String): MediaType = {
+    inline def apply(params: js.Any, `type`: String): MediaType = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaType]
     }
     
-    @scala.inline
-    implicit class MediaTypeMutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
+    extension [Self <: MediaType](x: Self) {
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQ(value: Double): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+      inline def setQ(value: Double): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+      inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,26 +65,20 @@ object ContentType {
   }
   object SelectOptions {
     
-    @scala.inline
-    def apply(): SelectOptions = {
+    inline def apply(): SelectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectOptions]
     }
     
-    @scala.inline
-    implicit class SelectOptionsMutableBuilder[Self <: SelectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SelectOptions](x: Self) {
       
-      @scala.inline
-      def setSortAccepted(value: Boolean): Self = StObject.set(x, "sortAccepted", value.asInstanceOf[js.Any])
+      inline def setSortAccepted(value: Boolean): Self = StObject.set(x, "sortAccepted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAcceptedUndefined: Self = StObject.set(x, "sortAccepted", js.undefined)
+      inline def setSortAcceptedUndefined: Self = StObject.set(x, "sortAccepted", js.undefined)
       
-      @scala.inline
-      def setSortAvailable(value: Boolean): Self = StObject.set(x, "sortAvailable", value.asInstanceOf[js.Any])
+      inline def setSortAvailable(value: Boolean): Self = StObject.set(x, "sortAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAvailableUndefined: Self = StObject.set(x, "sortAvailable", js.undefined)
+      inline def setSortAvailableUndefined: Self = StObject.set(x, "sortAvailable", js.undefined)
     }
   }
 }

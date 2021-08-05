@@ -15,26 +15,20 @@ trait jsmediatagsError extends StObject {
 }
 object jsmediatagsError {
   
-  @scala.inline
-  def apply(info: String, `type`: String): jsmediatagsError = {
+  inline def apply(info: String, `type`: String): jsmediatagsError = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[jsmediatagsError]
   }
   
-  @scala.inline
-  implicit class jsmediatagsErrorMutableBuilder[Self <: jsmediatagsError] (val x: Self) extends AnyVal {
+  extension [Self <: jsmediatagsError](x: Self) {
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

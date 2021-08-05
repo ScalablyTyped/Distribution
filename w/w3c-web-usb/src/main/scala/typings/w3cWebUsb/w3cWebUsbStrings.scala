@@ -10,114 +10,97 @@ object w3cWebUsbStrings {
   sealed trait babble
     extends StObject
        with USBTransferStatus
-  @scala.inline
-  def babble: babble = "babble".asInstanceOf[babble]
+  inline def babble: babble = "babble".asInstanceOf[babble]
   
   @js.native
   sealed trait bulk
     extends StObject
        with USBEndpointType
-  @scala.inline
-  def bulk: bulk = "bulk".asInstanceOf[bulk]
+  inline def bulk: bulk = "bulk".asInstanceOf[bulk]
   
   @js.native
   sealed trait `class`
     extends StObject
        with USBRequestType
-  @scala.inline
-  def `class`: `class` = "class".asInstanceOf[`class`]
+  inline def `class`: `class` = "class".asInstanceOf[`class`]
   
   @js.native
   sealed trait connect extends StObject
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
   sealed trait device
     extends StObject
        with USBRecipient
-  @scala.inline
-  def device: device = "device".asInstanceOf[device]
+  inline def device: device = "device".asInstanceOf[device]
   
   @js.native
   sealed trait disconnect extends StObject
-  @scala.inline
-  def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  inline def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
   @js.native
   sealed trait endpoint
     extends StObject
        with USBRecipient
-  @scala.inline
-  def endpoint: endpoint = "endpoint".asInstanceOf[endpoint]
+  inline def endpoint: endpoint = "endpoint".asInstanceOf[endpoint]
   
   @js.native
   sealed trait in
     extends StObject
        with USBDirection
-  @scala.inline
-  def in: in = "in".asInstanceOf[in]
+  inline def in: in = "in".asInstanceOf[in]
   
   @js.native
   sealed trait interface
     extends StObject
        with USBRecipient
-  @scala.inline
-  def interface: interface = "interface".asInstanceOf[interface]
+  inline def interface: interface = "interface".asInstanceOf[interface]
   
   @js.native
   sealed trait interrupt
     extends StObject
        with USBEndpointType
-  @scala.inline
-  def interrupt: interrupt = "interrupt".asInstanceOf[interrupt]
+  inline def interrupt: interrupt = "interrupt".asInstanceOf[interrupt]
   
   @js.native
   sealed trait isochronous
     extends StObject
        with USBEndpointType
-  @scala.inline
-  def isochronous: isochronous = "isochronous".asInstanceOf[isochronous]
+  inline def isochronous: isochronous = "isochronous".asInstanceOf[isochronous]
   
   @js.native
   sealed trait ok
     extends StObject
        with USBTransferStatus
-  @scala.inline
-  def ok: ok = "ok".asInstanceOf[ok]
+  inline def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
   sealed trait other
     extends StObject
        with USBRecipient
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait out
     extends StObject
        with USBDirection
-  @scala.inline
-  def out: out = "out".asInstanceOf[out]
+  inline def out: out = "out".asInstanceOf[out]
   
   @js.native
   sealed trait stall
     extends StObject
        with USBTransferStatus
-  @scala.inline
-  def stall: stall = "stall".asInstanceOf[stall]
+  inline def stall: stall = "stall".asInstanceOf[stall]
   
   @js.native
   sealed trait standard
     extends StObject
        with USBRequestType
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait vendor
     extends StObject
        with USBRequestType
-  @scala.inline
-  def vendor: vendor = "vendor".asInstanceOf[vendor]
+  inline def vendor: vendor = "vendor".asInstanceOf[vendor]
 }

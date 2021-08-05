@@ -26,37 +26,27 @@ trait IHttpProxy
 }
 object IHttpProxy {
   
-  @scala.inline
-  def apply(): IHttpProxy = {
+  inline def apply(): IHttpProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHttpProxy]
   }
   
-  @scala.inline
-  implicit class IHttpProxyMutableBuilder[Self <: IHttpProxy] (val x: Self) extends AnyVal {
+  extension [Self <: IHttpProxy](x: Self) {
     
-    @scala.inline
-    def setActionMethods(value: js.Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
+    inline def setActionMethods(value: js.Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionMethodsUndefined: Self = StObject.set(x, "actionMethods", js.undefined)
+    inline def setActionMethodsUndefined: Self = StObject.set(x, "actionMethods", js.undefined)
     
-    @scala.inline
-    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
-    @scala.inline
-    def setGetMethod(value: /* request */ js.UndefOr[IRequest] => String): Self = StObject.set(x, "getMethod", js.Any.fromFunction1(value))
+    inline def setGetMethod(value: /* request */ js.UndefOr[IRequest] => String): Self = StObject.set(x, "getMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
+    inline def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }
 }

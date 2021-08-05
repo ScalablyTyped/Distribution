@@ -18,25 +18,19 @@ trait ListGroupsRequest extends StObject {
 }
 object ListGroupsRequest {
   
-  @scala.inline
-  def apply(): ListGroupsRequest = {
+  inline def apply(): ListGroupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGroupsRequest]
   }
   
-  @scala.inline
-  implicit class ListGroupsRequestMutableBuilder[Self <: ListGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

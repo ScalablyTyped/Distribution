@@ -11,19 +11,15 @@ trait CharacterMaskConfig extends StObject {
 }
 object CharacterMaskConfig {
   
-  @scala.inline
-  def apply(): CharacterMaskConfig = {
+  inline def apply(): CharacterMaskConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CharacterMaskConfig]
   }
   
-  @scala.inline
-  implicit class CharacterMaskConfigMutableBuilder[Self <: CharacterMaskConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CharacterMaskConfig](x: Self) {
     
-    @scala.inline
-    def setMaskingCharacter(value: String): Self = StObject.set(x, "maskingCharacter", value.asInstanceOf[js.Any])
+    inline def setMaskingCharacter(value: String): Self = StObject.set(x, "maskingCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskingCharacterUndefined: Self = StObject.set(x, "maskingCharacter", js.undefined)
+    inline def setMaskingCharacterUndefined: Self = StObject.set(x, "maskingCharacter", js.undefined)
   }
 }

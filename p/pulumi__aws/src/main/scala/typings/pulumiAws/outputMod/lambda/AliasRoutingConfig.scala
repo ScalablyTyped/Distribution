@@ -14,19 +14,15 @@ trait AliasRoutingConfig extends StObject {
 }
 object AliasRoutingConfig {
   
-  @scala.inline
-  def apply(): AliasRoutingConfig = {
+  inline def apply(): AliasRoutingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AliasRoutingConfig]
   }
   
-  @scala.inline
-  implicit class AliasRoutingConfigMutableBuilder[Self <: AliasRoutingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AliasRoutingConfig](x: Self) {
     
-    @scala.inline
-    def setAdditionalVersionWeights(value: StringDictionary[Double]): Self = StObject.set(x, "additionalVersionWeights", value.asInstanceOf[js.Any])
+    inline def setAdditionalVersionWeights(value: StringDictionary[Double]): Self = StObject.set(x, "additionalVersionWeights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalVersionWeightsUndefined: Self = StObject.set(x, "additionalVersionWeights", js.undefined)
+    inline def setAdditionalVersionWeightsUndefined: Self = StObject.set(x, "additionalVersionWeights", js.undefined)
   }
 }

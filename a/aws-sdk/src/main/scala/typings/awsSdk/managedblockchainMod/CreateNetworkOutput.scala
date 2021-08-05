@@ -18,25 +18,19 @@ trait CreateNetworkOutput extends StObject {
 }
 object CreateNetworkOutput {
   
-  @scala.inline
-  def apply(): CreateNetworkOutput = {
+  inline def apply(): CreateNetworkOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNetworkOutput]
   }
   
-  @scala.inline
-  implicit class CreateNetworkOutputMutableBuilder[Self <: CreateNetworkOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNetworkOutput](x: Self) {
     
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
+    inline def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
+    inline def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
   }
 }

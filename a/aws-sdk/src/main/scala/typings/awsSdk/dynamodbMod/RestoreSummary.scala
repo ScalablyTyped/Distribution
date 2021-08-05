@@ -28,31 +28,23 @@ trait RestoreSummary extends StObject {
 }
 object RestoreSummary {
   
-  @scala.inline
-  def apply(RestoreDateTime: Date, RestoreInProgress: RestoreInProgress): RestoreSummary = {
+  inline def apply(RestoreDateTime: Date, RestoreInProgress: RestoreInProgress): RestoreSummary = {
     val __obj = js.Dynamic.literal(RestoreDateTime = RestoreDateTime.asInstanceOf[js.Any], RestoreInProgress = RestoreInProgress.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreSummary]
   }
   
-  @scala.inline
-  implicit class RestoreSummaryMutableBuilder[Self <: RestoreSummary] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreSummary](x: Self) {
     
-    @scala.inline
-    def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
+    inline def setRestoreDateTime(value: Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreInProgress(value: RestoreInProgress): Self = StObject.set(x, "RestoreInProgress", value.asInstanceOf[js.Any])
+    inline def setRestoreInProgress(value: RestoreInProgress): Self = StObject.set(x, "RestoreInProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupArn(value: BackupArn): Self = StObject.set(x, "SourceBackupArn", value.asInstanceOf[js.Any])
+    inline def setSourceBackupArn(value: BackupArn): Self = StObject.set(x, "SourceBackupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupArnUndefined: Self = StObject.set(x, "SourceBackupArn", js.undefined)
+    inline def setSourceBackupArnUndefined: Self = StObject.set(x, "SourceBackupArn", js.undefined)
     
-    @scala.inline
-    def setSourceTableArn(value: TableArn): Self = StObject.set(x, "SourceTableArn", value.asInstanceOf[js.Any])
+    inline def setSourceTableArn(value: TableArn): Self = StObject.set(x, "SourceTableArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTableArnUndefined: Self = StObject.set(x, "SourceTableArn", js.undefined)
+    inline def setSourceTableArnUndefined: Self = StObject.set(x, "SourceTableArn", js.undefined)
   }
 }

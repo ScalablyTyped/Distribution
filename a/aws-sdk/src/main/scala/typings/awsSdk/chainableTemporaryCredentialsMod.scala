@@ -47,40 +47,30 @@ object chainableTemporaryCredentialsMod {
     }
     object ChainableTemporaryCredentialsOptions {
       
-      @scala.inline
-      def apply(): ChainableTemporaryCredentialsOptions = {
+      inline def apply(): ChainableTemporaryCredentialsOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ChainableTemporaryCredentialsOptions]
       }
       
-      @scala.inline
-      implicit class ChainableTemporaryCredentialsOptionsMutableBuilder[Self <: ChainableTemporaryCredentialsOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ChainableTemporaryCredentialsOptions](x: Self) {
         
-        @scala.inline
-        def setMasterCredentials(value: Credentials): Self = StObject.set(x, "masterCredentials", value.asInstanceOf[js.Any])
+        inline def setMasterCredentials(value: Credentials): Self = StObject.set(x, "masterCredentials", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMasterCredentialsUndefined: Self = StObject.set(x, "masterCredentials", js.undefined)
+        inline def setMasterCredentialsUndefined: Self = StObject.set(x, "masterCredentials", js.undefined)
         
-        @scala.inline
-        def setParams(value: AssumeRoleRequest | GetSessionTokenRequest): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: AssumeRoleRequest | GetSessionTokenRequest): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setStsConfig(value: ClientConfiguration): Self = StObject.set(x, "stsConfig", value.asInstanceOf[js.Any])
+        inline def setStsConfig(value: ClientConfiguration): Self = StObject.set(x, "stsConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStsConfigUndefined: Self = StObject.set(x, "stsConfig", js.undefined)
+        inline def setStsConfigUndefined: Self = StObject.set(x, "stsConfig", js.undefined)
         
-        @scala.inline
-        def setTokenCodeFn(
+        inline def setTokenCodeFn(
           value: (/* serialNumber */ String, /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit]) => Unit
         ): Self = StObject.set(x, "tokenCodeFn", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setTokenCodeFnUndefined: Self = StObject.set(x, "tokenCodeFn", js.undefined)
+        inline def setTokenCodeFnUndefined: Self = StObject.set(x, "tokenCodeFn", js.undefined)
       }
     }
   }

@@ -20,8 +20,7 @@ trait OmitPermissionSetusergrou extends StObject {
 }
 object OmitPermissionSetusergrou {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     file: ObjectOperationPermissions,
     `object`: ObjectOperationPermissions,
     other: Execute,
@@ -32,25 +31,18 @@ object OmitPermissionSetusergrou {
     __obj.asInstanceOf[OmitPermissionSetusergrou]
   }
   
-  @scala.inline
-  implicit class OmitPermissionSetusergrouMutableBuilder[Self <: OmitPermissionSetusergrou] (val x: Self) extends AnyVal {
+  extension [Self <: OmitPermissionSetusergrou](x: Self) {
     
-    @scala.inline
-    def setFile(value: ObjectOperationPermissions): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: ObjectOperationPermissions): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: ObjectOperationPermissions): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ObjectOperationPermissions): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: Execute): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: Execute): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: ObjectOperationPermissions): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ObjectOperationPermissions): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUsers(value: ObjectOperationPermissions): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: ObjectOperationPermissions): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait StringFilterBuilder extends StObject {
 }
 object StringFilterBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setCaseSensitive: Boolean => StringFilterBuilder,
     setMatchType: MatchType => StringFilterBuilder,
     setRealtimeTrigger: Boolean => StringFilterBuilder
@@ -34,16 +33,12 @@ object StringFilterBuilder {
     __obj.asInstanceOf[StringFilterBuilder]
   }
   
-  @scala.inline
-  implicit class StringFilterBuilderMutableBuilder[Self <: StringFilterBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: StringFilterBuilder](x: Self) {
     
-    @scala.inline
-    def setSetCaseSensitive(value: Boolean => StringFilterBuilder): Self = StObject.set(x, "setCaseSensitive", js.Any.fromFunction1(value))
+    inline def setSetCaseSensitive(value: Boolean => StringFilterBuilder): Self = StObject.set(x, "setCaseSensitive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMatchType(value: MatchType => StringFilterBuilder): Self = StObject.set(x, "setMatchType", js.Any.fromFunction1(value))
+    inline def setSetMatchType(value: MatchType => StringFilterBuilder): Self = StObject.set(x, "setMatchType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRealtimeTrigger(value: Boolean => StringFilterBuilder): Self = StObject.set(x, "setRealtimeTrigger", js.Any.fromFunction1(value))
+    inline def setSetRealtimeTrigger(value: Boolean => StringFilterBuilder): Self = StObject.set(x, "setRealtimeTrigger", js.Any.fromFunction1(value))
   }
 }

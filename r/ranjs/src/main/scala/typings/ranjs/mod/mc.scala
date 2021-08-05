@@ -22,10 +22,8 @@ object mc {
     def this(logDensity: js.Function1[/* x */ js.Array[Double], Double], config: Dim, initialState: State) = this()
   }
   
-  @scala.inline
-  def gr(samples: js.Array[js.Array[js.Array[Double]]]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("gr")(samples.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
-  @scala.inline
-  def gr(samples: js.Array[js.Array[js.Array[Double]]], maxLength: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("gr")(samples.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+  inline def gr(samples: js.Array[js.Array[js.Array[Double]]]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("gr")(samples.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
+  inline def gr(samples: js.Array[js.Array[js.Array[Double]]], maxLength: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("gr")(samples.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   
   type MCMC = typings.ranjs.mod._mc.MCMC
   

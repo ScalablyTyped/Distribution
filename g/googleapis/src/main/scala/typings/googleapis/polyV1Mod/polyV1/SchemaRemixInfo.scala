@@ -18,22 +18,17 @@ trait SchemaRemixInfo extends StObject {
 }
 object SchemaRemixInfo {
   
-  @scala.inline
-  def apply(): SchemaRemixInfo = {
+  inline def apply(): SchemaRemixInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRemixInfo]
   }
   
-  @scala.inline
-  implicit class SchemaRemixInfoMutableBuilder[Self <: SchemaRemixInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRemixInfo](x: Self) {
     
-    @scala.inline
-    def setSourceAsset(value: js.Array[String]): Self = StObject.set(x, "sourceAsset", value.asInstanceOf[js.Any])
+    inline def setSourceAsset(value: js.Array[String]): Self = StObject.set(x, "sourceAsset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAssetUndefined: Self = StObject.set(x, "sourceAsset", js.undefined)
+    inline def setSourceAssetUndefined: Self = StObject.set(x, "sourceAsset", js.undefined)
     
-    @scala.inline
-    def setSourceAssetVarargs(value: String*): Self = StObject.set(x, "sourceAsset", js.Array(value :_*))
+    inline def setSourceAssetVarargs(value: String*): Self = StObject.set(x, "sourceAsset", js.Array(value :_*))
   }
 }

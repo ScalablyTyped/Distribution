@@ -15,10 +15,8 @@ object CanvasFeature {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def None: `0` = 0.asInstanceOf[`0`]
+    inline def None: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SpriteCanvas: `1` = 1.asInstanceOf[`1`]
+    inline def SpriteCanvas: `1` = 1.asInstanceOf[`1`]
   }
 }

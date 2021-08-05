@@ -22,50 +22,36 @@ object histogramMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(field: String): Options = {
+    inline def apply(field: String): Options = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Tuple2[String, String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Tuple2[String, String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setBinWidth(value: Double): Self = StObject.set(x, "binWidth", value.asInstanceOf[js.Any])
+      inline def setBinWidth(value: Double): Self = StObject.set(x, "binWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinWidthUndefined: Self = StObject.set(x, "binWidth", js.undefined)
+      inline def setBinWidthUndefined: Self = StObject.set(x, "binWidth", js.undefined)
       
-      @scala.inline
-      def setBins(value: Double): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+      inline def setBins(value: Double): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
+      inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupBy(value: js.Array[String]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      inline def setGroupBy(value: js.Array[String]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+      inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      @scala.inline
-      def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
+      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
 }

@@ -23,19 +23,15 @@ trait ASPxClientReportDesignerComponentAddedEventArgs
 }
 object ASPxClientReportDesignerComponentAddedEventArgs {
   
-  @scala.inline
-  def apply(Model: js.Any, Parent: js.Any): ASPxClientReportDesignerComponentAddedEventArgs = {
+  inline def apply(Model: js.Any, Parent: js.Any): ASPxClientReportDesignerComponentAddedEventArgs = {
     val __obj = js.Dynamic.literal(Model = Model.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerComponentAddedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportDesignerComponentAddedEventArgsMutableBuilder[Self <: ASPxClientReportDesignerComponentAddedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportDesignerComponentAddedEventArgs](x: Self) {
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

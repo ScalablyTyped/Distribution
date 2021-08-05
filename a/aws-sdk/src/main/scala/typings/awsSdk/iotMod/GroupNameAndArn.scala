@@ -18,25 +18,19 @@ trait GroupNameAndArn extends StObject {
 }
 object GroupNameAndArn {
   
-  @scala.inline
-  def apply(): GroupNameAndArn = {
+  inline def apply(): GroupNameAndArn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupNameAndArn]
   }
   
-  @scala.inline
-  implicit class GroupNameAndArnMutableBuilder[Self <: GroupNameAndArn] (val x: Self) extends AnyVal {
+  extension [Self <: GroupNameAndArn](x: Self) {
     
-    @scala.inline
-    def setGroupArn(value: ThingGroupArn): Self = StObject.set(x, "groupArn", value.asInstanceOf[js.Any])
+    inline def setGroupArn(value: ThingGroupArn): Self = StObject.set(x, "groupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupArnUndefined: Self = StObject.set(x, "groupArn", js.undefined)
+    inline def setGroupArnUndefined: Self = StObject.set(x, "groupArn", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: ThingGroupName): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: ThingGroupName): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
   }
 }

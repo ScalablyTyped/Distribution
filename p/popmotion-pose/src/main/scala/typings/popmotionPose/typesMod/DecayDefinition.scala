@@ -16,17 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object DecayDefinition {
   
-  @scala.inline
-  def apply(ease: Unit): DecayDefinition = {
+  inline def apply(ease: Unit): DecayDefinition = {
     val __obj = js.Dynamic.literal(ease = ease.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("decay")
     __obj.asInstanceOf[DecayDefinition]
   }
   
-  @scala.inline
-  implicit class DecayDefinitionMutableBuilder[Self <: DecayDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: DecayDefinition](x: Self) {
     
-    @scala.inline
-    def setType(value: decay): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: decay): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -68,8 +68,7 @@ trait XOfficeInstallationDirectories
 }
 object XOfficeInstallationDirectories {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OfficeInstallationDirectoryURL: String,
     OfficeUserDataDirectoryURL: String,
     acquire: () => Unit,
@@ -84,25 +83,18 @@ object XOfficeInstallationDirectories {
     __obj.asInstanceOf[XOfficeInstallationDirectories]
   }
   
-  @scala.inline
-  implicit class XOfficeInstallationDirectoriesMutableBuilder[Self <: XOfficeInstallationDirectories] (val x: Self) extends AnyVal {
+  extension [Self <: XOfficeInstallationDirectories](x: Self) {
     
-    @scala.inline
-    def setGetOfficeInstallationDirectoryURL(value: () => String): Self = StObject.set(x, "getOfficeInstallationDirectoryURL", js.Any.fromFunction0(value))
+    inline def setGetOfficeInstallationDirectoryURL(value: () => String): Self = StObject.set(x, "getOfficeInstallationDirectoryURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOfficeUserDataDirectoryURL(value: () => String): Self = StObject.set(x, "getOfficeUserDataDirectoryURL", js.Any.fromFunction0(value))
+    inline def setGetOfficeUserDataDirectoryURL(value: () => String): Self = StObject.set(x, "getOfficeUserDataDirectoryURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMakeAbsoluteURL(value: String => String): Self = StObject.set(x, "makeAbsoluteURL", js.Any.fromFunction1(value))
+    inline def setMakeAbsoluteURL(value: String => String): Self = StObject.set(x, "makeAbsoluteURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMakeRelocatableURL(value: String => String): Self = StObject.set(x, "makeRelocatableURL", js.Any.fromFunction1(value))
+    inline def setMakeRelocatableURL(value: String => String): Self = StObject.set(x, "makeRelocatableURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOfficeInstallationDirectoryURL(value: String): Self = StObject.set(x, "OfficeInstallationDirectoryURL", value.asInstanceOf[js.Any])
+    inline def setOfficeInstallationDirectoryURL(value: String): Self = StObject.set(x, "OfficeInstallationDirectoryURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeUserDataDirectoryURL(value: String): Self = StObject.set(x, "OfficeUserDataDirectoryURL", value.asInstanceOf[js.Any])
+    inline def setOfficeUserDataDirectoryURL(value: String): Self = StObject.set(x, "OfficeUserDataDirectoryURL", value.asInstanceOf[js.Any])
   }
 }

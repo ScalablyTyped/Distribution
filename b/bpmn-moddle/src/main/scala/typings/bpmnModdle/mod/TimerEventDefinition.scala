@@ -16,8 +16,7 @@ trait TimerEventDefinition
 }
 object TimerEventDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -29,16 +28,12 @@ object TimerEventDefinition {
     __obj.asInstanceOf[TimerEventDefinition]
   }
   
-  @scala.inline
-  implicit class TimerEventDefinitionMutableBuilder[Self <: TimerEventDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TimerEventDefinition](x: Self) {
     
-    @scala.inline
-    def setTimeCycle(value: Expression): Self = StObject.set(x, "timeCycle", value.asInstanceOf[js.Any])
+    inline def setTimeCycle(value: Expression): Self = StObject.set(x, "timeCycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeDate(value: Expression): Self = StObject.set(x, "timeDate", value.asInstanceOf[js.Any])
+    inline def setTimeDate(value: Expression): Self = StObject.set(x, "timeDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeDuration(value: Expression): Self = StObject.set(x, "timeDuration", value.asInstanceOf[js.Any])
+    inline def setTimeDuration(value: Expression): Self = StObject.set(x, "timeDuration", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ProgressEvent extends StObject {
 }
 object ProgressEvent {
   
-  @scala.inline
-  def apply(data: TotalBytesExpectedToWrite, uuid: String): ProgressEvent = {
+  inline def apply(data: TotalBytesExpectedToWrite, uuid: String): ProgressEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressEvent]
   }
   
-  @scala.inline
-  implicit class ProgressEventMutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: TotalBytesExpectedToWrite): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: TotalBytesExpectedToWrite): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

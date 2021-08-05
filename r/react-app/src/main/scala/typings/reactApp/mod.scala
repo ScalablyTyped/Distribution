@@ -60,8 +60,7 @@ object mod {
     def this(props: js.Object, context: js.Any) = this()
   }
   
-  @scala.inline
-  def createApp(createAppObject: CreateAppObject): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(createAppObject.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def createApp(createAppObject: CreateAppObject): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(createAppObject.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ChildProps extends StObject {
     
@@ -71,20 +70,16 @@ object mod {
   }
   object ChildProps {
     
-    @scala.inline
-    def apply(action: js.Any => js.Any, path: String): ChildProps = {
+    inline def apply(action: js.Any => js.Any, path: String): ChildProps = {
       val __obj = js.Dynamic.literal(action = js.Any.fromFunction1(action), path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChildProps]
     }
     
-    @scala.inline
-    implicit class ChildPropsMutableBuilder[Self <: ChildProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChildProps](x: Self) {
       
-      @scala.inline
-      def setAction(value: js.Any => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: js.Any => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,23 +91,18 @@ object mod {
   }
   object CreateAppObject {
     
-    @scala.inline
-    def apply(routes: RouteProps): CreateAppObject = {
+    inline def apply(routes: RouteProps): CreateAppObject = {
       val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any], container = null)
       __obj.asInstanceOf[CreateAppObject]
     }
     
-    @scala.inline
-    implicit class CreateAppObjectMutableBuilder[Self <: CreateAppObject] (val x: Self) extends AnyVal {
+    extension [Self <: CreateAppObject](x: Self) {
       
-      @scala.inline
-      def setContainer(value: typings.std.Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: typings.std.Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setRoutes(value: RouteProps): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: RouteProps): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,17 +112,14 @@ object mod {
   }
   object LayoutProps {
     
-    @scala.inline
-    def apply(className: String): LayoutProps = {
+    inline def apply(className: String): LayoutProps = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutProps]
     }
     
-    @scala.inline
-    implicit class LayoutPropsMutableBuilder[Self <: LayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,29 +133,22 @@ object mod {
   }
   object LinkProps {
     
-    @scala.inline
-    def apply(to: String): LinkProps = {
+    inline def apply(to: String): LinkProps = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkProps]
     }
     
-    @scala.inline
-    implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,23 +161,18 @@ object mod {
   }
   object RouteProps {
     
-    @scala.inline
-    def apply(children: js.Array[ChildProps], path: String): RouteProps = {
+    inline def apply(children: js.Array[ChildProps], path: String): RouteProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteProps]
     }
     
-    @scala.inline
-    implicit class RoutePropsMutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
+    extension [Self <: RouteProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ChildProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ChildProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ChildProps*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ChildProps*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

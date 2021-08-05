@@ -35,8 +35,7 @@ trait FlashFontItem extends StObject {
 }
 object FlashFontItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitmap: Boolean,
     bold: Boolean,
     embedRanges: String,
@@ -51,34 +50,24 @@ object FlashFontItem {
     __obj.asInstanceOf[FlashFontItem]
   }
   
-  @scala.inline
-  implicit class FlashFontItemMutableBuilder[Self <: FlashFontItem] (val x: Self) extends AnyVal {
+  extension [Self <: FlashFontItem](x: Self) {
     
-    @scala.inline
-    def setBitmap(value: Boolean): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
+    inline def setBitmap(value: Boolean): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedRanges(value: String): Self = StObject.set(x, "embedRanges", value.asInstanceOf[js.Any])
+    inline def setEmbedRanges(value: String): Self = StObject.set(x, "embedRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedVariantGlyphs(value: Boolean): Self = StObject.set(x, "embedVariantGlyphs", value.asInstanceOf[js.Any])
+    inline def setEmbedVariantGlyphs(value: Boolean): Self = StObject.set(x, "embedVariantGlyphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedCharacters(value: String): Self = StObject.set(x, "embeddedCharacters", value.asInstanceOf[js.Any])
+    inline def setEmbeddedCharacters(value: String): Self = StObject.set(x, "embeddedCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefineFont4Symbol(value: Boolean): Self = StObject.set(x, "isDefineFont4Symbol", value.asInstanceOf[js.Any])
+    inline def setIsDefineFont4Symbol(value: Boolean): Self = StObject.set(x, "isDefineFont4Symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

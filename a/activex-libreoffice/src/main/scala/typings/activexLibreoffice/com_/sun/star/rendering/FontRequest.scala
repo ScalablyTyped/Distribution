@@ -60,25 +60,19 @@ trait FontRequest extends StObject {
 }
 object FontRequest {
   
-  @scala.inline
-  def apply(CellSize: Double, FontDescription: FontInfo, Locale: Locale, ReferenceAdvancement: Double): FontRequest = {
+  inline def apply(CellSize: Double, FontDescription: FontInfo, Locale: Locale, ReferenceAdvancement: Double): FontRequest = {
     val __obj = js.Dynamic.literal(CellSize = CellSize.asInstanceOf[js.Any], FontDescription = FontDescription.asInstanceOf[js.Any], Locale = Locale.asInstanceOf[js.Any], ReferenceAdvancement = ReferenceAdvancement.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontRequest]
   }
   
-  @scala.inline
-  implicit class FontRequestMutableBuilder[Self <: FontRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FontRequest](x: Self) {
     
-    @scala.inline
-    def setCellSize(value: Double): Self = StObject.set(x, "CellSize", value.asInstanceOf[js.Any])
+    inline def setCellSize(value: Double): Self = StObject.set(x, "CellSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontDescription(value: FontInfo): Self = StObject.set(x, "FontDescription", value.asInstanceOf[js.Any])
+    inline def setFontDescription(value: FontInfo): Self = StObject.set(x, "FontDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceAdvancement(value: Double): Self = StObject.set(x, "ReferenceAdvancement", value.asInstanceOf[js.Any])
+    inline def setReferenceAdvancement(value: Double): Self = StObject.set(x, "ReferenceAdvancement", value.asInstanceOf[js.Any])
   }
 }

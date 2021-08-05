@@ -97,10 +97,8 @@ object TestCaseStarted {
       * @returns Platform instance
       */
     /* static member */
-    @scala.inline
-    def create(): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Platform]
-    @scala.inline
-    def create(properties: IPlatform): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Platform]
+    inline def create(): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Platform]
+    inline def create(properties: IPlatform): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Platform]
     
     /**
       * Decodes a Platform message from the specified reader or buffer.
@@ -111,14 +109,10 @@ object TestCaseStarted {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Platform]
-    @scala.inline
-    def decode(reader: Reader, length: Double): Platform = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Platform]
-    @scala.inline
-    def decode(reader: Uint8Array): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Platform]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): Platform = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Platform]
+    inline def decode(reader: Reader): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Platform]
+    inline def decode(reader: Reader, length: Double): Platform = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Platform]
+    inline def decode(reader: Uint8Array): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Platform]
+    inline def decode(reader: Uint8Array, length: Double): Platform = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Platform]
     
     /**
       * Decodes a Platform message from the specified reader or buffer, length delimited.
@@ -128,10 +122,8 @@ object TestCaseStarted {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Platform]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Platform]
+    inline def decodeDelimited(reader: Reader): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Platform]
+    inline def decodeDelimited(reader: Uint8Array): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Platform]
     
     /**
       * Encodes the specified Platform message. Does not implicitly {@link io.cucumber.messages.TestCaseStarted.Platform.verify|verify} messages.
@@ -140,10 +132,8 @@ object TestCaseStarted {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IPlatform): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IPlatform, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IPlatform): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IPlatform, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Platform message, length delimited. Does not implicitly {@link io.cucumber.messages.TestCaseStarted.Platform.verify|verify} messages.
@@ -152,10 +142,8 @@ object TestCaseStarted {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IPlatform): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IPlatform, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IPlatform): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IPlatform, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Platform message from a plain object. Also converts values to their respective internal types.
@@ -163,8 +151,7 @@ object TestCaseStarted {
       * @returns Platform
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Platform]
+    inline def fromObject(`object`: StringDictionary[js.Any]): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Platform]
     
     /**
       * Creates a plain object from a Platform message. Also converts values to other types if specified.
@@ -173,10 +160,8 @@ object TestCaseStarted {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: Platform): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(message: Platform, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Platform): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: Platform, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Platform message.
@@ -184,8 +169,7 @@ object TestCaseStarted {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -194,10 +178,8 @@ object TestCaseStarted {
     * @returns TestCaseStarted instance
     */
   /* static member */
-  @scala.inline
-  def create(): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TestCaseStarted]
-  @scala.inline
-  def create(properties: ITestCaseStarted): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
+  inline def create(): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TestCaseStarted]
+  inline def create(properties: ITestCaseStarted): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
   
   /**
     * Decodes a TestCaseStarted message from the specified reader or buffer.
@@ -208,14 +190,10 @@ object TestCaseStarted {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
-  @scala.inline
-  def decode(reader: Reader, length: Double): TestCaseStarted = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestCaseStarted]
-  @scala.inline
-  def decode(reader: Uint8Array): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): TestCaseStarted = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestCaseStarted]
+  inline def decode(reader: Reader): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
+  inline def decode(reader: Reader, length: Double): TestCaseStarted = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestCaseStarted]
+  inline def decode(reader: Uint8Array): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
+  inline def decode(reader: Uint8Array, length: Double): TestCaseStarted = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TestCaseStarted]
   
   /**
     * Decodes a TestCaseStarted message from the specified reader or buffer, length delimited.
@@ -225,10 +203,8 @@ object TestCaseStarted {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
+  inline def decodeDelimited(reader: Reader): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
+  inline def decodeDelimited(reader: Uint8Array): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
   
   /**
     * Encodes the specified TestCaseStarted message. Does not implicitly {@link io.cucumber.messages.TestCaseStarted.verify|verify} messages.
@@ -237,10 +213,8 @@ object TestCaseStarted {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: ITestCaseStarted): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: ITestCaseStarted, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: ITestCaseStarted): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: ITestCaseStarted, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified TestCaseStarted message, length delimited. Does not implicitly {@link io.cucumber.messages.TestCaseStarted.verify|verify} messages.
@@ -249,10 +223,8 @@ object TestCaseStarted {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: ITestCaseStarted): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: ITestCaseStarted, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ITestCaseStarted): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ITestCaseStarted, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a TestCaseStarted message from a plain object. Also converts values to their respective internal types.
@@ -260,8 +232,7 @@ object TestCaseStarted {
     * @returns TestCaseStarted
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
+  inline def fromObject(`object`: StringDictionary[js.Any]): TestCaseStarted = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TestCaseStarted]
   
   /**
     * Creates a plain object from a TestCaseStarted message. Also converts values to other types if specified.
@@ -270,10 +241,8 @@ object TestCaseStarted {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: TestCaseStarted): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: TestCaseStarted, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: TestCaseStarted): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: TestCaseStarted, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a TestCaseStarted message.
@@ -281,8 +250,7 @@ object TestCaseStarted {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a Platform. */
   trait IPlatform extends StObject {
@@ -301,50 +269,36 @@ object TestCaseStarted {
   }
   object IPlatform {
     
-    @scala.inline
-    def apply(): IPlatform = {
+    inline def apply(): IPlatform = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPlatform]
     }
     
-    @scala.inline
-    implicit class IPlatformMutableBuilder[Self <: IPlatform] (val x: Self) extends AnyVal {
+    extension [Self <: IPlatform](x: Self) {
       
-      @scala.inline
-      def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuNull: Self = StObject.set(x, "cpu", null)
+      inline def setCpuNull: Self = StObject.set(x, "cpu", null)
       
-      @scala.inline
-      def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
+      inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
       
-      @scala.inline
-      def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+      inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplementationNull: Self = StObject.set(x, "implementation", null)
+      inline def setImplementationNull: Self = StObject.set(x, "implementation", null)
       
-      @scala.inline
-      def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
+      inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
       
-      @scala.inline
-      def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOsNull: Self = StObject.set(x, "os", null)
+      inline def setOsNull: Self = StObject.set(x, "os", null)
       
-      @scala.inline
-      def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+      inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionNull: Self = StObject.set(x, "version", null)
+      inline def setVersionNull: Self = StObject.set(x, "version", null)
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

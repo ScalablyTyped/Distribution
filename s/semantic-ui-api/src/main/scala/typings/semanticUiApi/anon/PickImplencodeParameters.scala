@@ -11,16 +11,13 @@ trait PickImplencodeParameters extends StObject {
 }
 object PickImplencodeParameters {
   
-  @scala.inline
-  def apply(encodeParameters: Boolean): PickImplencodeParameters = {
+  inline def apply(encodeParameters: Boolean): PickImplencodeParameters = {
     val __obj = js.Dynamic.literal(encodeParameters = encodeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplencodeParameters]
   }
   
-  @scala.inline
-  implicit class PickImplencodeParametersMutableBuilder[Self <: PickImplencodeParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplencodeParameters](x: Self) {
     
-    @scala.inline
-    def setEncodeParameters(value: Boolean): Self = StObject.set(x, "encodeParameters", value.asInstanceOf[js.Any])
+    inline def setEncodeParameters(value: Boolean): Self = StObject.set(x, "encodeParameters", value.asInstanceOf[js.Any])
   }
 }

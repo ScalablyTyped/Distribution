@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def all[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](keyValue: js.Any): js.Function3[
+inline def all[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](keyValue: js.Any): js.Function3[
 /* target */ (typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]) & (typings.aureliaDependencyInjection.anon.Inject[TArgs, TBase]), 
 /* _key */ js.Any, 
 /* index */ scala.Double, 
@@ -16,16 +15,12 @@ scala.Unit] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].
 /* index */ scala.Double, 
 scala.Unit]]
 
-@scala.inline
-def autoinject[TPotential](): (js.Function1[/* target */ typings.aureliaDependencyInjection.mod.Injectable, scala.Unit]) | scala.Unit = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("autoinject")().asInstanceOf[(js.Function1[/* target */ typings.aureliaDependencyInjection.mod.Injectable, scala.Unit]) | scala.Unit]
-@scala.inline
-def autoinject[TPotential](potentialTarget: TPotential): (js.Function1[/* target */ typings.aureliaDependencyInjection.mod.Injectable, scala.Unit]) | scala.Unit = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("autoinject")(potentialTarget.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* target */ typings.aureliaDependencyInjection.mod.Injectable, scala.Unit]) | scala.Unit]
+inline def autoinject[TPotential](): (js.Function1[/* target */ typings.aureliaDependencyInjection.mod.Injectable, scala.Unit]) | scala.Unit = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("autoinject")().asInstanceOf[(js.Function1[/* target */ typings.aureliaDependencyInjection.mod.Injectable, scala.Unit]) | scala.Unit]
+inline def autoinject[TPotential](potentialTarget: TPotential): (js.Function1[/* target */ typings.aureliaDependencyInjection.mod.Injectable, scala.Unit]) | scala.Unit = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("autoinject")(potentialTarget.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* target */ typings.aureliaDependencyInjection.mod.Injectable, scala.Unit]) | scala.Unit]
 
-@scala.inline
-def emptyParameters: js.Array[js.Any] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].selectDynamic("_emptyParameters").asInstanceOf[js.Array[js.Any]]
+inline def emptyParameters: js.Array[js.Any] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].selectDynamic("_emptyParameters").asInstanceOf[js.Array[js.Any]]
 
-@scala.inline
-def factory[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](keyValue: js.Any): js.Function3[
+inline def factory[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](keyValue: js.Any): js.Function3[
 /* target */ (typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]) & (typings.aureliaDependencyInjection.anon.Inject[TArgs, TBase]), 
 /* _key */ js.Any, 
 /* index */ scala.Double, 
@@ -35,40 +30,34 @@ scala.Unit] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].
 /* index */ scala.Double, 
 scala.Unit]]
 
-@scala.inline
-def getDecoratorDependencies[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
+inline def getDecoratorDependencies[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
   target: (typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]) & (typings.aureliaDependencyInjection.anon.Inject[TArgs, TBase])
 ): js.Array[
 /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDecoratorDependencies")(target.asInstanceOf[js.Any]).asInstanceOf[js.Array[
 /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any]]
 
-@scala.inline
-def inject[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
+inline def inject[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
   rest: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
 ): js.Any = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inject")(rest.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
-@scala.inline
-def invokeAsFactory[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](): scala.Unit | (js.Function1[
+inline def invokeAsFactory[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](): scala.Unit | (js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit]) = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("invokeAsFactory")().asInstanceOf[scala.Unit | (js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit])]
-@scala.inline
-def invokeAsFactory[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](potentialTarget: typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]): scala.Unit | (js.Function1[
+inline def invokeAsFactory[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](potentialTarget: typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]): scala.Unit | (js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit]) = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("invokeAsFactory")(potentialTarget.asInstanceOf[js.Any]).asInstanceOf[scala.Unit | (js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit])]
 
-@scala.inline
-def invoker[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](value: typings.aureliaDependencyInjection.mod.Invoker_[TBase, TImpl, TArgs]): js.Function1[
+inline def invoker[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](value: typings.aureliaDependencyInjection.mod.Invoker_[TBase, TImpl, TArgs]): js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("invoker")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit]]
 
-@scala.inline
-def `lazy`[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](keyValue: js.Any): js.Function3[
+inline def `lazy`[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](keyValue: js.Any): js.Function3[
 /* target */ (typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]) & (typings.aureliaDependencyInjection.anon.Inject[TArgs, TBase]), 
 /* _key */ js.Any, 
 /* index */ scala.Double, 
@@ -78,8 +67,7 @@ scala.Unit] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].
 /* index */ scala.Double, 
 scala.Unit]]
 
-@scala.inline
-def newInstance[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
+inline def newInstance[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
   asKeyOrTarget: (typings.aureliaDependencyInjection.mod.PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) & (typings.aureliaDependencyInjection.anon.Inject[TArgs, TBase]),
   dynamicDependencies: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
 ): js.Function3[
@@ -91,8 +79,7 @@ scala.Unit] = (typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic]
 /* _key */ js.Any, 
 /* index */ scala.Double, 
 scala.Unit]]
-@scala.inline
-def newInstance[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
+inline def newInstance[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
   asKeyOrTarget: scala.Unit,
   dynamicDependencies: (/* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any)*
 ): js.Function3[
@@ -105,8 +92,7 @@ scala.Unit] = (typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic]
 /* index */ scala.Double, 
 scala.Unit]]
 
-@scala.inline
-def optional[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](): js.Function3[
+inline def optional[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](): js.Function3[
 /* target */ (typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]) & (typings.aureliaDependencyInjection.anon.Inject[TArgs, TBase]), 
 /* _key */ js.Any, 
 /* index */ scala.Double, 
@@ -115,8 +101,7 @@ scala.Unit] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].
 /* _key */ js.Any, 
 /* index */ scala.Double, 
 scala.Unit]]
-@scala.inline
-def optional[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](checkParentOrTarget: scala.Boolean): js.Function3[
+inline def optional[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](checkParentOrTarget: scala.Boolean): js.Function3[
 /* target */ (typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]) & (typings.aureliaDependencyInjection.anon.Inject[TArgs, TBase]), 
 /* _key */ js.Any, 
 /* index */ scala.Double, 
@@ -126,48 +111,37 @@ scala.Unit] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].
 /* index */ scala.Double, 
 scala.Unit]]
 
-@scala.inline
-def parent[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
+inline def parent[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
   target: (typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs]) & (typings.aureliaDependencyInjection.anon.Inject[TArgs, TBase]),
   _key: js.Any,
   index: scala.Double
 ): scala.Unit = (typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parent")(target.asInstanceOf[js.Any], _key.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def registration[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](value: typings.aureliaDependencyInjection.mod.Registration_[TBase, TImpl, TArgs]): js.Function1[
+inline def registration[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](value: typings.aureliaDependencyInjection.mod.Registration_[TBase, TImpl, TArgs]): js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registration")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit]]
 
-@scala.inline
-def resolver: typings.aureliaDependencyInjection.anon.Decorates & js.Function0[js.Any] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].selectDynamic("resolver").asInstanceOf[typings.aureliaDependencyInjection.anon.Decorates & js.Function0[js.Any]]
+inline def resolver: typings.aureliaDependencyInjection.anon.Decorates & js.Function0[js.Any] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].selectDynamic("resolver").asInstanceOf[typings.aureliaDependencyInjection.anon.Decorates & js.Function0[js.Any]]
 
-@scala.inline
-def singleton(): js.Any = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")().asInstanceOf[js.Any]
-@scala.inline
-def singleton(registerInChild: scala.Boolean): js.Any = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(registerInChild.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-@scala.inline
-def singleton[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](key: scala.Unit, registerInChild: scala.Boolean): js.Any = (typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(key.asInstanceOf[js.Any], registerInChild.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-@scala.inline
-def singleton[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](key: typings.aureliaDependencyInjection.mod.PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): js.Any = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-@scala.inline
-def singleton[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
+inline def singleton(): js.Any = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")().asInstanceOf[js.Any]
+inline def singleton(registerInChild: scala.Boolean): js.Any = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(registerInChild.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def singleton[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](key: scala.Unit, registerInChild: scala.Boolean): js.Any = (typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(key.asInstanceOf[js.Any], registerInChild.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def singleton[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](key: typings.aureliaDependencyInjection.mod.PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): js.Any = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def singleton[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](
   key: typings.aureliaDependencyInjection.mod.PrimitiveOrDependencyCtor[TBase, TImpl, TArgs],
   registerInChild: scala.Boolean
 ): js.Any = (typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(key.asInstanceOf[js.Any], registerInChild.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 
-@scala.inline
-def singleton_TBaseTImpl_ImplTBaseTArgs_ArgsTBase[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](): js.Any = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")().asInstanceOf[js.Any]
+inline def singleton_TBaseTImpl_ImplTBaseTArgs_ArgsTBase[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](): js.Any = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("singleton")().asInstanceOf[js.Any]
 
-@scala.inline
-def transient[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](): js.Function1[
+inline def transient[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](): js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transient")().asInstanceOf[js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit]]
-@scala.inline
-def transient[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](key: typings.aureliaDependencyInjection.mod.PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): js.Function1[
+inline def transient[TBase, TImpl /* <: typings.aureliaDependencyInjection.mod.Impl[TBase] */, TArgs /* <: typings.aureliaDependencyInjection.mod.Args[TBase] */](key: typings.aureliaDependencyInjection.mod.PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 
 scala.Unit] = typings.aureliaDependencyInjection.mod.^.asInstanceOf[js.Dynamic].applyDynamic("transient")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* target */ typings.aureliaDependencyInjection.mod.DependencyCtor[TBase, TImpl, TArgs], 

@@ -14,16 +14,13 @@ trait PauseOnAsyncCallRequest extends StObject {
 }
 object PauseOnAsyncCallRequest {
   
-  @scala.inline
-  def apply(parentStackTraceId: StackTraceId): PauseOnAsyncCallRequest = {
+  inline def apply(parentStackTraceId: StackTraceId): PauseOnAsyncCallRequest = {
     val __obj = js.Dynamic.literal(parentStackTraceId = parentStackTraceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PauseOnAsyncCallRequest]
   }
   
-  @scala.inline
-  implicit class PauseOnAsyncCallRequestMutableBuilder[Self <: PauseOnAsyncCallRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PauseOnAsyncCallRequest](x: Self) {
     
-    @scala.inline
-    def setParentStackTraceId(value: StackTraceId): Self = StObject.set(x, "parentStackTraceId", value.asInstanceOf[js.Any])
+    inline def setParentStackTraceId(value: StackTraceId): Self = StObject.set(x, "parentStackTraceId", value.asInstanceOf[js.Any])
   }
 }

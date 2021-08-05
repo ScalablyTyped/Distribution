@@ -16,7 +16,7 @@ object popupServiceMod {
   @js.native
   class PopupService () extends StObject {
     
-    var activePopupElements: js.Any = js.native
+    /* private */ var activePopupElements: js.Any = js.native
     
     def addAsModalPopup(eChild: js.Any, closeOnEsc: Boolean): js.Function1[/* event */ js.UndefOr[js.Any], Unit] = js.native
     def addAsModalPopup(eChild: js.Any, closeOnEsc: Boolean, closedCallback: js.Function0[Unit]): js.Function1[/* event */ js.UndefOr[js.Any], Unit] = js.native
@@ -34,13 +34,13 @@ object popupServiceMod {
       rowNode: js.Any
     ): js.Any = js.native
     
-    var environment: js.Any = js.native
+    /* private */ var environment: js.Any = js.native
     
     /* private */ def getPopupParent(): js.Any = js.native
     
-    var gridCore: js.Any = js.native
+    /* private */ var gridCore: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def isEventFromCurrentPopup(mouseEvent: js.Any, touchEvent: js.Any, eChild: js.Any): js.Any = js.native
     

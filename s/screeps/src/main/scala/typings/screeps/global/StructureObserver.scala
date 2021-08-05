@@ -94,6 +94,5 @@ class StructureObserver protected ()
 }
 object StructureObserver {
   
-  @scala.inline
-  def apply: StructureObserverConstructor = js.Dynamic.global.selectDynamic("StructureObserver").asInstanceOf[StructureObserverConstructor]
+  inline def apply: StructureObserverConstructor = js.Dynamic.global.selectDynamic("StructureObserver").asInstanceOf[StructureObserverConstructor]
 }

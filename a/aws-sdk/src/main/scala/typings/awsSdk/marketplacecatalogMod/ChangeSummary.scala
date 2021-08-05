@@ -28,40 +28,29 @@ trait ChangeSummary extends StObject {
 }
 object ChangeSummary {
   
-  @scala.inline
-  def apply(): ChangeSummary = {
+  inline def apply(): ChangeSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangeSummary]
   }
   
-  @scala.inline
-  implicit class ChangeSummaryMutableBuilder[Self <: ChangeSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeSummary](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: ChangeType): Self = StObject.set(x, "ChangeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: ChangeType): Self = StObject.set(x, "ChangeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTypeUndefined: Self = StObject.set(x, "ChangeType", js.undefined)
+    inline def setChangeTypeUndefined: Self = StObject.set(x, "ChangeType", js.undefined)
     
-    @scala.inline
-    def setDetails(value: Json): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Json): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
-    @scala.inline
-    def setEntity(value: Entity): Self = StObject.set(x, "Entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Entity): Self = StObject.set(x, "Entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "Entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "Entity", js.undefined)
     
-    @scala.inline
-    def setErrorDetailList(value: ErrorDetailList): Self = StObject.set(x, "ErrorDetailList", value.asInstanceOf[js.Any])
+    inline def setErrorDetailList(value: ErrorDetailList): Self = StObject.set(x, "ErrorDetailList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailListUndefined: Self = StObject.set(x, "ErrorDetailList", js.undefined)
+    inline def setErrorDetailListUndefined: Self = StObject.set(x, "ErrorDetailList", js.undefined)
     
-    @scala.inline
-    def setErrorDetailListVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetailList", js.Array(value :_*))
+    inline def setErrorDetailListVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetailList", js.Array(value :_*))
   }
 }

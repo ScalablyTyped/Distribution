@@ -16,8 +16,7 @@ trait ASPxClientWebDocumentViewerParameter extends StObject {
 }
 object ASPxClientWebDocumentViewerParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getParameterDescriptor: () => ASPxDesignerElementParameterDescriptor,
     isMultiValue: Boolean,
     `type`: js.Any,
@@ -28,19 +27,14 @@ object ASPxClientWebDocumentViewerParameter {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerParameter]
   }
   
-  @scala.inline
-  implicit class ASPxClientWebDocumentViewerParameterMutableBuilder[Self <: ASPxClientWebDocumentViewerParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWebDocumentViewerParameter](x: Self) {
     
-    @scala.inline
-    def setGetParameterDescriptor(value: () => ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "getParameterDescriptor", js.Any.fromFunction0(value))
+    inline def setGetParameterDescriptor(value: () => ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "getParameterDescriptor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMultiValue(value: Boolean): Self = StObject.set(x, "isMultiValue", value.asInstanceOf[js.Any])
+    inline def setIsMultiValue(value: Boolean): Self = StObject.set(x, "isMultiValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -80,8 +80,7 @@ trait ExecutionContext[Context]
 }
 object ExecutionContext {
   
-  @scala.inline
-  def apply[Context](
+  inline def apply[Context](
     assert: AssertAssertion,
     context: Context,
     deepEqual: DeepEqualAssertion,
@@ -117,31 +116,22 @@ object ExecutionContext {
     __obj.asInstanceOf[ExecutionContext[Context]]
   }
   
-  @scala.inline
-  implicit class ExecutionContextMutableBuilder[Self <: ExecutionContext[?], Context] (val x: Self & ExecutionContext[Context]) extends AnyVal {
+  extension [Self <: ExecutionContext[?], Context](x: Self & ExecutionContext[Context]) {
     
-    @scala.inline
-    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: LogFn): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: LogFn): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlan(value: PlanFn): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: PlanFn): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeardown(value: /* fn */ js.Function0[Unit] => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction1(value))
+    inline def setTeardown(value: /* fn */ js.Function0[Unit] => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeout(value: (/* ms */ Double, /* message */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "timeout", js.Any.fromFunction2(value))
+    inline def setTimeout(value: (/* ms */ Double, /* message */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "timeout", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTry(value: TryFn[Context]): Self = StObject.set(x, "try", value.asInstanceOf[js.Any])
+    inline def setTry(value: TryFn[Context]): Self = StObject.set(x, "try", value.asInstanceOf[js.Any])
   }
 }

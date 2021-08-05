@@ -12,16 +12,13 @@ trait AllJoynMessageInfo extends StObject {
 }
 object AllJoynMessageInfo {
   
-  @scala.inline
-  def apply(senderUniqueName: String): AllJoynMessageInfo = {
+  inline def apply(senderUniqueName: String): AllJoynMessageInfo = {
     val __obj = js.Dynamic.literal(senderUniqueName = senderUniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllJoynMessageInfo]
   }
   
-  @scala.inline
-  implicit class AllJoynMessageInfoMutableBuilder[Self <: AllJoynMessageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynMessageInfo](x: Self) {
     
-    @scala.inline
-    def setSenderUniqueName(value: String): Self = StObject.set(x, "senderUniqueName", value.asInstanceOf[js.Any])
+    inline def setSenderUniqueName(value: String): Self = StObject.set(x, "senderUniqueName", value.asInstanceOf[js.Any])
   }
 }

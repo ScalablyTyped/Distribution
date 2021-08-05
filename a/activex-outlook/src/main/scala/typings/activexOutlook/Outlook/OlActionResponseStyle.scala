@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlActionResponseStyle extends StObject
 object OlActionResponseStyle {
   
-  @scala.inline
-  def olOpen: `0` = 0.asInstanceOf[`0`]
+  inline def olOpen: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olPrompt: `2` = 2.asInstanceOf[`2`]
+  inline def olPrompt: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olSend: `1` = 1.asInstanceOf[`1`]
+  inline def olSend: `1` = 1.asInstanceOf[`1`]
 }

@@ -9,7 +9,7 @@ trait PullTypeParameterSymbol
   extends StObject
      with PullTypeSymbol {
   
-  var _constraint: js.Any = js.native
+  /* private */ var _constraint: js.Any = js.native
   
   def getBaseConstraint(semanticInfoChain: SemanticInfoChain): PullTypeSymbol = js.native
   

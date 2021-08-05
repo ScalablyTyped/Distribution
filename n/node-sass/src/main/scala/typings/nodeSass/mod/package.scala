@@ -5,23 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def FALSE: typings.nodeSass.mod.types.Boolean = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FALSE").asInstanceOf[typings.nodeSass.mod.types.Boolean]
+inline def FALSE: typings.nodeSass.mod.types.Boolean = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FALSE").asInstanceOf[typings.nodeSass.mod.types.Boolean]
 
-@scala.inline
-def NULL: typings.nodeSass.mod.types.Null = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NULL").asInstanceOf[typings.nodeSass.mod.types.Null]
+inline def NULL: typings.nodeSass.mod.types.Null = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NULL").asInstanceOf[typings.nodeSass.mod.types.Null]
 
-@scala.inline
-def TRUE: typings.nodeSass.mod.types.Boolean = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TRUE").asInstanceOf[typings.nodeSass.mod.types.Boolean]
+inline def TRUE: typings.nodeSass.mod.types.Boolean = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TRUE").asInstanceOf[typings.nodeSass.mod.types.Boolean]
 
-@scala.inline
-def info: java.lang.String = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("info").asInstanceOf[java.lang.String]
+inline def info: java.lang.String = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].selectDynamic("info").asInstanceOf[java.lang.String]
 
-@scala.inline
-def render(options: typings.nodeSass.mod.Options, callback: typings.nodeSass.mod.SassRenderCallback): scala.Unit = (typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def render(options: typings.nodeSass.mod.Options, callback: typings.nodeSass.mod.SassRenderCallback): scala.Unit = (typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].applyDynamic("render")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def renderSync(options: typings.nodeSass.mod.SyncOptions): typings.nodeSass.mod.Result = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeSass.mod.Result]
+inline def renderSync(options: typings.nodeSass.mod.SyncOptions): typings.nodeSass.mod.Result = typings.nodeSass.mod.^.asInstanceOf[js.Dynamic].applyDynamic("renderSync")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeSass.mod.Result]
 
 type AsyncImporter = js.ThisFunction3[
 /* this */ typings.nodeSass.mod.AsyncContext, 

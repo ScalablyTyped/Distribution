@@ -10,6 +10,5 @@ object shuffleWordsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def shuffleWords(words: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleWords")(words.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def shuffleWords(words: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleWords")(words.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

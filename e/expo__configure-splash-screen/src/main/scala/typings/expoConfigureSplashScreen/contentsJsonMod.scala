@@ -10,8 +10,6 @@ object contentsJsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def writeContentsJsonFile(contentsJsonFilePath: String, filename: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeContentsJsonFile")(contentsJsonFilePath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def writeContentsJsonFile(contentsJsonFilePath: String, filename: String, darkModeFilename: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeContentsJsonFile")(contentsJsonFilePath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], darkModeFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeContentsJsonFile(contentsJsonFilePath: String, filename: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeContentsJsonFile")(contentsJsonFilePath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeContentsJsonFile(contentsJsonFilePath: String, filename: String, darkModeFilename: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeContentsJsonFile")(contentsJsonFilePath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], darkModeFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

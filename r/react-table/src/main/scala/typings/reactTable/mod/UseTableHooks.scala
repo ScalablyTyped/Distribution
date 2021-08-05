@@ -121,8 +121,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object UseTableHooks {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](
+  inline def apply[D /* <: js.Object */](
     allColumns: js.Array[
       js.Function2[
         /* allColumns */ js.Array[ColumnInstance[D]], 
@@ -217,11 +216,9 @@ object UseTableHooks {
     __obj.asInstanceOf[UseTableHooks[D]]
   }
   
-  @scala.inline
-  implicit class UseTableHooksMutableBuilder[Self <: UseTableHooks[?], D /* <: js.Object */] (val x: Self & UseTableHooks[D]) extends AnyVal {
+  extension [Self <: UseTableHooks[?], D /* <: js.Object */](x: Self & UseTableHooks[D]) {
     
-    @scala.inline
-    def setAllColumns(
+    inline def setAllColumns(
       value: js.Array[
           js.Function2[
             /* allColumns */ js.Array[ColumnInstance[D]], 
@@ -231,8 +228,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "allColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllColumnsDeps(
+    inline def setAllColumnsDeps(
       value: js.Array[
           js.Function2[
             /* deps */ js.Array[js.Any], 
@@ -242,8 +238,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "allColumnsDeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllColumnsDepsVarargs(
+    inline def setAllColumnsDepsVarargs(
       value: (js.Function2[
           /* deps */ js.Array[js.Any], 
           /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
@@ -251,8 +246,7 @@ object UseTableHooks {
         ])*
     ): Self = StObject.set(x, "allColumnsDeps", js.Array(value :_*))
     
-    @scala.inline
-    def setAllColumnsVarargs(
+    inline def setAllColumnsVarargs(
       value: (js.Function2[
           /* allColumns */ js.Array[ColumnInstance[D]], 
           /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
@@ -260,8 +254,7 @@ object UseTableHooks {
         ])*
     ): Self = StObject.set(x, "allColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setColumns(
+    inline def setColumns(
       value: js.Array[
           js.Function2[
             /* columns */ js.Array[Column[D]], 
@@ -271,8 +264,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsDeps(
+    inline def setColumnsDeps(
       value: js.Array[
           js.Function2[
             /* deps */ js.Array[js.Any], 
@@ -282,8 +274,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "columnsDeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsDepsVarargs(
+    inline def setColumnsDepsVarargs(
       value: (js.Function2[
           /* deps */ js.Array[js.Any], 
           /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
@@ -291,8 +282,7 @@ object UseTableHooks {
         ])*
     ): Self = StObject.set(x, "columnsDeps", js.Array(value :_*))
     
-    @scala.inline
-    def setColumnsVarargs(
+    inline def setColumnsVarargs(
       value: (js.Function2[
           /* columns */ js.Array[Column[D]], 
           /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
@@ -300,56 +290,39 @@ object UseTableHooks {
         ])*
     ): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setGetCellProps(value: js.Array[CellPropGetter[D]]): Self = StObject.set(x, "getCellProps", value.asInstanceOf[js.Any])
+    inline def setGetCellProps(value: js.Array[CellPropGetter[D]]): Self = StObject.set(x, "getCellProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCellPropsVarargs(value: CellPropGetter[D]*): Self = StObject.set(x, "getCellProps", js.Array(value :_*))
+    inline def setGetCellPropsVarargs(value: CellPropGetter[D]*): Self = StObject.set(x, "getCellProps", js.Array(value :_*))
     
-    @scala.inline
-    def setGetFooterGroupProps(value: js.Array[FooterGroupPropGetter[D]]): Self = StObject.set(x, "getFooterGroupProps", value.asInstanceOf[js.Any])
+    inline def setGetFooterGroupProps(value: js.Array[FooterGroupPropGetter[D]]): Self = StObject.set(x, "getFooterGroupProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFooterGroupPropsVarargs(value: FooterGroupPropGetter[D]*): Self = StObject.set(x, "getFooterGroupProps", js.Array(value :_*))
+    inline def setGetFooterGroupPropsVarargs(value: FooterGroupPropGetter[D]*): Self = StObject.set(x, "getFooterGroupProps", js.Array(value :_*))
     
-    @scala.inline
-    def setGetFooterProps(value: js.Array[FooterPropGetter[D]]): Self = StObject.set(x, "getFooterProps", value.asInstanceOf[js.Any])
+    inline def setGetFooterProps(value: js.Array[FooterPropGetter[D]]): Self = StObject.set(x, "getFooterProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFooterPropsVarargs(value: FooterPropGetter[D]*): Self = StObject.set(x, "getFooterProps", js.Array(value :_*))
+    inline def setGetFooterPropsVarargs(value: FooterPropGetter[D]*): Self = StObject.set(x, "getFooterProps", js.Array(value :_*))
     
-    @scala.inline
-    def setGetHeaderGroupProps(value: js.Array[HeaderGroupPropGetter[D]]): Self = StObject.set(x, "getHeaderGroupProps", value.asInstanceOf[js.Any])
+    inline def setGetHeaderGroupProps(value: js.Array[HeaderGroupPropGetter[D]]): Self = StObject.set(x, "getHeaderGroupProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetHeaderGroupPropsVarargs(value: HeaderGroupPropGetter[D]*): Self = StObject.set(x, "getHeaderGroupProps", js.Array(value :_*))
+    inline def setGetHeaderGroupPropsVarargs(value: HeaderGroupPropGetter[D]*): Self = StObject.set(x, "getHeaderGroupProps", js.Array(value :_*))
     
-    @scala.inline
-    def setGetHeaderProps(value: js.Array[HeaderPropGetter[D]]): Self = StObject.set(x, "getHeaderProps", value.asInstanceOf[js.Any])
+    inline def setGetHeaderProps(value: js.Array[HeaderPropGetter[D]]): Self = StObject.set(x, "getHeaderProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetHeaderPropsVarargs(value: HeaderPropGetter[D]*): Self = StObject.set(x, "getHeaderProps", js.Array(value :_*))
+    inline def setGetHeaderPropsVarargs(value: HeaderPropGetter[D]*): Self = StObject.set(x, "getHeaderProps", js.Array(value :_*))
     
-    @scala.inline
-    def setGetRowProps(value: js.Array[RowPropGetter[D]]): Self = StObject.set(x, "getRowProps", value.asInstanceOf[js.Any])
+    inline def setGetRowProps(value: js.Array[RowPropGetter[D]]): Self = StObject.set(x, "getRowProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRowPropsVarargs(value: RowPropGetter[D]*): Self = StObject.set(x, "getRowProps", js.Array(value :_*))
+    inline def setGetRowPropsVarargs(value: RowPropGetter[D]*): Self = StObject.set(x, "getRowProps", js.Array(value :_*))
     
-    @scala.inline
-    def setGetTableBodyProps(value: js.Array[TableBodyPropGetter[D]]): Self = StObject.set(x, "getTableBodyProps", value.asInstanceOf[js.Any])
+    inline def setGetTableBodyProps(value: js.Array[TableBodyPropGetter[D]]): Self = StObject.set(x, "getTableBodyProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTableBodyPropsVarargs(value: TableBodyPropGetter[D]*): Self = StObject.set(x, "getTableBodyProps", js.Array(value :_*))
+    inline def setGetTableBodyPropsVarargs(value: TableBodyPropGetter[D]*): Self = StObject.set(x, "getTableBodyProps", js.Array(value :_*))
     
-    @scala.inline
-    def setGetTableProps(value: js.Array[TablePropGetter[D]]): Self = StObject.set(x, "getTableProps", value.asInstanceOf[js.Any])
+    inline def setGetTableProps(value: js.Array[TablePropGetter[D]]): Self = StObject.set(x, "getTableProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTablePropsVarargs(value: TablePropGetter[D]*): Self = StObject.set(x, "getTableProps", js.Array(value :_*))
+    inline def setGetTablePropsVarargs(value: TablePropGetter[D]*): Self = StObject.set(x, "getTableProps", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaderGroups(
+    inline def setHeaderGroups(
       value: js.Array[
           js.Function2[
             /* allColumns */ js.Array[HeaderGroup[D]], 
@@ -359,8 +332,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "headerGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderGroupsDeps(
+    inline def setHeaderGroupsDeps(
       value: js.Array[
           js.Function2[
             /* deps */ js.Array[js.Any], 
@@ -370,8 +342,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "headerGroupsDeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderGroupsDepsVarargs(
+    inline def setHeaderGroupsDepsVarargs(
       value: (js.Function2[
           /* deps */ js.Array[js.Any], 
           /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
@@ -379,8 +350,7 @@ object UseTableHooks {
         ])*
     ): Self = StObject.set(x, "headerGroupsDeps", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaderGroupsVarargs(
+    inline def setHeaderGroupsVarargs(
       value: (js.Function2[
           /* allColumns */ js.Array[HeaderGroup[D]], 
           /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
@@ -388,18 +358,15 @@ object UseTableHooks {
         ])*
     ): Self = StObject.set(x, "headerGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setPrepareRow(
+    inline def setPrepareRow(
       value: js.Array[
           js.Function2[/* row */ Row[D], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], Unit]
         ]
     ): Self = StObject.set(x, "prepareRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrepareRowVarargs(value: (js.Function2[/* row */ Row[D], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], Unit])*): Self = StObject.set(x, "prepareRow", js.Array(value :_*))
+    inline def setPrepareRowVarargs(value: (js.Function2[/* row */ Row[D], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], Unit])*): Self = StObject.set(x, "prepareRow", js.Array(value :_*))
     
-    @scala.inline
-    def setStateReducers(
+    inline def setStateReducers(
       value: js.Array[
           js.Function4[
             /* newState */ TableState[D], 
@@ -411,8 +378,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "stateReducers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReducersVarargs(
+    inline def setStateReducersVarargs(
       value: (js.Function4[
           /* newState */ TableState[D], 
           /* action */ ActionType, 
@@ -422,8 +388,7 @@ object UseTableHooks {
         ])*
     ): Self = StObject.set(x, "stateReducers", js.Array(value :_*))
     
-    @scala.inline
-    def setUseControlledState(
+    inline def setUseControlledState(
       value: js.Array[
           js.Function2[
             /* state */ TableState[D], 
@@ -433,8 +398,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "useControlledState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseControlledStateVarargs(
+    inline def setUseControlledStateVarargs(
       value: (js.Function2[
           /* state */ TableState[D], 
           /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
@@ -442,36 +406,27 @@ object UseTableHooks {
         ])*
     ): Self = StObject.set(x, "useControlledState", js.Array(value :_*))
     
-    @scala.inline
-    def setUseFinalInstance(value: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]]): Self = StObject.set(x, "useFinalInstance", value.asInstanceOf[js.Any])
+    inline def setUseFinalInstance(value: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]]): Self = StObject.set(x, "useFinalInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFinalInstanceVarargs(value: (js.Function1[/* instance */ TableInstance[D], Unit])*): Self = StObject.set(x, "useFinalInstance", js.Array(value :_*))
+    inline def setUseFinalInstanceVarargs(value: (js.Function1[/* instance */ TableInstance[D], Unit])*): Self = StObject.set(x, "useFinalInstance", js.Array(value :_*))
     
-    @scala.inline
-    def setUseInstance(value: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]]): Self = StObject.set(x, "useInstance", value.asInstanceOf[js.Any])
+    inline def setUseInstance(value: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]]): Self = StObject.set(x, "useInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseInstanceBeforeDimensions(value: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]]): Self = StObject.set(x, "useInstanceBeforeDimensions", value.asInstanceOf[js.Any])
+    inline def setUseInstanceBeforeDimensions(value: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]]): Self = StObject.set(x, "useInstanceBeforeDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseInstanceBeforeDimensionsVarargs(value: (js.Function1[/* instance */ TableInstance[D], Unit])*): Self = StObject.set(x, "useInstanceBeforeDimensions", js.Array(value :_*))
+    inline def setUseInstanceBeforeDimensionsVarargs(value: (js.Function1[/* instance */ TableInstance[D], Unit])*): Self = StObject.set(x, "useInstanceBeforeDimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setUseInstanceVarargs(value: (js.Function1[/* instance */ TableInstance[D], Unit])*): Self = StObject.set(x, "useInstance", js.Array(value :_*))
+    inline def setUseInstanceVarargs(value: (js.Function1[/* instance */ TableInstance[D], Unit])*): Self = StObject.set(x, "useInstance", js.Array(value :_*))
     
-    @scala.inline
-    def setUseOptions(
+    inline def setUseOptions(
       value: js.Array[
           js.Function2[/* options */ TableOptions[D], /* args */ TableOptions[D], TableOptions[D]]
         ]
     ): Self = StObject.set(x, "useOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseOptionsVarargs(value: (js.Function2[/* options */ TableOptions[D], /* args */ TableOptions[D], TableOptions[D]])*): Self = StObject.set(x, "useOptions", js.Array(value :_*))
+    inline def setUseOptionsVarargs(value: (js.Function2[/* options */ TableOptions[D], /* args */ TableOptions[D], TableOptions[D]])*): Self = StObject.set(x, "useOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibleColumns(
+    inline def setVisibleColumns(
       value: js.Array[
           js.Function2[
             /* allColumns */ js.Array[ColumnInstance[D]], 
@@ -481,8 +436,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "visibleColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleColumnsDeps(
+    inline def setVisibleColumnsDeps(
       value: js.Array[
           js.Function2[
             /* deps */ js.Array[js.Any], 
@@ -492,8 +446,7 @@ object UseTableHooks {
         ]
     ): Self = StObject.set(x, "visibleColumnsDeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleColumnsDepsVarargs(
+    inline def setVisibleColumnsDepsVarargs(
       value: (js.Function2[
           /* deps */ js.Array[js.Any], 
           /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
@@ -501,8 +454,7 @@ object UseTableHooks {
         ])*
     ): Self = StObject.set(x, "visibleColumnsDeps", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibleColumnsVarargs(
+    inline def setVisibleColumnsVarargs(
       value: (js.Function2[
           /* allColumns */ js.Array[ColumnInstance[D]], 
           /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 

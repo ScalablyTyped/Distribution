@@ -9,8 +9,7 @@ trait CopyObjectInput
      with typings.awsSdkClientS3Browser.typesCopyObjectInputMod.CopyObjectInput
 object CopyObjectInput {
   
-  @scala.inline
-  def apply(Bucket: String, CopySource: String, Key: String): CopyObjectInput = {
+  inline def apply(Bucket: String, CopySource: String, Key: String): CopyObjectInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], CopySource = CopySource.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyObjectInput]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISVGPathSegCurvetoQuadraticSmoothRel extends StObject {
   
-  @JSName("MSHTML.ISVGPathSegCurvetoQuadraticSmoothRel_typekey")
+  /* private */ @JSName("MSHTML.ISVGPathSegCurvetoQuadraticSmoothRel_typekey")
   var MSHTMLDotISVGPathSegCurvetoQuadraticSmoothRel_typekey: ISVGPathSegCurvetoQuadraticSmoothRel
   
   var x: Double
@@ -15,8 +15,7 @@ trait ISVGPathSegCurvetoQuadraticSmoothRel extends StObject {
 }
 object ISVGPathSegCurvetoQuadraticSmoothRel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotISVGPathSegCurvetoQuadraticSmoothRel_typekey: ISVGPathSegCurvetoQuadraticSmoothRel,
     x: Double,
     y: Double
@@ -26,16 +25,12 @@ object ISVGPathSegCurvetoQuadraticSmoothRel {
     __obj.asInstanceOf[ISVGPathSegCurvetoQuadraticSmoothRel]
   }
   
-  @scala.inline
-  implicit class ISVGPathSegCurvetoQuadraticSmoothRelMutableBuilder[Self <: ISVGPathSegCurvetoQuadraticSmoothRel] (val x: Self) extends AnyVal {
+  extension [Self <: ISVGPathSegCurvetoQuadraticSmoothRel](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotISVGPathSegCurvetoQuadraticSmoothRel_typekey(value: ISVGPathSegCurvetoQuadraticSmoothRel): Self = StObject.set(x, "MSHTML.ISVGPathSegCurvetoQuadraticSmoothRel_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotISVGPathSegCurvetoQuadraticSmoothRel_typekey(value: ISVGPathSegCurvetoQuadraticSmoothRel): Self = StObject.set(x, "MSHTML.ISVGPathSegCurvetoQuadraticSmoothRel_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

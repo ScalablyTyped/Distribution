@@ -12,25 +12,19 @@ trait TonalColorsInput extends StObject {
 }
 object TonalColorsInput {
   
-  @scala.inline
-  def apply(ambient: InputColor, spot: InputColor): TonalColorsInput = {
+  inline def apply(ambient: InputColor, spot: InputColor): TonalColorsInput = {
     val __obj = js.Dynamic.literal(ambient = ambient.asInstanceOf[js.Any], spot = spot.asInstanceOf[js.Any])
     __obj.asInstanceOf[TonalColorsInput]
   }
   
-  @scala.inline
-  implicit class TonalColorsInputMutableBuilder[Self <: TonalColorsInput] (val x: Self) extends AnyVal {
+  extension [Self <: TonalColorsInput](x: Self) {
     
-    @scala.inline
-    def setAmbient(value: InputColor): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
+    inline def setAmbient(value: InputColor): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmbientVarargs(value: Double*): Self = StObject.set(x, "ambient", js.Array(value :_*))
+    inline def setAmbientVarargs(value: Double*): Self = StObject.set(x, "ambient", js.Array(value :_*))
     
-    @scala.inline
-    def setSpot(value: InputColor): Self = StObject.set(x, "spot", value.asInstanceOf[js.Any])
+    inline def setSpot(value: InputColor): Self = StObject.set(x, "spot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotVarargs(value: Double*): Self = StObject.set(x, "spot", js.Array(value :_*))
+    inline def setSpotVarargs(value: Double*): Self = StObject.set(x, "spot", js.Array(value :_*))
   }
 }

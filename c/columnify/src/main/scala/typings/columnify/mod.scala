@@ -13,14 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(data: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(data: js.Array[js.Any], options: GlobalOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(data: Record[String, js.Any]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(data: Record[String, js.Any], options: GlobalOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(data: js.Array[js.Any], options: GlobalOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: Record[String, js.Any]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(data: Record[String, js.Any], options: GlobalOptions): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("columnify", JSImport.Namespace)
   @js.native
@@ -44,53 +40,38 @@ object mod {
   }
   object GlobalOptions {
     
-    @scala.inline
-    def apply(): GlobalOptions = {
+    inline def apply(): GlobalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalOptions]
     }
     
-    @scala.inline
-    implicit class GlobalOptionsMutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalOptions](x: Self) {
       
-      @scala.inline
-      def setColumnSplitter(value: String): Self = StObject.set(x, "columnSplitter", value.asInstanceOf[js.Any])
+      inline def setColumnSplitter(value: String): Self = StObject.set(x, "columnSplitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnSplitterUndefined: Self = StObject.set(x, "columnSplitter", js.undefined)
+      inline def setColumnSplitterUndefined: Self = StObject.set(x, "columnSplitter", js.undefined)
       
-      @scala.inline
-      def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setConfig(value: StringDictionary[Options]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: StringDictionary[Options]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setMaxLineWidth(value: Double): Self = StObject.set(x, "maxLineWidth", value.asInstanceOf[js.Any])
+      inline def setMaxLineWidth(value: Double): Self = StObject.set(x, "maxLineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLineWidthUndefined: Self = StObject.set(x, "maxLineWidth", js.undefined)
+      inline def setMaxLineWidthUndefined: Self = StObject.set(x, "maxLineWidth", js.undefined)
       
-      @scala.inline
-      def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
       
-      @scala.inline
-      def setWidths(value: StringDictionary[PickOptionsminWidthmaxWid]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+      inline def setWidths(value: StringDictionary[PickOptionsminWidthmaxWid]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
+      inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
     }
   }
   
@@ -116,68 +97,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlign(value: left | center | centre | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: left | center | centre | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setDataTransform(value: /* data */ String => String): Self = StObject.set(x, "dataTransform", js.Any.fromFunction1(value))
+      inline def setDataTransform(value: /* data */ String => String): Self = StObject.set(x, "dataTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataTransformUndefined: Self = StObject.set(x, "dataTransform", js.undefined)
+      inline def setDataTransformUndefined: Self = StObject.set(x, "dataTransform", js.undefined)
       
-      @scala.inline
-      def setHeadingTransform(value: /* data */ String => String): Self = StObject.set(x, "headingTransform", js.Any.fromFunction1(value))
+      inline def setHeadingTransform(value: /* data */ String => String): Self = StObject.set(x, "headingTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeadingTransformUndefined: Self = StObject.set(x, "headingTransform", js.undefined)
+      inline def setHeadingTransformUndefined: Self = StObject.set(x, "headingTransform", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setPaddingChr(value: String): Self = StObject.set(x, "paddingChr", value.asInstanceOf[js.Any])
+      inline def setPaddingChr(value: String): Self = StObject.set(x, "paddingChr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingChrUndefined: Self = StObject.set(x, "paddingChr", js.undefined)
+      inline def setPaddingChrUndefined: Self = StObject.set(x, "paddingChr", js.undefined)
       
-      @scala.inline
-      def setPreserveNewLines(value: Boolean): Self = StObject.set(x, "preserveNewLines", value.asInstanceOf[js.Any])
+      inline def setPreserveNewLines(value: Boolean): Self = StObject.set(x, "preserveNewLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveNewLinesUndefined: Self = StObject.set(x, "preserveNewLines", js.undefined)
+      inline def setPreserveNewLinesUndefined: Self = StObject.set(x, "preserveNewLines", js.undefined)
       
-      @scala.inline
-      def setShowHeaders(value: Boolean): Self = StObject.set(x, "showHeaders", value.asInstanceOf[js.Any])
+      inline def setShowHeaders(value: Boolean): Self = StObject.set(x, "showHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowHeadersUndefined: Self = StObject.set(x, "showHeaders", js.undefined)
+      inline def setShowHeadersUndefined: Self = StObject.set(x, "showHeaders", js.undefined)
       
-      @scala.inline
-      def setTruncateMarker(value: String): Self = StObject.set(x, "truncateMarker", value.asInstanceOf[js.Any])
+      inline def setTruncateMarker(value: String): Self = StObject.set(x, "truncateMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateMarkerUndefined: Self = StObject.set(x, "truncateMarker", js.undefined)
+      inline def setTruncateMarkerUndefined: Self = StObject.set(x, "truncateMarker", js.undefined)
     }
   }
 }

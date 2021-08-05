@@ -10,16 +10,13 @@ trait NativeEvent extends StObject {
 }
 object NativeEvent {
   
-  @scala.inline
-  def apply(nativeEvent: Text): NativeEvent = {
+  inline def apply(nativeEvent: Text): NativeEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeEvent]
   }
   
-  @scala.inline
-  implicit class NativeEventMutableBuilder[Self <: NativeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: NativeEvent](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: Text): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: Text): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

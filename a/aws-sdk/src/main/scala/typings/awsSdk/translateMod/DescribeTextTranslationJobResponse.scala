@@ -13,19 +13,15 @@ trait DescribeTextTranslationJobResponse extends StObject {
 }
 object DescribeTextTranslationJobResponse {
   
-  @scala.inline
-  def apply(): DescribeTextTranslationJobResponse = {
+  inline def apply(): DescribeTextTranslationJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTextTranslationJobResponse]
   }
   
-  @scala.inline
-  implicit class DescribeTextTranslationJobResponseMutableBuilder[Self <: DescribeTextTranslationJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTextTranslationJobResponse](x: Self) {
     
-    @scala.inline
-    def setTextTranslationJobProperties(value: TextTranslationJobProperties): Self = StObject.set(x, "TextTranslationJobProperties", value.asInstanceOf[js.Any])
+    inline def setTextTranslationJobProperties(value: TextTranslationJobProperties): Self = StObject.set(x, "TextTranslationJobProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTranslationJobPropertiesUndefined: Self = StObject.set(x, "TextTranslationJobProperties", js.undefined)
+    inline def setTextTranslationJobPropertiesUndefined: Self = StObject.set(x, "TextTranslationJobProperties", js.undefined)
   }
 }

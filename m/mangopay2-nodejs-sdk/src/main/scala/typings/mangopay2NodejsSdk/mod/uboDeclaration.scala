@@ -15,23 +15,18 @@ object uboDeclaration {
   }
   object CreateUboDeclaration {
     
-    @scala.inline
-    def apply(): CreateUboDeclaration = {
+    inline def apply(): CreateUboDeclaration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateUboDeclaration]
     }
     
-    @scala.inline
-    implicit class CreateUboDeclarationMutableBuilder[Self <: CreateUboDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: CreateUboDeclaration](x: Self) {
       
-      @scala.inline
-      def setDeclaredUBOs(value: js.Array[String]): Self = StObject.set(x, "DeclaredUBOs", value.asInstanceOf[js.Any])
+      inline def setDeclaredUBOs(value: js.Array[String]): Self = StObject.set(x, "DeclaredUBOs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclaredUBOsUndefined: Self = StObject.set(x, "DeclaredUBOs", js.undefined)
+      inline def setDeclaredUBOsUndefined: Self = StObject.set(x, "DeclaredUBOs", js.undefined)
       
-      @scala.inline
-      def setDeclaredUBOsVarargs(value: String*): Self = StObject.set(x, "DeclaredUBOs", js.Array(value :_*))
+      inline def setDeclaredUBOsVarargs(value: String*): Self = StObject.set(x, "DeclaredUBOs", js.Array(value :_*))
     }
   }
   
@@ -66,8 +61,7 @@ object uboDeclaration {
   }
   object UboDeclarationData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CreationDate: Double,
       DeclaredUBOs: js.Array[String],
       Id: String,
@@ -81,29 +75,21 @@ object uboDeclaration {
       __obj.asInstanceOf[UboDeclarationData]
     }
     
-    @scala.inline
-    implicit class UboDeclarationDataMutableBuilder[Self <: UboDeclarationData] (val x: Self) extends AnyVal {
+    extension [Self <: UboDeclarationData](x: Self) {
       
-      @scala.inline
-      def setDeclaredUBOs(value: js.Array[String]): Self = StObject.set(x, "DeclaredUBOs", value.asInstanceOf[js.Any])
+      inline def setDeclaredUBOs(value: js.Array[String]): Self = StObject.set(x, "DeclaredUBOs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclaredUBOsVarargs(value: String*): Self = StObject.set(x, "DeclaredUBOs", js.Array(value :_*))
+      inline def setDeclaredUBOsVarargs(value: String*): Self = StObject.set(x, "DeclaredUBOs", js.Array(value :_*))
       
-      @scala.inline
-      def setRefusedReasonMessage(value: String): Self = StObject.set(x, "RefusedReasonMessage", value.asInstanceOf[js.Any])
+      inline def setRefusedReasonMessage(value: String): Self = StObject.set(x, "RefusedReasonMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefusedReasonTypes(value: js.Array[String]): Self = StObject.set(x, "RefusedReasonTypes", value.asInstanceOf[js.Any])
+      inline def setRefusedReasonTypes(value: js.Array[String]): Self = StObject.set(x, "RefusedReasonTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefusedReasonTypesVarargs(value: String*): Self = StObject.set(x, "RefusedReasonTypes", js.Array(value :_*))
+      inline def setRefusedReasonTypesVarargs(value: String*): Self = StObject.set(x, "RefusedReasonTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: DocumentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: DocumentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,38 +108,28 @@ object uboDeclaration {
   }
   object UpdateUboDeclaration {
     
-    @scala.inline
-    def apply(Id: String): UpdateUboDeclaration = {
+    inline def apply(Id: String): UpdateUboDeclaration = {
       val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateUboDeclaration]
     }
     
-    @scala.inline
-    implicit class UpdateUboDeclarationMutableBuilder[Self <: UpdateUboDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateUboDeclaration](x: Self) {
       
-      @scala.inline
-      def setDeclaredUBOs(value: js.Array[String]): Self = StObject.set(x, "DeclaredUBOs", value.asInstanceOf[js.Any])
+      inline def setDeclaredUBOs(value: js.Array[String]): Self = StObject.set(x, "DeclaredUBOs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclaredUBOsUndefined: Self = StObject.set(x, "DeclaredUBOs", js.undefined)
+      inline def setDeclaredUBOsUndefined: Self = StObject.set(x, "DeclaredUBOs", js.undefined)
       
-      @scala.inline
-      def setDeclaredUBOsVarargs(value: String*): Self = StObject.set(x, "DeclaredUBOs", js.Array(value :_*))
+      inline def setDeclaredUBOsVarargs(value: String*): Self = StObject.set(x, "DeclaredUBOs", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: VALIDATION_ASKED): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: VALIDATION_ASKED): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
 }

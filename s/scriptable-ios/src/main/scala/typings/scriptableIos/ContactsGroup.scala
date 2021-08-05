@@ -47,25 +47,19 @@ trait ContactsGroup extends StObject {
 }
 object ContactsGroup {
   
-  @scala.inline
-  def apply(addMember: Contact => Unit, identifier: String, name: String, removeMember: Contact => Unit): ContactsGroup = {
+  inline def apply(addMember: Contact => Unit, identifier: String, name: String, removeMember: Contact => Unit): ContactsGroup = {
     val __obj = js.Dynamic.literal(addMember = js.Any.fromFunction1(addMember), identifier = identifier.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], removeMember = js.Any.fromFunction1(removeMember))
     __obj.asInstanceOf[ContactsGroup]
   }
   
-  @scala.inline
-  implicit class ContactsGroupMutableBuilder[Self <: ContactsGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ContactsGroup](x: Self) {
     
-    @scala.inline
-    def setAddMember(value: Contact => Unit): Self = StObject.set(x, "addMember", js.Any.fromFunction1(value))
+    inline def setAddMember(value: Contact => Unit): Self = StObject.set(x, "addMember", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveMember(value: Contact => Unit): Self = StObject.set(x, "removeMember", js.Any.fromFunction1(value))
+    inline def setRemoveMember(value: Contact => Unit): Self = StObject.set(x, "removeMember", js.Any.fromFunction1(value))
   }
 }

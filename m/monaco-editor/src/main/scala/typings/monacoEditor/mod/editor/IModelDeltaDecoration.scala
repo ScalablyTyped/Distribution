@@ -19,19 +19,15 @@ trait IModelDeltaDecoration extends StObject {
 }
 object IModelDeltaDecoration {
   
-  @scala.inline
-  def apply(options: IModelDecorationOptions, range: IRange): IModelDeltaDecoration = {
+  inline def apply(options: IModelDecorationOptions, range: IRange): IModelDeltaDecoration = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelDeltaDecoration]
   }
   
-  @scala.inline
-  implicit class IModelDeltaDecorationMutableBuilder[Self <: IModelDeltaDecoration] (val x: Self) extends AnyVal {
+  extension [Self <: IModelDeltaDecoration](x: Self) {
     
-    @scala.inline
-    def setOptions(value: IModelDecorationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IModelDecorationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

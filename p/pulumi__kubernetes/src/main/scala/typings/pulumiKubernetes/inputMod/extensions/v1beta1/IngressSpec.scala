@@ -32,43 +32,31 @@ trait IngressSpec extends StObject {
 }
 object IngressSpec {
   
-  @scala.inline
-  def apply(): IngressSpec = {
+  inline def apply(): IngressSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngressSpec]
   }
   
-  @scala.inline
-  implicit class IngressSpecMutableBuilder[Self <: IngressSpec] (val x: Self) extends AnyVal {
+  extension [Self <: IngressSpec](x: Self) {
     
-    @scala.inline
-    def setBackend(value: Input[IngressBackend]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: Input[IngressBackend]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
+    inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
     
-    @scala.inline
-    def setIngressClassName(value: Input[String]): Self = StObject.set(x, "ingressClassName", value.asInstanceOf[js.Any])
+    inline def setIngressClassName(value: Input[String]): Self = StObject.set(x, "ingressClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressClassNameUndefined: Self = StObject.set(x, "ingressClassName", js.undefined)
+    inline def setIngressClassNameUndefined: Self = StObject.set(x, "ingressClassName", js.undefined)
     
-    @scala.inline
-    def setRules(value: Input[js.Array[Input[IngressRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Input[js.Array[Input[IngressRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: Input[IngressRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Input[IngressRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
-    @scala.inline
-    def setTls(value: Input[js.Array[Input[IngressTLS]]]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Input[js.Array[Input[IngressTLS]]]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     
-    @scala.inline
-    def setTlsVarargs(value: Input[IngressTLS]*): Self = StObject.set(x, "tls", js.Array(value :_*))
+    inline def setTlsVarargs(value: Input[IngressTLS]*): Self = StObject.set(x, "tls", js.Array(value :_*))
   }
 }

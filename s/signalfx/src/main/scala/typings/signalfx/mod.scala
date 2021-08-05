@@ -20,8 +20,7 @@ object mod {
     @JSImport("signalfx", "CONSTANTS.MESSAGE_TYPES")
     @js.native
     def MESSAGE_TYPES: CONTROL = js.native
-    @scala.inline
-    def MESSAGE_TYPES_=(x: CONTROL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MESSAGE_TYPES")(x.asInstanceOf[js.Any])
+    inline def MESSAGE_TYPES_=(x: CONTROL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MESSAGE_TYPES")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("signalfx", "Ingest")
@@ -42,8 +41,7 @@ object mod {
     def send(report: SignalReport): Unit = js.native
   }
   
-  @scala.inline
-  def SignalFlow(apiToken: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SignalFlow")(apiToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def SignalFlow(apiToken: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SignalFlow")(apiToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait IngestOptions extends StObject {
     
@@ -63,59 +61,42 @@ object mod {
   }
   object IngestOptions {
     
-    @scala.inline
-    def apply(): IngestOptions = {
+    inline def apply(): IngestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IngestOptions]
     }
     
-    @scala.inline
-    implicit class IngestOptionsMutableBuilder[Self <: IngestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IngestOptions](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setDimensions(value: js.Object): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: js.Object): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      @scala.inline
-      def setEnableAmazonUniqueId(value: Boolean): Self = StObject.set(x, "enableAmazonUniqueId", value.asInstanceOf[js.Any])
+      inline def setEnableAmazonUniqueId(value: Boolean): Self = StObject.set(x, "enableAmazonUniqueId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableAmazonUniqueIdUndefined: Self = StObject.set(x, "enableAmazonUniqueId", js.undefined)
+      inline def setEnableAmazonUniqueIdUndefined: Self = StObject.set(x, "enableAmazonUniqueId", js.undefined)
       
-      @scala.inline
-      def setIngestEndpoint(value: String): Self = StObject.set(x, "ingestEndpoint", value.asInstanceOf[js.Any])
+      inline def setIngestEndpoint(value: String): Self = StObject.set(x, "ingestEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIngestEndpointUndefined: Self = StObject.set(x, "ingestEndpoint", js.undefined)
+      inline def setIngestEndpointUndefined: Self = StObject.set(x, "ingestEndpoint", js.undefined)
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUserAgents(value: js.Array[String]): Self = StObject.set(x, "userAgents", value.asInstanceOf[js.Any])
+      inline def setUserAgents(value: js.Array[String]): Self = StObject.set(x, "userAgents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentsUndefined: Self = StObject.set(x, "userAgents", js.undefined)
+      inline def setUserAgentsUndefined: Self = StObject.set(x, "userAgents", js.undefined)
       
-      @scala.inline
-      def setUserAgentsVarargs(value: String*): Self = StObject.set(x, "userAgents", js.Array(value :_*))
+      inline def setUserAgentsVarargs(value: String*): Self = StObject.set(x, "userAgents", js.Array(value :_*))
     }
   }
   
@@ -125,17 +106,14 @@ object mod {
   }
   object SignalClient {
     
-    @scala.inline
-    def apply(send: SignalReport => Unit): SignalClient = {
+    inline def apply(send: SignalReport => Unit): SignalClient = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[SignalClient]
     }
     
-    @scala.inline
-    implicit class SignalClientMutableBuilder[Self <: SignalClient] (val x: Self) extends AnyVal {
+    extension [Self <: SignalClient](x: Self) {
       
-      @scala.inline
-      def setSend(value: SignalReport => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: SignalReport => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
   
@@ -149,26 +127,20 @@ object mod {
   }
   object SignalMetric {
     
-    @scala.inline
-    def apply(metric: String, value: Double): SignalMetric = {
+    inline def apply(metric: String, value: Double): SignalMetric = {
       val __obj = js.Dynamic.literal(metric = metric.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignalMetric]
     }
     
-    @scala.inline
-    implicit class SignalMetricMutableBuilder[Self <: SignalMetric] (val x: Self) extends AnyVal {
+    extension [Self <: SignalMetric](x: Self) {
       
-      @scala.inline
-      def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+      inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,41 +154,30 @@ object mod {
   }
   object SignalReport {
     
-    @scala.inline
-    def apply(): SignalReport = {
+    inline def apply(): SignalReport = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignalReport]
     }
     
-    @scala.inline
-    implicit class SignalReportMutableBuilder[Self <: SignalReport] (val x: Self) extends AnyVal {
+    extension [Self <: SignalReport](x: Self) {
       
-      @scala.inline
-      def setCounters(value: js.Array[SignalMetric]): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
+      inline def setCounters(value: js.Array[SignalMetric]): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
+      inline def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
       
-      @scala.inline
-      def setCountersVarargs(value: SignalMetric*): Self = StObject.set(x, "counters", js.Array(value :_*))
+      inline def setCountersVarargs(value: SignalMetric*): Self = StObject.set(x, "counters", js.Array(value :_*))
       
-      @scala.inline
-      def setCumulative_counters(value: js.Array[SignalMetric]): Self = StObject.set(x, "cumulative_counters", value.asInstanceOf[js.Any])
+      inline def setCumulative_counters(value: js.Array[SignalMetric]): Self = StObject.set(x, "cumulative_counters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCumulative_countersUndefined: Self = StObject.set(x, "cumulative_counters", js.undefined)
+      inline def setCumulative_countersUndefined: Self = StObject.set(x, "cumulative_counters", js.undefined)
       
-      @scala.inline
-      def setCumulative_countersVarargs(value: SignalMetric*): Self = StObject.set(x, "cumulative_counters", js.Array(value :_*))
+      inline def setCumulative_countersVarargs(value: SignalMetric*): Self = StObject.set(x, "cumulative_counters", js.Array(value :_*))
       
-      @scala.inline
-      def setGauges(value: js.Array[SignalMetric]): Self = StObject.set(x, "gauges", value.asInstanceOf[js.Any])
+      inline def setGauges(value: js.Array[SignalMetric]): Self = StObject.set(x, "gauges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaugesUndefined: Self = StObject.set(x, "gauges", js.undefined)
+      inline def setGaugesUndefined: Self = StObject.set(x, "gauges", js.undefined)
       
-      @scala.inline
-      def setGaugesVarargs(value: SignalMetric*): Self = StObject.set(x, "gauges", js.Array(value :_*))
+      inline def setGaugesVarargs(value: SignalMetric*): Self = StObject.set(x, "gauges", js.Array(value :_*))
     }
   }
 }

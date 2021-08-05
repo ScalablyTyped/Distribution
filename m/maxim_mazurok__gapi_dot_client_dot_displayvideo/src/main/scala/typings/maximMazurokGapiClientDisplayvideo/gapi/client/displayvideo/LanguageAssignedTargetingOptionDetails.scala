@@ -17,31 +17,23 @@ trait LanguageAssignedTargetingOptionDetails extends StObject {
 }
 object LanguageAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): LanguageAssignedTargetingOptionDetails = {
+  inline def apply(): LanguageAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LanguageAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class LanguageAssignedTargetingOptionDetailsMutableBuilder[Self <: LanguageAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+    inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

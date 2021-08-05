@@ -29,8 +29,7 @@ trait XMouseClickHandler
 }
 object XMouseClickHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     mousePressed: MouseEvent => Boolean,
@@ -42,13 +41,10 @@ object XMouseClickHandler {
     __obj.asInstanceOf[XMouseClickHandler]
   }
   
-  @scala.inline
-  implicit class XMouseClickHandlerMutableBuilder[Self <: XMouseClickHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XMouseClickHandler](x: Self) {
     
-    @scala.inline
-    def setMousePressed(value: MouseEvent => Boolean): Self = StObject.set(x, "mousePressed", js.Any.fromFunction1(value))
+    inline def setMousePressed(value: MouseEvent => Boolean): Self = StObject.set(x, "mousePressed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseReleased(value: MouseEvent => Boolean): Self = StObject.set(x, "mouseReleased", js.Any.fromFunction1(value))
+    inline def setMouseReleased(value: MouseEvent => Boolean): Self = StObject.set(x, "mouseReleased", js.Any.fromFunction1(value))
   }
 }

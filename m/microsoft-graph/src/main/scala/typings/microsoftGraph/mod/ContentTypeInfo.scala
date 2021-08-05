@@ -14,31 +14,23 @@ trait ContentTypeInfo extends StObject {
 }
 object ContentTypeInfo {
   
-  @scala.inline
-  def apply(): ContentTypeInfo = {
+  inline def apply(): ContentTypeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentTypeInfo]
   }
   
-  @scala.inline
-  implicit class ContentTypeInfoMutableBuilder[Self <: ContentTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ContentTypeInfo](x: Self) {
     
-    @scala.inline
-    def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

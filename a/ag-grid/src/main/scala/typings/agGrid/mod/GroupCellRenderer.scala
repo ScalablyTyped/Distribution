@@ -18,6 +18,5 @@ object GroupCellRenderer {
   @JSImport("ag-grid", "GroupCellRenderer.TEMPLATE")
   @js.native
   def TEMPLATE: js.Any = js.native
-  @scala.inline
-  def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+  inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
 }

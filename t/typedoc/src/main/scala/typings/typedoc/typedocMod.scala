@@ -15,7 +15,7 @@ object typedocMod {
     extends StObject
        with OptionsReader {
     
-    var findTypedocFile: js.Any = js.native
+    /* private */ var findTypedocFile: js.Any = js.native
     
     /* CompleteClass */
     var name: String = js.native
@@ -26,6 +26,6 @@ object typedocMod {
     /* CompleteClass */
     override def read(container: Options, logger: Logger): Unit = js.native
     
-    var readFile: js.Any = js.native
+    /* private */ var readFile: js.Any = js.native
   }
 }

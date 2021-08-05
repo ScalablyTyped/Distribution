@@ -11,6 +11,5 @@ object isGzipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(buf: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(buf.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(buf: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(buf.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

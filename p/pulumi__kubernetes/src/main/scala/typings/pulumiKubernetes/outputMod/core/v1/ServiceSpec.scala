@@ -87,8 +87,7 @@ trait ServiceSpec extends StObject {
 }
 object ServiceSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clusterIP: String,
     externalIPs: js.Array[String],
     externalName: String,
@@ -110,64 +109,44 @@ object ServiceSpec {
     __obj.asInstanceOf[ServiceSpec]
   }
   
-  @scala.inline
-  implicit class ServiceSpecMutableBuilder[Self <: ServiceSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceSpec](x: Self) {
     
-    @scala.inline
-    def setClusterIP(value: String): Self = StObject.set(x, "clusterIP", value.asInstanceOf[js.Any])
+    inline def setClusterIP(value: String): Self = StObject.set(x, "clusterIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIPs(value: js.Array[String]): Self = StObject.set(x, "externalIPs", value.asInstanceOf[js.Any])
+    inline def setExternalIPs(value: js.Array[String]): Self = StObject.set(x, "externalIPs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIPsVarargs(value: String*): Self = StObject.set(x, "externalIPs", js.Array(value :_*))
+    inline def setExternalIPsVarargs(value: String*): Self = StObject.set(x, "externalIPs", js.Array(value :_*))
     
-    @scala.inline
-    def setExternalName(value: String): Self = StObject.set(x, "externalName", value.asInstanceOf[js.Any])
+    inline def setExternalName(value: String): Self = StObject.set(x, "externalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalTrafficPolicy(value: String): Self = StObject.set(x, "externalTrafficPolicy", value.asInstanceOf[js.Any])
+    inline def setExternalTrafficPolicy(value: String): Self = StObject.set(x, "externalTrafficPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckNodePort(value: Double): Self = StObject.set(x, "healthCheckNodePort", value.asInstanceOf[js.Any])
+    inline def setHealthCheckNodePort(value: Double): Self = StObject.set(x, "healthCheckNodePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpFamily(value: String): Self = StObject.set(x, "ipFamily", value.asInstanceOf[js.Any])
+    inline def setIpFamily(value: String): Self = StObject.set(x, "ipFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerIP(value: String): Self = StObject.set(x, "loadBalancerIP", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerIP(value: String): Self = StObject.set(x, "loadBalancerIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerSourceRanges(value: js.Array[String]): Self = StObject.set(x, "loadBalancerSourceRanges", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerSourceRanges(value: js.Array[String]): Self = StObject.set(x, "loadBalancerSourceRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerSourceRangesVarargs(value: String*): Self = StObject.set(x, "loadBalancerSourceRanges", js.Array(value :_*))
+    inline def setLoadBalancerSourceRangesVarargs(value: String*): Self = StObject.set(x, "loadBalancerSourceRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setPorts(value: js.Array[ServicePort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: js.Array[ServicePort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsVarargs(value: ServicePort*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: ServicePort*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
-    @scala.inline
-    def setPublishNotReadyAddresses(value: Boolean): Self = StObject.set(x, "publishNotReadyAddresses", value.asInstanceOf[js.Any])
+    inline def setPublishNotReadyAddresses(value: Boolean): Self = StObject.set(x, "publishNotReadyAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: StringDictionary[String]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: StringDictionary[String]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAffinity(value: String): Self = StObject.set(x, "sessionAffinity", value.asInstanceOf[js.Any])
+    inline def setSessionAffinity(value: String): Self = StObject.set(x, "sessionAffinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAffinityConfig(value: SessionAffinityConfig): Self = StObject.set(x, "sessionAffinityConfig", value.asInstanceOf[js.Any])
+    inline def setSessionAffinityConfig(value: SessionAffinityConfig): Self = StObject.set(x, "sessionAffinityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopologyKeys(value: js.Array[String]): Self = StObject.set(x, "topologyKeys", value.asInstanceOf[js.Any])
+    inline def setTopologyKeys(value: js.Array[String]): Self = StObject.set(x, "topologyKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopologyKeysVarargs(value: String*): Self = StObject.set(x, "topologyKeys", js.Array(value :_*))
+    inline def setTopologyKeysVarargs(value: String*): Self = StObject.set(x, "topologyKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

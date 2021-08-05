@@ -36,58 +36,41 @@ trait EnhancedTextCfg extends StObject {
 }
 object EnhancedTextCfg {
   
-  @scala.inline
-  def apply(content: String | Double): EnhancedTextCfg = {
+  inline def apply(content: String | Double): EnhancedTextCfg = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedTextCfg]
   }
   
-  @scala.inline
-  implicit class EnhancedTextCfgMutableBuilder[Self <: EnhancedTextCfg] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedTextCfg](x: Self) {
     
-    @scala.inline
-    def setAutoEllipsis(value: Boolean): Self = StObject.set(x, "autoEllipsis", value.asInstanceOf[js.Any])
+    inline def setAutoEllipsis(value: Boolean): Self = StObject.set(x, "autoEllipsis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoEllipsisUndefined: Self = StObject.set(x, "autoEllipsis", js.undefined)
+    inline def setAutoEllipsisUndefined: Self = StObject.set(x, "autoEllipsis", js.undefined)
     
-    @scala.inline
-    def setBackground(value: EnhancedTextBackgroundCfg): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: EnhancedTextBackgroundCfg): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setContent(value: String | Double): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String | Double): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsisPosition(value: head | middle | tail): Self = StObject.set(x, "ellipsisPosition", value.asInstanceOf[js.Any])
+    inline def setEllipsisPosition(value: head | middle | tail): Self = StObject.set(x, "ellipsisPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsisPositionUndefined: Self = StObject.set(x, "ellipsisPosition", js.undefined)
+    inline def setEllipsisPositionUndefined: Self = StObject.set(x, "ellipsisPosition", js.undefined)
     
-    @scala.inline
-    def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
+    inline def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
+    inline def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait FilterCriteria extends StObject {
 }
 object FilterCriteria {
   
-  @scala.inline
-  def apply(filterType: Double, value: String): FilterCriteria = {
+  inline def apply(filterType: Double, value: String): FilterCriteria = {
     val __obj = js.Dynamic.literal(filterType = filterType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterCriteria]
   }
   
-  @scala.inline
-  implicit class FilterCriteriaMutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: FilterCriteria](x: Self) {
     
-    @scala.inline
-    def setFilterType(value: Double): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+    inline def setFilterType(value: Double): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait CacheBehaviorPerPath extends StObject {
 }
 object CacheBehaviorPerPath {
   
-  @scala.inline
-  def apply(): CacheBehaviorPerPath = {
+  inline def apply(): CacheBehaviorPerPath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheBehaviorPerPath]
   }
   
-  @scala.inline
-  implicit class CacheBehaviorPerPathMutableBuilder[Self <: CacheBehaviorPerPath] (val x: Self) extends AnyVal {
+  extension [Self <: CacheBehaviorPerPath](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: BehaviorEnum): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: BehaviorEnum): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

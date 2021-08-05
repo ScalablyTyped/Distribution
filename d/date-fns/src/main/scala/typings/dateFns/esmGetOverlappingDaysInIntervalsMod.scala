@@ -8,8 +8,7 @@ object esmGetOverlappingDaysInIntervalsMod {
   
   object default {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       intervalLeft: typings.dateFns.mod.Interval | Interval,
       intervalRight: typings.dateFns.mod.Interval | Interval
     ): Double = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Double]

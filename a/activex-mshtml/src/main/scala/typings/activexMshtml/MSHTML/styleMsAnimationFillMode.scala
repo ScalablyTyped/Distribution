@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsAnimationFillMode extends StObject
 object styleMsAnimationFillMode {
   
-  @scala.inline
-  def styleMsAnimationFillModeBackwards: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsAnimationFillModeBackwards: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsAnimationFillModeBoth: `3` = 3.asInstanceOf[`3`]
+  inline def styleMsAnimationFillModeBoth: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleMsAnimationFillModeForwards: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsAnimationFillModeForwards: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsAnimationFillModeNone: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsAnimationFillModeNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsAnimationFillModeNotSet: `4` = 4.asInstanceOf[`4`]
+  inline def styleMsAnimationFillModeNotSet: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleMsAnimationFillMode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsAnimationFillMode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

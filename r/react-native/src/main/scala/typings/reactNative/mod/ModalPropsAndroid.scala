@@ -18,25 +18,19 @@ trait ModalPropsAndroid extends StObject {
 }
 object ModalPropsAndroid {
   
-  @scala.inline
-  def apply(): ModalPropsAndroid = {
+  inline def apply(): ModalPropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalPropsAndroid]
   }
   
-  @scala.inline
-  implicit class ModalPropsAndroidMutableBuilder[Self <: ModalPropsAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: ModalPropsAndroid](x: Self) {
     
-    @scala.inline
-    def setHardwareAccelerated(value: Boolean): Self = StObject.set(x, "hardwareAccelerated", value.asInstanceOf[js.Any])
+    inline def setHardwareAccelerated(value: Boolean): Self = StObject.set(x, "hardwareAccelerated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareAcceleratedUndefined: Self = StObject.set(x, "hardwareAccelerated", js.undefined)
+    inline def setHardwareAcceleratedUndefined: Self = StObject.set(x, "hardwareAccelerated", js.undefined)
     
-    @scala.inline
-    def setStatusBarTranslucent(value: Boolean): Self = StObject.set(x, "statusBarTranslucent", value.asInstanceOf[js.Any])
+    inline def setStatusBarTranslucent(value: Boolean): Self = StObject.set(x, "statusBarTranslucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarTranslucentUndefined: Self = StObject.set(x, "statusBarTranslucent", js.undefined)
+    inline def setStatusBarTranslucentUndefined: Self = StObject.set(x, "statusBarTranslucent", js.undefined)
   }
 }

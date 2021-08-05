@@ -29,10 +29,8 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(): SocketCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SocketCluster]
-  @scala.inline
-  def create(
+  inline def create(): SocketCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SocketCluster]
+  inline def create(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any
   ): SocketCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[SocketCluster]
   
@@ -48,26 +46,20 @@ object mod {
   }
   object BrokerExitInfo {
     
-    @scala.inline
-    def apply(code: Double, id: Double, pid: Double, signal: String): BrokerExitInfo = {
+    inline def apply(code: Double, id: Double, pid: Double, signal: String): BrokerExitInfo = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrokerExitInfo]
     }
     
-    @scala.inline
-    implicit class BrokerExitInfoMutableBuilder[Self <: BrokerExitInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerExitInfo](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,23 +73,18 @@ object mod {
   }
   object BrokerStartInfo {
     
-    @scala.inline
-    def apply(id: Double, pid: Double, respawn: Boolean): BrokerStartInfo = {
+    inline def apply(id: Double, pid: Double, respawn: Boolean): BrokerStartInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], respawn = respawn.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrokerStartInfo]
     }
     
-    @scala.inline
-    implicit class BrokerStartInfoMutableBuilder[Self <: BrokerStartInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerStartInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespawn(value: Boolean): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
+      inline def setRespawn(value: Boolean): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,14 +96,11 @@ object mod {
   trait ColorCodes extends StObject
   object ColorCodes {
     
-    @scala.inline
-    def green: typings.socketcluster.socketclusterStrings.green = "green".asInstanceOf[typings.socketcluster.socketclusterStrings.green]
+    inline def green: typings.socketcluster.socketclusterStrings.green = "green".asInstanceOf[typings.socketcluster.socketclusterStrings.green]
     
-    @scala.inline
-    def red: typings.socketcluster.socketclusterStrings.red = "red".asInstanceOf[typings.socketcluster.socketclusterStrings.red]
+    inline def red: typings.socketcluster.socketclusterStrings.red = "red".asInstanceOf[typings.socketcluster.socketclusterStrings.red]
     
-    @scala.inline
-    def yellow: typings.socketcluster.socketclusterStrings.yellow = "yellow".asInstanceOf[typings.socketcluster.socketclusterStrings.yellow]
+    inline def yellow: typings.socketcluster.socketclusterStrings.yellow = "yellow".asInstanceOf[typings.socketcluster.socketclusterStrings.yellow]
   }
   
   trait KillWorkersOptions extends StObject {
@@ -129,26 +113,20 @@ object mod {
   }
   object KillWorkersOptions {
     
-    @scala.inline
-    def apply(): KillWorkersOptions = {
+    inline def apply(): KillWorkersOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KillWorkersOptions]
     }
     
-    @scala.inline
-    implicit class KillWorkersOptionsMutableBuilder[Self <: KillWorkersOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KillWorkersOptions](x: Self) {
       
-      @scala.inline
-      def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+      inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+      inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
       
-      @scala.inline
-      def setKillClusterMaster(value: Boolean): Self = StObject.set(x, "killClusterMaster", value.asInstanceOf[js.Any])
+      inline def setKillClusterMaster(value: Boolean): Self = StObject.set(x, "killClusterMaster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKillClusterMasterUndefined: Self = StObject.set(x, "killClusterMaster", js.undefined)
+      inline def setKillClusterMasterUndefined: Self = StObject.set(x, "killClusterMaster", js.undefined)
     }
   }
   
@@ -251,26 +229,20 @@ object mod {
   }
   object WorkerClusterExitInfo {
     
-    @scala.inline
-    def apply(childProcess: ChildProcess, code: Double, pid: Double, signal: String): WorkerClusterExitInfo = {
+    inline def apply(childProcess: ChildProcess, code: Double, pid: Double, signal: String): WorkerClusterExitInfo = {
       val __obj = js.Dynamic.literal(childProcess = childProcess.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerClusterExitInfo]
     }
     
-    @scala.inline
-    implicit class WorkerClusterExitInfoMutableBuilder[Self <: WorkerClusterExitInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerClusterExitInfo](x: Self) {
       
-      @scala.inline
-      def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
+      inline def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -282,20 +254,16 @@ object mod {
   }
   object WorkerClusterReadyInfo {
     
-    @scala.inline
-    def apply(childProcess: ChildProcess, pid: Double): WorkerClusterReadyInfo = {
+    inline def apply(childProcess: ChildProcess, pid: Double): WorkerClusterReadyInfo = {
       val __obj = js.Dynamic.literal(childProcess = childProcess.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerClusterReadyInfo]
     }
     
-    @scala.inline
-    implicit class WorkerClusterReadyInfoMutableBuilder[Self <: WorkerClusterReadyInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerClusterReadyInfo](x: Self) {
       
-      @scala.inline
-      def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
+      inline def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -307,20 +275,16 @@ object mod {
   }
   object WorkerClusterStartInfo {
     
-    @scala.inline
-    def apply(childProcess: ChildProcess, pid: Double): WorkerClusterStartInfo = {
+    inline def apply(childProcess: ChildProcess, pid: Double): WorkerClusterStartInfo = {
       val __obj = js.Dynamic.literal(childProcess = childProcess.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerClusterStartInfo]
     }
     
-    @scala.inline
-    implicit class WorkerClusterStartInfoMutableBuilder[Self <: WorkerClusterStartInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerClusterStartInfo](x: Self) {
       
-      @scala.inline
-      def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
+      inline def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -336,26 +300,20 @@ object mod {
   }
   object WorkerExitInfo {
     
-    @scala.inline
-    def apply(code: Double, id: Double, pid: Double, signal: String): WorkerExitInfo = {
+    inline def apply(code: Double, id: Double, pid: Double, signal: String): WorkerExitInfo = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerExitInfo]
     }
     
-    @scala.inline
-    implicit class WorkerExitInfoMutableBuilder[Self <: WorkerExitInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerExitInfo](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -369,23 +327,18 @@ object mod {
   }
   object WorkerStartInfo {
     
-    @scala.inline
-    def apply(id: Double, pid: Double, respawn: Boolean): WorkerStartInfo = {
+    inline def apply(id: Double, pid: Double, respawn: Boolean): WorkerStartInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], respawn = respawn.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerStartInfo]
     }
     
-    @scala.inline
-    implicit class WorkerStartInfoMutableBuilder[Self <: WorkerStartInfo] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerStartInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespawn(value: Boolean): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
+      inline def setRespawn(value: Boolean): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
     }
   }
 }

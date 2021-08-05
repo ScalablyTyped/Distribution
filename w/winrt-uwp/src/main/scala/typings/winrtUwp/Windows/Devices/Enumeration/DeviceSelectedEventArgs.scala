@@ -12,16 +12,13 @@ trait DeviceSelectedEventArgs extends StObject {
 }
 object DeviceSelectedEventArgs {
   
-  @scala.inline
-  def apply(selectedDevice: DeviceInformation): DeviceSelectedEventArgs = {
+  inline def apply(selectedDevice: DeviceInformation): DeviceSelectedEventArgs = {
     val __obj = js.Dynamic.literal(selectedDevice = selectedDevice.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceSelectedEventArgs]
   }
   
-  @scala.inline
-  implicit class DeviceSelectedEventArgsMutableBuilder[Self <: DeviceSelectedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceSelectedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSelectedDevice(value: DeviceInformation): Self = StObject.set(x, "selectedDevice", value.asInstanceOf[js.Any])
+    inline def setSelectedDevice(value: DeviceInformation): Self = StObject.set(x, "selectedDevice", value.asInstanceOf[js.Any])
   }
 }

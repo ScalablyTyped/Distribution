@@ -51,97 +51,67 @@ trait LogQueryResponseResult extends StObject {
 }
 object LogQueryResponseResult {
   
-  @scala.inline
-  def apply(): LogQueryResponseResult = {
+  inline def apply(): LogQueryResponseResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogQueryResponseResult]
   }
   
-  @scala.inline
-  implicit class LogQueryResponseResultMutableBuilder[Self <: LogQueryResponseResult] (val x: Self) extends AnyVal {
+  extension [Self <: LogQueryResponseResult](x: Self) {
     
-    @scala.inline
-    def setClient_timestamp(value: String): Self = StObject.set(x, "client_timestamp", value.asInstanceOf[js.Any])
+    inline def setClient_timestamp(value: String): Self = StObject.set(x, "client_timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_timestampUndefined: Self = StObject.set(x, "client_timestamp", js.undefined)
+    inline def setClient_timestampUndefined: Self = StObject.set(x, "client_timestamp", js.undefined)
     
-    @scala.inline
-    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
+    inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
+    inline def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
     
-    @scala.inline
-    def setCreated_timestamp(value: String): Self = StObject.set(x, "created_timestamp", value.asInstanceOf[js.Any])
+    inline def setCreated_timestamp(value: String): Self = StObject.set(x, "created_timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_timestampUndefined: Self = StObject.set(x, "created_timestamp", js.undefined)
+    inline def setCreated_timestampUndefined: Self = StObject.set(x, "created_timestamp", js.undefined)
     
-    @scala.inline
-    def setCustomer_id(value: String): Self = StObject.set(x, "customer_id", value.asInstanceOf[js.Any])
+    inline def setCustomer_id(value: String): Self = StObject.set(x, "customer_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomer_idUndefined: Self = StObject.set(x, "customer_id", js.undefined)
+    inline def setCustomer_idUndefined: Self = StObject.set(x, "customer_id", js.undefined)
     
-    @scala.inline
-    def setDisplay_rank(value: Double): Self = StObject.set(x, "display_rank", value.asInstanceOf[js.Any])
+    inline def setDisplay_rank(value: Double): Self = StObject.set(x, "display_rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_rankUndefined: Self = StObject.set(x, "display_rank", js.undefined)
+    inline def setDisplay_rankUndefined: Self = StObject.set(x, "display_rank", js.undefined)
     
-    @scala.inline
-    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
+    inline def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
+    inline def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
     
-    @scala.inline
-    def setDocument_results(value: LogQueryResponseResultDocuments): Self = StObject.set(x, "document_results", value.asInstanceOf[js.Any])
+    inline def setDocument_results(value: LogQueryResponseResultDocuments): Self = StObject.set(x, "document_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_resultsUndefined: Self = StObject.set(x, "document_results", js.undefined)
+    inline def setDocument_resultsUndefined: Self = StObject.set(x, "document_results", js.undefined)
     
-    @scala.inline
-    def setDocument_type(value: String): Self = StObject.set(x, "document_type", value.asInstanceOf[js.Any])
+    inline def setDocument_type(value: String): Self = StObject.set(x, "document_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_typeUndefined: Self = StObject.set(x, "document_type", js.undefined)
+    inline def setDocument_typeUndefined: Self = StObject.set(x, "document_type", js.undefined)
     
-    @scala.inline
-    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
+    inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment_idUndefined: Self = StObject.set(x, "environment_id", js.undefined)
+    inline def setEnvironment_idUndefined: Self = StObject.set(x, "environment_id", js.undefined)
     
-    @scala.inline
-    def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
+    inline def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_typeUndefined: Self = StObject.set(x, "event_type", js.undefined)
+    inline def setEvent_typeUndefined: Self = StObject.set(x, "event_type", js.undefined)
     
-    @scala.inline
-    def setNatural_language_query(value: String): Self = StObject.set(x, "natural_language_query", value.asInstanceOf[js.Any])
+    inline def setNatural_language_query(value: String): Self = StObject.set(x, "natural_language_query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatural_language_queryUndefined: Self = StObject.set(x, "natural_language_query", js.undefined)
+    inline def setNatural_language_queryUndefined: Self = StObject.set(x, "natural_language_query", js.undefined)
     
-    @scala.inline
-    def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
+    inline def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery_idUndefined: Self = StObject.set(x, "query_id", js.undefined)
+    inline def setQuery_idUndefined: Self = StObject.set(x, "query_id", js.undefined)
     
-    @scala.inline
-    def setResult_type(value: String): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
+    inline def setResult_type(value: String): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
+    inline def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
     
-    @scala.inline
-    def setSession_token(value: String): Self = StObject.set(x, "session_token", value.asInstanceOf[js.Any])
+    inline def setSession_token(value: String): Self = StObject.set(x, "session_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession_tokenUndefined: Self = StObject.set(x, "session_token", js.undefined)
+    inline def setSession_tokenUndefined: Self = StObject.set(x, "session_token", js.undefined)
   }
 }

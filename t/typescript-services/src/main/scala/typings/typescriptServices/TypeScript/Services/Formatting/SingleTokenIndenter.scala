@@ -100,14 +100,13 @@ trait SingleTokenIndenter
   extends StObject
      with IndentationTrackingWalker {
   
-  var indentationAmount: js.Any
+  /* private */ var indentationAmount: js.Any
   
-  var indentationPosition: js.Any
+  /* private */ var indentationPosition: js.Any
 }
 object SingleTokenIndenter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _indentationNodeContextPool: js.Any,
     _lastTriviaWasNewLine: js.Any,
     _parent: js.Any,
@@ -229,13 +228,10 @@ object SingleTokenIndenter {
     __obj.asInstanceOf[SingleTokenIndenter]
   }
   
-  @scala.inline
-  implicit class SingleTokenIndenterMutableBuilder[Self <: SingleTokenIndenter] (val x: Self) extends AnyVal {
+  extension [Self <: SingleTokenIndenter](x: Self) {
     
-    @scala.inline
-    def setIndentationAmount(value: js.Any): Self = StObject.set(x, "indentationAmount", value.asInstanceOf[js.Any])
+    inline def setIndentationAmount(value: js.Any): Self = StObject.set(x, "indentationAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentationPosition(value: js.Any): Self = StObject.set(x, "indentationPosition", value.asInstanceOf[js.Any])
+    inline def setIndentationPosition(value: js.Any): Self = StObject.set(x, "indentationPosition", value.asInstanceOf[js.Any])
   }
 }

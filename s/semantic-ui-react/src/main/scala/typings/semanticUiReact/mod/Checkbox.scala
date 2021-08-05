@@ -19,6 +19,5 @@ class Checkbox protected ()
 }
 object Checkbox {
   
-  @scala.inline
-  def apply: ComponentClass[CheckboxProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Checkbox").asInstanceOf[ComponentClass[CheckboxProps, ComponentState]]
+  inline def apply: ComponentClass[CheckboxProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Checkbox").asInstanceOf[ComponentClass[CheckboxProps, ComponentState]]
 }

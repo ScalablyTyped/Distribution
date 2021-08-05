@@ -20,43 +20,31 @@ trait GenerateConfigReportResponse extends StObject {
 }
 object GenerateConfigReportResponse {
   
-  @scala.inline
-  def apply(): GenerateConfigReportResponse = {
+  inline def apply(): GenerateConfigReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateConfigReportResponse]
   }
   
-  @scala.inline
-  implicit class GenerateConfigReportResponseMutableBuilder[Self <: GenerateConfigReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateConfigReportResponse](x: Self) {
     
-    @scala.inline
-    def setChangeReports(value: js.Array[ChangeReport]): Self = StObject.set(x, "changeReports", value.asInstanceOf[js.Any])
+    inline def setChangeReports(value: js.Array[ChangeReport]): Self = StObject.set(x, "changeReports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeReportsUndefined: Self = StObject.set(x, "changeReports", js.undefined)
+    inline def setChangeReportsUndefined: Self = StObject.set(x, "changeReports", js.undefined)
     
-    @scala.inline
-    def setChangeReportsVarargs(value: ChangeReport*): Self = StObject.set(x, "changeReports", js.Array(value :_*))
+    inline def setChangeReportsVarargs(value: ChangeReport*): Self = StObject.set(x, "changeReports", js.Array(value :_*))
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

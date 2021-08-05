@@ -10,6 +10,5 @@ object prefixRulesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def prefixRules(rulePairs: js.Array[String | Double], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixRules")(rulePairs.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def prefixRules(rulePairs: js.Array[String | Double], index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixRules")(rulePairs.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

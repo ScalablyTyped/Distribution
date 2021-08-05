@@ -12,15 +12,14 @@ trait Ruler extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.Ruler_typekey")
+  /* private */ @JSName("PowerPoint.Ruler_typekey")
   var PowerPointDotRuler_typekey: Ruler
   
   val TabStops: typings.activexPowerpoint.PowerPoint.TabStops
 }
 object Ruler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Levels: RulerLevels,
     Parent: js.Any,
@@ -32,22 +31,16 @@ object Ruler {
     __obj.asInstanceOf[Ruler]
   }
   
-  @scala.inline
-  implicit class RulerMutableBuilder[Self <: Ruler] (val x: Self) extends AnyVal {
+  extension [Self <: Ruler](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevels(value: RulerLevels): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: RulerLevels): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotRuler_typekey(value: Ruler): Self = StObject.set(x, "PowerPoint.Ruler_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotRuler_typekey(value: Ruler): Self = StObject.set(x, "PowerPoint.Ruler_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabStops(value: TabStops): Self = StObject.set(x, "TabStops", value.asInstanceOf[js.Any])
+    inline def setTabStops(value: TabStops): Self = StObject.set(x, "TabStops", value.asInstanceOf[js.Any])
   }
 }

@@ -42,35 +42,26 @@ object cacheOnlyMod {
   }
   object CacheOnlyOptions {
     
-    @scala.inline
-    def apply(): CacheOnlyOptions = {
+    inline def apply(): CacheOnlyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CacheOnlyOptions]
     }
     
-    @scala.inline
-    implicit class CacheOnlyOptionsMutableBuilder[Self <: CacheOnlyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CacheOnlyOptions](x: Self) {
       
-      @scala.inline
-      def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
+      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
+      inline def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
       
-      @scala.inline
-      def setMatchOptions(value: CacheQueryOptions): Self = StObject.set(x, "matchOptions", value.asInstanceOf[js.Any])
+      inline def setMatchOptions(value: CacheQueryOptions): Self = StObject.set(x, "matchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchOptionsUndefined: Self = StObject.set(x, "matchOptions", js.undefined)
+      inline def setMatchOptionsUndefined: Self = StObject.set(x, "matchOptions", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[WorkboxPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[WorkboxPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     }
   }
 }

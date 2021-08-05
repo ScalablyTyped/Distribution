@@ -88,8 +88,7 @@ trait ILayout2 extends StObject {
 }
 object ILayout2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dragLeave: () => Unit,
     dragOver: (Double, Double, Double) => Unit,
     executeAnimations: () => Unit,
@@ -106,40 +105,28 @@ object ILayout2 {
     __obj.asInstanceOf[ILayout2]
   }
   
-  @scala.inline
-  implicit class ILayout2MutableBuilder[Self <: ILayout2] (val x: Self) extends AnyVal {
+  extension [Self <: ILayout2](x: Self) {
     
-    @scala.inline
-    def setDragLeave(value: () => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction0(value))
+    inline def setDragLeave(value: () => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDragOver(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction3(value))
+    inline def setDragOver(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExecuteAnimations(value: () => Unit): Self = StObject.set(x, "executeAnimations", js.Any.fromFunction0(value))
+    inline def setExecuteAnimations(value: () => Unit): Self = StObject.set(x, "executeAnimations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAdjacent(value: (js.Any, Key) => js.Any): Self = StObject.set(x, "getAdjacent", js.Any.fromFunction2(value))
+    inline def setGetAdjacent(value: (js.Any, Key) => js.Any): Self = StObject.set(x, "getAdjacent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHitTest(value: (Double, Double) => js.Any): Self = StObject.set(x, "hitTest", js.Any.fromFunction2(value))
+    inline def setHitTest(value: (Double, Double) => js.Any): Self = StObject.set(x, "hitTest", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInitialize(value: (ILayoutSite2, Boolean) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
+    inline def setInitialize(value: (ILayoutSite2, Boolean) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemsFromRange(value: (Double, Double) => Unit): Self = StObject.set(x, "itemsFromRange", js.Any.fromFunction2(value))
+    inline def setItemsFromRange(value: (Double, Double) => Unit): Self = StObject.set(x, "itemsFromRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLayout(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "layout", js.Any.fromFunction4(value))
+    inline def setLayout(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "layout", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetupAnimations(value: () => Unit): Self = StObject.set(x, "setupAnimations", js.Any.fromFunction0(value))
+    inline def setSetupAnimations(value: () => Unit): Self = StObject.set(x, "setupAnimations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUninitialize(value: () => Unit): Self = StObject.set(x, "uninitialize", js.Any.fromFunction0(value))
+    inline def setUninitialize(value: () => Unit): Self = StObject.set(x, "uninitialize", js.Any.fromFunction0(value))
   }
 }

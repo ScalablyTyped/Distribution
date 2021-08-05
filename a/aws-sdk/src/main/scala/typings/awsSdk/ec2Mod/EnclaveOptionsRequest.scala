@@ -13,19 +13,15 @@ trait EnclaveOptionsRequest extends StObject {
 }
 object EnclaveOptionsRequest {
   
-  @scala.inline
-  def apply(): EnclaveOptionsRequest = {
+  inline def apply(): EnclaveOptionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnclaveOptionsRequest]
   }
   
-  @scala.inline
-  implicit class EnclaveOptionsRequestMutableBuilder[Self <: EnclaveOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnclaveOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

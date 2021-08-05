@@ -14,31 +14,23 @@ trait CacheQueryOptions extends StObject {
 }
 object CacheQueryOptions {
   
-  @scala.inline
-  def apply(): CacheQueryOptions = {
+  inline def apply(): CacheQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheQueryOptions]
   }
   
-  @scala.inline
-  implicit class CacheQueryOptionsMutableBuilder[Self <: CacheQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CacheQueryOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreMethod(value: scala.Boolean): Self = StObject.set(x, "ignoreMethod", value.asInstanceOf[js.Any])
+    inline def setIgnoreMethod(value: scala.Boolean): Self = StObject.set(x, "ignoreMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreMethodUndefined: Self = StObject.set(x, "ignoreMethod", js.undefined)
+    inline def setIgnoreMethodUndefined: Self = StObject.set(x, "ignoreMethod", js.undefined)
     
-    @scala.inline
-    def setIgnoreSearch(value: scala.Boolean): Self = StObject.set(x, "ignoreSearch", value.asInstanceOf[js.Any])
+    inline def setIgnoreSearch(value: scala.Boolean): Self = StObject.set(x, "ignoreSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreSearchUndefined: Self = StObject.set(x, "ignoreSearch", js.undefined)
+    inline def setIgnoreSearchUndefined: Self = StObject.set(x, "ignoreSearch", js.undefined)
     
-    @scala.inline
-    def setIgnoreVary(value: scala.Boolean): Self = StObject.set(x, "ignoreVary", value.asInstanceOf[js.Any])
+    inline def setIgnoreVary(value: scala.Boolean): Self = StObject.set(x, "ignoreVary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreVaryUndefined: Self = StObject.set(x, "ignoreVary", js.undefined)
+    inline def setIgnoreVaryUndefined: Self = StObject.set(x, "ignoreVary", js.undefined)
   }
 }

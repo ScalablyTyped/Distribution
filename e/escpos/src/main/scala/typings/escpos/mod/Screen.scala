@@ -140,6 +140,5 @@ object Screen {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(device: Adapter): js.Promise[Screen] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Screen]]
+  inline def create(device: Adapter): js.Promise[Screen] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Screen]]
 }

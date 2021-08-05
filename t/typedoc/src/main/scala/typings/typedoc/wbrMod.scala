@@ -11,6 +11,5 @@ object wbrMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wbr(options: js.Any): SafeString = ^.asInstanceOf[js.Dynamic].applyDynamic("wbr")(options.asInstanceOf[js.Any]).asInstanceOf[SafeString]
+  inline def wbr(options: js.Any): SafeString = ^.asInstanceOf[js.Dynamic].applyDynamic("wbr")(options.asInstanceOf[js.Any]).asInstanceOf[SafeString]
 }

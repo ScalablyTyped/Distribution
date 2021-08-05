@@ -34,8 +34,7 @@ trait PackageFolderContent
      with XContentCreator
 object PackageFolderContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

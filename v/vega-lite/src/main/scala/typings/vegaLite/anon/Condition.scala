@@ -14,23 +14,19 @@ trait Condition[V /* <: (typings.vegaLite.channeldefMod.Value[ExprRef | SignalRe
 }
 object Condition {
   
-  @scala.inline
-  def apply[V /* <: (typings.vegaLite.channeldefMod.Value[ExprRef | SignalRef]) | js.Array[Double] */, ES /* <: ExprRef | SignalRef */](
+  inline def apply[V /* <: (typings.vegaLite.channeldefMod.Value[ExprRef | SignalRef]) | js.Array[Double] */, ES /* <: ExprRef | SignalRef */](
     condition: (ConditionalPredicate[ValueDef[V] | ES]) | (js.Array[ConditionalPredicate[ValueDef[V] | ES]])
   ): Condition[V, ES] = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition[V, ES]]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition[?, ?], V /* <: (typings.vegaLite.channeldefMod.Value[ExprRef | SignalRef]) | js.Array[Double] */, ES /* <: ExprRef | SignalRef */] (val x: Self & (Condition[V, ES])) extends AnyVal {
+  extension [Self <: Condition[?, ?], V /* <: (typings.vegaLite.channeldefMod.Value[ExprRef | SignalRef]) | js.Array[Double] */, ES /* <: ExprRef | SignalRef */](x: Self & (Condition[V, ES])) {
     
-    @scala.inline
-    def setCondition(
+    inline def setCondition(
       value: (ConditionalPredicate[ValueDef[V] | ES]) | (js.Array[ConditionalPredicate[ValueDef[V] | ES]])
     ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionVarargs(value: (ConditionalPredicate[ValueDef[V] | ES])*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: (ConditionalPredicate[ValueDef[V] | ES])*): Self = StObject.set(x, "condition", js.Array(value :_*))
   }
 }

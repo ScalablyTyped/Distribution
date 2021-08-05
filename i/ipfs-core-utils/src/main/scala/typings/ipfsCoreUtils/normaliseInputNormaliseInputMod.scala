@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object normaliseInputNormaliseInputMod {
   
-  @scala.inline
-  def apply[Content /* <: Blob | AsyncIterable[Uint8Array] */](
+  inline def apply[Content /* <: Blob | AsyncIterable[Uint8Array] */](
     input: Source,
     normaliseContent: js.Function1[/* content */ ToContent, Content | js.Promise[Content]]
   ): AsyncIterable[Directory | File[Content]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], normaliseContent.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[Directory | File[Content]]]
@@ -38,32 +37,24 @@ object normaliseInputNormaliseInputMod {
   }
   object Directory {
     
-    @scala.inline
-    def apply(content: Unit, path: String): Directory = {
+    inline def apply(content: Unit, path: String): Directory = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Directory]
     }
     
-    @scala.inline
-    implicit class DirectoryMutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
+    extension [Self <: Directory](x: Self) {
       
-      @scala.inline
-      def setContent(value: Unit): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Unit): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(value: typings.ipfsCoreUtils.formatMtimeMod.MTime): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: typings.ipfsCoreUtils.formatMtimeMod.MTime): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,14 +65,12 @@ object normaliseInputNormaliseInputMod {
   trait Entry[Content /* <: Blob | AsyncIterable[Uint8Array] */] extends StObject
   object Entry {
     
-    @scala.inline
-    def Directory(content: Unit, path: String): typings.ipfsCoreUtils.normaliseInputNormaliseInputMod.Directory = {
+    inline def Directory(content: Unit, path: String): typings.ipfsCoreUtils.normaliseInputNormaliseInputMod.Directory = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ipfsCoreUtils.normaliseInputNormaliseInputMod.Directory]
     }
     
-    @scala.inline
-    def File[Content /* <: Blob | AsyncIterable[Uint8Array] */](path: String): typings.ipfsCoreUtils.normaliseInputNormaliseInputMod.File[Content] = {
+    inline def File[Content /* <: Blob | AsyncIterable[Uint8Array] */](path: String): typings.ipfsCoreUtils.normaliseInputNormaliseInputMod.File[Content] = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ipfsCoreUtils.normaliseInputNormaliseInputMod.File[Content]]
     }
@@ -101,35 +90,26 @@ object normaliseInputNormaliseInputMod {
   }
   object File {
     
-    @scala.inline
-    def apply[Content /* <: Blob | AsyncIterable[Uint8Array] */](path: String): File[Content] = {
+    inline def apply[Content /* <: Blob | AsyncIterable[Uint8Array] */](path: String): File[Content] = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[File[Content]]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File[?], Content /* <: Blob | AsyncIterable[Uint8Array] */] (val x: Self & File[Content]) extends AnyVal {
+    extension [Self <: File[?], Content /* <: Blob | AsyncIterable[Uint8Array] */](x: Self & File[Content]) {
       
-      @scala.inline
-      def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(value: typings.ipfsCoreUtils.formatMtimeMod.MTime): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: typings.ipfsCoreUtils.formatMtimeMod.MTime): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,40 +127,30 @@ object normaliseInputNormaliseInputMod {
   }
   object FileInput {
     
-    @scala.inline
-    def apply(): FileInput = {
+    inline def apply(): FileInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileInput]
     }
     
-    @scala.inline
-    implicit class FileInputMutableBuilder[Self <: FileInput] (val x: Self) extends AnyVal {
+    extension [Self <: FileInput](x: Self) {
       
-      @scala.inline
-      def setContent(
+      inline def setContent(
         value: String | Blob | AsyncIterable[Uint8Array] | ArrayBufferView | ArrayBuffer | Iterable[Uint8Array] | ReadableStream[Uint8Array]
       ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String | Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(value: typings.ipfsCoreUtils.formatMtimeMod.MTime | Date | (js.Tuple2[Double, Double])): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: typings.ipfsCoreUtils.formatMtimeMod.MTime | Date | (js.Tuple2[Double, Double])): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -202,20 +172,16 @@ object normaliseInputNormaliseInputMod {
   }
   object MTime {
     
-    @scala.inline
-    def apply(nsecs: Double, secs: Double): MTime = {
+    inline def apply(nsecs: Double, secs: Double): MTime = {
       val __obj = js.Dynamic.literal(nsecs = nsecs.asInstanceOf[js.Any], secs = secs.asInstanceOf[js.Any])
       __obj.asInstanceOf[MTime]
     }
     
-    @scala.inline
-    implicit class MTimeMutableBuilder[Self <: MTime] (val x: Self) extends AnyVal {
+    extension [Self <: MTime](x: Self) {
       
-      @scala.inline
-      def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
+      inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecs(value: Double): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
+      inline def setSecs(value: Double): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
     }
   }
   

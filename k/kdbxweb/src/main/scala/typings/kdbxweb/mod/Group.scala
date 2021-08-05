@@ -61,9 +61,7 @@ object Group {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(name: StringProtected, parentGroup: Group): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Group]
+  inline def create(name: StringProtected, parentGroup: Group): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Group]
   
-  @scala.inline
-  def read(xmlNode: Node, ctx: Context, parentGroup: Group): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Group]
+  inline def read(xmlNode: Node, ctx: Context, parentGroup: Group): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], parentGroup.asInstanceOf[js.Any])).asInstanceOf[Group]
 }

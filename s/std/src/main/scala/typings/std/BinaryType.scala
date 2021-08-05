@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BinaryType extends StObject
 object BinaryType {
   
-  @scala.inline
-  def arraybuffer: typings.std.stdStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.std.stdStrings.arraybuffer]
+  inline def arraybuffer: typings.std.stdStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.std.stdStrings.arraybuffer]
   
-  @scala.inline
-  def blob: typings.std.stdStrings.blob = "blob".asInstanceOf[typings.std.stdStrings.blob]
+  inline def blob: typings.std.stdStrings.blob = "blob".asInstanceOf[typings.std.stdStrings.blob]
 }

@@ -22,8 +22,7 @@ trait Connection extends StObject {
 }
 object Connection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindings: BindingKey,
     connection: Hostname,
     connectionStrategy: String,
@@ -36,28 +35,20 @@ object Connection {
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setBindings(value: BindingKey): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: BindingKey): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnection(value: Hostname): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Hostname): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStrategy(value: String): Self = StObject.set(x, "connectionStrategy", value.asInstanceOf[js.Any])
+    inline def setConnectionStrategy(value: String): Self = StObject.set(x, "connectionStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchanges(value: Type): Self = StObject.set(x, "exchanges", value.asInstanceOf[js.Any])
+    inline def setExchanges(value: Type): Self = StObject.set(x, "exchanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Boolean): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Boolean): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicationChannelPools(value: RegularPool): Self = StObject.set(x, "publicationChannelPools", value.asInstanceOf[js.Any])
+    inline def setPublicationChannelPools(value: RegularPool): Self = StObject.set(x, "publicationChannelPools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueues(value: Purge): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
+    inline def setQueues(value: Purge): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
   }
 }

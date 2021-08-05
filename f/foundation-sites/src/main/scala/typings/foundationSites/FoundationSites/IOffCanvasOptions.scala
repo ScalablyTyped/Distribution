@@ -26,67 +26,47 @@ trait IOffCanvasOptions extends StObject {
 }
 object IOffCanvasOptions {
   
-  @scala.inline
-  def apply(): IOffCanvasOptions = {
+  inline def apply(): IOffCanvasOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IOffCanvasOptions]
   }
   
-  @scala.inline
-  implicit class IOffCanvasOptionsMutableBuilder[Self <: IOffCanvasOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IOffCanvasOptions](x: Self) {
     
-    @scala.inline
-    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
-    @scala.inline
-    def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+    inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+    inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
-    @scala.inline
-    def setForceTop(value: Boolean): Self = StObject.set(x, "forceTop", value.asInstanceOf[js.Any])
+    inline def setForceTop(value: Boolean): Self = StObject.set(x, "forceTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceTopUndefined: Self = StObject.set(x, "forceTop", js.undefined)
+    inline def setForceTopUndefined: Self = StObject.set(x, "forceTop", js.undefined)
     
-    @scala.inline
-    def setIsRevealed(value: Boolean): Self = StObject.set(x, "isRevealed", value.asInstanceOf[js.Any])
+    inline def setIsRevealed(value: Boolean): Self = StObject.set(x, "isRevealed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRevealedUndefined: Self = StObject.set(x, "isRevealed", js.undefined)
+    inline def setIsRevealedUndefined: Self = StObject.set(x, "isRevealed", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRevealClass(value: String): Self = StObject.set(x, "revealClass", value.asInstanceOf[js.Any])
+    inline def setRevealClass(value: String): Self = StObject.set(x, "revealClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevealClassUndefined: Self = StObject.set(x, "revealClass", js.undefined)
+    inline def setRevealClassUndefined: Self = StObject.set(x, "revealClass", js.undefined)
     
-    @scala.inline
-    def setRevealOn(value: String): Self = StObject.set(x, "revealOn", value.asInstanceOf[js.Any])
+    inline def setRevealOn(value: String): Self = StObject.set(x, "revealOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevealOnUndefined: Self = StObject.set(x, "revealOn", js.undefined)
+    inline def setRevealOnUndefined: Self = StObject.set(x, "revealOn", js.undefined)
     
-    @scala.inline
-    def setTransitionTime(value: Double): Self = StObject.set(x, "transitionTime", value.asInstanceOf[js.Any])
+    inline def setTransitionTime(value: Double): Self = StObject.set(x, "transitionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionTimeUndefined: Self = StObject.set(x, "transitionTime", js.undefined)
+    inline def setTransitionTimeUndefined: Self = StObject.set(x, "transitionTime", js.undefined)
     
-    @scala.inline
-    def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
+    inline def setTrapFocus(value: Boolean): Self = StObject.set(x, "trapFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
+    inline def setTrapFocusUndefined: Self = StObject.set(x, "trapFocus", js.undefined)
   }
 }

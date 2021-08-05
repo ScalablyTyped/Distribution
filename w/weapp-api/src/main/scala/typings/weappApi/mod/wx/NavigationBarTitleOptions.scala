@@ -13,16 +13,13 @@ trait NavigationBarTitleOptions
 }
 object NavigationBarTitleOptions {
   
-  @scala.inline
-  def apply(title: String): NavigationBarTitleOptions = {
+  inline def apply(title: String): NavigationBarTitleOptions = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationBarTitleOptions]
   }
   
-  @scala.inline
-  implicit class NavigationBarTitleOptionsMutableBuilder[Self <: NavigationBarTitleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBarTitleOptions](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

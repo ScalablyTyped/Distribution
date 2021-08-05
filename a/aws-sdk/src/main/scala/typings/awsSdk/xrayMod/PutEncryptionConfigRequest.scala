@@ -18,22 +18,17 @@ trait PutEncryptionConfigRequest extends StObject {
 }
 object PutEncryptionConfigRequest {
   
-  @scala.inline
-  def apply(Type: EncryptionType): PutEncryptionConfigRequest = {
+  inline def apply(Type: EncryptionType): PutEncryptionConfigRequest = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEncryptionConfigRequest]
   }
   
-  @scala.inline
-  implicit class PutEncryptionConfigRequestMutableBuilder[Self <: PutEncryptionConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEncryptionConfigRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: EncryptionKeyId): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: EncryptionKeyId): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    @scala.inline
-    def setType(value: EncryptionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: EncryptionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -29,22 +29,17 @@ trait PropertyCategoryDescriptor extends StObject {
 }
 object PropertyCategoryDescriptor {
   
-  @scala.inline
-  def apply(HelpURL: String, ProgrammaticName: String, UIName: String): PropertyCategoryDescriptor = {
+  inline def apply(HelpURL: String, ProgrammaticName: String, UIName: String): PropertyCategoryDescriptor = {
     val __obj = js.Dynamic.literal(HelpURL = HelpURL.asInstanceOf[js.Any], ProgrammaticName = ProgrammaticName.asInstanceOf[js.Any], UIName = UIName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyCategoryDescriptor]
   }
   
-  @scala.inline
-  implicit class PropertyCategoryDescriptorMutableBuilder[Self <: PropertyCategoryDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyCategoryDescriptor](x: Self) {
     
-    @scala.inline
-    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
+    inline def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgrammaticName(value: String): Self = StObject.set(x, "ProgrammaticName", value.asInstanceOf[js.Any])
+    inline def setProgrammaticName(value: String): Self = StObject.set(x, "ProgrammaticName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUIName(value: String): Self = StObject.set(x, "UIName", value.asInstanceOf[js.Any])
+    inline def setUIName(value: String): Self = StObject.set(x, "UIName", value.asInstanceOf[js.Any])
   }
 }

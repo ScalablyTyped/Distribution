@@ -15,19 +15,15 @@ trait ContinueLegendTrackCfg extends StObject {
 }
 object ContinueLegendTrackCfg {
   
-  @scala.inline
-  def apply(): ContinueLegendTrackCfg = {
+  inline def apply(): ContinueLegendTrackCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContinueLegendTrackCfg]
   }
   
-  @scala.inline
-  implicit class ContinueLegendTrackCfgMutableBuilder[Self <: ContinueLegendTrackCfg] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueLegendTrackCfg](x: Self) {
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

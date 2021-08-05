@@ -22,8 +22,7 @@ trait Io extends StObject {
 }
 object Io {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancelled_write_bytes: String,
     rchar: String,
     read_bytes: String,
@@ -36,28 +35,20 @@ object Io {
     __obj.asInstanceOf[Io]
   }
   
-  @scala.inline
-  implicit class IoMutableBuilder[Self <: Io] (val x: Self) extends AnyVal {
+  extension [Self <: Io](x: Self) {
     
-    @scala.inline
-    def setCancelled_write_bytes(value: String): Self = StObject.set(x, "cancelled_write_bytes", value.asInstanceOf[js.Any])
+    inline def setCancelled_write_bytes(value: String): Self = StObject.set(x, "cancelled_write_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRchar(value: String): Self = StObject.set(x, "rchar", value.asInstanceOf[js.Any])
+    inline def setRchar(value: String): Self = StObject.set(x, "rchar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead_bytes(value: String): Self = StObject.set(x, "read_bytes", value.asInstanceOf[js.Any])
+    inline def setRead_bytes(value: String): Self = StObject.set(x, "read_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyscr(value: String): Self = StObject.set(x, "syscr", value.asInstanceOf[js.Any])
+    inline def setSyscr(value: String): Self = StObject.set(x, "syscr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyscw(value: String): Self = StObject.set(x, "syscw", value.asInstanceOf[js.Any])
+    inline def setSyscw(value: String): Self = StObject.set(x, "syscw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWchar(value: String): Self = StObject.set(x, "wchar", value.asInstanceOf[js.Any])
+    inline def setWchar(value: String): Self = StObject.set(x, "wchar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrite_bytes(value: String): Self = StObject.set(x, "write_bytes", value.asInstanceOf[js.Any])
+    inline def setWrite_bytes(value: String): Self = StObject.set(x, "write_bytes", value.asInstanceOf[js.Any])
   }
 }

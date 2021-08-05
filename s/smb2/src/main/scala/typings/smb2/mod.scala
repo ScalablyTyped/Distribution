@@ -83,44 +83,32 @@ object mod {
   }
   object SMB2Options {
     
-    @scala.inline
-    def apply(domain: String, password: String, share: String, username: String): SMB2Options = {
+    inline def apply(domain: String, password: String, share: String, username: String): SMB2Options = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], share = share.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[SMB2Options]
     }
     
-    @scala.inline
-    implicit class SMB2OptionsMutableBuilder[Self <: SMB2Options] (val x: Self) extends AnyVal {
+    extension [Self <: SMB2Options](x: Self) {
       
-      @scala.inline
-      def setAutoCloseTimeout(value: Double): Self = StObject.set(x, "autoCloseTimeout", value.asInstanceOf[js.Any])
+      inline def setAutoCloseTimeout(value: Double): Self = StObject.set(x, "autoCloseTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCloseTimeoutUndefined: Self = StObject.set(x, "autoCloseTimeout", js.undefined)
+      inline def setAutoCloseTimeoutUndefined: Self = StObject.set(x, "autoCloseTimeout", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPacketConcurrency(value: Double): Self = StObject.set(x, "packetConcurrency", value.asInstanceOf[js.Any])
+      inline def setPacketConcurrency(value: Double): Self = StObject.set(x, "packetConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPacketConcurrencyUndefined: Self = StObject.set(x, "packetConcurrency", js.undefined)
+      inline def setPacketConcurrencyUndefined: Self = StObject.set(x, "packetConcurrency", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setShare(value: String): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
+      inline def setShare(value: String): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,20 +118,16 @@ object mod {
   }
   object SMB2ReadFileOptions {
     
-    @scala.inline
-    def apply(): SMB2ReadFileOptions = {
+    inline def apply(): SMB2ReadFileOptions = {
       val __obj = js.Dynamic.literal(encoding = null)
       __obj.asInstanceOf[SMB2ReadFileOptions]
     }
     
-    @scala.inline
-    implicit class SMB2ReadFileOptionsMutableBuilder[Self <: SMB2ReadFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SMB2ReadFileOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     }
   }
 }

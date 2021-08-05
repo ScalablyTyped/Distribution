@@ -28,28 +28,21 @@ trait Channel extends StObject {
 }
 object Channel {
   
-  @scala.inline
-  def apply(channel: DefaultTab, hints: js.Array[Property], image: BackgroundImageUrl, watch: BackgroundColor): Channel = {
+  inline def apply(channel: DefaultTab, hints: js.Array[Property], image: BackgroundImageUrl, watch: BackgroundColor): Channel = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], hints = hints.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
   
-  @scala.inline
-  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+  extension [Self <: Channel](x: Self) {
     
-    @scala.inline
-    def setChannel(value: DefaultTab): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: DefaultTab): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHints(value: js.Array[Property]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+    inline def setHints(value: js.Array[Property]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintsVarargs(value: Property*): Self = StObject.set(x, "hints", js.Array(value :_*))
+    inline def setHintsVarargs(value: Property*): Self = StObject.set(x, "hints", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: BackgroundImageUrl): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: BackgroundImageUrl): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatch(value: BackgroundColor): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    inline def setWatch(value: BackgroundColor): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
   }
 }

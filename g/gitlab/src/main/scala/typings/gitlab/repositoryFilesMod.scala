@@ -111,8 +111,7 @@ object repositoryFilesMod {
   }
   object RepositoryFileSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blob_id: String,
       commit_id: String,
       content: String,
@@ -128,38 +127,27 @@ object repositoryFilesMod {
       __obj.asInstanceOf[RepositoryFileSchema]
     }
     
-    @scala.inline
-    implicit class RepositoryFileSchemaMutableBuilder[Self <: RepositoryFileSchema] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryFileSchema](x: Self) {
       
-      @scala.inline
-      def setBlob_id(value: String): Self = StObject.set(x, "blob_id", value.asInstanceOf[js.Any])
+      inline def setBlob_id(value: String): Self = StObject.set(x, "blob_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommit_id(value: String): Self = StObject.set(x, "commit_id", value.asInstanceOf[js.Any])
+      inline def setCommit_id(value: String): Self = StObject.set(x, "commit_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_sha256(value: String): Self = StObject.set(x, "content_sha256", value.asInstanceOf[js.Any])
+      inline def setContent_sha256(value: String): Self = StObject.set(x, "content_sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
+      inline def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile_path(value: String): Self = StObject.set(x, "file_path", value.asInstanceOf[js.Any])
+      inline def setFile_path(value: String): Self = StObject.set(x, "file_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_commit_id(value: String): Self = StObject.set(x, "last_commit_id", value.asInstanceOf[js.Any])
+      inline def setLast_commit_id(value: String): Self = StObject.set(x, "last_commit_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

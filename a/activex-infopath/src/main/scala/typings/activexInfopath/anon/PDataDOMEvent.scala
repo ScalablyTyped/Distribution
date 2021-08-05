@@ -11,16 +11,13 @@ trait PDataDOMEvent extends StObject {
 }
 object PDataDOMEvent {
   
-  @scala.inline
-  def apply(pDataDOMEvent: DataDOMEventObject): PDataDOMEvent = {
+  inline def apply(pDataDOMEvent: DataDOMEventObject): PDataDOMEvent = {
     val __obj = js.Dynamic.literal(pDataDOMEvent = pDataDOMEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDataDOMEvent]
   }
   
-  @scala.inline
-  implicit class PDataDOMEventMutableBuilder[Self <: PDataDOMEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PDataDOMEvent](x: Self) {
     
-    @scala.inline
-    def setPDataDOMEvent(value: DataDOMEventObject): Self = StObject.set(x, "pDataDOMEvent", value.asInstanceOf[js.Any])
+    inline def setPDataDOMEvent(value: DataDOMEventObject): Self = StObject.set(x, "pDataDOMEvent", value.asInstanceOf[js.Any])
   }
 }

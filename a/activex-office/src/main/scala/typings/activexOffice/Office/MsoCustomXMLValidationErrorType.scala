@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoCustomXMLValidationErrorType extends StObject
 object MsoCustomXMLValidationErrorType {
   
-  @scala.inline
-  def msoCustomXMLValidationErrorAutomaticallyCleared: `1` = 1.asInstanceOf[`1`]
+  inline def msoCustomXMLValidationErrorAutomaticallyCleared: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoCustomXMLValidationErrorManual: `2` = 2.asInstanceOf[`2`]
+  inline def msoCustomXMLValidationErrorManual: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoCustomXMLValidationErrorSchemaGenerated: `0` = 0.asInstanceOf[`0`]
+  inline def msoCustomXMLValidationErrorSchemaGenerated: `0` = 0.asInstanceOf[`0`]
 }

@@ -22,16 +22,13 @@ trait CustomDataValidation extends StObject {
 }
 object CustomDataValidation {
   
-  @scala.inline
-  def apply(formula: String): CustomDataValidation = {
+  inline def apply(formula: String): CustomDataValidation = {
     val __obj = js.Dynamic.literal(formula = formula.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDataValidation]
   }
   
-  @scala.inline
-  implicit class CustomDataValidationMutableBuilder[Self <: CustomDataValidation] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDataValidation](x: Self) {
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
   }
 }

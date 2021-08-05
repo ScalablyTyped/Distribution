@@ -20,8 +20,7 @@ trait StructuredFormatting extends StObject {
 }
 object StructuredFormatting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     main_text: String,
     main_text_matched_substrings: js.Array[PredictionSubstring],
     secondary_text: String
@@ -30,19 +29,14 @@ object StructuredFormatting {
     __obj.asInstanceOf[StructuredFormatting]
   }
   
-  @scala.inline
-  implicit class StructuredFormattingMutableBuilder[Self <: StructuredFormatting] (val x: Self) extends AnyVal {
+  extension [Self <: StructuredFormatting](x: Self) {
     
-    @scala.inline
-    def setMain_text(value: String): Self = StObject.set(x, "main_text", value.asInstanceOf[js.Any])
+    inline def setMain_text(value: String): Self = StObject.set(x, "main_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMain_text_matched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "main_text_matched_substrings", value.asInstanceOf[js.Any])
+    inline def setMain_text_matched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "main_text_matched_substrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMain_text_matched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "main_text_matched_substrings", js.Array(value :_*))
+    inline def setMain_text_matched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "main_text_matched_substrings", js.Array(value :_*))
     
-    @scala.inline
-    def setSecondary_text(value: String): Self = StObject.set(x, "secondary_text", value.asInstanceOf[js.Any])
+    inline def setSecondary_text(value: String): Self = StObject.set(x, "secondary_text", value.asInstanceOf[js.Any])
   }
 }

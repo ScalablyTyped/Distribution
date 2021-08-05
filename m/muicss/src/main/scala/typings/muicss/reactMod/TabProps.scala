@@ -16,31 +16,23 @@ trait TabProps extends StObject {
 }
 object TabProps {
   
-  @scala.inline
-  def apply(): TabProps = {
+  inline def apply(): TabProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabProps]
   }
   
-  @scala.inline
-  implicit class TabPropsMutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
+  extension [Self <: TabProps](x: Self) {
     
-    @scala.inline
-    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOnActive(value: /* tab */ default => Unit): Self = StObject.set(x, "onActive", js.Any.fromFunction1(value))
+    inline def setOnActive(value: /* tab */ default => Unit): Self = StObject.set(x, "onActive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
+    inline def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

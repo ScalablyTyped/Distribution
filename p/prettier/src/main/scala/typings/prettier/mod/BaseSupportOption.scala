@@ -36,35 +36,26 @@ trait BaseSupportOption[Type /* <: SupportOptionType */] extends StObject {
 }
 object BaseSupportOption {
   
-  @scala.inline
-  def apply[Type /* <: SupportOptionType */](category: String, since: String, `type`: Type): BaseSupportOption[Type] = {
+  inline def apply[Type /* <: SupportOptionType */](category: String, since: String, `type`: Type): BaseSupportOption[Type] = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseSupportOption[Type]]
   }
   
-  @scala.inline
-  implicit class BaseSupportOptionMutableBuilder[Self <: BaseSupportOption[?], Type /* <: SupportOptionType */] (val x: Self & BaseSupportOption[Type]) extends AnyVal {
+  extension [Self <: BaseSupportOption[?], Type /* <: SupportOptionType */](x: Self & BaseSupportOption[Type]) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecated(value: `true` | String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: `true` | String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

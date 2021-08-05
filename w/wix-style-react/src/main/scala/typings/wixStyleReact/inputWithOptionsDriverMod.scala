@@ -22,8 +22,7 @@ object inputWithOptionsDriverMod {
   }
   object InputWithOptionsDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       driver: Blur,
       dropdownLayoutDriver: DropdownLayoutDriver,
       exists: () => Boolean,
@@ -33,17 +32,13 @@ object inputWithOptionsDriverMod {
       __obj.asInstanceOf[InputWithOptionsDriver]
     }
     
-    @scala.inline
-    implicit class InputWithOptionsDriverMutableBuilder[Self <: InputWithOptionsDriver] (val x: Self) extends AnyVal {
+    extension [Self <: InputWithOptionsDriver](x: Self) {
       
-      @scala.inline
-      def setDriver(value: Blur): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: Blur): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownLayoutDriver(value: DropdownLayoutDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
+      inline def setDropdownLayoutDriver(value: DropdownLayoutDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
+      inline def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
     }
   }
 }

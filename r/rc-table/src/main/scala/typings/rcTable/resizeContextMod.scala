@@ -19,17 +19,14 @@ object resizeContextMod extends Shortcut {
   }
   object ResizeContextProps {
     
-    @scala.inline
-    def apply(onColumnResize: (Key, Double) => Unit): ResizeContextProps = {
+    inline def apply(onColumnResize: (Key, Double) => Unit): ResizeContextProps = {
       val __obj = js.Dynamic.literal(onColumnResize = js.Any.fromFunction2(onColumnResize))
       __obj.asInstanceOf[ResizeContextProps]
     }
     
-    @scala.inline
-    implicit class ResizeContextPropsMutableBuilder[Self <: ResizeContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: ResizeContextProps](x: Self) {
       
-      @scala.inline
-      def setOnColumnResize(value: (Key, Double) => Unit): Self = StObject.set(x, "onColumnResize", js.Any.fromFunction2(value))
+      inline def setOnColumnResize(value: (Key, Double) => Unit): Self = StObject.set(x, "onColumnResize", js.Any.fromFunction2(value))
     }
   }
   

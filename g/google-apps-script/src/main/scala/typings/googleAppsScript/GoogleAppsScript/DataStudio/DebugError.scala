@@ -23,22 +23,17 @@ trait DebugError extends StObject {
 }
 object DebugError {
   
-  @scala.inline
-  def apply(printJson: () => String, setText: String => DebugError, throwException: () => scala.Nothing): DebugError = {
+  inline def apply(printJson: () => String, setText: String => DebugError, throwException: () => scala.Nothing): DebugError = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson), setText = js.Any.fromFunction1(setText), throwException = js.Any.fromFunction0(throwException))
     __obj.asInstanceOf[DebugError]
   }
   
-  @scala.inline
-  implicit class DebugErrorMutableBuilder[Self <: DebugError] (val x: Self) extends AnyVal {
+  extension [Self <: DebugError](x: Self) {
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetText(value: String => DebugError): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => DebugError): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThrowException(value: () => scala.Nothing): Self = StObject.set(x, "throwException", js.Any.fromFunction0(value))
+    inline def setThrowException(value: () => scala.Nothing): Self = StObject.set(x, "throwException", js.Any.fromFunction0(value))
   }
 }

@@ -13,16 +13,13 @@ trait ReadsVariables extends StObject {
 }
 object ReadsVariables {
   
-  @scala.inline
-  def apply(getVariable: String => js.UndefOr[String]): ReadsVariables = {
+  inline def apply(getVariable: String => js.UndefOr[String]): ReadsVariables = {
     val __obj = js.Dynamic.literal(getVariable = js.Any.fromFunction1(getVariable))
     __obj.asInstanceOf[ReadsVariables]
   }
   
-  @scala.inline
-  implicit class ReadsVariablesMutableBuilder[Self <: ReadsVariables] (val x: Self) extends AnyVal {
+  extension [Self <: ReadsVariables](x: Self) {
     
-    @scala.inline
-    def setGetVariable(value: String => js.UndefOr[String]): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
+    inline def setGetVariable(value: String => js.UndefOr[String]): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
   }
 }

@@ -36,43 +36,31 @@ trait ConfigItem extends StObject {
 }
 object ConfigItem {
   
-  @scala.inline
-  def apply(dirname: String, value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): ConfigItem = {
+  inline def apply(dirname: String, value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): ConfigItem = {
     val __obj = js.Dynamic.literal(dirname = dirname.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigItem]
   }
   
-  @scala.inline
-  implicit class ConfigItemMutableBuilder[Self <: ConfigItem] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigItem](x: Self) {
     
-    @scala.inline
-    def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+    inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: Request): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Request): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNull: Self = StObject.set(x, "file", null)
+    inline def setFileNull: Self = StObject.set(x, "file", null)
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Object | `false`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Object | `false`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+    inline def setValueFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

@@ -66,79 +66,56 @@ trait CIMCharacterMarker
 }
 object CIMCharacterMarker {
   
-  @scala.inline
-  def apply(): CIMCharacterMarker = {
+  inline def apply(): CIMCharacterMarker = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMCharacterMarker")
     __obj.asInstanceOf[CIMCharacterMarker]
   }
   
-  @scala.inline
-  implicit class CIMCharacterMarkerMutableBuilder[Self <: CIMCharacterMarker] (val x: Self) extends AnyVal {
+  extension [Self <: CIMCharacterMarker](x: Self) {
     
-    @scala.inline
-    def setCharacterIndex(value: Double): Self = StObject.set(x, "characterIndex", value.asInstanceOf[js.Any])
+    inline def setCharacterIndex(value: Double): Self = StObject.set(x, "characterIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterIndexUndefined: Self = StObject.set(x, "characterIndex", js.undefined)
+    inline def setCharacterIndexUndefined: Self = StObject.set(x, "characterIndex", js.undefined)
     
-    @scala.inline
-    def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
+    inline def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth3DUndefined: Self = StObject.set(x, "depth3D", js.undefined)
+    inline def setDepth3DUndefined: Self = StObject.set(x, "depth3D", js.undefined)
     
-    @scala.inline
-    def setFontFamilyName(value: String): Self = StObject.set(x, "fontFamilyName", value.asInstanceOf[js.Any])
+    inline def setFontFamilyName(value: String): Self = StObject.set(x, "fontFamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyNameUndefined: Self = StObject.set(x, "fontFamilyName", js.undefined)
+    inline def setFontFamilyNameUndefined: Self = StObject.set(x, "fontFamilyName", js.undefined)
     
-    @scala.inline
-    def setFontStyleName(value: String): Self = StObject.set(x, "fontStyleName", value.asInstanceOf[js.Any])
+    inline def setFontStyleName(value: String): Self = StObject.set(x, "fontStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleNameUndefined: Self = StObject.set(x, "fontStyleName", js.undefined)
+    inline def setFontStyleNameUndefined: Self = StObject.set(x, "fontStyleName", js.undefined)
     
-    @scala.inline
-    def setFontType(
+    inline def setFontType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontType * / any */ String
     ): Self = StObject.set(x, "fontType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontTypeUndefined: Self = StObject.set(x, "fontType", js.undefined)
+    inline def setFontTypeUndefined: Self = StObject.set(x, "fontType", js.undefined)
     
-    @scala.inline
-    def setRespectFrame(value: Boolean): Self = StObject.set(x, "respectFrame", value.asInstanceOf[js.Any])
+    inline def setRespectFrame(value: Boolean): Self = StObject.set(x, "respectFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespectFrameUndefined: Self = StObject.set(x, "respectFrame", js.undefined)
+    inline def setRespectFrameUndefined: Self = StObject.set(x, "respectFrame", js.undefined)
     
-    @scala.inline
-    def setScaleSymbolsProportionally(value: Boolean): Self = StObject.set(x, "scaleSymbolsProportionally", value.asInstanceOf[js.Any])
+    inline def setScaleSymbolsProportionally(value: Boolean): Self = StObject.set(x, "scaleSymbolsProportionally", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleSymbolsProportionallyUndefined: Self = StObject.set(x, "scaleSymbolsProportionally", js.undefined)
+    inline def setScaleSymbolsProportionallyUndefined: Self = StObject.set(x, "scaleSymbolsProportionally", js.undefined)
     
-    @scala.inline
-    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: CIMPolygonSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: CIMPolygonSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMCharacterMarker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMCharacterMarker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalOrientation3D(value: Boolean): Self = StObject.set(x, "verticalOrientation3D", value.asInstanceOf[js.Any])
+    inline def setVerticalOrientation3D(value: Boolean): Self = StObject.set(x, "verticalOrientation3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalOrientation3DUndefined: Self = StObject.set(x, "verticalOrientation3D", js.undefined)
+    inline def setVerticalOrientation3DUndefined: Self = StObject.set(x, "verticalOrientation3D", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object noDocsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def NoDocs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoDocs")().asInstanceOf[Element]
+  inline def NoDocs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoDocs")().asInstanceOf[Element]
 }

@@ -10,19 +10,15 @@ trait Sorted extends StObject {
 }
 object Sorted {
   
-  @scala.inline
-  def apply(): Sorted = {
+  inline def apply(): Sorted = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sorted]
   }
   
-  @scala.inline
-  implicit class SortedMutableBuilder[Self <: Sorted] (val x: Self) extends AnyVal {
+  extension [Self <: Sorted](x: Self) {
     
-    @scala.inline
-    def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
+    inline def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
+    inline def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
   }
 }

@@ -45,57 +45,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConsoleAPICalledEventType extends StObject
 object ConsoleAPICalledEventType {
   
-  @scala.inline
-  def Assert: assert = "assert".asInstanceOf[assert]
+  inline def Assert: assert = "assert".asInstanceOf[assert]
   
-  @scala.inline
-  def Clear: clear = "clear".asInstanceOf[clear]
+  inline def Clear: clear = "clear".asInstanceOf[clear]
   
-  @scala.inline
-  def Count: count = "count".asInstanceOf[count]
+  inline def Count: count = "count".asInstanceOf[count]
   
-  @scala.inline
-  def Debug: debug = "debug".asInstanceOf[debug]
+  inline def Debug: debug = "debug".asInstanceOf[debug]
   
-  @scala.inline
-  def Dir: dir = "dir".asInstanceOf[dir]
+  inline def Dir: dir = "dir".asInstanceOf[dir]
   
-  @scala.inline
-  def DirXML: dirxml = "dirxml".asInstanceOf[dirxml]
+  inline def DirXML: dirxml = "dirxml".asInstanceOf[dirxml]
   
-  @scala.inline
-  def EndGroup: endGroup = "endGroup".asInstanceOf[endGroup]
+  inline def EndGroup: endGroup = "endGroup".asInstanceOf[endGroup]
   
-  @scala.inline
-  def Error: error = "error".asInstanceOf[error]
+  inline def Error: error = "error".asInstanceOf[error]
   
-  @scala.inline
-  def Info: info = "info".asInstanceOf[info]
+  inline def Info: info = "info".asInstanceOf[info]
   
-  @scala.inline
-  def Log: log = "log".asInstanceOf[log]
+  inline def Log: log = "log".asInstanceOf[log]
   
-  @scala.inline
-  def Profile: profile = "profile".asInstanceOf[profile]
+  inline def Profile: profile = "profile".asInstanceOf[profile]
   
-  @scala.inline
-  def ProfileEnd: profileEnd = "profileEnd".asInstanceOf[profileEnd]
+  inline def ProfileEnd: profileEnd = "profileEnd".asInstanceOf[profileEnd]
   
-  @scala.inline
-  def StartGroup: startGroup = "startGroup".asInstanceOf[startGroup]
+  inline def StartGroup: startGroup = "startGroup".asInstanceOf[startGroup]
   
-  @scala.inline
-  def StartGroupCollapsed: startGroupCollapsed = "startGroupCollapsed".asInstanceOf[startGroupCollapsed]
+  inline def StartGroupCollapsed: startGroupCollapsed = "startGroupCollapsed".asInstanceOf[startGroupCollapsed]
   
-  @scala.inline
-  def Table: table = "table".asInstanceOf[table]
+  inline def Table: table = "table".asInstanceOf[table]
   
-  @scala.inline
-  def TimeEnd: timeEnd = "timeEnd".asInstanceOf[timeEnd]
+  inline def TimeEnd: timeEnd = "timeEnd".asInstanceOf[timeEnd]
   
-  @scala.inline
-  def Trace: trace = "trace".asInstanceOf[trace]
+  inline def Trace: trace = "trace".asInstanceOf[trace]
   
-  @scala.inline
-  def Warning: warning = "warning".asInstanceOf[warning]
+  inline def Warning: warning = "warning".asInstanceOf[warning]
 }

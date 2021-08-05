@@ -26,58 +26,41 @@ trait A[T /* <: Tensor[Rank] */] extends StObject {
 }
 object A {
   
-  @scala.inline
-  def apply[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): A[T] = {
+  inline def apply[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): A[T] = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any])
     __obj.asInstanceOf[A[T]]
   }
   
-  @scala.inline
-  implicit class AMutableBuilder[Self <: A[?], T /* <: Tensor[Rank] */] (val x: Self & A[T]) extends AnyVal {
+  extension [Self <: A[?], T /* <: Tensor[Rank] */](x: Self & A[T]) {
     
-    @scala.inline
-    def setA(value: T | TensorLike): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: T | TensorLike): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAVarargs(value: Uint8Array*): Self = StObject.set(x, "a", js.Array(value :_*))
+    inline def setAVarargs(value: Uint8Array*): Self = StObject.set(x, "a", js.Array(value :_*))
     
-    @scala.inline
-    def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+    inline def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
+    inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     
-    @scala.inline
-    def setB(value: T | TensorLike): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: T | TensorLike): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBVarargs(value: Uint8Array*): Self = StObject.set(x, "b", js.Array(value :_*))
+    inline def setBVarargs(value: Uint8Array*): Self = StObject.set(x, "b", js.Array(value :_*))
     
-    @scala.inline
-    def setBias(value: Tensor[Rank] | TensorLike): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+    inline def setBias(value: Tensor[Rank] | TensorLike): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
+    inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
     
-    @scala.inline
-    def setBiasVarargs(value: Uint8Array*): Self = StObject.set(x, "bias", js.Array(value :_*))
+    inline def setBiasVarargs(value: Uint8Array*): Self = StObject.set(x, "bias", js.Array(value :_*))
     
-    @scala.inline
-    def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
+    inline def setPreluActivationWeights(value: Tensor[Rank]): Self = StObject.set(x, "preluActivationWeights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
+    inline def setPreluActivationWeightsUndefined: Self = StObject.set(x, "preluActivationWeights", js.undefined)
     
-    @scala.inline
-    def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
+    inline def setTransposeA(value: Boolean): Self = StObject.set(x, "transposeA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransposeAUndefined: Self = StObject.set(x, "transposeA", js.undefined)
+    inline def setTransposeAUndefined: Self = StObject.set(x, "transposeA", js.undefined)
     
-    @scala.inline
-    def setTransposeB(value: Boolean): Self = StObject.set(x, "transposeB", value.asInstanceOf[js.Any])
+    inline def setTransposeB(value: Boolean): Self = StObject.set(x, "transposeB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransposeBUndefined: Self = StObject.set(x, "transposeB", js.undefined)
+    inline def setTransposeBUndefined: Self = StObject.set(x, "transposeB", js.undefined)
   }
 }

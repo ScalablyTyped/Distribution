@@ -15,8 +15,7 @@ object iconButtonUniDriverMod {
   }
   object IconButtonUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object iconButtonUniDriverMod {
       __obj.asInstanceOf[IconButtonUniDriver]
     }
     
-    @scala.inline
-    implicit class IconButtonUniDriverMutableBuilder[Self <: IconButtonUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: IconButtonUniDriver](x: Self) {
       
-      @scala.inline
-      def setIsButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
+      inline def setIsButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isButtonDisabled", js.Any.fromFunction0(value))
     }
   }
 }

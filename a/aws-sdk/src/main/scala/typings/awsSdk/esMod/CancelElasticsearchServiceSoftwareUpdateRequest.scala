@@ -13,16 +13,13 @@ trait CancelElasticsearchServiceSoftwareUpdateRequest extends StObject {
 }
 object CancelElasticsearchServiceSoftwareUpdateRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): CancelElasticsearchServiceSoftwareUpdateRequest = {
+  inline def apply(DomainName: DomainName): CancelElasticsearchServiceSoftwareUpdateRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelElasticsearchServiceSoftwareUpdateRequest]
   }
   
-  @scala.inline
-  implicit class CancelElasticsearchServiceSoftwareUpdateRequestMutableBuilder[Self <: CancelElasticsearchServiceSoftwareUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelElasticsearchServiceSoftwareUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

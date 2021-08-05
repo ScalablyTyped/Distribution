@@ -17,13 +17,10 @@ object TextAlign {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CENTER: `1` = 1.asInstanceOf[`1`]
+    inline def CENTER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def LEFT: `0` = 0.asInstanceOf[`0`]
+    inline def LEFT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def RIGHT: `2` = 2.asInstanceOf[`2`]
+    inline def RIGHT: `2` = 2.asInstanceOf[`2`]
   }
 }

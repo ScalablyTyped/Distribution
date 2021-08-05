@@ -18,19 +18,15 @@ trait RealSize2D extends StObject {
 }
 object RealSize2D {
   
-  @scala.inline
-  def apply(Height: Double, Width: Double): RealSize2D = {
+  inline def apply(Height: Double, Width: Double): RealSize2D = {
     val __obj = js.Dynamic.literal(Height = Height.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealSize2D]
   }
   
-  @scala.inline
-  implicit class RealSize2DMutableBuilder[Self <: RealSize2D] (val x: Self) extends AnyVal {
+  extension [Self <: RealSize2D](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

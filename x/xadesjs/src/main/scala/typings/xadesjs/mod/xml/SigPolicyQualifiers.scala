@@ -13,6 +13,5 @@ class SigPolicyQualifiers ()
   extends typings.xadesjs.xmlMod.SigPolicyQualifiers
 object SigPolicyQualifiers {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SigPolicyQualifiers] = ^.asInstanceOf[js.Dynamic].selectDynamic("SigPolicyQualifiers").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SigPolicyQualifiers]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SigPolicyQualifiers] = ^.asInstanceOf[js.Dynamic].selectDynamic("SigPolicyQualifiers").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SigPolicyQualifiers]]
 }

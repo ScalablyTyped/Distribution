@@ -13,16 +13,13 @@ trait DeleteKnownHostKeysRequest extends StObject {
 }
 object DeleteKnownHostKeysRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName): DeleteKnownHostKeysRequest = {
+  inline def apply(instanceName: ResourceName): DeleteKnownHostKeysRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteKnownHostKeysRequest]
   }
   
-  @scala.inline
-  implicit class DeleteKnownHostKeysRequestMutableBuilder[Self <: DeleteKnownHostKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteKnownHostKeysRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

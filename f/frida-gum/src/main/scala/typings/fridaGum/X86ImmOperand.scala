@@ -16,20 +16,16 @@ trait X86ImmOperand
 }
 object X86ImmOperand {
   
-  @scala.inline
-  def apply(size: Double, value: Double | Int64): X86ImmOperand = {
+  inline def apply(size: Double, value: Double | Int64): X86ImmOperand = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("imm")
     __obj.asInstanceOf[X86ImmOperand]
   }
   
-  @scala.inline
-  implicit class X86ImmOperandMutableBuilder[Self <: X86ImmOperand] (val x: Self) extends AnyVal {
+  extension [Self <: X86ImmOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: imm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: imm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double | Int64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | Int64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

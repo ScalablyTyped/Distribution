@@ -13,19 +13,15 @@ trait DeleteTagsType extends StObject {
 }
 object DeleteTagsType {
   
-  @scala.inline
-  def apply(Tags: Tags): DeleteTagsType = {
+  inline def apply(Tags: Tags): DeleteTagsType = {
     val __obj = js.Dynamic.literal(Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTagsType]
   }
   
-  @scala.inline
-  implicit class DeleteTagsTypeMutableBuilder[Self <: DeleteTagsType] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTagsType](x: Self) {
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

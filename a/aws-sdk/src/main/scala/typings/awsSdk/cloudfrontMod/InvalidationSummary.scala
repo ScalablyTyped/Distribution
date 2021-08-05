@@ -23,22 +23,17 @@ trait InvalidationSummary extends StObject {
 }
 object InvalidationSummary {
   
-  @scala.inline
-  def apply(CreateTime: timestamp, Id: String, Status: String): InvalidationSummary = {
+  inline def apply(CreateTime: timestamp, Id: String, Status: String): InvalidationSummary = {
     val __obj = js.Dynamic.literal(CreateTime = CreateTime.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidationSummary]
   }
   
-  @scala.inline
-  implicit class InvalidationSummaryMutableBuilder[Self <: InvalidationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidationSummary](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait GetGridHighlightObjectsForTestResponse extends StObject {
 }
 object GetGridHighlightObjectsForTestResponse {
   
-  @scala.inline
-  def apply(highlights: js.Any): GetGridHighlightObjectsForTestResponse = {
+  inline def apply(highlights: js.Any): GetGridHighlightObjectsForTestResponse = {
     val __obj = js.Dynamic.literal(highlights = highlights.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGridHighlightObjectsForTestResponse]
   }
   
-  @scala.inline
-  implicit class GetGridHighlightObjectsForTestResponseMutableBuilder[Self <: GetGridHighlightObjectsForTestResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetGridHighlightObjectsForTestResponse](x: Self) {
     
-    @scala.inline
-    def setHighlights(value: js.Any): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
+    inline def setHighlights(value: js.Any): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
   }
 }

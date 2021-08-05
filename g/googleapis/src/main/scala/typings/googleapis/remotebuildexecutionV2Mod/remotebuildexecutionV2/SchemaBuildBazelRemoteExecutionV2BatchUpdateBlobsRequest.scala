@@ -16,22 +16,17 @@ trait SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest extends StObject 
 }
 object SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest](x: Self) {
     
-    @scala.inline
-    def setRequests(value: js.Array[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setRequestsVarargs(value: SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

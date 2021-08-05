@@ -25,22 +25,17 @@ trait IOStream extends StObject {
 }
 object IOStream {
   
-  @scala.inline
-  def apply(close: () => js.Promise[Unit], input: InputStream, output: OutputStream): IOStream = {
+  inline def apply(close: () => js.Promise[Unit], input: InputStream, output: OutputStream): IOStream = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOStream]
   }
   
-  @scala.inline
-  implicit class IOStreamMutableBuilder[Self <: IOStream] (val x: Self) extends AnyVal {
+  extension [Self <: IOStream](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInput(value: InputStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: InputStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: OutputStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: OutputStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }
 }

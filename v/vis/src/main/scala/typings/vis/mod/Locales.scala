@@ -27,61 +27,43 @@ trait Locales
 }
 object Locales {
   
-  @scala.inline
-  def apply(): Locales = {
+  inline def apply(): Locales = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Locales]
   }
   
-  @scala.inline
-  implicit class LocalesMutableBuilder[Self <: Locales] (val x: Self) extends AnyVal {
+  extension [Self <: Locales](x: Self) {
     
-    @scala.inline
-    def setCn(value: LocaleMessages): Self = StObject.set(x, "cn", value.asInstanceOf[js.Any])
+    inline def setCn(value: LocaleMessages): Self = StObject.set(x, "cn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCnUndefined: Self = StObject.set(x, "cn", js.undefined)
+    inline def setCnUndefined: Self = StObject.set(x, "cn", js.undefined)
     
-    @scala.inline
-    def setDe(value: LocaleMessages): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
+    inline def setDe(value: LocaleMessages): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
+    inline def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
     
-    @scala.inline
-    def setEn(value: LocaleMessages): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
+    inline def setEn(value: LocaleMessages): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnUndefined: Self = StObject.set(x, "en", js.undefined)
+    inline def setEnUndefined: Self = StObject.set(x, "en", js.undefined)
     
-    @scala.inline
-    def setEs(value: LocaleMessages): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
+    inline def setEs(value: LocaleMessages): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
+    inline def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
     
-    @scala.inline
-    def setIt(value: LocaleMessages): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+    inline def setIt(value: LocaleMessages): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItUndefined: Self = StObject.set(x, "it", js.undefined)
+    inline def setItUndefined: Self = StObject.set(x, "it", js.undefined)
     
-    @scala.inline
-    def setNl(value: LocaleMessages): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
+    inline def setNl(value: LocaleMessages): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
+    inline def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
     
-    @scala.inline
-    def `setPt-br`(value: LocaleMessages): Self = StObject.set(x, "pt-br", value.asInstanceOf[js.Any])
+    inline def `setPt-br`(value: LocaleMessages): Self = StObject.set(x, "pt-br", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPt-brUndefined`: Self = StObject.set(x, "pt-br", js.undefined)
+    inline def `setPt-brUndefined`: Self = StObject.set(x, "pt-br", js.undefined)
     
-    @scala.inline
-    def setRu(value: LocaleMessages): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
+    inline def setRu(value: LocaleMessages): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuUndefined: Self = StObject.set(x, "ru", js.undefined)
+    inline def setRuUndefined: Self = StObject.set(x, "ru", js.undefined)
   }
 }

@@ -35,23 +35,18 @@ object parsePluginMod {
   }
   object ParsePlugin {
     
-    @scala.inline
-    def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String, target: String): ParsePlugin = {
+    inline def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String, target: String): ParsePlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsePlugin]
     }
     
-    @scala.inline
-    implicit class ParsePluginMutableBuilder[Self <: ParsePlugin] (val x: Self) extends AnyVal {
+    extension [Self <: ParsePlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

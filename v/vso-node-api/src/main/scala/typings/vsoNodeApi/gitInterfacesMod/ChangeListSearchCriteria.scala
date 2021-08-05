@@ -73,8 +73,7 @@ trait ChangeListSearchCriteria extends StObject {
 }
 object ChangeListSearchCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     compareVersion: String,
     excludeDeletes: Boolean,
     followRenames: Boolean,
@@ -93,49 +92,34 @@ object ChangeListSearchCriteria {
     __obj.asInstanceOf[ChangeListSearchCriteria]
   }
   
-  @scala.inline
-  implicit class ChangeListSearchCriteriaMutableBuilder[Self <: ChangeListSearchCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeListSearchCriteria](x: Self) {
     
-    @scala.inline
-    def setCompareVersion(value: String): Self = StObject.set(x, "compareVersion", value.asInstanceOf[js.Any])
+    inline def setCompareVersion(value: String): Self = StObject.set(x, "compareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDeletes(value: Boolean): Self = StObject.set(x, "excludeDeletes", value.asInstanceOf[js.Any])
+    inline def setExcludeDeletes(value: Boolean): Self = StObject.set(x, "excludeDeletes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowRenames(value: Boolean): Self = StObject.set(x, "followRenames", value.asInstanceOf[js.Any])
+    inline def setFollowRenames(value: Boolean): Self = StObject.set(x, "followRenames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+    inline def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromVersion(value: String): Self = StObject.set(x, "fromVersion", value.asInstanceOf[js.Any])
+    inline def setFromVersion(value: String): Self = StObject.set(x, "fromVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
+    inline def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemPaths(value: js.Array[String]): Self = StObject.set(x, "itemPaths", value.asInstanceOf[js.Any])
+    inline def setItemPaths(value: js.Array[String]): Self = StObject.set(x, "itemPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemPathsVarargs(value: String*): Self = StObject.set(x, "itemPaths", js.Array(value :_*))
+    inline def setItemPathsVarargs(value: String*): Self = StObject.set(x, "itemPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setItemVersion(value: String): Self = StObject.set(x, "itemVersion", value.asInstanceOf[js.Any])
+    inline def setItemVersion(value: String): Self = StObject.set(x, "itemVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+    inline def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToVersion(value: String): Self = StObject.set(x, "toVersion", value.asInstanceOf[js.Any])
+    inline def setToVersion(value: String): Self = StObject.set(x, "toVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

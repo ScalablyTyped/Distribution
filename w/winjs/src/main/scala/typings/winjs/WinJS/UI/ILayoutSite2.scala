@@ -38,8 +38,7 @@ trait ILayoutSite2 extends StObject {
 }
 object ILayoutSite2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     groupCount: Double,
     itemCount: Promise[Double],
     realizedRange: js.Any,
@@ -50,22 +49,16 @@ object ILayoutSite2 {
     __obj.asInstanceOf[ILayoutSite2]
   }
   
-  @scala.inline
-  implicit class ILayoutSite2MutableBuilder[Self <: ILayoutSite2] (val x: Self) extends AnyVal {
+  extension [Self <: ILayoutSite2](x: Self) {
     
-    @scala.inline
-    def setGroupCount(value: Double): Self = StObject.set(x, "groupCount", value.asInstanceOf[js.Any])
+    inline def setGroupCount(value: Double): Self = StObject.set(x, "groupCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCount(value: Promise[Double]): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Promise[Double]): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealizedRange(value: js.Any): Self = StObject.set(x, "realizedRange", value.asInstanceOf[js.Any])
+    inline def setRealizedRange(value: js.Any): Self = StObject.set(x, "realizedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree(value: js.Any): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: js.Any): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleRange(value: js.Any): Self = StObject.set(x, "visibleRange", value.asInstanceOf[js.Any])
+    inline def setVisibleRange(value: js.Any): Self = StObject.set(x, "visibleRange", value.asInstanceOf[js.Any])
   }
 }

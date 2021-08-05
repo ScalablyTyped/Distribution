@@ -12,19 +12,15 @@ trait LocationRange extends StObject {
 }
 object LocationRange {
   
-  @scala.inline
-  def apply(end: Position, start: Position): LocationRange = {
+  inline def apply(end: Position, start: Position): LocationRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRange]
   }
   
-  @scala.inline
-  implicit class LocationRangeMutableBuilder[Self <: LocationRange] (val x: Self) extends AnyVal {
+  extension [Self <: LocationRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

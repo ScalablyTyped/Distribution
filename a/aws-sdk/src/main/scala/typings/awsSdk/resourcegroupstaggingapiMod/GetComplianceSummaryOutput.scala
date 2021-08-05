@@ -18,28 +18,21 @@ trait GetComplianceSummaryOutput extends StObject {
 }
 object GetComplianceSummaryOutput {
   
-  @scala.inline
-  def apply(): GetComplianceSummaryOutput = {
+  inline def apply(): GetComplianceSummaryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetComplianceSummaryOutput]
   }
   
-  @scala.inline
-  implicit class GetComplianceSummaryOutputMutableBuilder[Self <: GetComplianceSummaryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetComplianceSummaryOutput](x: Self) {
     
-    @scala.inline
-    def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
+    inline def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
+    inline def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
-    @scala.inline
-    def setSummaryList(value: SummaryList): Self = StObject.set(x, "SummaryList", value.asInstanceOf[js.Any])
+    inline def setSummaryList(value: SummaryList): Self = StObject.set(x, "SummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryListUndefined: Self = StObject.set(x, "SummaryList", js.undefined)
+    inline def setSummaryListUndefined: Self = StObject.set(x, "SummaryList", js.undefined)
     
-    @scala.inline
-    def setSummaryListVarargs(value: Summary*): Self = StObject.set(x, "SummaryList", js.Array(value :_*))
+    inline def setSummaryListVarargs(value: Summary*): Self = StObject.set(x, "SummaryList", js.Array(value :_*))
   }
 }

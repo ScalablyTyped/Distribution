@@ -28,8 +28,7 @@ trait OutliningSpan extends StObject {
 }
 object OutliningSpan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoCollapse: Boolean,
     bannerText: java.lang.String,
     hintSpan: TextSpan,
@@ -40,22 +39,16 @@ object OutliningSpan {
     __obj.asInstanceOf[OutliningSpan]
   }
   
-  @scala.inline
-  implicit class OutliningSpanMutableBuilder[Self <: OutliningSpan] (val x: Self) extends AnyVal {
+  extension [Self <: OutliningSpan](x: Self) {
     
-    @scala.inline
-    def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
+    inline def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerText(value: java.lang.String): Self = StObject.set(x, "bannerText", value.asInstanceOf[js.Any])
+    inline def setBannerText(value: java.lang.String): Self = StObject.set(x, "bannerText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintSpan(value: TextSpan): Self = StObject.set(x, "hintSpan", value.asInstanceOf[js.Any])
+    inline def setHintSpan(value: TextSpan): Self = StObject.set(x, "hintSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: OutliningSpanKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: OutliningSpanKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSpan(value: TextSpan): Self = StObject.set(x, "textSpan", value.asInstanceOf[js.Any])
+    inline def setTextSpan(value: TextSpan): Self = StObject.set(x, "textSpan", value.asInstanceOf[js.Any])
   }
 }

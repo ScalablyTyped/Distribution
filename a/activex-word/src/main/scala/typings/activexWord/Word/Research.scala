@@ -90,6 +90,6 @@ trait Research extends StObject {
   
   def SetLanguagePair(LanguageFrom: WdLanguageID, LanguageTo: WdLanguageID): js.Any = js.native
   
-  @JSName("Word.Research_typekey")
+  /* private */ @JSName("Word.Research_typekey")
   var WordDotResearch_typekey: Research = js.native
 }

@@ -19,8 +19,7 @@ trait BootstrapClientMenu
 }
 object BootstrapClientMenu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     CloseUp: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]],
     GetClientVisible: () => Boolean,
@@ -55,10 +54,8 @@ object BootstrapClientMenu {
     __obj.asInstanceOf[BootstrapClientMenu]
   }
   
-  @scala.inline
-  implicit class BootstrapClientMenuMutableBuilder[Self <: BootstrapClientMenu] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientMenu](x: Self) {
     
-    @scala.inline
-    def setSetSelectedItem(value: BootstrapClientMenuItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
+    inline def setSetSelectedItem(value: BootstrapClientMenuItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }
 }

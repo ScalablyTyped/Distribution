@@ -24,23 +24,18 @@ object mod extends Shortcut {
   }
   object UrlData {
     
-    @scala.inline
-    def apply(host: Hostname, path: Base, query: Params): UrlData = {
+    inline def apply(host: Hostname, path: Base, query: Params): UrlData = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlData]
     }
     
-    @scala.inline
-    implicit class UrlDataMutableBuilder[Self <: UrlData] (val x: Self) extends AnyVal {
+    extension [Self <: UrlData](x: Self) {
       
-      @scala.inline
-      def setHost(value: Hostname): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: Hostname): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: Base): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Base): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: Params): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Params): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   

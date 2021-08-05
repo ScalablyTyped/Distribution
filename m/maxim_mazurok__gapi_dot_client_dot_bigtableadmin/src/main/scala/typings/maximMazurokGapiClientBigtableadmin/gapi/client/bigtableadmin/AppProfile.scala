@@ -27,43 +27,31 @@ trait AppProfile extends StObject {
 }
 object AppProfile {
   
-  @scala.inline
-  def apply(): AppProfile = {
+  inline def apply(): AppProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppProfile]
   }
   
-  @scala.inline
-  implicit class AppProfileMutableBuilder[Self <: AppProfile] (val x: Self) extends AnyVal {
+  extension [Self <: AppProfile](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setMultiClusterRoutingUseAny(value: js.Any): Self = StObject.set(x, "multiClusterRoutingUseAny", value.asInstanceOf[js.Any])
+    inline def setMultiClusterRoutingUseAny(value: js.Any): Self = StObject.set(x, "multiClusterRoutingUseAny", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiClusterRoutingUseAnyUndefined: Self = StObject.set(x, "multiClusterRoutingUseAny", js.undefined)
+    inline def setMultiClusterRoutingUseAnyUndefined: Self = StObject.set(x, "multiClusterRoutingUseAny", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSingleClusterRouting(value: SingleClusterRouting): Self = StObject.set(x, "singleClusterRouting", value.asInstanceOf[js.Any])
+    inline def setSingleClusterRouting(value: SingleClusterRouting): Self = StObject.set(x, "singleClusterRouting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleClusterRoutingUndefined: Self = StObject.set(x, "singleClusterRouting", js.undefined)
+    inline def setSingleClusterRoutingUndefined: Self = StObject.set(x, "singleClusterRouting", js.undefined)
   }
 }

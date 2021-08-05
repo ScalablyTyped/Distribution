@@ -13,6 +13,5 @@ object readonlySetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def atReadonlySet[A](E: Eq[A]): At_[ReadonlySet[A], A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("atReadonlySet")(E.asInstanceOf[js.Any]).asInstanceOf[At_[ReadonlySet[A], A, Boolean]]
+  inline def atReadonlySet[A](E: Eq[A]): At_[ReadonlySet[A], A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("atReadonlySet")(E.asInstanceOf[js.Any]).asInstanceOf[At_[ReadonlySet[A], A, Boolean]]
 }

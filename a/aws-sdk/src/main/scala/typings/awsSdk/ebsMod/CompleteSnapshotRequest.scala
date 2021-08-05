@@ -33,37 +33,27 @@ trait CompleteSnapshotRequest extends StObject {
 }
 object CompleteSnapshotRequest {
   
-  @scala.inline
-  def apply(ChangedBlocksCount: ChangedBlocksCount, SnapshotId: SnapshotId): CompleteSnapshotRequest = {
+  inline def apply(ChangedBlocksCount: ChangedBlocksCount, SnapshotId: SnapshotId): CompleteSnapshotRequest = {
     val __obj = js.Dynamic.literal(ChangedBlocksCount = ChangedBlocksCount.asInstanceOf[js.Any], SnapshotId = SnapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CompleteSnapshotRequestMutableBuilder[Self <: CompleteSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CompleteSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setChangedBlocksCount(value: ChangedBlocksCount): Self = StObject.set(x, "ChangedBlocksCount", value.asInstanceOf[js.Any])
+    inline def setChangedBlocksCount(value: ChangedBlocksCount): Self = StObject.set(x, "ChangedBlocksCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumAggregationMethod(value: ChecksumAggregationMethod): Self = StObject.set(x, "ChecksumAggregationMethod", value.asInstanceOf[js.Any])
+    inline def setChecksumAggregationMethod(value: ChecksumAggregationMethod): Self = StObject.set(x, "ChecksumAggregationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumAggregationMethodUndefined: Self = StObject.set(x, "ChecksumAggregationMethod", js.undefined)
+    inline def setChecksumAggregationMethodUndefined: Self = StObject.set(x, "ChecksumAggregationMethod", js.undefined)
     
-    @scala.inline
-    def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
+    inline def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
+    inline def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "Checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "Checksum", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
   }
 }

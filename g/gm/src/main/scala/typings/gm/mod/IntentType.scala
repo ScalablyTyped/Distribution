@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IntentType extends StObject
 object IntentType {
   
-  @scala.inline
-  def Absolute: typings.gm.gmStrings.Absolute = "Absolute".asInstanceOf[typings.gm.gmStrings.Absolute]
+  inline def Absolute: typings.gm.gmStrings.Absolute = "Absolute".asInstanceOf[typings.gm.gmStrings.Absolute]
   
-  @scala.inline
-  def Perceptual: typings.gm.gmStrings.Perceptual = "Perceptual".asInstanceOf[typings.gm.gmStrings.Perceptual]
+  inline def Perceptual: typings.gm.gmStrings.Perceptual = "Perceptual".asInstanceOf[typings.gm.gmStrings.Perceptual]
   
-  @scala.inline
-  def Relative: typings.gm.gmStrings.Relative = "Relative".asInstanceOf[typings.gm.gmStrings.Relative]
+  inline def Relative: typings.gm.gmStrings.Relative = "Relative".asInstanceOf[typings.gm.gmStrings.Relative]
   
-  @scala.inline
-  def Saturation: typings.gm.gmStrings.Saturation = "Saturation".asInstanceOf[typings.gm.gmStrings.Saturation]
+  inline def Saturation: typings.gm.gmStrings.Saturation = "Saturation".asInstanceOf[typings.gm.gmStrings.Saturation]
 }

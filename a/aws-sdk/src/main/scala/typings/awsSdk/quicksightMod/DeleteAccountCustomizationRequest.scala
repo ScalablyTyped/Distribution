@@ -18,22 +18,17 @@ trait DeleteAccountCustomizationRequest extends StObject {
 }
 object DeleteAccountCustomizationRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId): DeleteAccountCustomizationRequest = {
+  inline def apply(AwsAccountId: AwsAccountId): DeleteAccountCustomizationRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccountCustomizationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAccountCustomizationRequestMutableBuilder[Self <: DeleteAccountCustomizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccountCustomizationRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
   }
 }

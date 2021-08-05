@@ -19,22 +19,17 @@ trait IupdownloadVoice
 }
 object IupdownloadVoice {
   
-  @scala.inline
-  def apply(isShowProgressTips: Double, localId: String, success: Resouce => Unit): IupdownloadVoice = {
+  inline def apply(isShowProgressTips: Double, localId: String, success: Resouce => Unit): IupdownloadVoice = {
     val __obj = js.Dynamic.literal(isShowProgressTips = isShowProgressTips.asInstanceOf[js.Any], localId = localId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[IupdownloadVoice]
   }
   
-  @scala.inline
-  implicit class IupdownloadVoiceMutableBuilder[Self <: IupdownloadVoice] (val x: Self) extends AnyVal {
+  extension [Self <: IupdownloadVoice](x: Self) {
     
-    @scala.inline
-    def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
+    inline def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Resouce => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Resouce => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

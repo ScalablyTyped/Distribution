@@ -18,8 +18,7 @@ trait ExtendedNodeData
 }
 object ExtendedNodeData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isSearchFocus: Boolean,
     isSearchMatch: Boolean,
     lowerSiblingCounts: js.Array[Double],
@@ -32,22 +31,16 @@ object ExtendedNodeData {
     __obj.asInstanceOf[ExtendedNodeData]
   }
   
-  @scala.inline
-  implicit class ExtendedNodeDataMutableBuilder[Self <: ExtendedNodeData] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedNodeData](x: Self) {
     
-    @scala.inline
-    def setIsSearchFocus(value: Boolean): Self = StObject.set(x, "isSearchFocus", value.asInstanceOf[js.Any])
+    inline def setIsSearchFocus(value: Boolean): Self = StObject.set(x, "isSearchFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSearchMatch(value: Boolean): Self = StObject.set(x, "isSearchMatch", value.asInstanceOf[js.Any])
+    inline def setIsSearchMatch(value: Boolean): Self = StObject.set(x, "isSearchMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
+    inline def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
+    inline def setLowerSiblingCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setParentNode(value: TreeItem): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: TreeItem): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
   }
 }

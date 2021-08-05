@@ -313,30 +313,25 @@ object error {
   /**
     * Checks a legacy response from the Selenium 2.0 wire protocol for an error.
     */
-  @scala.inline
-  def checkLegacyResponse(response: MaybeLegacyResponse): MaybeLegacyResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLegacyResponse")(response.asInstanceOf[js.Any]).asInstanceOf[MaybeLegacyResponse]
+  inline def checkLegacyResponse(response: MaybeLegacyResponse): MaybeLegacyResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLegacyResponse")(response.asInstanceOf[js.Any]).asInstanceOf[MaybeLegacyResponse]
   
   /**
     * Checks a response object from a server that adheres to the W3C WebDriver
     * protocol.
     */
-  @scala.inline
-  def checkResponse(data: Response): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResponse")(data.asInstanceOf[js.Any]).asInstanceOf[Response]
+  inline def checkResponse(data: Response): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResponse")(data.asInstanceOf[js.Any]).asInstanceOf[Response]
   
   /**
     * Lookup the err in table of errors.
     */
-  @scala.inline
-  def encodeError(err: js.Any): typings.seleniumWebdriver.anon.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeError")(err.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.anon.Error]
+  inline def encodeError(err: js.Any): typings.seleniumWebdriver.anon.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeError")(err.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.anon.Error]
   
-  @scala.inline
-  def throwDecodedError(data: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def throwDecodedError(data: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   /**
     * Throws an error coded from the W3C protocol. A generic error will be thrown
     * if the provided `data` is not a valid encoded error.
     */
-  @scala.inline
-  def throwDecodedError(data: ErrorData): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def throwDecodedError(data: ErrorData): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
   type ErrorCodeType = StringDictionary[Double]
   
@@ -350,20 +345,16 @@ object error {
   }
   object ErrorData {
     
-    @scala.inline
-    def apply(error: String | Double, message: String): ErrorData = {
+    inline def apply(error: String | Double, message: String): ErrorData = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorData]
     }
     
-    @scala.inline
-    implicit class ErrorDataMutableBuilder[Self <: ErrorData] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorData](x: Self) {
       
-      @scala.inline
-      def setError(value: String | Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -379,38 +370,28 @@ object error {
   }
   object MaybeLegacyResponse {
     
-    @scala.inline
-    def apply(): MaybeLegacyResponse = {
+    inline def apply(): MaybeLegacyResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaybeLegacyResponse]
     }
     
-    @scala.inline
-    implicit class MaybeLegacyResponseMutableBuilder[Self <: MaybeLegacyResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MaybeLegacyResponse](x: Self) {
       
-      @scala.inline
-      def setGetAlertText(value: () => String): Self = StObject.set(x, "getAlertText", js.Any.fromFunction0(value))
+      inline def setGetAlertText(value: () => String): Self = StObject.set(x, "getAlertText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAlertTextUndefined: Self = StObject.set(x, "getAlertText", js.undefined)
+      inline def setGetAlertTextUndefined: Self = StObject.set(x, "getAlertText", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setValue(value: Message): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Message): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -422,20 +403,16 @@ object error {
   }
   object Response {
     
-    @scala.inline
-    def apply(error: String | Double, message: String): Response = {
+    inline def apply(error: String | Double, message: String): Response = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setError(value: String | Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

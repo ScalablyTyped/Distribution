@@ -16,8 +16,7 @@ object mod {
     * @param secondVersion - Second version to compare
     * @returns Numeric value compatible with the [Array.sort(fn) interface](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters).
     */
-  @scala.inline
-  def apply(firstVersion: String, secondVersion: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].apply(firstVersion.asInstanceOf[js.Any], secondVersion.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  inline def apply(firstVersion: String, secondVersion: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].apply(firstVersion.asInstanceOf[js.Any], secondVersion.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
   @JSImport("compare-versions", JSImport.Namespace)
   @js.native
@@ -40,8 +39,7 @@ object mod {
     * compareVersions.compare('10.1.1', '10.2.2', '>='); // return false
     * ```
     */
-  @scala.inline
-  def compare(firstVersion: String, secondVersion: String, operator: CompareOperator): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(firstVersion.asInstanceOf[js.Any], secondVersion.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compare(firstVersion: String, secondVersion: String, operator: CompareOperator): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(firstVersion.asInstanceOf[js.Any], secondVersion.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Validate [semver](https://semver.org/) version strings.
@@ -56,8 +54,7 @@ object mod {
     * compareVersions.validate('foo'); // return false
     * ```
     */
-  @scala.inline
-  def validate(version: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(version.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validate(version: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(version.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Allowed arithmetic operators
@@ -72,19 +69,14 @@ object mod {
   trait CompareOperator extends StObject
   object CompareOperator {
     
-    @scala.inline
-    def Equalssign: typings.compareVersions.compareVersionsStrings.Equalssign = "=".asInstanceOf[typings.compareVersions.compareVersionsStrings.Equalssign]
+    inline def Equalssign: typings.compareVersions.compareVersionsStrings.Equalssign = "=".asInstanceOf[typings.compareVersions.compareVersionsStrings.Equalssign]
     
-    @scala.inline
-    def Greaterthansign: typings.compareVersions.compareVersionsStrings.Greaterthansign = ">".asInstanceOf[typings.compareVersions.compareVersionsStrings.Greaterthansign]
+    inline def Greaterthansign: typings.compareVersions.compareVersionsStrings.Greaterthansign = ">".asInstanceOf[typings.compareVersions.compareVersionsStrings.Greaterthansign]
     
-    @scala.inline
-    def GreaterthansignEqualssign: typings.compareVersions.compareVersionsStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.compareVersions.compareVersionsStrings.GreaterthansignEqualssign]
+    inline def GreaterthansignEqualssign: typings.compareVersions.compareVersionsStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.compareVersions.compareVersionsStrings.GreaterthansignEqualssign]
     
-    @scala.inline
-    def Lessthansign: typings.compareVersions.compareVersionsStrings.Lessthansign = "<".asInstanceOf[typings.compareVersions.compareVersionsStrings.Lessthansign]
+    inline def Lessthansign: typings.compareVersions.compareVersionsStrings.Lessthansign = "<".asInstanceOf[typings.compareVersions.compareVersionsStrings.Lessthansign]
     
-    @scala.inline
-    def LessthansignEqualssign: typings.compareVersions.compareVersionsStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.compareVersions.compareVersionsStrings.LessthansignEqualssign]
+    inline def LessthansignEqualssign: typings.compareVersions.compareVersionsStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.compareVersions.compareVersionsStrings.LessthansignEqualssign]
   }
 }

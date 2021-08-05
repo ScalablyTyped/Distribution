@@ -13,16 +13,13 @@ trait ClusterConstructorOptions extends StObject {
 }
 object ClusterConstructorOptions {
   
-  @scala.inline
-  def apply(certpath: String): ClusterConstructorOptions = {
+  inline def apply(certpath: String): ClusterConstructorOptions = {
     val __obj = js.Dynamic.literal(certpath = certpath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterConstructorOptions]
   }
   
-  @scala.inline
-  implicit class ClusterConstructorOptionsMutableBuilder[Self <: ClusterConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setCertpath(value: String): Self = StObject.set(x, "certpath", value.asInstanceOf[js.Any])
+    inline def setCertpath(value: String): Self = StObject.set(x, "certpath", value.asInstanceOf[js.Any])
   }
 }

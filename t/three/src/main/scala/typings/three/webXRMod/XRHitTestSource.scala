@@ -10,16 +10,13 @@ trait XRHitTestSource extends StObject {
 }
 object XRHitTestSource {
   
-  @scala.inline
-  def apply(cancel: () => Unit): XRHitTestSource = {
+  inline def apply(cancel: () => Unit): XRHitTestSource = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
     __obj.asInstanceOf[XRHitTestSource]
   }
   
-  @scala.inline
-  implicit class XRHitTestSourceMutableBuilder[Self <: XRHitTestSource] (val x: Self) extends AnyVal {
+  extension [Self <: XRHitTestSource](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }
 }

@@ -12,16 +12,13 @@ trait DatumFieldRef
 }
 object DatumFieldRef {
   
-  @scala.inline
-  def apply(datum: Field): DatumFieldRef = {
+  inline def apply(datum: Field): DatumFieldRef = {
     val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatumFieldRef]
   }
   
-  @scala.inline
-  implicit class DatumFieldRefMutableBuilder[Self <: DatumFieldRef] (val x: Self) extends AnyVal {
+  extension [Self <: DatumFieldRef](x: Self) {
     
-    @scala.inline
-    def setDatum(value: Field): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: Field): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
   }
 }

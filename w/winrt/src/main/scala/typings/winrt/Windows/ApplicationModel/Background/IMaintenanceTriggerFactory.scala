@@ -10,16 +10,13 @@ trait IMaintenanceTriggerFactory extends StObject {
 }
 object IMaintenanceTriggerFactory {
   
-  @scala.inline
-  def apply(create: (Double, Boolean) => MaintenanceTrigger): IMaintenanceTriggerFactory = {
+  inline def apply(create: (Double, Boolean) => MaintenanceTrigger): IMaintenanceTriggerFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
     __obj.asInstanceOf[IMaintenanceTriggerFactory]
   }
   
-  @scala.inline
-  implicit class IMaintenanceTriggerFactoryMutableBuilder[Self <: IMaintenanceTriggerFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IMaintenanceTriggerFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (Double, Boolean) => MaintenanceTrigger): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (Double, Boolean) => MaintenanceTrigger): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
   }
 }

@@ -22,23 +22,18 @@ object typesMod {
   }
   object ChildRegistration {
     
-    @scala.inline
-    def apply(element: Element, onRegistered: DomPopmotionPoser => Unit, poseConfig: DomPopmotionConfig): ChildRegistration = {
+    inline def apply(element: Element, onRegistered: DomPopmotionPoser => Unit, poseConfig: DomPopmotionConfig): ChildRegistration = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], onRegistered = js.Any.fromFunction1(onRegistered), poseConfig = poseConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChildRegistration]
     }
     
-    @scala.inline
-    implicit class ChildRegistrationMutableBuilder[Self <: ChildRegistration] (val x: Self) extends AnyVal {
+    extension [Self <: ChildRegistration](x: Self) {
       
-      @scala.inline
-      def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRegistered(value: DomPopmotionPoser => Unit): Self = StObject.set(x, "onRegistered", js.Any.fromFunction1(value))
+      inline def setOnRegistered(value: DomPopmotionPoser => Unit): Self = StObject.set(x, "onRegistered", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPoseConfig(value: DomPopmotionConfig): Self = StObject.set(x, "poseConfig", value.asInstanceOf[js.Any])
+      inline def setPoseConfig(value: DomPopmotionConfig): Self = StObject.set(x, "poseConfig", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,29 +55,22 @@ object typesMod {
   }
   object PopStyle {
     
-    @scala.inline
-    def apply(height: Double, left: Double, top: Double, width: Double): PopStyle = {
+    inline def apply(height: Double, left: Double, top: Double, width: Double): PopStyle = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], position = "absolute", top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopStyle]
     }
     
-    @scala.inline
-    implicit class PopStyleMutableBuilder[Self <: PopStyle] (val x: Self) extends AnyVal {
+    extension [Self <: PopStyle](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: absolute): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: absolute): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,38 +86,28 @@ object typesMod {
   }
   object PoseContextProps {
     
-    @scala.inline
-    def apply(): PoseContextProps = {
+    inline def apply(): PoseContextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PoseContextProps]
     }
     
-    @scala.inline
-    implicit class PoseContextPropsMutableBuilder[Self <: PoseContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: PoseContextProps](x: Self) {
       
-      @scala.inline
-      def setGetInitialPoseFromParent(value: () => CurrentPose | Unit): Self = StObject.set(x, "getInitialPoseFromParent", js.Any.fromFunction0(value))
+      inline def setGetInitialPoseFromParent(value: () => CurrentPose | Unit): Self = StObject.set(x, "getInitialPoseFromParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInitialPoseFromParentUndefined: Self = StObject.set(x, "getInitialPoseFromParent", js.undefined)
+      inline def setGetInitialPoseFromParentUndefined: Self = StObject.set(x, "getInitialPoseFromParent", js.undefined)
       
-      @scala.inline
-      def setGetParentPoseConfig(value: () => DomPopmotionConfig): Self = StObject.set(x, "getParentPoseConfig", js.Any.fromFunction0(value))
+      inline def setGetParentPoseConfig(value: () => DomPopmotionConfig): Self = StObject.set(x, "getParentPoseConfig", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParentPoseConfigUndefined: Self = StObject.set(x, "getParentPoseConfig", js.undefined)
+      inline def setGetParentPoseConfigUndefined: Self = StObject.set(x, "getParentPoseConfig", js.undefined)
       
-      @scala.inline
-      def setOnUnmount(value: /* child */ DomPopmotionPoser => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
+      inline def setOnUnmount(value: /* child */ DomPopmotionPoser => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
+      inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
-      @scala.inline
-      def setRegisterChild(value: /* props */ ChildRegistration => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
+      inline def setRegisterChild(value: /* props */ ChildRegistration => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterChildUndefined: Self = StObject.set(x, "registerChild", js.undefined)
+      inline def setRegisterChildUndefined: Self = StObject.set(x, "registerChild", js.undefined)
     }
   }
   
@@ -168,107 +146,74 @@ object typesMod {
   }
   object PoseElementInternalProps {
     
-    @scala.inline
-    def apply(elementType: js.Any, poseConfig: DomPopmotionConfig | ConfigFactory): PoseElementInternalProps = {
+    inline def apply(elementType: js.Any, poseConfig: DomPopmotionConfig | ConfigFactory): PoseElementInternalProps = {
       val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], poseConfig = poseConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[PoseElementInternalProps]
     }
     
-    @scala.inline
-    implicit class PoseElementInternalPropsMutableBuilder[Self <: PoseElementInternalProps] (val x: Self) extends AnyVal {
+    extension [Self <: PoseElementInternalProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setElementType(value: js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+      inline def setElementType(value: js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetInitialPoseFromParent(value: () => CurrentPose | Unit): Self = StObject.set(x, "getInitialPoseFromParent", js.Any.fromFunction0(value))
+      inline def setGetInitialPoseFromParent(value: () => CurrentPose | Unit): Self = StObject.set(x, "getInitialPoseFromParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInitialPoseFromParentUndefined: Self = StObject.set(x, "getInitialPoseFromParent", js.undefined)
+      inline def setGetInitialPoseFromParentUndefined: Self = StObject.set(x, "getInitialPoseFromParent", js.undefined)
       
-      @scala.inline
-      def setGetParentPoseConfig(value: () => DomPopmotionConfig): Self = StObject.set(x, "getParentPoseConfig", js.Any.fromFunction0(value))
+      inline def setGetParentPoseConfig(value: () => DomPopmotionConfig): Self = StObject.set(x, "getParentPoseConfig", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParentPoseConfigUndefined: Self = StObject.set(x, "getParentPoseConfig", js.undefined)
+      inline def setGetParentPoseConfigUndefined: Self = StObject.set(x, "getParentPoseConfig", js.undefined)
       
-      @scala.inline
-      def setInitialPose(value: CurrentPose): Self = StObject.set(x, "initialPose", value.asInstanceOf[js.Any])
+      inline def setInitialPose(value: CurrentPose): Self = StObject.set(x, "initialPose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPoseUndefined: Self = StObject.set(x, "initialPose", js.undefined)
+      inline def setInitialPoseUndefined: Self = StObject.set(x, "initialPose", js.undefined)
       
-      @scala.inline
-      def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value :_*))
+      inline def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value :_*))
       
-      @scala.inline
-      def setInnerRef(value: Current | RefFunc): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Current | RefFunc): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* el */ Element => js.Any): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* el */ Element => js.Any): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setOnPoseComplete(value: /* pose */ CurrentPose => js.Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
+      inline def setOnPoseComplete(value: /* pose */ CurrentPose => js.Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPoseCompleteUndefined: Self = StObject.set(x, "onPoseComplete", js.undefined)
+      inline def setOnPoseCompleteUndefined: Self = StObject.set(x, "onPoseComplete", js.undefined)
       
-      @scala.inline
-      def setOnUnmount(value: /* child */ DomPopmotionPoser => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
+      inline def setOnUnmount(value: /* child */ DomPopmotionPoser => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
+      inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
-      @scala.inline
-      def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, js.Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
+      inline def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, js.Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
+      inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
-      @scala.inline
-      def setPose(value: CurrentPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
+      inline def setPose(value: CurrentPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoseConfig(value: DomPopmotionConfig | ConfigFactory): Self = StObject.set(x, "poseConfig", value.asInstanceOf[js.Any])
+      inline def setPoseConfig(value: DomPopmotionConfig | ConfigFactory): Self = StObject.set(x, "poseConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoseConfigFunction1(value: /* props */ PoseElementProps => DomPopmotionConfig): Self = StObject.set(x, "poseConfig", js.Any.fromFunction1(value))
+      inline def setPoseConfigFunction1(value: /* props */ PoseElementProps => DomPopmotionConfig): Self = StObject.set(x, "poseConfig", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPoseUndefined: Self = StObject.set(x, "pose", js.undefined)
+      inline def setPoseUndefined: Self = StObject.set(x, "pose", js.undefined)
       
-      @scala.inline
-      def setPoseVarargs(value: String*): Self = StObject.set(x, "pose", js.Array(value :_*))
+      inline def setPoseVarargs(value: String*): Self = StObject.set(x, "pose", js.Array(value :_*))
       
-      @scala.inline
-      def setRegisterChild(value: /* props */ ChildRegistration => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
+      inline def setRegisterChild(value: /* props */ ChildRegistration => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterChildUndefined: Self = StObject.set(x, "registerChild", js.undefined)
+      inline def setRegisterChildUndefined: Self = StObject.set(x, "registerChild", js.undefined)
       
-      @scala.inline
-      def setWithParent(value: Boolean): Self = StObject.set(x, "withParent", value.asInstanceOf[js.Any])
+      inline def setWithParent(value: Boolean): Self = StObject.set(x, "withParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithParentUndefined: Self = StObject.set(x, "withParent", js.undefined)
+      inline def setWithParentUndefined: Self = StObject.set(x, "withParent", js.undefined)
       
-      @scala.inline
-      def set_pose(value: CurrentPose): Self = StObject.set(x, "_pose", value.asInstanceOf[js.Any])
+      inline def set_pose(value: CurrentPose): Self = StObject.set(x, "_pose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_poseUndefined: Self = StObject.set(x, "_pose", js.undefined)
+      inline def set_poseUndefined: Self = StObject.set(x, "_pose", js.undefined)
       
-      @scala.inline
-      def set_poseVarargs(value: String*): Self = StObject.set(x, "_pose", js.Array(value :_*))
+      inline def set_poseVarargs(value: String*): Self = StObject.set(x, "_pose", js.Array(value :_*))
     }
   }
   
@@ -295,74 +240,52 @@ object typesMod {
   }
   object PoseElementProps {
     
-    @scala.inline
-    def apply(): PoseElementProps = {
+    inline def apply(): PoseElementProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PoseElementProps]
     }
     
-    @scala.inline
-    implicit class PoseElementPropsMutableBuilder[Self <: PoseElementProps] (val x: Self) extends AnyVal {
+    extension [Self <: PoseElementProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInitialPose(value: CurrentPose): Self = StObject.set(x, "initialPose", value.asInstanceOf[js.Any])
+      inline def setInitialPose(value: CurrentPose): Self = StObject.set(x, "initialPose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPoseUndefined: Self = StObject.set(x, "initialPose", js.undefined)
+      inline def setInitialPoseUndefined: Self = StObject.set(x, "initialPose", js.undefined)
       
-      @scala.inline
-      def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value :_*))
+      inline def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value :_*))
       
-      @scala.inline
-      def setInnerRef(value: Current | RefFunc): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Current | RefFunc): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* el */ Element => js.Any): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* el */ Element => js.Any): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setOnPoseComplete(value: /* pose */ CurrentPose => js.Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
+      inline def setOnPoseComplete(value: /* pose */ CurrentPose => js.Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPoseCompleteUndefined: Self = StObject.set(x, "onPoseComplete", js.undefined)
+      inline def setOnPoseCompleteUndefined: Self = StObject.set(x, "onPoseComplete", js.undefined)
       
-      @scala.inline
-      def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, js.Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
+      inline def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, js.Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
+      inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
-      @scala.inline
-      def setPose(value: CurrentPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
+      inline def setPose(value: CurrentPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoseUndefined: Self = StObject.set(x, "pose", js.undefined)
+      inline def setPoseUndefined: Self = StObject.set(x, "pose", js.undefined)
       
-      @scala.inline
-      def setPoseVarargs(value: String*): Self = StObject.set(x, "pose", js.Array(value :_*))
+      inline def setPoseVarargs(value: String*): Self = StObject.set(x, "pose", js.Array(value :_*))
       
-      @scala.inline
-      def setWithParent(value: Boolean): Self = StObject.set(x, "withParent", value.asInstanceOf[js.Any])
+      inline def setWithParent(value: Boolean): Self = StObject.set(x, "withParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithParentUndefined: Self = StObject.set(x, "withParent", js.undefined)
+      inline def setWithParentUndefined: Self = StObject.set(x, "withParent", js.undefined)
       
-      @scala.inline
-      def set_pose(value: CurrentPose): Self = StObject.set(x, "_pose", value.asInstanceOf[js.Any])
+      inline def set_pose(value: CurrentPose): Self = StObject.set(x, "_pose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_poseUndefined: Self = StObject.set(x, "_pose", js.undefined)
+      inline def set_poseUndefined: Self = StObject.set(x, "_pose", js.undefined)
       
-      @scala.inline
-      def set_poseVarargs(value: String*): Self = StObject.set(x, "_pose", js.Array(value :_*))
+      inline def set_poseVarargs(value: String*): Self = StObject.set(x, "_pose", js.Array(value :_*))
     }
   }
   

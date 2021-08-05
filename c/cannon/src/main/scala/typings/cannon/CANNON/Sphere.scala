@@ -12,8 +12,7 @@ trait Sphere
 }
 object Sphere {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingSphereRadius: Double,
     calculateLocalInertia: (Double, Vec3) => Vec3,
     collisionResponse: Boolean,
@@ -27,10 +26,8 @@ object Sphere {
     __obj.asInstanceOf[Sphere]
   }
   
-  @scala.inline
-  implicit class SphereMutableBuilder[Self <: Sphere] (val x: Self) extends AnyVal {
+  extension [Self <: Sphere](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
   }
 }

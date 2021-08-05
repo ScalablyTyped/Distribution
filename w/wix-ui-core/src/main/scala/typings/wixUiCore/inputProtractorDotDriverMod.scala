@@ -27,8 +27,7 @@ object inputProtractorDotDriverMod {
   }
   object InputDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       element: () => ElementFinder,
       enterText: String => js.Promise[Unit],
       focus: () => js.Promise[Unit],
@@ -39,20 +38,15 @@ object inputProtractorDotDriverMod {
       __obj.asInstanceOf[InputDriver]
     }
     
-    @scala.inline
-    implicit class InputDriverMutableBuilder[Self <: InputDriver] (val x: Self) extends AnyVal {
+    extension [Self <: InputDriver](x: Self) {
       
-      @scala.inline
-      def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPressKey(value: String => js.Promise[Unit]): Self = StObject.set(x, "pressKey", js.Any.fromFunction1(value))
+      inline def setPressKey(value: String => js.Promise[Unit]): Self = StObject.set(x, "pressKey", js.Any.fromFunction1(value))
     }
   }
 }

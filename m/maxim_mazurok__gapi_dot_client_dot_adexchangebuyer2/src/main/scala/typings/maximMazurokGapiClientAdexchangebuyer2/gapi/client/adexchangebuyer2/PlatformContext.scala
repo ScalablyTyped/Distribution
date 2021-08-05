@@ -11,22 +11,17 @@ trait PlatformContext extends StObject {
 }
 object PlatformContext {
   
-  @scala.inline
-  def apply(): PlatformContext = {
+  inline def apply(): PlatformContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlatformContext]
   }
   
-  @scala.inline
-  implicit class PlatformContextMutableBuilder[Self <: PlatformContext] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformContext](x: Self) {
     
-    @scala.inline
-    def setPlatforms(value: js.Array[String]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+    inline def setPlatforms(value: js.Array[String]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
+    inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
-    @scala.inline
-    def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value :_*))
   }
 }

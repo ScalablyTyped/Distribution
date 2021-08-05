@@ -93,8 +93,7 @@ object GraceNote {
   @JSImport("vexflow", "Flow.GraceNote.LEDGER_LINE_OFFSET")
   @js.native
   def LEDGER_LINE_OFFSET: Double = js.native
-  @scala.inline
-  def LEDGER_LINE_OFFSET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEDGER_LINE_OFFSET")(x.asInstanceOf[js.Any])
+  inline def LEDGER_LINE_OFFSET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEDGER_LINE_OFFSET")(x.asInstanceOf[js.Any])
   
   @JSImport("vexflow", "Flow.GraceNote.SCALE")
   @js.native

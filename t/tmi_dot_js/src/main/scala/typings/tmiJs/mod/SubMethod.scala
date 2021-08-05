@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SubMethod extends StObject
 object SubMethod {
   
-  @scala.inline
-  def `1000`: typings.tmiJs.tmiJsStrings.`1000` = "1000".asInstanceOf[typings.tmiJs.tmiJsStrings.`1000`]
+  inline def `1000`: typings.tmiJs.tmiJsStrings.`1000` = "1000".asInstanceOf[typings.tmiJs.tmiJsStrings.`1000`]
   
-  @scala.inline
-  def `2000`: typings.tmiJs.tmiJsStrings.`2000` = "2000".asInstanceOf[typings.tmiJs.tmiJsStrings.`2000`]
+  inline def `2000`: typings.tmiJs.tmiJsStrings.`2000` = "2000".asInstanceOf[typings.tmiJs.tmiJsStrings.`2000`]
   
-  @scala.inline
-  def `3000`: typings.tmiJs.tmiJsStrings.`3000` = "3000".asInstanceOf[typings.tmiJs.tmiJsStrings.`3000`]
+  inline def `3000`: typings.tmiJs.tmiJsStrings.`3000` = "3000".asInstanceOf[typings.tmiJs.tmiJsStrings.`3000`]
   
-  @scala.inline
-  def Prime: typings.tmiJs.tmiJsStrings.Prime = "Prime".asInstanceOf[typings.tmiJs.tmiJsStrings.Prime]
+  inline def Prime: typings.tmiJs.tmiJsStrings.Prime = "Prime".asInstanceOf[typings.tmiJs.tmiJsStrings.Prime]
 }

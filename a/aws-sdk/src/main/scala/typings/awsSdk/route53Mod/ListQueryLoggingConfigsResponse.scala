@@ -18,25 +18,19 @@ trait ListQueryLoggingConfigsResponse extends StObject {
 }
 object ListQueryLoggingConfigsResponse {
   
-  @scala.inline
-  def apply(QueryLoggingConfigs: QueryLoggingConfigs): ListQueryLoggingConfigsResponse = {
+  inline def apply(QueryLoggingConfigs: QueryLoggingConfigs): ListQueryLoggingConfigsResponse = {
     val __obj = js.Dynamic.literal(QueryLoggingConfigs = QueryLoggingConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQueryLoggingConfigsResponse]
   }
   
-  @scala.inline
-  implicit class ListQueryLoggingConfigsResponseMutableBuilder[Self <: ListQueryLoggingConfigsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListQueryLoggingConfigsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQueryLoggingConfigs(value: QueryLoggingConfigs): Self = StObject.set(x, "QueryLoggingConfigs", value.asInstanceOf[js.Any])
+    inline def setQueryLoggingConfigs(value: QueryLoggingConfigs): Self = StObject.set(x, "QueryLoggingConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryLoggingConfigsVarargs(value: QueryLoggingConfig*): Self = StObject.set(x, "QueryLoggingConfigs", js.Array(value :_*))
+    inline def setQueryLoggingConfigsVarargs(value: QueryLoggingConfig*): Self = StObject.set(x, "QueryLoggingConfigs", js.Array(value :_*))
   }
 }

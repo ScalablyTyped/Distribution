@@ -14,9 +14,9 @@ object configMod {
     def this(p: String) = this()
     def this(p: String, hasPathPrefix: BaseConfigOptions) = this()
     
-    var _getFile: js.Any = js.native
+    /* private */ var _getFile: js.Any = js.native
     
-    var _setFile: js.Any = js.native
+    /* private */ var _setFile: js.Any = js.native
     
     def c: T = js.native
     def c_=(value: T): Unit = js.native
@@ -35,7 +35,7 @@ object configMod {
     
     val p: String = js.native
     
-    val pathPrefix: js.Array[String] = js.native
+    /* protected */ val pathPrefix: js.Array[String] = js.native
     
     def provideDefaults(c: Partial[T]): T = js.native
     
@@ -60,23 +60,18 @@ object configMod {
   }
   object BaseConfigOptions {
     
-    @scala.inline
-    def apply(): BaseConfigOptions = {
+    inline def apply(): BaseConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseConfigOptions]
     }
     
-    @scala.inline
-    implicit class BaseConfigOptionsMutableBuilder[Self <: BaseConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseConfigOptions](x: Self) {
       
-      @scala.inline
-      def setPathPrefix(value: js.Array[String]): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
+      inline def setPathPrefix(value: js.Array[String]): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
+      inline def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
       
-      @scala.inline
-      def setPathPrefixVarargs(value: String*): Self = StObject.set(x, "pathPrefix", js.Array(value :_*))
+      inline def setPathPrefixVarargs(value: String*): Self = StObject.set(x, "pathPrefix", js.Array(value :_*))
     }
   }
 }

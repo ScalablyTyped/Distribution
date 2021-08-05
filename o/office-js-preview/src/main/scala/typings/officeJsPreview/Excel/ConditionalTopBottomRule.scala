@@ -35,8 +35,7 @@ trait ConditionalTopBottomRule extends StObject {
 }
 object ConditionalTopBottomRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     rank: Double,
     `type`: ConditionalTopBottomCriterionType | Invalid | TopItems | TopPercent | BottomItems | BottomPercent
   ): ConditionalTopBottomRule = {
@@ -45,14 +44,11 @@ object ConditionalTopBottomRule {
     __obj.asInstanceOf[ConditionalTopBottomRule]
   }
   
-  @scala.inline
-  implicit class ConditionalTopBottomRuleMutableBuilder[Self <: ConditionalTopBottomRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalTopBottomRule](x: Self) {
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: ConditionalTopBottomCriterionType | Invalid | TopItems | TopPercent | BottomItems | BottomPercent
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -13,19 +13,15 @@ trait StoreSelectionSpecifier extends StObject {
 }
 object StoreSelectionSpecifier {
   
-  @scala.inline
-  def apply(storySpecifier: StorySpecifier, viewMode: ViewMode): StoreSelectionSpecifier = {
+  inline def apply(storySpecifier: StorySpecifier, viewMode: ViewMode): StoreSelectionSpecifier = {
     val __obj = js.Dynamic.literal(storySpecifier = storySpecifier.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreSelectionSpecifier]
   }
   
-  @scala.inline
-  implicit class StoreSelectionSpecifierMutableBuilder[Self <: StoreSelectionSpecifier] (val x: Self) extends AnyVal {
+  extension [Self <: StoreSelectionSpecifier](x: Self) {
     
-    @scala.inline
-    def setStorySpecifier(value: StorySpecifier): Self = StObject.set(x, "storySpecifier", value.asInstanceOf[js.Any])
+    inline def setStorySpecifier(value: StorySpecifier): Self = StObject.set(x, "storySpecifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DisassociateDRTLogBucketRequest extends StObject {
 }
 object DisassociateDRTLogBucketRequest {
   
-  @scala.inline
-  def apply(LogBucket: LogBucket): DisassociateDRTLogBucketRequest = {
+  inline def apply(LogBucket: LogBucket): DisassociateDRTLogBucketRequest = {
     val __obj = js.Dynamic.literal(LogBucket = LogBucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateDRTLogBucketRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateDRTLogBucketRequestMutableBuilder[Self <: DisassociateDRTLogBucketRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateDRTLogBucketRequest](x: Self) {
     
-    @scala.inline
-    def setLogBucket(value: LogBucket): Self = StObject.set(x, "LogBucket", value.asInstanceOf[js.Any])
+    inline def setLogBucket(value: LogBucket): Self = StObject.set(x, "LogBucket", value.asInstanceOf[js.Any])
   }
 }

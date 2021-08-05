@@ -11,20 +11,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def open(busNumber: Double, callback: CompletionCallback): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(busNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
-  @scala.inline
-  def open(busNumber: Double, options: OpenOptions, callback: CompletionCallback): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
+  inline def open(busNumber: Double, callback: CompletionCallback): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(busNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
+  inline def open(busNumber: Double, options: OpenOptions, callback: CompletionCallback): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
   
-  @scala.inline
-  def openPromisified(busNumber: Double): js.Promise[PromisifiedBus] = ^.asInstanceOf[js.Dynamic].applyDynamic("openPromisified")(busNumber.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromisifiedBus]]
-  @scala.inline
-  def openPromisified(busNumber: Double, options: OpenOptions): js.Promise[PromisifiedBus] = (^.asInstanceOf[js.Dynamic].applyDynamic("openPromisified")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PromisifiedBus]]
+  inline def openPromisified(busNumber: Double): js.Promise[PromisifiedBus] = ^.asInstanceOf[js.Dynamic].applyDynamic("openPromisified")(busNumber.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromisifiedBus]]
+  inline def openPromisified(busNumber: Double, options: OpenOptions): js.Promise[PromisifiedBus] = (^.asInstanceOf[js.Dynamic].applyDynamic("openPromisified")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PromisifiedBus]]
   
-  @scala.inline
-  def openSync(busNumber: Double): I2CBus = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(busNumber.asInstanceOf[js.Any]).asInstanceOf[I2CBus]
-  @scala.inline
-  def openSync(busNumber: Double, options: OpenOptions): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
+  inline def openSync(busNumber: Double): I2CBus = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(busNumber.asInstanceOf[js.Any]).asInstanceOf[I2CBus]
+  inline def openSync(busNumber: Double, options: OpenOptions): I2CBus = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(busNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[I2CBus]
   
   type BufferCallback = js.Function3[/* error */ js.Any, /* bytesReadOrWritten */ Double, /* buffer */ Buffer, js.Any]
   
@@ -36,20 +30,16 @@ object mod {
   }
   object BytesRead {
     
-    @scala.inline
-    def apply(buffer: Buffer, bytesRead: Double): BytesRead = {
+    inline def apply(buffer: Buffer, bytesRead: Double): BytesRead = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
       __obj.asInstanceOf[BytesRead]
     }
     
-    @scala.inline
-    implicit class BytesReadMutableBuilder[Self <: BytesRead] (val x: Self) extends AnyVal {
+    extension [Self <: BytesRead](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
+      inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,20 +51,16 @@ object mod {
   }
   object BytesWritten {
     
-    @scala.inline
-    def apply(buffer: Buffer, bytesWritten: Double): BytesWritten = {
+    inline def apply(buffer: Buffer, bytesWritten: Double): BytesWritten = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
       __obj.asInstanceOf[BytesWritten]
     }
     
-    @scala.inline
-    implicit class BytesWrittenMutableBuilder[Self <: BytesWritten] (val x: Self) extends AnyVal {
+    extension [Self <: BytesWritten](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+      inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     }
   }
   
@@ -497,23 +483,18 @@ object mod {
   }
   object I2CDeviceId {
     
-    @scala.inline
-    def apply(manufacturer: Double, name: String, product: Double): I2CDeviceId = {
+    inline def apply(manufacturer: Double, name: String, product: Double): I2CDeviceId = {
       val __obj = js.Dynamic.literal(manufacturer = manufacturer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any])
       __obj.asInstanceOf[I2CDeviceId]
     }
     
-    @scala.inline
-    implicit class I2CDeviceIdMutableBuilder[Self <: I2CDeviceId] (val x: Self) extends AnyVal {
+    extension [Self <: I2CDeviceId](x: Self) {
       
-      @scala.inline
-      def setManufacturer(value: Double): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+      inline def setManufacturer(value: Double): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduct(value: Double): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: Double): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     }
   }
   
@@ -555,8 +536,7 @@ object mod {
   }
   object I2CFuncs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       i2c: Boolean,
       protocolMangling: Boolean,
       smbusBlockProcCall: Boolean,
@@ -579,59 +559,41 @@ object mod {
       __obj.asInstanceOf[I2CFuncs]
     }
     
-    @scala.inline
-    implicit class I2CFuncsMutableBuilder[Self <: I2CFuncs] (val x: Self) extends AnyVal {
+    extension [Self <: I2CFuncs](x: Self) {
       
-      @scala.inline
-      def setI2c(value: Boolean): Self = StObject.set(x, "i2c", value.asInstanceOf[js.Any])
+      inline def setI2c(value: Boolean): Self = StObject.set(x, "i2c", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolMangling(value: Boolean): Self = StObject.set(x, "protocolMangling", value.asInstanceOf[js.Any])
+      inline def setProtocolMangling(value: Boolean): Self = StObject.set(x, "protocolMangling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusBlockProcCall(value: Boolean): Self = StObject.set(x, "smbusBlockProcCall", value.asInstanceOf[js.Any])
+      inline def setSmbusBlockProcCall(value: Boolean): Self = StObject.set(x, "smbusBlockProcCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusPec(value: Boolean): Self = StObject.set(x, "smbusPec", value.asInstanceOf[js.Any])
+      inline def setSmbusPec(value: Boolean): Self = StObject.set(x, "smbusPec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusProcCall(value: Boolean): Self = StObject.set(x, "smbusProcCall", value.asInstanceOf[js.Any])
+      inline def setSmbusProcCall(value: Boolean): Self = StObject.set(x, "smbusProcCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusQuick(value: Boolean): Self = StObject.set(x, "smbusQuick", value.asInstanceOf[js.Any])
+      inline def setSmbusQuick(value: Boolean): Self = StObject.set(x, "smbusQuick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusReadBlock(value: Boolean): Self = StObject.set(x, "smbusReadBlock", value.asInstanceOf[js.Any])
+      inline def setSmbusReadBlock(value: Boolean): Self = StObject.set(x, "smbusReadBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusReadByte(value: Boolean): Self = StObject.set(x, "smbusReadByte", value.asInstanceOf[js.Any])
+      inline def setSmbusReadByte(value: Boolean): Self = StObject.set(x, "smbusReadByte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusReadI2cBlock(value: Boolean): Self = StObject.set(x, "smbusReadI2cBlock", value.asInstanceOf[js.Any])
+      inline def setSmbusReadI2cBlock(value: Boolean): Self = StObject.set(x, "smbusReadI2cBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusReadWord(value: Boolean): Self = StObject.set(x, "smbusReadWord", value.asInstanceOf[js.Any])
+      inline def setSmbusReadWord(value: Boolean): Self = StObject.set(x, "smbusReadWord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusReceiveByte(value: Boolean): Self = StObject.set(x, "smbusReceiveByte", value.asInstanceOf[js.Any])
+      inline def setSmbusReceiveByte(value: Boolean): Self = StObject.set(x, "smbusReceiveByte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusSendByte(value: Boolean): Self = StObject.set(x, "smbusSendByte", value.asInstanceOf[js.Any])
+      inline def setSmbusSendByte(value: Boolean): Self = StObject.set(x, "smbusSendByte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusWriteBlock(value: Boolean): Self = StObject.set(x, "smbusWriteBlock", value.asInstanceOf[js.Any])
+      inline def setSmbusWriteBlock(value: Boolean): Self = StObject.set(x, "smbusWriteBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusWriteByte(value: Boolean): Self = StObject.set(x, "smbusWriteByte", value.asInstanceOf[js.Any])
+      inline def setSmbusWriteByte(value: Boolean): Self = StObject.set(x, "smbusWriteByte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusWriteI2cBlock(value: Boolean): Self = StObject.set(x, "smbusWriteI2cBlock", value.asInstanceOf[js.Any])
+      inline def setSmbusWriteI2cBlock(value: Boolean): Self = StObject.set(x, "smbusWriteI2cBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmbusWriteWord(value: Boolean): Self = StObject.set(x, "smbusWriteWord", value.asInstanceOf[js.Any])
+      inline def setSmbusWriteWord(value: Boolean): Self = StObject.set(x, "smbusWriteWord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenBitAddr(value: Boolean): Self = StObject.set(x, "tenBitAddr", value.asInstanceOf[js.Any])
+      inline def setTenBitAddr(value: Boolean): Self = StObject.set(x, "tenBitAddr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -642,17 +604,14 @@ object mod {
   }
   object OpenOptions {
     
-    @scala.inline
-    def apply(forceAccess: Boolean): OpenOptions = {
+    inline def apply(forceAccess: Boolean): OpenOptions = {
       val __obj = js.Dynamic.literal(forceAccess = forceAccess.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenOptions]
     }
     
-    @scala.inline
-    implicit class OpenOptionsMutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenOptions](x: Self) {
       
-      @scala.inline
-      def setForceAccess(value: Boolean): Self = StObject.set(x, "forceAccess", value.asInstanceOf[js.Any])
+      inline def setForceAccess(value: Boolean): Self = StObject.set(x, "forceAccess", value.asInstanceOf[js.Any])
     }
   }
   

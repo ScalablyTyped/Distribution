@@ -22,20 +22,16 @@ object checkMod extends Shortcut {
   }
   object CheckProps {
     
-    @scala.inline
-    def apply(): CheckProps = {
+    inline def apply(): CheckProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckProps]
     }
     
-    @scala.inline
-    implicit class CheckPropsMutableBuilder[Self <: CheckProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

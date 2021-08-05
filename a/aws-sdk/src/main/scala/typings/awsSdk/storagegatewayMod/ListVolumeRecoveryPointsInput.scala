@@ -10,16 +10,13 @@ trait ListVolumeRecoveryPointsInput extends StObject {
 }
 object ListVolumeRecoveryPointsInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): ListVolumeRecoveryPointsInput = {
+  inline def apply(GatewayARN: GatewayARN): ListVolumeRecoveryPointsInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVolumeRecoveryPointsInput]
   }
   
-  @scala.inline
-  implicit class ListVolumeRecoveryPointsInputMutableBuilder[Self <: ListVolumeRecoveryPointsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVolumeRecoveryPointsInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

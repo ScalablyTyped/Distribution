@@ -66,26 +66,22 @@ object cognitoIdentityCredentialsMod {
     trait CognitoIdentityCredentialsInputs extends StObject
     object CognitoIdentityCredentialsInputs {
       
-      @scala.inline
-      def AssumeRoleWithWebIdentityRequest(RoleArn: arnType, RoleSessionName: roleSessionNameType, WebIdentityToken: clientTokenType): typings.awsSdk.stsMod.AssumeRoleWithWebIdentityRequest = {
+      inline def AssumeRoleWithWebIdentityRequest(RoleArn: arnType, RoleSessionName: roleSessionNameType, WebIdentityToken: clientTokenType): typings.awsSdk.stsMod.AssumeRoleWithWebIdentityRequest = {
         val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], RoleSessionName = RoleSessionName.asInstanceOf[js.Any], WebIdentityToken = WebIdentityToken.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.awsSdk.stsMod.AssumeRoleWithWebIdentityRequest]
       }
       
-      @scala.inline
-      def GetCredentialsForIdentityInput(IdentityId: IdentityId): typings.awsSdk.cognitoidentityMod.GetCredentialsForIdentityInput = {
+      inline def GetCredentialsForIdentityInput(IdentityId: IdentityId): typings.awsSdk.cognitoidentityMod.GetCredentialsForIdentityInput = {
         val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.awsSdk.cognitoidentityMod.GetCredentialsForIdentityInput]
       }
       
-      @scala.inline
-      def GetIdInput(IdentityPoolId: IdentityPoolId): typings.awsSdk.cognitoidentityMod.GetIdInput = {
+      inline def GetIdInput(IdentityPoolId: IdentityPoolId): typings.awsSdk.cognitoidentityMod.GetIdInput = {
         val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.awsSdk.cognitoidentityMod.GetIdInput]
       }
       
-      @scala.inline
-      def GetOpenIdTokenInput(IdentityId: IdentityId): typings.awsSdk.cognitoidentityMod.GetOpenIdTokenInput = {
+      inline def GetOpenIdTokenInput(IdentityId: IdentityId): typings.awsSdk.cognitoidentityMod.GetOpenIdTokenInput = {
         val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.awsSdk.cognitoidentityMod.GetOpenIdTokenInput]
       }

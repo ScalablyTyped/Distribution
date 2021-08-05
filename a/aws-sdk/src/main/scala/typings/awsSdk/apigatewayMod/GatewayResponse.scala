@@ -33,43 +33,31 @@ trait GatewayResponse extends StObject {
 }
 object GatewayResponse {
   
-  @scala.inline
-  def apply(): GatewayResponse = {
+  inline def apply(): GatewayResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GatewayResponse]
   }
   
-  @scala.inline
-  implicit class GatewayResponseMutableBuilder[Self <: GatewayResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayResponse](x: Self) {
     
-    @scala.inline
-    def setDefaultResponse(value: Boolean): Self = StObject.set(x, "defaultResponse", value.asInstanceOf[js.Any])
+    inline def setDefaultResponse(value: Boolean): Self = StObject.set(x, "defaultResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultResponseUndefined: Self = StObject.set(x, "defaultResponse", js.undefined)
+    inline def setDefaultResponseUndefined: Self = StObject.set(x, "defaultResponse", js.undefined)
     
-    @scala.inline
-    def setResponseParameters(value: MapOfStringToString): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
+    inline def setResponseParameters(value: MapOfStringToString): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
+    inline def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
     
-    @scala.inline
-    def setResponseTemplates(value: MapOfStringToString): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
+    inline def setResponseTemplates(value: MapOfStringToString): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
+    inline def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: GatewayResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: GatewayResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

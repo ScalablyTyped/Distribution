@@ -19,20 +19,16 @@ object transformTagCloudMod {
   }
   object DataItem {
     
-    @scala.inline
-    def apply(text: String, value: Double): DataItem = {
+    inline def apply(text: String, value: Double): DataItem = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataItem]
     }
     
-    @scala.inline
-    implicit class DataItemMutableBuilder[Self <: DataItem] (val x: Self) extends AnyVal {
+    extension [Self <: DataItem](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,97 +70,69 @@ object transformTagCloudMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFields(value: js.Tuple2[String, String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Tuple2[String, String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFont(value: String | (js.Function1[/* row */ DataItem, String])): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String | (js.Function1[/* row */ DataItem, String])): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFunction1(value: /* row */ DataItem => String): Self = StObject.set(x, "font", js.Any.fromFunction1(value))
+      inline def setFontFunction1(value: /* row */ DataItem => String): Self = StObject.set(x, "font", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFontSize(value: Double | (js.Function1[/* row */ DataItem, Double])): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double | (js.Function1[/* row */ DataItem, Double])): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeFunction1(value: /* row */ DataItem => Double): Self = StObject.set(x, "fontSize", js.Any.fromFunction1(value))
+      inline def setFontSizeFunction1(value: /* row */ DataItem => Double): Self = StObject.set(x, "fontSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setFontWeight(value: FontWeight | (js.Function1[/* row */ DataItem, FontWeight])): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: FontWeight | (js.Function1[/* row */ DataItem, FontWeight])): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightFunction1(value: /* row */ DataItem => FontWeight): Self = StObject.set(x, "fontWeight", js.Any.fromFunction1(value))
+      inline def setFontWeightFunction1(value: /* row */ DataItem => FontWeight): Self = StObject.set(x, "fontWeight", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setImageMask(value: HTMLImageElement): Self = StObject.set(x, "imageMask", value.asInstanceOf[js.Any])
+      inline def setImageMask(value: HTMLImageElement): Self = StObject.set(x, "imageMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageMaskUndefined: Self = StObject.set(x, "imageMask", js.undefined)
+      inline def setImageMaskUndefined: Self = StObject.set(x, "imageMask", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double | (js.Function1[/* row */ DataItem, Double])): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double | (js.Function1[/* row */ DataItem, Double])): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingFunction1(value: /* row */ DataItem => Double): Self = StObject.set(x, "padding", js.Any.fromFunction1(value))
+      inline def setPaddingFunction1(value: /* row */ DataItem => Double): Self = StObject.set(x, "padding", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRotate(value: Double | (js.Function1[/* row */ DataItem, Double])): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double | (js.Function1[/* row */ DataItem, Double])): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateFunction1(value: /* row */ DataItem => Double): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
+      inline def setRotateFunction1(value: /* row */ DataItem => Double): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSpiral(
+      inline def setSpiral(
         value: archimedean | rectangular | (js.Function1[
               /* size */ js.Tuple2[Double, Double], 
               js.Function1[/* t */ Double, js.Array[Double]]
             ])
       ): Self = StObject.set(x, "spiral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpiralFunction1(value: /* size */ js.Tuple2[Double, Double] => js.Function1[/* t */ Double, js.Array[Double]]): Self = StObject.set(x, "spiral", js.Any.fromFunction1(value))
+      inline def setSpiralFunction1(value: /* size */ js.Tuple2[Double, Double] => js.Function1[/* t */ Double, js.Array[Double]]): Self = StObject.set(x, "spiral", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSpiralUndefined: Self = StObject.set(x, "spiral", js.undefined)
+      inline def setSpiralUndefined: Self = StObject.set(x, "spiral", js.undefined)
       
-      @scala.inline
-      def setTimeInterval(value: Double): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
+      inline def setTimeInterval(value: Double): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeIntervalUndefined: Self = StObject.set(x, "timeInterval", js.undefined)
+      inline def setTimeIntervalUndefined: Self = StObject.set(x, "timeInterval", js.undefined)
     }
   }
   

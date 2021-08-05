@@ -17,19 +17,15 @@ trait PointCloudRGBRendererProperties
 }
 object PointCloudRGBRendererProperties {
   
-  @scala.inline
-  def apply(): PointCloudRGBRendererProperties = {
+  inline def apply(): PointCloudRGBRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointCloudRGBRendererProperties]
   }
   
-  @scala.inline
-  implicit class PointCloudRGBRendererPropertiesMutableBuilder[Self <: PointCloudRGBRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudRGBRendererProperties](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

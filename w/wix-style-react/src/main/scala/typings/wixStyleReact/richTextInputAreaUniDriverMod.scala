@@ -27,8 +27,7 @@ object richTextInputAreaUniDriverMod {
   }
   object RichTextInputAreaUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       enterText: String => js.Promise[Unit],
@@ -43,26 +42,19 @@ object richTextInputAreaUniDriverMod {
       __obj.asInstanceOf[RichTextInputAreaUniDriver]
     }
     
-    @scala.inline
-    implicit class RichTextInputAreaUniDriverMutableBuilder[Self <: RichTextInputAreaUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: RichTextInputAreaUniDriver](x: Self) {
       
-      @scala.inline
-      def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContent(value: () => js.Promise[String]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => js.Promise[String]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPlaceholder(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
+      inline def setGetPlaceholder(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
+      inline def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
+      inline def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
   }
 }

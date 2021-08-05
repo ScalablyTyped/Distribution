@@ -17,50 +17,38 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def factory(app: FirebaseApp, installations: FirebaseInstallations): FirebaseAnalytics = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(app.asInstanceOf[js.Any], installations.asInstanceOf[js.Any])).asInstanceOf[FirebaseAnalytics]
+  inline def factory(app: FirebaseApp, installations: FirebaseInstallations): FirebaseAnalytics = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(app.asInstanceOf[js.Any], installations.asInstanceOf[js.Any])).asInstanceOf[FirebaseAnalytics]
   
-  @scala.inline
-  def getGlobalVars(): DynamicConfigPromisesList = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalVars")().asInstanceOf[DynamicConfigPromisesList]
+  inline def getGlobalVars(): DynamicConfigPromisesList = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalVars")().asInstanceOf[DynamicConfigPromisesList]
   
-  @scala.inline
-  def registerAnalytics(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAnalytics")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerAnalytics(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAnalytics")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def resetGlobalVars(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")().asInstanceOf[Unit]
-  @scala.inline
-  def resetGlobalVars(newGlobalInitDone: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def resetGlobalVars(newGlobalInitDone: Boolean, newInitializationPromisesMap: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def resetGlobalVars(
+  inline def resetGlobalVars(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")().asInstanceOf[Unit]
+  inline def resetGlobalVars(newGlobalInitDone: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resetGlobalVars(newGlobalInitDone: Boolean, newInitializationPromisesMap: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resetGlobalVars(
     newGlobalInitDone: Boolean,
     newInitializationPromisesMap: js.Object,
     newDynamicPromises: js.Array[scala.Nothing]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any], newDynamicPromises.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def resetGlobalVars(
+  inline def resetGlobalVars(
     newGlobalInitDone: Boolean,
     newInitializationPromisesMap: Unit,
     newDynamicPromises: js.Array[scala.Nothing]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any], newDynamicPromises.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def resetGlobalVars(newGlobalInitDone: Unit, newInitializationPromisesMap: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def resetGlobalVars(
+  inline def resetGlobalVars(newGlobalInitDone: Unit, newInitializationPromisesMap: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resetGlobalVars(
     newGlobalInitDone: Unit,
     newInitializationPromisesMap: js.Object,
     newDynamicPromises: js.Array[scala.Nothing]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any], newDynamicPromises.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def resetGlobalVars(
+  inline def resetGlobalVars(
     newGlobalInitDone: Unit,
     newInitializationPromisesMap: Unit,
     newDynamicPromises: js.Array[scala.Nothing]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any], newDynamicPromises.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def settings(options: SettingsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def settings(options: SettingsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Define extension behavior of `registerAnalytics`
@@ -73,17 +61,14 @@ object mod {
     }
     object FirebaseApp {
       
-      @scala.inline
-      def apply(analytics: () => FirebaseAnalytics): typings.firebaseAnalytics.mod.firebaseAppTypesAugmentingMod.FirebaseApp = {
+      inline def apply(analytics: () => FirebaseAnalytics): typings.firebaseAnalytics.mod.firebaseAppTypesAugmentingMod.FirebaseApp = {
         val __obj = js.Dynamic.literal(analytics = js.Any.fromFunction0(analytics))
         __obj.asInstanceOf[typings.firebaseAnalytics.mod.firebaseAppTypesAugmentingMod.FirebaseApp]
       }
       
-      @scala.inline
-      implicit class FirebaseAppMutableBuilder[Self <: typings.firebaseAnalytics.mod.firebaseAppTypesAugmentingMod.FirebaseApp] (val x: Self) extends AnyVal {
+      extension [Self <: typings.firebaseAnalytics.mod.firebaseAppTypesAugmentingMod.FirebaseApp](x: Self) {
         
-        @scala.inline
-        def setAnalytics(value: () => FirebaseAnalytics): Self = StObject.set(x, "analytics", js.Any.fromFunction0(value))
+        inline def setAnalytics(value: () => FirebaseAnalytics): Self = StObject.set(x, "analytics", js.Any.fromFunction0(value))
       }
     }
     

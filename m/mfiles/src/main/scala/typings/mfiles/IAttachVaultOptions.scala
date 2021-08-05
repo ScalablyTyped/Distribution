@@ -29,8 +29,7 @@ trait IAttachVaultOptions extends StObject {
 }
 object IAttachVaultOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IAttachVaultOptions,
     DisableAll: () => Unit,
     DisableEventHandlers: Boolean,
@@ -46,37 +45,26 @@ object IAttachVaultOptions {
     __obj.asInstanceOf[IAttachVaultOptions]
   }
   
-  @scala.inline
-  implicit class IAttachVaultOptionsMutableBuilder[Self <: IAttachVaultOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IAttachVaultOptions](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IAttachVaultOptions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAttachVaultOptions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisableAll(value: () => Unit): Self = StObject.set(x, "DisableAll", js.Any.fromFunction0(value))
+    inline def setDisableAll(value: () => Unit): Self = StObject.set(x, "DisableAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisableEventHandlers(value: Boolean): Self = StObject.set(x, "DisableEventHandlers", value.asInstanceOf[js.Any])
+    inline def setDisableEventHandlers(value: Boolean): Self = StObject.set(x, "DisableEventHandlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableExportImportJobs(value: Boolean): Self = StObject.set(x, "DisableExportImportJobs", value.asInstanceOf[js.Any])
+    inline def setDisableExportImportJobs(value: Boolean): Self = StObject.set(x, "DisableExportImportJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableExportedDataSets(value: Boolean): Self = StObject.set(x, "DisableExportedDataSets", value.asInstanceOf[js.Any])
+    inline def setDisableExportedDataSets(value: Boolean): Self = StObject.set(x, "DisableExportedDataSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableExternalObjectTypes(value: Boolean): Self = StObject.set(x, "DisableExternalObjectTypes", value.asInstanceOf[js.Any])
+    inline def setDisableExternalObjectTypes(value: Boolean): Self = StObject.set(x, "DisableExternalObjectTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableExternalSources(value: Boolean): Self = StObject.set(x, "DisableExternalSources", value.asInstanceOf[js.Any])
+    inline def setDisableExternalSources(value: Boolean): Self = StObject.set(x, "DisableExternalSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableExternalUserGroups(value: Boolean): Self = StObject.set(x, "DisableExternalUserGroups", value.asInstanceOf[js.Any])
+    inline def setDisableExternalUserGroups(value: Boolean): Self = StObject.set(x, "DisableExternalUserGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: MFAttachVaultOptionsFlag): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: MFAttachVaultOptionsFlag): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAttachmentGUID(value: Boolean): Self = StObject.set(x, "UpdateAttachmentGUID", value.asInstanceOf[js.Any])
+    inline def setUpdateAttachmentGUID(value: Boolean): Self = StObject.set(x, "UpdateAttachmentGUID", value.asInstanceOf[js.Any])
   }
 }

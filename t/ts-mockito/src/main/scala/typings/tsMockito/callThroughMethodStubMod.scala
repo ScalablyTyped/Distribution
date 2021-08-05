@@ -23,13 +23,13 @@ object callThroughMethodStubMod {
     /* CompleteClass */
     override def getValue(): js.Any = js.native
     
-    var instance: js.Any = js.native
+    /* private */ var instance: js.Any = js.native
     
     /* CompleteClass */
     override def isApplicable(args: js.Array[js.Any]): Boolean = js.native
     
-    var method: js.Any = js.native
+    /* private */ var method: js.Any = js.native
     
-    var result: js.Any = js.native
+    /* private */ var result: js.Any = js.native
   }
 }

@@ -29,26 +29,20 @@ object themeableMod {
   }
   object IStaticFnOptionalReturn {
     
-    @scala.inline
-    def apply(): IStaticFnOptionalReturn = {
+    inline def apply(): IStaticFnOptionalReturn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStaticFnOptionalReturn]
     }
     
-    @scala.inline
-    implicit class IStaticFnOptionalReturnMutableBuilder[Self <: IStaticFnOptionalReturn] (val x: Self) extends AnyVal {
+    extension [Self <: IStaticFnOptionalReturn](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StringDictionary[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StringDictionary[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

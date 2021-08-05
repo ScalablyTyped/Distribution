@@ -14,25 +14,19 @@ trait CampaignCreativeAssociation extends StObject {
 }
 object CampaignCreativeAssociation {
   
-  @scala.inline
-  def apply(): CampaignCreativeAssociation = {
+  inline def apply(): CampaignCreativeAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CampaignCreativeAssociation]
   }
   
-  @scala.inline
-  implicit class CampaignCreativeAssociationMutableBuilder[Self <: CampaignCreativeAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: CampaignCreativeAssociation](x: Self) {
     
-    @scala.inline
-    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+    inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
+    inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

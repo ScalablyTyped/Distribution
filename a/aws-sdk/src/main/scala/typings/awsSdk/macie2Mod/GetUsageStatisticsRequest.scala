@@ -28,40 +28,29 @@ trait GetUsageStatisticsRequest extends StObject {
 }
 object GetUsageStatisticsRequest {
   
-  @scala.inline
-  def apply(): GetUsageStatisticsRequest = {
+  inline def apply(): GetUsageStatisticsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUsageStatisticsRequest]
   }
   
-  @scala.inline
-  implicit class GetUsageStatisticsRequestMutableBuilder[Self <: GetUsageStatisticsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsageStatisticsRequest](x: Self) {
     
-    @scala.inline
-    def setFilterBy(value: listOfUsageStatisticsFilter): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
+    inline def setFilterBy(value: listOfUsageStatisticsFilter): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
+    inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
     
-    @scala.inline
-    def setFilterByVarargs(value: UsageStatisticsFilter*): Self = StObject.set(x, "filterBy", js.Array(value :_*))
+    inline def setFilterByVarargs(value: UsageStatisticsFilter*): Self = StObject.set(x, "filterBy", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: UsageStatisticsSortBy): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: UsageStatisticsSortBy): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
   }
 }

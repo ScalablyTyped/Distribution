@@ -33,37 +33,27 @@ trait SchemaBuildBazelSemverSemVer extends StObject {
 }
 object SchemaBuildBazelSemverSemVer {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelSemverSemVer = {
+  inline def apply(): SchemaBuildBazelSemverSemVer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelSemverSemVer]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelSemverSemVerMutableBuilder[Self <: SchemaBuildBazelSemverSemVer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelSemverSemVer](x: Self) {
     
-    @scala.inline
-    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+    inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
     
-    @scala.inline
-    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+    inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
     
-    @scala.inline
-    def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+    inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     
-    @scala.inline
-    def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
+    inline def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
+    inline def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
   }
 }

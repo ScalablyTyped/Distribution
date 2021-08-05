@@ -18,25 +18,19 @@ trait DeviceTemplate extends StObject {
 }
 object DeviceTemplate {
   
-  @scala.inline
-  def apply(): DeviceTemplate = {
+  inline def apply(): DeviceTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceTemplate]
   }
   
-  @scala.inline
-  implicit class DeviceTemplateMutableBuilder[Self <: DeviceTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceTemplate](x: Self) {
     
-    @scala.inline
-    def setCallbackOverrides(value: DeviceCallbackOverrideMap): Self = StObject.set(x, "callbackOverrides", value.asInstanceOf[js.Any])
+    inline def setCallbackOverrides(value: DeviceCallbackOverrideMap): Self = StObject.set(x, "callbackOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackOverridesUndefined: Self = StObject.set(x, "callbackOverrides", js.undefined)
+    inline def setCallbackOverridesUndefined: Self = StObject.set(x, "callbackOverrides", js.undefined)
     
-    @scala.inline
-    def setDeviceType(value: DeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: DeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
+    inline def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
   }
 }

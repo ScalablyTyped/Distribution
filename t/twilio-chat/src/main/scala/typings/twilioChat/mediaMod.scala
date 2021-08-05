@@ -34,15 +34,15 @@ object mediaMod {
       */
     def getContentTemporaryUrl(): js.Promise[String] = js.native
     
-    var mcsMedia: js.Any = js.native
+    /* private */ var mcsMedia: js.Any = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
     def sid: String = js.native
     
     def size: Double = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
   }
   
   trait MediaServices extends StObject {
@@ -51,17 +51,14 @@ object mediaMod {
   }
   object MediaServices {
     
-    @scala.inline
-    def apply(mcsClient: McsClient): MediaServices = {
+    inline def apply(mcsClient: McsClient): MediaServices = {
       val __obj = js.Dynamic.literal(mcsClient = mcsClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaServices]
     }
     
-    @scala.inline
-    implicit class MediaServicesMutableBuilder[Self <: MediaServices] (val x: Self) extends AnyVal {
+    extension [Self <: MediaServices](x: Self) {
       
-      @scala.inline
-      def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
+      inline def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,29 +74,22 @@ object mediaMod {
   }
   object MediaState {
     
-    @scala.inline
-    def apply(contentType: String, sid: String, size: Double): MediaState = {
+    inline def apply(contentType: String, sid: String, size: Double): MediaState = {
       val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaState]
     }
     
-    @scala.inline
-    implicit class MediaStateMutableBuilder[Self <: MediaState] (val x: Self) extends AnyVal {
+    extension [Self <: MediaState](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

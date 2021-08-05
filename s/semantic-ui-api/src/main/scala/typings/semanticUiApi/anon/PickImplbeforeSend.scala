@@ -14,16 +14,13 @@ trait PickImplbeforeSend extends StObject {
 }
 object PickImplbeforeSend {
   
-  @scala.inline
-  def apply(beforeSend: /* settings */ ApiSettings => js.Any): PickImplbeforeSend = {
+  inline def apply(beforeSend: /* settings */ ApiSettings => js.Any): PickImplbeforeSend = {
     val __obj = js.Dynamic.literal(beforeSend = js.Any.fromFunction1(beforeSend))
     __obj.asInstanceOf[PickImplbeforeSend]
   }
   
-  @scala.inline
-  implicit class PickImplbeforeSendMutableBuilder[Self <: PickImplbeforeSend] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplbeforeSend](x: Self) {
     
-    @scala.inline
-    def setBeforeSend(value: /* settings */ ApiSettings => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    inline def setBeforeSend(value: /* settings */ ApiSettings => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
   }
 }

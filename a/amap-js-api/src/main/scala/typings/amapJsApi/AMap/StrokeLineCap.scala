@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StrokeLineCap extends StObject
 object StrokeLineCap {
   
-  @scala.inline
-  def butt: typings.amapJsApi.amapJsApiStrings.butt = "butt".asInstanceOf[typings.amapJsApi.amapJsApiStrings.butt]
+  inline def butt: typings.amapJsApi.amapJsApiStrings.butt = "butt".asInstanceOf[typings.amapJsApi.amapJsApiStrings.butt]
   
-  @scala.inline
-  def round: typings.amapJsApi.amapJsApiStrings.round = "round".asInstanceOf[typings.amapJsApi.amapJsApiStrings.round]
+  inline def round: typings.amapJsApi.amapJsApiStrings.round = "round".asInstanceOf[typings.amapJsApi.amapJsApiStrings.round]
   
-  @scala.inline
-  def square: typings.amapJsApi.amapJsApiStrings.square = "square".asInstanceOf[typings.amapJsApi.amapJsApiStrings.square]
+  inline def square: typings.amapJsApi.amapJsApiStrings.square = "square".asInstanceOf[typings.amapJsApi.amapJsApiStrings.square]
 }

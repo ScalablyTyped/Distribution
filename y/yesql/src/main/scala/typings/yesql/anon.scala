@@ -16,26 +16,20 @@ object anon {
   }
   object Pg {
     
-    @scala.inline
-    def apply(): Pg = {
+    inline def apply(): Pg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Pg]
     }
     
-    @scala.inline
-    implicit class PgMutableBuilder[Self <: Pg] (val x: Self) extends AnyVal {
+    extension [Self <: Pg](x: Self) {
       
-      @scala.inline
-      def setPg(value: Boolean): Self = StObject.set(x, "pg", value.asInstanceOf[js.Any])
+      inline def setPg(value: Boolean): Self = StObject.set(x, "pg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPgUndefined: Self = StObject.set(x, "pg", js.undefined)
+      inline def setPgUndefined: Self = StObject.set(x, "pg", js.undefined)
       
-      @scala.inline
-      def setType(value: pg | mysql): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: pg | mysql): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -49,8 +43,7 @@ object anon {
   }
   object Sql {
     
-    @scala.inline
-    def apply[TParams /* <: js.Object */](
+    inline def apply[TParams /* <: js.Object */](
       sql: String,
       values: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any
@@ -60,21 +53,17 @@ object anon {
       __obj.asInstanceOf[Sql[TParams]]
     }
     
-    @scala.inline
-    implicit class SqlMutableBuilder[Self <: Sql[?], TParams /* <: js.Object */] (val x: Self & Sql[TParams]) extends AnyVal {
+    extension [Self <: Sql[?], TParams /* <: js.Object */](x: Self & Sql[TParams]) {
       
-      @scala.inline
-      def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+      inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(
+      inline def setValues(
         value: js.Array[
               /* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any
             ]
       ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(
+      inline def setValuesVarargs(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any)*
       ): Self = StObject.set(x, "values", js.Array(value :_*))
     }
@@ -90,8 +79,7 @@ object anon {
   }
   object Text {
     
-    @scala.inline
-    def apply[TParams /* <: js.Object */](
+    inline def apply[TParams /* <: js.Object */](
       text: String,
       values: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any
@@ -101,21 +89,17 @@ object anon {
       __obj.asInstanceOf[Text[TParams]]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text[?], TParams /* <: js.Object */] (val x: Self & Text[TParams]) extends AnyVal {
+    extension [Self <: Text[?], TParams /* <: js.Object */](x: Self & Text[TParams]) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(
+      inline def setValues(
         value: js.Array[
               /* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any
             ]
       ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(
+      inline def setValuesVarargs(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any)*
       ): Self = StObject.set(x, "values", js.Array(value :_*))
     }

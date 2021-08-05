@@ -40,23 +40,18 @@ object scrollFollowMod {
   }
   object ScrollFollowProps {
     
-    @scala.inline
-    def apply(render: ScrollFollowRenderProps => ReactNode): ScrollFollowProps = {
+    inline def apply(render: ScrollFollowRenderProps => ReactNode): ScrollFollowProps = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[ScrollFollowProps]
     }
     
-    @scala.inline
-    implicit class ScrollFollowPropsMutableBuilder[Self <: ScrollFollowProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollFollowProps](x: Self) {
       
-      @scala.inline
-      def setRender(value: ScrollFollowRenderProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: ScrollFollowRenderProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartFollowing(value: Boolean): Self = StObject.set(x, "startFollowing", value.asInstanceOf[js.Any])
+      inline def setStartFollowing(value: Boolean): Self = StObject.set(x, "startFollowing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartFollowingUndefined: Self = StObject.set(x, "startFollowing", js.undefined)
+      inline def setStartFollowingUndefined: Self = StObject.set(x, "startFollowing", js.undefined)
     }
   }
   
@@ -72,8 +67,7 @@ object scrollFollowMod {
   }
   object ScrollFollowRenderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       follow: Boolean,
       onScroll: ClientHeight => Unit,
       startFollowing: () => Unit,
@@ -83,20 +77,15 @@ object scrollFollowMod {
       __obj.asInstanceOf[ScrollFollowRenderProps]
     }
     
-    @scala.inline
-    implicit class ScrollFollowRenderPropsMutableBuilder[Self <: ScrollFollowRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollFollowRenderProps](x: Self) {
       
-      @scala.inline
-      def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+      inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnScroll(value: ClientHeight => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: ClientHeight => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartFollowing(value: () => Unit): Self = StObject.set(x, "startFollowing", js.Any.fromFunction0(value))
+      inline def setStartFollowing(value: () => Unit): Self = StObject.set(x, "startFollowing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopFollowing(value: () => Unit): Self = StObject.set(x, "stopFollowing", js.Any.fromFunction0(value))
+      inline def setStopFollowing(value: () => Unit): Self = StObject.set(x, "stopFollowing", js.Any.fromFunction0(value))
     }
   }
 }

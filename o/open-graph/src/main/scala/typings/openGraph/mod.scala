@@ -10,24 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String, callback: DataCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(url: String, callback: DataCallback, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(url: String, callback: DataCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(url: String, callback: DataCallback, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("open-graph", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getHTML(url: String, callback: RequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHTML")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def getHTML(url: Cheerio, callback: RequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHTML")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getHTML(url: String, callback: RequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHTML")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getHTML(url: Cheerio, callback: RequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHTML")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def parse(websiteContent: String): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(websiteContent.asInstanceOf[js.Any]).asInstanceOf[Data]
-  @scala.inline
-  def parse(websiteContent: String, options: Options): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(websiteContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Data]
+  inline def parse(websiteContent: String): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(websiteContent.asInstanceOf[js.Any]).asInstanceOf[Data]
+  inline def parse(websiteContent: String, options: Options): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(websiteContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Data]
   
   trait Data
     extends StObject
@@ -68,101 +62,70 @@ object mod {
   }
   object Data {
     
-    @scala.inline
-    def apply(title: String | js.Array[String]): Data = {
+    inline def apply(title: String | js.Array[String]): Data = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setAudio(value: String | js.Array[String] | Metadata): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: String | js.Array[String] | Metadata): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setAudioVarargs(value: String*): Self = StObject.set(x, "audio", js.Array(value :_*))
+      inline def setAudioVarargs(value: String*): Self = StObject.set(x, "audio", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String | js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String | js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+      inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
       
-      @scala.inline
-      def setDeterminer(value: String | js.Array[String]): Self = StObject.set(x, "determiner", value.asInstanceOf[js.Any])
+      inline def setDeterminer(value: String | js.Array[String]): Self = StObject.set(x, "determiner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeterminerUndefined: Self = StObject.set(x, "determiner", js.undefined)
+      inline def setDeterminerUndefined: Self = StObject.set(x, "determiner", js.undefined)
       
-      @scala.inline
-      def setDeterminerVarargs(value: String*): Self = StObject.set(x, "determiner", js.Array(value :_*))
+      inline def setDeterminerVarargs(value: String*): Self = StObject.set(x, "determiner", js.Array(value :_*))
       
-      @scala.inline
-      def setImage(value: String | js.Array[String] | ImageVideoMetadata): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String | js.Array[String] | ImageVideoMetadata): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setImageVarargs(value: String*): Self = StObject.set(x, "image", js.Array(value :_*))
+      inline def setImageVarargs(value: String*): Self = StObject.set(x, "image", js.Array(value :_*))
       
-      @scala.inline
-      def setLocale(value: String | js.Array[String] | Alternate): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String | js.Array[String] | Alternate): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setLocaleVarargs(value: String*): Self = StObject.set(x, "locale", js.Array(value :_*))
+      inline def setLocaleVarargs(value: String*): Self = StObject.set(x, "locale", js.Array(value :_*))
       
-      @scala.inline
-      def setSite_name(value: String | js.Array[String]): Self = StObject.set(x, "site_name", value.asInstanceOf[js.Any])
+      inline def setSite_name(value: String | js.Array[String]): Self = StObject.set(x, "site_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSite_nameUndefined: Self = StObject.set(x, "site_name", js.undefined)
+      inline def setSite_nameUndefined: Self = StObject.set(x, "site_name", js.undefined)
       
-      @scala.inline
-      def setSite_nameVarargs(value: String*): Self = StObject.set(x, "site_name", js.Array(value :_*))
+      inline def setSite_nameVarargs(value: String*): Self = StObject.set(x, "site_name", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String | js.Array[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | js.Array[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
       
-      @scala.inline
-      def setVideo(value: String | js.Array[String] | ImageVideoMetadata): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: String | js.Array[String] | ImageVideoMetadata): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
       
-      @scala.inline
-      def setVideoVarargs(value: String*): Self = StObject.set(x, "video", js.Array(value :_*))
+      inline def setVideoVarargs(value: String*): Self = StObject.set(x, "video", js.Array(value :_*))
     }
   }
   
@@ -186,50 +149,36 @@ object mod {
   }
   object ImageVideoMetadata {
     
-    @scala.inline
-    def apply(): ImageVideoMetadata = {
+    inline def apply(): ImageVideoMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageVideoMetadata]
     }
     
-    @scala.inline
-    implicit class ImageVideoMetadataMutableBuilder[Self <: ImageVideoMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ImageVideoMetadata](x: Self) {
       
-      @scala.inline
-      def setAlt(value: String | js.Array[String]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: String | js.Array[String]): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value :_*))
+      inline def setAltVarargs(value: String*): Self = StObject.set(x, "alt", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: String | js.Array[String]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String | js.Array[String]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHeightVarargs(value: String*): Self = StObject.set(x, "height", js.Array(value :_*))
+      inline def setHeightVarargs(value: String*): Self = StObject.set(x, "height", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
       
-      @scala.inline
-      def setWidth(value: String | js.Array[String]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | js.Array[String]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setWidthVarargs(value: String*): Self = StObject.set(x, "width", js.Array(value :_*))
+      inline def setWidthVarargs(value: String*): Self = StObject.set(x, "width", js.Array(value :_*))
     }
   }
   
@@ -245,32 +194,24 @@ object mod {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(): Metadata = {
+    inline def apply(): Metadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setSecure_url(value: String | js.Array[String]): Self = StObject.set(x, "secure_url", value.asInstanceOf[js.Any])
+      inline def setSecure_url(value: String | js.Array[String]): Self = StObject.set(x, "secure_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure_urlUndefined: Self = StObject.set(x, "secure_url", js.undefined)
+      inline def setSecure_urlUndefined: Self = StObject.set(x, "secure_url", js.undefined)
       
-      @scala.inline
-      def setSecure_urlVarargs(value: String*): Self = StObject.set(x, "secure_url", js.Array(value :_*))
+      inline def setSecure_urlVarargs(value: String*): Self = StObject.set(x, "secure_url", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
     }
   }
   
@@ -280,20 +221,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   

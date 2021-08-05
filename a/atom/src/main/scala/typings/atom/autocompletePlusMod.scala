@@ -16,14 +16,12 @@ object autocompletePlusMod {
   trait AnySuggestion extends StObject
   object AnySuggestion {
     
-    @scala.inline
-    def SnippetSuggestion(snippet: String): typings.atom.autocompletePlusMod.SnippetSuggestion = {
+    inline def SnippetSuggestion(snippet: String): typings.atom.autocompletePlusMod.SnippetSuggestion = {
       val __obj = js.Dynamic.literal(snippet = snippet.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.atom.autocompletePlusMod.SnippetSuggestion]
     }
     
-    @scala.inline
-    def TextSuggestion(text: String): typings.atom.autocompletePlusMod.TextSuggestion = {
+    inline def TextSuggestion(text: String): typings.atom.autocompletePlusMod.TextSuggestion = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.atom.autocompletePlusMod.TextSuggestion]
     }
@@ -91,8 +89,7 @@ object autocompletePlusMod {
   }
   object AutocompleteProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getSuggestions: SuggestionsRequestedEvent => Suggestions | js.Promise[Suggestions],
       selector: String
     ): AutocompleteProvider = {
@@ -100,56 +97,39 @@ object autocompletePlusMod {
       __obj.asInstanceOf[AutocompleteProvider]
     }
     
-    @scala.inline
-    implicit class AutocompleteProviderMutableBuilder[Self <: AutocompleteProvider] (val x: Self) extends AnyVal {
+    extension [Self <: AutocompleteProvider](x: Self) {
       
-      @scala.inline
-      def setDisableForSelector(value: String): Self = StObject.set(x, "disableForSelector", value.asInstanceOf[js.Any])
+      inline def setDisableForSelector(value: String): Self = StObject.set(x, "disableForSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableForSelectorUndefined: Self = StObject.set(x, "disableForSelector", js.undefined)
+      inline def setDisableForSelectorUndefined: Self = StObject.set(x, "disableForSelector", js.undefined)
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+      inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
       
-      @scala.inline
-      def setExcludeLowerPriority(value: Boolean): Self = StObject.set(x, "excludeLowerPriority", value.asInstanceOf[js.Any])
+      inline def setExcludeLowerPriority(value: Boolean): Self = StObject.set(x, "excludeLowerPriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeLowerPriorityUndefined: Self = StObject.set(x, "excludeLowerPriority", js.undefined)
+      inline def setExcludeLowerPriorityUndefined: Self = StObject.set(x, "excludeLowerPriority", js.undefined)
       
-      @scala.inline
-      def setGetSuggestionDetailsOnSelect(value: /* suggestion */ AnySuggestion => (js.Promise[AnySuggestion | Null]) | AnySuggestion | Null): Self = StObject.set(x, "getSuggestionDetailsOnSelect", js.Any.fromFunction1(value))
+      inline def setGetSuggestionDetailsOnSelect(value: /* suggestion */ AnySuggestion => (js.Promise[AnySuggestion | Null]) | AnySuggestion | Null): Self = StObject.set(x, "getSuggestionDetailsOnSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSuggestionDetailsOnSelectUndefined: Self = StObject.set(x, "getSuggestionDetailsOnSelect", js.undefined)
+      inline def setGetSuggestionDetailsOnSelectUndefined: Self = StObject.set(x, "getSuggestionDetailsOnSelect", js.undefined)
       
-      @scala.inline
-      def setGetSuggestions(value: SuggestionsRequestedEvent => Suggestions | js.Promise[Suggestions]): Self = StObject.set(x, "getSuggestions", js.Any.fromFunction1(value))
+      inline def setGetSuggestions(value: SuggestionsRequestedEvent => Suggestions | js.Promise[Suggestions]): Self = StObject.set(x, "getSuggestions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInclusionPriority(value: Double): Self = StObject.set(x, "inclusionPriority", value.asInstanceOf[js.Any])
+      inline def setInclusionPriority(value: Double): Self = StObject.set(x, "inclusionPriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusionPriorityUndefined: Self = StObject.set(x, "inclusionPriority", js.undefined)
+      inline def setInclusionPriorityUndefined: Self = StObject.set(x, "inclusionPriority", js.undefined)
       
-      @scala.inline
-      def setOnDidInsertSuggestion(value: /* params */ SuggestionInsertedEvent => Unit): Self = StObject.set(x, "onDidInsertSuggestion", js.Any.fromFunction1(value))
+      inline def setOnDidInsertSuggestion(value: /* params */ SuggestionInsertedEvent => Unit): Self = StObject.set(x, "onDidInsertSuggestion", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDidInsertSuggestionUndefined: Self = StObject.set(x, "onDidInsertSuggestion", js.undefined)
+      inline def setOnDidInsertSuggestionUndefined: Self = StObject.set(x, "onDidInsertSuggestion", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionPriority(value: Double): Self = StObject.set(x, "suggestionPriority", value.asInstanceOf[js.Any])
+      inline def setSuggestionPriority(value: Double): Self = StObject.set(x, "suggestionPriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionPriorityUndefined: Self = StObject.set(x, "suggestionPriority", js.undefined)
+      inline def setSuggestionPriorityUndefined: Self = StObject.set(x, "suggestionPriority", js.undefined)
     }
   }
   
@@ -166,17 +146,14 @@ object autocompletePlusMod {
   }
   object SnippetSuggestion {
     
-    @scala.inline
-    def apply(snippet: String): SnippetSuggestion = {
+    inline def apply(snippet: String): SnippetSuggestion = {
       val __obj = js.Dynamic.literal(snippet = snippet.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnippetSuggestion]
     }
     
-    @scala.inline
-    implicit class SnippetSuggestionMutableBuilder[Self <: SnippetSuggestion] (val x: Self) extends AnyVal {
+    extension [Self <: SnippetSuggestion](x: Self) {
       
-      @scala.inline
-      def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+      inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,86 +224,60 @@ object autocompletePlusMod {
   }
   object SuggestionBase {
     
-    @scala.inline
-    def apply(): SuggestionBase = {
+    inline def apply(): SuggestionBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SuggestionBase]
     }
     
-    @scala.inline
-    implicit class SuggestionBaseMutableBuilder[Self <: SuggestionBase] (val x: Self) extends AnyVal {
+    extension [Self <: SuggestionBase](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionMarkdown(value: String): Self = StObject.set(x, "descriptionMarkdown", value.asInstanceOf[js.Any])
+      inline def setDescriptionMarkdown(value: String): Self = StObject.set(x, "descriptionMarkdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionMarkdownUndefined: Self = StObject.set(x, "descriptionMarkdown", js.undefined)
+      inline def setDescriptionMarkdownUndefined: Self = StObject.set(x, "descriptionMarkdown", js.undefined)
       
-      @scala.inline
-      def setDescriptionMoreURL(value: String): Self = StObject.set(x, "descriptionMoreURL", value.asInstanceOf[js.Any])
+      inline def setDescriptionMoreURL(value: String): Self = StObject.set(x, "descriptionMoreURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionMoreURLUndefined: Self = StObject.set(x, "descriptionMoreURL", js.undefined)
+      inline def setDescriptionMoreURLUndefined: Self = StObject.set(x, "descriptionMoreURL", js.undefined)
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+      inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
+      inline def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
       
-      @scala.inline
-      def setIconHTML(value: String): Self = StObject.set(x, "iconHTML", value.asInstanceOf[js.Any])
+      inline def setIconHTML(value: String): Self = StObject.set(x, "iconHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconHTMLUndefined: Self = StObject.set(x, "iconHTML", js.undefined)
+      inline def setIconHTMLUndefined: Self = StObject.set(x, "iconHTML", js.undefined)
       
-      @scala.inline
-      def setLeftLabel(value: String): Self = StObject.set(x, "leftLabel", value.asInstanceOf[js.Any])
+      inline def setLeftLabel(value: String): Self = StObject.set(x, "leftLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftLabelHTML(value: String): Self = StObject.set(x, "leftLabelHTML", value.asInstanceOf[js.Any])
+      inline def setLeftLabelHTML(value: String): Self = StObject.set(x, "leftLabelHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftLabelHTMLUndefined: Self = StObject.set(x, "leftLabelHTML", js.undefined)
+      inline def setLeftLabelHTMLUndefined: Self = StObject.set(x, "leftLabelHTML", js.undefined)
       
-      @scala.inline
-      def setLeftLabelUndefined: Self = StObject.set(x, "leftLabel", js.undefined)
+      inline def setLeftLabelUndefined: Self = StObject.set(x, "leftLabel", js.undefined)
       
-      @scala.inline
-      def setReplacementPrefix(value: String): Self = StObject.set(x, "replacementPrefix", value.asInstanceOf[js.Any])
+      inline def setReplacementPrefix(value: String): Self = StObject.set(x, "replacementPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacementPrefixUndefined: Self = StObject.set(x, "replacementPrefix", js.undefined)
+      inline def setReplacementPrefixUndefined: Self = StObject.set(x, "replacementPrefix", js.undefined)
       
-      @scala.inline
-      def setRightLabel(value: String): Self = StObject.set(x, "rightLabel", value.asInstanceOf[js.Any])
+      inline def setRightLabel(value: String): Self = StObject.set(x, "rightLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightLabelHTML(value: String): Self = StObject.set(x, "rightLabelHTML", value.asInstanceOf[js.Any])
+      inline def setRightLabelHTML(value: String): Self = StObject.set(x, "rightLabelHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightLabelHTMLUndefined: Self = StObject.set(x, "rightLabelHTML", js.undefined)
+      inline def setRightLabelHTMLUndefined: Self = StObject.set(x, "rightLabelHTML", js.undefined)
       
-      @scala.inline
-      def setRightLabelUndefined: Self = StObject.set(x, "rightLabel", js.undefined)
+      inline def setRightLabelUndefined: Self = StObject.set(x, "rightLabel", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -340,23 +291,18 @@ object autocompletePlusMod {
   }
   object SuggestionInsertedEvent {
     
-    @scala.inline
-    def apply(editor: TextEditor, suggestion: TextSuggestion | SnippetSuggestion, triggerPosition: Point): SuggestionInsertedEvent = {
+    inline def apply(editor: TextEditor, suggestion: TextSuggestion | SnippetSuggestion, triggerPosition: Point): SuggestionInsertedEvent = {
       val __obj = js.Dynamic.literal(editor = editor.asInstanceOf[js.Any], suggestion = suggestion.asInstanceOf[js.Any], triggerPosition = triggerPosition.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuggestionInsertedEvent]
     }
     
-    @scala.inline
-    implicit class SuggestionInsertedEventMutableBuilder[Self <: SuggestionInsertedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SuggestionInsertedEvent](x: Self) {
       
-      @scala.inline
-      def setEditor(value: TextEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+      inline def setEditor(value: TextEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestion(value: TextSuggestion | SnippetSuggestion): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+      inline def setSuggestion(value: TextSuggestion | SnippetSuggestion): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerPosition(value: Point): Self = StObject.set(x, "triggerPosition", value.asInstanceOf[js.Any])
+      inline def setTriggerPosition(value: Point): Self = StObject.set(x, "triggerPosition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -381,8 +327,7 @@ object autocompletePlusMod {
   }
   object SuggestionsRequestedEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activatedManually: Boolean,
       bufferPosition: Point,
       editor: TextEditor,
@@ -393,23 +338,17 @@ object autocompletePlusMod {
       __obj.asInstanceOf[SuggestionsRequestedEvent]
     }
     
-    @scala.inline
-    implicit class SuggestionsRequestedEventMutableBuilder[Self <: SuggestionsRequestedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SuggestionsRequestedEvent](x: Self) {
       
-      @scala.inline
-      def setActivatedManually(value: Boolean): Self = StObject.set(x, "activatedManually", value.asInstanceOf[js.Any])
+      inline def setActivatedManually(value: Boolean): Self = StObject.set(x, "activatedManually", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferPosition(value: Point): Self = StObject.set(x, "bufferPosition", value.asInstanceOf[js.Any])
+      inline def setBufferPosition(value: Point): Self = StObject.set(x, "bufferPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditor(value: TextEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+      inline def setEditor(value: TextEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeDescriptor(value: ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
+      inline def setScopeDescriptor(value: ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -423,17 +362,14 @@ object autocompletePlusMod {
   }
   object TextSuggestion {
     
-    @scala.inline
-    def apply(text: String): TextSuggestion = {
+    inline def apply(text: String): TextSuggestion = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextSuggestion]
     }
     
-    @scala.inline
-    implicit class TextSuggestionMutableBuilder[Self <: TextSuggestion] (val x: Self) extends AnyVal {
+    extension [Self <: TextSuggestion](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

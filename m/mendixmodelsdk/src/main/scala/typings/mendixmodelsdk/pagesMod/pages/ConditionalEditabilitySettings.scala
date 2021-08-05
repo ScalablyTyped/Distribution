@@ -36,8 +36,7 @@ object ConditionalEditabilitySettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ConditionalEditabilitySettings]
+  inline def create(model: IModel): ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ConditionalEditabilitySettings]
   
   /**
     * Creates and returns a new ConditionalEditabilitySettings instance in the SDK and on the server.
@@ -48,8 +47,7 @@ object ConditionalEditabilitySettings {
     *  6.0.0 to 8.0.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: ConditionallyEditableWidget): ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalEditabilitySettings]
+  inline def createIn(container: ConditionallyEditableWidget): ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalEditabilitySettings]
   
   /**
     * Creates and returns a new ConditionalEditabilitySettings instance in the SDK and on the server.
@@ -57,8 +55,7 @@ object ConditionalEditabilitySettings {
     * of the parent ConditionallyEditableWidget element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInConditionallyEditableWidgetUnderConditionalEditabilitySettings(container: ConditionallyEditableWidget): ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionallyEditableWidgetUnderConditionalEditabilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalEditabilitySettings]
+  inline def createInConditionallyEditableWidgetUnderConditionalEditabilitySettings(container: ConditionallyEditableWidget): ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionallyEditableWidgetUnderConditionalEditabilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalEditabilitySettings]
   
   /**
     * Creates and returns a new ConditionalEditabilitySettings instance in the SDK and on the server.
@@ -69,20 +66,17 @@ object ConditionalEditabilitySettings {
     *  8.1.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomWidgetUnderConditionalEditabilitySettings(container: CustomWidget): ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalEditabilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalEditabilitySettings]
+  inline def createInCustomWidgetUnderConditionalEditabilitySettings(container: CustomWidget): ConditionalEditabilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalEditabilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalEditabilitySettings]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalEditabilitySettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalEditabilitySettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

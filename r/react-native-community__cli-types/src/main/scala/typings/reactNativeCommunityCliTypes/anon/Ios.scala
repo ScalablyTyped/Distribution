@@ -10,19 +10,15 @@ trait Ios extends StObject {
 }
 object Ios {
   
-  @scala.inline
-  def apply(): Ios = {
+  inline def apply(): Ios = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ios]
   }
   
-  @scala.inline
-  implicit class IosMutableBuilder[Self <: Ios] (val x: Self) extends AnyVal {
+  extension [Self <: Ios](x: Self) {
     
-    @scala.inline
-    def setIos(value: SourceDir): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: SourceDir): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+    inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
   }
 }

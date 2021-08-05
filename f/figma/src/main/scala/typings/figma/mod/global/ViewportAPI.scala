@@ -16,25 +16,19 @@ trait ViewportAPI extends StObject {
 }
 object ViewportAPI {
   
-  @scala.inline
-  def apply(bounds: Rect, center: Vector, scrollAndZoomIntoView: js.Array[BaseNode] => Unit, zoom: Double): ViewportAPI = {
+  inline def apply(bounds: Rect, center: Vector, scrollAndZoomIntoView: js.Array[BaseNode] => Unit, zoom: Double): ViewportAPI = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], scrollAndZoomIntoView = js.Any.fromFunction1(scrollAndZoomIntoView), zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportAPI]
   }
   
-  @scala.inline
-  implicit class ViewportAPIMutableBuilder[Self <: ViewportAPI] (val x: Self) extends AnyVal {
+  extension [Self <: ViewportAPI](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenter(value: Vector): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Vector): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollAndZoomIntoView(value: js.Array[BaseNode] => Unit): Self = StObject.set(x, "scrollAndZoomIntoView", js.Any.fromFunction1(value))
+    inline def setScrollAndZoomIntoView(value: js.Array[BaseNode] => Unit): Self = StObject.set(x, "scrollAndZoomIntoView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

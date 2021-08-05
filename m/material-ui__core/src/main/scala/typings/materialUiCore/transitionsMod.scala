@@ -26,8 +26,7 @@ object transitionsMod {
   @js.native
   val easing: Easing_ = js.native
   
-  @scala.inline
-  def formatMs(milliseconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMs")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatMs(milliseconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMs")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Duration_ extends StObject {
     
@@ -47,8 +46,7 @@ object transitionsMod {
   }
   object Duration_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       complex: Double,
       enteringScreen: Double,
       leavingScreen: Double,
@@ -61,29 +59,21 @@ object transitionsMod {
       __obj.asInstanceOf[Duration_]
     }
     
-    @scala.inline
-    implicit class Duration_MutableBuilder[Self <: Duration_] (val x: Self) extends AnyVal {
+    extension [Self <: Duration_](x: Self) {
       
-      @scala.inline
-      def setComplex(value: Double): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
+      inline def setComplex(value: Double): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnteringScreen(value: Double): Self = StObject.set(x, "enteringScreen", value.asInstanceOf[js.Any])
+      inline def setEnteringScreen(value: Double): Self = StObject.set(x, "enteringScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeavingScreen(value: Double): Self = StObject.set(x, "leavingScreen", value.asInstanceOf[js.Any])
+      inline def setLeavingScreen(value: Double): Self = StObject.set(x, "leavingScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort(value: Double): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: Double): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShorter(value: Double): Self = StObject.set(x, "shorter", value.asInstanceOf[js.Any])
+      inline def setShorter(value: Double): Self = StObject.set(x, "shorter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortest(value: Double): Self = StObject.set(x, "shortest", value.asInstanceOf[js.Any])
+      inline def setShortest(value: Double): Self = StObject.set(x, "shortest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandard(value: Double): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+      inline def setStandard(value: Double): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,26 +89,20 @@ object transitionsMod {
   }
   object Easing_ {
     
-    @scala.inline
-    def apply(easeIn: String, easeInOut: String, easeOut: String, sharp: String): Easing_ = {
+    inline def apply(easeIn: String, easeInOut: String, easeOut: String, sharp: String): Easing_ = {
       val __obj = js.Dynamic.literal(easeIn = easeIn.asInstanceOf[js.Any], easeInOut = easeInOut.asInstanceOf[js.Any], easeOut = easeOut.asInstanceOf[js.Any], sharp = sharp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Easing_]
     }
     
-    @scala.inline
-    implicit class Easing_MutableBuilder[Self <: Easing_] (val x: Self) extends AnyVal {
+    extension [Self <: Easing_](x: Self) {
       
-      @scala.inline
-      def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
+      inline def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseInOut(value: String): Self = StObject.set(x, "easeInOut", value.asInstanceOf[js.Any])
+      inline def setEaseInOut(value: String): Self = StObject.set(x, "easeInOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseOut(value: String): Self = StObject.set(x, "easeOut", value.asInstanceOf[js.Any])
+      inline def setEaseOut(value: String): Self = StObject.set(x, "easeOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharp(value: String): Self = StObject.set(x, "sharp", value.asInstanceOf[js.Any])
+      inline def setSharp(value: String): Self = StObject.set(x, "sharp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,40 +139,30 @@ object transitionsMod {
   }
   object TransitionsOptions {
     
-    @scala.inline
-    def apply(): TransitionsOptions = {
+    inline def apply(): TransitionsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionsOptions]
     }
     
-    @scala.inline
-    implicit class TransitionsOptionsMutableBuilder[Self <: TransitionsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionsOptions](x: Self) {
       
-      @scala.inline
-      def setCreate(
+      inline def setCreate(
         value: (/* props */ String | js.Array[String], /* options */ js.UndefOr[Partialdurationnumberstri]) => String
       ): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setDuration(value: PartialDuration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: PartialDuration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: PartialEasing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: PartialEasing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setGetAutoHeightDuration(value: /* height */ Double => Double): Self = StObject.set(x, "getAutoHeightDuration", js.Any.fromFunction1(value))
+      inline def setGetAutoHeightDuration(value: /* height */ Double => Double): Self = StObject.set(x, "getAutoHeightDuration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAutoHeightDurationUndefined: Self = StObject.set(x, "getAutoHeightDuration", js.undefined)
+      inline def setGetAutoHeightDurationUndefined: Self = StObject.set(x, "getAutoHeightDuration", js.undefined)
     }
   }
 }

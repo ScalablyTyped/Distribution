@@ -23,34 +23,25 @@ trait ListAliasesResponse extends StObject {
 }
 object ListAliasesResponse {
   
-  @scala.inline
-  def apply(): ListAliasesResponse = {
+  inline def apply(): ListAliasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAliasesResponse]
   }
   
-  @scala.inline
-  implicit class ListAliasesResponseMutableBuilder[Self <: ListAliasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAliasesResponse](x: Self) {
     
-    @scala.inline
-    def setAliases(value: AliasList): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: AliasList): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: AliasListEntry*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: AliasListEntry*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
+    inline def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
   }
 }

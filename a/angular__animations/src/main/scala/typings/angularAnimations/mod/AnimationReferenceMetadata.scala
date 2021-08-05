@@ -22,26 +22,20 @@ trait AnimationReferenceMetadata
 }
 object AnimationReferenceMetadata {
   
-  @scala.inline
-  def apply(animation: AnimationMetadata | js.Array[AnimationMetadata], `type`: AnimationMetadataType): AnimationReferenceMetadata = {
+  inline def apply(animation: AnimationMetadata | js.Array[AnimationMetadata], `type`: AnimationMetadataType): AnimationReferenceMetadata = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], options = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationReferenceMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationReferenceMetadataMutableBuilder[Self <: AnimationReferenceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationReferenceMetadata](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value :_*))
+    inline def setAnimationVarargs(value: AnimationMetadata*): Self = StObject.set(x, "animation", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: AnimationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
   }
 }

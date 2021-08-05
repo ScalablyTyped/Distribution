@@ -54,8 +54,7 @@ trait SignedExchangeSignature extends StObject {
 }
 object SignedExchangeSignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: integer,
     expires: integer,
     integrity: String,
@@ -67,46 +66,32 @@ object SignedExchangeSignature {
     __obj.asInstanceOf[SignedExchangeSignature]
   }
   
-  @scala.inline
-  implicit class SignedExchangeSignatureMutableBuilder[Self <: SignedExchangeSignature] (val x: Self) extends AnyVal {
+  extension [Self <: SignedExchangeSignature](x: Self) {
     
-    @scala.inline
-    def setCertSha256(value: String): Self = StObject.set(x, "certSha256", value.asInstanceOf[js.Any])
+    inline def setCertSha256(value: String): Self = StObject.set(x, "certSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertSha256Undefined: Self = StObject.set(x, "certSha256", js.undefined)
+    inline def setCertSha256Undefined: Self = StObject.set(x, "certSha256", js.undefined)
     
-    @scala.inline
-    def setCertUrl(value: String): Self = StObject.set(x, "certUrl", value.asInstanceOf[js.Any])
+    inline def setCertUrl(value: String): Self = StObject.set(x, "certUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertUrlUndefined: Self = StObject.set(x, "certUrl", js.undefined)
+    inline def setCertUrlUndefined: Self = StObject.set(x, "certUrl", js.undefined)
     
-    @scala.inline
-    def setCertificates(value: js.Array[String]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+    inline def setCertificates(value: js.Array[String]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
+    inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    @scala.inline
-    def setCertificatesVarargs(value: String*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: String*): Self = StObject.set(x, "certificates", js.Array(value :_*))
     
-    @scala.inline
-    def setDate(value: integer): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: integer): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpires(value: integer): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: integer): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+    inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidityUrl(value: String): Self = StObject.set(x, "validityUrl", value.asInstanceOf[js.Any])
+    inline def setValidityUrl(value: String): Self = StObject.set(x, "validityUrl", value.asInstanceOf[js.Any])
   }
 }

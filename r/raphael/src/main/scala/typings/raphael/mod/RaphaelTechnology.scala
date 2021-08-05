@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RaphaelTechnology extends StObject
 object RaphaelTechnology {
   
-  @scala.inline
-  def SVG: typings.raphael.raphaelStrings.SVG = "SVG".asInstanceOf[typings.raphael.raphaelStrings.SVG]
+  inline def SVG: typings.raphael.raphaelStrings.SVG = "SVG".asInstanceOf[typings.raphael.raphaelStrings.SVG]
   
-  @scala.inline
-  def VML: typings.raphael.raphaelStrings.VML = "VML".asInstanceOf[typings.raphael.raphaelStrings.VML]
+  inline def VML: typings.raphael.raphaelStrings.VML = "VML".asInstanceOf[typings.raphael.raphaelStrings.VML]
   
-  @scala.inline
-  def _empty: typings.raphael.raphaelStrings._empty = "".asInstanceOf[typings.raphael.raphaelStrings._empty]
+  inline def _empty: typings.raphael.raphaelStrings._empty = "".asInstanceOf[typings.raphael.raphaelStrings._empty]
 }

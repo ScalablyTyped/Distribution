@@ -9,35 +9,29 @@ object reactPrimitivesStrings {
   
   @js.native
   sealed trait PlatformStatic extends StObject
-  @scala.inline
-  def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]
+  inline def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]
   
   @js.native
   sealed trait disk extends StObject
-  @scala.inline
-  def disk: disk = "disk".asInstanceOf[disk]
+  inline def disk: disk = "disk".asInstanceOf[disk]
   
   @js.native
   sealed trait diskSlashmemory extends StObject
-  @scala.inline
-  def diskSlashmemory: diskSlashmemory = "disk/memory".asInstanceOf[diskSlashmemory]
+  inline def diskSlashmemory: diskSlashmemory = "disk/memory".asInstanceOf[diskSlashmemory]
   
   @js.native
   sealed trait memory extends StObject
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
+  inline def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
   sealed trait sketch
     extends StObject
        with _PlatformOSType
-  @scala.inline
-  def sketch: sketch = "sketch".asInstanceOf[sketch]
+  inline def sketch: sketch = "sketch".asInstanceOf[sketch]
   
   @js.native
   sealed trait vr
     extends StObject
        with _PlatformOSType
-  @scala.inline
-  def vr: vr = "vr".asInstanceOf[vr]
+  inline def vr: vr = "vr".asInstanceOf[vr]
 }

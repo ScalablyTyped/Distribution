@@ -94,8 +94,7 @@ trait SceneRegistry extends StObject {
 }
 object SceneRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, String) => Boolean,
     find: String => SceneRegistryItem,
     findByUrl: String => SceneRegistryItem,
@@ -109,31 +108,22 @@ object SceneRegistry {
     __obj.asInstanceOf[SceneRegistry]
   }
   
-  @scala.inline
-  implicit class SceneRegistryMutableBuilder[Self <: SceneRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: SceneRegistry](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, String) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, String) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFind(value: String => SceneRegistryItem): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: String => SceneRegistryItem): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindByUrl(value: String => SceneRegistryItem): Self = StObject.set(x, "findByUrl", js.Any.fromFunction1(value))
+    inline def setFindByUrl(value: String => SceneRegistryItem): Self = StObject.set(x, "findByUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setList(value: () => js.Array[SceneRegistryItem]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+    inline def setList(value: () => js.Array[SceneRegistryItem]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadScene(value: (String, LoadScene) => Unit): Self = StObject.set(x, "loadScene", js.Any.fromFunction2(value))
+    inline def setLoadScene(value: (String, LoadScene) => Unit): Self = StObject.set(x, "loadScene", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadSceneHierarchy(value: (String, LoadHierarchy) => Unit): Self = StObject.set(x, "loadSceneHierarchy", js.Any.fromFunction2(value))
+    inline def setLoadSceneHierarchy(value: (String, LoadHierarchy) => Unit): Self = StObject.set(x, "loadSceneHierarchy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadSceneSettings(value: (String, LoadSettings) => Unit): Self = StObject.set(x, "loadSceneSettings", js.Any.fromFunction2(value))
+    inline def setLoadSceneSettings(value: (String, LoadSettings) => Unit): Self = StObject.set(x, "loadSceneSettings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

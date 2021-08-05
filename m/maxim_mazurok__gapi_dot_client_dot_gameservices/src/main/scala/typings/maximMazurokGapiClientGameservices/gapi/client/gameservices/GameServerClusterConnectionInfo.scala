@@ -14,25 +14,19 @@ trait GameServerClusterConnectionInfo extends StObject {
 }
 object GameServerClusterConnectionInfo {
   
-  @scala.inline
-  def apply(): GameServerClusterConnectionInfo = {
+  inline def apply(): GameServerClusterConnectionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameServerClusterConnectionInfo]
   }
   
-  @scala.inline
-  implicit class GameServerClusterConnectionInfoMutableBuilder[Self <: GameServerClusterConnectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GameServerClusterConnectionInfo](x: Self) {
     
-    @scala.inline
-    def setGkeClusterReference(value: GkeClusterReference): Self = StObject.set(x, "gkeClusterReference", value.asInstanceOf[js.Any])
+    inline def setGkeClusterReference(value: GkeClusterReference): Self = StObject.set(x, "gkeClusterReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGkeClusterReferenceUndefined: Self = StObject.set(x, "gkeClusterReference", js.undefined)
+    inline def setGkeClusterReferenceUndefined: Self = StObject.set(x, "gkeClusterReference", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
   }
 }

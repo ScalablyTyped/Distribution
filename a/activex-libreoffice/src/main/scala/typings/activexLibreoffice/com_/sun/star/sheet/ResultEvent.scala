@@ -23,16 +23,13 @@ trait ResultEvent
 }
 object ResultEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, Value: js.Any): ResultEvent = {
+  inline def apply(Source: XInterface, Value: js.Any): ResultEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultEvent]
   }
   
-  @scala.inline
-  implicit class ResultEventMutableBuilder[Self <: ResultEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ResultEvent](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

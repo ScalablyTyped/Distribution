@@ -18,19 +18,15 @@ trait SendTaskSuccessInput extends StObject {
 }
 object SendTaskSuccessInput {
   
-  @scala.inline
-  def apply(output: SensitiveData, taskToken: TaskToken): SendTaskSuccessInput = {
+  inline def apply(output: SensitiveData, taskToken: TaskToken): SendTaskSuccessInput = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], taskToken = taskToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendTaskSuccessInput]
   }
   
-  @scala.inline
-  implicit class SendTaskSuccessInputMutableBuilder[Self <: SendTaskSuccessInput] (val x: Self) extends AnyVal {
+  extension [Self <: SendTaskSuccessInput](x: Self) {
     
-    @scala.inline
-    def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
+    inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

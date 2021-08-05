@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ThreadDialogProcParam extends StObject {
   
-  @JSName("MSHTML.ThreadDialogProcParam_typekey")
+  /* private */ @JSName("MSHTML.ThreadDialogProcParam_typekey")
   var MSHTMLDotThreadDialogProcParam_typekey: ThreadDialogProcParam
   
   val document: js.Any
@@ -19,8 +19,7 @@ trait ThreadDialogProcParam extends StObject {
 }
 object ThreadDialogProcParam {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotThreadDialogProcParam_typekey: ThreadDialogProcParam,
     document: js.Any,
     moniker: js.Any,
@@ -32,22 +31,16 @@ object ThreadDialogProcParam {
     __obj.asInstanceOf[ThreadDialogProcParam]
   }
   
-  @scala.inline
-  implicit class ThreadDialogProcParamMutableBuilder[Self <: ThreadDialogProcParam] (val x: Self) extends AnyVal {
+  extension [Self <: ThreadDialogProcParam](x: Self) {
     
-    @scala.inline
-    def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotThreadDialogProcParam_typekey(value: ThreadDialogProcParam): Self = StObject.set(x, "MSHTML.ThreadDialogProcParam_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotThreadDialogProcParam_typekey(value: ThreadDialogProcParam): Self = StObject.set(x, "MSHTML.ThreadDialogProcParam_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoniker(value: js.Any): Self = StObject.set(x, "moniker", value.asInstanceOf[js.Any])
+    inline def setMoniker(value: js.Any): Self = StObject.set(x, "moniker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionString(value: js.Any): Self = StObject.set(x, "optionString", value.asInstanceOf[js.Any])
+    inline def setOptionString(value: js.Any): Self = StObject.set(x, "optionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }
 }

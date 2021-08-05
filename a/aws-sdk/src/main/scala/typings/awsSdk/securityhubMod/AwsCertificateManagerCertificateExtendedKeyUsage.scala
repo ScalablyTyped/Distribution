@@ -18,25 +18,19 @@ trait AwsCertificateManagerCertificateExtendedKeyUsage extends StObject {
 }
 object AwsCertificateManagerCertificateExtendedKeyUsage {
   
-  @scala.inline
-  def apply(): AwsCertificateManagerCertificateExtendedKeyUsage = {
+  inline def apply(): AwsCertificateManagerCertificateExtendedKeyUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCertificateManagerCertificateExtendedKeyUsage]
   }
   
-  @scala.inline
-  implicit class AwsCertificateManagerCertificateExtendedKeyUsageMutableBuilder[Self <: AwsCertificateManagerCertificateExtendedKeyUsage] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCertificateManagerCertificateExtendedKeyUsage](x: Self) {
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOId(value: NonEmptyString): Self = StObject.set(x, "OId", value.asInstanceOf[js.Any])
+    inline def setOId(value: NonEmptyString): Self = StObject.set(x, "OId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOIdUndefined: Self = StObject.set(x, "OId", js.undefined)
+    inline def setOIdUndefined: Self = StObject.set(x, "OId", js.undefined)
   }
 }

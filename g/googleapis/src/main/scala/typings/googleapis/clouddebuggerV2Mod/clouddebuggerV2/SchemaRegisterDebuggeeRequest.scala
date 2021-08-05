@@ -17,19 +17,15 @@ trait SchemaRegisterDebuggeeRequest extends StObject {
 }
 object SchemaRegisterDebuggeeRequest {
   
-  @scala.inline
-  def apply(): SchemaRegisterDebuggeeRequest = {
+  inline def apply(): SchemaRegisterDebuggeeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegisterDebuggeeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRegisterDebuggeeRequestMutableBuilder[Self <: SchemaRegisterDebuggeeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegisterDebuggeeRequest](x: Self) {
     
-    @scala.inline
-    def setDebuggee(value: SchemaDebuggee): Self = StObject.set(x, "debuggee", value.asInstanceOf[js.Any])
+    inline def setDebuggee(value: SchemaDebuggee): Self = StObject.set(x, "debuggee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebuggeeUndefined: Self = StObject.set(x, "debuggee", js.undefined)
+    inline def setDebuggeeUndefined: Self = StObject.set(x, "debuggee", js.undefined)
   }
 }

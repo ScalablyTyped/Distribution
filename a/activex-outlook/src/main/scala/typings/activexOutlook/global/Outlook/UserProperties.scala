@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.UserProperties")
 @js.native
-class UserProperties protected ()
+/* private */ class UserProperties ()
   extends StObject
      with typings.activexOutlook.Outlook.UserProperties

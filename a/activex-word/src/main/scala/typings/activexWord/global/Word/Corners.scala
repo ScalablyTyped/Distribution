@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Corners")
 @js.native
-class Corners protected ()
+/* private */ class Corners ()
   extends StObject
      with typings.activexWord.Word.Corners {
   
@@ -25,7 +25,7 @@ class Corners protected ()
   /* CompleteClass */
   override def Select(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Corners_typekey")
   var WordDotCorners_typekey: typings.activexWord.Word.Corners = js.native
 }

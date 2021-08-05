@@ -14,8 +14,7 @@ trait MetricsFactory_ extends StObject {
 }
 object MetricsFactory_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAllMetrics: () => js.Array[CommandMetrics],
     getOrCreate: MetricsProperties => CommandMetrics,
     resetCache: () => Unit
@@ -24,16 +23,12 @@ object MetricsFactory_ {
     __obj.asInstanceOf[MetricsFactory_]
   }
   
-  @scala.inline
-  implicit class MetricsFactory_MutableBuilder[Self <: MetricsFactory_] (val x: Self) extends AnyVal {
+  extension [Self <: MetricsFactory_](x: Self) {
     
-    @scala.inline
-    def setGetAllMetrics(value: () => js.Array[CommandMetrics]): Self = StObject.set(x, "getAllMetrics", js.Any.fromFunction0(value))
+    inline def setGetAllMetrics(value: () => js.Array[CommandMetrics]): Self = StObject.set(x, "getAllMetrics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOrCreate(value: MetricsProperties => CommandMetrics): Self = StObject.set(x, "getOrCreate", js.Any.fromFunction1(value))
+    inline def setGetOrCreate(value: MetricsProperties => CommandMetrics): Self = StObject.set(x, "getOrCreate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetCache(value: () => Unit): Self = StObject.set(x, "resetCache", js.Any.fromFunction0(value))
+    inline def setResetCache(value: () => Unit): Self = StObject.set(x, "resetCache", js.Any.fromFunction0(value))
   }
 }

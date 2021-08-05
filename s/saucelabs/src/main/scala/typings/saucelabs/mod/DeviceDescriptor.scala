@@ -98,250 +98,169 @@ trait DeviceDescriptor
 }
 object DeviceDescriptor {
   
-  @scala.inline
-  def apply(): DeviceDescriptor = {
+  inline def apply(): DeviceDescriptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceDescriptor]
   }
   
-  @scala.inline
-  implicit class DeviceDescriptorMutableBuilder[Self <: DeviceDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceDescriptor](x: Self) {
     
-    @scala.inline
-    def setAbiType(value: String): Self = StObject.set(x, "abiType", value.asInstanceOf[js.Any])
+    inline def setAbiType(value: String): Self = StObject.set(x, "abiType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbiTypeUndefined: Self = StObject.set(x, "abiType", js.undefined)
+    inline def setAbiTypeUndefined: Self = StObject.set(x, "abiType", js.undefined)
     
-    @scala.inline
-    def setApiLevel(value: Double): Self = StObject.set(x, "apiLevel", value.asInstanceOf[js.Any])
+    inline def setApiLevel(value: Double): Self = StObject.set(x, "apiLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiLevelUndefined: Self = StObject.set(x, "apiLevel", js.undefined)
+    inline def setApiLevelUndefined: Self = StObject.set(x, "apiLevel", js.undefined)
     
-    @scala.inline
-    def setCpuCores(value: Double): Self = StObject.set(x, "cpuCores", value.asInstanceOf[js.Any])
+    inline def setCpuCores(value: Double): Self = StObject.set(x, "cpuCores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuCoresUndefined: Self = StObject.set(x, "cpuCores", js.undefined)
+    inline def setCpuCoresUndefined: Self = StObject.set(x, "cpuCores", js.undefined)
     
-    @scala.inline
-    def setCpuFrequency(value: Double): Self = StObject.set(x, "cpuFrequency", value.asInstanceOf[js.Any])
+    inline def setCpuFrequency(value: Double): Self = StObject.set(x, "cpuFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuFrequencyUndefined: Self = StObject.set(x, "cpuFrequency", js.undefined)
+    inline def setCpuFrequencyUndefined: Self = StObject.set(x, "cpuFrequency", js.undefined)
     
-    @scala.inline
-    def setCpuType(value: ARM | X86): Self = StObject.set(x, "cpuType", value.asInstanceOf[js.Any])
+    inline def setCpuType(value: ARM | X86): Self = StObject.set(x, "cpuType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuTypeUndefined: Self = StObject.set(x, "cpuType", js.undefined)
+    inline def setCpuTypeUndefined: Self = StObject.set(x, "cpuType", js.undefined)
     
-    @scala.inline
-    def setDefaultOrientation(value: PORTRAIT | LANDSCAPE): Self = StObject.set(x, "defaultOrientation", value.asInstanceOf[js.Any])
+    inline def setDefaultOrientation(value: PORTRAIT | LANDSCAPE): Self = StObject.set(x, "defaultOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultOrientationUndefined: Self = StObject.set(x, "defaultOrientation", js.undefined)
+    inline def setDefaultOrientationUndefined: Self = StObject.set(x, "defaultOrientation", js.undefined)
     
-    @scala.inline
-    def setDeviceFamily(value: ANY | IPHONE | IPAD): Self = StObject.set(x, "deviceFamily", value.asInstanceOf[js.Any])
+    inline def setDeviceFamily(value: ANY | IPHONE | IPAD): Self = StObject.set(x, "deviceFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceFamilyUndefined: Self = StObject.set(x, "deviceFamily", js.undefined)
+    inline def setDeviceFamilyUndefined: Self = StObject.set(x, "deviceFamily", js.undefined)
     
-    @scala.inline
-    def setDisableMtp(value: Boolean): Self = StObject.set(x, "disableMtp", value.asInstanceOf[js.Any])
+    inline def setDisableMtp(value: Boolean): Self = StObject.set(x, "disableMtp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableMtpUndefined: Self = StObject.set(x, "disableMtp", js.undefined)
+    inline def setDisableMtpUndefined: Self = StObject.set(x, "disableMtp", js.undefined)
     
-    @scala.inline
-    def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
+    inline def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiName(value: String): Self = StObject.set(x, "dpiName", value.asInstanceOf[js.Any])
+    inline def setDpiName(value: String): Self = StObject.set(x, "dpiName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiNameUndefined: Self = StObject.set(x, "dpiName", js.undefined)
+    inline def setDpiNameUndefined: Self = StObject.set(x, "dpiName", js.undefined)
     
-    @scala.inline
-    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
+    inline def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
-    @scala.inline
-    def setHasOnScreenButtons(value: Boolean): Self = StObject.set(x, "hasOnScreenButtons", value.asInstanceOf[js.Any])
+    inline def setHasOnScreenButtons(value: Boolean): Self = StObject.set(x, "hasOnScreenButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasOnScreenButtonsUndefined: Self = StObject.set(x, "hasOnScreenButtons", js.undefined)
+    inline def setHasOnScreenButtonsUndefined: Self = StObject.set(x, "hasOnScreenButtons", js.undefined)
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInternalOrientation(value: PORTRAIT | LANDSCAPE): Self = StObject.set(x, "internalOrientation", value.asInstanceOf[js.Any])
+    inline def setInternalOrientation(value: PORTRAIT | LANDSCAPE): Self = StObject.set(x, "internalOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalOrientationUndefined: Self = StObject.set(x, "internalOrientation", js.undefined)
+    inline def setInternalOrientationUndefined: Self = StObject.set(x, "internalOrientation", js.undefined)
     
-    @scala.inline
-    def setInternalStorageSize(value: Double): Self = StObject.set(x, "internalStorageSize", value.asInstanceOf[js.Any])
+    inline def setInternalStorageSize(value: Double): Self = StObject.set(x, "internalStorageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalStorageSizeUndefined: Self = StObject.set(x, "internalStorageSize", js.undefined)
+    inline def setInternalStorageSizeUndefined: Self = StObject.set(x, "internalStorageSize", js.undefined)
     
-    @scala.inline
-    def setIsAlternativeIoEnabled(value: Boolean): Self = StObject.set(x, "isAlternativeIoEnabled", value.asInstanceOf[js.Any])
+    inline def setIsAlternativeIoEnabled(value: Boolean): Self = StObject.set(x, "isAlternativeIoEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAlternativeIoEnabledUndefined: Self = StObject.set(x, "isAlternativeIoEnabled", js.undefined)
+    inline def setIsAlternativeIoEnabledUndefined: Self = StObject.set(x, "isAlternativeIoEnabled", js.undefined)
     
-    @scala.inline
-    def setIsArm(value: Boolean): Self = StObject.set(x, "isArm", value.asInstanceOf[js.Any])
+    inline def setIsArm(value: Boolean): Self = StObject.set(x, "isArm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsArmUndefined: Self = StObject.set(x, "isArm", js.undefined)
+    inline def setIsArmUndefined: Self = StObject.set(x, "isArm", js.undefined)
     
-    @scala.inline
-    def setIsKeyGuardDisabled(value: Boolean): Self = StObject.set(x, "isKeyGuardDisabled", value.asInstanceOf[js.Any])
+    inline def setIsKeyGuardDisabled(value: Boolean): Self = StObject.set(x, "isKeyGuardDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsKeyGuardDisabledUndefined: Self = StObject.set(x, "isKeyGuardDisabled", js.undefined)
+    inline def setIsKeyGuardDisabledUndefined: Self = StObject.set(x, "isKeyGuardDisabled", js.undefined)
     
-    @scala.inline
-    def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
+    inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
+    inline def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
     
-    @scala.inline
-    def setIsRooted(value: Boolean): Self = StObject.set(x, "isRooted", value.asInstanceOf[js.Any])
+    inline def setIsRooted(value: Boolean): Self = StObject.set(x, "isRooted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRootedUndefined: Self = StObject.set(x, "isRooted", js.undefined)
+    inline def setIsRootedUndefined: Self = StObject.set(x, "isRooted", js.undefined)
     
-    @scala.inline
-    def setIsTablet(value: Boolean): Self = StObject.set(x, "isTablet", value.asInstanceOf[js.Any])
+    inline def setIsTablet(value: Boolean): Self = StObject.set(x, "isTablet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTabletUndefined: Self = StObject.set(x, "isTablet", js.undefined)
+    inline def setIsTabletUndefined: Self = StObject.set(x, "isTablet", js.undefined)
     
-    @scala.inline
-    def setManufacturer(value: js.Array[String]): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: js.Array[String]): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
-    @scala.inline
-    def setManufacturerVarargs(value: String*): Self = StObject.set(x, "manufacturer", js.Array(value :_*))
+    inline def setManufacturerVarargs(value: String*): Self = StObject.set(x, "manufacturer", js.Array(value :_*))
     
-    @scala.inline
-    def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
+    inline def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelNumberUndefined: Self = StObject.set(x, "modelNumber", js.undefined)
+    inline def setModelNumberUndefined: Self = StObject.set(x, "modelNumber", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOs(value: ANDROID | IOS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: ANDROID | IOS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+    inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
-    @scala.inline
-    def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
+    inline def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
+    inline def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
     
-    @scala.inline
-    def setPixelsPerPoint(value: Double): Self = StObject.set(x, "pixelsPerPoint", value.asInstanceOf[js.Any])
+    inline def setPixelsPerPoint(value: Double): Self = StObject.set(x, "pixelsPerPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelsPerPointUndefined: Self = StObject.set(x, "pixelsPerPoint", js.undefined)
+    inline def setPixelsPerPointUndefined: Self = StObject.set(x, "pixelsPerPoint", js.undefined)
     
-    @scala.inline
-    def setRamSize(value: Double): Self = StObject.set(x, "ramSize", value.asInstanceOf[js.Any])
+    inline def setRamSize(value: Double): Self = StObject.set(x, "ramSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamSizeUndefined: Self = StObject.set(x, "ramSize", js.undefined)
+    inline def setRamSizeUndefined: Self = StObject.set(x, "ramSize", js.undefined)
     
-    @scala.inline
-    def setResolutionHeight(value: Double): Self = StObject.set(x, "resolutionHeight", value.asInstanceOf[js.Any])
+    inline def setResolutionHeight(value: Double): Self = StObject.set(x, "resolutionHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionHeightUndefined: Self = StObject.set(x, "resolutionHeight", js.undefined)
+    inline def setResolutionHeightUndefined: Self = StObject.set(x, "resolutionHeight", js.undefined)
     
-    @scala.inline
-    def setResolutionWidth(value: Double): Self = StObject.set(x, "resolutionWidth", value.asInstanceOf[js.Any])
+    inline def setResolutionWidth(value: Double): Self = StObject.set(x, "resolutionWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionWidthUndefined: Self = StObject.set(x, "resolutionWidth", js.undefined)
+    inline def setResolutionWidthUndefined: Self = StObject.set(x, "resolutionWidth", js.undefined)
     
-    @scala.inline
-    def setScreenSize(value: Double): Self = StObject.set(x, "screenSize", value.asInstanceOf[js.Any])
+    inline def setScreenSize(value: Double): Self = StObject.set(x, "screenSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSizeUndefined: Self = StObject.set(x, "screenSize", js.undefined)
+    inline def setScreenSizeUndefined: Self = StObject.set(x, "screenSize", js.undefined)
     
-    @scala.inline
-    def setSdCardSize(value: Double): Self = StObject.set(x, "sdCardSize", value.asInstanceOf[js.Any])
+    inline def setSdCardSize(value: Double): Self = StObject.set(x, "sdCardSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdCardSizeUndefined: Self = StObject.set(x, "sdCardSize", js.undefined)
+    inline def setSdCardSizeUndefined: Self = StObject.set(x, "sdCardSize", js.undefined)
     
-    @scala.inline
-    def setSupportsAppiumWebAppTesting(value: Boolean): Self = StObject.set(x, "supportsAppiumWebAppTesting", value.asInstanceOf[js.Any])
+    inline def setSupportsAppiumWebAppTesting(value: Boolean): Self = StObject.set(x, "supportsAppiumWebAppTesting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsAppiumWebAppTestingUndefined: Self = StObject.set(x, "supportsAppiumWebAppTesting", js.undefined)
+    inline def setSupportsAppiumWebAppTestingUndefined: Self = StObject.set(x, "supportsAppiumWebAppTesting", js.undefined)
     
-    @scala.inline
-    def setSupportsGlobalProxy(value: Boolean): Self = StObject.set(x, "supportsGlobalProxy", value.asInstanceOf[js.Any])
+    inline def setSupportsGlobalProxy(value: Boolean): Self = StObject.set(x, "supportsGlobalProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsGlobalProxyUndefined: Self = StObject.set(x, "supportsGlobalProxy", js.undefined)
+    inline def setSupportsGlobalProxyUndefined: Self = StObject.set(x, "supportsGlobalProxy", js.undefined)
     
-    @scala.inline
-    def setSupportsManualWebTesting(value: Boolean): Self = StObject.set(x, "supportsManualWebTesting", value.asInstanceOf[js.Any])
+    inline def setSupportsManualWebTesting(value: Boolean): Self = StObject.set(x, "supportsManualWebTesting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsManualWebTestingUndefined: Self = StObject.set(x, "supportsManualWebTesting", js.undefined)
+    inline def setSupportsManualWebTestingUndefined: Self = StObject.set(x, "supportsManualWebTesting", js.undefined)
     
-    @scala.inline
-    def setSupportsMinicapSocketConnection(value: Boolean): Self = StObject.set(x, "supportsMinicapSocketConnection", value.asInstanceOf[js.Any])
+    inline def setSupportsMinicapSocketConnection(value: Boolean): Self = StObject.set(x, "supportsMinicapSocketConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsMinicapSocketConnectionUndefined: Self = StObject.set(x, "supportsMinicapSocketConnection", js.undefined)
+    inline def setSupportsMinicapSocketConnectionUndefined: Self = StObject.set(x, "supportsMinicapSocketConnection", js.undefined)
     
-    @scala.inline
-    def setSupportsMockLocations(value: Boolean): Self = StObject.set(x, "supportsMockLocations", value.asInstanceOf[js.Any])
+    inline def setSupportsMockLocations(value: Boolean): Self = StObject.set(x, "supportsMockLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsMockLocationsUndefined: Self = StObject.set(x, "supportsMockLocations", js.undefined)
+    inline def setSupportsMockLocationsUndefined: Self = StObject.set(x, "supportsMockLocations", js.undefined)
     
-    @scala.inline
-    def setSupportsMultiTouch(value: Boolean): Self = StObject.set(x, "supportsMultiTouch", value.asInstanceOf[js.Any])
+    inline def setSupportsMultiTouch(value: Boolean): Self = StObject.set(x, "supportsMultiTouch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsMultiTouchUndefined: Self = StObject.set(x, "supportsMultiTouch", js.undefined)
+    inline def setSupportsMultiTouchUndefined: Self = StObject.set(x, "supportsMultiTouch", js.undefined)
     
-    @scala.inline
-    def setSupportsQualityReport(value: Boolean): Self = StObject.set(x, "supportsQualityReport", value.asInstanceOf[js.Any])
+    inline def setSupportsQualityReport(value: Boolean): Self = StObject.set(x, "supportsQualityReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsQualityReportUndefined: Self = StObject.set(x, "supportsQualityReport", js.undefined)
+    inline def setSupportsQualityReportUndefined: Self = StObject.set(x, "supportsQualityReport", js.undefined)
     
-    @scala.inline
-    def setSupportsXcuiTest(value: Boolean): Self = StObject.set(x, "supportsXcuiTest", value.asInstanceOf[js.Any])
+    inline def setSupportsXcuiTest(value: Boolean): Self = StObject.set(x, "supportsXcuiTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsXcuiTestUndefined: Self = StObject.set(x, "supportsXcuiTest", js.undefined)
+    inline def setSupportsXcuiTestUndefined: Self = StObject.set(x, "supportsXcuiTest", js.undefined)
   }
 }

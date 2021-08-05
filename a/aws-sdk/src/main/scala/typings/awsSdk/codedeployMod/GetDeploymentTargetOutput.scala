@@ -13,19 +13,15 @@ trait GetDeploymentTargetOutput extends StObject {
 }
 object GetDeploymentTargetOutput {
   
-  @scala.inline
-  def apply(): GetDeploymentTargetOutput = {
+  inline def apply(): GetDeploymentTargetOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDeploymentTargetOutput]
   }
   
-  @scala.inline
-  implicit class GetDeploymentTargetOutputMutableBuilder[Self <: GetDeploymentTargetOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeploymentTargetOutput](x: Self) {
     
-    @scala.inline
-    def setDeploymentTarget(value: DeploymentTarget): Self = StObject.set(x, "deploymentTarget", value.asInstanceOf[js.Any])
+    inline def setDeploymentTarget(value: DeploymentTarget): Self = StObject.set(x, "deploymentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentTargetUndefined: Self = StObject.set(x, "deploymentTarget", js.undefined)
+    inline def setDeploymentTargetUndefined: Self = StObject.set(x, "deploymentTarget", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object typescriptOptionalStrings {
   
   @js.native
   sealed trait empty extends StObject
-  @scala.inline
-  def empty: empty = "empty".asInstanceOf[empty]
+  inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
   sealed trait present extends StObject
-  @scala.inline
-  def present: present = "present".asInstanceOf[present]
+  inline def present: present = "present".asInstanceOf[present]
 }

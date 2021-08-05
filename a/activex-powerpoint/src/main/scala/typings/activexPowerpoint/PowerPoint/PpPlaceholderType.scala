@@ -47,60 +47,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpPlaceholderType extends StObject
 object PpPlaceholderType {
   
-  @scala.inline
-  def ppPlaceholderBitmap: `9` = 9.asInstanceOf[`9`]
+  inline def ppPlaceholderBitmap: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def ppPlaceholderBody: `2` = 2.asInstanceOf[`2`]
+  inline def ppPlaceholderBody: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppPlaceholderCenterTitle: `3` = 3.asInstanceOf[`3`]
+  inline def ppPlaceholderCenterTitle: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppPlaceholderChart: `8` = 8.asInstanceOf[`8`]
+  inline def ppPlaceholderChart: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def ppPlaceholderDate: `16` = 16.asInstanceOf[`16`]
+  inline def ppPlaceholderDate: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def ppPlaceholderFooter: `15` = 15.asInstanceOf[`15`]
+  inline def ppPlaceholderFooter: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def ppPlaceholderHeader: `14` = 14.asInstanceOf[`14`]
+  inline def ppPlaceholderHeader: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def ppPlaceholderMediaClip: `10` = 10.asInstanceOf[`10`]
+  inline def ppPlaceholderMediaClip: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def ppPlaceholderMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppPlaceholderMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def ppPlaceholderObject: `7` = 7.asInstanceOf[`7`]
+  inline def ppPlaceholderObject: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def ppPlaceholderOrgChart: `11` = 11.asInstanceOf[`11`]
+  inline def ppPlaceholderOrgChart: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def ppPlaceholderPicture: `18` = 18.asInstanceOf[`18`]
+  inline def ppPlaceholderPicture: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def ppPlaceholderSlideNumber: `13` = 13.asInstanceOf[`13`]
+  inline def ppPlaceholderSlideNumber: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def ppPlaceholderSubtitle: `4` = 4.asInstanceOf[`4`]
+  inline def ppPlaceholderSubtitle: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppPlaceholderTable: `12` = 12.asInstanceOf[`12`]
+  inline def ppPlaceholderTable: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def ppPlaceholderTitle: `1` = 1.asInstanceOf[`1`]
+  inline def ppPlaceholderTitle: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppPlaceholderVerticalBody: `6` = 6.asInstanceOf[`6`]
+  inline def ppPlaceholderVerticalBody: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ppPlaceholderVerticalObject: `17` = 17.asInstanceOf[`17`]
+  inline def ppPlaceholderVerticalObject: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def ppPlaceholderVerticalTitle: `5` = 5.asInstanceOf[`5`]
+  inline def ppPlaceholderVerticalTitle: `5` = 5.asInstanceOf[`5`]
 }

@@ -42,29 +42,22 @@ object mod {
   }
   object CloudinaryFileAdapterConfig {
     
-    @scala.inline
-    def apply(apiKey: String, apiSecret: String, cloudName: String): CloudinaryFileAdapterConfig = {
+    inline def apply(apiKey: String, apiSecret: String, cloudName: String): CloudinaryFileAdapterConfig = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], apiSecret = apiSecret.asInstanceOf[js.Any], cloudName = cloudName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudinaryFileAdapterConfig]
     }
     
-    @scala.inline
-    implicit class CloudinaryFileAdapterConfigMutableBuilder[Self <: CloudinaryFileAdapterConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CloudinaryFileAdapterConfig](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiSecret(value: String): Self = StObject.set(x, "apiSecret", value.asInstanceOf[js.Any])
+      inline def setApiSecret(value: String): Self = StObject.set(x, "apiSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudName(value: String): Self = StObject.set(x, "cloudName", value.asInstanceOf[js.Any])
+      inline def setCloudName(value: String): Self = StObject.set(x, "cloudName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     }
   }
   
@@ -78,29 +71,22 @@ object mod {
   }
   object LocalFileAdapterConfig {
     
-    @scala.inline
-    def apply(src: String): LocalFileAdapterConfig = {
+    inline def apply(src: String): LocalFileAdapterConfig = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalFileAdapterConfig]
     }
     
-    @scala.inline
-    implicit class LocalFileAdapterConfigMutableBuilder[Self <: LocalFileAdapterConfig] (val x: Self) extends AnyVal {
+    extension [Self <: LocalFileAdapterConfig](x: Self) {
       
-      @scala.inline
-      def setGetFilename(value: /* options */ Id => String): Self = StObject.set(x, "getFilename", js.Any.fromFunction1(value))
+      inline def setGetFilename(value: /* options */ Id => String): Self = StObject.set(x, "getFilename", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFilenameUndefined: Self = StObject.set(x, "getFilename", js.undefined)
+      inline def setGetFilenameUndefined: Self = StObject.set(x, "getFilename", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
 }

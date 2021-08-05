@@ -14,23 +14,18 @@ trait SendDocumentRequest extends StObject {
 }
 object SendDocumentRequest {
   
-  @scala.inline
-  def apply(`operation-attributes-tag`: Documentnaturallanguage): SendDocumentRequest = {
+  inline def apply(`operation-attributes-tag`: Documentnaturallanguage): SendDocumentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("operation-attributes-tag")(`operation-attributes-tag`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendDocumentRequest]
   }
   
-  @scala.inline
-  implicit class SendDocumentRequestMutableBuilder[Self <: SendDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Documentnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Documentnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }
 }

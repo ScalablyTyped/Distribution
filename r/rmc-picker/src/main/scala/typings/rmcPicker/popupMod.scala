@@ -24,7 +24,6 @@ object popupMod {
     @JSImport("rmc-picker/lib/Popup", "default.defaultProps")
     @js.native
     def defaultProps: js.Any = js.native
-    @scala.inline
-    def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

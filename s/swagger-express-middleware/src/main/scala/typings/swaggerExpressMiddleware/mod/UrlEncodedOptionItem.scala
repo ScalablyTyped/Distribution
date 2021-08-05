@@ -54,50 +54,37 @@ trait UrlEncodedOptionItem extends StObject {
 }
 object UrlEncodedOptionItem {
   
-  @scala.inline
-  def apply(): UrlEncodedOptionItem = {
+  inline def apply(): UrlEncodedOptionItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlEncodedOptionItem]
   }
   
-  @scala.inline
-  implicit class UrlEncodedOptionItemMutableBuilder[Self <: UrlEncodedOptionItem] (val x: Self) extends AnyVal {
+  extension [Self <: UrlEncodedOptionItem](x: Self) {
     
-    @scala.inline
-    def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
+    inline def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
+    inline def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
     
-    @scala.inline
-    def setInflate(value: Boolean): Self = StObject.set(x, "inflate", value.asInstanceOf[js.Any])
+    inline def setInflate(value: Boolean): Self = StObject.set(x, "inflate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInflateUndefined: Self = StObject.set(x, "inflate", js.undefined)
+    inline def setInflateUndefined: Self = StObject.set(x, "inflate", js.undefined)
     
-    @scala.inline
-    def setLimit(value: String | Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: String | Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]) | String
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeFunction1(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+    inline def setTypeFunction1(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVerify(
+    inline def setVerify(
       value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit
     ): Self = StObject.set(x, "verify", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
+    inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
   }
 }

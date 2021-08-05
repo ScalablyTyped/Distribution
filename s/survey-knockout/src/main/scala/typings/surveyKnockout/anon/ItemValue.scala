@@ -14,22 +14,17 @@ trait ItemValue extends StObject {
 }
 object ItemValue {
   
-  @scala.inline
-  def apply(itemTitle: String, itemValue: String, root: String): ItemValue = {
+  inline def apply(itemTitle: String, itemValue: String, root: String): ItemValue = {
     val __obj = js.Dynamic.literal(itemTitle = itemTitle.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemValue]
   }
   
-  @scala.inline
-  implicit class ItemValueMutableBuilder[Self <: ItemValue] (val x: Self) extends AnyVal {
+  extension [Self <: ItemValue](x: Self) {
     
-    @scala.inline
-    def setItemTitle(value: String): Self = StObject.set(x, "itemTitle", value.asInstanceOf[js.Any])
+    inline def setItemTitle(value: String): Self = StObject.set(x, "itemTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemValue(value: String): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
+    inline def setItemValue(value: String): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait OnWifiConnectedCallbackResult extends StObject {
 }
 object OnWifiConnectedCallbackResult {
   
-  @scala.inline
-  def apply(wifi: WifiInfo): OnWifiConnectedCallbackResult = {
+  inline def apply(wifi: WifiInfo): OnWifiConnectedCallbackResult = {
     val __obj = js.Dynamic.literal(wifi = wifi.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnWifiConnectedCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnWifiConnectedCallbackResultMutableBuilder[Self <: OnWifiConnectedCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnWifiConnectedCallbackResult](x: Self) {
     
-    @scala.inline
-    def setWifi(value: WifiInfo): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
+    inline def setWifi(value: WifiInfo): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
   }
 }

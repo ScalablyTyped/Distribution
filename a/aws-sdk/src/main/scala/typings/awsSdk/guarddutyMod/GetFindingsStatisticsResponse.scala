@@ -13,16 +13,13 @@ trait GetFindingsStatisticsResponse extends StObject {
 }
 object GetFindingsStatisticsResponse {
   
-  @scala.inline
-  def apply(FindingStatistics: FindingStatistics): GetFindingsStatisticsResponse = {
+  inline def apply(FindingStatistics: FindingStatistics): GetFindingsStatisticsResponse = {
     val __obj = js.Dynamic.literal(FindingStatistics = FindingStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFindingsStatisticsResponse]
   }
   
-  @scala.inline
-  implicit class GetFindingsStatisticsResponseMutableBuilder[Self <: GetFindingsStatisticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFindingsStatisticsResponse](x: Self) {
     
-    @scala.inline
-    def setFindingStatistics(value: FindingStatistics): Self = StObject.set(x, "FindingStatistics", value.asInstanceOf[js.Any])
+    inline def setFindingStatistics(value: FindingStatistics): Self = StObject.set(x, "FindingStatistics", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait KinesisFirehoseOutputDescription extends StObject {
 }
 object KinesisFirehoseOutputDescription {
   
-  @scala.inline
-  def apply(ResourceARN: ResourceARN): KinesisFirehoseOutputDescription = {
+  inline def apply(ResourceARN: ResourceARN): KinesisFirehoseOutputDescription = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisFirehoseOutputDescription]
   }
   
-  @scala.inline
-  implicit class KinesisFirehoseOutputDescriptionMutableBuilder[Self <: KinesisFirehoseOutputDescription] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisFirehoseOutputDescription](x: Self) {
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
   }
 }

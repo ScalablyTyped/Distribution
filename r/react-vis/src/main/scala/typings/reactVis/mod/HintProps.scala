@@ -41,79 +41,55 @@ trait HintProps extends StObject {
 }
 object HintProps {
   
-  @scala.inline
-  def apply(): HintProps = {
+  inline def apply(): HintProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HintProps]
   }
   
-  @scala.inline
-  implicit class HintPropsMutableBuilder[Self <: HintProps] (val x: Self) extends AnyVal {
+  extension [Self <: HintProps](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Vertical): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Vertical): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setFormat(value: /* x */ js.Any => js.Array[Title]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormat(value: /* x */ js.Any => js.Array[Title]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setGetAlignStyle(value: (/* align */ Horizontal, /* x */ Double, /* y */ Double) => CSSProperties): Self = StObject.set(x, "getAlignStyle", js.Any.fromFunction3(value))
+    inline def setGetAlignStyle(value: (/* align */ Horizontal, /* x */ Double, /* y */ Double) => CSSProperties): Self = StObject.set(x, "getAlignStyle", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAlignStyleUndefined: Self = StObject.set(x, "getAlignStyle", js.undefined)
+    inline def setGetAlignStyleUndefined: Self = StObject.set(x, "getAlignStyle", js.undefined)
     
-    @scala.inline
-    def setInnerHeight(value: Double): Self = StObject.set(x, "innerHeight", value.asInstanceOf[js.Any])
+    inline def setInnerHeight(value: Double): Self = StObject.set(x, "innerHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerHeightUndefined: Self = StObject.set(x, "innerHeight", js.undefined)
+    inline def setInnerHeightUndefined: Self = StObject.set(x, "innerHeight", js.undefined)
     
-    @scala.inline
-    def setInnerWidth(value: Double): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
+    inline def setInnerWidth(value: Double): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
+    inline def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: bottomleft | bottomright | topleft | topright): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: bottomleft | bottomright | topleft | topright): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setScales(value: StringDictionary[js.Any]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    inline def setScales(value: StringDictionary[js.Any]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
+    inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setValue(value: StringDictionary[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: StringDictionary[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -33,43 +33,31 @@ trait CanaryRun extends StObject {
 }
 object CanaryRun {
   
-  @scala.inline
-  def apply(): CanaryRun = {
+  inline def apply(): CanaryRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanaryRun]
   }
   
-  @scala.inline
-  implicit class CanaryRunMutableBuilder[Self <: CanaryRun] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryRun](x: Self) {
     
-    @scala.inline
-    def setArtifactS3Location(value: String): Self = StObject.set(x, "ArtifactS3Location", value.asInstanceOf[js.Any])
+    inline def setArtifactS3Location(value: String): Self = StObject.set(x, "ArtifactS3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactS3LocationUndefined: Self = StObject.set(x, "ArtifactS3Location", js.undefined)
+    inline def setArtifactS3LocationUndefined: Self = StObject.set(x, "ArtifactS3Location", js.undefined)
     
-    @scala.inline
-    def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CanaryRunStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CanaryRunStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTimeline(value: CanaryRunTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: CanaryRunTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
+    inline def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
   }
 }

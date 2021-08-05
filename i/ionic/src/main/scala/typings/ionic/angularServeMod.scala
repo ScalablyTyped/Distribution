@@ -23,7 +23,7 @@ object angularServeMod {
     
     /* protected */ def buildArchitectCommand(options: AngularServeOptions): js.Array[String] = js.native
     
-    var chunks: Double = js.native
+    /* protected */ var chunks: Double = js.native
     
     @JSName("script")
     val script_AngularServeCLI: /* "ionic:serve" */ String = js.native
@@ -36,7 +36,7 @@ object angularServeMod {
   class AngularServeRunner protected () extends ServeRunner[AngularServeOptions] {
     def this(e: AngularServeRunnerDeps) = this()
     
-    @JSName("e")
+    /* protected */ @JSName("e")
     val e_AngularServeRunner: AngularServeRunnerDeps = js.native
     
     def platformToMode(platform: String): String = js.native
@@ -51,8 +51,7 @@ object angularServeMod {
   }
   object AngularServeRunnerDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: IConfig,
       flags: IonicEnvironmentFlags,
       log: ILogger,
@@ -64,11 +63,9 @@ object angularServeMod {
       __obj.asInstanceOf[AngularServeRunnerDeps]
     }
     
-    @scala.inline
-    implicit class AngularServeRunnerDepsMutableBuilder[Self <: AngularServeRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: AngularServeRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

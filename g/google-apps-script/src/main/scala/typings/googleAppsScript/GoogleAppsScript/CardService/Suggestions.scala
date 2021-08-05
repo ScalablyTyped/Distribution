@@ -20,19 +20,15 @@ trait Suggestions extends StObject {
 }
 object Suggestions {
   
-  @scala.inline
-  def apply(addSuggestion: String => Suggestions, addSuggestions: js.Array[String] => Suggestions): Suggestions = {
+  inline def apply(addSuggestion: String => Suggestions, addSuggestions: js.Array[String] => Suggestions): Suggestions = {
     val __obj = js.Dynamic.literal(addSuggestion = js.Any.fromFunction1(addSuggestion), addSuggestions = js.Any.fromFunction1(addSuggestions))
     __obj.asInstanceOf[Suggestions]
   }
   
-  @scala.inline
-  implicit class SuggestionsMutableBuilder[Self <: Suggestions] (val x: Self) extends AnyVal {
+  extension [Self <: Suggestions](x: Self) {
     
-    @scala.inline
-    def setAddSuggestion(value: String => Suggestions): Self = StObject.set(x, "addSuggestion", js.Any.fromFunction1(value))
+    inline def setAddSuggestion(value: String => Suggestions): Self = StObject.set(x, "addSuggestion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddSuggestions(value: js.Array[String] => Suggestions): Self = StObject.set(x, "addSuggestions", js.Any.fromFunction1(value))
+    inline def setAddSuggestions(value: js.Array[String] => Suggestions): Self = StObject.set(x, "addSuggestions", js.Any.fromFunction1(value))
   }
 }

@@ -27,26 +27,20 @@ object excelExporter {
   }
   object CellAddress {
     
-    @scala.inline
-    def apply(): CellAddress = {
+    inline def apply(): CellAddress = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellAddress]
     }
     
-    @scala.inline
-    implicit class CellAddressMutableBuilder[Self <: CellAddress] (val x: Self) extends AnyVal {
+    extension [Self <: CellAddress](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     }
   }
   
@@ -64,26 +58,20 @@ object excelExporter {
   }
   object CellRange {
     
-    @scala.inline
-    def apply(): CellRange = {
+    inline def apply(): CellRange = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellRange]
     }
     
-    @scala.inline
-    implicit class CellRangeMutableBuilder[Self <: CellRange] (val x: Self) extends AnyVal {
+    extension [Self <: CellRange](x: Self) {
       
-      @scala.inline
-      def setFrom(value: CellAddress): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: CellAddress): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setTo(value: CellAddress): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: CellAddress): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -126,59 +114,42 @@ object excelExporter {
   }
   object ExcelDataGridCell {
     
-    @scala.inline
-    def apply(): ExcelDataGridCell = {
+    inline def apply(): ExcelDataGridCell = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExcelDataGridCell]
     }
     
-    @scala.inline
-    implicit class ExcelDataGridCellMutableBuilder[Self <: ExcelDataGridCell] (val x: Self) extends AnyVal {
+    extension [Self <: ExcelDataGridCell](x: Self) {
       
-      @scala.inline
-      def setColumn(value: dxDataGridColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: dxDataGridColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
+      inline def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
+      inline def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
       
-      @scala.inline
-      def setGroupSummaryItems(value: js.Array[NameValue]): Self = StObject.set(x, "groupSummaryItems", value.asInstanceOf[js.Any])
+      inline def setGroupSummaryItems(value: js.Array[NameValue]): Self = StObject.set(x, "groupSummaryItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupSummaryItemsUndefined: Self = StObject.set(x, "groupSummaryItems", js.undefined)
+      inline def setGroupSummaryItemsUndefined: Self = StObject.set(x, "groupSummaryItems", js.undefined)
       
-      @scala.inline
-      def setGroupSummaryItemsVarargs(value: NameValue*): Self = StObject.set(x, "groupSummaryItems", js.Array(value :_*))
+      inline def setGroupSummaryItemsVarargs(value: NameValue*): Self = StObject.set(x, "groupSummaryItems", js.Array(value :_*))
       
-      @scala.inline
-      def setRowType(value: String): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
+      inline def setRowType(value: String): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
+      inline def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
       
-      @scala.inline
-      def setTotalSummaryItemName(value: String): Self = StObject.set(x, "totalSummaryItemName", value.asInstanceOf[js.Any])
+      inline def setTotalSummaryItemName(value: String): Self = StObject.set(x, "totalSummaryItemName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalSummaryItemNameUndefined: Self = StObject.set(x, "totalSummaryItemName", js.undefined)
+      inline def setTotalSummaryItemNameUndefined: Self = StObject.set(x, "totalSummaryItemName", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -206,38 +177,28 @@ object excelExporter {
   }
   object ExcelExportBaseProps {
     
-    @scala.inline
-    def apply(): ExcelExportBaseProps = {
+    inline def apply(): ExcelExportBaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExcelExportBaseProps]
     }
     
-    @scala.inline
-    implicit class ExcelExportBasePropsMutableBuilder[Self <: ExcelExportBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExcelExportBaseProps](x: Self) {
       
-      @scala.inline
-      def setKeepColumnWidths(value: Boolean): Self = StObject.set(x, "keepColumnWidths", value.asInstanceOf[js.Any])
+      inline def setKeepColumnWidths(value: Boolean): Self = StObject.set(x, "keepColumnWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepColumnWidthsUndefined: Self = StObject.set(x, "keepColumnWidths", js.undefined)
+      inline def setKeepColumnWidthsUndefined: Self = StObject.set(x, "keepColumnWidths", js.undefined)
       
-      @scala.inline
-      def setLoadPanel(value: ExportLoadPanel): Self = StObject.set(x, "loadPanel", value.asInstanceOf[js.Any])
+      inline def setLoadPanel(value: ExportLoadPanel): Self = StObject.set(x, "loadPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadPanelUndefined: Self = StObject.set(x, "loadPanel", js.undefined)
+      inline def setLoadPanelUndefined: Self = StObject.set(x, "loadPanel", js.undefined)
       
-      @scala.inline
-      def setTopLeftCell(value: CellAddress | String): Self = StObject.set(x, "topLeftCell", value.asInstanceOf[js.Any])
+      inline def setTopLeftCell(value: CellAddress | String): Self = StObject.set(x, "topLeftCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLeftCellUndefined: Self = StObject.set(x, "topLeftCell", js.undefined)
+      inline def setTopLeftCellUndefined: Self = StObject.set(x, "topLeftCell", js.undefined)
       
-      @scala.inline
-      def setWorksheet(value: js.Any): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+      inline def setWorksheet(value: js.Any): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
+      inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
     }
   }
   
@@ -267,38 +228,28 @@ object excelExporter {
   }
   object ExcelExportDataGridProps {
     
-    @scala.inline
-    def apply(): ExcelExportDataGridProps = {
+    inline def apply(): ExcelExportDataGridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExcelExportDataGridProps]
     }
     
-    @scala.inline
-    implicit class ExcelExportDataGridPropsMutableBuilder[Self <: ExcelExportDataGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExcelExportDataGridProps](x: Self) {
       
-      @scala.inline
-      def setAutoFilterEnabled(value: Boolean): Self = StObject.set(x, "autoFilterEnabled", value.asInstanceOf[js.Any])
+      inline def setAutoFilterEnabled(value: Boolean): Self = StObject.set(x, "autoFilterEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFilterEnabledUndefined: Self = StObject.set(x, "autoFilterEnabled", js.undefined)
+      inline def setAutoFilterEnabledUndefined: Self = StObject.set(x, "autoFilterEnabled", js.undefined)
       
-      @scala.inline
-      def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setCustomizeCell(value: /* options */ ExcelCell => js.Any): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
+      inline def setCustomizeCell(value: /* options */ ExcelCell => js.Any): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
+      inline def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
       
-      @scala.inline
-      def setSelectedRowsOnly(value: Boolean): Self = StObject.set(x, "selectedRowsOnly", value.asInstanceOf[js.Any])
+      inline def setSelectedRowsOnly(value: Boolean): Self = StObject.set(x, "selectedRowsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedRowsOnlyUndefined: Self = StObject.set(x, "selectedRowsOnly", js.undefined)
+      inline def setSelectedRowsOnlyUndefined: Self = StObject.set(x, "selectedRowsOnly", js.undefined)
     }
   }
   
@@ -318,26 +269,20 @@ object excelExporter {
   }
   object ExcelExportPivotGridProps {
     
-    @scala.inline
-    def apply(): ExcelExportPivotGridProps = {
+    inline def apply(): ExcelExportPivotGridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExcelExportPivotGridProps]
     }
     
-    @scala.inline
-    implicit class ExcelExportPivotGridPropsMutableBuilder[Self <: ExcelExportPivotGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExcelExportPivotGridProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: dxPivotGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: dxPivotGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setCustomizeCell(value: /* options */ PivotCell => js.Any): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
+      inline def setCustomizeCell(value: /* options */ PivotCell => js.Any): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
+      inline def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
     }
   }
   
@@ -362,32 +307,24 @@ object excelExporter {
   }
   object ExcelPivotGridCell {
     
-    @scala.inline
-    def apply(): ExcelPivotGridCell = {
+    inline def apply(): ExcelPivotGridCell = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExcelPivotGridCell]
     }
     
-    @scala.inline
-    implicit class ExcelPivotGridCellMutableBuilder[Self <: ExcelPivotGridCell] (val x: Self) extends AnyVal {
+    extension [Self <: ExcelPivotGridCell](x: Self) {
       
-      @scala.inline
-      def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+      inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
       
-      @scala.inline
-      def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+      inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+      inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
       
-      @scala.inline
-      def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+      inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     }
   }
   
@@ -440,68 +377,48 @@ object excelExporter {
   }
   object ExportLoadPanel {
     
-    @scala.inline
-    def apply(): ExportLoadPanel = {
+    inline def apply(): ExportLoadPanel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExportLoadPanel]
     }
     
-    @scala.inline
-    implicit class ExportLoadPanelMutableBuilder[Self <: ExportLoadPanel] (val x: Self) extends AnyVal {
+    extension [Self <: ExportLoadPanel](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIndicatorSrc(value: String): Self = StObject.set(x, "indicatorSrc", value.asInstanceOf[js.Any])
+      inline def setIndicatorSrc(value: String): Self = StObject.set(x, "indicatorSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorSrcUndefined: Self = StObject.set(x, "indicatorSrc", js.undefined)
+      inline def setIndicatorSrcUndefined: Self = StObject.set(x, "indicatorSrc", js.undefined)
       
-      @scala.inline
-      def setShading(value: Boolean): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
+      inline def setShading(value: Boolean): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadingColor(value: String): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
+      inline def setShadingColor(value: String): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
+      inline def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
       
-      @scala.inline
-      def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
+      inline def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
       
-      @scala.inline
-      def setShowIndicator(value: Boolean): Self = StObject.set(x, "showIndicator", value.asInstanceOf[js.Any])
+      inline def setShowIndicator(value: Boolean): Self = StObject.set(x, "showIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowIndicatorUndefined: Self = StObject.set(x, "showIndicator", js.undefined)
+      inline def setShowIndicatorUndefined: Self = StObject.set(x, "showIndicator", js.undefined)
       
-      @scala.inline
-      def setShowPane(value: Boolean): Self = StObject.set(x, "showPane", value.asInstanceOf[js.Any])
+      inline def setShowPane(value: Boolean): Self = StObject.set(x, "showPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPaneUndefined: Self = StObject.set(x, "showPane", js.undefined)
+      inline def setShowPaneUndefined: Self = StObject.set(x, "showPane", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

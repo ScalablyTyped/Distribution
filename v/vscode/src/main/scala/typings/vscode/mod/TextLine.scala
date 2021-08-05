@@ -40,8 +40,7 @@ trait TextLine extends StObject {
 }
 object TextLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     firstNonWhitespaceCharacterIndex: Double,
     isEmptyOrWhitespace: Boolean,
     lineNumber: Double,
@@ -53,25 +52,18 @@ object TextLine {
     __obj.asInstanceOf[TextLine]
   }
   
-  @scala.inline
-  implicit class TextLineMutableBuilder[Self <: TextLine] (val x: Self) extends AnyVal {
+  extension [Self <: TextLine](x: Self) {
     
-    @scala.inline
-    def setFirstNonWhitespaceCharacterIndex(value: Double): Self = StObject.set(x, "firstNonWhitespaceCharacterIndex", value.asInstanceOf[js.Any])
+    inline def setFirstNonWhitespaceCharacterIndex(value: Double): Self = StObject.set(x, "firstNonWhitespaceCharacterIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEmptyOrWhitespace(value: Boolean): Self = StObject.set(x, "isEmptyOrWhitespace", value.asInstanceOf[js.Any])
+    inline def setIsEmptyOrWhitespace(value: Boolean): Self = StObject.set(x, "isEmptyOrWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeIncludingLineBreak(value: Range): Self = StObject.set(x, "rangeIncludingLineBreak", value.asInstanceOf[js.Any])
+    inline def setRangeIncludingLineBreak(value: Range): Self = StObject.set(x, "rangeIncludingLineBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

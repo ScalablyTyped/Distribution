@@ -21,17 +21,17 @@ object envDetectorMod {
     extends StObject
        with Detector {
     
-    val _COMMA_SEPARATOR: js.Any
+    /* private */ val _COMMA_SEPARATOR: js.Any
     
-    val _ERROR_MESSAGE_INVALID_CHARS: js.Any
+    /* private */ val _ERROR_MESSAGE_INVALID_CHARS: js.Any
     
-    val _ERROR_MESSAGE_INVALID_VALUE: js.Any
+    /* private */ val _ERROR_MESSAGE_INVALID_VALUE: js.Any
     
-    val _LABEL_KEY_VALUE_SPLITTER: js.Any
+    /* private */ val _LABEL_KEY_VALUE_SPLITTER: js.Any
     
-    val _MAX_LENGTH: js.Any
+    /* private */ val _MAX_LENGTH: js.Any
     
-    var _isPrintableString: js.Any
+    /* private */ var _isPrintableString: js.Any
     
     /**
       * Determines whether the given String is a valid printable ASCII string with
@@ -40,7 +40,7 @@ object envDetectorMod {
       * @param str The String to be validated.
       * @returns Whether the String is valid.
       */
-    var _isValid: js.Any
+    /* private */ var _isValid: js.Any
     
     /**
       * Determines whether the given String is a valid printable ASCII string with
@@ -49,7 +49,7 @@ object envDetectorMod {
       * @param str The String to be validated.
       * @returns Whether the String is valid and not empty.
       */
-    var _isValidAndNotEmpty: js.Any
+    /* private */ var _isValidAndNotEmpty: js.Any
     
     /**
       * Creates an attribute map from the OTEL_RESOURCE_ATTRIBUTES environment
@@ -65,12 +65,11 @@ object envDetectorMod {
       * of key/value pairs.
       * @returns The sanitized resource attributes.
       */
-    var _parseResourceAttributes: js.Any
+    /* private */ var _parseResourceAttributes: js.Any
   }
   object EnvDetector_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _COMMA_SEPARATOR: js.Any,
       _ERROR_MESSAGE_INVALID_CHARS: js.Any,
       _ERROR_MESSAGE_INVALID_VALUE: js.Any,
@@ -86,35 +85,25 @@ object envDetectorMod {
       __obj.asInstanceOf[EnvDetector_]
     }
     
-    @scala.inline
-    implicit class EnvDetector_MutableBuilder[Self <: EnvDetector_] (val x: Self) extends AnyVal {
+    extension [Self <: EnvDetector_](x: Self) {
       
-      @scala.inline
-      def set_COMMA_SEPARATOR(value: js.Any): Self = StObject.set(x, "_COMMA_SEPARATOR", value.asInstanceOf[js.Any])
+      inline def set_COMMA_SEPARATOR(value: js.Any): Self = StObject.set(x, "_COMMA_SEPARATOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_ERROR_MESSAGE_INVALID_CHARS(value: js.Any): Self = StObject.set(x, "_ERROR_MESSAGE_INVALID_CHARS", value.asInstanceOf[js.Any])
+      inline def set_ERROR_MESSAGE_INVALID_CHARS(value: js.Any): Self = StObject.set(x, "_ERROR_MESSAGE_INVALID_CHARS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_ERROR_MESSAGE_INVALID_VALUE(value: js.Any): Self = StObject.set(x, "_ERROR_MESSAGE_INVALID_VALUE", value.asInstanceOf[js.Any])
+      inline def set_ERROR_MESSAGE_INVALID_VALUE(value: js.Any): Self = StObject.set(x, "_ERROR_MESSAGE_INVALID_VALUE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_LABEL_KEY_VALUE_SPLITTER(value: js.Any): Self = StObject.set(x, "_LABEL_KEY_VALUE_SPLITTER", value.asInstanceOf[js.Any])
+      inline def set_LABEL_KEY_VALUE_SPLITTER(value: js.Any): Self = StObject.set(x, "_LABEL_KEY_VALUE_SPLITTER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_MAX_LENGTH(value: js.Any): Self = StObject.set(x, "_MAX_LENGTH", value.asInstanceOf[js.Any])
+      inline def set_MAX_LENGTH(value: js.Any): Self = StObject.set(x, "_MAX_LENGTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isPrintableString(value: js.Any): Self = StObject.set(x, "_isPrintableString", value.asInstanceOf[js.Any])
+      inline def set_isPrintableString(value: js.Any): Self = StObject.set(x, "_isPrintableString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isValid(value: js.Any): Self = StObject.set(x, "_isValid", value.asInstanceOf[js.Any])
+      inline def set_isValid(value: js.Any): Self = StObject.set(x, "_isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isValidAndNotEmpty(value: js.Any): Self = StObject.set(x, "_isValidAndNotEmpty", value.asInstanceOf[js.Any])
+      inline def set_isValidAndNotEmpty(value: js.Any): Self = StObject.set(x, "_isValidAndNotEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_parseResourceAttributes(value: js.Any): Self = StObject.set(x, "_parseResourceAttributes", value.asInstanceOf[js.Any])
+      inline def set_parseResourceAttributes(value: js.Any): Self = StObject.set(x, "_parseResourceAttributes", value.asInstanceOf[js.Any])
     }
   }
 }

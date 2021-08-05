@@ -28,14 +28,11 @@ object Track {
   trait Kind extends StObject
   object Kind {
     
-    @scala.inline
-    def audio: typings.twilioVideo.twilioVideoStrings.audio = "audio".asInstanceOf[typings.twilioVideo.twilioVideoStrings.audio]
+    inline def audio: typings.twilioVideo.twilioVideoStrings.audio = "audio".asInstanceOf[typings.twilioVideo.twilioVideoStrings.audio]
     
-    @scala.inline
-    def data: typings.twilioVideo.twilioVideoStrings.data = "data".asInstanceOf[typings.twilioVideo.twilioVideoStrings.data]
+    inline def data: typings.twilioVideo.twilioVideoStrings.data = "data".asInstanceOf[typings.twilioVideo.twilioVideoStrings.data]
     
-    @scala.inline
-    def video: typings.twilioVideo.twilioVideoStrings.video = "video".asInstanceOf[typings.twilioVideo.twilioVideoStrings.video]
+    inline def video: typings.twilioVideo.twilioVideoStrings.video = "video".asInstanceOf[typings.twilioVideo.twilioVideoStrings.video]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -46,14 +43,11 @@ object Track {
   trait Priority extends StObject
   object Priority {
     
-    @scala.inline
-    def high: typings.twilioVideo.twilioVideoStrings.high = "high".asInstanceOf[typings.twilioVideo.twilioVideoStrings.high]
+    inline def high: typings.twilioVideo.twilioVideoStrings.high = "high".asInstanceOf[typings.twilioVideo.twilioVideoStrings.high]
     
-    @scala.inline
-    def low: typings.twilioVideo.twilioVideoStrings.low = "low".asInstanceOf[typings.twilioVideo.twilioVideoStrings.low]
+    inline def low: typings.twilioVideo.twilioVideoStrings.low = "low".asInstanceOf[typings.twilioVideo.twilioVideoStrings.low]
     
-    @scala.inline
-    def standard: typings.twilioVideo.twilioVideoStrings.standard = "standard".asInstanceOf[typings.twilioVideo.twilioVideoStrings.standard]
+    inline def standard: typings.twilioVideo.twilioVideoStrings.standard = "standard".asInstanceOf[typings.twilioVideo.twilioVideoStrings.standard]
   }
   
   type SID = String

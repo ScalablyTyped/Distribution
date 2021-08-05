@@ -11,8 +11,7 @@ trait DeleteApnsSandboxChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesDeleteApnsSandboxChannelOutputMod.DeleteApnsSandboxChannelOutput
 object DeleteApnsSandboxChannelOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, APNSSandboxChannelResponse: UnmarshalledAPNSSandboxChannelResponse): DeleteApnsSandboxChannelOutput = {
+  inline def apply($metadata: ResponseMetadata, APNSSandboxChannelResponse: UnmarshalledAPNSSandboxChannelResponse): DeleteApnsSandboxChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSSandboxChannelResponse = APNSSandboxChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApnsSandboxChannelOutput]
   }

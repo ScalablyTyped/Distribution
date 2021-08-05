@@ -14,6 +14,5 @@ object mod {
   @js.native
   val countries: js.Array[String] = js.native
   
-  @scala.inline
-  def hasFlag(country: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasFlag")(country.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasFlag(country: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasFlag")(country.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

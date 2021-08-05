@@ -35,8 +35,7 @@ object typesMod {
   }
   object ClientApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addDecorator: DecoratorFunction[StoryFnPreactReturnType] => StoryApi[StoryFnPreactReturnType],
       addParameters: Parameters => StoryApi[StoryFnPreactReturnType],
       clearDecorators: () => Unit,
@@ -52,29 +51,21 @@ object typesMod {
       __obj.asInstanceOf[ClientApi]
     }
     
-    @scala.inline
-    implicit class ClientApiMutableBuilder[Self <: ClientApi] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApi](x: Self) {
       
-      @scala.inline
-      def setClearDecorators(value: () => Unit): Self = StObject.set(x, "clearDecorators", js.Any.fromFunction0(value))
+      inline def setClearDecorators(value: () => Unit): Self = StObject.set(x, "clearDecorators", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConfigure(value: (Loadable, NodeModule) => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction2(value))
+      inline def setConfigure(value: (Loadable, NodeModule) => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setForceReRender(value: () => Unit): Self = StObject.set(x, "forceReRender", js.Any.fromFunction0(value))
+      inline def setForceReRender(value: () => Unit): Self = StObject.set(x, "forceReRender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStorybook(value: () => js.Array[IStorybookSection]): Self = StObject.set(x, "getStorybook", js.Any.fromFunction0(value))
+      inline def setGetStorybook(value: () => js.Array[IStorybookSection]): Self = StObject.set(x, "getStorybook", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoad(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRaw(value: () => js.Any): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
+      inline def setRaw(value: () => js.Any): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetAddon(value: js.Any => Unit): Self = StObject.set(x, "setAddon", js.Any.fromFunction1(value))
+      inline def setSetAddon(value: js.Any => Unit): Self = StObject.set(x, "setAddon", js.Any.fromFunction1(value))
     }
   }
   
@@ -86,23 +77,18 @@ object typesMod {
   }
   object IStorybookSection {
     
-    @scala.inline
-    def apply(kind: String, stories: js.Array[IStorybookStory]): IStorybookSection = {
+    inline def apply(kind: String, stories: js.Array[IStorybookStory]): IStorybookSection = {
       val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStorybookSection]
     }
     
-    @scala.inline
-    implicit class IStorybookSectionMutableBuilder[Self <: IStorybookSection] (val x: Self) extends AnyVal {
+    extension [Self <: IStorybookSection](x: Self) {
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStories(value: js.Array[IStorybookStory]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+      inline def setStories(value: js.Array[IStorybookStory]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoriesVarargs(value: IStorybookStory*): Self = StObject.set(x, "stories", js.Array(value :_*))
+      inline def setStoriesVarargs(value: IStorybookStory*): Self = StObject.set(x, "stories", js.Array(value :_*))
     }
   }
   
@@ -114,20 +100,16 @@ object typesMod {
   }
   object IStorybookStory {
     
-    @scala.inline
-    def apply(name: String, render: () => js.Any): IStorybookStory = {
+    inline def apply(name: String, render: () => js.Any): IStorybookStory = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], render = js.Any.fromFunction0(render))
       __obj.asInstanceOf[IStorybookStory]
     }
     
-    @scala.inline
-    implicit class IStorybookStoryMutableBuilder[Self <: IStorybookStory] (val x: Self) extends AnyVal {
+    extension [Self <: IStorybookStory](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     }
   }
   
@@ -139,20 +121,16 @@ object typesMod {
   }
   object ShowErrorArgs {
     
-    @scala.inline
-    def apply(description: String, title: String): ShowErrorArgs = {
+    inline def apply(description: String, title: String): ShowErrorArgs = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShowErrorArgs]
     }
     
-    @scala.inline
-    implicit class ShowErrorArgsMutableBuilder[Self <: ShowErrorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ShowErrorArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

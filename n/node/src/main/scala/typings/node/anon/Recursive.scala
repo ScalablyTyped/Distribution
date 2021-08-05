@@ -15,28 +15,21 @@ trait Recursive extends StObject {
 }
 object Recursive {
   
-  @scala.inline
-  def apply(): Recursive = {
+  inline def apply(): Recursive = {
     val __obj = js.Dynamic.literal(encoding = "buffer")
     __obj.asInstanceOf[Recursive]
   }
   
-  @scala.inline
-  implicit class RecursiveMutableBuilder[Self <: Recursive] (val x: Self) extends AnyVal {
+  extension [Self <: Recursive](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

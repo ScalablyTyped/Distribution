@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormNotificationLevel extends StObject
 object FormNotificationLevel {
   
-  @scala.inline
-  def ERROR: typings.xrm.xrmStrings.ERROR = "ERROR".asInstanceOf[typings.xrm.xrmStrings.ERROR]
+  inline def ERROR: typings.xrm.xrmStrings.ERROR = "ERROR".asInstanceOf[typings.xrm.xrmStrings.ERROR]
   
-  @scala.inline
-  def INFO: typings.xrm.xrmStrings.INFO = "INFO".asInstanceOf[typings.xrm.xrmStrings.INFO]
+  inline def INFO: typings.xrm.xrmStrings.INFO = "INFO".asInstanceOf[typings.xrm.xrmStrings.INFO]
   
-  @scala.inline
-  def WARNING: typings.xrm.xrmStrings.WARNING = "WARNING".asInstanceOf[typings.xrm.xrmStrings.WARNING]
+  inline def WARNING: typings.xrm.xrmStrings.WARNING = "WARNING".asInstanceOf[typings.xrm.xrmStrings.WARNING]
 }

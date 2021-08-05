@@ -13,6 +13,5 @@ object extractStylePartsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extractStyleParts_false(args: (js.UndefOr[IStyle | js.Array[IStyle] | `false` | Null])*): Classes = ^.asInstanceOf[js.Dynamic].applyDynamic("extractStyleParts")(args.asInstanceOf[js.Any]).asInstanceOf[Classes]
+  inline def extractStyleParts_false(args: (js.UndefOr[IStyle | js.Array[IStyle] | `false` | Null])*): Classes = ^.asInstanceOf[js.Dynamic].applyDynamic("extractStyleParts")(args.asInstanceOf[js.Any]).asInstanceOf[Classes]
 }

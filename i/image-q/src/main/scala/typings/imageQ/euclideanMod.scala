@@ -11,13 +11,13 @@ object euclideanMod {
   @js.native
   class AbstractEuclidean () extends AbstractDistanceCalculator {
     
-    var _kA: Double = js.native
+    /* protected */ var _kA: Double = js.native
     
-    var _kB: Double = js.native
+    /* protected */ var _kB: Double = js.native
     
-    var _kG: Double = js.native
+    /* protected */ var _kG: Double = js.native
     
-    var _kR: Double = js.native
+    /* protected */ var _kR: Double = js.native
   }
   
   @JSImport("image-q/dist/distance/euclidean", "Euclidean")

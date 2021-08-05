@@ -68,85 +68,59 @@ trait PostgreSQLSettings extends StObject {
 }
 object PostgreSQLSettings {
   
-  @scala.inline
-  def apply(): PostgreSQLSettings = {
+  inline def apply(): PostgreSQLSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostgreSQLSettings]
   }
   
-  @scala.inline
-  implicit class PostgreSQLSettingsMutableBuilder[Self <: PostgreSQLSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PostgreSQLSettings](x: Self) {
     
-    @scala.inline
-    def setAfterConnectScript(value: String): Self = StObject.set(x, "AfterConnectScript", value.asInstanceOf[js.Any])
+    inline def setAfterConnectScript(value: String): Self = StObject.set(x, "AfterConnectScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterConnectScriptUndefined: Self = StObject.set(x, "AfterConnectScript", js.undefined)
+    inline def setAfterConnectScriptUndefined: Self = StObject.set(x, "AfterConnectScript", js.undefined)
     
-    @scala.inline
-    def setCaptureDdls(value: BooleanOptional): Self = StObject.set(x, "CaptureDdls", value.asInstanceOf[js.Any])
+    inline def setCaptureDdls(value: BooleanOptional): Self = StObject.set(x, "CaptureDdls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureDdlsUndefined: Self = StObject.set(x, "CaptureDdls", js.undefined)
+    inline def setCaptureDdlsUndefined: Self = StObject.set(x, "CaptureDdls", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    @scala.inline
-    def setDdlArtifactsSchema(value: String): Self = StObject.set(x, "DdlArtifactsSchema", value.asInstanceOf[js.Any])
+    inline def setDdlArtifactsSchema(value: String): Self = StObject.set(x, "DdlArtifactsSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdlArtifactsSchemaUndefined: Self = StObject.set(x, "DdlArtifactsSchema", js.undefined)
+    inline def setDdlArtifactsSchemaUndefined: Self = StObject.set(x, "DdlArtifactsSchema", js.undefined)
     
-    @scala.inline
-    def setExecuteTimeout(value: IntegerOptional): Self = StObject.set(x, "ExecuteTimeout", value.asInstanceOf[js.Any])
+    inline def setExecuteTimeout(value: IntegerOptional): Self = StObject.set(x, "ExecuteTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecuteTimeoutUndefined: Self = StObject.set(x, "ExecuteTimeout", js.undefined)
+    inline def setExecuteTimeoutUndefined: Self = StObject.set(x, "ExecuteTimeout", js.undefined)
     
-    @scala.inline
-    def setFailTasksOnLobTruncation(value: BooleanOptional): Self = StObject.set(x, "FailTasksOnLobTruncation", value.asInstanceOf[js.Any])
+    inline def setFailTasksOnLobTruncation(value: BooleanOptional): Self = StObject.set(x, "FailTasksOnLobTruncation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailTasksOnLobTruncationUndefined: Self = StObject.set(x, "FailTasksOnLobTruncation", js.undefined)
+    inline def setFailTasksOnLobTruncationUndefined: Self = StObject.set(x, "FailTasksOnLobTruncation", js.undefined)
     
-    @scala.inline
-    def setMaxFileSize(value: IntegerOptional): Self = StObject.set(x, "MaxFileSize", value.asInstanceOf[js.Any])
+    inline def setMaxFileSize(value: IntegerOptional): Self = StObject.set(x, "MaxFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileSizeUndefined: Self = StObject.set(x, "MaxFileSize", js.undefined)
+    inline def setMaxFileSizeUndefined: Self = StObject.set(x, "MaxFileSize", js.undefined)
     
-    @scala.inline
-    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
+    inline def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
-    @scala.inline
-    def setSlotName(value: String): Self = StObject.set(x, "SlotName", value.asInstanceOf[js.Any])
+    inline def setSlotName(value: String): Self = StObject.set(x, "SlotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotNameUndefined: Self = StObject.set(x, "SlotName", js.undefined)
+    inline def setSlotNameUndefined: Self = StObject.set(x, "SlotName", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

@@ -30,32 +30,27 @@ object mod {
     def clear(): Unit = js.native
   }
   
-  @scala.inline
-  def clearInterval(interval: Interval): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearInterval(interval: Interval): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(interval.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearTimeout(timeout: Timeout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearTimeout(timeout: Timeout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("safe-timers", "maxInterval")
   @js.native
   val maxInterval: Double = js.native
   
-  @scala.inline
-  def setInterval[T /* <: js.Array[js.Any] */](
+  inline def setInterval[T /* <: js.Array[js.Any] */](
     callback: js.Function1[/* args */ T, Unit],
     interval: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @scala.inline
-  def setTimeout[T /* <: js.Array[js.Any] */](
+  inline def setTimeout[T /* <: js.Array[js.Any] */](
     callback: js.Function1[/* args */ T, Unit],
     interval: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): Timeout = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Timeout]
   
-  @scala.inline
-  def setTimeoutAt[T /* <: js.Array[js.Any] */](
+  inline def setTimeoutAt[T /* <: js.Array[js.Any] */](
     callback: js.Function1[/* args */ T, Unit],
     timestamp: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T

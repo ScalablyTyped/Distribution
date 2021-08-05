@@ -20,14 +20,11 @@ object mod {
     @js.native
     def apply(number: Double): cin = js.native
     
-    @scala.inline
-    implicit class cinMutableBuilder[Self <: cin] (val x: Self) extends AnyVal {
+    extension [Self <: cin](x: Self) {
       
-      @scala.inline
-      def setCorporation(value: Id): Self = StObject.set(x, "corporation", value.asInstanceOf[js.Any])
+      inline def setCorporation(value: Id): Self = StObject.set(x, "corporation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,17 +40,13 @@ object mod {
     @js.native
     def apply(number: Double): ssn = js.native
     
-    @scala.inline
-    implicit class ssnMutableBuilder[Self <: ssn] (val x: Self) extends AnyVal {
+    extension [Self <: ssn](x: Self) {
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerson(value: Sex): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
+      inline def setPerson(value: Sex): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
+      inline def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
     }
   }
 }

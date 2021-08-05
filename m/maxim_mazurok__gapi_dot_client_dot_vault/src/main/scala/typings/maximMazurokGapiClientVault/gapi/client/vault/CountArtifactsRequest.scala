@@ -14,25 +14,19 @@ trait CountArtifactsRequest extends StObject {
 }
 object CountArtifactsRequest {
   
-  @scala.inline
-  def apply(): CountArtifactsRequest = {
+  inline def apply(): CountArtifactsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CountArtifactsRequest]
   }
   
-  @scala.inline
-  implicit class CountArtifactsRequestMutableBuilder[Self <: CountArtifactsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CountArtifactsRequest](x: Self) {
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

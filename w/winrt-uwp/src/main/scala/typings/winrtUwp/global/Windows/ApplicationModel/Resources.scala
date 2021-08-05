@@ -108,36 +108,31 @@ object Resources {
         * @return The new ResourceContext .
         */
       /* static member */
-      @scala.inline
-      def createMatchingContext(result: IIterable[typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceQualifier]): typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createMatchingContext")(result.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext]
+      inline def createMatchingContext(result: IIterable[typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceQualifier]): typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createMatchingContext")(result.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext]
       
       /**
         * Gets a default ResourceContext associated with the current view for the currently running application.
         * @return The default context associated with the current view.
         */
       /* static member */
-      @scala.inline
-      def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext]
+      inline def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext]
       
       /**
         * Gets a default ResourceContext not associated with any view.
         * @return A default ResourceContext not associated with any view.
         */
       /* static member */
-      @scala.inline
-      def getForViewIndependentUse(): typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getForViewIndependentUse")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext]
+      inline def getForViewIndependentUse(): typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getForViewIndependentUse")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceContext]
       
       /** Removes any qualifier overrides from default contexts of all views across the app. */
       /* static member */
-      @scala.inline
-      def resetGlobalQualifierValues(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalQualifierValues")().asInstanceOf[Unit]
+      inline def resetGlobalQualifierValues(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalQualifierValues")().asInstanceOf[Unit]
       /**
         * Removes qualifier overrides for the specified qualifiers from default contexts of all views across the app.
         * @param qualifierNames The names of the qualifiers to be reset.
         */
       /* static member */
-      @scala.inline
-      def resetGlobalQualifierValues(qualifierNames: IIterable[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalQualifierValues")(qualifierNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def resetGlobalQualifierValues(qualifierNames: IIterable[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalQualifierValues")(qualifierNames.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Applies a single qualifier value override to default contexts of all views for the current app.
@@ -145,8 +140,7 @@ object Resources {
         * @param value The override value to set.
         */
       /* static member */
-      @scala.inline
-      def setGlobalQualifierValue(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalQualifierValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setGlobalQualifierValue(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalQualifierValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       /**
         * Applies a single qualifier value override to default contexts of all views for the current app, and specifies the persistence of the override.
         * @param key The name of the qualifier to override.
@@ -154,8 +148,7 @@ object Resources {
         * @param persistence The persistence of the override value.
         */
       /* static member */
-      @scala.inline
-      def setGlobalQualifierValue(key: String, value: String, persistence: ResourceQualifierPersistence): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalQualifierValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], persistence.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setGlobalQualifierValue(key: String, value: String, persistence: ResourceQualifierPersistence): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalQualifierValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], persistence.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /** Represents a collection of ResourceContext language qualifiers. */
@@ -227,8 +220,7 @@ object Resources {
       @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceManager.current")
       @js.native
       def current: typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceManager = js.native
-      @scala.inline
-      def current_=(x: typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+      inline def current_=(x: typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
       
       /**
         * Determines whether a supplied string matches the resource reference format (an ms-resource string URI identifier).
@@ -236,8 +228,7 @@ object Resources {
         * @return TRUE if the string matches.
         */
       /* static member */
-      @scala.inline
-      def isResourceReference(resourceReference: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResourceReference")(resourceReference.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isResourceReference(resourceReference: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResourceReference")(resourceReference.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     /** A collection of related resources, typically either for a particular app package, or a resource file for a particular package. */
@@ -505,32 +496,28 @@ object Resources {
       * @return A resource loader for the Resources subtree of the currently running app's main ResourceMap .
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader]
     /**
       * Gets a ResourceLoader object for the specified ResourceMap . This ResourceLoader uses a default context associated with the current view.
       * @param name The resource identifier of the ResourceMap that the new resource loader uses for unqualified resource references. The loader can then retrieve resources relative to those references.
       * @return A resource loader for the specified ResourceMap .
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(name: String): typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader]
+    inline def getForCurrentView(name: String): typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader]
     
     /**
       * Gets a ResourceLoader object for the Resources subtree of the currently running app's main ResourceMap . This ResourceLoader uses a default context that's not associated with any view.
       * @return A resource loader for the Resources subtree of the currently running app's main ResourceMap . This ResourceLoader uses a default context that's not associated with any view. You can't use this ResourceLoader to retrieve any resource that has resource candidates qualified for scale.
       */
     /* static member */
-    @scala.inline
-    def getForViewIndependentUse(): typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getForViewIndependentUse")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader]
+    inline def getForViewIndependentUse(): typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getForViewIndependentUse")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader]
     /**
       * Gets a ResourceLoader object for the specified ResourceMap . This ResourceLoader uses a default context that's not associated with any view.
       * @param name The resource identifier of the ResourceMap that the new resource loader uses for unqualified resource references. The loader can then retrieve resources relative to those references.
       * @return A resource loader for the Resources subtree of the currently running app's main ResourceMap . This ResourceLoader uses a default context that's not associated with any view. You can't use this ResourceLoader to retrieve any resource that has resource candidates qualified for scale.
       */
     /* static member */
-    @scala.inline
-    def getForViewIndependentUse(name: String): typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getForViewIndependentUse")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader]
+    inline def getForViewIndependentUse(name: String): typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("getForViewIndependentUse")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Resources.ResourceLoader]
     
     /**
       * Returns the most appropriate string value of a resource, specified as a Uri for a resource identifier, for the default ResourceContext of the currently running app.
@@ -538,7 +525,6 @@ object Resources {
       * @return The most appropriate string value of the specified resource for the default ResourceContext .
       */
     /* static member */
-    @scala.inline
-    def getStringForReference(uri: Uri): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringForReference")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getStringForReference(uri: Uri): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringForReference")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

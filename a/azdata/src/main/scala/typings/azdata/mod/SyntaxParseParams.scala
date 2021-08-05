@@ -12,19 +12,15 @@ trait SyntaxParseParams extends StObject {
 }
 object SyntaxParseParams {
   
-  @scala.inline
-  def apply(ownerUri: String, query: String): SyntaxParseParams = {
+  inline def apply(ownerUri: String, query: String): SyntaxParseParams = {
     val __obj = js.Dynamic.literal(ownerUri = ownerUri.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxParseParams]
   }
   
-  @scala.inline
-  implicit class SyntaxParseParamsMutableBuilder[Self <: SyntaxParseParams] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxParseParams](x: Self) {
     
-    @scala.inline
-    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
+    inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

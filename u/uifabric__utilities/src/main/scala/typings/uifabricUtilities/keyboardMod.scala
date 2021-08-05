@@ -10,9 +10,7 @@ object keyboardMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addDirectionalKeyCode(which: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addDirectionalKeyCode(which: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def isDirectionalKeyCode(which: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDirectionalKeyCode(which: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

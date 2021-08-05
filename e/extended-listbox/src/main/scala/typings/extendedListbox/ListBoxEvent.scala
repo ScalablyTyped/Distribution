@@ -18,22 +18,17 @@ trait ListBoxEvent extends StObject {
 }
 object ListBoxEvent {
   
-  @scala.inline
-  def apply(args: js.Any, eventName: String, target: Element): ListBoxEvent = {
+  inline def apply(args: js.Any, eventName: String, target: Element): ListBoxEvent = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxEvent]
   }
   
-  @scala.inline
-  implicit class ListBoxEventMutableBuilder[Self <: ListBoxEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ListBoxEvent](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

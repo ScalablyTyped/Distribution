@@ -8,11 +8,9 @@ object hostValidationStrings {
   
   @js.native
   sealed trait both extends StObject
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
   sealed trait either extends StObject
-  @scala.inline
-  def either: either = "either".asInstanceOf[either]
+  inline def either: either = "either".asInstanceOf[either]
 }

@@ -17,19 +17,15 @@ trait ResumeRequest extends StObject {
 }
 object ResumeRequest {
   
-  @scala.inline
-  def apply(): ResumeRequest = {
+  inline def apply(): ResumeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResumeRequest]
   }
   
-  @scala.inline
-  implicit class ResumeRequestMutableBuilder[Self <: ResumeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResumeRequest](x: Self) {
     
-    @scala.inline
-    def setTerminateOnResume(value: Boolean): Self = StObject.set(x, "terminateOnResume", value.asInstanceOf[js.Any])
+    inline def setTerminateOnResume(value: Boolean): Self = StObject.set(x, "terminateOnResume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateOnResumeUndefined: Self = StObject.set(x, "terminateOnResume", js.undefined)
+    inline def setTerminateOnResumeUndefined: Self = StObject.set(x, "terminateOnResume", js.undefined)
   }
 }

@@ -55,20 +55,16 @@ object interfacesMod {
     }
     object ProvideSyntax {
       
-      @scala.inline
-      def apply(constraint: (/* bind */ Bind, /* target */ js.Any) => js.Any, implementationType: js.Any): ProvideSyntax = {
+      inline def apply(constraint: (/* bind */ Bind, /* target */ js.Any) => js.Any, implementationType: js.Any): ProvideSyntax = {
         val __obj = js.Dynamic.literal(constraint = js.Any.fromFunction2(constraint), implementationType = implementationType.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProvideSyntax]
       }
       
-      @scala.inline
-      implicit class ProvideSyntaxMutableBuilder[Self <: ProvideSyntax] (val x: Self) extends AnyVal {
+      extension [Self <: ProvideSyntax](x: Self) {
         
-        @scala.inline
-        def setConstraint(value: (/* bind */ Bind, /* target */ js.Any) => js.Any): Self = StObject.set(x, "constraint", js.Any.fromFunction2(value))
+        inline def setConstraint(value: (/* bind */ Bind, /* target */ js.Any) => js.Any): Self = StObject.set(x, "constraint", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setImplementationType(value: js.Any): Self = StObject.set(x, "implementationType", value.asInstanceOf[js.Any])
+        inline def setImplementationType(value: js.Any): Self = StObject.set(x, "implementationType", value.asInstanceOf[js.Any])
       }
     }
     

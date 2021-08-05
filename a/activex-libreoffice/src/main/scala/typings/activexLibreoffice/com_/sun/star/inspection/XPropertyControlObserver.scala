@@ -25,19 +25,15 @@ trait XPropertyControlObserver extends StObject {
 }
 object XPropertyControlObserver {
   
-  @scala.inline
-  def apply(focusGained: XPropertyControl => Unit, valueChanged: XPropertyControl => Unit): XPropertyControlObserver = {
+  inline def apply(focusGained: XPropertyControl => Unit, valueChanged: XPropertyControl => Unit): XPropertyControlObserver = {
     val __obj = js.Dynamic.literal(focusGained = js.Any.fromFunction1(focusGained), valueChanged = js.Any.fromFunction1(valueChanged))
     __obj.asInstanceOf[XPropertyControlObserver]
   }
   
-  @scala.inline
-  implicit class XPropertyControlObserverMutableBuilder[Self <: XPropertyControlObserver] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyControlObserver](x: Self) {
     
-    @scala.inline
-    def setFocusGained(value: XPropertyControl => Unit): Self = StObject.set(x, "focusGained", js.Any.fromFunction1(value))
+    inline def setFocusGained(value: XPropertyControl => Unit): Self = StObject.set(x, "focusGained", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValueChanged(value: XPropertyControl => Unit): Self = StObject.set(x, "valueChanged", js.Any.fromFunction1(value))
+    inline def setValueChanged(value: XPropertyControl => Unit): Self = StObject.set(x, "valueChanged", js.Any.fromFunction1(value))
   }
 }

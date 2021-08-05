@@ -23,19 +23,15 @@ trait IControllerLocals extends StObject {
 }
 object IControllerLocals {
   
-  @scala.inline
-  def apply($element: JQuery, $scope: IScope): IControllerLocals = {
+  inline def apply($element: JQuery, $scope: IScope): IControllerLocals = {
     val __obj = js.Dynamic.literal($element = $element.asInstanceOf[js.Any], $scope = $scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[IControllerLocals]
   }
   
-  @scala.inline
-  implicit class IControllerLocalsMutableBuilder[Self <: IControllerLocals] (val x: Self) extends AnyVal {
+  extension [Self <: IControllerLocals](x: Self) {
     
-    @scala.inline
-    def set$element(value: JQuery): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
+    inline def set$element(value: JQuery): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$scope(value: IScope): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
+    inline def set$scope(value: IScope): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ trait TextSortDescriptor2
 }
 object TextSortDescriptor2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Delimiter: String,
     IsSortColumns: Boolean,
     IsSortInTable: Boolean,
@@ -35,13 +34,10 @@ object TextSortDescriptor2 {
     __obj.asInstanceOf[TextSortDescriptor2]
   }
   
-  @scala.inline
-  implicit class TextSortDescriptor2MutableBuilder[Self <: TextSortDescriptor2] (val x: Self) extends AnyVal {
+  extension [Self <: TextSortDescriptor2](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortInTable(value: Boolean): Self = StObject.set(x, "IsSortInTable", value.asInstanceOf[js.Any])
+    inline def setIsSortInTable(value: Boolean): Self = StObject.set(x, "IsSortInTable", value.asInstanceOf[js.Any])
   }
 }

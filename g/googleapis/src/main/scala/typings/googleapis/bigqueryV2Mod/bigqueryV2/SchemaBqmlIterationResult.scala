@@ -42,43 +42,31 @@ trait SchemaBqmlIterationResult extends StObject {
 }
 object SchemaBqmlIterationResult {
   
-  @scala.inline
-  def apply(): SchemaBqmlIterationResult = {
+  inline def apply(): SchemaBqmlIterationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBqmlIterationResult]
   }
   
-  @scala.inline
-  implicit class SchemaBqmlIterationResultMutableBuilder[Self <: SchemaBqmlIterationResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBqmlIterationResult](x: Self) {
     
-    @scala.inline
-    def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
+    inline def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
+    inline def setDurationMsUndefined: Self = StObject.set(x, "durationMs", js.undefined)
     
-    @scala.inline
-    def setEvalLoss(value: Double): Self = StObject.set(x, "evalLoss", value.asInstanceOf[js.Any])
+    inline def setEvalLoss(value: Double): Self = StObject.set(x, "evalLoss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvalLossUndefined: Self = StObject.set(x, "evalLoss", js.undefined)
+    inline def setEvalLossUndefined: Self = StObject.set(x, "evalLoss", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setLearnRate(value: Double): Self = StObject.set(x, "learnRate", value.asInstanceOf[js.Any])
+    inline def setLearnRate(value: Double): Self = StObject.set(x, "learnRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLearnRateUndefined: Self = StObject.set(x, "learnRate", js.undefined)
+    inline def setLearnRateUndefined: Self = StObject.set(x, "learnRate", js.undefined)
     
-    @scala.inline
-    def setTrainingLoss(value: Double): Self = StObject.set(x, "trainingLoss", value.asInstanceOf[js.Any])
+    inline def setTrainingLoss(value: Double): Self = StObject.set(x, "trainingLoss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingLossUndefined: Self = StObject.set(x, "trainingLoss", js.undefined)
+    inline def setTrainingLossUndefined: Self = StObject.set(x, "trainingLoss", js.undefined)
   }
 }

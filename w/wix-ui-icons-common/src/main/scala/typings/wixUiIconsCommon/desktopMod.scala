@@ -22,20 +22,16 @@ object desktopMod extends Shortcut {
   }
   object DesktopProps {
     
-    @scala.inline
-    def apply(): DesktopProps = {
+    inline def apply(): DesktopProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DesktopProps]
     }
     
-    @scala.inline
-    implicit class DesktopPropsMutableBuilder[Self <: DesktopProps] (val x: Self) extends AnyVal {
+    extension [Self <: DesktopProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

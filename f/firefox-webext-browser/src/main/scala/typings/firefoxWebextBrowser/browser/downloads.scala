@@ -20,26 +20,20 @@ object downloads {
   }
   object BooleanDelta {
     
-    @scala.inline
-    def apply(): BooleanDelta = {
+    inline def apply(): BooleanDelta = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BooleanDelta]
     }
     
-    @scala.inline
-    implicit class BooleanDeltaMutableBuilder[Self <: BooleanDelta] (val x: Self) extends AnyVal {
+    extension [Self <: BooleanDelta](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: Boolean): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Boolean): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
   
@@ -70,29 +64,21 @@ object downloads {
   trait DangerType extends StObject
   object DangerType {
     
-    @scala.inline
-    def accepted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.accepted = "accepted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.accepted]
+    inline def accepted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.accepted = "accepted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.accepted]
     
-    @scala.inline
-    def content: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content = "content".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content]
+    inline def content: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content = "content".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content]
     
-    @scala.inline
-    def file: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.file = "file".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.file]
+    inline def file: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.file = "file".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.file]
     
-    @scala.inline
-    def host: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.host = "host".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.host]
+    inline def host: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.host = "host".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.host]
     
-    @scala.inline
-    def safe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.safe = "safe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.safe]
+    inline def safe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.safe = "safe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.safe]
     
-    @scala.inline
-    def uncommon: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uncommon = "uncommon".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uncommon]
+    inline def uncommon: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uncommon = "uncommon".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uncommon]
     
-    @scala.inline
-    def unwanted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unwanted = "unwanted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unwanted]
+    inline def unwanted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unwanted = "unwanted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unwanted]
     
-    @scala.inline
-    def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
+    inline def url: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url = "url".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.url]
   }
   
   trait DoubleDelta extends StObject {
@@ -103,26 +89,20 @@ object downloads {
   }
   object DoubleDelta {
     
-    @scala.inline
-    def apply(): DoubleDelta = {
+    inline def apply(): DoubleDelta = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DoubleDelta]
     }
     
-    @scala.inline
-    implicit class DoubleDeltaMutableBuilder[Self <: DoubleDelta] (val x: Self) extends AnyVal {
+    extension [Self <: DoubleDelta](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: Double): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Double): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
   
@@ -184,8 +164,7 @@ object downloads {
   }
   object DownloadItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytesReceived: Double,
       canResume: Boolean,
       danger: DangerType,
@@ -204,89 +183,61 @@ object downloads {
       __obj.asInstanceOf[DownloadItem]
     }
     
-    @scala.inline
-    implicit class DownloadItemMutableBuilder[Self <: DownloadItem] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadItem](x: Self) {
       
-      @scala.inline
-      def setByExtensionId(value: String): Self = StObject.set(x, "byExtensionId", value.asInstanceOf[js.Any])
+      inline def setByExtensionId(value: String): Self = StObject.set(x, "byExtensionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByExtensionIdUndefined: Self = StObject.set(x, "byExtensionId", js.undefined)
+      inline def setByExtensionIdUndefined: Self = StObject.set(x, "byExtensionId", js.undefined)
       
-      @scala.inline
-      def setByExtensionName(value: String): Self = StObject.set(x, "byExtensionName", value.asInstanceOf[js.Any])
+      inline def setByExtensionName(value: String): Self = StObject.set(x, "byExtensionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByExtensionNameUndefined: Self = StObject.set(x, "byExtensionName", js.undefined)
+      inline def setByExtensionNameUndefined: Self = StObject.set(x, "byExtensionName", js.undefined)
       
-      @scala.inline
-      def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+      inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanResume(value: Boolean): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
+      inline def setCanResume(value: Boolean): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDanger(value: DangerType): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
+      inline def setDanger(value: DangerType): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setError(value: InterruptReason): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: InterruptReason): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setEstimatedEndTime(value: String): Self = StObject.set(x, "estimatedEndTime", value.asInstanceOf[js.Any])
+      inline def setEstimatedEndTime(value: String): Self = StObject.set(x, "estimatedEndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEstimatedEndTimeUndefined: Self = StObject.set(x, "estimatedEndTime", js.undefined)
+      inline def setEstimatedEndTimeUndefined: Self = StObject.set(x, "estimatedEndTime", js.undefined)
       
-      @scala.inline
-      def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+      inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+      inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+      inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+      inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,68 +278,48 @@ object downloads {
   }
   object DownloadOptions {
     
-    @scala.inline
-    def apply(url: String): DownloadOptions = {
+    inline def apply(url: String): DownloadOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    @scala.inline
-    implicit class DownloadOptionsMutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadOptions](x: Self) {
       
-      @scala.inline
-      def setAllowHttpErrors(value: Boolean): Self = StObject.set(x, "allowHttpErrors", value.asInstanceOf[js.Any])
+      inline def setAllowHttpErrors(value: Boolean): Self = StObject.set(x, "allowHttpErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHttpErrorsUndefined: Self = StObject.set(x, "allowHttpErrors", js.undefined)
+      inline def setAllowHttpErrorsUndefined: Self = StObject.set(x, "allowHttpErrors", js.undefined)
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setConflictAction(value: FilenameConflictAction): Self = StObject.set(x, "conflictAction", value.asInstanceOf[js.Any])
+      inline def setConflictAction(value: FilenameConflictAction): Self = StObject.set(x, "conflictAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConflictActionUndefined: Self = StObject.set(x, "conflictAction", js.undefined)
+      inline def setConflictActionUndefined: Self = StObject.set(x, "conflictAction", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Array[DownloadOptionsHeaders]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[DownloadOptionsHeaders]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: DownloadOptionsHeaders*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: DownloadOptionsHeaders*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+      inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
+      inline def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
       
-      @scala.inline
-      def setMethod(value: DownloadOptionsMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: DownloadOptionsMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setSaveAs(value: Boolean): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
+      inline def setSaveAs(value: Boolean): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveAsUndefined: Self = StObject.set(x, "saveAs", js.undefined)
+      inline def setSaveAsUndefined: Self = StObject.set(x, "saveAs", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -402,20 +333,16 @@ object downloads {
   }
   object DownloadOptionsHeaders {
     
-    @scala.inline
-    def apply(name: String, value: String): DownloadOptionsHeaders = {
+    inline def apply(name: String, value: String): DownloadOptionsHeaders = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadOptionsHeaders]
     }
     
-    @scala.inline
-    implicit class DownloadOptionsHeadersMutableBuilder[Self <: DownloadOptionsHeaders] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadOptionsHeaders](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -427,11 +354,9 @@ object downloads {
   trait DownloadOptionsMethod extends StObject
   object DownloadOptionsMethod {
     
-    @scala.inline
-    def GET: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.GET = "GET".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.GET]
+    inline def GET: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.GET = "GET".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.GET]
     
-    @scala.inline
-    def POST: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.POST = "POST".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.POST]
+    inline def POST: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.POST = "POST".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.POST]
   }
   
   /**
@@ -518,170 +443,116 @@ object downloads {
   }
   object DownloadQuery {
     
-    @scala.inline
-    def apply(): DownloadQuery = {
+    inline def apply(): DownloadQuery = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownloadQuery]
     }
     
-    @scala.inline
-    implicit class DownloadQueryMutableBuilder[Self <: DownloadQuery] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadQuery](x: Self) {
       
-      @scala.inline
-      def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+      inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
+      inline def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
       
-      @scala.inline
-      def setDanger(value: DangerType): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
+      inline def setDanger(value: DangerType): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
+      inline def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setEndedAfter(value: DownloadTime): Self = StObject.set(x, "endedAfter", value.asInstanceOf[js.Any])
+      inline def setEndedAfter(value: DownloadTime): Self = StObject.set(x, "endedAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndedAfterUndefined: Self = StObject.set(x, "endedAfter", js.undefined)
+      inline def setEndedAfterUndefined: Self = StObject.set(x, "endedAfter", js.undefined)
       
-      @scala.inline
-      def setEndedBefore(value: DownloadTime): Self = StObject.set(x, "endedBefore", value.asInstanceOf[js.Any])
+      inline def setEndedBefore(value: DownloadTime): Self = StObject.set(x, "endedBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndedBeforeUndefined: Self = StObject.set(x, "endedBefore", js.undefined)
+      inline def setEndedBeforeUndefined: Self = StObject.set(x, "endedBefore", js.undefined)
       
-      @scala.inline
-      def setError(value: InterruptReason): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: InterruptReason): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameRegex(value: String): Self = StObject.set(x, "filenameRegex", value.asInstanceOf[js.Any])
+      inline def setFilenameRegex(value: String): Self = StObject.set(x, "filenameRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameRegexUndefined: Self = StObject.set(x, "filenameRegex", js.undefined)
+      inline def setFilenameRegexUndefined: Self = StObject.set(x, "filenameRegex", js.undefined)
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+      inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
       
-      @scala.inline
-      def setOrderBy(value: js.Array[String]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+      inline def setOrderBy(value: js.Array[String]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+      inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
       
-      @scala.inline
-      def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+      inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Array[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
       
-      @scala.inline
-      def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      @scala.inline
-      def setStartedAfter(value: DownloadTime): Self = StObject.set(x, "startedAfter", value.asInstanceOf[js.Any])
+      inline def setStartedAfter(value: DownloadTime): Self = StObject.set(x, "startedAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartedAfterUndefined: Self = StObject.set(x, "startedAfter", js.undefined)
+      inline def setStartedAfterUndefined: Self = StObject.set(x, "startedAfter", js.undefined)
       
-      @scala.inline
-      def setStartedBefore(value: DownloadTime): Self = StObject.set(x, "startedBefore", value.asInstanceOf[js.Any])
+      inline def setStartedBefore(value: DownloadTime): Self = StObject.set(x, "startedBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartedBeforeUndefined: Self = StObject.set(x, "startedBefore", js.undefined)
+      inline def setStartedBeforeUndefined: Self = StObject.set(x, "startedBefore", js.undefined)
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytesGreater(value: Double): Self = StObject.set(x, "totalBytesGreater", value.asInstanceOf[js.Any])
+      inline def setTotalBytesGreater(value: Double): Self = StObject.set(x, "totalBytesGreater", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytesGreaterUndefined: Self = StObject.set(x, "totalBytesGreater", js.undefined)
+      inline def setTotalBytesGreaterUndefined: Self = StObject.set(x, "totalBytesGreater", js.undefined)
       
-      @scala.inline
-      def setTotalBytesLess(value: Double): Self = StObject.set(x, "totalBytesLess", value.asInstanceOf[js.Any])
+      inline def setTotalBytesLess(value: Double): Self = StObject.set(x, "totalBytesLess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytesLessUndefined: Self = StObject.set(x, "totalBytesLess", js.undefined)
+      inline def setTotalBytesLessUndefined: Self = StObject.set(x, "totalBytesLess", js.undefined)
       
-      @scala.inline
-      def setTotalBytesUndefined: Self = StObject.set(x, "totalBytes", js.undefined)
+      inline def setTotalBytesUndefined: Self = StObject.set(x, "totalBytes", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
+      inline def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
+      inline def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -699,14 +570,11 @@ object downloads {
   trait FilenameConflictAction extends StObject
   object FilenameConflictAction {
     
-    @scala.inline
-    def overwrite: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.overwrite = "overwrite".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.overwrite]
+    inline def overwrite: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.overwrite = "overwrite".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.overwrite]
     
-    @scala.inline
-    def prompt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.prompt = "prompt".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.prompt]
+    inline def prompt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.prompt = "prompt".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.prompt]
     
-    @scala.inline
-    def uniquify: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uniquify = "uniquify".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uniquify]
+    inline def uniquify: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uniquify = "uniquify".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.uniquify]
   }
   
   trait GetFileIconOptions extends StObject {
@@ -718,20 +586,16 @@ object downloads {
   }
   object GetFileIconOptions {
     
-    @scala.inline
-    def apply(): GetFileIconOptions = {
+    inline def apply(): GetFileIconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetFileIconOptions]
     }
     
-    @scala.inline
-    implicit class GetFileIconOptionsMutableBuilder[Self <: GetFileIconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetFileIconOptions](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -764,77 +628,53 @@ object downloads {
   trait InterruptReason extends StObject
   object InterruptReason {
     
-    @scala.inline
-    def CRASH: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.CRASH = "CRASH".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.CRASH]
+    inline def CRASH: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.CRASH = "CRASH".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.CRASH]
     
-    @scala.inline
-    def FILE_ACCESS_DENIED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_ACCESS_DENIED = "FILE_ACCESS_DENIED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_ACCESS_DENIED]
+    inline def FILE_ACCESS_DENIED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_ACCESS_DENIED = "FILE_ACCESS_DENIED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_ACCESS_DENIED]
     
-    @scala.inline
-    def FILE_BLOCKED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_BLOCKED = "FILE_BLOCKED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_BLOCKED]
+    inline def FILE_BLOCKED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_BLOCKED = "FILE_BLOCKED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_BLOCKED]
     
-    @scala.inline
-    def FILE_FAILED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_FAILED = "FILE_FAILED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_FAILED]
+    inline def FILE_FAILED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_FAILED = "FILE_FAILED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_FAILED]
     
-    @scala.inline
-    def FILE_NAME_TOO_LONG: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_NAME_TOO_LONG = "FILE_NAME_TOO_LONG".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_NAME_TOO_LONG]
+    inline def FILE_NAME_TOO_LONG: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_NAME_TOO_LONG = "FILE_NAME_TOO_LONG".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_NAME_TOO_LONG]
     
-    @scala.inline
-    def FILE_NO_SPACE: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_NO_SPACE = "FILE_NO_SPACE".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_NO_SPACE]
+    inline def FILE_NO_SPACE: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_NO_SPACE = "FILE_NO_SPACE".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_NO_SPACE]
     
-    @scala.inline
-    def FILE_SECURITY_CHECK_FAILED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_SECURITY_CHECK_FAILED = "FILE_SECURITY_CHECK_FAILED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_SECURITY_CHECK_FAILED]
+    inline def FILE_SECURITY_CHECK_FAILED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_SECURITY_CHECK_FAILED = "FILE_SECURITY_CHECK_FAILED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_SECURITY_CHECK_FAILED]
     
-    @scala.inline
-    def FILE_TOO_LARGE: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TOO_LARGE = "FILE_TOO_LARGE".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TOO_LARGE]
+    inline def FILE_TOO_LARGE: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TOO_LARGE = "FILE_TOO_LARGE".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TOO_LARGE]
     
-    @scala.inline
-    def FILE_TOO_SHORT: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TOO_SHORT = "FILE_TOO_SHORT".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TOO_SHORT]
+    inline def FILE_TOO_SHORT: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TOO_SHORT = "FILE_TOO_SHORT".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TOO_SHORT]
     
-    @scala.inline
-    def FILE_TRANSIENT_ERROR: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TRANSIENT_ERROR = "FILE_TRANSIENT_ERROR".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TRANSIENT_ERROR]
+    inline def FILE_TRANSIENT_ERROR: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TRANSIENT_ERROR = "FILE_TRANSIENT_ERROR".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_TRANSIENT_ERROR]
     
-    @scala.inline
-    def FILE_VIRUS_INFECTED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_VIRUS_INFECTED = "FILE_VIRUS_INFECTED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_VIRUS_INFECTED]
+    inline def FILE_VIRUS_INFECTED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_VIRUS_INFECTED = "FILE_VIRUS_INFECTED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.FILE_VIRUS_INFECTED]
     
-    @scala.inline
-    def NETWORK_DISCONNECTED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_DISCONNECTED = "NETWORK_DISCONNECTED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_DISCONNECTED]
+    inline def NETWORK_DISCONNECTED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_DISCONNECTED = "NETWORK_DISCONNECTED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_DISCONNECTED]
     
-    @scala.inline
-    def NETWORK_FAILED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_FAILED = "NETWORK_FAILED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_FAILED]
+    inline def NETWORK_FAILED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_FAILED = "NETWORK_FAILED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_FAILED]
     
-    @scala.inline
-    def NETWORK_INVALID_REQUEST: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_INVALID_REQUEST = "NETWORK_INVALID_REQUEST".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_INVALID_REQUEST]
+    inline def NETWORK_INVALID_REQUEST: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_INVALID_REQUEST = "NETWORK_INVALID_REQUEST".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_INVALID_REQUEST]
     
-    @scala.inline
-    def NETWORK_SERVER_DOWN: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_SERVER_DOWN = "NETWORK_SERVER_DOWN".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_SERVER_DOWN]
+    inline def NETWORK_SERVER_DOWN: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_SERVER_DOWN = "NETWORK_SERVER_DOWN".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_SERVER_DOWN]
     
-    @scala.inline
-    def NETWORK_TIMEOUT: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_TIMEOUT = "NETWORK_TIMEOUT".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_TIMEOUT]
+    inline def NETWORK_TIMEOUT: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_TIMEOUT = "NETWORK_TIMEOUT".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.NETWORK_TIMEOUT]
     
-    @scala.inline
-    def SERVER_BAD_CONTENT: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_BAD_CONTENT = "SERVER_BAD_CONTENT".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_BAD_CONTENT]
+    inline def SERVER_BAD_CONTENT: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_BAD_CONTENT = "SERVER_BAD_CONTENT".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_BAD_CONTENT]
     
-    @scala.inline
-    def SERVER_CERT_PROBLEM: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_CERT_PROBLEM = "SERVER_CERT_PROBLEM".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_CERT_PROBLEM]
+    inline def SERVER_CERT_PROBLEM: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_CERT_PROBLEM = "SERVER_CERT_PROBLEM".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_CERT_PROBLEM]
     
-    @scala.inline
-    def SERVER_FAILED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_FAILED = "SERVER_FAILED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_FAILED]
+    inline def SERVER_FAILED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_FAILED = "SERVER_FAILED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_FAILED]
     
-    @scala.inline
-    def SERVER_FORBIDDEN: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_FORBIDDEN = "SERVER_FORBIDDEN".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_FORBIDDEN]
+    inline def SERVER_FORBIDDEN: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_FORBIDDEN = "SERVER_FORBIDDEN".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_FORBIDDEN]
     
-    @scala.inline
-    def SERVER_NO_RANGE: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_NO_RANGE = "SERVER_NO_RANGE".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_NO_RANGE]
+    inline def SERVER_NO_RANGE: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_NO_RANGE = "SERVER_NO_RANGE".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_NO_RANGE]
     
-    @scala.inline
-    def SERVER_UNAUTHORIZED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_UNAUTHORIZED = "SERVER_UNAUTHORIZED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_UNAUTHORIZED]
+    inline def SERVER_UNAUTHORIZED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_UNAUTHORIZED = "SERVER_UNAUTHORIZED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.SERVER_UNAUTHORIZED]
     
-    @scala.inline
-    def USER_CANCELED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_CANCELED = "USER_CANCELED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_CANCELED]
+    inline def USER_CANCELED: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_CANCELED = "USER_CANCELED".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_CANCELED]
     
-    @scala.inline
-    def USER_SHUTDOWN: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_SHUTDOWN = "USER_SHUTDOWN".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_SHUTDOWN]
+    inline def USER_SHUTDOWN: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_SHUTDOWN = "USER_SHUTDOWN".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.USER_SHUTDOWN]
   }
   
   trait OnChangedDownloadDelta extends StObject {
@@ -881,95 +721,66 @@ object downloads {
   }
   object OnChangedDownloadDelta {
     
-    @scala.inline
-    def apply(id: Double): OnChangedDownloadDelta = {
+    inline def apply(id: Double): OnChangedDownloadDelta = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnChangedDownloadDelta]
     }
     
-    @scala.inline
-    implicit class OnChangedDownloadDeltaMutableBuilder[Self <: OnChangedDownloadDelta] (val x: Self) extends AnyVal {
+    extension [Self <: OnChangedDownloadDelta](x: Self) {
       
-      @scala.inline
-      def setCanResume(value: BooleanDelta): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
+      inline def setCanResume(value: BooleanDelta): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanResumeUndefined: Self = StObject.set(x, "canResume", js.undefined)
+      inline def setCanResumeUndefined: Self = StObject.set(x, "canResume", js.undefined)
       
-      @scala.inline
-      def setDanger(value: StringDelta): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
+      inline def setDanger(value: StringDelta): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
+      inline def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: StringDelta): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: StringDelta): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setError(value: StringDelta): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: StringDelta): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExists(value: BooleanDelta): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: BooleanDelta): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
       
-      @scala.inline
-      def setFileSize(value: DoubleDelta): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: DoubleDelta): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+      inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
       
-      @scala.inline
-      def setFilename(value: StringDelta): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: StringDelta): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: StringDelta): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: StringDelta): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+      inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
       
-      @scala.inline
-      def setPaused(value: BooleanDelta): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: BooleanDelta): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: StringDelta): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: StringDelta): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      @scala.inline
-      def setState(value: StringDelta): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: StringDelta): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTotalBytes(value: DoubleDelta): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: DoubleDelta): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytesUndefined: Self = StObject.set(x, "totalBytes", js.undefined)
+      inline def setTotalBytesUndefined: Self = StObject.set(x, "totalBytes", js.undefined)
       
-      @scala.inline
-      def setUrl(value: StringDelta): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: StringDelta): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -991,14 +802,11 @@ object downloads {
   trait State extends StObject
   object State {
     
-    @scala.inline
-    def complete: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete = "complete".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete]
+    inline def complete: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete = "complete".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete]
     
-    @scala.inline
-    def in_progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.in_progress = "in_progress".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.in_progress]
+    inline def in_progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.in_progress = "in_progress".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.in_progress]
     
-    @scala.inline
-    def interrupted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted = "interrupted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted]
+    inline def interrupted: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted = "interrupted".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.interrupted]
   }
   
   trait StringDelta extends StObject {
@@ -1009,26 +817,20 @@ object downloads {
   }
   object StringDelta {
     
-    @scala.inline
-    def apply(): StringDelta = {
+    inline def apply(): StringDelta = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StringDelta]
     }
     
-    @scala.inline
-    implicit class StringDeltaMutableBuilder[Self <: StringDelta] (val x: Self) extends AnyVal {
+    extension [Self <: StringDelta](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
 }

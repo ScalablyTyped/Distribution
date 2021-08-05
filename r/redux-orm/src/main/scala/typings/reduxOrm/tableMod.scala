@@ -48,20 +48,16 @@ object tableMod {
   }
   object DefaultMeta {
     
-    @scala.inline
-    def apply[MIdType](): DefaultMeta[MIdType] = {
+    inline def apply[MIdType](): DefaultMeta[MIdType] = {
       val __obj = js.Dynamic.literal(maxId = null)
       __obj.asInstanceOf[DefaultMeta[MIdType]]
     }
     
-    @scala.inline
-    implicit class DefaultMetaMutableBuilder[Self <: DefaultMeta[?], MIdType] (val x: Self & DefaultMeta[MIdType]) extends AnyVal {
+    extension [Self <: DefaultMeta[?], MIdType](x: Self & DefaultMeta[MIdType]) {
       
-      @scala.inline
-      def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
+      inline def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxIdNull: Self = StObject.set(x, "maxId", null)
+      inline def setMaxIdNull: Self = StObject.set(x, "maxId", null)
     }
   }
   
@@ -83,8 +79,7 @@ object tableMod {
   }
   object ModelTableOpts {
     
-    @scala.inline
-    def apply[MClass /* <: Instantiable0[AnyModel] */](
+    inline def apply[MClass /* <: Instantiable0[AnyModel] */](
       arrName: ArrName[MClass],
       fields: /* import warning: importer.ImportType#apply Failed type conversion: MClass['fields'] */ js.Any,
       idAttribute: IdAttribute[MClass],
@@ -94,22 +89,17 @@ object tableMod {
       __obj.asInstanceOf[ModelTableOpts[MClass]]
     }
     
-    @scala.inline
-    implicit class ModelTableOptsMutableBuilder[Self <: ModelTableOpts[?], MClass /* <: Instantiable0[AnyModel] */] (val x: Self & ModelTableOpts[MClass]) extends AnyVal {
+    extension [Self <: ModelTableOpts[?], MClass /* <: Instantiable0[AnyModel] */](x: Self & ModelTableOpts[MClass]) {
       
-      @scala.inline
-      def setArrName(value: ArrName[MClass]): Self = StObject.set(x, "arrName", value.asInstanceOf[js.Any])
+      inline def setArrName(value: ArrName[MClass]): Self = StObject.set(x, "arrName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(
+      inline def setFields(
         value: /* import warning: importer.ImportType#apply Failed type conversion: MClass['fields'] */ js.Any
       ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdAttribute(value: IdAttribute[MClass]): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
+      inline def setIdAttribute(value: IdAttribute[MClass]): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapName(value: MapName[MClass]): Self = StObject.set(x, "mapName", value.asInstanceOf[js.Any])
+      inline def setMapName(value: MapName[MClass]): Self = StObject.set(x, "mapName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,38 +119,28 @@ object tableMod {
   }
   object TableOpts {
     
-    @scala.inline
-    def apply(): TableOpts = {
+    inline def apply(): TableOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableOpts]
     }
     
-    @scala.inline
-    implicit class TableOptsMutableBuilder[Self <: TableOpts] (val x: Self) extends AnyVal {
+    extension [Self <: TableOpts](x: Self) {
       
-      @scala.inline
-      def setArrName(value: String): Self = StObject.set(x, "arrName", value.asInstanceOf[js.Any])
+      inline def setArrName(value: String): Self = StObject.set(x, "arrName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrNameUndefined: Self = StObject.set(x, "arrName", js.undefined)
+      inline def setArrNameUndefined: Self = StObject.set(x, "arrName", js.undefined)
       
-      @scala.inline
-      def setFields(value: StringDictionary[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: StringDictionary[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setIdAttribute(value: String): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
+      inline def setIdAttribute(value: String): Self = StObject.set(x, "idAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdAttributeUndefined: Self = StObject.set(x, "idAttribute", js.undefined)
+      inline def setIdAttributeUndefined: Self = StObject.set(x, "idAttribute", js.undefined)
       
-      @scala.inline
-      def setMapName(value: String): Self = StObject.set(x, "mapName", value.asInstanceOf[js.Any])
+      inline def setMapName(value: String): Self = StObject.set(x, "mapName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapNameUndefined: Self = StObject.set(x, "mapName", js.undefined)
+      inline def setMapNameUndefined: Self = StObject.set(x, "mapName", js.undefined)
     }
   }
   

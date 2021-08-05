@@ -81,8 +81,7 @@ trait Hierarchy extends StObject {
 }
 object Hierarchy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allMember: js.Object => String,
     caption: js.Object => String,
     defaultMember: js.Object => String,
@@ -97,34 +96,24 @@ object Hierarchy {
     __obj.asInstanceOf[Hierarchy]
   }
   
-  @scala.inline
-  implicit class HierarchyMutableBuilder[Self <: Hierarchy] (val x: Self) extends AnyVal {
+  extension [Self <: Hierarchy](x: Self) {
     
-    @scala.inline
-    def setAllMember(value: js.Object => String): Self = StObject.set(x, "allMember", js.Any.fromFunction1(value))
+    inline def setAllMember(value: js.Object => String): Self = StObject.set(x, "allMember", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+    inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultMember(value: js.Object => String): Self = StObject.set(x, "defaultMember", js.Any.fromFunction1(value))
+    inline def setDefaultMember(value: js.Object => String): Self = StObject.set(x, "defaultMember", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
+    inline def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDimensionUniqueName(value: js.Object => String): Self = StObject.set(x, "dimensionUniqueName", js.Any.fromFunction1(value))
+    inline def setDimensionUniqueName(value: js.Object => String): Self = StObject.set(x, "dimensionUniqueName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHierarchyDisplayFolder(value: js.Object => String): Self = StObject.set(x, "hierarchyDisplayFolder", js.Any.fromFunction1(value))
+    inline def setHierarchyDisplayFolder(value: js.Object => String): Self = StObject.set(x, "hierarchyDisplayFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHierarchyOrigin(value: js.Object => Double): Self = StObject.set(x, "hierarchyOrigin", js.Any.fromFunction1(value))
+    inline def setHierarchyOrigin(value: js.Object => Double): Self = StObject.set(x, "hierarchyOrigin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+    inline def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
+    inline def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

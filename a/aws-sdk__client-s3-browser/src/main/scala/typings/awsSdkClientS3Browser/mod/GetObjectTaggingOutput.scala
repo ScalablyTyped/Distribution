@@ -11,8 +11,7 @@ trait GetObjectTaggingOutput
      with typings.awsSdkClientS3Browser.typesGetObjectTaggingOutputMod.GetObjectTaggingOutput
 object GetObjectTaggingOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, TagSet: js.Array[UnmarshalledTag]): GetObjectTaggingOutput = {
+  inline def apply($metadata: ResponseMetadata, TagSet: js.Array[UnmarshalledTag]): GetObjectTaggingOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], TagSet = TagSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectTaggingOutput]
   }

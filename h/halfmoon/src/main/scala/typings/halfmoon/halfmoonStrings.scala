@@ -8,11 +8,9 @@ object halfmoonStrings {
   
   @js.native
   sealed trait no extends StObject
-  @scala.inline
-  def no: no = "no".asInstanceOf[no]
+  inline def no: no = "no".asInstanceOf[no]
   
   @js.native
   sealed trait yes extends StObject
-  @scala.inline
-  def yes: yes = "yes".asInstanceOf[yes]
+  inline def yes: yes = "yes".asInstanceOf[yes]
 }

@@ -51,8 +51,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromNumber(number: Double): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Int64]
+    inline def fromNumber(number: Double): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Int64]
   }
   
   @JSImport("jdataview", "Uint64")
@@ -71,8 +70,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromNumber(number: Double): Uint64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Uint64]
+    inline def fromNumber(number: Double): Uint64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[Uint64]
   }
   
   trait Buffer
@@ -83,17 +81,14 @@ object mod {
   }
   object Buffer {
     
-    @scala.inline
-    def apply(byteLength: Double, length: Double): Buffer = {
+    inline def apply(byteLength: Double, length: Double): Buffer = {
       val __obj = js.Dynamic.literal(byteLength = byteLength.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buffer]
     }
     
-    @scala.inline
-    implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
+    extension [Self <: Buffer](x: Self) {
       
-      @scala.inline
-      def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
+      inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,17 +100,14 @@ object mod {
   }
   object Bytes {
     
-    @scala.inline
-    def apply(length: Double): Bytes = {
+    inline def apply(length: Double): Bytes = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bytes]
     }
     
-    @scala.inline
-    implicit class BytesMutableBuilder[Self <: Bytes] (val x: Self) extends AnyVal {
+    extension [Self <: Bytes](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   

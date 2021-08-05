@@ -29,49 +29,35 @@ trait IGeoXmlWriteOptions extends StObject {
 }
 object IGeoXmlWriteOptions {
   
-  @scala.inline
-  def apply(): IGeoXmlWriteOptions = {
+  inline def apply(): IGeoXmlWriteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeoXmlWriteOptions]
   }
   
-  @scala.inline
-  implicit class IGeoXmlWriteOptionsMutableBuilder[Self <: IGeoXmlWriteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoXmlWriteOptions](x: Self) {
     
-    @scala.inline
-    def setIndentChars(value: String): Self = StObject.set(x, "indentChars", value.asInstanceOf[js.Any])
+    inline def setIndentChars(value: String): Self = StObject.set(x, "indentChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentCharsUndefined: Self = StObject.set(x, "indentChars", js.undefined)
+    inline def setIndentCharsUndefined: Self = StObject.set(x, "indentChars", js.undefined)
     
-    @scala.inline
-    def setNewLineChars(value: String): Self = StObject.set(x, "newLineChars", value.asInstanceOf[js.Any])
+    inline def setNewLineChars(value: String): Self = StObject.set(x, "newLineChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewLineCharsUndefined: Self = StObject.set(x, "newLineChars", js.undefined)
+    inline def setNewLineCharsUndefined: Self = StObject.set(x, "newLineChars", js.undefined)
     
-    @scala.inline
-    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+    inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+    inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
-    @scala.inline
-    def setRoundLocations(value: Boolean): Self = StObject.set(x, "roundLocations", value.asInstanceOf[js.Any])
+    inline def setRoundLocations(value: Boolean): Self = StObject.set(x, "roundLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundLocationsUndefined: Self = StObject.set(x, "roundLocations", js.undefined)
+    inline def setRoundLocationsUndefined: Self = StObject.set(x, "roundLocations", js.undefined)
     
-    @scala.inline
-    def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    @scala.inline
-    def setXmlFormat(value: GeoXmlFormat): Self = StObject.set(x, "xmlFormat", value.asInstanceOf[js.Any])
+    inline def setXmlFormat(value: GeoXmlFormat): Self = StObject.set(x, "xmlFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlFormatUndefined: Self = StObject.set(x, "xmlFormat", js.undefined)
+    inline def setXmlFormatUndefined: Self = StObject.set(x, "xmlFormat", js.undefined)
   }
 }

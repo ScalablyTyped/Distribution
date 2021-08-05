@@ -37,31 +37,23 @@ trait ParamsResourceOrganizationsecuritypoliciesDelete
 }
 object ParamsResourceOrganizationsecuritypoliciesDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceOrganizationsecuritypoliciesDelete = {
+  inline def apply(): ParamsResourceOrganizationsecuritypoliciesDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOrganizationsecuritypoliciesDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceOrganizationsecuritypoliciesDeleteMutableBuilder[Self <: ParamsResourceOrganizationsecuritypoliciesDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceOrganizationsecuritypoliciesDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
+    inline def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
+    inline def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
   }
 }

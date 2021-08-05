@@ -17,28 +17,21 @@ trait ReadonlySideEffectProps extends StObject {
 }
 object ReadonlySideEffectProps {
   
-  @scala.inline
-  def apply(reduceComponentsToState: (/* components */ js.Array[ReactElement], /* props */ js.Any) => State): ReadonlySideEffectProps = {
+  inline def apply(reduceComponentsToState: (/* components */ js.Array[ReactElement], /* props */ js.Any) => State): ReadonlySideEffectProps = {
     val __obj = js.Dynamic.literal(reduceComponentsToState = js.Any.fromFunction2(reduceComponentsToState))
     __obj.asInstanceOf[ReadonlySideEffectProps]
   }
   
-  @scala.inline
-  implicit class ReadonlySideEffectPropsMutableBuilder[Self <: ReadonlySideEffectProps] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlySideEffectProps](x: Self) {
     
-    @scala.inline
-    def setHandleStateChange(value: /* state */ State => Unit): Self = StObject.set(x, "handleStateChange", js.Any.fromFunction1(value))
+    inline def setHandleStateChange(value: /* state */ State => Unit): Self = StObject.set(x, "handleStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleStateChangeUndefined: Self = StObject.set(x, "handleStateChange", js.undefined)
+    inline def setHandleStateChangeUndefined: Self = StObject.set(x, "handleStateChange", js.undefined)
     
-    @scala.inline
-    def setInAmpMode(value: Boolean): Self = StObject.set(x, "inAmpMode", value.asInstanceOf[js.Any])
+    inline def setInAmpMode(value: Boolean): Self = StObject.set(x, "inAmpMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInAmpModeUndefined: Self = StObject.set(x, "inAmpMode", js.undefined)
+    inline def setInAmpModeUndefined: Self = StObject.set(x, "inAmpMode", js.undefined)
     
-    @scala.inline
-    def setReduceComponentsToState(value: (/* components */ js.Array[ReactElement], /* props */ js.Any) => State): Self = StObject.set(x, "reduceComponentsToState", js.Any.fromFunction2(value))
+    inline def setReduceComponentsToState(value: (/* components */ js.Array[ReactElement], /* props */ js.Any) => State): Self = StObject.set(x, "reduceComponentsToState", js.Any.fromFunction2(value))
   }
 }

@@ -14,8 +14,7 @@ trait ReturnTypeTakeResponseBodyAsStreamResponse extends StObject {
 }
 object ReturnTypeTakeResponseBodyAsStreamResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[TakeResponseBodyAsStreamRequest],
     returnType: TakeResponseBodyAsStreamResponse
   ): ReturnTypeTakeResponseBodyAsStreamResponse = {
@@ -23,16 +22,12 @@ object ReturnTypeTakeResponseBodyAsStreamResponse {
     __obj.asInstanceOf[ReturnTypeTakeResponseBodyAsStreamResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeTakeResponseBodyAsStreamResponseMutableBuilder[Self <: ReturnTypeTakeResponseBodyAsStreamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeTakeResponseBodyAsStreamResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[TakeResponseBodyAsStreamRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[TakeResponseBodyAsStreamRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: TakeResponseBodyAsStreamRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: TakeResponseBodyAsStreamRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: TakeResponseBodyAsStreamResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: TakeResponseBodyAsStreamResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

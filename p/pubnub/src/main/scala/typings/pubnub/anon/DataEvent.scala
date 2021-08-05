@@ -13,19 +13,15 @@ trait DataEvent extends StObject {
 }
 object DataEvent {
   
-  @scala.inline
-  def apply(data: MessageAction, event: String): DataEvent = {
+  inline def apply(data: MessageAction, event: String): DataEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataEvent]
   }
   
-  @scala.inline
-  implicit class DataEventMutableBuilder[Self <: DataEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DataEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: MessageAction): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: MessageAction): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

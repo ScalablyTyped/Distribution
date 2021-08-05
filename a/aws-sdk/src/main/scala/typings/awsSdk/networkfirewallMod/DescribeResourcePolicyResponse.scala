@@ -13,19 +13,15 @@ trait DescribeResourcePolicyResponse extends StObject {
 }
 object DescribeResourcePolicyResponse {
   
-  @scala.inline
-  def apply(): DescribeResourcePolicyResponse = {
+  inline def apply(): DescribeResourcePolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeResourcePolicyResponse]
   }
   
-  @scala.inline
-  implicit class DescribeResourcePolicyResponseMutableBuilder[Self <: DescribeResourcePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResourcePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: PolicyString): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: PolicyString): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait CoordinateSpan extends StObject {
 }
 object CoordinateSpan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copy: () => CoordinateSpan,
     equals_ : CoordinateSpan => Boolean,
     latitudeDelta: Double,
@@ -45,19 +44,14 @@ object CoordinateSpan {
     __obj.asInstanceOf[CoordinateSpan]
   }
   
-  @scala.inline
-  implicit class CoordinateSpanMutableBuilder[Self <: CoordinateSpan] (val x: Self) extends AnyVal {
+  extension [Self <: CoordinateSpan](x: Self) {
     
-    @scala.inline
-    def setCopy(value: () => CoordinateSpan): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => CoordinateSpan): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEquals_(value: CoordinateSpan => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: CoordinateSpan => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLatitudeDelta(value: Double): Self = StObject.set(x, "latitudeDelta", value.asInstanceOf[js.Any])
+    inline def setLatitudeDelta(value: Double): Self = StObject.set(x, "latitudeDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeDelta(value: Double): Self = StObject.set(x, "longitudeDelta", value.asInstanceOf[js.Any])
+    inline def setLongitudeDelta(value: Double): Self = StObject.set(x, "longitudeDelta", value.asInstanceOf[js.Any])
   }
 }

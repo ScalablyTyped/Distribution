@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ButtonType extends StObject
 object ButtonType {
   
-  @scala.inline
-  def image: typings.wegameApi.wegameApiStrings.image = "image".asInstanceOf[typings.wegameApi.wegameApiStrings.image]
+  inline def image: typings.wegameApi.wegameApiStrings.image = "image".asInstanceOf[typings.wegameApi.wegameApiStrings.image]
   
-  @scala.inline
-  def text: typings.wegameApi.wegameApiStrings.text = "text".asInstanceOf[typings.wegameApi.wegameApiStrings.text]
+  inline def text: typings.wegameApi.wegameApiStrings.text = "text".asInstanceOf[typings.wegameApi.wegameApiStrings.text]
 }

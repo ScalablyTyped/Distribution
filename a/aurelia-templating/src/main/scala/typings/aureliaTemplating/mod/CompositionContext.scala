@@ -76,79 +76,55 @@ trait CompositionContext extends StObject {
 }
 object CompositionContext {
   
-  @scala.inline
-  def apply(bindingContext: js.Any, container: Container, viewResources: ViewResources_, viewSlot: ViewSlot): CompositionContext = {
+  inline def apply(bindingContext: js.Any, container: Container, viewResources: ViewResources_, viewSlot: ViewSlot): CompositionContext = {
     val __obj = js.Dynamic.literal(bindingContext = bindingContext.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], viewResources = viewResources.asInstanceOf[js.Any], viewSlot = viewSlot.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionContext]
   }
   
-  @scala.inline
-  implicit class CompositionContextMutableBuilder[Self <: CompositionContext] (val x: Self) extends AnyVal {
+  extension [Self <: CompositionContext](x: Self) {
     
-    @scala.inline
-    def setBindingContext(value: js.Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
+    inline def setBindingContext(value: js.Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildContainer(value: Container): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
+    inline def setChildContainer(value: Container): Self = StObject.set(x, "childContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
+    inline def setChildContainerUndefined: Self = StObject.set(x, "childContainer", js.undefined)
     
-    @scala.inline
-    def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: Element): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Element): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setOverrideContext(value: js.Any): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
+    inline def setOverrideContext(value: js.Any): Self = StObject.set(x, "overrideContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideContextUndefined: Self = StObject.set(x, "overrideContext", js.undefined)
+    inline def setOverrideContextUndefined: Self = StObject.set(x, "overrideContext", js.undefined)
     
-    @scala.inline
-    def setOwningView(value: View_): Self = StObject.set(x, "owningView", value.asInstanceOf[js.Any])
+    inline def setOwningView(value: View_): Self = StObject.set(x, "owningView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwningViewUndefined: Self = StObject.set(x, "owningView", js.undefined)
+    inline def setOwningViewUndefined: Self = StObject.set(x, "owningView", js.undefined)
     
-    @scala.inline
-    def setSkipActivation(value: Boolean): Self = StObject.set(x, "skipActivation", value.asInstanceOf[js.Any])
+    inline def setSkipActivation(value: Boolean): Self = StObject.set(x, "skipActivation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipActivationUndefined: Self = StObject.set(x, "skipActivation", js.undefined)
+    inline def setSkipActivationUndefined: Self = StObject.set(x, "skipActivation", js.undefined)
     
-    @scala.inline
-    def setView(value: String | ViewStrategy_): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String | ViewStrategy_): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: js.Any): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: js.Any): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelResource(value: HtmlBehaviorResource): Self = StObject.set(x, "viewModelResource", value.asInstanceOf[js.Any])
+    inline def setViewModelResource(value: HtmlBehaviorResource): Self = StObject.set(x, "viewModelResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelResourceUndefined: Self = StObject.set(x, "viewModelResource", js.undefined)
+    inline def setViewModelResourceUndefined: Self = StObject.set(x, "viewModelResource", js.undefined)
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewResources(value: ViewResources_): Self = StObject.set(x, "viewResources", value.asInstanceOf[js.Any])
+    inline def setViewResources(value: ViewResources_): Self = StObject.set(x, "viewResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewSlot(value: ViewSlot): Self = StObject.set(x, "viewSlot", value.asInstanceOf[js.Any])
+    inline def setViewSlot(value: ViewSlot): Self = StObject.set(x, "viewSlot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

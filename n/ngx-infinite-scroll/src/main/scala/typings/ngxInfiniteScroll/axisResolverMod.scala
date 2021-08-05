@@ -19,7 +19,7 @@ object axisResolverMod {
     
     def pageYOffsetKey(): js.Any = js.native
     
-    var propsMap: js.Any = js.native
+    /* private */ var propsMap: js.Any = js.native
     
     def scrollHeightKey(): js.Any = js.native
     
@@ -27,6 +27,6 @@ object axisResolverMod {
     
     def topKey(): js.Any = js.native
     
-    var vertical: js.Any = js.native
+    /* private */ var vertical: js.Any = js.native
   }
 }

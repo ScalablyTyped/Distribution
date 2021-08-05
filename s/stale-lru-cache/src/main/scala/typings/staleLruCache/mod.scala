@@ -54,44 +54,32 @@ object mod {
   }
   object CacheOptions {
     
-    @scala.inline
-    def apply[K, V](): CacheOptions[K, V] = {
+    inline def apply[K, V](): CacheOptions[K, V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CacheOptions[K, V]]
     }
     
-    @scala.inline
-    implicit class CacheOptionsMutableBuilder[Self <: CacheOptions[?, ?], K, V] (val x: Self & (CacheOptions[K, V])) extends AnyVal {
+    extension [Self <: CacheOptions[?, ?], K, V](x: Self & (CacheOptions[K, V])) {
       
-      @scala.inline
-      def setGetSize(value: (/* value */ V, /* key */ K) => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction2(value))
+      inline def setGetSize(value: (/* value */ V, /* key */ K) => Double): Self = StObject.set(x, "getSize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
+      inline def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setRevalidate(value: (K, /* callback */ OptionsCallback[K, V]) => Unit): Self = StObject.set(x, "revalidate", js.Any.fromFunction2(value))
+      inline def setRevalidate(value: (K, /* callback */ OptionsCallback[K, V]) => Unit): Self = StObject.set(x, "revalidate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
+      inline def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
       
-      @scala.inline
-      def setStaleWhileRevalidate(value: Double): Self = StObject.set(x, "staleWhileRevalidate", value.asInstanceOf[js.Any])
+      inline def setStaleWhileRevalidate(value: Double): Self = StObject.set(x, "staleWhileRevalidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaleWhileRevalidateUndefined: Self = StObject.set(x, "staleWhileRevalidate", js.undefined)
+      inline def setStaleWhileRevalidateUndefined: Self = StObject.set(x, "staleWhileRevalidate", js.undefined)
     }
   }
   
@@ -114,32 +102,24 @@ object mod {
   }
   object SetOptions {
     
-    @scala.inline
-    def apply[K, V](): SetOptions[K, V] = {
+    inline def apply[K, V](): SetOptions[K, V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetOptions[K, V]]
     }
     
-    @scala.inline
-    implicit class SetOptionsMutableBuilder[Self <: SetOptions[?, ?], K, V] (val x: Self & (SetOptions[K, V])) extends AnyVal {
+    extension [Self <: SetOptions[?, ?], K, V](x: Self & (SetOptions[K, V])) {
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setRevalidate(value: (K, /* callback */ OptionsCallback[K, V]) => Unit): Self = StObject.set(x, "revalidate", js.Any.fromFunction2(value))
+      inline def setRevalidate(value: (K, /* callback */ OptionsCallback[K, V]) => Unit): Self = StObject.set(x, "revalidate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
+      inline def setRevalidateUndefined: Self = StObject.set(x, "revalidate", js.undefined)
       
-      @scala.inline
-      def setStaleWhileRevalidate(value: Double): Self = StObject.set(x, "staleWhileRevalidate", value.asInstanceOf[js.Any])
+      inline def setStaleWhileRevalidate(value: Double): Self = StObject.set(x, "staleWhileRevalidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaleWhileRevalidateUndefined: Self = StObject.set(x, "staleWhileRevalidate", js.undefined)
+      inline def setStaleWhileRevalidateUndefined: Self = StObject.set(x, "staleWhileRevalidate", js.undefined)
     }
   }
 }

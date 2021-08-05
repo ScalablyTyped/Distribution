@@ -11,19 +11,15 @@ trait RawDataParams extends StObject {
 }
 object RawDataParams {
   
-  @scala.inline
-  def apply(): RawDataParams = {
+  inline def apply(): RawDataParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RawDataParams]
   }
   
-  @scala.inline
-  implicit class RawDataParamsMutableBuilder[Self <: RawDataParams] (val x: Self) extends AnyVal {
+  extension [Self <: RawDataParams](x: Self) {
     
-    @scala.inline
-    def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

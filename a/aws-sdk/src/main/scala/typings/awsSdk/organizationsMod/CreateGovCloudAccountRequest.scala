@@ -33,40 +33,29 @@ trait CreateGovCloudAccountRequest extends StObject {
 }
 object CreateGovCloudAccountRequest {
   
-  @scala.inline
-  def apply(AccountName: AccountName, Email: Email): CreateGovCloudAccountRequest = {
+  inline def apply(AccountName: AccountName, Email: Email): CreateGovCloudAccountRequest = {
     val __obj = js.Dynamic.literal(AccountName = AccountName.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGovCloudAccountRequest]
   }
   
-  @scala.inline
-  implicit class CreateGovCloudAccountRequestMutableBuilder[Self <: CreateGovCloudAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGovCloudAccountRequest](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUserAccessToBilling(value: IAMUserAccessToBilling): Self = StObject.set(x, "IamUserAccessToBilling", value.asInstanceOf[js.Any])
+    inline def setIamUserAccessToBilling(value: IAMUserAccessToBilling): Self = StObject.set(x, "IamUserAccessToBilling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUserAccessToBillingUndefined: Self = StObject.set(x, "IamUserAccessToBilling", js.undefined)
+    inline def setIamUserAccessToBillingUndefined: Self = StObject.set(x, "IamUserAccessToBilling", js.undefined)
     
-    @scala.inline
-    def setRoleName(value: RoleName): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: RoleName): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNameUndefined: Self = StObject.set(x, "RoleName", js.undefined)
+    inline def setRoleNameUndefined: Self = StObject.set(x, "RoleName", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -16,23 +16,18 @@ object anon {
   }
   object Encoding {
     
-    @scala.inline
-    def apply(encoding: String): Encoding = {
+    inline def apply(encoding: String): Encoding = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[Encoding]
     }
     
-    @scala.inline
-    implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+    extension [Self <: Encoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+      inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+      inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     }
   }
   
@@ -42,20 +37,16 @@ object anon {
   }
   object Flag {
     
-    @scala.inline
-    def apply(): Flag = {
+    inline def apply(): Flag = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Flag]
     }
     
-    @scala.inline
-    implicit class FlagMutableBuilder[Self <: Flag] (val x: Self) extends AnyVal {
+    extension [Self <: Flag](x: Self) {
       
-      @scala.inline
-      def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+      inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+      inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     }
   }
   
@@ -81,20 +72,16 @@ object anon {
   }
   object ForceRelative {
     
-    @scala.inline
-    def apply(forceRelative: Boolean, name: String): ForceRelative = {
+    inline def apply(forceRelative: Boolean, name: String): ForceRelative = {
       val __obj = js.Dynamic.literal(forceRelative = forceRelative.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForceRelative]
     }
     
-    @scala.inline
-    implicit class ForceRelativeMutableBuilder[Self <: ForceRelative] (val x: Self) extends AnyVal {
+    extension [Self <: ForceRelative](x: Self) {
       
-      @scala.inline
-      def setForceRelative(value: Boolean): Self = StObject.set(x, "forceRelative", value.asInstanceOf[js.Any])
+      inline def setForceRelative(value: Boolean): Self = StObject.set(x, "forceRelative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,26 +93,20 @@ object anon {
   }
   object Paths {
     
-    @scala.inline
-    def apply(paths: js.Array[String], seqments: js.Array[String]): Paths = {
+    inline def apply(paths: js.Array[String], seqments: js.Array[String]): Paths = {
       val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any], seqments = seqments.asInstanceOf[js.Any])
       __obj.asInstanceOf[Paths]
     }
     
-    @scala.inline
-    implicit class PathsMutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
+    extension [Self <: Paths](x: Self) {
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setSeqments(value: js.Array[String]): Self = StObject.set(x, "seqments", value.asInstanceOf[js.Any])
+      inline def setSeqments(value: js.Array[String]): Self = StObject.set(x, "seqments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeqmentsVarargs(value: String*): Self = StObject.set(x, "seqments", js.Array(value :_*))
+      inline def setSeqmentsVarargs(value: String*): Self = StObject.set(x, "seqments", js.Array(value :_*))
     }
   }
   
@@ -135,17 +116,14 @@ object anon {
   }
   object Push {
     
-    @scala.inline
-    def apply(push: String => Unit): Push = {
+    inline def apply(push: String => Unit): Push = {
       val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
       __obj.asInstanceOf[Push]
     }
     
-    @scala.inline
-    implicit class PushMutableBuilder[Self <: Push] (val x: Self) extends AnyVal {
+    extension [Self <: Push](x: Self) {
       
-      @scala.inline
-      def setPush(value: String => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: String => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
 }

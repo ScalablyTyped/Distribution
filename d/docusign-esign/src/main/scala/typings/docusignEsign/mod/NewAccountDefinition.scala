@@ -106,105 +106,75 @@ trait NewAccountDefinition extends StObject {
 }
 object NewAccountDefinition {
   
-  @scala.inline
-  def apply(): NewAccountDefinition = {
+  inline def apply(): NewAccountDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NewAccountDefinition]
   }
   
-  @scala.inline
-  implicit class NewAccountDefinitionMutableBuilder[Self <: NewAccountDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: NewAccountDefinition](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
+    inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
-    @scala.inline
-    def setAccountSettings(
+    inline def setAccountSettings(
       value: /* Contains account settings information. Used in requests to set property values. Used in responses to report property values. */ AccountSettingsInformation
     ): Self = StObject.set(x, "accountSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountSettingsUndefined: Self = StObject.set(x, "accountSettings", js.undefined)
+    inline def setAccountSettingsUndefined: Self = StObject.set(x, "accountSettings", js.undefined)
     
-    @scala.inline
-    def setAddressInformation(value: /* Contains information about the address associated with the account. */ AccountAddress): Self = StObject.set(x, "addressInformation", value.asInstanceOf[js.Any])
+    inline def setAddressInformation(value: /* Contains information about the address associated with the account. */ AccountAddress): Self = StObject.set(x, "addressInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressInformationUndefined: Self = StObject.set(x, "addressInformation", js.undefined)
+    inline def setAddressInformationUndefined: Self = StObject.set(x, "addressInformation", js.undefined)
     
-    @scala.inline
-    def setCreditCardInformation(
+    inline def setCreditCardInformation(
       value: /* This object contains information about a credit card that is associated with an account. */ CreditCardInformation
     ): Self = StObject.set(x, "creditCardInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditCardInformationUndefined: Self = StObject.set(x, "creditCardInformation", js.undefined)
+    inline def setCreditCardInformationUndefined: Self = StObject.set(x, "creditCardInformation", js.undefined)
     
-    @scala.inline
-    def setDirectDebitProcessorInformation(
+    inline def setDirectDebitProcessorInformation(
       value: /* Contains information about a bank that processes a customer's direct debit payments. */ DirectDebitProcessorInformation
     ): Self = StObject.set(x, "directDebitProcessorInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectDebitProcessorInformationUndefined: Self = StObject.set(x, "directDebitProcessorInformation", js.undefined)
+    inline def setDirectDebitProcessorInformationUndefined: Self = StObject.set(x, "directDebitProcessorInformation", js.undefined)
     
-    @scala.inline
-    def setDistributorCode(value: String): Self = StObject.set(x, "distributorCode", value.asInstanceOf[js.Any])
+    inline def setDistributorCode(value: String): Self = StObject.set(x, "distributorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributorCodeUndefined: Self = StObject.set(x, "distributorCode", js.undefined)
+    inline def setDistributorCodeUndefined: Self = StObject.set(x, "distributorCode", js.undefined)
     
-    @scala.inline
-    def setDistributorPassword(value: String): Self = StObject.set(x, "distributorPassword", value.asInstanceOf[js.Any])
+    inline def setDistributorPassword(value: String): Self = StObject.set(x, "distributorPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributorPasswordUndefined: Self = StObject.set(x, "distributorPassword", js.undefined)
+    inline def setDistributorPasswordUndefined: Self = StObject.set(x, "distributorPassword", js.undefined)
     
-    @scala.inline
-    def setEnvelopePartitionId(value: String): Self = StObject.set(x, "envelopePartitionId", value.asInstanceOf[js.Any])
+    inline def setEnvelopePartitionId(value: String): Self = StObject.set(x, "envelopePartitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopePartitionIdUndefined: Self = StObject.set(x, "envelopePartitionId", js.undefined)
+    inline def setEnvelopePartitionIdUndefined: Self = StObject.set(x, "envelopePartitionId", js.undefined)
     
-    @scala.inline
-    def setInitialUser(value: UserInformation): Self = StObject.set(x, "initialUser", value.asInstanceOf[js.Any])
+    inline def setInitialUser(value: UserInformation): Self = StObject.set(x, "initialUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialUserUndefined: Self = StObject.set(x, "initialUser", js.undefined)
+    inline def setInitialUserUndefined: Self = StObject.set(x, "initialUser", js.undefined)
     
-    @scala.inline
-    def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
+    inline def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
+    inline def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
     
-    @scala.inline
-    def setPaymentProcessorInformation(value: PaymentProcessorInformation): Self = StObject.set(x, "paymentProcessorInformation", value.asInstanceOf[js.Any])
+    inline def setPaymentProcessorInformation(value: PaymentProcessorInformation): Self = StObject.set(x, "paymentProcessorInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentProcessorInformationUndefined: Self = StObject.set(x, "paymentProcessorInformation", js.undefined)
+    inline def setPaymentProcessorInformationUndefined: Self = StObject.set(x, "paymentProcessorInformation", js.undefined)
     
-    @scala.inline
-    def setPlanInformation(
+    inline def setPlanInformation(
       value: /* An object used to identify the features and attributes of the account being created. */ PlanInformation
     ): Self = StObject.set(x, "planInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanInformationUndefined: Self = StObject.set(x, "planInformation", js.undefined)
+    inline def setPlanInformationUndefined: Self = StObject.set(x, "planInformation", js.undefined)
     
-    @scala.inline
-    def setReferralInformation(value: ReferralInformation): Self = StObject.set(x, "referralInformation", value.asInstanceOf[js.Any])
+    inline def setReferralInformation(value: ReferralInformation): Self = StObject.set(x, "referralInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferralInformationUndefined: Self = StObject.set(x, "referralInformation", js.undefined)
+    inline def setReferralInformationUndefined: Self = StObject.set(x, "referralInformation", js.undefined)
     
-    @scala.inline
-    def setSocialAccountInformation(value: SocialAccountInformation): Self = StObject.set(x, "socialAccountInformation", value.asInstanceOf[js.Any])
+    inline def setSocialAccountInformation(value: SocialAccountInformation): Self = StObject.set(x, "socialAccountInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocialAccountInformationUndefined: Self = StObject.set(x, "socialAccountInformation", js.undefined)
+    inline def setSocialAccountInformationUndefined: Self = StObject.set(x, "socialAccountInformation", js.undefined)
   }
 }

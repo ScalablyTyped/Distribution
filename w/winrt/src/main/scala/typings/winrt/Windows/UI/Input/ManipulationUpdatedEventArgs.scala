@@ -11,8 +11,7 @@ trait ManipulationUpdatedEventArgs
      with IManipulationUpdatedEventArgs
 object ManipulationUpdatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cumulative: ManipulationDelta,
     delta: ManipulationDelta,
     pointerDeviceType: PointerDeviceType,

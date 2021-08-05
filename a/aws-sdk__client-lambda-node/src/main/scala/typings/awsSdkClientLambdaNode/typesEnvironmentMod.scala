@@ -17,20 +17,16 @@ object typesEnvironmentMod {
   }
   object Environment {
     
-    @scala.inline
-    def apply(): Environment = {
+    inline def apply(): Environment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Environment]
     }
     
-    @scala.inline
-    implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+    extension [Self <: Environment](x: Self) {
       
-      @scala.inline
-      def setVariables(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
     }
   }
   
@@ -46,20 +42,16 @@ object typesEnvironmentMod {
   }
   object UnmarshalledEnvironment {
     
-    @scala.inline
-    def apply(): UnmarshalledEnvironment = {
+    inline def apply(): UnmarshalledEnvironment = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEnvironment]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEnvironmentMutableBuilder[Self <: UnmarshalledEnvironment] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEnvironment](x: Self) {
       
-      @scala.inline
-      def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
     }
   }
 }

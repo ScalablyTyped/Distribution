@@ -24,57 +24,57 @@ object jestFakeTimersMod {
   @js.native
   trait FakeTimers[TimerRef] extends StObject {
     
-    var _cancelledImmediates: js.Any = js.native
+    /* private */ var _cancelledImmediates: js.Any = js.native
     
-    var _cancelledTicks: js.Any = js.native
+    /* private */ var _cancelledTicks: js.Any = js.native
     
-    var _checkFakeTimers: js.Any = js.native
+    /* private */ var _checkFakeTimers: js.Any = js.native
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _createMocks: js.Any = js.native
+    /* private */ var _createMocks: js.Any = js.native
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _fakeClearImmediate: js.Any = js.native
+    /* private */ var _fakeClearImmediate: js.Any = js.native
     
-    var _fakeClearTimer: js.Any = js.native
+    /* private */ var _fakeClearTimer: js.Any = js.native
     
-    var _fakeNextTick: js.Any = js.native
+    /* private */ var _fakeNextTick: js.Any = js.native
     
-    var _fakeSetImmediate: js.Any = js.native
+    /* private */ var _fakeSetImmediate: js.Any = js.native
     
-    var _fakeSetInterval: js.Any = js.native
+    /* private */ var _fakeSetInterval: js.Any = js.native
     
-    var _fakeSetTimeout: js.Any = js.native
+    /* private */ var _fakeSetTimeout: js.Any = js.native
     
-    var _fakeTimerAPIs: js.Any = js.native
+    /* private */ var _fakeTimerAPIs: js.Any = js.native
     
-    var _getNextTimerHandle: js.Any = js.native
+    /* private */ var _getNextTimerHandle: js.Any = js.native
     
-    var _global: js.Any = js.native
+    /* private */ var _global: js.Any = js.native
     
-    var _immediates: js.Any = js.native
+    /* private */ var _immediates: js.Any = js.native
     
-    var _maxLoops: js.Any = js.native
+    /* private */ var _maxLoops: js.Any = js.native
     
-    var _moduleMocker: js.Any = js.native
+    /* private */ var _moduleMocker: js.Any = js.native
     
-    var _now: js.Any = js.native
+    /* private */ var _now: js.Any = js.native
     
-    var _runImmediate: js.Any = js.native
+    /* private */ var _runImmediate: js.Any = js.native
     
-    var _runTimerHandle: js.Any = js.native
+    /* private */ var _runTimerHandle: js.Any = js.native
     
-    var _ticks: js.Any = js.native
+    /* private */ var _ticks: js.Any = js.native
     
-    var _timerAPIs: js.Any = js.native
+    /* private */ var _timerAPIs: js.Any = js.native
     
-    var _timerConfig: js.Any = js.native
+    /* private */ var _timerConfig: js.Any = js.native
     
-    var _timers: js.Any = js.native
+    /* private */ var _timers: js.Any = js.native
     
-    var _uuidCounter: js.Any = js.native
+    /* private */ var _uuidCounter: js.Any = js.native
     
     def advanceTimersByTime(msToRun: Double): Unit = js.native
     
@@ -112,20 +112,16 @@ object jestFakeTimersMod {
   }
   object TimerConfig {
     
-    @scala.inline
-    def apply[Ref](idToRef: Double => Ref, refToId: Ref => Double | Unit): TimerConfig[Ref] = {
+    inline def apply[Ref](idToRef: Double => Ref, refToId: Ref => Double | Unit): TimerConfig[Ref] = {
       val __obj = js.Dynamic.literal(idToRef = js.Any.fromFunction1(idToRef), refToId = js.Any.fromFunction1(refToId))
       __obj.asInstanceOf[TimerConfig[Ref]]
     }
     
-    @scala.inline
-    implicit class TimerConfigMutableBuilder[Self <: TimerConfig[?], Ref] (val x: Self & TimerConfig[Ref]) extends AnyVal {
+    extension [Self <: TimerConfig[?], Ref](x: Self & TimerConfig[Ref]) {
       
-      @scala.inline
-      def setIdToRef(value: Double => Ref): Self = StObject.set(x, "idToRef", js.Any.fromFunction1(value))
+      inline def setIdToRef(value: Double => Ref): Self = StObject.set(x, "idToRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefToId(value: Ref => Double | Unit): Self = StObject.set(x, "refToId", js.Any.fromFunction1(value))
+      inline def setRefToId(value: Ref => Double | Unit): Self = StObject.set(x, "refToId", js.Any.fromFunction1(value))
     }
   }
 }

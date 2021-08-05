@@ -10,16 +10,13 @@ trait EnumValuesAndroidStudio extends StObject {
 }
 object EnumValuesAndroidStudio {
   
-  @scala.inline
-  def apply(enumValues: AndroidStudio): EnumValuesAndroidStudio = {
+  inline def apply(enumValues: AndroidStudio): EnumValuesAndroidStudio = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAndroidStudio]
   }
   
-  @scala.inline
-  implicit class EnumValuesAndroidStudioMutableBuilder[Self <: EnumValuesAndroidStudio] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAndroidStudio](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AndroidStudio): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AndroidStudio): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

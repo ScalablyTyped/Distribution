@@ -17,31 +17,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ZoomPanOptions {
   
-  @scala.inline
-  def apply(): ZoomPanOptions = {
+  inline def apply(): ZoomPanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoomPanOptions]
   }
   
-  @scala.inline
-  implicit class ZoomPanOptionsMutableBuilder[Self <: ZoomPanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomPanOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEaseLinearity(value: Double): Self = StObject.set(x, "easeLinearity", value.asInstanceOf[js.Any])
+    inline def setEaseLinearity(value: Double): Self = StObject.set(x, "easeLinearity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEaseLinearityUndefined: Self = StObject.set(x, "easeLinearity", js.undefined)
+    inline def setEaseLinearityUndefined: Self = StObject.set(x, "easeLinearity", js.undefined)
     
-    @scala.inline
-    def setNoMoveStart(value: Boolean): Self = StObject.set(x, "noMoveStart", value.asInstanceOf[js.Any])
+    inline def setNoMoveStart(value: Boolean): Self = StObject.set(x, "noMoveStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoMoveStartUndefined: Self = StObject.set(x, "noMoveStart", js.undefined)
+    inline def setNoMoveStartUndefined: Self = StObject.set(x, "noMoveStart", js.undefined)
   }
 }

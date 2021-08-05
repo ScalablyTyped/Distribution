@@ -77,61 +77,43 @@ trait IgGridGroupByColumnSettings
 }
 object IgGridGroupByColumnSettings {
   
-  @scala.inline
-  def apply(): IgGridGroupByColumnSettings = {
+  inline def apply(): IgGridGroupByColumnSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridGroupByColumnSettings]
   }
   
-  @scala.inline
-  implicit class IgGridGroupByColumnSettingsMutableBuilder[Self <: IgGridGroupByColumnSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridGroupByColumnSettings](x: Self) {
     
-    @scala.inline
-    def setAllowGrouping(value: Boolean): Self = StObject.set(x, "allowGrouping", value.asInstanceOf[js.Any])
+    inline def setAllowGrouping(value: Boolean): Self = StObject.set(x, "allowGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowGroupingUndefined: Self = StObject.set(x, "allowGrouping", js.undefined)
+    inline def setAllowGroupingUndefined: Self = StObject.set(x, "allowGrouping", js.undefined)
     
-    @scala.inline
-    def setCompareFunc(value: String | js.Function): Self = StObject.set(x, "compareFunc", value.asInstanceOf[js.Any])
+    inline def setCompareFunc(value: String | js.Function): Self = StObject.set(x, "compareFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareFuncUndefined: Self = StObject.set(x, "compareFunc", js.undefined)
+    inline def setCompareFuncUndefined: Self = StObject.set(x, "compareFunc", js.undefined)
     
-    @scala.inline
-    def setDir(value: js.Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: js.Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setGroupComparerFunction(value: js.Function): Self = StObject.set(x, "groupComparerFunction", value.asInstanceOf[js.Any])
+    inline def setGroupComparerFunction(value: js.Function): Self = StObject.set(x, "groupComparerFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupComparerFunctionUndefined: Self = StObject.set(x, "groupComparerFunction", js.undefined)
+    inline def setGroupComparerFunctionUndefined: Self = StObject.set(x, "groupComparerFunction", js.undefined)
     
-    @scala.inline
-    def setGroupLabelFormatter(value: String | js.Function): Self = StObject.set(x, "groupLabelFormatter", value.asInstanceOf[js.Any])
+    inline def setGroupLabelFormatter(value: String | js.Function): Self = StObject.set(x, "groupLabelFormatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupLabelFormatterUndefined: Self = StObject.set(x, "groupLabelFormatter", js.undefined)
+    inline def setGroupLabelFormatterUndefined: Self = StObject.set(x, "groupLabelFormatter", js.undefined)
     
-    @scala.inline
-    def setGroupSummaries(value: js.Any): Self = StObject.set(x, "groupSummaries", value.asInstanceOf[js.Any])
+    inline def setGroupSummaries(value: js.Any): Self = StObject.set(x, "groupSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSummariesUndefined: Self = StObject.set(x, "groupSummaries", js.undefined)
+    inline def setGroupSummariesUndefined: Self = StObject.set(x, "groupSummaries", js.undefined)
     
-    @scala.inline
-    def setIsGroupBy(value: Boolean): Self = StObject.set(x, "isGroupBy", value.asInstanceOf[js.Any])
+    inline def setIsGroupBy(value: Boolean): Self = StObject.set(x, "isGroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroupByUndefined: Self = StObject.set(x, "isGroupBy", js.undefined)
+    inline def setIsGroupByUndefined: Self = StObject.set(x, "isGroupBy", js.undefined)
     
-    @scala.inline
-    def setSummaries(value: IgGridGroupByColumnSettingsSummaries): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
+    inline def setSummaries(value: IgGridGroupByColumnSettingsSummaries): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
+    inline def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
   }
 }

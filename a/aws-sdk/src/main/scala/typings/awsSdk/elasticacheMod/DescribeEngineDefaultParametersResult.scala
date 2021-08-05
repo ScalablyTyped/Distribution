@@ -10,19 +10,15 @@ trait DescribeEngineDefaultParametersResult extends StObject {
 }
 object DescribeEngineDefaultParametersResult {
   
-  @scala.inline
-  def apply(): DescribeEngineDefaultParametersResult = {
+  inline def apply(): DescribeEngineDefaultParametersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEngineDefaultParametersResult]
   }
   
-  @scala.inline
-  implicit class DescribeEngineDefaultParametersResultMutableBuilder[Self <: DescribeEngineDefaultParametersResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEngineDefaultParametersResult](x: Self) {
     
-    @scala.inline
-    def setEngineDefaults(value: EngineDefaults): Self = StObject.set(x, "EngineDefaults", value.asInstanceOf[js.Any])
+    inline def setEngineDefaults(value: EngineDefaults): Self = StObject.set(x, "EngineDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineDefaultsUndefined: Self = StObject.set(x, "EngineDefaults", js.undefined)
+    inline def setEngineDefaultsUndefined: Self = StObject.set(x, "EngineDefaults", js.undefined)
   }
 }

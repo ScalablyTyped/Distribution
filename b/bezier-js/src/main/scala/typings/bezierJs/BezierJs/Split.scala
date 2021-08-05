@@ -16,31 +16,23 @@ trait Split
 }
 object Split {
   
-  @scala.inline
-  def apply(left: Bezier, right: Bezier, span: js.Array[Point]): Split = {
+  inline def apply(left: Bezier, right: Bezier, span: js.Array[Point]): Split = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
     __obj.asInstanceOf[Split]
   }
   
-  @scala.inline
-  implicit class SplitMutableBuilder[Self <: Split] (val x: Self) extends AnyVal {
+  extension [Self <: Split](x: Self) {
     
-    @scala.inline
-    def setSpan(value: js.Array[Point]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: js.Array[Point]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanVarargs(value: Point*): Self = StObject.set(x, "span", js.Array(value :_*))
+    inline def setSpanVarargs(value: Point*): Self = StObject.set(x, "span", js.Array(value :_*))
     
-    @scala.inline
-    def set_t1(value: Double): Self = StObject.set(x, "_t1", value.asInstanceOf[js.Any])
+    inline def set_t1(value: Double): Self = StObject.set(x, "_t1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_t1Undefined: Self = StObject.set(x, "_t1", js.undefined)
+    inline def set_t1Undefined: Self = StObject.set(x, "_t1", js.undefined)
     
-    @scala.inline
-    def set_t2(value: Double): Self = StObject.set(x, "_t2", value.asInstanceOf[js.Any])
+    inline def set_t2(value: Double): Self = StObject.set(x, "_t2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_t2Undefined: Self = StObject.set(x, "_t2", js.undefined)
+    inline def set_t2Undefined: Self = StObject.set(x, "_t2", js.undefined)
   }
 }

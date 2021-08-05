@@ -21,20 +21,16 @@ object typesDeleteObjectTaggingOutputMod {
   }
   object DeleteObjectTaggingOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteObjectTaggingOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteObjectTaggingOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteObjectTaggingOutput]
     }
     
-    @scala.inline
-    implicit class DeleteObjectTaggingOutputMutableBuilder[Self <: DeleteObjectTaggingOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteObjectTaggingOutput](x: Self) {
       
-      @scala.inline
-      def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+      inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
     }
   }
 }

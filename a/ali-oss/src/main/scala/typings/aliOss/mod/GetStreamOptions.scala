@@ -15,31 +15,23 @@ trait GetStreamOptions extends StObject {
 }
 object GetStreamOptions {
   
-  @scala.inline
-  def apply(): GetStreamOptions = {
+  inline def apply(): GetStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStreamOptions]
   }
   
-  @scala.inline
-  implicit class GetStreamOptionsMutableBuilder[Self <: GetStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetStreamOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+    inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

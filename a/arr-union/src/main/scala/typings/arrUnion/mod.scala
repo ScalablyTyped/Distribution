@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](arrays: ArrayLike[T]*): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(arrays.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def apply[T](arrays: ArrayLike[T]*): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(arrays.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   @JSImport("arr-union", JSImport.Namespace)
   @js.native

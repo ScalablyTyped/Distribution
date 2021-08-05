@@ -30,11 +30,11 @@ object floatingFilterMod {
     
     def asParentModel(): SerializedDateFilter = js.native
     
-    var componentRecipes: js.Any = js.native
+    /* private */ var componentRecipes: js.Any = js.native
     
     def currentParentModel(): SerializedDateFilter = js.native
     
-    var dateComponentPromise: js.Any = js.native
+    /* private */ var dateComponentPromise: js.Any = js.native
     
     /* private */ def enrichDateInput(`type`: js.Any, dateFrom: js.Any, dateTo: js.Any, dateComponent: js.Any): js.Any = js.native
     
@@ -133,20 +133,16 @@ object floatingFilterMod {
   }
   object BaseFloatingFilterChange {
     
-    @scala.inline
-    def apply[M](apply: Boolean, model: M): BaseFloatingFilterChange[M] = {
+    inline def apply[M](apply: Boolean, model: M): BaseFloatingFilterChange[M] = {
       val __obj = js.Dynamic.literal(apply = apply.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseFloatingFilterChange[M]]
     }
     
-    @scala.inline
-    implicit class BaseFloatingFilterChangeMutableBuilder[Self <: BaseFloatingFilterChange[?], M] (val x: Self & BaseFloatingFilterChange[M]) extends AnyVal {
+    extension [Self <: BaseFloatingFilterChange[?], M](x: Self & BaseFloatingFilterChange[M]) {
       
-      @scala.inline
-      def setApply(value: Boolean): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+      inline def setApply(value: Boolean): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: M): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: M): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     }
   }
   

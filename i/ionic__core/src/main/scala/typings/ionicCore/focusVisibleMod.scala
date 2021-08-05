@@ -10,6 +10,5 @@ object focusVisibleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def startFocusVisible(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startFocusVisible")().asInstanceOf[Unit]
+  inline def startFocusVisible(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startFocusVisible")().asInstanceOf[Unit]
 }

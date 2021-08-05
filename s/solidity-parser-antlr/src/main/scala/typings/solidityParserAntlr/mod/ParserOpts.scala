@@ -14,31 +14,23 @@ trait ParserOpts extends StObject {
 }
 object ParserOpts {
   
-  @scala.inline
-  def apply(): ParserOpts = {
+  inline def apply(): ParserOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParserOpts]
   }
   
-  @scala.inline
-  implicit class ParserOptsMutableBuilder[Self <: ParserOpts] (val x: Self) extends AnyVal {
+  extension [Self <: ParserOpts](x: Self) {
     
-    @scala.inline
-    def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: Boolean): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
+    inline def setTolerant(value: Boolean): Self = StObject.set(x, "tolerant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
+    inline def setTolerantUndefined: Self = StObject.set(x, "tolerant", js.undefined)
   }
 }

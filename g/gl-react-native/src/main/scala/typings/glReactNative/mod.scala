@@ -32,26 +32,20 @@ object mod {
   }
   object SurfaceProps {
     
-    @scala.inline
-    def apply(): SurfaceProps = {
+    inline def apply(): SurfaceProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SurfaceProps]
     }
     
-    @scala.inline
-    implicit class SurfacePropsMutableBuilder[Self <: SurfaceProps] (val x: Self) extends AnyVal {
+    extension [Self <: SurfaceProps](x: Self) {
       
-      @scala.inline
-      def setOnContextCreate(value: /* gl */ WebGLRenderingContext => Unit): Self = StObject.set(x, "onContextCreate", js.Any.fromFunction1(value))
+      inline def setOnContextCreate(value: /* gl */ WebGLRenderingContext => Unit): Self = StObject.set(x, "onContextCreate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
+      inline def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
       
-      @scala.inline
-      def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
+      inline def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
+      inline def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
     }
   }
 }

@@ -12,19 +12,15 @@ trait ReposCreateCommitSignatureProtectionResponseData extends StObject {
 }
 object ReposCreateCommitSignatureProtectionResponseData {
   
-  @scala.inline
-  def apply(enabled: Boolean, url: String): ReposCreateCommitSignatureProtectionResponseData = {
+  inline def apply(enabled: Boolean, url: String): ReposCreateCommitSignatureProtectionResponseData = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateCommitSignatureProtectionResponseData]
   }
   
-  @scala.inline
-  implicit class ReposCreateCommitSignatureProtectionResponseDataMutableBuilder[Self <: ReposCreateCommitSignatureProtectionResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateCommitSignatureProtectionResponseData](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

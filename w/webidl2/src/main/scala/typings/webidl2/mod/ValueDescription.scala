@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ValueDescription extends StObject
 object ValueDescription {
   
-  @scala.inline
-  def ValueDescriptionBoolean(
+  inline def ValueDescriptionBoolean(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
     value: Boolean
@@ -28,15 +27,13 @@ object ValueDescription {
     __obj.asInstanceOf[typings.webidl2.mod.ValueDescriptionBoolean]
   }
   
-  @scala.inline
-  def ValueDescriptionDictionary(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): typings.webidl2.mod.ValueDescriptionDictionary = {
+  inline def ValueDescriptionDictionary(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): typings.webidl2.mod.ValueDescriptionDictionary = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("dictionary")
     __obj.asInstanceOf[typings.webidl2.mod.ValueDescriptionDictionary]
   }
   
-  @scala.inline
-  def ValueDescriptionInfinity(
+  inline def ValueDescriptionInfinity(
     extAttrs: js.Array[ExtendedAttribute],
     negative: Boolean,
     parent: Argument | ConstantMemberType | FieldType
@@ -46,22 +43,19 @@ object ValueDescription {
     __obj.asInstanceOf[typings.webidl2.mod.ValueDescriptionInfinity]
   }
   
-  @scala.inline
-  def ValueDescriptionNaN(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): typings.webidl2.mod.ValueDescriptionNaN = {
+  inline def ValueDescriptionNaN(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): typings.webidl2.mod.ValueDescriptionNaN = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NaN")
     __obj.asInstanceOf[typings.webidl2.mod.ValueDescriptionNaN]
   }
   
-  @scala.inline
-  def ValueDescriptionNull(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): typings.webidl2.mod.ValueDescriptionNull = {
+  inline def ValueDescriptionNull(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): typings.webidl2.mod.ValueDescriptionNull = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("null")
     __obj.asInstanceOf[typings.webidl2.mod.ValueDescriptionNull]
   }
   
-  @scala.inline
-  def ValueDescriptionNumber(
+  inline def ValueDescriptionNumber(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
     value: String
@@ -71,8 +65,7 @@ object ValueDescription {
     __obj.asInstanceOf[typings.webidl2.mod.ValueDescriptionNumber]
   }
   
-  @scala.inline
-  def ValueDescriptionSequence(
+  inline def ValueDescriptionSequence(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
     value: js.Array[js.Any]
@@ -82,8 +75,7 @@ object ValueDescription {
     __obj.asInstanceOf[typings.webidl2.mod.ValueDescriptionSequence]
   }
   
-  @scala.inline
-  def ValueDescriptionString(
+  inline def ValueDescriptionString(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
     value: String

@@ -24,8 +24,7 @@ trait StoreSubscriptionInfo extends StObject {
 }
 object StoreSubscriptionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     billingPeriod: Double,
     billingPeriodUnit: StoreDurationUnit,
     hasTrialPeriod: Boolean,
@@ -36,22 +35,16 @@ object StoreSubscriptionInfo {
     __obj.asInstanceOf[StoreSubscriptionInfo]
   }
   
-  @scala.inline
-  implicit class StoreSubscriptionInfoMutableBuilder[Self <: StoreSubscriptionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: StoreSubscriptionInfo](x: Self) {
     
-    @scala.inline
-    def setBillingPeriod(value: Double): Self = StObject.set(x, "billingPeriod", value.asInstanceOf[js.Any])
+    inline def setBillingPeriod(value: Double): Self = StObject.set(x, "billingPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingPeriodUnit(value: StoreDurationUnit): Self = StObject.set(x, "billingPeriodUnit", value.asInstanceOf[js.Any])
+    inline def setBillingPeriodUnit(value: StoreDurationUnit): Self = StObject.set(x, "billingPeriodUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasTrialPeriod(value: Boolean): Self = StObject.set(x, "hasTrialPeriod", value.asInstanceOf[js.Any])
+    inline def setHasTrialPeriod(value: Boolean): Self = StObject.set(x, "hasTrialPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialPeriod(value: Double): Self = StObject.set(x, "trialPeriod", value.asInstanceOf[js.Any])
+    inline def setTrialPeriod(value: Double): Self = StObject.set(x, "trialPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialPeriodUnit(value: StoreDurationUnit): Self = StObject.set(x, "trialPeriodUnit", value.asInstanceOf[js.Any])
+    inline def setTrialPeriodUnit(value: StoreDurationUnit): Self = StObject.set(x, "trialPeriodUnit", value.asInstanceOf[js.Any])
   }
 }

@@ -18,17 +18,14 @@ object typesInvalidFilePositionExceptionMod {
   }
   object InvalidFilePositionException {
     
-    @scala.inline
-    def apply(): InvalidFilePositionException = {
+    inline def apply(): InvalidFilePositionException = {
       val __obj = js.Dynamic.literal(name = "InvalidFilePositionException")
       __obj.asInstanceOf[InvalidFilePositionException]
     }
     
-    @scala.inline
-    implicit class InvalidFilePositionExceptionMutableBuilder[Self <: InvalidFilePositionException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidFilePositionException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidFilePositionException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

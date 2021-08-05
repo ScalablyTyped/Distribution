@@ -22,25 +22,19 @@ trait Hover extends StObject {
 }
 object Hover {
   
-  @scala.inline
-  def apply(contents: js.Array[IMarkdownString]): Hover = {
+  inline def apply(contents: js.Array[IMarkdownString]): Hover = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hover]
   }
   
-  @scala.inline
-  implicit class HoverMutableBuilder[Self <: Hover] (val x: Self) extends AnyVal {
+  extension [Self <: Hover](x: Self) {
     
-    @scala.inline
-    def setContents(value: js.Array[IMarkdownString]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[IMarkdownString]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsVarargs(value: IMarkdownString*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: IMarkdownString*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
-    @scala.inline
-    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

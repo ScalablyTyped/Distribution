@@ -26,8 +26,7 @@ trait XDigestContextSupplier
 }
 object XDigestContextSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDigestContext: (Double, SeqEquiv[NamedValue]) => XDigestContext,
     queryInterface: `type` => js.Any,
@@ -37,10 +36,8 @@ object XDigestContextSupplier {
     __obj.asInstanceOf[XDigestContextSupplier]
   }
   
-  @scala.inline
-  implicit class XDigestContextSupplierMutableBuilder[Self <: XDigestContextSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDigestContextSupplier](x: Self) {
     
-    @scala.inline
-    def setGetDigestContext(value: (Double, SeqEquiv[NamedValue]) => XDigestContext): Self = StObject.set(x, "getDigestContext", js.Any.fromFunction2(value))
+    inline def setGetDigestContext(value: (Double, SeqEquiv[NamedValue]) => XDigestContext): Self = StObject.set(x, "getDigestContext", js.Any.fromFunction2(value))
   }
 }

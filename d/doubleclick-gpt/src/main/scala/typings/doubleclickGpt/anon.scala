@@ -12,17 +12,14 @@ object anon {
   }
   object ChangeCorrelator {
     
-    @scala.inline
-    def apply(changeCorrelator: Boolean): ChangeCorrelator = {
+    inline def apply(changeCorrelator: Boolean): ChangeCorrelator = {
       val __obj = js.Dynamic.literal(changeCorrelator = changeCorrelator.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChangeCorrelator]
     }
     
-    @scala.inline
-    implicit class ChangeCorrelatorMutableBuilder[Self <: ChangeCorrelator] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeCorrelator](x: Self) {
       
-      @scala.inline
-      def setChangeCorrelator(value: Boolean): Self = StObject.set(x, "changeCorrelator", value.asInstanceOf[js.Any])
+      inline def setChangeCorrelator(value: Boolean): Self = StObject.set(x, "changeCorrelator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object RestrictDataProcessing {
     
-    @scala.inline
-    def apply(restrictDataProcessing: Boolean): RestrictDataProcessing = {
+    inline def apply(restrictDataProcessing: Boolean): RestrictDataProcessing = {
       val __obj = js.Dynamic.literal(restrictDataProcessing = restrictDataProcessing.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestrictDataProcessing]
     }
     
-    @scala.inline
-    implicit class RestrictDataProcessingMutableBuilder[Self <: RestrictDataProcessing] (val x: Self) extends AnyVal {
+    extension [Self <: RestrictDataProcessing](x: Self) {
       
-      @scala.inline
-      def setRestrictDataProcessing(value: Boolean): Self = StObject.set(x, "restrictDataProcessing", value.asInstanceOf[js.Any])
+      inline def setRestrictDataProcessing(value: Boolean): Self = StObject.set(x, "restrictDataProcessing", value.asInstanceOf[js.Any])
     }
   }
 }

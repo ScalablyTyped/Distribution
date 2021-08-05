@@ -101,126 +101,99 @@ object Range {
   /**
     * Test if the two ranges are intersecting. If the ranges are touching it returns true.
     */
-  @scala.inline
-  def areIntersecting(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersecting")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def areIntersecting(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersecting")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if the two ranges are touching in any way.
     */
-  @scala.inline
-  def areIntersectingOrTouching(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersectingOrTouching")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def areIntersectingOrTouching(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersectingOrTouching")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Create a new empty range using this range's start position.
     */
-  @scala.inline
-  def collapseToStart(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToStart")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
+  inline def collapseToStart(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToStart")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
   
   /**
     * A function that compares ranges, useful for sorting ranges
     * It will first compare ranges on the endPosition and then on the startPosition
     */
-  @scala.inline
-  def compareRangesUsingEnds(a: IRange, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingEnds")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareRangesUsingEnds(a: IRange, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingEnds")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * A function that compares ranges, useful for sorting ranges
     * It will first compare ranges on the startPosition and then on the endPosition
     */
-  @scala.inline
-  def compareRangesUsingStarts(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")().asInstanceOf[Double]
-  @scala.inline
-  def compareRangesUsingStarts(a: Null, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def compareRangesUsingStarts(a: Unit, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def compareRangesUsingStarts(a: IRange): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def compareRangesUsingStarts(a: IRange, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareRangesUsingStarts(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")().asInstanceOf[Double]
+  inline def compareRangesUsingStarts(a: Null, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareRangesUsingStarts(a: Unit, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareRangesUsingStarts(a: IRange): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def compareRangesUsingStarts(a: IRange, b: IRange): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareRangesUsingStarts")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Test if `position` is in `range`. If the position is at the edges, will return true.
     */
-  @scala.inline
-  def containsPosition(range: IRange, position: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsPosition")(range.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def containsPosition(range: IRange, position: IPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsPosition")(range.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if `otherRange` is in `range`. If the ranges are equal, will return true.
     */
-  @scala.inline
-  def containsRange(range: IRange, otherRange: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsRange")(range.asInstanceOf[js.Any], otherRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def containsRange(range: IRange, otherRange: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsRange")(range.asInstanceOf[js.Any], otherRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if range `a` equals `b`.
     */
-  @scala.inline
-  def equalsRange(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")().asInstanceOf[Boolean]
-  @scala.inline
-  def equalsRange(a: Null, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equalsRange(a: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def equalsRange(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equalsRange(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")().asInstanceOf[Boolean]
+  inline def equalsRange(a: Null, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equalsRange(a: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def equalsRange(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def fromPositions(start: IPosition): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any]).asInstanceOf[Range]
-  @scala.inline
-  def fromPositions(start: IPosition, end: IPosition): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Range]
+  inline def fromPositions(start: IPosition): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any]).asInstanceOf[Range]
+  inline def fromPositions(start: IPosition, end: IPosition): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Range]
   
   /**
     * Return the end position (which will be after or equal to the start position)
     */
-  @scala.inline
-  def getEndPosition(range: IRange): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndPosition")(range.asInstanceOf[js.Any]).asInstanceOf[Position]
+  inline def getEndPosition(range: IRange): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndPosition")(range.asInstanceOf[js.Any]).asInstanceOf[Position]
   
   /**
     * Return the start position (which will be before or equal to the end position)
     */
-  @scala.inline
-  def getStartPosition(range: IRange): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("getStartPosition")(range.asInstanceOf[js.Any]).asInstanceOf[Position]
+  inline def getStartPosition(range: IRange): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("getStartPosition")(range.asInstanceOf[js.Any]).asInstanceOf[Position]
   
   /**
     * A intersection of the two ranges.
     */
-  @scala.inline
-  def intersectRanges(a: IRange, b: IRange): Range | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectRanges")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Range | Null]
+  inline def intersectRanges(a: IRange, b: IRange): Range | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectRanges")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Range | Null]
   
   /**
     * Test if `range` is empty.
     */
-  @scala.inline
-  def isEmpty(range: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(range.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmpty(range: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(range.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Test if `obj` is an `IRange`.
     */
-  @scala.inline
-  def isIRange(obj: js.Any): /* is monaco-editor.monaco-editor.IRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIRange")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.IRange */ Boolean]
+  inline def isIRange(obj: js.Any): /* is monaco-editor.monaco-editor.IRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIRange")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.IRange */ Boolean]
   
   /**
     * Create a `Range` from an `IRange`.
     */
-  @scala.inline
-  def lift(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")().asInstanceOf[Null]
-  @scala.inline
-  def lift(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
+  inline def lift(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")().asInstanceOf[Null]
+  inline def lift(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
   
   /**
     * A reunion of the two ranges.
     * The smallest position will be used as the start point, and the largest one as the end point.
     */
-  @scala.inline
-  def plusRange(a: IRange, b: IRange): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("plusRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Range]
+  inline def plusRange(a: IRange, b: IRange): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("plusRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Range]
   
   /**
     * Test if the range spans multiple lines.
     */
-  @scala.inline
-  def spansMultipleLines(range: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("spansMultipleLines")(range.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def spansMultipleLines(range: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("spansMultipleLines")(range.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Test if `otherRange` is strinctly in `range` (must start after, and end before). If the ranges are equal, will return false.
     */
-  @scala.inline
-  def strictContainsRange(range: IRange, otherRange: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictContainsRange")(range.asInstanceOf[js.Any], otherRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def strictContainsRange(range: IRange, otherRange: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictContainsRange")(range.asInstanceOf[js.Any], otherRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

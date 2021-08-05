@@ -14,22 +14,17 @@ trait Stem extends StObject {
 }
 object Stem {
   
-  @scala.inline
-  def apply(clef: String, stem: String, time: String): Stem = {
+  inline def apply(clef: String, stem: String, time: String): Stem = {
     val __obj = js.Dynamic.literal(clef = clef.asInstanceOf[js.Any], stem = stem.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stem]
   }
   
-  @scala.inline
-  implicit class StemMutableBuilder[Self <: Stem] (val x: Self) extends AnyVal {
+  extension [Self <: Stem](x: Self) {
     
-    @scala.inline
-    def setClef(value: String): Self = StObject.set(x, "clef", value.asInstanceOf[js.Any])
+    inline def setClef(value: String): Self = StObject.set(x, "clef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStem(value: String): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
+    inline def setStem(value: String): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

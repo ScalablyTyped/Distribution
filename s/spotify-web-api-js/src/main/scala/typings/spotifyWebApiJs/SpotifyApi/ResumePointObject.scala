@@ -16,19 +16,15 @@ trait ResumePointObject extends StObject {
 }
 object ResumePointObject {
   
-  @scala.inline
-  def apply(full_played: Boolean, resume_position_ms: Double): ResumePointObject = {
+  inline def apply(full_played: Boolean, resume_position_ms: Double): ResumePointObject = {
     val __obj = js.Dynamic.literal(full_played = full_played.asInstanceOf[js.Any], resume_position_ms = resume_position_ms.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResumePointObject]
   }
   
-  @scala.inline
-  implicit class ResumePointObjectMutableBuilder[Self <: ResumePointObject] (val x: Self) extends AnyVal {
+  extension [Self <: ResumePointObject](x: Self) {
     
-    @scala.inline
-    def setFull_played(value: Boolean): Self = StObject.set(x, "full_played", value.asInstanceOf[js.Any])
+    inline def setFull_played(value: Boolean): Self = StObject.set(x, "full_played", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResume_position_ms(value: Double): Self = StObject.set(x, "resume_position_ms", value.asInstanceOf[js.Any])
+    inline def setResume_position_ms(value: Double): Self = StObject.set(x, "resume_position_ms", value.asInstanceOf[js.Any])
   }
 }

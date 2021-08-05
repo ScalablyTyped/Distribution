@@ -11,19 +11,15 @@ trait LocalIdentificationBlockParams extends StObject {
 }
 object LocalIdentificationBlockParams {
   
-  @scala.inline
-  def apply(): LocalIdentificationBlockParams = {
+  inline def apply(): LocalIdentificationBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalIdentificationBlockParams]
   }
   
-  @scala.inline
-  implicit class LocalIdentificationBlockParamsMutableBuilder[Self <: LocalIdentificationBlockParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocalIdentificationBlockParams](x: Self) {
     
-    @scala.inline
-    def setIdBlock(value: LocalHexBlockParamsisCons): Self = StObject.set(x, "idBlock", value.asInstanceOf[js.Any])
+    inline def setIdBlock(value: LocalHexBlockParamsisCons): Self = StObject.set(x, "idBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdBlockUndefined: Self = StObject.set(x, "idBlock", js.undefined)
+    inline def setIdBlockUndefined: Self = StObject.set(x, "idBlock", js.undefined)
   }
 }

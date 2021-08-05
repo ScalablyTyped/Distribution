@@ -25,27 +25,27 @@ object tableMod {
   class Table () extends ComponentContainer {
     def this(rows: js.Array[js.Array[js.UndefOr[Component | Null]]]) = this()
     
-    var _calculatedLayout: js.Any = js.native
+    /* private */ var _calculatedLayout: js.Any = js.native
     
-    var _columnPadding: js.Any = js.native
+    /* private */ var _columnPadding: js.Any = js.native
     
-    var _columnWeights: js.Any = js.native
+    /* private */ var _columnWeights: js.Any = js.native
     
     /* private */ def _determineGuarantees(offeredWidths: js.Any, offeredHeights: js.Any, isFinalOffer: js.Any): js.Any = js.native
     
     /* private */ def _iterateLayout(availableWidth: js.Any, availableHeight: js.Any, isFinalOffer: js.Any): js.Any = js.native
     
-    var _nCols: js.Any = js.native
+    /* private */ var _nCols: js.Any = js.native
     
-    var _nRows: js.Any = js.native
+    /* private */ var _nRows: js.Any = js.native
     
     /* private */ def _padTableToSize(nRows: js.Any, nCols: js.Any): js.Any = js.native
     
-    var _rowPadding: js.Any = js.native
+    /* private */ var _rowPadding: js.Any = js.native
     
-    var _rowWeights: js.Any = js.native
+    /* private */ var _rowWeights: js.Any = js.native
     
-    var _rows: js.Any = js.native
+    /* private */ var _rows: js.Any = js.native
     
     /**
       * Adds a Component in the specified row and column position.
@@ -155,13 +155,10 @@ object tableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcComponentWeights")(setWeights.asInstanceOf[js.Any], componentGroups.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcComponentWeights")(setWeights.asInstanceOf[js.Any], componentGroups.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcProportionalSpace")(weights.asInstanceOf[js.Any], freeSpace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcProportionalSpace")(weights.asInstanceOf[js.Any], freeSpace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_fixedSpace")(componentGroup.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_fixedSpace")(componentGroup.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

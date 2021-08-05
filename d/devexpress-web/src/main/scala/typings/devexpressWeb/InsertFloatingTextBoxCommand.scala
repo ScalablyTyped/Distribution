@@ -18,16 +18,13 @@ trait InsertFloatingTextBoxCommand
 }
 object InsertFloatingTextBoxCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertFloatingTextBoxCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): InsertFloatingTextBoxCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertFloatingTextBoxCommand]
   }
   
-  @scala.inline
-  implicit class InsertFloatingTextBoxCommandMutableBuilder[Self <: InsertFloatingTextBoxCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertFloatingTextBoxCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

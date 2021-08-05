@@ -31,8 +31,7 @@ trait StorePackageLicense extends StObject {
 }
 object StorePackageLicense {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _package: Package,
     close: () => Unit,
     isValid: Boolean,
@@ -44,22 +43,16 @@ object StorePackageLicense {
     __obj.asInstanceOf[StorePackageLicense]
   }
   
-  @scala.inline
-  implicit class StorePackageLicenseMutableBuilder[Self <: StorePackageLicense] (val x: Self) extends AnyVal {
+  extension [Self <: StorePackageLicense](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlicenselost(value: /* ev */ js.Object & WinRTEvent[StorePackageLicense] => Unit): Self = StObject.set(x, "onlicenselost", js.Any.fromFunction1(value))
+    inline def setOnlicenselost(value: /* ev */ js.Object & WinRTEvent[StorePackageLicense] => Unit): Self = StObject.set(x, "onlicenselost", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReleaseLicense(value: () => Unit): Self = StObject.set(x, "releaseLicense", js.Any.fromFunction0(value))
+    inline def setReleaseLicense(value: () => Unit): Self = StObject.set(x, "releaseLicense", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

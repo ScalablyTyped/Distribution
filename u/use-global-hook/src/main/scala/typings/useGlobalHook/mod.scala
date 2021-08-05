@@ -10,12 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
-  @scala.inline
-  def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object, options: InitializerFunction[S, A]): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
-  @scala.inline
-  def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object, options: Options[S, A]): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
+  inline def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
+  inline def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object, options: InitializerFunction[S, A]): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
+  inline def default[S, A](React: ReactInterface, inititalState: S, actions: js.Object, options: Options[S, A]): UseGlobal[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(React.asInstanceOf[js.Any], inititalState.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UseGlobal[S, A]]
   
   type IProduce = typings.immer.mod.IProduce
   
@@ -29,26 +26,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[S, A](): Options[S, A] = {
+    inline def apply[S, A](): Options[S, A] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[S, A]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], S, A] (val x: Self & (Options[S, A])) extends AnyVal {
+    extension [Self <: Options[?, ?], S, A](x: Self & (Options[S, A])) {
       
-      @scala.inline
-      def setImmer(value: IProduce): Self = StObject.set(x, "Immer", value.asInstanceOf[js.Any])
+      inline def setImmer(value: IProduce): Self = StObject.set(x, "Immer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmerUndefined: Self = StObject.set(x, "Immer", js.undefined)
+      inline def setImmerUndefined: Self = StObject.set(x, "Immer", js.undefined)
       
-      @scala.inline
-      def setInitializer(value: /* store */ Store[S, A] => Unit): Self = StObject.set(x, "initializer", js.Any.fromFunction1(value))
+      inline def setInitializer(value: /* store */ Store[S, A] => Unit): Self = StObject.set(x, "initializer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
+      inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
     }
   }
   
@@ -63,8 +54,7 @@ object mod {
   }
   object ReactInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       useEffect: /* repeated */ js.Any => js.Any,
       useMemo: /* repeated */ js.Any => js.Any,
       useState: /* repeated */ js.Any => js.Any
@@ -73,17 +63,13 @@ object mod {
       __obj.asInstanceOf[ReactInterface]
     }
     
-    @scala.inline
-    implicit class ReactInterfaceMutableBuilder[Self <: ReactInterface] (val x: Self) extends AnyVal {
+    extension [Self <: ReactInterface](x: Self) {
       
-      @scala.inline
-      def setUseEffect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "useEffect", js.Any.fromFunction1(value))
+      inline def setUseEffect(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "useEffect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUseMemo(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "useMemo", js.Any.fromFunction1(value))
+      inline def setUseMemo(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "useMemo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUseState(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "useState", js.Any.fromFunction1(value))
+      inline def setUseState(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "useState", js.Any.fromFunction1(value))
     }
   }
   

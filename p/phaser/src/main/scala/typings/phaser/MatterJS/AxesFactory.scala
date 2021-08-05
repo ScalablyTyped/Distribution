@@ -24,19 +24,15 @@ trait AxesFactory extends StObject {
 }
 object AxesFactory {
   
-  @scala.inline
-  def apply(fromVertices: js.Array[Vector] => js.Array[Vector], rotate: (js.Array[Vector], Double) => Unit): AxesFactory = {
+  inline def apply(fromVertices: js.Array[Vector] => js.Array[Vector], rotate: (js.Array[Vector], Double) => Unit): AxesFactory = {
     val __obj = js.Dynamic.literal(fromVertices = js.Any.fromFunction1(fromVertices), rotate = js.Any.fromFunction2(rotate))
     __obj.asInstanceOf[AxesFactory]
   }
   
-  @scala.inline
-  implicit class AxesFactoryMutableBuilder[Self <: AxesFactory] (val x: Self) extends AnyVal {
+  extension [Self <: AxesFactory](x: Self) {
     
-    @scala.inline
-    def setFromVertices(value: js.Array[Vector] => js.Array[Vector]): Self = StObject.set(x, "fromVertices", js.Any.fromFunction1(value))
+    inline def setFromVertices(value: js.Array[Vector] => js.Array[Vector]): Self = StObject.set(x, "fromVertices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRotate(value: (js.Array[Vector], Double) => Unit): Self = StObject.set(x, "rotate", js.Any.fromFunction2(value))
+    inline def setRotate(value: (js.Array[Vector], Double) => Unit): Self = StObject.set(x, "rotate", js.Any.fromFunction2(value))
   }
 }

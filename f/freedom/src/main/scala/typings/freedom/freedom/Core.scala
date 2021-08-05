@@ -21,8 +21,7 @@ trait Core extends StObject {
 }
 object Core {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindChannel: String => js.Promise[Channel],
     createChannel: () => js.Promise[ChannelSpecifier],
     getId: () => js.Promise[js.Array[String]],
@@ -32,19 +31,14 @@ object Core {
     __obj.asInstanceOf[Core]
   }
   
-  @scala.inline
-  implicit class CoreMutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
+  extension [Self <: Core](x: Self) {
     
-    @scala.inline
-    def setBindChannel(value: String => js.Promise[Channel]): Self = StObject.set(x, "bindChannel", js.Any.fromFunction1(value))
+    inline def setBindChannel(value: String => js.Promise[Channel]): Self = StObject.set(x, "bindChannel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateChannel(value: () => js.Promise[ChannelSpecifier]): Self = StObject.set(x, "createChannel", js.Any.fromFunction0(value))
+    inline def setCreateChannel(value: () => js.Promise[ChannelSpecifier]): Self = StObject.set(x, "createChannel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLogger(value: String => js.Promise[Logger]): Self = StObject.set(x, "getLogger", js.Any.fromFunction1(value))
+    inline def setGetLogger(value: String => js.Promise[Logger]): Self = StObject.set(x, "getLogger", js.Any.fromFunction1(value))
   }
 }

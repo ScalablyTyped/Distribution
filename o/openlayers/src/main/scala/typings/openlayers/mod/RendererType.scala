@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RendererType extends StObject
 object RendererType {
   
-  @scala.inline
-  def canvas: typings.openlayers.openlayersStrings.canvas = "canvas".asInstanceOf[typings.openlayers.openlayersStrings.canvas]
+  inline def canvas: typings.openlayers.openlayersStrings.canvas = "canvas".asInstanceOf[typings.openlayers.openlayersStrings.canvas]
   
-  @scala.inline
-  def dom: typings.openlayers.openlayersStrings.dom = "dom".asInstanceOf[typings.openlayers.openlayersStrings.dom]
+  inline def dom: typings.openlayers.openlayersStrings.dom = "dom".asInstanceOf[typings.openlayers.openlayersStrings.dom]
   
-  @scala.inline
-  def webgl: typings.openlayers.openlayersStrings.webgl = "webgl".asInstanceOf[typings.openlayers.openlayersStrings.webgl]
+  inline def webgl: typings.openlayers.openlayersStrings.webgl = "webgl".asInstanceOf[typings.openlayers.openlayersStrings.webgl]
 }

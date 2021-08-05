@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxIncomingJob Class */
 @JSGlobal("FAXCOMEXLib.FaxIncomingJob")
 @js.native
-class FaxIncomingJob protected ()
+/* private */ class FaxIncomingJob ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxIncomingJob {
   
@@ -52,7 +52,7 @@ class FaxIncomingJob protected ()
   /* CompleteClass */
   override val ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxIncomingJob_typekey")
   var FAXCOMEXLibDotFaxIncomingJob_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxIncomingJob = js.native
   

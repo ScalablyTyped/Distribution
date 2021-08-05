@@ -16,7 +16,7 @@ trait Inspectors extends StObject {
   
   def Item(Index: js.Any): Inspector
   
-  @JSName("Outlook.Inspectors_typekey")
+  /* private */ @JSName("Outlook.Inspectors_typekey")
   var OutlookDotInspectors_typekey: Inspectors
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait Inspectors extends StObject {
 }
 object Inspectors {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: js.Any => Inspector,
     Application: Application,
     Class: OlObjectClass,
@@ -41,31 +40,22 @@ object Inspectors {
     __obj.asInstanceOf[Inspectors]
   }
   
-  @scala.inline
-  implicit class InspectorsMutableBuilder[Self <: Inspectors] (val x: Self) extends AnyVal {
+  extension [Self <: Inspectors](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Any => Inspector): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: js.Any => Inspector): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Inspector): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Inspector): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotInspectors_typekey(value: Inspectors): Self = StObject.set(x, "Outlook.Inspectors_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotInspectors_typekey(value: Inspectors): Self = StObject.set(x, "Outlook.Inspectors_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

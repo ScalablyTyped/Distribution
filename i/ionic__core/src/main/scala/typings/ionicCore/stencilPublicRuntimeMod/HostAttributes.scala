@@ -21,31 +21,23 @@ trait HostAttributes
 }
 object HostAttributes {
   
-  @scala.inline
-  def apply(): HostAttributes = {
+  inline def apply(): HostAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostAttributes]
   }
   
-  @scala.inline
-  implicit class HostAttributesMutableBuilder[Self <: HostAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: HostAttributes](x: Self) {
     
-    @scala.inline
-    def setClass(value: String | StringDictionary[Boolean]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String | StringDictionary[Boolean]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setRef(value: /* el */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRef(value: /* el */ HTMLElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -17,23 +17,18 @@ trait StripeApplePayLineItem extends StObject {
 }
 object StripeApplePayLineItem {
   
-  @scala.inline
-  def apply(amount: Double, label: String, `type`: pending | `final`): StripeApplePayLineItem = {
+  inline def apply(amount: Double, label: String, `type`: pending | `final`): StripeApplePayLineItem = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeApplePayLineItem]
   }
   
-  @scala.inline
-  implicit class StripeApplePayLineItemMutableBuilder[Self <: StripeApplePayLineItem] (val x: Self) extends AnyVal {
+  extension [Self <: StripeApplePayLineItem](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: pending | `final`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pending | `final`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

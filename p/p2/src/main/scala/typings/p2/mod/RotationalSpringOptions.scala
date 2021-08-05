@@ -12,19 +12,15 @@ trait RotationalSpringOptions
 }
 object RotationalSpringOptions {
   
-  @scala.inline
-  def apply(): RotationalSpringOptions = {
+  inline def apply(): RotationalSpringOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotationalSpringOptions]
   }
   
-  @scala.inline
-  implicit class RotationalSpringOptionsMutableBuilder[Self <: RotationalSpringOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RotationalSpringOptions](x: Self) {
     
-    @scala.inline
-    def setRestAngle(value: Double): Self = StObject.set(x, "restAngle", value.asInstanceOf[js.Any])
+    inline def setRestAngle(value: Double): Self = StObject.set(x, "restAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestAngleUndefined: Self = StObject.set(x, "restAngle", js.undefined)
+    inline def setRestAngleUndefined: Self = StObject.set(x, "restAngle", js.undefined)
   }
 }

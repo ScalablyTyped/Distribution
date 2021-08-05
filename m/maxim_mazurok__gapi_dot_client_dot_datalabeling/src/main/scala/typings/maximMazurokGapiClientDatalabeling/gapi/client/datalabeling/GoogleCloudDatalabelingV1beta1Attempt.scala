@@ -13,28 +13,21 @@ trait GoogleCloudDatalabelingV1beta1Attempt extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1Attempt {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1Attempt = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1Attempt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1Attempt]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1AttemptMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1Attempt] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1Attempt](x: Self) {
     
-    @scala.inline
-    def setAttemptTime(value: String): Self = StObject.set(x, "attemptTime", value.asInstanceOf[js.Any])
+    inline def setAttemptTime(value: String): Self = StObject.set(x, "attemptTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptTimeUndefined: Self = StObject.set(x, "attemptTime", js.undefined)
+    inline def setAttemptTimeUndefined: Self = StObject.set(x, "attemptTime", js.undefined)
     
-    @scala.inline
-    def setPartialFailures(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "partialFailures", value.asInstanceOf[js.Any])
+    inline def setPartialFailures(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "partialFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialFailuresUndefined: Self = StObject.set(x, "partialFailures", js.undefined)
+    inline def setPartialFailuresUndefined: Self = StObject.set(x, "partialFailures", js.undefined)
     
-    @scala.inline
-    def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value :_*))
+    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value :_*))
   }
 }

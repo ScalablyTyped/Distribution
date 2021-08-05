@@ -18,28 +18,21 @@ trait ListSubscriptionsByTopicResponse extends StObject {
 }
 object ListSubscriptionsByTopicResponse {
   
-  @scala.inline
-  def apply(): ListSubscriptionsByTopicResponse = {
+  inline def apply(): ListSubscriptionsByTopicResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSubscriptionsByTopicResponse]
   }
   
-  @scala.inline
-  implicit class ListSubscriptionsByTopicResponseMutableBuilder[Self <: ListSubscriptionsByTopicResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSubscriptionsByTopicResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSubscriptions(value: SubscriptionsList): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: SubscriptionsList): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
+    inline def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
     
-    @scala.inline
-    def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
   }
 }

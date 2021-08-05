@@ -13,19 +13,15 @@ trait MSGraphicsTrust extends StObject {
 }
 object MSGraphicsTrust {
   
-  @scala.inline
-  def apply(constrictionActive: scala.Boolean, status: java.lang.String): MSGraphicsTrust = {
+  inline def apply(constrictionActive: scala.Boolean, status: java.lang.String): MSGraphicsTrust = {
     val __obj = js.Dynamic.literal(constrictionActive = constrictionActive.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSGraphicsTrust]
   }
   
-  @scala.inline
-  implicit class MSGraphicsTrustMutableBuilder[Self <: MSGraphicsTrust] (val x: Self) extends AnyVal {
+  extension [Self <: MSGraphicsTrust](x: Self) {
     
-    @scala.inline
-    def setConstrictionActive(value: scala.Boolean): Self = StObject.set(x, "constrictionActive", value.asInstanceOf[js.Any])
+    inline def setConstrictionActive(value: scala.Boolean): Self = StObject.set(x, "constrictionActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: java.lang.String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: java.lang.String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

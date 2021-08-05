@@ -124,129 +124,89 @@ trait InterpolationOptions extends StObject {
 }
 object InterpolationOptions {
   
-  @scala.inline
-  def apply(): InterpolationOptions = {
+  inline def apply(): InterpolationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterpolationOptions]
   }
   
-  @scala.inline
-  implicit class InterpolationOptionsMutableBuilder[Self <: InterpolationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InterpolationOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "defaultVariables", value.asInstanceOf[js.Any])
+    inline def setDefaultVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "defaultVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVariablesUndefined: Self = StObject.set(x, "defaultVariables", js.undefined)
+    inline def setDefaultVariablesUndefined: Self = StObject.set(x, "defaultVariables", js.undefined)
     
-    @scala.inline
-    def setEscape(value: /* str */ String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+    inline def setEscape(value: /* str */ String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+    inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
-    @scala.inline
-    def setEscapeValue(value: Boolean): Self = StObject.set(x, "escapeValue", value.asInstanceOf[js.Any])
+    inline def setEscapeValue(value: Boolean): Self = StObject.set(x, "escapeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeValueUndefined: Self = StObject.set(x, "escapeValue", js.undefined)
+    inline def setEscapeValueUndefined: Self = StObject.set(x, "escapeValue", js.undefined)
     
-    @scala.inline
-    def setFormat(
+    inline def setFormat(
       value: (/* value */ js.Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptionskeyst]) => String
     ): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFormatSeparator(value: String): Self = StObject.set(x, "formatSeparator", value.asInstanceOf[js.Any])
+    inline def setFormatSeparator(value: String): Self = StObject.set(x, "formatSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatSeparatorUndefined: Self = StObject.set(x, "formatSeparator", js.undefined)
+    inline def setFormatSeparatorUndefined: Self = StObject.set(x, "formatSeparator", js.undefined)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setMaxReplaces(value: Double): Self = StObject.set(x, "maxReplaces", value.asInstanceOf[js.Any])
+    inline def setMaxReplaces(value: Double): Self = StObject.set(x, "maxReplaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxReplacesUndefined: Self = StObject.set(x, "maxReplaces", js.undefined)
+    inline def setMaxReplacesUndefined: Self = StObject.set(x, "maxReplaces", js.undefined)
     
-    @scala.inline
-    def setNestingOptionsSeparator(value: String): Self = StObject.set(x, "nestingOptionsSeparator", value.asInstanceOf[js.Any])
+    inline def setNestingOptionsSeparator(value: String): Self = StObject.set(x, "nestingOptionsSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingOptionsSeparatorUndefined: Self = StObject.set(x, "nestingOptionsSeparator", js.undefined)
+    inline def setNestingOptionsSeparatorUndefined: Self = StObject.set(x, "nestingOptionsSeparator", js.undefined)
     
-    @scala.inline
-    def setNestingPrefix(value: String): Self = StObject.set(x, "nestingPrefix", value.asInstanceOf[js.Any])
+    inline def setNestingPrefix(value: String): Self = StObject.set(x, "nestingPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingPrefixEscaped(value: String): Self = StObject.set(x, "nestingPrefixEscaped", value.asInstanceOf[js.Any])
+    inline def setNestingPrefixEscaped(value: String): Self = StObject.set(x, "nestingPrefixEscaped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingPrefixEscapedUndefined: Self = StObject.set(x, "nestingPrefixEscaped", js.undefined)
+    inline def setNestingPrefixEscapedUndefined: Self = StObject.set(x, "nestingPrefixEscaped", js.undefined)
     
-    @scala.inline
-    def setNestingPrefixUndefined: Self = StObject.set(x, "nestingPrefix", js.undefined)
+    inline def setNestingPrefixUndefined: Self = StObject.set(x, "nestingPrefix", js.undefined)
     
-    @scala.inline
-    def setNestingSuffix(value: String): Self = StObject.set(x, "nestingSuffix", value.asInstanceOf[js.Any])
+    inline def setNestingSuffix(value: String): Self = StObject.set(x, "nestingSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingSuffixEscaped(value: String): Self = StObject.set(x, "nestingSuffixEscaped", value.asInstanceOf[js.Any])
+    inline def setNestingSuffixEscaped(value: String): Self = StObject.set(x, "nestingSuffixEscaped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingSuffixEscapedUndefined: Self = StObject.set(x, "nestingSuffixEscaped", js.undefined)
+    inline def setNestingSuffixEscapedUndefined: Self = StObject.set(x, "nestingSuffixEscaped", js.undefined)
     
-    @scala.inline
-    def setNestingSuffixUndefined: Self = StObject.set(x, "nestingSuffix", js.undefined)
+    inline def setNestingSuffixUndefined: Self = StObject.set(x, "nestingSuffix", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixEscaped(value: String): Self = StObject.set(x, "prefixEscaped", value.asInstanceOf[js.Any])
+    inline def setPrefixEscaped(value: String): Self = StObject.set(x, "prefixEscaped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixEscapedUndefined: Self = StObject.set(x, "prefixEscaped", js.undefined)
+    inline def setPrefixEscapedUndefined: Self = StObject.set(x, "prefixEscaped", js.undefined)
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSkipOnVariables(value: Boolean): Self = StObject.set(x, "skipOnVariables", value.asInstanceOf[js.Any])
+    inline def setSkipOnVariables(value: Boolean): Self = StObject.set(x, "skipOnVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipOnVariablesUndefined: Self = StObject.set(x, "skipOnVariables", js.undefined)
+    inline def setSkipOnVariablesUndefined: Self = StObject.set(x, "skipOnVariables", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixEscaped(value: String): Self = StObject.set(x, "suffixEscaped", value.asInstanceOf[js.Any])
+    inline def setSuffixEscaped(value: String): Self = StObject.set(x, "suffixEscaped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixEscapedUndefined: Self = StObject.set(x, "suffixEscaped", js.undefined)
+    inline def setSuffixEscapedUndefined: Self = StObject.set(x, "suffixEscaped", js.undefined)
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     
-    @scala.inline
-    def setUnescapePrefix(value: String): Self = StObject.set(x, "unescapePrefix", value.asInstanceOf[js.Any])
+    inline def setUnescapePrefix(value: String): Self = StObject.set(x, "unescapePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnescapePrefixUndefined: Self = StObject.set(x, "unescapePrefix", js.undefined)
+    inline def setUnescapePrefixUndefined: Self = StObject.set(x, "unescapePrefix", js.undefined)
     
-    @scala.inline
-    def setUnescapeSuffix(value: String): Self = StObject.set(x, "unescapeSuffix", value.asInstanceOf[js.Any])
+    inline def setUnescapeSuffix(value: String): Self = StObject.set(x, "unescapeSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnescapeSuffixUndefined: Self = StObject.set(x, "unescapeSuffix", js.undefined)
+    inline def setUnescapeSuffixUndefined: Self = StObject.set(x, "unescapeSuffix", js.undefined)
     
-    @scala.inline
-    def setUseRawValueToEscape(value: Boolean): Self = StObject.set(x, "useRawValueToEscape", value.asInstanceOf[js.Any])
+    inline def setUseRawValueToEscape(value: Boolean): Self = StObject.set(x, "useRawValueToEscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseRawValueToEscapeUndefined: Self = StObject.set(x, "useRawValueToEscape", js.undefined)
+    inline def setUseRawValueToEscapeUndefined: Self = StObject.set(x, "useRawValueToEscape", js.undefined)
   }
 }

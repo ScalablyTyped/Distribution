@@ -55,21 +55,16 @@ object resolverRuleAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState, opts: CustomResourceOptions): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
+    inline def get(name: String, id: Input[ID]): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
+    inline def get(name: String, id: Input[ID], state: ResolverRuleAssociationState): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
+    inline def get(name: String, id: Input[ID], state: ResolverRuleAssociationState, opts: CustomResourceOptions): ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRuleAssociation]
     
     /**
       * Returns true if the given object is an instance of ResolverRuleAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean]
   }
   
   trait ResolverRuleAssociationArgs extends StObject {
@@ -91,26 +86,20 @@ object resolverRuleAssociationMod {
   }
   object ResolverRuleAssociationArgs {
     
-    @scala.inline
-    def apply(resolverRuleId: Input[String], vpcId: Input[String]): ResolverRuleAssociationArgs = {
+    inline def apply(resolverRuleId: Input[String], vpcId: Input[String]): ResolverRuleAssociationArgs = {
       val __obj = js.Dynamic.literal(resolverRuleId = resolverRuleId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolverRuleAssociationArgs]
     }
     
-    @scala.inline
-    implicit class ResolverRuleAssociationArgsMutableBuilder[Self <: ResolverRuleAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResolverRuleAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResolverRuleId(value: Input[String]): Self = StObject.set(x, "resolverRuleId", value.asInstanceOf[js.Any])
+      inline def setResolverRuleId(value: Input[String]): Self = StObject.set(x, "resolverRuleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,32 +122,24 @@ object resolverRuleAssociationMod {
   }
   object ResolverRuleAssociationState {
     
-    @scala.inline
-    def apply(): ResolverRuleAssociationState = {
+    inline def apply(): ResolverRuleAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolverRuleAssociationState]
     }
     
-    @scala.inline
-    implicit class ResolverRuleAssociationStateMutableBuilder[Self <: ResolverRuleAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: ResolverRuleAssociationState](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResolverRuleId(value: Input[String]): Self = StObject.set(x, "resolverRuleId", value.asInstanceOf[js.Any])
+      inline def setResolverRuleId(value: Input[String]): Self = StObject.set(x, "resolverRuleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolverRuleIdUndefined: Self = StObject.set(x, "resolverRuleId", js.undefined)
+      inline def setResolverRuleIdUndefined: Self = StObject.set(x, "resolverRuleId", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

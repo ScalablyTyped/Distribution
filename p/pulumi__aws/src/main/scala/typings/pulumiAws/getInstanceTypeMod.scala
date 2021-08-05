@@ -15,10 +15,8 @@ object getInstanceTypeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInstanceType(args: GetInstanceTypeArgs): js.Promise[GetInstanceTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceTypeResult]]
-  @scala.inline
-  def getInstanceType(args: GetInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetInstanceTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceTypeResult]]
+  inline def getInstanceType(args: GetInstanceTypeArgs): js.Promise[GetInstanceTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceTypeResult]]
+  inline def getInstanceType(args: GetInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetInstanceTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceTypeResult]]
   
   trait GetInstanceTypeArgs extends StObject {
     
@@ -96,95 +94,66 @@ object getInstanceTypeMod {
   }
   object GetInstanceTypeArgs {
     
-    @scala.inline
-    def apply(instanceType: String): GetInstanceTypeArgs = {
+    inline def apply(instanceType: String): GetInstanceTypeArgs = {
       val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetInstanceTypeArgs]
     }
     
-    @scala.inline
-    implicit class GetInstanceTypeArgsMutableBuilder[Self <: GetInstanceTypeArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetInstanceTypeArgs](x: Self) {
       
-      @scala.inline
-      def setDefaultCores(value: Double): Self = StObject.set(x, "defaultCores", value.asInstanceOf[js.Any])
+      inline def setDefaultCores(value: Double): Self = StObject.set(x, "defaultCores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCoresUndefined: Self = StObject.set(x, "defaultCores", js.undefined)
+      inline def setDefaultCoresUndefined: Self = StObject.set(x, "defaultCores", js.undefined)
       
-      @scala.inline
-      def setDefaultThreadsPerCore(value: Double): Self = StObject.set(x, "defaultThreadsPerCore", value.asInstanceOf[js.Any])
+      inline def setDefaultThreadsPerCore(value: Double): Self = StObject.set(x, "defaultThreadsPerCore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultThreadsPerCoreUndefined: Self = StObject.set(x, "defaultThreadsPerCore", js.undefined)
+      inline def setDefaultThreadsPerCoreUndefined: Self = StObject.set(x, "defaultThreadsPerCore", js.undefined)
       
-      @scala.inline
-      def setFpgas(value: js.Array[GetInstanceTypeFpga]): Self = StObject.set(x, "fpgas", value.asInstanceOf[js.Any])
+      inline def setFpgas(value: js.Array[GetInstanceTypeFpga]): Self = StObject.set(x, "fpgas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFpgasUndefined: Self = StObject.set(x, "fpgas", js.undefined)
+      inline def setFpgasUndefined: Self = StObject.set(x, "fpgas", js.undefined)
       
-      @scala.inline
-      def setFpgasVarargs(value: GetInstanceTypeFpga*): Self = StObject.set(x, "fpgas", js.Array(value :_*))
+      inline def setFpgasVarargs(value: GetInstanceTypeFpga*): Self = StObject.set(x, "fpgas", js.Array(value :_*))
       
-      @scala.inline
-      def setGpuses(value: js.Array[GetInstanceTypeGpus]): Self = StObject.set(x, "gpuses", value.asInstanceOf[js.Any])
+      inline def setGpuses(value: js.Array[GetInstanceTypeGpus]): Self = StObject.set(x, "gpuses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGpusesUndefined: Self = StObject.set(x, "gpuses", js.undefined)
+      inline def setGpusesUndefined: Self = StObject.set(x, "gpuses", js.undefined)
       
-      @scala.inline
-      def setGpusesVarargs(value: GetInstanceTypeGpus*): Self = StObject.set(x, "gpuses", js.Array(value :_*))
+      inline def setGpusesVarargs(value: GetInstanceTypeGpus*): Self = StObject.set(x, "gpuses", js.Array(value :_*))
       
-      @scala.inline
-      def setHypervisor(value: String): Self = StObject.set(x, "hypervisor", value.asInstanceOf[js.Any])
+      inline def setHypervisor(value: String): Self = StObject.set(x, "hypervisor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHypervisorUndefined: Self = StObject.set(x, "hypervisor", js.undefined)
+      inline def setHypervisorUndefined: Self = StObject.set(x, "hypervisor", js.undefined)
       
-      @scala.inline
-      def setInferenceAccelerators(value: js.Array[GetInstanceTypeInferenceAccelerator]): Self = StObject.set(x, "inferenceAccelerators", value.asInstanceOf[js.Any])
+      inline def setInferenceAccelerators(value: js.Array[GetInstanceTypeInferenceAccelerator]): Self = StObject.set(x, "inferenceAccelerators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInferenceAcceleratorsUndefined: Self = StObject.set(x, "inferenceAccelerators", js.undefined)
+      inline def setInferenceAcceleratorsUndefined: Self = StObject.set(x, "inferenceAccelerators", js.undefined)
       
-      @scala.inline
-      def setInferenceAcceleratorsVarargs(value: GetInstanceTypeInferenceAccelerator*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
+      inline def setInferenceAcceleratorsVarargs(value: GetInstanceTypeInferenceAccelerator*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceDisks(value: js.Array[GetInstanceTypeInstanceDisk]): Self = StObject.set(x, "instanceDisks", value.asInstanceOf[js.Any])
+      inline def setInstanceDisks(value: js.Array[GetInstanceTypeInstanceDisk]): Self = StObject.set(x, "instanceDisks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceDisksUndefined: Self = StObject.set(x, "instanceDisks", js.undefined)
+      inline def setInstanceDisksUndefined: Self = StObject.set(x, "instanceDisks", js.undefined)
       
-      @scala.inline
-      def setInstanceDisksVarargs(value: GetInstanceTypeInstanceDisk*): Self = StObject.set(x, "instanceDisks", js.Array(value :_*))
+      inline def setInstanceDisksVarargs(value: GetInstanceTypeInstanceDisk*): Self = StObject.set(x, "instanceDisks", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumIpv6AddressesPerInterface(value: Double): Self = StObject.set(x, "maximumIpv6AddressesPerInterface", value.asInstanceOf[js.Any])
+      inline def setMaximumIpv6AddressesPerInterface(value: Double): Self = StObject.set(x, "maximumIpv6AddressesPerInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumIpv6AddressesPerInterfaceUndefined: Self = StObject.set(x, "maximumIpv6AddressesPerInterface", js.undefined)
+      inline def setMaximumIpv6AddressesPerInterfaceUndefined: Self = StObject.set(x, "maximumIpv6AddressesPerInterface", js.undefined)
       
-      @scala.inline
-      def setTotalFpgaMemory(value: Double): Self = StObject.set(x, "totalFpgaMemory", value.asInstanceOf[js.Any])
+      inline def setTotalFpgaMemory(value: Double): Self = StObject.set(x, "totalFpgaMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalFpgaMemoryUndefined: Self = StObject.set(x, "totalFpgaMemory", js.undefined)
+      inline def setTotalFpgaMemoryUndefined: Self = StObject.set(x, "totalFpgaMemory", js.undefined)
       
-      @scala.inline
-      def setTotalGpuMemory(value: Double): Self = StObject.set(x, "totalGpuMemory", value.asInstanceOf[js.Any])
+      inline def setTotalGpuMemory(value: Double): Self = StObject.set(x, "totalGpuMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalGpuMemoryUndefined: Self = StObject.set(x, "totalGpuMemory", js.undefined)
+      inline def setTotalGpuMemoryUndefined: Self = StObject.set(x, "totalGpuMemory", js.undefined)
       
-      @scala.inline
-      def setTotalInstanceStorage(value: Double): Self = StObject.set(x, "totalInstanceStorage", value.asInstanceOf[js.Any])
+      inline def setTotalInstanceStorage(value: Double): Self = StObject.set(x, "totalInstanceStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalInstanceStorageUndefined: Self = StObject.set(x, "totalInstanceStorage", js.undefined)
+      inline def setTotalInstanceStorageUndefined: Self = StObject.set(x, "totalInstanceStorage", js.undefined)
     }
   }
   
@@ -431,8 +400,7 @@ object getInstanceTypeMod {
   }
   object GetInstanceTypeResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoRecoverySupported: Boolean,
       bareMetal: Boolean,
       burstablePerformanceSupported: Boolean,
@@ -484,179 +452,121 @@ object getInstanceTypeMod {
       __obj.asInstanceOf[GetInstanceTypeResult]
     }
     
-    @scala.inline
-    implicit class GetInstanceTypeResultMutableBuilder[Self <: GetInstanceTypeResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetInstanceTypeResult](x: Self) {
       
-      @scala.inline
-      def setAutoRecoverySupported(value: Boolean): Self = StObject.set(x, "autoRecoverySupported", value.asInstanceOf[js.Any])
+      inline def setAutoRecoverySupported(value: Boolean): Self = StObject.set(x, "autoRecoverySupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBareMetal(value: Boolean): Self = StObject.set(x, "bareMetal", value.asInstanceOf[js.Any])
+      inline def setBareMetal(value: Boolean): Self = StObject.set(x, "bareMetal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBurstablePerformanceSupported(value: Boolean): Self = StObject.set(x, "burstablePerformanceSupported", value.asInstanceOf[js.Any])
+      inline def setBurstablePerformanceSupported(value: Boolean): Self = StObject.set(x, "burstablePerformanceSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentGeneration(value: Boolean): Self = StObject.set(x, "currentGeneration", value.asInstanceOf[js.Any])
+      inline def setCurrentGeneration(value: Boolean): Self = StObject.set(x, "currentGeneration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDedicatedHostsSupported(value: Boolean): Self = StObject.set(x, "dedicatedHostsSupported", value.asInstanceOf[js.Any])
+      inline def setDedicatedHostsSupported(value: Boolean): Self = StObject.set(x, "dedicatedHostsSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCores(value: Double): Self = StObject.set(x, "defaultCores", value.asInstanceOf[js.Any])
+      inline def setDefaultCores(value: Double): Self = StObject.set(x, "defaultCores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultThreadsPerCore(value: Double): Self = StObject.set(x, "defaultThreadsPerCore", value.asInstanceOf[js.Any])
+      inline def setDefaultThreadsPerCore(value: Double): Self = StObject.set(x, "defaultThreadsPerCore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultVcpus(value: Double): Self = StObject.set(x, "defaultVcpus", value.asInstanceOf[js.Any])
+      inline def setDefaultVcpus(value: Double): Self = StObject.set(x, "defaultVcpus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsEncryptionSupport(value: String): Self = StObject.set(x, "ebsEncryptionSupport", value.asInstanceOf[js.Any])
+      inline def setEbsEncryptionSupport(value: String): Self = StObject.set(x, "ebsEncryptionSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsNvmeSupport(value: String): Self = StObject.set(x, "ebsNvmeSupport", value.asInstanceOf[js.Any])
+      inline def setEbsNvmeSupport(value: String): Self = StObject.set(x, "ebsNvmeSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptimizedSupport(value: String): Self = StObject.set(x, "ebsOptimizedSupport", value.asInstanceOf[js.Any])
+      inline def setEbsOptimizedSupport(value: String): Self = StObject.set(x, "ebsOptimizedSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsPerformanceBaselineBandwidth(value: Double): Self = StObject.set(x, "ebsPerformanceBaselineBandwidth", value.asInstanceOf[js.Any])
+      inline def setEbsPerformanceBaselineBandwidth(value: Double): Self = StObject.set(x, "ebsPerformanceBaselineBandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsPerformanceBaselineIops(value: Double): Self = StObject.set(x, "ebsPerformanceBaselineIops", value.asInstanceOf[js.Any])
+      inline def setEbsPerformanceBaselineIops(value: Double): Self = StObject.set(x, "ebsPerformanceBaselineIops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsPerformanceBaselineThroughput(value: Double): Self = StObject.set(x, "ebsPerformanceBaselineThroughput", value.asInstanceOf[js.Any])
+      inline def setEbsPerformanceBaselineThroughput(value: Double): Self = StObject.set(x, "ebsPerformanceBaselineThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsPerformanceMaximumBandwidth(value: Double): Self = StObject.set(x, "ebsPerformanceMaximumBandwidth", value.asInstanceOf[js.Any])
+      inline def setEbsPerformanceMaximumBandwidth(value: Double): Self = StObject.set(x, "ebsPerformanceMaximumBandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsPerformanceMaximumIops(value: Double): Self = StObject.set(x, "ebsPerformanceMaximumIops", value.asInstanceOf[js.Any])
+      inline def setEbsPerformanceMaximumIops(value: Double): Self = StObject.set(x, "ebsPerformanceMaximumIops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsPerformanceMaximumThroughput(value: Double): Self = StObject.set(x, "ebsPerformanceMaximumThroughput", value.asInstanceOf[js.Any])
+      inline def setEbsPerformanceMaximumThroughput(value: Double): Self = StObject.set(x, "ebsPerformanceMaximumThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEfaSupported(value: Boolean): Self = StObject.set(x, "efaSupported", value.asInstanceOf[js.Any])
+      inline def setEfaSupported(value: Boolean): Self = StObject.set(x, "efaSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnaSupport(value: String): Self = StObject.set(x, "enaSupport", value.asInstanceOf[js.Any])
+      inline def setEnaSupport(value: String): Self = StObject.set(x, "enaSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFpgas(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeFpga]): Self = StObject.set(x, "fpgas", value.asInstanceOf[js.Any])
+      inline def setFpgas(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeFpga]): Self = StObject.set(x, "fpgas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFpgasVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeFpga*): Self = StObject.set(x, "fpgas", js.Array(value :_*))
+      inline def setFpgasVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeFpga*): Self = StObject.set(x, "fpgas", js.Array(value :_*))
       
-      @scala.inline
-      def setFreeTierEligible(value: Boolean): Self = StObject.set(x, "freeTierEligible", value.asInstanceOf[js.Any])
+      inline def setFreeTierEligible(value: Boolean): Self = StObject.set(x, "freeTierEligible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGpuses(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeGpus]): Self = StObject.set(x, "gpuses", value.asInstanceOf[js.Any])
+      inline def setGpuses(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeGpus]): Self = StObject.set(x, "gpuses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGpusesVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeGpus*): Self = StObject.set(x, "gpuses", js.Array(value :_*))
+      inline def setGpusesVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeGpus*): Self = StObject.set(x, "gpuses", js.Array(value :_*))
       
-      @scala.inline
-      def setHibernationSupported(value: Boolean): Self = StObject.set(x, "hibernationSupported", value.asInstanceOf[js.Any])
+      inline def setHibernationSupported(value: Boolean): Self = StObject.set(x, "hibernationSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHypervisor(value: String): Self = StObject.set(x, "hypervisor", value.asInstanceOf[js.Any])
+      inline def setHypervisor(value: String): Self = StObject.set(x, "hypervisor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInferenceAccelerators(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeInferenceAccelerator]): Self = StObject.set(x, "inferenceAccelerators", value.asInstanceOf[js.Any])
+      inline def setInferenceAccelerators(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeInferenceAccelerator]): Self = StObject.set(x, "inferenceAccelerators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInferenceAcceleratorsVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeInferenceAccelerator*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
+      inline def setInferenceAcceleratorsVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeInferenceAccelerator*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceDisks(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeInstanceDisk]): Self = StObject.set(x, "instanceDisks", value.asInstanceOf[js.Any])
+      inline def setInstanceDisks(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeInstanceDisk]): Self = StObject.set(x, "instanceDisks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceDisksVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeInstanceDisk*): Self = StObject.set(x, "instanceDisks", js.Array(value :_*))
+      inline def setInstanceDisksVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeInstanceDisk*): Self = StObject.set(x, "instanceDisks", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceStorageSupported(value: Boolean): Self = StObject.set(x, "instanceStorageSupported", value.asInstanceOf[js.Any])
+      inline def setInstanceStorageSupported(value: Boolean): Self = StObject.set(x, "instanceStorageSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6Supported(value: Boolean): Self = StObject.set(x, "ipv6Supported", value.asInstanceOf[js.Any])
+      inline def setIpv6Supported(value: Boolean): Self = StObject.set(x, "ipv6Supported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumIpv4AddressesPerInterface(value: Double): Self = StObject.set(x, "maximumIpv4AddressesPerInterface", value.asInstanceOf[js.Any])
+      inline def setMaximumIpv4AddressesPerInterface(value: Double): Self = StObject.set(x, "maximumIpv4AddressesPerInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumIpv6AddressesPerInterface(value: Double): Self = StObject.set(x, "maximumIpv6AddressesPerInterface", value.asInstanceOf[js.Any])
+      inline def setMaximumIpv6AddressesPerInterface(value: Double): Self = StObject.set(x, "maximumIpv6AddressesPerInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumNetworkInterfaces(value: Double): Self = StObject.set(x, "maximumNetworkInterfaces", value.asInstanceOf[js.Any])
+      inline def setMaximumNetworkInterfaces(value: Double): Self = StObject.set(x, "maximumNetworkInterfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemorySize(value: Double): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
+      inline def setMemorySize(value: Double): Self = StObject.set(x, "memorySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkPerformance(value: String): Self = StObject.set(x, "networkPerformance", value.asInstanceOf[js.Any])
+      inline def setNetworkPerformance(value: String): Self = StObject.set(x, "networkPerformance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedArchitectures(value: js.Array[String]): Self = StObject.set(x, "supportedArchitectures", value.asInstanceOf[js.Any])
+      inline def setSupportedArchitectures(value: js.Array[String]): Self = StObject.set(x, "supportedArchitectures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedArchitecturesVarargs(value: String*): Self = StObject.set(x, "supportedArchitectures", js.Array(value :_*))
+      inline def setSupportedArchitecturesVarargs(value: String*): Self = StObject.set(x, "supportedArchitectures", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedPlacementStrategies(value: js.Array[String]): Self = StObject.set(x, "supportedPlacementStrategies", value.asInstanceOf[js.Any])
+      inline def setSupportedPlacementStrategies(value: js.Array[String]): Self = StObject.set(x, "supportedPlacementStrategies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedPlacementStrategiesVarargs(value: String*): Self = StObject.set(x, "supportedPlacementStrategies", js.Array(value :_*))
+      inline def setSupportedPlacementStrategiesVarargs(value: String*): Self = StObject.set(x, "supportedPlacementStrategies", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedRootDeviceTypes(value: js.Array[String]): Self = StObject.set(x, "supportedRootDeviceTypes", value.asInstanceOf[js.Any])
+      inline def setSupportedRootDeviceTypes(value: js.Array[String]): Self = StObject.set(x, "supportedRootDeviceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedRootDeviceTypesVarargs(value: String*): Self = StObject.set(x, "supportedRootDeviceTypes", js.Array(value :_*))
+      inline def setSupportedRootDeviceTypesVarargs(value: String*): Self = StObject.set(x, "supportedRootDeviceTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedUsagesClasses(value: js.Array[String]): Self = StObject.set(x, "supportedUsagesClasses", value.asInstanceOf[js.Any])
+      inline def setSupportedUsagesClasses(value: js.Array[String]): Self = StObject.set(x, "supportedUsagesClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedUsagesClassesVarargs(value: String*): Self = StObject.set(x, "supportedUsagesClasses", js.Array(value :_*))
+      inline def setSupportedUsagesClassesVarargs(value: String*): Self = StObject.set(x, "supportedUsagesClasses", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedVirtualizationTypes(value: js.Array[String]): Self = StObject.set(x, "supportedVirtualizationTypes", value.asInstanceOf[js.Any])
+      inline def setSupportedVirtualizationTypes(value: js.Array[String]): Self = StObject.set(x, "supportedVirtualizationTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedVirtualizationTypesVarargs(value: String*): Self = StObject.set(x, "supportedVirtualizationTypes", js.Array(value :_*))
+      inline def setSupportedVirtualizationTypesVarargs(value: String*): Self = StObject.set(x, "supportedVirtualizationTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setSustainedClockSpeed(value: Double): Self = StObject.set(x, "sustainedClockSpeed", value.asInstanceOf[js.Any])
+      inline def setSustainedClockSpeed(value: Double): Self = StObject.set(x, "sustainedClockSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalFpgaMemory(value: Double): Self = StObject.set(x, "totalFpgaMemory", value.asInstanceOf[js.Any])
+      inline def setTotalFpgaMemory(value: Double): Self = StObject.set(x, "totalFpgaMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalGpuMemory(value: Double): Self = StObject.set(x, "totalGpuMemory", value.asInstanceOf[js.Any])
+      inline def setTotalGpuMemory(value: Double): Self = StObject.set(x, "totalGpuMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalInstanceStorage(value: Double): Self = StObject.set(x, "totalInstanceStorage", value.asInstanceOf[js.Any])
+      inline def setTotalInstanceStorage(value: Double): Self = StObject.set(x, "totalInstanceStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidCores(value: js.Array[Double]): Self = StObject.set(x, "validCores", value.asInstanceOf[js.Any])
+      inline def setValidCores(value: js.Array[Double]): Self = StObject.set(x, "validCores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidCoresVarargs(value: Double*): Self = StObject.set(x, "validCores", js.Array(value :_*))
+      inline def setValidCoresVarargs(value: Double*): Self = StObject.set(x, "validCores", js.Array(value :_*))
       
-      @scala.inline
-      def setValidThreadsPerCores(value: js.Array[Double]): Self = StObject.set(x, "validThreadsPerCores", value.asInstanceOf[js.Any])
+      inline def setValidThreadsPerCores(value: js.Array[Double]): Self = StObject.set(x, "validThreadsPerCores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidThreadsPerCoresVarargs(value: Double*): Self = StObject.set(x, "validThreadsPerCores", js.Array(value :_*))
+      inline def setValidThreadsPerCoresVarargs(value: Double*): Self = StObject.set(x, "validThreadsPerCores", js.Array(value :_*))
     }
   }
 }

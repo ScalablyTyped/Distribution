@@ -24,28 +24,21 @@ trait ReposUpdateInvitationEndpoint extends StObject {
 }
 object ReposUpdateInvitationEndpoint {
   
-  @scala.inline
-  def apply(invitation_id: Double, owner: String, repo: String): ReposUpdateInvitationEndpoint = {
+  inline def apply(invitation_id: Double, owner: String, repo: String): ReposUpdateInvitationEndpoint = {
     val __obj = js.Dynamic.literal(invitation_id = invitation_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposUpdateInvitationEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposUpdateInvitationEndpointMutableBuilder[Self <: ReposUpdateInvitationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposUpdateInvitationEndpoint](x: Self) {
     
-    @scala.inline
-    def setInvitation_id(value: Double): Self = StObject.set(x, "invitation_id", value.asInstanceOf[js.Any])
+    inline def setInvitation_id(value: Double): Self = StObject.set(x, "invitation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: read | write | maintain | triage | admin): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: read | write | maintain | triage | admin): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

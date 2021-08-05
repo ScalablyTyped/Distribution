@@ -20,6 +20,5 @@ object default {
   @JSImport("downshift", "default.stateChangeTypes")
   @js.native
   def stateChangeTypes: BlurButton = js.native
-  @scala.inline
-  def stateChangeTypes_=(x: BlurButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stateChangeTypes")(x.asInstanceOf[js.Any])
+  inline def stateChangeTypes_=(x: BlurButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stateChangeTypes")(x.asInstanceOf[js.Any])
 }

@@ -16,11 +16,9 @@ object adyenMod {
   trait AdyenEvent extends StObject
   object AdyenEvent {
     
-    @scala.inline
-    def error: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error = "error".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error]
+    inline def error: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error = "error".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.error]
     
-    @scala.inline
-    def token: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token = "token".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token]
+    inline def token: typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token = "token".asInstanceOf[typings.recurlyRecurlyJs.recurlyRecurlyJsStrings.token]
   }
   
   @js.native
@@ -58,35 +56,26 @@ object adyenMod {
   }
   object AdyenOptions {
     
-    @scala.inline
-    def apply(invoiceUuid: String): AdyenOptions = {
+    inline def apply(invoiceUuid: String): AdyenOptions = {
       val __obj = js.Dynamic.literal(invoiceUuid = invoiceUuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdyenOptions]
     }
     
-    @scala.inline
-    implicit class AdyenOptionsMutableBuilder[Self <: AdyenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AdyenOptions](x: Self) {
       
-      @scala.inline
-      def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+      inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+      inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
       
-      @scala.inline
-      def setInvoiceUuid(value: String): Self = StObject.set(x, "invoiceUuid", value.asInstanceOf[js.Any])
+      inline def setInvoiceUuid(value: String): Self = StObject.set(x, "invoiceUuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShopperLocale(value: String): Self = StObject.set(x, "shopperLocale", value.asInstanceOf[js.Any])
+      inline def setShopperLocale(value: String): Self = StObject.set(x, "shopperLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShopperLocaleUndefined: Self = StObject.set(x, "shopperLocale", js.undefined)
+      inline def setShopperLocaleUndefined: Self = StObject.set(x, "shopperLocale", js.undefined)
       
-      @scala.inline
-      def setSkinCode(value: String): Self = StObject.set(x, "skinCode", value.asInstanceOf[js.Any])
+      inline def setSkinCode(value: String): Self = StObject.set(x, "skinCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinCodeUndefined: Self = StObject.set(x, "skinCode", js.undefined)
+      inline def setSkinCodeUndefined: Self = StObject.set(x, "skinCode", js.undefined)
     }
   }
 }

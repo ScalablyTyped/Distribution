@@ -43,6 +43,5 @@ object ViewCompiler {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inject(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")().asInstanceOf[js.Any]
+  inline def inject(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")().asInstanceOf[js.Any]
 }

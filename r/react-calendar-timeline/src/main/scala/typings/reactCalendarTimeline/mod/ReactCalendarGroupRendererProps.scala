@@ -12,22 +12,17 @@ trait ReactCalendarGroupRendererProps[CustomGroup /* <: TimelineGroupBase */] ex
 }
 object ReactCalendarGroupRendererProps {
   
-  @scala.inline
-  def apply[CustomGroup /* <: TimelineGroupBase */](group: CustomGroup): ReactCalendarGroupRendererProps[CustomGroup] = {
+  inline def apply[CustomGroup /* <: TimelineGroupBase */](group: CustomGroup): ReactCalendarGroupRendererProps[CustomGroup] = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactCalendarGroupRendererProps[CustomGroup]]
   }
   
-  @scala.inline
-  implicit class ReactCalendarGroupRendererPropsMutableBuilder[Self <: ReactCalendarGroupRendererProps[?], CustomGroup /* <: TimelineGroupBase */] (val x: Self & ReactCalendarGroupRendererProps[CustomGroup]) extends AnyVal {
+  extension [Self <: ReactCalendarGroupRendererProps[?], CustomGroup /* <: TimelineGroupBase */](x: Self & ReactCalendarGroupRendererProps[CustomGroup]) {
     
-    @scala.inline
-    def setGroup(value: CustomGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: CustomGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRightSidebar(value: Boolean): Self = StObject.set(x, "isRightSidebar", value.asInstanceOf[js.Any])
+    inline def setIsRightSidebar(value: Boolean): Self = StObject.set(x, "isRightSidebar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRightSidebarUndefined: Self = StObject.set(x, "isRightSidebar", js.undefined)
+    inline def setIsRightSidebarUndefined: Self = StObject.set(x, "isRightSidebar", js.undefined)
   }
 }

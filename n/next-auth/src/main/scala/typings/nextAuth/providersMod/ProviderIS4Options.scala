@@ -21,31 +21,23 @@ trait ProviderIS4Options extends StObject {
 }
 object ProviderIS4Options {
   
-  @scala.inline
-  def apply(clientId: String, clientSecret: String, domain: String, scope: String): ProviderIS4Options = {
+  inline def apply(clientId: String, clientSecret: String, domain: String, scope: String): ProviderIS4Options = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], id = "identity-server4", name = "IdentityServer4", scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderIS4Options]
   }
   
-  @scala.inline
-  implicit class ProviderIS4OptionsMutableBuilder[Self <: ProviderIS4Options] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderIS4Options](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: `identity-server4`): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: `identity-server4`): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: typings.nextAuth.nextAuthStrings.IdentityServer4): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.nextAuth.nextAuthStrings.IdentityServer4): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

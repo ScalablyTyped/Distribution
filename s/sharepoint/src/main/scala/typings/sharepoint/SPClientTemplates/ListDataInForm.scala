@@ -10,19 +10,15 @@ trait ListDataInForm extends StObject {
 }
 object ListDataInForm {
   
-  @scala.inline
-  def apply(Items: js.Array[Item]): ListDataInForm = {
+  inline def apply(Items: js.Array[Item]): ListDataInForm = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataInForm]
   }
   
-  @scala.inline
-  implicit class ListDataInFormMutableBuilder[Self <: ListDataInForm] (val x: Self) extends AnyVal {
+  extension [Self <: ListDataInForm](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[Item]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Item*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "Items", js.Array(value :_*))
   }
 }

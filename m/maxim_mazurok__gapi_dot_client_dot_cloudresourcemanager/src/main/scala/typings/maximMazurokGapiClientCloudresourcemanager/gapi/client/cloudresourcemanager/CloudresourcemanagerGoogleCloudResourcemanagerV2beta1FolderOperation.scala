@@ -20,37 +20,27 @@ trait CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation exten
 }
 object CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation {
   
-  @scala.inline
-  def apply(): CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation = {
+  inline def apply(): CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation]
   }
   
-  @scala.inline
-  implicit class CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperationMutableBuilder[Self <: CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation] (val x: Self) extends AnyVal {
+  extension [Self <: CloudresourcemanagerGoogleCloudResourcemanagerV2beta1FolderOperation](x: Self) {
     
-    @scala.inline
-    def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
+    inline def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationParentUndefined: Self = StObject.set(x, "destinationParent", js.undefined)
+    inline def setDestinationParentUndefined: Self = StObject.set(x, "destinationParent", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
-    @scala.inline
-    def setSourceParent(value: String): Self = StObject.set(x, "sourceParent", value.asInstanceOf[js.Any])
+    inline def setSourceParent(value: String): Self = StObject.set(x, "sourceParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceParentUndefined: Self = StObject.set(x, "sourceParent", js.undefined)
+    inline def setSourceParentUndefined: Self = StObject.set(x, "sourceParent", js.undefined)
   }
 }

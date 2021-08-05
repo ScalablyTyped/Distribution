@@ -12,25 +12,19 @@ trait ContentDisposition extends StObject {
 }
 object ContentDisposition {
   
-  @scala.inline
-  def apply(): ContentDisposition = {
+  inline def apply(): ContentDisposition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentDisposition]
   }
   
-  @scala.inline
-  implicit class ContentDispositionMutableBuilder[Self <: ContentDisposition] (val x: Self) extends AnyVal {
+  extension [Self <: ContentDisposition](x: Self) {
     
-    @scala.inline
-    def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+    inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
+    inline def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "ifMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "ifMatch", js.undefined)
   }
 }

@@ -72,49 +72,35 @@ trait SchemaHttpTarget extends StObject {
 }
 object SchemaHttpTarget {
   
-  @scala.inline
-  def apply(): SchemaHttpTarget = {
+  inline def apply(): SchemaHttpTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpTarget]
   }
   
-  @scala.inline
-  implicit class SchemaHttpTargetMutableBuilder[Self <: SchemaHttpTarget] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHttpTarget](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+    inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
-    @scala.inline
-    def setOauthToken(value: SchemaOAuthToken): Self = StObject.set(x, "oauthToken", value.asInstanceOf[js.Any])
+    inline def setOauthToken(value: SchemaOAuthToken): Self = StObject.set(x, "oauthToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauthTokenUndefined: Self = StObject.set(x, "oauthToken", js.undefined)
+    inline def setOauthTokenUndefined: Self = StObject.set(x, "oauthToken", js.undefined)
     
-    @scala.inline
-    def setOidcToken(value: SchemaOidcToken): Self = StObject.set(x, "oidcToken", value.asInstanceOf[js.Any])
+    inline def setOidcToken(value: SchemaOidcToken): Self = StObject.set(x, "oidcToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidcTokenUndefined: Self = StObject.set(x, "oidcToken", js.undefined)
+    inline def setOidcTokenUndefined: Self = StObject.set(x, "oidcToken", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

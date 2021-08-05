@@ -13,22 +13,17 @@ trait Expression extends StObject {
 }
 object Expression {
   
-  @scala.inline
-  def apply(expression: RegExp): Expression = {
+  inline def apply(expression: RegExp): Expression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   
-  @scala.inline
-  implicit class ExpressionMutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
+  extension [Self <: Expression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: RegExp): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: RegExp): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
+    inline def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
+    inline def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait CommsNotification extends StObject {
 }
 object CommsNotification {
   
-  @scala.inline
-  def apply(): CommsNotification = {
+  inline def apply(): CommsNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommsNotification]
   }
   
-  @scala.inline
-  implicit class CommsNotificationMutableBuilder[Self <: CommsNotification] (val x: Self) extends AnyVal {
+  extension [Self <: CommsNotification](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: ChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: ChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
+    inline def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
     
-    @scala.inline
-    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
+    inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
+    inline def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
   }
 }

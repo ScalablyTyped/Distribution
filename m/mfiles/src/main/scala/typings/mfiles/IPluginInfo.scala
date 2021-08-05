@@ -28,8 +28,7 @@ trait IPluginInfo extends StObject {
 }
 object IPluginInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AssemblyName: String,
     BridgeClassName: String,
     Clone: () => IPluginInfo,
@@ -45,37 +44,26 @@ object IPluginInfo {
     __obj.asInstanceOf[IPluginInfo]
   }
   
-  @scala.inline
-  implicit class IPluginInfoMutableBuilder[Self <: IPluginInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IPluginInfo](x: Self) {
     
-    @scala.inline
-    def setAssemblyName(value: String): Self = StObject.set(x, "AssemblyName", value.asInstanceOf[js.Any])
+    inline def setAssemblyName(value: String): Self = StObject.set(x, "AssemblyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBridgeClassName(value: String): Self = StObject.set(x, "BridgeClassName", value.asInstanceOf[js.Any])
+    inline def setBridgeClassName(value: String): Self = StObject.set(x, "BridgeClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IPluginInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPluginInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConfiguration(value: INamedValues): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: INamedValues): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationScope(value: String): Self = StObject.set(x, "ConfigurationScope", value.asInstanceOf[js.Any])
+    inline def setConfigurationScope(value: String): Self = StObject.set(x, "ConfigurationScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationSource(value: INamedValues): Self = StObject.set(x, "ConfigurationSource", value.asInstanceOf[js.Any])
+    inline def setConfigurationSource(value: INamedValues): Self = StObject.set(x, "ConfigurationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationVaultGUID(value: String): Self = StObject.set(x, "ConfigurationVaultGUID", value.asInstanceOf[js.Any])
+    inline def setConfigurationVaultGUID(value: String): Self = StObject.set(x, "ConfigurationVaultGUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScopeIndependent(value: Boolean): Self = StObject.set(x, "IsScopeIndependent", value.asInstanceOf[js.Any])
+    inline def setIsScopeIndependent(value: Boolean): Self = StObject.set(x, "IsScopeIndependent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

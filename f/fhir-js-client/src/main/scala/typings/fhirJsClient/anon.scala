@@ -26,23 +26,18 @@ object anon {
   }
   object Any {
     
-    @scala.inline
-    def apply(any: js.Any => Double, cm: js.Any => Double, kg: js.Any => Double): Any = {
+    inline def apply(any: js.Any => Double, cm: js.Any => Double, kg: js.Any => Double): Any = {
       val __obj = js.Dynamic.literal(any = js.Any.fromFunction1(any), cm = js.Any.fromFunction1(cm), kg = js.Any.fromFunction1(kg))
       __obj.asInstanceOf[Any]
     }
     
-    @scala.inline
-    implicit class AnyMutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
+    extension [Self <: Any](x: Self) {
       
-      @scala.inline
-      def setAny(value: js.Any => Double): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
+      inline def setAny(value: js.Any => Double): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCm(value: js.Any => Double): Self = StObject.set(x, "cm", js.Any.fromFunction1(value))
+      inline def setCm(value: js.Any => Double): Self = StObject.set(x, "cm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKg(value: js.Any => Double): Self = StObject.set(x, "kg", js.Any.fromFunction1(value))
+      inline def setKg(value: js.Any => Double): Self = StObject.set(x, "kg", js.Any.fromFunction1(value))
     }
   }
   
@@ -71,26 +66,20 @@ object anon {
   }
   object DictpropName {
     
-    @scala.inline
-    def apply(): DictpropName = {
+    inline def apply(): DictpropName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DictpropName]
     }
     
-    @scala.inline
-    implicit class DictpropNameMutableBuilder[Self <: DictpropName] (val x: Self) extends AnyVal {
+    extension [Self <: DictpropName](x: Self) {
       
-      @scala.inline
-      def set_at(value: String): Self = StObject.set(x, "_at", value.asInstanceOf[js.Any])
+      inline def set_at(value: String): Self = StObject.set(x, "_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_atUndefined: Self = StObject.set(x, "_at", js.undefined)
+      inline def set_atUndefined: Self = StObject.set(x, "_at", js.undefined)
       
-      @scala.inline
-      def set_format(value: String): Self = StObject.set(x, "_format", value.asInstanceOf[js.Any])
+      inline def set_format(value: String): Self = StObject.set(x, "_format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_formatUndefined: Self = StObject.set(x, "_format", js.undefined)
+      inline def set_formatUndefined: Self = StObject.set(x, "_format", js.undefined)
     }
   }
 }

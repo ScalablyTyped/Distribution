@@ -11,6 +11,5 @@ object global {
   @js.native
   def Lockr_ : LockrStatic = js.native
   
-  @scala.inline
-  def Lockr__=(x: LockrStatic): Unit = js.Dynamic.global.updateDynamic("Lockr")(x.asInstanceOf[js.Any])
+  inline def Lockr__=(x: LockrStatic): Unit = js.Dynamic.global.updateDynamic("Lockr")(x.asInstanceOf[js.Any])
 }

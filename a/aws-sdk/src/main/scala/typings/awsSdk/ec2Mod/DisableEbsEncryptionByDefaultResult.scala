@@ -13,19 +13,15 @@ trait DisableEbsEncryptionByDefaultResult extends StObject {
 }
 object DisableEbsEncryptionByDefaultResult {
   
-  @scala.inline
-  def apply(): DisableEbsEncryptionByDefaultResult = {
+  inline def apply(): DisableEbsEncryptionByDefaultResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableEbsEncryptionByDefaultResult]
   }
   
-  @scala.inline
-  implicit class DisableEbsEncryptionByDefaultResultMutableBuilder[Self <: DisableEbsEncryptionByDefaultResult] (val x: Self) extends AnyVal {
+  extension [Self <: DisableEbsEncryptionByDefaultResult](x: Self) {
     
-    @scala.inline
-    def setEbsEncryptionByDefault(value: Boolean): Self = StObject.set(x, "EbsEncryptionByDefault", value.asInstanceOf[js.Any])
+    inline def setEbsEncryptionByDefault(value: Boolean): Self = StObject.set(x, "EbsEncryptionByDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsEncryptionByDefaultUndefined: Self = StObject.set(x, "EbsEncryptionByDefault", js.undefined)
+    inline def setEbsEncryptionByDefaultUndefined: Self = StObject.set(x, "EbsEncryptionByDefault", js.undefined)
   }
 }

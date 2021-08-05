@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TicketTopic extends StObject
 object TicketTopic {
   
-  @scala.inline
-  def `Buy crypto`: typings.invityApi.invityApiStrings.`Buy crypto` = ("Buy crypto").asInstanceOf[typings.invityApi.invityApiStrings.`Buy crypto`]
+  inline def `Buy crypto`: typings.invityApi.invityApiStrings.`Buy crypto` = ("Buy crypto").asInstanceOf[typings.invityApi.invityApiStrings.`Buy crypto`]
   
-  @scala.inline
-  def `Exchange crypto`: typings.invityApi.invityApiStrings.`Exchange crypto` = ("Exchange crypto").asInstanceOf[typings.invityApi.invityApiStrings.`Exchange crypto`]
+  inline def `Exchange crypto`: typings.invityApi.invityApiStrings.`Exchange crypto` = ("Exchange crypto").asInstanceOf[typings.invityApi.invityApiStrings.`Exchange crypto`]
   
-  @scala.inline
-  def `Invest in crypto`: typings.invityApi.invityApiStrings.`Invest in crypto` = ("Invest in crypto").asInstanceOf[typings.invityApi.invityApiStrings.`Invest in crypto`]
+  inline def `Invest in crypto`: typings.invityApi.invityApiStrings.`Invest in crypto` = ("Invest in crypto").asInstanceOf[typings.invityApi.invityApiStrings.`Invest in crypto`]
   
-  @scala.inline
-  def InvityDotio: typings.invityApi.invityApiStrings.InvityDotio = "Invity.io".asInstanceOf[typings.invityApi.invityApiStrings.InvityDotio]
+  inline def InvityDotio: typings.invityApi.invityApiStrings.InvityDotio = "Invity.io".asInstanceOf[typings.invityApi.invityApiStrings.InvityDotio]
 }

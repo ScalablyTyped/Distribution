@@ -88,23 +88,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildQueries[Arguments /* <: js.Array[js.Any] */](
+  inline def buildQueries[Arguments /* <: js.Array[js.Any] */](
     queryByAll: GetAllBy[Arguments],
     getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
     getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
   ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
   
-  @scala.inline
-  def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
+  inline def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
   
-  @scala.inline
-  def computeHeadingLevel(element: Element): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeHeadingLevel")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  inline def computeHeadingLevel(element: Element): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeHeadingLevel")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
-  @scala.inline
-  def configure(configDelta: PartialConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def configure(configDelta: ConfigFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(configDelta: PartialConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(configDelta: ConfigFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@testing-library/vue", "createEvent")
   @js.native
@@ -242,92 +237,54 @@ object mod {
   @js.native
   val getByTitle: GetByBoundAttribute = js.native
   
-  @scala.inline
-  def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
+  inline def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
   
-  @scala.inline
-  def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
-  @scala.inline
-  def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
+  inline def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
+  inline def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
   
-  @scala.inline
-  def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @scala.inline
-  def getNodeText(node: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getNodeText(node: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
-  @scala.inline
-  def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
+  inline def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  inline def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
   
-  @scala.inline
-  def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoles")(container.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[HTMLElement]]]
+  inline def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoles")(container.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[HTMLElement]]]
   
-  @scala.inline
-  def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Suggestion]]
-  @scala.inline
-  def getSuggestedQuery(element: HTMLElement, variant: Unit, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
-  @scala.inline
-  def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
-  @scala.inline
-  def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
+  inline def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Suggestion]]
+  inline def getSuggestedQuery(element: HTMLElement, variant: Unit, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
+  inline def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
+  inline def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
   
-  @scala.inline
-  def isInaccessible(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInaccessible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInaccessible(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInaccessible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def logDOM(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")().asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")().asInstanceOf[Unit]
+  inline def logDOM(dom: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logDOM(dom: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logDOM(dom: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def logRoles(container: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logRoles")(container.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def logRoles(container: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logRoles")(container.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def prettyDOM(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")().asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: Unit, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: Unit, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: Element): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: Element, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: Element, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: HTMLDocument): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  @scala.inline
-  def prettyDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")().asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Unit, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Unit, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Element): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Element, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Element, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: HTMLDocument): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
   object prettyFormat {
     
@@ -336,10 +293,8 @@ object mod {
       * @param val any potential JavaScript object
       * @param options Custom settings
       */
-    @scala.inline
-    def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("@testing-library/vue", "prettyFormat")
     @js.native
@@ -354,44 +309,37 @@ object mod {
       @JSImport("@testing-library/vue", "prettyFormat.plugins.AsymmetricMatcher")
       @js.native
       def AsymmetricMatcher: NewPlugin = js.native
-      @scala.inline
-      def AsymmetricMatcher_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsymmetricMatcher")(x.asInstanceOf[js.Any])
+      inline def AsymmetricMatcher_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsymmetricMatcher")(x.asInstanceOf[js.Any])
       
       @JSImport("@testing-library/vue", "prettyFormat.plugins.ConvertAnsi")
       @js.native
       def ConvertAnsi: NewPlugin = js.native
-      @scala.inline
-      def ConvertAnsi_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertAnsi")(x.asInstanceOf[js.Any])
+      inline def ConvertAnsi_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertAnsi")(x.asInstanceOf[js.Any])
       
       @JSImport("@testing-library/vue", "prettyFormat.plugins.DOMCollection")
       @js.native
       def DOMCollection: NewPlugin = js.native
-      @scala.inline
-      def DOMCollection_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMCollection")(x.asInstanceOf[js.Any])
+      inline def DOMCollection_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMCollection")(x.asInstanceOf[js.Any])
       
       @JSImport("@testing-library/vue", "prettyFormat.plugins.DOMElement")
       @js.native
       def DOMElement: NewPlugin = js.native
-      @scala.inline
-      def DOMElement_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMElement")(x.asInstanceOf[js.Any])
+      inline def DOMElement_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMElement")(x.asInstanceOf[js.Any])
       
       @JSImport("@testing-library/vue", "prettyFormat.plugins.Immutable")
       @js.native
       def Immutable: NewPlugin = js.native
-      @scala.inline
-      def Immutable_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Immutable")(x.asInstanceOf[js.Any])
+      inline def Immutable_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Immutable")(x.asInstanceOf[js.Any])
       
       @JSImport("@testing-library/vue", "prettyFormat.plugins.ReactElement")
       @js.native
       def ReactElement: NewPlugin = js.native
-      @scala.inline
-      def ReactElement_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactElement")(x.asInstanceOf[js.Any])
+      inline def ReactElement_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactElement")(x.asInstanceOf[js.Any])
       
       @JSImport("@testing-library/vue", "prettyFormat.plugins.ReactTestComponent")
       @js.native
       def ReactTestComponent: NewPlugin = js.native
-      @scala.inline
-      def ReactTestComponent_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactTestComponent")(x.asInstanceOf[js.Any])
+      inline def ReactTestComponent_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactTestComponent")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -668,15 +616,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def buildQueries[Arguments /* <: js.Array[js.Any] */](
+    inline def buildQueries[Arguments /* <: js.Array[js.Any] */](
       queryByAll: GetAllBy[Arguments],
       getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
       getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
     ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
     
-    @scala.inline
-    def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
+    inline def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
     
     @JSImport("@testing-library/vue", "queryHelpers.queryAllByAttribute")
     @js.native
@@ -687,14 +633,10 @@ object mod {
     val queryByAttribute: QueryByAttribute_ = js.native
   }
   
-  @scala.inline
-  def render[V /* <: Vue */](TestComponent: VueClass[V]): ComponentHarness = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentHarness]
-  @scala.inline
-  def render[V /* <: Vue */](TestComponent: VueClass[V], options: Unit, configure: ConfigurationCallback[V]): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
-  @scala.inline
-  def render[V /* <: Vue */](TestComponent: VueClass[V], options: RenderOptions[V, js.Object]): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
-  @scala.inline
-  def render[V /* <: Vue */](
+  inline def render[V /* <: Vue */](TestComponent: VueClass[V]): ComponentHarness = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentHarness]
+  inline def render[V /* <: Vue */](TestComponent: VueClass[V], options: Unit, configure: ConfigurationCallback[V]): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
+  inline def render[V /* <: Vue */](TestComponent: VueClass[V], options: RenderOptions[V, js.Object]): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
+  inline def render[V /* <: Vue */](
     TestComponent: VueClass[V],
     options: RenderOptions[V, js.Object],
     configure: ConfigurationCallback[V]
@@ -711,377 +653,294 @@ object mod {
       * Convenience function for `pretty-dom` which also allows an array
       * of elements
       */
-    @scala.inline
-    def debug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")().asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: js.Array[Element | HTMLDocument]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def debug(element: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")().asInstanceOf[Unit]
+    inline def debug(element: js.Array[Element | HTMLDocument]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: js.Array[Element | HTMLDocument], maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(element: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(element: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(element: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@testing-library/vue", "screen.findAllByAltText")
     @js.native
     def findAllByAltText: BoundFunction[FindAllByBoundAttribute] = js.native
-    @scala.inline
-    def findAllByAltText_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByAltText")(x.asInstanceOf[js.Any])
+    inline def findAllByAltText_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByAltText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findAllByDisplayValue")
     @js.native
     def findAllByDisplayValue: BoundFunction[FindAllByBoundAttribute] = js.native
-    @scala.inline
-    def findAllByDisplayValue_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByDisplayValue")(x.asInstanceOf[js.Any])
+    inline def findAllByDisplayValue_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByDisplayValue")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findAllByLabelText")
     @js.native
     def findAllByLabelText: BoundFunction[FindAllByText_] = js.native
-    @scala.inline
-    def findAllByLabelText_=(x: BoundFunction[FindAllByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByLabelText")(x.asInstanceOf[js.Any])
+    inline def findAllByLabelText_=(x: BoundFunction[FindAllByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByLabelText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findAllByPlaceholderText")
     @js.native
     def findAllByPlaceholderText: BoundFunction[FindAllByBoundAttribute] = js.native
-    @scala.inline
-    def findAllByPlaceholderText_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByPlaceholderText")(x.asInstanceOf[js.Any])
+    inline def findAllByPlaceholderText_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByPlaceholderText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findAllByRole")
     @js.native
     def findAllByRole: BoundFunction[FindAllByRole_] = js.native
-    @scala.inline
-    def findAllByRole_=(x: BoundFunction[FindAllByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByRole")(x.asInstanceOf[js.Any])
+    inline def findAllByRole_=(x: BoundFunction[FindAllByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByRole")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findAllByTestId")
     @js.native
     def findAllByTestId: BoundFunction[FindAllByBoundAttribute] = js.native
-    @scala.inline
-    def findAllByTestId_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByTestId")(x.asInstanceOf[js.Any])
+    inline def findAllByTestId_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByTestId")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findAllByText")
     @js.native
     def findAllByText: BoundFunction[FindAllByText_] = js.native
-    @scala.inline
-    def findAllByText_=(x: BoundFunction[FindAllByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByText")(x.asInstanceOf[js.Any])
+    inline def findAllByText_=(x: BoundFunction[FindAllByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findAllByTitle")
     @js.native
     def findAllByTitle: BoundFunction[FindAllByBoundAttribute] = js.native
-    @scala.inline
-    def findAllByTitle_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByTitle")(x.asInstanceOf[js.Any])
+    inline def findAllByTitle_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByTitle")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findByAltText")
     @js.native
     def findByAltText: BoundFunction[FindByBoundAttribute] = js.native
-    @scala.inline
-    def findByAltText_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByAltText")(x.asInstanceOf[js.Any])
+    inline def findByAltText_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByAltText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findByDisplayValue")
     @js.native
     def findByDisplayValue: BoundFunction[FindByBoundAttribute] = js.native
-    @scala.inline
-    def findByDisplayValue_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByDisplayValue")(x.asInstanceOf[js.Any])
+    inline def findByDisplayValue_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByDisplayValue")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findByLabelText")
     @js.native
     def findByLabelText: BoundFunction[FindByText_] = js.native
-    @scala.inline
-    def findByLabelText_=(x: BoundFunction[FindByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByLabelText")(x.asInstanceOf[js.Any])
+    inline def findByLabelText_=(x: BoundFunction[FindByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByLabelText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findByPlaceholderText")
     @js.native
     def findByPlaceholderText: BoundFunction[FindByBoundAttribute] = js.native
-    @scala.inline
-    def findByPlaceholderText_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByPlaceholderText")(x.asInstanceOf[js.Any])
+    inline def findByPlaceholderText_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByPlaceholderText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findByRole")
     @js.native
     def findByRole: BoundFunction[FindByRole_] = js.native
-    @scala.inline
-    def findByRole_=(x: BoundFunction[FindByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByRole")(x.asInstanceOf[js.Any])
+    inline def findByRole_=(x: BoundFunction[FindByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByRole")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findByTestId")
     @js.native
     def findByTestId: BoundFunction[FindByBoundAttribute] = js.native
-    @scala.inline
-    def findByTestId_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByTestId")(x.asInstanceOf[js.Any])
+    inline def findByTestId_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByTestId")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findByText")
     @js.native
     def findByText: BoundFunction[FindByText_] = js.native
-    @scala.inline
-    def findByText_=(x: BoundFunction[FindByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByText")(x.asInstanceOf[js.Any])
+    inline def findByText_=(x: BoundFunction[FindByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.findByTitle")
     @js.native
     def findByTitle: BoundFunction[FindByBoundAttribute] = js.native
-    @scala.inline
-    def findByTitle_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByTitle")(x.asInstanceOf[js.Any])
+    inline def findByTitle_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByTitle")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getAllByAltText")
     @js.native
     def getAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def getAllByAltText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByAltText")(x.asInstanceOf[js.Any])
+    inline def getAllByAltText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByAltText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getAllByDisplayValue")
     @js.native
     def getAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def getAllByDisplayValue_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByDisplayValue")(x.asInstanceOf[js.Any])
+    inline def getAllByDisplayValue_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByDisplayValue")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getAllByLabelText")
     @js.native
     def getAllByLabelText: BoundFunction[AllByText] = js.native
-    @scala.inline
-    def getAllByLabelText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByLabelText")(x.asInstanceOf[js.Any])
+    inline def getAllByLabelText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByLabelText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getAllByPlaceholderText")
     @js.native
     def getAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def getAllByPlaceholderText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByPlaceholderText")(x.asInstanceOf[js.Any])
+    inline def getAllByPlaceholderText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByPlaceholderText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getAllByRole")
     @js.native
     def getAllByRole: BoundFunction[AllByRole] = js.native
-    @scala.inline
-    def getAllByRole_=(x: BoundFunction[AllByRole]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByRole")(x.asInstanceOf[js.Any])
+    inline def getAllByRole_=(x: BoundFunction[AllByRole]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByRole")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getAllByTestId")
     @js.native
     def getAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def getAllByTestId_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByTestId")(x.asInstanceOf[js.Any])
+    inline def getAllByTestId_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByTestId")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getAllByText")
     @js.native
     def getAllByText: BoundFunction[AllByText] = js.native
-    @scala.inline
-    def getAllByText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByText")(x.asInstanceOf[js.Any])
+    inline def getAllByText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getAllByTitle")
     @js.native
     def getAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def getAllByTitle_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByTitle")(x.asInstanceOf[js.Any])
+    inline def getAllByTitle_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByTitle")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getByAltText")
     @js.native
     def getByAltText: BoundFunction[GetByBoundAttribute] = js.native
-    @scala.inline
-    def getByAltText_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByAltText")(x.asInstanceOf[js.Any])
+    inline def getByAltText_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByAltText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getByDisplayValue")
     @js.native
     def getByDisplayValue: BoundFunction[GetByBoundAttribute] = js.native
-    @scala.inline
-    def getByDisplayValue_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByDisplayValue")(x.asInstanceOf[js.Any])
+    inline def getByDisplayValue_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByDisplayValue")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getByLabelText")
     @js.native
     def getByLabelText: BoundFunction[GetByText_] = js.native
-    @scala.inline
-    def getByLabelText_=(x: BoundFunction[GetByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByLabelText")(x.asInstanceOf[js.Any])
+    inline def getByLabelText_=(x: BoundFunction[GetByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByLabelText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getByPlaceholderText")
     @js.native
     def getByPlaceholderText: BoundFunction[GetByBoundAttribute] = js.native
-    @scala.inline
-    def getByPlaceholderText_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByPlaceholderText")(x.asInstanceOf[js.Any])
+    inline def getByPlaceholderText_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByPlaceholderText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getByRole")
     @js.native
     def getByRole: BoundFunction[GetByRole_] = js.native
-    @scala.inline
-    def getByRole_=(x: BoundFunction[GetByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByRole")(x.asInstanceOf[js.Any])
+    inline def getByRole_=(x: BoundFunction[GetByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByRole")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getByTestId")
     @js.native
     def getByTestId: BoundFunction[GetByBoundAttribute] = js.native
-    @scala.inline
-    def getByTestId_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByTestId")(x.asInstanceOf[js.Any])
+    inline def getByTestId_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByTestId")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getByText")
     @js.native
     def getByText: BoundFunction[GetByText_] = js.native
-    @scala.inline
-    def getByText_=(x: BoundFunction[GetByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByText")(x.asInstanceOf[js.Any])
+    inline def getByText_=(x: BoundFunction[GetByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.getByTitle")
     @js.native
     def getByTitle: BoundFunction[GetByBoundAttribute] = js.native
-    @scala.inline
-    def getByTitle_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByTitle")(x.asInstanceOf[js.Any])
+    inline def getByTitle_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByTitle")(x.asInstanceOf[js.Any])
     
     /**
       * Convenience function for `Testing Playground` which logs URL that
       * can be opened in a browser
       */
-    @scala.inline
-    def logTestingPlaygroundURL(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")().asInstanceOf[Unit]
-    @scala.inline
-    def logTestingPlaygroundURL(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def logTestingPlaygroundURL(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def logTestingPlaygroundURL(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")().asInstanceOf[Unit]
+    inline def logTestingPlaygroundURL(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def logTestingPlaygroundURL(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@testing-library/vue", "screen.queryAllByAltText")
     @js.native
     def queryAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def queryAllByAltText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByAltText")(x.asInstanceOf[js.Any])
+    inline def queryAllByAltText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByAltText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryAllByDisplayValue")
     @js.native
     def queryAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def queryAllByDisplayValue_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByDisplayValue")(x.asInstanceOf[js.Any])
+    inline def queryAllByDisplayValue_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByDisplayValue")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryAllByLabelText")
     @js.native
     def queryAllByLabelText: BoundFunction[AllByText] = js.native
-    @scala.inline
-    def queryAllByLabelText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByLabelText")(x.asInstanceOf[js.Any])
+    inline def queryAllByLabelText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByLabelText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryAllByPlaceholderText")
     @js.native
     def queryAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def queryAllByPlaceholderText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByPlaceholderText")(x.asInstanceOf[js.Any])
+    inline def queryAllByPlaceholderText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByPlaceholderText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryAllByRole")
     @js.native
     def queryAllByRole: BoundFunction[AllByRole] = js.native
-    @scala.inline
-    def queryAllByRole_=(x: BoundFunction[AllByRole]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByRole")(x.asInstanceOf[js.Any])
+    inline def queryAllByRole_=(x: BoundFunction[AllByRole]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByRole")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryAllByTestId")
     @js.native
     def queryAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def queryAllByTestId_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByTestId")(x.asInstanceOf[js.Any])
+    inline def queryAllByTestId_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByTestId")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryAllByText")
     @js.native
     def queryAllByText: BoundFunction[AllByText] = js.native
-    @scala.inline
-    def queryAllByText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByText")(x.asInstanceOf[js.Any])
+    inline def queryAllByText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryAllByTitle")
     @js.native
     def queryAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
-    @scala.inline
-    def queryAllByTitle_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByTitle")(x.asInstanceOf[js.Any])
+    inline def queryAllByTitle_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByTitle")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryByAltText")
     @js.native
     def queryByAltText: BoundFunction[QueryByBoundAttribute] = js.native
-    @scala.inline
-    def queryByAltText_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByAltText")(x.asInstanceOf[js.Any])
+    inline def queryByAltText_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByAltText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryByDisplayValue")
     @js.native
     def queryByDisplayValue: BoundFunction[QueryByBoundAttribute] = js.native
-    @scala.inline
-    def queryByDisplayValue_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByDisplayValue")(x.asInstanceOf[js.Any])
+    inline def queryByDisplayValue_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByDisplayValue")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryByLabelText")
     @js.native
     def queryByLabelText: BoundFunction[QueryByText_] = js.native
-    @scala.inline
-    def queryByLabelText_=(x: BoundFunction[QueryByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByLabelText")(x.asInstanceOf[js.Any])
+    inline def queryByLabelText_=(x: BoundFunction[QueryByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByLabelText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryByPlaceholderText")
     @js.native
     def queryByPlaceholderText: BoundFunction[QueryByBoundAttribute] = js.native
-    @scala.inline
-    def queryByPlaceholderText_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByPlaceholderText")(x.asInstanceOf[js.Any])
+    inline def queryByPlaceholderText_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByPlaceholderText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryByRole")
     @js.native
     def queryByRole: BoundFunction[QueryByRole_] = js.native
-    @scala.inline
-    def queryByRole_=(x: BoundFunction[QueryByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByRole")(x.asInstanceOf[js.Any])
+    inline def queryByRole_=(x: BoundFunction[QueryByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByRole")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryByTestId")
     @js.native
     def queryByTestId: BoundFunction[QueryByBoundAttribute] = js.native
-    @scala.inline
-    def queryByTestId_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTestId")(x.asInstanceOf[js.Any])
+    inline def queryByTestId_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTestId")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryByText")
     @js.native
     def queryByText: BoundFunction[QueryByText_] = js.native
-    @scala.inline
-    def queryByText_=(x: BoundFunction[QueryByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByText")(x.asInstanceOf[js.Any])
+    inline def queryByText_=(x: BoundFunction[QueryByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByText")(x.asInstanceOf[js.Any])
     
     @JSImport("@testing-library/vue", "screen.queryByTitle")
     @js.native
     def queryByTitle: BoundFunction[QueryByBoundAttribute] = js.native
-    @scala.inline
-    def queryByTitle_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTitle")(x.asInstanceOf[js.Any])
+    inline def queryByTitle_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTitle")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def waitForDomChange(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")().asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def waitForDomChange(options: waitForOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def waitForDomChange(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")().asInstanceOf[js.Promise[js.Any]]
+  inline def waitForDomChange(options: waitForOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def waitForElement[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def waitForElement[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def wait_(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")().asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def wait_(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def wait_(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def wait_(callback: Unit, options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def wait_(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")().asInstanceOf[js.Promise[Unit]]
+  inline def wait_(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def wait_(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def wait_(callback: Unit, options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* was `typeof getQueriesForElement` */
-  @scala.inline
-  def within[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
-  @scala.inline
-  def within[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
+  inline def within[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  inline def within[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
   
   /* Inlined {[ K in @testing-library/dom.@testing-library/dom.EventType ]: (element : std.Document | std.Element | std.Window, options : {} | undefined): std.Promise<void>} */
   trait AsyncFireObject extends StObject {
@@ -1586,8 +1445,7 @@ object mod {
   }
   object AsyncFireObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       animationEnd: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
       animationIteration: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit],
@@ -1676,421 +1534,337 @@ object mod {
       __obj.asInstanceOf[AsyncFireObject]
     }
     
-    @scala.inline
-    implicit class AsyncFireObjectMutableBuilder[Self <: AsyncFireObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncFireObject](x: Self) {
       
-      @scala.inline
-      def setAbort(
+      inline def setAbort(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "abort", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationEnd(
+      inline def setAnimationEnd(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "animationEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationIteration(
+      inline def setAnimationIteration(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "animationIteration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationStart(
+      inline def setAnimationStart(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "animationStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBlur(
+      inline def setBlur(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanPlay(
+      inline def setCanPlay(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "canPlay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanPlayThrough(
+      inline def setCanPlayThrough(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "canPlayThrough", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChange(
+      inline def setChange(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClick(
+      inline def setClick(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompositionEnd(
+      inline def setCompositionEnd(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "compositionEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompositionStart(
+      inline def setCompositionStart(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "compositionStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompositionUpdate(
+      inline def setCompositionUpdate(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "compositionUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContextMenu(
+      inline def setContextMenu(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "contextMenu", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCopy(
+      inline def setCopy(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCut(
+      inline def setCut(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "cut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDblClick(
+      inline def setDblClick(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "dblClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDoubleClick(
+      inline def setDoubleClick(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "doubleClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDrag(
+      inline def setDrag(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragEnd(
+      inline def setDragEnd(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "dragEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragEnter(
+      inline def setDragEnter(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragExit(
+      inline def setDragExit(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "dragExit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragLeave(
+      inline def setDragLeave(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragOver(
+      inline def setDragOver(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragStart(
+      inline def setDragStart(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDrop(
+      inline def setDrop(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDurationChange(
+      inline def setDurationChange(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "durationChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmptied(
+      inline def setEmptied(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "emptied", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEncrypted(
+      inline def setEncrypted(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "encrypted", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnded(
+      inline def setEnded(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "ended", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocus(
+      inline def setFocus(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocusIn(
+      inline def setFocusIn(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "focusIn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocusOut(
+      inline def setFocusOut(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "focusOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGotPointerCapture(
+      inline def setGotPointerCapture(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "gotPointerCapture", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInput(
+      inline def setInput(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvalid(
+      inline def setInvalid(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "invalid", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyDown(
+      inline def setKeyDown(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "keyDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyPress(
+      inline def setKeyPress(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "keyPress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyUp(
+      inline def setKeyUp(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "keyUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoad(
+      inline def setLoad(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadStart(
+      inline def setLoadStart(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "loadStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadedData(
+      inline def setLoadedData(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "loadedData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadedMetadata(
+      inline def setLoadedMetadata(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "loadedMetadata", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLostPointerCapture(
+      inline def setLostPointerCapture(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "lostPointerCapture", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseDown(
+      inline def setMouseDown(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "mouseDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseEnter(
+      inline def setMouseEnter(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseLeave(
+      inline def setMouseLeave(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseMove(
+      inline def setMouseMove(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "mouseMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseOut(
+      inline def setMouseOut(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "mouseOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseOver(
+      inline def setMouseOver(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "mouseOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseUp(
+      inline def setMouseUp(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "mouseUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPaste(
+      inline def setPaste(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "paste", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPause(
+      inline def setPause(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "pause", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlay(
+      inline def setPlay(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "play", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlaying(
+      inline def setPlaying(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "playing", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerCancel(
+      inline def setPointerCancel(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "pointerCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerDown(
+      inline def setPointerDown(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "pointerDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerEnter(
+      inline def setPointerEnter(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "pointerEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerLeave(
+      inline def setPointerLeave(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "pointerLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerMove(
+      inline def setPointerMove(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "pointerMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerOut(
+      inline def setPointerOut(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "pointerOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerOver(
+      inline def setPointerOver(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "pointerOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerUp(
+      inline def setPointerUp(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "pointerUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPopState(
+      inline def setPopState(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "popState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgress(
+      inline def setProgress(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRateChange(
+      inline def setRateChange(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "rateChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReset(
+      inline def setReset(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScroll(
+      inline def setScroll(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "scroll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSeeked(
+      inline def setSeeked(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "seeked", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSeeking(
+      inline def setSeeking(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "seeking", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSelect(
+      inline def setSelect(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStalled(
+      inline def setStalled(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "stalled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSubmit(
+      inline def setSubmit(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "submit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuspend(
+      inline def setSuspend(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "suspend", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTimeUpdate(
+      inline def setTimeUpdate(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "timeUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchCancel(
+      inline def setTouchCancel(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "touchCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchEnd(
+      inline def setTouchEnd(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "touchEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchMove(
+      inline def setTouchMove(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "touchMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchStart(
+      inline def setTouchStart(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "touchStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransitionEnd(
+      inline def setTransitionEnd(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVolumeChange(
+      inline def setVolumeChange(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "volumeChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWaiting(
+      inline def setWaiting(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "waiting", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWheel(
+      inline def setWheel(
         value: (/* element */ Document | Element | Window, /* options */ js.UndefOr[js.Object]) => js.Promise[Unit]
       ): Self = StObject.set(x, "wheel", js.Any.fromFunction2(value))
     }
@@ -2366,153 +2140,106 @@ object mod {
   }
   object RenderOptions {
     
-    @scala.inline
-    def apply[V /* <: Vue */, S](): RenderOptions[V, S] = {
+    inline def apply[V /* <: Vue */, S](): RenderOptions[V, S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderOptions[V, S]]
     }
     
-    @scala.inline
-    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions[?, ?], V /* <: Vue */, S] (val x: Self & (RenderOptions[V, S])) extends AnyVal {
+    extension [Self <: RenderOptions[?, ?], V /* <: Vue */, S](x: Self & (RenderOptions[V, S])) {
       
-      @scala.inline
-      def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
+      inline def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setActivatedUndefined: Self = StObject.set(x, "activated", js.undefined)
+      inline def setActivatedUndefined: Self = StObject.set(x, "activated", js.undefined)
       
-      @scala.inline
-      def setAttachTo(value: Element | String): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
+      inline def setAttachTo(value: Element | String): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachToDocument(value: Boolean): Self = StObject.set(x, "attachToDocument", value.asInstanceOf[js.Any])
+      inline def setAttachToDocument(value: Boolean): Self = StObject.set(x, "attachToDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachToDocumentUndefined: Self = StObject.set(x, "attachToDocument", js.undefined)
+      inline def setAttachToDocumentUndefined: Self = StObject.set(x, "attachToDocument", js.undefined)
       
-      @scala.inline
-      def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
+      inline def setAttachToUndefined: Self = StObject.set(x, "attachTo", js.undefined)
       
-      @scala.inline
-      def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Record[String, String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setBaseElement(value: HTMLElement): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
+      inline def setBaseElement(value: HTMLElement): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
+      inline def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
       
-      @scala.inline
-      def setBeforeCreate(value: js.ThisFunction0[/* this */ V, Unit]): Self = StObject.set(x, "beforeCreate", value.asInstanceOf[js.Any])
+      inline def setBeforeCreate(value: js.ThisFunction0[/* this */ V, Unit]): Self = StObject.set(x, "beforeCreate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
+      inline def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
       
-      @scala.inline
-      def setBeforeDestroy(value: () => Unit): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction0(value))
+      inline def setBeforeDestroy(value: () => Unit): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
+      inline def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
       
-      @scala.inline
-      def setBeforeMount(value: () => Unit): Self = StObject.set(x, "beforeMount", js.Any.fromFunction0(value))
+      inline def setBeforeMount(value: () => Unit): Self = StObject.set(x, "beforeMount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeMountUndefined: Self = StObject.set(x, "beforeMount", js.undefined)
+      inline def setBeforeMountUndefined: Self = StObject.set(x, "beforeMount", js.undefined)
       
-      @scala.inline
-      def setBeforeUpdate(value: () => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction0(value))
+      inline def setBeforeUpdate(value: () => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
+      inline def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
       
-      @scala.inline
-      def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+      inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      @scala.inline
-      def setComponents(
+      inline def setComponents(
         value: StringDictionary[
               (Component[js.Any, js.Any, js.Any, js.Any]) | (AsyncComponent[js.Any, js.Any, js.Any, js.Any])
             ]
       ): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setComputed(value: js.Object): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+      inline def setComputed(value: js.Object): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
+      inline def setComputedUndefined: Self = StObject.set(x, "computed", js.undefined)
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setContext(value: VNodeData): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: VNodeData): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
+      inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setData(value: DefaultData[V]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DefaultData[V]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDeactivated(value: () => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction0(value))
+      inline def setDeactivated(value: () => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeactivatedUndefined: Self = StObject.set(x, "deactivated", js.undefined)
+      inline def setDeactivatedUndefined: Self = StObject.set(x, "deactivated", js.undefined)
       
-      @scala.inline
-      def setDelimiters(value: js.Tuple2[String, String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+      inline def setDelimiters(value: js.Tuple2[String, String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
+      inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      @scala.inline
-      def setDestroyed(value: () => Unit): Self = StObject.set(x, "destroyed", js.Any.fromFunction0(value))
+      inline def setDestroyed(value: () => Unit): Self = StObject.set(x, "destroyed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyedUndefined: Self = StObject.set(x, "destroyed", js.undefined)
+      inline def setDestroyedUndefined: Self = StObject.set(x, "destroyed", js.undefined)
       
-      @scala.inline
-      def setDirectives(value: StringDictionary[DirectiveFunction | DirectiveOptions]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+      inline def setDirectives(value: StringDictionary[DirectiveFunction | DirectiveOptions]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+      inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
       
-      @scala.inline
-      def setEl(value: Element | String): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: Element | String): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+      inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
       
-      @scala.inline
-      def setErrorCaptured(value: (/* err */ Error, /* vm */ Vue, /* info */ String) => Boolean | Unit): Self = StObject.set(x, "errorCaptured", js.Any.fromFunction3(value))
+      inline def setErrorCaptured(value: (/* err */ Error, /* vm */ Vue, /* info */ String) => Boolean | Unit): Self = StObject.set(x, "errorCaptured", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setErrorCapturedUndefined: Self = StObject.set(x, "errorCaptured", js.undefined)
+      inline def setErrorCapturedUndefined: Self = StObject.set(x, "errorCaptured", js.undefined)
       
-      @scala.inline
-      def setExtends(
+      inline def setExtends(
         value: (ComponentOptions[
               Vue, 
               DefaultData[Vue], 
@@ -2523,50 +2250,35 @@ object mod {
             ]) | VueConstructor[Vue]
       ): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+      inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
       
-      @scala.inline
-      def setFilters(value: StringDictionary[js.Function]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: StringDictionary[js.Function]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setInheritAttrs(value: Boolean): Self = StObject.set(x, "inheritAttrs", value.asInstanceOf[js.Any])
+      inline def setInheritAttrs(value: Boolean): Self = StObject.set(x, "inheritAttrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritAttrsUndefined: Self = StObject.set(x, "inheritAttrs", js.undefined)
+      inline def setInheritAttrsUndefined: Self = StObject.set(x, "inheritAttrs", js.undefined)
       
-      @scala.inline
-      def setInject(value: InjectOptions): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: InjectOptions): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      @scala.inline
-      def setInjectVarargs(value: String*): Self = StObject.set(x, "inject", js.Array(value :_*))
+      inline def setInjectVarargs(value: String*): Self = StObject.set(x, "inject", js.Array(value :_*))
       
-      @scala.inline
-      def setListeners(value: Record[String, js.Function | js.Array[js.Function]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: Record[String, js.Function | js.Array[js.Function]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
-      @scala.inline
-      def setLocalVue(value: VueConstructor[Vue]): Self = StObject.set(x, "localVue", value.asInstanceOf[js.Any])
+      inline def setLocalVue(value: VueConstructor[Vue]): Self = StObject.set(x, "localVue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalVueUndefined: Self = StObject.set(x, "localVue", js.undefined)
+      inline def setLocalVueUndefined: Self = StObject.set(x, "localVue", js.undefined)
       
-      @scala.inline
-      def setMethods(value: DefaultMethods[V]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: DefaultMethods[V]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setMixins(
+      inline def setMixins(
         value: js.Array[
               (ComponentOptions[
                 Vue, 
@@ -2579,11 +2291,9 @@ object mod {
             ]
       ): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
+      inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      @scala.inline
-      def setMixinsVarargs(
+      inline def setMixinsVarargs(
         value: ((ComponentOptions[
               Vue, 
               DefaultData[Vue], 
@@ -2594,35 +2304,25 @@ object mod {
             ]) | VueConstructor[Vue])*
       ): Self = StObject.set(x, "mixins", js.Array(value :_*))
       
-      @scala.inline
-      def setMocks(value: js.Object | `false`): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
+      inline def setMocks(value: js.Object | `false`): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMocksUndefined: Self = StObject.set(x, "mocks", js.undefined)
+      inline def setMocksUndefined: Self = StObject.set(x, "mocks", js.undefined)
       
-      @scala.inline
-      def setModel(value: Event): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Event): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setMounted(value: () => Unit): Self = StObject.set(x, "mounted", js.Any.fromFunction0(value))
+      inline def setMounted(value: () => Unit): Self = StObject.set(x, "mounted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMountedUndefined: Self = StObject.set(x, "mounted", js.undefined)
+      inline def setMountedUndefined: Self = StObject.set(x, "mounted", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParent(value: Vue): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Vue): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentComponent(
+      inline def setParentComponent(
         value: Component[
               DefaultData[scala.Nothing], 
               DefaultMethods[scala.Nothing], 
@@ -2631,119 +2331,81 @@ object mod {
             ]
       ): Self = StObject.set(x, "parentComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentComponentUndefined: Self = StObject.set(x, "parentComponent", js.undefined)
+      inline def setParentComponentUndefined: Self = StObject.set(x, "parentComponent", js.undefined)
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setProps(value: js.Object): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Object): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsData(value: js.Object): Self = StObject.set(x, "propsData", value.asInstanceOf[js.Any])
+      inline def setPropsData(value: js.Object): Self = StObject.set(x, "propsData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsDataUndefined: Self = StObject.set(x, "propsData", js.undefined)
+      inline def setPropsDataUndefined: Self = StObject.set(x, "propsData", js.undefined)
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setProvide(value: js.Object | js.Function0[js.Object]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+      inline def setProvide(value: js.Object | js.Function0[js.Object]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideFunction0(value: () => js.Object): Self = StObject.set(x, "provide", js.Any.fromFunction0(value))
+      inline def setProvideFunction0(value: () => js.Object): Self = StObject.set(x, "provide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProvideUndefined: Self = StObject.set(x, "provide", js.undefined)
+      inline def setProvideUndefined: Self = StObject.set(x, "provide", js.undefined)
       
-      @scala.inline
-      def setRender(value: (/* createElement */ CreateElement, /* hack */ RenderContext[DefaultProps]) => VNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* createElement */ CreateElement, /* hack */ RenderContext[DefaultProps]) => VNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderError(value: (/* createElement */ CreateElement, /* err */ Error) => VNode): Self = StObject.set(x, "renderError", js.Any.fromFunction2(value))
+      inline def setRenderError(value: (/* createElement */ CreateElement, /* err */ Error) => VNode): Self = StObject.set(x, "renderError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderErrorUndefined: Self = StObject.set(x, "renderError", js.undefined)
+      inline def setRenderErrorUndefined: Self = StObject.set(x, "renderError", js.undefined)
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setRoutes(value: js.Array[RouteConfig]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[RouteConfig]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      @scala.inline
-      def setRoutesVarargs(value: RouteConfig*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: RouteConfig*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setScopedSlots(value: Record[String, String | js.Function]): Self = StObject.set(x, "scopedSlots", value.asInstanceOf[js.Any])
+      inline def setScopedSlots(value: Record[String, String | js.Function]): Self = StObject.set(x, "scopedSlots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopedSlotsUndefined: Self = StObject.set(x, "scopedSlots", js.undefined)
+      inline def setScopedSlotsUndefined: Self = StObject.set(x, "scopedSlots", js.undefined)
       
-      @scala.inline
-      def setServerPrefetch(value: js.ThisFunction0[/* this */ V, js.Promise[Unit]]): Self = StObject.set(x, "serverPrefetch", value.asInstanceOf[js.Any])
+      inline def setServerPrefetch(value: js.ThisFunction0[/* this */ V, js.Promise[Unit]]): Self = StObject.set(x, "serverPrefetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerPrefetchUndefined: Self = StObject.set(x, "serverPrefetch", js.undefined)
+      inline def setServerPrefetchUndefined: Self = StObject.set(x, "serverPrefetch", js.undefined)
       
-      @scala.inline
-      def setSlots(value: Slots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: Slots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+      inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      @scala.inline
-      def setStaticRenderFns(value: js.Array[js.Function1[/* createElement */ CreateElement, VNode]]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
+      inline def setStaticRenderFns(value: js.Array[js.Function1[/* createElement */ CreateElement, VNode]]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticRenderFnsUndefined: Self = StObject.set(x, "staticRenderFns", js.undefined)
+      inline def setStaticRenderFnsUndefined: Self = StObject.set(x, "staticRenderFns", js.undefined)
       
-      @scala.inline
-      def setStaticRenderFnsVarargs(value: (js.Function1[/* createElement */ CreateElement, VNode])*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
+      inline def setStaticRenderFnsVarargs(value: (js.Function1[/* createElement */ CreateElement, VNode])*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
       
-      @scala.inline
-      def setStore(value: StoreOptions[S]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: StoreOptions[S]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setStubs(value: Stubs | `false`): Self = StObject.set(x, "stubs", value.asInstanceOf[js.Any])
+      inline def setStubs(value: Stubs | `false`): Self = StObject.set(x, "stubs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStubsUndefined: Self = StObject.set(x, "stubs", js.undefined)
+      inline def setStubsUndefined: Self = StObject.set(x, "stubs", js.undefined)
       
-      @scala.inline
-      def setStubsVarargs(value: String*): Self = StObject.set(x, "stubs", js.Array(value :_*))
+      inline def setStubsVarargs(value: String*): Self = StObject.set(x, "stubs", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTransitions(value: StringDictionary[js.Object]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
+      inline def setTransitions(value: StringDictionary[js.Object]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
+      inline def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
       
-      @scala.inline
-      def setUpdated(value: () => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction0(value))
+      inline def setUpdated(value: () => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+      inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
       
-      @scala.inline
-      def setWatch(value: Record[String, WatchOptionsWithHandler[js.Any] | WatchHandler[js.Any] | String]): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: Record[String, WatchOptionsWithHandler[js.Any] | WatchHandler[js.Any] | String]): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
   }
   

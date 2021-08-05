@@ -22,8 +22,7 @@ trait DeleteDocumentResponse extends StObject {
 }
 object DeleteDocumentResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _id: String,
     _index: String,
     _shards: ShardsResponse,
@@ -36,28 +35,20 @@ object DeleteDocumentResponse {
     __obj.asInstanceOf[DeleteDocumentResponse]
   }
   
-  @scala.inline
-  implicit class DeleteDocumentResponseMutableBuilder[Self <: DeleteDocumentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDocumentResponse](x: Self) {
     
-    @scala.inline
-    def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+    inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_index(value: String): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
+    inline def set_index(value: String): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_shards(value: ShardsResponse): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
+    inline def set_shards(value: ShardsResponse): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: String): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_version(value: Double): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    inline def set_version(value: Double): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
   }
 }

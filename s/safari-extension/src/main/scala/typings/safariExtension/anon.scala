@@ -16,8 +16,7 @@ object anon {
   }
   object Typeofsafari {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       application: SafariApplication,
       `extension`: SafariExtension,
       self: SafariExtensionGlobalPage | SafariExtensionBar
@@ -27,17 +26,13 @@ object anon {
       __obj.asInstanceOf[Typeofsafari]
     }
     
-    @scala.inline
-    implicit class TypeofsafariMutableBuilder[Self <: Typeofsafari] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofsafari](x: Self) {
       
-      @scala.inline
-      def setApplication(value: SafariApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: SafariApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtension(value: SafariExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: SafariExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelf(value: SafariExtensionGlobalPage | SafariExtensionBar): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+      inline def setSelf(value: SafariExtensionGlobalPage | SafariExtensionBar): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     }
   }
 }

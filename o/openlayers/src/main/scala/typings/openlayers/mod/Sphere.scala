@@ -68,10 +68,8 @@ object Sphere {
     * @return The spherical area (in square meters).
     * @api
     */
-  @scala.inline
-  def getArea(geometry: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getArea(geometry: Geometry, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getArea(geometry: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getArea(geometry: Geometry, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Get the spherical length of a geometry.  This length is the sum of the
@@ -85,8 +83,6 @@ object Sphere {
     * @return The spherical length (in meters).
     * @api
     */
-  @scala.inline
-  def getLength(geometry: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getLength(geometry: Geometry, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getLength(geometry: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getLength(geometry: Geometry, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

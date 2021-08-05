@@ -10,8 +10,7 @@ trait UseSelectGetItemPropsOptions[Item]
      with GetPropsWithRefKey
 object UseSelectGetItemPropsOptions {
   
-  @scala.inline
-  def apply[Item](GetItemPropsOptions: GetItemPropsOptions[Item]): UseSelectGetItemPropsOptions[Item] = {
+  inline def apply[Item](GetItemPropsOptions: GetItemPropsOptions[Item]): UseSelectGetItemPropsOptions[Item] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, GetItemPropsOptions)
     __obj.asInstanceOf[UseSelectGetItemPropsOptions[Item]]

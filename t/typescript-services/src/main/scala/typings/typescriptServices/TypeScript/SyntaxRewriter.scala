@@ -18,8 +18,7 @@ trait SyntaxRewriter
 }
 object SyntaxRewriter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     visitArgumentList: ArgumentListSyntax => js.Any,
     visitArrayLiteralExpression: ArrayLiteralExpressionSyntax => js.Any,
     visitArrayType: ArrayTypeSyntax => js.Any,
@@ -115,19 +114,14 @@ object SyntaxRewriter {
     __obj.asInstanceOf[SyntaxRewriter]
   }
   
-  @scala.inline
-  implicit class SyntaxRewriterMutableBuilder[Self <: SyntaxRewriter] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxRewriter](x: Self) {
     
-    @scala.inline
-    def setVisitList(value: ISyntaxList => ISyntaxList): Self = StObject.set(x, "visitList", js.Any.fromFunction1(value))
+    inline def setVisitList(value: ISyntaxList => ISyntaxList): Self = StObject.set(x, "visitList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisitNode(value: SyntaxNode => SyntaxNode): Self = StObject.set(x, "visitNode", js.Any.fromFunction1(value))
+    inline def setVisitNode(value: SyntaxNode => SyntaxNode): Self = StObject.set(x, "visitNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisitNodeOrToken(value: ISyntaxNodeOrToken => ISyntaxNodeOrToken): Self = StObject.set(x, "visitNodeOrToken", js.Any.fromFunction1(value))
+    inline def setVisitNodeOrToken(value: ISyntaxNodeOrToken => ISyntaxNodeOrToken): Self = StObject.set(x, "visitNodeOrToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVisitSeparatedList(value: ISeparatedSyntaxList => ISeparatedSyntaxList): Self = StObject.set(x, "visitSeparatedList", js.Any.fromFunction1(value))
+    inline def setVisitSeparatedList(value: ISeparatedSyntaxList => ISeparatedSyntaxList): Self = StObject.set(x, "visitSeparatedList", js.Any.fromFunction1(value))
   }
 }

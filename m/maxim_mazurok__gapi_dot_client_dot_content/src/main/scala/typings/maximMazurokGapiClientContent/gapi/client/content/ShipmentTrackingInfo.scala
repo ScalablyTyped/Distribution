@@ -18,25 +18,19 @@ trait ShipmentTrackingInfo extends StObject {
 }
 object ShipmentTrackingInfo {
   
-  @scala.inline
-  def apply(): ShipmentTrackingInfo = {
+  inline def apply(): ShipmentTrackingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShipmentTrackingInfo]
   }
   
-  @scala.inline
-  implicit class ShipmentTrackingInfoMutableBuilder[Self <: ShipmentTrackingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ShipmentTrackingInfo](x: Self) {
     
-    @scala.inline
-    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
+    inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
+    inline def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
-    @scala.inline
-    def setTrackingNumber(value: String): Self = StObject.set(x, "trackingNumber", value.asInstanceOf[js.Any])
+    inline def setTrackingNumber(value: String): Self = StObject.set(x, "trackingNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingNumberUndefined: Self = StObject.set(x, "trackingNumber", js.undefined)
+    inline def setTrackingNumberUndefined: Self = StObject.set(x, "trackingNumber", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait ProviderYandexOptions extends StObject {
 }
 object ProviderYandexOptions {
   
-  @scala.inline
-  def apply(clientId: String, clientSecret: String): ProviderYandexOptions = {
+  inline def apply(clientId: String, clientSecret: String): ProviderYandexOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderYandexOptions]
   }
   
-  @scala.inline
-  implicit class ProviderYandexOptionsMutableBuilder[Self <: ProviderYandexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderYandexOptions](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
   }
 }

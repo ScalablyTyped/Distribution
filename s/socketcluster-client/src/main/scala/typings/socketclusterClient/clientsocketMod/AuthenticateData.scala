@@ -14,19 +14,15 @@ trait AuthenticateData extends StObject {
 }
 object AuthenticateData {
   
-  @scala.inline
-  def apply(authToken: AuthToken, signedAuthToken: SignedAuthToken): AuthenticateData = {
+  inline def apply(authToken: AuthToken, signedAuthToken: SignedAuthToken): AuthenticateData = {
     val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], signedAuthToken = signedAuthToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateData]
   }
   
-  @scala.inline
-  implicit class AuthenticateDataMutableBuilder[Self <: AuthenticateData] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticateData](x: Self) {
     
-    @scala.inline
-    def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+    inline def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedAuthToken(value: SignedAuthToken): Self = StObject.set(x, "signedAuthToken", value.asInstanceOf[js.Any])
+    inline def setSignedAuthToken(value: SignedAuthToken): Self = StObject.set(x, "signedAuthToken", value.asInstanceOf[js.Any])
   }
 }

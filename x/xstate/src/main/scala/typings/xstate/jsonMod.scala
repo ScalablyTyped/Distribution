@@ -23,20 +23,15 @@ object jsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def jsonify[T /* <: Record[String, js.Any] */](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonify")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def jsonify[T /* <: Record[String, js.Any] */](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonify")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def machineToJSON(stateNode: StateNode[js.Any, js.Any, EventObject, ContextAny]): StateNodeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("machineToJSON")(stateNode.asInstanceOf[js.Any]).asInstanceOf[StateNodeConfig]
+  inline def machineToJSON(stateNode: StateNode[js.Any, js.Any, EventObject, ContextAny]): StateNodeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("machineToJSON")(stateNode.asInstanceOf[js.Any]).asInstanceOf[StateNodeConfig]
   
-  @scala.inline
-  def parse(machineString: String): StateNodeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(machineString.asInstanceOf[js.Any]).asInstanceOf[StateNodeConfig]
+  inline def parse(machineString: String): StateNodeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(machineString.asInstanceOf[js.Any]).asInstanceOf[StateNodeConfig]
   
-  @scala.inline
-  def stringify(machine: StateNode[js.Any, js.Any, EventObject, ContextAny]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(machine.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(machine: StateNode[js.Any, js.Any, EventObject, ContextAny]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(machine.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stringifyFunction(fn: js.Function): JSONFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyFunction")(fn.asInstanceOf[js.Any]).asInstanceOf[JSONFunction]
+  inline def stringifyFunction(fn: js.Function): JSONFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyFunction")(fn.asInstanceOf[js.Any]).asInstanceOf[JSONFunction]
   
   trait JSONFunction extends StObject {
     
@@ -45,17 +40,14 @@ object jsonMod {
   }
   object JSONFunction {
     
-    @scala.inline
-    def apply($function: String): JSONFunction = {
+    inline def apply($function: String): JSONFunction = {
       val __obj = js.Dynamic.literal($function = $function.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONFunction]
     }
     
-    @scala.inline
-    implicit class JSONFunctionMutableBuilder[Self <: JSONFunction] (val x: Self) extends AnyVal {
+    extension [Self <: JSONFunction](x: Self) {
       
-      @scala.inline
-      def set$function(value: String): Self = StObject.set(x, "$function", value.asInstanceOf[js.Any])
+      inline def set$function(value: String): Self = StObject.set(x, "$function", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +73,7 @@ object jsonMod {
   }
   object StateNodeConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       entry: js.Array[ActionObject[js.Any, js.Any]],
       exit: js.Array[ActionObject[js.Any, js.Any]],
       id: String,
@@ -97,47 +88,33 @@ object jsonMod {
       __obj.asInstanceOf[StateNodeConfig]
     }
     
-    @scala.inline
-    implicit class StateNodeConfigMutableBuilder[Self <: StateNodeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StateNodeConfig](x: Self) {
       
-      @scala.inline
-      def setEntry(value: js.Array[ActionObject[js.Any, js.Any]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: js.Array[ActionObject[js.Any, js.Any]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryVarargs(value: (ActionObject[js.Any, js.Any])*): Self = StObject.set(x, "entry", js.Array(value :_*))
+      inline def setEntryVarargs(value: (ActionObject[js.Any, js.Any])*): Self = StObject.set(x, "entry", js.Array(value :_*))
       
-      @scala.inline
-      def setExit(value: js.Array[ActionObject[js.Any, js.Any]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: js.Array[ActionObject[js.Any, js.Any]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitVarargs(value: (ActionObject[js.Any, js.Any])*): Self = StObject.set(x, "exit", js.Array(value :_*))
+      inline def setExitVarargs(value: (ActionObject[js.Any, js.Any])*): Self = StObject.set(x, "exit", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+      inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
       
-      @scala.inline
-      def setInvoke(value: js.Array[InvokeDefinition[js.Any, js.Any]]): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
+      inline def setInvoke(value: js.Array[InvokeDefinition[js.Any, js.Any]]): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokeVarargs(value: (InvokeDefinition[js.Any, js.Any])*): Self = StObject.set(x, "invoke", js.Array(value :_*))
+      inline def setInvokeVarargs(value: (InvokeDefinition[js.Any, js.Any])*): Self = StObject.set(x, "invoke", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(value: StringDictionary[js.Array[TransitionConfig]]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: StringDictionary[js.Array[TransitionConfig]]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStates(value: Record[String, StateNodeConfig]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+      inline def setStates(value: Record[String, StateNodeConfig]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: atomic | compound | parallel | `final` | history): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: atomic | compound | parallel | `final` | history): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,8 +132,7 @@ object jsonMod {
   }
   object TransitionConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actions: js.Array[ActionObject[js.Any, js.Any]],
       eventType: String,
       source: String,
@@ -166,32 +142,23 @@ object jsonMod {
       __obj.asInstanceOf[TransitionConfig]
     }
     
-    @scala.inline
-    implicit class TransitionConfigMutableBuilder[Self <: TransitionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionConfig](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[ActionObject[js.Any, js.Any]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[ActionObject[js.Any, js.Any]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: (ActionObject[js.Any, js.Any])*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: (ActionObject[js.Any, js.Any])*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setCond(value: Guard[js.Any, js.Any]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+      inline def setCond(value: Guard[js.Any, js.Any]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
+      inline def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
       
-      @scala.inline
-      def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+      inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
     }
   }
 }

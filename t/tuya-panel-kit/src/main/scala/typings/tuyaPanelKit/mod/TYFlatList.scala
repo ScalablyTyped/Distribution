@@ -27,30 +27,25 @@ object TYFlatList {
   @JSImport("tuya-panel-kit", "TYFlatList.CheckboxItem")
   @js.native
   def CheckboxItem: ElementType[TYFlatListCheckbox[TYFlatListData]] = js.native
-  @scala.inline
-  def CheckboxItem_=(x: ElementType[TYFlatListCheckbox[TYFlatListData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
+  inline def CheckboxItem_=(x: ElementType[TYFlatListCheckbox[TYFlatListData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "TYFlatList.InputItem")
   @js.native
   def InputItem: ElementType[TYSectionInputProps] = js.native
-  @scala.inline
-  def InputItem_=(x: ElementType[TYSectionInputProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InputItem")(x.asInstanceOf[js.Any])
+  inline def InputItem_=(x: ElementType[TYSectionInputProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InputItem")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "TYFlatList.Item")
   @js.native
   def Item: ElementType[TYListItemProps] = js.native
-  @scala.inline
-  def Item_=(x: ElementType[TYListItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: ElementType[TYListItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "TYFlatList.SliderItem")
   @js.native
   def SliderItem: ElementType[TYSectionSliderProps] = js.native
-  @scala.inline
-  def SliderItem_=(x: ElementType[TYSectionSliderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SliderItem")(x.asInstanceOf[js.Any])
+  inline def SliderItem_=(x: ElementType[TYSectionSliderProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SliderItem")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "TYFlatList.SwitchItem")
   @js.native
   def SwitchItem: ElementType[TYSectionListProps] = js.native
-  @scala.inline
-  def SwitchItem_=(x: ElementType[TYSectionListProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SwitchItem")(x.asInstanceOf[js.Any])
+  inline def SwitchItem_=(x: ElementType[TYSectionListProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SwitchItem")(x.asInstanceOf[js.Any])
 }

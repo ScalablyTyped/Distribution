@@ -13,25 +13,19 @@ trait searchstringundefinedSudo extends StObject {
 }
 object searchstringundefinedSudo {
   
-  @scala.inline
-  def apply(): searchstringundefinedSudo = {
+  inline def apply(): searchstringundefinedSudo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[searchstringundefinedSudo]
   }
   
-  @scala.inline
-  implicit class searchstringundefinedSudoMutableBuilder[Self <: searchstringundefinedSudo] (val x: Self) extends AnyVal {
+  extension [Self <: searchstringundefinedSudo](x: Self) {
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

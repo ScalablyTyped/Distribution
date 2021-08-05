@@ -76,17 +76,14 @@ object typesNotFoundExceptionMod {
   }
   object NotFoundException {
     
-    @scala.inline
-    def apply(): NotFoundException = {
+    inline def apply(): NotFoundException = {
       val __obj = js.Dynamic.literal(name = "NotFoundException")
       __obj.asInstanceOf[NotFoundException]
     }
     
-    @scala.inline
-    implicit class NotFoundExceptionMutableBuilder[Self <: NotFoundException] (val x: Self) extends AnyVal {
+    extension [Self <: NotFoundException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.NotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.NotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,20 +96,16 @@ object typesNotFoundExceptionMod {
   }
   object NotFoundExceptionDetails {
     
-    @scala.inline
-    def apply(): NotFoundExceptionDetails = {
+    inline def apply(): NotFoundExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotFoundExceptionDetails]
     }
     
-    @scala.inline
-    implicit class NotFoundExceptionDetailsMutableBuilder[Self <: NotFoundExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: NotFoundExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

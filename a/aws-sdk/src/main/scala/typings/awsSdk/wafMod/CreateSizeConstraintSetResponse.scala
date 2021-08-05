@@ -18,25 +18,19 @@ trait CreateSizeConstraintSetResponse extends StObject {
 }
 object CreateSizeConstraintSetResponse {
   
-  @scala.inline
-  def apply(): CreateSizeConstraintSetResponse = {
+  inline def apply(): CreateSizeConstraintSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSizeConstraintSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateSizeConstraintSetResponseMutableBuilder[Self <: CreateSizeConstraintSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSizeConstraintSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
-    @scala.inline
-    def setSizeConstraintSet(value: SizeConstraintSet): Self = StObject.set(x, "SizeConstraintSet", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintSet(value: SizeConstraintSet): Self = StObject.set(x, "SizeConstraintSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraintSetUndefined: Self = StObject.set(x, "SizeConstraintSet", js.undefined)
+    inline def setSizeConstraintSetUndefined: Self = StObject.set(x, "SizeConstraintSet", js.undefined)
   }
 }

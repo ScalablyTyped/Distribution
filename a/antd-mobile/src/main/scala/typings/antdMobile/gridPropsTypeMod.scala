@@ -18,26 +18,20 @@ object gridPropsTypeMod {
   }
   object DataItem {
     
-    @scala.inline
-    def apply(): DataItem = {
+    inline def apply(): DataItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataItem]
     }
     
-    @scala.inline
-    implicit class DataItemMutableBuilder[Self <: DataItem] (val x: Self) extends AnyVal {
+    extension [Self <: DataItem](x: Self) {
       
-      @scala.inline
-      def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -61,59 +55,42 @@ object gridPropsTypeMod {
   }
   object GridPropsType {
     
-    @scala.inline
-    def apply(): GridPropsType = {
+    inline def apply(): GridPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridPropsType]
     }
     
-    @scala.inline
-    implicit class GridPropsTypeMutableBuilder[Self <: GridPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: GridPropsType](x: Self) {
       
-      @scala.inline
-      def setCarouselMaxRow(value: Double): Self = StObject.set(x, "carouselMaxRow", value.asInstanceOf[js.Any])
+      inline def setCarouselMaxRow(value: Double): Self = StObject.set(x, "carouselMaxRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarouselMaxRowUndefined: Self = StObject.set(x, "carouselMaxRow", js.undefined)
+      inline def setCarouselMaxRowUndefined: Self = StObject.set(x, "carouselMaxRow", js.undefined)
       
-      @scala.inline
-      def setColumnNum(value: Double): Self = StObject.set(x, "columnNum", value.asInstanceOf[js.Any])
+      inline def setColumnNum(value: Double): Self = StObject.set(x, "columnNum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNumUndefined: Self = StObject.set(x, "columnNum", js.undefined)
+      inline def setColumnNumUndefined: Self = StObject.set(x, "columnNum", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[js.UndefOr[DataItem]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.UndefOr[DataItem]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.UndefOr[DataItem]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.UndefOr[DataItem]*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setHasLine(value: Boolean): Self = StObject.set(x, "hasLine", value.asInstanceOf[js.Any])
+      inline def setHasLine(value: Boolean): Self = StObject.set(x, "hasLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasLineUndefined: Self = StObject.set(x, "hasLine", js.undefined)
+      inline def setHasLineUndefined: Self = StObject.set(x, "hasLine", js.undefined)
       
-      @scala.inline
-      def setIsCarousel(value: Boolean): Self = StObject.set(x, "isCarousel", value.asInstanceOf[js.Any])
+      inline def setIsCarousel(value: Boolean): Self = StObject.set(x, "isCarousel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCarouselUndefined: Self = StObject.set(x, "isCarousel", js.undefined)
+      inline def setIsCarouselUndefined: Self = StObject.set(x, "isCarousel", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRenderItem(value: (/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ Double) => ReactElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
+      inline def setRenderItem(value: (/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ Double) => ReactElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
+      inline def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
     }
   }
 }

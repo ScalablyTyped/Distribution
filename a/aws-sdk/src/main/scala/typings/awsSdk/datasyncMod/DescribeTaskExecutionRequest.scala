@@ -13,16 +13,13 @@ trait DescribeTaskExecutionRequest extends StObject {
 }
 object DescribeTaskExecutionRequest {
   
-  @scala.inline
-  def apply(TaskExecutionArn: TaskExecutionArn): DescribeTaskExecutionRequest = {
+  inline def apply(TaskExecutionArn: TaskExecutionArn): DescribeTaskExecutionRequest = {
     val __obj = js.Dynamic.literal(TaskExecutionArn = TaskExecutionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTaskExecutionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTaskExecutionRequestMutableBuilder[Self <: DescribeTaskExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTaskExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
+    inline def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
   }
 }

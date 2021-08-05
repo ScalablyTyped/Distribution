@@ -24,8 +24,7 @@ object preSignupMod {
   }
   object BasePreSignUpTriggerEvent {
     
-    @scala.inline
-    def apply[T /* <: String */](
+    inline def apply[T /* <: String */](
       callerContext: AwsSdkVersion,
       region: String,
       request: ValidationData,
@@ -39,14 +38,11 @@ object preSignupMod {
       __obj.asInstanceOf[BasePreSignUpTriggerEvent[T]]
     }
     
-    @scala.inline
-    implicit class BasePreSignUpTriggerEventMutableBuilder[Self <: BasePreSignUpTriggerEvent[?], T /* <: String */] (val x: Self & BasePreSignUpTriggerEvent[T]) extends AnyVal {
+    extension [Self <: BasePreSignUpTriggerEvent[?], T /* <: String */](x: Self & BasePreSignUpTriggerEvent[T]) {
       
-      @scala.inline
-      def setRequest(value: ValidationData): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: ValidationData): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: AutoConfirmUser): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: AutoConfirmUser): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

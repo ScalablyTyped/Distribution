@@ -18,8 +18,7 @@ trait TitleTextShape
      with TextShape
 object TitleTextShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     DimColor: Color,
     DimHide: Boolean,

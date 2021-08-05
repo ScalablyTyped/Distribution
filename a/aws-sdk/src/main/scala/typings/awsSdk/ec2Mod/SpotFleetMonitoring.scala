@@ -13,19 +13,15 @@ trait SpotFleetMonitoring extends StObject {
 }
 object SpotFleetMonitoring {
   
-  @scala.inline
-  def apply(): SpotFleetMonitoring = {
+  inline def apply(): SpotFleetMonitoring = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpotFleetMonitoring]
   }
   
-  @scala.inline
-  implicit class SpotFleetMonitoringMutableBuilder[Self <: SpotFleetMonitoring] (val x: Self) extends AnyVal {
+  extension [Self <: SpotFleetMonitoring](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

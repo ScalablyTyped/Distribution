@@ -10,19 +10,15 @@ trait PDFViewerView extends StObject {
 }
 object PDFViewerView {
   
-  @scala.inline
-  def apply(): PDFViewerView = {
+  inline def apply(): PDFViewerView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PDFViewerView]
   }
   
-  @scala.inline
-  implicit class PDFViewerViewMutableBuilder[Self <: PDFViewerView] (val x: Self) extends AnyVal {
+  extension [Self <: PDFViewerView](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

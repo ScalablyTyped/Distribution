@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LengthAdjust extends StObject
 object LengthAdjust {
   
-  @scala.inline
-  def spacing: typings.reactSketchapp.reactSketchappStrings.spacing = "spacing".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.spacing]
+  inline def spacing: typings.reactSketchapp.reactSketchappStrings.spacing = "spacing".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.spacing]
   
-  @scala.inline
-  def spacingAndGlyphs: typings.reactSketchapp.reactSketchappStrings.spacingAndGlyphs = "spacingAndGlyphs".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.spacingAndGlyphs]
+  inline def spacingAndGlyphs: typings.reactSketchapp.reactSketchappStrings.spacingAndGlyphs = "spacingAndGlyphs".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.spacingAndGlyphs]
 }

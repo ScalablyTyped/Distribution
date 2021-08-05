@@ -27,8 +27,7 @@ object anon {
   }
   object AdditionalProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       additionalProperties: /* schemas */ js.Array[JSONSchema] => JSONSchema,
       patternProperties: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema,
       properties: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema
@@ -37,17 +36,13 @@ object anon {
       __obj.asInstanceOf[AdditionalProperties]
     }
     
-    @scala.inline
-    implicit class AdditionalPropertiesMutableBuilder[Self <: AdditionalProperties] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalProperties](x: Self) {
       
-      @scala.inline
-      def setAdditionalProperties(value: /* schemas */ js.Array[JSONSchema] => JSONSchema): Self = StObject.set(x, "additionalProperties", js.Any.fromFunction1(value))
+      inline def setAdditionalProperties(value: /* schemas */ js.Array[JSONSchema] => JSONSchema): Self = StObject.set(x, "additionalProperties", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPatternProperties(value: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema): Self = StObject.set(x, "patternProperties", js.Any.fromFunction2(value))
+      inline def setPatternProperties(value: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema): Self = StObject.set(x, "patternProperties", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProperties(value: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema): Self = StObject.set(x, "properties", js.Any.fromFunction2(value))
+      inline def setProperties(value: (/* schemas */ js.Array[JSONSchema], /* childSchemaName */ String) => JSONSchema): Self = StObject.set(x, "properties", js.Any.fromFunction2(value))
     }
   }
   
@@ -57,20 +52,16 @@ object anon {
   }
   object Contains {
     
-    @scala.inline
-    def apply(): Contains = {
+    inline def apply(): Contains = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Contains]
     }
     
-    @scala.inline
-    implicit class ContainsMutableBuilder[Self <: Contains] (val x: Self) extends AnyVal {
+    extension [Self <: Contains](x: Self) {
       
-      @scala.inline
-      def setContains(value: js.Any): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: js.Any): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+      inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     }
   }
   
@@ -105,22 +96,18 @@ object anon {
   }
   object DefaultResolver {
     
-    @scala.inline
-    def apply[Schema /* <: JSONSchema */](): DefaultResolver[Schema] = {
+    inline def apply[Schema /* <: JSONSchema */](): DefaultResolver[Schema] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultResolver[Schema]]
     }
     
-    @scala.inline
-    implicit class DefaultResolverMutableBuilder[Self <: DefaultResolver[?], Schema /* <: JSONSchema */] (val x: Self & DefaultResolver[Schema]) extends AnyVal {
+    extension [Self <: DefaultResolver[?], Schema /* <: JSONSchema */](x: Self & DefaultResolver[Schema]) {
       
-      @scala.inline
-      def setDefaultResolver(
+      inline def setDefaultResolver(
         value: (/* values */ js.Array[js.Any], /* path */ js.Array[String], /* mergeSchemas */ MergeSchemas, /* options */ Options_[Schema]) => js.Any
       ): Self = StObject.set(x, "defaultResolver", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setDefaultResolverUndefined: Self = StObject.set(x, "defaultResolver", js.undefined)
+      inline def setDefaultResolverUndefined: Self = StObject.set(x, "defaultResolver", js.undefined)
     }
   }
   
@@ -130,20 +117,16 @@ object anon {
   }
   object Examples {
     
-    @scala.inline
-    def apply(): Examples = {
+    inline def apply(): Examples = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Examples]
     }
     
-    @scala.inline
-    implicit class ExamplesMutableBuilder[Self <: Examples] (val x: Self) extends AnyVal {
+    extension [Self <: Examples](x: Self) {
       
-      @scala.inline
-      def setExamples(value: js.Any): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+      inline def setExamples(value: js.Any): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+      inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     }
   }
   
@@ -154,20 +137,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(): Id = {
+    inline def apply(): Id = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def set$id(value: js.Any): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
+      inline def set$id(value: js.Any): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$idUndefined: Self = StObject.set(x, "$id", js.undefined)
+      inline def set$idUndefined: Self = StObject.set(x, "$id", js.undefined)
     }
   }
   
@@ -177,17 +156,14 @@ object anon {
   }
   object IgnoreAdditionalProperties {
     
-    @scala.inline
-    def apply(): IgnoreAdditionalProperties = {
+    inline def apply(): IgnoreAdditionalProperties = {
       val __obj = js.Dynamic.literal(ignoreAdditionalProperties = true)
       __obj.asInstanceOf[IgnoreAdditionalProperties]
     }
     
-    @scala.inline
-    implicit class IgnoreAdditionalPropertiesMutableBuilder[Self <: IgnoreAdditionalProperties] (val x: Self) extends AnyVal {
+    extension [Self <: IgnoreAdditionalProperties](x: Self) {
       
-      @scala.inline
-      def setIgnoreAdditionalProperties(value: `true`): Self = StObject.set(x, "ignoreAdditionalProperties", value.asInstanceOf[js.Any])
+      inline def setIgnoreAdditionalProperties(value: `true`): Self = StObject.set(x, "ignoreAdditionalProperties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,20 +173,16 @@ object anon {
   }
   object PropertyNames {
     
-    @scala.inline
-    def apply(): PropertyNames = {
+    inline def apply(): PropertyNames = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PropertyNames]
     }
     
-    @scala.inline
-    implicit class PropertyNamesMutableBuilder[Self <: PropertyNames] (val x: Self) extends AnyVal {
+    extension [Self <: PropertyNames](x: Self) {
       
-      @scala.inline
-      def setPropertyNames(value: js.Any): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
+      inline def setPropertyNames(value: js.Any): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
+      inline def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
     }
   }
 }

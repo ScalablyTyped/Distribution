@@ -26,43 +26,31 @@ trait NotificationConfig extends StObject {
 }
 object NotificationConfig {
   
-  @scala.inline
-  def apply(): NotificationConfig = {
+  inline def apply(): NotificationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationConfig]
   }
   
-  @scala.inline
-  implicit class NotificationConfigMutableBuilder[Self <: NotificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationConfig](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
+    inline def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
+    inline def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setStreamingConfig(value: StreamingConfig): Self = StObject.set(x, "streamingConfig", value.asInstanceOf[js.Any])
+    inline def setStreamingConfig(value: StreamingConfig): Self = StObject.set(x, "streamingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingConfigUndefined: Self = StObject.set(x, "streamingConfig", js.undefined)
+    inline def setStreamingConfigUndefined: Self = StObject.set(x, "streamingConfig", js.undefined)
   }
 }

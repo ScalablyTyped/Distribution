@@ -31,17 +31,14 @@ object blockTitleMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(clientId: String): Props = {
+      inline def apply(clientId: String): Props = {
         val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+        inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       }
     }
   }

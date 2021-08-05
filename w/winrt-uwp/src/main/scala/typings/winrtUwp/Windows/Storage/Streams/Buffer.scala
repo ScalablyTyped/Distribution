@@ -18,22 +18,17 @@ trait Buffer extends StObject {
 }
 object Buffer {
   
-  @scala.inline
-  def apply(byteLength: js.Any, capacity: Double, length: Double): Buffer = {
+  inline def apply(byteLength: js.Any, capacity: Double, length: Double): Buffer = {
     val __obj = js.Dynamic.literal(byteLength = byteLength.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buffer]
   }
   
-  @scala.inline
-  implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
+  extension [Self <: Buffer](x: Self) {
     
-    @scala.inline
-    def setByteLength(value: js.Any): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
+    inline def setByteLength(value: js.Any): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

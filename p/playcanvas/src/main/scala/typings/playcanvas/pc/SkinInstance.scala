@@ -20,19 +20,15 @@ trait SkinInstance extends StObject {
 }
 object SkinInstance {
   
-  @scala.inline
-  def apply(bones: js.Array[GraphNode]): SkinInstance = {
+  inline def apply(bones: js.Array[GraphNode]): SkinInstance = {
     val __obj = js.Dynamic.literal(bones = bones.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkinInstance]
   }
   
-  @scala.inline
-  implicit class SkinInstanceMutableBuilder[Self <: SkinInstance] (val x: Self) extends AnyVal {
+  extension [Self <: SkinInstance](x: Self) {
     
-    @scala.inline
-    def setBones(value: js.Array[GraphNode]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
+    inline def setBones(value: js.Array[GraphNode]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBonesVarargs(value: GraphNode*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: GraphNode*): Self = StObject.set(x, "bones", js.Array(value :_*))
   }
 }

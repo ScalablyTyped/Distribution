@@ -28,12 +28,10 @@ object searchMod {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromBuffer(value: Buffer): DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[DateRange]
+      inline def fromBuffer(value: Buffer): DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[DateRange]
       
       /* static member */
-      @scala.inline
-      def fromString(value: String): DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[DateRange]
+      inline def fromString(value: String): DateRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[DateRange]
     }
     
     @JSImport("cassandra-driver/lib/datastax/search", "search.DateRangeBound")
@@ -53,16 +51,13 @@ object searchMod {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromString(value: String): DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[DateRangeBound]
+      inline def fromString(value: String): DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[DateRangeBound]
       
       /* static member */
-      @scala.inline
-      def toLowerBound(bound: DateRangeBound): DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerBound")(bound.asInstanceOf[js.Any]).asInstanceOf[DateRangeBound]
+      inline def toLowerBound(bound: DateRangeBound): DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerBound")(bound.asInstanceOf[js.Any]).asInstanceOf[DateRangeBound]
       
       /* static member */
-      @scala.inline
-      def toUpperBound(bound: DateRangeBound): DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toUpperBound")(bound.asInstanceOf[js.Any]).asInstanceOf[DateRangeBound]
+      inline def toUpperBound(bound: DateRangeBound): DateRangeBound = ^.asInstanceOf[js.Dynamic].applyDynamic("toUpperBound")(bound.asInstanceOf[js.Any]).asInstanceOf[DateRangeBound]
     }
     
     @js.native

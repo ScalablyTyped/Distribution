@@ -24,25 +24,19 @@ trait SchemaCommuteInfo extends StObject {
 }
 object SchemaCommuteInfo {
   
-  @scala.inline
-  def apply(): SchemaCommuteInfo = {
+  inline def apply(): SchemaCommuteInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommuteInfo]
   }
   
-  @scala.inline
-  implicit class SchemaCommuteInfoMutableBuilder[Self <: SchemaCommuteInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommuteInfo](x: Self) {
     
-    @scala.inline
-    def setJobLocation(value: SchemaJobLocation): Self = StObject.set(x, "jobLocation", value.asInstanceOf[js.Any])
+    inline def setJobLocation(value: SchemaJobLocation): Self = StObject.set(x, "jobLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobLocationUndefined: Self = StObject.set(x, "jobLocation", js.undefined)
+    inline def setJobLocationUndefined: Self = StObject.set(x, "jobLocation", js.undefined)
     
-    @scala.inline
-    def setTravelDuration(value: String): Self = StObject.set(x, "travelDuration", value.asInstanceOf[js.Any])
+    inline def setTravelDuration(value: String): Self = StObject.set(x, "travelDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTravelDurationUndefined: Self = StObject.set(x, "travelDuration", js.undefined)
+    inline def setTravelDurationUndefined: Self = StObject.set(x, "travelDuration", js.undefined)
   }
 }

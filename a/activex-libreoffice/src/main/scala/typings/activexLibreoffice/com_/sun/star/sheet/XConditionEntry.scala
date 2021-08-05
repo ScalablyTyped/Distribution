@@ -21,8 +21,7 @@ trait XConditionEntry
 }
 object XConditionEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Type: Double,
     acquire: () => Unit,
     getType: () => Double,
@@ -33,13 +32,10 @@ object XConditionEntry {
     __obj.asInstanceOf[XConditionEntry]
   }
   
-  @scala.inline
-  implicit class XConditionEntryMutableBuilder[Self <: XConditionEntry] (val x: Self) extends AnyVal {
+  extension [Self <: XConditionEntry](x: Self) {
     
-    @scala.inline
-    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

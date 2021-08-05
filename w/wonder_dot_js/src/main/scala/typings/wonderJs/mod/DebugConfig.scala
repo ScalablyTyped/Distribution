@@ -13,18 +13,15 @@ object DebugConfig {
   @JSImport("wonder.js/dist/es2015", "DebugConfig.debugCollision")
   @js.native
   def debugCollision: Boolean = js.native
-  @scala.inline
-  def debugCollision_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debugCollision")(x.asInstanceOf[js.Any])
+  inline def debugCollision_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debugCollision")(x.asInstanceOf[js.Any])
   
   @JSImport("wonder.js/dist/es2015", "DebugConfig.isTest")
   @js.native
   def isTest: Boolean = js.native
-  @scala.inline
-  def isTest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isTest")(x.asInstanceOf[js.Any])
+  inline def isTest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isTest")(x.asInstanceOf[js.Any])
   
   @JSImport("wonder.js/dist/es2015", "DebugConfig.showDebugPanel")
   @js.native
   def showDebugPanel: Boolean = js.native
-  @scala.inline
-  def showDebugPanel_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showDebugPanel")(x.asInstanceOf[js.Any])
+  inline def showDebugPanel_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showDebugPanel")(x.asInstanceOf[js.Any])
 }

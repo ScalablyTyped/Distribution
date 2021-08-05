@@ -628,8 +628,7 @@ object pirateMod extends Shortcut {
   }
   object Vocabulary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _steps: js.Array[String],
       background: String,
       examples: String,
@@ -650,17 +649,13 @@ object pirateMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    @scala.inline
-    implicit class VocabularyMutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    extension [Self <: Vocabulary](x: Self) {
       
-      @scala.inline
-      def setGiveth(value: String): Self = StObject.set(x, "giveth", value.asInstanceOf[js.Any])
+      inline def setGiveth(value: String): Self = StObject.set(x, "giveth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThence(value: String): Self = StObject.set(x, "thence", value.asInstanceOf[js.Any])
+      inline def setThence(value: String): Self = StObject.set(x, "thence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhence(value: String): Self = StObject.set(x, "whence", value.asInstanceOf[js.Any])
+      inline def setWhence(value: String): Self = StObject.set(x, "whence", value.asInstanceOf[js.Any])
     }
   }
   

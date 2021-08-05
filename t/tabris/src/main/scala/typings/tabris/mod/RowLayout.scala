@@ -45,6 +45,5 @@ object RowLayout {
   @JSImport("tabris", "RowLayout.default")
   @js.native
   def default: RowLayout = js.native
-  @scala.inline
-  def default_=(x: RowLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: RowLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

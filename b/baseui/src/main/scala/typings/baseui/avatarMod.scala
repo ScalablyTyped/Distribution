@@ -50,38 +50,30 @@ object avatarMod {
   }
   object AvatarOverrides {
     
-    @scala.inline
-    def apply[T](): AvatarOverrides[T] = {
+    inline def apply[T](): AvatarOverrides[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AvatarOverrides[T]]
     }
     
-    @scala.inline
-    implicit class AvatarOverridesMutableBuilder[Self <: AvatarOverrides[?], T] (val x: Self & AvatarOverrides[T]) extends AnyVal {
+    extension [Self <: AvatarOverrides[?], T](x: Self & AvatarOverrides[T]) {
       
-      @scala.inline
-      def setAvatar(
+      inline def setAvatar(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarUndefined: Self = StObject.set(x, "Avatar", js.undefined)
+      inline def setAvatarUndefined: Self = StObject.set(x, "Avatar", js.undefined)
       
-      @scala.inline
-      def setInitials(
+      inline def setInitials(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Initials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialsUndefined: Self = StObject.set(x, "Initials", js.undefined)
+      inline def setInitialsUndefined: Self = StObject.set(x, "Initials", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     }
   }
   
@@ -97,35 +89,26 @@ object avatarMod {
   }
   object AvatarProps {
     
-    @scala.inline
-    def apply(name: String): AvatarProps = {
+    inline def apply(name: String): AvatarProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvatarProps]
     }
     
-    @scala.inline
-    implicit class AvatarPropsMutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrides(value: AvatarOverrides[StyleProps]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: AvatarOverrides[StyleProps]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
   
@@ -135,17 +118,14 @@ object avatarMod {
   }
   object AvatarState {
     
-    @scala.inline
-    def apply(noImageAvailable: Boolean): AvatarState = {
+    inline def apply(noImageAvailable: Boolean): AvatarState = {
       val __obj = js.Dynamic.literal(noImageAvailable = noImageAvailable.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvatarState]
     }
     
-    @scala.inline
-    implicit class AvatarStateMutableBuilder[Self <: AvatarState] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarState](x: Self) {
       
-      @scala.inline
-      def setNoImageAvailable(value: Boolean): Self = StObject.set(x, "noImageAvailable", value.asInstanceOf[js.Any])
+      inline def setNoImageAvailable(value: Boolean): Self = StObject.set(x, "noImageAvailable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,23 +139,18 @@ object avatarMod {
   }
   object StyleProps {
     
-    @scala.inline
-    def apply($didImageFailToLoad: Boolean): StyleProps = {
+    inline def apply($didImageFailToLoad: Boolean): StyleProps = {
       val __obj = js.Dynamic.literal($didImageFailToLoad = $didImageFailToLoad.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyleProps]
     }
     
-    @scala.inline
-    implicit class StylePropsMutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyleProps](x: Self) {
       
-      @scala.inline
-      def set$didImageFailToLoad(value: Boolean): Self = StObject.set(x, "$didImageFailToLoad", value.asInstanceOf[js.Any])
+      inline def set$didImageFailToLoad(value: Boolean): Self = StObject.set(x, "$didImageFailToLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$size(value: String): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+      inline def set$size(value: String): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
+      inline def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
     }
   }
 }

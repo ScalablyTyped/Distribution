@@ -18,19 +18,15 @@ trait SchemaContactGroupMembership extends StObject {
 }
 object SchemaContactGroupMembership {
   
-  @scala.inline
-  def apply(): SchemaContactGroupMembership = {
+  inline def apply(): SchemaContactGroupMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContactGroupMembership]
   }
   
-  @scala.inline
-  implicit class SchemaContactGroupMembershipMutableBuilder[Self <: SchemaContactGroupMembership] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContactGroupMembership](x: Self) {
     
-    @scala.inline
-    def setContactGroupId(value: String): Self = StObject.set(x, "contactGroupId", value.asInstanceOf[js.Any])
+    inline def setContactGroupId(value: String): Self = StObject.set(x, "contactGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactGroupIdUndefined: Self = StObject.set(x, "contactGroupId", js.undefined)
+    inline def setContactGroupIdUndefined: Self = StObject.set(x, "contactGroupId", js.undefined)
   }
 }

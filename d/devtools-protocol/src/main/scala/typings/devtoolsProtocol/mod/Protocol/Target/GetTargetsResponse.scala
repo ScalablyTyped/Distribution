@@ -13,19 +13,15 @@ trait GetTargetsResponse extends StObject {
 }
 object GetTargetsResponse {
   
-  @scala.inline
-  def apply(targetInfos: js.Array[TargetInfo]): GetTargetsResponse = {
+  inline def apply(targetInfos: js.Array[TargetInfo]): GetTargetsResponse = {
     val __obj = js.Dynamic.literal(targetInfos = targetInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTargetsResponse]
   }
   
-  @scala.inline
-  implicit class GetTargetsResponseMutableBuilder[Self <: GetTargetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTargetsResponse](x: Self) {
     
-    @scala.inline
-    def setTargetInfos(value: js.Array[TargetInfo]): Self = StObject.set(x, "targetInfos", value.asInstanceOf[js.Any])
+    inline def setTargetInfos(value: js.Array[TargetInfo]): Self = StObject.set(x, "targetInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetInfosVarargs(value: TargetInfo*): Self = StObject.set(x, "targetInfos", js.Array(value :_*))
+    inline def setTargetInfosVarargs(value: TargetInfo*): Self = StObject.set(x, "targetInfos", js.Array(value :_*))
   }
 }

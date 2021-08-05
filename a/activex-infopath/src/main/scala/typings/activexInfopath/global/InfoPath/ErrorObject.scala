@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.ErrorObject")
 @js.native
-class ErrorObject protected ()
+/* private */ class ErrorObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.ErrorObject {
   
@@ -20,7 +20,7 @@ class ErrorObject protected ()
   /* CompleteClass */
   var ErrorCode: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.ErrorObject_typekey")
   var InfoPathDotErrorObject_typekey: typings.activexInfopath.InfoPath.ErrorObject = js.native
   

@@ -28,37 +28,27 @@ trait AwsS3BucketDetails extends StObject {
 }
 object AwsS3BucketDetails {
   
-  @scala.inline
-  def apply(): AwsS3BucketDetails = {
+  inline def apply(): AwsS3BucketDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsS3BucketDetails]
   }
   
-  @scala.inline
-  implicit class AwsS3BucketDetailsMutableBuilder[Self <: AwsS3BucketDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsS3BucketDetails](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: NonEmptyString): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: NonEmptyString): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setOwnerId(value: NonEmptyString): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: NonEmptyString): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setOwnerName(value: NonEmptyString): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
+    inline def setOwnerName(value: NonEmptyString): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerNameUndefined: Self = StObject.set(x, "OwnerName", js.undefined)
+    inline def setOwnerNameUndefined: Self = StObject.set(x, "OwnerName", js.undefined)
     
-    @scala.inline
-    def setServerSideEncryptionConfiguration(value: AwsS3BucketServerSideEncryptionConfiguration): Self = StObject.set(x, "ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
+    inline def setServerSideEncryptionConfiguration(value: AwsS3BucketServerSideEncryptionConfiguration): Self = StObject.set(x, "ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "ServerSideEncryptionConfiguration", js.undefined)
+    inline def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "ServerSideEncryptionConfiguration", js.undefined)
   }
 }

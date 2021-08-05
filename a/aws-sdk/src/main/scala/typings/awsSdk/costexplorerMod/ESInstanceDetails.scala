@@ -33,43 +33,31 @@ trait ESInstanceDetails extends StObject {
 }
 object ESInstanceDetails {
   
-  @scala.inline
-  def apply(): ESInstanceDetails = {
+  inline def apply(): ESInstanceDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ESInstanceDetails]
   }
   
-  @scala.inline
-  implicit class ESInstanceDetailsMutableBuilder[Self <: ESInstanceDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ESInstanceDetails](x: Self) {
     
-    @scala.inline
-    def setCurrentGeneration(value: GenericBoolean): Self = StObject.set(x, "CurrentGeneration", value.asInstanceOf[js.Any])
+    inline def setCurrentGeneration(value: GenericBoolean): Self = StObject.set(x, "CurrentGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentGenerationUndefined: Self = StObject.set(x, "CurrentGeneration", js.undefined)
+    inline def setCurrentGenerationUndefined: Self = StObject.set(x, "CurrentGeneration", js.undefined)
     
-    @scala.inline
-    def setInstanceClass(value: GenericString): Self = StObject.set(x, "InstanceClass", value.asInstanceOf[js.Any])
+    inline def setInstanceClass(value: GenericString): Self = StObject.set(x, "InstanceClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceClassUndefined: Self = StObject.set(x, "InstanceClass", js.undefined)
+    inline def setInstanceClassUndefined: Self = StObject.set(x, "InstanceClass", js.undefined)
     
-    @scala.inline
-    def setInstanceSize(value: GenericString): Self = StObject.set(x, "InstanceSize", value.asInstanceOf[js.Any])
+    inline def setInstanceSize(value: GenericString): Self = StObject.set(x, "InstanceSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceSizeUndefined: Self = StObject.set(x, "InstanceSize", js.undefined)
+    inline def setInstanceSizeUndefined: Self = StObject.set(x, "InstanceSize", js.undefined)
     
-    @scala.inline
-    def setRegion(value: GenericString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: GenericString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setSizeFlexEligible(value: GenericBoolean): Self = StObject.set(x, "SizeFlexEligible", value.asInstanceOf[js.Any])
+    inline def setSizeFlexEligible(value: GenericBoolean): Self = StObject.set(x, "SizeFlexEligible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeFlexEligibleUndefined: Self = StObject.set(x, "SizeFlexEligible", js.undefined)
+    inline def setSizeFlexEligibleUndefined: Self = StObject.set(x, "SizeFlexEligible", js.undefined)
   }
 }

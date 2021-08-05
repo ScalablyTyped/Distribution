@@ -18,25 +18,19 @@ trait SearchPathOptions extends StObject {
 }
 object SearchPathOptions {
   
-  @scala.inline
-  def apply(): SearchPathOptions = {
+  inline def apply(): SearchPathOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchPathOptions]
   }
   
-  @scala.inline
-  implicit class SearchPathOptionsMutableBuilder[Self <: SearchPathOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchPathOptions](x: Self) {
     
-    @scala.inline
-    def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
+    inline def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
+    inline def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

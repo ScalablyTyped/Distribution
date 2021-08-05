@@ -19,25 +19,19 @@ trait PlotSlowstochasticSmoothedLineStylesOptions extends StObject {
 }
 object PlotSlowstochasticSmoothedLineStylesOptions {
   
-  @scala.inline
-  def apply(): PlotSlowstochasticSmoothedLineStylesOptions = {
+  inline def apply(): PlotSlowstochasticSmoothedLineStylesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSlowstochasticSmoothedLineStylesOptions]
   }
   
-  @scala.inline
-  implicit class PlotSlowstochasticSmoothedLineStylesOptionsMutableBuilder[Self <: PlotSlowstochasticSmoothedLineStylesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSlowstochasticSmoothedLineStylesOptions](x: Self) {
     
-    @scala.inline
-    def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
   }
 }

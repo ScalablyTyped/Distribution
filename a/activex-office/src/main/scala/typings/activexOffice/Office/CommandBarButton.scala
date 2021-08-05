@@ -69,7 +69,7 @@ trait CommandBarButton extends StObject {
   
   var OLEUsage: MsoControlOLEUsage = js.native
   
-  @JSName("Office.CommandBarButton_typekey")
+  /* private */ @JSName("Office.CommandBarButton_typekey")
   var OfficeDotCommandBarButton_typekey: CommandBarButton = js.native
   
   var OnAction: String = js.native

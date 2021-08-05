@@ -15,16 +15,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](source: Source_[T]): AsyncIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def default[T](source: Source_[T], signal: Unit, options: Options[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def default[T](source: Source_[T], signals: Signals[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def default[T](source: Source_[T], signal: AbortSignal): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def default[T](source: Source_[T], signal: AbortSignal, options: Options[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def default[T](source: Source_[T]): AsyncIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[T]]
+  inline def default[T](source: Source_[T], signal: Unit, options: Options[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def default[T](source: Source_[T], signals: Signals[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def default[T](source: Source_[T], signal: AbortSignal): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def default[T](source: Source_[T], signal: AbortSignal, options: Options[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
   
   @JSImport("abortable-iterator", "AbortError")
   @js.native
@@ -46,49 +41,29 @@ object mod {
     var `type`: aborted = js.native
   }
   
-  @scala.inline
-  def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn]): Duplex_[TSource, TSinkSource, TSinkReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any]).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
-  @scala.inline
-  def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn], signal: Unit, options: Options[TSource]): Duplex_[TSource, TSinkSource, TSinkReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
-  @scala.inline
-  def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn], signals: Signals[TSource]): Duplex_[TSource, TSinkSource, TSinkReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
-  @scala.inline
-  def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn], signal: AbortSignal): Duplex_[TSource, TSinkSource, TSinkReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
-  @scala.inline
-  def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn], signal: AbortSignal, options: Options[TSource]): Duplex_[TSource, TSinkSource, TSinkReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
+  inline def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn]): Duplex_[TSource, TSinkSource, TSinkReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any]).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
+  inline def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn], signal: Unit, options: Options[TSource]): Duplex_[TSource, TSinkSource, TSinkReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
+  inline def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn], signals: Signals[TSource]): Duplex_[TSource, TSinkSource, TSinkReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
+  inline def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn], signal: AbortSignal): Duplex_[TSource, TSinkSource, TSinkReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
+  inline def duplex[TSource, TSinkSource, TSinkReturn](duplex: Duplex_[TSource, TSinkSource, TSinkReturn], signal: AbortSignal, options: Options[TSource]): Duplex_[TSource, TSinkSource, TSinkReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("duplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
   
-  @scala.inline
-  def sink[TSource, TReturn](sink: Sink_[TSource, TReturn]): Sink_[TSource, TReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any]).asInstanceOf[Sink_[TSource, TReturn]]
-  @scala.inline
-  def sink[TSource, TReturn](sink: Sink_[TSource, TReturn], signal: Unit, options: Options[TSource]): Sink_[TSource, TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink_[TSource, TReturn]]
-  @scala.inline
-  def sink[TSource, TReturn](sink: Sink_[TSource, TReturn], signals: Signals[TSource]): Sink_[TSource, TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[Sink_[TSource, TReturn]]
-  @scala.inline
-  def sink[TSource, TReturn](sink: Sink_[TSource, TReturn], signal: AbortSignal): Sink_[TSource, TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Sink_[TSource, TReturn]]
-  @scala.inline
-  def sink[TSource, TReturn](sink: Sink_[TSource, TReturn], signal: AbortSignal, options: Options[TSource]): Sink_[TSource, TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink_[TSource, TReturn]]
+  inline def sink[TSource, TReturn](sink: Sink_[TSource, TReturn]): Sink_[TSource, TReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any]).asInstanceOf[Sink_[TSource, TReturn]]
+  inline def sink[TSource, TReturn](sink: Sink_[TSource, TReturn], signal: Unit, options: Options[TSource]): Sink_[TSource, TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink_[TSource, TReturn]]
+  inline def sink[TSource, TReturn](sink: Sink_[TSource, TReturn], signals: Signals[TSource]): Sink_[TSource, TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[Sink_[TSource, TReturn]]
+  inline def sink[TSource, TReturn](sink: Sink_[TSource, TReturn], signal: AbortSignal): Sink_[TSource, TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Sink_[TSource, TReturn]]
+  inline def sink[TSource, TReturn](sink: Sink_[TSource, TReturn], signal: AbortSignal, options: Options[TSource]): Sink_[TSource, TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("sink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink_[TSource, TReturn]]
   
-  @scala.inline
-  def source[T](source: Source_[T]): AsyncIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def source[T](source: Source_[T], signal: Unit, options: Options[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def source[T](source: Source_[T], signals: Signals[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def source[T](source: Source_[T], signal: AbortSignal): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
-  @scala.inline
-  def source[T](source: Source_[T], signal: AbortSignal, options: Options[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def source[T](source: Source_[T]): AsyncIterable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[T]]
+  inline def source[T](source: Source_[T], signal: Unit, options: Options[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def source[T](source: Source_[T], signals: Signals[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def source[T](source: Source_[T], signal: AbortSignal): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  inline def source[T](source: Source_[T], signal: AbortSignal, options: Options[T]): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("source")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
   
-  @scala.inline
-  def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut]): Transform_[TSourceIn, TSourceOut] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
-  @scala.inline
-  def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut], signal: Unit, options: Options[TSourceIn]): Transform_[TSourceIn, TSourceOut] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
-  @scala.inline
-  def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut], signals: Signals[TSourceIn]): Transform_[TSourceIn, TSourceOut] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
-  @scala.inline
-  def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut], signal: AbortSignal): Transform_[TSourceIn, TSourceOut] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
-  @scala.inline
-  def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut], signal: AbortSignal, options: Options[TSourceIn]): Transform_[TSourceIn, TSourceOut] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
+  inline def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut]): Transform_[TSourceIn, TSourceOut] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
+  inline def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut], signal: Unit, options: Options[TSourceIn]): Transform_[TSourceIn, TSourceOut] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
+  inline def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut], signals: Signals[TSourceIn]): Transform_[TSourceIn, TSourceOut] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any], signals.asInstanceOf[js.Any])).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
+  inline def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut], signal: AbortSignal): Transform_[TSourceIn, TSourceOut] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
+  inline def transform[TSourceIn, TSourceOut](transform: Transform_[TSourceIn, TSourceOut], signal: AbortSignal, options: Options[TSourceIn]): Transform_[TSourceIn, TSourceOut] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transform.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform_[TSourceIn, TSourceOut]]
   
   trait Duplex_[TSource, TSinkSource, TSinkReturn] extends StObject {
     
@@ -100,20 +75,16 @@ object mod {
   }
   object Duplex_ {
     
-    @scala.inline
-    def apply[TSource, TSinkSource, TSinkReturn](sink: /* source */ Source_[TSinkSource] => TSinkReturn, source: Source_[TSource]): Duplex_[TSource, TSinkSource, TSinkReturn] = {
+    inline def apply[TSource, TSinkSource, TSinkReturn](sink: /* source */ Source_[TSinkSource] => TSinkReturn, source: Source_[TSource]): Duplex_[TSource, TSinkSource, TSinkReturn] = {
       val __obj = js.Dynamic.literal(sink = js.Any.fromFunction1(sink), source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Duplex_[TSource, TSinkSource, TSinkReturn]]
     }
     
-    @scala.inline
-    implicit class Duplex_MutableBuilder[Self <: Duplex_[?, ?, ?], TSource, TSinkSource, TSinkReturn] (val x: Self & (Duplex_[TSource, TSinkSource, TSinkReturn])) extends AnyVal {
+    extension [Self <: Duplex_[?, ?, ?], TSource, TSinkSource, TSinkReturn](x: Self & (Duplex_[TSource, TSinkSource, TSinkReturn])) {
       
-      @scala.inline
-      def setSink(value: /* source */ Source_[TSinkSource] => TSinkReturn): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
+      inline def setSink(value: /* source */ Source_[TSinkSource] => TSinkReturn): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: Source_[TSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Source_[TSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,38 +100,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[T](): Options[T] = {
+    inline def apply[T](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T](x: Self & Options[T]) {
       
-      @scala.inline
-      def setAbortCode(value: String): Self = StObject.set(x, "abortCode", value.asInstanceOf[js.Any])
+      inline def setAbortCode(value: String): Self = StObject.set(x, "abortCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortCodeUndefined: Self = StObject.set(x, "abortCode", js.undefined)
+      inline def setAbortCodeUndefined: Self = StObject.set(x, "abortCode", js.undefined)
       
-      @scala.inline
-      def setAbortMessage(value: String): Self = StObject.set(x, "abortMessage", value.asInstanceOf[js.Any])
+      inline def setAbortMessage(value: String): Self = StObject.set(x, "abortMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortMessageUndefined: Self = StObject.set(x, "abortMessage", js.undefined)
+      inline def setAbortMessageUndefined: Self = StObject.set(x, "abortMessage", js.undefined)
       
-      @scala.inline
-      def setOnAbort(value: /* source */ Source_[T] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: /* source */ Source_[T] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
+      inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      @scala.inline
-      def setReturnOnAbort(value: Boolean): Self = StObject.set(x, "returnOnAbort", value.asInstanceOf[js.Any])
+      inline def setReturnOnAbort(value: Boolean): Self = StObject.set(x, "returnOnAbort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnOnAbortUndefined: Self = StObject.set(x, "returnOnAbort", js.undefined)
+      inline def setReturnOnAbortUndefined: Self = StObject.set(x, "returnOnAbort", js.undefined)
     }
   }
   

@@ -62,85 +62,59 @@ trait ISheet
 }
 object ISheet {
   
-  @scala.inline
-  def apply(): ISheet = {
+  inline def apply(): ISheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISheet]
   }
   
-  @scala.inline
-  implicit class ISheetMutableBuilder[Self <: ISheet] (val x: Self) extends AnyVal {
+  extension [Self <: ISheet](x: Self) {
     
-    @scala.inline
-    def setEnter(value: java.lang.String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+    inline def setEnter(value: java.lang.String): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+    inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    @scala.inline
-    def setExit(value: java.lang.String): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+    inline def setExit(value: java.lang.String): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+    inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
-    @scala.inline
-    def setGetEnter(value: () => java.lang.String): Self = StObject.set(x, "getEnter", js.Any.fromFunction0(value))
+    inline def setGetEnter(value: () => java.lang.String): Self = StObject.set(x, "getEnter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnterUndefined: Self = StObject.set(x, "getEnter", js.undefined)
+    inline def setGetEnterUndefined: Self = StObject.set(x, "getEnter", js.undefined)
     
-    @scala.inline
-    def setGetExit(value: () => java.lang.String): Self = StObject.set(x, "getExit", js.Any.fromFunction0(value))
+    inline def setGetExit(value: () => java.lang.String): Self = StObject.set(x, "getExit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExitUndefined: Self = StObject.set(x, "getExit", js.undefined)
+    inline def setGetExitUndefined: Self = StObject.set(x, "getExit", js.undefined)
     
-    @scala.inline
-    def setGetStretchX(value: () => Boolean): Self = StObject.set(x, "getStretchX", js.Any.fromFunction0(value))
+    inline def setGetStretchX(value: () => Boolean): Self = StObject.set(x, "getStretchX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStretchXUndefined: Self = StObject.set(x, "getStretchX", js.undefined)
+    inline def setGetStretchXUndefined: Self = StObject.set(x, "getStretchX", js.undefined)
     
-    @scala.inline
-    def setGetStretchY(value: () => Boolean): Self = StObject.set(x, "getStretchY", js.Any.fromFunction0(value))
+    inline def setGetStretchY(value: () => Boolean): Self = StObject.set(x, "getStretchY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStretchYUndefined: Self = StObject.set(x, "getStretchY", js.undefined)
+    inline def setGetStretchYUndefined: Self = StObject.set(x, "getStretchY", js.undefined)
     
-    @scala.inline
-    def setSetEnter(value: /* enter */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setEnter", js.Any.fromFunction1(value))
+    inline def setSetEnter(value: /* enter */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setEnter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnterUndefined: Self = StObject.set(x, "setEnter", js.undefined)
+    inline def setSetEnterUndefined: Self = StObject.set(x, "setEnter", js.undefined)
     
-    @scala.inline
-    def setSetExit(value: /* exit */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setExit", js.Any.fromFunction1(value))
+    inline def setSetExit(value: /* exit */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setExit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetExitUndefined: Self = StObject.set(x, "setExit", js.undefined)
+    inline def setSetExitUndefined: Self = StObject.set(x, "setExit", js.undefined)
     
-    @scala.inline
-    def setSetStretchX(value: /* stretchX */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStretchX", js.Any.fromFunction1(value))
+    inline def setSetStretchX(value: /* stretchX */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStretchX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStretchXUndefined: Self = StObject.set(x, "setStretchX", js.undefined)
+    inline def setSetStretchXUndefined: Self = StObject.set(x, "setStretchX", js.undefined)
     
-    @scala.inline
-    def setSetStretchY(value: /* stretchY */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStretchY", js.Any.fromFunction1(value))
+    inline def setSetStretchY(value: /* stretchY */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStretchY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStretchYUndefined: Self = StObject.set(x, "setStretchY", js.undefined)
+    inline def setSetStretchYUndefined: Self = StObject.set(x, "setStretchY", js.undefined)
     
-    @scala.inline
-    def setStretchX(value: Boolean): Self = StObject.set(x, "stretchX", value.asInstanceOf[js.Any])
+    inline def setStretchX(value: Boolean): Self = StObject.set(x, "stretchX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchXUndefined: Self = StObject.set(x, "stretchX", js.undefined)
+    inline def setStretchXUndefined: Self = StObject.set(x, "stretchX", js.undefined)
     
-    @scala.inline
-    def setStretchY(value: Boolean): Self = StObject.set(x, "stretchY", value.asInstanceOf[js.Any])
+    inline def setStretchY(value: Boolean): Self = StObject.set(x, "stretchY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStretchYUndefined: Self = StObject.set(x, "stretchY", js.undefined)
+    inline def setStretchYUndefined: Self = StObject.set(x, "stretchY", js.undefined)
   }
 }

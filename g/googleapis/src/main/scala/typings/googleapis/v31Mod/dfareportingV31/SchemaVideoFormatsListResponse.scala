@@ -22,28 +22,21 @@ trait SchemaVideoFormatsListResponse extends StObject {
 }
 object SchemaVideoFormatsListResponse {
   
-  @scala.inline
-  def apply(): SchemaVideoFormatsListResponse = {
+  inline def apply(): SchemaVideoFormatsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoFormatsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaVideoFormatsListResponseMutableBuilder[Self <: SchemaVideoFormatsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoFormatsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setVideoFormats(value: js.Array[SchemaVideoFormat]): Self = StObject.set(x, "videoFormats", value.asInstanceOf[js.Any])
+    inline def setVideoFormats(value: js.Array[SchemaVideoFormat]): Self = StObject.set(x, "videoFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoFormatsUndefined: Self = StObject.set(x, "videoFormats", js.undefined)
+    inline def setVideoFormatsUndefined: Self = StObject.set(x, "videoFormats", js.undefined)
     
-    @scala.inline
-    def setVideoFormatsVarargs(value: SchemaVideoFormat*): Self = StObject.set(x, "videoFormats", js.Array(value :_*))
+    inline def setVideoFormatsVarargs(value: SchemaVideoFormat*): Self = StObject.set(x, "videoFormats", js.Array(value :_*))
   }
 }

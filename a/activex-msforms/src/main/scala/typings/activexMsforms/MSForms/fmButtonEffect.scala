@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmButtonEffect extends StObject
 object fmButtonEffect {
   
-  @scala.inline
-  def fmButtonEffectFlat: `0` = 0.asInstanceOf[`0`]
+  inline def fmButtonEffectFlat: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmButtonEffectSunken: `2` = 2.asInstanceOf[`2`]
+  inline def fmButtonEffectSunken: `2` = 2.asInstanceOf[`2`]
 }

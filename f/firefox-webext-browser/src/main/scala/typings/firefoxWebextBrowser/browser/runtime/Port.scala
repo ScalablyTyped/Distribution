@@ -27,8 +27,7 @@ trait Port extends StObject {
 }
 object Port {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disconnect: () => Unit,
     name: String,
     onDisconnect: WebExtEvent[js.Function1[Port, Unit]],
@@ -39,34 +38,24 @@ object Port {
     __obj.asInstanceOf[Port]
   }
   
-  @scala.inline
-  implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+  extension [Self <: Port](x: Self) {
     
-    @scala.inline
-    def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+    inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDisconnect(value: WebExtEvent[js.Function1[Port, Unit]]): Self = StObject.set(x, "onDisconnect", value.asInstanceOf[js.Any])
+    inline def setOnDisconnect(value: WebExtEvent[js.Function1[Port, Unit]]): Self = StObject.set(x, "onDisconnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMessage(value: WebExtEvent[js.Function1[/* response */ js.Object, Unit]]): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
+    inline def setOnMessage(value: WebExtEvent[js.Function1[/* response */ js.Object, Unit]]): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostMessage(value: js.Object => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+    inline def setPostMessage(value: js.Object => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSender(value: MessageSender): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: MessageSender): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
   }
 }

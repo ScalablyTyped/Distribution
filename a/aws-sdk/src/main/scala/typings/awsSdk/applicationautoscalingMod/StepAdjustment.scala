@@ -23,28 +23,21 @@ trait StepAdjustment extends StObject {
 }
 object StepAdjustment {
   
-  @scala.inline
-  def apply(ScalingAdjustment: ScalingAdjustment): StepAdjustment = {
+  inline def apply(ScalingAdjustment: ScalingAdjustment): StepAdjustment = {
     val __obj = js.Dynamic.literal(ScalingAdjustment = ScalingAdjustment.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepAdjustment]
   }
   
-  @scala.inline
-  implicit class StepAdjustmentMutableBuilder[Self <: StepAdjustment] (val x: Self) extends AnyVal {
+  extension [Self <: StepAdjustment](x: Self) {
     
-    @scala.inline
-    def setMetricIntervalLowerBound(value: MetricScale): Self = StObject.set(x, "MetricIntervalLowerBound", value.asInstanceOf[js.Any])
+    inline def setMetricIntervalLowerBound(value: MetricScale): Self = StObject.set(x, "MetricIntervalLowerBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricIntervalLowerBoundUndefined: Self = StObject.set(x, "MetricIntervalLowerBound", js.undefined)
+    inline def setMetricIntervalLowerBoundUndefined: Self = StObject.set(x, "MetricIntervalLowerBound", js.undefined)
     
-    @scala.inline
-    def setMetricIntervalUpperBound(value: MetricScale): Self = StObject.set(x, "MetricIntervalUpperBound", value.asInstanceOf[js.Any])
+    inline def setMetricIntervalUpperBound(value: MetricScale): Self = StObject.set(x, "MetricIntervalUpperBound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricIntervalUpperBoundUndefined: Self = StObject.set(x, "MetricIntervalUpperBound", js.undefined)
+    inline def setMetricIntervalUpperBoundUndefined: Self = StObject.set(x, "MetricIntervalUpperBound", js.undefined)
     
-    @scala.inline
-    def setScalingAdjustment(value: ScalingAdjustment): Self = StObject.set(x, "ScalingAdjustment", value.asInstanceOf[js.Any])
+    inline def setScalingAdjustment(value: ScalingAdjustment): Self = StObject.set(x, "ScalingAdjustment", value.asInstanceOf[js.Any])
   }
 }

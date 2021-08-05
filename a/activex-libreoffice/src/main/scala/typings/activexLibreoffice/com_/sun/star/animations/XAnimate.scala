@@ -95,8 +95,7 @@ trait XAnimate
 }
 object XAnimate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     Accumulate: Boolean,
     Additive: Double,
@@ -137,49 +136,34 @@ object XAnimate {
     __obj.asInstanceOf[XAnimate]
   }
   
-  @scala.inline
-  implicit class XAnimateMutableBuilder[Self <: XAnimate] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimate](x: Self) {
     
-    @scala.inline
-    def setAccumulate(value: Boolean): Self = StObject.set(x, "Accumulate", value.asInstanceOf[js.Any])
+    inline def setAccumulate(value: Boolean): Self = StObject.set(x, "Accumulate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditive(value: Double): Self = StObject.set(x, "Additive", value.asInstanceOf[js.Any])
+    inline def setAdditive(value: Double): Self = StObject.set(x, "Additive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBy(value: js.Any): Self = StObject.set(x, "By", value.asInstanceOf[js.Any])
+    inline def setBy(value: js.Any): Self = StObject.set(x, "By", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalcMode(value: Double): Self = StObject.set(x, "CalcMode", value.asInstanceOf[js.Any])
+    inline def setCalcMode(value: Double): Self = StObject.set(x, "CalcMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: js.Any): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: js.Any): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTimes(value: SafeArray[Double]): Self = StObject.set(x, "KeyTimes", value.asInstanceOf[js.Any])
+    inline def setKeyTimes(value: SafeArray[Double]): Self = StObject.set(x, "KeyTimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubItem(value: Double): Self = StObject.set(x, "SubItem", value.asInstanceOf[js.Any])
+    inline def setSubItem(value: Double): Self = StObject.set(x, "SubItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeFilter(value: SafeArray[TimeFilterPair]): Self = StObject.set(x, "TimeFilter", value.asInstanceOf[js.Any])
+    inline def setTimeFilter(value: SafeArray[TimeFilterPair]): Self = StObject.set(x, "TimeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: js.Any): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Any): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueType(value: Double): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: Double): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: SafeArray[js.Any]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SafeArray[js.Any]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

@@ -37,32 +37,24 @@ object blockListMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setRenderAppender(value: () => Element): Self = StObject.set(x, "renderAppender", js.Any.fromFunction0(value))
+        inline def setRenderAppender(value: () => Element): Self = StObject.set(x, "renderAppender", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRenderAppenderUndefined: Self = StObject.set(x, "renderAppender", js.undefined)
+        inline def setRenderAppenderUndefined: Self = StObject.set(x, "renderAppender", js.undefined)
         
-        @scala.inline
-        def setRootClientId(value: String): Self = StObject.set(x, "rootClientId", value.asInstanceOf[js.Any])
+        inline def setRootClientId(value: String): Self = StObject.set(x, "rootClientId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRootClientIdUndefined: Self = StObject.set(x, "rootClientId", js.undefined)
+        inline def setRootClientIdUndefined: Self = StObject.set(x, "rootClientId", js.undefined)
       }
     }
   }

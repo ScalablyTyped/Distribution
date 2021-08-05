@@ -51,28 +51,21 @@ trait StatefulSet extends StObject {
 }
 object StatefulSet {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: StatefulSetSpec, status: StatefulSetStatus): StatefulSet = {
+  inline def apply(metadata: ObjectMeta, spec: StatefulSetSpec, status: StatefulSetStatus): StatefulSet = {
     val __obj = js.Dynamic.literal(apiVersion = "apps/v1beta2", kind = "StatefulSet", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulSet]
   }
   
-  @scala.inline
-  implicit class StatefulSetMutableBuilder[Self <: StatefulSet] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulSet](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: appsSlashv1beta2): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: appsSlashv1beta2): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.StatefulSet): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.StatefulSet): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: StatefulSetSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: StatefulSetSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: StatefulSetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatefulSetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

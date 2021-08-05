@@ -13,19 +13,15 @@ trait LocationObject extends StObject {
 }
 object LocationObject {
   
-  @scala.inline
-  def apply(coords: Accuracy, timestamp: Double): LocationObject = {
+  inline def apply(coords: Accuracy, timestamp: Double): LocationObject = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationObject]
   }
   
-  @scala.inline
-  implicit class LocationObjectMutableBuilder[Self <: LocationObject] (val x: Self) extends AnyVal {
+  extension [Self <: LocationObject](x: Self) {
     
-    @scala.inline
-    def setCoords(value: Accuracy): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: Accuracy): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

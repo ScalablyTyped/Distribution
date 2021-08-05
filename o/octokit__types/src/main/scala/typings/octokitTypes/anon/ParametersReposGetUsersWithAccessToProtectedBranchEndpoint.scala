@@ -18,8 +18,7 @@ trait ParametersReposGetUsersWithAccessToProtectedBranchEndpoint extends StObjec
 }
 object ParametersReposGetUsersWithAccessToProtectedBranchEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetUsersWithAccessToProtectedBranchEndpoint,
     request: ReposGetUsersWithAccessToProtectedBranchRequestOptions,
     response: OctokitResponse[ReposGetUsersWithAccessToProtectedBranchResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetUsersWithAccessToProtectedBranchEndpoint {
     __obj.asInstanceOf[ParametersReposGetUsersWithAccessToProtectedBranchEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetUsersWithAccessToProtectedBranchEndpointMutableBuilder[Self <: ParametersReposGetUsersWithAccessToProtectedBranchEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetUsersWithAccessToProtectedBranchEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetUsersWithAccessToProtectedBranchEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetUsersWithAccessToProtectedBranchEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetUsersWithAccessToProtectedBranchRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetUsersWithAccessToProtectedBranchRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetUsersWithAccessToProtectedBranchResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetUsersWithAccessToProtectedBranchResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

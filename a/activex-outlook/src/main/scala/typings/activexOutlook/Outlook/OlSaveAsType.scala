@@ -31,36 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlSaveAsType extends StObject
 object OlSaveAsType {
   
-  @scala.inline
-  def olDoc: `4` = 4.asInstanceOf[`4`]
+  inline def olDoc: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olHTML: `5` = 5.asInstanceOf[`5`]
+  inline def olHTML: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olICal: `8` = 8.asInstanceOf[`8`]
+  inline def olICal: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def olMHTML: `10` = 10.asInstanceOf[`10`]
+  inline def olMHTML: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def olMSG: `3` = 3.asInstanceOf[`3`]
+  inline def olMSG: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olMSGUnicode: `9` = 9.asInstanceOf[`9`]
+  inline def olMSGUnicode: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def olRTF: `1` = 1.asInstanceOf[`1`]
+  inline def olRTF: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olTXT: `0` = 0.asInstanceOf[`0`]
+  inline def olTXT: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olTemplate: `2` = 2.asInstanceOf[`2`]
+  inline def olTemplate: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olVCal: `7` = 7.asInstanceOf[`7`]
+  inline def olVCal: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def olVCard: `6` = 6.asInstanceOf[`6`]
+  inline def olVCard: `6` = 6.asInstanceOf[`6`]
 }

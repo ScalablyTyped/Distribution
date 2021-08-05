@@ -24,19 +24,15 @@ object objectLiteralKeyQuotesRuleMod {
     @JSImport("tslint/lib/rules/objectLiteralKeyQuotesRule", "Rule.INCONSISTENT_PROPERTY")
     @js.native
     def INCONSISTENT_PROPERTY: String = js.native
-    @scala.inline
-    def INCONSISTENT_PROPERTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INCONSISTENT_PROPERTY")(x.asInstanceOf[js.Any])
+    inline def INCONSISTENT_PROPERTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INCONSISTENT_PROPERTY")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def UNNEEDED_QUOTES(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNNEEDED_QUOTES")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def UNNEEDED_QUOTES(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNNEEDED_QUOTES")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def UNQUOTED_PROPERTY(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNQUOTED_PROPERTY")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def UNQUOTED_PROPERTY(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNQUOTED_PROPERTY")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/objectLiteralKeyQuotesRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

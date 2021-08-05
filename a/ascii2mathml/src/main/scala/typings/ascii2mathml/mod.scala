@@ -35,62 +35,44 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAnnotate(value: Boolean): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
+      inline def setAnnotate(value: Boolean): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotateUndefined: Self = StObject.set(x, "annotate", js.undefined)
+      inline def setAnnotateUndefined: Self = StObject.set(x, "annotate", js.undefined)
       
-      @scala.inline
-      def setBare(value: Boolean): Self = StObject.set(x, "bare", value.asInstanceOf[js.Any])
+      inline def setBare(value: Boolean): Self = StObject.set(x, "bare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBareUndefined: Self = StObject.set(x, "bare", js.undefined)
+      inline def setBareUndefined: Self = StObject.set(x, "bare", js.undefined)
       
-      @scala.inline
-      def setColSep(value: String): Self = StObject.set(x, "colSep", value.asInstanceOf[js.Any])
+      inline def setColSep(value: String): Self = StObject.set(x, "colSep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSepUndefined: Self = StObject.set(x, "colSep", js.undefined)
+      inline def setColSepUndefined: Self = StObject.set(x, "colSep", js.undefined)
       
-      @scala.inline
-      def setDecimalMark(value: String): Self = StObject.set(x, "decimalMark", value.asInstanceOf[js.Any])
+      inline def setDecimalMark(value: String): Self = StObject.set(x, "decimalMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalMarkUndefined: Self = StObject.set(x, "decimalMark", js.undefined)
+      inline def setDecimalMarkUndefined: Self = StObject.set(x, "decimalMark", js.undefined)
       
-      @scala.inline
-      def setDir(value: ltr | rtl): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: ltr | rtl): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setDisplay(value: `inline` | block): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: `inline` | block): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setRowSep(value: String): Self = StObject.set(x, "rowSep", value.asInstanceOf[js.Any])
+      inline def setRowSep(value: String): Self = StObject.set(x, "rowSep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSepUndefined: Self = StObject.set(x, "rowSep", js.undefined)
+      inline def setRowSepUndefined: Self = StObject.set(x, "rowSep", js.undefined)
       
-      @scala.inline
-      def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     }
   }
   

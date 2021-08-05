@@ -12,16 +12,13 @@ trait TooltipContent extends StObject {
 }
 object TooltipContent {
   
-  @scala.inline
-  def apply(content: encoding | data): TooltipContent = {
+  inline def apply(content: encoding | data): TooltipContent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipContent]
   }
   
-  @scala.inline
-  implicit class TooltipContentMutableBuilder[Self <: TooltipContent] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipContent](x: Self) {
     
-    @scala.inline
-    def setContent(value: encoding | data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: encoding | data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

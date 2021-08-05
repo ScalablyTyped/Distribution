@@ -13,19 +13,15 @@ trait AntennaDemodDecodeDetails extends StObject {
 }
 object AntennaDemodDecodeDetails {
   
-  @scala.inline
-  def apply(): AntennaDemodDecodeDetails = {
+  inline def apply(): AntennaDemodDecodeDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AntennaDemodDecodeDetails]
   }
   
-  @scala.inline
-  implicit class AntennaDemodDecodeDetailsMutableBuilder[Self <: AntennaDemodDecodeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AntennaDemodDecodeDetails](x: Self) {
     
-    @scala.inline
-    def setOutputNode(value: String): Self = StObject.set(x, "outputNode", value.asInstanceOf[js.Any])
+    inline def setOutputNode(value: String): Self = StObject.set(x, "outputNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputNodeUndefined: Self = StObject.set(x, "outputNode", js.undefined)
+    inline def setOutputNodeUndefined: Self = StObject.set(x, "outputNode", js.undefined)
   }
 }

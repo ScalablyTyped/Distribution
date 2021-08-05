@@ -40,7 +40,6 @@ object spinButtonMod {
     @JSImport("office-ui-fabric-react/lib/components/SpinButton", "SpinButton.defaultProps")
     @js.native
     def defaultProps: DefaultProps = js.native
-    @scala.inline
-    def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

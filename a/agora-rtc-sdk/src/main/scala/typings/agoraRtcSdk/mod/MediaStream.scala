@@ -31,19 +31,15 @@ trait MediaStream extends StObject {
 }
 object MediaStream {
   
-  @scala.inline
-  def apply(active: Boolean, id: String): MediaStream = {
+  inline def apply(active: Boolean, id: String): MediaStream = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStream]
   }
   
-  @scala.inline
-  implicit class MediaStreamMutableBuilder[Self <: MediaStream] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStream](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

@@ -28,7 +28,7 @@ object eventMod {
       _extras: Record[String, js.Any]
     ) = this()
     
-    val _extras: js.Any = js.native
+    /* private */ val _extras: js.Any = js.native
     
     var eventId: String = js.native
     
@@ -100,8 +100,7 @@ object eventMod {
       * Set data about this event from a serialized data object.
       * @param data The serialized data
       */
-    @scala.inline
-    def deserialize(data: StoredEventDoc): StoredEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[StoredEvent]
+    inline def deserialize(data: StoredEventDoc): StoredEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[StoredEvent]
   }
   
   trait StoredEventDoc extends StObject {
@@ -116,26 +115,20 @@ object eventMod {
   }
   object StoredEventDoc {
     
-    @scala.inline
-    def apply(extras: Record[String, js.Any], id: String, matrix: EventId_, remote: EventId_): StoredEventDoc = {
+    inline def apply(extras: Record[String, js.Any], id: String, matrix: EventId_, remote: EventId_): StoredEventDoc = {
       val __obj = js.Dynamic.literal(extras = extras.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoredEventDoc]
     }
     
-    @scala.inline
-    implicit class StoredEventDocMutableBuilder[Self <: StoredEventDoc] (val x: Self) extends AnyVal {
+    extension [Self <: StoredEventDoc](x: Self) {
       
-      @scala.inline
-      def setExtras(value: Record[String, js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      inline def setExtras(value: Record[String, js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrix(value: EventId_): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      inline def setMatrix(value: EventId_): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: EventId_): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: EventId_): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     }
   }
 }

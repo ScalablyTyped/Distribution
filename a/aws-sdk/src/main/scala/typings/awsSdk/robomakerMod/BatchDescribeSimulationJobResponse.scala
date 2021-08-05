@@ -18,31 +18,23 @@ trait BatchDescribeSimulationJobResponse extends StObject {
 }
 object BatchDescribeSimulationJobResponse {
   
-  @scala.inline
-  def apply(): BatchDescribeSimulationJobResponse = {
+  inline def apply(): BatchDescribeSimulationJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDescribeSimulationJobResponse]
   }
   
-  @scala.inline
-  implicit class BatchDescribeSimulationJobResponseMutableBuilder[Self <: BatchDescribeSimulationJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDescribeSimulationJobResponse](x: Self) {
     
-    @scala.inline
-    def setJobs(value: SimulationJobs): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: SimulationJobs): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
+    inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    @scala.inline
-    def setJobsVarargs(value: SimulationJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: SimulationJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedJobs(value: Arns): Self = StObject.set(x, "unprocessedJobs", value.asInstanceOf[js.Any])
+    inline def setUnprocessedJobs(value: Arns): Self = StObject.set(x, "unprocessedJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedJobsUndefined: Self = StObject.set(x, "unprocessedJobs", js.undefined)
+    inline def setUnprocessedJobsUndefined: Self = StObject.set(x, "unprocessedJobs", js.undefined)
     
-    @scala.inline
-    def setUnprocessedJobsVarargs(value: Arn*): Self = StObject.set(x, "unprocessedJobs", js.Array(value :_*))
+    inline def setUnprocessedJobsVarargs(value: Arn*): Self = StObject.set(x, "unprocessedJobs", js.Array(value :_*))
   }
 }

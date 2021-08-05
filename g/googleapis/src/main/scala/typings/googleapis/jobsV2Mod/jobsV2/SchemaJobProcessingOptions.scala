@@ -26,25 +26,19 @@ trait SchemaJobProcessingOptions extends StObject {
 }
 object SchemaJobProcessingOptions {
   
-  @scala.inline
-  def apply(): SchemaJobProcessingOptions = {
+  inline def apply(): SchemaJobProcessingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobProcessingOptions]
   }
   
-  @scala.inline
-  implicit class SchemaJobProcessingOptionsMutableBuilder[Self <: SchemaJobProcessingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobProcessingOptions](x: Self) {
     
-    @scala.inline
-    def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
+    inline def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
+    inline def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
     
-    @scala.inline
-    def setHtmlSanitization(value: String): Self = StObject.set(x, "htmlSanitization", value.asInstanceOf[js.Any])
+    inline def setHtmlSanitization(value: String): Self = StObject.set(x, "htmlSanitization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlSanitizationUndefined: Self = StObject.set(x, "htmlSanitization", js.undefined)
+    inline def setHtmlSanitizationUndefined: Self = StObject.set(x, "htmlSanitization", js.undefined)
   }
 }

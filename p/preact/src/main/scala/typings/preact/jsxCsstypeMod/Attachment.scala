@@ -16,12 +16,9 @@ trait Attachment
      with _WebkitMaskAttachmentProperty
 object Attachment {
   
-  @scala.inline
-  def fixed: typings.preact.preactStrings.fixed = "fixed".asInstanceOf[typings.preact.preactStrings.fixed]
+  inline def fixed: typings.preact.preactStrings.fixed = "fixed".asInstanceOf[typings.preact.preactStrings.fixed]
   
-  @scala.inline
-  def local: typings.preact.preactStrings.local = "local".asInstanceOf[typings.preact.preactStrings.local]
+  inline def local: typings.preact.preactStrings.local = "local".asInstanceOf[typings.preact.preactStrings.local]
   
-  @scala.inline
-  def scroll: typings.preact.preactStrings.scroll = "scroll".asInstanceOf[typings.preact.preactStrings.scroll]
+  inline def scroll: typings.preact.preactStrings.scroll = "scroll".asInstanceOf[typings.preact.preactStrings.scroll]
 }

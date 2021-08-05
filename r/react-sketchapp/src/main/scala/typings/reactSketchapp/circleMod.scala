@@ -28,23 +28,18 @@ object circleMod {
   }
   object CircleProps {
     
-    @scala.inline
-    def apply(cx: NumberProp, cy: NumberProp, r: NumberProp): CircleProps = {
+    inline def apply(cx: NumberProp, cy: NumberProp, r: NumberProp): CircleProps = {
       val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[CircleProps]
     }
     
-    @scala.inline
-    implicit class CirclePropsMutableBuilder[Self <: CircleProps] (val x: Self) extends AnyVal {
+    extension [Self <: CircleProps](x: Self) {
       
-      @scala.inline
-      def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+      inline def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCy(value: NumberProp): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+      inline def setCy(value: NumberProp): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: NumberProp): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: NumberProp): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
 }

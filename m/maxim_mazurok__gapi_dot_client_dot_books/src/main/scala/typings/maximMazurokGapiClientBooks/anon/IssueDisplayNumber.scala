@@ -12,25 +12,19 @@ trait IssueDisplayNumber extends StObject {
 }
 object IssueDisplayNumber {
   
-  @scala.inline
-  def apply(): IssueDisplayNumber = {
+  inline def apply(): IssueDisplayNumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IssueDisplayNumber]
   }
   
-  @scala.inline
-  implicit class IssueDisplayNumberMutableBuilder[Self <: IssueDisplayNumber] (val x: Self) extends AnyVal {
+  extension [Self <: IssueDisplayNumber](x: Self) {
     
-    @scala.inline
-    def setIssueDisplayNumber(value: String): Self = StObject.set(x, "issueDisplayNumber", value.asInstanceOf[js.Any])
+    inline def setIssueDisplayNumber(value: String): Self = StObject.set(x, "issueDisplayNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueDisplayNumberUndefined: Self = StObject.set(x, "issueDisplayNumber", js.undefined)
+    inline def setIssueDisplayNumberUndefined: Self = StObject.set(x, "issueDisplayNumber", js.undefined)
     
-    @scala.inline
-    def setIssueOrderNumber(value: Double): Self = StObject.set(x, "issueOrderNumber", value.asInstanceOf[js.Any])
+    inline def setIssueOrderNumber(value: Double): Self = StObject.set(x, "issueOrderNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueOrderNumberUndefined: Self = StObject.set(x, "issueOrderNumber", js.undefined)
+    inline def setIssueOrderNumberUndefined: Self = StObject.set(x, "issueOrderNumber", js.undefined)
   }
 }

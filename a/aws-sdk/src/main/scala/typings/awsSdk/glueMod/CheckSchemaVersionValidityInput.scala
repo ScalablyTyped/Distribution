@@ -18,19 +18,15 @@ trait CheckSchemaVersionValidityInput extends StObject {
 }
 object CheckSchemaVersionValidityInput {
   
-  @scala.inline
-  def apply(DataFormat: DataFormat, SchemaDefinition: SchemaDefinitionString): CheckSchemaVersionValidityInput = {
+  inline def apply(DataFormat: DataFormat, SchemaDefinition: SchemaDefinitionString): CheckSchemaVersionValidityInput = {
     val __obj = js.Dynamic.literal(DataFormat = DataFormat.asInstanceOf[js.Any], SchemaDefinition = SchemaDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckSchemaVersionValidityInput]
   }
   
-  @scala.inline
-  implicit class CheckSchemaVersionValidityInputMutableBuilder[Self <: CheckSchemaVersionValidityInput] (val x: Self) extends AnyVal {
+  extension [Self <: CheckSchemaVersionValidityInput](x: Self) {
     
-    @scala.inline
-    def setDataFormat(value: DataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
+    inline def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
   }
 }

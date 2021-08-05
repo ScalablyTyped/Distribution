@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(string: String, separator: String): js.Tuple2[String, js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, js.UndefOr[String]]]
+  inline def apply(string: String, separator: String): js.Tuple2[String, js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, js.UndefOr[String]]]
   
   @JSImport("split-on-first", JSImport.Namespace)
   @js.native

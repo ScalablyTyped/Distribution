@@ -38,31 +38,23 @@ trait SchemaNetwork extends StObject {
 }
 object SchemaNetwork {
   
-  @scala.inline
-  def apply(): SchemaNetwork = {
+  inline def apply(): SchemaNetwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetwork]
   }
   
-  @scala.inline
-  implicit class SchemaNetworkMutableBuilder[Self <: SchemaNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNetwork](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
-    @scala.inline
-    def setUsePrivateAddress(value: Boolean): Self = StObject.set(x, "usePrivateAddress", value.asInstanceOf[js.Any])
+    inline def setUsePrivateAddress(value: Boolean): Self = StObject.set(x, "usePrivateAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePrivateAddressUndefined: Self = StObject.set(x, "usePrivateAddress", js.undefined)
+    inline def setUsePrivateAddressUndefined: Self = StObject.set(x, "usePrivateAddress", js.undefined)
   }
 }

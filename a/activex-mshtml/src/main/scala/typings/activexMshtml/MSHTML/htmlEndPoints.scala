@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlEndPoints extends StObject
 object htmlEndPoints {
   
-  @scala.inline
-  def htmlEndPointsEndToEnd: `4` = 4.asInstanceOf[`4`]
+  inline def htmlEndPointsEndToEnd: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def htmlEndPointsEndToStart: `3` = 3.asInstanceOf[`3`]
+  inline def htmlEndPointsEndToStart: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlEndPointsStartToEnd: `2` = 2.asInstanceOf[`2`]
+  inline def htmlEndPointsStartToEnd: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlEndPointsStartToStart: `1` = 1.asInstanceOf[`1`]
+  inline def htmlEndPointsStartToStart: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlEndPoints_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlEndPoints_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

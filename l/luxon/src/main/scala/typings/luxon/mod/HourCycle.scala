@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HourCycle extends StObject
 object HourCycle {
   
-  @scala.inline
-  def h11: typings.luxon.luxonStrings.h11 = "h11".asInstanceOf[typings.luxon.luxonStrings.h11]
+  inline def h11: typings.luxon.luxonStrings.h11 = "h11".asInstanceOf[typings.luxon.luxonStrings.h11]
   
-  @scala.inline
-  def h12: typings.luxon.luxonStrings.h12 = "h12".asInstanceOf[typings.luxon.luxonStrings.h12]
+  inline def h12: typings.luxon.luxonStrings.h12 = "h12".asInstanceOf[typings.luxon.luxonStrings.h12]
   
-  @scala.inline
-  def h23: typings.luxon.luxonStrings.h23 = "h23".asInstanceOf[typings.luxon.luxonStrings.h23]
+  inline def h23: typings.luxon.luxonStrings.h23 = "h23".asInstanceOf[typings.luxon.luxonStrings.h23]
   
-  @scala.inline
-  def h24: typings.luxon.luxonStrings.h24 = "h24".asInstanceOf[typings.luxon.luxonStrings.h24]
+  inline def h24: typings.luxon.luxonStrings.h24 = "h24".asInstanceOf[typings.luxon.luxonStrings.h24]
 }

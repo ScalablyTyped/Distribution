@@ -10,19 +10,15 @@ trait ComponentPath extends StObject {
 }
 object ComponentPath {
   
-  @scala.inline
-  def apply(): ComponentPath = {
+  inline def apply(): ComponentPath = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentPath]
   }
   
-  @scala.inline
-  implicit class ComponentPathMutableBuilder[Self <: ComponentPath] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentPath](x: Self) {
     
-    @scala.inline
-    def setComponentPath(value: String): Self = StObject.set(x, "componentPath", value.asInstanceOf[js.Any])
+    inline def setComponentPath(value: String): Self = StObject.set(x, "componentPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentPathUndefined: Self = StObject.set(x, "componentPath", js.undefined)
+    inline def setComponentPathUndefined: Self = StObject.set(x, "componentPath", js.undefined)
   }
 }

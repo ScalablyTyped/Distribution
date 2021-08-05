@@ -23,28 +23,21 @@ trait ExportServerEngineAttributeRequest extends StObject {
 }
 object ExportServerEngineAttributeRequest {
   
-  @scala.inline
-  def apply(ExportAttributeName: String, ServerName: ServerName): ExportServerEngineAttributeRequest = {
+  inline def apply(ExportAttributeName: String, ServerName: ServerName): ExportServerEngineAttributeRequest = {
     val __obj = js.Dynamic.literal(ExportAttributeName = ExportAttributeName.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportServerEngineAttributeRequest]
   }
   
-  @scala.inline
-  implicit class ExportServerEngineAttributeRequestMutableBuilder[Self <: ExportServerEngineAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportServerEngineAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setExportAttributeName(value: String): Self = StObject.set(x, "ExportAttributeName", value.asInstanceOf[js.Any])
+    inline def setExportAttributeName(value: String): Self = StObject.set(x, "ExportAttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputAttributes(value: EngineAttributes): Self = StObject.set(x, "InputAttributes", value.asInstanceOf[js.Any])
+    inline def setInputAttributes(value: EngineAttributes): Self = StObject.set(x, "InputAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputAttributesUndefined: Self = StObject.set(x, "InputAttributes", js.undefined)
+    inline def setInputAttributesUndefined: Self = StObject.set(x, "InputAttributes", js.undefined)
     
-    @scala.inline
-    def setInputAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "InputAttributes", js.Array(value :_*))
+    inline def setInputAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "InputAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }
 }

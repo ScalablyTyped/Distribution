@@ -12,16 +12,13 @@ trait VisualElementsRequestDeferral extends StObject {
 }
 object VisualElementsRequestDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): VisualElementsRequestDeferral = {
+  inline def apply(complete: () => Unit): VisualElementsRequestDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[VisualElementsRequestDeferral]
   }
   
-  @scala.inline
-  implicit class VisualElementsRequestDeferralMutableBuilder[Self <: VisualElementsRequestDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: VisualElementsRequestDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

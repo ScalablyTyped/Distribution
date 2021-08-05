@@ -18,28 +18,21 @@ trait ListPartnerEventSourceAccountsResponse extends StObject {
 }
 object ListPartnerEventSourceAccountsResponse {
   
-  @scala.inline
-  def apply(): ListPartnerEventSourceAccountsResponse = {
+  inline def apply(): ListPartnerEventSourceAccountsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPartnerEventSourceAccountsResponse]
   }
   
-  @scala.inline
-  implicit class ListPartnerEventSourceAccountsResponseMutableBuilder[Self <: ListPartnerEventSourceAccountsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPartnerEventSourceAccountsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPartnerEventSourceAccounts(value: PartnerEventSourceAccountList): Self = StObject.set(x, "PartnerEventSourceAccounts", value.asInstanceOf[js.Any])
+    inline def setPartnerEventSourceAccounts(value: PartnerEventSourceAccountList): Self = StObject.set(x, "PartnerEventSourceAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerEventSourceAccountsUndefined: Self = StObject.set(x, "PartnerEventSourceAccounts", js.undefined)
+    inline def setPartnerEventSourceAccountsUndefined: Self = StObject.set(x, "PartnerEventSourceAccounts", js.undefined)
     
-    @scala.inline
-    def setPartnerEventSourceAccountsVarargs(value: PartnerEventSourceAccount*): Self = StObject.set(x, "PartnerEventSourceAccounts", js.Array(value :_*))
+    inline def setPartnerEventSourceAccountsVarargs(value: PartnerEventSourceAccount*): Self = StObject.set(x, "PartnerEventSourceAccounts", js.Array(value :_*))
   }
 }

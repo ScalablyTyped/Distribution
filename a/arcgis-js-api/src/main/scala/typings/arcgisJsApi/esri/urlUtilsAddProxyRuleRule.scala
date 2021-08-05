@@ -26,8 +26,7 @@ trait urlUtilsAddProxyRuleRule
 }
 object urlUtilsAddProxyRuleRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object urlUtilsAddProxyRuleRule {
     __obj.asInstanceOf[urlUtilsAddProxyRuleRule]
   }
   
-  @scala.inline
-  implicit class urlUtilsAddProxyRuleRuleMutableBuilder[Self <: urlUtilsAddProxyRuleRule] (val x: Self) extends AnyVal {
+  extension [Self <: urlUtilsAddProxyRuleRule](x: Self) {
     
-    @scala.inline
-    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlPrefix(value: String): Self = StObject.set(x, "urlPrefix", value.asInstanceOf[js.Any])
+    inline def setUrlPrefix(value: String): Self = StObject.set(x, "urlPrefix", value.asInstanceOf[js.Any])
   }
 }

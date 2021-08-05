@@ -20,51 +20,42 @@ object mod {
     /**
       * Configures the library for login. MUST be called before attempting login
       */
-    @scala.inline
-    def configure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Unit]
-    @scala.inline
-    def configure(params: ConfigureParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def configure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Unit]
+    inline def configure(params: ConfigureParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Check if the device has Google Play Services installed. Always resolves
       * true on iOS
       */
-    @scala.inline
-    def hasPlayServices(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPlayServices")().asInstanceOf[js.Promise[Boolean]]
-    @scala.inline
-    def hasPlayServices(params: HasPlayServicesParams): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPlayServices")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def hasPlayServices(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPlayServices")().asInstanceOf[js.Promise[Boolean]]
+    inline def hasPlayServices(params: HasPlayServicesParams): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasPlayServices")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Returns whether the user is currently signed in
       */
-    @scala.inline
-    def isSignedIn(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignedIn")().asInstanceOf[js.Promise[Boolean]]
+    inline def isSignedIn(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignedIn")().asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Removes your application from the user's authorized applications
       */
-    @scala.inline
-    def revokeAccess(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeAccess")().asInstanceOf[js.Promise[Unit]]
+    inline def revokeAccess(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeAccess")().asInstanceOf[js.Promise[Unit]]
     
     /**
       * Prompts the user to sign in with their Google account. Resolves with the
       * user if successful.
       */
-    @scala.inline
-    def signIn(): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("signIn")().asInstanceOf[js.Promise[User]]
+    inline def signIn(): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("signIn")().asInstanceOf[js.Promise[User]]
     
     /**
       * Returns a Promise that resolves with the current signed in user or rejects
       * if not signed in.
       */
-    @scala.inline
-    def signInSilently(): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("signInSilently")().asInstanceOf[js.Promise[User]]
+    inline def signInSilently(): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("signInSilently")().asInstanceOf[js.Promise[User]]
     
     /**
       * Signs the user out.
       */
-    @scala.inline
-    def signOut(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signOut")().asInstanceOf[js.Promise[Unit]]
+    inline def signOut(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("signOut")().asInstanceOf[js.Promise[Unit]]
   }
   
   @JSImport("react-native-google-signin", "GoogleSigninButton")
@@ -135,26 +126,22 @@ object mod {
     @JSImport("react-native-google-signin", "statusCodes.IN_PROGRESS")
     @js.native
     def IN_PROGRESS: String = js.native
-    @scala.inline
-    def IN_PROGRESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN_PROGRESS")(x.asInstanceOf[js.Any])
+    inline def IN_PROGRESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN_PROGRESS")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-google-signin", "statusCodes.PLAY_SERVICES_NOT_AVAILABLE")
     @js.native
     def PLAY_SERVICES_NOT_AVAILABLE: String = js.native
-    @scala.inline
-    def PLAY_SERVICES_NOT_AVAILABLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_SERVICES_NOT_AVAILABLE")(x.asInstanceOf[js.Any])
+    inline def PLAY_SERVICES_NOT_AVAILABLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAY_SERVICES_NOT_AVAILABLE")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-google-signin", "statusCodes.SIGN_IN_CANCELLED")
     @js.native
     def SIGN_IN_CANCELLED: String = js.native
-    @scala.inline
-    def SIGN_IN_CANCELLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGN_IN_CANCELLED")(x.asInstanceOf[js.Any])
+    inline def SIGN_IN_CANCELLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGN_IN_CANCELLED")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-google-signin", "statusCodes.SIGN_IN_REQUIRED")
     @js.native
     def SIGN_IN_REQUIRED: String = js.native
-    @scala.inline
-    def SIGN_IN_REQUIRED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGN_IN_REQUIRED")(x.asInstanceOf[js.Any])
+    inline def SIGN_IN_REQUIRED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGN_IN_REQUIRED")(x.asInstanceOf[js.Any])
   }
   
   trait ConfigureParams extends StObject {
@@ -197,59 +184,42 @@ object mod {
   }
   object ConfigureParams {
     
-    @scala.inline
-    def apply(): ConfigureParams = {
+    inline def apply(): ConfigureParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigureParams]
     }
     
-    @scala.inline
-    implicit class ConfigureParamsMutableBuilder[Self <: ConfigureParams] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigureParams](x: Self) {
       
-      @scala.inline
-      def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+      inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
+      inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
       
-      @scala.inline
-      def setForceConsentPrompt(value: Boolean): Self = StObject.set(x, "forceConsentPrompt", value.asInstanceOf[js.Any])
+      inline def setForceConsentPrompt(value: Boolean): Self = StObject.set(x, "forceConsentPrompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceConsentPromptUndefined: Self = StObject.set(x, "forceConsentPrompt", js.undefined)
+      inline def setForceConsentPromptUndefined: Self = StObject.set(x, "forceConsentPrompt", js.undefined)
       
-      @scala.inline
-      def setHostedDomain(value: String): Self = StObject.set(x, "hostedDomain", value.asInstanceOf[js.Any])
+      inline def setHostedDomain(value: String): Self = StObject.set(x, "hostedDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostedDomainUndefined: Self = StObject.set(x, "hostedDomain", js.undefined)
+      inline def setHostedDomainUndefined: Self = StObject.set(x, "hostedDomain", js.undefined)
       
-      @scala.inline
-      def setIosClientId(value: String): Self = StObject.set(x, "iosClientId", value.asInstanceOf[js.Any])
+      inline def setIosClientId(value: String): Self = StObject.set(x, "iosClientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIosClientIdUndefined: Self = StObject.set(x, "iosClientId", js.undefined)
+      inline def setIosClientIdUndefined: Self = StObject.set(x, "iosClientId", js.undefined)
       
-      @scala.inline
-      def setOfflineAccess(value: Boolean): Self = StObject.set(x, "offlineAccess", value.asInstanceOf[js.Any])
+      inline def setOfflineAccess(value: Boolean): Self = StObject.set(x, "offlineAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOfflineAccessUndefined: Self = StObject.set(x, "offlineAccess", js.undefined)
+      inline def setOfflineAccessUndefined: Self = StObject.set(x, "offlineAccess", js.undefined)
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setWebClientId(value: String): Self = StObject.set(x, "webClientId", value.asInstanceOf[js.Any])
+      inline def setWebClientId(value: String): Self = StObject.set(x, "webClientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebClientIdUndefined: Self = StObject.set(x, "webClientId", js.undefined)
+      inline def setWebClientIdUndefined: Self = StObject.set(x, "webClientId", js.undefined)
     }
   }
   
@@ -267,38 +237,28 @@ object mod {
   }
   object GoogleSigninButtonProps {
     
-    @scala.inline
-    def apply(): GoogleSigninButtonProps = {
+    inline def apply(): GoogleSigninButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GoogleSigninButtonProps]
     }
     
-    @scala.inline
-    implicit class GoogleSigninButtonPropsMutableBuilder[Self <: GoogleSigninButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleSigninButtonProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -313,20 +273,16 @@ object mod {
   }
   object HasPlayServicesParams {
     
-    @scala.inline
-    def apply(): HasPlayServicesParams = {
+    inline def apply(): HasPlayServicesParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HasPlayServicesParams]
     }
     
-    @scala.inline
-    implicit class HasPlayServicesParamsMutableBuilder[Self <: HasPlayServicesParams] (val x: Self) extends AnyVal {
+    extension [Self <: HasPlayServicesParams](x: Self) {
       
-      @scala.inline
-      def setShowPlayServicesUpdateDialog(value: Boolean): Self = StObject.set(x, "showPlayServicesUpdateDialog", value.asInstanceOf[js.Any])
+      inline def setShowPlayServicesUpdateDialog(value: Boolean): Self = StObject.set(x, "showPlayServicesUpdateDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPlayServicesUpdateDialogUndefined: Self = StObject.set(x, "showPlayServicesUpdateDialog", js.undefined)
+      inline def setShowPlayServicesUpdateDialogUndefined: Self = StObject.set(x, "showPlayServicesUpdateDialog", js.undefined)
     }
   }
   
@@ -353,50 +309,36 @@ object mod {
   }
   object User {
     
-    @scala.inline
-    def apply(user: Email): User = {
+    inline def apply(user: Email): User = {
       val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any], accessToken = null, accessTokenExpirationDate = null, idToken = null, serverAuthCode = null)
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenExpirationDate(value: Double): Self = StObject.set(x, "accessTokenExpirationDate", value.asInstanceOf[js.Any])
+      inline def setAccessTokenExpirationDate(value: Double): Self = StObject.set(x, "accessTokenExpirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenExpirationDateNull: Self = StObject.set(x, "accessTokenExpirationDate", null)
+      inline def setAccessTokenExpirationDateNull: Self = StObject.set(x, "accessTokenExpirationDate", null)
       
-      @scala.inline
-      def setAccessTokenNull: Self = StObject.set(x, "accessToken", null)
+      inline def setAccessTokenNull: Self = StObject.set(x, "accessToken", null)
       
-      @scala.inline
-      def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+      inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdTokenNull: Self = StObject.set(x, "idToken", null)
+      inline def setIdTokenNull: Self = StObject.set(x, "idToken", null)
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setServerAuthCode(value: String): Self = StObject.set(x, "serverAuthCode", value.asInstanceOf[js.Any])
+      inline def setServerAuthCode(value: String): Self = StObject.set(x, "serverAuthCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerAuthCodeNull: Self = StObject.set(x, "serverAuthCode", null)
+      inline def setServerAuthCodeNull: Self = StObject.set(x, "serverAuthCode", null)
       
-      @scala.inline
-      def setUser(value: Email): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Email): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
 }

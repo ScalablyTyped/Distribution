@@ -34,22 +34,17 @@ trait IBodyRenderOptionsSprite extends StObject {
 }
 object IBodyRenderOptionsSprite {
   
-  @scala.inline
-  def apply(texture: String, xScale: Double, yScale: Double): IBodyRenderOptionsSprite = {
+  inline def apply(texture: String, xScale: Double, yScale: Double): IBodyRenderOptionsSprite = {
     val __obj = js.Dynamic.literal(texture = texture.asInstanceOf[js.Any], xScale = xScale.asInstanceOf[js.Any], yScale = yScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyRenderOptionsSprite]
   }
   
-  @scala.inline
-  implicit class IBodyRenderOptionsSpriteMutableBuilder[Self <: IBodyRenderOptionsSprite] (val x: Self) extends AnyVal {
+  extension [Self <: IBodyRenderOptionsSprite](x: Self) {
     
-    @scala.inline
-    def setTexture(value: String): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+    inline def setTexture(value: String): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXScale(value: Double): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
+    inline def setXScale(value: Double): Self = StObject.set(x, "xScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYScale(value: Double): Self = StObject.set(x, "yScale", value.asInstanceOf[js.Any])
+    inline def setYScale(value: Double): Self = StObject.set(x, "yScale", value.asInstanceOf[js.Any])
   }
 }

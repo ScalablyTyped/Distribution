@@ -59,8 +59,7 @@ trait XSheetCellRanges
 }
 object XSheetCellRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Cells: XEnumerationAccess,
     Count: Double,
     ElementType: `type`,
@@ -81,25 +80,18 @@ object XSheetCellRanges {
     __obj.asInstanceOf[XSheetCellRanges]
   }
   
-  @scala.inline
-  implicit class XSheetCellRangesMutableBuilder[Self <: XSheetCellRanges] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetCellRanges](x: Self) {
     
-    @scala.inline
-    def setCells(value: XEnumerationAccess): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: XEnumerationAccess): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCells(value: () => XEnumerationAccess): Self = StObject.set(x, "getCells", js.Any.fromFunction0(value))
+    inline def setGetCells(value: () => XEnumerationAccess): Self = StObject.set(x, "getCells", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRangeAddresses(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getRangeAddresses", js.Any.fromFunction0(value))
+    inline def setGetRangeAddresses(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getRangeAddresses", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRangeAddressesAsString(value: () => String): Self = StObject.set(x, "getRangeAddressesAsString", js.Any.fromFunction0(value))
+    inline def setGetRangeAddressesAsString(value: () => String): Self = StObject.set(x, "getRangeAddressesAsString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRangeAddresses(value: SafeArray[CellRangeAddress]): Self = StObject.set(x, "RangeAddresses", value.asInstanceOf[js.Any])
+    inline def setRangeAddresses(value: SafeArray[CellRangeAddress]): Self = StObject.set(x, "RangeAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeAddressesAsString(value: String): Self = StObject.set(x, "RangeAddressesAsString", value.asInstanceOf[js.Any])
+    inline def setRangeAddressesAsString(value: String): Self = StObject.set(x, "RangeAddressesAsString", value.asInstanceOf[js.Any])
   }
 }

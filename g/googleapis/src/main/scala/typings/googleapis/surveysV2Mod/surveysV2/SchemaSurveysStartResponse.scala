@@ -14,19 +14,15 @@ trait SchemaSurveysStartResponse extends StObject {
 }
 object SchemaSurveysStartResponse {
   
-  @scala.inline
-  def apply(): SchemaSurveysStartResponse = {
+  inline def apply(): SchemaSurveysStartResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSurveysStartResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSurveysStartResponseMutableBuilder[Self <: SchemaSurveysStartResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSurveysStartResponse](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

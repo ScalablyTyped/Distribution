@@ -23,28 +23,21 @@ trait FailedScheduledUpdateGroupActionRequest extends StObject {
 }
 object FailedScheduledUpdateGroupActionRequest {
   
-  @scala.inline
-  def apply(ScheduledActionName: XmlStringMaxLen255): FailedScheduledUpdateGroupActionRequest = {
+  inline def apply(ScheduledActionName: XmlStringMaxLen255): FailedScheduledUpdateGroupActionRequest = {
     val __obj = js.Dynamic.literal(ScheduledActionName = ScheduledActionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedScheduledUpdateGroupActionRequest]
   }
   
-  @scala.inline
-  implicit class FailedScheduledUpdateGroupActionRequestMutableBuilder[Self <: FailedScheduledUpdateGroupActionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FailedScheduledUpdateGroupActionRequest](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: XmlStringMaxLen64): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: XmlStringMaxLen64): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: XmlString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: XmlString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setScheduledActionName(value: XmlStringMaxLen255): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
+    inline def setScheduledActionName(value: XmlStringMaxLen255): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
   }
 }

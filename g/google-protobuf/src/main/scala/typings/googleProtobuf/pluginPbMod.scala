@@ -63,11 +63,9 @@ object pluginPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): CodeGeneratorRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CodeGeneratorRequest]
+    inline def deserializeBinary(bytes: Uint8Array): CodeGeneratorRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CodeGeneratorRequest]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: CodeGeneratorRequest, reader: BinaryReader): CodeGeneratorRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[CodeGeneratorRequest]
+    inline def deserializeBinaryFromReader(message: CodeGeneratorRequest, reader: BinaryReader): CodeGeneratorRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[CodeGeneratorRequest]
     
     @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorRequest.extensions")
     @js.native
@@ -76,17 +74,13 @@ object pluginPbMod {
     @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorRequest.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: CodeGeneratorRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: CodeGeneratorRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: CodeGeneratorRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: CodeGeneratorRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -100,8 +94,7 @@ object pluginPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         fileToGenerateList: js.Array[String],
         protoFileList: js.Array[typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject]
       ): AsObject = {
@@ -109,32 +102,23 @@ object pluginPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setCompilerVersion(value: typings.googleProtobuf.pluginPbMod.Version.AsObject): Self = StObject.set(x, "compilerVersion", value.asInstanceOf[js.Any])
+        inline def setCompilerVersion(value: typings.googleProtobuf.pluginPbMod.Version.AsObject): Self = StObject.set(x, "compilerVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompilerVersionUndefined: Self = StObject.set(x, "compilerVersion", js.undefined)
+        inline def setCompilerVersionUndefined: Self = StObject.set(x, "compilerVersion", js.undefined)
         
-        @scala.inline
-        def setFileToGenerateList(value: js.Array[String]): Self = StObject.set(x, "fileToGenerateList", value.asInstanceOf[js.Any])
+        inline def setFileToGenerateList(value: js.Array[String]): Self = StObject.set(x, "fileToGenerateList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileToGenerateListVarargs(value: String*): Self = StObject.set(x, "fileToGenerateList", js.Array(value :_*))
+        inline def setFileToGenerateListVarargs(value: String*): Self = StObject.set(x, "fileToGenerateList", js.Array(value :_*))
         
-        @scala.inline
-        def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+        inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+        inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
         
-        @scala.inline
-        def setProtoFileList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject]): Self = StObject.set(x, "protoFileList", value.asInstanceOf[js.Any])
+        inline def setProtoFileList(value: js.Array[typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject]): Self = StObject.set(x, "protoFileList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProtoFileListVarargs(value: typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject*): Self = StObject.set(x, "protoFileList", js.Array(value :_*))
+        inline def setProtoFileListVarargs(value: typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject*): Self = StObject.set(x, "protoFileList", js.Array(value :_*))
       }
     }
   }
@@ -204,11 +188,9 @@ object pluginPbMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def deserializeBinary(bytes: Uint8Array): File = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[File]
+      inline def deserializeBinary(bytes: Uint8Array): File = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[File]
       
-      @scala.inline
-      def deserializeBinaryFromReader(message: File, reader: BinaryReader): File = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[File]
+      inline def deserializeBinaryFromReader(message: File, reader: BinaryReader): File = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[File]
       
       @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorResponse.File.extensions")
       @js.native
@@ -217,17 +199,13 @@ object pluginPbMod {
       @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorResponse.File.extensionsBinary")
       @js.native
       def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-      @scala.inline
-      def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+      inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+      inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def serializeBinaryToWriter(message: File, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def serializeBinaryToWriter(message: File, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def toObject(includeInstance: Boolean, msg: File): typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject]
+      inline def toObject(includeInstance: Boolean, msg: File): typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject]
       
       trait AsObject extends StObject {
         
@@ -239,41 +217,31 @@ object pluginPbMod {
       }
       object AsObject {
         
-        @scala.inline
-        def apply(): typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject = {
+        inline def apply(): typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject]
         }
         
-        @scala.inline
-        implicit class AsObjectMutableBuilder[Self <: typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject] (val x: Self) extends AnyVal {
+        extension [Self <: typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject](x: Self) {
           
-          @scala.inline
-          def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+          inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+          inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
           
-          @scala.inline
-          def setInsertionPoint(value: String): Self = StObject.set(x, "insertionPoint", value.asInstanceOf[js.Any])
+          inline def setInsertionPoint(value: String): Self = StObject.set(x, "insertionPoint", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInsertionPointUndefined: Self = StObject.set(x, "insertionPoint", js.undefined)
+          inline def setInsertionPointUndefined: Self = StObject.set(x, "insertionPoint", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         }
       }
     }
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): CodeGeneratorResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CodeGeneratorResponse]
+    inline def deserializeBinary(bytes: Uint8Array): CodeGeneratorResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CodeGeneratorResponse]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: CodeGeneratorResponse, reader: BinaryReader): CodeGeneratorResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[CodeGeneratorResponse]
+    inline def deserializeBinaryFromReader(message: CodeGeneratorResponse, reader: BinaryReader): CodeGeneratorResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[CodeGeneratorResponse]
     
     @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorResponse.extensions")
     @js.native
@@ -282,17 +250,13 @@ object pluginPbMod {
     @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorResponse.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: CodeGeneratorResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: CodeGeneratorResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: CodeGeneratorResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: CodeGeneratorResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -302,26 +266,20 @@ object pluginPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(fileList: js.Array[typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject]): AsObject = {
+      inline def apply(fileList: js.Array[typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject]): AsObject = {
         val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+        inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
         
-        @scala.inline
-        def setFileList(value: js.Array[typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+        inline def setFileList(value: js.Array[typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileListVarargs(value: typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+        inline def setFileListVarargs(value: typings.googleProtobuf.pluginPbMod.CodeGeneratorResponse.File.AsObject*): Self = StObject.set(x, "fileList", js.Array(value :_*))
       }
     }
   }
@@ -369,11 +327,9 @@ object pluginPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Version]
+    inline def deserializeBinary(bytes: Uint8Array): Version = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Version]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: Version, reader: BinaryReader): Version = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Version]
+    inline def deserializeBinaryFromReader(message: Version, reader: BinaryReader): Version = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Version]
     
     @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "Version.extensions")
     @js.native
@@ -382,17 +338,13 @@ object pluginPbMod {
     @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "Version.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: Version, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: Version, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: Version): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: Version): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -406,38 +358,28 @@ object pluginPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(): AsObject = {
+      inline def apply(): AsObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+        inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+        inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
         
-        @scala.inline
-        def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+        inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+        inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
         
-        @scala.inline
-        def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+        inline def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+        inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
         
-        @scala.inline
-        def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+        inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+        inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       }
     }
   }

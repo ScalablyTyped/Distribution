@@ -17,22 +17,17 @@ trait SchemaGetVulnzOccurrencesSummaryResponse extends StObject {
 }
 object SchemaGetVulnzOccurrencesSummaryResponse {
   
-  @scala.inline
-  def apply(): SchemaGetVulnzOccurrencesSummaryResponse = {
+  inline def apply(): SchemaGetVulnzOccurrencesSummaryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetVulnzOccurrencesSummaryResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetVulnzOccurrencesSummaryResponseMutableBuilder[Self <: SchemaGetVulnzOccurrencesSummaryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetVulnzOccurrencesSummaryResponse](x: Self) {
     
-    @scala.inline
-    def setCounts(value: js.Array[SchemaSeverityCount]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
+    inline def setCounts(value: js.Array[SchemaSeverityCount]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
+    inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
-    @scala.inline
-    def setCountsVarargs(value: SchemaSeverityCount*): Self = StObject.set(x, "counts", js.Array(value :_*))
+    inline def setCountsVarargs(value: SchemaSeverityCount*): Self = StObject.set(x, "counts", js.Array(value :_*))
   }
 }

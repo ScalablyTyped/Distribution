@@ -15,9 +15,7 @@ object relayNetworkMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(fetchFn: FetchFunction): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any]).asInstanceOf[Network]
-    @scala.inline
-    def create(fetchFn: FetchFunction, subscribeFn: SubscribeFunction): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any], subscribeFn.asInstanceOf[js.Any])).asInstanceOf[Network]
+    inline def create(fetchFn: FetchFunction): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any]).asInstanceOf[Network]
+    inline def create(fetchFn: FetchFunction, subscribeFn: SubscribeFunction): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any], subscribeFn.asInstanceOf[js.Any])).asInstanceOf[Network]
   }
 }

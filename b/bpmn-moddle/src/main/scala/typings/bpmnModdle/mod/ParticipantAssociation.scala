@@ -14,8 +14,7 @@ trait ParticipantAssociation
 }
 object ParticipantAssociation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -26,13 +25,10 @@ object ParticipantAssociation {
     __obj.asInstanceOf[ParticipantAssociation]
   }
   
-  @scala.inline
-  implicit class ParticipantAssociationMutableBuilder[Self <: ParticipantAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: ParticipantAssociation](x: Self) {
     
-    @scala.inline
-    def setInnerParticipantRef(value: Participant): Self = StObject.set(x, "innerParticipantRef", value.asInstanceOf[js.Any])
+    inline def setInnerParticipantRef(value: Participant): Self = StObject.set(x, "innerParticipantRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterParticipantRef(value: Participant): Self = StObject.set(x, "outerParticipantRef", value.asInstanceOf[js.Any])
+    inline def setOuterParticipantRef(value: Participant): Self = StObject.set(x, "outerParticipantRef", value.asInstanceOf[js.Any])
   }
 }

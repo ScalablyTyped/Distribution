@@ -18,19 +18,15 @@ trait DisassociateResolverEndpointIpAddressRequest extends StObject {
 }
 object DisassociateResolverEndpointIpAddressRequest {
   
-  @scala.inline
-  def apply(IpAddress: IpAddressUpdate, ResolverEndpointId: ResourceId): DisassociateResolverEndpointIpAddressRequest = {
+  inline def apply(IpAddress: IpAddressUpdate, ResolverEndpointId: ResourceId): DisassociateResolverEndpointIpAddressRequest = {
     val __obj = js.Dynamic.literal(IpAddress = IpAddress.asInstanceOf[js.Any], ResolverEndpointId = ResolverEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateResolverEndpointIpAddressRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateResolverEndpointIpAddressRequestMutableBuilder[Self <: DisassociateResolverEndpointIpAddressRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateResolverEndpointIpAddressRequest](x: Self) {
     
-    @scala.inline
-    def setIpAddress(value: IpAddressUpdate): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IpAddressUpdate): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
+    inline def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
   }
 }

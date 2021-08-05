@@ -48,61 +48,43 @@ trait AffectedEntity extends StObject {
 }
 object AffectedEntity {
   
-  @scala.inline
-  def apply(): AffectedEntity = {
+  inline def apply(): AffectedEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AffectedEntity]
   }
   
-  @scala.inline
-  implicit class AffectedEntityMutableBuilder[Self <: AffectedEntity] (val x: Self) extends AnyVal {
+  extension [Self <: AffectedEntity](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
+    inline def setAwsAccountIdUndefined: Self = StObject.set(x, "awsAccountId", js.undefined)
     
-    @scala.inline
-    def setEntityArn(value: entityArn): Self = StObject.set(x, "entityArn", value.asInstanceOf[js.Any])
+    inline def setEntityArn(value: entityArn): Self = StObject.set(x, "entityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityArnUndefined: Self = StObject.set(x, "entityArn", js.undefined)
+    inline def setEntityArnUndefined: Self = StObject.set(x, "entityArn", js.undefined)
     
-    @scala.inline
-    def setEntityUrl(value: entityUrl): Self = StObject.set(x, "entityUrl", value.asInstanceOf[js.Any])
+    inline def setEntityUrl(value: entityUrl): Self = StObject.set(x, "entityUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUrlUndefined: Self = StObject.set(x, "entityUrl", js.undefined)
+    inline def setEntityUrlUndefined: Self = StObject.set(x, "entityUrl", js.undefined)
     
-    @scala.inline
-    def setEntityValue(value: entityValue): Self = StObject.set(x, "entityValue", value.asInstanceOf[js.Any])
+    inline def setEntityValue(value: entityValue): Self = StObject.set(x, "entityValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityValueUndefined: Self = StObject.set(x, "entityValue", js.undefined)
+    inline def setEntityValueUndefined: Self = StObject.set(x, "entityValue", js.undefined)
     
-    @scala.inline
-    def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
+    inline def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
+    inline def setEventArnUndefined: Self = StObject.set(x, "eventArn", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: timestamp): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: timestamp): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: entityStatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: entityStatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
-    @scala.inline
-    def setTags(value: tagSet): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagSet): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

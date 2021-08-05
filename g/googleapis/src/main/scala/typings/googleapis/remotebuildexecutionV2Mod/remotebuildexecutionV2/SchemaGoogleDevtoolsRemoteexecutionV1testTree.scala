@@ -25,28 +25,21 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testTree extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testTree {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testTree = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testTree = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testTree]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testTreeMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testTree] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteexecutionV1testTree](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectory]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testDirectory]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testDirectory*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testDirectory*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setRoot(value: SchemaGoogleDevtoolsRemoteexecutionV1testDirectory): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SchemaGoogleDevtoolsRemoteexecutionV1testDirectory): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

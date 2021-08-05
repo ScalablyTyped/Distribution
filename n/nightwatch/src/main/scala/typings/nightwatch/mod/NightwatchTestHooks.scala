@@ -19,41 +19,31 @@ trait NightwatchTestHooks
 }
 object NightwatchTestHooks {
   
-  @scala.inline
-  def apply(): NightwatchTestHooks = {
+  inline def apply(): NightwatchTestHooks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NightwatchTestHooks]
   }
   
-  @scala.inline
-  implicit class NightwatchTestHooksMutableBuilder[Self <: NightwatchTestHooks] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchTestHooks](x: Self) {
     
-    @scala.inline
-    def setAfter(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+    inline def setAfter(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterEach(
+    inline def setAfterEach(
       value: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
     ): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
+    inline def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    inline def setBefore(value: /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeEach(
+    inline def setBeforeEach(
       value: (/* browser */ NightwatchBrowser, /* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit]) => Unit
     ): Self = StObject.set(x, "beforeEach", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
+    inline def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
   }
 }

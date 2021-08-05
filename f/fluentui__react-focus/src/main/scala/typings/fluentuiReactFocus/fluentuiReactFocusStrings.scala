@@ -8,6 +8,5 @@ object fluentuiReactFocusStrings {
   
   @js.native
   sealed trait componentPath extends StObject
-  @scala.inline
-  def componentPath: componentPath = "componentPath".asInstanceOf[componentPath]
+  inline def componentPath: componentPath = "componentPath".asInstanceOf[componentPath]
 }

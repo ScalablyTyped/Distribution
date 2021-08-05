@@ -12,20 +12,16 @@ object anon {
   }
   object Exclude {
     
-    @scala.inline
-    def apply(): Exclude = {
+    inline def apply(): Exclude = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Exclude]
     }
     
-    @scala.inline
-    implicit class ExcludeMutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
+    extension [Self <: Exclude](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Any): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Any): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     }
   }
 }

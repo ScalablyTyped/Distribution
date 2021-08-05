@@ -16,22 +16,17 @@ trait ChartSourceRange extends StObject {
 }
 object ChartSourceRange {
   
-  @scala.inline
-  def apply(): ChartSourceRange = {
+  inline def apply(): ChartSourceRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSourceRange]
   }
   
-  @scala.inline
-  implicit class ChartSourceRangeMutableBuilder[Self <: ChartSourceRange] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSourceRange](x: Self) {
     
-    @scala.inline
-    def setSources(value: js.Array[GridRange]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[GridRange]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: GridRange*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: GridRange*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

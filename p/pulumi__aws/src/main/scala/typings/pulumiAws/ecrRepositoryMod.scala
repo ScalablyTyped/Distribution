@@ -85,21 +85,16 @@ object ecrRepositoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Repository]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RepositoryState): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Repository]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    inline def get(name: String, id: Input[ID]): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    inline def get(name: String, id: Input[ID], state: RepositoryState): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    inline def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
     
     /**
       * Returns true if the given object is an instance of Repository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean]
   }
   
   trait RepositoryArgs extends StObject {
@@ -135,51 +130,38 @@ object ecrRepositoryMod {
   }
   object RepositoryArgs {
     
-    @scala.inline
-    def apply(): RepositoryArgs = {
+    inline def apply(): RepositoryArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RepositoryArgs]
     }
     
-    @scala.inline
-    implicit class RepositoryArgsMutableBuilder[Self <: RepositoryArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryArgs](x: Self) {
       
-      @scala.inline
-      def setEncryptionConfigurations(
+      inline def setEncryptionConfigurations(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ecr.RepositoryEncryptionConfiguration]]
             ]
       ): Self = StObject.set(x, "encryptionConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurationsUndefined: Self = StObject.set(x, "encryptionConfigurations", js.undefined)
+      inline def setEncryptionConfigurationsUndefined: Self = StObject.set(x, "encryptionConfigurations", js.undefined)
       
-      @scala.inline
-      def setEncryptionConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.ecr.RepositoryEncryptionConfiguration]*): Self = StObject.set(x, "encryptionConfigurations", js.Array(value :_*))
+      inline def setEncryptionConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.ecr.RepositoryEncryptionConfiguration]*): Self = StObject.set(x, "encryptionConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setImageScanningConfiguration(value: Input[typings.pulumiAws.inputMod.ecr.RepositoryImageScanningConfiguration]): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
+      inline def setImageScanningConfiguration(value: Input[typings.pulumiAws.inputMod.ecr.RepositoryImageScanningConfiguration]): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
+      inline def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
       
-      @scala.inline
-      def setImageTagMutability(value: Input[String]): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
+      inline def setImageTagMutability(value: Input[String]): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTagMutabilityUndefined: Self = StObject.set(x, "imageTagMutability", js.undefined)
+      inline def setImageTagMutabilityUndefined: Self = StObject.set(x, "imageTagMutability", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -231,69 +213,50 @@ object ecrRepositoryMod {
   }
   object RepositoryState {
     
-    @scala.inline
-    def apply(): RepositoryState = {
+    inline def apply(): RepositoryState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RepositoryState]
     }
     
-    @scala.inline
-    implicit class RepositoryStateMutableBuilder[Self <: RepositoryState] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEncryptionConfigurations(
+      inline def setEncryptionConfigurations(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ecr.RepositoryEncryptionConfiguration]]
             ]
       ): Self = StObject.set(x, "encryptionConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurationsUndefined: Self = StObject.set(x, "encryptionConfigurations", js.undefined)
+      inline def setEncryptionConfigurationsUndefined: Self = StObject.set(x, "encryptionConfigurations", js.undefined)
       
-      @scala.inline
-      def setEncryptionConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.ecr.RepositoryEncryptionConfiguration]*): Self = StObject.set(x, "encryptionConfigurations", js.Array(value :_*))
+      inline def setEncryptionConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.ecr.RepositoryEncryptionConfiguration]*): Self = StObject.set(x, "encryptionConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setImageScanningConfiguration(value: Input[typings.pulumiAws.inputMod.ecr.RepositoryImageScanningConfiguration]): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
+      inline def setImageScanningConfiguration(value: Input[typings.pulumiAws.inputMod.ecr.RepositoryImageScanningConfiguration]): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
+      inline def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
       
-      @scala.inline
-      def setImageTagMutability(value: Input[String]): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
+      inline def setImageTagMutability(value: Input[String]): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTagMutabilityUndefined: Self = StObject.set(x, "imageTagMutability", js.undefined)
+      inline def setImageTagMutabilityUndefined: Self = StObject.set(x, "imageTagMutability", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRegistryId(value: Input[String]): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: Input[String]): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+      inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
       
-      @scala.inline
-      def setRepositoryUrl(value: Input[String]): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
+      inline def setRepositoryUrl(value: Input[String]): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUrlUndefined: Self = StObject.set(x, "repositoryUrl", js.undefined)
+      inline def setRepositoryUrlUndefined: Self = StObject.set(x, "repositoryUrl", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

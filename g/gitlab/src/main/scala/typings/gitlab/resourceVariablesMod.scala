@@ -53,23 +53,18 @@ object resourceVariablesMod {
   }
   object ResourceVariableSchema {
     
-    @scala.inline
-    def apply(key: String, value: String, variable_type: env_var | file): ResourceVariableSchema = {
+    inline def apply(key: String, value: String, variable_type: env_var | file): ResourceVariableSchema = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], variable_type = variable_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceVariableSchema]
     }
     
-    @scala.inline
-    implicit class ResourceVariableSchemaMutableBuilder[Self <: ResourceVariableSchema] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceVariableSchema](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariable_type(value: env_var | file): Self = StObject.set(x, "variable_type", value.asInstanceOf[js.Any])
+      inline def setVariable_type(value: env_var | file): Self = StObject.set(x, "variable_type", value.asInstanceOf[js.Any])
     }
   }
 }

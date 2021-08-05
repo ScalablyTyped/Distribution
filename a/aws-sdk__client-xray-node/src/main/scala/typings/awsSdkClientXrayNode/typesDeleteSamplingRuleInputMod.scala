@@ -46,46 +46,34 @@ object typesDeleteSamplingRuleInputMod {
   }
   object DeleteSamplingRuleInput {
     
-    @scala.inline
-    def apply(): DeleteSamplingRuleInput = {
+    inline def apply(): DeleteSamplingRuleInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteSamplingRuleInput]
     }
     
-    @scala.inline
-    implicit class DeleteSamplingRuleInputMutableBuilder[Self <: DeleteSamplingRuleInput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteSamplingRuleInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
+      inline def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
+      inline def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
       
-      @scala.inline
-      def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+      inline def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
+      inline def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
     }
   }
 }

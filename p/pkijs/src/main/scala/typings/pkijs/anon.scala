@@ -18,23 +18,18 @@ object anon {
   }
   object Algorithm {
     
-    @scala.inline
-    def apply(algorithm: typings.std.Algorithm, usages: js.Array[KeyUsage]): Algorithm = {
+    inline def apply(algorithm: typings.std.Algorithm, usages: js.Array[KeyUsage]): Algorithm = {
       val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], usages = usages.asInstanceOf[js.Any])
       __obj.asInstanceOf[Algorithm]
     }
     
-    @scala.inline
-    implicit class AlgorithmMutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
+    extension [Self <: Algorithm](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: typings.std.Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: typings.std.Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsages(value: js.Array[KeyUsage]): Self = StObject.set(x, "usages", value.asInstanceOf[js.Any])
+      inline def setUsages(value: js.Array[KeyUsage]): Self = StObject.set(x, "usages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagesVarargs(value: KeyUsage*): Self = StObject.set(x, "usages", js.Array(value :_*))
+      inline def setUsagesVarargs(value: KeyUsage*): Self = StObject.set(x, "usages", js.Array(value :_*))
     }
   }
   
@@ -52,8 +47,7 @@ object anon {
   }
   object ContentEncryptionAlgorithm {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contentEncryptionAlgorithm: typings.std.Algorithm,
       contentToEncrypt: BufferSource,
       hmacHashAlgorithm: String,
@@ -64,23 +58,17 @@ object anon {
       __obj.asInstanceOf[ContentEncryptionAlgorithm]
     }
     
-    @scala.inline
-    implicit class ContentEncryptionAlgorithmMutableBuilder[Self <: ContentEncryptionAlgorithm] (val x: Self) extends AnyVal {
+    extension [Self <: ContentEncryptionAlgorithm](x: Self) {
       
-      @scala.inline
-      def setContentEncryptionAlgorithm(value: typings.std.Algorithm): Self = StObject.set(x, "contentEncryptionAlgorithm", value.asInstanceOf[js.Any])
+      inline def setContentEncryptionAlgorithm(value: typings.std.Algorithm): Self = StObject.set(x, "contentEncryptionAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentToEncrypt(value: BufferSource): Self = StObject.set(x, "contentToEncrypt", value.asInstanceOf[js.Any])
+      inline def setContentToEncrypt(value: BufferSource): Self = StObject.set(x, "contentToEncrypt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHmacHashAlgorithm(value: String): Self = StObject.set(x, "hmacHashAlgorithm", value.asInstanceOf[js.Any])
+      inline def setHmacHashAlgorithm(value: String): Self = StObject.set(x, "hmacHashAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
+      inline def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,20 +80,16 @@ object anon {
   }
   object Counter {
     
-    @scala.inline
-    def apply(counter: Double, result: ArrayBuffer): Counter = {
+    inline def apply(counter: Double, result: ArrayBuffer): Counter = {
       val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Counter]
     }
     
-    @scala.inline
-    implicit class CounterMutableBuilder[Self <: Counter] (val x: Self) extends AnyVal {
+    extension [Self <: Counter](x: Self) {
       
-      @scala.inline
-      def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+      inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: ArrayBuffer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: ArrayBuffer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,44 +107,32 @@ object anon {
   }
   object HmacHashAlgorithm {
     
-    @scala.inline
-    def apply(): HmacHashAlgorithm = {
+    inline def apply(): HmacHashAlgorithm = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HmacHashAlgorithm]
     }
     
-    @scala.inline
-    implicit class HmacHashAlgorithmMutableBuilder[Self <: HmacHashAlgorithm] (val x: Self) extends AnyVal {
+    extension [Self <: HmacHashAlgorithm](x: Self) {
       
-      @scala.inline
-      def setHmacHashAlgorithm(value: String): Self = StObject.set(x, "hmacHashAlgorithm", value.asInstanceOf[js.Any])
+      inline def setHmacHashAlgorithm(value: String): Self = StObject.set(x, "hmacHashAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHmacHashAlgorithmUndefined: Self = StObject.set(x, "hmacHashAlgorithm", js.undefined)
+      inline def setHmacHashAlgorithmUndefined: Self = StObject.set(x, "hmacHashAlgorithm", js.undefined)
       
-      @scala.inline
-      def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
+      inline def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationCountUndefined: Self = StObject.set(x, "iterationCount", js.undefined)
+      inline def setIterationCountUndefined: Self = StObject.set(x, "iterationCount", js.undefined)
       
-      @scala.inline
-      def setKeyEncryptionAlgorithm(value: typings.std.Algorithm): Self = StObject.set(x, "keyEncryptionAlgorithm", value.asInstanceOf[js.Any])
+      inline def setKeyEncryptionAlgorithm(value: typings.std.Algorithm): Self = StObject.set(x, "keyEncryptionAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyEncryptionAlgorithmParams(value: js.Any): Self = StObject.set(x, "keyEncryptionAlgorithmParams", value.asInstanceOf[js.Any])
+      inline def setKeyEncryptionAlgorithmParams(value: js.Any): Self = StObject.set(x, "keyEncryptionAlgorithmParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyEncryptionAlgorithmParamsUndefined: Self = StObject.set(x, "keyEncryptionAlgorithmParams", js.undefined)
+      inline def setKeyEncryptionAlgorithmParamsUndefined: Self = StObject.set(x, "keyEncryptionAlgorithmParams", js.undefined)
       
-      @scala.inline
-      def setKeyEncryptionAlgorithmUndefined: Self = StObject.set(x, "keyEncryptionAlgorithm", js.undefined)
+      inline def setKeyEncryptionAlgorithmUndefined: Self = StObject.set(x, "keyEncryptionAlgorithm", js.undefined)
       
-      @scala.inline
-      def setKeyIdentifier(value: ArrayBuffer): Self = StObject.set(x, "keyIdentifier", value.asInstanceOf[js.Any])
+      inline def setKeyIdentifier(value: ArrayBuffer): Self = StObject.set(x, "keyIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdentifierUndefined: Self = StObject.set(x, "keyIdentifier", js.undefined)
+      inline def setKeyIdentifierUndefined: Self = StObject.set(x, "keyIdentifier", js.undefined)
     }
   }
   
@@ -172,26 +144,20 @@ object anon {
   }
   object IssuerCertificate {
     
-    @scala.inline
-    def apply(): IssuerCertificate = {
+    inline def apply(): IssuerCertificate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IssuerCertificate]
     }
     
-    @scala.inline
-    implicit class IssuerCertificateMutableBuilder[Self <: IssuerCertificate] (val x: Self) extends AnyVal {
+    extension [Self <: IssuerCertificate](x: Self) {
       
-      @scala.inline
-      def setIssuerCertificate(value: default): Self = StObject.set(x, "issuerCertificate", value.asInstanceOf[js.Any])
+      inline def setIssuerCertificate(value: default): Self = StObject.set(x, "issuerCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerCertificateUndefined: Self = StObject.set(x, "issuerCertificate", js.undefined)
+      inline def setIssuerCertificateUndefined: Self = StObject.set(x, "issuerCertificate", js.undefined)
       
-      @scala.inline
-      def setPublicKeyInfo(value: typings.pkijs.publicKeyInfoMod.default): Self = StObject.set(x, "publicKeyInfo", value.asInstanceOf[js.Any])
+      inline def setPublicKeyInfo(value: typings.pkijs.publicKeyInfoMod.default): Self = StObject.set(x, "publicKeyInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKeyInfoUndefined: Self = StObject.set(x, "publicKeyInfo", js.undefined)
+      inline def setPublicKeyInfoUndefined: Self = StObject.set(x, "publicKeyInfo", js.undefined)
     }
   }
   
@@ -205,32 +171,24 @@ object anon {
   }
   object KdfAlgorithm {
     
-    @scala.inline
-    def apply(): KdfAlgorithm = {
+    inline def apply(): KdfAlgorithm = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KdfAlgorithm]
     }
     
-    @scala.inline
-    implicit class KdfAlgorithmMutableBuilder[Self <: KdfAlgorithm] (val x: Self) extends AnyVal {
+    extension [Self <: KdfAlgorithm](x: Self) {
       
-      @scala.inline
-      def setKdfAlgorithm(value: String): Self = StObject.set(x, "kdfAlgorithm", value.asInstanceOf[js.Any])
+      inline def setKdfAlgorithm(value: String): Self = StObject.set(x, "kdfAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKdfAlgorithmUndefined: Self = StObject.set(x, "kdfAlgorithm", js.undefined)
+      inline def setKdfAlgorithmUndefined: Self = StObject.set(x, "kdfAlgorithm", js.undefined)
       
-      @scala.inline
-      def setKekEncryptionLength(value: Double): Self = StObject.set(x, "kekEncryptionLength", value.asInstanceOf[js.Any])
+      inline def setKekEncryptionLength(value: Double): Self = StObject.set(x, "kekEncryptionLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKekEncryptionLengthUndefined: Self = StObject.set(x, "kekEncryptionLength", js.undefined)
+      inline def setKekEncryptionLengthUndefined: Self = StObject.set(x, "kekEncryptionLength", js.undefined)
       
-      @scala.inline
-      def setOaepHashAlgorithm(value: String): Self = StObject.set(x, "oaepHashAlgorithm", value.asInstanceOf[js.Any])
+      inline def setOaepHashAlgorithm(value: String): Self = StObject.set(x, "oaepHashAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOaepHashAlgorithmUndefined: Self = StObject.set(x, "oaepHashAlgorithm", js.undefined)
+      inline def setOaepHashAlgorithmUndefined: Self = StObject.set(x, "oaepHashAlgorithm", js.undefined)
     }
   }
   
@@ -240,17 +198,14 @@ object anon {
   }
   object Password {
     
-    @scala.inline
-    def apply(password: String): Password = {
+    inline def apply(password: String): Password = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[Password]
     }
     
-    @scala.inline
-    implicit class PasswordMutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
+    extension [Self <: Password](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,20 +217,16 @@ object anon {
   }
   object RecipientCertificate {
     
-    @scala.inline
-    def apply(recipientCertificate: default, recipientPrivateKey: ArrayBuffer): RecipientCertificate = {
+    inline def apply(recipientCertificate: default, recipientPrivateKey: ArrayBuffer): RecipientCertificate = {
       val __obj = js.Dynamic.literal(recipientCertificate = recipientCertificate.asInstanceOf[js.Any], recipientPrivateKey = recipientPrivateKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecipientCertificate]
     }
     
-    @scala.inline
-    implicit class RecipientCertificateMutableBuilder[Self <: RecipientCertificate] (val x: Self) extends AnyVal {
+    extension [Self <: RecipientCertificate](x: Self) {
       
-      @scala.inline
-      def setRecipientCertificate(value: default): Self = StObject.set(x, "recipientCertificate", value.asInstanceOf[js.Any])
+      inline def setRecipientCertificate(value: default): Self = StObject.set(x, "recipientCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipientPrivateKey(value: ArrayBuffer): Self = StObject.set(x, "recipientPrivateKey", value.asInstanceOf[js.Any])
+      inline def setRecipientPrivateKey(value: ArrayBuffer): Self = StObject.set(x, "recipientPrivateKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -285,23 +236,18 @@ object anon {
   }
   object TrustedCerts {
     
-    @scala.inline
-    def apply(): TrustedCerts = {
+    inline def apply(): TrustedCerts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TrustedCerts]
     }
     
-    @scala.inline
-    implicit class TrustedCertsMutableBuilder[Self <: TrustedCerts] (val x: Self) extends AnyVal {
+    extension [Self <: TrustedCerts](x: Self) {
       
-      @scala.inline
-      def setTrustedCerts(value: js.Array[default]): Self = StObject.set(x, "trustedCerts", value.asInstanceOf[js.Any])
+      inline def setTrustedCerts(value: js.Array[default]): Self = StObject.set(x, "trustedCerts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustedCertsUndefined: Self = StObject.set(x, "trustedCerts", js.undefined)
+      inline def setTrustedCertsUndefined: Self = StObject.set(x, "trustedCerts", js.undefined)
       
-      @scala.inline
-      def setTrustedCertsVarargs(value: default*): Self = StObject.set(x, "trustedCerts", js.Array(value :_*))
+      inline def setTrustedCertsVarargs(value: default*): Self = StObject.set(x, "trustedCerts", js.Array(value :_*))
     }
   }
 }

@@ -12,19 +12,15 @@ trait fragLoadProgressData extends StObject {
 }
 object fragLoadProgressData {
   
-  @scala.inline
-  def apply(frag: Fragment, stats: Stats): fragLoadProgressData = {
+  inline def apply(frag: Fragment, stats: Stats): fragLoadProgressData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[fragLoadProgressData]
   }
   
-  @scala.inline
-  implicit class fragLoadProgressDataMutableBuilder[Self <: fragLoadProgressData] (val x: Self) extends AnyVal {
+  extension [Self <: fragLoadProgressData](x: Self) {
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

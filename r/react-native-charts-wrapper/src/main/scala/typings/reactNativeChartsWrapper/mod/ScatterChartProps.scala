@@ -12,19 +12,15 @@ trait ScatterChartProps
 }
 object ScatterChartProps {
   
-  @scala.inline
-  def apply(): ScatterChartProps = {
+  inline def apply(): ScatterChartProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScatterChartProps]
   }
   
-  @scala.inline
-  implicit class ScatterChartPropsMutableBuilder[Self <: ScatterChartProps] (val x: Self) extends AnyVal {
+  extension [Self <: ScatterChartProps](x: Self) {
     
-    @scala.inline
-    def setData(value: ScatterData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ScatterData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelectableRows extends StObject
 object SelectableRows {
   
-  @scala.inline
-  def multiple: typings.muiDatatables.muiDatatablesStrings.multiple = "multiple".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.multiple]
+  inline def multiple: typings.muiDatatables.muiDatatablesStrings.multiple = "multiple".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.multiple]
   
-  @scala.inline
-  def none: typings.muiDatatables.muiDatatablesStrings.none = "none".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.none]
+  inline def none: typings.muiDatatables.muiDatatablesStrings.none = "none".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.none]
   
-  @scala.inline
-  def single: typings.muiDatatables.muiDatatablesStrings.single = "single".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.single]
+  inline def single: typings.muiDatatables.muiDatatablesStrings.single = "single".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.single]
 }

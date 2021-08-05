@@ -16,16 +16,13 @@ trait VolumeNodeAffinity extends StObject {
 }
 object VolumeNodeAffinity {
   
-  @scala.inline
-  def apply(required: NodeSelector): VolumeNodeAffinity = {
+  inline def apply(required: NodeSelector): VolumeNodeAffinity = {
     val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeNodeAffinity]
   }
   
-  @scala.inline
-  implicit class VolumeNodeAffinityMutableBuilder[Self <: VolumeNodeAffinity] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeNodeAffinity](x: Self) {
     
-    @scala.inline
-    def setRequired(value: NodeSelector): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: NodeSelector): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
   }
 }

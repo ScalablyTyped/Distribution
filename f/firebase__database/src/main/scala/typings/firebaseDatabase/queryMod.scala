@@ -213,7 +213,7 @@ object queryMod {
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     
-    var orderByCalled_ : js.Any = js.native
+    /* private */ var orderByCalled_ : js.Any = js.native
     
     /**
       * Given a child path, return a new query ordered by the specified grandchild path.
@@ -253,7 +253,7 @@ object queryMod {
       */
     def queryObject(): js.Object = js.native
     
-    var queryParams_ : js.Any = js.native
+    /* private */ var queryParams_ : js.Any = js.native
     
     def ref: Reference = js.native
     
@@ -281,7 +281,7 @@ object queryMod {
       * @param {!string} fnName
       * @private
       */
-    var validateNoPreviousOrderByCall_ : js.Any = js.native
+    /* private */ var validateNoPreviousOrderByCall_ : js.Any = js.native
   }
   /* static members */
   object Query {
@@ -301,8 +301,7 @@ object queryMod {
     @JSImport("@firebase/database/dist/src/api/Query", "Query.getCancelAndContextArgs_")
     @js.native
     def getCancelAndContextArgs_ : js.Any = js.native
-    @scala.inline
-    def getCancelAndContextArgs__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCancelAndContextArgs_")(x.asInstanceOf[js.Any])
+    inline def getCancelAndContextArgs__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCancelAndContextArgs_")(x.asInstanceOf[js.Any])
     
     /**
       * Validates that limit* has been called with the correct combination of parameters
@@ -312,8 +311,7 @@ object queryMod {
     @JSImport("@firebase/database/dist/src/api/Query", "Query.validateLimit_")
     @js.native
     def validateLimit_ : js.Any = js.native
-    @scala.inline
-    def validateLimit__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateLimit_")(x.asInstanceOf[js.Any])
+    inline def validateLimit__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateLimit_")(x.asInstanceOf[js.Any])
     
     /**
       * Validates start/end values for queries.
@@ -323,8 +321,7 @@ object queryMod {
     @JSImport("@firebase/database/dist/src/api/Query", "Query.validateQueryEndpoints_")
     @js.native
     def validateQueryEndpoints_ : js.Any = js.native
-    @scala.inline
-    def validateQueryEndpoints__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateQueryEndpoints_")(x.asInstanceOf[js.Any])
+    inline def validateQueryEndpoints__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateQueryEndpoints_")(x.asInstanceOf[js.Any])
   }
   
   type SnapshotCallback = js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[String | Null], js.Any]

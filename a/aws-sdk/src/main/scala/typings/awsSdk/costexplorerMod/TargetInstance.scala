@@ -38,49 +38,35 @@ trait TargetInstance extends StObject {
 }
 object TargetInstance {
   
-  @scala.inline
-  def apply(): TargetInstance = {
+  inline def apply(): TargetInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetInstance]
   }
   
-  @scala.inline
-  implicit class TargetInstanceMutableBuilder[Self <: TargetInstance] (val x: Self) extends AnyVal {
+  extension [Self <: TargetInstance](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setDefaultTargetInstance(value: GenericBoolean): Self = StObject.set(x, "DefaultTargetInstance", value.asInstanceOf[js.Any])
+    inline def setDefaultTargetInstance(value: GenericBoolean): Self = StObject.set(x, "DefaultTargetInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTargetInstanceUndefined: Self = StObject.set(x, "DefaultTargetInstance", js.undefined)
+    inline def setDefaultTargetInstanceUndefined: Self = StObject.set(x, "DefaultTargetInstance", js.undefined)
     
-    @scala.inline
-    def setEstimatedMonthlyCost(value: GenericString): Self = StObject.set(x, "EstimatedMonthlyCost", value.asInstanceOf[js.Any])
+    inline def setEstimatedMonthlyCost(value: GenericString): Self = StObject.set(x, "EstimatedMonthlyCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedMonthlyCostUndefined: Self = StObject.set(x, "EstimatedMonthlyCost", js.undefined)
+    inline def setEstimatedMonthlyCostUndefined: Self = StObject.set(x, "EstimatedMonthlyCost", js.undefined)
     
-    @scala.inline
-    def setEstimatedMonthlySavings(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavings", value.asInstanceOf[js.Any])
+    inline def setEstimatedMonthlySavings(value: GenericString): Self = StObject.set(x, "EstimatedMonthlySavings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedMonthlySavingsUndefined: Self = StObject.set(x, "EstimatedMonthlySavings", js.undefined)
+    inline def setEstimatedMonthlySavingsUndefined: Self = StObject.set(x, "EstimatedMonthlySavings", js.undefined)
     
-    @scala.inline
-    def setExpectedResourceUtilization(value: ResourceUtilization): Self = StObject.set(x, "ExpectedResourceUtilization", value.asInstanceOf[js.Any])
+    inline def setExpectedResourceUtilization(value: ResourceUtilization): Self = StObject.set(x, "ExpectedResourceUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedResourceUtilizationUndefined: Self = StObject.set(x, "ExpectedResourceUtilization", js.undefined)
+    inline def setExpectedResourceUtilizationUndefined: Self = StObject.set(x, "ExpectedResourceUtilization", js.undefined)
     
-    @scala.inline
-    def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
+    inline def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
+    inline def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
   }
 }

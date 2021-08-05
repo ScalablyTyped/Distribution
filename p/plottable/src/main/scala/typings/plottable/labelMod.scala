@@ -33,8 +33,7 @@ object labelMod {
     @JSImport("plottable/build/src/components/label", "AxisLabel.AXIS_LABEL_CLASS")
     @js.native
     def AXIS_LABEL_CLASS: String = js.native
-    @scala.inline
-    def AXIS_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AXIS_LABEL_CLASS")(x.asInstanceOf[js.Any])
+    inline def AXIS_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AXIS_LABEL_CLASS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable/build/src/components/label", "Label")
@@ -51,19 +50,19 @@ object labelMod {
     def this(displayText: String, angle: Double) = this()
     def this(displayText: Unit, angle: Double) = this()
     
-    var _angle: Double = js.native
+    /* protected */ var _angle: Double = js.native
     
-    var _measurer: CacheMeasurer = js.native
+    /* protected */ var _measurer: CacheMeasurer = js.native
     
-    var _padding: Double = js.native
+    /* protected */ var _padding: Double = js.native
     
-    var _text: String = js.native
+    /* protected */ var _text: String = js.native
     
-    var _textContainer: SimpleSelection[Unit] = js.native
+    /* protected */ var _textContainer: SimpleSelection[Unit] = js.native
     
-    var _wrapper: Wrapper = js.native
+    /* protected */ var _wrapper: Wrapper = js.native
     
-    var _writer: Writer = js.native
+    /* protected */ var _writer: Writer = js.native
     
     /**
       * Gets the angle of the Label in degrees.
@@ -124,7 +123,6 @@ object labelMod {
     @JSImport("plottable/build/src/components/label", "TitleLabel.TITLE_LABEL_CLASS")
     @js.native
     def TITLE_LABEL_CLASS: String = js.native
-    @scala.inline
-    def TITLE_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TITLE_LABEL_CLASS")(x.asInstanceOf[js.Any])
+    inline def TITLE_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TITLE_LABEL_CLASS")(x.asInstanceOf[js.Any])
   }
 }

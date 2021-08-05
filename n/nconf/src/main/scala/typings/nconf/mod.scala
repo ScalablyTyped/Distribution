@@ -85,150 +85,98 @@ object mod {
     def use(name: String, options: IOptions): Provider = js.native
   }
   
-  @scala.inline
-  def add(name: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any]).asInstanceOf[Provider]
-  @scala.inline
-  def add(name: String, options: IOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
+  inline def add(name: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def add(name: String, options: IOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
   
-  @scala.inline
-  def any(keys: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(keys.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def any(keys: js.Array[String], callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(keys.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def any(keys: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(keys.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def any(keys: js.Array[String], callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(keys.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def argv(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("argv")().asInstanceOf[Provider]
-  @scala.inline
-  def argv(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("argv")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def argv(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("argv")().asInstanceOf[Provider]
+  inline def argv(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("argv")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
   
-  @scala.inline
-  def clear(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def clear(key: String, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def clear(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def clear(key: String, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def create(name: String, options: IOptions): IStore = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IStore]
+  inline def create(name: String, options: IOptions): IStore = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IStore]
   
-  @scala.inline
-  def defaults(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[Provider]
-  @scala.inline
-  def defaults(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def defaults(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[Provider]
+  inline def defaults(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
   
-  @scala.inline
-  def env(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[Provider]
-  @scala.inline
-  def env(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("env")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
-  @scala.inline
-  def env(separator: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("env")(separator.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def env(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("env")().asInstanceOf[Provider]
+  inline def env(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("env")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def env(separator: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("env")(separator.asInstanceOf[js.Any]).asInstanceOf[Provider]
   
-  @scala.inline
-  def file(name: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(name.asInstanceOf[js.Any]).asInstanceOf[Provider]
-  @scala.inline
-  def file(name: String, filename: String): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(name.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Provider]
-  @scala.inline
-  def file(name: String, options: IFileOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
-  @scala.inline
-  def file(options: IFileOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def file(name: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(name.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def file(name: String, filename: String): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(name.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Provider]
+  inline def file(name: String, options: IFileOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
+  inline def file(options: IFileOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
   
   @JSImport("nconf", "formats")
   @js.native
   def formats: IFormats = js.native
-  @scala.inline
-  def formats_=(x: IFormats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+  inline def formats_=(x: IFormats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
-  @scala.inline
-  def get(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def get(key: String, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(key: Unit, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
+  inline def get(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(key: String, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(key: Unit, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-  @scala.inline
-  def init(options: IOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  inline def init(options: IOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def key(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def key(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def load(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Any]
-  @scala.inline
-  def load(callback: ICallbackFunction): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def load(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Any]
+  inline def load(callback: ICallbackFunction): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def loadFiles(files: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFiles")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def loadFiles(files: js.Any, callback: ICallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFiles")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadFiles(files: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFiles")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadFiles(files: js.Any, callback: ICallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFiles")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def loadFilesSync(files: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFilesSync")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def loadFilesSync(files: js.Any, callback: ICallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFilesSync")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadFilesSync(files: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFilesSync")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadFilesSync(files: js.Any, callback: ICallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFilesSync")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def loadSources(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSources")().asInstanceOf[js.Any]
+  inline def loadSources(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSources")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def merge(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def merge(key: String, value: js.Any, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def merge(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def merge(key: String, value: js.Any, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def mergeSources(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeSources")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mergeSources(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeSources")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def overrides(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("overrides")().asInstanceOf[Provider]
-  @scala.inline
-  def overrides(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("overrides")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def overrides(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("overrides")().asInstanceOf[Provider]
+  inline def overrides(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("overrides")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
   
-  @scala.inline
-  def path(key: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(key.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def path(key: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(key.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def remove(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def required(keys: js.Array[String]): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(keys.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def required(keys: js.Array[String]): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(keys.asInstanceOf[js.Any]).asInstanceOf[Provider]
   
-  @scala.inline
-  def reset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[js.Any]
-  @scala.inline
-  def reset(callback: ICallbackFunction): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def reset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[js.Any]
+  inline def reset(callback: ICallbackFunction): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def save(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def save(value: js.Any, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def save(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def save(value: js.Any, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def set(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def set(key: String, value: js.Any, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def set(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def set(key: String, value: js.Any, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("nconf", "sources")
   @js.native
   def sources: js.Array[js.Any] = js.native
-  @scala.inline
-  def sources_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sources")(x.asInstanceOf[js.Any])
+  inline def sources_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sources")(x.asInstanceOf[js.Any])
   
   @JSImport("nconf", "stores")
   @js.native
   def stores: js.Any = js.native
-  @scala.inline
-  def stores_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stores")(x.asInstanceOf[js.Any])
+  inline def stores_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stores")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def use(name: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any]).asInstanceOf[Provider]
-  @scala.inline
-  def use(name: String, options: IOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
+  inline def use(name: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any]).asInstanceOf[Provider]
+  inline def use(name: String, options: IOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
   
   @JSImport("nconf", "version")
   @js.native
   def version: Double = js.native
-  @scala.inline
-  def version_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   type ICallbackFunction = js.Function1[/* err */ Error, Unit]
   
@@ -250,56 +198,40 @@ object mod {
   }
   object IFileOptions {
     
-    @scala.inline
-    def apply(): IFileOptions = {
+    inline def apply(): IFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFileOptions]
     }
     
-    @scala.inline
-    implicit class IFileOptionsMutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IFileOptions](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setJson_spacing(value: Double): Self = StObject.set(x, "json_spacing", value.asInstanceOf[js.Any])
+      inline def setJson_spacing(value: Double): Self = StObject.set(x, "json_spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson_spacingUndefined: Self = StObject.set(x, "json_spacing", js.undefined)
+      inline def setJson_spacingUndefined: Self = StObject.set(x, "json_spacing", js.undefined)
       
-      @scala.inline
-      def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setSecure(value: ISecureFileOptions): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: ISecureFileOptions): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -320,20 +252,16 @@ object mod {
   }
   object IFormats {
     
-    @scala.inline
-    def apply(ini: IFormat, json: IFormat): IFormats = {
+    inline def apply(ini: IFormat, json: IFormat): IFormats = {
       val __obj = js.Dynamic.literal(ini = ini.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFormats]
     }
     
-    @scala.inline
-    implicit class IFormatsMutableBuilder[Self <: IFormats] (val x: Self) extends AnyVal {
+    extension [Self <: IFormats](x: Self) {
       
-      @scala.inline
-      def setIni(value: IFormat): Self = StObject.set(x, "ini", value.asInstanceOf[js.Any])
+      inline def setIni(value: IFormat): Self = StObject.set(x, "ini", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: IFormat): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: IFormat): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
   }
   
@@ -347,23 +275,18 @@ object mod {
   }
   object ISecureFileOptions {
     
-    @scala.inline
-    def apply(secret: String): ISecureFileOptions = {
+    inline def apply(secret: String): ISecureFileOptions = {
       val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISecureFileOptions]
     }
     
-    @scala.inline
-    implicit class ISecureFileOptionsMutableBuilder[Self <: ISecureFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISecureFileOptions](x: Self) {
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+      inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
   

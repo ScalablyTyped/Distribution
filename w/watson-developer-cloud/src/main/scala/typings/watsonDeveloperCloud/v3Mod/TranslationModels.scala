@@ -12,19 +12,15 @@ trait TranslationModels extends StObject {
 }
 object TranslationModels {
   
-  @scala.inline
-  def apply(models: js.Array[TranslationModel]): TranslationModels = {
+  inline def apply(models: js.Array[TranslationModel]): TranslationModels = {
     val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationModels]
   }
   
-  @scala.inline
-  implicit class TranslationModelsMutableBuilder[Self <: TranslationModels] (val x: Self) extends AnyVal {
+  extension [Self <: TranslationModels](x: Self) {
     
-    @scala.inline
-    def setModels(value: js.Array[TranslationModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: js.Array[TranslationModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsVarargs(value: TranslationModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: TranslationModel*): Self = StObject.set(x, "models", js.Array(value :_*))
   }
 }

@@ -20,28 +20,21 @@ trait ListFileNamesOpts
 }
 object ListFileNamesOpts {
   
-  @scala.inline
-  def apply(bucketId: String, delimiter: String, maxFileCount: Double, prefix: String, startFileName: String): ListFileNamesOpts = {
+  inline def apply(bucketId: String, delimiter: String, maxFileCount: Double, prefix: String, startFileName: String): ListFileNamesOpts = {
     val __obj = js.Dynamic.literal(bucketId = bucketId.asInstanceOf[js.Any], delimiter = delimiter.asInstanceOf[js.Any], maxFileCount = maxFileCount.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], startFileName = startFileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFileNamesOpts]
   }
   
-  @scala.inline
-  implicit class ListFileNamesOptsMutableBuilder[Self <: ListFileNamesOpts] (val x: Self) extends AnyVal {
+  extension [Self <: ListFileNamesOpts](x: Self) {
     
-    @scala.inline
-    def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
+    inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileCount(value: Double): Self = StObject.set(x, "maxFileCount", value.asInstanceOf[js.Any])
+    inline def setMaxFileCount(value: Double): Self = StObject.set(x, "maxFileCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartFileName(value: String): Self = StObject.set(x, "startFileName", value.asInstanceOf[js.Any])
+    inline def setStartFileName(value: String): Self = StObject.set(x, "startFileName", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait ButtonDomButtomCommon extends StObject {
 }
 object ButtonDomButtomCommon {
   
-  @scala.inline
-  def apply(): ButtonDomButtomCommon = {
+  inline def apply(): ButtonDomButtomCommon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonDomButtomCommon]
   }
   
-  @scala.inline
-  implicit class ButtonDomButtomCommonMutableBuilder[Self <: ButtonDomButtomCommon] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonDomButtomCommon](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

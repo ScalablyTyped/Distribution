@@ -22,26 +22,20 @@ object groupSettingsMod {
   }
   object IGroupSettings {
     
-    @scala.inline
-    def apply(): IGroupSettings = {
+    inline def apply(): IGroupSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupSettings]
     }
     
-    @scala.inline
-    implicit class IGroupSettingsMutableBuilder[Self <: IGroupSettings] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupSettings](x: Self) {
       
-      @scala.inline
-      def setDefaultSort(value: SortDirection): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
+      inline def setDefaultSort(value: SortDirection): Self = StObject.set(x, "defaultSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSortUndefined: Self = StObject.set(x, "defaultSort", js.undefined)
+      inline def setDefaultSortUndefined: Self = StObject.set(x, "defaultSort", js.undefined)
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
     }
   }
 }

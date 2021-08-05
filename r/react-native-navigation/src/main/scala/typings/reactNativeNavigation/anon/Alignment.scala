@@ -30,34 +30,25 @@ trait Alignment extends StObject {
 }
 object Alignment {
   
-  @scala.inline
-  def apply(name: String): Alignment = {
+  inline def apply(name: String): Alignment = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alignment]
   }
   
-  @scala.inline
-  implicit class AlignmentMutableBuilder[Self <: Alignment] (val x: Self) extends AnyVal {
+  extension [Self <: Alignment](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: center | fill): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: center | fill): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassProps(value: js.Object): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
+    inline def setPassProps(value: js.Object): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
+    inline def setPassPropsUndefined: Self = StObject.set(x, "passProps", js.undefined)
   }
 }

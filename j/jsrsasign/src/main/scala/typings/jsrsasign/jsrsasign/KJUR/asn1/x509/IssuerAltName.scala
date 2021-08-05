@@ -42,8 +42,7 @@ trait IssuerAltName
 }
 object IssuerAltName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getExtnValueHex: () => String,
     getFreshValueHex: () => String,
@@ -60,13 +59,10 @@ object IssuerAltName {
     __obj.asInstanceOf[IssuerAltName]
   }
   
-  @scala.inline
-  implicit class IssuerAltNameMutableBuilder[Self <: IssuerAltName] (val x: Self) extends AnyVal {
+  extension [Self <: IssuerAltName](x: Self) {
     
-    @scala.inline
-    def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
+    inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetNameArray(value: js.Array[UriParam] => Unit): Self = StObject.set(x, "setNameArray", js.Any.fromFunction1(value))
+    inline def setSetNameArray(value: js.Array[UriParam] => Unit): Self = StObject.set(x, "setNameArray", js.Any.fromFunction1(value))
   }
 }

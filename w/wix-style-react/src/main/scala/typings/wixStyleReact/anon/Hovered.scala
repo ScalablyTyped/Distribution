@@ -14,22 +14,17 @@ trait Hovered extends StObject {
 }
 object Hovered {
   
-  @scala.inline
-  def apply(disabled: Boolean, hovered: Boolean, selected: Boolean): Hovered = {
+  inline def apply(disabled: Boolean, hovered: Boolean, selected: Boolean): Hovered = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], hovered = hovered.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hovered]
   }
   
-  @scala.inline
-  implicit class HoveredMutableBuilder[Self <: Hovered] (val x: Self) extends AnyVal {
+  extension [Self <: Hovered](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHovered(value: Boolean): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
+    inline def setHovered(value: Boolean): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

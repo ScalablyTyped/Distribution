@@ -13,19 +13,15 @@ trait TakeTypeProfileResponse extends StObject {
 }
 object TakeTypeProfileResponse {
   
-  @scala.inline
-  def apply(result: js.Array[ScriptTypeProfile]): TakeTypeProfileResponse = {
+  inline def apply(result: js.Array[ScriptTypeProfile]): TakeTypeProfileResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[TakeTypeProfileResponse]
   }
   
-  @scala.inline
-  implicit class TakeTypeProfileResponseMutableBuilder[Self <: TakeTypeProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TakeTypeProfileResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: js.Array[ScriptTypeProfile]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[ScriptTypeProfile]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: ScriptTypeProfile*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: ScriptTypeProfile*): Self = StObject.set(x, "result", js.Array(value :_*))
   }
 }

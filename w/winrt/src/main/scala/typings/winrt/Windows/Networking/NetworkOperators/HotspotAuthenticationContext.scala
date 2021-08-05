@@ -13,8 +13,7 @@ trait HotspotAuthenticationContext
      with IHotspotAuthenticationContext
 object HotspotAuthenticationContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abortAuthentication: Boolean => Unit,
     authenticationUrl: Uri,
     issueCredentials: (String, String, String, Boolean) => Unit,

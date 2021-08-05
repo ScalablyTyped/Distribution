@@ -124,101 +124,71 @@ trait AuthoringInfoProperties extends StObject {
 }
 object AuthoringInfoProperties {
   
-  @scala.inline
-  def apply(): AuthoringInfoProperties = {
+  inline def apply(): AuthoringInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthoringInfoProperties]
   }
   
-  @scala.inline
-  implicit class AuthoringInfoPropertiesMutableBuilder[Self <: AuthoringInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AuthoringInfoProperties](x: Self) {
     
-    @scala.inline
-    def setClassificationMethod(value: `equal-interval` | manual | `natural-breaks` | quantile | `standard-deviation`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
+    inline def setClassificationMethod(value: `equal-interval` | manual | `natural-breaks` | quantile | `standard-deviation`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationMethodUndefined: Self = StObject.set(x, "classificationMethod", js.undefined)
+    inline def setClassificationMethodUndefined: Self = StObject.set(x, "classificationMethod", js.undefined)
     
-    @scala.inline
-    def setColorRamp(value: ColorRampProperties): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
+    inline def setColorRamp(value: ColorRampProperties): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
+    inline def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
     
-    @scala.inline
-    def setField1(value: AuthoringInfoField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
+    inline def setField1(value: AuthoringInfoField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField1Undefined: Self = StObject.set(x, "field1", js.undefined)
+    inline def setField1Undefined: Self = StObject.set(x, "field1", js.undefined)
     
-    @scala.inline
-    def setField2(value: AuthoringInfoField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
+    inline def setField2(value: AuthoringInfoField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField2Undefined: Self = StObject.set(x, "field2", js.undefined)
+    inline def setField2Undefined: Self = StObject.set(x, "field2", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setLengthUnit(
+    inline def setLengthUnit(
       value: inches | feet_ | yards | miles_ | `nautical-miles` | millimeters | centimeters | decimeters | meters_ | kilometers_ | `decimal-degrees`
     ): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
+    inline def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
     
-    @scala.inline
-    def setMaxSliderValue(value: Double): Self = StObject.set(x, "maxSliderValue", value.asInstanceOf[js.Any])
+    inline def setMaxSliderValue(value: Double): Self = StObject.set(x, "maxSliderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSliderValueUndefined: Self = StObject.set(x, "maxSliderValue", js.undefined)
+    inline def setMaxSliderValueUndefined: Self = StObject.set(x, "maxSliderValue", js.undefined)
     
-    @scala.inline
-    def setMinSliderValue(value: Double): Self = StObject.set(x, "minSliderValue", value.asInstanceOf[js.Any])
+    inline def setMinSliderValue(value: Double): Self = StObject.set(x, "minSliderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSliderValueUndefined: Self = StObject.set(x, "minSliderValue", js.undefined)
+    inline def setMinSliderValueUndefined: Self = StObject.set(x, "minSliderValue", js.undefined)
     
-    @scala.inline
-    def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
+    inline def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumClassesUndefined: Self = StObject.set(x, "numClasses", js.undefined)
+    inline def setNumClassesUndefined: Self = StObject.set(x, "numClasses", js.undefined)
     
-    @scala.inline
-    def setStandardDeviationInterval(value: Double): Self = StObject.set(x, "standardDeviationInterval", value.asInstanceOf[js.Any])
+    inline def setStandardDeviationInterval(value: Double): Self = StObject.set(x, "standardDeviationInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardDeviationIntervalUndefined: Self = StObject.set(x, "standardDeviationInterval", js.undefined)
+    inline def setStandardDeviationIntervalUndefined: Self = StObject.set(x, "standardDeviationInterval", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size`
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisualVariables(value: js.Array[AuthoringInfoVisualVariableProperties]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
+    inline def setVisualVariables(value: js.Array[AuthoringInfoVisualVariableProperties]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
+    inline def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
     
-    @scala.inline
-    def setVisualVariablesVarargs(value: AuthoringInfoVisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: AuthoringInfoVisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
   }
 }

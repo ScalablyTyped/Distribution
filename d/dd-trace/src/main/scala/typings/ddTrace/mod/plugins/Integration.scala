@@ -19,25 +19,19 @@ trait Integration extends StObject {
 }
 object Integration {
   
-  @scala.inline
-  def apply(): Integration = {
+  inline def apply(): Integration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Integration]
   }
   
-  @scala.inline
-  implicit class IntegrationMutableBuilder[Self <: Integration] (val x: Self) extends AnyVal {
+  extension [Self <: Integration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setService(value: String | js.Any): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String | js.Any): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

@@ -12,11 +12,9 @@ object ring {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFunctionRing[A, B](ring: Ring[B]): Ring[js.Function1[/* a */ A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionRing")(ring.asInstanceOf[js.Any]).asInstanceOf[Ring[js.Function1[/* a */ A, B]]]
+  inline def getFunctionRing[A, B](ring: Ring[B]): Ring[js.Function1[/* a */ A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionRing")(ring.asInstanceOf[js.Any]).asInstanceOf[Ring[js.Function1[/* a */ A, B]]]
   
-  @scala.inline
-  def getTupleRing[T /* <: js.Array[Ring[js.Any]] */](
+  inline def getTupleRing[T /* <: js.Array[Ring[js.Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rings because its type T is not an array type */ rings: T
   ): Ring[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -28,6 +26,5 @@ object ring {
     */ typings.fpTs.fpTsStrings.getTupleRing & TopLevel[T]
   ]]
   
-  @scala.inline
-  def negate[A](ring: Ring[A]): js.Function1[/* a */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("negate")(ring.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, A]]
+  inline def negate[A](ring: Ring[A]): js.Function1[/* a */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("negate")(ring.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, A]]
 }

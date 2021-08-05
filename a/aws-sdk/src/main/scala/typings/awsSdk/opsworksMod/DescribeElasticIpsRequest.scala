@@ -23,34 +23,25 @@ trait DescribeElasticIpsRequest extends StObject {
 }
 object DescribeElasticIpsRequest {
   
-  @scala.inline
-  def apply(): DescribeElasticIpsRequest = {
+  inline def apply(): DescribeElasticIpsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeElasticIpsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeElasticIpsRequestMutableBuilder[Self <: DescribeElasticIpsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeElasticIpsRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setIps(value: Strings): Self = StObject.set(x, "Ips", value.asInstanceOf[js.Any])
+    inline def setIps(value: Strings): Self = StObject.set(x, "Ips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpsUndefined: Self = StObject.set(x, "Ips", js.undefined)
+    inline def setIpsUndefined: Self = StObject.set(x, "Ips", js.undefined)
     
-    @scala.inline
-    def setIpsVarargs(value: String*): Self = StObject.set(x, "Ips", js.Array(value :_*))
+    inline def setIpsVarargs(value: String*): Self = StObject.set(x, "Ips", js.Array(value :_*))
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

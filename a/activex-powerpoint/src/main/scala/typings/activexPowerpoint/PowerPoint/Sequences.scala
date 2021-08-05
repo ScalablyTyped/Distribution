@@ -19,6 +19,6 @@ trait Sequences extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.Sequences_typekey")
+  /* private */ @JSName("PowerPoint.Sequences_typekey")
   var PowerPointDotSequences_typekey: Sequences = js.native
 }

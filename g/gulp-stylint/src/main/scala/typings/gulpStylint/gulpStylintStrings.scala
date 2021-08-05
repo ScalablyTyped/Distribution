@@ -8,6 +8,5 @@ object gulpStylintStrings {
   
   @js.native
   sealed trait fail extends StObject
-  @scala.inline
-  def fail: fail = "fail".asInstanceOf[fail]
+  inline def fail: fail = "fail".asInstanceOf[fail]
 }

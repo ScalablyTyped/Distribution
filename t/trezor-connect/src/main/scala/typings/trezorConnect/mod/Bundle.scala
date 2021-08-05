@@ -10,19 +10,15 @@ trait Bundle[T] extends StObject {
 }
 object Bundle {
   
-  @scala.inline
-  def apply[T](bundle: js.Array[T]): Bundle[T] = {
+  inline def apply[T](bundle: js.Array[T]): Bundle[T] = {
     val __obj = js.Dynamic.literal(bundle = bundle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundle[T]]
   }
   
-  @scala.inline
-  implicit class BundleMutableBuilder[Self <: Bundle[?], T] (val x: Self & Bundle[T]) extends AnyVal {
+  extension [Self <: Bundle[?], T](x: Self & Bundle[T]) {
     
-    @scala.inline
-    def setBundle(value: js.Array[T]): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
+    inline def setBundle(value: js.Array[T]): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleVarargs(value: T*): Self = StObject.set(x, "bundle", js.Array(value :_*))
+    inline def setBundleVarargs(value: T*): Self = StObject.set(x, "bundle", js.Array(value :_*))
   }
 }

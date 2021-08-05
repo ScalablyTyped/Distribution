@@ -10,16 +10,13 @@ trait EnumValuesFreshLogin extends StObject {
 }
 object EnumValuesFreshLogin {
   
-  @scala.inline
-  def apply(enumValues: FreshLogin): EnumValuesFreshLogin = {
+  inline def apply(enumValues: FreshLogin): EnumValuesFreshLogin = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFreshLogin]
   }
   
-  @scala.inline
-  implicit class EnumValuesFreshLoginMutableBuilder[Self <: EnumValuesFreshLogin] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFreshLogin](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FreshLogin): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FreshLogin): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

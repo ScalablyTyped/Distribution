@@ -39,7 +39,7 @@ class IonFabButton protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   var ionBlur: EventEmitter[CustomEvent[js.Any]] = js.native
   
@@ -69,5 +69,5 @@ class IonFabButton protected ()
   /* CompleteClass */
   var `type`: submit | reset | button = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

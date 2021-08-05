@@ -24,8 +24,7 @@ trait GlideUser extends StObject {
 }
 object GlideUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCompanyID: () => String,
     getDisplayName: () => String,
     getID: () => String,
@@ -39,31 +38,22 @@ object GlideUser {
     __obj.asInstanceOf[GlideUser]
   }
   
-  @scala.inline
-  implicit class GlideUserMutableBuilder[Self <: GlideUser] (val x: Self) extends AnyVal {
+  extension [Self <: GlideUser](x: Self) {
     
-    @scala.inline
-    def setGetCompanyID(value: () => String): Self = StObject.set(x, "getCompanyID", js.Any.fromFunction0(value))
+    inline def setGetCompanyID(value: () => String): Self = StObject.set(x, "getCompanyID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayName(value: () => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction0(value))
+    inline def setGetDisplayName(value: () => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
+    inline def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreference(value: String => String): Self = StObject.set(x, "getPreference", js.Any.fromFunction1(value))
+    inline def setGetPreference(value: String => String): Self = StObject.set(x, "getPreference", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasRole(value: String => Boolean): Self = StObject.set(x, "hasRole", js.Any.fromFunction1(value))
+    inline def setHasRole(value: String => Boolean): Self = StObject.set(x, "hasRole", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsMemberOf(value: String => Boolean): Self = StObject.set(x, "isMemberOf", js.Any.fromFunction1(value))
+    inline def setIsMemberOf(value: String => Boolean): Self = StObject.set(x, "isMemberOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSavePreference(value: (String, String) => Unit): Self = StObject.set(x, "savePreference", js.Any.fromFunction2(value))
+    inline def setSavePreference(value: (String, String) => Unit): Self = StObject.set(x, "savePreference", js.Any.fromFunction2(value))
   }
 }

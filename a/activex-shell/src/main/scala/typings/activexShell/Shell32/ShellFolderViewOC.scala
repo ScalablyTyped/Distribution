@@ -19,25 +19,21 @@ trait ShellFolderViewOC extends StObject {
   /** Set the ShellFolderView object to monitor events of. */
   def SetFolderView(pdisp: ShellFolderView): Unit
   
-  @JSName("Shell32.ShellFolderViewOC_typekey")
+  /* private */ @JSName("Shell32.ShellFolderViewOC_typekey")
   var Shell32DotShellFolderViewOC_typekey: ShellFolderViewOC
 }
 object ShellFolderViewOC {
   
-  @scala.inline
-  def apply(SetFolderView: ShellFolderView => Unit, Shell32DotShellFolderViewOC_typekey: ShellFolderViewOC): ShellFolderViewOC = {
+  inline def apply(SetFolderView: ShellFolderView => Unit, Shell32DotShellFolderViewOC_typekey: ShellFolderViewOC): ShellFolderViewOC = {
     val __obj = js.Dynamic.literal(SetFolderView = js.Any.fromFunction1(SetFolderView))
     __obj.updateDynamic("Shell32.ShellFolderViewOC_typekey")(Shell32DotShellFolderViewOC_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShellFolderViewOC]
   }
   
-  @scala.inline
-  implicit class ShellFolderViewOCMutableBuilder[Self <: ShellFolderViewOC] (val x: Self) extends AnyVal {
+  extension [Self <: ShellFolderViewOC](x: Self) {
     
-    @scala.inline
-    def setSetFolderView(value: ShellFolderView => Unit): Self = StObject.set(x, "SetFolderView", js.Any.fromFunction1(value))
+    inline def setSetFolderView(value: ShellFolderView => Unit): Self = StObject.set(x, "SetFolderView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShell32DotShellFolderViewOC_typekey(value: ShellFolderViewOC): Self = StObject.set(x, "Shell32.ShellFolderViewOC_typekey", value.asInstanceOf[js.Any])
+    inline def setShell32DotShellFolderViewOC_typekey(value: ShellFolderViewOC): Self = StObject.set(x, "Shell32.ShellFolderViewOC_typekey", value.asInstanceOf[js.Any])
   }
 }

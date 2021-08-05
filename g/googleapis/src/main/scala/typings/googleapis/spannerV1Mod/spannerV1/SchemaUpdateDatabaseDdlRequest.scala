@@ -42,28 +42,21 @@ trait SchemaUpdateDatabaseDdlRequest extends StObject {
 }
 object SchemaUpdateDatabaseDdlRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateDatabaseDdlRequest = {
+  inline def apply(): SchemaUpdateDatabaseDdlRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateDatabaseDdlRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateDatabaseDdlRequestMutableBuilder[Self <: SchemaUpdateDatabaseDdlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateDatabaseDdlRequest](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setStatements(value: js.Array[String]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: js.Array[String]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+    inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
-    @scala.inline
-    def setStatementsVarargs(value: String*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: String*): Self = StObject.set(x, "statements", js.Array(value :_*))
   }
 }

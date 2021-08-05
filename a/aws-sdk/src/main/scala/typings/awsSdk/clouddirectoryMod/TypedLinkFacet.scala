@@ -23,8 +23,7 @@ trait TypedLinkFacet extends StObject {
 }
 object TypedLinkFacet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: TypedLinkAttributeDefinitionList,
     IdentityAttributeOrder: AttributeNameList,
     Name: TypedLinkName
@@ -33,22 +32,16 @@ object TypedLinkFacet {
     __obj.asInstanceOf[TypedLinkFacet]
   }
   
-  @scala.inline
-  implicit class TypedLinkFacetMutableBuilder[Self <: TypedLinkFacet] (val x: Self) extends AnyVal {
+  extension [Self <: TypedLinkFacet](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: TypedLinkAttributeDefinitionList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: TypedLinkAttributeDefinitionList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: TypedLinkAttributeDefinition*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: TypedLinkAttributeDefinition*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentityAttributeOrder(value: AttributeNameList): Self = StObject.set(x, "IdentityAttributeOrder", value.asInstanceOf[js.Any])
+    inline def setIdentityAttributeOrder(value: AttributeNameList): Self = StObject.set(x, "IdentityAttributeOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value :_*))
+    inline def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: TypedLinkName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TypedLinkName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

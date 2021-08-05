@@ -31,8 +31,7 @@ trait XConstantsTypeDescription
 }
 object XConstantsTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Constants: SafeArray[XConstantTypeDescription],
     Name: String,
     TypeClass: TypeClass,
@@ -47,13 +46,10 @@ object XConstantsTypeDescription {
     __obj.asInstanceOf[XConstantsTypeDescription]
   }
   
-  @scala.inline
-  implicit class XConstantsTypeDescriptionMutableBuilder[Self <: XConstantsTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XConstantsTypeDescription](x: Self) {
     
-    @scala.inline
-    def setConstants(value: SafeArray[XConstantTypeDescription]): Self = StObject.set(x, "Constants", value.asInstanceOf[js.Any])
+    inline def setConstants(value: SafeArray[XConstantTypeDescription]): Self = StObject.set(x, "Constants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConstants(value: () => SafeArray[XConstantTypeDescription]): Self = StObject.set(x, "getConstants", js.Any.fromFunction0(value))
+    inline def setGetConstants(value: () => SafeArray[XConstantTypeDescription]): Self = StObject.set(x, "getConstants", js.Any.fromFunction0(value))
   }
 }

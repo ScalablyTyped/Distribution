@@ -26,23 +26,18 @@ object meta {
     }
     object LabelSelector {
       
-      @scala.inline
-      def apply(matchExpressions: js.Array[LabelSelectorRequirement], matchLabels: StringDictionary[String]): LabelSelector = {
+      inline def apply(matchExpressions: js.Array[LabelSelectorRequirement], matchLabels: StringDictionary[String]): LabelSelector = {
         val __obj = js.Dynamic.literal(matchExpressions = matchExpressions.asInstanceOf[js.Any], matchLabels = matchLabels.asInstanceOf[js.Any])
         __obj.asInstanceOf[LabelSelector]
       }
       
-      @scala.inline
-      implicit class LabelSelectorMutableBuilder[Self <: LabelSelector] (val x: Self) extends AnyVal {
+      extension [Self <: LabelSelector](x: Self) {
         
-        @scala.inline
-        def setMatchExpressions(value: js.Array[LabelSelectorRequirement]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
+        inline def setMatchExpressions(value: js.Array[LabelSelectorRequirement]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatchExpressionsVarargs(value: LabelSelectorRequirement*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
+        inline def setMatchExpressionsVarargs(value: LabelSelectorRequirement*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
         
-        @scala.inline
-        def setMatchLabels(value: StringDictionary[String]): Self = StObject.set(x, "matchLabels", value.asInstanceOf[js.Any])
+        inline def setMatchLabels(value: StringDictionary[String]): Self = StObject.set(x, "matchLabels", value.asInstanceOf[js.Any])
       }
     }
     
@@ -68,26 +63,20 @@ object meta {
     }
     object LabelSelectorRequirement {
       
-      @scala.inline
-      def apply(key: String, operator: String, values: js.Array[String]): LabelSelectorRequirement = {
+      inline def apply(key: String, operator: String, values: js.Array[String]): LabelSelectorRequirement = {
         val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
         __obj.asInstanceOf[LabelSelectorRequirement]
       }
       
-      @scala.inline
-      implicit class LabelSelectorRequirementMutableBuilder[Self <: LabelSelectorRequirement] (val x: Self) extends AnyVal {
+      extension [Self <: LabelSelectorRequirement](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+        inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
       }
     }
     
@@ -120,26 +109,20 @@ object meta {
     }
     object ListMeta {
       
-      @scala.inline
-      def apply(continue: String, remainingItemCount: Double, resourceVersion: String, selfLink: String): ListMeta = {
+      inline def apply(continue: String, remainingItemCount: Double, resourceVersion: String, selfLink: String): ListMeta = {
         val __obj = js.Dynamic.literal(continue = continue.asInstanceOf[js.Any], remainingItemCount = remainingItemCount.asInstanceOf[js.Any], resourceVersion = resourceVersion.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any])
         __obj.asInstanceOf[ListMeta]
       }
       
-      @scala.inline
-      implicit class ListMetaMutableBuilder[Self <: ListMeta] (val x: Self) extends AnyVal {
+      extension [Self <: ListMeta](x: Self) {
         
-        @scala.inline
-        def setContinue(value: String): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
+        inline def setContinue(value: String): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemainingItemCount(value: Double): Self = StObject.set(x, "remainingItemCount", value.asInstanceOf[js.Any])
+        inline def setRemainingItemCount(value: Double): Self = StObject.set(x, "remainingItemCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+        inline def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+        inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
       }
     }
     
@@ -180,8 +163,7 @@ object meta {
     }
     object ManagedFieldsEntry {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         apiVersion: String,
         fieldsType: String,
         fieldsV1: js.Any,
@@ -193,26 +175,19 @@ object meta {
         __obj.asInstanceOf[ManagedFieldsEntry]
       }
       
-      @scala.inline
-      implicit class ManagedFieldsEntryMutableBuilder[Self <: ManagedFieldsEntry] (val x: Self) extends AnyVal {
+      extension [Self <: ManagedFieldsEntry](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsType(value: String): Self = StObject.set(x, "fieldsType", value.asInstanceOf[js.Any])
+        inline def setFieldsType(value: String): Self = StObject.set(x, "fieldsType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsV1(value: js.Any): Self = StObject.set(x, "fieldsV1", value.asInstanceOf[js.Any])
+        inline def setFieldsV1(value: js.Any): Self = StObject.set(x, "fieldsV1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setManager(value: String): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+        inline def setManager(value: String): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+        inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+        inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       }
     }
     
@@ -319,8 +294,7 @@ object meta {
     }
     object ObjectMeta {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         annotations: StringDictionary[String],
         clusterName: String,
         creationTimestamp: String,
@@ -342,65 +316,45 @@ object meta {
         __obj.asInstanceOf[ObjectMeta]
       }
       
-      @scala.inline
-      implicit class ObjectMetaMutableBuilder[Self <: ObjectMeta] (val x: Self) extends AnyVal {
+      extension [Self <: ObjectMeta](x: Self) {
         
-        @scala.inline
-        def setAnnotations(value: StringDictionary[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+        inline def setAnnotations(value: StringDictionary[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+        inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+        inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeletionGracePeriodSeconds(value: Double): Self = StObject.set(x, "deletionGracePeriodSeconds", value.asInstanceOf[js.Any])
+        inline def setDeletionGracePeriodSeconds(value: Double): Self = StObject.set(x, "deletionGracePeriodSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeletionTimestamp(value: String): Self = StObject.set(x, "deletionTimestamp", value.asInstanceOf[js.Any])
+        inline def setDeletionTimestamp(value: String): Self = StObject.set(x, "deletionTimestamp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFinalizers(value: js.Array[String]): Self = StObject.set(x, "finalizers", value.asInstanceOf[js.Any])
+        inline def setFinalizers(value: js.Array[String]): Self = StObject.set(x, "finalizers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFinalizersVarargs(value: String*): Self = StObject.set(x, "finalizers", js.Array(value :_*))
+        inline def setFinalizersVarargs(value: String*): Self = StObject.set(x, "finalizers", js.Array(value :_*))
         
-        @scala.inline
-        def setGenerateName(value: String): Self = StObject.set(x, "generateName", value.asInstanceOf[js.Any])
+        inline def setGenerateName(value: String): Self = StObject.set(x, "generateName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+        inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+        inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setManagedFields(value: js.Array[ManagedFieldsEntry]): Self = StObject.set(x, "managedFields", value.asInstanceOf[js.Any])
+        inline def setManagedFields(value: js.Array[ManagedFieldsEntry]): Self = StObject.set(x, "managedFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setManagedFieldsVarargs(value: ManagedFieldsEntry*): Self = StObject.set(x, "managedFields", js.Array(value :_*))
+        inline def setManagedFieldsVarargs(value: ManagedFieldsEntry*): Self = StObject.set(x, "managedFields", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOwnerReferences(value: js.Array[OwnerReference]): Self = StObject.set(x, "ownerReferences", value.asInstanceOf[js.Any])
+        inline def setOwnerReferences(value: js.Array[OwnerReference]): Self = StObject.set(x, "ownerReferences", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOwnerReferencesVarargs(value: OwnerReference*): Self = StObject.set(x, "ownerReferences", js.Array(value :_*))
+        inline def setOwnerReferencesVarargs(value: OwnerReference*): Self = StObject.set(x, "ownerReferences", js.Array(value :_*))
         
-        @scala.inline
-        def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+        inline def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+        inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       }
     }
     
@@ -441,8 +395,7 @@ object meta {
     }
     object OwnerReference {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         apiVersion: String,
         blockOwnerDeletion: Boolean,
         controller: Boolean,
@@ -454,26 +407,19 @@ object meta {
         __obj.asInstanceOf[OwnerReference]
       }
       
-      @scala.inline
-      implicit class OwnerReferenceMutableBuilder[Self <: OwnerReference] (val x: Self) extends AnyVal {
+      extension [Self <: OwnerReference](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockOwnerDeletion(value: Boolean): Self = StObject.set(x, "blockOwnerDeletion", value.asInstanceOf[js.Any])
+        inline def setBlockOwnerDeletion(value: Boolean): Self = StObject.set(x, "blockOwnerDeletion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setController(value: Boolean): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+        inline def setController(value: Boolean): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       }
     }
     
@@ -503,23 +449,18 @@ object meta {
     }
     object StatusCause {
       
-      @scala.inline
-      def apply(field: String, message: String, reason: String): StatusCause = {
+      inline def apply(field: String, message: String, reason: String): StatusCause = {
         val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
         __obj.asInstanceOf[StatusCause]
       }
       
-      @scala.inline
-      implicit class StatusCauseMutableBuilder[Self <: StatusCause] (val x: Self) extends AnyVal {
+      extension [Self <: StatusCause](x: Self) {
         
-        @scala.inline
-        def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+        inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       }
     }
     
@@ -560,8 +501,7 @@ object meta {
     }
     object StatusDetails {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         causes: js.Array[StatusCause],
         group: String,
         kind: String,
@@ -573,29 +513,21 @@ object meta {
         __obj.asInstanceOf[StatusDetails]
       }
       
-      @scala.inline
-      implicit class StatusDetailsMutableBuilder[Self <: StatusDetails] (val x: Self) extends AnyVal {
+      extension [Self <: StatusDetails](x: Self) {
         
-        @scala.inline
-        def setCauses(value: js.Array[StatusCause]): Self = StObject.set(x, "causes", value.asInstanceOf[js.Any])
+        inline def setCauses(value: js.Array[StatusCause]): Self = StObject.set(x, "causes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCausesVarargs(value: StatusCause*): Self = StObject.set(x, "causes", js.Array(value :_*))
+        inline def setCausesVarargs(value: StatusCause*): Self = StObject.set(x, "causes", js.Array(value :_*))
         
-        @scala.inline
-        def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRetryAfterSeconds(value: Double): Self = StObject.set(x, "retryAfterSeconds", value.asInstanceOf[js.Any])
+        inline def setRetryAfterSeconds(value: Double): Self = StObject.set(x, "retryAfterSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+        inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       }
     }
   }

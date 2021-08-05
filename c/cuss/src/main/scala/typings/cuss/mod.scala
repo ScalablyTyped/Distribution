@@ -21,8 +21,7 @@ object mod extends Shortcut {
   /* phrase */ StringDictionary[SurenessRating]
   object Cuss {
     
-    @scala.inline
-    def apply(): Cuss = {
+    inline def apply(): Cuss = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cuss]
     }
@@ -36,14 +35,11 @@ object mod extends Shortcut {
   trait SurenessRating extends StObject
   object SurenessRating {
     
-    @scala.inline
-    def `0`: typings.cuss.cussNumbers.`0` = 0.asInstanceOf[typings.cuss.cussNumbers.`0`]
+    inline def `0`: typings.cuss.cussNumbers.`0` = 0.asInstanceOf[typings.cuss.cussNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.cuss.cussNumbers.`1` = 1.asInstanceOf[typings.cuss.cussNumbers.`1`]
+    inline def `1`: typings.cuss.cussNumbers.`1` = 1.asInstanceOf[typings.cuss.cussNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.cuss.cussNumbers.`2` = 2.asInstanceOf[typings.cuss.cussNumbers.`2`]
+    inline def `2`: typings.cuss.cussNumbers.`2` = 2.asInstanceOf[typings.cuss.cussNumbers.`2`]
   }
   
   type _To = Cuss

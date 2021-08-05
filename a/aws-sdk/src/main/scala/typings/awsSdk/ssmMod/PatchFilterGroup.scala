@@ -13,19 +13,15 @@ trait PatchFilterGroup extends StObject {
 }
 object PatchFilterGroup {
   
-  @scala.inline
-  def apply(PatchFilters: PatchFilterList): PatchFilterGroup = {
+  inline def apply(PatchFilters: PatchFilterList): PatchFilterGroup = {
     val __obj = js.Dynamic.literal(PatchFilters = PatchFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchFilterGroup]
   }
   
-  @scala.inline
-  implicit class PatchFilterGroupMutableBuilder[Self <: PatchFilterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: PatchFilterGroup](x: Self) {
     
-    @scala.inline
-    def setPatchFilters(value: PatchFilterList): Self = StObject.set(x, "PatchFilters", value.asInstanceOf[js.Any])
+    inline def setPatchFilters(value: PatchFilterList): Self = StObject.set(x, "PatchFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchFiltersVarargs(value: PatchFilter*): Self = StObject.set(x, "PatchFilters", js.Array(value :_*))
+    inline def setPatchFiltersVarargs(value: PatchFilter*): Self = StObject.set(x, "PatchFilters", js.Array(value :_*))
   }
 }

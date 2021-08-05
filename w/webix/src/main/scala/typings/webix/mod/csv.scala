@@ -20,6 +20,5 @@ trait csv extends StObject {
 }
 object csv {
   
-  @scala.inline
-  def apply: typings.webix.webix.csv = ^.asInstanceOf[js.Dynamic].selectDynamic("csv").asInstanceOf[typings.webix.webix.csv]
+  inline def apply: typings.webix.webix.csv = ^.asInstanceOf[js.Dynamic].selectDynamic("csv").asInstanceOf[typings.webix.webix.csv]
 }

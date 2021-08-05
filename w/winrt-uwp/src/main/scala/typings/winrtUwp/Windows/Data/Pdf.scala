@@ -62,23 +62,18 @@ object Pdf {
   }
   object PdfDocument {
     
-    @scala.inline
-    def apply(getPage: Double => PdfPage, isPasswordProtected: Boolean, pageCount: Double): PdfDocument = {
+    inline def apply(getPage: Double => PdfPage, isPasswordProtected: Boolean, pageCount: Double): PdfDocument = {
       val __obj = js.Dynamic.literal(getPage = js.Any.fromFunction1(getPage), isPasswordProtected = isPasswordProtected.asInstanceOf[js.Any], pageCount = pageCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[PdfDocument]
     }
     
-    @scala.inline
-    implicit class PdfDocumentMutableBuilder[Self <: PdfDocument] (val x: Self) extends AnyVal {
+    extension [Self <: PdfDocument](x: Self) {
       
-      @scala.inline
-      def setGetPage(value: Double => PdfPage): Self = StObject.set(x, "getPage", js.Any.fromFunction1(value))
+      inline def setGetPage(value: Double => PdfPage): Self = StObject.set(x, "getPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsPasswordProtected(value: Boolean): Self = StObject.set(x, "isPasswordProtected", value.asInstanceOf[js.Any])
+      inline def setIsPasswordProtected(value: Boolean): Self = StObject.set(x, "isPasswordProtected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
+      inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,29 +140,22 @@ object Pdf {
   }
   object PdfPageDimensions {
     
-    @scala.inline
-    def apply(artBox: Rect, bleedBox: Rect, cropBox: Rect, mediaBox: Rect, trimBox: Rect): PdfPageDimensions = {
+    inline def apply(artBox: Rect, bleedBox: Rect, cropBox: Rect, mediaBox: Rect, trimBox: Rect): PdfPageDimensions = {
       val __obj = js.Dynamic.literal(artBox = artBox.asInstanceOf[js.Any], bleedBox = bleedBox.asInstanceOf[js.Any], cropBox = cropBox.asInstanceOf[js.Any], mediaBox = mediaBox.asInstanceOf[js.Any], trimBox = trimBox.asInstanceOf[js.Any])
       __obj.asInstanceOf[PdfPageDimensions]
     }
     
-    @scala.inline
-    implicit class PdfPageDimensionsMutableBuilder[Self <: PdfPageDimensions] (val x: Self) extends AnyVal {
+    extension [Self <: PdfPageDimensions](x: Self) {
       
-      @scala.inline
-      def setArtBox(value: Rect): Self = StObject.set(x, "artBox", value.asInstanceOf[js.Any])
+      inline def setArtBox(value: Rect): Self = StObject.set(x, "artBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBleedBox(value: Rect): Self = StObject.set(x, "bleedBox", value.asInstanceOf[js.Any])
+      inline def setBleedBox(value: Rect): Self = StObject.set(x, "bleedBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropBox(value: Rect): Self = StObject.set(x, "cropBox", value.asInstanceOf[js.Any])
+      inline def setCropBox(value: Rect): Self = StObject.set(x, "cropBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaBox(value: Rect): Self = StObject.set(x, "mediaBox", value.asInstanceOf[js.Any])
+      inline def setMediaBox(value: Rect): Self = StObject.set(x, "mediaBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimBox(value: Rect): Self = StObject.set(x, "trimBox", value.asInstanceOf[js.Any])
+      inline def setTrimBox(value: Rect): Self = StObject.set(x, "trimBox", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,8 +182,7 @@ object Pdf {
   }
   object PdfPageRenderOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundColor: Color,
       bitmapEncoderId: String,
       destinationHeight: Double,
@@ -207,26 +194,19 @@ object Pdf {
       __obj.asInstanceOf[PdfPageRenderOptions]
     }
     
-    @scala.inline
-    implicit class PdfPageRenderOptionsMutableBuilder[Self <: PdfPageRenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PdfPageRenderOptions](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitmapEncoderId(value: String): Self = StObject.set(x, "bitmapEncoderId", value.asInstanceOf[js.Any])
+      inline def setBitmapEncoderId(value: String): Self = StObject.set(x, "bitmapEncoderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationHeight(value: Double): Self = StObject.set(x, "destinationHeight", value.asInstanceOf[js.Any])
+      inline def setDestinationHeight(value: Double): Self = StObject.set(x, "destinationHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationWidth(value: Double): Self = StObject.set(x, "destinationWidth", value.asInstanceOf[js.Any])
+      inline def setDestinationWidth(value: Double): Self = StObject.set(x, "destinationWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIgnoringHighContrast(value: Boolean): Self = StObject.set(x, "isIgnoringHighContrast", value.asInstanceOf[js.Any])
+      inline def setIsIgnoringHighContrast(value: Boolean): Self = StObject.set(x, "isIgnoringHighContrast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceRect(value: Rect): Self = StObject.set(x, "sourceRect", value.asInstanceOf[js.Any])
+      inline def setSourceRect(value: Rect): Self = StObject.set(x, "sourceRect", value.asInstanceOf[js.Any])
     }
   }
 }

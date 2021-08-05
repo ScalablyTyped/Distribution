@@ -12,16 +12,13 @@ trait SwitchParams
 }
 object SwitchParams {
   
-  @scala.inline
-  def apply(caseIndex: Double): SwitchParams = {
+  inline def apply(caseIndex: Double): SwitchParams = {
     val __obj = js.Dynamic.literal(caseIndex = caseIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchParams]
   }
   
-  @scala.inline
-  implicit class SwitchParamsMutableBuilder[Self <: SwitchParams] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchParams](x: Self) {
     
-    @scala.inline
-    def setCaseIndex(value: Double): Self = StObject.set(x, "caseIndex", value.asInstanceOf[js.Any])
+    inline def setCaseIndex(value: Double): Self = StObject.set(x, "caseIndex", value.asInstanceOf[js.Any])
   }
 }

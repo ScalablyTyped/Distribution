@@ -23,55 +23,39 @@ trait PartialPickImplkeyofImplLogging extends StObject {
 }
 object PartialPickImplkeyofImplLogging {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplLogging = {
+  inline def apply(): PartialPickImplkeyofImplLogging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplLogging]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplLoggingMutableBuilder[Self <: PartialPickImplkeyofImplLogging] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplLogging](x: Self) {
     
-    @scala.inline
-    def setLogging(value: String): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: String): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: String): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: String): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setNoResults(value: String): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
+    inline def setNoResults(value: String): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
+    inline def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
     
-    @scala.inline
-    def setNoTemplate(value: String): Self = StObject.set(x, "noTemplate", value.asInstanceOf[js.Any])
+    inline def setNoTemplate(value: String): Self = StObject.set(x, "noTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoTemplateUndefined: Self = StObject.set(x, "noTemplate", js.undefined)
+    inline def setNoTemplateUndefined: Self = StObject.set(x, "noTemplate", js.undefined)
     
-    @scala.inline
-    def setServerError(value: String): Self = StObject.set(x, "serverError", value.asInstanceOf[js.Any])
+    inline def setServerError(value: String): Self = StObject.set(x, "serverError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerErrorUndefined: Self = StObject.set(x, "serverError", js.undefined)
+    inline def setServerErrorUndefined: Self = StObject.set(x, "serverError", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

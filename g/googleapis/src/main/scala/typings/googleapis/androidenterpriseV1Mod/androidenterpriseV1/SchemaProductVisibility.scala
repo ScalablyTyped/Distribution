@@ -28,37 +28,27 @@ trait SchemaProductVisibility extends StObject {
 }
 object SchemaProductVisibility {
   
-  @scala.inline
-  def apply(): SchemaProductVisibility = {
+  inline def apply(): SchemaProductVisibility = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductVisibility]
   }
   
-  @scala.inline
-  implicit class SchemaProductVisibilityMutableBuilder[Self <: SchemaProductVisibility] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductVisibility](x: Self) {
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setTrackIds(value: js.Array[String]): Self = StObject.set(x, "trackIds", value.asInstanceOf[js.Any])
+    inline def setTrackIds(value: js.Array[String]): Self = StObject.set(x, "trackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackIdsUndefined: Self = StObject.set(x, "trackIds", js.undefined)
+    inline def setTrackIdsUndefined: Self = StObject.set(x, "trackIds", js.undefined)
     
-    @scala.inline
-    def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value :_*))
+    inline def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTracks(value: js.Array[String]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: js.Array[String]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
+    inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    @scala.inline
-    def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

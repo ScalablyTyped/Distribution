@@ -24,8 +24,7 @@ trait DataPilotFields
      with XNameAccess
 object DataPilotFields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,

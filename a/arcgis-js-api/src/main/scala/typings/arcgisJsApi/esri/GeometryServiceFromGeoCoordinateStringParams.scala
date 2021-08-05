@@ -48,8 +48,7 @@ trait GeometryServiceFromGeoCoordinateStringParams
 }
 object GeometryServiceFromGeoCoordinateStringParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -60,28 +59,20 @@ object GeometryServiceFromGeoCoordinateStringParams {
     __obj.asInstanceOf[GeometryServiceFromGeoCoordinateStringParams]
   }
   
-  @scala.inline
-  implicit class GeometryServiceFromGeoCoordinateStringParamsMutableBuilder[Self <: GeometryServiceFromGeoCoordinateStringParams] (val x: Self) extends AnyVal {
+  extension [Self <: GeometryServiceFromGeoCoordinateStringParams](x: Self) {
     
-    @scala.inline
-    def setConversionMode(value: String): Self = StObject.set(x, "conversionMode", value.asInstanceOf[js.Any])
+    inline def setConversionMode(value: String): Self = StObject.set(x, "conversionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionModeUndefined: Self = StObject.set(x, "conversionMode", js.undefined)
+    inline def setConversionModeUndefined: Self = StObject.set(x, "conversionMode", js.undefined)
     
-    @scala.inline
-    def setConversionType(value: mrgs | usng | utm | `geo-ref` | gars | dms | ddm | dd): Self = StObject.set(x, "conversionType", value.asInstanceOf[js.Any])
+    inline def setConversionType(value: mrgs | usng | utm | `geo-ref` | gars | dms | ddm | dd): Self = StObject.set(x, "conversionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionTypeUndefined: Self = StObject.set(x, "conversionType", js.undefined)
+    inline def setConversionTypeUndefined: Self = StObject.set(x, "conversionType", js.undefined)
     
-    @scala.inline
-    def setSr(value: SpatialReference | String | Double): Self = StObject.set(x, "sr", value.asInstanceOf[js.Any])
+    inline def setSr(value: SpatialReference | String | Double): Self = StObject.set(x, "sr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
+    inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
   }
 }

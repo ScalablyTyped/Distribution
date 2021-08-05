@@ -12,8 +12,7 @@ object sideEffectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Instantiable]
+  inline def default(): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Instantiable]
   
   trait SideEffectProps extends StObject {
     
@@ -25,29 +24,22 @@ object sideEffectMod {
   }
   object SideEffectProps {
     
-    @scala.inline
-    def apply(reduceComponentsToState: (js.Array[ReactElement], js.Any) => State): SideEffectProps = {
+    inline def apply(reduceComponentsToState: (js.Array[ReactElement], js.Any) => State): SideEffectProps = {
       val __obj = js.Dynamic.literal(reduceComponentsToState = js.Any.fromFunction2(reduceComponentsToState))
       __obj.asInstanceOf[SideEffectProps]
     }
     
-    @scala.inline
-    implicit class SideEffectPropsMutableBuilder[Self <: SideEffectProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideEffectProps](x: Self) {
       
-      @scala.inline
-      def setHandleStateChange(value: /* state */ State => Unit): Self = StObject.set(x, "handleStateChange", js.Any.fromFunction1(value))
+      inline def setHandleStateChange(value: /* state */ State => Unit): Self = StObject.set(x, "handleStateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleStateChangeUndefined: Self = StObject.set(x, "handleStateChange", js.undefined)
+      inline def setHandleStateChangeUndefined: Self = StObject.set(x, "handleStateChange", js.undefined)
       
-      @scala.inline
-      def setInAmpMode(value: Boolean): Self = StObject.set(x, "inAmpMode", value.asInstanceOf[js.Any])
+      inline def setInAmpMode(value: Boolean): Self = StObject.set(x, "inAmpMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInAmpModeUndefined: Self = StObject.set(x, "inAmpMode", js.undefined)
+      inline def setInAmpModeUndefined: Self = StObject.set(x, "inAmpMode", js.undefined)
       
-      @scala.inline
-      def setReduceComponentsToState(value: (js.Array[ReactElement], js.Any) => State): Self = StObject.set(x, "reduceComponentsToState", js.Any.fromFunction2(value))
+      inline def setReduceComponentsToState(value: (js.Array[ReactElement], js.Any) => State): Self = StObject.set(x, "reduceComponentsToState", js.Any.fromFunction2(value))
     }
   }
   

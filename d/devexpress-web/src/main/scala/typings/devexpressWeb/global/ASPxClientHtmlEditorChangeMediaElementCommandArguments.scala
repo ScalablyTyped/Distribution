@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ASPxClientHtmlEditorChangeMediaElementCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorChangeMediaElementCommandArguments {
-  protected def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  /* protected */ def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
   
   /**
     * Returns the name of the client-side command corresponding to the parameter.

@@ -22,49 +22,35 @@ trait RequestOptions extends StObject {
 }
 object RequestOptions {
   
-  @scala.inline
-  def apply(): RequestOptions = {
+  inline def apply(): RequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestOptions]
   }
   
-  @scala.inline
-  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestOptions](x: Self) {
     
-    @scala.inline
-    def setConstructor(value: /* options */ js.UndefOr[RequestOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* options */ js.UndefOr[RequestOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOnerror(value: /* error */ Error => js.Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+    inline def setOnerror(value: /* error */ Error => js.Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+    inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    @scala.inline
-    def setRequestData(value: String): Self = StObject.set(x, "requestData", value.asInstanceOf[js.Any])
+    inline def setRequestData(value: String): Self = StObject.set(x, "requestData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestDataUndefined: Self = StObject.set(x, "requestData", js.undefined)
+    inline def setRequestDataUndefined: Self = StObject.set(x, "requestData", js.undefined)
     
-    @scala.inline
-    def setTransformRequest(value: /* xhr */ js.Any => js.Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction1(value))
+    inline def setTransformRequest(value: /* xhr */ js.Any => js.Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
+    inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
     
-    @scala.inline
-    def setTransformResponse(value: /* xhr */ js.Any => js.Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction1(value))
+    inline def setTransformResponse(value: /* xhr */ js.Any => js.Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
+    inline def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
   }
 }

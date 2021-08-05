@@ -11,22 +11,17 @@ trait ListSmimeInfoResponse extends StObject {
 }
 object ListSmimeInfoResponse {
   
-  @scala.inline
-  def apply(): ListSmimeInfoResponse = {
+  inline def apply(): ListSmimeInfoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSmimeInfoResponse]
   }
   
-  @scala.inline
-  implicit class ListSmimeInfoResponseMutableBuilder[Self <: ListSmimeInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSmimeInfoResponse](x: Self) {
     
-    @scala.inline
-    def setSmimeInfo(value: js.Array[SmimeInfo]): Self = StObject.set(x, "smimeInfo", value.asInstanceOf[js.Any])
+    inline def setSmimeInfo(value: js.Array[SmimeInfo]): Self = StObject.set(x, "smimeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmimeInfoUndefined: Self = StObject.set(x, "smimeInfo", js.undefined)
+    inline def setSmimeInfoUndefined: Self = StObject.set(x, "smimeInfo", js.undefined)
     
-    @scala.inline
-    def setSmimeInfoVarargs(value: SmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value :_*))
+    inline def setSmimeInfoVarargs(value: SmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value :_*))
   }
 }

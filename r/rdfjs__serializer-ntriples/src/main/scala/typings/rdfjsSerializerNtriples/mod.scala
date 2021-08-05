@@ -35,8 +35,7 @@ object mod {
        with Sink[Stream[Q], EventEmitter]
   object Serializer {
     
-    @scala.inline
-    def apply[Q /* <: BaseQuad */](`import`: Stream[Q] => EventEmitter): Serializer[Q] = {
+    inline def apply[Q /* <: BaseQuad */](`import`: Stream[Q] => EventEmitter): Serializer[Q] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
       __obj.asInstanceOf[Serializer[Q]]

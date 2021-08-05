@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(baseIRI: String): NamespaceBuilder = ^.asInstanceOf[js.Dynamic].apply(baseIRI.asInstanceOf[js.Any]).asInstanceOf[NamespaceBuilder]
-  @scala.inline
-  def apply(baseIRI: String, options: BuilderOptions): NamespaceBuilder = (^.asInstanceOf[js.Dynamic].apply(baseIRI.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NamespaceBuilder]
+  inline def apply(baseIRI: String): NamespaceBuilder = ^.asInstanceOf[js.Dynamic].apply(baseIRI.asInstanceOf[js.Any]).asInstanceOf[NamespaceBuilder]
+  inline def apply(baseIRI: String, options: BuilderOptions): NamespaceBuilder = (^.asInstanceOf[js.Dynamic].apply(baseIRI.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NamespaceBuilder]
   
   @JSImport("@rdfjs/namespace", JSImport.Namespace)
   @js.native
@@ -26,20 +24,16 @@ object mod {
   }
   object BuilderOptions {
     
-    @scala.inline
-    def apply(): BuilderOptions = {
+    inline def apply(): BuilderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BuilderOptions]
     }
     
-    @scala.inline
-    implicit class BuilderOptionsMutableBuilder[Self <: BuilderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BuilderOptions](x: Self) {
       
-      @scala.inline
-      def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
+      inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
     }
   }
   

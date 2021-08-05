@@ -12,25 +12,19 @@ trait GoogleDevtoolsRemotebuildbotResourceUsageStat extends StObject {
 }
 object GoogleDevtoolsRemotebuildbotResourceUsageStat {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildbotResourceUsageStat = {
+  inline def apply(): GoogleDevtoolsRemotebuildbotResourceUsageStat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildbotResourceUsageStat]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildbotResourceUsageStatMutableBuilder[Self <: GoogleDevtoolsRemotebuildbotResourceUsageStat] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildbotResourceUsageStat](x: Self) {
     
-    @scala.inline
-    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    @scala.inline
-    def setUsed(value: String): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: String): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
+    inline def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
   }
 }

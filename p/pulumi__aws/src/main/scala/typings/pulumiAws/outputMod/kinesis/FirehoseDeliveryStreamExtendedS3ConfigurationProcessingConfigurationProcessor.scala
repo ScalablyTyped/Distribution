@@ -22,30 +22,24 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProces
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor {
   
-  @scala.inline
-  def apply(`type`: String): FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor = {
+  inline def apply(`type`: String): FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: js.Array[
           FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter
         ]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

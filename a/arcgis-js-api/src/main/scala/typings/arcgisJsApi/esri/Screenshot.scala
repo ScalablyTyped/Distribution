@@ -27,8 +27,7 @@ trait Screenshot
 }
 object Screenshot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     data: ImageData,
     dataUrl: String,
@@ -39,13 +38,10 @@ object Screenshot {
     __obj.asInstanceOf[Screenshot]
   }
   
-  @scala.inline
-  implicit class ScreenshotMutableBuilder[Self <: Screenshot] (val x: Self) extends AnyVal {
+  extension [Self <: Screenshot](x: Self) {
     
-    @scala.inline
-    def setData(value: ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
+    inline def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
   }
 }

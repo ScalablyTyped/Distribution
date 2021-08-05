@@ -19,8 +19,7 @@ trait SketchMSDocumentAssets extends StObject {
 }
 object SketchMSDocumentAssets {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colors: js.Array[js.Any],
     gradients: js.Array[js.Any],
     imageCollection: SketchMSImageCollection,
@@ -30,31 +29,22 @@ object SketchMSDocumentAssets {
     __obj.asInstanceOf[SketchMSDocumentAssets]
   }
   
-  @scala.inline
-  implicit class SketchMSDocumentAssetsMutableBuilder[Self <: SketchMSDocumentAssets] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSDocumentAssets](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setGradients(value: js.Array[js.Any]): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
+    inline def setGradients(value: js.Array[js.Any]): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientsVarargs(value: js.Any*): Self = StObject.set(x, "gradients", js.Array(value :_*))
+    inline def setGradientsVarargs(value: js.Any*): Self = StObject.set(x, "gradients", js.Array(value :_*))
     
-    @scala.inline
-    def setImageCollection(value: SketchMSImageCollection): Self = StObject.set(x, "imageCollection", value.asInstanceOf[js.Any])
+    inline def setImageCollection(value: SketchMSImageCollection): Self = StObject.set(x, "imageCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def set_class(value: assetCollection): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: assetCollection): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

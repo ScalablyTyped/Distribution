@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(vs: js.Array[Point], point: Point): `-1` | `0` | `1` = (^.asInstanceOf[js.Dynamic].apply(vs.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[`-1` | `0` | `1`]
+  inline def apply(vs: js.Array[Point], point: Point): `-1` | `0` | `1` = (^.asInstanceOf[js.Dynamic].apply(vs.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[`-1` | `0` | `1`]
   
   @JSImport("robust-point-in-polygon", JSImport.Namespace)
   @js.native

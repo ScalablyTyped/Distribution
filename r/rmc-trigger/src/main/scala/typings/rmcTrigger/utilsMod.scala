@@ -10,12 +10,9 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAlignFromPlacement(builtinPlacements: js.Any, placementStr: js.Any, align: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignFromPlacement")(builtinPlacements.asInstanceOf[js.Any], placementStr.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getAlignFromPlacement(builtinPlacements: js.Any, placementStr: js.Any, align: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignFromPlacement")(builtinPlacements.asInstanceOf[js.Any], placementStr.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getPopupClassNameFromAlign(builtinPlacements: js.Any, prefixCls: js.Any, align: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPopupClassNameFromAlign")(builtinPlacements.asInstanceOf[js.Any], prefixCls.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPopupClassNameFromAlign(builtinPlacements: js.Any, prefixCls: js.Any, align: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPopupClassNameFromAlign")(builtinPlacements.asInstanceOf[js.Any], prefixCls.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def saveRef(name: js.Any, component: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveRef")(name.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveRef(name: js.Any, component: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveRef")(name.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

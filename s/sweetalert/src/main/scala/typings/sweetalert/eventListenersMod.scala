@@ -11,6 +11,5 @@ object eventListenersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(opts: SwalOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(opts: SwalOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

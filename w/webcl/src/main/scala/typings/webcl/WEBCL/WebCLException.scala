@@ -10,8 +10,7 @@ trait WebCLException
      with DOMException
 object WebCLException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ABORT_ERR: Double,
     DATA_CLONE_ERR: Double,
     DOMSTRING_SIZE_ERR: Double,

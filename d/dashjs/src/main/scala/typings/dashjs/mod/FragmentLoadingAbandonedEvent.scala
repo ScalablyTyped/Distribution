@@ -23,26 +23,20 @@ trait FragmentLoadingAbandonedEvent
 }
 object FragmentLoadingAbandonedEvent {
   
-  @scala.inline
-  def apply(mediaType: video | audio | fragmentedText, request: js.Object, streamProcessor: js.Object): FragmentLoadingAbandonedEvent = {
+  inline def apply(mediaType: video | audio | fragmentedText, request: js.Object, streamProcessor: js.Object): FragmentLoadingAbandonedEvent = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], streamProcessor = streamProcessor.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fragmentLoadingAbandoned")
     __obj.asInstanceOf[FragmentLoadingAbandonedEvent]
   }
   
-  @scala.inline
-  implicit class FragmentLoadingAbandonedEventMutableBuilder[Self <: FragmentLoadingAbandonedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FragmentLoadingAbandonedEvent](x: Self) {
     
-    @scala.inline
-    def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: js.Object): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: js.Object): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamProcessor(value: js.Object): Self = StObject.set(x, "streamProcessor", value.asInstanceOf[js.Any])
+    inline def setStreamProcessor(value: js.Object): Self = StObject.set(x, "streamProcessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: fragmentLoadingAbandoned): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: fragmentLoadingAbandoned): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

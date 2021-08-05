@@ -17,8 +17,7 @@ trait ParametersIssuesLockEndpoint extends StObject {
 }
 object ParametersIssuesLockEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: IssuesLockEndpoint,
     request: IssuesLockRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersIssuesLockEndpoint {
     __obj.asInstanceOf[ParametersIssuesLockEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersIssuesLockEndpointMutableBuilder[Self <: ParametersIssuesLockEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersIssuesLockEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: IssuesLockEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: IssuesLockEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: IssuesLockRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: IssuesLockRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

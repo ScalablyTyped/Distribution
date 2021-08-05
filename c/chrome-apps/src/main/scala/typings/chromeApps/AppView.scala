@@ -41,29 +41,22 @@ object AppView {
   }
   object EmbedRequest {
     
-    @scala.inline
-    def apply(allow: String => Unit, deny: () => Unit, embedderId: String): EmbedRequest = {
+    inline def apply(allow: String => Unit, deny: () => Unit, embedderId: String): EmbedRequest = {
       val __obj = js.Dynamic.literal(allow = js.Any.fromFunction1(allow), deny = js.Any.fromFunction0(deny), embedderId = embedderId.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmbedRequest]
     }
     
-    @scala.inline
-    implicit class EmbedRequestMutableBuilder[Self <: EmbedRequest] (val x: Self) extends AnyVal {
+    extension [Self <: EmbedRequest](x: Self) {
       
-      @scala.inline
-      def setAllow(value: String => Unit): Self = StObject.set(x, "allow", js.Any.fromFunction1(value))
+      inline def setAllow(value: String => Unit): Self = StObject.set(x, "allow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDeny(value: () => Unit): Self = StObject.set(x, "deny", js.Any.fromFunction0(value))
+      inline def setDeny(value: () => Unit): Self = StObject.set(x, "deny", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmbedderId(value: String): Self = StObject.set(x, "embedderId", value.asInstanceOf[js.Any])
+      inline def setEmbedderId(value: String): Self = StObject.set(x, "embedderId", value.asInstanceOf[js.Any])
     }
   }
 }

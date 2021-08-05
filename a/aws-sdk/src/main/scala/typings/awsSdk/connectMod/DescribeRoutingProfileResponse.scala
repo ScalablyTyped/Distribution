@@ -13,19 +13,15 @@ trait DescribeRoutingProfileResponse extends StObject {
 }
 object DescribeRoutingProfileResponse {
   
-  @scala.inline
-  def apply(): DescribeRoutingProfileResponse = {
+  inline def apply(): DescribeRoutingProfileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRoutingProfileResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRoutingProfileResponseMutableBuilder[Self <: DescribeRoutingProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRoutingProfileResponse](x: Self) {
     
-    @scala.inline
-    def setRoutingProfile(value: RoutingProfile): Self = StObject.set(x, "RoutingProfile", value.asInstanceOf[js.Any])
+    inline def setRoutingProfile(value: RoutingProfile): Self = StObject.set(x, "RoutingProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingProfileUndefined: Self = StObject.set(x, "RoutingProfile", js.undefined)
+    inline def setRoutingProfileUndefined: Self = StObject.set(x, "RoutingProfile", js.undefined)
   }
 }

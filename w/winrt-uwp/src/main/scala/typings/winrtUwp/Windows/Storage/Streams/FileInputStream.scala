@@ -22,8 +22,7 @@ trait FileInputStream extends StObject {
 }
 object FileInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     readAsync: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   ): FileInputStream = {
@@ -31,14 +30,11 @@ object FileInputStream {
     __obj.asInstanceOf[FileInputStream]
   }
   
-  @scala.inline
-  implicit class FileInputStreamMutableBuilder[Self <: FileInputStream] (val x: Self) extends AnyVal {
+  extension [Self <: FileInputStream](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadAsync(
+    inline def setReadAsync(
       value: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
     ): Self = StObject.set(x, "readAsync", js.Any.fromFunction3(value))
   }

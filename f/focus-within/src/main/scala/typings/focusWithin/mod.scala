@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(document: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].apply(document.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(document: HTMLDocument, opts: FocusWithinOpts): Unit = (^.asInstanceOf[js.Dynamic].apply(document.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(document: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].apply(document.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(document: HTMLDocument, opts: FocusWithinOpts): Unit = (^.asInstanceOf[js.Dynamic].apply(document.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("focus-within", JSImport.Namespace)
   @js.native
@@ -24,26 +22,20 @@ object mod {
   }
   object FocusWithinOpts {
     
-    @scala.inline
-    def apply(): FocusWithinOpts = {
+    inline def apply(): FocusWithinOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusWithinOpts]
     }
     
-    @scala.inline
-    implicit class FocusWithinOptsMutableBuilder[Self <: FocusWithinOpts] (val x: Self) extends AnyVal {
+    extension [Self <: FocusWithinOpts](x: Self) {
       
-      @scala.inline
-      def setAttr(value: Boolean): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+      inline def setAttr(value: Boolean): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+      inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
 }

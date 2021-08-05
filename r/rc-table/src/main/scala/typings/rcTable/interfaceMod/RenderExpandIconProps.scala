@@ -21,8 +21,7 @@ trait RenderExpandIconProps[RecordType] extends StObject {
 }
 object RenderExpandIconProps {
   
-  @scala.inline
-  def apply[RecordType](
+  inline def apply[RecordType](
     expandable: Boolean,
     expanded: Boolean,
     onExpand: (RecordType, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit,
@@ -33,22 +32,16 @@ object RenderExpandIconProps {
     __obj.asInstanceOf[RenderExpandIconProps[RecordType]]
   }
   
-  @scala.inline
-  implicit class RenderExpandIconPropsMutableBuilder[Self <: RenderExpandIconProps[?], RecordType] (val x: Self & RenderExpandIconProps[RecordType]) extends AnyVal {
+  extension [Self <: RenderExpandIconProps[?], RecordType](x: Self & RenderExpandIconProps[RecordType]) {
     
-    @scala.inline
-    def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+    inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnExpand(value: (RecordType, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction2(value))
+    inline def setOnExpand(value: (RecordType, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecord(value: RecordType): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+    inline def setRecord(value: RecordType): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
   }
 }

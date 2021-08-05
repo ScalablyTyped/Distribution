@@ -36,31 +36,22 @@ object KEY_STRINGS {
   @js.native
   val ^ : KEY_STRINGS = js.native
   
-  @scala.inline
-  implicit class KEY_STRINGSMutableBuilder[Self <: KEY_STRINGS] (val x: Self) extends AnyVal {
+  extension [Self <: KEY_STRINGS](x: Self) {
     
-    @scala.inline
-    def setArrowDown(value: ArrowDown): Self = StObject.set(x, "ArrowDown", value.asInstanceOf[js.Any])
+    inline def setArrowDown(value: ArrowDown): Self = StObject.set(x, "ArrowDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowLeft(value: ArrowLeft): Self = StObject.set(x, "ArrowLeft", value.asInstanceOf[js.Any])
+    inline def setArrowLeft(value: ArrowLeft): Self = StObject.set(x, "ArrowLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowRight(value: ArrowRight): Self = StObject.set(x, "ArrowRight", value.asInstanceOf[js.Any])
+    inline def setArrowRight(value: ArrowRight): Self = StObject.set(x, "ArrowRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowUp(value: ArrowUp): Self = StObject.set(x, "ArrowUp", value.asInstanceOf[js.Any])
+    inline def setArrowUp(value: ArrowUp): Self = StObject.set(x, "ArrowUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackspace(value: Backspace): Self = StObject.set(x, "Backspace", value.asInstanceOf[js.Any])
+    inline def setBackspace(value: Backspace): Self = StObject.set(x, "Backspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnter(value: Enter): Self = StObject.set(x, "Enter", value.asInstanceOf[js.Any])
+    inline def setEnter(value: Enter): Self = StObject.set(x, "Enter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscape(value: Escape): Self = StObject.set(x, "Escape", value.asInstanceOf[js.Any])
+    inline def setEscape(value: Escape): Self = StObject.set(x, "Escape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpace(value: Space): Self = StObject.set(x, "Space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: Space): Self = StObject.set(x, "Space", value.asInstanceOf[js.Any])
   }
 }

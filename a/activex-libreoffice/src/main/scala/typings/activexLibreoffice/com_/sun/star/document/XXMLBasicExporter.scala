@@ -18,8 +18,7 @@ trait XXMLBasicExporter
      with XFilter
 object XXMLBasicExporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancel: () => Unit,
     filter: SeqEquiv[PropertyValue] => Boolean,

@@ -34,31 +34,23 @@ trait PlusGalleryGalleryFilter extends StObject {
 }
 object PlusGalleryGalleryFilter {
   
-  @scala.inline
-  def apply(): PlusGalleryGalleryFilter = {
+  inline def apply(): PlusGalleryGalleryFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusGalleryGalleryFilter]
   }
   
-  @scala.inline
-  implicit class PlusGalleryGalleryFilterMutableBuilder[Self <: PlusGalleryGalleryFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PlusGalleryGalleryFilter](x: Self) {
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
+    inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
     
-    @scala.inline
-    def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

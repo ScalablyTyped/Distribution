@@ -13,20 +13,16 @@ object anon {
   }
   object Ops {
     
-    @scala.inline
-    def apply(ops: js.Array[Op]): Ops = {
+    inline def apply(ops: js.Array[Op]): Ops = {
       val __obj = js.Dynamic.literal(ops = ops.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ops]
     }
     
-    @scala.inline
-    implicit class OpsMutableBuilder[Self <: Ops] (val x: Self) extends AnyVal {
+    extension [Self <: Ops](x: Self) {
       
-      @scala.inline
-      def setOps(value: js.Array[Op]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+      inline def setOps(value: js.Array[Op]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpsVarargs(value: Op*): Self = StObject.set(x, "ops", js.Array(value :_*))
+      inline def setOpsVarargs(value: Op*): Self = StObject.set(x, "ops", js.Array(value :_*))
     }
   }
 }

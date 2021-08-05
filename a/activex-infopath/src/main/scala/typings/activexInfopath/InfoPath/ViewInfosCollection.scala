@@ -8,15 +8,14 @@ trait ViewInfosCollection extends StObject {
   
   val Count: Double
   
-  @JSName("InfoPath.ViewInfosCollection_typekey")
+  /* private */ @JSName("InfoPath.ViewInfosCollection_typekey")
   var InfoPathDotViewInfosCollection_typekey: ViewInfosCollection
   
   def Item(varIndex: js.Any): ViewInfoObject
 }
 object ViewInfosCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     InfoPathDotViewInfosCollection_typekey: ViewInfosCollection,
     Item: js.Any => ViewInfoObject
@@ -26,16 +25,12 @@ object ViewInfosCollection {
     __obj.asInstanceOf[ViewInfosCollection]
   }
   
-  @scala.inline
-  implicit class ViewInfosCollectionMutableBuilder[Self <: ViewInfosCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ViewInfosCollection](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotViewInfosCollection_typekey(value: ViewInfosCollection): Self = StObject.set(x, "InfoPath.ViewInfosCollection_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotViewInfosCollection_typekey(value: ViewInfosCollection): Self = StObject.set(x, "InfoPath.ViewInfosCollection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => ViewInfoObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => ViewInfoObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

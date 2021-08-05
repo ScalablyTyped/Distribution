@@ -28,8 +28,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialGridList.componentMod.MDCGridList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialGridList.componentMod.MDCGridList]
+    inline def attachTo(root: Element): typings.materialGridList.componentMod.MDCGridList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialGridList.componentMod.MDCGridList]
   }
   
   @JSImport("@material/grid-list", "MDCGridListFoundation")
@@ -59,13 +58,11 @@ object mod {
     @JSImport("@material/grid-list", "strings.TILES_SELECTOR")
     @js.native
     def TILES_SELECTOR: String = js.native
-    @scala.inline
-    def TILES_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILES_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def TILES_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILES_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/grid-list", "strings.TILE_SELECTOR")
     @js.native
     def TILE_SELECTOR: String = js.native
-    @scala.inline
-    def TILE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILE_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def TILE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILE_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

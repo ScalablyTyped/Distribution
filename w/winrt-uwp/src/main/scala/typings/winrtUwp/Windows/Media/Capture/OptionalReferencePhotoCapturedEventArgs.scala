@@ -15,19 +15,15 @@ trait OptionalReferencePhotoCapturedEventArgs extends StObject {
 }
 object OptionalReferencePhotoCapturedEventArgs {
   
-  @scala.inline
-  def apply(context: js.Any, frame: CapturedFrame): OptionalReferencePhotoCapturedEventArgs = {
+  inline def apply(context: js.Any, frame: CapturedFrame): OptionalReferencePhotoCapturedEventArgs = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionalReferencePhotoCapturedEventArgs]
   }
   
-  @scala.inline
-  implicit class OptionalReferencePhotoCapturedEventArgsMutableBuilder[Self <: OptionalReferencePhotoCapturedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: OptionalReferencePhotoCapturedEventArgs](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
   }
 }

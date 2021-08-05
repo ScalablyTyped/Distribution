@@ -36,73 +36,51 @@ trait InlineContent extends StObject {
 }
 object InlineContent {
   
-  @scala.inline
-  def apply(): InlineContent = {
+  inline def apply(): InlineContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InlineContent]
   }
   
-  @scala.inline
-  implicit class InlineContentMutableBuilder[Self <: InlineContent] (val x: Self) extends AnyVal {
+  extension [Self <: InlineContent](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setFrom(value: String | Email): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String | Email): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setInline_images(value: js.Array[Attachment]): Self = StObject.set(x, "inline_images", value.asInstanceOf[js.Any])
+    inline def setInline_images(value: js.Array[Attachment]): Self = StObject.set(x, "inline_images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInline_imagesUndefined: Self = StObject.set(x, "inline_images", js.undefined)
+    inline def setInline_imagesUndefined: Self = StObject.set(x, "inline_images", js.undefined)
     
-    @scala.inline
-    def setInline_imagesVarargs(value: Attachment*): Self = StObject.set(x, "inline_images", js.Array(value :_*))
+    inline def setInline_imagesVarargs(value: Attachment*): Self = StObject.set(x, "inline_images", js.Array(value :_*))
     
-    @scala.inline
-    def setPush(value: PushData): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: PushData): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+    inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
-    @scala.inline
-    def setReply_to(value: String): Self = StObject.set(x, "reply_to", value.asInstanceOf[js.Any])
+    inline def setReply_to(value: String): Self = StObject.set(x, "reply_to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_toUndefined: Self = StObject.set(x, "reply_to", js.undefined)
+    inline def setReply_toUndefined: Self = StObject.set(x, "reply_to", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

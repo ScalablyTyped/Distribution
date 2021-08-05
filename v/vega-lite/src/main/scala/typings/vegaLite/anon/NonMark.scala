@@ -19,8 +19,7 @@ trait NonMark extends StObject {
 }
 object NonMark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     nonMark: BaseTitleNoValueRefs[SignalRef],
     subtitle: BaseTitleNoValueRefs[SignalRef],
     subtitleMarkConfig: MarkConfig[SignalRef],
@@ -30,19 +29,14 @@ object NonMark {
     __obj.asInstanceOf[NonMark]
   }
   
-  @scala.inline
-  implicit class NonMarkMutableBuilder[Self <: NonMark] (val x: Self) extends AnyVal {
+  extension [Self <: NonMark](x: Self) {
     
-    @scala.inline
-    def setNonMark(value: BaseTitleNoValueRefs[SignalRef]): Self = StObject.set(x, "nonMark", value.asInstanceOf[js.Any])
+    inline def setNonMark(value: BaseTitleNoValueRefs[SignalRef]): Self = StObject.set(x, "nonMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitle(value: BaseTitleNoValueRefs[SignalRef]): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: BaseTitleNoValueRefs[SignalRef]): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleMarkConfig(value: MarkConfig[SignalRef]): Self = StObject.set(x, "subtitleMarkConfig", value.asInstanceOf[js.Any])
+    inline def setSubtitleMarkConfig(value: MarkConfig[SignalRef]): Self = StObject.set(x, "subtitleMarkConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleMarkConfig(value: MarkConfig[SignalRef]): Self = StObject.set(x, "titleMarkConfig", value.asInstanceOf[js.Any])
+    inline def setTitleMarkConfig(value: MarkConfig[SignalRef]): Self = StObject.set(x, "titleMarkConfig", value.asInstanceOf[js.Any])
   }
 }

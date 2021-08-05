@@ -23,25 +23,19 @@ trait TextOptions
 }
 object TextOptions {
   
-  @scala.inline
-  def apply(): TextOptions = {
+  inline def apply(): TextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextOptions]
   }
   
-  @scala.inline
-  implicit class TextOptionsMutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: TAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: TAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

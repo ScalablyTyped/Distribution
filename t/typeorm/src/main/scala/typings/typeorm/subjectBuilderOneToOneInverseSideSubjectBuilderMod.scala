@@ -25,6 +25,6 @@ object subjectBuilderOneToOneInverseSideSubjectBuilderMod {
       */
     /* protected */ def buildForSubjectRelation(subject: Subject, relation: RelationMetadata): Unit = js.native
     
-    var subjects: js.Array[Subject] = js.native
+    /* protected */ var subjects: js.Array[Subject] = js.native
   }
 }

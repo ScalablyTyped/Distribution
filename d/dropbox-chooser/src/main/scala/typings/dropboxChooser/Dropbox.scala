@@ -14,17 +14,14 @@ object Dropbox {
   }
   object Chooser {
     
-    @scala.inline
-    def apply(choose: ChooserOptions => Unit): Chooser = {
+    inline def apply(choose: ChooserOptions => Unit): Chooser = {
       val __obj = js.Dynamic.literal(choose = js.Any.fromFunction1(choose))
       __obj.asInstanceOf[Chooser]
     }
     
-    @scala.inline
-    implicit class ChooserMutableBuilder[Self <: Chooser] (val x: Self) extends AnyVal {
+    extension [Self <: Chooser](x: Self) {
       
-      @scala.inline
-      def setChoose(value: ChooserOptions => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
+      inline def setChoose(value: ChooserOptions => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
     }
   }
   
@@ -55,38 +52,28 @@ object Dropbox {
   }
   object ChooserFile {
     
-    @scala.inline
-    def apply(bytes: Double, icon: String, id: String, isDir: Boolean, link: String, name: String): ChooserFile = {
+    inline def apply(bytes: Double, icon: String, id: String, isDir: Boolean, link: String, name: String): ChooserFile = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChooserFile]
     }
     
-    @scala.inline
-    implicit class ChooserFileMutableBuilder[Self <: ChooserFile] (val x: Self) extends AnyVal {
+    extension [Self <: ChooserFile](x: Self) {
       
-      @scala.inline
-      def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDir(value: Boolean): Self = StObject.set(x, "isDir", value.asInstanceOf[js.Any])
+      inline def setIsDir(value: Boolean): Self = StObject.set(x, "isDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailLink(value: String): Self = StObject.set(x, "thumbnailLink", value.asInstanceOf[js.Any])
+      inline def setThumbnailLink(value: String): Self = StObject.set(x, "thumbnailLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailLinkUndefined: Self = StObject.set(x, "thumbnailLink", js.undefined)
+      inline def setThumbnailLinkUndefined: Self = StObject.set(x, "thumbnailLink", js.undefined)
     }
   }
   
@@ -101,20 +88,15 @@ object Dropbox {
   trait ChooserFileBoundingBox extends StObject
   object ChooserFileBoundingBox {
     
-    @scala.inline
-    def `1280`: typings.dropboxChooser.dropboxChooserNumbers.`1280` = 1280.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`1280`]
+    inline def `1280`: typings.dropboxChooser.dropboxChooserNumbers.`1280` = 1280.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`1280`]
     
-    @scala.inline
-    def `2048`: typings.dropboxChooser.dropboxChooserNumbers.`2048` = 2048.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`2048`]
+    inline def `2048`: typings.dropboxChooser.dropboxChooserNumbers.`2048` = 2048.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`2048`]
     
-    @scala.inline
-    def `256`: typings.dropboxChooser.dropboxChooserNumbers.`256` = 256.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`256`]
+    inline def `256`: typings.dropboxChooser.dropboxChooserNumbers.`256` = 256.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`256`]
     
-    @scala.inline
-    def `75`: typings.dropboxChooser.dropboxChooserNumbers.`75` = 75.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`75`]
+    inline def `75`: typings.dropboxChooser.dropboxChooserNumbers.`75` = 75.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`75`]
     
-    @scala.inline
-    def `800`: typings.dropboxChooser.dropboxChooserNumbers.`800` = 800.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`800`]
+    inline def `800`: typings.dropboxChooser.dropboxChooserNumbers.`800` = 800.asInstanceOf[typings.dropboxChooser.dropboxChooserNumbers.`800`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -125,14 +107,11 @@ object Dropbox {
   trait ChooserFileMode extends StObject
   object ChooserFileMode {
     
-    @scala.inline
-    def crop: typings.dropboxChooser.dropboxChooserStrings.crop = "crop".asInstanceOf[typings.dropboxChooser.dropboxChooserStrings.crop]
+    inline def crop: typings.dropboxChooser.dropboxChooserStrings.crop = "crop".asInstanceOf[typings.dropboxChooser.dropboxChooserStrings.crop]
     
-    @scala.inline
-    def fit: typings.dropboxChooser.dropboxChooserStrings.fit = "fit".asInstanceOf[typings.dropboxChooser.dropboxChooserStrings.fit]
+    inline def fit: typings.dropboxChooser.dropboxChooserStrings.fit = "fit".asInstanceOf[typings.dropboxChooser.dropboxChooserStrings.fit]
     
-    @scala.inline
-    def fit_one_and_overflow: typings.dropboxChooser.dropboxChooserStrings.fit_one_and_overflow = "fit_one_and_overflow".asInstanceOf[typings.dropboxChooser.dropboxChooserStrings.fit_one_and_overflow]
+    inline def fit_one_and_overflow: typings.dropboxChooser.dropboxChooserStrings.fit_one_and_overflow = "fit_one_and_overflow".asInstanceOf[typings.dropboxChooser.dropboxChooserStrings.fit_one_and_overflow]
   }
   
   trait ChooserOptions extends StObject {
@@ -160,56 +139,40 @@ object Dropbox {
   }
   object ChooserOptions {
     
-    @scala.inline
-    def apply(success: js.Array[ChooserFile] => Unit): ChooserOptions = {
+    inline def apply(success: js.Array[ChooserFile] => Unit): ChooserOptions = {
       val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
       __obj.asInstanceOf[ChooserOptions]
     }
     
-    @scala.inline
-    implicit class ChooserOptionsMutableBuilder[Self <: ChooserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChooserOptions](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setFolderselect(value: Boolean): Self = StObject.set(x, "folderselect", value.asInstanceOf[js.Any])
+      inline def setFolderselect(value: Boolean): Self = StObject.set(x, "folderselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderselectUndefined: Self = StObject.set(x, "folderselect", js.undefined)
+      inline def setFolderselectUndefined: Self = StObject.set(x, "folderselect", js.undefined)
       
-      @scala.inline
-      def setLinkType(value: preview | direct): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+      inline def setLinkType(value: preview | direct): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
+      inline def setLinkTypeUndefined: Self = StObject.set(x, "linkType", js.undefined)
       
-      @scala.inline
-      def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
+      inline def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
+      inline def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
       
-      @scala.inline
-      def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+      inline def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
+      inline def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: js.Array[ChooserFile] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: js.Array[ChooserFile] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     }
   }
 }

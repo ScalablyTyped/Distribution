@@ -41,8 +41,7 @@ trait IScriptSyntaxError extends StObject {
 }
 object IScriptSyntaxError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qColInLine: Double,
     qErrLen: Double,
     qLineInTab: Double,
@@ -54,25 +53,18 @@ object IScriptSyntaxError {
     __obj.asInstanceOf[IScriptSyntaxError]
   }
   
-  @scala.inline
-  implicit class IScriptSyntaxErrorMutableBuilder[Self <: IScriptSyntaxError] (val x: Self) extends AnyVal {
+  extension [Self <: IScriptSyntaxError](x: Self) {
     
-    @scala.inline
-    def setQColInLine(value: Double): Self = StObject.set(x, "qColInLine", value.asInstanceOf[js.Any])
+    inline def setQColInLine(value: Double): Self = StObject.set(x, "qColInLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQErrLen(value: Double): Self = StObject.set(x, "qErrLen", value.asInstanceOf[js.Any])
+    inline def setQErrLen(value: Double): Self = StObject.set(x, "qErrLen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLineInTab(value: Double): Self = StObject.set(x, "qLineInTab", value.asInstanceOf[js.Any])
+    inline def setQLineInTab(value: Double): Self = StObject.set(x, "qLineInTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSecondaryFailure(value: Boolean): Self = StObject.set(x, "qSecondaryFailure", value.asInstanceOf[js.Any])
+    inline def setQSecondaryFailure(value: Boolean): Self = StObject.set(x, "qSecondaryFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTabIx(value: Double): Self = StObject.set(x, "qTabIx", value.asInstanceOf[js.Any])
+    inline def setQTabIx(value: Double): Self = StObject.set(x, "qTabIx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTextPos(value: Double): Self = StObject.set(x, "qTextPos", value.asInstanceOf[js.Any])
+    inline def setQTextPos(value: Double): Self = StObject.set(x, "qTextPos", value.asInstanceOf[js.Any])
   }
 }

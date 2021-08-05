@@ -20,6 +20,6 @@ object gestureControllerMod {
     def create(opts: GestureConfig): Gesture = js.native
     def create(opts: GestureConfig, runInsideAngularZone: Boolean): Gesture = js.native
     
-    var zone: js.Any = js.native
+    /* private */ var zone: js.Any = js.native
   }
 }

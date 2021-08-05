@@ -18,19 +18,15 @@ trait DeleteSSHPublicKeyRequest extends StObject {
 }
 object DeleteSSHPublicKeyRequest {
   
-  @scala.inline
-  def apply(SSHPublicKeyId: publicKeyIdType, UserName: userNameType): DeleteSSHPublicKeyRequest = {
+  inline def apply(SSHPublicKeyId: publicKeyIdType, UserName: userNameType): DeleteSSHPublicKeyRequest = {
     val __obj = js.Dynamic.literal(SSHPublicKeyId = SSHPublicKeyId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSSHPublicKeyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSSHPublicKeyRequestMutableBuilder[Self <: DeleteSSHPublicKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSSHPublicKeyRequest](x: Self) {
     
-    @scala.inline
-    def setSSHPublicKeyId(value: publicKeyIdType): Self = StObject.set(x, "SSHPublicKeyId", value.asInstanceOf[js.Any])
+    inline def setSSHPublicKeyId(value: publicKeyIdType): Self = StObject.set(x, "SSHPublicKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

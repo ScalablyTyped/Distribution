@@ -18,28 +18,21 @@ trait GetTagKeysOutput extends StObject {
 }
 object GetTagKeysOutput {
   
-  @scala.inline
-  def apply(): GetTagKeysOutput = {
+  inline def apply(): GetTagKeysOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTagKeysOutput]
   }
   
-  @scala.inline
-  implicit class GetTagKeysOutputMutableBuilder[Self <: GetTagKeysOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetTagKeysOutput](x: Self) {
     
-    @scala.inline
-    def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
+    inline def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
+    inline def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
-    @scala.inline
-    def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
+    inline def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
-    @scala.inline
-    def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
   }
 }

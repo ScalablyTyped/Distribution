@@ -13,16 +13,13 @@ trait CloseProject
 }
 object CloseProject {
   
-  @scala.inline
-  def apply(projectName: String): CloseProject = {
+  inline def apply(projectName: String): CloseProject = {
     val __obj = js.Dynamic.literal(kind = "closeProject", projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseProject]
   }
   
-  @scala.inline
-  implicit class CloseProjectMutableBuilder[Self <: CloseProject] (val x: Self) extends AnyVal {
+  extension [Self <: CloseProject](x: Self) {
     
-    @scala.inline
-    def setKind(value: closeProject): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: closeProject): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

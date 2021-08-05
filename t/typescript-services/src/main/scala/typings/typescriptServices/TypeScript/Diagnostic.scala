@@ -8,11 +8,11 @@ trait Diagnostic
   extends StObject
      with Location {
   
-  var _additionalLocations: js.Any
+  /* private */ var _additionalLocations: js.Any
   
-  var _arguments: js.Any
+  /* private */ var _arguments: js.Any
   
-  var _diagnosticKey: js.Any
+  /* private */ var _diagnosticKey: js.Any
   
   def additionalLocations(): js.Array[Location]
   
@@ -30,8 +30,7 @@ trait Diagnostic
 }
 object Diagnostic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _additionalLocations: js.Any,
     _arguments: js.Any,
     _diagnosticKey: js.Any,
@@ -57,37 +56,26 @@ object Diagnostic {
     __obj.asInstanceOf[Diagnostic]
   }
   
-  @scala.inline
-  implicit class DiagnosticMutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
+  extension [Self <: Diagnostic](x: Self) {
     
-    @scala.inline
-    def setAdditionalLocations(value: () => js.Array[Location]): Self = StObject.set(x, "additionalLocations", js.Any.fromFunction0(value))
+    inline def setAdditionalLocations(value: () => js.Array[Location]): Self = StObject.set(x, "additionalLocations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setArguments(value: () => js.Array[js.Any]): Self = StObject.set(x, "arguments", js.Any.fromFunction0(value))
+    inline def setArguments(value: () => js.Array[js.Any]): Self = StObject.set(x, "arguments", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDiagnosticKey(value: () => String): Self = StObject.set(x, "diagnosticKey", js.Any.fromFunction0(value))
+    inline def setDiagnosticKey(value: () => String): Self = StObject.set(x, "diagnosticKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInfo(value: () => DiagnosticInfo): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
+    inline def setInfo(value: () => DiagnosticInfo): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
+    inline def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+    inline def setToJSON(value: js.Any => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_additionalLocations(value: js.Any): Self = StObject.set(x, "_additionalLocations", value.asInstanceOf[js.Any])
+    inline def set_additionalLocations(value: js.Any): Self = StObject.set(x, "_additionalLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_arguments(value: js.Any): Self = StObject.set(x, "_arguments", value.asInstanceOf[js.Any])
+    inline def set_arguments(value: js.Any): Self = StObject.set(x, "_arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_diagnosticKey(value: js.Any): Self = StObject.set(x, "_diagnosticKey", value.asInstanceOf[js.Any])
+    inline def set_diagnosticKey(value: js.Any): Self = StObject.set(x, "_diagnosticKey", value.asInstanceOf[js.Any])
   }
 }

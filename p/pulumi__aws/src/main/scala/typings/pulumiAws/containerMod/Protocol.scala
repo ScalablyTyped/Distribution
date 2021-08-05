@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Protocol extends StObject
 object Protocol {
   
-  @scala.inline
-  def tcp: typings.pulumiAws.pulumiAwsStrings.tcp = "tcp".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.tcp]
+  inline def tcp: typings.pulumiAws.pulumiAwsStrings.tcp = "tcp".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.tcp]
   
-  @scala.inline
-  def udp: typings.pulumiAws.pulumiAwsStrings.udp = "udp".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.udp]
+  inline def udp: typings.pulumiAws.pulumiAwsStrings.udp = "udp".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.udp]
 }

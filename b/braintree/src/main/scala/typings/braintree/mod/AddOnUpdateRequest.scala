@@ -18,40 +18,29 @@ trait AddOnUpdateRequest extends StObject {
 }
 object AddOnUpdateRequest {
   
-  @scala.inline
-  def apply(existingId: String): AddOnUpdateRequest = {
+  inline def apply(existingId: String): AddOnUpdateRequest = {
     val __obj = js.Dynamic.literal(existingId = existingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddOnUpdateRequest]
   }
   
-  @scala.inline
-  implicit class AddOnUpdateRequestMutableBuilder[Self <: AddOnUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddOnUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setExistingId(value: String): Self = StObject.set(x, "existingId", value.asInstanceOf[js.Any])
+    inline def setExistingId(value: String): Self = StObject.set(x, "existingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeverExpires(value: Boolean): Self = StObject.set(x, "neverExpires", value.asInstanceOf[js.Any])
+    inline def setNeverExpires(value: Boolean): Self = StObject.set(x, "neverExpires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeverExpiresUndefined: Self = StObject.set(x, "neverExpires", js.undefined)
+    inline def setNeverExpiresUndefined: Self = StObject.set(x, "neverExpires", js.undefined)
     
-    @scala.inline
-    def setNumberOfBillingCycles(value: Double): Self = StObject.set(x, "numberOfBillingCycles", value.asInstanceOf[js.Any])
+    inline def setNumberOfBillingCycles(value: Double): Self = StObject.set(x, "numberOfBillingCycles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfBillingCyclesUndefined: Self = StObject.set(x, "numberOfBillingCycles", js.undefined)
+    inline def setNumberOfBillingCyclesUndefined: Self = StObject.set(x, "numberOfBillingCycles", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

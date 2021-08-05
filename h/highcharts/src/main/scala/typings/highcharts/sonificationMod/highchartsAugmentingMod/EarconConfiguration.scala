@@ -30,28 +30,21 @@ trait EarconConfiguration extends StObject {
 }
 object EarconConfiguration {
   
-  @scala.inline
-  def apply(earcon: Earcon): EarconConfiguration = {
+  inline def apply(earcon: Earcon): EarconConfiguration = {
     val __obj = js.Dynamic.literal(earcon = earcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarconConfiguration]
   }
   
-  @scala.inline
-  implicit class EarconConfigurationMutableBuilder[Self <: EarconConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EarconConfiguration](x: Self) {
     
-    @scala.inline
-    def setCondition(value: js.Function): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: js.Function): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setEarcon(value: Earcon): Self = StObject.set(x, "earcon", value.asInstanceOf[js.Any])
+    inline def setEarcon(value: Earcon): Self = StObject.set(x, "earcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPoint(value: String): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    inline def setOnPoint(value: String): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
   }
 }

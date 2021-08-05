@@ -16,22 +16,17 @@ trait SchemaQueryAuditableServicesResponse extends StObject {
 }
 object SchemaQueryAuditableServicesResponse {
   
-  @scala.inline
-  def apply(): SchemaQueryAuditableServicesResponse = {
+  inline def apply(): SchemaQueryAuditableServicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryAuditableServicesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaQueryAuditableServicesResponseMutableBuilder[Self <: SchemaQueryAuditableServicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryAuditableServicesResponse](x: Self) {
     
-    @scala.inline
-    def setServices(value: js.Array[SchemaAuditableService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[SchemaAuditableService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: SchemaAuditableService*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: SchemaAuditableService*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

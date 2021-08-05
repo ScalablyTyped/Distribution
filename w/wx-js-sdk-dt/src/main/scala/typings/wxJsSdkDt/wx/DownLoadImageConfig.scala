@@ -24,28 +24,21 @@ trait DownLoadImageConfig
 }
 object DownLoadImageConfig {
   
-  @scala.inline
-  def apply(serverId: String): DownLoadImageConfig = {
+  inline def apply(serverId: String): DownLoadImageConfig = {
     val __obj = js.Dynamic.literal(serverId = serverId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownLoadImageConfig]
   }
   
-  @scala.inline
-  implicit class DownLoadImageConfigMutableBuilder[Self <: DownLoadImageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DownLoadImageConfig](x: Self) {
     
-    @scala.inline
-    def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
+    inline def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsShowProgressTipsUndefined: Self = StObject.set(x, "isShowProgressTips", js.undefined)
+    inline def setIsShowProgressTipsUndefined: Self = StObject.set(x, "isShowProgressTips", js.undefined)
     
-    @scala.inline
-    def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ LocalId => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ LocalId => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

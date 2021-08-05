@@ -22,6 +22,5 @@ object DeviceInformationPairing {
     * @return Whether or not the attempt was successful.
     */
   /* static member */
-  @scala.inline
-  def tryRegisterForAllInboundPairingRequests(pairingKindsSupported: typings.winrtUwp.Windows.Devices.Enumeration.DevicePairingKinds): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryRegisterForAllInboundPairingRequests")(pairingKindsSupported.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def tryRegisterForAllInboundPairingRequests(pairingKindsSupported: typings.winrtUwp.Windows.Devices.Enumeration.DevicePairingKinds): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryRegisterForAllInboundPairingRequests")(pairingKindsSupported.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

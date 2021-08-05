@@ -10,8 +10,7 @@ trait CreateSegmentInput
      with typings.awsSdkClientPinpointBrowser.typesCreateSegmentInputMod.CreateSegmentInput
 object CreateSegmentInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, WriteSegmentRequest: WriteSegmentRequest): CreateSegmentInput = {
+  inline def apply(ApplicationId: String, WriteSegmentRequest: WriteSegmentRequest): CreateSegmentInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteSegmentRequest = WriteSegmentRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSegmentInput]
   }

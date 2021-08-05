@@ -23,25 +23,19 @@ trait HumanLoopConfig extends StObject {
 }
 object HumanLoopConfig {
   
-  @scala.inline
-  def apply(FlowDefinitionArn: FlowDefinitionArn, HumanLoopName: HumanLoopName): HumanLoopConfig = {
+  inline def apply(FlowDefinitionArn: FlowDefinitionArn, HumanLoopName: HumanLoopName): HumanLoopConfig = {
     val __obj = js.Dynamic.literal(FlowDefinitionArn = FlowDefinitionArn.asInstanceOf[js.Any], HumanLoopName = HumanLoopName.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumanLoopConfig]
   }
   
-  @scala.inline
-  implicit class HumanLoopConfigMutableBuilder[Self <: HumanLoopConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HumanLoopConfig](x: Self) {
     
-    @scala.inline
-    def setDataAttributes(value: HumanLoopDataAttributes): Self = StObject.set(x, "DataAttributes", value.asInstanceOf[js.Any])
+    inline def setDataAttributes(value: HumanLoopDataAttributes): Self = StObject.set(x, "DataAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAttributesUndefined: Self = StObject.set(x, "DataAttributes", js.undefined)
+    inline def setDataAttributesUndefined: Self = StObject.set(x, "DataAttributes", js.undefined)
     
-    @scala.inline
-    def setFlowDefinitionArn(value: FlowDefinitionArn): Self = StObject.set(x, "FlowDefinitionArn", value.asInstanceOf[js.Any])
+    inline def setFlowDefinitionArn(value: FlowDefinitionArn): Self = StObject.set(x, "FlowDefinitionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
+    inline def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
   }
 }

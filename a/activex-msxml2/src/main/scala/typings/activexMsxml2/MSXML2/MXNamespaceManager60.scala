@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MXNamespaceManager60 extends StObject {
   
-  @JSName("MSXML2.MXNamespaceManager60_typekey")
+  /* private */ @JSName("MSXML2.MXNamespaceManager60_typekey")
   var MSXML2DotMXNamespaceManager60_typekey: MXNamespaceManager60 = js.native
   
   var allowOverride: Boolean = js.native

@@ -70,8 +70,7 @@ trait XPanel extends StObject {
 }
 object XPanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Dialog: XWindow,
     Id: String,
     OrderIndex: Double,
@@ -94,58 +93,40 @@ object XPanel {
     __obj.asInstanceOf[XPanel]
   }
   
-  @scala.inline
-  implicit class XPanelMutableBuilder[Self <: XPanel] (val x: Self) extends AnyVal {
+  extension [Self <: XPanel](x: Self) {
     
-    @scala.inline
-    def setCollapse(value: () => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
+    inline def setCollapse(value: () => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDialog(value: XWindow): Self = StObject.set(x, "Dialog", value.asInstanceOf[js.Any])
+    inline def setDialog(value: XWindow): Self = StObject.set(x, "Dialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpand(value: Boolean => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+    inline def setExpand(value: Boolean => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDialog(value: () => XWindow): Self = StObject.set(x, "getDialog", js.Any.fromFunction0(value))
+    inline def setGetDialog(value: () => XWindow): Self = StObject.set(x, "getDialog", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOrderIndex(value: () => Double): Self = StObject.set(x, "getOrderIndex", js.Any.fromFunction0(value))
+    inline def setGetOrderIndex(value: () => Double): Self = StObject.set(x, "getOrderIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "isExpanded", js.Any.fromFunction0(value))
+    inline def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "isExpanded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveDown(value: () => Unit): Self = StObject.set(x, "moveDown", js.Any.fromFunction0(value))
+    inline def setMoveDown(value: () => Unit): Self = StObject.set(x, "moveDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveFirst(value: () => Unit): Self = StObject.set(x, "moveFirst", js.Any.fromFunction0(value))
+    inline def setMoveFirst(value: () => Unit): Self = StObject.set(x, "moveFirst", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveLast(value: () => Unit): Self = StObject.set(x, "moveLast", js.Any.fromFunction0(value))
+    inline def setMoveLast(value: () => Unit): Self = StObject.set(x, "moveLast", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveUp(value: () => Unit): Self = StObject.set(x, "moveUp", js.Any.fromFunction0(value))
+    inline def setMoveUp(value: () => Unit): Self = StObject.set(x, "moveUp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOrderIndex(value: Double): Self = StObject.set(x, "OrderIndex", value.asInstanceOf[js.Any])
+    inline def setOrderIndex(value: Double): Self = StObject.set(x, "OrderIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetOrderIndex(value: Double => Unit): Self = StObject.set(x, "setOrderIndex", js.Any.fromFunction1(value))
+    inline def setSetOrderIndex(value: Double => Unit): Self = StObject.set(x, "setOrderIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

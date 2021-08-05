@@ -30,8 +30,7 @@ trait RaphaelCubicBezierCurvePointInfo
 }
 object RaphaelCubicBezierCurvePointInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alpha: Double,
     end: RaphaelCartesianPoint,
     m: RaphaelCartesianPoint,
@@ -44,19 +43,14 @@ object RaphaelCubicBezierCurvePointInfo {
     __obj.asInstanceOf[RaphaelCubicBezierCurvePointInfo]
   }
   
-  @scala.inline
-  implicit class RaphaelCubicBezierCurvePointInfoMutableBuilder[Self <: RaphaelCubicBezierCurvePointInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelCubicBezierCurvePointInfo](x: Self) {
     
-    @scala.inline
-    def setEnd(value: RaphaelCartesianPoint): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: RaphaelCartesianPoint): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM(value: RaphaelCartesianPoint): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: RaphaelCartesianPoint): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setN(value: RaphaelCartesianPoint): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: RaphaelCartesianPoint): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: RaphaelCartesianPoint): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: RaphaelCartesianPoint): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

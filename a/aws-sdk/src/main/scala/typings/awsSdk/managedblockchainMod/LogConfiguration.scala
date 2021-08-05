@@ -13,19 +13,15 @@ trait LogConfiguration extends StObject {
 }
 object LogConfiguration {
   
-  @scala.inline
-  def apply(): LogConfiguration = {
+  inline def apply(): LogConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogConfiguration]
   }
   
-  @scala.inline
-  implicit class LogConfigurationMutableBuilder[Self <: LogConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LogConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

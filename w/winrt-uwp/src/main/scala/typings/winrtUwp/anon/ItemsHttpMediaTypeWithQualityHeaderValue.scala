@@ -13,19 +13,15 @@ trait ItemsHttpMediaTypeWithQualityHeaderValue extends StObject {
 }
 object ItemsHttpMediaTypeWithQualityHeaderValue {
   
-  @scala.inline
-  def apply(items: HttpMediaTypeWithQualityHeaderValue, returnValue: Double): ItemsHttpMediaTypeWithQualityHeaderValue = {
+  inline def apply(items: HttpMediaTypeWithQualityHeaderValue, returnValue: Double): ItemsHttpMediaTypeWithQualityHeaderValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsHttpMediaTypeWithQualityHeaderValue]
   }
   
-  @scala.inline
-  implicit class ItemsHttpMediaTypeWithQualityHeaderValueMutableBuilder[Self <: ItemsHttpMediaTypeWithQualityHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsHttpMediaTypeWithQualityHeaderValue](x: Self) {
     
-    @scala.inline
-    def setItems(value: HttpMediaTypeWithQualityHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: HttpMediaTypeWithQualityHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

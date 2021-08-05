@@ -20,49 +20,35 @@ trait PDFViewerMessagesDialogsExportAsDialog extends StObject {
 }
 object PDFViewerMessagesDialogsExportAsDialog {
   
-  @scala.inline
-  def apply(): PDFViewerMessagesDialogsExportAsDialog = {
+  inline def apply(): PDFViewerMessagesDialogsExportAsDialog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PDFViewerMessagesDialogsExportAsDialog]
   }
   
-  @scala.inline
-  implicit class PDFViewerMessagesDialogsExportAsDialogMutableBuilder[Self <: PDFViewerMessagesDialogsExportAsDialog] (val x: Self) extends AnyVal {
+  extension [Self <: PDFViewerMessagesDialogsExportAsDialog](x: Self) {
     
-    @scala.inline
-    def setDefaultFileName(value: String): Self = StObject.set(x, "defaultFileName", value.asInstanceOf[js.Any])
+    inline def setDefaultFileName(value: String): Self = StObject.set(x, "defaultFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFileNameUndefined: Self = StObject.set(x, "defaultFileName", js.undefined)
+    inline def setDefaultFileNameUndefined: Self = StObject.set(x, "defaultFileName", js.undefined)
     
-    @scala.inline
-    def setLabels(value: PDFViewerMessagesDialogsExportAsDialogLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: PDFViewerMessagesDialogsExportAsDialogLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    inline def setPdf(value: String): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+    inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
-    @scala.inline
-    def setPng(value: String): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
+    inline def setPng(value: String): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPngUndefined: Self = StObject.set(x, "png", js.undefined)
+    inline def setPngUndefined: Self = StObject.set(x, "png", js.undefined)
     
-    @scala.inline
-    def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    inline def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+    inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -22,28 +22,21 @@ trait SchemaHeader extends StObject {
 }
 object SchemaHeader {
   
-  @scala.inline
-  def apply(): SchemaHeader = {
+  inline def apply(): SchemaHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHeader]
   }
   
-  @scala.inline
-  implicit class SchemaHeaderMutableBuilder[Self <: SchemaHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHeader](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Array[SchemaStructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[SchemaStructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: SchemaStructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
+    inline def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
+    inline def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
   }
 }

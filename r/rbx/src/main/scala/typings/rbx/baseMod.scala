@@ -30,8 +30,7 @@ object baseMod {
   @js.native
   val Generic: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
   
-  @scala.inline
-  def forwardRefAs[TOwnProps, TDefaultComponent /* <: ReactType[js.Any] */](
+  inline def forwardRefAs[TOwnProps, TDefaultComponent /* <: ReactType[js.Any] */](
     factory: RefForwardingComponent[HTMLElement | SVGElement | ComponentType[js.Object], TOwnProps & AsReactType],
     defaultProps: Partial[
       Prefer[

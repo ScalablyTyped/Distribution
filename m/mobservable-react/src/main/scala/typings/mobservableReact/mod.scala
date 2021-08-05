@@ -15,14 +15,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def observer[P](clazz: ClassicComponentClass[P]): ClassicComponentClass[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(clazz.asInstanceOf[js.Any]).asInstanceOf[ClassicComponentClass[P]]
-  @scala.inline
-  def observer[P](clazz: ComponentClass[P, ComponentState]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(clazz.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
-  @scala.inline
-  def observer[P](clazz: StatelessComponent[P]): ClassicComponentClass[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(clazz.asInstanceOf[js.Any]).asInstanceOf[ClassicComponentClass[P]]
-  @scala.inline
-  def observer[P](renderFunction: js.Function1[/* props */ P, ReactElement]): ClassicComponentClass[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(renderFunction.asInstanceOf[js.Any]).asInstanceOf[ClassicComponentClass[P]]
-  @scala.inline
-  def observer[TFunction /* <: ComponentClass[js.Any, ComponentState] */](target: TFunction): TFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(target.asInstanceOf[js.Any]).asInstanceOf[TFunction]
+  inline def observer[P](clazz: ClassicComponentClass[P]): ClassicComponentClass[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(clazz.asInstanceOf[js.Any]).asInstanceOf[ClassicComponentClass[P]]
+  inline def observer[P](clazz: ComponentClass[P, ComponentState]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(clazz.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
+  inline def observer[P](clazz: StatelessComponent[P]): ClassicComponentClass[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(clazz.asInstanceOf[js.Any]).asInstanceOf[ClassicComponentClass[P]]
+  inline def observer[P](renderFunction: js.Function1[/* props */ P, ReactElement]): ClassicComponentClass[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(renderFunction.asInstanceOf[js.Any]).asInstanceOf[ClassicComponentClass[P]]
+  inline def observer[TFunction /* <: ComponentClass[js.Any, ComponentState] */](target: TFunction): TFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(target.asInstanceOf[js.Any]).asInstanceOf[TFunction]
 }

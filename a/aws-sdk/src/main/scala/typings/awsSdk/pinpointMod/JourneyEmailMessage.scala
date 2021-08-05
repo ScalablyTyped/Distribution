@@ -13,19 +13,15 @@ trait JourneyEmailMessage extends StObject {
 }
 object JourneyEmailMessage {
   
-  @scala.inline
-  def apply(): JourneyEmailMessage = {
+  inline def apply(): JourneyEmailMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JourneyEmailMessage]
   }
   
-  @scala.inline
-  implicit class JourneyEmailMessageMutableBuilder[Self <: JourneyEmailMessage] (val x: Self) extends AnyVal {
+  extension [Self <: JourneyEmailMessage](x: Self) {
     
-    @scala.inline
-    def setFromAddress(value: string): Self = StObject.set(x, "FromAddress", value.asInstanceOf[js.Any])
+    inline def setFromAddress(value: string): Self = StObject.set(x, "FromAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromAddressUndefined: Self = StObject.set(x, "FromAddress", js.undefined)
+    inline def setFromAddressUndefined: Self = StObject.set(x, "FromAddress", js.undefined)
   }
 }

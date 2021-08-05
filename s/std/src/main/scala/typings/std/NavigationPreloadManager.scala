@@ -16,8 +16,7 @@ trait NavigationPreloadManager extends StObject {
 }
 object NavigationPreloadManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disable: () => js.Promise[Unit],
     enable: () => js.Promise[Unit],
     getState: () => js.Promise[NavigationPreloadState],
@@ -27,19 +26,14 @@ object NavigationPreloadManager {
     __obj.asInstanceOf[NavigationPreloadManager]
   }
   
-  @scala.inline
-  implicit class NavigationPreloadManagerMutableBuilder[Self <: NavigationPreloadManager] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationPreloadManager](x: Self) {
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetState(value: () => js.Promise[NavigationPreloadState]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => js.Promise[NavigationPreloadState]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHeaderValue(value: java.lang.String => js.Promise[Unit]): Self = StObject.set(x, "setHeaderValue", js.Any.fromFunction1(value))
+    inline def setSetHeaderValue(value: java.lang.String => js.Promise[Unit]): Self = StObject.set(x, "setHeaderValue", js.Any.fromFunction1(value))
   }
 }

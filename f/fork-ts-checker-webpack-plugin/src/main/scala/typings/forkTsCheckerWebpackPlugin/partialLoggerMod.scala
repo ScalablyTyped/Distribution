@@ -11,8 +11,7 @@ object partialLoggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPartialLogger(methods: js.Array[LoggerMethods], logger: Logger): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("createPartialLogger")(methods.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[Logger]
+  inline def createPartialLogger(methods: js.Array[LoggerMethods], logger: Logger): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("createPartialLogger")(methods.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[Logger]
   
   /* Rewritten from type alias, can be one of: 
     - typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.info
@@ -22,13 +21,10 @@ object partialLoggerMod {
   trait LoggerMethods extends StObject
   object LoggerMethods {
     
-    @scala.inline
-    def error: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.error = "error".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.error]
+    inline def error: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.error = "error".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.error]
     
-    @scala.inline
-    def info: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.info = "info".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.info]
+    inline def info: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.info = "info".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.info]
     
-    @scala.inline
-    def log: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.log = "log".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.log]
+    inline def log: typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.log = "log".asInstanceOf[typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.log]
   }
 }

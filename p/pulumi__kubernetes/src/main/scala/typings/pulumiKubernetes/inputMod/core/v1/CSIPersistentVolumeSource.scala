@@ -58,61 +58,43 @@ trait CSIPersistentVolumeSource extends StObject {
 }
 object CSIPersistentVolumeSource {
   
-  @scala.inline
-  def apply(driver: Input[String], volumeHandle: Input[String]): CSIPersistentVolumeSource = {
+  inline def apply(driver: Input[String], volumeHandle: Input[String]): CSIPersistentVolumeSource = {
     val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any], volumeHandle = volumeHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSIPersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class CSIPersistentVolumeSourceMutableBuilder[Self <: CSIPersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: CSIPersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setControllerExpandSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "controllerExpandSecretRef", value.asInstanceOf[js.Any])
+    inline def setControllerExpandSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "controllerExpandSecretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerExpandSecretRefUndefined: Self = StObject.set(x, "controllerExpandSecretRef", js.undefined)
+    inline def setControllerExpandSecretRefUndefined: Self = StObject.set(x, "controllerExpandSecretRef", js.undefined)
     
-    @scala.inline
-    def setControllerPublishSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "controllerPublishSecretRef", value.asInstanceOf[js.Any])
+    inline def setControllerPublishSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "controllerPublishSecretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerPublishSecretRefUndefined: Self = StObject.set(x, "controllerPublishSecretRef", js.undefined)
+    inline def setControllerPublishSecretRefUndefined: Self = StObject.set(x, "controllerPublishSecretRef", js.undefined)
     
-    @scala.inline
-    def setDriver(value: Input[String]): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: Input[String]): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
+    inline def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
-    @scala.inline
-    def setNodePublishSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "nodePublishSecretRef", value.asInstanceOf[js.Any])
+    inline def setNodePublishSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "nodePublishSecretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePublishSecretRefUndefined: Self = StObject.set(x, "nodePublishSecretRef", js.undefined)
+    inline def setNodePublishSecretRefUndefined: Self = StObject.set(x, "nodePublishSecretRef", js.undefined)
     
-    @scala.inline
-    def setNodeStageSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "nodeStageSecretRef", value.asInstanceOf[js.Any])
+    inline def setNodeStageSecretRef(value: Input[SecretReference]): Self = StObject.set(x, "nodeStageSecretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeStageSecretRefUndefined: Self = StObject.set(x, "nodeStageSecretRef", js.undefined)
+    inline def setNodeStageSecretRefUndefined: Self = StObject.set(x, "nodeStageSecretRef", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setVolumeAttributes(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "volumeAttributes", value.asInstanceOf[js.Any])
+    inline def setVolumeAttributes(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "volumeAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeAttributesUndefined: Self = StObject.set(x, "volumeAttributes", js.undefined)
+    inline def setVolumeAttributesUndefined: Self = StObject.set(x, "volumeAttributes", js.undefined)
     
-    @scala.inline
-    def setVolumeHandle(value: Input[String]): Self = StObject.set(x, "volumeHandle", value.asInstanceOf[js.Any])
+    inline def setVolumeHandle(value: Input[String]): Self = StObject.set(x, "volumeHandle", value.asInstanceOf[js.Any])
   }
 }

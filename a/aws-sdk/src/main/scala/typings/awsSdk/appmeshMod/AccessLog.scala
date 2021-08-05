@@ -13,19 +13,15 @@ trait AccessLog extends StObject {
 }
 object AccessLog {
   
-  @scala.inline
-  def apply(): AccessLog = {
+  inline def apply(): AccessLog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessLog]
   }
   
-  @scala.inline
-  implicit class AccessLogMutableBuilder[Self <: AccessLog] (val x: Self) extends AnyVal {
+  extension [Self <: AccessLog](x: Self) {
     
-    @scala.inline
-    def setFile(value: FileAccessLog): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: FileAccessLog): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

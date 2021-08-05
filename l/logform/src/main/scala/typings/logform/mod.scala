@@ -40,87 +40,58 @@ object mod {
   
   object format {
     
-    @scala.inline
-    def apply(transform: TransformFunction): FormatWrap = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[FormatWrap]
+    inline def apply(transform: TransformFunction): FormatWrap = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[FormatWrap]
     
     @JSImport("logform", "format")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def align(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("align")().asInstanceOf[Format_]
+    inline def align(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("align")().asInstanceOf[Format_]
     
-    @scala.inline
-    def cli(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")().asInstanceOf[Format_]
-    @scala.inline
-    def cli(opts: CliOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def cli(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")().asInstanceOf[Format_]
+    inline def cli(opts: CliOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def colorize(): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[Colorizer]
-    @scala.inline
-    def colorize(opts: ColorizeOptions): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Colorizer]
+    inline def colorize(): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[Colorizer]
+    inline def colorize(opts: ColorizeOptions): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Colorizer]
     
-    @scala.inline
-    def combine(formats: Format_ *): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def combine(formats: Format_ *): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def errors(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[Format_]
-    @scala.inline
-    def errors(opts: js.Object): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def errors(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[Format_]
+    inline def errors(opts: js.Object): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def json(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[Format_]
-    @scala.inline
-    def json(opts: JsonOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def json(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[Format_]
+    inline def json(opts: JsonOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def label(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[Format_]
-    @scala.inline
-    def label(opts: LabelOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def label(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[Format_]
+    inline def label(opts: LabelOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def logstash(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logstash")().asInstanceOf[Format_]
+    inline def logstash(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logstash")().asInstanceOf[Format_]
     
-    @scala.inline
-    def metadata(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")().asInstanceOf[Format_]
-    @scala.inline
-    def metadata(opts: MetadataOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def metadata(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")().asInstanceOf[Format_]
+    inline def metadata(opts: MetadataOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def ms(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")().asInstanceOf[Format_]
+    inline def ms(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")().asInstanceOf[Format_]
     
-    @scala.inline
-    def padLevels(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")().asInstanceOf[Format_]
-    @scala.inline
-    def padLevels(opts: PadLevelsOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def padLevels(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")().asInstanceOf[Format_]
+    inline def padLevels(opts: PadLevelsOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def prettyPrint(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[Format_]
-    @scala.inline
-    def prettyPrint(opts: PrettyPrintOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def prettyPrint(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[Format_]
+    inline def prettyPrint(opts: PrettyPrintOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(templateFunction.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(templateFunction.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def simple(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[Format_]
+    inline def simple(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[Format_]
     
-    @scala.inline
-    def splat(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")().asInstanceOf[Format_]
+    inline def splat(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")().asInstanceOf[Format_]
     
-    @scala.inline
-    def timestamp(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Format_]
-    @scala.inline
-    def timestamp(opts: TimestampOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def timestamp(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Format_]
+    inline def timestamp(opts: TimestampOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @scala.inline
-    def uncolorize(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")().asInstanceOf[Format_]
-    @scala.inline
-    def uncolorize(opts: UncolorizeOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
+    inline def uncolorize(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")().asInstanceOf[Format_]
+    inline def uncolorize(opts: UncolorizeOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
   }
   
-  @scala.inline
-  def levels(config: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("levels")(config.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def levels(config: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("levels")(config.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   trait CliOptions
     extends StObject
@@ -128,8 +99,7 @@ object mod {
        with PadLevelsOptions
   object CliOptions {
     
-    @scala.inline
-    def apply(): CliOptions = {
+    inline def apply(): CliOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CliOptions]
     }
@@ -159,38 +129,28 @@ object mod {
   }
   object ColorizeOptions {
     
-    @scala.inline
-    def apply(): ColorizeOptions = {
+    inline def apply(): ColorizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColorizeOptions]
     }
     
-    @scala.inline
-    implicit class ColorizeOptionsMutableBuilder[Self <: ColorizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColorizeOptions](x: Self) {
       
-      @scala.inline
-      def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setColors(value: Record[String, String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Record[String, String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setMessage(value: Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -214,26 +174,20 @@ object mod {
   }
   object JsonOptions {
     
-    @scala.inline
-    def apply(): JsonOptions = {
+    inline def apply(): JsonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonOptions]
     }
     
-    @scala.inline
-    implicit class JsonOptionsMutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JsonOptions](x: Self) {
       
-      @scala.inline
-      def setReplacer(value: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
+      inline def setReplacer(value: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      @scala.inline
-      def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     }
   }
   
@@ -252,26 +206,20 @@ object mod {
   }
   object LabelOptions {
     
-    @scala.inline
-    def apply(): LabelOptions = {
+    inline def apply(): LabelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LabelOptions]
     }
     
-    @scala.inline
-    implicit class LabelOptionsMutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LabelOptions](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMessage(value: Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -294,38 +242,28 @@ object mod {
   }
   object MetadataOptions {
     
-    @scala.inline
-    def apply(): MetadataOptions = {
+    inline def apply(): MetadataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetadataOptions]
     }
     
-    @scala.inline
-    implicit class MetadataOptionsMutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataOptions](x: Self) {
       
-      @scala.inline
-      def setFillExcept(value: js.Array[String]): Self = StObject.set(x, "fillExcept", value.asInstanceOf[js.Any])
+      inline def setFillExcept(value: js.Array[String]): Self = StObject.set(x, "fillExcept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillExceptUndefined: Self = StObject.set(x, "fillExcept", js.undefined)
+      inline def setFillExceptUndefined: Self = StObject.set(x, "fillExcept", js.undefined)
       
-      @scala.inline
-      def setFillExceptVarargs(value: String*): Self = StObject.set(x, "fillExcept", js.Array(value :_*))
+      inline def setFillExceptVarargs(value: String*): Self = StObject.set(x, "fillExcept", js.Array(value :_*))
       
-      @scala.inline
-      def setFillWith(value: js.Array[String]): Self = StObject.set(x, "fillWith", value.asInstanceOf[js.Any])
+      inline def setFillWith(value: js.Array[String]): Self = StObject.set(x, "fillWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillWithUndefined: Self = StObject.set(x, "fillWith", js.undefined)
+      inline def setFillWithUndefined: Self = StObject.set(x, "fillWith", js.undefined)
       
-      @scala.inline
-      def setFillWithVarargs(value: String*): Self = StObject.set(x, "fillWith", js.Array(value :_*))
+      inline def setFillWithVarargs(value: String*): Self = StObject.set(x, "fillWith", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -339,20 +277,16 @@ object mod {
   }
   object PadLevelsOptions {
     
-    @scala.inline
-    def apply(): PadLevelsOptions = {
+    inline def apply(): PadLevelsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PadLevelsOptions]
     }
     
-    @scala.inline
-    implicit class PadLevelsOptionsMutableBuilder[Self <: PadLevelsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PadLevelsOptions](x: Self) {
       
-      @scala.inline
-      def setLevels(value: Record[String, Double]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+      inline def setLevels(value: Record[String, Double]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+      inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     }
   }
   
@@ -371,26 +305,20 @@ object mod {
   }
   object PrettyPrintOptions {
     
-    @scala.inline
-    def apply(): PrettyPrintOptions = {
+    inline def apply(): PrettyPrintOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrettyPrintOptions]
     }
     
-    @scala.inline
-    implicit class PrettyPrintOptionsMutableBuilder[Self <: PrettyPrintOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrettyPrintOptions](x: Self) {
       
-      @scala.inline
-      def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
+      inline def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
+      inline def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     }
   }
   
@@ -410,29 +338,22 @@ object mod {
   }
   object TimestampOptions {
     
-    @scala.inline
-    def apply(): TimestampOptions = {
+    inline def apply(): TimestampOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimestampOptions]
     }
     
-    @scala.inline
-    implicit class TimestampOptionsMutableBuilder[Self <: TimestampOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TimestampOptions](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String | js.Function0[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String | js.Function0[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatFunction0(value: () => String): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
+      inline def setFormatFunction0(value: () => String): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   
@@ -452,20 +373,16 @@ object mod {
   }
   object TransformableInfo {
     
-    @scala.inline
-    def apply(level: String, message: String): TransformableInfo = {
+    inline def apply(level: String, message: String): TransformableInfo = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransformableInfo]
     }
     
-    @scala.inline
-    implicit class TransformableInfoMutableBuilder[Self <: TransformableInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TransformableInfo](x: Self) {
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -488,32 +405,24 @@ object mod {
   }
   object UncolorizeOptions {
     
-    @scala.inline
-    def apply(): UncolorizeOptions = {
+    inline def apply(): UncolorizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UncolorizeOptions]
     }
     
-    @scala.inline
-    implicit class UncolorizeOptionsMutableBuilder[Self <: UncolorizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UncolorizeOptions](x: Self) {
       
-      @scala.inline
-      def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setMessage(value: Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Boolean): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
 }

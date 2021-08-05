@@ -13,22 +13,17 @@ trait SwapShiftsChangeRequest
 }
 object SwapShiftsChangeRequest {
   
-  @scala.inline
-  def apply(): SwapShiftsChangeRequest = {
+  inline def apply(): SwapShiftsChangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SwapShiftsChangeRequest]
   }
   
-  @scala.inline
-  implicit class SwapShiftsChangeRequestMutableBuilder[Self <: SwapShiftsChangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SwapShiftsChangeRequest](x: Self) {
     
-    @scala.inline
-    def setRecipientShiftId(value: NullableOption[String]): Self = StObject.set(x, "recipientShiftId", value.asInstanceOf[js.Any])
+    inline def setRecipientShiftId(value: NullableOption[String]): Self = StObject.set(x, "recipientShiftId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientShiftIdNull: Self = StObject.set(x, "recipientShiftId", null)
+    inline def setRecipientShiftIdNull: Self = StObject.set(x, "recipientShiftId", null)
     
-    @scala.inline
-    def setRecipientShiftIdUndefined: Self = StObject.set(x, "recipientShiftId", js.undefined)
+    inline def setRecipientShiftIdUndefined: Self = StObject.set(x, "recipientShiftId", js.undefined)
   }
 }

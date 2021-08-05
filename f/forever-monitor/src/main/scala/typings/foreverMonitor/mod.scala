@@ -70,34 +70,21 @@ object mod {
     def trySpawn(): Boolean = js.native
   }
   
-  @scala.inline
-  def checkProcess(pid: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkProcess")(pid.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkProcess(pid: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkProcess")(pid.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, killTree: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, killTree: Boolean, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, killTree: Boolean, signal: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, killTree: Boolean, signal: Unit, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, killTree: Unit, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, killTree: Unit, signal: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def kill(pid: Double, killTree: Unit, signal: Unit, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Boolean, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Boolean, signal: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Boolean, signal: Unit, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Unit, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Unit, signal: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pid: Double, killTree: Unit, signal: Unit, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def start(script: String): Monitor = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any]).asInstanceOf[Monitor]
-  @scala.inline
-  def start(script: String, options: Options): Monitor = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Monitor]
-  @scala.inline
-  def start(script: js.Array[String]): Monitor = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any]).asInstanceOf[Monitor]
-  @scala.inline
-  def start(script: js.Array[String], options: Options): Monitor = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Monitor]
+  inline def start(script: String): Monitor = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any]).asInstanceOf[Monitor]
+  inline def start(script: String, options: Options): Monitor = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Monitor]
+  inline def start(script: js.Array[String]): Monitor = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any]).asInstanceOf[Monitor]
+  inline def start(script: js.Array[String], options: Options): Monitor = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Monitor]
   
   @JSImport("forever-monitor", "version")
   @js.native
@@ -149,146 +136,100 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setErrFile(value: String): Self = StObject.set(x, "errFile", value.asInstanceOf[js.Any])
+      inline def setErrFile(value: String): Self = StObject.set(x, "errFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrFileUndefined: Self = StObject.set(x, "errFile", js.undefined)
+      inline def setErrFileUndefined: Self = StObject.set(x, "errFile", js.undefined)
       
-      @scala.inline
-      def setKillTree(value: Boolean): Self = StObject.set(x, "killTree", value.asInstanceOf[js.Any])
+      inline def setKillTree(value: Boolean): Self = StObject.set(x, "killTree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKillTreeUndefined: Self = StObject.set(x, "killTree", js.undefined)
+      inline def setKillTreeUndefined: Self = StObject.set(x, "killTree", js.undefined)
       
-      @scala.inline
-      def setLogFile(value: String): Self = StObject.set(x, "logFile", value.asInstanceOf[js.Any])
+      inline def setLogFile(value: String): Self = StObject.set(x, "logFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogFileUndefined: Self = StObject.set(x, "logFile", js.undefined)
+      inline def setLogFileUndefined: Self = StObject.set(x, "logFile", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMinUptime(value: Double): Self = StObject.set(x, "minUptime", value.asInstanceOf[js.Any])
+      inline def setMinUptime(value: Double): Self = StObject.set(x, "minUptime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUptimeUndefined: Self = StObject.set(x, "minUptime", js.undefined)
+      inline def setMinUptimeUndefined: Self = StObject.set(x, "minUptime", js.undefined)
       
-      @scala.inline
-      def setOutFile(value: String): Self = StObject.set(x, "outFile", value.asInstanceOf[js.Any])
+      inline def setOutFile(value: String): Self = StObject.set(x, "outFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
+      inline def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
       
-      @scala.inline
-      def setParser(value: (/* command */ String, /* args */ js.Array[String]) => Args): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
+      inline def setParser(value: (/* command */ String, /* args */ js.Array[String]) => Args): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
-      @scala.inline
-      def setPidFile(value: String): Self = StObject.set(x, "pidFile", value.asInstanceOf[js.Any])
+      inline def setPidFile(value: String): Self = StObject.set(x, "pidFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPidFileUndefined: Self = StObject.set(x, "pidFile", js.undefined)
+      inline def setPidFileUndefined: Self = StObject.set(x, "pidFile", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      @scala.inline
-      def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
+      inline def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
       
-      @scala.inline
-      def setSpawnWith(value: SpawnWith): Self = StObject.set(x, "spawnWith", value.asInstanceOf[js.Any])
+      inline def setSpawnWith(value: SpawnWith): Self = StObject.set(x, "spawnWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpawnWithUndefined: Self = StObject.set(x, "spawnWith", js.undefined)
+      inline def setSpawnWithUndefined: Self = StObject.set(x, "spawnWith", js.undefined)
       
-      @scala.inline
-      def setSpinSleepTime(value: Double): Self = StObject.set(x, "spinSleepTime", value.asInstanceOf[js.Any])
+      inline def setSpinSleepTime(value: Double): Self = StObject.set(x, "spinSleepTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinSleepTimeUndefined: Self = StObject.set(x, "spinSleepTime", js.undefined)
+      inline def setSpinSleepTimeUndefined: Self = StObject.set(x, "spinSleepTime", js.undefined)
       
-      @scala.inline
-      def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
       
-      @scala.inline
-      def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchDirectory(value: String): Self = StObject.set(x, "watchDirectory", value.asInstanceOf[js.Any])
+      inline def setWatchDirectory(value: String): Self = StObject.set(x, "watchDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchDirectoryUndefined: Self = StObject.set(x, "watchDirectory", js.undefined)
+      inline def setWatchDirectoryUndefined: Self = StObject.set(x, "watchDirectory", js.undefined)
       
-      @scala.inline
-      def setWatchIgnoreDotFiles(value: Boolean): Self = StObject.set(x, "watchIgnoreDotFiles", value.asInstanceOf[js.Any])
+      inline def setWatchIgnoreDotFiles(value: Boolean): Self = StObject.set(x, "watchIgnoreDotFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchIgnoreDotFilesUndefined: Self = StObject.set(x, "watchIgnoreDotFiles", js.undefined)
+      inline def setWatchIgnoreDotFilesUndefined: Self = StObject.set(x, "watchIgnoreDotFiles", js.undefined)
       
-      @scala.inline
-      def setWatchIgnorePatterns(value: js.Array[String]): Self = StObject.set(x, "watchIgnorePatterns", value.asInstanceOf[js.Any])
+      inline def setWatchIgnorePatterns(value: js.Array[String]): Self = StObject.set(x, "watchIgnorePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchIgnorePatternsUndefined: Self = StObject.set(x, "watchIgnorePatterns", js.undefined)
+      inline def setWatchIgnorePatternsUndefined: Self = StObject.set(x, "watchIgnorePatterns", js.undefined)
       
-      @scala.inline
-      def setWatchIgnorePatternsVarargs(value: String*): Self = StObject.set(x, "watchIgnorePatterns", js.Array(value :_*))
+      inline def setWatchIgnorePatternsVarargs(value: String*): Self = StObject.set(x, "watchIgnorePatterns", js.Array(value :_*))
       
-      @scala.inline
-      def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+      inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
     }
   }
   
@@ -304,29 +245,22 @@ object mod {
   }
   object SpawnWith {
     
-    @scala.inline
-    def apply(customFds: js.Array[Double], gid: Double, setsid: Boolean, uid: Double): SpawnWith = {
+    inline def apply(customFds: js.Array[Double], gid: Double, setsid: Boolean, uid: Double): SpawnWith = {
       val __obj = js.Dynamic.literal(customFds = customFds.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], setsid = setsid.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpawnWith]
     }
     
-    @scala.inline
-    implicit class SpawnWithMutableBuilder[Self <: SpawnWith] (val x: Self) extends AnyVal {
+    extension [Self <: SpawnWith](x: Self) {
       
-      @scala.inline
-      def setCustomFds(value: js.Array[Double]): Self = StObject.set(x, "customFds", value.asInstanceOf[js.Any])
+      inline def setCustomFds(value: js.Array[Double]): Self = StObject.set(x, "customFds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFdsVarargs(value: Double*): Self = StObject.set(x, "customFds", js.Array(value :_*))
+      inline def setCustomFdsVarargs(value: Double*): Self = StObject.set(x, "customFds", js.Array(value :_*))
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetsid(value: Boolean): Self = StObject.set(x, "setsid", value.asInstanceOf[js.Any])
+      inline def setSetsid(value: Boolean): Self = StObject.set(x, "setsid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
 }

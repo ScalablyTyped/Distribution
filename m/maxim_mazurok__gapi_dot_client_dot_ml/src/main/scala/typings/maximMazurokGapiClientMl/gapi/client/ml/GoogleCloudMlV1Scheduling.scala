@@ -30,25 +30,19 @@ trait GoogleCloudMlV1Scheduling extends StObject {
 }
 object GoogleCloudMlV1Scheduling {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1Scheduling = {
+  inline def apply(): GoogleCloudMlV1Scheduling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1Scheduling]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1SchedulingMutableBuilder[Self <: GoogleCloudMlV1Scheduling] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1Scheduling](x: Self) {
     
-    @scala.inline
-    def setMaxRunningTime(value: String): Self = StObject.set(x, "maxRunningTime", value.asInstanceOf[js.Any])
+    inline def setMaxRunningTime(value: String): Self = StObject.set(x, "maxRunningTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRunningTimeUndefined: Self = StObject.set(x, "maxRunningTime", js.undefined)
+    inline def setMaxRunningTimeUndefined: Self = StObject.set(x, "maxRunningTime", js.undefined)
     
-    @scala.inline
-    def setMaxWaitTime(value: String): Self = StObject.set(x, "maxWaitTime", value.asInstanceOf[js.Any])
+    inline def setMaxWaitTime(value: String): Self = StObject.set(x, "maxWaitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWaitTimeUndefined: Self = StObject.set(x, "maxWaitTime", js.undefined)
+    inline def setMaxWaitTimeUndefined: Self = StObject.set(x, "maxWaitTime", js.undefined)
   }
 }

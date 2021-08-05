@@ -45,8 +45,7 @@ trait XGridFieldDataSupplier
 }
 object XGridFieldDataSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryFieldData: (Double, `type`) => SafeArray[js.Any],
     queryFieldDataType: `type` => SafeArray[Boolean],
@@ -57,13 +56,10 @@ object XGridFieldDataSupplier {
     __obj.asInstanceOf[XGridFieldDataSupplier]
   }
   
-  @scala.inline
-  implicit class XGridFieldDataSupplierMutableBuilder[Self <: XGridFieldDataSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XGridFieldDataSupplier](x: Self) {
     
-    @scala.inline
-    def setQueryFieldData(value: (Double, `type`) => SafeArray[js.Any]): Self = StObject.set(x, "queryFieldData", js.Any.fromFunction2(value))
+    inline def setQueryFieldData(value: (Double, `type`) => SafeArray[js.Any]): Self = StObject.set(x, "queryFieldData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQueryFieldDataType(value: `type` => SafeArray[Boolean]): Self = StObject.set(x, "queryFieldDataType", js.Any.fromFunction1(value))
+    inline def setQueryFieldDataType(value: `type` => SafeArray[Boolean]): Self = StObject.set(x, "queryFieldDataType", js.Any.fromFunction1(value))
   }
 }

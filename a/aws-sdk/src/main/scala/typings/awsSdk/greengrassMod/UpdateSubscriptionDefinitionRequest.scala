@@ -18,22 +18,17 @@ trait UpdateSubscriptionDefinitionRequest extends StObject {
 }
 object UpdateSubscriptionDefinitionRequest {
   
-  @scala.inline
-  def apply(SubscriptionDefinitionId: string): UpdateSubscriptionDefinitionRequest = {
+  inline def apply(SubscriptionDefinitionId: string): UpdateSubscriptionDefinitionRequest = {
     val __obj = js.Dynamic.literal(SubscriptionDefinitionId = SubscriptionDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSubscriptionDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSubscriptionDefinitionRequestMutableBuilder[Self <: UpdateSubscriptionDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSubscriptionDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
   }
 }

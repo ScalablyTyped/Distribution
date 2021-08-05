@@ -40,55 +40,39 @@ trait ITaskRunner
 }
 object ITaskRunner {
   
-  @scala.inline
-  def apply(): ITaskRunner = {
+  inline def apply(): ITaskRunner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITaskRunner]
   }
   
-  @scala.inline
-  implicit class ITaskRunnerMutableBuilder[Self <: ITaskRunner] (val x: Self) extends AnyVal {
+  extension [Self <: ITaskRunner](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setFireIdleEvent(value: Boolean): Self = StObject.set(x, "fireIdleEvent", value.asInstanceOf[js.Any])
+    inline def setFireIdleEvent(value: Boolean): Self = StObject.set(x, "fireIdleEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFireIdleEventUndefined: Self = StObject.set(x, "fireIdleEvent", js.undefined)
+    inline def setFireIdleEventUndefined: Self = StObject.set(x, "fireIdleEvent", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setNewTask(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "newTask", js.Any.fromFunction1(value))
+    inline def setNewTask(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "newTask", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNewTaskUndefined: Self = StObject.set(x, "newTask", js.undefined)
+    inline def setNewTaskUndefined: Self = StObject.set(x, "newTask", js.undefined)
     
-    @scala.inline
-    def setStart(value: /* task */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* task */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStop(value: /* task */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+    inline def setStop(value: /* task */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopAll(value: () => Unit): Self = StObject.set(x, "stopAll", js.Any.fromFunction0(value))
+    inline def setStopAll(value: () => Unit): Self = StObject.set(x, "stopAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopAllUndefined: Self = StObject.set(x, "stopAll", js.undefined)
+    inline def setStopAllUndefined: Self = StObject.set(x, "stopAll", js.undefined)
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

@@ -46,57 +46,37 @@ object mod {
     val statusCode: Double = js.native
   }
   
-  @scala.inline
-  def encrypt(userPublicKey: String, userAuth: String, payload: String, contentEncoding: ContentEncoding): EncryptionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(userPublicKey.asInstanceOf[js.Any], userAuth.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[EncryptionResult]
-  @scala.inline
-  def encrypt(userPublicKey: String, userAuth: String, payload: Buffer, contentEncoding: ContentEncoding): EncryptionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(userPublicKey.asInstanceOf[js.Any], userAuth.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[EncryptionResult]
+  inline def encrypt(userPublicKey: String, userAuth: String, payload: String, contentEncoding: ContentEncoding): EncryptionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(userPublicKey.asInstanceOf[js.Any], userAuth.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[EncryptionResult]
+  inline def encrypt(userPublicKey: String, userAuth: String, payload: Buffer, contentEncoding: ContentEncoding): EncryptionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(userPublicKey.asInstanceOf[js.Any], userAuth.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[EncryptionResult]
   
-  @scala.inline
-  def generateRequestDetails(subscription: PushSubscription): RequestDetailsbodynull = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any]).asInstanceOf[RequestDetailsbodynull]
-  @scala.inline
-  def generateRequestDetails(subscription: PushSubscription, payload: String): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
-  @scala.inline
-  def generateRequestDetails(subscription: PushSubscription, payload: String, options: RequestOptions): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
-  @scala.inline
-  def generateRequestDetails(subscription: PushSubscription, payload: Null, options: RequestOptions): RequestDetailsbodynull = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodynull]
-  @scala.inline
-  def generateRequestDetails(subscription: PushSubscription, payload: Unit, options: RequestOptions): RequestDetailsbodynull = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodynull]
-  @scala.inline
-  def generateRequestDetails(subscription: PushSubscription, payload: Buffer): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
-  @scala.inline
-  def generateRequestDetails(subscription: PushSubscription, payload: Buffer, options: RequestOptions): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
+  inline def generateRequestDetails(subscription: PushSubscription): RequestDetailsbodynull = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any]).asInstanceOf[RequestDetailsbodynull]
+  inline def generateRequestDetails(subscription: PushSubscription, payload: String): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
+  inline def generateRequestDetails(subscription: PushSubscription, payload: String, options: RequestOptions): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
+  inline def generateRequestDetails(subscription: PushSubscription, payload: Null, options: RequestOptions): RequestDetailsbodynull = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodynull]
+  inline def generateRequestDetails(subscription: PushSubscription, payload: Unit, options: RequestOptions): RequestDetailsbodynull = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodynull]
+  inline def generateRequestDetails(subscription: PushSubscription, payload: Buffer): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
+  inline def generateRequestDetails(subscription: PushSubscription, payload: Buffer, options: RequestOptions): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
   
-  @scala.inline
-  def generateRequestDetails_RequestDetails(subscription: PushSubscription): RequestDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any]).asInstanceOf[RequestDetails]
-  @scala.inline
-  def generateRequestDetails_RequestDetails(subscription: PushSubscription, payload: Unit, options: RequestOptions): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
+  inline def generateRequestDetails_RequestDetails(subscription: PushSubscription): RequestDetails = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any]).asInstanceOf[RequestDetails]
+  inline def generateRequestDetails_RequestDetails(subscription: PushSubscription, payload: Unit, options: RequestOptions): RequestDetails = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetails]
   
-  @scala.inline
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription): RequestDetailsbodyBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any]).asInstanceOf[RequestDetailsbodyBuffer]
-  @scala.inline
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: String): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
-  @scala.inline
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: String, options: RequestOptions): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
-  @scala.inline
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Unit, options: RequestOptions): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
-  @scala.inline
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Buffer): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
-  @scala.inline
-  def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Buffer, options: RequestOptions): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  inline def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription): RequestDetailsbodyBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any]).asInstanceOf[RequestDetailsbodyBuffer]
+  inline def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: String): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  inline def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: String, options: RequestOptions): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  inline def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Unit, options: RequestOptions): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  inline def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Buffer): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
+  inline def generateRequestDetails_RequestDetailsbodyBuffer(subscription: PushSubscription, payload: Buffer, options: RequestOptions): RequestDetailsbodyBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateRequestDetails")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestDetailsbodyBuffer]
   
-  @scala.inline
-  def generateVAPIDKeys(): VapidKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVAPIDKeys")().asInstanceOf[VapidKeys]
+  inline def generateVAPIDKeys(): VapidKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVAPIDKeys")().asInstanceOf[VapidKeys]
   
-  @scala.inline
-  def getVapidHeaders(
+  inline def getVapidHeaders(
     audience: String,
     subject: String,
     publicKey: String,
     privateKey: String,
     contentEncoding: ContentEncoding
   ): AuthorizationCryptoKey = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[AuthorizationCryptoKey]
-  @scala.inline
-  def getVapidHeaders(
+  inline def getVapidHeaders(
     audience: String,
     subject: String,
     publicKey: String,
@@ -105,16 +85,14 @@ object mod {
     expiration: Double
   ): AuthorizationCryptoKey = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any], expiration.asInstanceOf[js.Any])).asInstanceOf[AuthorizationCryptoKey]
   
-  @scala.inline
-  def getVapidHeaders_aes128gcm(
+  inline def getVapidHeaders_aes128gcm(
     audience: String,
     subject: String,
     publicKey: String,
     privateKey: String,
     contentEncoding: aes128gcm
   ): Authorization = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[Authorization]
-  @scala.inline
-  def getVapidHeaders_aes128gcm(
+  inline def getVapidHeaders_aes128gcm(
     audience: String,
     subject: String,
     publicKey: String,
@@ -123,10 +101,8 @@ object mod {
     expiration: Double
   ): Authorization = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any], expiration.asInstanceOf[js.Any])).asInstanceOf[Authorization]
   
-  @scala.inline
-  def getVapidHeaders_aesgcm(audience: String, subject: String, publicKey: String, privateKey: String, contentEncoding: aesgcm): CryptoKey = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[CryptoKey]
-  @scala.inline
-  def getVapidHeaders_aesgcm(
+  inline def getVapidHeaders_aesgcm(audience: String, subject: String, publicKey: String, privateKey: String, contentEncoding: aesgcm): CryptoKey = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any])).asInstanceOf[CryptoKey]
+  inline def getVapidHeaders_aesgcm(
     audience: String,
     subject: String,
     publicKey: String,
@@ -135,28 +111,18 @@ object mod {
     expiration: Double
   ): CryptoKey = (^.asInstanceOf[js.Dynamic].applyDynamic("getVapidHeaders")(audience.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], contentEncoding.asInstanceOf[js.Any], expiration.asInstanceOf[js.Any])).asInstanceOf[CryptoKey]
   
-  @scala.inline
-  def sendNotification(subscription: PushSubscription): js.Promise[SendResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SendResult]]
-  @scala.inline
-  def sendNotification(subscription: PushSubscription, payload: String): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
-  @scala.inline
-  def sendNotification(subscription: PushSubscription, payload: String, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
-  @scala.inline
-  def sendNotification(subscription: PushSubscription, payload: Null, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
-  @scala.inline
-  def sendNotification(subscription: PushSubscription, payload: Unit, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
-  @scala.inline
-  def sendNotification(subscription: PushSubscription, payload: Buffer): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
-  @scala.inline
-  def sendNotification(subscription: PushSubscription, payload: Buffer, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  inline def sendNotification(subscription: PushSubscription): js.Promise[SendResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SendResult]]
+  inline def sendNotification(subscription: PushSubscription, payload: String): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  inline def sendNotification(subscription: PushSubscription, payload: String, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  inline def sendNotification(subscription: PushSubscription, payload: Null, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  inline def sendNotification(subscription: PushSubscription, payload: Unit, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  inline def sendNotification(subscription: PushSubscription, payload: Buffer): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
+  inline def sendNotification(subscription: PushSubscription, payload: Buffer, options: RequestOptions): js.Promise[SendResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNotification")(subscription.asInstanceOf[js.Any], payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SendResult]]
   
-  @scala.inline
-  def setGCMAPIKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGCMAPIKey")().asInstanceOf[Unit]
-  @scala.inline
-  def setGCMAPIKey(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGCMAPIKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setGCMAPIKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGCMAPIKey")().asInstanceOf[Unit]
+  inline def setGCMAPIKey(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGCMAPIKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setVapidDetails(subject: String, publicKey: String, privateKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVapidDetails")(subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setVapidDetails(subject: String, publicKey: String, privateKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVapidDetails")(subject.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object supportedContentEncodings {
     
@@ -176,11 +142,9 @@ object mod {
   trait ContentEncoding extends StObject
   object ContentEncoding {
     
-    @scala.inline
-    def aes128gcm: typings.webPush.webPushStrings.aes128gcm = "aes128gcm".asInstanceOf[typings.webPush.webPushStrings.aes128gcm]
+    inline def aes128gcm: typings.webPush.webPushStrings.aes128gcm = "aes128gcm".asInstanceOf[typings.webPush.webPushStrings.aes128gcm]
     
-    @scala.inline
-    def aesgcm: typings.webPush.webPushStrings.aesgcm = "aesgcm".asInstanceOf[typings.webPush.webPushStrings.aesgcm]
+    inline def aesgcm: typings.webPush.webPushStrings.aesgcm = "aesgcm".asInstanceOf[typings.webPush.webPushStrings.aesgcm]
   }
   
   trait EncryptionResult extends StObject {
@@ -193,23 +157,18 @@ object mod {
   }
   object EncryptionResult {
     
-    @scala.inline
-    def apply(cipherText: Buffer, localPublicKey: String, salt: String): EncryptionResult = {
+    inline def apply(cipherText: Buffer, localPublicKey: String, salt: String): EncryptionResult = {
       val __obj = js.Dynamic.literal(cipherText = cipherText.asInstanceOf[js.Any], localPublicKey = localPublicKey.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncryptionResult]
     }
     
-    @scala.inline
-    implicit class EncryptionResultMutableBuilder[Self <: EncryptionResult] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionResult](x: Self) {
       
-      @scala.inline
-      def setCipherText(value: Buffer): Self = StObject.set(x, "cipherText", value.asInstanceOf[js.Any])
+      inline def setCipherText(value: Buffer): Self = StObject.set(x, "cipherText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalPublicKey(value: String): Self = StObject.set(x, "localPublicKey", value.asInstanceOf[js.Any])
+      inline def setLocalPublicKey(value: String): Self = StObject.set(x, "localPublicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,20 +182,16 @@ object mod {
   }
   object PushSubscription {
     
-    @scala.inline
-    def apply(endpoint: String, keys: Auth): PushSubscription = {
+    inline def apply(endpoint: String, keys: Auth): PushSubscription = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
       __obj.asInstanceOf[PushSubscription]
     }
     
-    @scala.inline
-    implicit class PushSubscriptionMutableBuilder[Self <: PushSubscription] (val x: Self) extends AnyVal {
+    extension [Self <: PushSubscription](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeys(value: Auth): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: Auth): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,35 +209,26 @@ object mod {
   }
   object RequestDetails {
     
-    @scala.inline
-    def apply(endpoint: String, headers: Headers): RequestDetails = {
+    inline def apply(endpoint: String, headers: Headers): RequestDetails = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = "POST", body = null)
       __obj.asInstanceOf[RequestDetails]
     }
     
-    @scala.inline
-    implicit class RequestDetailsMutableBuilder[Self <: RequestDetails] (val x: Self) extends AnyVal {
+    extension [Self <: RequestDetails](x: Self) {
       
-      @scala.inline
-      def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     }
   }
   
@@ -305,50 +251,36 @@ object mod {
   }
   object RequestOptions {
     
-    @scala.inline
-    def apply(): RequestOptions = {
+    inline def apply(): RequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestOptions]
     }
     
-    @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOptions](x: Self) {
       
-      @scala.inline
-      def setContentEncoding(value: ContentEncoding): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+      inline def setContentEncoding(value: ContentEncoding): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
+      inline def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
       
-      @scala.inline
-      def setGcmAPIKey(value: String): Self = StObject.set(x, "gcmAPIKey", value.asInstanceOf[js.Any])
+      inline def setGcmAPIKey(value: String): Self = StObject.set(x, "gcmAPIKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGcmAPIKeyUndefined: Self = StObject.set(x, "gcmAPIKey", js.undefined)
+      inline def setGcmAPIKeyUndefined: Self = StObject.set(x, "gcmAPIKey", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setTTL(value: Double): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
+      inline def setTTL(value: Double): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTTLUndefined: Self = StObject.set(x, "TTL", js.undefined)
+      inline def setTTLUndefined: Self = StObject.set(x, "TTL", js.undefined)
       
-      @scala.inline
-      def setVapidDetails(value: PrivateKey): Self = StObject.set(x, "vapidDetails", value.asInstanceOf[js.Any])
+      inline def setVapidDetails(value: PrivateKey): Self = StObject.set(x, "vapidDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVapidDetailsUndefined: Self = StObject.set(x, "vapidDetails", js.undefined)
+      inline def setVapidDetailsUndefined: Self = StObject.set(x, "vapidDetails", js.undefined)
     }
   }
   
@@ -362,23 +294,18 @@ object mod {
   }
   object SendResult {
     
-    @scala.inline
-    def apply(body: String, headers: Headers, statusCode: Double): SendResult = {
+    inline def apply(body: String, headers: Headers, statusCode: Double): SendResult = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendResult]
     }
     
-    @scala.inline
-    implicit class SendResultMutableBuilder[Self <: SendResult] (val x: Self) extends AnyVal {
+    extension [Self <: SendResult](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -390,20 +317,16 @@ object mod {
   }
   object VapidKeys {
     
-    @scala.inline
-    def apply(privateKey: String, publicKey: String): VapidKeys = {
+    inline def apply(privateKey: String, publicKey: String): VapidKeys = {
       val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[VapidKeys]
     }
     
-    @scala.inline
-    implicit class VapidKeysMutableBuilder[Self <: VapidKeys] (val x: Self) extends AnyVal {
+    extension [Self <: VapidKeys](x: Self) {
       
-      @scala.inline
-      def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     }
   }
 }

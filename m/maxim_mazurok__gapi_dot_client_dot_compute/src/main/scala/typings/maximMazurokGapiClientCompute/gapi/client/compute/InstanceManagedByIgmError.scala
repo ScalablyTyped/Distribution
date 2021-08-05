@@ -17,31 +17,23 @@ trait InstanceManagedByIgmError extends StObject {
 }
 object InstanceManagedByIgmError {
   
-  @scala.inline
-  def apply(): InstanceManagedByIgmError = {
+  inline def apply(): InstanceManagedByIgmError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceManagedByIgmError]
   }
   
-  @scala.inline
-  implicit class InstanceManagedByIgmErrorMutableBuilder[Self <: InstanceManagedByIgmError] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceManagedByIgmError](x: Self) {
     
-    @scala.inline
-    def setError(value: InstanceManagedByIgmErrorManagedInstanceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: InstanceManagedByIgmErrorManagedInstanceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInstanceActionDetails(value: InstanceManagedByIgmErrorInstanceActionDetails): Self = StObject.set(x, "instanceActionDetails", value.asInstanceOf[js.Any])
+    inline def setInstanceActionDetails(value: InstanceManagedByIgmErrorInstanceActionDetails): Self = StObject.set(x, "instanceActionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceActionDetailsUndefined: Self = StObject.set(x, "instanceActionDetails", js.undefined)
+    inline def setInstanceActionDetailsUndefined: Self = StObject.set(x, "instanceActionDetails", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

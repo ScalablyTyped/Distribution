@@ -18,28 +18,21 @@ trait DescribeIpGroupsResult extends StObject {
 }
 object DescribeIpGroupsResult {
   
-  @scala.inline
-  def apply(): DescribeIpGroupsResult = {
+  inline def apply(): DescribeIpGroupsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeIpGroupsResult]
   }
   
-  @scala.inline
-  implicit class DescribeIpGroupsResultMutableBuilder[Self <: DescribeIpGroupsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIpGroupsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResult(value: WorkspacesIpGroupsList): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: WorkspacesIpGroupsList): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     
-    @scala.inline
-    def setResultVarargs(value: WorkspacesIpGroup*): Self = StObject.set(x, "Result", js.Array(value :_*))
+    inline def setResultVarargs(value: WorkspacesIpGroup*): Self = StObject.set(x, "Result", js.Array(value :_*))
   }
 }

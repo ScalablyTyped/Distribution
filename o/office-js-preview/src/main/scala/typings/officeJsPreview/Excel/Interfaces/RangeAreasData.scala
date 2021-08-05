@@ -99,85 +99,59 @@ trait RangeAreasData extends StObject {
 }
 object RangeAreasData {
   
-  @scala.inline
-  def apply(): RangeAreasData = {
+  inline def apply(): RangeAreasData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeAreasData]
   }
   
-  @scala.inline
-  implicit class RangeAreasDataMutableBuilder[Self <: RangeAreasData] (val x: Self) extends AnyVal {
+  extension [Self <: RangeAreasData](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
+    inline def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
+    inline def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setAreaCount(value: Double): Self = StObject.set(x, "areaCount", value.asInstanceOf[js.Any])
+    inline def setAreaCount(value: Double): Self = StObject.set(x, "areaCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaCountUndefined: Self = StObject.set(x, "areaCount", js.undefined)
+    inline def setAreaCountUndefined: Self = StObject.set(x, "areaCount", js.undefined)
     
-    @scala.inline
-    def setAreas(value: js.Array[RangeData]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
+    inline def setAreas(value: js.Array[RangeData]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreasUndefined: Self = StObject.set(x, "areas", js.undefined)
+    inline def setAreasUndefined: Self = StObject.set(x, "areas", js.undefined)
     
-    @scala.inline
-    def setAreasVarargs(value: RangeData*): Self = StObject.set(x, "areas", js.Array(value :_*))
+    inline def setAreasVarargs(value: RangeData*): Self = StObject.set(x, "areas", js.Array(value :_*))
     
-    @scala.inline
-    def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
+    inline def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
+    inline def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
     
-    @scala.inline
-    def setConditionalFormats(value: js.Array[ConditionalFormatData]): Self = StObject.set(x, "conditionalFormats", value.asInstanceOf[js.Any])
+    inline def setConditionalFormats(value: js.Array[ConditionalFormatData]): Self = StObject.set(x, "conditionalFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionalFormatsUndefined: Self = StObject.set(x, "conditionalFormats", js.undefined)
+    inline def setConditionalFormatsUndefined: Self = StObject.set(x, "conditionalFormats", js.undefined)
     
-    @scala.inline
-    def setConditionalFormatsVarargs(value: ConditionalFormatData*): Self = StObject.set(x, "conditionalFormats", js.Array(value :_*))
+    inline def setConditionalFormatsVarargs(value: ConditionalFormatData*): Self = StObject.set(x, "conditionalFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setDataValidation(value: DataValidationData): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
+    inline def setDataValidation(value: DataValidationData): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataValidationUndefined: Self = StObject.set(x, "dataValidation", js.undefined)
+    inline def setDataValidationUndefined: Self = StObject.set(x, "dataValidation", js.undefined)
     
-    @scala.inline
-    def setFormat(value: RangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: RangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setIsEntireColumn(value: Boolean): Self = StObject.set(x, "isEntireColumn", value.asInstanceOf[js.Any])
+    inline def setIsEntireColumn(value: Boolean): Self = StObject.set(x, "isEntireColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEntireColumnUndefined: Self = StObject.set(x, "isEntireColumn", js.undefined)
+    inline def setIsEntireColumnUndefined: Self = StObject.set(x, "isEntireColumn", js.undefined)
     
-    @scala.inline
-    def setIsEntireRow(value: Boolean): Self = StObject.set(x, "isEntireRow", value.asInstanceOf[js.Any])
+    inline def setIsEntireRow(value: Boolean): Self = StObject.set(x, "isEntireRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEntireRowUndefined: Self = StObject.set(x, "isEntireRow", js.undefined)
+    inline def setIsEntireRowUndefined: Self = StObject.set(x, "isEntireRow", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

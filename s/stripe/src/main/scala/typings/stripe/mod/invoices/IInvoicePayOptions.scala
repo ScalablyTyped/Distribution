@@ -38,31 +38,23 @@ trait IInvoicePayOptions
 }
 object IInvoicePayOptions {
   
-  @scala.inline
-  def apply(): IInvoicePayOptions = {
+  inline def apply(): IInvoicePayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IInvoicePayOptions]
   }
   
-  @scala.inline
-  implicit class IInvoicePayOptionsMutableBuilder[Self <: IInvoicePayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IInvoicePayOptions](x: Self) {
     
-    @scala.inline
-    def setForgive(value: Boolean): Self = StObject.set(x, "forgive", value.asInstanceOf[js.Any])
+    inline def setForgive(value: Boolean): Self = StObject.set(x, "forgive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgiveUndefined: Self = StObject.set(x, "forgive", js.undefined)
+    inline def setForgiveUndefined: Self = StObject.set(x, "forgive", js.undefined)
     
-    @scala.inline
-    def setPaid_out_of_band(value: Boolean): Self = StObject.set(x, "paid_out_of_band", value.asInstanceOf[js.Any])
+    inline def setPaid_out_of_band(value: Boolean): Self = StObject.set(x, "paid_out_of_band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaid_out_of_bandUndefined: Self = StObject.set(x, "paid_out_of_band", js.undefined)
+    inline def setPaid_out_of_bandUndefined: Self = StObject.set(x, "paid_out_of_band", js.undefined)
     
-    @scala.inline
-    def setSource(value: String | ICardSourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String | ICardSourceCreationOptions): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

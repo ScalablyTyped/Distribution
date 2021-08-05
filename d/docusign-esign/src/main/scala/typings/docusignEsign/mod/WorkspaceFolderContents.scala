@@ -55,81 +55,61 @@ trait WorkspaceFolderContents extends StObject {
 }
 object WorkspaceFolderContents {
   
-  @scala.inline
-  def apply(): WorkspaceFolderContents = {
+  inline def apply(): WorkspaceFolderContents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceFolderContents]
   }
   
-  @scala.inline
-  implicit class WorkspaceFolderContentsMutableBuilder[Self <: WorkspaceFolderContents] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceFolderContents](x: Self) {
     
-    @scala.inline
-    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+    inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
-    @scala.inline
-    def setFolder(
+    inline def setFolder(
       value: /* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem
     ): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    @scala.inline
-    def setItems(
+    inline def setItems(
       value: js.Array[
           /* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem
         ]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(
+    inline def setItemsVarargs(
       value: (/* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem)*
     ): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setParentFolders(
+    inline def setParentFolders(
       value: js.Array[
           /* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem
         ]
     ): Self = StObject.set(x, "parentFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFoldersUndefined: Self = StObject.set(x, "parentFolders", js.undefined)
+    inline def setParentFoldersUndefined: Self = StObject.set(x, "parentFolders", js.undefined)
     
-    @scala.inline
-    def setParentFoldersVarargs(
+    inline def setParentFoldersVarargs(
       value: (/* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem)*
     ): Self = StObject.set(x, "parentFolders", js.Array(value :_*))
     
-    @scala.inline
-    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
+    inline def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
+    inline def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
-    @scala.inline
-    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+    inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
-    @scala.inline
-    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
+    inline def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
+    inline def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
     
-    @scala.inline
-    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+    inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
   }
 }

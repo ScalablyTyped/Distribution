@@ -45,70 +45,49 @@ trait CellObject extends StObject {
 }
 object CellObject {
   
-  @scala.inline
-  def apply(t: ExcelDataType): CellObject = {
+  inline def apply(t: ExcelDataType): CellObject = {
     val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellObject]
   }
   
-  @scala.inline
-  implicit class CellObjectMutableBuilder[Self <: CellObject] (val x: Self) extends AnyVal {
+  extension [Self <: CellObject](x: Self) {
     
-    @scala.inline
-    def setC(value: Comments): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: Comments): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
+    inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
-    @scala.inline
-    def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
+    inline def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFUndefined: Self = StObject.set(x, "F", js.undefined)
+    inline def setFUndefined: Self = StObject.set(x, "F", js.undefined)
     
-    @scala.inline
-    def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+    inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
-    @scala.inline
-    def setL(value: Hyperlink): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Hyperlink): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
+    inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
-    @scala.inline
-    def setR(value: js.Any): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: js.Any): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    @scala.inline
-    def setS(value: js.Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: js.Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+    inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
-    @scala.inline
-    def setT(value: ExcelDataType): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: ExcelDataType): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: String | Double | Boolean | Date): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: String | Double | Boolean | Date): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
     
-    @scala.inline
-    def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
-    @scala.inline
-    def setZ(value: NumberFormat): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: NumberFormat): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

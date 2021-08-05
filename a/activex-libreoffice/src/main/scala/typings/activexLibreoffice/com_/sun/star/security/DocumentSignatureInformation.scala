@@ -25,8 +25,7 @@ trait DocumentSignatureInformation extends StObject {
 }
 object DocumentSignatureInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CertificateStatus: Double,
     PartialDocumentSignature: Boolean,
     SignatureDate: Double,
@@ -38,25 +37,18 @@ object DocumentSignatureInformation {
     __obj.asInstanceOf[DocumentSignatureInformation]
   }
   
-  @scala.inline
-  implicit class DocumentSignatureInformationMutableBuilder[Self <: DocumentSignatureInformation] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSignatureInformation](x: Self) {
     
-    @scala.inline
-    def setCertificateStatus(value: Double): Self = StObject.set(x, "CertificateStatus", value.asInstanceOf[js.Any])
+    inline def setCertificateStatus(value: Double): Self = StObject.set(x, "CertificateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialDocumentSignature(value: Boolean): Self = StObject.set(x, "PartialDocumentSignature", value.asInstanceOf[js.Any])
+    inline def setPartialDocumentSignature(value: Boolean): Self = StObject.set(x, "PartialDocumentSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureDate(value: Double): Self = StObject.set(x, "SignatureDate", value.asInstanceOf[js.Any])
+    inline def setSignatureDate(value: Double): Self = StObject.set(x, "SignatureDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureIsValid(value: Boolean): Self = StObject.set(x, "SignatureIsValid", value.asInstanceOf[js.Any])
+    inline def setSignatureIsValid(value: Boolean): Self = StObject.set(x, "SignatureIsValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureTime(value: Double): Self = StObject.set(x, "SignatureTime", value.asInstanceOf[js.Any])
+    inline def setSignatureTime(value: Double): Self = StObject.set(x, "SignatureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigner(value: XCertificate): Self = StObject.set(x, "Signer", value.asInstanceOf[js.Any])
+    inline def setSigner(value: XCertificate): Self = StObject.set(x, "Signer", value.asInstanceOf[js.Any])
   }
 }

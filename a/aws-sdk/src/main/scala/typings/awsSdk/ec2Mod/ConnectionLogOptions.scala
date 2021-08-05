@@ -23,31 +23,23 @@ trait ConnectionLogOptions extends StObject {
 }
 object ConnectionLogOptions {
   
-  @scala.inline
-  def apply(): ConnectionLogOptions = {
+  inline def apply(): ConnectionLogOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionLogOptions]
   }
   
-  @scala.inline
-  implicit class ConnectionLogOptionsMutableBuilder[Self <: ConnectionLogOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionLogOptions](x: Self) {
     
-    @scala.inline
-    def setCloudwatchLogGroup(value: String): Self = StObject.set(x, "CloudwatchLogGroup", value.asInstanceOf[js.Any])
+    inline def setCloudwatchLogGroup(value: String): Self = StObject.set(x, "CloudwatchLogGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatchLogGroupUndefined: Self = StObject.set(x, "CloudwatchLogGroup", js.undefined)
+    inline def setCloudwatchLogGroupUndefined: Self = StObject.set(x, "CloudwatchLogGroup", js.undefined)
     
-    @scala.inline
-    def setCloudwatchLogStream(value: String): Self = StObject.set(x, "CloudwatchLogStream", value.asInstanceOf[js.Any])
+    inline def setCloudwatchLogStream(value: String): Self = StObject.set(x, "CloudwatchLogStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudwatchLogStreamUndefined: Self = StObject.set(x, "CloudwatchLogStream", js.undefined)
+    inline def setCloudwatchLogStreamUndefined: Self = StObject.set(x, "CloudwatchLogStream", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

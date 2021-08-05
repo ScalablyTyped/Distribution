@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.LineFormat")
 @js.native
-class LineFormat protected ()
+/* private */ class LineFormat ()
   extends StObject
      with typings.activexExcel.Excel.LineFormat {
   
@@ -47,7 +47,7 @@ class LineFormat protected ()
   /* CompleteClass */
   var EndArrowheadWidth: MsoArrowheadWidth = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.LineFormat_typekey")
   var ExcelDotLineFormat_typekey: typings.activexExcel.Excel.LineFormat = js.native
   

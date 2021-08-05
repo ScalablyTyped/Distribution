@@ -15,9 +15,9 @@ object skipUntilOtherObserverMod {
   class SkipUntilOtherObserver protected () extends Observer {
     def this(prevObserver: IObserver, skipUntilStream: SkipUntilStream) = this()
     
-    var _prevObserver: js.Any = js.native
+    /* private */ var _prevObserver: js.Any = js.native
     
-    var _skipUntilStream: js.Any = js.native
+    /* private */ var _skipUntilStream: js.Any = js.native
     
     var otherDisposable: IDisposable = js.native
   }
@@ -28,7 +28,6 @@ object skipUntilOtherObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(prevObserver: IObserver, skipUntilStream: SkipUntilStream): SkipUntilOtherObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(prevObserver.asInstanceOf[js.Any], skipUntilStream.asInstanceOf[js.Any])).asInstanceOf[SkipUntilOtherObserver]
+    inline def create(prevObserver: IObserver, skipUntilStream: SkipUntilStream): SkipUntilOtherObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(prevObserver.asInstanceOf[js.Any], skipUntilStream.asInstanceOf[js.Any])).asInstanceOf[SkipUntilOtherObserver]
   }
 }

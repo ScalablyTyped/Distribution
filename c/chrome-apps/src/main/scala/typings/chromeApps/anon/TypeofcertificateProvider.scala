@@ -81,8 +81,7 @@ trait TypeofcertificateProvider extends StObject {
 }
 object TypeofcertificateProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PinRequestErrorType: INVALIDPIN,
     PinRequestType: PIN,
     onCertificatesRequested: Event[
@@ -106,11 +105,9 @@ object TypeofcertificateProvider {
     __obj.asInstanceOf[TypeofcertificateProvider]
   }
   
-  @scala.inline
-  implicit class TypeofcertificateProviderMutableBuilder[Self <: TypeofcertificateProvider] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofcertificateProvider](x: Self) {
     
-    @scala.inline
-    def setOnCertificatesRequested(
+    inline def setOnCertificatesRequested(
       value: Event[
           js.Function2[
             /* certificates */ js.Array[CertificateInfo], 
@@ -120,8 +117,7 @@ object TypeofcertificateProvider {
         ]
     ): Self = StObject.set(x, "onCertificatesRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSignDigestRequested(
+    inline def setOnSignDigestRequested(
       value: Event[
           js.Function2[
             /* signRequest */ SignRequest, 
@@ -131,18 +127,14 @@ object TypeofcertificateProvider {
         ]
     ): Self = StObject.set(x, "onSignDigestRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinRequestErrorType(value: INVALIDPIN): Self = StObject.set(x, "PinRequestErrorType", value.asInstanceOf[js.Any])
+    inline def setPinRequestErrorType(value: INVALIDPIN): Self = StObject.set(x, "PinRequestErrorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinRequestType(value: PIN): Self = StObject.set(x, "PinRequestType", value.asInstanceOf[js.Any])
+    inline def setPinRequestType(value: PIN): Self = StObject.set(x, "PinRequestType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestPin(
+    inline def setRequestPin(
       value: (RequestPinDetails, js.Function1[/* details */ js.UndefOr[PinResponseDetails], Unit]) => Unit
     ): Self = StObject.set(x, "requestPin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStopPinRequest(value: (StopRequestPinDetails, js.Function0[Unit]) => Unit): Self = StObject.set(x, "stopPinRequest", js.Any.fromFunction2(value))
+    inline def setStopPinRequest(value: (StopRequestPinDetails, js.Function0[Unit]) => Unit): Self = StObject.set(x, "stopPinRequest", js.Any.fromFunction2(value))
   }
 }

@@ -12,19 +12,15 @@ trait FocusValue extends StObject {
 }
 object FocusValue {
   
-  @scala.inline
-  def apply(focus: Boolean, value: String): FocusValue = {
+  inline def apply(focus: Boolean, value: String): FocusValue = {
     val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusValue]
   }
   
-  @scala.inline
-  implicit class FocusValueMutableBuilder[Self <: FocusValue] (val x: Self) extends AnyVal {
+  extension [Self <: FocusValue](x: Self) {
     
-    @scala.inline
-    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

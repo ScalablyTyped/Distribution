@@ -30,33 +30,33 @@ object channelMod {
       * the invariant is that callRefTimer is reffed if and only if pickQueue
       * is non-empty.
       */
-    var callRefTimer: js.Any = js.native
+    /* private */ var callRefTimer: js.Any = js.native
     
-    var connectivityState: js.Any = js.native
+    /* private */ var connectivityState: js.Any = js.native
     
-    var connectivityStateWatchers: js.Any = js.native
+    /* private */ var connectivityStateWatchers: js.Any = js.native
     
-    val credentials: js.Any = js.native
+    /* private */ val credentials: js.Any = js.native
     
-    var currentPicker: js.Any = js.native
+    /* private */ var currentPicker: js.Any = js.native
     
-    var defaultAuthority: js.Any = js.native
+    /* private */ var defaultAuthority: js.Any = js.native
     
-    var filterStackFactory: js.Any = js.native
+    /* private */ var filterStackFactory: js.Any = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
-    var pickQueue: js.Any = js.native
+    /* private */ var pickQueue: js.Any = js.native
     
-    var pushPick: js.Any = js.native
+    /* private */ var pushPick: js.Any = js.native
     
-    var removeConnectivityStateWatcher: js.Any = js.native
+    /* private */ var removeConnectivityStateWatcher: js.Any = js.native
     
-    var resolvingLoadBalancer: js.Any = js.native
+    /* private */ var resolvingLoadBalancer: js.Any = js.native
     
-    var subchannelPool: js.Any = js.native
+    /* private */ var subchannelPool: js.Any = js.native
     
-    var target: js.Any = js.native
+    /* private */ var target: js.Any = js.native
     
     /**
       * Check the picker output for the given call and corresponding metadata,
@@ -65,9 +65,9 @@ object channelMod {
       * @param callStream
       * @param callMetadata
       */
-    var tryPick: js.Any = js.native
+    /* private */ var tryPick: js.Any = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
   }
   
   @js.native

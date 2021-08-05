@@ -10,16 +10,13 @@ trait IStreamSocketListenerConnectionReceivedEventArgs extends StObject {
 }
 object IStreamSocketListenerConnectionReceivedEventArgs {
   
-  @scala.inline
-  def apply(socket: StreamSocket): IStreamSocketListenerConnectionReceivedEventArgs = {
+  inline def apply(socket: StreamSocket): IStreamSocketListenerConnectionReceivedEventArgs = {
     val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamSocketListenerConnectionReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class IStreamSocketListenerConnectionReceivedEventArgsMutableBuilder[Self <: IStreamSocketListenerConnectionReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IStreamSocketListenerConnectionReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }
 }

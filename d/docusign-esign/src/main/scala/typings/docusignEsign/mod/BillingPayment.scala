@@ -20,31 +20,23 @@ trait BillingPayment extends StObject {
 }
 object BillingPayment {
   
-  @scala.inline
-  def apply(): BillingPayment = {
+  inline def apply(): BillingPayment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingPayment]
   }
   
-  @scala.inline
-  implicit class BillingPaymentMutableBuilder[Self <: BillingPayment] (val x: Self) extends AnyVal {
+  extension [Self <: BillingPayment](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
+    inline def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
+    inline def setInvoiceIdUndefined: Self = StObject.set(x, "invoiceId", js.undefined)
     
-    @scala.inline
-    def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
+    inline def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentIdUndefined: Self = StObject.set(x, "paymentId", js.undefined)
+    inline def setPaymentIdUndefined: Self = StObject.set(x, "paymentId", js.undefined)
   }
 }

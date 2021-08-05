@@ -24,25 +24,19 @@ trait SecretEnvSource extends StObject {
 }
 object SecretEnvSource {
   
-  @scala.inline
-  def apply(): SecretEnvSource = {
+  inline def apply(): SecretEnvSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecretEnvSource]
   }
   
-  @scala.inline
-  implicit class SecretEnvSourceMutableBuilder[Self <: SecretEnvSource] (val x: Self) extends AnyVal {
+  extension [Self <: SecretEnvSource](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptional(value: Input[Boolean]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Input[Boolean]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }
 }

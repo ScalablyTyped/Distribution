@@ -103,148 +103,101 @@ trait TaskDefinition extends StObject {
 }
 object TaskDefinition {
   
-  @scala.inline
-  def apply(): TaskDefinition = {
+  inline def apply(): TaskDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskDefinition]
   }
   
-  @scala.inline
-  implicit class TaskDefinitionMutableBuilder[Self <: TaskDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefinition](x: Self) {
     
-    @scala.inline
-    def setCompatibilities(value: CompatibilityList): Self = StObject.set(x, "compatibilities", value.asInstanceOf[js.Any])
+    inline def setCompatibilities(value: CompatibilityList): Self = StObject.set(x, "compatibilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibilitiesUndefined: Self = StObject.set(x, "compatibilities", js.undefined)
+    inline def setCompatibilitiesUndefined: Self = StObject.set(x, "compatibilities", js.undefined)
     
-    @scala.inline
-    def setCompatibilitiesVarargs(value: Compatibility*): Self = StObject.set(x, "compatibilities", js.Array(value :_*))
+    inline def setCompatibilitiesVarargs(value: Compatibility*): Self = StObject.set(x, "compatibilities", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerDefinitions(value: ContainerDefinitions): Self = StObject.set(x, "containerDefinitions", value.asInstanceOf[js.Any])
+    inline def setContainerDefinitions(value: ContainerDefinitions): Self = StObject.set(x, "containerDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerDefinitionsUndefined: Self = StObject.set(x, "containerDefinitions", js.undefined)
+    inline def setContainerDefinitionsUndefined: Self = StObject.set(x, "containerDefinitions", js.undefined)
     
-    @scala.inline
-    def setContainerDefinitionsVarargs(value: ContainerDefinition*): Self = StObject.set(x, "containerDefinitions", js.Array(value :_*))
+    inline def setContainerDefinitionsVarargs(value: ContainerDefinition*): Self = StObject.set(x, "containerDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
+    inline def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
-    @scala.inline
-    def setExecutionRoleArn(value: String): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: String): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
+    inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "executionRoleArn", js.undefined)
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setInferenceAccelerators(value: InferenceAccelerators): Self = StObject.set(x, "inferenceAccelerators", value.asInstanceOf[js.Any])
+    inline def setInferenceAccelerators(value: InferenceAccelerators): Self = StObject.set(x, "inferenceAccelerators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInferenceAcceleratorsUndefined: Self = StObject.set(x, "inferenceAccelerators", js.undefined)
+    inline def setInferenceAcceleratorsUndefined: Self = StObject.set(x, "inferenceAccelerators", js.undefined)
     
-    @scala.inline
-    def setInferenceAcceleratorsVarargs(value: InferenceAccelerator*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
+    inline def setInferenceAcceleratorsVarargs(value: InferenceAccelerator*): Self = StObject.set(x, "inferenceAccelerators", js.Array(value :_*))
     
-    @scala.inline
-    def setIpcMode(value: IpcMode): Self = StObject.set(x, "ipcMode", value.asInstanceOf[js.Any])
+    inline def setIpcMode(value: IpcMode): Self = StObject.set(x, "ipcMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpcModeUndefined: Self = StObject.set(x, "ipcMode", js.undefined)
+    inline def setIpcModeUndefined: Self = StObject.set(x, "ipcMode", js.undefined)
     
-    @scala.inline
-    def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+    inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
-    @scala.inline
-    def setNetworkMode(value: NetworkMode): Self = StObject.set(x, "networkMode", value.asInstanceOf[js.Any])
+    inline def setNetworkMode(value: NetworkMode): Self = StObject.set(x, "networkMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkModeUndefined: Self = StObject.set(x, "networkMode", js.undefined)
+    inline def setNetworkModeUndefined: Self = StObject.set(x, "networkMode", js.undefined)
     
-    @scala.inline
-    def setPidMode(value: PidMode): Self = StObject.set(x, "pidMode", value.asInstanceOf[js.Any])
+    inline def setPidMode(value: PidMode): Self = StObject.set(x, "pidMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidModeUndefined: Self = StObject.set(x, "pidMode", js.undefined)
+    inline def setPidModeUndefined: Self = StObject.set(x, "pidMode", js.undefined)
     
-    @scala.inline
-    def setPlacementConstraints(value: TaskDefinitionPlacementConstraints): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
+    inline def setPlacementConstraints(value: TaskDefinitionPlacementConstraints): Self = StObject.set(x, "placementConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
+    inline def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
     
-    @scala.inline
-    def setPlacementConstraintsVarargs(value: TaskDefinitionPlacementConstraint*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
+    inline def setPlacementConstraintsVarargs(value: TaskDefinitionPlacementConstraint*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
     
-    @scala.inline
-    def setProxyConfiguration(value: ProxyConfiguration): Self = StObject.set(x, "proxyConfiguration", value.asInstanceOf[js.Any])
+    inline def setProxyConfiguration(value: ProxyConfiguration): Self = StObject.set(x, "proxyConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyConfigurationUndefined: Self = StObject.set(x, "proxyConfiguration", js.undefined)
+    inline def setProxyConfigurationUndefined: Self = StObject.set(x, "proxyConfiguration", js.undefined)
     
-    @scala.inline
-    def setRequiresAttributes(value: RequiresAttributes): Self = StObject.set(x, "requiresAttributes", value.asInstanceOf[js.Any])
+    inline def setRequiresAttributes(value: RequiresAttributes): Self = StObject.set(x, "requiresAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresAttributesUndefined: Self = StObject.set(x, "requiresAttributes", js.undefined)
+    inline def setRequiresAttributesUndefined: Self = StObject.set(x, "requiresAttributes", js.undefined)
     
-    @scala.inline
-    def setRequiresAttributesVarargs(value: Attribute*): Self = StObject.set(x, "requiresAttributes", js.Array(value :_*))
+    inline def setRequiresAttributesVarargs(value: Attribute*): Self = StObject.set(x, "requiresAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiresCompatibilities(value: CompatibilityList): Self = StObject.set(x, "requiresCompatibilities", value.asInstanceOf[js.Any])
+    inline def setRequiresCompatibilities(value: CompatibilityList): Self = StObject.set(x, "requiresCompatibilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresCompatibilitiesUndefined: Self = StObject.set(x, "requiresCompatibilities", js.undefined)
+    inline def setRequiresCompatibilitiesUndefined: Self = StObject.set(x, "requiresCompatibilities", js.undefined)
     
-    @scala.inline
-    def setRequiresCompatibilitiesVarargs(value: Compatibility*): Self = StObject.set(x, "requiresCompatibilities", js.Array(value :_*))
+    inline def setRequiresCompatibilitiesVarargs(value: Compatibility*): Self = StObject.set(x, "requiresCompatibilities", js.Array(value :_*))
     
-    @scala.inline
-    def setRevision(value: Integer): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Integer): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TaskDefinitionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskDefinitionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTaskDefinitionArn(value: String): Self = StObject.set(x, "taskDefinitionArn", value.asInstanceOf[js.Any])
+    inline def setTaskDefinitionArn(value: String): Self = StObject.set(x, "taskDefinitionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskDefinitionArnUndefined: Self = StObject.set(x, "taskDefinitionArn", js.undefined)
+    inline def setTaskDefinitionArnUndefined: Self = StObject.set(x, "taskDefinitionArn", js.undefined)
     
-    @scala.inline
-    def setTaskRoleArn(value: String): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
+    inline def setTaskRoleArn(value: String): Self = StObject.set(x, "taskRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskRoleArnUndefined: Self = StObject.set(x, "taskRoleArn", js.undefined)
+    inline def setTaskRoleArnUndefined: Self = StObject.set(x, "taskRoleArn", js.undefined)
     
-    @scala.inline
-    def setVolumes(value: VolumeList): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
+    inline def setVolumes(value: VolumeList): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
+    inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
-    @scala.inline
-    def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

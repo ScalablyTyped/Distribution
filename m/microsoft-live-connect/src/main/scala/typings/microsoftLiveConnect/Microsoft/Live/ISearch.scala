@@ -26,25 +26,19 @@ trait ISearch extends StObject {
 }
 object ISearch {
   
-  @scala.inline
-  def apply(data: js.Array[IObject]): ISearch = {
+  inline def apply(data: js.Array[IObject]): ISearch = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearch]
   }
   
-  @scala.inline
-  implicit class ISearchMutableBuilder[Self <: ISearch] (val x: Self) extends AnyVal {
+  extension [Self <: ISearch](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[IObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[IObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: IObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: IObject*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setPaging(value: Next): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
+    inline def setPaging(value: Next): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
+    inline def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait SemanticTextQuery extends StObject {
 }
 object SemanticTextQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     find: String => IVectorView[TextSegment],
     findInProperty: (String, String) => IVectorView[TextSegment]
   ): SemanticTextQuery = {
@@ -34,13 +33,10 @@ object SemanticTextQuery {
     __obj.asInstanceOf[SemanticTextQuery]
   }
   
-  @scala.inline
-  implicit class SemanticTextQueryMutableBuilder[Self <: SemanticTextQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTextQuery](x: Self) {
     
-    @scala.inline
-    def setFind(value: String => IVectorView[TextSegment]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: String => IVectorView[TextSegment]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindInProperty(value: (String, String) => IVectorView[TextSegment]): Self = StObject.set(x, "findInProperty", js.Any.fromFunction2(value))
+    inline def setFindInProperty(value: (String, String) => IVectorView[TextSegment]): Self = StObject.set(x, "findInProperty", js.Any.fromFunction2(value))
   }
 }

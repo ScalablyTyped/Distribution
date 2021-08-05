@@ -10,81 +10,81 @@ trait PullTypeSymbol
      with PullSymbol
      with InstantiableSymbol {
   
-  var _allCallSignatures: js.Any = js.native
+  /* private */ var _allCallSignatures: js.Any = js.native
   
-  var _allConstructSignatures: js.Any = js.native
+  /* private */ var _allConstructSignatures: js.Any = js.native
   
-  var _allIndexSignatures: js.Any = js.native
+  /* private */ var _allIndexSignatures: js.Any = js.native
   
-  var _allIndexSignaturesOfAugmentedType: js.Any = js.native
+  /* private */ var _allIndexSignaturesOfAugmentedType: js.Any = js.native
   
-  var _allowedToReferenceTypeParameters: js.Any = js.native
+  /* private */ var _allowedToReferenceTypeParameters: js.Any = js.native
   
-  var _arrayVersionOfThisType: js.Any = js.native
+  /* private */ var _arrayVersionOfThisType: js.Any = js.native
   
-  var _associatedContainerTypeSymbol: js.Any = js.native
+  /* private */ var _associatedContainerTypeSymbol: js.Any = js.native
   
-  var _callSignatures: js.Any = js.native
+  /* private */ var _callSignatures: js.Any = js.native
   
-  var _complexInstantiationCache: js.Any = js.native
+  /* private */ var _complexInstantiationCache: js.Any = js.native
   
-  var _constructSignatures: js.Any = js.native
+  /* private */ var _constructSignatures: js.Any = js.native
   
-  var _constructorMethod: js.Any = js.native
+  /* private */ var _constructorMethod: js.Any = js.native
   
-  var _containedNonMemberContainerCache: js.Any = js.native
+  /* private */ var _containedNonMemberContainerCache: js.Any = js.native
   
-  var _containedNonMemberNameCache: js.Any = js.native
+  /* private */ var _containedNonMemberNameCache: js.Any = js.native
   
-  var _containedNonMemberTypeNameCache: js.Any = js.native
+  /* private */ var _containedNonMemberTypeNameCache: js.Any = js.native
   
-  var _enclosedContainerCache: js.Any = js.native
+  /* private */ var _enclosedContainerCache: js.Any = js.native
   
-  var _enclosedMemberContainers: js.Any = js.native
+  /* private */ var _enclosedMemberContainers: js.Any = js.native
   
-  var _enclosedMemberTypes: js.Any = js.native
+  /* private */ var _enclosedMemberTypes: js.Any = js.native
   
-  var _enclosedTypeNameCache: js.Any = js.native
+  /* private */ var _enclosedTypeNameCache: js.Any = js.native
   
-  var _extendedTypes: js.Any = js.native
+  /* private */ var _extendedTypes: js.Any = js.native
   
-  var _functionSymbol: js.Any = js.native
+  /* private */ var _functionSymbol: js.Any = js.native
   
-  var _hasBaseTypeConflict: js.Any = js.native
+  /* private */ var _hasBaseTypeConflict: js.Any = js.native
   
-  var _hasDefaultConstructor: js.Any = js.native
+  /* private */ var _hasDefaultConstructor: js.Any = js.native
   
-  var _hasGenericMember: js.Any = js.native
+  /* private */ var _hasGenericMember: js.Any = js.native
   
-  var _hasGenericSignature: js.Any = js.native
+  /* private */ var _hasGenericSignature: js.Any = js.native
   
-  var _implementedTypes: js.Any = js.native
+  /* private */ var _implementedTypes: js.Any = js.native
   
-  var _inMemberTypeNameEx: js.Any = js.native
+  /* private */ var _inMemberTypeNameEx: js.Any = js.native
   
-  var _indexSignatures: js.Any = js.native
+  /* private */ var _indexSignatures: js.Any = js.native
   
-  var _isArrayNamedTypeReference: js.Any = js.native
+  /* private */ var _isArrayNamedTypeReference: js.Any = js.native
   
-  var _knownBaseTypeCount: js.Any = js.native
+  /* private */ var _knownBaseTypeCount: js.Any = js.native
   
-  var _memberNameCache: js.Any = js.native
+  /* private */ var _memberNameCache: js.Any = js.native
   
-  var _members: js.Any = js.native
+  /* private */ var _members: js.Any = js.native
   
-  var _simpleInstantiationCache: js.Any = js.native
+  /* private */ var _simpleInstantiationCache: js.Any = js.native
   
-  var _specializedVersionsOfThisType: js.Any = js.native
+  /* private */ var _specializedVersionsOfThisType: js.Any = js.native
   
-  var _typeParameterNameCache: js.Any = js.native
+  /* private */ var _typeParameterNameCache: js.Any = js.native
   
-  var _typeParameters: js.Any = js.native
+  /* private */ var _typeParameters: js.Any = js.native
   
-  var _typesThatExplicitlyImplementThisType: js.Any = js.native
+  /* private */ var _typesThatExplicitlyImplementThisType: js.Any = js.native
   
-  var _typesThatExtendThisType: js.Any = js.native
+  /* private */ var _typesThatExtendThisType: js.Any = js.native
   
-  var _widenedType: js.Any = js.native
+  /* private */ var _widenedType: js.Any = js.native
   
   def _wrapsSomeTypeParameterIntoInfinitelyExpandingTypeReferenceRecurse(enclosingType: PullTypeSymbol, knownWrapMap: IBitMatrix): Boolean = js.native
   
@@ -92,7 +92,7 @@ trait PullTypeSymbol
   
   /* private */ def _wrapsSomeTypeParameterIntoInfinitelyExpandingTypeReferenceWorker(enclosingType: js.Any, knownWrapMap: js.Any): js.Any = js.native
   
-  var _wrapsTypeParameterCache: js.Any = js.native
+  /* private */ var _wrapsTypeParameterCache: js.Any = js.native
   
   /* private */ def addCallOrConstructSignaturePrerequisiteBase(signature: js.Any): js.Any = js.native
   

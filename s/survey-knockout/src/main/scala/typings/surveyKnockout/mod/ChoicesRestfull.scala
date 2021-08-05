@@ -52,9 +52,9 @@ class ChoicesRestfull () extends Base {
   
   var path: String = js.native
   
-  var processedPath: String = js.native
+  /* protected */ var processedPath: String = js.native
   
-  var processedUrl: String = js.native
+  /* protected */ var processedUrl: String = js.native
   
   def run(): Unit = js.native
   def run(textProcessor: ITextProcessor): Unit = js.native
@@ -83,12 +83,9 @@ object ChoicesRestfull {
   @JSImport("survey-knockout", "ChoicesRestfull.EncodeParameters")
   @js.native
   def EncodeParameters: Boolean = js.native
-  @scala.inline
-  def EncodeParameters_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EncodeParameters")(x.asInstanceOf[js.Any])
+  inline def EncodeParameters_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EncodeParameters")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
+  inline def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   
-  @scala.inline
-  def onBeforeSendRequest(sender: ChoicesRestfull, options: Request): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeSendRequest")(sender.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def onBeforeSendRequest(sender: ChoicesRestfull, options: Request): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onBeforeSendRequest")(sender.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

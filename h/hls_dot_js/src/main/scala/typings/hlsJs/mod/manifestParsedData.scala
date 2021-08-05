@@ -12,22 +12,17 @@ trait manifestParsedData extends StObject {
 }
 object manifestParsedData {
   
-  @scala.inline
-  def apply(firstLevel: Double, levels: js.Array[Level]): manifestParsedData = {
+  inline def apply(firstLevel: Double, levels: js.Array[Level]): manifestParsedData = {
     val __obj = js.Dynamic.literal(firstLevel = firstLevel.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
     __obj.asInstanceOf[manifestParsedData]
   }
   
-  @scala.inline
-  implicit class manifestParsedDataMutableBuilder[Self <: manifestParsedData] (val x: Self) extends AnyVal {
+  extension [Self <: manifestParsedData](x: Self) {
     
-    @scala.inline
-    def setFirstLevel(value: Double): Self = StObject.set(x, "firstLevel", value.asInstanceOf[js.Any])
+    inline def setFirstLevel(value: Double): Self = StObject.set(x, "firstLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevels(value: js.Array[Level]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[Level]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value :_*))
   }
 }

@@ -28,26 +28,20 @@ trait PatientLink
 }
 object PatientLink {
   
-  @scala.inline
-  def apply(other: Reference, `type`: code): PatientLink = {
+  inline def apply(other: Reference, `type`: code): PatientLink = {
     val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatientLink]
   }
   
-  @scala.inline
-  implicit class PatientLinkMutableBuilder[Self <: PatientLink] (val x: Self) extends AnyVal {
+  extension [Self <: PatientLink](x: Self) {
     
-    @scala.inline
-    def setOther(value: Reference): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: Reference): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

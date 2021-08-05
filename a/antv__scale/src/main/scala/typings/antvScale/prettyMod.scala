@@ -11,8 +11,6 @@ object prettyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(min: Double, max: Double): Ticks = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Ticks]
-  @scala.inline
-  def default(min: Double, max: Double, n: Double): Ticks = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Ticks]
+  inline def default(min: Double, max: Double): Ticks = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Ticks]
+  inline def default(min: Double, max: Double, n: Double): Ticks = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Ticks]
 }

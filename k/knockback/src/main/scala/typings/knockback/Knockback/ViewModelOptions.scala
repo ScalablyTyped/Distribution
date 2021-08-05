@@ -24,50 +24,36 @@ trait ViewModelOptions
 }
 object ViewModelOptions {
   
-  @scala.inline
-  def apply(`if`: js.Any => js.Any): ViewModelOptions = {
+  inline def apply(`if`: js.Any => js.Any): ViewModelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("if")(js.Any.fromFunction1(`if`))
     __obj.asInstanceOf[ViewModelOptions]
   }
   
-  @scala.inline
-  implicit class ViewModelOptionsMutableBuilder[Self <: ViewModelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ViewModelOptions](x: Self) {
     
-    @scala.inline
-    def setFactories(value: js.Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
+    inline def setFactories(value: js.Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactoriesUndefined: Self = StObject.set(x, "factories", js.undefined)
+    inline def setFactoriesUndefined: Self = StObject.set(x, "factories", js.undefined)
     
-    @scala.inline
-    def setIf(value: js.Any => js.Any): Self = StObject.set(x, "if", js.Any.fromFunction1(value))
+    inline def setIf(value: js.Any => js.Any): Self = StObject.set(x, "if", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInternals(value: js.Array[String]): Self = StObject.set(x, "internals", value.asInstanceOf[js.Any])
+    inline def setInternals(value: js.Array[String]): Self = StObject.set(x, "internals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalsUndefined: Self = StObject.set(x, "internals", js.undefined)
+    inline def setInternalsUndefined: Self = StObject.set(x, "internals", js.undefined)
     
-    @scala.inline
-    def setInternalsVarargs(value: String*): Self = StObject.set(x, "internals", js.Array(value :_*))
+    inline def setInternalsVarargs(value: String*): Self = StObject.set(x, "internals", js.Array(value :_*))
     
-    @scala.inline
-    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+    inline def setRequires(value: js.Array[String]): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
+    inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
     
-    @scala.inline
-    def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
   }
 }

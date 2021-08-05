@@ -15,25 +15,19 @@ trait RuleSummary extends StObject {
 }
 object RuleSummary {
   
-  @scala.inline
-  def apply(): RuleSummary = {
+  inline def apply(): RuleSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleSummary]
   }
   
-  @scala.inline
-  implicit class RuleSummaryMutableBuilder[Self <: RuleSummary] (val x: Self) extends AnyVal {
+  extension [Self <: RuleSummary](x: Self) {
     
-    @scala.inline
-    def setAction(value: RuleAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: RuleAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

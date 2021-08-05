@@ -14,22 +14,17 @@ trait DataResource extends StObject {
 }
 object DataResource {
   
-  @scala.inline
-  def apply(ga: GaResource, mcf: McfResource, realtime: RealtimeResource): DataResource = {
+  inline def apply(ga: GaResource, mcf: McfResource, realtime: RealtimeResource): DataResource = {
     val __obj = js.Dynamic.literal(ga = ga.asInstanceOf[js.Any], mcf = mcf.asInstanceOf[js.Any], realtime = realtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataResource]
   }
   
-  @scala.inline
-  implicit class DataResourceMutableBuilder[Self <: DataResource] (val x: Self) extends AnyVal {
+  extension [Self <: DataResource](x: Self) {
     
-    @scala.inline
-    def setGa(value: GaResource): Self = StObject.set(x, "ga", value.asInstanceOf[js.Any])
+    inline def setGa(value: GaResource): Self = StObject.set(x, "ga", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMcf(value: McfResource): Self = StObject.set(x, "mcf", value.asInstanceOf[js.Any])
+    inline def setMcf(value: McfResource): Self = StObject.set(x, "mcf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealtime(value: RealtimeResource): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
+    inline def setRealtime(value: RealtimeResource): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
   }
 }

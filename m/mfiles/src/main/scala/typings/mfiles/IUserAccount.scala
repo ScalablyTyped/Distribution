@@ -31,8 +31,7 @@ trait IUserAccount extends StObject {
 }
 object IUserAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessControlList: IAccessControlList,
     AddVaultRoles: MFUserAccountVaultRole => Unit,
     Clone: () => IUserAccount,
@@ -49,40 +48,28 @@ object IUserAccount {
     __obj.asInstanceOf[IUserAccount]
   }
   
-  @scala.inline
-  implicit class IUserAccountMutableBuilder[Self <: IUserAccount] (val x: Self) extends AnyVal {
+  extension [Self <: IUserAccount](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddVaultRoles(value: MFUserAccountVaultRole => Unit): Self = StObject.set(x, "AddVaultRoles", js.Any.fromFunction1(value))
+    inline def setAddVaultRoles(value: MFUserAccountVaultRole => Unit): Self = StObject.set(x, "AddVaultRoles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClone(value: () => IUserAccount): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IUserAccount): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloneFrom(value: IUserAccount => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: IUserAccount => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUser(value: Boolean): Self = StObject.set(x, "InternalUser", value.asInstanceOf[js.Any])
+    inline def setInternalUser(value: Boolean): Self = StObject.set(x, "InternalUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginName(value: String): Self = StObject.set(x, "LoginName", value.asInstanceOf[js.Any])
+    inline def setLoginName(value: String): Self = StObject.set(x, "LoginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveVaultRoles(value: MFUserAccountVaultRole => Unit): Self = StObject.set(x, "RemoveVaultRoles", js.Any.fromFunction1(value))
+    inline def setRemoveVaultRoles(value: MFUserAccountVaultRole => Unit): Self = StObject.set(x, "RemoveVaultRoles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVaultLanguage(value: Double): Self = StObject.set(x, "VaultLanguage", value.asInstanceOf[js.Any])
+    inline def setVaultLanguage(value: Double): Self = StObject.set(x, "VaultLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultRoles(value: MFUserAccountVaultRole): Self = StObject.set(x, "VaultRoles", value.asInstanceOf[js.Any])
+    inline def setVaultRoles(value: MFUserAccountVaultRole): Self = StObject.set(x, "VaultRoles", value.asInstanceOf[js.Any])
   }
 }

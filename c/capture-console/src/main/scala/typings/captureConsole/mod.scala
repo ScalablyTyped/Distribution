@@ -12,32 +12,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def capture(streams: js.Array[WritableStream], exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def capture(streams: js.Array[WritableStream], opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def capture(streams: WritableStream, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def capture(streams: WritableStream, opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def capture(streams: js.Array[WritableStream], exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def capture(streams: js.Array[WritableStream], opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def capture(streams: WritableStream, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def capture(streams: WritableStream, opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(streams.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def captureStderr(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureStderr")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def captureStderr(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStderr")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureStderr(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureStderr")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def captureStderr(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStderr")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def captureStdio(exec: js.Function0[Unit]): Stderr = ^.asInstanceOf[js.Dynamic].applyDynamic("captureStdio")(exec.asInstanceOf[js.Any]).asInstanceOf[Stderr]
-  @scala.inline
-  def captureStdio(opts: CaptureOptions, exec: js.Function0[Unit]): Stderr = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStdio")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Stderr]
+  inline def captureStdio(exec: js.Function0[Unit]): Stderr = ^.asInstanceOf[js.Dynamic].applyDynamic("captureStdio")(exec.asInstanceOf[js.Any]).asInstanceOf[Stderr]
+  inline def captureStdio(opts: CaptureOptions, exec: js.Function0[Unit]): Stderr = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStdio")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Stderr]
   
-  @scala.inline
-  def captureStdout(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureStdout")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def captureStdout(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStdout")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def captureStdout(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureStdout")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def captureStdout(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureStdout")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def hook(
+  inline def hook(
     stream: WritableStream,
     exec: js.Function3[
       /* string */ String, 
@@ -46,8 +35,7 @@ object mod {
       Unit
     ]
   ): js.Function0[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Boolean]]
-  @scala.inline
-  def hook(
+  inline def hook(
     stream: WritableStream,
     opts: CaptureOptions,
     exec: js.Function3[
@@ -58,28 +46,19 @@ object mod {
     ]
   ): js.Function0[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Boolean]]
   
-  @scala.inline
-  def intercept(stream: WritableStream, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def intercept(stream: WritableStream, opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def intercept(stream: WritableStream, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def intercept(stream: WritableStream, opts: CaptureOptions, exec: js.Function0[Unit]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("intercept")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def interceptStderr(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptStderr")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def interceptStderr(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptStderr")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def interceptStderr(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptStderr")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interceptStderr(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptStderr")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def interceptStdio(exec: js.Function0[Unit]): Stderr = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptStdio")(exec.asInstanceOf[js.Any]).asInstanceOf[Stderr]
-  @scala.inline
-  def interceptStdio(opts: CaptureOptions, exec: js.Function0[Unit]): Stderr = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptStdio")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Stderr]
+  inline def interceptStdio(exec: js.Function0[Unit]): Stderr = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptStdio")(exec.asInstanceOf[js.Any]).asInstanceOf[Stderr]
+  inline def interceptStdio(opts: CaptureOptions, exec: js.Function0[Unit]): Stderr = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptStdio")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Stderr]
   
-  @scala.inline
-  def interceptStdout(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptStdout")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def interceptStdout(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptStdout")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def interceptStdout(exec: js.Function0[Unit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interceptStdout")(exec.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def interceptStdout(opts: CaptureOptions, exec: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptStdout")(opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def startCapture(
+  inline def startCapture(
     stream: WritableStream,
     exec: js.Function3[
       /* string */ String, 
@@ -88,8 +67,7 @@ object mod {
       Unit
     ]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startCapture")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def startCapture(
+  inline def startCapture(
     stream: WritableStream,
     opts: CaptureOptions,
     exec: js.Function3[
@@ -100,16 +78,12 @@ object mod {
     ]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startCapture")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def startIntercept(stream: WritableStream, exec: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startIntercept")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def startIntercept(stream: WritableStream, opts: CaptureOptions, exec: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startIntercept")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def startIntercept(stream: WritableStream, exec: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startIntercept")(stream.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def startIntercept(stream: WritableStream, opts: CaptureOptions, exec: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startIntercept")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], exec.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def stopCapture(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stopCapture")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def stopCapture(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stopCapture")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def stopIntercept(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stopIntercept")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def stopIntercept(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stopIntercept")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait CaptureOptions extends StObject {
     
@@ -120,20 +94,16 @@ object mod {
   }
   object CaptureOptions {
     
-    @scala.inline
-    def apply(): CaptureOptions = {
+    inline def apply(): CaptureOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CaptureOptions]
     }
     
-    @scala.inline
-    implicit class CaptureOptionsMutableBuilder[Self <: CaptureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CaptureOptions](x: Self) {
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     }
   }
 }

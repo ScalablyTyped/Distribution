@@ -10,6 +10,5 @@ object diffMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def diffPatch(filename: String, text1: String, text2: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffPatch")(filename.asInstanceOf[js.Any], text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def diffPatch(filename: String, text1: String, text2: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffPatch")(filename.asInstanceOf[js.Any], text1.asInstanceOf[js.Any], text2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

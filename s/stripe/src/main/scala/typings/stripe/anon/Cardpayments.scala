@@ -28,31 +28,23 @@ trait Cardpayments extends StObject {
 }
 object Cardpayments {
   
-  @scala.inline
-  def apply(): Cardpayments = {
+  inline def apply(): Cardpayments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cardpayments]
   }
   
-  @scala.inline
-  implicit class CardpaymentsMutableBuilder[Self <: Cardpayments] (val x: Self) extends AnyVal {
+  extension [Self <: Cardpayments](x: Self) {
     
-    @scala.inline
-    def setCard_payments(value: active | inactive | pending): Self = StObject.set(x, "card_payments", value.asInstanceOf[js.Any])
+    inline def setCard_payments(value: active | inactive | pending): Self = StObject.set(x, "card_payments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCard_paymentsUndefined: Self = StObject.set(x, "card_payments", js.undefined)
+    inline def setCard_paymentsUndefined: Self = StObject.set(x, "card_payments", js.undefined)
     
-    @scala.inline
-    def setLegacy_payments(value: active | inactive | pending): Self = StObject.set(x, "legacy_payments", value.asInstanceOf[js.Any])
+    inline def setLegacy_payments(value: active | inactive | pending): Self = StObject.set(x, "legacy_payments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacy_paymentsUndefined: Self = StObject.set(x, "legacy_payments", js.undefined)
+    inline def setLegacy_paymentsUndefined: Self = StObject.set(x, "legacy_payments", js.undefined)
     
-    @scala.inline
-    def setTransfers(value: active | inactive | pending): Self = StObject.set(x, "transfers", value.asInstanceOf[js.Any])
+    inline def setTransfers(value: active | inactive | pending): Self = StObject.set(x, "transfers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransfersUndefined: Self = StObject.set(x, "transfers", js.undefined)
+    inline def setTransfersUndefined: Self = StObject.set(x, "transfers", js.undefined)
   }
 }

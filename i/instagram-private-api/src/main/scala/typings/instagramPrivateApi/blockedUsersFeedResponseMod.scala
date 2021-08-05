@@ -36,8 +36,7 @@ object blockedUsersFeedResponseMod {
   }
   object BlockedUsersFeedResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blocked_list: js.Array[BlockedUsersFeedResponseBlockedListItem],
       next_max_id: String,
       page_size: Double,
@@ -47,23 +46,17 @@ object blockedUsersFeedResponseMod {
       __obj.asInstanceOf[BlockedUsersFeedResponseRootObject]
     }
     
-    @scala.inline
-    implicit class BlockedUsersFeedResponseRootObjectMutableBuilder[Self <: BlockedUsersFeedResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: BlockedUsersFeedResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setBlocked_list(value: js.Array[BlockedUsersFeedResponseBlockedListItem]): Self = StObject.set(x, "blocked_list", value.asInstanceOf[js.Any])
+      inline def setBlocked_list(value: js.Array[BlockedUsersFeedResponseBlockedListItem]): Self = StObject.set(x, "blocked_list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocked_listVarargs(value: BlockedUsersFeedResponseBlockedListItem*): Self = StObject.set(x, "blocked_list", js.Array(value :_*))
+      inline def setBlocked_listVarargs(value: BlockedUsersFeedResponseBlockedListItem*): Self = StObject.set(x, "blocked_list", js.Array(value :_*))
       
-      @scala.inline
-      def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+      inline def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+      inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

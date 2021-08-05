@@ -14,8 +14,7 @@ object iconMod {
   object default {
     
     // tslint:disable-next-line:no-unnecessary-generics
-    @scala.inline
-    def apply[P](props: Props[P]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[P](props: Props[P]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/components/icon", JSImport.Default)
     @js.native
@@ -44,26 +43,20 @@ object iconMod {
     }
     object BaseProps {
       
-      @scala.inline
-      def apply[P](): BaseProps[P] = {
+      inline def apply[P](): BaseProps[P] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BaseProps[P]]
       }
       
-      @scala.inline
-      implicit class BasePropsMutableBuilder[Self <: BaseProps[?], P] (val x: Self & BaseProps[P]) extends AnyVal {
+      extension [Self <: BaseProps[?], P](x: Self & BaseProps[P]) {
         
-        @scala.inline
-        def setIcon(value: IconType[P]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: IconType[P]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       }
     }
     

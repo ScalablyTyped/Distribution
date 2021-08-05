@@ -41,43 +41,31 @@ trait EarconOptionsObject extends StObject {
 }
 object EarconOptionsObject {
   
-  @scala.inline
-  def apply(instruments: js.Array[EarconInstrument]): EarconOptionsObject = {
+  inline def apply(instruments: js.Array[EarconInstrument]): EarconOptionsObject = {
     val __obj = js.Dynamic.literal(instruments = instruments.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarconOptionsObject]
   }
   
-  @scala.inline
-  implicit class EarconOptionsObjectMutableBuilder[Self <: EarconOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: EarconOptionsObject](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInstruments(value: js.Array[EarconInstrument]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    inline def setInstruments(value: js.Array[EarconInstrument]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstrumentsVarargs(value: EarconInstrument*): Self = StObject.set(x, "instruments", js.Array(value :_*))
+    inline def setInstrumentsVarargs(value: EarconInstrument*): Self = StObject.set(x, "instruments", js.Array(value :_*))
     
-    @scala.inline
-    def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
+    inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
-    @scala.inline
-    def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

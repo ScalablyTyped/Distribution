@@ -18,8 +18,7 @@ trait XConnectableShape
 }
 object XConnectableShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     canConnect: (Point, Boolean, Double) => Boolean,
     doConnect: (Point, Boolean, Double) => Boolean,
@@ -30,13 +29,10 @@ object XConnectableShape {
     __obj.asInstanceOf[XConnectableShape]
   }
   
-  @scala.inline
-  implicit class XConnectableShapeMutableBuilder[Self <: XConnectableShape] (val x: Self) extends AnyVal {
+  extension [Self <: XConnectableShape](x: Self) {
     
-    @scala.inline
-    def setCanConnect(value: (Point, Boolean, Double) => Boolean): Self = StObject.set(x, "canConnect", js.Any.fromFunction3(value))
+    inline def setCanConnect(value: (Point, Boolean, Double) => Boolean): Self = StObject.set(x, "canConnect", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDoConnect(value: (Point, Boolean, Double) => Boolean): Self = StObject.set(x, "doConnect", js.Any.fromFunction3(value))
+    inline def setDoConnect(value: (Point, Boolean, Double) => Boolean): Self = StObject.set(x, "doConnect", js.Any.fromFunction3(value))
   }
 }

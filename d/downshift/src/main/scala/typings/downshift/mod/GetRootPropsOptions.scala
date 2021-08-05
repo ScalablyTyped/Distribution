@@ -10,16 +10,13 @@ trait GetRootPropsOptions extends StObject {
 }
 object GetRootPropsOptions {
   
-  @scala.inline
-  def apply(refKey: String): GetRootPropsOptions = {
+  inline def apply(refKey: String): GetRootPropsOptions = {
     val __obj = js.Dynamic.literal(refKey = refKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRootPropsOptions]
   }
   
-  @scala.inline
-  implicit class GetRootPropsOptionsMutableBuilder[Self <: GetRootPropsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetRootPropsOptions](x: Self) {
     
-    @scala.inline
-    def setRefKey(value: String): Self = StObject.set(x, "refKey", value.asInstanceOf[js.Any])
+    inline def setRefKey(value: String): Self = StObject.set(x, "refKey", value.asInstanceOf[js.Any])
   }
 }

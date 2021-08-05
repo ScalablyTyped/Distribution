@@ -47,10 +47,8 @@ object ListKnowledgeBasesResponse {
     * @returns ListKnowledgeBasesResponse instance
     */
   /* static member */
-  @scala.inline
-  def create(): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListKnowledgeBasesResponse]
-  @scala.inline
-  def create(properties: IListKnowledgeBasesResponse): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
+  inline def create(): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListKnowledgeBasesResponse]
+  inline def create(properties: IListKnowledgeBasesResponse): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
   
   /**
     * Decodes a ListKnowledgeBasesResponse message from the specified reader or buffer.
@@ -61,14 +59,10 @@ object ListKnowledgeBasesResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ListKnowledgeBasesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListKnowledgeBasesResponse]
-  @scala.inline
-  def decode(reader: Uint8Array): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ListKnowledgeBasesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListKnowledgeBasesResponse]
+  inline def decode(reader: Reader): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
+  inline def decode(reader: Reader, length: Double): ListKnowledgeBasesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListKnowledgeBasesResponse]
+  inline def decode(reader: Uint8Array): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
+  inline def decode(reader: Uint8Array, length: Double): ListKnowledgeBasesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListKnowledgeBasesResponse]
   
   /**
     * Decodes a ListKnowledgeBasesResponse message from the specified reader or buffer, length delimited.
@@ -78,10 +72,8 @@ object ListKnowledgeBasesResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
+  inline def decodeDelimited(reader: Reader): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
+  inline def decodeDelimited(reader: Uint8Array): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
   
   /**
     * Encodes the specified ListKnowledgeBasesResponse message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ListKnowledgeBasesResponse.verify|verify} messages.
@@ -90,10 +82,8 @@ object ListKnowledgeBasesResponse {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IListKnowledgeBasesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IListKnowledgeBasesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IListKnowledgeBasesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IListKnowledgeBasesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ListKnowledgeBasesResponse message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ListKnowledgeBasesResponse.verify|verify} messages.
@@ -102,10 +92,8 @@ object ListKnowledgeBasesResponse {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IListKnowledgeBasesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IListKnowledgeBasesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IListKnowledgeBasesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IListKnowledgeBasesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ListKnowledgeBasesResponse message from a plain object. Also converts values to their respective internal types.
@@ -113,8 +101,7 @@ object ListKnowledgeBasesResponse {
     * @returns ListKnowledgeBasesResponse
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ListKnowledgeBasesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListKnowledgeBasesResponse]
   
   /**
     * Creates a plain object from a ListKnowledgeBasesResponse message. Also converts values to other types if specified.
@@ -123,10 +110,8 @@ object ListKnowledgeBasesResponse {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: ListKnowledgeBasesResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ListKnowledgeBasesResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListKnowledgeBasesResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListKnowledgeBasesResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ListKnowledgeBasesResponse message.
@@ -134,6 +119,5 @@ object ListKnowledgeBasesResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -78,68 +78,48 @@ object mod extends Shortcut {
   }
   object DirectoryHandlerRouteObject {
     
-    @scala.inline
-    def apply(path: String | js.Array[String] | (RequestHandler[String | js.Array[String] | Error])): DirectoryHandlerRouteObject = {
+    inline def apply(path: String | js.Array[String] | (RequestHandler[String | js.Array[String] | Error])): DirectoryHandlerRouteObject = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectoryHandlerRouteObject]
     }
     
-    @scala.inline
-    implicit class DirectoryHandlerRouteObjectMutableBuilder[Self <: DirectoryHandlerRouteObject] (val x: Self) extends AnyVal {
+    extension [Self <: DirectoryHandlerRouteObject](x: Self) {
       
-      @scala.inline
-      def setDefaultExtension(value: String): Self = StObject.set(x, "defaultExtension", value.asInstanceOf[js.Any])
+      inline def setDefaultExtension(value: String): Self = StObject.set(x, "defaultExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExtensionUndefined: Self = StObject.set(x, "defaultExtension", js.undefined)
+      inline def setDefaultExtensionUndefined: Self = StObject.set(x, "defaultExtension", js.undefined)
       
-      @scala.inline
-      def setEtagMethod(value: hash | simple | `false`): Self = StObject.set(x, "etagMethod", value.asInstanceOf[js.Any])
+      inline def setEtagMethod(value: hash | simple | `false`): Self = StObject.set(x, "etagMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagMethodUndefined: Self = StObject.set(x, "etagMethod", js.undefined)
+      inline def setEtagMethodUndefined: Self = StObject.set(x, "etagMethod", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
       
-      @scala.inline
-      def setListing(value: Boolean): Self = StObject.set(x, "listing", value.asInstanceOf[js.Any])
+      inline def setListing(value: Boolean): Self = StObject.set(x, "listing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListingUndefined: Self = StObject.set(x, "listing", js.undefined)
+      inline def setListingUndefined: Self = StObject.set(x, "listing", js.undefined)
       
-      @scala.inline
-      def setLookupCompressed(value: Boolean): Self = StObject.set(x, "lookupCompressed", value.asInstanceOf[js.Any])
+      inline def setLookupCompressed(value: Boolean): Self = StObject.set(x, "lookupCompressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupCompressedUndefined: Self = StObject.set(x, "lookupCompressed", js.undefined)
+      inline def setLookupCompressedUndefined: Self = StObject.set(x, "lookupCompressed", js.undefined)
       
-      @scala.inline
-      def setPath(value: String | js.Array[String] | (RequestHandler[String | js.Array[String] | Error])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | js.Array[String] | (RequestHandler[String | js.Array[String] | Error])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathFunction1(value: /* request */ Request => String | js.Array[String] | Error): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
+      inline def setPathFunction1(value: /* request */ Request => String | js.Array[String] | Error): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setRedirectToSlash(value: Boolean): Self = StObject.set(x, "redirectToSlash", value.asInstanceOf[js.Any])
+      inline def setRedirectToSlash(value: Boolean): Self = StObject.set(x, "redirectToSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectToSlashUndefined: Self = StObject.set(x, "redirectToSlash", js.undefined)
+      inline def setRedirectToSlashUndefined: Self = StObject.set(x, "redirectToSlash", js.undefined)
       
-      @scala.inline
-      def setShowHidden(value: Boolean): Self = StObject.set(x, "showHidden", value.asInstanceOf[js.Any])
+      inline def setShowHidden(value: Boolean): Self = StObject.set(x, "showHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowHiddenUndefined: Self = StObject.set(x, "showHidden", js.undefined)
+      inline def setShowHiddenUndefined: Self = StObject.set(x, "showHidden", js.undefined)
     }
   }
   
@@ -154,20 +134,16 @@ object mod extends Shortcut {
   }
   object FileHandlerRouteObject {
     
-    @scala.inline
-    def apply(path: String | RequestHandler[String]): FileHandlerRouteObject = {
+    inline def apply(path: String | RequestHandler[String]): FileHandlerRouteObject = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileHandlerRouteObject]
     }
     
-    @scala.inline
-    implicit class FileHandlerRouteObjectMutableBuilder[Self <: FileHandlerRouteObject] (val x: Self) extends AnyVal {
+    extension [Self <: FileHandlerRouteObject](x: Self) {
       
-      @scala.inline
-      def setPath(value: String | RequestHandler[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | RequestHandler[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathFunction1(value: /* request */ Request => String): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
+      inline def setPathFunction1(value: /* request */ Request => String): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
     }
   }
   
@@ -184,20 +160,16 @@ object mod extends Shortcut {
   }
   object OptionalRegistrationOptions {
     
-    @scala.inline
-    def apply(): OptionalRegistrationOptions = {
+    inline def apply(): OptionalRegistrationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalRegistrationOptions]
     }
     
-    @scala.inline
-    implicit class OptionalRegistrationOptionsMutableBuilder[Self <: OptionalRegistrationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OptionalRegistrationOptions](x: Self) {
       
-      @scala.inline
-      def setEtagsCacheMaxSize(value: Double): Self = StObject.set(x, "etagsCacheMaxSize", value.asInstanceOf[js.Any])
+      inline def setEtagsCacheMaxSize(value: Double): Self = StObject.set(x, "etagsCacheMaxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagsCacheMaxSizeUndefined: Self = StObject.set(x, "etagsCacheMaxSize", js.undefined)
+      inline def setEtagsCacheMaxSizeUndefined: Self = StObject.set(x, "etagsCacheMaxSize", js.undefined)
     }
   }
   
@@ -252,62 +224,44 @@ object mod extends Shortcut {
   }
   object ReplyFileHandlerOptions {
     
-    @scala.inline
-    def apply(): ReplyFileHandlerOptions = {
+    inline def apply(): ReplyFileHandlerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplyFileHandlerOptions]
     }
     
-    @scala.inline
-    implicit class ReplyFileHandlerOptionsMutableBuilder[Self <: ReplyFileHandlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReplyFileHandlerOptions](x: Self) {
       
-      @scala.inline
-      def setConfine(value: Boolean): Self = StObject.set(x, "confine", value.asInstanceOf[js.Any])
+      inline def setConfine(value: Boolean): Self = StObject.set(x, "confine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfineUndefined: Self = StObject.set(x, "confine", js.undefined)
+      inline def setConfineUndefined: Self = StObject.set(x, "confine", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setEtagMethod(value: hash | simple | `false`): Self = StObject.set(x, "etagMethod", value.asInstanceOf[js.Any])
+      inline def setEtagMethod(value: hash | simple | `false`): Self = StObject.set(x, "etagMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagMethodUndefined: Self = StObject.set(x, "etagMethod", js.undefined)
+      inline def setEtagMethodUndefined: Self = StObject.set(x, "etagMethod", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setLookupCompressed(value: Boolean): Self = StObject.set(x, "lookupCompressed", value.asInstanceOf[js.Any])
+      inline def setLookupCompressed(value: Boolean): Self = StObject.set(x, "lookupCompressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupCompressedUndefined: Self = StObject.set(x, "lookupCompressed", js.undefined)
+      inline def setLookupCompressedUndefined: Self = StObject.set(x, "lookupCompressed", js.undefined)
       
-      @scala.inline
-      def setLookupMap(value: StringDictionary[String]): Self = StObject.set(x, "lookupMap", value.asInstanceOf[js.Any])
+      inline def setLookupMap(value: StringDictionary[String]): Self = StObject.set(x, "lookupMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupMapUndefined: Self = StObject.set(x, "lookupMap", js.undefined)
+      inline def setLookupMapUndefined: Self = StObject.set(x, "lookupMap", js.undefined)
       
-      @scala.inline
-      def setMode(value: `false` | attachment | `inline`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: `false` | attachment | `inline`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -352,35 +306,26 @@ object mod extends Shortcut {
     }
     object HandlerDecorations {
       
-      @scala.inline
-      def apply(): HandlerDecorations = {
+      inline def apply(): HandlerDecorations = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HandlerDecorations]
       }
       
-      @scala.inline
-      implicit class HandlerDecorationsMutableBuilder[Self <: HandlerDecorations] (val x: Self) extends AnyVal {
+      extension [Self <: HandlerDecorations](x: Self) {
         
-        @scala.inline
-        def setDirectory(value: DirectoryHandlerRouteObject): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+        inline def setDirectory(value: DirectoryHandlerRouteObject): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+        inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
         
-        @scala.inline
-        def setFile(value: String | RequestHandler[String] | FileHandlerRouteObject): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+        inline def setFile(value: String | RequestHandler[String] | FileHandlerRouteObject): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileFunction1(value: /* request */ Request => String): Self = StObject.set(x, "file", js.Any.fromFunction1(value))
+        inline def setFileFunction1(value: /* request */ Request => String): Self = StObject.set(x, "file", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+        inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
         
-        @scala.inline
-        def setFiles(value: RelativeTo): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+        inline def setFiles(value: RelativeTo): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+        inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       }
     }
     

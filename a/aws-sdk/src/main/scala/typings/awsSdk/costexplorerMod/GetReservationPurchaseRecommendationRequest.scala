@@ -53,64 +53,45 @@ trait GetReservationPurchaseRecommendationRequest extends StObject {
 }
 object GetReservationPurchaseRecommendationRequest {
   
-  @scala.inline
-  def apply(Service: GenericString): GetReservationPurchaseRecommendationRequest = {
+  inline def apply(Service: GenericString): GetReservationPurchaseRecommendationRequest = {
     val __obj = js.Dynamic.literal(Service = Service.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReservationPurchaseRecommendationRequest]
   }
   
-  @scala.inline
-  implicit class GetReservationPurchaseRecommendationRequestMutableBuilder[Self <: GetReservationPurchaseRecommendationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetReservationPurchaseRecommendationRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: GenericString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: GenericString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
+    inline def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountScopeUndefined: Self = StObject.set(x, "AccountScope", js.undefined)
+    inline def setAccountScopeUndefined: Self = StObject.set(x, "AccountScope", js.undefined)
     
-    @scala.inline
-    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
+    inline def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: NonNegativeInteger): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: NonNegativeInteger): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
+    inline def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
+    inline def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
     
-    @scala.inline
-    def setService(value: GenericString): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
+    inline def setService(value: GenericString): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceSpecification(value: ServiceSpecification): Self = StObject.set(x, "ServiceSpecification", value.asInstanceOf[js.Any])
+    inline def setServiceSpecification(value: ServiceSpecification): Self = StObject.set(x, "ServiceSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceSpecificationUndefined: Self = StObject.set(x, "ServiceSpecification", js.undefined)
+    inline def setServiceSpecificationUndefined: Self = StObject.set(x, "ServiceSpecification", js.undefined)
     
-    @scala.inline
-    def setTermInYears(value: TermInYears): Self = StObject.set(x, "TermInYears", value.asInstanceOf[js.Any])
+    inline def setTermInYears(value: TermInYears): Self = StObject.set(x, "TermInYears", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermInYearsUndefined: Self = StObject.set(x, "TermInYears", js.undefined)
+    inline def setTermInYearsUndefined: Self = StObject.set(x, "TermInYears", js.undefined)
   }
 }

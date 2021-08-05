@@ -26,22 +26,17 @@ trait ASPxClientGanttTaskTitlePosition extends StObject {
 }
 object ASPxClientGanttTaskTitlePosition {
   
-  @scala.inline
-  def apply(Inside: Double, None: Double, Outside: Double): ASPxClientGanttTaskTitlePosition = {
+  inline def apply(Inside: Double, None: Double, Outside: Double): ASPxClientGanttTaskTitlePosition = {
     val __obj = js.Dynamic.literal(Inside = Inside.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any], Outside = Outside.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGanttTaskTitlePosition]
   }
   
-  @scala.inline
-  implicit class ASPxClientGanttTaskTitlePositionMutableBuilder[Self <: ASPxClientGanttTaskTitlePosition] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGanttTaskTitlePosition](x: Self) {
     
-    @scala.inline
-    def setInside(value: Double): Self = StObject.set(x, "Inside", value.asInstanceOf[js.Any])
+    inline def setInside(value: Double): Self = StObject.set(x, "Inside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+    inline def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutside(value: Double): Self = StObject.set(x, "Outside", value.asInstanceOf[js.Any])
+    inline def setOutside(value: Double): Self = StObject.set(x, "Outside", value.asInstanceOf[js.Any])
   }
 }

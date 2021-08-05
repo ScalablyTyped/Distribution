@@ -23,8 +23,7 @@ trait Active extends StObject {
 }
 object Active {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Requireable[Boolean],
     clipped: Requireable[Boolean],
     closeOnBlur: Requireable[Boolean],
@@ -37,28 +36,20 @@ object Active {
     __obj.asInstanceOf[Active]
   }
   
-  @scala.inline
-  implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
+  extension [Self <: Active](x: Self) {
     
-    @scala.inline
-    def setActive(value: Requireable[Boolean]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Requireable[Boolean]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipped(value: Requireable[Boolean]): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
+    inline def setClipped(value: Requireable[Boolean]): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnBlur(value: Requireable[Boolean]): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
+    inline def setCloseOnBlur(value: Requireable[Boolean]): Self = StObject.set(x, "closeOnBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnEsc(value: Requireable[Boolean]): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+    inline def setCloseOnEsc(value: Requireable[Boolean]): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerClassName(value: Requireable[String]): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+    inline def setContainerClassName(value: Requireable[String]): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument(value: Requireable[js.Object]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Requireable[js.Object]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClose(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+    inline def setOnClose(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
   }
 }

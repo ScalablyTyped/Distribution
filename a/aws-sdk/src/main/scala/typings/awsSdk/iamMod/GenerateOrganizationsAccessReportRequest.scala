@@ -18,22 +18,17 @@ trait GenerateOrganizationsAccessReportRequest extends StObject {
 }
 object GenerateOrganizationsAccessReportRequest {
   
-  @scala.inline
-  def apply(EntityPath: organizationsEntityPathType): GenerateOrganizationsAccessReportRequest = {
+  inline def apply(EntityPath: organizationsEntityPathType): GenerateOrganizationsAccessReportRequest = {
     val __obj = js.Dynamic.literal(EntityPath = EntityPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOrganizationsAccessReportRequest]
   }
   
-  @scala.inline
-  implicit class GenerateOrganizationsAccessReportRequestMutableBuilder[Self <: GenerateOrganizationsAccessReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateOrganizationsAccessReportRequest](x: Self) {
     
-    @scala.inline
-    def setEntityPath(value: organizationsEntityPathType): Self = StObject.set(x, "EntityPath", value.asInstanceOf[js.Any])
+    inline def setEntityPath(value: organizationsEntityPathType): Self = StObject.set(x, "EntityPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationsPolicyId(value: organizationsPolicyIdType): Self = StObject.set(x, "OrganizationsPolicyId", value.asInstanceOf[js.Any])
+    inline def setOrganizationsPolicyId(value: organizationsPolicyIdType): Self = StObject.set(x, "OrganizationsPolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationsPolicyIdUndefined: Self = StObject.set(x, "OrganizationsPolicyId", js.undefined)
+    inline def setOrganizationsPolicyIdUndefined: Self = StObject.set(x, "OrganizationsPolicyId", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait NetworkQualityConfiguration extends StObject {
 }
 object NetworkQualityConfiguration {
   
-  @scala.inline
-  def apply(): NetworkQualityConfiguration = {
+  inline def apply(): NetworkQualityConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkQualityConfiguration]
   }
   
-  @scala.inline
-  implicit class NetworkQualityConfigurationMutableBuilder[Self <: NetworkQualityConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkQualityConfiguration](x: Self) {
     
-    @scala.inline
-    def setLocal(value: NetworkQualityVerbosity): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: NetworkQualityVerbosity): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setRemote(value: NetworkQualityVerbosity): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: NetworkQualityVerbosity): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+    inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
   }
 }

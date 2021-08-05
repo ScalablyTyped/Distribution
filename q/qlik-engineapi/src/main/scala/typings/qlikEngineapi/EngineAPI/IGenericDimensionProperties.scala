@@ -15,16 +15,13 @@ trait IGenericDimensionProperties
 }
 object IGenericDimensionProperties {
   
-  @scala.inline
-  def apply(qDim: INxLibraryDimensionDef, qInfo: INxInfo): IGenericDimensionProperties = {
+  inline def apply(qDim: INxLibraryDimensionDef, qInfo: INxInfo): IGenericDimensionProperties = {
     val __obj = js.Dynamic.literal(qDim = qDim.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericDimensionProperties]
   }
   
-  @scala.inline
-  implicit class IGenericDimensionPropertiesMutableBuilder[Self <: IGenericDimensionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericDimensionProperties](x: Self) {
     
-    @scala.inline
-    def setQDim(value: INxLibraryDimensionDef): Self = StObject.set(x, "qDim", value.asInstanceOf[js.Any])
+    inline def setQDim(value: INxLibraryDimensionDef): Self = StObject.set(x, "qDim", value.asInstanceOf[js.Any])
   }
 }

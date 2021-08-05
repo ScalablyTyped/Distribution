@@ -32,85 +32,59 @@ trait ValidateMessages extends StObject {
 }
 object ValidateMessages {
   
-  @scala.inline
-  def apply(): ValidateMessages = {
+  inline def apply(): ValidateMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateMessages]
   }
   
-  @scala.inline
-  implicit class ValidateMessagesMutableBuilder[Self <: ValidateMessages] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateMessages](x: Self) {
     
-    @scala.inline
-    def setArray(value: Len): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: Len): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+    inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    @scala.inline
-    def setDate(value: Format): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Format): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setDefault(value: ValidateMessage): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: ValidateMessage): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFunction0(value: () => String): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
+    inline def setDefaultFunction0(value: () => String): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setEnum(value: ValidateMessage): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: ValidateMessage): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumFunction0(value: () => String): Self = StObject.set(x, "enum", js.Any.fromFunction0(value))
+    inline def setEnumFunction0(value: () => String): Self = StObject.set(x, "enum", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+    inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    @scala.inline
-    def setNumber(value: Len): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Len): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setPattern(value: Mismatch): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Mismatch): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setRequired(value: ValidateMessage): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: ValidateMessage): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredFunction0(value: () => String): Self = StObject.set(x, "required", js.Any.fromFunction0(value))
+    inline def setRequiredFunction0(value: () => String): Self = StObject.set(x, "required", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setString(value: Len): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: Len): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
-    @scala.inline
-    def setTypes(value: Array): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: Array): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setWhitespace(value: ValidateMessage): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
+    inline def setWhitespace(value: ValidateMessage): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitespaceFunction0(value: () => String): Self = StObject.set(x, "whitespace", js.Any.fromFunction0(value))
+    inline def setWhitespaceFunction0(value: () => String): Self = StObject.set(x, "whitespace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
+    inline def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
   }
 }

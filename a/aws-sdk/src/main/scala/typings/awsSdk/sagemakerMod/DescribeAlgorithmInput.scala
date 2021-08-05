@@ -13,16 +13,13 @@ trait DescribeAlgorithmInput extends StObject {
 }
 object DescribeAlgorithmInput {
   
-  @scala.inline
-  def apply(AlgorithmName: ArnOrName): DescribeAlgorithmInput = {
+  inline def apply(AlgorithmName: ArnOrName): DescribeAlgorithmInput = {
     val __obj = js.Dynamic.literal(AlgorithmName = AlgorithmName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAlgorithmInput]
   }
   
-  @scala.inline
-  implicit class DescribeAlgorithmInputMutableBuilder[Self <: DescribeAlgorithmInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAlgorithmInput](x: Self) {
     
-    @scala.inline
-    def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
+    inline def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
   }
 }

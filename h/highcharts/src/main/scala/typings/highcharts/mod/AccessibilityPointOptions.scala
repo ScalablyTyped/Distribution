@@ -71,55 +71,39 @@ trait AccessibilityPointOptions extends StObject {
 }
 object AccessibilityPointOptions {
   
-  @scala.inline
-  def apply(): AccessibilityPointOptions = {
+  inline def apply(): AccessibilityPointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessibilityPointOptions]
   }
   
-  @scala.inline
-  implicit class AccessibilityPointOptionsMutableBuilder[Self <: AccessibilityPointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityPointOptions](x: Self) {
     
-    @scala.inline
-    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setDateFormatter(value: Point => String): Self = StObject.set(x, "dateFormatter", js.Any.fromFunction1(value))
+    inline def setDateFormatter(value: Point => String): Self = StObject.set(x, "dateFormatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDateFormatterUndefined: Self = StObject.set(x, "dateFormatter", js.undefined)
+    inline def setDateFormatterUndefined: Self = StObject.set(x, "dateFormatter", js.undefined)
     
-    @scala.inline
-    def setDescriptionFormatter(value: Point => String): Self = StObject.set(x, "descriptionFormatter", js.Any.fromFunction1(value))
+    inline def setDescriptionFormatter(value: Point => String): Self = StObject.set(x, "descriptionFormatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescriptionFormatterUndefined: Self = StObject.set(x, "descriptionFormatter", js.undefined)
+    inline def setDescriptionFormatterUndefined: Self = StObject.set(x, "descriptionFormatter", js.undefined)
     
-    @scala.inline
-    def setValueDecimals(value: Double): Self = StObject.set(x, "valueDecimals", value.asInstanceOf[js.Any])
+    inline def setValueDecimals(value: Double): Self = StObject.set(x, "valueDecimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueDecimalsUndefined: Self = StObject.set(x, "valueDecimals", js.undefined)
+    inline def setValueDecimalsUndefined: Self = StObject.set(x, "valueDecimals", js.undefined)
     
-    @scala.inline
-    def setValueDescriptionFormat(value: String): Self = StObject.set(x, "valueDescriptionFormat", value.asInstanceOf[js.Any])
+    inline def setValueDescriptionFormat(value: String): Self = StObject.set(x, "valueDescriptionFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueDescriptionFormatUndefined: Self = StObject.set(x, "valueDescriptionFormat", js.undefined)
+    inline def setValueDescriptionFormatUndefined: Self = StObject.set(x, "valueDescriptionFormat", js.undefined)
     
-    @scala.inline
-    def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
+    inline def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
+    inline def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
     
-    @scala.inline
-    def setValueSuffix(value: String): Self = StObject.set(x, "valueSuffix", value.asInstanceOf[js.Any])
+    inline def setValueSuffix(value: String): Self = StObject.set(x, "valueSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueSuffixUndefined: Self = StObject.set(x, "valueSuffix", js.undefined)
+    inline def setValueSuffixUndefined: Self = StObject.set(x, "valueSuffix", js.undefined)
   }
 }

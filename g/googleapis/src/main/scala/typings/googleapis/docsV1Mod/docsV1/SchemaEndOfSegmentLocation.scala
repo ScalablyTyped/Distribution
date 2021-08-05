@@ -18,19 +18,15 @@ trait SchemaEndOfSegmentLocation extends StObject {
 }
 object SchemaEndOfSegmentLocation {
   
-  @scala.inline
-  def apply(): SchemaEndOfSegmentLocation = {
+  inline def apply(): SchemaEndOfSegmentLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEndOfSegmentLocation]
   }
   
-  @scala.inline
-  implicit class SchemaEndOfSegmentLocationMutableBuilder[Self <: SchemaEndOfSegmentLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEndOfSegmentLocation](x: Self) {
     
-    @scala.inline
-    def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+    inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
   }
 }

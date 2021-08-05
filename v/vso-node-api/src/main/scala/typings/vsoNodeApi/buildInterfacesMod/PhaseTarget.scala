@@ -13,17 +13,14 @@ trait PhaseTarget extends StObject {
 }
 object PhaseTarget {
   
-  @scala.inline
-  def apply(`type`: Double): PhaseTarget = {
+  inline def apply(`type`: Double): PhaseTarget = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhaseTarget]
   }
   
-  @scala.inline
-  implicit class PhaseTargetMutableBuilder[Self <: PhaseTarget] (val x: Self) extends AnyVal {
+  extension [Self <: PhaseTarget](x: Self) {
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

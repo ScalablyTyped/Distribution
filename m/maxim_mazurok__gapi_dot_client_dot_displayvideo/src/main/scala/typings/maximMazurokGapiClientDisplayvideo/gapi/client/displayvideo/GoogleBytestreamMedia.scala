@@ -11,19 +11,15 @@ trait GoogleBytestreamMedia extends StObject {
 }
 object GoogleBytestreamMedia {
   
-  @scala.inline
-  def apply(): GoogleBytestreamMedia = {
+  inline def apply(): GoogleBytestreamMedia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleBytestreamMedia]
   }
   
-  @scala.inline
-  implicit class GoogleBytestreamMediaMutableBuilder[Self <: GoogleBytestreamMedia] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleBytestreamMedia](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

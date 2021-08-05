@@ -10,19 +10,15 @@ trait Filled extends StObject {
 }
 object Filled {
   
-  @scala.inline
-  def apply(): Filled = {
+  inline def apply(): Filled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Filled]
   }
   
-  @scala.inline
-  implicit class FilledMutableBuilder[Self <: Filled] (val x: Self) extends AnyVal {
+  extension [Self <: Filled](x: Self) {
     
-    @scala.inline
-    def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+    inline def setFilled(value: Boolean): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
+    inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
   }
 }

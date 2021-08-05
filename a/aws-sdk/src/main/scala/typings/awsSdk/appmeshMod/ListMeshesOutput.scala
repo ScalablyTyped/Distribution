@@ -18,25 +18,19 @@ trait ListMeshesOutput extends StObject {
 }
 object ListMeshesOutput {
   
-  @scala.inline
-  def apply(meshes: MeshList): ListMeshesOutput = {
+  inline def apply(meshes: MeshList): ListMeshesOutput = {
     val __obj = js.Dynamic.literal(meshes = meshes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMeshesOutput]
   }
   
-  @scala.inline
-  implicit class ListMeshesOutputMutableBuilder[Self <: ListMeshesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListMeshesOutput](x: Self) {
     
-    @scala.inline
-    def setMeshes(value: MeshList): Self = StObject.set(x, "meshes", value.asInstanceOf[js.Any])
+    inline def setMeshes(value: MeshList): Self = StObject.set(x, "meshes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshesVarargs(value: MeshRef*): Self = StObject.set(x, "meshes", js.Array(value :_*))
+    inline def setMeshesVarargs(value: MeshRef*): Self = StObject.set(x, "meshes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

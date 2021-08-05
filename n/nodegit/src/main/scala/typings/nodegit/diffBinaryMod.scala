@@ -31,14 +31,11 @@ object diffBinaryMod {
     trait DIFF_BINARY extends StObject
     object DIFF_BINARY {
       
-      @scala.inline
-      def DELTA: `2` = 2.asInstanceOf[`2`]
+      inline def DELTA: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def LITERAL: `1` = 1.asInstanceOf[`1`]
+      inline def LITERAL: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def NONE: `0` = 0.asInstanceOf[`0`]
+      inline def NONE: `0` = 0.asInstanceOf[`0`]
     }
   }
 }

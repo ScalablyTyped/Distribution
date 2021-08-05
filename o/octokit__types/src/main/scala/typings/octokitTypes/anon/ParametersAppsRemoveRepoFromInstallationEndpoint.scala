@@ -17,8 +17,7 @@ trait ParametersAppsRemoveRepoFromInstallationEndpoint extends StObject {
 }
 object ParametersAppsRemoveRepoFromInstallationEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsRemoveRepoFromInstallationEndpoint,
     request: AppsRemoveRepoFromInstallationRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersAppsRemoveRepoFromInstallationEndpoint {
     __obj.asInstanceOf[ParametersAppsRemoveRepoFromInstallationEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsRemoveRepoFromInstallationEndpointMutableBuilder[Self <: ParametersAppsRemoveRepoFromInstallationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsRemoveRepoFromInstallationEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsRemoveRepoFromInstallationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsRemoveRepoFromInstallationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsRemoveRepoFromInstallationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsRemoveRepoFromInstallationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

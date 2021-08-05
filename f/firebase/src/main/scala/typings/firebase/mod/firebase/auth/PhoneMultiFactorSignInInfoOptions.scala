@@ -20,28 +20,21 @@ trait PhoneMultiFactorSignInInfoOptions
 }
 object PhoneMultiFactorSignInInfoOptions {
   
-  @scala.inline
-  def apply(session: MultiFactorSession): PhoneMultiFactorSignInInfoOptions = {
+  inline def apply(session: MultiFactorSession): PhoneMultiFactorSignInInfoOptions = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneMultiFactorSignInInfoOptions]
   }
   
-  @scala.inline
-  implicit class PhoneMultiFactorSignInInfoOptionsMutableBuilder[Self <: PhoneMultiFactorSignInInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneMultiFactorSignInInfoOptions](x: Self) {
     
-    @scala.inline
-    def setMultiFactorHint(value: MultiFactorInfo): Self = StObject.set(x, "multiFactorHint", value.asInstanceOf[js.Any])
+    inline def setMultiFactorHint(value: MultiFactorInfo): Self = StObject.set(x, "multiFactorHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiFactorHintUndefined: Self = StObject.set(x, "multiFactorHint", js.undefined)
+    inline def setMultiFactorHintUndefined: Self = StObject.set(x, "multiFactorHint", js.undefined)
     
-    @scala.inline
-    def setMultiFactorUid(value: String): Self = StObject.set(x, "multiFactorUid", value.asInstanceOf[js.Any])
+    inline def setMultiFactorUid(value: String): Self = StObject.set(x, "multiFactorUid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiFactorUidUndefined: Self = StObject.set(x, "multiFactorUid", js.undefined)
+    inline def setMultiFactorUidUndefined: Self = StObject.set(x, "multiFactorUid", js.undefined)
     
-    @scala.inline
-    def setSession(value: MultiFactorSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: MultiFactorSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait XConditionalFormats
 }
 object XConditionalFormats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConditionalFormats: SafeArray[XConditionalFormat],
     Length: Double,
     acquire: () => Unit,
@@ -42,25 +41,18 @@ object XConditionalFormats {
     __obj.asInstanceOf[XConditionalFormats]
   }
   
-  @scala.inline
-  implicit class XConditionalFormatsMutableBuilder[Self <: XConditionalFormats] (val x: Self) extends AnyVal {
+  extension [Self <: XConditionalFormats](x: Self) {
     
-    @scala.inline
-    def setConditionalFormats(value: SafeArray[XConditionalFormat]): Self = StObject.set(x, "ConditionalFormats", value.asInstanceOf[js.Any])
+    inline def setConditionalFormats(value: SafeArray[XConditionalFormat]): Self = StObject.set(x, "ConditionalFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateByRange(value: XSheetCellRanges => Double): Self = StObject.set(x, "createByRange", js.Any.fromFunction1(value))
+    inline def setCreateByRange(value: XSheetCellRanges => Double): Self = StObject.set(x, "createByRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetConditionalFormats(value: () => SafeArray[XConditionalFormat]): Self = StObject.set(x, "getConditionalFormats", js.Any.fromFunction0(value))
+    inline def setGetConditionalFormats(value: () => SafeArray[XConditionalFormat]): Self = StObject.set(x, "getConditionalFormats", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveByID(value: Double => Unit): Self = StObject.set(x, "removeByID", js.Any.fromFunction1(value))
+    inline def setRemoveByID(value: Double => Unit): Self = StObject.set(x, "removeByID", js.Any.fromFunction1(value))
   }
 }

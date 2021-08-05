@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait Wrapping extends StObject
 object Wrapping {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[Wrapping & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Wrapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Wrapping & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[Wrapping & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Wrapping")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Wrapping & scala.Nothing]]
 }

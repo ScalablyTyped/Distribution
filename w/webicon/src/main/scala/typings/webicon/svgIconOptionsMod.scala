@@ -23,20 +23,16 @@ object svgIconOptionsMod {
   }
   object SvgIconOptions {
     
-    @scala.inline
-    def apply(): SvgIconOptions = {
+    inline def apply(): SvgIconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SvgIconOptions]
     }
     
-    @scala.inline
-    implicit class SvgIconOptionsMutableBuilder[Self <: SvgIconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SvgIconOptions](x: Self) {
       
-      @scala.inline
-      def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+      inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+      inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
     }
   }
 }

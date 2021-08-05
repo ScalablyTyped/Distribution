@@ -12,25 +12,19 @@ trait ProxyUrl extends StObject {
 }
 object ProxyUrl {
   
-  @scala.inline
-  def apply(): ProxyUrl = {
+  inline def apply(): ProxyUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProxyUrl]
   }
   
-  @scala.inline
-  implicit class ProxyUrlMutableBuilder[Self <: ProxyUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyUrl](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
+    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
   }
 }

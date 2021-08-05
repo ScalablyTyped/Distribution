@@ -12,15 +12,11 @@ object errorHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cleanPaths(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanPaths")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def cleanPaths(str: String, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanPaths")(str.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cleanPaths(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanPaths")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cleanPaths(str: String, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanPaths")(str.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def sanitizeError(error: IErrorWithStdErrAndStdOut): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def sanitizeError(error: IErrorWithStdErrAndStdOut, pathSeparator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeError")(error.asInstanceOf[js.Any], pathSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sanitizeError(error: IErrorWithStdErrAndStdOut): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sanitizeError(error: IErrorWithStdErrAndStdOut, pathSeparator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeError")(error.asInstanceOf[js.Any], pathSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait IErrorWithStdErrAndStdOut
     extends StObject
@@ -32,26 +28,20 @@ object errorHelpersMod {
   }
   object IErrorWithStdErrAndStdOut {
     
-    @scala.inline
-    def apply(): IErrorWithStdErrAndStdOut = {
+    inline def apply(): IErrorWithStdErrAndStdOut = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IErrorWithStdErrAndStdOut]
     }
     
-    @scala.inline
-    implicit class IErrorWithStdErrAndStdOutMutableBuilder[Self <: IErrorWithStdErrAndStdOut] (val x: Self) extends AnyVal {
+    extension [Self <: IErrorWithStdErrAndStdOut](x: Self) {
       
-      @scala.inline
-      def setStderr(value: Buffer | String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: Buffer | String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdout(value: Buffer | String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: Buffer | String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     }
   }
 }

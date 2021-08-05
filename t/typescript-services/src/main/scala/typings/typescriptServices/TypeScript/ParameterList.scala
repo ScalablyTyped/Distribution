@@ -14,8 +14,7 @@ trait ParameterList
 }
 object ParameterList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -43,16 +42,12 @@ object ParameterList {
     __obj.asInstanceOf[ParameterList]
   }
   
-  @scala.inline
-  implicit class ParameterListMutableBuilder[Self <: ParameterList] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterList](x: Self) {
     
-    @scala.inline
-    def setOpenParenTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "openParenTrailingComments", value.asInstanceOf[js.Any])
+    inline def setOpenParenTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "openParenTrailingComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "openParenTrailingComments", js.Array(value :_*))
+    inline def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "openParenTrailingComments", js.Array(value :_*))
     
-    @scala.inline
-    def setParameters(value: ISeparatedSyntaxList2): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ISeparatedSyntaxList2): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }
 }

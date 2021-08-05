@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def scroll(config: Axis): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scroll")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def scroll(config: Axis): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scroll")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -43,55 +43,39 @@ trait Subscription extends StObject {
 }
 object Subscription {
   
-  @scala.inline
-  def apply(SubscriptionLimits: SubscriptionLimits): Subscription = {
+  inline def apply(SubscriptionLimits: SubscriptionLimits): Subscription = {
     val __obj = js.Dynamic.literal(SubscriptionLimits = SubscriptionLimits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
   
-  @scala.inline
-  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+  extension [Self <: Subscription](x: Self) {
     
-    @scala.inline
-    def setAutoRenew(value: AutoRenew): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
+    inline def setAutoRenew(value: AutoRenew): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
+    inline def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setLimits(value: Limits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: Limits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
-    @scala.inline
-    def setLimitsVarargs(value: Limit*): Self = StObject.set(x, "Limits", js.Array(value :_*))
+    inline def setLimitsVarargs(value: Limit*): Self = StObject.set(x, "Limits", js.Array(value :_*))
     
-    @scala.inline
-    def setProactiveEngagementStatus(value: ProactiveEngagementStatus): Self = StObject.set(x, "ProactiveEngagementStatus", value.asInstanceOf[js.Any])
+    inline def setProactiveEngagementStatus(value: ProactiveEngagementStatus): Self = StObject.set(x, "ProactiveEngagementStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProactiveEngagementStatusUndefined: Self = StObject.set(x, "ProactiveEngagementStatus", js.undefined)
+    inline def setProactiveEngagementStatusUndefined: Self = StObject.set(x, "ProactiveEngagementStatus", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setSubscriptionLimits(value: SubscriptionLimits): Self = StObject.set(x, "SubscriptionLimits", value.asInstanceOf[js.Any])
+    inline def setSubscriptionLimits(value: SubscriptionLimits): Self = StObject.set(x, "SubscriptionLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeCommitmentInSeconds(value: DurationInSeconds): Self = StObject.set(x, "TimeCommitmentInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeCommitmentInSeconds(value: DurationInSeconds): Self = StObject.set(x, "TimeCommitmentInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeCommitmentInSecondsUndefined: Self = StObject.set(x, "TimeCommitmentInSeconds", js.undefined)
+    inline def setTimeCommitmentInSecondsUndefined: Self = StObject.set(x, "TimeCommitmentInSeconds", js.undefined)
   }
 }

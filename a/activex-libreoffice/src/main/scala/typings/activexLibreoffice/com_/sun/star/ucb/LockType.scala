@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LockType {
   
   /** specifies a write lock.read lock.read-write lock. */
-  @scala.inline
-  def WRITE: `0` = 0.asInstanceOf[`0`]
+  inline def WRITE: `0` = 0.asInstanceOf[`0`]
 }

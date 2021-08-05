@@ -20,19 +20,15 @@ trait SchemaGooglePrivacyDlpV2EntityId extends StObject {
 }
 object SchemaGooglePrivacyDlpV2EntityId {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2EntityId = {
+  inline def apply(): SchemaGooglePrivacyDlpV2EntityId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2EntityId]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2EntityIdMutableBuilder[Self <: SchemaGooglePrivacyDlpV2EntityId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2EntityId](x: Self) {
     
-    @scala.inline
-    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

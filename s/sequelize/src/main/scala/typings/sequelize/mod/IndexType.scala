@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IndexType extends StObject
 object IndexType {
   
-  @scala.inline
-  def FULLTEXT: typings.sequelize.sequelizeStrings.FULLTEXT = "FULLTEXT".asInstanceOf[typings.sequelize.sequelizeStrings.FULLTEXT]
+  inline def FULLTEXT: typings.sequelize.sequelizeStrings.FULLTEXT = "FULLTEXT".asInstanceOf[typings.sequelize.sequelizeStrings.FULLTEXT]
   
-  @scala.inline
-  def SPATIAL: typings.sequelize.sequelizeStrings.SPATIAL = "SPATIAL".asInstanceOf[typings.sequelize.sequelizeStrings.SPATIAL]
+  inline def SPATIAL: typings.sequelize.sequelizeStrings.SPATIAL = "SPATIAL".asInstanceOf[typings.sequelize.sequelizeStrings.SPATIAL]
   
-  @scala.inline
-  def UNIQUE: typings.sequelize.sequelizeStrings.UNIQUE = "UNIQUE".asInstanceOf[typings.sequelize.sequelizeStrings.UNIQUE]
+  inline def UNIQUE: typings.sequelize.sequelizeStrings.UNIQUE = "UNIQUE".asInstanceOf[typings.sequelize.sequelizeStrings.UNIQUE]
 }

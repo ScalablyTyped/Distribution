@@ -10,16 +10,13 @@ trait TextDef extends StObject {
 }
 object TextDef {
   
-  @scala.inline
-  def apply(prefix: String): TextDef = {
+  inline def apply(prefix: String): TextDef = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDef]
   }
   
-  @scala.inline
-  implicit class TextDefMutableBuilder[Self <: TextDef] (val x: Self) extends AnyVal {
+  extension [Self <: TextDef](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait SchemaDynamicLinkStats extends StObject {
 }
 object SchemaDynamicLinkStats {
   
-  @scala.inline
-  def apply(): SchemaDynamicLinkStats = {
+  inline def apply(): SchemaDynamicLinkStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDynamicLinkStats]
   }
   
-  @scala.inline
-  implicit class SchemaDynamicLinkStatsMutableBuilder[Self <: SchemaDynamicLinkStats] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDynamicLinkStats](x: Self) {
     
-    @scala.inline
-    def setLinkEventStats(value: js.Array[SchemaDynamicLinkEventStat]): Self = StObject.set(x, "linkEventStats", value.asInstanceOf[js.Any])
+    inline def setLinkEventStats(value: js.Array[SchemaDynamicLinkEventStat]): Self = StObject.set(x, "linkEventStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkEventStatsUndefined: Self = StObject.set(x, "linkEventStats", js.undefined)
+    inline def setLinkEventStatsUndefined: Self = StObject.set(x, "linkEventStats", js.undefined)
     
-    @scala.inline
-    def setLinkEventStatsVarargs(value: SchemaDynamicLinkEventStat*): Self = StObject.set(x, "linkEventStats", js.Array(value :_*))
+    inline def setLinkEventStatsVarargs(value: SchemaDynamicLinkEventStat*): Self = StObject.set(x, "linkEventStats", js.Array(value :_*))
   }
 }

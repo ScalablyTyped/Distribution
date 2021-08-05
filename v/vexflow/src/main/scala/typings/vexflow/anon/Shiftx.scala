@@ -12,25 +12,19 @@ trait Shiftx extends StObject {
 }
 object Shiftx {
   
-  @scala.inline
-  def apply(): Shiftx = {
+  inline def apply(): Shiftx = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Shiftx]
   }
   
-  @scala.inline
-  implicit class ShiftxMutableBuilder[Self <: Shiftx] (val x: Self) extends AnyVal {
+  extension [Self <: Shiftx](x: Self) {
     
-    @scala.inline
-    def setShift_x(value: Double): Self = StObject.set(x, "shift_x", value.asInstanceOf[js.Any])
+    inline def setShift_x(value: Double): Self = StObject.set(x, "shift_x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift_xUndefined: Self = StObject.set(x, "shift_x", js.undefined)
+    inline def setShift_xUndefined: Self = StObject.set(x, "shift_x", js.undefined)
     
-    @scala.inline
-    def setShift_y(value: Double): Self = StObject.set(x, "shift_y", value.asInstanceOf[js.Any])
+    inline def setShift_y(value: Double): Self = StObject.set(x, "shift_y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift_yUndefined: Self = StObject.set(x, "shift_y", js.undefined)
+    inline def setShift_yUndefined: Self = StObject.set(x, "shift_y", js.undefined)
   }
 }

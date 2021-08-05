@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScreenSharingRole extends StObject
 object ScreenSharingRole {
   
-  @scala.inline
-  def sharer: typings.microsoftGraph.microsoftGraphStrings.sharer = "sharer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharer]
+  inline def sharer: typings.microsoftGraph.microsoftGraphStrings.sharer = "sharer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sharer]
   
-  @scala.inline
-  def viewer: typings.microsoftGraph.microsoftGraphStrings.viewer = "viewer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.viewer]
+  inline def viewer: typings.microsoftGraph.microsoftGraphStrings.viewer = "viewer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.viewer]
 }

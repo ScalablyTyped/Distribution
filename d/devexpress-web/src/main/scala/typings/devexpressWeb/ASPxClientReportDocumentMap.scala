@@ -18,8 +18,7 @@ trait ASPxClientReportDocumentMap
 }
 object ASPxClientReportDocumentMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     ContentChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientReportDocumentMap]],
     GetClientVisible: () => Boolean,
@@ -41,10 +40,8 @@ object ASPxClientReportDocumentMap {
     __obj.asInstanceOf[ASPxClientReportDocumentMap]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportDocumentMapMutableBuilder[Self <: ASPxClientReportDocumentMap] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportDocumentMap](x: Self) {
     
-    @scala.inline
-    def setContentChanged(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientReportDocumentMap]]): Self = StObject.set(x, "ContentChanged", value.asInstanceOf[js.Any])
+    inline def setContentChanged(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientReportDocumentMap]]): Self = StObject.set(x, "ContentChanged", value.asInstanceOf[js.Any])
   }
 }

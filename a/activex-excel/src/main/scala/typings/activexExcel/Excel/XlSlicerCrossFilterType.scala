@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSlicerCrossFilterType extends StObject
 object XlSlicerCrossFilterType {
   
-  @scala.inline
-  def xlSlicerCrossFilterShowItemsWithDataAtTop: `2` = 2.asInstanceOf[`2`]
+  inline def xlSlicerCrossFilterShowItemsWithDataAtTop: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlSlicerCrossFilterShowItemsWithNoData: `3` = 3.asInstanceOf[`3`]
+  inline def xlSlicerCrossFilterShowItemsWithNoData: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlSlicerNoCrossFilter: `1` = 1.asInstanceOf[`1`]
+  inline def xlSlicerNoCrossFilter: `1` = 1.asInstanceOf[`1`]
 }

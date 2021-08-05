@@ -18,40 +18,29 @@ trait DataSourceGroupItem extends StObject {
 }
 object DataSourceGroupItem {
   
-  @scala.inline
-  def apply(): DataSourceGroupItem = {
+  inline def apply(): DataSourceGroupItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceGroupItem]
   }
   
-  @scala.inline
-  implicit class DataSourceGroupItemMutableBuilder[Self <: DataSourceGroupItem] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceGroupItem](x: Self) {
     
-    @scala.inline
-    def setAggregates(value: js.Array[DataSourceGroupItemAggregate]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    inline def setAggregates(value: js.Array[DataSourceGroupItemAggregate]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
+    inline def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
     
-    @scala.inline
-    def setAggregatesVarargs(value: DataSourceGroupItemAggregate*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
+    inline def setAggregatesVarargs(value: DataSourceGroupItemAggregate*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
     
-    @scala.inline
-    def setCompare(value: (/* a */ DataSourceGroupCompareItem, /* b */ DataSourceGroupCompareItem) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    inline def setCompare(value: (/* a */ DataSourceGroupCompareItem, /* b */ DataSourceGroupCompareItem) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

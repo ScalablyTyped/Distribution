@@ -13,19 +13,15 @@ trait SlotMigration extends StObject {
 }
 object SlotMigration {
   
-  @scala.inline
-  def apply(): SlotMigration = {
+  inline def apply(): SlotMigration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlotMigration]
   }
   
-  @scala.inline
-  implicit class SlotMigrationMutableBuilder[Self <: SlotMigration] (val x: Self) extends AnyVal {
+  extension [Self <: SlotMigration](x: Self) {
     
-    @scala.inline
-    def setProgressPercentage(value: Double): Self = StObject.set(x, "ProgressPercentage", value.asInstanceOf[js.Any])
+    inline def setProgressPercentage(value: Double): Self = StObject.set(x, "ProgressPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentageUndefined: Self = StObject.set(x, "ProgressPercentage", js.undefined)
+    inline def setProgressPercentageUndefined: Self = StObject.set(x, "ProgressPercentage", js.undefined)
   }
 }

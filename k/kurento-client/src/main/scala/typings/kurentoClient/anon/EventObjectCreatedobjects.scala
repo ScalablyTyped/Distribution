@@ -23,36 +23,27 @@ trait EventObjectCreatedobjects extends StObject {
 }
 object EventObjectCreatedobjects {
   
-  @scala.inline
-  def apply(`object`: String, source: String, tags: js.Array[Tag], timestamp: String, timestampMillis: String): EventObjectCreatedobjects = {
+  inline def apply(`object`: String, source: String, tags: js.Array[Tag], timestamp: String, timestampMillis: String): EventObjectCreatedobjects = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampMillis = timestampMillis.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ObjectCreated")
     __obj.asInstanceOf[EventObjectCreatedobjects]
   }
   
-  @scala.inline
-  implicit class EventObjectCreatedobjectsMutableBuilder[Self <: EventObjectCreatedobjects] (val x: Self) extends AnyVal {
+  extension [Self <: EventObjectCreatedobjects](x: Self) {
     
-    @scala.inline
-    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ObjectCreated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectCreated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

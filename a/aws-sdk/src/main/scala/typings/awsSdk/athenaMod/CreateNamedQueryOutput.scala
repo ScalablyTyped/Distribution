@@ -13,19 +13,15 @@ trait CreateNamedQueryOutput extends StObject {
 }
 object CreateNamedQueryOutput {
   
-  @scala.inline
-  def apply(): CreateNamedQueryOutput = {
+  inline def apply(): CreateNamedQueryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNamedQueryOutput]
   }
   
-  @scala.inline
-  implicit class CreateNamedQueryOutputMutableBuilder[Self <: CreateNamedQueryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNamedQueryOutput](x: Self) {
     
-    @scala.inline
-    def setNamedQueryId(value: NamedQueryId): Self = StObject.set(x, "NamedQueryId", value.asInstanceOf[js.Any])
+    inline def setNamedQueryId(value: NamedQueryId): Self = StObject.set(x, "NamedQueryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedQueryIdUndefined: Self = StObject.set(x, "NamedQueryId", js.undefined)
+    inline def setNamedQueryIdUndefined: Self = StObject.set(x, "NamedQueryId", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait GoogleCloudVideointelligenceV1ExplicitContentAnnotation extends StObject {
 }
 object GoogleCloudVideointelligenceV1ExplicitContentAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1ExplicitContentAnnotation = {
+  inline def apply(): GoogleCloudVideointelligenceV1ExplicitContentAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1ExplicitContentAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1ExplicitContentAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1ExplicitContentAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1ExplicitContentAnnotation](x: Self) {
     
-    @scala.inline
-    def setFrames(value: js.Array[GoogleCloudVideointelligenceV1ExplicitContentFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[GoogleCloudVideointelligenceV1ExplicitContentFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setFramesVarargs(value: GoogleCloudVideointelligenceV1ExplicitContentFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1ExplicitContentFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

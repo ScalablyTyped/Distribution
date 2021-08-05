@@ -11,16 +11,13 @@ trait RecorderManagerOnErrorCallbackResult extends StObject {
 }
 object RecorderManagerOnErrorCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): RecorderManagerOnErrorCallbackResult = {
+  inline def apply(errMsg: String): RecorderManagerOnErrorCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecorderManagerOnErrorCallbackResult]
   }
   
-  @scala.inline
-  implicit class RecorderManagerOnErrorCallbackResultMutableBuilder[Self <: RecorderManagerOnErrorCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RecorderManagerOnErrorCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

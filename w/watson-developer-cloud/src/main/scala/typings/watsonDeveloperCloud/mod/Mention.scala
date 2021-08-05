@@ -15,22 +15,17 @@ trait Mention extends StObject {
 }
 object Mention {
   
-  @scala.inline
-  def apply(entity: String, location: js.Array[Double]): Mention = {
+  inline def apply(entity: String, location: js.Array[Double]): Mention = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mention]
   }
   
-  @scala.inline
-  implicit class MentionMutableBuilder[Self <: Mention] (val x: Self) extends AnyVal {
+  extension [Self <: Mention](x: Self) {
     
-    @scala.inline
-    def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
   }
 }

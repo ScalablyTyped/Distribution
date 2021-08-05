@@ -13,25 +13,19 @@ trait BinaryInputs extends StObject {
 }
 object BinaryInputs {
   
-  @scala.inline
-  def apply(): BinaryInputs = {
+  inline def apply(): BinaryInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BinaryInputs]
   }
   
-  @scala.inline
-  implicit class BinaryInputsMutableBuilder[Self <: BinaryInputs] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryInputs](x: Self) {
     
-    @scala.inline
-    def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+    inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
-    @scala.inline
-    def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
   }
 }

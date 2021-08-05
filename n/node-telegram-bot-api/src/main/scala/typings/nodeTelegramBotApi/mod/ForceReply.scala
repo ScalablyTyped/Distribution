@@ -12,22 +12,17 @@ trait ForceReply extends StObject {
 }
 object ForceReply {
   
-  @scala.inline
-  def apply(force_reply: Boolean): ForceReply = {
+  inline def apply(force_reply: Boolean): ForceReply = {
     val __obj = js.Dynamic.literal(force_reply = force_reply.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForceReply]
   }
   
-  @scala.inline
-  implicit class ForceReplyMutableBuilder[Self <: ForceReply] (val x: Self) extends AnyVal {
+  extension [Self <: ForceReply](x: Self) {
     
-    @scala.inline
-    def setForce_reply(value: Boolean): Self = StObject.set(x, "force_reply", value.asInstanceOf[js.Any])
+    inline def setForce_reply(value: Boolean): Self = StObject.set(x, "force_reply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelective(value: Boolean): Self = StObject.set(x, "selective", value.asInstanceOf[js.Any])
+    inline def setSelective(value: Boolean): Self = StObject.set(x, "selective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectiveUndefined: Self = StObject.set(x, "selective", js.undefined)
+    inline def setSelectiveUndefined: Self = StObject.set(x, "selective", js.undefined)
   }
 }

@@ -16,31 +16,23 @@ trait Dictlayerdata extends StObject {
 }
 object Dictlayerdata {
   
-  @scala.inline
-  def apply(): Dictlayerdata = {
+  inline def apply(): Dictlayerdata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictlayerdata]
   }
   
-  @scala.inline
-  implicit class DictlayerdataMutableBuilder[Self <: Dictlayerdata] (val x: Self) extends AnyVal {
+  extension [Self <: Dictlayerdata](x: Self) {
     
-    @scala.inline
-    def setCommon(value: Title): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: Title): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+    inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
-    @scala.inline
-    def setDict(value: Words): Self = StObject.set(x, "dict", value.asInstanceOf[js.Any])
+    inline def setDict(value: Words): Self = StObject.set(x, "dict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDictUndefined: Self = StObject.set(x, "dict", js.undefined)
+    inline def setDictUndefined: Self = StObject.set(x, "dict", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

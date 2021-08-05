@@ -15,16 +15,13 @@ trait IGenericBookmarkListLayout
 }
 object IGenericBookmarkListLayout {
   
-  @scala.inline
-  def apply(qBookmarkList: IBookmarkList, qInfo: INxInfo, qMeta: INxMeta): IGenericBookmarkListLayout = {
+  inline def apply(qBookmarkList: IBookmarkList, qInfo: INxInfo, qMeta: INxMeta): IGenericBookmarkListLayout = {
     val __obj = js.Dynamic.literal(qBookmarkList = qBookmarkList.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericBookmarkListLayout]
   }
   
-  @scala.inline
-  implicit class IGenericBookmarkListLayoutMutableBuilder[Self <: IGenericBookmarkListLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericBookmarkListLayout](x: Self) {
     
-    @scala.inline
-    def setQBookmarkList(value: IBookmarkList): Self = StObject.set(x, "qBookmarkList", value.asInstanceOf[js.Any])
+    inline def setQBookmarkList(value: IBookmarkList): Self = StObject.set(x, "qBookmarkList", value.asInstanceOf[js.Any])
   }
 }

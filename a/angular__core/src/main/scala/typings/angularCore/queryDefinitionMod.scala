@@ -79,39 +79,29 @@ object queryDefinitionMod {
   }
   object NgQueryDefinition {
     
-    @scala.inline
-    def apply(container: ClassDeclaration, decorator: NgDecorator, node: Node, `type`: QueryType): NgQueryDefinition = {
+    inline def apply(container: ClassDeclaration, decorator: NgDecorator, node: Node, `type`: QueryType): NgQueryDefinition = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], decorator = decorator.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], name = null, property = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NgQueryDefinition]
     }
     
-    @scala.inline
-    implicit class NgQueryDefinitionMutableBuilder[Self <: NgQueryDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: NgQueryDefinition](x: Self) {
       
-      @scala.inline
-      def setContainer(value: ClassDeclaration): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ClassDeclaration): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecorator(value: NgDecorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
+      inline def setDecorator(value: NgDecorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: PropertyDeclaration): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: PropertyDeclaration): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyNull: Self = StObject.set(x, "property", null)
+      inline def setPropertyNull: Self = StObject.set(x, "property", null)
       
-      @scala.inline
-      def setType(value: QueryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: QueryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

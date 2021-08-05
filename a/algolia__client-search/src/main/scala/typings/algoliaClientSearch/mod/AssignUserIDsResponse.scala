@@ -13,16 +13,13 @@ trait AssignUserIDsResponse extends StObject {
 }
 object AssignUserIDsResponse {
   
-  @scala.inline
-  def apply(createdAt: String): AssignUserIDsResponse = {
+  inline def apply(createdAt: String): AssignUserIDsResponse = {
     val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignUserIDsResponse]
   }
   
-  @scala.inline
-  implicit class AssignUserIDsResponseMutableBuilder[Self <: AssignUserIDsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssignUserIDsResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
   }
 }

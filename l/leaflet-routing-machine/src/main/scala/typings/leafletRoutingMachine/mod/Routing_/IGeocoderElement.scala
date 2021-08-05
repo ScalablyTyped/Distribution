@@ -16,22 +16,17 @@ trait IGeocoderElement extends StObject {
 }
 object IGeocoderElement {
   
-  @scala.inline
-  def apply(closeButton: HTMLElement, container: HTMLElement, input: HTMLElement): IGeocoderElement = {
+  inline def apply(closeButton: HTMLElement, container: HTMLElement, input: HTMLElement): IGeocoderElement = {
     val __obj = js.Dynamic.literal(closeButton = closeButton.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeocoderElement]
   }
   
-  @scala.inline
-  implicit class IGeocoderElementMutableBuilder[Self <: IGeocoderElement] (val x: Self) extends AnyVal {
+  extension [Self <: IGeocoderElement](x: Self) {
     
-    @scala.inline
-    def setCloseButton(value: HTMLElement): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    inline def setCloseButton(value: HTMLElement): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInput(value: HTMLElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: HTMLElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait FieldSchemaInFormLookup
 }
 object FieldSchemaInFormLookup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     AllowMultipleValues: Boolean,
     BaseDisplayFormUrl: String,
@@ -66,34 +65,24 @@ object FieldSchemaInFormLookup {
     __obj.asInstanceOf[FieldSchemaInFormLookup]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInFormLookupMutableBuilder[Self <: FieldSchemaInFormLookup] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInFormLookup](x: Self) {
     
-    @scala.inline
-    def setAllowMultipleValues(value: Boolean): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
+    inline def setAllowMultipleValues(value: Boolean): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseDisplayFormUrl(value: String): Self = StObject.set(x, "BaseDisplayFormUrl", value.asInstanceOf[js.Any])
+    inline def setBaseDisplayFormUrl(value: String): Self = StObject.set(x, "BaseDisplayFormUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoiceCount(value: Double): Self = StObject.set(x, "ChoiceCount", value.asInstanceOf[js.Any])
+    inline def setChoiceCount(value: Double): Self = StObject.set(x, "ChoiceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoices(value: js.Array[LookupId]): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
+    inline def setChoices(value: js.Array[LookupId]): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoicesVarargs(value: LookupId*): Self = StObject.set(x, "Choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: LookupId*): Self = StObject.set(x, "Choices", js.Array(value :_*))
     
-    @scala.inline
-    def setDependentLookup(value: Boolean): Self = StObject.set(x, "DependentLookup", value.asInstanceOf[js.Any])
+    inline def setDependentLookup(value: Boolean): Self = StObject.set(x, "DependentLookup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookupListId(value: String): Self = StObject.set(x, "LookupListId", value.asInstanceOf[js.Any])
+    inline def setLookupListId(value: String): Self = StObject.set(x, "LookupListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxQueryResult(value: String): Self = StObject.set(x, "MaxQueryResult", value.asInstanceOf[js.Any])
+    inline def setMaxQueryResult(value: String): Self = StObject.set(x, "MaxQueryResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottled(value: Boolean): Self = StObject.set(x, "Throttled", value.asInstanceOf[js.Any])
+    inline def setThrottled(value: Boolean): Self = StObject.set(x, "Throttled", value.asInstanceOf[js.Any])
   }
 }

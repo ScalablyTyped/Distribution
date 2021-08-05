@@ -43,8 +43,7 @@ trait BreakpointsOwner extends StObject {
 }
 object BreakpointsOwner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     breakpoints: BreakpointsOwnerBreakpoints,
     heightBreakpoint: xsmall | small | medium | large | xlarge,
     orientation: landscape | portrait,
@@ -54,19 +53,14 @@ object BreakpointsOwner {
     __obj.asInstanceOf[BreakpointsOwner]
   }
   
-  @scala.inline
-  implicit class BreakpointsOwnerMutableBuilder[Self <: BreakpointsOwner] (val x: Self) extends AnyVal {
+  extension [Self <: BreakpointsOwner](x: Self) {
     
-    @scala.inline
-    def setBreakpoints(value: BreakpointsOwnerBreakpoints): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: BreakpointsOwnerBreakpoints): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "heightBreakpoint", value.asInstanceOf[js.Any])
+    inline def setHeightBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "heightBreakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: landscape | portrait): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: landscape | portrait): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "widthBreakpoint", value.asInstanceOf[js.Any])
+    inline def setWidthBreakpoint(value: xsmall | small | medium | large | xlarge): Self = StObject.set(x, "widthBreakpoint", value.asInstanceOf[js.Any])
   }
 }

@@ -19,10 +19,8 @@ object createTypographyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(palette: Palette, typography: js.Function1[/* palette */ Palette, TypographyOptions]): Typography = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any], typography.asInstanceOf[js.Any])).asInstanceOf[Typography]
-  @scala.inline
-  def default(palette: Palette, typography: TypographyOptions): Typography = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any], typography.asInstanceOf[js.Any])).asInstanceOf[Typography]
+  inline def default(palette: Palette, typography: js.Function1[/* palette */ Palette, TypographyOptions]): Typography = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any], typography.asInstanceOf[js.Any])).asInstanceOf[Typography]
+  inline def default(palette: Palette, typography: TypographyOptions): Typography = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any], typography.asInstanceOf[js.Any])).asInstanceOf[Typography]
   
   /* Inlined parent std.Required<{  fontFamily :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontFamily'],   fontSize :number,   fontWeightLight :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight'],   fontWeightRegular :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight'],   fontWeightMedium :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight']}> */
   trait FontStyle extends StObject {
@@ -39,8 +37,7 @@ object createTypographyMod {
   }
   object FontStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fontFamily: FontFamilyProperty,
       fontSize: Double,
       fontWeightLight: FontWeightProperty,
@@ -51,23 +48,17 @@ object createTypographyMod {
       __obj.asInstanceOf[FontStyle]
     }
     
-    @scala.inline
-    implicit class FontStyleMutableBuilder[Self <: FontStyle] (val x: Self) extends AnyVal {
+    extension [Self <: FontStyle](x: Self) {
       
-      @scala.inline
-      def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
+      inline def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      inline def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
+      inline def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,62 +83,44 @@ object createTypographyMod {
   }
   object FontStyleOptions {
     
-    @scala.inline
-    def apply(): FontStyleOptions = {
+    inline def apply(): FontStyleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FontStyleOptions]
     }
     
-    @scala.inline
-    implicit class FontStyleOptionsMutableBuilder[Self <: FontStyleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FontStyleOptions](x: Self) {
       
-      @scala.inline
-      def setAllVariants(value: CSSProperties): Self = StObject.set(x, "allVariants", value.asInstanceOf[js.Any])
+      inline def setAllVariants(value: CSSProperties): Self = StObject.set(x, "allVariants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllVariantsUndefined: Self = StObject.set(x, "allVariants", js.undefined)
+      inline def setAllVariantsUndefined: Self = StObject.set(x, "allVariants", js.undefined)
       
-      @scala.inline
-      def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
+      inline def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightLightUndefined: Self = StObject.set(x, "fontWeightLight", js.undefined)
+      inline def setFontWeightLightUndefined: Self = StObject.set(x, "fontWeightLight", js.undefined)
       
-      @scala.inline
-      def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      inline def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightMediumUndefined: Self = StObject.set(x, "fontWeightMedium", js.undefined)
+      inline def setFontWeightMediumUndefined: Self = StObject.set(x, "fontWeightMedium", js.undefined)
       
-      @scala.inline
-      def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
+      inline def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightRegularUndefined: Self = StObject.set(x, "fontWeightRegular", js.undefined)
+      inline def setFontWeightRegularUndefined: Self = StObject.set(x, "fontWeightRegular", js.undefined)
       
-      @scala.inline
-      def setHtmlFontSize(value: Double): Self = StObject.set(x, "htmlFontSize", value.asInstanceOf[js.Any])
+      inline def setHtmlFontSize(value: Double): Self = StObject.set(x, "htmlFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlFontSizeUndefined: Self = StObject.set(x, "htmlFontSize", js.undefined)
+      inline def setHtmlFontSizeUndefined: Self = StObject.set(x, "htmlFontSize", js.undefined)
       
-      @scala.inline
-      def setUseNextVariants(value: Boolean): Self = StObject.set(x, "useNextVariants", value.asInstanceOf[js.Any])
+      inline def setUseNextVariants(value: Boolean): Self = StObject.set(x, "useNextVariants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNextVariantsUndefined: Self = StObject.set(x, "useNextVariants", js.undefined)
+      inline def setUseNextVariantsUndefined: Self = StObject.set(x, "useNextVariants", js.undefined)
     }
   }
   
@@ -176,65 +149,45 @@ object createTypographyMod {
   trait ThemeStyle extends StObject
   object ThemeStyle {
     
-    @scala.inline
-    def body1: typings.materialUiCore.materialUiCoreStrings.body1 = "body1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body1]
+    inline def body1: typings.materialUiCore.materialUiCoreStrings.body1 = "body1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body1]
     
-    @scala.inline
-    def body2: typings.materialUiCore.materialUiCoreStrings.body2 = "body2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body2]
+    inline def body2: typings.materialUiCore.materialUiCoreStrings.body2 = "body2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body2]
     
-    @scala.inline
-    def button: typings.materialUiCore.materialUiCoreStrings.button = "button".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.button]
+    inline def button: typings.materialUiCore.materialUiCoreStrings.button = "button".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.button]
     
-    @scala.inline
-    def caption: typings.materialUiCore.materialUiCoreStrings.caption = "caption".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.caption]
+    inline def caption: typings.materialUiCore.materialUiCoreStrings.caption = "caption".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.caption]
     
-    @scala.inline
-    def display1: typings.materialUiCore.materialUiCoreStrings.display1 = "display1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display1]
+    inline def display1: typings.materialUiCore.materialUiCoreStrings.display1 = "display1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display1]
     
-    @scala.inline
-    def display2: typings.materialUiCore.materialUiCoreStrings.display2 = "display2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display2]
+    inline def display2: typings.materialUiCore.materialUiCoreStrings.display2 = "display2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display2]
     
-    @scala.inline
-    def display3: typings.materialUiCore.materialUiCoreStrings.display3 = "display3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display3]
+    inline def display3: typings.materialUiCore.materialUiCoreStrings.display3 = "display3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display3]
     
-    @scala.inline
-    def display4: typings.materialUiCore.materialUiCoreStrings.display4 = "display4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display4]
+    inline def display4: typings.materialUiCore.materialUiCoreStrings.display4 = "display4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display4]
     
-    @scala.inline
-    def h1: typings.materialUiCore.materialUiCoreStrings.h1 = "h1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h1]
+    inline def h1: typings.materialUiCore.materialUiCoreStrings.h1 = "h1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h1]
     
-    @scala.inline
-    def h2: typings.materialUiCore.materialUiCoreStrings.h2 = "h2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h2]
+    inline def h2: typings.materialUiCore.materialUiCoreStrings.h2 = "h2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h2]
     
-    @scala.inline
-    def h3: typings.materialUiCore.materialUiCoreStrings.h3 = "h3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h3]
+    inline def h3: typings.materialUiCore.materialUiCoreStrings.h3 = "h3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h3]
     
-    @scala.inline
-    def h4: typings.materialUiCore.materialUiCoreStrings.h4 = "h4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h4]
+    inline def h4: typings.materialUiCore.materialUiCoreStrings.h4 = "h4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h4]
     
-    @scala.inline
-    def h5: typings.materialUiCore.materialUiCoreStrings.h5 = "h5".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h5]
+    inline def h5: typings.materialUiCore.materialUiCoreStrings.h5 = "h5".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h5]
     
-    @scala.inline
-    def h6: typings.materialUiCore.materialUiCoreStrings.h6 = "h6".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h6]
+    inline def h6: typings.materialUiCore.materialUiCoreStrings.h6 = "h6".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h6]
     
-    @scala.inline
-    def headline: typings.materialUiCore.materialUiCoreStrings.headline = "headline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.headline]
+    inline def headline: typings.materialUiCore.materialUiCoreStrings.headline = "headline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.headline]
     
-    @scala.inline
-    def overline: typings.materialUiCore.materialUiCoreStrings.overline = "overline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.overline]
+    inline def overline: typings.materialUiCore.materialUiCoreStrings.overline = "overline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.overline]
     
-    @scala.inline
-    def subheading: typings.materialUiCore.materialUiCoreStrings.subheading = "subheading".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subheading]
+    inline def subheading: typings.materialUiCore.materialUiCoreStrings.subheading = "subheading".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subheading]
     
-    @scala.inline
-    def subtitle1: typings.materialUiCore.materialUiCoreStrings.subtitle1 = "subtitle1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle1]
+    inline def subtitle1: typings.materialUiCore.materialUiCoreStrings.subtitle1 = "subtitle1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle1]
     
-    @scala.inline
-    def subtitle2: typings.materialUiCore.materialUiCoreStrings.subtitle2 = "subtitle2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle2]
+    inline def subtitle2: typings.materialUiCore.materialUiCoreStrings.subtitle2 = "subtitle2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle2]
     
-    @scala.inline
-    def title: typings.materialUiCore.materialUiCoreStrings.title = "title".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.title]
+    inline def title: typings.materialUiCore.materialUiCoreStrings.title = "title".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.title]
   }
   
   /* Inlined parent std.Record<@material-ui/core.@material-ui/core/styles/createTypography.ThemeStyle, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyle> */
@@ -296,8 +249,7 @@ object createTypographyMod {
   }
   object Typography {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body1: TypographyStyle,
       body2: TypographyStyle,
       button: TypographyStyle,
@@ -329,86 +281,59 @@ object createTypographyMod {
       __obj.asInstanceOf[Typography]
     }
     
-    @scala.inline
-    implicit class TypographyMutableBuilder[Self <: Typography] (val x: Self) extends AnyVal {
+    extension [Self <: Typography](x: Self) {
       
-      @scala.inline
-      def setBody1(value: TypographyStyle): Self = StObject.set(x, "body1", value.asInstanceOf[js.Any])
+      inline def setBody1(value: TypographyStyle): Self = StObject.set(x, "body1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody2(value: TypographyStyle): Self = StObject.set(x, "body2", value.asInstanceOf[js.Any])
+      inline def setBody2(value: TypographyStyle): Self = StObject.set(x, "body2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: TypographyStyle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: TypographyStyle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption(value: TypographyStyle): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: TypographyStyle): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay1(value: TypographyStyle): Self = StObject.set(x, "display1", value.asInstanceOf[js.Any])
+      inline def setDisplay1(value: TypographyStyle): Self = StObject.set(x, "display1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay2(value: TypographyStyle): Self = StObject.set(x, "display2", value.asInstanceOf[js.Any])
+      inline def setDisplay2(value: TypographyStyle): Self = StObject.set(x, "display2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay3(value: TypographyStyle): Self = StObject.set(x, "display3", value.asInstanceOf[js.Any])
+      inline def setDisplay3(value: TypographyStyle): Self = StObject.set(x, "display3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay4(value: TypographyStyle): Self = StObject.set(x, "display4", value.asInstanceOf[js.Any])
+      inline def setDisplay4(value: TypographyStyle): Self = StObject.set(x, "display4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
+      inline def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      inline def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
+      inline def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH1(value: TypographyStyle): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+      inline def setH1(value: TypographyStyle): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH2(value: TypographyStyle): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+      inline def setH2(value: TypographyStyle): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH3(value: TypographyStyle): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+      inline def setH3(value: TypographyStyle): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH4(value: TypographyStyle): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+      inline def setH4(value: TypographyStyle): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH5(value: TypographyStyle): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+      inline def setH5(value: TypographyStyle): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH6(value: TypographyStyle): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+      inline def setH6(value: TypographyStyle): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadline(value: TypographyStyle): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
+      inline def setHeadline(value: TypographyStyle): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverline(value: TypographyStyle): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
+      inline def setOverline(value: TypographyStyle): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPxToRem(value: Double => String): Self = StObject.set(x, "pxToRem", js.Any.fromFunction1(value))
+      inline def setPxToRem(value: Double => String): Self = StObject.set(x, "pxToRem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubheading(value: TypographyStyle): Self = StObject.set(x, "subheading", value.asInstanceOf[js.Any])
+      inline def setSubheading(value: TypographyStyle): Self = StObject.set(x, "subheading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitle1(value: TypographyStyle): Self = StObject.set(x, "subtitle1", value.asInstanceOf[js.Any])
+      inline def setSubtitle1(value: TypographyStyle): Self = StObject.set(x, "subtitle1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitle2(value: TypographyStyle): Self = StObject.set(x, "subtitle2", value.asInstanceOf[js.Any])
+      inline def setSubtitle2(value: TypographyStyle): Self = StObject.set(x, "subtitle2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: TypographyStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: TypographyStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -473,182 +398,124 @@ object createTypographyMod {
   }
   object TypographyOptions {
     
-    @scala.inline
-    def apply(): TypographyOptions = {
+    inline def apply(): TypographyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypographyOptions]
     }
     
-    @scala.inline
-    implicit class TypographyOptionsMutableBuilder[Self <: TypographyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TypographyOptions](x: Self) {
       
-      @scala.inline
-      def setAllVariants(value: CSSProperties): Self = StObject.set(x, "allVariants", value.asInstanceOf[js.Any])
+      inline def setAllVariants(value: CSSProperties): Self = StObject.set(x, "allVariants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllVariantsUndefined: Self = StObject.set(x, "allVariants", js.undefined)
+      inline def setAllVariantsUndefined: Self = StObject.set(x, "allVariants", js.undefined)
       
-      @scala.inline
-      def setBody1(value: TypographyStyleOptions): Self = StObject.set(x, "body1", value.asInstanceOf[js.Any])
+      inline def setBody1(value: TypographyStyleOptions): Self = StObject.set(x, "body1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody1Undefined: Self = StObject.set(x, "body1", js.undefined)
+      inline def setBody1Undefined: Self = StObject.set(x, "body1", js.undefined)
       
-      @scala.inline
-      def setBody2(value: TypographyStyleOptions): Self = StObject.set(x, "body2", value.asInstanceOf[js.Any])
+      inline def setBody2(value: TypographyStyleOptions): Self = StObject.set(x, "body2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody2Undefined: Self = StObject.set(x, "body2", js.undefined)
+      inline def setBody2Undefined: Self = StObject.set(x, "body2", js.undefined)
       
-      @scala.inline
-      def setButton(value: TypographyStyleOptions): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: TypographyStyleOptions): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setCaption(value: TypographyStyleOptions): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: TypographyStyleOptions): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setDisplay1(value: TypographyStyleOptions): Self = StObject.set(x, "display1", value.asInstanceOf[js.Any])
+      inline def setDisplay1(value: TypographyStyleOptions): Self = StObject.set(x, "display1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay1Undefined: Self = StObject.set(x, "display1", js.undefined)
+      inline def setDisplay1Undefined: Self = StObject.set(x, "display1", js.undefined)
       
-      @scala.inline
-      def setDisplay2(value: TypographyStyleOptions): Self = StObject.set(x, "display2", value.asInstanceOf[js.Any])
+      inline def setDisplay2(value: TypographyStyleOptions): Self = StObject.set(x, "display2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay2Undefined: Self = StObject.set(x, "display2", js.undefined)
+      inline def setDisplay2Undefined: Self = StObject.set(x, "display2", js.undefined)
       
-      @scala.inline
-      def setDisplay3(value: TypographyStyleOptions): Self = StObject.set(x, "display3", value.asInstanceOf[js.Any])
+      inline def setDisplay3(value: TypographyStyleOptions): Self = StObject.set(x, "display3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay3Undefined: Self = StObject.set(x, "display3", js.undefined)
+      inline def setDisplay3Undefined: Self = StObject.set(x, "display3", js.undefined)
       
-      @scala.inline
-      def setDisplay4(value: TypographyStyleOptions): Self = StObject.set(x, "display4", value.asInstanceOf[js.Any])
+      inline def setDisplay4(value: TypographyStyleOptions): Self = StObject.set(x, "display4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay4Undefined: Self = StObject.set(x, "display4", js.undefined)
+      inline def setDisplay4Undefined: Self = StObject.set(x, "display4", js.undefined)
       
-      @scala.inline
-      def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
+      inline def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightLightUndefined: Self = StObject.set(x, "fontWeightLight", js.undefined)
+      inline def setFontWeightLightUndefined: Self = StObject.set(x, "fontWeightLight", js.undefined)
       
-      @scala.inline
-      def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      inline def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightMediumUndefined: Self = StObject.set(x, "fontWeightMedium", js.undefined)
+      inline def setFontWeightMediumUndefined: Self = StObject.set(x, "fontWeightMedium", js.undefined)
       
-      @scala.inline
-      def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
+      inline def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightRegularUndefined: Self = StObject.set(x, "fontWeightRegular", js.undefined)
+      inline def setFontWeightRegularUndefined: Self = StObject.set(x, "fontWeightRegular", js.undefined)
       
-      @scala.inline
-      def setH1(value: TypographyStyleOptions): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+      inline def setH1(value: TypographyStyleOptions): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
+      inline def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
       
-      @scala.inline
-      def setH2(value: TypographyStyleOptions): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+      inline def setH2(value: TypographyStyleOptions): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
+      inline def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
       
-      @scala.inline
-      def setH3(value: TypographyStyleOptions): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+      inline def setH3(value: TypographyStyleOptions): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
+      inline def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
       
-      @scala.inline
-      def setH4(value: TypographyStyleOptions): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+      inline def setH4(value: TypographyStyleOptions): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
+      inline def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
       
-      @scala.inline
-      def setH5(value: TypographyStyleOptions): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+      inline def setH5(value: TypographyStyleOptions): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
+      inline def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
       
-      @scala.inline
-      def setH6(value: TypographyStyleOptions): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+      inline def setH6(value: TypographyStyleOptions): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
+      inline def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
       
-      @scala.inline
-      def setHeadline(value: TypographyStyleOptions): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
+      inline def setHeadline(value: TypographyStyleOptions): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
+      inline def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
       
-      @scala.inline
-      def setHtmlFontSize(value: Double): Self = StObject.set(x, "htmlFontSize", value.asInstanceOf[js.Any])
+      inline def setHtmlFontSize(value: Double): Self = StObject.set(x, "htmlFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlFontSizeUndefined: Self = StObject.set(x, "htmlFontSize", js.undefined)
+      inline def setHtmlFontSizeUndefined: Self = StObject.set(x, "htmlFontSize", js.undefined)
       
-      @scala.inline
-      def setOverline(value: TypographyStyleOptions): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
+      inline def setOverline(value: TypographyStyleOptions): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlineUndefined: Self = StObject.set(x, "overline", js.undefined)
+      inline def setOverlineUndefined: Self = StObject.set(x, "overline", js.undefined)
       
-      @scala.inline
-      def setSubheading(value: TypographyStyleOptions): Self = StObject.set(x, "subheading", value.asInstanceOf[js.Any])
+      inline def setSubheading(value: TypographyStyleOptions): Self = StObject.set(x, "subheading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubheadingUndefined: Self = StObject.set(x, "subheading", js.undefined)
+      inline def setSubheadingUndefined: Self = StObject.set(x, "subheading", js.undefined)
       
-      @scala.inline
-      def setSubtitle1(value: TypographyStyleOptions): Self = StObject.set(x, "subtitle1", value.asInstanceOf[js.Any])
+      inline def setSubtitle1(value: TypographyStyleOptions): Self = StObject.set(x, "subtitle1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitle1Undefined: Self = StObject.set(x, "subtitle1", js.undefined)
+      inline def setSubtitle1Undefined: Self = StObject.set(x, "subtitle1", js.undefined)
       
-      @scala.inline
-      def setSubtitle2(value: TypographyStyleOptions): Self = StObject.set(x, "subtitle2", value.asInstanceOf[js.Any])
+      inline def setSubtitle2(value: TypographyStyleOptions): Self = StObject.set(x, "subtitle2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitle2Undefined: Self = StObject.set(x, "subtitle2", js.undefined)
+      inline def setSubtitle2Undefined: Self = StObject.set(x, "subtitle2", js.undefined)
       
-      @scala.inline
-      def setTitle(value: TypographyStyleOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: TypographyStyleOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUseNextVariants(value: Boolean): Self = StObject.set(x, "useNextVariants", value.asInstanceOf[js.Any])
+      inline def setUseNextVariants(value: Boolean): Self = StObject.set(x, "useNextVariants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNextVariantsUndefined: Self = StObject.set(x, "useNextVariants", js.undefined)
+      inline def setUseNextVariantsUndefined: Self = StObject.set(x, "useNextVariants", js.undefined)
     }
   }
   
@@ -671,8 +538,7 @@ object createTypographyMod {
   }
   object TypographyStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: ColorProperty,
       fontFamily: FontFamilyProperty,
       fontSize: FontSizeProperty[Double | String],
@@ -682,38 +548,27 @@ object createTypographyMod {
       __obj.asInstanceOf[TypographyStyle]
     }
     
-    @scala.inline
-    implicit class TypographyStyleMutableBuilder[Self <: TypographyStyle] (val x: Self) extends AnyVal {
+    extension [Self <: TypographyStyle](x: Self) {
       
-      @scala.inline
-      def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: FontSizeProperty[Double | String]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: FontSizeProperty[Double | String]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeight(value: FontWeightProperty): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: FontWeightProperty): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterSpacing(value: LetterSpacingProperty[Double | String]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      inline def setLetterSpacing(value: LetterSpacingProperty[Double | String]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
       
-      @scala.inline
-      def setLineHeight(value: LineHeightProperty[Double | String]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: LineHeightProperty[Double | String]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setTextTransform(value: TextTransformProperty): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+      inline def setTextTransform(value: TextTransformProperty): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+      inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     }
   }
   
@@ -736,56 +591,40 @@ object createTypographyMod {
   }
   object TypographyStyleOptions {
     
-    @scala.inline
-    def apply(): TypographyStyleOptions = {
+    inline def apply(): TypographyStyleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypographyStyleOptions]
     }
     
-    @scala.inline
-    implicit class TypographyStyleOptionsMutableBuilder[Self <: TypographyStyleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TypographyStyleOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: FontSizeProperty[Double | String]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: FontSizeProperty[Double | String]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontWeight(value: FontWeightProperty): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: FontWeightProperty): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setLetterSpacing(value: LetterSpacingProperty[Double | String]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      inline def setLetterSpacing(value: LetterSpacingProperty[Double | String]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
       
-      @scala.inline
-      def setLineHeight(value: LineHeightProperty[Double | String]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: LineHeightProperty[Double | String]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setTextTransform(value: TextTransformProperty): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+      inline def setTextTransform(value: TextTransformProperty): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+      inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     }
   }
   
@@ -795,17 +634,14 @@ object createTypographyMod {
   }
   object TypographyUtils {
     
-    @scala.inline
-    def apply(pxToRem: Double => String): TypographyUtils = {
+    inline def apply(pxToRem: Double => String): TypographyUtils = {
       val __obj = js.Dynamic.literal(pxToRem = js.Any.fromFunction1(pxToRem))
       __obj.asInstanceOf[TypographyUtils]
     }
     
-    @scala.inline
-    implicit class TypographyUtilsMutableBuilder[Self <: TypographyUtils] (val x: Self) extends AnyVal {
+    extension [Self <: TypographyUtils](x: Self) {
       
-      @scala.inline
-      def setPxToRem(value: Double => String): Self = StObject.set(x, "pxToRem", js.Any.fromFunction1(value))
+      inline def setPxToRem(value: Double => String): Self = StObject.set(x, "pxToRem", js.Any.fromFunction1(value))
     }
   }
 }

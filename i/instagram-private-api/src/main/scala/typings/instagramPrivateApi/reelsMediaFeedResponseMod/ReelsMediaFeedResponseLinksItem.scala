@@ -29,8 +29,7 @@ trait ReelsMediaFeedResponseLinksItem extends StObject {
 }
 object ReelsMediaFeedResponseLinksItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _package: String,
     androidClass: String,
     appInstallObjectiveInvalidationBehavior: Null,
@@ -47,37 +46,26 @@ object ReelsMediaFeedResponseLinksItem {
     __obj.asInstanceOf[ReelsMediaFeedResponseLinksItem]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponseLinksItemMutableBuilder[Self <: ReelsMediaFeedResponseLinksItem] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponseLinksItem](x: Self) {
     
-    @scala.inline
-    def setAndroidClass(value: String): Self = StObject.set(x, "androidClass", value.asInstanceOf[js.Any])
+    inline def setAndroidClass(value: String): Self = StObject.set(x, "androidClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstallObjectiveInvalidationBehavior(value: Null): Self = StObject.set(x, "appInstallObjectiveInvalidationBehavior", value.asInstanceOf[js.Any])
+    inline def setAppInstallObjectiveInvalidationBehavior(value: Null): Self = StObject.set(x, "appInstallObjectiveInvalidationBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallToActionTitle(value: String): Self = StObject.set(x, "callToActionTitle", value.asInstanceOf[js.Any])
+    inline def setCallToActionTitle(value: String): Self = StObject.set(x, "callToActionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeeplinkUri(value: String): Self = StObject.set(x, "deeplinkUri", value.asInstanceOf[js.Any])
+    inline def setDeeplinkUri(value: String): Self = StObject.set(x, "deeplinkUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgUserId(value: String): Self = StObject.set(x, "igUserId", value.asInstanceOf[js.Any])
+    inline def setIgUserId(value: String): Self = StObject.set(x, "igUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadGenFormId(value: String): Self = StObject.set(x, "leadGenFormId", value.asInstanceOf[js.Any])
+    inline def setLeadGenFormId(value: String): Self = StObject.set(x, "leadGenFormId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkType(value: Double): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+    inline def setLinkType(value: Double): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUri(value: Null): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: Null): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebUri(value: String): Self = StObject.set(x, "webUri", value.asInstanceOf[js.Any])
+    inline def setWebUri(value: String): Self = StObject.set(x, "webUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

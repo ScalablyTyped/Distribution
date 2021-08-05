@@ -8,6 +8,5 @@ object passportDiscordStrings {
   
   @js.native
   sealed trait discord extends StObject
-  @scala.inline
-  def discord: discord = "discord".asInstanceOf[discord]
+  inline def discord: discord = "discord".asInstanceOf[discord]
 }

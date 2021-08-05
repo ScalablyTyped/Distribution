@@ -12,19 +12,15 @@ trait GetFeaturedPlaylistsOptions
 }
 object GetFeaturedPlaylistsOptions {
   
-  @scala.inline
-  def apply(): GetFeaturedPlaylistsOptions = {
+  inline def apply(): GetFeaturedPlaylistsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFeaturedPlaylistsOptions]
   }
   
-  @scala.inline
-  implicit class GetFeaturedPlaylistsOptionsMutableBuilder[Self <: GetFeaturedPlaylistsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetFeaturedPlaylistsOptions](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait AngularServeOptions
 }
 object AngularServeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `--`: js.Array[String],
     address: String,
     devapp: Boolean,
@@ -39,37 +38,26 @@ object AngularServeOptions {
     __obj.asInstanceOf[AngularServeOptions]
   }
   
-  @scala.inline
-  implicit class AngularServeOptionsMutableBuilder[Self <: AngularServeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AngularServeOptions](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setConsolelogs(value: Boolean): Self = StObject.set(x, "consolelogs", value.asInstanceOf[js.Any])
+    inline def setConsolelogs(value: Boolean): Self = StObject.set(x, "consolelogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsolelogsPort(value: Double): Self = StObject.set(x, "consolelogsPort", value.asInstanceOf[js.Any])
+    inline def setConsolelogsPort(value: Double): Self = StObject.set(x, "consolelogsPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsolelogsPortUndefined: Self = StObject.set(x, "consolelogsPort", js.undefined)
+    inline def setConsolelogsPortUndefined: Self = StObject.set(x, "consolelogsPort", js.undefined)
     
-    @scala.inline
-    def setConsolelogsUndefined: Self = StObject.set(x, "consolelogs", js.undefined)
+    inline def setConsolelogsUndefined: Self = StObject.set(x, "consolelogs", js.undefined)
     
-    @scala.inline
-    def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
+    inline def setSourcemaps(value: Boolean): Self = StObject.set(x, "sourcemaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
+    inline def setSourcemapsUndefined: Self = StObject.set(x, "sourcemaps", js.undefined)
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
   }
 }

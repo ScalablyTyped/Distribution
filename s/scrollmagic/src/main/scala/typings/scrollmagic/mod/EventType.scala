@@ -20,36 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventType extends StObject
 object EventType {
   
-  @scala.inline
-  def add: typings.scrollmagic.scrollmagicStrings.add = "add".asInstanceOf[typings.scrollmagic.scrollmagicStrings.add]
+  inline def add: typings.scrollmagic.scrollmagicStrings.add = "add".asInstanceOf[typings.scrollmagic.scrollmagicStrings.add]
   
-  @scala.inline
-  def change: typings.scrollmagic.scrollmagicStrings.change = "change".asInstanceOf[typings.scrollmagic.scrollmagicStrings.change]
+  inline def change: typings.scrollmagic.scrollmagicStrings.change = "change".asInstanceOf[typings.scrollmagic.scrollmagicStrings.change]
   
-  @scala.inline
-  def destroy: typings.scrollmagic.scrollmagicStrings.destroy = "destroy".asInstanceOf[typings.scrollmagic.scrollmagicStrings.destroy]
+  inline def destroy: typings.scrollmagic.scrollmagicStrings.destroy = "destroy".asInstanceOf[typings.scrollmagic.scrollmagicStrings.destroy]
   
-  @scala.inline
-  def end: typings.scrollmagic.scrollmagicStrings.end = "end".asInstanceOf[typings.scrollmagic.scrollmagicStrings.end]
+  inline def end: typings.scrollmagic.scrollmagicStrings.end = "end".asInstanceOf[typings.scrollmagic.scrollmagicStrings.end]
   
-  @scala.inline
-  def enter: typings.scrollmagic.scrollmagicStrings.enter = "enter".asInstanceOf[typings.scrollmagic.scrollmagicStrings.enter]
+  inline def enter: typings.scrollmagic.scrollmagicStrings.enter = "enter".asInstanceOf[typings.scrollmagic.scrollmagicStrings.enter]
   
-  @scala.inline
-  def leave: typings.scrollmagic.scrollmagicStrings.leave = "leave".asInstanceOf[typings.scrollmagic.scrollmagicStrings.leave]
+  inline def leave: typings.scrollmagic.scrollmagicStrings.leave = "leave".asInstanceOf[typings.scrollmagic.scrollmagicStrings.leave]
   
-  @scala.inline
-  def progress: typings.scrollmagic.scrollmagicStrings.progress = "progress".asInstanceOf[typings.scrollmagic.scrollmagicStrings.progress]
+  inline def progress: typings.scrollmagic.scrollmagicStrings.progress = "progress".asInstanceOf[typings.scrollmagic.scrollmagicStrings.progress]
   
-  @scala.inline
-  def remove: typings.scrollmagic.scrollmagicStrings.remove = "remove".asInstanceOf[typings.scrollmagic.scrollmagicStrings.remove]
+  inline def remove: typings.scrollmagic.scrollmagicStrings.remove = "remove".asInstanceOf[typings.scrollmagic.scrollmagicStrings.remove]
   
-  @scala.inline
-  def shift: typings.scrollmagic.scrollmagicStrings.shift = "shift".asInstanceOf[typings.scrollmagic.scrollmagicStrings.shift]
+  inline def shift: typings.scrollmagic.scrollmagicStrings.shift = "shift".asInstanceOf[typings.scrollmagic.scrollmagicStrings.shift]
   
-  @scala.inline
-  def start: typings.scrollmagic.scrollmagicStrings.start = "start".asInstanceOf[typings.scrollmagic.scrollmagicStrings.start]
+  inline def start: typings.scrollmagic.scrollmagicStrings.start = "start".asInstanceOf[typings.scrollmagic.scrollmagicStrings.start]
   
-  @scala.inline
-  def update: typings.scrollmagic.scrollmagicStrings.update = "update".asInstanceOf[typings.scrollmagic.scrollmagicStrings.update]
+  inline def update: typings.scrollmagic.scrollmagicStrings.update = "update".asInstanceOf[typings.scrollmagic.scrollmagicStrings.update]
 }

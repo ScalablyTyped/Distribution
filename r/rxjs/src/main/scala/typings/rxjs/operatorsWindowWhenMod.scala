@@ -10,8 +10,7 @@ object operatorsWindowWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def windowWhen[T](
+  inline def windowWhen[T](
     closingSelector: js.Function0[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
     ]

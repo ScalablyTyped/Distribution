@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLAppBehavior")
 @js.native
-class HTMLAppBehavior protected ()
+/* private */ class HTMLAppBehavior ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLAppBehavior {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLAppBehavior_typekey")
   var MSHTMLDotHTMLAppBehavior_typekey: typings.activexMshtml.MSHTML.HTMLAppBehavior = js.native
   

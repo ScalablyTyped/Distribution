@@ -36,8 +36,7 @@ trait IgGridModalDialogMethods extends StObject {
 }
 object IgGridModalDialogMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: () => Unit,
@@ -52,34 +51,24 @@ object IgGridModalDialogMethods {
     __obj.asInstanceOf[IgGridModalDialogMethods]
   }
   
-  @scala.inline
-  implicit class IgGridModalDialogMethodsMutableBuilder[Self <: IgGridModalDialogMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridModalDialogMethods](x: Self) {
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
+    inline def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloseModalDialog(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "closeModalDialog", js.Any.fromFunction2(value))
+    inline def setCloseModalDialog(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "closeModalDialog", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCaptionButtonContainer(value: () => Unit): Self = StObject.set(x, "getCaptionButtonContainer", js.Any.fromFunction0(value))
+    inline def setGetCaptionButtonContainer(value: () => Unit): Self = StObject.set(x, "getCaptionButtonContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContent(value: () => Unit): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+    inline def setGetContent(value: () => Unit): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFooter(value: () => Unit): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
+    inline def setGetFooter(value: () => Unit): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenModalDialog(value: () => Unit): Self = StObject.set(x, "openModalDialog", js.Any.fromFunction0(value))
+    inline def setOpenModalDialog(value: () => Unit): Self = StObject.set(x, "openModalDialog", js.Any.fromFunction0(value))
   }
 }

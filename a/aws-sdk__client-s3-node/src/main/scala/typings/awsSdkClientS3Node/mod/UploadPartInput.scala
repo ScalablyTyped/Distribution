@@ -9,8 +9,7 @@ trait UploadPartInput[StreamType]
      with typings.awsSdkClientS3Node.typesUploadPartInputMod.UploadPartInput[StreamType]
 object UploadPartInput {
   
-  @scala.inline
-  def apply[StreamType](Bucket: String, Key: String, PartNumber: Double, UploadId: String): UploadPartInput[StreamType] = {
+  inline def apply[StreamType](Bucket: String, Key: String, PartNumber: Double, UploadId: String): UploadPartInput[StreamType] = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], PartNumber = PartNumber.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPartInput[StreamType]]
   }

@@ -33,19 +33,15 @@ trait XDataPilotDataLayoutFieldSupplier extends StObject {
 }
 object XDataPilotDataLayoutFieldSupplier {
   
-  @scala.inline
-  def apply(DataLayoutField: XDataPilotField, getDataLayoutField: () => XDataPilotField): XDataPilotDataLayoutFieldSupplier = {
+  inline def apply(DataLayoutField: XDataPilotField, getDataLayoutField: () => XDataPilotField): XDataPilotDataLayoutFieldSupplier = {
     val __obj = js.Dynamic.literal(DataLayoutField = DataLayoutField.asInstanceOf[js.Any], getDataLayoutField = js.Any.fromFunction0(getDataLayoutField))
     __obj.asInstanceOf[XDataPilotDataLayoutFieldSupplier]
   }
   
-  @scala.inline
-  implicit class XDataPilotDataLayoutFieldSupplierMutableBuilder[Self <: XDataPilotDataLayoutFieldSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotDataLayoutFieldSupplier](x: Self) {
     
-    @scala.inline
-    def setDataLayoutField(value: XDataPilotField): Self = StObject.set(x, "DataLayoutField", value.asInstanceOf[js.Any])
+    inline def setDataLayoutField(value: XDataPilotField): Self = StObject.set(x, "DataLayoutField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDataLayoutField(value: () => XDataPilotField): Self = StObject.set(x, "getDataLayoutField", js.Any.fromFunction0(value))
+    inline def setGetDataLayoutField(value: () => XDataPilotField): Self = StObject.set(x, "getDataLayoutField", js.Any.fromFunction0(value))
   }
 }

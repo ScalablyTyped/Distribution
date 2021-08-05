@@ -12,25 +12,19 @@ trait MultiSelectAnimationClose extends StObject {
 }
 object MultiSelectAnimationClose {
   
-  @scala.inline
-  def apply(): MultiSelectAnimationClose = {
+  inline def apply(): MultiSelectAnimationClose = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiSelectAnimationClose]
   }
   
-  @scala.inline
-  implicit class MultiSelectAnimationCloseMutableBuilder[Self <: MultiSelectAnimationClose] (val x: Self) extends AnyVal {
+  extension [Self <: MultiSelectAnimationClose](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEffects(value: String): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    inline def setEffects(value: String): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
+    inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
   }
 }

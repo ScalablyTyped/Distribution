@@ -23,28 +23,21 @@ trait SchemaServerSecuritySettingsSelector extends StObject {
 }
 object SchemaServerSecuritySettingsSelector {
   
-  @scala.inline
-  def apply(): SchemaServerSecuritySettingsSelector = {
+  inline def apply(): SchemaServerSecuritySettingsSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServerSecuritySettingsSelector]
   }
   
-  @scala.inline
-  implicit class SchemaServerSecuritySettingsSelectorMutableBuilder[Self <: SchemaServerSecuritySettingsSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServerSecuritySettingsSelector](x: Self) {
     
-    @scala.inline
-    def setLabelMatches(value: js.Array[SchemaMetadataFilterLabelMatch]): Self = StObject.set(x, "labelMatches", value.asInstanceOf[js.Any])
+    inline def setLabelMatches(value: js.Array[SchemaMetadataFilterLabelMatch]): Self = StObject.set(x, "labelMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelMatchesUndefined: Self = StObject.set(x, "labelMatches", js.undefined)
+    inline def setLabelMatchesUndefined: Self = StObject.set(x, "labelMatches", js.undefined)
     
-    @scala.inline
-    def setLabelMatchesVarargs(value: SchemaMetadataFilterLabelMatch*): Self = StObject.set(x, "labelMatches", js.Array(value :_*))
+    inline def setLabelMatchesVarargs(value: SchemaMetadataFilterLabelMatch*): Self = StObject.set(x, "labelMatches", js.Array(value :_*))
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

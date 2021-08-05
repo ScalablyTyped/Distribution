@@ -10,8 +10,7 @@ trait ReEncryptOutput
      with typings.awsSdkClientKmsNode.typesReEncryptOutputMod.ReEncryptOutput
 object ReEncryptOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ReEncryptOutput = {
+  inline def apply($metadata: ResponseMetadata): ReEncryptOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReEncryptOutput]
   }

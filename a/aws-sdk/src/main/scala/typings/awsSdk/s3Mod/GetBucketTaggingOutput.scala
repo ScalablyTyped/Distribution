@@ -13,19 +13,15 @@ trait GetBucketTaggingOutput extends StObject {
 }
 object GetBucketTaggingOutput {
   
-  @scala.inline
-  def apply(TagSet: TagSet): GetBucketTaggingOutput = {
+  inline def apply(TagSet: TagSet): GetBucketTaggingOutput = {
     val __obj = js.Dynamic.literal(TagSet = TagSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketTaggingOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketTaggingOutputMutableBuilder[Self <: GetBucketTaggingOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketTaggingOutput](x: Self) {
     
-    @scala.inline
-    def setTagSet(value: TagSet): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
+    inline def setTagSet(value: TagSet): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSetVarargs(value: Tag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
+    inline def setTagSetVarargs(value: Tag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
   }
 }

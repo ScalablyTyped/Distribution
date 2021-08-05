@@ -13,19 +13,15 @@ trait GroupedItemsT
 }
 object GroupedItemsT {
   
-  @scala.inline
-  def apply(__ungrouped: ArrayItemsT): GroupedItemsT = {
+  inline def apply(__ungrouped: ArrayItemsT): GroupedItemsT = {
     val __obj = js.Dynamic.literal(__ungrouped = __ungrouped.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupedItemsT]
   }
   
-  @scala.inline
-  implicit class GroupedItemsTMutableBuilder[Self <: GroupedItemsT] (val x: Self) extends AnyVal {
+  extension [Self <: GroupedItemsT](x: Self) {
     
-    @scala.inline
-    def set__ungrouped(value: ArrayItemsT): Self = StObject.set(x, "__ungrouped", value.asInstanceOf[js.Any])
+    inline def set__ungrouped(value: ArrayItemsT): Self = StObject.set(x, "__ungrouped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__ungroupedVarargs(value: ItemT*): Self = StObject.set(x, "__ungrouped", js.Array(value :_*))
+    inline def set__ungroupedVarargs(value: ItemT*): Self = StObject.set(x, "__ungrouped", js.Array(value :_*))
   }
 }

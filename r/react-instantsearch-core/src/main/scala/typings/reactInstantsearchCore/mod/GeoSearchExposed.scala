@@ -10,19 +10,15 @@ trait GeoSearchExposed extends StObject {
 }
 object GeoSearchExposed {
   
-  @scala.inline
-  def apply(): GeoSearchExposed = {
+  inline def apply(): GeoSearchExposed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoSearchExposed]
   }
   
-  @scala.inline
-  implicit class GeoSearchExposedMutableBuilder[Self <: GeoSearchExposed] (val x: Self) extends AnyVal {
+  extension [Self <: GeoSearchExposed](x: Self) {
     
-    @scala.inline
-    def setDefaultRefinement(value: NESW): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
+    inline def setDefaultRefinement(value: NESW): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
+    inline def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
   }
 }

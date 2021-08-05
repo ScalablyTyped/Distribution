@@ -12,19 +12,15 @@ trait EditResponseCookie extends StObject {
 }
 object EditResponseCookie {
   
-  @scala.inline
-  def apply(filter: ResponseCookie, modification: ResponseCookie): EditResponseCookie = {
+  inline def apply(filter: ResponseCookie, modification: ResponseCookie): EditResponseCookie = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], modification = modification.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditResponseCookie]
   }
   
-  @scala.inline
-  implicit class EditResponseCookieMutableBuilder[Self <: EditResponseCookie] (val x: Self) extends AnyVal {
+  extension [Self <: EditResponseCookie](x: Self) {
     
-    @scala.inline
-    def setFilter(value: ResponseCookie): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: ResponseCookie): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModification(value: ResponseCookie): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
+    inline def setModification(value: ResponseCookie): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
   }
 }

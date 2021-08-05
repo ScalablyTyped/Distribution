@@ -21,13 +21,13 @@ object componentResolverMod {
   @js.native
   class ComponentResolver () extends StObject {
     
-    var agComponentUtils: js.Any = js.native
+    /* private */ var agComponentUtils: js.Any = js.native
     
-    var componentMetadataProvider: js.Any = js.native
+    /* private */ var componentMetadataProvider: js.Any = js.native
     
-    var componentProvider: js.Any = js.native
+    /* private */ var componentProvider: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /**
       * This method creates a component given everything needed to guess what sort of component needs to be instantiated
@@ -129,7 +129,7 @@ object componentResolverMod {
       customInitParamsCb: js.Function2[/* params */ js.Any, /* component */ A, js.Any]
     ): A = js.native
     
-    var frameworkComponentWrapper: js.Any = js.native
+    /* private */ var frameworkComponentWrapper: js.Any = js.native
     
     /**
       * This method returns the underlying representation of the component to be created. ie for Javascript the
@@ -156,9 +156,9 @@ object componentResolverMod {
       defaultComponentName: String
     ): ResolvedComponent[A, B] = js.native
     
-    var gridOptions: js.Any = js.native
+    /* private */ var gridOptions: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def initialiseComponent[A](component: js.Any, agGridParams: js.Any, customInitParamsCb: js.Any): js.Any = js.native
     
@@ -261,26 +261,20 @@ object componentResolverMod {
   }
   object DynamicComponentDef {
     
-    @scala.inline
-    def apply(): DynamicComponentDef = {
+    inline def apply(): DynamicComponentDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DynamicComponentDef]
     }
     
-    @scala.inline
-    implicit class DynamicComponentDefMutableBuilder[Self <: DynamicComponentDef] (val x: Self) extends AnyVal {
+    extension [Self <: DynamicComponentDef](x: Self) {
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
   }
   
@@ -305,56 +299,40 @@ object componentResolverMod {
   }
   object DynamicComponentParams {
     
-    @scala.inline
-    def apply(api: GridApi, columnApi: ColumnApi): DynamicComponentParams = {
+    inline def apply(api: GridApi, columnApi: ColumnApi): DynamicComponentParams = {
       val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
       __obj.asInstanceOf[DynamicComponentParams]
     }
     
-    @scala.inline
-    implicit class DynamicComponentParamsMutableBuilder[Self <: DynamicComponentParams] (val x: Self) extends AnyVal {
+    extension [Self <: DynamicComponentParams](x: Self) {
       
-      @scala.inline
-      def set$scope(value: js.Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
+      inline def set$scope(value: js.Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$scopeUndefined: Self = StObject.set(x, "$scope", js.undefined)
+      inline def set$scopeUndefined: Self = StObject.set(x, "$scope", js.undefined)
       
-      @scala.inline
-      def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: GridApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColDef(value: ColDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
+      inline def setColDef(value: ColDef): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColDefUndefined: Self = StObject.set(x, "colDef", js.undefined)
+      inline def setColDefUndefined: Self = StObject.set(x, "colDef", js.undefined)
       
-      @scala.inline
-      def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
+      inline def setColumnApi(value: ColumnApi): Self = StObject.set(x, "columnApi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      @scala.inline
-      def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+      inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     }
   }
   
@@ -370,8 +348,7 @@ object componentResolverMod {
   }
   object ResolvedComponent {
     
-    @scala.inline
-    def apply[A /* <: IComponent[js.Any] & B */, B](
+    inline def apply[A /* <: IComponent[js.Any] & B */, B](
       component: (`1`[A, B]) | InstantiableB[B],
       dynamicParams: js.Any,
       source: ComponentSource,
@@ -382,20 +359,15 @@ object componentResolverMod {
       __obj.asInstanceOf[ResolvedComponent[A, B]]
     }
     
-    @scala.inline
-    implicit class ResolvedComponentMutableBuilder[Self <: ResolvedComponent[?, ?], A /* <: IComponent[js.Any] & B */, B] (val x: Self & (ResolvedComponent[A, B])) extends AnyVal {
+    extension [Self <: ResolvedComponent[?, ?], A /* <: IComponent[js.Any] & B */, B](x: Self & (ResolvedComponent[A, B])) {
       
-      @scala.inline
-      def setComponent(value: (`1`[A, B]) | InstantiableB[B]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: (`1`[A, B]) | InstantiableB[B]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicParams(value: js.Any): Self = StObject.set(x, "dynamicParams", value.asInstanceOf[js.Any])
+      inline def setDynamicParams(value: js.Any): Self = StObject.set(x, "dynamicParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: ComponentSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: ComponentSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ComponentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ComponentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

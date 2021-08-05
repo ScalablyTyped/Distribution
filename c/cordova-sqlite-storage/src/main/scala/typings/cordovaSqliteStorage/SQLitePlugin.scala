@@ -67,29 +67,22 @@ object SQLitePlugin {
   }
   object DeleteArgs {
     
-    @scala.inline
-    def apply(name: String): DeleteArgs = {
+    inline def apply(name: String): DeleteArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteArgs]
     }
     
-    @scala.inline
-    implicit class DeleteArgsMutableBuilder[Self <: DeleteArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteArgs](x: Self) {
       
-      @scala.inline
-      def setIosDatabaseLocation(value: String): Self = StObject.set(x, "iosDatabaseLocation", value.asInstanceOf[js.Any])
+      inline def setIosDatabaseLocation(value: String): Self = StObject.set(x, "iosDatabaseLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIosDatabaseLocationUndefined: Self = StObject.set(x, "iosDatabaseLocation", js.undefined)
+      inline def setIosDatabaseLocationUndefined: Self = StObject.set(x, "iosDatabaseLocation", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,47 +106,34 @@ object SQLitePlugin {
   }
   object OpenArgs {
     
-    @scala.inline
-    def apply(name: String): OpenArgs = {
+    inline def apply(name: String): OpenArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenArgs]
     }
     
-    @scala.inline
-    implicit class OpenArgsMutableBuilder[Self <: OpenArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenArgs](x: Self) {
       
-      @scala.inline
-      def setAndroidDatabaseImplementation(value: Double): Self = StObject.set(x, "androidDatabaseImplementation", value.asInstanceOf[js.Any])
+      inline def setAndroidDatabaseImplementation(value: Double): Self = StObject.set(x, "androidDatabaseImplementation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidDatabaseImplementationUndefined: Self = StObject.set(x, "androidDatabaseImplementation", js.undefined)
+      inline def setAndroidDatabaseImplementationUndefined: Self = StObject.set(x, "androidDatabaseImplementation", js.undefined)
       
-      @scala.inline
-      def setAndroidLockWorkaround(value: Double): Self = StObject.set(x, "androidLockWorkaround", value.asInstanceOf[js.Any])
+      inline def setAndroidLockWorkaround(value: Double): Self = StObject.set(x, "androidLockWorkaround", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidLockWorkaroundUndefined: Self = StObject.set(x, "androidLockWorkaround", js.undefined)
+      inline def setAndroidLockWorkaroundUndefined: Self = StObject.set(x, "androidLockWorkaround", js.undefined)
       
-      @scala.inline
-      def setCreateFromLocation(value: Double): Self = StObject.set(x, "createFromLocation", value.asInstanceOf[js.Any])
+      inline def setCreateFromLocation(value: Double): Self = StObject.set(x, "createFromLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFromLocationUndefined: Self = StObject.set(x, "createFromLocation", js.undefined)
+      inline def setCreateFromLocationUndefined: Self = StObject.set(x, "createFromLocation", js.undefined)
       
-      @scala.inline
-      def setIosDatabaseLocation(value: String): Self = StObject.set(x, "iosDatabaseLocation", value.asInstanceOf[js.Any])
+      inline def setIosDatabaseLocation(value: String): Self = StObject.set(x, "iosDatabaseLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIosDatabaseLocationUndefined: Self = StObject.set(x, "iosDatabaseLocation", js.undefined)
+      inline def setIosDatabaseLocationUndefined: Self = StObject.set(x, "iosDatabaseLocation", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,26 +147,20 @@ object SQLitePlugin {
   }
   object Results {
     
-    @scala.inline
-    def apply(rows: Item, rowsAffected: Double): Results = {
+    inline def apply(rows: Item, rowsAffected: Double): Results = {
       val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any], rowsAffected = rowsAffected.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
     
-    @scala.inline
-    implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+    extension [Self <: Results](x: Self) {
       
-      @scala.inline
-      def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
+      inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
+      inline def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
       
-      @scala.inline
-      def setRows(value: Item): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Item): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
+      inline def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
     }
   }
   

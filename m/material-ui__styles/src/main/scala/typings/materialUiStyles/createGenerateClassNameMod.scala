@@ -12,8 +12,6 @@ object createGenerateClassNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[GenerateId]
-  @scala.inline
-  def default(options: GenerateClassNameOptions): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[GenerateId]
+  inline def default(): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[GenerateId]
+  inline def default(options: GenerateClassNameOptions): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[GenerateId]
 }

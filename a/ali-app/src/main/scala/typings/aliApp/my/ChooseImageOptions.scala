@@ -21,25 +21,19 @@ trait ChooseImageOptions
 }
 object ChooseImageOptions {
   
-  @scala.inline
-  def apply(count: Double, sourceType: js.Array[ImageSourceType], success: ApFilePaths => Unit): ChooseImageOptions = {
+  inline def apply(count: Double, sourceType: js.Array[ImageSourceType], success: ApFilePaths => Unit): ChooseImageOptions = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChooseImageOptions]
   }
   
-  @scala.inline
-  implicit class ChooseImageOptionsMutableBuilder[Self <: ChooseImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseImageOptions](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceType(value: js.Array[ImageSourceType]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: js.Array[ImageSourceType]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: ImageSourceType*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: ApFilePaths => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: ApFilePaths => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

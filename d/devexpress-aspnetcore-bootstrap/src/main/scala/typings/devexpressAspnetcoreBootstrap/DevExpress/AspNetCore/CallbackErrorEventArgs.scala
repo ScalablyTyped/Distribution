@@ -14,19 +14,15 @@ trait CallbackErrorEventArgs
 }
 object CallbackErrorEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, message: String, sender: Control): CallbackErrorEventArgs = {
+  inline def apply(handled: Boolean, message: String, sender: Control): CallbackErrorEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackErrorEventArgs]
   }
   
-  @scala.inline
-  implicit class CallbackErrorEventArgsMutableBuilder[Self <: CallbackErrorEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackErrorEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

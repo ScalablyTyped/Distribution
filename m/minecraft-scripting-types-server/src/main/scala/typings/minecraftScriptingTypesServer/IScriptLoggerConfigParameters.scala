@@ -29,22 +29,17 @@ trait IScriptLoggerConfigParameters extends StObject {
 }
 object IScriptLoggerConfigParameters {
   
-  @scala.inline
-  def apply(log_errors: Boolean, log_information: Boolean, log_warnings: Boolean): IScriptLoggerConfigParameters = {
+  inline def apply(log_errors: Boolean, log_information: Boolean, log_warnings: Boolean): IScriptLoggerConfigParameters = {
     val __obj = js.Dynamic.literal(log_errors = log_errors.asInstanceOf[js.Any], log_information = log_information.asInstanceOf[js.Any], log_warnings = log_warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[IScriptLoggerConfigParameters]
   }
   
-  @scala.inline
-  implicit class IScriptLoggerConfigParametersMutableBuilder[Self <: IScriptLoggerConfigParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IScriptLoggerConfigParameters](x: Self) {
     
-    @scala.inline
-    def setLog_errors(value: Boolean): Self = StObject.set(x, "log_errors", value.asInstanceOf[js.Any])
+    inline def setLog_errors(value: Boolean): Self = StObject.set(x, "log_errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_information(value: Boolean): Self = StObject.set(x, "log_information", value.asInstanceOf[js.Any])
+    inline def setLog_information(value: Boolean): Self = StObject.set(x, "log_information", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_warnings(value: Boolean): Self = StObject.set(x, "log_warnings", value.asInstanceOf[js.Any])
+    inline def setLog_warnings(value: Boolean): Self = StObject.set(x, "log_warnings", value.asInstanceOf[js.Any])
   }
 }

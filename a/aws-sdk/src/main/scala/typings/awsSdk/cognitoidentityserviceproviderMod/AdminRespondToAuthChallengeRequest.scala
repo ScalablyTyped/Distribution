@@ -48,52 +48,37 @@ trait AdminRespondToAuthChallengeRequest extends StObject {
 }
 object AdminRespondToAuthChallengeRequest {
   
-  @scala.inline
-  def apply(ChallengeName: ChallengeNameType, ClientId: ClientIdType, UserPoolId: UserPoolIdType): AdminRespondToAuthChallengeRequest = {
+  inline def apply(ChallengeName: ChallengeNameType, ClientId: ClientIdType, UserPoolId: UserPoolIdType): AdminRespondToAuthChallengeRequest = {
     val __obj = js.Dynamic.literal(ChallengeName = ChallengeName.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminRespondToAuthChallengeRequest]
   }
   
-  @scala.inline
-  implicit class AdminRespondToAuthChallengeRequestMutableBuilder[Self <: AdminRespondToAuthChallengeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminRespondToAuthChallengeRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
+    inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
+    inline def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
     
-    @scala.inline
-    def setChallengeName(value: ChallengeNameType): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
+    inline def setChallengeName(value: ChallengeNameType): Self = StObject.set(x, "ChallengeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeResponses(value: ChallengeResponsesType): Self = StObject.set(x, "ChallengeResponses", value.asInstanceOf[js.Any])
+    inline def setChallengeResponses(value: ChallengeResponsesType): Self = StObject.set(x, "ChallengeResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeResponsesUndefined: Self = StObject.set(x, "ChallengeResponses", js.undefined)
+    inline def setChallengeResponsesUndefined: Self = StObject.set(x, "ChallengeResponses", js.undefined)
     
-    @scala.inline
-    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
-    @scala.inline
-    def setContextData(value: ContextDataType): Self = StObject.set(x, "ContextData", value.asInstanceOf[js.Any])
+    inline def setContextData(value: ContextDataType): Self = StObject.set(x, "ContextData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextDataUndefined: Self = StObject.set(x, "ContextData", js.undefined)
+    inline def setContextDataUndefined: Self = StObject.set(x, "ContextData", js.undefined)
     
-    @scala.inline
-    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

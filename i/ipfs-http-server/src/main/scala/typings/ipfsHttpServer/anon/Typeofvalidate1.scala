@@ -12,19 +12,15 @@ trait Typeofvalidate1 extends StObject {
 }
 object Typeofvalidate1 {
   
-  @scala.inline
-  def apply(options_3: Typeofoptions3, query_1: js.Any): Typeofvalidate1 = {
+  inline def apply(options_3: Typeofoptions3, query_1: js.Any): Typeofvalidate1 = {
     val __obj = js.Dynamic.literal(options_3 = options_3.asInstanceOf[js.Any], query_1 = query_1.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofvalidate1]
   }
   
-  @scala.inline
-  implicit class Typeofvalidate1MutableBuilder[Self <: Typeofvalidate1] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofvalidate1](x: Self) {
     
-    @scala.inline
-    def setOptions_3(value: Typeofoptions3): Self = StObject.set(x, "options_3", value.asInstanceOf[js.Any])
+    inline def setOptions_3(value: Typeofoptions3): Self = StObject.set(x, "options_3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery_1(value: js.Any): Self = StObject.set(x, "query_1", value.asInstanceOf[js.Any])
+    inline def setQuery_1(value: js.Any): Self = StObject.set(x, "query_1", value.asInstanceOf[js.Any])
   }
 }

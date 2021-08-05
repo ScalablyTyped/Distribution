@@ -28,28 +28,21 @@ trait SchemaAuditLogConfig extends StObject {
 }
 object SchemaAuditLogConfig {
   
-  @scala.inline
-  def apply(): SchemaAuditLogConfig = {
+  inline def apply(): SchemaAuditLogConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuditLogConfig]
   }
   
-  @scala.inline
-  implicit class SchemaAuditLogConfigMutableBuilder[Self <: SchemaAuditLogConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuditLogConfig](x: Self) {
     
-    @scala.inline
-    def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
+    inline def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
+    inline def setExemptedMembersUndefined: Self = StObject.set(x, "exemptedMembers", js.undefined)
     
-    @scala.inline
-    def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
+    inline def setExemptedMembersVarargs(value: String*): Self = StObject.set(x, "exemptedMembers", js.Array(value :_*))
     
-    @scala.inline
-    def setLogType(value: String): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
+    inline def setLogType(value: String): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTypeUndefined: Self = StObject.set(x, "logType", js.undefined)
+    inline def setLogTypeUndefined: Self = StObject.set(x, "logType", js.undefined)
   }
 }

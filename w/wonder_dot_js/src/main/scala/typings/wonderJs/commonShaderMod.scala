@@ -22,7 +22,6 @@ object commonShaderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): CommonShader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommonShader]
+    inline def create(): CommonShader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommonShader]
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListenTargetOptions extends StObject
 object ListenTargetOptions {
   
-  @scala.inline
-  def body: typings.ionicons.ioniconsStrings.body = "body".asInstanceOf[typings.ionicons.ioniconsStrings.body]
+  inline def body: typings.ionicons.ioniconsStrings.body = "body".asInstanceOf[typings.ionicons.ioniconsStrings.body]
   
-  @scala.inline
-  def document: typings.ionicons.ioniconsStrings.document = "document".asInstanceOf[typings.ionicons.ioniconsStrings.document]
+  inline def document: typings.ionicons.ioniconsStrings.document = "document".asInstanceOf[typings.ionicons.ioniconsStrings.document]
   
-  @scala.inline
-  def parent: typings.ionicons.ioniconsStrings.parent = "parent".asInstanceOf[typings.ionicons.ioniconsStrings.parent]
+  inline def parent: typings.ionicons.ioniconsStrings.parent = "parent".asInstanceOf[typings.ionicons.ioniconsStrings.parent]
   
-  @scala.inline
-  def window: typings.ionicons.ioniconsStrings.window = "window".asInstanceOf[typings.ionicons.ioniconsStrings.window]
+  inline def window: typings.ionicons.ioniconsStrings.window = "window".asInstanceOf[typings.ionicons.ioniconsStrings.window]
 }

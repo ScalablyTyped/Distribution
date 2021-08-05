@@ -10,16 +10,13 @@ trait CountableQuery[T] extends StObject {
 }
 object CountableQuery {
   
-  @scala.inline
-  def apply[T](count: () => ExecutableQuery[T]): CountableQuery[T] = {
+  inline def apply[T](count: () => ExecutableQuery[T]): CountableQuery[T] = {
     val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count))
     __obj.asInstanceOf[CountableQuery[T]]
   }
   
-  @scala.inline
-  implicit class CountableQueryMutableBuilder[Self <: CountableQuery[?], T] (val x: Self & CountableQuery[T]) extends AnyVal {
+  extension [Self <: CountableQuery[?], T](x: Self & CountableQuery[T]) {
     
-    @scala.inline
-    def setCount(value: () => ExecutableQuery[T]): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+    inline def setCount(value: () => ExecutableQuery[T]): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
   }
 }

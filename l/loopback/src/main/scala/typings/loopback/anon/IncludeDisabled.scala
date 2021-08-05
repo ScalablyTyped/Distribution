@@ -10,16 +10,13 @@ trait IncludeDisabled extends StObject {
 }
 object IncludeDisabled {
   
-  @scala.inline
-  def apply(includeDisabled: Boolean): IncludeDisabled = {
+  inline def apply(includeDisabled: Boolean): IncludeDisabled = {
     val __obj = js.Dynamic.literal(includeDisabled = includeDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeDisabled]
   }
   
-  @scala.inline
-  implicit class IncludeDisabledMutableBuilder[Self <: IncludeDisabled] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeDisabled](x: Self) {
     
-    @scala.inline
-    def setIncludeDisabled(value: Boolean): Self = StObject.set(x, "includeDisabled", value.asInstanceOf[js.Any])
+    inline def setIncludeDisabled(value: Boolean): Self = StObject.set(x, "includeDisabled", value.asInstanceOf[js.Any])
   }
 }

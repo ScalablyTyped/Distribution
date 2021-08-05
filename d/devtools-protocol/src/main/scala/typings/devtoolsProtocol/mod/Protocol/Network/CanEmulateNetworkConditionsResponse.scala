@@ -13,16 +13,13 @@ trait CanEmulateNetworkConditionsResponse extends StObject {
 }
 object CanEmulateNetworkConditionsResponse {
   
-  @scala.inline
-  def apply(result: Boolean): CanEmulateNetworkConditionsResponse = {
+  inline def apply(result: Boolean): CanEmulateNetworkConditionsResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanEmulateNetworkConditionsResponse]
   }
   
-  @scala.inline
-  implicit class CanEmulateNetworkConditionsResponseMutableBuilder[Self <: CanEmulateNetworkConditionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CanEmulateNetworkConditionsResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

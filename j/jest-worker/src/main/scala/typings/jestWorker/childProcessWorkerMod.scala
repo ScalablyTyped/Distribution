@@ -20,34 +20,34 @@ object childProcessWorkerMod {
        with ChildProcessWorker {
     def this(options: WorkerOptions) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _child: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fakeStream: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getFakeStream: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onProcessEnd: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _options: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _request: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _retries: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _shutdown: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _stderr: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _stdout: js.Any = js.native
     
     /* CompleteClass */
@@ -76,32 +76,31 @@ object childProcessWorkerMod {
     extends StObject
        with WorkerInterface {
     
-    var _child: js.Any
+    /* private */ var _child: js.Any
     
-    var _fakeStream: js.Any
+    /* private */ var _fakeStream: js.Any
     
-    var _getFakeStream: js.Any
+    /* private */ var _getFakeStream: js.Any
     
-    var _onProcessEnd: js.Any
+    /* private */ var _onProcessEnd: js.Any
     
-    var _options: js.Any
+    /* private */ var _options: js.Any
     
-    var _request: js.Any
+    /* private */ var _request: js.Any
     
-    var _retries: js.Any
+    /* private */ var _retries: js.Any
     
-    var _shutdown: js.Any
+    /* private */ var _shutdown: js.Any
     
-    var _stderr: js.Any
+    /* private */ var _stderr: js.Any
     
-    var _stdout: js.Any
+    /* private */ var _stdout: js.Any
     
     def initialize(): Unit
   }
   object ChildProcessWorker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _child: js.Any,
       _fakeStream: js.Any,
       _getFakeStream: js.Any,
@@ -124,41 +123,29 @@ object childProcessWorkerMod {
       __obj.asInstanceOf[ChildProcessWorker]
     }
     
-    @scala.inline
-    implicit class ChildProcessWorkerMutableBuilder[Self <: ChildProcessWorker] (val x: Self) extends AnyVal {
+    extension [Self <: ChildProcessWorker](x: Self) {
       
-      @scala.inline
-      def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+      inline def setInitialize(value: () => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_child(value: js.Any): Self = StObject.set(x, "_child", value.asInstanceOf[js.Any])
+      inline def set_child(value: js.Any): Self = StObject.set(x, "_child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_fakeStream(value: js.Any): Self = StObject.set(x, "_fakeStream", value.asInstanceOf[js.Any])
+      inline def set_fakeStream(value: js.Any): Self = StObject.set(x, "_fakeStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getFakeStream(value: js.Any): Self = StObject.set(x, "_getFakeStream", value.asInstanceOf[js.Any])
+      inline def set_getFakeStream(value: js.Any): Self = StObject.set(x, "_getFakeStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onProcessEnd(value: js.Any): Self = StObject.set(x, "_onProcessEnd", value.asInstanceOf[js.Any])
+      inline def set_onProcessEnd(value: js.Any): Self = StObject.set(x, "_onProcessEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_request(value: js.Any): Self = StObject.set(x, "_request", value.asInstanceOf[js.Any])
+      inline def set_request(value: js.Any): Self = StObject.set(x, "_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_retries(value: js.Any): Self = StObject.set(x, "_retries", value.asInstanceOf[js.Any])
+      inline def set_retries(value: js.Any): Self = StObject.set(x, "_retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_shutdown(value: js.Any): Self = StObject.set(x, "_shutdown", value.asInstanceOf[js.Any])
+      inline def set_shutdown(value: js.Any): Self = StObject.set(x, "_shutdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stderr(value: js.Any): Self = StObject.set(x, "_stderr", value.asInstanceOf[js.Any])
+      inline def set_stderr(value: js.Any): Self = StObject.set(x, "_stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stdout(value: js.Any): Self = StObject.set(x, "_stdout", value.asInstanceOf[js.Any])
+      inline def set_stdout(value: js.Any): Self = StObject.set(x, "_stdout", value.asInstanceOf[js.Any])
     }
   }
 }

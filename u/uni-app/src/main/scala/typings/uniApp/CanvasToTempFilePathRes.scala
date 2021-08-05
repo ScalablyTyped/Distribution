@@ -13,19 +13,15 @@ trait CanvasToTempFilePathRes extends StObject {
 }
 object CanvasToTempFilePathRes {
   
-  @scala.inline
-  def apply(): CanvasToTempFilePathRes = {
+  inline def apply(): CanvasToTempFilePathRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanvasToTempFilePathRes]
   }
   
-  @scala.inline
-  implicit class CanvasToTempFilePathResMutableBuilder[Self <: CanvasToTempFilePathRes] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasToTempFilePathRes](x: Self) {
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePathUndefined: Self = StObject.set(x, "tempFilePath", js.undefined)
+    inline def setTempFilePathUndefined: Self = StObject.set(x, "tempFilePath", js.undefined)
   }
 }

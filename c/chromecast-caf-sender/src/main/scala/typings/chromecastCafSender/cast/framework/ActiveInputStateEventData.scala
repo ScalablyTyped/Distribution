@@ -12,17 +12,14 @@ trait ActiveInputStateEventData
 }
 object ActiveInputStateEventData {
   
-  @scala.inline
-  def apply(activeInputState: ActiveInputState, `type`: String): ActiveInputStateEventData = {
+  inline def apply(activeInputState: ActiveInputState, `type`: String): ActiveInputStateEventData = {
     val __obj = js.Dynamic.literal(activeInputState = activeInputState.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveInputStateEventData]
   }
   
-  @scala.inline
-  implicit class ActiveInputStateEventDataMutableBuilder[Self <: ActiveInputStateEventData] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveInputStateEventData](x: Self) {
     
-    @scala.inline
-    def setActiveInputState(value: ActiveInputState): Self = StObject.set(x, "activeInputState", value.asInstanceOf[js.Any])
+    inline def setActiveInputState(value: ActiveInputState): Self = StObject.set(x, "activeInputState", value.asInstanceOf[js.Any])
   }
 }

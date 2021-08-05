@@ -16,21 +16,14 @@ object parsersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def eventFromPlainObject(exception: Record[String, js.Any]): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any]).asInstanceOf[Event]
-  @scala.inline
-  def eventFromPlainObject(exception: Record[String, js.Any], syntheticException: Unit, rejection: Boolean): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], rejection.asInstanceOf[js.Any])).asInstanceOf[Event]
-  @scala.inline
-  def eventFromPlainObject(exception: Record[String, js.Any], syntheticException: Error): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any])).asInstanceOf[Event]
-  @scala.inline
-  def eventFromPlainObject(exception: Record[String, js.Any], syntheticException: Error, rejection: Boolean): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], rejection.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def eventFromPlainObject(exception: Record[String, js.Any]): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any]).asInstanceOf[Event]
+  inline def eventFromPlainObject(exception: Record[String, js.Any], syntheticException: Unit, rejection: Boolean): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], rejection.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def eventFromPlainObject(exception: Record[String, js.Any], syntheticException: Error): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def eventFromPlainObject(exception: Record[String, js.Any], syntheticException: Error, rejection: Boolean): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromPlainObject")(exception.asInstanceOf[js.Any], syntheticException.asInstanceOf[js.Any], rejection.asInstanceOf[js.Any])).asInstanceOf[Event]
   
-  @scala.inline
-  def eventFromStacktrace(stacktrace: StackTrace): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("eventFromStacktrace")(stacktrace.asInstanceOf[js.Any]).asInstanceOf[Event]
+  inline def eventFromStacktrace(stacktrace: StackTrace): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("eventFromStacktrace")(stacktrace.asInstanceOf[js.Any]).asInstanceOf[Event]
   
-  @scala.inline
-  def exceptionFromStacktrace(stacktrace: StackTrace): Exception = ^.asInstanceOf[js.Dynamic].applyDynamic("exceptionFromStacktrace")(stacktrace.asInstanceOf[js.Any]).asInstanceOf[Exception]
+  inline def exceptionFromStacktrace(stacktrace: StackTrace): Exception = ^.asInstanceOf[js.Dynamic].applyDynamic("exceptionFromStacktrace")(stacktrace.asInstanceOf[js.Any]).asInstanceOf[Exception]
   
-  @scala.inline
-  def prepareFramesForEvent(stack: js.Array[StackFrame]): js.Array[typings.sentryTypes.stackframeMod.StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareFramesForEvent")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.sentryTypes.stackframeMod.StackFrame]]
+  inline def prepareFramesForEvent(stack: js.Array[StackFrame]): js.Array[typings.sentryTypes.stackframeMod.StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareFramesForEvent")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.sentryTypes.stackframeMod.StackFrame]]
 }

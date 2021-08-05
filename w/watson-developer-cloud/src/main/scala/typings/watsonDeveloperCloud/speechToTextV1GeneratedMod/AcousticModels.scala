@@ -12,19 +12,15 @@ trait AcousticModels extends StObject {
 }
 object AcousticModels {
   
-  @scala.inline
-  def apply(customizations: js.Array[AcousticModel]): AcousticModels = {
+  inline def apply(customizations: js.Array[AcousticModel]): AcousticModels = {
     val __obj = js.Dynamic.literal(customizations = customizations.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcousticModels]
   }
   
-  @scala.inline
-  implicit class AcousticModelsMutableBuilder[Self <: AcousticModels] (val x: Self) extends AnyVal {
+  extension [Self <: AcousticModels](x: Self) {
     
-    @scala.inline
-    def setCustomizations(value: js.Array[AcousticModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
+    inline def setCustomizations(value: js.Array[AcousticModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomizationsVarargs(value: AcousticModel*): Self = StObject.set(x, "customizations", js.Array(value :_*))
+    inline def setCustomizationsVarargs(value: AcousticModel*): Self = StObject.set(x, "customizations", js.Array(value :_*))
   }
 }

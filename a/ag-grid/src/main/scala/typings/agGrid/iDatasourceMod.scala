@@ -18,29 +18,22 @@ object iDatasourceMod {
   }
   object IDatasource {
     
-    @scala.inline
-    def apply(getRows: IGetRowsParams => Unit): IDatasource = {
+    inline def apply(getRows: IGetRowsParams => Unit): IDatasource = {
       val __obj = js.Dynamic.literal(getRows = js.Any.fromFunction1(getRows))
       __obj.asInstanceOf[IDatasource]
     }
     
-    @scala.inline
-    implicit class IDatasourceMutableBuilder[Self <: IDatasource] (val x: Self) extends AnyVal {
+    extension [Self <: IDatasource](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setGetRows(value: IGetRowsParams => Unit): Self = StObject.set(x, "getRows", js.Any.fromFunction1(value))
+      inline def setGetRows(value: IGetRowsParams => Unit): Self = StObject.set(x, "getRows", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+      inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     }
   }
   

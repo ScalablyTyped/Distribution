@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalAccessDevicePlatform extends StObject
 object ConditionalAccessDevicePlatform {
   
-  @scala.inline
-  def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
+  inline def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
   
-  @scala.inline
-  def android: typings.microsoftGraph.microsoftGraphStrings.android = "android".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.android]
+  inline def android: typings.microsoftGraph.microsoftGraphStrings.android = "android".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.android]
   
-  @scala.inline
-  def iOS: typings.microsoftGraph.microsoftGraphStrings.iOS = "iOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.iOS]
+  inline def iOS: typings.microsoftGraph.microsoftGraphStrings.iOS = "iOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.iOS]
   
-  @scala.inline
-  def macOS: typings.microsoftGraph.microsoftGraphStrings.macOS = "macOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.macOS]
+  inline def macOS: typings.microsoftGraph.microsoftGraphStrings.macOS = "macOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.macOS]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
   
-  @scala.inline
-  def windows: typings.microsoftGraph.microsoftGraphStrings.windows = "windows".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windows]
+  inline def windows: typings.microsoftGraph.microsoftGraphStrings.windows = "windows".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windows]
   
-  @scala.inline
-  def windowsPhone: typings.microsoftGraph.microsoftGraphStrings.windowsPhone = "windowsPhone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsPhone]
+  inline def windowsPhone: typings.microsoftGraph.microsoftGraphStrings.windowsPhone = "windowsPhone".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.windowsPhone]
 }

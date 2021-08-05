@@ -13,22 +13,17 @@ trait DiscardedView
 }
 object DiscardedView {
   
-  @scala.inline
-  def apply(): DiscardedView = {
+  inline def apply(): DiscardedView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiscardedView]
   }
   
-  @scala.inline
-  implicit class DiscardedViewMutableBuilder[Self <: DiscardedView] (val x: Self) extends AnyVal {
+  extension [Self <: DiscardedView](x: Self) {
     
-    @scala.inline
-    def setJob_ids(value: js.Array[String]): Self = StObject.set(x, "job_ids", value.asInstanceOf[js.Any])
+    inline def setJob_ids(value: js.Array[String]): Self = StObject.set(x, "job_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob_idsUndefined: Self = StObject.set(x, "job_ids", js.undefined)
+    inline def setJob_idsUndefined: Self = StObject.set(x, "job_ids", js.undefined)
     
-    @scala.inline
-    def setJob_idsVarargs(value: String*): Self = StObject.set(x, "job_ids", js.Array(value :_*))
+    inline def setJob_idsVarargs(value: String*): Self = StObject.set(x, "job_ids", js.Array(value :_*))
   }
 }

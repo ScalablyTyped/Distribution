@@ -20,8 +20,7 @@ trait ShippingAddress extends StObject {
 }
 object ShippingAddress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     city: String,
     country_code: String,
     post_code: String,
@@ -33,25 +32,18 @@ object ShippingAddress {
     __obj.asInstanceOf[ShippingAddress]
   }
   
-  @scala.inline
-  implicit class ShippingAddressMutableBuilder[Self <: ShippingAddress] (val x: Self) extends AnyVal {
+  extension [Self <: ShippingAddress](x: Self) {
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
+    inline def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPost_code(value: String): Self = StObject.set(x, "post_code", value.asInstanceOf[js.Any])
+    inline def setPost_code(value: String): Self = StObject.set(x, "post_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet_line1(value: String): Self = StObject.set(x, "street_line1", value.asInstanceOf[js.Any])
+    inline def setStreet_line1(value: String): Self = StObject.set(x, "street_line1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet_line2(value: String): Self = StObject.set(x, "street_line2", value.asInstanceOf[js.Any])
+    inline def setStreet_line2(value: String): Self = StObject.set(x, "street_line2", value.asInstanceOf[js.Any])
   }
 }

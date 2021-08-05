@@ -24,31 +24,23 @@ trait ExportingButtonsContextButtonThemeOptions extends StObject {
 }
 object ExportingButtonsContextButtonThemeOptions {
   
-  @scala.inline
-  def apply(): ExportingButtonsContextButtonThemeOptions = {
+  inline def apply(): ExportingButtonsContextButtonThemeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportingButtonsContextButtonThemeOptions]
   }
   
-  @scala.inline
-  implicit class ExportingButtonsContextButtonThemeOptionsMutableBuilder[Self <: ExportingButtonsContextButtonThemeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportingButtonsContextButtonThemeOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setStroke(value: ColorString): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: ColorString): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

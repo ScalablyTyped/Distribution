@@ -17,19 +17,15 @@ trait TableUpdateData extends StObject {
 }
 object TableUpdateData {
   
-  @scala.inline
-  def apply(): TableUpdateData = {
+  inline def apply(): TableUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableUpdateData]
   }
   
-  @scala.inline
-  implicit class TableUpdateDataMutableBuilder[Self <: TableUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: TableUpdateData](x: Self) {
     
-    @scala.inline
-    def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
+    inline def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderVisibleUndefined: Self = StObject.set(x, "borderVisible", js.undefined)
+    inline def setBorderVisibleUndefined: Self = StObject.set(x, "borderVisible", js.undefined)
   }
 }

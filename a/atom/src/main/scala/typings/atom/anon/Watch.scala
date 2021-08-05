@@ -12,25 +12,19 @@ trait Watch extends StObject {
 }
 object Watch {
   
-  @scala.inline
-  def apply(): Watch = {
+  inline def apply(): Watch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Watch]
   }
   
-  @scala.inline
-  implicit class WatchMutableBuilder[Self <: Watch] (val x: Self) extends AnyVal {
+  extension [Self <: Watch](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+    inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

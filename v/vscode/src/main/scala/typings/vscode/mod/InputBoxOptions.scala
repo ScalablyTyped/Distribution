@@ -57,55 +57,39 @@ trait InputBoxOptions extends StObject {
 }
 object InputBoxOptions {
   
-  @scala.inline
-  def apply(): InputBoxOptions = {
+  inline def apply(): InputBoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputBoxOptions]
   }
   
-  @scala.inline
-  implicit class InputBoxOptionsMutableBuilder[Self <: InputBoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InputBoxOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
+    inline def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreFocusOutUndefined: Self = StObject.set(x, "ignoreFocusOut", js.undefined)
+    inline def setIgnoreFocusOutUndefined: Self = StObject.set(x, "ignoreFocusOut", js.undefined)
     
-    @scala.inline
-    def setPassword(value: Boolean): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: Boolean): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+    inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+    inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
     
-    @scala.inline
-    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    @scala.inline
-    def setValidateInput(value: /* value */ String => js.UndefOr[String | Null | (Thenable[js.UndefOr[String | Null]])]): Self = StObject.set(x, "validateInput", js.Any.fromFunction1(value))
+    inline def setValidateInput(value: /* value */ String => js.UndefOr[String | Null | (Thenable[js.UndefOr[String | Null]])]): Self = StObject.set(x, "validateInput", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateInputUndefined: Self = StObject.set(x, "validateInput", js.undefined)
+    inline def setValidateInputUndefined: Self = StObject.set(x, "validateInput", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueSelection(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "valueSelection", value.asInstanceOf[js.Any])
+    inline def setValueSelection(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "valueSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueSelectionUndefined: Self = StObject.set(x, "valueSelection", js.undefined)
+    inline def setValueSelectionUndefined: Self = StObject.set(x, "valueSelection", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

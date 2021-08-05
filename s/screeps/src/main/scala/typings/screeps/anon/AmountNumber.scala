@@ -10,16 +10,13 @@ trait AmountNumber extends StObject {
 }
 object AmountNumber {
   
-  @scala.inline
-  def apply(amount: Double): AmountNumber = {
+  inline def apply(amount: Double): AmountNumber = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmountNumber]
   }
   
-  @scala.inline
-  implicit class AmountNumberMutableBuilder[Self <: AmountNumber] (val x: Self) extends AnyVal {
+  extension [Self <: AmountNumber](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait CellStyleProps extends StObject {
 }
 object CellStyleProps {
   
-  @scala.inline
-  def apply(theme: ITheme): CellStyleProps = {
+  inline def apply(theme: ITheme): CellStyleProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellStyleProps]
   }
   
-  @scala.inline
-  implicit class CellStylePropsMutableBuilder[Self <: CellStyleProps] (val x: Self) extends AnyVal {
+  extension [Self <: CellStyleProps](x: Self) {
     
-    @scala.inline
-    def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
+    inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellStylePropsUndefined: Self = StObject.set(x, "cellStyleProps", js.undefined)
+    inline def setCellStylePropsUndefined: Self = StObject.set(x, "cellStyleProps", js.undefined)
     
-    @scala.inline
-    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

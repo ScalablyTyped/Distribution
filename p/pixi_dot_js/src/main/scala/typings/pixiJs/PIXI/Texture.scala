@@ -55,7 +55,7 @@ trait Texture
     * @member {number} PIXI.Texture#_updateID
     * @protected
     */
-  var _updateID: Double = js.native
+  /* protected */ var _updateID: Double = js.native
   
   /**
     * The WebGL UV data cache. Can be used as quad UV
@@ -63,7 +63,7 @@ trait Texture
     * @member {PIXI.TextureUvs} PIXI.Texture#_uvs
     * @protected
     */
-  var _uvs: TextureUvs = js.native
+  /* protected */ var _uvs: TextureUvs = js.native
   
   /**
     * The base texture that this texture uses.

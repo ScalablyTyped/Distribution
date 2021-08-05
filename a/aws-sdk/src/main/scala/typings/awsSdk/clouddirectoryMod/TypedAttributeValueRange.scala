@@ -28,31 +28,23 @@ trait TypedAttributeValueRange extends StObject {
 }
 object TypedAttributeValueRange {
   
-  @scala.inline
-  def apply(EndMode: RangeMode, StartMode: RangeMode): TypedAttributeValueRange = {
+  inline def apply(EndMode: RangeMode, StartMode: RangeMode): TypedAttributeValueRange = {
     val __obj = js.Dynamic.literal(EndMode = EndMode.asInstanceOf[js.Any], StartMode = StartMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedAttributeValueRange]
   }
   
-  @scala.inline
-  implicit class TypedAttributeValueRangeMutableBuilder[Self <: TypedAttributeValueRange] (val x: Self) extends AnyVal {
+  extension [Self <: TypedAttributeValueRange](x: Self) {
     
-    @scala.inline
-    def setEndMode(value: RangeMode): Self = StObject.set(x, "EndMode", value.asInstanceOf[js.Any])
+    inline def setEndMode(value: RangeMode): Self = StObject.set(x, "EndMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndValue(value: TypedAttributeValue): Self = StObject.set(x, "EndValue", value.asInstanceOf[js.Any])
+    inline def setEndValue(value: TypedAttributeValue): Self = StObject.set(x, "EndValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndValueUndefined: Self = StObject.set(x, "EndValue", js.undefined)
+    inline def setEndValueUndefined: Self = StObject.set(x, "EndValue", js.undefined)
     
-    @scala.inline
-    def setStartMode(value: RangeMode): Self = StObject.set(x, "StartMode", value.asInstanceOf[js.Any])
+    inline def setStartMode(value: RangeMode): Self = StObject.set(x, "StartMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartValue(value: TypedAttributeValue): Self = StObject.set(x, "StartValue", value.asInstanceOf[js.Any])
+    inline def setStartValue(value: TypedAttributeValue): Self = StObject.set(x, "StartValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartValueUndefined: Self = StObject.set(x, "StartValue", js.undefined)
+    inline def setStartValueUndefined: Self = StObject.set(x, "StartValue", js.undefined)
   }
 }

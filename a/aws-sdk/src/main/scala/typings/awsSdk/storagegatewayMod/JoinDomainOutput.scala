@@ -18,25 +18,19 @@ trait JoinDomainOutput extends StObject {
 }
 object JoinDomainOutput {
   
-  @scala.inline
-  def apply(): JoinDomainOutput = {
+  inline def apply(): JoinDomainOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JoinDomainOutput]
   }
   
-  @scala.inline
-  implicit class JoinDomainOutputMutableBuilder[Self <: JoinDomainOutput] (val x: Self) extends AnyVal {
+  extension [Self <: JoinDomainOutput](x: Self) {
     
-    @scala.inline
-    def setActiveDirectoryStatus(value: ActiveDirectoryStatus): Self = StObject.set(x, "ActiveDirectoryStatus", value.asInstanceOf[js.Any])
+    inline def setActiveDirectoryStatus(value: ActiveDirectoryStatus): Self = StObject.set(x, "ActiveDirectoryStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDirectoryStatusUndefined: Self = StObject.set(x, "ActiveDirectoryStatus", js.undefined)
+    inline def setActiveDirectoryStatusUndefined: Self = StObject.set(x, "ActiveDirectoryStatus", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

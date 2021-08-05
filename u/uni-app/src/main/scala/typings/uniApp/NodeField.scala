@@ -48,67 +48,47 @@ trait NodeField extends StObject {
 }
 object NodeField {
   
-  @scala.inline
-  def apply(): NodeField = {
+  inline def apply(): NodeField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeField]
   }
   
-  @scala.inline
-  implicit class NodeFieldMutableBuilder[Self <: NodeField] (val x: Self) extends AnyVal {
+  extension [Self <: NodeField](x: Self) {
     
-    @scala.inline
-    def setComputedStyle(value: js.Array[String]): Self = StObject.set(x, "computedStyle", value.asInstanceOf[js.Any])
+    inline def setComputedStyle(value: js.Array[String]): Self = StObject.set(x, "computedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedStyleUndefined: Self = StObject.set(x, "computedStyle", js.undefined)
+    inline def setComputedStyleUndefined: Self = StObject.set(x, "computedStyle", js.undefined)
     
-    @scala.inline
-    def setComputedStyleVarargs(value: String*): Self = StObject.set(x, "computedStyle", js.Array(value :_*))
+    inline def setComputedStyleVarargs(value: String*): Self = StObject.set(x, "computedStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setDataset(value: Boolean): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: Boolean): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setRect(value: Boolean): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: Boolean): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+    inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
     
-    @scala.inline
-    def setScrollOffset(value: Boolean): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+    inline def setScrollOffset(value: Boolean): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
+    inline def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
     
-    @scala.inline
-    def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

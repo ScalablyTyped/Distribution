@@ -36,6 +36,5 @@ object Disposable {
     * @return Returns a new disposable which, upon dispose, will
     * dispose all provided disposables.
     */
-  @scala.inline
-  def from(disposableLikes: Dispose*): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(disposableLikes.asInstanceOf[js.Any]).asInstanceOf[Disposable]
+  inline def from(disposableLikes: Dispose*): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(disposableLikes.asInstanceOf[js.Any]).asInstanceOf[Disposable]
 }

@@ -28,56 +28,40 @@ trait CognitoAuthorizer extends StObject {
 }
 object CognitoAuthorizer {
   
-  @scala.inline
-  def apply(userPoolArn: String, userPoolClientId: String, userPoolDomain: String): CognitoAuthorizer = {
+  inline def apply(userPoolArn: String, userPoolClientId: String, userPoolDomain: String): CognitoAuthorizer = {
     val __obj = js.Dynamic.literal(userPoolArn = userPoolArn.asInstanceOf[js.Any], userPoolClientId = userPoolClientId.asInstanceOf[js.Any], userPoolDomain = userPoolDomain.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("cognito")
     __obj.asInstanceOf[CognitoAuthorizer]
   }
   
-  @scala.inline
-  implicit class CognitoAuthorizerMutableBuilder[Self <: CognitoAuthorizer] (val x: Self) extends AnyVal {
+  extension [Self <: CognitoAuthorizer](x: Self) {
     
-    @scala.inline
-    def setAllowUnauthenticated(value: Boolean): Self = StObject.set(x, "allowUnauthenticated", value.asInstanceOf[js.Any])
+    inline def setAllowUnauthenticated(value: Boolean): Self = StObject.set(x, "allowUnauthenticated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnauthenticatedUndefined: Self = StObject.set(x, "allowUnauthenticated", js.undefined)
+    inline def setAllowUnauthenticatedUndefined: Self = StObject.set(x, "allowUnauthenticated", js.undefined)
     
-    @scala.inline
-    def setRequestExtraParams(value: Prompt): Self = StObject.set(x, "requestExtraParams", value.asInstanceOf[js.Any])
+    inline def setRequestExtraParams(value: Prompt): Self = StObject.set(x, "requestExtraParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestExtraParamsUndefined: Self = StObject.set(x, "requestExtraParams", js.undefined)
+    inline def setRequestExtraParamsUndefined: Self = StObject.set(x, "requestExtraParams", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSessionCookieName(value: String): Self = StObject.set(x, "sessionCookieName", value.asInstanceOf[js.Any])
+    inline def setSessionCookieName(value: String): Self = StObject.set(x, "sessionCookieName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionCookieNameUndefined: Self = StObject.set(x, "sessionCookieName", js.undefined)
+    inline def setSessionCookieNameUndefined: Self = StObject.set(x, "sessionCookieName", js.undefined)
     
-    @scala.inline
-    def setSessionTimeout(value: Double | String): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+    inline def setSessionTimeout(value: Double | String): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+    inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
     
-    @scala.inline
-    def setType(value: cognito): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: cognito): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolArn(value: String): Self = StObject.set(x, "userPoolArn", value.asInstanceOf[js.Any])
+    inline def setUserPoolArn(value: String): Self = StObject.set(x, "userPoolArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolClientId(value: String): Self = StObject.set(x, "userPoolClientId", value.asInstanceOf[js.Any])
+    inline def setUserPoolClientId(value: String): Self = StObject.set(x, "userPoolClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolDomain(value: String): Self = StObject.set(x, "userPoolDomain", value.asInstanceOf[js.Any])
+    inline def setUserPoolDomain(value: String): Self = StObject.set(x, "userPoolDomain", value.asInstanceOf[js.Any])
   }
 }

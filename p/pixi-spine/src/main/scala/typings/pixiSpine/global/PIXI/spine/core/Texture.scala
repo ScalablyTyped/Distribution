@@ -12,7 +12,7 @@ abstract class Texture protected ()
      with typings.pixiSpine.PIXI.spine.core.Texture {
   def this(image: HTMLImageElement) = this()
   
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _image: HTMLImageElement = js.native
   
   /* CompleteClass */
@@ -40,10 +40,8 @@ object Texture {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def filterFromString(text: String): typings.pixiSpine.PIXI.spine.core.TextureFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("filterFromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.TextureFilter]
+  inline def filterFromString(text: String): typings.pixiSpine.PIXI.spine.core.TextureFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("filterFromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.TextureFilter]
   
   /* static member */
-  @scala.inline
-  def wrapFromString(text: String): typings.pixiSpine.PIXI.spine.core.TextureWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapFromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.TextureWrap]
+  inline def wrapFromString(text: String): typings.pixiSpine.PIXI.spine.core.TextureWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapFromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.pixiSpine.PIXI.spine.core.TextureWrap]
 }

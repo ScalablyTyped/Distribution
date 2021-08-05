@@ -35,8 +35,7 @@ trait App extends StObject {
 }
 object App {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     App: AppComponent,
     Component: ComponentType[js.Object],
     initialProps: js.Any,
@@ -49,55 +48,38 @@ object App {
     __obj.asInstanceOf[App]
   }
   
-  @scala.inline
-  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+  extension [Self <: App](x: Self) {
     
-    @scala.inline
-    def setApp(value: AppComponent): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
+    inline def setApp(value: AppComponent): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+    inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
+    inline def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
     
-    @scala.inline
-    def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+    inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+    inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
     
-    @scala.inline
-    def setInitialProps(value: js.Any): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
+    inline def setInitialProps(value: js.Any): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
+    inline def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+    inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+    inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    @scala.inline
-    def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+    inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
     
-    @scala.inline
-    def setPageLoader(value: js.Any): Self = StObject.set(x, "pageLoader", value.asInstanceOf[js.Any])
+    inline def setPageLoader(value: js.Any): Self = StObject.set(x, "pageLoader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription(value: (/* data */ PrivateRouteInfo, /* App */ AppComponent) => js.Promise[Unit]): Self = StObject.set(x, "subscription", js.Any.fromFunction2(value))
+    inline def setSubscription(value: (/* data */ PrivateRouteInfo, /* App */ AppComponent) => js.Promise[Unit]): Self = StObject.set(x, "subscription", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapApp(value: AppComponent => js.Any): Self = StObject.set(x, "wrapApp", js.Any.fromFunction1(value))
+    inline def setWrapApp(value: AppComponent => js.Any): Self = StObject.set(x, "wrapApp", js.Any.fromFunction1(value))
   }
 }

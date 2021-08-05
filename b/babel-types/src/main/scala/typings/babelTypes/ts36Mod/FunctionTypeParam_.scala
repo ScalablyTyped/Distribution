@@ -19,8 +19,7 @@ trait FunctionTypeParam_
 }
 object FunctionTypeParam_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     loc: SourceLocation,
     name: Identifier_,
@@ -32,16 +31,12 @@ object FunctionTypeParam_ {
     __obj.asInstanceOf[FunctionTypeParam_]
   }
   
-  @scala.inline
-  implicit class FunctionTypeParam_MutableBuilder[Self <: FunctionTypeParam_] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionTypeParam_](x: Self) {
     
-    @scala.inline
-    def setName(value: Identifier_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Identifier_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: FunctionTypeParam): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FunctionTypeParam): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: FlowTypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: FlowTypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait RuleGroupRule extends StObject {
 }
 object RuleGroupRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: RuleGroupRuleAction,
     name: String,
     priority: Double,
@@ -45,22 +44,16 @@ object RuleGroupRule {
     __obj.asInstanceOf[RuleGroupRule]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleMutableBuilder[Self <: RuleGroupRule] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: RuleGroupRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: RuleGroupRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement(value: RuleGroupRuleStatement): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: RuleGroupRuleStatement): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityConfig(value: RuleGroupRuleVisibilityConfig): Self = StObject.set(x, "visibilityConfig", value.asInstanceOf[js.Any])
+    inline def setVisibilityConfig(value: RuleGroupRuleVisibilityConfig): Self = StObject.set(x, "visibilityConfig", value.asInstanceOf[js.Any])
   }
 }

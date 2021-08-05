@@ -14,25 +14,19 @@ trait DeauthenticateData extends StObject {
 }
 object DeauthenticateData {
   
-  @scala.inline
-  def apply(): DeauthenticateData = {
+  inline def apply(): DeauthenticateData = {
     val __obj = js.Dynamic.literal(oldAuthToken = null, oldSignedAuthToken = null)
     __obj.asInstanceOf[DeauthenticateData]
   }
   
-  @scala.inline
-  implicit class DeauthenticateDataMutableBuilder[Self <: DeauthenticateData] (val x: Self) extends AnyVal {
+  extension [Self <: DeauthenticateData](x: Self) {
     
-    @scala.inline
-    def setOldAuthToken(value: AuthToken): Self = StObject.set(x, "oldAuthToken", value.asInstanceOf[js.Any])
+    inline def setOldAuthToken(value: AuthToken): Self = StObject.set(x, "oldAuthToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldAuthTokenNull: Self = StObject.set(x, "oldAuthToken", null)
+    inline def setOldAuthTokenNull: Self = StObject.set(x, "oldAuthToken", null)
     
-    @scala.inline
-    def setOldSignedAuthToken(value: SignedAuthToken): Self = StObject.set(x, "oldSignedAuthToken", value.asInstanceOf[js.Any])
+    inline def setOldSignedAuthToken(value: SignedAuthToken): Self = StObject.set(x, "oldSignedAuthToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldSignedAuthTokenNull: Self = StObject.set(x, "oldSignedAuthToken", null)
+    inline def setOldSignedAuthTokenNull: Self = StObject.set(x, "oldSignedAuthToken", null)
   }
 }

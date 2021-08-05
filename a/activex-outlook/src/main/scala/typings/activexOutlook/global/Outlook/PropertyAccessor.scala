@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.PropertyAccessor")
 @js.native
-class PropertyAccessor protected ()
+/* private */ class PropertyAccessor ()
   extends StObject
      with typings.activexOutlook.Outlook.PropertyAccessor {
   
@@ -36,7 +36,7 @@ class PropertyAccessor protected ()
   /* CompleteClass */
   override def LocalTimeToUTC(Value: VarDate): VarDate = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.PropertyAccessor_typekey")
   var OutlookDotPropertyAccessor_typekey: typings.activexOutlook.Outlook.PropertyAccessor = js.native
   

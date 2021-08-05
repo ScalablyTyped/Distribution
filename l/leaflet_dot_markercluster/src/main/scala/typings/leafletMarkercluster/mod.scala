@@ -106,8 +106,7 @@ object mod {
   /*
     * Create a marker cluster group, optionally given marker cluster group options.
     */
-  @scala.inline
-  def markerClusterGroup(options: js.UndefOr[MarkerClusterGroupOptions]): MarkerClusterGroup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("markerClusterGroup")(options.asInstanceOf[js.Any]).asInstanceOf[MarkerClusterGroup_]
+  inline def markerClusterGroup(options: js.UndefOr[MarkerClusterGroupOptions]): MarkerClusterGroup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("markerClusterGroup")(options.asInstanceOf[js.Any]).asInstanceOf[MarkerClusterGroup_]
   
   trait MarkerClusterGroupOptions
     extends StObject
@@ -220,121 +219,84 @@ object mod {
   }
   object MarkerClusterGroupOptions {
     
-    @scala.inline
-    def apply(): MarkerClusterGroupOptions = {
+    inline def apply(): MarkerClusterGroupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarkerClusterGroupOptions]
     }
     
-    @scala.inline
-    implicit class MarkerClusterGroupOptionsMutableBuilder[Self <: MarkerClusterGroupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MarkerClusterGroupOptions](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateAddingMarkers(value: Boolean): Self = StObject.set(x, "animateAddingMarkers", value.asInstanceOf[js.Any])
+      inline def setAnimateAddingMarkers(value: Boolean): Self = StObject.set(x, "animateAddingMarkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateAddingMarkersUndefined: Self = StObject.set(x, "animateAddingMarkers", js.undefined)
+      inline def setAnimateAddingMarkersUndefined: Self = StObject.set(x, "animateAddingMarkers", js.undefined)
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setChunkDelay(value: Double): Self = StObject.set(x, "chunkDelay", value.asInstanceOf[js.Any])
+      inline def setChunkDelay(value: Double): Self = StObject.set(x, "chunkDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkDelayUndefined: Self = StObject.set(x, "chunkDelay", js.undefined)
+      inline def setChunkDelayUndefined: Self = StObject.set(x, "chunkDelay", js.undefined)
       
-      @scala.inline
-      def setChunkInterval(value: Double): Self = StObject.set(x, "chunkInterval", value.asInstanceOf[js.Any])
+      inline def setChunkInterval(value: Double): Self = StObject.set(x, "chunkInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkIntervalUndefined: Self = StObject.set(x, "chunkInterval", js.undefined)
+      inline def setChunkIntervalUndefined: Self = StObject.set(x, "chunkInterval", js.undefined)
       
-      @scala.inline
-      def setChunkProgress(
+      inline def setChunkProgress(
         value: (/* processedMarkers */ Double, /* totalMarkers */ Double, /* elapsedTime */ Double) => Unit
       ): Self = StObject.set(x, "chunkProgress", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setChunkProgressUndefined: Self = StObject.set(x, "chunkProgress", js.undefined)
+      inline def setChunkProgressUndefined: Self = StObject.set(x, "chunkProgress", js.undefined)
       
-      @scala.inline
-      def setChunkedLoading(value: Boolean): Self = StObject.set(x, "chunkedLoading", value.asInstanceOf[js.Any])
+      inline def setChunkedLoading(value: Boolean): Self = StObject.set(x, "chunkedLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkedLoadingUndefined: Self = StObject.set(x, "chunkedLoading", js.undefined)
+      inline def setChunkedLoadingUndefined: Self = StObject.set(x, "chunkedLoading", js.undefined)
       
-      @scala.inline
-      def setDisableClusteringAtZoom(value: Double): Self = StObject.set(x, "disableClusteringAtZoom", value.asInstanceOf[js.Any])
+      inline def setDisableClusteringAtZoom(value: Double): Self = StObject.set(x, "disableClusteringAtZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableClusteringAtZoomUndefined: Self = StObject.set(x, "disableClusteringAtZoom", js.undefined)
+      inline def setDisableClusteringAtZoomUndefined: Self = StObject.set(x, "disableClusteringAtZoom", js.undefined)
       
-      @scala.inline
-      def setIconCreateFunction(value: /* cluster */ MarkerCluster => Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "iconCreateFunction", js.Any.fromFunction1(value))
+      inline def setIconCreateFunction(value: /* cluster */ MarkerCluster => Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "iconCreateFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIconCreateFunctionUndefined: Self = StObject.set(x, "iconCreateFunction", js.undefined)
+      inline def setIconCreateFunctionUndefined: Self = StObject.set(x, "iconCreateFunction", js.undefined)
       
-      @scala.inline
-      def setMaxClusterRadius(value: Double | (js.Function1[/* zoom */ Double, Double])): Self = StObject.set(x, "maxClusterRadius", value.asInstanceOf[js.Any])
+      inline def setMaxClusterRadius(value: Double | (js.Function1[/* zoom */ Double, Double])): Self = StObject.set(x, "maxClusterRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxClusterRadiusFunction1(value: /* zoom */ Double => Double): Self = StObject.set(x, "maxClusterRadius", js.Any.fromFunction1(value))
+      inline def setMaxClusterRadiusFunction1(value: /* zoom */ Double => Double): Self = StObject.set(x, "maxClusterRadius", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaxClusterRadiusUndefined: Self = StObject.set(x, "maxClusterRadius", js.undefined)
+      inline def setMaxClusterRadiusUndefined: Self = StObject.set(x, "maxClusterRadius", js.undefined)
       
-      @scala.inline
-      def setPolygonOptions(value: PolylineOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
+      inline def setPolygonOptions(value: PolylineOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
+      inline def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
       
-      @scala.inline
-      def setRemoveOutsideVisibleBounds(value: Boolean): Self = StObject.set(x, "removeOutsideVisibleBounds", value.asInstanceOf[js.Any])
+      inline def setRemoveOutsideVisibleBounds(value: Boolean): Self = StObject.set(x, "removeOutsideVisibleBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveOutsideVisibleBoundsUndefined: Self = StObject.set(x, "removeOutsideVisibleBounds", js.undefined)
+      inline def setRemoveOutsideVisibleBoundsUndefined: Self = StObject.set(x, "removeOutsideVisibleBounds", js.undefined)
       
-      @scala.inline
-      def setShowCoverageOnHover(value: Boolean): Self = StObject.set(x, "showCoverageOnHover", value.asInstanceOf[js.Any])
+      inline def setShowCoverageOnHover(value: Boolean): Self = StObject.set(x, "showCoverageOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCoverageOnHoverUndefined: Self = StObject.set(x, "showCoverageOnHover", js.undefined)
+      inline def setShowCoverageOnHoverUndefined: Self = StObject.set(x, "showCoverageOnHover", js.undefined)
       
-      @scala.inline
-      def setSingleMarkerMode(value: Boolean): Self = StObject.set(x, "singleMarkerMode", value.asInstanceOf[js.Any])
+      inline def setSingleMarkerMode(value: Boolean): Self = StObject.set(x, "singleMarkerMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleMarkerModeUndefined: Self = StObject.set(x, "singleMarkerMode", js.undefined)
+      inline def setSingleMarkerModeUndefined: Self = StObject.set(x, "singleMarkerMode", js.undefined)
       
-      @scala.inline
-      def setSpiderLegPolylineOptions(value: PolylineOptions): Self = StObject.set(x, "spiderLegPolylineOptions", value.asInstanceOf[js.Any])
+      inline def setSpiderLegPolylineOptions(value: PolylineOptions): Self = StObject.set(x, "spiderLegPolylineOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpiderLegPolylineOptionsUndefined: Self = StObject.set(x, "spiderLegPolylineOptions", js.undefined)
+      inline def setSpiderLegPolylineOptionsUndefined: Self = StObject.set(x, "spiderLegPolylineOptions", js.undefined)
       
-      @scala.inline
-      def setSpiderfyDistanceMultiplier(value: Double): Self = StObject.set(x, "spiderfyDistanceMultiplier", value.asInstanceOf[js.Any])
+      inline def setSpiderfyDistanceMultiplier(value: Double): Self = StObject.set(x, "spiderfyDistanceMultiplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpiderfyDistanceMultiplierUndefined: Self = StObject.set(x, "spiderfyDistanceMultiplier", js.undefined)
+      inline def setSpiderfyDistanceMultiplierUndefined: Self = StObject.set(x, "spiderfyDistanceMultiplier", js.undefined)
       
-      @scala.inline
-      def setSpiderfyOnMaxZoom(value: Boolean): Self = StObject.set(x, "spiderfyOnMaxZoom", value.asInstanceOf[js.Any])
+      inline def setSpiderfyOnMaxZoom(value: Boolean): Self = StObject.set(x, "spiderfyOnMaxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpiderfyOnMaxZoomUndefined: Self = StObject.set(x, "spiderfyOnMaxZoom", js.undefined)
+      inline def setSpiderfyOnMaxZoomUndefined: Self = StObject.set(x, "spiderfyOnMaxZoom", js.undefined)
       
-      @scala.inline
-      def setZoomToBoundsOnClick(value: Boolean): Self = StObject.set(x, "zoomToBoundsOnClick", value.asInstanceOf[js.Any])
+      inline def setZoomToBoundsOnClick(value: Boolean): Self = StObject.set(x, "zoomToBoundsOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomToBoundsOnClickUndefined: Self = StObject.set(x, "zoomToBoundsOnClick", js.undefined)
+      inline def setZoomToBoundsOnClickUndefined: Self = StObject.set(x, "zoomToBoundsOnClick", js.undefined)
     }
   }
 }

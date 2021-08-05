@@ -23,8 +23,7 @@ trait CardDismissDelay extends StObject {
 }
 object CardDismissDelay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cardDismissDelay: Double,
     cardOpenDelay: Double,
     expandedCardOpenDelay: Double,
@@ -38,28 +37,20 @@ object CardDismissDelay {
     __obj.asInstanceOf[CardDismissDelay]
   }
   
-  @scala.inline
-  implicit class CardDismissDelayMutableBuilder[Self <: CardDismissDelay] (val x: Self) extends AnyVal {
+  extension [Self <: CardDismissDelay](x: Self) {
     
-    @scala.inline
-    def setCardDismissDelay(value: Double): Self = StObject.set(x, "cardDismissDelay", value.asInstanceOf[js.Any])
+    inline def setCardDismissDelay(value: Double): Self = StObject.set(x, "cardDismissDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardOpenDelay(value: Double): Self = StObject.set(x, "cardOpenDelay", value.asInstanceOf[js.Any])
+    inline def setCardOpenDelay(value: Double): Self = StObject.set(x, "cardOpenDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedCardOpenDelay(value: Double): Self = StObject.set(x, "expandedCardOpenDelay", value.asInstanceOf[js.Any])
+    inline def setExpandedCardOpenDelay(value: Double): Self = StObject.set(x, "expandedCardOpenDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstantOpenOnClick(value: Boolean): Self = StObject.set(x, "instantOpenOnClick", value.asInstanceOf[js.Any])
+    inline def setInstantOpenOnClick(value: Boolean): Self = StObject.set(x, "instantOpenOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenHotKey(value: Double): Self = StObject.set(x, "openHotKey", value.asInstanceOf[js.Any])
+    inline def setOpenHotKey(value: Double): Self = StObject.set(x, "openHotKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetInitialFocus(value: Boolean): Self = StObject.set(x, "setInitialFocus", value.asInstanceOf[js.Any])
+    inline def setSetInitialFocus(value: Boolean): Self = StObject.set(x, "setInitialFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: HoverCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: HoverCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

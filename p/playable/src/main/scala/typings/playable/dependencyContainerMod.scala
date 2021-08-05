@@ -17,32 +17,24 @@ object dependencyContainerMod {
     @JSImport("playable/dist/src/core/dependency-container", "default.Lifetime")
     @js.native
     def Lifetime: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Lifetime */ js.Any = js.native
-    @scala.inline
-    def Lifetime_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Lifetime */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Lifetime")(x.asInstanceOf[js.Any])
+    inline def Lifetime_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Lifetime */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Lifetime")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/core/dependency-container", "default.asClass")
     @js.native
     def asClass: js.Any = js.native
-    @scala.inline
-    def asClass_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asClass")(x.asInstanceOf[js.Any])
+    inline def asClass_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asClass")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/core/dependency-container", "default.asFunction")
     @js.native
     def asFunction: js.Any = js.native
-    @scala.inline
-    def asFunction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asFunction")(x.asInstanceOf[js.Any])
+    inline def asFunction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asFunction")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def asValue(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def asValue(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def createContainer(): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")().asInstanceOf[Container]
-    @scala.inline
-    def createContainer(options: Unit, __parentContainer: Container): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(options.asInstanceOf[js.Any], __parentContainer.asInstanceOf[js.Any])).asInstanceOf[Container]
-    @scala.inline
-    def createContainer(options: IOptions): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(options.asInstanceOf[js.Any]).asInstanceOf[Container]
-    @scala.inline
-    def createContainer(options: IOptions, __parentContainer: Container): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(options.asInstanceOf[js.Any], __parentContainer.asInstanceOf[js.Any])).asInstanceOf[Container]
+    inline def createContainer(): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")().asInstanceOf[Container]
+    inline def createContainer(options: Unit, __parentContainer: Container): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(options.asInstanceOf[js.Any], __parentContainer.asInstanceOf[js.Any])).asInstanceOf[Container]
+    inline def createContainer(options: IOptions): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(options.asInstanceOf[js.Any]).asInstanceOf[Container]
+    inline def createContainer(options: IOptions, __parentContainer: Container): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(options.asInstanceOf[js.Any], __parentContainer.asInstanceOf[js.Any])).asInstanceOf[Container]
     @JSImport("playable/dist/src/core/dependency-container", "default.createContainer")
     @js.native
     def createContainer_Fdefault: js.Function2[
@@ -51,8 +43,7 @@ object dependencyContainerMod {
         Container
       ] = js.native
     
-    @scala.inline
-    def createContainer_Fdefault_=(
+    inline def createContainer_Fdefault_=(
       x: js.Function2[
           /* options */ js.UndefOr[IOptions], 
           /* __parentContainer */ js.UndefOr[Container], 

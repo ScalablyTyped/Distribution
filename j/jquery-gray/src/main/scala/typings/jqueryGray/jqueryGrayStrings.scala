@@ -8,6 +8,5 @@ object jqueryGrayStrings {
   
   @js.native
   sealed trait `grayscale-off` extends StObject
-  @scala.inline
-  def `grayscale-off`: `grayscale-off` = "grayscale-off".asInstanceOf[`grayscale-off`]
+  inline def `grayscale-off`: `grayscale-off` = "grayscale-off".asInstanceOf[`grayscale-off`]
 }

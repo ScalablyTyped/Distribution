@@ -10,19 +10,15 @@ trait DispatchOptions extends StObject {
 }
 object DispatchOptions {
   
-  @scala.inline
-  def apply(): DispatchOptions = {
+  inline def apply(): DispatchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DispatchOptions]
   }
   
-  @scala.inline
-  implicit class DispatchOptionsMutableBuilder[Self <: DispatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DispatchOptions](x: Self) {
     
-    @scala.inline
-    def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

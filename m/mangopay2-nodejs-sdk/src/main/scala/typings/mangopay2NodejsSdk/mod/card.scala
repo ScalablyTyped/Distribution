@@ -71,8 +71,7 @@ object card {
   }
   object CardData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Active: Boolean,
       Alias: String,
       BankCode: String,
@@ -92,41 +91,29 @@ object card {
       __obj.asInstanceOf[CardData]
     }
     
-    @scala.inline
-    implicit class CardDataMutableBuilder[Self <: CardData] (val x: Self) extends AnyVal {
+    extension [Self <: CardData](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBankCode(value: String): Self = StObject.set(x, "BankCode", value.asInstanceOf[js.Any])
+      inline def setBankCode(value: String): Self = StObject.set(x, "BankCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardProvider(value: String): Self = StObject.set(x, "CardProvider", value.asInstanceOf[js.Any])
+      inline def setCardProvider(value: String): Self = StObject.set(x, "CardProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardType(value: CardType): Self = StObject.set(x, "CardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: CardType): Self = StObject.set(x, "CardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "Fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "Fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduct(value: String): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidity(value: CardValidity): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
+      inline def setValidity(value: CardValidity): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,14 +125,11 @@ object card {
   trait CardStatus extends StObject
   object CardStatus {
     
-    @scala.inline
-    def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = "CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED]
+    inline def CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED = "CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED]
     
-    @scala.inline
-    def ERROR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERROR = "ERROR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERROR]
+    inline def ERROR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERROR = "ERROR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ERROR]
     
-    @scala.inline
-    def VALIDATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED = "VALIDATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED]
+    inline def VALIDATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED = "VALIDATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -161,29 +145,21 @@ object card {
   trait CardType extends StObject
   object CardType {
     
-    @scala.inline
-    def BCMC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BCMC = "BCMC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BCMC]
+    inline def BCMC: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BCMC = "BCMC".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BCMC]
     
-    @scala.inline
-    def CB_VISA_MASTERCARD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CB_VISA_MASTERCARD = "CB_VISA_MASTERCARD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CB_VISA_MASTERCARD]
+    inline def CB_VISA_MASTERCARD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CB_VISA_MASTERCARD = "CB_VISA_MASTERCARD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CB_VISA_MASTERCARD]
     
-    @scala.inline
-    def DINERS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DINERS = "DINERS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DINERS]
+    inline def DINERS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DINERS = "DINERS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DINERS]
     
-    @scala.inline
-    def IDEAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IDEAL = "IDEAL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IDEAL]
+    inline def IDEAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IDEAL = "IDEAL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IDEAL]
     
-    @scala.inline
-    def MAESTRO: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MAESTRO = "MAESTRO".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MAESTRO]
+    inline def MAESTRO: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MAESTRO = "MAESTRO".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MAESTRO]
     
-    @scala.inline
-    def MASTERPASS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MASTERPASS = "MASTERPASS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MASTERPASS]
+    inline def MASTERPASS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MASTERPASS = "MASTERPASS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MASTERPASS]
     
-    @scala.inline
-    def P24: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P24 = "P24".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P24]
+    inline def P24: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P24 = "P24".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P24]
     
-    @scala.inline
-    def PAYLIB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYLIB = "PAYLIB".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYLIB]
+    inline def PAYLIB: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYLIB = "PAYLIB".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PAYLIB]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -194,14 +170,11 @@ object card {
   trait CardValidity extends StObject
   object CardValidity {
     
-    @scala.inline
-    def INVALID: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INVALID = "INVALID".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INVALID]
+    inline def INVALID: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INVALID = "INVALID".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.INVALID]
     
-    @scala.inline
-    def UNKNOWN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNKNOWN]
+    inline def UNKNOWN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.UNKNOWN]
     
-    @scala.inline
-    def VALID: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALID = "VALID".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALID]
+    inline def VALID: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALID = "VALID".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALID]
   }
   
   trait UpdateCard extends StObject {
@@ -212,23 +185,18 @@ object card {
   }
   object UpdateCard {
     
-    @scala.inline
-    def apply(Id: String): UpdateCard = {
+    inline def apply(Id: String): UpdateCard = {
       val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateCard]
     }
     
-    @scala.inline
-    implicit class UpdateCardMutableBuilder[Self <: UpdateCard] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateCard](x: Self) {
       
-      @scala.inline
-      def setActive(value: `false`): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+      inline def setActive(value: `false`): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     }
   }
 }

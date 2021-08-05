@@ -13,19 +13,15 @@ trait SourceIpConfig extends StObject {
 }
 object SourceIpConfig {
   
-  @scala.inline
-  def apply(Cidrs: Cidrs): SourceIpConfig = {
+  inline def apply(Cidrs: Cidrs): SourceIpConfig = {
     val __obj = js.Dynamic.literal(Cidrs = Cidrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceIpConfig]
   }
   
-  @scala.inline
-  implicit class SourceIpConfigMutableBuilder[Self <: SourceIpConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SourceIpConfig](x: Self) {
     
-    @scala.inline
-    def setCidrs(value: Cidrs): Self = StObject.set(x, "Cidrs", value.asInstanceOf[js.Any])
+    inline def setCidrs(value: Cidrs): Self = StObject.set(x, "Cidrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrsVarargs(value: Cidr*): Self = StObject.set(x, "Cidrs", js.Array(value :_*))
+    inline def setCidrsVarargs(value: Cidr*): Self = StObject.set(x, "Cidrs", js.Array(value :_*))
   }
 }

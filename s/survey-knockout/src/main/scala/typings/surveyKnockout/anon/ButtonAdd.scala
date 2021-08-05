@@ -30,8 +30,7 @@ trait ButtonAdd extends StObject {
 }
 object ButtonAdd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     button: String,
     buttonAdd: String,
     buttonNext: String,
@@ -48,40 +47,28 @@ object ButtonAdd {
     __obj.asInstanceOf[ButtonAdd]
   }
   
-  @scala.inline
-  implicit class ButtonAddMutableBuilder[Self <: ButtonAdd] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonAdd](x: Self) {
     
-    @scala.inline
-    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonAdd(value: String): Self = StObject.set(x, "buttonAdd", value.asInstanceOf[js.Any])
+    inline def setButtonAdd(value: String): Self = StObject.set(x, "buttonAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonNext(value: String): Self = StObject.set(x, "buttonNext", value.asInstanceOf[js.Any])
+    inline def setButtonNext(value: String): Self = StObject.set(x, "buttonNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonPrev(value: String): Self = StObject.set(x, "buttonPrev", value.asInstanceOf[js.Any])
+    inline def setButtonPrev(value: String): Self = StObject.set(x, "buttonPrev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonRemove(value: String): Self = StObject.set(x, "buttonRemove", value.asInstanceOf[js.Any])
+    inline def setButtonRemove(value: String): Self = StObject.set(x, "buttonRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressBar(value: String): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
+    inline def setProgressBar(value: String): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressContainer(value: String): Self = StObject.set(x, "progressContainer", value.asInstanceOf[js.Any])
+    inline def setProgressContainer(value: String): Self = StObject.set(x, "progressContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressText(value: String): Self = StObject.set(x, "progressText", value.asInstanceOf[js.Any])
+    inline def setProgressText(value: String): Self = StObject.set(x, "progressText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

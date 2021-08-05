@@ -15,28 +15,21 @@ trait SemanticRolesResultObject extends StObject {
 }
 object SemanticRolesResultObject {
   
-  @scala.inline
-  def apply(): SemanticRolesResultObject = {
+  inline def apply(): SemanticRolesResultObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SemanticRolesResultObject]
   }
   
-  @scala.inline
-  implicit class SemanticRolesResultObjectMutableBuilder[Self <: SemanticRolesResultObject] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticRolesResultObject](x: Self) {
     
-    @scala.inline
-    def setKeywords(value: js.Array[SemanticRolesKeyword]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: js.Array[SemanticRolesKeyword]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setKeywordsVarargs(value: SemanticRolesKeyword*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: SemanticRolesKeyword*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

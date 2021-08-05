@@ -15,19 +15,15 @@ trait ReleaseDefinitionDeployStep
 }
 object ReleaseDefinitionDeployStep {
   
-  @scala.inline
-  def apply(id: Double, tasks: js.Array[WorkflowTask]): ReleaseDefinitionDeployStep = {
+  inline def apply(id: Double, tasks: js.Array[WorkflowTask]): ReleaseDefinitionDeployStep = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseDefinitionDeployStep]
   }
   
-  @scala.inline
-  implicit class ReleaseDefinitionDeployStepMutableBuilder[Self <: ReleaseDefinitionDeployStep] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseDefinitionDeployStep](x: Self) {
     
-    @scala.inline
-    def setTasks(value: js.Array[WorkflowTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: js.Array[WorkflowTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksVarargs(value: WorkflowTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: WorkflowTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

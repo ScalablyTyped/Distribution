@@ -17,38 +17,28 @@ object issueOptionsMod {
   }
   object IssueOptions {
     
-    @scala.inline
-    def apply(): IssueOptions = {
+    inline def apply(): IssueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IssueOptions]
     }
     
-    @scala.inline
-    implicit class IssueOptionsMutableBuilder[Self <: IssueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IssueOptions](x: Self) {
       
-      @scala.inline
-      def setExclude(value: IssuePredicateOption): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: IssuePredicateOption): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeFunction1(value: /* issue */ Issue => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
+      inline def setExcludeFunction1(value: /* issue */ Issue => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: (IssuePredicate | IssueMatch)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (IssuePredicate | IssueMatch)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: IssuePredicateOption): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: IssuePredicateOption): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeFunction1(value: /* issue */ Issue => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
+      inline def setIncludeFunction1(value: /* issue */ Issue => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: (IssuePredicate | IssueMatch)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (IssuePredicate | IssueMatch)*): Self = StObject.set(x, "include", js.Array(value :_*))
     }
   }
   

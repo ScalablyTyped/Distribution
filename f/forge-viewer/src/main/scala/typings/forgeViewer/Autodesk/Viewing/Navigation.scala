@@ -78,8 +78,7 @@ trait Navigation extends StObject {
 }
 object Navigation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dollyFromPoint: (Double, Vector3) => Unit,
     fitBounds: (Boolean, Box3) => js.Any,
     getAlignedUpVector: () => Vector3,
@@ -118,106 +117,72 @@ object Navigation {
     __obj.asInstanceOf[Navigation]
   }
   
-  @scala.inline
-  implicit class NavigationMutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
+  extension [Self <: Navigation](x: Self) {
     
-    @scala.inline
-    def setDollyFromPoint(value: (Double, Vector3) => Unit): Self = StObject.set(x, "dollyFromPoint", js.Any.fromFunction2(value))
+    inline def setDollyFromPoint(value: (Double, Vector3) => Unit): Self = StObject.set(x, "dollyFromPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFitBounds(value: (Boolean, Box3) => js.Any): Self = StObject.set(x, "fitBounds", js.Any.fromFunction2(value))
+    inline def setFitBounds(value: (Boolean, Box3) => js.Any): Self = StObject.set(x, "fitBounds", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetAlignedUpVector(value: () => Vector3): Self = StObject.set(x, "getAlignedUpVector", js.Any.fromFunction0(value))
+    inline def setGetAlignedUpVector(value: () => Vector3): Self = StObject.set(x, "getAlignedUpVector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCamera(value: () => js.Any): Self = StObject.set(x, "getCamera", js.Any.fromFunction0(value))
+    inline def setGetCamera(value: () => js.Any): Self = StObject.set(x, "getCamera", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCameraRightVector(value: Boolean => Vector3): Self = StObject.set(x, "getCameraRightVector", js.Any.fromFunction1(value))
+    inline def setGetCameraRightVector(value: Boolean => Vector3): Self = StObject.set(x, "getCameraRightVector", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCameraUpVector(value: () => Vector3): Self = StObject.set(x, "getCameraUpVector", js.Any.fromFunction0(value))
+    inline def setGetCameraUpVector(value: () => Vector3): Self = StObject.set(x, "getCameraUpVector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEyeVector(value: () => Vector3): Self = StObject.set(x, "getEyeVector", js.Any.fromFunction0(value))
+    inline def setGetEyeVector(value: () => Vector3): Self = StObject.set(x, "getEyeVector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFovMax(value: () => Double): Self = StObject.set(x, "getFovMax", js.Any.fromFunction0(value))
+    inline def setGetFovMax(value: () => Double): Self = StObject.set(x, "getFovMax", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFovMin(value: () => Double): Self = StObject.set(x, "getFovMin", js.Any.fromFunction0(value))
+    inline def setGetFovMin(value: () => Double): Self = StObject.set(x, "getFovMin", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIs2D(value: () => Boolean): Self = StObject.set(x, "getIs2D", js.Any.fromFunction0(value))
+    inline def setGetIs2D(value: () => Boolean): Self = StObject.set(x, "getIs2D", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPivotPoint(value: () => Vector3): Self = StObject.set(x, "getPivotPoint", js.Any.fromFunction0(value))
+    inline def setGetPivotPoint(value: () => Vector3): Self = StObject.set(x, "getPivotPoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPivotSetFlag(value: () => Boolean): Self = StObject.set(x, "getPivotSetFlag", js.Any.fromFunction0(value))
+    inline def setGetPivotSetFlag(value: () => Boolean): Self = StObject.set(x, "getPivotSetFlag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Vector3): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Vector3): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReverseZoomDirection(value: () => Boolean): Self = StObject.set(x, "getReverseZoomDirection", js.Any.fromFunction0(value))
+    inline def setGetReverseZoomDirection(value: () => Boolean): Self = StObject.set(x, "getReverseZoomDirection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScreenViewport(value: () => ClientRect): Self = StObject.set(x, "getScreenViewport", js.Any.fromFunction0(value))
+    inline def setGetScreenViewport(value: () => ClientRect): Self = StObject.set(x, "getScreenViewport", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTarget(value: () => Vector3): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+    inline def setGetTarget(value: () => Vector3): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUsePivotAlways(value: () => Boolean): Self = StObject.set(x, "getUsePivotAlways", js.Any.fromFunction0(value))
+    inline def setGetUsePivotAlways(value: () => Boolean): Self = StObject.set(x, "getUsePivotAlways", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorldPoint(value: (Double, Double) => Vector3): Self = StObject.set(x, "getWorldPoint", js.Any.fromFunction2(value))
+    inline def setGetWorldPoint(value: (Double, Double) => Vector3): Self = StObject.set(x, "getWorldPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScreenToViewport(value: (Double, Double) => Vector3): Self = StObject.set(x, "screenToViewport", js.Any.fromFunction2(value))
+    inline def setScreenToViewport(value: (Double, Double) => Vector3): Self = StObject.set(x, "screenToViewport", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetCameraUpVector(value: Vector => Unit): Self = StObject.set(x, "setCameraUpVector", js.Any.fromFunction1(value))
+    inline def setSetCameraUpVector(value: Vector => Unit): Self = StObject.set(x, "setCameraUpVector", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOrbitPastWorldPoles(value: Boolean => js.Any): Self = StObject.set(x, "setOrbitPastWorldPoles", js.Any.fromFunction1(value))
+    inline def setSetOrbitPastWorldPoles(value: Boolean => js.Any): Self = StObject.set(x, "setOrbitPastWorldPoles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPivotPoint(value: Vector3 => Unit): Self = StObject.set(x, "setPivotPoint", js.Any.fromFunction1(value))
+    inline def setSetPivotPoint(value: Vector3 => Unit): Self = StObject.set(x, "setPivotPoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPosition(value: Vector3 => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+    inline def setSetPosition(value: Vector3 => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetReverseZoomDirection(value: Boolean => Unit): Self = StObject.set(x, "setReverseZoomDirection", js.Any.fromFunction1(value))
+    inline def setSetReverseZoomDirection(value: Boolean => Unit): Self = StObject.set(x, "setReverseZoomDirection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScreenViewport(value: ClientRect => Unit): Self = StObject.set(x, "setScreenViewport", js.Any.fromFunction1(value))
+    inline def setSetScreenViewport(value: ClientRect => Unit): Self = StObject.set(x, "setScreenViewport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTarget(value: Vector3 => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
+    inline def setSetTarget(value: Vector3 => Unit): Self = StObject.set(x, "setTarget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseLeftHandedInput(value: Boolean => js.Any): Self = StObject.set(x, "setUseLeftHandedInput", js.Any.fromFunction1(value))
+    inline def setSetUseLeftHandedInput(value: Boolean => js.Any): Self = StObject.set(x, "setUseLeftHandedInput", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUsePivotAlways(value: Boolean => js.Any): Self = StObject.set(x, "setUsePivotAlways", js.Any.fromFunction1(value))
+    inline def setSetUsePivotAlways(value: Boolean => js.Any): Self = StObject.set(x, "setUsePivotAlways", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVerticalFov(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setVerticalFov", js.Any.fromFunction2(value))
+    inline def setSetVerticalFov(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setVerticalFov", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetView(value: (Vector3, Vector3) => Unit): Self = StObject.set(x, "setView", js.Any.fromFunction2(value))
+    inline def setSetView(value: (Vector3, Vector3) => Unit): Self = StObject.set(x, "setView", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetZoomTowardsPivot(value: Boolean => js.Any): Self = StObject.set(x, "setZoomTowardsPivot", js.Any.fromFunction1(value))
+    inline def setSetZoomTowardsPivot(value: Boolean => js.Any): Self = StObject.set(x, "setZoomTowardsPivot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToOrthographic(value: () => Unit): Self = StObject.set(x, "toOrthographic", js.Any.fromFunction0(value))
+    inline def setToOrthographic(value: () => Unit): Self = StObject.set(x, "toOrthographic", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToPerspective(value: () => Unit): Self = StObject.set(x, "toPerspective", js.Any.fromFunction0(value))
+    inline def setToPerspective(value: () => Unit): Self = StObject.set(x, "toPerspective", js.Any.fromFunction0(value))
   }
 }

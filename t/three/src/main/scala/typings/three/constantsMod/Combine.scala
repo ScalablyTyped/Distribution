@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait Combine extends StObject
 object Combine {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[Combine & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Combine")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Combine & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[Combine & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Combine")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Combine & scala.Nothing]]
 }

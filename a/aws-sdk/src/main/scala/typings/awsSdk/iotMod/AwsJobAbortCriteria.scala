@@ -28,8 +28,7 @@ trait AwsJobAbortCriteria extends StObject {
 }
 object AwsJobAbortCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: AwsJobAbortCriteriaAbortAction,
     failureType: AwsJobAbortCriteriaFailureType,
     minNumberOfExecutedThings: AwsJobAbortCriteriaMinimumNumberOfExecutedThings,
@@ -39,19 +38,14 @@ object AwsJobAbortCriteria {
     __obj.asInstanceOf[AwsJobAbortCriteria]
   }
   
-  @scala.inline
-  implicit class AwsJobAbortCriteriaMutableBuilder[Self <: AwsJobAbortCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: AwsJobAbortCriteria](x: Self) {
     
-    @scala.inline
-    def setAction(value: AwsJobAbortCriteriaAbortAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: AwsJobAbortCriteriaAbortAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureType(value: AwsJobAbortCriteriaFailureType): Self = StObject.set(x, "failureType", value.asInstanceOf[js.Any])
+    inline def setFailureType(value: AwsJobAbortCriteriaFailureType): Self = StObject.set(x, "failureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinNumberOfExecutedThings(value: AwsJobAbortCriteriaMinimumNumberOfExecutedThings): Self = StObject.set(x, "minNumberOfExecutedThings", value.asInstanceOf[js.Any])
+    inline def setMinNumberOfExecutedThings(value: AwsJobAbortCriteriaMinimumNumberOfExecutedThings): Self = StObject.set(x, "minNumberOfExecutedThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdPercentage(value: AwsJobAbortCriteriaAbortThresholdPercentage): Self = StObject.set(x, "thresholdPercentage", value.asInstanceOf[js.Any])
+    inline def setThresholdPercentage(value: AwsJobAbortCriteriaAbortThresholdPercentage): Self = StObject.set(x, "thresholdPercentage", value.asInstanceOf[js.Any])
   }
 }

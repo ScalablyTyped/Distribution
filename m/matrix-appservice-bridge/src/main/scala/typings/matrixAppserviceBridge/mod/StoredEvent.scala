@@ -38,6 +38,5 @@ object StoredEvent {
     * Set data about this event from a serialized data object.
     * @param data The serialized data
     */
-  @scala.inline
-  def deserialize(data: StoredEventDoc): typings.matrixAppserviceBridge.eventMod.StoredEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppserviceBridge.eventMod.StoredEvent]
+  inline def deserialize(data: StoredEventDoc): typings.matrixAppserviceBridge.eventMod.StoredEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppserviceBridge.eventMod.StoredEvent]
 }

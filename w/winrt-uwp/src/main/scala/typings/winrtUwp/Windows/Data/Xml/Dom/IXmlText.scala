@@ -18,8 +18,7 @@ trait IXmlText
 }
 object IXmlText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     appendData: String => Unit,
     attributes: XmlNamedNodeMap,
@@ -60,10 +59,8 @@ object IXmlText {
     __obj.asInstanceOf[IXmlText]
   }
   
-  @scala.inline
-  implicit class IXmlTextMutableBuilder[Self <: IXmlText] (val x: Self) extends AnyVal {
+  extension [Self <: IXmlText](x: Self) {
     
-    @scala.inline
-    def setSplitText(value: Double => IXmlText): Self = StObject.set(x, "splitText", js.Any.fromFunction1(value))
+    inline def setSplitText(value: Double => IXmlText): Self = StObject.set(x, "splitText", js.Any.fromFunction1(value))
   }
 }

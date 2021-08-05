@@ -20,26 +20,20 @@ object typesSegmentReferenceMod {
   }
   object SegmentReference {
     
-    @scala.inline
-    def apply(): SegmentReference = {
+    inline def apply(): SegmentReference = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SegmentReference]
     }
     
-    @scala.inline
-    implicit class SegmentReferenceMutableBuilder[Self <: SegmentReference] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentReference](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
     }
   }
   

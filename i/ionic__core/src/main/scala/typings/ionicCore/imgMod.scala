@@ -15,7 +15,7 @@ object imgMod {
     extends StObject
        with ComponentInterface {
     
-    var addIO: js.Any = js.native
+    /* private */ var addIO: js.Any = js.native
     
     /**
       * This attribute defines the alternative text describing the image.
@@ -29,7 +29,7 @@ object imgMod {
     
     var el: HTMLElement = js.native
     
-    var io: js.Any = js.native
+    /* private */ var io: js.Any = js.native
     
     /** Emitted when the img fails to load */
     var ionError: EventEmitter[Unit] = js.native
@@ -40,17 +40,17 @@ object imgMod {
     /** Emitted when the img src has been set */
     var ionImgWillLoad: EventEmitter[Unit] = js.native
     
-    var load: js.Any = js.native
+    /* private */ var load: js.Any = js.native
     
     var loadError: js.UndefOr[js.Function0[Unit]] = js.native
     
     var loadSrc: js.UndefOr[String] = js.native
     
-    var onError: js.Any = js.native
+    /* private */ var onError: js.Any = js.native
     
-    var onLoad: js.Any = js.native
+    /* private */ var onLoad: js.Any = js.native
     
-    var removeIO: js.Any = js.native
+    /* private */ var removeIO: js.Any = js.native
     
     @JSName("render")
     def render_MImg(): js.Any = js.native

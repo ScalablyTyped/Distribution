@@ -23,25 +23,19 @@ trait SchemaBuild extends StObject {
 }
 object SchemaBuild {
   
-  @scala.inline
-  def apply(): SchemaBuild = {
+  inline def apply(): SchemaBuild = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuild]
   }
   
-  @scala.inline
-  implicit class SchemaBuildMutableBuilder[Self <: SchemaBuild] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuild](x: Self) {
     
-    @scala.inline
-    def setBuilderVersion(value: String): Self = StObject.set(x, "builderVersion", value.asInstanceOf[js.Any])
+    inline def setBuilderVersion(value: String): Self = StObject.set(x, "builderVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuilderVersionUndefined: Self = StObject.set(x, "builderVersion", js.undefined)
+    inline def setBuilderVersionUndefined: Self = StObject.set(x, "builderVersion", js.undefined)
     
-    @scala.inline
-    def setSignature(value: SchemaBuildSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: SchemaBuildSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

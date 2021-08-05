@@ -16,8 +16,7 @@ trait MediaDimensions extends StObject {
 }
 object MediaDimensions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFullMediaDimensions: () => Dimensions,
     getPreviewMediaDimensions: () => Dimensions,
     getShrunkenMediaDimensions: () => Dimensions,
@@ -27,19 +26,14 @@ object MediaDimensions {
     __obj.asInstanceOf[MediaDimensions]
   }
   
-  @scala.inline
-  implicit class MediaDimensionsMutableBuilder[Self <: MediaDimensions] (val x: Self) extends AnyVal {
+  extension [Self <: MediaDimensions](x: Self) {
     
-    @scala.inline
-    def setGetFullMediaDimensions(value: () => Dimensions): Self = StObject.set(x, "getFullMediaDimensions", js.Any.fromFunction0(value))
+    inline def setGetFullMediaDimensions(value: () => Dimensions): Self = StObject.set(x, "getFullMediaDimensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreviewMediaDimensions(value: () => Dimensions): Self = StObject.set(x, "getPreviewMediaDimensions", js.Any.fromFunction0(value))
+    inline def setGetPreviewMediaDimensions(value: () => Dimensions): Self = StObject.set(x, "getPreviewMediaDimensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShrunkenMediaDimensions(value: () => Dimensions): Self = StObject.set(x, "getShrunkenMediaDimensions", js.Any.fromFunction0(value))
+    inline def setGetShrunkenMediaDimensions(value: () => Dimensions): Self = StObject.set(x, "getShrunkenMediaDimensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVideoThumbnailDimensions(value: () => Dimensions): Self = StObject.set(x, "getVideoThumbnailDimensions", js.Any.fromFunction0(value))
+    inline def setGetVideoThumbnailDimensions(value: () => Dimensions): Self = StObject.set(x, "getVideoThumbnailDimensions", js.Any.fromFunction0(value))
   }
 }

@@ -26,10 +26,8 @@ object mod {
     * });
     * app.listen(port, () => console.log(`Example app listening on port ${port}!`));
     */
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("server-timing-header", JSImport.Namespace)
   @js.native
@@ -182,8 +180,7 @@ object mod {
       * @return — server-timing header value
       */
     /* static member */
-    @scala.inline
-    def newStyle(name: String, description: String, duration: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("newStyle")(name.asInstanceOf[js.Any], description.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def newStyle(name: String, description: String, duration: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("newStyle")(name.asInstanceOf[js.Any], description.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Build server-timing header value by old specification
@@ -193,8 +190,7 @@ object mod {
       * @return — server-timing header value
       */
     /* static member */
-    @scala.inline
-    def oldStyle(name: String, description: String, duration: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oldStyle")(name.asInstanceOf[js.Any], description.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def oldStyle(name: String, description: String, duration: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oldStyle")(name.asInstanceOf[js.Any], description.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /**
@@ -219,8 +215,7 @@ object mod {
   }
   object Metric {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       duration: Double,
       from: js.Tuple2[Double, Double],
@@ -231,23 +226,17 @@ object mod {
       __obj.asInstanceOf[Metric]
     }
     
-    @scala.inline
-    implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+    extension [Self <: Metric](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,20 +258,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSendHeaders(value: Boolean): Self = StObject.set(x, "sendHeaders", value.asInstanceOf[js.Any])
+      inline def setSendHeaders(value: Boolean): Self = StObject.set(x, "sendHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendHeadersUndefined: Self = StObject.set(x, "sendHeaders", js.undefined)
+      inline def setSendHeadersUndefined: Self = StObject.set(x, "sendHeaders", js.undefined)
     }
   }
   
@@ -294,17 +279,14 @@ object mod {
     }
     object Request {
       
-      @scala.inline
-      def apply(serverTiming: ServerTiming): Request = {
+      inline def apply(serverTiming: ServerTiming): Request = {
         val __obj = js.Dynamic.literal(serverTiming = serverTiming.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setServerTiming(value: ServerTiming): Self = StObject.set(x, "serverTiming", value.asInstanceOf[js.Any])
+        inline def setServerTiming(value: ServerTiming): Self = StObject.set(x, "serverTiming", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -20,32 +20,24 @@ trait Table
 }
 object Table {
   
-  @scala.inline
-  def apply(children: js.Array[TableContent]): Table = {
+  inline def apply(children: js.Array[TableContent]): Table = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("table")
     __obj.asInstanceOf[Table]
   }
   
-  @scala.inline
-  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+  extension [Self <: Table](x: Self) {
     
-    @scala.inline
-    def setAlign(value: js.Array[AlignType]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: js.Array[AlignType]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setAlignVarargs(value: AlignType*): Self = StObject.set(x, "align", js.Array(value :_*))
+    inline def setAlignVarargs(value: AlignType*): Self = StObject.set(x, "align", js.Array(value :_*))
     
-    @scala.inline
-    def setChildren(value: js.Array[TableContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[TableContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: TableContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TableContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: table): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: table): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

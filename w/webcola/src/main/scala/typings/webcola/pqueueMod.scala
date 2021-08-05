@@ -40,7 +40,7 @@ object pqueueMod {
     
     def removeMin(lessThan: js.Function2[/* a */ T, /* b */ T, Boolean]): PairingHeap[T] = js.native
     
-    var subheaps: js.Any = js.native
+    /* private */ var subheaps: js.Any = js.native
     
     def toString(selector: js.Any): String = js.native
   }
@@ -58,7 +58,7 @@ object pqueueMod {
     
     def isHeap(): Boolean = js.native
     
-    var lessThan: js.Any = js.native
+    /* private */ var lessThan: js.Any = js.native
     
     def pop(): T = js.native
     
@@ -71,7 +71,7 @@ object pqueueMod {
       setHeapNode: js.Function2[/* e */ T, /* h */ PairingHeap[T], Unit]
     ): Unit = js.native
     
-    var root: js.Any = js.native
+    /* private */ var root: js.Any = js.native
     
     def toString(selector: js.Any): String = js.native
     

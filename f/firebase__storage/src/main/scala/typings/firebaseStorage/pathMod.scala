@@ -10,12 +10,9 @@ object pathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def child(path: String, childPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("child")(path.asInstanceOf[js.Any], childPath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def child(path: String, childPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("child")(path.asInstanceOf[js.Any], childPath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def lastComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lastComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def lastComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lastComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parent(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parent")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def parent(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parent")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

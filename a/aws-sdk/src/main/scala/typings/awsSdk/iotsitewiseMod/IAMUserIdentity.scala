@@ -13,16 +13,13 @@ trait IAMUserIdentity extends StObject {
 }
 object IAMUserIdentity {
   
-  @scala.inline
-  def apply(arn: ARN): IAMUserIdentity = {
+  inline def apply(arn: ARN): IAMUserIdentity = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAMUserIdentity]
   }
   
-  @scala.inline
-  implicit class IAMUserIdentityMutableBuilder[Self <: IAMUserIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: IAMUserIdentity](x: Self) {
     
-    @scala.inline
-    def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

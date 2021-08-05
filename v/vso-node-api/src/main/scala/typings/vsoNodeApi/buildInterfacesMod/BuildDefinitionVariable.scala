@@ -23,22 +23,17 @@ trait BuildDefinitionVariable extends StObject {
 }
 object BuildDefinitionVariable {
   
-  @scala.inline
-  def apply(allowOverride: Boolean, isSecret: Boolean, value: String): BuildDefinitionVariable = {
+  inline def apply(allowOverride: Boolean, isSecret: Boolean, value: String): BuildDefinitionVariable = {
     val __obj = js.Dynamic.literal(allowOverride = allowOverride.asInstanceOf[js.Any], isSecret = isSecret.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildDefinitionVariable]
   }
   
-  @scala.inline
-  implicit class BuildDefinitionVariableMutableBuilder[Self <: BuildDefinitionVariable] (val x: Self) extends AnyVal {
+  extension [Self <: BuildDefinitionVariable](x: Self) {
     
-    @scala.inline
-    def setAllowOverride(value: Boolean): Self = StObject.set(x, "allowOverride", value.asInstanceOf[js.Any])
+    inline def setAllowOverride(value: Boolean): Self = StObject.set(x, "allowOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSecret(value: Boolean): Self = StObject.set(x, "isSecret", value.asInstanceOf[js.Any])
+    inline def setIsSecret(value: Boolean): Self = StObject.set(x, "isSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait TlsValidationContextAcmTrust extends StObject {
 }
 object TlsValidationContextAcmTrust {
   
-  @scala.inline
-  def apply(certificateAuthorityArns: CertificateAuthorityArns): TlsValidationContextAcmTrust = {
+  inline def apply(certificateAuthorityArns: CertificateAuthorityArns): TlsValidationContextAcmTrust = {
     val __obj = js.Dynamic.literal(certificateAuthorityArns = certificateAuthorityArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[TlsValidationContextAcmTrust]
   }
   
-  @scala.inline
-  implicit class TlsValidationContextAcmTrustMutableBuilder[Self <: TlsValidationContextAcmTrust] (val x: Self) extends AnyVal {
+  extension [Self <: TlsValidationContextAcmTrust](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArns(value: CertificateAuthorityArns): Self = StObject.set(x, "certificateAuthorityArns", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArns(value: CertificateAuthorityArns): Self = StObject.set(x, "certificateAuthorityArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityArnsVarargs(value: Arn*): Self = StObject.set(x, "certificateAuthorityArns", js.Array(value :_*))
+    inline def setCertificateAuthorityArnsVarargs(value: Arn*): Self = StObject.set(x, "certificateAuthorityArns", js.Array(value :_*))
   }
 }

@@ -23,55 +23,39 @@ trait PartialPickImplkeyofImplApi extends StObject {
 }
 object PartialPickImplkeyofImplApi {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplApi = {
+  inline def apply(): PartialPickImplkeyofImplApi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplApi]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplApiMutableBuilder[Self <: PartialPickImplkeyofImplApi] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplApi](x: Self) {
     
-    @scala.inline
-    def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+    inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setMissingTab(value: String): Self = StObject.set(x, "missingTab", value.asInstanceOf[js.Any])
+    inline def setMissingTab(value: String): Self = StObject.set(x, "missingTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingTabUndefined: Self = StObject.set(x, "missingTab", js.undefined)
+    inline def setMissingTabUndefined: Self = StObject.set(x, "missingTab", js.undefined)
     
-    @scala.inline
-    def setNoContent(value: String): Self = StObject.set(x, "noContent", value.asInstanceOf[js.Any])
+    inline def setNoContent(value: String): Self = StObject.set(x, "noContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoContentUndefined: Self = StObject.set(x, "noContent", js.undefined)
+    inline def setNoContentUndefined: Self = StObject.set(x, "noContent", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setRecursion(value: String): Self = StObject.set(x, "recursion", value.asInstanceOf[js.Any])
+    inline def setRecursion(value: String): Self = StObject.set(x, "recursion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursionUndefined: Self = StObject.set(x, "recursion", js.undefined)
+    inline def setRecursionUndefined: Self = StObject.set(x, "recursion", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

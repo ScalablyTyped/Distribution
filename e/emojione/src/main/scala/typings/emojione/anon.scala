@@ -18,29 +18,22 @@ object anon {
   }
   object Fname {
     
-    @scala.inline
-    def apply(fname: String, isCanonical: Boolean, uc: String, unicode: js.Array[String]): Fname = {
+    inline def apply(fname: String, isCanonical: Boolean, uc: String, unicode: js.Array[String]): Fname = {
       val __obj = js.Dynamic.literal(fname = fname.asInstanceOf[js.Any], isCanonical = isCanonical.asInstanceOf[js.Any], uc = uc.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fname]
     }
     
-    @scala.inline
-    implicit class FnameMutableBuilder[Self <: Fname] (val x: Self) extends AnyVal {
+    extension [Self <: Fname](x: Self) {
       
-      @scala.inline
-      def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
+      inline def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCanonical(value: Boolean): Self = StObject.set(x, "isCanonical", value.asInstanceOf[js.Any])
+      inline def setIsCanonical(value: Boolean): Self = StObject.set(x, "isCanonical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUc(value: String): Self = StObject.set(x, "uc", value.asInstanceOf[js.Any])
+      inline def setUc(value: String): Self = StObject.set(x, "uc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicode(value: js.Array[String]): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+      inline def setUnicode(value: js.Array[String]): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeVarargs(value: String*): Self = StObject.set(x, "unicode", js.Array(value :_*))
+      inline def setUnicodeVarargs(value: String*): Self = StObject.set(x, "unicode", js.Array(value :_*))
     }
   }
 }

@@ -16,8 +16,7 @@ trait AggregateIdentity extends StObject {
 }
 object AggregateIdentity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aggregateIdentity: scala.Double,
     importedIdentity: scala.Double,
     none: scala.Double,
@@ -27,19 +26,14 @@ object AggregateIdentity {
     __obj.asInstanceOf[AggregateIdentity]
   }
   
-  @scala.inline
-  implicit class AggregateIdentityMutableBuilder[Self <: AggregateIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateIdentity](x: Self) {
     
-    @scala.inline
-    def setAggregateIdentity(value: scala.Double): Self = StObject.set(x, "aggregateIdentity", value.asInstanceOf[js.Any])
+    inline def setAggregateIdentity(value: scala.Double): Self = StObject.set(x, "aggregateIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportedIdentity(value: scala.Double): Self = StObject.set(x, "importedIdentity", value.asInstanceOf[js.Any])
+    inline def setImportedIdentity(value: scala.Double): Self = StObject.set(x, "importedIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdentity(value: scala.Double): Self = StObject.set(x, "serviceIdentity", value.asInstanceOf[js.Any])
+    inline def setServiceIdentity(value: scala.Double): Self = StObject.set(x, "serviceIdentity", value.asInstanceOf[js.Any])
   }
 }

@@ -50,8 +50,7 @@ trait XIntrospection
 }
 object XIntrospection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     inspect: js.Any => XIntrospectionAccess,
     queryInterface: `type` => js.Any,
@@ -61,10 +60,8 @@ object XIntrospection {
     __obj.asInstanceOf[XIntrospection]
   }
   
-  @scala.inline
-  implicit class XIntrospectionMutableBuilder[Self <: XIntrospection] (val x: Self) extends AnyVal {
+  extension [Self <: XIntrospection](x: Self) {
     
-    @scala.inline
-    def setInspect(value: js.Any => XIntrospectionAccess): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
+    inline def setInspect(value: js.Any => XIntrospectionAccess): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
   }
 }

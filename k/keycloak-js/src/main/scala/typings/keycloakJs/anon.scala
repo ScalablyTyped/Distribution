@@ -12,17 +12,14 @@ object anon {
   }
   object RedirectUri {
     
-    @scala.inline
-    def apply(redirectUri: String): RedirectUri = {
+    inline def apply(redirectUri: String): RedirectUri = {
       val __obj = js.Dynamic.literal(redirectUri = redirectUri.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedirectUri]
     }
     
-    @scala.inline
-    implicit class RedirectUriMutableBuilder[Self <: RedirectUri] (val x: Self) extends AnyVal {
+    extension [Self <: RedirectUri](x: Self) {
       
-      @scala.inline
-      def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object Rptendpoint {
     
-    @scala.inline
-    def apply(rpt_endpoint: String): Rptendpoint = {
+    inline def apply(rpt_endpoint: String): Rptendpoint = {
       val __obj = js.Dynamic.literal(rpt_endpoint = rpt_endpoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rptendpoint]
     }
     
-    @scala.inline
-    implicit class RptendpointMutableBuilder[Self <: Rptendpoint] (val x: Self) extends AnyVal {
+    extension [Self <: Rptendpoint](x: Self) {
       
-      @scala.inline
-      def setRpt_endpoint(value: String): Self = StObject.set(x, "rpt_endpoint", value.asInstanceOf[js.Any])
+      inline def setRpt_endpoint(value: String): Self = StObject.set(x, "rpt_endpoint", value.asInstanceOf[js.Any])
     }
   }
 }

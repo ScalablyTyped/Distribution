@@ -33,18 +33,15 @@ object chromeLauncherMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def defaultFlags(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFlags")().asInstanceOf[js.Array[String]]
+    inline def defaultFlags(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFlags")().asInstanceOf[js.Array[String]]
     
     /** Returns the highest priority chrome installation. */
     /* static member */
-    @scala.inline
-    def getFirstInstallation(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstInstallation")().asInstanceOf[js.UndefOr[String]]
+    inline def getFirstInstallation(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstInstallation")().asInstanceOf[js.UndefOr[String]]
     
     /** Returns all available chrome installations in decreasing priority order. */
     /* static member */
-    @scala.inline
-    def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
+    inline def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
   }
   
   @JSImport("chrome-launcher/dist/chrome-launcher", "Launcher")
@@ -56,27 +53,27 @@ object chromeLauncherMod {
     
     var chrome: js.UndefOr[ChildProcess] = js.native
     
-    var chromeFlags: js.Any = js.native
+    /* private */ var chromeFlags: js.Any = js.native
     
-    var chromePath: js.Any = js.native
+    /* private */ var chromePath: js.Any = js.native
     
-    var cleanup: js.Any = js.native
+    /* private */ var cleanup: js.Any = js.native
     
-    var connectionPollInterval: js.Any = js.native
+    /* private */ var connectionPollInterval: js.Any = js.native
     
     def destroyTmp(): js.Promise[js.Any] = js.native
     
-    var envVars: js.Any = js.native
+    /* private */ var envVars: js.Any = js.native
     
-    var errFile: js.Any = js.native
+    /* private */ var errFile: js.Any = js.native
     
     /* private */ def flags: js.Any = js.native
     
-    var fs: js.Any = js.native
+    /* private */ var fs: js.Any = js.native
     
-    var ignoreDefaultFlags: js.Any = js.native
+    /* private */ var ignoreDefaultFlags: js.Any = js.native
     
-    var isDebuggerReady: js.Any = js.native
+    /* private */ var isDebuggerReady: js.Any = js.native
     
     def kill(): js.Promise[js.Object] = js.native
     
@@ -84,33 +81,33 @@ object chromeLauncherMod {
     
     def makeTmpDir(): String = js.native
     
-    var maxConnectionRetries: js.Any = js.native
+    /* private */ var maxConnectionRetries: js.Any = js.native
     
-    var opts: js.Any = js.native
+    /* private */ var opts: js.Any = js.native
     
-    var outFile: js.Any = js.native
+    /* private */ var outFile: js.Any = js.native
     
     var pid: js.UndefOr[Double] = js.native
     
-    var pidFile: js.Any = js.native
+    /* private */ var pidFile: js.Any = js.native
     
     var port: js.UndefOr[Double] = js.native
     
     def prepare(): Unit = js.native
     
-    var requestedPort: js.Any = js.native
+    /* private */ var requestedPort: js.Any = js.native
     
-    var rimraf: js.Any = js.native
+    /* private */ var rimraf: js.Any = js.native
     
-    var spawn: js.Any = js.native
+    /* private */ var spawn: js.Any = js.native
     
-    var spawnProcess: js.Any = js.native
+    /* private */ var spawnProcess: js.Any = js.native
     
-    var startingUrl: js.Any = js.native
+    /* private */ var startingUrl: js.Any = js.native
     
-    var tmpDirandPidFileReady: js.Any = js.native
+    /* private */ var tmpDirandPidFileReady: js.Any = js.native
     
-    var useDefaultProfile: js.Any = js.native
+    /* private */ var useDefaultProfile: js.Any = js.native
     
     var userDataDir: js.UndefOr[String] = js.native
     
@@ -123,27 +120,21 @@ object chromeLauncherMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def defaultFlags(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFlags")().asInstanceOf[js.Array[String]]
+    inline def defaultFlags(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFlags")().asInstanceOf[js.Array[String]]
     
     /** Returns the highest priority chrome installation. */
     /* static member */
-    @scala.inline
-    def getFirstInstallation(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstInstallation")().asInstanceOf[js.UndefOr[String]]
+    inline def getFirstInstallation(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstInstallation")().asInstanceOf[js.UndefOr[String]]
     
     /** Returns all available chrome installations in decreasing priority order. */
     /* static member */
-    @scala.inline
-    def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
+    inline def getInstallations(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallations")().asInstanceOf[js.Array[String]]
   }
   
-  @scala.inline
-  def killAll(): js.Promise[js.Array[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("killAll")().asInstanceOf[js.Promise[js.Array[Error]]]
+  inline def killAll(): js.Promise[js.Array[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("killAll")().asInstanceOf[js.Promise[js.Array[Error]]]
   
-  @scala.inline
-  def launch(): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[LaunchedChrome]]
-  @scala.inline
-  def launch(opts: Options): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LaunchedChrome]]
+  inline def launch(): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")().asInstanceOf[js.Promise[LaunchedChrome]]
+  inline def launch(opts: Options): js.Promise[LaunchedChrome] = ^.asInstanceOf[js.Dynamic].applyDynamic("launch")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LaunchedChrome]]
   
   trait LaunchedChrome extends StObject {
     
@@ -157,26 +148,20 @@ object chromeLauncherMod {
   }
   object LaunchedChrome {
     
-    @scala.inline
-    def apply(kill: () => js.Promise[js.Object], pid: Double, port: Double, process: ChildProcess): LaunchedChrome = {
+    inline def apply(kill: () => js.Promise[js.Object], pid: Double, port: Double, process: ChildProcess): LaunchedChrome = {
       val __obj = js.Dynamic.literal(kill = js.Any.fromFunction0(kill), pid = pid.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any])
       __obj.asInstanceOf[LaunchedChrome]
     }
     
-    @scala.inline
-    implicit class LaunchedChromeMutableBuilder[Self <: LaunchedChrome] (val x: Self) extends AnyVal {
+    extension [Self <: LaunchedChrome](x: Self) {
       
-      @scala.inline
-      def setKill(value: () => js.Promise[js.Object]): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
+      inline def setKill(value: () => js.Promise[js.Object]): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcess(value: ChildProcess): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+      inline def setProcess(value: ChildProcess): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,32 +175,24 @@ object chromeLauncherMod {
   }
   object ModuleOverrides {
     
-    @scala.inline
-    def apply(): ModuleOverrides = {
+    inline def apply(): ModuleOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModuleOverrides]
     }
     
-    @scala.inline
-    implicit class ModuleOverridesMutableBuilder[Self <: ModuleOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: ModuleOverrides](x: Self) {
       
-      @scala.inline
-      def setFs(value: Typeoffs): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Typeoffs): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setRimraf(value: (/* path */ String, /* callback */ js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "rimraf", js.Any.fromFunction2(value))
+      inline def setRimraf(value: (/* path */ String, /* callback */ js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "rimraf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRimrafUndefined: Self = StObject.set(x, "rimraf", js.undefined)
+      inline def setRimrafUndefined: Self = StObject.set(x, "rimraf", js.undefined)
       
-      @scala.inline
-      def setSpawn(value: FnCall): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
+      inline def setSpawn(value: FnCall): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpawnUndefined: Self = StObject.set(x, "spawn", js.undefined)
+      inline def setSpawnUndefined: Self = StObject.set(x, "spawn", js.undefined)
     }
   }
   
@@ -245,83 +222,58 @@ object chromeLauncherMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setChromeFlags(value: js.Array[String]): Self = StObject.set(x, "chromeFlags", value.asInstanceOf[js.Any])
+      inline def setChromeFlags(value: js.Array[String]): Self = StObject.set(x, "chromeFlags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromeFlagsUndefined: Self = StObject.set(x, "chromeFlags", js.undefined)
+      inline def setChromeFlagsUndefined: Self = StObject.set(x, "chromeFlags", js.undefined)
       
-      @scala.inline
-      def setChromeFlagsVarargs(value: String*): Self = StObject.set(x, "chromeFlags", js.Array(value :_*))
+      inline def setChromeFlagsVarargs(value: String*): Self = StObject.set(x, "chromeFlags", js.Array(value :_*))
       
-      @scala.inline
-      def setChromePath(value: String): Self = StObject.set(x, "chromePath", value.asInstanceOf[js.Any])
+      inline def setChromePath(value: String): Self = StObject.set(x, "chromePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromePathUndefined: Self = StObject.set(x, "chromePath", js.undefined)
+      inline def setChromePathUndefined: Self = StObject.set(x, "chromePath", js.undefined)
       
-      @scala.inline
-      def setConnectionPollInterval(value: Double): Self = StObject.set(x, "connectionPollInterval", value.asInstanceOf[js.Any])
+      inline def setConnectionPollInterval(value: Double): Self = StObject.set(x, "connectionPollInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionPollIntervalUndefined: Self = StObject.set(x, "connectionPollInterval", js.undefined)
+      inline def setConnectionPollIntervalUndefined: Self = StObject.set(x, "connectionPollInterval", js.undefined)
       
-      @scala.inline
-      def setEnvVars(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "envVars", value.asInstanceOf[js.Any])
+      inline def setEnvVars(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "envVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvVarsUndefined: Self = StObject.set(x, "envVars", js.undefined)
+      inline def setEnvVarsUndefined: Self = StObject.set(x, "envVars", js.undefined)
       
-      @scala.inline
-      def setHandleSIGINT(value: Boolean): Self = StObject.set(x, "handleSIGINT", value.asInstanceOf[js.Any])
+      inline def setHandleSIGINT(value: Boolean): Self = StObject.set(x, "handleSIGINT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleSIGINTUndefined: Self = StObject.set(x, "handleSIGINT", js.undefined)
+      inline def setHandleSIGINTUndefined: Self = StObject.set(x, "handleSIGINT", js.undefined)
       
-      @scala.inline
-      def setIgnoreDefaultFlags(value: Boolean): Self = StObject.set(x, "ignoreDefaultFlags", value.asInstanceOf[js.Any])
+      inline def setIgnoreDefaultFlags(value: Boolean): Self = StObject.set(x, "ignoreDefaultFlags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDefaultFlagsUndefined: Self = StObject.set(x, "ignoreDefaultFlags", js.undefined)
+      inline def setIgnoreDefaultFlagsUndefined: Self = StObject.set(x, "ignoreDefaultFlags", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: verbose | info | error | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: verbose | info | error | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setMaxConnectionRetries(value: Double): Self = StObject.set(x, "maxConnectionRetries", value.asInstanceOf[js.Any])
+      inline def setMaxConnectionRetries(value: Double): Self = StObject.set(x, "maxConnectionRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConnectionRetriesUndefined: Self = StObject.set(x, "maxConnectionRetries", js.undefined)
+      inline def setMaxConnectionRetriesUndefined: Self = StObject.set(x, "maxConnectionRetries", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setStartingUrl(value: String): Self = StObject.set(x, "startingUrl", value.asInstanceOf[js.Any])
+      inline def setStartingUrl(value: String): Self = StObject.set(x, "startingUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingUrlUndefined: Self = StObject.set(x, "startingUrl", js.undefined)
+      inline def setStartingUrlUndefined: Self = StObject.set(x, "startingUrl", js.undefined)
       
-      @scala.inline
-      def setUserDataDir(value: String | Boolean): Self = StObject.set(x, "userDataDir", value.asInstanceOf[js.Any])
+      inline def setUserDataDir(value: String | Boolean): Self = StObject.set(x, "userDataDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDataDirUndefined: Self = StObject.set(x, "userDataDir", js.undefined)
+      inline def setUserDataDirUndefined: Self = StObject.set(x, "userDataDir", js.undefined)
     }
   }
   

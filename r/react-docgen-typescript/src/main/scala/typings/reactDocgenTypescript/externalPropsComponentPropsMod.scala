@@ -13,20 +13,16 @@ object externalPropsComponentPropsMod {
   }
   object ExternalOptionalComponentProps {
     
-    @scala.inline
-    def apply(): ExternalOptionalComponentProps = {
+    inline def apply(): ExternalOptionalComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExternalOptionalComponentProps]
     }
     
-    @scala.inline
-    implicit class ExternalOptionalComponentPropsMutableBuilder[Self <: ExternalOptionalComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalOptionalComponentProps](x: Self) {
       
-      @scala.inline
-      def setProp1(value: String): Self = StObject.set(x, "prop1", value.asInstanceOf[js.Any])
+      inline def setProp1(value: String): Self = StObject.set(x, "prop1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProp1Undefined: Self = StObject.set(x, "prop1", js.undefined)
+      inline def setProp1Undefined: Self = StObject.set(x, "prop1", js.undefined)
     }
   }
   
@@ -37,17 +33,14 @@ object externalPropsComponentPropsMod {
   }
   object ExternalPropsComponentProps {
     
-    @scala.inline
-    def apply(prop1: String): ExternalPropsComponentProps = {
+    inline def apply(prop1: String): ExternalPropsComponentProps = {
       val __obj = js.Dynamic.literal(prop1 = prop1.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExternalPropsComponentProps]
     }
     
-    @scala.inline
-    implicit class ExternalPropsComponentPropsMutableBuilder[Self <: ExternalPropsComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalPropsComponentProps](x: Self) {
       
-      @scala.inline
-      def setProp1(value: String): Self = StObject.set(x, "prop1", value.asInstanceOf[js.Any])
+      inline def setProp1(value: String): Self = StObject.set(x, "prop1", value.asInstanceOf[js.Any])
     }
   }
 }

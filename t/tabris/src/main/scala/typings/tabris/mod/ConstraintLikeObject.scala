@@ -13,14 +13,12 @@ trait ConstraintLikeObject
      with _ConstraintValue
 object ConstraintLikeObject {
   
-  @scala.inline
-  def Offset(reference: SiblingReferenceValue | PercentValue): typings.tabris.anon.Offset = {
+  inline def Offset(reference: SiblingReferenceValue | PercentValue): typings.tabris.anon.Offset = {
     val __obj = js.Dynamic.literal(reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tabris.anon.Offset]
   }
   
-  @scala.inline
-  def Reference(offset: Offset): typings.tabris.anon.Reference = {
+  inline def Reference(offset: Offset): typings.tabris.anon.Reference = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tabris.anon.Reference]
   }

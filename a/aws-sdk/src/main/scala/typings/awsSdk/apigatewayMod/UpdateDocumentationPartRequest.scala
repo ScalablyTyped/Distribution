@@ -23,28 +23,21 @@ trait UpdateDocumentationPartRequest extends StObject {
 }
 object UpdateDocumentationPartRequest {
   
-  @scala.inline
-  def apply(documentationPartId: String, restApiId: String): UpdateDocumentationPartRequest = {
+  inline def apply(documentationPartId: String, restApiId: String): UpdateDocumentationPartRequest = {
     val __obj = js.Dynamic.literal(documentationPartId = documentationPartId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDocumentationPartRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDocumentationPartRequestMutableBuilder[Self <: UpdateDocumentationPartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDocumentationPartRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentationPartId(value: String): Self = StObject.set(x, "documentationPartId", value.asInstanceOf[js.Any])
+    inline def setDocumentationPartId(value: String): Self = StObject.set(x, "documentationPartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
+    inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
+    inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

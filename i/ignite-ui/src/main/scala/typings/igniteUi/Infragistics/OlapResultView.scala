@@ -34,8 +34,7 @@ trait OlapResultView extends StObject {
 }
 object OlapResultView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collapseTupleMember: (js.Object, js.Object, js.Object) => js.Object,
     expandTupleMember: (js.Object, js.Object, js.Object) => js.Object,
     extend: (js.Object, js.Object) => js.Object
@@ -44,16 +43,12 @@ object OlapResultView {
     __obj.asInstanceOf[OlapResultView]
   }
   
-  @scala.inline
-  implicit class OlapResultViewMutableBuilder[Self <: OlapResultView] (val x: Self) extends AnyVal {
+  extension [Self <: OlapResultView](x: Self) {
     
-    @scala.inline
-    def setCollapseTupleMember(value: (js.Object, js.Object, js.Object) => js.Object): Self = StObject.set(x, "collapseTupleMember", js.Any.fromFunction3(value))
+    inline def setCollapseTupleMember(value: (js.Object, js.Object, js.Object) => js.Object): Self = StObject.set(x, "collapseTupleMember", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExpandTupleMember(value: (js.Object, js.Object, js.Object) => js.Object): Self = StObject.set(x, "expandTupleMember", js.Any.fromFunction3(value))
+    inline def setExpandTupleMember(value: (js.Object, js.Object, js.Object) => js.Object): Self = StObject.set(x, "expandTupleMember", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExtend(value: (js.Object, js.Object) => js.Object): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
+    inline def setExtend(value: (js.Object, js.Object) => js.Object): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
   }
 }

@@ -12,16 +12,13 @@ trait Print3DTaskRequestedEventArgs extends StObject {
 }
 object Print3DTaskRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: Print3DTaskRequest): Print3DTaskRequestedEventArgs = {
+  inline def apply(request: Print3DTaskRequest): Print3DTaskRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[Print3DTaskRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class Print3DTaskRequestedEventArgsMutableBuilder[Self <: Print3DTaskRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: Print3DTaskRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: Print3DTaskRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Print3DTaskRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

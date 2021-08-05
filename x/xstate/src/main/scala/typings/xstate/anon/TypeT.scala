@@ -10,17 +10,14 @@ trait TypeT[T] extends StObject {
 }
 object TypeT {
   
-  @scala.inline
-  def apply[T](`type`: T): TypeT[T] = {
+  inline def apply[T](`type`: T): TypeT[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeT[T]]
   }
   
-  @scala.inline
-  implicit class TypeTMutableBuilder[Self <: TypeT[?], T] (val x: Self & TypeT[T]) extends AnyVal {
+  extension [Self <: TypeT[?], T](x: Self & TypeT[T]) {
     
-    @scala.inline
-    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

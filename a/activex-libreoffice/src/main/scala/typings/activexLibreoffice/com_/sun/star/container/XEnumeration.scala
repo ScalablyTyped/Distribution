@@ -36,8 +36,7 @@ trait XEnumeration
 }
 object XEnumeration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     hasMoreElements: () => Boolean,
     nextElement: () => js.Any,
@@ -48,13 +47,10 @@ object XEnumeration {
     __obj.asInstanceOf[XEnumeration]
   }
   
-  @scala.inline
-  implicit class XEnumerationMutableBuilder[Self <: XEnumeration] (val x: Self) extends AnyVal {
+  extension [Self <: XEnumeration](x: Self) {
     
-    @scala.inline
-    def setHasMoreElements(value: () => Boolean): Self = StObject.set(x, "hasMoreElements", js.Any.fromFunction0(value))
+    inline def setHasMoreElements(value: () => Boolean): Self = StObject.set(x, "hasMoreElements", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNextElement(value: () => js.Any): Self = StObject.set(x, "nextElement", js.Any.fromFunction0(value))
+    inline def setNextElement(value: () => js.Any): Self = StObject.set(x, "nextElement", js.Any.fromFunction0(value))
   }
 }

@@ -16,19 +16,15 @@ trait SchemaKubernetesDashboard extends StObject {
 }
 object SchemaKubernetesDashboard {
   
-  @scala.inline
-  def apply(): SchemaKubernetesDashboard = {
+  inline def apply(): SchemaKubernetesDashboard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaKubernetesDashboard]
   }
   
-  @scala.inline
-  implicit class SchemaKubernetesDashboardMutableBuilder[Self <: SchemaKubernetesDashboard] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaKubernetesDashboard](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
   }
 }

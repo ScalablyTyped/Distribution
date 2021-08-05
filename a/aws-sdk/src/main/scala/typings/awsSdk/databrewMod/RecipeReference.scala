@@ -18,22 +18,17 @@ trait RecipeReference extends StObject {
 }
 object RecipeReference {
   
-  @scala.inline
-  def apply(Name: RecipeName): RecipeReference = {
+  inline def apply(Name: RecipeName): RecipeReference = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipeReference]
   }
   
-  @scala.inline
-  implicit class RecipeReferenceMutableBuilder[Self <: RecipeReference] (val x: Self) extends AnyVal {
+  extension [Self <: RecipeReference](x: Self) {
     
-    @scala.inline
-    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeVersion(value: RecipeVersion): Self = StObject.set(x, "RecipeVersion", value.asInstanceOf[js.Any])
+    inline def setRecipeVersion(value: RecipeVersion): Self = StObject.set(x, "RecipeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeVersionUndefined: Self = StObject.set(x, "RecipeVersion", js.undefined)
+    inline def setRecipeVersionUndefined: Self = StObject.set(x, "RecipeVersion", js.undefined)
   }
 }

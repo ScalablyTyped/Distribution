@@ -79,7 +79,7 @@ trait TaskRequestDeclineItem extends StObject {
   
   var NoAging: Boolean = js.native
   
-  @JSName("Outlook.TaskRequestDeclineItem_typekey")
+  /* private */ @JSName("Outlook.TaskRequestDeclineItem_typekey")
   var OutlookDotTaskRequestDeclineItem_typekey: TaskRequestDeclineItem = js.native
   
   val OutlookInternalVersion: Double = js.native

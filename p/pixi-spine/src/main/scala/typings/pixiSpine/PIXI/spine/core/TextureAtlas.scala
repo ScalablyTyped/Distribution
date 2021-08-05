@@ -35,7 +35,7 @@ trait TextureAtlas
   
   def findRegion(name: String): TextureAtlasRegion
   
-  var load: js.Any
+  /* private */ var load: js.Any
   
   var pages: js.Array[TextureAtlasPage]
   
@@ -43,8 +43,7 @@ trait TextureAtlas
 }
 object TextureAtlas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addSpineAtlas: (String, js.Function2[
       /* path */ String, 
       /* loaderFunction */ js.Function1[
@@ -67,11 +66,9 @@ object TextureAtlas {
     __obj.asInstanceOf[TextureAtlas]
   }
   
-  @scala.inline
-  implicit class TextureAtlasMutableBuilder[Self <: TextureAtlas] (val x: Self) extends AnyVal {
+  extension [Self <: TextureAtlas](x: Self) {
     
-    @scala.inline
-    def setAddSpineAtlas(
+    inline def setAddSpineAtlas(
       value: (String, js.Function2[
           /* path */ String, 
           /* loaderFunction */ js.Function1[
@@ -82,34 +79,26 @@ object TextureAtlas {
         ], js.Function1[TextureAtlas, js.Any]) => Unit
     ): Self = StObject.set(x, "addSpineAtlas", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddTexture(
+    inline def setAddTexture(
       value: (String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any) => TextureAtlasRegion
     ): Self = StObject.set(x, "addTexture", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddTextureHash(
+    inline def setAddTextureHash(
       value: (Map[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
         ], Boolean) => Unit
     ): Self = StObject.set(x, "addTextureHash", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFindRegion(value: String => TextureAtlasRegion): Self = StObject.set(x, "findRegion", js.Any.fromFunction1(value))
+    inline def setFindRegion(value: String => TextureAtlasRegion): Self = StObject.set(x, "findRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoad(value: js.Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: js.Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: js.Array[TextureAtlasPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[TextureAtlasPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesVarargs(value: TextureAtlasPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: TextureAtlasPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setRegions(value: js.Array[TextureAtlasRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[TextureAtlasRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsVarargs(value: TextureAtlasRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: TextureAtlasRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

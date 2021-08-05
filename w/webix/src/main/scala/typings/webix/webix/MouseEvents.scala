@@ -23,8 +23,7 @@ trait MouseEvents extends StObject {
 }
 object MouseEvents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     on_click: WebixCallback,
     on_context: StringDictionary[js.Any],
     on_dblclick: WebixCallback,
@@ -34,19 +33,14 @@ object MouseEvents {
     __obj.asInstanceOf[MouseEvents]
   }
   
-  @scala.inline
-  implicit class MouseEventsMutableBuilder[Self <: MouseEvents] (val x: Self) extends AnyVal {
+  extension [Self <: MouseEvents](x: Self) {
     
-    @scala.inline
-    def setOn_click(value: WebixCallback): Self = StObject.set(x, "on_click", value.asInstanceOf[js.Any])
+    inline def setOn_click(value: WebixCallback): Self = StObject.set(x, "on_click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_context(value: StringDictionary[js.Any]): Self = StObject.set(x, "on_context", value.asInstanceOf[js.Any])
+    inline def setOn_context(value: StringDictionary[js.Any]): Self = StObject.set(x, "on_context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_dblclick(value: WebixCallback): Self = StObject.set(x, "on_dblclick", value.asInstanceOf[js.Any])
+    inline def setOn_dblclick(value: WebixCallback): Self = StObject.set(x, "on_dblclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_mouse_move(value: WebixCallback): Self = StObject.set(x, "on_mouse_move", value.asInstanceOf[js.Any])
+    inline def setOn_mouse_move(value: WebixCallback): Self = StObject.set(x, "on_mouse_move", value.asInstanceOf[js.Any])
   }
 }

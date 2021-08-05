@@ -30,8 +30,7 @@ object stylesheetMod {
     @JSImport("@uifabric/merge-styles/lib/Stylesheet", "InjectionMode.appendChild")
     @js.native
     def appendChild: `2` = js.native
-    @scala.inline
-    def appendChild_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appendChild")(x.asInstanceOf[js.Any])
+    inline def appendChild_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appendChild")(x.asInstanceOf[js.Any])
     
     /**
       * Inserts rules using the insertRule api.
@@ -39,8 +38,7 @@ object stylesheetMod {
     @JSImport("@uifabric/merge-styles/lib/Stylesheet", "InjectionMode.insertNode")
     @js.native
     def insertNode: `1` = js.native
-    @scala.inline
-    def insertNode_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insertNode")(x.asInstanceOf[js.Any])
+    inline def insertNode_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insertNode")(x.asInstanceOf[js.Any])
     
     /**
       * Avoids style injection, use getRules() to read the styles.
@@ -48,8 +46,7 @@ object stylesheetMod {
     @JSImport("@uifabric/merge-styles/lib/Stylesheet", "InjectionMode.none")
     @js.native
     def none: `0` = js.native
-    @scala.inline
-    def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    inline def none_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@uifabric/merge-styles/lib/Stylesheet", "Stylesheet")
@@ -57,31 +54,31 @@ object stylesheetMod {
   class Stylesheet () extends StObject {
     def this(config: IStyleSheetConfig) = this()
     
-    var _classNameToArgs: js.Any = js.native
+    /* private */ var _classNameToArgs: js.Any = js.native
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _counter: js.Any = js.native
+    /* private */ var _counter: js.Any = js.native
     
-    var _createStyleElement: js.Any = js.native
+    /* private */ var _createStyleElement: js.Any = js.native
     
-    var _findPlaceholderStyleTag: js.Any = js.native
+    /* private */ var _findPlaceholderStyleTag: js.Any = js.native
     
-    var _getStyleElement: js.Any = js.native
+    /* private */ var _getStyleElement: js.Any = js.native
     
-    var _keyToClassName: js.Any = js.native
+    /* private */ var _keyToClassName: js.Any = js.native
     
-    var _lastStyleElement: js.Any = js.native
+    /* private */ var _lastStyleElement: js.Any = js.native
     
-    var _onResetCallbacks: js.Any = js.native
+    /* private */ var _onResetCallbacks: js.Any = js.native
     
-    var _preservedRules: js.Any = js.native
+    /* private */ var _preservedRules: js.Any = js.native
     
-    var _rules: js.Any = js.native
+    /* private */ var _rules: js.Any = js.native
     
-    var _rulesToInsert: js.Any = js.native
+    /* private */ var _rulesToInsert: js.Any = js.native
     
-    var _styleElement: js.Any = js.native
+    /* private */ var _styleElement: js.Any = js.native
     
     /**
       * Gets the arguments associated with a given classname which was
@@ -165,8 +162,7 @@ object stylesheetMod {
     /**
       * Gets the singleton instance.
       */
-    @scala.inline
-    def getInstance(): Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Stylesheet]
+    inline def getInstance(): Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Stylesheet]
   }
   
   trait ICSPSettings extends StObject {
@@ -178,20 +174,16 @@ object stylesheetMod {
   }
   object ICSPSettings {
     
-    @scala.inline
-    def apply(): ICSPSettings = {
+    inline def apply(): ICSPSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICSPSettings]
     }
     
-    @scala.inline
-    implicit class ICSPSettingsMutableBuilder[Self <: ICSPSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ICSPSettings](x: Self) {
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     }
   }
   
@@ -238,56 +230,40 @@ object stylesheetMod {
   }
   object IStyleSheetConfig {
     
-    @scala.inline
-    def apply(): IStyleSheetConfig = {
+    inline def apply(): IStyleSheetConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStyleSheetConfig]
     }
     
-    @scala.inline
-    implicit class IStyleSheetConfigMutableBuilder[Self <: IStyleSheetConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IStyleSheetConfig](x: Self) {
       
-      @scala.inline
-      def setClassNameCache(value: StringDictionary[String]): Self = StObject.set(x, "classNameCache", value.asInstanceOf[js.Any])
+      inline def setClassNameCache(value: StringDictionary[String]): Self = StObject.set(x, "classNameCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameCacheUndefined: Self = StObject.set(x, "classNameCache", js.undefined)
+      inline def setClassNameCacheUndefined: Self = StObject.set(x, "classNameCache", js.undefined)
       
-      @scala.inline
-      def setCspSettings(value: ICSPSettings): Self = StObject.set(x, "cspSettings", value.asInstanceOf[js.Any])
+      inline def setCspSettings(value: ICSPSettings): Self = StObject.set(x, "cspSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCspSettingsUndefined: Self = StObject.set(x, "cspSettings", js.undefined)
+      inline def setCspSettingsUndefined: Self = StObject.set(x, "cspSettings", js.undefined)
       
-      @scala.inline
-      def setDefaultPrefix(value: String): Self = StObject.set(x, "defaultPrefix", value.asInstanceOf[js.Any])
+      inline def setDefaultPrefix(value: String): Self = StObject.set(x, "defaultPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPrefixUndefined: Self = StObject.set(x, "defaultPrefix", js.undefined)
+      inline def setDefaultPrefixUndefined: Self = StObject.set(x, "defaultPrefix", js.undefined)
       
-      @scala.inline
-      def setInjectionMode(value: InjectionMode): Self = StObject.set(x, "injectionMode", value.asInstanceOf[js.Any])
+      inline def setInjectionMode(value: InjectionMode): Self = StObject.set(x, "injectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectionModeUndefined: Self = StObject.set(x, "injectionMode", js.undefined)
+      inline def setInjectionModeUndefined: Self = StObject.set(x, "injectionMode", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setOnInsertRule(value: /* rule */ String => Unit): Self = StObject.set(x, "onInsertRule", js.Any.fromFunction1(value))
+      inline def setOnInsertRule(value: /* rule */ String => Unit): Self = StObject.set(x, "onInsertRule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInsertRuleUndefined: Self = StObject.set(x, "onInsertRule", js.undefined)
+      inline def setOnInsertRuleUndefined: Self = StObject.set(x, "onInsertRule", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
     }
   }
 }

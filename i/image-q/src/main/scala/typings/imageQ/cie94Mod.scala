@@ -11,18 +11,18 @@ object cie94Mod {
   @js.native
   abstract class AbstractCIE94 () extends AbstractDistanceCalculator {
     
-    var _K1: Double = js.native
+    /* protected */ var _K1: Double = js.native
     
-    var _K2: Double = js.native
+    /* protected */ var _K2: Double = js.native
     
-    var _Kl: Double = js.native
+    /* protected */ var _Kl: Double = js.native
     
     /**
       * Weight in distance: 0.25
       * Max DeltaE: 100
       * Max DeltaA: 255
       */
-    var _kA: Double = js.native
+    /* protected */ var _kA: Double = js.native
   }
   
   @JSImport("image-q/dist/distance/cie94", "CIE94GraphicArts")

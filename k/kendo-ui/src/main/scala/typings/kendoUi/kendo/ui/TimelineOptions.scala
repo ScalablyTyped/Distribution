@@ -53,145 +53,99 @@ trait TimelineOptions extends StObject {
 }
 object TimelineOptions {
   
-  @scala.inline
-  def apply(): TimelineOptions = {
+  inline def apply(): TimelineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimelineOptions]
   }
   
-  @scala.inline
-  implicit class TimelineOptionsMutableBuilder[Self <: TimelineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineOptions](x: Self) {
     
-    @scala.inline
-    def setActionClick(value: /* e */ TimelineActionClickEvent => Unit): Self = StObject.set(x, "actionClick", js.Any.fromFunction1(value))
+    inline def setActionClick(value: /* e */ TimelineActionClickEvent => Unit): Self = StObject.set(x, "actionClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setActionClickUndefined: Self = StObject.set(x, "actionClick", js.undefined)
+    inline def setActionClickUndefined: Self = StObject.set(x, "actionClick", js.undefined)
     
-    @scala.inline
-    def setAlternatingMode(value: Boolean): Self = StObject.set(x, "alternatingMode", value.asInstanceOf[js.Any])
+    inline def setAlternatingMode(value: Boolean): Self = StObject.set(x, "alternatingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternatingModeUndefined: Self = StObject.set(x, "alternatingMode", js.undefined)
+    inline def setAlternatingModeUndefined: Self = StObject.set(x, "alternatingMode", js.undefined)
     
-    @scala.inline
-    def setChange(value: /* e */ TimelineChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ TimelineChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setCollapse(value: /* e */ TimelineCollapseEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
+    inline def setCollapse(value: /* e */ TimelineCollapseEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setCollapsibleEvents(value: Boolean): Self = StObject.set(x, "collapsibleEvents", value.asInstanceOf[js.Any])
+    inline def setCollapsibleEvents(value: Boolean): Self = StObject.set(x, "collapsibleEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsibleEventsUndefined: Self = StObject.set(x, "collapsibleEvents", js.undefined)
+    inline def setCollapsibleEventsUndefined: Self = StObject.set(x, "collapsibleEvents", js.undefined)
     
-    @scala.inline
-    def setDataActionsField(value: String): Self = StObject.set(x, "dataActionsField", value.asInstanceOf[js.Any])
+    inline def setDataActionsField(value: String): Self = StObject.set(x, "dataActionsField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataActionsFieldUndefined: Self = StObject.set(x, "dataActionsField", js.undefined)
+    inline def setDataActionsFieldUndefined: Self = StObject.set(x, "dataActionsField", js.undefined)
     
-    @scala.inline
-    def setDataBound(value: /* e */ TimelineDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
+    inline def setDataBound(value: /* e */ TimelineDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    @scala.inline
-    def setDataDateField(value: String): Self = StObject.set(x, "dataDateField", value.asInstanceOf[js.Any])
+    inline def setDataDateField(value: String): Self = StObject.set(x, "dataDateField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDateFieldUndefined: Self = StObject.set(x, "dataDateField", js.undefined)
+    inline def setDataDateFieldUndefined: Self = StObject.set(x, "dataDateField", js.undefined)
     
-    @scala.inline
-    def setDataDescriptionField(value: String): Self = StObject.set(x, "dataDescriptionField", value.asInstanceOf[js.Any])
+    inline def setDataDescriptionField(value: String): Self = StObject.set(x, "dataDescriptionField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDescriptionFieldUndefined: Self = StObject.set(x, "dataDescriptionField", js.undefined)
+    inline def setDataDescriptionFieldUndefined: Self = StObject.set(x, "dataDescriptionField", js.undefined)
     
-    @scala.inline
-    def setDataImagesField(value: String): Self = StObject.set(x, "dataImagesField", value.asInstanceOf[js.Any])
+    inline def setDataImagesField(value: String): Self = StObject.set(x, "dataImagesField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataImagesFieldUndefined: Self = StObject.set(x, "dataImagesField", js.undefined)
+    inline def setDataImagesFieldUndefined: Self = StObject.set(x, "dataImagesField", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: DataSource | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setDataSubTitleField(value: String): Self = StObject.set(x, "dataSubTitleField", value.asInstanceOf[js.Any])
+    inline def setDataSubTitleField(value: String): Self = StObject.set(x, "dataSubTitleField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSubTitleFieldUndefined: Self = StObject.set(x, "dataSubTitleField", js.undefined)
+    inline def setDataSubTitleFieldUndefined: Self = StObject.set(x, "dataSubTitleField", js.undefined)
     
-    @scala.inline
-    def setDataTitleField(value: String): Self = StObject.set(x, "dataTitleField", value.asInstanceOf[js.Any])
+    inline def setDataTitleField(value: String): Self = StObject.set(x, "dataTitleField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTitleFieldUndefined: Self = StObject.set(x, "dataTitleField", js.undefined)
+    inline def setDataTitleFieldUndefined: Self = StObject.set(x, "dataTitleField", js.undefined)
     
-    @scala.inline
-    def setDateformat(value: String): Self = StObject.set(x, "dateformat", value.asInstanceOf[js.Any])
+    inline def setDateformat(value: String): Self = StObject.set(x, "dateformat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateformatUndefined: Self = StObject.set(x, "dateformat", js.undefined)
+    inline def setDateformatUndefined: Self = StObject.set(x, "dateformat", js.undefined)
     
-    @scala.inline
-    def setEventHeight(value: Double): Self = StObject.set(x, "eventHeight", value.asInstanceOf[js.Any])
+    inline def setEventHeight(value: Double): Self = StObject.set(x, "eventHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventHeightUndefined: Self = StObject.set(x, "eventHeight", js.undefined)
+    inline def setEventHeightUndefined: Self = StObject.set(x, "eventHeight", js.undefined)
     
-    @scala.inline
-    def setEventTemplate(value: String | js.Function): Self = StObject.set(x, "eventTemplate", value.asInstanceOf[js.Any])
+    inline def setEventTemplate(value: String | js.Function): Self = StObject.set(x, "eventTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTemplateUndefined: Self = StObject.set(x, "eventTemplate", js.undefined)
+    inline def setEventTemplateUndefined: Self = StObject.set(x, "eventTemplate", js.undefined)
     
-    @scala.inline
-    def setEventWidth(value: Double): Self = StObject.set(x, "eventWidth", value.asInstanceOf[js.Any])
+    inline def setEventWidth(value: Double): Self = StObject.set(x, "eventWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventWidthUndefined: Self = StObject.set(x, "eventWidth", js.undefined)
+    inline def setEventWidthUndefined: Self = StObject.set(x, "eventWidth", js.undefined)
     
-    @scala.inline
-    def setExpand(value: /* e */ TimelineExpandEvent => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+    inline def setExpand(value: /* e */ TimelineExpandEvent => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNavigate(value: /* e */ TimelineNavigateEvent => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+    inline def setNavigate(value: /* e */ TimelineNavigateEvent => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+    inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setShowDateLabels(value: Boolean): Self = StObject.set(x, "showDateLabels", value.asInstanceOf[js.Any])
+    inline def setShowDateLabels(value: Boolean): Self = StObject.set(x, "showDateLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDateLabelsUndefined: Self = StObject.set(x, "showDateLabels", js.undefined)
+    inline def setShowDateLabelsUndefined: Self = StObject.set(x, "showDateLabels", js.undefined)
   }
 }

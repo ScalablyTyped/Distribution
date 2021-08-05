@@ -11,6 +11,5 @@ object useThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useTheme(): js.UndefOr[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[js.UndefOr[Theme]]
+  inline def useTheme(): js.UndefOr[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[js.UndefOr[Theme]]
 }

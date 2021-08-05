@@ -20,20 +20,16 @@ object Application {
     }
     object DefaultFormsInformation {
       
-      @scala.inline
-      def apply(DefaultForms: FormsInfo, OtherForms: js.Any): DefaultFormsInformation = {
+      inline def apply(DefaultForms: FormsInfo, OtherForms: js.Any): DefaultFormsInformation = {
         val __obj = js.Dynamic.literal(DefaultForms = DefaultForms.asInstanceOf[js.Any], OtherForms = OtherForms.asInstanceOf[js.Any])
         __obj.asInstanceOf[DefaultFormsInformation]
       }
       
-      @scala.inline
-      implicit class DefaultFormsInformationMutableBuilder[Self <: DefaultFormsInformation] (val x: Self) extends AnyVal {
+      extension [Self <: DefaultFormsInformation](x: Self) {
         
-        @scala.inline
-        def setDefaultForms(value: FormsInfo): Self = StObject.set(x, "DefaultForms", value.asInstanceOf[js.Any])
+        inline def setDefaultForms(value: FormsInfo): Self = StObject.set(x, "DefaultForms", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOtherForms(value: js.Any): Self = StObject.set(x, "OtherForms", value.asInstanceOf[js.Any])
+        inline def setOtherForms(value: js.Any): Self = StObject.set(x, "OtherForms", value.asInstanceOf[js.Any])
       }
     }
     
@@ -45,8 +41,7 @@ object Application {
     }
     object DefaultFormsInformationRequestor {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         onDefaultFormsInformationRetrieveFailure: () => Unit,
         onDefaultFormsInformationRetrieveSuccess: DefaultFormsInformation => Unit
       ): DefaultFormsInformationRequestor = {
@@ -54,14 +49,11 @@ object Application {
         __obj.asInstanceOf[DefaultFormsInformationRequestor]
       }
       
-      @scala.inline
-      implicit class DefaultFormsInformationRequestorMutableBuilder[Self <: DefaultFormsInformationRequestor] (val x: Self) extends AnyVal {
+      extension [Self <: DefaultFormsInformationRequestor](x: Self) {
         
-        @scala.inline
-        def setOnDefaultFormsInformationRetrieveFailure(value: () => Unit): Self = StObject.set(x, "onDefaultFormsInformationRetrieveFailure", js.Any.fromFunction0(value))
+        inline def setOnDefaultFormsInformationRetrieveFailure(value: () => Unit): Self = StObject.set(x, "onDefaultFormsInformationRetrieveFailure", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnDefaultFormsInformationRetrieveSuccess(value: DefaultFormsInformation => Unit): Self = StObject.set(x, "onDefaultFormsInformationRetrieveSuccess", js.Any.fromFunction1(value))
+        inline def setOnDefaultFormsInformationRetrieveSuccess(value: DefaultFormsInformation => Unit): Self = StObject.set(x, "onDefaultFormsInformationRetrieveSuccess", js.Any.fromFunction1(value))
       }
     }
     
@@ -79,26 +71,20 @@ object Application {
     }
     object FormsInfo {
       
-      @scala.inline
-      def apply(ContentTypeName: String, DisplayFormUrl: String, EditFormUrl: String, NewFormUrl: String): FormsInfo = {
+      inline def apply(ContentTypeName: String, DisplayFormUrl: String, EditFormUrl: String, NewFormUrl: String): FormsInfo = {
         val __obj = js.Dynamic.literal(ContentTypeName = ContentTypeName.asInstanceOf[js.Any], DisplayFormUrl = DisplayFormUrl.asInstanceOf[js.Any], EditFormUrl = EditFormUrl.asInstanceOf[js.Any], NewFormUrl = NewFormUrl.asInstanceOf[js.Any])
         __obj.asInstanceOf[FormsInfo]
       }
       
-      @scala.inline
-      implicit class FormsInfoMutableBuilder[Self <: FormsInfo] (val x: Self) extends AnyVal {
+      extension [Self <: FormsInfo](x: Self) {
         
-        @scala.inline
-        def setContentTypeName(value: String): Self = StObject.set(x, "ContentTypeName", value.asInstanceOf[js.Any])
+        inline def setContentTypeName(value: String): Self = StObject.set(x, "ContentTypeName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayFormUrl(value: String): Self = StObject.set(x, "DisplayFormUrl", value.asInstanceOf[js.Any])
+        inline def setDisplayFormUrl(value: String): Self = StObject.set(x, "DisplayFormUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEditFormUrl(value: String): Self = StObject.set(x, "EditFormUrl", value.asInstanceOf[js.Any])
+        inline def setEditFormUrl(value: String): Self = StObject.set(x, "EditFormUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNewFormUrl(value: String): Self = StObject.set(x, "NewFormUrl", value.asInstanceOf[js.Any])
+        inline def setNewFormUrl(value: String): Self = StObject.set(x, "NewFormUrl", value.asInstanceOf[js.Any])
       }
     }
     
@@ -112,8 +98,7 @@ object Application {
     }
     object MoreColorsPage {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addCssClass: String => Unit,
         add_disposing: js.Function => Unit,
         add_propertyChanged: js.Function => Unit,
@@ -142,14 +127,11 @@ object Application {
         __obj.asInstanceOf[MoreColorsPage]
       }
       
-      @scala.inline
-      implicit class MoreColorsPageMutableBuilder[Self <: MoreColorsPage] (val x: Self) extends AnyVal {
+      extension [Self <: MoreColorsPage](x: Self) {
         
-        @scala.inline
-        def setGet_moreColorsPicker(value: () => MoreColorsPicker): Self = StObject.set(x, "get_moreColorsPicker", js.Any.fromFunction0(value))
+        inline def setGet_moreColorsPicker(value: () => MoreColorsPicker): Self = StObject.set(x, "get_moreColorsPicker", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSet_moreColorsPicker(value: MoreColorsPicker => Unit): Self = StObject.set(x, "set_moreColorsPicker", js.Any.fromFunction1(value))
+        inline def setSet_moreColorsPicker(value: MoreColorsPicker => Unit): Self = StObject.set(x, "set_moreColorsPicker", js.Any.fromFunction1(value))
       }
     }
     
@@ -163,8 +145,7 @@ object Application {
     }
     object MoreColorsPicker {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addCssClass: String => Unit,
         add_disposing: js.Function => Unit,
         add_propertyChanged: js.Function => Unit,
@@ -193,14 +174,11 @@ object Application {
         __obj.asInstanceOf[MoreColorsPicker]
       }
       
-      @scala.inline
-      implicit class MoreColorsPickerMutableBuilder[Self <: MoreColorsPicker] (val x: Self) extends AnyVal {
+      extension [Self <: MoreColorsPicker](x: Self) {
         
-        @scala.inline
-        def setGet_colorValue(value: () => String): Self = StObject.set(x, "get_colorValue", js.Any.fromFunction0(value))
+        inline def setGet_colorValue(value: () => String): Self = StObject.set(x, "get_colorValue", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSet_colorValue(value: String => Unit): Self = StObject.set(x, "set_colorValue", js.Any.fromFunction1(value))
+        inline def setSet_colorValue(value: String => Unit): Self = StObject.set(x, "set_colorValue", js.Any.fromFunction1(value))
       }
     }
     
@@ -222,8 +200,7 @@ object Application {
     }
     object ThemeWebPage {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addCssClass: String => Unit,
         add_disposing: js.Function => Unit,
         add_propertyChanged: js.Function => Unit,
@@ -256,26 +233,19 @@ object Application {
         __obj.asInstanceOf[ThemeWebPage]
       }
       
-      @scala.inline
-      implicit class ThemeWebPageMutableBuilder[Self <: ThemeWebPage] (val x: Self) extends AnyVal {
+      extension [Self <: ThemeWebPage](x: Self) {
         
-        @scala.inline
-        def setAdd_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_themeDisplayUpdated", js.Any.fromFunction1(value))
+        inline def setAdd_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_themeDisplayUpdated", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGet_thmxThemes(value: () => js.Any): Self = StObject.set(x, "get_thmxThemes", js.Any.fromFunction0(value))
+        inline def setGet_thmxThemes(value: () => js.Any): Self = StObject.set(x, "get_thmxThemes", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnThemeSelectionChanged(value: DomEvent => Unit): Self = StObject.set(x, "onThemeSelectionChanged", js.Any.fromFunction1(value))
+        inline def setOnThemeSelectionChanged(value: DomEvent => Unit): Self = StObject.set(x, "onThemeSelectionChanged", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemove_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_themeDisplayUpdated", js.Any.fromFunction1(value))
+        inline def setRemove_themeDisplayUpdated(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "remove_themeDisplayUpdated", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSet_thmxThemes(value: js.Any => Unit): Self = StObject.set(x, "set_thmxThemes", js.Any.fromFunction1(value))
+        inline def setSet_thmxThemes(value: js.Any => Unit): Self = StObject.set(x, "set_thmxThemes", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUpdateThemeDisplay(value: () => Unit): Self = StObject.set(x, "updateThemeDisplay", js.Any.fromFunction0(value))
+        inline def setUpdateThemeDisplay(value: () => Unit): Self = StObject.set(x, "updateThemeDisplay", js.Any.fromFunction0(value))
       }
     }
     
@@ -285,17 +255,14 @@ object Application {
     }
     object ViewInformationRequestor {
       
-      @scala.inline
-      def apply(onViewInformationReturned: ViewSelectorGroups => Unit): ViewInformationRequestor = {
+      inline def apply(onViewInformationReturned: ViewSelectorGroups => Unit): ViewInformationRequestor = {
         val __obj = js.Dynamic.literal(onViewInformationReturned = js.Any.fromFunction1(onViewInformationReturned))
         __obj.asInstanceOf[ViewInformationRequestor]
       }
       
-      @scala.inline
-      implicit class ViewInformationRequestorMutableBuilder[Self <: ViewInformationRequestor] (val x: Self) extends AnyVal {
+      extension [Self <: ViewInformationRequestor](x: Self) {
         
-        @scala.inline
-        def setOnViewInformationReturned(value: ViewSelectorGroups => Unit): Self = StObject.set(x, "onViewInformationReturned", js.Any.fromFunction1(value))
+        inline def setOnViewInformationReturned(value: ViewSelectorGroups => Unit): Self = StObject.set(x, "onViewInformationReturned", js.Any.fromFunction1(value))
       }
     }
     
@@ -315,8 +282,7 @@ object Application {
     }
     object ViewSelectorGroups {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         DefaultView: ViewSelectorMenuItem,
         ModeratedViews: js.Any,
         OtherViews: js.Any,
@@ -328,26 +294,19 @@ object Application {
         __obj.asInstanceOf[ViewSelectorGroups]
       }
       
-      @scala.inline
-      implicit class ViewSelectorGroupsMutableBuilder[Self <: ViewSelectorGroups] (val x: Self) extends AnyVal {
+      extension [Self <: ViewSelectorGroups](x: Self) {
         
-        @scala.inline
-        def setDefaultView(value: ViewSelectorMenuItem): Self = StObject.set(x, "DefaultView", value.asInstanceOf[js.Any])
+        inline def setDefaultView(value: ViewSelectorMenuItem): Self = StObject.set(x, "DefaultView", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeratedViews(value: js.Any): Self = StObject.set(x, "ModeratedViews", value.asInstanceOf[js.Any])
+        inline def setModeratedViews(value: js.Any): Self = StObject.set(x, "ModeratedViews", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOtherViews(value: js.Any): Self = StObject.set(x, "OtherViews", value.asInstanceOf[js.Any])
+        inline def setOtherViews(value: js.Any): Self = StObject.set(x, "OtherViews", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPersonalViews(value: js.Any): Self = StObject.set(x, "PersonalViews", value.asInstanceOf[js.Any])
+        inline def setPersonalViews(value: js.Any): Self = StObject.set(x, "PersonalViews", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPublicViews(value: js.Any): Self = StObject.set(x, "PublicViews", value.asInstanceOf[js.Any])
+        inline def setPublicViews(value: js.Any): Self = StObject.set(x, "PublicViews", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewCreation(value: js.Any): Self = StObject.set(x, "ViewCreation", value.asInstanceOf[js.Any])
+        inline def setViewCreation(value: js.Any): Self = StObject.set(x, "ViewCreation", value.asInstanceOf[js.Any])
       }
     }
     
@@ -375,8 +334,7 @@ object Application {
     }
     object ViewSelectorMenuItem {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         ActionScriptText: String,
         Description: String,
         GroupId: Double,
@@ -391,35 +349,25 @@ object Application {
         __obj.asInstanceOf[ViewSelectorMenuItem]
       }
       
-      @scala.inline
-      implicit class ViewSelectorMenuItemMutableBuilder[Self <: ViewSelectorMenuItem] (val x: Self) extends AnyVal {
+      extension [Self <: ViewSelectorMenuItem](x: Self) {
         
-        @scala.inline
-        def setActionScriptText(value: String): Self = StObject.set(x, "ActionScriptText", value.asInstanceOf[js.Any])
+        inline def setActionScriptText(value: String): Self = StObject.set(x, "ActionScriptText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupId(value: Double): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+        inline def setGroupId(value: Double): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImageSourceUrl(value: String): Self = StObject.set(x, "ImageSourceUrl", value.asInstanceOf[js.Any])
+        inline def setImageSourceUrl(value: String): Self = StObject.set(x, "ImageSourceUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemType(value: String): Self = StObject.set(x, "ItemType", value.asInstanceOf[js.Any])
+        inline def setItemType(value: String): Self = StObject.set(x, "ItemType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNavigateUrl(value: String): Self = StObject.set(x, "NavigateUrl", value.asInstanceOf[js.Any])
+        inline def setNavigateUrl(value: String): Self = StObject.set(x, "NavigateUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSequence(value: Double): Self = StObject.set(x, "Sequence", value.asInstanceOf[js.Any])
+        inline def setSequence(value: Double): Self = StObject.set(x, "Sequence", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
       }
     }
     
@@ -443,8 +391,7 @@ object Application {
     }
     object ViewSelectorMenuOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         listId: String,
         showApproverView: Boolean,
         showCreateView: Boolean,
@@ -458,32 +405,23 @@ object Application {
         __obj.asInstanceOf[ViewSelectorMenuOptions]
       }
       
-      @scala.inline
-      implicit class ViewSelectorMenuOptionsMutableBuilder[Self <: ViewSelectorMenuOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ViewSelectorMenuOptions](x: Self) {
         
-        @scala.inline
-        def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+        inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowApproverView(value: Boolean): Self = StObject.set(x, "showApproverView", value.asInstanceOf[js.Any])
+        inline def setShowApproverView(value: Boolean): Self = StObject.set(x, "showApproverView", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowCreateView(value: Boolean): Self = StObject.set(x, "showCreateView", value.asInstanceOf[js.Any])
+        inline def setShowCreateView(value: Boolean): Self = StObject.set(x, "showCreateView", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowEditView(value: Boolean): Self = StObject.set(x, "showEditView", value.asInstanceOf[js.Any])
+        inline def setShowEditView(value: Boolean): Self = StObject.set(x, "showEditView", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowMergeView(value: Boolean): Self = StObject.set(x, "showMergeView", value.asInstanceOf[js.Any])
+        inline def setShowMergeView(value: Boolean): Self = StObject.set(x, "showMergeView", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowRepairView(value: Boolean): Self = StObject.set(x, "showRepairView", value.asInstanceOf[js.Any])
+        inline def setShowRepairView(value: Boolean): Self = StObject.set(x, "showRepairView", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+        inline def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewParameters(value: String): Self = StObject.set(x, "viewParameters", value.asInstanceOf[js.Any])
+        inline def setViewParameters(value: String): Self = StObject.set(x, "viewParameters", value.asInstanceOf[js.Any])
       }
     }
     
@@ -497,23 +435,18 @@ object Application {
     }
     object ViewSelectorSubMenu {
       
-      @scala.inline
-      def apply(ImageSourceUrl: String, SubMenuItems: js.Any, Text: String): ViewSelectorSubMenu = {
+      inline def apply(ImageSourceUrl: String, SubMenuItems: js.Any, Text: String): ViewSelectorSubMenu = {
         val __obj = js.Dynamic.literal(ImageSourceUrl = ImageSourceUrl.asInstanceOf[js.Any], SubMenuItems = SubMenuItems.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
         __obj.asInstanceOf[ViewSelectorSubMenu]
       }
       
-      @scala.inline
-      implicit class ViewSelectorSubMenuMutableBuilder[Self <: ViewSelectorSubMenu] (val x: Self) extends AnyVal {
+      extension [Self <: ViewSelectorSubMenu](x: Self) {
         
-        @scala.inline
-        def setImageSourceUrl(value: String): Self = StObject.set(x, "ImageSourceUrl", value.asInstanceOf[js.Any])
+        inline def setImageSourceUrl(value: String): Self = StObject.set(x, "ImageSourceUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubMenuItems(value: js.Any): Self = StObject.set(x, "SubMenuItems", value.asInstanceOf[js.Any])
+        inline def setSubMenuItems(value: js.Any): Self = StObject.set(x, "SubMenuItems", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
       }
     }
     
@@ -525,20 +458,16 @@ object Application {
     }
     object WikiPageNameInPlaceEditor {
       
-      @scala.inline
-      def apply(editingPageCallback: () => Unit, savingPageCallback: () => Unit): WikiPageNameInPlaceEditor = {
+      inline def apply(editingPageCallback: () => Unit, savingPageCallback: () => Unit): WikiPageNameInPlaceEditor = {
         val __obj = js.Dynamic.literal(editingPageCallback = js.Any.fromFunction0(editingPageCallback), savingPageCallback = js.Any.fromFunction0(savingPageCallback))
         __obj.asInstanceOf[WikiPageNameInPlaceEditor]
       }
       
-      @scala.inline
-      implicit class WikiPageNameInPlaceEditorMutableBuilder[Self <: WikiPageNameInPlaceEditor] (val x: Self) extends AnyVal {
+      extension [Self <: WikiPageNameInPlaceEditor](x: Self) {
         
-        @scala.inline
-        def setEditingPageCallback(value: () => Unit): Self = StObject.set(x, "editingPageCallback", js.Any.fromFunction0(value))
+        inline def setEditingPageCallback(value: () => Unit): Self = StObject.set(x, "editingPageCallback", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSavingPageCallback(value: () => Unit): Self = StObject.set(x, "savingPageCallback", js.Any.fromFunction0(value))
+        inline def setSavingPageCallback(value: () => Unit): Self = StObject.set(x, "savingPageCallback", js.Any.fromFunction0(value))
       }
     }
   }

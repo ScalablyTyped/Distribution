@@ -28,8 +28,7 @@ trait XConsoleHandler
 }
 object XConsoleHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Encoding: String,
     Formatter: XLogFormatter,
     Level: Double,
@@ -47,10 +46,8 @@ object XConsoleHandler {
     __obj.asInstanceOf[XConsoleHandler]
   }
   
-  @scala.inline
-  implicit class XConsoleHandlerMutableBuilder[Self <: XConsoleHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XConsoleHandler](x: Self) {
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
   }
 }

@@ -267,38 +267,28 @@ object viewViewMod {
   }
   object AutoResizeOptions {
     
-    @scala.inline
-    def apply(): AutoResizeOptions = {
+    inline def apply(): AutoResizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoResizeOptions]
     }
     
-    @scala.inline
-    implicit class AutoResizeOptionsMutableBuilder[Self <: AutoResizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AutoResizeOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -324,62 +314,44 @@ object viewViewMod {
   }
   object ViewCreationOptions {
     
-    @scala.inline
-    def apply(name: String, target: Identity, url: String): ViewCreationOptions = {
+    inline def apply(name: String, target: Identity, url: String): ViewCreationOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewCreationOptions]
     }
     
-    @scala.inline
-    implicit class ViewCreationOptionsMutableBuilder[Self <: ViewCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ViewCreationOptions](x: Self) {
       
-      @scala.inline
-      def setBounds(value: ViewBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: ViewBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setCustomRequestHeaders(value: js.Array[CustomRequestHeaders]): Self = StObject.set(x, "customRequestHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomRequestHeaders(value: js.Array[CustomRequestHeaders]): Self = StObject.set(x, "customRequestHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomRequestHeadersUndefined: Self = StObject.set(x, "customRequestHeaders", js.undefined)
+      inline def setCustomRequestHeadersUndefined: Self = StObject.set(x, "customRequestHeaders", js.undefined)
       
-      @scala.inline
-      def setCustomRequestHeadersVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "customRequestHeaders", js.Array(value :_*))
+      inline def setCustomRequestHeadersVarargs(value: CustomRequestHeaders*): Self = StObject.set(x, "customRequestHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setHotkeys(value: js.Array[Hotkey]): Self = StObject.set(x, "hotkeys", value.asInstanceOf[js.Any])
+      inline def setHotkeys(value: js.Array[Hotkey]): Self = StObject.set(x, "hotkeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHotkeysUndefined: Self = StObject.set(x, "hotkeys", js.undefined)
+      inline def setHotkeysUndefined: Self = StObject.set(x, "hotkeys", js.undefined)
       
-      @scala.inline
-      def setHotkeysVarargs(value: Hotkey*): Self = StObject.set(x, "hotkeys", js.Array(value :_*))
+      inline def setHotkeysVarargs(value: Hotkey*): Self = StObject.set(x, "hotkeys", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadScripts(value: js.Array[PreloadScript]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
+      inline def setPreloadScripts(value: js.Array[PreloadScript]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadScriptsUndefined: Self = StObject.set(x, "preloadScripts", js.undefined)
+      inline def setPreloadScriptsUndefined: Self = StObject.set(x, "preloadScripts", js.undefined)
       
-      @scala.inline
-      def setPreloadScriptsVarargs(value: PreloadScript*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
+      inline def setPreloadScriptsVarargs(value: PreloadScript*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
       
-      @scala.inline
-      def setProcessAffinity(value: String): Self = StObject.set(x, "processAffinity", value.asInstanceOf[js.Any])
+      inline def setProcessAffinity(value: String): Self = StObject.set(x, "processAffinity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessAffinityUndefined: Self = StObject.set(x, "processAffinity", js.undefined)
+      inline def setProcessAffinityUndefined: Self = StObject.set(x, "processAffinity", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -414,7 +386,7 @@ object viewViewMod {
       */
     def getCurrentSync(): View = js.native
     
-    var onmessage: js.Any = js.native
+    /* private */ var onmessage: js.Any = js.native
     
     /**
       * Asynchronously returns a View object that represents an existing view.
@@ -457,62 +429,44 @@ object viewViewMod {
   }
   object ViewOptions {
     
-    @scala.inline
-    def apply(): ViewOptions = {
+    inline def apply(): ViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewOptions]
     }
     
-    @scala.inline
-    implicit class ViewOptionsMutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ViewOptions](x: Self) {
       
-      @scala.inline
-      def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+      inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
       
-      @scala.inline
-      def setAutoResize(value: AutoResizeOptions): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+      inline def setAutoResize(value: AutoResizeOptions): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+      inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setContentNavigation(value: ContentNavigation): Self = StObject.set(x, "contentNavigation", value.asInstanceOf[js.Any])
+      inline def setContentNavigation(value: ContentNavigation): Self = StObject.set(x, "contentNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentNavigationUndefined: Self = StObject.set(x, "contentNavigation", js.undefined)
+      inline def setContentNavigationUndefined: Self = StObject.set(x, "contentNavigation", js.undefined)
       
-      @scala.inline
-      def setContextMenuSettings(value: ContextMenuSettings): Self = StObject.set(x, "contextMenuSettings", value.asInstanceOf[js.Any])
+      inline def setContextMenuSettings(value: ContextMenuSettings): Self = StObject.set(x, "contextMenuSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextMenuSettingsUndefined: Self = StObject.set(x, "contextMenuSettings", js.undefined)
+      inline def setContextMenuSettingsUndefined: Self = StObject.set(x, "contextMenuSettings", js.undefined)
       
-      @scala.inline
-      def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
+      inline def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
+      inline def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
       
-      @scala.inline
-      def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+      inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
-      @scala.inline
-      def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      inline def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+      inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     }
   }
 }

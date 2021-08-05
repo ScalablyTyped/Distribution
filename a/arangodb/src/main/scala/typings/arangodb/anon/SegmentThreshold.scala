@@ -15,23 +15,18 @@ trait SegmentThreshold extends StObject {
 }
 object SegmentThreshold {
   
-  @scala.inline
-  def apply(segmentThreshold: Double, threshold: Double, `type`: ArangoSearchViewConsolidationType): SegmentThreshold = {
+  inline def apply(segmentThreshold: Double, threshold: Double, `type`: ArangoSearchViewConsolidationType): SegmentThreshold = {
     val __obj = js.Dynamic.literal(segmentThreshold = segmentThreshold.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentThreshold]
   }
   
-  @scala.inline
-  implicit class SegmentThresholdMutableBuilder[Self <: SegmentThreshold] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentThreshold](x: Self) {
     
-    @scala.inline
-    def setSegmentThreshold(value: Double): Self = StObject.set(x, "segmentThreshold", value.asInstanceOf[js.Any])
+    inline def setSegmentThreshold(value: Double): Self = StObject.set(x, "segmentThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ArangoSearchViewConsolidationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArangoSearchViewConsolidationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

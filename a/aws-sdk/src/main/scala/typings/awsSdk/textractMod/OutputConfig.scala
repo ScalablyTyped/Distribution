@@ -18,22 +18,17 @@ trait OutputConfig extends StObject {
 }
 object OutputConfig {
   
-  @scala.inline
-  def apply(S3Bucket: S3Bucket): OutputConfig = {
+  inline def apply(S3Bucket: S3Bucket): OutputConfig = {
     val __obj = js.Dynamic.literal(S3Bucket = S3Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputConfig]
   }
   
-  @scala.inline
-  implicit class OutputConfigMutableBuilder[Self <: OutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OutputConfig](x: Self) {
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Prefix(value: S3ObjectName): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
+    inline def setS3Prefix(value: S3ObjectName): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
+    inline def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
   }
 }

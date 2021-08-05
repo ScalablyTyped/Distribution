@@ -18,31 +18,23 @@ trait SketchMSAttributedString extends StObject {
 }
 object SketchMSAttributedString {
   
-  @scala.inline
-  def apply(attributes: js.Array[SketchMSStringAttribute], string: String): SketchMSAttributedString = {
+  inline def apply(attributes: js.Array[SketchMSStringAttribute], string: String): SketchMSAttributedString = {
     val __obj = js.Dynamic.literal(_class = "attributedString", attributes = attributes.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSAttributedString]
   }
   
-  @scala.inline
-  implicit class SketchMSAttributedStringMutableBuilder[Self <: SketchMSAttributedString] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSAttributedString](x: Self) {
     
-    @scala.inline
-    def setArchivedAttributedString(value: Archive): Self = StObject.set(x, "archivedAttributedString", value.asInstanceOf[js.Any])
+    inline def setArchivedAttributedString(value: Archive): Self = StObject.set(x, "archivedAttributedString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivedAttributedStringUndefined: Self = StObject.set(x, "archivedAttributedString", js.undefined)
+    inline def setArchivedAttributedStringUndefined: Self = StObject.set(x, "archivedAttributedString", js.undefined)
     
-    @scala.inline
-    def setAttributes(value: js.Array[SketchMSStringAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[SketchMSStringAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: SketchMSStringAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: SketchMSStringAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: attributedString): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: attributedString): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

@@ -43,40 +43,29 @@ trait IBackgroundUploadProperties extends StObject {
 }
 object IBackgroundUploadProperties {
   
-  @scala.inline
-  def apply(path: String): IBackgroundUploadProperties = {
+  inline def apply(path: String): IBackgroundUploadProperties = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundUploadProperties]
   }
   
-  @scala.inline
-  implicit class IBackgroundUploadPropertiesMutableBuilder[Self <: IBackgroundUploadProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundUploadProperties](x: Self) {
     
-    @scala.inline
-    def setFile_input(value: js.Any): Self = StObject.set(x, "file_input", value.asInstanceOf[js.Any])
+    inline def setFile_input(value: js.Any): Self = StObject.set(x, "file_input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_inputUndefined: Self = StObject.set(x, "file_input", js.undefined)
+    inline def setFile_inputUndefined: Self = StObject.set(x, "file_input", js.undefined)
     
-    @scala.inline
-    def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
+    inline def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile_nameUndefined: Self = StObject.set(x, "file_name", js.undefined)
+    inline def setFile_nameUndefined: Self = StObject.set(x, "file_name", js.undefined)
     
-    @scala.inline
-    def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream_input(value: IInputStream): Self = StObject.set(x, "stream_input", value.asInstanceOf[js.Any])
+    inline def setStream_input(value: IInputStream): Self = StObject.set(x, "stream_input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream_inputUndefined: Self = StObject.set(x, "stream_input", js.undefined)
+    inline def setStream_inputUndefined: Self = StObject.set(x, "stream_input", js.undefined)
   }
 }

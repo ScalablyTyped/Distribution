@@ -27,8 +27,7 @@ trait ItemCollection extends StObject {
 }
 object ItemCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Object,
     getFlattenedItemList: js.Array[Annotation | Overlay],
     items: js.Array[Annotation | Overlay | ItemCollection]
@@ -37,22 +36,16 @@ object ItemCollection {
     __obj.asInstanceOf[ItemCollection]
   }
   
-  @scala.inline
-  implicit class ItemCollectionMutableBuilder[Self <: ItemCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ItemCollection](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFlattenedItemList(value: js.Array[Annotation | Overlay]): Self = StObject.set(x, "getFlattenedItemList", value.asInstanceOf[js.Any])
+    inline def setGetFlattenedItemList(value: js.Array[Annotation | Overlay]): Self = StObject.set(x, "getFlattenedItemList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFlattenedItemListVarargs(value: (Annotation | Overlay)*): Self = StObject.set(x, "getFlattenedItemList", js.Array(value :_*))
+    inline def setGetFlattenedItemListVarargs(value: (Annotation | Overlay)*): Self = StObject.set(x, "getFlattenedItemList", js.Array(value :_*))
     
-    @scala.inline
-    def setItems(value: js.Array[Annotation | Overlay | ItemCollection]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Annotation | Overlay | ItemCollection]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: (Annotation | Overlay | ItemCollection)*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (Annotation | Overlay | ItemCollection)*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

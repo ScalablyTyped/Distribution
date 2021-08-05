@@ -17,31 +17,23 @@ trait DeviceIpBlock extends StObject {
 }
 object DeviceIpBlock {
   
-  @scala.inline
-  def apply(): DeviceIpBlock = {
+  inline def apply(): DeviceIpBlock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceIpBlock]
   }
   
-  @scala.inline
-  implicit class DeviceIpBlockMutableBuilder[Self <: DeviceIpBlock] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceIpBlock](x: Self) {
     
-    @scala.inline
-    def setAddedDate(value: Date): Self = StObject.set(x, "addedDate", value.asInstanceOf[js.Any])
+    inline def setAddedDate(value: Date): Self = StObject.set(x, "addedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedDateUndefined: Self = StObject.set(x, "addedDate", js.undefined)
+    inline def setAddedDateUndefined: Self = StObject.set(x, "addedDate", js.undefined)
     
-    @scala.inline
-    def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
-    @scala.inline
-    def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
   }
 }

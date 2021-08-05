@@ -18,22 +18,17 @@ trait DetectProtectiveEquipmentRequest extends StObject {
 }
 object DetectProtectiveEquipmentRequest {
   
-  @scala.inline
-  def apply(Image: Image): DetectProtectiveEquipmentRequest = {
+  inline def apply(Image: Image): DetectProtectiveEquipmentRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectProtectiveEquipmentRequest]
   }
   
-  @scala.inline
-  implicit class DetectProtectiveEquipmentRequestMutableBuilder[Self <: DetectProtectiveEquipmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectProtectiveEquipmentRequest](x: Self) {
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummarizationAttributes(value: ProtectiveEquipmentSummarizationAttributes): Self = StObject.set(x, "SummarizationAttributes", value.asInstanceOf[js.Any])
+    inline def setSummarizationAttributes(value: ProtectiveEquipmentSummarizationAttributes): Self = StObject.set(x, "SummarizationAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummarizationAttributesUndefined: Self = StObject.set(x, "SummarizationAttributes", js.undefined)
+    inline def setSummarizationAttributesUndefined: Self = StObject.set(x, "SummarizationAttributes", js.undefined)
   }
 }

@@ -19,23 +19,18 @@ object FeaturedGames {
   }
   object BannedChampion {
     
-    @scala.inline
-    def apply(championId: Double, pickTurn: Double, teamId: Double): BannedChampion = {
+    inline def apply(championId: Double, pickTurn: Double, teamId: Double): BannedChampion = {
       val __obj = js.Dynamic.literal(championId = championId.asInstanceOf[js.Any], pickTurn = pickTurn.asInstanceOf[js.Any], teamId = teamId.asInstanceOf[js.Any])
       __obj.asInstanceOf[BannedChampion]
     }
     
-    @scala.inline
-    implicit class BannedChampionMutableBuilder[Self <: BannedChampion] (val x: Self) extends AnyVal {
+    extension [Self <: BannedChampion](x: Self) {
       
-      @scala.inline
-      def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
+      inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickTurn(value: Double): Self = StObject.set(x, "pickTurn", value.asInstanceOf[js.Any])
+      inline def setPickTurn(value: Double): Self = StObject.set(x, "pickTurn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,8 +60,7 @@ object FeaturedGames {
   }
   object FeaturedGameInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bannedChampions: js.Array[BannedChampion],
       gameId: Double,
       gameLength: Double,
@@ -83,47 +77,33 @@ object FeaturedGames {
       __obj.asInstanceOf[FeaturedGameInfo]
     }
     
-    @scala.inline
-    implicit class FeaturedGameInfoMutableBuilder[Self <: FeaturedGameInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FeaturedGameInfo](x: Self) {
       
-      @scala.inline
-      def setBannedChampions(value: js.Array[BannedChampion]): Self = StObject.set(x, "bannedChampions", value.asInstanceOf[js.Any])
+      inline def setBannedChampions(value: js.Array[BannedChampion]): Self = StObject.set(x, "bannedChampions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBannedChampionsVarargs(value: BannedChampion*): Self = StObject.set(x, "bannedChampions", js.Array(value :_*))
+      inline def setBannedChampionsVarargs(value: BannedChampion*): Self = StObject.set(x, "bannedChampions", js.Array(value :_*))
       
-      @scala.inline
-      def setGameId(value: Double): Self = StObject.set(x, "gameId", value.asInstanceOf[js.Any])
+      inline def setGameId(value: Double): Self = StObject.set(x, "gameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameLength(value: Double): Self = StObject.set(x, "gameLength", value.asInstanceOf[js.Any])
+      inline def setGameLength(value: Double): Self = StObject.set(x, "gameLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameMode(value: String): Self = StObject.set(x, "gameMode", value.asInstanceOf[js.Any])
+      inline def setGameMode(value: String): Self = StObject.set(x, "gameMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameQueueConfigId(value: Double): Self = StObject.set(x, "gameQueueConfigId", value.asInstanceOf[js.Any])
+      inline def setGameQueueConfigId(value: Double): Self = StObject.set(x, "gameQueueConfigId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameStartTime(value: Double): Self = StObject.set(x, "gameStartTime", value.asInstanceOf[js.Any])
+      inline def setGameStartTime(value: Double): Self = StObject.set(x, "gameStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameType(value: String): Self = StObject.set(x, "gameType", value.asInstanceOf[js.Any])
+      inline def setGameType(value: String): Self = StObject.set(x, "gameType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
+      inline def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObservers(value: Observer): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
+      inline def setObservers(value: Observer): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticipants(value: js.Array[Participant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+      inline def setParticipants(value: js.Array[Participant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
+      inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "participants", js.Array(value :_*))
       
-      @scala.inline
-      def setPlateformId(value: String): Self = StObject.set(x, "plateformId", value.asInstanceOf[js.Any])
+      inline def setPlateformId(value: String): Self = StObject.set(x, "plateformId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,23 +115,18 @@ object FeaturedGames {
   }
   object FeaturedGames {
     
-    @scala.inline
-    def apply(clientRefreshInterval: Double, gameList: js.Array[FeaturedGameInfo]): typings.riotGamesApi.RiotGamesAPI.FeaturedGames.FeaturedGames = {
+    inline def apply(clientRefreshInterval: Double, gameList: js.Array[FeaturedGameInfo]): typings.riotGamesApi.RiotGamesAPI.FeaturedGames.FeaturedGames = {
       val __obj = js.Dynamic.literal(clientRefreshInterval = clientRefreshInterval.asInstanceOf[js.Any], gameList = gameList.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.riotGamesApi.RiotGamesAPI.FeaturedGames.FeaturedGames]
     }
     
-    @scala.inline
-    implicit class FeaturedGamesMutableBuilder[Self <: typings.riotGamesApi.RiotGamesAPI.FeaturedGames.FeaturedGames] (val x: Self) extends AnyVal {
+    extension [Self <: typings.riotGamesApi.RiotGamesAPI.FeaturedGames.FeaturedGames](x: Self) {
       
-      @scala.inline
-      def setClientRefreshInterval(value: Double): Self = StObject.set(x, "clientRefreshInterval", value.asInstanceOf[js.Any])
+      inline def setClientRefreshInterval(value: Double): Self = StObject.set(x, "clientRefreshInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameList(value: js.Array[FeaturedGameInfo]): Self = StObject.set(x, "gameList", value.asInstanceOf[js.Any])
+      inline def setGameList(value: js.Array[FeaturedGameInfo]): Self = StObject.set(x, "gameList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameListVarargs(value: FeaturedGameInfo*): Self = StObject.set(x, "gameList", js.Array(value :_*))
+      inline def setGameListVarargs(value: FeaturedGameInfo*): Self = StObject.set(x, "gameList", js.Array(value :_*))
     }
   }
   
@@ -161,17 +136,14 @@ object FeaturedGames {
   }
   object Observer {
     
-    @scala.inline
-    def apply(encryptionKey: String): Observer = {
+    inline def apply(encryptionKey: String): Observer = {
       val __obj = js.Dynamic.literal(encryptionKey = encryptionKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Observer]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
+    extension [Self <: Observer](x: Self) {
       
-      @scala.inline
-      def setEncryptionKey(value: String): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionKey(value: String): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,8 +165,7 @@ object FeaturedGames {
   }
   object Participant {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bot: Boolean,
       championId: Double,
       profileIconId: Double,
@@ -207,29 +178,21 @@ object FeaturedGames {
       __obj.asInstanceOf[Participant]
     }
     
-    @scala.inline
-    implicit class ParticipantMutableBuilder[Self <: Participant] (val x: Self) extends AnyVal {
+    extension [Self <: Participant](x: Self) {
       
-      @scala.inline
-      def setBot(value: Boolean): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
+      inline def setBot(value: Boolean): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
+      inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileIconId(value: Double): Self = StObject.set(x, "profileIconId", value.asInstanceOf[js.Any])
+      inline def setProfileIconId(value: Double): Self = StObject.set(x, "profileIconId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpell1Id(value: Double): Self = StObject.set(x, "spell1Id", value.asInstanceOf[js.Any])
+      inline def setSpell1Id(value: Double): Self = StObject.set(x, "spell1Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpell2Id(value: Double): Self = StObject.set(x, "spell2Id", value.asInstanceOf[js.Any])
+      inline def setSpell2Id(value: Double): Self = StObject.set(x, "spell2Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummonerName(value: String): Self = StObject.set(x, "summonerName", value.asInstanceOf[js.Any])
+      inline def setSummonerName(value: String): Self = StObject.set(x, "summonerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     }
   }
 }

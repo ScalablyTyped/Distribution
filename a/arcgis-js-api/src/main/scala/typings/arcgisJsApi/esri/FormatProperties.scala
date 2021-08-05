@@ -57,58 +57,41 @@ trait FormatProperties extends StObject {
 }
 object FormatProperties {
   
-  @scala.inline
-  def apply(): FormatProperties = {
+  inline def apply(): FormatProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatProperties]
   }
   
-  @scala.inline
-  implicit class FormatPropertiesMutableBuilder[Self <: FormatProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FormatProperties](x: Self) {
     
-    @scala.inline
-    def setConversionInfo(value: ConversionInfo): Self = StObject.set(x, "conversionInfo", value.asInstanceOf[js.Any])
+    inline def setConversionInfo(value: ConversionInfo): Self = StObject.set(x, "conversionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionInfoUndefined: Self = StObject.set(x, "conversionInfo", js.undefined)
+    inline def setConversionInfoUndefined: Self = StObject.set(x, "conversionInfo", js.undefined)
     
-    @scala.inline
-    def setCoordinateSegments(value: js.Array[CoordinateSegment]): Self = StObject.set(x, "coordinateSegments", value.asInstanceOf[js.Any])
+    inline def setCoordinateSegments(value: js.Array[CoordinateSegment]): Self = StObject.set(x, "coordinateSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinateSegmentsUndefined: Self = StObject.set(x, "coordinateSegments", js.undefined)
+    inline def setCoordinateSegmentsUndefined: Self = StObject.set(x, "coordinateSegments", js.undefined)
     
-    @scala.inline
-    def setCoordinateSegmentsVarargs(value: CoordinateSegment*): Self = StObject.set(x, "coordinateSegments", js.Array(value :_*))
+    inline def setCoordinateSegmentsVarargs(value: CoordinateSegment*): Self = StObject.set(x, "coordinateSegments", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentPattern(value: String): Self = StObject.set(x, "currentPattern", value.asInstanceOf[js.Any])
+    inline def setCurrentPattern(value: String): Self = StObject.set(x, "currentPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPatternUndefined: Self = StObject.set(x, "currentPattern", js.undefined)
+    inline def setCurrentPatternUndefined: Self = StObject.set(x, "currentPattern", js.undefined)
     
-    @scala.inline
-    def setDefaultPattern(value: String): Self = StObject.set(x, "defaultPattern", value.asInstanceOf[js.Any])
+    inline def setDefaultPattern(value: String): Self = StObject.set(x, "defaultPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPatternUndefined: Self = StObject.set(x, "defaultPattern", js.undefined)
+    inline def setDefaultPatternUndefined: Self = StObject.set(x, "defaultPattern", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: CoordinateConversionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: CoordinateConversionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

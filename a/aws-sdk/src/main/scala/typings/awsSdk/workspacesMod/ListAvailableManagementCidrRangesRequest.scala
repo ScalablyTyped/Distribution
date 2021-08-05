@@ -23,28 +23,21 @@ trait ListAvailableManagementCidrRangesRequest extends StObject {
 }
 object ListAvailableManagementCidrRangesRequest {
   
-  @scala.inline
-  def apply(ManagementCidrRangeConstraint: ManagementCidrRangeConstraint): ListAvailableManagementCidrRangesRequest = {
+  inline def apply(ManagementCidrRangeConstraint: ManagementCidrRangeConstraint): ListAvailableManagementCidrRangesRequest = {
     val __obj = js.Dynamic.literal(ManagementCidrRangeConstraint = ManagementCidrRangeConstraint.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAvailableManagementCidrRangesRequest]
   }
   
-  @scala.inline
-  implicit class ListAvailableManagementCidrRangesRequestMutableBuilder[Self <: ListAvailableManagementCidrRangesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAvailableManagementCidrRangesRequest](x: Self) {
     
-    @scala.inline
-    def setManagementCidrRangeConstraint(value: ManagementCidrRangeConstraint): Self = StObject.set(x, "ManagementCidrRangeConstraint", value.asInstanceOf[js.Any])
+    inline def setManagementCidrRangeConstraint(value: ManagementCidrRangeConstraint): Self = StObject.set(x, "ManagementCidrRangeConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: ManagementCidrRangeMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ManagementCidrRangeMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

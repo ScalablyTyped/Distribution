@@ -61,8 +61,7 @@ trait ColumnLegacy extends StObject {
 }
 object ColumnLegacy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _bAutoType: Boolean,
     aDataSort: js.Any,
     asSorting: js.Array[String],
@@ -93,87 +92,60 @@ object ColumnLegacy {
     __obj.asInstanceOf[ColumnLegacy]
   }
   
-  @scala.inline
-  implicit class ColumnLegacyMutableBuilder[Self <: ColumnLegacy] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnLegacy](x: Self) {
     
-    @scala.inline
-    def setADataSort(value: js.Any): Self = StObject.set(x, "aDataSort", value.asInstanceOf[js.Any])
+    inline def setADataSort(value: js.Any): Self = StObject.set(x, "aDataSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsSorting(value: js.Array[String]): Self = StObject.set(x, "asSorting", value.asInstanceOf[js.Any])
+    inline def setAsSorting(value: js.Array[String]): Self = StObject.set(x, "asSorting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsSortingVarargs(value: String*): Self = StObject.set(x, "asSorting", js.Array(value :_*))
+    inline def setAsSortingVarargs(value: String*): Self = StObject.set(x, "asSorting", js.Array(value :_*))
     
-    @scala.inline
-    def setBSearchable(value: Boolean): Self = StObject.set(x, "bSearchable", value.asInstanceOf[js.Any])
+    inline def setBSearchable(value: Boolean): Self = StObject.set(x, "bSearchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBSortable(value: Boolean): Self = StObject.set(x, "bSortable", value.asInstanceOf[js.Any])
+    inline def setBSortable(value: Boolean): Self = StObject.set(x, "bSortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBVisible(value: Boolean): Self = StObject.set(x, "bVisible", value.asInstanceOf[js.Any])
+    inline def setBVisible(value: Boolean): Self = StObject.set(x, "bVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFnCreatedCell(
+    inline def setFnCreatedCell(
       value: (/* cell */ Node, /* cellData */ js.Any, /* rowData */ js.Any, /* row */ Double, /* col */ Double) => Unit
     ): Self = StObject.set(x, "fnCreatedCell", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setFnGetData(value: (js.Any, String) => js.Any): Self = StObject.set(x, "fnGetData", js.Any.fromFunction2(value))
+    inline def setFnGetData(value: (js.Any, String) => js.Any): Self = StObject.set(x, "fnGetData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFnSetData(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "fnSetData", js.Any.fromFunction2(value))
+    inline def setFnSetData(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "fnSetData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+    inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMData(value: js.Any): Self = StObject.set(x, "mData", value.asInstanceOf[js.Any])
+    inline def setMData(value: js.Any): Self = StObject.set(x, "mData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMRender(value: js.Any): Self = StObject.set(x, "mRender", value.asInstanceOf[js.Any])
+    inline def setMRender(value: js.Any): Self = StObject.set(x, "mRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNIf(value: Node): Self = StObject.set(x, "nIf", value.asInstanceOf[js.Any])
+    inline def setNIf(value: Node): Self = StObject.set(x, "nIf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNTh(value: Node): Self = StObject.set(x, "nTh", value.asInstanceOf[js.Any])
+    inline def setNTh(value: Node): Self = StObject.set(x, "nTh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSClass(value: String): Self = StObject.set(x, "sClass", value.asInstanceOf[js.Any])
+    inline def setSClass(value: String): Self = StObject.set(x, "sClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSContentPadding(value: String): Self = StObject.set(x, "sContentPadding", value.asInstanceOf[js.Any])
+    inline def setSContentPadding(value: String): Self = StObject.set(x, "sContentPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSDefaultContent(value: String): Self = StObject.set(x, "sDefaultContent", value.asInstanceOf[js.Any])
+    inline def setSDefaultContent(value: String): Self = StObject.set(x, "sDefaultContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
+    inline def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSortDataType(value: String): Self = StObject.set(x, "sSortDataType", value.asInstanceOf[js.Any])
+    inline def setSSortDataType(value: String): Self = StObject.set(x, "sSortDataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSortingClass(value: String): Self = StObject.set(x, "sSortingClass", value.asInstanceOf[js.Any])
+    inline def setSSortingClass(value: String): Self = StObject.set(x, "sSortingClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSortingClassJUI(value: String): Self = StObject.set(x, "sSortingClassJUI", value.asInstanceOf[js.Any])
+    inline def setSSortingClassJUI(value: String): Self = StObject.set(x, "sSortingClassJUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTitle(value: String): Self = StObject.set(x, "sTitle", value.asInstanceOf[js.Any])
+    inline def setSTitle(value: String): Self = StObject.set(x, "sTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSType(value: String): Self = StObject.set(x, "sType", value.asInstanceOf[js.Any])
+    inline def setSType(value: String): Self = StObject.set(x, "sType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSWidth(value: String): Self = StObject.set(x, "sWidth", value.asInstanceOf[js.Any])
+    inline def setSWidth(value: String): Self = StObject.set(x, "sWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSWidthOrig(value: String): Self = StObject.set(x, "sWidthOrig", value.asInstanceOf[js.Any])
+    inline def setSWidthOrig(value: String): Self = StObject.set(x, "sWidthOrig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_bAutoType(value: Boolean): Self = StObject.set(x, "_bAutoType", value.asInstanceOf[js.Any])
+    inline def set_bAutoType(value: Boolean): Self = StObject.set(x, "_bAutoType", value.asInstanceOf[js.Any])
   }
 }

@@ -17,13 +17,10 @@ object GraphicType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def EMPTY: `0` = 0.asInstanceOf[`0`]
+    inline def EMPTY: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PIXEL: `1` = 1.asInstanceOf[`1`]
+    inline def PIXEL: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def VECTOR: `2` = 2.asInstanceOf[`2`]
+    inline def VECTOR: `2` = 2.asInstanceOf[`2`]
   }
 }

@@ -25,31 +25,23 @@ trait CrosshairTextBaseCfg extends StObject {
 }
 object CrosshairTextBaseCfg {
   
-  @scala.inline
-  def apply(): CrosshairTextBaseCfg = {
+  inline def apply(): CrosshairTextBaseCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrosshairTextBaseCfg]
   }
   
-  @scala.inline
-  implicit class CrosshairTextBaseCfgMutableBuilder[Self <: CrosshairTextBaseCfg] (val x: Self) extends AnyVal {
+  extension [Self <: CrosshairTextBaseCfg](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

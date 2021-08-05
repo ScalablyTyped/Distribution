@@ -23,25 +23,19 @@ trait SchemaApkBinary extends StObject {
 }
 object SchemaApkBinary {
   
-  @scala.inline
-  def apply(): SchemaApkBinary = {
+  inline def apply(): SchemaApkBinary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApkBinary]
   }
   
-  @scala.inline
-  implicit class SchemaApkBinaryMutableBuilder[Self <: SchemaApkBinary] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApkBinary](x: Self) {
     
-    @scala.inline
-    def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+    inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
+    inline def setSha1Undefined: Self = StObject.set(x, "sha1", js.undefined)
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+    inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
   }
 }

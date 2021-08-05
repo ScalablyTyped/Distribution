@@ -12,19 +12,15 @@ trait TypeofpublishHandler extends StObject {
 }
 object TypeofpublishHandler {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_2: Typeofoptions2): TypeofpublishHandler = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_2: Typeofoptions2): TypeofpublishHandler = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options_2 = options_2.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofpublishHandler]
   }
   
-  @scala.inline
-  implicit class TypeofpublishHandlerMutableBuilder[Self <: TypeofpublishHandler] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofpublishHandler](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_2(value: Typeofoptions2): Self = StObject.set(x, "options_2", value.asInstanceOf[js.Any])
+    inline def setOptions_2(value: Typeofoptions2): Self = StObject.set(x, "options_2", value.asInstanceOf[js.Any])
   }
 }

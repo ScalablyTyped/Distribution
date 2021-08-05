@@ -20,8 +20,7 @@ trait P extends StObject {
 }
 object P {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     p: Double,
     q: Double,
     radialSegments: Double,
@@ -33,25 +32,18 @@ object P {
     __obj.asInstanceOf[P]
   }
   
-  @scala.inline
-  implicit class PMutableBuilder[Self <: P] (val x: Self) extends AnyVal {
+  extension [Self <: P](x: Self) {
     
-    @scala.inline
-    def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ(value: Double): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: Double): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
+    inline def setRadialSegments(value: Double): Self = StObject.set(x, "radialSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTube(value: Double): Self = StObject.set(x, "tube", value.asInstanceOf[js.Any])
+    inline def setTube(value: Double): Self = StObject.set(x, "tube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTubularSegments(value: Double): Self = StObject.set(x, "tubularSegments", value.asInstanceOf[js.Any])
+    inline def setTubularSegments(value: Double): Self = StObject.set(x, "tubularSegments", value.asInstanceOf[js.Any])
   }
 }

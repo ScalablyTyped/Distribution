@@ -56,8 +56,7 @@ trait XNumberFormatter
 }
 object XNumberFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NumberFormatsSupplier: XNumberFormatsSupplier,
     acquire: () => Unit,
     attachNumberFormatsSupplier: XNumberFormatsSupplier => Unit,
@@ -76,37 +75,26 @@ object XNumberFormatter {
     __obj.asInstanceOf[XNumberFormatter]
   }
   
-  @scala.inline
-  implicit class XNumberFormatterMutableBuilder[Self <: XNumberFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: XNumberFormatter](x: Self) {
     
-    @scala.inline
-    def setAttachNumberFormatsSupplier(value: XNumberFormatsSupplier => Unit): Self = StObject.set(x, "attachNumberFormatsSupplier", js.Any.fromFunction1(value))
+    inline def setAttachNumberFormatsSupplier(value: XNumberFormatsSupplier => Unit): Self = StObject.set(x, "attachNumberFormatsSupplier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertNumberToString(value: (Double, Double) => String): Self = StObject.set(x, "convertNumberToString", js.Any.fromFunction2(value))
+    inline def setConvertNumberToString(value: (Double, Double) => String): Self = StObject.set(x, "convertNumberToString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertStringToNumber(value: (Double, String) => Double): Self = StObject.set(x, "convertStringToNumber", js.Any.fromFunction2(value))
+    inline def setConvertStringToNumber(value: (Double, String) => Double): Self = StObject.set(x, "convertStringToNumber", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDetectNumberFormat(value: (Double, String) => Double): Self = StObject.set(x, "detectNumberFormat", js.Any.fromFunction2(value))
+    inline def setDetectNumberFormat(value: (Double, String) => Double): Self = StObject.set(x, "detectNumberFormat", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormatString(value: (Double, String) => String): Self = StObject.set(x, "formatString", js.Any.fromFunction2(value))
+    inline def setFormatString(value: (Double, String) => String): Self = StObject.set(x, "formatString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetInputString(value: (Double, Double) => String): Self = StObject.set(x, "getInputString", js.Any.fromFunction2(value))
+    inline def setGetInputString(value: (Double, Double) => String): Self = StObject.set(x, "getInputString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetNumberFormatsSupplier(value: () => XNumberFormatsSupplier): Self = StObject.set(x, "getNumberFormatsSupplier", js.Any.fromFunction0(value))
+    inline def setGetNumberFormatsSupplier(value: () => XNumberFormatsSupplier): Self = StObject.set(x, "getNumberFormatsSupplier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "NumberFormatsSupplier", value.asInstanceOf[js.Any])
+    inline def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "NumberFormatsSupplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryColorForNumber(value: (Double, Double, Color) => Color): Self = StObject.set(x, "queryColorForNumber", js.Any.fromFunction3(value))
+    inline def setQueryColorForNumber(value: (Double, Double, Color) => Color): Self = StObject.set(x, "queryColorForNumber", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQueryColorForString(value: (Double, String, Color) => Color): Self = StObject.set(x, "queryColorForString", js.Any.fromFunction3(value))
+    inline def setQueryColorForString(value: (Double, String, Color) => Color): Self = StObject.set(x, "queryColorForString", js.Any.fromFunction3(value))
   }
 }

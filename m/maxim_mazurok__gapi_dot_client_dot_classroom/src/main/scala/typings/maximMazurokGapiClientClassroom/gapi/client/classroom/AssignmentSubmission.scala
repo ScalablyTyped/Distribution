@@ -15,22 +15,17 @@ trait AssignmentSubmission extends StObject {
 }
 object AssignmentSubmission {
   
-  @scala.inline
-  def apply(): AssignmentSubmission = {
+  inline def apply(): AssignmentSubmission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssignmentSubmission]
   }
   
-  @scala.inline
-  implicit class AssignmentSubmissionMutableBuilder[Self <: AssignmentSubmission] (val x: Self) extends AnyVal {
+  extension [Self <: AssignmentSubmission](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
   }
 }

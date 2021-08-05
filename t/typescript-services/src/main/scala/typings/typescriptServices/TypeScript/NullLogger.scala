@@ -9,8 +9,7 @@ trait NullLogger
      with ILogger
 object NullLogger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug: () => Boolean,
     error: () => Boolean,
     fatal: () => Boolean,

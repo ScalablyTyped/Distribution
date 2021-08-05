@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ReflectionFormat")
 @js.native
-class ReflectionFormat protected ()
+/* private */ class ReflectionFormat ()
   extends StObject
      with typings.activexWord.Word.ReflectionFormat {
   
@@ -35,7 +35,7 @@ class ReflectionFormat protected ()
   /* CompleteClass */
   var Type: MsoReflectionType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ReflectionFormat_typekey")
   var WordDotReflectionFormat_typekey: typings.activexWord.Word.ReflectionFormat = js.native
 }

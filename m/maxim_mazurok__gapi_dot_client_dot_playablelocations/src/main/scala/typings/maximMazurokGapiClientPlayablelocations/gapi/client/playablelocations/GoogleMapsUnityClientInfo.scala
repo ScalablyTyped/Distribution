@@ -35,61 +35,43 @@ trait GoogleMapsUnityClientInfo extends StObject {
 }
 object GoogleMapsUnityClientInfo {
   
-  @scala.inline
-  def apply(): GoogleMapsUnityClientInfo = {
+  inline def apply(): GoogleMapsUnityClientInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsUnityClientInfo]
   }
   
-  @scala.inline
-  implicit class GoogleMapsUnityClientInfoMutableBuilder[Self <: GoogleMapsUnityClientInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsUnityClientInfo](x: Self) {
     
-    @scala.inline
-    def setApiClient(value: String): Self = StObject.set(x, "apiClient", value.asInstanceOf[js.Any])
+    inline def setApiClient(value: String): Self = StObject.set(x, "apiClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiClientUndefined: Self = StObject.set(x, "apiClient", js.undefined)
+    inline def setApiClientUndefined: Self = StObject.set(x, "apiClient", js.undefined)
     
-    @scala.inline
-    def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+    inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     
-    @scala.inline
-    def setApplicationVersion(value: String): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
+    inline def setApplicationVersion(value: String): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
+    inline def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
-    @scala.inline
-    def setDeviceModel(value: String): Self = StObject.set(x, "deviceModel", value.asInstanceOf[js.Any])
+    inline def setDeviceModel(value: String): Self = StObject.set(x, "deviceModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceModelUndefined: Self = StObject.set(x, "deviceModel", js.undefined)
+    inline def setDeviceModelUndefined: Self = StObject.set(x, "deviceModel", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemBuild(value: String): Self = StObject.set(x, "operatingSystemBuild", value.asInstanceOf[js.Any])
+    inline def setOperatingSystemBuild(value: String): Self = StObject.set(x, "operatingSystemBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemBuildUndefined: Self = StObject.set(x, "operatingSystemBuild", js.undefined)
+    inline def setOperatingSystemBuildUndefined: Self = StObject.set(x, "operatingSystemBuild", js.undefined)
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

@@ -19,29 +19,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def install(cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def install(
+  inline def install(cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(
     optsCb: js.Function2[/* error */ js.UndefOr[Error], /* fsPaths */ FsPaths, Unit],
     cb: js.Function2[/* error */ js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(optsCb.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def install(optsCb: InstallOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(optsCb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def install(opts: InstallOpts, cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def install(optsCb: InstallOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(optsCb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(opts: InstallOpts, cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def start(cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def start(
+  inline def start(cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def start(
     optsCb: js.Function2[/* error */ Error | Null, /* selenium */ ChildProcess, Unit],
     cb: js.Function2[/* error */ Error | Null, /* selenium */ ChildProcess, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(optsCb.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def start(optsCb: StartOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(optsCb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def start(opts: StartOpts, cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def start(optsCb: StartOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(optsCb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def start(opts: StartOpts, cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait DriverOptions extends StObject {
     
@@ -53,32 +45,24 @@ object mod {
   }
   object DriverOptions {
     
-    @scala.inline
-    def apply(): DriverOptions = {
+    inline def apply(): DriverOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DriverOptions]
     }
     
-    @scala.inline
-    implicit class DriverOptionsMutableBuilder[Self <: DriverOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DriverOptions](x: Self) {
       
-      @scala.inline
-      def setArch(value: String | ia32 | x64): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String | ia32 | x64): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
+      inline def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
       
-      @scala.inline
-      def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+      inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+      inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -98,44 +82,32 @@ object mod {
   }
   object FsPaths {
     
-    @scala.inline
-    def apply(): FsPaths = {
+    inline def apply(): FsPaths = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FsPaths]
     }
     
-    @scala.inline
-    implicit class FsPathsMutableBuilder[Self <: FsPaths] (val x: Self) extends AnyVal {
+    extension [Self <: FsPaths](x: Self) {
       
-      @scala.inline
-      def setChrome(value: Dictx): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      inline def setChrome(value: Dictx): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
+      inline def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
       
-      @scala.inline
-      def setEdge(value: Dictx): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: Dictx): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+      inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
       
-      @scala.inline
-      def setFirefox(value: Dictx): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
+      inline def setFirefox(value: Dictx): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirefoxUndefined: Self = StObject.set(x, "firefox", js.undefined)
+      inline def setFirefoxUndefined: Self = StObject.set(x, "firefox", js.undefined)
       
-      @scala.inline
-      def setIe(value: Dictx): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
+      inline def setIe(value: Dictx): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIeUndefined: Self = StObject.set(x, "ie", js.undefined)
+      inline def setIeUndefined: Self = StObject.set(x, "ie", js.undefined)
       
-      @scala.inline
-      def setSelenium(value: Dictx): Self = StObject.set(x, "selenium", value.asInstanceOf[js.Any])
+      inline def setSelenium(value: Dictx): Self = StObject.set(x, "selenium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeleniumUndefined: Self = StObject.set(x, "selenium", js.undefined)
+      inline def setSeleniumUndefined: Self = StObject.set(x, "selenium", js.undefined)
     }
   }
   
@@ -161,62 +133,44 @@ object mod {
   }
   object InstallOpts {
     
-    @scala.inline
-    def apply(): InstallOpts = {
+    inline def apply(): InstallOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InstallOpts]
     }
     
-    @scala.inline
-    implicit class InstallOptsMutableBuilder[Self <: InstallOpts] (val x: Self) extends AnyVal {
+    extension [Self <: InstallOpts](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+      inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+      inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
       
-      @scala.inline
-      def setCb(value: /* error */ Error => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
+      inline def setCb(value: /* error */ Error => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
+      inline def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
       
-      @scala.inline
-      def setDrivers(value: StringDictionary[DriverOptions]): Self = StObject.set(x, "drivers", value.asInstanceOf[js.Any])
+      inline def setDrivers(value: StringDictionary[DriverOptions]): Self = StObject.set(x, "drivers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriversUndefined: Self = StObject.set(x, "drivers", js.undefined)
+      inline def setDriversUndefined: Self = StObject.set(x, "drivers", js.undefined)
       
-      @scala.inline
-      def setLogger(value: /* message */ String => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
+      inline def setLogger(value: /* message */ String => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setProgressCb(value: (/* totalLength */ Double, /* progressLength */ Double, /* chunkLength */ Double) => Unit): Self = StObject.set(x, "progressCb", js.Any.fromFunction3(value))
+      inline def setProgressCb(value: (/* totalLength */ Double, /* progressLength */ Double, /* chunkLength */ Double) => Unit): Self = StObject.set(x, "progressCb", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setProgressCbUndefined: Self = StObject.set(x, "progressCb", js.undefined)
+      inline def setProgressCbUndefined: Self = StObject.set(x, "progressCb", js.undefined)
       
-      @scala.inline
-      def setRequestOpts(value: RequestOptions | String | URL_): Self = StObject.set(x, "requestOpts", value.asInstanceOf[js.Any])
+      inline def setRequestOpts(value: RequestOptions | String | URL_): Self = StObject.set(x, "requestOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestOptsUndefined: Self = StObject.set(x, "requestOpts", js.undefined)
+      inline def setRequestOptsUndefined: Self = StObject.set(x, "requestOpts", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -244,80 +198,56 @@ object mod {
   }
   object StartOpts {
     
-    @scala.inline
-    def apply(): StartOpts = {
+    inline def apply(): StartOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartOpts]
     }
     
-    @scala.inline
-    implicit class StartOptsMutableBuilder[Self <: StartOpts] (val x: Self) extends AnyVal {
+    extension [Self <: StartOpts](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setCb(value: (/* error */ Error, /* child */ ChildProcess) => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction2(value))
+      inline def setCb(value: (/* error */ Error, /* child */ ChildProcess) => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
+      inline def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
       
-      @scala.inline
-      def setDrivers(value: StringDictionary[DriverOptions]): Self = StObject.set(x, "drivers", value.asInstanceOf[js.Any])
+      inline def setDrivers(value: StringDictionary[DriverOptions]): Self = StObject.set(x, "drivers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriversUndefined: Self = StObject.set(x, "drivers", js.undefined)
+      inline def setDriversUndefined: Self = StObject.set(x, "drivers", js.undefined)
       
-      @scala.inline
-      def setJavaArgs(value: js.Array[String]): Self = StObject.set(x, "javaArgs", value.asInstanceOf[js.Any])
+      inline def setJavaArgs(value: js.Array[String]): Self = StObject.set(x, "javaArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaArgsUndefined: Self = StObject.set(x, "javaArgs", js.undefined)
+      inline def setJavaArgsUndefined: Self = StObject.set(x, "javaArgs", js.undefined)
       
-      @scala.inline
-      def setJavaArgsVarargs(value: String*): Self = StObject.set(x, "javaArgs", js.Array(value :_*))
+      inline def setJavaArgsVarargs(value: String*): Self = StObject.set(x, "javaArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setJavaPath(value: String): Self = StObject.set(x, "javaPath", value.asInstanceOf[js.Any])
+      inline def setJavaPath(value: String): Self = StObject.set(x, "javaPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavaPathUndefined: Self = StObject.set(x, "javaPath", js.undefined)
+      inline def setJavaPathUndefined: Self = StObject.set(x, "javaPath", js.undefined)
       
-      @scala.inline
-      def setRequestOpts(value: RequestOptions | String | URL_): Self = StObject.set(x, "requestOpts", value.asInstanceOf[js.Any])
+      inline def setRequestOpts(value: RequestOptions | String | URL_): Self = StObject.set(x, "requestOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestOptsUndefined: Self = StObject.set(x, "requestOpts", js.undefined)
+      inline def setRequestOptsUndefined: Self = StObject.set(x, "requestOpts", js.undefined)
       
-      @scala.inline
-      def setSeleniumArgs(value: js.Array[String]): Self = StObject.set(x, "seleniumArgs", value.asInstanceOf[js.Any])
+      inline def setSeleniumArgs(value: js.Array[String]): Self = StObject.set(x, "seleniumArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeleniumArgsUndefined: Self = StObject.set(x, "seleniumArgs", js.undefined)
+      inline def setSeleniumArgsUndefined: Self = StObject.set(x, "seleniumArgs", js.undefined)
       
-      @scala.inline
-      def setSeleniumArgsVarargs(value: String*): Self = StObject.set(x, "seleniumArgs", js.Array(value :_*))
+      inline def setSeleniumArgsVarargs(value: String*): Self = StObject.set(x, "seleniumArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setSpawnCb(value: /* selenium */ js.UndefOr[ChildProcess] => Unit): Self = StObject.set(x, "spawnCb", js.Any.fromFunction1(value))
+      inline def setSpawnCb(value: /* selenium */ js.UndefOr[ChildProcess] => Unit): Self = StObject.set(x, "spawnCb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSpawnCbUndefined: Self = StObject.set(x, "spawnCb", js.undefined)
+      inline def setSpawnCbUndefined: Self = StObject.set(x, "spawnCb", js.undefined)
       
-      @scala.inline
-      def setSpawnOptions(value: SpawnOptions): Self = StObject.set(x, "spawnOptions", value.asInstanceOf[js.Any])
+      inline def setSpawnOptions(value: SpawnOptions): Self = StObject.set(x, "spawnOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpawnOptionsUndefined: Self = StObject.set(x, "spawnOptions", js.undefined)
+      inline def setSpawnOptionsUndefined: Self = StObject.set(x, "spawnOptions", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

@@ -31,35 +31,26 @@ trait IPaymentMethodCreationOptions extends StObject {
 }
 object IPaymentMethodCreationOptions {
   
-  @scala.inline
-  def apply(`type`: IPaymentMethodType): IPaymentMethodCreationOptions = {
+  inline def apply(`type`: IPaymentMethodType): IPaymentMethodCreationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentMethodCreationOptions]
   }
   
-  @scala.inline
-  implicit class IPaymentMethodCreationOptionsMutableBuilder[Self <: IPaymentMethodCreationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentMethodCreationOptions](x: Self) {
     
-    @scala.inline
-    def setBilling_details(value: Address): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
+    inline def setBilling_details(value: Address): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
+    inline def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
     
-    @scala.inline
-    def setCard(value: Cvc | Token): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: Cvc | Token): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setType(value: IPaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IPaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

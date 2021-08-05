@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object arrayFindMod {
   
   /* was `typeof core.Array.find` */
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     array: ArrayLike[T],
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], Boolean]
   ): T = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     array: ArrayLike[T],
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], Boolean],
     thisArg: js.Any

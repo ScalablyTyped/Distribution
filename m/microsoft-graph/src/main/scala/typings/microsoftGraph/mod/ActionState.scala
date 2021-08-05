@@ -18,24 +18,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ActionState extends StObject
 object ActionState {
   
-  @scala.inline
-  def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
+  inline def active: typings.microsoftGraph.microsoftGraphStrings.active = "active".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.active]
   
-  @scala.inline
-  def canceled: typings.microsoftGraph.microsoftGraphStrings.canceled = "canceled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.canceled]
+  inline def canceled: typings.microsoftGraph.microsoftGraphStrings.canceled = "canceled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.canceled]
   
-  @scala.inline
-  def done: typings.microsoftGraph.microsoftGraphStrings.done = "done".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.done]
+  inline def done: typings.microsoftGraph.microsoftGraphStrings.done = "done".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.done]
   
-  @scala.inline
-  def failed: failed_ = "failed".asInstanceOf[failed_]
+  inline def failed: failed_ = "failed".asInstanceOf[failed_]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def notSupported: typings.microsoftGraph.microsoftGraphStrings.notSupported = "notSupported".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSupported]
+  inline def notSupported: typings.microsoftGraph.microsoftGraphStrings.notSupported = "notSupported".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSupported]
   
-  @scala.inline
-  def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
+  inline def pending: typings.microsoftGraph.microsoftGraphStrings.pending = "pending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.pending]
 }

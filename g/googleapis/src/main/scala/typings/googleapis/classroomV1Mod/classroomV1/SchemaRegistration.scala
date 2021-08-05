@@ -34,37 +34,27 @@ trait SchemaRegistration extends StObject {
 }
 object SchemaRegistration {
   
-  @scala.inline
-  def apply(): SchemaRegistration = {
+  inline def apply(): SchemaRegistration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegistration]
   }
   
-  @scala.inline
-  implicit class SchemaRegistrationMutableBuilder[Self <: SchemaRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegistration](x: Self) {
     
-    @scala.inline
-    def setCloudPubsubTopic(value: SchemaCloudPubsubTopic): Self = StObject.set(x, "cloudPubsubTopic", value.asInstanceOf[js.Any])
+    inline def setCloudPubsubTopic(value: SchemaCloudPubsubTopic): Self = StObject.set(x, "cloudPubsubTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudPubsubTopicUndefined: Self = StObject.set(x, "cloudPubsubTopic", js.undefined)
+    inline def setCloudPubsubTopicUndefined: Self = StObject.set(x, "cloudPubsubTopic", js.undefined)
     
-    @scala.inline
-    def setExpiryTime(value: String): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
+    inline def setExpiryTime(value: String): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
+    inline def setExpiryTimeUndefined: Self = StObject.set(x, "expiryTime", js.undefined)
     
-    @scala.inline
-    def setFeed(value: SchemaFeed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
+    inline def setFeed(value: SchemaFeed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
+    inline def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
     
-    @scala.inline
-    def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
+    inline def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationIdUndefined: Self = StObject.set(x, "registrationId", js.undefined)
+    inline def setRegistrationIdUndefined: Self = StObject.set(x, "registrationId", js.undefined)
   }
 }

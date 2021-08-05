@@ -8,16 +8,13 @@ object webpackConcatPluginStrings {
   
   @js.native
   sealed trait append extends StObject
-  @scala.inline
-  def append: append = "append".asInstanceOf[append]
+  inline def append: append = "append".asInstanceOf[append]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait prepend extends StObject
-  @scala.inline
-  def prepend: prepend = "prepend".asInstanceOf[prepend]
+  inline def prepend: prepend = "prepend".asInstanceOf[prepend]
 }

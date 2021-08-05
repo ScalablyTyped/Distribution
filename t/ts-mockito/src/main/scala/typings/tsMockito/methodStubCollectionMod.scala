@@ -13,20 +13,20 @@ object methodStubCollectionMod {
     
     def add(item: MethodStub): Unit = js.native
     
-    var getFirstMatchingFromGroup: js.Any = js.native
+    /* private */ var getFirstMatchingFromGroup: js.Any = js.native
     
     def getFirstMatchingFromGroupAndRemoveIfNotLast(groupIndex: Double, args: js.Array[js.Any]): MethodStub = js.native
     
-    var getFirstMatchingIndexFromGroup: js.Any = js.native
+    /* private */ var getFirstMatchingIndexFromGroup: js.Any = js.native
     
-    var getItemsCountInGroup: js.Any = js.native
+    /* private */ var getItemsCountInGroup: js.Any = js.native
     
     def getLastMatchingGroupIndex(args: js.Any): Double = js.native
     
     def hasMatchingInAnyGroup(args: js.Array[js.Any]): Boolean = js.native
     
-    var items: js.Any = js.native
+    /* private */ var items: js.Any = js.native
     
-    var removeIfNotLast: js.Any = js.native
+    /* private */ var removeIfNotLast: js.Any = js.native
   }
 }

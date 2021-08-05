@@ -1297,7 +1297,7 @@ trait Document extends StObject {
   
   val Windows: typings.activexWord.Word.Windows = js.native
   
-  @JSName("Word.Document_typekey")
+  /* private */ @JSName("Word.Document_typekey")
   var WordDotDocument_typekey: Document = js.native
   
   val WordOpenXML: String = js.native

@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcFileFormat extends StObject
 object AcFileFormat {
   
-  @scala.inline
-  def acFileFormatAccess2: `2` = 2.asInstanceOf[`2`]
+  inline def acFileFormatAccess2: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acFileFormatAccess2000: `9` = 9.asInstanceOf[`9`]
+  inline def acFileFormatAccess2000: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def acFileFormatAccess2002: `10` = 10.asInstanceOf[`10`]
+  inline def acFileFormatAccess2002: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def acFileFormatAccess2007: `12` = 12.asInstanceOf[`12`]
+  inline def acFileFormatAccess2007: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def acFileFormatAccess95: `7` = 7.asInstanceOf[`7`]
+  inline def acFileFormatAccess95: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def acFileFormatAccess97: `8` = 8.asInstanceOf[`8`]
+  inline def acFileFormatAccess97: `8` = 8.asInstanceOf[`8`]
 }

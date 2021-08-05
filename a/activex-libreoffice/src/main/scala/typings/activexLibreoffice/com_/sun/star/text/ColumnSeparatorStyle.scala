@@ -19,16 +19,12 @@ object ColumnSeparatorStyle {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DASHED: `3` = 3.asInstanceOf[`3`]
+    inline def DASHED: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def DOTTED: `2` = 2.asInstanceOf[`2`]
+    inline def DOTTED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SOLID: `1` = 1.asInstanceOf[`1`]
+    inline def SOLID: `1` = 1.asInstanceOf[`1`]
   }
 }

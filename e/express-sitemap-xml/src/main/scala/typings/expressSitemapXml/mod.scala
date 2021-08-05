@@ -15,8 +15,7 @@ object mod {
     * Express middleware to serve {@link https://en.wikipedia.org/wiki/Sitemaps|`sitemap.xml`} from a list of URLs
     * Create a sitemap.xml middleware.
     */
-  @scala.inline
-  def apply(getUrls: js.Function0[js.Array[SitemapLeaf] | js.Promise[js.Array[SitemapLeaf]]], base: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(getUrls.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(getUrls: js.Function0[js.Array[SitemapLeaf] | js.Promise[js.Array[SitemapLeaf]]], base: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(getUrls.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-sitemap-xml", JSImport.Namespace)
   @js.native
@@ -27,8 +26,7 @@ object mod {
     * Create an object where the keys are sitemap URLs to be served by the server
     * and the values are strings of sitemap XML content
     */
-  @scala.inline
-  def buildSitemaps(urls: js.Array[SitemapLeaf], base: String): js.Promise[Sitemap] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSitemaps")(urls.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Sitemap]]
+  inline def buildSitemaps(urls: js.Array[SitemapLeaf], base: String): js.Promise[Sitemap] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSitemaps")(urls.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Sitemap]]
   
   trait LeafObject extends StObject {
     
@@ -40,29 +38,22 @@ object mod {
   }
   object LeafObject {
     
-    @scala.inline
-    def apply(url: String): LeafObject = {
+    inline def apply(url: String): LeafObject = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[LeafObject]
     }
     
-    @scala.inline
-    implicit class LeafObjectMutableBuilder[Self <: LeafObject] (val x: Self) extends AnyVal {
+    extension [Self <: LeafObject](x: Self) {
       
-      @scala.inline
-      def setChangeFreq(value: String): Self = StObject.set(x, "changeFreq", value.asInstanceOf[js.Any])
+      inline def setChangeFreq(value: String): Self = StObject.set(x, "changeFreq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeFreqUndefined: Self = StObject.set(x, "changeFreq", js.undefined)
+      inline def setChangeFreqUndefined: Self = StObject.set(x, "changeFreq", js.undefined)
       
-      @scala.inline
-      def setLastMod(value: String | Date): Self = StObject.set(x, "lastMod", value.asInstanceOf[js.Any])
+      inline def setLastMod(value: String | Date): Self = StObject.set(x, "lastMod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModUndefined: Self = StObject.set(x, "lastMod", js.undefined)
+      inline def setLastModUndefined: Self = StObject.set(x, "lastMod", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

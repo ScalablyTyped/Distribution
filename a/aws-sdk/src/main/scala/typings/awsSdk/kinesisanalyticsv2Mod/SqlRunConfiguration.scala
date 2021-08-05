@@ -18,19 +18,15 @@ trait SqlRunConfiguration extends StObject {
 }
 object SqlRunConfiguration {
   
-  @scala.inline
-  def apply(InputId: Id, InputStartingPositionConfiguration: InputStartingPositionConfiguration): SqlRunConfiguration = {
+  inline def apply(InputId: Id, InputStartingPositionConfiguration: InputStartingPositionConfiguration): SqlRunConfiguration = {
     val __obj = js.Dynamic.literal(InputId = InputId.asInstanceOf[js.Any], InputStartingPositionConfiguration = InputStartingPositionConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlRunConfiguration]
   }
   
-  @scala.inline
-  implicit class SqlRunConfigurationMutableBuilder[Self <: SqlRunConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SqlRunConfiguration](x: Self) {
     
-    @scala.inline
-    def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputStartingPositionConfiguration(value: InputStartingPositionConfiguration): Self = StObject.set(x, "InputStartingPositionConfiguration", value.asInstanceOf[js.Any])
+    inline def setInputStartingPositionConfiguration(value: InputStartingPositionConfiguration): Self = StObject.set(x, "InputStartingPositionConfiguration", value.asInstanceOf[js.Any])
   }
 }

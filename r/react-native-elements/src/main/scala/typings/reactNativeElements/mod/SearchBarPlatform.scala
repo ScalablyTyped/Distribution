@@ -15,19 +15,15 @@ trait SearchBarPlatform
 }
 object SearchBarPlatform {
   
-  @scala.inline
-  def apply(): SearchBarPlatform = {
+  inline def apply(): SearchBarPlatform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchBarPlatform]
   }
   
-  @scala.inline
-  implicit class SearchBarPlatformMutableBuilder[Self <: SearchBarPlatform] (val x: Self) extends AnyVal {
+  extension [Self <: SearchBarPlatform](x: Self) {
     
-    @scala.inline
-    def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+    inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+    inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
   }
 }

@@ -12,8 +12,7 @@ trait TopicBuilder[Topic]
 }
 object TopicBuilder {
   
-  @scala.inline
-  def apply[Topic](
+  inline def apply[Topic](
     build: () => AdWordsOperation[TopicBuilder[Topic]],
     exclude: () => AdWordsOperation[TopicBuilder[Topic]],
     withCpc: Double => TopicBuilder[Topic],
@@ -24,10 +23,8 @@ object TopicBuilder {
     __obj.asInstanceOf[TopicBuilder[Topic]]
   }
   
-  @scala.inline
-  implicit class TopicBuilderMutableBuilder[Self <: TopicBuilder[?], Topic] (val x: Self & TopicBuilder[Topic]) extends AnyVal {
+  extension [Self <: TopicBuilder[?], Topic](x: Self & TopicBuilder[Topic]) {
     
-    @scala.inline
-    def setWithTopicId(value: Double => TopicBuilder[Topic]): Self = StObject.set(x, "withTopicId", js.Any.fromFunction1(value))
+    inline def setWithTopicId(value: Double => TopicBuilder[Topic]): Self = StObject.set(x, "withTopicId", js.Any.fromFunction1(value))
   }
 }

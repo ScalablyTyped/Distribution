@@ -114,6 +114,5 @@ object ASPxClientChartDesigner {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientChartDesigner = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientChartDesigner]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientChartDesigner = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientChartDesigner]
 }

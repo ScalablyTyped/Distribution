@@ -23,8 +23,7 @@ trait BootstrapClientTreeViewNodeClickEventArgs
 }
 object BootstrapClientTreeViewNodeClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     htmlElement: js.Any,
     htmlEvent: js.Any,
     node: BootstrapClientTreeViewNode,
@@ -34,13 +33,10 @@ object BootstrapClientTreeViewNodeClickEventArgs {
     __obj.asInstanceOf[BootstrapClientTreeViewNodeClickEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientTreeViewNodeClickEventArgsMutableBuilder[Self <: BootstrapClientTreeViewNodeClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientTreeViewNodeClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

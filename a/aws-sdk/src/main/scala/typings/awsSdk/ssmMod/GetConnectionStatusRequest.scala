@@ -13,16 +13,13 @@ trait GetConnectionStatusRequest extends StObject {
 }
 object GetConnectionStatusRequest {
   
-  @scala.inline
-  def apply(Target: SessionTarget): GetConnectionStatusRequest = {
+  inline def apply(Target: SessionTarget): GetConnectionStatusRequest = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectionStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetConnectionStatusRequestMutableBuilder[Self <: GetConnectionStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectionStatusRequest](x: Self) {
     
-    @scala.inline
-    def setTarget(value: SessionTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SessionTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

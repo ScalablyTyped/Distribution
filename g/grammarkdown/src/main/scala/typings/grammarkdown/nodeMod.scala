@@ -27,19 +27,19 @@ object nodeMod {
   class Host () extends HostBase {
     def this(options: HostOptions) = this()
     
-    var _readFileCallback: js.Any = js.native
+    /* private */ var _readFileCallback: js.Any = js.native
     
-    var _readFileSyncCallback: js.Any = js.native
+    /* private */ var _readFileSyncCallback: js.Any = js.native
     
-    var _writeFileCallback: js.Any = js.native
+    /* private */ var _writeFileCallback: js.Any = js.native
     
-    var _writeFileSyncCallback: js.Any = js.native
+    /* private */ var _writeFileSyncCallback: js.Any = js.native
     
     def getSourceFile(file: String): js.Promise[js.UndefOr[SourceFile]] = js.native
     def getSourceFile(file: String, cancelable: Cancelable): js.Promise[js.UndefOr[SourceFile]] = js.native
     def getSourceFile(file: String, cancelable: CancellationToken): js.Promise[js.UndefOr[SourceFile]] = js.native
     
-    var getSourceFilePossiblyAsync: js.Any = js.native
+    /* private */ var getSourceFilePossiblyAsync: js.Any = js.native
     
     def getSourceFileSync(file: String): js.UndefOr[SourceFile] = js.native
     def getSourceFileSync(file: String, cancelable: Cancelable): js.UndefOr[SourceFile] = js.native
@@ -49,7 +49,7 @@ object nodeMod {
     def readFile(file: String, cancelable: Cancelable): js.Promise[js.UndefOr[String]] = js.native
     def readFile(file: String, cancelable: CancellationToken): js.Promise[js.UndefOr[String]] = js.native
     
-    var readFilePossiblyAsync: js.Any = js.native
+    /* private */ var readFilePossiblyAsync: js.Any = js.native
     
     def readFileSync(file: String): js.UndefOr[String] = js.native
     def readFileSync(file: String, cancelable: Cancelable): js.UndefOr[String] = js.native
@@ -59,7 +59,7 @@ object nodeMod {
     def writeFile(file: String, text: String, cancelable: Cancelable): js.Promise[Unit] = js.native
     def writeFile(file: String, text: String, cancelable: CancellationToken): js.Promise[Unit] = js.native
     
-    var writeFilePossiblyAsync: js.Any = js.native
+    /* private */ var writeFilePossiblyAsync: js.Any = js.native
     
     def writeFileSync(file: String, text: String): Unit = js.native
     def writeFileSync(file: String, text: String, cancelable: Cancelable): Unit = js.native
@@ -86,7 +86,7 @@ object nodeMod {
     def this(content: String, file: String, hostFallback: Host) = this()
     def this(content: String, file: Unit, hostFallback: Host) = this()
     
-    var _hostFallback: js.Any = js.native
+    /* private */ var _hostFallback: js.Any = js.native
     
     val content: String = js.native
     
@@ -107,38 +107,28 @@ object nodeMod {
   }
   object HostOptions {
     
-    @scala.inline
-    def apply(): HostOptions = {
+    inline def apply(): HostOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HostOptions]
     }
     
-    @scala.inline
-    implicit class HostOptionsMutableBuilder[Self <: HostOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HostOptions](x: Self) {
       
-      @scala.inline
-      def setReadFile(value: ReadFileCallback | LegacyReadFileCallback): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
+      inline def setReadFile(value: ReadFileCallback | LegacyReadFileCallback): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadFileSync(value: ReadFileSyncCallback | LegacyReadFileSyncCallback): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
+      inline def setReadFileSync(value: ReadFileSyncCallback | LegacyReadFileSyncCallback): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
+      inline def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
       
-      @scala.inline
-      def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
+      inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
       
-      @scala.inline
-      def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
+      inline def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteFileSync(value: WriteFileSyncCallback | LegacyWriteFileSyncCallback): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
+      inline def setWriteFileSync(value: WriteFileSyncCallback | LegacyWriteFileSyncCallback): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
+      inline def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
       
-      @scala.inline
-      def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
+      inline def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
     }
   }
   
@@ -154,32 +144,24 @@ object nodeMod {
   }
   object NodeAsyncHostOptions {
     
-    @scala.inline
-    def apply(): NodeAsyncHostOptions = {
+    inline def apply(): NodeAsyncHostOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeAsyncHostOptions]
     }
     
-    @scala.inline
-    implicit class NodeAsyncHostOptionsMutableBuilder[Self <: NodeAsyncHostOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NodeAsyncHostOptions](x: Self) {
       
-      @scala.inline
-      def setAllowUris(value: `false`): Self = StObject.set(x, "allowUris", value.asInstanceOf[js.Any])
+      inline def setAllowUris(value: `false`): Self = StObject.set(x, "allowUris", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUrisUndefined: Self = StObject.set(x, "allowUris", js.undefined)
+      inline def setAllowUrisUndefined: Self = StObject.set(x, "allowUris", js.undefined)
       
-      @scala.inline
-      def setReadFile(value: ReadFileCallback | LegacyReadFileCallback | `false`): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
+      inline def setReadFile(value: ReadFileCallback | LegacyReadFileCallback | `false`): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
+      inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
       
-      @scala.inline
-      def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback | `false`): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
+      inline def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback | `false`): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
+      inline def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
     }
   }
   
@@ -195,32 +177,24 @@ object nodeMod {
   }
   object NodeSyncHostOptions {
     
-    @scala.inline
-    def apply(): NodeSyncHostOptions = {
+    inline def apply(): NodeSyncHostOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeSyncHostOptions]
     }
     
-    @scala.inline
-    implicit class NodeSyncHostOptionsMutableBuilder[Self <: NodeSyncHostOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NodeSyncHostOptions](x: Self) {
       
-      @scala.inline
-      def setAllowUris(value: `false`): Self = StObject.set(x, "allowUris", value.asInstanceOf[js.Any])
+      inline def setAllowUris(value: `false`): Self = StObject.set(x, "allowUris", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUrisUndefined: Self = StObject.set(x, "allowUris", js.undefined)
+      inline def setAllowUrisUndefined: Self = StObject.set(x, "allowUris", js.undefined)
       
-      @scala.inline
-      def setReadFileSync(value: LegacyReadFileSyncCallback | ReadFileSyncCallback | `false`): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
+      inline def setReadFileSync(value: LegacyReadFileSyncCallback | ReadFileSyncCallback | `false`): Self = StObject.set(x, "readFileSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
+      inline def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
       
-      @scala.inline
-      def setWriteFileSync(value: LegacyWriteFileSyncCallback | WriteFileSyncCallback | `false`): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
+      inline def setWriteFileSync(value: LegacyWriteFileSyncCallback | WriteFileSyncCallback | `false`): Self = StObject.set(x, "writeFileSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
+      inline def setWriteFileSyncUndefined: Self = StObject.set(x, "writeFileSync", js.undefined)
     }
   }
 }

@@ -24,8 +24,7 @@ trait ClusterInfo
 }
 object ClusterInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataPathPort: Double,
     DefaultAddrPool: js.Array[String],
     ID: String,
@@ -38,31 +37,22 @@ object ClusterInfo {
     __obj.asInstanceOf[ClusterInfo]
   }
   
-  @scala.inline
-  implicit class ClusterInfoMutableBuilder[Self <: ClusterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterInfo](x: Self) {
     
-    @scala.inline
-    def setDataPathPort(value: Double): Self = StObject.set(x, "DataPathPort", value.asInstanceOf[js.Any])
+    inline def setDataPathPort(value: Double): Self = StObject.set(x, "DataPathPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAddrPool(value: js.Array[String]): Self = StObject.set(x, "DefaultAddrPool", value.asInstanceOf[js.Any])
+    inline def setDefaultAddrPool(value: js.Array[String]): Self = StObject.set(x, "DefaultAddrPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAddrPoolVarargs(value: String*): Self = StObject.set(x, "DefaultAddrPool", js.Array(value :_*))
+    inline def setDefaultAddrPoolVarargs(value: String*): Self = StObject.set(x, "DefaultAddrPool", js.Array(value :_*))
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootRotationInProgress(value: Boolean): Self = StObject.set(x, "RootRotationInProgress", value.asInstanceOf[js.Any])
+    inline def setRootRotationInProgress(value: Boolean): Self = StObject.set(x, "RootRotationInProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: Spec): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: Spec): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetSize(value: Double): Self = StObject.set(x, "SubnetSize", value.asInstanceOf[js.Any])
+    inline def setSubnetSize(value: Double): Self = StObject.set(x, "SubnetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTLSInfo(value: TLSInfo): Self = StObject.set(x, "TLSInfo", value.asInstanceOf[js.Any])
+    inline def setTLSInfo(value: TLSInfo): Self = StObject.set(x, "TLSInfo", value.asInstanceOf[js.Any])
   }
 }

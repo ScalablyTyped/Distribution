@@ -26,8 +26,7 @@ trait b2GearJointDef
 }
 object b2GearJointDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bodyA: b2Body,
     bodyB: b2Body,
     collideConnected: Boolean,
@@ -42,16 +41,12 @@ object b2GearJointDef {
     __obj.asInstanceOf[b2GearJointDef]
   }
   
-  @scala.inline
-  implicit class b2GearJointDefMutableBuilder[Self <: b2GearJointDef] (val x: Self) extends AnyVal {
+  extension [Self <: b2GearJointDef](x: Self) {
     
-    @scala.inline
-    def setJoint1(value: b2Joint): Self = StObject.set(x, "joint1", value.asInstanceOf[js.Any])
+    inline def setJoint1(value: b2Joint): Self = StObject.set(x, "joint1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoint2(value: b2Joint): Self = StObject.set(x, "joint2", value.asInstanceOf[js.Any])
+    inline def setJoint2(value: b2Joint): Self = StObject.set(x, "joint2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
   }
 }

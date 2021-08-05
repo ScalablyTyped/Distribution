@@ -10,16 +10,13 @@ trait ExportResponse extends StObject {
 }
 object ExportResponse {
   
-  @scala.inline
-  def apply(body: ExportResponseData): ExportResponse = {
+  inline def apply(body: ExportResponseData): ExportResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportResponse]
   }
   
-  @scala.inline
-  implicit class ExportResponseMutableBuilder[Self <: ExportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExportResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: ExportResponseData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: ExportResponseData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

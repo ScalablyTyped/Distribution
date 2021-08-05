@@ -26,8 +26,7 @@ trait PayoutBatchHeader
 }
 object PayoutBatchHeader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     batch_status: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS,
     payout_batch_id: String,
     sender_batch_header: PayoutSenderBatchHeader
@@ -36,37 +35,26 @@ object PayoutBatchHeader {
     __obj.asInstanceOf[PayoutBatchHeader]
   }
   
-  @scala.inline
-  implicit class PayoutBatchHeaderMutableBuilder[Self <: PayoutBatchHeader] (val x: Self) extends AnyVal {
+  extension [Self <: PayoutBatchHeader](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setFees(value: Currency): Self = StObject.set(x, "fees", value.asInstanceOf[js.Any])
+    inline def setFees(value: Currency): Self = StObject.set(x, "fees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeesUndefined: Self = StObject.set(x, "fees", js.undefined)
+    inline def setFeesUndefined: Self = StObject.set(x, "fees", js.undefined)
     
-    @scala.inline
-    def setFunding_source(value: BALANCE): Self = StObject.set(x, "funding_source", value.asInstanceOf[js.Any])
+    inline def setFunding_source(value: BALANCE): Self = StObject.set(x, "funding_source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunding_sourceUndefined: Self = StObject.set(x, "funding_source", js.undefined)
+    inline def setFunding_sourceUndefined: Self = StObject.set(x, "funding_source", js.undefined)
     
-    @scala.inline
-    def setTime_closed(value: String): Self = StObject.set(x, "time_closed", value.asInstanceOf[js.Any])
+    inline def setTime_closed(value: String): Self = StObject.set(x, "time_closed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_closedUndefined: Self = StObject.set(x, "time_closed", js.undefined)
+    inline def setTime_closedUndefined: Self = StObject.set(x, "time_closed", js.undefined)
     
-    @scala.inline
-    def setTime_completed(value: String): Self = StObject.set(x, "time_completed", value.asInstanceOf[js.Any])
+    inline def setTime_completed(value: String): Self = StObject.set(x, "time_completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_completedUndefined: Self = StObject.set(x, "time_completed", js.undefined)
+    inline def setTime_completedUndefined: Self = StObject.set(x, "time_completed", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ object Console {
   }
   object Console {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: (String, String) => js.Promise[Unit],
       error: (String, String) => js.Promise[Unit],
       info: (String, String) => js.Promise[Unit],
@@ -32,23 +31,17 @@ object Console {
       __obj.asInstanceOf[typings.freedom.freedom.Console.Console]
     }
     
-    @scala.inline
-    implicit class ConsoleMutableBuilder[Self <: typings.freedom.freedom.Console.Console] (val x: Self) extends AnyVal {
+    extension [Self <: typings.freedom.freedom.Console.Console](x: Self) {
       
-      @scala.inline
-      def setDebug(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
+      inline def setDebug(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setError(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInfo(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+      inline def setInfo(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLog(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWarn(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
+      inline def setWarn(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
     }
   }
 }

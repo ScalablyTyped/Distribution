@@ -18,31 +18,23 @@ trait BatchCheckLayerAvailabilityResponse extends StObject {
 }
 object BatchCheckLayerAvailabilityResponse {
   
-  @scala.inline
-  def apply(): BatchCheckLayerAvailabilityResponse = {
+  inline def apply(): BatchCheckLayerAvailabilityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchCheckLayerAvailabilityResponse]
   }
   
-  @scala.inline
-  implicit class BatchCheckLayerAvailabilityResponseMutableBuilder[Self <: BatchCheckLayerAvailabilityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCheckLayerAvailabilityResponse](x: Self) {
     
-    @scala.inline
-    def setFailures(value: LayerFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: LayerFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: LayerFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: LayerFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setLayers(value: LayerList): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: LayerList): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

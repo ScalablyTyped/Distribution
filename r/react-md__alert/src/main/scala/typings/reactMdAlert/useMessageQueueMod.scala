@@ -27,23 +27,17 @@ object useMessageQueueMod {
   @js.native
   val RESET_QUEUE: /* "RESET_QUEUE" */ String = js.native
   
-  @scala.inline
-  def addMessage[M /* <: Message */](message: M, duplicates: DuplicateBehavior): AddMessageAction[ToastMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMessage")(message.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[AddMessageAction[ToastMessage]]
+  inline def addMessage[M /* <: Message */](message: M, duplicates: DuplicateBehavior): AddMessageAction[ToastMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMessage")(message.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[AddMessageAction[ToastMessage]]
   
-  @scala.inline
-  def handleAddMessage[M /* <: Message */](state: js.Array[M], message: M, duplicates: DuplicateBehavior): js.Array[M] = (^.asInstanceOf[js.Dynamic].applyDynamic("handleAddMessage")(state.asInstanceOf[js.Any], message.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[js.Array[M]]
+  inline def handleAddMessage[M /* <: Message */](state: js.Array[M], message: M, duplicates: DuplicateBehavior): js.Array[M] = (^.asInstanceOf[js.Dynamic].applyDynamic("handleAddMessage")(state.asInstanceOf[js.Any], message.asInstanceOf[js.Any], duplicates.asInstanceOf[js.Any])).asInstanceOf[js.Array[M]]
   
-  @scala.inline
-  def popMessage(): PopMessageAction = ^.asInstanceOf[js.Dynamic].applyDynamic("popMessage")().asInstanceOf[PopMessageAction]
+  inline def popMessage(): PopMessageAction = ^.asInstanceOf[js.Dynamic].applyDynamic("popMessage")().asInstanceOf[PopMessageAction]
   
-  @scala.inline
-  def reducer[M /* <: Message */](state: js.Array[M], action: MessageActions[M]): js.Array[M] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Array[M]]
+  inline def reducer[M /* <: Message */](state: js.Array[M], action: MessageActions[M]): js.Array[M] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Array[M]]
   
-  @scala.inline
-  def resetQueue(): ResetQueueAction = ^.asInstanceOf[js.Dynamic].applyDynamic("resetQueue")().asInstanceOf[ResetQueueAction]
+  inline def resetQueue(): ResetQueueAction = ^.asInstanceOf[js.Dynamic].applyDynamic("resetQueue")().asInstanceOf[ResetQueueAction]
   
-  @scala.inline
-  def useMessageQueue[M /* <: Message */](hasTimeoutDuplicatesDefaultQueue: MessageQueueOptions[M]): MessageQueueResult[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageQueue")(hasTimeoutDuplicatesDefaultQueue.asInstanceOf[js.Any]).asInstanceOf[MessageQueueResult[M]]
+  inline def useMessageQueue[M /* <: Message */](hasTimeoutDuplicatesDefaultQueue: MessageQueueOptions[M]): MessageQueueResult[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMessageQueue")(hasTimeoutDuplicatesDefaultQueue.asInstanceOf[js.Any]).asInstanceOf[MessageQueueResult[M]]
   
   trait AddMessageAction[M /* <: Message */]
     extends StObject
@@ -57,24 +51,19 @@ object useMessageQueueMod {
   }
   object AddMessageAction {
     
-    @scala.inline
-    def apply[M /* <: Message */](duplicates: DuplicateBehavior, message: M, `type`: /* "ADD_MESSAGE" */ String): AddMessageAction[M] = {
+    inline def apply[M /* <: Message */](duplicates: DuplicateBehavior, message: M, `type`: /* "ADD_MESSAGE" */ String): AddMessageAction[M] = {
       val __obj = js.Dynamic.literal(duplicates = duplicates.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddMessageAction[M]]
     }
     
-    @scala.inline
-    implicit class AddMessageActionMutableBuilder[Self <: AddMessageAction[?], M /* <: Message */] (val x: Self & AddMessageAction[M]) extends AnyVal {
+    extension [Self <: AddMessageAction[?], M /* <: Message */](x: Self & AddMessageAction[M]) {
       
-      @scala.inline
-      def setDuplicates(value: DuplicateBehavior): Self = StObject.set(x, "duplicates", value.asInstanceOf[js.Any])
+      inline def setDuplicates(value: DuplicateBehavior): Self = StObject.set(x, "duplicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: M): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: M): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* "ADD_MESSAGE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "ADD_MESSAGE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,22 +75,19 @@ object useMessageQueueMod {
   trait MessageActions[M /* <: Message */] extends StObject
   object MessageActions {
     
-    @scala.inline
-    def AddMessageAction[M /* <: Message */](duplicates: DuplicateBehavior, message: M, `type`: /* "ADD_MESSAGE" */ String): typings.reactMdAlert.useMessageQueueMod.AddMessageAction[M] = {
+    inline def AddMessageAction[M /* <: Message */](duplicates: DuplicateBehavior, message: M, `type`: /* "ADD_MESSAGE" */ String): typings.reactMdAlert.useMessageQueueMod.AddMessageAction[M] = {
       val __obj = js.Dynamic.literal(duplicates = duplicates.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdAlert.useMessageQueueMod.AddMessageAction[M]]
     }
     
-    @scala.inline
-    def PopMessageAction(`type`: /* "POP_MESSAGE" */ String): typings.reactMdAlert.useMessageQueueMod.PopMessageAction = {
+    inline def PopMessageAction(`type`: /* "POP_MESSAGE" */ String): typings.reactMdAlert.useMessageQueueMod.PopMessageAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdAlert.useMessageQueueMod.PopMessageAction]
     }
     
-    @scala.inline
-    def ResetQueueAction(`type`: /* "RESET_QUEUE" */ String): typings.reactMdAlert.useMessageQueueMod.ResetQueueAction = {
+    inline def ResetQueueAction(`type`: /* "RESET_QUEUE" */ String): typings.reactMdAlert.useMessageQueueMod.ResetQueueAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdAlert.useMessageQueueMod.ResetQueueAction]
@@ -118,35 +104,26 @@ object useMessageQueueMod {
   }
   object MessageQueueOptions {
     
-    @scala.inline
-    def apply[M /* <: Message */](): MessageQueueOptions[M] = {
+    inline def apply[M /* <: Message */](): MessageQueueOptions[M] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageQueueOptions[M]]
     }
     
-    @scala.inline
-    implicit class MessageQueueOptionsMutableBuilder[Self <: MessageQueueOptions[?], M /* <: Message */] (val x: Self & MessageQueueOptions[M]) extends AnyVal {
+    extension [Self <: MessageQueueOptions[?], M /* <: Message */](x: Self & MessageQueueOptions[M]) {
       
-      @scala.inline
-      def setDefaultQueue(value: js.Array[M]): Self = StObject.set(x, "defaultQueue", value.asInstanceOf[js.Any])
+      inline def setDefaultQueue(value: js.Array[M]): Self = StObject.set(x, "defaultQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultQueueUndefined: Self = StObject.set(x, "defaultQueue", js.undefined)
+      inline def setDefaultQueueUndefined: Self = StObject.set(x, "defaultQueue", js.undefined)
       
-      @scala.inline
-      def setDefaultQueueVarargs(value: M*): Self = StObject.set(x, "defaultQueue", js.Array(value :_*))
+      inline def setDefaultQueueVarargs(value: M*): Self = StObject.set(x, "defaultQueue", js.Array(value :_*))
       
-      @scala.inline
-      def setDuplicates(value: DuplicateBehavior): Self = StObject.set(x, "duplicates", value.asInstanceOf[js.Any])
+      inline def setDuplicates(value: DuplicateBehavior): Self = StObject.set(x, "duplicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuplicatesUndefined: Self = StObject.set(x, "duplicates", js.undefined)
+      inline def setDuplicatesUndefined: Self = StObject.set(x, "duplicates", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -162,8 +139,7 @@ object useMessageQueueMod {
   }
   object MessageQueueResult {
     
-    @scala.inline
-    def apply[M /* <: Message */](
+    inline def apply[M /* <: Message */](
       addMessage: M => Unit,
       hideMessage: () => Unit,
       popMessage: () => Unit,
@@ -178,20 +154,15 @@ object useMessageQueueMod {
       __obj.asInstanceOf[MessageQueueResult[M]]
     }
     
-    @scala.inline
-    implicit class MessageQueueResultMutableBuilder[Self <: MessageQueueResult[?], M /* <: Message */] (val x: Self & MessageQueueResult[M]) extends AnyVal {
+    extension [Self <: MessageQueueResult[?], M /* <: Message */](x: Self & MessageQueueResult[M]) {
       
-      @scala.inline
-      def setAddMessage(value: M => Unit): Self = StObject.set(x, "addMessage", js.Any.fromFunction1(value))
+      inline def setAddMessage(value: M => Unit): Self = StObject.set(x, "addMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQueue(value: js.Array[M]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: js.Array[M]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueVarargs(value: M*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: M*): Self = StObject.set(x, "queue", js.Array(value :_*))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,18 +174,15 @@ object useMessageQueueMod {
   }
   object PopMessageAction {
     
-    @scala.inline
-    def apply(`type`: /* "POP_MESSAGE" */ String): PopMessageAction = {
+    inline def apply(`type`: /* "POP_MESSAGE" */ String): PopMessageAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopMessageAction]
     }
     
-    @scala.inline
-    implicit class PopMessageActionMutableBuilder[Self <: PopMessageAction] (val x: Self) extends AnyVal {
+    extension [Self <: PopMessageAction](x: Self) {
       
-      @scala.inline
-      def setType(value: /* "POP_MESSAGE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "POP_MESSAGE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,18 +194,15 @@ object useMessageQueueMod {
   }
   object ResetQueueAction {
     
-    @scala.inline
-    def apply(`type`: /* "RESET_QUEUE" */ String): ResetQueueAction = {
+    inline def apply(`type`: /* "RESET_QUEUE" */ String): ResetQueueAction = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResetQueueAction]
     }
     
-    @scala.inline
-    implicit class ResetQueueActionMutableBuilder[Self <: ResetQueueAction] (val x: Self) extends AnyVal {
+    extension [Self <: ResetQueueAction](x: Self) {
       
-      @scala.inline
-      def setType(value: /* "RESET_QUEUE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: /* "RESET_QUEUE" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

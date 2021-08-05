@@ -26,35 +26,27 @@ trait ILoaderPlugin extends StObject {
 }
 object ILoaderPlugin {
   
-  @scala.inline
-  def apply(): ILoaderPlugin = {
+  inline def apply(): ILoaderPlugin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILoaderPlugin]
   }
   
-  @scala.inline
-  implicit class ILoaderPluginMutableBuilder[Self <: ILoaderPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: ILoaderPlugin](x: Self) {
     
-    @scala.inline
-    def setAdd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setPre(
+    inline def setPre(
       value: (/* resource */ LoaderResource, /* next */ js.Function1[/* repeated */ js.Any, js.Any]) => Unit
     ): Self = StObject.set(x, "pre", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+    inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
-    @scala.inline
-    def setUse(
+    inline def setUse(
       value: (/* resource */ LoaderResource, /* next */ js.Function1[/* repeated */ js.Any, js.Any]) => Unit
     ): Self = StObject.set(x, "use", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
   }
 }

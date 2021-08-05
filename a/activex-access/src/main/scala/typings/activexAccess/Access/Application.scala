@@ -34,7 +34,7 @@ trait Application extends StObject {
   
   val ADOConnectString: String = js.native
   
-  @JSName("Access.Application_typekey")
+  /* private */ @JSName("Access.Application_typekey")
   var AccessDotApplication_typekey: typings.activexAccess.Access.Application = js.native
   
   def AccessError(ErrorNumber: Double): String = js.native

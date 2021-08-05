@@ -17,31 +17,23 @@ trait EnrichmentOptions extends StObject {
 }
 object EnrichmentOptions {
   
-  @scala.inline
-  def apply(): EnrichmentOptions = {
+  inline def apply(): EnrichmentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnrichmentOptions]
   }
   
-  @scala.inline
-  implicit class EnrichmentOptionsMutableBuilder[Self <: EnrichmentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnrichmentOptions](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: NluEnrichmentFeatures): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: NluEnrichmentFeatures): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

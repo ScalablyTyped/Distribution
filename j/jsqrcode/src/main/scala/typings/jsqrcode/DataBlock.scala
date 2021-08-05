@@ -10,14 +10,13 @@ trait DataBlock extends StObject {
   
   val NumDataCodewords: Double
   
-  var codewords: js.Array[Double]
+  /* private */ var codewords: js.Array[Double]
   
-  var numDataCodewords: Double
+  /* private */ var numDataCodewords: Double
 }
 object DataBlock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Codewords: js.Array[Double],
     NumDataCodewords: Double,
     codewords: js.Array[Double],
@@ -27,16 +26,12 @@ object DataBlock {
     __obj.asInstanceOf[DataBlock]
   }
   
-  @scala.inline
-  implicit class DataBlockMutableBuilder[Self <: DataBlock] (val x: Self) extends AnyVal {
+  extension [Self <: DataBlock](x: Self) {
     
-    @scala.inline
-    def setCodewords(value: js.Array[Double]): Self = StObject.set(x, "Codewords", value.asInstanceOf[js.Any])
+    inline def setCodewords(value: js.Array[Double]): Self = StObject.set(x, "Codewords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodewordsVarargs(value: Double*): Self = StObject.set(x, "Codewords", js.Array(value :_*))
+    inline def setCodewordsVarargs(value: Double*): Self = StObject.set(x, "Codewords", js.Array(value :_*))
     
-    @scala.inline
-    def setNumDataCodewords(value: Double): Self = StObject.set(x, "NumDataCodewords", value.asInstanceOf[js.Any])
+    inline def setNumDataCodewords(value: Double): Self = StObject.set(x, "NumDataCodewords", value.asInstanceOf[js.Any])
   }
 }

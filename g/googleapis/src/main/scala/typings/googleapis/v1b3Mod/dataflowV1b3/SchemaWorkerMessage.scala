@@ -54,55 +54,39 @@ trait SchemaWorkerMessage extends StObject {
 }
 object SchemaWorkerMessage {
   
-  @scala.inline
-  def apply(): SchemaWorkerMessage = {
+  inline def apply(): SchemaWorkerMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkerMessage]
   }
   
-  @scala.inline
-  implicit class SchemaWorkerMessageMutableBuilder[Self <: SchemaWorkerMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkerMessage](x: Self) {
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setWorkerHealthReport(value: SchemaWorkerHealthReport): Self = StObject.set(x, "workerHealthReport", value.asInstanceOf[js.Any])
+    inline def setWorkerHealthReport(value: SchemaWorkerHealthReport): Self = StObject.set(x, "workerHealthReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerHealthReportUndefined: Self = StObject.set(x, "workerHealthReport", js.undefined)
+    inline def setWorkerHealthReportUndefined: Self = StObject.set(x, "workerHealthReport", js.undefined)
     
-    @scala.inline
-    def setWorkerLifecycleEvent(value: SchemaWorkerLifecycleEvent): Self = StObject.set(x, "workerLifecycleEvent", value.asInstanceOf[js.Any])
+    inline def setWorkerLifecycleEvent(value: SchemaWorkerLifecycleEvent): Self = StObject.set(x, "workerLifecycleEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerLifecycleEventUndefined: Self = StObject.set(x, "workerLifecycleEvent", js.undefined)
+    inline def setWorkerLifecycleEventUndefined: Self = StObject.set(x, "workerLifecycleEvent", js.undefined)
     
-    @scala.inline
-    def setWorkerMessageCode(value: SchemaWorkerMessageCode): Self = StObject.set(x, "workerMessageCode", value.asInstanceOf[js.Any])
+    inline def setWorkerMessageCode(value: SchemaWorkerMessageCode): Self = StObject.set(x, "workerMessageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerMessageCodeUndefined: Self = StObject.set(x, "workerMessageCode", js.undefined)
+    inline def setWorkerMessageCodeUndefined: Self = StObject.set(x, "workerMessageCode", js.undefined)
     
-    @scala.inline
-    def setWorkerMetrics(value: SchemaResourceUtilizationReport): Self = StObject.set(x, "workerMetrics", value.asInstanceOf[js.Any])
+    inline def setWorkerMetrics(value: SchemaResourceUtilizationReport): Self = StObject.set(x, "workerMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerMetricsUndefined: Self = StObject.set(x, "workerMetrics", js.undefined)
+    inline def setWorkerMetricsUndefined: Self = StObject.set(x, "workerMetrics", js.undefined)
     
-    @scala.inline
-    def setWorkerShutdownNotice(value: SchemaWorkerShutdownNotice): Self = StObject.set(x, "workerShutdownNotice", value.asInstanceOf[js.Any])
+    inline def setWorkerShutdownNotice(value: SchemaWorkerShutdownNotice): Self = StObject.set(x, "workerShutdownNotice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerShutdownNoticeUndefined: Self = StObject.set(x, "workerShutdownNotice", js.undefined)
+    inline def setWorkerShutdownNoticeUndefined: Self = StObject.set(x, "workerShutdownNotice", js.undefined)
   }
 }

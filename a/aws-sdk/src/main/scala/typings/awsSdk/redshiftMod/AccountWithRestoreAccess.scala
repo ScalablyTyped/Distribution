@@ -18,25 +18,19 @@ trait AccountWithRestoreAccess extends StObject {
 }
 object AccountWithRestoreAccess {
   
-  @scala.inline
-  def apply(): AccountWithRestoreAccess = {
+  inline def apply(): AccountWithRestoreAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountWithRestoreAccess]
   }
   
-  @scala.inline
-  implicit class AccountWithRestoreAccessMutableBuilder[Self <: AccountWithRestoreAccess] (val x: Self) extends AnyVal {
+  extension [Self <: AccountWithRestoreAccess](x: Self) {
     
-    @scala.inline
-    def setAccountAlias(value: String): Self = StObject.set(x, "AccountAlias", value.asInstanceOf[js.Any])
+    inline def setAccountAlias(value: String): Self = StObject.set(x, "AccountAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountAliasUndefined: Self = StObject.set(x, "AccountAlias", js.undefined)
+    inline def setAccountAliasUndefined: Self = StObject.set(x, "AccountAlias", js.undefined)
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
   }
 }

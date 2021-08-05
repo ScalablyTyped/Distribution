@@ -71,8 +71,7 @@ object MapField {
     * @param fieldValueType Field value type
     * @returns Decorator function
     */
-  @scala.inline
-  def d[T /* <: StringDictionary[
+  inline def d[T /* <: StringDictionary[
     Double | Long | String | Boolean | Uint8Array | Buffer | js.Array[Double] | typings.apolloProtobufjs.mod.Message[js.Object]
   ] */](
     fieldId: Double,
@@ -87,6 +86,5 @@ object MapField {
     * @returns Created map field
     * @throws {TypeError} If arguments are invalid
     */
-  @scala.inline
-  def fromJSON(name: String, json: IMapField): typings.apolloProtobufjs.mod.MapField = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.MapField]
+  inline def fromJSON(name: String, json: IMapField): typings.apolloProtobufjs.mod.MapField = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.MapField]
 }

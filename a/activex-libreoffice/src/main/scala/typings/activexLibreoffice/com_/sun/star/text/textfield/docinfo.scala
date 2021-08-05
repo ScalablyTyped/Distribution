@@ -39,8 +39,7 @@ object docinfo {
   }
   object ChangeAuthor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -72,17 +71,13 @@ object docinfo {
       __obj.asInstanceOf[ChangeAuthor]
     }
     
-    @scala.inline
-    implicit class ChangeAuthorMutableBuilder[Self <: ChangeAuthor] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeAuthor](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,8 +123,7 @@ object docinfo {
   }
   object ChangeDateTime {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -164,26 +158,19 @@ object docinfo {
       __obj.asInstanceOf[ChangeDateTime]
     }
     
-    @scala.inline
-    implicit class ChangeDateTimeMutableBuilder[Self <: ChangeDateTime] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeDateTime](x: Self) {
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeValue(value: Double): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
+      inline def setDateTimeValue(value: Double): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDate(value: Boolean): Self = StObject.set(x, "IsDate", value.asInstanceOf[js.Any])
+      inline def setIsDate(value: Boolean): Self = StObject.set(x, "IsDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
+      inline def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+      inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,8 +197,7 @@ object docinfo {
   }
   object CreateAuthor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -243,17 +229,13 @@ object docinfo {
       __obj.asInstanceOf[CreateAuthor]
     }
     
-    @scala.inline
-    implicit class CreateAuthorMutableBuilder[Self <: CreateAuthor] (val x: Self) extends AnyVal {
+    extension [Self <: CreateAuthor](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -299,8 +281,7 @@ object docinfo {
   }
   object CreateDateTime {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -335,26 +316,19 @@ object docinfo {
       __obj.asInstanceOf[CreateDateTime]
     }
     
-    @scala.inline
-    implicit class CreateDateTimeMutableBuilder[Self <: CreateDateTime] (val x: Self) extends AnyVal {
+    extension [Self <: CreateDateTime](x: Self) {
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeValue(value: Double): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
+      inline def setDateTimeValue(value: Double): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDate(value: Boolean): Self = StObject.set(x, "IsDate", value.asInstanceOf[js.Any])
+      inline def setIsDate(value: Boolean): Self = StObject.set(x, "IsDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
+      inline def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+      inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -382,8 +356,7 @@ object docinfo {
   }
   object Custom {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -415,17 +388,13 @@ object docinfo {
       __obj.asInstanceOf[Custom]
     }
     
-    @scala.inline
-    implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
+    extension [Self <: Custom](x: Self) {
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -452,8 +421,7 @@ object docinfo {
   }
   object Description {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -485,17 +453,13 @@ object docinfo {
       __obj.asInstanceOf[Description]
     }
     
-    @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+    extension [Self <: Description](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -538,8 +502,7 @@ object docinfo {
   }
   object EditTime {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -573,23 +536,17 @@ object docinfo {
       __obj.asInstanceOf[EditTime]
     }
     
-    @scala.inline
-    implicit class EditTimeMutableBuilder[Self <: EditTime] (val x: Self) extends AnyVal {
+    extension [Self <: EditTime](x: Self) {
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeValue(value: Double): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
+      inline def setDateTimeValue(value: Double): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
+      inline def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+      inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -616,8 +573,7 @@ object docinfo {
   }
   object Keywords {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -649,17 +605,13 @@ object docinfo {
       __obj.asInstanceOf[Keywords]
     }
     
-    @scala.inline
-    implicit class KeywordsMutableBuilder[Self <: Keywords] (val x: Self) extends AnyVal {
+    extension [Self <: Keywords](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -686,8 +638,7 @@ object docinfo {
   }
   object PrintAuthor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -719,17 +670,13 @@ object docinfo {
       __obj.asInstanceOf[PrintAuthor]
     }
     
-    @scala.inline
-    implicit class PrintAuthorMutableBuilder[Self <: PrintAuthor] (val x: Self) extends AnyVal {
+    extension [Self <: PrintAuthor](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -775,8 +722,7 @@ object docinfo {
   }
   object PrintDateTime {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -811,26 +757,19 @@ object docinfo {
       __obj.asInstanceOf[PrintDateTime]
     }
     
-    @scala.inline
-    implicit class PrintDateTimeMutableBuilder[Self <: PrintDateTime] (val x: Self) extends AnyVal {
+    extension [Self <: PrintDateTime](x: Self) {
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeValue(value: Double): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
+      inline def setDateTimeValue(value: Double): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDate(value: Boolean): Self = StObject.set(x, "IsDate", value.asInstanceOf[js.Any])
+      inline def setIsDate(value: Boolean): Self = StObject.set(x, "IsDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
+      inline def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+      inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -857,8 +796,7 @@ object docinfo {
   }
   object Revision {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -890,17 +828,13 @@ object docinfo {
       __obj.asInstanceOf[Revision]
     }
     
-    @scala.inline
-    implicit class RevisionMutableBuilder[Self <: Revision] (val x: Self) extends AnyVal {
+    extension [Self <: Revision](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -927,8 +861,7 @@ object docinfo {
   }
   object Subject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -960,17 +893,13 @@ object docinfo {
       __obj.asInstanceOf[Subject]
     }
     
-    @scala.inline
-    implicit class SubjectMutableBuilder[Self <: Subject] (val x: Self) extends AnyVal {
+    extension [Self <: Subject](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -997,8 +926,7 @@ object docinfo {
   }
   object Title {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: XTextRange,
       AnchorType: TextContentAnchorType,
       AnchorTypes: SafeArray[TextContentAnchorType],
@@ -1030,17 +958,13 @@ object docinfo {
       __obj.asInstanceOf[Title]
     }
     
-    @scala.inline
-    implicit class TitleMutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
+    extension [Self <: Title](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+      inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+      inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     }
   }
 }

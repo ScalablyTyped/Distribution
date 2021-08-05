@@ -12,8 +12,7 @@ trait LayersControlEvent
 }
 object LayersControlEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     layer: Layer,
     name: String,
     propagatedFrom: js.Any,
@@ -26,10 +25,8 @@ object LayersControlEvent {
     __obj.asInstanceOf[LayersControlEvent]
   }
   
-  @scala.inline
-  implicit class LayersControlEventMutableBuilder[Self <: LayersControlEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LayersControlEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

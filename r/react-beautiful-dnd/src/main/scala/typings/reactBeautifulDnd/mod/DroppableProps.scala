@@ -29,69 +29,49 @@ trait DroppableProps extends StObject {
 }
 object DroppableProps {
   
-  @scala.inline
-  def apply(children: (DroppableProvided, DroppableStateSnapshot) => ReactElement, droppableId: DroppableId): DroppableProps = {
+  inline def apply(children: (DroppableProvided, DroppableStateSnapshot) => ReactElement, droppableId: DroppableId): DroppableProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), droppableId = droppableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableProps]
   }
   
-  @scala.inline
-  implicit class DroppablePropsMutableBuilder[Self <: DroppableProps] (val x: Self) extends AnyVal {
+  extension [Self <: DroppableProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: (DroppableProvided, DroppableStateSnapshot) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+    inline def setChildren(value: (DroppableProvided, DroppableStateSnapshot) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
+    inline def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContainerForClone(value: () => ReactElement): Self = StObject.set(x, "getContainerForClone", js.Any.fromFunction0(value))
+    inline def setGetContainerForClone(value: () => ReactElement): Self = StObject.set(x, "getContainerForClone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContainerForCloneUndefined: Self = StObject.set(x, "getContainerForClone", js.undefined)
+    inline def setGetContainerForCloneUndefined: Self = StObject.set(x, "getContainerForClone", js.undefined)
     
-    @scala.inline
-    def setIgnoreContainerClipping(value: Boolean): Self = StObject.set(x, "ignoreContainerClipping", value.asInstanceOf[js.Any])
+    inline def setIgnoreContainerClipping(value: Boolean): Self = StObject.set(x, "ignoreContainerClipping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreContainerClippingUndefined: Self = StObject.set(x, "ignoreContainerClipping", js.undefined)
+    inline def setIgnoreContainerClippingUndefined: Self = StObject.set(x, "ignoreContainerClipping", js.undefined)
     
-    @scala.inline
-    def setIsCombineEnabled(value: Boolean): Self = StObject.set(x, "isCombineEnabled", value.asInstanceOf[js.Any])
+    inline def setIsCombineEnabled(value: Boolean): Self = StObject.set(x, "isCombineEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCombineEnabledUndefined: Self = StObject.set(x, "isCombineEnabled", js.undefined)
+    inline def setIsCombineEnabledUndefined: Self = StObject.set(x, "isCombineEnabled", js.undefined)
     
-    @scala.inline
-    def setIsDropDisabled(value: Boolean): Self = StObject.set(x, "isDropDisabled", value.asInstanceOf[js.Any])
+    inline def setIsDropDisabled(value: Boolean): Self = StObject.set(x, "isDropDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDropDisabledUndefined: Self = StObject.set(x, "isDropDisabled", js.undefined)
+    inline def setIsDropDisabledUndefined: Self = StObject.set(x, "isDropDisabled", js.undefined)
     
-    @scala.inline
-    def setMode(value: DroppableMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: DroppableMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setRenderClone(
+    inline def setRenderClone(
       value: (/* provided */ DraggableProvided, /* snapshot */ DraggableStateSnapshot, /* rubric */ DraggableRubric) => ReactElement
     ): Self = StObject.set(x, "renderClone", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRenderCloneUndefined: Self = StObject.set(x, "renderClone", js.undefined)
+    inline def setRenderCloneUndefined: Self = StObject.set(x, "renderClone", js.undefined)
     
-    @scala.inline
-    def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

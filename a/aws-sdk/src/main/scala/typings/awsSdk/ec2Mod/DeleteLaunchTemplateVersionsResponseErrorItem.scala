@@ -28,37 +28,27 @@ trait DeleteLaunchTemplateVersionsResponseErrorItem extends StObject {
 }
 object DeleteLaunchTemplateVersionsResponseErrorItem {
   
-  @scala.inline
-  def apply(): DeleteLaunchTemplateVersionsResponseErrorItem = {
+  inline def apply(): DeleteLaunchTemplateVersionsResponseErrorItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteLaunchTemplateVersionsResponseErrorItem]
   }
   
-  @scala.inline
-  implicit class DeleteLaunchTemplateVersionsResponseErrorItemMutableBuilder[Self <: DeleteLaunchTemplateVersionsResponseErrorItem] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLaunchTemplateVersionsResponseErrorItem](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplateId(value: String): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateId(value: String): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
+    inline def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateName(value: String): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateName(value: String): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
+    inline def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
     
-    @scala.inline
-    def setResponseError(value: ResponseError): Self = StObject.set(x, "ResponseError", value.asInstanceOf[js.Any])
+    inline def setResponseError(value: ResponseError): Self = StObject.set(x, "ResponseError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseErrorUndefined: Self = StObject.set(x, "ResponseError", js.undefined)
+    inline def setResponseErrorUndefined: Self = StObject.set(x, "ResponseError", js.undefined)
     
-    @scala.inline
-    def setVersionNumber(value: Long): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: Long): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
   }
 }

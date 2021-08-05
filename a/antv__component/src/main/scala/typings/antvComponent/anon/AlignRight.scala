@@ -14,22 +14,17 @@ trait AlignRight extends StObject {
 }
 object AlignRight {
   
-  @scala.inline
-  def apply(alignRight: Boolean, formatter: js.Any, style: FillFontSize): AlignRight = {
+  inline def apply(alignRight: Boolean, formatter: js.Any, style: FillFontSize): AlignRight = {
     val __obj = js.Dynamic.literal(alignRight = alignRight.asInstanceOf[js.Any], formatter = formatter.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignRight]
   }
   
-  @scala.inline
-  implicit class AlignRightMutableBuilder[Self <: AlignRight] (val x: Self) extends AnyVal {
+  extension [Self <: AlignRight](x: Self) {
     
-    @scala.inline
-    def setAlignRight(value: Boolean): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
+    inline def setAlignRight(value: Boolean): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatter(value: js.Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: js.Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: FillFontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: FillFontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

@@ -78,8 +78,7 @@ trait IGestureRecognizer extends StObject {
 }
 object IGestureRecognizer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoProcessInertia: Boolean,
     canBeDoubleTap: PointerPoint => Boolean,
     completeGesture: () => Unit,
@@ -119,109 +118,74 @@ object IGestureRecognizer {
     __obj.asInstanceOf[IGestureRecognizer]
   }
   
-  @scala.inline
-  implicit class IGestureRecognizerMutableBuilder[Self <: IGestureRecognizer] (val x: Self) extends AnyVal {
+  extension [Self <: IGestureRecognizer](x: Self) {
     
-    @scala.inline
-    def setAutoProcessInertia(value: Boolean): Self = StObject.set(x, "autoProcessInertia", value.asInstanceOf[js.Any])
+    inline def setAutoProcessInertia(value: Boolean): Self = StObject.set(x, "autoProcessInertia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeDoubleTap(value: PointerPoint => Boolean): Self = StObject.set(x, "canBeDoubleTap", js.Any.fromFunction1(value))
+    inline def setCanBeDoubleTap(value: PointerPoint => Boolean): Self = StObject.set(x, "canBeDoubleTap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteGesture(value: () => Unit): Self = StObject.set(x, "completeGesture", js.Any.fromFunction0(value))
+    inline def setCompleteGesture(value: () => Unit): Self = StObject.set(x, "completeGesture", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCrossSlideExact(value: Boolean): Self = StObject.set(x, "crossSlideExact", value.asInstanceOf[js.Any])
+    inline def setCrossSlideExact(value: Boolean): Self = StObject.set(x, "crossSlideExact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossSlideHorizontally(value: Boolean): Self = StObject.set(x, "crossSlideHorizontally", value.asInstanceOf[js.Any])
+    inline def setCrossSlideHorizontally(value: Boolean): Self = StObject.set(x, "crossSlideHorizontally", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossSlideThresholds(value: CrossSlideThresholds): Self = StObject.set(x, "crossSlideThresholds", value.asInstanceOf[js.Any])
+    inline def setCrossSlideThresholds(value: CrossSlideThresholds): Self = StObject.set(x, "crossSlideThresholds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestureSettings(value: GestureSettings): Self = StObject.set(x, "gestureSettings", value.asInstanceOf[js.Any])
+    inline def setGestureSettings(value: GestureSettings): Self = StObject.set(x, "gestureSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaExpansion(value: Double): Self = StObject.set(x, "inertiaExpansion", value.asInstanceOf[js.Any])
+    inline def setInertiaExpansion(value: Double): Self = StObject.set(x, "inertiaExpansion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaExpansionDeceleration(value: Double): Self = StObject.set(x, "inertiaExpansionDeceleration", value.asInstanceOf[js.Any])
+    inline def setInertiaExpansionDeceleration(value: Double): Self = StObject.set(x, "inertiaExpansionDeceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaRotationAngle(value: Double): Self = StObject.set(x, "inertiaRotationAngle", value.asInstanceOf[js.Any])
+    inline def setInertiaRotationAngle(value: Double): Self = StObject.set(x, "inertiaRotationAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaRotationDeceleration(value: Double): Self = StObject.set(x, "inertiaRotationDeceleration", value.asInstanceOf[js.Any])
+    inline def setInertiaRotationDeceleration(value: Double): Self = StObject.set(x, "inertiaRotationDeceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaTranslationDeceleration(value: Double): Self = StObject.set(x, "inertiaTranslationDeceleration", value.asInstanceOf[js.Any])
+    inline def setInertiaTranslationDeceleration(value: Double): Self = StObject.set(x, "inertiaTranslationDeceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInertiaTranslationDisplacement(value: Double): Self = StObject.set(x, "inertiaTranslationDisplacement", value.asInstanceOf[js.Any])
+    inline def setInertiaTranslationDisplacement(value: Double): Self = StObject.set(x, "inertiaTranslationDisplacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInertial(value: Boolean): Self = StObject.set(x, "isInertial", value.asInstanceOf[js.Any])
+    inline def setIsInertial(value: Boolean): Self = StObject.set(x, "isInertial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManipulationExact(value: Boolean): Self = StObject.set(x, "manipulationExact", value.asInstanceOf[js.Any])
+    inline def setManipulationExact(value: Boolean): Self = StObject.set(x, "manipulationExact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseWheelParameters(value: MouseWheelParameters): Self = StObject.set(x, "mouseWheelParameters", value.asInstanceOf[js.Any])
+    inline def setMouseWheelParameters(value: MouseWheelParameters): Self = StObject.set(x, "mouseWheelParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOncrosssliding(value: js.Any): Self = StObject.set(x, "oncrosssliding", value.asInstanceOf[js.Any])
+    inline def setOncrosssliding(value: js.Any): Self = StObject.set(x, "oncrosssliding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndragging(value: js.Any): Self = StObject.set(x, "ondragging", value.asInstanceOf[js.Any])
+    inline def setOndragging(value: js.Any): Self = StObject.set(x, "ondragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnholding(value: js.Any): Self = StObject.set(x, "onholding", value.asInstanceOf[js.Any])
+    inline def setOnholding(value: js.Any): Self = StObject.set(x, "onholding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmanipulationcompleted(value: js.Any): Self = StObject.set(x, "onmanipulationcompleted", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationcompleted(value: js.Any): Self = StObject.set(x, "onmanipulationcompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmanipulationinertiastarting(value: js.Any): Self = StObject.set(x, "onmanipulationinertiastarting", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationinertiastarting(value: js.Any): Self = StObject.set(x, "onmanipulationinertiastarting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmanipulationstarted(value: js.Any): Self = StObject.set(x, "onmanipulationstarted", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationstarted(value: js.Any): Self = StObject.set(x, "onmanipulationstarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmanipulationupdated(value: js.Any): Self = StObject.set(x, "onmanipulationupdated", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationupdated(value: js.Any): Self = StObject.set(x, "onmanipulationupdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnrighttapped(value: js.Any): Self = StObject.set(x, "onrighttapped", value.asInstanceOf[js.Any])
+    inline def setOnrighttapped(value: js.Any): Self = StObject.set(x, "onrighttapped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOntapped(value: js.Any): Self = StObject.set(x, "ontapped", value.asInstanceOf[js.Any])
+    inline def setOntapped(value: js.Any): Self = StObject.set(x, "ontapped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotCenter(value: Point): Self = StObject.set(x, "pivotCenter", value.asInstanceOf[js.Any])
+    inline def setPivotCenter(value: Point): Self = StObject.set(x, "pivotCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotRadius(value: Double): Self = StObject.set(x, "pivotRadius", value.asInstanceOf[js.Any])
+    inline def setPivotRadius(value: Double): Self = StObject.set(x, "pivotRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessDownEvent(value: PointerPoint => Unit): Self = StObject.set(x, "processDownEvent", js.Any.fromFunction1(value))
+    inline def setProcessDownEvent(value: PointerPoint => Unit): Self = StObject.set(x, "processDownEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcessInertia(value: () => Unit): Self = StObject.set(x, "processInertia", js.Any.fromFunction0(value))
+    inline def setProcessInertia(value: () => Unit): Self = StObject.set(x, "processInertia", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProcessMouseWheelEvent(value: (PointerPoint, Boolean, Boolean) => Unit): Self = StObject.set(x, "processMouseWheelEvent", js.Any.fromFunction3(value))
+    inline def setProcessMouseWheelEvent(value: (PointerPoint, Boolean, Boolean) => Unit): Self = StObject.set(x, "processMouseWheelEvent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setProcessMoveEvents(value: IVector[PointerPoint] => Unit): Self = StObject.set(x, "processMoveEvents", js.Any.fromFunction1(value))
+    inline def setProcessMoveEvents(value: IVector[PointerPoint] => Unit): Self = StObject.set(x, "processMoveEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcessUpEvent(value: PointerPoint => Unit): Self = StObject.set(x, "processUpEvent", js.Any.fromFunction1(value))
+    inline def setProcessUpEvent(value: PointerPoint => Unit): Self = StObject.set(x, "processUpEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowGestureFeedback(value: Boolean): Self = StObject.set(x, "showGestureFeedback", value.asInstanceOf[js.Any])
+    inline def setShowGestureFeedback(value: Boolean): Self = StObject.set(x, "showGestureFeedback", value.asInstanceOf[js.Any])
   }
 }

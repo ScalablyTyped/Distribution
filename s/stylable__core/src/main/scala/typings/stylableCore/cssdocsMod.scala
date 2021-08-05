@@ -13,8 +13,7 @@ object cssdocsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCssDocsForSymbol(meta: StylableMeta, symbol: StylableSymbol): CssDoc | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getCssDocsForSymbol")(meta.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[CssDoc | Null]
+  inline def getCssDocsForSymbol(meta: StylableMeta, symbol: StylableSymbol): CssDoc | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getCssDocsForSymbol")(meta.asInstanceOf[js.Any], symbol.asInstanceOf[js.Any])).asInstanceOf[CssDoc | Null]
   
   trait CssDoc extends StObject {
     
@@ -24,20 +23,16 @@ object cssdocsMod {
   }
   object CssDoc {
     
-    @scala.inline
-    def apply(description: String, tags: Record[String, String]): CssDoc = {
+    inline def apply(description: String, tags: Record[String, String]): CssDoc = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[CssDoc]
     }
     
-    @scala.inline
-    implicit class CssDocMutableBuilder[Self <: CssDoc] (val x: Self) extends AnyVal {
+    extension [Self <: CssDoc](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Record[String, String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Record[String, String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

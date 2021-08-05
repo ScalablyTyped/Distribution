@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PerimeterShape extends StObject
 object PerimeterShape {
   
-  @scala.inline
-  def Circle: typings.jsplumb.jsplumbStrings.Circle = "Circle".asInstanceOf[typings.jsplumb.jsplumbStrings.Circle]
+  inline def Circle: typings.jsplumb.jsplumbStrings.Circle = "Circle".asInstanceOf[typings.jsplumb.jsplumbStrings.Circle]
   
-  @scala.inline
-  def Diamond: typings.jsplumb.jsplumbStrings.Diamond = "Diamond".asInstanceOf[typings.jsplumb.jsplumbStrings.Diamond]
+  inline def Diamond: typings.jsplumb.jsplumbStrings.Diamond = "Diamond".asInstanceOf[typings.jsplumb.jsplumbStrings.Diamond]
   
-  @scala.inline
-  def Ellipse: typings.jsplumb.jsplumbStrings.Ellipse = "Ellipse".asInstanceOf[typings.jsplumb.jsplumbStrings.Ellipse]
+  inline def Ellipse: typings.jsplumb.jsplumbStrings.Ellipse = "Ellipse".asInstanceOf[typings.jsplumb.jsplumbStrings.Ellipse]
   
-  @scala.inline
-  def Rectangle: typings.jsplumb.jsplumbStrings.Rectangle = "Rectangle".asInstanceOf[typings.jsplumb.jsplumbStrings.Rectangle]
+  inline def Rectangle: typings.jsplumb.jsplumbStrings.Rectangle = "Rectangle".asInstanceOf[typings.jsplumb.jsplumbStrings.Rectangle]
   
-  @scala.inline
-  def Square: typings.jsplumb.jsplumbStrings.Square = "Square".asInstanceOf[typings.jsplumb.jsplumbStrings.Square]
+  inline def Square: typings.jsplumb.jsplumbStrings.Square = "Square".asInstanceOf[typings.jsplumb.jsplumbStrings.Square]
   
-  @scala.inline
-  def Triangle: typings.jsplumb.jsplumbStrings.Triangle = "Triangle".asInstanceOf[typings.jsplumb.jsplumbStrings.Triangle]
+  inline def Triangle: typings.jsplumb.jsplumbStrings.Triangle = "Triangle".asInstanceOf[typings.jsplumb.jsplumbStrings.Triangle]
 }

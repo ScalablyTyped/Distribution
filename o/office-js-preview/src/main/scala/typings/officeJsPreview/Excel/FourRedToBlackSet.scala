@@ -19,25 +19,19 @@ trait FourRedToBlackSet
 }
 object FourRedToBlackSet {
   
-  @scala.inline
-  def apply(blackCircle: Icon, grayCircle: Icon, pinkCircle: Icon, redCircle: Icon): FourRedToBlackSet = {
+  inline def apply(blackCircle: Icon, grayCircle: Icon, pinkCircle: Icon, redCircle: Icon): FourRedToBlackSet = {
     val __obj = js.Dynamic.literal(blackCircle = blackCircle.asInstanceOf[js.Any], grayCircle = grayCircle.asInstanceOf[js.Any], pinkCircle = pinkCircle.asInstanceOf[js.Any], redCircle = redCircle.asInstanceOf[js.Any])
     __obj.asInstanceOf[FourRedToBlackSet]
   }
   
-  @scala.inline
-  implicit class FourRedToBlackSetMutableBuilder[Self <: FourRedToBlackSet] (val x: Self) extends AnyVal {
+  extension [Self <: FourRedToBlackSet](x: Self) {
     
-    @scala.inline
-    def setBlackCircle(value: Icon): Self = StObject.set(x, "blackCircle", value.asInstanceOf[js.Any])
+    inline def setBlackCircle(value: Icon): Self = StObject.set(x, "blackCircle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayCircle(value: Icon): Self = StObject.set(x, "grayCircle", value.asInstanceOf[js.Any])
+    inline def setGrayCircle(value: Icon): Self = StObject.set(x, "grayCircle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinkCircle(value: Icon): Self = StObject.set(x, "pinkCircle", value.asInstanceOf[js.Any])
+    inline def setPinkCircle(value: Icon): Self = StObject.set(x, "pinkCircle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedCircle(value: Icon): Self = StObject.set(x, "redCircle", value.asInstanceOf[js.Any])
+    inline def setRedCircle(value: Icon): Self = StObject.set(x, "redCircle", value.asInstanceOf[js.Any])
   }
 }

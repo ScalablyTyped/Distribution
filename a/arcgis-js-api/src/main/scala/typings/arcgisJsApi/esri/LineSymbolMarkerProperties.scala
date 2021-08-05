@@ -38,34 +38,25 @@ trait LineSymbolMarkerProperties extends StObject {
 }
 object LineSymbolMarkerProperties {
   
-  @scala.inline
-  def apply(): LineSymbolMarkerProperties = {
+  inline def apply(): LineSymbolMarkerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineSymbolMarkerProperties]
   }
   
-  @scala.inline
-  implicit class LineSymbolMarkerPropertiesMutableBuilder[Self <: LineSymbolMarkerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LineSymbolMarkerProperties](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setPlacement(value: begin | end | `begin-end`): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: begin | end | `begin-end`): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
-    @scala.inline
-    def setStyle(value: arrow | circle | square | diamond | cross | typings.arcgisJsApi.arcgisJsApiStrings.x): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: arrow | circle | square | diamond | cross | typings.arcgisJsApi.arcgisJsApiStrings.x): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

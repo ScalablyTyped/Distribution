@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait STEPPER_TYPE extends StObject
 object STEPPER_TYPE {
   
-  @scala.inline
-  def DRIVER: `1` = 1.asInstanceOf[`1`]
+  inline def DRIVER: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def FOUR_WIRE: `4` = 4.asInstanceOf[`4`]
+  inline def FOUR_WIRE: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def TWO_WIRE: `2` = 2.asInstanceOf[`2`]
+  inline def TWO_WIRE: `2` = 2.asInstanceOf[`2`]
 }

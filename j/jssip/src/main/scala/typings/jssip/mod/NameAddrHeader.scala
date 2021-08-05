@@ -33,6 +33,5 @@ object NameAddrHeader {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(nameAddrHeader: String): NameAddrHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(nameAddrHeader.asInstanceOf[js.Any]).asInstanceOf[NameAddrHeader]
+  inline def parse(nameAddrHeader: String): NameAddrHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(nameAddrHeader.asInstanceOf[js.Any]).asInstanceOf[NameAddrHeader]
 }

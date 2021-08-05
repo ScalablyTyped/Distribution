@@ -21,8 +21,7 @@ trait RouteComponentProps[Params /* <: /* import warning: importer.ImportType#ap
 }
 object RouteComponentProps {
   
-  @scala.inline
-  def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouter.reactRouterStrings.RouteComponentProps & TopLevel[js.Any] */, C /* <: StaticContext */, S](history: History[S], location: Location[S], `match`: `match`[Params]): RouteComponentProps[Params, C, S] = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
@@ -30,24 +29,18 @@ object RouteComponentProps {
     __obj.asInstanceOf[RouteComponentProps[Params, C, S]]
   }
   
-  @scala.inline
-  implicit class RouteComponentPropsMutableBuilder[Self <: RouteComponentProps[?, ?, ?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  extension [Self <: RouteComponentProps[?, ?, ?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouter.reactRouterStrings.RouteComponentProps & TopLevel[js.Any] */, C /* <: StaticContext */, S] (val x: Self & (RouteComponentProps[Params, C, S])) extends AnyVal {
+    */ typings.reactRouter.reactRouterStrings.RouteComponentProps & TopLevel[js.Any] */, C /* <: StaticContext */, S](x: Self & (RouteComponentProps[Params, C, S])) {
     
-    @scala.inline
-    def setHistory(value: History[S]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: History[S]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location[S]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location[S]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch(value: `match`[Params]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: `match`[Params]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticContext(value: C): Self = StObject.set(x, "staticContext", value.asInstanceOf[js.Any])
+    inline def setStaticContext(value: C): Self = StObject.set(x, "staticContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticContextUndefined: Self = StObject.set(x, "staticContext", js.undefined)
+    inline def setStaticContextUndefined: Self = StObject.set(x, "staticContext", js.undefined)
   }
 }

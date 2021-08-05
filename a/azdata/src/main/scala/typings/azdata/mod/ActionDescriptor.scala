@@ -23,28 +23,21 @@ trait ActionDescriptor extends StObject {
 }
 object ActionDescriptor {
   
-  @scala.inline
-  def apply(label: String): ActionDescriptor = {
+  inline def apply(label: String): ActionDescriptor = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionDescriptor]
   }
   
-  @scala.inline
-  implicit class ActionDescriptorMutableBuilder[Self <: ActionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ActionDescriptor](x: Self) {
     
-    @scala.inline
-    def setActionTitle(value: String): Self = StObject.set(x, "actionTitle", value.asInstanceOf[js.Any])
+    inline def setActionTitle(value: String): Self = StObject.set(x, "actionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTitleUndefined: Self = StObject.set(x, "actionTitle", js.undefined)
+    inline def setActionTitleUndefined: Self = StObject.set(x, "actionTitle", js.undefined)
     
-    @scala.inline
-    def setCallbackData(value: js.Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
+    inline def setCallbackData(value: js.Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackDataUndefined: Self = StObject.set(x, "callbackData", js.undefined)
+    inline def setCallbackDataUndefined: Self = StObject.set(x, "callbackData", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

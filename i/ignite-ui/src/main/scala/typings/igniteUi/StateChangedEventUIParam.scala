@@ -33,43 +33,31 @@ trait StateChangedEventUIParam extends StObject {
 }
 object StateChangedEventUIParam {
   
-  @scala.inline
-  def apply(): StateChangedEventUIParam = {
+  inline def apply(): StateChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StateChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class StateChangedEventUIParamMutableBuilder[Self <: StateChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: StateChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setOldPinned(value: Boolean): Self = StObject.set(x, "oldPinned", value.asInstanceOf[js.Any])
+    inline def setOldPinned(value: Boolean): Self = StObject.set(x, "oldPinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldPinnedUndefined: Self = StObject.set(x, "oldPinned", js.undefined)
+    inline def setOldPinnedUndefined: Self = StObject.set(x, "oldPinned", js.undefined)
     
-    @scala.inline
-    def setOldState(value: String): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
+    inline def setOldState(value: String): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldStateUndefined: Self = StObject.set(x, "oldState", js.undefined)
+    inline def setOldStateUndefined: Self = StObject.set(x, "oldState", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

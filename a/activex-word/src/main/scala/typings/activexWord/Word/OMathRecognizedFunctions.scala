@@ -18,13 +18,12 @@ trait OMathRecognizedFunctions extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.OMathRecognizedFunctions_typekey")
+  /* private */ @JSName("Word.OMathRecognizedFunctions_typekey")
   var WordDotOMathRecognizedFunctions_typekey: OMathRecognizedFunctions
 }
 object OMathRecognizedFunctions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: String => OMathRecognizedFunction,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object OMathRecognizedFunctions {
     __obj.asInstanceOf[OMathRecognizedFunctions]
   }
   
-  @scala.inline
-  implicit class OMathRecognizedFunctionsMutableBuilder[Self <: OMathRecognizedFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: OMathRecognizedFunctions](x: Self) {
     
-    @scala.inline
-    def setAdd(value: String => OMathRecognizedFunction): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: String => OMathRecognizedFunction): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => OMathRecognizedFunction): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => OMathRecognizedFunction): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathRecognizedFunctions_typekey(value: OMathRecognizedFunctions): Self = StObject.set(x, "Word.OMathRecognizedFunctions_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathRecognizedFunctions_typekey(value: OMathRecognizedFunctions): Self = StObject.set(x, "Word.OMathRecognizedFunctions_typekey", value.asInstanceOf[js.Any])
   }
 }

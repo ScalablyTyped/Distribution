@@ -13,19 +13,15 @@ trait SchemaFreeBusyRequestItem extends StObject {
 }
 object SchemaFreeBusyRequestItem {
   
-  @scala.inline
-  def apply(): SchemaFreeBusyRequestItem = {
+  inline def apply(): SchemaFreeBusyRequestItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFreeBusyRequestItem]
   }
   
-  @scala.inline
-  implicit class SchemaFreeBusyRequestItemMutableBuilder[Self <: SchemaFreeBusyRequestItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFreeBusyRequestItem](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

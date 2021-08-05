@@ -17,25 +17,19 @@ trait AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk ext
 }
 object AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk {
   
-  @scala.inline
-  def apply(): AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk = {
+  inline def apply(): AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk]
   }
   
-  @scala.inline
-  implicit class AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDiskMutableBuilder[Self <: AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk] (val x: Self) extends AnyVal {
+  extension [Self <: AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk](x: Self) {
     
-    @scala.inline
-    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
+    inline def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
-    @scala.inline
-    def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+    inline def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
+    inline def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
   }
 }

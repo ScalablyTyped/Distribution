@@ -36,40 +36,29 @@ trait RouteResultProperties extends StObject {
 }
 object RouteResultProperties {
   
-  @scala.inline
-  def apply(): RouteResultProperties = {
+  inline def apply(): RouteResultProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteResultProperties]
   }
   
-  @scala.inline
-  implicit class RouteResultPropertiesMutableBuilder[Self <: RouteResultProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RouteResultProperties](x: Self) {
     
-    @scala.inline
-    def setDirections(value: DirectionsFeatureSetProperties): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
+    inline def setDirections(value: DirectionsFeatureSetProperties): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
+    inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
-    @scala.inline
-    def setRoute(value: GraphicProperties): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: GraphicProperties): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
+    inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
+    inline def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
     
-    @scala.inline
-    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+    inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
-    @scala.inline
-    def setStops(value: js.Array[GraphicProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[GraphicProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: GraphicProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: GraphicProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

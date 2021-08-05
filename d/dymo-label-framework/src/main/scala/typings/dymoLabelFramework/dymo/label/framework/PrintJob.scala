@@ -16,16 +16,13 @@ trait PrintJob extends StObject {
 }
 object PrintJob {
   
-  @scala.inline
-  def apply(getStatus: js.Function1[/* printJobStatusInfo */ PrintJobStatusInfo, js.Any] => Unit): PrintJob = {
+  inline def apply(getStatus: js.Function1[/* printJobStatusInfo */ PrintJobStatusInfo, js.Any] => Unit): PrintJob = {
     val __obj = js.Dynamic.literal(getStatus = js.Any.fromFunction1(getStatus))
     __obj.asInstanceOf[PrintJob]
   }
   
-  @scala.inline
-  implicit class PrintJobMutableBuilder[Self <: PrintJob] (val x: Self) extends AnyVal {
+  extension [Self <: PrintJob](x: Self) {
     
-    @scala.inline
-    def setGetStatus(value: js.Function1[/* printJobStatusInfo */ PrintJobStatusInfo, js.Any] => Unit): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
+    inline def setGetStatus(value: js.Function1[/* printJobStatusInfo */ PrintJobStatusInfo, js.Any] => Unit): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }
 }

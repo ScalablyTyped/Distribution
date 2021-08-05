@@ -14,16 +14,13 @@ trait ValueSignalValue
 }
 object ValueSignalValue {
   
-  @scala.inline
-  def apply(value: SignalValue): ValueSignalValue = {
+  inline def apply(value: SignalValue): ValueSignalValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSignalValue]
   }
   
-  @scala.inline
-  implicit class ValueSignalValueMutableBuilder[Self <: ValueSignalValue] (val x: Self) extends AnyVal {
+  extension [Self <: ValueSignalValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: SignalValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SignalValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

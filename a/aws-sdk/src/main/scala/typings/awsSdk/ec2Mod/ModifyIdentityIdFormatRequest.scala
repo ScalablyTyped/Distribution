@@ -23,22 +23,17 @@ trait ModifyIdentityIdFormatRequest extends StObject {
 }
 object ModifyIdentityIdFormatRequest {
   
-  @scala.inline
-  def apply(PrincipalArn: String, Resource: String, UseLongIds: Boolean): ModifyIdentityIdFormatRequest = {
+  inline def apply(PrincipalArn: String, Resource: String, UseLongIds: Boolean): ModifyIdentityIdFormatRequest = {
     val __obj = js.Dynamic.literal(PrincipalArn = PrincipalArn.asInstanceOf[js.Any], Resource = Resource.asInstanceOf[js.Any], UseLongIds = UseLongIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyIdentityIdFormatRequest]
   }
   
-  @scala.inline
-  implicit class ModifyIdentityIdFormatRequestMutableBuilder[Self <: ModifyIdentityIdFormatRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyIdentityIdFormatRequest](x: Self) {
     
-    @scala.inline
-    def setPrincipalArn(value: String): Self = StObject.set(x, "PrincipalArn", value.asInstanceOf[js.Any])
+    inline def setPrincipalArn(value: String): Self = StObject.set(x, "PrincipalArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLongIds(value: Boolean): Self = StObject.set(x, "UseLongIds", value.asInstanceOf[js.Any])
+    inline def setUseLongIds(value: Boolean): Self = StObject.set(x, "UseLongIds", value.asInstanceOf[js.Any])
   }
 }

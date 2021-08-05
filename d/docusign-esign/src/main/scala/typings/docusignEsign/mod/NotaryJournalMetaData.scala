@@ -16,40 +16,29 @@ trait NotaryJournalMetaData extends StObject {
 }
 object NotaryJournalMetaData {
   
-  @scala.inline
-  def apply(): NotaryJournalMetaData = {
+  inline def apply(): NotaryJournalMetaData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotaryJournalMetaData]
   }
   
-  @scala.inline
-  implicit class NotaryJournalMetaDataMutableBuilder[Self <: NotaryJournalMetaData] (val x: Self) extends AnyVal {
+  extension [Self <: NotaryJournalMetaData](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setCredibleWitnesses(value: js.Array[NotaryJournalCredibleWitness]): Self = StObject.set(x, "credibleWitnesses", value.asInstanceOf[js.Any])
+    inline def setCredibleWitnesses(value: js.Array[NotaryJournalCredibleWitness]): Self = StObject.set(x, "credibleWitnesses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredibleWitnessesUndefined: Self = StObject.set(x, "credibleWitnesses", js.undefined)
+    inline def setCredibleWitnessesUndefined: Self = StObject.set(x, "credibleWitnesses", js.undefined)
     
-    @scala.inline
-    def setCredibleWitnessesVarargs(value: NotaryJournalCredibleWitness*): Self = StObject.set(x, "credibleWitnesses", js.Array(value :_*))
+    inline def setCredibleWitnessesVarargs(value: NotaryJournalCredibleWitness*): Self = StObject.set(x, "credibleWitnesses", js.Array(value :_*))
     
-    @scala.inline
-    def setSignatureImage(value: String): Self = StObject.set(x, "signatureImage", value.asInstanceOf[js.Any])
+    inline def setSignatureImage(value: String): Self = StObject.set(x, "signatureImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureImageUndefined: Self = StObject.set(x, "signatureImage", js.undefined)
+    inline def setSignatureImageUndefined: Self = StObject.set(x, "signatureImage", js.undefined)
     
-    @scala.inline
-    def setSignerIdType(value: String): Self = StObject.set(x, "signerIdType", value.asInstanceOf[js.Any])
+    inline def setSignerIdType(value: String): Self = StObject.set(x, "signerIdType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerIdTypeUndefined: Self = StObject.set(x, "signerIdType", js.undefined)
+    inline def setSignerIdTypeUndefined: Self = StObject.set(x, "signerIdType", js.undefined)
   }
 }

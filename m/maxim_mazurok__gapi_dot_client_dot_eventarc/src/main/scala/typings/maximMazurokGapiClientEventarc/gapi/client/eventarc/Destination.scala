@@ -11,19 +11,15 @@ trait Destination extends StObject {
 }
 object Destination {
   
-  @scala.inline
-  def apply(): Destination = {
+  inline def apply(): Destination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Destination]
   }
   
-  @scala.inline
-  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
+  extension [Self <: Destination](x: Self) {
     
-    @scala.inline
-    def setCloudRunService(value: CloudRunService): Self = StObject.set(x, "cloudRunService", value.asInstanceOf[js.Any])
+    inline def setCloudRunService(value: CloudRunService): Self = StObject.set(x, "cloudRunService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudRunServiceUndefined: Self = StObject.set(x, "cloudRunService", js.undefined)
+    inline def setCloudRunServiceUndefined: Self = StObject.set(x, "cloudRunService", js.undefined)
   }
 }

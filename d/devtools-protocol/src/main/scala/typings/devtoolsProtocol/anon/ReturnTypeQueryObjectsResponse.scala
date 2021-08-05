@@ -14,22 +14,17 @@ trait ReturnTypeQueryObjectsResponse extends StObject {
 }
 object ReturnTypeQueryObjectsResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[QueryObjectsRequest], returnType: QueryObjectsResponse): ReturnTypeQueryObjectsResponse = {
+  inline def apply(paramsType: js.Array[QueryObjectsRequest], returnType: QueryObjectsResponse): ReturnTypeQueryObjectsResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeQueryObjectsResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeQueryObjectsResponseMutableBuilder[Self <: ReturnTypeQueryObjectsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeQueryObjectsResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[QueryObjectsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[QueryObjectsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: QueryObjectsRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: QueryObjectsRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: QueryObjectsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: QueryObjectsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

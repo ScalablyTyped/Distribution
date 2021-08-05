@@ -14,21 +14,17 @@ object anon {
   }
   object Private {
     
-    @scala.inline
-    def apply(`private`: Double, public: Double): Private = {
+    inline def apply(`private`: Double, public: Double): Private = {
       val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any])
       __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Private]
     }
     
-    @scala.inline
-    implicit class PrivateMutableBuilder[Self <: Private] (val x: Self) extends AnyVal {
+    extension [Self <: Private](x: Self) {
       
-      @scala.inline
-      def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic(value: Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     }
   }
 }

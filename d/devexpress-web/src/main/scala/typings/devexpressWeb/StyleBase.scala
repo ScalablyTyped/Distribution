@@ -21,19 +21,15 @@ trait StyleBase extends StObject {
 }
 object StyleBase {
   
-  @scala.inline
-  def apply(isDeleted: Boolean, name: String): StyleBase = {
+  inline def apply(isDeleted: Boolean, name: String): StyleBase = {
     val __obj = js.Dynamic.literal(isDeleted = isDeleted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleBase]
   }
   
-  @scala.inline
-  implicit class StyleBaseMutableBuilder[Self <: StyleBase] (val x: Self) extends AnyVal {
+  extension [Self <: StyleBase](x: Self) {
     
-    @scala.inline
-    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+    inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

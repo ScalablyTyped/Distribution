@@ -16,25 +16,19 @@ trait IosPlayOptions extends StObject {
 }
 object IosPlayOptions {
   
-  @scala.inline
-  def apply(): IosPlayOptions = {
+  inline def apply(): IosPlayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosPlayOptions]
   }
   
-  @scala.inline
-  implicit class IosPlayOptionsMutableBuilder[Self <: IosPlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IosPlayOptions](x: Self) {
     
-    @scala.inline
-    def setNumberOfLoops(value: Double): Self = StObject.set(x, "numberOfLoops", value.asInstanceOf[js.Any])
+    inline def setNumberOfLoops(value: Double): Self = StObject.set(x, "numberOfLoops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfLoopsUndefined: Self = StObject.set(x, "numberOfLoops", js.undefined)
+    inline def setNumberOfLoopsUndefined: Self = StObject.set(x, "numberOfLoops", js.undefined)
     
-    @scala.inline
-    def setPlayAudioWhenScreenIsLocked(value: Boolean): Self = StObject.set(x, "playAudioWhenScreenIsLocked", value.asInstanceOf[js.Any])
+    inline def setPlayAudioWhenScreenIsLocked(value: Boolean): Self = StObject.set(x, "playAudioWhenScreenIsLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayAudioWhenScreenIsLockedUndefined: Self = StObject.set(x, "playAudioWhenScreenIsLocked", js.undefined)
+    inline def setPlayAudioWhenScreenIsLockedUndefined: Self = StObject.set(x, "playAudioWhenScreenIsLocked", js.undefined)
   }
 }

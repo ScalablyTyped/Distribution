@@ -12,19 +12,15 @@ trait DrawerPosition extends StObject {
 }
 object DrawerPosition {
   
-  @scala.inline
-  def apply(Left: Double, Right: Double): DrawerPosition = {
+  inline def apply(Left: Double, Right: Double): DrawerPosition = {
     val __obj = js.Dynamic.literal(Left = Left.asInstanceOf[js.Any], Right = Right.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerPosition]
   }
   
-  @scala.inline
-  implicit class DrawerPositionMutableBuilder[Self <: DrawerPosition] (val x: Self) extends AnyVal {
+  extension [Self <: DrawerPosition](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
   }
 }

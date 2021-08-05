@@ -13,19 +13,15 @@ trait GetClipboardDataSuccessRes extends StObject {
 }
 object GetClipboardDataSuccessRes {
   
-  @scala.inline
-  def apply(): GetClipboardDataSuccessRes = {
+  inline def apply(): GetClipboardDataSuccessRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetClipboardDataSuccessRes]
   }
   
-  @scala.inline
-  implicit class GetClipboardDataSuccessResMutableBuilder[Self <: GetClipboardDataSuccessRes] (val x: Self) extends AnyVal {
+  extension [Self <: GetClipboardDataSuccessRes](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

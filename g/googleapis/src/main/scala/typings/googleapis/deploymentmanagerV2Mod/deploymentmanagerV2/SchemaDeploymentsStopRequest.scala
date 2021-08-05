@@ -21,19 +21,15 @@ trait SchemaDeploymentsStopRequest extends StObject {
 }
 object SchemaDeploymentsStopRequest {
   
-  @scala.inline
-  def apply(): SchemaDeploymentsStopRequest = {
+  inline def apply(): SchemaDeploymentsStopRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeploymentsStopRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeploymentsStopRequestMutableBuilder[Self <: SchemaDeploymentsStopRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeploymentsStopRequest](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
   }
 }

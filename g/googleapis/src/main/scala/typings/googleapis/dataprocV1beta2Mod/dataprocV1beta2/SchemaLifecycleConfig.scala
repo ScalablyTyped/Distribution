@@ -31,31 +31,23 @@ trait SchemaLifecycleConfig extends StObject {
 }
 object SchemaLifecycleConfig {
   
-  @scala.inline
-  def apply(): SchemaLifecycleConfig = {
+  inline def apply(): SchemaLifecycleConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLifecycleConfig]
   }
   
-  @scala.inline
-  implicit class SchemaLifecycleConfigMutableBuilder[Self <: SchemaLifecycleConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLifecycleConfig](x: Self) {
     
-    @scala.inline
-    def setAutoDeleteTime(value: String): Self = StObject.set(x, "autoDeleteTime", value.asInstanceOf[js.Any])
+    inline def setAutoDeleteTime(value: String): Self = StObject.set(x, "autoDeleteTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteTimeUndefined: Self = StObject.set(x, "autoDeleteTime", js.undefined)
+    inline def setAutoDeleteTimeUndefined: Self = StObject.set(x, "autoDeleteTime", js.undefined)
     
-    @scala.inline
-    def setAutoDeleteTtl(value: String): Self = StObject.set(x, "autoDeleteTtl", value.asInstanceOf[js.Any])
+    inline def setAutoDeleteTtl(value: String): Self = StObject.set(x, "autoDeleteTtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteTtlUndefined: Self = StObject.set(x, "autoDeleteTtl", js.undefined)
+    inline def setAutoDeleteTtlUndefined: Self = StObject.set(x, "autoDeleteTtl", js.undefined)
     
-    @scala.inline
-    def setIdleDeleteTtl(value: String): Self = StObject.set(x, "idleDeleteTtl", value.asInstanceOf[js.Any])
+    inline def setIdleDeleteTtl(value: String): Self = StObject.set(x, "idleDeleteTtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleDeleteTtlUndefined: Self = StObject.set(x, "idleDeleteTtl", js.undefined)
+    inline def setIdleDeleteTtlUndefined: Self = StObject.set(x, "idleDeleteTtl", js.undefined)
   }
 }

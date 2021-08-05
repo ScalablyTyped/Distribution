@@ -14,19 +14,15 @@ trait External extends StObject {
 }
 object External {
   
-  @scala.inline
-  def apply(AddSearchProvider: () => Unit, IsSearchProviderInstalled: () => Unit): External = {
+  inline def apply(AddSearchProvider: () => Unit, IsSearchProviderInstalled: () => Unit): External = {
     val __obj = js.Dynamic.literal(AddSearchProvider = js.Any.fromFunction0(AddSearchProvider), IsSearchProviderInstalled = js.Any.fromFunction0(IsSearchProviderInstalled))
     __obj.asInstanceOf[External]
   }
   
-  @scala.inline
-  implicit class ExternalMutableBuilder[Self <: External] (val x: Self) extends AnyVal {
+  extension [Self <: External](x: Self) {
     
-    @scala.inline
-    def setAddSearchProvider(value: () => Unit): Self = StObject.set(x, "AddSearchProvider", js.Any.fromFunction0(value))
+    inline def setAddSearchProvider(value: () => Unit): Self = StObject.set(x, "AddSearchProvider", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSearchProviderInstalled(value: () => Unit): Self = StObject.set(x, "IsSearchProviderInstalled", js.Any.fromFunction0(value))
+    inline def setIsSearchProviderInstalled(value: () => Unit): Self = StObject.set(x, "IsSearchProviderInstalled", js.Any.fromFunction0(value))
   }
 }

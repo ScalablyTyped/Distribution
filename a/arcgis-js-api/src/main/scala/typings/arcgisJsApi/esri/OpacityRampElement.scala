@@ -34,8 +34,7 @@ trait OpacityRampElement
 }
 object OpacityRampElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[OpacityRampStop],
@@ -47,22 +46,16 @@ object OpacityRampElement {
     __obj.asInstanceOf[OpacityRampElement]
   }
   
-  @scala.inline
-  implicit class OpacityRampElementMutableBuilder[Self <: OpacityRampElement] (val x: Self) extends AnyVal {
+  extension [Self <: OpacityRampElement](x: Self) {
     
-    @scala.inline
-    def setInfos(value: js.Array[OpacityRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
+    inline def setInfos(value: js.Array[OpacityRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfosVarargs(value: OpacityRampStop*): Self = StObject.set(x, "infos", js.Array(value :_*))
+    inline def setInfosVarargs(value: OpacityRampStop*): Self = StObject.set(x, "infos", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String | RampTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | RampTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

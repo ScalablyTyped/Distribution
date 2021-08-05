@@ -17,41 +17,35 @@ object NotificationEvent {
   @JSImport("lime-js", "NotificationEvent.accepted")
   @js.native
   def accepted: String = js.native
-  @scala.inline
-  def accepted_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accepted")(x.asInstanceOf[js.Any])
+  inline def accepted_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accepted")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "NotificationEvent.authorized")
   @js.native
   def authorized: String = js.native
-  @scala.inline
-  def authorized_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("authorized")(x.asInstanceOf[js.Any])
+  inline def authorized_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("authorized")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "NotificationEvent.consumed")
   @js.native
   def consumed: String = js.native
-  @scala.inline
-  def consumed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("consumed")(x.asInstanceOf[js.Any])
+  inline def consumed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("consumed")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "NotificationEvent.dispatched")
   @js.native
   def dispatched: String = js.native
-  @scala.inline
-  def dispatched_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatched")(x.asInstanceOf[js.Any])
+  inline def dispatched_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatched")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "NotificationEvent.received")
   @js.native
   def received: String = js.native
-  @scala.inline
-  def received_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("received")(x.asInstanceOf[js.Any])
+  inline def received_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("received")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "NotificationEvent.validated")
   @js.native
   def validated: String = js.native
-  @scala.inline
-  def validated_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validated")(x.asInstanceOf[js.Any])
+  inline def validated_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validated")(x.asInstanceOf[js.Any])
 }

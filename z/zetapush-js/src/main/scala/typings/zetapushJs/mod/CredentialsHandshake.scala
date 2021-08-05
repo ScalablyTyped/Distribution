@@ -16,8 +16,7 @@ trait CredentialsHandshake
 }
 object CredentialsHandshake {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authData: CredentialsAuthData,
     authType: String,
     authVersion: String,
@@ -31,16 +30,12 @@ object CredentialsHandshake {
     __obj.asInstanceOf[CredentialsHandshake]
   }
   
-  @scala.inline
-  implicit class CredentialsHandshakeMutableBuilder[Self <: CredentialsHandshake] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialsHandshake](x: Self) {
     
-    @scala.inline
-    def setAuthData(value: CredentialsAuthData): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
+    inline def setAuthData(value: CredentialsAuthData): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
   }
 }

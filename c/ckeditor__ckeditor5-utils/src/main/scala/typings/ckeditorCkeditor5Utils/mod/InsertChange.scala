@@ -15,26 +15,20 @@ trait InsertChange extends StObject {
 }
 object InsertChange {
   
-  @scala.inline
-  def apply(index: Double, values: js.Array[String]): InsertChange = {
+  inline def apply(index: Double, values: js.Array[String]): InsertChange = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("insert")
     __obj.asInstanceOf[InsertChange]
   }
   
-  @scala.inline
-  implicit class InsertChangeMutableBuilder[Self <: InsertChange] (val x: Self) extends AnyVal {
+  extension [Self <: InsertChange](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: insert): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: insert): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -26,31 +26,23 @@ trait GoogleCloudMlV1ExplanationConfig extends StObject {
 }
 object GoogleCloudMlV1ExplanationConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1ExplanationConfig = {
+  inline def apply(): GoogleCloudMlV1ExplanationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1ExplanationConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ExplanationConfigMutableBuilder[Self <: GoogleCloudMlV1ExplanationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1ExplanationConfig](x: Self) {
     
-    @scala.inline
-    def setIntegratedGradientsAttribution(value: GoogleCloudMlV1IntegratedGradientsAttribution): Self = StObject.set(x, "integratedGradientsAttribution", value.asInstanceOf[js.Any])
+    inline def setIntegratedGradientsAttribution(value: GoogleCloudMlV1IntegratedGradientsAttribution): Self = StObject.set(x, "integratedGradientsAttribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegratedGradientsAttributionUndefined: Self = StObject.set(x, "integratedGradientsAttribution", js.undefined)
+    inline def setIntegratedGradientsAttributionUndefined: Self = StObject.set(x, "integratedGradientsAttribution", js.undefined)
     
-    @scala.inline
-    def setSampledShapleyAttribution(value: GoogleCloudMlV1SampledShapleyAttribution): Self = StObject.set(x, "sampledShapleyAttribution", value.asInstanceOf[js.Any])
+    inline def setSampledShapleyAttribution(value: GoogleCloudMlV1SampledShapleyAttribution): Self = StObject.set(x, "sampledShapleyAttribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampledShapleyAttributionUndefined: Self = StObject.set(x, "sampledShapleyAttribution", js.undefined)
+    inline def setSampledShapleyAttributionUndefined: Self = StObject.set(x, "sampledShapleyAttribution", js.undefined)
     
-    @scala.inline
-    def setXraiAttribution(value: GoogleCloudMlV1XraiAttribution): Self = StObject.set(x, "xraiAttribution", value.asInstanceOf[js.Any])
+    inline def setXraiAttribution(value: GoogleCloudMlV1XraiAttribution): Self = StObject.set(x, "xraiAttribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXraiAttributionUndefined: Self = StObject.set(x, "xraiAttribution", js.undefined)
+    inline def setXraiAttributionUndefined: Self = StObject.set(x, "xraiAttribution", js.undefined)
   }
 }

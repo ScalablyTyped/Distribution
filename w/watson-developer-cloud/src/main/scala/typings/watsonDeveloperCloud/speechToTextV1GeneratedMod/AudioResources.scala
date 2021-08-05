@@ -15,22 +15,17 @@ trait AudioResources extends StObject {
 }
 object AudioResources {
   
-  @scala.inline
-  def apply(audio: js.Array[AudioResource], total_minutes_of_audio: Double): AudioResources = {
+  inline def apply(audio: js.Array[AudioResource], total_minutes_of_audio: Double): AudioResources = {
     val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any], total_minutes_of_audio = total_minutes_of_audio.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioResources]
   }
   
-  @scala.inline
-  implicit class AudioResourcesMutableBuilder[Self <: AudioResources] (val x: Self) extends AnyVal {
+  extension [Self <: AudioResources](x: Self) {
     
-    @scala.inline
-    def setAudio(value: js.Array[AudioResource]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: js.Array[AudioResource]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioVarargs(value: AudioResource*): Self = StObject.set(x, "audio", js.Array(value :_*))
+    inline def setAudioVarargs(value: AudioResource*): Self = StObject.set(x, "audio", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_minutes_of_audio(value: Double): Self = StObject.set(x, "total_minutes_of_audio", value.asInstanceOf[js.Any])
+    inline def setTotal_minutes_of_audio(value: Double): Self = StObject.set(x, "total_minutes_of_audio", value.asInstanceOf[js.Any])
   }
 }

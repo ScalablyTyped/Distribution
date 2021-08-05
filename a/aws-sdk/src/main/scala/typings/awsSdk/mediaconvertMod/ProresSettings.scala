@@ -63,79 +63,55 @@ trait ProresSettings extends StObject {
 }
 object ProresSettings {
   
-  @scala.inline
-  def apply(): ProresSettings = {
+  inline def apply(): ProresSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProresSettings]
   }
   
-  @scala.inline
-  implicit class ProresSettingsMutableBuilder[Self <: ProresSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ProresSettings](x: Self) {
     
-    @scala.inline
-    def setCodecProfile(value: ProresCodecProfile): Self = StObject.set(x, "CodecProfile", value.asInstanceOf[js.Any])
+    inline def setCodecProfile(value: ProresCodecProfile): Self = StObject.set(x, "CodecProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecProfileUndefined: Self = StObject.set(x, "CodecProfile", js.undefined)
+    inline def setCodecProfileUndefined: Self = StObject.set(x, "CodecProfile", js.undefined)
     
-    @scala.inline
-    def setFramerateControl(value: ProresFramerateControl): Self = StObject.set(x, "FramerateControl", value.asInstanceOf[js.Any])
+    inline def setFramerateControl(value: ProresFramerateControl): Self = StObject.set(x, "FramerateControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateControlUndefined: Self = StObject.set(x, "FramerateControl", js.undefined)
+    inline def setFramerateControlUndefined: Self = StObject.set(x, "FramerateControl", js.undefined)
     
-    @scala.inline
-    def setFramerateConversionAlgorithm(value: ProresFramerateConversionAlgorithm): Self = StObject.set(x, "FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
+    inline def setFramerateConversionAlgorithm(value: ProresFramerateConversionAlgorithm): Self = StObject.set(x, "FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateConversionAlgorithmUndefined: Self = StObject.set(x, "FramerateConversionAlgorithm", js.undefined)
+    inline def setFramerateConversionAlgorithmUndefined: Self = StObject.set(x, "FramerateConversionAlgorithm", js.undefined)
     
-    @scala.inline
-    def setFramerateDenominator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
+    inline def setFramerateDenominator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
+    inline def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
     
-    @scala.inline
-    def setFramerateNumerator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
+    inline def setFramerateNumerator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
+    inline def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
     
-    @scala.inline
-    def setInterlaceMode(value: ProresInterlaceMode): Self = StObject.set(x, "InterlaceMode", value.asInstanceOf[js.Any])
+    inline def setInterlaceMode(value: ProresInterlaceMode): Self = StObject.set(x, "InterlaceMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterlaceModeUndefined: Self = StObject.set(x, "InterlaceMode", js.undefined)
+    inline def setInterlaceModeUndefined: Self = StObject.set(x, "InterlaceMode", js.undefined)
     
-    @scala.inline
-    def setParControl(value: ProresParControl): Self = StObject.set(x, "ParControl", value.asInstanceOf[js.Any])
+    inline def setParControl(value: ProresParControl): Self = StObject.set(x, "ParControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParControlUndefined: Self = StObject.set(x, "ParControl", js.undefined)
+    inline def setParControlUndefined: Self = StObject.set(x, "ParControl", js.undefined)
     
-    @scala.inline
-    def setParDenominator(value: integerMin1Max2147483647): Self = StObject.set(x, "ParDenominator", value.asInstanceOf[js.Any])
+    inline def setParDenominator(value: integerMin1Max2147483647): Self = StObject.set(x, "ParDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParDenominatorUndefined: Self = StObject.set(x, "ParDenominator", js.undefined)
+    inline def setParDenominatorUndefined: Self = StObject.set(x, "ParDenominator", js.undefined)
     
-    @scala.inline
-    def setParNumerator(value: integerMin1Max2147483647): Self = StObject.set(x, "ParNumerator", value.asInstanceOf[js.Any])
+    inline def setParNumerator(value: integerMin1Max2147483647): Self = StObject.set(x, "ParNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParNumeratorUndefined: Self = StObject.set(x, "ParNumerator", js.undefined)
+    inline def setParNumeratorUndefined: Self = StObject.set(x, "ParNumerator", js.undefined)
     
-    @scala.inline
-    def setSlowPal(value: ProresSlowPal): Self = StObject.set(x, "SlowPal", value.asInstanceOf[js.Any])
+    inline def setSlowPal(value: ProresSlowPal): Self = StObject.set(x, "SlowPal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlowPalUndefined: Self = StObject.set(x, "SlowPal", js.undefined)
+    inline def setSlowPalUndefined: Self = StObject.set(x, "SlowPal", js.undefined)
     
-    @scala.inline
-    def setTelecine(value: ProresTelecine): Self = StObject.set(x, "Telecine", value.asInstanceOf[js.Any])
+    inline def setTelecine(value: ProresTelecine): Self = StObject.set(x, "Telecine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelecineUndefined: Self = StObject.set(x, "Telecine", js.undefined)
+    inline def setTelecineUndefined: Self = StObject.set(x, "Telecine", js.undefined)
   }
 }

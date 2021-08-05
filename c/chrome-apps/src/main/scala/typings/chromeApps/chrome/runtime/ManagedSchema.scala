@@ -31,33 +31,26 @@ trait ManagedSchema extends StObject {
 }
 object ManagedSchema {
   
-  @scala.inline
-  def apply(): ManagedSchema = {
+  inline def apply(): ManagedSchema = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("object")
     __obj.asInstanceOf[ManagedSchema]
   }
   
-  @scala.inline
-  implicit class ManagedSchemaMutableBuilder[Self <: ManagedSchema] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedSchema](x: Self) {
     
-    @scala.inline
-    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
+    inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
+    inline def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
     
-    @scala.inline
-    def setProperties(
+    inline def setProperties(
       value: StringDictionary[
           JSONSchemaBasicType | JSONSchemaArrayType | JSONSchemaObjectType | JSONSchemaRefType
         ]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,43 +18,31 @@ trait LightOptions extends StObject {
 }
 object LightOptions {
   
-  @scala.inline
-  def apply(): LightOptions = {
+  inline def apply(): LightOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LightOptions]
   }
   
-  @scala.inline
-  implicit class LightOptionsMutableBuilder[Self <: LightOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LightOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
+    inline def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
+    inline def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
     
-    @scala.inline
-    def setNormal(value: Point): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Point): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+    inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
   }
 }

@@ -69,14 +69,12 @@ object dbMod {
     @JSImport("merkle-patricia-tree/dist/db", "ENCODING_OPTS.keyEncoding")
     @js.native
     def keyEncoding: String = js.native
-    @scala.inline
-    def keyEncoding_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyEncoding")(x.asInstanceOf[js.Any])
+    inline def keyEncoding_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyEncoding")(x.asInstanceOf[js.Any])
     
     @JSImport("merkle-patricia-tree/dist/db", "ENCODING_OPTS.valueEncoding")
     @js.native
     def valueEncoding: String = js.native
-    @scala.inline
-    def valueEncoding_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valueEncoding")(x.asInstanceOf[js.Any])
+    inline def valueEncoding_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valueEncoding")(x.asInstanceOf[js.Any])
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -86,15 +84,13 @@ object dbMod {
   trait BatchDBOp extends StObject
   object BatchDBOp {
     
-    @scala.inline
-    def DelBatch(key: Buffer): typings.merklePatriciaTree.dbMod.DelBatch = {
+    inline def DelBatch(key: Buffer): typings.merklePatriciaTree.dbMod.DelBatch = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("del")
       __obj.asInstanceOf[typings.merklePatriciaTree.dbMod.DelBatch]
     }
     
-    @scala.inline
-    def PutBatch(key: Buffer, value: Buffer): typings.merklePatriciaTree.dbMod.PutBatch = {
+    inline def PutBatch(key: Buffer, value: Buffer): typings.merklePatriciaTree.dbMod.PutBatch = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("put")
       __obj.asInstanceOf[typings.merklePatriciaTree.dbMod.PutBatch]
@@ -111,21 +107,17 @@ object dbMod {
   }
   object DelBatch {
     
-    @scala.inline
-    def apply(key: Buffer): DelBatch = {
+    inline def apply(key: Buffer): DelBatch = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("del")
       __obj.asInstanceOf[DelBatch]
     }
     
-    @scala.inline
-    implicit class DelBatchMutableBuilder[Self <: DelBatch] (val x: Self) extends AnyVal {
+    extension [Self <: DelBatch](x: Self) {
       
-      @scala.inline
-      def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: del): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: del): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,24 +133,19 @@ object dbMod {
   }
   object PutBatch {
     
-    @scala.inline
-    def apply(key: Buffer, value: Buffer): PutBatch = {
+    inline def apply(key: Buffer, value: Buffer): PutBatch = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("put")
       __obj.asInstanceOf[PutBatch]
     }
     
-    @scala.inline
-    implicit class PutBatchMutableBuilder[Self <: PutBatch] (val x: Self) extends AnyVal {
+    extension [Self <: PutBatch](x: Self) {
       
-      @scala.inline
-      def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: put): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: put): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

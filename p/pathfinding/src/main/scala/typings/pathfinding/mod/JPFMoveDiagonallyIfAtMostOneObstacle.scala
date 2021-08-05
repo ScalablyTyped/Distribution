@@ -11,6 +11,5 @@ trait JPFMoveDiagonallyIfAtMostOneObstacle
      with JumpPointFinderBase
 object JPFMoveDiagonallyIfAtMostOneObstacle {
   
-  @scala.inline
-  def apply: JPFMoveDiagonallyIfAtMostOneObstacle = ^.asInstanceOf[js.Dynamic].selectDynamic("JPFMoveDiagonallyIfAtMostOneObstacle").asInstanceOf[JPFMoveDiagonallyIfAtMostOneObstacle]
+  inline def apply: JPFMoveDiagonallyIfAtMostOneObstacle = ^.asInstanceOf[js.Dynamic].selectDynamic("JPFMoveDiagonallyIfAtMostOneObstacle").asInstanceOf[JPFMoveDiagonallyIfAtMostOneObstacle]
 }

@@ -16,19 +16,15 @@ trait SchemaGooglePrivacyDlpV2InspectContentResponse extends StObject {
 }
 object SchemaGooglePrivacyDlpV2InspectContentResponse {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2InspectContentResponse = {
+  inline def apply(): SchemaGooglePrivacyDlpV2InspectContentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InspectContentResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InspectContentResponseMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InspectContentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2InspectContentResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: SchemaGooglePrivacyDlpV2InspectResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaGooglePrivacyDlpV2InspectResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

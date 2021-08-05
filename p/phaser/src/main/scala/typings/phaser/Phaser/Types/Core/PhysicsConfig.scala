@@ -25,31 +25,23 @@ trait PhysicsConfig extends StObject {
 }
 object PhysicsConfig {
   
-  @scala.inline
-  def apply(): PhysicsConfig = {
+  inline def apply(): PhysicsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PhysicsConfig]
   }
   
-  @scala.inline
-  implicit class PhysicsConfigMutableBuilder[Self <: PhysicsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PhysicsConfig](x: Self) {
     
-    @scala.inline
-    def setArcade(value: ArcadeWorldConfig): Self = StObject.set(x, "arcade", value.asInstanceOf[js.Any])
+    inline def setArcade(value: ArcadeWorldConfig): Self = StObject.set(x, "arcade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArcadeUndefined: Self = StObject.set(x, "arcade", js.undefined)
+    inline def setArcadeUndefined: Self = StObject.set(x, "arcade", js.undefined)
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setMatter(value: MatterWorldConfig): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
+    inline def setMatter(value: MatterWorldConfig): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterUndefined: Self = StObject.set(x, "matter", js.undefined)
+    inline def setMatterUndefined: Self = StObject.set(x, "matter", js.undefined)
   }
 }

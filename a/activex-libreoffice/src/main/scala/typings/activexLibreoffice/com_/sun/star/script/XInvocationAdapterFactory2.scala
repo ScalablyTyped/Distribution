@@ -22,8 +22,7 @@ trait XInvocationAdapterFactory2
 }
 object XInvocationAdapterFactory2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createAdapter: (XInvocation, SeqEquiv[`type`]) => XInterface,
     queryInterface: `type` => js.Any,
@@ -33,10 +32,8 @@ object XInvocationAdapterFactory2 {
     __obj.asInstanceOf[XInvocationAdapterFactory2]
   }
   
-  @scala.inline
-  implicit class XInvocationAdapterFactory2MutableBuilder[Self <: XInvocationAdapterFactory2] (val x: Self) extends AnyVal {
+  extension [Self <: XInvocationAdapterFactory2](x: Self) {
     
-    @scala.inline
-    def setCreateAdapter(value: (XInvocation, SeqEquiv[`type`]) => XInterface): Self = StObject.set(x, "createAdapter", js.Any.fromFunction2(value))
+    inline def setCreateAdapter(value: (XInvocation, SeqEquiv[`type`]) => XInterface): Self = StObject.set(x, "createAdapter", js.Any.fromFunction2(value))
   }
 }

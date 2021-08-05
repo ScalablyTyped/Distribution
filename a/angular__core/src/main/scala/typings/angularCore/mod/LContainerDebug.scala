@@ -34,8 +34,7 @@ trait LContainerDebug extends StObject {
 }
 object LContainerDebug {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasTransplantedViews: Boolean,
     host: RElement | RComment | ɵangularPackagesCoreCoreBv,
     native: RComment,
@@ -45,43 +44,30 @@ object LContainerDebug {
     __obj.asInstanceOf[LContainerDebug]
   }
   
-  @scala.inline
-  implicit class LContainerDebugMutableBuilder[Self <: LContainerDebug] (val x: Self) extends AnyVal {
+  extension [Self <: LContainerDebug](x: Self) {
     
-    @scala.inline
-    def setHasTransplantedViews(value: Boolean): Self = StObject.set(x, "hasTransplantedViews", value.asInstanceOf[js.Any])
+    inline def setHasTransplantedViews(value: Boolean): Self = StObject.set(x, "hasTransplantedViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: RElement | RComment | ɵangularPackagesCoreCoreBv): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: RElement | RComment | ɵangularPackagesCoreCoreBv): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovedViews(value: js.Array[ɵangularPackagesCoreCoreBv]): Self = StObject.set(x, "movedViews", value.asInstanceOf[js.Any])
+    inline def setMovedViews(value: js.Array[ɵangularPackagesCoreCoreBv]): Self = StObject.set(x, "movedViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovedViewsNull: Self = StObject.set(x, "movedViews", null)
+    inline def setMovedViewsNull: Self = StObject.set(x, "movedViews", null)
     
-    @scala.inline
-    def setMovedViewsVarargs(value: ɵangularPackagesCoreCoreBv*): Self = StObject.set(x, "movedViews", js.Array(value :_*))
+    inline def setMovedViewsVarargs(value: ɵangularPackagesCoreCoreBv*): Self = StObject.set(x, "movedViews", js.Array(value :_*))
     
-    @scala.inline
-    def setNative(value: RComment): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: RComment): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNull: Self = StObject.set(x, "next", null)
+    inline def setNextNull: Self = StObject.set(x, "next", null)
     
-    @scala.inline
-    def setParent(value: LViewDebug): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: LViewDebug): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setViews(value: js.Array[LViewDebug]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: js.Array[LViewDebug]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewsVarargs(value: LViewDebug*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: LViewDebug*): Self = StObject.set(x, "views", js.Array(value :_*))
   }
 }

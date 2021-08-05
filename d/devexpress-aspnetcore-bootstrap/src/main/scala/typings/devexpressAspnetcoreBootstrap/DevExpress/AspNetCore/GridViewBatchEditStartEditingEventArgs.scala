@@ -16,8 +16,7 @@ trait GridViewBatchEditStartEditingEventArgs
 }
 object GridViewBatchEditStartEditingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     focusedColumn: BootstrapGridViewColumn,
     rowValues: js.Any,
@@ -28,16 +27,12 @@ object GridViewBatchEditStartEditingEventArgs {
     __obj.asInstanceOf[GridViewBatchEditStartEditingEventArgs]
   }
   
-  @scala.inline
-  implicit class GridViewBatchEditStartEditingEventArgsMutableBuilder[Self <: GridViewBatchEditStartEditingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GridViewBatchEditStartEditingEventArgs](x: Self) {
     
-    @scala.inline
-    def setFocusedColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
+    inline def setFocusedColumn(value: BootstrapGridViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowValues(value: js.Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
+    inline def setRowValues(value: js.Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

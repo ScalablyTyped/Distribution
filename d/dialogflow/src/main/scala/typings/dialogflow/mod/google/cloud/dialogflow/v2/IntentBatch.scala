@@ -43,10 +43,8 @@ object IntentBatch {
     * @returns IntentBatch instance
     */
   /* static member */
-  @scala.inline
-  def create(): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IntentBatch]
-  @scala.inline
-  def create(properties: IIntentBatch): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
+  inline def create(): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IntentBatch]
+  inline def create(properties: IIntentBatch): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
   
   /**
     * Decodes an IntentBatch message from the specified reader or buffer.
@@ -57,14 +55,10 @@ object IntentBatch {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
-  @scala.inline
-  def decode(reader: Reader, length: Double): IntentBatch = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[IntentBatch]
-  @scala.inline
-  def decode(reader: Uint8Array): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): IntentBatch = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[IntentBatch]
+  inline def decode(reader: Reader): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
+  inline def decode(reader: Reader, length: Double): IntentBatch = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[IntentBatch]
+  inline def decode(reader: Uint8Array): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
+  inline def decode(reader: Uint8Array, length: Double): IntentBatch = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[IntentBatch]
   
   /**
     * Decodes an IntentBatch message from the specified reader or buffer, length delimited.
@@ -74,10 +68,8 @@ object IntentBatch {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
+  inline def decodeDelimited(reader: Reader): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
+  inline def decodeDelimited(reader: Uint8Array): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
   
   /**
     * Encodes the specified IntentBatch message. Does not implicitly {@link google.cloud.dialogflow.v2.IntentBatch.verify|verify} messages.
@@ -86,10 +78,8 @@ object IntentBatch {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IIntentBatch): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IIntentBatch, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IIntentBatch): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IIntentBatch, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified IntentBatch message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.IntentBatch.verify|verify} messages.
@@ -98,10 +88,8 @@ object IntentBatch {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IIntentBatch): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IIntentBatch, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IIntentBatch): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IIntentBatch, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an IntentBatch message from a plain object. Also converts values to their respective internal types.
@@ -109,8 +97,7 @@ object IntentBatch {
     * @returns IntentBatch
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
+  inline def fromObject(`object`: StringDictionary[js.Any]): IntentBatch = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[IntentBatch]
   
   /**
     * Creates a plain object from an IntentBatch message. Also converts values to other types if specified.
@@ -119,10 +106,8 @@ object IntentBatch {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: IntentBatch): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: IntentBatch, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: IntentBatch): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: IntentBatch, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an IntentBatch message.
@@ -130,6 +115,5 @@ object IntentBatch {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

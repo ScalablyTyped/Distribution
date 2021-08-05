@@ -16,19 +16,15 @@ trait TopologySelectorTerm extends StObject {
 }
 object TopologySelectorTerm {
   
-  @scala.inline
-  def apply(matchLabelExpressions: js.Array[TopologySelectorLabelRequirement]): TopologySelectorTerm = {
+  inline def apply(matchLabelExpressions: js.Array[TopologySelectorLabelRequirement]): TopologySelectorTerm = {
     val __obj = js.Dynamic.literal(matchLabelExpressions = matchLabelExpressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopologySelectorTerm]
   }
   
-  @scala.inline
-  implicit class TopologySelectorTermMutableBuilder[Self <: TopologySelectorTerm] (val x: Self) extends AnyVal {
+  extension [Self <: TopologySelectorTerm](x: Self) {
     
-    @scala.inline
-    def setMatchLabelExpressions(value: js.Array[TopologySelectorLabelRequirement]): Self = StObject.set(x, "matchLabelExpressions", value.asInstanceOf[js.Any])
+    inline def setMatchLabelExpressions(value: js.Array[TopologySelectorLabelRequirement]): Self = StObject.set(x, "matchLabelExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchLabelExpressionsVarargs(value: TopologySelectorLabelRequirement*): Self = StObject.set(x, "matchLabelExpressions", js.Array(value :_*))
+    inline def setMatchLabelExpressionsVarargs(value: TopologySelectorLabelRequirement*): Self = StObject.set(x, "matchLabelExpressions", js.Array(value :_*))
   }
 }

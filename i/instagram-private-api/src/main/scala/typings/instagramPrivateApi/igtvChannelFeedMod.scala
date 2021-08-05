@@ -17,7 +17,7 @@ object igtvChannelFeedMod {
     
     var channelId: String = js.native
     
-    var maxId: js.Any = js.native
+    /* private */ var maxId: js.Any = js.native
     
     def request(): js.Promise[IgtvChannelFeedResponseRootObject] = js.native
   }

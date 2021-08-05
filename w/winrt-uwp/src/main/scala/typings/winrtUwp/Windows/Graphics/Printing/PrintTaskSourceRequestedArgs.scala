@@ -25,8 +25,7 @@ trait PrintTaskSourceRequestedArgs extends StObject {
 }
 object PrintTaskSourceRequestedArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deadline: Date,
     getDeferral: () => PrintTaskSourceRequestedDeferral,
     setSource: IPrintDocumentSource => Unit
@@ -35,16 +34,12 @@ object PrintTaskSourceRequestedArgs {
     __obj.asInstanceOf[PrintTaskSourceRequestedArgs]
   }
   
-  @scala.inline
-  implicit class PrintTaskSourceRequestedArgsMutableBuilder[Self <: PrintTaskSourceRequestedArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PrintTaskSourceRequestedArgs](x: Self) {
     
-    @scala.inline
-    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => PrintTaskSourceRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => PrintTaskSourceRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSource(value: IPrintDocumentSource => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
+    inline def setSetSource(value: IPrintDocumentSource => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
   }
 }

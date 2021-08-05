@@ -20,8 +20,7 @@ trait Position extends StObject {
 }
 object Position {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     position: `inner-right` | `inner-center` | `inner-left` | `outer-right` | `outer-center` | `outer-left`,
     text: String
   ): Position = {
@@ -29,15 +28,12 @@ object Position {
     __obj.asInstanceOf[Position]
   }
   
-  @scala.inline
-  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+  extension [Self <: Position](x: Self) {
     
-    @scala.inline
-    def setPosition(
+    inline def setPosition(
       value: `inner-right` | `inner-center` | `inner-left` | `outer-right` | `outer-center` | `outer-left`
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

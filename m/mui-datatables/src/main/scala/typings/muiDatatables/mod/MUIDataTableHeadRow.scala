@@ -10,19 +10,15 @@ trait MUIDataTableHeadRow extends StObject {
 }
 object MUIDataTableHeadRow {
   
-  @scala.inline
-  def apply(): MUIDataTableHeadRow = {
+  inline def apply(): MUIDataTableHeadRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MUIDataTableHeadRow]
   }
   
-  @scala.inline
-  implicit class MUIDataTableHeadRowMutableBuilder[Self <: MUIDataTableHeadRow] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableHeadRow](x: Self) {
     
-    @scala.inline
-    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
   }
 }

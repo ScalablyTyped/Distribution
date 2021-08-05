@@ -14,17 +14,17 @@ object interactionMod {
     
     /* protected */ def _anchor(component: Component): Unit = js.native
     
-    var _anchorCallback: js.Any = js.native
+    /* private */ var _anchorCallback: js.Any = js.native
     
-    var _componentAttachedTo: Component = js.native
+    /* protected */ var _componentAttachedTo: Component = js.native
     
     /* private */ def _connect(): js.Any = js.native
     
     /* private */ def _disconnect(): js.Any = js.native
     
-    var _enabled: js.Any = js.native
+    /* private */ var _enabled: js.Any = js.native
     
-    var _isAnchored: js.Any = js.native
+    /* private */ var _isAnchored: js.Any = js.native
     
     /**
       * Checks whether a Component-coordinate-space Point is inside the Component.

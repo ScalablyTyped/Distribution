@@ -17,38 +17,32 @@ object updateGlobalTableSettingsExceptionsUnionMod {
   trait UpdateGlobalTableSettingsExceptionsUnion extends StObject
   object UpdateGlobalTableSettingsExceptionsUnion {
     
-    @scala.inline
-    def GlobalTableNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException = {
+    inline def GlobalTableNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException = {
       val __obj = js.Dynamic.literal(name = "GlobalTableNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesGlobalTableNotFoundExceptionMod.GlobalTableNotFoundException]
     }
     
-    @scala.inline
-    def IndexNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesIndexNotFoundExceptionMod.IndexNotFoundException = {
+    inline def IndexNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesIndexNotFoundExceptionMod.IndexNotFoundException = {
       val __obj = js.Dynamic.literal(name = "IndexNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesIndexNotFoundExceptionMod.IndexNotFoundException]
     }
     
-    @scala.inline
-    def InternalServerError(): typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError = {
+    inline def InternalServerError(): typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError = {
       val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError]
     }
     
-    @scala.inline
-    def LimitExceededException(): typings.awsSdkClientDynamodbBrowser.typesLimitExceededExceptionMod.LimitExceededException = {
+    inline def LimitExceededException(): typings.awsSdkClientDynamodbBrowser.typesLimitExceededExceptionMod.LimitExceededException = {
       val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesLimitExceededExceptionMod.LimitExceededException]
     }
     
-    @scala.inline
-    def ReplicaNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesReplicaNotFoundExceptionMod.ReplicaNotFoundException = {
+    inline def ReplicaNotFoundException(): typings.awsSdkClientDynamodbBrowser.typesReplicaNotFoundExceptionMod.ReplicaNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ReplicaNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesReplicaNotFoundExceptionMod.ReplicaNotFoundException]
     }
     
-    @scala.inline
-    def ResourceInUseException(): typings.awsSdkClientDynamodbBrowser.typesResourceInUseExceptionMod.ResourceInUseException = {
+    inline def ResourceInUseException(): typings.awsSdkClientDynamodbBrowser.typesResourceInUseExceptionMod.ResourceInUseException = {
       val __obj = js.Dynamic.literal(name = "ResourceInUseException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbBrowser.typesResourceInUseExceptionMod.ResourceInUseException]
     }

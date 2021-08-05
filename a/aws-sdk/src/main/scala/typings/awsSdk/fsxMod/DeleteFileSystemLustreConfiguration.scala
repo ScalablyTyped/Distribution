@@ -18,28 +18,21 @@ trait DeleteFileSystemLustreConfiguration extends StObject {
 }
 object DeleteFileSystemLustreConfiguration {
   
-  @scala.inline
-  def apply(): DeleteFileSystemLustreConfiguration = {
+  inline def apply(): DeleteFileSystemLustreConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFileSystemLustreConfiguration]
   }
   
-  @scala.inline
-  implicit class DeleteFileSystemLustreConfigurationMutableBuilder[Self <: DeleteFileSystemLustreConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFileSystemLustreConfiguration](x: Self) {
     
-    @scala.inline
-    def setFinalBackupTags(value: Tags): Self = StObject.set(x, "FinalBackupTags", value.asInstanceOf[js.Any])
+    inline def setFinalBackupTags(value: Tags): Self = StObject.set(x, "FinalBackupTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalBackupTagsUndefined: Self = StObject.set(x, "FinalBackupTags", js.undefined)
+    inline def setFinalBackupTagsUndefined: Self = StObject.set(x, "FinalBackupTags", js.undefined)
     
-    @scala.inline
-    def setFinalBackupTagsVarargs(value: Tag*): Self = StObject.set(x, "FinalBackupTags", js.Array(value :_*))
+    inline def setFinalBackupTagsVarargs(value: Tag*): Self = StObject.set(x, "FinalBackupTags", js.Array(value :_*))
     
-    @scala.inline
-    def setSkipFinalBackup(value: Flag): Self = StObject.set(x, "SkipFinalBackup", value.asInstanceOf[js.Any])
+    inline def setSkipFinalBackup(value: Flag): Self = StObject.set(x, "SkipFinalBackup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipFinalBackupUndefined: Self = StObject.set(x, "SkipFinalBackup", js.undefined)
+    inline def setSkipFinalBackupUndefined: Self = StObject.set(x, "SkipFinalBackup", js.undefined)
   }
 }

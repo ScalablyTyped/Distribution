@@ -23,28 +23,21 @@ trait MetricQuery extends StObject {
 }
 object MetricQuery {
   
-  @scala.inline
-  def apply(Metric: String): MetricQuery = {
+  inline def apply(Metric: String): MetricQuery = {
     val __obj = js.Dynamic.literal(Metric = Metric.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricQuery]
   }
   
-  @scala.inline
-  implicit class MetricQueryMutableBuilder[Self <: MetricQuery] (val x: Self) extends AnyVal {
+  extension [Self <: MetricQuery](x: Self) {
     
-    @scala.inline
-    def setFilter(value: MetricQueryFilterMap): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: MetricQueryFilterMap): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setGroupBy(value: DimensionGroup): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: DimensionGroup): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByUndefined: Self = StObject.set(x, "GroupBy", js.undefined)
+    inline def setGroupByUndefined: Self = StObject.set(x, "GroupBy", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
   }
 }

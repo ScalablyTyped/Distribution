@@ -51,49 +51,35 @@ trait IConfig extends StObject {
 }
 object IConfig {
   
-  @scala.inline
-  def apply(): IConfig = {
+  inline def apply(): IConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConfig]
   }
   
-  @scala.inline
-  implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IConfig](x: Self) {
     
-    @scala.inline
-    def setAssembleFragments(value: Boolean): Self = StObject.set(x, "assembleFragments", value.asInstanceOf[js.Any])
+    inline def setAssembleFragments(value: Boolean): Self = StObject.set(x, "assembleFragments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssembleFragmentsUndefined: Self = StObject.set(x, "assembleFragments", js.undefined)
+    inline def setAssembleFragmentsUndefined: Self = StObject.set(x, "assembleFragments", js.undefined)
     
-    @scala.inline
-    def setCloseTimeout(value: Double): Self = StObject.set(x, "closeTimeout", value.asInstanceOf[js.Any])
+    inline def setCloseTimeout(value: Double): Self = StObject.set(x, "closeTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseTimeoutUndefined: Self = StObject.set(x, "closeTimeout", js.undefined)
+    inline def setCloseTimeoutUndefined: Self = StObject.set(x, "closeTimeout", js.undefined)
     
-    @scala.inline
-    def setFragmentOutgoingMessages(value: Boolean): Self = StObject.set(x, "fragmentOutgoingMessages", value.asInstanceOf[js.Any])
+    inline def setFragmentOutgoingMessages(value: Boolean): Self = StObject.set(x, "fragmentOutgoingMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentOutgoingMessagesUndefined: Self = StObject.set(x, "fragmentOutgoingMessages", js.undefined)
+    inline def setFragmentOutgoingMessagesUndefined: Self = StObject.set(x, "fragmentOutgoingMessages", js.undefined)
     
-    @scala.inline
-    def setFragmentationThreshold(value: Double): Self = StObject.set(x, "fragmentationThreshold", value.asInstanceOf[js.Any])
+    inline def setFragmentationThreshold(value: Double): Self = StObject.set(x, "fragmentationThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentationThresholdUndefined: Self = StObject.set(x, "fragmentationThreshold", js.undefined)
+    inline def setFragmentationThresholdUndefined: Self = StObject.set(x, "fragmentationThreshold", js.undefined)
     
-    @scala.inline
-    def setMaxReceivedFrameSize(value: Double): Self = StObject.set(x, "maxReceivedFrameSize", value.asInstanceOf[js.Any])
+    inline def setMaxReceivedFrameSize(value: Double): Self = StObject.set(x, "maxReceivedFrameSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxReceivedFrameSizeUndefined: Self = StObject.set(x, "maxReceivedFrameSize", js.undefined)
+    inline def setMaxReceivedFrameSizeUndefined: Self = StObject.set(x, "maxReceivedFrameSize", js.undefined)
     
-    @scala.inline
-    def setMaxReceivedMessageSize(value: Double): Self = StObject.set(x, "maxReceivedMessageSize", value.asInstanceOf[js.Any])
+    inline def setMaxReceivedMessageSize(value: Double): Self = StObject.set(x, "maxReceivedMessageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxReceivedMessageSizeUndefined: Self = StObject.set(x, "maxReceivedMessageSize", js.undefined)
+    inline def setMaxReceivedMessageSizeUndefined: Self = StObject.set(x, "maxReceivedMessageSize", js.undefined)
   }
 }

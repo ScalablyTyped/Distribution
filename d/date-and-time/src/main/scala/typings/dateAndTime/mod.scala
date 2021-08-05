@@ -12,91 +12,57 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addDays(dateObj: Date, days: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addDays")(dateObj.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def addDays(dateObj: Date, days: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addDays")(dateObj.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def addHours(dateObj: Date, hours: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addHours")(dateObj.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def addHours(dateObj: Date, hours: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addHours")(dateObj.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def addMilliseconds(dateObj: Date, milliseconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMilliseconds")(dateObj.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def addMilliseconds(dateObj: Date, milliseconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMilliseconds")(dateObj.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def addMinutes(dateObj: Date, minutes: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMinutes")(dateObj.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def addMinutes(dateObj: Date, minutes: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMinutes")(dateObj.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def addMonths(dateObj: Date, months: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(dateObj.asInstanceOf[js.Any], months.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def addMonths(dateObj: Date, months: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(dateObj.asInstanceOf[js.Any], months.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def addSeconds(dateObj: Date, seconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addSeconds")(dateObj.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def addSeconds(dateObj: Date, seconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addSeconds")(dateObj.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def addYears(dateObj: Date, years: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addYears")(dateObj.asInstanceOf[js.Any], years.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def addYears(dateObj: Date, years: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addYears")(dateObj.asInstanceOf[js.Any], years.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def compile(formatString: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formatString.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def compile(formatString: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formatString.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def extend(`extension`: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def extend(`extension`: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def format(dateObj: Date, formatString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def format(dateObj: Date, formatString: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def format(dateObj: Date, formatString: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def format(dateObj: Date, formatString: js.Array[String], utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(dateObj: Date, formatString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(dateObj: Date, formatString: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(dateObj: Date, formatString: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(dateObj: Date, formatString: js.Array[String], utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def isLeapYear(y: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(y.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLeapYear(y: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(y.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSameDay(date1: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isSameDay(date1: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValid(dateValue: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isValid(dateValue: String, formatter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isValid(dateValue: String, formatter: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isValid(dateValue: PreparseResult): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isValid(dateValue: PreparseResult, formatter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isValid(dateValue: PreparseResult, formatter: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValid(dateValue: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(dateValue: String, formatter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValid(dateValue: String, formatter: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValid(dateValue: PreparseResult): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(dateValue: PreparseResult, formatter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValid(dateValue: PreparseResult, formatter: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
-  @scala.inline
-  def locale(code: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(code.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def locale(code: String, locale: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(code.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def locale(code: Unit, locale: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(code.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
+  inline def locale(code: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def locale(code: String, locale: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(code.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def locale(code: Unit, locale: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(code.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def parse(dateString: String, formatter: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Date]
-  @scala.inline
-  def parse(dateString: String, formatter: String, utc: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[Date]
-  @scala.inline
-  def parse(dateString: String, formatter: js.Array[String]): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Date]
-  @scala.inline
-  def parse(dateString: String, formatter: js.Array[String], utc: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def parse(dateString: String, formatter: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def parse(dateString: String, formatter: String, utc: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def parse(dateString: String, formatter: js.Array[String]): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def parse(dateString: String, formatter: js.Array[String], utc: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def plugin(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def plugin(name: String, `extension`: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(name.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def plugin(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def plugin(name: String, `extension`: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(name.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def preparse(dateString: String, formatString: String): PreparseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("preparse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[PreparseResult]
-  @scala.inline
-  def preparse(dateString: String, formatString: js.Array[String]): PreparseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("preparse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[PreparseResult]
+  inline def preparse(dateString: String, formatString: String): PreparseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("preparse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[PreparseResult]
+  inline def preparse(dateString: String, formatString: js.Array[String]): PreparseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("preparse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[PreparseResult]
   
-  @scala.inline
-  def subtract(date1: Date, date2: Date): SubtractResult = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[SubtractResult]
+  inline def subtract(date1: Date, date2: Date): SubtractResult = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[SubtractResult]
   
   trait PreparseResult extends StObject {
     
@@ -141,8 +107,7 @@ object mod {
   }
   object PreparseResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       A: Double,
       D: Double,
       H: Double,
@@ -161,38 +126,27 @@ object mod {
       __obj.asInstanceOf[PreparseResult]
     }
     
-    @scala.inline
-    implicit class PreparseResultMutableBuilder[Self <: PreparseResult] (val x: Self) extends AnyVal {
+    extension [Self <: PreparseResult](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+      inline def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM(value: Double): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+      inline def setM(value: Double): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
+      inline def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_length(value: Double): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
+      inline def set_length(value: Double): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_match(value: Double): Self = StObject.set(x, "_match", value.asInstanceOf[js.Any])
+      inline def set_match(value: Double): Self = StObject.set(x, "_match", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,8 +164,7 @@ object mod {
   }
   object SubtractResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       toDays: () => Double,
       toHours: () => Double,
       toMilliseconds: () => Double,
@@ -222,23 +175,17 @@ object mod {
       __obj.asInstanceOf[SubtractResult]
     }
     
-    @scala.inline
-    implicit class SubtractResultMutableBuilder[Self <: SubtractResult] (val x: Self) extends AnyVal {
+    extension [Self <: SubtractResult](x: Self) {
       
-      @scala.inline
-      def setToDays(value: () => Double): Self = StObject.set(x, "toDays", js.Any.fromFunction0(value))
+      inline def setToDays(value: () => Double): Self = StObject.set(x, "toDays", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToHours(value: () => Double): Self = StObject.set(x, "toHours", js.Any.fromFunction0(value))
+      inline def setToHours(value: () => Double): Self = StObject.set(x, "toHours", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToMilliseconds(value: () => Double): Self = StObject.set(x, "toMilliseconds", js.Any.fromFunction0(value))
+      inline def setToMilliseconds(value: () => Double): Self = StObject.set(x, "toMilliseconds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToMinutes(value: () => Double): Self = StObject.set(x, "toMinutes", js.Any.fromFunction0(value))
+      inline def setToMinutes(value: () => Double): Self = StObject.set(x, "toMinutes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSeconds(value: () => Double): Self = StObject.set(x, "toSeconds", js.Any.fromFunction0(value))
+      inline def setToSeconds(value: () => Double): Self = StObject.set(x, "toSeconds", js.Any.fromFunction0(value))
     }
   }
   

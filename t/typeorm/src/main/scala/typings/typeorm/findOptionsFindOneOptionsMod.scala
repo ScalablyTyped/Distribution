@@ -81,93 +81,66 @@ object findOptionsFindOneOptionsMod {
   }
   object FindOneOptions {
     
-    @scala.inline
-    def apply[Entity](): FindOneOptions[Entity] = {
+    inline def apply[Entity](): FindOneOptions[Entity] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOneOptions[Entity]]
     }
     
-    @scala.inline
-    implicit class FindOneOptionsMutableBuilder[Self <: FindOneOptions[?], Entity] (val x: Self & FindOneOptions[Entity]) extends AnyVal {
+    extension [Self <: FindOneOptions[?], Entity](x: Self & FindOneOptions[Entity]) {
       
-      @scala.inline
-      def setCache(value: Boolean | Double | Milliseconds): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean | Double | Milliseconds): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setJoin(value: JoinOptions): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      inline def setJoin(value: JoinOptions): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
+      inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
       
-      @scala.inline
-      def setLoadEagerRelations(value: Boolean): Self = StObject.set(x, "loadEagerRelations", value.asInstanceOf[js.Any])
+      inline def setLoadEagerRelations(value: Boolean): Self = StObject.set(x, "loadEagerRelations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadEagerRelationsUndefined: Self = StObject.set(x, "loadEagerRelations", js.undefined)
+      inline def setLoadEagerRelationsUndefined: Self = StObject.set(x, "loadEagerRelations", js.undefined)
       
-      @scala.inline
-      def setLoadRelationIds(value: Boolean | DisableMixedMap): Self = StObject.set(x, "loadRelationIds", value.asInstanceOf[js.Any])
+      inline def setLoadRelationIds(value: Boolean | DisableMixedMap): Self = StObject.set(x, "loadRelationIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadRelationIdsUndefined: Self = StObject.set(x, "loadRelationIds", js.undefined)
+      inline def setLoadRelationIdsUndefined: Self = StObject.set(x, "loadRelationIds", js.undefined)
       
-      @scala.inline
-      def setLock(value: Mode | `2`): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+      inline def setLock(value: Mode | `2`): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+      inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
       
-      @scala.inline
-      def setOrder(
+      inline def setOrder(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof Entity ]:? 'ASC' | 'DESC' | 1 | -1}
         */ typings.typeorm.typeormStrings.FindOneOptions & TopLevel[js.Any]
       ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setRelations(value: js.Array[String]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+      inline def setRelations(value: js.Array[String]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
+      inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
       
-      @scala.inline
-      def setRelationsVarargs(value: String*): Self = StObject.set(x, "relations", js.Array(value :_*))
+      inline def setRelationsVarargs(value: String*): Self = StObject.set(x, "relations", js.Array(value :_*))
       
-      @scala.inline
-      def setSelect(value: js.Array[/* keyof Entity */ String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: js.Array[/* keyof Entity */ String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setSelectVarargs(value: (/* keyof Entity */ String)*): Self = StObject.set(x, "select", js.Array(value :_*))
+      inline def setSelectVarargs(value: (/* keyof Entity */ String)*): Self = StObject.set(x, "select", js.Array(value :_*))
       
-      @scala.inline
-      def setTransaction(value: Boolean): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      inline def setTransaction(value: Boolean): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+      inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
       
-      @scala.inline
-      def setWhere(value: js.Array[FindConditions[Entity]] | FindConditions[Entity] | ObjectLiteral | String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+      inline def setWhere(value: js.Array[FindConditions[Entity]] | FindConditions[Entity] | ObjectLiteral | String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+      inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
       
-      @scala.inline
-      def setWhereVarargs(value: FindConditions[Entity]*): Self = StObject.set(x, "where", js.Array(value :_*))
+      inline def setWhereVarargs(value: FindConditions[Entity]*): Self = StObject.set(x, "where", js.Array(value :_*))
       
-      @scala.inline
-      def setWithDeleted(value: Boolean): Self = StObject.set(x, "withDeleted", value.asInstanceOf[js.Any])
+      inline def setWithDeleted(value: Boolean): Self = StObject.set(x, "withDeleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithDeletedUndefined: Self = StObject.set(x, "withDeleted", js.undefined)
+      inline def setWithDeletedUndefined: Self = StObject.set(x, "withDeleted", js.undefined)
     }
   }
 }

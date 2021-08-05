@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLBorder extends StObject
 object HTMLBorder {
   
-  @scala.inline
-  def HTMLBorderDialog: `4194304` = 4194304.asInstanceOf[`4194304`]
+  inline def HTMLBorderDialog: `4194304` = 4194304.asInstanceOf[`4194304`]
   
-  @scala.inline
-  def HTMLBorderNone: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLBorderNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLBorderThick: `262144` = 262144.asInstanceOf[`262144`]
+  inline def HTMLBorderThick: `262144` = 262144.asInstanceOf[`262144`]
   
-  @scala.inline
-  def HTMLBorderThin: `8388608` = 8388608.asInstanceOf[`8388608`]
+  inline def HTMLBorderThin: `8388608` = 8388608.asInstanceOf[`8388608`]
   
-  @scala.inline
-  def HTMLBorder_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTMLBorder_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

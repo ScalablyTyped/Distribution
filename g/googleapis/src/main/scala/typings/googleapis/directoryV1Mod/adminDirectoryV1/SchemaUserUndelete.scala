@@ -16,19 +16,15 @@ trait SchemaUserUndelete extends StObject {
 }
 object SchemaUserUndelete {
   
-  @scala.inline
-  def apply(): SchemaUserUndelete = {
+  inline def apply(): SchemaUserUndelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserUndelete]
   }
   
-  @scala.inline
-  implicit class SchemaUserUndeleteMutableBuilder[Self <: SchemaUserUndelete] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserUndelete](x: Self) {
     
-    @scala.inline
-    def setOrgUnitPath(value: String): Self = StObject.set(x, "orgUnitPath", value.asInstanceOf[js.Any])
+    inline def setOrgUnitPath(value: String): Self = StObject.set(x, "orgUnitPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgUnitPathUndefined: Self = StObject.set(x, "orgUnitPath", js.undefined)
+    inline def setOrgUnitPathUndefined: Self = StObject.set(x, "orgUnitPath", js.undefined)
   }
 }

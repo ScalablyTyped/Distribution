@@ -20,47 +20,34 @@ object Space {
   }
   object GetActivitiesParams {
     
-    @scala.inline
-    def apply(): GetActivitiesParams = {
+    inline def apply(): GetActivitiesParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetActivitiesParams]
     }
     
-    @scala.inline
-    implicit class GetActivitiesParamsMutableBuilder[Self <: GetActivitiesParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetActivitiesParams](x: Self) {
       
-      @scala.inline
-      def setActivityTypeId(value: js.Array[ActivityType]): Self = StObject.set(x, "activityTypeId", value.asInstanceOf[js.Any])
+      inline def setActivityTypeId(value: js.Array[ActivityType]): Self = StObject.set(x, "activityTypeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityTypeIdUndefined: Self = StObject.set(x, "activityTypeId", js.undefined)
+      inline def setActivityTypeIdUndefined: Self = StObject.set(x, "activityTypeId", js.undefined)
       
-      @scala.inline
-      def setActivityTypeIdVarargs(value: ActivityType*): Self = StObject.set(x, "activityTypeId", js.Array(value :_*))
+      inline def setActivityTypeIdVarargs(value: ActivityType*): Self = StObject.set(x, "activityTypeId", js.Array(value :_*))
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
+      inline def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxIdUndefined: Self = StObject.set(x, "maxId", js.undefined)
+      inline def setMaxIdUndefined: Self = StObject.set(x, "maxId", js.undefined)
       
-      @scala.inline
-      def setMinId(value: Double): Self = StObject.set(x, "minId", value.asInstanceOf[js.Any])
+      inline def setMinId(value: Double): Self = StObject.set(x, "minId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinIdUndefined: Self = StObject.set(x, "minId", js.undefined)
+      inline def setMinIdUndefined: Self = StObject.set(x, "minId", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -70,17 +57,14 @@ object Space {
   }
   object PutSpaceNotificationParams {
     
-    @scala.inline
-    def apply(content: String): PutSpaceNotificationParams = {
+    inline def apply(content: String): PutSpaceNotificationParams = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutSpaceNotificationParams]
     }
     
-    @scala.inline
-    implicit class PutSpaceNotificationParamsMutableBuilder[Self <: PutSpaceNotificationParams] (val x: Self) extends AnyVal {
+    extension [Self <: PutSpaceNotificationParams](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
   }
 }

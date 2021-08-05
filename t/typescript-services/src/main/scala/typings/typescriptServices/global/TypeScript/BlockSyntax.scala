@@ -98,10 +98,8 @@ object BlockSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.BlockSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openBraceToken.asInstanceOf[js.Any], closeBraceToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.BlockSyntax]
+  inline def create(openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.BlockSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openBraceToken.asInstanceOf[js.Any], closeBraceToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.BlockSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.BlockSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.BlockSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.BlockSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.BlockSyntax]
 }

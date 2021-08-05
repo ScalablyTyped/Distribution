@@ -11,22 +11,17 @@ trait GoogleCloudVisionV1p4beta1AsyncBatchAnnotateFilesResponse extends StObject
 }
 object GoogleCloudVisionV1p4beta1AsyncBatchAnnotateFilesResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1AsyncBatchAnnotateFilesResponse = {
+  inline def apply(): GoogleCloudVisionV1p4beta1AsyncBatchAnnotateFilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1AsyncBatchAnnotateFilesResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1AsyncBatchAnnotateFilesResponseMutableBuilder[Self <: GoogleCloudVisionV1p4beta1AsyncBatchAnnotateFilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1AsyncBatchAnnotateFilesResponse](x: Self) {
     
-    @scala.inline
-    def setResponses(value: js.Array[GoogleCloudVisionV1p4beta1AsyncAnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[GoogleCloudVisionV1p4beta1AsyncAnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: GoogleCloudVisionV1p4beta1AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: GoogleCloudVisionV1p4beta1AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

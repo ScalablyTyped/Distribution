@@ -20,19 +20,15 @@ trait TextDocumentPositionParams extends StObject {
 }
 object TextDocumentPositionParams {
   
-  @scala.inline
-  def apply(position: Position, textDocument: TextDocumentIdentifier): TextDocumentPositionParams = {
+  inline def apply(position: Position, textDocument: TextDocumentIdentifier): TextDocumentPositionParams = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDocumentPositionParams]
   }
   
-  @scala.inline
-  implicit class TextDocumentPositionParamsMutableBuilder[Self <: TextDocumentPositionParams] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentPositionParams](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

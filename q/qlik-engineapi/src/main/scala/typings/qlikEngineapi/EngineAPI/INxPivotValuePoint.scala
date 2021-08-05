@@ -47,31 +47,23 @@ trait INxPivotValuePoint extends StObject {
 }
 object INxPivotValuePoint {
   
-  @scala.inline
-  def apply(qAttrExps: INxAttributeExpressionValues, qNum: Double, qText: String, qType: NxCellType): INxPivotValuePoint = {
+  inline def apply(qAttrExps: INxAttributeExpressionValues, qNum: Double, qText: String, qType: NxCellType): INxPivotValuePoint = {
     val __obj = js.Dynamic.literal(qAttrExps = qAttrExps.asInstanceOf[js.Any], qNum = qNum.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxPivotValuePoint]
   }
   
-  @scala.inline
-  implicit class INxPivotValuePointMutableBuilder[Self <: INxPivotValuePoint] (val x: Self) extends AnyVal {
+  extension [Self <: INxPivotValuePoint](x: Self) {
     
-    @scala.inline
-    def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
+    inline def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
+    inline def setQLabel(value: String): Self = StObject.set(x, "qLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLabelUndefined: Self = StObject.set(x, "qLabel", js.undefined)
+    inline def setQLabelUndefined: Self = StObject.set(x, "qLabel", js.undefined)
     
-    @scala.inline
-    def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
+    inline def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: NxCellType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: NxCellType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

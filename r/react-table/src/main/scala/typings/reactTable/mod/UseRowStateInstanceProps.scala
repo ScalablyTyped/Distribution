@@ -12,8 +12,7 @@ trait UseRowStateInstanceProps[D /* <: js.Object */] extends StObject {
 }
 object UseRowStateInstanceProps {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](
+  inline def apply[D /* <: js.Object */](
     setCellState: (js.Array[String], IdType[D], UseRowUpdater[js.Any]) => Unit,
     setRowState: (js.Array[String], UseRowUpdater[js.Any]) => Unit
   ): UseRowStateInstanceProps[D] = {
@@ -21,13 +20,10 @@ object UseRowStateInstanceProps {
     __obj.asInstanceOf[UseRowStateInstanceProps[D]]
   }
   
-  @scala.inline
-  implicit class UseRowStateInstancePropsMutableBuilder[Self <: UseRowStateInstanceProps[?], D /* <: js.Object */] (val x: Self & UseRowStateInstanceProps[D]) extends AnyVal {
+  extension [Self <: UseRowStateInstanceProps[?], D /* <: js.Object */](x: Self & UseRowStateInstanceProps[D]) {
     
-    @scala.inline
-    def setSetCellState(value: (js.Array[String], IdType[D], UseRowUpdater[js.Any]) => Unit): Self = StObject.set(x, "setCellState", js.Any.fromFunction3(value))
+    inline def setSetCellState(value: (js.Array[String], IdType[D], UseRowUpdater[js.Any]) => Unit): Self = StObject.set(x, "setCellState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetRowState(value: (js.Array[String], UseRowUpdater[js.Any]) => Unit): Self = StObject.set(x, "setRowState", js.Any.fromFunction2(value))
+    inline def setSetRowState(value: (js.Array[String], UseRowUpdater[js.Any]) => Unit): Self = StObject.set(x, "setRowState", js.Any.fromFunction2(value))
   }
 }

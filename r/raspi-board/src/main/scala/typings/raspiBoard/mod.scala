@@ -65,21 +65,15 @@ object mod {
   @js.native
   val VERSION_UNKNOWN: /* "unknown" */ String = js.native
   
-  @scala.inline
-  def getBoardRevision(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoardRevision")().asInstanceOf[String]
+  inline def getBoardRevision(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoardRevision")().asInstanceOf[String]
   
-  @scala.inline
-  def getGpioNumber(alias: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getGpioNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
-  @scala.inline
-  def getGpioNumber(alias: Double): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getGpioNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  inline def getGpioNumber(alias: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getGpioNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  inline def getGpioNumber(alias: Double): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getGpioNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   
-  @scala.inline
-  def getPinNumber(alias: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPinNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
-  @scala.inline
-  def getPinNumber(alias: Double): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPinNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  inline def getPinNumber(alias: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPinNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  inline def getPinNumber(alias: Double): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPinNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   
-  @scala.inline
-  def getPins(): NumberDictionary[IRaspiPinInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPins")().asInstanceOf[NumberDictionary[IRaspiPinInfo]]
+  inline def getPins(): NumberDictionary[IRaspiPinInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPins")().asInstanceOf[NumberDictionary[IRaspiPinInfo]]
   
   trait IRaspiPinInfo
     extends StObject
@@ -89,17 +83,14 @@ object mod {
   }
   object IRaspiPinInfo {
     
-    @scala.inline
-    def apply(gpio: Double, peripherals: js.Array[PeripheralType], pins: js.Array[String]): IRaspiPinInfo = {
+    inline def apply(gpio: Double, peripherals: js.Array[PeripheralType], pins: js.Array[String]): IRaspiPinInfo = {
       val __obj = js.Dynamic.literal(gpio = gpio.asInstanceOf[js.Any], peripherals = peripherals.asInstanceOf[js.Any], pins = pins.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRaspiPinInfo]
     }
     
-    @scala.inline
-    implicit class IRaspiPinInfoMutableBuilder[Self <: IRaspiPinInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IRaspiPinInfo](x: Self) {
       
-      @scala.inline
-      def setGpio(value: Double): Self = StObject.set(x, "gpio", value.asInstanceOf[js.Any])
+      inline def setGpio(value: Double): Self = StObject.set(x, "gpio", value.asInstanceOf[js.Any])
     }
   }
 }

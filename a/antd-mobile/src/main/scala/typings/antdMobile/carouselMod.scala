@@ -25,8 +25,7 @@ object carouselMod {
     @JSImport("antd-mobile/lib/carousel", "default.defaultProps")
     @js.native
     def defaultProps: Arrows = js.native
-    @scala.inline
-    def defaultProps_=(x: Arrows): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Arrows): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -66,86 +65,60 @@ object carouselMod {
   }
   object CarouselProps {
     
-    @scala.inline
-    def apply(): CarouselProps = {
+    inline def apply(): CarouselProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CarouselProps]
     }
     
-    @scala.inline
-    implicit class CarouselPropsMutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselProps](x: Self) {
       
-      @scala.inline
-      def setAfterChange(value: /* current */ Double => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
+      inline def setAfterChange(value: /* current */ Double => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterChangeUndefined: Self = StObject.set(x, "afterChange", js.undefined)
+      inline def setAfterChangeUndefined: Self = StObject.set(x, "afterChange", js.undefined)
       
-      @scala.inline
-      def setBeforeChange(value: (/* from */ Double, /* to */ Double) => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction2(value))
+      inline def setBeforeChange(value: (/* from */ Double, /* to */ Double) => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeChangeUndefined: Self = StObject.set(x, "beforeChange", js.undefined)
+      inline def setBeforeChangeUndefined: Self = StObject.set(x, "beforeChange", js.undefined)
       
-      @scala.inline
-      def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
+      inline def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
+      inline def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDotActiveStyle(value: CSSProperties): Self = StObject.set(x, "dotActiveStyle", value.asInstanceOf[js.Any])
+      inline def setDotActiveStyle(value: CSSProperties): Self = StObject.set(x, "dotActiveStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotActiveStyleUndefined: Self = StObject.set(x, "dotActiveStyle", js.undefined)
+      inline def setDotActiveStyleUndefined: Self = StObject.set(x, "dotActiveStyle", js.undefined)
       
-      @scala.inline
-      def setDotStyle(value: CSSProperties): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
+      inline def setDotStyle(value: CSSProperties): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
+      inline def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
       
-      @scala.inline
-      def setEasing(value: () => Unit): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
+      inline def setEasing(value: () => Unit): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setFrameOverflow(value: IFrameOverFlow): Self = StObject.set(x, "frameOverflow", value.asInstanceOf[js.Any])
+      inline def setFrameOverflow(value: IFrameOverFlow): Self = StObject.set(x, "frameOverflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameOverflowUndefined: Self = StObject.set(x, "frameOverflow", js.undefined)
+      inline def setFrameOverflowUndefined: Self = StObject.set(x, "frameOverflow", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setSlideWidth(value: String | Double): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
+      inline def setSlideWidth(value: String | Double): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideWidthUndefined: Self = StObject.set(x, "slideWidth", js.undefined)
+      inline def setSlideWidthUndefined: Self = StObject.set(x, "slideWidth", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSwipeSpeed(value: Double): Self = StObject.set(x, "swipeSpeed", value.asInstanceOf[js.Any])
+      inline def setSwipeSpeed(value: Double): Self = StObject.set(x, "swipeSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeSpeedUndefined: Self = StObject.set(x, "swipeSpeed", js.undefined)
+      inline def setSwipeSpeedUndefined: Self = StObject.set(x, "swipeSpeed", js.undefined)
     }
   }
   
@@ -155,20 +128,16 @@ object carouselMod {
   }
   object CarouselState {
     
-    @scala.inline
-    def apply(): CarouselState = {
+    inline def apply(): CarouselState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CarouselState]
     }
     
-    @scala.inline
-    implicit class CarouselStateMutableBuilder[Self <: CarouselState] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselState](x: Self) {
       
-      @scala.inline
-      def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+      inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
     }
   }
   
@@ -179,10 +148,8 @@ object carouselMod {
   trait IFrameOverFlow extends StObject
   object IFrameOverFlow {
     
-    @scala.inline
-    def hidden: typings.antdMobile.antdMobileStrings.hidden = "hidden".asInstanceOf[typings.antdMobile.antdMobileStrings.hidden]
+    inline def hidden: typings.antdMobile.antdMobileStrings.hidden = "hidden".asInstanceOf[typings.antdMobile.antdMobileStrings.hidden]
     
-    @scala.inline
-    def visible: typings.antdMobile.antdMobileStrings.visible = "visible".asInstanceOf[typings.antdMobile.antdMobileStrings.visible]
+    inline def visible: typings.antdMobile.antdMobileStrings.visible = "visible".asInstanceOf[typings.antdMobile.antdMobileStrings.visible]
   }
 }

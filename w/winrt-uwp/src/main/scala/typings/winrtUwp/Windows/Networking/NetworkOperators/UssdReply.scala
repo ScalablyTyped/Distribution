@@ -15,19 +15,15 @@ trait UssdReply extends StObject {
 }
 object UssdReply {
   
-  @scala.inline
-  def apply(message: UssdMessage, resultCode: UssdResultCode): UssdReply = {
+  inline def apply(message: UssdMessage, resultCode: UssdResultCode): UssdReply = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UssdReply]
   }
   
-  @scala.inline
-  implicit class UssdReplyMutableBuilder[Self <: UssdReply] (val x: Self) extends AnyVal {
+  extension [Self <: UssdReply](x: Self) {
     
-    @scala.inline
-    def setMessage(value: UssdMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: UssdMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultCode(value: UssdResultCode): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
+    inline def setResultCode(value: UssdResultCode): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
   }
 }

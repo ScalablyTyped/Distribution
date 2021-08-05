@@ -23,34 +23,25 @@ trait FilterCondition extends StObject {
 }
 object FilterCondition {
   
-  @scala.inline
-  def apply(): FilterCondition = {
+  inline def apply(): FilterCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterCondition]
   }
   
-  @scala.inline
-  implicit class FilterConditionMutableBuilder[Self <: FilterCondition] (val x: Self) extends AnyVal {
+  extension [Self <: FilterCondition](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
+    inline def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
     
-    @scala.inline
-    def setField(value: FieldNameString): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldNameString): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "Field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "Field", js.undefined)
     
-    @scala.inline
-    def setStringValueList(value: StringValueList): Self = StObject.set(x, "StringValueList", value.asInstanceOf[js.Any])
+    inline def setStringValueList(value: StringValueList): Self = StObject.set(x, "StringValueList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueListUndefined: Self = StObject.set(x, "StringValueList", js.undefined)
+    inline def setStringValueListUndefined: Self = StObject.set(x, "StringValueList", js.undefined)
     
-    @scala.inline
-    def setStringValueListVarargs(value: StringValue*): Self = StObject.set(x, "StringValueList", js.Array(value :_*))
+    inline def setStringValueListVarargs(value: StringValue*): Self = StObject.set(x, "StringValueList", js.Array(value :_*))
   }
 }

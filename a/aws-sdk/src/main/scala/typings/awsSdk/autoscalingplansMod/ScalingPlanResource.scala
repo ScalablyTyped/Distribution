@@ -48,8 +48,7 @@ trait ScalingPlanResource extends StObject {
 }
 object ScalingPlanResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ResourceId: ResourceIdMaxLen1600,
     ScalableDimension: ScalableDimension,
     ScalingPlanName: ScalingPlanName,
@@ -61,40 +60,28 @@ object ScalingPlanResource {
     __obj.asInstanceOf[ScalingPlanResource]
   }
   
-  @scala.inline
-  implicit class ScalingPlanResourceMutableBuilder[Self <: ScalingPlanResource] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingPlanResource](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
+    inline def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
+    inline def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
+    inline def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPolicies(value: ScalingPolicies): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
+    inline def setScalingPolicies(value: ScalingPolicies): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
+    inline def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
     
-    @scala.inline
-    def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
+    inline def setScalingPoliciesVarargs(value: ScalingPolicy*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setScalingStatusCode(value: ScalingStatusCode): Self = StObject.set(x, "ScalingStatusCode", value.asInstanceOf[js.Any])
+    inline def setScalingStatusCode(value: ScalingStatusCode): Self = StObject.set(x, "ScalingStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingStatusMessage(value: XmlString): Self = StObject.set(x, "ScalingStatusMessage", value.asInstanceOf[js.Any])
+    inline def setScalingStatusMessage(value: XmlString): Self = StObject.set(x, "ScalingStatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingStatusMessageUndefined: Self = StObject.set(x, "ScalingStatusMessage", js.undefined)
+    inline def setScalingStatusMessageUndefined: Self = StObject.set(x, "ScalingStatusMessage", js.undefined)
     
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
   }
 }

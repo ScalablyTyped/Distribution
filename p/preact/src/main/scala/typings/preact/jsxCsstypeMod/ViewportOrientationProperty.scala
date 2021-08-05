@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewportOrientationProperty extends StObject
 object ViewportOrientationProperty {
   
-  @scala.inline
-  def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
+  inline def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
   
-  @scala.inline
-  def landscape: typings.preact.preactStrings.landscape = "landscape".asInstanceOf[typings.preact.preactStrings.landscape]
+  inline def landscape: typings.preact.preactStrings.landscape = "landscape".asInstanceOf[typings.preact.preactStrings.landscape]
   
-  @scala.inline
-  def portrait: typings.preact.preactStrings.portrait = "portrait".asInstanceOf[typings.preact.preactStrings.portrait]
+  inline def portrait: typings.preact.preactStrings.portrait = "portrait".asInstanceOf[typings.preact.preactStrings.portrait]
 }

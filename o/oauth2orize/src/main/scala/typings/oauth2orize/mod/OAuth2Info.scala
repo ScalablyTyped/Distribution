@@ -10,16 +10,13 @@ trait OAuth2Info extends StObject {
 }
 object OAuth2Info {
   
-  @scala.inline
-  def apply(scope: String): OAuth2Info = {
+  inline def apply(scope: String): OAuth2Info = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2Info]
   }
   
-  @scala.inline
-  implicit class OAuth2InfoMutableBuilder[Self <: OAuth2Info] (val x: Self) extends AnyVal {
+  extension [Self <: OAuth2Info](x: Self) {
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

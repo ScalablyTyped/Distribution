@@ -10,16 +10,13 @@ trait DeleteDomainAssociationResult extends StObject {
 }
 object DeleteDomainAssociationResult {
   
-  @scala.inline
-  def apply(domainAssociation: DomainAssociation): DeleteDomainAssociationResult = {
+  inline def apply(domainAssociation: DomainAssociation): DeleteDomainAssociationResult = {
     val __obj = js.Dynamic.literal(domainAssociation = domainAssociation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDomainAssociationResult]
   }
   
-  @scala.inline
-  implicit class DeleteDomainAssociationResultMutableBuilder[Self <: DeleteDomainAssociationResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDomainAssociationResult](x: Self) {
     
-    @scala.inline
-    def setDomainAssociation(value: DomainAssociation): Self = StObject.set(x, "domainAssociation", value.asInstanceOf[js.Any])
+    inline def setDomainAssociation(value: DomainAssociation): Self = StObject.set(x, "domainAssociation", value.asInstanceOf[js.Any])
   }
 }

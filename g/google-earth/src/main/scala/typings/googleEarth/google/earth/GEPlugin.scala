@@ -546,8 +546,7 @@ trait GEPlugin extends StObject {
 }
 object GEPlugin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ALTITUDE_ABSOLUTE: KmlAltitudeModeEnum,
     ALTITUDE_CLAMP_TO_GROUND: KmlAltitudeModeEnum,
     ALTITUDE_CLAMP_TO_SEA_FLOOR: KmlAltitudeModeEnum,
@@ -649,295 +648,198 @@ object GEPlugin {
     __obj.asInstanceOf[GEPlugin]
   }
   
-  @scala.inline
-  implicit class GEPluginMutableBuilder[Self <: GEPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: GEPlugin](x: Self) {
     
-    @scala.inline
-    def setALTITUDE_ABSOLUTE(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_ABSOLUTE", value.asInstanceOf[js.Any])
+    inline def setALTITUDE_ABSOLUTE(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_ABSOLUTE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setALTITUDE_CLAMP_TO_GROUND(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_CLAMP_TO_GROUND", value.asInstanceOf[js.Any])
+    inline def setALTITUDE_CLAMP_TO_GROUND(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_CLAMP_TO_GROUND", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setALTITUDE_CLAMP_TO_SEA_FLOOR(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_CLAMP_TO_SEA_FLOOR", value.asInstanceOf[js.Any])
+    inline def setALTITUDE_CLAMP_TO_SEA_FLOOR(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_CLAMP_TO_SEA_FLOOR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setALTITUDE_RELATIVE_TO_GROUND(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_RELATIVE_TO_GROUND", value.asInstanceOf[js.Any])
+    inline def setALTITUDE_RELATIVE_TO_GROUND(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_RELATIVE_TO_GROUND", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setALTITUDE_RELATIVE_TO_SEA_FLOOR(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_RELATIVE_TO_SEA_FLOOR", value.asInstanceOf[js.Any])
+    inline def setALTITUDE_RELATIVE_TO_SEA_FLOOR(value: KmlAltitudeModeEnum): Self = StObject.set(x, "ALTITUDE_RELATIVE_TO_SEA_FLOOR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOLOR_INHERIT(value: KmlColorModeEnum): Self = StObject.set(x, "COLOR_INHERIT", value.asInstanceOf[js.Any])
+    inline def setCOLOR_INHERIT(value: KmlColorModeEnum): Self = StObject.set(x, "COLOR_INHERIT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOLOR_NORMAL(value: KmlColorModeEnum): Self = StObject.set(x, "COLOR_NORMAL", value.asInstanceOf[js.Any])
+    inline def setCOLOR_NORMAL(value: KmlColorModeEnum): Self = StObject.set(x, "COLOR_NORMAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOLOR_RANDOM(value: KmlColorModeEnum): Self = StObject.set(x, "COLOR_RANDOM", value.asInstanceOf[js.Any])
+    inline def setCOLOR_RANDOM(value: KmlColorModeEnum): Self = StObject.set(x, "COLOR_RANDOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCamera(value: String => KmlCamera): Self = StObject.set(x, "createCamera", js.Any.fromFunction1(value))
+    inline def setCreateCamera(value: String => KmlCamera): Self = StObject.set(x, "createCamera", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDocument(value: String => KmlDocument): Self = StObject.set(x, "createDocument", js.Any.fromFunction1(value))
+    inline def setCreateDocument(value: String => KmlDocument): Self = StObject.set(x, "createDocument", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFeatureBalloon(value: String => GEFeatureBalloon): Self = StObject.set(x, "createFeatureBalloon", js.Any.fromFunction1(value))
+    inline def setCreateFeatureBalloon(value: String => GEFeatureBalloon): Self = StObject.set(x, "createFeatureBalloon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFolder(value: String => KmlFolder): Self = StObject.set(x, "createFolder", js.Any.fromFunction1(value))
+    inline def setCreateFolder(value: String => KmlFolder): Self = StObject.set(x, "createFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateGroundOverlay(value: String => KmlGroundOverlay): Self = StObject.set(x, "createGroundOverlay", js.Any.fromFunction1(value))
+    inline def setCreateGroundOverlay(value: String => KmlGroundOverlay): Self = StObject.set(x, "createGroundOverlay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateHtmlDivBalloon(value: String => GEHtmlDivBalloon): Self = StObject.set(x, "createHtmlDivBalloon", js.Any.fromFunction1(value))
+    inline def setCreateHtmlDivBalloon(value: String => GEHtmlDivBalloon): Self = StObject.set(x, "createHtmlDivBalloon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateHtmlStringBalloon(value: String => GEHtmlStringBalloon): Self = StObject.set(x, "createHtmlStringBalloon", js.Any.fromFunction1(value))
+    inline def setCreateHtmlStringBalloon(value: String => GEHtmlStringBalloon): Self = StObject.set(x, "createHtmlStringBalloon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateIcon(value: String => KmlIcon): Self = StObject.set(x, "createIcon", js.Any.fromFunction1(value))
+    inline def setCreateIcon(value: String => KmlIcon): Self = StObject.set(x, "createIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLatLonAltBox(value: String => KmlLatLonAltBox): Self = StObject.set(x, "createLatLonAltBox", js.Any.fromFunction1(value))
+    inline def setCreateLatLonAltBox(value: String => KmlLatLonAltBox): Self = StObject.set(x, "createLatLonAltBox", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLatLonBox(value: String => KmlLatLonBox): Self = StObject.set(x, "createLatLonBox", js.Any.fromFunction1(value))
+    inline def setCreateLatLonBox(value: String => KmlLatLonBox): Self = StObject.set(x, "createLatLonBox", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLineString(value: String => KmlLineString): Self = StObject.set(x, "createLineString", js.Any.fromFunction1(value))
+    inline def setCreateLineString(value: String => KmlLineString): Self = StObject.set(x, "createLineString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLinearRing(value: String => KmlLinearRing): Self = StObject.set(x, "createLinearRing", js.Any.fromFunction1(value))
+    inline def setCreateLinearRing(value: String => KmlLinearRing): Self = StObject.set(x, "createLinearRing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLink(value: String => KmlLink): Self = StObject.set(x, "createLink", js.Any.fromFunction1(value))
+    inline def setCreateLink(value: String => KmlLink): Self = StObject.set(x, "createLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLocation(value: String => KmlLocation): Self = StObject.set(x, "createLocation", js.Any.fromFunction1(value))
+    inline def setCreateLocation(value: String => KmlLocation): Self = StObject.set(x, "createLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLod(value: String => KmlLod): Self = StObject.set(x, "createLod", js.Any.fromFunction1(value))
+    inline def setCreateLod(value: String => KmlLod): Self = StObject.set(x, "createLod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLookAt(value: String => KmlLookAt): Self = StObject.set(x, "createLookAt", js.Any.fromFunction1(value))
+    inline def setCreateLookAt(value: String => KmlLookAt): Self = StObject.set(x, "createLookAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateModel(value: String => KmlModel): Self = StObject.set(x, "createModel", js.Any.fromFunction1(value))
+    inline def setCreateModel(value: String => KmlModel): Self = StObject.set(x, "createModel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateMultiGeometry(value: String => KmlMultiGeometry): Self = StObject.set(x, "createMultiGeometry", js.Any.fromFunction1(value))
+    inline def setCreateMultiGeometry(value: String => KmlMultiGeometry): Self = StObject.set(x, "createMultiGeometry", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateNetworkLink(value: String => KmlNetworkLink): Self = StObject.set(x, "createNetworkLink", js.Any.fromFunction1(value))
+    inline def setCreateNetworkLink(value: String => KmlNetworkLink): Self = StObject.set(x, "createNetworkLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateOrientation(value: String => KmlOrientation): Self = StObject.set(x, "createOrientation", js.Any.fromFunction1(value))
+    inline def setCreateOrientation(value: String => KmlOrientation): Self = StObject.set(x, "createOrientation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePlacemark(value: String => KmlPlacemark): Self = StObject.set(x, "createPlacemark", js.Any.fromFunction1(value))
+    inline def setCreatePlacemark(value: String => KmlPlacemark): Self = StObject.set(x, "createPlacemark", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePoint(value: String => KmlPoint): Self = StObject.set(x, "createPoint", js.Any.fromFunction1(value))
+    inline def setCreatePoint(value: String => KmlPoint): Self = StObject.set(x, "createPoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePolygon(value: String => KmlPolygon): Self = StObject.set(x, "createPolygon", js.Any.fromFunction1(value))
+    inline def setCreatePolygon(value: String => KmlPolygon): Self = StObject.set(x, "createPolygon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateRegion(value: String => KmlRegion): Self = StObject.set(x, "createRegion", js.Any.fromFunction1(value))
+    inline def setCreateRegion(value: String => KmlRegion): Self = StObject.set(x, "createRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateScale(value: String => KmlScale): Self = StObject.set(x, "createScale", js.Any.fromFunction1(value))
+    inline def setCreateScale(value: String => KmlScale): Self = StObject.set(x, "createScale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateScreenOverlay(value: String => KmlScreenOverlay): Self = StObject.set(x, "createScreenOverlay", js.Any.fromFunction1(value))
+    inline def setCreateScreenOverlay(value: String => KmlScreenOverlay): Self = StObject.set(x, "createScreenOverlay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateStyle(value: String => KmlStyle): Self = StObject.set(x, "createStyle", js.Any.fromFunction1(value))
+    inline def setCreateStyle(value: String => KmlStyle): Self = StObject.set(x, "createStyle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateStyleMap(value: String => KmlStyleMap): Self = StObject.set(x, "createStyleMap", js.Any.fromFunction1(value))
+    inline def setCreateStyleMap(value: String => KmlStyleMap): Self = StObject.set(x, "createStyleMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTimeSpan(value: String => KmlTimeSpan): Self = StObject.set(x, "createTimeSpan", js.Any.fromFunction1(value))
+    inline def setCreateTimeSpan(value: String => KmlTimeSpan): Self = StObject.set(x, "createTimeSpan", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTimeStamp(value: String => KmlTimeStamp): Self = StObject.set(x, "createTimeStamp", js.Any.fromFunction1(value))
+    inline def setCreateTimeStamp(value: String => KmlTimeStamp): Self = StObject.set(x, "createTimeStamp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateViewerOptions(value: String => KmlViewerOptions): Self = StObject.set(x, "createViewerOptions", js.Any.fromFunction1(value))
+    inline def setCreateViewerOptions(value: String => KmlViewerOptions): Self = StObject.set(x, "createViewerOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBalloon(value: () => GEAbstractBalloon): Self = StObject.set(x, "getBalloon", js.Any.fromFunction0(value))
+    inline def setGetBalloon(value: () => GEAbstractBalloon): Self = StObject.set(x, "getBalloon", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEarthVersion(value: () => String): Self = StObject.set(x, "getEarthVersion", js.Any.fromFunction0(value))
+    inline def setGetEarthVersion(value: () => String): Self = StObject.set(x, "getEarthVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetElementById(value: String => KmlObject): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
+    inline def setGetElementById(value: String => KmlObject): Self = StObject.set(x, "getElementById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementByUrl(value: String => KmlObject): Self = StObject.set(x, "getElementByUrl", js.Any.fromFunction1(value))
+    inline def setGetElementByUrl(value: String => KmlObject): Self = StObject.set(x, "getElementByUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetElementsByType(value: () => KmlObjectList[KmlObject]): Self = StObject.set(x, "getElementsByType", js.Any.fromFunction0(value))
+    inline def setGetElementsByType(value: () => KmlObjectList[KmlObject]): Self = StObject.set(x, "getElementsByType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFeatures(value: () => GEFeatureContainer): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
+    inline def setGetFeatures(value: () => GEFeatureContainer): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGlobe(value: () => GEGlobe): Self = StObject.set(x, "getGlobe", js.Any.fromFunction0(value))
+    inline def setGetGlobe(value: () => GEGlobe): Self = StObject.set(x, "getGlobe", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayerRoot(value: () => KmlLayerRoot): Self = StObject.set(x, "getLayerRoot", js.Any.fromFunction0(value))
+    inline def setGetLayerRoot(value: () => KmlLayerRoot): Self = StObject.set(x, "getLayerRoot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNavigationControl(value: () => GENavigationControl): Self = StObject.set(x, "getNavigationControl", js.Any.fromFunction0(value))
+    inline def setGetNavigationControl(value: () => GENavigationControl): Self = StObject.set(x, "getNavigationControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptions(value: () => GEOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+    inline def setGetOptions(value: () => GEOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPhotoOverlayViewer(value: () => GEPhotoOverlayViewer): Self = StObject.set(x, "getPhotoOverlayViewer", js.Any.fromFunction0(value))
+    inline def setGetPhotoOverlayViewer(value: () => GEPhotoOverlayViewer): Self = StObject.set(x, "getPhotoOverlayViewer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPluginVersion(value: () => String): Self = StObject.set(x, "getPluginVersion", js.Any.fromFunction0(value))
+    inline def setGetPluginVersion(value: () => String): Self = StObject.set(x, "getPluginVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStreamingPercent(value: () => Double): Self = StObject.set(x, "getStreamingPercent", js.Any.fromFunction0(value))
+    inline def setGetStreamingPercent(value: () => Double): Self = StObject.set(x, "getStreamingPercent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSun(value: () => GESun): Self = StObject.set(x, "getSun", js.Any.fromFunction0(value))
+    inline def setGetSun(value: () => GESun): Self = StObject.set(x, "getSun", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTime(value: () => GETime): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
+    inline def setGetTime(value: () => GETime): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTourPlayer(value: () => GETourPlayer): Self = StObject.set(x, "getTourPlayer", js.Any.fromFunction0(value))
+    inline def setGetTourPlayer(value: () => GETourPlayer): Self = StObject.set(x, "getTourPlayer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetView(value: () => GEView): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+    inline def setGetView(value: () => GEView): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWindow(value: () => GEWindow): Self = StObject.set(x, "getWindow", js.Any.fromFunction0(value))
+    inline def setGetWindow(value: () => GEWindow): Self = StObject.set(x, "getWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHIT_TEST_BUILDINGS(value: GEHitTestModeEnum): Self = StObject.set(x, "HIT_TEST_BUILDINGS", value.asInstanceOf[js.Any])
+    inline def setHIT_TEST_BUILDINGS(value: GEHitTestModeEnum): Self = StObject.set(x, "HIT_TEST_BUILDINGS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHIT_TEST_GLOBE(value: GEHitTestModeEnum): Self = StObject.set(x, "HIT_TEST_GLOBE", value.asInstanceOf[js.Any])
+    inline def setHIT_TEST_GLOBE(value: GEHitTestModeEnum): Self = StObject.set(x, "HIT_TEST_GLOBE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHIT_TEST_TERRAIN(value: GEHitTestModeEnum): Self = StObject.set(x, "HIT_TEST_TERRAIN", value.asInstanceOf[js.Any])
+    inline def setHIT_TEST_TERRAIN(value: GEHitTestModeEnum): Self = StObject.set(x, "HIT_TEST_TERRAIN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAYER_BORDERS(value: String): Self = StObject.set(x, "LAYER_BORDERS", value.asInstanceOf[js.Any])
+    inline def setLAYER_BORDERS(value: String): Self = StObject.set(x, "LAYER_BORDERS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAYER_BUILDINGS(value: String): Self = StObject.set(x, "LAYER_BUILDINGS", value.asInstanceOf[js.Any])
+    inline def setLAYER_BUILDINGS(value: String): Self = StObject.set(x, "LAYER_BUILDINGS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAYER_BUILDINGS_LOW_RESOLUTION(value: String): Self = StObject.set(x, "LAYER_BUILDINGS_LOW_RESOLUTION", value.asInstanceOf[js.Any])
+    inline def setLAYER_BUILDINGS_LOW_RESOLUTION(value: String): Self = StObject.set(x, "LAYER_BUILDINGS_LOW_RESOLUTION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAYER_ROADS(value: String): Self = StObject.set(x, "LAYER_ROADS", value.asInstanceOf[js.Any])
+    inline def setLAYER_ROADS(value: String): Self = StObject.set(x, "LAYER_ROADS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAYER_TERRAIN(value: String): Self = StObject.set(x, "LAYER_TERRAIN", value.asInstanceOf[js.Any])
+    inline def setLAYER_TERRAIN(value: String): Self = StObject.set(x, "LAYER_TERRAIN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLAYER_TREES(value: String): Self = StObject.set(x, "LAYER_TREES", value.asInstanceOf[js.Any])
+    inline def setLAYER_TREES(value: String): Self = StObject.set(x, "LAYER_TREES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLIST_ITEM_CHECK(value: KmlListItemTypeEnum): Self = StObject.set(x, "LIST_ITEM_CHECK", value.asInstanceOf[js.Any])
+    inline def setLIST_ITEM_CHECK(value: KmlListItemTypeEnum): Self = StObject.set(x, "LIST_ITEM_CHECK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLIST_ITEM_CHECK_HIDE_CHILDREN(value: KmlListItemTypeEnum): Self = StObject.set(x, "LIST_ITEM_CHECK_HIDE_CHILDREN", value.asInstanceOf[js.Any])
+    inline def setLIST_ITEM_CHECK_HIDE_CHILDREN(value: KmlListItemTypeEnum): Self = StObject.set(x, "LIST_ITEM_CHECK_HIDE_CHILDREN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLIST_ITEM_CHECK_OFF_ONLY(value: KmlListItemTypeEnum): Self = StObject.set(x, "LIST_ITEM_CHECK_OFF_ONLY", value.asInstanceOf[js.Any])
+    inline def setLIST_ITEM_CHECK_OFF_ONLY(value: KmlListItemTypeEnum): Self = StObject.set(x, "LIST_ITEM_CHECK_OFF_ONLY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLIST_ITEM_RADIO_FOLDER(value: KmlListItemTypeEnum): Self = StObject.set(x, "LIST_ITEM_RADIO_FOLDER", value.asInstanceOf[js.Any])
+    inline def setLIST_ITEM_RADIO_FOLDER(value: KmlListItemTypeEnum): Self = StObject.set(x, "LIST_ITEM_RADIO_FOLDER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAP_TYPE_EARTH(value: GEMapTypeEnum): Self = StObject.set(x, "MAP_TYPE_EARTH", value.asInstanceOf[js.Any])
+    inline def setMAP_TYPE_EARTH(value: GEMapTypeEnum): Self = StObject.set(x, "MAP_TYPE_EARTH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAP_TYPE_SKY(value: GEMapTypeEnum): Self = StObject.set(x, "MAP_TYPE_SKY", value.asInstanceOf[js.Any])
+    inline def setMAP_TYPE_SKY(value: GEMapTypeEnum): Self = StObject.set(x, "MAP_TYPE_SKY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNAVIGATION_CONTROL_LARGE(value: GENavigationControlEnum): Self = StObject.set(x, "NAVIGATION_CONTROL_LARGE", value.asInstanceOf[js.Any])
+    inline def setNAVIGATION_CONTROL_LARGE(value: GENavigationControlEnum): Self = StObject.set(x, "NAVIGATION_CONTROL_LARGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNAVIGATION_CONTROL_SMALL(value: GENavigationControlEnum): Self = StObject.set(x, "NAVIGATION_CONTROL_SMALL", value.asInstanceOf[js.Any])
+    inline def setNAVIGATION_CONTROL_SMALL(value: GENavigationControlEnum): Self = StObject.set(x, "NAVIGATION_CONTROL_SMALL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPTION_HISTORICAL_IMAGERY(value: GEViewerOptionsTypeEnum): Self = StObject.set(x, "OPTION_HISTORICAL_IMAGERY", value.asInstanceOf[js.Any])
+    inline def setOPTION_HISTORICAL_IMAGERY(value: GEViewerOptionsTypeEnum): Self = StObject.set(x, "OPTION_HISTORICAL_IMAGERY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPTION_STATE_DEFAULT(value: GEViewerOptionsValueEnum): Self = StObject.set(x, "OPTION_STATE_DEFAULT", value.asInstanceOf[js.Any])
+    inline def setOPTION_STATE_DEFAULT(value: GEViewerOptionsValueEnum): Self = StObject.set(x, "OPTION_STATE_DEFAULT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPTION_STATE_DISABLED(value: GEViewerOptionsValueEnum): Self = StObject.set(x, "OPTION_STATE_DISABLED", value.asInstanceOf[js.Any])
+    inline def setOPTION_STATE_DISABLED(value: GEViewerOptionsValueEnum): Self = StObject.set(x, "OPTION_STATE_DISABLED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPTION_STATE_ENABLED(value: GEViewerOptionsValueEnum): Self = StObject.set(x, "OPTION_STATE_ENABLED", value.asInstanceOf[js.Any])
+    inline def setOPTION_STATE_ENABLED(value: GEViewerOptionsValueEnum): Self = StObject.set(x, "OPTION_STATE_ENABLED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPTION_STREET_VIEW(value: GEViewerOptionsTypeEnum): Self = StObject.set(x, "OPTION_STREET_VIEW", value.asInstanceOf[js.Any])
+    inline def setOPTION_STREET_VIEW(value: GEViewerOptionsTypeEnum): Self = StObject.set(x, "OPTION_STREET_VIEW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPTION_SUNLIGHT(value: GEViewerOptionsTypeEnum): Self = StObject.set(x, "OPTION_SUNLIGHT", value.asInstanceOf[js.Any])
+    inline def setOPTION_SUNLIGHT(value: GEViewerOptionsTypeEnum): Self = StObject.set(x, "OPTION_SUNLIGHT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseKml(value: String => KmlObject): Self = StObject.set(x, "parseKml", js.Any.fromFunction1(value))
+    inline def setParseKml(value: String => KmlObject): Self = StObject.set(x, "parseKml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setREFRESH_ON_CHANGE(value: KmlRefreshModeEnum): Self = StObject.set(x, "REFRESH_ON_CHANGE", value.asInstanceOf[js.Any])
+    inline def setREFRESH_ON_CHANGE(value: KmlRefreshModeEnum): Self = StObject.set(x, "REFRESH_ON_CHANGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREFRESH_ON_EXPIRE(value: KmlRefreshModeEnum): Self = StObject.set(x, "REFRESH_ON_EXPIRE", value.asInstanceOf[js.Any])
+    inline def setREFRESH_ON_EXPIRE(value: KmlRefreshModeEnum): Self = StObject.set(x, "REFRESH_ON_EXPIRE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREFRESH_ON_INTERVAL(value: KmlRefreshModeEnum): Self = StObject.set(x, "REFRESH_ON_INTERVAL", value.asInstanceOf[js.Any])
+    inline def setREFRESH_ON_INTERVAL(value: KmlRefreshModeEnum): Self = StObject.set(x, "REFRESH_ON_INTERVAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSPEED_TELEPORT(value: Double): Self = StObject.set(x, "SPEED_TELEPORT", value.asInstanceOf[js.Any])
+    inline def setSPEED_TELEPORT(value: Double): Self = StObject.set(x, "SPEED_TELEPORT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetBalloon(value: GEAbstractBalloon => Unit): Self = StObject.set(x, "setBalloon", js.Any.fromFunction1(value))
+    inline def setSetBalloon(value: GEAbstractBalloon => Unit): Self = StObject.set(x, "setBalloon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUNITS_FRACTION(value: KmlUnitsEnum): Self = StObject.set(x, "UNITS_FRACTION", value.asInstanceOf[js.Any])
+    inline def setUNITS_FRACTION(value: KmlUnitsEnum): Self = StObject.set(x, "UNITS_FRACTION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNITS_INSET_PIXELS(value: KmlUnitsEnum): Self = StObject.set(x, "UNITS_INSET_PIXELS", value.asInstanceOf[js.Any])
+    inline def setUNITS_INSET_PIXELS(value: KmlUnitsEnum): Self = StObject.set(x, "UNITS_INSET_PIXELS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNITS_PIXELS(value: KmlUnitsEnum): Self = StObject.set(x, "UNITS_PIXELS", value.asInstanceOf[js.Any])
+    inline def setUNITS_PIXELS(value: KmlUnitsEnum): Self = StObject.set(x, "UNITS_PIXELS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVIEW_REFRESH_NEVER(value: KmlViewRefreshModeEnum): Self = StObject.set(x, "VIEW_REFRESH_NEVER", value.asInstanceOf[js.Any])
+    inline def setVIEW_REFRESH_NEVER(value: KmlViewRefreshModeEnum): Self = StObject.set(x, "VIEW_REFRESH_NEVER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVIEW_REFRESH_ON_REGION(value: KmlViewRefreshModeEnum): Self = StObject.set(x, "VIEW_REFRESH_ON_REGION", value.asInstanceOf[js.Any])
+    inline def setVIEW_REFRESH_ON_REGION(value: KmlViewRefreshModeEnum): Self = StObject.set(x, "VIEW_REFRESH_ON_REGION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVIEW_REFRESH_ON_REQUEST(value: KmlViewRefreshModeEnum): Self = StObject.set(x, "VIEW_REFRESH_ON_REQUEST", value.asInstanceOf[js.Any])
+    inline def setVIEW_REFRESH_ON_REQUEST(value: KmlViewRefreshModeEnum): Self = StObject.set(x, "VIEW_REFRESH_ON_REQUEST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVIEW_REFRESH_ON_STOP(value: KmlViewRefreshModeEnum): Self = StObject.set(x, "VIEW_REFRESH_ON_STOP", value.asInstanceOf[js.Any])
+    inline def setVIEW_REFRESH_ON_STOP(value: KmlViewRefreshModeEnum): Self = StObject.set(x, "VIEW_REFRESH_ON_STOP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVISIBILITY_AUTO(value: GEVisibilityEnum): Self = StObject.set(x, "VISIBILITY_AUTO", value.asInstanceOf[js.Any])
+    inline def setVISIBILITY_AUTO(value: GEVisibilityEnum): Self = StObject.set(x, "VISIBILITY_AUTO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVISIBILITY_HIDE(value: GEVisibilityEnum): Self = StObject.set(x, "VISIBILITY_HIDE", value.asInstanceOf[js.Any])
+    inline def setVISIBILITY_HIDE(value: GEVisibilityEnum): Self = StObject.set(x, "VISIBILITY_HIDE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVISIBILITY_SHOW(value: GEVisibilityEnum): Self = StObject.set(x, "VISIBILITY_SHOW", value.asInstanceOf[js.Any])
+    inline def setVISIBILITY_SHOW(value: GEVisibilityEnum): Self = StObject.set(x, "VISIBILITY_SHOW", value.asInstanceOf[js.Any])
   }
 }

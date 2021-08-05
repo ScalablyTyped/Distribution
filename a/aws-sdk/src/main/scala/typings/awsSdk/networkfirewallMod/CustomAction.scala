@@ -18,19 +18,15 @@ trait CustomAction extends StObject {
 }
 object CustomAction {
   
-  @scala.inline
-  def apply(ActionDefinition: ActionDefinition, ActionName: ActionName): CustomAction = {
+  inline def apply(ActionDefinition: ActionDefinition, ActionName: ActionName): CustomAction = {
     val __obj = js.Dynamic.literal(ActionDefinition = ActionDefinition.asInstanceOf[js.Any], ActionName = ActionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomAction]
   }
   
-  @scala.inline
-  implicit class CustomActionMutableBuilder[Self <: CustomAction] (val x: Self) extends AnyVal {
+  extension [Self <: CustomAction](x: Self) {
     
-    @scala.inline
-    def setActionDefinition(value: ActionDefinition): Self = StObject.set(x, "ActionDefinition", value.asInstanceOf[js.Any])
+    inline def setActionDefinition(value: ActionDefinition): Self = StObject.set(x, "ActionDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionName(value: ActionName): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: ActionName): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
   }
 }

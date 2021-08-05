@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Role extends StObject
 object Role {
   
-  @scala.inline
-  def anchor: typings.trtcJsSdk.trtcJsSdkStrings.anchor = "anchor".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.anchor]
+  inline def anchor: typings.trtcJsSdk.trtcJsSdkStrings.anchor = "anchor".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.anchor]
   
-  @scala.inline
-  def audience: typings.trtcJsSdk.trtcJsSdkStrings.audience = "audience".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.audience]
+  inline def audience: typings.trtcJsSdk.trtcJsSdkStrings.audience = "audience".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.audience]
 }

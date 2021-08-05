@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.FormDescription")
 @js.native
-class FormDescription protected ()
+/* private */ class FormDescription ()
   extends StObject
      with typings.activexOutlook.Outlook.FormDescription

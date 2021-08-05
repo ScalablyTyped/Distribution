@@ -13,16 +13,13 @@ trait GetLogRecordRequest extends StObject {
 }
 object GetLogRecordRequest {
   
-  @scala.inline
-  def apply(logRecordPointer: LogRecordPointer): GetLogRecordRequest = {
+  inline def apply(logRecordPointer: LogRecordPointer): GetLogRecordRequest = {
     val __obj = js.Dynamic.literal(logRecordPointer = logRecordPointer.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLogRecordRequest]
   }
   
-  @scala.inline
-  implicit class GetLogRecordRequestMutableBuilder[Self <: GetLogRecordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetLogRecordRequest](x: Self) {
     
-    @scala.inline
-    def setLogRecordPointer(value: LogRecordPointer): Self = StObject.set(x, "logRecordPointer", value.asInstanceOf[js.Any])
+    inline def setLogRecordPointer(value: LogRecordPointer): Self = StObject.set(x, "logRecordPointer", value.asInstanceOf[js.Any])
   }
 }

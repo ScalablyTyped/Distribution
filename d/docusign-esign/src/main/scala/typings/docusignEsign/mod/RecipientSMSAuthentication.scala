@@ -18,28 +18,21 @@ trait RecipientSMSAuthentication extends StObject {
 }
 object RecipientSMSAuthentication {
   
-  @scala.inline
-  def apply(): RecipientSMSAuthentication = {
+  inline def apply(): RecipientSMSAuthentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientSMSAuthentication]
   }
   
-  @scala.inline
-  implicit class RecipientSMSAuthenticationMutableBuilder[Self <: RecipientSMSAuthentication] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientSMSAuthentication](x: Self) {
     
-    @scala.inline
-    def setSenderProvidedNumbers(value: js.Array[String]): Self = StObject.set(x, "senderProvidedNumbers", value.asInstanceOf[js.Any])
+    inline def setSenderProvidedNumbers(value: js.Array[String]): Self = StObject.set(x, "senderProvidedNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderProvidedNumbersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "senderProvidedNumbersMetadata", value.asInstanceOf[js.Any])
+    inline def setSenderProvidedNumbersMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "senderProvidedNumbersMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderProvidedNumbersMetadataUndefined: Self = StObject.set(x, "senderProvidedNumbersMetadata", js.undefined)
+    inline def setSenderProvidedNumbersMetadataUndefined: Self = StObject.set(x, "senderProvidedNumbersMetadata", js.undefined)
     
-    @scala.inline
-    def setSenderProvidedNumbersUndefined: Self = StObject.set(x, "senderProvidedNumbers", js.undefined)
+    inline def setSenderProvidedNumbersUndefined: Self = StObject.set(x, "senderProvidedNumbers", js.undefined)
     
-    @scala.inline
-    def setSenderProvidedNumbersVarargs(value: String*): Self = StObject.set(x, "senderProvidedNumbers", js.Array(value :_*))
+    inline def setSenderProvidedNumbersVarargs(value: String*): Self = StObject.set(x, "senderProvidedNumbers", js.Array(value :_*))
   }
 }

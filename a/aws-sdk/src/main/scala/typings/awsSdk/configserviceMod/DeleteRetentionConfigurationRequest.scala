@@ -13,16 +13,13 @@ trait DeleteRetentionConfigurationRequest extends StObject {
 }
 object DeleteRetentionConfigurationRequest {
   
-  @scala.inline
-  def apply(RetentionConfigurationName: RetentionConfigurationName): DeleteRetentionConfigurationRequest = {
+  inline def apply(RetentionConfigurationName: RetentionConfigurationName): DeleteRetentionConfigurationRequest = {
     val __obj = js.Dynamic.literal(RetentionConfigurationName = RetentionConfigurationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRetentionConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRetentionConfigurationRequestMutableBuilder[Self <: DeleteRetentionConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRetentionConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setRetentionConfigurationName(value: RetentionConfigurationName): Self = StObject.set(x, "RetentionConfigurationName", value.asInstanceOf[js.Any])
+    inline def setRetentionConfigurationName(value: RetentionConfigurationName): Self = StObject.set(x, "RetentionConfigurationName", value.asInstanceOf[js.Any])
   }
 }

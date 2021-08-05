@@ -24,8 +24,7 @@ trait FlashEdge extends StObject {
 }
 object FlashEdge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cubicSegmentIndex: Double,
     getControl: Double => FlashPoint,
     getHalfEdge: Double => FlashHalfEdge,
@@ -39,31 +38,22 @@ object FlashEdge {
     __obj.asInstanceOf[FlashEdge]
   }
   
-  @scala.inline
-  implicit class FlashEdgeMutableBuilder[Self <: FlashEdge] (val x: Self) extends AnyVal {
+  extension [Self <: FlashEdge](x: Self) {
     
-    @scala.inline
-    def setCubicSegmentIndex(value: Double): Self = StObject.set(x, "cubicSegmentIndex", value.asInstanceOf[js.Any])
+    inline def setCubicSegmentIndex(value: Double): Self = StObject.set(x, "cubicSegmentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetControl(value: Double => FlashPoint): Self = StObject.set(x, "getControl", js.Any.fromFunction1(value))
+    inline def setGetControl(value: Double => FlashPoint): Self = StObject.set(x, "getControl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHalfEdge(value: Double => FlashHalfEdge): Self = StObject.set(x, "getHalfEdge", js.Any.fromFunction1(value))
+    inline def setGetHalfEdge(value: Double => FlashHalfEdge): Self = StObject.set(x, "getHalfEdge", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLine(value: Boolean): Self = StObject.set(x, "isLine", value.asInstanceOf[js.Any])
+    inline def setIsLine(value: Boolean): Self = StObject.set(x, "isLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetControl(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction3(value))
+    inline def setSetControl(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSplitEdge(value: Double => Unit): Self = StObject.set(x, "splitEdge", js.Any.fromFunction1(value))
+    inline def setSplitEdge(value: Double => Unit): Self = StObject.set(x, "splitEdge", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStroke(value: FlashStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: FlashStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
   }
 }

@@ -47,8 +47,7 @@ object Matrix {
   @JSImport("pixi.js", "Matrix.IDENTITY")
   @js.native
   def IDENTITY: typings.pixiJs.PIXI.Matrix = js.native
-  @scala.inline
-  def IDENTITY_=(x: typings.pixiJs.PIXI.Matrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY")(x.asInstanceOf[js.Any])
+  inline def IDENTITY_=(x: typings.pixiJs.PIXI.Matrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY")(x.asInstanceOf[js.Any])
   
   /**
     * A temp matrix
@@ -61,6 +60,5 @@ object Matrix {
   @JSImport("pixi.js", "Matrix.TEMP_MATRIX")
   @js.native
   def TEMP_MATRIX: typings.pixiJs.PIXI.Matrix = js.native
-  @scala.inline
-  def TEMP_MATRIX_=(x: typings.pixiJs.PIXI.Matrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMP_MATRIX")(x.asInstanceOf[js.Any])
+  inline def TEMP_MATRIX_=(x: typings.pixiJs.PIXI.Matrix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMP_MATRIX")(x.asInstanceOf[js.Any])
 }

@@ -22,19 +22,15 @@ trait ILoginStatus extends StObject {
 }
 object ILoginStatus {
   
-  @scala.inline
-  def apply(session: ISession, status: String): ILoginStatus = {
+  inline def apply(session: ISession, status: String): ILoginStatus = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoginStatus]
   }
   
-  @scala.inline
-  implicit class ILoginStatusMutableBuilder[Self <: ILoginStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ILoginStatus](x: Self) {
     
-    @scala.inline
-    def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

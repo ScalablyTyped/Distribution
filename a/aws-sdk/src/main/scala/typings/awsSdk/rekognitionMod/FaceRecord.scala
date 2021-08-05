@@ -18,25 +18,19 @@ trait FaceRecord extends StObject {
 }
 object FaceRecord {
   
-  @scala.inline
-  def apply(): FaceRecord = {
+  inline def apply(): FaceRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FaceRecord]
   }
   
-  @scala.inline
-  implicit class FaceRecordMutableBuilder[Self <: FaceRecord] (val x: Self) extends AnyVal {
+  extension [Self <: FaceRecord](x: Self) {
     
-    @scala.inline
-    def setFace(value: Face): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
+    inline def setFace(value: Face): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceDetail(value: FaceDetail): Self = StObject.set(x, "FaceDetail", value.asInstanceOf[js.Any])
+    inline def setFaceDetail(value: FaceDetail): Self = StObject.set(x, "FaceDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceDetailUndefined: Self = StObject.set(x, "FaceDetail", js.undefined)
+    inline def setFaceDetailUndefined: Self = StObject.set(x, "FaceDetail", js.undefined)
     
-    @scala.inline
-    def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
+    inline def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
   }
 }

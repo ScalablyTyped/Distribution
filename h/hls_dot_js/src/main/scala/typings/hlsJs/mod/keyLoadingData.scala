@@ -11,16 +11,13 @@ trait keyLoadingData extends StObject {
 }
 object keyLoadingData {
   
-  @scala.inline
-  def apply(frag: Fragment): keyLoadingData = {
+  inline def apply(frag: Fragment): keyLoadingData = {
     val __obj = js.Dynamic.literal(frag = frag.asInstanceOf[js.Any])
     __obj.asInstanceOf[keyLoadingData]
   }
   
-  @scala.inline
-  implicit class keyLoadingDataMutableBuilder[Self <: keyLoadingData] (val x: Self) extends AnyVal {
+  extension [Self <: keyLoadingData](x: Self) {
     
-    @scala.inline
-    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
+    inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
   }
 }

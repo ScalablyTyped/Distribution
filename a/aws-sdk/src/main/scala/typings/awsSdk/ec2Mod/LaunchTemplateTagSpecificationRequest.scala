@@ -18,28 +18,21 @@ trait LaunchTemplateTagSpecificationRequest extends StObject {
 }
 object LaunchTemplateTagSpecificationRequest {
   
-  @scala.inline
-  def apply(): LaunchTemplateTagSpecificationRequest = {
+  inline def apply(): LaunchTemplateTagSpecificationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateTagSpecificationRequest]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateTagSpecificationRequestMutableBuilder[Self <: LaunchTemplateTagSpecificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateTagSpecificationRequest](x: Self) {
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

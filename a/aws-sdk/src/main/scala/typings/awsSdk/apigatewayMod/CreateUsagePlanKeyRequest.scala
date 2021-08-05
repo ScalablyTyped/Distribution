@@ -23,22 +23,17 @@ trait CreateUsagePlanKeyRequest extends StObject {
 }
 object CreateUsagePlanKeyRequest {
   
-  @scala.inline
-  def apply(keyId: String, keyType: String, usagePlanId: String): CreateUsagePlanKeyRequest = {
+  inline def apply(keyId: String, keyType: String, usagePlanId: String): CreateUsagePlanKeyRequest = {
     val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any], keyType = keyType.asInstanceOf[js.Any], usagePlanId = usagePlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUsagePlanKeyRequest]
   }
   
-  @scala.inline
-  implicit class CreateUsagePlanKeyRequestMutableBuilder[Self <: CreateUsagePlanKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUsagePlanKeyRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
+    inline def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
   }
 }

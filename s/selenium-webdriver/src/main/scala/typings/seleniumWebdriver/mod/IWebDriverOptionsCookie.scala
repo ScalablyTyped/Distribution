@@ -56,49 +56,35 @@ trait IWebDriverOptionsCookie extends StObject {
 }
 object IWebDriverOptionsCookie {
   
-  @scala.inline
-  def apply(name: String, value: String): IWebDriverOptionsCookie = {
+  inline def apply(name: String, value: String): IWebDriverOptionsCookie = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebDriverOptionsCookie]
   }
   
-  @scala.inline
-  implicit class IWebDriverOptionsCookieMutableBuilder[Self <: IWebDriverOptionsCookie] (val x: Self) extends AnyVal {
+  extension [Self <: IWebDriverOptionsCookie](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setExpiry(value: Double | Date): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: Double | Date): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+    inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
     
-    @scala.inline
-    def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+    inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+    inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

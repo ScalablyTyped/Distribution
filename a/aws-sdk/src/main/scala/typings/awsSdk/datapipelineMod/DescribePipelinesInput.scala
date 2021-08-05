@@ -13,19 +13,15 @@ trait DescribePipelinesInput extends StObject {
 }
 object DescribePipelinesInput {
   
-  @scala.inline
-  def apply(pipelineIds: idList): DescribePipelinesInput = {
+  inline def apply(pipelineIds: idList): DescribePipelinesInput = {
     val __obj = js.Dynamic.literal(pipelineIds = pipelineIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePipelinesInput]
   }
   
-  @scala.inline
-  implicit class DescribePipelinesInputMutableBuilder[Self <: DescribePipelinesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePipelinesInput](x: Self) {
     
-    @scala.inline
-    def setPipelineIds(value: idList): Self = StObject.set(x, "pipelineIds", value.asInstanceOf[js.Any])
+    inline def setPipelineIds(value: idList): Self = StObject.set(x, "pipelineIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineIdsVarargs(value: id*): Self = StObject.set(x, "pipelineIds", js.Array(value :_*))
+    inline def setPipelineIdsVarargs(value: id*): Self = StObject.set(x, "pipelineIds", js.Array(value :_*))
   }
 }

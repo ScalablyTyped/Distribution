@@ -12,16 +12,13 @@ trait MediaSourceOpenOperationCompletedEventArgs extends StObject {
 }
 object MediaSourceOpenOperationCompletedEventArgs {
   
-  @scala.inline
-  def apply(error: MediaSourceError): MediaSourceOpenOperationCompletedEventArgs = {
+  inline def apply(error: MediaSourceError): MediaSourceOpenOperationCompletedEventArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaSourceOpenOperationCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaSourceOpenOperationCompletedEventArgsMutableBuilder[Self <: MediaSourceOpenOperationCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaSourceOpenOperationCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: MediaSourceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: MediaSourceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

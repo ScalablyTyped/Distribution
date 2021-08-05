@@ -10,16 +10,13 @@ trait locale extends StObject {
 }
 object locale {
   
-  @scala.inline
-  def apply(pager: js.Any): locale = {
+  inline def apply(pager: js.Any): locale = {
     val __obj = js.Dynamic.literal(pager = pager.asInstanceOf[js.Any])
     __obj.asInstanceOf[locale]
   }
   
-  @scala.inline
-  implicit class localeMutableBuilder[Self <: locale] (val x: Self) extends AnyVal {
+  extension [Self <: locale](x: Self) {
     
-    @scala.inline
-    def setPager(value: js.Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    inline def setPager(value: js.Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
   }
 }

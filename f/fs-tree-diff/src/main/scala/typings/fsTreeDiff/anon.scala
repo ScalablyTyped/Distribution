@@ -15,29 +15,22 @@ object anon {
   }
   object Entries {
     
-    @scala.inline
-    def apply[T /* <: BaseEntry */](): Entries[T] = {
+    inline def apply[T /* <: BaseEntry */](): Entries[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Entries[T]]
     }
     
-    @scala.inline
-    implicit class EntriesMutableBuilder[Self <: Entries[?], T /* <: BaseEntry */] (val x: Self & Entries[T]) extends AnyVal {
+    extension [Self <: Entries[?], T /* <: BaseEntry */](x: Self & Entries[T]) {
       
-      @scala.inline
-      def setEntries(value: js.Array[T]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[T]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+      inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      @scala.inline
-      def setEntriesVarargs(value: T*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: T*): Self = StObject.set(x, "entries", js.Array(value :_*))
       
-      @scala.inline
-      def setSortAndExpand(value: Boolean): Self = StObject.set(x, "sortAndExpand", value.asInstanceOf[js.Any])
+      inline def setSortAndExpand(value: Boolean): Self = StObject.set(x, "sortAndExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAndExpandUndefined: Self = StObject.set(x, "sortAndExpand", js.undefined)
+      inline def setSortAndExpandUndefined: Self = StObject.set(x, "sortAndExpand", js.undefined)
     }
   }
 }

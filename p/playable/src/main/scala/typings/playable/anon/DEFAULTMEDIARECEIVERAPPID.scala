@@ -10,16 +10,13 @@ trait DEFAULTMEDIARECEIVERAPPID extends StObject {
 }
 object DEFAULTMEDIARECEIVERAPPID {
   
-  @scala.inline
-  def apply(DEFAULT_MEDIA_RECEIVER_APP_ID: String): DEFAULTMEDIARECEIVERAPPID = {
+  inline def apply(DEFAULT_MEDIA_RECEIVER_APP_ID: String): DEFAULTMEDIARECEIVERAPPID = {
     val __obj = js.Dynamic.literal(DEFAULT_MEDIA_RECEIVER_APP_ID = DEFAULT_MEDIA_RECEIVER_APP_ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[DEFAULTMEDIARECEIVERAPPID]
   }
   
-  @scala.inline
-  implicit class DEFAULTMEDIARECEIVERAPPIDMutableBuilder[Self <: DEFAULTMEDIARECEIVERAPPID] (val x: Self) extends AnyVal {
+  extension [Self <: DEFAULTMEDIARECEIVERAPPID](x: Self) {
     
-    @scala.inline
-    def setDEFAULT_MEDIA_RECEIVER_APP_ID(value: String): Self = StObject.set(x, "DEFAULT_MEDIA_RECEIVER_APP_ID", value.asInstanceOf[js.Any])
+    inline def setDEFAULT_MEDIA_RECEIVER_APP_ID(value: String): Self = StObject.set(x, "DEFAULT_MEDIA_RECEIVER_APP_ID", value.asInstanceOf[js.Any])
   }
 }

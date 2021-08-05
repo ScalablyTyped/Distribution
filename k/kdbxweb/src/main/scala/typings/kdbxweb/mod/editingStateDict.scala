@@ -13,16 +13,13 @@ trait editingStateDict
 }
 object editingStateDict {
   
-  @scala.inline
-  def apply(meta: editingState): editingStateDict = {
+  inline def apply(meta: editingState): editingStateDict = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[editingStateDict]
   }
   
-  @scala.inline
-  implicit class editingStateDictMutableBuilder[Self <: editingStateDict] (val x: Self) extends AnyVal {
+  extension [Self <: editingStateDict](x: Self) {
     
-    @scala.inline
-    def setMeta(value: editingState): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: editingState): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ trait CoreWindow
      with ICoreWindow
 object CoreWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activate: () => Unit,
     automationHostProvider: js.Any,
     bounds: Rect,

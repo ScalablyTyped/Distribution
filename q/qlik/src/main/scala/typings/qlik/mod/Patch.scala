@@ -17,22 +17,17 @@ trait Patch extends StObject {
 }
 object Patch {
   
-  @scala.inline
-  def apply(qOp: add | remove | replace, qPath: String, qValue: String): Patch = {
+  inline def apply(qOp: add | remove | replace, qPath: String, qValue: String): Patch = {
     val __obj = js.Dynamic.literal(qOp = qOp.asInstanceOf[js.Any], qPath = qPath.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Patch]
   }
   
-  @scala.inline
-  implicit class PatchMutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
+  extension [Self <: Patch](x: Self) {
     
-    @scala.inline
-    def setQOp(value: add | remove | replace): Self = StObject.set(x, "qOp", value.asInstanceOf[js.Any])
+    inline def setQOp(value: add | remove | replace): Self = StObject.set(x, "qOp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPath(value: String): Self = StObject.set(x, "qPath", value.asInstanceOf[js.Any])
+    inline def setQPath(value: String): Self = StObject.set(x, "qPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValue(value: String): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
+    inline def setQValue(value: String): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

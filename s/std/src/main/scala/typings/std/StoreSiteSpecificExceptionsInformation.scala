@@ -12,22 +12,17 @@ trait StoreSiteSpecificExceptionsInformation
 }
 object StoreSiteSpecificExceptionsInformation {
   
-  @scala.inline
-  def apply(): StoreSiteSpecificExceptionsInformation = {
+  inline def apply(): StoreSiteSpecificExceptionsInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StoreSiteSpecificExceptionsInformation]
   }
   
-  @scala.inline
-  implicit class StoreSiteSpecificExceptionsInformationMutableBuilder[Self <: StoreSiteSpecificExceptionsInformation] (val x: Self) extends AnyVal {
+  extension [Self <: StoreSiteSpecificExceptionsInformation](x: Self) {
     
-    @scala.inline
-    def setArrayOfDomainStrings(value: js.Array[java.lang.String]): Self = StObject.set(x, "arrayOfDomainStrings", value.asInstanceOf[js.Any])
+    inline def setArrayOfDomainStrings(value: js.Array[java.lang.String]): Self = StObject.set(x, "arrayOfDomainStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayOfDomainStringsUndefined: Self = StObject.set(x, "arrayOfDomainStrings", js.undefined)
+    inline def setArrayOfDomainStringsUndefined: Self = StObject.set(x, "arrayOfDomainStrings", js.undefined)
     
-    @scala.inline
-    def setArrayOfDomainStringsVarargs(value: java.lang.String*): Self = StObject.set(x, "arrayOfDomainStrings", js.Array(value :_*))
+    inline def setArrayOfDomainStringsVarargs(value: java.lang.String*): Self = StObject.set(x, "arrayOfDomainStrings", js.Array(value :_*))
   }
 }

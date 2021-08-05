@@ -13,16 +13,13 @@ trait DeleteBackupVaultInput extends StObject {
 }
 object DeleteBackupVaultInput {
   
-  @scala.inline
-  def apply(BackupVaultName: String): DeleteBackupVaultInput = {
+  inline def apply(BackupVaultName: String): DeleteBackupVaultInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBackupVaultInput]
   }
   
-  @scala.inline
-  implicit class DeleteBackupVaultInputMutableBuilder[Self <: DeleteBackupVaultInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBackupVaultInput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultName(value: String): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: String): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
   }
 }

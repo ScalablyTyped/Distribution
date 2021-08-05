@@ -15,8 +15,7 @@ trait TemplateAccess
      with XLocalizable
 object TemplateAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Content: XContent,
     Locale: Locale,
     acquire: () => Unit,

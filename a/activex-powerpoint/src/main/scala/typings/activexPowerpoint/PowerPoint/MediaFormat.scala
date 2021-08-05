@@ -31,7 +31,7 @@ trait MediaFormat extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.MediaFormat_typekey")
+  /* private */ @JSName("PowerPoint.MediaFormat_typekey")
   var PowerPointDotMediaFormat_typekey: MediaFormat = js.native
   
   /**

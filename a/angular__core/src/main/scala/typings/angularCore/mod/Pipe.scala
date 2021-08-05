@@ -31,16 +31,12 @@ object Pipe {
   @js.native
   val ^ : PipeDecorator = js.native
   
-  @scala.inline
-  implicit class PipeMutableBuilder[Self <: Pipe] (val x: Self) extends AnyVal {
+  extension [Self <: Pipe](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+    inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
+    inline def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
   }
 }

@@ -44,8 +44,7 @@ object jira {
   }
   object DatePickerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date: String,
       element: HTMLElement,
       onSelect: (String, Date) => Unit,
@@ -56,23 +55,17 @@ object jira {
       __obj.asInstanceOf[DatePickerOptions]
     }
     
-    @scala.inline
-    implicit class DatePickerOptionsMutableBuilder[Self <: DatePickerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DatePickerOptions](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelect(value: (String, Date) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (String, Date) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTime(value: Boolean): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
+      inline def setShowTime(value: Boolean): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,8 +90,7 @@ object jira {
   }
   object WorkflowConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onSave: js.Function1[/* listener */ js.Object, Unit] => Unit,
       onSaveValidation: js.Function1[/* listener */ js.Object, Unit] => Unit,
       trigger: () => WorkflowConfigurationTriggerResponse
@@ -107,17 +99,13 @@ object jira {
       __obj.asInstanceOf[WorkflowConfiguration]
     }
     
-    @scala.inline
-    implicit class WorkflowConfigurationMutableBuilder[Self <: WorkflowConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: WorkflowConfiguration](x: Self) {
       
-      @scala.inline
-      def setOnSave(value: js.Function1[/* listener */ js.Object, Unit] => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
+      inline def setOnSave(value: js.Function1[/* listener */ js.Object, Unit] => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSaveValidation(value: js.Function1[/* listener */ js.Object, Unit] => Unit): Self = StObject.set(x, "onSaveValidation", js.Any.fromFunction1(value))
+      inline def setOnSaveValidation(value: js.Function1[/* listener */ js.Object, Unit] => Unit): Self = StObject.set(x, "onSaveValidation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTrigger(value: () => WorkflowConfigurationTriggerResponse): Self = StObject.set(x, "trigger", js.Any.fromFunction0(value))
+      inline def setTrigger(value: () => WorkflowConfigurationTriggerResponse): Self = StObject.set(x, "trigger", js.Any.fromFunction0(value))
     }
   }
   
@@ -135,20 +123,16 @@ object jira {
   }
   object WorkflowConfigurationTriggerResponse {
     
-    @scala.inline
-    def apply(valid: js.Any, value: js.Any): WorkflowConfigurationTriggerResponse = {
+    inline def apply(valid: js.Any, value: js.Any): WorkflowConfigurationTriggerResponse = {
       val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkflowConfigurationTriggerResponse]
     }
     
-    @scala.inline
-    implicit class WorkflowConfigurationTriggerResponseMutableBuilder[Self <: WorkflowConfigurationTriggerResponse] (val x: Self) extends AnyVal {
+    extension [Self <: WorkflowConfigurationTriggerResponse](x: Self) {
       
-      @scala.inline
-      def setValid(value: js.Any): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: js.Any): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

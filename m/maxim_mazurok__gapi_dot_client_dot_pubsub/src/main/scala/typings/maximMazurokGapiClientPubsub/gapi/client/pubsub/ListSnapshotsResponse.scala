@@ -14,28 +14,21 @@ trait ListSnapshotsResponse extends StObject {
 }
 object ListSnapshotsResponse {
   
-  @scala.inline
-  def apply(): ListSnapshotsResponse = {
+  inline def apply(): ListSnapshotsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSnapshotsResponse]
   }
   
-  @scala.inline
-  implicit class ListSnapshotsResponseMutableBuilder[Self <: ListSnapshotsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSnapshotsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSnapshots(value: js.Array[Snapshot]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
+    inline def setSnapshots(value: js.Array[Snapshot]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
+    inline def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
     
-    @scala.inline
-    def setSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
+    inline def setSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
   }
 }

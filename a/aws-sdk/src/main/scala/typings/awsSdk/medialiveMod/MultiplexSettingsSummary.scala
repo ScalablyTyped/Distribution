@@ -13,19 +13,15 @@ trait MultiplexSettingsSummary extends StObject {
 }
 object MultiplexSettingsSummary {
   
-  @scala.inline
-  def apply(): MultiplexSettingsSummary = {
+  inline def apply(): MultiplexSettingsSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiplexSettingsSummary]
   }
   
-  @scala.inline
-  implicit class MultiplexSettingsSummaryMutableBuilder[Self <: MultiplexSettingsSummary] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexSettingsSummary](x: Self) {
     
-    @scala.inline
-    def setTransportStreamBitrate(value: integerMin1000000Max100000000): Self = StObject.set(x, "TransportStreamBitrate", value.asInstanceOf[js.Any])
+    inline def setTransportStreamBitrate(value: integerMin1000000Max100000000): Self = StObject.set(x, "TransportStreamBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportStreamBitrateUndefined: Self = StObject.set(x, "TransportStreamBitrate", js.undefined)
+    inline def setTransportStreamBitrateUndefined: Self = StObject.set(x, "TransportStreamBitrate", js.undefined)
   }
 }

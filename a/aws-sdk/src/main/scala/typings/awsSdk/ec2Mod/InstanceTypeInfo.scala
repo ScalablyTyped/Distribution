@@ -123,160 +123,109 @@ trait InstanceTypeInfo extends StObject {
 }
 object InstanceTypeInfo {
   
-  @scala.inline
-  def apply(): InstanceTypeInfo = {
+  inline def apply(): InstanceTypeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceTypeInfo]
   }
   
-  @scala.inline
-  implicit class InstanceTypeInfoMutableBuilder[Self <: InstanceTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceTypeInfo](x: Self) {
     
-    @scala.inline
-    def setAutoRecoverySupported(value: AutoRecoveryFlag): Self = StObject.set(x, "AutoRecoverySupported", value.asInstanceOf[js.Any])
+    inline def setAutoRecoverySupported(value: AutoRecoveryFlag): Self = StObject.set(x, "AutoRecoverySupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRecoverySupportedUndefined: Self = StObject.set(x, "AutoRecoverySupported", js.undefined)
+    inline def setAutoRecoverySupportedUndefined: Self = StObject.set(x, "AutoRecoverySupported", js.undefined)
     
-    @scala.inline
-    def setBareMetal(value: BareMetalFlag): Self = StObject.set(x, "BareMetal", value.asInstanceOf[js.Any])
+    inline def setBareMetal(value: BareMetalFlag): Self = StObject.set(x, "BareMetal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBareMetalUndefined: Self = StObject.set(x, "BareMetal", js.undefined)
+    inline def setBareMetalUndefined: Self = StObject.set(x, "BareMetal", js.undefined)
     
-    @scala.inline
-    def setBurstablePerformanceSupported(value: BurstablePerformanceFlag): Self = StObject.set(x, "BurstablePerformanceSupported", value.asInstanceOf[js.Any])
+    inline def setBurstablePerformanceSupported(value: BurstablePerformanceFlag): Self = StObject.set(x, "BurstablePerformanceSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBurstablePerformanceSupportedUndefined: Self = StObject.set(x, "BurstablePerformanceSupported", js.undefined)
+    inline def setBurstablePerformanceSupportedUndefined: Self = StObject.set(x, "BurstablePerformanceSupported", js.undefined)
     
-    @scala.inline
-    def setCurrentGeneration(value: CurrentGenerationFlag): Self = StObject.set(x, "CurrentGeneration", value.asInstanceOf[js.Any])
+    inline def setCurrentGeneration(value: CurrentGenerationFlag): Self = StObject.set(x, "CurrentGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentGenerationUndefined: Self = StObject.set(x, "CurrentGeneration", js.undefined)
+    inline def setCurrentGenerationUndefined: Self = StObject.set(x, "CurrentGeneration", js.undefined)
     
-    @scala.inline
-    def setDedicatedHostsSupported(value: DedicatedHostFlag): Self = StObject.set(x, "DedicatedHostsSupported", value.asInstanceOf[js.Any])
+    inline def setDedicatedHostsSupported(value: DedicatedHostFlag): Self = StObject.set(x, "DedicatedHostsSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDedicatedHostsSupportedUndefined: Self = StObject.set(x, "DedicatedHostsSupported", js.undefined)
+    inline def setDedicatedHostsSupportedUndefined: Self = StObject.set(x, "DedicatedHostsSupported", js.undefined)
     
-    @scala.inline
-    def setEbsInfo(value: EbsInfo): Self = StObject.set(x, "EbsInfo", value.asInstanceOf[js.Any])
+    inline def setEbsInfo(value: EbsInfo): Self = StObject.set(x, "EbsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsInfoUndefined: Self = StObject.set(x, "EbsInfo", js.undefined)
+    inline def setEbsInfoUndefined: Self = StObject.set(x, "EbsInfo", js.undefined)
     
-    @scala.inline
-    def setFpgaInfo(value: FpgaInfo): Self = StObject.set(x, "FpgaInfo", value.asInstanceOf[js.Any])
+    inline def setFpgaInfo(value: FpgaInfo): Self = StObject.set(x, "FpgaInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpgaInfoUndefined: Self = StObject.set(x, "FpgaInfo", js.undefined)
+    inline def setFpgaInfoUndefined: Self = StObject.set(x, "FpgaInfo", js.undefined)
     
-    @scala.inline
-    def setFreeTierEligible(value: FreeTierEligibleFlag): Self = StObject.set(x, "FreeTierEligible", value.asInstanceOf[js.Any])
+    inline def setFreeTierEligible(value: FreeTierEligibleFlag): Self = StObject.set(x, "FreeTierEligible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeTierEligibleUndefined: Self = StObject.set(x, "FreeTierEligible", js.undefined)
+    inline def setFreeTierEligibleUndefined: Self = StObject.set(x, "FreeTierEligible", js.undefined)
     
-    @scala.inline
-    def setGpuInfo(value: GpuInfo): Self = StObject.set(x, "GpuInfo", value.asInstanceOf[js.Any])
+    inline def setGpuInfo(value: GpuInfo): Self = StObject.set(x, "GpuInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGpuInfoUndefined: Self = StObject.set(x, "GpuInfo", js.undefined)
+    inline def setGpuInfoUndefined: Self = StObject.set(x, "GpuInfo", js.undefined)
     
-    @scala.inline
-    def setHibernationSupported(value: HibernationFlag): Self = StObject.set(x, "HibernationSupported", value.asInstanceOf[js.Any])
+    inline def setHibernationSupported(value: HibernationFlag): Self = StObject.set(x, "HibernationSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHibernationSupportedUndefined: Self = StObject.set(x, "HibernationSupported", js.undefined)
+    inline def setHibernationSupportedUndefined: Self = StObject.set(x, "HibernationSupported", js.undefined)
     
-    @scala.inline
-    def setHypervisor(value: InstanceTypeHypervisor): Self = StObject.set(x, "Hypervisor", value.asInstanceOf[js.Any])
+    inline def setHypervisor(value: InstanceTypeHypervisor): Self = StObject.set(x, "Hypervisor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHypervisorUndefined: Self = StObject.set(x, "Hypervisor", js.undefined)
+    inline def setHypervisorUndefined: Self = StObject.set(x, "Hypervisor", js.undefined)
     
-    @scala.inline
-    def setInferenceAcceleratorInfo(value: InferenceAcceleratorInfo): Self = StObject.set(x, "InferenceAcceleratorInfo", value.asInstanceOf[js.Any])
+    inline def setInferenceAcceleratorInfo(value: InferenceAcceleratorInfo): Self = StObject.set(x, "InferenceAcceleratorInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInferenceAcceleratorInfoUndefined: Self = StObject.set(x, "InferenceAcceleratorInfo", js.undefined)
+    inline def setInferenceAcceleratorInfoUndefined: Self = StObject.set(x, "InferenceAcceleratorInfo", js.undefined)
     
-    @scala.inline
-    def setInstanceStorageInfo(value: InstanceStorageInfo): Self = StObject.set(x, "InstanceStorageInfo", value.asInstanceOf[js.Any])
+    inline def setInstanceStorageInfo(value: InstanceStorageInfo): Self = StObject.set(x, "InstanceStorageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStorageInfoUndefined: Self = StObject.set(x, "InstanceStorageInfo", js.undefined)
+    inline def setInstanceStorageInfoUndefined: Self = StObject.set(x, "InstanceStorageInfo", js.undefined)
     
-    @scala.inline
-    def setInstanceStorageSupported(value: InstanceStorageFlag): Self = StObject.set(x, "InstanceStorageSupported", value.asInstanceOf[js.Any])
+    inline def setInstanceStorageSupported(value: InstanceStorageFlag): Self = StObject.set(x, "InstanceStorageSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStorageSupportedUndefined: Self = StObject.set(x, "InstanceStorageSupported", js.undefined)
+    inline def setInstanceStorageSupportedUndefined: Self = StObject.set(x, "InstanceStorageSupported", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setMemoryInfo(value: MemoryInfo): Self = StObject.set(x, "MemoryInfo", value.asInstanceOf[js.Any])
+    inline def setMemoryInfo(value: MemoryInfo): Self = StObject.set(x, "MemoryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryInfoUndefined: Self = StObject.set(x, "MemoryInfo", js.undefined)
+    inline def setMemoryInfoUndefined: Self = StObject.set(x, "MemoryInfo", js.undefined)
     
-    @scala.inline
-    def setNetworkInfo(value: NetworkInfo): Self = StObject.set(x, "NetworkInfo", value.asInstanceOf[js.Any])
+    inline def setNetworkInfo(value: NetworkInfo): Self = StObject.set(x, "NetworkInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInfoUndefined: Self = StObject.set(x, "NetworkInfo", js.undefined)
+    inline def setNetworkInfoUndefined: Self = StObject.set(x, "NetworkInfo", js.undefined)
     
-    @scala.inline
-    def setPlacementGroupInfo(value: PlacementGroupInfo): Self = StObject.set(x, "PlacementGroupInfo", value.asInstanceOf[js.Any])
+    inline def setPlacementGroupInfo(value: PlacementGroupInfo): Self = StObject.set(x, "PlacementGroupInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementGroupInfoUndefined: Self = StObject.set(x, "PlacementGroupInfo", js.undefined)
+    inline def setPlacementGroupInfoUndefined: Self = StObject.set(x, "PlacementGroupInfo", js.undefined)
     
-    @scala.inline
-    def setProcessorInfo(value: ProcessorInfo): Self = StObject.set(x, "ProcessorInfo", value.asInstanceOf[js.Any])
+    inline def setProcessorInfo(value: ProcessorInfo): Self = StObject.set(x, "ProcessorInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessorInfoUndefined: Self = StObject.set(x, "ProcessorInfo", js.undefined)
+    inline def setProcessorInfoUndefined: Self = StObject.set(x, "ProcessorInfo", js.undefined)
     
-    @scala.inline
-    def setSupportedRootDeviceTypes(value: RootDeviceTypeList): Self = StObject.set(x, "SupportedRootDeviceTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedRootDeviceTypes(value: RootDeviceTypeList): Self = StObject.set(x, "SupportedRootDeviceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedRootDeviceTypesUndefined: Self = StObject.set(x, "SupportedRootDeviceTypes", js.undefined)
+    inline def setSupportedRootDeviceTypesUndefined: Self = StObject.set(x, "SupportedRootDeviceTypes", js.undefined)
     
-    @scala.inline
-    def setSupportedRootDeviceTypesVarargs(value: RootDeviceType*): Self = StObject.set(x, "SupportedRootDeviceTypes", js.Array(value :_*))
+    inline def setSupportedRootDeviceTypesVarargs(value: RootDeviceType*): Self = StObject.set(x, "SupportedRootDeviceTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedUsageClasses(value: UsageClassTypeList): Self = StObject.set(x, "SupportedUsageClasses", value.asInstanceOf[js.Any])
+    inline def setSupportedUsageClasses(value: UsageClassTypeList): Self = StObject.set(x, "SupportedUsageClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedUsageClassesUndefined: Self = StObject.set(x, "SupportedUsageClasses", js.undefined)
+    inline def setSupportedUsageClassesUndefined: Self = StObject.set(x, "SupportedUsageClasses", js.undefined)
     
-    @scala.inline
-    def setSupportedUsageClassesVarargs(value: UsageClassType*): Self = StObject.set(x, "SupportedUsageClasses", js.Array(value :_*))
+    inline def setSupportedUsageClassesVarargs(value: UsageClassType*): Self = StObject.set(x, "SupportedUsageClasses", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedVirtualizationTypes(value: VirtualizationTypeList): Self = StObject.set(x, "SupportedVirtualizationTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedVirtualizationTypes(value: VirtualizationTypeList): Self = StObject.set(x, "SupportedVirtualizationTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedVirtualizationTypesUndefined: Self = StObject.set(x, "SupportedVirtualizationTypes", js.undefined)
+    inline def setSupportedVirtualizationTypesUndefined: Self = StObject.set(x, "SupportedVirtualizationTypes", js.undefined)
     
-    @scala.inline
-    def setSupportedVirtualizationTypesVarargs(value: VirtualizationType*): Self = StObject.set(x, "SupportedVirtualizationTypes", js.Array(value :_*))
+    inline def setSupportedVirtualizationTypesVarargs(value: VirtualizationType*): Self = StObject.set(x, "SupportedVirtualizationTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setVCpuInfo(value: VCpuInfo): Self = StObject.set(x, "VCpuInfo", value.asInstanceOf[js.Any])
+    inline def setVCpuInfo(value: VCpuInfo): Self = StObject.set(x, "VCpuInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVCpuInfoUndefined: Self = StObject.set(x, "VCpuInfo", js.undefined)
+    inline def setVCpuInfoUndefined: Self = StObject.set(x, "VCpuInfo", js.undefined)
   }
 }

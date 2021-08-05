@@ -12,25 +12,19 @@ trait AccountPasswordLockoutDurationMinutes extends StObject {
 }
 object AccountPasswordLockoutDurationMinutes {
   
-  @scala.inline
-  def apply(): AccountPasswordLockoutDurationMinutes = {
+  inline def apply(): AccountPasswordLockoutDurationMinutes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountPasswordLockoutDurationMinutes]
   }
   
-  @scala.inline
-  implicit class AccountPasswordLockoutDurationMinutesMutableBuilder[Self <: AccountPasswordLockoutDurationMinutes] (val x: Self) extends AnyVal {
+  extension [Self <: AccountPasswordLockoutDurationMinutes](x: Self) {
     
-    @scala.inline
-    def setMaximumMinutes(value: String): Self = StObject.set(x, "maximumMinutes", value.asInstanceOf[js.Any])
+    inline def setMaximumMinutes(value: String): Self = StObject.set(x, "maximumMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumMinutesUndefined: Self = StObject.set(x, "maximumMinutes", js.undefined)
+    inline def setMaximumMinutesUndefined: Self = StObject.set(x, "maximumMinutes", js.undefined)
     
-    @scala.inline
-    def setMinimumMinutes(value: String): Self = StObject.set(x, "minimumMinutes", value.asInstanceOf[js.Any])
+    inline def setMinimumMinutes(value: String): Self = StObject.set(x, "minimumMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumMinutesUndefined: Self = StObject.set(x, "minimumMinutes", js.undefined)
+    inline def setMinimumMinutesUndefined: Self = StObject.set(x, "minimumMinutes", js.undefined)
   }
 }

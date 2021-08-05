@@ -13,16 +13,13 @@ trait GetNotificationConfigurationResponse extends StObject {
 }
 object GetNotificationConfigurationResponse {
   
-  @scala.inline
-  def apply(notificationConfiguration: NotificationConfiguration): GetNotificationConfigurationResponse = {
+  inline def apply(notificationConfiguration: NotificationConfiguration): GetNotificationConfigurationResponse = {
     val __obj = js.Dynamic.literal(notificationConfiguration = notificationConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNotificationConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class GetNotificationConfigurationResponseMutableBuilder[Self <: GetNotificationConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetNotificationConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "notificationConfiguration", value.asInstanceOf[js.Any])
+    inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "notificationConfiguration", value.asInstanceOf[js.Any])
   }
 }

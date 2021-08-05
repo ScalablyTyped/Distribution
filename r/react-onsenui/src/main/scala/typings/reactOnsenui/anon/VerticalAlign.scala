@@ -15,25 +15,19 @@ trait VerticalAlign extends StObject {
 }
 object VerticalAlign {
   
-  @scala.inline
-  def apply(): VerticalAlign = {
+  inline def apply(): VerticalAlign = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VerticalAlign]
   }
   
-  @scala.inline
-  implicit class VerticalAlignMutableBuilder[Self <: VerticalAlign] (val x: Self) extends AnyVal {
+  extension [Self <: VerticalAlign](x: Self) {
     
-    @scala.inline
-    def setVerticalAlign(value: top | bottom | center): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: top | bottom | center): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

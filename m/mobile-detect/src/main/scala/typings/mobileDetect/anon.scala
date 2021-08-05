@@ -19,23 +19,18 @@ object anon {
   }
   object FullPattern {
     
-    @scala.inline
-    def apply(fullPattern: RegExp, shortPattern: RegExp, tabletPattern: RegExp): FullPattern = {
+    inline def apply(fullPattern: RegExp, shortPattern: RegExp, tabletPattern: RegExp): FullPattern = {
       val __obj = js.Dynamic.literal(fullPattern = fullPattern.asInstanceOf[js.Any], shortPattern = shortPattern.asInstanceOf[js.Any], tabletPattern = tabletPattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[FullPattern]
     }
     
-    @scala.inline
-    implicit class FullPatternMutableBuilder[Self <: FullPattern] (val x: Self) extends AnyVal {
+    extension [Self <: FullPattern](x: Self) {
       
-      @scala.inline
-      def setFullPattern(value: RegExp): Self = StObject.set(x, "fullPattern", value.asInstanceOf[js.Any])
+      inline def setFullPattern(value: RegExp): Self = StObject.set(x, "fullPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortPattern(value: RegExp): Self = StObject.set(x, "shortPattern", value.asInstanceOf[js.Any])
+      inline def setShortPattern(value: RegExp): Self = StObject.set(x, "shortPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabletPattern(value: RegExp): Self = StObject.set(x, "tabletPattern", value.asInstanceOf[js.Any])
+      inline def setTabletPattern(value: RegExp): Self = StObject.set(x, "tabletPattern", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,8 +50,7 @@ object anon {
   }
   object Oss {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       oss: MobileDetectRules,
       phones: MobileDetectRules,
       props: MobileDetectComplexRules,
@@ -68,26 +62,19 @@ object anon {
       __obj.asInstanceOf[Oss]
     }
     
-    @scala.inline
-    implicit class OssMutableBuilder[Self <: Oss] (val x: Self) extends AnyVal {
+    extension [Self <: Oss](x: Self) {
       
-      @scala.inline
-      def setOss(value: MobileDetectRules): Self = StObject.set(x, "oss", value.asInstanceOf[js.Any])
+      inline def setOss(value: MobileDetectRules): Self = StObject.set(x, "oss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhones(value: MobileDetectRules): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
+      inline def setPhones(value: MobileDetectRules): Self = StObject.set(x, "phones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: MobileDetectComplexRules): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: MobileDetectComplexRules): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablets(value: MobileDetectRules): Self = StObject.set(x, "tablets", value.asInstanceOf[js.Any])
+      inline def setTablets(value: MobileDetectRules): Self = StObject.set(x, "tablets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUas(value: MobileDetectRules): Self = StObject.set(x, "uas", value.asInstanceOf[js.Any])
+      inline def setUas(value: MobileDetectRules): Self = StObject.set(x, "uas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtils(value: MobileDetectRules): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: MobileDetectRules): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
     }
   }
 }

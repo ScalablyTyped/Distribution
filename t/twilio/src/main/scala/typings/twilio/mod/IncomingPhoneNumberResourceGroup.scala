@@ -17,16 +17,13 @@ trait IncomingPhoneNumberResourceGroup
 }
 object IncomingPhoneNumberResourceGroup {
   
-  @scala.inline
-  def apply(create: RestMethod, get: RestMethod, post: RestMethod): IncomingPhoneNumberResourceGroup = {
+  inline def apply(create: RestMethod, get: RestMethod, post: RestMethod): IncomingPhoneNumberResourceGroup = {
     val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingPhoneNumberResourceGroup]
   }
   
-  @scala.inline
-  implicit class IncomingPhoneNumberResourceGroupMutableBuilder[Self <: IncomingPhoneNumberResourceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IncomingPhoneNumberResourceGroup](x: Self) {
     
-    @scala.inline
-    def setCreate(value: RestMethod): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: RestMethod): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
   }
 }

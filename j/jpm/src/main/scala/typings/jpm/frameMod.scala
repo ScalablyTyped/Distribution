@@ -15,6 +15,5 @@ object frameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Frame(options: Name): typings.jpm.FFAddonSDK.Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("Frame")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jpm.FFAddonSDK.Frame]
+  inline def Frame(options: Name): typings.jpm.FFAddonSDK.Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("Frame")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jpm.FFAddonSDK.Frame]
 }

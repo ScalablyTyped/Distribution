@@ -23,13 +23,10 @@ object gradationMod {
   @js.native
   val day: Double = js.native
   
-  @scala.inline
-  def getDate(value: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
-  @scala.inline
-  def getDate(value: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def getDate(value: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def getDate(value: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(value.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @scala.inline
-  def getStep(gradation: js.Array[Gradation], unit: Unit): js.UndefOr[Gradation] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStep")(gradation.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Gradation]]
+  inline def getStep(gradation: js.Array[Gradation], unit: Unit): js.UndefOr[Gradation] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStep")(gradation.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Gradation]]
   
   @JSImport("javascript-time-ago/gradation", "hour")
   @js.native
@@ -75,86 +72,60 @@ object gradationMod {
   }
   object Gradation {
     
-    @scala.inline
-    def apply(): Gradation = {
+    inline def apply(): Gradation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Gradation]
     }
     
-    @scala.inline
-    implicit class GradationMutableBuilder[Self <: Gradation] (val x: Self) extends AnyVal {
+    extension [Self <: Gradation](x: Self) {
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+      inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
       
-      @scala.inline
-      def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
+      inline def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
+      inline def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setThreshold_for_day(value: Double): Self = StObject.set(x, "threshold_for_day", value.asInstanceOf[js.Any])
+      inline def setThreshold_for_day(value: Double): Self = StObject.set(x, "threshold_for_day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold_for_dayUndefined: Self = StObject.set(x, "threshold_for_day", js.undefined)
+      inline def setThreshold_for_dayUndefined: Self = StObject.set(x, "threshold_for_day", js.undefined)
       
-      @scala.inline
-      def setThreshold_for_hour(value: Double): Self = StObject.set(x, "threshold_for_hour", value.asInstanceOf[js.Any])
+      inline def setThreshold_for_hour(value: Double): Self = StObject.set(x, "threshold_for_hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold_for_hourUndefined: Self = StObject.set(x, "threshold_for_hour", js.undefined)
+      inline def setThreshold_for_hourUndefined: Self = StObject.set(x, "threshold_for_hour", js.undefined)
       
-      @scala.inline
-      def setThreshold_for_minute(value: Double): Self = StObject.set(x, "threshold_for_minute", value.asInstanceOf[js.Any])
+      inline def setThreshold_for_minute(value: Double): Self = StObject.set(x, "threshold_for_minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold_for_minuteUndefined: Self = StObject.set(x, "threshold_for_minute", js.undefined)
+      inline def setThreshold_for_minuteUndefined: Self = StObject.set(x, "threshold_for_minute", js.undefined)
       
-      @scala.inline
-      def setThreshold_for_month(value: Double): Self = StObject.set(x, "threshold_for_month", value.asInstanceOf[js.Any])
+      inline def setThreshold_for_month(value: Double): Self = StObject.set(x, "threshold_for_month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold_for_monthUndefined: Self = StObject.set(x, "threshold_for_month", js.undefined)
+      inline def setThreshold_for_monthUndefined: Self = StObject.set(x, "threshold_for_month", js.undefined)
       
-      @scala.inline
-      def setThreshold_for_now(value: Double): Self = StObject.set(x, "threshold_for_now", value.asInstanceOf[js.Any])
+      inline def setThreshold_for_now(value: Double): Self = StObject.set(x, "threshold_for_now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold_for_nowUndefined: Self = StObject.set(x, "threshold_for_now", js.undefined)
+      inline def setThreshold_for_nowUndefined: Self = StObject.set(x, "threshold_for_now", js.undefined)
       
-      @scala.inline
-      def setThreshold_for_second(value: Double): Self = StObject.set(x, "threshold_for_second", value.asInstanceOf[js.Any])
+      inline def setThreshold_for_second(value: Double): Self = StObject.set(x, "threshold_for_second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold_for_secondUndefined: Self = StObject.set(x, "threshold_for_second", js.undefined)
+      inline def setThreshold_for_secondUndefined: Self = StObject.set(x, "threshold_for_second", js.undefined)
       
-      @scala.inline
-      def setThreshold_for_week(value: Double): Self = StObject.set(x, "threshold_for_week", value.asInstanceOf[js.Any])
+      inline def setThreshold_for_week(value: Double): Self = StObject.set(x, "threshold_for_week", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold_for_weekUndefined: Self = StObject.set(x, "threshold_for_week", js.undefined)
+      inline def setThreshold_for_weekUndefined: Self = StObject.set(x, "threshold_for_week", js.undefined)
       
-      @scala.inline
-      def setThreshold_for_year(value: Double): Self = StObject.set(x, "threshold_for_year", value.asInstanceOf[js.Any])
+      inline def setThreshold_for_year(value: Double): Self = StObject.set(x, "threshold_for_year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold_for_yearUndefined: Self = StObject.set(x, "threshold_for_year", js.undefined)
+      inline def setThreshold_for_yearUndefined: Self = StObject.set(x, "threshold_for_year", js.undefined)
       
-      @scala.inline
-      def setUnit(value: Unit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: Unit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
   
@@ -171,28 +142,20 @@ object gradationMod {
   trait Unit extends StObject
   object Unit {
     
-    @scala.inline
-    def day: typings.javascriptTimeAgo.javascriptTimeAgoStrings.day = "day".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.day]
+    inline def day: typings.javascriptTimeAgo.javascriptTimeAgoStrings.day = "day".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.day]
     
-    @scala.inline
-    def hour: typings.javascriptTimeAgo.javascriptTimeAgoStrings.hour = "hour".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.hour]
+    inline def hour: typings.javascriptTimeAgo.javascriptTimeAgoStrings.hour = "hour".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.hour]
     
-    @scala.inline
-    def minute: typings.javascriptTimeAgo.javascriptTimeAgoStrings.minute = "minute".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.minute]
+    inline def minute: typings.javascriptTimeAgo.javascriptTimeAgoStrings.minute = "minute".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.minute]
     
-    @scala.inline
-    def month: typings.javascriptTimeAgo.javascriptTimeAgoStrings.month = "month".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.month]
+    inline def month: typings.javascriptTimeAgo.javascriptTimeAgoStrings.month = "month".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.month]
     
-    @scala.inline
-    def now: typings.javascriptTimeAgo.javascriptTimeAgoStrings.now = "now".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.now]
+    inline def now: typings.javascriptTimeAgo.javascriptTimeAgoStrings.now = "now".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.now]
     
-    @scala.inline
-    def second: typings.javascriptTimeAgo.javascriptTimeAgoStrings.second = "second".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.second]
+    inline def second: typings.javascriptTimeAgo.javascriptTimeAgoStrings.second = "second".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.second]
     
-    @scala.inline
-    def week: typings.javascriptTimeAgo.javascriptTimeAgoStrings.week = "week".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.week]
+    inline def week: typings.javascriptTimeAgo.javascriptTimeAgoStrings.week = "week".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.week]
     
-    @scala.inline
-    def year: typings.javascriptTimeAgo.javascriptTimeAgoStrings.year = "year".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.year]
+    inline def year: typings.javascriptTimeAgo.javascriptTimeAgoStrings.year = "year".asInstanceOf[typings.javascriptTimeAgo.javascriptTimeAgoStrings.year]
   }
 }

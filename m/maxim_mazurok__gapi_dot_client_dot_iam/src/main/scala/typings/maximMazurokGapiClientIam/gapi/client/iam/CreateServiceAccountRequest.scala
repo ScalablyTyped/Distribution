@@ -17,25 +17,19 @@ trait CreateServiceAccountRequest extends StObject {
 }
 object CreateServiceAccountRequest {
   
-  @scala.inline
-  def apply(): CreateServiceAccountRequest = {
+  inline def apply(): CreateServiceAccountRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateServiceAccountRequest]
   }
   
-  @scala.inline
-  implicit class CreateServiceAccountRequestMutableBuilder[Self <: CreateServiceAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateServiceAccountRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: ServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: ServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
   }
 }

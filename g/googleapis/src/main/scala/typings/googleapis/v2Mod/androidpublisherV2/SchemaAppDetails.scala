@@ -28,37 +28,27 @@ trait SchemaAppDetails extends StObject {
 }
 object SchemaAppDetails {
   
-  @scala.inline
-  def apply(): SchemaAppDetails = {
+  inline def apply(): SchemaAppDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAppDetails]
   }
   
-  @scala.inline
-  implicit class SchemaAppDetailsMutableBuilder[Self <: SchemaAppDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAppDetails](x: Self) {
     
-    @scala.inline
-    def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
+    inline def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
+    inline def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
-    @scala.inline
-    def setContactPhone(value: String): Self = StObject.set(x, "contactPhone", value.asInstanceOf[js.Any])
+    inline def setContactPhone(value: String): Self = StObject.set(x, "contactPhone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactPhoneUndefined: Self = StObject.set(x, "contactPhone", js.undefined)
+    inline def setContactPhoneUndefined: Self = StObject.set(x, "contactPhone", js.undefined)
     
-    @scala.inline
-    def setContactWebsite(value: String): Self = StObject.set(x, "contactWebsite", value.asInstanceOf[js.Any])
+    inline def setContactWebsite(value: String): Self = StObject.set(x, "contactWebsite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactWebsiteUndefined: Self = StObject.set(x, "contactWebsite", js.undefined)
+    inline def setContactWebsiteUndefined: Self = StObject.set(x, "contactWebsite", js.undefined)
     
-    @scala.inline
-    def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
+    inline def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
+    inline def setDefaultLanguageUndefined: Self = StObject.set(x, "defaultLanguage", js.undefined)
   }
 }

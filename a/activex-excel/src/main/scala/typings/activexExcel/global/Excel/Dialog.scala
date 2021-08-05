@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Dialog")
 @js.native
-class Dialog protected ()
+/* private */ class Dialog ()
   extends StObject
      with typings.activexExcel.Excel.Dialog {
   
@@ -17,7 +17,7 @@ class Dialog protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Dialog_typekey")
   var ExcelDotDialog_typekey: typings.activexExcel.Excel.Dialog = js.native
   

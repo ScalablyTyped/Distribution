@@ -33,94 +33,65 @@ trait EditingConfig extends StObject {
 }
 object EditingConfig {
   
-  @scala.inline
-  def apply(): EditingConfig = {
+  inline def apply(): EditingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditingConfig]
   }
   
-  @scala.inline
-  implicit class EditingConfigMutableBuilder[Self <: EditingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EditingConfig](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: EditingConfigAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: EditingConfigAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionForContent(value: /* instance */ Obj | Widget => String): Self = StObject.set(x, "descriptionForContent", js.Any.fromFunction1(value))
+    inline def setDescriptionForContent(value: /* instance */ Obj | Widget => String): Self = StObject.set(x, "descriptionForContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescriptionForContentUndefined: Self = StObject.set(x, "descriptionForContent", js.undefined)
+    inline def setDescriptionForContentUndefined: Self = StObject.set(x, "descriptionForContent", js.undefined)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHideInSelectionDialogs(value: Boolean): Self = StObject.set(x, "hideInSelectionDialogs", value.asInstanceOf[js.Any])
+    inline def setHideInSelectionDialogs(value: Boolean): Self = StObject.set(x, "hideInSelectionDialogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideInSelectionDialogsUndefined: Self = StObject.set(x, "hideInSelectionDialogs", js.undefined)
+    inline def setHideInSelectionDialogsUndefined: Self = StObject.set(x, "hideInSelectionDialogs", js.undefined)
     
-    @scala.inline
-    def setInitialContent(value: Record[String, js.Any]): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
+    inline def setInitialContent(value: Record[String, js.Any]): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
+    inline def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
     
-    @scala.inline
-    def setInitializeCopy(value: /* originalInstance */ Obj => Unit): Self = StObject.set(x, "initializeCopy", js.Any.fromFunction1(value))
+    inline def setInitializeCopy(value: /* originalInstance */ Obj => Unit): Self = StObject.set(x, "initializeCopy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitializeCopyUndefined: Self = StObject.set(x, "initializeCopy", js.undefined)
+    inline def setInitializeCopyUndefined: Self = StObject.set(x, "initializeCopy", js.undefined)
     
-    @scala.inline
-    def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesGroups(value: js.Array[PropertiesGroup]): Self = StObject.set(x, "propertiesGroups", value.asInstanceOf[js.Any])
+    inline def setPropertiesGroups(value: js.Array[PropertiesGroup]): Self = StObject.set(x, "propertiesGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesGroupsUndefined: Self = StObject.set(x, "propertiesGroups", js.undefined)
+    inline def setPropertiesGroupsUndefined: Self = StObject.set(x, "propertiesGroups", js.undefined)
     
-    @scala.inline
-    def setPropertiesGroupsVarargs(value: PropertiesGroup*): Self = StObject.set(x, "propertiesGroups", js.Array(value :_*))
+    inline def setPropertiesGroupsVarargs(value: PropertiesGroup*): Self = StObject.set(x, "propertiesGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleForContent(value: /* instance */ Obj | Widget => String | Unit): Self = StObject.set(x, "titleForContent", js.Any.fromFunction1(value))
+    inline def setTitleForContent(value: /* instance */ Obj | Widget => String | Unit): Self = StObject.set(x, "titleForContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitleForContentUndefined: Self = StObject.set(x, "titleForContent", js.undefined)
+    inline def setTitleForContentUndefined: Self = StObject.set(x, "titleForContent", js.undefined)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setValidations(value: js.Array[Validation]): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
+    inline def setValidations(value: js.Array[Validation]): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
+    inline def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
     
-    @scala.inline
-    def setValidationsVarargs(value: Validation*): Self = StObject.set(x, "validations", js.Array(value :_*))
+    inline def setValidationsVarargs(value: Validation*): Self = StObject.set(x, "validations", js.Array(value :_*))
   }
 }

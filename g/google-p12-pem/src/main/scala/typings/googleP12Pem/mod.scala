@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPem(filename: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPem")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getPem(filename: String, callback: js.Function2[/* err */ Error | Null, /* pem */ String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPem")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getPem(filename: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPem")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getPem(filename: String, callback: js.Function2[/* err */ Error | Null, /* pem */ String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPem")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

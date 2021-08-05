@@ -47,8 +47,7 @@ trait GoogleApiYouTubePlaylistResource extends StObject {
 }
 object GoogleApiYouTubePlaylistResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentDetails: ItemCount,
     etag: String,
     id: String,
@@ -61,28 +60,20 @@ object GoogleApiYouTubePlaylistResource {
     __obj.asInstanceOf[GoogleApiYouTubePlaylistResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubePlaylistResourceMutableBuilder[Self <: GoogleApiYouTubePlaylistResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiYouTubePlaylistResource](x: Self) {
     
-    @scala.inline
-    def setContentDetails(value: ItemCount): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
+    inline def setContentDetails(value: ItemCount): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayer(value: EmbedHtml): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: EmbedHtml): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippet(value: PublishedAt): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: PublishedAt): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PrivacyStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PrivacyStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

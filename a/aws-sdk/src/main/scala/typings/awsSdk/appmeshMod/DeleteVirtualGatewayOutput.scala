@@ -13,16 +13,13 @@ trait DeleteVirtualGatewayOutput extends StObject {
 }
 object DeleteVirtualGatewayOutput {
   
-  @scala.inline
-  def apply(virtualGateway: VirtualGatewayData): DeleteVirtualGatewayOutput = {
+  inline def apply(virtualGateway: VirtualGatewayData): DeleteVirtualGatewayOutput = {
     val __obj = js.Dynamic.literal(virtualGateway = virtualGateway.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVirtualGatewayOutput]
   }
   
-  @scala.inline
-  implicit class DeleteVirtualGatewayOutputMutableBuilder[Self <: DeleteVirtualGatewayOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVirtualGatewayOutput](x: Self) {
     
-    @scala.inline
-    def setVirtualGateway(value: VirtualGatewayData): Self = StObject.set(x, "virtualGateway", value.asInstanceOf[js.Any])
+    inline def setVirtualGateway(value: VirtualGatewayData): Self = StObject.set(x, "virtualGateway", value.asInstanceOf[js.Any])
   }
 }

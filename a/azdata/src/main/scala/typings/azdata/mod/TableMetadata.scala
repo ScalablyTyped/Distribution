@@ -10,16 +10,13 @@ trait TableMetadata extends StObject {
 }
 object TableMetadata {
   
-  @scala.inline
-  def apply(columns: ColumnMetadata): TableMetadata = {
+  inline def apply(columns: ColumnMetadata): TableMetadata = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableMetadata]
   }
   
-  @scala.inline
-  implicit class TableMetadataMutableBuilder[Self <: TableMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: TableMetadata](x: Self) {
     
-    @scala.inline
-    def setColumns(value: ColumnMetadata): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: ColumnMetadata): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
   }
 }

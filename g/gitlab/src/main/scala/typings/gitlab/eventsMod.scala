@@ -47,28 +47,22 @@ object eventsMod {
   }
   object EventOptions {
     
-    @scala.inline
-    def apply(): EventOptions = {
+    inline def apply(): EventOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventOptions]
     }
     
-    @scala.inline
-    implicit class EventOptionsMutableBuilder[Self <: EventOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EventOptions](x: Self) {
       
-      @scala.inline
-      def setAction(
+      inline def setAction(
         value: created | updated | closed | reopened | pushed | commented | merged | joined | left | destroyed | expired
       ): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setTargetType(value: issue | milestone | merge_request | note | project | snippet | user): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+      inline def setTargetType(value: issue | milestone | merge_request | note | project | snippet | user): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
+      inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     }
   }
 }

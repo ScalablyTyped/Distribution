@@ -24,31 +24,23 @@ trait RemixSettings extends StObject {
 }
 object RemixSettings {
   
-  @scala.inline
-  def apply(ChannelMappings: listOfAudioChannelMapping): RemixSettings = {
+  inline def apply(ChannelMappings: listOfAudioChannelMapping): RemixSettings = {
     val __obj = js.Dynamic.literal(ChannelMappings = ChannelMappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemixSettings]
   }
   
-  @scala.inline
-  implicit class RemixSettingsMutableBuilder[Self <: RemixSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RemixSettings](x: Self) {
     
-    @scala.inline
-    def setChannelMappings(value: listOfAudioChannelMapping): Self = StObject.set(x, "ChannelMappings", value.asInstanceOf[js.Any])
+    inline def setChannelMappings(value: listOfAudioChannelMapping): Self = StObject.set(x, "ChannelMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelMappingsVarargs(value: AudioChannelMapping*): Self = StObject.set(x, "ChannelMappings", js.Array(value :_*))
+    inline def setChannelMappingsVarargs(value: AudioChannelMapping*): Self = StObject.set(x, "ChannelMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setChannelsIn(value: integerMin1Max16): Self = StObject.set(x, "ChannelsIn", value.asInstanceOf[js.Any])
+    inline def setChannelsIn(value: integerMin1Max16): Self = StObject.set(x, "ChannelsIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsInUndefined: Self = StObject.set(x, "ChannelsIn", js.undefined)
+    inline def setChannelsInUndefined: Self = StObject.set(x, "ChannelsIn", js.undefined)
     
-    @scala.inline
-    def setChannelsOut(value: integerMin1Max8): Self = StObject.set(x, "ChannelsOut", value.asInstanceOf[js.Any])
+    inline def setChannelsOut(value: integerMin1Max8): Self = StObject.set(x, "ChannelsOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsOutUndefined: Self = StObject.set(x, "ChannelsOut", js.undefined)
+    inline def setChannelsOutUndefined: Self = StObject.set(x, "ChannelsOut", js.undefined)
   }
 }

@@ -38,14 +38,11 @@ object textMod {
   trait FontStyle extends StObject
   object FontStyle {
     
-    @scala.inline
-    def italic: typings.reactMdTypography.reactMdTypographyStrings.italic = "italic".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.italic]
+    inline def italic: typings.reactMdTypography.reactMdTypographyStrings.italic = "italic".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.italic]
     
-    @scala.inline
-    def normal: typings.reactMdTypography.reactMdTypographyStrings.normal = "normal".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.normal]
+    inline def normal: typings.reactMdTypography.reactMdTypographyStrings.normal = "normal".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.normal]
     
-    @scala.inline
-    def oblique: typings.reactMdTypography.reactMdTypographyStrings.oblique = "oblique".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.oblique]
+    inline def oblique: typings.reactMdTypography.reactMdTypographyStrings.oblique = "oblique".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.oblique]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -56,14 +53,11 @@ object textMod {
   trait TextAlign extends StObject
   object TextAlign {
     
-    @scala.inline
-    def center: typings.reactMdTypography.reactMdTypographyStrings.center = "center".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.center]
+    inline def center: typings.reactMdTypography.reactMdTypographyStrings.center = "center".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.center]
     
-    @scala.inline
-    def left: typings.reactMdTypography.reactMdTypographyStrings.left = "left".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.left]
+    inline def left: typings.reactMdTypography.reactMdTypographyStrings.left = "left".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.left]
     
-    @scala.inline
-    def right: typings.reactMdTypography.reactMdTypographyStrings.right = "right".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.right]
+    inline def right: typings.reactMdTypography.reactMdTypographyStrings.right = "right".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.right]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -77,23 +71,17 @@ object textMod {
   trait TextColor extends StObject
   object TextColor {
     
-    @scala.inline
-    def hint: typings.reactMdTypography.reactMdTypographyStrings.hint = "hint".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.hint]
+    inline def hint: typings.reactMdTypography.reactMdTypographyStrings.hint = "hint".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.hint]
     
-    @scala.inline
-    def secondary: typings.reactMdTypography.reactMdTypographyStrings.secondary = "secondary".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.secondary]
+    inline def secondary: typings.reactMdTypography.reactMdTypographyStrings.secondary = "secondary".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.secondary]
     
-    @scala.inline
-    def `theme-error`: typings.reactMdTypography.reactMdTypographyStrings.`theme-error` = "theme-error".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`theme-error`]
+    inline def `theme-error`: typings.reactMdTypography.reactMdTypographyStrings.`theme-error` = "theme-error".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`theme-error`]
     
-    @scala.inline
-    def `theme-primary`: typings.reactMdTypography.reactMdTypographyStrings.`theme-primary` = "theme-primary".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`theme-primary`]
+    inline def `theme-primary`: typings.reactMdTypography.reactMdTypographyStrings.`theme-primary` = "theme-primary".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`theme-primary`]
     
-    @scala.inline
-    def `theme-secondary`: typings.reactMdTypography.reactMdTypographyStrings.`theme-secondary` = "theme-secondary".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`theme-secondary`]
+    inline def `theme-secondary`: typings.reactMdTypography.reactMdTypographyStrings.`theme-secondary` = "theme-secondary".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`theme-secondary`]
     
-    @scala.inline
-    def `theme-warning`: typings.reactMdTypography.reactMdTypographyStrings.`theme-warning` = "theme-warning".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`theme-warning`]
+    inline def `theme-warning`: typings.reactMdTypography.reactMdTypographyStrings.`theme-warning` = "theme-warning".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`theme-warning`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -104,14 +92,11 @@ object textMod {
   trait TextDecoration extends StObject
   object TextDecoration {
     
-    @scala.inline
-    def `line-through`: typings.reactMdTypography.reactMdTypographyStrings.`line-through` = "line-through".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`line-through`]
+    inline def `line-through`: typings.reactMdTypography.reactMdTypographyStrings.`line-through` = "line-through".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`line-through`]
     
-    @scala.inline
-    def overline: typings.reactMdTypography.reactMdTypographyStrings.overline = "overline".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.overline]
+    inline def overline: typings.reactMdTypography.reactMdTypographyStrings.overline = "overline".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.overline]
     
-    @scala.inline
-    def underline: typings.reactMdTypography.reactMdTypographyStrings.underline = "underline".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.underline]
+    inline def underline: typings.reactMdTypography.reactMdTypographyStrings.underline = "underline".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.underline]
   }
   
   type TextElement = HTMLHeadingElement | HTMLParagraphElement | HTMLSpanElement | HTMLDivElement | HTMLButtonElement | HTMLAnchorElement | HTMLBodyElement | HTMLHtmlElement
@@ -205,80 +190,56 @@ object textMod {
   }
   object TextProps {
     
-    @scala.inline
-    def apply(): TextProps = {
+    inline def apply(): TextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextProps]
     }
     
-    @scala.inline
-    implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: TextAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: TextAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode | ClassNameCloneableChild[js.Object] | TextRenderFunction): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | ClassNameCloneableChild[js.Object] | TextRenderFunction): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* props */ ClassName => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* props */ ClassName => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setColor(value: TextColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: TextColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentNull: Self = StObject.set(x, "component", null)
+      inline def setComponentNull: Self = StObject.set(x, "component", null)
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setDecoration(value: TextDecoration): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
+      inline def setDecoration(value: TextDecoration): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
+      inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
       
-      @scala.inline
-      def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      @scala.inline
-      def setMargin(value: initial | none | top | bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: initial | none | top | bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setTransform(value: TextTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: TextTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setType(value: TextTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TextTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWeight(value: TextWeight): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: TextWeight): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
   
@@ -292,14 +253,11 @@ object textMod {
   trait TextTransform extends StObject
   object TextTransform {
     
-    @scala.inline
-    def capitalize: typings.reactMdTypography.reactMdTypographyStrings.capitalize = "capitalize".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.capitalize]
+    inline def capitalize: typings.reactMdTypography.reactMdTypographyStrings.capitalize = "capitalize".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.capitalize]
     
-    @scala.inline
-    def lowercase: typings.reactMdTypography.reactMdTypographyStrings.lowercase = "lowercase".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.lowercase]
+    inline def lowercase: typings.reactMdTypography.reactMdTypographyStrings.lowercase = "lowercase".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.lowercase]
     
-    @scala.inline
-    def uppercase: typings.reactMdTypography.reactMdTypographyStrings.uppercase = "uppercase".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.uppercase]
+    inline def uppercase: typings.reactMdTypography.reactMdTypographyStrings.uppercase = "uppercase".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.uppercase]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -320,44 +278,31 @@ object textMod {
   trait TextTypes extends StObject
   object TextTypes {
     
-    @scala.inline
-    def `body-1`: typings.reactMdTypography.reactMdTypographyStrings.`body-1` = "body-1".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`body-1`]
+    inline def `body-1`: typings.reactMdTypography.reactMdTypographyStrings.`body-1` = "body-1".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`body-1`]
     
-    @scala.inline
-    def `body-2`: typings.reactMdTypography.reactMdTypographyStrings.`body-2` = "body-2".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`body-2`]
+    inline def `body-2`: typings.reactMdTypography.reactMdTypographyStrings.`body-2` = "body-2".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`body-2`]
     
-    @scala.inline
-    def button: typings.reactMdTypography.reactMdTypographyStrings.button = "button".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.button]
+    inline def button: typings.reactMdTypography.reactMdTypographyStrings.button = "button".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.button]
     
-    @scala.inline
-    def caption: typings.reactMdTypography.reactMdTypographyStrings.caption = "caption".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.caption]
+    inline def caption: typings.reactMdTypography.reactMdTypographyStrings.caption = "caption".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.caption]
     
-    @scala.inline
-    def `headline-1`: typings.reactMdTypography.reactMdTypographyStrings.`headline-1` = "headline-1".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-1`]
+    inline def `headline-1`: typings.reactMdTypography.reactMdTypographyStrings.`headline-1` = "headline-1".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-1`]
     
-    @scala.inline
-    def `headline-2`: typings.reactMdTypography.reactMdTypographyStrings.`headline-2` = "headline-2".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-2`]
+    inline def `headline-2`: typings.reactMdTypography.reactMdTypographyStrings.`headline-2` = "headline-2".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-2`]
     
-    @scala.inline
-    def `headline-3`: typings.reactMdTypography.reactMdTypographyStrings.`headline-3` = "headline-3".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-3`]
+    inline def `headline-3`: typings.reactMdTypography.reactMdTypographyStrings.`headline-3` = "headline-3".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-3`]
     
-    @scala.inline
-    def `headline-4`: typings.reactMdTypography.reactMdTypographyStrings.`headline-4` = "headline-4".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-4`]
+    inline def `headline-4`: typings.reactMdTypography.reactMdTypographyStrings.`headline-4` = "headline-4".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-4`]
     
-    @scala.inline
-    def `headline-5`: typings.reactMdTypography.reactMdTypographyStrings.`headline-5` = "headline-5".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-5`]
+    inline def `headline-5`: typings.reactMdTypography.reactMdTypographyStrings.`headline-5` = "headline-5".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-5`]
     
-    @scala.inline
-    def `headline-6`: typings.reactMdTypography.reactMdTypographyStrings.`headline-6` = "headline-6".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-6`]
+    inline def `headline-6`: typings.reactMdTypography.reactMdTypographyStrings.`headline-6` = "headline-6".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`headline-6`]
     
-    @scala.inline
-    def overline: typings.reactMdTypography.reactMdTypographyStrings.overline = "overline".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.overline]
+    inline def overline: typings.reactMdTypography.reactMdTypographyStrings.overline = "overline".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.overline]
     
-    @scala.inline
-    def `subtitle-1`: typings.reactMdTypography.reactMdTypographyStrings.`subtitle-1` = "subtitle-1".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`subtitle-1`]
+    inline def `subtitle-1`: typings.reactMdTypography.reactMdTypographyStrings.`subtitle-1` = "subtitle-1".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`subtitle-1`]
     
-    @scala.inline
-    def `subtitle-2`: typings.reactMdTypography.reactMdTypographyStrings.`subtitle-2` = "subtitle-2".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`subtitle-2`]
+    inline def `subtitle-2`: typings.reactMdTypography.reactMdTypographyStrings.`subtitle-2` = "subtitle-2".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`subtitle-2`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -372,25 +317,18 @@ object textMod {
   trait TextWeight extends StObject
   object TextWeight {
     
-    @scala.inline
-    def black: typings.reactMdTypography.reactMdTypographyStrings.black = "black".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.black]
+    inline def black: typings.reactMdTypography.reactMdTypographyStrings.black = "black".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.black]
     
-    @scala.inline
-    def bold: typings.reactMdTypography.reactMdTypographyStrings.bold = "bold".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.bold]
+    inline def bold: typings.reactMdTypography.reactMdTypographyStrings.bold = "bold".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.bold]
     
-    @scala.inline
-    def light: typings.reactMdTypography.reactMdTypographyStrings.light = "light".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.light]
+    inline def light: typings.reactMdTypography.reactMdTypographyStrings.light = "light".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.light]
     
-    @scala.inline
-    def medium: typings.reactMdTypography.reactMdTypographyStrings.medium = "medium".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.medium]
+    inline def medium: typings.reactMdTypography.reactMdTypographyStrings.medium = "medium".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.medium]
     
-    @scala.inline
-    def regular: typings.reactMdTypography.reactMdTypographyStrings.regular = "regular".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.regular]
+    inline def regular: typings.reactMdTypography.reactMdTypographyStrings.regular = "regular".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.regular]
     
-    @scala.inline
-    def `semi-bold`: typings.reactMdTypography.reactMdTypographyStrings.`semi-bold` = "semi-bold".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`semi-bold`]
+    inline def `semi-bold`: typings.reactMdTypography.reactMdTypographyStrings.`semi-bold` = "semi-bold".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.`semi-bold`]
     
-    @scala.inline
-    def thin: typings.reactMdTypography.reactMdTypographyStrings.thin = "thin".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.thin]
+    inline def thin: typings.reactMdTypography.reactMdTypographyStrings.thin = "thin".asInstanceOf[typings.reactMdTypography.reactMdTypographyStrings.thin]
   }
 }

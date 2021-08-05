@@ -48,8 +48,7 @@ trait GetResourceMetricsRequest extends StObject {
 }
 object GetResourceMetricsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndTime: ISOTimestamp,
     Identifier: String,
     MetricQueries: MetricQueryList,
@@ -60,43 +59,30 @@ object GetResourceMetricsRequest {
     __obj.asInstanceOf[GetResourceMetricsRequest]
   }
   
-  @scala.inline
-  implicit class GetResourceMetricsRequestMutableBuilder[Self <: GetResourceMetricsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceMetricsRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: ISOTimestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: ISOTimestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMetricQueries(value: MetricQueryList): Self = StObject.set(x, "MetricQueries", value.asInstanceOf[js.Any])
+    inline def setMetricQueries(value: MetricQueryList): Self = StObject.set(x, "MetricQueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricQueriesVarargs(value: MetricQuery*): Self = StObject.set(x, "MetricQueries", js.Array(value :_*))
+    inline def setMetricQueriesVarargs(value: MetricQuery*): Self = StObject.set(x, "MetricQueries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPeriodInSeconds(value: Integer): Self = StObject.set(x, "PeriodInSeconds", value.asInstanceOf[js.Any])
+    inline def setPeriodInSeconds(value: Integer): Self = StObject.set(x, "PeriodInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodInSecondsUndefined: Self = StObject.set(x, "PeriodInSeconds", js.undefined)
+    inline def setPeriodInSecondsUndefined: Self = StObject.set(x, "PeriodInSeconds", js.undefined)
     
-    @scala.inline
-    def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: ISOTimestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: ISOTimestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

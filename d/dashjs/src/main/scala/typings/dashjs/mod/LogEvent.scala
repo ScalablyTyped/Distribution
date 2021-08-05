@@ -16,20 +16,16 @@ trait LogEvent
 }
 object LogEvent {
   
-  @scala.inline
-  def apply(message: String): LogEvent = {
+  inline def apply(message: String): LogEvent = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("log")
     __obj.asInstanceOf[LogEvent]
   }
   
-  @scala.inline
-  implicit class LogEventMutableBuilder[Self <: LogEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LogEvent](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: log): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: log): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

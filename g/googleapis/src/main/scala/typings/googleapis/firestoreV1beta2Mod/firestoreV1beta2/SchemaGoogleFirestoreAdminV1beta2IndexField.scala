@@ -29,31 +29,23 @@ trait SchemaGoogleFirestoreAdminV1beta2IndexField extends StObject {
 }
 object SchemaGoogleFirestoreAdminV1beta2IndexField {
   
-  @scala.inline
-  def apply(): SchemaGoogleFirestoreAdminV1beta2IndexField = {
+  inline def apply(): SchemaGoogleFirestoreAdminV1beta2IndexField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta2IndexField]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1beta2IndexFieldMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1beta2IndexField] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFirestoreAdminV1beta2IndexField](x: Self) {
     
-    @scala.inline
-    def setArrayConfig(value: String): Self = StObject.set(x, "arrayConfig", value.asInstanceOf[js.Any])
+    inline def setArrayConfig(value: String): Self = StObject.set(x, "arrayConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayConfigUndefined: Self = StObject.set(x, "arrayConfig", js.undefined)
+    inline def setArrayConfigUndefined: Self = StObject.set(x, "arrayConfig", js.undefined)
     
-    @scala.inline
-    def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+    inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
+    inline def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

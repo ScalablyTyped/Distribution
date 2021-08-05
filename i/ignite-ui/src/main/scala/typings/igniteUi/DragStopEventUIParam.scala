@@ -28,37 +28,27 @@ trait DragStopEventUIParam extends StObject {
 }
 object DragStopEventUIParam {
   
-  @scala.inline
-  def apply(): DragStopEventUIParam = {
+  inline def apply(): DragStopEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DragStopEventUIParam]
   }
   
-  @scala.inline
-  implicit class DragStopEventUIParamMutableBuilder[Self <: DragStopEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DragStopEventUIParam](x: Self) {
     
-    @scala.inline
-    def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+    inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
-    @scala.inline
-    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+    inline def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPositionUndefined: Self = StObject.set(x, "originalPosition", js.undefined)
+    inline def setOriginalPositionUndefined: Self = StObject.set(x, "originalPosition", js.undefined)
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

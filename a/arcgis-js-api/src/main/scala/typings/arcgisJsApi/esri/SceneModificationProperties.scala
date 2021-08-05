@@ -25,25 +25,19 @@ trait SceneModificationProperties extends StObject {
 }
 object SceneModificationProperties {
   
-  @scala.inline
-  def apply(): SceneModificationProperties = {
+  inline def apply(): SceneModificationProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneModificationProperties]
   }
   
-  @scala.inline
-  implicit class SceneModificationPropertiesMutableBuilder[Self <: SceneModificationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SceneModificationProperties](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: PolygonProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: PolygonProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
-    @scala.inline
-    def setType(value: clip | mask | replace): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: clip | mask | replace): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

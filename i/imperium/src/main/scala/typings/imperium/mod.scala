@@ -96,47 +96,36 @@ object mod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def can(actionS: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  @scala.inline
-  def can(actionS: js.Array[Action | String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  @scala.inline
-  def can(actionS: Action): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def can(actionS: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def can(actionS: js.Array[Action | String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def can(actionS: Action): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("can")(actionS.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
   
   @JSImport("imperium", "context")
   @js.native
   val context: js.Array[String] = js.native
   
-  @scala.inline
-  def evaluateRouteAction(
+  inline def evaluateRouteAction(
     req: Request_[ParamsDictionary, js.Any, js.Any, Query],
     expr: String,
     key: String,
     context: Context_
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateRouteAction")(req.asInstanceOf[js.Any], expr.asInstanceOf[js.Any], key.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def evaluateRouteActions(
+  inline def evaluateRouteActions(
     req: Request_[ParamsDictionary, js.Any, js.Any, Query],
     action: js.Array[Action],
     context: Context_
   ): Actions = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateRouteActions")(req.asInstanceOf[js.Any], action.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Actions]
   
-  @scala.inline
-  def evaluateUserAction(action: RoleParams, context: StringDictionary[js.Array[String]]): StringDictionary[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateUserAction")(action.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[String]]]
+  inline def evaluateUserAction(action: RoleParams, context: StringDictionary[js.Array[String]]): StringDictionary[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateUserAction")(action.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[String]]]
   
-  @scala.inline
-  def evaluateUserActions(req: Request_[ParamsDictionary, js.Any, js.Any, Query], roles: js.Array[Role_]): js.Promise[js.Array[Action]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateUserActions")(req.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Action]]]
+  inline def evaluateUserActions(req: Request_[ParamsDictionary, js.Any, js.Any, Query], roles: js.Array[Role_]): js.Promise[js.Array[Action]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateUserActions")(req.asInstanceOf[js.Any], roles.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Action]]]
   
-  @scala.inline
-  def is(roleNames: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
-  @scala.inline
-  def is(roleNames: js.Array[String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def is(roleNames: String): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
+  inline def is(roleNames: js.Array[String]): js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(roleNames.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]]
   
-  @scala.inline
-  def role(roleName: String): Role_ = ^.asInstanceOf[js.Dynamic].applyDynamic("role")(roleName.asInstanceOf[js.Any]).asInstanceOf[Role_]
-  @scala.inline
-  def role(roleName: String, getAcl: GetAcl): Role_ = (^.asInstanceOf[js.Dynamic].applyDynamic("role")(roleName.asInstanceOf[js.Any], getAcl.asInstanceOf[js.Any])).asInstanceOf[Role_]
+  inline def role(roleName: String): Role_ = ^.asInstanceOf[js.Dynamic].applyDynamic("role")(roleName.asInstanceOf[js.Any]).asInstanceOf[Role_]
+  inline def role(roleName: String, getAcl: GetAcl): Role_ = (^.asInstanceOf[js.Dynamic].applyDynamic("role")(roleName.asInstanceOf[js.Any], getAcl.asInstanceOf[js.Any])).asInstanceOf[Role_]
   
   @JSImport("imperium", "roles")
   @js.native
@@ -150,17 +139,14 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply(action: String): Action = {
+    inline def apply(action: String): Action = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+    extension [Self <: Action](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,28 +167,22 @@ object mod {
   }
   object RoleActions {
     
-    @scala.inline
-    def apply(actions: js.Array[Action]): RoleActions = {
+    inline def apply(actions: js.Array[Action]): RoleActions = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoleActions]
     }
     
-    @scala.inline
-    implicit class RoleActionsMutableBuilder[Self <: RoleActions] (val x: Self) extends AnyVal {
+    extension [Self <: RoleActions](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setGetAcl(
+      inline def setGetAcl(
         value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Promise[Boolean | js.Object]
       ): Self = StObject.set(x, "getAcl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAclUndefined: Self = StObject.set(x, "getAcl", js.undefined)
+      inline def setGetAclUndefined: Self = StObject.set(x, "getAcl", js.undefined)
     }
   }
   

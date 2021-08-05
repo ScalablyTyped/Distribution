@@ -10,19 +10,15 @@ trait ModifyVpnTunnelOptionsResult extends StObject {
 }
 object ModifyVpnTunnelOptionsResult {
   
-  @scala.inline
-  def apply(): ModifyVpnTunnelOptionsResult = {
+  inline def apply(): ModifyVpnTunnelOptionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyVpnTunnelOptionsResult]
   }
   
-  @scala.inline
-  implicit class ModifyVpnTunnelOptionsResultMutableBuilder[Self <: ModifyVpnTunnelOptionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVpnTunnelOptionsResult](x: Self) {
     
-    @scala.inline
-    def setVpnConnection(value: VpnConnection): Self = StObject.set(x, "VpnConnection", value.asInstanceOf[js.Any])
+    inline def setVpnConnection(value: VpnConnection): Self = StObject.set(x, "VpnConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnConnectionUndefined: Self = StObject.set(x, "VpnConnection", js.undefined)
+    inline def setVpnConnectionUndefined: Self = StObject.set(x, "VpnConnection", js.undefined)
   }
 }

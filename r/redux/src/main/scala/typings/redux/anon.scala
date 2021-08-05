@@ -12,17 +12,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply[Ext1, Ext2](dispatch: Ext1 & Ext2): `0`[Ext1, Ext2] = {
+    inline def apply[Ext1, Ext2](dispatch: Ext1 & Ext2): `0`[Ext1, Ext2] = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[`0`[Ext1, Ext2]]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[?, ?], Ext1, Ext2] (val x: Self & (`0`[Ext1, Ext2])) extends AnyVal {
+    extension [Self <: `0`[?, ?], Ext1, Ext2](x: Self & (`0`[Ext1, Ext2])) {
       
-      @scala.inline
-      def setDispatch(value: Ext1 & Ext2): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: Ext1 & Ext2): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply[Ext1, Ext2, Ext3](dispatch: Ext1 & Ext2 & Ext3): `1`[Ext1, Ext2, Ext3] = {
+    inline def apply[Ext1, Ext2, Ext3](dispatch: Ext1 & Ext2 & Ext3): `1`[Ext1, Ext2, Ext3] = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[`1`[Ext1, Ext2, Ext3]]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`[?, ?, ?], Ext1, Ext2, Ext3] (val x: Self & (`1`[Ext1, Ext2, Ext3])) extends AnyVal {
+    extension [Self <: `1`[?, ?, ?], Ext1, Ext2, Ext3](x: Self & (`1`[Ext1, Ext2, Ext3])) {
       
-      @scala.inline
-      def setDispatch(value: Ext1 & Ext2 & Ext3): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: Ext1 & Ext2 & Ext3): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,17 +46,14 @@ object anon {
   }
   object `2` {
     
-    @scala.inline
-    def apply[Ext1, Ext2, Ext3, Ext4](dispatch: Ext1 & Ext2 & Ext3 & Ext4): `2`[Ext1, Ext2, Ext3, Ext4] = {
+    inline def apply[Ext1, Ext2, Ext3, Ext4](dispatch: Ext1 & Ext2 & Ext3 & Ext4): `2`[Ext1, Ext2, Ext3, Ext4] = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[`2`[Ext1, Ext2, Ext3, Ext4]]
     }
     
-    @scala.inline
-    implicit class `2MutableBuilder`[Self <: `2`[?, ?, ?, ?], Ext1, Ext2, Ext3, Ext4] (val x: Self & (`2`[Ext1, Ext2, Ext3, Ext4])) extends AnyVal {
+    extension [Self <: `2`[?, ?, ?, ?], Ext1, Ext2, Ext3, Ext4](x: Self & (`2`[Ext1, Ext2, Ext3, Ext4])) {
       
-      @scala.inline
-      def setDispatch(value: Ext1 & Ext2 & Ext3 & Ext4): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: Ext1 & Ext2 & Ext3 & Ext4): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,17 +63,14 @@ object anon {
   }
   object `3` {
     
-    @scala.inline
-    def apply[Ext1, Ext2, Ext3, Ext4, Ext5](dispatch: Ext1 & Ext2 & Ext3 & Ext4 & Ext5): `3`[Ext1, Ext2, Ext3, Ext4, Ext5] = {
+    inline def apply[Ext1, Ext2, Ext3, Ext4, Ext5](dispatch: Ext1 & Ext2 & Ext3 & Ext4 & Ext5): `3`[Ext1, Ext2, Ext3, Ext4, Ext5] = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[`3`[Ext1, Ext2, Ext3, Ext4, Ext5]]
     }
     
-    @scala.inline
-    implicit class `3MutableBuilder`[Self <: `3`[?, ?, ?, ?, ?], Ext1, Ext2, Ext3, Ext4, Ext5] (val x: Self & (`3`[Ext1, Ext2, Ext3, Ext4, Ext5])) extends AnyVal {
+    extension [Self <: `3`[?, ?, ?, ?, ?], Ext1, Ext2, Ext3, Ext4, Ext5](x: Self & (`3`[Ext1, Ext2, Ext3, Ext4, Ext5])) {
       
-      @scala.inline
-      def setDispatch(value: Ext1 & Ext2 & Ext3 & Ext4 & Ext5): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: Ext1 & Ext2 & Ext3 & Ext4 & Ext5): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,17 +86,14 @@ object anon {
   }
   object Dispatch {
     
-    @scala.inline
-    def apply[Ext1](dispatch: Ext1): Dispatch[Ext1] = {
+    inline def apply[Ext1](dispatch: Ext1): Dispatch[Ext1] = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dispatch[Ext1]]
     }
     
-    @scala.inline
-    implicit class DispatchMutableBuilder[Self <: Dispatch[?], Ext1] (val x: Self & Dispatch[Ext1]) extends AnyVal {
+    extension [Self <: Dispatch[?], Ext1](x: Self & Dispatch[Ext1]) {
       
-      @scala.inline
-      def setDispatch(value: Ext1): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: Ext1): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,17 +103,14 @@ object anon {
   }
   object DispatchExt {
     
-    @scala.inline
-    def apply[Ext](dispatch: Ext): DispatchExt[Ext] = {
+    inline def apply[Ext](dispatch: Ext): DispatchExt[Ext] = {
       val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
       __obj.asInstanceOf[DispatchExt[Ext]]
     }
     
-    @scala.inline
-    implicit class DispatchExtMutableBuilder[Self <: DispatchExt[?], Ext] (val x: Self & DispatchExt[Ext]) extends AnyVal {
+    extension [Self <: DispatchExt[?], Ext](x: Self & DispatchExt[Ext]) {
       
-      @scala.inline
-      def setDispatch(value: Ext): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: Ext): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,17 +122,14 @@ object anon {
   }
   object Unsubscribe {
     
-    @scala.inline
-    def apply(unsubscribe: () => Unit): Unsubscribe = {
+    inline def apply(unsubscribe: () => Unit): Unsubscribe = {
       val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Unsubscribe]
     }
     
-    @scala.inline
-    implicit class UnsubscribeMutableBuilder[Self <: Unsubscribe] (val x: Self) extends AnyVal {
+    extension [Self <: Unsubscribe](x: Self) {
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
 }

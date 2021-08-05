@@ -11,19 +11,15 @@ trait Fixed extends StObject {
 }
 object Fixed {
   
-  @scala.inline
-  def apply(): Fixed = {
+  inline def apply(): Fixed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fixed]
   }
   
-  @scala.inline
-  implicit class FixedMutableBuilder[Self <: Fixed] (val x: Self) extends AnyVal {
+  extension [Self <: Fixed](x: Self) {
     
-    @scala.inline
-    def setFixed(value: FixedType): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: FixedType): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
   }
 }

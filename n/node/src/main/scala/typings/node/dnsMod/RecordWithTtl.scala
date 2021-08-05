@@ -12,19 +12,15 @@ trait RecordWithTtl extends StObject {
 }
 object RecordWithTtl {
   
-  @scala.inline
-  def apply(address: String, ttl: Double): RecordWithTtl = {
+  inline def apply(address: String, ttl: Double): RecordWithTtl = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordWithTtl]
   }
   
-  @scala.inline
-  implicit class RecordWithTtlMutableBuilder[Self <: RecordWithTtl] (val x: Self) extends AnyVal {
+  extension [Self <: RecordWithTtl](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

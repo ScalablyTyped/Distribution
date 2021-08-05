@@ -18,22 +18,17 @@ trait CreateReusableDelegationSetRequest extends StObject {
 }
 object CreateReusableDelegationSetRequest {
   
-  @scala.inline
-  def apply(CallerReference: Nonce): CreateReusableDelegationSetRequest = {
+  inline def apply(CallerReference: Nonce): CreateReusableDelegationSetRequest = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReusableDelegationSetRequest]
   }
   
-  @scala.inline
-  implicit class CreateReusableDelegationSetRequestMutableBuilder[Self <: CreateReusableDelegationSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReusableDelegationSetRequest](x: Self) {
     
-    @scala.inline
-    def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
+    inline def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
   }
 }

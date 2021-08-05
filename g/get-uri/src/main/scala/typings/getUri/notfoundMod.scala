@@ -32,17 +32,14 @@ object notfoundMod {
   }
   object NotFoundError {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String): NotFoundError = {
+    inline def apply(code: String, message: String, name: String): NotFoundError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotFoundError]
     }
     
-    @scala.inline
-    implicit class NotFoundErrorMutableBuilder[Self <: NotFoundError] (val x: Self) extends AnyVal {
+    extension [Self <: NotFoundError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
 }

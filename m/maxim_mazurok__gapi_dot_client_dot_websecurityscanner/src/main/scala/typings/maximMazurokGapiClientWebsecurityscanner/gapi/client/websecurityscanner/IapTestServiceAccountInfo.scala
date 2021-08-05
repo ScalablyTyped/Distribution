@@ -11,19 +11,15 @@ trait IapTestServiceAccountInfo extends StObject {
 }
 object IapTestServiceAccountInfo {
   
-  @scala.inline
-  def apply(): IapTestServiceAccountInfo = {
+  inline def apply(): IapTestServiceAccountInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IapTestServiceAccountInfo]
   }
   
-  @scala.inline
-  implicit class IapTestServiceAccountInfoMutableBuilder[Self <: IapTestServiceAccountInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IapTestServiceAccountInfo](x: Self) {
     
-    @scala.inline
-    def setTargetAudienceClientId(value: String): Self = StObject.set(x, "targetAudienceClientId", value.asInstanceOf[js.Any])
+    inline def setTargetAudienceClientId(value: String): Self = StObject.set(x, "targetAudienceClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAudienceClientIdUndefined: Self = StObject.set(x, "targetAudienceClientId", js.undefined)
+    inline def setTargetAudienceClientIdUndefined: Self = StObject.set(x, "targetAudienceClientId", js.undefined)
   }
 }

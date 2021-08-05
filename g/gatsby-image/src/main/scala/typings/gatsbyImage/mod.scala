@@ -38,56 +38,40 @@ object mod {
   }
   object FixedObject {
     
-    @scala.inline
-    def apply(height: Double, src: String, srcSet: String, width: Double): FixedObject = {
+    inline def apply(height: Double, src: String, srcSet: String, width: Double): FixedObject = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], srcSet = srcSet.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[FixedObject]
     }
     
-    @scala.inline
-    implicit class FixedObjectMutableBuilder[Self <: FixedObject] (val x: Self) extends AnyVal {
+    extension [Self <: FixedObject](x: Self) {
       
-      @scala.inline
-      def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
+      inline def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcSetWebp(value: String): Self = StObject.set(x, "srcSetWebp", value.asInstanceOf[js.Any])
+      inline def setSrcSetWebp(value: String): Self = StObject.set(x, "srcSetWebp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcSetWebpUndefined: Self = StObject.set(x, "srcSetWebp", js.undefined)
+      inline def setSrcSetWebpUndefined: Self = StObject.set(x, "srcSetWebp", js.undefined)
       
-      @scala.inline
-      def setSrcWebp(value: String): Self = StObject.set(x, "srcWebp", value.asInstanceOf[js.Any])
+      inline def setSrcWebp(value: String): Self = StObject.set(x, "srcWebp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcWebpUndefined: Self = StObject.set(x, "srcWebp", js.undefined)
+      inline def setSrcWebpUndefined: Self = StObject.set(x, "srcWebp", js.undefined)
       
-      @scala.inline
-      def setTracedSVG(value: String): Self = StObject.set(x, "tracedSVG", value.asInstanceOf[js.Any])
+      inline def setTracedSVG(value: String): Self = StObject.set(x, "tracedSVG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracedSVGUndefined: Self = StObject.set(x, "tracedSVG", js.undefined)
+      inline def setTracedSVGUndefined: Self = StObject.set(x, "tracedSVG", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,56 +97,40 @@ object mod {
   }
   object FluidObject {
     
-    @scala.inline
-    def apply(aspectRatio: Double, sizes: String, src: String, srcSet: String): FluidObject = {
+    inline def apply(aspectRatio: Double, sizes: String, src: String, srcSet: String): FluidObject = {
       val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], srcSet = srcSet.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluidObject]
     }
     
-    @scala.inline
-    implicit class FluidObjectMutableBuilder[Self <: FluidObject] (val x: Self) extends AnyVal {
+    extension [Self <: FluidObject](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      @scala.inline
-      def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
+      inline def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcSetWebp(value: String): Self = StObject.set(x, "srcSetWebp", value.asInstanceOf[js.Any])
+      inline def setSrcSetWebp(value: String): Self = StObject.set(x, "srcSetWebp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcSetWebpUndefined: Self = StObject.set(x, "srcSetWebp", js.undefined)
+      inline def setSrcSetWebpUndefined: Self = StObject.set(x, "srcSetWebp", js.undefined)
       
-      @scala.inline
-      def setSrcWebp(value: String): Self = StObject.set(x, "srcWebp", value.asInstanceOf[js.Any])
+      inline def setSrcWebp(value: String): Self = StObject.set(x, "srcWebp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcWebpUndefined: Self = StObject.set(x, "srcWebp", js.undefined)
+      inline def setSrcWebpUndefined: Self = StObject.set(x, "srcWebp", js.undefined)
       
-      @scala.inline
-      def setTracedSVG(value: String): Self = StObject.set(x, "tracedSVG", value.asInstanceOf[js.Any])
+      inline def setTracedSVG(value: String): Self = StObject.set(x, "tracedSVG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracedSVGUndefined: Self = StObject.set(x, "tracedSVG", js.undefined)
+      inline def setTracedSVGUndefined: Self = StObject.set(x, "tracedSVG", js.undefined)
     }
   }
   
@@ -177,20 +145,16 @@ object mod {
   }
   object GatsbyImageFixedProps {
     
-    @scala.inline
-    def apply(fixed: FixedObject | js.Array[FixedObject]): GatsbyImageFixedProps = {
+    inline def apply(fixed: FixedObject | js.Array[FixedObject]): GatsbyImageFixedProps = {
       val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatsbyImageFixedProps]
     }
     
-    @scala.inline
-    implicit class GatsbyImageFixedPropsMutableBuilder[Self <: GatsbyImageFixedProps] (val x: Self) extends AnyVal {
+    extension [Self <: GatsbyImageFixedProps](x: Self) {
       
-      @scala.inline
-      def setFixed(value: FixedObject | js.Array[FixedObject]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: FixedObject | js.Array[FixedObject]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedVarargs(value: FixedObject*): Self = StObject.set(x, "fixed", js.Array(value :_*))
+      inline def setFixedVarargs(value: FixedObject*): Self = StObject.set(x, "fixed", js.Array(value :_*))
     }
   }
   
@@ -203,20 +167,16 @@ object mod {
   }
   object GatsbyImageFluidProps {
     
-    @scala.inline
-    def apply(fluid: FluidObject | js.Array[FluidObject]): GatsbyImageFluidProps = {
+    inline def apply(fluid: FluidObject | js.Array[FluidObject]): GatsbyImageFluidProps = {
       val __obj = js.Dynamic.literal(fluid = fluid.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatsbyImageFluidProps]
     }
     
-    @scala.inline
-    implicit class GatsbyImageFluidPropsMutableBuilder[Self <: GatsbyImageFluidProps] (val x: Self) extends AnyVal {
+    extension [Self <: GatsbyImageFluidProps](x: Self) {
       
-      @scala.inline
-      def setFluid(value: FluidObject | js.Array[FluidObject]): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+      inline def setFluid(value: FluidObject | js.Array[FluidObject]): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFluidVarargs(value: FluidObject*): Self = StObject.set(x, "fluid", js.Array(value :_*))
+      inline def setFluidVarargs(value: FluidObject*): Self = StObject.set(x, "fluid", js.Array(value :_*))
     }
   }
   
@@ -272,140 +232,96 @@ object mod {
   }
   object GatsbyImageOptionalProps {
     
-    @scala.inline
-    def apply(): GatsbyImageOptionalProps = {
+    inline def apply(): GatsbyImageOptionalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GatsbyImageOptionalProps]
     }
     
-    @scala.inline
-    implicit class GatsbyImageOptionalPropsMutableBuilder[Self <: GatsbyImageOptionalProps] (val x: Self) extends AnyVal {
+    extension [Self <: GatsbyImageOptionalProps](x: Self) {
       
-      @scala.inline
-      def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String | Boolean): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String | Boolean): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String | js.Object): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String | js.Object): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+      inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
+      inline def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
       
-      @scala.inline
-      def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setDurationFadeIn(value: Double): Self = StObject.set(x, "durationFadeIn", value.asInstanceOf[js.Any])
+      inline def setDurationFadeIn(value: Double): Self = StObject.set(x, "durationFadeIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationFadeInUndefined: Self = StObject.set(x, "durationFadeIn", js.undefined)
+      inline def setDurationFadeInUndefined: Self = StObject.set(x, "durationFadeIn", js.undefined)
       
-      @scala.inline
-      def setFadeIn(value: Boolean): Self = StObject.set(x, "fadeIn", value.asInstanceOf[js.Any])
+      inline def setFadeIn(value: Boolean): Self = StObject.set(x, "fadeIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeInUndefined: Self = StObject.set(x, "fadeIn", js.undefined)
+      inline def setFadeInUndefined: Self = StObject.set(x, "fadeIn", js.undefined)
       
-      @scala.inline
-      def setImgStyle(value: js.Object): Self = StObject.set(x, "imgStyle", value.asInstanceOf[js.Any])
+      inline def setImgStyle(value: js.Object): Self = StObject.set(x, "imgStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgStyleUndefined: Self = StObject.set(x, "imgStyle", js.undefined)
+      inline def setImgStyleUndefined: Self = StObject.set(x, "imgStyle", js.undefined)
       
-      @scala.inline
-      def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
+      inline def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
+      inline def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
       
-      @scala.inline
-      def setLoading(value: auto | `lazy` | eager): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: auto | `lazy` | eager): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnStartLoad(value: /* param */ WasCached => Unit): Self = StObject.set(x, "onStartLoad", js.Any.fromFunction1(value))
+      inline def setOnStartLoad(value: /* param */ WasCached => Unit): Self = StObject.set(x, "onStartLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartLoadUndefined: Self = StObject.set(x, "onStartLoad", js.undefined)
+      inline def setOnStartLoadUndefined: Self = StObject.set(x, "onStartLoad", js.undefined)
       
-      @scala.inline
-      def setPlaceholderClassName(value: String): Self = StObject.set(x, "placeholderClassName", value.asInstanceOf[js.Any])
+      inline def setPlaceholderClassName(value: String): Self = StObject.set(x, "placeholderClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderClassNameUndefined: Self = StObject.set(x, "placeholderClassName", js.undefined)
+      inline def setPlaceholderClassNameUndefined: Self = StObject.set(x, "placeholderClassName", js.undefined)
       
-      @scala.inline
-      def setPlaceholderStyle(value: js.Object): Self = StObject.set(x, "placeholderStyle", value.asInstanceOf[js.Any])
+      inline def setPlaceholderStyle(value: js.Object): Self = StObject.set(x, "placeholderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderStyleUndefined: Self = StObject.set(x, "placeholderStyle", js.undefined)
+      inline def setPlaceholderStyleUndefined: Self = StObject.set(x, "placeholderStyle", js.undefined)
       
-      @scala.inline
-      def setResolutions(value: FixedObject): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+      inline def setResolutions(value: FixedObject): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
+      inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
       
-      @scala.inline
-      def setSizes(value: FluidObject): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: FluidObject): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -416,14 +332,12 @@ object mod {
   trait GatsbyImageProps extends StObject
   object GatsbyImageProps {
     
-    @scala.inline
-    def GatsbyImageFixedProps(fixed: FixedObject | js.Array[FixedObject]): typings.gatsbyImage.mod.GatsbyImageFixedProps = {
+    inline def GatsbyImageFixedProps(fixed: FixedObject | js.Array[FixedObject]): typings.gatsbyImage.mod.GatsbyImageFixedProps = {
       val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.gatsbyImage.mod.GatsbyImageFixedProps]
     }
     
-    @scala.inline
-    def GatsbyImageFluidProps(fluid: FluidObject | js.Array[FluidObject]): typings.gatsbyImage.mod.GatsbyImageFluidProps = {
+    inline def GatsbyImageFluidProps(fluid: FluidObject | js.Array[FluidObject]): typings.gatsbyImage.mod.GatsbyImageFluidProps = {
       val __obj = js.Dynamic.literal(fluid = fluid.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.gatsbyImage.mod.GatsbyImageFluidProps]
     }

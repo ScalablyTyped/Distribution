@@ -24,25 +24,19 @@ trait RequestWillBeSentExtraInfoEvent extends StObject {
 }
 object RequestWillBeSentExtraInfoEvent {
   
-  @scala.inline
-  def apply(associatedCookies: js.Array[BlockedCookieWithReason], headers: Headers, requestId: RequestId): RequestWillBeSentExtraInfoEvent = {
+  inline def apply(associatedCookies: js.Array[BlockedCookieWithReason], headers: Headers, requestId: RequestId): RequestWillBeSentExtraInfoEvent = {
     val __obj = js.Dynamic.literal(associatedCookies = associatedCookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestWillBeSentExtraInfoEvent]
   }
   
-  @scala.inline
-  implicit class RequestWillBeSentExtraInfoEventMutableBuilder[Self <: RequestWillBeSentExtraInfoEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RequestWillBeSentExtraInfoEvent](x: Self) {
     
-    @scala.inline
-    def setAssociatedCookies(value: js.Array[BlockedCookieWithReason]): Self = StObject.set(x, "associatedCookies", value.asInstanceOf[js.Any])
+    inline def setAssociatedCookies(value: js.Array[BlockedCookieWithReason]): Self = StObject.set(x, "associatedCookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedCookiesVarargs(value: BlockedCookieWithReason*): Self = StObject.set(x, "associatedCookies", js.Array(value :_*))
+    inline def setAssociatedCookiesVarargs(value: BlockedCookieWithReason*): Self = StObject.set(x, "associatedCookies", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

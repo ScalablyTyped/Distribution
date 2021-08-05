@@ -19,16 +19,12 @@ object TSModuleBlock {
   @js.native
   def apply(body: js.Array[Statement]): TSModuleBlock = js.native
   
-  @scala.inline
-  implicit class TSModuleBlockMutableBuilder[Self <: TSModuleBlock] (val x: Self) extends AnyVal {
+  extension [Self <: TSModuleBlock](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSModuleBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSModuleBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

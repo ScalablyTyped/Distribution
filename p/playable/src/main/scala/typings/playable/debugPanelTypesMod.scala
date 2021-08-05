@@ -22,30 +22,23 @@ object debugPanelTypesMod {
   }
   object IDebugPanelHighlightStyles {
     
-    @scala.inline
-    def apply(boolean: String, key: String, `null`: String, number: String, string: String): IDebugPanelHighlightStyles = {
+    inline def apply(boolean: String, key: String, `null`: String, number: String, string: String): IDebugPanelHighlightStyles = {
       val __obj = js.Dynamic.literal(boolean = boolean.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
       __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDebugPanelHighlightStyles]
     }
     
-    @scala.inline
-    implicit class IDebugPanelHighlightStylesMutableBuilder[Self <: IDebugPanelHighlightStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDebugPanelHighlightStyles](x: Self) {
       
-      @scala.inline
-      def setBoolean(value: String): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      inline def setBoolean(value: String): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNull(value: String): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
+      inline def setNull(value: String): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,20 +48,16 @@ object debugPanelTypesMod {
   }
   object IDebugPanelViewCallbacks {
     
-    @scala.inline
-    def apply(onCloseButtonClick: EventListenerOrEventListenerObject): IDebugPanelViewCallbacks = {
+    inline def apply(onCloseButtonClick: EventListenerOrEventListenerObject): IDebugPanelViewCallbacks = {
       val __obj = js.Dynamic.literal(onCloseButtonClick = onCloseButtonClick.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDebugPanelViewCallbacks]
     }
     
-    @scala.inline
-    implicit class IDebugPanelViewCallbacksMutableBuilder[Self <: IDebugPanelViewCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IDebugPanelViewCallbacks](x: Self) {
       
-      @scala.inline
-      def setOnCloseButtonClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onCloseButtonClick", value.asInstanceOf[js.Any])
+      inline def setOnCloseButtonClick(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onCloseButtonClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCloseButtonClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onCloseButtonClick", js.Any.fromFunction1(value))
+      inline def setOnCloseButtonClickFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "onCloseButtonClick", js.Any.fromFunction1(value))
     }
   }
   
@@ -78,17 +67,14 @@ object debugPanelTypesMod {
   }
   object IDebugPanelViewConfig {
     
-    @scala.inline
-    def apply(callbacks: IDebugPanelViewCallbacks): IDebugPanelViewConfig = {
+    inline def apply(callbacks: IDebugPanelViewCallbacks): IDebugPanelViewConfig = {
       val __obj = js.Dynamic.literal(callbacks = callbacks.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDebugPanelViewConfig]
     }
     
-    @scala.inline
-    implicit class IDebugPanelViewConfigMutableBuilder[Self <: IDebugPanelViewConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IDebugPanelViewConfig](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: IDebugPanelViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: IDebugPanelViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,8 +92,7 @@ object debugPanelTypesMod {
   }
   object IDebugPanelViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       boolean: String,
       closeButton: String,
       debugPanel: String,
@@ -123,20 +108,15 @@ object debugPanelTypesMod {
       __obj.asInstanceOf[IDebugPanelViewStyles]
     }
     
-    @scala.inline
-    implicit class IDebugPanelViewStylesMutableBuilder[Self <: IDebugPanelViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDebugPanelViewStyles](x: Self) {
       
-      @scala.inline
-      def setCloseButton(value: String): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      inline def setCloseButton(value: String): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugPanel(value: String): Self = StObject.set(x, "debugPanel", value.asInstanceOf[js.Any])
+      inline def setDebugPanel(value: String): Self = StObject.set(x, "debugPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoContainer(value: String): Self = StObject.set(x, "infoContainer", value.asInstanceOf[js.Any])
+      inline def setInfoContainer(value: String): Self = StObject.set(x, "infoContainer", value.asInstanceOf[js.Any])
     }
   }
 }

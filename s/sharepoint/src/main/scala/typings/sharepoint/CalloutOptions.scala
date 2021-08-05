@@ -51,8 +51,7 @@ trait CalloutOptions extends StObject {
 }
 object CalloutOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ID: String,
     beakOrientation: String,
     boundingBox: HTMLElement,
@@ -72,49 +71,34 @@ object CalloutOptions {
     __obj.asInstanceOf[CalloutOptions]
   }
   
-  @scala.inline
-  implicit class CalloutOptionsMutableBuilder[Self <: CalloutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CalloutOptions](x: Self) {
     
-    @scala.inline
-    def setBeakOrientation(value: String): Self = StObject.set(x, "beakOrientation", value.asInstanceOf[js.Any])
+    inline def setBeakOrientation(value: String): Self = StObject.set(x, "beakOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBox(value: HTMLElement): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: HTMLElement): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
+    inline def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+    inline def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchPoint(value: HTMLElement): Self = StObject.set(x, "launchPoint", value.asInstanceOf[js.Any])
+    inline def setLaunchPoint(value: HTMLElement): Self = StObject.set(x, "launchPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClosedCallback(value: Callout => Unit): Self = StObject.set(x, "onClosedCallback", js.Any.fromFunction1(value))
+    inline def setOnClosedCallback(value: Callout => Unit): Self = StObject.set(x, "onClosedCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClosingCallback(value: Callout => Unit): Self = StObject.set(x, "onClosingCallback", js.Any.fromFunction1(value))
+    inline def setOnClosingCallback(value: Callout => Unit): Self = StObject.set(x, "onClosingCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOpenedCallback(value: Callout => Unit): Self = StObject.set(x, "onOpenedCallback", js.Any.fromFunction1(value))
+    inline def setOnOpenedCallback(value: Callout => Unit): Self = StObject.set(x, "onOpenedCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOpeningCallback(value: Callout => Unit): Self = StObject.set(x, "onOpeningCallback", js.Any.fromFunction1(value))
+    inline def setOnOpeningCallback(value: Callout => Unit): Self = StObject.set(x, "onOpeningCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenOptions(value: CalloutOpenOptions): Self = StObject.set(x, "openOptions", value.asInstanceOf[js.Any])
+    inline def setOpenOptions(value: CalloutOpenOptions): Self = StObject.set(x, "openOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionAlgorithm(value: Callout => Unit): Self = StObject.set(x, "positionAlgorithm", js.Any.fromFunction1(value))
+    inline def setPositionAlgorithm(value: Callout => Unit): Self = StObject.set(x, "positionAlgorithm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(code: String): String = ^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(code: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(code: String): String = ^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(code: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("decomment", JSImport.Namespace)
   @js.native
@@ -21,28 +19,23 @@ object mod {
     * - \n - for Unix-encoded text
     * - \r\n - for Windows-encoded text
     */
-  @scala.inline
-  def getEOL(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEOL")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getEOL(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEOL")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Unlike the default decomment method, it instructs the library not to parse
     * or validate the input in any way, rather assume it to be HTML,
     * and remove all <!-- comment --> entries from it according to the options.
     */
-  @scala.inline
-  def html(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(html.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def html(html: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def html(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def html(html: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Unlike the default decomment, it instructs the library that text is not a JSON,
     * JavaScript or HTML, rather a plain text that needs no parsing or validation,
     * only to remove \/\/ and \/ **\/ comments from it according to the options.
     */
-  @scala.inline
-  def text(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def text(text: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def text(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def text(text: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options extends StObject {
     
@@ -75,41 +68,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIgnore(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: RegExp*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: RegExp*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+      inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+      inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
       
-      @scala.inline
-      def setSpace(value: Boolean): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Boolean): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
 }

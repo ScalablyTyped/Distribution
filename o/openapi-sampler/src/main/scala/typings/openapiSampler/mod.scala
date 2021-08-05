@@ -10,14 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sample(schema: OpenApiSchema): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def sample(schema: OpenApiSchema, options: Unit, spec: OpenApiSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def sample(schema: OpenApiSchema, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def sample(schema: OpenApiSchema, options: Options, spec: OpenApiSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sample(schema: OpenApiSchema): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def sample(schema: OpenApiSchema, options: Unit, spec: OpenApiSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sample(schema: OpenApiSchema, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sample(schema: OpenApiSchema, options: Options, spec: OpenApiSpec): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type OpenApiSchema = js.Any
   
@@ -47,38 +43,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      @scala.inline
-      def setSkipNonRequired(value: Boolean): Self = StObject.set(x, "skipNonRequired", value.asInstanceOf[js.Any])
+      inline def setSkipNonRequired(value: Boolean): Self = StObject.set(x, "skipNonRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipNonRequiredUndefined: Self = StObject.set(x, "skipNonRequired", js.undefined)
+      inline def setSkipNonRequiredUndefined: Self = StObject.set(x, "skipNonRequired", js.undefined)
       
-      @scala.inline
-      def setSkipReadOnly(value: Boolean): Self = StObject.set(x, "skipReadOnly", value.asInstanceOf[js.Any])
+      inline def setSkipReadOnly(value: Boolean): Self = StObject.set(x, "skipReadOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipReadOnlyUndefined: Self = StObject.set(x, "skipReadOnly", js.undefined)
+      inline def setSkipReadOnlyUndefined: Self = StObject.set(x, "skipReadOnly", js.undefined)
       
-      @scala.inline
-      def setSkipWriteOnly(value: Boolean): Self = StObject.set(x, "skipWriteOnly", value.asInstanceOf[js.Any])
+      inline def setSkipWriteOnly(value: Boolean): Self = StObject.set(x, "skipWriteOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipWriteOnlyUndefined: Self = StObject.set(x, "skipWriteOnly", js.undefined)
+      inline def setSkipWriteOnlyUndefined: Self = StObject.set(x, "skipWriteOnly", js.undefined)
     }
   }
 }

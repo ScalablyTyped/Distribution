@@ -23,31 +23,23 @@ trait IdentityInfo extends StObject {
 }
 object IdentityInfo {
   
-  @scala.inline
-  def apply(): IdentityInfo = {
+  inline def apply(): IdentityInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentityInfo]
   }
   
-  @scala.inline
-  implicit class IdentityInfoMutableBuilder[Self <: IdentityInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityInfo](x: Self) {
     
-    @scala.inline
-    def setIdentityName(value: Identity): Self = StObject.set(x, "IdentityName", value.asInstanceOf[js.Any])
+    inline def setIdentityName(value: Identity): Self = StObject.set(x, "IdentityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityNameUndefined: Self = StObject.set(x, "IdentityName", js.undefined)
+    inline def setIdentityNameUndefined: Self = StObject.set(x, "IdentityName", js.undefined)
     
-    @scala.inline
-    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
+    inline def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
+    inline def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
     
-    @scala.inline
-    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
+    inline def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
+    inline def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
   }
 }

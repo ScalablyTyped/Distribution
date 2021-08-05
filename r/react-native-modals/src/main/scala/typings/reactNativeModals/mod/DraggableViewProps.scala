@@ -26,67 +26,47 @@ trait DraggableViewProps extends StObject {
 }
 object DraggableViewProps {
   
-  @scala.inline
-  def apply(): DraggableViewProps = {
+  inline def apply(): DraggableViewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DraggableViewProps]
   }
   
-  @scala.inline
-  implicit class DraggableViewPropsMutableBuilder[Self <: DraggableViewProps] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableViewProps](x: Self) {
     
-    @scala.inline
-    def setOnMove(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction1(value))
+    inline def setOnMove(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
+    inline def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
     
-    @scala.inline
-    def setOnRelease(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
+    inline def setOnRelease(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
+    inline def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
     
-    @scala.inline
-    def setOnSwipeOut(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onSwipeOut", js.Any.fromFunction1(value))
+    inline def setOnSwipeOut(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onSwipeOut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSwipeOutUndefined: Self = StObject.set(x, "onSwipeOut", js.undefined)
+    inline def setOnSwipeOutUndefined: Self = StObject.set(x, "onSwipeOut", js.undefined)
     
-    @scala.inline
-    def setOnSwiping(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
+    inline def setOnSwiping(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onSwiping", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSwipingOut(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onSwipingOut", js.Any.fromFunction1(value))
+    inline def setOnSwipingOut(value: /* event */ DragEvent => Unit): Self = StObject.set(x, "onSwipingOut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSwipingOutUndefined: Self = StObject.set(x, "onSwipingOut", js.undefined)
+    inline def setOnSwipingOutUndefined: Self = StObject.set(x, "onSwipingOut", js.undefined)
     
-    @scala.inline
-    def setOnSwipingUndefined: Self = StObject.set(x, "onSwiping", js.undefined)
+    inline def setOnSwipingUndefined: Self = StObject.set(x, "onSwiping", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSwipeDirection(value: SwipeDirection | js.Array[SwipeDirection]): Self = StObject.set(x, "swipeDirection", value.asInstanceOf[js.Any])
+    inline def setSwipeDirection(value: SwipeDirection | js.Array[SwipeDirection]): Self = StObject.set(x, "swipeDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeDirectionUndefined: Self = StObject.set(x, "swipeDirection", js.undefined)
+    inline def setSwipeDirectionUndefined: Self = StObject.set(x, "swipeDirection", js.undefined)
     
-    @scala.inline
-    def setSwipeDirectionVarargs(value: SwipeDirection*): Self = StObject.set(x, "swipeDirection", js.Array(value :_*))
+    inline def setSwipeDirectionVarargs(value: SwipeDirection*): Self = StObject.set(x, "swipeDirection", js.Array(value :_*))
     
-    @scala.inline
-    def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
+    inline def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeThresholdUndefined: Self = StObject.set(x, "swipeThreshold", js.undefined)
+    inline def setSwipeThresholdUndefined: Self = StObject.set(x, "swipeThreshold", js.undefined)
   }
 }

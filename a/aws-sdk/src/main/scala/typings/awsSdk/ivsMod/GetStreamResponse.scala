@@ -10,19 +10,15 @@ trait GetStreamResponse extends StObject {
 }
 object GetStreamResponse {
   
-  @scala.inline
-  def apply(): GetStreamResponse = {
+  inline def apply(): GetStreamResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStreamResponse]
   }
   
-  @scala.inline
-  implicit class GetStreamResponseMutableBuilder[Self <: GetStreamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetStreamResponse](x: Self) {
     
-    @scala.inline
-    def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

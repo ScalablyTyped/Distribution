@@ -56,26 +56,20 @@ object mod {
   }
   object ClusterProperties {
     
-    @scala.inline
-    def apply(cluster_id: Double, point_count: Double, point_count_abbreviated: String | Double): ClusterProperties = {
+    inline def apply(cluster_id: Double, point_count: Double, point_count_abbreviated: String | Double): ClusterProperties = {
       val __obj = js.Dynamic.literal(cluster = true, cluster_id = cluster_id.asInstanceOf[js.Any], point_count = point_count.asInstanceOf[js.Any], point_count_abbreviated = point_count_abbreviated.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterProperties]
     }
     
-    @scala.inline
-    implicit class ClusterPropertiesMutableBuilder[Self <: ClusterProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterProperties](x: Self) {
       
-      @scala.inline
-      def setCluster(value: `true`): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+      inline def setCluster(value: `true`): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCluster_id(value: Double): Self = StObject.set(x, "cluster_id", value.asInstanceOf[js.Any])
+      inline def setCluster_id(value: Double): Self = StObject.set(x, "cluster_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoint_count(value: Double): Self = StObject.set(x, "point_count", value.asInstanceOf[js.Any])
+      inline def setPoint_count(value: Double): Self = StObject.set(x, "point_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoint_count_abbreviated(value: String | Double): Self = StObject.set(x, "point_count_abbreviated", value.asInstanceOf[js.Any])
+      inline def setPoint_count_abbreviated(value: String | Double): Self = StObject.set(x, "point_count_abbreviated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,62 +135,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[P, C](): Options[P, C] = {
+    inline def apply[P, C](): Options[P, C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[P, C]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], P, C] (val x: Self & (Options[P, C])) extends AnyVal {
+    extension [Self <: Options[?, ?], P, C](x: Self & (Options[P, C])) {
       
-      @scala.inline
-      def setExtent(value: Double): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: Double): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setMap(value: /* props */ P => C): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: /* props */ P => C): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+      inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
       
-      @scala.inline
-      def setNodeSize(value: Double): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
+      inline def setNodeSize(value: Double): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeSizeUndefined: Self = StObject.set(x, "nodeSize", js.undefined)
+      inline def setNodeSizeUndefined: Self = StObject.set(x, "nodeSize", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setReduce(value: (/* accumulated */ C, /* props */ C) => Unit): Self = StObject.set(x, "reduce", js.Any.fromFunction2(value))
+      inline def setReduce(value: (/* accumulated */ C, /* props */ C) => Unit): Self = StObject.set(x, "reduce", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
+      inline def setReduceUndefined: Self = StObject.set(x, "reduce", js.undefined)
     }
   }
   
@@ -272,20 +248,16 @@ object mod {
   }
   object Tile {
     
-    @scala.inline
-    def apply[C, P](features: js.Array[TileFeature[C, P]]): Tile[C, P] = {
+    inline def apply[C, P](features: js.Array[TileFeature[C, P]]): Tile[C, P] = {
       val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tile[C, P]]
     }
     
-    @scala.inline
-    implicit class TileMutableBuilder[Self <: Tile[?, ?], C, P] (val x: Self & (Tile[C, P])) extends AnyVal {
+    extension [Self <: Tile[?, ?], C, P](x: Self & (Tile[C, P])) {
       
-      @scala.inline
-      def setFeatures(value: js.Array[TileFeature[C, P]]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: js.Array[TileFeature[C, P]]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesVarargs(value: (TileFeature[C, P])*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: (TileFeature[C, P])*): Self = StObject.set(x, "features", js.Array(value :_*))
     }
   }
   
@@ -299,27 +271,21 @@ object mod {
   }
   object TileFeature {
     
-    @scala.inline
-    def apply[C, P](geometry: js.Array[js.Tuple2[Double, Double]], tags: (ClusterProperties & C) | P): TileFeature[C, P] = {
+    inline def apply[C, P](geometry: js.Array[js.Tuple2[Double, Double]], tags: (ClusterProperties & C) | P): TileFeature[C, P] = {
       val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(1)
       __obj.asInstanceOf[TileFeature[C, P]]
     }
     
-    @scala.inline
-    implicit class TileFeatureMutableBuilder[Self <: TileFeature[?, ?], C, P] (val x: Self & (TileFeature[C, P])) extends AnyVal {
+    extension [Self <: TileFeature[?, ?], C, P](x: Self & (TileFeature[C, P])) {
       
-      @scala.inline
-      def setGeometry(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometryVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "geometry", js.Array(value :_*))
+      inline def setGeometryVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "geometry", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: (ClusterProperties & C) | P): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: (ClusterProperties & C) | P): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `1`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `1`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

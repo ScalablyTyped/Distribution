@@ -21,6 +21,5 @@ object Emitter {
   @JSImport("vscode-languageclient", "Emitter._noop")
   @js.native
   def _noop: js.Any = js.native
-  @scala.inline
-  def _noop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
+  inline def _noop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
 }

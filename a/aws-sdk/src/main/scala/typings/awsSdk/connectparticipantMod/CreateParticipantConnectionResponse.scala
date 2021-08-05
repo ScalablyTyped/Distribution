@@ -18,25 +18,19 @@ trait CreateParticipantConnectionResponse extends StObject {
 }
 object CreateParticipantConnectionResponse {
   
-  @scala.inline
-  def apply(): CreateParticipantConnectionResponse = {
+  inline def apply(): CreateParticipantConnectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateParticipantConnectionResponse]
   }
   
-  @scala.inline
-  implicit class CreateParticipantConnectionResponseMutableBuilder[Self <: CreateParticipantConnectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateParticipantConnectionResponse](x: Self) {
     
-    @scala.inline
-    def setConnectionCredentials(value: ConnectionCredentials): Self = StObject.set(x, "ConnectionCredentials", value.asInstanceOf[js.Any])
+    inline def setConnectionCredentials(value: ConnectionCredentials): Self = StObject.set(x, "ConnectionCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionCredentialsUndefined: Self = StObject.set(x, "ConnectionCredentials", js.undefined)
+    inline def setConnectionCredentialsUndefined: Self = StObject.set(x, "ConnectionCredentials", js.undefined)
     
-    @scala.inline
-    def setWebsocket(value: Websocket): Self = StObject.set(x, "Websocket", value.asInstanceOf[js.Any])
+    inline def setWebsocket(value: Websocket): Self = StObject.set(x, "Websocket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsocketUndefined: Self = StObject.set(x, "Websocket", js.undefined)
+    inline def setWebsocketUndefined: Self = StObject.set(x, "Websocket", js.undefined)
   }
 }

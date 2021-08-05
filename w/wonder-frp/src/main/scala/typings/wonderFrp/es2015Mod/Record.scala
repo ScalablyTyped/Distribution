@@ -22,14 +22,10 @@ object Record {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(time: Double, value: js.Any): typings.wonderFrp.testingRecordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.testingRecordMod.Record]
-  @scala.inline
-  def create(time: Double, value: js.Any, actionType: Unit, comparer: js.Function): typings.wonderFrp.testingRecordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any], comparer.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.testingRecordMod.Record]
-  @scala.inline
-  def create(time: Double, value: js.Any, actionType: typings.wonderFrp.testingActionTypeMod.ActionType): typings.wonderFrp.testingRecordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.testingRecordMod.Record]
-  @scala.inline
-  def create(
+  inline def create(time: Double, value: js.Any): typings.wonderFrp.testingRecordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.testingRecordMod.Record]
+  inline def create(time: Double, value: js.Any, actionType: Unit, comparer: js.Function): typings.wonderFrp.testingRecordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any], comparer.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.testingRecordMod.Record]
+  inline def create(time: Double, value: js.Any, actionType: typings.wonderFrp.testingActionTypeMod.ActionType): typings.wonderFrp.testingRecordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], value.asInstanceOf[js.Any], actionType.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.testingRecordMod.Record]
+  inline def create(
     time: Double,
     value: js.Any,
     actionType: typings.wonderFrp.testingActionTypeMod.ActionType,

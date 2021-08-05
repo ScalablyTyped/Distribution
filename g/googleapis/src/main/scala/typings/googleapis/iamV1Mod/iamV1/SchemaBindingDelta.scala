@@ -35,37 +35,27 @@ trait SchemaBindingDelta extends StObject {
 }
 object SchemaBindingDelta {
   
-  @scala.inline
-  def apply(): SchemaBindingDelta = {
+  inline def apply(): SchemaBindingDelta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBindingDelta]
   }
   
-  @scala.inline
-  implicit class SchemaBindingDeltaMutableBuilder[Self <: SchemaBindingDelta] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBindingDelta](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setCondition(value: SchemaExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: SchemaExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setMember(value: String): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
+    inline def setMember(value: String): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
+    inline def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

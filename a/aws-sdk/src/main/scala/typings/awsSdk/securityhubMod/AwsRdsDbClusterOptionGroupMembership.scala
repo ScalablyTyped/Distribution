@@ -18,25 +18,19 @@ trait AwsRdsDbClusterOptionGroupMembership extends StObject {
 }
 object AwsRdsDbClusterOptionGroupMembership {
   
-  @scala.inline
-  def apply(): AwsRdsDbClusterOptionGroupMembership = {
+  inline def apply(): AwsRdsDbClusterOptionGroupMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbClusterOptionGroupMembership]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbClusterOptionGroupMembershipMutableBuilder[Self <: AwsRdsDbClusterOptionGroupMembership] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbClusterOptionGroupMembership](x: Self) {
     
-    @scala.inline
-    def setDbClusterOptionGroupName(value: NonEmptyString): Self = StObject.set(x, "DbClusterOptionGroupName", value.asInstanceOf[js.Any])
+    inline def setDbClusterOptionGroupName(value: NonEmptyString): Self = StObject.set(x, "DbClusterOptionGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbClusterOptionGroupNameUndefined: Self = StObject.set(x, "DbClusterOptionGroupName", js.undefined)
+    inline def setDbClusterOptionGroupNameUndefined: Self = StObject.set(x, "DbClusterOptionGroupName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

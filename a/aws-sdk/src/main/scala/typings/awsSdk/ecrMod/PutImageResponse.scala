@@ -13,19 +13,15 @@ trait PutImageResponse extends StObject {
 }
 object PutImageResponse {
   
-  @scala.inline
-  def apply(): PutImageResponse = {
+  inline def apply(): PutImageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutImageResponse]
   }
   
-  @scala.inline
-  implicit class PutImageResponseMutableBuilder[Self <: PutImageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutImageResponse](x: Self) {
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

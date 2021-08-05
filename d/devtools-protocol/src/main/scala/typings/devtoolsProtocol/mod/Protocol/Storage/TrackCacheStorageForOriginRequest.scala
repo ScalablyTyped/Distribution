@@ -13,16 +13,13 @@ trait TrackCacheStorageForOriginRequest extends StObject {
 }
 object TrackCacheStorageForOriginRequest {
   
-  @scala.inline
-  def apply(origin: String): TrackCacheStorageForOriginRequest = {
+  inline def apply(origin: String): TrackCacheStorageForOriginRequest = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackCacheStorageForOriginRequest]
   }
   
-  @scala.inline
-  implicit class TrackCacheStorageForOriginRequestMutableBuilder[Self <: TrackCacheStorageForOriginRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TrackCacheStorageForOriginRequest](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

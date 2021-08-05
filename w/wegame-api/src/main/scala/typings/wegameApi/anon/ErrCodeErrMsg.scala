@@ -18,19 +18,15 @@ trait ErrCodeErrMsg extends StObject {
 }
 object ErrCodeErrMsg {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String): ErrCodeErrMsg = {
+  inline def apply(errCode: Double, errMsg: String): ErrCodeErrMsg = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrCodeErrMsg]
   }
   
-  @scala.inline
-  implicit class ErrCodeErrMsgMutableBuilder[Self <: ErrCodeErrMsg] (val x: Self) extends AnyVal {
+  extension [Self <: ErrCodeErrMsg](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

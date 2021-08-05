@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Group extends StObject {
   
-  @JSName("ADOX.Group_typekey")
+  /* private */ @JSName("ADOX.Group_typekey")
   var ADOXDotGroup_typekey: Group = js.native
   
   def GetPermissions(Name: String, ObjectType: ObjectTypeEnum): RightsEnum = js.native

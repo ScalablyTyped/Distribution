@@ -53,8 +53,7 @@ trait AzureRestApiRequestModel extends StObject {
 }
 object AzureRestApiRequestModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assetDetails: AssetDetails,
     assetId: String,
     assetVersion: Double,
@@ -70,34 +69,24 @@ object AzureRestApiRequestModel {
     __obj.asInstanceOf[AzureRestApiRequestModel]
   }
   
-  @scala.inline
-  implicit class AzureRestApiRequestModelMutableBuilder[Self <: AzureRestApiRequestModel] (val x: Self) extends AnyVal {
+  extension [Self <: AzureRestApiRequestModel](x: Self) {
     
-    @scala.inline
-    def setAssetDetails(value: AssetDetails): Self = StObject.set(x, "assetDetails", value.asInstanceOf[js.Any])
+    inline def setAssetDetails(value: AssetDetails): Self = StObject.set(x, "assetDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetVersion(value: Double): Self = StObject.set(x, "assetVersion", value.asInstanceOf[js.Any])
+    inline def setAssetVersion(value: Double): Self = StObject.set(x, "assetVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerSupportEmail(value: String): Self = StObject.set(x, "customerSupportEmail", value.asInstanceOf[js.Any])
+    inline def setCustomerSupportEmail(value: String): Self = StObject.set(x, "customerSupportEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationContactEmail(value: String): Self = StObject.set(x, "integrationContactEmail", value.asInstanceOf[js.Any])
+    inline def setIntegrationContactEmail(value: String): Self = StObject.set(x, "integrationContactEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherId(value: String): Self = StObject.set(x, "publisherId", value.asInstanceOf[js.Any])
+    inline def setPublisherId(value: String): Self = StObject.set(x, "publisherId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

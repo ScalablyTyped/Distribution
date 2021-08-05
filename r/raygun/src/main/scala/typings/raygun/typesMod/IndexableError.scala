@@ -12,8 +12,7 @@ trait IndexableError
      with /* key */ StringDictionary[js.Any]
 object IndexableError {
   
-  @scala.inline
-  def apply(message: String, name: String): IndexableError = {
+  inline def apply(message: String, name: String): IndexableError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexableError]
   }

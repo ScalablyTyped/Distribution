@@ -11,8 +11,7 @@ trait IConfiguredThemes
      with /* name */ StringDictionary[ITheme]
 object IConfiguredThemes {
   
-  @scala.inline
-  def apply(default: ITheme): IConfiguredThemes = {
+  inline def apply(default: ITheme): IConfiguredThemes = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfiguredThemes]
   }

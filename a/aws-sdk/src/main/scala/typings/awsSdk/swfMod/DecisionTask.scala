@@ -43,8 +43,7 @@ trait DecisionTask extends StObject {
 }
 object DecisionTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: HistoryEventList,
     startedEventId: EventId,
     taskToken: TaskToken,
@@ -55,37 +54,26 @@ object DecisionTask {
     __obj.asInstanceOf[DecisionTask]
   }
   
-  @scala.inline
-  implicit class DecisionTaskMutableBuilder[Self <: DecisionTask] (val x: Self) extends AnyVal {
+  extension [Self <: DecisionTask](x: Self) {
     
-    @scala.inline
-    def setEvents(value: HistoryEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: HistoryEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(value: HistoryEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: HistoryEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPreviousStartedEventId(value: EventId): Self = StObject.set(x, "previousStartedEventId", value.asInstanceOf[js.Any])
+    inline def setPreviousStartedEventId(value: EventId): Self = StObject.set(x, "previousStartedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousStartedEventIdUndefined: Self = StObject.set(x, "previousStartedEventId", js.undefined)
+    inline def setPreviousStartedEventIdUndefined: Self = StObject.set(x, "previousStartedEventId", js.undefined)
     
-    @scala.inline
-    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
+    inline def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
+    inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
+    inline def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
+    inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait GetFilterRequest extends StObject {
 }
 object GetFilterRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId, FilterName: String): GetFilterRequest = {
+  inline def apply(DetectorId: DetectorId, FilterName: String): GetFilterRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], FilterName = FilterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFilterRequest]
   }
   
-  @scala.inline
-  implicit class GetFilterRequestMutableBuilder[Self <: GetFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFilterRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterName(value: String): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: String): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
   }
 }

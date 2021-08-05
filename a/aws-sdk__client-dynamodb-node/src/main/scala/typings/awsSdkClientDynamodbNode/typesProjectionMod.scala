@@ -24,29 +24,22 @@ object typesProjectionMod {
   }
   object Projection {
     
-    @scala.inline
-    def apply(): Projection = {
+    inline def apply(): Projection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Projection]
     }
     
-    @scala.inline
-    implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+    extension [Self <: Projection](x: Self) {
       
-      @scala.inline
-      def setNonKeyAttributes(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
+      inline def setNonKeyAttributes(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
+      inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
       
-      @scala.inline
-      def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
+      inline def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setProjectionType(value: ALL | KEYS_ONLY | INCLUDE | String): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
+      inline def setProjectionType(value: ALL | KEYS_ONLY | INCLUDE | String): Self = StObject.set(x, "ProjectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionTypeUndefined: Self = StObject.set(x, "ProjectionType", js.undefined)
+      inline def setProjectionTypeUndefined: Self = StObject.set(x, "ProjectionType", js.undefined)
     }
   }
   
@@ -62,23 +55,18 @@ object typesProjectionMod {
   }
   object UnmarshalledProjection {
     
-    @scala.inline
-    def apply(): UnmarshalledProjection = {
+    inline def apply(): UnmarshalledProjection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledProjection]
     }
     
-    @scala.inline
-    implicit class UnmarshalledProjectionMutableBuilder[Self <: UnmarshalledProjection] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledProjection](x: Self) {
       
-      @scala.inline
-      def setNonKeyAttributes(value: js.Array[String]): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
+      inline def setNonKeyAttributes(value: js.Array[String]): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
+      inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "NonKeyAttributes", js.undefined)
       
-      @scala.inline
-      def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
+      inline def setNonKeyAttributesVarargs(value: String*): Self = StObject.set(x, "NonKeyAttributes", js.Array(value :_*))
     }
   }
 }

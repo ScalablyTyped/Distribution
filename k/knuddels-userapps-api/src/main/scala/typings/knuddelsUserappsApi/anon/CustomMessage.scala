@@ -14,31 +14,23 @@ trait CustomMessage extends StObject {
 }
 object CustomMessage {
   
-  @scala.inline
-  def apply(): CustomMessage = {
+  inline def apply(): CustomMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomMessage]
   }
   
-  @scala.inline
-  implicit class CustomMessageMutableBuilder[Self <: CustomMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CustomMessage](x: Self) {
     
-    @scala.inline
-    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
+    inline def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
+    inline def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
     
-    @scala.inline
-    def setToAccount(value: Boolean): Self = StObject.set(x, "toAccount", value.asInstanceOf[js.Any])
+    inline def setToAccount(value: Boolean): Self = StObject.set(x, "toAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToAccountUndefined: Self = StObject.set(x, "toAccount", js.undefined)
+    inline def setToAccountUndefined: Self = StObject.set(x, "toAccount", js.undefined)
     
-    @scala.inline
-    def setTransferReason(value: String): Self = StObject.set(x, "transferReason", value.asInstanceOf[js.Any])
+    inline def setTransferReason(value: String): Self = StObject.set(x, "transferReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferReasonUndefined: Self = StObject.set(x, "transferReason", js.undefined)
+    inline def setTransferReasonUndefined: Self = StObject.set(x, "transferReason", js.undefined)
   }
 }

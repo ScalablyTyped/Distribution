@@ -27,8 +27,7 @@ trait Document
 }
 object Document {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentLocation: String,
     Name: String,
     PropertySetInfo: XPropertySetInfo,
@@ -47,13 +46,10 @@ object Document {
     __obj.asInstanceOf[Document]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+  extension [Self <: Document](x: Self) {
     
-    @scala.inline
-    def setDocumentLocation(value: String): Self = StObject.set(x, "DocumentLocation", value.asInstanceOf[js.Any])
+    inline def setDocumentLocation(value: String): Self = StObject.set(x, "DocumentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

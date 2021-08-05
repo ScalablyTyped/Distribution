@@ -15,8 +15,7 @@ trait IValidator extends StObject {
 }
 object IValidator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Error: IError,
     Validate: js.Any => IValidationFailure,
     ValidateAsync: js.Any => Promise[IValidationFailure]
@@ -25,16 +24,12 @@ object IValidator {
     __obj.asInstanceOf[IValidator]
   }
   
-  @scala.inline
-  implicit class IValidatorMutableBuilder[Self <: IValidator] (val x: Self) extends AnyVal {
+  extension [Self <: IValidator](x: Self) {
     
-    @scala.inline
-    def setError(value: IError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: IError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate(value: js.Any => IValidationFailure): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: js.Any => IValidationFailure): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateAsync(value: js.Any => Promise[IValidationFailure]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
+    inline def setValidateAsync(value: js.Any => Promise[IValidationFailure]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
   }
 }

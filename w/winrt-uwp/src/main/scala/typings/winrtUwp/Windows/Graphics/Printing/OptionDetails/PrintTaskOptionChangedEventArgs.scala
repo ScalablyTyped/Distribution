@@ -12,16 +12,13 @@ trait PrintTaskOptionChangedEventArgs extends StObject {
 }
 object PrintTaskOptionChangedEventArgs {
   
-  @scala.inline
-  def apply(optionId: js.Any): PrintTaskOptionChangedEventArgs = {
+  inline def apply(optionId: js.Any): PrintTaskOptionChangedEventArgs = {
     val __obj = js.Dynamic.literal(optionId = optionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTaskOptionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class PrintTaskOptionChangedEventArgsMutableBuilder[Self <: PrintTaskOptionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PrintTaskOptionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOptionId(value: js.Any): Self = StObject.set(x, "optionId", value.asInstanceOf[js.Any])
+    inline def setOptionId(value: js.Any): Self = StObject.set(x, "optionId", value.asInstanceOf[js.Any])
   }
 }

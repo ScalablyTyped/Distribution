@@ -12,19 +12,15 @@ trait GeocodingEvent extends StObject {
 }
 object GeocodingEvent {
   
-  @scala.inline
-  def apply(waypoint: Waypoint_, waypointIndex: Double): GeocodingEvent = {
+  inline def apply(waypoint: Waypoint_, waypointIndex: Double): GeocodingEvent = {
     val __obj = js.Dynamic.literal(waypoint = waypoint.asInstanceOf[js.Any], waypointIndex = waypointIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodingEvent]
   }
   
-  @scala.inline
-  implicit class GeocodingEventMutableBuilder[Self <: GeocodingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GeocodingEvent](x: Self) {
     
-    @scala.inline
-    def setWaypoint(value: Waypoint_): Self = StObject.set(x, "waypoint", value.asInstanceOf[js.Any])
+    inline def setWaypoint(value: Waypoint_): Self = StObject.set(x, "waypoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointIndex(value: Double): Self = StObject.set(x, "waypointIndex", value.asInstanceOf[js.Any])
+    inline def setWaypointIndex(value: Double): Self = StObject.set(x, "waypointIndex", value.asInstanceOf[js.Any])
   }
 }

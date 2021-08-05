@@ -58,41 +58,30 @@ object modalTypesMod {
   }
   object IDragOptions {
     
-    @scala.inline
-    def apply(closeMenuItemText: String, menu: FunctionComponent[IContextualMenuProps], moveMenuItemText: String): IDragOptions = {
+    inline def apply(closeMenuItemText: String, menu: FunctionComponent[IContextualMenuProps], moveMenuItemText: String): IDragOptions = {
       val __obj = js.Dynamic.literal(closeMenuItemText = closeMenuItemText.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], moveMenuItemText = moveMenuItemText.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDragOptions]
     }
     
-    @scala.inline
-    implicit class IDragOptionsMutableBuilder[Self <: IDragOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDragOptions](x: Self) {
       
-      @scala.inline
-      def setCloseMenuItemText(value: String): Self = StObject.set(x, "closeMenuItemText", value.asInstanceOf[js.Any])
+      inline def setCloseMenuItemText(value: String): Self = StObject.set(x, "closeMenuItemText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragHandleSelector(value: String): Self = StObject.set(x, "dragHandleSelector", value.asInstanceOf[js.Any])
+      inline def setDragHandleSelector(value: String): Self = StObject.set(x, "dragHandleSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragHandleSelectorUndefined: Self = StObject.set(x, "dragHandleSelector", js.undefined)
+      inline def setDragHandleSelectorUndefined: Self = StObject.set(x, "dragHandleSelector", js.undefined)
       
-      @scala.inline
-      def setKeepInBounds(value: Boolean): Self = StObject.set(x, "keepInBounds", value.asInstanceOf[js.Any])
+      inline def setKeepInBounds(value: Boolean): Self = StObject.set(x, "keepInBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepInBoundsUndefined: Self = StObject.set(x, "keepInBounds", js.undefined)
+      inline def setKeepInBoundsUndefined: Self = StObject.set(x, "keepInBounds", js.undefined)
       
-      @scala.inline
-      def setKeyboardMoveIconProps(value: IIconProps): Self = StObject.set(x, "keyboardMoveIconProps", value.asInstanceOf[js.Any])
+      inline def setKeyboardMoveIconProps(value: IIconProps): Self = StObject.set(x, "keyboardMoveIconProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardMoveIconPropsUndefined: Self = StObject.set(x, "keyboardMoveIconProps", js.undefined)
+      inline def setKeyboardMoveIconPropsUndefined: Self = StObject.set(x, "keyboardMoveIconProps", js.undefined)
       
-      @scala.inline
-      def setMenu(value: FunctionComponent[IContextualMenuProps]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: FunctionComponent[IContextualMenuProps]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveMenuItemText(value: String): Self = StObject.set(x, "moveMenuItemText", value.asInstanceOf[js.Any])
+      inline def setMoveMenuItemText(value: String): Self = StObject.set(x, "moveMenuItemText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,17 +94,14 @@ object modalTypesMod {
   }
   object IModal {
     
-    @scala.inline
-    def apply(focus: () => Unit): IModal = {
+    inline def apply(focus: () => Unit): IModal = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[IModal]
     }
     
-    @scala.inline
-    implicit class IModalMutableBuilder[Self <: IModal] (val x: Self) extends AnyVal {
+    extension [Self <: IModal](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -245,146 +231,100 @@ object modalTypesMod {
   }
   object IModalProps {
     
-    @scala.inline
-    def apply(): IModalProps = {
+    inline def apply(): IModalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IModalProps]
     }
     
-    @scala.inline
-    implicit class IModalPropsMutableBuilder[Self <: IModalProps] (val x: Self) extends AnyVal {
+    extension [Self <: IModalProps](x: Self) {
       
-      @scala.inline
-      def setAllowTouchBodyScroll(value: Boolean): Self = StObject.set(x, "allowTouchBodyScroll", value.asInstanceOf[js.Any])
+      inline def setAllowTouchBodyScroll(value: Boolean): Self = StObject.set(x, "allowTouchBodyScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowTouchBodyScrollUndefined: Self = StObject.set(x, "allowTouchBodyScroll", js.undefined)
+      inline def setAllowTouchBodyScrollUndefined: Self = StObject.set(x, "allowTouchBodyScroll", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IModal]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IModal]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IModal | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IModal | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
-      @scala.inline
-      def setDragOptions(value: IDragOptions): Self = StObject.set(x, "dragOptions", value.asInstanceOf[js.Any])
+      inline def setDragOptions(value: IDragOptions): Self = StObject.set(x, "dragOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragOptionsUndefined: Self = StObject.set(x, "dragOptions", js.undefined)
+      inline def setDragOptionsUndefined: Self = StObject.set(x, "dragOptions", js.undefined)
       
-      @scala.inline
-      def setEnableAriaHiddenSiblings(value: Boolean): Self = StObject.set(x, "enableAriaHiddenSiblings", value.asInstanceOf[js.Any])
+      inline def setEnableAriaHiddenSiblings(value: Boolean): Self = StObject.set(x, "enableAriaHiddenSiblings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableAriaHiddenSiblingsUndefined: Self = StObject.set(x, "enableAriaHiddenSiblings", js.undefined)
+      inline def setEnableAriaHiddenSiblingsUndefined: Self = StObject.set(x, "enableAriaHiddenSiblings", js.undefined)
       
-      @scala.inline
-      def setIsBlocking(value: Boolean): Self = StObject.set(x, "isBlocking", value.asInstanceOf[js.Any])
+      inline def setIsBlocking(value: Boolean): Self = StObject.set(x, "isBlocking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBlockingUndefined: Self = StObject.set(x, "isBlocking", js.undefined)
+      inline def setIsBlockingUndefined: Self = StObject.set(x, "isBlocking", js.undefined)
       
-      @scala.inline
-      def setIsDarkOverlay(value: Boolean): Self = StObject.set(x, "isDarkOverlay", value.asInstanceOf[js.Any])
+      inline def setIsDarkOverlay(value: Boolean): Self = StObject.set(x, "isDarkOverlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDarkOverlayUndefined: Self = StObject.set(x, "isDarkOverlay", js.undefined)
+      inline def setIsDarkOverlayUndefined: Self = StObject.set(x, "isDarkOverlay", js.undefined)
       
-      @scala.inline
-      def setIsModeless(value: Boolean): Self = StObject.set(x, "isModeless", value.asInstanceOf[js.Any])
+      inline def setIsModeless(value: Boolean): Self = StObject.set(x, "isModeless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsModelessUndefined: Self = StObject.set(x, "isModeless", js.undefined)
+      inline def setIsModelessUndefined: Self = StObject.set(x, "isModeless", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setLayerProps(value: ILayerProps): Self = StObject.set(x, "layerProps", value.asInstanceOf[js.Any])
+      inline def setLayerProps(value: ILayerProps): Self = StObject.set(x, "layerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerPropsUndefined: Self = StObject.set(x, "layerProps", js.undefined)
+      inline def setLayerPropsUndefined: Self = StObject.set(x, "layerProps", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setOnDismissed(value: () => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
+      inline def setOnDismissed(value: () => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
+      inline def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
       
-      @scala.inline
-      def setOnLayerDidMount(value: () => Unit): Self = StObject.set(x, "onLayerDidMount", js.Any.fromFunction0(value))
+      inline def setOnLayerDidMount(value: () => Unit): Self = StObject.set(x, "onLayerDidMount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLayerDidMountUndefined: Self = StObject.set(x, "onLayerDidMount", js.undefined)
+      inline def setOnLayerDidMountUndefined: Self = StObject.set(x, "onLayerDidMount", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: IOverlayProps): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: IOverlayProps): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setScrollableContentClassName(value: String): Self = StObject.set(x, "scrollableContentClassName", value.asInstanceOf[js.Any])
+      inline def setScrollableContentClassName(value: String): Self = StObject.set(x, "scrollableContentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollableContentClassNameUndefined: Self = StObject.set(x, "scrollableContentClassName", js.undefined)
+      inline def setScrollableContentClassNameUndefined: Self = StObject.set(x, "scrollableContentClassName", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IModalStyleProps, IModalStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IModalStyleProps, IModalStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IModalStyleProps => DeepPartial[IModalStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IModalStyleProps => DeepPartial[IModalStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setSubtitleAriaId(value: String): Self = StObject.set(x, "subtitleAriaId", value.asInstanceOf[js.Any])
+      inline def setSubtitleAriaId(value: String): Self = StObject.set(x, "subtitleAriaId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleAriaIdUndefined: Self = StObject.set(x, "subtitleAriaId", js.undefined)
+      inline def setSubtitleAriaIdUndefined: Self = StObject.set(x, "subtitleAriaId", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTitleAriaId(value: String): Self = StObject.set(x, "titleAriaId", value.asInstanceOf[js.Any])
+      inline def setTitleAriaId(value: String): Self = StObject.set(x, "titleAriaId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAriaIdUndefined: Self = StObject.set(x, "titleAriaId", js.undefined)
+      inline def setTitleAriaIdUndefined: Self = StObject.set(x, "titleAriaId", js.undefined)
       
-      @scala.inline
-      def setTopOffsetFixed(value: Boolean): Self = StObject.set(x, "topOffsetFixed", value.asInstanceOf[js.Any])
+      inline def setTopOffsetFixed(value: Boolean): Self = StObject.set(x, "topOffsetFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopOffsetFixedUndefined: Self = StObject.set(x, "topOffsetFixed", js.undefined)
+      inline def setTopOffsetFixedUndefined: Self = StObject.set(x, "topOffsetFixed", js.undefined)
     }
   }
   
@@ -423,83 +363,58 @@ object modalTypesMod {
   }
   object IModalStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IModalStyleProps = {
+    inline def apply(theme: ITheme): IModalStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IModalStyleProps]
     }
     
-    @scala.inline
-    implicit class IModalStylePropsMutableBuilder[Self <: IModalStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IModalStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
-      @scala.inline
-      def setHasBeenOpened(value: Boolean): Self = StObject.set(x, "hasBeenOpened", value.asInstanceOf[js.Any])
+      inline def setHasBeenOpened(value: Boolean): Self = StObject.set(x, "hasBeenOpened", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasBeenOpenedUndefined: Self = StObject.set(x, "hasBeenOpened", js.undefined)
+      inline def setHasBeenOpenedUndefined: Self = StObject.set(x, "hasBeenOpened", js.undefined)
       
-      @scala.inline
-      def setIsDefaultDragHandle(value: Boolean): Self = StObject.set(x, "isDefaultDragHandle", value.asInstanceOf[js.Any])
+      inline def setIsDefaultDragHandle(value: Boolean): Self = StObject.set(x, "isDefaultDragHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDefaultDragHandleUndefined: Self = StObject.set(x, "isDefaultDragHandle", js.undefined)
+      inline def setIsDefaultDragHandleUndefined: Self = StObject.set(x, "isDefaultDragHandle", js.undefined)
       
-      @scala.inline
-      def setIsModeless(value: Boolean): Self = StObject.set(x, "isModeless", value.asInstanceOf[js.Any])
+      inline def setIsModeless(value: Boolean): Self = StObject.set(x, "isModeless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsModelessUndefined: Self = StObject.set(x, "isModeless", js.undefined)
+      inline def setIsModelessUndefined: Self = StObject.set(x, "isModeless", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
+      inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
       
-      @scala.inline
-      def setLayerClassName(value: String): Self = StObject.set(x, "layerClassName", value.asInstanceOf[js.Any])
+      inline def setLayerClassName(value: String): Self = StObject.set(x, "layerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerClassNameUndefined: Self = StObject.set(x, "layerClassName", js.undefined)
+      inline def setLayerClassNameUndefined: Self = StObject.set(x, "layerClassName", js.undefined)
       
-      @scala.inline
-      def setModalRectangleTop(value: Double): Self = StObject.set(x, "modalRectangleTop", value.asInstanceOf[js.Any])
+      inline def setModalRectangleTop(value: Double): Self = StObject.set(x, "modalRectangleTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalRectangleTopUndefined: Self = StObject.set(x, "modalRectangleTop", js.undefined)
+      inline def setModalRectangleTopUndefined: Self = StObject.set(x, "modalRectangleTop", js.undefined)
       
-      @scala.inline
-      def setScrollableContentClassName(value: String): Self = StObject.set(x, "scrollableContentClassName", value.asInstanceOf[js.Any])
+      inline def setScrollableContentClassName(value: String): Self = StObject.set(x, "scrollableContentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollableContentClassNameUndefined: Self = StObject.set(x, "scrollableContentClassName", js.undefined)
+      inline def setScrollableContentClassNameUndefined: Self = StObject.set(x, "scrollableContentClassName", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopOffsetFixed(value: Boolean): Self = StObject.set(x, "topOffsetFixed", value.asInstanceOf[js.Any])
+      inline def setTopOffsetFixed(value: Boolean): Self = StObject.set(x, "topOffsetFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopOffsetFixedUndefined: Self = StObject.set(x, "topOffsetFixed", js.undefined)
+      inline def setTopOffsetFixedUndefined: Self = StObject.set(x, "topOffsetFixed", js.undefined)
     }
   }
   
@@ -519,68 +434,48 @@ object modalTypesMod {
   }
   object IModalStyles {
     
-    @scala.inline
-    def apply(): IModalStyles = {
+    inline def apply(): IModalStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IModalStyles]
     }
     
-    @scala.inline
-    implicit class IModalStylesMutableBuilder[Self <: IModalStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IModalStyles](x: Self) {
       
-      @scala.inline
-      def setKeyboardMoveIcon(value: IStyle): Self = StObject.set(x, "keyboardMoveIcon", value.asInstanceOf[js.Any])
+      inline def setKeyboardMoveIcon(value: IStyle): Self = StObject.set(x, "keyboardMoveIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardMoveIconContainer(value: IStyle): Self = StObject.set(x, "keyboardMoveIconContainer", value.asInstanceOf[js.Any])
+      inline def setKeyboardMoveIconContainer(value: IStyle): Self = StObject.set(x, "keyboardMoveIconContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardMoveIconContainerNull: Self = StObject.set(x, "keyboardMoveIconContainer", null)
+      inline def setKeyboardMoveIconContainerNull: Self = StObject.set(x, "keyboardMoveIconContainer", null)
       
-      @scala.inline
-      def setKeyboardMoveIconContainerUndefined: Self = StObject.set(x, "keyboardMoveIconContainer", js.undefined)
+      inline def setKeyboardMoveIconContainerUndefined: Self = StObject.set(x, "keyboardMoveIconContainer", js.undefined)
       
-      @scala.inline
-      def setKeyboardMoveIconNull: Self = StObject.set(x, "keyboardMoveIcon", null)
+      inline def setKeyboardMoveIconNull: Self = StObject.set(x, "keyboardMoveIcon", null)
       
-      @scala.inline
-      def setKeyboardMoveIconUndefined: Self = StObject.set(x, "keyboardMoveIcon", js.undefined)
+      inline def setKeyboardMoveIconUndefined: Self = StObject.set(x, "keyboardMoveIcon", js.undefined)
       
-      @scala.inline
-      def setLayer(value: IStyle): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: IStyle): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerNull: Self = StObject.set(x, "layer", null)
+      inline def setLayerNull: Self = StObject.set(x, "layer", null)
       
-      @scala.inline
-      def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+      inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
       
-      @scala.inline
-      def setMain(value: IStyle): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: IStyle): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainNull: Self = StObject.set(x, "main", null)
+      inline def setMainNull: Self = StObject.set(x, "main", null)
       
-      @scala.inline
-      def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+      inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setScrollableContent(value: IStyle): Self = StObject.set(x, "scrollableContent", value.asInstanceOf[js.Any])
+      inline def setScrollableContent(value: IStyle): Self = StObject.set(x, "scrollableContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollableContentNull: Self = StObject.set(x, "scrollableContent", null)
+      inline def setScrollableContentNull: Self = StObject.set(x, "scrollableContent", null)
       
-      @scala.inline
-      def setScrollableContentUndefined: Self = StObject.set(x, "scrollableContent", js.undefined)
+      inline def setScrollableContentUndefined: Self = StObject.set(x, "scrollableContent", js.undefined)
     }
   }
 }

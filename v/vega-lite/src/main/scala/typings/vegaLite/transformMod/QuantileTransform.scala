@@ -38,46 +38,33 @@ trait QuantileTransform
 }
 object QuantileTransform {
   
-  @scala.inline
-  def apply(quantile: FieldName): QuantileTransform = {
+  inline def apply(quantile: FieldName): QuantileTransform = {
     val __obj = js.Dynamic.literal(quantile = quantile.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuantileTransform]
   }
   
-  @scala.inline
-  implicit class QuantileTransformMutableBuilder[Self <: QuantileTransform] (val x: Self) extends AnyVal {
+  extension [Self <: QuantileTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setProbs(value: js.Array[Double]): Self = StObject.set(x, "probs", value.asInstanceOf[js.Any])
+    inline def setProbs(value: js.Array[Double]): Self = StObject.set(x, "probs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProbsUndefined: Self = StObject.set(x, "probs", js.undefined)
+    inline def setProbsUndefined: Self = StObject.set(x, "probs", js.undefined)
     
-    @scala.inline
-    def setProbsVarargs(value: Double*): Self = StObject.set(x, "probs", js.Array(value :_*))
+    inline def setProbsVarargs(value: Double*): Self = StObject.set(x, "probs", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantile(value: FieldName): Self = StObject.set(x, "quantile", value.asInstanceOf[js.Any])
+    inline def setQuantile(value: FieldName): Self = StObject.set(x, "quantile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

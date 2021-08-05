@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def resetServerContext(): scala.Unit = typings.reactBeautifulDnd.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetServerContext")().asInstanceOf[scala.Unit]
+inline def resetServerContext(): scala.Unit = typings.reactBeautifulDnd.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resetServerContext")().asInstanceOf[scala.Unit]
 
 type Announce = js.Function1[/* message */ java.lang.String, scala.Unit]
 

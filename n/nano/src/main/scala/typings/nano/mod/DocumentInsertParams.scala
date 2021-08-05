@@ -22,31 +22,23 @@ trait DocumentInsertParams extends StObject {
 }
 object DocumentInsertParams {
   
-  @scala.inline
-  def apply(): DocumentInsertParams = {
+  inline def apply(): DocumentInsertParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentInsertParams]
   }
   
-  @scala.inline
-  implicit class DocumentInsertParamsMutableBuilder[Self <: DocumentInsertParams] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentInsertParams](x: Self) {
     
-    @scala.inline
-    def setBatch(value: ok): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    inline def setBatch(value: ok): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+    inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
-    @scala.inline
-    def setNew_edits(value: Boolean): Self = StObject.set(x, "new_edits", value.asInstanceOf[js.Any])
+    inline def setNew_edits(value: Boolean): Self = StObject.set(x, "new_edits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_editsUndefined: Self = StObject.set(x, "new_edits", js.undefined)
+    inline def setNew_editsUndefined: Self = StObject.set(x, "new_edits", js.undefined)
     
-    @scala.inline
-    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
   }
 }

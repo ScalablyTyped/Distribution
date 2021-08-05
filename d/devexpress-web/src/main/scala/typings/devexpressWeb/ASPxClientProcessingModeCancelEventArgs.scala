@@ -18,16 +18,13 @@ trait ASPxClientProcessingModeCancelEventArgs
 }
 object ASPxClientProcessingModeCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, processOnServer: Boolean): ASPxClientProcessingModeCancelEventArgs = {
+  inline def apply(cancel: Boolean, processOnServer: Boolean): ASPxClientProcessingModeCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientProcessingModeCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientProcessingModeCancelEventArgsMutableBuilder[Self <: ASPxClientProcessingModeCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientProcessingModeCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }
 }

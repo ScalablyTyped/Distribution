@@ -14,20 +14,16 @@ trait NullableNumberSchema
 }
 object NullableNumberSchema {
   
-  @scala.inline
-  def apply(`type`: js.Array[number | `null`]): NullableNumberSchema = {
+  inline def apply(`type`: js.Array[number | `null`]): NullableNumberSchema = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullableNumberSchema]
   }
   
-  @scala.inline
-  implicit class NullableNumberSchemaMutableBuilder[Self <: NullableNumberSchema] (val x: Self) extends AnyVal {
+  extension [Self <: NullableNumberSchema](x: Self) {
     
-    @scala.inline
-    def setType(value: js.Array[number | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Array[number | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: (number | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: (number | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

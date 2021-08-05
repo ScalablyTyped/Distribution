@@ -23,31 +23,23 @@ trait PutRecordsOutput extends StObject {
 }
 object PutRecordsOutput {
   
-  @scala.inline
-  def apply(Records: PutRecordsResultEntryList): PutRecordsOutput = {
+  inline def apply(Records: PutRecordsResultEntryList): PutRecordsOutput = {
     val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordsOutput]
   }
   
-  @scala.inline
-  implicit class PutRecordsOutputMutableBuilder[Self <: PutRecordsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutRecordsOutput](x: Self) {
     
-    @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
+    inline def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
+    inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
-    @scala.inline
-    def setFailedRecordCount(value: PositiveIntegerObject): Self = StObject.set(x, "FailedRecordCount", value.asInstanceOf[js.Any])
+    inline def setFailedRecordCount(value: PositiveIntegerObject): Self = StObject.set(x, "FailedRecordCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedRecordCountUndefined: Self = StObject.set(x, "FailedRecordCount", js.undefined)
+    inline def setFailedRecordCountUndefined: Self = StObject.set(x, "FailedRecordCount", js.undefined)
     
-    @scala.inline
-    def setRecords(value: PutRecordsResultEntryList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: PutRecordsResultEntryList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsVarargs(value: PutRecordsResultEntry*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: PutRecordsResultEntry*): Self = StObject.set(x, "Records", js.Array(value :_*))
   }
 }

@@ -11,9 +11,7 @@ object getMuiThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(muiTheme: MuiTheme*): MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[MuiTheme]
+  inline def default(muiTheme: MuiTheme*): MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[MuiTheme]
   
-  @scala.inline
-  def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[MuiTheme]
+  inline def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[MuiTheme]
 }

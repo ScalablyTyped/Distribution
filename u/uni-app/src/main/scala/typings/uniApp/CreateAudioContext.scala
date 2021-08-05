@@ -28,25 +28,19 @@ trait CreateAudioContext extends StObject {
 }
 object CreateAudioContext {
   
-  @scala.inline
-  def apply(pause: () => Unit, play: () => Unit, seek: () => Unit, setSrc: () => Unit): CreateAudioContext = {
+  inline def apply(pause: () => Unit, play: () => Unit, seek: () => Unit, setSrc: () => Unit): CreateAudioContext = {
     val __obj = js.Dynamic.literal(pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play), seek = js.Any.fromFunction0(seek), setSrc = js.Any.fromFunction0(setSrc))
     __obj.asInstanceOf[CreateAudioContext]
   }
   
-  @scala.inline
-  implicit class CreateAudioContextMutableBuilder[Self <: CreateAudioContext] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAudioContext](x: Self) {
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
+    inline def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSrc(value: () => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction0(value))
+    inline def setSetSrc(value: () => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction0(value))
   }
 }

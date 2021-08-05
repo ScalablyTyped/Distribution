@@ -16,37 +16,27 @@ trait Partition extends StObject {
 }
 object Partition {
   
-  @scala.inline
-  def apply(): Partition = {
+  inline def apply(): Partition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partition]
   }
   
-  @scala.inline
-  implicit class PartitionMutableBuilder[Self <: Partition] (val x: Self) extends AnyVal {
+  extension [Self <: Partition](x: Self) {
     
-    @scala.inline
-    def setDelimited(value: Boolean): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
+    inline def setDelimited(value: Boolean): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimitedUndefined: Self = StObject.set(x, "delimited", js.undefined)
+    inline def setDelimitedUndefined: Self = StObject.set(x, "delimited", js.undefined)
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
-    @scala.inline
-    def setPartitioned(value: Boolean): Self = StObject.set(x, "partitioned", value.asInstanceOf[js.Any])
+    inline def setPartitioned(value: Boolean): Self = StObject.set(x, "partitioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionedUndefined: Self = StObject.set(x, "partitioned", js.undefined)
+    inline def setPartitionedUndefined: Self = StObject.set(x, "partitioned", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait RecentCaseCommunications extends StObject {
 }
 object RecentCaseCommunications {
   
-  @scala.inline
-  def apply(): RecentCaseCommunications = {
+  inline def apply(): RecentCaseCommunications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecentCaseCommunications]
   }
   
-  @scala.inline
-  implicit class RecentCaseCommunicationsMutableBuilder[Self <: RecentCaseCommunications] (val x: Self) extends AnyVal {
+  extension [Self <: RecentCaseCommunications](x: Self) {
     
-    @scala.inline
-    def setCommunications(value: CommunicationList): Self = StObject.set(x, "communications", value.asInstanceOf[js.Any])
+    inline def setCommunications(value: CommunicationList): Self = StObject.set(x, "communications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommunicationsUndefined: Self = StObject.set(x, "communications", js.undefined)
+    inline def setCommunicationsUndefined: Self = StObject.set(x, "communications", js.undefined)
     
-    @scala.inline
-    def setCommunicationsVarargs(value: Communication*): Self = StObject.set(x, "communications", js.Array(value :_*))
+    inline def setCommunicationsVarargs(value: Communication*): Self = StObject.set(x, "communications", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

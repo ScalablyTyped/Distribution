@@ -10,16 +10,13 @@ trait GetRealtimeDataRequest extends StObject {
 }
 object GetRealtimeDataRequest {
   
-  @scala.inline
-  def apply(contextId: GraphObjectId): GetRealtimeDataRequest = {
+  inline def apply(contextId: GraphObjectId): GetRealtimeDataRequest = {
     val __obj = js.Dynamic.literal(contextId = contextId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRealtimeDataRequest]
   }
   
-  @scala.inline
-  implicit class GetRealtimeDataRequestMutableBuilder[Self <: GetRealtimeDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRealtimeDataRequest](x: Self) {
     
-    @scala.inline
-    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
   }
 }

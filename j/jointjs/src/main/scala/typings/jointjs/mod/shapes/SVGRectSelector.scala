@@ -14,19 +14,15 @@ trait SVGRectSelector
 }
 object SVGRectSelector {
   
-  @scala.inline
-  def apply(): SVGRectSelector = {
+  inline def apply(): SVGRectSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGRectSelector]
   }
   
-  @scala.inline
-  implicit class SVGRectSelectorMutableBuilder[Self <: SVGRectSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SVGRectSelector](x: Self) {
     
-    @scala.inline
-    def setRect(value: SVGRectAttributes): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: SVGRectAttributes): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+    inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
   }
 }

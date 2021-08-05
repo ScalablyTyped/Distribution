@@ -13,16 +13,13 @@ trait StopAccessLoggingInput extends StObject {
 }
 object StopAccessLoggingInput {
   
-  @scala.inline
-  def apply(ContainerName: ContainerName): StopAccessLoggingInput = {
+  inline def apply(ContainerName: ContainerName): StopAccessLoggingInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopAccessLoggingInput]
   }
   
-  @scala.inline
-  implicit class StopAccessLoggingInputMutableBuilder[Self <: StopAccessLoggingInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopAccessLoggingInput](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
   }
 }

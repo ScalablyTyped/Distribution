@@ -85,14 +85,11 @@ object mod {
     def toReact(): ReactElement = js.native
   }
   
-  @scala.inline
-  def compareDocumentPosition(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareDocumentPosition")().asInstanceOf[Double]
+  inline def compareDocumentPosition(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareDocumentPosition")().asInstanceOf[Double]
   
-  @scala.inline
-  def createElement(nodeName: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(nodeName.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def createElement(nodeName: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(nodeName.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def createElementNS(namespace: String, nodeName: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementNS")(namespace.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def createElementNS(namespace: String, nodeName: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementNS")(namespace.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   object defaultView {
     
@@ -100,12 +97,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getComputedStyle(node: Element): GetPropertyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("getComputedStyle")(node.asInstanceOf[js.Any]).asInstanceOf[GetPropertyValue]
+    inline def getComputedStyle(node: Element): GetPropertyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("getComputedStyle")(node.asInstanceOf[js.Any]).asInstanceOf[GetPropertyValue]
   }
   
-  @scala.inline
-  def withFauxDOM[P](WrappedComponent: ComponentClass[P, ComponentState]): ComponentClass[
+  inline def withFauxDOM[P](WrappedComponent: ComponentClass[P, ComponentState]): ComponentClass[
     Pick[
       P, 
       Exclude[

@@ -16,22 +16,17 @@ trait SchemaListForwardingAddressesResponse extends StObject {
 }
 object SchemaListForwardingAddressesResponse {
   
-  @scala.inline
-  def apply(): SchemaListForwardingAddressesResponse = {
+  inline def apply(): SchemaListForwardingAddressesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListForwardingAddressesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListForwardingAddressesResponseMutableBuilder[Self <: SchemaListForwardingAddressesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListForwardingAddressesResponse](x: Self) {
     
-    @scala.inline
-    def setForwardingAddresses(value: js.Array[SchemaForwardingAddress]): Self = StObject.set(x, "forwardingAddresses", value.asInstanceOf[js.Any])
+    inline def setForwardingAddresses(value: js.Array[SchemaForwardingAddress]): Self = StObject.set(x, "forwardingAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingAddressesUndefined: Self = StObject.set(x, "forwardingAddresses", js.undefined)
+    inline def setForwardingAddressesUndefined: Self = StObject.set(x, "forwardingAddresses", js.undefined)
     
-    @scala.inline
-    def setForwardingAddressesVarargs(value: SchemaForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value :_*))
+    inline def setForwardingAddressesVarargs(value: SchemaForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value :_*))
   }
 }

@@ -14,19 +14,15 @@ trait RemoteInfo extends StObject {
 }
 object RemoteInfo {
   
-  @scala.inline
-  def apply(ip: String, port: Double): RemoteInfo = {
+  inline def apply(ip: String, port: Double): RemoteInfo = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteInfo]
   }
   
-  @scala.inline
-  implicit class RemoteInfoMutableBuilder[Self <: RemoteInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteInfo](x: Self) {
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

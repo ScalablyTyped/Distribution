@@ -14,25 +14,19 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig extends St
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig = {
+  inline def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfigMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig](x: Self) {
     
-    @scala.inline
-    def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
+    inline def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
     
-    @scala.inline
-    def setNodesZone(value: String): Self = StObject.set(x, "nodesZone", value.asInstanceOf[js.Any])
+    inline def setNodesZone(value: String): Self = StObject.set(x, "nodesZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesZoneUndefined: Self = StObject.set(x, "nodesZone", js.undefined)
+    inline def setNodesZoneUndefined: Self = StObject.set(x, "nodesZone", js.undefined)
   }
 }

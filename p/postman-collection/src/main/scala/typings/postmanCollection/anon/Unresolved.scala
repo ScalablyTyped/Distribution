@@ -10,16 +10,13 @@ trait Unresolved extends StObject {
 }
 object Unresolved {
   
-  @scala.inline
-  def apply(unresolved: Boolean): Unresolved = {
+  inline def apply(unresolved: Boolean): Unresolved = {
     val __obj = js.Dynamic.literal(unresolved = unresolved.asInstanceOf[js.Any])
     __obj.asInstanceOf[Unresolved]
   }
   
-  @scala.inline
-  implicit class UnresolvedMutableBuilder[Self <: Unresolved] (val x: Self) extends AnyVal {
+  extension [Self <: Unresolved](x: Self) {
     
-    @scala.inline
-    def setUnresolved(value: Boolean): Self = StObject.set(x, "unresolved", value.asInstanceOf[js.Any])
+    inline def setUnresolved(value: Boolean): Self = StObject.set(x, "unresolved", value.asInstanceOf[js.Any])
   }
 }

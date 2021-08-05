@@ -11,22 +11,17 @@ trait IClientBlockGetByIdRequest extends StObject {
 }
 object IClientBlockGetByIdRequest {
   
-  @scala.inline
-  def apply(): IClientBlockGetByIdRequest = {
+  inline def apply(): IClientBlockGetByIdRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBlockGetByIdRequest]
   }
   
-  @scala.inline
-  implicit class IClientBlockGetByIdRequestMutableBuilder[Self <: IClientBlockGetByIdRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBlockGetByIdRequest](x: Self) {
     
-    @scala.inline
-    def setBlockId(value: String): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
+    inline def setBlockId(value: String): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIdNull: Self = StObject.set(x, "blockId", null)
+    inline def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     
-    @scala.inline
-    def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
+    inline def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
   }
 }

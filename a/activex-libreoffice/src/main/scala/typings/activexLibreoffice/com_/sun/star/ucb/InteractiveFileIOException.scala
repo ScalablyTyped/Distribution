@@ -21,8 +21,7 @@ trait InteractiveFileIOException
 }
 object InteractiveFileIOException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Code: IOErrorCode,
     Context: XInterface,
@@ -33,10 +32,8 @@ object InteractiveFileIOException {
     __obj.asInstanceOf[InteractiveFileIOException]
   }
   
-  @scala.inline
-  implicit class InteractiveFileIOExceptionMutableBuilder[Self <: InteractiveFileIOException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveFileIOException](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
   }
 }

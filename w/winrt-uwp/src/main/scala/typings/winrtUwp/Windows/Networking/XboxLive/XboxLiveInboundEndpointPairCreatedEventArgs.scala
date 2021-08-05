@@ -12,16 +12,13 @@ trait XboxLiveInboundEndpointPairCreatedEventArgs extends StObject {
 }
 object XboxLiveInboundEndpointPairCreatedEventArgs {
   
-  @scala.inline
-  def apply(endpointPair: XboxLiveEndpointPair): XboxLiveInboundEndpointPairCreatedEventArgs = {
+  inline def apply(endpointPair: XboxLiveEndpointPair): XboxLiveInboundEndpointPairCreatedEventArgs = {
     val __obj = js.Dynamic.literal(endpointPair = endpointPair.asInstanceOf[js.Any])
     __obj.asInstanceOf[XboxLiveInboundEndpointPairCreatedEventArgs]
   }
   
-  @scala.inline
-  implicit class XboxLiveInboundEndpointPairCreatedEventArgsMutableBuilder[Self <: XboxLiveInboundEndpointPairCreatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: XboxLiveInboundEndpointPairCreatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setEndpointPair(value: XboxLiveEndpointPair): Self = StObject.set(x, "endpointPair", value.asInstanceOf[js.Any])
+    inline def setEndpointPair(value: XboxLiveEndpointPair): Self = StObject.set(x, "endpointPair", value.asInstanceOf[js.Any])
   }
 }

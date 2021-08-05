@@ -13,8 +13,7 @@ object activityIndicatorStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): ActivityIndicatorStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ActivityIndicatorStyle]
+  inline def default(theme: Theme): ActivityIndicatorStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ActivityIndicatorStyle]
   
   trait ActivityIndicatorStyle extends StObject {
     
@@ -32,8 +31,7 @@ object activityIndicatorStyleMod {
   }
   object ActivityIndicatorStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: ViewStyle,
       innerContainer: ViewStyle,
       spinner: ViewStyle,
@@ -45,26 +43,19 @@ object activityIndicatorStyleMod {
       __obj.asInstanceOf[ActivityIndicatorStyle]
     }
     
-    @scala.inline
-    implicit class ActivityIndicatorStyleMutableBuilder[Self <: ActivityIndicatorStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ActivityIndicatorStyle](x: Self) {
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
+      inline def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinner(value: ViewStyle): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
+      inline def setSpinner(value: ViewStyle): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTip(value: TextStyle): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
+      inline def setTip(value: TextStyle): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToast(value: TextStyle): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
+      inline def setToast(value: TextStyle): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ViewStyle): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     }
   }
 }

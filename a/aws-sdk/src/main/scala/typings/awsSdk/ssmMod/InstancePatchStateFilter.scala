@@ -23,8 +23,7 @@ trait InstancePatchStateFilter extends StObject {
 }
 object InstancePatchStateFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Key: InstancePatchStateFilterKey,
     Type: InstancePatchStateOperatorType,
     Values: InstancePatchStateFilterValues
@@ -33,19 +32,14 @@ object InstancePatchStateFilter {
     __obj.asInstanceOf[InstancePatchStateFilter]
   }
   
-  @scala.inline
-  implicit class InstancePatchStateFilterMutableBuilder[Self <: InstancePatchStateFilter] (val x: Self) extends AnyVal {
+  extension [Self <: InstancePatchStateFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: InstancePatchStateFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: InstancePatchStateFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: InstancePatchStateOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: InstancePatchStateOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: InstancePatchStateFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: InstancePatchStateFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: InstancePatchStateFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: InstancePatchStateFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

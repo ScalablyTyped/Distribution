@@ -34,11 +34,9 @@ object mod {
     def this(props: ThemeProviderProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def themeable(themes: TReactCSSThemrTheme*): TReactCSSThemrTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("themeable")(themes.asInstanceOf[js.Any]).asInstanceOf[TReactCSSThemrTheme]
+  inline def themeable(themes: TReactCSSThemrTheme*): TReactCSSThemrTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("themeable")(themes.asInstanceOf[js.Any]).asInstanceOf[TReactCSSThemrTheme]
   
-  @scala.inline
-  def themr(identifier: String): js.Function1[
+  inline def themr(identifier: String): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -53,8 +51,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: String, defaultTheme: js.Object): js.Function1[
+  inline def themr(identifier: String, defaultTheme: js.Object): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -69,8 +66,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: String, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
+  inline def themr(identifier: String, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -85,8 +81,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: String, defaultTheme: Unit, options: IThemrOptions): js.Function1[
+  inline def themr(identifier: String, defaultTheme: Unit, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -101,8 +96,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: js.Symbol): js.Function1[
+  inline def themr(identifier: js.Symbol): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -117,8 +111,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: js.Symbol, defaultTheme: js.Object): js.Function1[
+  inline def themr(identifier: js.Symbol, defaultTheme: js.Object): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -133,8 +126,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: js.Symbol, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
+  inline def themr(identifier: js.Symbol, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -149,8 +141,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: js.Symbol, defaultTheme: Unit, options: IThemrOptions): js.Function1[
+  inline def themr(identifier: js.Symbol, defaultTheme: Unit, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -165,8 +156,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: Double): js.Function1[
+  inline def themr(identifier: Double): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -181,8 +171,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: Double, defaultTheme: js.Object): js.Function1[
+  inline def themr(identifier: Double, defaultTheme: js.Object): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -197,8 +186,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: Double, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
+  inline def themr(identifier: Double, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -213,8 +201,7 @@ object mod {
     ]) | SFC[js.Any], 
     ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
   ]]
-  @scala.inline
-  def themr(identifier: Double, defaultTheme: Unit, options: IThemrOptions): js.Function1[
+  inline def themr(identifier: Double, defaultTheme: Unit, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
@@ -241,26 +228,20 @@ object mod {
   }
   object IThemrOptions {
     
-    @scala.inline
-    def apply(): IThemrOptions = {
+    inline def apply(): IThemrOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IThemrOptions]
     }
     
-    @scala.inline
-    implicit class IThemrOptionsMutableBuilder[Self <: IThemrOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IThemrOptions](x: Self) {
       
-      @scala.inline
-      def setComposeTheme(value: deeply | softly | `false`): Self = StObject.set(x, "composeTheme", value.asInstanceOf[js.Any])
+      inline def setComposeTheme(value: deeply | softly | `false`): Self = StObject.set(x, "composeTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComposeThemeUndefined: Self = StObject.set(x, "composeTheme", js.undefined)
+      inline def setComposeThemeUndefined: Self = StObject.set(x, "composeTheme", js.undefined)
       
-      @scala.inline
-      def setMapThemrProps(value: (js.Object, /* theme */ TReactCSSThemrTheme) => js.Object & Theme): Self = StObject.set(x, "mapThemrProps", js.Any.fromFunction2(value))
+      inline def setMapThemrProps(value: (js.Object, /* theme */ TReactCSSThemrTheme) => js.Object & Theme): Self = StObject.set(x, "mapThemrProps", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMapThemrPropsUndefined: Self = StObject.set(x, "mapThemrProps", js.undefined)
+      inline def setMapThemrPropsUndefined: Self = StObject.set(x, "mapThemrProps", js.undefined)
     }
   }
   
@@ -271,8 +252,7 @@ object mod {
        with /* key */ StringDictionary[String | TReactCSSThemrTheme]
   object TReactCSSThemrTheme {
     
-    @scala.inline
-    def apply(): TReactCSSThemrTheme = {
+    inline def apply(): TReactCSSThemrTheme = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TReactCSSThemrTheme]
     }
@@ -286,23 +266,18 @@ object mod {
   }
   object ThemeProviderProps {
     
-    @scala.inline
-    def apply(theme: TReactCSSThemrTheme): ThemeProviderProps = {
+    inline def apply(theme: TReactCSSThemrTheme): ThemeProviderProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThemeProviderProps]
     }
     
-    @scala.inline
-    implicit class ThemeProviderPropsMutableBuilder[Self <: ThemeProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeProviderProps](x: Self) {
       
-      @scala.inline
-      def setInnerRef(value: js.Function): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: js.Function): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setTheme(value: TReactCSSThemrTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: TReactCSSThemrTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   

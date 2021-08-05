@@ -18,16 +18,13 @@ trait IStaticContentUrlDef extends StObject {
 }
 object IStaticContentUrlDef {
   
-  @scala.inline
-  def apply(qUrl: String): IStaticContentUrlDef = {
+  inline def apply(qUrl: String): IStaticContentUrlDef = {
     val __obj = js.Dynamic.literal(qUrl = qUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStaticContentUrlDef]
   }
   
-  @scala.inline
-  implicit class IStaticContentUrlDefMutableBuilder[Self <: IStaticContentUrlDef] (val x: Self) extends AnyVal {
+  extension [Self <: IStaticContentUrlDef](x: Self) {
     
-    @scala.inline
-    def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
+    inline def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
   }
 }

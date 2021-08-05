@@ -23,31 +23,23 @@ trait MemberError extends StObject {
 }
 object MemberError {
   
-  @scala.inline
-  def apply(): MemberError = {
+  inline def apply(): MemberError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemberError]
   }
   
-  @scala.inline
-  implicit class MemberErrorMutableBuilder[Self <: MemberError] (val x: Self) extends AnyVal {
+  extension [Self <: MemberError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setMemberId(value: NonEmptyString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: NonEmptyString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
+    inline def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
   }
 }

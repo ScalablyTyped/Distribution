@@ -13,22 +13,17 @@ trait RegisterDBProxyTargetsResponse extends StObject {
 }
 object RegisterDBProxyTargetsResponse {
   
-  @scala.inline
-  def apply(): RegisterDBProxyTargetsResponse = {
+  inline def apply(): RegisterDBProxyTargetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterDBProxyTargetsResponse]
   }
   
-  @scala.inline
-  implicit class RegisterDBProxyTargetsResponseMutableBuilder[Self <: RegisterDBProxyTargetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDBProxyTargetsResponse](x: Self) {
     
-    @scala.inline
-    def setDBProxyTargets(value: TargetList): Self = StObject.set(x, "DBProxyTargets", value.asInstanceOf[js.Any])
+    inline def setDBProxyTargets(value: TargetList): Self = StObject.set(x, "DBProxyTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBProxyTargetsUndefined: Self = StObject.set(x, "DBProxyTargets", js.undefined)
+    inline def setDBProxyTargetsUndefined: Self = StObject.set(x, "DBProxyTargets", js.undefined)
     
-    @scala.inline
-    def setDBProxyTargetsVarargs(value: DBProxyTarget*): Self = StObject.set(x, "DBProxyTargets", js.Array(value :_*))
+    inline def setDBProxyTargetsVarargs(value: DBProxyTarget*): Self = StObject.set(x, "DBProxyTargets", js.Array(value :_*))
   }
 }

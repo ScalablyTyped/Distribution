@@ -8,21 +8,17 @@ object sha3Numbers {
   
   @js.native
   sealed trait `224` extends StObject
-  @scala.inline
-  def `224`: `224` = 224.asInstanceOf[`224`]
+  inline def `224`: `224` = 224.asInstanceOf[`224`]
   
   @js.native
   sealed trait `256` extends StObject
-  @scala.inline
-  def `256`: `256` = 256.asInstanceOf[`256`]
+  inline def `256`: `256` = 256.asInstanceOf[`256`]
   
   @js.native
   sealed trait `384` extends StObject
-  @scala.inline
-  def `384`: `384` = 384.asInstanceOf[`384`]
+  inline def `384`: `384` = 384.asInstanceOf[`384`]
   
   @js.native
   sealed trait `512` extends StObject
-  @scala.inline
-  def `512`: `512` = 512.asInstanceOf[`512`]
+  inline def `512`: `512` = 512.asInstanceOf[`512`]
 }

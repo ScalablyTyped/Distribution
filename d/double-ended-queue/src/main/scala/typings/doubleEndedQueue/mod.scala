@@ -284,8 +284,7 @@ object mod {
   }
   object Deque {
     
-    @scala.inline
-    def apply[Item](
+    inline def apply[Item](
       clear: () => Unit,
       dequeue: () => js.UndefOr[Item],
       enqueue: /* repeated */ Item => Double,
@@ -309,62 +308,43 @@ object mod {
       __obj.asInstanceOf[Deque[Item]]
     }
     
-    @scala.inline
-    implicit class DequeMutableBuilder[Self <: Deque[?], Item] (val x: Self & Deque[Item]) extends AnyVal {
+    extension [Self <: Deque[?], Item](x: Self & Deque[Item]) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDequeue(value: () => js.UndefOr[Item]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
+      inline def setDequeue(value: () => js.UndefOr[Item]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnqueue(value: /* repeated */ Item => Double): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
+      inline def setEnqueue(value: /* repeated */ Item => Double): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: Double => js.UndefOr[Item]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Double => js.UndefOr[Item]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsertBack(value: /* repeated */ Item => Double): Self = StObject.set(x, "insertBack", js.Any.fromFunction1(value))
+      inline def setInsertBack(value: /* repeated */ Item => Double): Self = StObject.set(x, "insertBack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsertFront(value: /* repeated */ Item => Double): Self = StObject.set(x, "insertFront", js.Any.fromFunction1(value))
+      inline def setInsertFront(value: /* repeated */ Item => Double): Self = StObject.set(x, "insertFront", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeekBack(value: () => js.UndefOr[Item]): Self = StObject.set(x, "peekBack", js.Any.fromFunction0(value))
+      inline def setPeekBack(value: () => js.UndefOr[Item]): Self = StObject.set(x, "peekBack", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeekFront(value: () => js.UndefOr[Item]): Self = StObject.set(x, "peekFront", js.Any.fromFunction0(value))
+      inline def setPeekFront(value: () => js.UndefOr[Item]): Self = StObject.set(x, "peekFront", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPop(value: () => js.UndefOr[Item]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPop(value: () => js.UndefOr[Item]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: /* repeated */ Item => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: /* repeated */ Item => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveBack(value: () => js.UndefOr[Item]): Self = StObject.set(x, "removeBack", js.Any.fromFunction0(value))
+      inline def setRemoveBack(value: () => js.UndefOr[Item]): Self = StObject.set(x, "removeBack", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveFront(value: () => js.UndefOr[Item]): Self = StObject.set(x, "removeFront", js.Any.fromFunction0(value))
+      inline def setRemoveFront(value: () => js.UndefOr[Item]): Self = StObject.set(x, "removeFront", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShift(value: () => js.UndefOr[Item]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+      inline def setShift(value: () => js.UndefOr[Item]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Array[Item]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[Item]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: () => js.Array[Item]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Array[Item]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnshift(value: /* repeated */ Item => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+      inline def setUnshift(value: /* repeated */ Item => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     }
   }
 }

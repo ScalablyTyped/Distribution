@@ -13,19 +13,15 @@ trait GetDistributionLatestCacheResetRequest extends StObject {
 }
 object GetDistributionLatestCacheResetRequest {
   
-  @scala.inline
-  def apply(): GetDistributionLatestCacheResetRequest = {
+  inline def apply(): GetDistributionLatestCacheResetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDistributionLatestCacheResetRequest]
   }
   
-  @scala.inline
-  implicit class GetDistributionLatestCacheResetRequestMutableBuilder[Self <: GetDistributionLatestCacheResetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDistributionLatestCacheResetRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
+    inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionNameUndefined: Self = StObject.set(x, "distributionName", js.undefined)
+    inline def setDistributionNameUndefined: Self = StObject.set(x, "distributionName", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait AttachVolumeOutput extends StObject {
 }
 object AttachVolumeOutput {
   
-  @scala.inline
-  def apply(): AttachVolumeOutput = {
+  inline def apply(): AttachVolumeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachVolumeOutput]
   }
   
-  @scala.inline
-  implicit class AttachVolumeOutputMutableBuilder[Self <: AttachVolumeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AttachVolumeOutput](x: Self) {
     
-    @scala.inline
-    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
+    inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
+    inline def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
+    inline def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
   }
 }

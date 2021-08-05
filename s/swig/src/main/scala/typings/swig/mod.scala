@@ -187,17 +187,12 @@ object mod {
     ): Unit = js.native
   }
   
-  @scala.inline
-  def compile(source: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
-  @scala.inline
-  def compile(source: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
+  inline def compile(source: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
+  inline def compile(source: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
   
-  @scala.inline
-  def compileFile(pathname: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
-  @scala.inline
-  def compileFile(pathname: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
-  @scala.inline
-  def compileFile(
+  inline def compileFile(pathname: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
+  inline def compileFile(pathname: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
+  inline def compileFile(
     pathname: String,
     options: SwigOptions,
     cb: js.Function2[
@@ -207,8 +202,7 @@ object mod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def invalidateCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateCache")().asInstanceOf[Unit]
+  inline def invalidateCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateCache")().asInstanceOf[Unit]
   
   object lexer {
     
@@ -414,8 +408,7 @@ object mod {
       /* 0 */ val WHITESPACE: typings.swig.mod.lexer.TYPES.WHITESPACE & Double = js.native
     }
     
-    @scala.inline
-    def read(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def read(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   object loaders {
@@ -424,66 +417,42 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fs(): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")().asInstanceOf[TemplateLoader]
-    @scala.inline
-    def fs(basepath: String): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any]).asInstanceOf[TemplateLoader]
-    @scala.inline
-    def fs(basepath: String, encoding: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
-    @scala.inline
-    def fs(basepath: Unit, encoding: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
+    inline def fs(): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")().asInstanceOf[TemplateLoader]
+    inline def fs(basepath: String): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any]).asInstanceOf[TemplateLoader]
+    inline def fs(basepath: String, encoding: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
+    inline def fs(basepath: Unit, encoding: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
     
-    @scala.inline
-    def memory(mapping: js.Any): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any]).asInstanceOf[TemplateLoader]
-    @scala.inline
-    def memory(mapping: js.Any, basepath: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any], basepath.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
+    inline def memory(mapping: js.Any): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any]).asInstanceOf[TemplateLoader]
+    inline def memory(mapping: js.Any, basepath: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any], basepath.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
   }
   
-  @scala.inline
-  def parseFile(pathName: String): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(pathName.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
-  @scala.inline
-  def parseFile(pathName: String, options: js.Any): ParseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(pathName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseReturn]
+  inline def parseFile(pathName: String): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(pathName.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def parseFile(pathName: String, options: js.Any): ParseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(pathName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseReturn]
   
-  @scala.inline
-  def precompile(source: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def precompile(source: String, options: SwigOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def precompile(source: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def precompile(source: String, options: SwigOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def render(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(source.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def render(source: String, options: SwigOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def render(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def render(source: String, options: SwigOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def renderFile(pathName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def renderFile(pathName: String, locals: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def renderFile(pathName: String, locals: js.Any, cb: js.Function2[/* err */ Error, /* output */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderFile(pathName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def renderFile(pathName: String, locals: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def renderFile(pathName: String, locals: js.Any, cb: js.Function2[/* err */ Error, /* output */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def run(templateFn: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def run(templateFn: js.Function, locals: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def run(templateFn: js.Function, locals: js.Any, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def run(templateFn: js.Function, locals: Unit, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def run(templateFn: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def run(templateFn: js.Function, locals: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def run(templateFn: js.Function, locals: js.Any, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def run(templateFn: js.Function, locals: Unit, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def setDefaultTZOffset(offset: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultTZOffset")(offset.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaultTZOffset(offset: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultTZOffset")(offset.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDefaults(options: SwigOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaults(options: SwigOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setExtension(name: String, `object`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtension")(name.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setExtension(name: String, `object`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtension")(name.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setFilter(name: String, method: js.Function2[/* input */ js.Any, /* repeated */ js.Any, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFilter")(name.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setFilter(name: String, method: js.Function2[/* input */ js.Any, /* repeated */ js.Any, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFilter")(name.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setTag(
+  inline def setTag(
     name: String,
     parse: js.Function7[
       /* str */ js.UndefOr[String], 
@@ -513,8 +482,7 @@ object mod {
       String
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(name.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], compile.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTag(
+  inline def setTag(
     name: String,
     parse: js.Function7[
       /* str */ js.UndefOr[String], 
@@ -545,8 +513,7 @@ object mod {
     ],
     ends: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(name.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], compile.asInstanceOf[js.Any], ends.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTag(
+  inline def setTag(
     name: String,
     parse: js.Function7[
       /* str */ js.UndefOr[String], 
@@ -578,8 +545,7 @@ object mod {
     ends: Boolean,
     blockLevel: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(name.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], compile.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], blockLevel.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTag(
+  inline def setTag(
     name: String,
     parse: js.Function7[
       /* str */ js.UndefOr[String], 
@@ -615,8 +581,7 @@ object mod {
   @JSImport("swig", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   trait SwigOptions extends StObject {
     
@@ -636,65 +601,46 @@ object mod {
   }
   object SwigOptions {
     
-    @scala.inline
-    def apply(): SwigOptions = {
+    inline def apply(): SwigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwigOptions]
     }
     
-    @scala.inline
-    implicit class SwigOptionsMutableBuilder[Self <: SwigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SwigOptions](x: Self) {
       
-      @scala.inline
-      def setAutoescape(value: Boolean): Self = StObject.set(x, "autoescape", value.asInstanceOf[js.Any])
+      inline def setAutoescape(value: Boolean): Self = StObject.set(x, "autoescape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoescapeUndefined: Self = StObject.set(x, "autoescape", js.undefined)
+      inline def setAutoescapeUndefined: Self = StObject.set(x, "autoescape", js.undefined)
       
-      @scala.inline
-      def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCmtControls(value: js.Array[String]): Self = StObject.set(x, "cmtControls", value.asInstanceOf[js.Any])
+      inline def setCmtControls(value: js.Array[String]): Self = StObject.set(x, "cmtControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmtControlsUndefined: Self = StObject.set(x, "cmtControls", js.undefined)
+      inline def setCmtControlsUndefined: Self = StObject.set(x, "cmtControls", js.undefined)
       
-      @scala.inline
-      def setCmtControlsVarargs(value: String*): Self = StObject.set(x, "cmtControls", js.Array(value :_*))
+      inline def setCmtControlsVarargs(value: String*): Self = StObject.set(x, "cmtControls", js.Array(value :_*))
       
-      @scala.inline
-      def setLoader(value: TemplateLoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: TemplateLoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+      inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
-      @scala.inline
-      def setLocals(value: js.Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: js.Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+      inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
-      @scala.inline
-      def setTagControls(value: js.Array[String]): Self = StObject.set(x, "tagControls", value.asInstanceOf[js.Any])
+      inline def setTagControls(value: js.Array[String]): Self = StObject.set(x, "tagControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagControlsUndefined: Self = StObject.set(x, "tagControls", js.undefined)
+      inline def setTagControlsUndefined: Self = StObject.set(x, "tagControls", js.undefined)
       
-      @scala.inline
-      def setTagControlsVarargs(value: String*): Self = StObject.set(x, "tagControls", js.Array(value :_*))
+      inline def setTagControlsVarargs(value: String*): Self = StObject.set(x, "tagControls", js.Array(value :_*))
       
-      @scala.inline
-      def setVarControls(value: js.Array[String]): Self = StObject.set(x, "varControls", value.asInstanceOf[js.Any])
+      inline def setVarControls(value: js.Array[String]): Self = StObject.set(x, "varControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarControlsUndefined: Self = StObject.set(x, "varControls", js.undefined)
+      inline def setVarControlsUndefined: Self = StObject.set(x, "varControls", js.undefined)
       
-      @scala.inline
-      def setVarControlsVarargs(value: String*): Self = StObject.set(x, "varControls", js.Array(value :_*))
+      inline def setVarControlsVarargs(value: String*): Self = StObject.set(x, "varControls", js.Array(value :_*))
     }
   }
   
@@ -723,29 +669,22 @@ object mod {
     }
     object ParseReturn {
       
-      @scala.inline
-      def apply(blocks: js.Any, name: String, parent: js.Any, tokens: js.Array[js.Any]): ParseReturn = {
+      inline def apply(blocks: js.Any, name: String, parent: js.Any, tokens: js.Array[js.Any]): ParseReturn = {
         val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
         __obj.asInstanceOf[ParseReturn]
       }
       
-      @scala.inline
-      implicit class ParseReturnMutableBuilder[Self <: ParseReturn] (val x: Self) extends AnyVal {
+      extension [Self <: ParseReturn](x: Self) {
         
-        @scala.inline
-        def setBlocks(value: js.Any): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+        inline def setBlocks(value: js.Any): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTokens(value: js.Array[js.Any]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+        inline def setTokens(value: js.Array[js.Any]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTokensVarargs(value: js.Any*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+        inline def setTokensVarargs(value: js.Any*): Self = StObject.set(x, "tokens", js.Array(value :_*))
       }
     }
   }

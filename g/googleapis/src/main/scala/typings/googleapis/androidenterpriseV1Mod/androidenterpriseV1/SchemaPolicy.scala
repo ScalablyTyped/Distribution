@@ -44,40 +44,29 @@ trait SchemaPolicy extends StObject {
 }
 object SchemaPolicy {
   
-  @scala.inline
-  def apply(): SchemaPolicy = {
+  inline def apply(): SchemaPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaPolicyMutableBuilder[Self <: SchemaPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPolicy](x: Self) {
     
-    @scala.inline
-    def setAutoUpdatePolicy(value: String): Self = StObject.set(x, "autoUpdatePolicy", value.asInstanceOf[js.Any])
+    inline def setAutoUpdatePolicy(value: String): Self = StObject.set(x, "autoUpdatePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdatePolicyUndefined: Self = StObject.set(x, "autoUpdatePolicy", js.undefined)
+    inline def setAutoUpdatePolicyUndefined: Self = StObject.set(x, "autoUpdatePolicy", js.undefined)
     
-    @scala.inline
-    def setMaintenanceWindow(value: SchemaMaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
+    inline def setMaintenanceWindow(value: SchemaMaintenanceWindow): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
+    inline def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
     
-    @scala.inline
-    def setProductAvailabilityPolicy(value: String): Self = StObject.set(x, "productAvailabilityPolicy", value.asInstanceOf[js.Any])
+    inline def setProductAvailabilityPolicy(value: String): Self = StObject.set(x, "productAvailabilityPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductAvailabilityPolicyUndefined: Self = StObject.set(x, "productAvailabilityPolicy", js.undefined)
+    inline def setProductAvailabilityPolicyUndefined: Self = StObject.set(x, "productAvailabilityPolicy", js.undefined)
     
-    @scala.inline
-    def setProductPolicy(value: js.Array[SchemaProductPolicy]): Self = StObject.set(x, "productPolicy", value.asInstanceOf[js.Any])
+    inline def setProductPolicy(value: js.Array[SchemaProductPolicy]): Self = StObject.set(x, "productPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductPolicyUndefined: Self = StObject.set(x, "productPolicy", js.undefined)
+    inline def setProductPolicyUndefined: Self = StObject.set(x, "productPolicy", js.undefined)
     
-    @scala.inline
-    def setProductPolicyVarargs(value: SchemaProductPolicy*): Self = StObject.set(x, "productPolicy", js.Array(value :_*))
+    inline def setProductPolicyVarargs(value: SchemaProductPolicy*): Self = StObject.set(x, "productPolicy", js.Array(value :_*))
   }
 }

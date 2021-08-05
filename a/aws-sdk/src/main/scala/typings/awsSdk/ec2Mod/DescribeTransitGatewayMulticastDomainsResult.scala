@@ -18,28 +18,21 @@ trait DescribeTransitGatewayMulticastDomainsResult extends StObject {
 }
 object DescribeTransitGatewayMulticastDomainsResult {
   
-  @scala.inline
-  def apply(): DescribeTransitGatewayMulticastDomainsResult = {
+  inline def apply(): DescribeTransitGatewayMulticastDomainsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTransitGatewayMulticastDomainsResult]
   }
   
-  @scala.inline
-  implicit class DescribeTransitGatewayMulticastDomainsResultMutableBuilder[Self <: DescribeTransitGatewayMulticastDomainsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTransitGatewayMulticastDomainsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayMulticastDomains(value: TransitGatewayMulticastDomainList): Self = StObject.set(x, "TransitGatewayMulticastDomains", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayMulticastDomains(value: TransitGatewayMulticastDomainList): Self = StObject.set(x, "TransitGatewayMulticastDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayMulticastDomainsUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomains", js.undefined)
+    inline def setTransitGatewayMulticastDomainsUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomains", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayMulticastDomainsVarargs(value: TransitGatewayMulticastDomain*): Self = StObject.set(x, "TransitGatewayMulticastDomains", js.Array(value :_*))
+    inline def setTransitGatewayMulticastDomainsVarargs(value: TransitGatewayMulticastDomain*): Self = StObject.set(x, "TransitGatewayMulticastDomains", js.Array(value :_*))
   }
 }

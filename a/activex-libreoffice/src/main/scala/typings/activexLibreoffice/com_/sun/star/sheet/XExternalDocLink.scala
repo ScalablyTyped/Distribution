@@ -48,8 +48,7 @@ trait XExternalDocLink
 }
 object XExternalDocLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,
@@ -71,13 +70,10 @@ object XExternalDocLink {
     __obj.asInstanceOf[XExternalDocLink]
   }
   
-  @scala.inline
-  implicit class XExternalDocLinkMutableBuilder[Self <: XExternalDocLink] (val x: Self) extends AnyVal {
+  extension [Self <: XExternalDocLink](x: Self) {
     
-    @scala.inline
-    def setAddSheetCache(value: (String, Boolean) => XExternalSheetCache): Self = StObject.set(x, "addSheetCache", js.Any.fromFunction2(value))
+    inline def setAddSheetCache(value: (String, Boolean) => XExternalSheetCache): Self = StObject.set(x, "addSheetCache", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
+    inline def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
   }
 }

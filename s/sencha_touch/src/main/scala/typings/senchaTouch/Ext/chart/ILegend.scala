@@ -96,109 +96,75 @@ trait ILegend
 }
 object ILegend {
   
-  @scala.inline
-  def apply(): ILegend = {
+  inline def apply(): ILegend = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILegend]
   }
   
-  @scala.inline
-  implicit class ILegendMutableBuilder[Self <: ILegend] (val x: Self) extends AnyVal {
+  extension [Self <: ILegend](x: Self) {
     
-    @scala.inline
-    def setGetDisableSelection(value: () => Boolean): Self = StObject.set(x, "getDisableSelection", js.Any.fromFunction0(value))
+    inline def setGetDisableSelection(value: () => Boolean): Self = StObject.set(x, "getDisableSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisableSelectionUndefined: Self = StObject.set(x, "getDisableSelection", js.undefined)
+    inline def setGetDisableSelectionUndefined: Self = StObject.set(x, "getDisableSelection", js.undefined)
     
-    @scala.inline
-    def setGetHorizontalHeight(value: () => Double): Self = StObject.set(x, "getHorizontalHeight", js.Any.fromFunction0(value))
+    inline def setGetHorizontalHeight(value: () => Double): Self = StObject.set(x, "getHorizontalHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHorizontalHeightUndefined: Self = StObject.set(x, "getHorizontalHeight", js.undefined)
+    inline def setGetHorizontalHeightUndefined: Self = StObject.set(x, "getHorizontalHeight", js.undefined)
     
-    @scala.inline
-    def setGetInline(value: () => Boolean): Self = StObject.set(x, "getInline", js.Any.fromFunction0(value))
+    inline def setGetInline(value: () => Boolean): Self = StObject.set(x, "getInline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInlineUndefined: Self = StObject.set(x, "getInline", js.undefined)
+    inline def setGetInlineUndefined: Self = StObject.set(x, "getInline", js.undefined)
     
-    @scala.inline
-    def setGetItemTpl(value: () => Array): Self = StObject.set(x, "getItemTpl", js.Any.fromFunction0(value))
+    inline def setGetItemTpl(value: () => Array): Self = StObject.set(x, "getItemTpl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemTplUndefined: Self = StObject.set(x, "getItemTpl", js.undefined)
+    inline def setGetItemTplUndefined: Self = StObject.set(x, "getItemTpl", js.undefined)
     
-    @scala.inline
-    def setGetPadding(value: () => Double): Self = StObject.set(x, "getPadding", js.Any.fromFunction0(value))
+    inline def setGetPadding(value: () => Double): Self = StObject.set(x, "getPadding", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPaddingUndefined: Self = StObject.set(x, "getPadding", js.undefined)
+    inline def setGetPaddingUndefined: Self = StObject.set(x, "getPadding", js.undefined)
     
-    @scala.inline
-    def setGetToggleable(value: () => Boolean): Self = StObject.set(x, "getToggleable", js.Any.fromFunction0(value))
+    inline def setGetToggleable(value: () => Boolean): Self = StObject.set(x, "getToggleable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetToggleableUndefined: Self = StObject.set(x, "getToggleable", js.undefined)
+    inline def setGetToggleableUndefined: Self = StObject.set(x, "getToggleable", js.undefined)
     
-    @scala.inline
-    def setGetVerticalWidth(value: () => Double): Self = StObject.set(x, "getVerticalWidth", js.Any.fromFunction0(value))
+    inline def setGetVerticalWidth(value: () => Double): Self = StObject.set(x, "getVerticalWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVerticalWidthUndefined: Self = StObject.set(x, "getVerticalWidth", js.undefined)
+    inline def setGetVerticalWidthUndefined: Self = StObject.set(x, "getVerticalWidth", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setSetDisableSelection(value: /* disableSelection */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisableSelection", js.Any.fromFunction1(value))
+    inline def setSetDisableSelection(value: /* disableSelection */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisableSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisableSelectionUndefined: Self = StObject.set(x, "setDisableSelection", js.undefined)
+    inline def setSetDisableSelectionUndefined: Self = StObject.set(x, "setDisableSelection", js.undefined)
     
-    @scala.inline
-    def setSetHorizontalHeight(value: /* horizontalHeight */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setHorizontalHeight", js.Any.fromFunction1(value))
+    inline def setSetHorizontalHeight(value: /* horizontalHeight */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setHorizontalHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHorizontalHeightUndefined: Self = StObject.set(x, "setHorizontalHeight", js.undefined)
+    inline def setSetHorizontalHeightUndefined: Self = StObject.set(x, "setHorizontalHeight", js.undefined)
     
-    @scala.inline
-    def setSetInline(value: /* inline */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setInline", js.Any.fromFunction1(value))
+    inline def setSetInline(value: /* inline */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setInline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInlineUndefined: Self = StObject.set(x, "setInline", js.undefined)
+    inline def setSetInlineUndefined: Self = StObject.set(x, "setInline", js.undefined)
     
-    @scala.inline
-    def setSetItemTpl(value: /* itemTpl */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setItemTpl", js.Any.fromFunction1(value))
+    inline def setSetItemTpl(value: /* itemTpl */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setItemTpl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItemTplUndefined: Self = StObject.set(x, "setItemTpl", js.undefined)
+    inline def setSetItemTplUndefined: Self = StObject.set(x, "setItemTpl", js.undefined)
     
-    @scala.inline
-    def setSetPadding(value: /* padding */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
+    inline def setSetPadding(value: /* padding */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setPadding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPaddingUndefined: Self = StObject.set(x, "setPadding", js.undefined)
+    inline def setSetPaddingUndefined: Self = StObject.set(x, "setPadding", js.undefined)
     
-    @scala.inline
-    def setSetToggleable(value: /* toggleable */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setToggleable", js.Any.fromFunction1(value))
+    inline def setSetToggleable(value: /* toggleable */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setToggleable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetToggleableUndefined: Self = StObject.set(x, "setToggleable", js.undefined)
+    inline def setSetToggleableUndefined: Self = StObject.set(x, "setToggleable", js.undefined)
     
-    @scala.inline
-    def setSetVerticalWidth(value: /* verticalWidth */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setVerticalWidth", js.Any.fromFunction1(value))
+    inline def setSetVerticalWidth(value: /* verticalWidth */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setVerticalWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVerticalWidthUndefined: Self = StObject.set(x, "setVerticalWidth", js.undefined)
+    inline def setSetVerticalWidthUndefined: Self = StObject.set(x, "setVerticalWidth", js.undefined)
     
-    @scala.inline
-    def setToggleable(value: Boolean): Self = StObject.set(x, "toggleable", value.asInstanceOf[js.Any])
+    inline def setToggleable(value: Boolean): Self = StObject.set(x, "toggleable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleableUndefined: Self = StObject.set(x, "toggleable", js.undefined)
+    inline def setToggleableUndefined: Self = StObject.set(x, "toggleable", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ trait AppointmentsProviderShowTimeFrameActivatedEventArgs extends StObject {
 }
 object AppointmentsProviderShowTimeFrameActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: Double,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -41,25 +40,18 @@ object AppointmentsProviderShowTimeFrameActivatedEventArgs {
     __obj.asInstanceOf[AppointmentsProviderShowTimeFrameActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentsProviderShowTimeFrameActivatedEventArgsMutableBuilder[Self <: AppointmentsProviderShowTimeFrameActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentsProviderShowTimeFrameActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToShow(value: Date): Self = StObject.set(x, "timeToShow", value.asInstanceOf[js.Any])
+    inline def setTimeToShow(value: Date): Self = StObject.set(x, "timeToShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }
 }

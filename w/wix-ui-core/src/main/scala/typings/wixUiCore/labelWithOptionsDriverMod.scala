@@ -12,6 +12,5 @@ object labelWithOptionsDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def labelWithOptionsDriverFactory(hasElementEventTrigger: Element): CheckboxDriverAt = ^.asInstanceOf[js.Dynamic].applyDynamic("labelWithOptionsDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[CheckboxDriverAt]
+  inline def labelWithOptionsDriverFactory(hasElementEventTrigger: Element): CheckboxDriverAt = ^.asInstanceOf[js.Dynamic].applyDynamic("labelWithOptionsDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[CheckboxDriverAt]
 }

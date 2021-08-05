@@ -26,31 +26,23 @@ trait GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec extends StObject {
 }
 object GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec = {
+  inline def apply(): GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2DateTimeValueSpecDateTimeDialogSpecMutableBuilder[Self <: GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec](x: Self) {
     
-    @scala.inline
-    def setRequestDateText(value: String): Self = StObject.set(x, "requestDateText", value.asInstanceOf[js.Any])
+    inline def setRequestDateText(value: String): Self = StObject.set(x, "requestDateText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestDateTextUndefined: Self = StObject.set(x, "requestDateText", js.undefined)
+    inline def setRequestDateTextUndefined: Self = StObject.set(x, "requestDateText", js.undefined)
     
-    @scala.inline
-    def setRequestDatetimeText(value: String): Self = StObject.set(x, "requestDatetimeText", value.asInstanceOf[js.Any])
+    inline def setRequestDatetimeText(value: String): Self = StObject.set(x, "requestDatetimeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestDatetimeTextUndefined: Self = StObject.set(x, "requestDatetimeText", js.undefined)
+    inline def setRequestDatetimeTextUndefined: Self = StObject.set(x, "requestDatetimeText", js.undefined)
     
-    @scala.inline
-    def setRequestTimeText(value: String): Self = StObject.set(x, "requestTimeText", value.asInstanceOf[js.Any])
+    inline def setRequestTimeText(value: String): Self = StObject.set(x, "requestTimeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTimeTextUndefined: Self = StObject.set(x, "requestTimeText", js.undefined)
+    inline def setRequestTimeTextUndefined: Self = StObject.set(x, "requestTimeText", js.undefined)
   }
 }

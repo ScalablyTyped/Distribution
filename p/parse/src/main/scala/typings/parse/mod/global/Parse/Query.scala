@@ -662,20 +662,16 @@ object Query {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def and[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
+  inline def and[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
   
   /* static member */
-  @scala.inline
-  def fromJSON[U /* <: Object[Attributes] */](className: String, json: js.Any): Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Query[U]]
+  inline def fromJSON[U /* <: Object[Attributes] */](className: String, json: js.Any): Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Query[U]]
   
   /* static member */
-  @scala.inline
-  def nor[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
+  inline def nor[U /* <: Object[Attributes] */](args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
   
   /* static member */
-  @scala.inline
-  def or[U /* <: Object[Attributes] */](var_args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
+  inline def or[U /* <: Object[Attributes] */](var_args: Query[U]*): Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[js.Any]).asInstanceOf[Query[U]]
   
   // According to http://docs.parseplatform.org/rest/guide/#aggregate-queries
   trait AggregationOptions extends StObject {
@@ -698,56 +694,40 @@ object Query {
   }
   object AggregationOptions {
     
-    @scala.inline
-    def apply(): AggregationOptions = {
+    inline def apply(): AggregationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AggregationOptions]
     }
     
-    @scala.inline
-    implicit class AggregationOptionsMutableBuilder[Self <: AggregationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AggregationOptions](x: Self) {
       
-      @scala.inline
-      def setGroup(value: Dictkey): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Dictkey): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMatch(value: StringDictionary[js.Any]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: StringDictionary[js.Any]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setProject(value: StringDictionary[js.Any]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: StringDictionary[js.Any]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setSample(value: SizeNumber): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+      inline def setSample(value: SizeNumber): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
+      inline def setSampleUndefined: Self = StObject.set(x, "sample", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setSort(value: StringDictionary[`1` | `-1`]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: StringDictionary[`1` | `-1`]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
   
@@ -759,20 +739,16 @@ object Query {
   }
   object BatchOptions {
     
-    @scala.inline
-    def apply(): BatchOptions = {
+    inline def apply(): BatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BatchOptions]
     }
     
-    @scala.inline
-    implicit class BatchOptionsMutableBuilder[Self <: BatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BatchOptions](x: Self) {
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     }
   }
   
@@ -782,8 +758,7 @@ object Query {
        with ScopeOptions
   object CountOptions {
     
-    @scala.inline
-    def apply(): CountOptions = {
+    inline def apply(): CountOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CountOptions]
     }
@@ -795,8 +770,7 @@ object Query {
        with ScopeOptions
   object EachOptions {
     
-    @scala.inline
-    def apply(): EachOptions = {
+    inline def apply(): EachOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EachOptions]
     }
@@ -808,8 +782,7 @@ object Query {
        with ScopeOptions
   object FindOptions {
     
-    @scala.inline
-    def apply(): FindOptions = {
+    inline def apply(): FindOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOptions]
     }
@@ -821,8 +794,7 @@ object Query {
        with ScopeOptions
   object FirstOptions {
     
-    @scala.inline
-    def apply(): FirstOptions = {
+    inline def apply(): FirstOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirstOptions]
     }
@@ -839,32 +811,24 @@ object Query {
   }
   object FullTextOptions {
     
-    @scala.inline
-    def apply(): FullTextOptions = {
+    inline def apply(): FullTextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FullTextOptions]
     }
     
-    @scala.inline
-    implicit class FullTextOptionsMutableBuilder[Self <: FullTextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FullTextOptions](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setDiacriticSensitive(value: Boolean): Self = StObject.set(x, "diacriticSensitive", value.asInstanceOf[js.Any])
+      inline def setDiacriticSensitive(value: Boolean): Self = StObject.set(x, "diacriticSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiacriticSensitiveUndefined: Self = StObject.set(x, "diacriticSensitive", js.undefined)
+      inline def setDiacriticSensitiveUndefined: Self = StObject.set(x, "diacriticSensitive", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     }
   }
   
@@ -874,8 +838,7 @@ object Query {
        with ScopeOptions
   object GetOptions {
     
-    @scala.inline
-    def apply(): GetOptions = {
+    inline def apply(): GetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetOptions]
     }

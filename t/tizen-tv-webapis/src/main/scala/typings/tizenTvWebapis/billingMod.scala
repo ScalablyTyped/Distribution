@@ -37,17 +37,14 @@ object billingMod {
   }
   object ApplyInvoiceData {
     
-    @scala.inline
-    def apply(apiResult: String): ApplyInvoiceData = {
+    inline def apply(apiResult: String): ApplyInvoiceData = {
       val __obj = js.Dynamic.literal(apiResult = apiResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplyInvoiceData]
     }
     
-    @scala.inline
-    implicit class ApplyInvoiceDataMutableBuilder[Self <: ApplyInvoiceData] (val x: Self) extends AnyVal {
+    extension [Self <: ApplyInvoiceData](x: Self) {
       
-      @scala.inline
-      def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
+      inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,20 +64,16 @@ object billingMod {
   }
   object BillingBuyData {
     
-    @scala.inline
-    def apply(payDetail: String, payResult: String): BillingBuyData = {
+    inline def apply(payDetail: String, payResult: String): BillingBuyData = {
       val __obj = js.Dynamic.literal(payDetail = payDetail.asInstanceOf[js.Any], payResult = payResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[BillingBuyData]
     }
     
-    @scala.inline
-    implicit class BillingBuyDataMutableBuilder[Self <: BillingBuyData] (val x: Self) extends AnyVal {
+    extension [Self <: BillingBuyData](x: Self) {
       
-      @scala.inline
-      def setPayDetail(value: String): Self = StObject.set(x, "payDetail", value.asInstanceOf[js.Any])
+      inline def setPayDetail(value: String): Self = StObject.set(x, "payDetail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayResult(value: String): Self = StObject.set(x, "payResult", value.asInstanceOf[js.Any])
+      inline def setPayResult(value: String): Self = StObject.set(x, "payResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -644,17 +637,14 @@ object billingMod {
   }
   object CancelSubscriptionData {
     
-    @scala.inline
-    def apply(apiResult: String): CancelSubscriptionData = {
+    inline def apply(apiResult: String): CancelSubscriptionData = {
       val __obj = js.Dynamic.literal(apiResult = apiResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[CancelSubscriptionData]
     }
     
-    @scala.inline
-    implicit class CancelSubscriptionDataMutableBuilder[Self <: CancelSubscriptionData] (val x: Self) extends AnyVal {
+    extension [Self <: CancelSubscriptionData](x: Self) {
       
-      @scala.inline
-      def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
+      inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -664,17 +654,14 @@ object billingMod {
   }
   object ProductsListData {
     
-    @scala.inline
-    def apply(apiResult: String): ProductsListData = {
+    inline def apply(apiResult: String): ProductsListData = {
       val __obj = js.Dynamic.literal(apiResult = apiResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProductsListData]
     }
     
-    @scala.inline
-    implicit class ProductsListDataMutableBuilder[Self <: ProductsListData] (val x: Self) extends AnyVal {
+    extension [Self <: ProductsListData](x: Self) {
       
-      @scala.inline
-      def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
+      inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -684,17 +671,14 @@ object billingMod {
   }
   object ServiceAvailableData {
     
-    @scala.inline
-    def apply(apiResult: String): ServiceAvailableData = {
+    inline def apply(apiResult: String): ServiceAvailableData = {
       val __obj = js.Dynamic.literal(apiResult = apiResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceAvailableData]
     }
     
-    @scala.inline
-    implicit class ServiceAvailableDataMutableBuilder[Self <: ServiceAvailableData] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceAvailableData](x: Self) {
       
-      @scala.inline
-      def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
+      inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -704,17 +688,14 @@ object billingMod {
   }
   object ServiceCountryAvailabilityData {
     
-    @scala.inline
-    def apply(apiResult: String): ServiceCountryAvailabilityData = {
+    inline def apply(apiResult: String): ServiceCountryAvailabilityData = {
       val __obj = js.Dynamic.literal(apiResult = apiResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceCountryAvailabilityData]
     }
     
-    @scala.inline
-    implicit class ServiceCountryAvailabilityDataMutableBuilder[Self <: ServiceCountryAvailabilityData] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceCountryAvailabilityData](x: Self) {
       
-      @scala.inline
-      def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
+      inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -724,17 +705,14 @@ object billingMod {
   }
   object UserPurchaseData {
     
-    @scala.inline
-    def apply(apiResult: String): UserPurchaseData = {
+    inline def apply(apiResult: String): UserPurchaseData = {
       val __obj = js.Dynamic.literal(apiResult = apiResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserPurchaseData]
     }
     
-    @scala.inline
-    implicit class UserPurchaseDataMutableBuilder[Self <: UserPurchaseData] (val x: Self) extends AnyVal {
+    extension [Self <: UserPurchaseData](x: Self) {
       
-      @scala.inline
-      def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
+      inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -744,17 +722,14 @@ object billingMod {
   }
   object VerifyInvoiceData {
     
-    @scala.inline
-    def apply(apiResult: String): VerifyInvoiceData = {
+    inline def apply(apiResult: String): VerifyInvoiceData = {
       val __obj = js.Dynamic.literal(apiResult = apiResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyInvoiceData]
     }
     
-    @scala.inline
-    implicit class VerifyInvoiceDataMutableBuilder[Self <: VerifyInvoiceData] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyInvoiceData](x: Self) {
       
-      @scala.inline
-      def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
+      inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
     }
   }
 }

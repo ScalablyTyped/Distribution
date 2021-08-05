@@ -20,11 +20,9 @@ object selfMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def load(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def load(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def url(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def url(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("sdk/self", "id")

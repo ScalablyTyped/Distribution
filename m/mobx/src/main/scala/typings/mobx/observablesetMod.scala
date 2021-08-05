@@ -31,11 +31,11 @@ object observablesetMod {
     def this(initialData: IObservableSetInitialValues[T], enhancer: Unit, name: String) = this()
     def this(initialData: IObservableSetInitialValues[T], enhancer: IEnhancer[T], name: String) = this()
     
-    var _atom: js.Any = js.native
+    /* private */ var _atom: js.Any = js.native
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
-    var dehanceValue: js.Any = js.native
+    /* private */ var dehanceValue: js.Any = js.native
     
     var dehancer: js.Any = js.native
     
@@ -66,8 +66,7 @@ object observablesetMod {
     var toStringTag_ObservableSet: typings.mobx.mobxStrings.Set = js.native
   }
   
-  @scala.inline
-  def isObservableSet(thing: js.Any): /* is mobx.mobx/lib/types/observableset.ObservableSet<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableSet")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observableset.ObservableSet<any> */ Boolean]
+  inline def isObservableSet(thing: js.Any): /* is mobx.mobx/lib/types/observableset.ObservableSet<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableSet")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observableset.ObservableSet<any> */ Boolean]
   
   type IObservableSetInitialValues[T] = Set[T] | js.Array[T]
   
@@ -78,16 +77,14 @@ object observablesetMod {
   trait ISetDidChange[T] extends StObject
   object ISetDidChange {
     
-    @scala.inline
-    def NewValueObject[T](newValue: T, `object`: ObservableSet[T]): typings.mobx.anon.NewValueObject[T] = {
+    inline def NewValueObject[T](newValue: T, `object`: ObservableSet[T]): typings.mobx.anon.NewValueObject[T] = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("add")
       __obj.asInstanceOf[typings.mobx.anon.NewValueObject[T]]
     }
     
-    @scala.inline
-    def ObjectOldValue[T](`object`: ObservableSet[T], oldValue: T): typings.mobx.anon.ObjectOldValue[T] = {
+    inline def ObjectOldValue[T](`object`: ObservableSet[T], oldValue: T): typings.mobx.anon.ObjectOldValue[T] = {
       val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("delete")
@@ -102,16 +99,14 @@ object observablesetMod {
   trait ISetWillChange[T] extends StObject
   object ISetWillChange {
     
-    @scala.inline
-    def NewValueObjectType[T](newValue: T, `object`: ObservableSet[T]): typings.mobx.anon.NewValueObjectType[T] = {
+    inline def NewValueObjectType[T](newValue: T, `object`: ObservableSet[T]): typings.mobx.anon.NewValueObjectType[T] = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("add")
       __obj.asInstanceOf[typings.mobx.anon.NewValueObjectType[T]]
     }
     
-    @scala.inline
-    def OldValueType[T](`object`: ObservableSet[T], oldValue: T): typings.mobx.anon.OldValueType[T] = {
+    inline def OldValueType[T](`object`: ObservableSet[T], oldValue: T): typings.mobx.anon.OldValueType[T] = {
       val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("delete")

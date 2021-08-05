@@ -18,28 +18,21 @@ trait EnvironmentLanguage extends StObject {
 }
 object EnvironmentLanguage {
   
-  @scala.inline
-  def apply(): EnvironmentLanguage = {
+  inline def apply(): EnvironmentLanguage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentLanguage]
   }
   
-  @scala.inline
-  implicit class EnvironmentLanguageMutableBuilder[Self <: EnvironmentLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentLanguage](x: Self) {
     
-    @scala.inline
-    def setImages(value: EnvironmentImages): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: EnvironmentImages): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: EnvironmentImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: EnvironmentImage*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguage(value: LanguageType): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: LanguageType): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

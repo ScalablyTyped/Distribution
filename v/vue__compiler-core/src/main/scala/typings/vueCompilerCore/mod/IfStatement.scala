@@ -21,29 +21,22 @@ trait IfStatement
 }
 object IfStatement {
   
-  @scala.inline
-  def apply(consequent: BlockStatement, loc: SourceLocation, test: ExpressionNode): IfStatement = {
+  inline def apply(consequent: BlockStatement, loc: SourceLocation, test: ExpressionNode): IfStatement = {
     val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(23)
     __obj.asInstanceOf[IfStatement]
   }
   
-  @scala.inline
-  implicit class IfStatementMutableBuilder[Self <: IfStatement] (val x: Self) extends AnyVal {
+  extension [Self <: IfStatement](x: Self) {
     
-    @scala.inline
-    def setAlternate(value: IfStatement | BlockStatement | ReturnStatement): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: IfStatement | BlockStatement | ReturnStatement): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
+    inline def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
     
-    @scala.inline
-    def setConsequent(value: BlockStatement): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
+    inline def setConsequent(value: BlockStatement): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: ExpressionNode): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: ExpressionNode): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `23`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `23`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

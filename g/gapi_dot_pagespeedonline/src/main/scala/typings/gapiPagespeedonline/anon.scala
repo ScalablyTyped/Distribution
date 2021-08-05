@@ -20,23 +20,18 @@ object anon {
   }
   object Args {
     
-    @scala.inline
-    def apply(args: js.Array[Type], format: String): Args = {
+    inline def apply(args: js.Array[Type], format: String): Args = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
-    @scala.inline
-    implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
+    extension [Self <: Args](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[Type]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Type]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: Type*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Type*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,8 +95,7 @@ object anon {
   }
   object AvoidBadRequests {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AvoidBadRequests: GoogleApiPageSpeedOnlineRuleResource,
       AvoidCharsetInMetaTag: GoogleApiPageSpeedOnlineRuleResource,
       AvoidCssImport: GoogleApiPageSpeedOnlineRuleResource,
@@ -135,92 +129,63 @@ object anon {
       __obj.asInstanceOf[AvoidBadRequests]
     }
     
-    @scala.inline
-    implicit class AvoidBadRequestsMutableBuilder[Self <: AvoidBadRequests] (val x: Self) extends AnyVal {
+    extension [Self <: AvoidBadRequests](x: Self) {
       
-      @scala.inline
-      def setAvoidBadRequests(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidBadRequests", value.asInstanceOf[js.Any])
+      inline def setAvoidBadRequests(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidBadRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvoidCharsetInMetaTag(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidCharsetInMetaTag", value.asInstanceOf[js.Any])
+      inline def setAvoidCharsetInMetaTag(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidCharsetInMetaTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvoidCssImport(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidCssImport", value.asInstanceOf[js.Any])
+      inline def setAvoidCssImport(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidCssImport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvoidLandingPageRedirects(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidLandingPageRedirects", value.asInstanceOf[js.Any])
+      inline def setAvoidLandingPageRedirects(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidLandingPageRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvoidLongRunningScripts(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidLongRunningScripts", value.asInstanceOf[js.Any])
+      inline def setAvoidLongRunningScripts(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidLongRunningScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferParsingJavaScript(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "DeferParsingJavaScript", value.asInstanceOf[js.Any])
+      inline def setDeferParsingJavaScript(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "DeferParsingJavaScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableGzipCompression(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "EnableGzipCompression", value.asInstanceOf[js.Any])
+      inline def setEnableGzipCompression(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "EnableGzipCompression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineSmallCss(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "InlineSmallCss", value.asInstanceOf[js.Any])
+      inline def setInlineSmallCss(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "InlineSmallCss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineSmallJavaScript(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "InlineSmallJavaScript", value.asInstanceOf[js.Any])
+      inline def setInlineSmallJavaScript(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "InlineSmallJavaScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeverageBrowserCaching(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "LeverageBrowserCaching", value.asInstanceOf[js.Any])
+      inline def setLeverageBrowserCaching(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "LeverageBrowserCaching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyCss(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinifyCss", value.asInstanceOf[js.Any])
+      inline def setMinifyCss(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinifyCss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyHTML(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinifyHTML", value.asInstanceOf[js.Any])
+      inline def setMinifyHTML(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinifyHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyJavaScript(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinifyJavaScript", value.asInstanceOf[js.Any])
+      inline def setMinifyJavaScript(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinifyJavaScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimizeRedirects(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinimizeRedirects", value.asInstanceOf[js.Any])
+      inline def setMinimizeRedirects(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinimizeRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimizeRequestSize(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinimizeRequestSize", value.asInstanceOf[js.Any])
+      inline def setMinimizeRequestSize(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "MinimizeRequestSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizeImages(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "OptimizeImages", value.asInstanceOf[js.Any])
+      inline def setOptimizeImages(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "OptimizeImages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizeTheOrderOfStylesAndScripts(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "OptimizeTheOrderOfStylesAndScripts", value.asInstanceOf[js.Any])
+      inline def setOptimizeTheOrderOfStylesAndScripts(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "OptimizeTheOrderOfStylesAndScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferAsyncResources(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "PreferAsyncResources", value.asInstanceOf[js.Any])
+      inline def setPreferAsyncResources(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "PreferAsyncResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPutCssInTheDocumentHead(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "PutCssInTheDocumentHead", value.asInstanceOf[js.Any])
+      inline def setPutCssInTheDocumentHead(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "PutCssInTheDocumentHead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveQueryStringsFromStaticResources(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "RemoveQueryStringsFromStaticResources", value.asInstanceOf[js.Any])
+      inline def setRemoveQueryStringsFromStaticResources(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "RemoveQueryStringsFromStaticResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServeResponseTime(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "ServeResponseTime", value.asInstanceOf[js.Any])
+      inline def setServeResponseTime(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "ServeResponseTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerResourcesFromAConsistentUrl(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "ServerResourcesFromAConsistentUrl", value.asInstanceOf[js.Any])
+      inline def setServerResourcesFromAConsistentUrl(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "ServerResourcesFromAConsistentUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerScaledImages(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "ServerScaledImages", value.asInstanceOf[js.Any])
+      inline def setServerScaledImages(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "ServerScaledImages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecifyACacheValidator(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpecifyACacheValidator", value.asInstanceOf[js.Any])
+      inline def setSpecifyACacheValidator(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpecifyACacheValidator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecifyAVaryAcceptEncodingHeader(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpecifyAVaryAcceptEncodingHeader", value.asInstanceOf[js.Any])
+      inline def setSpecifyAVaryAcceptEncodingHeader(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpecifyAVaryAcceptEncodingHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecifyCharsetEarly(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpecifyCharsetEarly", value.asInstanceOf[js.Any])
+      inline def setSpecifyCharsetEarly(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpecifyCharsetEarly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecifyImageDimensions(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpecifyImageDimensions", value.asInstanceOf[js.Any])
+      inline def setSpecifyImageDimensions(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpecifyImageDimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpriteImages(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpriteImages", value.asInstanceOf[js.Any])
+      inline def setSpriteImages(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "SpriteImages", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,8 +258,7 @@ object anon {
   }
   object CssResponsebytes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cssResponsebytes: String,
       flashResponseBytes: String,
       htmlResponseBytes: String,
@@ -313,47 +277,33 @@ object anon {
       __obj.asInstanceOf[CssResponsebytes]
     }
     
-    @scala.inline
-    implicit class CssResponsebytesMutableBuilder[Self <: CssResponsebytes] (val x: Self) extends AnyVal {
+    extension [Self <: CssResponsebytes](x: Self) {
       
-      @scala.inline
-      def setCssResponsebytes(value: String): Self = StObject.set(x, "cssResponsebytes", value.asInstanceOf[js.Any])
+      inline def setCssResponsebytes(value: String): Self = StObject.set(x, "cssResponsebytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashResponseBytes(value: String): Self = StObject.set(x, "flashResponseBytes", value.asInstanceOf[js.Any])
+      inline def setFlashResponseBytes(value: String): Self = StObject.set(x, "flashResponseBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlResponseBytes(value: String): Self = StObject.set(x, "htmlResponseBytes", value.asInstanceOf[js.Any])
+      inline def setHtmlResponseBytes(value: String): Self = StObject.set(x, "htmlResponseBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageResponseBytes(value: String): Self = StObject.set(x, "imageResponseBytes", value.asInstanceOf[js.Any])
+      inline def setImageResponseBytes(value: String): Self = StObject.set(x, "imageResponseBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJavascriptResponsebytes(value: String): Self = StObject.set(x, "javascriptResponsebytes", value.asInstanceOf[js.Any])
+      inline def setJavascriptResponsebytes(value: String): Self = StObject.set(x, "javascriptResponsebytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberCssResources(value: Double): Self = StObject.set(x, "numberCssResources", value.asInstanceOf[js.Any])
+      inline def setNumberCssResources(value: Double): Self = StObject.set(x, "numberCssResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberHosts(value: Double): Self = StObject.set(x, "numberHosts", value.asInstanceOf[js.Any])
+      inline def setNumberHosts(value: Double): Self = StObject.set(x, "numberHosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberJsResources(value: Double): Self = StObject.set(x, "numberJsResources", value.asInstanceOf[js.Any])
+      inline def setNumberJsResources(value: Double): Self = StObject.set(x, "numberJsResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberResources(value: Double): Self = StObject.set(x, "numberResources", value.asInstanceOf[js.Any])
+      inline def setNumberResources(value: Double): Self = StObject.set(x, "numberResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberStaticResources(value: Double): Self = StObject.set(x, "numberStaticResources", value.asInstanceOf[js.Any])
+      inline def setNumberStaticResources(value: Double): Self = StObject.set(x, "numberStaticResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherResponsebytes(value: String): Self = StObject.set(x, "otherResponsebytes", value.asInstanceOf[js.Any])
+      inline def setOtherResponsebytes(value: String): Self = StObject.set(x, "otherResponsebytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextResponseBytes(value: String): Self = StObject.set(x, "textResponseBytes", value.asInstanceOf[js.Any])
+      inline def setTextResponseBytes(value: String): Self = StObject.set(x, "textResponseBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalRequestBytes(value: String): Self = StObject.set(x, "totalRequestBytes", value.asInstanceOf[js.Any])
+      inline def setTotalRequestBytes(value: String): Self = StObject.set(x, "totalRequestBytes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -371,23 +321,18 @@ object anon {
   }
   object Details {
     
-    @scala.inline
-    def apply(details: js.Array[Args], result: Args): Details = {
+    inline def apply(details: js.Array[Args], result: Args): Details = {
       val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Details]
     }
     
-    @scala.inline
-    implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+    extension [Self <: Details](x: Self) {
       
-      @scala.inline
-      def setDetails(value: js.Array[Args]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: js.Array[Args]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsVarargs(value: Args*): Self = StObject.set(x, "details", js.Array(value :_*))
+      inline def setDetailsVarargs(value: Args*): Self = StObject.set(x, "details", js.Array(value :_*))
       
-      @scala.inline
-      def setResult(value: Args): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Args): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -425,50 +370,36 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(url: String): Fields = {
+    inline def apply(url: String): Fields = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setRule(value: js.Array[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: js.Array[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+      inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
       
-      @scala.inline
-      def setRuleVarargs(value: String*): Self = StObject.set(x, "rule", js.Array(value :_*))
+      inline def setRuleVarargs(value: String*): Self = StObject.set(x, "rule", js.Array(value :_*))
       
-      @scala.inline
-      def setScreenshot(value: Boolean): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
+      inline def setScreenshot(value: Boolean): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
+      inline def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
       
-      @scala.inline
-      def setStategy(value: String): Self = StObject.set(x, "stategy", value.asInstanceOf[js.Any])
+      inline def setStategy(value: String): Self = StObject.set(x, "stategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStategyUndefined: Self = StObject.set(x, "stategy", js.undefined)
+      inline def setStategyUndefined: Self = StObject.set(x, "stategy", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -486,23 +417,18 @@ object anon {
   }
   object Header {
     
-    @scala.inline
-    def apply(header: Args, urls: js.Array[Details]): Header = {
+    inline def apply(header: Args, urls: js.Array[Details]): Header = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
       __obj.asInstanceOf[Header]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+    extension [Self <: Header](x: Self) {
       
-      @scala.inline
-      def setHeader(value: Args): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Args): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrls(value: js.Array[Details]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+      inline def setUrls(value: js.Array[Details]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlsVarargs(value: Details*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: Details*): Self = StObject.set(x, "urls", js.Array(value :_*))
     }
   }
   
@@ -520,20 +446,16 @@ object anon {
   }
   object Locale {
     
-    @scala.inline
-    def apply(locale: String, ruleResults: AvoidBadRequests): Locale = {
+    inline def apply(locale: String, ruleResults: AvoidBadRequests): Locale = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], ruleResults = ruleResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleResults(value: AvoidBadRequests): Self = StObject.set(x, "ruleResults", value.asInstanceOf[js.Any])
+      inline def setRuleResults(value: AvoidBadRequests): Self = StObject.set(x, "ruleResults", value.asInstanceOf[js.Any])
     }
   }
   
@@ -551,20 +473,16 @@ object anon {
   }
   object Major {
     
-    @scala.inline
-    def apply(major: Double, minor: Double): Major = {
+    inline def apply(major: Double, minor: Double): Major = {
       val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any])
       __obj.asInstanceOf[Major]
     }
     
-    @scala.inline
-    implicit class MajorMutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
+    extension [Self <: Major](x: Self) {
       
-      @scala.inline
-      def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -582,21 +500,17 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: String, value: String): Type = {
+    inline def apply(`type`: String, value: String): Type = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

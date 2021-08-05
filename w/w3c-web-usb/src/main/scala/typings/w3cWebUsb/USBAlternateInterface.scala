@@ -20,8 +20,7 @@ trait USBAlternateInterface extends StObject {
 }
 object USBAlternateInterface {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternateSetting: Double,
     endpoints: js.Array[USBEndpoint],
     interfaceClass: Double,
@@ -32,31 +31,22 @@ object USBAlternateInterface {
     __obj.asInstanceOf[USBAlternateInterface]
   }
   
-  @scala.inline
-  implicit class USBAlternateInterfaceMutableBuilder[Self <: USBAlternateInterface] (val x: Self) extends AnyVal {
+  extension [Self <: USBAlternateInterface](x: Self) {
     
-    @scala.inline
-    def setAlternateSetting(value: Double): Self = StObject.set(x, "alternateSetting", value.asInstanceOf[js.Any])
+    inline def setAlternateSetting(value: Double): Self = StObject.set(x, "alternateSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpoints(value: js.Array[USBEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: js.Array[USBEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsVarargs(value: USBEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: USBEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setInterfaceClass(value: Double): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
+    inline def setInterfaceClass(value: Double): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
+    inline def setInterfaceName(value: String): Self = StObject.set(x, "interfaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceNameUndefined: Self = StObject.set(x, "interfaceName", js.undefined)
+    inline def setInterfaceNameUndefined: Self = StObject.set(x, "interfaceName", js.undefined)
     
-    @scala.inline
-    def setInterfaceProtocol(value: Double): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
+    inline def setInterfaceProtocol(value: Double): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceSubclass(value: Double): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
+    inline def setInterfaceSubclass(value: Double): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
   }
 }

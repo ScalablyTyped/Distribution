@@ -11,22 +11,17 @@ trait CustomPropertyCollectionUpdateData extends StObject {
 }
 object CustomPropertyCollectionUpdateData {
   
-  @scala.inline
-  def apply(): CustomPropertyCollectionUpdateData = {
+  inline def apply(): CustomPropertyCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomPropertyCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class CustomPropertyCollectionUpdateDataMutableBuilder[Self <: CustomPropertyCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[CustomPropertyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[CustomPropertyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: CustomPropertyData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: CustomPropertyData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -78,14 +78,10 @@ object mod {
     * @param app LoopBack application created by loopback().
     * @param options Boot options; If String, this is the application root directory; if object, has below properties.
     */
-  @scala.inline
-  def apply(app: LoopBackApplication, options: String): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(app: LoopBackApplication, options: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(app: LoopBackApplication, options: OptionsLB): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(app: LoopBackApplication, options: OptionsLB, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(app: LoopBackApplication, options: String): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(app: LoopBackApplication, options: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(app: LoopBackApplication, options: OptionsLB): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(app: LoopBackApplication, options: OptionsLB, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("loopback-boot", JSImport.Namespace)
   @js.native
@@ -211,8 +207,7 @@ object mod {
   }
   object OptionsLB {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appConfigRootDir: String,
       appRootDir: String,
       bootDirs: js.Array[String],
@@ -236,80 +231,55 @@ object mod {
       __obj.asInstanceOf[OptionsLB]
     }
     
-    @scala.inline
-    implicit class OptionsLBMutableBuilder[Self <: OptionsLB] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsLB](x: Self) {
       
-      @scala.inline
-      def setAppConfigRootDir(value: String): Self = StObject.set(x, "appConfigRootDir", value.asInstanceOf[js.Any])
+      inline def setAppConfigRootDir(value: String): Self = StObject.set(x, "appConfigRootDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppRootDir(value: String): Self = StObject.set(x, "appRootDir", value.asInstanceOf[js.Any])
+      inline def setAppRootDir(value: String): Self = StObject.set(x, "appRootDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootDirs(value: js.Array[String]): Self = StObject.set(x, "bootDirs", value.asInstanceOf[js.Any])
+      inline def setBootDirs(value: js.Array[String]): Self = StObject.set(x, "bootDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootDirsVarargs(value: String*): Self = StObject.set(x, "bootDirs", js.Array(value :_*))
+      inline def setBootDirsVarargs(value: String*): Self = StObject.set(x, "bootDirs", js.Array(value :_*))
       
-      @scala.inline
-      def setBootScripts(value: js.Array[String]): Self = StObject.set(x, "bootScripts", value.asInstanceOf[js.Any])
+      inline def setBootScripts(value: js.Array[String]): Self = StObject.set(x, "bootScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootScriptsVarargs(value: String*): Self = StObject.set(x, "bootScripts", js.Array(value :_*))
+      inline def setBootScriptsVarargs(value: String*): Self = StObject.set(x, "bootScripts", js.Array(value :_*))
       
-      @scala.inline
-      def setComponentRootDir(value: String): Self = StObject.set(x, "componentRootDir", value.asInstanceOf[js.Any])
+      inline def setComponentRootDir(value: String): Self = StObject.set(x, "componentRootDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponents(value: js.Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSources(value: js.Any): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
+      inline def setDataSources(value: js.Any): Self = StObject.set(x, "dataSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDsRootDir(value: String): Self = StObject.set(x, "dsRootDir", value.asInstanceOf[js.Any])
+      inline def setDsRootDir(value: String): Self = StObject.set(x, "dsRootDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddleware(value: js.Any): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      inline def setMiddleware(value: js.Any): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddlewareRootDir(value: String): Self = StObject.set(x, "middlewareRootDir", value.asInstanceOf[js.Any])
+      inline def setMiddlewareRootDir(value: String): Self = StObject.set(x, "middlewareRootDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinDirs(value: js.Array[String]): Self = StObject.set(x, "mixinDirs", value.asInstanceOf[js.Any])
+      inline def setMixinDirs(value: js.Array[String]): Self = StObject.set(x, "mixinDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinDirsVarargs(value: String*): Self = StObject.set(x, "mixinDirs", js.Array(value :_*))
+      inline def setMixinDirsVarargs(value: String*): Self = StObject.set(x, "mixinDirs", js.Array(value :_*))
       
-      @scala.inline
-      def setMixinSources(value: js.Array[String]): Self = StObject.set(x, "mixinSources", value.asInstanceOf[js.Any])
+      inline def setMixinSources(value: js.Array[String]): Self = StObject.set(x, "mixinSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinSourcesVarargs(value: String*): Self = StObject.set(x, "mixinSources", js.Array(value :_*))
+      inline def setMixinSourcesVarargs(value: String*): Self = StObject.set(x, "mixinSources", js.Array(value :_*))
       
-      @scala.inline
-      def setModelDefinitions(value: js.Array[js.Any]): Self = StObject.set(x, "modelDefinitions", value.asInstanceOf[js.Any])
+      inline def setModelDefinitions(value: js.Array[js.Any]): Self = StObject.set(x, "modelDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelDefinitionsVarargs(value: js.Any*): Self = StObject.set(x, "modelDefinitions", js.Array(value :_*))
+      inline def setModelDefinitionsVarargs(value: js.Any*): Self = StObject.set(x, "modelDefinitions", js.Array(value :_*))
       
-      @scala.inline
-      def setModelSources(value: js.Array[String]): Self = StObject.set(x, "modelSources", value.asInstanceOf[js.Any])
+      inline def setModelSources(value: js.Array[String]): Self = StObject.set(x, "modelSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelSourcesVarargs(value: String*): Self = StObject.set(x, "modelSources", js.Array(value :_*))
+      inline def setModelSourcesVarargs(value: String*): Self = StObject.set(x, "modelSources", js.Array(value :_*))
       
-      @scala.inline
-      def setModels(value: js.Any): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+      inline def setModels(value: js.Any): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelsRootDir(value: String): Self = StObject.set(x, "modelsRootDir", value.asInstanceOf[js.Any])
+      inline def setModelsRootDir(value: String): Self = StObject.set(x, "modelsRootDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalization(value: String | Boolean | js.Any): Self = StObject.set(x, "normalization", value.asInstanceOf[js.Any])
+      inline def setNormalization(value: String | Boolean | js.Any): Self = StObject.set(x, "normalization", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,16 +10,13 @@ trait WindowSessionStorage extends StObject {
 }
 object WindowSessionStorage {
   
-  @scala.inline
-  def apply(sessionStorage: Storage): WindowSessionStorage = {
+  inline def apply(sessionStorage: Storage): WindowSessionStorage = {
     val __obj = js.Dynamic.literal(sessionStorage = sessionStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowSessionStorage]
   }
   
-  @scala.inline
-  implicit class WindowSessionStorageMutableBuilder[Self <: WindowSessionStorage] (val x: Self) extends AnyVal {
+  extension [Self <: WindowSessionStorage](x: Self) {
     
-    @scala.inline
-    def setSessionStorage(value: Storage): Self = StObject.set(x, "sessionStorage", value.asInstanceOf[js.Any])
+    inline def setSessionStorage(value: Storage): Self = StObject.set(x, "sessionStorage", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait SchemaAnalyticsDataimportDeleteUploadDataRequest extends StObject {
 }
 object SchemaAnalyticsDataimportDeleteUploadDataRequest {
   
-  @scala.inline
-  def apply(): SchemaAnalyticsDataimportDeleteUploadDataRequest = {
+  inline def apply(): SchemaAnalyticsDataimportDeleteUploadDataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnalyticsDataimportDeleteUploadDataRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAnalyticsDataimportDeleteUploadDataRequestMutableBuilder[Self <: SchemaAnalyticsDataimportDeleteUploadDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnalyticsDataimportDeleteUploadDataRequest](x: Self) {
     
-    @scala.inline
-    def setCustomDataImportUids(value: js.Array[String]): Self = StObject.set(x, "customDataImportUids", value.asInstanceOf[js.Any])
+    inline def setCustomDataImportUids(value: js.Array[String]): Self = StObject.set(x, "customDataImportUids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataImportUidsUndefined: Self = StObject.set(x, "customDataImportUids", js.undefined)
+    inline def setCustomDataImportUidsUndefined: Self = StObject.set(x, "customDataImportUids", js.undefined)
     
-    @scala.inline
-    def setCustomDataImportUidsVarargs(value: String*): Self = StObject.set(x, "customDataImportUids", js.Array(value :_*))
+    inline def setCustomDataImportUidsVarargs(value: String*): Self = StObject.set(x, "customDataImportUids", js.Array(value :_*))
   }
 }

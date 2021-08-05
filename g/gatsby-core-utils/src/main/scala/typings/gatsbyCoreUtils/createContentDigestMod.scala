@@ -11,10 +11,7 @@ object createContentDigestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createContentDigest(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def createContentDigest(input: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def createContentDigest(input: BinaryLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createContentDigest(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createContentDigest(input: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createContentDigest(input: BinaryLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }

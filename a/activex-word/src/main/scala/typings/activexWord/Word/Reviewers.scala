@@ -16,13 +16,12 @@ trait Reviewers extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.Reviewers_typekey")
+  /* private */ @JSName("Word.Reviewers_typekey")
   var WordDotReviewers_typekey: Reviewers
 }
 object Reviewers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object Reviewers {
     __obj.asInstanceOf[Reviewers]
   }
   
-  @scala.inline
-  implicit class ReviewersMutableBuilder[Self <: Reviewers] (val x: Self) extends AnyVal {
+  extension [Self <: Reviewers](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Reviewer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Reviewer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotReviewers_typekey(value: Reviewers): Self = StObject.set(x, "Word.Reviewers_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotReviewers_typekey(value: Reviewers): Self = StObject.set(x, "Word.Reviewers_typekey", value.asInstanceOf[js.Any])
   }
 }

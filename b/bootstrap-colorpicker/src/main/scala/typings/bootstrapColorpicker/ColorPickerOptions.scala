@@ -117,109 +117,75 @@ trait ColorPickerOptions extends StObject {
 }
 object ColorPickerOptions {
   
-  @scala.inline
-  def apply(): ColorPickerOptions = {
+  inline def apply(): ColorPickerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorPickerOptions]
   }
   
-  @scala.inline
-  implicit class ColorPickerOptionsMutableBuilder[Self <: ColorPickerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ColorPickerOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: ColorPickerAlignOptions): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: ColorPickerAlignOptions): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSelectors(value: js.Object): Self = StObject.set(x, "colorSelectors", value.asInstanceOf[js.Any])
+    inline def setColorSelectors(value: js.Object): Self = StObject.set(x, "colorSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSelectorsUndefined: Self = StObject.set(x, "colorSelectors", js.undefined)
+    inline def setColorSelectorsUndefined: Self = StObject.set(x, "colorSelectors", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setComponent(value: String | JQuery): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: String | JQuery): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setContainer(value: Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setCustomClass(value: String): Self = StObject.set(x, "customClass", value.asInstanceOf[js.Any])
+    inline def setCustomClass(value: String): Self = StObject.set(x, "customClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomClassUndefined: Self = StObject.set(x, "customClass", js.undefined)
+    inline def setCustomClassUndefined: Self = StObject.set(x, "customClass", js.undefined)
     
-    @scala.inline
-    def setFallbackColor(value: String): Self = StObject.set(x, "fallbackColor", value.asInstanceOf[js.Any])
+    inline def setFallbackColor(value: String): Self = StObject.set(x, "fallbackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackColorUndefined: Self = StObject.set(x, "fallbackColor", js.undefined)
+    inline def setFallbackColorUndefined: Self = StObject.set(x, "fallbackColor", js.undefined)
     
-    @scala.inline
-    def setFallbackFormat(value: String): Self = StObject.set(x, "fallbackFormat", value.asInstanceOf[js.Any])
+    inline def setFallbackFormat(value: String): Self = StObject.set(x, "fallbackFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackFormatUndefined: Self = StObject.set(x, "fallbackFormat", js.undefined)
+    inline def setFallbackFormatUndefined: Self = StObject.set(x, "fallbackFormat", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ColorFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ColorFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHexNumberSignPrefix(value: Boolean): Self = StObject.set(x, "hexNumberSignPrefix", value.asInstanceOf[js.Any])
+    inline def setHexNumberSignPrefix(value: Boolean): Self = StObject.set(x, "hexNumberSignPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHexNumberSignPrefixUndefined: Self = StObject.set(x, "hexNumberSignPrefix", js.undefined)
+    inline def setHexNumberSignPrefixUndefined: Self = StObject.set(x, "hexNumberSignPrefix", js.undefined)
     
-    @scala.inline
-    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    @scala.inline
-    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+    inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
-    @scala.inline
-    def setInput(value: String | JQuery): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String | JQuery): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setSliders(value: js.Object): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
+    inline def setSliders(value: js.Object): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlidersHorz(value: js.Object): Self = StObject.set(x, "slidersHorz", value.asInstanceOf[js.Any])
+    inline def setSlidersHorz(value: js.Object): Self = StObject.set(x, "slidersHorz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlidersHorzUndefined: Self = StObject.set(x, "slidersHorz", js.undefined)
+    inline def setSlidersHorzUndefined: Self = StObject.set(x, "slidersHorz", js.undefined)
     
-    @scala.inline
-    def setSlidersUndefined: Self = StObject.set(x, "sliders", js.undefined)
+    inline def setSlidersUndefined: Self = StObject.set(x, "sliders", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

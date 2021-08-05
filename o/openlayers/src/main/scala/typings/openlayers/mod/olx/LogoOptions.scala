@@ -15,19 +15,15 @@ trait LogoOptions extends StObject {
 }
 object LogoOptions {
   
-  @scala.inline
-  def apply(href: String, src: String): LogoOptions = {
+  inline def apply(href: String, src: String): LogoOptions = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogoOptions]
   }
   
-  @scala.inline
-  implicit class LogoOptionsMutableBuilder[Self <: LogoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LogoOptions](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

@@ -43,67 +43,47 @@ trait AwsEc2SecurityGroupIpPermission extends StObject {
 }
 object AwsEc2SecurityGroupIpPermission {
   
-  @scala.inline
-  def apply(): AwsEc2SecurityGroupIpPermission = {
+  inline def apply(): AwsEc2SecurityGroupIpPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsEc2SecurityGroupIpPermission]
   }
   
-  @scala.inline
-  implicit class AwsEc2SecurityGroupIpPermissionMutableBuilder[Self <: AwsEc2SecurityGroupIpPermission] (val x: Self) extends AnyVal {
+  extension [Self <: AwsEc2SecurityGroupIpPermission](x: Self) {
     
-    @scala.inline
-    def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
+    inline def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
+    inline def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
     
-    @scala.inline
-    def setIpProtocol(value: NonEmptyString): Self = StObject.set(x, "IpProtocol", value.asInstanceOf[js.Any])
+    inline def setIpProtocol(value: NonEmptyString): Self = StObject.set(x, "IpProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpProtocolUndefined: Self = StObject.set(x, "IpProtocol", js.undefined)
+    inline def setIpProtocolUndefined: Self = StObject.set(x, "IpProtocol", js.undefined)
     
-    @scala.inline
-    def setIpRanges(value: AwsEc2SecurityGroupIpRangeList): Self = StObject.set(x, "IpRanges", value.asInstanceOf[js.Any])
+    inline def setIpRanges(value: AwsEc2SecurityGroupIpRangeList): Self = StObject.set(x, "IpRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpRangesUndefined: Self = StObject.set(x, "IpRanges", js.undefined)
+    inline def setIpRangesUndefined: Self = StObject.set(x, "IpRanges", js.undefined)
     
-    @scala.inline
-    def setIpRangesVarargs(value: AwsEc2SecurityGroupIpRange*): Self = StObject.set(x, "IpRanges", js.Array(value :_*))
+    inline def setIpRangesVarargs(value: AwsEc2SecurityGroupIpRange*): Self = StObject.set(x, "IpRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setIpv6Ranges(value: AwsEc2SecurityGroupIpv6RangeList): Self = StObject.set(x, "Ipv6Ranges", value.asInstanceOf[js.Any])
+    inline def setIpv6Ranges(value: AwsEc2SecurityGroupIpv6RangeList): Self = StObject.set(x, "Ipv6Ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6RangesUndefined: Self = StObject.set(x, "Ipv6Ranges", js.undefined)
+    inline def setIpv6RangesUndefined: Self = StObject.set(x, "Ipv6Ranges", js.undefined)
     
-    @scala.inline
-    def setIpv6RangesVarargs(value: AwsEc2SecurityGroupIpv6Range*): Self = StObject.set(x, "Ipv6Ranges", js.Array(value :_*))
+    inline def setIpv6RangesVarargs(value: AwsEc2SecurityGroupIpv6Range*): Self = StObject.set(x, "Ipv6Ranges", js.Array(value :_*))
     
-    @scala.inline
-    def setPrefixListIds(value: AwsEc2SecurityGroupPrefixListIdList): Self = StObject.set(x, "PrefixListIds", value.asInstanceOf[js.Any])
+    inline def setPrefixListIds(value: AwsEc2SecurityGroupPrefixListIdList): Self = StObject.set(x, "PrefixListIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListIdsUndefined: Self = StObject.set(x, "PrefixListIds", js.undefined)
+    inline def setPrefixListIdsUndefined: Self = StObject.set(x, "PrefixListIds", js.undefined)
     
-    @scala.inline
-    def setPrefixListIdsVarargs(value: AwsEc2SecurityGroupPrefixListId*): Self = StObject.set(x, "PrefixListIds", js.Array(value :_*))
+    inline def setPrefixListIdsVarargs(value: AwsEc2SecurityGroupPrefixListId*): Self = StObject.set(x, "PrefixListIds", js.Array(value :_*))
     
-    @scala.inline
-    def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
+    inline def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
+    inline def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
     
-    @scala.inline
-    def setUserIdGroupPairs(value: AwsEc2SecurityGroupUserIdGroupPairList): Self = StObject.set(x, "UserIdGroupPairs", value.asInstanceOf[js.Any])
+    inline def setUserIdGroupPairs(value: AwsEc2SecurityGroupUserIdGroupPairList): Self = StObject.set(x, "UserIdGroupPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdGroupPairsUndefined: Self = StObject.set(x, "UserIdGroupPairs", js.undefined)
+    inline def setUserIdGroupPairsUndefined: Self = StObject.set(x, "UserIdGroupPairs", js.undefined)
     
-    @scala.inline
-    def setUserIdGroupPairsVarargs(value: AwsEc2SecurityGroupUserIdGroupPair*): Self = StObject.set(x, "UserIdGroupPairs", js.Array(value :_*))
+    inline def setUserIdGroupPairsVarargs(value: AwsEc2SecurityGroupUserIdGroupPair*): Self = StObject.set(x, "UserIdGroupPairs", js.Array(value :_*))
   }
 }

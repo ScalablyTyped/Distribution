@@ -11,16 +11,13 @@ trait DataMessageAction extends StObject {
 }
 object DataMessageAction {
   
-  @scala.inline
-  def apply(data: MessageAction): DataMessageAction = {
+  inline def apply(data: MessageAction): DataMessageAction = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataMessageAction]
   }
   
-  @scala.inline
-  implicit class DataMessageActionMutableBuilder[Self <: DataMessageAction] (val x: Self) extends AnyVal {
+  extension [Self <: DataMessageAction](x: Self) {
     
-    @scala.inline
-    def setData(value: MessageAction): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: MessageAction): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

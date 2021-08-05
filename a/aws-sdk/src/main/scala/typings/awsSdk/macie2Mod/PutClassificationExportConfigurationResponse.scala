@@ -13,19 +13,15 @@ trait PutClassificationExportConfigurationResponse extends StObject {
 }
 object PutClassificationExportConfigurationResponse {
   
-  @scala.inline
-  def apply(): PutClassificationExportConfigurationResponse = {
+  inline def apply(): PutClassificationExportConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutClassificationExportConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class PutClassificationExportConfigurationResponseMutableBuilder[Self <: PutClassificationExportConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutClassificationExportConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: ClassificationExportConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ClassificationExportConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
   }
 }

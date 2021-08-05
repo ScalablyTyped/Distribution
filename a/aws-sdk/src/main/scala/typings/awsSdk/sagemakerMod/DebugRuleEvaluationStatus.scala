@@ -33,43 +33,31 @@ trait DebugRuleEvaluationStatus extends StObject {
 }
 object DebugRuleEvaluationStatus {
   
-  @scala.inline
-  def apply(): DebugRuleEvaluationStatus = {
+  inline def apply(): DebugRuleEvaluationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugRuleEvaluationStatus]
   }
   
-  @scala.inline
-  implicit class DebugRuleEvaluationStatusMutableBuilder[Self <: DebugRuleEvaluationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DebugRuleEvaluationStatus](x: Self) {
     
-    @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    @scala.inline
-    def setRuleConfigurationName(value: RuleConfigurationName): Self = StObject.set(x, "RuleConfigurationName", value.asInstanceOf[js.Any])
+    inline def setRuleConfigurationName(value: RuleConfigurationName): Self = StObject.set(x, "RuleConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleConfigurationNameUndefined: Self = StObject.set(x, "RuleConfigurationName", js.undefined)
+    inline def setRuleConfigurationNameUndefined: Self = StObject.set(x, "RuleConfigurationName", js.undefined)
     
-    @scala.inline
-    def setRuleEvaluationJobArn(value: ProcessingJobArn): Self = StObject.set(x, "RuleEvaluationJobArn", value.asInstanceOf[js.Any])
+    inline def setRuleEvaluationJobArn(value: ProcessingJobArn): Self = StObject.set(x, "RuleEvaluationJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleEvaluationJobArnUndefined: Self = StObject.set(x, "RuleEvaluationJobArn", js.undefined)
+    inline def setRuleEvaluationJobArnUndefined: Self = StObject.set(x, "RuleEvaluationJobArn", js.undefined)
     
-    @scala.inline
-    def setRuleEvaluationStatus(value: RuleEvaluationStatus): Self = StObject.set(x, "RuleEvaluationStatus", value.asInstanceOf[js.Any])
+    inline def setRuleEvaluationStatus(value: RuleEvaluationStatus): Self = StObject.set(x, "RuleEvaluationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleEvaluationStatusUndefined: Self = StObject.set(x, "RuleEvaluationStatus", js.undefined)
+    inline def setRuleEvaluationStatusUndefined: Self = StObject.set(x, "RuleEvaluationStatus", js.undefined)
     
-    @scala.inline
-    def setStatusDetails(value: StatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
+    inline def setStatusDetails(value: StatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
+    inline def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
   }
 }

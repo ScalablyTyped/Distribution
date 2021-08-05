@@ -10,16 +10,13 @@ trait EnumValuesExternalTfsBuild extends StObject {
 }
 object EnumValuesExternalTfsBuild {
   
-  @scala.inline
-  def apply(enumValues: ExternalTfsBuild): EnumValuesExternalTfsBuild = {
+  inline def apply(enumValues: ExternalTfsBuild): EnumValuesExternalTfsBuild = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesExternalTfsBuild]
   }
   
-  @scala.inline
-  implicit class EnumValuesExternalTfsBuildMutableBuilder[Self <: EnumValuesExternalTfsBuild] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesExternalTfsBuild](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: ExternalTfsBuild): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: ExternalTfsBuild): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

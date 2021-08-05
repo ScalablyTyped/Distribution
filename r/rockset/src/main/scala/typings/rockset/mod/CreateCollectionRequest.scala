@@ -26,52 +26,37 @@ trait CreateCollectionRequest extends StObject {
 }
 object CreateCollectionRequest {
   
-  @scala.inline
-  def apply(name: String): CreateCollectionRequest = {
+  inline def apply(name: String): CreateCollectionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCollectionRequest]
   }
   
-  @scala.inline
-  implicit class CreateCollectionRequestMutableBuilder[Self <: CreateCollectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCollectionRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEvent_time_info(value: EventTimeInfo): Self = StObject.set(x, "event_time_info", value.asInstanceOf[js.Any])
+    inline def setEvent_time_info(value: EventTimeInfo): Self = StObject.set(x, "event_time_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_time_infoUndefined: Self = StObject.set(x, "event_time_info", js.undefined)
+    inline def setEvent_time_infoUndefined: Self = StObject.set(x, "event_time_info", js.undefined)
     
-    @scala.inline
-    def setField_mappings(value: js.Array[FieldMappingV2]): Self = StObject.set(x, "field_mappings", value.asInstanceOf[js.Any])
+    inline def setField_mappings(value: js.Array[FieldMappingV2]): Self = StObject.set(x, "field_mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField_mappingsUndefined: Self = StObject.set(x, "field_mappings", js.undefined)
+    inline def setField_mappingsUndefined: Self = StObject.set(x, "field_mappings", js.undefined)
     
-    @scala.inline
-    def setField_mappingsVarargs(value: FieldMappingV2*): Self = StObject.set(x, "field_mappings", js.Array(value :_*))
+    inline def setField_mappingsVarargs(value: FieldMappingV2*): Self = StObject.set(x, "field_mappings", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetention_secs(value: Double): Self = StObject.set(x, "retention_secs", value.asInstanceOf[js.Any])
+    inline def setRetention_secs(value: Double): Self = StObject.set(x, "retention_secs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetention_secsUndefined: Self = StObject.set(x, "retention_secs", js.undefined)
+    inline def setRetention_secsUndefined: Self = StObject.set(x, "retention_secs", js.undefined)
     
-    @scala.inline
-    def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
   }
 }

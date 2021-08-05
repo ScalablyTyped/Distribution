@@ -12,6 +12,5 @@ object getPropsFilterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(propName: String): js.Function1[/* propPath */ NodePath[ObjectProperty_, js.Any], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* propPath */ NodePath[ObjectProperty_, js.Any], Boolean]]
+  inline def default(propName: String): js.Function1[/* propPath */ NodePath[ObjectProperty_, js.Any], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* propPath */ NodePath[ObjectProperty_, js.Any], Boolean]]
 }

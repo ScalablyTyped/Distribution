@@ -14,8 +14,7 @@ trait ServerJobRequestMessage
 }
 object ServerJobRequestMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     environment: JobEnvironment,
     jobId: String,
     jobName: String,
@@ -29,13 +28,10 @@ object ServerJobRequestMessage {
     __obj.asInstanceOf[ServerJobRequestMessage]
   }
   
-  @scala.inline
-  implicit class ServerJobRequestMessageMutableBuilder[Self <: ServerJobRequestMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ServerJobRequestMessage](x: Self) {
     
-    @scala.inline
-    def setTaskDefinition(value: TaskDefinition): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+    inline def setTaskDefinition(value: TaskDefinition): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskInstance(value: TaskInstance): Self = StObject.set(x, "taskInstance", value.asInstanceOf[js.Any])
+    inline def setTaskInstance(value: TaskInstance): Self = StObject.set(x, "taskInstance", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait StartDeviceSyncRequest extends StObject {
 }
 object StartDeviceSyncRequest {
   
-  @scala.inline
-  def apply(Features: Features): StartDeviceSyncRequest = {
+  inline def apply(Features: Features): StartDeviceSyncRequest = {
     val __obj = js.Dynamic.literal(Features = Features.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDeviceSyncRequest]
   }
   
-  @scala.inline
-  implicit class StartDeviceSyncRequestMutableBuilder[Self <: StartDeviceSyncRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartDeviceSyncRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceArnUndefined: Self = StObject.set(x, "DeviceArn", js.undefined)
+    inline def setDeviceArnUndefined: Self = StObject.set(x, "DeviceArn", js.undefined)
     
-    @scala.inline
-    def setFeatures(value: Features): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: Features): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "Features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "Features", js.Array(value :_*))
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
   }
 }

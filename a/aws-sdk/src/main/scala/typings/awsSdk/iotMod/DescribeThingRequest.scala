@@ -13,16 +13,13 @@ trait DescribeThingRequest extends StObject {
 }
 object DescribeThingRequest {
   
-  @scala.inline
-  def apply(thingName: ThingName): DescribeThingRequest = {
+  inline def apply(thingName: ThingName): DescribeThingRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThingRequest]
   }
   
-  @scala.inline
-  implicit class DescribeThingRequestMutableBuilder[Self <: DescribeThingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeThingRequest](x: Self) {
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

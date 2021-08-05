@@ -34,43 +34,31 @@ trait SchemaTestOrderPaymentMethod extends StObject {
 }
 object SchemaTestOrderPaymentMethod {
   
-  @scala.inline
-  def apply(): SchemaTestOrderPaymentMethod = {
+  inline def apply(): SchemaTestOrderPaymentMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestOrderPaymentMethod]
   }
   
-  @scala.inline
-  implicit class SchemaTestOrderPaymentMethodMutableBuilder[Self <: SchemaTestOrderPaymentMethod] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestOrderPaymentMethod](x: Self) {
     
-    @scala.inline
-    def setExpirationMonth(value: Double): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+    inline def setExpirationMonth(value: Double): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
+    inline def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
     
-    @scala.inline
-    def setExpirationYear(value: Double): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+    inline def setExpirationYear(value: Double): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
+    inline def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
     
-    @scala.inline
-    def setLastFourDigits(value: String): Self = StObject.set(x, "lastFourDigits", value.asInstanceOf[js.Any])
+    inline def setLastFourDigits(value: String): Self = StObject.set(x, "lastFourDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFourDigitsUndefined: Self = StObject.set(x, "lastFourDigits", js.undefined)
+    inline def setLastFourDigitsUndefined: Self = StObject.set(x, "lastFourDigits", js.undefined)
     
-    @scala.inline
-    def setPredefinedBillingAddress(value: String): Self = StObject.set(x, "predefinedBillingAddress", value.asInstanceOf[js.Any])
+    inline def setPredefinedBillingAddress(value: String): Self = StObject.set(x, "predefinedBillingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedBillingAddressUndefined: Self = StObject.set(x, "predefinedBillingAddress", js.undefined)
+    inline def setPredefinedBillingAddressUndefined: Self = StObject.set(x, "predefinedBillingAddress", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

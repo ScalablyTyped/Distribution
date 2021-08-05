@@ -12,19 +12,15 @@ trait NodeContext extends StObject {
 }
 object NodeContext {
   
-  @scala.inline
-  def apply(nodeType: String, propertyName: String): NodeContext = {
+  inline def apply(nodeType: String, propertyName: String): NodeContext = {
     val __obj = js.Dynamic.literal(nodeType = nodeType.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeContext]
   }
   
-  @scala.inline
-  implicit class NodeContextMutableBuilder[Self <: NodeContext] (val x: Self) extends AnyVal {
+  extension [Self <: NodeContext](x: Self) {
     
-    @scala.inline
-    def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: String): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

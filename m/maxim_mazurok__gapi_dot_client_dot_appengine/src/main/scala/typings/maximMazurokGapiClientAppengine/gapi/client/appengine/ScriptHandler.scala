@@ -11,19 +11,15 @@ trait ScriptHandler extends StObject {
 }
 object ScriptHandler {
   
-  @scala.inline
-  def apply(): ScriptHandler = {
+  inline def apply(): ScriptHandler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScriptHandler]
   }
   
-  @scala.inline
-  implicit class ScriptHandlerMutableBuilder[Self <: ScriptHandler] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptHandler](x: Self) {
     
-    @scala.inline
-    def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
+    inline def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptPathUndefined: Self = StObject.set(x, "scriptPath", js.undefined)
+    inline def setScriptPathUndefined: Self = StObject.set(x, "scriptPath", js.undefined)
   }
 }

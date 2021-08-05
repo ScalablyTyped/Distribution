@@ -18,28 +18,21 @@ trait ListV2LoggingLevelsResponse extends StObject {
 }
 object ListV2LoggingLevelsResponse {
   
-  @scala.inline
-  def apply(): ListV2LoggingLevelsResponse = {
+  inline def apply(): ListV2LoggingLevelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListV2LoggingLevelsResponse]
   }
   
-  @scala.inline
-  implicit class ListV2LoggingLevelsResponseMutableBuilder[Self <: ListV2LoggingLevelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListV2LoggingLevelsResponse](x: Self) {
     
-    @scala.inline
-    def setLogTargetConfigurations(value: LogTargetConfigurations): Self = StObject.set(x, "logTargetConfigurations", value.asInstanceOf[js.Any])
+    inline def setLogTargetConfigurations(value: LogTargetConfigurations): Self = StObject.set(x, "logTargetConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTargetConfigurationsUndefined: Self = StObject.set(x, "logTargetConfigurations", js.undefined)
+    inline def setLogTargetConfigurationsUndefined: Self = StObject.set(x, "logTargetConfigurations", js.undefined)
     
-    @scala.inline
-    def setLogTargetConfigurationsVarargs(value: LogTargetConfiguration*): Self = StObject.set(x, "logTargetConfigurations", js.Array(value :_*))
+    inline def setLogTargetConfigurationsVarargs(value: LogTargetConfiguration*): Self = StObject.set(x, "logTargetConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

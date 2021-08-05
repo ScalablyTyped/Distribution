@@ -18,25 +18,19 @@ trait DomainJoinInfo extends StObject {
 }
 object DomainJoinInfo {
   
-  @scala.inline
-  def apply(): DomainJoinInfo = {
+  inline def apply(): DomainJoinInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainJoinInfo]
   }
   
-  @scala.inline
-  implicit class DomainJoinInfoMutableBuilder[Self <: DomainJoinInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DomainJoinInfo](x: Self) {
     
-    @scala.inline
-    def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
+    inline def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryNameUndefined: Self = StObject.set(x, "DirectoryName", js.undefined)
+    inline def setDirectoryNameUndefined: Self = StObject.set(x, "DirectoryName", js.undefined)
     
-    @scala.inline
-    def setOrganizationalUnitDistinguishedName(value: OrganizationalUnitDistinguishedName): Self = StObject.set(x, "OrganizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnitDistinguishedName(value: OrganizationalUnitDistinguishedName): Self = StObject.set(x, "OrganizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitDistinguishedNameUndefined: Self = StObject.set(x, "OrganizationalUnitDistinguishedName", js.undefined)
+    inline def setOrganizationalUnitDistinguishedNameUndefined: Self = StObject.set(x, "OrganizationalUnitDistinguishedName", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait KeyCredentialOperationResult extends StObject {
 }
 object KeyCredentialOperationResult {
   
-  @scala.inline
-  def apply(result: IBuffer, status: KeyCredentialStatus): KeyCredentialOperationResult = {
+  inline def apply(result: IBuffer, status: KeyCredentialStatus): KeyCredentialOperationResult = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyCredentialOperationResult]
   }
   
-  @scala.inline
-  implicit class KeyCredentialOperationResultMutableBuilder[Self <: KeyCredentialOperationResult] (val x: Self) extends AnyVal {
+  extension [Self <: KeyCredentialOperationResult](x: Self) {
     
-    @scala.inline
-    def setResult(value: IBuffer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: IBuffer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: KeyCredentialStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: KeyCredentialStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

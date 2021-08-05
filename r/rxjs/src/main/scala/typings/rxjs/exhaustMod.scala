@@ -12,9 +12,7 @@ object exhaustMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def exhaust[T](): OperatorFunction[ObservableInput[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaust")().asInstanceOf[OperatorFunction[ObservableInput[T], T]]
+  inline def exhaust[T](): OperatorFunction[ObservableInput[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaust")().asInstanceOf[OperatorFunction[ObservableInput[T], T]]
   
-  @scala.inline
-  def exhaust_R[R](): OperatorFunction[js.Any, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaust")().asInstanceOf[OperatorFunction[js.Any, R]]
+  inline def exhaust_R[R](): OperatorFunction[js.Any, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaust")().asInstanceOf[OperatorFunction[js.Any, R]]
 }

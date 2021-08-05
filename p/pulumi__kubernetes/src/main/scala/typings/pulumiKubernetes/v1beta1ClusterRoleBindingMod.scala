@@ -70,17 +70,14 @@ object v1beta1ClusterRoleBindingMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ClusterRoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterRoleBinding]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ClusterRoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterRoleBinding]
+    inline def get(name: String, id: Input[ID]): ClusterRoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterRoleBinding]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): ClusterRoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterRoleBinding]
     
     /**
       * Returns true if the given object is an instance of ClusterRoleBinding.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/clusterRoleBinding.ClusterRoleBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/clusterRoleBinding.ClusterRoleBinding */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/clusterRoleBinding.ClusterRoleBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/clusterRoleBinding.ClusterRoleBinding */ Boolean]
   }
   
   trait ClusterRoleBindingArgs extends StObject {
@@ -112,44 +109,32 @@ object v1beta1ClusterRoleBindingMod {
   }
   object ClusterRoleBindingArgs {
     
-    @scala.inline
-    def apply(roleRef: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.RoleRef]): ClusterRoleBindingArgs = {
+    inline def apply(roleRef: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.RoleRef]): ClusterRoleBindingArgs = {
       val __obj = js.Dynamic.literal(roleRef = roleRef.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterRoleBindingArgs]
     }
     
-    @scala.inline
-    implicit class ClusterRoleBindingArgsMutableBuilder[Self <: ClusterRoleBindingArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterRoleBindingArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRoleBinding]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRoleBinding]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setRoleRef(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.RoleRef]): Self = StObject.set(x, "roleRef", value.asInstanceOf[js.Any])
+      inline def setRoleRef(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.RoleRef]): Self = StObject.set(x, "roleRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjects(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.Subject]]]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
+      inline def setSubjects(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.Subject]]]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectsUndefined: Self = StObject.set(x, "subjects", js.undefined)
+      inline def setSubjectsUndefined: Self = StObject.set(x, "subjects", js.undefined)
       
-      @scala.inline
-      def setSubjectsVarargs(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.Subject]*): Self = StObject.set(x, "subjects", js.Array(value :_*))
+      inline def setSubjectsVarargs(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.Subject]*): Self = StObject.set(x, "subjects", js.Array(value :_*))
     }
   }
 }

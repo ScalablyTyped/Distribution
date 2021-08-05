@@ -23,34 +23,25 @@ trait PrefixList extends StObject {
 }
 object PrefixList {
   
-  @scala.inline
-  def apply(): PrefixList = {
+  inline def apply(): PrefixList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrefixList]
   }
   
-  @scala.inline
-  implicit class PrefixListMutableBuilder[Self <: PrefixList] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixList](x: Self) {
     
-    @scala.inline
-    def setCidrs(value: ValueStringList): Self = StObject.set(x, "Cidrs", value.asInstanceOf[js.Any])
+    inline def setCidrs(value: ValueStringList): Self = StObject.set(x, "Cidrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrsUndefined: Self = StObject.set(x, "Cidrs", js.undefined)
+    inline def setCidrsUndefined: Self = StObject.set(x, "Cidrs", js.undefined)
     
-    @scala.inline
-    def setCidrsVarargs(value: String*): Self = StObject.set(x, "Cidrs", js.Array(value :_*))
+    inline def setCidrsVarargs(value: String*): Self = StObject.set(x, "Cidrs", js.Array(value :_*))
     
-    @scala.inline
-    def setPrefixListId(value: String): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: String): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
+    inline def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
     
-    @scala.inline
-    def setPrefixListName(value: String): Self = StObject.set(x, "PrefixListName", value.asInstanceOf[js.Any])
+    inline def setPrefixListName(value: String): Self = StObject.set(x, "PrefixListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListNameUndefined: Self = StObject.set(x, "PrefixListName", js.undefined)
+    inline def setPrefixListNameUndefined: Self = StObject.set(x, "PrefixListName", js.undefined)
   }
 }

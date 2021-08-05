@@ -18,27 +18,21 @@ trait CustomTooltipWithoutAggregatedField[F /* <: typings.vegaLite.channeldefMod
 }
 object CustomTooltipWithoutAggregatedField {
   
-  @scala.inline
-  def apply[F /* <: typings.vegaLite.channeldefMod.Field */](filteredEncoding: typings.vegaLite.encodingMod.Encoding[F]): CustomTooltipWithoutAggregatedField[F] = {
+  inline def apply[F /* <: typings.vegaLite.channeldefMod.Field */](filteredEncoding: typings.vegaLite.encodingMod.Encoding[F]): CustomTooltipWithoutAggregatedField[F] = {
     val __obj = js.Dynamic.literal(filteredEncoding = filteredEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomTooltipWithoutAggregatedField[F]]
   }
   
-  @scala.inline
-  implicit class CustomTooltipWithoutAggregatedFieldMutableBuilder[Self <: CustomTooltipWithoutAggregatedField[?], F /* <: typings.vegaLite.channeldefMod.Field */] (val x: Self & CustomTooltipWithoutAggregatedField[F]) extends AnyVal {
+  extension [Self <: CustomTooltipWithoutAggregatedField[?], F /* <: typings.vegaLite.channeldefMod.Field */](x: Self & CustomTooltipWithoutAggregatedField[F]) {
     
-    @scala.inline
-    def setCustomTooltipWithoutAggregatedField(
+    inline def setCustomTooltipWithoutAggregatedField(
       value: StringFieldDefWithCondition[F] | (StringValueDefWithCondition[F, StandardType]) | js.Array[StringFieldDef[F]]
     ): Self = StObject.set(x, "customTooltipWithoutAggregatedField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTooltipWithoutAggregatedFieldUndefined: Self = StObject.set(x, "customTooltipWithoutAggregatedField", js.undefined)
+    inline def setCustomTooltipWithoutAggregatedFieldUndefined: Self = StObject.set(x, "customTooltipWithoutAggregatedField", js.undefined)
     
-    @scala.inline
-    def setCustomTooltipWithoutAggregatedFieldVarargs(value: StringFieldDef[F]*): Self = StObject.set(x, "customTooltipWithoutAggregatedField", js.Array(value :_*))
+    inline def setCustomTooltipWithoutAggregatedFieldVarargs(value: StringFieldDef[F]*): Self = StObject.set(x, "customTooltipWithoutAggregatedField", js.Array(value :_*))
     
-    @scala.inline
-    def setFilteredEncoding(value: typings.vegaLite.encodingMod.Encoding[F]): Self = StObject.set(x, "filteredEncoding", value.asInstanceOf[js.Any])
+    inline def setFilteredEncoding(value: typings.vegaLite.encodingMod.Encoding[F]): Self = StObject.set(x, "filteredEncoding", value.asInstanceOf[js.Any])
   }
 }

@@ -17,28 +17,21 @@ trait AzureProviderOptions extends StObject {
 }
 object AzureProviderOptions {
   
-  @scala.inline
-  def apply(storageAccessKey: String, storageAccount: String): AzureProviderOptions = {
+  inline def apply(storageAccessKey: String, storageAccount: String): AzureProviderOptions = {
     val __obj = js.Dynamic.literal(provider = "azure", storageAccessKey = storageAccessKey.asInstanceOf[js.Any], storageAccount = storageAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureProviderOptions]
   }
   
-  @scala.inline
-  implicit class AzureProviderOptionsMutableBuilder[Self <: AzureProviderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AzureProviderOptions](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setProvider(value: azure): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: azure): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageAccessKey(value: String): Self = StObject.set(x, "storageAccessKey", value.asInstanceOf[js.Any])
+    inline def setStorageAccessKey(value: String): Self = StObject.set(x, "storageAccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageAccount(value: String): Self = StObject.set(x, "storageAccount", value.asInstanceOf[js.Any])
+    inline def setStorageAccount(value: String): Self = StObject.set(x, "storageAccount", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ trait CoreWindowFlyout
      with ICoreWindowFlyout
 object CoreWindowFlyout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backButtonCommand: /* command */ IUICommand => Unit,
     commands: IVector[IUICommand],
     defaultCommandIndex: Double,

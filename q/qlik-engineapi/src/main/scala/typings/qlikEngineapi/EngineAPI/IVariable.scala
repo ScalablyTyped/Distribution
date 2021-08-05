@@ -73,8 +73,7 @@ trait IVariable
 }
 object IVariable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     forceContent: (String, Double) => js.Promise[Unit],
     getContent: () => js.Promise[IAlfaNumString],
     getNxProperties: () => js.Promise[INxVariableProperties],
@@ -86,25 +85,18 @@ object IVariable {
     __obj.asInstanceOf[IVariable]
   }
   
-  @scala.inline
-  implicit class IVariableMutableBuilder[Self <: IVariable] (val x: Self) extends AnyVal {
+  extension [Self <: IVariable](x: Self) {
     
-    @scala.inline
-    def setForceContent(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "forceContent", js.Any.fromFunction2(value))
+    inline def setForceContent(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "forceContent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetContent(value: () => js.Promise[IAlfaNumString]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+    inline def setGetContent(value: () => js.Promise[IAlfaNumString]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNxProperties(value: () => js.Promise[INxVariableProperties]): Self = StObject.set(x, "getNxProperties", js.Any.fromFunction0(value))
+    inline def setGetNxProperties(value: () => js.Promise[INxVariableProperties]): Self = StObject.set(x, "getNxProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRawContent(value: () => js.Promise[String]): Self = StObject.set(x, "getRawContent", js.Any.fromFunction0(value))
+    inline def setGetRawContent(value: () => js.Promise[String]): Self = StObject.set(x, "getRawContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContent(value: (String, Boolean) => js.Promise[Boolean]): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
+    inline def setSetContent(value: (String, Boolean) => js.Promise[Boolean]): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetNxProperties(value: INxVariableProperties => js.Promise[Unit]): Self = StObject.set(x, "setNxProperties", js.Any.fromFunction1(value))
+    inline def setSetNxProperties(value: INxVariableProperties => js.Promise[Unit]): Self = StObject.set(x, "setNxProperties", js.Any.fromFunction1(value))
   }
 }

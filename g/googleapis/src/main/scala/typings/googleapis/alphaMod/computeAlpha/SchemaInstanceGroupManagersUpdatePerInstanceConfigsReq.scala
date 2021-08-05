@@ -17,22 +17,17 @@ trait SchemaInstanceGroupManagersUpdatePerInstanceConfigsReq extends StObject {
 }
 object SchemaInstanceGroupManagersUpdatePerInstanceConfigsReq {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagersUpdatePerInstanceConfigsReq = {
+  inline def apply(): SchemaInstanceGroupManagersUpdatePerInstanceConfigsReq = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersUpdatePerInstanceConfigsReq]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagersUpdatePerInstanceConfigsReqMutableBuilder[Self <: SchemaInstanceGroupManagersUpdatePerInstanceConfigsReq] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagersUpdatePerInstanceConfigsReq](x: Self) {
     
-    @scala.inline
-    def setPerInstanceConfigs(value: js.Array[SchemaPerInstanceConfig]): Self = StObject.set(x, "perInstanceConfigs", value.asInstanceOf[js.Any])
+    inline def setPerInstanceConfigs(value: js.Array[SchemaPerInstanceConfig]): Self = StObject.set(x, "perInstanceConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerInstanceConfigsUndefined: Self = StObject.set(x, "perInstanceConfigs", js.undefined)
+    inline def setPerInstanceConfigsUndefined: Self = StObject.set(x, "perInstanceConfigs", js.undefined)
     
-    @scala.inline
-    def setPerInstanceConfigsVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "perInstanceConfigs", js.Array(value :_*))
+    inline def setPerInstanceConfigsVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "perInstanceConfigs", js.Array(value :_*))
   }
 }

@@ -18,22 +18,17 @@ trait NotifyAppValidationOutputRequest extends StObject {
 }
 object NotifyAppValidationOutputRequest {
   
-  @scala.inline
-  def apply(appId: AppIdWithValidation): NotifyAppValidationOutputRequest = {
+  inline def apply(appId: AppIdWithValidation): NotifyAppValidationOutputRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyAppValidationOutputRequest]
   }
   
-  @scala.inline
-  implicit class NotifyAppValidationOutputRequestMutableBuilder[Self <: NotifyAppValidationOutputRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyAppValidationOutputRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationContext(value: NotificationContext): Self = StObject.set(x, "notificationContext", value.asInstanceOf[js.Any])
+    inline def setNotificationContext(value: NotificationContext): Self = StObject.set(x, "notificationContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationContextUndefined: Self = StObject.set(x, "notificationContext", js.undefined)
+    inline def setNotificationContextUndefined: Self = StObject.set(x, "notificationContext", js.undefined)
   }
 }

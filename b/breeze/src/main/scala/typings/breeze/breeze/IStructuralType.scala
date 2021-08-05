@@ -22,8 +22,7 @@ trait IStructuralType extends StObject {
 }
 object IStructuralType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     complexProperties: js.Array[DataProperty],
     dataProperties: js.Array[DataProperty],
     name: String,
@@ -36,40 +35,28 @@ object IStructuralType {
     __obj.asInstanceOf[IStructuralType]
   }
   
-  @scala.inline
-  implicit class IStructuralTypeMutableBuilder[Self <: IStructuralType] (val x: Self) extends AnyVal {
+  extension [Self <: IStructuralType](x: Self) {
     
-    @scala.inline
-    def setComplexProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "complexProperties", value.asInstanceOf[js.Any])
+    inline def setComplexProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "complexProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplexPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "complexProperties", js.Array(value :_*))
+    inline def setComplexPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "complexProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setDataProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "dataProperties", value.asInstanceOf[js.Any])
+    inline def setDataProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "dataProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "dataProperties", js.Array(value :_*))
+    inline def setDataPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "dataProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+    inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmappedProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "unmappedProperties", value.asInstanceOf[js.Any])
+    inline def setUnmappedProperties(value: js.Array[DataProperty]): Self = StObject.set(x, "unmappedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmappedPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "unmappedProperties", js.Array(value :_*))
+    inline def setUnmappedPropertiesVarargs(value: DataProperty*): Self = StObject.set(x, "unmappedProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

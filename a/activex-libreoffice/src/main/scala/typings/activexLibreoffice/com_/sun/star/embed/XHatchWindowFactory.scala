@@ -26,8 +26,7 @@ trait XHatchWindowFactory
 }
 object XHatchWindowFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createHatchWindowInstance: (XWindowPeer, Rectangle, Size) => XHatchWindow,
     queryInterface: `type` => js.Any,
@@ -37,10 +36,8 @@ object XHatchWindowFactory {
     __obj.asInstanceOf[XHatchWindowFactory]
   }
   
-  @scala.inline
-  implicit class XHatchWindowFactoryMutableBuilder[Self <: XHatchWindowFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XHatchWindowFactory](x: Self) {
     
-    @scala.inline
-    def setCreateHatchWindowInstance(value: (XWindowPeer, Rectangle, Size) => XHatchWindow): Self = StObject.set(x, "createHatchWindowInstance", js.Any.fromFunction3(value))
+    inline def setCreateHatchWindowInstance(value: (XWindowPeer, Rectangle, Size) => XHatchWindow): Self = StObject.set(x, "createHatchWindowInstance", js.Any.fromFunction3(value))
   }
 }

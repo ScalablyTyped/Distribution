@@ -16,26 +16,20 @@ trait CoerceDefault extends StObject {
 }
 object CoerceDefault {
   
-  @scala.inline
-  def apply(coerce: js.Any => js.Any, default: Boolean, describe: String, `type`: String): CoerceDefault = {
+  inline def apply(coerce: js.Any => js.Any, default: Boolean, describe: String, `type`: String): CoerceDefault = {
     val __obj = js.Dynamic.literal(coerce = js.Any.fromFunction1(coerce), default = default.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoerceDefault]
   }
   
-  @scala.inline
-  implicit class CoerceDefaultMutableBuilder[Self <: CoerceDefault] (val x: Self) extends AnyVal {
+  extension [Self <: CoerceDefault](x: Self) {
     
-    @scala.inline
-    def setCoerce(value: js.Any => js.Any): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
+    inline def setCoerce(value: js.Any => js.Any): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+    inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait SubmitTaskStateChangeResponse extends StObject {
 }
 object SubmitTaskStateChangeResponse {
   
-  @scala.inline
-  def apply(): SubmitTaskStateChangeResponse = {
+  inline def apply(): SubmitTaskStateChangeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubmitTaskStateChangeResponse]
   }
   
-  @scala.inline
-  implicit class SubmitTaskStateChangeResponseMutableBuilder[Self <: SubmitTaskStateChangeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitTaskStateChangeResponse](x: Self) {
     
-    @scala.inline
-    def setAcknowledgment(value: String): Self = StObject.set(x, "acknowledgment", value.asInstanceOf[js.Any])
+    inline def setAcknowledgment(value: String): Self = StObject.set(x, "acknowledgment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcknowledgmentUndefined: Self = StObject.set(x, "acknowledgment", js.undefined)
+    inline def setAcknowledgmentUndefined: Self = StObject.set(x, "acknowledgment", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait ListCloudFrontOriginAccessIdentitiesResult extends StObject {
 }
 object ListCloudFrontOriginAccessIdentitiesResult {
   
-  @scala.inline
-  def apply(): ListCloudFrontOriginAccessIdentitiesResult = {
+  inline def apply(): ListCloudFrontOriginAccessIdentitiesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCloudFrontOriginAccessIdentitiesResult]
   }
   
-  @scala.inline
-  implicit class ListCloudFrontOriginAccessIdentitiesResultMutableBuilder[Self <: ListCloudFrontOriginAccessIdentitiesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListCloudFrontOriginAccessIdentitiesResult](x: Self) {
     
-    @scala.inline
-    def setCloudFrontOriginAccessIdentityList(value: CloudFrontOriginAccessIdentityList): Self = StObject.set(x, "CloudFrontOriginAccessIdentityList", value.asInstanceOf[js.Any])
+    inline def setCloudFrontOriginAccessIdentityList(value: CloudFrontOriginAccessIdentityList): Self = StObject.set(x, "CloudFrontOriginAccessIdentityList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudFrontOriginAccessIdentityListUndefined: Self = StObject.set(x, "CloudFrontOriginAccessIdentityList", js.undefined)
+    inline def setCloudFrontOriginAccessIdentityListUndefined: Self = StObject.set(x, "CloudFrontOriginAccessIdentityList", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetPlatformApplicationAttributesInput extends StObject {
 }
 object GetPlatformApplicationAttributesInput {
   
-  @scala.inline
-  def apply(PlatformApplicationArn: String): GetPlatformApplicationAttributesInput = {
+  inline def apply(PlatformApplicationArn: String): GetPlatformApplicationAttributesInput = {
     val __obj = js.Dynamic.literal(PlatformApplicationArn = PlatformApplicationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPlatformApplicationAttributesInput]
   }
   
-  @scala.inline
-  implicit class GetPlatformApplicationAttributesInputMutableBuilder[Self <: GetPlatformApplicationAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetPlatformApplicationAttributesInput](x: Self) {
     
-    @scala.inline
-    def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
+    inline def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
   }
 }

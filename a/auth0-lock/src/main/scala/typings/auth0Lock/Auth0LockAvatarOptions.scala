@@ -12,8 +12,7 @@ trait Auth0LockAvatarOptions extends StObject {
 }
 object Auth0LockAvatarOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: (String, Auth0LockAvatarDisplayNameCallback) => Unit,
     url: (String, Auth0LockAvatarUrlCallback) => Unit
   ): Auth0LockAvatarOptions = {
@@ -21,13 +20,10 @@ object Auth0LockAvatarOptions {
     __obj.asInstanceOf[Auth0LockAvatarOptions]
   }
   
-  @scala.inline
-  implicit class Auth0LockAvatarOptionsMutableBuilder[Self <: Auth0LockAvatarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0LockAvatarOptions](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: (String, Auth0LockAvatarDisplayNameCallback) => Unit): Self = StObject.set(x, "displayName", js.Any.fromFunction2(value))
+    inline def setDisplayName(value: (String, Auth0LockAvatarDisplayNameCallback) => Unit): Self = StObject.set(x, "displayName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUrl(value: (String, Auth0LockAvatarUrlCallback) => Unit): Self = StObject.set(x, "url", js.Any.fromFunction2(value))
+    inline def setUrl(value: (String, Auth0LockAvatarUrlCallback) => Unit): Self = StObject.set(x, "url", js.Any.fromFunction2(value))
   }
 }

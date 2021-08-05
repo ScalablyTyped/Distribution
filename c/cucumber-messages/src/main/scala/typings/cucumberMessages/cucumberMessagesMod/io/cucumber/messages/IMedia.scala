@@ -21,31 +21,23 @@ trait IMedia extends StObject {
 }
 object IMedia {
   
-  @scala.inline
-  def apply(): IMedia = {
+  inline def apply(): IMedia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMedia]
   }
   
-  @scala.inline
-  implicit class IMediaMutableBuilder[Self <: IMedia] (val x: Self) extends AnyVal {
+  extension [Self <: IMedia](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeNull: Self = StObject.set(x, "contentType", null)
+    inline def setContentTypeNull: Self = StObject.set(x, "contentType", null)
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingNull: Self = StObject.set(x, "encoding", null)
+    inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

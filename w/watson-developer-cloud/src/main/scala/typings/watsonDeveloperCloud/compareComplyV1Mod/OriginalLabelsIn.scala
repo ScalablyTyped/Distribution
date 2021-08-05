@@ -15,25 +15,19 @@ trait OriginalLabelsIn extends StObject {
 }
 object OriginalLabelsIn {
   
-  @scala.inline
-  def apply(categories: js.Array[Category], types: js.Array[TypeLabel]): OriginalLabelsIn = {
+  inline def apply(categories: js.Array[Category], types: js.Array[TypeLabel]): OriginalLabelsIn = {
     val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginalLabelsIn]
   }
   
-  @scala.inline
-  implicit class OriginalLabelsInMutableBuilder[Self <: OriginalLabelsIn] (val x: Self) extends AnyVal {
+  extension [Self <: OriginalLabelsIn](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setTypes(value: js.Array[TypeLabel]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[TypeLabel]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: TypeLabel*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TypeLabel*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

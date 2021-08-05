@@ -13,16 +13,13 @@ trait GetDefaultRetentionPolicyRequest extends StObject {
 }
 object GetDefaultRetentionPolicyRequest {
   
-  @scala.inline
-  def apply(OrganizationId: OrganizationId): GetDefaultRetentionPolicyRequest = {
+  inline def apply(OrganizationId: OrganizationId): GetDefaultRetentionPolicyRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDefaultRetentionPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetDefaultRetentionPolicyRequestMutableBuilder[Self <: GetDefaultRetentionPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDefaultRetentionPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

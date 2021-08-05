@@ -18,19 +18,15 @@ trait Pauser extends StObject {
 }
 object Pauser {
   
-  @scala.inline
-  def apply(pause: () => Unit, resume: () => Unit): Pauser = {
+  inline def apply(pause: () => Unit, resume: () => Unit): Pauser = {
     val __obj = js.Dynamic.literal(pause = js.Any.fromFunction0(pause), resume = js.Any.fromFunction0(resume))
     __obj.asInstanceOf[Pauser]
   }
   
-  @scala.inline
-  implicit class PauserMutableBuilder[Self <: Pauser] (val x: Self) extends AnyVal {
+  extension [Self <: Pauser](x: Self) {
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
   }
 }

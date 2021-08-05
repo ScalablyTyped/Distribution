@@ -13,19 +13,15 @@ trait AndroidMobileAppIdentifier
 }
 object AndroidMobileAppIdentifier {
   
-  @scala.inline
-  def apply(): AndroidMobileAppIdentifier = {
+  inline def apply(): AndroidMobileAppIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidMobileAppIdentifier]
   }
   
-  @scala.inline
-  implicit class AndroidMobileAppIdentifierMutableBuilder[Self <: AndroidMobileAppIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidMobileAppIdentifier](x: Self) {
     
-    @scala.inline
-    def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
+    inline def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
+    inline def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlArrowHeadWidth extends StObject
 object XlArrowHeadWidth {
   
-  @scala.inline
-  def xlArrowHeadWidthMedium: `-4138` = -4138.asInstanceOf[`-4138`]
+  inline def xlArrowHeadWidthMedium: `-4138` = -4138.asInstanceOf[`-4138`]
   
-  @scala.inline
-  def xlArrowHeadWidthNarrow: `1` = 1.asInstanceOf[`1`]
+  inline def xlArrowHeadWidthNarrow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlArrowHeadWidthWide: `3` = 3.asInstanceOf[`3`]
+  inline def xlArrowHeadWidthWide: `3` = 3.asInstanceOf[`3`]
 }

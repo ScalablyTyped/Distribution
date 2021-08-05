@@ -13,22 +13,17 @@ trait GetAccuracyMetricsResponse extends StObject {
 }
 object GetAccuracyMetricsResponse {
   
-  @scala.inline
-  def apply(): GetAccuracyMetricsResponse = {
+  inline def apply(): GetAccuracyMetricsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccuracyMetricsResponse]
   }
   
-  @scala.inline
-  implicit class GetAccuracyMetricsResponseMutableBuilder[Self <: GetAccuracyMetricsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccuracyMetricsResponse](x: Self) {
     
-    @scala.inline
-    def setPredictorEvaluationResults(value: PredictorEvaluationResults): Self = StObject.set(x, "PredictorEvaluationResults", value.asInstanceOf[js.Any])
+    inline def setPredictorEvaluationResults(value: PredictorEvaluationResults): Self = StObject.set(x, "PredictorEvaluationResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictorEvaluationResultsUndefined: Self = StObject.set(x, "PredictorEvaluationResults", js.undefined)
+    inline def setPredictorEvaluationResultsUndefined: Self = StObject.set(x, "PredictorEvaluationResults", js.undefined)
     
-    @scala.inline
-    def setPredictorEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "PredictorEvaluationResults", js.Array(value :_*))
+    inline def setPredictorEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "PredictorEvaluationResults", js.Array(value :_*))
   }
 }

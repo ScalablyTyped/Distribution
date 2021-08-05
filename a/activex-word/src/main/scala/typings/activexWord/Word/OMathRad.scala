@@ -18,13 +18,12 @@ trait OMathRad extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.OMathRad_typekey")
+  /* private */ @JSName("Word.OMathRad_typekey")
   var WordDotOMathRad_typekey: OMathRad
 }
 object OMathRad {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Deg: OMath,
@@ -38,28 +37,20 @@ object OMathRad {
     __obj.asInstanceOf[OMathRad]
   }
   
-  @scala.inline
-  implicit class OMathRadMutableBuilder[Self <: OMathRad] (val x: Self) extends AnyVal {
+  extension [Self <: OMathRad](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeg(value: OMath): Self = StObject.set(x, "Deg", value.asInstanceOf[js.Any])
+    inline def setDeg(value: OMath): Self = StObject.set(x, "Deg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+    inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideDeg(value: Boolean): Self = StObject.set(x, "HideDeg", value.asInstanceOf[js.Any])
+    inline def setHideDeg(value: Boolean): Self = StObject.set(x, "HideDeg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathRad_typekey(value: OMathRad): Self = StObject.set(x, "Word.OMathRad_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathRad_typekey(value: OMathRad): Self = StObject.set(x, "Word.OMathRad_typekey", value.asInstanceOf[js.Any])
   }
 }

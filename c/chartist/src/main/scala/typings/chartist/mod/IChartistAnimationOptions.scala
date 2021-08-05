@@ -22,46 +22,33 @@ trait IChartistAnimationOptions extends StObject {
 }
 object IChartistAnimationOptions {
   
-  @scala.inline
-  def apply(dur: String | Double, from: String | Double, to: String | Double): IChartistAnimationOptions = {
+  inline def apply(dur: String | Double, from: String | Double, to: String | Double): IChartistAnimationOptions = {
     val __obj = js.Dynamic.literal(dur = dur.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChartistAnimationOptions]
   }
   
-  @scala.inline
-  implicit class IChartistAnimationOptionsMutableBuilder[Self <: IChartistAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IChartistAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setBegin(value: String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+    inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
     
-    @scala.inline
-    def setDur(value: String | Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
+    inline def setDur(value: String | Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasing(value: IChartistEasingDefinition | String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: IChartistEasingDefinition | String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setFrom(value: String | Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String | Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setTo(value: String | Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String | Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

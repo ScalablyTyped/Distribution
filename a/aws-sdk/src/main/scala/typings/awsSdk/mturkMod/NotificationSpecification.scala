@@ -28,28 +28,21 @@ trait NotificationSpecification extends StObject {
 }
 object NotificationSpecification {
   
-  @scala.inline
-  def apply(Destination: String, EventTypes: EventTypeList, Transport: NotificationTransport, Version: String): NotificationSpecification = {
+  inline def apply(Destination: String, EventTypes: EventTypeList, Transport: NotificationTransport, Version: String): NotificationSpecification = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], EventTypes = EventTypes.asInstanceOf[js.Any], Transport = Transport.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationSpecification]
   }
   
-  @scala.inline
-  implicit class NotificationSpecificationMutableBuilder[Self <: NotificationSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationSpecification](x: Self) {
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypes(value: EventTypeList): Self = StObject.set(x, "EventTypes", value.asInstanceOf[js.Any])
+    inline def setEventTypes(value: EventTypeList): Self = StObject.set(x, "EventTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypesVarargs(value: EventType*): Self = StObject.set(x, "EventTypes", js.Array(value :_*))
+    inline def setEventTypesVarargs(value: EventType*): Self = StObject.set(x, "EventTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setTransport(value: NotificationTransport): Self = StObject.set(x, "Transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: NotificationTransport): Self = StObject.set(x, "Transport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait DefinitionInfo
 }
 object DefinitionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containerKind: ScriptElementKind,
     containerName: java.lang.String,
     fileName: java.lang.String,
@@ -31,19 +30,14 @@ object DefinitionInfo {
     __obj.asInstanceOf[DefinitionInfo]
   }
   
-  @scala.inline
-  implicit class DefinitionInfoMutableBuilder[Self <: DefinitionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionInfo](x: Self) {
     
-    @scala.inline
-    def setContainerKind(value: ScriptElementKind): Self = StObject.set(x, "containerKind", value.asInstanceOf[js.Any])
+    inline def setContainerKind(value: ScriptElementKind): Self = StObject.set(x, "containerKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerName(value: java.lang.String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: java.lang.String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

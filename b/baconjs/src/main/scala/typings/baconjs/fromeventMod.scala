@@ -12,14 +12,10 @@ object fromeventMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](target: js.Any, eventSource: String): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
-  @scala.inline
-  def default[V](target: js.Any, eventSource: String, eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
-  @scala.inline
-  def default[V](target: js.Any, eventSource: EventSourceFn): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
-  @scala.inline
-  def default[V](target: js.Any, eventSource: EventSourceFn, eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](target: js.Any, eventSource: String): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](target: js.Any, eventSource: String, eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](target: js.Any, eventSource: EventSourceFn): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](target: js.Any, eventSource: EventSourceFn, eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventSource.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
   
   type EventSourceFn = js.Function2[/* binder */ js.Function, /* listener */ js.Function, js.Any]
 }

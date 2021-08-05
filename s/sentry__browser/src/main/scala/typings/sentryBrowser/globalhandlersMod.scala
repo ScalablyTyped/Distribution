@@ -18,32 +18,32 @@ object globalhandlersMod {
     def this(options: GlobalHandlersIntegrations) = this()
     
     /** JSDoc */
-    var _enhanceEventWithInitialFrame: js.Any = js.native
+    /* private */ var _enhanceEventWithInitialFrame: js.Any = js.native
     
     /**
       * This function creates a stack from an old, error-less onerror handler.
       */
-    var _eventFromIncompleteOnError: js.Any = js.native
+    /* private */ var _eventFromIncompleteOnError: js.Any = js.native
     
     /**
       * This function creates an Event from an TraceKitStackTrace that has part of it missing.
       */
-    var _eventFromIncompleteRejection: js.Any = js.native
+    /* private */ var _eventFromIncompleteRejection: js.Any = js.native
     
     /** JSDoc */
-    var _installGlobalOnErrorHandler: js.Any = js.native
+    /* private */ var _installGlobalOnErrorHandler: js.Any = js.native
     
     /** JSDoc */
-    var _installGlobalOnUnhandledRejectionHandler: js.Any = js.native
+    /* private */ var _installGlobalOnUnhandledRejectionHandler: js.Any = js.native
     
     /** JSDoc */
-    var _onErrorHandlerInstalled: js.Any = js.native
+    /* private */ var _onErrorHandlerInstalled: js.Any = js.native
     
     /** JSDoc */
-    var _onUnhandledRejectionHandlerInstalled: js.Any = js.native
+    /* private */ var _onUnhandledRejectionHandlerInstalled: js.Any = js.native
     
     /** JSDoc */
-    val _options: js.Any = js.native
+    /* private */ val _options: js.Any = js.native
     
     /**
       * Returns {@link IntegrationClass.id}
@@ -78,8 +78,7 @@ object globalhandlersMod {
     @JSImport("@sentry/browser/dist/integrations/globalhandlers", "GlobalHandlers.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
   /** JSDoc */
@@ -91,20 +90,16 @@ object globalhandlersMod {
   }
   object GlobalHandlersIntegrations {
     
-    @scala.inline
-    def apply(onerror: Boolean, onunhandledrejection: Boolean): GlobalHandlersIntegrations = {
+    inline def apply(onerror: Boolean, onunhandledrejection: Boolean): GlobalHandlersIntegrations = {
       val __obj = js.Dynamic.literal(onerror = onerror.asInstanceOf[js.Any], onunhandledrejection = onunhandledrejection.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalHandlersIntegrations]
     }
     
-    @scala.inline
-    implicit class GlobalHandlersIntegrationsMutableBuilder[Self <: GlobalHandlersIntegrations] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalHandlersIntegrations](x: Self) {
       
-      @scala.inline
-      def setOnerror(value: Boolean): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+      inline def setOnerror(value: Boolean): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnunhandledrejection(value: Boolean): Self = StObject.set(x, "onunhandledrejection", value.asInstanceOf[js.Any])
+      inline def setOnunhandledrejection(value: Boolean): Self = StObject.set(x, "onunhandledrejection", value.asInstanceOf[js.Any])
     }
   }
 }

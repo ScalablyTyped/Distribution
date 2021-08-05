@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImputeMethod extends StObject
 object ImputeMethod {
   
-  @scala.inline
-  def max: typings.vegaTypings.vegaTypingsStrings.max = "max".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.max]
+  inline def max: typings.vegaTypings.vegaTypingsStrings.max = "max".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.max]
   
-  @scala.inline
-  def mean: typings.vegaTypings.vegaTypingsStrings.mean = "mean".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mean]
+  inline def mean: typings.vegaTypings.vegaTypingsStrings.mean = "mean".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.mean]
   
-  @scala.inline
-  def median: typings.vegaTypings.vegaTypingsStrings.median = "median".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.median]
+  inline def median: typings.vegaTypings.vegaTypingsStrings.median = "median".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.median]
   
-  @scala.inline
-  def min: typings.vegaTypings.vegaTypingsStrings.min = "min".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.min]
+  inline def min: typings.vegaTypings.vegaTypingsStrings.min = "min".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.min]
   
-  @scala.inline
-  def value: typings.vegaTypings.vegaTypingsStrings.value = "value".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.value]
+  inline def value: typings.vegaTypings.vegaTypingsStrings.value = "value".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.value]
 }

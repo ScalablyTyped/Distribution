@@ -20,17 +20,14 @@ object typesPurgeQueueOutputMod {
   }
   object PurgeQueueOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PurgeQueueOutput = {
+    inline def apply($metadata: ResponseMetadata): PurgeQueueOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PurgeQueueOutput]
     }
     
-    @scala.inline
-    implicit class PurgeQueueOutputMutableBuilder[Self <: PurgeQueueOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PurgeQueueOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

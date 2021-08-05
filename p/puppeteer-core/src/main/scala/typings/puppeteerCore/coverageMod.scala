@@ -106,20 +106,16 @@ object coverageMod {
   }
   object CSSCoverageOptions {
     
-    @scala.inline
-    def apply(): CSSCoverageOptions = {
+    inline def apply(): CSSCoverageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSCoverageOptions]
     }
     
-    @scala.inline
-    implicit class CSSCoverageOptionsMutableBuilder[Self <: CSSCoverageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CSSCoverageOptions](x: Self) {
       
-      @scala.inline
-      def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
+      inline def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
+      inline def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
     }
   }
   
@@ -142,26 +138,20 @@ object coverageMod {
   }
   object CoverageEntry {
     
-    @scala.inline
-    def apply(ranges: js.Array[End], text: String, url: String): CoverageEntry = {
+    inline def apply(ranges: js.Array[End], text: String, url: String): CoverageEntry = {
       val __obj = js.Dynamic.literal(ranges = ranges.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoverageEntry]
     }
     
-    @scala.inline
-    implicit class CoverageEntryMutableBuilder[Self <: CoverageEntry] (val x: Self) extends AnyVal {
+    extension [Self <: CoverageEntry](x: Self) {
       
-      @scala.inline
-      def setRanges(value: js.Array[End]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+      inline def setRanges(value: js.Array[End]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+      inline def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value :_*))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,26 +196,20 @@ object coverageMod {
   }
   object JSCoverageOptions {
     
-    @scala.inline
-    def apply(): JSCoverageOptions = {
+    inline def apply(): JSCoverageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JSCoverageOptions]
     }
     
-    @scala.inline
-    implicit class JSCoverageOptionsMutableBuilder[Self <: JSCoverageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JSCoverageOptions](x: Self) {
       
-      @scala.inline
-      def setReportAnonymousScripts(value: Boolean): Self = StObject.set(x, "reportAnonymousScripts", value.asInstanceOf[js.Any])
+      inline def setReportAnonymousScripts(value: Boolean): Self = StObject.set(x, "reportAnonymousScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportAnonymousScriptsUndefined: Self = StObject.set(x, "reportAnonymousScripts", js.undefined)
+      inline def setReportAnonymousScriptsUndefined: Self = StObject.set(x, "reportAnonymousScripts", js.undefined)
       
-      @scala.inline
-      def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
+      inline def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
+      inline def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
     }
   }
 }

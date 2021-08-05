@@ -11,8 +11,7 @@ object mod {
   
   object global {
     
-    @scala.inline
-    def acquireNotebookRendererApi(rendererId: String): NotebookRendererApi[js.Any] = js.Dynamic.global.applyDynamic("acquireNotebookRendererApi")(rendererId.asInstanceOf[js.Any]).asInstanceOf[NotebookRendererApi[js.Any]]
+    inline def acquireNotebookRendererApi(rendererId: String): NotebookRendererApi[js.Any] = js.Dynamic.global.applyDynamic("acquireNotebookRendererApi")(rendererId.asInstanceOf[js.Any]).asInstanceOf[NotebookRendererApi[js.Any]]
   }
   
   trait Disposable extends StObject {
@@ -21,17 +20,14 @@ object mod {
   }
   object Disposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit): Disposable = {
+    inline def apply(dispose: () => Unit): Disposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[Disposable]
     }
     
-    @scala.inline
-    implicit class DisposableMutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
+    extension [Self <: Disposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -44,20 +40,16 @@ object mod {
   }
   object NotebookCellOutputMetadata {
     
-    @scala.inline
-    def apply(): NotebookCellOutputMetadata = {
+    inline def apply(): NotebookCellOutputMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotebookCellOutputMetadata]
     }
     
-    @scala.inline
-    implicit class NotebookCellOutputMetadataMutableBuilder[Self <: NotebookCellOutputMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: NotebookCellOutputMetadata](x: Self) {
       
-      @scala.inline
-      def setCustom(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     }
   }
   
@@ -69,23 +61,18 @@ object mod {
   }
   object NotebookOutput {
     
-    @scala.inline
-    def apply(data: StringDictionary[js.Any]): NotebookOutput = {
+    inline def apply(data: StringDictionary[js.Any]): NotebookOutput = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotebookOutput]
     }
     
-    @scala.inline
-    implicit class NotebookOutputMutableBuilder[Self <: NotebookOutput] (val x: Self) extends AnyVal {
+    extension [Self <: NotebookOutput](x: Self) {
       
-      @scala.inline
-      def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: NotebookCellOutputMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: NotebookCellOutputMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -101,26 +88,20 @@ object mod {
   }
   object NotebookOutputEventParams {
     
-    @scala.inline
-    def apply(element: HTMLElement, mimeType: String, output: NotebookOutput, outputId: String): NotebookOutputEventParams = {
+    inline def apply(element: HTMLElement, mimeType: String, output: NotebookOutput, outputId: String): NotebookOutputEventParams = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], outputId = outputId.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotebookOutputEventParams]
     }
     
-    @scala.inline
-    implicit class NotebookOutputEventParamsMutableBuilder[Self <: NotebookOutputEventParams] (val x: Self) extends AnyVal {
+    extension [Self <: NotebookOutputEventParams](x: Self) {
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: NotebookOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: NotebookOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputId(value: String): Self = StObject.set(x, "outputId", value.asInstanceOf[js.Any])
+      inline def setOutputId(value: String): Self = StObject.set(x, "outputId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,8 +186,7 @@ object mod {
   }
   object NotebookRendererApi {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       getState: () => js.UndefOr[T],
       onDidCreateOutput: (/* listener */ js.Function1[NotebookOutputEventParams, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
       onDidReceiveMessage: (/* listener */ js.Function1[js.Any, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
@@ -218,32 +198,25 @@ object mod {
       __obj.asInstanceOf[NotebookRendererApi[T]]
     }
     
-    @scala.inline
-    implicit class NotebookRendererApiMutableBuilder[Self <: NotebookRendererApi[?], T] (val x: Self & NotebookRendererApi[T]) extends AnyVal {
+    extension [Self <: NotebookRendererApi[?], T](x: Self & NotebookRendererApi[T]) {
       
-      @scala.inline
-      def setGetState(value: () => js.UndefOr[T]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => js.UndefOr[T]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDidCreateOutput(
+      inline def setOnDidCreateOutput(
         value: (/* listener */ js.Function1[NotebookOutputEventParams, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
       ): Self = StObject.set(x, "onDidCreateOutput", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnDidReceiveMessage(
+      inline def setOnDidReceiveMessage(
         value: (/* listener */ js.Function1[js.Any, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
       ): Self = StObject.set(x, "onDidReceiveMessage", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnWillDestroyOutput(
+      inline def setOnWillDestroyOutput(
         value: (/* listener */ js.Function1[js.UndefOr[OutputId], js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
       ): Self = StObject.set(x, "onWillDestroyOutput", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+      inline def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetState(value: T => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: T => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
     }
   }
   

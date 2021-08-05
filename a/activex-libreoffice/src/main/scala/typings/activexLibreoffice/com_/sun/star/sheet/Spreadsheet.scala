@@ -73,8 +73,7 @@ trait Spreadsheet
 }
 object Spreadsheet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPrintArea: Boolean,
     ConditionalFormats: XConditionalFormats,
     IsVisible: Boolean,
@@ -118,25 +117,18 @@ object Spreadsheet {
     __obj.asInstanceOf[Spreadsheet]
   }
   
-  @scala.inline
-  implicit class SpreadsheetMutableBuilder[Self <: Spreadsheet] (val x: Self) extends AnyVal {
+  extension [Self <: Spreadsheet](x: Self) {
     
-    @scala.inline
-    def setAutomaticPrintArea(value: Boolean): Self = StObject.set(x, "AutomaticPrintArea", value.asInstanceOf[js.Any])
+    inline def setAutomaticPrintArea(value: Boolean): Self = StObject.set(x, "AutomaticPrintArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionalFormats(value: XConditionalFormats): Self = StObject.set(x, "ConditionalFormats", value.asInstanceOf[js.Any])
+    inline def setConditionalFormats(value: XConditionalFormats): Self = StObject.set(x, "ConditionalFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageStyle(value: String): Self = StObject.set(x, "PageStyle", value.asInstanceOf[js.Any])
+    inline def setPageStyle(value: String): Self = StObject.set(x, "PageStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabColor(value: Color): Self = StObject.set(x, "TabColor", value.asInstanceOf[js.Any])
+    inline def setTabColor(value: Color): Self = StObject.set(x, "TabColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableLayout(value: Double): Self = StObject.set(x, "TableLayout", value.asInstanceOf[js.Any])
+    inline def setTableLayout(value: Double): Self = StObject.set(x, "TableLayout", value.asInstanceOf[js.Any])
   }
 }

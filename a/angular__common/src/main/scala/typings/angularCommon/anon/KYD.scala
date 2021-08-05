@@ -14,31 +14,23 @@ trait KYD extends StObject {
 }
 object KYD {
   
-  @scala.inline
-  def apply(JPY: js.Array[String], KYD: js.Array[String], USD: js.Array[String]): KYD = {
+  inline def apply(JPY: js.Array[String], KYD: js.Array[String], USD: js.Array[String]): KYD = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], KYD = KYD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
     __obj.asInstanceOf[KYD]
   }
   
-  @scala.inline
-  implicit class KYDMutableBuilder[Self <: KYD] (val x: Self) extends AnyVal {
+  extension [Self <: KYD](x: Self) {
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setKYD(value: js.Array[String]): Self = StObject.set(x, "KYD", value.asInstanceOf[js.Any])
+    inline def setKYD(value: js.Array[String]): Self = StObject.set(x, "KYD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKYDVarargs(value: String*): Self = StObject.set(x, "KYD", js.Array(value :_*))
+    inline def setKYDVarargs(value: String*): Self = StObject.set(x, "KYD", js.Array(value :_*))
     
-    @scala.inline
-    def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
   }
 }

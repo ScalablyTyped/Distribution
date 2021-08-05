@@ -20,8 +20,7 @@ trait FindNodesInfo extends StObject {
 }
 object FindNodesInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     database: String,
     name: String,
     parentObjectNames: js.Array[String],
@@ -34,28 +33,20 @@ object FindNodesInfo {
     __obj.asInstanceOf[FindNodesInfo]
   }
   
-  @scala.inline
-  implicit class FindNodesInfoMutableBuilder[Self <: FindNodesInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FindNodesInfo](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentObjectNames(value: js.Array[String]): Self = StObject.set(x, "parentObjectNames", value.asInstanceOf[js.Any])
+    inline def setParentObjectNames(value: js.Array[String]): Self = StObject.set(x, "parentObjectNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentObjectNamesVarargs(value: String*): Self = StObject.set(x, "parentObjectNames", js.Array(value :_*))
+    inline def setParentObjectNamesVarargs(value: String*): Self = StObject.set(x, "parentObjectNames", js.Array(value :_*))
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

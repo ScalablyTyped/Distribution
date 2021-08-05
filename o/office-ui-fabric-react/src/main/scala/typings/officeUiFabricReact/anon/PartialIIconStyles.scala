@@ -14,31 +14,23 @@ trait PartialIIconStyles extends StObject {
 }
 object PartialIIconStyles {
   
-  @scala.inline
-  def apply(): PartialIIconStyles = {
+  inline def apply(): PartialIIconStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialIIconStyles]
   }
   
-  @scala.inline
-  implicit class PartialIIconStylesMutableBuilder[Self <: PartialIIconStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PartialIIconStyles](x: Self) {
     
-    @scala.inline
-    def setImageContainer(value: IStyle): Self = StObject.set(x, "imageContainer", value.asInstanceOf[js.Any])
+    inline def setImageContainer(value: IStyle): Self = StObject.set(x, "imageContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageContainerNull: Self = StObject.set(x, "imageContainer", null)
+    inline def setImageContainerNull: Self = StObject.set(x, "imageContainer", null)
     
-    @scala.inline
-    def setImageContainerUndefined: Self = StObject.set(x, "imageContainer", js.undefined)
+    inline def setImageContainerUndefined: Self = StObject.set(x, "imageContainer", js.undefined)
     
-    @scala.inline
-    def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNull: Self = StObject.set(x, "root", null)
+    inline def setRootNull: Self = StObject.set(x, "root", null)
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

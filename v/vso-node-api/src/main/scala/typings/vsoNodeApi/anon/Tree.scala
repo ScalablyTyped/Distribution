@@ -18,8 +18,7 @@ trait Tree extends StObject {
 }
 object Tree {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     none: scala.Double,
     tree: scala.Double,
     workItem: scala.Double,
@@ -30,22 +29,16 @@ object Tree {
     __obj.asInstanceOf[Tree]
   }
   
-  @scala.inline
-  implicit class TreeMutableBuilder[Self <: Tree] (val x: Self) extends AnyVal {
+  extension [Self <: Tree](x: Self) {
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree(value: scala.Double): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: scala.Double): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItem(value: scala.Double): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
+    inline def setWorkItem(value: scala.Double): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemLink(value: scala.Double): Self = StObject.set(x, "workItemLink", value.asInstanceOf[js.Any])
+    inline def setWorkItemLink(value: scala.Double): Self = StObject.set(x, "workItemLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypeExtension(value: scala.Double): Self = StObject.set(x, "workItemTypeExtension", value.asInstanceOf[js.Any])
+    inline def setWorkItemTypeExtension(value: scala.Double): Self = StObject.set(x, "workItemTypeExtension", value.asInstanceOf[js.Any])
   }
 }

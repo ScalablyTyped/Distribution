@@ -29,8 +29,7 @@ trait SketchViewModelCreateEvent extends StObject {
 }
 object SketchViewModelCreateEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     graphic: Graphic,
     state: start | active | complete | cancel,
     tool: point | multipoint | polyline | polygon | rectangle | circle,
@@ -41,22 +40,16 @@ object SketchViewModelCreateEvent {
     __obj.asInstanceOf[SketchViewModelCreateEvent]
   }
   
-  @scala.inline
-  implicit class SketchViewModelCreateEventMutableBuilder[Self <: SketchViewModelCreateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SketchViewModelCreateEvent](x: Self) {
     
-    @scala.inline
-    def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: start | active | complete | cancel): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: start | active | complete | cancel): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTool(value: point | multipoint | polyline | polygon | rectangle | circle): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: point | multipoint | polyline | polygon | rectangle | circle): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolEventInfo(value: CreateToolEventInfo): Self = StObject.set(x, "toolEventInfo", value.asInstanceOf[js.Any])
+    inline def setToolEventInfo(value: CreateToolEventInfo): Self = StObject.set(x, "toolEventInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: create): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: create): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

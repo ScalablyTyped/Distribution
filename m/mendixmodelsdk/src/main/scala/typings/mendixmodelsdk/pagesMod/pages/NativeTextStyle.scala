@@ -21,48 +21,41 @@ object NativeTextStyle {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NativeTextStyle.Heading1")
   @js.native
   def Heading1: NativeTextStyle = js.native
-  @scala.inline
-  def Heading1_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading1")(x.asInstanceOf[js.Any])
+  inline def Heading1_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading1")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NativeTextStyle.Heading2")
   @js.native
   def Heading2: NativeTextStyle = js.native
-  @scala.inline
-  def Heading2_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading2")(x.asInstanceOf[js.Any])
+  inline def Heading2_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading2")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NativeTextStyle.Heading3")
   @js.native
   def Heading3: NativeTextStyle = js.native
-  @scala.inline
-  def Heading3_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading3")(x.asInstanceOf[js.Any])
+  inline def Heading3_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading3")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NativeTextStyle.Heading4")
   @js.native
   def Heading4: NativeTextStyle = js.native
-  @scala.inline
-  def Heading4_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading4")(x.asInstanceOf[js.Any])
+  inline def Heading4_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading4")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NativeTextStyle.Heading5")
   @js.native
   def Heading5: NativeTextStyle = js.native
-  @scala.inline
-  def Heading5_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading5")(x.asInstanceOf[js.Any])
+  inline def Heading5_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading5")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NativeTextStyle.Heading6")
   @js.native
   def Heading6: NativeTextStyle = js.native
-  @scala.inline
-  def Heading6_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading6")(x.asInstanceOf[js.Any])
+  inline def Heading6_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading6")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NativeTextStyle.Text")
   @js.native
   def Text: NativeTextStyle = js.native
-  @scala.inline
-  def Text_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+  inline def Text_=(x: NativeTextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
 }

@@ -20,6 +20,5 @@ object Affix {
   @JSImport("antd", "Affix.contextType")
   @js.native
   def contextType: Context[ConfigConsumerProps] = js.native
-  @scala.inline
-  def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  inline def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
 }

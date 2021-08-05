@@ -13,19 +13,15 @@ trait UpdateListenerResponse extends StObject {
 }
 object UpdateListenerResponse {
   
-  @scala.inline
-  def apply(): UpdateListenerResponse = {
+  inline def apply(): UpdateListenerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateListenerResponse]
   }
   
-  @scala.inline
-  implicit class UpdateListenerResponseMutableBuilder[Self <: UpdateListenerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateListenerResponse](x: Self) {
     
-    @scala.inline
-    def setListener(value: Listener): Self = StObject.set(x, "Listener", value.asInstanceOf[js.Any])
+    inline def setListener(value: Listener): Self = StObject.set(x, "Listener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerUndefined: Self = StObject.set(x, "Listener", js.undefined)
+    inline def setListenerUndefined: Self = StObject.set(x, "Listener", js.undefined)
   }
 }

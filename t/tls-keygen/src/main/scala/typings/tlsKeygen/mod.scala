@@ -27,11 +27,9 @@ object mod {
   @js.native
   val defaultSubjectAltName: js.Array[String] = js.native
   
-  @scala.inline
-  def ephemeral(options: KeyGenOptions): js.Promise[EphemeralResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("ephemeral")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EphemeralResult]]
+  inline def ephemeral(options: KeyGenOptions): js.Promise[EphemeralResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("ephemeral")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EphemeralResult]]
   
-  @scala.inline
-  def keygen(options: KeyGenOptions): js.Promise[KeyGenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("keygen")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyGenResult]]
+  inline def keygen(options: KeyGenOptions): js.Promise[KeyGenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("keygen")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyGenResult]]
   
   trait EphemeralResult extends StObject {
     
@@ -41,20 +39,16 @@ object mod {
   }
   object EphemeralResult {
     
-    @scala.inline
-    def apply(cert: Buffer, key: Buffer): EphemeralResult = {
+    inline def apply(cert: Buffer, key: Buffer): EphemeralResult = {
       val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[EphemeralResult]
     }
     
-    @scala.inline
-    implicit class EphemeralResultMutableBuilder[Self <: EphemeralResult] (val x: Self) extends AnyVal {
+    extension [Self <: EphemeralResult](x: Self) {
       
-      @scala.inline
-      def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,47 +66,34 @@ object mod {
   }
   object KeyGenOptions {
     
-    @scala.inline
-    def apply(): KeyGenOptions = {
+    inline def apply(): KeyGenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyGenOptions]
     }
     
-    @scala.inline
-    implicit class KeyGenOptionsMutableBuilder[Self <: KeyGenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeyGenOptions](x: Self) {
       
-      @scala.inline
-      def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+      inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
+      inline def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
       
-      @scala.inline
-      def setEntrust(value: Boolean): Self = StObject.set(x, "entrust", value.asInstanceOf[js.Any])
+      inline def setEntrust(value: Boolean): Self = StObject.set(x, "entrust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntrustUndefined: Self = StObject.set(x, "entrust", js.undefined)
+      inline def setEntrustUndefined: Self = StObject.set(x, "entrust", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setSubjectAltName(value: js.Array[String]): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
+      inline def setSubjectAltName(value: js.Array[String]): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectAltNameUndefined: Self = StObject.set(x, "subjectAltName", js.undefined)
+      inline def setSubjectAltNameUndefined: Self = StObject.set(x, "subjectAltName", js.undefined)
       
-      @scala.inline
-      def setSubjectAltNameVarargs(value: String*): Self = StObject.set(x, "subjectAltName", js.Array(value :_*))
+      inline def setSubjectAltNameVarargs(value: String*): Self = StObject.set(x, "subjectAltName", js.Array(value :_*))
     }
   }
   
@@ -124,20 +105,16 @@ object mod {
   }
   object KeyGenResult {
     
-    @scala.inline
-    def apply(cert: String, key: String): KeyGenResult = {
+    inline def apply(cert: String, key: String): KeyGenResult = {
       val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyGenResult]
     }
     
-    @scala.inline
-    implicit class KeyGenResultMutableBuilder[Self <: KeyGenResult] (val x: Self) extends AnyVal {
+    extension [Self <: KeyGenResult](x: Self) {
       
-      @scala.inline
-      def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
 }

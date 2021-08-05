@@ -36,8 +36,7 @@ trait ApplePayPaymentPass extends StObject {
 }
 object ApplePayPaymentPass {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activationState: ApplePayPaymentPassActivationState,
     primaryAccountIdentifier: String,
     primaryAccountNumberSuffix: String
@@ -46,28 +45,20 @@ object ApplePayPaymentPass {
     __obj.asInstanceOf[ApplePayPaymentPass]
   }
   
-  @scala.inline
-  implicit class ApplePayPaymentPassMutableBuilder[Self <: ApplePayPaymentPass] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePayPaymentPass](x: Self) {
     
-    @scala.inline
-    def setActivationState(value: ApplePayPaymentPassActivationState): Self = StObject.set(x, "activationState", value.asInstanceOf[js.Any])
+    inline def setActivationState(value: ApplePayPaymentPassActivationState): Self = StObject.set(x, "activationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceAccountIdentifier(value: String): Self = StObject.set(x, "deviceAccountIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeviceAccountIdentifier(value: String): Self = StObject.set(x, "deviceAccountIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceAccountIdentifierUndefined: Self = StObject.set(x, "deviceAccountIdentifier", js.undefined)
+    inline def setDeviceAccountIdentifierUndefined: Self = StObject.set(x, "deviceAccountIdentifier", js.undefined)
     
-    @scala.inline
-    def setDeviceAccountNumberSuffix(value: String): Self = StObject.set(x, "deviceAccountNumberSuffix", value.asInstanceOf[js.Any])
+    inline def setDeviceAccountNumberSuffix(value: String): Self = StObject.set(x, "deviceAccountNumberSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceAccountNumberSuffixUndefined: Self = StObject.set(x, "deviceAccountNumberSuffix", js.undefined)
+    inline def setDeviceAccountNumberSuffixUndefined: Self = StObject.set(x, "deviceAccountNumberSuffix", js.undefined)
     
-    @scala.inline
-    def setPrimaryAccountIdentifier(value: String): Self = StObject.set(x, "primaryAccountIdentifier", value.asInstanceOf[js.Any])
+    inline def setPrimaryAccountIdentifier(value: String): Self = StObject.set(x, "primaryAccountIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryAccountNumberSuffix(value: String): Self = StObject.set(x, "primaryAccountNumberSuffix", value.asInstanceOf[js.Any])
+    inline def setPrimaryAccountNumberSuffix(value: String): Self = StObject.set(x, "primaryAccountNumberSuffix", value.asInstanceOf[js.Any])
   }
 }

@@ -30,17 +30,14 @@ object mod {
   @js.native
   val clearDecorators: js.Function0[Unit] = js.native
   
-  @scala.inline
-  def configure(loadStories: js.Function0[Unit], module: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(loadStories.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def configure(loadStories: js.Function0[Unit], module: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(loadStories.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@storybook/react-native/dist", "getStorybook")
   @js.native
   val getStorybook: js.Function0[js.Array[GetStorybookKind]] = js.native
   
-  @scala.inline
-  def getStorybookUI(): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookUI")().asInstanceOf[Instantiable]
-  @scala.inline
-  def getStorybookUI(params: PartialParams): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookUI")(params.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  inline def getStorybookUI(): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookUI")().asInstanceOf[Instantiable]
+  inline def getStorybookUI(params: PartialParams): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorybookUI")(params.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
   
   @JSImport("@storybook/react-native/dist", "raw")
   @js.native
@@ -50,6 +47,5 @@ object mod {
   @js.native
   val setAddon: js.Function1[/* addon */ js.Any, Unit] = js.native
   
-  @scala.inline
-  def storiesOf(kind: String, module: NodeModule): StoryApi[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("storiesOf")(kind.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[StoryApi[js.Any]]
+  inline def storiesOf(kind: String, module: NodeModule): StoryApi[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("storiesOf")(kind.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[StoryApi[js.Any]]
 }

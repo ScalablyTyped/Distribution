@@ -11,18 +11,15 @@ trait MergedModifiers extends StObject {
 }
 object MergedModifiers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mergedModifiers: StringDictionary[js.Function2[/* date */ typings.std.Date, /* type */ String, Boolean]]
   ): MergedModifiers = {
     val __obj = js.Dynamic.literal(mergedModifiers = mergedModifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergedModifiers]
   }
   
-  @scala.inline
-  implicit class MergedModifiersMutableBuilder[Self <: MergedModifiers] (val x: Self) extends AnyVal {
+  extension [Self <: MergedModifiers](x: Self) {
     
-    @scala.inline
-    def setMergedModifiers(value: StringDictionary[js.Function2[/* date */ typings.std.Date, /* type */ String, Boolean]]): Self = StObject.set(x, "mergedModifiers", value.asInstanceOf[js.Any])
+    inline def setMergedModifiers(value: StringDictionary[js.Function2[/* date */ typings.std.Date, /* type */ String, Boolean]]): Self = StObject.set(x, "mergedModifiers", value.asInstanceOf[js.Any])
   }
 }

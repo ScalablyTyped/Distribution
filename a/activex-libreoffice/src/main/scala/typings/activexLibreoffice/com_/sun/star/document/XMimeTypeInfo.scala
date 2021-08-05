@@ -23,8 +23,7 @@ trait XMimeTypeInfo
 }
 object XMimeTypeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedMimeTypeNames: SafeArray[String],
     acquire: () => Unit,
     getSupportedMimeTypeNames: () => SafeArray[String],
@@ -36,16 +35,12 @@ object XMimeTypeInfo {
     __obj.asInstanceOf[XMimeTypeInfo]
   }
   
-  @scala.inline
-  implicit class XMimeTypeInfoMutableBuilder[Self <: XMimeTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XMimeTypeInfo](x: Self) {
     
-    @scala.inline
-    def setGetSupportedMimeTypeNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMimeTypeNames", js.Any.fromFunction0(value))
+    inline def setGetSupportedMimeTypeNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMimeTypeNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSupportedMimeTypeNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedMimeTypeNames", value.asInstanceOf[js.Any])
+    inline def setSupportedMimeTypeNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedMimeTypeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsMimeType(value: String => Boolean): Self = StObject.set(x, "supportsMimeType", js.Any.fromFunction1(value))
+    inline def setSupportsMimeType(value: String => Boolean): Self = StObject.set(x, "supportsMimeType", js.Any.fromFunction1(value))
   }
 }

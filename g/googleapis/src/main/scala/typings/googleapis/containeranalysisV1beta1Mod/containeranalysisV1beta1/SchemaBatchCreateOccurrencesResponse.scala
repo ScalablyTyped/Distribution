@@ -16,22 +16,17 @@ trait SchemaBatchCreateOccurrencesResponse extends StObject {
 }
 object SchemaBatchCreateOccurrencesResponse {
   
-  @scala.inline
-  def apply(): SchemaBatchCreateOccurrencesResponse = {
+  inline def apply(): SchemaBatchCreateOccurrencesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchCreateOccurrencesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBatchCreateOccurrencesResponseMutableBuilder[Self <: SchemaBatchCreateOccurrencesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchCreateOccurrencesResponse](x: Self) {
     
-    @scala.inline
-    def setOccurrences(value: js.Array[SchemaOccurrence]): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
+    inline def setOccurrences(value: js.Array[SchemaOccurrence]): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
+    inline def setOccurrencesUndefined: Self = StObject.set(x, "occurrences", js.undefined)
     
-    @scala.inline
-    def setOccurrencesVarargs(value: SchemaOccurrence*): Self = StObject.set(x, "occurrences", js.Array(value :_*))
+    inline def setOccurrencesVarargs(value: SchemaOccurrence*): Self = StObject.set(x, "occurrences", js.Array(value :_*))
   }
 }

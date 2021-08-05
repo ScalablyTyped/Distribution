@@ -65,16 +65,12 @@ object certIDMod {
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @scala.inline
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait CertID extends StObject {
@@ -110,8 +106,7 @@ object certIDMod {
   }
   object CertID {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createForCertificate: (typings.pkijs.certificateMod.default, CreateFroCertificateParams) => js.Thenable[Unit],
       fromSchema: js.Any => Unit,
       hashAlgorithm: typings.pkijs.algorithmIdentifierMod.default,
@@ -126,35 +121,25 @@ object certIDMod {
       __obj.asInstanceOf[CertID]
     }
     
-    @scala.inline
-    implicit class CertIDMutableBuilder[Self <: CertID] (val x: Self) extends AnyVal {
+    extension [Self <: CertID](x: Self) {
       
-      @scala.inline
-      def setCreateForCertificate(value: (typings.pkijs.certificateMod.default, CreateFroCertificateParams) => js.Thenable[Unit]): Self = StObject.set(x, "createForCertificate", js.Any.fromFunction2(value))
+      inline def setCreateForCertificate(value: (typings.pkijs.certificateMod.default, CreateFroCertificateParams) => js.Thenable[Unit]): Self = StObject.set(x, "createForCertificate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHashAlgorithm(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
+      inline def setHashAlgorithm(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEqual(value: CertID => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+      inline def setIsEqual(value: CertID => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIssuerKeyHash(value: OctetString): Self = StObject.set(x, "issuerKeyHash", value.asInstanceOf[js.Any])
+      inline def setIssuerKeyHash(value: OctetString): Self = StObject.set(x, "issuerKeyHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerNameHash(value: OctetString): Self = StObject.set(x, "issuerNameHash", value.asInstanceOf[js.Any])
+      inline def setIssuerNameHash(value: OctetString): Self = StObject.set(x, "issuerNameHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumber(value: Integer): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: Integer): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
   
@@ -166,20 +151,16 @@ object certIDMod {
   }
   object CreateFroCertificateParams {
     
-    @scala.inline
-    def apply(hashAlgorithm: String, issuerCertificate: typings.pkijs.certificateMod.default): CreateFroCertificateParams = {
+    inline def apply(hashAlgorithm: String, issuerCertificate: typings.pkijs.certificateMod.default): CreateFroCertificateParams = {
       val __obj = js.Dynamic.literal(hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], issuerCertificate = issuerCertificate.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateFroCertificateParams]
     }
     
-    @scala.inline
-    implicit class CreateFroCertificateParamsMutableBuilder[Self <: CreateFroCertificateParams] (val x: Self) extends AnyVal {
+    extension [Self <: CreateFroCertificateParams](x: Self) {
       
-      @scala.inline
-      def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
+      inline def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerCertificate(value: typings.pkijs.certificateMod.default): Self = StObject.set(x, "issuerCertificate", value.asInstanceOf[js.Any])
+      inline def setIssuerCertificate(value: typings.pkijs.certificateMod.default): Self = StObject.set(x, "issuerCertificate", value.asInstanceOf[js.Any])
     }
   }
 }

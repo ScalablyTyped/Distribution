@@ -14,17 +14,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(done = false)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,17 +31,14 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(next: () => `0`): `1` = {
+    inline def apply(next: () => `0`): `1` = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setNext(value: () => `0`): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => `0`): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
   
@@ -61,17 +55,14 @@ object anon {
   }
   object `3` {
     
-    @scala.inline
-    def apply(next: () => Value): `3` = {
+    inline def apply(next: () => Value): `3` = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[`3`]
     }
     
-    @scala.inline
-    implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
+    extension [Self <: `3`](x: Self) {
       
-      @scala.inline
-      def setNext(value: () => Value): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Value): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
   
@@ -97,20 +88,16 @@ object anon {
   }
   object Done {
     
-    @scala.inline
-    def apply(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Done = {
+    inline def apply(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Done = {
       val __obj = js.Dynamic.literal(done = true, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Done]
     }
     
-    @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
+    extension [Self <: Done](x: Self) {
       
-      @scala.inline
-      def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,17 +114,14 @@ object anon {
   }
   object Next {
     
-    @scala.inline
-    def apply(next: () => Done): Next = {
+    inline def apply(next: () => Done): Next = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[Next]
     }
     
-    @scala.inline
-    implicit class NextMutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
+    extension [Self <: Next](x: Self) {
       
-      @scala.inline
-      def setNext(value: () => Done): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Done): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
   
@@ -147,17 +131,14 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Value = {
+    inline def apply(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Value = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setValue(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

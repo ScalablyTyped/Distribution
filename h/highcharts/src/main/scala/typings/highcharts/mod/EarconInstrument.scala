@@ -22,8 +22,7 @@ trait EarconInstrument extends StObject {
 }
 object EarconInstrument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     instrument: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument,
     playOptions: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
   ): EarconInstrument = {
@@ -31,13 +30,10 @@ object EarconInstrument {
     __obj.asInstanceOf[EarconInstrument]
   }
   
-  @scala.inline
-  implicit class EarconInstrumentMutableBuilder[Self <: EarconInstrument] (val x: Self) extends AnyVal {
+  extension [Self <: EarconInstrument](x: Self) {
     
-    @scala.inline
-    def setInstrument(value: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
+    inline def setInstrument(value: String | typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayOptions(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject): Self = StObject.set(x, "playOptions", value.asInstanceOf[js.Any])
+    inline def setPlayOptions(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject): Self = StObject.set(x, "playOptions", value.asInstanceOf[js.Any])
   }
 }

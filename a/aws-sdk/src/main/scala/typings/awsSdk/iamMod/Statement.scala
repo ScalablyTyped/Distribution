@@ -28,37 +28,27 @@ trait Statement extends StObject {
 }
 object Statement {
   
-  @scala.inline
-  def apply(): Statement = {
+  inline def apply(): Statement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Statement]
   }
   
-  @scala.inline
-  implicit class StatementMutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
+  extension [Self <: Statement](x: Self) {
     
-    @scala.inline
-    def setEndPosition(value: Position): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: Position): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPositionUndefined: Self = StObject.set(x, "EndPosition", js.undefined)
+    inline def setEndPositionUndefined: Self = StObject.set(x, "EndPosition", js.undefined)
     
-    @scala.inline
-    def setSourcePolicyId(value: PolicyIdentifierType): Self = StObject.set(x, "SourcePolicyId", value.asInstanceOf[js.Any])
+    inline def setSourcePolicyId(value: PolicyIdentifierType): Self = StObject.set(x, "SourcePolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePolicyIdUndefined: Self = StObject.set(x, "SourcePolicyId", js.undefined)
+    inline def setSourcePolicyIdUndefined: Self = StObject.set(x, "SourcePolicyId", js.undefined)
     
-    @scala.inline
-    def setSourcePolicyType(value: PolicySourceType): Self = StObject.set(x, "SourcePolicyType", value.asInstanceOf[js.Any])
+    inline def setSourcePolicyType(value: PolicySourceType): Self = StObject.set(x, "SourcePolicyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePolicyTypeUndefined: Self = StObject.set(x, "SourcePolicyType", js.undefined)
+    inline def setSourcePolicyTypeUndefined: Self = StObject.set(x, "SourcePolicyType", js.undefined)
     
-    @scala.inline
-    def setStartPosition(value: Position): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Position): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPositionUndefined: Self = StObject.set(x, "StartPosition", js.undefined)
+    inline def setStartPositionUndefined: Self = StObject.set(x, "StartPosition", js.undefined)
   }
 }

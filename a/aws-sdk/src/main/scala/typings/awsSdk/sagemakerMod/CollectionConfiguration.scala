@@ -18,25 +18,19 @@ trait CollectionConfiguration extends StObject {
 }
 object CollectionConfiguration {
   
-  @scala.inline
-  def apply(): CollectionConfiguration = {
+  inline def apply(): CollectionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionConfiguration]
   }
   
-  @scala.inline
-  implicit class CollectionConfigurationMutableBuilder[Self <: CollectionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionConfiguration](x: Self) {
     
-    @scala.inline
-    def setCollectionName(value: CollectionName): Self = StObject.set(x, "CollectionName", value.asInstanceOf[js.Any])
+    inline def setCollectionName(value: CollectionName): Self = StObject.set(x, "CollectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionNameUndefined: Self = StObject.set(x, "CollectionName", js.undefined)
+    inline def setCollectionNameUndefined: Self = StObject.set(x, "CollectionName", js.undefined)
     
-    @scala.inline
-    def setCollectionParameters(value: CollectionParameters): Self = StObject.set(x, "CollectionParameters", value.asInstanceOf[js.Any])
+    inline def setCollectionParameters(value: CollectionParameters): Self = StObject.set(x, "CollectionParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionParametersUndefined: Self = StObject.set(x, "CollectionParameters", js.undefined)
+    inline def setCollectionParametersUndefined: Self = StObject.set(x, "CollectionParameters", js.undefined)
   }
 }

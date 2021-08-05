@@ -14,17 +14,14 @@ object routeInterfaceMod {
   }
   object NavigationHookOptions {
     
-    @scala.inline
-    def apply(redirect: String): NavigationHookOptions = {
+    inline def apply(redirect: String): NavigationHookOptions = {
       val __obj = js.Dynamic.literal(redirect = redirect.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationHookOptions]
     }
     
-    @scala.inline
-    implicit class NavigationHookOptionsMutableBuilder[Self <: NavigationHookOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationHookOptions](x: Self) {
       
-      @scala.inline
-      def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     }
   }
   

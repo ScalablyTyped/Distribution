@@ -13,19 +13,15 @@ trait SVGAnimatedTransformList extends StObject {
 }
 object SVGAnimatedTransformList {
   
-  @scala.inline
-  def apply(animVal: SVGTransformList, baseVal: SVGTransformList): SVGAnimatedTransformList = {
+  inline def apply(animVal: SVGTransformList, baseVal: SVGTransformList): SVGAnimatedTransformList = {
     val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAnimatedTransformList]
   }
   
-  @scala.inline
-  implicit class SVGAnimatedTransformListMutableBuilder[Self <: SVGAnimatedTransformList] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnimatedTransformList](x: Self) {
     
-    @scala.inline
-    def setAnimVal(value: SVGTransformList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    inline def setAnimVal(value: SVGTransformList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVal(value: SVGTransformList): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+    inline def setBaseVal(value: SVGTransformList): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
   }
 }

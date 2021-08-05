@@ -51,91 +51,63 @@ trait PageElement extends StObject {
 }
 object PageElement {
   
-  @scala.inline
-  def apply(): PageElement = {
+  inline def apply(): PageElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageElement]
   }
   
-  @scala.inline
-  implicit class PageElementMutableBuilder[Self <: PageElement] (val x: Self) extends AnyVal {
+  extension [Self <: PageElement](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setElementGroup(value: Group): Self = StObject.set(x, "elementGroup", value.asInstanceOf[js.Any])
+    inline def setElementGroup(value: Group): Self = StObject.set(x, "elementGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementGroupUndefined: Self = StObject.set(x, "elementGroup", js.undefined)
+    inline def setElementGroupUndefined: Self = StObject.set(x, "elementGroup", js.undefined)
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setSheetsChart(value: SheetsChart): Self = StObject.set(x, "sheetsChart", value.asInstanceOf[js.Any])
+    inline def setSheetsChart(value: SheetsChart): Self = StObject.set(x, "sheetsChart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetsChartUndefined: Self = StObject.set(x, "sheetsChart", js.undefined)
+    inline def setSheetsChartUndefined: Self = StObject.set(x, "sheetsChart", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTransform(value: AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: AffineTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setVideo(value: Video): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Video): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
-    @scala.inline
-    def setWordArt(value: WordArt): Self = StObject.set(x, "wordArt", value.asInstanceOf[js.Any])
+    inline def setWordArt(value: WordArt): Self = StObject.set(x, "wordArt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordArtUndefined: Self = StObject.set(x, "wordArt", js.undefined)
+    inline def setWordArtUndefined: Self = StObject.set(x, "wordArt", js.undefined)
   }
 }

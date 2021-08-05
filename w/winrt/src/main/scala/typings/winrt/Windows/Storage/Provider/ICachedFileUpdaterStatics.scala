@@ -17,18 +17,15 @@ trait ICachedFileUpdaterStatics extends StObject {
 }
 object ICachedFileUpdaterStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setUpdateInformation: (IStorageFile, String, ReadActivationMode, WriteActivationMode, CachedFileOptions) => Unit
   ): ICachedFileUpdaterStatics = {
     val __obj = js.Dynamic.literal(setUpdateInformation = js.Any.fromFunction5(setUpdateInformation))
     __obj.asInstanceOf[ICachedFileUpdaterStatics]
   }
   
-  @scala.inline
-  implicit class ICachedFileUpdaterStaticsMutableBuilder[Self <: ICachedFileUpdaterStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ICachedFileUpdaterStatics](x: Self) {
     
-    @scala.inline
-    def setSetUpdateInformation(value: (IStorageFile, String, ReadActivationMode, WriteActivationMode, CachedFileOptions) => Unit): Self = StObject.set(x, "setUpdateInformation", js.Any.fromFunction5(value))
+    inline def setSetUpdateInformation(value: (IStorageFile, String, ReadActivationMode, WriteActivationMode, CachedFileOptions) => Unit): Self = StObject.set(x, "setUpdateInformation", js.Any.fromFunction5(value))
   }
 }

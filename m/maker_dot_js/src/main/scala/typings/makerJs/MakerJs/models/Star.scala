@@ -15,16 +15,13 @@ trait Star
 }
 object Star {
   
-  @scala.inline
-  def apply(paths: IPathMap): Star = {
+  inline def apply(paths: IPathMap): Star = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Star]
   }
   
-  @scala.inline
-  implicit class StarMutableBuilder[Self <: Star] (val x: Self) extends AnyVal {
+  extension [Self <: Star](x: Self) {
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait DataHookPropName extends StObject {
 }
 object DataHookPropName {
   
-  @scala.inline
-  def apply(): DataHookPropName = {
+  inline def apply(): DataHookPropName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataHookPropName]
   }
   
-  @scala.inline
-  implicit class DataHookPropNameMutableBuilder[Self <: DataHookPropName] (val x: Self) extends AnyVal {
+  extension [Self <: DataHookPropName](x: Self) {
     
-    @scala.inline
-    def setDataHookPropName(value: String): Self = StObject.set(x, "dataHookPropName", value.asInstanceOf[js.Any])
+    inline def setDataHookPropName(value: String): Self = StObject.set(x, "dataHookPropName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataHookPropNameUndefined: Self = StObject.set(x, "dataHookPropName", js.undefined)
+    inline def setDataHookPropNameUndefined: Self = StObject.set(x, "dataHookPropName", js.undefined)
   }
 }

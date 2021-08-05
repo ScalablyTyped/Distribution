@@ -68,16 +68,14 @@ object Notifications {
       * @return The object you will use to send changes to the app tile's badge.
       */
     /* static member */
-    @scala.inline
-    def createBadgeUpdaterForApplication(): typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForApplication")().asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater]
+    inline def createBadgeUpdaterForApplication(): typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForApplication")().asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater]
     /**
       * Creates and initializes a new instance of the BadgeUpdater for a specified app tile's badge, usually the tile of another app in the package. The BadgeUpdater lets you change the appearance or content of that badge.
       * @param applicationId The unique ID of the tile whose badge you want to update.
       * @return The object you will use to send changes to the application tile's badge.
       */
     /* static member */
-    @scala.inline
-    def createBadgeUpdaterForApplication(applicationId: String): typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForApplication")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater]
+    inline def createBadgeUpdaterForApplication(applicationId: String): typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForApplication")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater]
     
     /**
       * Creates and initializes a new instance of the BadgeUpdater , which enables you to change the appearance or content of a badge on a secondary tile . The tile can belong to the calling app or any other app in the same package.
@@ -85,8 +83,7 @@ object Notifications {
       * @return The object you will use to send badge updates to the tile identified by tileID.
       */
     /* static member */
-    @scala.inline
-    def createBadgeUpdaterForSecondaryTile(tileId: String): typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForSecondaryTile")(tileId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater]
+    inline def createBadgeUpdaterForSecondaryTile(tileId: String): typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createBadgeUpdaterForSecondaryTile")(tileId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.BadgeUpdater]
     
     /**
       * Gets the XML content of one of the predefined badge templates so that you can customize it for a badge update.
@@ -94,8 +91,7 @@ object Notifications {
       * @return The object that contains the template XML.
       */
     /* static member */
-    @scala.inline
-    def getTemplateContent(`type`: BadgeTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
+    inline def getTemplateContent(`type`: BadgeTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
   }
   
   /** Updates a badge overlay on the specific tile that the updater is bound to. */
@@ -254,8 +250,7 @@ object Notifications {
     @JSGlobal("Windows.UI.Notifications.TileFlyoutTemplateType.tileFlyoutTemplate01")
     @js.native
     def tileFlyoutTemplate01: js.Any = js.native
-    @scala.inline
-    def tileFlyoutTemplate01_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tileFlyoutTemplate01")(x.asInstanceOf[js.Any])
+    inline def tileFlyoutTemplate01_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tileFlyoutTemplate01")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager")
@@ -273,24 +268,21 @@ object Notifications {
     @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager.createTileFlyoutUpdaterForApplication")
     @js.native
     def createTileFlyoutUpdaterForApplication: js.Any = js.native
-    @scala.inline
-    def createTileFlyoutUpdaterForApplication_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTileFlyoutUpdaterForApplication")(x.asInstanceOf[js.Any])
+    inline def createTileFlyoutUpdaterForApplication_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTileFlyoutUpdaterForApplication")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager.createTileFlyoutUpdaterForSecondaryTile")
     @js.native
     def createTileFlyoutUpdaterForSecondaryTile: js.Any = js.native
-    @scala.inline
-    def createTileFlyoutUpdaterForSecondaryTile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTileFlyoutUpdaterForSecondaryTile")(x.asInstanceOf[js.Any])
+    inline def createTileFlyoutUpdaterForSecondaryTile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTileFlyoutUpdaterForSecondaryTile")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager.getTemplateContent")
     @js.native
     def getTemplateContent: js.Any = js.native
-    @scala.inline
-    def getTemplateContent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTemplateContent")(x.asInstanceOf[js.Any])
+    inline def getTemplateContent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTemplateContent")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdater")
@@ -622,16 +614,14 @@ object Notifications {
       * @return The object you will use to send changes to the app's tile.
       */
     /* static member */
-    @scala.inline
-    def createTileUpdaterForApplication(): typings.winrtUwp.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForApplication")().asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.TileUpdater]
+    inline def createTileUpdaterForApplication(): typings.winrtUwp.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForApplication")().asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.TileUpdater]
     /**
       * Creates and initializes a new instance of the TileUpdater for a tile that belongs to another app in the same package as the calling app. The TileUpdater lets a developer change the appearance of that tile.
       * @param applicationId The Package Relative Application ID (PRAID) of the tile.
       * @return The object you will use to send changes to the tile identified by applicationId.
       */
     /* static member */
-    @scala.inline
-    def createTileUpdaterForApplication(applicationId: String): typings.winrtUwp.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForApplication")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.TileUpdater]
+    inline def createTileUpdaterForApplication(applicationId: String): typings.winrtUwp.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForApplication")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.TileUpdater]
     
     /**
       * Creates and initializes a new instance of the TileUpdater , which enables you to change the appearance of a secondary tile . The tile can belong to the calling app or any other app in the same package.
@@ -639,8 +629,7 @@ object Notifications {
       * @return The object you will use to send updates to the tile identified by tileID.
       */
     /* static member */
-    @scala.inline
-    def createTileUpdaterForSecondaryTile(tileId: String): typings.winrtUwp.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForSecondaryTile")(tileId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.TileUpdater]
+    inline def createTileUpdaterForSecondaryTile(tileId: String): typings.winrtUwp.Windows.UI.Notifications.TileUpdater = ^.asInstanceOf[js.Dynamic].applyDynamic("createTileUpdaterForSecondaryTile")(tileId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.TileUpdater]
     
     /**
       * Gets the XML content of one of the predefined tile templates so that you can customize it for a tile update.
@@ -648,8 +637,7 @@ object Notifications {
       * @return The object that contains the XML.
       */
     /* static member */
-    @scala.inline
-    def getTemplateContent(`type`: TileTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
+    inline def getTemplateContent(`type`: TileTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
   }
   
   /** Changes the content of the specific tile that the updater is bound to. */
@@ -790,16 +778,14 @@ object Notifications {
       * @return The object you will use to send the toast notification to the app.
       */
     /* static member */
-    @scala.inline
-    def createToastNotifier(): typings.winrtUwp.Windows.UI.Notifications.ToastNotifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createToastNotifier")().asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.ToastNotifier]
+    inline def createToastNotifier(): typings.winrtUwp.Windows.UI.Notifications.ToastNotifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createToastNotifier")().asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.ToastNotifier]
     /**
       * Creates and initializes a new instance of the ToastNotification , bound to a specified app, usually another app in the same package.
       * @param applicationId The unique ID of the app.
       * @return The object you will use to send the toast notification to the tile.
       */
     /* static member */
-    @scala.inline
-    def createToastNotifier(applicationId: String): typings.winrtUwp.Windows.UI.Notifications.ToastNotifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createToastNotifier")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.ToastNotifier]
+    inline def createToastNotifier(applicationId: String): typings.winrtUwp.Windows.UI.Notifications.ToastNotifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createToastNotifier")(applicationId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.UI.Notifications.ToastNotifier]
     
     /**
       * Gets the XML content of one of the predefined toast templates so that you can customize it for use in your notification.
@@ -807,16 +793,14 @@ object Notifications {
       * @return The object that contains the template XML.
       */
     /* static member */
-    @scala.inline
-    def getTemplateContent(`type`: ToastTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
+    inline def getTemplateContent(`type`: ToastTemplateType): XmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateContent")(`type`.asInstanceOf[js.Any]).asInstanceOf[XmlDocument]
     
     /** Gets the ToastNotificationHistory object. */
     /* static member */
     @JSGlobal("Windows.UI.Notifications.ToastNotificationManager.history")
     @js.native
     def history: typings.winrtUwp.Windows.UI.Notifications.ToastNotificationHistory = js.native
-    @scala.inline
-    def history_=(x: typings.winrtUwp.Windows.UI.Notifications.ToastNotificationHistory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("history")(x.asInstanceOf[js.Any])
+    inline def history_=(x: typings.winrtUwp.Windows.UI.Notifications.ToastNotificationHistory): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("history")(x.asInstanceOf[js.Any])
   }
   
   /** Raises a toast notification to the specific app to which the ToastNotifier is bound. This class also lets you schedule and remove toast notifications. */

@@ -31,37 +31,27 @@ trait SchemaNetworkInfo extends StObject {
 }
 object SchemaNetworkInfo {
   
-  @scala.inline
-  def apply(): SchemaNetworkInfo = {
+  inline def apply(): SchemaNetworkInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetworkInfo]
   }
   
-  @scala.inline
-  implicit class SchemaNetworkInfoMutableBuilder[Self <: SchemaNetworkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNetworkInfo](x: Self) {
     
-    @scala.inline
-    def setImei(value: String): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
+    inline def setImei(value: String): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImeiUndefined: Self = StObject.set(x, "imei", js.undefined)
+    inline def setImeiUndefined: Self = StObject.set(x, "imei", js.undefined)
     
-    @scala.inline
-    def setMeid(value: String): Self = StObject.set(x, "meid", value.asInstanceOf[js.Any])
+    inline def setMeid(value: String): Self = StObject.set(x, "meid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeidUndefined: Self = StObject.set(x, "meid", js.undefined)
+    inline def setMeidUndefined: Self = StObject.set(x, "meid", js.undefined)
     
-    @scala.inline
-    def setNetworkOperatorName(value: String): Self = StObject.set(x, "networkOperatorName", value.asInstanceOf[js.Any])
+    inline def setNetworkOperatorName(value: String): Self = StObject.set(x, "networkOperatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkOperatorNameUndefined: Self = StObject.set(x, "networkOperatorName", js.undefined)
+    inline def setNetworkOperatorNameUndefined: Self = StObject.set(x, "networkOperatorName", js.undefined)
     
-    @scala.inline
-    def setWifiMacAddress(value: String): Self = StObject.set(x, "wifiMacAddress", value.asInstanceOf[js.Any])
+    inline def setWifiMacAddress(value: String): Self = StObject.set(x, "wifiMacAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiMacAddressUndefined: Self = StObject.set(x, "wifiMacAddress", js.undefined)
+    inline def setWifiMacAddressUndefined: Self = StObject.set(x, "wifiMacAddress", js.undefined)
   }
 }

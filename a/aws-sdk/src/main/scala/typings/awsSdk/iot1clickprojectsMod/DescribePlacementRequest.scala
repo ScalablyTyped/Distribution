@@ -18,19 +18,15 @@ trait DescribePlacementRequest extends StObject {
 }
 object DescribePlacementRequest {
   
-  @scala.inline
-  def apply(placementName: PlacementName, projectName: ProjectName): DescribePlacementRequest = {
+  inline def apply(placementName: PlacementName, projectName: ProjectName): DescribePlacementRequest = {
     val __obj = js.Dynamic.literal(placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePlacementRequest]
   }
   
-  @scala.inline
-  implicit class DescribePlacementRequestMutableBuilder[Self <: DescribePlacementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePlacementRequest](x: Self) {
     
-    @scala.inline
-    def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
+    inline def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

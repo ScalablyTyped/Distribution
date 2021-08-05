@@ -13,16 +13,13 @@ trait LambdaAction extends StObject {
 }
 object LambdaAction {
   
-  @scala.inline
-  def apply(functionArn: FunctionArn): LambdaAction = {
+  inline def apply(functionArn: FunctionArn): LambdaAction = {
     val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaAction]
   }
   
-  @scala.inline
-  implicit class LambdaActionMutableBuilder[Self <: LambdaAction] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaAction](x: Self) {
     
-    @scala.inline
-    def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
+    inline def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
   }
 }

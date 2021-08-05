@@ -14,19 +14,16 @@ trait Apply extends StObject {
 }
 object Apply {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any, js.Any) => Unit
   ): Apply = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction2(apply))
     __obj.asInstanceOf[Apply]
   }
   
-  @scala.inline
-  implicit class ApplyMutableBuilder[Self <: Apply] (val x: Self) extends AnyVal {
+  extension [Self <: Apply](x: Self) {
     
-    @scala.inline
-    def setApply(
+    inline def setApply(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any, js.Any) => Unit
     ): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
   }

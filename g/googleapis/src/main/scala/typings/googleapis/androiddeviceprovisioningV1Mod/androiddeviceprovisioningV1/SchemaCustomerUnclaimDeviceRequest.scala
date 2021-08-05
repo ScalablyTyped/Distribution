@@ -16,19 +16,15 @@ trait SchemaCustomerUnclaimDeviceRequest extends StObject {
 }
 object SchemaCustomerUnclaimDeviceRequest {
   
-  @scala.inline
-  def apply(): SchemaCustomerUnclaimDeviceRequest = {
+  inline def apply(): SchemaCustomerUnclaimDeviceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomerUnclaimDeviceRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCustomerUnclaimDeviceRequestMutableBuilder[Self <: SchemaCustomerUnclaimDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomerUnclaimDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setDevice(value: SchemaDeviceReference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: SchemaDeviceReference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
   }
 }

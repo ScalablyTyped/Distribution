@@ -183,49 +183,35 @@ trait ZoneTestConfigurations extends StObject {
 }
 object ZoneTestConfigurations {
   
-  @scala.inline
-  def apply(): ZoneTestConfigurations = {
+  inline def apply(): ZoneTestConfigurations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoneTestConfigurations]
   }
   
-  @scala.inline
-  implicit class ZoneTestConfigurationsMutableBuilder[Self <: ZoneTestConfigurations] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneTestConfigurations](x: Self) {
     
-    @scala.inline
-    def set__Zone_disable_jasmine(value: Boolean): Self = StObject.set(x, "__Zone_disable_jasmine", value.asInstanceOf[js.Any])
+    inline def set__Zone_disable_jasmine(value: Boolean): Self = StObject.set(x, "__Zone_disable_jasmine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__Zone_disable_jasmineUndefined: Self = StObject.set(x, "__Zone_disable_jasmine", js.undefined)
+    inline def set__Zone_disable_jasmineUndefined: Self = StObject.set(x, "__Zone_disable_jasmine", js.undefined)
     
-    @scala.inline
-    def set__Zone_disable_jest(value: Boolean): Self = StObject.set(x, "__Zone_disable_jest", value.asInstanceOf[js.Any])
+    inline def set__Zone_disable_jest(value: Boolean): Self = StObject.set(x, "__Zone_disable_jest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__Zone_disable_jestUndefined: Self = StObject.set(x, "__Zone_disable_jest", js.undefined)
+    inline def set__Zone_disable_jestUndefined: Self = StObject.set(x, "__Zone_disable_jest", js.undefined)
     
-    @scala.inline
-    def set__Zone_disable_mocha(value: Boolean): Self = StObject.set(x, "__Zone_disable_mocha", value.asInstanceOf[js.Any])
+    inline def set__Zone_disable_mocha(value: Boolean): Self = StObject.set(x, "__Zone_disable_mocha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__Zone_disable_mochaUndefined: Self = StObject.set(x, "__Zone_disable_mocha", js.undefined)
+    inline def set__Zone_disable_mochaUndefined: Self = StObject.set(x, "__Zone_disable_mocha", js.undefined)
     
-    @scala.inline
-    def set__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched(value: Boolean): Self = StObject.set(x, "__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched", value.asInstanceOf[js.Any])
+    inline def set__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched(value: Boolean): Self = StObject.set(x, "__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatchedUndefined: Self = StObject.set(x, "__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched", js.undefined)
+    inline def set__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatchedUndefined: Self = StObject.set(x, "__zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched", js.undefined)
     
-    @scala.inline
-    def set__zone_symbol__fakeAsyncDisablePatchingClock(value: Boolean): Self = StObject.set(x, "__zone_symbol__fakeAsyncDisablePatchingClock", value.asInstanceOf[js.Any])
+    inline def set__zone_symbol__fakeAsyncDisablePatchingClock(value: Boolean): Self = StObject.set(x, "__zone_symbol__fakeAsyncDisablePatchingClock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__zone_symbol__fakeAsyncDisablePatchingClockUndefined: Self = StObject.set(x, "__zone_symbol__fakeAsyncDisablePatchingClock", js.undefined)
+    inline def set__zone_symbol__fakeAsyncDisablePatchingClockUndefined: Self = StObject.set(x, "__zone_symbol__fakeAsyncDisablePatchingClock", js.undefined)
     
-    @scala.inline
-    def set__zone_symbol__supportWaitUnResolvedChainedPromise(value: Boolean): Self = StObject.set(x, "__zone_symbol__supportWaitUnResolvedChainedPromise", value.asInstanceOf[js.Any])
+    inline def set__zone_symbol__supportWaitUnResolvedChainedPromise(value: Boolean): Self = StObject.set(x, "__zone_symbol__supportWaitUnResolvedChainedPromise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__zone_symbol__supportWaitUnResolvedChainedPromiseUndefined: Self = StObject.set(x, "__zone_symbol__supportWaitUnResolvedChainedPromise", js.undefined)
+    inline def set__zone_symbol__supportWaitUnResolvedChainedPromiseUndefined: Self = StObject.set(x, "__zone_symbol__supportWaitUnResolvedChainedPromise", js.undefined)
   }
 }

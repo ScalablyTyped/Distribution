@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProcKind extends StObject
 object ProcKind {
   
-  @scala.inline
-  def Get: `3` = 3.asInstanceOf[`3`]
+  inline def Get: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Let: `1` = 1.asInstanceOf[`1`]
+  inline def Let: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Proc: `0` = 0.asInstanceOf[`0`]
+  inline def Proc: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Set: `2` = 2.asInstanceOf[`2`]
+  inline def Set: `2` = 2.asInstanceOf[`2`]
 }

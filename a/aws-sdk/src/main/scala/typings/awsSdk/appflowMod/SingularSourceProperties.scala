@@ -13,17 +13,14 @@ trait SingularSourceProperties extends StObject {
 }
 object SingularSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): SingularSourceProperties = {
+  inline def apply(`object`: Object): SingularSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingularSourceProperties]
   }
   
-  @scala.inline
-  implicit class SingularSourcePropertiesMutableBuilder[Self <: SingularSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SingularSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

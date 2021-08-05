@@ -23,8 +23,7 @@ trait ASPxClientBollingerBands
 }
 object ASPxClientBollingerBands {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chart: ASPxClientWebChart,
     name: String,
     pointsCount: Double,
@@ -35,13 +34,10 @@ object ASPxClientBollingerBands {
     __obj.asInstanceOf[ASPxClientBollingerBands]
   }
   
-  @scala.inline
-  implicit class ASPxClientBollingerBandsMutableBuilder[Self <: ASPxClientBollingerBands] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientBollingerBands](x: Self) {
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
+    inline def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
   }
 }

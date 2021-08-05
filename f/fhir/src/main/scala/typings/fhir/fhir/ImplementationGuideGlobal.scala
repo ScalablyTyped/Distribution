@@ -28,26 +28,20 @@ trait ImplementationGuideGlobal
 }
 object ImplementationGuideGlobal {
   
-  @scala.inline
-  def apply(profile: Reference, `type`: code): ImplementationGuideGlobal = {
+  inline def apply(profile: Reference, `type`: code): ImplementationGuideGlobal = {
     val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImplementationGuideGlobal]
   }
   
-  @scala.inline
-  implicit class ImplementationGuideGlobalMutableBuilder[Self <: ImplementationGuideGlobal] (val x: Self) extends AnyVal {
+  extension [Self <: ImplementationGuideGlobal](x: Self) {
     
-    @scala.inline
-    def setProfile(value: Reference): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Reference): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

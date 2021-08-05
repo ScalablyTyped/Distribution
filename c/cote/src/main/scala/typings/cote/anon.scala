@@ -15,20 +15,16 @@ object anon {
   }
   object Monitor {
     
-    @scala.inline
-    def apply(monitor: typings.cote.mod.Monitor, server: Server): Monitor = {
+    inline def apply(monitor: typings.cote.mod.Monitor, server: Server): Monitor = {
       val __obj = js.Dynamic.literal(monitor = monitor.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[Monitor]
     }
     
-    @scala.inline
-    implicit class MonitorMutableBuilder[Self <: Monitor] (val x: Self) extends AnyVal {
+    extension [Self <: Monitor](x: Self) {
       
-      @scala.inline
-      def setMonitor(value: typings.cote.mod.Monitor): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
+      inline def setMonitor(value: typings.cote.mod.Monitor): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
 }

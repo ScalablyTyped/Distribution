@@ -28,64 +28,45 @@ trait IosLobApp
 }
 object IosLobApp {
   
-  @scala.inline
-  def apply(): IosLobApp = {
+  inline def apply(): IosLobApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosLobApp]
   }
   
-  @scala.inline
-  implicit class IosLobAppMutableBuilder[Self <: IosLobApp] (val x: Self) extends AnyVal {
+  extension [Self <: IosLobApp](x: Self) {
     
-    @scala.inline
-    def setApplicableDeviceType(value: IosDeviceType): Self = StObject.set(x, "applicableDeviceType", value.asInstanceOf[js.Any])
+    inline def setApplicableDeviceType(value: IosDeviceType): Self = StObject.set(x, "applicableDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicableDeviceTypeUndefined: Self = StObject.set(x, "applicableDeviceType", js.undefined)
+    inline def setApplicableDeviceTypeUndefined: Self = StObject.set(x, "applicableDeviceType", js.undefined)
     
-    @scala.inline
-    def setBuildNumber(value: NullableOption[String]): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
+    inline def setBuildNumber(value: NullableOption[String]): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildNumberNull: Self = StObject.set(x, "buildNumber", null)
+    inline def setBuildNumberNull: Self = StObject.set(x, "buildNumber", null)
     
-    @scala.inline
-    def setBuildNumberUndefined: Self = StObject.set(x, "buildNumber", js.undefined)
+    inline def setBuildNumberUndefined: Self = StObject.set(x, "buildNumber", js.undefined)
     
-    @scala.inline
-    def setBundleId(value: NullableOption[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: NullableOption[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIdNull: Self = StObject.set(x, "bundleId", null)
+    inline def setBundleIdNull: Self = StObject.set(x, "bundleId", null)
     
-    @scala.inline
-    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+    inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
-    @scala.inline
-    def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
+    inline def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
+    inline def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
     
-    @scala.inline
-    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
+    inline def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystem(value: NullableOption[IosMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
+    inline def setMinimumSupportedOperatingSystem(value: NullableOption[IosMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystemNull: Self = StObject.set(x, "minimumSupportedOperatingSystem", null)
+    inline def setMinimumSupportedOperatingSystemNull: Self = StObject.set(x, "minimumSupportedOperatingSystem", null)
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
+    inline def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
     
-    @scala.inline
-    def setVersionNumber(value: NullableOption[String]): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: NullableOption[String]): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberNull: Self = StObject.set(x, "versionNumber", null)
+    inline def setVersionNumberNull: Self = StObject.set(x, "versionNumber", null)
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
   }
 }

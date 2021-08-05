@@ -13,16 +13,13 @@ trait UpdatePortalResponse extends StObject {
 }
 object UpdatePortalResponse {
   
-  @scala.inline
-  def apply(portalStatus: PortalStatus): UpdatePortalResponse = {
+  inline def apply(portalStatus: PortalStatus): UpdatePortalResponse = {
     val __obj = js.Dynamic.literal(portalStatus = portalStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePortalResponse]
   }
   
-  @scala.inline
-  implicit class UpdatePortalResponseMutableBuilder[Self <: UpdatePortalResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePortalResponse](x: Self) {
     
-    @scala.inline
-    def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
+    inline def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
   }
 }

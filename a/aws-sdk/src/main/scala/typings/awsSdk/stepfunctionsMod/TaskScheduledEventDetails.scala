@@ -38,37 +38,27 @@ trait TaskScheduledEventDetails extends StObject {
 }
 object TaskScheduledEventDetails {
   
-  @scala.inline
-  def apply(parameters: ConnectorParameters, region: Name, resource: Name, resourceType: Name): TaskScheduledEventDetails = {
+  inline def apply(parameters: ConnectorParameters, region: Name, resource: Name, resourceType: Name): TaskScheduledEventDetails = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskScheduledEventDetails]
   }
   
-  @scala.inline
-  implicit class TaskScheduledEventDetailsMutableBuilder[Self <: TaskScheduledEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TaskScheduledEventDetails](x: Self) {
     
-    @scala.inline
-    def setHeartbeatInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "heartbeatInSeconds", value.asInstanceOf[js.Any])
+    inline def setHeartbeatInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "heartbeatInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartbeatInSecondsUndefined: Self = StObject.set(x, "heartbeatInSeconds", js.undefined)
+    inline def setHeartbeatInSecondsUndefined: Self = StObject.set(x, "heartbeatInSeconds", js.undefined)
     
-    @scala.inline
-    def setParameters(value: ConnectorParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ConnectorParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: Name): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Name): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: Name): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Name): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: Name): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: Name): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
+    inline def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
   }
 }

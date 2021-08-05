@@ -24,28 +24,21 @@ trait CellRangeAddress extends StObject {
 }
 object CellRangeAddress {
   
-  @scala.inline
-  def apply(EndColumn: Double, EndRow: Double, Sheet: Double, StartColumn: Double, StartRow: Double): CellRangeAddress = {
+  inline def apply(EndColumn: Double, EndRow: Double, Sheet: Double, StartColumn: Double, StartRow: Double): CellRangeAddress = {
     val __obj = js.Dynamic.literal(EndColumn = EndColumn.asInstanceOf[js.Any], EndRow = EndRow.asInstanceOf[js.Any], Sheet = Sheet.asInstanceOf[js.Any], StartColumn = StartColumn.asInstanceOf[js.Any], StartRow = StartRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellRangeAddress]
   }
   
-  @scala.inline
-  implicit class CellRangeAddressMutableBuilder[Self <: CellRangeAddress] (val x: Self) extends AnyVal {
+  extension [Self <: CellRangeAddress](x: Self) {
     
-    @scala.inline
-    def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
+    inline def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndRow(value: Double): Self = StObject.set(x, "EndRow", value.asInstanceOf[js.Any])
+    inline def setEndRow(value: Double): Self = StObject.set(x, "EndRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheet(value: Double): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: Double): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumn(value: Double): Self = StObject.set(x, "StartColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: Double): Self = StObject.set(x, "StartColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRow(value: Double): Self = StObject.set(x, "StartRow", value.asInstanceOf[js.Any])
+    inline def setStartRow(value: Double): Self = StObject.set(x, "StartRow", value.asInstanceOf[js.Any])
   }
 }

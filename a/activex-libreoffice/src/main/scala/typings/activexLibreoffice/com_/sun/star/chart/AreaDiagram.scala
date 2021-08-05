@@ -26,8 +26,7 @@ trait AreaDiagram
      with StackableDiagram
 object AreaDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     ConstantErrorHigh: Double,

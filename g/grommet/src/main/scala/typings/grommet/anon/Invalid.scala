@@ -12,25 +12,19 @@ trait Invalid extends StObject {
 }
 object Invalid {
   
-  @scala.inline
-  def apply(): Invalid = {
+  inline def apply(): Invalid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invalid]
   }
   
-  @scala.inline
-  implicit class InvalidMutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
+  extension [Self <: Invalid](x: Self) {
     
-    @scala.inline
-    def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+    inline def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+    inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
-    @scala.inline
-    def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

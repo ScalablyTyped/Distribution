@@ -9,10 +9,8 @@ object esmAreIntervalsOverlappingIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(intervalLeft: Interval, intervalRight: Interval): Boolean = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def apply(intervalLeft: Interval, intervalRight: Interval, options: Inclusive): Boolean = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(intervalLeft: Interval, intervalRight: Interval): Boolean = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(intervalLeft: Interval, intervalRight: Interval, options: Inclusive): Boolean = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("date-fns/esm/areIntervalsOverlapping/index", JSImport.Default)
     @js.native

@@ -12,16 +12,13 @@ trait PickImplnamespaceStub extends StObject {
 }
 object PickImplnamespaceStub {
   
-  @scala.inline
-  def apply(namespaceStub: NamespaceStubSettings): PickImplnamespaceStub = {
+  inline def apply(namespaceStub: NamespaceStubSettings): PickImplnamespaceStub = {
     val __obj = js.Dynamic.literal(namespaceStub = namespaceStub.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnamespaceStub]
   }
   
-  @scala.inline
-  implicit class PickImplnamespaceStubMutableBuilder[Self <: PickImplnamespaceStub] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnamespaceStub](x: Self) {
     
-    @scala.inline
-    def setNamespaceStub(value: NamespaceStubSettings): Self = StObject.set(x, "namespaceStub", value.asInstanceOf[js.Any])
+    inline def setNamespaceStub(value: NamespaceStubSettings): Self = StObject.set(x, "namespaceStub", value.asInstanceOf[js.Any])
   }
 }

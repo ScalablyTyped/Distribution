@@ -41,37 +41,27 @@ trait FloatingInkLoadOptions extends StObject {
 }
 object FloatingInkLoadOptions {
   
-  @scala.inline
-  def apply(): FloatingInkLoadOptions = {
+  inline def apply(): FloatingInkLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloatingInkLoadOptions]
   }
   
-  @scala.inline
-  implicit class FloatingInkLoadOptionsMutableBuilder[Self <: FloatingInkLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingInkLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInkStrokes(value: InkStrokeCollectionLoadOptions): Self = StObject.set(x, "inkStrokes", value.asInstanceOf[js.Any])
+    inline def setInkStrokes(value: InkStrokeCollectionLoadOptions): Self = StObject.set(x, "inkStrokes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInkStrokesUndefined: Self = StObject.set(x, "inkStrokes", js.undefined)
+    inline def setInkStrokesUndefined: Self = StObject.set(x, "inkStrokes", js.undefined)
     
-    @scala.inline
-    def setPageContent(value: PageContentLoadOptions): Self = StObject.set(x, "pageContent", value.asInstanceOf[js.Any])
+    inline def setPageContent(value: PageContentLoadOptions): Self = StObject.set(x, "pageContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageContentUndefined: Self = StObject.set(x, "pageContent", js.undefined)
+    inline def setPageContentUndefined: Self = StObject.set(x, "pageContent", js.undefined)
   }
 }

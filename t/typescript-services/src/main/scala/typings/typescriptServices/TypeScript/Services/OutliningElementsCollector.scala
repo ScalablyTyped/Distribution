@@ -102,14 +102,13 @@ trait OutliningElementsCollector
   
   /* private */ def addOutlineRange(node: js.Any, startElement: js.Any, endElement: js.Any): js.Any
   
-  var elements: js.Any
+  /* private */ var elements: js.Any
   
-  var inObjectLiteralExpression: js.Any
+  /* private */ var inObjectLiteralExpression: js.Any
 }
 object OutliningElementsCollector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _depth: js.Any,
     _maximumDepth: js.Any,
     _position: js.Any,
@@ -216,16 +215,12 @@ object OutliningElementsCollector {
     __obj.asInstanceOf[OutliningElementsCollector]
   }
   
-  @scala.inline
-  implicit class OutliningElementsCollectorMutableBuilder[Self <: OutliningElementsCollector] (val x: Self) extends AnyVal {
+  extension [Self <: OutliningElementsCollector](x: Self) {
     
-    @scala.inline
-    def setAddOutlineRange(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addOutlineRange", js.Any.fromFunction3(value))
+    inline def setAddOutlineRange(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addOutlineRange", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setElements(value: js.Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInObjectLiteralExpression(value: js.Any): Self = StObject.set(x, "inObjectLiteralExpression", value.asInstanceOf[js.Any])
+    inline def setInObjectLiteralExpression(value: js.Any): Self = StObject.set(x, "inObjectLiteralExpression", value.asInstanceOf[js.Any])
   }
 }

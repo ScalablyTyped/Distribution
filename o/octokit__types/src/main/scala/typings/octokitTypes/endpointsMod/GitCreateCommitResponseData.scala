@@ -29,8 +29,7 @@ trait GitCreateCommitResponseData extends StObject {
 }
 object GitCreateCommitResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: Date,
     committer: Date,
     message: String,
@@ -45,37 +44,26 @@ object GitCreateCommitResponseData {
     __obj.asInstanceOf[GitCreateCommitResponseData]
   }
   
-  @scala.inline
-  implicit class GitCreateCommitResponseDataMutableBuilder[Self <: GitCreateCommitResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: GitCreateCommitResponseData](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Date): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Date): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitter(value: Date): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: Date): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParents(value: js.Array[Sha]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+    inline def setParents(value: js.Array[Sha]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentsVarargs(value: Sha*): Self = StObject.set(x, "parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: Sha*): Self = StObject.set(x, "parents", js.Array(value :_*))
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree(value: Sha): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: Sha): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
   }
 }

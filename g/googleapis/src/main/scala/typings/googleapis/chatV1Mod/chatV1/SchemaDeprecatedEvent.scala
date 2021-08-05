@@ -67,67 +67,47 @@ trait SchemaDeprecatedEvent extends StObject {
 }
 object SchemaDeprecatedEvent {
   
-  @scala.inline
-  def apply(): SchemaDeprecatedEvent = {
+  inline def apply(): SchemaDeprecatedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeprecatedEvent]
   }
   
-  @scala.inline
-  implicit class SchemaDeprecatedEventMutableBuilder[Self <: SchemaDeprecatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeprecatedEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: SchemaFormAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: SchemaFormAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setConfigCompleteRedirectUrl(value: String): Self = StObject.set(x, "configCompleteRedirectUrl", value.asInstanceOf[js.Any])
+    inline def setConfigCompleteRedirectUrl(value: String): Self = StObject.set(x, "configCompleteRedirectUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigCompleteRedirectUrlUndefined: Self = StObject.set(x, "configCompleteRedirectUrl", js.undefined)
+    inline def setConfigCompleteRedirectUrlUndefined: Self = StObject.set(x, "configCompleteRedirectUrl", js.undefined)
     
-    @scala.inline
-    def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
+    inline def setEventTimeUndefined: Self = StObject.set(x, "eventTime", js.undefined)
     
-    @scala.inline
-    def setMessage(value: SchemaMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: SchemaMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSpace(value: SchemaSpace): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: SchemaSpace): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
-    @scala.inline
-    def setThreadKey(value: String): Self = StObject.set(x, "threadKey", value.asInstanceOf[js.Any])
+    inline def setThreadKey(value: String): Self = StObject.set(x, "threadKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadKeyUndefined: Self = StObject.set(x, "threadKey", js.undefined)
+    inline def setThreadKeyUndefined: Self = StObject.set(x, "threadKey", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

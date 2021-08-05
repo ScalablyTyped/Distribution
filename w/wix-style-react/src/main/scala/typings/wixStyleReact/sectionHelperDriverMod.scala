@@ -39,8 +39,7 @@ object sectionHelperDriverMod {
   }
   object SectionHelperDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actionText: () => String,
       clickAction: () => Unit,
       clickClose: () => Unit,
@@ -60,47 +59,33 @@ object sectionHelperDriverMod {
       __obj.asInstanceOf[SectionHelperDriver]
     }
     
-    @scala.inline
-    implicit class SectionHelperDriverMutableBuilder[Self <: SectionHelperDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SectionHelperDriver](x: Self) {
       
-      @scala.inline
-      def setActionText(value: () => String): Self = StObject.set(x, "actionText", js.Any.fromFunction0(value))
+      inline def setActionText(value: () => String): Self = StObject.set(x, "actionText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickAction(value: () => Unit): Self = StObject.set(x, "clickAction", js.Any.fromFunction0(value))
+      inline def setClickAction(value: () => Unit): Self = StObject.set(x, "clickAction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickClose(value: () => Unit): Self = StObject.set(x, "clickClose", js.Any.fromFunction0(value))
+      inline def setClickClose(value: () => Unit): Self = StObject.set(x, "clickClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCloseButtonDisplayed(value: () => Boolean): Self = StObject.set(x, "isCloseButtonDisplayed", js.Any.fromFunction0(value))
+      inline def setIsCloseButtonDisplayed(value: () => Boolean): Self = StObject.set(x, "isCloseButtonDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDanger(value: () => Boolean): Self = StObject.set(x, "isDanger", js.Any.fromFunction0(value))
+      inline def setIsDanger(value: () => Boolean): Self = StObject.set(x, "isDanger", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsExperimentalDark(value: () => Boolean): Self = StObject.set(x, "isExperimentalDark", js.Any.fromFunction0(value))
+      inline def setIsExperimentalDark(value: () => Boolean): Self = StObject.set(x, "isExperimentalDark", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPremium(value: () => Boolean): Self = StObject.set(x, "isPremium", js.Any.fromFunction0(value))
+      inline def setIsPremium(value: () => Boolean): Self = StObject.set(x, "isPremium", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPreview(value: () => Boolean): Self = StObject.set(x, "isPreview", js.Any.fromFunction0(value))
+      inline def setIsPreview(value: () => Boolean): Self = StObject.set(x, "isPreview", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsStandard(value: () => Boolean): Self = StObject.set(x, "isStandard", js.Any.fromFunction0(value))
+      inline def setIsStandard(value: () => Boolean): Self = StObject.set(x, "isStandard", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuccess(value: () => Boolean): Self = StObject.set(x, "isSuccess", js.Any.fromFunction0(value))
+      inline def setIsSuccess(value: () => Boolean): Self = StObject.set(x, "isSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsWarning(value: () => Boolean): Self = StObject.set(x, "isWarning", js.Any.fromFunction0(value))
+      inline def setIsWarning(value: () => Boolean): Self = StObject.set(x, "isWarning", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTextContent(value: () => String): Self = StObject.set(x, "textContent", js.Any.fromFunction0(value))
+      inline def setTextContent(value: () => String): Self = StObject.set(x, "textContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitleText(value: () => String): Self = StObject.set(x, "titleText", js.Any.fromFunction0(value))
+      inline def setTitleText(value: () => String): Self = StObject.set(x, "titleText", js.Any.fromFunction0(value))
     }
   }
 }

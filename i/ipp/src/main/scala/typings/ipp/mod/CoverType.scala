@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoverType extends StObject
 object CoverType {
   
-  @scala.inline
-  def `no-cover`: typings.ipp.ippStrings.`no-cover` = "no-cover".asInstanceOf[typings.ipp.ippStrings.`no-cover`]
+  inline def `no-cover`: typings.ipp.ippStrings.`no-cover` = "no-cover".asInstanceOf[typings.ipp.ippStrings.`no-cover`]
   
-  @scala.inline
-  def `print-back`: typings.ipp.ippStrings.`print-back` = "print-back".asInstanceOf[typings.ipp.ippStrings.`print-back`]
+  inline def `print-back`: typings.ipp.ippStrings.`print-back` = "print-back".asInstanceOf[typings.ipp.ippStrings.`print-back`]
   
-  @scala.inline
-  def `print-both`: typings.ipp.ippStrings.`print-both` = "print-both".asInstanceOf[typings.ipp.ippStrings.`print-both`]
+  inline def `print-both`: typings.ipp.ippStrings.`print-both` = "print-both".asInstanceOf[typings.ipp.ippStrings.`print-both`]
   
-  @scala.inline
-  def `print-front`: typings.ipp.ippStrings.`print-front` = "print-front".asInstanceOf[typings.ipp.ippStrings.`print-front`]
+  inline def `print-front`: typings.ipp.ippStrings.`print-front` = "print-front".asInstanceOf[typings.ipp.ippStrings.`print-front`]
   
-  @scala.inline
-  def `print-none`: typings.ipp.ippStrings.`print-none` = "print-none".asInstanceOf[typings.ipp.ippStrings.`print-none`]
+  inline def `print-none`: typings.ipp.ippStrings.`print-none` = "print-none".asInstanceOf[typings.ipp.ippStrings.`print-none`]
 }

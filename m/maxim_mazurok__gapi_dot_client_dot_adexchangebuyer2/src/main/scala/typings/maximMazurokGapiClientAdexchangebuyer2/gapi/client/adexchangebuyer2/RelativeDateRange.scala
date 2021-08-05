@@ -14,25 +14,19 @@ trait RelativeDateRange extends StObject {
 }
 object RelativeDateRange {
   
-  @scala.inline
-  def apply(): RelativeDateRange = {
+  inline def apply(): RelativeDateRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelativeDateRange]
   }
   
-  @scala.inline
-  implicit class RelativeDateRangeMutableBuilder[Self <: RelativeDateRange] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeDateRange](x: Self) {
     
-    @scala.inline
-    def setDurationDays(value: Double): Self = StObject.set(x, "durationDays", value.asInstanceOf[js.Any])
+    inline def setDurationDays(value: Double): Self = StObject.set(x, "durationDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationDaysUndefined: Self = StObject.set(x, "durationDays", js.undefined)
+    inline def setDurationDaysUndefined: Self = StObject.set(x, "durationDays", js.undefined)
     
-    @scala.inline
-    def setOffsetDays(value: Double): Self = StObject.set(x, "offsetDays", value.asInstanceOf[js.Any])
+    inline def setOffsetDays(value: Double): Self = StObject.set(x, "offsetDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetDaysUndefined: Self = StObject.set(x, "offsetDays", js.undefined)
+    inline def setOffsetDaysUndefined: Self = StObject.set(x, "offsetDays", js.undefined)
   }
 }

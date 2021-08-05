@@ -16,20 +16,16 @@ trait IPaymentIntentNextActionUseStripeSdk extends StObject {
 }
 object IPaymentIntentNextActionUseStripeSdk {
   
-  @scala.inline
-  def apply(use_stripe_sdk: js.Any): IPaymentIntentNextActionUseStripeSdk = {
+  inline def apply(use_stripe_sdk: js.Any): IPaymentIntentNextActionUseStripeSdk = {
     val __obj = js.Dynamic.literal(use_stripe_sdk = use_stripe_sdk.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("use_stripe_sdk")
     __obj.asInstanceOf[IPaymentIntentNextActionUseStripeSdk]
   }
   
-  @scala.inline
-  implicit class IPaymentIntentNextActionUseStripeSdkMutableBuilder[Self <: IPaymentIntentNextActionUseStripeSdk] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentIntentNextActionUseStripeSdk](x: Self) {
     
-    @scala.inline
-    def setType(value: use_stripe_sdk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: use_stripe_sdk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_stripe_sdk(value: js.Any): Self = StObject.set(x, "use_stripe_sdk", value.asInstanceOf[js.Any])
+    inline def setUse_stripe_sdk(value: js.Any): Self = StObject.set(x, "use_stripe_sdk", value.asInstanceOf[js.Any])
   }
 }

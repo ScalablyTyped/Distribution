@@ -81,74 +81,52 @@ object peerConnectionDelegateMod {
   }
   object PeerConnectionDelegate {
     
-    @scala.inline
-    def apply(): PeerConnectionDelegate = {
+    inline def apply(): PeerConnectionDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PeerConnectionDelegate]
     }
     
-    @scala.inline
-    implicit class PeerConnectionDelegateMutableBuilder[Self <: PeerConnectionDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: PeerConnectionDelegate](x: Self) {
       
-      @scala.inline
-      def setOnconnectionstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "onconnectionstatechange", js.Any.fromFunction1(value))
+      inline def setOnconnectionstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "onconnectionstatechange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnconnectionstatechangeUndefined: Self = StObject.set(x, "onconnectionstatechange", js.undefined)
+      inline def setOnconnectionstatechangeUndefined: Self = StObject.set(x, "onconnectionstatechange", js.undefined)
       
-      @scala.inline
-      def setOndatachannel(value: /* event */ RTCDataChannelEvent => Unit): Self = StObject.set(x, "ondatachannel", js.Any.fromFunction1(value))
+      inline def setOndatachannel(value: /* event */ RTCDataChannelEvent => Unit): Self = StObject.set(x, "ondatachannel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOndatachannelUndefined: Self = StObject.set(x, "ondatachannel", js.undefined)
+      inline def setOndatachannelUndefined: Self = StObject.set(x, "ondatachannel", js.undefined)
       
-      @scala.inline
-      def setOnicecandidate(value: /* event */ RTCPeerConnectionIceEvent => Unit): Self = StObject.set(x, "onicecandidate", js.Any.fromFunction1(value))
+      inline def setOnicecandidate(value: /* event */ RTCPeerConnectionIceEvent => Unit): Self = StObject.set(x, "onicecandidate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnicecandidateUndefined: Self = StObject.set(x, "onicecandidate", js.undefined)
+      inline def setOnicecandidateUndefined: Self = StObject.set(x, "onicecandidate", js.undefined)
       
-      @scala.inline
-      def setOnicecandidateerror(value: /* event */ RTCPeerConnectionIceErrorEvent => Unit): Self = StObject.set(x, "onicecandidateerror", js.Any.fromFunction1(value))
+      inline def setOnicecandidateerror(value: /* event */ RTCPeerConnectionIceErrorEvent => Unit): Self = StObject.set(x, "onicecandidateerror", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnicecandidateerrorUndefined: Self = StObject.set(x, "onicecandidateerror", js.undefined)
+      inline def setOnicecandidateerrorUndefined: Self = StObject.set(x, "onicecandidateerror", js.undefined)
       
-      @scala.inline
-      def setOniceconnectionstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "oniceconnectionstatechange", js.Any.fromFunction1(value))
+      inline def setOniceconnectionstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "oniceconnectionstatechange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOniceconnectionstatechangeUndefined: Self = StObject.set(x, "oniceconnectionstatechange", js.undefined)
+      inline def setOniceconnectionstatechangeUndefined: Self = StObject.set(x, "oniceconnectionstatechange", js.undefined)
       
-      @scala.inline
-      def setOnicegatheringstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "onicegatheringstatechange", js.Any.fromFunction1(value))
+      inline def setOnicegatheringstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "onicegatheringstatechange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnicegatheringstatechangeUndefined: Self = StObject.set(x, "onicegatheringstatechange", js.undefined)
+      inline def setOnicegatheringstatechangeUndefined: Self = StObject.set(x, "onicegatheringstatechange", js.undefined)
       
-      @scala.inline
-      def setOnnegotiationneeded(value: /* event */ Event => Unit): Self = StObject.set(x, "onnegotiationneeded", js.Any.fromFunction1(value))
+      inline def setOnnegotiationneeded(value: /* event */ Event => Unit): Self = StObject.set(x, "onnegotiationneeded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnnegotiationneededUndefined: Self = StObject.set(x, "onnegotiationneeded", js.undefined)
+      inline def setOnnegotiationneededUndefined: Self = StObject.set(x, "onnegotiationneeded", js.undefined)
       
-      @scala.inline
-      def setOnsignalingstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "onsignalingstatechange", js.Any.fromFunction1(value))
+      inline def setOnsignalingstatechange(value: /* event */ Event => Unit): Self = StObject.set(x, "onsignalingstatechange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnsignalingstatechangeUndefined: Self = StObject.set(x, "onsignalingstatechange", js.undefined)
+      inline def setOnsignalingstatechangeUndefined: Self = StObject.set(x, "onsignalingstatechange", js.undefined)
       
-      @scala.inline
-      def setOnstatsended(value: /* event */ Event => Unit): Self = StObject.set(x, "onstatsended", js.Any.fromFunction1(value))
+      inline def setOnstatsended(value: /* event */ Event => Unit): Self = StObject.set(x, "onstatsended", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnstatsendedUndefined: Self = StObject.set(x, "onstatsended", js.undefined)
+      inline def setOnstatsendedUndefined: Self = StObject.set(x, "onstatsended", js.undefined)
       
-      @scala.inline
-      def setOntrack(value: /* event */ Event => Unit): Self = StObject.set(x, "ontrack", js.Any.fromFunction1(value))
+      inline def setOntrack(value: /* event */ Event => Unit): Self = StObject.set(x, "ontrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOntrackUndefined: Self = StObject.set(x, "ontrack", js.undefined)
+      inline def setOntrackUndefined: Self = StObject.set(x, "ontrack", js.undefined)
     }
   }
 }

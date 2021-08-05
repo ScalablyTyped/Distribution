@@ -18,22 +18,17 @@ trait WorkflowExecutionCanceledEventAttributes extends StObject {
 }
 object WorkflowExecutionCanceledEventAttributes {
   
-  @scala.inline
-  def apply(decisionTaskCompletedEventId: EventId): WorkflowExecutionCanceledEventAttributes = {
+  inline def apply(decisionTaskCompletedEventId: EventId): WorkflowExecutionCanceledEventAttributes = {
     val __obj = js.Dynamic.literal(decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionCanceledEventAttributes]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionCanceledEventAttributesMutableBuilder[Self <: WorkflowExecutionCanceledEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionCanceledEventAttributes](x: Self) {
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
   }
 }

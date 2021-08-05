@@ -20,49 +20,35 @@ trait CopyBuffer extends StObject {
 }
 object CopyBuffer {
   
-  @scala.inline
-  def apply(): CopyBuffer = {
+  inline def apply(): CopyBuffer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyBuffer]
   }
   
-  @scala.inline
-  implicit class CopyBufferMutableBuilder[Self <: CopyBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: CopyBuffer](x: Self) {
     
-    @scala.inline
-    def setCopyBuffer(value: Boolean): Self = StObject.set(x, "copyBuffer", value.asInstanceOf[js.Any])
+    inline def setCopyBuffer(value: Boolean): Self = StObject.set(x, "copyBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyBufferUndefined: Self = StObject.set(x, "copyBuffer", js.undefined)
+    inline def setCopyBufferUndefined: Self = StObject.set(x, "copyBuffer", js.undefined)
     
-    @scala.inline
-    def setMap(value: js.Function): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Function): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setSet(value: js.Function): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: js.Function): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
-    @scala.inline
-    def setUseBigIntAsLong(value: Boolean): Self = StObject.set(x, "useBigIntAsLong", value.asInstanceOf[js.Any])
+    inline def setUseBigIntAsLong(value: Boolean): Self = StObject.set(x, "useBigIntAsLong", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBigIntAsLongUndefined: Self = StObject.set(x, "useBigIntAsLong", js.undefined)
+    inline def setUseBigIntAsLongUndefined: Self = StObject.set(x, "useBigIntAsLong", js.undefined)
     
-    @scala.inline
-    def setUseBigIntAsVarint(value: Boolean): Self = StObject.set(x, "useBigIntAsVarint", value.asInstanceOf[js.Any])
+    inline def setUseBigIntAsVarint(value: Boolean): Self = StObject.set(x, "useBigIntAsVarint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBigIntAsVarintUndefined: Self = StObject.set(x, "useBigIntAsVarint", js.undefined)
+    inline def setUseBigIntAsVarintUndefined: Self = StObject.set(x, "useBigIntAsVarint", js.undefined)
     
-    @scala.inline
-    def setUseUndefinedAsUnset(value: Boolean): Self = StObject.set(x, "useUndefinedAsUnset", value.asInstanceOf[js.Any])
+    inline def setUseUndefinedAsUnset(value: Boolean): Self = StObject.set(x, "useUndefinedAsUnset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUndefinedAsUnsetUndefined: Self = StObject.set(x, "useUndefinedAsUnset", js.undefined)
+    inline def setUseUndefinedAsUnsetUndefined: Self = StObject.set(x, "useUndefinedAsUnset", js.undefined)
   }
 }

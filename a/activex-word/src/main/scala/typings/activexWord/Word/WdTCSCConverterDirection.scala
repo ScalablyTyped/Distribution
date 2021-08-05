@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdTCSCConverterDirection extends StObject
 object WdTCSCConverterDirection {
   
-  @scala.inline
-  def wdTCSCConverterDirectionAuto: `2` = 2.asInstanceOf[`2`]
+  inline def wdTCSCConverterDirectionAuto: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdTCSCConverterDirectionSCTC: `0` = 0.asInstanceOf[`0`]
+  inline def wdTCSCConverterDirectionSCTC: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdTCSCConverterDirectionTCSC: `1` = 1.asInstanceOf[`1`]
+  inline def wdTCSCConverterDirectionTCSC: `1` = 1.asInstanceOf[`1`]
 }

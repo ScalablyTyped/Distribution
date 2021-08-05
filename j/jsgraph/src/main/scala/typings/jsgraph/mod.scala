@@ -38,8 +38,7 @@ object mod extends Shortcut {
   }
   object Directed {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       breadthFirstTraverse: TraversalParams => TraversalResult,
       colors: colors,
       create: () => Result,
@@ -52,29 +51,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Directed]
     }
     
-    @scala.inline
-    implicit class DirectedMutableBuilder[Self <: Directed] (val x: Self) extends AnyVal {
+    extension [Self <: Directed](x: Self) {
       
-      @scala.inline
-      def setBreadthFirstTraverse(value: TraversalParams => TraversalResult): Self = StObject.set(x, "breadthFirstTraverse", js.Any.fromFunction1(value))
+      inline def setBreadthFirstTraverse(value: TraversalParams => TraversalResult): Self = StObject.set(x, "breadthFirstTraverse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColors(value: colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreate(value: () => Result): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+      inline def setCreate(value: () => Result): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateTraversalContext(value: Dirgaph => TraversalContext): Self = StObject.set(x, "createTraversalContext", js.Any.fromFunction1(value))
+      inline def setCreateTraversalContext(value: Dirgaph => TraversalContext): Self = StObject.set(x, "createTraversalContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDepthFirstTraverse(value: TraversalParams => TraversalResult): Self = StObject.set(x, "depthFirstTraverse", js.Any.fromFunction1(value))
+      inline def setDepthFirstTraverse(value: TraversalParams => TraversalResult): Self = StObject.set(x, "depthFirstTraverse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDirectedGraph(value: DirectedGraph): Self = StObject.set(x, "directedGraph", value.asInstanceOf[js.Any])
+      inline def setDirectedGraph(value: DirectedGraph): Self = StObject.set(x, "directedGraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranspose(value: DirectedGraph => Error): Self = StObject.set(x, "transpose", js.Any.fromFunction1(value))
+      inline def setTranspose(value: DirectedGraph => Error): Self = StObject.set(x, "transpose", js.Any.fromFunction1(value))
     }
   }
   
@@ -161,20 +152,16 @@ object mod extends Shortcut {
   }
   object Edge {
     
-    @scala.inline
-    def apply(u: String, v: String): Edge = {
+    inline def apply(u: String, v: String): Edge = {
       val __obj = js.Dynamic.literal(u = u.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[Edge]
     }
     
-    @scala.inline
-    implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+    extension [Self <: Edge](x: Self) {
       
-      @scala.inline
-      def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+      inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,20 +173,16 @@ object mod extends Shortcut {
   }
   object EdgeRequest {
     
-    @scala.inline
-    def apply(e: Edge, p: js.Any): EdgeRequest = {
+    inline def apply(e: Edge, p: js.Any): EdgeRequest = {
       val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdgeRequest]
     }
     
-    @scala.inline
-    implicit class EdgeRequestMutableBuilder[Self <: EdgeRequest] (val x: Self) extends AnyVal {
+    extension [Self <: EdgeRequest](x: Self) {
       
-      @scala.inline
-      def setE(value: Edge): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Edge): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,26 +194,20 @@ object mod extends Shortcut {
   }
   object JsGraphResponse {
     
-    @scala.inline
-    def apply(): JsGraphResponse = {
+    inline def apply(): JsGraphResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsGraphResponse]
     }
     
-    @scala.inline
-    implicit class JsGraphResponseMutableBuilder[Self <: JsGraphResponse] (val x: Self) extends AnyVal {
+    extension [Self <: JsGraphResponse](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
   }
   
@@ -244,23 +221,18 @@ object mod extends Shortcut {
   }
   object TraversalContext {
     
-    @scala.inline
-    def apply(colorMap: js.Any, searchStatus: String, undiscoveredMap: js.Any): TraversalContext = {
+    inline def apply(colorMap: js.Any, searchStatus: String, undiscoveredMap: js.Any): TraversalContext = {
       val __obj = js.Dynamic.literal(colorMap = colorMap.asInstanceOf[js.Any], searchStatus = searchStatus.asInstanceOf[js.Any], undiscoveredMap = undiscoveredMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[TraversalContext]
     }
     
-    @scala.inline
-    implicit class TraversalContextMutableBuilder[Self <: TraversalContext] (val x: Self) extends AnyVal {
+    extension [Self <: TraversalContext](x: Self) {
       
-      @scala.inline
-      def setColorMap(value: js.Any): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
+      inline def setColorMap(value: js.Any): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchStatus(value: String): Self = StObject.set(x, "searchStatus", value.asInstanceOf[js.Any])
+      inline def setSearchStatus(value: String): Self = StObject.set(x, "searchStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndiscoveredMap(value: js.Any): Self = StObject.set(x, "undiscoveredMap", value.asInstanceOf[js.Any])
+      inline def setUndiscoveredMap(value: js.Any): Self = StObject.set(x, "undiscoveredMap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -276,8 +248,7 @@ object mod extends Shortcut {
   }
   object TraversalOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowEmptyStartVector: Boolean,
       signalStart: Boolean,
       startVector: String | js.Array[String],
@@ -287,23 +258,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TraversalOptions]
     }
     
-    @scala.inline
-    implicit class TraversalOptionsMutableBuilder[Self <: TraversalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TraversalOptions](x: Self) {
       
-      @scala.inline
-      def setAllowEmptyStartVector(value: Boolean): Self = StObject.set(x, "allowEmptyStartVector", value.asInstanceOf[js.Any])
+      inline def setAllowEmptyStartVector(value: Boolean): Self = StObject.set(x, "allowEmptyStartVector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalStart(value: Boolean): Self = StObject.set(x, "signalStart", value.asInstanceOf[js.Any])
+      inline def setSignalStart(value: Boolean): Self = StObject.set(x, "signalStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartVector(value: String | js.Array[String]): Self = StObject.set(x, "startVector", value.asInstanceOf[js.Any])
+      inline def setStartVector(value: String | js.Array[String]): Self = StObject.set(x, "startVector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartVectorVarargs(value: String*): Self = StObject.set(x, "startVector", js.Array(value :_*))
+      inline def setStartVectorVarargs(value: String*): Self = StObject.set(x, "startVector", js.Array(value :_*))
       
-      @scala.inline
-      def setTraverseContext(value: TraversalContext): Self = StObject.set(x, "traverseContext", value.asInstanceOf[js.Any])
+      inline def setTraverseContext(value: TraversalContext): Self = StObject.set(x, "traverseContext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,26 +282,20 @@ object mod extends Shortcut {
   }
   object TraversalParams {
     
-    @scala.inline
-    def apply(digraph: DirectedGraph, visitor: Visitor): TraversalParams = {
+    inline def apply(digraph: DirectedGraph, visitor: Visitor): TraversalParams = {
       val __obj = js.Dynamic.literal(digraph = digraph.asInstanceOf[js.Any], visitor = visitor.asInstanceOf[js.Any])
       __obj.asInstanceOf[TraversalParams]
     }
     
-    @scala.inline
-    implicit class TraversalParamsMutableBuilder[Self <: TraversalParams] (val x: Self) extends AnyVal {
+    extension [Self <: TraversalParams](x: Self) {
       
-      @scala.inline
-      def setDigraph(value: DirectedGraph): Self = StObject.set(x, "digraph", value.asInstanceOf[js.Any])
+      inline def setDigraph(value: DirectedGraph): Self = StObject.set(x, "digraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: TraversalOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: TraversalOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setVisitor(value: Visitor): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
+      inline def setVisitor(value: Visitor): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -348,26 +307,20 @@ object mod extends Shortcut {
   }
   object TraversalResult {
     
-    @scala.inline
-    def apply(): TraversalResult = {
+    inline def apply(): TraversalResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TraversalResult]
     }
     
-    @scala.inline
-    implicit class TraversalResultMutableBuilder[Self <: TraversalResult] (val x: Self) extends AnyVal {
+    extension [Self <: TraversalResult](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setResult(value: TraversalContext): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: TraversalContext): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
   }
   
@@ -379,20 +332,16 @@ object mod extends Shortcut {
   }
   object VertexRequest {
     
-    @scala.inline
-    def apply(p: js.Any, u: String): VertexRequest = {
+    inline def apply(p: js.Any, u: String): VertexRequest = {
       val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
       __obj.asInstanceOf[VertexRequest]
     }
     
-    @scala.inline
-    implicit class VertexRequestMutableBuilder[Self <: VertexRequest] (val x: Self) extends AnyVal {
+    extension [Self <: VertexRequest](x: Self) {
       
-      @scala.inline
-      def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+      inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     }
   }
   
@@ -418,8 +367,7 @@ object mod extends Shortcut {
   }
   object Visitor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blackTarget: E => Unit,
       discoverVertex: G => Unit,
       examineEdge: E => Unit,
@@ -434,35 +382,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Visitor]
     }
     
-    @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
+    extension [Self <: Visitor](x: Self) {
       
-      @scala.inline
-      def setBlackTarget(value: E => Unit): Self = StObject.set(x, "blackTarget", js.Any.fromFunction1(value))
+      inline def setBlackTarget(value: E => Unit): Self = StObject.set(x, "blackTarget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDiscoverVertex(value: G => Unit): Self = StObject.set(x, "discoverVertex", js.Any.fromFunction1(value))
+      inline def setDiscoverVertex(value: G => Unit): Self = StObject.set(x, "discoverVertex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExamineEdge(value: E => Unit): Self = StObject.set(x, "examineEdge", js.Any.fromFunction1(value))
+      inline def setExamineEdge(value: E => Unit): Self = StObject.set(x, "examineEdge", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExamineVertex(value: G => Unit): Self = StObject.set(x, "examineVertex", js.Any.fromFunction1(value))
+      inline def setExamineVertex(value: G => Unit): Self = StObject.set(x, "examineVertex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFinishVertex(value: G => Unit): Self = StObject.set(x, "finishVertex", js.Any.fromFunction1(value))
+      inline def setFinishVertex(value: G => Unit): Self = StObject.set(x, "finishVertex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGrayTarget(value: E => Unit): Self = StObject.set(x, "grayTarget", js.Any.fromFunction1(value))
+      inline def setGrayTarget(value: E => Unit): Self = StObject.set(x, "grayTarget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitializeVertex(value: G => Unit): Self = StObject.set(x, "initializeVertex", js.Any.fromFunction1(value))
+      inline def setInitializeVertex(value: G => Unit): Self = StObject.set(x, "initializeVertex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNonTreeEdge(value: E => Unit): Self = StObject.set(x, "nonTreeEdge", js.Any.fromFunction1(value))
+      inline def setNonTreeEdge(value: E => Unit): Self = StObject.set(x, "nonTreeEdge", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartVertex(value: G => Unit): Self = StObject.set(x, "startVertex", js.Any.fromFunction1(value))
+      inline def setStartVertex(value: G => Unit): Self = StObject.set(x, "startVertex", js.Any.fromFunction1(value))
     }
   }
   
@@ -481,23 +419,18 @@ object mod extends Shortcut {
   }
   object colors {
     
-    @scala.inline
-    def apply(): colors = {
+    inline def apply(): colors = {
       val __obj = js.Dynamic.literal(black = 2, gray = 1, white = 0)
       __obj.asInstanceOf[colors]
     }
     
-    @scala.inline
-    implicit class colorsMutableBuilder[Self <: colors] (val x: Self) extends AnyVal {
+    extension [Self <: colors](x: Self) {
       
-      @scala.inline
-      def setBlack(value: `2`): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      inline def setBlack(value: `2`): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGray(value: `1`): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
+      inline def setGray(value: `1`): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhite(value: `0`): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: `0`): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
     }
   }
   
@@ -507,17 +440,14 @@ object mod extends Shortcut {
   }
   object jsGraphStatic {
     
-    @scala.inline
-    def apply(directed: Directed): jsGraphStatic = {
+    inline def apply(directed: Directed): jsGraphStatic = {
       val __obj = js.Dynamic.literal(directed = directed.asInstanceOf[js.Any])
       __obj.asInstanceOf[jsGraphStatic]
     }
     
-    @scala.inline
-    implicit class jsGraphStaticMutableBuilder[Self <: jsGraphStatic] (val x: Self) extends AnyVal {
+    extension [Self <: jsGraphStatic](x: Self) {
       
-      @scala.inline
-      def setDirected(value: Directed): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+      inline def setDirected(value: Directed): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     }
   }
 }

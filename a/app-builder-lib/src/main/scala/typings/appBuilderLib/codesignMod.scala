@@ -11,6 +11,5 @@ object codesignMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def downloadCertificate(urlOrBase64: String, tmpDir: TmpDir, currentDir: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadCertificate")(urlOrBase64.asInstanceOf[js.Any], tmpDir.asInstanceOf[js.Any], currentDir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def downloadCertificate(urlOrBase64: String, tmpDir: TmpDir, currentDir: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadCertificate")(urlOrBase64.asInstanceOf[js.Any], tmpDir.asInstanceOf[js.Any], currentDir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

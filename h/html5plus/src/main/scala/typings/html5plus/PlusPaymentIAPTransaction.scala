@@ -51,43 +51,31 @@ trait PlusPaymentIAPTransaction extends StObject {
 }
 object PlusPaymentIAPTransaction {
   
-  @scala.inline
-  def apply(): PlusPaymentIAPTransaction = {
+  inline def apply(): PlusPaymentIAPTransaction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusPaymentIAPTransaction]
   }
   
-  @scala.inline
-  implicit class PlusPaymentIAPTransactionMutableBuilder[Self <: PlusPaymentIAPTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: PlusPaymentIAPTransaction](x: Self) {
     
-    @scala.inline
-    def setPayment(value: String): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
+    inline def setPayment(value: String): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentUndefined: Self = StObject.set(x, "payment", js.undefined)
+    inline def setPaymentUndefined: Self = StObject.set(x, "payment", js.undefined)
     
-    @scala.inline
-    def setTransactionDate(value: String): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
+    inline def setTransactionDate(value: String): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionDateUndefined: Self = StObject.set(x, "transactionDate", js.undefined)
+    inline def setTransactionDateUndefined: Self = StObject.set(x, "transactionDate", js.undefined)
     
-    @scala.inline
-    def setTransactionIdentifier(value: String): Self = StObject.set(x, "transactionIdentifier", value.asInstanceOf[js.Any])
+    inline def setTransactionIdentifier(value: String): Self = StObject.set(x, "transactionIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdentifierUndefined: Self = StObject.set(x, "transactionIdentifier", js.undefined)
+    inline def setTransactionIdentifierUndefined: Self = StObject.set(x, "transactionIdentifier", js.undefined)
     
-    @scala.inline
-    def setTransactionReceipt(value: String): Self = StObject.set(x, "transactionReceipt", value.asInstanceOf[js.Any])
+    inline def setTransactionReceipt(value: String): Self = StObject.set(x, "transactionReceipt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionReceiptUndefined: Self = StObject.set(x, "transactionReceipt", js.undefined)
+    inline def setTransactionReceiptUndefined: Self = StObject.set(x, "transactionReceipt", js.undefined)
     
-    @scala.inline
-    def setTransactionState(value: String): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
+    inline def setTransactionState(value: String): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionStateUndefined: Self = StObject.set(x, "transactionState", js.undefined)
+    inline def setTransactionStateUndefined: Self = StObject.set(x, "transactionState", js.undefined)
   }
 }

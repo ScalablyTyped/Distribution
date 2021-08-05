@@ -18,25 +18,19 @@ trait AwsIamAccessKeySessionContext extends StObject {
 }
 object AwsIamAccessKeySessionContext {
   
-  @scala.inline
-  def apply(): AwsIamAccessKeySessionContext = {
+  inline def apply(): AwsIamAccessKeySessionContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsIamAccessKeySessionContext]
   }
   
-  @scala.inline
-  implicit class AwsIamAccessKeySessionContextMutableBuilder[Self <: AwsIamAccessKeySessionContext] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIamAccessKeySessionContext](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AwsIamAccessKeySessionContextAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AwsIamAccessKeySessionContextAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setSessionIssuer(value: AwsIamAccessKeySessionContextSessionIssuer): Self = StObject.set(x, "SessionIssuer", value.asInstanceOf[js.Any])
+    inline def setSessionIssuer(value: AwsIamAccessKeySessionContextSessionIssuer): Self = StObject.set(x, "SessionIssuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIssuerUndefined: Self = StObject.set(x, "SessionIssuer", js.undefined)
+    inline def setSessionIssuerUndefined: Self = StObject.set(x, "SessionIssuer", js.undefined)
   }
 }

@@ -20,26 +20,20 @@ object anon {
   }
   object ScriptMatchingPatternHash {
     
-    @scala.inline
-    def apply(test: ScriptMatchingPatternBase): ScriptMatchingPatternHash = {
+    inline def apply(test: ScriptMatchingPatternBase): ScriptMatchingPatternHash = {
       val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScriptMatchingPatternHash]
     }
     
-    @scala.inline
-    implicit class ScriptMatchingPatternHashMutableBuilder[Self <: ScriptMatchingPatternHash] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptMatchingPatternHash](x: Self) {
       
-      @scala.inline
-      def setChunks(value: initial | async | all): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
+      inline def setChunks(value: initial | async | all): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
+      inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
       
-      @scala.inline
-      def setTest(value: ScriptMatchingPatternBase): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: ScriptMatchingPatternBase): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestVarargs(value: (String | RegExp)*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: (String | RegExp)*): Self = StObject.set(x, "test", js.Array(value :_*))
     }
   }
 }

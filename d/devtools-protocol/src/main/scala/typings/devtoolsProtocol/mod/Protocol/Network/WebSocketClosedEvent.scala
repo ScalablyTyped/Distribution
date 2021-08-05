@@ -18,19 +18,15 @@ trait WebSocketClosedEvent extends StObject {
 }
 object WebSocketClosedEvent {
   
-  @scala.inline
-  def apply(requestId: RequestId, timestamp: MonotonicTime): WebSocketClosedEvent = {
+  inline def apply(requestId: RequestId, timestamp: MonotonicTime): WebSocketClosedEvent = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketClosedEvent]
   }
   
-  @scala.inline
-  implicit class WebSocketClosedEventMutableBuilder[Self <: WebSocketClosedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WebSocketClosedEvent](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

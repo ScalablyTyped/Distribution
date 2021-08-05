@@ -23,34 +23,25 @@ trait NotificationConfig extends StObject {
 }
 object NotificationConfig {
   
-  @scala.inline
-  def apply(): NotificationConfig = {
+  inline def apply(): NotificationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationConfig]
   }
   
-  @scala.inline
-  implicit class NotificationConfigMutableBuilder[Self <: NotificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationConfig](x: Self) {
     
-    @scala.inline
-    def setNotificationArn(value: NotificationArn): Self = StObject.set(x, "NotificationArn", value.asInstanceOf[js.Any])
+    inline def setNotificationArn(value: NotificationArn): Self = StObject.set(x, "NotificationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationArnUndefined: Self = StObject.set(x, "NotificationArn", js.undefined)
+    inline def setNotificationArnUndefined: Self = StObject.set(x, "NotificationArn", js.undefined)
     
-    @scala.inline
-    def setNotificationEvents(value: NotificationEventList): Self = StObject.set(x, "NotificationEvents", value.asInstanceOf[js.Any])
+    inline def setNotificationEvents(value: NotificationEventList): Self = StObject.set(x, "NotificationEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEventsUndefined: Self = StObject.set(x, "NotificationEvents", js.undefined)
+    inline def setNotificationEventsUndefined: Self = StObject.set(x, "NotificationEvents", js.undefined)
     
-    @scala.inline
-    def setNotificationEventsVarargs(value: NotificationEvent*): Self = StObject.set(x, "NotificationEvents", js.Array(value :_*))
+    inline def setNotificationEventsVarargs(value: NotificationEvent*): Self = StObject.set(x, "NotificationEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
+    inline def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTypeUndefined: Self = StObject.set(x, "NotificationType", js.undefined)
+    inline def setNotificationTypeUndefined: Self = StObject.set(x, "NotificationType", js.undefined)
   }
 }

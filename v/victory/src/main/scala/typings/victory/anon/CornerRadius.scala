@@ -17,37 +17,27 @@ trait CornerRadius extends StObject {
 }
 object CornerRadius {
   
-  @scala.inline
-  def apply(): CornerRadius = {
+  inline def apply(): CornerRadius = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CornerRadius]
   }
   
-  @scala.inline
-  implicit class CornerRadiusMutableBuilder[Self <: CornerRadius] (val x: Self) extends AnyVal {
+  extension [Self <: CornerRadius](x: Self) {
     
-    @scala.inline
-    def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+    inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
-    @scala.inline
-    def setFlyoutStyle(value: CSSProperties): Self = StObject.set(x, "flyoutStyle", value.asInstanceOf[js.Any])
+    inline def setFlyoutStyle(value: CSSProperties): Self = StObject.set(x, "flyoutStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlyoutStyleUndefined: Self = StObject.set(x, "flyoutStyle", js.undefined)
+    inline def setFlyoutStyleUndefined: Self = StObject.set(x, "flyoutStyle", js.undefined)
     
-    @scala.inline
-    def setPointerLength(value: Double): Self = StObject.set(x, "pointerLength", value.asInstanceOf[js.Any])
+    inline def setPointerLength(value: Double): Self = StObject.set(x, "pointerLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerLengthUndefined: Self = StObject.set(x, "pointerLength", js.undefined)
+    inline def setPointerLengthUndefined: Self = StObject.set(x, "pointerLength", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

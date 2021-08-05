@@ -12,19 +12,15 @@ trait Typeofshow extends StObject {
 }
 object Typeofshow {
   
-  @scala.inline
-  def apply(handler_1: (js.Any, js.Any) => js.Promise[js.Any], options_4: Typeofoptions4): Typeofshow = {
+  inline def apply(handler_1: (js.Any, js.Any) => js.Promise[js.Any], options_4: Typeofoptions4): Typeofshow = {
     val __obj = js.Dynamic.literal(handler_1 = js.Any.fromFunction2(handler_1), options_4 = options_4.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofshow]
   }
   
-  @scala.inline
-  implicit class TypeofshowMutableBuilder[Self <: Typeofshow] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofshow](x: Self) {
     
-    @scala.inline
-    def setHandler_1(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler_1", js.Any.fromFunction2(value))
+    inline def setHandler_1(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler_1", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_4(value: Typeofoptions4): Self = StObject.set(x, "options_4", value.asInstanceOf[js.Any])
+    inline def setOptions_4(value: Typeofoptions4): Self = StObject.set(x, "options_4", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait ContextualGroup extends StObject {
 }
 object ContextualGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: () => scala.Unit,
     get_color: () => Double,
     get_command: () => String,
@@ -33,25 +32,18 @@ object ContextualGroup {
     __obj.asInstanceOf[ContextualGroup]
   }
   
-  @scala.inline
-  implicit class ContextualGroupMutableBuilder[Self <: ContextualGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ContextualGroup](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => scala.Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => scala.Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_color(value: () => Double): Self = StObject.set(x, "get_color", js.Any.fromFunction0(value))
+    inline def setGet_color(value: () => Double): Self = StObject.set(x, "get_color", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_command(value: () => String): Self = StObject.set(x, "get_command", js.Any.fromFunction0(value))
+    inline def setGet_command(value: () => String): Self = StObject.set(x, "get_command", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
+    inline def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
+    inline def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
   }
 }

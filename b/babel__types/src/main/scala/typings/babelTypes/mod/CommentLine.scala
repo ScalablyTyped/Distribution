@@ -14,17 +14,14 @@ trait CommentLine
 }
 object CommentLine {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, value: String): CommentLine = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double, value: String): CommentLine = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CommentLine")
     __obj.asInstanceOf[CommentLine]
   }
   
-  @scala.inline
-  implicit class CommentLineMutableBuilder[Self <: CommentLine] (val x: Self) extends AnyVal {
+  extension [Self <: CommentLine](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.CommentLine): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.CommentLine): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

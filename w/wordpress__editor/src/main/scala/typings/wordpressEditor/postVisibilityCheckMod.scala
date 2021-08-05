@@ -32,17 +32,14 @@ object postVisibilityCheckMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(render: RenderProps => Element): Props = {
+      inline def apply(render: RenderProps => Element): Props = {
         val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setRender(value: RenderProps => Element): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+        inline def setRender(value: RenderProps => Element): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       }
     }
     
@@ -52,17 +49,14 @@ object postVisibilityCheckMod {
     }
     object RenderProps {
       
-      @scala.inline
-      def apply(canEdit: Boolean): RenderProps = {
+      inline def apply(canEdit: Boolean): RenderProps = {
         val __obj = js.Dynamic.literal(canEdit = canEdit.asInstanceOf[js.Any])
         __obj.asInstanceOf[RenderProps]
       }
       
-      @scala.inline
-      implicit class RenderPropsMutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
+      extension [Self <: RenderProps](x: Self) {
         
-        @scala.inline
-        def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
+        inline def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
       }
     }
   }

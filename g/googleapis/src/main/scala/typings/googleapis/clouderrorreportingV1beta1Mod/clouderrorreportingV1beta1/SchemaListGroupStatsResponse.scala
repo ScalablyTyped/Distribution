@@ -31,34 +31,25 @@ trait SchemaListGroupStatsResponse extends StObject {
 }
 object SchemaListGroupStatsResponse {
   
-  @scala.inline
-  def apply(): SchemaListGroupStatsResponse = {
+  inline def apply(): SchemaListGroupStatsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListGroupStatsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListGroupStatsResponseMutableBuilder[Self <: SchemaListGroupStatsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListGroupStatsResponse](x: Self) {
     
-    @scala.inline
-    def setErrorGroupStats(value: js.Array[SchemaErrorGroupStats]): Self = StObject.set(x, "errorGroupStats", value.asInstanceOf[js.Any])
+    inline def setErrorGroupStats(value: js.Array[SchemaErrorGroupStats]): Self = StObject.set(x, "errorGroupStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorGroupStatsUndefined: Self = StObject.set(x, "errorGroupStats", js.undefined)
+    inline def setErrorGroupStatsUndefined: Self = StObject.set(x, "errorGroupStats", js.undefined)
     
-    @scala.inline
-    def setErrorGroupStatsVarargs(value: SchemaErrorGroupStats*): Self = StObject.set(x, "errorGroupStats", js.Array(value :_*))
+    inline def setErrorGroupStatsVarargs(value: SchemaErrorGroupStats*): Self = StObject.set(x, "errorGroupStats", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTimeRangeBegin(value: String): Self = StObject.set(x, "timeRangeBegin", value.asInstanceOf[js.Any])
+    inline def setTimeRangeBegin(value: String): Self = StObject.set(x, "timeRangeBegin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeBeginUndefined: Self = StObject.set(x, "timeRangeBegin", js.undefined)
+    inline def setTimeRangeBeginUndefined: Self = StObject.set(x, "timeRangeBegin", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait DropRowRangeRequest extends StObject {
 }
 object DropRowRangeRequest {
   
-  @scala.inline
-  def apply(): DropRowRangeRequest = {
+  inline def apply(): DropRowRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropRowRangeRequest]
   }
   
-  @scala.inline
-  implicit class DropRowRangeRequestMutableBuilder[Self <: DropRowRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DropRowRangeRequest](x: Self) {
     
-    @scala.inline
-    def setDeleteAllDataFromTable(value: Boolean): Self = StObject.set(x, "deleteAllDataFromTable", value.asInstanceOf[js.Any])
+    inline def setDeleteAllDataFromTable(value: Boolean): Self = StObject.set(x, "deleteAllDataFromTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAllDataFromTableUndefined: Self = StObject.set(x, "deleteAllDataFromTable", js.undefined)
+    inline def setDeleteAllDataFromTableUndefined: Self = StObject.set(x, "deleteAllDataFromTable", js.undefined)
     
-    @scala.inline
-    def setRowKeyPrefix(value: String): Self = StObject.set(x, "rowKeyPrefix", value.asInstanceOf[js.Any])
+    inline def setRowKeyPrefix(value: String): Self = StObject.set(x, "rowKeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowKeyPrefixUndefined: Self = StObject.set(x, "rowKeyPrefix", js.undefined)
+    inline def setRowKeyPrefixUndefined: Self = StObject.set(x, "rowKeyPrefix", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait Base64EncodedByteArray extends StObject {
 }
 object Base64EncodedByteArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     append: js.Any => Unit,
     getByteAt: Double => js.Any,
     get_length: () => Double,
@@ -30,22 +29,16 @@ object Base64EncodedByteArray {
     __obj.asInstanceOf[Base64EncodedByteArray]
   }
   
-  @scala.inline
-  implicit class Base64EncodedByteArrayMutableBuilder[Self <: Base64EncodedByteArray] (val x: Self) extends AnyVal {
+  extension [Self <: Base64EncodedByteArray](x: Self) {
     
-    @scala.inline
-    def setAppend(value: js.Any => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+    inline def setAppend(value: js.Any => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetByteAt(value: Double => js.Any): Self = StObject.set(x, "getByteAt", js.Any.fromFunction1(value))
+    inline def setGetByteAt(value: Double => js.Any): Self = StObject.set(x, "getByteAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_length(value: () => Double): Self = StObject.set(x, "get_length", js.Any.fromFunction0(value))
+    inline def setGet_length(value: () => Double): Self = StObject.set(x, "get_length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetByteAt(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setByteAt", js.Any.fromFunction2(value))
+    inline def setSetByteAt(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setByteAt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToBase64String(value: () => String): Self = StObject.set(x, "toBase64String", js.Any.fromFunction0(value))
+    inline def setToBase64String(value: () => String): Self = StObject.set(x, "toBase64String", js.Any.fromFunction0(value))
   }
 }

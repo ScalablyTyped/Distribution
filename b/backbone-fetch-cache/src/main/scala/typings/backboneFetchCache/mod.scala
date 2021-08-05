@@ -22,8 +22,7 @@ object mod {
     @JSImport("backbone", "fetchCache")
     @js.native
     def fetchCache: Static = js.native
-    @scala.inline
-    def fetchCache_=(x: Static): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fetchCache")(x.asInstanceOf[js.Any])
+    inline def fetchCache_=(x: Static): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fetchCache")(x.asInstanceOf[js.Any])
     
     trait CollectionFetchWithCacheOptions
       extends StObject
@@ -34,20 +33,16 @@ object mod {
     }
     object CollectionFetchWithCacheOptions {
       
-      @scala.inline
-      def apply(): CollectionFetchWithCacheOptions = {
+      inline def apply(): CollectionFetchWithCacheOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CollectionFetchWithCacheOptions]
       }
       
-      @scala.inline
-      implicit class CollectionFetchWithCacheOptionsMutableBuilder[Self <: CollectionFetchWithCacheOptions] (val x: Self) extends AnyVal {
+      extension [Self <: CollectionFetchWithCacheOptions](x: Self) {
         
-        @scala.inline
-        def setPrefillSuccess(value: /* self */ js.Any => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction1(value))
+        inline def setPrefillSuccess(value: /* self */ js.Any => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPrefillSuccessUndefined: Self = StObject.set(x, "prefillSuccess", js.undefined)
+        inline def setPrefillSuccessUndefined: Self = StObject.set(x, "prefillSuccess", js.undefined)
       }
     }
     
@@ -120,50 +115,36 @@ object mod {
     }
     object ModelFetchWithCacheOptions {
       
-      @scala.inline
-      def apply(): ModelFetchWithCacheOptions = {
+      inline def apply(): ModelFetchWithCacheOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ModelFetchWithCacheOptions]
       }
       
-      @scala.inline
-      implicit class ModelFetchWithCacheOptionsMutableBuilder[Self <: ModelFetchWithCacheOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ModelFetchWithCacheOptions](x: Self) {
         
-        @scala.inline
-        def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+        inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+        inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
         
-        @scala.inline
-        def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+        inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
-        @scala.inline
-        def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+        inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
         
-        @scala.inline
-        def setPrefill(value: Boolean): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
+        inline def setPrefill(value: Boolean): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefillExpires(value: Double): Self = StObject.set(x, "prefillExpires", value.asInstanceOf[js.Any])
+        inline def setPrefillExpires(value: Double): Self = StObject.set(x, "prefillExpires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefillExpiresUndefined: Self = StObject.set(x, "prefillExpires", js.undefined)
+        inline def setPrefillExpiresUndefined: Self = StObject.set(x, "prefillExpires", js.undefined)
         
-        @scala.inline
-        def setPrefillSuccess(value: (/* self */ js.Any, /* attributes */ js.Any, ModelFetchWithCacheOptions) => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction3(value))
+        inline def setPrefillSuccess(value: (/* self */ js.Any, /* attributes */ js.Any, ModelFetchWithCacheOptions) => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setPrefillSuccessUndefined: Self = StObject.set(x, "prefillSuccess", js.undefined)
+        inline def setPrefillSuccessUndefined: Self = StObject.set(x, "prefillSuccess", js.undefined)
         
-        @scala.inline
-        def setPrefillUndefined: Self = StObject.set(x, "prefill", js.undefined)
+        inline def setPrefillUndefined: Self = StObject.set(x, "prefill", js.undefined)
       }
     }
     
@@ -187,26 +168,20 @@ object mod {
   }
   object Cache {
     
-    @scala.inline
-    def apply(expires: Double, lastSync: Double, prefillExpires: Double, value: js.Any): Cache = {
+    inline def apply(expires: Double, lastSync: Double, prefillExpires: Double, value: js.Any): Cache = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], lastSync = lastSync.asInstanceOf[js.Any], prefillExpires = prefillExpires.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cache]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+    extension [Self <: Cache](x: Self) {
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastSync(value: Double): Self = StObject.set(x, "lastSync", value.asInstanceOf[js.Any])
+      inline def setLastSync(value: Double): Self = StObject.set(x, "lastSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefillExpires(value: Double): Self = StObject.set(x, "prefillExpires", value.asInstanceOf[js.Any])
+      inline def setPrefillExpires(value: Double): Self = StObject.set(x, "prefillExpires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -220,26 +195,20 @@ object mod {
   }
   object GetCacheKeyObject {
     
-    @scala.inline
-    def apply(): GetCacheKeyObject = {
+    inline def apply(): GetCacheKeyObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCacheKeyObject]
     }
     
-    @scala.inline
-    implicit class GetCacheKeyObjectMutableBuilder[Self <: GetCacheKeyObject] (val x: Self) extends AnyVal {
+    extension [Self <: GetCacheKeyObject](x: Self) {
       
-      @scala.inline
-      def setGetCacheKey(value: /* opts */ js.UndefOr[GetCacheOptions] => String): Self = StObject.set(x, "getCacheKey", js.Any.fromFunction1(value))
+      inline def setGetCacheKey(value: /* opts */ js.UndefOr[GetCacheOptions] => String): Self = StObject.set(x, "getCacheKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCacheKeyUndefined: Self = StObject.set(x, "getCacheKey", js.undefined)
+      inline def setGetCacheKeyUndefined: Self = StObject.set(x, "getCacheKey", js.undefined)
       
-      @scala.inline
-      def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
+      inline def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -258,26 +227,20 @@ object mod {
   }
   object GetCacheOptions {
     
-    @scala.inline
-    def apply(): GetCacheOptions = {
+    inline def apply(): GetCacheOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCacheOptions]
     }
     
-    @scala.inline
-    implicit class GetCacheOptionsMutableBuilder[Self <: GetCacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetCacheOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -295,26 +258,20 @@ object mod {
   }
   object SetCacheOptions {
     
-    @scala.inline
-    def apply(cache: Boolean, expires: Boolean | Double, prefill: Boolean, prefillExpires: Boolean | Double): SetCacheOptions = {
+    inline def apply(cache: Boolean, expires: Boolean | Double, prefill: Boolean, prefillExpires: Boolean | Double): SetCacheOptions = {
       val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], prefill = prefill.asInstanceOf[js.Any], prefillExpires = prefillExpires.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetCacheOptions]
     }
     
-    @scala.inline
-    implicit class SetCacheOptionsMutableBuilder[Self <: SetCacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetCacheOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires(value: Boolean | Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Boolean | Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefill(value: Boolean): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
+      inline def setPrefill(value: Boolean): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefillExpires(value: Boolean | Double): Self = StObject.set(x, "prefillExpires", value.asInstanceOf[js.Any])
+      inline def setPrefillExpires(value: Boolean | Double): Self = StObject.set(x, "prefillExpires", value.asInstanceOf[js.Any])
     }
   }
   
@@ -410,14 +367,12 @@ object mod {
   trait _GetCacheKeyOptions extends StObject
   object _GetCacheKeyOptions {
     
-    @scala.inline
-    def GetCacheKeyObject(): typings.backboneFetchCache.mod.GetCacheKeyObject = {
+    inline def GetCacheKeyObject(): typings.backboneFetchCache.mod.GetCacheKeyObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.backboneFetchCache.mod.GetCacheKeyObject]
     }
     
-    @scala.inline
-    def Url(url: String): typings.backboneFetchCache.anon.Url = {
+    inline def Url(url: String): typings.backboneFetchCache.anon.Url = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.backboneFetchCache.anon.Url]
     }

@@ -30,8 +30,7 @@ trait NavigationNodeCreationInformation
 }
 object NavigationNodeCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -52,37 +51,26 @@ object NavigationNodeCreationInformation {
     __obj.asInstanceOf[NavigationNodeCreationInformation]
   }
   
-  @scala.inline
-  implicit class NavigationNodeCreationInformationMutableBuilder[Self <: NavigationNodeCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationNodeCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_asLastNode(value: () => Boolean): Self = StObject.set(x, "get_asLastNode", js.Any.fromFunction0(value))
+    inline def setGet_asLastNode(value: () => Boolean): Self = StObject.set(x, "get_asLastNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_isExternal(value: () => Boolean): Self = StObject.set(x, "get_isExternal", js.Any.fromFunction0(value))
+    inline def setGet_isExternal(value: () => Boolean): Self = StObject.set(x, "get_isExternal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_previousNode(value: () => NavigationNode): Self = StObject.set(x, "get_previousNode", js.Any.fromFunction0(value))
+    inline def setGet_previousNode(value: () => NavigationNode): Self = StObject.set(x, "get_previousNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_asLastNode(value: Boolean => Unit): Self = StObject.set(x, "set_asLastNode", js.Any.fromFunction1(value))
+    inline def setSet_asLastNode(value: Boolean => Unit): Self = StObject.set(x, "set_asLastNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_isExternal(value: Boolean => Unit): Self = StObject.set(x, "set_isExternal", js.Any.fromFunction1(value))
+    inline def setSet_isExternal(value: Boolean => Unit): Self = StObject.set(x, "set_isExternal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_previousNode(value: NavigationNode => Unit): Self = StObject.set(x, "set_previousNode", js.Any.fromFunction1(value))
+    inline def setSet_previousNode(value: NavigationNode => Unit): Self = StObject.set(x, "set_previousNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+    inline def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+    inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
   }
 }

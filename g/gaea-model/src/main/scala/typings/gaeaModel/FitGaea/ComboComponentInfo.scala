@@ -14,8 +14,7 @@ trait ComboComponentInfo
 }
 object ComboComponentInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childs: StringDictionary[ViewportComponentInfo],
     componentInfo: ViewportComponentInfo,
     mapUniqueKey: String,
@@ -25,10 +24,8 @@ object ComboComponentInfo {
     __obj.asInstanceOf[ComboComponentInfo]
   }
   
-  @scala.inline
-  implicit class ComboComponentInfoMutableBuilder[Self <: ComboComponentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ComboComponentInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

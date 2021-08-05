@@ -33,8 +33,7 @@ object mod {
         /* options */ js.UndefOr[CookieSerializeOptions], 
         js.Object
       ] = js.native
-    @scala.inline
-    def destroy_=(
+    inline def destroy_=(
       x: js.Function3[
           /* ctx */ js.UndefOr[PickNextPageContextres | Res | ResResponse | Null], 
           /* name */ String, 
@@ -50,8 +49,7 @@ object mod {
         /* options */ js.UndefOr[CookieParseOptions], 
         StringDictionary[String]
       ] = js.native
-    @scala.inline
-    def get_=(
+    inline def get_=(
       x: js.Function2[
           /* ctx */ js.UndefOr[PickNextPageContextreq | Req | ReqRequest | Null], 
           /* options */ js.UndefOr[CookieParseOptions], 
@@ -68,8 +66,7 @@ object mod {
         /* options */ CookieSerializeOptions, 
         js.Object
       ] = js.native
-    @scala.inline
-    def set_=(
+    inline def set_=(
       x: js.Function4[
           /* ctx */ js.UndefOr[PickNextPageContextres | Res | ResResponse | Null], 
           /* name */ String, 
@@ -80,54 +77,30 @@ object mod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("set")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def destroyCookie(ctx: Null, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def destroyCookie(ctx: Null, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def destroyCookie(ctx: Unit, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def destroyCookie(ctx: Unit, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def destroyCookie(ctx: PickNextPageContextres, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def destroyCookie(ctx: PickNextPageContextres, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def destroyCookie(ctx: ResResponse, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def destroyCookie(ctx: ResResponse, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def destroyCookie(ctx: Res, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def destroyCookie(ctx: Res, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: Null, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: Null, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: Unit, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: Unit, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: PickNextPageContextres, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: PickNextPageContextres, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: ResResponse, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: ResResponse, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: Res, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def destroyCookie(ctx: Res, name: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @scala.inline
-  def parseCookies(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")().asInstanceOf[StringDictionary[String]]
-  @scala.inline
-  def parseCookies(ctx: Null, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
-  @scala.inline
-  def parseCookies(ctx: Unit, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
-  @scala.inline
-  def parseCookies(ctx: PickNextPageContextreq): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
-  @scala.inline
-  def parseCookies(ctx: PickNextPageContextreq, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
-  @scala.inline
-  def parseCookies(ctx: Req): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
-  @scala.inline
-  def parseCookies(ctx: ReqRequest): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
-  @scala.inline
-  def parseCookies(ctx: ReqRequest, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
-  @scala.inline
-  def parseCookies(ctx: Req, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
+  inline def parseCookies(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")().asInstanceOf[StringDictionary[String]]
+  inline def parseCookies(ctx: Null, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
+  inline def parseCookies(ctx: Unit, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
+  inline def parseCookies(ctx: PickNextPageContextreq): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  inline def parseCookies(ctx: PickNextPageContextreq, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
+  inline def parseCookies(ctx: Req): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  inline def parseCookies(ctx: ReqRequest): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  inline def parseCookies(ctx: ReqRequest, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
+  inline def parseCookies(ctx: Req, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCookies")(ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
   
-  @scala.inline
-  def setCookie(ctx: Null, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def setCookie(ctx: Unit, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def setCookie(ctx: PickNextPageContextres, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def setCookie(ctx: ResResponse, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def setCookie(ctx: Res, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def setCookie(ctx: Null, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def setCookie(ctx: Unit, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def setCookie(ctx: PickNextPageContextres, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def setCookie(ctx: ResResponse, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def setCookie(ctx: Res, name: String, value: String, options: CookieSerializeOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(ctx.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 }

@@ -11,34 +11,29 @@ object compareVersionsStrings {
   sealed trait Equalssign
     extends StObject
        with CompareOperator
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
   sealed trait Greaterthansign
     extends StObject
        with CompareOperator
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
   sealed trait GreaterthansignEqualssign
     extends StObject
        with CompareOperator
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
   sealed trait Lessthansign
     extends StObject
        with CompareOperator
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
   sealed trait LessthansignEqualssign
     extends StObject
        with CompareOperator
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
 }

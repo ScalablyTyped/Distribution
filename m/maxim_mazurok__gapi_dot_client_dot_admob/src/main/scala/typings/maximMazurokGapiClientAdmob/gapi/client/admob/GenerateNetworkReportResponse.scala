@@ -17,31 +17,23 @@ trait GenerateNetworkReportResponse extends StObject {
 }
 object GenerateNetworkReportResponse {
   
-  @scala.inline
-  def apply(): GenerateNetworkReportResponse = {
+  inline def apply(): GenerateNetworkReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateNetworkReportResponse]
   }
   
-  @scala.inline
-  implicit class GenerateNetworkReportResponseMutableBuilder[Self <: GenerateNetworkReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateNetworkReportResponse](x: Self) {
     
-    @scala.inline
-    def setFooter(value: ReportFooter): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: ReportFooter): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHeader(value: ReportHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: ReportHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setRow(value: ReportRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: ReportRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

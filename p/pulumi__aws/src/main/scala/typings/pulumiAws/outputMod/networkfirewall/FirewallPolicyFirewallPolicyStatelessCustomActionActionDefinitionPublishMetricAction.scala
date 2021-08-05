@@ -15,8 +15,7 @@ trait FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMe
 }
 object FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dimensions: js.Array[
       FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension
     ]
@@ -25,18 +24,15 @@ object FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishM
     __obj.asInstanceOf[FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction]
   }
   
-  @scala.inline
-  implicit class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionMutableBuilder[Self <: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction](x: Self) {
     
-    @scala.inline
-    def setDimensions(
+    inline def setDimensions(
       value: js.Array[
           FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension
         ]
     ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsVarargs(
+    inline def setDimensionsVarargs(
       value: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension*
     ): Self = StObject.set(x, "dimensions", js.Array(value :_*))
   }

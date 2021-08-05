@@ -33,8 +33,7 @@ trait ListReusableDelegationSetsResponse extends StObject {
 }
 object ListReusableDelegationSetsResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DelegationSets: DelegationSets,
     IsTruncated: PageTruncated,
     Marker: PageMarker,
@@ -44,28 +43,20 @@ object ListReusableDelegationSetsResponse {
     __obj.asInstanceOf[ListReusableDelegationSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListReusableDelegationSetsResponseMutableBuilder[Self <: ListReusableDelegationSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListReusableDelegationSetsResponse](x: Self) {
     
-    @scala.inline
-    def setDelegationSets(value: DelegationSets): Self = StObject.set(x, "DelegationSets", value.asInstanceOf[js.Any])
+    inline def setDelegationSets(value: DelegationSets): Self = StObject.set(x, "DelegationSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegationSetsVarargs(value: DelegationSet*): Self = StObject.set(x, "DelegationSets", js.Array(value :_*))
+    inline def setDelegationSetsVarargs(value: DelegationSet*): Self = StObject.set(x, "DelegationSets", js.Array(value :_*))
     
-    @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarker(value: PageMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: PageMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

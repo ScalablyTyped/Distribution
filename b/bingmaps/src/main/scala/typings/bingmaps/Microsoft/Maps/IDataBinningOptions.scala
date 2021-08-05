@@ -53,59 +53,43 @@ trait IDataBinningOptions extends StObject {
 }
 object IDataBinningOptions {
   
-  @scala.inline
-  def apply(): IDataBinningOptions = {
+  inline def apply(): IDataBinningOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDataBinningOptions]
   }
   
-  @scala.inline
-  implicit class IDataBinningOptionsMutableBuilder[Self <: IDataBinningOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDataBinningOptions](x: Self) {
     
-    @scala.inline
-    def setAggregationProperty(value: String): Self = StObject.set(x, "aggregationProperty", value.asInstanceOf[js.Any])
+    inline def setAggregationProperty(value: String): Self = StObject.set(x, "aggregationProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationPropertyUndefined: Self = StObject.set(x, "aggregationProperty", js.undefined)
+    inline def setAggregationPropertyUndefined: Self = StObject.set(x, "aggregationProperty", js.undefined)
     
-    @scala.inline
-    def setColorCallback(
+    inline def setColorCallback(
       value: (/* binInfo */ IDataBinInfo, /* min */ IDataBinMetrics, /* max */ IDataBinMetrics) => String | Color
     ): Self = StObject.set(x, "colorCallback", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setColorCallbackUndefined: Self = StObject.set(x, "colorCallback", js.undefined)
+    inline def setColorCallbackUndefined: Self = StObject.set(x, "colorCallback", js.undefined)
     
-    @scala.inline
-    def setDataBinType(value: DataBinType): Self = StObject.set(x, "dataBinType", value.asInstanceOf[js.Any])
+    inline def setDataBinType(value: DataBinType): Self = StObject.set(x, "dataBinType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBinTypeUndefined: Self = StObject.set(x, "dataBinType", js.undefined)
+    inline def setDataBinTypeUndefined: Self = StObject.set(x, "dataBinType", js.undefined)
     
-    @scala.inline
-    def setDistanceUnits(value: DistanceUnits): Self = StObject.set(x, "distanceUnits", value.asInstanceOf[js.Any])
+    inline def setDistanceUnits(value: DistanceUnits): Self = StObject.set(x, "distanceUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUnitsUndefined: Self = StObject.set(x, "distanceUnits", js.undefined)
+    inline def setDistanceUnitsUndefined: Self = StObject.set(x, "distanceUnits", js.undefined)
     
-    @scala.inline
-    def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
+    inline def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
+    inline def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setScaleCallback(
+    inline def setScaleCallback(
       value: (/* binInfo */ IDataBinInfo, /* min */ IDataBinMetrics, /* max */ IDataBinMetrics) => Double
     ): Self = StObject.set(x, "scaleCallback", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScaleCallbackUndefined: Self = StObject.set(x, "scaleCallback", js.undefined)
+    inline def setScaleCallbackUndefined: Self = StObject.set(x, "scaleCallback", js.undefined)
   }
 }

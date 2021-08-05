@@ -29,25 +29,19 @@ trait DataPilotFieldAutoShowInfo extends StObject {
 }
 object DataPilotFieldAutoShowInfo {
   
-  @scala.inline
-  def apply(DataField: String, IsEnabled: Boolean, ItemCount: Double, ShowItemsMode: Double): DataPilotFieldAutoShowInfo = {
+  inline def apply(DataField: String, IsEnabled: Boolean, ItemCount: Double, ShowItemsMode: Double): DataPilotFieldAutoShowInfo = {
     val __obj = js.Dynamic.literal(DataField = DataField.asInstanceOf[js.Any], IsEnabled = IsEnabled.asInstanceOf[js.Any], ItemCount = ItemCount.asInstanceOf[js.Any], ShowItemsMode = ShowItemsMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPilotFieldAutoShowInfo]
   }
   
-  @scala.inline
-  implicit class DataPilotFieldAutoShowInfoMutableBuilder[Self <: DataPilotFieldAutoShowInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotFieldAutoShowInfo](x: Self) {
     
-    @scala.inline
-    def setDataField(value: String): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: String): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowItemsMode(value: Double): Self = StObject.set(x, "ShowItemsMode", value.asInstanceOf[js.Any])
+    inline def setShowItemsMode(value: Double): Self = StObject.set(x, "ShowItemsMode", value.asInstanceOf[js.Any])
   }
 }

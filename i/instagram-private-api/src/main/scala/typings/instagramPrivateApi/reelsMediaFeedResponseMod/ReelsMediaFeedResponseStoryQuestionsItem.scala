@@ -28,8 +28,7 @@ trait ReelsMediaFeedResponseStoryQuestionsItem extends StObject {
 }
 object ReelsMediaFeedResponseStoryQuestionsItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     is_hidden: Double,
     is_pinned: Double,
@@ -45,37 +44,26 @@ object ReelsMediaFeedResponseStoryQuestionsItem {
     __obj.asInstanceOf[ReelsMediaFeedResponseStoryQuestionsItem]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponseStoryQuestionsItemMutableBuilder[Self <: ReelsMediaFeedResponseStoryQuestionsItem] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponseStoryQuestionsItem](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_hidden(value: Double): Self = StObject.set(x, "is_hidden", value.asInstanceOf[js.Any])
+    inline def setIs_hidden(value: Double): Self = StObject.set(x, "is_hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_pinned(value: Double): Self = StObject.set(x, "is_pinned", value.asInstanceOf[js.Any])
+    inline def setIs_pinned(value: Double): Self = StObject.set(x, "is_pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_sticker(value: Double): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
+    inline def setIs_sticker(value: Double): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion_sticker(value: ReelsMediaFeedResponseQuestionSticker): Self = StObject.set(x, "question_sticker", value.asInstanceOf[js.Any])
+    inline def setQuestion_sticker(value: ReelsMediaFeedResponseQuestionSticker): Self = StObject.set(x, "question_sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

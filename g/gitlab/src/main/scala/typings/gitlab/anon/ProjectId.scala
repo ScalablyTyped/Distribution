@@ -10,19 +10,15 @@ trait ProjectId extends StObject {
 }
 object ProjectId {
   
-  @scala.inline
-  def apply(): ProjectId = {
+  inline def apply(): ProjectId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectId]
   }
   
-  @scala.inline
-  implicit class ProjectIdMutableBuilder[Self <: ProjectId] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectId](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: String | Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String | Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

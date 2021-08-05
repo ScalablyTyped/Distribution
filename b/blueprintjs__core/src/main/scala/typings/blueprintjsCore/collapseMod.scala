@@ -95,11 +95,11 @@ object collapseMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MCollapse(): Unit = js.native
     
-    var contents: js.Any = js.native
+    /* private */ var contents: js.Any = js.native
     
-    var contentsRefHandler: js.Any = js.native
+    /* private */ var contentsRefHandler: js.Any = js.native
     
-    var onDelayedStateChange: js.Any = js.native
+    /* private */ var onDelayedStateChange: js.Any = js.native
   }
   /* static members */
   object Collapse {
@@ -111,17 +111,14 @@ object collapseMod {
     @JSImport("@blueprintjs/core/lib/esm/components/collapse/collapse", "Collapse.defaultProps")
     @js.native
     def defaultProps: ICollapseProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ICollapseProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ICollapseProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/collapse/collapse", "Collapse.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(props: ICollapseProps, state: ICollapseState): AnimationState | Height | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnimationState | Height | Null]
+    inline def getDerivedStateFromProps(props: ICollapseProps, state: ICollapseState): AnimationState | Height | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnimationState | Height | Null]
   }
   
   trait ICollapseProps
@@ -159,38 +156,28 @@ object collapseMod {
   }
   object ICollapseProps {
     
-    @scala.inline
-    def apply(): ICollapseProps = {
+    inline def apply(): ICollapseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICollapseProps]
     }
     
-    @scala.inline
-    implicit class ICollapsePropsMutableBuilder[Self <: ICollapseProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICollapseProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setKeepChildrenMounted(value: Boolean): Self = StObject.set(x, "keepChildrenMounted", value.asInstanceOf[js.Any])
+      inline def setKeepChildrenMounted(value: Boolean): Self = StObject.set(x, "keepChildrenMounted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepChildrenMountedUndefined: Self = StObject.set(x, "keepChildrenMounted", js.undefined)
+      inline def setKeepChildrenMountedUndefined: Self = StObject.set(x, "keepChildrenMounted", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     }
   }
   
@@ -209,29 +196,22 @@ object collapseMod {
   }
   object ICollapseState {
     
-    @scala.inline
-    def apply(animationState: AnimationStates): ICollapseState = {
+    inline def apply(animationState: AnimationStates): ICollapseState = {
       val __obj = js.Dynamic.literal(animationState = animationState.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICollapseState]
     }
     
-    @scala.inline
-    implicit class ICollapseStateMutableBuilder[Self <: ICollapseState] (val x: Self) extends AnyVal {
+    extension [Self <: ICollapseState](x: Self) {
       
-      @scala.inline
-      def setAnimationState(value: AnimationStates): Self = StObject.set(x, "animationState", value.asInstanceOf[js.Any])
+      inline def setAnimationState(value: AnimationStates): Self = StObject.set(x, "animationState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHeightWhenOpen(value: Double): Self = StObject.set(x, "heightWhenOpen", value.asInstanceOf[js.Any])
+      inline def setHeightWhenOpen(value: Double): Self = StObject.set(x, "heightWhenOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightWhenOpenUndefined: Self = StObject.set(x, "heightWhenOpen", js.undefined)
+      inline def setHeightWhenOpenUndefined: Self = StObject.set(x, "heightWhenOpen", js.undefined)
     }
   }
 }

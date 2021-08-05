@@ -42,31 +42,23 @@ trait IPostalAddress extends StObject {
 }
 object IPostalAddress {
   
-  @scala.inline
-  def apply(city: String, postal_code: String, region: String, state: String, street: String, street_2: String): IPostalAddress = {
+  inline def apply(city: String, postal_code: String, region: String, state: String, street: String, street_2: String): IPostalAddress = {
     val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], postal_code = postal_code.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], street_2 = street_2.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPostalAddress]
   }
   
-  @scala.inline
-  implicit class IPostalAddressMutableBuilder[Self <: IPostalAddress] (val x: Self) extends AnyVal {
+  extension [Self <: IPostalAddress](x: Self) {
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
+    inline def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
+    inline def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet_2(value: String): Self = StObject.set(x, "street_2", value.asInstanceOf[js.Any])
+    inline def setStreet_2(value: String): Self = StObject.set(x, "street_2", value.asInstanceOf[js.Any])
   }
 }

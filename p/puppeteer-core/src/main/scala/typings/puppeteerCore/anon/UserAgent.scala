@@ -12,19 +12,15 @@ trait UserAgent extends StObject {
 }
 object UserAgent {
   
-  @scala.inline
-  def apply(userAgent: String, viewport: typings.puppeteerCore.puppeteerViewportMod.Viewport): UserAgent = {
+  inline def apply(userAgent: String, viewport: typings.puppeteerCore.puppeteerViewportMod.Viewport): UserAgent = {
     val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgent]
   }
   
-  @scala.inline
-  implicit class UserAgentMutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgent](x: Self) {
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: typings.puppeteerCore.puppeteerViewportMod.Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: typings.puppeteerCore.puppeteerViewportMod.Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

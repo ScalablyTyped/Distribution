@@ -13,16 +13,13 @@ trait GetLoginProfileRequest extends StObject {
 }
 object GetLoginProfileRequest {
   
-  @scala.inline
-  def apply(UserName: userNameType): GetLoginProfileRequest = {
+  inline def apply(UserName: userNameType): GetLoginProfileRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLoginProfileRequest]
   }
   
-  @scala.inline
-  implicit class GetLoginProfileRequestMutableBuilder[Self <: GetLoginProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoginProfileRequest](x: Self) {
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

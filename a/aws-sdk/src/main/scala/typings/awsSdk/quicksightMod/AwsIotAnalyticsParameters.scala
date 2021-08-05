@@ -13,16 +13,13 @@ trait AwsIotAnalyticsParameters extends StObject {
 }
 object AwsIotAnalyticsParameters {
   
-  @scala.inline
-  def apply(DataSetName: DataSetName): AwsIotAnalyticsParameters = {
+  inline def apply(DataSetName: DataSetName): AwsIotAnalyticsParameters = {
     val __obj = js.Dynamic.literal(DataSetName = DataSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsIotAnalyticsParameters]
   }
   
-  @scala.inline
-  implicit class AwsIotAnalyticsParametersMutableBuilder[Self <: AwsIotAnalyticsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIotAnalyticsParameters](x: Self) {
     
-    @scala.inline
-    def setDataSetName(value: DataSetName): Self = StObject.set(x, "DataSetName", value.asInstanceOf[js.Any])
+    inline def setDataSetName(value: DataSetName): Self = StObject.set(x, "DataSetName", value.asInstanceOf[js.Any])
   }
 }

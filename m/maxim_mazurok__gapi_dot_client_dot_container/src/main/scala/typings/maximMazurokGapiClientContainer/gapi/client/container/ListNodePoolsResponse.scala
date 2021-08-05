@@ -11,22 +11,17 @@ trait ListNodePoolsResponse extends StObject {
 }
 object ListNodePoolsResponse {
   
-  @scala.inline
-  def apply(): ListNodePoolsResponse = {
+  inline def apply(): ListNodePoolsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNodePoolsResponse]
   }
   
-  @scala.inline
-  implicit class ListNodePoolsResponseMutableBuilder[Self <: ListNodePoolsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListNodePoolsResponse](x: Self) {
     
-    @scala.inline
-    def setNodePools(value: js.Array[NodePool]): Self = StObject.set(x, "nodePools", value.asInstanceOf[js.Any])
+    inline def setNodePools(value: js.Array[NodePool]): Self = StObject.set(x, "nodePools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePoolsUndefined: Self = StObject.set(x, "nodePools", js.undefined)
+    inline def setNodePoolsUndefined: Self = StObject.set(x, "nodePools", js.undefined)
     
-    @scala.inline
-    def setNodePoolsVarargs(value: NodePool*): Self = StObject.set(x, "nodePools", js.Array(value :_*))
+    inline def setNodePoolsVarargs(value: NodePool*): Self = StObject.set(x, "nodePools", js.Array(value :_*))
   }
 }

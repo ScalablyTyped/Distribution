@@ -100,8 +100,7 @@ object typesMod {
   }
   object Adapter {
     
-    @scala.inline
-    def apply[Node, ElementNode /* <: Node */](
+    inline def apply[Node, ElementNode /* <: Node */](
       existsOne: (Predicate[ElementNode], js.Array[Node]) => Boolean,
       findAll: (Predicate[ElementNode], js.Array[Node]) => js.Array[ElementNode],
       findOne: (Predicate[ElementNode], js.Array[Node]) => ElementNode | Null,
@@ -119,68 +118,47 @@ object typesMod {
       __obj.asInstanceOf[Adapter[Node, ElementNode]]
     }
     
-    @scala.inline
-    implicit class AdapterMutableBuilder[Self <: Adapter[?, ?], Node, ElementNode /* <: Node */] (val x: Self & (Adapter[Node, ElementNode])) extends AnyVal {
+    extension [Self <: Adapter[?, ?], Node, ElementNode /* <: Node */](x: Self & (Adapter[Node, ElementNode])) {
       
-      @scala.inline
-      def setEquals_(value: (/* a */ Node, /* b */ Node) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (/* a */ Node, /* b */ Node) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setExistsOne(value: (Predicate[ElementNode], js.Array[Node]) => Boolean): Self = StObject.set(x, "existsOne", js.Any.fromFunction2(value))
+      inline def setExistsOne(value: (Predicate[ElementNode], js.Array[Node]) => Boolean): Self = StObject.set(x, "existsOne", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindAll(value: (Predicate[ElementNode], js.Array[Node]) => js.Array[ElementNode]): Self = StObject.set(x, "findAll", js.Any.fromFunction2(value))
+      inline def setFindAll(value: (Predicate[ElementNode], js.Array[Node]) => js.Array[ElementNode]): Self = StObject.set(x, "findAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindOne(value: (Predicate[ElementNode], js.Array[Node]) => ElementNode | Null): Self = StObject.set(x, "findOne", js.Any.fromFunction2(value))
+      inline def setFindOne(value: (Predicate[ElementNode], js.Array[Node]) => ElementNode | Null): Self = StObject.set(x, "findOne", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAttributeValue(value: (ElementNode, String) => js.UndefOr[String]): Self = StObject.set(x, "getAttributeValue", js.Any.fromFunction2(value))
+      inline def setGetAttributeValue(value: (ElementNode, String) => js.UndefOr[String]): Self = StObject.set(x, "getAttributeValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetChildren(value: Node => js.Array[Node]): Self = StObject.set(x, "getChildren", js.Any.fromFunction1(value))
+      inline def setGetChildren(value: Node => js.Array[Node]): Self = StObject.set(x, "getChildren", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetName(value: ElementNode => String): Self = StObject.set(x, "getName", js.Any.fromFunction1(value))
+      inline def setGetName(value: ElementNode => String): Self = StObject.set(x, "getName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetParent(value: ElementNode => ElementNode | Null): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
+      inline def setGetParent(value: ElementNode => ElementNode | Null): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSiblings(value: Node => js.Array[Node]): Self = StObject.set(x, "getSiblings", js.Any.fromFunction1(value))
+      inline def setGetSiblings(value: Node => js.Array[Node]): Self = StObject.set(x, "getSiblings", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetText(value: Node => String): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
+      inline def setGetText(value: Node => String): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasAttrib(value: (ElementNode, String) => Boolean): Self = StObject.set(x, "hasAttrib", js.Any.fromFunction2(value))
+      inline def setHasAttrib(value: (ElementNode, String) => Boolean): Self = StObject.set(x, "hasAttrib", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsActive(value: /* elem */ ElementNode => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
+      inline def setIsActive(value: /* elem */ ElementNode => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setIsHovered(value: /* elem */ ElementNode => Boolean): Self = StObject.set(x, "isHovered", js.Any.fromFunction1(value))
+      inline def setIsHovered(value: /* elem */ ElementNode => Boolean): Self = StObject.set(x, "isHovered", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsHoveredUndefined: Self = StObject.set(x, "isHovered", js.undefined)
+      inline def setIsHoveredUndefined: Self = StObject.set(x, "isHovered", js.undefined)
       
-      @scala.inline
-      def setIsTag(value: Node => /* is ElementNode */ Boolean): Self = StObject.set(x, "isTag", js.Any.fromFunction1(value))
+      inline def setIsTag(value: Node => /* is ElementNode */ Boolean): Self = StObject.set(x, "isTag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsVisited(value: /* elem */ ElementNode => Boolean): Self = StObject.set(x, "isVisited", js.Any.fromFunction1(value))
+      inline def setIsVisited(value: /* elem */ ElementNode => Boolean): Self = StObject.set(x, "isVisited", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsVisitedUndefined: Self = StObject.set(x, "isVisited", js.undefined)
+      inline def setIsVisitedUndefined: Self = StObject.set(x, "isVisited", js.undefined)
       
-      @scala.inline
-      def setRemoveSubsets(value: js.Array[Node] => js.Array[Node]): Self = StObject.set(x, "removeSubsets", js.Any.fromFunction1(value))
+      inline def setRemoveSubsets(value: js.Array[Node] => js.Array[Node]): Self = StObject.set(x, "removeSubsets", js.Any.fromFunction1(value))
     }
   }
   
@@ -210,21 +188,17 @@ object typesMod {
   }
   object InternalOptions {
     
-    @scala.inline
-    def apply[Node, ElementNode /* <: Node */](adapter: Adapter[Node, ElementNode], equals_ : (Node, Node) => Boolean): InternalOptions[Node, ElementNode] = {
+    inline def apply[Node, ElementNode /* <: Node */](adapter: Adapter[Node, ElementNode], equals_ : (Node, Node) => Boolean): InternalOptions[Node, ElementNode] = {
       val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
       __obj.updateDynamic("equals")(js.Any.fromFunction2(equals_))
       __obj.asInstanceOf[InternalOptions[Node, ElementNode]]
     }
     
-    @scala.inline
-    implicit class InternalOptionsMutableBuilder[Self <: InternalOptions[?, ?], Node, ElementNode /* <: Node */] (val x: Self & (InternalOptions[Node, ElementNode])) extends AnyVal {
+    extension [Self <: InternalOptions[?, ?], Node, ElementNode /* <: Node */](x: Self & (InternalOptions[Node, ElementNode])) {
       
-      @scala.inline
-      def setAdapter(value: Adapter[Node, ElementNode]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: Adapter[Node, ElementNode]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_(value: (Node, Node) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (Node, Node) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     }
   }
   
@@ -270,53 +244,38 @@ object typesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply[Node, ElementNode /* <: Node */](): Options[Node, ElementNode] = {
+    inline def apply[Node, ElementNode /* <: Node */](): Options[Node, ElementNode] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[Node, ElementNode]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], Node, ElementNode /* <: Node */] (val x: Self & (Options[Node, ElementNode])) extends AnyVal {
+    extension [Self <: Options[?, ?], Node, ElementNode /* <: Node */](x: Self & (Options[Node, ElementNode])) {
       
-      @scala.inline
-      def setAdapter(value: Adapter[Node, ElementNode]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: Adapter[Node, ElementNode]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
-      @scala.inline
-      def setCacheResults(value: Boolean): Self = StObject.set(x, "cacheResults", value.asInstanceOf[js.Any])
+      inline def setCacheResults(value: Boolean): Self = StObject.set(x, "cacheResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheResultsUndefined: Self = StObject.set(x, "cacheResults", js.undefined)
+      inline def setCacheResultsUndefined: Self = StObject.set(x, "cacheResults", js.undefined)
       
-      @scala.inline
-      def setContext(value: ElementNode | js.Array[ElementNode]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: ElementNode | js.Array[ElementNode]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setContextVarargs(value: ElementNode*): Self = StObject.set(x, "context", js.Array(value :_*))
+      inline def setContextVarargs(value: ElementNode*): Self = StObject.set(x, "context", js.Array(value :_*))
       
-      @scala.inline
-      def setRootFunc(value: /* element */ ElementNode => Boolean): Self = StObject.set(x, "rootFunc", js.Any.fromFunction1(value))
+      inline def setRootFunc(value: /* element */ ElementNode => Boolean): Self = StObject.set(x, "rootFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRootFuncUndefined: Self = StObject.set(x, "rootFunc", js.undefined)
+      inline def setRootFuncUndefined: Self = StObject.set(x, "rootFunc", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setXmlMode(value: Boolean): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
+      inline def setXmlMode(value: Boolean): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlModeUndefined: Self = StObject.set(x, "xmlMode", js.undefined)
+      inline def setXmlModeUndefined: Self = StObject.set(x, "xmlMode", js.undefined)
     }
   }
   

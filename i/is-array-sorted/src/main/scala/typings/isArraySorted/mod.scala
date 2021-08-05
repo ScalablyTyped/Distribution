@@ -19,10 +19,8 @@ object mod {
   //=> true
   ```
   */
-  @scala.inline
-  def apply[T](array: js.Array[T]): Boolean = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def apply[T](array: js.Array[T], options: Options[T]): Boolean = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply[T](array: js.Array[T]): Boolean = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply[T](array: js.Array[T], options: Options[T]): Boolean = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("is-array-sorted", JSImport.Namespace)
   @js.native
@@ -38,17 +36,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[T](comparator: (T, T) => Double): Options[T] = {
+    inline def apply[T](comparator: (T, T) => Double): Options[T] = {
       val __obj = js.Dynamic.literal(comparator = js.Any.fromFunction2(comparator))
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T](x: Self & Options[T]) {
       
-      @scala.inline
-      def setComparator(value: (T, T) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
+      inline def setComparator(value: (T, T) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
     }
   }
 }

@@ -36,50 +36,36 @@ object clearfixMod {
   }
   object ClearfixProps {
     
-    @scala.inline
-    def apply(): ClearfixProps = {
+    inline def apply(): ClearfixProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClearfixProps]
     }
     
-    @scala.inline
-    implicit class ClearfixPropsMutableBuilder[Self <: ClearfixProps] (val x: Self) extends AnyVal {
+    extension [Self <: ClearfixProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
+      inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
       
-      @scala.inline
-      def setVisibleLgBlock(value: Boolean): Self = StObject.set(x, "visibleLgBlock", value.asInstanceOf[js.Any])
+      inline def setVisibleLgBlock(value: Boolean): Self = StObject.set(x, "visibleLgBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleLgBlockUndefined: Self = StObject.set(x, "visibleLgBlock", js.undefined)
+      inline def setVisibleLgBlockUndefined: Self = StObject.set(x, "visibleLgBlock", js.undefined)
       
-      @scala.inline
-      def setVisibleMdBlock(value: Boolean): Self = StObject.set(x, "visibleMdBlock", value.asInstanceOf[js.Any])
+      inline def setVisibleMdBlock(value: Boolean): Self = StObject.set(x, "visibleMdBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleMdBlockUndefined: Self = StObject.set(x, "visibleMdBlock", js.undefined)
+      inline def setVisibleMdBlockUndefined: Self = StObject.set(x, "visibleMdBlock", js.undefined)
       
-      @scala.inline
-      def setVisibleSmBlock(value: Boolean): Self = StObject.set(x, "visibleSmBlock", value.asInstanceOf[js.Any])
+      inline def setVisibleSmBlock(value: Boolean): Self = StObject.set(x, "visibleSmBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleSmBlockUndefined: Self = StObject.set(x, "visibleSmBlock", js.undefined)
+      inline def setVisibleSmBlockUndefined: Self = StObject.set(x, "visibleSmBlock", js.undefined)
       
-      @scala.inline
-      def setVisibleXsBlock(value: Boolean): Self = StObject.set(x, "visibleXsBlock", value.asInstanceOf[js.Any])
+      inline def setVisibleXsBlock(value: Boolean): Self = StObject.set(x, "visibleXsBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleXsBlockUndefined: Self = StObject.set(x, "visibleXsBlock", js.undefined)
+      inline def setVisibleXsBlockUndefined: Self = StObject.set(x, "visibleXsBlock", js.undefined)
     }
   }
 }

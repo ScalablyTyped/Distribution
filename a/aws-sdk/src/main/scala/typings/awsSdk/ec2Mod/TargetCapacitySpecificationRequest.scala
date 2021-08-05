@@ -28,34 +28,25 @@ trait TargetCapacitySpecificationRequest extends StObject {
 }
 object TargetCapacitySpecificationRequest {
   
-  @scala.inline
-  def apply(TotalTargetCapacity: Integer): TargetCapacitySpecificationRequest = {
+  inline def apply(TotalTargetCapacity: Integer): TargetCapacitySpecificationRequest = {
     val __obj = js.Dynamic.literal(TotalTargetCapacity = TotalTargetCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetCapacitySpecificationRequest]
   }
   
-  @scala.inline
-  implicit class TargetCapacitySpecificationRequestMutableBuilder[Self <: TargetCapacitySpecificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TargetCapacitySpecificationRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultTargetCapacityType(value: DefaultTargetCapacityType): Self = StObject.set(x, "DefaultTargetCapacityType", value.asInstanceOf[js.Any])
+    inline def setDefaultTargetCapacityType(value: DefaultTargetCapacityType): Self = StObject.set(x, "DefaultTargetCapacityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTargetCapacityTypeUndefined: Self = StObject.set(x, "DefaultTargetCapacityType", js.undefined)
+    inline def setDefaultTargetCapacityTypeUndefined: Self = StObject.set(x, "DefaultTargetCapacityType", js.undefined)
     
-    @scala.inline
-    def setOnDemandTargetCapacity(value: Integer): Self = StObject.set(x, "OnDemandTargetCapacity", value.asInstanceOf[js.Any])
+    inline def setOnDemandTargetCapacity(value: Integer): Self = StObject.set(x, "OnDemandTargetCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandTargetCapacityUndefined: Self = StObject.set(x, "OnDemandTargetCapacity", js.undefined)
+    inline def setOnDemandTargetCapacityUndefined: Self = StObject.set(x, "OnDemandTargetCapacity", js.undefined)
     
-    @scala.inline
-    def setSpotTargetCapacity(value: Integer): Self = StObject.set(x, "SpotTargetCapacity", value.asInstanceOf[js.Any])
+    inline def setSpotTargetCapacity(value: Integer): Self = StObject.set(x, "SpotTargetCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotTargetCapacityUndefined: Self = StObject.set(x, "SpotTargetCapacity", js.undefined)
+    inline def setSpotTargetCapacityUndefined: Self = StObject.set(x, "SpotTargetCapacity", js.undefined)
     
-    @scala.inline
-    def setTotalTargetCapacity(value: Integer): Self = StObject.set(x, "TotalTargetCapacity", value.asInstanceOf[js.Any])
+    inline def setTotalTargetCapacity(value: Integer): Self = StObject.set(x, "TotalTargetCapacity", value.asInstanceOf[js.Any])
   }
 }

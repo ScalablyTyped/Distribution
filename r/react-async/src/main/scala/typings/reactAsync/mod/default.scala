@@ -13,6 +13,5 @@ class default[T] ()
   extends Component[AsyncProps[T], AsyncState[T, AbstractState[T]], js.Any]
 object default {
   
-  @scala.inline
-  def apply: GenericAsync = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[GenericAsync]
+  inline def apply: GenericAsync = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[GenericAsync]
 }

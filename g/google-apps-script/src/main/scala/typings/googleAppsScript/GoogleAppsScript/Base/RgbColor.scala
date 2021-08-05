@@ -22,8 +22,7 @@ trait RgbColor extends StObject {
 }
 object RgbColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asHexString: () => String,
     getBlue: () => Integer,
     getColorType: () => ColorType,
@@ -34,22 +33,16 @@ object RgbColor {
     __obj.asInstanceOf[RgbColor]
   }
   
-  @scala.inline
-  implicit class RgbColorMutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
+  extension [Self <: RgbColor](x: Self) {
     
-    @scala.inline
-    def setAsHexString(value: () => String): Self = StObject.set(x, "asHexString", js.Any.fromFunction0(value))
+    inline def setAsHexString(value: () => String): Self = StObject.set(x, "asHexString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBlue(value: () => Integer): Self = StObject.set(x, "getBlue", js.Any.fromFunction0(value))
+    inline def setGetBlue(value: () => Integer): Self = StObject.set(x, "getBlue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
+    inline def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGreen(value: () => Integer): Self = StObject.set(x, "getGreen", js.Any.fromFunction0(value))
+    inline def setGetGreen(value: () => Integer): Self = StObject.set(x, "getGreen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRed(value: () => Integer): Self = StObject.set(x, "getRed", js.Any.fromFunction0(value))
+    inline def setGetRed(value: () => Integer): Self = StObject.set(x, "getRed", js.Any.fromFunction0(value))
   }
 }

@@ -14,22 +14,17 @@ trait VideoDecoderStartOption extends StObject {
 }
 object VideoDecoderStartOption {
   
-  @scala.inline
-  def apply(source: String): VideoDecoderStartOption = {
+  inline def apply(source: String): VideoDecoderStartOption = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoDecoderStartOption]
   }
   
-  @scala.inline
-  implicit class VideoDecoderStartOptionMutableBuilder[Self <: VideoDecoderStartOption] (val x: Self) extends AnyVal {
+  extension [Self <: VideoDecoderStartOption](x: Self) {
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

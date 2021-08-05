@@ -22,28 +22,21 @@ trait SchemaListAutoscalingPoliciesResponse extends StObject {
 }
 object SchemaListAutoscalingPoliciesResponse {
   
-  @scala.inline
-  def apply(): SchemaListAutoscalingPoliciesResponse = {
+  inline def apply(): SchemaListAutoscalingPoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListAutoscalingPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListAutoscalingPoliciesResponseMutableBuilder[Self <: SchemaListAutoscalingPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListAutoscalingPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPolicies(value: js.Array[SchemaAutoscalingPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
+    inline def setPolicies(value: js.Array[SchemaAutoscalingPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
+    inline def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
-    @scala.inline
-    def setPoliciesVarargs(value: SchemaAutoscalingPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: SchemaAutoscalingPolicy*): Self = StObject.set(x, "policies", js.Array(value :_*))
   }
 }

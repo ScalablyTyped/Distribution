@@ -20,20 +20,16 @@ trait Import extends StObject {
 }
 object Import {
   
-  @scala.inline
-  def apply(_package: String, version: String): Import = {
+  inline def apply(_package: String, version: String): Import = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     __obj.asInstanceOf[Import]
   }
   
-  @scala.inline
-  implicit class ImportMutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
+  extension [Self <: Import](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

@@ -62,267 +62,267 @@ object datagridMod {
       *
       * This automatically accounts for the dpi ratio.
       */
-    var _blitContent: js.Any = js.native
+    /* private */ var _blitContent: js.Any = js.native
     
-    var _buffer: js.Any = js.native
+    /* private */ var _buffer: js.Any = js.native
     
-    var _bufferGC: js.Any = js.native
+    /* private */ var _bufferGC: js.Any = js.native
     
-    var _canvas: js.Any = js.native
+    /* private */ var _canvas: js.Any = js.native
     
-    var _canvasGC: js.Any = js.native
+    /* private */ var _canvasGC: js.Any = js.native
     
-    var _cellRenderers: js.Any = js.native
+    /* private */ var _cellRenderers: js.Any = js.native
     
-    var _columnHeaderSections: js.Any = js.native
+    /* private */ var _columnHeaderSections: js.Any = js.native
     
-    var _columnSections: js.Any = js.native
+    /* private */ var _columnSections: js.Any = js.native
     
-    var _copyConfig: js.Any = js.native
+    /* private */ var _copyConfig: js.Any = js.native
     
-    var _dataModel: js.Any = js.native
+    /* private */ var _dataModel: js.Any = js.native
     
-    var _dpiRatio: js.Any = js.native
+    /* private */ var _dpiRatio: js.Any = js.native
     
     /**
       * Draw the background for the given paint region.
       */
-    var _drawBackground: js.Any = js.native
+    /* private */ var _drawBackground: js.Any = js.native
     
     /**
       * Draw the body region which intersects the dirty rect.
       */
-    var _drawBodyRegion: js.Any = js.native
+    /* private */ var _drawBodyRegion: js.Any = js.native
     
     /**
       * Draw the body selections for the data grid.
       */
-    var _drawBodySelections: js.Any = js.native
+    /* private */ var _drawBodySelections: js.Any = js.native
     
     /**
       * Draw the cells for the given paint region.
       */
-    var _drawCells: js.Any = js.native
+    /* private */ var _drawCells: js.Any = js.native
     
     /**
       * Draw the column background for the given paint region.
       */
-    var _drawColumnBackground: js.Any = js.native
+    /* private */ var _drawColumnBackground: js.Any = js.native
     
     /**
       * Draw the column header region which intersects the dirty rect.
       */
-    var _drawColumnHeaderRegion: js.Any = js.native
+    /* private */ var _drawColumnHeaderRegion: js.Any = js.native
     
     /**
       * Draw the column header selections for the data grid.
       */
-    var _drawColumnHeaderSelections: js.Any = js.native
+    /* private */ var _drawColumnHeaderSelections: js.Any = js.native
     
     /**
       * Draw the corner header region which intersects the dirty rect.
       */
-    var _drawCornerHeaderRegion: js.Any = js.native
+    /* private */ var _drawCornerHeaderRegion: js.Any = js.native
     
     /**
       * Draw the overlay cursor for the data grid.
       */
-    var _drawCursor: js.Any = js.native
+    /* private */ var _drawCursor: js.Any = js.native
     
     /**
       * Draw the horizontal grid lines for the given paint region.
       */
-    var _drawHorizontalGridLines: js.Any = js.native
+    /* private */ var _drawHorizontalGridLines: js.Any = js.native
     
     /**
       * Draw the row background for the given paint region.
       */
-    var _drawRowBackground: js.Any = js.native
+    /* private */ var _drawRowBackground: js.Any = js.native
     
     /**
       * Draw the row header region which intersects the dirty rect.
       */
-    var _drawRowHeaderRegion: js.Any = js.native
+    /* private */ var _drawRowHeaderRegion: js.Any = js.native
     
     /**
       * Draw the row header selections for the data grid.
       */
-    var _drawRowHeaderSelections: js.Any = js.native
+    /* private */ var _drawRowHeaderSelections: js.Any = js.native
     
     /**
       * Draw the overlay shadows for the data grid.
       */
-    var _drawShadows: js.Any = js.native
+    /* private */ var _drawShadows: js.Any = js.native
     
     /**
       * Draw the vertical grid lines for the given paint region.
       */
-    var _drawVerticalGridLines: js.Any = js.native
+    /* private */ var _drawVerticalGridLines: js.Any = js.native
     
     /**
       * Draw the void region for the dirty rect.
       */
-    var _drawVoidRegion: js.Any = js.native
+    /* private */ var _drawVoidRegion: js.Any = js.native
     
-    var _editingEnabled: js.Any = js.native
+    /* private */ var _editingEnabled: js.Any = js.native
     
-    var _editorController: js.Any = js.native
+    /* private */ var _editorController: js.Any = js.native
     
     /**
       * Handle the `'contextmenu'` event for the data grid.
       */
-    var _evtContextMenu: js.Any = js.native
+    /* private */ var _evtContextMenu: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the data grid.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle the `'dblclick'` event for the data grid.
       */
-    var _evtMouseDoubleClick: js.Any = js.native
+    /* private */ var _evtMouseDoubleClick: js.Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the data grid.
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Handle the `'mouseleave'` event for the data grid.
       */
-    var _evtMouseLeave: js.Any = js.native
+    /* private */ var _evtMouseLeave: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the data grid.
       */
-    var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the data grid.
       */
-    var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: js.Any = js.native
     
     /**
       * Handle the `'wheel'` event for the data grid.
       */
-    var _evtWheel: js.Any = js.native
+    /* private */ var _evtWheel: js.Any = js.native
     
-    var _hScrollBar: js.Any = js.native
+    /* private */ var _hScrollBar: js.Any = js.native
     
-    var _hScrollBarMinHeight: js.Any = js.native
+    /* private */ var _hScrollBarMinHeight: js.Any = js.native
     
-    var _headerVisibility: js.Any = js.native
+    /* private */ var _headerVisibility: js.Any = js.native
     
-    var _keyHandler: js.Any = js.native
+    /* private */ var _keyHandler: js.Any = js.native
     
-    var _mouseHandler: js.Any = js.native
+    /* private */ var _mouseHandler: js.Any = js.native
     
-    var _mousedown: js.Any = js.native
+    /* private */ var _mousedown: js.Any = js.native
     
     /**
       * Handle cells changing in the data model.
       */
-    var _onCellsChanged: js.Any = js.native
+    /* private */ var _onCellsChanged: js.Any = js.native
     
     /**
       * Handle columns being inserted into the data model.
       */
-    var _onColumnsInserted: js.Any = js.native
+    /* private */ var _onColumnsInserted: js.Any = js.native
     
     /**
       * Handle columns moving in the data model.
       */
-    var _onColumnsMoved: js.Any = js.native
+    /* private */ var _onColumnsMoved: js.Any = js.native
     
     /**
       * Handle columns being removed from the data model.
       */
-    var _onColumnsRemoved: js.Any = js.native
+    /* private */ var _onColumnsRemoved: js.Any = js.native
     
     /**
       * A signal handler for the data model `changed` signal.
       */
-    var _onDataModelChanged: js.Any = js.native
+    /* private */ var _onDataModelChanged: js.Any = js.native
     
     /**
       * Handle a full data model reset.
       */
-    var _onModelReset: js.Any = js.native
+    /* private */ var _onModelReset: js.Any = js.native
     
     /**
       * Handle the `pageRequested` signal from a scroll bar.
       */
-    var _onPageRequested: js.Any = js.native
+    /* private */ var _onPageRequested: js.Any = js.native
     
     /**
       * A signal handler for the renderer map `changed` signal.
       */
-    var _onRenderersChanged: js.Any = js.native
+    /* private */ var _onRenderersChanged: js.Any = js.native
     
     /**
       * Handle rows being inserted in the data model.
       */
-    var _onRowsInserted: js.Any = js.native
+    /* private */ var _onRowsInserted: js.Any = js.native
     
     /**
       * Handle rows moving in the data model.
       */
-    var _onRowsMoved: js.Any = js.native
+    /* private */ var _onRowsMoved: js.Any = js.native
     
     /**
       * Handle rows being removed from the data model.
       */
-    var _onRowsRemoved: js.Any = js.native
+    /* private */ var _onRowsRemoved: js.Any = js.native
     
     /**
       * A signal handler for the selection model `changed` signal.
       */
-    var _onSelectionsChanged: js.Any = js.native
+    /* private */ var _onSelectionsChanged: js.Any = js.native
     
     /**
       * Handle the `stepRequested` signal from a scroll bar.
       */
-    var _onStepRequested: js.Any = js.native
+    /* private */ var _onStepRequested: js.Any = js.native
     
     /**
       * Handle the `thumbMoved` signal from a scroll bar.
       */
-    var _onThumbMoved: js.Any = js.native
+    /* private */ var _onThumbMoved: js.Any = js.native
     
     /**
       * A message hook invoked on a viewport `'column-resize-request'` message.
       */
-    var _onViewportColumnResizeRequest: js.Any = js.native
+    /* private */ var _onViewportColumnResizeRequest: js.Any = js.native
     
     /**
       * A message hook invoked on a viewport `'overlay-paint-request'` message.
       */
-    var _onViewportOverlayPaintRequest: js.Any = js.native
+    /* private */ var _onViewportOverlayPaintRequest: js.Any = js.native
     
     /**
       * A message hook invoked on a viewport `'paint-request'` message.
       */
-    var _onViewportPaintRequest: js.Any = js.native
+    /* private */ var _onViewportPaintRequest: js.Any = js.native
     
     /**
       * A message hook invoked on a viewport `'resize'` message.
       */
-    var _onViewportResize: js.Any = js.native
+    /* private */ var _onViewportResize: js.Any = js.native
     
     /**
       * A message hook invoked on a viewport `'row-resize-request'` message.
       */
-    var _onViewportRowResizeRequest: js.Any = js.native
+    /* private */ var _onViewportRowResizeRequest: js.Any = js.native
     
     /**
       * A message hook invoked on a viewport `'scroll-request'` message.
       */
-    var _onViewportScrollRequest: js.Any = js.native
+    /* private */ var _onViewportScrollRequest: js.Any = js.native
     
-    var _overlay: js.Any = js.native
+    /* private */ var _overlay: js.Any = js.native
     
-    var _overlayGC: js.Any = js.native
+    /* private */ var _overlayGC: js.Any = js.native
     
     /**
       * Paint the grid content for the given dirty rect.
@@ -333,7 +333,7 @@ object datagridMod {
       * methods should not be invoked directly. This method dispatches
       * to the drawing methods in the correct order.
       */
-    var _paintContent: js.Any = js.native
+    /* private */ var _paintContent: js.Any = js.native
     
     /**
       * Paint the overlay content for the entire grid.
@@ -342,87 +342,87 @@ object datagridMod {
       * `_draw*` methods should not be invoked directly. This method
       * dispatches to the drawing methods in the correct order.
       */
-    var _paintOverlay: js.Any = js.native
+    /* private */ var _paintOverlay: js.Any = js.native
     
     /**
       * Process a message sent to the viewport
       */
-    var _processViewportMessage: js.Any = js.native
+    /* private */ var _processViewportMessage: js.Any = js.native
     
     /**
       * Refresh the dpi ratio.
       */
-    var _refreshDPI: js.Any = js.native
+    /* private */ var _refreshDPI: js.Any = js.native
     
     /**
       * Release the mouse grab.
       */
-    var _releaseMouse: js.Any = js.native
+    /* private */ var _releaseMouse: js.Any = js.native
     
     /**
       * Schedule a repaint of all of the grid content.
       */
-    var _repaintContent: js.Any = js.native
+    /* private */ var _repaintContent: js.Any = js.native
     
     /**
       * Schedule a repaint of the overlay.
       */
-    var _repaintOverlay: js.Any = js.native
+    /* private */ var _repaintOverlay: js.Any = js.native
     
     /**
       * Schedule a repaint of specific grid content.
       */
-    var _repaintRegion: js.Any = js.native
+    /* private */ var _repaintRegion: js.Any = js.native
     
     /**
       * Ensure the canvas is at least the specified size.
       *
       * This method will retain the valid canvas content.
       */
-    var _resizeCanvasIfNeeded: js.Any = js.native
+    /* private */ var _resizeCanvasIfNeeded: js.Any = js.native
     
     /**
       * Resize a column section immediately.
       */
-    var _resizeColumn: js.Any = js.native
+    /* private */ var _resizeColumn: js.Any = js.native
     
     /**
       * Resize a column header section immediately.
       */
-    var _resizeColumnHeader: js.Any = js.native
+    /* private */ var _resizeColumnHeader: js.Any = js.native
     
     /**
       * Resize a row section immediately.
       */
-    var _resizeRow: js.Any = js.native
+    /* private */ var _resizeRow: js.Any = js.native
     
     /**
       * Resize a row header section immediately.
       */
-    var _resizeRowHeader: js.Any = js.native
+    /* private */ var _resizeRowHeader: js.Any = js.native
     
-    var _rowHeaderSections: js.Any = js.native
+    /* private */ var _rowHeaderSections: js.Any = js.native
     
-    var _rowSections: js.Any = js.native
+    /* private */ var _rowSections: js.Any = js.native
     
-    var _scrollCorner: js.Any = js.native
+    /* private */ var _scrollCorner: js.Any = js.native
     
     /**
       * Scroll immediately to the specified offset position.
       */
-    var _scrollTo: js.Any = js.native
+    /* private */ var _scrollTo: js.Any = js.native
     
-    var _scrollX: js.Any = js.native
+    /* private */ var _scrollX: js.Any = js.native
     
-    var _scrollY: js.Any = js.native
+    /* private */ var _scrollY: js.Any = js.native
     
-    var _selectionModel: js.Any = js.native
+    /* private */ var _selectionModel: js.Any = js.native
     
-    var _stretchLastColumn: js.Any = js.native
+    /* private */ var _stretchLastColumn: js.Any = js.native
     
-    var _stretchLastRow: js.Any = js.native
+    /* private */ var _stretchLastRow: js.Any = js.native
     
-    var _style: js.Any = js.native
+    /* private */ var _style: js.Any = js.native
     
     /**
       * Sync the scroll bars and scroll state with the viewport.
@@ -432,7 +432,7 @@ object datagridMod {
       * fit-request will be dispatched to the data grid to immediately
       * resize the viewport.
       */
-    var _syncScrollState: js.Any = js.native
+    /* private */ var _syncScrollState: js.Any = js.native
     
     /**
       * Sync the viewport to the given scroll position.
@@ -440,17 +440,17 @@ object datagridMod {
       * #### Notes
       * This schedules a full repaint and syncs the scroll state.
       */
-    var _syncViewport: js.Any = js.native
+    /* private */ var _syncViewport: js.Any = js.native
     
-    var _vScrollBar: js.Any = js.native
+    /* private */ var _vScrollBar: js.Any = js.native
     
-    var _vScrollBarMinWidth: js.Any = js.native
+    /* private */ var _vScrollBarMinWidth: js.Any = js.native
     
-    var _viewport: js.Any = js.native
+    /* private */ var _viewport: js.Any = js.native
     
-    var _viewportHeight: js.Any = js.native
+    /* private */ var _viewportHeight: js.Any = js.native
     
-    var _viewportWidth: js.Any = js.native
+    /* private */ var _viewportWidth: js.Any = js.native
     
     /**
       * The virtual height of the grid body.
@@ -977,8 +977,7 @@ object datagridMod {
       * #### Notes
       * This function uses `String()` to coerce a value to a string.
       */
-    @scala.inline
-    def copyFormatGeneric(args: CopyFormatArgs): String = ^.asInstanceOf[js.Dynamic].applyDynamic("copyFormatGeneric")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def copyFormatGeneric(args: CopyFormatArgs): String = ^.asInstanceOf[js.Dynamic].applyDynamic("copyFormatGeneric")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * The default copy config for a data grid.
@@ -1028,8 +1027,7 @@ object datagridMod {
     }
     object CopyConfig {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         format: CopyFormatArgs => String,
         headers: none | row | column | all,
         separator: String,
@@ -1039,20 +1037,15 @@ object datagridMod {
         __obj.asInstanceOf[CopyConfig]
       }
       
-      @scala.inline
-      implicit class CopyConfigMutableBuilder[Self <: CopyConfig] (val x: Self) extends AnyVal {
+      extension [Self <: CopyConfig](x: Self) {
         
-        @scala.inline
-        def setFormat(value: CopyFormatArgs => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+        inline def setFormat(value: CopyFormatArgs => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setHeaders(value: none | row | column | all): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: none | row | column | all): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+        inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWarningThreshold(value: Double): Self = StObject.set(x, "warningThreshold", value.asInstanceOf[js.Any])
+        inline def setWarningThreshold(value: Double): Self = StObject.set(x, "warningThreshold", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1088,29 +1081,22 @@ object datagridMod {
     }
     object CopyFormatArgs {
       
-      @scala.inline
-      def apply(column: Double, metadata: Metadata, region: CellRegion, row: Double, value: js.Any): CopyFormatArgs = {
+      inline def apply(column: Double, metadata: Metadata, region: CellRegion, row: Double, value: js.Any): CopyFormatArgs = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[CopyFormatArgs]
       }
       
-      @scala.inline
-      implicit class CopyFormatArgsMutableBuilder[Self <: CopyFormatArgs] (val x: Self) extends AnyVal {
+      extension [Self <: CopyFormatArgs](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegion(value: CellRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: CellRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+        inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1146,26 +1132,20 @@ object datagridMod {
     }
     object DefaultSizes_ {
       
-      @scala.inline
-      def apply(columnHeaderHeight: Double, columnWidth: Double, rowHeaderWidth: Double, rowHeight: Double): DefaultSizes_ = {
+      inline def apply(columnHeaderHeight: Double, columnWidth: Double, rowHeaderWidth: Double, rowHeight: Double): DefaultSizes_ = {
         val __obj = js.Dynamic.literal(columnHeaderHeight = columnHeaderHeight.asInstanceOf[js.Any], columnWidth = columnWidth.asInstanceOf[js.Any], rowHeaderWidth = rowHeaderWidth.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any])
         __obj.asInstanceOf[DefaultSizes_]
       }
       
-      @scala.inline
-      implicit class DefaultSizes_MutableBuilder[Self <: DefaultSizes_] (val x: Self) extends AnyVal {
+      extension [Self <: DefaultSizes_](x: Self) {
         
-        @scala.inline
-        def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "columnHeaderHeight", value.asInstanceOf[js.Any])
+        inline def setColumnHeaderHeight(value: Double): Self = StObject.set(x, "columnHeaderHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+        inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowHeaderWidth(value: Double): Self = StObject.set(x, "rowHeaderWidth", value.asInstanceOf[js.Any])
+        inline def setRowHeaderWidth(value: Double): Self = StObject.set(x, "rowHeaderWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+        inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1181,17 +1161,13 @@ object datagridMod {
     trait HeaderVisibility extends StObject
     object HeaderVisibility {
       
-      @scala.inline
-      def all: typings.luminoDatagrid.luminoDatagridStrings.all = "all".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.all]
+      inline def all: typings.luminoDatagrid.luminoDatagridStrings.all = "all".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.all]
       
-      @scala.inline
-      def column: typings.luminoDatagrid.luminoDatagridStrings.column = "column".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.column]
+      inline def column: typings.luminoDatagrid.luminoDatagridStrings.column = "column".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.column]
       
-      @scala.inline
-      def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
+      inline def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
       
-      @scala.inline
-      def row: typings.luminoDatagrid.luminoDatagridStrings.row = "row".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.row]
+      inline def row: typings.luminoDatagrid.luminoDatagridStrings.row = "row".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.row]
     }
     
     /**
@@ -1248,8 +1224,7 @@ object datagridMod {
     }
     object HitTestResult {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         column: Double,
         height: Double,
         region: CellRegion | void,
@@ -1262,29 +1237,21 @@ object datagridMod {
         __obj.asInstanceOf[HitTestResult]
       }
       
-      @scala.inline
-      implicit class HitTestResultMutableBuilder[Self <: HitTestResult] (val x: Self) extends AnyVal {
+      extension [Self <: HitTestResult](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegion(value: CellRegion | void): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: CellRegion | void): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+        inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1309,17 +1276,14 @@ object datagridMod {
     }
     object IKeyHandler {
       
-      @scala.inline
-      def apply(dispose: () => Unit, isDisposed: Boolean, onKeyDown: (DataGrid, KeyboardEvent) => Unit): IKeyHandler = {
+      inline def apply(dispose: () => Unit, isDisposed: Boolean, onKeyDown: (DataGrid, KeyboardEvent) => Unit): IKeyHandler = {
         val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = isDisposed.asInstanceOf[js.Any], onKeyDown = js.Any.fromFunction2(onKeyDown))
         __obj.asInstanceOf[IKeyHandler]
       }
       
-      @scala.inline
-      implicit class IKeyHandlerMutableBuilder[Self <: IKeyHandler] (val x: Self) extends AnyVal {
+      extension [Self <: IKeyHandler](x: Self) {
         
-        @scala.inline
-        def setOnKeyDown(value: (DataGrid, KeyboardEvent) => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
+        inline def setOnKeyDown(value: (DataGrid, KeyboardEvent) => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
       }
     }
     
@@ -1413,8 +1377,7 @@ object datagridMod {
     }
     object IMouseHandler {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         dispose: () => Unit,
         isDisposed: Boolean,
         onContextMenu: (DataGrid, MouseEvent) => Unit,
@@ -1431,35 +1394,25 @@ object datagridMod {
         __obj.asInstanceOf[IMouseHandler]
       }
       
-      @scala.inline
-      implicit class IMouseHandlerMutableBuilder[Self <: IMouseHandler] (val x: Self) extends AnyVal {
+      extension [Self <: IMouseHandler](x: Self) {
         
-        @scala.inline
-        def setOnContextMenu(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction2(value))
+        inline def setOnContextMenu(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnMouseDoubleClick(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseDoubleClick", js.Any.fromFunction2(value))
+        inline def setOnMouseDoubleClick(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseDoubleClick", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnMouseDown(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction2(value))
+        inline def setOnMouseDown(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnMouseHover(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseHover", js.Any.fromFunction2(value))
+        inline def setOnMouseHover(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseHover", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnMouseLeave(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction2(value))
+        inline def setOnMouseLeave(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnMouseMove(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction2(value))
+        inline def setOnMouseMove(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnMouseUp(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction2(value))
+        inline def setOnMouseUp(value: (DataGrid, MouseEvent) => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnWheel(value: (DataGrid, WheelEvent) => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction2(value))
+        inline def setOnWheel(value: (DataGrid, WheelEvent) => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+        inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       }
     }
     
@@ -1526,62 +1479,44 @@ object datagridMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCellRenderers(value: RendererMap): Self = StObject.set(x, "cellRenderers", value.asInstanceOf[js.Any])
+        inline def setCellRenderers(value: RendererMap): Self = StObject.set(x, "cellRenderers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCellRenderersUndefined: Self = StObject.set(x, "cellRenderers", js.undefined)
+        inline def setCellRenderersUndefined: Self = StObject.set(x, "cellRenderers", js.undefined)
         
-        @scala.inline
-        def setCopyConfig(value: CopyConfig): Self = StObject.set(x, "copyConfig", value.asInstanceOf[js.Any])
+        inline def setCopyConfig(value: CopyConfig): Self = StObject.set(x, "copyConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCopyConfigUndefined: Self = StObject.set(x, "copyConfig", js.undefined)
+        inline def setCopyConfigUndefined: Self = StObject.set(x, "copyConfig", js.undefined)
         
-        @scala.inline
-        def setDefaultRenderer(value: CellRenderer): Self = StObject.set(x, "defaultRenderer", value.asInstanceOf[js.Any])
+        inline def setDefaultRenderer(value: CellRenderer): Self = StObject.set(x, "defaultRenderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultRendererUndefined: Self = StObject.set(x, "defaultRenderer", js.undefined)
+        inline def setDefaultRendererUndefined: Self = StObject.set(x, "defaultRenderer", js.undefined)
         
-        @scala.inline
-        def setDefaultSizes(value: DefaultSizes_): Self = StObject.set(x, "defaultSizes", value.asInstanceOf[js.Any])
+        inline def setDefaultSizes(value: DefaultSizes_): Self = StObject.set(x, "defaultSizes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultSizesUndefined: Self = StObject.set(x, "defaultSizes", js.undefined)
+        inline def setDefaultSizesUndefined: Self = StObject.set(x, "defaultSizes", js.undefined)
         
-        @scala.inline
-        def setHeaderVisibility(value: HeaderVisibility): Self = StObject.set(x, "headerVisibility", value.asInstanceOf[js.Any])
+        inline def setHeaderVisibility(value: HeaderVisibility): Self = StObject.set(x, "headerVisibility", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderVisibilityUndefined: Self = StObject.set(x, "headerVisibility", js.undefined)
+        inline def setHeaderVisibilityUndefined: Self = StObject.set(x, "headerVisibility", js.undefined)
         
-        @scala.inline
-        def setStretchLastColumn(value: Boolean): Self = StObject.set(x, "stretchLastColumn", value.asInstanceOf[js.Any])
+        inline def setStretchLastColumn(value: Boolean): Self = StObject.set(x, "stretchLastColumn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStretchLastColumnUndefined: Self = StObject.set(x, "stretchLastColumn", js.undefined)
+        inline def setStretchLastColumnUndefined: Self = StObject.set(x, "stretchLastColumn", js.undefined)
         
-        @scala.inline
-        def setStretchLastRow(value: Boolean): Self = StObject.set(x, "stretchLastRow", value.asInstanceOf[js.Any])
+        inline def setStretchLastRow(value: Boolean): Self = StObject.set(x, "stretchLastRow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStretchLastRowUndefined: Self = StObject.set(x, "stretchLastRow", js.undefined)
+        inline def setStretchLastRowUndefined: Self = StObject.set(x, "stretchLastRow", js.undefined)
         
-        @scala.inline
-        def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       }
     }
     
@@ -1709,122 +1644,84 @@ object datagridMod {
     }
     object Style {
       
-      @scala.inline
-      def apply(): Style = {
+      inline def apply(): Style = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Style]
       }
       
-      @scala.inline
-      implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+      extension [Self <: Style](x: Self) {
         
-        @scala.inline
-        def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+        inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+        inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
         
-        @scala.inline
-        def setColumnBackgroundColor(value: /* index */ Double => String): Self = StObject.set(x, "columnBackgroundColor", js.Any.fromFunction1(value))
+        inline def setColumnBackgroundColor(value: /* index */ Double => String): Self = StObject.set(x, "columnBackgroundColor", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setColumnBackgroundColorUndefined: Self = StObject.set(x, "columnBackgroundColor", js.undefined)
+        inline def setColumnBackgroundColorUndefined: Self = StObject.set(x, "columnBackgroundColor", js.undefined)
         
-        @scala.inline
-        def setCursorBorderColor(value: String): Self = StObject.set(x, "cursorBorderColor", value.asInstanceOf[js.Any])
+        inline def setCursorBorderColor(value: String): Self = StObject.set(x, "cursorBorderColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorBorderColorUndefined: Self = StObject.set(x, "cursorBorderColor", js.undefined)
+        inline def setCursorBorderColorUndefined: Self = StObject.set(x, "cursorBorderColor", js.undefined)
         
-        @scala.inline
-        def setCursorFillColor(value: String): Self = StObject.set(x, "cursorFillColor", value.asInstanceOf[js.Any])
+        inline def setCursorFillColor(value: String): Self = StObject.set(x, "cursorFillColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorFillColorUndefined: Self = StObject.set(x, "cursorFillColor", js.undefined)
+        inline def setCursorFillColorUndefined: Self = StObject.set(x, "cursorFillColor", js.undefined)
         
-        @scala.inline
-        def setGridLineColor(value: String): Self = StObject.set(x, "gridLineColor", value.asInstanceOf[js.Any])
+        inline def setGridLineColor(value: String): Self = StObject.set(x, "gridLineColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGridLineColorUndefined: Self = StObject.set(x, "gridLineColor", js.undefined)
+        inline def setGridLineColorUndefined: Self = StObject.set(x, "gridLineColor", js.undefined)
         
-        @scala.inline
-        def setHeaderBackgroundColor(value: String): Self = StObject.set(x, "headerBackgroundColor", value.asInstanceOf[js.Any])
+        inline def setHeaderBackgroundColor(value: String): Self = StObject.set(x, "headerBackgroundColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderBackgroundColorUndefined: Self = StObject.set(x, "headerBackgroundColor", js.undefined)
+        inline def setHeaderBackgroundColorUndefined: Self = StObject.set(x, "headerBackgroundColor", js.undefined)
         
-        @scala.inline
-        def setHeaderGridLineColor(value: String): Self = StObject.set(x, "headerGridLineColor", value.asInstanceOf[js.Any])
+        inline def setHeaderGridLineColor(value: String): Self = StObject.set(x, "headerGridLineColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderGridLineColorUndefined: Self = StObject.set(x, "headerGridLineColor", js.undefined)
+        inline def setHeaderGridLineColorUndefined: Self = StObject.set(x, "headerGridLineColor", js.undefined)
         
-        @scala.inline
-        def setHeaderHorizontalGridLineColor(value: String): Self = StObject.set(x, "headerHorizontalGridLineColor", value.asInstanceOf[js.Any])
+        inline def setHeaderHorizontalGridLineColor(value: String): Self = StObject.set(x, "headerHorizontalGridLineColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderHorizontalGridLineColorUndefined: Self = StObject.set(x, "headerHorizontalGridLineColor", js.undefined)
+        inline def setHeaderHorizontalGridLineColorUndefined: Self = StObject.set(x, "headerHorizontalGridLineColor", js.undefined)
         
-        @scala.inline
-        def setHeaderSelectionBorderColor(value: String): Self = StObject.set(x, "headerSelectionBorderColor", value.asInstanceOf[js.Any])
+        inline def setHeaderSelectionBorderColor(value: String): Self = StObject.set(x, "headerSelectionBorderColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderSelectionBorderColorUndefined: Self = StObject.set(x, "headerSelectionBorderColor", js.undefined)
+        inline def setHeaderSelectionBorderColorUndefined: Self = StObject.set(x, "headerSelectionBorderColor", js.undefined)
         
-        @scala.inline
-        def setHeaderSelectionFillColor(value: String): Self = StObject.set(x, "headerSelectionFillColor", value.asInstanceOf[js.Any])
+        inline def setHeaderSelectionFillColor(value: String): Self = StObject.set(x, "headerSelectionFillColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderSelectionFillColorUndefined: Self = StObject.set(x, "headerSelectionFillColor", js.undefined)
+        inline def setHeaderSelectionFillColorUndefined: Self = StObject.set(x, "headerSelectionFillColor", js.undefined)
         
-        @scala.inline
-        def setHeaderVerticalGridLineColor(value: String): Self = StObject.set(x, "headerVerticalGridLineColor", value.asInstanceOf[js.Any])
+        inline def setHeaderVerticalGridLineColor(value: String): Self = StObject.set(x, "headerVerticalGridLineColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderVerticalGridLineColorUndefined: Self = StObject.set(x, "headerVerticalGridLineColor", js.undefined)
+        inline def setHeaderVerticalGridLineColorUndefined: Self = StObject.set(x, "headerVerticalGridLineColor", js.undefined)
         
-        @scala.inline
-        def setHorizontalGridLineColor(value: String): Self = StObject.set(x, "horizontalGridLineColor", value.asInstanceOf[js.Any])
+        inline def setHorizontalGridLineColor(value: String): Self = StObject.set(x, "horizontalGridLineColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHorizontalGridLineColorUndefined: Self = StObject.set(x, "horizontalGridLineColor", js.undefined)
+        inline def setHorizontalGridLineColorUndefined: Self = StObject.set(x, "horizontalGridLineColor", js.undefined)
         
-        @scala.inline
-        def setRowBackgroundColor(value: /* index */ Double => String): Self = StObject.set(x, "rowBackgroundColor", js.Any.fromFunction1(value))
+        inline def setRowBackgroundColor(value: /* index */ Double => String): Self = StObject.set(x, "rowBackgroundColor", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRowBackgroundColorUndefined: Self = StObject.set(x, "rowBackgroundColor", js.undefined)
+        inline def setRowBackgroundColorUndefined: Self = StObject.set(x, "rowBackgroundColor", js.undefined)
         
-        @scala.inline
-        def setScrollShadow(value: Color1): Self = StObject.set(x, "scrollShadow", value.asInstanceOf[js.Any])
+        inline def setScrollShadow(value: Color1): Self = StObject.set(x, "scrollShadow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollShadowUndefined: Self = StObject.set(x, "scrollShadow", js.undefined)
+        inline def setScrollShadowUndefined: Self = StObject.set(x, "scrollShadow", js.undefined)
         
-        @scala.inline
-        def setSelectionBorderColor(value: String): Self = StObject.set(x, "selectionBorderColor", value.asInstanceOf[js.Any])
+        inline def setSelectionBorderColor(value: String): Self = StObject.set(x, "selectionBorderColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectionBorderColorUndefined: Self = StObject.set(x, "selectionBorderColor", js.undefined)
+        inline def setSelectionBorderColorUndefined: Self = StObject.set(x, "selectionBorderColor", js.undefined)
         
-        @scala.inline
-        def setSelectionFillColor(value: String): Self = StObject.set(x, "selectionFillColor", value.asInstanceOf[js.Any])
+        inline def setSelectionFillColor(value: String): Self = StObject.set(x, "selectionFillColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectionFillColorUndefined: Self = StObject.set(x, "selectionFillColor", js.undefined)
+        inline def setSelectionFillColorUndefined: Self = StObject.set(x, "selectionFillColor", js.undefined)
         
-        @scala.inline
-        def setVerticalGridLineColor(value: String): Self = StObject.set(x, "verticalGridLineColor", value.asInstanceOf[js.Any])
+        inline def setVerticalGridLineColor(value: String): Self = StObject.set(x, "verticalGridLineColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalGridLineColorUndefined: Self = StObject.set(x, "verticalGridLineColor", js.undefined)
+        inline def setVerticalGridLineColorUndefined: Self = StObject.set(x, "verticalGridLineColor", js.undefined)
         
-        @scala.inline
-        def setVoidColor(value: String): Self = StObject.set(x, "voidColor", value.asInstanceOf[js.Any])
+        inline def setVoidColor(value: String): Self = StObject.set(x, "voidColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVoidColorUndefined: Self = StObject.set(x, "voidColor", js.undefined)
+        inline def setVoidColorUndefined: Self = StObject.set(x, "voidColor", js.undefined)
       }
     }
   }

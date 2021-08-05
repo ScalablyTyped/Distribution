@@ -13,8 +13,7 @@ object realMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def real(args: InputsRealInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("real")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def real(args: InputsRealInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("real")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Real", "realConfig")
   @js.native

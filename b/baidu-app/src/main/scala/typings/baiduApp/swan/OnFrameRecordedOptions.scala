@@ -15,19 +15,15 @@ trait OnFrameRecordedOptions extends StObject {
 }
 object OnFrameRecordedOptions {
   
-  @scala.inline
-  def apply(frameBuffer: ArrayBuffer, isLastFrame: Boolean): OnFrameRecordedOptions = {
+  inline def apply(frameBuffer: ArrayBuffer, isLastFrame: Boolean): OnFrameRecordedOptions = {
     val __obj = js.Dynamic.literal(frameBuffer = frameBuffer.asInstanceOf[js.Any], isLastFrame = isLastFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnFrameRecordedOptions]
   }
   
-  @scala.inline
-  implicit class OnFrameRecordedOptionsMutableBuilder[Self <: OnFrameRecordedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OnFrameRecordedOptions](x: Self) {
     
-    @scala.inline
-    def setFrameBuffer(value: ArrayBuffer): Self = StObject.set(x, "frameBuffer", value.asInstanceOf[js.Any])
+    inline def setFrameBuffer(value: ArrayBuffer): Self = StObject.set(x, "frameBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLastFrame(value: Boolean): Self = StObject.set(x, "isLastFrame", value.asInstanceOf[js.Any])
+    inline def setIsLastFrame(value: Boolean): Self = StObject.set(x, "isLastFrame", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait DatabaseDefinition
      with XGroupsSupplier
 object DatabaseDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Groups: XNameAccess,
     Tables: XNameAccess,
     Users: XNameAccess,

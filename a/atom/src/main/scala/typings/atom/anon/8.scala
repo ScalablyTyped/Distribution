@@ -18,28 +18,23 @@ trait `8` extends StObject {
 }
 object `8` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newValue: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
   ): `8` = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[`8`]
   }
   
-  @scala.inline
-  implicit class `8MutableBuilder`[Self <: `8`] (val x: Self) extends AnyVal {
+  extension [Self <: `8`](x: Self) {
     
-    @scala.inline
-    def setNewValue(
+    inline def setNewValue(
       value: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
     ): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(
+    inline def setOldValue(
       value: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
     ): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

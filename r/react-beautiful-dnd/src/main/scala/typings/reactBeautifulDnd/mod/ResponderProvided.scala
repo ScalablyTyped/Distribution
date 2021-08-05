@@ -10,16 +10,13 @@ trait ResponderProvided extends StObject {
 }
 object ResponderProvided {
   
-  @scala.inline
-  def apply(announce: /* message */ String => Unit): ResponderProvided = {
+  inline def apply(announce: /* message */ String => Unit): ResponderProvided = {
     val __obj = js.Dynamic.literal(announce = js.Any.fromFunction1(announce))
     __obj.asInstanceOf[ResponderProvided]
   }
   
-  @scala.inline
-  implicit class ResponderProvidedMutableBuilder[Self <: ResponderProvided] (val x: Self) extends AnyVal {
+  extension [Self <: ResponderProvided](x: Self) {
     
-    @scala.inline
-    def setAnnounce(value: /* message */ String => Unit): Self = StObject.set(x, "announce", js.Any.fromFunction1(value))
+    inline def setAnnounce(value: /* message */ String => Unit): Self = StObject.set(x, "announce", js.Any.fromFunction1(value))
   }
 }

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): x64 | x86 = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[x64 | x86]
+  inline def apply(): x64 | x86 = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[x64 | x86]
   
   @JSImport("arch", JSImport.Namespace)
   @js.native

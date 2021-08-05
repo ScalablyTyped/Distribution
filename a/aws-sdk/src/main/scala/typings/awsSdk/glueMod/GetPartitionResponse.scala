@@ -13,19 +13,15 @@ trait GetPartitionResponse extends StObject {
 }
 object GetPartitionResponse {
   
-  @scala.inline
-  def apply(): GetPartitionResponse = {
+  inline def apply(): GetPartitionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPartitionResponse]
   }
   
-  @scala.inline
-  implicit class GetPartitionResponseMutableBuilder[Self <: GetPartitionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPartitionResponse](x: Self) {
     
-    @scala.inline
-    def setPartition(value: Partition): Self = StObject.set(x, "Partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: Partition): Self = StObject.set(x, "Partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "Partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "Partition", js.undefined)
   }
 }

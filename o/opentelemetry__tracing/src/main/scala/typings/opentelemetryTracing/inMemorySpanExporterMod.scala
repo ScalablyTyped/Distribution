@@ -15,13 +15,13 @@ object inMemorySpanExporterMod {
     extends StObject
        with SpanExporter {
     
-    var _finishedSpans: js.Any = js.native
+    /* private */ var _finishedSpans: js.Any = js.native
     
     /**
       * Indicates if the exporter has been "shutdown."
       * When false, exported spans will not be stored in-memory.
       */
-    var _stopped: Boolean = js.native
+    /* protected */ var _stopped: Boolean = js.native
     
     /**
       * Called to export sampled {@link ReadableSpan}s.

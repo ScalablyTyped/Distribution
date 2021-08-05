@@ -11,19 +11,15 @@ trait DeleteProtectedRangeRequest extends StObject {
 }
 object DeleteProtectedRangeRequest {
   
-  @scala.inline
-  def apply(): DeleteProtectedRangeRequest = {
+  inline def apply(): DeleteProtectedRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteProtectedRangeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProtectedRangeRequestMutableBuilder[Self <: DeleteProtectedRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProtectedRangeRequest](x: Self) {
     
-    @scala.inline
-    def setProtectedRangeId(value: Double): Self = StObject.set(x, "protectedRangeId", value.asInstanceOf[js.Any])
+    inline def setProtectedRangeId(value: Double): Self = StObject.set(x, "protectedRangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedRangeIdUndefined: Self = StObject.set(x, "protectedRangeId", js.undefined)
+    inline def setProtectedRangeIdUndefined: Self = StObject.set(x, "protectedRangeId", js.undefined)
   }
 }

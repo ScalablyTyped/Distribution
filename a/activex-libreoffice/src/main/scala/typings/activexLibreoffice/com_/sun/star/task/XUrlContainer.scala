@@ -44,8 +44,7 @@ trait XUrlContainer
 }
 object XUrlContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addUrl: (String, Boolean) => Unit,
     findUrl: String => String,
@@ -58,19 +57,14 @@ object XUrlContainer {
     __obj.asInstanceOf[XUrlContainer]
   }
   
-  @scala.inline
-  implicit class XUrlContainerMutableBuilder[Self <: XUrlContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XUrlContainer](x: Self) {
     
-    @scala.inline
-    def setAddUrl(value: (String, Boolean) => Unit): Self = StObject.set(x, "addUrl", js.Any.fromFunction2(value))
+    inline def setAddUrl(value: (String, Boolean) => Unit): Self = StObject.set(x, "addUrl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFindUrl(value: String => String): Self = StObject.set(x, "findUrl", js.Any.fromFunction1(value))
+    inline def setFindUrl(value: String => String): Self = StObject.set(x, "findUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUrls(value: Boolean => SafeArray[String]): Self = StObject.set(x, "getUrls", js.Any.fromFunction1(value))
+    inline def setGetUrls(value: Boolean => SafeArray[String]): Self = StObject.set(x, "getUrls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveUrl(value: String => Unit): Self = StObject.set(x, "removeUrl", js.Any.fromFunction1(value))
+    inline def setRemoveUrl(value: String => Unit): Self = StObject.set(x, "removeUrl", js.Any.fromFunction1(value))
   }
 }

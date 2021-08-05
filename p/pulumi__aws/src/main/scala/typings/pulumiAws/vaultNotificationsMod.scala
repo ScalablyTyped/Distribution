@@ -60,21 +60,16 @@ object vaultNotificationsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VaultNotificationsState): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VaultNotificationsState, opts: CustomResourceOptions): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
+    inline def get(name: String, id: Input[ID]): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
+    inline def get(name: String, id: Input[ID], state: VaultNotificationsState): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
+    inline def get(name: String, id: Input[ID], state: VaultNotificationsState, opts: CustomResourceOptions): VaultNotifications = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultNotifications]
     
     /**
       * Returns true if the given object is an instance of VaultNotifications.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vaultNotifications.VaultNotifications */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/vaultNotifications.VaultNotifications */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vaultNotifications.VaultNotifications */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/vaultNotifications.VaultNotifications */ Boolean]
   }
   
   trait VaultNotificationsArgs extends StObject {
@@ -96,8 +91,7 @@ object vaultNotificationsMod {
   }
   object VaultNotificationsArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backupVaultEvents: Input[js.Array[Input[String]]],
       backupVaultName: Input[String],
       snsTopicArn: Input[String]
@@ -106,20 +100,15 @@ object vaultNotificationsMod {
       __obj.asInstanceOf[VaultNotificationsArgs]
     }
     
-    @scala.inline
-    implicit class VaultNotificationsArgsMutableBuilder[Self <: VaultNotificationsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VaultNotificationsArgs](x: Self) {
       
-      @scala.inline
-      def setBackupVaultEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "backupVaultEvents", value.asInstanceOf[js.Any])
+      inline def setBackupVaultEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "backupVaultEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupVaultEventsVarargs(value: Input[String]*): Self = StObject.set(x, "backupVaultEvents", js.Array(value :_*))
+      inline def setBackupVaultEventsVarargs(value: Input[String]*): Self = StObject.set(x, "backupVaultEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setBackupVaultName(value: Input[String]): Self = StObject.set(x, "backupVaultName", value.asInstanceOf[js.Any])
+      inline def setBackupVaultName(value: Input[String]): Self = StObject.set(x, "backupVaultName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+      inline def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,41 +136,30 @@ object vaultNotificationsMod {
   }
   object VaultNotificationsState {
     
-    @scala.inline
-    def apply(): VaultNotificationsState = {
+    inline def apply(): VaultNotificationsState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VaultNotificationsState]
     }
     
-    @scala.inline
-    implicit class VaultNotificationsStateMutableBuilder[Self <: VaultNotificationsState] (val x: Self) extends AnyVal {
+    extension [Self <: VaultNotificationsState](x: Self) {
       
-      @scala.inline
-      def setBackupVaultArn(value: Input[String]): Self = StObject.set(x, "backupVaultArn", value.asInstanceOf[js.Any])
+      inline def setBackupVaultArn(value: Input[String]): Self = StObject.set(x, "backupVaultArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupVaultArnUndefined: Self = StObject.set(x, "backupVaultArn", js.undefined)
+      inline def setBackupVaultArnUndefined: Self = StObject.set(x, "backupVaultArn", js.undefined)
       
-      @scala.inline
-      def setBackupVaultEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "backupVaultEvents", value.asInstanceOf[js.Any])
+      inline def setBackupVaultEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "backupVaultEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupVaultEventsUndefined: Self = StObject.set(x, "backupVaultEvents", js.undefined)
+      inline def setBackupVaultEventsUndefined: Self = StObject.set(x, "backupVaultEvents", js.undefined)
       
-      @scala.inline
-      def setBackupVaultEventsVarargs(value: Input[String]*): Self = StObject.set(x, "backupVaultEvents", js.Array(value :_*))
+      inline def setBackupVaultEventsVarargs(value: Input[String]*): Self = StObject.set(x, "backupVaultEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setBackupVaultName(value: Input[String]): Self = StObject.set(x, "backupVaultName", value.asInstanceOf[js.Any])
+      inline def setBackupVaultName(value: Input[String]): Self = StObject.set(x, "backupVaultName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupVaultNameUndefined: Self = StObject.set(x, "backupVaultName", js.undefined)
+      inline def setBackupVaultNameUndefined: Self = StObject.set(x, "backupVaultName", js.undefined)
       
-      @scala.inline
-      def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+      inline def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
+      inline def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
     }
   }
 }

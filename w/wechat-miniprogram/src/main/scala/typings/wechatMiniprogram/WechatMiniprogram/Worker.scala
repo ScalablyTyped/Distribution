@@ -43,22 +43,17 @@ trait Worker extends StObject {
 }
 object Worker {
   
-  @scala.inline
-  def apply(onMessage: WorkerOnMessageCallback => Unit, postMessage: IAnyObject => Unit, terminate: () => Unit): Worker = {
+  inline def apply(onMessage: WorkerOnMessageCallback => Unit, postMessage: IAnyObject => Unit, terminate: () => Unit): Worker = {
     val __obj = js.Dynamic.literal(onMessage = js.Any.fromFunction1(onMessage), postMessage = js.Any.fromFunction1(postMessage), terminate = js.Any.fromFunction0(terminate))
     __obj.asInstanceOf[Worker]
   }
   
-  @scala.inline
-  implicit class WorkerMutableBuilder[Self <: Worker] (val x: Self) extends AnyVal {
+  extension [Self <: Worker](x: Self) {
     
-    @scala.inline
-    def setOnMessage(value: WorkerOnMessageCallback => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    inline def setOnMessage(value: WorkerOnMessageCallback => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPostMessage(value: IAnyObject => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+    inline def setPostMessage(value: IAnyObject => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+    inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

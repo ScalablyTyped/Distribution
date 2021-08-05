@@ -12,8 +12,7 @@ object traverseFileTreeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(files: js.Array[InternalDataTransferItem], callback: js.Any, isAccepted: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], isAccepted.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(files: js.Array[InternalDataTransferItem], callback: js.Any, isAccepted: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], isAccepted.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait InternalDataTransferItem

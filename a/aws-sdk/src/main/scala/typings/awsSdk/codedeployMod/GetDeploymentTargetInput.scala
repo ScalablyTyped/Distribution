@@ -18,25 +18,19 @@ trait GetDeploymentTargetInput extends StObject {
 }
 object GetDeploymentTargetInput {
   
-  @scala.inline
-  def apply(): GetDeploymentTargetInput = {
+  inline def apply(): GetDeploymentTargetInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDeploymentTargetInput]
   }
   
-  @scala.inline
-  implicit class GetDeploymentTargetInputMutableBuilder[Self <: GetDeploymentTargetInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeploymentTargetInput](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: TargetId): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetId): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait SketchMSImmutableHotspotLayer
 }
 object SketchMSImmutableHotspotLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     booleanOperation: SketchMSLayerBooleanOperation,
     clippingMaskMode: SketchMSLayerClippingMaskMode,
     do_objectID: String,
@@ -43,13 +42,10 @@ object SketchMSImmutableHotspotLayer {
     __obj.asInstanceOf[SketchMSImmutableHotspotLayer]
   }
   
-  @scala.inline
-  implicit class SketchMSImmutableHotspotLayerMutableBuilder[Self <: SketchMSImmutableHotspotLayer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSImmutableHotspotLayer](x: Self) {
     
-    @scala.inline
-    def setFlow(value: SketchMSFlow): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: SketchMSFlow): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: MSImmutableHotspotLayer): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: MSImmutableHotspotLayer): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

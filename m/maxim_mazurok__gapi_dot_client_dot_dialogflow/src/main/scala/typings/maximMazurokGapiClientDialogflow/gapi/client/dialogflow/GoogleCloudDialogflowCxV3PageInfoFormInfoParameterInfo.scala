@@ -29,43 +29,31 @@ trait GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo extends StObject {
 }
 object GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo = {
+  inline def apply(): GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfoMutableBuilder[Self <: GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3PageInfoFormInfoParameterInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setJustCollected(value: Boolean): Self = StObject.set(x, "justCollected", value.asInstanceOf[js.Any])
+    inline def setJustCollected(value: Boolean): Self = StObject.set(x, "justCollected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustCollectedUndefined: Self = StObject.set(x, "justCollected", js.undefined)
+    inline def setJustCollectedUndefined: Self = StObject.set(x, "justCollected", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

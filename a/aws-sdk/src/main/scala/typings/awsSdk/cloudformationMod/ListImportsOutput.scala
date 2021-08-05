@@ -18,28 +18,21 @@ trait ListImportsOutput extends StObject {
 }
 object ListImportsOutput {
   
-  @scala.inline
-  def apply(): ListImportsOutput = {
+  inline def apply(): ListImportsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListImportsOutput]
   }
   
-  @scala.inline
-  implicit class ListImportsOutputMutableBuilder[Self <: ListImportsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListImportsOutput](x: Self) {
     
-    @scala.inline
-    def setImports(value: Imports): Self = StObject.set(x, "Imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: Imports): Self = StObject.set(x, "Imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsUndefined: Self = StObject.set(x, "Imports", js.undefined)
+    inline def setImportsUndefined: Self = StObject.set(x, "Imports", js.undefined)
     
-    @scala.inline
-    def setImportsVarargs(value: StackName*): Self = StObject.set(x, "Imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: StackName*): Self = StObject.set(x, "Imports", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

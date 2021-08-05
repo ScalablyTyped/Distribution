@@ -628,16 +628,14 @@ object mod {
     val yellow: Color = js.native
   }
   
-  @scala.inline
-  def withMobileDialog[P](): js.Function1[
+  inline def withMobileDialog[P](): js.Function1[
     /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
     ComponentType[P & PartialWithWidth]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withMobileDialog")().asInstanceOf[js.Function1[
     /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
     ComponentType[P & PartialWithWidth]
   ]]
-  @scala.inline
-  def withMobileDialog[P](options: WithMobileDialogOptions): js.Function1[
+  inline def withMobileDialog[P](options: WithMobileDialogOptions): js.Function1[
     /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
     ComponentType[P & PartialWithWidth]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withMobileDialog")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -645,10 +643,8 @@ object mod {
     ComponentType[P & PartialWithWidth]
   ]]
   
-  @scala.inline
-  def withWidth(): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWidth")().asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
-  @scala.inline
-  def withWidth(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWidth")(options.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
+  inline def withWidth(): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWidth")().asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
+  inline def withWidth(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWidth")(options.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
   
   trait Color extends StObject {
     
@@ -682,8 +678,7 @@ object mod {
   }
   object Color {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `100`: String,
       `200`: String,
       `300`: String,
@@ -713,50 +708,35 @@ object mod {
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
+      inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set200(value: String): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+      inline def set200(value: String): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
+      inline def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set400(value: String): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
+      inline def set400(value: String): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set50(value: String): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
+      inline def set50(value: String): Self = StObject.set(x, "50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+      inline def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set600(value: String): Self = StObject.set(x, "600", value.asInstanceOf[js.Any])
+      inline def set600(value: String): Self = StObject.set(x, "600", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set700(value: String): Self = StObject.set(x, "700", value.asInstanceOf[js.Any])
+      inline def set700(value: String): Self = StObject.set(x, "700", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set800(value: String): Self = StObject.set(x, "800", value.asInstanceOf[js.Any])
+      inline def set800(value: String): Self = StObject.set(x, "800", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set900(value: String): Self = StObject.set(x, "900", value.asInstanceOf[js.Any])
+      inline def set900(value: String): Self = StObject.set(x, "900", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA100(value: String): Self = StObject.set(x, "A100", value.asInstanceOf[js.Any])
+      inline def setA100(value: String): Self = StObject.set(x, "A100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA200(value: String): Self = StObject.set(x, "A200", value.asInstanceOf[js.Any])
+      inline def setA200(value: String): Self = StObject.set(x, "A200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA400(value: String): Self = StObject.set(x, "A400", value.asInstanceOf[js.Any])
+      inline def setA400(value: String): Self = StObject.set(x, "A400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA700(value: String): Self = StObject.set(x, "A700", value.asInstanceOf[js.Any])
+      inline def setA700(value: String): Self = StObject.set(x, "A700", value.asInstanceOf[js.Any])
     }
   }
   
@@ -775,11 +755,9 @@ object mod {
   trait PaletteType extends StObject
   object PaletteType {
     
-    @scala.inline
-    def dark: typings.materialUiCore.materialUiCoreStrings.dark = "dark".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dark]
+    inline def dark: typings.materialUiCore.materialUiCoreStrings.dark = "dark".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dark]
     
-    @scala.inline
-    def light: typings.materialUiCore.materialUiCoreStrings.light = "light".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.light]
+    inline def light: typings.materialUiCore.materialUiCoreStrings.light = "light".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.light]
   }
   
   type PropInjector[InjectedProps, AdditionalProps] = js.Function1[
@@ -804,20 +782,15 @@ object mod {
     trait Alignment extends StObject
     object Alignment {
       
-      @scala.inline
-      def center: typings.materialUiCore.materialUiCoreStrings.center = "center".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.center]
+      inline def center: typings.materialUiCore.materialUiCoreStrings.center = "center".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.center]
       
-      @scala.inline
-      def inherit: typings.materialUiCore.materialUiCoreStrings.inherit = "inherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inherit]
+      inline def inherit: typings.materialUiCore.materialUiCoreStrings.inherit = "inherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inherit]
       
-      @scala.inline
-      def justify: typings.materialUiCore.materialUiCoreStrings.justify = "justify".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.justify]
+      inline def justify: typings.materialUiCore.materialUiCoreStrings.justify = "justify".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.justify]
       
-      @scala.inline
-      def left: typings.materialUiCore.materialUiCoreStrings.left = "left".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.left]
+      inline def left: typings.materialUiCore.materialUiCoreStrings.left = "left".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.left]
       
-      @scala.inline
-      def right: typings.materialUiCore.materialUiCoreStrings.right = "right".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.right]
+      inline def right: typings.materialUiCore.materialUiCoreStrings.right = "right".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.right]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -829,17 +802,13 @@ object mod {
     trait Color extends StObject
     object Color {
       
-      @scala.inline
-      def default: typings.materialUiCore.materialUiCoreStrings.default = "default".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.default]
+      inline def default: typings.materialUiCore.materialUiCoreStrings.default = "default".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.default]
       
-      @scala.inline
-      def inherit: typings.materialUiCore.materialUiCoreStrings.inherit = "inherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inherit]
+      inline def inherit: typings.materialUiCore.materialUiCoreStrings.inherit = "inherit".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inherit]
       
-      @scala.inline
-      def primary: typings.materialUiCore.materialUiCoreStrings.primary = "primary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.primary]
+      inline def primary: typings.materialUiCore.materialUiCoreStrings.primary = "primary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.primary]
       
-      @scala.inline
-      def secondary: typings.materialUiCore.materialUiCoreStrings.secondary = "secondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.secondary]
+      inline def secondary: typings.materialUiCore.materialUiCoreStrings.secondary = "secondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.secondary]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -850,14 +819,11 @@ object mod {
     trait Margin extends StObject
     object Margin {
       
-      @scala.inline
-      def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
+      inline def dense: typings.materialUiCore.materialUiCoreStrings.dense = "dense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.dense]
       
-      @scala.inline
-      def none: typings.materialUiCore.materialUiCoreStrings.none = "none".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.none]
+      inline def none: typings.materialUiCore.materialUiCoreStrings.none = "none".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.none]
       
-      @scala.inline
-      def normal: typings.materialUiCore.materialUiCoreStrings.normal = "normal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.normal]
+      inline def normal: typings.materialUiCore.materialUiCoreStrings.normal = "normal".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.normal]
     }
   }
   

@@ -17,34 +17,25 @@ trait Graph2dDrawPointsOption extends StObject {
 }
 object Graph2dDrawPointsOption {
   
-  @scala.inline
-  def apply(style: Graph2dDrawPointsStyle): Graph2dDrawPointsOption = {
+  inline def apply(style: Graph2dDrawPointsStyle): Graph2dDrawPointsOption = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graph2dDrawPointsOption]
   }
   
-  @scala.inline
-  implicit class Graph2dDrawPointsOptionMutableBuilder[Self <: Graph2dDrawPointsOption] (val x: Self) extends AnyVal {
+  extension [Self <: Graph2dDrawPointsOption](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setOnRender(value: () => Boolean): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
+    inline def setOnRender(value: () => Boolean): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+    inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: Graph2dDrawPointsStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Graph2dDrawPointsStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

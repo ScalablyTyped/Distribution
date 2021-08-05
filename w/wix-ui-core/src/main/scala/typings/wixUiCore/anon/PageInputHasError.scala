@@ -12,19 +12,15 @@ trait PageInputHasError extends StObject {
 }
 object PageInputHasError {
   
-  @scala.inline
-  def apply(pageInputHasError: Boolean, pageInputValue: String): PageInputHasError = {
+  inline def apply(pageInputHasError: Boolean, pageInputValue: String): PageInputHasError = {
     val __obj = js.Dynamic.literal(pageInputHasError = pageInputHasError.asInstanceOf[js.Any], pageInputValue = pageInputValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageInputHasError]
   }
   
-  @scala.inline
-  implicit class PageInputHasErrorMutableBuilder[Self <: PageInputHasError] (val x: Self) extends AnyVal {
+  extension [Self <: PageInputHasError](x: Self) {
     
-    @scala.inline
-    def setPageInputHasError(value: Boolean): Self = StObject.set(x, "pageInputHasError", value.asInstanceOf[js.Any])
+    inline def setPageInputHasError(value: Boolean): Self = StObject.set(x, "pageInputHasError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInputValue(value: String): Self = StObject.set(x, "pageInputValue", value.asInstanceOf[js.Any])
+    inline def setPageInputValue(value: String): Self = StObject.set(x, "pageInputValue", value.asInstanceOf[js.Any])
   }
 }

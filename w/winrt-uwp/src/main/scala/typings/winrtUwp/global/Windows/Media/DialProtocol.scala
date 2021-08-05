@@ -154,8 +154,7 @@ object DialProtocol {
       * @return True if app launching is supported; false, otherwise.
       */
     /* static member */
-    @scala.inline
-    def deviceInfoSupportsDialAsync(device: DeviceInformation): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("deviceInfoSupportsDialAsync")(device.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def deviceInfoSupportsDialAsync(device: DeviceInformation): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("deviceInfoSupportsDialAsync")(device.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     
     /**
       * Returns a DialDevice object for a given a device ID (acquired from a query using the Windows.Devices.Enumeration APIs).
@@ -163,8 +162,7 @@ object DialProtocol {
       * @return The DialDevice object for the given device ID.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(value: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.DialProtocol.DialDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.DialProtocol.DialDevice]]
+    inline def fromIdAsync(value: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.DialProtocol.DialDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.DialProtocol.DialDevice]]
     
     /**
       * Returns an AQS filter string to be used with the Windows.Devices.Enumeration APIs (such as the CreateWatcher API) for a given Dial app.
@@ -172,8 +170,7 @@ object DialProtocol {
       * @return The AQS filter.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(appName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(appName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(appName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(appName.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** The possible statuses a DIAL device can have in the DIAL device picker. You can use these to adjust the sub-status and other visual attributes for a particular device in the picker. */

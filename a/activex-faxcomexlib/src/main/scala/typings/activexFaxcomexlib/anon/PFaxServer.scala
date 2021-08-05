@@ -11,16 +11,13 @@ trait PFaxServer extends StObject {
 }
 object PFaxServer {
   
-  @scala.inline
-  def apply(pFaxServer: FaxServer): PFaxServer = {
+  inline def apply(pFaxServer: FaxServer): PFaxServer = {
     val __obj = js.Dynamic.literal(pFaxServer = pFaxServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PFaxServer]
   }
   
-  @scala.inline
-  implicit class PFaxServerMutableBuilder[Self <: PFaxServer] (val x: Self) extends AnyVal {
+  extension [Self <: PFaxServer](x: Self) {
     
-    @scala.inline
-    def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
+    inline def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
   }
 }

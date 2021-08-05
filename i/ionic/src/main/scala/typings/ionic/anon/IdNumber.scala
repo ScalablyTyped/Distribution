@@ -10,16 +10,13 @@ trait IdNumber extends StObject {
 }
 object IdNumber {
   
-  @scala.inline
-  def apply(id: Double): IdNumber = {
+  inline def apply(id: Double): IdNumber = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdNumber]
   }
   
-  @scala.inline
-  implicit class IdNumberMutableBuilder[Self <: IdNumber] (val x: Self) extends AnyVal {
+  extension [Self <: IdNumber](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

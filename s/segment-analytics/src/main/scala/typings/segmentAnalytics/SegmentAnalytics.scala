@@ -315,38 +315,28 @@ object SegmentAnalytics {
   }
   object CookieOptions {
     
-    @scala.inline
-    def apply(): CookieOptions = {
+    inline def apply(): CookieOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CookieOptions]
     }
     
-    @scala.inline
-    implicit class CookieOptionsMutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CookieOptions](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setMaxage(value: Double): Self = StObject.set(x, "maxage", value.asInstanceOf[js.Any])
+      inline def setMaxage(value: Double): Self = StObject.set(x, "maxage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxageUndefined: Self = StObject.set(x, "maxage", js.undefined)
+      inline def setMaxageUndefined: Self = StObject.set(x, "maxage", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     }
   }
   
@@ -360,32 +350,24 @@ object SegmentAnalytics {
   }
   object GroupOptions {
     
-    @scala.inline
-    def apply(): GroupOptions = {
+    inline def apply(): GroupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GroupOptions]
     }
     
-    @scala.inline
-    implicit class GroupOptionsMutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GroupOptions](x: Self) {
       
-      @scala.inline
-      def setCookie(value: KeyString): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: KeyString): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setLocalStorage(value: KeyString): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      inline def setLocalStorage(value: KeyString): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
+      inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
       
-      @scala.inline
-      def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+      inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+      inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     }
   }
   
@@ -405,50 +387,36 @@ object SegmentAnalytics {
   }
   object InitOptions {
     
-    @scala.inline
-    def apply(): InitOptions = {
+    inline def apply(): InitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitOptions]
     }
     
-    @scala.inline
-    implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitOptions](x: Self) {
       
-      @scala.inline
-      def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setGroup(value: GroupOptions): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: GroupOptions): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setIntegrations(value: Dictintegration): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: Dictintegration): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      @scala.inline
-      def setLocalStorage(value: StoreOptions): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      inline def setLocalStorage(value: StoreOptions): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
+      inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
       
-      @scala.inline
-      def setMetrics(value: MetricsOptions): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: MetricsOptions): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
       
-      @scala.inline
-      def setUser(value: UserOptions): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: UserOptions): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -466,38 +434,28 @@ object SegmentAnalytics {
   }
   object MetricsOptions {
     
-    @scala.inline
-    def apply(): MetricsOptions = {
+    inline def apply(): MetricsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetricsOptions]
     }
     
-    @scala.inline
-    implicit class MetricsOptionsMutableBuilder[Self <: MetricsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetricsOptions](x: Self) {
       
-      @scala.inline
-      def setFlushTimer(value: Double): Self = StObject.set(x, "flushTimer", value.asInstanceOf[js.Any])
+      inline def setFlushTimer(value: Double): Self = StObject.set(x, "flushTimer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushTimerUndefined: Self = StObject.set(x, "flushTimer", js.undefined)
+      inline def setFlushTimerUndefined: Self = StObject.set(x, "flushTimer", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setMaxQueueSize(value: Double): Self = StObject.set(x, "maxQueueSize", value.asInstanceOf[js.Any])
+      inline def setMaxQueueSize(value: Double): Self = StObject.set(x, "maxQueueSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxQueueSizeUndefined: Self = StObject.set(x, "maxQueueSize", js.undefined)
+      inline def setMaxQueueSizeUndefined: Self = StObject.set(x, "maxQueueSize", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     }
   }
   
@@ -512,32 +470,24 @@ object SegmentAnalytics {
   }
   object SegmentOpts {
     
-    @scala.inline
-    def apply(): SegmentOpts = {
+    inline def apply(): SegmentOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SegmentOpts]
     }
     
-    @scala.inline
-    implicit class SegmentOptsMutableBuilder[Self <: SegmentOpts] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentOpts](x: Self) {
       
-      @scala.inline
-      def setAnonymousId(value: String): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
+      inline def setAnonymousId(value: String): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnonymousIdUndefined: Self = StObject.set(x, "anonymousId", js.undefined)
+      inline def setAnonymousIdUndefined: Self = StObject.set(x, "anonymousId", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setIntegrations(value: js.Any): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: js.Any): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
     }
   }
   
@@ -547,20 +497,16 @@ object SegmentAnalytics {
   }
   object StoreOptions {
     
-    @scala.inline
-    def apply(): StoreOptions = {
+    inline def apply(): StoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StoreOptions]
     }
     
-    @scala.inline
-    implicit class StoreOptionsMutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StoreOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     }
   }
   
@@ -574,32 +520,24 @@ object SegmentAnalytics {
   }
   object UserOptions {
     
-    @scala.inline
-    def apply(): UserOptions = {
+    inline def apply(): UserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserOptions]
     }
     
-    @scala.inline
-    implicit class UserOptionsMutableBuilder[Self <: UserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UserOptions](x: Self) {
       
-      @scala.inline
-      def setCookie(value: Key): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: Key): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setLocalStorage(value: KeyString): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      inline def setLocalStorage(value: KeyString): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
+      inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
       
-      @scala.inline
-      def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+      inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+      inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     }
   }
 }

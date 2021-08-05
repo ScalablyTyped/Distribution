@@ -12,16 +12,13 @@ trait WritableStream extends StObject {
 }
 object WritableStream {
   
-  @scala.inline
-  def apply(close: () => js.Promise[Unit]): WritableStream = {
+  inline def apply(close: () => js.Promise[Unit]): WritableStream = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[WritableStream]
   }
   
-  @scala.inline
-  implicit class WritableStreamMutableBuilder[Self <: WritableStream] (val x: Self) extends AnyVal {
+  extension [Self <: WritableStream](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

@@ -17,20 +17,16 @@ object apiSessionDescriptionHandlerMod {
   }
   object BodyAndContentType {
     
-    @scala.inline
-    def apply(body: String, contentType: String): BodyAndContentType = {
+    inline def apply(body: String, contentType: String): BodyAndContentType = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
       __obj.asInstanceOf[BodyAndContentType]
     }
     
-    @scala.inline
-    implicit class BodyAndContentTypeMutableBuilder[Self <: BodyAndContentType] (val x: Self) extends AnyVal {
+    extension [Self <: BodyAndContentType](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,20 +103,16 @@ object apiSessionDescriptionHandlerMod {
   }
   object SessionDescriptionHandlerOptions {
     
-    @scala.inline
-    def apply(): SessionDescriptionHandlerOptions = {
+    inline def apply(): SessionDescriptionHandlerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionDescriptionHandlerOptions]
     }
     
-    @scala.inline
-    implicit class SessionDescriptionHandlerOptionsMutableBuilder[Self <: SessionDescriptionHandlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SessionDescriptionHandlerOptions](x: Self) {
       
-      @scala.inline
-      def setConstraints(value: js.Object): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: js.Object): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+      inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     }
   }
 }

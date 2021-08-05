@@ -14,25 +14,19 @@ trait Site extends StObject {
 }
 object Site {
   
-  @scala.inline
-  def apply(): Site = {
+  inline def apply(): Site = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Site]
   }
   
-  @scala.inline
-  implicit class SiteMutableBuilder[Self <: Site] (val x: Self) extends AnyVal {
+  extension [Self <: Site](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUrlOrAppId(value: String): Self = StObject.set(x, "urlOrAppId", value.asInstanceOf[js.Any])
+    inline def setUrlOrAppId(value: String): Self = StObject.set(x, "urlOrAppId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlOrAppIdUndefined: Self = StObject.set(x, "urlOrAppId", js.undefined)
+    inline def setUrlOrAppIdUndefined: Self = StObject.set(x, "urlOrAppId", js.undefined)
   }
 }

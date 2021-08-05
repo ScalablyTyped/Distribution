@@ -28,37 +28,27 @@ trait UpdateJobQueueRequest extends StObject {
 }
 object UpdateJobQueueRequest {
   
-  @scala.inline
-  def apply(jobQueue: String): UpdateJobQueueRequest = {
+  inline def apply(jobQueue: String): UpdateJobQueueRequest = {
     val __obj = js.Dynamic.literal(jobQueue = jobQueue.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobQueueRequest]
   }
   
-  @scala.inline
-  implicit class UpdateJobQueueRequestMutableBuilder[Self <: UpdateJobQueueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJobQueueRequest](x: Self) {
     
-    @scala.inline
-    def setComputeEnvironmentOrder(value: ComputeEnvironmentOrders): Self = StObject.set(x, "computeEnvironmentOrder", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironmentOrder(value: ComputeEnvironmentOrders): Self = StObject.set(x, "computeEnvironmentOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeEnvironmentOrderUndefined: Self = StObject.set(x, "computeEnvironmentOrder", js.undefined)
+    inline def setComputeEnvironmentOrderUndefined: Self = StObject.set(x, "computeEnvironmentOrder", js.undefined)
     
-    @scala.inline
-    def setComputeEnvironmentOrderVarargs(value: ComputeEnvironmentOrder*): Self = StObject.set(x, "computeEnvironmentOrder", js.Array(value :_*))
+    inline def setComputeEnvironmentOrderVarargs(value: ComputeEnvironmentOrder*): Self = StObject.set(x, "computeEnvironmentOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
+    inline def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Integer): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Integer): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setState(value: JQState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: JQState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

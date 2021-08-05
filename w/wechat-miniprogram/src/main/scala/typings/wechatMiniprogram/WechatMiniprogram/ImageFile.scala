@@ -17,19 +17,15 @@ trait ImageFile extends StObject {
 }
 object ImageFile {
   
-  @scala.inline
-  def apply(path: String, size: Double): ImageFile = {
+  inline def apply(path: String, size: Double): ImageFile = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageFile]
   }
   
-  @scala.inline
-  implicit class ImageFileMutableBuilder[Self <: ImageFile] (val x: Self) extends AnyVal {
+  extension [Self <: ImageFile](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

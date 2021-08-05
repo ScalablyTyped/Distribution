@@ -23,17 +23,14 @@ trait RawListQuestion[T /* <: Answers */]
 }
 object RawListQuestion {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): RawListQuestion[T] = {
+  inline def apply[T /* <: Answers */](): RawListQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("rawlist")
     __obj.asInstanceOf[RawListQuestion[T]]
   }
   
-  @scala.inline
-  implicit class RawListQuestionMutableBuilder[Self <: RawListQuestion[?], T /* <: Answers */] (val x: Self & RawListQuestion[T]) extends AnyVal {
+  extension [Self <: RawListQuestion[?], T /* <: Answers */](x: Self & RawListQuestion[T]) {
     
-    @scala.inline
-    def setType(value: rawlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: rawlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

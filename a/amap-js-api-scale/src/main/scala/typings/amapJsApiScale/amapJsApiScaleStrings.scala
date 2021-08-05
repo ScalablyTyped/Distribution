@@ -11,37 +11,31 @@ object amapJsApiScaleStrings {
   sealed trait LB
     extends StObject
        with Position
-  @scala.inline
-  def LB: LB = "LB".asInstanceOf[LB]
+  inline def LB: LB = "LB".asInstanceOf[LB]
   
   @js.native
   sealed trait LT
     extends StObject
        with Position
-  @scala.inline
-  def LT: LT = "LT".asInstanceOf[LT]
+  inline def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
   sealed trait RB
     extends StObject
        with Position
-  @scala.inline
-  def RB: RB = "RB".asInstanceOf[RB]
+  inline def RB: RB = "RB".asInstanceOf[RB]
   
   @js.native
   sealed trait RT
     extends StObject
        with Position
-  @scala.inline
-  def RT: RT = "RT".asInstanceOf[RT]
+  inline def RT: RT = "RT".asInstanceOf[RT]
   
   @js.native
   sealed trait hide extends StObject
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
   sealed trait show extends StObject
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
+  inline def show: show = "show".asInstanceOf[show]
 }

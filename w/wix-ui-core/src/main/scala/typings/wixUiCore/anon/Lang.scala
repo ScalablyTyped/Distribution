@@ -17,8 +17,7 @@ trait Lang extends StObject {
 }
 object Lang {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     converterType: Converter,
     handler: typings.wixUiCore.clientsGoogleMapsTypesMod.Handler,
     lang: String,
@@ -28,19 +27,14 @@ object Lang {
     __obj.asInstanceOf[Lang]
   }
   
-  @scala.inline
-  implicit class LangMutableBuilder[Self <: Lang] (val x: Self) extends AnyVal {
+  extension [Self <: Lang](x: Self) {
     
-    @scala.inline
-    def setConverterType(value: Converter): Self = StObject.set(x, "converterType", value.asInstanceOf[js.Any])
+    inline def setConverterType(value: Converter): Self = StObject.set(x, "converterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandler(value: typings.wixUiCore.clientsGoogleMapsTypesMod.Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: typings.wixUiCore.clientsGoogleMapsTypesMod.Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottleInterval(value: Double): Self = StObject.set(x, "throttleInterval", value.asInstanceOf[js.Any])
+    inline def setThrottleInterval(value: Double): Self = StObject.set(x, "throttleInterval", value.asInstanceOf[js.Any])
   }
 }

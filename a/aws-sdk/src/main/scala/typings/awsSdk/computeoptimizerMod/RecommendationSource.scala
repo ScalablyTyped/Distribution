@@ -18,25 +18,19 @@ trait RecommendationSource extends StObject {
 }
 object RecommendationSource {
   
-  @scala.inline
-  def apply(): RecommendationSource = {
+  inline def apply(): RecommendationSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecommendationSource]
   }
   
-  @scala.inline
-  implicit class RecommendationSourceMutableBuilder[Self <: RecommendationSource] (val x: Self) extends AnyVal {
+  extension [Self <: RecommendationSource](x: Self) {
     
-    @scala.inline
-    def setRecommendationSourceArn(value: RecommendationSourceArn): Self = StObject.set(x, "recommendationSourceArn", value.asInstanceOf[js.Any])
+    inline def setRecommendationSourceArn(value: RecommendationSourceArn): Self = StObject.set(x, "recommendationSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationSourceArnUndefined: Self = StObject.set(x, "recommendationSourceArn", js.undefined)
+    inline def setRecommendationSourceArnUndefined: Self = StObject.set(x, "recommendationSourceArn", js.undefined)
     
-    @scala.inline
-    def setRecommendationSourceType(value: RecommendationSourceType): Self = StObject.set(x, "recommendationSourceType", value.asInstanceOf[js.Any])
+    inline def setRecommendationSourceType(value: RecommendationSourceType): Self = StObject.set(x, "recommendationSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationSourceTypeUndefined: Self = StObject.set(x, "recommendationSourceType", js.undefined)
+    inline def setRecommendationSourceTypeUndefined: Self = StObject.set(x, "recommendationSourceType", js.undefined)
   }
 }

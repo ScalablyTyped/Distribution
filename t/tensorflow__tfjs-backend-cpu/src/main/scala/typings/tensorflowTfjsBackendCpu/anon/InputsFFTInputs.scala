@@ -14,19 +14,15 @@ trait InputsFFTInputs extends StObject {
 }
 object InputsFFTInputs {
   
-  @scala.inline
-  def apply(backend: MathBackendCPU, inputs: FFTInputs): InputsFFTInputs = {
+  inline def apply(backend: MathBackendCPU, inputs: FFTInputs): InputsFFTInputs = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputsFFTInputs]
   }
   
-  @scala.inline
-  implicit class InputsFFTInputsMutableBuilder[Self <: InputsFFTInputs] (val x: Self) extends AnyVal {
+  extension [Self <: InputsFFTInputs](x: Self) {
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: FFTInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: FFTInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

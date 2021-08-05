@@ -13,22 +13,17 @@ trait IROOM_VARIABLES_UPDATE extends StObject {
 }
 object IROOM_VARIABLES_UPDATE {
   
-  @scala.inline
-  def apply(changedVars: js.Array[String], room: SFSRoom): IROOM_VARIABLES_UPDATE = {
+  inline def apply(changedVars: js.Array[String], room: SFSRoom): IROOM_VARIABLES_UPDATE = {
     val __obj = js.Dynamic.literal(changedVars = changedVars.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[IROOM_VARIABLES_UPDATE]
   }
   
-  @scala.inline
-  implicit class IROOM_VARIABLES_UPDATEMutableBuilder[Self <: IROOM_VARIABLES_UPDATE] (val x: Self) extends AnyVal {
+  extension [Self <: IROOM_VARIABLES_UPDATE](x: Self) {
     
-    @scala.inline
-    def setChangedVars(value: js.Array[String]): Self = StObject.set(x, "changedVars", value.asInstanceOf[js.Any])
+    inline def setChangedVars(value: js.Array[String]): Self = StObject.set(x, "changedVars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedVarsVarargs(value: String*): Self = StObject.set(x, "changedVars", js.Array(value :_*))
+    inline def setChangedVarsVarargs(value: String*): Self = StObject.set(x, "changedVars", js.Array(value :_*))
     
-    @scala.inline
-    def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

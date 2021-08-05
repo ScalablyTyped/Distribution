@@ -80,85 +80,59 @@ trait BarSize extends StObject {
 }
 object BarSize {
   
-  @scala.inline
-  def apply(): BarSize = {
+  inline def apply(): BarSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarSize]
   }
   
-  @scala.inline
-  implicit class BarSizeMutableBuilder[Self <: BarSize] (val x: Self) extends AnyVal {
+  extension [Self <: BarSize](x: Self) {
     
-    @scala.inline
-    def setBarSize(value: Double): Self = StObject.set(x, "barSize", value.asInstanceOf[js.Any])
+    inline def setBarSize(value: Double): Self = StObject.set(x, "barSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarSizeUndefined: Self = StObject.set(x, "barSize", js.undefined)
+    inline def setBarSizeUndefined: Self = StObject.set(x, "barSize", js.undefined)
     
-    @scala.inline
-    def setBarStyle(value: js.Object): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    inline def setBarStyle(value: js.Object): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
-    @scala.inline
-    def setDirection(value: vertical | horizontal): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: vertical | horizontal): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setHideClass(value: String): Self = StObject.set(x, "hideClass", value.asInstanceOf[js.Any])
+    inline def setHideClass(value: String): Self = StObject.set(x, "hideClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideClassUndefined: Self = StObject.set(x, "hideClass", js.undefined)
+    inline def setHideClassUndefined: Self = StObject.set(x, "hideClass", js.undefined)
     
-    @scala.inline
-    def setInitSize(value: String | Double): Self = StObject.set(x, "initSize", value.asInstanceOf[js.Any])
+    inline def setInitSize(value: String | Double): Self = StObject.set(x, "initSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitSizeUndefined: Self = StObject.set(x, "initSize", js.undefined)
+    inline def setInitSizeUndefined: Self = StObject.set(x, "initSize", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMinSize(value: Double | js.Array[Double]): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double | js.Array[Double]): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
-    @scala.inline
-    def setMinSizeVarargs(value: Double*): Self = StObject.set(x, "minSize", js.Array(value :_*))
+    inline def setMinSizeVarargs(value: Double*): Self = StObject.set(x, "minSize", js.Array(value :_*))
     
-    @scala.inline
-    def setSplitterClass(value: String): Self = StObject.set(x, "splitterClass", value.asInstanceOf[js.Any])
+    inline def setSplitterClass(value: String): Self = StObject.set(x, "splitterClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitterClassUndefined: Self = StObject.set(x, "splitterClass", js.undefined)
+    inline def setSplitterClassUndefined: Self = StObject.set(x, "splitterClass", js.undefined)
     
-    @scala.inline
-    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+    inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

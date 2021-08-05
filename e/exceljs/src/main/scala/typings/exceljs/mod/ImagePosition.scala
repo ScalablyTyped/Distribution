@@ -14,19 +14,15 @@ trait ImagePosition extends StObject {
 }
 object ImagePosition {
   
-  @scala.inline
-  def apply(ext: Height, tl: Col): ImagePosition = {
+  inline def apply(ext: Height, tl: Col): ImagePosition = {
     val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePosition]
   }
   
-  @scala.inline
-  implicit class ImagePositionMutableBuilder[Self <: ImagePosition] (val x: Self) extends AnyVal {
+  extension [Self <: ImagePosition](x: Self) {
     
-    @scala.inline
-    def setExt(value: Height): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: Height): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTl(value: Col): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
+    inline def setTl(value: Col): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
   }
 }

@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def MapContext: typings.react.mod.Context[typings.reactMapGl.mod.MapContextProps] = typings.reactMapGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("_MapContext").asInstanceOf[typings.react.mod.Context[typings.reactMapGl.mod.MapContextProps]]
+inline def MapContext: typings.react.mod.Context[typings.reactMapGl.mod.MapContextProps] = typings.reactMapGl.mod.^.asInstanceOf[js.Dynamic].selectDynamic("_MapContext").asInstanceOf[typings.react.mod.Context[typings.reactMapGl.mod.MapContextProps]]
 
 type ContextViewStateChangeHandler = js.Function1[/* info */ typings.reactMapGl.mod.ContextViewStateChangeInfo, scala.Unit]
 

@@ -19,8 +19,7 @@ trait ElevationLayerElevationQueryResultSampleInfo
 }
 object ElevationLayerElevationQueryResultSampleInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     demResolution: Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object ElevationLayerElevationQueryResultSampleInfo {
     __obj.asInstanceOf[ElevationLayerElevationQueryResultSampleInfo]
   }
   
-  @scala.inline
-  implicit class ElevationLayerElevationQueryResultSampleInfoMutableBuilder[Self <: ElevationLayerElevationQueryResultSampleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ElevationLayerElevationQueryResultSampleInfo](x: Self) {
     
-    @scala.inline
-    def setDemResolution(value: Double): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
+    inline def setDemResolution(value: Double): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
   }
 }

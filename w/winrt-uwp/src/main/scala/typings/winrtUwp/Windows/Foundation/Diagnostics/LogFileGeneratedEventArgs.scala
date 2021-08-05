@@ -13,16 +13,13 @@ trait LogFileGeneratedEventArgs extends StObject {
 }
 object LogFileGeneratedEventArgs {
   
-  @scala.inline
-  def apply(file: StorageFile): LogFileGeneratedEventArgs = {
+  inline def apply(file: StorageFile): LogFileGeneratedEventArgs = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogFileGeneratedEventArgs]
   }
   
-  @scala.inline
-  implicit class LogFileGeneratedEventArgsMutableBuilder[Self <: LogFileGeneratedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: LogFileGeneratedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
   }
 }

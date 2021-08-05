@@ -23,31 +23,23 @@ trait PaginateArgs[T /* <: Response[js.Array[js.Object]] */] extends StObject {
 }
 object PaginateArgs {
   
-  @scala.inline
-  def apply[T /* <: Response[js.Array[js.Object]] */](guard: /* res */ APIResponseSuccess => /* is T */ Boolean, reqgen: () => js.Promise[Req]): PaginateArgs[T] = {
+  inline def apply[T /* <: Response[js.Array[js.Object]] */](guard: /* res */ APIResponseSuccess => /* is T */ Boolean, reqgen: () => js.Promise[Req]): PaginateArgs[T] = {
     val __obj = js.Dynamic.literal(guard = js.Any.fromFunction1(guard), reqgen = js.Any.fromFunction0(reqgen))
     __obj.asInstanceOf[PaginateArgs[T]]
   }
   
-  @scala.inline
-  implicit class PaginateArgsMutableBuilder[Self <: PaginateArgs[?], T /* <: Response[js.Array[js.Object]] */] (val x: Self & PaginateArgs[T]) extends AnyVal {
+  extension [Self <: PaginateArgs[?], T /* <: Response[js.Array[js.Object]] */](x: Self & PaginateArgs[T]) {
     
-    @scala.inline
-    def setGuard(value: /* res */ APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
+    inline def setGuard(value: /* res */ APIResponseSuccess => /* is T */ Boolean): Self = StObject.set(x, "guard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setReqgen(value: () => js.Promise[Req]): Self = StObject.set(x, "reqgen", js.Any.fromFunction0(value))
+    inline def setReqgen(value: () => js.Promise[Req]): Self = StObject.set(x, "reqgen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setState(value: PartialPaginatorState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: PartialPaginatorState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -17,26 +17,20 @@ trait RaspberryRevisionData extends StObject {
 }
 object RaspberryRevisionData {
   
-  @scala.inline
-  def apply(manufacturer: String, processor: String, revision: String, `type`: String): RaspberryRevisionData = {
+  inline def apply(manufacturer: String, processor: String, revision: String, `type`: String): RaspberryRevisionData = {
     val __obj = js.Dynamic.literal(manufacturer = manufacturer.asInstanceOf[js.Any], processor = processor.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaspberryRevisionData]
   }
   
-  @scala.inline
-  implicit class RaspberryRevisionDataMutableBuilder[Self <: RaspberryRevisionData] (val x: Self) extends AnyVal {
+  extension [Self <: RaspberryRevisionData](x: Self) {
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessor(value: String): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
+    inline def setProcessor(value: String): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

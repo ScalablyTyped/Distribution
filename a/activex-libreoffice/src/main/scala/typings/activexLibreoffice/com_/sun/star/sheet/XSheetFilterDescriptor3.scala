@@ -31,8 +31,7 @@ trait XSheetFilterDescriptor3
 }
 object XSheetFilterDescriptor3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FilterFields3: SafeArray[TableFilterField3],
     acquire: () => Unit,
     getFilterFields3: () => SafeArray[TableFilterField3],
@@ -44,16 +43,12 @@ object XSheetFilterDescriptor3 {
     __obj.asInstanceOf[XSheetFilterDescriptor3]
   }
   
-  @scala.inline
-  implicit class XSheetFilterDescriptor3MutableBuilder[Self <: XSheetFilterDescriptor3] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetFilterDescriptor3](x: Self) {
     
-    @scala.inline
-    def setFilterFields3(value: SafeArray[TableFilterField3]): Self = StObject.set(x, "FilterFields3", value.asInstanceOf[js.Any])
+    inline def setFilterFields3(value: SafeArray[TableFilterField3]): Self = StObject.set(x, "FilterFields3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFilterFields3(value: () => SafeArray[TableFilterField3]): Self = StObject.set(x, "getFilterFields3", js.Any.fromFunction0(value))
+    inline def setGetFilterFields3(value: () => SafeArray[TableFilterField3]): Self = StObject.set(x, "getFilterFields3", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFilterFields3(value: SeqEquiv[TableFilterField3] => Unit): Self = StObject.set(x, "setFilterFields3", js.Any.fromFunction1(value))
+    inline def setSetFilterFields3(value: SeqEquiv[TableFilterField3] => Unit): Self = StObject.set(x, "setFilterFields3", js.Any.fromFunction1(value))
   }
 }

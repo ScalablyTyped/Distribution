@@ -18,13 +18,12 @@ trait OMathMatRow extends StObject {
   
   val RowIndex: Double
   
-  @JSName("Word.OMathMatRow_typekey")
+  /* private */ @JSName("Word.OMathMatRow_typekey")
   var WordDotOMathMatRow_typekey: OMathMatRow
 }
 object OMathMatRow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Args: OMathArgs,
     Creator: Double,
@@ -38,28 +37,20 @@ object OMathMatRow {
     __obj.asInstanceOf[OMathMatRow]
   }
   
-  @scala.inline
-  implicit class OMathMatRowMutableBuilder[Self <: OMathMatRow] (val x: Self) extends AnyVal {
+  extension [Self <: OMathMatRow](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgs(value: OMathArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: OMathArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "RowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "RowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathMatRow_typekey(value: OMathMatRow): Self = StObject.set(x, "Word.OMathMatRow_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathMatRow_typekey(value: OMathMatRow): Self = StObject.set(x, "Word.OMathMatRow_typekey", value.asInstanceOf[js.Any])
   }
 }

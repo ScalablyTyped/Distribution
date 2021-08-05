@@ -10,16 +10,13 @@ trait KnockoutSubscription extends StObject {
 }
 object KnockoutSubscription {
   
-  @scala.inline
-  def apply(deferUpdates: Boolean): KnockoutSubscription = {
+  inline def apply(deferUpdates: Boolean): KnockoutSubscription = {
     val __obj = js.Dynamic.literal(deferUpdates = deferUpdates.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutSubscription]
   }
   
-  @scala.inline
-  implicit class KnockoutSubscriptionMutableBuilder[Self <: KnockoutSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutSubscription](x: Self) {
     
-    @scala.inline
-    def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
+    inline def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
   }
 }

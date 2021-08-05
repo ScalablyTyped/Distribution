@@ -21,16 +21,14 @@ object createDrawerNavigatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
       NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any], 
       js.Any
     ]
   ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
-  @scala.inline
-  def default(
+  inline def default(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
       NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any], 

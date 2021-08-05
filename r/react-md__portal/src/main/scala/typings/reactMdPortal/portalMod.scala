@@ -12,8 +12,7 @@ object portalMod {
   
   object Portal {
     
-    @scala.inline
-    def apply(hasIntoIntoIdChildren: PortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasIntoIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(hasIntoIntoIdChildren: PortalProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasIntoIntoIdChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("@react-md/portal/types/Portal", "Portal")
     @js.native
@@ -28,8 +27,7 @@ object portalMod {
       @JSImport("@react-md/portal/types/Portal", "Portal.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/portal/types/Portal", "Portal.propTypes.into")
       @js.native
@@ -38,11 +36,9 @@ object portalMod {
       @JSImport("@react-md/portal/types/Portal", "Portal.propTypes.intoId")
       @js.native
       def intoId: js.Any = js.native
-      @scala.inline
-      def intoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intoId")(x.asInstanceOf[js.Any])
+      inline def intoId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intoId")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def into_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("into")(x.asInstanceOf[js.Any])
+      inline def into_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("into")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -73,38 +69,28 @@ object portalMod {
   }
   object PortalProps {
     
-    @scala.inline
-    def apply(): PortalProps = {
+    inline def apply(): PortalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortalProps]
     }
     
-    @scala.inline
-    implicit class PortalPropsMutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortalProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInto(value: PortalInto): Self = StObject.set(x, "into", value.asInstanceOf[js.Any])
+      inline def setInto(value: PortalInto): Self = StObject.set(x, "into", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntoFunction0(value: () => HTMLElement | Null): Self = StObject.set(x, "into", js.Any.fromFunction0(value))
+      inline def setIntoFunction0(value: () => HTMLElement | Null): Self = StObject.set(x, "into", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIntoId(value: String): Self = StObject.set(x, "intoId", value.asInstanceOf[js.Any])
+      inline def setIntoId(value: String): Self = StObject.set(x, "intoId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntoIdUndefined: Self = StObject.set(x, "intoId", js.undefined)
+      inline def setIntoIdUndefined: Self = StObject.set(x, "intoId", js.undefined)
       
-      @scala.inline
-      def setIntoNull: Self = StObject.set(x, "into", null)
+      inline def setIntoNull: Self = StObject.set(x, "into", null)
       
-      @scala.inline
-      def setIntoUndefined: Self = StObject.set(x, "into", js.undefined)
+      inline def setIntoUndefined: Self = StObject.set(x, "into", js.undefined)
     }
   }
 }

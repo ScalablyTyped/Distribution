@@ -38,49 +38,35 @@ trait InstanceFleetConfig extends StObject {
 }
 object InstanceFleetConfig {
   
-  @scala.inline
-  def apply(InstanceFleetType: InstanceFleetType): InstanceFleetConfig = {
+  inline def apply(InstanceFleetType: InstanceFleetType): InstanceFleetConfig = {
     val __obj = js.Dynamic.literal(InstanceFleetType = InstanceFleetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetConfig]
   }
   
-  @scala.inline
-  implicit class InstanceFleetConfigMutableBuilder[Self <: InstanceFleetConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceFleetConfig](x: Self) {
     
-    @scala.inline
-    def setInstanceFleetType(value: InstanceFleetType): Self = StObject.set(x, "InstanceFleetType", value.asInstanceOf[js.Any])
+    inline def setInstanceFleetType(value: InstanceFleetType): Self = StObject.set(x, "InstanceFleetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeConfigs(value: InstanceTypeConfigList): Self = StObject.set(x, "InstanceTypeConfigs", value.asInstanceOf[js.Any])
+    inline def setInstanceTypeConfigs(value: InstanceTypeConfigList): Self = StObject.set(x, "InstanceTypeConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeConfigsUndefined: Self = StObject.set(x, "InstanceTypeConfigs", js.undefined)
+    inline def setInstanceTypeConfigsUndefined: Self = StObject.set(x, "InstanceTypeConfigs", js.undefined)
     
-    @scala.inline
-    def setInstanceTypeConfigsVarargs(value: InstanceTypeConfig*): Self = StObject.set(x, "InstanceTypeConfigs", js.Array(value :_*))
+    inline def setInstanceTypeConfigsVarargs(value: InstanceTypeConfig*): Self = StObject.set(x, "InstanceTypeConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setLaunchSpecifications(value: InstanceFleetProvisioningSpecifications): Self = StObject.set(x, "LaunchSpecifications", value.asInstanceOf[js.Any])
+    inline def setLaunchSpecifications(value: InstanceFleetProvisioningSpecifications): Self = StObject.set(x, "LaunchSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchSpecificationsUndefined: Self = StObject.set(x, "LaunchSpecifications", js.undefined)
+    inline def setLaunchSpecificationsUndefined: Self = StObject.set(x, "LaunchSpecifications", js.undefined)
     
-    @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setTargetOnDemandCapacity(value: WholeNumber): Self = StObject.set(x, "TargetOnDemandCapacity", value.asInstanceOf[js.Any])
+    inline def setTargetOnDemandCapacity(value: WholeNumber): Self = StObject.set(x, "TargetOnDemandCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetOnDemandCapacityUndefined: Self = StObject.set(x, "TargetOnDemandCapacity", js.undefined)
+    inline def setTargetOnDemandCapacityUndefined: Self = StObject.set(x, "TargetOnDemandCapacity", js.undefined)
     
-    @scala.inline
-    def setTargetSpotCapacity(value: WholeNumber): Self = StObject.set(x, "TargetSpotCapacity", value.asInstanceOf[js.Any])
+    inline def setTargetSpotCapacity(value: WholeNumber): Self = StObject.set(x, "TargetSpotCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSpotCapacityUndefined: Self = StObject.set(x, "TargetSpotCapacity", js.undefined)
+    inline def setTargetSpotCapacityUndefined: Self = StObject.set(x, "TargetSpotCapacity", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait EndpointItemResponse extends StObject {
 }
 object EndpointItemResponse {
   
-  @scala.inline
-  def apply(): EndpointItemResponse = {
+  inline def apply(): EndpointItemResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointItemResponse]
   }
   
-  @scala.inline
-  implicit class EndpointItemResponseMutableBuilder[Self <: EndpointItemResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointItemResponse](x: Self) {
     
-    @scala.inline
-    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: integer): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: integer): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
   }
 }

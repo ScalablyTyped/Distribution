@@ -16,7 +16,7 @@ object notFoundResultMod {
        with NotFoundResult {
     def this(apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
     /* CompleteClass */
@@ -27,21 +27,18 @@ object notFoundResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
   }
   object NotFoundResult {
     
-    @scala.inline
-    def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): NotFoundResult = {
+    inline def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): NotFoundResult = {
       val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync))
       __obj.asInstanceOf[NotFoundResult]
     }
     
-    @scala.inline
-    implicit class NotFoundResultMutableBuilder[Self <: NotFoundResult] (val x: Self) extends AnyVal {
+    extension [Self <: NotFoundResult](x: Self) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
     }
   }
 }

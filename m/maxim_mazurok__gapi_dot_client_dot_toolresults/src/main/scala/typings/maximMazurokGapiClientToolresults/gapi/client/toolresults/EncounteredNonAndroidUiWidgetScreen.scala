@@ -14,28 +14,21 @@ trait EncounteredNonAndroidUiWidgetScreen extends StObject {
 }
 object EncounteredNonAndroidUiWidgetScreen {
   
-  @scala.inline
-  def apply(): EncounteredNonAndroidUiWidgetScreen = {
+  inline def apply(): EncounteredNonAndroidUiWidgetScreen = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncounteredNonAndroidUiWidgetScreen]
   }
   
-  @scala.inline
-  implicit class EncounteredNonAndroidUiWidgetScreenMutableBuilder[Self <: EncounteredNonAndroidUiWidgetScreen] (val x: Self) extends AnyVal {
+  extension [Self <: EncounteredNonAndroidUiWidgetScreen](x: Self) {
     
-    @scala.inline
-    def setDistinctScreens(value: Double): Self = StObject.set(x, "distinctScreens", value.asInstanceOf[js.Any])
+    inline def setDistinctScreens(value: Double): Self = StObject.set(x, "distinctScreens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistinctScreensUndefined: Self = StObject.set(x, "distinctScreens", js.undefined)
+    inline def setDistinctScreensUndefined: Self = StObject.set(x, "distinctScreens", js.undefined)
     
-    @scala.inline
-    def setScreenIds(value: js.Array[String]): Self = StObject.set(x, "screenIds", value.asInstanceOf[js.Any])
+    inline def setScreenIds(value: js.Array[String]): Self = StObject.set(x, "screenIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenIdsUndefined: Self = StObject.set(x, "screenIds", js.undefined)
+    inline def setScreenIdsUndefined: Self = StObject.set(x, "screenIds", js.undefined)
     
-    @scala.inline
-    def setScreenIdsVarargs(value: String*): Self = StObject.set(x, "screenIds", js.Array(value :_*))
+    inline def setScreenIdsVarargs(value: String*): Self = StObject.set(x, "screenIds", js.Array(value :_*))
   }
 }

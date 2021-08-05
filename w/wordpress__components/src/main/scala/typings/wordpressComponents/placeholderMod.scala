@@ -60,44 +60,32 @@ object placeholderMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setIcon(value: IconType[js.Object]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: IconType[js.Object]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+        inline def setInstructions(value: String): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
+        inline def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
         
-        @scala.inline
-        def setIsColumnLayout(value: Boolean): Self = StObject.set(x, "isColumnLayout", value.asInstanceOf[js.Any])
+        inline def setIsColumnLayout(value: Boolean): Self = StObject.set(x, "isColumnLayout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsColumnLayoutUndefined: Self = StObject.set(x, "isColumnLayout", js.undefined)
+        inline def setIsColumnLayoutUndefined: Self = StObject.set(x, "isColumnLayout", js.undefined)
         
-        @scala.inline
-        def setNotices(value: Element): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
+        inline def setNotices(value: Element): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
+        inline def setNoticesUndefined: Self = StObject.set(x, "notices", js.undefined)
         
-        @scala.inline
-        def setPreview(value: Element): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+        inline def setPreview(value: Element): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+        inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       }
     }
   }

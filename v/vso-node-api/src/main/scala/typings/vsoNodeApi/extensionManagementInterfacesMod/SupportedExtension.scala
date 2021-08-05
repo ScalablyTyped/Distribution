@@ -23,23 +23,18 @@ trait SupportedExtension extends StObject {
 }
 object SupportedExtension {
   
-  @scala.inline
-  def apply(`extension`: String, publisher: String, version: String): SupportedExtension = {
+  inline def apply(`extension`: String, publisher: String, version: String): SupportedExtension = {
     val __obj = js.Dynamic.literal(publisher = publisher.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupportedExtension]
   }
   
-  @scala.inline
-  implicit class SupportedExtensionMutableBuilder[Self <: SupportedExtension] (val x: Self) extends AnyVal {
+  extension [Self <: SupportedExtension](x: Self) {
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

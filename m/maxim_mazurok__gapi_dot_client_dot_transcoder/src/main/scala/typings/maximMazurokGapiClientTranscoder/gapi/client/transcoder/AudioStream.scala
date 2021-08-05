@@ -30,55 +30,39 @@ trait AudioStream extends StObject {
 }
 object AudioStream {
   
-  @scala.inline
-  def apply(): AudioStream = {
+  inline def apply(): AudioStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioStream]
   }
   
-  @scala.inline
-  implicit class AudioStreamMutableBuilder[Self <: AudioStream] (val x: Self) extends AnyVal {
+  extension [Self <: AudioStream](x: Self) {
     
-    @scala.inline
-    def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
+    inline def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
+    inline def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
     
-    @scala.inline
-    def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+    inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
+    inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
     
-    @scala.inline
-    def setChannelLayout(value: js.Array[String]): Self = StObject.set(x, "channelLayout", value.asInstanceOf[js.Any])
+    inline def setChannelLayout(value: js.Array[String]): Self = StObject.set(x, "channelLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelLayoutUndefined: Self = StObject.set(x, "channelLayout", js.undefined)
+    inline def setChannelLayoutUndefined: Self = StObject.set(x, "channelLayout", js.undefined)
     
-    @scala.inline
-    def setChannelLayoutVarargs(value: String*): Self = StObject.set(x, "channelLayout", js.Array(value :_*))
+    inline def setChannelLayoutVarargs(value: String*): Self = StObject.set(x, "channelLayout", js.Array(value :_*))
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    @scala.inline
-    def setMapping(value: js.Array[AudioAtom]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: js.Array[AudioAtom]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+    inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
-    @scala.inline
-    def setMappingVarargs(value: AudioAtom*): Self = StObject.set(x, "mapping", js.Array(value :_*))
+    inline def setMappingVarargs(value: AudioAtom*): Self = StObject.set(x, "mapping", js.Array(value :_*))
     
-    @scala.inline
-    def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
+    inline def setSampleRateHertz(value: Double): Self = StObject.set(x, "sampleRateHertz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
+    inline def setSampleRateHertzUndefined: Self = StObject.set(x, "sampleRateHertz", js.undefined)
   }
 }

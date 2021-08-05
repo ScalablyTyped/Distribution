@@ -18,19 +18,15 @@ trait NetworkAttachmentTaskSpec
 }
 object NetworkAttachmentTaskSpec {
   
-  @scala.inline
-  def apply(NetworkAttachmentSpec: ContainerID): NetworkAttachmentTaskSpec = {
+  inline def apply(NetworkAttachmentSpec: ContainerID): NetworkAttachmentTaskSpec = {
     val __obj = js.Dynamic.literal(NetworkAttachmentSpec = NetworkAttachmentSpec.asInstanceOf[js.Any], Runtime = "attachment")
     __obj.asInstanceOf[NetworkAttachmentTaskSpec]
   }
   
-  @scala.inline
-  implicit class NetworkAttachmentTaskSpecMutableBuilder[Self <: NetworkAttachmentTaskSpec] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkAttachmentTaskSpec](x: Self) {
     
-    @scala.inline
-    def setNetworkAttachmentSpec(value: ContainerID): Self = StObject.set(x, "NetworkAttachmentSpec", value.asInstanceOf[js.Any])
+    inline def setNetworkAttachmentSpec(value: ContainerID): Self = StObject.set(x, "NetworkAttachmentSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntime(value: attachment): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
+    inline def setRuntime(value: attachment): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
   }
 }

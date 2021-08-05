@@ -20,25 +20,19 @@ trait IonReorderGroup extends StObject {
 }
 object IonReorderGroup {
   
-  @scala.inline
-  def apply(): IonReorderGroup = {
+  inline def apply(): IonReorderGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonReorderGroup]
   }
   
-  @scala.inline
-  implicit class IonReorderGroupMutableBuilder[Self <: IonReorderGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IonReorderGroup](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setOnIonItemReorder(value: /* event */ CustomEvent[ItemReorderEventDetail] => Unit): Self = StObject.set(x, "onIonItemReorder", js.Any.fromFunction1(value))
+    inline def setOnIonItemReorder(value: /* event */ CustomEvent[ItemReorderEventDetail] => Unit): Self = StObject.set(x, "onIonItemReorder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonItemReorderUndefined: Self = StObject.set(x, "onIonItemReorder", js.undefined)
+    inline def setOnIonItemReorderUndefined: Self = StObject.set(x, "onIonItemReorder", js.undefined)
   }
 }

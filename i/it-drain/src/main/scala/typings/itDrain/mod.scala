@@ -16,10 +16,8 @@ object mod {
     * @param {AsyncIterable<T>|Iterable<T>} source
     * @returns {Promise<void>}
     */
-  @scala.inline
-  def apply[T](source: AsyncIterable[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def apply[T](source: Iterable[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply[T](source: AsyncIterable[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply[T](source: Iterable[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("it-drain/dist", JSImport.Namespace)
   @js.native

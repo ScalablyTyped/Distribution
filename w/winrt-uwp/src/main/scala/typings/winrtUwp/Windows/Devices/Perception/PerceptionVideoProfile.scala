@@ -33,8 +33,7 @@ trait PerceptionVideoProfile extends StObject {
 }
 object PerceptionVideoProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitmapAlphaMode: BitmapAlphaMode,
     bitmapPixelFormat: BitmapPixelFormat,
     frameDuration: Double,
@@ -46,25 +45,18 @@ object PerceptionVideoProfile {
     __obj.asInstanceOf[PerceptionVideoProfile]
   }
   
-  @scala.inline
-  implicit class PerceptionVideoProfileMutableBuilder[Self <: PerceptionVideoProfile] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionVideoProfile](x: Self) {
     
-    @scala.inline
-    def setBitmapAlphaMode(value: BitmapAlphaMode): Self = StObject.set(x, "bitmapAlphaMode", value.asInstanceOf[js.Any])
+    inline def setBitmapAlphaMode(value: BitmapAlphaMode): Self = StObject.set(x, "bitmapAlphaMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmapPixelFormat(value: BitmapPixelFormat): Self = StObject.set(x, "bitmapPixelFormat", value.asInstanceOf[js.Any])
+    inline def setBitmapPixelFormat(value: BitmapPixelFormat): Self = StObject.set(x, "bitmapPixelFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameDuration(value: Double): Self = StObject.set(x, "frameDuration", value.asInstanceOf[js.Any])
+    inline def setFrameDuration(value: Double): Self = StObject.set(x, "frameDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEqual(value: PerceptionVideoProfile => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: PerceptionVideoProfile => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

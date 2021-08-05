@@ -16,24 +16,24 @@ object refresherMod {
     extends StObject
        with ComponentInterface {
     
-    var animations: js.Any = js.native
+    /* private */ var animations: js.Any = js.native
     
-    var appliedStyles: js.Any = js.native
+    /* private */ var appliedStyles: js.Any = js.native
     
-    var backgroundContentEl: js.Any = js.native
+    /* private */ var backgroundContentEl: js.Any = js.native
     
-    var beginRefresh: js.Any = js.native
+    /* private */ var beginRefresh: js.Any = js.native
     
-    var canStart: js.Any = js.native
+    /* private */ var canStart: js.Any = js.native
     
     /**
       * Changes the refresher's state from `refreshing` to `cancelling`.
       */
     def cancel(): js.Promise[Unit] = js.native
     
-    var checkNativeRefresher: js.Any = js.native
+    /* private */ var checkNativeRefresher: js.Any = js.native
     
-    var close: js.Any = js.native
+    /* private */ var close: js.Any = js.native
     
     /**
       * Time it takes to close the refresher.
@@ -59,11 +59,11 @@ object refresherMod {
     @JSName("connectedCallback")
     def connectedCallback_MRefresher(): js.Promise[Unit] = js.native
     
-    var destroyNativeRefresher: js.Any = js.native
+    /* private */ var destroyNativeRefresher: js.Any = js.native
     
-    var didRefresh: js.Any = js.native
+    /* private */ var didRefresh: js.Any = js.native
     
-    var didStart: js.Any = js.native
+    /* private */ var didStart: js.Any = js.native
     
     /**
       * If `true`, the refresher will be hidden.
@@ -77,9 +77,9 @@ object refresherMod {
     
     var el: HTMLIonRefresherElement = js.native
     
-    var elementToTransform: js.Any = js.native
+    /* private */ var elementToTransform: js.Any = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
     /**
       * A number representing how far down the user has pulled.
@@ -110,21 +110,21 @@ object refresherMod {
       */
     var ionStart: EventEmitter[Unit] = js.native
     
-    var lastVelocityY: js.Any = js.native
+    /* private */ var lastVelocityY: js.Any = js.native
     
-    var nativeRefresher: js.Any = js.native
+    /* private */ var nativeRefresher: js.Any = js.native
     
-    var needsCompletion: js.Any = js.native
+    /* private */ var needsCompletion: js.Any = js.native
     
-    var onEnd: js.Any = js.native
+    /* private */ var onEnd: js.Any = js.native
     
-    var onMove: js.Any = js.native
+    /* private */ var onMove: js.Any = js.native
     
-    var onStart: js.Any = js.native
+    /* private */ var onStart: js.Any = js.native
     
-    var pointerDown: js.Any = js.native
+    /* private */ var pointerDown: js.Any = js.native
     
-    var progress: js.Any = js.native
+    /* private */ var progress: js.Any = js.native
     
     /**
       * How much to multiply the pull speed by. To slow the pull animation down,
@@ -162,19 +162,19 @@ object refresherMod {
     @JSName("render")
     def render_MRefresher(): js.Any = js.native
     
-    var resetNativeRefresher: js.Any = js.native
+    /* private */ var resetNativeRefresher: js.Any = js.native
     
-    var scrollEl: js.Any = js.native
+    /* private */ var scrollEl: js.Any = js.native
     
-    var scrollListenerCallback: js.Any = js.native
+    /* private */ var scrollListenerCallback: js.Any = js.native
     
-    var setCss: js.Any = js.native
+    /* private */ var setCss: js.Any = js.native
     
-    var setupMDNativeRefresher: js.Any = js.native
+    /* private */ var setupMDNativeRefresher: js.Any = js.native
     
-    var setupNativeRefresher: js.Any = js.native
+    /* private */ var setupNativeRefresher: js.Any = js.native
     
-    var setupiOSNativeRefresher: js.Any = js.native
+    /* private */ var setupiOSNativeRefresher: js.Any = js.native
     
     /**
       * Time it takes the refresher to to snap back to the `refreshing` state.
@@ -193,6 +193,6 @@ object refresherMod {
       * - `refreshing` - The refresher is actively waiting on the async operation to end. Once the refresh handler calls `complete()` it will begin the `completing` state.
       * - `completing` - The `refreshing` state has finished and the refresher is in the way of closing itself. Once closed, the refresher will go back to the `inactive` state.
       */
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
   }
 }

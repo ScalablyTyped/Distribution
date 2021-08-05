@@ -9,6 +9,5 @@ object global {
   @JSGlobal("is")
   @js.native
   def is: Is = js.native
-  @scala.inline
-  def is_=(x: Is): Unit = js.Dynamic.global.updateDynamic("is")(x.asInstanceOf[js.Any])
+  inline def is_=(x: Is): Unit = js.Dynamic.global.updateDynamic("is")(x.asInstanceOf[js.Any])
 }

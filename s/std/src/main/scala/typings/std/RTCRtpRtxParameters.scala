@@ -10,19 +10,15 @@ trait RTCRtpRtxParameters extends StObject {
 }
 object RTCRtpRtxParameters {
   
-  @scala.inline
-  def apply(): RTCRtpRtxParameters = {
+  inline def apply(): RTCRtpRtxParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCRtpRtxParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtpRtxParametersMutableBuilder[Self <: RTCRtpRtxParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpRtxParameters](x: Self) {
     
-    @scala.inline
-    def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
+    inline def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrcUndefined: Self = StObject.set(x, "ssrc", js.undefined)
+    inline def setSsrcUndefined: Self = StObject.set(x, "ssrc", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait LokiObj extends StObject {
 }
 object LokiObj {
   
-  @scala.inline
-  def apply($loki: Double, meta: Created): LokiObj = {
+  inline def apply($loki: Double, meta: Created): LokiObj = {
     val __obj = js.Dynamic.literal($loki = $loki.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[LokiObj]
   }
   
-  @scala.inline
-  implicit class LokiObjMutableBuilder[Self <: LokiObj] (val x: Self) extends AnyVal {
+  extension [Self <: LokiObj](x: Self) {
     
-    @scala.inline
-    def set$loki(value: Double): Self = StObject.set(x, "$loki", value.asInstanceOf[js.Any])
+    inline def set$loki(value: Double): Self = StObject.set(x, "$loki", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: Created): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Created): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

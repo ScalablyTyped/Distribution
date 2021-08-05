@@ -13,19 +13,15 @@ trait SetBlackboxPatternsParameterType extends StObject {
 }
 object SetBlackboxPatternsParameterType {
   
-  @scala.inline
-  def apply(patterns: js.Array[String]): SetBlackboxPatternsParameterType = {
+  inline def apply(patterns: js.Array[String]): SetBlackboxPatternsParameterType = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBlackboxPatternsParameterType]
   }
   
-  @scala.inline
-  implicit class SetBlackboxPatternsParameterTypeMutableBuilder[Self <: SetBlackboxPatternsParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: SetBlackboxPatternsParameterType](x: Self) {
     
-    @scala.inline
-    def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
   }
 }

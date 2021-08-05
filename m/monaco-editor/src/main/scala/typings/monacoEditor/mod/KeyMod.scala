@@ -30,6 +30,5 @@ object KeyMod {
   @js.native
   val WinCtrl: Double = js.native
   
-  @scala.inline
-  def chord(firstPart: Double, secondPart: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("chord")(firstPart.asInstanceOf[js.Any], secondPart.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def chord(firstPart: Double, secondPart: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("chord")(firstPart.asInstanceOf[js.Any], secondPart.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

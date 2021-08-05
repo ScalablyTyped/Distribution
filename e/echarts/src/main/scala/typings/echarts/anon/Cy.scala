@@ -42,37 +42,27 @@ trait Cy extends StObject {
 }
 object Cy {
   
-  @scala.inline
-  def apply(): Cy = {
+  inline def apply(): Cy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cy]
   }
   
-  @scala.inline
-  implicit class CyMutableBuilder[Self <: Cy] (val x: Self) extends AnyVal {
+  extension [Self <: Cy](x: Self) {
     
-    @scala.inline
-    def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
-    @scala.inline
-    def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR0(value: Double): Self = StObject.set(x, "r0", value.asInstanceOf[js.Any])
+    inline def setR0(value: Double): Self = StObject.set(x, "r0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR0Undefined: Self = StObject.set(x, "r0", js.undefined)
+    inline def setR0Undefined: Self = StObject.set(x, "r0", js.undefined)
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
   }
 }

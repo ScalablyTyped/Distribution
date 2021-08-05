@@ -10,8 +10,7 @@ trait DeleteBucketTaggingOutput
      with typings.awsSdkClientS3Browser.typesDeleteBucketTaggingOutputMod.DeleteBucketTaggingOutput
 object DeleteBucketTaggingOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DeleteBucketTaggingOutput = {
+  inline def apply($metadata: ResponseMetadata): DeleteBucketTaggingOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBucketTaggingOutput]
   }

@@ -16,37 +16,27 @@ trait SchemaVoterInfoSegmentResult extends StObject {
 }
 object SchemaVoterInfoSegmentResult {
   
-  @scala.inline
-  def apply(): SchemaVoterInfoSegmentResult = {
+  inline def apply(): SchemaVoterInfoSegmentResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVoterInfoSegmentResult]
   }
   
-  @scala.inline
-  implicit class SchemaVoterInfoSegmentResultMutableBuilder[Self <: SchemaVoterInfoSegmentResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVoterInfoSegmentResult](x: Self) {
     
-    @scala.inline
-    def setGeneratedMillis(value: String): Self = StObject.set(x, "generatedMillis", value.asInstanceOf[js.Any])
+    inline def setGeneratedMillis(value: String): Self = StObject.set(x, "generatedMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratedMillisUndefined: Self = StObject.set(x, "generatedMillis", js.undefined)
+    inline def setGeneratedMillisUndefined: Self = StObject.set(x, "generatedMillis", js.undefined)
     
-    @scala.inline
-    def setPostalAddress(value: SchemaPostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
+    inline def setPostalAddress(value: SchemaPostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
+    inline def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
     
-    @scala.inline
-    def setRequest(value: SchemaVoterInfoRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: SchemaVoterInfoRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResponse(value: SchemaVoterInfoResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: SchemaVoterInfoResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

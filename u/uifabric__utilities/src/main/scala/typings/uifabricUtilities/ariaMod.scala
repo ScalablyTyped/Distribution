@@ -11,6 +11,5 @@ object ariaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAriaAttributeValues")(ariaAttributes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAriaAttributeValues")(ariaAttributes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

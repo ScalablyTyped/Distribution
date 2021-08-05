@@ -27,8 +27,7 @@ trait PipeableFoldable1[F /* <: /* import warning: transforms.QualifyReferences#
 }
 object PipeableFoldable1 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
     foldMap: Monoid[js.Any] => js.Function1[
       /* f */ js.Function1[/* a */ js.Any, js.Any], 
       js.Function1[
@@ -49,11 +48,9 @@ object PipeableFoldable1 {
     __obj.asInstanceOf[PipeableFoldable1[F]]
   }
   
-  @scala.inline
-  implicit class PipeableFoldable1MutableBuilder[Self <: PipeableFoldable1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & PipeableFoldable1[F]) extends AnyVal {
+  extension [Self <: PipeableFoldable1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & PipeableFoldable1[F]) {
     
-    @scala.inline
-    def setFoldMap(
+    inline def setFoldMap(
       value: Monoid[js.Any] => js.Function1[
           /* f */ js.Function1[/* a */ js.Any, js.Any], 
           js.Function1[
@@ -63,16 +60,14 @@ object PipeableFoldable1 {
         ]
     ): Self = StObject.set(x, "foldMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduce(
+    inline def setReduce(
       value: (js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
           js.Any
         ]
     ): Self = StObject.set(x, "reduce", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReduceRight(
+    inline def setReduceRight(
       value: (js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
           js.Any

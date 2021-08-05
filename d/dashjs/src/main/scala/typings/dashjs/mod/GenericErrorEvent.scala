@@ -23,23 +23,18 @@ trait GenericErrorEvent
 }
 object GenericErrorEvent {
   
-  @scala.inline
-  def apply(error: capability | mediasource | key_session | key_message, event: String): GenericErrorEvent = {
+  inline def apply(error: capability | mediasource | key_session | key_message, event: String): GenericErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[GenericErrorEvent]
   }
   
-  @scala.inline
-  implicit class GenericErrorEventMutableBuilder[Self <: GenericErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GenericErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: capability | mediasource | key_session | key_message): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: capability | mediasource | key_session | key_message): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

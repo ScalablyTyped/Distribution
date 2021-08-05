@@ -15,16 +15,13 @@ trait ExtensionEventUrls
 }
 object ExtensionEventUrls {
   
-  @scala.inline
-  def apply(extensionIcon: String, extensionPage: String, manageExtensionsPage: String): ExtensionEventUrls = {
+  inline def apply(extensionIcon: String, extensionPage: String, manageExtensionsPage: String): ExtensionEventUrls = {
     val __obj = js.Dynamic.literal(extensionIcon = extensionIcon.asInstanceOf[js.Any], extensionPage = extensionPage.asInstanceOf[js.Any], manageExtensionsPage = manageExtensionsPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionEventUrls]
   }
   
-  @scala.inline
-  implicit class ExtensionEventUrlsMutableBuilder[Self <: ExtensionEventUrls] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionEventUrls](x: Self) {
     
-    @scala.inline
-    def setManageExtensionsPage(value: String): Self = StObject.set(x, "manageExtensionsPage", value.asInstanceOf[js.Any])
+    inline def setManageExtensionsPage(value: String): Self = StObject.set(x, "manageExtensionsPage", value.asInstanceOf[js.Any])
   }
 }

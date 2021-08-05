@@ -13,16 +13,13 @@ trait OkResponse extends StObject {
 }
 object OkResponse {
   
-  @scala.inline
-  def apply(ok: Boolean): OkResponse = {
+  inline def apply(ok: Boolean): OkResponse = {
     val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[OkResponse]
   }
   
-  @scala.inline
-  implicit class OkResponseMutableBuilder[Self <: OkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: OkResponse](x: Self) {
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
   }
 }

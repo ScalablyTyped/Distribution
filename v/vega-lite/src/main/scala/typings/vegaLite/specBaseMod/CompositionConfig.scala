@@ -17,19 +17,15 @@ trait CompositionConfig
 }
 object CompositionConfig {
   
-  @scala.inline
-  def apply(): CompositionConfig = {
+  inline def apply(): CompositionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompositionConfig]
   }
   
-  @scala.inline
-  implicit class CompositionConfigMutableBuilder[Self <: CompositionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CompositionConfig](x: Self) {
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

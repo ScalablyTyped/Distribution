@@ -33,8 +33,7 @@ trait ASPxClientRichEditHyperlinkClickEventArgs
 }
 object ASPxClientRichEditHyperlinkClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     handled: Boolean,
     htmlEvent: js.Any,
     hyperlinkType: ASPxClientOfficeDocumentLinkType,
@@ -44,19 +43,14 @@ object ASPxClientRichEditHyperlinkClickEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditHyperlinkClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRichEditHyperlinkClickEventArgsMutableBuilder[Self <: ASPxClientRichEditHyperlinkClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRichEditHyperlinkClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinkType(value: ASPxClientOfficeDocumentLinkType): Self = StObject.set(x, "hyperlinkType", value.asInstanceOf[js.Any])
+    inline def setHyperlinkType(value: ASPxClientOfficeDocumentLinkType): Self = StObject.set(x, "hyperlinkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUri(value: String): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
+    inline def setTargetUri(value: String): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
   }
 }

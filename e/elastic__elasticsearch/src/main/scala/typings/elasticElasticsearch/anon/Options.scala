@@ -16,22 +16,17 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(id: js.Any, options: TransportRequestOptions, params: TransportRequestParams): Options = {
+  inline def apply(id: js.Any, options: TransportRequestOptions, params: TransportRequestParams): Options = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: TransportRequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TransportRequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: TransportRequestParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: TransportRequestParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

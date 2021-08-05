@@ -14,19 +14,15 @@ trait RaphaelAnimationStatus extends StObject {
 }
 object RaphaelAnimationStatus {
   
-  @scala.inline
-  def apply(anim: RaphaelAnimation, status: Double): RaphaelAnimationStatus = {
+  inline def apply(anim: RaphaelAnimation, status: Double): RaphaelAnimationStatus = {
     val __obj = js.Dynamic.literal(anim = anim.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaphaelAnimationStatus]
   }
   
-  @scala.inline
-  implicit class RaphaelAnimationStatusMutableBuilder[Self <: RaphaelAnimationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelAnimationStatus](x: Self) {
     
-    @scala.inline
-    def setAnim(value: RaphaelAnimation): Self = StObject.set(x, "anim", value.asInstanceOf[js.Any])
+    inline def setAnim(value: RaphaelAnimation): Self = StObject.set(x, "anim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

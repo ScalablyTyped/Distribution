@@ -96,89 +96,62 @@ object gridMod {
   }
   object ColProps {
     
-    @scala.inline
-    def apply(): ColProps = {
+    inline def apply(): ColProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColProps]
     }
     
-    @scala.inline
-    implicit class ColPropsMutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColProps](x: Self) {
       
-      @scala.inline
-      def setHide(value: BreakpointsType | js.Array[BreakpointsType]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: BreakpointsType | js.Array[BreakpointsType]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setHideVarargs(value: BreakpointsType*): Self = StObject.set(x, "hide", js.Array(value :_*))
+      inline def setHideVarargs(value: BreakpointsType*): Self = StObject.set(x, "hide", js.Array(value :_*))
       
-      @scala.inline
-      def setLarge(value: Double): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Double): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLarge-offset`(value: Double): Self = StObject.set(x, "large-offset", value.asInstanceOf[js.Any])
+      inline def `setLarge-offset`(value: Double): Self = StObject.set(x, "large-offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLarge-offsetUndefined`: Self = StObject.set(x, "large-offset", js.undefined)
+      inline def `setLarge-offsetUndefined`: Self = StObject.set(x, "large-offset", js.undefined)
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMedium-offset`(value: Double): Self = StObject.set(x, "medium-offset", value.asInstanceOf[js.Any])
+      inline def `setMedium-offset`(value: Double): Self = StObject.set(x, "medium-offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMedium-offsetUndefined`: Self = StObject.set(x, "medium-offset", js.undefined)
+      inline def `setMedium-offsetUndefined`: Self = StObject.set(x, "medium-offset", js.undefined)
       
-      @scala.inline
-      def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+      inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
       
-      @scala.inline
-      def `setNo-gutters`(value: Boolean): Self = StObject.set(x, "no-gutters", value.asInstanceOf[js.Any])
+      inline def `setNo-gutters`(value: Boolean): Self = StObject.set(x, "no-gutters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNo-guttersUndefined`: Self = StObject.set(x, "no-gutters", js.undefined)
+      inline def `setNo-guttersUndefined`: Self = StObject.set(x, "no-gutters", js.undefined)
       
-      @scala.inline
-      def setSmall(value: Double): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Double): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSmall-offset`(value: Double): Self = StObject.set(x, "small-offset", value.asInstanceOf[js.Any])
+      inline def `setSmall-offset`(value: Double): Self = StObject.set(x, "small-offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSmall-offsetUndefined`: Self = StObject.set(x, "small-offset", js.undefined)
+      inline def `setSmall-offsetUndefined`: Self = StObject.set(x, "small-offset", js.undefined)
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setXlarge(value: Double): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
+      inline def setXlarge(value: Double): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setXlarge-offset`(value: Double): Self = StObject.set(x, "xlarge-offset", value.asInstanceOf[js.Any])
+      inline def `setXlarge-offset`(value: Double): Self = StObject.set(x, "xlarge-offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setXlarge-offsetUndefined`: Self = StObject.set(x, "xlarge-offset", js.undefined)
+      inline def `setXlarge-offsetUndefined`: Self = StObject.set(x, "xlarge-offset", js.undefined)
       
-      @scala.inline
-      def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
+      inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
       
-      @scala.inline
-      def setXsmall(value: Double): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
+      inline def setXsmall(value: Double): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setXsmall-offset`(value: Double): Self = StObject.set(x, "xsmall-offset", value.asInstanceOf[js.Any])
+      inline def `setXsmall-offset`(value: Double): Self = StObject.set(x, "xsmall-offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setXsmall-offsetUndefined`: Self = StObject.set(x, "xsmall-offset", js.undefined)
+      inline def `setXsmall-offsetUndefined`: Self = StObject.set(x, "xsmall-offset", js.undefined)
       
-      @scala.inline
-      def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
+      inline def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
     }
   }
   
@@ -196,47 +169,34 @@ object gridMod {
   }
   object ContainerProps {
     
-    @scala.inline
-    def apply(): ContainerProps = {
+    inline def apply(): ContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerProps]
     }
     
-    @scala.inline
-    implicit class ContainerPropsMutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerProps](x: Self) {
       
-      @scala.inline
-      def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+      inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
+      inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
       
-      @scala.inline
-      def setHide(value: BreakpointsType | js.Array[String]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: BreakpointsType | js.Array[String]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
+      inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
       
-      @scala.inline
-      def `setNo-gutters`(value: Boolean): Self = StObject.set(x, "no-gutters", value.asInstanceOf[js.Any])
+      inline def `setNo-gutters`(value: Boolean): Self = StObject.set(x, "no-gutters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNo-guttersUndefined`: Self = StObject.set(x, "no-gutters", js.undefined)
+      inline def `setNo-guttersUndefined`: Self = StObject.set(x, "no-gutters", js.undefined)
       
-      @scala.inline
-      def setTheme(value: BreakpointsComponents): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: BreakpointsComponents): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setWithBreakpoints(value: Boolean): Self = StObject.set(x, "withBreakpoints", value.asInstanceOf[js.Any])
+      inline def setWithBreakpoints(value: Boolean): Self = StObject.set(x, "withBreakpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithBreakpointsUndefined: Self = StObject.set(x, "withBreakpoints", js.undefined)
+      inline def setWithBreakpointsUndefined: Self = StObject.set(x, "withBreakpoints", js.undefined)
     }
   }
   
@@ -256,50 +216,36 @@ object gridMod {
   }
   object HideProps {
     
-    @scala.inline
-    def apply(): HideProps = {
+    inline def apply(): HideProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HideProps]
     }
     
-    @scala.inline
-    implicit class HidePropsMutableBuilder[Self <: HideProps] (val x: Self) extends AnyVal {
+    extension [Self <: HideProps](x: Self) {
       
-      @scala.inline
-      def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setMedium(value: Boolean): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      inline def setMedium(value: Boolean): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+      inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
       
-      @scala.inline
-      def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setTheme(value: BreakpointsObject): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: BreakpointsObject): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setXlarge(value: Boolean): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
+      inline def setXlarge(value: Boolean): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
+      inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
       
-      @scala.inline
-      def setXsmall(value: Boolean): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
+      inline def setXsmall(value: Boolean): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
+      inline def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
     }
   }
   
@@ -315,44 +261,32 @@ object gridMod {
   }
   object RowProps {
     
-    @scala.inline
-    def apply(): RowProps = {
+    inline def apply(): RowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowProps]
     }
     
-    @scala.inline
-    implicit class RowPropsMutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
+    extension [Self <: RowProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setHide(value: BreakpointsType | js.Array[BreakpointsType]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: BreakpointsType | js.Array[BreakpointsType]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setHideVarargs(value: BreakpointsType*): Self = StObject.set(x, "hide", js.Array(value :_*))
+      inline def setHideVarargs(value: BreakpointsType*): Self = StObject.set(x, "hide", js.Array(value :_*))
       
-      @scala.inline
-      def `setNo-gutters`(value: Boolean): Self = StObject.set(x, "no-gutters", value.asInstanceOf[js.Any])
+      inline def `setNo-gutters`(value: Boolean): Self = StObject.set(x, "no-gutters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNo-guttersUndefined`: Self = StObject.set(x, "no-gutters", js.undefined)
+      inline def `setNo-guttersUndefined`: Self = StObject.set(x, "no-gutters", js.undefined)
       
-      @scala.inline
-      def setTheme(value: `11`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `11`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

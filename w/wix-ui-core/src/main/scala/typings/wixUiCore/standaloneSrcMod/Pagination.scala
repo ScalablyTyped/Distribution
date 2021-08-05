@@ -27,12 +27,10 @@ object Pagination {
   @JSImport("wix-ui-core/dist/standalone/src", "Pagination.defaultProps")
   @js.native
   def defaultProps: PartialPaginationPropsClassName = js.native
-  @scala.inline
-  def defaultProps_=(x: PartialPaginationPropsClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: PartialPaginationPropsClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-ui-core/dist/standalone/src", "Pagination.displayName")
   @js.native
   def displayName: String = js.native
-  @scala.inline
-  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

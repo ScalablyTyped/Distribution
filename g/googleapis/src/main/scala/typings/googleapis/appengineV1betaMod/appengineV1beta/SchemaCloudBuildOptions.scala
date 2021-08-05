@@ -27,25 +27,19 @@ trait SchemaCloudBuildOptions extends StObject {
 }
 object SchemaCloudBuildOptions {
   
-  @scala.inline
-  def apply(): SchemaCloudBuildOptions = {
+  inline def apply(): SchemaCloudBuildOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCloudBuildOptions]
   }
   
-  @scala.inline
-  implicit class SchemaCloudBuildOptionsMutableBuilder[Self <: SchemaCloudBuildOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCloudBuildOptions](x: Self) {
     
-    @scala.inline
-    def setAppYamlPath(value: String): Self = StObject.set(x, "appYamlPath", value.asInstanceOf[js.Any])
+    inline def setAppYamlPath(value: String): Self = StObject.set(x, "appYamlPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppYamlPathUndefined: Self = StObject.set(x, "appYamlPath", js.undefined)
+    inline def setAppYamlPathUndefined: Self = StObject.set(x, "appYamlPath", js.undefined)
     
-    @scala.inline
-    def setCloudBuildTimeout(value: String): Self = StObject.set(x, "cloudBuildTimeout", value.asInstanceOf[js.Any])
+    inline def setCloudBuildTimeout(value: String): Self = StObject.set(x, "cloudBuildTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudBuildTimeoutUndefined: Self = StObject.set(x, "cloudBuildTimeout", js.undefined)
+    inline def setCloudBuildTimeoutUndefined: Self = StObject.set(x, "cloudBuildTimeout", js.undefined)
   }
 }

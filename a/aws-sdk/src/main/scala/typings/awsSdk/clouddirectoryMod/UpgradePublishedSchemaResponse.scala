@@ -13,19 +13,15 @@ trait UpgradePublishedSchemaResponse extends StObject {
 }
 object UpgradePublishedSchemaResponse {
   
-  @scala.inline
-  def apply(): UpgradePublishedSchemaResponse = {
+  inline def apply(): UpgradePublishedSchemaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpgradePublishedSchemaResponse]
   }
   
-  @scala.inline
-  implicit class UpgradePublishedSchemaResponseMutableBuilder[Self <: UpgradePublishedSchemaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradePublishedSchemaResponse](x: Self) {
     
-    @scala.inline
-    def setUpgradedSchemaArn(value: Arn): Self = StObject.set(x, "UpgradedSchemaArn", value.asInstanceOf[js.Any])
+    inline def setUpgradedSchemaArn(value: Arn): Self = StObject.set(x, "UpgradedSchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradedSchemaArnUndefined: Self = StObject.set(x, "UpgradedSchemaArn", js.undefined)
+    inline def setUpgradedSchemaArnUndefined: Self = StObject.set(x, "UpgradedSchemaArn", js.undefined)
   }
 }

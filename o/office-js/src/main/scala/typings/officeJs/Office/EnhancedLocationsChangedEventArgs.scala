@@ -23,23 +23,18 @@ trait EnhancedLocationsChangedEventArgs extends StObject {
 }
 object EnhancedLocationsChangedEventArgs {
   
-  @scala.inline
-  def apply(enhancedLocations: js.Array[LocationDetails]): EnhancedLocationsChangedEventArgs = {
+  inline def apply(enhancedLocations: js.Array[LocationDetails]): EnhancedLocationsChangedEventArgs = {
     val __obj = js.Dynamic.literal(enhancedLocations = enhancedLocations.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("olkEnhancedLocationsChanged")
     __obj.asInstanceOf[EnhancedLocationsChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class EnhancedLocationsChangedEventArgsMutableBuilder[Self <: EnhancedLocationsChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedLocationsChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setEnhancedLocations(value: js.Array[LocationDetails]): Self = StObject.set(x, "enhancedLocations", value.asInstanceOf[js.Any])
+    inline def setEnhancedLocations(value: js.Array[LocationDetails]): Self = StObject.set(x, "enhancedLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhancedLocationsVarargs(value: LocationDetails*): Self = StObject.set(x, "enhancedLocations", js.Array(value :_*))
+    inline def setEnhancedLocationsVarargs(value: LocationDetails*): Self = StObject.set(x, "enhancedLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: olkEnhancedLocationsChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: olkEnhancedLocationsChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

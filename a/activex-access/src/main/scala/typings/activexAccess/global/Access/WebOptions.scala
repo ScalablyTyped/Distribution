@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.WebOptions")
 @js.native
-class WebOptions protected ()
+/* private */ class WebOptions ()
   extends StObject
      with typings.activexAccess.Access.WebOptions {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.WebOptions_typekey")
   var AccessDotWebOptions_typekey: typings.activexAccess.Access.WebOptions = js.native
   

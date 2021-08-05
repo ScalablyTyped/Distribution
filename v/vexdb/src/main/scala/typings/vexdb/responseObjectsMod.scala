@@ -34,32 +34,24 @@ object responseObjectsMod {
   }
   object AwardsResponseObject {
     
-    @scala.inline
-    def apply(name: String, order: Double, qualifies: js.Array[String], sku: String, team: String): AwardsResponseObject = {
+    inline def apply(name: String, order: Double, qualifies: js.Array[String], sku: String, team: String): AwardsResponseObject = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], qualifies = qualifies.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any])
       __obj.asInstanceOf[AwardsResponseObject]
     }
     
-    @scala.inline
-    implicit class AwardsResponseObjectMutableBuilder[Self <: AwardsResponseObject] (val x: Self) extends AnyVal {
+    extension [Self <: AwardsResponseObject](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifies(value: js.Array[String]): Self = StObject.set(x, "qualifies", value.asInstanceOf[js.Any])
+      inline def setQualifies(value: js.Array[String]): Self = StObject.set(x, "qualifies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifiesVarargs(value: String*): Self = StObject.set(x, "qualifies", js.Array(value :_*))
+      inline def setQualifiesVarargs(value: String*): Self = StObject.set(x, "qualifies", js.Array(value :_*))
       
-      @scala.inline
-      def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,8 +91,7 @@ object responseObjectsMod {
   }
   object EventsResponseObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       divisions: js.Array[String],
       end: String,
       key: String,
@@ -121,56 +112,39 @@ object responseObjectsMod {
       __obj.asInstanceOf[EventsResponseObject]
     }
     
-    @scala.inline
-    implicit class EventsResponseObjectMutableBuilder[Self <: EventsResponseObject] (val x: Self) extends AnyVal {
+    extension [Self <: EventsResponseObject](x: Self) {
       
-      @scala.inline
-      def setDivisions(value: js.Array[String]): Self = StObject.set(x, "divisions", value.asInstanceOf[js.Any])
+      inline def setDivisions(value: js.Array[String]): Self = StObject.set(x, "divisions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivisionsVarargs(value: String*): Self = StObject.set(x, "divisions", js.Array(value :_*))
+      inline def setDivisionsVarargs(value: String*): Self = StObject.set(x, "divisions", js.Array(value :_*))
       
-      @scala.inline
-      def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_address1(value: String): Self = StObject.set(x, "loc_address1", value.asInstanceOf[js.Any])
+      inline def setLoc_address1(value: String): Self = StObject.set(x, "loc_address1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_address2(value: String): Self = StObject.set(x, "loc_address2", value.asInstanceOf[js.Any])
+      inline def setLoc_address2(value: String): Self = StObject.set(x, "loc_address2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_city(value: String): Self = StObject.set(x, "loc_city", value.asInstanceOf[js.Any])
+      inline def setLoc_city(value: String): Self = StObject.set(x, "loc_city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_country(value: String): Self = StObject.set(x, "loc_country", value.asInstanceOf[js.Any])
+      inline def setLoc_country(value: String): Self = StObject.set(x, "loc_country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_postcode(value: String): Self = StObject.set(x, "loc_postcode", value.asInstanceOf[js.Any])
+      inline def setLoc_postcode(value: String): Self = StObject.set(x, "loc_postcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_region(value: String): Self = StObject.set(x, "loc_region", value.asInstanceOf[js.Any])
+      inline def setLoc_region(value: String): Self = StObject.set(x, "loc_region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_venue(value: String): Self = StObject.set(x, "loc_venue", value.asInstanceOf[js.Any])
+      inline def setLoc_venue(value: String): Self = StObject.set(x, "loc_venue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgram(value: Programs): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Programs): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,8 +190,7 @@ object responseObjectsMod {
   }
   object MatchesResponseObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blue1: String,
       blue2: String,
       blue3: String,
@@ -241,62 +214,43 @@ object responseObjectsMod {
       __obj.asInstanceOf[MatchesResponseObject]
     }
     
-    @scala.inline
-    implicit class MatchesResponseObjectMutableBuilder[Self <: MatchesResponseObject] (val x: Self) extends AnyVal {
+    extension [Self <: MatchesResponseObject](x: Self) {
       
-      @scala.inline
-      def setBlue1(value: String): Self = StObject.set(x, "blue1", value.asInstanceOf[js.Any])
+      inline def setBlue1(value: String): Self = StObject.set(x, "blue1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue2(value: String): Self = StObject.set(x, "blue2", value.asInstanceOf[js.Any])
+      inline def setBlue2(value: String): Self = StObject.set(x, "blue2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue3(value: String): Self = StObject.set(x, "blue3", value.asInstanceOf[js.Any])
+      inline def setBlue3(value: String): Self = StObject.set(x, "blue3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBluescore(value: Double): Self = StObject.set(x, "bluescore", value.asInstanceOf[js.Any])
+      inline def setBluescore(value: Double): Self = StObject.set(x, "bluescore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBluesit(value: String): Self = StObject.set(x, "bluesit", value.asInstanceOf[js.Any])
+      inline def setBluesit(value: String): Self = StObject.set(x, "bluesit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivision(value: String): Self = StObject.set(x, "division", value.asInstanceOf[js.Any])
+      inline def setDivision(value: String): Self = StObject.set(x, "division", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstance(value: Double): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Double): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchnum(value: Double): Self = StObject.set(x, "matchnum", value.asInstanceOf[js.Any])
+      inline def setMatchnum(value: Double): Self = StObject.set(x, "matchnum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed1(value: String): Self = StObject.set(x, "red1", value.asInstanceOf[js.Any])
+      inline def setRed1(value: String): Self = StObject.set(x, "red1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed2(value: String): Self = StObject.set(x, "red2", value.asInstanceOf[js.Any])
+      inline def setRed2(value: String): Self = StObject.set(x, "red2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed3(value: String): Self = StObject.set(x, "red3", value.asInstanceOf[js.Any])
+      inline def setRed3(value: String): Self = StObject.set(x, "red3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedscore(value: Double): Self = StObject.set(x, "redscore", value.asInstanceOf[js.Any])
+      inline def setRedscore(value: Double): Self = StObject.set(x, "redscore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedsit(value: String): Self = StObject.set(x, "redsit", value.asInstanceOf[js.Any])
+      inline def setRedsit(value: String): Self = StObject.set(x, "redsit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRound(value: `1` | `2` | `3` | `4` | `5` | `6` | `16`): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: `1` | `2` | `3` | `4` | `5` | `6` | `16`): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduled(value: String): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
+      inline def setScheduled(value: String): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScored(value: `0` | `1`): Self = StObject.set(x, "scored", value.asInstanceOf[js.Any])
+      inline def setScored(value: `0` | `1`): Self = StObject.set(x, "scored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
     }
   }
   
@@ -336,8 +290,7 @@ object responseObjectsMod {
   }
   object RankingsResponseObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ap: Double,
       ccwm: Double,
       division: String,
@@ -358,53 +311,37 @@ object responseObjectsMod {
       __obj.asInstanceOf[RankingsResponseObject]
     }
     
-    @scala.inline
-    implicit class RankingsResponseObjectMutableBuilder[Self <: RankingsResponseObject] (val x: Self) extends AnyVal {
+    extension [Self <: RankingsResponseObject](x: Self) {
       
-      @scala.inline
-      def setAp(value: Double): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
+      inline def setAp(value: Double): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcwm(value: Double): Self = StObject.set(x, "ccwm", value.asInstanceOf[js.Any])
+      inline def setCcwm(value: Double): Self = StObject.set(x, "ccwm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivision(value: String): Self = StObject.set(x, "division", value.asInstanceOf[js.Any])
+      inline def setDivision(value: String): Self = StObject.set(x, "division", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDpr(value: Double): Self = StObject.set(x, "dpr", value.asInstanceOf[js.Any])
+      inline def setDpr(value: Double): Self = StObject.set(x, "dpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLosses(value: Double): Self = StObject.set(x, "losses", value.asInstanceOf[js.Any])
+      inline def setLosses(value: Double): Self = StObject.set(x, "losses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_score(value: Double): Self = StObject.set(x, "max_score", value.asInstanceOf[js.Any])
+      inline def setMax_score(value: Double): Self = StObject.set(x, "max_score", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpr(value: Double): Self = StObject.set(x, "opr", value.asInstanceOf[js.Any])
+      inline def setOpr(value: Double): Self = StObject.set(x, "opr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSp(value: Double): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
+      inline def setSp(value: Double): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTies(value: Double): Self = StObject.set(x, "ties", value.asInstanceOf[js.Any])
+      inline def setTies(value: Double): Self = StObject.set(x, "ties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrsp(value: Double): Self = StObject.set(x, "trsp", value.asInstanceOf[js.Any])
+      inline def setTrsp(value: Double): Self = StObject.set(x, "trsp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWins(value: Double): Self = StObject.set(x, "wins", value.asInstanceOf[js.Any])
+      inline def setWins(value: Double): Self = StObject.set(x, "wins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWp(value: Double): Self = StObject.set(x, "wp", value.asInstanceOf[js.Any])
+      inline def setWp(value: Double): Self = StObject.set(x, "wp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -420,14 +357,12 @@ object responseObjectsMod {
   trait ResponseObject extends StObject
   object ResponseObject {
     
-    @scala.inline
-    def AwardsResponseObject(name: String, order: Double, qualifies: js.Array[String], sku: String, team: String): typings.vexdb.responseObjectsMod.AwardsResponseObject = {
+    inline def AwardsResponseObject(name: String, order: Double, qualifies: js.Array[String], sku: String, team: String): typings.vexdb.responseObjectsMod.AwardsResponseObject = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], qualifies = qualifies.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vexdb.responseObjectsMod.AwardsResponseObject]
     }
     
-    @scala.inline
-    def EventsResponseObject(
+    inline def EventsResponseObject(
       divisions: js.Array[String],
       end: String,
       key: String,
@@ -448,8 +383,7 @@ object responseObjectsMod {
       __obj.asInstanceOf[typings.vexdb.responseObjectsMod.EventsResponseObject]
     }
     
-    @scala.inline
-    def MatchesResponseObject(
+    inline def MatchesResponseObject(
       blue1: String,
       blue2: String,
       blue3: String,
@@ -473,8 +407,7 @@ object responseObjectsMod {
       __obj.asInstanceOf[typings.vexdb.responseObjectsMod.MatchesResponseObject]
     }
     
-    @scala.inline
-    def RankingsResponseObject(
+    inline def RankingsResponseObject(
       ap: Double,
       ccwm: Double,
       division: String,
@@ -495,14 +428,12 @@ object responseObjectsMod {
       __obj.asInstanceOf[typings.vexdb.responseObjectsMod.RankingsResponseObject]
     }
     
-    @scala.inline
-    def SeasonRankingsResponseObject(program: Programs, season: Seasons, team: String, vrating: Double, vrating_rank: Double): typings.vexdb.responseObjectsMod.SeasonRankingsResponseObject = {
+    inline def SeasonRankingsResponseObject(program: Programs, season: Seasons, team: String, vrating: Double, vrating_rank: Double): typings.vexdb.responseObjectsMod.SeasonRankingsResponseObject = {
       val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], vrating = vrating.asInstanceOf[js.Any], vrating_rank = vrating_rank.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vexdb.responseObjectsMod.SeasonRankingsResponseObject]
     }
     
-    @scala.inline
-    def SkillsResponseObject(
+    inline def SkillsResponseObject(
       attempts: Double,
       program: Programs,
       rank: Double,
@@ -516,8 +447,7 @@ object responseObjectsMod {
       __obj.asInstanceOf[typings.vexdb.responseObjectsMod.SkillsResponseObject]
     }
     
-    @scala.inline
-    def TeamsResponseObject(
+    inline def TeamsResponseObject(
       city: String,
       country: String,
       grade: Grades,
@@ -550,29 +480,22 @@ object responseObjectsMod {
   }
   object SeasonRankingsResponseObject {
     
-    @scala.inline
-    def apply(program: Programs, season: Seasons, team: String, vrating: Double, vrating_rank: Double): SeasonRankingsResponseObject = {
+    inline def apply(program: Programs, season: Seasons, team: String, vrating: Double, vrating_rank: Double): SeasonRankingsResponseObject = {
       val __obj = js.Dynamic.literal(program = program.asInstanceOf[js.Any], season = season.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], vrating = vrating.asInstanceOf[js.Any], vrating_rank = vrating_rank.asInstanceOf[js.Any])
       __obj.asInstanceOf[SeasonRankingsResponseObject]
     }
     
-    @scala.inline
-    implicit class SeasonRankingsResponseObjectMutableBuilder[Self <: SeasonRankingsResponseObject] (val x: Self) extends AnyVal {
+    extension [Self <: SeasonRankingsResponseObject](x: Self) {
       
-      @scala.inline
-      def setProgram(value: Programs): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Programs): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVrating(value: Double): Self = StObject.set(x, "vrating", value.asInstanceOf[js.Any])
+      inline def setVrating(value: Double): Self = StObject.set(x, "vrating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVrating_rank(value: Double): Self = StObject.set(x, "vrating_rank", value.asInstanceOf[js.Any])
+      inline def setVrating_rank(value: Double): Self = StObject.set(x, "vrating_rank", value.asInstanceOf[js.Any])
     }
   }
   
@@ -596,8 +519,7 @@ object responseObjectsMod {
   }
   object SkillsResponseObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attempts: Double,
       program: Programs,
       rank: Double,
@@ -611,29 +533,21 @@ object responseObjectsMod {
       __obj.asInstanceOf[SkillsResponseObject]
     }
     
-    @scala.inline
-    implicit class SkillsResponseObjectMutableBuilder[Self <: SkillsResponseObject] (val x: Self) extends AnyVal {
+    extension [Self <: SkillsResponseObject](x: Self) {
       
-      @scala.inline
-      def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgram(value: Programs): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Programs): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: SkillsType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SkillsType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -663,8 +577,7 @@ object responseObjectsMod {
   }
   object TeamsResponseObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       city: String,
       country: String,
       grade: Grades,
@@ -680,38 +593,27 @@ object responseObjectsMod {
       __obj.asInstanceOf[TeamsResponseObject]
     }
     
-    @scala.inline
-    implicit class TeamsResponseObjectMutableBuilder[Self <: TeamsResponseObject] (val x: Self) extends AnyVal {
+    extension [Self <: TeamsResponseObject](x: Self) {
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrade(value: Grades): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
+      inline def setGrade(value: Grades): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_registered(value: `0` | `1`): Self = StObject.set(x, "is_registered", value.asInstanceOf[js.Any])
+      inline def setIs_registered(value: `0` | `1`): Self = StObject.set(x, "is_registered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganisation(value: String): Self = StObject.set(x, "organisation", value.asInstanceOf[js.Any])
+      inline def setOrganisation(value: String): Self = StObject.set(x, "organisation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgram(value: Programs): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Programs): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRobot_name(value: String): Self = StObject.set(x, "robot_name", value.asInstanceOf[js.Any])
+      inline def setRobot_name(value: String): Self = StObject.set(x, "robot_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeam_name(value: String): Self = StObject.set(x, "team_name", value.asInstanceOf[js.Any])
+      inline def setTeam_name(value: String): Self = StObject.set(x, "team_name", value.asInstanceOf[js.Any])
     }
   }
 }

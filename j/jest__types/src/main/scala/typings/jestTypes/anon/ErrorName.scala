@@ -20,22 +20,17 @@ trait ErrorName
 }
 object ErrorName {
   
-  @scala.inline
-  def apply(error: Exception, test: TestEntry): ErrorName = {
+  inline def apply(error: Exception, test: TestEntry): ErrorName = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = "test_fn_failure", test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorName]
   }
   
-  @scala.inline
-  implicit class ErrorNameMutableBuilder[Self <: ErrorName] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorName](x: Self) {
     
-    @scala.inline
-    def setError(value: Exception): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Exception): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: test_fn_failure): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: test_fn_failure): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
   }
 }

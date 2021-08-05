@@ -576,20 +576,16 @@ object mod {
   }
   object ByteRange {
     
-    @scala.inline
-    def apply(end: Double, start: Double): ByteRange = {
+    inline def apply(end: Double, start: Double): ByteRange = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[ByteRange]
     }
     
-    @scala.inline
-    implicit class ByteRangeMutableBuilder[Self <: ByteRange] (val x: Self) extends AnyVal {
+    extension [Self <: ByteRange](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -615,68 +611,48 @@ object mod {
   }
   object CookieOptions {
     
-    @scala.inline
-    def apply(): CookieOptions = {
+    inline def apply(): CookieOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CookieOptions]
     }
     
-    @scala.inline
-    implicit class CookieOptionsMutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CookieOptions](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setEncode(value: /* val */ String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: /* val */ String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+      inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSameSite(value: Boolean | lax | strict | none): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+      inline def setSameSite(value: Boolean | lax | strict | none): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
+      inline def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
     }
   }
   
@@ -854,8 +830,7 @@ object mod {
   }
   object IRoute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       all: IRouterHandler[IRoute],
       checkout: IRouterHandler[IRoute],
       copy: IRouterHandler[IRoute],
@@ -889,86 +864,59 @@ object mod {
       __obj.asInstanceOf[IRoute]
     }
     
-    @scala.inline
-    implicit class IRouteMutableBuilder[Self <: IRoute] (val x: Self) extends AnyVal {
+    extension [Self <: IRoute](x: Self) {
       
-      @scala.inline
-      def setAll(value: IRouterHandler[IRoute]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: IRouterHandler[IRoute]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckout(value: IRouterHandler[IRoute]): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
+      inline def setCheckout(value: IRouterHandler[IRoute]): Self = StObject.set(x, "checkout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopy(value: IRouterHandler[IRoute]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: IRouterHandler[IRoute]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: IRouterHandler[IRoute]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: IRouterHandler[IRoute]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: IRouterHandler[IRoute]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: IRouterHandler[IRoute]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead(value: IRouterHandler[IRoute]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: IRouterHandler[IRoute]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLock(value: IRouterHandler[IRoute]): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+      inline def setLock(value: IRouterHandler[IRoute]): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setM-search`(value: IRouterHandler[IRoute]): Self = StObject.set(x, "m-search", value.asInstanceOf[js.Any])
+      inline def `setM-search`(value: IRouterHandler[IRoute]): Self = StObject.set(x, "m-search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerge(value: IRouterHandler[IRoute]): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+      inline def setMerge(value: IRouterHandler[IRoute]): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMkactivity(value: IRouterHandler[IRoute]): Self = StObject.set(x, "mkactivity", value.asInstanceOf[js.Any])
+      inline def setMkactivity(value: IRouterHandler[IRoute]): Self = StObject.set(x, "mkactivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMkcol(value: IRouterHandler[IRoute]): Self = StObject.set(x, "mkcol", value.asInstanceOf[js.Any])
+      inline def setMkcol(value: IRouterHandler[IRoute]): Self = StObject.set(x, "mkcol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMove(value: IRouterHandler[IRoute]): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+      inline def setMove(value: IRouterHandler[IRoute]): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotify_(value: IRouterHandler[IRoute]): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+      inline def setNotify_(value: IRouterHandler[IRoute]): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: IRouterHandler[IRoute]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: IRouterHandler[IRoute]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatch(value: IRouterHandler[IRoute]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: IRouterHandler[IRoute]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPost(value: IRouterHandler[IRoute]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+      inline def setPost(value: IRouterHandler[IRoute]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurge(value: IRouterHandler[IRoute]): Self = StObject.set(x, "purge", value.asInstanceOf[js.Any])
+      inline def setPurge(value: IRouterHandler[IRoute]): Self = StObject.set(x, "purge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPut(value: IRouterHandler[IRoute]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+      inline def setPut(value: IRouterHandler[IRoute]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReport(value: IRouterHandler[IRoute]): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+      inline def setReport(value: IRouterHandler[IRoute]): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: IRouterHandler[IRoute]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: IRouterHandler[IRoute]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: js.Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscribe(value: IRouterHandler[IRoute]): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
+      inline def setSubscribe(value: IRouterHandler[IRoute]): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrace(value: IRouterHandler[IRoute]): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: IRouterHandler[IRoute]): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlock(value: IRouterHandler[IRoute]): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
+      inline def setUnlock(value: IRouterHandler[IRoute]): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribe(value: IRouterHandler[IRoute]): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
+      inline def setUnsubscribe(value: IRouterHandler[IRoute]): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1316,27 +1264,21 @@ object mod {
   }
   object MediaType {
     
-    @scala.inline
-    def apply(quality: Double, subtype: String, `type`: String, value: String): MediaType = {
+    inline def apply(quality: Double, subtype: String, `type`: String, value: String): MediaType = {
       val __obj = js.Dynamic.literal(quality = quality.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaType]
     }
     
-    @scala.inline
-    implicit class MediaTypeMutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
+    extension [Self <: MediaType](x: Self) {
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+      inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

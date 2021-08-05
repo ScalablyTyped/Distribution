@@ -21,8 +21,7 @@ object cliMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getDerivedStateFromError(error: Error): ICLIState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[ICLIState]
+    inline def getDerivedStateFromError(error: Error): ICLIState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[ICLIState]
   }
   
   @js.native
@@ -43,20 +42,16 @@ object cliMod {
   }
   object ICLIProps {
     
-    @scala.inline
-    def apply(logs: IGatsbyCLIState, showStatusBar: Boolean): ICLIProps = {
+    inline def apply(logs: IGatsbyCLIState, showStatusBar: Boolean): ICLIProps = {
       val __obj = js.Dynamic.literal(logs = logs.asInstanceOf[js.Any], showStatusBar = showStatusBar.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICLIProps]
     }
     
-    @scala.inline
-    implicit class ICLIPropsMutableBuilder[Self <: ICLIProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICLIProps](x: Self) {
       
-      @scala.inline
-      def setLogs(value: IGatsbyCLIState): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: IGatsbyCLIState): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowStatusBar(value: Boolean): Self = StObject.set(x, "showStatusBar", value.asInstanceOf[js.Any])
+      inline def setShowStatusBar(value: Boolean): Self = StObject.set(x, "showStatusBar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,23 +63,18 @@ object cliMod {
   }
   object ICLIState {
     
-    @scala.inline
-    def apply(hasError: Boolean): ICLIState = {
+    inline def apply(hasError: Boolean): ICLIState = {
       val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICLIState]
     }
     
-    @scala.inline
-    implicit class ICLIStateMutableBuilder[Self <: ICLIState] (val x: Self) extends AnyVal {
+    extension [Self <: ICLIState](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     }
   }
 }

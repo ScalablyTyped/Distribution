@@ -18,19 +18,15 @@ trait GetBackupSelectionInput extends StObject {
 }
 object GetBackupSelectionInput {
   
-  @scala.inline
-  def apply(BackupPlanId: String, SelectionId: String): GetBackupSelectionInput = {
+  inline def apply(BackupPlanId: String, SelectionId: String): GetBackupSelectionInput = {
     val __obj = js.Dynamic.literal(BackupPlanId = BackupPlanId.asInstanceOf[js.Any], SelectionId = SelectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBackupSelectionInput]
   }
   
-  @scala.inline
-  implicit class GetBackupSelectionInputMutableBuilder[Self <: GetBackupSelectionInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackupSelectionInput](x: Self) {
     
-    @scala.inline
-    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
+    inline def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionId(value: String): Self = StObject.set(x, "SelectionId", value.asInstanceOf[js.Any])
+    inline def setSelectionId(value: String): Self = StObject.set(x, "SelectionId", value.asInstanceOf[js.Any])
   }
 }

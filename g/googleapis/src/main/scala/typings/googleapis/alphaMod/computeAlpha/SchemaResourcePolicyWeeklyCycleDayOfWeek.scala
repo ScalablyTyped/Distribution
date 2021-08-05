@@ -25,31 +25,23 @@ trait SchemaResourcePolicyWeeklyCycleDayOfWeek extends StObject {
 }
 object SchemaResourcePolicyWeeklyCycleDayOfWeek {
   
-  @scala.inline
-  def apply(): SchemaResourcePolicyWeeklyCycleDayOfWeek = {
+  inline def apply(): SchemaResourcePolicyWeeklyCycleDayOfWeek = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourcePolicyWeeklyCycleDayOfWeek]
   }
   
-  @scala.inline
-  implicit class SchemaResourcePolicyWeeklyCycleDayOfWeekMutableBuilder[Self <: SchemaResourcePolicyWeeklyCycleDayOfWeek] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourcePolicyWeeklyCycleDayOfWeek](x: Self) {
     
-    @scala.inline
-    def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

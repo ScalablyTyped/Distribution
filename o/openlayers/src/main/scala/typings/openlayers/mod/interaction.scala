@@ -68,8 +68,7 @@ object interaction {
       * @api
       */
     /* static member */
-    @scala.inline
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -163,8 +162,7 @@ object interaction {
     @JSImport("openlayers", "interaction.DragAndDrop.handleEvent")
     @js.native
     def handleEvent: js.Any = js.native
-    @scala.inline
-    def handleEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleEvent")(x.asInstanceOf[js.Any])
+    inline def handleEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleEvent")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -447,8 +445,7 @@ object interaction {
       * @api
       */
     /* static member */
-    @scala.inline
-    def createBox(): DrawGeometryFunctionType = ^.asInstanceOf[js.Dynamic].applyDynamic("createBox")().asInstanceOf[DrawGeometryFunctionType]
+    inline def createBox(): DrawGeometryFunctionType = ^.asInstanceOf[js.Dynamic].applyDynamic("createBox")().asInstanceOf[DrawGeometryFunctionType]
     
     /**
       * Create a `geometryFunction` for `mode: 'Circle'` that will create a regular
@@ -464,14 +461,10 @@ object interaction {
       * @api
       */
     /* static member */
-    @scala.inline
-    def createRegularPolygon(): DrawGeometryFunctionType = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")().asInstanceOf[DrawGeometryFunctionType]
-    @scala.inline
-    def createRegularPolygon(opt_sides: Double): DrawGeometryFunctionType = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any]).asInstanceOf[DrawGeometryFunctionType]
-    @scala.inline
-    def createRegularPolygon(opt_sides: Double, opt_angle: Double): DrawGeometryFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[DrawGeometryFunctionType]
-    @scala.inline
-    def createRegularPolygon(opt_sides: Unit, opt_angle: Double): DrawGeometryFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[DrawGeometryFunctionType]
+    inline def createRegularPolygon(): DrawGeometryFunctionType = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")().asInstanceOf[DrawGeometryFunctionType]
+    inline def createRegularPolygon(opt_sides: Double): DrawGeometryFunctionType = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any]).asInstanceOf[DrawGeometryFunctionType]
+    inline def createRegularPolygon(opt_sides: Double, opt_angle: Double): DrawGeometryFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[DrawGeometryFunctionType]
+    inline def createRegularPolygon(opt_sides: Unit, opt_angle: Double): DrawGeometryFunctionType = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[DrawGeometryFunctionType]
   }
   
   /**
@@ -655,8 +648,7 @@ object interaction {
       * @api
       */
     /* static member */
-    @scala.inline
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -709,8 +701,7 @@ object interaction {
       * @api
       */
     /* static member */
-    @scala.inline
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -828,8 +819,7 @@ object interaction {
       * @api
       */
     /* static member */
-    @scala.inline
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -922,8 +912,7 @@ object interaction {
       * @api
       */
     /* static member */
-    @scala.inline
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -1056,8 +1045,7 @@ object interaction {
       * @api
       */
     /* static member */
-    @scala.inline
-    def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def handleEvent(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEvent")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /**
@@ -1211,10 +1199,8 @@ object interaction {
     * interactions to be used with the ol.Map constructor's interactions option.
     * @api stable
     */
-  @scala.inline
-  def defaults(): Collection[Interaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[Collection[Interaction]]
-  @scala.inline
-  def defaults(opt_options: DefaultsOptions): Collection[Interaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Collection[Interaction]]
+  inline def defaults(): Collection[Interaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[Collection[Interaction]]
+  inline def defaults(opt_options: DefaultsOptions): Collection[Interaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Collection[Interaction]]
   
   type DragAndDropEventType = String
   

@@ -13,24 +13,19 @@ trait IClientBlockGetByNumRequest extends StObject {
 }
 object IClientBlockGetByNumRequest {
   
-  @scala.inline
-  def apply(): IClientBlockGetByNumRequest = {
+  inline def apply(): IClientBlockGetByNumRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBlockGetByNumRequest]
   }
   
-  @scala.inline
-  implicit class IClientBlockGetByNumRequestMutableBuilder[Self <: IClientBlockGetByNumRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBlockGetByNumRequest](x: Self) {
     
-    @scala.inline
-    def setBlockNum(
+    inline def setBlockNum(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
     ): Self = StObject.set(x, "blockNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockNumNull: Self = StObject.set(x, "blockNum", null)
+    inline def setBlockNumNull: Self = StObject.set(x, "blockNum", null)
     
-    @scala.inline
-    def setBlockNumUndefined: Self = StObject.set(x, "blockNum", js.undefined)
+    inline def setBlockNumUndefined: Self = StObject.set(x, "blockNum", js.undefined)
   }
 }

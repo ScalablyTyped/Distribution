@@ -14,22 +14,17 @@ trait SessionReinviteEvent extends StObject {
 }
 object SessionReinviteEvent {
   
-  @scala.inline
-  def apply(callback: () => Unit, reject: SessionRejectOptions => Unit, request: IncomingRequest): SessionReinviteEvent = {
+  inline def apply(callback: () => Unit, reject: SessionRejectOptions => Unit, request: IncomingRequest): SessionReinviteEvent = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), reject = js.Any.fromFunction1(reject), request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionReinviteEvent]
   }
   
-  @scala.inline
-  implicit class SessionReinviteEventMutableBuilder[Self <: SessionReinviteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionReinviteEvent](x: Self) {
     
-    @scala.inline
-    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReject(value: SessionRejectOptions => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+    inline def setReject(value: SessionRejectOptions => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequest(value: IncomingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: IncomingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

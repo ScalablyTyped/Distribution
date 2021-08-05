@@ -17,31 +17,23 @@ trait RgbColor extends StObject {
 }
 object RgbColor {
   
-  @scala.inline
-  def apply(): RgbColor = {
+  inline def apply(): RgbColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RgbColor]
   }
   
-  @scala.inline
-  implicit class RgbColorMutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
+  extension [Self <: RgbColor](x: Self) {
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
     
-    @scala.inline
-    def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGUndefined: Self = StObject.set(x, "g", js.undefined)
+    inline def setGUndefined: Self = StObject.set(x, "g", js.undefined)
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
   }
 }

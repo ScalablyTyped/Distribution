@@ -13,19 +13,15 @@ trait CreateRepositoryOutput extends StObject {
 }
 object CreateRepositoryOutput {
   
-  @scala.inline
-  def apply(): CreateRepositoryOutput = {
+  inline def apply(): CreateRepositoryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRepositoryOutput]
   }
   
-  @scala.inline
-  implicit class CreateRepositoryOutputMutableBuilder[Self <: CreateRepositoryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRepositoryOutput](x: Self) {
     
-    @scala.inline
-    def setRepositoryMetadata(value: RepositoryMetadata): Self = StObject.set(x, "repositoryMetadata", value.asInstanceOf[js.Any])
+    inline def setRepositoryMetadata(value: RepositoryMetadata): Self = StObject.set(x, "repositoryMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryMetadataUndefined: Self = StObject.set(x, "repositoryMetadata", js.undefined)
+    inline def setRepositoryMetadataUndefined: Self = StObject.set(x, "repositoryMetadata", js.undefined)
   }
 }

@@ -12,14 +12,11 @@ object exprMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isExprOrSignalRef(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExprOrSignalRef")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExprOrSignalRef(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExprOrSignalRef")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isExprRef(o: js.Any): /* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExprRef")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean]
+  inline def isExprRef(o: js.Any): /* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExprRef")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/expr.ExprRef */ Boolean]
   
-  @scala.inline
-  def replaceExprRefInIndex(index: StringDictionary[js.Any | ExprOrSignalRef]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceExprRefInIndex")(index.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def replaceExprRefInIndex(index: StringDictionary[js.Any | ExprOrSignalRef]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceExprRefInIndex")(index.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   
   type ExprOrSignalRef = ExprRef | SignalRef
   
@@ -32,17 +29,14 @@ object exprMod {
   }
   object ExprRef {
     
-    @scala.inline
-    def apply(expr: String): ExprRef = {
+    inline def apply(expr: String): ExprRef = {
       val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExprRef]
     }
     
-    @scala.inline
-    implicit class ExprRefMutableBuilder[Self <: ExprRef] (val x: Self) extends AnyVal {
+    extension [Self <: ExprRef](x: Self) {
       
-      @scala.inline
-      def setExpr(value: String): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+      inline def setExpr(value: String): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     }
   }
 }

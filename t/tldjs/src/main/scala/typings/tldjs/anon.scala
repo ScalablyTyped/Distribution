@@ -25,8 +25,7 @@ object anon {
   }
   object Domain {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domain: ReturnType[js.Function1[/* host */ String, String | Null]],
       hostname: ReturnType[js.Function1[/* host */ String, String | Null]],
       isIp: Boolean,
@@ -39,29 +38,21 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    @scala.inline
-    implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+    extension [Self <: Domain](x: Self) {
       
-      @scala.inline
-      def setDomain(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIp(value: Boolean): Self = StObject.set(x, "isIp", value.asInstanceOf[js.Any])
+      inline def setIsIp(value: Boolean): Self = StObject.set(x, "isIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(value: ReturnType[js.Function1[/* host */ String, Boolean]]): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: ReturnType[js.Function1[/* host */ String, Boolean]]): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicSuffix(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "publicSuffix", value.asInstanceOf[js.Any])
+      inline def setPublicSuffix(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "publicSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdomain(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
+      inline def setSubdomain(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTldExists(value: ReturnType[js.Function1[/* host */ String, Boolean]]): Self = StObject.set(x, "tldExists", value.asInstanceOf[js.Any])
+      inline def setTldExists(value: ReturnType[js.Function1[/* host */ String, Boolean]]): Self = StObject.set(x, "tldExists", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,35 +66,26 @@ object anon {
   }
   object ExtractHostname {
     
-    @scala.inline
-    def apply(): ExtractHostname = {
+    inline def apply(): ExtractHostname = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExtractHostname]
     }
     
-    @scala.inline
-    implicit class ExtractHostnameMutableBuilder[Self <: ExtractHostname] (val x: Self) extends AnyVal {
+    extension [Self <: ExtractHostname](x: Self) {
       
-      @scala.inline
-      def setExtractHostname(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "extractHostname", value.asInstanceOf[js.Any])
+      inline def setExtractHostname(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "extractHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractHostnameUndefined: Self = StObject.set(x, "extractHostname", js.undefined)
+      inline def setExtractHostnameUndefined: Self = StObject.set(x, "extractHostname", js.undefined)
       
-      @scala.inline
-      def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setValidHosts(value: js.Array[String]): Self = StObject.set(x, "validHosts", value.asInstanceOf[js.Any])
+      inline def setValidHosts(value: js.Array[String]): Self = StObject.set(x, "validHosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidHostsUndefined: Self = StObject.set(x, "validHosts", js.undefined)
+      inline def setValidHostsUndefined: Self = StObject.set(x, "validHosts", js.undefined)
       
-      @scala.inline
-      def setValidHostsVarargs(value: String*): Self = StObject.set(x, "validHosts", js.Array(value :_*))
+      inline def setValidHostsVarargs(value: String*): Self = StObject.set(x, "validHosts", js.Array(value :_*))
     }
   }
   
@@ -150,8 +132,7 @@ object anon {
   }
   object GetDomain {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       extractHostname: /* host */ String => String | Null,
       fromUserSettings: /* options */ Rules => FromUserSettings,
       getDomain: /* host */ String => String | Null,
@@ -166,35 +147,25 @@ object anon {
       __obj.asInstanceOf[GetDomain]
     }
     
-    @scala.inline
-    implicit class GetDomainMutableBuilder[Self <: GetDomain] (val x: Self) extends AnyVal {
+    extension [Self <: GetDomain](x: Self) {
       
-      @scala.inline
-      def setExtractHostname(value: /* host */ String => String | Null): Self = StObject.set(x, "extractHostname", js.Any.fromFunction1(value))
+      inline def setExtractHostname(value: /* host */ String => String | Null): Self = StObject.set(x, "extractHostname", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromUserSettings(value: /* options */ Rules => FromUserSettings): Self = StObject.set(x, "fromUserSettings", js.Any.fromFunction1(value))
+      inline def setFromUserSettings(value: /* options */ Rules => FromUserSettings): Self = StObject.set(x, "fromUserSettings", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDomain(value: /* host */ String => String | Null): Self = StObject.set(x, "getDomain", js.Any.fromFunction1(value))
+      inline def setGetDomain(value: /* host */ String => String | Null): Self = StObject.set(x, "getDomain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPublicSuffix(value: /* host */ String => String | Null): Self = StObject.set(x, "getPublicSuffix", js.Any.fromFunction1(value))
+      inline def setGetPublicSuffix(value: /* host */ String => String | Null): Self = StObject.set(x, "getPublicSuffix", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSubdomain(value: /* host */ String => String | Null): Self = StObject.set(x, "getSubdomain", js.Any.fromFunction1(value))
+      inline def setGetSubdomain(value: /* host */ String => String | Null): Self = StObject.set(x, "getSubdomain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValid(value: /* host */ String => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction1(value))
+      inline def setIsValid(value: /* host */ String => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValidHostname(value: /* host */ String => Boolean): Self = StObject.set(x, "isValidHostname", js.Any.fromFunction1(value))
+      inline def setIsValidHostname(value: /* host */ String => Boolean): Self = StObject.set(x, "isValidHostname", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParse(value: /* host */ String => Hostname): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* host */ String => Hostname): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTldExists(value: /* host */ String => Boolean): Self = StObject.set(x, "tldExists", js.Any.fromFunction1(value))
+      inline def setTldExists(value: /* host */ String => Boolean): Self = StObject.set(x, "tldExists", js.Any.fromFunction1(value))
     }
   }
   
@@ -228,8 +199,7 @@ object anon {
   }
   object Hostname {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domain: ReturnType[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
         ],
@@ -254,49 +224,41 @@ object anon {
       __obj.asInstanceOf[Hostname]
     }
     
-    @scala.inline
-    implicit class HostnameMutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
+    extension [Self <: Hostname](x: Self) {
       
-      @scala.inline
-      def setDomain(
+      inline def setDomain(
         value: ReturnType[
               /* import warning: importer.ImportType#apply Failed type conversion: typeof getDomain */ js.Any
             ]
       ): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(
+      inline def setHostname(
         value: ReturnType[
               /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
             ]
       ): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIp(value: Boolean): Self = StObject.set(x, "isIp", value.asInstanceOf[js.Any])
+      inline def setIsIp(value: Boolean): Self = StObject.set(x, "isIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(
+      inline def setIsValid(
         value: ReturnType[
               /* import warning: importer.ImportType#apply Failed type conversion: typeof isValid */ js.Any
             ]
       ): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicSuffix(
+      inline def setPublicSuffix(
         value: ReturnType[
               /* import warning: importer.ImportType#apply Failed type conversion: typeof getPublicSuffix */ js.Any
             ]
       ): Self = StObject.set(x, "publicSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdomain(
+      inline def setSubdomain(
         value: ReturnType[
               /* import warning: importer.ImportType#apply Failed type conversion: typeof getSubdomain */ js.Any
             ]
       ): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTldExists(
+      inline def setTldExists(
         value: ReturnType[
               /* import warning: importer.ImportType#apply Failed type conversion: typeof tldExists */ js.Any
             ]
@@ -318,39 +280,30 @@ object anon {
   }
   object Rules {
     
-    @scala.inline
-    def apply(): Rules = {
+    inline def apply(): Rules = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Rules]
     }
     
-    @scala.inline
-    implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+    extension [Self <: Rules](x: Self) {
       
-      @scala.inline
-      def setExtractHostname(
+      inline def setExtractHostname(
         value: ReturnType[
               /* import warning: importer.ImportType#apply Failed type conversion: typeof extractHostname */ js.Any
             ]
       ): Self = StObject.set(x, "extractHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractHostnameUndefined: Self = StObject.set(x, "extractHostname", js.undefined)
+      inline def setExtractHostnameUndefined: Self = StObject.set(x, "extractHostname", js.undefined)
       
-      @scala.inline
-      def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setValidHosts(value: js.Array[String]): Self = StObject.set(x, "validHosts", value.asInstanceOf[js.Any])
+      inline def setValidHosts(value: js.Array[String]): Self = StObject.set(x, "validHosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidHostsUndefined: Self = StObject.set(x, "validHosts", js.undefined)
+      inline def setValidHostsUndefined: Self = StObject.set(x, "validHosts", js.undefined)
       
-      @scala.inline
-      def setValidHostsVarargs(value: String*): Self = StObject.set(x, "validHosts", js.Array(value :_*))
+      inline def setValidHostsVarargs(value: String*): Self = StObject.set(x, "validHosts", js.Array(value :_*))
     }
   }
 }

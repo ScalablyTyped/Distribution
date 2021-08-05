@@ -22,20 +22,16 @@ trait Css extends StObject {
 }
 object Css {
   
-  @scala.inline
-  def apply(css: RegExp, js_ : RegExp): Css = {
+  inline def apply(css: RegExp, js_ : RegExp): Css = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any])
     __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Css]
   }
   
-  @scala.inline
-  implicit class CssMutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
+  extension [Self <: Css](x: Self) {
     
-    @scala.inline
-    def setCss(value: RegExp): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: RegExp): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJs_(value: RegExp): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+    inline def setJs_(value: RegExp): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
   }
 }

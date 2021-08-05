@@ -31,49 +31,35 @@ trait MaskProps extends StObject {
 }
 object MaskProps {
   
-  @scala.inline
-  def apply(): MaskProps = {
+  inline def apply(): MaskProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaskProps]
   }
   
-  @scala.inline
-  implicit class MaskPropsMutableBuilder[Self <: MaskProps] (val x: Self) extends AnyVal {
+  extension [Self <: MaskProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setRounding(value: circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
+    inline def setRounding(value: circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
+    inline def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
     
-    @scala.inline
-    def setWash(value: Boolean): Self = StObject.set(x, "wash", value.asInstanceOf[js.Any])
+    inline def setWash(value: Boolean): Self = StObject.set(x, "wash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWashUndefined: Self = StObject.set(x, "wash", js.undefined)
+    inline def setWashUndefined: Self = StObject.set(x, "wash", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWillChangeTransform(value: Boolean): Self = StObject.set(x, "willChangeTransform", value.asInstanceOf[js.Any])
+    inline def setWillChangeTransform(value: Boolean): Self = StObject.set(x, "willChangeTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillChangeTransformUndefined: Self = StObject.set(x, "willChangeTransform", js.undefined)
+    inline def setWillChangeTransformUndefined: Self = StObject.set(x, "willChangeTransform", js.undefined)
   }
 }

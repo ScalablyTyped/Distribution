@@ -24,28 +24,21 @@ trait SchemaSequenceSegment extends StObject {
 }
 object SchemaSequenceSegment {
   
-  @scala.inline
-  def apply(): SchemaSequenceSegment = {
+  inline def apply(): SchemaSequenceSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSequenceSegment]
   }
   
-  @scala.inline
-  implicit class SchemaSequenceSegmentMutableBuilder[Self <: SchemaSequenceSegment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSequenceSegment](x: Self) {
     
-    @scala.inline
-    def setFirstStepShouldMatchFirstHit(value: Boolean): Self = StObject.set(x, "firstStepShouldMatchFirstHit", value.asInstanceOf[js.Any])
+    inline def setFirstStepShouldMatchFirstHit(value: Boolean): Self = StObject.set(x, "firstStepShouldMatchFirstHit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstStepShouldMatchFirstHitUndefined: Self = StObject.set(x, "firstStepShouldMatchFirstHit", js.undefined)
+    inline def setFirstStepShouldMatchFirstHitUndefined: Self = StObject.set(x, "firstStepShouldMatchFirstHit", js.undefined)
     
-    @scala.inline
-    def setSegmentSequenceSteps(value: js.Array[SchemaSegmentSequenceStep]): Self = StObject.set(x, "segmentSequenceSteps", value.asInstanceOf[js.Any])
+    inline def setSegmentSequenceSteps(value: js.Array[SchemaSegmentSequenceStep]): Self = StObject.set(x, "segmentSequenceSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentSequenceStepsUndefined: Self = StObject.set(x, "segmentSequenceSteps", js.undefined)
+    inline def setSegmentSequenceStepsUndefined: Self = StObject.set(x, "segmentSequenceSteps", js.undefined)
     
-    @scala.inline
-    def setSegmentSequenceStepsVarargs(value: SchemaSegmentSequenceStep*): Self = StObject.set(x, "segmentSequenceSteps", js.Array(value :_*))
+    inline def setSegmentSequenceStepsVarargs(value: SchemaSegmentSequenceStep*): Self = StObject.set(x, "segmentSequenceSteps", js.Array(value :_*))
   }
 }

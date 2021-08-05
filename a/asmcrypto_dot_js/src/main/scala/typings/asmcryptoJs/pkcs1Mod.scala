@@ -17,9 +17,9 @@ object pkcs1Mod {
     def this(key: js.Array[Uint8Array], hash: Sha256) = this()
     def this(key: js.Array[Uint8Array], hash: Sha512) = this()
     
-    val hash: js.Any = js.native
+    /* private */ val hash: js.Any = js.native
     
-    val rsa: js.Any = js.native
+    /* private */ val rsa: js.Any = js.native
     
     def sign(data: Uint8Array): Uint8Array = js.native
     
@@ -44,11 +44,11 @@ object pkcs1Mod {
     def encrypt(data: Uint8Array): Uint8Array = js.native
     def encrypt(data: Uint8Array, random: Uint8Array): Uint8Array = js.native
     
-    val hash: js.Any = js.native
+    /* private */ val hash: js.Any = js.native
     
-    val label: js.Any = js.native
+    /* private */ val label: js.Any = js.native
     
-    val rsa: js.Any = js.native
+    /* private */ val rsa: js.Any = js.native
   }
   
   @JSImport("asmcrypto.js/dist_es8/rsa/pkcs1", "RSA_PSS")
@@ -64,11 +64,11 @@ object pkcs1Mod {
     def RSA_MGF1_generate(seed: Uint8Array): Uint8Array = js.native
     def RSA_MGF1_generate(seed: Uint8Array, length: Double): Uint8Array = js.native
     
-    val hash: js.Any = js.native
+    /* private */ val hash: js.Any = js.native
     
-    val rsa: js.Any = js.native
+    /* private */ val rsa: js.Any = js.native
     
-    val saltLength: js.Any = js.native
+    /* private */ val saltLength: js.Any = js.native
     
     def sign(data: Uint8Array): Uint8Array = js.native
     def sign(data: Uint8Array, random: Uint8Array): Uint8Array = js.native

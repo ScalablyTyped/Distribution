@@ -27,17 +27,14 @@ object toggleTypesMod {
   }
   object IToggle {
     
-    @scala.inline
-    def apply(focus: () => Unit): IToggle = {
+    inline def apply(focus: () => Unit): IToggle = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[IToggle]
     }
     
-    @scala.inline
-    implicit class IToggleMutableBuilder[Self <: IToggle] (val x: Self) extends AnyVal {
+    extension [Self <: IToggle](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -147,124 +144,86 @@ object toggleTypesMod {
   }
   object IToggleProps {
     
-    @scala.inline
-    def apply(): IToggleProps = {
+    inline def apply(): IToggleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IToggleProps]
     }
     
-    @scala.inline
-    implicit class ITogglePropsMutableBuilder[Self <: IToggleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IToggleProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setAs(value: IComponentAs[HTMLAttributes[HTMLElement]]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: IComponentAs[HTMLAttributes[HTMLElement]]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IToggle]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IToggle]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IToggle | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IToggle | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInlineLabel(value: Boolean): Self = StObject.set(x, "inlineLabel", value.asInstanceOf[js.Any])
+      inline def setInlineLabel(value: Boolean): Self = StObject.set(x, "inlineLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineLabelUndefined: Self = StObject.set(x, "inlineLabel", js.undefined)
+      inline def setInlineLabelUndefined: Self = StObject.set(x, "inlineLabel", js.undefined)
       
-      @scala.inline
-      def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
+      inline def setKeytipProps(value: IKeytipProps): Self = StObject.set(x, "keytipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
+      inline def setKeytipPropsUndefined: Self = StObject.set(x, "keytipProps", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String | Element): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | Element): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOffAriaLabel(value: String): Self = StObject.set(x, "offAriaLabel", value.asInstanceOf[js.Any])
+      inline def setOffAriaLabel(value: String): Self = StObject.set(x, "offAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffAriaLabelUndefined: Self = StObject.set(x, "offAriaLabel", js.undefined)
+      inline def setOffAriaLabelUndefined: Self = StObject.set(x, "offAriaLabel", js.undefined)
       
-      @scala.inline
-      def setOffText(value: String): Self = StObject.set(x, "offText", value.asInstanceOf[js.Any])
+      inline def setOffText(value: String): Self = StObject.set(x, "offText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffTextUndefined: Self = StObject.set(x, "offText", js.undefined)
+      inline def setOffTextUndefined: Self = StObject.set(x, "offText", js.undefined)
       
-      @scala.inline
-      def setOnAriaLabel(value: String): Self = StObject.set(x, "onAriaLabel", value.asInstanceOf[js.Any])
+      inline def setOnAriaLabel(value: String): Self = StObject.set(x, "onAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAriaLabelUndefined: Self = StObject.set(x, "onAriaLabel", js.undefined)
+      inline def setOnAriaLabelUndefined: Self = StObject.set(x, "onAriaLabel", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* checked */ js.UndefOr[Boolean]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnChanged(value: /* checked */ Boolean => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
+      inline def setOnChanged(value: /* checked */ Boolean => Unit): Self = StObject.set(x, "onChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
+      inline def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
       
-      @scala.inline
-      def setOnText(value: String): Self = StObject.set(x, "onText", value.asInstanceOf[js.Any])
+      inline def setOnText(value: String): Self = StObject.set(x, "onText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTextUndefined: Self = StObject.set(x, "onText", js.undefined)
+      inline def setOnTextUndefined: Self = StObject.set(x, "onText", js.undefined)
       
-      @scala.inline
-      def setRole(value: checkbox | switch | menuitemcheckbox): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: checkbox | switch | menuitemcheckbox): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IToggleStyleProps, IToggleStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IToggleStyleProps, IToggleStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IToggleStyleProps => DeepPartial[IToggleStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IToggleStyleProps => DeepPartial[IToggleStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -302,47 +261,34 @@ object toggleTypesMod {
   }
   object IToggleStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IToggleStyleProps = {
+    inline def apply(theme: ITheme): IToggleStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IToggleStyleProps]
     }
     
-    @scala.inline
-    implicit class IToggleStylePropsMutableBuilder[Self <: IToggleStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IToggleStyleProps](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInlineLabel(value: Boolean): Self = StObject.set(x, "inlineLabel", value.asInstanceOf[js.Any])
+      inline def setInlineLabel(value: Boolean): Self = StObject.set(x, "inlineLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineLabelUndefined: Self = StObject.set(x, "inlineLabel", js.undefined)
+      inline def setInlineLabelUndefined: Self = StObject.set(x, "inlineLabel", js.undefined)
       
-      @scala.inline
-      def setOnOffMissing(value: Boolean): Self = StObject.set(x, "onOffMissing", value.asInstanceOf[js.Any])
+      inline def setOnOffMissing(value: Boolean): Self = StObject.set(x, "onOffMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnOffMissingUndefined: Self = StObject.set(x, "onOffMissing", js.undefined)
+      inline def setOnOffMissingUndefined: Self = StObject.set(x, "onOffMissing", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -378,68 +324,48 @@ object toggleTypesMod {
   }
   object IToggleStyles {
     
-    @scala.inline
-    def apply(): IToggleStyles = {
+    inline def apply(): IToggleStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IToggleStyles]
     }
     
-    @scala.inline
-    implicit class IToggleStylesMutableBuilder[Self <: IToggleStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IToggleStyles](x: Self) {
       
-      @scala.inline
-      def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelNull: Self = StObject.set(x, "label", null)
+      inline def setLabelNull: Self = StObject.set(x, "label", null)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setPill(value: IStyle): Self = StObject.set(x, "pill", value.asInstanceOf[js.Any])
+      inline def setPill(value: IStyle): Self = StObject.set(x, "pill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPillNull: Self = StObject.set(x, "pill", null)
+      inline def setPillNull: Self = StObject.set(x, "pill", null)
       
-      @scala.inline
-      def setPillUndefined: Self = StObject.set(x, "pill", js.undefined)
+      inline def setPillUndefined: Self = StObject.set(x, "pill", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextNull: Self = StObject.set(x, "text", null)
+      inline def setTextNull: Self = StObject.set(x, "text", null)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setThumb(value: IStyle): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+      inline def setThumb(value: IStyle): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbNull: Self = StObject.set(x, "thumb", null)
+      inline def setThumbNull: Self = StObject.set(x, "thumb", null)
       
-      @scala.inline
-      def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
+      inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
     }
   }
 }

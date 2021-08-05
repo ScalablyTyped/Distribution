@@ -21,32 +21,24 @@ object anon {
   }
   object Cast {
     
-    @scala.inline
-    def apply(): Cast = {
+    inline def apply(): Cast = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cast]
     }
     
-    @scala.inline
-    implicit class CastMutableBuilder[Self <: Cast] (val x: Self) extends AnyVal {
+    extension [Self <: Cast](x: Self) {
       
-      @scala.inline
-      def setCast(value: Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+      inline def setCast(value: Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
+      inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+      inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+      inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
     }
   }
   
@@ -99,20 +91,16 @@ object anon {
   }
   object GetIdentifier {
     
-    @scala.inline
-    def apply(getIdentifier: js.Any => String, getValues: () => js.Array[js.Any]): GetIdentifier = {
+    inline def apply(getIdentifier: js.Any => String, getValues: () => js.Array[js.Any]): GetIdentifier = {
       val __obj = js.Dynamic.literal(getIdentifier = js.Any.fromFunction1(getIdentifier), getValues = js.Any.fromFunction0(getValues))
       __obj.asInstanceOf[GetIdentifier]
     }
     
-    @scala.inline
-    implicit class GetIdentifierMutableBuilder[Self <: GetIdentifier] (val x: Self) extends AnyVal {
+    extension [Self <: GetIdentifier](x: Self) {
       
-      @scala.inline
-      def setGetIdentifier(value: js.Any => String): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction1(value))
+      inline def setGetIdentifier(value: js.Any => String): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     }
   }
   
@@ -126,23 +114,18 @@ object anon {
   }
   object Insert {
     
-    @scala.inline
-    def apply(insert: Boolean, remove: Boolean, update: Boolean): Insert = {
+    inline def apply(insert: Boolean, remove: Boolean, update: Boolean): Insert = {
       val __obj = js.Dynamic.literal(insert = insert.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
       __obj.asInstanceOf[Insert]
     }
     
-    @scala.inline
-    implicit class InsertMutableBuilder[Self <: Insert] (val x: Self) extends AnyVal {
+    extension [Self <: Insert](x: Self) {
       
-      @scala.inline
-      def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,26 +137,20 @@ object anon {
   }
   object Old {
     
-    @scala.inline
-    def apply(): Old = {
+    inline def apply(): Old = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Old]
     }
     
-    @scala.inline
-    implicit class OldMutableBuilder[Self <: Old] (val x: Self) extends AnyVal {
+    extension [Self <: Old](x: Self) {
       
-      @scala.inline
-      def setOld(value: Boolean): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+      inline def setOld(value: Boolean): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
+      inline def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
 }

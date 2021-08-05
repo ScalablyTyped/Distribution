@@ -17,31 +17,23 @@ trait MigrationJobVerificationError extends StObject {
 }
 object MigrationJobVerificationError {
   
-  @scala.inline
-  def apply(): MigrationJobVerificationError = {
+  inline def apply(): MigrationJobVerificationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MigrationJobVerificationError]
   }
   
-  @scala.inline
-  implicit class MigrationJobVerificationErrorMutableBuilder[Self <: MigrationJobVerificationError] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationJobVerificationError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorDetailMessage(value: String): Self = StObject.set(x, "errorDetailMessage", value.asInstanceOf[js.Any])
+    inline def setErrorDetailMessage(value: String): Self = StObject.set(x, "errorDetailMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailMessageUndefined: Self = StObject.set(x, "errorDetailMessage", js.undefined)
+    inline def setErrorDetailMessageUndefined: Self = StObject.set(x, "errorDetailMessage", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

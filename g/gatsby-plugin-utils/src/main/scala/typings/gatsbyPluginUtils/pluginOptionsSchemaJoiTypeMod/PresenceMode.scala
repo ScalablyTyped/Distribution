@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PresenceMode extends StObject
 object PresenceMode {
   
-  @scala.inline
-  def forbidden: typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.forbidden = "forbidden".asInstanceOf[typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.forbidden]
+  inline def forbidden: typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.forbidden = "forbidden".asInstanceOf[typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.forbidden]
   
-  @scala.inline
-  def optional: typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.optional = "optional".asInstanceOf[typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.optional]
+  inline def optional: typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.optional = "optional".asInstanceOf[typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.optional]
   
-  @scala.inline
-  def required: typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.required = "required".asInstanceOf[typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.required]
+  inline def required: typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.required = "required".asInstanceOf[typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.required]
 }

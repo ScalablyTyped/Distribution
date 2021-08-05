@@ -43,35 +43,26 @@ object mod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setBroadcaster(value: String): Self = StObject.set(x, "broadcaster", value.asInstanceOf[js.Any])
+      inline def setBroadcaster(value: String): Self = StObject.set(x, "broadcaster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcasterNull: Self = StObject.set(x, "broadcaster", null)
+      inline def setBroadcasterNull: Self = StObject.set(x, "broadcaster", null)
       
-      @scala.inline
-      def setBroadcasterUndefined: Self = StObject.set(x, "broadcaster", js.undefined)
+      inline def setBroadcasterUndefined: Self = StObject.set(x, "broadcaster", js.undefined)
       
-      @scala.inline
-      def setDefaultHandler(value: /* payload */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "defaultHandler", js.Any.fromFunction1(value))
+      inline def setDefaultHandler(value: /* payload */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "defaultHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultHandlerUndefined: Self = StObject.set(x, "defaultHandler", js.undefined)
+      inline def setDefaultHandlerUndefined: Self = StObject.set(x, "defaultHandler", js.undefined)
       
-      @scala.inline
-      def setPusher(value: Record[String, js.Any]): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
+      inline def setPusher(value: Record[String, js.Any]): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPusherUndefined: Self = StObject.set(x, "pusher", js.undefined)
+      inline def setPusherUndefined: Self = StObject.set(x, "pusher", js.undefined)
     }
   }
   

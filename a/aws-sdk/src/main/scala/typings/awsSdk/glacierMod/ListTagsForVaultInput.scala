@@ -18,19 +18,15 @@ trait ListTagsForVaultInput extends StObject {
 }
 object ListTagsForVaultInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): ListTagsForVaultInput = {
+  inline def apply(accountId: String, vaultName: String): ListTagsForVaultInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForVaultInput]
   }
   
-  @scala.inline
-  implicit class ListTagsForVaultInputMutableBuilder[Self <: ListTagsForVaultInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForVaultInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

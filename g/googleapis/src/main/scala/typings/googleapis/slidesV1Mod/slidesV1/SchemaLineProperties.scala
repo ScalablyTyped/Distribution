@@ -57,61 +57,43 @@ trait SchemaLineProperties extends StObject {
 }
 object SchemaLineProperties {
   
-  @scala.inline
-  def apply(): SchemaLineProperties = {
+  inline def apply(): SchemaLineProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLineProperties]
   }
   
-  @scala.inline
-  implicit class SchemaLinePropertiesMutableBuilder[Self <: SchemaLineProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLineProperties](x: Self) {
     
-    @scala.inline
-    def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    @scala.inline
-    def setEndArrow(value: String): Self = StObject.set(x, "endArrow", value.asInstanceOf[js.Any])
+    inline def setEndArrow(value: String): Self = StObject.set(x, "endArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndArrowUndefined: Self = StObject.set(x, "endArrow", js.undefined)
+    inline def setEndArrowUndefined: Self = StObject.set(x, "endArrow", js.undefined)
     
-    @scala.inline
-    def setEndConnection(value: SchemaLineConnection): Self = StObject.set(x, "endConnection", value.asInstanceOf[js.Any])
+    inline def setEndConnection(value: SchemaLineConnection): Self = StObject.set(x, "endConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndConnectionUndefined: Self = StObject.set(x, "endConnection", js.undefined)
+    inline def setEndConnectionUndefined: Self = StObject.set(x, "endConnection", js.undefined)
     
-    @scala.inline
-    def setLineFill(value: SchemaLineFill): Self = StObject.set(x, "lineFill", value.asInstanceOf[js.Any])
+    inline def setLineFill(value: SchemaLineFill): Self = StObject.set(x, "lineFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineFillUndefined: Self = StObject.set(x, "lineFill", js.undefined)
+    inline def setLineFillUndefined: Self = StObject.set(x, "lineFill", js.undefined)
     
-    @scala.inline
-    def setLink(value: SchemaLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: SchemaLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setStartArrow(value: String): Self = StObject.set(x, "startArrow", value.asInstanceOf[js.Any])
+    inline def setStartArrow(value: String): Self = StObject.set(x, "startArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartArrowUndefined: Self = StObject.set(x, "startArrow", js.undefined)
+    inline def setStartArrowUndefined: Self = StObject.set(x, "startArrow", js.undefined)
     
-    @scala.inline
-    def setStartConnection(value: SchemaLineConnection): Self = StObject.set(x, "startConnection", value.asInstanceOf[js.Any])
+    inline def setStartConnection(value: SchemaLineConnection): Self = StObject.set(x, "startConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartConnectionUndefined: Self = StObject.set(x, "startConnection", js.undefined)
+    inline def setStartConnectionUndefined: Self = StObject.set(x, "startConnection", js.undefined)
     
-    @scala.inline
-    def setWeight(value: SchemaDimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: SchemaDimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

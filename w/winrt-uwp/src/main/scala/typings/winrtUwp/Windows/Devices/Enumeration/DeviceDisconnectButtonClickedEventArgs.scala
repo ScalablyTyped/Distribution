@@ -12,16 +12,13 @@ trait DeviceDisconnectButtonClickedEventArgs extends StObject {
 }
 object DeviceDisconnectButtonClickedEventArgs {
   
-  @scala.inline
-  def apply(device: DeviceInformation): DeviceDisconnectButtonClickedEventArgs = {
+  inline def apply(device: DeviceInformation): DeviceDisconnectButtonClickedEventArgs = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceDisconnectButtonClickedEventArgs]
   }
   
-  @scala.inline
-  implicit class DeviceDisconnectButtonClickedEventArgsMutableBuilder[Self <: DeviceDisconnectButtonClickedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceDisconnectButtonClickedEventArgs](x: Self) {
     
-    @scala.inline
-    def setDevice(value: DeviceInformation): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: DeviceInformation): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
   }
 }

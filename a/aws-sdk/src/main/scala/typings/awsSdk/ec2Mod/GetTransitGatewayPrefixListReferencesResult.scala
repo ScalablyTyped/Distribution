@@ -18,28 +18,21 @@ trait GetTransitGatewayPrefixListReferencesResult extends StObject {
 }
 object GetTransitGatewayPrefixListReferencesResult {
   
-  @scala.inline
-  def apply(): GetTransitGatewayPrefixListReferencesResult = {
+  inline def apply(): GetTransitGatewayPrefixListReferencesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTransitGatewayPrefixListReferencesResult]
   }
   
-  @scala.inline
-  implicit class GetTransitGatewayPrefixListReferencesResultMutableBuilder[Self <: GetTransitGatewayPrefixListReferencesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetTransitGatewayPrefixListReferencesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayPrefixListReferences(value: TransitGatewayPrefixListReferenceSet): Self = StObject.set(x, "TransitGatewayPrefixListReferences", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayPrefixListReferences(value: TransitGatewayPrefixListReferenceSet): Self = StObject.set(x, "TransitGatewayPrefixListReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayPrefixListReferencesUndefined: Self = StObject.set(x, "TransitGatewayPrefixListReferences", js.undefined)
+    inline def setTransitGatewayPrefixListReferencesUndefined: Self = StObject.set(x, "TransitGatewayPrefixListReferences", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayPrefixListReferencesVarargs(value: TransitGatewayPrefixListReference*): Self = StObject.set(x, "TransitGatewayPrefixListReferences", js.Array(value :_*))
+    inline def setTransitGatewayPrefixListReferencesVarargs(value: TransitGatewayPrefixListReference*): Self = StObject.set(x, "TransitGatewayPrefixListReferences", js.Array(value :_*))
   }
 }

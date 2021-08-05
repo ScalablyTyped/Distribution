@@ -19,22 +19,17 @@ trait CoreProviderParentApp extends StObject {
 }
 object CoreProviderParentApp {
   
-  @scala.inline
-  def apply(config: Views, global: RemoveEventListener, manifestId: String): CoreProviderParentApp = {
+  inline def apply(config: Views, global: RemoveEventListener, manifestId: String): CoreProviderParentApp = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], manifestId = manifestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreProviderParentApp]
   }
   
-  @scala.inline
-  implicit class CoreProviderParentAppMutableBuilder[Self <: CoreProviderParentApp] (val x: Self) extends AnyVal {
+  extension [Self <: CoreProviderParentApp](x: Self) {
     
-    @scala.inline
-    def setConfig(value: Views): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Views): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobal(value: RemoveEventListener): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: RemoveEventListener): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestId(value: String): Self = StObject.set(x, "manifestId", value.asInstanceOf[js.Any])
+    inline def setManifestId(value: String): Self = StObject.set(x, "manifestId", value.asInstanceOf[js.Any])
   }
 }

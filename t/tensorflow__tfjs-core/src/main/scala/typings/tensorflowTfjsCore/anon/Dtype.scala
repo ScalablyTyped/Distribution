@@ -17,28 +17,21 @@ trait Dtype extends StObject {
 }
 object Dtype {
   
-  @scala.inline
-  def apply(dtype: uint16 | uint8 | float16): Dtype = {
+  inline def apply(dtype: uint16 | uint8 | float16): Dtype = {
     val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dtype]
   }
   
-  @scala.inline
-  implicit class DtypeMutableBuilder[Self <: Dtype] (val x: Self) extends AnyVal {
+  extension [Self <: Dtype](x: Self) {
     
-    @scala.inline
-    def setDtype(value: uint16 | uint8 | float16): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+    inline def setDtype(value: uint16 | uint8 | float16): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

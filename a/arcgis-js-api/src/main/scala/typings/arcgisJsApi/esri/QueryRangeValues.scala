@@ -26,8 +26,7 @@ trait QueryRangeValues
 }
 object QueryRangeValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     name: String,
@@ -38,16 +37,12 @@ object QueryRangeValues {
     __obj.asInstanceOf[QueryRangeValues]
   }
   
-  @scala.inline
-  implicit class QueryRangeValuesMutableBuilder[Self <: QueryRangeValues] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRangeValues](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: Double | js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Double | js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

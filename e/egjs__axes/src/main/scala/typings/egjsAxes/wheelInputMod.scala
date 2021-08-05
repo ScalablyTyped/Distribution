@@ -17,9 +17,9 @@ object wheelInputMod {
     def this(el: js.Any) = this()
     def this(el: js.Any, options: WheelInputOption) = this()
     
-    var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: js.Any = js.native
     
-    var _timer: js.Any = js.native
+    /* private */ var _timer: js.Any = js.native
     
     /* private */ def attachEvent(observer: js.Any): js.Any = js.native
     
@@ -52,7 +52,7 @@ object wheelInputMod {
     /* CompleteClass */
     override def mapAxes(axes: js.Array[String]): js.Any = js.native
     
-    var observer: js.Any = js.native
+    /* private */ var observer: js.Any = js.native
     
     /* private */ def onWheel(event: js.Any): js.Any = js.native
     
@@ -67,26 +67,20 @@ object wheelInputMod {
   }
   object WheelInputOption {
     
-    @scala.inline
-    def apply(): WheelInputOption = {
+    inline def apply(): WheelInputOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WheelInputOption]
     }
     
-    @scala.inline
-    implicit class WheelInputOptionMutableBuilder[Self <: WheelInputOption] (val x: Self) extends AnyVal {
+    extension [Self <: WheelInputOption](x: Self) {
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+      inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+      inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     }
   }
 }

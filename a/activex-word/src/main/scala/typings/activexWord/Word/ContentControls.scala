@@ -23,6 +23,6 @@ trait ContentControls extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.ContentControls_typekey")
+  /* private */ @JSName("Word.ContentControls_typekey")
   var WordDotContentControls_typekey: ContentControls = js.native
 }

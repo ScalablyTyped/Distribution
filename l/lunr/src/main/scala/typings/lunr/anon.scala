@@ -14,20 +14,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
+      inline def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoostUndefined: Self = StObject.set(x, "boost", js.undefined)
+      inline def setBoostUndefined: Self = StObject.set(x, "boost", js.undefined)
     }
   }
   
@@ -39,26 +35,20 @@ object anon {
   }
   object Boost {
     
-    @scala.inline
-    def apply(): Boost = {
+    inline def apply(): Boost = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Boost]
     }
     
-    @scala.inline
-    implicit class BoostMutableBuilder[Self <: Boost] (val x: Self) extends AnyVal {
+    extension [Self <: Boost](x: Self) {
       
-      @scala.inline
-      def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
+      inline def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoostUndefined: Self = StObject.set(x, "boost", js.undefined)
+      inline def setBoostUndefined: Self = StObject.set(x, "boost", js.undefined)
       
-      @scala.inline
-      def setExtractor(value: /* doc */ js.Object => String | js.Object | js.Array[js.Object]): Self = StObject.set(x, "extractor", js.Any.fromFunction1(value))
+      inline def setExtractor(value: /* doc */ js.Object => String | js.Object | js.Array[js.Object]): Self = StObject.set(x, "extractor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtractorUndefined: Self = StObject.set(x, "extractor", js.undefined)
+      inline def setExtractorUndefined: Self = StObject.set(x, "extractor", js.undefined)
     }
   }
   

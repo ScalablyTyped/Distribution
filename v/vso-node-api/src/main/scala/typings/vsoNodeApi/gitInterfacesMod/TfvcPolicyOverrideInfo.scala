@@ -12,22 +12,17 @@ trait TfvcPolicyOverrideInfo extends StObject {
 }
 object TfvcPolicyOverrideInfo {
   
-  @scala.inline
-  def apply(comment: String, policyFailures: js.Array[TfvcPolicyFailureInfo]): TfvcPolicyOverrideInfo = {
+  inline def apply(comment: String, policyFailures: js.Array[TfvcPolicyFailureInfo]): TfvcPolicyOverrideInfo = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], policyFailures = policyFailures.asInstanceOf[js.Any])
     __obj.asInstanceOf[TfvcPolicyOverrideInfo]
   }
   
-  @scala.inline
-  implicit class TfvcPolicyOverrideInfoMutableBuilder[Self <: TfvcPolicyOverrideInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcPolicyOverrideInfo](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyFailures(value: js.Array[TfvcPolicyFailureInfo]): Self = StObject.set(x, "policyFailures", value.asInstanceOf[js.Any])
+    inline def setPolicyFailures(value: js.Array[TfvcPolicyFailureInfo]): Self = StObject.set(x, "policyFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyFailuresVarargs(value: TfvcPolicyFailureInfo*): Self = StObject.set(x, "policyFailures", js.Array(value :_*))
+    inline def setPolicyFailuresVarargs(value: TfvcPolicyFailureInfo*): Self = StObject.set(x, "policyFailures", js.Array(value :_*))
   }
 }

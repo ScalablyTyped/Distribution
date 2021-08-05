@@ -258,39 +258,29 @@ object mod {
     }
     object ArrayOptions {
       
-      @scala.inline
-      def apply(`type`: String | Parser[js.Any]): ArrayOptions = {
+      inline def apply(`type`: String | Parser[js.Any]): ArrayOptions = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[ArrayOptions]
       }
       
-      @scala.inline
-      implicit class ArrayOptionsMutableBuilder[Self <: ArrayOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ArrayOptions](x: Self) {
         
-        @scala.inline
-        def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLengthInBytes(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "lengthInBytes", value.asInstanceOf[js.Any])
+        inline def setLengthInBytes(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "lengthInBytes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLengthInBytesUndefined: Self = StObject.set(x, "lengthInBytes", js.undefined)
+        inline def setLengthInBytesUndefined: Self = StObject.set(x, "lengthInBytes", js.undefined)
         
-        @scala.inline
-        def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+        inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
         
-        @scala.inline
-        def setReadUntil(value: String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])): Self = StObject.set(x, "readUntil", value.asInstanceOf[js.Any])
+        inline def setReadUntil(value: String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])): Self = StObject.set(x, "readUntil", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReadUntilFunction2(value: (/* item */ Double, /* buffer */ Buffer) => Boolean): Self = StObject.set(x, "readUntil", js.Any.fromFunction2(value))
+        inline def setReadUntilFunction2(value: (/* item */ Double, /* buffer */ Buffer) => Boolean): Self = StObject.set(x, "readUntil", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setReadUntilUndefined: Self = StObject.set(x, "readUntil", js.undefined)
+        inline def setReadUntilUndefined: Self = StObject.set(x, "readUntil", js.undefined)
         
-        @scala.inline
-        def setType(value: String | Parser[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String | Parser[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -307,35 +297,26 @@ object mod {
     }
     object BufferOptions {
       
-      @scala.inline
-      def apply(): BufferOptions = {
+      inline def apply(): BufferOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BufferOptions]
       }
       
-      @scala.inline
-      implicit class BufferOptionsMutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
+      extension [Self <: BufferOptions](x: Self) {
         
-        @scala.inline
-        def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+        inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+        inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
         
-        @scala.inline
-        def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+        inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
         
-        @scala.inline
-        def setReadUntil(value: String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])): Self = StObject.set(x, "readUntil", value.asInstanceOf[js.Any])
+        inline def setReadUntil(value: String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])): Self = StObject.set(x, "readUntil", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReadUntilFunction2(value: (/* item */ Double, /* buffer */ Buffer) => Boolean): Self = StObject.set(x, "readUntil", js.Any.fromFunction2(value))
+        inline def setReadUntilFunction2(value: (/* item */ Double, /* buffer */ Buffer) => Boolean): Self = StObject.set(x, "readUntil", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setReadUntilUndefined: Self = StObject.set(x, "readUntil", js.undefined)
+        inline def setReadUntilUndefined: Self = StObject.set(x, "readUntil", js.undefined)
       }
     }
     
@@ -351,8 +332,7 @@ object mod {
     }
     object ChoiceOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         choices: NumberDictionary[Parser[js.Any] | String],
         tag: String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])
       ): ChoiceOptions = {
@@ -360,20 +340,15 @@ object mod {
         __obj.asInstanceOf[ChoiceOptions]
       }
       
-      @scala.inline
-      implicit class ChoiceOptionsMutableBuilder[Self <: ChoiceOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ChoiceOptions](x: Self) {
         
-        @scala.inline
-        def setChoices(value: NumberDictionary[Parser[js.Any] | String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+        inline def setChoices(value: NumberDictionary[Parser[js.Any] | String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultChoice(value: Parser[js.Any] | String): Self = StObject.set(x, "defaultChoice", value.asInstanceOf[js.Any])
+        inline def setDefaultChoice(value: Parser[js.Any] | String): Self = StObject.set(x, "defaultChoice", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultChoiceUndefined: Self = StObject.set(x, "defaultChoice", js.undefined)
+        inline def setDefaultChoiceUndefined: Self = StObject.set(x, "defaultChoice", js.undefined)
         
-        @scala.inline
-        def setTag(value: String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       }
     }
     
@@ -386,11 +361,9 @@ object mod {
     trait Endianness extends StObject
     object Endianness {
       
-      @scala.inline
-      def big: typings.binaryParser.binaryParserStrings.big = "big".asInstanceOf[typings.binaryParser.binaryParserStrings.big]
+      inline def big: typings.binaryParser.binaryParserStrings.big = "big".asInstanceOf[typings.binaryParser.binaryParserStrings.big]
       
-      @scala.inline
-      def little: typings.binaryParser.binaryParserStrings.little = "little".asInstanceOf[typings.binaryParser.binaryParserStrings.little]
+      inline def little: typings.binaryParser.binaryParserStrings.little = "little".asInstanceOf[typings.binaryParser.binaryParserStrings.little]
     }
     
     trait NestOptions
@@ -401,18 +374,15 @@ object mod {
     }
     object NestOptions {
       
-      @scala.inline
-      def apply(`type`: Parser[js.Any]): NestOptions = {
+      inline def apply(`type`: Parser[js.Any]): NestOptions = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NestOptions]
       }
       
-      @scala.inline
-      implicit class NestOptionsMutableBuilder[Self <: NestOptions] (val x: Self) extends AnyVal {
+      extension [Self <: NestOptions](x: Self) {
         
-        @scala.inline
-        def setType(value: Parser[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Parser[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -433,29 +403,22 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setAssert(value: String | Double | (js.Function1[/* value */ Data, Boolean])): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+        inline def setAssert(value: String | Double | (js.Function1[/* value */ Data, Boolean])): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAssertFunction1(value: /* value */ Data => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
+        inline def setAssertFunction1(value: /* value */ Data => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
+        inline def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
         
-        @scala.inline
-        def setFormatter(value: /* value */ Data => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+        inline def setFormatter(value: /* value */ Data => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+        inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       }
     }
     
@@ -477,44 +440,32 @@ object mod {
     }
     object StringOptions {
       
-      @scala.inline
-      def apply(): StringOptions = {
+      inline def apply(): StringOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StringOptions]
       }
       
-      @scala.inline
-      implicit class StringOptionsMutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
+      extension [Self <: StringOptions](x: Self) {
         
-        @scala.inline
-        def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+        inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+        inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
         
-        @scala.inline
-        def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
+        inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
+        inline def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
         
-        @scala.inline
-        def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+        inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
         
-        @scala.inline
-        def setStripNull(value: Boolean): Self = StObject.set(x, "stripNull", value.asInstanceOf[js.Any])
+        inline def setStripNull(value: Boolean): Self = StObject.set(x, "stripNull", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStripNullUndefined: Self = StObject.set(x, "stripNull", js.undefined)
+        inline def setStripNullUndefined: Self = StObject.set(x, "stripNull", js.undefined)
         
-        @scala.inline
-        def setZeroTerminated(value: Boolean): Self = StObject.set(x, "zeroTerminated", value.asInstanceOf[js.Any])
+        inline def setZeroTerminated(value: Boolean): Self = StObject.set(x, "zeroTerminated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZeroTerminatedUndefined: Self = StObject.set(x, "zeroTerminated", js.undefined)
+        inline def setZeroTerminatedUndefined: Self = StObject.set(x, "zeroTerminated", js.undefined)
       }
     }
     

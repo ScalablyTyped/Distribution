@@ -10,8 +10,7 @@ trait IAccelerometer
      with IAbstract
 object IAccelerometer {
   
-  @scala.inline
-  def apply(): IAccelerometer = {
+  inline def apply(): IAccelerometer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAccelerometer]
   }

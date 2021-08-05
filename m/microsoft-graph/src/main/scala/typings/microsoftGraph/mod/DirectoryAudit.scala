@@ -60,106 +60,73 @@ trait DirectoryAudit
 }
 object DirectoryAudit {
   
-  @scala.inline
-  def apply(): DirectoryAudit = {
+  inline def apply(): DirectoryAudit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectoryAudit]
   }
   
-  @scala.inline
-  implicit class DirectoryAuditMutableBuilder[Self <: DirectoryAudit] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryAudit](x: Self) {
     
-    @scala.inline
-    def setActivityDateTime(value: String): Self = StObject.set(x, "activityDateTime", value.asInstanceOf[js.Any])
+    inline def setActivityDateTime(value: String): Self = StObject.set(x, "activityDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityDateTimeUndefined: Self = StObject.set(x, "activityDateTime", js.undefined)
+    inline def setActivityDateTimeUndefined: Self = StObject.set(x, "activityDateTime", js.undefined)
     
-    @scala.inline
-    def setActivityDisplayName(value: String): Self = StObject.set(x, "activityDisplayName", value.asInstanceOf[js.Any])
+    inline def setActivityDisplayName(value: String): Self = StObject.set(x, "activityDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityDisplayNameUndefined: Self = StObject.set(x, "activityDisplayName", js.undefined)
+    inline def setActivityDisplayNameUndefined: Self = StObject.set(x, "activityDisplayName", js.undefined)
     
-    @scala.inline
-    def setAdditionalDetails(value: NullableOption[js.Array[KeyValue]]): Self = StObject.set(x, "additionalDetails", value.asInstanceOf[js.Any])
+    inline def setAdditionalDetails(value: NullableOption[js.Array[KeyValue]]): Self = StObject.set(x, "additionalDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalDetailsNull: Self = StObject.set(x, "additionalDetails", null)
+    inline def setAdditionalDetailsNull: Self = StObject.set(x, "additionalDetails", null)
     
-    @scala.inline
-    def setAdditionalDetailsUndefined: Self = StObject.set(x, "additionalDetails", js.undefined)
+    inline def setAdditionalDetailsUndefined: Self = StObject.set(x, "additionalDetails", js.undefined)
     
-    @scala.inline
-    def setAdditionalDetailsVarargs(value: KeyValue*): Self = StObject.set(x, "additionalDetails", js.Array(value :_*))
+    inline def setAdditionalDetailsVarargs(value: KeyValue*): Self = StObject.set(x, "additionalDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setCorrelationId(value: NullableOption[String]): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
+    inline def setCorrelationId(value: NullableOption[String]): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
+    inline def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
     
-    @scala.inline
-    def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+    inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
     
-    @scala.inline
-    def setInitiatedBy(value: AuditActivityInitiator): Self = StObject.set(x, "initiatedBy", value.asInstanceOf[js.Any])
+    inline def setInitiatedBy(value: AuditActivityInitiator): Self = StObject.set(x, "initiatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatedByUndefined: Self = StObject.set(x, "initiatedBy", js.undefined)
+    inline def setInitiatedByUndefined: Self = StObject.set(x, "initiatedBy", js.undefined)
     
-    @scala.inline
-    def setLoggedByService(value: NullableOption[String]): Self = StObject.set(x, "loggedByService", value.asInstanceOf[js.Any])
+    inline def setLoggedByService(value: NullableOption[String]): Self = StObject.set(x, "loggedByService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggedByServiceNull: Self = StObject.set(x, "loggedByService", null)
+    inline def setLoggedByServiceNull: Self = StObject.set(x, "loggedByService", null)
     
-    @scala.inline
-    def setLoggedByServiceUndefined: Self = StObject.set(x, "loggedByService", js.undefined)
+    inline def setLoggedByServiceUndefined: Self = StObject.set(x, "loggedByService", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: NullableOption[String]): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: NullableOption[String]): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeNull: Self = StObject.set(x, "operationType", null)
+    inline def setOperationTypeNull: Self = StObject.set(x, "operationType", null)
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
-    @scala.inline
-    def setResult(value: NullableOption[OperationResult]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: NullableOption[OperationResult]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultNull: Self = StObject.set(x, "result", null)
+    inline def setResultNull: Self = StObject.set(x, "result", null)
     
-    @scala.inline
-    def setResultReason(value: NullableOption[String]): Self = StObject.set(x, "resultReason", value.asInstanceOf[js.Any])
+    inline def setResultReason(value: NullableOption[String]): Self = StObject.set(x, "resultReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultReasonNull: Self = StObject.set(x, "resultReason", null)
+    inline def setResultReasonNull: Self = StObject.set(x, "resultReason", null)
     
-    @scala.inline
-    def setResultReasonUndefined: Self = StObject.set(x, "resultReason", js.undefined)
+    inline def setResultReasonUndefined: Self = StObject.set(x, "resultReason", js.undefined)
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setTargetResources(value: NullableOption[js.Array[TargetResource]]): Self = StObject.set(x, "targetResources", value.asInstanceOf[js.Any])
+    inline def setTargetResources(value: NullableOption[js.Array[TargetResource]]): Self = StObject.set(x, "targetResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetResourcesNull: Self = StObject.set(x, "targetResources", null)
+    inline def setTargetResourcesNull: Self = StObject.set(x, "targetResources", null)
     
-    @scala.inline
-    def setTargetResourcesUndefined: Self = StObject.set(x, "targetResources", js.undefined)
+    inline def setTargetResourcesUndefined: Self = StObject.set(x, "targetResources", js.undefined)
     
-    @scala.inline
-    def setTargetResourcesVarargs(value: TargetResource*): Self = StObject.set(x, "targetResources", js.Array(value :_*))
+    inline def setTargetResourcesVarargs(value: TargetResource*): Self = StObject.set(x, "targetResources", js.Array(value :_*))
   }
 }

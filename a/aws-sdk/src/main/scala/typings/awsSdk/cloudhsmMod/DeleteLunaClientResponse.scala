@@ -13,16 +13,13 @@ trait DeleteLunaClientResponse extends StObject {
 }
 object DeleteLunaClientResponse {
   
-  @scala.inline
-  def apply(Status: String): DeleteLunaClientResponse = {
+  inline def apply(Status: String): DeleteLunaClientResponse = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLunaClientResponse]
   }
   
-  @scala.inline
-  implicit class DeleteLunaClientResponseMutableBuilder[Self <: DeleteLunaClientResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLunaClientResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

@@ -24,19 +24,15 @@ trait GroupLayerProperties
 }
 object GroupLayerProperties {
   
-  @scala.inline
-  def apply(): GroupLayerProperties = {
+  inline def apply(): GroupLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupLayerProperties]
   }
   
-  @scala.inline
-  implicit class GroupLayerPropertiesMutableBuilder[Self <: GroupLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GroupLayerProperties](x: Self) {
     
-    @scala.inline
-    def setVisibilityMode(value: independent | inherited | exclusive): Self = StObject.set(x, "visibilityMode", value.asInstanceOf[js.Any])
+    inline def setVisibilityMode(value: independent | inherited | exclusive): Self = StObject.set(x, "visibilityMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityModeUndefined: Self = StObject.set(x, "visibilityMode", js.undefined)
+    inline def setVisibilityModeUndefined: Self = StObject.set(x, "visibilityMode", js.undefined)
   }
 }

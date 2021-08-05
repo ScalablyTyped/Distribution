@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Role extends StObject
 object Role {
   
-  @scala.inline
-  def moderator: typings.opentok.opentokStrings.moderator = "moderator".asInstanceOf[typings.opentok.opentokStrings.moderator]
+  inline def moderator: typings.opentok.opentokStrings.moderator = "moderator".asInstanceOf[typings.opentok.opentokStrings.moderator]
   
-  @scala.inline
-  def publisher: typings.opentok.opentokStrings.publisher = "publisher".asInstanceOf[typings.opentok.opentokStrings.publisher]
+  inline def publisher: typings.opentok.opentokStrings.publisher = "publisher".asInstanceOf[typings.opentok.opentokStrings.publisher]
   
-  @scala.inline
-  def subscriber: typings.opentok.opentokStrings.subscriber = "subscriber".asInstanceOf[typings.opentok.opentokStrings.subscriber]
+  inline def subscriber: typings.opentok.opentokStrings.subscriber = "subscriber".asInstanceOf[typings.opentok.opentokStrings.subscriber]
 }

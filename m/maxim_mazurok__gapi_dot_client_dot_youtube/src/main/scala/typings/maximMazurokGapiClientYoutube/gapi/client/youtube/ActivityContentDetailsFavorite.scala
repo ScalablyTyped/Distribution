@@ -11,19 +11,15 @@ trait ActivityContentDetailsFavorite extends StObject {
 }
 object ActivityContentDetailsFavorite {
   
-  @scala.inline
-  def apply(): ActivityContentDetailsFavorite = {
+  inline def apply(): ActivityContentDetailsFavorite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityContentDetailsFavorite]
   }
   
-  @scala.inline
-  implicit class ActivityContentDetailsFavoriteMutableBuilder[Self <: ActivityContentDetailsFavorite] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityContentDetailsFavorite](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

@@ -57,17 +57,14 @@ object pathPathMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(topology: `4` | `6` | `8`): Options = {
+    inline def apply(topology: `4` | `6` | `8`): Options = {
       val __obj = js.Dynamic.literal(topology = topology.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
+      inline def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,8 +96,7 @@ object pathPathMod {
   }
   object Path {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _dirs: js.Array[js.Array[Double]],
       _getNeighbors: (Double, Double) => js.Array[js.Array[Double]],
       _options: Options,
@@ -113,32 +109,23 @@ object pathPathMod {
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setCompute(value: (Double, Double, ComputeCallback) => Unit): Self = StObject.set(x, "compute", js.Any.fromFunction3(value))
+      inline def setCompute(value: (Double, Double, ComputeCallback) => Unit): Self = StObject.set(x, "compute", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_dirs(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "_dirs", value.asInstanceOf[js.Any])
+      inline def set_dirs(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "_dirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_dirsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "_dirs", js.Array(value :_*))
+      inline def set_dirsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "_dirs", js.Array(value :_*))
       
-      @scala.inline
-      def set_getNeighbors(value: (Double, Double) => js.Array[js.Array[Double]]): Self = StObject.set(x, "_getNeighbors", js.Any.fromFunction2(value))
+      inline def set_getNeighbors(value: (Double, Double) => js.Array[js.Array[Double]]): Self = StObject.set(x, "_getNeighbors", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_options(value: Options): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: Options): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_passableCallback(value: (/* x */ Double, /* y */ Double) => Boolean): Self = StObject.set(x, "_passableCallback", js.Any.fromFunction2(value))
+      inline def set_passableCallback(value: (/* x */ Double, /* y */ Double) => Boolean): Self = StObject.set(x, "_passableCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_toX(value: Double): Self = StObject.set(x, "_toX", value.asInstanceOf[js.Any])
+      inline def set_toX(value: Double): Self = StObject.set(x, "_toX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_toY(value: Double): Self = StObject.set(x, "_toY", value.asInstanceOf[js.Any])
+      inline def set_toY(value: Double): Self = StObject.set(x, "_toY", value.asInstanceOf[js.Any])
     }
   }
 }

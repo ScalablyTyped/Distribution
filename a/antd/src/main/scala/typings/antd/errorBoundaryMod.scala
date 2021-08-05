@@ -35,26 +35,20 @@ object errorBoundaryMod {
   }
   object ErrorBoundaryProps {
     
-    @scala.inline
-    def apply(): ErrorBoundaryProps = {
+    inline def apply(): ErrorBoundaryProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorBoundaryProps]
     }
     
-    @scala.inline
-    implicit class ErrorBoundaryPropsMutableBuilder[Self <: ErrorBoundaryProps] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorBoundaryProps](x: Self) {
       
-      @scala.inline
-      def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

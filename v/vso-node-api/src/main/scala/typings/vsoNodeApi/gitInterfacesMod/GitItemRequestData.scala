@@ -28,8 +28,7 @@ trait GitItemRequestData extends StObject {
 }
 object GitItemRequestData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     includeContentMetadata: Boolean,
     includeLinks: Boolean,
     itemDescriptors: js.Array[GitItemDescriptor],
@@ -39,22 +38,16 @@ object GitItemRequestData {
     __obj.asInstanceOf[GitItemRequestData]
   }
   
-  @scala.inline
-  implicit class GitItemRequestDataMutableBuilder[Self <: GitItemRequestData] (val x: Self) extends AnyVal {
+  extension [Self <: GitItemRequestData](x: Self) {
     
-    @scala.inline
-    def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
+    inline def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
+    inline def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDescriptors(value: js.Array[GitItemDescriptor]): Self = StObject.set(x, "itemDescriptors", value.asInstanceOf[js.Any])
+    inline def setItemDescriptors(value: js.Array[GitItemDescriptor]): Self = StObject.set(x, "itemDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDescriptorsVarargs(value: GitItemDescriptor*): Self = StObject.set(x, "itemDescriptors", js.Array(value :_*))
+    inline def setItemDescriptorsVarargs(value: GitItemDescriptor*): Self = StObject.set(x, "itemDescriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setLatestProcessedChange(value: Boolean): Self = StObject.set(x, "latestProcessedChange", value.asInstanceOf[js.Any])
+    inline def setLatestProcessedChange(value: Boolean): Self = StObject.set(x, "latestProcessedChange", value.asInstanceOf[js.Any])
   }
 }

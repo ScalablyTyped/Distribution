@@ -39,37 +39,27 @@ trait SchemaHttpQueryParameterMatch extends StObject {
 }
 object SchemaHttpQueryParameterMatch {
   
-  @scala.inline
-  def apply(): SchemaHttpQueryParameterMatch = {
+  inline def apply(): SchemaHttpQueryParameterMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpQueryParameterMatch]
   }
   
-  @scala.inline
-  implicit class SchemaHttpQueryParameterMatchMutableBuilder[Self <: SchemaHttpQueryParameterMatch] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHttpQueryParameterMatch](x: Self) {
     
-    @scala.inline
-    def setExactMatch(value: String): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
+    inline def setExactMatch(value: String): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
+    inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPresentMatch(value: Boolean): Self = StObject.set(x, "presentMatch", value.asInstanceOf[js.Any])
+    inline def setPresentMatch(value: Boolean): Self = StObject.set(x, "presentMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentMatchUndefined: Self = StObject.set(x, "presentMatch", js.undefined)
+    inline def setPresentMatchUndefined: Self = StObject.set(x, "presentMatch", js.undefined)
     
-    @scala.inline
-    def setRegexMatch(value: String): Self = StObject.set(x, "regexMatch", value.asInstanceOf[js.Any])
+    inline def setRegexMatch(value: String): Self = StObject.set(x, "regexMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexMatchUndefined: Self = StObject.set(x, "regexMatch", js.undefined)
+    inline def setRegexMatchUndefined: Self = StObject.set(x, "regexMatch", js.undefined)
   }
 }

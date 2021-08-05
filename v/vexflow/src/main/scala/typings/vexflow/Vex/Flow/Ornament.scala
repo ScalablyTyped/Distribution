@@ -18,8 +18,7 @@ trait Ornament
 }
 object Ornament {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
     getCategory: () => String,
@@ -46,16 +45,12 @@ object Ornament {
     __obj.asInstanceOf[Ornament]
   }
   
-  @scala.inline
-  implicit class OrnamentMutableBuilder[Self <: Ornament] (val x: Self) extends AnyVal {
+  extension [Self <: Ornament](x: Self) {
     
-    @scala.inline
-    def setSetDelayed(value: Boolean => Ornament): Self = StObject.set(x, "setDelayed", js.Any.fromFunction1(value))
+    inline def setSetDelayed(value: Boolean => Ornament): Self = StObject.set(x, "setDelayed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLowerAccidental(value: String => Ornament): Self = StObject.set(x, "setLowerAccidental", js.Any.fromFunction1(value))
+    inline def setSetLowerAccidental(value: String => Ornament): Self = StObject.set(x, "setLowerAccidental", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUpperAccidental(value: String => Ornament): Self = StObject.set(x, "setUpperAccidental", js.Any.fromFunction1(value))
+    inline def setSetUpperAccidental(value: String => Ornament): Self = StObject.set(x, "setUpperAccidental", js.Any.fromFunction1(value))
   }
 }

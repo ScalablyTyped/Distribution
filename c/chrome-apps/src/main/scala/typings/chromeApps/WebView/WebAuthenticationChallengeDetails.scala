@@ -25,8 +25,7 @@ trait WebAuthenticationChallengeDetails
 }
 object WebAuthenticationChallengeDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     challenger: WebAuthChallenger,
     frameId: integer,
     isProxy: Boolean,
@@ -46,22 +45,16 @@ object WebAuthenticationChallengeDetails {
     __obj.asInstanceOf[WebAuthenticationChallengeDetails]
   }
   
-  @scala.inline
-  implicit class WebAuthenticationChallengeDetailsMutableBuilder[Self <: WebAuthenticationChallengeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebAuthenticationChallengeDetails](x: Self) {
     
-    @scala.inline
-    def setChallenger(value: WebAuthChallenger): Self = StObject.set(x, "challenger", value.asInstanceOf[js.Any])
+    inline def setChallenger(value: WebAuthChallenger): Self = StObject.set(x, "challenger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsProxy(value: Boolean): Self = StObject.set(x, "isProxy", value.asInstanceOf[js.Any])
+    inline def setIsProxy(value: Boolean): Self = StObject.set(x, "isProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+    inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+    inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

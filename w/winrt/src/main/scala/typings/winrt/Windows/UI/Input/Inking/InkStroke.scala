@@ -11,8 +11,7 @@ trait InkStroke
      with IInkStroke
 object InkStroke {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingRect: Rect,
     drawingAttributes: InkDrawingAttributes,
     getRenderingSegments: () => IVectorView[InkStrokeRenderingSegment],

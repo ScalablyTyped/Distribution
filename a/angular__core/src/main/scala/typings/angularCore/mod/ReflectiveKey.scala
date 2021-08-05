@@ -28,6 +28,5 @@ object ReflectiveKey {
   /**
     * Retrieves a `Key` for a token.
     */
-  @scala.inline
-  def get(token: js.Object): ReflectiveKey = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any]).asInstanceOf[ReflectiveKey]
+  inline def get(token: js.Object): ReflectiveKey = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any]).asInstanceOf[ReflectiveKey]
 }

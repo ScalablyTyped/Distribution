@@ -16,34 +16,25 @@ trait PickerIOSProps
 }
 object PickerIOSProps {
   
-  @scala.inline
-  def apply(): PickerIOSProps = {
+  inline def apply(): PickerIOSProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickerIOSProps]
   }
   
-  @scala.inline
-  implicit class PickerIOSPropsMutableBuilder[Self <: PickerIOSProps] (val x: Self) extends AnyVal {
+  extension [Self <: PickerIOSProps](x: Self) {
     
-    @scala.inline
-    def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
+    inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setOnValueChange(value: /* value */ String | Double => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+    inline def setOnValueChange(value: /* value */ String | Double => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
+    inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
-    @scala.inline
-    def setSelectedValue(value: String | Double): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+    inline def setSelectedValue(value: String | Double): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
+    inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
   }
 }

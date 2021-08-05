@@ -26,22 +26,17 @@ trait ContextInformation extends StObject {
 }
 object ContextInformation {
   
-  @scala.inline
-  def apply(host: HostType, platform: PlatformType, version: String): ContextInformation = {
+  inline def apply(host: HostType, platform: PlatformType, version: String): ContextInformation = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextInformation]
   }
   
-  @scala.inline
-  implicit class ContextInformationMutableBuilder[Self <: ContextInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ContextInformation](x: Self) {
     
-    @scala.inline
-    def setHost(value: HostType): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: HostType): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: PlatformType): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: PlatformType): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

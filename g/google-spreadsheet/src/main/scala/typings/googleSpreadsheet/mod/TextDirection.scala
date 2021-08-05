@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextDirection extends StObject
 object TextDirection {
   
-  @scala.inline
-  def LEFT_TO_RIGHT: typings.googleSpreadsheet.googleSpreadsheetStrings.LEFT_TO_RIGHT = "LEFT_TO_RIGHT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.LEFT_TO_RIGHT]
+  inline def LEFT_TO_RIGHT: typings.googleSpreadsheet.googleSpreadsheetStrings.LEFT_TO_RIGHT = "LEFT_TO_RIGHT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.LEFT_TO_RIGHT]
   
-  @scala.inline
-  def RIGHT_TO_LEFT: typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT_TO_LEFT = "RIGHT_TO_LEFT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT_TO_LEFT]
+  inline def RIGHT_TO_LEFT: typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT_TO_LEFT = "RIGHT_TO_LEFT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT_TO_LEFT]
 }

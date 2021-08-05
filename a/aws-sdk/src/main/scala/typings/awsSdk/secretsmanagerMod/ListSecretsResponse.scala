@@ -18,28 +18,21 @@ trait ListSecretsResponse extends StObject {
 }
 object ListSecretsResponse {
   
-  @scala.inline
-  def apply(): ListSecretsResponse = {
+  inline def apply(): ListSecretsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSecretsResponse]
   }
   
-  @scala.inline
-  implicit class ListSecretsResponseMutableBuilder[Self <: ListSecretsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSecretsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextTokenType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextTokenType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSecretList(value: SecretListType): Self = StObject.set(x, "SecretList", value.asInstanceOf[js.Any])
+    inline def setSecretList(value: SecretListType): Self = StObject.set(x, "SecretList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretListUndefined: Self = StObject.set(x, "SecretList", js.undefined)
+    inline def setSecretListUndefined: Self = StObject.set(x, "SecretList", js.undefined)
     
-    @scala.inline
-    def setSecretListVarargs(value: SecretListEntry*): Self = StObject.set(x, "SecretList", js.Array(value :_*))
+    inline def setSecretListVarargs(value: SecretListEntry*): Self = StObject.set(x, "SecretList", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait Math extends StObject {
 }
 object Math {
   
-  @scala.inline
-  def apply(fround: Double => Double): Math = {
+  inline def apply(fround: Double => Double): Math = {
     val __obj = js.Dynamic.literal(fround = js.Any.fromFunction1(fround))
     __obj.asInstanceOf[Math]
   }
   
-  @scala.inline
-  implicit class MathMutableBuilder[Self <: Math] (val x: Self) extends AnyVal {
+  extension [Self <: Math](x: Self) {
     
-    @scala.inline
-    def setFround(value: Double => Double): Self = StObject.set(x, "fround", js.Any.fromFunction1(value))
+    inline def setFround(value: Double => Double): Self = StObject.set(x, "fround", js.Any.fromFunction1(value))
   }
 }

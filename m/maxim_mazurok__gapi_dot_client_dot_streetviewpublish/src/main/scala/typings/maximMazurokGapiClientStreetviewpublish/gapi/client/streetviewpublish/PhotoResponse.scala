@@ -14,25 +14,19 @@ trait PhotoResponse extends StObject {
 }
 object PhotoResponse {
   
-  @scala.inline
-  def apply(): PhotoResponse = {
+  inline def apply(): PhotoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PhotoResponse]
   }
   
-  @scala.inline
-  implicit class PhotoResponseMutableBuilder[Self <: PhotoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoResponse](x: Self) {
     
-    @scala.inline
-    def setPhoto(value: Photo): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    inline def setPhoto(value: Photo): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
+    inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -22,19 +22,15 @@ trait CreateConnection
 }
 object CreateConnection {
   
-  @scala.inline
-  def apply(name: String, strategy: Strategy): CreateConnection = {
+  inline def apply(name: String, strategy: Strategy): CreateConnection = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnection]
   }
   
-  @scala.inline
-  implicit class CreateConnectionMutableBuilder[Self <: CreateConnection] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConnection](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategy(value: Strategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: Strategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
   }
 }

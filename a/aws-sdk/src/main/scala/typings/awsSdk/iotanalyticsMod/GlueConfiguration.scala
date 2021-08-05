@@ -18,19 +18,15 @@ trait GlueConfiguration extends StObject {
 }
 object GlueConfiguration {
   
-  @scala.inline
-  def apply(databaseName: GlueDatabaseName, tableName: GlueTableName): GlueConfiguration = {
+  inline def apply(databaseName: GlueDatabaseName, tableName: GlueTableName): GlueConfiguration = {
     val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlueConfiguration]
   }
   
-  @scala.inline
-  implicit class GlueConfigurationMutableBuilder[Self <: GlueConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: GlueConfiguration](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: GlueDatabaseName): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: GlueDatabaseName): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: GlueTableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: GlueTableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

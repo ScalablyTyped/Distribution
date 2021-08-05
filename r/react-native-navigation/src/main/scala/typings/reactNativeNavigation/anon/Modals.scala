@@ -14,28 +14,21 @@ trait Modals extends StObject {
 }
 object Modals {
   
-  @scala.inline
-  def apply(modals: js.Array[js.Any], overlays: js.Array[js.Any], root: js.Any): Modals = {
+  inline def apply(modals: js.Array[js.Any], overlays: js.Array[js.Any], root: js.Any): Modals = {
     val __obj = js.Dynamic.literal(modals = modals.asInstanceOf[js.Any], overlays = overlays.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Modals]
   }
   
-  @scala.inline
-  implicit class ModalsMutableBuilder[Self <: Modals] (val x: Self) extends AnyVal {
+  extension [Self <: Modals](x: Self) {
     
-    @scala.inline
-    def setModals(value: js.Array[js.Any]): Self = StObject.set(x, "modals", value.asInstanceOf[js.Any])
+    inline def setModals(value: js.Array[js.Any]): Self = StObject.set(x, "modals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalsVarargs(value: js.Any*): Self = StObject.set(x, "modals", js.Array(value :_*))
+    inline def setModalsVarargs(value: js.Any*): Self = StObject.set(x, "modals", js.Array(value :_*))
     
-    @scala.inline
-    def setOverlays(value: js.Array[js.Any]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+    inline def setOverlays(value: js.Array[js.Any]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlaysVarargs(value: js.Any*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+    inline def setOverlaysVarargs(value: js.Any*): Self = StObject.set(x, "overlays", js.Array(value :_*))
     
-    @scala.inline
-    def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

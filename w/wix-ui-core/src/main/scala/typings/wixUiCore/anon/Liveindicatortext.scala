@@ -16,8 +16,7 @@ trait Liveindicatortext extends StObject {
 }
 object Liveindicatortext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `live-indicator-text`: IsEnded => Live | (`Live Ended`),
     `logo-tooltip`: String,
     `mute-control-tooltip`: String
@@ -29,16 +28,12 @@ object Liveindicatortext {
     __obj.asInstanceOf[Liveindicatortext]
   }
   
-  @scala.inline
-  implicit class LiveindicatortextMutableBuilder[Self <: Liveindicatortext] (val x: Self) extends AnyVal {
+  extension [Self <: Liveindicatortext](x: Self) {
     
-    @scala.inline
-    def `setLive-indicator-text`(value: IsEnded => Live | (`Live Ended`)): Self = StObject.set(x, "live-indicator-text", js.Any.fromFunction1(value))
+    inline def `setLive-indicator-text`(value: IsEnded => Live | (`Live Ended`)): Self = StObject.set(x, "live-indicator-text", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setLogo-tooltip`(value: String): Self = StObject.set(x, "logo-tooltip", value.asInstanceOf[js.Any])
+    inline def `setLogo-tooltip`(value: String): Self = StObject.set(x, "logo-tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMute-control-tooltip`(value: String): Self = StObject.set(x, "mute-control-tooltip", value.asInstanceOf[js.Any])
+    inline def `setMute-control-tooltip`(value: String): Self = StObject.set(x, "mute-control-tooltip", value.asInstanceOf[js.Any])
   }
 }

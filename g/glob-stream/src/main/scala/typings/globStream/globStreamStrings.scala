@@ -11,20 +11,17 @@ object globStreamStrings {
   sealed trait base
     extends StObject
        with UniqueByStringPredicate
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
+  inline def base: base = "base".asInstanceOf[base]
   
   @js.native
   sealed trait cwd
     extends StObject
        with UniqueByStringPredicate
-  @scala.inline
-  def cwd: cwd = "cwd".asInstanceOf[cwd]
+  inline def cwd: cwd = "cwd".asInstanceOf[cwd]
   
   @js.native
   sealed trait path
     extends StObject
        with UniqueByStringPredicate
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
+  inline def path: path = "path".asInstanceOf[path]
 }

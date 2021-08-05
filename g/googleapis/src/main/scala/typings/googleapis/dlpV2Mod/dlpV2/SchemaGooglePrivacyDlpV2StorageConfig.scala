@@ -28,37 +28,27 @@ trait SchemaGooglePrivacyDlpV2StorageConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2StorageConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2StorageConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2StorageConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2StorageConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2StorageConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2StorageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2StorageConfig](x: Self) {
     
-    @scala.inline
-    def setBigQueryOptions(value: SchemaGooglePrivacyDlpV2BigQueryOptions): Self = StObject.set(x, "bigQueryOptions", value.asInstanceOf[js.Any])
+    inline def setBigQueryOptions(value: SchemaGooglePrivacyDlpV2BigQueryOptions): Self = StObject.set(x, "bigQueryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigQueryOptionsUndefined: Self = StObject.set(x, "bigQueryOptions", js.undefined)
+    inline def setBigQueryOptionsUndefined: Self = StObject.set(x, "bigQueryOptions", js.undefined)
     
-    @scala.inline
-    def setCloudStorageOptions(value: SchemaGooglePrivacyDlpV2CloudStorageOptions): Self = StObject.set(x, "cloudStorageOptions", value.asInstanceOf[js.Any])
+    inline def setCloudStorageOptions(value: SchemaGooglePrivacyDlpV2CloudStorageOptions): Self = StObject.set(x, "cloudStorageOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudStorageOptionsUndefined: Self = StObject.set(x, "cloudStorageOptions", js.undefined)
+    inline def setCloudStorageOptionsUndefined: Self = StObject.set(x, "cloudStorageOptions", js.undefined)
     
-    @scala.inline
-    def setDatastoreOptions(value: SchemaGooglePrivacyDlpV2DatastoreOptions): Self = StObject.set(x, "datastoreOptions", value.asInstanceOf[js.Any])
+    inline def setDatastoreOptions(value: SchemaGooglePrivacyDlpV2DatastoreOptions): Self = StObject.set(x, "datastoreOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreOptionsUndefined: Self = StObject.set(x, "datastoreOptions", js.undefined)
+    inline def setDatastoreOptionsUndefined: Self = StObject.set(x, "datastoreOptions", js.undefined)
     
-    @scala.inline
-    def setTimespanConfig(value: SchemaGooglePrivacyDlpV2TimespanConfig): Self = StObject.set(x, "timespanConfig", value.asInstanceOf[js.Any])
+    inline def setTimespanConfig(value: SchemaGooglePrivacyDlpV2TimespanConfig): Self = StObject.set(x, "timespanConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimespanConfigUndefined: Self = StObject.set(x, "timespanConfig", js.undefined)
+    inline def setTimespanConfigUndefined: Self = StObject.set(x, "timespanConfig", js.undefined)
   }
 }

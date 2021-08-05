@@ -23,6 +23,6 @@ object reInviteUserAgentClientMod {
     @JSName("delegate")
     var delegate_ReInviteUserAgentClient: js.UndefOr[OutgoingInviteRequestDelegate] = js.native
     
-    var dialog: js.Any = js.native
+    /* private */ var dialog: js.Any = js.native
   }
 }

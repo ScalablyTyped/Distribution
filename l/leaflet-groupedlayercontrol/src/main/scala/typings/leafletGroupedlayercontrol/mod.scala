@@ -32,8 +32,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def groupedLayers(
+    inline def groupedLayers(
       baseLayers: StringDictionary[Layer],
       groupedOverlays: StringDictionary[StringDictionary[LayerGroup_[js.Any]]],
       options: GroupedLayersOptions
@@ -57,41 +56,30 @@ object mod {
   }
   object GroupedLayersOptions {
     
-    @scala.inline
-    def apply(): GroupedLayersOptions = {
+    inline def apply(): GroupedLayersOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GroupedLayersOptions]
     }
     
-    @scala.inline
-    implicit class GroupedLayersOptionsMutableBuilder[Self <: GroupedLayersOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GroupedLayersOptions](x: Self) {
       
-      @scala.inline
-      def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
+      inline def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoZIndexUndefined: Self = StObject.set(x, "autoZIndex", js.undefined)
+      inline def setAutoZIndexUndefined: Self = StObject.set(x, "autoZIndex", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setExclusiveGroups(value: js.Array[String]): Self = StObject.set(x, "exclusiveGroups", value.asInstanceOf[js.Any])
+      inline def setExclusiveGroups(value: js.Array[String]): Self = StObject.set(x, "exclusiveGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveGroupsUndefined: Self = StObject.set(x, "exclusiveGroups", js.undefined)
+      inline def setExclusiveGroupsUndefined: Self = StObject.set(x, "exclusiveGroups", js.undefined)
       
-      @scala.inline
-      def setExclusiveGroupsVarargs(value: String*): Self = StObject.set(x, "exclusiveGroups", js.Array(value :_*))
+      inline def setExclusiveGroupsVarargs(value: String*): Self = StObject.set(x, "exclusiveGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setGroupCheckboxes(value: Boolean): Self = StObject.set(x, "groupCheckboxes", value.asInstanceOf[js.Any])
+      inline def setGroupCheckboxes(value: Boolean): Self = StObject.set(x, "groupCheckboxes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupCheckboxesUndefined: Self = StObject.set(x, "groupCheckboxes", js.undefined)
+      inline def setGroupCheckboxesUndefined: Self = StObject.set(x, "groupCheckboxes", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait BatchDisableStandardsRequest extends StObject {
 }
 object BatchDisableStandardsRequest {
   
-  @scala.inline
-  def apply(StandardsSubscriptionArns: StandardsSubscriptionArns): BatchDisableStandardsRequest = {
+  inline def apply(StandardsSubscriptionArns: StandardsSubscriptionArns): BatchDisableStandardsRequest = {
     val __obj = js.Dynamic.literal(StandardsSubscriptionArns = StandardsSubscriptionArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDisableStandardsRequest]
   }
   
-  @scala.inline
-  implicit class BatchDisableStandardsRequestMutableBuilder[Self <: BatchDisableStandardsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDisableStandardsRequest](x: Self) {
     
-    @scala.inline
-    def setStandardsSubscriptionArns(value: StandardsSubscriptionArns): Self = StObject.set(x, "StandardsSubscriptionArns", value.asInstanceOf[js.Any])
+    inline def setStandardsSubscriptionArns(value: StandardsSubscriptionArns): Self = StObject.set(x, "StandardsSubscriptionArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsSubscriptionArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "StandardsSubscriptionArns", js.Array(value :_*))
+    inline def setStandardsSubscriptionArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "StandardsSubscriptionArns", js.Array(value :_*))
   }
 }

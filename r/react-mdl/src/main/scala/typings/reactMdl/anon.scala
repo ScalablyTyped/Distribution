@@ -12,17 +12,14 @@ object anon {
   }
   object Html {
     
-    @scala.inline
-    def apply(__html: String): Html = {
+    inline def apply(__html: String): Html = {
       val __obj = js.Dynamic.literal(__html = __html.asInstanceOf[js.Any])
       __obj.asInstanceOf[Html]
     }
     
-    @scala.inline
-    implicit class HtmlMutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
+    extension [Self <: Html](x: Self) {
       
-      @scala.inline
-      def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
+      inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,20 +29,16 @@ object anon {
   }
   object Recursive {
     
-    @scala.inline
-    def apply(): Recursive = {
+    inline def apply(): Recursive = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Recursive]
     }
     
-    @scala.inline
-    implicit class RecursiveMutableBuilder[Self <: Recursive] (val x: Self) extends AnyVal {
+    extension [Self <: Recursive](x: Self) {
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     }
   }
 }

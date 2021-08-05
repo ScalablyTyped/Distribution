@@ -13,19 +13,15 @@ trait AttachmentInformation extends StObject {
 }
 object AttachmentInformation {
   
-  @scala.inline
-  def apply(): AttachmentInformation = {
+  inline def apply(): AttachmentInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachmentInformation]
   }
   
-  @scala.inline
-  implicit class AttachmentInformationMutableBuilder[Self <: AttachmentInformation] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentInformation](x: Self) {
     
-    @scala.inline
-    def setName(value: AttachmentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AttachmentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

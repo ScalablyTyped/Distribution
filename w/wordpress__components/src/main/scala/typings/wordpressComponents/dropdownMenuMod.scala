@@ -62,41 +62,30 @@ object dropdownMenuMod {
     }
     object BaseProps {
       
-      @scala.inline
-      def apply(label: String): BaseProps = {
+      inline def apply(label: String): BaseProps = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[BaseProps]
       }
       
-      @scala.inline
-      implicit class BasePropsMutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
+      extension [Self <: BaseProps](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMenuLabel(value: String): Self = StObject.set(x, "menuLabel", value.asInstanceOf[js.Any])
+        inline def setMenuLabel(value: String): Self = StObject.set(x, "menuLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMenuLabelUndefined: Self = StObject.set(x, "menuLabel", js.undefined)
+        inline def setMenuLabelUndefined: Self = StObject.set(x, "menuLabel", js.undefined)
         
-        @scala.inline
-        def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       }
     }
     
@@ -124,29 +113,22 @@ object dropdownMenuMod {
     }
     object Control {
       
-      @scala.inline
-      def apply(icon: Icon, onClick: () => Unit, title: String): Control = {
+      inline def apply(icon: Icon, onClick: () => Unit, title: String): Control = {
         val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[Control]
       }
       
-      @scala.inline
-      implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
+      extension [Self <: Control](x: Self) {
         
-        @scala.inline
-        def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+        inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+        inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
         
-        @scala.inline
-        def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+        inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
@@ -157,14 +139,12 @@ object dropdownMenuMod {
     trait Props extends StObject
     object Props {
       
-      @scala.inline
-      def PropsWithChildren(children: RenderProps => Element, label: String): typings.wordpressComponents.dropdownMenuMod.DropdownMenu.PropsWithChildren = {
+      inline def PropsWithChildren(children: RenderProps => Element, label: String): typings.wordpressComponents.dropdownMenuMod.DropdownMenu.PropsWithChildren = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.dropdownMenuMod.DropdownMenu.PropsWithChildren]
       }
       
-      @scala.inline
-      def PropsWithControls(controls: js.Array[Control], label: String): typings.wordpressComponents.dropdownMenuMod.DropdownMenu.PropsWithControls = {
+      inline def PropsWithControls(controls: js.Array[Control], label: String): typings.wordpressComponents.dropdownMenuMod.DropdownMenu.PropsWithControls = {
         val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.dropdownMenuMod.DropdownMenu.PropsWithControls]
       }
@@ -186,17 +166,14 @@ object dropdownMenuMod {
     }
     object PropsWithChildren {
       
-      @scala.inline
-      def apply(children: RenderProps => Element, label: String): PropsWithChildren = {
+      inline def apply(children: RenderProps => Element, label: String): PropsWithChildren = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[PropsWithChildren]
       }
       
-      @scala.inline
-      implicit class PropsWithChildrenMutableBuilder[Self <: PropsWithChildren] (val x: Self) extends AnyVal {
+      extension [Self <: PropsWithChildren](x: Self) {
         
-        @scala.inline
-        def setChildren(value: RenderProps => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+        inline def setChildren(value: RenderProps => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       }
     }
     
@@ -215,20 +192,16 @@ object dropdownMenuMod {
     }
     object PropsWithControls {
       
-      @scala.inline
-      def apply(controls: js.Array[Control], label: String): PropsWithControls = {
+      inline def apply(controls: js.Array[Control], label: String): PropsWithControls = {
         val __obj = js.Dynamic.literal(controls = controls.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[PropsWithControls]
       }
       
-      @scala.inline
-      implicit class PropsWithControlsMutableBuilder[Self <: PropsWithControls] (val x: Self) extends AnyVal {
+      extension [Self <: PropsWithControls](x: Self) {
         
-        @scala.inline
-        def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+        inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+        inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
       }
     }
   }

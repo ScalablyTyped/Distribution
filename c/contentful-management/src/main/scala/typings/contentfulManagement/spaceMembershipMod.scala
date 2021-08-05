@@ -16,11 +16,9 @@ object spaceMembershipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapSpaceMembership(http: AxiosInstance, data: SpaceMembershipProps): SpaceMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpaceMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[SpaceMembership]
+  inline def wrapSpaceMembership(http: AxiosInstance, data: SpaceMembershipProps): SpaceMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpaceMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[SpaceMembership]
   
-  @scala.inline
-  def wrapSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[SpaceMembershipProps]): Collection[SpaceMembership, SpaceMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpaceMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[SpaceMembership, SpaceMembershipProps]]
+  inline def wrapSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[SpaceMembershipProps]): Collection[SpaceMembership, SpaceMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapSpaceMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[SpaceMembership, SpaceMembershipProps]]
   
   trait SpaceMembership
     extends StObject
@@ -69,8 +67,7 @@ object spaceMembershipMod {
   }
   object SpaceMembership {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       admin: Boolean,
       delete: () => js.Promise[Unit],
       name: String,
@@ -83,14 +80,11 @@ object spaceMembershipMod {
       __obj.asInstanceOf[SpaceMembership]
     }
     
-    @scala.inline
-    implicit class SpaceMembershipMutableBuilder[Self <: SpaceMembership] (val x: Self) extends AnyVal {
+    extension [Self <: SpaceMembership](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[SpaceMembership]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[SpaceMembership]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -109,29 +103,22 @@ object spaceMembershipMod {
   }
   object SpaceMembershipProps {
     
-    @scala.inline
-    def apply(admin: Boolean, name: String, roles: js.Array[MetaLinkProps], sys: MetaSysProps): SpaceMembershipProps = {
+    inline def apply(admin: Boolean, name: String, roles: js.Array[MetaLinkProps], sys: MetaSysProps): SpaceMembershipProps = {
       val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpaceMembershipProps]
     }
     
-    @scala.inline
-    implicit class SpaceMembershipPropsMutableBuilder[Self <: SpaceMembershipProps] (val x: Self) extends AnyVal {
+    extension [Self <: SpaceMembershipProps](x: Self) {
       
-      @scala.inline
-      def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+      inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoles(value: js.Array[MetaLinkProps]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: js.Array[MetaLinkProps]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesVarargs(value: MetaLinkProps*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: MetaLinkProps*): Self = StObject.set(x, "roles", js.Array(value :_*))
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

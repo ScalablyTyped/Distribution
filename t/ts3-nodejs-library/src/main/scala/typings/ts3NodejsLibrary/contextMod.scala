@@ -46,23 +46,18 @@ object contextMod {
   }
   object ActiveEvent {
     
-    @scala.inline
-    def apply(event: String): ActiveEvent = {
+    inline def apply(event: String): ActiveEvent = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActiveEvent]
     }
     
-    @scala.inline
-    implicit class ActiveEventMutableBuilder[Self <: ActiveEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ActiveEvent](x: Self) {
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -78,35 +73,26 @@ object contextMod {
   }
   object BaseContext {
     
-    @scala.inline
-    def apply(events: js.Array[ActiveEvent], selectType: SelectType): BaseContext = {
+    inline def apply(events: js.Array[ActiveEvent], selectType: SelectType): BaseContext = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseContext]
     }
     
-    @scala.inline
-    implicit class BaseContextMutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
+    extension [Self <: BaseContext](x: Self) {
       
-      @scala.inline
-      def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
+      inline def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientNicknameUndefined: Self = StObject.set(x, "clientNickname", js.undefined)
+      inline def setClientNicknameUndefined: Self = StObject.set(x, "clientNickname", js.undefined)
       
-      @scala.inline
-      def setEvents(value: js.Array[ActiveEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[ActiveEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: ActiveEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: ActiveEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setLogin(value: LoginInfo): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+      inline def setLogin(value: LoginInfo): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
+      inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
       
-      @scala.inline
-      def setSelectType(value: SelectType): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
+      inline def setSelectType(value: SelectType): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,20 +104,17 @@ object contextMod {
   trait Context extends StObject
   object Context {
     
-    @scala.inline
-    def SelectNoneContext(events: js.Array[ActiveEvent], selectType: NONE): typings.ts3NodejsLibrary.contextMod.SelectNoneContext = {
+    inline def SelectNoneContext(events: js.Array[ActiveEvent], selectType: NONE): typings.ts3NodejsLibrary.contextMod.SelectNoneContext = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = 0)
       __obj.asInstanceOf[typings.ts3NodejsLibrary.contextMod.SelectNoneContext]
     }
     
-    @scala.inline
-    def SelectPortContext(events: js.Array[ActiveEvent], selectType: PORT, selected: Double): typings.ts3NodejsLibrary.contextMod.SelectPortContext = {
+    inline def SelectPortContext(events: js.Array[ActiveEvent], selectType: PORT, selected: Double): typings.ts3NodejsLibrary.contextMod.SelectPortContext = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ts3NodejsLibrary.contextMod.SelectPortContext]
     }
     
-    @scala.inline
-    def SelectSidContext(events: js.Array[ActiveEvent], selectType: SID, selected: String): typings.ts3NodejsLibrary.contextMod.SelectSidContext = {
+    inline def SelectSidContext(events: js.Array[ActiveEvent], selectType: SID, selected: String): typings.ts3NodejsLibrary.contextMod.SelectSidContext = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ts3NodejsLibrary.contextMod.SelectSidContext]
     }
@@ -145,20 +128,16 @@ object contextMod {
   }
   object LoginInfo {
     
-    @scala.inline
-    def apply(password: String, username: String): LoginInfo = {
+    inline def apply(password: String, username: String): LoginInfo = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoginInfo]
     }
     
-    @scala.inline
-    implicit class LoginInfoMutableBuilder[Self <: LoginInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LoginInfo](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,20 +153,16 @@ object contextMod {
   }
   object SelectNoneContext {
     
-    @scala.inline
-    def apply(events: js.Array[ActiveEvent], selectType: NONE): SelectNoneContext = {
+    inline def apply(events: js.Array[ActiveEvent], selectType: NONE): SelectNoneContext = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = 0)
       __obj.asInstanceOf[SelectNoneContext]
     }
     
-    @scala.inline
-    implicit class SelectNoneContextMutableBuilder[Self <: SelectNoneContext] (val x: Self) extends AnyVal {
+    extension [Self <: SelectNoneContext](x: Self) {
       
-      @scala.inline
-      def setSelectType(value: NONE): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
+      inline def setSelectType(value: NONE): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: `0`): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: `0`): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,20 +178,16 @@ object contextMod {
   }
   object SelectPortContext {
     
-    @scala.inline
-    def apply(events: js.Array[ActiveEvent], selectType: PORT, selected: Double): SelectPortContext = {
+    inline def apply(events: js.Array[ActiveEvent], selectType: PORT, selected: Double): SelectPortContext = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectPortContext]
     }
     
-    @scala.inline
-    implicit class SelectPortContextMutableBuilder[Self <: SelectPortContext] (val x: Self) extends AnyVal {
+    extension [Self <: SelectPortContext](x: Self) {
       
-      @scala.inline
-      def setSelectType(value: PORT): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
+      inline def setSelectType(value: PORT): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,20 +203,16 @@ object contextMod {
   }
   object SelectSidContext {
     
-    @scala.inline
-    def apply(events: js.Array[ActiveEvent], selectType: SID, selected: String): SelectSidContext = {
+    inline def apply(events: js.Array[ActiveEvent], selectType: SID, selected: String): SelectSidContext = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectSidContext]
     }
     
-    @scala.inline
-    implicit class SelectSidContextMutableBuilder[Self <: SelectSidContext] (val x: Self) extends AnyVal {
+    extension [Self <: SelectSidContext](x: Self) {
       
-      @scala.inline
-      def setSelectType(value: SID): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
+      inline def setSelectType(value: SID): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
 }

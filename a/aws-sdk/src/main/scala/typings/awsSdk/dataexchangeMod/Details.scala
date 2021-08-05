@@ -12,28 +12,21 @@ trait Details extends StObject {
 }
 object Details {
   
-  @scala.inline
-  def apply(): Details = {
+  inline def apply(): Details = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Details]
   }
   
-  @scala.inline
-  implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+  extension [Self <: Details](x: Self) {
     
-    @scala.inline
-    def setImportAssetFromSignedUrlJobErrorDetails(value: ImportAssetFromSignedUrlJobErrorDetails): Self = StObject.set(x, "ImportAssetFromSignedUrlJobErrorDetails", value.asInstanceOf[js.Any])
+    inline def setImportAssetFromSignedUrlJobErrorDetails(value: ImportAssetFromSignedUrlJobErrorDetails): Self = StObject.set(x, "ImportAssetFromSignedUrlJobErrorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportAssetFromSignedUrlJobErrorDetailsUndefined: Self = StObject.set(x, "ImportAssetFromSignedUrlJobErrorDetails", js.undefined)
+    inline def setImportAssetFromSignedUrlJobErrorDetailsUndefined: Self = StObject.set(x, "ImportAssetFromSignedUrlJobErrorDetails", js.undefined)
     
-    @scala.inline
-    def setImportAssetsFromS3JobErrorDetails(value: ListOfAssetSourceEntry): Self = StObject.set(x, "ImportAssetsFromS3JobErrorDetails", value.asInstanceOf[js.Any])
+    inline def setImportAssetsFromS3JobErrorDetails(value: ListOfAssetSourceEntry): Self = StObject.set(x, "ImportAssetsFromS3JobErrorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportAssetsFromS3JobErrorDetailsUndefined: Self = StObject.set(x, "ImportAssetsFromS3JobErrorDetails", js.undefined)
+    inline def setImportAssetsFromS3JobErrorDetailsUndefined: Self = StObject.set(x, "ImportAssetsFromS3JobErrorDetails", js.undefined)
     
-    @scala.inline
-    def setImportAssetsFromS3JobErrorDetailsVarargs(value: AssetSourceEntry*): Self = StObject.set(x, "ImportAssetsFromS3JobErrorDetails", js.Array(value :_*))
+    inline def setImportAssetsFromS3JobErrorDetailsVarargs(value: AssetSourceEntry*): Self = StObject.set(x, "ImportAssetsFromS3JobErrorDetails", js.Array(value :_*))
   }
 }

@@ -26,8 +26,7 @@ trait XMailMergeListener
 }
 object XMailMergeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     notifyMailMergeEvent: MailMergeEvent => Unit,
     queryInterface: `type` => js.Any,
@@ -37,10 +36,8 @@ object XMailMergeListener {
     __obj.asInstanceOf[XMailMergeListener]
   }
   
-  @scala.inline
-  implicit class XMailMergeListenerMutableBuilder[Self <: XMailMergeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XMailMergeListener](x: Self) {
     
-    @scala.inline
-    def setNotifyMailMergeEvent(value: MailMergeEvent => Unit): Self = StObject.set(x, "notifyMailMergeEvent", js.Any.fromFunction1(value))
+    inline def setNotifyMailMergeEvent(value: MailMergeEvent => Unit): Self = StObject.set(x, "notifyMailMergeEvent", js.Any.fromFunction1(value))
   }
 }

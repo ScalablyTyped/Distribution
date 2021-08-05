@@ -11,16 +11,13 @@ trait ThemeWrapperProps extends StObject {
 }
 object ThemeWrapperProps {
   
-  @scala.inline
-  def apply(theme: MuiTheme): ThemeWrapperProps = {
+  inline def apply(theme: MuiTheme): ThemeWrapperProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeWrapperProps]
   }
   
-  @scala.inline
-  implicit class ThemeWrapperPropsMutableBuilder[Self <: ThemeWrapperProps] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeWrapperProps](x: Self) {
     
-    @scala.inline
-    def setTheme(value: MuiTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: MuiTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

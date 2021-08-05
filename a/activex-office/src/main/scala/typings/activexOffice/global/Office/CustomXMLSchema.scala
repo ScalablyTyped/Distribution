@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.CustomXMLSchema")
 @js.native
-class CustomXMLSchema protected ()
+/* private */ class CustomXMLSchema ()
   extends StObject
      with typings.activexOffice.Office.CustomXMLSchema {
   
@@ -25,7 +25,7 @@ class CustomXMLSchema protected ()
   /* CompleteClass */
   override val NamespaceURI: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.CustomXMLSchema_typekey")
   var OfficeDotCustomXMLSchema_typekey: typings.activexOffice.Office.CustomXMLSchema = js.native
   

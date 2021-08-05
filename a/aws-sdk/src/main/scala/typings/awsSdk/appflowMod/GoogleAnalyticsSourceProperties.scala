@@ -13,17 +13,14 @@ trait GoogleAnalyticsSourceProperties extends StObject {
 }
 object GoogleAnalyticsSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): GoogleAnalyticsSourceProperties = {
+  inline def apply(`object`: Object): GoogleAnalyticsSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleAnalyticsSourceProperties]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsSourcePropertiesMutableBuilder[Self <: GoogleAnalyticsSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

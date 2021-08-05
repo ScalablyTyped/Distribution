@@ -13,16 +13,13 @@ trait Component[C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupCompo
 }
 object Component {
   
-  @scala.inline
-  def apply[C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */](component: GroupComponentCtor[C, CT]): Component[C, CT] = {
+  inline def apply[C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */](component: GroupComponentCtor[C, CT]): Component[C, CT] = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     __obj.asInstanceOf[Component[C, CT]]
   }
   
-  @scala.inline
-  implicit class ComponentMutableBuilder[Self <: Component[?, ?], C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */] (val x: Self & (Component[C, CT])) extends AnyVal {
+  extension [Self <: Component[?, ?], C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */](x: Self & (Component[C, CT])) {
     
-    @scala.inline
-    def setComponent(value: GroupComponentCtor[C, CT]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: GroupComponentCtor[C, CT]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
   }
 }

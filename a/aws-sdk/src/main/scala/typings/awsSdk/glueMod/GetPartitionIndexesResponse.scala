@@ -18,28 +18,21 @@ trait GetPartitionIndexesResponse extends StObject {
 }
 object GetPartitionIndexesResponse {
   
-  @scala.inline
-  def apply(): GetPartitionIndexesResponse = {
+  inline def apply(): GetPartitionIndexesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPartitionIndexesResponse]
   }
   
-  @scala.inline
-  implicit class GetPartitionIndexesResponseMutableBuilder[Self <: GetPartitionIndexesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPartitionIndexesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPartitionIndexDescriptorList(value: PartitionIndexDescriptorList): Self = StObject.set(x, "PartitionIndexDescriptorList", value.asInstanceOf[js.Any])
+    inline def setPartitionIndexDescriptorList(value: PartitionIndexDescriptorList): Self = StObject.set(x, "PartitionIndexDescriptorList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionIndexDescriptorListUndefined: Self = StObject.set(x, "PartitionIndexDescriptorList", js.undefined)
+    inline def setPartitionIndexDescriptorListUndefined: Self = StObject.set(x, "PartitionIndexDescriptorList", js.undefined)
     
-    @scala.inline
-    def setPartitionIndexDescriptorListVarargs(value: PartitionIndexDescriptor*): Self = StObject.set(x, "PartitionIndexDescriptorList", js.Array(value :_*))
+    inline def setPartitionIndexDescriptorListVarargs(value: PartitionIndexDescriptor*): Self = StObject.set(x, "PartitionIndexDescriptorList", js.Array(value :_*))
   }
 }

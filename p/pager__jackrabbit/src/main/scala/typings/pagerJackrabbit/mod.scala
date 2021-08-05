@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): JackRabbit = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[JackRabbit]
+  inline def apply(url: String): JackRabbit = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[JackRabbit]
   
   @JSImport("@pager/jackrabbit", JSImport.Namespace)
   @js.native
@@ -78,20 +77,16 @@ object mod {
   }
   object ExchangeOptions {
     
-    @scala.inline
-    def apply(): ExchangeOptions = {
+    inline def apply(): ExchangeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExchangeOptions]
     }
     
-    @scala.inline
-    implicit class ExchangeOptionsMutableBuilder[Self <: ExchangeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExchangeOptions](x: Self) {
       
-      @scala.inline
-      def setNoReply(value: Boolean): Self = StObject.set(x, "noReply", value.asInstanceOf[js.Any])
+      inline def setNoReply(value: Boolean): Self = StObject.set(x, "noReply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoReplyUndefined: Self = StObject.set(x, "noReply", js.undefined)
+      inline def setNoReplyUndefined: Self = StObject.set(x, "noReply", js.undefined)
     }
   }
   
@@ -135,23 +130,18 @@ object mod {
   }
   object PublishOptions {
     
-    @scala.inline
-    def apply(key: String): PublishOptions = {
+    inline def apply(key: String): PublishOptions = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishOptions]
     }
     
-    @scala.inline
-    implicit class PublishOptionsMutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PublishOptions](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReply(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
+      inline def setReply(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
+      inline def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
     }
   }
   
@@ -205,41 +195,30 @@ object mod {
   }
   object QueueOptions {
     
-    @scala.inline
-    def apply(): QueueOptions = {
+    inline def apply(): QueueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueueOptions]
     }
     
-    @scala.inline
-    implicit class QueueOptionsMutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueueOptions](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
+      inline def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
+      inline def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
     }
   }
 }

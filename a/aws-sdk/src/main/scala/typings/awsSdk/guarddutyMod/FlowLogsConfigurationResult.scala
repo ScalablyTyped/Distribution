@@ -13,16 +13,13 @@ trait FlowLogsConfigurationResult extends StObject {
 }
 object FlowLogsConfigurationResult {
   
-  @scala.inline
-  def apply(Status: DataSourceStatus): FlowLogsConfigurationResult = {
+  inline def apply(Status: DataSourceStatus): FlowLogsConfigurationResult = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowLogsConfigurationResult]
   }
   
-  @scala.inline
-  implicit class FlowLogsConfigurationResultMutableBuilder[Self <: FlowLogsConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: FlowLogsConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

@@ -47,28 +47,21 @@ trait SchemaDimension extends StObject {
 }
 object SchemaDimension {
   
-  @scala.inline
-  def apply(): SchemaDimension = {
+  inline def apply(): SchemaDimension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDimension]
   }
   
-  @scala.inline
-  implicit class SchemaDimensionMutableBuilder[Self <: SchemaDimension] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDimension](x: Self) {
     
-    @scala.inline
-    def setHistogramBuckets(value: js.Array[String]): Self = StObject.set(x, "histogramBuckets", value.asInstanceOf[js.Any])
+    inline def setHistogramBuckets(value: js.Array[String]): Self = StObject.set(x, "histogramBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistogramBucketsUndefined: Self = StObject.set(x, "histogramBuckets", js.undefined)
+    inline def setHistogramBucketsUndefined: Self = StObject.set(x, "histogramBuckets", js.undefined)
     
-    @scala.inline
-    def setHistogramBucketsVarargs(value: String*): Self = StObject.set(x, "histogramBuckets", js.Array(value :_*))
+    inline def setHistogramBucketsVarargs(value: String*): Self = StObject.set(x, "histogramBuckets", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

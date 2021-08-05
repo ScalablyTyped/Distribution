@@ -27,14 +27,12 @@ object radioNativeMod {
     @JSImport("antd-mobile-rn/lib/radio/Radio.native", "default.RadioItem")
     @js.native
     def RadioItem: js.Any = js.native
-    @scala.inline
-    def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
+    inline def RadioItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RadioItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/radio/Radio.native", "default.defaultProps")
     @js.native
     def defaultProps: Styles = js.native
-    @scala.inline
-    def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -57,29 +55,22 @@ object radioNativeMod {
   }
   object RadioNativeProps {
     
-    @scala.inline
-    def apply(): RadioNativeProps = {
+    inline def apply(): RadioNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadioNativeProps]
     }
     
-    @scala.inline
-    implicit class RadioNativePropsMutableBuilder[Self <: RadioNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IRadioStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IRadioStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

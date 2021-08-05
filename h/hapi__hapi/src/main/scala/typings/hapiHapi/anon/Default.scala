@@ -11,16 +11,13 @@ trait Default extends StObject {
 }
 object Default {
   
-  @scala.inline
-  def apply(default: ServerAuthConfig): Default = {
+  inline def apply(default: ServerAuthConfig): Default = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.asInstanceOf[Default]
   }
   
-  @scala.inline
-  implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+  extension [Self <: Default](x: Self) {
     
-    @scala.inline
-    def setDefault(value: ServerAuthConfig): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: ServerAuthConfig): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

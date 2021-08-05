@@ -13,22 +13,17 @@ trait SubscriptionDefinitionVersion extends StObject {
 }
 object SubscriptionDefinitionVersion {
   
-  @scala.inline
-  def apply(): SubscriptionDefinitionVersion = {
+  inline def apply(): SubscriptionDefinitionVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscriptionDefinitionVersion]
   }
   
-  @scala.inline
-  implicit class SubscriptionDefinitionVersionMutableBuilder[Self <: SubscriptionDefinitionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionDefinitionVersion](x: Self) {
     
-    @scala.inline
-    def setSubscriptions(value: listOfSubscription): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
+    inline def setSubscriptions(value: listOfSubscription): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
+    inline def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
     
-    @scala.inline
-    def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
   }
 }

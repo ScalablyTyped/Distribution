@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "WriteBatch")
 @js.native
-class WriteBatch protected () extends StObject {
+/* private */ class WriteBatch () extends StObject {
   
   def commit(): js.Promise[Unit] = js.native
   

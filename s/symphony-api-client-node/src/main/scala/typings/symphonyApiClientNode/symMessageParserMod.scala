@@ -10,12 +10,9 @@ object symMessageParserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getCashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def getHashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getHashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def getMentions(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMentions")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getMentions(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMentions")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 }

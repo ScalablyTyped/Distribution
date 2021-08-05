@@ -50,31 +50,23 @@ trait SchemaMonitoring extends StObject {
 }
 object SchemaMonitoring {
   
-  @scala.inline
-  def apply(): SchemaMonitoring = {
+  inline def apply(): SchemaMonitoring = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMonitoring]
   }
   
-  @scala.inline
-  implicit class SchemaMonitoringMutableBuilder[Self <: SchemaMonitoring] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMonitoring](x: Self) {
     
-    @scala.inline
-    def setConsumerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = StObject.set(x, "consumerDestinations", value.asInstanceOf[js.Any])
+    inline def setConsumerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = StObject.set(x, "consumerDestinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
+    inline def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
     
-    @scala.inline
-    def setConsumerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
+    inline def setConsumerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
     
-    @scala.inline
-    def setProducerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = StObject.set(x, "producerDestinations", value.asInstanceOf[js.Any])
+    inline def setProducerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = StObject.set(x, "producerDestinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerDestinationsUndefined: Self = StObject.set(x, "producerDestinations", js.undefined)
+    inline def setProducerDestinationsUndefined: Self = StObject.set(x, "producerDestinations", js.undefined)
     
-    @scala.inline
-    def setProducerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = StObject.set(x, "producerDestinations", js.Array(value :_*))
+    inline def setProducerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = StObject.set(x, "producerDestinations", js.Array(value :_*))
   }
 }

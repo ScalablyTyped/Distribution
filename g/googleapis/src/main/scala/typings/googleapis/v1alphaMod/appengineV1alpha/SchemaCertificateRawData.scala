@@ -28,25 +28,19 @@ trait SchemaCertificateRawData extends StObject {
 }
 object SchemaCertificateRawData {
   
-  @scala.inline
-  def apply(): SchemaCertificateRawData = {
+  inline def apply(): SchemaCertificateRawData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCertificateRawData]
   }
   
-  @scala.inline
-  implicit class SchemaCertificateRawDataMutableBuilder[Self <: SchemaCertificateRawData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCertificateRawData](x: Self) {
     
-    @scala.inline
-    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+    inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
     
-    @scala.inline
-    def setPublicCertificate(value: String): Self = StObject.set(x, "publicCertificate", value.asInstanceOf[js.Any])
+    inline def setPublicCertificate(value: String): Self = StObject.set(x, "publicCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicCertificateUndefined: Self = StObject.set(x, "publicCertificate", js.undefined)
+    inline def setPublicCertificateUndefined: Self = StObject.set(x, "publicCertificate", js.undefined)
   }
 }

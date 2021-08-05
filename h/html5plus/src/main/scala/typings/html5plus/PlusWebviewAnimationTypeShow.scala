@@ -103,73 +103,51 @@ trait PlusWebviewAnimationTypeShow extends StObject {
 }
 object PlusWebviewAnimationTypeShow {
   
-  @scala.inline
-  def apply(): PlusWebviewAnimationTypeShow = {
+  inline def apply(): PlusWebviewAnimationTypeShow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewAnimationTypeShow]
   }
   
-  @scala.inline
-  implicit class PlusWebviewAnimationTypeShowMutableBuilder[Self <: PlusWebviewAnimationTypeShow] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewAnimationTypeShow](x: Self) {
     
-    @scala.inline
-    def setAuto(value: String): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: String): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
-    @scala.inline
-    def `setFade-in`(value: String): Self = StObject.set(x, "fade-in", value.asInstanceOf[js.Any])
+    inline def `setFade-in`(value: String): Self = StObject.set(x, "fade-in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFade-inUndefined`: Self = StObject.set(x, "fade-in", js.undefined)
+    inline def `setFade-inUndefined`: Self = StObject.set(x, "fade-in", js.undefined)
     
-    @scala.inline
-    def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
+    inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
     
-    @scala.inline
-    def `setPop-in`(value: String): Self = StObject.set(x, "pop-in", value.asInstanceOf[js.Any])
+    inline def `setPop-in`(value: String): Self = StObject.set(x, "pop-in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPop-inUndefined`: Self = StObject.set(x, "pop-in", js.undefined)
+    inline def `setPop-inUndefined`: Self = StObject.set(x, "pop-in", js.undefined)
     
-    @scala.inline
-    def `setSlide-in-bottom`(value: String): Self = StObject.set(x, "slide-in-bottom", value.asInstanceOf[js.Any])
+    inline def `setSlide-in-bottom`(value: String): Self = StObject.set(x, "slide-in-bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSlide-in-bottomUndefined`: Self = StObject.set(x, "slide-in-bottom", js.undefined)
+    inline def `setSlide-in-bottomUndefined`: Self = StObject.set(x, "slide-in-bottom", js.undefined)
     
-    @scala.inline
-    def `setSlide-in-left`(value: String): Self = StObject.set(x, "slide-in-left", value.asInstanceOf[js.Any])
+    inline def `setSlide-in-left`(value: String): Self = StObject.set(x, "slide-in-left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSlide-in-leftUndefined`: Self = StObject.set(x, "slide-in-left", js.undefined)
+    inline def `setSlide-in-leftUndefined`: Self = StObject.set(x, "slide-in-left", js.undefined)
     
-    @scala.inline
-    def `setSlide-in-right`(value: String): Self = StObject.set(x, "slide-in-right", value.asInstanceOf[js.Any])
+    inline def `setSlide-in-right`(value: String): Self = StObject.set(x, "slide-in-right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSlide-in-rightUndefined`: Self = StObject.set(x, "slide-in-right", js.undefined)
+    inline def `setSlide-in-rightUndefined`: Self = StObject.set(x, "slide-in-right", js.undefined)
     
-    @scala.inline
-    def `setSlide-in-top`(value: String): Self = StObject.set(x, "slide-in-top", value.asInstanceOf[js.Any])
+    inline def `setSlide-in-top`(value: String): Self = StObject.set(x, "slide-in-top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSlide-in-topUndefined`: Self = StObject.set(x, "slide-in-top", js.undefined)
+    inline def `setSlide-in-topUndefined`: Self = StObject.set(x, "slide-in-top", js.undefined)
     
-    @scala.inline
-    def `setZoom-fade-out`(value: String): Self = StObject.set(x, "zoom-fade-out", value.asInstanceOf[js.Any])
+    inline def `setZoom-fade-out`(value: String): Self = StObject.set(x, "zoom-fade-out", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZoom-fade-outUndefined`: Self = StObject.set(x, "zoom-fade-out", js.undefined)
+    inline def `setZoom-fade-outUndefined`: Self = StObject.set(x, "zoom-fade-out", js.undefined)
     
-    @scala.inline
-    def `setZoom-out`(value: String): Self = StObject.set(x, "zoom-out", value.asInstanceOf[js.Any])
+    inline def `setZoom-out`(value: String): Self = StObject.set(x, "zoom-out", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZoom-outUndefined`: Self = StObject.set(x, "zoom-out", js.undefined)
+    inline def `setZoom-outUndefined`: Self = StObject.set(x, "zoom-out", js.undefined)
   }
 }

@@ -17,34 +17,25 @@ trait ThemeTypeImages extends StObject {
 }
 object ThemeTypeImages {
   
-  @scala.inline
-  def apply(): ThemeTypeImages = {
+  inline def apply(): ThemeTypeImages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeTypeImages]
   }
   
-  @scala.inline
-  implicit class ThemeTypeImagesMutableBuilder[Self <: ThemeTypeImages] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeTypeImages](x: Self) {
     
-    @scala.inline
-    def setAdditional_backgrounds(value: js.Array[ImageDataOrExtensionURL]): Self = StObject.set(x, "additional_backgrounds", value.asInstanceOf[js.Any])
+    inline def setAdditional_backgrounds(value: js.Array[ImageDataOrExtensionURL]): Self = StObject.set(x, "additional_backgrounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditional_backgroundsUndefined: Self = StObject.set(x, "additional_backgrounds", js.undefined)
+    inline def setAdditional_backgroundsUndefined: Self = StObject.set(x, "additional_backgrounds", js.undefined)
     
-    @scala.inline
-    def setAdditional_backgroundsVarargs(value: ImageDataOrExtensionURL*): Self = StObject.set(x, "additional_backgrounds", js.Array(value :_*))
+    inline def setAdditional_backgroundsVarargs(value: ImageDataOrExtensionURL*): Self = StObject.set(x, "additional_backgrounds", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaderURL(value: ImageDataOrExtensionURL): Self = StObject.set(x, "headerURL", value.asInstanceOf[js.Any])
+    inline def setHeaderURL(value: ImageDataOrExtensionURL): Self = StObject.set(x, "headerURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderURLUndefined: Self = StObject.set(x, "headerURL", js.undefined)
+    inline def setHeaderURLUndefined: Self = StObject.set(x, "headerURL", js.undefined)
     
-    @scala.inline
-    def setTheme_frame(value: ImageDataOrExtensionURL): Self = StObject.set(x, "theme_frame", value.asInstanceOf[js.Any])
+    inline def setTheme_frame(value: ImageDataOrExtensionURL): Self = StObject.set(x, "theme_frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme_frameUndefined: Self = StObject.set(x, "theme_frame", js.undefined)
+    inline def setTheme_frameUndefined: Self = StObject.set(x, "theme_frame", js.undefined)
   }
 }

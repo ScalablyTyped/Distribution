@@ -18,22 +18,17 @@ trait GetMediaForFragmentListInput extends StObject {
 }
 object GetMediaForFragmentListInput {
   
-  @scala.inline
-  def apply(Fragments: FragmentNumberList, StreamName: StreamName): GetMediaForFragmentListInput = {
+  inline def apply(Fragments: FragmentNumberList, StreamName: StreamName): GetMediaForFragmentListInput = {
     val __obj = js.Dynamic.literal(Fragments = Fragments.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMediaForFragmentListInput]
   }
   
-  @scala.inline
-  implicit class GetMediaForFragmentListInputMutableBuilder[Self <: GetMediaForFragmentListInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMediaForFragmentListInput](x: Self) {
     
-    @scala.inline
-    def setFragments(value: FragmentNumberList): Self = StObject.set(x, "Fragments", value.asInstanceOf[js.Any])
+    inline def setFragments(value: FragmentNumberList): Self = StObject.set(x, "Fragments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentsVarargs(value: FragmentNumberString*): Self = StObject.set(x, "Fragments", js.Array(value :_*))
+    inline def setFragmentsVarargs(value: FragmentNumberString*): Self = StObject.set(x, "Fragments", js.Array(value :_*))
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

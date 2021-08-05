@@ -41,8 +41,7 @@ trait XMultiFormulaTokens extends StObject {
 }
 object XMultiFormulaTokens {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     getCount: () => Double,
     getTokens: Double => SafeArray[FormulaToken],
@@ -52,19 +51,14 @@ object XMultiFormulaTokens {
     __obj.asInstanceOf[XMultiFormulaTokens]
   }
   
-  @scala.inline
-  implicit class XMultiFormulaTokensMutableBuilder[Self <: XMultiFormulaTokens] (val x: Self) extends AnyVal {
+  extension [Self <: XMultiFormulaTokens](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTokens(value: Double => SafeArray[FormulaToken]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
+    inline def setGetTokens(value: Double => SafeArray[FormulaToken]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTokens(value: (Double, SeqEquiv[FormulaToken]) => Unit): Self = StObject.set(x, "setTokens", js.Any.fromFunction2(value))
+    inline def setSetTokens(value: (Double, SeqEquiv[FormulaToken]) => Unit): Self = StObject.set(x, "setTokens", js.Any.fromFunction2(value))
   }
 }

@@ -14,19 +14,15 @@ trait IMask
 }
 object IMask {
   
-  @scala.inline
-  def apply(): IMask = {
+  inline def apply(): IMask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMask]
   }
   
-  @scala.inline
-  implicit class IMaskMutableBuilder[Self <: IMask] (val x: Self) extends AnyVal {
+  extension [Self <: IMask](x: Self) {
     
-    @scala.inline
-    def setMask(value: js.Any): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: js.Any): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }
 }

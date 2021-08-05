@@ -11,22 +11,17 @@ trait ReplaceAccessLevelsResponse extends StObject {
 }
 object ReplaceAccessLevelsResponse {
   
-  @scala.inline
-  def apply(): ReplaceAccessLevelsResponse = {
+  inline def apply(): ReplaceAccessLevelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceAccessLevelsResponse]
   }
   
-  @scala.inline
-  implicit class ReplaceAccessLevelsResponseMutableBuilder[Self <: ReplaceAccessLevelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceAccessLevelsResponse](x: Self) {
     
-    @scala.inline
-    def setAccessLevels(value: js.Array[AccessLevel]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
+    inline def setAccessLevels(value: js.Array[AccessLevel]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
+    inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    @scala.inline
-    def setAccessLevelsVarargs(value: AccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: AccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
   }
 }

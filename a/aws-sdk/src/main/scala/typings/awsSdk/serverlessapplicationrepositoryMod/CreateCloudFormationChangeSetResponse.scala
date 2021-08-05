@@ -30,37 +30,27 @@ trait CreateCloudFormationChangeSetResponse extends StObject {
 }
 object CreateCloudFormationChangeSetResponse {
   
-  @scala.inline
-  def apply(): CreateCloudFormationChangeSetResponse = {
+  inline def apply(): CreateCloudFormationChangeSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCloudFormationChangeSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateCloudFormationChangeSetResponseMutableBuilder[Self <: CreateCloudFormationChangeSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCloudFormationChangeSetResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+    inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
-    @scala.inline
-    def setChangeSetId(value: string): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
+    inline def setChangeSetId(value: string): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
+    inline def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
     
-    @scala.inline
-    def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
+    inline def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticVersionUndefined: Self = StObject.set(x, "SemanticVersion", js.undefined)
+    inline def setSemanticVersionUndefined: Self = StObject.set(x, "SemanticVersion", js.undefined)
     
-    @scala.inline
-    def setStackId(value: string): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: string): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

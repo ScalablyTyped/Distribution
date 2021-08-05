@@ -26,40 +26,29 @@ trait EditAllOrderDealsRequest extends StObject {
 }
 object EditAllOrderDealsRequest {
   
-  @scala.inline
-  def apply(): EditAllOrderDealsRequest = {
+  inline def apply(): EditAllOrderDealsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditAllOrderDealsRequest]
   }
   
-  @scala.inline
-  implicit class EditAllOrderDealsRequestMutableBuilder[Self <: EditAllOrderDealsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EditAllOrderDealsRequest](x: Self) {
     
-    @scala.inline
-    def setDeals(value: js.Array[MarketplaceDeal]): Self = StObject.set(x, "deals", value.asInstanceOf[js.Any])
+    inline def setDeals(value: js.Array[MarketplaceDeal]): Self = StObject.set(x, "deals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
+    inline def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
-    @scala.inline
-    def setDealsVarargs(value: MarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
+    inline def setDealsVarargs(value: MarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
     
-    @scala.inline
-    def setProposal(value: Proposal): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
+    inline def setProposal(value: Proposal): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalRevisionNumber(value: String): Self = StObject.set(x, "proposalRevisionNumber", value.asInstanceOf[js.Any])
+    inline def setProposalRevisionNumber(value: String): Self = StObject.set(x, "proposalRevisionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalRevisionNumberUndefined: Self = StObject.set(x, "proposalRevisionNumber", js.undefined)
+    inline def setProposalRevisionNumberUndefined: Self = StObject.set(x, "proposalRevisionNumber", js.undefined)
     
-    @scala.inline
-    def setProposalUndefined: Self = StObject.set(x, "proposal", js.undefined)
+    inline def setProposalUndefined: Self = StObject.set(x, "proposal", js.undefined)
     
-    @scala.inline
-    def setUpdateAction(value: String): Self = StObject.set(x, "updateAction", value.asInstanceOf[js.Any])
+    inline def setUpdateAction(value: String): Self = StObject.set(x, "updateAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateActionUndefined: Self = StObject.set(x, "updateAction", js.undefined)
+    inline def setUpdateActionUndefined: Self = StObject.set(x, "updateAction", js.undefined)
   }
 }

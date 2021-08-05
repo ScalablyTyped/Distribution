@@ -24,25 +24,19 @@ trait TopicRuleErrorActionFirehose extends StObject {
 }
 object TopicRuleErrorActionFirehose {
   
-  @scala.inline
-  def apply(deliveryStreamName: Input[String], roleArn: Input[String]): TopicRuleErrorActionFirehose = {
+  inline def apply(deliveryStreamName: Input[String], roleArn: Input[String]): TopicRuleErrorActionFirehose = {
     val __obj = js.Dynamic.literal(deliveryStreamName = deliveryStreamName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleErrorActionFirehose]
   }
   
-  @scala.inline
-  implicit class TopicRuleErrorActionFirehoseMutableBuilder[Self <: TopicRuleErrorActionFirehose] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleErrorActionFirehose](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamName(value: Input[String]): Self = StObject.set(x, "deliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: Input[String]): Self = StObject.set(x, "deliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparator(value: Input[String]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: Input[String]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

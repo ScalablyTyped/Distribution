@@ -18,8 +18,7 @@ trait INDRegistrationCompletedEventArgs extends StObject {
 }
 object INDRegistrationCompletedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     responseCustomData: INDCustomData,
     transmitterCertificateAccepted: Boolean,
     transmitterProperties: INDTransmitterProperties
@@ -28,16 +27,12 @@ object INDRegistrationCompletedEventArgs {
     __obj.asInstanceOf[INDRegistrationCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class INDRegistrationCompletedEventArgsMutableBuilder[Self <: INDRegistrationCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: INDRegistrationCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setResponseCustomData(value: INDCustomData): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
+    inline def setResponseCustomData(value: INDCustomData): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransmitterCertificateAccepted(value: Boolean): Self = StObject.set(x, "transmitterCertificateAccepted", value.asInstanceOf[js.Any])
+    inline def setTransmitterCertificateAccepted(value: Boolean): Self = StObject.set(x, "transmitterCertificateAccepted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransmitterProperties(value: INDTransmitterProperties): Self = StObject.set(x, "transmitterProperties", value.asInstanceOf[js.Any])
+    inline def setTransmitterProperties(value: INDTransmitterProperties): Self = StObject.set(x, "transmitterProperties", value.asInstanceOf[js.Any])
   }
 }

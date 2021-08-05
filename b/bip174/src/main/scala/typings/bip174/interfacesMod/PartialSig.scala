@@ -13,19 +13,15 @@ trait PartialSig extends StObject {
 }
 object PartialSig {
   
-  @scala.inline
-  def apply(pubkey: Buffer, signature: Buffer): PartialSig = {
+  inline def apply(pubkey: Buffer, signature: Buffer): PartialSig = {
     val __obj = js.Dynamic.literal(pubkey = pubkey.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialSig]
   }
   
-  @scala.inline
-  implicit class PartialSigMutableBuilder[Self <: PartialSig] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSig](x: Self) {
     
-    @scala.inline
-    def setPubkey(value: Buffer): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
+    inline def setPubkey(value: Buffer): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

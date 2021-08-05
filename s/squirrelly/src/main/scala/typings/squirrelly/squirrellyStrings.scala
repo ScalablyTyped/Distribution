@@ -8,6 +8,5 @@ object squirrellyStrings {
   
   @js.native
   sealed trait clear extends StObject
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
+  inline def clear: clear = "clear".asInstanceOf[clear]
 }

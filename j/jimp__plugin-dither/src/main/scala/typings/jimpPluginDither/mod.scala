@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Dither = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Dither]
+  inline def default(): Dither = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Dither]
   
   @js.native
   trait Dither extends StObject {

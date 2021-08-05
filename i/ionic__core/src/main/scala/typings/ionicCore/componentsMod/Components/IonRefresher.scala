@@ -53,8 +53,7 @@ trait IonRefresher extends StObject {
 }
 object IonRefresher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: () => js.Promise[Unit],
     closeDuration: String,
     complete: () => js.Promise[Unit],
@@ -69,34 +68,24 @@ object IonRefresher {
     __obj.asInstanceOf[IonRefresher]
   }
   
-  @scala.inline
-  implicit class IonRefresherMutableBuilder[Self <: IonRefresher] (val x: Self) extends AnyVal {
+  extension [Self <: IonRefresher](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloseDuration(value: String): Self = StObject.set(x, "closeDuration", value.asInstanceOf[js.Any])
+    inline def setCloseDuration(value: String): Self = StObject.set(x, "closeDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplete(value: () => js.Promise[Unit]): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => js.Promise[Unit]): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetProgress(value: () => js.Promise[Double]): Self = StObject.set(x, "getProgress", js.Any.fromFunction0(value))
+    inline def setGetProgress(value: () => js.Promise[Double]): Self = StObject.set(x, "getProgress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPullFactor(value: Double): Self = StObject.set(x, "pullFactor", value.asInstanceOf[js.Any])
+    inline def setPullFactor(value: Double): Self = StObject.set(x, "pullFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullMax(value: Double): Self = StObject.set(x, "pullMax", value.asInstanceOf[js.Any])
+    inline def setPullMax(value: Double): Self = StObject.set(x, "pullMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullMin(value: Double): Self = StObject.set(x, "pullMin", value.asInstanceOf[js.Any])
+    inline def setPullMin(value: Double): Self = StObject.set(x, "pullMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapbackDuration(value: String): Self = StObject.set(x, "snapbackDuration", value.asInstanceOf[js.Any])
+    inline def setSnapbackDuration(value: String): Self = StObject.set(x, "snapbackDuration", value.asInstanceOf[js.Any])
   }
 }

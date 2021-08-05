@@ -80,8 +80,7 @@ trait IGenericVariable
 }
 object IGenericVariable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyPatches: js.Array[INxPatch] => js.Promise[Unit],
     getInfo: () => js.Promise[INxInfo],
     getLayout: () => js.Promise[IGenericVariableLayout],
@@ -95,31 +94,22 @@ object IGenericVariable {
     __obj.asInstanceOf[IGenericVariable]
   }
   
-  @scala.inline
-  implicit class IGenericVariableMutableBuilder[Self <: IGenericVariable] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericVariable](x: Self) {
     
-    @scala.inline
-    def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
+    inline def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInfo(value: () => js.Promise[INxInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    inline def setGetInfo(value: () => js.Promise[INxInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayout(value: () => js.Promise[IGenericVariableLayout]): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    inline def setGetLayout(value: () => js.Promise[IGenericVariableLayout]): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProperties(value: () => js.Promise[IGenericVariableProperties]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+    inline def setGetProperties(value: () => js.Promise[IGenericVariableProperties]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDualValue(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "setDualValue", js.Any.fromFunction2(value))
+    inline def setSetDualValue(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "setDualValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetNumValue(value: Double => js.Promise[Unit]): Self = StObject.set(x, "setNumValue", js.Any.fromFunction1(value))
+    inline def setSetNumValue(value: Double => js.Promise[Unit]): Self = StObject.set(x, "setNumValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProperties(value: IGenericVariableProperties => js.Promise[Unit]): Self = StObject.set(x, "setProperties", js.Any.fromFunction1(value))
+    inline def setSetProperties(value: IGenericVariableProperties => js.Promise[Unit]): Self = StObject.set(x, "setProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStringValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "setStringValue", js.Any.fromFunction1(value))
+    inline def setSetStringValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "setStringValue", js.Any.fromFunction1(value))
   }
 }

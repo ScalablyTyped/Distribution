@@ -14,20 +14,16 @@ trait Identifier extends StObject {
 }
 object Identifier {
   
-  @scala.inline
-  def apply(identifier: VisitorIdentifier): Identifier = {
+  inline def apply(identifier: VisitorIdentifier): Identifier = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("lead")
     __obj.asInstanceOf[Identifier]
   }
   
-  @scala.inline
-  implicit class IdentifierMutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
+  extension [Self <: Identifier](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: VisitorIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: VisitorIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: lead): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: lead): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

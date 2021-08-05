@@ -22,8 +22,7 @@ trait IMetadataCardSelectionList extends StObject {
 }
 object IMetadataCardSelectionList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoSelect: String => Unit,
     Events: IEvents,
     Filter: String,
@@ -36,28 +35,20 @@ object IMetadataCardSelectionList {
     __obj.asInstanceOf[IMetadataCardSelectionList]
   }
   
-  @scala.inline
-  implicit class IMetadataCardSelectionListMutableBuilder[Self <: IMetadataCardSelectionList] (val x: Self) extends AnyVal {
+  extension [Self <: IMetadataCardSelectionList](x: Self) {
     
-    @scala.inline
-    def setAutoSelect(value: String => Unit): Self = StObject.set(x, "AutoSelect", js.Any.fromFunction1(value))
+    inline def setAutoSelect(value: String => Unit): Self = StObject.set(x, "AutoSelect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilteringValue(value: String): Self = StObject.set(x, "FilteringValue", value.asInstanceOf[js.Any])
+    inline def setFilteringValue(value: String): Self = StObject.set(x, "FilteringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Any): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Any): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
+    inline def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFilter(value: (String, Double, Double) => Unit): Self = StObject.set(x, "SetFilter", js.Any.fromFunction3(value))
+    inline def setSetFilter(value: (String, Double, Double) => Unit): Self = StObject.set(x, "SetFilter", js.Any.fromFunction3(value))
   }
 }

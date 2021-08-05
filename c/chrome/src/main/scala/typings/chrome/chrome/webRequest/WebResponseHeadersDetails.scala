@@ -15,8 +15,7 @@ trait WebResponseHeadersDetails
 }
 object WebResponseHeadersDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: Double,
     method: String,
     parentFrameId: Double,
@@ -33,19 +32,14 @@ object WebResponseHeadersDetails {
     __obj.asInstanceOf[WebResponseHeadersDetails]
   }
   
-  @scala.inline
-  implicit class WebResponseHeadersDetailsMutableBuilder[Self <: WebResponseHeadersDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebResponseHeadersDetails](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    @scala.inline
-    def setResponseHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
   }
 }

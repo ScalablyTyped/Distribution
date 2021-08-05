@@ -13,17 +13,14 @@ trait IIOPubMessage
 }
 object IIOPubMessage {
   
-  @scala.inline
-  def apply(content: js.Any, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IIOPubMessage = {
+  inline def apply(content: js.Any, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IIOPubMessage = {
     val __obj = js.Dynamic.literal(channel = "iopub", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIOPubMessage]
   }
   
-  @scala.inline
-  implicit class IIOPubMessageMutableBuilder[Self <: IIOPubMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IIOPubMessage](x: Self) {
     
-    @scala.inline
-    def setChannel(value: iopub): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: iopub): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

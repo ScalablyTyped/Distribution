@@ -18,28 +18,21 @@ trait ListApplicationStatesResult extends StObject {
 }
 object ListApplicationStatesResult {
   
-  @scala.inline
-  def apply(): ListApplicationStatesResult = {
+  inline def apply(): ListApplicationStatesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListApplicationStatesResult]
   }
   
-  @scala.inline
-  implicit class ListApplicationStatesResultMutableBuilder[Self <: ListApplicationStatesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListApplicationStatesResult](x: Self) {
     
-    @scala.inline
-    def setApplicationStateList(value: ApplicationStateList): Self = StObject.set(x, "ApplicationStateList", value.asInstanceOf[js.Any])
+    inline def setApplicationStateList(value: ApplicationStateList): Self = StObject.set(x, "ApplicationStateList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationStateListUndefined: Self = StObject.set(x, "ApplicationStateList", js.undefined)
+    inline def setApplicationStateListUndefined: Self = StObject.set(x, "ApplicationStateList", js.undefined)
     
-    @scala.inline
-    def setApplicationStateListVarargs(value: ApplicationState*): Self = StObject.set(x, "ApplicationStateList", js.Array(value :_*))
+    inline def setApplicationStateListVarargs(value: ApplicationState*): Self = StObject.set(x, "ApplicationStateList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

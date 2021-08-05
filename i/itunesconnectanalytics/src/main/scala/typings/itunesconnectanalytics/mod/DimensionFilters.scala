@@ -12,22 +12,17 @@ trait DimensionFilters extends StObject {
 }
 object DimensionFilters {
   
-  @scala.inline
-  def apply(dimensionKey: dimensionFilterKey, optionKeys: js.Array[String]): DimensionFilters = {
+  inline def apply(dimensionKey: dimensionFilterKey, optionKeys: js.Array[String]): DimensionFilters = {
     val __obj = js.Dynamic.literal(dimensionKey = dimensionKey.asInstanceOf[js.Any], optionKeys = optionKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionFilters]
   }
   
-  @scala.inline
-  implicit class DimensionFiltersMutableBuilder[Self <: DimensionFilters] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionFilters](x: Self) {
     
-    @scala.inline
-    def setDimensionKey(value: dimensionFilterKey): Self = StObject.set(x, "dimensionKey", value.asInstanceOf[js.Any])
+    inline def setDimensionKey(value: dimensionFilterKey): Self = StObject.set(x, "dimensionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionKeys(value: js.Array[String]): Self = StObject.set(x, "optionKeys", value.asInstanceOf[js.Any])
+    inline def setOptionKeys(value: js.Array[String]): Self = StObject.set(x, "optionKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionKeysVarargs(value: String*): Self = StObject.set(x, "optionKeys", js.Array(value :_*))
+    inline def setOptionKeysVarargs(value: String*): Self = StObject.set(x, "optionKeys", js.Array(value :_*))
   }
 }

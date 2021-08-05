@@ -21,14 +21,11 @@ trait TriState extends StObject
 object TriState {
   
   /** The value is indeterminate. */
-  @scala.inline
-  def INDETERMINATE: `2` = 2.asInstanceOf[`2`]
+  inline def INDETERMINATE: `2` = 2.asInstanceOf[`2`]
   
   /** The value is equivalent to `FALSE` . */
-  @scala.inline
-  def NO: `0` = 0.asInstanceOf[`0`]
+  inline def NO: `0` = 0.asInstanceOf[`0`]
   
   /** The value is equivalent to `TRUE` . */
-  @scala.inline
-  def YES: `1` = 1.asInstanceOf[`1`]
+  inline def YES: `1` = 1.asInstanceOf[`1`]
 }

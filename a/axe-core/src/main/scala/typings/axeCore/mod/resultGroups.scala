@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait resultGroups extends StObject
 object resultGroups {
   
-  @scala.inline
-  def inapplicable: typings.axeCore.axeCoreStrings.inapplicable = "inapplicable".asInstanceOf[typings.axeCore.axeCoreStrings.inapplicable]
+  inline def inapplicable: typings.axeCore.axeCoreStrings.inapplicable = "inapplicable".asInstanceOf[typings.axeCore.axeCoreStrings.inapplicable]
   
-  @scala.inline
-  def incomplete: typings.axeCore.axeCoreStrings.incomplete = "incomplete".asInstanceOf[typings.axeCore.axeCoreStrings.incomplete]
+  inline def incomplete: typings.axeCore.axeCoreStrings.incomplete = "incomplete".asInstanceOf[typings.axeCore.axeCoreStrings.incomplete]
   
-  @scala.inline
-  def passes: typings.axeCore.axeCoreStrings.passes = "passes".asInstanceOf[typings.axeCore.axeCoreStrings.passes]
+  inline def passes: typings.axeCore.axeCoreStrings.passes = "passes".asInstanceOf[typings.axeCore.axeCoreStrings.passes]
   
-  @scala.inline
-  def violations: typings.axeCore.axeCoreStrings.violations = "violations".asInstanceOf[typings.axeCore.axeCoreStrings.violations]
+  inline def violations: typings.axeCore.axeCoreStrings.violations = "violations".asInstanceOf[typings.axeCore.axeCoreStrings.violations]
 }

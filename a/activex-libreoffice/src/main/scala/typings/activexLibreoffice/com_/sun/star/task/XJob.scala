@@ -30,8 +30,7 @@ trait XJob
 }
 object XJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     execute: SeqEquiv[NamedValue] => js.Any,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object XJob {
     __obj.asInstanceOf[XJob]
   }
   
-  @scala.inline
-  implicit class XJobMutableBuilder[Self <: XJob] (val x: Self) extends AnyVal {
+  extension [Self <: XJob](x: Self) {
     
-    @scala.inline
-    def setExecute(value: SeqEquiv[NamedValue] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: SeqEquiv[NamedValue] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

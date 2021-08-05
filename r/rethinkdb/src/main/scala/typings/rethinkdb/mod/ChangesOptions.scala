@@ -45,8 +45,7 @@ trait ChangesOptions extends StObject {
 }
 object ChangesOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changefeedQueueSize: Double,
     includeInitial: Boolean,
     includeOffsets: Boolean,
@@ -58,25 +57,18 @@ object ChangesOptions {
     __obj.asInstanceOf[ChangesOptions]
   }
   
-  @scala.inline
-  implicit class ChangesOptionsMutableBuilder[Self <: ChangesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChangesOptions](x: Self) {
     
-    @scala.inline
-    def setChangefeedQueueSize(value: Double): Self = StObject.set(x, "changefeedQueueSize", value.asInstanceOf[js.Any])
+    inline def setChangefeedQueueSize(value: Double): Self = StObject.set(x, "changefeedQueueSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeInitial(value: Boolean): Self = StObject.set(x, "includeInitial", value.asInstanceOf[js.Any])
+    inline def setIncludeInitial(value: Boolean): Self = StObject.set(x, "includeInitial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeOffsets(value: Boolean): Self = StObject.set(x, "includeOffsets", value.asInstanceOf[js.Any])
+    inline def setIncludeOffsets(value: Boolean): Self = StObject.set(x, "includeOffsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeStates(value: Boolean): Self = StObject.set(x, "includeStates", value.asInstanceOf[js.Any])
+    inline def setIncludeStates(value: Boolean): Self = StObject.set(x, "includeStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTypes(value: Boolean): Self = StObject.set(x, "includeTypes", value.asInstanceOf[js.Any])
+    inline def setIncludeTypes(value: Boolean): Self = StObject.set(x, "includeTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquash(value: Boolean | Double): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
+    inline def setSquash(value: Boolean | Double): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
   }
 }

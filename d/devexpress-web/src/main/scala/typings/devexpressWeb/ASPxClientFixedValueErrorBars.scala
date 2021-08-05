@@ -23,8 +23,7 @@ trait ASPxClientFixedValueErrorBars
 }
 object ASPxClientFixedValueErrorBars {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chart: ASPxClientWebChart,
     name: String,
     negativeError: Double,
@@ -35,13 +34,10 @@ object ASPxClientFixedValueErrorBars {
     __obj.asInstanceOf[ASPxClientFixedValueErrorBars]
   }
   
-  @scala.inline
-  implicit class ASPxClientFixedValueErrorBarsMutableBuilder[Self <: ASPxClientFixedValueErrorBars] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFixedValueErrorBars](x: Self) {
     
-    @scala.inline
-    def setNegativeError(value: Double): Self = StObject.set(x, "negativeError", value.asInstanceOf[js.Any])
+    inline def setNegativeError(value: Double): Self = StObject.set(x, "negativeError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveError(value: Double): Self = StObject.set(x, "positiveError", value.asInstanceOf[js.Any])
+    inline def setPositiveError(value: Double): Self = StObject.set(x, "positiveError", value.asInstanceOf[js.Any])
   }
 }

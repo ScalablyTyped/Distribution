@@ -13,16 +13,13 @@ trait DescribeSolutionRequest extends StObject {
 }
 object DescribeSolutionRequest {
   
-  @scala.inline
-  def apply(solutionArn: Arn): DescribeSolutionRequest = {
+  inline def apply(solutionArn: Arn): DescribeSolutionRequest = {
     val __obj = js.Dynamic.literal(solutionArn = solutionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSolutionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSolutionRequestMutableBuilder[Self <: DescribeSolutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSolutionRequest](x: Self) {
     
-    @scala.inline
-    def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
+    inline def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
   }
 }

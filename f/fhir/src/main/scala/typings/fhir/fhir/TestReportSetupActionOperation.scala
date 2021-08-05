@@ -43,46 +43,33 @@ trait TestReportSetupActionOperation
 }
 object TestReportSetupActionOperation {
   
-  @scala.inline
-  def apply(result: code): TestReportSetupActionOperation = {
+  inline def apply(result: code): TestReportSetupActionOperation = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestReportSetupActionOperation]
   }
   
-  @scala.inline
-  implicit class TestReportSetupActionOperationMutableBuilder[Self <: TestReportSetupActionOperation] (val x: Self) extends AnyVal {
+  extension [Self <: TestReportSetupActionOperation](x: Self) {
     
-    @scala.inline
-    def setDetail(value: uri): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: uri): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setMessage(value: markdown): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: markdown): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResult(value: code): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: code): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_detail(value: Element): Self = StObject.set(x, "_detail", value.asInstanceOf[js.Any])
+    inline def set_detail(value: Element): Self = StObject.set(x, "_detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_detailUndefined: Self = StObject.set(x, "_detail", js.undefined)
+    inline def set_detailUndefined: Self = StObject.set(x, "_detail", js.undefined)
     
-    @scala.inline
-    def set_message(value: Element): Self = StObject.set(x, "_message", value.asInstanceOf[js.Any])
+    inline def set_message(value: Element): Self = StObject.set(x, "_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_messageUndefined: Self = StObject.set(x, "_message", js.undefined)
+    inline def set_messageUndefined: Self = StObject.set(x, "_message", js.undefined)
     
-    @scala.inline
-    def set_result(value: Element): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
+    inline def set_result(value: Element): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_resultUndefined: Self = StObject.set(x, "_result", js.undefined)
+    inline def set_resultUndefined: Self = StObject.set(x, "_result", js.undefined)
   }
 }

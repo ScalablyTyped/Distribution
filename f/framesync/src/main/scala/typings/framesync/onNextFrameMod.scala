@@ -10,6 +10,5 @@ object onNextFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

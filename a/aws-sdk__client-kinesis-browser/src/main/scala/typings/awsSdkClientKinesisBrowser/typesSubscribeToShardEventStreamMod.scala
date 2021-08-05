@@ -17,17 +17,14 @@ object typesSubscribeToShardEventStreamMod {
   }
   object SubscribeToShardEventStream {
     
-    @scala.inline
-    def apply(SubscribeToShardEvent: SubscribeToShardEvent): SubscribeToShardEventStream = {
+    inline def apply(SubscribeToShardEvent: SubscribeToShardEvent): SubscribeToShardEventStream = {
       val __obj = js.Dynamic.literal(SubscribeToShardEvent = SubscribeToShardEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscribeToShardEventStream]
     }
     
-    @scala.inline
-    implicit class SubscribeToShardEventStreamMutableBuilder[Self <: SubscribeToShardEventStream] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeToShardEventStream](x: Self) {
       
-      @scala.inline
-      def setSubscribeToShardEvent(value: SubscribeToShardEvent): Self = StObject.set(x, "SubscribeToShardEvent", value.asInstanceOf[js.Any])
+      inline def setSubscribeToShardEvent(value: SubscribeToShardEvent): Self = StObject.set(x, "SubscribeToShardEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,17 +40,14 @@ object typesSubscribeToShardEventStreamMod {
   }
   object UnmarshalledSubscribeToShardEventStream {
     
-    @scala.inline
-    def apply(SubscribeToShardEvent: UnmarshalledSubscribeToShardEvent): UnmarshalledSubscribeToShardEventStream = {
+    inline def apply(SubscribeToShardEvent: UnmarshalledSubscribeToShardEvent): UnmarshalledSubscribeToShardEventStream = {
       val __obj = js.Dynamic.literal(SubscribeToShardEvent = SubscribeToShardEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledSubscribeToShardEventStream]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSubscribeToShardEventStreamMutableBuilder[Self <: UnmarshalledSubscribeToShardEventStream] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSubscribeToShardEventStream](x: Self) {
       
-      @scala.inline
-      def setSubscribeToShardEvent(value: UnmarshalledSubscribeToShardEvent): Self = StObject.set(x, "SubscribeToShardEvent", value.asInstanceOf[js.Any])
+      inline def setSubscribeToShardEvent(value: UnmarshalledSubscribeToShardEvent): Self = StObject.set(x, "SubscribeToShardEvent", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,10 +11,8 @@ object getIntentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getIntent(args: GetIntentArgs): js.Promise[GetIntentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIntentResult]]
-  @scala.inline
-  def getIntent(args: GetIntentArgs, opts: InvokeOptions): js.Promise[GetIntentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntent")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIntentResult]]
+  inline def getIntent(args: GetIntentArgs): js.Promise[GetIntentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIntent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetIntentResult]]
+  inline def getIntent(args: GetIntentArgs, opts: InvokeOptions): js.Promise[GetIntentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getIntent")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetIntentResult]]
   
   trait GetIntentArgs extends StObject {
     
@@ -30,23 +28,18 @@ object getIntentMod {
   }
   object GetIntentArgs {
     
-    @scala.inline
-    def apply(name: String): GetIntentArgs = {
+    inline def apply(name: String): GetIntentArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetIntentArgs]
     }
     
-    @scala.inline
-    implicit class GetIntentArgsMutableBuilder[Self <: GetIntentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetIntentArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -103,8 +96,7 @@ object getIntentMod {
   }
   object GetIntentResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       checksum: String,
       createdDate: String,
@@ -118,38 +110,27 @@ object getIntentMod {
       __obj.asInstanceOf[GetIntentResult]
     }
     
-    @scala.inline
-    implicit class GetIntentResultMutableBuilder[Self <: GetIntentResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetIntentResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdatedDate(value: String): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+      inline def setLastUpdatedDate(value: String): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIntentSignature(value: String): Self = StObject.set(x, "parentIntentSignature", value.asInstanceOf[js.Any])
+      inline def setParentIntentSignature(value: String): Self = StObject.set(x, "parentIntentSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

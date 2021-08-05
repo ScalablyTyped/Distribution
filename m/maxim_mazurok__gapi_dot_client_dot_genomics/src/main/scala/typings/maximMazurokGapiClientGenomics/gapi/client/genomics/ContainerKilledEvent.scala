@@ -11,19 +11,15 @@ trait ContainerKilledEvent extends StObject {
 }
 object ContainerKilledEvent {
   
-  @scala.inline
-  def apply(): ContainerKilledEvent = {
+  inline def apply(): ContainerKilledEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerKilledEvent]
   }
   
-  @scala.inline
-  implicit class ContainerKilledEventMutableBuilder[Self <: ContainerKilledEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerKilledEvent](x: Self) {
     
-    @scala.inline
-    def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
   }
 }

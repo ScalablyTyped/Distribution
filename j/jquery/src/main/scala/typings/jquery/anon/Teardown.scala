@@ -20,16 +20,13 @@ trait Teardown[TTarget]
 }
 object Teardown {
   
-  @scala.inline
-  def apply[TTarget](teardown: () => Unit | `false`): Teardown[TTarget] = {
+  inline def apply[TTarget](teardown: () => Unit | `false`): Teardown[TTarget] = {
     val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction0(teardown))
     __obj.asInstanceOf[Teardown[TTarget]]
   }
   
-  @scala.inline
-  implicit class TeardownMutableBuilder[Self <: Teardown[?], TTarget] (val x: Self & Teardown[TTarget]) extends AnyVal {
+  extension [Self <: Teardown[?], TTarget](x: Self & Teardown[TTarget]) {
     
-    @scala.inline
-    def setTeardown(value: () => Unit | `false`): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
+    inline def setTeardown(value: () => Unit | `false`): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
   }
 }

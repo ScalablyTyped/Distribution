@@ -37,8 +37,7 @@ object transportMod {
     @JSImport("@elastic/elasticsearch/lib/Transport", "default.sniffReasons")
     @js.native
     def sniffReasons: DEFAULT = js.native
-    @scala.inline
-    def sniffReasons_=(x: DEFAULT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sniffReasons")(x.asInstanceOf[js.Any])
+    inline def sniffReasons_=(x: DEFAULT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sniffReasons")(x.asInstanceOf[js.Any])
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -83,41 +82,30 @@ object transportMod {
   }
   object RequestEvent {
     
-    @scala.inline
-    def apply[TResponse, TContext](body: TResponse, meta: Aborted[TContext]): RequestEvent[TResponse, TContext] = {
+    inline def apply[TResponse, TContext](body: TResponse, meta: Aborted[TContext]): RequestEvent[TResponse, TContext] = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], headers = null, statusCode = null, warnings = null)
       __obj.asInstanceOf[RequestEvent[TResponse, TContext]]
     }
     
-    @scala.inline
-    implicit class RequestEventMutableBuilder[Self <: RequestEvent[?, ?], TResponse, TContext] (val x: Self & (RequestEvent[TResponse, TContext])) extends AnyVal {
+    extension [Self <: RequestEvent[?, ?], TResponse, TContext](x: Self & (RequestEvent[TResponse, TContext])) {
       
-      @scala.inline
-      def setBody(value: TResponse): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: TResponse): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersNull: Self = StObject.set(x, "headers", null)
+      inline def setHeadersNull: Self = StObject.set(x, "headers", null)
       
-      @scala.inline
-      def setMeta(value: Aborted[TContext]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Aborted[TContext]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeNull: Self = StObject.set(x, "statusCode", null)
+      inline def setStatusCodeNull: Self = StObject.set(x, "statusCode", null)
       
-      @scala.inline
-      def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsNull: Self = StObject.set(x, "warnings", null)
+      inline def setWarningsNull: Self = StObject.set(x, "warnings", null)
       
-      @scala.inline
-      def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     }
   }
   
@@ -187,17 +175,14 @@ object transportMod {
   }
   object TransportGetConnectionOptions {
     
-    @scala.inline
-    def apply(requestId: String): TransportGetConnectionOptions = {
+    inline def apply(requestId: String): TransportGetConnectionOptions = {
       val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransportGetConnectionOptions]
     }
     
-    @scala.inline
-    implicit class TransportGetConnectionOptionsMutableBuilder[Self <: TransportGetConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransportGetConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -246,17 +231,14 @@ object transportMod {
   }
   object TransportRequestCallback {
     
-    @scala.inline
-    def apply(abort: () => Unit): TransportRequestCallback = {
+    inline def apply(abort: () => Unit): TransportRequestCallback = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
       __obj.asInstanceOf[TransportRequestCallback]
     }
     
-    @scala.inline
-    implicit class TransportRequestCallbackMutableBuilder[Self <: TransportRequestCallback] (val x: Self) extends AnyVal {
+    extension [Self <: TransportRequestCallback](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     }
   }
   
@@ -286,89 +268,62 @@ object transportMod {
   }
   object TransportRequestOptions {
     
-    @scala.inline
-    def apply(): TransportRequestOptions = {
+    inline def apply(): TransportRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransportRequestOptions]
     }
     
-    @scala.inline
-    implicit class TransportRequestOptionsMutableBuilder[Self <: TransportRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransportRequestOptions](x: Self) {
       
-      @scala.inline
-      def setAsStream(value: Boolean): Self = StObject.set(x, "asStream", value.asInstanceOf[js.Any])
+      inline def setAsStream(value: Boolean): Self = StObject.set(x, "asStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsStreamUndefined: Self = StObject.set(x, "asStream", js.undefined)
+      inline def setAsStreamUndefined: Self = StObject.set(x, "asStream", js.undefined)
       
-      @scala.inline
-      def setCompression(value: gzip): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: gzip): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextNull: Self = StObject.set(x, "context", null)
+      inline def setContextNull: Self = StObject.set(x, "context", null)
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: js.Array[Double]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[Double]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: Double*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: Double*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setOpaqueId(value: String): Self = StObject.set(x, "opaqueId", value.asInstanceOf[js.Any])
+      inline def setOpaqueId(value: String): Self = StObject.set(x, "opaqueId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpaqueIdUndefined: Self = StObject.set(x, "opaqueId", js.undefined)
+      inline def setOpaqueIdUndefined: Self = StObject.set(x, "opaqueId", js.undefined)
       
-      @scala.inline
-      def setQuerystring(value: Record[String, js.Any]): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
+      inline def setQuerystring(value: Record[String, js.Any]): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
+      inline def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
       
-      @scala.inline
-      def setRequestTimeout(value: Double | String): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      inline def setRequestTimeout(value: Double | String): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
       
-      @scala.inline
-      def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
       
-      @scala.inline
-      def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     }
   }
   
@@ -386,41 +341,30 @@ object transportMod {
   }
   object TransportRequestParams {
     
-    @scala.inline
-    def apply(method: String, path: String): TransportRequestParams = {
+    inline def apply(method: String, path: String): TransportRequestParams = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransportRequestParams]
     }
     
-    @scala.inline
-    implicit class TransportRequestParamsMutableBuilder[Self <: TransportRequestParams] (val x: Self) extends AnyVal {
+    extension [Self <: TransportRequestParams](x: Self) {
       
-      @scala.inline
-      def setBody(value: RequestBody[Record[String, js.Any]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: RequestBody[Record[String, js.Any]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setBulkBody(value: RequestNDBody[js.Array[Record[String, js.Any]]]): Self = StObject.set(x, "bulkBody", value.asInstanceOf[js.Any])
+      inline def setBulkBody(value: RequestNDBody[js.Array[Record[String, js.Any]]]): Self = StObject.set(x, "bulkBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulkBodyUndefined: Self = StObject.set(x, "bulkBody", js.undefined)
+      inline def setBulkBodyUndefined: Self = StObject.set(x, "bulkBody", js.undefined)
       
-      @scala.inline
-      def setBulkBodyVarargs(value: ((Record[String, js.Any]) | String)*): Self = StObject.set(x, "bulkBody", js.Array(value :_*))
+      inline def setBulkBodyVarargs(value: ((Record[String, js.Any]) | String)*): Self = StObject.set(x, "bulkBody", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerystring(value: (Record[String, js.Any]) | String): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
+      inline def setQuerystring(value: (Record[String, js.Any]) | String): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
+      inline def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
     }
   }
   
@@ -439,23 +383,18 @@ object transportMod {
   }
   object TransportSniffOptions {
     
-    @scala.inline
-    def apply(reason: String): TransportSniffOptions = {
+    inline def apply(reason: String): TransportSniffOptions = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransportSniffOptions]
     }
     
-    @scala.inline
-    implicit class TransportSniffOptionsMutableBuilder[Self <: TransportSniffOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransportSniffOptions](x: Self) {
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+      inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     }
   }
   

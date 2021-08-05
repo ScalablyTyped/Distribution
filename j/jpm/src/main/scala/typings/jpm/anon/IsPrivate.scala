@@ -21,46 +21,33 @@ trait IsPrivate extends StObject {
 }
 object IsPrivate {
   
-  @scala.inline
-  def apply(url: String): IsPrivate = {
+  inline def apply(url: String): IsPrivate = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsPrivate]
   }
   
-  @scala.inline
-  implicit class IsPrivateMutableBuilder[Self <: IsPrivate] (val x: Self) extends AnyVal {
+  extension [Self <: IsPrivate](x: Self) {
     
-    @scala.inline
-    def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
+    inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
+    inline def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
     
-    @scala.inline
-    def setOnActivate(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
+    inline def setOnActivate(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
+    inline def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
     
-    @scala.inline
-    def setOnClose(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    @scala.inline
-    def setOnDeactivate(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
+    inline def setOnDeactivate(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
+    inline def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
     
-    @scala.inline
-    def setOnOpen(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+    inline def setOnOpen(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+    inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

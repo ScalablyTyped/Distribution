@@ -23,31 +23,23 @@ trait SourceConfig extends StObject {
 }
 object SourceConfig {
   
-  @scala.inline
-  def apply(): SourceConfig = {
+  inline def apply(): SourceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceConfig]
   }
   
-  @scala.inline
-  implicit class SourceConfigMutableBuilder[Self <: SourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SourceConfig](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
     
-    @scala.inline
-    def setS3Key(value: S3Key): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: S3Key): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyUndefined: Self = StObject.set(x, "s3Key", js.undefined)
+    inline def setS3KeyUndefined: Self = StObject.set(x, "s3Key", js.undefined)
   }
 }

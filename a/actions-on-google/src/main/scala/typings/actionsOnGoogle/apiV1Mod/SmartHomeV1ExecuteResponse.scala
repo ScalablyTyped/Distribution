@@ -14,19 +14,15 @@ trait SmartHomeV1ExecuteResponse
 }
 object SmartHomeV1ExecuteResponse {
   
-  @scala.inline
-  def apply(payload: SmartHomeV1ExecutePayload, requestId: String): SmartHomeV1ExecuteResponse = {
+  inline def apply(payload: SmartHomeV1ExecutePayload, requestId: String): SmartHomeV1ExecuteResponse = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1ExecuteResponse]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1ExecuteResponseMutableBuilder[Self <: SmartHomeV1ExecuteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1ExecuteResponse](x: Self) {
     
-    @scala.inline
-    def setPayload(value: SmartHomeV1ExecutePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: SmartHomeV1ExecutePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

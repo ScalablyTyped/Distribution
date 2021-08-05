@@ -95,187 +95,127 @@ trait ClearAnimationOptions extends StObject {
 }
 object ClearAnimationOptions {
   
-  @scala.inline
-  def apply(): ClearAnimationOptions = {
+  inline def apply(): ClearAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearAnimationOptions]
   }
   
-  @scala.inline
-  implicit class ClearAnimationOptionsMutableBuilder[Self <: ClearAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClearAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Boolean): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Boolean): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setMatrix(value: Boolean): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: Boolean): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix3d(value: Boolean): Self = StObject.set(x, "matrix3d", value.asInstanceOf[js.Any])
+    inline def setMatrix3d(value: Boolean): Self = StObject.set(x, "matrix3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix3dUndefined: Self = StObject.set(x, "matrix3d", js.undefined)
+    inline def setMatrix3dUndefined: Self = StObject.set(x, "matrix3d", js.undefined)
     
-    @scala.inline
-    def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
+    inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate3d(value: Boolean): Self = StObject.set(x, "rotate3d", value.asInstanceOf[js.Any])
+    inline def setRotate3d(value: Boolean): Self = StObject.set(x, "rotate3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate3dUndefined: Self = StObject.set(x, "rotate3d", js.undefined)
+    inline def setRotate3dUndefined: Self = StObject.set(x, "rotate3d", js.undefined)
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setRotateX(value: Boolean): Self = StObject.set(x, "rotateX", value.asInstanceOf[js.Any])
+    inline def setRotateX(value: Boolean): Self = StObject.set(x, "rotateX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateXUndefined: Self = StObject.set(x, "rotateX", js.undefined)
+    inline def setRotateXUndefined: Self = StObject.set(x, "rotateX", js.undefined)
     
-    @scala.inline
-    def setRotateY(value: Boolean): Self = StObject.set(x, "rotateY", value.asInstanceOf[js.Any])
+    inline def setRotateY(value: Boolean): Self = StObject.set(x, "rotateY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateYUndefined: Self = StObject.set(x, "rotateY", js.undefined)
+    inline def setRotateYUndefined: Self = StObject.set(x, "rotateY", js.undefined)
     
-    @scala.inline
-    def setRotateZ(value: Boolean): Self = StObject.set(x, "rotateZ", value.asInstanceOf[js.Any])
+    inline def setRotateZ(value: Boolean): Self = StObject.set(x, "rotateZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateZUndefined: Self = StObject.set(x, "rotateZ", js.undefined)
+    inline def setRotateZUndefined: Self = StObject.set(x, "rotateZ", js.undefined)
     
-    @scala.inline
-    def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale3d(value: Boolean): Self = StObject.set(x, "scale3d", value.asInstanceOf[js.Any])
+    inline def setScale3d(value: Boolean): Self = StObject.set(x, "scale3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale3dUndefined: Self = StObject.set(x, "scale3d", js.undefined)
+    inline def setScale3dUndefined: Self = StObject.set(x, "scale3d", js.undefined)
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setScaleX(value: Boolean): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: Boolean): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
-    @scala.inline
-    def setScaleY(value: Boolean): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: Boolean): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+    inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
-    @scala.inline
-    def setScaleZ(value: Boolean): Self = StObject.set(x, "scaleZ", value.asInstanceOf[js.Any])
+    inline def setScaleZ(value: Boolean): Self = StObject.set(x, "scaleZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleZUndefined: Self = StObject.set(x, "scaleZ", js.undefined)
+    inline def setScaleZUndefined: Self = StObject.set(x, "scaleZ", js.undefined)
     
-    @scala.inline
-    def setSkew(value: Boolean): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
+    inline def setSkew(value: Boolean): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
+    inline def setSkewUndefined: Self = StObject.set(x, "skew", js.undefined)
     
-    @scala.inline
-    def setSkewX(value: Boolean): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
+    inline def setSkewX(value: Boolean): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewXUndefined: Self = StObject.set(x, "skewX", js.undefined)
+    inline def setSkewXUndefined: Self = StObject.set(x, "skewX", js.undefined)
     
-    @scala.inline
-    def setSkewY(value: Boolean): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
+    inline def setSkewY(value: Boolean): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
+    inline def setSkewYUndefined: Self = StObject.set(x, "skewY", js.undefined)
     
-    @scala.inline
-    def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setTransformOrigin(value: Boolean): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+    inline def setTransformOrigin(value: Boolean): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
+    inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
     
-    @scala.inline
-    def setTranslate(value: Boolean): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: Boolean): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslate3d(value: Boolean): Self = StObject.set(x, "translate3d", value.asInstanceOf[js.Any])
+    inline def setTranslate3d(value: Boolean): Self = StObject.set(x, "translate3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslate3dUndefined: Self = StObject.set(x, "translate3d", js.undefined)
+    inline def setTranslate3dUndefined: Self = StObject.set(x, "translate3d", js.undefined)
     
-    @scala.inline
-    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
-    @scala.inline
-    def setTranslateX(value: Boolean): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
+    inline def setTranslateX(value: Boolean): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
+    inline def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
     
-    @scala.inline
-    def setTranslateY(value: Boolean): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+    inline def setTranslateY(value: Boolean): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
+    inline def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
     
-    @scala.inline
-    def setTranslateZ(value: Boolean): Self = StObject.set(x, "translateZ", value.asInstanceOf[js.Any])
+    inline def setTranslateZ(value: Boolean): Self = StObject.set(x, "translateZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateZUndefined: Self = StObject.set(x, "translateZ", js.undefined)
+    inline def setTranslateZUndefined: Self = StObject.set(x, "translateZ", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

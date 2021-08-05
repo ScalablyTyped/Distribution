@@ -24,17 +24,14 @@ object typesMod {
   }
   object EmitterType {
     
-    @scala.inline
-    def apply(trigger: (String, js.Object) => Unit): EmitterType = {
+    inline def apply(trigger: (String, js.Object) => Unit): EmitterType = {
       val __obj = js.Dynamic.literal(trigger = js.Any.fromFunction2(trigger))
       __obj.asInstanceOf[EmitterType]
     }
     
-    @scala.inline
-    implicit class EmitterTypeMutableBuilder[Self <: EmitterType] (val x: Self) extends AnyVal {
+    extension [Self <: EmitterType](x: Self) {
       
-      @scala.inline
-      def setTrigger(value: (String, js.Object) => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
+      inline def setTrigger(value: (String, js.Object) => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
     }
   }
   
@@ -44,17 +41,14 @@ object typesMod {
   }
   object IframeApiType {
     
-    @scala.inline
-    def apply(Player: Instantiable): IframeApiType = {
+    inline def apply(Player: Instantiable): IframeApiType = {
       val __obj = js.Dynamic.literal(Player = Player.asInstanceOf[js.Any])
       __obj.asInstanceOf[IframeApiType]
     }
     
-    @scala.inline
-    implicit class IframeApiTypeMutableBuilder[Self <: IframeApiType] (val x: Self) extends AnyVal {
+    extension [Self <: IframeApiType](x: Self) {
       
-      @scala.inline
-      def setPlayer(value: Instantiable): Self = StObject.set(x, "Player", value.asInstanceOf[js.Any])
+      inline def setPlayer(value: Instantiable): Self = StObject.set(x, "Player", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,44 +66,32 @@ object typesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEvents(value: eventTypeinEventTypeevent): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: eventTypeinEventTypeevent): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setPlayerVars(value: Autoplay): Self = StObject.set(x, "playerVars", value.asInstanceOf[js.Any])
+      inline def setPlayerVars(value: Autoplay): Self = StObject.set(x, "playerVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayerVarsUndefined: Self = StObject.set(x, "playerVars", js.undefined)
+      inline def setPlayerVarsUndefined: Self = StObject.set(x, "playerVars", js.undefined)
       
-      @scala.inline
-      def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+      inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+      inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

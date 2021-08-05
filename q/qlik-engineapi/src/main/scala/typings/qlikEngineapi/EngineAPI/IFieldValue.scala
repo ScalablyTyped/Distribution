@@ -30,31 +30,23 @@ trait IFieldValue extends StObject {
 }
 object IFieldValue {
   
-  @scala.inline
-  def apply(): IFieldValue = {
+  inline def apply(): IFieldValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFieldValue]
   }
   
-  @scala.inline
-  implicit class IFieldValueMutableBuilder[Self <: IFieldValue] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldValue](x: Self) {
     
-    @scala.inline
-    def setQIsNumeric(value: Boolean): Self = StObject.set(x, "qIsNumeric", value.asInstanceOf[js.Any])
+    inline def setQIsNumeric(value: Boolean): Self = StObject.set(x, "qIsNumeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsNumericUndefined: Self = StObject.set(x, "qIsNumeric", js.undefined)
+    inline def setQIsNumericUndefined: Self = StObject.set(x, "qIsNumeric", js.undefined)
     
-    @scala.inline
-    def setQNumber(value: Double): Self = StObject.set(x, "qNumber", value.asInstanceOf[js.Any])
+    inline def setQNumber(value: Double): Self = StObject.set(x, "qNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNumberUndefined: Self = StObject.set(x, "qNumber", js.undefined)
+    inline def setQNumberUndefined: Self = StObject.set(x, "qNumber", js.undefined)
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTextUndefined: Self = StObject.set(x, "qText", js.undefined)
+    inline def setQTextUndefined: Self = StObject.set(x, "qText", js.undefined)
   }
 }

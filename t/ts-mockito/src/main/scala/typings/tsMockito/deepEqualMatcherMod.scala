@@ -12,6 +12,6 @@ object deepEqualMatcherMod {
   class DeepEqualMatcher[T] protected () extends Matcher {
     def this(expectedValue: T) = this()
     
-    var expectedValue: js.Any = js.native
+    /* private */ var expectedValue: js.Any = js.native
   }
 }

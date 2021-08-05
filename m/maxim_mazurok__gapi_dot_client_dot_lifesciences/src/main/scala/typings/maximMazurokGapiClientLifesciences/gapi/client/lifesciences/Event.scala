@@ -44,85 +44,59 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(): Event = {
+  inline def apply(): Event = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setContainerKilled(value: ContainerKilledEvent): Self = StObject.set(x, "containerKilled", value.asInstanceOf[js.Any])
+    inline def setContainerKilled(value: ContainerKilledEvent): Self = StObject.set(x, "containerKilled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerKilledUndefined: Self = StObject.set(x, "containerKilled", js.undefined)
+    inline def setContainerKilledUndefined: Self = StObject.set(x, "containerKilled", js.undefined)
     
-    @scala.inline
-    def setContainerStarted(value: ContainerStartedEvent): Self = StObject.set(x, "containerStarted", value.asInstanceOf[js.Any])
+    inline def setContainerStarted(value: ContainerStartedEvent): Self = StObject.set(x, "containerStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStartedUndefined: Self = StObject.set(x, "containerStarted", js.undefined)
+    inline def setContainerStartedUndefined: Self = StObject.set(x, "containerStarted", js.undefined)
     
-    @scala.inline
-    def setContainerStopped(value: ContainerStoppedEvent): Self = StObject.set(x, "containerStopped", value.asInstanceOf[js.Any])
+    inline def setContainerStopped(value: ContainerStoppedEvent): Self = StObject.set(x, "containerStopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStoppedUndefined: Self = StObject.set(x, "containerStopped", js.undefined)
+    inline def setContainerStoppedUndefined: Self = StObject.set(x, "containerStopped", js.undefined)
     
-    @scala.inline
-    def setDelayed(value: DelayedEvent): Self = StObject.set(x, "delayed", value.asInstanceOf[js.Any])
+    inline def setDelayed(value: DelayedEvent): Self = StObject.set(x, "delayed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayedUndefined: Self = StObject.set(x, "delayed", js.undefined)
+    inline def setDelayedUndefined: Self = StObject.set(x, "delayed", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFailed(value: FailedEvent): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: FailedEvent): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
+    inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
     
-    @scala.inline
-    def setPullStarted(value: PullStartedEvent): Self = StObject.set(x, "pullStarted", value.asInstanceOf[js.Any])
+    inline def setPullStarted(value: PullStartedEvent): Self = StObject.set(x, "pullStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullStartedUndefined: Self = StObject.set(x, "pullStarted", js.undefined)
+    inline def setPullStartedUndefined: Self = StObject.set(x, "pullStarted", js.undefined)
     
-    @scala.inline
-    def setPullStopped(value: PullStoppedEvent): Self = StObject.set(x, "pullStopped", value.asInstanceOf[js.Any])
+    inline def setPullStopped(value: PullStoppedEvent): Self = StObject.set(x, "pullStopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullStoppedUndefined: Self = StObject.set(x, "pullStopped", js.undefined)
+    inline def setPullStoppedUndefined: Self = StObject.set(x, "pullStopped", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setUnexpectedExitStatus(value: UnexpectedExitStatusEvent): Self = StObject.set(x, "unexpectedExitStatus", value.asInstanceOf[js.Any])
+    inline def setUnexpectedExitStatus(value: UnexpectedExitStatusEvent): Self = StObject.set(x, "unexpectedExitStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnexpectedExitStatusUndefined: Self = StObject.set(x, "unexpectedExitStatus", js.undefined)
+    inline def setUnexpectedExitStatusUndefined: Self = StObject.set(x, "unexpectedExitStatus", js.undefined)
     
-    @scala.inline
-    def setWorkerAssigned(value: WorkerAssignedEvent): Self = StObject.set(x, "workerAssigned", value.asInstanceOf[js.Any])
+    inline def setWorkerAssigned(value: WorkerAssignedEvent): Self = StObject.set(x, "workerAssigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerAssignedUndefined: Self = StObject.set(x, "workerAssigned", js.undefined)
+    inline def setWorkerAssignedUndefined: Self = StObject.set(x, "workerAssigned", js.undefined)
     
-    @scala.inline
-    def setWorkerReleased(value: WorkerReleasedEvent): Self = StObject.set(x, "workerReleased", value.asInstanceOf[js.Any])
+    inline def setWorkerReleased(value: WorkerReleasedEvent): Self = StObject.set(x, "workerReleased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerReleasedUndefined: Self = StObject.set(x, "workerReleased", js.undefined)
+    inline def setWorkerReleasedUndefined: Self = StObject.set(x, "workerReleased", js.undefined)
   }
 }

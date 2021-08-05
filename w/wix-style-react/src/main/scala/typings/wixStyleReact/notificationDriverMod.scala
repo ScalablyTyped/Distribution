@@ -48,8 +48,7 @@ object notificationDriverMod {
   }
   object NotificationDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clickOnActionButton: () => Unit,
       clickOnCloseButton: () => Unit,
       exists: () => Boolean,
@@ -73,59 +72,41 @@ object notificationDriverMod {
       __obj.asInstanceOf[NotificationDriver]
     }
     
-    @scala.inline
-    implicit class NotificationDriverMutableBuilder[Self <: NotificationDriver] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationDriver](x: Self) {
       
-      @scala.inline
-      def setClickOnActionButton(value: () => Unit): Self = StObject.set(x, "clickOnActionButton", js.Any.fromFunction0(value))
+      inline def setClickOnActionButton(value: () => Unit): Self = StObject.set(x, "clickOnActionButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnCloseButton(value: () => Unit): Self = StObject.set(x, "clickOnCloseButton", js.Any.fromFunction0(value))
+      inline def setClickOnCloseButton(value: () => Unit): Self = StObject.set(x, "clickOnCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetActionButtonText(value: () => String): Self = StObject.set(x, "getActionButtonText", js.Any.fromFunction0(value))
+      inline def setGetActionButtonText(value: () => String): Self = StObject.set(x, "getActionButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+      inline def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetZIndex(value: () => Double): Self = StObject.set(x, "getZIndex", js.Any.fromFunction0(value))
+      inline def setGetZIndex(value: () => Double): Self = StObject.set(x, "getZIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasActionButton(value: () => Boolean): Self = StObject.set(x, "hasActionButton", js.Any.fromFunction0(value))
+      inline def setHasActionButton(value: () => Boolean): Self = StObject.set(x, "hasActionButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasCloseButton(value: () => Boolean): Self = StObject.set(x, "hasCloseButton", js.Any.fromFunction0(value))
+      inline def setHasCloseButton(value: () => Boolean): Self = StObject.set(x, "hasCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTheme(value: NotificationTheme => Boolean): Self = StObject.set(x, "hasTheme", js.Any.fromFunction1(value))
+      inline def setHasTheme(value: NotificationTheme => Boolean): Self = StObject.set(x, "hasTheme", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsAbsolutePositioned(value: () => Boolean): Self = StObject.set(x, "isAbsolutePositioned", js.Any.fromFunction0(value))
+      inline def setIsAbsolutePositioned(value: () => Boolean): Self = StObject.set(x, "isAbsolutePositioned", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsErrorNotification(value: () => Boolean): Self = StObject.set(x, "isErrorNotification", js.Any.fromFunction0(value))
+      inline def setIsErrorNotification(value: () => Boolean): Self = StObject.set(x, "isErrorNotification", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFixedPositioned(value: () => Boolean): Self = StObject.set(x, "isFixedPositioned", js.Any.fromFunction0(value))
+      inline def setIsFixedPositioned(value: () => Boolean): Self = StObject.set(x, "isFixedPositioned", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPremiumNotification(value: () => Boolean): Self = StObject.set(x, "isPremiumNotification", js.Any.fromFunction0(value))
+      inline def setIsPremiumNotification(value: () => Boolean): Self = StObject.set(x, "isPremiumNotification", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRelativelyPositioned(value: () => Boolean): Self = StObject.set(x, "isRelativelyPositioned", js.Any.fromFunction0(value))
+      inline def setIsRelativelyPositioned(value: () => Boolean): Self = StObject.set(x, "isRelativelyPositioned", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsStandardNotification(value: () => Boolean): Self = StObject.set(x, "isStandardNotification", js.Any.fromFunction0(value))
+      inline def setIsStandardNotification(value: () => Boolean): Self = StObject.set(x, "isStandardNotification", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuccessNotification(value: () => Boolean): Self = StObject.set(x, "isSuccessNotification", js.Any.fromFunction0(value))
+      inline def setIsSuccessNotification(value: () => Boolean): Self = StObject.set(x, "isSuccessNotification", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsWarningNotification(value: () => Boolean): Self = StObject.set(x, "isWarningNotification", js.Any.fromFunction0(value))
+      inline def setIsWarningNotification(value: () => Boolean): Self = StObject.set(x, "isWarningNotification", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVisible(value: () => Boolean): Self = StObject.set(x, "visible", js.Any.fromFunction0(value))
+      inline def setVisible(value: () => Boolean): Self = StObject.set(x, "visible", js.Any.fromFunction0(value))
     }
   }
 }

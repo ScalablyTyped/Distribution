@@ -24,29 +24,22 @@ trait CIMGeometricEffectMove
 }
 object CIMGeometricEffectMove {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectMove = {
+  inline def apply(): CIMGeometricEffectMove = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectMove")
     __obj.asInstanceOf[CIMGeometricEffectMove]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectMoveMutableBuilder[Self <: CIMGeometricEffectMove] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectMove](x: Self) {
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectMove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectMove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

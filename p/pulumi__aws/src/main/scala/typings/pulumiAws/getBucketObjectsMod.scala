@@ -11,10 +11,8 @@ object getBucketObjectsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBucketObjects(args: GetBucketObjectsArgs): js.Promise[GetBucketObjectsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectsResult]]
-  @scala.inline
-  def getBucketObjects(args: GetBucketObjectsArgs, opts: InvokeOptions): js.Promise[GetBucketObjectsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectsResult]]
+  inline def getBucketObjects(args: GetBucketObjectsArgs): js.Promise[GetBucketObjectsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectsResult]]
+  inline def getBucketObjects(args: GetBucketObjectsArgs, opts: InvokeOptions): js.Promise[GetBucketObjectsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectsResult]]
   
   trait GetBucketObjectsArgs extends StObject {
     
@@ -55,53 +53,38 @@ object getBucketObjectsMod {
   }
   object GetBucketObjectsArgs {
     
-    @scala.inline
-    def apply(bucket: String): GetBucketObjectsArgs = {
+    inline def apply(bucket: String): GetBucketObjectsArgs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketObjectsArgs]
     }
     
-    @scala.inline
-    implicit class GetBucketObjectsArgsMutableBuilder[Self <: GetBucketObjectsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketObjectsArgs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+      inline def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
+      inline def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
       
-      @scala.inline
-      def setFetchOwner(value: Boolean): Self = StObject.set(x, "fetchOwner", value.asInstanceOf[js.Any])
+      inline def setFetchOwner(value: Boolean): Self = StObject.set(x, "fetchOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchOwnerUndefined: Self = StObject.set(x, "fetchOwner", js.undefined)
+      inline def setFetchOwnerUndefined: Self = StObject.set(x, "fetchOwner", js.undefined)
       
-      @scala.inline
-      def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
+      inline def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
+      inline def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setStartAfter(value: String): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
+      inline def setStartAfter(value: String): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
+      inline def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
     }
   }
   
@@ -143,8 +126,7 @@ object getBucketObjectsMod {
   }
   object GetBucketObjectsResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bucket: String,
       commonPrefixes: js.Array[String],
       id: String,
@@ -155,68 +137,47 @@ object getBucketObjectsMod {
       __obj.asInstanceOf[GetBucketObjectsResult]
     }
     
-    @scala.inline
-    implicit class GetBucketObjectsResultMutableBuilder[Self <: GetBucketObjectsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketObjectsResult](x: Self) {
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonPrefixes(value: js.Array[String]): Self = StObject.set(x, "commonPrefixes", value.asInstanceOf[js.Any])
+      inline def setCommonPrefixes(value: js.Array[String]): Self = StObject.set(x, "commonPrefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonPrefixesVarargs(value: String*): Self = StObject.set(x, "commonPrefixes", js.Array(value :_*))
+      inline def setCommonPrefixesVarargs(value: String*): Self = StObject.set(x, "commonPrefixes", js.Array(value :_*))
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+      inline def setEncodingType(value: String): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
+      inline def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
       
-      @scala.inline
-      def setFetchOwner(value: Boolean): Self = StObject.set(x, "fetchOwner", value.asInstanceOf[js.Any])
+      inline def setFetchOwner(value: Boolean): Self = StObject.set(x, "fetchOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchOwnerUndefined: Self = StObject.set(x, "fetchOwner", js.undefined)
+      inline def setFetchOwnerUndefined: Self = StObject.set(x, "fetchOwner", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
+      inline def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
+      inline def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
       
-      @scala.inline
-      def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+      inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+      inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setStartAfter(value: String): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
+      inline def setStartAfter(value: String): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
+      inline def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
     }
   }
 }

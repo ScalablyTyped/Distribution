@@ -32,8 +32,7 @@ trait Eot extends StObject {
 }
 object Eot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Doteot: String,
     Dotgif: String,
     Dotjpeg: String,
@@ -55,31 +54,22 @@ object Eot {
     __obj.asInstanceOf[Eot]
   }
   
-  @scala.inline
-  implicit class EotMutableBuilder[Self <: Eot] (val x: Self) extends AnyVal {
+  extension [Self <: Eot](x: Self) {
     
-    @scala.inline
-    def setDoteot(value: String): Self = StObject.set(x, ".eot", value.asInstanceOf[js.Any])
+    inline def setDoteot(value: String): Self = StObject.set(x, ".eot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotgif(value: String): Self = StObject.set(x, ".gif", value.asInstanceOf[js.Any])
+    inline def setDotgif(value: String): Self = StObject.set(x, ".gif", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotjpeg(value: String): Self = StObject.set(x, ".jpeg", value.asInstanceOf[js.Any])
+    inline def setDotjpeg(value: String): Self = StObject.set(x, ".jpeg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotjpg(value: String): Self = StObject.set(x, ".jpg", value.asInstanceOf[js.Any])
+    inline def setDotjpg(value: String): Self = StObject.set(x, ".jpg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotpng(value: String): Self = StObject.set(x, ".png", value.asInstanceOf[js.Any])
+    inline def setDotpng(value: String): Self = StObject.set(x, ".png", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotsvg(value: String): Self = StObject.set(x, ".svg", value.asInstanceOf[js.Any])
+    inline def setDotsvg(value: String): Self = StObject.set(x, ".svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotttf(value: String): Self = StObject.set(x, ".ttf", value.asInstanceOf[js.Any])
+    inline def setDotttf(value: String): Self = StObject.set(x, ".ttf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotwoff(value: String): Self = StObject.set(x, ".woff", value.asInstanceOf[js.Any])
+    inline def setDotwoff(value: String): Self = StObject.set(x, ".woff", value.asInstanceOf[js.Any])
   }
 }

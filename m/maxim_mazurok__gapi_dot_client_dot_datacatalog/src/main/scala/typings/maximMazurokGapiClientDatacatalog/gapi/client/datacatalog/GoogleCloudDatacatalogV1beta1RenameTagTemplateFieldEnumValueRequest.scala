@@ -11,19 +11,15 @@ trait GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest extend
 }
 object GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequestMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldEnumValueRequest](x: Self) {
     
-    @scala.inline
-    def setNewEnumValueDisplayName(value: String): Self = StObject.set(x, "newEnumValueDisplayName", value.asInstanceOf[js.Any])
+    inline def setNewEnumValueDisplayName(value: String): Self = StObject.set(x, "newEnumValueDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewEnumValueDisplayNameUndefined: Self = StObject.set(x, "newEnumValueDisplayName", js.undefined)
+    inline def setNewEnumValueDisplayNameUndefined: Self = StObject.set(x, "newEnumValueDisplayName", js.undefined)
   }
 }

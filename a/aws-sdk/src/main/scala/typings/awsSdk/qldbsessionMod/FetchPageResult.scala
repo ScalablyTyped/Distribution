@@ -13,19 +13,15 @@ trait FetchPageResult extends StObject {
 }
 object FetchPageResult {
   
-  @scala.inline
-  def apply(): FetchPageResult = {
+  inline def apply(): FetchPageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FetchPageResult]
   }
   
-  @scala.inline
-  implicit class FetchPageResultMutableBuilder[Self <: FetchPageResult] (val x: Self) extends AnyVal {
+  extension [Self <: FetchPageResult](x: Self) {
     
-    @scala.inline
-    def setPage(value: Page): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Page): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "Page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "Page", js.undefined)
   }
 }

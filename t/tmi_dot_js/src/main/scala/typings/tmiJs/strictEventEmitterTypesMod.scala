@@ -147,32 +147,24 @@ object strictEventEmitterTypesMod {
   }
   object TypeRecord {
     
-    @scala.inline
-    def apply[T, U, V](): TypeRecord[T, U, V] = {
+    inline def apply[T, U, V](): TypeRecord[T, U, V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypeRecord[T, U, V]]
     }
     
-    @scala.inline
-    implicit class TypeRecordMutableBuilder[Self <: TypeRecord[?, ?, ?], T, U, V] (val x: Self & (TypeRecord[T, U, V])) extends AnyVal {
+    extension [Self <: TypeRecord[?, ?, ?], T, U, V](x: Self & (TypeRecord[T, U, V])) {
       
-      @scala.inline
-      def setSpace_emitType(value: V): Self = StObject.set(x, " _emitType", value.asInstanceOf[js.Any])
+      inline def setSpace_emitType(value: V): Self = StObject.set(x, " _emitType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpace_emitTypeUndefined: Self = StObject.set(x, " _emitType", js.undefined)
+      inline def setSpace_emitTypeUndefined: Self = StObject.set(x, " _emitType", js.undefined)
       
-      @scala.inline
-      def setSpace_emitterType(value: T): Self = StObject.set(x, " _emitterType", value.asInstanceOf[js.Any])
+      inline def setSpace_emitterType(value: T): Self = StObject.set(x, " _emitterType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpace_emitterTypeUndefined: Self = StObject.set(x, " _emitterType", js.undefined)
+      inline def setSpace_emitterTypeUndefined: Self = StObject.set(x, " _emitterType", js.undefined)
       
-      @scala.inline
-      def setSpace_eventsType(value: U): Self = StObject.set(x, " _eventsType", value.asInstanceOf[js.Any])
+      inline def setSpace_eventsType(value: U): Self = StObject.set(x, " _eventsType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpace_eventsTypeUndefined: Self = StObject.set(x, " _eventsType", js.undefined)
+      inline def setSpace_eventsTypeUndefined: Self = StObject.set(x, " _eventsType", js.undefined)
     }
   }
   

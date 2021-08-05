@@ -19,8 +19,7 @@ trait AssetFileName extends StObject {
 }
 object AssetFileName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assetFileName: String,
     chunkId: String,
     format: InternalModuleFormat,
@@ -31,22 +30,16 @@ object AssetFileName {
     __obj.asInstanceOf[AssetFileName]
   }
   
-  @scala.inline
-  implicit class AssetFileNameMutableBuilder[Self <: AssetFileName] (val x: Self) extends AnyVal {
+  extension [Self <: AssetFileName](x: Self) {
     
-    @scala.inline
-    def setAssetFileName(value: String): Self = StObject.set(x, "assetFileName", value.asInstanceOf[js.Any])
+    inline def setAssetFileName(value: String): Self = StObject.set(x, "assetFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkId(value: String): Self = StObject.set(x, "chunkId", value.asInstanceOf[js.Any])
+    inline def setChunkId(value: String): Self = StObject.set(x, "chunkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: InternalModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: InternalModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+    inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeAssetPath(value: String): Self = StObject.set(x, "relativeAssetPath", value.asInstanceOf[js.Any])
+    inline def setRelativeAssetPath(value: String): Self = StObject.set(x, "relativeAssetPath", value.asInstanceOf[js.Any])
   }
 }

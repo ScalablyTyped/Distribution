@@ -43,52 +43,37 @@ trait GetInsightSummariesRequest extends StObject {
 }
 object GetInsightSummariesRequest {
   
-  @scala.inline
-  def apply(EndTime: Timestamp, StartTime: Timestamp): GetInsightSummariesRequest = {
+  inline def apply(EndTime: Timestamp, StartTime: Timestamp): GetInsightSummariesRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightSummariesRequest]
   }
   
-  @scala.inline
-  implicit class GetInsightSummariesRequestMutableBuilder[Self <: GetInsightSummariesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInsightSummariesRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
+    inline def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
+    inline def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: GetInsightSummariesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: GetInsightSummariesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStates(value: InsightStateList): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
+    inline def setStates(value: InsightStateList): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
+    inline def setStatesUndefined: Self = StObject.set(x, "States", js.undefined)
     
-    @scala.inline
-    def setStatesVarargs(value: InsightState*): Self = StObject.set(x, "States", js.Array(value :_*))
+    inline def setStatesVarargs(value: InsightState*): Self = StObject.set(x, "States", js.Array(value :_*))
   }
 }

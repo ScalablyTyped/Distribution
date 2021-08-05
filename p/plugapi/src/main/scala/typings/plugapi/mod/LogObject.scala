@@ -10,16 +10,13 @@ trait LogObject extends StObject {
 }
 object LogObject {
   
-  @scala.inline
-  def apply(log: () => Unit): LogObject = {
+  inline def apply(log: () => Unit): LogObject = {
     val __obj = js.Dynamic.literal(log = js.Any.fromFunction0(log))
     __obj.asInstanceOf[LogObject]
   }
   
-  @scala.inline
-  implicit class LogObjectMutableBuilder[Self <: LogObject] (val x: Self) extends AnyVal {
+  extension [Self <: LogObject](x: Self) {
     
-    @scala.inline
-    def setLog(value: () => Unit): Self = StObject.set(x, "log", js.Any.fromFunction0(value))
+    inline def setLog(value: () => Unit): Self = StObject.set(x, "log", js.Any.fromFunction0(value))
   }
 }

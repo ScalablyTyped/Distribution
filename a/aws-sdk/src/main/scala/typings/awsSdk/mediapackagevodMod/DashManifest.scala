@@ -30,43 +30,31 @@ trait DashManifest extends StObject {
 }
 object DashManifest {
   
-  @scala.inline
-  def apply(): DashManifest = {
+  inline def apply(): DashManifest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashManifest]
   }
   
-  @scala.inline
-  implicit class DashManifestMutableBuilder[Self <: DashManifest] (val x: Self) extends AnyVal {
+  extension [Self <: DashManifest](x: Self) {
     
-    @scala.inline
-    def setManifestLayout(value: ManifestLayout): Self = StObject.set(x, "ManifestLayout", value.asInstanceOf[js.Any])
+    inline def setManifestLayout(value: ManifestLayout): Self = StObject.set(x, "ManifestLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestLayoutUndefined: Self = StObject.set(x, "ManifestLayout", js.undefined)
+    inline def setManifestLayoutUndefined: Self = StObject.set(x, "ManifestLayout", js.undefined)
     
-    @scala.inline
-    def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
+    inline def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
+    inline def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
     
-    @scala.inline
-    def setMinBufferTimeSeconds(value: integer): Self = StObject.set(x, "MinBufferTimeSeconds", value.asInstanceOf[js.Any])
+    inline def setMinBufferTimeSeconds(value: integer): Self = StObject.set(x, "MinBufferTimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinBufferTimeSecondsUndefined: Self = StObject.set(x, "MinBufferTimeSeconds", js.undefined)
+    inline def setMinBufferTimeSecondsUndefined: Self = StObject.set(x, "MinBufferTimeSeconds", js.undefined)
     
-    @scala.inline
-    def setProfile(value: Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
     
-    @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
+    inline def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
+    inline def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
   }
 }

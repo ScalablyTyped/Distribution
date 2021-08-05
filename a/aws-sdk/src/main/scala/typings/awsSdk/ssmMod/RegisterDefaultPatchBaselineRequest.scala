@@ -13,16 +13,13 @@ trait RegisterDefaultPatchBaselineRequest extends StObject {
 }
 object RegisterDefaultPatchBaselineRequest {
   
-  @scala.inline
-  def apply(BaselineId: BaselineId): RegisterDefaultPatchBaselineRequest = {
+  inline def apply(BaselineId: BaselineId): RegisterDefaultPatchBaselineRequest = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDefaultPatchBaselineRequest]
   }
   
-  @scala.inline
-  implicit class RegisterDefaultPatchBaselineRequestMutableBuilder[Self <: RegisterDefaultPatchBaselineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDefaultPatchBaselineRequest](x: Self) {
     
-    @scala.inline
-    def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
+    inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
   }
 }

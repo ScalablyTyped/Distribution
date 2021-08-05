@@ -12,25 +12,19 @@ trait DocsOnly extends StObject {
 }
 object DocsOnly {
   
-  @scala.inline
-  def apply(): DocsOnly = {
+  inline def apply(): DocsOnly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocsOnly]
   }
   
-  @scala.inline
-  implicit class DocsOnlyMutableBuilder[Self <: DocsOnly] (val x: Self) extends AnyVal {
+  extension [Self <: DocsOnly](x: Self) {
     
-    @scala.inline
-    def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+    inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
+    inline def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
     
-    @scala.inline
-    def setViewMode(value: typings.storybookApi.addonsMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: typings.storybookApi.addonsMod.ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+    inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }
 }

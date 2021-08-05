@@ -63,73 +63,51 @@ trait SchemaNotification extends StObject {
 }
 object SchemaNotification {
   
-  @scala.inline
-  def apply(): SchemaNotification = {
+  inline def apply(): SchemaNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNotification]
   }
   
-  @scala.inline
-  implicit class SchemaNotificationMutableBuilder[Self <: SchemaNotification] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNotification](x: Self) {
     
-    @scala.inline
-    def setAppRestrictionsSchemaChangeEvent(value: SchemaAppRestrictionsSchemaChangeEvent): Self = StObject.set(x, "appRestrictionsSchemaChangeEvent", value.asInstanceOf[js.Any])
+    inline def setAppRestrictionsSchemaChangeEvent(value: SchemaAppRestrictionsSchemaChangeEvent): Self = StObject.set(x, "appRestrictionsSchemaChangeEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppRestrictionsSchemaChangeEventUndefined: Self = StObject.set(x, "appRestrictionsSchemaChangeEvent", js.undefined)
+    inline def setAppRestrictionsSchemaChangeEventUndefined: Self = StObject.set(x, "appRestrictionsSchemaChangeEvent", js.undefined)
     
-    @scala.inline
-    def setAppUpdateEvent(value: SchemaAppUpdateEvent): Self = StObject.set(x, "appUpdateEvent", value.asInstanceOf[js.Any])
+    inline def setAppUpdateEvent(value: SchemaAppUpdateEvent): Self = StObject.set(x, "appUpdateEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUpdateEventUndefined: Self = StObject.set(x, "appUpdateEvent", js.undefined)
+    inline def setAppUpdateEventUndefined: Self = StObject.set(x, "appUpdateEvent", js.undefined)
     
-    @scala.inline
-    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+    inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
+    inline def setEnterpriseIdUndefined: Self = StObject.set(x, "enterpriseId", js.undefined)
     
-    @scala.inline
-    def setInstallFailureEvent(value: SchemaInstallFailureEvent): Self = StObject.set(x, "installFailureEvent", value.asInstanceOf[js.Any])
+    inline def setInstallFailureEvent(value: SchemaInstallFailureEvent): Self = StObject.set(x, "installFailureEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallFailureEventUndefined: Self = StObject.set(x, "installFailureEvent", js.undefined)
+    inline def setInstallFailureEventUndefined: Self = StObject.set(x, "installFailureEvent", js.undefined)
     
-    @scala.inline
-    def setNewDeviceEvent(value: SchemaNewDeviceEvent): Self = StObject.set(x, "newDeviceEvent", value.asInstanceOf[js.Any])
+    inline def setNewDeviceEvent(value: SchemaNewDeviceEvent): Self = StObject.set(x, "newDeviceEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewDeviceEventUndefined: Self = StObject.set(x, "newDeviceEvent", js.undefined)
+    inline def setNewDeviceEventUndefined: Self = StObject.set(x, "newDeviceEvent", js.undefined)
     
-    @scala.inline
-    def setNewPermissionsEvent(value: SchemaNewPermissionsEvent): Self = StObject.set(x, "newPermissionsEvent", value.asInstanceOf[js.Any])
+    inline def setNewPermissionsEvent(value: SchemaNewPermissionsEvent): Self = StObject.set(x, "newPermissionsEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPermissionsEventUndefined: Self = StObject.set(x, "newPermissionsEvent", js.undefined)
+    inline def setNewPermissionsEventUndefined: Self = StObject.set(x, "newPermissionsEvent", js.undefined)
     
-    @scala.inline
-    def setNotificationType(value: String): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
+    inline def setNotificationType(value: String): Self = StObject.set(x, "notificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
+    inline def setNotificationTypeUndefined: Self = StObject.set(x, "notificationType", js.undefined)
     
-    @scala.inline
-    def setProductApprovalEvent(value: SchemaProductApprovalEvent): Self = StObject.set(x, "productApprovalEvent", value.asInstanceOf[js.Any])
+    inline def setProductApprovalEvent(value: SchemaProductApprovalEvent): Self = StObject.set(x, "productApprovalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductApprovalEventUndefined: Self = StObject.set(x, "productApprovalEvent", js.undefined)
+    inline def setProductApprovalEventUndefined: Self = StObject.set(x, "productApprovalEvent", js.undefined)
     
-    @scala.inline
-    def setProductAvailabilityChangeEvent(value: SchemaProductAvailabilityChangeEvent): Self = StObject.set(x, "productAvailabilityChangeEvent", value.asInstanceOf[js.Any])
+    inline def setProductAvailabilityChangeEvent(value: SchemaProductAvailabilityChangeEvent): Self = StObject.set(x, "productAvailabilityChangeEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductAvailabilityChangeEventUndefined: Self = StObject.set(x, "productAvailabilityChangeEvent", js.undefined)
+    inline def setProductAvailabilityChangeEventUndefined: Self = StObject.set(x, "productAvailabilityChangeEvent", js.undefined)
     
-    @scala.inline
-    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMillisUndefined: Self = StObject.set(x, "timestampMillis", js.undefined)
+    inline def setTimestampMillisUndefined: Self = StObject.set(x, "timestampMillis", js.undefined)
   }
 }

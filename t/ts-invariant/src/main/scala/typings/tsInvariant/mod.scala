@@ -14,22 +14,17 @@ object mod {
   
   object default {
     
-    @scala.inline
-    def apply(condition: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def apply(condition: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply(condition: js.Any, message: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(condition: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def apply(condition: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(condition: js.Any, message: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("ts-invariant", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("ts-invariant", "InvariantError")
@@ -51,27 +46,21 @@ object mod {
   
   object invariant {
     
-    @scala.inline
-    def apply(condition: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def apply(condition: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply(condition: js.Any, message: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(condition: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def apply(condition: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(condition: js.Any, message: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("ts-invariant", "invariant")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("ts-invariant", "process")
   @js.native
   def process: Process = js.native
-  @scala.inline
-  def process_=(x: Process): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("process")(x.asInstanceOf[js.Any])
+  inline def process_=(x: Process): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("process")(x.asInstanceOf[js.Any])
 }

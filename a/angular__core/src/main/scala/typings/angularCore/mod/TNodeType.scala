@@ -39,35 +39,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TNodeType extends StObject
 object TNodeType {
   
-  @scala.inline
-  def AnyContainer: `12` = 12.asInstanceOf[`12`]
+  inline def AnyContainer: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def AnyRNode: `3` = 3.asInstanceOf[`3`]
+  inline def AnyRNode: `3` = 3.asInstanceOf[`3`]
   
   /**
     * The TNode contains information about an {@link LContainer} for embedded views.
     */
-  @scala.inline
-  def Container: `4` = 4.asInstanceOf[`4`]
+  inline def Container: `4` = 4.asInstanceOf[`4`]
   
   /**
     * The TNode contains information about a DOM element aka {@link RElement}.
     */
-  @scala.inline
-  def Element: `2` = 2.asInstanceOf[`2`]
+  inline def Element: `2` = 2.asInstanceOf[`2`]
   
   /**
     * The TNode contains information about an `<ng-container>` element {@link RNode}.
     */
-  @scala.inline
-  def ElementContainer: `8` = 8.asInstanceOf[`8`]
+  inline def ElementContainer: `8` = 8.asInstanceOf[`8`]
   
   /**
     * The TNode contains information about an ICU comment used in `i18n`.
     */
-  @scala.inline
-  def Icu: `32` = 32.asInstanceOf[`32`]
+  inline def Icu: `32` = 32.asInstanceOf[`32`]
   
   /**
     * Special node type representing a placeholder for future `TNode` at this location.
@@ -82,18 +76,15 @@ object TNodeType {
     * location. Seeing a `Placeholder` `TNode` already there tells the system that it should reuse
     * existing `TNode` (rather than create a new one) and just update the missing information.
     */
-  @scala.inline
-  def Placeholder: `64` = 64.asInstanceOf[`64`]
+  inline def Placeholder: `64` = 64.asInstanceOf[`64`]
   
   /**
     * The TNode contains information about an `<ng-content>` projection
     */
-  @scala.inline
-  def Projection: `16` = 16.asInstanceOf[`16`]
+  inline def Projection: `16` = 16.asInstanceOf[`16`]
   
   /**
     * The TNode contains information about a DOM element aka {@link RText}.
     */
-  @scala.inline
-  def Text: `1` = 1.asInstanceOf[`1`]
+  inline def Text: `1` = 1.asInstanceOf[`1`]
 }

@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Schema extends StObject
 object Schema {
   
-  @scala.inline
-  def ReferenceObject($ref: String): typings.openapiTypes.mod.OpenAPIV2.ReferenceObject = {
+  inline def ReferenceObject($ref: String): typings.openapiTypes.mod.OpenAPIV2.ReferenceObject = {
     val __obj = js.Dynamic.literal($ref = $ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.openapiTypes.mod.OpenAPIV2.ReferenceObject]
   }
   
-  @scala.inline
-  def SchemaObject(): typings.openapiTypes.mod.OpenAPIV2.SchemaObject = {
+  inline def SchemaObject(): typings.openapiTypes.mod.OpenAPIV2.SchemaObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.openapiTypes.mod.OpenAPIV2.SchemaObject]
   }

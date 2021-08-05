@@ -34,7 +34,7 @@ object forgeMod {
     def getAll[T](name: String): js.Array[T] = js.native
     def getAll[T](name: String, args: Arguments): js.Array[T] = js.native
     
-    var getMatchingBindings: js.Any = js.native
+    /* private */ var getMatchingBindings: js.Any = js.native
     
     def getOne[T](name: String): T = js.native
     def getOne[T](name: String, hint: js.Any): T = js.native

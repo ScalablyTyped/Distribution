@@ -12,19 +12,15 @@ trait LiftRequest extends StObject {
 }
 object LiftRequest {
   
-  @scala.inline
-  def apply(draggableId: DraggableId, scrollOptions: ScrollOptions): LiftRequest = {
+  inline def apply(draggableId: DraggableId, scrollOptions: ScrollOptions): LiftRequest = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], scrollOptions = scrollOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiftRequest]
   }
   
-  @scala.inline
-  implicit class LiftRequestMutableBuilder[Self <: LiftRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LiftRequest](x: Self) {
     
-    @scala.inline
-    def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
+    inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOptions(value: ScrollOptions): Self = StObject.set(x, "scrollOptions", value.asInstanceOf[js.Any])
+    inline def setScrollOptions(value: ScrollOptions): Self = StObject.set(x, "scrollOptions", value.asInstanceOf[js.Any])
   }
 }

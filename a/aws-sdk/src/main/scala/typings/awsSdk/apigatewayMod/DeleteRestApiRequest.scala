@@ -13,16 +13,13 @@ trait DeleteRestApiRequest extends StObject {
 }
 object DeleteRestApiRequest {
   
-  @scala.inline
-  def apply(restApiId: String): DeleteRestApiRequest = {
+  inline def apply(restApiId: String): DeleteRestApiRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRestApiRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRestApiRequestMutableBuilder[Self <: DeleteRestApiRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRestApiRequest](x: Self) {
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

@@ -44,8 +44,7 @@ object WiFiDirect {
         * @return An asynchronous retrieval operation. On successful completion, returns an instance of WiFiDirectService specific to the desired service instance, advertised by the indicated device.
         */
       /* static member */
-      @scala.inline
-      def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectService] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectService]]
+      inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectService] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.Services.WiFiDirectService]]
       
       /**
         * Gets an Advanced Query Syntax (AQS) string to be used to find Wi-Fi Direct Service advertisers for a particular service.
@@ -53,8 +52,7 @@ object WiFiDirect {
         * @return The AQS string for the requested advertiser query.
         */
       /* static member */
-      @scala.inline
-      def getSelector(serviceName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelector")(serviceName.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def getSelector(serviceName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelector")(serviceName.asInstanceOf[js.Any]).asInstanceOf[String]
       /**
         * Gets an Advanced Query Syntax (AQS) string to be used to find Wi-Fi Direct Service advertisers for a particular service, where a given byte sequence appears in the advertiser's service information blob.
         * @param serviceName The service name to be found.
@@ -62,8 +60,7 @@ object WiFiDirect {
         * @return The AQS string for the requested advertiser query.
         */
       /* static member */
-      @scala.inline
-      def getSelector(serviceName: String, serviceInfoFilter: IBuffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelector")(serviceName.asInstanceOf[js.Any], serviceInfoFilter.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def getSelector(serviceName: String, serviceInfoFilter: IBuffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelector")(serviceName.asInstanceOf[js.Any], serviceInfoFilter.asInstanceOf[js.Any])).asInstanceOf[String]
     }
     
     /** Values used for WiFiDirectServiceAdvertiser.AdvertisementStatus . */
@@ -462,8 +459,7 @@ object WiFiDirect {
       * @return A value specifying a pairing kind, for use with the pairing functionality in the Windows.Devices.Enumeration API.
       */
     /* static member */
-    @scala.inline
-    def getDevicePairingKinds(configurationMethod: WiFiDirectConfigurationMethod): DevicePairingKinds = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevicePairingKinds")(configurationMethod.asInstanceOf[js.Any]).asInstanceOf[DevicePairingKinds]
+    inline def getDevicePairingKinds(configurationMethod: WiFiDirectConfigurationMethod): DevicePairingKinds = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevicePairingKinds")(configurationMethod.asInstanceOf[js.Any]).asInstanceOf[DevicePairingKinds]
   }
   
   /** A Wi-FI Direct connection request received by a WiFiDirectConnectionListener . */
@@ -528,8 +524,7 @@ object WiFiDirect {
       * @return An asynchronous operation to retrieve the WiFiDirectDevice that was created.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDevice]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDevice]]
     /**
       * Creates an instance of the WiFiDirectDevice class for the specified device interface id with specific connection parameters.
       * @param deviceId The DeviceInformation Id of a Wi-Fi Direct device.
@@ -537,8 +532,7 @@ object WiFiDirect {
       * @return An asynchronous operation to retrieve the WiFiDirectDevice that was created.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(
+    inline def fromIdAsync(
       deviceId: String,
       connectionParameters: typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectConnectionParameters
     ): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDevice] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any], connectionParameters.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectDevice]]
@@ -548,16 +542,14 @@ object WiFiDirect {
       * @return The class selection string that you can use to enumerate Wi-Fi Direct devices.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
     /**
       * Returns the class selection string that you can use to enumerate Wi-Fi Direct devices for a specific Wi-Fi Direct device selector type.
       * @param type A specific Wi-Fi Direct device selector type.
       * @return The class selection string that you can use to enumerate Wi-Fi Direct devices.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(`type`: WiFiDirectDeviceSelectorType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(`type`: WiFiDirectDeviceSelectorType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Specifies the device selector type for Wi-Fi Direct. */
@@ -622,8 +614,7 @@ object WiFiDirect {
       * @return A array of information elements created from the buffer.
       */
     /* static member */
-    @scala.inline
-    def createFromBuffer(buffer: IBuffer): IVector[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectInformationElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[IVector[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectInformationElement]]
+    inline def createFromBuffer(buffer: IBuffer): IVector[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectInformationElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[IVector[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectInformationElement]]
     
     /**
       * Create an array of information elements from a DeviceInformation object.
@@ -631,8 +622,7 @@ object WiFiDirect {
       * @return A array of information elements created from the device information object.
       */
     /* static member */
-    @scala.inline
-    def createFromDeviceInformation(deviceInformation: DeviceInformation): IVector[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectInformationElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromDeviceInformation")(deviceInformation.asInstanceOf[js.Any]).asInstanceOf[IVector[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectInformationElement]]
+    inline def createFromDeviceInformation(deviceInformation: DeviceInformation): IVector[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectInformationElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromDeviceInformation")(deviceInformation.asInstanceOf[js.Any]).asInstanceOf[IVector[typings.winrtUwp.Windows.Devices.WiFiDirect.WiFiDirectInformationElement]]
   }
   
   /** Settings governing "legacy" mode (non-Wi-Fi Direct connections to the access point being advertised.) */

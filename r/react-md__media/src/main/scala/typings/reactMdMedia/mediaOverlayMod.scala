@@ -26,26 +26,19 @@ object mediaOverlayMod {
   trait MediaOverlayPosition extends StObject
   object MediaOverlayPosition {
     
-    @scala.inline
-    def `absolute-center`: typings.reactMdMedia.reactMdMediaStrings.`absolute-center` = "absolute-center".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.`absolute-center`]
+    inline def `absolute-center`: typings.reactMdMedia.reactMdMediaStrings.`absolute-center` = "absolute-center".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.`absolute-center`]
     
-    @scala.inline
-    def bottom: typings.reactMdMedia.reactMdMediaStrings.bottom = "bottom".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.bottom]
+    inline def bottom: typings.reactMdMedia.reactMdMediaStrings.bottom = "bottom".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.bottom]
     
-    @scala.inline
-    def center: typings.reactMdMedia.reactMdMediaStrings.center = "center".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.center]
+    inline def center: typings.reactMdMedia.reactMdMediaStrings.center = "center".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.center]
     
-    @scala.inline
-    def left: typings.reactMdMedia.reactMdMediaStrings.left = "left".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.left]
+    inline def left: typings.reactMdMedia.reactMdMediaStrings.left = "left".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.left]
     
-    @scala.inline
-    def middle: typings.reactMdMedia.reactMdMediaStrings.middle = "middle".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.middle]
+    inline def middle: typings.reactMdMedia.reactMdMediaStrings.middle = "middle".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.middle]
     
-    @scala.inline
-    def right: typings.reactMdMedia.reactMdMediaStrings.right = "right".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.right]
+    inline def right: typings.reactMdMedia.reactMdMediaStrings.right = "right".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.right]
     
-    @scala.inline
-    def top: typings.reactMdMedia.reactMdMediaStrings.top = "top".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.top]
+    inline def top: typings.reactMdMedia.reactMdMediaStrings.top = "top".asInstanceOf[typings.reactMdMedia.reactMdMediaStrings.top]
   }
   
   trait MediaOverlayProps
@@ -59,20 +52,16 @@ object mediaOverlayMod {
   }
   object MediaOverlayProps {
     
-    @scala.inline
-    def apply(): MediaOverlayProps = {
+    inline def apply(): MediaOverlayProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MediaOverlayProps]
     }
     
-    @scala.inline
-    implicit class MediaOverlayPropsMutableBuilder[Self <: MediaOverlayProps] (val x: Self) extends AnyVal {
+    extension [Self <: MediaOverlayProps](x: Self) {
       
-      @scala.inline
-      def setPosition(value: MediaOverlayPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: MediaOverlayPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
 }

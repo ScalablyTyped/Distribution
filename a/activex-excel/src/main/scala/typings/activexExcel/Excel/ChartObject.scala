@@ -44,7 +44,7 @@ trait ChartObject extends StObject {
   
   var Enabled: Boolean = js.native
   
-  @JSName("Excel.ChartObject_typekey")
+  /* private */ @JSName("Excel.ChartObject_typekey")
   var ExcelDotChartObject_typekey: ChartObject = js.native
   
   var Height: Double = js.native

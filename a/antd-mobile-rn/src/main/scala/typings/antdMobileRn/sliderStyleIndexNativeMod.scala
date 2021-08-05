@@ -16,13 +16,11 @@ object sliderStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/slider/style/index.native", "default.maximum")
     @js.native
     def maximum: ColorString = js.native
-    @scala.inline
-    def maximum_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maximum")(x.asInstanceOf[js.Any])
+    inline def maximum_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maximum")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/slider/style/index.native", "default.minimum")
     @js.native
     def minimum: ColorString = js.native
-    @scala.inline
-    def minimum_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minimum")(x.asInstanceOf[js.Any])
+    inline def minimum_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minimum")(x.asInstanceOf[js.Any])
   }
 }

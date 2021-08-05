@@ -20,25 +20,19 @@ trait TcpConnectionDetails extends StObject {
 }
 object TcpConnectionDetails {
   
-  @scala.inline
-  def apply(destIP: String, destPort: Double, srcIP: String, srcPort: Double): TcpConnectionDetails = {
+  inline def apply(destIP: String, destPort: Double, srcIP: String, srcPort: Double): TcpConnectionDetails = {
     val __obj = js.Dynamic.literal(destIP = destIP.asInstanceOf[js.Any], destPort = destPort.asInstanceOf[js.Any], srcIP = srcIP.asInstanceOf[js.Any], srcPort = srcPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpConnectionDetails]
   }
   
-  @scala.inline
-  implicit class TcpConnectionDetailsMutableBuilder[Self <: TcpConnectionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TcpConnectionDetails](x: Self) {
     
-    @scala.inline
-    def setDestIP(value: String): Self = StObject.set(x, "destIP", value.asInstanceOf[js.Any])
+    inline def setDestIP(value: String): Self = StObject.set(x, "destIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestPort(value: Double): Self = StObject.set(x, "destPort", value.asInstanceOf[js.Any])
+    inline def setDestPort(value: Double): Self = StObject.set(x, "destPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcIP(value: String): Self = StObject.set(x, "srcIP", value.asInstanceOf[js.Any])
+    inline def setSrcIP(value: String): Self = StObject.set(x, "srcIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcPort(value: Double): Self = StObject.set(x, "srcPort", value.asInstanceOf[js.Any])
+    inline def setSrcPort(value: Double): Self = StObject.set(x, "srcPort", value.asInstanceOf[js.Any])
   }
 }

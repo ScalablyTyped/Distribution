@@ -22,25 +22,19 @@ trait ContainerImage extends StObject {
 }
 object ContainerImage {
   
-  @scala.inline
-  def apply(names: Input[js.Array[Input[String]]]): ContainerImage = {
+  inline def apply(names: Input[js.Array[Input[String]]]): ContainerImage = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerImage]
   }
   
-  @scala.inline
-  implicit class ContainerImageMutableBuilder[Self <: ContainerImage] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerImage](x: Self) {
     
-    @scala.inline
-    def setNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: Input[String]*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: Input[String]*): Self = StObject.set(x, "names", js.Array(value :_*))
     
-    @scala.inline
-    def setSizeBytes(value: Input[Double]): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: Input[Double]): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

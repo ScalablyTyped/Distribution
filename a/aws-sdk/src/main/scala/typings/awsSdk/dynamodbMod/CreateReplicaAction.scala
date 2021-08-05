@@ -13,16 +13,13 @@ trait CreateReplicaAction extends StObject {
 }
 object CreateReplicaAction {
   
-  @scala.inline
-  def apply(RegionName: RegionName): CreateReplicaAction = {
+  inline def apply(RegionName: RegionName): CreateReplicaAction = {
     val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReplicaAction]
   }
   
-  @scala.inline
-  implicit class CreateReplicaActionMutableBuilder[Self <: CreateReplicaAction] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReplicaAction](x: Self) {
     
-    @scala.inline
-    def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
   }
 }

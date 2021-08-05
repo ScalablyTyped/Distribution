@@ -12,25 +12,19 @@ trait DialogflowV1Button extends StObject {
 }
 object DialogflowV1Button {
   
-  @scala.inline
-  def apply(): DialogflowV1Button = {
+  inline def apply(): DialogflowV1Button = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1Button]
   }
   
-  @scala.inline
-  implicit class DialogflowV1ButtonMutableBuilder[Self <: DialogflowV1Button] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1Button](x: Self) {
     
-    @scala.inline
-    def setPostback(value: String): Self = StObject.set(x, "postback", value.asInstanceOf[js.Any])
+    inline def setPostback(value: String): Self = StObject.set(x, "postback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostbackUndefined: Self = StObject.set(x, "postback", js.undefined)
+    inline def setPostbackUndefined: Self = StObject.set(x, "postback", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

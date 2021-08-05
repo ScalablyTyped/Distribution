@@ -13,19 +13,15 @@ trait CreateFleetOutput extends StObject {
 }
 object CreateFleetOutput {
   
-  @scala.inline
-  def apply(): CreateFleetOutput = {
+  inline def apply(): CreateFleetOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFleetOutput]
   }
   
-  @scala.inline
-  implicit class CreateFleetOutputMutableBuilder[Self <: CreateFleetOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFleetOutput](x: Self) {
     
-    @scala.inline
-    def setFleetAttributes(value: FleetAttributes): Self = StObject.set(x, "FleetAttributes", value.asInstanceOf[js.Any])
+    inline def setFleetAttributes(value: FleetAttributes): Self = StObject.set(x, "FleetAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetAttributesUndefined: Self = StObject.set(x, "FleetAttributes", js.undefined)
+    inline def setFleetAttributesUndefined: Self = StObject.set(x, "FleetAttributes", js.undefined)
   }
 }

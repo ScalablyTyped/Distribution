@@ -11,27 +11,23 @@ object reservedWordsNumbers {
   sealed trait `3`
     extends StObject
        with Dialect
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `5`
     extends StObject
        with Dialect
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
   sealed trait `6`
     extends StObject
        with Dialect
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
+  inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
   sealed trait `7`
     extends StObject
        with Dialect
-  @scala.inline
-  def `7`: `7` = 7.asInstanceOf[`7`]
+  inline def `7`: `7` = 7.asInstanceOf[`7`]
 }

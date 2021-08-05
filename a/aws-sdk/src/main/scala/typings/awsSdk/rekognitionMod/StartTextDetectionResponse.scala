@@ -13,19 +13,15 @@ trait StartTextDetectionResponse extends StObject {
 }
 object StartTextDetectionResponse {
   
-  @scala.inline
-  def apply(): StartTextDetectionResponse = {
+  inline def apply(): StartTextDetectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartTextDetectionResponse]
   }
   
-  @scala.inline
-  implicit class StartTextDetectionResponseMutableBuilder[Self <: StartTextDetectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartTextDetectionResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

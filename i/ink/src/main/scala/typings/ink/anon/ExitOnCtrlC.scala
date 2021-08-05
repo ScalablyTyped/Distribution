@@ -27,8 +27,7 @@ trait ExitOnCtrlC extends StObject {
 }
 object ExitOnCtrlC {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: Validator[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray],
     exitOnCtrlC: Validator[Boolean],
     onExit: Validator[js.Function1[/* repeated */ js.Any, js.Any]],
@@ -42,31 +41,22 @@ object ExitOnCtrlC {
     __obj.asInstanceOf[ExitOnCtrlC]
   }
   
-  @scala.inline
-  implicit class ExitOnCtrlCMutableBuilder[Self <: ExitOnCtrlC] (val x: Self) extends AnyVal {
+  extension [Self <: ExitOnCtrlC](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Validator[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Validator[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitOnCtrlC(value: Validator[Boolean]): Self = StObject.set(x, "exitOnCtrlC", value.asInstanceOf[js.Any])
+    inline def setExitOnCtrlC(value: Validator[Boolean]): Self = StObject.set(x, "exitOnCtrlC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnExit(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+    inline def setOnExit(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStderr(value: Validator[js.Object]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    inline def setStderr(value: Validator[js.Object]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdin(value: Validator[js.Object]): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+    inline def setStdin(value: Validator[js.Object]): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdout(value: Validator[js.Object]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: Validator[js.Object]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteToStderr(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "writeToStderr", value.asInstanceOf[js.Any])
+    inline def setWriteToStderr(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "writeToStderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteToStdout(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "writeToStdout", value.asInstanceOf[js.Any])
+    inline def setWriteToStdout(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "writeToStdout", value.asInstanceOf[js.Any])
   }
 }

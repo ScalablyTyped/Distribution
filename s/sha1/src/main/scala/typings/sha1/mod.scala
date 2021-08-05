@@ -17,22 +17,14 @@ object mod {
     * @param options - an options object
     * @returns the resultant SHA1 hash of the given message
     */
-  @scala.inline
-  def apply(message: String): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(message: String, options: Sha1AsBytesOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  @scala.inline
-  def apply(message: String, options: Sha1AsStringOptions): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(message: String, options: Sha1Options): String | Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Uint8Array]
-  @scala.inline
-  def apply(message: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(message: Buffer, options: Sha1AsBytesOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  @scala.inline
-  def apply(message: Buffer, options: Sha1AsStringOptions): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(message: Buffer, options: Sha1Options): String | Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Uint8Array]
+  inline def apply(message: String): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(message: String, options: Sha1AsBytesOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def apply(message: String, options: Sha1AsStringOptions): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(message: String, options: Sha1Options): String | Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Uint8Array]
+  inline def apply(message: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(message: Buffer, options: Sha1AsBytesOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def apply(message: Buffer, options: Sha1AsStringOptions): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(message: Buffer, options: Sha1Options): String | Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Uint8Array]
   
   @JSImport("sha1", JSImport.Namespace)
   @js.native
@@ -48,23 +40,18 @@ object mod {
   }
   object Sha1AsBytesOptions {
     
-    @scala.inline
-    def apply(): Sha1AsBytesOptions = {
+    inline def apply(): Sha1AsBytesOptions = {
       val __obj = js.Dynamic.literal(asBytes = true)
       __obj.asInstanceOf[Sha1AsBytesOptions]
     }
     
-    @scala.inline
-    implicit class Sha1AsBytesOptionsMutableBuilder[Self <: Sha1AsBytesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: Sha1AsBytesOptions](x: Self) {
       
-      @scala.inline
-      def setAsBytes(value: `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
+      inline def setAsBytes(value: `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsString(value: `false`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      inline def setAsString(value: `false`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
+      inline def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
     }
   }
   
@@ -78,26 +65,20 @@ object mod {
   }
   object Sha1AsStringOptions {
     
-    @scala.inline
-    def apply(): Sha1AsStringOptions = {
+    inline def apply(): Sha1AsStringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Sha1AsStringOptions]
     }
     
-    @scala.inline
-    implicit class Sha1AsStringOptionsMutableBuilder[Self <: Sha1AsStringOptions] (val x: Self) extends AnyVal {
+    extension [Self <: Sha1AsStringOptions](x: Self) {
       
-      @scala.inline
-      def setAsBytes(value: `false`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
+      inline def setAsBytes(value: `false`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsBytesUndefined: Self = StObject.set(x, "asBytes", js.undefined)
+      inline def setAsBytesUndefined: Self = StObject.set(x, "asBytes", js.undefined)
       
-      @scala.inline
-      def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      inline def setAsString(value: Boolean): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
+      inline def setAsStringUndefined: Self = StObject.set(x, "asString", js.undefined)
     }
   }
   
@@ -108,14 +89,12 @@ object mod {
   trait Sha1Options extends StObject
   object Sha1Options {
     
-    @scala.inline
-    def Sha1AsBytesOptions(): typings.sha1.mod.Sha1AsBytesOptions = {
+    inline def Sha1AsBytesOptions(): typings.sha1.mod.Sha1AsBytesOptions = {
       val __obj = js.Dynamic.literal(asBytes = true)
       __obj.asInstanceOf[typings.sha1.mod.Sha1AsBytesOptions]
     }
     
-    @scala.inline
-    def Sha1AsStringOptions(): typings.sha1.mod.Sha1AsStringOptions = {
+    inline def Sha1AsStringOptions(): typings.sha1.mod.Sha1AsStringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.sha1.mod.Sha1AsStringOptions]
     }

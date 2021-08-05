@@ -12,22 +12,17 @@ trait TextContent extends StObject {
 }
 object TextContent {
   
-  @scala.inline
-  def apply(items: js.Array[TextContentItem], styles: js.Any): TextContent = {
+  inline def apply(items: js.Array[TextContentItem], styles: js.Any): TextContent = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextContent]
   }
   
-  @scala.inline
-  implicit class TextContentMutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
+  extension [Self <: TextContent](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[TextContentItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[TextContentItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: TextContentItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: TextContentItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

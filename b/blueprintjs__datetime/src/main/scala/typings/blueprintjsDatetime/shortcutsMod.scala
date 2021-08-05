@@ -23,9 +23,9 @@ object shortcutsMod {
       */
     def this(props: IShortcutsProps, context: js.Any) = this()
     
-    var getShorcutClickHandler: js.Any = js.native
+    /* private */ var getShorcutClickHandler: js.Any = js.native
     
-    var isShortcutInRange: js.Any = js.native
+    /* private */ var isShortcutInRange: js.Any = js.native
   }
   /* static members */
   object Shortcuts {
@@ -37,8 +37,7 @@ object shortcutsMod {
     @JSImport("@blueprintjs/datetime/lib/esm/shortcuts", "Shortcuts.defaultProps")
     @js.native
     def defaultProps: PartialIShortcutsProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIShortcutsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIShortcutsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IDatePickerShortcut
@@ -53,17 +52,14 @@ object shortcutsMod {
   }
   object IDatePickerShortcut {
     
-    @scala.inline
-    def apply(date: Date, label: String): IDatePickerShortcut = {
+    inline def apply(date: Date, label: String): IDatePickerShortcut = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDatePickerShortcut]
     }
     
-    @scala.inline
-    implicit class IDatePickerShortcutMutableBuilder[Self <: IDatePickerShortcut] (val x: Self) extends AnyVal {
+    extension [Self <: IDatePickerShortcut](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,17 +75,14 @@ object shortcutsMod {
   }
   object IDateRangeShortcut {
     
-    @scala.inline
-    def apply(dateRange: DateRange, label: String): IDateRangeShortcut = {
+    inline def apply(dateRange: DateRange, label: String): IDateRangeShortcut = {
       val __obj = js.Dynamic.literal(dateRange = dateRange.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDateRangeShortcut]
     }
     
-    @scala.inline
-    implicit class IDateRangeShortcutMutableBuilder[Self <: IDateRangeShortcut] (val x: Self) extends AnyVal {
+    extension [Self <: IDateRangeShortcut](x: Self) {
       
-      @scala.inline
-      def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+      inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,23 +102,18 @@ object shortcutsMod {
   }
   object IDateShortcutBase {
     
-    @scala.inline
-    def apply(label: String): IDateShortcutBase = {
+    inline def apply(label: String): IDateShortcutBase = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDateShortcutBase]
     }
     
-    @scala.inline
-    implicit class IDateShortcutBaseMutableBuilder[Self <: IDateShortcutBase] (val x: Self) extends AnyVal {
+    extension [Self <: IDateShortcutBase](x: Self) {
       
-      @scala.inline
-      def setIncludeTime(value: Boolean): Self = StObject.set(x, "includeTime", value.asInstanceOf[js.Any])
+      inline def setIncludeTime(value: Boolean): Self = StObject.set(x, "includeTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeTimeUndefined: Self = StObject.set(x, "includeTime", js.undefined)
+      inline def setIncludeTimeUndefined: Self = StObject.set(x, "includeTime", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,8 +142,7 @@ object shortcutsMod {
   }
   object IShortcutsProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowSingleDayRange: Boolean,
       maxDate: Date,
       minDate: Date,
@@ -167,41 +154,29 @@ object shortcutsMod {
       __obj.asInstanceOf[IShortcutsProps]
     }
     
-    @scala.inline
-    implicit class IShortcutsPropsMutableBuilder[Self <: IShortcutsProps] (val x: Self) extends AnyVal {
+    extension [Self <: IShortcutsProps](x: Self) {
       
-      @scala.inline
-      def setAllowSingleDayRange(value: Boolean): Self = StObject.set(x, "allowSingleDayRange", value.asInstanceOf[js.Any])
+      inline def setAllowSingleDayRange(value: Boolean): Self = StObject.set(x, "allowSingleDayRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnShortcutClick(value: (IDateRangeShortcut, Double) => Unit): Self = StObject.set(x, "onShortcutClick", js.Any.fromFunction2(value))
+      inline def setOnShortcutClick(value: (IDateRangeShortcut, Double) => Unit): Self = StObject.set(x, "onShortcutClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
+      inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      @scala.inline
-      def setShortcuts(value: js.Array[IDateRangeShortcut] | `true`): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+      inline def setShortcuts(value: js.Array[IDateRangeShortcut] | `true`): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortcutsVarargs(value: IDateRangeShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
+      inline def setShortcutsVarargs(value: IDateRangeShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
       
-      @scala.inline
-      def setTimePrecision(value: TimePrecision): Self = StObject.set(x, "timePrecision", value.asInstanceOf[js.Any])
+      inline def setTimePrecision(value: TimePrecision): Self = StObject.set(x, "timePrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSingleDateShortcuts(value: Boolean): Self = StObject.set(x, "useSingleDateShortcuts", value.asInstanceOf[js.Any])
+      inline def setUseSingleDateShortcuts(value: Boolean): Self = StObject.set(x, "useSingleDateShortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSingleDateShortcutsUndefined: Self = StObject.set(x, "useSingleDateShortcuts", js.undefined)
+      inline def setUseSingleDateShortcutsUndefined: Self = StObject.set(x, "useSingleDateShortcuts", js.undefined)
     }
   }
 }

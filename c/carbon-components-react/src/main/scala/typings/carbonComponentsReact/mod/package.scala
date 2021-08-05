@@ -5,900 +5,718 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Accordion: typings.react.mod.FC[typings.carbonComponentsReact.accordionAccordionMod.AccordionProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Accordion").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.accordionAccordionMod.AccordionProps]]
+inline def Accordion: typings.react.mod.FC[typings.carbonComponentsReact.accordionAccordionMod.AccordionProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Accordion").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.accordionAccordionMod.AccordionProps]]
 
-@scala.inline
-def AccordionSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.accordionSkeletonMod.AccordionSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AccordionSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.accordionSkeletonMod.AccordionSkeletonProps]]
+inline def AccordionSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.accordionSkeletonMod.AccordionSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AccordionSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.accordionSkeletonMod.AccordionSkeletonProps]]
 
-@scala.inline
-def AspectRatio(props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioDefaultProps): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
-@scala.inline
-def AspectRatio[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioCustomComponentProps[T]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
+inline def AspectRatio(props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioDefaultProps): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
+inline def AspectRatio[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioCustomComponentProps[T]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_a(
+inline def AspectRatio_a(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.a]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_abbr(
+inline def AspectRatio_abbr(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.abbr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_address(
+inline def AspectRatio_address(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.address]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_animate(
+inline def AspectRatio_animate(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animate]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_animateMotion(
+inline def AspectRatio_animateMotion(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_animateTransform(
+inline def AspectRatio_animateTransform(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_area(
+inline def AspectRatio_area(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.area]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_article(
+inline def AspectRatio_article(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.article]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_aside(
+inline def AspectRatio_aside(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.aside]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_audio(
+inline def AspectRatio_audio(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.audio]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_b(
+inline def AspectRatio_b(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.b]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_base(
+inline def AspectRatio_base(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.base]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_bdi(
+inline def AspectRatio_bdi(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdi]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_bdo(
+inline def AspectRatio_bdo(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdo]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_big(
+inline def AspectRatio_big(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.big]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_blockquote(
+inline def AspectRatio_blockquote(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_body(
+inline def AspectRatio_body(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.body]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_br(
+inline def AspectRatio_br(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.br]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_button(
+inline def AspectRatio_button(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.button]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_canvas(
+inline def AspectRatio_canvas(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.canvas]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_caption(
+inline def AspectRatio_caption(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.caption]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_circle(
+inline def AspectRatio_circle(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.circle]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_cite(
+inline def AspectRatio_cite(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.cite]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_clipPath(
+inline def AspectRatio_clipPath(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_code(
+inline def AspectRatio_code(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.code]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_col(
+inline def AspectRatio_col(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.col]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_colgroup(
+inline def AspectRatio_colgroup(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_data(
+inline def AspectRatio_data(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.data]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_datalist(
+inline def AspectRatio_datalist(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.datalist]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_dd(
+inline def AspectRatio_dd(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dd]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_defs(
+inline def AspectRatio_defs(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.defs]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_del(
+inline def AspectRatio_del(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.del]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_desc(
+inline def AspectRatio_desc(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.desc_]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_details(
+inline def AspectRatio_details(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.details]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_dfn(
+inline def AspectRatio_dfn(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dfn]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_dialog(
+inline def AspectRatio_dialog(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dialog]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_div(
+inline def AspectRatio_div(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.div]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_dl(
+inline def AspectRatio_dl(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dl]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_dt(
+inline def AspectRatio_dt(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dt]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_ellipse(
+inline def AspectRatio_ellipse(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_em(
+inline def AspectRatio_em(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.em]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_embed(
+inline def AspectRatio_embed(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.embed]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feBlend(
+inline def AspectRatio_feBlend(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feColorMatrix(
+inline def AspectRatio_feColorMatrix(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feComponentTransfer(
+inline def AspectRatio_feComponentTransfer(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feComposite(
+inline def AspectRatio_feComposite(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feConvolveMatrix(
+inline def AspectRatio_feConvolveMatrix(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feDiffuseLighting(
+inline def AspectRatio_feDiffuseLighting(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feDisplacementMap(
+inline def AspectRatio_feDisplacementMap(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feDistantLight(
+inline def AspectRatio_feDistantLight(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feDropShadow(
+inline def AspectRatio_feDropShadow(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feFlood(
+inline def AspectRatio_feFlood(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feFuncA(
+inline def AspectRatio_feFuncA(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feFuncB(
+inline def AspectRatio_feFuncB(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feFuncG(
+inline def AspectRatio_feFuncG(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feFuncR(
+inline def AspectRatio_feFuncR(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feGaussianBlur(
+inline def AspectRatio_feGaussianBlur(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feImage(
+inline def AspectRatio_feImage(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feImage]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feMerge(
+inline def AspectRatio_feMerge(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feMergeNode(
+inline def AspectRatio_feMergeNode(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feMorphology(
+inline def AspectRatio_feMorphology(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feOffset(
+inline def AspectRatio_feOffset(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_fePointLight(
+inline def AspectRatio_fePointLight(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feSpecularLighting(
+inline def AspectRatio_feSpecularLighting(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feSpotLight(
+inline def AspectRatio_feSpotLight(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feTile(
+inline def AspectRatio_feTile(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTile]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_feTurbulence(
+inline def AspectRatio_feTurbulence(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_fieldset(
+inline def AspectRatio_fieldset(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_figcaption(
+inline def AspectRatio_figcaption(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_figure(
+inline def AspectRatio_figure(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figure]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_filter(
+inline def AspectRatio_filter(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.filter]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_footer(
+inline def AspectRatio_footer(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.footer]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_foreignObject(
+inline def AspectRatio_foreignObject(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_form(
+inline def AspectRatio_form(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.form]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_g(
+inline def AspectRatio_g(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.g]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_h1(
+inline def AspectRatio_h1(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h1]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_h2(
+inline def AspectRatio_h2(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h2]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_h3(
+inline def AspectRatio_h3(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h3]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_h4(
+inline def AspectRatio_h4(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h4]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_h5(
+inline def AspectRatio_h5(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h5]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_h6(
+inline def AspectRatio_h6(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h6]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_head(
+inline def AspectRatio_head(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.head]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_header(
+inline def AspectRatio_header(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.header]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_hgroup(
+inline def AspectRatio_hgroup(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_hr(
+inline def AspectRatio_hr(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_html(
+inline def AspectRatio_html(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.html]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_i(
+inline def AspectRatio_i(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.i]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_iframe(
+inline def AspectRatio_iframe(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.iframe]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_image(
+inline def AspectRatio_image(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.image]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_img(
+inline def AspectRatio_img(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.img]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_input(
+inline def AspectRatio_input(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.input]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_ins(
+inline def AspectRatio_ins(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ins]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_kbd(
+inline def AspectRatio_kbd(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.kbd]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_keygen(
+inline def AspectRatio_keygen(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.keygen]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_label(
+inline def AspectRatio_label(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.label]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_legend(
+inline def AspectRatio_legend(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.legend]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_li(
+inline def AspectRatio_li(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.li]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_line(
+inline def AspectRatio_line(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.line]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_linearGradient(
+inline def AspectRatio_linearGradient(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_link(
+inline def AspectRatio_link(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.link]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_main(
+inline def AspectRatio_main(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.main]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_map(
+inline def AspectRatio_map(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.map]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_mark(
+inline def AspectRatio_mark(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mark]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_marker(
+inline def AspectRatio_marker(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.marker]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_mask(
+inline def AspectRatio_mask(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mask]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_menu(
+inline def AspectRatio_menu(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menu]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_menuitem(
+inline def AspectRatio_menuitem(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_meta(
+inline def AspectRatio_meta(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meta]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_metadata(
+inline def AspectRatio_metadata(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.metadata]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_meter(
+inline def AspectRatio_meter(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meter]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_mpath(
+inline def AspectRatio_mpath(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mpath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_nav(
+inline def AspectRatio_nav(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.nav]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_noindex(
+inline def AspectRatio_noindex(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noindex]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_noscript(
+inline def AspectRatio_noscript(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noscript]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_object(
+inline def AspectRatio_object(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`object`]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_ol(
+inline def AspectRatio_ol(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ol]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_optgroup(
+inline def AspectRatio_optgroup(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_option(
+inline def AspectRatio_option(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.option]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_output(
+inline def AspectRatio_output(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.output]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_p(
+inline def AspectRatio_p(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.p]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_param(
+inline def AspectRatio_param(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.param]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_path(
+inline def AspectRatio_path(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.path]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_pattern(
+inline def AspectRatio_pattern(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pattern]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_picture(
+inline def AspectRatio_picture(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.picture]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_polygon(
+inline def AspectRatio_polygon(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polygon]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_polyline(
+inline def AspectRatio_polyline(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polyline]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_pre(
+inline def AspectRatio_pre(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pre]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_progress(
+inline def AspectRatio_progress(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.progress]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_q(
+inline def AspectRatio_q(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.q]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_radialGradient(
+inline def AspectRatio_radialGradient(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_rect(
+inline def AspectRatio_rect(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rect]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_rp(
+inline def AspectRatio_rp(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rp]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_rt(
+inline def AspectRatio_rt(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rt]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_ruby(
+inline def AspectRatio_ruby(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ruby]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_s(
+inline def AspectRatio_s(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.s]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_samp(
+inline def AspectRatio_samp(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.samp]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_script(
+inline def AspectRatio_script(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.script]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_section(
+inline def AspectRatio_section(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.section]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_select(
+inline def AspectRatio_select(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.select]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_slot(
+inline def AspectRatio_slot(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.slot]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_small(
+inline def AspectRatio_small(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_source(
+inline def AspectRatio_source(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.source]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_span(
+inline def AspectRatio_span(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.span]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_stop(
+inline def AspectRatio_stop(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.stop]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_strong(
+inline def AspectRatio_strong(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.strong]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_style(
+inline def AspectRatio_style(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.style]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_sub(
+inline def AspectRatio_sub(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sub]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_summary(
+inline def AspectRatio_summary(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.summary]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_sup(
+inline def AspectRatio_sup(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_svg(
+inline def AspectRatio_svg(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.svg]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_switch(
+inline def AspectRatio_switch(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.switch]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_symbol(
+inline def AspectRatio_symbol(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.symbol]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_table(
+inline def AspectRatio_table(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.table]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_tbody(
+inline def AspectRatio_tbody(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tbody]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_td(
+inline def AspectRatio_td(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.td]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_template(
+inline def AspectRatio_template(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.template]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_text(
+inline def AspectRatio_text(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.text]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_textPath(
+inline def AspectRatio_textPath(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textPath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_textarea(
+inline def AspectRatio_textarea(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textarea]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_tfoot(
+inline def AspectRatio_tfoot(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_th(
+inline def AspectRatio_th(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.th]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_thead(
+inline def AspectRatio_thead(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.thead]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_time(
+inline def AspectRatio_time(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.time]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_title(
+inline def AspectRatio_title(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.title]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_tr(
+inline def AspectRatio_tr(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_track(
+inline def AspectRatio_track(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.track]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_tspan(
+inline def AspectRatio_tspan(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tspan]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_u(
+inline def AspectRatio_u(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.u]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_ul(
+inline def AspectRatio_ul(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ul]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_use(
+inline def AspectRatio_use(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.use]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_var(
+inline def AspectRatio_var(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`var`]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_video(
+inline def AspectRatio_video(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.video]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_view(
+inline def AspectRatio_view(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.view]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_wbr(
+inline def AspectRatio_wbr(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.wbr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def AspectRatio_webview(
+inline def AspectRatio_webview(
   props: typings.carbonComponentsReact.aspectRatioAspectRatioMod.AspectRatioIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.webview]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("AspectRatio")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Breadcrumb: typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbBreadcrumbMod.BreadcrumbProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Breadcrumb").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbBreadcrumbMod.BreadcrumbProps]]
+inline def Breadcrumb: typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbBreadcrumbMod.BreadcrumbProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Breadcrumb").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbBreadcrumbMod.BreadcrumbProps]]
 
-@scala.inline
-def BreadcrumbItem: typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbItemMod.BreadcrumbItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BreadcrumbItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbItemMod.BreadcrumbItemProps]]
+inline def BreadcrumbItem: typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbItemMod.BreadcrumbItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BreadcrumbItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbItemMod.BreadcrumbItemProps]]
 
-@scala.inline
-def BreadcrumbSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbSkeletonMod.BreadcrumbSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BreadcrumbSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbSkeletonMod.BreadcrumbSkeletonProps]]
+inline def BreadcrumbSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbSkeletonMod.BreadcrumbSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BreadcrumbSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.breadcrumbSkeletonMod.BreadcrumbSkeletonProps]]
 
 // tslint:disable:unified-signatures breaks certain usages
 //
@@ -910,8153 +728,6826 @@ def BreadcrumbSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.bread
 // export const DefaultButton = Button as React.FC<ButtonDefaultProps>;
 // export const AnchorButton = Button as React.FC<ButtonAnchorProps>;
 // or just create a wrapper component.
-@scala.inline
-def Button(
+inline def Button(
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   typings.std.HTMLAnchorElement | typings.std.HTMLButtonElement, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonAnchorProps & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps & typings.carbonComponentsReact.buttonButtonMod.ButtonDefaultProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def ButtonSet: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def ButtonSet: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLDivElement, 
 typings.carbonComponentsReact.buttonSetButtonSetMod.ButtonSetProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ButtonSet").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLDivElement, 
 typings.carbonComponentsReact.buttonSetButtonSetMod.ButtonSetProps]]
 
-@scala.inline
-def ButtonSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.buttonSkeletonMod.ButtonSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ButtonSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.buttonSkeletonMod.ButtonSkeletonProps]]
+inline def ButtonSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.buttonSkeletonMod.ButtonSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ButtonSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.buttonSkeletonMod.ButtonSkeletonProps]]
 
-@scala.inline
-def Button_T_JSXElementConstructorAnyR[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */, R](
+inline def Button_T_JSXElementConstructorAnyR[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */, R](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonCustomComponentProps[T] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_a[R /* <: typings.std.HTMLElement */](
+inline def Button_a[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.a] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_abbr[R /* <: typings.std.HTMLElement */](
+inline def Button_abbr[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.abbr] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_address[R /* <: typings.std.HTMLElement */](
+inline def Button_address[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.address] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_animate[R /* <: typings.std.HTMLElement */](
+inline def Button_animate[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animate] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_animateMotion[R /* <: typings.std.HTMLElement */](
+inline def Button_animateMotion[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_animateTransform[R /* <: typings.std.HTMLElement */](
+inline def Button_animateTransform[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_area[R /* <: typings.std.HTMLElement */](
+inline def Button_area[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.area] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_article[R /* <: typings.std.HTMLElement */](
+inline def Button_article[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.article] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_aside[R /* <: typings.std.HTMLElement */](
+inline def Button_aside[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.aside] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_audio[R /* <: typings.std.HTMLElement */](
+inline def Button_audio[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.audio] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_b[R /* <: typings.std.HTMLElement */](
+inline def Button_b[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.b] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_base[R /* <: typings.std.HTMLElement */](
+inline def Button_base[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.base] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_bdi[R /* <: typings.std.HTMLElement */](
+inline def Button_bdi[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdi] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_bdo[R /* <: typings.std.HTMLElement */](
+inline def Button_bdo[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdo] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_big[R /* <: typings.std.HTMLElement */](
+inline def Button_big[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.big] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_blockquote[R /* <: typings.std.HTMLElement */](
+inline def Button_blockquote[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_body[R /* <: typings.std.HTMLElement */](
+inline def Button_body[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.body] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_br[R /* <: typings.std.HTMLElement */](
+inline def Button_br[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.br] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_button[R /* <: typings.std.HTMLElement */](
+inline def Button_button[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.button] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_canvas[R /* <: typings.std.HTMLElement */](
+inline def Button_canvas[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.canvas] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_caption[R /* <: typings.std.HTMLElement */](
+inline def Button_caption[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.caption] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_circle[R /* <: typings.std.HTMLElement */](
+inline def Button_circle[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.circle] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_cite[R /* <: typings.std.HTMLElement */](
+inline def Button_cite[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.cite] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_clipPath[R /* <: typings.std.HTMLElement */](
+inline def Button_clipPath[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_code[R /* <: typings.std.HTMLElement */](
+inline def Button_code[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.code] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_col[R /* <: typings.std.HTMLElement */](
+inline def Button_col[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.col] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_colgroup[R /* <: typings.std.HTMLElement */](
+inline def Button_colgroup[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_data[R /* <: typings.std.HTMLElement */](
+inline def Button_data[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.data] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_datalist[R /* <: typings.std.HTMLElement */](
+inline def Button_datalist[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.datalist] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_dd[R /* <: typings.std.HTMLElement */](
+inline def Button_dd[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dd] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_defs[R /* <: typings.std.HTMLElement */](
+inline def Button_defs[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.defs] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_del[R /* <: typings.std.HTMLElement */](
+inline def Button_del[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.del] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_desc[R /* <: typings.std.HTMLElement */](
+inline def Button_desc[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.desc_] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_details[R /* <: typings.std.HTMLElement */](
+inline def Button_details[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.details] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_dfn[R /* <: typings.std.HTMLElement */](
+inline def Button_dfn[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dfn] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_dialog[R /* <: typings.std.HTMLElement */](
+inline def Button_dialog[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dialog] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_div[R /* <: typings.std.HTMLElement */](
+inline def Button_div[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.div] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_dl[R /* <: typings.std.HTMLElement */](
+inline def Button_dl[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dl] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_dt[R /* <: typings.std.HTMLElement */](
+inline def Button_dt[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dt] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_ellipse[R /* <: typings.std.HTMLElement */](
+inline def Button_ellipse[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_em[R /* <: typings.std.HTMLElement */](
+inline def Button_em[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.em] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_embed[R /* <: typings.std.HTMLElement */](
+inline def Button_embed[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.embed] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feBlend[R /* <: typings.std.HTMLElement */](
+inline def Button_feBlend[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feColorMatrix[R /* <: typings.std.HTMLElement */](
+inline def Button_feColorMatrix[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feComponentTransfer[R /* <: typings.std.HTMLElement */](
+inline def Button_feComponentTransfer[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feComposite[R /* <: typings.std.HTMLElement */](
+inline def Button_feComposite[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feConvolveMatrix[R /* <: typings.std.HTMLElement */](
+inline def Button_feConvolveMatrix[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feDiffuseLighting[R /* <: typings.std.HTMLElement */](
+inline def Button_feDiffuseLighting[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feDisplacementMap[R /* <: typings.std.HTMLElement */](
+inline def Button_feDisplacementMap[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feDistantLight[R /* <: typings.std.HTMLElement */](
+inline def Button_feDistantLight[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feDropShadow[R /* <: typings.std.HTMLElement */](
+inline def Button_feDropShadow[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feFlood[R /* <: typings.std.HTMLElement */](
+inline def Button_feFlood[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feFuncA[R /* <: typings.std.HTMLElement */](
+inline def Button_feFuncA[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feFuncB[R /* <: typings.std.HTMLElement */](
+inline def Button_feFuncB[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feFuncG[R /* <: typings.std.HTMLElement */](
+inline def Button_feFuncG[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feFuncR[R /* <: typings.std.HTMLElement */](
+inline def Button_feFuncR[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feGaussianBlur[R /* <: typings.std.HTMLElement */](
+inline def Button_feGaussianBlur[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feImage[R /* <: typings.std.HTMLElement */](
+inline def Button_feImage[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feImage] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feMerge[R /* <: typings.std.HTMLElement */](
+inline def Button_feMerge[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feMergeNode[R /* <: typings.std.HTMLElement */](
+inline def Button_feMergeNode[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feMorphology[R /* <: typings.std.HTMLElement */](
+inline def Button_feMorphology[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feOffset[R /* <: typings.std.HTMLElement */](
+inline def Button_feOffset[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_fePointLight[R /* <: typings.std.HTMLElement */](
+inline def Button_fePointLight[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feSpecularLighting[R /* <: typings.std.HTMLElement */](
+inline def Button_feSpecularLighting[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feSpotLight[R /* <: typings.std.HTMLElement */](
+inline def Button_feSpotLight[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feTile[R /* <: typings.std.HTMLElement */](
+inline def Button_feTile[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTile] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_feTurbulence[R /* <: typings.std.HTMLElement */](
+inline def Button_feTurbulence[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_fieldset[R /* <: typings.std.HTMLElement */](
+inline def Button_fieldset[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_figcaption[R /* <: typings.std.HTMLElement */](
+inline def Button_figcaption[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_figure[R /* <: typings.std.HTMLElement */](
+inline def Button_figure[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figure] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_filter[R /* <: typings.std.HTMLElement */](
+inline def Button_filter[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.filter] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_footer[R /* <: typings.std.HTMLElement */](
+inline def Button_footer[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.footer] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_foreignObject[R /* <: typings.std.HTMLElement */](
+inline def Button_foreignObject[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_form[R /* <: typings.std.HTMLElement */](
+inline def Button_form[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.form] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_g[R /* <: typings.std.HTMLElement */](
+inline def Button_g[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.g] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_h1[R /* <: typings.std.HTMLElement */](
+inline def Button_h1[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h1] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_h2[R /* <: typings.std.HTMLElement */](
+inline def Button_h2[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h2] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_h3[R /* <: typings.std.HTMLElement */](
+inline def Button_h3[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h3] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_h4[R /* <: typings.std.HTMLElement */](
+inline def Button_h4[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h4] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_h5[R /* <: typings.std.HTMLElement */](
+inline def Button_h5[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h5] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_h6[R /* <: typings.std.HTMLElement */](
+inline def Button_h6[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h6] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_head[R /* <: typings.std.HTMLElement */](
+inline def Button_head[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.head] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_header[R /* <: typings.std.HTMLElement */](
+inline def Button_header[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.header] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_hgroup[R /* <: typings.std.HTMLElement */](
+inline def Button_hgroup[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_hr[R /* <: typings.std.HTMLElement */](
+inline def Button_hr[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hr] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_html[R /* <: typings.std.HTMLElement */](
+inline def Button_html[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.html] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_i[R /* <: typings.std.HTMLElement */](
+inline def Button_i[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.i] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_iframe[R /* <: typings.std.HTMLElement */](
+inline def Button_iframe[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.iframe] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_image[R /* <: typings.std.HTMLElement */](
+inline def Button_image[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.image] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_img[R /* <: typings.std.HTMLElement */](
+inline def Button_img[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.img] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_input[R /* <: typings.std.HTMLElement */](
+inline def Button_input[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.input] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_ins[R /* <: typings.std.HTMLElement */](
+inline def Button_ins[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ins] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_kbd[R /* <: typings.std.HTMLElement */](
+inline def Button_kbd[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.kbd] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_keygen[R /* <: typings.std.HTMLElement */](
+inline def Button_keygen[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.keygen] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_label[R /* <: typings.std.HTMLElement */](
+inline def Button_label[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.label] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_legend[R /* <: typings.std.HTMLElement */](
+inline def Button_legend[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.legend] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_li[R /* <: typings.std.HTMLElement */](
+inline def Button_li[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.li] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_line[R /* <: typings.std.HTMLElement */](
+inline def Button_line[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.line] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_linearGradient[R /* <: typings.std.HTMLElement */](
+inline def Button_linearGradient[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_link[R /* <: typings.std.HTMLElement */](
+inline def Button_link[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.link] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_main[R /* <: typings.std.HTMLElement */](
+inline def Button_main[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.main] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_map[R /* <: typings.std.HTMLElement */](
+inline def Button_map[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.map] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_mark[R /* <: typings.std.HTMLElement */](
+inline def Button_mark[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mark] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_marker[R /* <: typings.std.HTMLElement */](
+inline def Button_marker[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.marker] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_mask[R /* <: typings.std.HTMLElement */](
+inline def Button_mask[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mask] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_menu[R /* <: typings.std.HTMLElement */](
+inline def Button_menu[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menu] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_menuitem[R /* <: typings.std.HTMLElement */](
+inline def Button_menuitem[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_meta[R /* <: typings.std.HTMLElement */](
+inline def Button_meta[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meta] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_metadata[R /* <: typings.std.HTMLElement */](
+inline def Button_metadata[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.metadata] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_meter[R /* <: typings.std.HTMLElement */](
+inline def Button_meter[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meter] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_mpath[R /* <: typings.std.HTMLElement */](
+inline def Button_mpath[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mpath] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_nav[R /* <: typings.std.HTMLElement */](
+inline def Button_nav[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.nav] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_noindex[R /* <: typings.std.HTMLElement */](
+inline def Button_noindex[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noindex] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_noscript[R /* <: typings.std.HTMLElement */](
+inline def Button_noscript[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noscript] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_object[R /* <: typings.std.HTMLElement */](
+inline def Button_object[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`object`] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_ol[R /* <: typings.std.HTMLElement */](
+inline def Button_ol[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ol] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_optgroup[R /* <: typings.std.HTMLElement */](
+inline def Button_optgroup[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_option[R /* <: typings.std.HTMLElement */](
+inline def Button_option[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.option] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_output[R /* <: typings.std.HTMLElement */](
+inline def Button_output[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.output] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_p[R /* <: typings.std.HTMLElement */](
+inline def Button_p[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.p] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_param[R /* <: typings.std.HTMLElement */](
+inline def Button_param[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.param] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_path[R /* <: typings.std.HTMLElement */](
+inline def Button_path[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.path] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_pattern[R /* <: typings.std.HTMLElement */](
+inline def Button_pattern[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pattern] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_picture[R /* <: typings.std.HTMLElement */](
+inline def Button_picture[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.picture] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_polygon[R /* <: typings.std.HTMLElement */](
+inline def Button_polygon[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polygon] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_polyline[R /* <: typings.std.HTMLElement */](
+inline def Button_polyline[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polyline] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_pre[R /* <: typings.std.HTMLElement */](
+inline def Button_pre[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pre] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_progress[R /* <: typings.std.HTMLElement */](
+inline def Button_progress[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.progress] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_q[R /* <: typings.std.HTMLElement */](
+inline def Button_q[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.q] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_radialGradient[R /* <: typings.std.HTMLElement */](
+inline def Button_radialGradient[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_rect[R /* <: typings.std.HTMLElement */](
+inline def Button_rect[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rect] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_rp[R /* <: typings.std.HTMLElement */](
+inline def Button_rp[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rp] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_rt[R /* <: typings.std.HTMLElement */](
+inline def Button_rt[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rt] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_ruby[R /* <: typings.std.HTMLElement */](
+inline def Button_ruby[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ruby] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_s[R /* <: typings.std.HTMLElement */](
+inline def Button_s[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.s] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_samp[R /* <: typings.std.HTMLElement */](
+inline def Button_samp[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.samp] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_script[R /* <: typings.std.HTMLElement */](
+inline def Button_script[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.script] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_section[R /* <: typings.std.HTMLElement */](
+inline def Button_section[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.section] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_select[R /* <: typings.std.HTMLElement */](
+inline def Button_select[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.select] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_slot[R /* <: typings.std.HTMLElement */](
+inline def Button_slot[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.slot] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_small[R /* <: typings.std.HTMLElement */](
+inline def Button_small[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.small] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_source[R /* <: typings.std.HTMLElement */](
+inline def Button_source[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.source] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_span[R /* <: typings.std.HTMLElement */](
+inline def Button_span[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.span] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_stop[R /* <: typings.std.HTMLElement */](
+inline def Button_stop[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.stop] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_strong[R /* <: typings.std.HTMLElement */](
+inline def Button_strong[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.strong] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_style[R /* <: typings.std.HTMLElement */](
+inline def Button_style[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.style] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_sub[R /* <: typings.std.HTMLElement */](
+inline def Button_sub[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sub] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_summary[R /* <: typings.std.HTMLElement */](
+inline def Button_summary[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.summary] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_sup[R /* <: typings.std.HTMLElement */](
+inline def Button_sup[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sup] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_svg[R /* <: typings.std.HTMLElement */](
+inline def Button_svg[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.svg] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_switch[R /* <: typings.std.HTMLElement */](
+inline def Button_switch[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.switch] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_symbol[R /* <: typings.std.HTMLElement */](
+inline def Button_symbol[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.symbol] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_table[R /* <: typings.std.HTMLElement */](
+inline def Button_table[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.table] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_tbody[R /* <: typings.std.HTMLElement */](
+inline def Button_tbody[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tbody] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_td[R /* <: typings.std.HTMLElement */](
+inline def Button_td[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.td] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_template[R /* <: typings.std.HTMLElement */](
+inline def Button_template[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.template] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_text[R /* <: typings.std.HTMLElement */](
+inline def Button_text[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.text] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_textPath[R /* <: typings.std.HTMLElement */](
+inline def Button_textPath[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textPath] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_textarea[R /* <: typings.std.HTMLElement */](
+inline def Button_textarea[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textarea] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_tfoot[R /* <: typings.std.HTMLElement */](
+inline def Button_tfoot[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_th[R /* <: typings.std.HTMLElement */](
+inline def Button_th[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.th] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_thead[R /* <: typings.std.HTMLElement */](
+inline def Button_thead[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.thead] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_time[R /* <: typings.std.HTMLElement */](
+inline def Button_time[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.time] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_title[R /* <: typings.std.HTMLElement */](
+inline def Button_title[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.title] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_tr[R /* <: typings.std.HTMLElement */](
+inline def Button_tr[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tr] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_track[R /* <: typings.std.HTMLElement */](
+inline def Button_track[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.track] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_tspan[R /* <: typings.std.HTMLElement */](
+inline def Button_tspan[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tspan] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_u[R /* <: typings.std.HTMLElement */](
+inline def Button_u[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.u] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_ul[R /* <: typings.std.HTMLElement */](
+inline def Button_ul[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ul] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_use[R /* <: typings.std.HTMLElement */](
+inline def Button_use[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.use] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_var[R /* <: typings.std.HTMLElement */](
+inline def Button_var[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`var`] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_video[R /* <: typings.std.HTMLElement */](
+inline def Button_video[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.video] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_view[R /* <: typings.std.HTMLElement */](
+inline def Button_view[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.view] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_wbr[R /* <: typings.std.HTMLElement */](
+inline def Button_wbr[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.wbr] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Button_webview[R /* <: typings.std.HTMLElement */](
+inline def Button_webview[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.webview] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Button")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Checkbox: typings.react.mod.RefForwardingComponent[
+inline def Checkbox: typings.react.mod.RefForwardingComponent[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.checkboxCheckboxMod.CheckboxProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Checkbox").asInstanceOf[typings.react.mod.RefForwardingComponent[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.checkboxCheckboxMod.CheckboxProps]]
 
-@scala.inline
-def CheckboxSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.checkboxSkeletonMod.CheckboxSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CheckboxSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.checkboxSkeletonMod.CheckboxSkeletonProps]]
+inline def CheckboxSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.checkboxSkeletonMod.CheckboxSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CheckboxSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.checkboxSkeletonMod.CheckboxSkeletonProps]]
 
 // tslint:disable:unified-signatures
-@scala.inline
-def CodeSnippet(
+inline def CodeSnippet(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.codeSnippetCodeSnippetMod.CodeSnippetDivProps | typings.carbonComponentsReact.codeSnippetCodeSnippetMod.CodeSnippetInlineProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("CodeSnippet")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def CodeSnippetSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.codeSnippetSkeletonMod.CodeSnippetSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CodeSnippetSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.codeSnippetSkeletonMod.CodeSnippetSkeletonProps]]
+inline def CodeSnippetSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.codeSnippetSkeletonMod.CodeSnippetSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CodeSnippetSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.codeSnippetSkeletonMod.CodeSnippetSkeletonProps]]
 
-@scala.inline
-def Column(props: typings.carbonComponentsReact.columnMod.ColumnDefaultProps): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
-@scala.inline
-def Column[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](props: typings.carbonComponentsReact.columnMod.ColumnCustomComponentProps[T]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
+inline def Column(props: typings.carbonComponentsReact.columnMod.ColumnDefaultProps): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
+inline def Column[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](props: typings.carbonComponentsReact.columnMod.ColumnCustomComponentProps[T]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_a(
+inline def Column_a(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.a]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_abbr(
+inline def Column_abbr(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.abbr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_address(
+inline def Column_address(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.address]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_animate(
+inline def Column_animate(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animate]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_animateMotion(
+inline def Column_animateMotion(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_animateTransform(
+inline def Column_animateTransform(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_area(
+inline def Column_area(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.area]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_article(
+inline def Column_article(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.article]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_aside(
+inline def Column_aside(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.aside]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_audio(
+inline def Column_audio(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.audio]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_b(
+inline def Column_b(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.b]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_base(
+inline def Column_base(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.base]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_bdi(
+inline def Column_bdi(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdi]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_bdo(
+inline def Column_bdo(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdo]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_big(
+inline def Column_big(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.big]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_blockquote(
+inline def Column_blockquote(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_body(
+inline def Column_body(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.body]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_br(
+inline def Column_br(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.br]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_button(
+inline def Column_button(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.button]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_canvas(
+inline def Column_canvas(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.canvas]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_caption(
+inline def Column_caption(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.caption]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_circle(
+inline def Column_circle(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.circle]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_cite(
+inline def Column_cite(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.cite]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_clipPath(
+inline def Column_clipPath(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_code(
+inline def Column_code(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.code]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_col(
+inline def Column_col(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.col]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_colgroup(
+inline def Column_colgroup(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_data(
+inline def Column_data(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.data]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_datalist(
+inline def Column_datalist(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.datalist]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_dd(
+inline def Column_dd(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dd]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_defs(
+inline def Column_defs(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.defs]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_del(
+inline def Column_del(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.del]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_desc(
+inline def Column_desc(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.desc_]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_details(
+inline def Column_details(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.details]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_dfn(
+inline def Column_dfn(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dfn]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_dialog(
+inline def Column_dialog(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dialog]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_div(
+inline def Column_div(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.div]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_dl(
+inline def Column_dl(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dl]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_dt(
+inline def Column_dt(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dt]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_ellipse(
+inline def Column_ellipse(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_em(
+inline def Column_em(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.em]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_embed(
+inline def Column_embed(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.embed]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feBlend(
+inline def Column_feBlend(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feColorMatrix(
+inline def Column_feColorMatrix(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feComponentTransfer(
+inline def Column_feComponentTransfer(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feComposite(
+inline def Column_feComposite(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feConvolveMatrix(
+inline def Column_feConvolveMatrix(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feDiffuseLighting(
+inline def Column_feDiffuseLighting(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feDisplacementMap(
+inline def Column_feDisplacementMap(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feDistantLight(
+inline def Column_feDistantLight(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feDropShadow(
+inline def Column_feDropShadow(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feFlood(
+inline def Column_feFlood(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feFuncA(
+inline def Column_feFuncA(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feFuncB(
+inline def Column_feFuncB(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feFuncG(
+inline def Column_feFuncG(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feFuncR(
+inline def Column_feFuncR(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feGaussianBlur(
+inline def Column_feGaussianBlur(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feImage(
+inline def Column_feImage(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feImage]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feMerge(
+inline def Column_feMerge(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feMergeNode(
+inline def Column_feMergeNode(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feMorphology(
+inline def Column_feMorphology(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feOffset(
+inline def Column_feOffset(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_fePointLight(
+inline def Column_fePointLight(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feSpecularLighting(
+inline def Column_feSpecularLighting(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feSpotLight(
+inline def Column_feSpotLight(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feTile(
+inline def Column_feTile(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTile]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_feTurbulence(
+inline def Column_feTurbulence(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_fieldset(
+inline def Column_fieldset(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_figcaption(
+inline def Column_figcaption(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_figure(
+inline def Column_figure(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figure]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_filter(
+inline def Column_filter(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.filter]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_footer(
+inline def Column_footer(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.footer]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_foreignObject(
+inline def Column_foreignObject(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_form(
+inline def Column_form(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.form]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_g(
+inline def Column_g(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.g]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_h1(
+inline def Column_h1(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h1]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_h2(
+inline def Column_h2(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h2]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_h3(
+inline def Column_h3(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h3]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_h4(
+inline def Column_h4(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h4]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_h5(
+inline def Column_h5(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h5]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_h6(
+inline def Column_h6(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h6]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_head(
+inline def Column_head(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.head]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_header(
+inline def Column_header(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.header]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_hgroup(
+inline def Column_hgroup(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_hr(
+inline def Column_hr(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_html(
+inline def Column_html(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.html]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_i(
+inline def Column_i(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.i]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_iframe(
+inline def Column_iframe(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.iframe]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_image(
+inline def Column_image(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.image]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_img(
+inline def Column_img(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.img]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_input(
+inline def Column_input(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.input]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_ins(
+inline def Column_ins(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ins]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_kbd(
+inline def Column_kbd(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.kbd]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_keygen(
+inline def Column_keygen(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.keygen]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_label(
+inline def Column_label(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.label]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_legend(
+inline def Column_legend(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.legend]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_li(
+inline def Column_li(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.li]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_line(
+inline def Column_line(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.line]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_linearGradient(
+inline def Column_linearGradient(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_link(
+inline def Column_link(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.link]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_main(
+inline def Column_main(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.main]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_map(
+inline def Column_map(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.map]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_mark(
+inline def Column_mark(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mark]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_marker(
+inline def Column_marker(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.marker]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_mask(
+inline def Column_mask(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mask]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_menu(
+inline def Column_menu(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menu]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_menuitem(
+inline def Column_menuitem(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_meta(
+inline def Column_meta(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meta]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_metadata(
+inline def Column_metadata(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.metadata]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_meter(
+inline def Column_meter(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meter]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_mpath(
+inline def Column_mpath(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mpath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_nav(
+inline def Column_nav(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.nav]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_noindex(
+inline def Column_noindex(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noindex]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_noscript(
+inline def Column_noscript(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noscript]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_object(
+inline def Column_object(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`object`]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_ol(
+inline def Column_ol(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ol]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_optgroup(
+inline def Column_optgroup(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_option(
+inline def Column_option(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.option]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_output(
+inline def Column_output(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.output]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_p(
+inline def Column_p(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.p]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_param(
+inline def Column_param(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.param]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_path(
+inline def Column_path(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.path]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_pattern(
+inline def Column_pattern(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pattern]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_picture(
+inline def Column_picture(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.picture]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_polygon(
+inline def Column_polygon(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polygon]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_polyline(
+inline def Column_polyline(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polyline]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_pre(
+inline def Column_pre(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pre]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_progress(
+inline def Column_progress(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.progress]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_q(
+inline def Column_q(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.q]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_radialGradient(
+inline def Column_radialGradient(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_rect(
+inline def Column_rect(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rect]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_rp(
+inline def Column_rp(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rp]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_rt(
+inline def Column_rt(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rt]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_ruby(
+inline def Column_ruby(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ruby]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_s(
+inline def Column_s(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.s]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_samp(
+inline def Column_samp(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.samp]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_script(
+inline def Column_script(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.script]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_section(
+inline def Column_section(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.section]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_select(
+inline def Column_select(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.select]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_slot(
+inline def Column_slot(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.slot]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_small(
+inline def Column_small(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_source(
+inline def Column_source(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.source]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_span(
+inline def Column_span(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.span]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_stop(
+inline def Column_stop(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.stop]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_strong(
+inline def Column_strong(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.strong]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_style(
+inline def Column_style(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.style]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_sub(
+inline def Column_sub(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sub]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_summary(
+inline def Column_summary(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.summary]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_sup(
+inline def Column_sup(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_svg(
+inline def Column_svg(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.svg]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_switch(
+inline def Column_switch(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.switch]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_symbol(
+inline def Column_symbol(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.symbol]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_table(
+inline def Column_table(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.table]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_tbody(
+inline def Column_tbody(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tbody]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_td(
+inline def Column_td(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.td]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_template(
+inline def Column_template(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.template]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_text(
+inline def Column_text(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.text]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_textPath(
+inline def Column_textPath(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textPath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_textarea(
+inline def Column_textarea(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textarea]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_tfoot(
+inline def Column_tfoot(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_th(
+inline def Column_th(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.th]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_thead(
+inline def Column_thead(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.thead]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_time(
+inline def Column_time(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.time]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_title(
+inline def Column_title(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.title]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_tr(
+inline def Column_tr(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_track(
+inline def Column_track(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.track]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_tspan(
+inline def Column_tspan(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tspan]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_u(
+inline def Column_u(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.u]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_ul(
+inline def Column_ul(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ul]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_use(
+inline def Column_use(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.use]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_var(
+inline def Column_var(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`var`]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_video(
+inline def Column_video(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.video]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_view(
+inline def Column_view(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.view]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_wbr(
+inline def Column_wbr(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.wbr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Column_webview(
+inline def Column_webview(
   props: typings.carbonComponentsReact.columnMod.ColumnIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.webview]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Content[E /* <: js.Object */](
+inline def Content[E /* <: js.Object */](
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[typings.carbonComponentsReact.contentMod.ContentProps[E]]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def ControlledPasswordInput: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def ControlledPasswordInput: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.controlledPasswordInputMod.ControlledPasswordInputProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ControlledPasswordInput").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.controlledPasswordInputMod.ControlledPasswordInputProps]]
 
-@scala.inline
-def Copy: typings.react.mod.FC[typings.carbonComponentsReact.copyCopyMod.CopyProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Copy").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.copyCopyMod.CopyProps]]
+inline def Copy: typings.react.mod.FC[typings.carbonComponentsReact.copyCopyMod.CopyProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Copy").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.copyCopyMod.CopyProps]]
 
-@scala.inline
-def CopyButton: typings.react.mod.FC[typings.carbonComponentsReact.copyButtonCopyButtonMod.CopyButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CopyButton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.copyButtonCopyButtonMod.CopyButtonProps]]
+inline def CopyButton: typings.react.mod.FC[typings.carbonComponentsReact.copyButtonCopyButtonMod.CopyButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CopyButton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.copyButtonCopyButtonMod.CopyButtonProps]]
 
 // tslint:disable:unified-signatures breaks certain usages
-@scala.inline
-def DangerButton(
+inline def DangerButton(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonAnchorProps | typings.carbonComponentsReact.buttonButtonMod.ButtonDefaultProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_T_JSXElementConstructorAny[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](
+inline def DangerButton_T_JSXElementConstructorAny[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[typings.carbonComponentsReact.buttonButtonMod.ButtonCustomComponentProps[T]]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_a(
+inline def DangerButton_a(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.a]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_abbr(
+inline def DangerButton_abbr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.abbr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_address(
+inline def DangerButton_address(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.address]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_animate(
+inline def DangerButton_animate(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animate]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_animateMotion(
+inline def DangerButton_animateMotion(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_animateTransform(
+inline def DangerButton_animateTransform(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_area(
+inline def DangerButton_area(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.area]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_article(
+inline def DangerButton_article(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.article]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_aside(
+inline def DangerButton_aside(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.aside]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_audio(
+inline def DangerButton_audio(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.audio]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_b(
+inline def DangerButton_b(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.b]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_base(
+inline def DangerButton_base(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.base]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_bdi(
+inline def DangerButton_bdi(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdi]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_bdo(
+inline def DangerButton_bdo(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdo]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_big(
+inline def DangerButton_big(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.big]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_blockquote(
+inline def DangerButton_blockquote(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_body(
+inline def DangerButton_body(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.body]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_br(
+inline def DangerButton_br(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.br]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_button(
+inline def DangerButton_button(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.button]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_canvas(
+inline def DangerButton_canvas(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.canvas]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_caption(
+inline def DangerButton_caption(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.caption]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_circle(
+inline def DangerButton_circle(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.circle]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_cite(
+inline def DangerButton_cite(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.cite]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_clipPath(
+inline def DangerButton_clipPath(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_code(
+inline def DangerButton_code(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.code]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_col(
+inline def DangerButton_col(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.col]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_colgroup(
+inline def DangerButton_colgroup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_data(
+inline def DangerButton_data(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.data]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_datalist(
+inline def DangerButton_datalist(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.datalist]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_dd(
+inline def DangerButton_dd(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dd]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_defs(
+inline def DangerButton_defs(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.defs]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_del(
+inline def DangerButton_del(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.del]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_desc(
+inline def DangerButton_desc(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.desc_]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_details(
+inline def DangerButton_details(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.details]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_dfn(
+inline def DangerButton_dfn(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dfn]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_dialog(
+inline def DangerButton_dialog(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dialog]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_div(
+inline def DangerButton_div(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.div]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_dl(
+inline def DangerButton_dl(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dl]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_dt(
+inline def DangerButton_dt(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dt]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_ellipse(
+inline def DangerButton_ellipse(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_em(
+inline def DangerButton_em(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.em]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_embed(
+inline def DangerButton_embed(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.embed]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feBlend(
+inline def DangerButton_feBlend(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feColorMatrix(
+inline def DangerButton_feColorMatrix(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feComponentTransfer(
+inline def DangerButton_feComponentTransfer(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feComposite(
+inline def DangerButton_feComposite(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feConvolveMatrix(
+inline def DangerButton_feConvolveMatrix(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feDiffuseLighting(
+inline def DangerButton_feDiffuseLighting(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feDisplacementMap(
+inline def DangerButton_feDisplacementMap(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feDistantLight(
+inline def DangerButton_feDistantLight(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feDropShadow(
+inline def DangerButton_feDropShadow(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feFlood(
+inline def DangerButton_feFlood(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feFuncA(
+inline def DangerButton_feFuncA(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feFuncB(
+inline def DangerButton_feFuncB(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feFuncG(
+inline def DangerButton_feFuncG(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feFuncR(
+inline def DangerButton_feFuncR(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feGaussianBlur(
+inline def DangerButton_feGaussianBlur(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feImage(
+inline def DangerButton_feImage(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feImage]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feMerge(
+inline def DangerButton_feMerge(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feMergeNode(
+inline def DangerButton_feMergeNode(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feMorphology(
+inline def DangerButton_feMorphology(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feOffset(
+inline def DangerButton_feOffset(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_fePointLight(
+inline def DangerButton_fePointLight(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feSpecularLighting(
+inline def DangerButton_feSpecularLighting(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feSpotLight(
+inline def DangerButton_feSpotLight(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feTile(
+inline def DangerButton_feTile(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTile]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_feTurbulence(
+inline def DangerButton_feTurbulence(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_fieldset(
+inline def DangerButton_fieldset(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_figcaption(
+inline def DangerButton_figcaption(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_figure(
+inline def DangerButton_figure(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figure]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_filter(
+inline def DangerButton_filter(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.filter]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_footer(
+inline def DangerButton_footer(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.footer]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_foreignObject(
+inline def DangerButton_foreignObject(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_form(
+inline def DangerButton_form(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.form]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_g(
+inline def DangerButton_g(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.g]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_h1(
+inline def DangerButton_h1(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h1]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_h2(
+inline def DangerButton_h2(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h2]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_h3(
+inline def DangerButton_h3(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h3]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_h4(
+inline def DangerButton_h4(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h4]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_h5(
+inline def DangerButton_h5(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h5]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_h6(
+inline def DangerButton_h6(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h6]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_head(
+inline def DangerButton_head(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.head]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_header(
+inline def DangerButton_header(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.header]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_hgroup(
+inline def DangerButton_hgroup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_hr(
+inline def DangerButton_hr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_html(
+inline def DangerButton_html(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.html]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_i(
+inline def DangerButton_i(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.i]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_iframe(
+inline def DangerButton_iframe(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.iframe]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_image(
+inline def DangerButton_image(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.image]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_img(
+inline def DangerButton_img(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.img]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_input(
+inline def DangerButton_input(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.input]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_ins(
+inline def DangerButton_ins(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ins]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_kbd(
+inline def DangerButton_kbd(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.kbd]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_keygen(
+inline def DangerButton_keygen(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.keygen]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_label(
+inline def DangerButton_label(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.label]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_legend(
+inline def DangerButton_legend(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.legend]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_li(
+inline def DangerButton_li(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.li]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_line(
+inline def DangerButton_line(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.line]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_linearGradient(
+inline def DangerButton_linearGradient(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_link(
+inline def DangerButton_link(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.link]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_main(
+inline def DangerButton_main(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.main]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_map(
+inline def DangerButton_map(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.map]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_mark(
+inline def DangerButton_mark(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mark]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_marker(
+inline def DangerButton_marker(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.marker]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_mask(
+inline def DangerButton_mask(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mask]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_menu(
+inline def DangerButton_menu(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menu]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_menuitem(
+inline def DangerButton_menuitem(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_meta(
+inline def DangerButton_meta(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meta]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_metadata(
+inline def DangerButton_metadata(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.metadata]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_meter(
+inline def DangerButton_meter(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meter]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_mpath(
+inline def DangerButton_mpath(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mpath]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_nav(
+inline def DangerButton_nav(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.nav]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_noindex(
+inline def DangerButton_noindex(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noindex]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_noscript(
+inline def DangerButton_noscript(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noscript]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_object(
+inline def DangerButton_object(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`object`]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_ol(
+inline def DangerButton_ol(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ol]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_optgroup(
+inline def DangerButton_optgroup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_option(
+inline def DangerButton_option(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.option]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_output(
+inline def DangerButton_output(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.output]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_p(
+inline def DangerButton_p(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.p]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_param(
+inline def DangerButton_param(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.param]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_path(
+inline def DangerButton_path(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.path]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_pattern(
+inline def DangerButton_pattern(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pattern]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_picture(
+inline def DangerButton_picture(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.picture]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_polygon(
+inline def DangerButton_polygon(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polygon]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_polyline(
+inline def DangerButton_polyline(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polyline]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_pre(
+inline def DangerButton_pre(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pre]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_progress(
+inline def DangerButton_progress(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.progress]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_q(
+inline def DangerButton_q(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.q]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_radialGradient(
+inline def DangerButton_radialGradient(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_rect(
+inline def DangerButton_rect(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rect]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_rp(
+inline def DangerButton_rp(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rp]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_rt(
+inline def DangerButton_rt(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rt]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_ruby(
+inline def DangerButton_ruby(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ruby]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_s(
+inline def DangerButton_s(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.s]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_samp(
+inline def DangerButton_samp(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.samp]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_script(
+inline def DangerButton_script(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.script]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_section(
+inline def DangerButton_section(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.section]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_select(
+inline def DangerButton_select(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.select]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_slot(
+inline def DangerButton_slot(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.slot]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_small(
+inline def DangerButton_small(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_source(
+inline def DangerButton_source(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.source]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_span(
+inline def DangerButton_span(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.span]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_stop(
+inline def DangerButton_stop(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.stop]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_strong(
+inline def DangerButton_strong(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.strong]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_style(
+inline def DangerButton_style(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.style]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_sub(
+inline def DangerButton_sub(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sub]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_summary(
+inline def DangerButton_summary(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.summary]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_sup(
+inline def DangerButton_sup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_svg(
+inline def DangerButton_svg(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.svg]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_switch(
+inline def DangerButton_switch(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.switch]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_symbol(
+inline def DangerButton_symbol(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.symbol]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_table(
+inline def DangerButton_table(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.table]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_tbody(
+inline def DangerButton_tbody(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tbody]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_td(
+inline def DangerButton_td(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.td]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_template(
+inline def DangerButton_template(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.template]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_text(
+inline def DangerButton_text(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.text]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_textPath(
+inline def DangerButton_textPath(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textPath]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_textarea(
+inline def DangerButton_textarea(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textarea]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_tfoot(
+inline def DangerButton_tfoot(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_th(
+inline def DangerButton_th(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.th]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_thead(
+inline def DangerButton_thead(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.thead]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_time(
+inline def DangerButton_time(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.time]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_title(
+inline def DangerButton_title(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.title]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_tr(
+inline def DangerButton_tr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_track(
+inline def DangerButton_track(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.track]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_tspan(
+inline def DangerButton_tspan(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tspan]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_u(
+inline def DangerButton_u(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.u]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_ul(
+inline def DangerButton_ul(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ul]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_use(
+inline def DangerButton_use(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.use]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_var(
+inline def DangerButton_var(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`var`]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_video(
+inline def DangerButton_video(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.video]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_view(
+inline def DangerButton_view(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.view]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_wbr(
+inline def DangerButton_wbr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.wbr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DangerButton_webview(
+inline def DangerButton_webview(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.webview]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DangerButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DataTableSkeleton: typings.react.mod.FC[
+inline def DataTableSkeleton: typings.react.mod.FC[
 typings.carbonComponentsReact.dataTableSkeletonDataTableSkeletonMod.DataTableSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DataTableSkeleton").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.dataTableSkeletonDataTableSkeletonMod.DataTableSkeletonProps]]
 
-@scala.inline
-def DatePickerSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.datePickerSkeletonMod.DatePickerSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DatePickerSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.datePickerSkeletonMod.DatePickerSkeletonProps]]
+inline def DatePickerSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.datePickerSkeletonMod.DatePickerSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DatePickerSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.datePickerSkeletonMod.DatePickerSkeletonProps]]
 
-@scala.inline
-def Dropdown[ItemType](
+inline def Dropdown[ItemType](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   typings.std.HTMLButtonElement, 
   typings.carbonComponentsReact.dropdownDropdownMod.DropdownProps[ItemType]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Dropdown")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def DropdownSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.dropdownSkeletonMod.DropdownSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DropdownSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.dropdownSkeletonMod.DropdownSkeletonProps]]
+inline def DropdownSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.dropdownSkeletonMod.DropdownSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DropdownSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.dropdownSkeletonMod.DropdownSkeletonProps]]
 
-@scala.inline
-def ErrorBoundaryContext: typings.react.mod.Context[typings.carbonComponentsReact.errorBoundaryContextMod.ErrorBoundaryContextValue] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ErrorBoundaryContext").asInstanceOf[typings.react.mod.Context[typings.carbonComponentsReact.errorBoundaryContextMod.ErrorBoundaryContextValue]]
+inline def ErrorBoundaryContext: typings.react.mod.Context[typings.carbonComponentsReact.errorBoundaryContextMod.ErrorBoundaryContextValue] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ErrorBoundaryContext").asInstanceOf[typings.react.mod.Context[typings.carbonComponentsReact.errorBoundaryContextMod.ErrorBoundaryContextValue]]
 
-@scala.inline
-def FileUploaderButton: typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderButtonMod.FileUploaderButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FileUploaderButton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderButtonMod.FileUploaderButtonProps]]
+inline def FileUploaderButton: typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderButtonMod.FileUploaderButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FileUploaderButton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderButtonMod.FileUploaderButtonProps]]
 
-@scala.inline
-def FileUploaderDropContainer: typings.react.mod.FC[
+inline def FileUploaderDropContainer: typings.react.mod.FC[
 typings.carbonComponentsReact.fileUploaderDropContainerMod.FileUploaderDropContainerProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FileUploaderDropContainer").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.fileUploaderDropContainerMod.FileUploaderDropContainerProps]]
 
-@scala.inline
-def FileUploaderItem: typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderItemMod.FileUploaderItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FileUploaderItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderItemMod.FileUploaderItemProps]]
+inline def FileUploaderItem: typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderItemMod.FileUploaderItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FileUploaderItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderItemMod.FileUploaderItemProps]]
 
-@scala.inline
-def FileUploaderSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderSkeletonMod.FileUploaderSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FileUploaderSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderSkeletonMod.FileUploaderSkeletonProps]]
+inline def FileUploaderSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderSkeletonMod.FileUploaderSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FileUploaderSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.fileUploaderSkeletonMod.FileUploaderSkeletonProps]]
 
-@scala.inline
-def Filename: typings.react.mod.FC[typings.carbonComponentsReact.filenameMod.FilenameIconProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Filename").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.filenameMod.FilenameIconProps]]
+inline def Filename: typings.react.mod.FC[typings.carbonComponentsReact.filenameMod.FilenameIconProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Filename").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.filenameMod.FilenameIconProps]]
 
-@scala.inline
-def FluidForm: typings.react.mod.FC[typings.carbonComponentsReact.fluidFormFluidFormMod.FluidFormProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FluidForm").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.fluidFormFluidFormMod.FluidFormProps]]
+inline def FluidForm: typings.react.mod.FC[typings.carbonComponentsReact.fluidFormFluidFormMod.FluidFormProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FluidForm").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.fluidFormFluidFormMod.FluidFormProps]]
 
-@scala.inline
-def Form: typings.react.mod.FC[typings.carbonComponentsReact.formFormMod.FormProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Form").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.formFormMod.FormProps]]
+inline def Form: typings.react.mod.FC[typings.carbonComponentsReact.formFormMod.FormProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Form").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.formFormMod.FormProps]]
 
-@scala.inline
-def FormGroup: typings.react.mod.FC[typings.carbonComponentsReact.formGroupFormGroupMod.FormGroupProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FormGroup").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.formGroupFormGroupMod.FormGroupProps]]
+inline def FormGroup: typings.react.mod.FC[typings.carbonComponentsReact.formGroupFormGroupMod.FormGroupProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FormGroup").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.formGroupFormGroupMod.FormGroupProps]]
 
-@scala.inline
-def FormItem: typings.react.mod.FC[typings.carbonComponentsReact.formItemFormItemMod.FormItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FormItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.formItemFormItemMod.FormItemProps]]
+inline def FormItem: typings.react.mod.FC[typings.carbonComponentsReact.formItemFormItemMod.FormItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FormItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.formItemFormItemMod.FormItemProps]]
 
-@scala.inline
-def FormLabel: typings.react.mod.FC[typings.carbonComponentsReact.formLabelFormLabelMod.FormLabelProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FormLabel").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.formLabelFormLabelMod.FormLabelProps]]
+inline def FormLabel: typings.react.mod.FC[typings.carbonComponentsReact.formLabelFormLabelMod.FormLabelProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("FormLabel").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.formLabelFormLabelMod.FormLabelProps]]
 
-@scala.inline
-def Grid(props: typings.carbonComponentsReact.gridGridMod.GridDefaultProps): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
-@scala.inline
-def Grid[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](props: typings.carbonComponentsReact.gridGridMod.GridCustomComponentProps[T]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
+inline def Grid(props: typings.carbonComponentsReact.gridGridMod.GridDefaultProps): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
+inline def Grid[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](props: typings.carbonComponentsReact.gridGridMod.GridCustomComponentProps[T]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_a(
+inline def Grid_a(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.a]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_abbr(
+inline def Grid_abbr(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.abbr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_address(
+inline def Grid_address(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.address]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_animate(
+inline def Grid_animate(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animate]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_animateMotion(
+inline def Grid_animateMotion(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_animateTransform(
+inline def Grid_animateTransform(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_area(
+inline def Grid_area(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.area]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_article(
+inline def Grid_article(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.article]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_aside(
+inline def Grid_aside(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.aside]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_audio(
+inline def Grid_audio(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.audio]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_b(
+inline def Grid_b(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.b]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_base(
+inline def Grid_base(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.base]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_bdi(
+inline def Grid_bdi(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdi]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_bdo(
+inline def Grid_bdo(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdo]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_big(
+inline def Grid_big(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.big]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_blockquote(
+inline def Grid_blockquote(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_body(
+inline def Grid_body(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.body]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_br(
+inline def Grid_br(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.br]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_button(
+inline def Grid_button(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.button]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_canvas(
+inline def Grid_canvas(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.canvas]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_caption(
+inline def Grid_caption(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.caption]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_circle(
+inline def Grid_circle(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.circle]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_cite(
+inline def Grid_cite(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.cite]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_clipPath(
+inline def Grid_clipPath(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_code(
+inline def Grid_code(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.code]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_col(
+inline def Grid_col(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.col]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_colgroup(
+inline def Grid_colgroup(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_data(
+inline def Grid_data(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.data]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_datalist(
+inline def Grid_datalist(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.datalist]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_dd(
+inline def Grid_dd(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dd]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_defs(
+inline def Grid_defs(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.defs]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_del(
+inline def Grid_del(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.del]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_desc(
+inline def Grid_desc(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.desc_]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_details(
+inline def Grid_details(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.details]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_dfn(
+inline def Grid_dfn(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dfn]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_dialog(
+inline def Grid_dialog(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dialog]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_div(
+inline def Grid_div(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.div]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_dl(
+inline def Grid_dl(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dl]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_dt(
+inline def Grid_dt(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dt]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_ellipse(
+inline def Grid_ellipse(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_em(
+inline def Grid_em(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.em]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_embed(
+inline def Grid_embed(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.embed]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feBlend(
+inline def Grid_feBlend(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feColorMatrix(
+inline def Grid_feColorMatrix(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feComponentTransfer(
+inline def Grid_feComponentTransfer(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feComposite(
+inline def Grid_feComposite(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feConvolveMatrix(
+inline def Grid_feConvolveMatrix(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feDiffuseLighting(
+inline def Grid_feDiffuseLighting(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feDisplacementMap(
+inline def Grid_feDisplacementMap(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feDistantLight(
+inline def Grid_feDistantLight(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feDropShadow(
+inline def Grid_feDropShadow(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feFlood(
+inline def Grid_feFlood(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feFuncA(
+inline def Grid_feFuncA(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feFuncB(
+inline def Grid_feFuncB(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feFuncG(
+inline def Grid_feFuncG(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feFuncR(
+inline def Grid_feFuncR(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feGaussianBlur(
+inline def Grid_feGaussianBlur(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feImage(
+inline def Grid_feImage(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feImage]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feMerge(
+inline def Grid_feMerge(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feMergeNode(
+inline def Grid_feMergeNode(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feMorphology(
+inline def Grid_feMorphology(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feOffset(
+inline def Grid_feOffset(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_fePointLight(
+inline def Grid_fePointLight(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feSpecularLighting(
+inline def Grid_feSpecularLighting(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feSpotLight(
+inline def Grid_feSpotLight(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feTile(
+inline def Grid_feTile(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTile]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_feTurbulence(
+inline def Grid_feTurbulence(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_fieldset(
+inline def Grid_fieldset(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_figcaption(
+inline def Grid_figcaption(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_figure(
+inline def Grid_figure(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figure]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_filter(
+inline def Grid_filter(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.filter]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_footer(
+inline def Grid_footer(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.footer]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_foreignObject(
+inline def Grid_foreignObject(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_form(
+inline def Grid_form(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.form]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_g(
+inline def Grid_g(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.g]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_h1(
+inline def Grid_h1(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h1]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_h2(
+inline def Grid_h2(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h2]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_h3(
+inline def Grid_h3(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h3]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_h4(
+inline def Grid_h4(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h4]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_h5(
+inline def Grid_h5(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h5]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_h6(
+inline def Grid_h6(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h6]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_head(
+inline def Grid_head(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.head]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_header(
+inline def Grid_header(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.header]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_hgroup(
+inline def Grid_hgroup(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_hr(
+inline def Grid_hr(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_html(
+inline def Grid_html(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.html]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_i(
+inline def Grid_i(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.i]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_iframe(
+inline def Grid_iframe(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.iframe]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_image(
+inline def Grid_image(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.image]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_img(
+inline def Grid_img(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.img]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_input(
+inline def Grid_input(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.input]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_ins(
+inline def Grid_ins(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ins]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_kbd(
+inline def Grid_kbd(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.kbd]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_keygen(
+inline def Grid_keygen(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.keygen]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_label(
+inline def Grid_label(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.label]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_legend(
+inline def Grid_legend(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.legend]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_li(
+inline def Grid_li(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.li]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_line(
+inline def Grid_line(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.line]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_linearGradient(
+inline def Grid_linearGradient(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_link(
+inline def Grid_link(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.link]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_main(
+inline def Grid_main(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.main]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_map(
+inline def Grid_map(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.map]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_mark(
+inline def Grid_mark(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mark]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_marker(
+inline def Grid_marker(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.marker]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_mask(
+inline def Grid_mask(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mask]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_menu(
+inline def Grid_menu(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menu]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_menuitem(
+inline def Grid_menuitem(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_meta(
+inline def Grid_meta(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meta]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_metadata(
+inline def Grid_metadata(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.metadata]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_meter(
+inline def Grid_meter(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meter]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_mpath(
+inline def Grid_mpath(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mpath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_nav(
+inline def Grid_nav(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.nav]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_noindex(
+inline def Grid_noindex(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noindex]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_noscript(
+inline def Grid_noscript(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noscript]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_object(
+inline def Grid_object(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`object`]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_ol(
+inline def Grid_ol(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ol]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_optgroup(
+inline def Grid_optgroup(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_option(
+inline def Grid_option(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.option]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_output(
+inline def Grid_output(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.output]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_p(
+inline def Grid_p(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.p]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_param(
+inline def Grid_param(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.param]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_path(
+inline def Grid_path(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.path]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_pattern(
+inline def Grid_pattern(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pattern]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_picture(
+inline def Grid_picture(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.picture]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_polygon(
+inline def Grid_polygon(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polygon]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_polyline(
+inline def Grid_polyline(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polyline]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_pre(
+inline def Grid_pre(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pre]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_progress(
+inline def Grid_progress(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.progress]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_q(
+inline def Grid_q(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.q]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_radialGradient(
+inline def Grid_radialGradient(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_rect(
+inline def Grid_rect(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rect]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_rp(
+inline def Grid_rp(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rp]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_rt(
+inline def Grid_rt(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rt]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_ruby(
+inline def Grid_ruby(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ruby]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_s(
+inline def Grid_s(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.s]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_samp(
+inline def Grid_samp(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.samp]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_script(
+inline def Grid_script(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.script]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_section(
+inline def Grid_section(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.section]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_select(
+inline def Grid_select(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.select]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_slot(
+inline def Grid_slot(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.slot]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_small(
+inline def Grid_small(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_source(
+inline def Grid_source(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.source]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_span(
+inline def Grid_span(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.span]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_stop(
+inline def Grid_stop(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.stop]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_strong(
+inline def Grid_strong(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.strong]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_style(
+inline def Grid_style(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.style]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_sub(
+inline def Grid_sub(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sub]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_summary(
+inline def Grid_summary(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.summary]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_sup(
+inline def Grid_sup(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_svg(
+inline def Grid_svg(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.svg]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_switch(
+inline def Grid_switch(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.switch]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_symbol(
+inline def Grid_symbol(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.symbol]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_table(
+inline def Grid_table(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.table]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_tbody(
+inline def Grid_tbody(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tbody]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_td(
+inline def Grid_td(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.td]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_template(
+inline def Grid_template(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.template]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_text(
+inline def Grid_text(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.text]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_textPath(
+inline def Grid_textPath(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textPath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_textarea(
+inline def Grid_textarea(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textarea]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_tfoot(
+inline def Grid_tfoot(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_th(
+inline def Grid_th(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.th]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_thead(
+inline def Grid_thead(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.thead]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_time(
+inline def Grid_time(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.time]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_title(
+inline def Grid_title(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.title]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_tr(
+inline def Grid_tr(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_track(
+inline def Grid_track(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.track]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_tspan(
+inline def Grid_tspan(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tspan]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_u(
+inline def Grid_u(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.u]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_ul(
+inline def Grid_ul(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ul]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_use(
+inline def Grid_use(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.use]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_var(
+inline def Grid_var(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`var`]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_video(
+inline def Grid_video(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.video]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_view(
+inline def Grid_view(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.view]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_wbr(
+inline def Grid_wbr(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.wbr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Grid_webview(
+inline def Grid_webview(
   props: typings.carbonComponentsReact.gridGridMod.GridIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.webview]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Header: typings.react.mod.FC[typings.carbonComponentsReact.headerMod.HeaderProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Header").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.headerMod.HeaderProps]]
+inline def Header: typings.react.mod.FC[typings.carbonComponentsReact.headerMod.HeaderProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Header").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.headerMod.HeaderProps]]
 
-@scala.inline
-def HeaderContainer[RP](
+inline def HeaderContainer[RP](
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[typings.carbonComponentsReact.headerContainerMod.HeaderContainerProps[RP]]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("HeaderContainer")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def HeaderGlobalAction: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def HeaderGlobalAction: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLButtonElement, 
 typings.carbonComponentsReact.headerGlobalActionMod.HeaderGlobalActionProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HeaderGlobalAction").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLButtonElement, 
 typings.carbonComponentsReact.headerGlobalActionMod.HeaderGlobalActionProps]]
 
-@scala.inline
-def HeaderGlobalBar: typings.react.mod.FC[typings.carbonComponentsReact.headerGlobalBarMod.HeaderGlobalBarProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HeaderGlobalBar").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.headerGlobalBarMod.HeaderGlobalBarProps]]
+inline def HeaderGlobalBar: typings.react.mod.FC[typings.carbonComponentsReact.headerGlobalBarMod.HeaderGlobalBarProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HeaderGlobalBar").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.headerGlobalBarMod.HeaderGlobalBarProps]]
 
-@scala.inline
-def HeaderMenu[RP](props: typings.carbonComponentsReact.headerMenuMod.HeaderMenuProps[RP]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("HeaderMenu")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
+inline def HeaderMenu[RP](props: typings.carbonComponentsReact.headerMenuMod.HeaderMenuProps[RP]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("HeaderMenu")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def HeaderMenuButton: typings.react.mod.FC[typings.carbonComponentsReact.headerMenuButtonMod.HeaderMenuButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HeaderMenuButton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.headerMenuButtonMod.HeaderMenuButtonProps]]
+inline def HeaderMenuButton: typings.react.mod.FC[typings.carbonComponentsReact.headerMenuButtonMod.HeaderMenuButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HeaderMenuButton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.headerMenuButtonMod.HeaderMenuButtonProps]]
 
-@scala.inline
-def HeaderMenuItem[E /* <: js.Object */, R](
+inline def HeaderMenuItem[E /* <: js.Object */, R](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[R, typings.carbonComponentsReact.headerMenuItemMod.HeaderMenuItemProps[E]]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("HeaderMenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def HeaderName[E /* <: js.Object */](
+inline def HeaderName[E /* <: js.Object */](
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[typings.carbonComponentsReact.headerNameMod.HeaderNameProps[E]]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("HeaderName")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def HeaderPanel: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def HeaderPanel: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLDivElement, 
 typings.carbonComponentsReact.headerPanelMod.HeaderPanelProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HeaderPanel").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLDivElement, 
 typings.carbonComponentsReact.headerPanelMod.HeaderPanelProps]]
 
-@scala.inline
-def HeaderSideNavItems: typings.react.mod.FC[typings.carbonComponentsReact.headerSideNavItemsMod.HeaderSideNavItemsProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HeaderSideNavItems").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.headerSideNavItemsMod.HeaderSideNavItemsProps]]
+inline def HeaderSideNavItems: typings.react.mod.FC[typings.carbonComponentsReact.headerSideNavItemsMod.HeaderSideNavItemsProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("HeaderSideNavItems").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.headerSideNavItemsMod.HeaderSideNavItemsProps]]
 
-@scala.inline
-def Icon: typings.react.mod.FC[typings.carbonComponentsReact.iconIconMod.IconProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Icon").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.iconIconMod.IconProps]]
+inline def Icon: typings.react.mod.FC[typings.carbonComponentsReact.iconIconMod.IconProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Icon").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.iconIconMod.IconProps]]
 
-@scala.inline
-def IconSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.iconSkeletonMod.IconSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("IconSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.iconSkeletonMod.IconSkeletonProps]]
+inline def IconSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.iconSkeletonMod.IconSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("IconSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.iconSkeletonMod.IconSkeletonProps]]
 
-@scala.inline
-def InlineLoading: typings.react.mod.FC[typings.carbonComponentsReact.inlineLoadingInlineLoadingMod.InlineLoadingProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InlineLoading").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.inlineLoadingInlineLoadingMod.InlineLoadingProps]]
+inline def InlineLoading: typings.react.mod.FC[typings.carbonComponentsReact.inlineLoadingInlineLoadingMod.InlineLoadingProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InlineLoading").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.inlineLoadingInlineLoadingMod.InlineLoadingProps]]
 
-@scala.inline
-def InlineNotification: typings.react.mod.FC[
+inline def InlineNotification: typings.react.mod.FC[
 typings.carbonComponentsReact.notificationNotificationMod.InlineNotificationProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("InlineNotification").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.notificationNotificationMod.InlineNotificationProps]]
 
-@scala.inline
-def Link: typings.react.mod.FC[typings.carbonComponentsReact.linkLinkMod.LinkProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Link").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.linkLinkMod.LinkProps]]
+inline def Link: typings.react.mod.FC[typings.carbonComponentsReact.linkLinkMod.LinkProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Link").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.linkLinkMod.LinkProps]]
 
-@scala.inline
-def ListItem: typings.react.mod.FC[typings.carbonComponentsReact.listItemListItemMod.ListItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ListItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.listItemListItemMod.ListItemProps]]
+inline def ListItem: typings.react.mod.FC[typings.carbonComponentsReact.listItemListItemMod.ListItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ListItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.listItemListItemMod.ListItemProps]]
 
-@scala.inline
-def Loading: typings.react.mod.FC[typings.carbonComponentsReact.loadingLoadingMod.LoadingProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Loading").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.loadingLoadingMod.LoadingProps]]
+inline def Loading: typings.react.mod.FC[typings.carbonComponentsReact.loadingLoadingMod.LoadingProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Loading").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.loadingLoadingMod.LoadingProps]]
 
-@scala.inline
-def ModalBody: typings.react.mod.FC[typings.carbonComponentsReact.composedModalComposedModalMod.ModalBodyProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ModalBody").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.composedModalComposedModalMod.ModalBodyProps]]
+inline def ModalBody: typings.react.mod.FC[typings.carbonComponentsReact.composedModalComposedModalMod.ModalBodyProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ModalBody").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.composedModalComposedModalMod.ModalBodyProps]]
 
-@scala.inline
-def NotificationActionButton: typings.react.mod.FC[
+inline def NotificationActionButton: typings.react.mod.FC[
 typings.carbonComponentsReact.notificationNotificationMod.NotificationActionButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NotificationActionButton").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.notificationNotificationMod.NotificationActionButtonProps]]
 
-@scala.inline
-def NotificationButton: typings.react.mod.FC[
+inline def NotificationButton: typings.react.mod.FC[
 typings.carbonComponentsReact.notificationNotificationMod.NotificationButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NotificationButton").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.notificationNotificationMod.NotificationButtonProps]]
 
-@scala.inline
-def NotificationTextDetails: typings.react.mod.FC[
+inline def NotificationTextDetails: typings.react.mod.FC[
 typings.carbonComponentsReact.notificationNotificationMod.NotificationTextDetailsProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NotificationTextDetails").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.notificationNotificationMod.NotificationTextDetailsProps]]
 
-@scala.inline
-def NumberInput: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def NumberInput: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.numberInputNumberInputMod.NumberInputProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NumberInput").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.numberInputNumberInputMod.NumberInputProps]]
 
-@scala.inline
-def NumberInputSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.numberInputSkeletonMod.NumberInputSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NumberInputSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.numberInputSkeletonMod.NumberInputSkeletonProps]]
+inline def NumberInputSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.numberInputSkeletonMod.NumberInputSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NumberInputSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.numberInputSkeletonMod.NumberInputSkeletonProps]]
 
-@scala.inline
-def OrderedList: typings.react.mod.FC[typings.carbonComponentsReact.orderedListOrderedListMod.OrderedListProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OrderedList").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.orderedListOrderedListMod.OrderedListProps]]
+inline def OrderedList: typings.react.mod.FC[typings.carbonComponentsReact.orderedListOrderedListMod.OrderedListProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OrderedList").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.orderedListOrderedListMod.OrderedListProps]]
 
-@scala.inline
-def OverflowMenu: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def OverflowMenu: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLButtonElement, 
 typings.carbonComponentsReact.overflowMenuOverflowMenuMod.OverflowMenuProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OverflowMenu").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLButtonElement, 
 typings.carbonComponentsReact.overflowMenuOverflowMenuMod.OverflowMenuProps]]
 
-@scala.inline
-def PaginationNav: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def PaginationNav: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLElement, 
 typings.carbonComponentsReact.paginationNavPaginationNavMod.PaginationNavProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PaginationNav").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLElement, 
 typings.carbonComponentsReact.paginationNavPaginationNavMod.PaginationNavProps]]
 
-@scala.inline
-def PaginationSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.paginationSkeletonMod.PaginationSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PaginationSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.paginationSkeletonMod.PaginationSkeletonProps]]
+inline def PaginationSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.paginationSkeletonMod.PaginationSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PaginationSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.paginationSkeletonMod.PaginationSkeletonProps]]
 
-@scala.inline
-def PasswordInput: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def PasswordInput: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.passwordInputMod.PasswordInputProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PasswordInput").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.passwordInputMod.PasswordInputProps]]
 
 // tslint:disable:unified-signatures breaks certain usages
-@scala.inline
-def PrimaryButton(
+inline def PrimaryButton(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonAnchorProps | typings.carbonComponentsReact.buttonButtonMod.ButtonDefaultProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_T_JSXElementConstructorAny[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](
+inline def PrimaryButton_T_JSXElementConstructorAny[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[typings.carbonComponentsReact.buttonButtonMod.ButtonCustomComponentProps[T]]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_a(
+inline def PrimaryButton_a(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.a]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_abbr(
+inline def PrimaryButton_abbr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.abbr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_address(
+inline def PrimaryButton_address(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.address]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_animate(
+inline def PrimaryButton_animate(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animate]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_animateMotion(
+inline def PrimaryButton_animateMotion(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_animateTransform(
+inline def PrimaryButton_animateTransform(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_area(
+inline def PrimaryButton_area(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.area]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_article(
+inline def PrimaryButton_article(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.article]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_aside(
+inline def PrimaryButton_aside(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.aside]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_audio(
+inline def PrimaryButton_audio(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.audio]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_b(
+inline def PrimaryButton_b(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.b]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_base(
+inline def PrimaryButton_base(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.base]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_bdi(
+inline def PrimaryButton_bdi(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdi]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_bdo(
+inline def PrimaryButton_bdo(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdo]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_big(
+inline def PrimaryButton_big(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.big]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_blockquote(
+inline def PrimaryButton_blockquote(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_body(
+inline def PrimaryButton_body(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.body]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_br(
+inline def PrimaryButton_br(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.br]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_button(
+inline def PrimaryButton_button(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.button]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_canvas(
+inline def PrimaryButton_canvas(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.canvas]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_caption(
+inline def PrimaryButton_caption(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.caption]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_circle(
+inline def PrimaryButton_circle(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.circle]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_cite(
+inline def PrimaryButton_cite(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.cite]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_clipPath(
+inline def PrimaryButton_clipPath(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_code(
+inline def PrimaryButton_code(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.code]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_col(
+inline def PrimaryButton_col(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.col]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_colgroup(
+inline def PrimaryButton_colgroup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_data(
+inline def PrimaryButton_data(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.data]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_datalist(
+inline def PrimaryButton_datalist(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.datalist]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_dd(
+inline def PrimaryButton_dd(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dd]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_defs(
+inline def PrimaryButton_defs(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.defs]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_del(
+inline def PrimaryButton_del(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.del]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_desc(
+inline def PrimaryButton_desc(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.desc_]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_details(
+inline def PrimaryButton_details(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.details]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_dfn(
+inline def PrimaryButton_dfn(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dfn]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_dialog(
+inline def PrimaryButton_dialog(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dialog]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_div(
+inline def PrimaryButton_div(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.div]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_dl(
+inline def PrimaryButton_dl(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dl]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_dt(
+inline def PrimaryButton_dt(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dt]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_ellipse(
+inline def PrimaryButton_ellipse(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_em(
+inline def PrimaryButton_em(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.em]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_embed(
+inline def PrimaryButton_embed(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.embed]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feBlend(
+inline def PrimaryButton_feBlend(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feColorMatrix(
+inline def PrimaryButton_feColorMatrix(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feComponentTransfer(
+inline def PrimaryButton_feComponentTransfer(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feComposite(
+inline def PrimaryButton_feComposite(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feConvolveMatrix(
+inline def PrimaryButton_feConvolveMatrix(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feDiffuseLighting(
+inline def PrimaryButton_feDiffuseLighting(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feDisplacementMap(
+inline def PrimaryButton_feDisplacementMap(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feDistantLight(
+inline def PrimaryButton_feDistantLight(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feDropShadow(
+inline def PrimaryButton_feDropShadow(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feFlood(
+inline def PrimaryButton_feFlood(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feFuncA(
+inline def PrimaryButton_feFuncA(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feFuncB(
+inline def PrimaryButton_feFuncB(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feFuncG(
+inline def PrimaryButton_feFuncG(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feFuncR(
+inline def PrimaryButton_feFuncR(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feGaussianBlur(
+inline def PrimaryButton_feGaussianBlur(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feImage(
+inline def PrimaryButton_feImage(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feImage]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feMerge(
+inline def PrimaryButton_feMerge(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feMergeNode(
+inline def PrimaryButton_feMergeNode(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feMorphology(
+inline def PrimaryButton_feMorphology(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feOffset(
+inline def PrimaryButton_feOffset(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_fePointLight(
+inline def PrimaryButton_fePointLight(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feSpecularLighting(
+inline def PrimaryButton_feSpecularLighting(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feSpotLight(
+inline def PrimaryButton_feSpotLight(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feTile(
+inline def PrimaryButton_feTile(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTile]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_feTurbulence(
+inline def PrimaryButton_feTurbulence(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_fieldset(
+inline def PrimaryButton_fieldset(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_figcaption(
+inline def PrimaryButton_figcaption(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_figure(
+inline def PrimaryButton_figure(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figure]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_filter(
+inline def PrimaryButton_filter(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.filter]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_footer(
+inline def PrimaryButton_footer(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.footer]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_foreignObject(
+inline def PrimaryButton_foreignObject(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_form(
+inline def PrimaryButton_form(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.form]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_g(
+inline def PrimaryButton_g(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.g]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_h1(
+inline def PrimaryButton_h1(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h1]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_h2(
+inline def PrimaryButton_h2(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h2]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_h3(
+inline def PrimaryButton_h3(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h3]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_h4(
+inline def PrimaryButton_h4(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h4]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_h5(
+inline def PrimaryButton_h5(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h5]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_h6(
+inline def PrimaryButton_h6(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h6]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_head(
+inline def PrimaryButton_head(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.head]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_header(
+inline def PrimaryButton_header(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.header]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_hgroup(
+inline def PrimaryButton_hgroup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_hr(
+inline def PrimaryButton_hr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_html(
+inline def PrimaryButton_html(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.html]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_i(
+inline def PrimaryButton_i(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.i]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_iframe(
+inline def PrimaryButton_iframe(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.iframe]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_image(
+inline def PrimaryButton_image(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.image]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_img(
+inline def PrimaryButton_img(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.img]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_input(
+inline def PrimaryButton_input(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.input]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_ins(
+inline def PrimaryButton_ins(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ins]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_kbd(
+inline def PrimaryButton_kbd(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.kbd]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_keygen(
+inline def PrimaryButton_keygen(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.keygen]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_label(
+inline def PrimaryButton_label(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.label]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_legend(
+inline def PrimaryButton_legend(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.legend]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_li(
+inline def PrimaryButton_li(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.li]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_line(
+inline def PrimaryButton_line(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.line]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_linearGradient(
+inline def PrimaryButton_linearGradient(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_link(
+inline def PrimaryButton_link(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.link]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_main(
+inline def PrimaryButton_main(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.main]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_map(
+inline def PrimaryButton_map(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.map]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_mark(
+inline def PrimaryButton_mark(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mark]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_marker(
+inline def PrimaryButton_marker(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.marker]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_mask(
+inline def PrimaryButton_mask(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mask]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_menu(
+inline def PrimaryButton_menu(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menu]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_menuitem(
+inline def PrimaryButton_menuitem(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_meta(
+inline def PrimaryButton_meta(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meta]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_metadata(
+inline def PrimaryButton_metadata(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.metadata]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_meter(
+inline def PrimaryButton_meter(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meter]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_mpath(
+inline def PrimaryButton_mpath(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mpath]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_nav(
+inline def PrimaryButton_nav(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.nav]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_noindex(
+inline def PrimaryButton_noindex(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noindex]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_noscript(
+inline def PrimaryButton_noscript(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noscript]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_object(
+inline def PrimaryButton_object(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`object`]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_ol(
+inline def PrimaryButton_ol(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ol]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_optgroup(
+inline def PrimaryButton_optgroup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_option(
+inline def PrimaryButton_option(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.option]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_output(
+inline def PrimaryButton_output(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.output]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_p(
+inline def PrimaryButton_p(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.p]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_param(
+inline def PrimaryButton_param(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.param]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_path(
+inline def PrimaryButton_path(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.path]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_pattern(
+inline def PrimaryButton_pattern(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pattern]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_picture(
+inline def PrimaryButton_picture(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.picture]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_polygon(
+inline def PrimaryButton_polygon(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polygon]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_polyline(
+inline def PrimaryButton_polyline(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polyline]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_pre(
+inline def PrimaryButton_pre(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pre]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_progress(
+inline def PrimaryButton_progress(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.progress]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_q(
+inline def PrimaryButton_q(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.q]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_radialGradient(
+inline def PrimaryButton_radialGradient(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_rect(
+inline def PrimaryButton_rect(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rect]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_rp(
+inline def PrimaryButton_rp(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rp]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_rt(
+inline def PrimaryButton_rt(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rt]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_ruby(
+inline def PrimaryButton_ruby(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ruby]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_s(
+inline def PrimaryButton_s(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.s]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_samp(
+inline def PrimaryButton_samp(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.samp]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_script(
+inline def PrimaryButton_script(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.script]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_section(
+inline def PrimaryButton_section(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.section]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_select(
+inline def PrimaryButton_select(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.select]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_slot(
+inline def PrimaryButton_slot(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.slot]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_small(
+inline def PrimaryButton_small(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_source(
+inline def PrimaryButton_source(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.source]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_span(
+inline def PrimaryButton_span(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.span]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_stop(
+inline def PrimaryButton_stop(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.stop]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_strong(
+inline def PrimaryButton_strong(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.strong]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_style(
+inline def PrimaryButton_style(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.style]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_sub(
+inline def PrimaryButton_sub(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sub]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_summary(
+inline def PrimaryButton_summary(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.summary]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_sup(
+inline def PrimaryButton_sup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_svg(
+inline def PrimaryButton_svg(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.svg]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_switch(
+inline def PrimaryButton_switch(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.switch]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_symbol(
+inline def PrimaryButton_symbol(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.symbol]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_table(
+inline def PrimaryButton_table(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.table]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_tbody(
+inline def PrimaryButton_tbody(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tbody]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_td(
+inline def PrimaryButton_td(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.td]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_template(
+inline def PrimaryButton_template(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.template]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_text(
+inline def PrimaryButton_text(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.text]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_textPath(
+inline def PrimaryButton_textPath(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textPath]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_textarea(
+inline def PrimaryButton_textarea(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textarea]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_tfoot(
+inline def PrimaryButton_tfoot(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_th(
+inline def PrimaryButton_th(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.th]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_thead(
+inline def PrimaryButton_thead(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.thead]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_time(
+inline def PrimaryButton_time(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.time]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_title(
+inline def PrimaryButton_title(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.title]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_tr(
+inline def PrimaryButton_tr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_track(
+inline def PrimaryButton_track(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.track]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_tspan(
+inline def PrimaryButton_tspan(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tspan]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_u(
+inline def PrimaryButton_u(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.u]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_ul(
+inline def PrimaryButton_ul(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ul]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_use(
+inline def PrimaryButton_use(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.use]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_var(
+inline def PrimaryButton_var(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`var`]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_video(
+inline def PrimaryButton_video(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.video]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_view(
+inline def PrimaryButton_view(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.view]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_wbr(
+inline def PrimaryButton_wbr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.wbr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def PrimaryButton_webview(
+inline def PrimaryButton_webview(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.webview]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def ProgressIndicatorSkeleton: typings.react.mod.FC[
+inline def ProgressIndicatorSkeleton: typings.react.mod.FC[
 typings.carbonComponentsReact.progressIndicatorSkeletonMod.ProgressIndicatorSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ProgressIndicatorSkeleton").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.progressIndicatorSkeletonMod.ProgressIndicatorSkeletonProps]]
 
-@scala.inline
-def ProgressStep: typings.react.mod.FC[
+inline def ProgressStep: typings.react.mod.FC[
 typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressStepProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ProgressStep").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.progressIndicatorProgressIndicatorMod.ProgressStepProps]]
 
-@scala.inline
-def RadioButton: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def RadioButton: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.radioButtonRadioButtonMod.RadioButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RadioButton").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLInputElement, 
 typings.carbonComponentsReact.radioButtonRadioButtonMod.RadioButtonProps]]
 
-@scala.inline
-def RadioButtonSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.radioButtonSkeletonMod.RadioButtonSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RadioButtonSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.radioButtonSkeletonMod.RadioButtonSkeletonProps]]
+inline def RadioButtonSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.radioButtonSkeletonMod.RadioButtonSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RadioButtonSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.radioButtonSkeletonMod.RadioButtonSkeletonProps]]
 
-@scala.inline
-def RadioTile: typings.react.mod.FC[typings.carbonComponentsReact.radioTileRadioTileMod.RadioTileProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RadioTile").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.radioTileRadioTileMod.RadioTileProps]]
+inline def RadioTile: typings.react.mod.FC[typings.carbonComponentsReact.radioTileRadioTileMod.RadioTileProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RadioTile").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.radioTileRadioTileMod.RadioTileProps]]
 
-@scala.inline
-def Row(props: typings.carbonComponentsReact.rowMod.RowDefaultProps): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
-@scala.inline
-def Row[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](props: typings.carbonComponentsReact.rowMod.RowCustomComponentProps[T]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
+inline def Row(props: typings.carbonComponentsReact.rowMod.RowDefaultProps): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
+inline def Row[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](props: typings.carbonComponentsReact.rowMod.RowCustomComponentProps[T]): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_a(
+inline def Row_a(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.a]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_abbr(
+inline def Row_abbr(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.abbr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_address(
+inline def Row_address(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.address]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_animate(
+inline def Row_animate(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animate]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_animateMotion(
+inline def Row_animateMotion(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_animateTransform(
+inline def Row_animateTransform(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_area(
+inline def Row_area(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.area]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_article(
+inline def Row_article(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.article]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_aside(
+inline def Row_aside(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.aside]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_audio(
+inline def Row_audio(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.audio]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_b(
+inline def Row_b(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.b]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_base(
+inline def Row_base(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.base]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_bdi(
+inline def Row_bdi(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdi]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_bdo(
+inline def Row_bdo(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdo]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_big(
+inline def Row_big(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.big]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_blockquote(
+inline def Row_blockquote(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_body(
+inline def Row_body(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.body]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_br(
+inline def Row_br(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.br]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_button(
+inline def Row_button(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.button]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_canvas(
+inline def Row_canvas(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.canvas]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_caption(
+inline def Row_caption(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.caption]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_circle(
+inline def Row_circle(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.circle]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_cite(
+inline def Row_cite(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.cite]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_clipPath(
+inline def Row_clipPath(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_code(
+inline def Row_code(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.code]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_col(
+inline def Row_col(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.col]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_colgroup(
+inline def Row_colgroup(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_data(
+inline def Row_data(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.data]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_datalist(
+inline def Row_datalist(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.datalist]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_dd(
+inline def Row_dd(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dd]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_defs(
+inline def Row_defs(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.defs]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_del(
+inline def Row_del(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.del]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_desc(
+inline def Row_desc(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.desc_]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_details(
+inline def Row_details(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.details]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_dfn(
+inline def Row_dfn(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dfn]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_dialog(
+inline def Row_dialog(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dialog]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_div(
+inline def Row_div(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.div]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_dl(
+inline def Row_dl(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dl]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_dt(
+inline def Row_dt(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dt]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_ellipse(
+inline def Row_ellipse(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_em(
+inline def Row_em(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.em]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_embed(
+inline def Row_embed(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.embed]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feBlend(
+inline def Row_feBlend(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feColorMatrix(
+inline def Row_feColorMatrix(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feComponentTransfer(
+inline def Row_feComponentTransfer(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feComposite(
+inline def Row_feComposite(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feConvolveMatrix(
+inline def Row_feConvolveMatrix(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feDiffuseLighting(
+inline def Row_feDiffuseLighting(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feDisplacementMap(
+inline def Row_feDisplacementMap(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feDistantLight(
+inline def Row_feDistantLight(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feDropShadow(
+inline def Row_feDropShadow(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feFlood(
+inline def Row_feFlood(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feFuncA(
+inline def Row_feFuncA(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feFuncB(
+inline def Row_feFuncB(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feFuncG(
+inline def Row_feFuncG(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feFuncR(
+inline def Row_feFuncR(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feGaussianBlur(
+inline def Row_feGaussianBlur(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feImage(
+inline def Row_feImage(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feImage]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feMerge(
+inline def Row_feMerge(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feMergeNode(
+inline def Row_feMergeNode(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feMorphology(
+inline def Row_feMorphology(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feOffset(
+inline def Row_feOffset(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_fePointLight(
+inline def Row_fePointLight(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feSpecularLighting(
+inline def Row_feSpecularLighting(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feSpotLight(
+inline def Row_feSpotLight(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feTile(
+inline def Row_feTile(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTile]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_feTurbulence(
+inline def Row_feTurbulence(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_fieldset(
+inline def Row_fieldset(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_figcaption(
+inline def Row_figcaption(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_figure(
+inline def Row_figure(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figure]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_filter(
+inline def Row_filter(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.filter]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_footer(
+inline def Row_footer(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.footer]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_foreignObject(
+inline def Row_foreignObject(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_form(
+inline def Row_form(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.form]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_g(
+inline def Row_g(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.g]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_h1(
+inline def Row_h1(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h1]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_h2(
+inline def Row_h2(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h2]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_h3(
+inline def Row_h3(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h3]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_h4(
+inline def Row_h4(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h4]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_h5(
+inline def Row_h5(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h5]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_h6(
+inline def Row_h6(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h6]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_head(
+inline def Row_head(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.head]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_header(
+inline def Row_header(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.header]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_hgroup(
+inline def Row_hgroup(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_hr(
+inline def Row_hr(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_html(
+inline def Row_html(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.html]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_i(
+inline def Row_i(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.i]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_iframe(
+inline def Row_iframe(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.iframe]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_image(
+inline def Row_image(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.image]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_img(
+inline def Row_img(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.img]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_input(
+inline def Row_input(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.input]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_ins(
+inline def Row_ins(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ins]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_kbd(
+inline def Row_kbd(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.kbd]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_keygen(
+inline def Row_keygen(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.keygen]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_label(
+inline def Row_label(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.label]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_legend(
+inline def Row_legend(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.legend]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_li(
+inline def Row_li(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.li]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_line(
+inline def Row_line(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.line]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_linearGradient(
+inline def Row_linearGradient(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_link(
+inline def Row_link(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.link]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_main(
+inline def Row_main(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.main]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_map(
+inline def Row_map(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.map]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_mark(
+inline def Row_mark(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mark]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_marker(
+inline def Row_marker(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.marker]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_mask(
+inline def Row_mask(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mask]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_menu(
+inline def Row_menu(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menu]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_menuitem(
+inline def Row_menuitem(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_meta(
+inline def Row_meta(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meta]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_metadata(
+inline def Row_metadata(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.metadata]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_meter(
+inline def Row_meter(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meter]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_mpath(
+inline def Row_mpath(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mpath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_nav(
+inline def Row_nav(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.nav]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_noindex(
+inline def Row_noindex(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noindex]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_noscript(
+inline def Row_noscript(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noscript]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_object(
+inline def Row_object(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`object`]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_ol(
+inline def Row_ol(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ol]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_optgroup(
+inline def Row_optgroup(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_option(
+inline def Row_option(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.option]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_output(
+inline def Row_output(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.output]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_p(
+inline def Row_p(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.p]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_param(
+inline def Row_param(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.param]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_path(
+inline def Row_path(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.path]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_pattern(
+inline def Row_pattern(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pattern]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_picture(
+inline def Row_picture(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.picture]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_polygon(
+inline def Row_polygon(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polygon]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_polyline(
+inline def Row_polyline(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polyline]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_pre(
+inline def Row_pre(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pre]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_progress(
+inline def Row_progress(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.progress]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_q(
+inline def Row_q(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.q]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_radialGradient(
+inline def Row_radialGradient(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_rect(
+inline def Row_rect(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rect]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_rp(
+inline def Row_rp(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rp]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_rt(
+inline def Row_rt(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rt]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_ruby(
+inline def Row_ruby(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ruby]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_s(
+inline def Row_s(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.s]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_samp(
+inline def Row_samp(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.samp]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_script(
+inline def Row_script(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.script]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_section(
+inline def Row_section(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.section]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_select(
+inline def Row_select(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.select]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_slot(
+inline def Row_slot(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.slot]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_small(
+inline def Row_small(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_source(
+inline def Row_source(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.source]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_span(
+inline def Row_span(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.span]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_stop(
+inline def Row_stop(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.stop]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_strong(
+inline def Row_strong(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.strong]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_style(
+inline def Row_style(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.style]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_sub(
+inline def Row_sub(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sub]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_summary(
+inline def Row_summary(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.summary]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_sup(
+inline def Row_sup(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sup]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_svg(
+inline def Row_svg(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.svg]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_switch(
+inline def Row_switch(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.switch]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_symbol(
+inline def Row_symbol(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.symbol]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_table(
+inline def Row_table(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.table]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_tbody(
+inline def Row_tbody(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tbody]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_td(
+inline def Row_td(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.td]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_template(
+inline def Row_template(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.template]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_text(
+inline def Row_text(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.text]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_textPath(
+inline def Row_textPath(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textPath]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_textarea(
+inline def Row_textarea(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textarea]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_tfoot(
+inline def Row_tfoot(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_th(
+inline def Row_th(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.th]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_thead(
+inline def Row_thead(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.thead]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_time(
+inline def Row_time(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.time]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_title(
+inline def Row_title(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.title]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_tr(
+inline def Row_tr(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_track(
+inline def Row_track(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.track]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_tspan(
+inline def Row_tspan(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tspan]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_u(
+inline def Row_u(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.u]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_ul(
+inline def Row_ul(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ul]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_use(
+inline def Row_use(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.use]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_var(
+inline def Row_var(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`var`]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_video(
+inline def Row_video(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.video]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_view(
+inline def Row_view(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.view]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_wbr(
+inline def Row_wbr(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.wbr]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Row_webview(
+inline def Row_webview(
   props: typings.carbonComponentsReact.rowMod.RowIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.webview]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
 /**
   * @deprecated
   */
-@scala.inline
-def SearchFilterButton: typings.react.mod.FC[
+inline def SearchFilterButton: typings.react.mod.FC[
 typings.carbonComponentsReact.searchFilterButtonSearchFilterButtonMod.SearchFilterButtonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SearchFilterButton").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.searchFilterButtonSearchFilterButtonMod.SearchFilterButtonProps]]
 
-@scala.inline
-def SearchSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.searchSkeletonMod.SearchSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SearchSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.searchSkeletonMod.SearchSkeletonProps]]
+inline def SearchSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.searchSkeletonMod.SearchSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SearchSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.searchSkeletonMod.SearchSkeletonProps]]
 
 // tslint:disable:unified-signatures breaks certain usages
-@scala.inline
-def SecondaryButton(
+inline def SecondaryButton(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonAnchorProps | typings.carbonComponentsReact.buttonButtonMod.ButtonDefaultProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_T_JSXElementConstructorAny[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](
+inline def SecondaryButton_T_JSXElementConstructorAny[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */](
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[typings.carbonComponentsReact.buttonButtonMod.ButtonCustomComponentProps[T]]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_a(
+inline def SecondaryButton_a(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.a]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_abbr(
+inline def SecondaryButton_abbr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.abbr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_address(
+inline def SecondaryButton_address(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.address]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_animate(
+inline def SecondaryButton_animate(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animate]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_animateMotion(
+inline def SecondaryButton_animateMotion(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_animateTransform(
+inline def SecondaryButton_animateTransform(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_area(
+inline def SecondaryButton_area(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.area]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_article(
+inline def SecondaryButton_article(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.article]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_aside(
+inline def SecondaryButton_aside(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.aside]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_audio(
+inline def SecondaryButton_audio(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.audio]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_b(
+inline def SecondaryButton_b(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.b]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_base(
+inline def SecondaryButton_base(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.base]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_bdi(
+inline def SecondaryButton_bdi(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdi]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_bdo(
+inline def SecondaryButton_bdo(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdo]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_big(
+inline def SecondaryButton_big(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.big]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_blockquote(
+inline def SecondaryButton_blockquote(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_body(
+inline def SecondaryButton_body(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.body]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_br(
+inline def SecondaryButton_br(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.br]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_button(
+inline def SecondaryButton_button(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.button]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_canvas(
+inline def SecondaryButton_canvas(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.canvas]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_caption(
+inline def SecondaryButton_caption(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.caption]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_circle(
+inline def SecondaryButton_circle(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.circle]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_cite(
+inline def SecondaryButton_cite(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.cite]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_clipPath(
+inline def SecondaryButton_clipPath(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_code(
+inline def SecondaryButton_code(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.code]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_col(
+inline def SecondaryButton_col(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.col]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_colgroup(
+inline def SecondaryButton_colgroup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_data(
+inline def SecondaryButton_data(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.data]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_datalist(
+inline def SecondaryButton_datalist(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.datalist]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_dd(
+inline def SecondaryButton_dd(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dd]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_defs(
+inline def SecondaryButton_defs(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.defs]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_del(
+inline def SecondaryButton_del(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.del]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_desc(
+inline def SecondaryButton_desc(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.desc_]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_details(
+inline def SecondaryButton_details(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.details]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_dfn(
+inline def SecondaryButton_dfn(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dfn]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_dialog(
+inline def SecondaryButton_dialog(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dialog]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_div(
+inline def SecondaryButton_div(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.div]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_dl(
+inline def SecondaryButton_dl(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dl]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_dt(
+inline def SecondaryButton_dt(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dt]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_ellipse(
+inline def SecondaryButton_ellipse(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_em(
+inline def SecondaryButton_em(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.em]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_embed(
+inline def SecondaryButton_embed(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.embed]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feBlend(
+inline def SecondaryButton_feBlend(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feColorMatrix(
+inline def SecondaryButton_feColorMatrix(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feComponentTransfer(
+inline def SecondaryButton_feComponentTransfer(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feComposite(
+inline def SecondaryButton_feComposite(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feConvolveMatrix(
+inline def SecondaryButton_feConvolveMatrix(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feDiffuseLighting(
+inline def SecondaryButton_feDiffuseLighting(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feDisplacementMap(
+inline def SecondaryButton_feDisplacementMap(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feDistantLight(
+inline def SecondaryButton_feDistantLight(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feDropShadow(
+inline def SecondaryButton_feDropShadow(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feFlood(
+inline def SecondaryButton_feFlood(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feFuncA(
+inline def SecondaryButton_feFuncA(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feFuncB(
+inline def SecondaryButton_feFuncB(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feFuncG(
+inline def SecondaryButton_feFuncG(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feFuncR(
+inline def SecondaryButton_feFuncR(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feGaussianBlur(
+inline def SecondaryButton_feGaussianBlur(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feImage(
+inline def SecondaryButton_feImage(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feImage]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feMerge(
+inline def SecondaryButton_feMerge(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feMergeNode(
+inline def SecondaryButton_feMergeNode(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feMorphology(
+inline def SecondaryButton_feMorphology(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feOffset(
+inline def SecondaryButton_feOffset(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_fePointLight(
+inline def SecondaryButton_fePointLight(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feSpecularLighting(
+inline def SecondaryButton_feSpecularLighting(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feSpotLight(
+inline def SecondaryButton_feSpotLight(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feTile(
+inline def SecondaryButton_feTile(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTile]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_feTurbulence(
+inline def SecondaryButton_feTurbulence(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_fieldset(
+inline def SecondaryButton_fieldset(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_figcaption(
+inline def SecondaryButton_figcaption(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_figure(
+inline def SecondaryButton_figure(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figure]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_filter(
+inline def SecondaryButton_filter(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.filter]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_footer(
+inline def SecondaryButton_footer(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.footer]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_foreignObject(
+inline def SecondaryButton_foreignObject(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_form(
+inline def SecondaryButton_form(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.form]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_g(
+inline def SecondaryButton_g(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.g]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_h1(
+inline def SecondaryButton_h1(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h1]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_h2(
+inline def SecondaryButton_h2(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h2]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_h3(
+inline def SecondaryButton_h3(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h3]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_h4(
+inline def SecondaryButton_h4(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h4]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_h5(
+inline def SecondaryButton_h5(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h5]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_h6(
+inline def SecondaryButton_h6(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h6]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_head(
+inline def SecondaryButton_head(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.head]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_header(
+inline def SecondaryButton_header(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.header]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_hgroup(
+inline def SecondaryButton_hgroup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_hr(
+inline def SecondaryButton_hr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_html(
+inline def SecondaryButton_html(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.html]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_i(
+inline def SecondaryButton_i(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.i]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_iframe(
+inline def SecondaryButton_iframe(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.iframe]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_image(
+inline def SecondaryButton_image(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.image]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_img(
+inline def SecondaryButton_img(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.img]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_input(
+inline def SecondaryButton_input(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.input]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_ins(
+inline def SecondaryButton_ins(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ins]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_kbd(
+inline def SecondaryButton_kbd(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.kbd]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_keygen(
+inline def SecondaryButton_keygen(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.keygen]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_label(
+inline def SecondaryButton_label(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.label]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_legend(
+inline def SecondaryButton_legend(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.legend]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_li(
+inline def SecondaryButton_li(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.li]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_line(
+inline def SecondaryButton_line(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.line]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_linearGradient(
+inline def SecondaryButton_linearGradient(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_link(
+inline def SecondaryButton_link(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.link]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_main(
+inline def SecondaryButton_main(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.main]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_map(
+inline def SecondaryButton_map(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.map]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_mark(
+inline def SecondaryButton_mark(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mark]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_marker(
+inline def SecondaryButton_marker(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.marker]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_mask(
+inline def SecondaryButton_mask(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mask]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_menu(
+inline def SecondaryButton_menu(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menu]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_menuitem(
+inline def SecondaryButton_menuitem(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_meta(
+inline def SecondaryButton_meta(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meta]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_metadata(
+inline def SecondaryButton_metadata(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.metadata]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_meter(
+inline def SecondaryButton_meter(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meter]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_mpath(
+inline def SecondaryButton_mpath(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mpath]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_nav(
+inline def SecondaryButton_nav(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.nav]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_noindex(
+inline def SecondaryButton_noindex(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noindex]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_noscript(
+inline def SecondaryButton_noscript(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noscript]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_object(
+inline def SecondaryButton_object(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`object`]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_ol(
+inline def SecondaryButton_ol(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ol]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_optgroup(
+inline def SecondaryButton_optgroup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_option(
+inline def SecondaryButton_option(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.option]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_output(
+inline def SecondaryButton_output(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.output]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_p(
+inline def SecondaryButton_p(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.p]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_param(
+inline def SecondaryButton_param(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.param]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_path(
+inline def SecondaryButton_path(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.path]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_pattern(
+inline def SecondaryButton_pattern(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pattern]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_picture(
+inline def SecondaryButton_picture(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.picture]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_polygon(
+inline def SecondaryButton_polygon(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polygon]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_polyline(
+inline def SecondaryButton_polyline(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polyline]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_pre(
+inline def SecondaryButton_pre(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pre]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_progress(
+inline def SecondaryButton_progress(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.progress]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_q(
+inline def SecondaryButton_q(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.q]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_radialGradient(
+inline def SecondaryButton_radialGradient(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_rect(
+inline def SecondaryButton_rect(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rect]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_rp(
+inline def SecondaryButton_rp(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rp]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_rt(
+inline def SecondaryButton_rt(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rt]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_ruby(
+inline def SecondaryButton_ruby(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ruby]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_s(
+inline def SecondaryButton_s(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.s]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_samp(
+inline def SecondaryButton_samp(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.samp]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_script(
+inline def SecondaryButton_script(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.script]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_section(
+inline def SecondaryButton_section(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.section]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_select(
+inline def SecondaryButton_select(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.select]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_slot(
+inline def SecondaryButton_slot(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.slot]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_small(
+inline def SecondaryButton_small(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_source(
+inline def SecondaryButton_source(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.source]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_span(
+inline def SecondaryButton_span(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.span]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_stop(
+inline def SecondaryButton_stop(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.stop]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_strong(
+inline def SecondaryButton_strong(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.strong]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_style(
+inline def SecondaryButton_style(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.style]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_sub(
+inline def SecondaryButton_sub(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sub]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_summary(
+inline def SecondaryButton_summary(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.summary]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_sup(
+inline def SecondaryButton_sup(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sup]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_svg(
+inline def SecondaryButton_svg(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.svg]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_switch(
+inline def SecondaryButton_switch(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.switch]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_symbol(
+inline def SecondaryButton_symbol(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.symbol]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_table(
+inline def SecondaryButton_table(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.table]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_tbody(
+inline def SecondaryButton_tbody(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tbody]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_td(
+inline def SecondaryButton_td(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.td]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_template(
+inline def SecondaryButton_template(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.template]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_text(
+inline def SecondaryButton_text(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.text]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_textPath(
+inline def SecondaryButton_textPath(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textPath]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_textarea(
+inline def SecondaryButton_textarea(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textarea]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_tfoot(
+inline def SecondaryButton_tfoot(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_th(
+inline def SecondaryButton_th(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.th]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_thead(
+inline def SecondaryButton_thead(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.thead]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_time(
+inline def SecondaryButton_time(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.time]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_title(
+inline def SecondaryButton_title(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.title]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_tr(
+inline def SecondaryButton_tr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_track(
+inline def SecondaryButton_track(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.track]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_tspan(
+inline def SecondaryButton_tspan(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tspan]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_u(
+inline def SecondaryButton_u(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.u]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_ul(
+inline def SecondaryButton_ul(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ul]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_use(
+inline def SecondaryButton_use(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.use]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_var(
+inline def SecondaryButton_var(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`var`]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_video(
+inline def SecondaryButton_video(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.video]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_view(
+inline def SecondaryButton_view(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.view]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_wbr(
+inline def SecondaryButton_wbr(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.wbr]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SecondaryButton_webview(
+inline def SecondaryButton_webview(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.webview]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SecondaryButton")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def Select: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def Select: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLSelectElement, 
 typings.carbonComponentsReact.selectSelectMod.SelectProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Select").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLSelectElement, 
 typings.carbonComponentsReact.selectSelectMod.SelectProps]]
 
-@scala.inline
-def SelectItem: typings.react.mod.FC[typings.carbonComponentsReact.selectItemSelectItemMod.SelectItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SelectItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.selectItemSelectItemMod.SelectItemProps]]
+inline def SelectItem: typings.react.mod.FC[typings.carbonComponentsReact.selectItemSelectItemMod.SelectItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SelectItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.selectItemSelectItemMod.SelectItemProps]]
 
-@scala.inline
-def SelectItemGroup: typings.react.mod.FC[
+inline def SelectItemGroup: typings.react.mod.FC[
 typings.carbonComponentsReact.selectItemGroupSelectItemGroupMod.SelectItemGroupProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SelectItemGroup").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.selectItemGroupSelectItemGroupMod.SelectItemGroupProps]]
 
-@scala.inline
-def SelectSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.selectSkeletonMod.SelectSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SelectSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.selectSkeletonMod.SelectSkeletonProps]]
+inline def SelectSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.selectSkeletonMod.SelectSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SelectSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.selectSkeletonMod.SelectSkeletonProps]]
 
-@scala.inline
-def SideNav: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[typings.std.HTMLElement, typings.carbonComponentsReact.sideNavMod.SideNavProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNav").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[typings.std.HTMLElement, typings.carbonComponentsReact.sideNavMod.SideNavProps]]
+inline def SideNav: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[typings.std.HTMLElement, typings.carbonComponentsReact.sideNavMod.SideNavProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNav").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[typings.std.HTMLElement, typings.carbonComponentsReact.sideNavMod.SideNavProps]]
 
-@scala.inline
-def SideNavDetails: typings.react.mod.FC[typings.carbonComponentsReact.sideNavDetailsMod.SideNavDetailsProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavDetails").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavDetailsMod.SideNavDetailsProps]]
+inline def SideNavDetails: typings.react.mod.FC[typings.carbonComponentsReact.sideNavDetailsMod.SideNavDetailsProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavDetails").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavDetailsMod.SideNavDetailsProps]]
 
-@scala.inline
-def SideNavFooter: typings.react.mod.FC[typings.carbonComponentsReact.sideNavFooterMod.SideNavFooterProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavFooter").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavFooterMod.SideNavFooterProps]]
+inline def SideNavFooter: typings.react.mod.FC[typings.carbonComponentsReact.sideNavFooterMod.SideNavFooterProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavFooter").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavFooterMod.SideNavFooterProps]]
 
-@scala.inline
-def SideNavHeader: typings.react.mod.FC[typings.carbonComponentsReact.sideNavHeaderMod.SideNavHeaderProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavHeader").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavHeaderMod.SideNavHeaderProps]]
+inline def SideNavHeader: typings.react.mod.FC[typings.carbonComponentsReact.sideNavHeaderMod.SideNavHeaderProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavHeader").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavHeaderMod.SideNavHeaderProps]]
 
-@scala.inline
-def SideNavIcon: typings.react.mod.FC[typings.carbonComponentsReact.sideNavIconMod.SideNavIconProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavIcon").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavIconMod.SideNavIconProps]]
+inline def SideNavIcon: typings.react.mod.FC[typings.carbonComponentsReact.sideNavIconMod.SideNavIconProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavIcon").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavIconMod.SideNavIconProps]]
 
-@scala.inline
-def SideNavItem: typings.react.mod.FC[typings.carbonComponentsReact.sideNavItemMod.SideNavItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavItemMod.SideNavItemProps]]
+inline def SideNavItem: typings.react.mod.FC[typings.carbonComponentsReact.sideNavItemMod.SideNavItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavItemMod.SideNavItemProps]]
 
-@scala.inline
-def SideNavItems: typings.react.mod.FC[typings.carbonComponentsReact.sideNavItemsMod.SideNavItemsProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavItems").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavItemsMod.SideNavItemsProps]]
+inline def SideNavItems: typings.react.mod.FC[typings.carbonComponentsReact.sideNavItemsMod.SideNavItemsProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavItems").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavItemsMod.SideNavItemsProps]]
 
-@scala.inline
-def SideNavLink[E /* <: js.Object */](
+inline def SideNavLink[E /* <: js.Object */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   typings.std.HTMLElement, 
   typings.carbonComponentsReact.sideNavLinkMod.SideNavLinkProps[E]
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SideNavLink")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SideNavLinkText: typings.react.mod.FC[typings.carbonComponentsReact.sideNavLinkTextMod.SideNavLinkTextProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavLinkText").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavLinkTextMod.SideNavLinkTextProps]]
+inline def SideNavLinkText: typings.react.mod.FC[typings.carbonComponentsReact.sideNavLinkTextMod.SideNavLinkTextProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavLinkText").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sideNavLinkTextMod.SideNavLinkTextProps]]
 
-@scala.inline
-def SideNavMenu: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def SideNavMenu: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLButtonElement, 
 typings.carbonComponentsReact.sideNavMenuMod.SideNavMenuProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavMenu").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLButtonElement, 
 typings.carbonComponentsReact.sideNavMenuMod.SideNavMenuProps]]
 
-@scala.inline
-def SideNavMenuItem[E /* <: js.Object */, R](
+inline def SideNavMenuItem[E /* <: js.Object */, R](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[R, typings.carbonComponentsReact.sideNavMenuItemMod.SideNavMenuItemProps[E]]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SideNavMenuItem")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def SideNavSwitcher: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def SideNavSwitcher: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLSelectElement, 
 typings.carbonComponentsReact.sideNavSwitcherMod.SideNavSwitcherProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SideNavSwitcher").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLSelectElement, 
 typings.carbonComponentsReact.sideNavSwitcherMod.SideNavSwitcherProps]]
 
-@scala.inline
-def SkeletonPlaceholder: typings.react.mod.FC[
+inline def SkeletonPlaceholder: typings.react.mod.FC[
 typings.carbonComponentsReact.skeletonPlaceholderSkeletonPlaceholderMod.SkeletonPlaceholderProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SkeletonPlaceholder").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.skeletonPlaceholderSkeletonPlaceholderMod.SkeletonPlaceholderProps]]
 
-@scala.inline
-def SkeletonText: typings.react.mod.FC[typings.carbonComponentsReact.skeletonTextSkeletonTextMod.SkeletonTextProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SkeletonText").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.skeletonTextSkeletonTextMod.SkeletonTextProps]]
+inline def SkeletonText: typings.react.mod.FC[typings.carbonComponentsReact.skeletonTextSkeletonTextMod.SkeletonTextProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SkeletonText").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.skeletonTextSkeletonTextMod.SkeletonTextProps]]
 
-@scala.inline
-def SkipToContent: typings.react.mod.FC[typings.carbonComponentsReact.skipToContentMod.SkipToContentProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SkipToContent").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.skipToContentMod.SkipToContentProps]]
+inline def SkipToContent: typings.react.mod.FC[typings.carbonComponentsReact.skipToContentMod.SkipToContentProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SkipToContent").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.skipToContentMod.SkipToContentProps]]
 
-@scala.inline
-def SliderSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.sliderSkeletonMod.SliderSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SliderSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sliderSkeletonMod.SliderSkeletonProps]]
+inline def SliderSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.sliderSkeletonMod.SliderSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SliderSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.sliderSkeletonMod.SliderSkeletonProps]]
 
-@scala.inline
-def StructuredListSkeleton: typings.react.mod.FC[
+inline def StructuredListSkeleton: typings.react.mod.FC[
 typings.carbonComponentsReact.structuredListSkeletonMod.StructuredListSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StructuredListSkeleton").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.structuredListSkeletonMod.StructuredListSkeletonProps]]
 
-@scala.inline
-def Switch: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def Switch: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLButtonElement, 
 typings.carbonComponentsReact.switchSwitchMod.SwitchProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Switch").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLButtonElement, 
 typings.carbonComponentsReact.switchSwitchMod.SwitchProps]]
 
-@scala.inline
-def Switcher: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def Switcher: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLUListElement, 
 typings.carbonComponentsReact.switcherMod.SwitcherProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Switcher").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLUListElement, 
 typings.carbonComponentsReact.switcherMod.SwitcherProps]]
 
-@scala.inline
-def SwitcherDivider: typings.react.mod.FC[typings.carbonComponentsReact.switcherDividerMod.SwitcherDividerProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SwitcherDivider").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.switcherDividerMod.SwitcherDividerProps]]
+inline def SwitcherDivider: typings.react.mod.FC[typings.carbonComponentsReact.switcherDividerMod.SwitcherDividerProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SwitcherDivider").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.switcherDividerMod.SwitcherDividerProps]]
 
-@scala.inline
-def SwitcherItem[E /* <: js.Object */, R](
+inline def SwitcherItem[E /* <: js.Object */, R](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[R, typings.carbonComponentsReact.switcherItemMod.SwitcherItemProps[E]]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("SwitcherItem")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TabContent: typings.react.mod.FC[typings.carbonComponentsReact.tabContentTabContentMod.TabContentProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TabContent").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tabContentTabContentMod.TabContentProps]]
+inline def TabContent: typings.react.mod.FC[typings.carbonComponentsReact.tabContentTabContentMod.TabContentProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TabContent").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tabContentTabContentMod.TabContentProps]]
 
-@scala.inline
-def Table: typings.react.mod.FC[typings.carbonComponentsReact.tableMod.TableProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Table").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableMod.TableProps]]
+inline def Table: typings.react.mod.FC[typings.carbonComponentsReact.tableMod.TableProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Table").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableMod.TableProps]]
 
-@scala.inline
-def TableActionList: typings.react.mod.FC[typings.carbonComponentsReact.tableActionListMod.TableActionListProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableActionList").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableActionListMod.TableActionListProps]]
+inline def TableActionList: typings.react.mod.FC[typings.carbonComponentsReact.tableActionListMod.TableActionListProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableActionList").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableActionListMod.TableActionListProps]]
 
 // tslint:disable:unified-signatures breaks certain usages
 //
@@ -9068,1584 +7559,1362 @@ def TableActionList: typings.react.mod.FC[typings.carbonComponentsReact.tableAct
 // export const DefaultButton = Button as React.FC<ButtonDefaultProps>;
 // export const AnchorButton = Button as React.FC<ButtonAnchorProps>;
 // or just create a wrapper component.
-@scala.inline
-def TableBatchAction(
+inline def TableBatchAction(
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   typings.std.HTMLAnchorElement | typings.std.HTMLButtonElement, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonAnchorProps & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps & typings.carbonComponentsReact.buttonButtonMod.ButtonDefaultProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_T_JSXElementConstructorAnyR[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */, R](
+inline def TableBatchAction_T_JSXElementConstructorAnyR[T /* <: typings.react.mod.JSXElementConstructor[js.Any] */, R](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonCustomComponentProps[T] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_a[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_a[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.a] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_abbr[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_abbr[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.abbr] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_address[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_address[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.address] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_animate[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_animate[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animate] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_animateMotion[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_animateMotion[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateMotion] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_animateTransform[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_animateTransform[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.animateTransform] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_area[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_area[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.area] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_article[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_article[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.article] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_aside[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_aside[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.aside] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_audio[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_audio[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.audio] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_b[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_b[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.b] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_base[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_base[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.base] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_bdi[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_bdi[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdi] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_bdo[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_bdo[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.bdo] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_big[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_big[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.big] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_blockquote[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_blockquote[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.blockquote] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_body[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_body[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.body] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_br[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_br[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.br] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_button[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_button[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.button] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_canvas[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_canvas[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.canvas] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_caption[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_caption[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.caption] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_circle[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_circle[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.circle] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_cite[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_cite[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.cite] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_clipPath[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_clipPath[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_code[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_code[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.code] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_col[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_col[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.col] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_colgroup[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_colgroup[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.colgroup] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_data[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_data[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.data] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_datalist[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_datalist[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.datalist] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_dd[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_dd[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dd] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_defs[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_defs[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.defs] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_del[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_del[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.del] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_desc[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_desc[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.desc_] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_details[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_details[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.details] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_dfn[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_dfn[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dfn] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_dialog[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_dialog[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dialog] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_div[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_div[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.div] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_dl[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_dl[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dl] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_dt[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_dt[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.dt] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_ellipse[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_ellipse[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ellipse] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_em[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_em[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.em] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_embed[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_embed[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.embed] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feBlend[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feBlend[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feBlend] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feColorMatrix[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feColorMatrix[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feColorMatrix] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feComponentTransfer[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feComponentTransfer[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComponentTransfer] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feComposite[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feComposite[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feComposite] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feConvolveMatrix[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feConvolveMatrix[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feConvolveMatrix] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feDiffuseLighting[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feDiffuseLighting[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDiffuseLighting] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feDisplacementMap[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feDisplacementMap[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDisplacementMap] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feDistantLight[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feDistantLight[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDistantLight] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feDropShadow[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feDropShadow[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feDropShadow] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feFlood[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feFlood[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFlood] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feFuncA[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feFuncA[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncA] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feFuncB[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feFuncB[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncB] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feFuncG[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feFuncG[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncG] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feFuncR[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feFuncR[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feFuncR] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feGaussianBlur[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feGaussianBlur[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feGaussianBlur] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feImage[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feImage[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feImage] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feMerge[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feMerge[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMerge] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feMergeNode[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feMergeNode[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMergeNode] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feMorphology[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feMorphology[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feMorphology] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feOffset[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feOffset[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feOffset] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_fePointLight[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_fePointLight[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fePointLight] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feSpecularLighting[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feSpecularLighting[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpecularLighting] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feSpotLight[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feSpotLight[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feSpotLight] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feTile[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feTile[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTile] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_feTurbulence[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_feTurbulence[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.feTurbulence] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_fieldset[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_fieldset[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.fieldset] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_figcaption[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_figcaption[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figcaption] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_figure[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_figure[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.figure] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_filter[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_filter[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.filter] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_footer[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_footer[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.footer] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_foreignObject[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_foreignObject[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.foreignObject] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_form[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_form[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.form] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_g[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_g[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.g] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_h1[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_h1[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h1] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_h2[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_h2[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h2] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_h3[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_h3[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h3] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_h4[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_h4[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h4] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_h5[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_h5[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h5] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_h6[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_h6[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.h6] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_head[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_head[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.head] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_header[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_header[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.header] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_hgroup[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_hgroup[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hgroup] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_hr[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_hr[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.hr] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_html[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_html[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.html] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_i[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_i[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.i] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_iframe[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_iframe[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.iframe] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_image[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_image[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.image] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_img[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_img[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.img] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_input[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_input[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.input] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_ins[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_ins[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ins] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_kbd[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_kbd[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.kbd] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_keygen[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_keygen[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.keygen] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_label[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_label[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.label] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_legend[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_legend[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.legend] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_li[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_li[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.li] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_line[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_line[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.line] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_linearGradient[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_linearGradient[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.linearGradient] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_link[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_link[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.link] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_main[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_main[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.main] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_map[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_map[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.map] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_mark[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_mark[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mark] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_marker[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_marker[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.marker] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_mask[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_mask[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mask] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_menu[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_menu[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menu] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_menuitem[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_menuitem[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.menuitem] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_meta[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_meta[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meta] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_metadata[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_metadata[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.metadata] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_meter[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_meter[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.meter] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_mpath[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_mpath[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.mpath] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_nav[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_nav[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.nav] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_noindex[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_noindex[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noindex] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_noscript[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_noscript[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.noscript] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_object[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_object[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`object`] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_ol[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_ol[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ol] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_optgroup[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_optgroup[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.optgroup] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_option[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_option[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.option] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_output[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_output[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.output] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_p[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_p[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.p] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_param[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_param[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.param] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_path[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_path[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.path] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_pattern[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_pattern[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pattern] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_picture[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_picture[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.picture] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_polygon[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_polygon[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polygon] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_polyline[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_polyline[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.polyline] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_pre[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_pre[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.pre] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_progress[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_progress[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.progress] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_q[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_q[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.q] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_radialGradient[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_radialGradient[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.radialGradient] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_rect[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_rect[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rect] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_rp[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_rp[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rp] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_rt[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_rt[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.rt] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_ruby[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_ruby[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ruby] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_s[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_s[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.s] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_samp[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_samp[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.samp] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_script[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_script[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.script] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_section[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_section[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.section] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_select[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_select[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.select] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_slot[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_slot[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.slot] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_small[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_small[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.small] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_source[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_source[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.source] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_span[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_span[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.span] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_stop[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_stop[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.stop] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_strong[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_strong[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.strong] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_style[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_style[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.style] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_sub[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_sub[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sub] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_summary[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_summary[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.summary] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_sup[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_sup[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.sup] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_svg[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_svg[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.svg] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_switch[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_switch[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.switch] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_symbol[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_symbol[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.symbol] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_table[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_table[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.table] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_tbody[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_tbody[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tbody] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_td[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_td[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.td] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_template[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_template[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.template] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_text[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_text[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.text] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_textPath[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_textPath[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textPath] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_textarea[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_textarea[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.textarea] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_tfoot[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_tfoot[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tfoot] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_th[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_th[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.th] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_thead[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_thead[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.thead] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_time[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_time[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.time] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_title[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_title[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.title] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_tr[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_tr[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tr] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_track[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_track[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.track] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_tspan[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_tspan[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.tspan] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_u[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_u[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.u] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_ul[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_ul[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.ul] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_use[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_use[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.use] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_var[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_var[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.`var`] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_video[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_video[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.video] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_view[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_view[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.view] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_wbr[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_wbr[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.wbr] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchAction_webview[R /* <: typings.std.HTMLElement */](
+inline def TableBatchAction_webview[R /* <: typings.std.HTMLElement */](
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   R, 
   typings.carbonComponentsReact.buttonButtonMod.ButtonIntrinsicProps[typings.carbonComponentsReact.carbonComponentsReactStrings.webview] & typings.carbonComponentsReact.buttonButtonMod.ButtonKindProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableBatchActions: typings.carbonComponentsReact.tableBatchActionsMod.TableBatchActionsFC = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableBatchActions").asInstanceOf[typings.carbonComponentsReact.tableBatchActionsMod.TableBatchActionsFC]
+inline def TableBatchActions: typings.carbonComponentsReact.tableBatchActionsMod.TableBatchActionsFC = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableBatchActions").asInstanceOf[typings.carbonComponentsReact.tableBatchActionsMod.TableBatchActionsFC]
 
-@scala.inline
-def TableBody: typings.react.mod.FC[typings.carbonComponentsReact.tableBodyMod.TableBodyProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableBody").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableBodyMod.TableBodyProps]]
+inline def TableBody: typings.react.mod.FC[typings.carbonComponentsReact.tableBodyMod.TableBodyProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableBody").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableBodyMod.TableBodyProps]]
 
-@scala.inline
-def TableCell: typings.react.mod.FC[typings.carbonComponentsReact.tableCellMod.TableCellProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableCell").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableCellMod.TableCellProps]]
+inline def TableCell: typings.react.mod.FC[typings.carbonComponentsReact.tableCellMod.TableCellProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableCell").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableCellMod.TableCellProps]]
 
-@scala.inline
-def TableContainer: typings.react.mod.FC[typings.carbonComponentsReact.tableContainerMod.TableContainerProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableContainer").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableContainerMod.TableContainerProps]]
+inline def TableContainer: typings.react.mod.FC[typings.carbonComponentsReact.tableContainerMod.TableContainerProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableContainer").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableContainerMod.TableContainerProps]]
 
-@scala.inline
-def TableExpandHeader: typings.react.mod.FC[typings.carbonComponentsReact.tableExpandHeaderMod.TableExpandHeaderProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableExpandHeader").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableExpandHeaderMod.TableExpandHeaderProps]]
+inline def TableExpandHeader: typings.react.mod.FC[typings.carbonComponentsReact.tableExpandHeaderMod.TableExpandHeaderProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableExpandHeader").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableExpandHeaderMod.TableExpandHeaderProps]]
 
-@scala.inline
-def TableExpandRow: typings.react.mod.FC[typings.carbonComponentsReact.tableExpandRowMod.TableExpandRowProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableExpandRow").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableExpandRowMod.TableExpandRowProps]]
+inline def TableExpandRow: typings.react.mod.FC[typings.carbonComponentsReact.tableExpandRowMod.TableExpandRowProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableExpandRow").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableExpandRowMod.TableExpandRowProps]]
 
-@scala.inline
-def TableExpandedRow: typings.react.mod.FC[typings.carbonComponentsReact.tableExpandedRowMod.TableExpandedRowProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableExpandedRow").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableExpandedRowMod.TableExpandedRowProps]]
+inline def TableExpandedRow: typings.react.mod.FC[typings.carbonComponentsReact.tableExpandedRowMod.TableExpandedRowProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableExpandedRow").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableExpandedRowMod.TableExpandedRowProps]]
 
-@scala.inline
-def TableHead: typings.react.mod.FC[typings.carbonComponentsReact.tableHeadMod.TableHeadProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableHead").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableHeadMod.TableHeadProps]]
+inline def TableHead: typings.react.mod.FC[typings.carbonComponentsReact.tableHeadMod.TableHeadProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableHead").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableHeadMod.TableHeadProps]]
 
-@scala.inline
-def TableHeader: typings.carbonComponentsReact.tableHeaderMod.TableHeaderFC = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableHeader").asInstanceOf[typings.carbonComponentsReact.tableHeaderMod.TableHeaderFC]
+inline def TableHeader: typings.carbonComponentsReact.tableHeaderMod.TableHeaderFC = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableHeader").asInstanceOf[typings.carbonComponentsReact.tableHeaderMod.TableHeaderFC]
 
-@scala.inline
-def TableRow: typings.react.mod.FC[typings.carbonComponentsReact.tableRowMod.TableRowProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableRow").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableRowMod.TableRowProps]]
+inline def TableRow: typings.react.mod.FC[typings.carbonComponentsReact.tableRowMod.TableRowProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableRow").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableRowMod.TableRowProps]]
 
-@scala.inline
-def TableSelectAll: typings.react.mod.FC[typings.carbonComponentsReact.tableSelectAllMod.TableSelectAllProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableSelectAll").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableSelectAllMod.TableSelectAllProps]]
+inline def TableSelectAll: typings.react.mod.FC[typings.carbonComponentsReact.tableSelectAllMod.TableSelectAllProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableSelectAll").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableSelectAllMod.TableSelectAllProps]]
 
-@scala.inline
-def TableSelectRow: typings.react.mod.FC[typings.carbonComponentsReact.tableSelectRowMod.TableSelectRowProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableSelectRow").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableSelectRowMod.TableSelectRowProps]]
+inline def TableSelectRow: typings.react.mod.FC[typings.carbonComponentsReact.tableSelectRowMod.TableSelectRowProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableSelectRow").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableSelectRowMod.TableSelectRowProps]]
 
-@scala.inline
-def TableToolbar: typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarMod.TableToolbarProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableToolbar").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarMod.TableToolbarProps]]
+inline def TableToolbar: typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarMod.TableToolbarProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableToolbar").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarMod.TableToolbarProps]]
 
 // tslint:disable:unified-signatures
-@scala.inline
-def TableToolbarAction(
+inline def TableToolbarAction(
   props: typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps[
   typings.std.HTMLAnchorElement | typings.std.HTMLButtonElement, 
   typings.carbonComponentsReact.tableToolbarActionMod.TableToolbarActionAnchorProps | typings.carbonComponentsReact.tableToolbarActionMod.TableToolbarActionButtonProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("TableToolbarAction")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TableToolbarContent: typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarContentMod.TableToolbarContentProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableToolbarContent").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarContentMod.TableToolbarContentProps]]
+inline def TableToolbarContent: typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarContentMod.TableToolbarContentProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableToolbarContent").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarContentMod.TableToolbarContentProps]]
 
-@scala.inline
-def TableToolbarMenu: typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarMenuMod.TableToolbarMenuProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableToolbarMenu").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarMenuMod.TableToolbarMenuProps]]
+inline def TableToolbarMenu: typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarMenuMod.TableToolbarMenuProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableToolbarMenu").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarMenuMod.TableToolbarMenuProps]]
 
-@scala.inline
-def TableToolbarSearch: typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarSearchProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableToolbarSearch").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarSearchProps]]
+inline def TableToolbarSearch: typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarSearchProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TableToolbarSearch").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarSearchProps]]
 
-@scala.inline
-def TabsSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.tabsSkeletonMod.TabsSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TabsSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tabsSkeletonMod.TabsSkeletonProps]]
+inline def TabsSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.tabsSkeletonMod.TabsSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TabsSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tabsSkeletonMod.TabsSkeletonProps]]
 
 // tslint:disable:unified-signatures
-@scala.inline
-def Tag(
+inline def Tag(
   props: typings.carbonComponentsReact.typingsSharedMod.FCProps[
   typings.carbonComponentsReact.tagTagMod.ChipTagProps | typings.carbonComponentsReact.tagTagMod.FilterTagProps
 ]
 ): typings.carbonComponentsReact.typingsSharedMod.FCReturn = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Tag")(props.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.FCReturn]
 
-@scala.inline
-def TagSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.tagSkeletonMod.TagSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TagSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tagSkeletonMod.TagSkeletonProps]]
+inline def TagSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.tagSkeletonMod.TagSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TagSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tagSkeletonMod.TagSkeletonProps]]
 
-@scala.inline
-def TextArea: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def TextArea: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLTextAreaElement, 
 typings.carbonComponentsReact.textAreaTextAreaMod.TextAreaProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextArea").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLTextAreaElement, 
 typings.carbonComponentsReact.textAreaTextAreaMod.TextAreaProps]]
 
-@scala.inline
-def TextAreaSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.textAreaSkeletonMod.TextAreaSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextAreaSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.textAreaSkeletonMod.TextAreaSkeletonProps]]
+inline def TextAreaSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.textAreaSkeletonMod.TextAreaSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextAreaSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.textAreaSkeletonMod.TextAreaSkeletonProps]]
 
-@scala.inline
-def TextInput: typings.carbonComponentsReact.textInputTextInputMod.TextInputFC = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextInput").asInstanceOf[typings.carbonComponentsReact.textInputTextInputMod.TextInputFC]
+inline def TextInput: typings.carbonComponentsReact.textInputTextInputMod.TextInputFC = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextInput").asInstanceOf[typings.carbonComponentsReact.textInputTextInputMod.TextInputFC]
 
-@scala.inline
-def TextInputSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.textInputSkeletonMod.TextInputSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextInputSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.textInputSkeletonMod.TextInputSkeletonProps]]
+inline def TextInputSkeleton: typings.react.mod.FC[typings.carbonComponentsReact.textInputSkeletonMod.TextInputSkeletonProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TextInputSkeleton").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.textInputSkeletonMod.TextInputSkeletonProps]]
 
-@scala.inline
-def ToastNotification: typings.react.mod.FC[typings.carbonComponentsReact.notificationNotificationMod.ToastNotificationProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToastNotification").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.notificationNotificationMod.ToastNotificationProps]]
+inline def ToastNotification: typings.react.mod.FC[typings.carbonComponentsReact.notificationNotificationMod.ToastNotificationProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToastNotification").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.notificationNotificationMod.ToastNotificationProps]]
 
-@scala.inline
-def ToggleSmall: typings.react.mod.FC[typings.carbonComponentsReact.toggleSmallToggleSmallMod.ToggleSmallProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToggleSmall").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.toggleSmallToggleSmallMod.ToggleSmallProps]]
+inline def ToggleSmall: typings.react.mod.FC[typings.carbonComponentsReact.toggleSmallToggleSmallMod.ToggleSmallProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToggleSmall").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.toggleSmallToggleSmallMod.ToggleSmallProps]]
 
 /**
   * @deprecated
   */
-@scala.inline
-def Toolbar: typings.react.mod.FC[typings.carbonComponentsReact.toolbarToolbarMod.ToolbarProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Toolbar").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.toolbarToolbarMod.ToolbarProps]]
+inline def Toolbar: typings.react.mod.FC[typings.carbonComponentsReact.toolbarToolbarMod.ToolbarProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Toolbar").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.toolbarToolbarMod.ToolbarProps]]
 
-@scala.inline
-def ToolbarDivider: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[typings.std.HTMLHRElement, js.Object] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToolbarDivider").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[typings.std.HTMLHRElement, js.Object]]
+inline def ToolbarDivider: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[typings.std.HTMLHRElement, js.Object] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToolbarDivider").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[typings.std.HTMLHRElement, js.Object]]
 
-@scala.inline
-def ToolbarItem: typings.react.mod.FC[typings.carbonComponentsReact.toolbarToolbarMod.ToolbarItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToolbarItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.toolbarToolbarMod.ToolbarItemProps]]
+inline def ToolbarItem: typings.react.mod.FC[typings.carbonComponentsReact.toolbarToolbarMod.ToolbarItemProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToolbarItem").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.toolbarToolbarMod.ToolbarItemProps]]
 
-@scala.inline
-def ToolbarOption: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def ToolbarOption: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLLIElement, 
 typings.carbonComponentsReact.toolbarToolbarMod.ToolbarOptionProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToolbarOption").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLLIElement, 
 typings.carbonComponentsReact.toolbarToolbarMod.ToolbarOptionProps]]
 
-@scala.inline
-def ToolbarTitle: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
+inline def ToolbarTitle: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLLIElement, 
 typings.carbonComponentsReact.toolbarToolbarMod.ToolbarTitleProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ToolbarTitle").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[
 typings.std.HTMLLIElement, 
 typings.carbonComponentsReact.toolbarToolbarMod.ToolbarTitleProps]]
 
-@scala.inline
-def Tooltip: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[js.Any, typings.carbonComponentsReact.tooltipTooltipMod.TooltipProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Tooltip").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[js.Any, typings.carbonComponentsReact.tooltipTooltipMod.TooltipProps]]
+inline def Tooltip: typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[js.Any, typings.carbonComponentsReact.tooltipTooltipMod.TooltipProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Tooltip").asInstanceOf[typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn[js.Any, typings.carbonComponentsReact.tooltipTooltipMod.TooltipProps]]
 
-@scala.inline
-def TooltipDefinition: typings.react.mod.FC[
+inline def TooltipDefinition: typings.react.mod.FC[
 typings.carbonComponentsReact.tooltipDefinitionTooltipDefinitionMod.TooltipDefinitionProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TooltipDefinition").asInstanceOf[typings.react.mod.FC[
 typings.carbonComponentsReact.tooltipDefinitionTooltipDefinitionMod.TooltipDefinitionProps]]
 
-@scala.inline
-def TooltipIcon: typings.react.mod.FC[typings.carbonComponentsReact.tooltipIconTooltipIconMod.TooltipIconProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TooltipIcon").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tooltipIconTooltipIconMod.TooltipIconProps]]
+inline def TooltipIcon: typings.react.mod.FC[typings.carbonComponentsReact.tooltipIconTooltipIconMod.TooltipIconProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TooltipIcon").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.tooltipIconTooltipIconMod.TooltipIconProps]]
 
-@scala.inline
-def UnorderedList: typings.react.mod.FC[typings.carbonComponentsReact.unorderedListUnorderedListMod.UnorderedListProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnorderedList").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.unorderedListUnorderedListMod.UnorderedListProps]]
+inline def UnorderedList: typings.react.mod.FC[typings.carbonComponentsReact.unorderedListUnorderedListMod.UnorderedListProps] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("UnorderedList").asInstanceOf[typings.react.mod.FC[typings.carbonComponentsReact.unorderedListUnorderedListMod.UnorderedListProps]]
 
-@scala.inline
-def createCustomSideNavLink_element[E /* <: js.Object */](
+inline def createCustomSideNavLink_element[E /* <: js.Object */](
   element: /* import warning: importer.ImportType#apply Failed type conversion: carbon-components-react.carbon-components-react/lib/components/UIShell/SideNavLink.SideNavLinkProps<carbon-components-react.carbon-components-react/typings/shared.ReactAnchorAttr<std.HTMLAnchorElement>>['element'] */ js.Any
 ): typings.carbonComponentsReact.sideNavLinkMod.SideNavLinkFC[
 typings.std.Omit[E, typings.carbonComponentsReact.carbonComponentsReactStrings.element]] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createCustomSideNavLink")(element.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.sideNavLinkMod.SideNavLinkFC[
 typings.std.Omit[E, typings.carbonComponentsReact.carbonComponentsReactStrings.element]]]
 
-@scala.inline
-def findIcon[T /* <: typings.carbonComponentsReact.anon.Name */](name: java.lang.String): typings.carbonComponentsReact.carbonComponentsReactBooleans.`false` | T = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactBooleans.`false` | T]
-@scala.inline
-def findIcon[T /* <: typings.carbonComponentsReact.anon.Name */](name: java.lang.String, iconsObj: js.Array[T]): typings.carbonComponentsReact.carbonComponentsReactBooleans.`false` | T = (typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any], iconsObj.asInstanceOf[js.Any])).asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactBooleans.`false` | T]
+inline def findIcon[T /* <: typings.carbonComponentsReact.anon.Name */](name: java.lang.String): typings.carbonComponentsReact.carbonComponentsReactBooleans.`false` | T = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any]).asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactBooleans.`false` | T]
+inline def findIcon[T /* <: typings.carbonComponentsReact.anon.Name */](name: java.lang.String, iconsObj: js.Array[T]): typings.carbonComponentsReact.carbonComponentsReactBooleans.`false` | T = (typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any], iconsObj.asInstanceOf[js.Any])).asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactBooleans.`false` | T]
 
-@scala.inline
-def getSvgData[R](iconName: java.lang.String): R = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSvgData")(iconName.asInstanceOf[js.Any]).asInstanceOf[R]
+inline def getSvgData[R](iconName: java.lang.String): R = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSvgData")(iconName.asInstanceOf[js.Any]).asInstanceOf[R]
 
-@scala.inline
-def icons: js.Any = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("icons").asInstanceOf[js.Any]
+inline def icons: js.Any = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("icons").asInstanceOf[js.Any]
 
-@scala.inline
-def isPrefixed(name: java.lang.String): scala.Boolean = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isPrefixed")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isPrefixed(name: java.lang.String): scala.Boolean = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isPrefixed")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
 
-@scala.inline
-def setIconsList[T /* <: typings.carbonComponentsReact.anon.Name */](list: js.Array[T]): scala.Unit = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setIconsList")(list.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setIconsList[T /* <: typings.carbonComponentsReact.anon.Name */](list: js.Array[T]): scala.Unit = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setIconsList")(list.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def svgShapes[D](svgData: D): js.Array[typings.react.mod.ReactNode | typings.react.mod.ReactNodeArray] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("svgShapes")(svgData.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.react.mod.ReactNode | typings.react.mod.ReactNodeArray]]
+inline def svgShapes[D](svgData: D): js.Array[typings.react.mod.ReactNode | typings.react.mod.ReactNodeArray] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("svgShapes")(svgData.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.react.mod.ReactNode | typings.react.mod.ReactNodeArray]]
 
-@scala.inline
-def types: js.Array[typings.carbonComponentsReact.tagTagMod.TagTypeName] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("types").asInstanceOf[js.Array[typings.carbonComponentsReact.tagTagMod.TagTypeName]]
+inline def types: js.Array[typings.carbonComponentsReact.tagTagMod.TagTypeName] = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("types").asInstanceOf[js.Array[typings.carbonComponentsReact.tagTagMod.TagTypeName]]
 
-@scala.inline
-def unstableTreeView: typings.carbonComponentsReact.treeViewTreeViewMod.TreeViewFC = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("unstable_TreeView").asInstanceOf[typings.carbonComponentsReact.treeViewTreeViewMod.TreeViewFC]
+inline def unstableTreeView: typings.carbonComponentsReact.treeViewTreeViewMod.TreeViewFC = typings.carbonComponentsReact.mod.^.asInstanceOf[js.Dynamic].selectDynamic("unstable_TreeView").asInstanceOf[typings.carbonComponentsReact.treeViewTreeViewMod.TreeViewFC]

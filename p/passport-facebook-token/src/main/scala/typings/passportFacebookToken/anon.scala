@@ -16,23 +16,18 @@ object anon {
   }
   object FamilyName {
     
-    @scala.inline
-    def apply(familyName: String, givenName: String, middleName: String): FamilyName = {
+    inline def apply(familyName: String, givenName: String, middleName: String): FamilyName = {
       val __obj = js.Dynamic.literal(familyName = familyName.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any], middleName = middleName.asInstanceOf[js.Any])
       __obj.asInstanceOf[FamilyName]
     }
     
-    @scala.inline
-    implicit class FamilyNameMutableBuilder[Self <: FamilyName] (val x: Self) extends AnyVal {
+    extension [Self <: FamilyName](x: Self) {
       
-      @scala.inline
-      def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+      inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+      inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
+      inline def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
     }
   }
 }

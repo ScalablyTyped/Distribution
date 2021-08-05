@@ -10,8 +10,7 @@ object recognizersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPanRecognizer(direction: String, thresh: Double, maxAngle: Double): PanRecognizer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPanRecognizer")(direction.asInstanceOf[js.Any], thresh.asInstanceOf[js.Any], maxAngle.asInstanceOf[js.Any])).asInstanceOf[PanRecognizer]
+  inline def createPanRecognizer(direction: String, thresh: Double, maxAngle: Double): PanRecognizer = (^.asInstanceOf[js.Dynamic].applyDynamic("createPanRecognizer")(direction.asInstanceOf[js.Any], thresh.asInstanceOf[js.Any], maxAngle.asInstanceOf[js.Any])).asInstanceOf[PanRecognizer]
   
   trait PanRecognizer extends StObject {
     
@@ -25,8 +24,7 @@ object recognizersMod {
   }
   object PanRecognizer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       detect: (Double, Double) => Boolean,
       getDirection: () => Double,
       isGesture: () => Boolean,
@@ -36,20 +34,15 @@ object recognizersMod {
       __obj.asInstanceOf[PanRecognizer]
     }
     
-    @scala.inline
-    implicit class PanRecognizerMutableBuilder[Self <: PanRecognizer] (val x: Self) extends AnyVal {
+    extension [Self <: PanRecognizer](x: Self) {
       
-      @scala.inline
-      def setDetect(value: (Double, Double) => Boolean): Self = StObject.set(x, "detect", js.Any.fromFunction2(value))
+      inline def setDetect(value: (Double, Double) => Boolean): Self = StObject.set(x, "detect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDirection(value: () => Double): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
+      inline def setGetDirection(value: () => Double): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsGesture(value: () => Boolean): Self = StObject.set(x, "isGesture", js.Any.fromFunction0(value))
+      inline def setIsGesture(value: () => Boolean): Self = StObject.set(x, "isGesture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: (Double, Double) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+      inline def setStart(value: (Double, Double) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     }
   }
 }

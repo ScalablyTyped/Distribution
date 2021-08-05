@@ -15,8 +15,7 @@ trait Json
      with _KnuddelsEvent
 object Json {
   
-  @scala.inline
-  def apply(): Json = {
+  inline def apply(): Json = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Json]
   }

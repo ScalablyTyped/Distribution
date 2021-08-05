@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Self extends StObject
 object Self {
   
-  @scala.inline
-  def apply: SelfDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("Self").asInstanceOf[SelfDecorator]
+  inline def apply: SelfDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("Self").asInstanceOf[SelfDecorator]
 }

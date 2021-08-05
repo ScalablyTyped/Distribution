@@ -15,10 +15,8 @@ object ConversionDictionaryType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def HANGUL_HANJA: `1` = 1.asInstanceOf[`1`]
+    inline def HANGUL_HANJA: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SCHINESE_TCHINESE: `2` = 2.asInstanceOf[`2`]
+    inline def SCHINESE_TCHINESE: `2` = 2.asInstanceOf[`2`]
   }
 }

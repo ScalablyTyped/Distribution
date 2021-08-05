@@ -39,9 +39,9 @@ object appServiceRegistrationMod {
     @JSName("addRegexPattern")
     def addRegexPattern_users(`type`: users, regex: String, exclusive: Boolean): Unit = js.native
     
-    var asToken: js.Any = js.native
+    /* private */ var asToken: js.Any = js.native
     
-    var cachedRegex: js.Any = js.native
+    /* private */ var cachedRegex: js.Any = js.native
     
     /**
       * Get the token the app service will use to communicate with the homeserver.
@@ -85,14 +85,14 @@ object appServiceRegistrationMod {
       */
     def getSenderLocalpart(): String | Null = js.native
     
-    var hsToken: js.Any = js.native
+    /* private */ var hsToken: js.Any = js.native
     
     /**
       * Construct a new application service registration.
       * @constructor
       * @param {string} appServiceUrl The base URL the AS can be reached via.
       */
-    var id: js.Any = js.native
+    /* private */ var id: js.Any = js.native
     
     /**
       * Check if a room alias meets this registration regex.
@@ -126,7 +126,7 @@ object appServiceRegistrationMod {
       */
     def isUserMatch(userId: String, onlyExclusive: Boolean): Boolean = js.native
     
-    var namespaces: js.Any = js.native
+    /* private */ var namespaces: js.Any = js.native
     
     /**
       * Output this registration to the given file name.
@@ -135,7 +135,7 @@ object appServiceRegistrationMod {
       */
     def outputAsYaml(filename: String): Unit = js.native
     
-    var protocols: js.Any = js.native
+    /* private */ var protocols: js.Any = js.native
     
     /**
       * **Experimental**
@@ -151,9 +151,9 @@ object appServiceRegistrationMod {
       */
     def pushEphemeralEnabled(): Boolean = js.native
     
-    var rateLimited: js.Any = js.native
+    /* private */ var rateLimited: js.Any = js.native
     
-    var senderLocalpart: js.Any = js.native
+    /* private */ var senderLocalpart: js.Any = js.native
     
     /**
       * Set the token the app service will use to communicate with the homeserver.
@@ -198,7 +198,7 @@ object appServiceRegistrationMod {
       */
     def setSenderLocalpart(localpart: String): Unit = js.native
     
-    var url: js.Any = js.native
+    /* private */ var url: js.Any = js.native
   }
   /* static members */
   object AppServiceRegistration {
@@ -213,15 +213,13 @@ object appServiceRegistrationMod {
       * @param obj The registration object
       * @return The registration.
       */
-    @scala.inline
-    def fromObject(obj: AppServiceOutput): AppServiceRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[AppServiceRegistration]
+    inline def fromObject(obj: AppServiceOutput): AppServiceRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[AppServiceRegistration]
     
     /**
       * Generate a random token.
       * @return {string} A randomly generated token.
       */
-    @scala.inline
-    def generateToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateToken")().asInstanceOf[String]
+    inline def generateToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateToken")().asInstanceOf[String]
   }
   
   trait AppServiceOutput extends StObject {
@@ -247,62 +245,44 @@ object appServiceRegistrationMod {
   }
   object AppServiceOutput {
     
-    @scala.inline
-    def apply(as_token: String, hs_token: String, id: String, sender_localpart: String): AppServiceOutput = {
+    inline def apply(as_token: String, hs_token: String, id: String, sender_localpart: String): AppServiceOutput = {
       val __obj = js.Dynamic.literal(as_token = as_token.asInstanceOf[js.Any], hs_token = hs_token.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sender_localpart = sender_localpart.asInstanceOf[js.Any], url = null)
       __obj.asInstanceOf[AppServiceOutput]
     }
     
-    @scala.inline
-    implicit class AppServiceOutputMutableBuilder[Self <: AppServiceOutput] (val x: Self) extends AnyVal {
+    extension [Self <: AppServiceOutput](x: Self) {
       
-      @scala.inline
-      def setAs_token(value: String): Self = StObject.set(x, "as_token", value.asInstanceOf[js.Any])
+      inline def setAs_token(value: String): Self = StObject.set(x, "as_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeDotsorunomeDotmsc2409Dotpush_ephemeral(value: Boolean): Self = StObject.set(x, "de.sorunome.msc2409.push_ephemeral", value.asInstanceOf[js.Any])
+      inline def setDeDotsorunomeDotmsc2409Dotpush_ephemeral(value: Boolean): Self = StObject.set(x, "de.sorunome.msc2409.push_ephemeral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeDotsorunomeDotmsc2409Dotpush_ephemeralUndefined: Self = StObject.set(x, "de.sorunome.msc2409.push_ephemeral", js.undefined)
+      inline def setDeDotsorunomeDotmsc2409Dotpush_ephemeralUndefined: Self = StObject.set(x, "de.sorunome.msc2409.push_ephemeral", js.undefined)
       
-      @scala.inline
-      def setHs_token(value: String): Self = StObject.set(x, "hs_token", value.asInstanceOf[js.Any])
+      inline def setHs_token(value: String): Self = StObject.set(x, "hs_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaces(value: Aliases): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+      inline def setNamespaces(value: Aliases): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
+      inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
       
-      @scala.inline
-      def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsNull: Self = StObject.set(x, "protocols", null)
+      inline def setProtocolsNull: Self = StObject.set(x, "protocols", null)
       
-      @scala.inline
-      def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+      inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      @scala.inline
-      def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
       
-      @scala.inline
-      def setRate_limited(value: Boolean): Self = StObject.set(x, "rate_limited", value.asInstanceOf[js.Any])
+      inline def setRate_limited(value: Boolean): Self = StObject.set(x, "rate_limited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRate_limitedUndefined: Self = StObject.set(x, "rate_limited", js.undefined)
+      inline def setRate_limitedUndefined: Self = StObject.set(x, "rate_limited", js.undefined)
       
-      @scala.inline
-      def setSender_localpart(value: String): Self = StObject.set(x, "sender_localpart", value.asInstanceOf[js.Any])
+      inline def setSender_localpart(value: String): Self = StObject.set(x, "sender_localpart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlNull: Self = StObject.set(x, "url", null)
+      inline def setUrlNull: Self = StObject.set(x, "url", null)
     }
   }
   
@@ -314,20 +294,16 @@ object appServiceRegistrationMod {
   }
   object RegexObj {
     
-    @scala.inline
-    def apply(exclusive: Boolean, regex: String): RegexObj = {
+    inline def apply(exclusive: Boolean, regex: String): RegexObj = {
       val __obj = js.Dynamic.literal(exclusive = exclusive.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegexObj]
     }
     
-    @scala.inline
-    implicit class RegexObjMutableBuilder[Self <: RegexObj] (val x: Self) extends AnyVal {
+    extension [Self <: RegexObj](x: Self) {
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
 }

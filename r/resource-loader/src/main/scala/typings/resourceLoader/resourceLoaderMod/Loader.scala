@@ -264,8 +264,7 @@ object Loader {
     * @return {Loader} Returns itself.
     */
   /* static member */
-  @scala.inline
-  def pre(fn: js.Function1[/* repeated */ js.Any, js.Any]): Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("pre")(fn.asInstanceOf[js.Any]).asInstanceOf[Loader]
+  inline def pre(fn: js.Function1[/* repeated */ js.Any, js.Any]): Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("pre")(fn.asInstanceOf[js.Any]).asInstanceOf[Loader]
   
   /**
     * Sets up a middleware function that will run *after* the
@@ -276,8 +275,7 @@ object Loader {
     * @return {Loader} Returns itself.
     */
   /* static member */
-  @scala.inline
-  def use(fn: js.Function1[/* repeated */ js.Any, js.Any]): Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(fn.asInstanceOf[js.Any]).asInstanceOf[Loader]
+  inline def use(fn: js.Function1[/* repeated */ js.Any, js.Any]): Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(fn.asInstanceOf[js.Any]).asInstanceOf[Loader]
   
   /**
     * When the loader completes loading resources it dispatches this callback.

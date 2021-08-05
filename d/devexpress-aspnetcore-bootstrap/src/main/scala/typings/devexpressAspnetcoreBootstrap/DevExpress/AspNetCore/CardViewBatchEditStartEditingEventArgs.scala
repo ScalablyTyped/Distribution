@@ -16,8 +16,7 @@ trait CardViewBatchEditStartEditingEventArgs
 }
 object CardViewBatchEditStartEditingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     cardValues: js.Any,
     focusedColumn: BootstrapCardViewColumn,
@@ -28,16 +27,12 @@ object CardViewBatchEditStartEditingEventArgs {
     __obj.asInstanceOf[CardViewBatchEditStartEditingEventArgs]
   }
   
-  @scala.inline
-  implicit class CardViewBatchEditStartEditingEventArgsMutableBuilder[Self <: CardViewBatchEditStartEditingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CardViewBatchEditStartEditingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
+    inline def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusedColumn(value: BootstrapCardViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
+    inline def setFocusedColumn(value: BootstrapCardViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

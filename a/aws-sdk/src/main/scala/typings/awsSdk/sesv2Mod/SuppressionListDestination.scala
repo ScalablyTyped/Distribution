@@ -13,16 +13,13 @@ trait SuppressionListDestination extends StObject {
 }
 object SuppressionListDestination {
   
-  @scala.inline
-  def apply(SuppressionListImportAction: SuppressionListImportAction): SuppressionListDestination = {
+  inline def apply(SuppressionListImportAction: SuppressionListImportAction): SuppressionListDestination = {
     val __obj = js.Dynamic.literal(SuppressionListImportAction = SuppressionListImportAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuppressionListDestination]
   }
   
-  @scala.inline
-  implicit class SuppressionListDestinationMutableBuilder[Self <: SuppressionListDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SuppressionListDestination](x: Self) {
     
-    @scala.inline
-    def setSuppressionListImportAction(value: SuppressionListImportAction): Self = StObject.set(x, "SuppressionListImportAction", value.asInstanceOf[js.Any])
+    inline def setSuppressionListImportAction(value: SuppressionListImportAction): Self = StObject.set(x, "SuppressionListImportAction", value.asInstanceOf[js.Any])
   }
 }

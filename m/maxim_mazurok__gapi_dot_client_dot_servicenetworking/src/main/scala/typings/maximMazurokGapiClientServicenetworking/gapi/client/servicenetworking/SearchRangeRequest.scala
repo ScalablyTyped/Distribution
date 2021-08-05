@@ -20,25 +20,19 @@ trait SearchRangeRequest extends StObject {
 }
 object SearchRangeRequest {
   
-  @scala.inline
-  def apply(): SearchRangeRequest = {
+  inline def apply(): SearchRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchRangeRequest]
   }
   
-  @scala.inline
-  implicit class SearchRangeRequestMutableBuilder[Self <: SearchRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchRangeRequest](x: Self) {
     
-    @scala.inline
-    def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
+    inline def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
+    inline def setIpPrefixLengthUndefined: Self = StObject.set(x, "ipPrefixLength", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
   }
 }

@@ -38,49 +38,35 @@ trait TestGridSession extends StObject {
 }
 object TestGridSession {
   
-  @scala.inline
-  def apply(): TestGridSession = {
+  inline def apply(): TestGridSession = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestGridSession]
   }
   
-  @scala.inline
-  implicit class TestGridSessionMutableBuilder[Self <: TestGridSession] (val x: Self) extends AnyVal {
+  extension [Self <: TestGridSession](x: Self) {
     
-    @scala.inline
-    def setArn(value: DeviceFarmArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: DeviceFarmArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setBillingMinutes(value: Double): Self = StObject.set(x, "billingMinutes", value.asInstanceOf[js.Any])
+    inline def setBillingMinutes(value: Double): Self = StObject.set(x, "billingMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingMinutesUndefined: Self = StObject.set(x, "billingMinutes", js.undefined)
+    inline def setBillingMinutesUndefined: Self = StObject.set(x, "billingMinutes", js.undefined)
     
-    @scala.inline
-    def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setEnded(value: DateTime): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: DateTime): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
+    inline def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
     
-    @scala.inline
-    def setSeleniumProperties(value: String): Self = StObject.set(x, "seleniumProperties", value.asInstanceOf[js.Any])
+    inline def setSeleniumProperties(value: String): Self = StObject.set(x, "seleniumProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeleniumPropertiesUndefined: Self = StObject.set(x, "seleniumProperties", js.undefined)
+    inline def setSeleniumPropertiesUndefined: Self = StObject.set(x, "seleniumProperties", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TestGridSessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TestGridSessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

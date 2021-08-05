@@ -21,21 +21,21 @@ object embeddingsMod {
     
     val DEFAULT_EMBEDDINGS_INITIALIZER: InitializerIdentifier = js.native
     
-    var embeddings: js.Any = js.native
+    /* private */ var embeddings: js.Any = js.native
     
-    val embeddingsConstraint: js.Any = js.native
+    /* private */ val embeddingsConstraint: js.Any = js.native
     
-    var embeddingsInitializer: js.Any = js.native
+    /* private */ var embeddingsInitializer: js.Any = js.native
     
-    val embeddingsRegularizer: js.Any = js.native
+    /* private */ val embeddingsRegularizer: js.Any = js.native
     
-    var inputDim: js.Any = js.native
+    /* private */ var inputDim: js.Any = js.native
     
-    var inputLength: js.Any = js.native
+    /* private */ var inputLength: js.Any = js.native
     
-    var maskZero: js.Any = js.native
+    /* private */ var maskZero: js.Any = js.native
     
-    var outputDim: js.Any = js.native
+    /* private */ var outputDim: js.Any = js.native
   }
   /* static members */
   object Embedding {
@@ -48,8 +48,7 @@ object embeddingsMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/embeddings", "Embedding.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   trait EmbeddingLayerArgs
@@ -109,59 +108,42 @@ object embeddingsMod {
   }
   object EmbeddingLayerArgs {
     
-    @scala.inline
-    def apply(inputDim: Double, outputDim: Double): EmbeddingLayerArgs = {
+    inline def apply(inputDim: Double, outputDim: Double): EmbeddingLayerArgs = {
       val __obj = js.Dynamic.literal(inputDim = inputDim.asInstanceOf[js.Any], outputDim = outputDim.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmbeddingLayerArgs]
     }
     
-    @scala.inline
-    implicit class EmbeddingLayerArgsMutableBuilder[Self <: EmbeddingLayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EmbeddingLayerArgs](x: Self) {
       
-      @scala.inline
-      def setActivityRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "activityRegularizer", value.asInstanceOf[js.Any])
+      inline def setActivityRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "activityRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityRegularizerUndefined: Self = StObject.set(x, "activityRegularizer", js.undefined)
+      inline def setActivityRegularizerUndefined: Self = StObject.set(x, "activityRegularizer", js.undefined)
       
-      @scala.inline
-      def setEmbeddingsConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "embeddingsConstraint", value.asInstanceOf[js.Any])
+      inline def setEmbeddingsConstraint(value: ConstraintIdentifier | Constraint): Self = StObject.set(x, "embeddingsConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmbeddingsConstraintUndefined: Self = StObject.set(x, "embeddingsConstraint", js.undefined)
+      inline def setEmbeddingsConstraintUndefined: Self = StObject.set(x, "embeddingsConstraint", js.undefined)
       
-      @scala.inline
-      def setEmbeddingsInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "embeddingsInitializer", value.asInstanceOf[js.Any])
+      inline def setEmbeddingsInitializer(value: InitializerIdentifier | Initializer): Self = StObject.set(x, "embeddingsInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmbeddingsInitializerUndefined: Self = StObject.set(x, "embeddingsInitializer", js.undefined)
+      inline def setEmbeddingsInitializerUndefined: Self = StObject.set(x, "embeddingsInitializer", js.undefined)
       
-      @scala.inline
-      def setEmbeddingsRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "embeddingsRegularizer", value.asInstanceOf[js.Any])
+      inline def setEmbeddingsRegularizer(value: RegularizerIdentifier | Regularizer): Self = StObject.set(x, "embeddingsRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmbeddingsRegularizerUndefined: Self = StObject.set(x, "embeddingsRegularizer", js.undefined)
+      inline def setEmbeddingsRegularizerUndefined: Self = StObject.set(x, "embeddingsRegularizer", js.undefined)
       
-      @scala.inline
-      def setInputDim(value: Double): Self = StObject.set(x, "inputDim", value.asInstanceOf[js.Any])
+      inline def setInputDim(value: Double): Self = StObject.set(x, "inputDim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputLength(value: Double | js.Array[Double]): Self = StObject.set(x, "inputLength", value.asInstanceOf[js.Any])
+      inline def setInputLength(value: Double | js.Array[Double]): Self = StObject.set(x, "inputLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputLengthUndefined: Self = StObject.set(x, "inputLength", js.undefined)
+      inline def setInputLengthUndefined: Self = StObject.set(x, "inputLength", js.undefined)
       
-      @scala.inline
-      def setInputLengthVarargs(value: Double*): Self = StObject.set(x, "inputLength", js.Array(value :_*))
+      inline def setInputLengthVarargs(value: Double*): Self = StObject.set(x, "inputLength", js.Array(value :_*))
       
-      @scala.inline
-      def setMaskZero(value: Boolean): Self = StObject.set(x, "maskZero", value.asInstanceOf[js.Any])
+      inline def setMaskZero(value: Boolean): Self = StObject.set(x, "maskZero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskZeroUndefined: Self = StObject.set(x, "maskZero", js.undefined)
+      inline def setMaskZeroUndefined: Self = StObject.set(x, "maskZero", js.undefined)
       
-      @scala.inline
-      def setOutputDim(value: Double): Self = StObject.set(x, "outputDim", value.asInstanceOf[js.Any])
+      inline def setOutputDim(value: Double): Self = StObject.set(x, "outputDim", value.asInstanceOf[js.Any])
     }
   }
 }

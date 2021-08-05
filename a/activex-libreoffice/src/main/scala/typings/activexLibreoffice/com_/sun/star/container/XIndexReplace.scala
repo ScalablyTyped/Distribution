@@ -18,8 +18,7 @@ trait XIndexReplace
 }
 object XIndexReplace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -35,10 +34,8 @@ object XIndexReplace {
     __obj.asInstanceOf[XIndexReplace]
   }
   
-  @scala.inline
-  implicit class XIndexReplaceMutableBuilder[Self <: XIndexReplace] (val x: Self) extends AnyVal {
+  extension [Self <: XIndexReplace](x: Self) {
     
-    @scala.inline
-    def setReplaceByIndex(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replaceByIndex", js.Any.fromFunction2(value))
+    inline def setReplaceByIndex(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replaceByIndex", js.Any.fromFunction2(value))
   }
 }

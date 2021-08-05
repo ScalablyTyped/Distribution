@@ -10,16 +10,13 @@ trait ReelsTrayFeedResponseAttribution extends StObject {
 }
 object ReelsTrayFeedResponseAttribution {
   
-  @scala.inline
-  def apply(name: String): ReelsTrayFeedResponseAttribution = {
+  inline def apply(name: String): ReelsTrayFeedResponseAttribution = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReelsTrayFeedResponseAttribution]
   }
   
-  @scala.inline
-  implicit class ReelsTrayFeedResponseAttributionMutableBuilder[Self <: ReelsTrayFeedResponseAttribution] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsTrayFeedResponseAttribution](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

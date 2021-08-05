@@ -18,22 +18,17 @@ trait CrawlerCatalogTarget extends StObject {
 }
 object CrawlerCatalogTarget {
   
-  @scala.inline
-  def apply(databaseName: String, tables: js.Array[String]): CrawlerCatalogTarget = {
+  inline def apply(databaseName: String, tables: js.Array[String]): CrawlerCatalogTarget = {
     val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrawlerCatalogTarget]
   }
   
-  @scala.inline
-  implicit class CrawlerCatalogTargetMutableBuilder[Self <: CrawlerCatalogTarget] (val x: Self) extends AnyVal {
+  extension [Self <: CrawlerCatalogTarget](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTables(value: js.Array[String]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: js.Array[String]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesVarargs(value: String*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: String*): Self = StObject.set(x, "tables", js.Array(value :_*))
   }
 }

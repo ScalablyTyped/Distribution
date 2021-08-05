@@ -27,8 +27,7 @@ object ConnectionType {
     *
     * Set this to have the application select the best horizontal position for the text.
     */
-  @scala.inline
-  def AUTO: `0` = 0.asInstanceOf[`0`]
+  inline def AUTO: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the connection line leaves the connected object from the bottom,
@@ -37,8 +36,7 @@ object ConnectionType {
     *
     * The text is positioned below the main line.
     */
-  @scala.inline
-  def BOTTOM: `4` = 4.asInstanceOf[`4`]
+  inline def BOTTOM: `4` = 4.asInstanceOf[`4`]
   
   /**
     * the connection line leaves the connected object to the left,
@@ -47,8 +45,7 @@ object ConnectionType {
     *
     * The left edge of the text is adjusted to the left edge of the shape.
     */
-  @scala.inline
-  def LEFT: `1` = 1.asInstanceOf[`1`]
+  inline def LEFT: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the connection line leaves the connected object to the right,
@@ -57,16 +54,14 @@ object ConnectionType {
     *
     * The right edge of the text is adjusted to the right edge of the shape.
     */
-  @scala.inline
-  def RIGHT: `3` = 3.asInstanceOf[`3`]
+  inline def RIGHT: `3` = 3.asInstanceOf[`3`]
   
   /**
     * not implemented, yet.
     *
     * deprecated
     */
-  @scala.inline
-  def SPECIAL: `5` = 5.asInstanceOf[`5`]
+  inline def SPECIAL: `5` = 5.asInstanceOf[`5`]
   
   /**
     * the connection line leaves the connected object from the top,
@@ -75,6 +70,5 @@ object ConnectionType {
     *
     * The text is positioned above the main line.
     */
-  @scala.inline
-  def TOP: `2` = 2.asInstanceOf[`2`]
+  inline def TOP: `2` = 2.asInstanceOf[`2`]
 }

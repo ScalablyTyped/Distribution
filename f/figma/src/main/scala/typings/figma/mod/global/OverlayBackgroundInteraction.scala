@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OverlayBackgroundInteraction extends StObject
 object OverlayBackgroundInteraction {
   
-  @scala.inline
-  def CLOSE_ON_CLICK_OUTSIDE: typings.figma.figmaStrings.CLOSE_ON_CLICK_OUTSIDE = "CLOSE_ON_CLICK_OUTSIDE".asInstanceOf[typings.figma.figmaStrings.CLOSE_ON_CLICK_OUTSIDE]
+  inline def CLOSE_ON_CLICK_OUTSIDE: typings.figma.figmaStrings.CLOSE_ON_CLICK_OUTSIDE = "CLOSE_ON_CLICK_OUTSIDE".asInstanceOf[typings.figma.figmaStrings.CLOSE_ON_CLICK_OUTSIDE]
   
-  @scala.inline
-  def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
+  inline def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
 }

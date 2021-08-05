@@ -43,8 +43,7 @@ trait AbstractBlock extends StObject {
 }
 object AbstractBlock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     difficulty: default,
     extraData: String,
     gasLimit: Double,
@@ -63,73 +62,50 @@ object AbstractBlock {
     __obj.asInstanceOf[AbstractBlock]
   }
   
-  @scala.inline
-  implicit class AbstractBlockMutableBuilder[Self <: AbstractBlock] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractBlock](x: Self) {
     
-    @scala.inline
-    def setDifficulty(value: default): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
+    inline def setDifficulty(value: default): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraData(value: String): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: String): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGasLimit(value: Double): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
+    inline def setGasLimit(value: Double): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGasUsed(value: Double): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+    inline def setGasUsed(value: Double): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashNull: Self = StObject.set(x, "hash", null)
+    inline def setHashNull: Self = StObject.set(x, "hash", null)
     
-    @scala.inline
-    def setLogsBloom(value: String): Self = StObject.set(x, "logsBloom", value.asInstanceOf[js.Any])
+    inline def setLogsBloom(value: String): Self = StObject.set(x, "logsBloom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogsBloomNull: Self = StObject.set(x, "logsBloom", null)
+    inline def setLogsBloomNull: Self = StObject.set(x, "logsBloom", null)
     
-    @scala.inline
-    def setMiner(value: String): Self = StObject.set(x, "miner", value.asInstanceOf[js.Any])
+    inline def setMiner(value: String): Self = StObject.set(x, "miner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceNull: Self = StObject.set(x, "nonce", null)
+    inline def setNonceNull: Self = StObject.set(x, "nonce", null)
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberNull: Self = StObject.set(x, "number", null)
+    inline def setNumberNull: Self = StObject.set(x, "number", null)
     
-    @scala.inline
-    def setParentHash(value: String): Self = StObject.set(x, "parentHash", value.asInstanceOf[js.Any])
+    inline def setParentHash(value: String): Self = StObject.set(x, "parentHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha3Uncles(value: String): Self = StObject.set(x, "sha3Uncles", value.asInstanceOf[js.Any])
+    inline def setSha3Uncles(value: String): Self = StObject.set(x, "sha3Uncles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateRoot(value: String): Self = StObject.set(x, "stateRoot", value.asInstanceOf[js.Any])
+    inline def setStateRoot(value: String): Self = StObject.set(x, "stateRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalDifficulty(value: default): Self = StObject.set(x, "totalDifficulty", value.asInstanceOf[js.Any])
+    inline def setTotalDifficulty(value: default): Self = StObject.set(x, "totalDifficulty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionsRoot(value: String): Self = StObject.set(x, "transactionsRoot", value.asInstanceOf[js.Any])
+    inline def setTransactionsRoot(value: String): Self = StObject.set(x, "transactionsRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUncles(value: js.Array[String]): Self = StObject.set(x, "uncles", value.asInstanceOf[js.Any])
+    inline def setUncles(value: js.Array[String]): Self = StObject.set(x, "uncles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnclesVarargs(value: String*): Self = StObject.set(x, "uncles", js.Array(value :_*))
+    inline def setUnclesVarargs(value: String*): Self = StObject.set(x, "uncles", js.Array(value :_*))
   }
 }

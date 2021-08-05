@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def slider(): Slider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("slider")().asInstanceOf[Slider_]
+  inline def slider(): Slider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("slider")().asInstanceOf[Slider_]
   
   @js.native
   trait Slider_ extends StObject {

@@ -34,85 +34,59 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAfterDeselect(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterDeselect", js.Any.fromFunction1(value))
+    inline def setAfterDeselect(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterDeselect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterDeselectUndefined: Self = StObject.set(x, "afterDeselect", js.undefined)
+    inline def setAfterDeselectUndefined: Self = StObject.set(x, "afterDeselect", js.undefined)
     
-    @scala.inline
-    def setAfterInit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
+    inline def setAfterInit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
+    inline def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
     
-    @scala.inline
-    def setAfterSelect(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterSelect", js.Any.fromFunction1(value))
+    inline def setAfterSelect(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "afterSelect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterSelectUndefined: Self = StObject.set(x, "afterSelect", js.undefined)
+    inline def setAfterSelectUndefined: Self = StObject.set(x, "afterSelect", js.undefined)
     
-    @scala.inline
-    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setDblClick(value: Boolean): Self = StObject.set(x, "dblClick", value.asInstanceOf[js.Any])
+    inline def setDblClick(value: Boolean): Self = StObject.set(x, "dblClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDblClickUndefined: Self = StObject.set(x, "dblClick", js.undefined)
+    inline def setDblClickUndefined: Self = StObject.set(x, "dblClick", js.undefined)
     
-    @scala.inline
-    def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
+    inline def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
+    inline def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
     
-    @scala.inline
-    def setKeepOrder(value: Boolean): Self = StObject.set(x, "keepOrder", value.asInstanceOf[js.Any])
+    inline def setKeepOrder(value: Boolean): Self = StObject.set(x, "keepOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepOrderUndefined: Self = StObject.set(x, "keepOrder", js.undefined)
+    inline def setKeepOrderUndefined: Self = StObject.set(x, "keepOrder", js.undefined)
     
-    @scala.inline
-    def setSelectableFooter(value: String | HTMLElement): Self = StObject.set(x, "selectableFooter", value.asInstanceOf[js.Any])
+    inline def setSelectableFooter(value: String | HTMLElement): Self = StObject.set(x, "selectableFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableFooterUndefined: Self = StObject.set(x, "selectableFooter", js.undefined)
+    inline def setSelectableFooterUndefined: Self = StObject.set(x, "selectableFooter", js.undefined)
     
-    @scala.inline
-    def setSelectableHeader(value: String | HTMLElement): Self = StObject.set(x, "selectableHeader", value.asInstanceOf[js.Any])
+    inline def setSelectableHeader(value: String | HTMLElement): Self = StObject.set(x, "selectableHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableHeaderUndefined: Self = StObject.set(x, "selectableHeader", js.undefined)
+    inline def setSelectableHeaderUndefined: Self = StObject.set(x, "selectableHeader", js.undefined)
     
-    @scala.inline
-    def setSelectableOptgroup(value: Boolean): Self = StObject.set(x, "selectableOptgroup", value.asInstanceOf[js.Any])
+    inline def setSelectableOptgroup(value: Boolean): Self = StObject.set(x, "selectableOptgroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableOptgroupUndefined: Self = StObject.set(x, "selectableOptgroup", js.undefined)
+    inline def setSelectableOptgroupUndefined: Self = StObject.set(x, "selectableOptgroup", js.undefined)
     
-    @scala.inline
-    def setSelectionFooter(value: String | HTMLElement): Self = StObject.set(x, "selectionFooter", value.asInstanceOf[js.Any])
+    inline def setSelectionFooter(value: String | HTMLElement): Self = StObject.set(x, "selectionFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionFooterUndefined: Self = StObject.set(x, "selectionFooter", js.undefined)
+    inline def setSelectionFooterUndefined: Self = StObject.set(x, "selectionFooter", js.undefined)
     
-    @scala.inline
-    def setSelectionHeader(value: String | HTMLElement): Self = StObject.set(x, "selectionHeader", value.asInstanceOf[js.Any])
+    inline def setSelectionHeader(value: String | HTMLElement): Self = StObject.set(x, "selectionHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionHeaderUndefined: Self = StObject.set(x, "selectionHeader", js.undefined)
+    inline def setSelectionHeaderUndefined: Self = StObject.set(x, "selectionHeader", js.undefined)
   }
 }

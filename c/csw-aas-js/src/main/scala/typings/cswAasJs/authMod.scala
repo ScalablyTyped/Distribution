@@ -78,8 +78,7 @@ object authMod {
   }
   object AuthStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authenticate: (AuthContextConfig, String, Boolean) => AuthenticateResult,
       from: KeycloakInstance => Auth,
       getAASUrl: () => js.Promise[String]
@@ -88,17 +87,13 @@ object authMod {
       __obj.asInstanceOf[AuthStore]
     }
     
-    @scala.inline
-    implicit class AuthStoreMutableBuilder[Self <: AuthStore] (val x: Self) extends AnyVal {
+    extension [Self <: AuthStore](x: Self) {
       
-      @scala.inline
-      def setAuthenticate(value: (AuthContextConfig, String, Boolean) => AuthenticateResult): Self = StObject.set(x, "authenticate", js.Any.fromFunction3(value))
+      inline def setAuthenticate(value: (AuthContextConfig, String, Boolean) => AuthenticateResult): Self = StObject.set(x, "authenticate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFrom(value: KeycloakInstance => Auth): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+      inline def setFrom(value: KeycloakInstance => Auth): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAASUrl(value: () => js.Promise[String]): Self = StObject.set(x, "getAASUrl", js.Any.fromFunction0(value))
+      inline def setGetAASUrl(value: () => js.Promise[String]): Self = StObject.set(x, "getAASUrl", js.Any.fromFunction0(value))
     }
   }
   
@@ -110,20 +105,16 @@ object authMod {
   }
   object AuthenticateResult {
     
-    @scala.inline
-    def apply(authenticated: KeycloakPromise[Boolean, KeycloakError], keycloak: KeycloakInstance): AuthenticateResult = {
+    inline def apply(authenticated: KeycloakPromise[Boolean, KeycloakError], keycloak: KeycloakInstance): AuthenticateResult = {
       val __obj = js.Dynamic.literal(authenticated = authenticated.asInstanceOf[js.Any], keycloak = keycloak.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthenticateResult]
     }
     
-    @scala.inline
-    implicit class AuthenticateResultMutableBuilder[Self <: AuthenticateResult] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticateResult](x: Self) {
       
-      @scala.inline
-      def setAuthenticated(value: KeycloakPromise[Boolean, KeycloakError]): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
+      inline def setAuthenticated(value: KeycloakPromise[Boolean, KeycloakError]): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeycloak(value: KeycloakInstance): Self = StObject.set(x, "keycloak", value.asInstanceOf[js.Any])
+      inline def setKeycloak(value: KeycloakInstance): Self = StObject.set(x, "keycloak", value.asInstanceOf[js.Any])
     }
   }
 }

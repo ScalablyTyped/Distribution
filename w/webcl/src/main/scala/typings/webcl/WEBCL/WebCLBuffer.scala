@@ -13,8 +13,7 @@ trait WebCLBuffer
 }
 object WebCLBuffer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createSubBuffer: (MemFlagsBits, Double, Double) => WebCLBuffer,
     getInfo: MemInfo => js.Any,
     release: () => Unit
@@ -23,10 +22,8 @@ object WebCLBuffer {
     __obj.asInstanceOf[WebCLBuffer]
   }
   
-  @scala.inline
-  implicit class WebCLBufferMutableBuilder[Self <: WebCLBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: WebCLBuffer](x: Self) {
     
-    @scala.inline
-    def setCreateSubBuffer(value: (MemFlagsBits, Double, Double) => WebCLBuffer): Self = StObject.set(x, "createSubBuffer", js.Any.fromFunction3(value))
+    inline def setCreateSubBuffer(value: (MemFlagsBits, Double, Double) => WebCLBuffer): Self = StObject.set(x, "createSubBuffer", js.Any.fromFunction3(value))
   }
 }

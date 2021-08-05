@@ -15,17 +15,14 @@ trait FloatAttribute
 }
 object FloatAttribute {
   
-  @scala.inline
-  def apply(): FloatAttribute = {
+  inline def apply(): FloatAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("float")
     __obj.asInstanceOf[FloatAttribute]
   }
   
-  @scala.inline
-  implicit class FloatAttributeMutableBuilder[Self <: FloatAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: FloatAttribute](x: Self) {
     
-    @scala.inline
-    def setType(value: float): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: float): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

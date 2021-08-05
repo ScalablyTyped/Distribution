@@ -52,66 +52,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FAX_JOB_EXTENDED_STATUS_ENUM extends StObject
 object FAX_JOB_EXTENDED_STATUS_ENUM {
   
-  @scala.inline
-  def fjesANSWERED: `5` = 5.asInstanceOf[`5`]
+  inline def fjesANSWERED: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def fjesBAD_ADDRESS: `10` = 10.asInstanceOf[`10`]
+  inline def fjesBAD_ADDRESS: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def fjesBUSY: `8` = 8.asInstanceOf[`8`]
+  inline def fjesBUSY: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def fjesCALL_ABORTED: `19` = 19.asInstanceOf[`19`]
+  inline def fjesCALL_ABORTED: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def fjesCALL_BLACKLISTED: `14` = 14.asInstanceOf[`14`]
+  inline def fjesCALL_BLACKLISTED: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def fjesCALL_COMPLETED: `18` = 18.asInstanceOf[`18`]
+  inline def fjesCALL_COMPLETED: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def fjesCALL_DELAYED: `13` = 13.asInstanceOf[`13`]
+  inline def fjesCALL_DELAYED: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def fjesDIALING: `3` = 3.asInstanceOf[`3`]
+  inline def fjesDIALING: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def fjesDISCONNECTED: `1` = 1.asInstanceOf[`1`]
+  inline def fjesDISCONNECTED: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fjesFATAL_ERROR: `12` = 12.asInstanceOf[`12`]
+  inline def fjesFATAL_ERROR: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def fjesHANDLED: `17` = 17.asInstanceOf[`17`]
+  inline def fjesHANDLED: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def fjesINITIALIZING: `2` = 2.asInstanceOf[`2`]
+  inline def fjesINITIALIZING: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fjesLINE_UNAVAILABLE: `7` = 7.asInstanceOf[`7`]
+  inline def fjesLINE_UNAVAILABLE: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def fjesNONE: `0` = 0.asInstanceOf[`0`]
+  inline def fjesNONE: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fjesNOT_FAX_CALL: `15` = 15.asInstanceOf[`15`]
+  inline def fjesNOT_FAX_CALL: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def fjesNO_ANSWER: `9` = 9.asInstanceOf[`9`]
+  inline def fjesNO_ANSWER: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def fjesNO_DIAL_TONE: `11` = 11.asInstanceOf[`11`]
+  inline def fjesNO_DIAL_TONE: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def fjesPARTIALLY_RECEIVED: `16` = 16.asInstanceOf[`16`]
+  inline def fjesPARTIALLY_RECEIVED: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def fjesPROPRIETARY: `16777216` = 16777216.asInstanceOf[`16777216`]
+  inline def fjesPROPRIETARY: `16777216` = 16777216.asInstanceOf[`16777216`]
   
-  @scala.inline
-  def fjesRECEIVING: `6` = 6.asInstanceOf[`6`]
+  inline def fjesRECEIVING: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def fjesTRANSMITTING: `4` = 4.asInstanceOf[`4`]
+  inline def fjesTRANSMITTING: `4` = 4.asInstanceOf[`4`]
 }

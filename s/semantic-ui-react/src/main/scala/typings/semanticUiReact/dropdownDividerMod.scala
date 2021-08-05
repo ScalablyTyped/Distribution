@@ -29,8 +29,7 @@ object dropdownDividerMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object DropdownDividerProps {
     
-    @scala.inline
-    def apply(): DropdownDividerProps = {
+    inline def apply(): DropdownDividerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropdownDividerProps]
     }
@@ -46,26 +45,20 @@ object dropdownDividerMod extends Shortcut {
   }
   object StrictDropdownDividerProps {
     
-    @scala.inline
-    def apply(): StrictDropdownDividerProps = {
+    inline def apply(): StrictDropdownDividerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictDropdownDividerProps]
     }
     
-    @scala.inline
-    implicit class StrictDropdownDividerPropsMutableBuilder[Self <: StrictDropdownDividerProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictDropdownDividerProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   

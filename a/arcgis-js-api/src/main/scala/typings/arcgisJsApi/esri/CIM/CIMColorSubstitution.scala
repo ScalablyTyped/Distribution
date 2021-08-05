@@ -20,35 +20,26 @@ trait CIMColorSubstitution extends StObject {
 }
 object CIMColorSubstitution {
   
-  @scala.inline
-  def apply(): CIMColorSubstitution = {
+  inline def apply(): CIMColorSubstitution = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMColorSubstitution")
     __obj.asInstanceOf[CIMColorSubstitution]
   }
   
-  @scala.inline
-  implicit class CIMColorSubstitutionMutableBuilder[Self <: CIMColorSubstitution] (val x: Self) extends AnyVal {
+  extension [Self <: CIMColorSubstitution](x: Self) {
     
-    @scala.inline
-    def setNewColor(value: js.Array[Double]): Self = StObject.set(x, "newColor", value.asInstanceOf[js.Any])
+    inline def setNewColor(value: js.Array[Double]): Self = StObject.set(x, "newColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewColorUndefined: Self = StObject.set(x, "newColor", js.undefined)
+    inline def setNewColorUndefined: Self = StObject.set(x, "newColor", js.undefined)
     
-    @scala.inline
-    def setNewColorVarargs(value: Double*): Self = StObject.set(x, "newColor", js.Array(value :_*))
+    inline def setNewColorVarargs(value: Double*): Self = StObject.set(x, "newColor", js.Array(value :_*))
     
-    @scala.inline
-    def setOldColor(value: js.Array[Double]): Self = StObject.set(x, "oldColor", value.asInstanceOf[js.Any])
+    inline def setOldColor(value: js.Array[Double]): Self = StObject.set(x, "oldColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldColorUndefined: Self = StObject.set(x, "oldColor", js.undefined)
+    inline def setOldColorUndefined: Self = StObject.set(x, "oldColor", js.undefined)
     
-    @scala.inline
-    def setOldColorVarargs(value: Double*): Self = StObject.set(x, "oldColor", js.Array(value :_*))
+    inline def setOldColorVarargs(value: Double*): Self = StObject.set(x, "oldColor", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMColorSubstitution): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMColorSubstitution): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ object maxPoolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def maxPool[T /* <: Tensor3D | Tensor4D */](
+  inline def maxPool[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: (js.Tuple2[Double, Double]) | Double,

@@ -13,19 +13,15 @@ trait SchemaAdministratorWebTokenSpecStoreBuilder extends StObject {
 }
 object SchemaAdministratorWebTokenSpecStoreBuilder {
   
-  @scala.inline
-  def apply(): SchemaAdministratorWebTokenSpecStoreBuilder = {
+  inline def apply(): SchemaAdministratorWebTokenSpecStoreBuilder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAdministratorWebTokenSpecStoreBuilder]
   }
   
-  @scala.inline
-  implicit class SchemaAdministratorWebTokenSpecStoreBuilderMutableBuilder[Self <: SchemaAdministratorWebTokenSpecStoreBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAdministratorWebTokenSpecStoreBuilder](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

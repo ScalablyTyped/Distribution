@@ -51,17 +51,14 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(error: Event_[error, Info]): EventMap = {
+      inline def apply(error: Event_[error, Info]): EventMap = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       }
     }
     
@@ -86,35 +83,26 @@ object AMap {
     }
     object SearchOptions {
       
-      @scala.inline
-      def apply(): SearchOptions = {
+      inline def apply(): SearchOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SearchOptions]
       }
       
-      @scala.inline
-      implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+      extension [Self <: SearchOptions](x: Self) {
         
-        @scala.inline
-        def setDestination(value: LocationValue | js.Array[LocationValue]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+        inline def setDestination(value: LocationValue | js.Array[LocationValue]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+        inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
         
-        @scala.inline
-        def setDestinationVarargs(value: LocationValue*): Self = StObject.set(x, "destination", js.Array(value :_*))
+        inline def setDestinationVarargs(value: LocationValue*): Self = StObject.set(x, "destination", js.Array(value :_*))
         
-        @scala.inline
-        def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+        inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+        inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
         
-        @scala.inline
-        def setResultType(value: polygon | coverage): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
+        inline def setResultType(value: polygon | coverage): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
+        inline def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
       }
     }
     
@@ -140,35 +128,26 @@ object AMap {
     }
     object SearchResult {
       
-      @scala.inline
-      def apply(bounds: js.Array[js.Array[js.Array[js.Array[String]]]], info: String, infocode: String): SearchResult = {
+      inline def apply(bounds: js.Array[js.Array[js.Array[js.Array[String]]]], info: String, infocode: String): SearchResult = {
         val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], infocode = infocode.asInstanceOf[js.Any])
         __obj.asInstanceOf[SearchResult]
       }
       
-      @scala.inline
-      implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResult](x: Self) {
         
-        @scala.inline
-        def setBounds(value: js.Array[js.Array[js.Array[js.Array[String]]]]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: js.Array[js.Array[js.Array[js.Array[String]]]]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsVarargs(value: js.Array[js.Array[js.Array[String]]]*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: js.Array[js.Array[js.Array[String]]]*): Self = StObject.set(x, "bounds", js.Array(value :_*))
         
-        @scala.inline
-        def setInRange(value: js.Array[Boolean]): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
+        inline def setInRange(value: js.Array[Boolean]): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInRangeUndefined: Self = StObject.set(x, "inRange", js.undefined)
+        inline def setInRangeUndefined: Self = StObject.set(x, "inRange", js.undefined)
         
-        @scala.inline
-        def setInRangeVarargs(value: Boolean*): Self = StObject.set(x, "inRange", js.Array(value :_*))
+        inline def setInRangeVarargs(value: Boolean*): Self = StObject.set(x, "inRange", js.Array(value :_*))
         
-        @scala.inline
-        def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfocode(value: String): Self = StObject.set(x, "infocode", value.asInstanceOf[js.Any])
+        inline def setInfocode(value: String): Self = StObject.set(x, "infocode", value.asInstanceOf[js.Any])
       }
     }
     
@@ -180,14 +159,11 @@ object AMap {
     trait SearchStatus extends StObject
     object SearchStatus {
       
-      @scala.inline
-      def complete: typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.complete = "complete".asInstanceOf[typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.complete]
+      inline def complete: typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.complete = "complete".asInstanceOf[typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.complete]
       
-      @scala.inline
-      def error: typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.error = "error".asInstanceOf[typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.error]
+      inline def error: typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.error = "error".asInstanceOf[typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.error]
       
-      @scala.inline
-      def no_data: typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.no_data]
+      inline def no_data: typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiArrivalRange.amapJsApiArrivalRangeStrings.no_data]
     }
   }
 }

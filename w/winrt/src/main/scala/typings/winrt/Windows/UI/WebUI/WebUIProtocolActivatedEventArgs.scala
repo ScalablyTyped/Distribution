@@ -15,8 +15,7 @@ trait WebUIProtocolActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIProtocolActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

@@ -78,8 +78,7 @@ object mod {
     @JSImport("web3", "default.modules")
     @js.native
     def modules: Modules = js.native
-    @scala.inline
-    def modules_=(x: Modules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
+    inline def modules_=(x: Modules): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
     
     @JSImport("web3", "default.providers")
     @js.native
@@ -108,8 +107,7 @@ object mod {
   }
   object Modules {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bzz: Instantiable1[/* provider */ provider, Bzz],
       Eth: Instantiable2[/* provider */ provider, /* net */ Socket, Eth],
       Net: Instantiable2[/* provider */ provider, /* net */ Socket, Network],
@@ -120,23 +118,17 @@ object mod {
       __obj.asInstanceOf[Modules]
     }
     
-    @scala.inline
-    implicit class ModulesMutableBuilder[Self <: Modules] (val x: Self) extends AnyVal {
+    extension [Self <: Modules](x: Self) {
       
-      @scala.inline
-      def setBzz(value: Instantiable1[/* provider */ provider, Bzz]): Self = StObject.set(x, "Bzz", value.asInstanceOf[js.Any])
+      inline def setBzz(value: Instantiable1[/* provider */ provider, Bzz]): Self = StObject.set(x, "Bzz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEth(value: Instantiable2[/* provider */ provider, /* net */ Socket, Eth]): Self = StObject.set(x, "Eth", value.asInstanceOf[js.Any])
+      inline def setEth(value: Instantiable2[/* provider */ provider, /* net */ Socket, Eth]): Self = StObject.set(x, "Eth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNet(value: Instantiable2[/* provider */ provider, /* net */ Socket, Network]): Self = StObject.set(x, "Net", value.asInstanceOf[js.Any])
+      inline def setNet(value: Instantiable2[/* provider */ provider, /* net */ Socket, Network]): Self = StObject.set(x, "Net", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonal(value: Instantiable2[/* provider */ provider, /* net */ Socket, Personal]): Self = StObject.set(x, "Personal", value.asInstanceOf[js.Any])
+      inline def setPersonal(value: Instantiable2[/* provider */ provider, /* net */ Socket, Personal]): Self = StObject.set(x, "Personal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShh(value: Instantiable2[/* provider */ provider, /* net */ Socket, Shh]): Self = StObject.set(x, "Shh", value.asInstanceOf[js.Any])
+      inline def setShh(value: Instantiable2[/* provider */ provider, /* net */ Socket, Shh]): Self = StObject.set(x, "Shh", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,8 +160,7 @@ object mod {
   }
   object Web3 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BatchRequest: Instantiable0[BatchRequest],
       bzz: Bzz,
       defaultBlock: String | Double,
@@ -185,50 +176,35 @@ object mod {
       __obj.asInstanceOf[Web3]
     }
     
-    @scala.inline
-    implicit class Web3MutableBuilder[Self <: Web3] (val x: Self) extends AnyVal {
+    extension [Self <: Web3](x: Self) {
       
-      @scala.inline
-      def setBatchRequest(value: Instantiable0[BatchRequest]): Self = StObject.set(x, "BatchRequest", value.asInstanceOf[js.Any])
+      inline def setBatchRequest(value: Instantiable0[BatchRequest]): Self = StObject.set(x, "BatchRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBzz(value: Bzz): Self = StObject.set(x, "bzz", value.asInstanceOf[js.Any])
+      inline def setBzz(value: Bzz): Self = StObject.set(x, "bzz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentProvider(value: provider): Self = StObject.set(x, "currentProvider", value.asInstanceOf[js.Any])
+      inline def setCurrentProvider(value: provider): Self = StObject.set(x, "currentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentProviderNull: Self = StObject.set(x, "currentProvider", null)
+      inline def setCurrentProviderNull: Self = StObject.set(x, "currentProvider", null)
       
-      @scala.inline
-      def setDefaultAccount(value: String): Self = StObject.set(x, "defaultAccount", value.asInstanceOf[js.Any])
+      inline def setDefaultAccount(value: String): Self = StObject.set(x, "defaultAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultAccountNull: Self = StObject.set(x, "defaultAccount", null)
+      inline def setDefaultAccountNull: Self = StObject.set(x, "defaultAccount", null)
       
-      @scala.inline
-      def setDefaultBlock(value: String | Double): Self = StObject.set(x, "defaultBlock", value.asInstanceOf[js.Any])
+      inline def setDefaultBlock(value: String | Double): Self = StObject.set(x, "defaultBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEth(value: Eth): Self = StObject.set(x, "eth", value.asInstanceOf[js.Any])
+      inline def setEth(value: Eth): Self = StObject.set(x, "eth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtend(value: Extension => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+      inline def setExtend(value: Extension => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGivenProvider(value: js.Any): Self = StObject.set(x, "givenProvider", value.asInstanceOf[js.Any])
+      inline def setGivenProvider(value: js.Any): Self = StObject.set(x, "givenProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetProvider(value: provider => Boolean): Self = StObject.set(x, "setProvider", js.Any.fromFunction1(value))
+      inline def setSetProvider(value: provider => Boolean): Self = StObject.set(x, "setProvider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShh(value: Shh): Self = StObject.set(x, "shh", value.asInstanceOf[js.Any])
+      inline def setShh(value: Shh): Self = StObject.set(x, "shh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtils(value: Utils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: Utils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

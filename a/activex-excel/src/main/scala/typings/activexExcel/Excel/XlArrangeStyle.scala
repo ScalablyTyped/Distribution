@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlArrangeStyle extends StObject
 object XlArrangeStyle {
   
-  @scala.inline
-  def xlArrangeStyleCascade: `7` = 7.asInstanceOf[`7`]
+  inline def xlArrangeStyleCascade: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlArrangeStyleHorizontal: `-4128` = -4128.asInstanceOf[`-4128`]
+  inline def xlArrangeStyleHorizontal: `-4128` = -4128.asInstanceOf[`-4128`]
   
-  @scala.inline
-  def xlArrangeStyleTiled: `1` = 1.asInstanceOf[`1`]
+  inline def xlArrangeStyleTiled: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlArrangeStyleVertical: `-4166` = -4166.asInstanceOf[`-4166`]
+  inline def xlArrangeStyleVertical: `-4166` = -4166.asInstanceOf[`-4166`]
 }

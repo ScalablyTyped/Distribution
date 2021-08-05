@@ -15,19 +15,15 @@ trait TypeofScroller extends StObject {
 }
 object TypeofScroller {
   
-  @scala.inline
-  def apply(extend: js.Object => Scroller, fn: Scroller): TypeofScroller = {
+  inline def apply(extend: js.Object => Scroller, fn: Scroller): TypeofScroller = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofScroller]
   }
   
-  @scala.inline
-  implicit class TypeofScrollerMutableBuilder[Self <: TypeofScroller] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofScroller](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Scroller): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Scroller): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Scroller): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Scroller): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

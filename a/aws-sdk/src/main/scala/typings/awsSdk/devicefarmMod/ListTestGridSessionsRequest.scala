@@ -48,58 +48,41 @@ trait ListTestGridSessionsRequest extends StObject {
 }
 object ListTestGridSessionsRequest {
   
-  @scala.inline
-  def apply(projectArn: DeviceFarmArn): ListTestGridSessionsRequest = {
+  inline def apply(projectArn: DeviceFarmArn): ListTestGridSessionsRequest = {
     val __obj = js.Dynamic.literal(projectArn = projectArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTestGridSessionsRequest]
   }
   
-  @scala.inline
-  implicit class ListTestGridSessionsRequestMutableBuilder[Self <: ListTestGridSessionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTestGridSessionsRequest](x: Self) {
     
-    @scala.inline
-    def setCreationTimeAfter(value: DateTime): Self = StObject.set(x, "creationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: DateTime): Self = StObject.set(x, "creationTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeAfterUndefined: Self = StObject.set(x, "creationTimeAfter", js.undefined)
+    inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "creationTimeAfter", js.undefined)
     
-    @scala.inline
-    def setCreationTimeBefore(value: DateTime): Self = StObject.set(x, "creationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: DateTime): Self = StObject.set(x, "creationTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeBeforeUndefined: Self = StObject.set(x, "creationTimeBefore", js.undefined)
+    inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "creationTimeBefore", js.undefined)
     
-    @scala.inline
-    def setEndTimeAfter(value: DateTime): Self = StObject.set(x, "endTimeAfter", value.asInstanceOf[js.Any])
+    inline def setEndTimeAfter(value: DateTime): Self = StObject.set(x, "endTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeAfterUndefined: Self = StObject.set(x, "endTimeAfter", js.undefined)
+    inline def setEndTimeAfterUndefined: Self = StObject.set(x, "endTimeAfter", js.undefined)
     
-    @scala.inline
-    def setEndTimeBefore(value: DateTime): Self = StObject.set(x, "endTimeBefore", value.asInstanceOf[js.Any])
+    inline def setEndTimeBefore(value: DateTime): Self = StObject.set(x, "endTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeBeforeUndefined: Self = StObject.set(x, "endTimeBefore", js.undefined)
+    inline def setEndTimeBeforeUndefined: Self = StObject.set(x, "endTimeBefore", js.undefined)
     
-    @scala.inline
-    def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
+    inline def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultUndefined: Self = StObject.set(x, "maxResult", js.undefined)
+    inline def setMaxResultUndefined: Self = StObject.set(x, "maxResult", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: TestGridSessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TestGridSessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

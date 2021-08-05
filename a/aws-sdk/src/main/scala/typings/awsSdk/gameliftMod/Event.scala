@@ -38,49 +38,35 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(): Event = {
+  inline def apply(): Event = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setEventCode(value: EventCode): Self = StObject.set(x, "EventCode", value.asInstanceOf[js.Any])
+    inline def setEventCode(value: EventCode): Self = StObject.set(x, "EventCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventCodeUndefined: Self = StObject.set(x, "EventCode", js.undefined)
+    inline def setEventCodeUndefined: Self = StObject.set(x, "EventCode", js.undefined)
     
-    @scala.inline
-    def setEventId(value: NonZeroAndMaxString): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: NonZeroAndMaxString): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
     
-    @scala.inline
-    def setEventTime(value: Timestamp): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: Timestamp): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
+    inline def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
     
-    @scala.inline
-    def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setPreSignedLogUrl(value: NonZeroAndMaxString): Self = StObject.set(x, "PreSignedLogUrl", value.asInstanceOf[js.Any])
+    inline def setPreSignedLogUrl(value: NonZeroAndMaxString): Self = StObject.set(x, "PreSignedLogUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreSignedLogUrlUndefined: Self = StObject.set(x, "PreSignedLogUrl", js.undefined)
+    inline def setPreSignedLogUrlUndefined: Self = StObject.set(x, "PreSignedLogUrl", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: NonZeroAndMaxString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: NonZeroAndMaxString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
   }
 }

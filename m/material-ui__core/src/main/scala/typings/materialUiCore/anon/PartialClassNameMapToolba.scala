@@ -17,37 +17,27 @@ trait PartialClassNameMapToolba extends StObject {
 }
 object PartialClassNameMapToolba {
   
-  @scala.inline
-  def apply(): PartialClassNameMapToolba = {
+  inline def apply(): PartialClassNameMapToolba = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapToolba]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapToolbaMutableBuilder[Self <: PartialClassNameMapToolba] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapToolba](x: Self) {
     
-    @scala.inline
-    def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+    inline def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+    inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
-    @scala.inline
-    def setGutters(value: String): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
+    inline def setGutters(value: String): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
+    inline def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
     
-    @scala.inline
-    def setRegular(value: String): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
+    inline def setRegular(value: String): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegularUndefined: Self = StObject.set(x, "regular", js.undefined)
+    inline def setRegularUndefined: Self = StObject.set(x, "regular", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

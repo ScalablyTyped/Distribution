@@ -105,118 +105,81 @@ trait HeaderProps
 }
 object HeaderProps {
   
-  @scala.inline
-  def apply(): HeaderProps = {
+  inline def apply(): HeaderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderProps]
   }
   
-  @scala.inline
-  implicit class HeaderPropsMutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderProps](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBackgroundImage(value: ImageSourcePropType): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+    inline def setBackgroundImage(value: ImageSourcePropType): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageStyle(value: ImageStyle): Self = StObject.set(x, "backgroundImageStyle", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageStyle(value: ImageStyle): Self = StObject.set(x, "backgroundImageStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageStyleUndefined: Self = StObject.set(x, "backgroundImageStyle", js.undefined)
+    inline def setBackgroundImageStyleUndefined: Self = StObject.set(x, "backgroundImageStyle", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+    inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageVarargs(value: ImageURISource*): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
+    inline def setBackgroundImageVarargs(value: ImageURISource*): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
     
-    @scala.inline
-    def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    inline def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
-    @scala.inline
-    def setCenterComponent(value: HeaderSubComponent): Self = StObject.set(x, "centerComponent", value.asInstanceOf[js.Any])
+    inline def setCenterComponent(value: HeaderSubComponent): Self = StObject.set(x, "centerComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterComponentUndefined: Self = StObject.set(x, "centerComponent", js.undefined)
+    inline def setCenterComponentUndefined: Self = StObject.set(x, "centerComponent", js.undefined)
     
-    @scala.inline
-    def setCenterContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "centerContainerStyle", value.asInstanceOf[js.Any])
+    inline def setCenterContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "centerContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterContainerStyleNull: Self = StObject.set(x, "centerContainerStyle", null)
+    inline def setCenterContainerStyleNull: Self = StObject.set(x, "centerContainerStyle", null)
     
-    @scala.inline
-    def setCenterContainerStyleUndefined: Self = StObject.set(x, "centerContainerStyle", js.undefined)
+    inline def setCenterContainerStyleUndefined: Self = StObject.set(x, "centerContainerStyle", js.undefined)
     
-    @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+    inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
-    @scala.inline
-    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    @scala.inline
-    def setLeftComponent(value: HeaderSubComponent): Self = StObject.set(x, "leftComponent", value.asInstanceOf[js.Any])
+    inline def setLeftComponent(value: HeaderSubComponent): Self = StObject.set(x, "leftComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftComponentUndefined: Self = StObject.set(x, "leftComponent", js.undefined)
+    inline def setLeftComponentUndefined: Self = StObject.set(x, "leftComponent", js.undefined)
     
-    @scala.inline
-    def setLeftContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "leftContainerStyle", value.asInstanceOf[js.Any])
+    inline def setLeftContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "leftContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftContainerStyleNull: Self = StObject.set(x, "leftContainerStyle", null)
+    inline def setLeftContainerStyleNull: Self = StObject.set(x, "leftContainerStyle", null)
     
-    @scala.inline
-    def setLeftContainerStyleUndefined: Self = StObject.set(x, "leftContainerStyle", js.undefined)
+    inline def setLeftContainerStyleUndefined: Self = StObject.set(x, "leftContainerStyle", js.undefined)
     
-    @scala.inline
-    def setLinearGradientProps(value: js.Object): Self = StObject.set(x, "linearGradientProps", value.asInstanceOf[js.Any])
+    inline def setLinearGradientProps(value: js.Object): Self = StObject.set(x, "linearGradientProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearGradientPropsUndefined: Self = StObject.set(x, "linearGradientProps", js.undefined)
+    inline def setLinearGradientPropsUndefined: Self = StObject.set(x, "linearGradientProps", js.undefined)
     
-    @scala.inline
-    def setPlacement(value: left | center | right): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: left | center | right): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
-    @scala.inline
-    def setRightComponent(value: HeaderSubComponent): Self = StObject.set(x, "rightComponent", value.asInstanceOf[js.Any])
+    inline def setRightComponent(value: HeaderSubComponent): Self = StObject.set(x, "rightComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightComponentUndefined: Self = StObject.set(x, "rightComponent", js.undefined)
+    inline def setRightComponentUndefined: Self = StObject.set(x, "rightComponent", js.undefined)
     
-    @scala.inline
-    def setRightContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "rightContainerStyle", value.asInstanceOf[js.Any])
+    inline def setRightContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "rightContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightContainerStyleNull: Self = StObject.set(x, "rightContainerStyle", null)
+    inline def setRightContainerStyleNull: Self = StObject.set(x, "rightContainerStyle", null)
     
-    @scala.inline
-    def setRightContainerStyleUndefined: Self = StObject.set(x, "rightContainerStyle", js.undefined)
+    inline def setRightContainerStyleUndefined: Self = StObject.set(x, "rightContainerStyle", js.undefined)
     
-    @scala.inline
-    def setStatusBarProps(value: StatusBarProperties): Self = StObject.set(x, "statusBarProps", value.asInstanceOf[js.Any])
+    inline def setStatusBarProps(value: StatusBarProperties): Self = StObject.set(x, "statusBarProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarPropsUndefined: Self = StObject.set(x, "statusBarProps", js.undefined)
+    inline def setStatusBarPropsUndefined: Self = StObject.set(x, "statusBarProps", js.undefined)
     
-    @scala.inline
-    def setViewComponent(value: ComponentClass[js.Any, ComponentState]): Self = StObject.set(x, "ViewComponent", value.asInstanceOf[js.Any])
+    inline def setViewComponent(value: ComponentClass[js.Any, ComponentState]): Self = StObject.set(x, "ViewComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewComponentUndefined: Self = StObject.set(x, "ViewComponent", js.undefined)
+    inline def setViewComponentUndefined: Self = StObject.set(x, "ViewComponent", js.undefined)
   }
 }

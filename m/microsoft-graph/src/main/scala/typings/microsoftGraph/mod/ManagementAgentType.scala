@@ -21,36 +21,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagementAgentType extends StObject
 object ManagementAgentType {
   
-  @scala.inline
-  def configurationManagerClient: typings.microsoftGraph.microsoftGraphStrings.configurationManagerClient = "configurationManagerClient".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.configurationManagerClient]
+  inline def configurationManagerClient: typings.microsoftGraph.microsoftGraphStrings.configurationManagerClient = "configurationManagerClient".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.configurationManagerClient]
   
-  @scala.inline
-  def configurationManagerClientMdm: typings.microsoftGraph.microsoftGraphStrings.configurationManagerClientMdm = "configurationManagerClientMdm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.configurationManagerClientMdm]
+  inline def configurationManagerClientMdm: typings.microsoftGraph.microsoftGraphStrings.configurationManagerClientMdm = "configurationManagerClientMdm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.configurationManagerClientMdm]
   
-  @scala.inline
-  def configurationManagerClientMdmEas: typings.microsoftGraph.microsoftGraphStrings.configurationManagerClientMdmEas = "configurationManagerClientMdmEas".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.configurationManagerClientMdmEas]
+  inline def configurationManagerClientMdmEas: typings.microsoftGraph.microsoftGraphStrings.configurationManagerClientMdmEas = "configurationManagerClientMdmEas".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.configurationManagerClientMdmEas]
   
-  @scala.inline
-  def eas: typings.microsoftGraph.microsoftGraphStrings.eas = "eas".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.eas]
+  inline def eas: typings.microsoftGraph.microsoftGraphStrings.eas = "eas".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.eas]
   
-  @scala.inline
-  def easIntuneClient: typings.microsoftGraph.microsoftGraphStrings.easIntuneClient = "easIntuneClient".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.easIntuneClient]
+  inline def easIntuneClient: typings.microsoftGraph.microsoftGraphStrings.easIntuneClient = "easIntuneClient".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.easIntuneClient]
   
-  @scala.inline
-  def easMdm: typings.microsoftGraph.microsoftGraphStrings.easMdm = "easMdm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.easMdm]
+  inline def easMdm: typings.microsoftGraph.microsoftGraphStrings.easMdm = "easMdm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.easMdm]
   
-  @scala.inline
-  def googleCloudDevicePolicyController: typings.microsoftGraph.microsoftGraphStrings.googleCloudDevicePolicyController = "googleCloudDevicePolicyController".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.googleCloudDevicePolicyController]
+  inline def googleCloudDevicePolicyController: typings.microsoftGraph.microsoftGraphStrings.googleCloudDevicePolicyController = "googleCloudDevicePolicyController".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.googleCloudDevicePolicyController]
   
-  @scala.inline
-  def intuneClient: typings.microsoftGraph.microsoftGraphStrings.intuneClient = "intuneClient".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.intuneClient]
+  inline def intuneClient: typings.microsoftGraph.microsoftGraphStrings.intuneClient = "intuneClient".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.intuneClient]
   
-  @scala.inline
-  def jamf: typings.microsoftGraph.microsoftGraphStrings.jamf = "jamf".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.jamf]
+  inline def jamf: typings.microsoftGraph.microsoftGraphStrings.jamf = "jamf".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.jamf]
   
-  @scala.inline
-  def mdm: typings.microsoftGraph.microsoftGraphStrings.mdm = "mdm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mdm]
+  inline def mdm: typings.microsoftGraph.microsoftGraphStrings.mdm = "mdm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mdm]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }

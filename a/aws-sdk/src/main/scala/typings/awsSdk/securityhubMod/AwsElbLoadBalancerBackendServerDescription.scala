@@ -18,28 +18,21 @@ trait AwsElbLoadBalancerBackendServerDescription extends StObject {
 }
 object AwsElbLoadBalancerBackendServerDescription {
   
-  @scala.inline
-  def apply(): AwsElbLoadBalancerBackendServerDescription = {
+  inline def apply(): AwsElbLoadBalancerBackendServerDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElbLoadBalancerBackendServerDescription]
   }
   
-  @scala.inline
-  implicit class AwsElbLoadBalancerBackendServerDescriptionMutableBuilder[Self <: AwsElbLoadBalancerBackendServerDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElbLoadBalancerBackendServerDescription](x: Self) {
     
-    @scala.inline
-    def setInstancePort(value: Integer): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
+    inline def setInstancePort(value: Integer): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancePortUndefined: Self = StObject.set(x, "InstancePort", js.undefined)
+    inline def setInstancePortUndefined: Self = StObject.set(x, "InstancePort", js.undefined)
     
-    @scala.inline
-    def setPolicyNames(value: StringList): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
+    inline def setPolicyNames(value: StringList): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
+    inline def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
     
-    @scala.inline
-    def setPolicyNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
   }
 }

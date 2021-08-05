@@ -12,34 +12,29 @@ object sentryTypesStrings {
   sealed trait event
     extends StObject
        with SentryRequestType
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
   sealed trait http
     extends StObject
        with DsnProtocol
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
   sealed trait https
     extends StObject
        with DsnProtocol
-  @scala.inline
-  def https: https = "https".asInstanceOf[https]
+  inline def https: https = "https".asInstanceOf[https]
   
   @js.native
   sealed trait session
     extends StObject
        with SentryRequestType
-  @scala.inline
-  def session: session = "session".asInstanceOf[session]
+  inline def session: session = "session".asInstanceOf[session]
   
   @js.native
   sealed trait transaction
     extends StObject
        with SentryRequestType
-  @scala.inline
-  def transaction: transaction = "transaction".asInstanceOf[transaction]
+  inline def transaction: transaction = "transaction".asInstanceOf[transaction]
 }

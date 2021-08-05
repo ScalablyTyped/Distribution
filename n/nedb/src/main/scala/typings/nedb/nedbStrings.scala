@@ -8,6 +8,5 @@ object nedbStrings {
   
   @js.native
   sealed trait compactionDotdone extends StObject
-  @scala.inline
-  def compactionDotdone: compactionDotdone = "compaction.done".asInstanceOf[compactionDotdone]
+  inline def compactionDotdone: compactionDotdone = "compaction.done".asInstanceOf[compactionDotdone]
 }

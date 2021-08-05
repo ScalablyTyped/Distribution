@@ -44,10 +44,8 @@ object v1 {
       * @returns AudioConfig instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
-    @scala.inline
-    def create(properties: IAudioConfig): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
+    inline def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
+    inline def create(properties: IAudioConfig): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
     
     /**
       * Decodes an AudioConfig message from the specified reader or buffer.
@@ -58,14 +56,10 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
+    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
     
     /**
       * Decodes an AudioConfig message from the specified reader or buffer, length delimited.
@@ -75,10 +69,8 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
     
     /**
       * Encodes the specified AudioConfig message. Does not implicitly {@link google.cloud.texttospeech.v1.AudioConfig.verify|verify} messages.
@@ -87,10 +79,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IAudioConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IAudioConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IAudioConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IAudioConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified AudioConfig message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.AudioConfig.verify|verify} messages.
@@ -99,10 +89,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IAudioConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IAudioConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IAudioConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IAudioConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an AudioConfig message from a plain object. Also converts values to their respective internal types.
@@ -110,8 +98,7 @@ object v1 {
       * @returns AudioConfig
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig]
     
     /**
       * Creates a plain object from an AudioConfig message. Also converts values to other types if specified.
@@ -120,10 +107,8 @@ object v1 {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.AudioConfig,
       options: IConversionOptions
     ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -134,8 +119,7 @@ object v1 {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** AudioEncoding enum. */
@@ -180,10 +164,8 @@ object v1 {
       * @returns ListVoicesRequest instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
-    @scala.inline
-    def create(properties: IListVoicesRequest): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
+    inline def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
+    inline def create(properties: IListVoicesRequest): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
     
     /**
       * Decodes a ListVoicesRequest message from the specified reader or buffer.
@@ -194,14 +176,10 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
+    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
     
     /**
       * Decodes a ListVoicesRequest message from the specified reader or buffer, length delimited.
@@ -211,10 +189,8 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
     
     /**
       * Encodes the specified ListVoicesRequest message. Does not implicitly {@link google.cloud.texttospeech.v1.ListVoicesRequest.verify|verify} messages.
@@ -223,10 +199,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IListVoicesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IListVoicesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IListVoicesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IListVoicesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified ListVoicesRequest message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.ListVoicesRequest.verify|verify} messages.
@@ -235,10 +209,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IListVoicesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IListVoicesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IListVoicesRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IListVoicesRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a ListVoicesRequest message from a plain object. Also converts values to their respective internal types.
@@ -246,8 +218,7 @@ object v1 {
       * @returns ListVoicesRequest
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest]
     
     /**
       * Creates a plain object from a ListVoicesRequest message. Also converts values to other types if specified.
@@ -256,10 +227,8 @@ object v1 {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesRequest,
       options: IConversionOptions
     ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -270,8 +239,7 @@ object v1 {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ListVoicesResponse. */
@@ -297,10 +265,8 @@ object v1 {
       * @returns ListVoicesResponse instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
-    @scala.inline
-    def create(properties: IListVoicesResponse): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
+    inline def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
+    inline def create(properties: IListVoicesResponse): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
     
     /**
       * Decodes a ListVoicesResponse message from the specified reader or buffer.
@@ -311,14 +277,10 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
+    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
     
     /**
       * Decodes a ListVoicesResponse message from the specified reader or buffer, length delimited.
@@ -328,10 +290,8 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
     
     /**
       * Encodes the specified ListVoicesResponse message. Does not implicitly {@link google.cloud.texttospeech.v1.ListVoicesResponse.verify|verify} messages.
@@ -340,10 +300,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IListVoicesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IListVoicesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IListVoicesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IListVoicesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified ListVoicesResponse message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.ListVoicesResponse.verify|verify} messages.
@@ -352,10 +310,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IListVoicesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IListVoicesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IListVoicesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IListVoicesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a ListVoicesResponse message from a plain object. Also converts values to their respective internal types.
@@ -363,8 +319,7 @@ object v1 {
       * @returns ListVoicesResponse
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse]
     
     /**
       * Creates a plain object from a ListVoicesResponse message. Also converts values to other types if specified.
@@ -373,10 +328,8 @@ object v1 {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.ListVoicesResponse,
       options: IConversionOptions
     ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -387,8 +340,7 @@ object v1 {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** SsmlVoiceGender enum. */
@@ -433,10 +385,8 @@ object v1 {
       * @returns SynthesisInput instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
-    @scala.inline
-    def create(properties: ISynthesisInput): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
+    inline def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
+    inline def create(properties: ISynthesisInput): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
     
     /**
       * Decodes a SynthesisInput message from the specified reader or buffer.
@@ -447,14 +397,10 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
+    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
     
     /**
       * Decodes a SynthesisInput message from the specified reader or buffer, length delimited.
@@ -464,10 +410,8 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
     
     /**
       * Encodes the specified SynthesisInput message. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesisInput.verify|verify} messages.
@@ -476,10 +420,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: ISynthesisInput): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: ISynthesisInput, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: ISynthesisInput): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ISynthesisInput, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified SynthesisInput message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesisInput.verify|verify} messages.
@@ -488,10 +430,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: ISynthesisInput): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: ISynthesisInput, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISynthesisInput): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISynthesisInput, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a SynthesisInput message from a plain object. Also converts values to their respective internal types.
@@ -499,8 +439,7 @@ object v1 {
       * @returns SynthesisInput
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput]
     
     /**
       * Creates a plain object from a SynthesisInput message. Also converts values to other types if specified.
@@ -509,10 +448,8 @@ object v1 {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesisInput,
       options: IConversionOptions
     ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -523,8 +460,7 @@ object v1 {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a SynthesizeSpeechRequest. */
@@ -550,10 +486,8 @@ object v1 {
       * @returns SynthesizeSpeechRequest instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
-    @scala.inline
-    def create(properties: ISynthesizeSpeechRequest): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
+    inline def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
+    inline def create(properties: ISynthesizeSpeechRequest): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
     
     /**
       * Decodes a SynthesizeSpeechRequest message from the specified reader or buffer.
@@ -564,14 +498,10 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
+    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
     
     /**
       * Decodes a SynthesizeSpeechRequest message from the specified reader or buffer, length delimited.
@@ -581,10 +511,8 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
     
     /**
       * Encodes the specified SynthesizeSpeechRequest message. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeSpeechRequest.verify|verify} messages.
@@ -593,10 +521,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: ISynthesizeSpeechRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: ISynthesizeSpeechRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: ISynthesizeSpeechRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ISynthesizeSpeechRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified SynthesizeSpeechRequest message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeSpeechRequest.verify|verify} messages.
@@ -605,10 +531,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: ISynthesizeSpeechRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: ISynthesizeSpeechRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISynthesizeSpeechRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISynthesizeSpeechRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a SynthesizeSpeechRequest message from a plain object. Also converts values to their respective internal types.
@@ -616,8 +540,7 @@ object v1 {
       * @returns SynthesizeSpeechRequest
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest]
     
     /**
       * Creates a plain object from a SynthesizeSpeechRequest message. Also converts values to other types if specified.
@@ -626,10 +549,8 @@ object v1 {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechRequest,
       options: IConversionOptions
     ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -640,8 +561,7 @@ object v1 {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a SynthesizeSpeechResponse. */
@@ -667,10 +587,8 @@ object v1 {
       * @returns SynthesizeSpeechResponse instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
-    @scala.inline
-    def create(properties: ISynthesizeSpeechResponse): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
+    inline def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
+    inline def create(properties: ISynthesizeSpeechResponse): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
     
     /**
       * Decodes a SynthesizeSpeechResponse message from the specified reader or buffer.
@@ -681,14 +599,10 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
+    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
     
     /**
       * Decodes a SynthesizeSpeechResponse message from the specified reader or buffer, length delimited.
@@ -698,10 +612,8 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
     
     /**
       * Encodes the specified SynthesizeSpeechResponse message. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeSpeechResponse.verify|verify} messages.
@@ -710,10 +622,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: ISynthesizeSpeechResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: ISynthesizeSpeechResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: ISynthesizeSpeechResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ISynthesizeSpeechResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified SynthesizeSpeechResponse message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeSpeechResponse.verify|verify} messages.
@@ -722,10 +632,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: ISynthesizeSpeechResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: ISynthesizeSpeechResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISynthesizeSpeechResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISynthesizeSpeechResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a SynthesizeSpeechResponse message from a plain object. Also converts values to their respective internal types.
@@ -733,8 +641,7 @@ object v1 {
       * @returns SynthesizeSpeechResponse
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse]
     
     /**
       * Creates a plain object from a SynthesizeSpeechResponse message. Also converts values to other types if specified.
@@ -743,10 +650,8 @@ object v1 {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.SynthesizeSpeechResponse,
       options: IConversionOptions
     ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -757,8 +662,7 @@ object v1 {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a TextToSpeech */
@@ -791,14 +695,10 @@ object v1 {
       * @returns RPC service. Useful where requests and/or responses are streamed.
       */
     /* static member */
-    @scala.inline
-    def create(rpcImpl: RPCImpl): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech]
-    @scala.inline
-    def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech]
-    @scala.inline
-    def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech]
-    @scala.inline
-    def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech]
+    inline def create(rpcImpl: RPCImpl): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech]
+    inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech]
+    inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech]
+    inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.TextToSpeech]
   }
   
   /** Represents a Voice. */
@@ -824,10 +724,8 @@ object v1 {
       * @returns Voice instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
-    @scala.inline
-    def create(properties: IVoice): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
+    inline def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
+    inline def create(properties: IVoice): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
     
     /**
       * Decodes a Voice message from the specified reader or buffer.
@@ -838,14 +736,10 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
+    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
     
     /**
       * Decodes a Voice message from the specified reader or buffer, length delimited.
@@ -855,10 +749,8 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
     
     /**
       * Encodes the specified Voice message. Does not implicitly {@link google.cloud.texttospeech.v1.Voice.verify|verify} messages.
@@ -867,10 +759,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IVoice): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IVoice, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IVoice): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IVoice, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Voice message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.Voice.verify|verify} messages.
@@ -879,10 +769,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IVoice): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IVoice, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IVoice): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IVoice, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Voice message from a plain object. Also converts values to their respective internal types.
@@ -890,8 +778,7 @@ object v1 {
       * @returns Voice
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice]
     
     /**
       * Creates a plain object from a Voice message. Also converts values to other types if specified.
@@ -900,10 +787,8 @@ object v1 {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.Voice,
       options: IConversionOptions
     ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -914,8 +799,7 @@ object v1 {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a VoiceSelectionParams. */
@@ -941,10 +825,8 @@ object v1 {
       * @returns VoiceSelectionParams instance
       */
     /* static member */
-    @scala.inline
-    def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
-    @scala.inline
-    def create(properties: IVoiceSelectionParams): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
+    inline def create(): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
+    inline def create(properties: IVoiceSelectionParams): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
     
     /**
       * Decodes a VoiceSelectionParams message from the specified reader or buffer.
@@ -955,14 +837,10 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
-    @scala.inline
-    def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
-    @scala.inline
-    def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
-    @scala.inline
-    def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
+    inline def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
+    inline def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
     
     /**
       * Decodes a VoiceSelectionParams message from the specified reader or buffer, length delimited.
@@ -972,10 +850,8 @@ object v1 {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @scala.inline
-    def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
-    @scala.inline
-    def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
+    inline def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
     
     /**
       * Encodes the specified VoiceSelectionParams message. Does not implicitly {@link google.cloud.texttospeech.v1.VoiceSelectionParams.verify|verify} messages.
@@ -984,10 +860,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encode(message: IVoiceSelectionParams): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encode(message: IVoiceSelectionParams, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encode(message: IVoiceSelectionParams): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: IVoiceSelectionParams, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified VoiceSelectionParams message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.VoiceSelectionParams.verify|verify} messages.
@@ -996,10 +870,8 @@ object v1 {
       * @returns Writer
       */
     /* static member */
-    @scala.inline
-    def encodeDelimited(message: IVoiceSelectionParams): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-    @scala.inline
-    def encodeDelimited(message: IVoiceSelectionParams, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IVoiceSelectionParams): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: IVoiceSelectionParams, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a VoiceSelectionParams message from a plain object. Also converts values to their respective internal types.
@@ -1007,8 +879,7 @@ object v1 {
       * @returns VoiceSelectionParams
       */
     /* static member */
-    @scala.inline
-    def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
+    inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams]
     
     /**
       * Creates a plain object from a VoiceSelectionParams message. Also converts values to other types if specified.
@@ -1017,10 +888,8 @@ object v1 {
       * @returns Plain object
       */
     /* static member */
-    @scala.inline
-    def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    @scala.inline
-    def toObject(
+    inline def toObject(message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(
       message: typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1.VoiceSelectionParams,
       options: IConversionOptions
     ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -1031,7 +900,6 @@ object v1 {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @scala.inline
-    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
 }

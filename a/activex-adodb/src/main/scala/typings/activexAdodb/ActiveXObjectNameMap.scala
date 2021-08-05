@@ -37,8 +37,7 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ADODBDotCommand: Command,
     ADODBDotConnection: Connection,
     ADODBDotParameter: Parameter,
@@ -56,25 +55,18 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setADODBDotCommand(value: Command): Self = StObject.set(x, "ADODB.Command", value.asInstanceOf[js.Any])
+    inline def setADODBDotCommand(value: Command): Self = StObject.set(x, "ADODB.Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADODBDotConnection(value: Connection): Self = StObject.set(x, "ADODB.Connection", value.asInstanceOf[js.Any])
+    inline def setADODBDotConnection(value: Connection): Self = StObject.set(x, "ADODB.Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADODBDotParameter(value: Parameter): Self = StObject.set(x, "ADODB.Parameter", value.asInstanceOf[js.Any])
+    inline def setADODBDotParameter(value: Parameter): Self = StObject.set(x, "ADODB.Parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADODBDotRecord(value: Record): Self = StObject.set(x, "ADODB.Record", value.asInstanceOf[js.Any])
+    inline def setADODBDotRecord(value: Record): Self = StObject.set(x, "ADODB.Record", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADODBDotRecordset(value: Recordset): Self = StObject.set(x, "ADODB.Recordset", value.asInstanceOf[js.Any])
+    inline def setADODBDotRecordset(value: Recordset): Self = StObject.set(x, "ADODB.Recordset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADODBDotStream(value: Stream): Self = StObject.set(x, "ADODB.Stream", value.asInstanceOf[js.Any])
+    inline def setADODBDotStream(value: Stream): Self = StObject.set(x, "ADODB.Stream", value.asInstanceOf[js.Any])
   }
 }

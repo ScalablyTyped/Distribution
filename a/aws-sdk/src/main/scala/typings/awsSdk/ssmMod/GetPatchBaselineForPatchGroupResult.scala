@@ -23,31 +23,23 @@ trait GetPatchBaselineForPatchGroupResult extends StObject {
 }
 object GetPatchBaselineForPatchGroupResult {
   
-  @scala.inline
-  def apply(): GetPatchBaselineForPatchGroupResult = {
+  inline def apply(): GetPatchBaselineForPatchGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPatchBaselineForPatchGroupResult]
   }
   
-  @scala.inline
-  implicit class GetPatchBaselineForPatchGroupResultMutableBuilder[Self <: GetPatchBaselineForPatchGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetPatchBaselineForPatchGroupResult](x: Self) {
     
-    @scala.inline
-    def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
+    inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineIdUndefined: Self = StObject.set(x, "BaselineId", js.undefined)
+    inline def setBaselineIdUndefined: Self = StObject.set(x, "BaselineId", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
     
-    @scala.inline
-    def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
+    inline def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchGroupUndefined: Self = StObject.set(x, "PatchGroup", js.undefined)
+    inline def setPatchGroupUndefined: Self = StObject.set(x, "PatchGroup", js.undefined)
   }
 }

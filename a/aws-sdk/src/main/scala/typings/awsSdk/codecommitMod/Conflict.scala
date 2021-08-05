@@ -18,28 +18,21 @@ trait Conflict extends StObject {
 }
 object Conflict {
   
-  @scala.inline
-  def apply(): Conflict = {
+  inline def apply(): Conflict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Conflict]
   }
   
-  @scala.inline
-  implicit class ConflictMutableBuilder[Self <: Conflict] (val x: Self) extends AnyVal {
+  extension [Self <: Conflict](x: Self) {
     
-    @scala.inline
-    def setConflictMetadata(value: ConflictMetadata): Self = StObject.set(x, "conflictMetadata", value.asInstanceOf[js.Any])
+    inline def setConflictMetadata(value: ConflictMetadata): Self = StObject.set(x, "conflictMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictMetadataUndefined: Self = StObject.set(x, "conflictMetadata", js.undefined)
+    inline def setConflictMetadataUndefined: Self = StObject.set(x, "conflictMetadata", js.undefined)
     
-    @scala.inline
-    def setMergeHunks(value: MergeHunks): Self = StObject.set(x, "mergeHunks", value.asInstanceOf[js.Any])
+    inline def setMergeHunks(value: MergeHunks): Self = StObject.set(x, "mergeHunks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeHunksUndefined: Self = StObject.set(x, "mergeHunks", js.undefined)
+    inline def setMergeHunksUndefined: Self = StObject.set(x, "mergeHunks", js.undefined)
     
-    @scala.inline
-    def setMergeHunksVarargs(value: MergeHunk*): Self = StObject.set(x, "mergeHunks", js.Array(value :_*))
+    inline def setMergeHunksVarargs(value: MergeHunk*): Self = StObject.set(x, "mergeHunks", js.Array(value :_*))
   }
 }

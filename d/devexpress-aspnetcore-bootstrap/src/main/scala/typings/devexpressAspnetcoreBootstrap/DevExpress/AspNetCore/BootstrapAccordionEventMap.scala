@@ -24,8 +24,7 @@ trait BootstrapAccordionEventMap
 }
 object BootstrapAccordionEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginCallback: BeginCallbackEventArgs,
     callbackError: CallbackErrorEventArgs,
     endCallback: EndCallbackEventArgs,
@@ -39,28 +38,20 @@ object BootstrapAccordionEventMap {
     __obj.asInstanceOf[BootstrapAccordionEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapAccordionEventMapMutableBuilder[Self <: BootstrapAccordionEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapAccordionEventMap](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedChanged(value: AccordionGroupEventArgs): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
+    inline def setExpandedChanged(value: AccordionGroupEventArgs): Self = StObject.set(x, "expandedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedChanging(value: AccordionGroupCancelEventArgs): Self = StObject.set(x, "expandedChanging", value.asInstanceOf[js.Any])
+    inline def setExpandedChanging(value: AccordionGroupCancelEventArgs): Self = StObject.set(x, "expandedChanging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderClick(value: AccordionGroupClickEventArgs): Self = StObject.set(x, "headerClick", value.asInstanceOf[js.Any])
+    inline def setHeaderClick(value: AccordionGroupClickEventArgs): Self = StObject.set(x, "headerClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemClick(value: AccordionItemEventArgs): Self = StObject.set(x, "itemClick", value.asInstanceOf[js.Any])
+    inline def setItemClick(value: AccordionItemEventArgs): Self = StObject.set(x, "itemClick", value.asInstanceOf[js.Any])
   }
 }

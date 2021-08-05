@@ -10,8 +10,7 @@ object useSetTimeoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useSetTimeout(): UseSetTimeoutReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("useSetTimeout")().asInstanceOf[UseSetTimeoutReturnType]
+  inline def useSetTimeout(): UseSetTimeoutReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("useSetTimeout")().asInstanceOf[UseSetTimeoutReturnType]
   
   trait UseSetTimeoutReturnType extends StObject {
     
@@ -21,20 +20,16 @@ object useSetTimeoutMod {
   }
   object UseSetTimeoutReturnType {
     
-    @scala.inline
-    def apply(clearTimeout: Double => Unit, setTimeout: (js.Function0[Unit], Double) => Double): UseSetTimeoutReturnType = {
+    inline def apply(clearTimeout: Double => Unit, setTimeout: (js.Function0[Unit], Double) => Double): UseSetTimeoutReturnType = {
       val __obj = js.Dynamic.literal(clearTimeout = js.Any.fromFunction1(clearTimeout), setTimeout = js.Any.fromFunction2(setTimeout))
       __obj.asInstanceOf[UseSetTimeoutReturnType]
     }
     
-    @scala.inline
-    implicit class UseSetTimeoutReturnTypeMutableBuilder[Self <: UseSetTimeoutReturnType] (val x: Self) extends AnyVal {
+    extension [Self <: UseSetTimeoutReturnType](x: Self) {
       
-      @scala.inline
-      def setClearTimeout(value: Double => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
+      inline def setClearTimeout(value: Double => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTimeout(value: (js.Function0[Unit], Double) => Double): Self = StObject.set(x, "setTimeout", js.Any.fromFunction2(value))
+      inline def setSetTimeout(value: (js.Function0[Unit], Double) => Double): Self = StObject.set(x, "setTimeout", js.Any.fromFunction2(value))
     }
   }
 }

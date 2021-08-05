@@ -13,16 +13,13 @@ trait DeleteLicenseConfigurationRequest extends StObject {
 }
 object DeleteLicenseConfigurationRequest {
   
-  @scala.inline
-  def apply(LicenseConfigurationArn: String): DeleteLicenseConfigurationRequest = {
+  inline def apply(LicenseConfigurationArn: String): DeleteLicenseConfigurationRequest = {
     val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLicenseConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLicenseConfigurationRequestMutableBuilder[Self <: DeleteLicenseConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLicenseConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
   }
 }

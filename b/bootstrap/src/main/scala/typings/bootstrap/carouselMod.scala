@@ -79,10 +79,8 @@ object carouselMod {
       * with a DOM element.
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): Carousel = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Carousel]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptions): Carousel = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Carousel]
+    inline def getInstance(element: Element): Carousel = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Carousel]
+    inline def getInstance(element: Element, options: PartialOptions): Carousel = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Carousel]
   }
   
   trait Carousel extends StObject {
@@ -123,8 +121,7 @@ object carouselMod {
   }
   object Carousel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cycle: () => Unit,
       dispose: () => Unit,
       next: () => Unit,
@@ -159,26 +156,19 @@ object carouselMod {
            with Events
     }
     
-    @scala.inline
-    implicit class CarouselMutableBuilder[Self <: Carousel] (val x: Self) extends AnyVal {
+    extension [Self <: Carousel](x: Self) {
       
-      @scala.inline
-      def setCycle(value: () => Unit): Self = StObject.set(x, "cycle", js.Any.fromFunction0(value))
+      inline def setCycle(value: () => Unit): Self = StObject.set(x, "cycle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextWhenVisible(value: () => Unit): Self = StObject.set(x, "nextWhenVisible", js.Any.fromFunction0(value))
+      inline def setNextWhenVisible(value: () => Unit): Self = StObject.set(x, "nextWhenVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+      inline def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     }
     
     trait Options extends StObject {
@@ -235,8 +225,7 @@ object carouselMod {
     }
     object Options {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         interval: Double,
         keyboard: Boolean,
         pause: String | Boolean,
@@ -248,26 +237,19 @@ object carouselMod {
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+        inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+        inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPause(value: String | Boolean): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+        inline def setPause(value: String | Boolean): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlide(value: String | Boolean): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
+        inline def setSlide(value: String | Boolean): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+        inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+        inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       }
     }
   }

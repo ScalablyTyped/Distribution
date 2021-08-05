@@ -20,13 +20,9 @@ object coreMod {
   class EndOfStreamError ()
     extends typings.peekReadable.mod.EndOfStreamError
   
-  @scala.inline
-  def fromBuffer(buffer: Buffer): BufferTokenizer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[BufferTokenizer]
-  @scala.inline
-  def fromBuffer(buffer: Buffer, fileInfo: IFileInfo): BufferTokenizer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], fileInfo.asInstanceOf[js.Any])).asInstanceOf[BufferTokenizer]
+  inline def fromBuffer(buffer: Buffer): BufferTokenizer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[BufferTokenizer]
+  inline def fromBuffer(buffer: Buffer, fileInfo: IFileInfo): BufferTokenizer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], fileInfo.asInstanceOf[js.Any])).asInstanceOf[BufferTokenizer]
   
-  @scala.inline
-  def fromStream(stream: Readable): ReadStreamTokenizer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[ReadStreamTokenizer]
-  @scala.inline
-  def fromStream(stream: Readable, fileInfo: IFileInfo): ReadStreamTokenizer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], fileInfo.asInstanceOf[js.Any])).asInstanceOf[ReadStreamTokenizer]
+  inline def fromStream(stream: Readable): ReadStreamTokenizer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[ReadStreamTokenizer]
+  inline def fromStream(stream: Readable, fileInfo: IFileInfo): ReadStreamTokenizer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], fileInfo.asInstanceOf[js.Any])).asInstanceOf[ReadStreamTokenizer]
 }

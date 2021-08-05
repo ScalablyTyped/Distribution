@@ -18,16 +18,13 @@ trait ASPxClientErrorEventArgs
 }
 object ASPxClientErrorEventArgs {
   
-  @scala.inline
-  def apply(Error: js.Any): ASPxClientErrorEventArgs = {
+  inline def apply(Error: js.Any): ASPxClientErrorEventArgs = {
     val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientErrorEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientErrorEventArgsMutableBuilder[Self <: ASPxClientErrorEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientErrorEventArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: js.Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
   }
 }

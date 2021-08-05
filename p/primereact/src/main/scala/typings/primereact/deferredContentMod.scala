@@ -26,20 +26,16 @@ object deferredContentMod {
   }
   object DeferredContentProps {
     
-    @scala.inline
-    def apply(): DeferredContentProps = {
+    inline def apply(): DeferredContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeferredContentProps]
     }
     
-    @scala.inline
-    implicit class DeferredContentPropsMutableBuilder[Self <: DeferredContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: DeferredContentProps](x: Self) {
       
-      @scala.inline
-      def setOnLoad(value: /* event */ Event => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: /* event */ Event => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     }
   }
 }

@@ -13,16 +13,13 @@ trait PrivacyError
 }
 object PrivacyError {
   
-  @scala.inline
-  def apply(message: String, method: String): PrivacyError = {
+  inline def apply(message: String, method: String): PrivacyError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "PrivacyError")
     __obj.asInstanceOf[PrivacyError]
   }
   
-  @scala.inline
-  implicit class PrivacyErrorMutableBuilder[Self <: PrivacyError] (val x: Self) extends AnyVal {
+  extension [Self <: PrivacyError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.PrivacyError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.PrivacyError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

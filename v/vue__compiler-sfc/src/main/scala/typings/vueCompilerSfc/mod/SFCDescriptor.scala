@@ -22,8 +22,7 @@ trait SFCDescriptor extends StObject {
 }
 object SFCDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customBlocks: js.Array[SFCBlock],
     filename: String,
     source: String,
@@ -33,43 +32,30 @@ object SFCDescriptor {
     __obj.asInstanceOf[SFCDescriptor]
   }
   
-  @scala.inline
-  implicit class SFCDescriptorMutableBuilder[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: SFCDescriptor](x: Self) {
     
-    @scala.inline
-    def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
+    inline def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
+    inline def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript(value: SFCScriptBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: SFCScriptBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptNull: Self = StObject.set(x, "script", null)
+    inline def setScriptNull: Self = StObject.set(x, "script", null)
     
-    @scala.inline
-    def setScriptSetup(value: SFCScriptBlock): Self = StObject.set(x, "scriptSetup", value.asInstanceOf[js.Any])
+    inline def setScriptSetup(value: SFCScriptBlock): Self = StObject.set(x, "scriptSetup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptSetupNull: Self = StObject.set(x, "scriptSetup", null)
+    inline def setScriptSetupNull: Self = StObject.set(x, "scriptSetup", null)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: js.Array[SFCStyleBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[SFCStyleBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesVarargs(value: SFCStyleBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: SFCStyleBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplate(value: SFCTemplateBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: SFCTemplateBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNull: Self = StObject.set(x, "template", null)
+    inline def setTemplateNull: Self = StObject.set(x, "template", null)
   }
 }

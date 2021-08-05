@@ -21,34 +21,25 @@ trait EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData extends StObje
 }
 object EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData {
   
-  @scala.inline
-  def apply(busy: Boolean, id: Double, labels: js.Array[Id], name: String, os: String, status: String): EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData = {
+  inline def apply(busy: Boolean, id: Double, labels: js.Array[Id], name: String, os: String, status: String): EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData = {
     val __obj = js.Dynamic.literal(busy = busy.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseDataMutableBuilder[Self <: EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData](x: Self) {
     
-    @scala.inline
-    def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
+    inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: js.Array[Id]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[Id]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsVarargs(value: Id*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: Id*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

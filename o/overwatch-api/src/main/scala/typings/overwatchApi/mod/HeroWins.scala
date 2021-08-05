@@ -12,16 +12,13 @@ trait HeroWins
 }
 object HeroWins {
   
-  @scala.inline
-  def apply(games_won: String, hero: String, img: String): HeroWins = {
+  inline def apply(games_won: String, hero: String, img: String): HeroWins = {
     val __obj = js.Dynamic.literal(games_won = games_won.asInstanceOf[js.Any], hero = hero.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeroWins]
   }
   
-  @scala.inline
-  implicit class HeroWinsMutableBuilder[Self <: HeroWins] (val x: Self) extends AnyVal {
+  extension [Self <: HeroWins](x: Self) {
     
-    @scala.inline
-    def setGames_won(value: String): Self = StObject.set(x, "games_won", value.asInstanceOf[js.Any])
+    inline def setGames_won(value: String): Self = StObject.set(x, "games_won", value.asInstanceOf[js.Any])
   }
 }

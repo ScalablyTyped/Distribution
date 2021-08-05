@@ -12,34 +12,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def image(text: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
-  @scala.inline
-  def image(text: String, level: ecLevel): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
-  @scala.inline
-  def image(text: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def image(text: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def image(text: String, level: ecLevel): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def image(text: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
-  @scala.inline
-  def imageSync(text: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
-  @scala.inline
-  def imageSync(text: String, level: ecLevel): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def imageSync(text: String, options: Options): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  inline def imageSync(text: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  inline def imageSync(text: String, level: ecLevel): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def imageSync(text: String, options: Options): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   
-  @scala.inline
-  def imageSync_Buffer(text: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def imageSync_Buffer(text: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("imageSync")(text.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def matrix(text: String): js.Array[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.Any]]]
-  @scala.inline
-  def matrix(text: String, level: ecLevel): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
+  inline def matrix(text: String): js.Array[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[js.Any]]]
+  inline def matrix(text: String, level: ecLevel): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("matrix")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
   
-  @scala.inline
-  def svgObject(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def svgObject(text: String, level: ecLevel): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def svgObject(text: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def svgObject(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def svgObject(text: String, level: ecLevel): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def svgObject(text: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("svgObject")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait Bitmap extends StObject {
     
@@ -69,20 +57,16 @@ object mod {
   }
   object Bitmap {
     
-    @scala.inline
-    def apply(data: Buffer, size: Double): Bitmap = {
+    inline def apply(data: Buffer, size: Double): Bitmap = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bitmap]
     }
     
-    @scala.inline
-    implicit class BitmapMutableBuilder[Self <: Bitmap] (val x: Self) extends AnyVal {
+    extension [Self <: Bitmap](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,50 +94,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCustomize(value: /* bitmap */ Bitmap => Unit): Self = StObject.set(x, "customize", js.Any.fromFunction1(value))
+      inline def setCustomize(value: /* bitmap */ Bitmap => Unit): Self = StObject.set(x, "customize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomizeUndefined: Self = StObject.set(x, "customize", js.undefined)
+      inline def setCustomizeUndefined: Self = StObject.set(x, "customize", js.undefined)
       
-      @scala.inline
-      def setEc_level(value: ecLevel): Self = StObject.set(x, "ec_level", value.asInstanceOf[js.Any])
+      inline def setEc_level(value: ecLevel): Self = StObject.set(x, "ec_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc_levelUndefined: Self = StObject.set(x, "ec_level", js.undefined)
+      inline def setEc_levelUndefined: Self = StObject.set(x, "ec_level", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setParse_url(value: Boolean): Self = StObject.set(x, "parse_url", value.asInstanceOf[js.Any])
+      inline def setParse_url(value: Boolean): Self = StObject.set(x, "parse_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParse_urlUndefined: Self = StObject.set(x, "parse_url", js.undefined)
+      inline def setParse_urlUndefined: Self = StObject.set(x, "parse_url", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: imageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: imageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -166,17 +136,13 @@ object mod {
   trait ecLevel extends StObject
   object ecLevel {
     
-    @scala.inline
-    def H: typings.qrImage.qrImageStrings.H = "H".asInstanceOf[typings.qrImage.qrImageStrings.H]
+    inline def H: typings.qrImage.qrImageStrings.H = "H".asInstanceOf[typings.qrImage.qrImageStrings.H]
     
-    @scala.inline
-    def L: typings.qrImage.qrImageStrings.L = "L".asInstanceOf[typings.qrImage.qrImageStrings.L]
+    inline def L: typings.qrImage.qrImageStrings.L = "L".asInstanceOf[typings.qrImage.qrImageStrings.L]
     
-    @scala.inline
-    def M: typings.qrImage.qrImageStrings.M = "M".asInstanceOf[typings.qrImage.qrImageStrings.M]
+    inline def M: typings.qrImage.qrImageStrings.M = "M".asInstanceOf[typings.qrImage.qrImageStrings.M]
     
-    @scala.inline
-    def Q: typings.qrImage.qrImageStrings.Q = "Q".asInstanceOf[typings.qrImage.qrImageStrings.Q]
+    inline def Q: typings.qrImage.qrImageStrings.Q = "Q".asInstanceOf[typings.qrImage.qrImageStrings.Q]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -188,16 +154,12 @@ object mod {
   trait imageType extends StObject
   object imageType {
     
-    @scala.inline
-    def eps: typings.qrImage.qrImageStrings.eps = "eps".asInstanceOf[typings.qrImage.qrImageStrings.eps]
+    inline def eps: typings.qrImage.qrImageStrings.eps = "eps".asInstanceOf[typings.qrImage.qrImageStrings.eps]
     
-    @scala.inline
-    def pdf: typings.qrImage.qrImageStrings.pdf = "pdf".asInstanceOf[typings.qrImage.qrImageStrings.pdf]
+    inline def pdf: typings.qrImage.qrImageStrings.pdf = "pdf".asInstanceOf[typings.qrImage.qrImageStrings.pdf]
     
-    @scala.inline
-    def png: typings.qrImage.qrImageStrings.png = "png".asInstanceOf[typings.qrImage.qrImageStrings.png]
+    inline def png: typings.qrImage.qrImageStrings.png = "png".asInstanceOf[typings.qrImage.qrImageStrings.png]
     
-    @scala.inline
-    def svg: typings.qrImage.qrImageStrings.svg = "svg".asInstanceOf[typings.qrImage.qrImageStrings.svg]
+    inline def svg: typings.qrImage.qrImageStrings.svg = "svg".asInstanceOf[typings.qrImage.qrImageStrings.svg]
   }
 }

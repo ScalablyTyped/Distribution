@@ -31,25 +31,19 @@ trait SchemaCardinality extends StObject {
 }
 object SchemaCardinality {
   
-  @scala.inline
-  def apply(): SchemaCardinality = {
+  inline def apply(): SchemaCardinality = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCardinality]
   }
   
-  @scala.inline
-  implicit class SchemaCardinalityMutableBuilder[Self <: SchemaCardinality] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCardinality](x: Self) {
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

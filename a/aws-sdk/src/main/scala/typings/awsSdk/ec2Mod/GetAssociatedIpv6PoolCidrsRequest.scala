@@ -28,34 +28,25 @@ trait GetAssociatedIpv6PoolCidrsRequest extends StObject {
 }
 object GetAssociatedIpv6PoolCidrsRequest {
   
-  @scala.inline
-  def apply(PoolId: Ipv6PoolEc2Id): GetAssociatedIpv6PoolCidrsRequest = {
+  inline def apply(PoolId: Ipv6PoolEc2Id): GetAssociatedIpv6PoolCidrsRequest = {
     val __obj = js.Dynamic.literal(PoolId = PoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssociatedIpv6PoolCidrsRequest]
   }
   
-  @scala.inline
-  implicit class GetAssociatedIpv6PoolCidrsRequestMutableBuilder[Self <: GetAssociatedIpv6PoolCidrsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssociatedIpv6PoolCidrsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Ipv6PoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Ipv6PoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPoolId(value: Ipv6PoolEc2Id): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: Ipv6PoolEc2Id): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
   }
 }

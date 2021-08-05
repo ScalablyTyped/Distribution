@@ -13,16 +13,13 @@ trait VisibleSecurityStateChangedEvent extends StObject {
 }
 object VisibleSecurityStateChangedEvent {
   
-  @scala.inline
-  def apply(visibleSecurityState: VisibleSecurityState): VisibleSecurityStateChangedEvent = {
+  inline def apply(visibleSecurityState: VisibleSecurityState): VisibleSecurityStateChangedEvent = {
     val __obj = js.Dynamic.literal(visibleSecurityState = visibleSecurityState.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisibleSecurityStateChangedEvent]
   }
   
-  @scala.inline
-  implicit class VisibleSecurityStateChangedEventMutableBuilder[Self <: VisibleSecurityStateChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: VisibleSecurityStateChangedEvent](x: Self) {
     
-    @scala.inline
-    def setVisibleSecurityState(value: VisibleSecurityState): Self = StObject.set(x, "visibleSecurityState", value.asInstanceOf[js.Any])
+    inline def setVisibleSecurityState(value: VisibleSecurityState): Self = StObject.set(x, "visibleSecurityState", value.asInstanceOf[js.Any])
   }
 }

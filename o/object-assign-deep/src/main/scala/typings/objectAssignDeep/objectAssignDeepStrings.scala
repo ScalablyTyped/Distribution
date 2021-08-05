@@ -8,11 +8,9 @@ object objectAssignDeepStrings {
   
   @js.native
   sealed trait merge extends StObject
-  @scala.inline
-  def merge: merge = "merge".asInstanceOf[merge]
+  inline def merge: merge = "merge".asInstanceOf[merge]
   
   @js.native
   sealed trait replace extends StObject
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  inline def replace: replace = "replace".asInstanceOf[replace]
 }

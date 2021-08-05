@@ -13,17 +13,14 @@ trait If
 }
 object If {
   
-  @scala.inline
-  def apply(`if`: Array[js.Any]): If = {
+  inline def apply(`if`: Array[js.Any]): If = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
     __obj.asInstanceOf[If]
   }
   
-  @scala.inline
-  implicit class IfMutableBuilder[Self <: If] (val x: Self) extends AnyVal {
+  extension [Self <: If](x: Self) {
     
-    @scala.inline
-    def setIf(value: Array[js.Any]): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
+    inline def setIf(value: Array[js.Any]): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
   }
 }

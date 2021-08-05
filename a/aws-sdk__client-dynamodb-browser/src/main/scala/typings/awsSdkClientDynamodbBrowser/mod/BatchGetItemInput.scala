@@ -12,8 +12,7 @@ trait BatchGetItemInput
      with typings.awsSdkClientDynamodbBrowser.typesBatchGetItemInputMod.BatchGetItemInput
 object BatchGetItemInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RequestItems: StringDictionary[KeysAndAttributes] | (Iterable[js.Tuple2[String, KeysAndAttributes]])
   ): BatchGetItemInput = {
     val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])

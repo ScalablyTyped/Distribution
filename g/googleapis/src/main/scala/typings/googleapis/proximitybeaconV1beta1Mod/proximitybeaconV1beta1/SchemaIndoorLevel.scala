@@ -17,19 +17,15 @@ trait SchemaIndoorLevel extends StObject {
 }
 object SchemaIndoorLevel {
   
-  @scala.inline
-  def apply(): SchemaIndoorLevel = {
+  inline def apply(): SchemaIndoorLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIndoorLevel]
   }
   
-  @scala.inline
-  implicit class SchemaIndoorLevelMutableBuilder[Self <: SchemaIndoorLevel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIndoorLevel](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

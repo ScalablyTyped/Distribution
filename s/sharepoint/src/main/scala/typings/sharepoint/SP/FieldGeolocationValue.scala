@@ -26,8 +26,7 @@ trait FieldGeolocationValue
 }
 object FieldGeolocationValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -46,31 +45,22 @@ object FieldGeolocationValue {
     __obj.asInstanceOf[FieldGeolocationValue]
   }
   
-  @scala.inline
-  implicit class FieldGeolocationValueMutableBuilder[Self <: FieldGeolocationValue] (val x: Self) extends AnyVal {
+  extension [Self <: FieldGeolocationValue](x: Self) {
     
-    @scala.inline
-    def setGet_altitude(value: () => Double): Self = StObject.set(x, "get_altitude", js.Any.fromFunction0(value))
+    inline def setGet_altitude(value: () => Double): Self = StObject.set(x, "get_altitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_latitude(value: () => Double): Self = StObject.set(x, "get_latitude", js.Any.fromFunction0(value))
+    inline def setGet_latitude(value: () => Double): Self = StObject.set(x, "get_latitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_longitude(value: () => Double): Self = StObject.set(x, "get_longitude", js.Any.fromFunction0(value))
+    inline def setGet_longitude(value: () => Double): Self = StObject.set(x, "get_longitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_measure(value: () => Double): Self = StObject.set(x, "get_measure", js.Any.fromFunction0(value))
+    inline def setGet_measure(value: () => Double): Self = StObject.set(x, "get_measure", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_altitude(value: Double => Unit): Self = StObject.set(x, "set_altitude", js.Any.fromFunction1(value))
+    inline def setSet_altitude(value: Double => Unit): Self = StObject.set(x, "set_altitude", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_latitude(value: Double => Unit): Self = StObject.set(x, "set_latitude", js.Any.fromFunction1(value))
+    inline def setSet_latitude(value: Double => Unit): Self = StObject.set(x, "set_latitude", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_longitude(value: Double => Unit): Self = StObject.set(x, "set_longitude", js.Any.fromFunction1(value))
+    inline def setSet_longitude(value: Double => Unit): Self = StObject.set(x, "set_longitude", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_measure(value: Double => Unit): Self = StObject.set(x, "set_measure", js.Any.fromFunction1(value))
+    inline def setSet_measure(value: Double => Unit): Self = StObject.set(x, "set_measure", js.Any.fromFunction1(value))
   }
 }

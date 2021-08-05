@@ -21,16 +21,13 @@ trait UnsupportedOverwriteRequest
 }
 object UnsupportedOverwriteRequest {
   
-  @scala.inline
-  def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Name: String): UnsupportedOverwriteRequest = {
+  inline def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Name: String): UnsupportedOverwriteRequest = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsupportedOverwriteRequest]
   }
   
-  @scala.inline
-  implicit class UnsupportedOverwriteRequestMutableBuilder[Self <: UnsupportedOverwriteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UnsupportedOverwriteRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

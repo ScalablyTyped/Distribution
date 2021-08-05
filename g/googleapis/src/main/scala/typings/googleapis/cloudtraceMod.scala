@@ -37,8 +37,7 @@ object cloudtraceMod {
     @JSImport("googleapis/build/src/apis/cloudtrace", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudtrace] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudtrace]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -57,8 +56,7 @@ object cloudtraceMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -100,8 +98,7 @@ object cloudtraceMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -145,14 +142,10 @@ object cloudtraceMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudtrace(options: Options): Cloudtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtrace")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudtrace]
-  @scala.inline
-  def cloudtrace(options: typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Options): typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtrace")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace]
+  inline def cloudtrace(options: Options): Cloudtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtrace")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudtrace]
+  inline def cloudtrace(options: typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Options): typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtrace")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace]
   
-  @scala.inline
-  def cloudtrace_v1(version: v1): Cloudtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtrace")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudtrace]
+  inline def cloudtrace_v1(version: v1): Cloudtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtrace")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudtrace]
   
-  @scala.inline
-  def cloudtrace_v2(version: v2): typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtrace")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace]
+  inline def cloudtrace_v2(version: v2): typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudtrace")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudtraceV2Mod.cloudtraceV2.Cloudtrace]
 }

@@ -57,6 +57,6 @@ object commandDefinitionMod {
     
     var path: String = js.native
     
-    var preprocessParams: js.Any = js.native
+    /* private */ var preprocessParams: js.Any = js.native
   }
 }

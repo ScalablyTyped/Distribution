@@ -34,81 +34,57 @@ trait IStreamingRecognitionResult extends StObject {
 }
 object IStreamingRecognitionResult {
   
-  @scala.inline
-  def apply(): IStreamingRecognitionResult = {
+  inline def apply(): IStreamingRecognitionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStreamingRecognitionResult]
   }
   
-  @scala.inline
-  implicit class IStreamingRecognitionResultMutableBuilder[Self <: IStreamingRecognitionResult] (val x: Self) extends AnyVal {
+  extension [Self <: IStreamingRecognitionResult](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceNull: Self = StObject.set(x, "confidence", null)
+    inline def setConfidenceNull: Self = StObject.set(x, "confidence", null)
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
+    inline def setIsFinal(value: Boolean): Self = StObject.set(x, "isFinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFinalNull: Self = StObject.set(x, "isFinal", null)
+    inline def setIsFinalNull: Self = StObject.set(x, "isFinal", null)
     
-    @scala.inline
-    def setIsFinalUndefined: Self = StObject.set(x, "isFinal", js.undefined)
+    inline def setIsFinalUndefined: Self = StObject.set(x, "isFinal", js.undefined)
     
-    @scala.inline
-    def setMessageType(
+    inline def setMessageType(
       value: MessageType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.StreamingRecognitionResult.MessageType * / any */ String)
     ): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTypeNull: Self = StObject.set(x, "messageType", null)
+    inline def setMessageTypeNull: Self = StObject.set(x, "messageType", null)
     
-    @scala.inline
-    def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
     
-    @scala.inline
-    def setSpeechEndOffset(value: IDuration): Self = StObject.set(x, "speechEndOffset", value.asInstanceOf[js.Any])
+    inline def setSpeechEndOffset(value: IDuration): Self = StObject.set(x, "speechEndOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechEndOffsetNull: Self = StObject.set(x, "speechEndOffset", null)
+    inline def setSpeechEndOffsetNull: Self = StObject.set(x, "speechEndOffset", null)
     
-    @scala.inline
-    def setSpeechEndOffsetUndefined: Self = StObject.set(x, "speechEndOffset", js.undefined)
+    inline def setSpeechEndOffsetUndefined: Self = StObject.set(x, "speechEndOffset", js.undefined)
     
-    @scala.inline
-    def setSpeechWordInfo(value: js.Array[ISpeechWordInfo]): Self = StObject.set(x, "speechWordInfo", value.asInstanceOf[js.Any])
+    inline def setSpeechWordInfo(value: js.Array[ISpeechWordInfo]): Self = StObject.set(x, "speechWordInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechWordInfoNull: Self = StObject.set(x, "speechWordInfo", null)
+    inline def setSpeechWordInfoNull: Self = StObject.set(x, "speechWordInfo", null)
     
-    @scala.inline
-    def setSpeechWordInfoUndefined: Self = StObject.set(x, "speechWordInfo", js.undefined)
+    inline def setSpeechWordInfoUndefined: Self = StObject.set(x, "speechWordInfo", js.undefined)
     
-    @scala.inline
-    def setSpeechWordInfoVarargs(value: ISpeechWordInfo*): Self = StObject.set(x, "speechWordInfo", js.Array(value :_*))
+    inline def setSpeechWordInfoVarargs(value: ISpeechWordInfo*): Self = StObject.set(x, "speechWordInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setStability(value: Double): Self = StObject.set(x, "stability", value.asInstanceOf[js.Any])
+    inline def setStability(value: Double): Self = StObject.set(x, "stability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStabilityNull: Self = StObject.set(x, "stability", null)
+    inline def setStabilityNull: Self = StObject.set(x, "stability", null)
     
-    @scala.inline
-    def setStabilityUndefined: Self = StObject.set(x, "stability", js.undefined)
+    inline def setStabilityUndefined: Self = StObject.set(x, "stability", js.undefined)
     
-    @scala.inline
-    def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
+    inline def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptNull: Self = StObject.set(x, "transcript", null)
+    inline def setTranscriptNull: Self = StObject.set(x, "transcript", null)
     
-    @scala.inline
-    def setTranscriptUndefined: Self = StObject.set(x, "transcript", js.undefined)
+    inline def setTranscriptUndefined: Self = StObject.set(x, "transcript", js.undefined)
   }
 }

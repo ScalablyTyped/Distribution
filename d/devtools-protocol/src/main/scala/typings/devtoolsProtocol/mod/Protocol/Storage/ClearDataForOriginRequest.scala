@@ -18,19 +18,15 @@ trait ClearDataForOriginRequest extends StObject {
 }
 object ClearDataForOriginRequest {
   
-  @scala.inline
-  def apply(origin: String, storageTypes: String): ClearDataForOriginRequest = {
+  inline def apply(origin: String, storageTypes: String): ClearDataForOriginRequest = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], storageTypes = storageTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearDataForOriginRequest]
   }
   
-  @scala.inline
-  implicit class ClearDataForOriginRequestMutableBuilder[Self <: ClearDataForOriginRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClearDataForOriginRequest](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageTypes(value: String): Self = StObject.set(x, "storageTypes", value.asInstanceOf[js.Any])
+    inline def setStorageTypes(value: String): Self = StObject.set(x, "storageTypes", value.asInstanceOf[js.Any])
   }
 }

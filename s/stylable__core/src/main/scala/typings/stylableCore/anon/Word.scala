@@ -10,16 +10,13 @@ trait Word extends StObject {
 }
 object Word {
   
-  @scala.inline
-  def apply(word: String): Word = {
+  inline def apply(word: String): Word = {
     val __obj = js.Dynamic.literal(word = word.asInstanceOf[js.Any])
     __obj.asInstanceOf[Word]
   }
   
-  @scala.inline
-  implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
+  extension [Self <: Word](x: Self) {
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }
 }

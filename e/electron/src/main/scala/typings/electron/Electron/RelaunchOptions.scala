@@ -12,28 +12,21 @@ trait RelaunchOptions extends StObject {
 }
 object RelaunchOptions {
   
-  @scala.inline
-  def apply(): RelaunchOptions = {
+  inline def apply(): RelaunchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelaunchOptions]
   }
   
-  @scala.inline
-  implicit class RelaunchOptionsMutableBuilder[Self <: RelaunchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RelaunchOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
+    inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
+    inline def setExecPathUndefined: Self = StObject.set(x, "execPath", js.undefined)
   }
 }

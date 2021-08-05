@@ -13,16 +13,13 @@ trait CreateAnomalyMonitorRequest extends StObject {
 }
 object CreateAnomalyMonitorRequest {
   
-  @scala.inline
-  def apply(AnomalyMonitor: AnomalyMonitor): CreateAnomalyMonitorRequest = {
+  inline def apply(AnomalyMonitor: AnomalyMonitor): CreateAnomalyMonitorRequest = {
     val __obj = js.Dynamic.literal(AnomalyMonitor = AnomalyMonitor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAnomalyMonitorRequest]
   }
   
-  @scala.inline
-  implicit class CreateAnomalyMonitorRequestMutableBuilder[Self <: CreateAnomalyMonitorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAnomalyMonitorRequest](x: Self) {
     
-    @scala.inline
-    def setAnomalyMonitor(value: AnomalyMonitor): Self = StObject.set(x, "AnomalyMonitor", value.asInstanceOf[js.Any])
+    inline def setAnomalyMonitor(value: AnomalyMonitor): Self = StObject.set(x, "AnomalyMonitor", value.asInstanceOf[js.Any])
   }
 }

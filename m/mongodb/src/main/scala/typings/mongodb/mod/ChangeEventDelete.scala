@@ -19,19 +19,15 @@ trait ChangeEventDelete[TSchema /* <: StringDictionary[js.Any] */]
 }
 object ChangeEventDelete {
   
-  @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, documentKey: `5`[TSchema], ns: Coll): ChangeEventDelete[TSchema] = {
+  inline def apply[TSchema /* <: StringDictionary[js.Any] */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, documentKey: `5`[TSchema], ns: Coll): ChangeEventDelete[TSchema] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "delete")
     __obj.asInstanceOf[ChangeEventDelete[TSchema]]
   }
   
-  @scala.inline
-  implicit class ChangeEventDeleteMutableBuilder[Self <: ChangeEventDelete[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventDelete[TSchema]) extends AnyVal {
+  extension [Self <: ChangeEventDelete[?], TSchema /* <: StringDictionary[js.Any] */](x: Self & ChangeEventDelete[TSchema]) {
     
-    @scala.inline
-    def setDocumentKey(value: `5`[TSchema]): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
+    inline def setDocumentKey(value: `5`[TSchema]): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationType(value: delete): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: delete): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ trait UpdateApnsVoipChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesUpdateApnsVoipChannelOutputMod.UpdateApnsVoipChannelOutput
 object UpdateApnsVoipChannelOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, APNSVoipChannelResponse: UnmarshalledAPNSVoipChannelResponse): UpdateApnsVoipChannelOutput = {
+  inline def apply($metadata: ResponseMetadata, APNSVoipChannelResponse: UnmarshalledAPNSVoipChannelResponse): UpdateApnsVoipChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSVoipChannelResponse = APNSVoipChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApnsVoipChannelOutput]
   }

@@ -22,19 +22,15 @@ trait Cache extends StObject {
 }
 object Cache {
   
-  @scala.inline
-  def apply(get: js.Any => js.Any, set: (js.Any, js.Any) => Unit): Cache = {
+  inline def apply(get: js.Any => js.Any, set: (js.Any, js.Any) => Unit): Cache = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
     __obj.asInstanceOf[Cache]
   }
   
-  @scala.inline
-  implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+  extension [Self <: Cache](x: Self) {
     
-    @scala.inline
-    def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

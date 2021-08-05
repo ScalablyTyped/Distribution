@@ -18,28 +18,21 @@ trait GetContainerServiceMetricDataResult extends StObject {
 }
 object GetContainerServiceMetricDataResult {
   
-  @scala.inline
-  def apply(): GetContainerServiceMetricDataResult = {
+  inline def apply(): GetContainerServiceMetricDataResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContainerServiceMetricDataResult]
   }
   
-  @scala.inline
-  implicit class GetContainerServiceMetricDataResultMutableBuilder[Self <: GetContainerServiceMetricDataResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetContainerServiceMetricDataResult](x: Self) {
     
-    @scala.inline
-    def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
+    inline def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDataUndefined: Self = StObject.set(x, "metricData", js.undefined)
+    inline def setMetricDataUndefined: Self = StObject.set(x, "metricData", js.undefined)
     
-    @scala.inline
-    def setMetricDataVarargs(value: MetricDatapoint*): Self = StObject.set(x, "metricData", js.Array(value :_*))
+    inline def setMetricDataVarargs(value: MetricDatapoint*): Self = StObject.set(x, "metricData", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricName(value: ContainerServiceMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: ContainerServiceMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
   }
 }

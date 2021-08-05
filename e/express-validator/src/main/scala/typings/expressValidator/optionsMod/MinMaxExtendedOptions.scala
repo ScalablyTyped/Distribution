@@ -14,25 +14,19 @@ trait MinMaxExtendedOptions
 }
 object MinMaxExtendedOptions {
   
-  @scala.inline
-  def apply(): MinMaxExtendedOptions = {
+  inline def apply(): MinMaxExtendedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinMaxExtendedOptions]
   }
   
-  @scala.inline
-  implicit class MinMaxExtendedOptionsMutableBuilder[Self <: MinMaxExtendedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MinMaxExtendedOptions](x: Self) {
     
-    @scala.inline
-    def setGt(value: Double): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+    inline def setGt(value: Double): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+    inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
     
-    @scala.inline
-    def setLt(value: Double): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+    inline def setLt(value: Double): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+    inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
   }
 }

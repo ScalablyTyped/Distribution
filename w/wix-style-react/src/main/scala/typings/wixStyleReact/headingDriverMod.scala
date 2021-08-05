@@ -20,8 +20,7 @@ object headingDriverMod {
   }
   object HeadingDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exists: () => Boolean,
       getAppearance: () => HeadingAppearance | Null,
       getText: () => String,
@@ -31,17 +30,13 @@ object headingDriverMod {
       __obj.asInstanceOf[HeadingDriver]
     }
     
-    @scala.inline
-    implicit class HeadingDriverMutableBuilder[Self <: HeadingDriver] (val x: Self) extends AnyVal {
+    extension [Self <: HeadingDriver](x: Self) {
       
-      @scala.inline
-      def setGetAppearance(value: () => HeadingAppearance | Null): Self = StObject.set(x, "getAppearance", js.Any.fromFunction0(value))
+      inline def setGetAppearance(value: () => HeadingAppearance | Null): Self = StObject.set(x, "getAppearance", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLight(value: () => Boolean): Self = StObject.set(x, "isLight", js.Any.fromFunction0(value))
+      inline def setIsLight(value: () => Boolean): Self = StObject.set(x, "isLight", js.Any.fromFunction0(value))
     }
   }
 }

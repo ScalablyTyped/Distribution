@@ -23,43 +23,31 @@ trait Outcome extends StObject {
 }
 object Outcome {
   
-  @scala.inline
-  def apply(): Outcome = {
+  inline def apply(): Outcome = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Outcome]
   }
   
-  @scala.inline
-  implicit class OutcomeMutableBuilder[Self <: Outcome] (val x: Self) extends AnyVal {
+  extension [Self <: Outcome](x: Self) {
     
-    @scala.inline
-    def setFailureDetail(value: FailureDetail): Self = StObject.set(x, "failureDetail", value.asInstanceOf[js.Any])
+    inline def setFailureDetail(value: FailureDetail): Self = StObject.set(x, "failureDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDetailUndefined: Self = StObject.set(x, "failureDetail", js.undefined)
+    inline def setFailureDetailUndefined: Self = StObject.set(x, "failureDetail", js.undefined)
     
-    @scala.inline
-    def setInconclusiveDetail(value: InconclusiveDetail): Self = StObject.set(x, "inconclusiveDetail", value.asInstanceOf[js.Any])
+    inline def setInconclusiveDetail(value: InconclusiveDetail): Self = StObject.set(x, "inconclusiveDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInconclusiveDetailUndefined: Self = StObject.set(x, "inconclusiveDetail", js.undefined)
+    inline def setInconclusiveDetailUndefined: Self = StObject.set(x, "inconclusiveDetail", js.undefined)
     
-    @scala.inline
-    def setSkippedDetail(value: SkippedDetail): Self = StObject.set(x, "skippedDetail", value.asInstanceOf[js.Any])
+    inline def setSkippedDetail(value: SkippedDetail): Self = StObject.set(x, "skippedDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedDetailUndefined: Self = StObject.set(x, "skippedDetail", js.undefined)
+    inline def setSkippedDetailUndefined: Self = StObject.set(x, "skippedDetail", js.undefined)
     
-    @scala.inline
-    def setSuccessDetail(value: SuccessDetail): Self = StObject.set(x, "successDetail", value.asInstanceOf[js.Any])
+    inline def setSuccessDetail(value: SuccessDetail): Self = StObject.set(x, "successDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessDetailUndefined: Self = StObject.set(x, "successDetail", js.undefined)
+    inline def setSuccessDetailUndefined: Self = StObject.set(x, "successDetail", js.undefined)
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

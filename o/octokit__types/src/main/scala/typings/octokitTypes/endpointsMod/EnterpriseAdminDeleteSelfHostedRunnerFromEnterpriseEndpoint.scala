@@ -18,19 +18,15 @@ trait EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint extends StObje
 }
 object EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String, runner_id: Double): EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint = {
+  inline def apply(enterprise: String, runner_id: Double): EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any], runner_id = runner_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_id(value: Double): Self = StObject.set(x, "runner_id", value.asInstanceOf[js.Any])
+    inline def setRunner_id(value: Double): Self = StObject.set(x, "runner_id", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait ExistingDisk extends StObject {
 }
 object ExistingDisk {
   
-  @scala.inline
-  def apply(): ExistingDisk = {
+  inline def apply(): ExistingDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExistingDisk]
   }
   
-  @scala.inline
-  implicit class ExistingDiskMutableBuilder[Self <: ExistingDisk] (val x: Self) extends AnyVal {
+  extension [Self <: ExistingDisk](x: Self) {
     
-    @scala.inline
-    def setDisk(value: String): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
+    inline def setDisk(value: String): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
+    inline def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
   }
 }

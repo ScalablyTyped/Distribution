@@ -23,28 +23,21 @@ trait BatchDeleteTableRequest extends StObject {
 }
 object BatchDeleteTableRequest {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, TablesToDelete: BatchDeleteTableNameList): BatchDeleteTableRequest = {
+  inline def apply(DatabaseName: NameString, TablesToDelete: BatchDeleteTableNameList): BatchDeleteTableRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], TablesToDelete = TablesToDelete.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteTableRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteTableRequestMutableBuilder[Self <: BatchDeleteTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteTableRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesToDelete(value: BatchDeleteTableNameList): Self = StObject.set(x, "TablesToDelete", value.asInstanceOf[js.Any])
+    inline def setTablesToDelete(value: BatchDeleteTableNameList): Self = StObject.set(x, "TablesToDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesToDeleteVarargs(value: NameString*): Self = StObject.set(x, "TablesToDelete", js.Array(value :_*))
+    inline def setTablesToDeleteVarargs(value: NameString*): Self = StObject.set(x, "TablesToDelete", js.Array(value :_*))
   }
 }

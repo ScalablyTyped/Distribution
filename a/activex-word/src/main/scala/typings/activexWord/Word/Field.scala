@@ -54,13 +54,12 @@ trait Field extends StObject {
   
   def UpdateSource(): Unit
   
-  @JSName("Word.Field_typekey")
+  /* private */ @JSName("Word.Field_typekey")
   var WordDotField_typekey: Field
 }
 object Field {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Code: Range,
     Copy: () => Unit,
@@ -92,82 +91,56 @@ object Field {
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: Range): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Range): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Unit): Self = StObject.set(x, "Copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
+    inline def setCut(value: () => Unit): Self = StObject.set(x, "Cut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoClick(value: () => Unit): Self = StObject.set(x, "DoClick", js.Any.fromFunction0(value))
+    inline def setDoClick(value: () => Unit): Self = StObject.set(x, "DoClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineShape(value: InlineShape): Self = StObject.set(x, "InlineShape", value.asInstanceOf[js.Any])
+    inline def setInlineShape(value: InlineShape): Self = StObject.set(x, "InlineShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: WdFieldKind): Self = StObject.set(x, "Kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WdFieldKind): Self = StObject.set(x, "Kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkFormat(value: LinkFormat): Self = StObject.set(x, "LinkFormat", value.asInstanceOf[js.Any])
+    inline def setLinkFormat(value: LinkFormat): Self = StObject.set(x, "LinkFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: Field): Self = StObject.set(x, "Next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Field): Self = StObject.set(x, "Next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOLEFormat(value: OLEFormat): Self = StObject.set(x, "OLEFormat", value.asInstanceOf[js.Any])
+    inline def setOLEFormat(value: OLEFormat): Self = StObject.set(x, "OLEFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious(value: Field): Self = StObject.set(x, "Previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: Field): Self = StObject.set(x, "Previous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Range): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Range): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowCodes(value: Boolean): Self = StObject.set(x, "ShowCodes", value.asInstanceOf[js.Any])
+    inline def setShowCodes(value: Boolean): Self = StObject.set(x, "ShowCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WdFieldType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WdFieldType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlink(value: () => Unit): Self = StObject.set(x, "Unlink", js.Any.fromFunction0(value))
+    inline def setUnlink(value: () => Unit): Self = StObject.set(x, "Unlink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: () => Boolean): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Boolean): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateSource(value: () => Unit): Self = StObject.set(x, "UpdateSource", js.Any.fromFunction0(value))
+    inline def setUpdateSource(value: () => Unit): Self = StObject.set(x, "UpdateSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotField_typekey(value: Field): Self = StObject.set(x, "Word.Field_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotField_typekey(value: Field): Self = StObject.set(x, "Word.Field_typekey", value.asInstanceOf[js.Any])
   }
 }

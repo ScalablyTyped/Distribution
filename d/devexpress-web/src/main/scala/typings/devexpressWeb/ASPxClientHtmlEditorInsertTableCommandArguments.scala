@@ -28,8 +28,7 @@ trait ASPxClientHtmlEditorInsertTableCommandArguments
 }
 object ASPxClientHtmlEditorInsertTableCommandArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     align: String,
     caption: String,
     cellPadding: Double,
@@ -46,16 +45,12 @@ object ASPxClientHtmlEditorInsertTableCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertTableCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorInsertTableCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorInsertTableCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorInsertTableCommandArguments](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEqualColumnWidth(value: Boolean): Self = StObject.set(x, "isEqualColumnWidth", value.asInstanceOf[js.Any])
+    inline def setIsEqualColumnWidth(value: Boolean): Self = StObject.set(x, "isEqualColumnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
   }
 }

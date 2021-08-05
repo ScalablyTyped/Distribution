@@ -20,26 +20,20 @@ object regularizerConfigMod {
   }
   object L1L2Config {
     
-    @scala.inline
-    def apply(): L1L2Config = {
+    inline def apply(): L1L2Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[L1L2Config]
     }
     
-    @scala.inline
-    implicit class L1L2ConfigMutableBuilder[Self <: L1L2Config] (val x: Self) extends AnyVal {
+    extension [Self <: L1L2Config](x: Self) {
       
-      @scala.inline
-      def setL1(value: Double): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
+      inline def setL1(value: Double): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL1Undefined: Self = StObject.set(x, "l1", js.undefined)
+      inline def setL1Undefined: Self = StObject.set(x, "l1", js.undefined)
       
-      @scala.inline
-      def setL2(value: Double): Self = StObject.set(x, "l2", value.asInstanceOf[js.Any])
+      inline def setL2(value: Double): Self = StObject.set(x, "l2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL2Undefined: Self = StObject.set(x, "l2", js.undefined)
+      inline def setL2Undefined: Self = StObject.set(x, "l2", js.undefined)
     }
   }
   

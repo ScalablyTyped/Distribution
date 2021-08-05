@@ -15,8 +15,7 @@ trait IApplicationLanguagesStatics extends StObject {
 }
 object IApplicationLanguagesStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     languages: IVectorView[String],
     manifestLanguages: IVectorView[String],
     primaryLanguageOverride: String
@@ -25,16 +24,12 @@ object IApplicationLanguagesStatics {
     __obj.asInstanceOf[IApplicationLanguagesStatics]
   }
   
-  @scala.inline
-  implicit class IApplicationLanguagesStaticsMutableBuilder[Self <: IApplicationLanguagesStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IApplicationLanguagesStatics](x: Self) {
     
-    @scala.inline
-    def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestLanguages(value: IVectorView[String]): Self = StObject.set(x, "manifestLanguages", value.asInstanceOf[js.Any])
+    inline def setManifestLanguages(value: IVectorView[String]): Self = StObject.set(x, "manifestLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryLanguageOverride(value: String): Self = StObject.set(x, "primaryLanguageOverride", value.asInstanceOf[js.Any])
+    inline def setPrimaryLanguageOverride(value: String): Self = StObject.set(x, "primaryLanguageOverride", value.asInstanceOf[js.Any])
   }
 }

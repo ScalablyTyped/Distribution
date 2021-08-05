@@ -14,16 +14,11 @@ object libPersistStoreMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(store: Store[js.Any, AnyAction]): Persistor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any]).asInstanceOf[Persistor]
-  @scala.inline
-  def default(store: Store[js.Any, AnyAction], persistorOptions: Null, callback: js.Function0[js.Any]): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Persistor]
-  @scala.inline
-  def default(store: Store[js.Any, AnyAction], persistorOptions: Unit, callback: js.Function0[js.Any]): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Persistor]
-  @scala.inline
-  def default(store: Store[js.Any, AnyAction], persistorOptions: PersistorOptions): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any])).asInstanceOf[Persistor]
-  @scala.inline
-  def default(
+  inline def default(store: Store[js.Any, AnyAction]): Persistor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any]).asInstanceOf[Persistor]
+  inline def default(store: Store[js.Any, AnyAction], persistorOptions: Null, callback: js.Function0[js.Any]): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Persistor]
+  inline def default(store: Store[js.Any, AnyAction], persistorOptions: Unit, callback: js.Function0[js.Any]): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Persistor]
+  inline def default(store: Store[js.Any, AnyAction], persistorOptions: PersistorOptions): Persistor = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(store.asInstanceOf[js.Any], persistorOptions.asInstanceOf[js.Any])).asInstanceOf[Persistor]
+  inline def default(
     store: Store[js.Any, AnyAction],
     persistorOptions: PersistorOptions,
     callback: js.Function0[js.Any]

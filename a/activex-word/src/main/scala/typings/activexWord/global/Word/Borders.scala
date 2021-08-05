@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Borders")
 @js.native
-class Borders protected ()
+/* private */ class Borders ()
   extends StObject
      with typings.activexWord.Word.Borders {
   
@@ -104,7 +104,7 @@ class Borders protected ()
   /* CompleteClass */
   var SurroundHeader: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Borders_typekey")
   var WordDotBorders_typekey: typings.activexWord.Word.Borders = js.native
 }

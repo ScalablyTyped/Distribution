@@ -18,19 +18,15 @@ trait UpdateEvaluationInput extends StObject {
 }
 object UpdateEvaluationInput {
   
-  @scala.inline
-  def apply(EvaluationId: EntityId, EvaluationName: EntityName): UpdateEvaluationInput = {
+  inline def apply(EvaluationId: EntityId, EvaluationName: EntityName): UpdateEvaluationInput = {
     val __obj = js.Dynamic.literal(EvaluationId = EvaluationId.asInstanceOf[js.Any], EvaluationName = EvaluationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEvaluationInput]
   }
   
-  @scala.inline
-  implicit class UpdateEvaluationInputMutableBuilder[Self <: UpdateEvaluationInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEvaluationInput](x: Self) {
     
-    @scala.inline
-    def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
+    inline def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationName(value: EntityName): Self = StObject.set(x, "EvaluationName", value.asInstanceOf[js.Any])
+    inline def setEvaluationName(value: EntityName): Self = StObject.set(x, "EvaluationName", value.asInstanceOf[js.Any])
   }
 }

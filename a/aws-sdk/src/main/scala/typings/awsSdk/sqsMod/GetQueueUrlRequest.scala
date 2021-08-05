@@ -18,22 +18,17 @@ trait GetQueueUrlRequest extends StObject {
 }
 object GetQueueUrlRequest {
   
-  @scala.inline
-  def apply(QueueName: String): GetQueueUrlRequest = {
+  inline def apply(QueueName: String): GetQueueUrlRequest = {
     val __obj = js.Dynamic.literal(QueueName = QueueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueueUrlRequest]
   }
   
-  @scala.inline
-  implicit class GetQueueUrlRequestMutableBuilder[Self <: GetQueueUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetQueueUrlRequest](x: Self) {
     
-    @scala.inline
-    def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
+    inline def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueOwnerAWSAccountId(value: String): Self = StObject.set(x, "QueueOwnerAWSAccountId", value.asInstanceOf[js.Any])
+    inline def setQueueOwnerAWSAccountId(value: String): Self = StObject.set(x, "QueueOwnerAWSAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueOwnerAWSAccountIdUndefined: Self = StObject.set(x, "QueueOwnerAWSAccountId", js.undefined)
+    inline def setQueueOwnerAWSAccountIdUndefined: Self = StObject.set(x, "QueueOwnerAWSAccountId", js.undefined)
   }
 }

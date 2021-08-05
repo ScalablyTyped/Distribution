@@ -18,25 +18,19 @@ trait IpRange extends StObject {
 }
 object IpRange {
   
-  @scala.inline
-  def apply(): IpRange = {
+  inline def apply(): IpRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpRange]
   }
   
-  @scala.inline
-  implicit class IpRangeMutableBuilder[Self <: IpRange] (val x: Self) extends AnyVal {
+  extension [Self <: IpRange](x: Self) {
     
-    @scala.inline
-    def setCidrIp(value: String): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
+    inline def setCidrIp(value: String): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
+    inline def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

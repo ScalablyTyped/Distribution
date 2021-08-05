@@ -12,19 +12,15 @@ trait ITimeEntryStatic extends StObject {
 }
 object ITimeEntryStatic {
   
-  @scala.inline
-  def apply(regionalOptions: ITimeEntryLocales, setDefaults: ITimeEntryOptions => Unit): ITimeEntryStatic = {
+  inline def apply(regionalOptions: ITimeEntryLocales, setDefaults: ITimeEntryOptions => Unit): ITimeEntryStatic = {
     val __obj = js.Dynamic.literal(regionalOptions = regionalOptions.asInstanceOf[js.Any], setDefaults = js.Any.fromFunction1(setDefaults))
     __obj.asInstanceOf[ITimeEntryStatic]
   }
   
-  @scala.inline
-  implicit class ITimeEntryStaticMutableBuilder[Self <: ITimeEntryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ITimeEntryStatic](x: Self) {
     
-    @scala.inline
-    def setRegionalOptions(value: ITimeEntryLocales): Self = StObject.set(x, "regionalOptions", value.asInstanceOf[js.Any])
+    inline def setRegionalOptions(value: ITimeEntryLocales): Self = StObject.set(x, "regionalOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDefaults(value: ITimeEntryOptions => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
+    inline def setSetDefaults(value: ITimeEntryOptions => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
   }
 }

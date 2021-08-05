@@ -16,31 +16,23 @@ trait SVGCircleAttributes
 }
 object SVGCircleAttributes {
   
-  @scala.inline
-  def apply(): SVGCircleAttributes = {
+  inline def apply(): SVGCircleAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGCircleAttributes]
   }
   
-  @scala.inline
-  implicit class SVGCircleAttributesMutableBuilder[Self <: SVGCircleAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SVGCircleAttributes](x: Self) {
     
-    @scala.inline
-    def setCx(value: String | Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: String | Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
-    @scala.inline
-    def setCy(value: String | Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: String | Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    @scala.inline
-    def setR(value: String | Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: String | Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
   }
 }

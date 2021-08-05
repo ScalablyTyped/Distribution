@@ -35,8 +35,7 @@ trait XTextOutputStream
 }
 object XTextOutputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     closeOutput: () => Unit,
     flush: () => Unit,
@@ -50,13 +49,10 @@ object XTextOutputStream {
     __obj.asInstanceOf[XTextOutputStream]
   }
   
-  @scala.inline
-  implicit class XTextOutputStreamMutableBuilder[Self <: XTextOutputStream] (val x: Self) extends AnyVal {
+  extension [Self <: XTextOutputStream](x: Self) {
     
-    @scala.inline
-    def setSetEncoding(value: String => Unit): Self = StObject.set(x, "setEncoding", js.Any.fromFunction1(value))
+    inline def setSetEncoding(value: String => Unit): Self = StObject.set(x, "setEncoding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
+    inline def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
   }
 }

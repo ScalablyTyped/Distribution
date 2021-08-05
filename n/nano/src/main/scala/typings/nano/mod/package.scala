@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(config: java.lang.String): typings.nano.mod.ServerScope = typings.nano.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.nano.mod.ServerScope]
-@scala.inline
-def apply(config: typings.nano.mod.Configuration): typings.nano.mod.ServerScope = typings.nano.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.nano.mod.ServerScope]
+inline def apply(config: java.lang.String): typings.nano.mod.ServerScope = typings.nano.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.nano.mod.ServerScope]
+inline def apply(config: typings.nano.mod.Configuration): typings.nano.mod.ServerScope = typings.nano.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.nano.mod.ServerScope]
 
 type Callback[R] = js.Function3[/* error */ js.Any, /* response */ R, /* headers */ js.UndefOr[js.Any], scala.Unit]
 

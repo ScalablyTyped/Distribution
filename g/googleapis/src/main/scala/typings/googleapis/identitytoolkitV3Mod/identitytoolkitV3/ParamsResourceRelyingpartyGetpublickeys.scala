@@ -19,19 +19,15 @@ trait ParamsResourceRelyingpartyGetpublickeys
 }
 object ParamsResourceRelyingpartyGetpublickeys {
   
-  @scala.inline
-  def apply(): ParamsResourceRelyingpartyGetpublickeys = {
+  inline def apply(): ParamsResourceRelyingpartyGetpublickeys = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRelyingpartyGetpublickeys]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRelyingpartyGetpublickeysMutableBuilder[Self <: ParamsResourceRelyingpartyGetpublickeys] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRelyingpartyGetpublickeys](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

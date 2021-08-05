@@ -20,10 +20,8 @@ object pathMod {
       *
       * @param ext - An extension to remove from the result.
       */
-    @scala.inline
-    def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Get the directory name of a path, similar to the Unix dirname command.
@@ -31,8 +29,7 @@ object pathMod {
       *
       * @param path - The file path.
       */
-    @scala.inline
-    def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the extension of the path.
@@ -48,8 +45,7 @@ object pathMod {
       * character of the basename of path [[basename]] is `.`, then an
       * empty string is returned.
       */
-    @scala.inline
-    def extname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def extname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Join all arguments together and normalize the resulting path.
@@ -57,8 +53,7 @@ object pathMod {
       *
       * @param paths - The string paths to join.
       */
-    @scala.inline
-    def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Normalize a string path, reducing '..' and '.' parts.
@@ -67,8 +62,7 @@ object pathMod {
       *
       * @param path - The string path to normalize.
       */
-    @scala.inline
-    def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Normalize a file extension to be of the type `'.foo'`.
@@ -78,8 +72,7 @@ object pathMod {
       * #### Notes
       * Adds a leading dot if not present and converts to lower case.
       */
-    @scala.inline
-    def normalizeExtension(`extension`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExtension")(`extension`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normalizeExtension(`extension`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExtension")(`extension`.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Solve the relative path from {from} to {to}.
@@ -94,16 +87,14 @@ object pathMod {
       * If a zero-length string is passed as from or to, `/`
       * will be used instead of the zero-length strings.
       */
-    @scala.inline
-    def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Remove the leading slash from a path.
       *
       * @param path: the path from which to remove a leading slash.
       */
-    @scala.inline
-    def removeSlash(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSlash")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def removeSlash(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSlash")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Resolve a sequence of paths or path segments into an absolute path.
@@ -118,7 +109,6 @@ object pathMod {
       *
       * If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
       */
-    @scala.inline
-    def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

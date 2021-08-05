@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ICanvasPattern")
 @js.native
-class ICanvasPattern protected ()
+/* private */ class ICanvasPattern ()
   extends StObject
      with typings.activexMshtml.MSHTML.ICanvasPattern {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.ICanvasPattern_typekey")
   var MSHTMLDotICanvasPattern_typekey: typings.activexMshtml.MSHTML.ICanvasPattern = js.native
 }

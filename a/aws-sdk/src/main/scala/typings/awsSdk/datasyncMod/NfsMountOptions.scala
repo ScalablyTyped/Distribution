@@ -13,19 +13,15 @@ trait NfsMountOptions extends StObject {
 }
 object NfsMountOptions {
   
-  @scala.inline
-  def apply(): NfsMountOptions = {
+  inline def apply(): NfsMountOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NfsMountOptions]
   }
   
-  @scala.inline
-  implicit class NfsMountOptionsMutableBuilder[Self <: NfsMountOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NfsMountOptions](x: Self) {
     
-    @scala.inline
-    def setVersion(value: NfsVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NfsVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

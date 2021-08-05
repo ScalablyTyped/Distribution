@@ -26,22 +26,17 @@ trait ResourceFieldSelector extends StObject {
 }
 object ResourceFieldSelector {
   
-  @scala.inline
-  def apply(containerName: String, divisor: String, resource: String): ResourceFieldSelector = {
+  inline def apply(containerName: String, divisor: String, resource: String): ResourceFieldSelector = {
     val __obj = js.Dynamic.literal(containerName = containerName.asInstanceOf[js.Any], divisor = divisor.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceFieldSelector]
   }
   
-  @scala.inline
-  implicit class ResourceFieldSelectorMutableBuilder[Self <: ResourceFieldSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceFieldSelector](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivisor(value: String): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
+    inline def setDivisor(value: String): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

@@ -17,19 +17,15 @@ trait RenameOptions
 }
 object RenameOptions {
   
-  @scala.inline
-  def apply(): RenameOptions = {
+  inline def apply(): RenameOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenameOptions]
   }
   
-  @scala.inline
-  implicit class RenameOptionsMutableBuilder[Self <: RenameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RenameOptions](x: Self) {
     
-    @scala.inline
-    def setPrepareProvider(value: Boolean): Self = StObject.set(x, "prepareProvider", value.asInstanceOf[js.Any])
+    inline def setPrepareProvider(value: Boolean): Self = StObject.set(x, "prepareProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrepareProviderUndefined: Self = StObject.set(x, "prepareProvider", js.undefined)
+    inline def setPrepareProviderUndefined: Self = StObject.set(x, "prepareProvider", js.undefined)
   }
 }

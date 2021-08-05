@@ -19,13 +19,13 @@ object appImageTargetMod {
   @js.native
   trait AppImageTarget extends Target {
     
-    val desktopEntry: js.Any = js.native
+    /* private */ val desktopEntry: js.Any = js.native
     
-    val helper: js.Any = js.native
+    /* private */ val helper: js.Any = js.native
     
     @JSName("options")
     val options_AppImageTarget: AppImageOptions = js.native
     
-    val packager: js.Any = js.native
+    /* private */ val packager: js.Any = js.native
   }
 }

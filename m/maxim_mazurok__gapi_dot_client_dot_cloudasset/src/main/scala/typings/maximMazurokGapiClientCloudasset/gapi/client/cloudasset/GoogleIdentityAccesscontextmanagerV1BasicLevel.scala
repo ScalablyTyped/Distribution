@@ -17,28 +17,21 @@ trait GoogleIdentityAccesscontextmanagerV1BasicLevel extends StObject {
 }
 object GoogleIdentityAccesscontextmanagerV1BasicLevel {
   
-  @scala.inline
-  def apply(): GoogleIdentityAccesscontextmanagerV1BasicLevel = {
+  inline def apply(): GoogleIdentityAccesscontextmanagerV1BasicLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1BasicLevel]
   }
   
-  @scala.inline
-  implicit class GoogleIdentityAccesscontextmanagerV1BasicLevelMutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1BasicLevel] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleIdentityAccesscontextmanagerV1BasicLevel](x: Self) {
     
-    @scala.inline
-    def setCombiningFunction(value: String): Self = StObject.set(x, "combiningFunction", value.asInstanceOf[js.Any])
+    inline def setCombiningFunction(value: String): Self = StObject.set(x, "combiningFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCombiningFunctionUndefined: Self = StObject.set(x, "combiningFunction", js.undefined)
+    inline def setCombiningFunctionUndefined: Self = StObject.set(x, "combiningFunction", js.undefined)
     
-    @scala.inline
-    def setConditions(value: js.Array[GoogleIdentityAccesscontextmanagerV1Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[GoogleIdentityAccesscontextmanagerV1Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: GoogleIdentityAccesscontextmanagerV1Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: GoogleIdentityAccesscontextmanagerV1Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

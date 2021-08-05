@@ -18,28 +18,21 @@ trait GetInventoryResult extends StObject {
 }
 object GetInventoryResult {
   
-  @scala.inline
-  def apply(): GetInventoryResult = {
+  inline def apply(): GetInventoryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInventoryResult]
   }
   
-  @scala.inline
-  implicit class GetInventoryResultMutableBuilder[Self <: GetInventoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetInventoryResult](x: Self) {
     
-    @scala.inline
-    def setEntities(value: InventoryResultEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: InventoryResultEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "Entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "Entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: InventoryResultEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: InventoryResultEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

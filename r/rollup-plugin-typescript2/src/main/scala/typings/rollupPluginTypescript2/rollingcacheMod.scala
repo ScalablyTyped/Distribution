@@ -18,9 +18,9 @@ object rollingcacheMod {
       */
     def this(cacheRoot: String, checkNewCache: Boolean) = this()
     
-    var cacheRoot: js.Any = js.native
+    /* private */ var cacheRoot: js.Any = js.native
     
-    var checkNewCache: js.Any = js.native
+    /* private */ var checkNewCache: js.Any = js.native
     
     /* CompleteClass */
     override def exists(name: String): Boolean = js.native
@@ -28,9 +28,9 @@ object rollingcacheMod {
     /* CompleteClass */
     override def `match`(names: js.Array[String]): Boolean = js.native
     
-    var newCacheRoot: js.Any = js.native
+    /* private */ var newCacheRoot: js.Any = js.native
     
-    var oldCacheRoot: js.Any = js.native
+    /* private */ var oldCacheRoot: js.Any = js.native
     
     /* CompleteClass */
     override def path(name: String): String = js.native
@@ -41,7 +41,7 @@ object rollingcacheMod {
     /* CompleteClass */
     override def roll(): Unit = js.native
     
-    var rolled: js.Any = js.native
+    /* private */ var rolled: js.Any = js.native
     
     /* CompleteClass */
     override def touch(name: String): Unit = js.native

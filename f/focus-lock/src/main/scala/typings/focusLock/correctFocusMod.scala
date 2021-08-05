@@ -11,9 +11,7 @@ object correctFocusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def correctNode(node: HTMLInputElement, nodes: js.Array[HTMLInputElement]): HTMLInputElement = (^.asInstanceOf[js.Dynamic].applyDynamic("correctNode")(node.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[HTMLInputElement]
+  inline def correctNode(node: HTMLInputElement, nodes: js.Array[HTMLInputElement]): HTMLInputElement = (^.asInstanceOf[js.Dynamic].applyDynamic("correctNode")(node.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[HTMLInputElement]
   
-  @scala.inline
-  def correctNodes(nodes: js.Array[HTMLInputElement]): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("correctNodes")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
+  inline def correctNodes(nodes: js.Array[HTMLInputElement]): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("correctNodes")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
 }

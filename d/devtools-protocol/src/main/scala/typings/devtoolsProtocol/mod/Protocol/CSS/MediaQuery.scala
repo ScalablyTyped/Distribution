@@ -18,22 +18,17 @@ trait MediaQuery extends StObject {
 }
 object MediaQuery {
   
-  @scala.inline
-  def apply(active: Boolean, expressions: js.Array[MediaQueryExpression]): MediaQuery = {
+  inline def apply(active: Boolean, expressions: js.Array[MediaQueryExpression]): MediaQuery = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], expressions = expressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaQuery]
   }
   
-  @scala.inline
-  implicit class MediaQueryMutableBuilder[Self <: MediaQuery] (val x: Self) extends AnyVal {
+  extension [Self <: MediaQuery](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressions(value: js.Array[MediaQueryExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Array[MediaQueryExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsVarargs(value: MediaQueryExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: MediaQueryExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
   }
 }

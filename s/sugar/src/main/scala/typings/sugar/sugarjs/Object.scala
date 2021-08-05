@@ -399,43 +399,32 @@ object Object {
   }
   object ObjectMergeOptions {
     
-    @scala.inline
-    def apply[T](): ObjectMergeOptions[T] = {
+    inline def apply[T](): ObjectMergeOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ObjectMergeOptions[T]]
     }
     
-    @scala.inline
-    implicit class ObjectMergeOptionsMutableBuilder[Self <: ObjectMergeOptions[?], T] (val x: Self & ObjectMergeOptions[T]) extends AnyVal {
+    extension [Self <: ObjectMergeOptions[?], T](x: Self & ObjectMergeOptions[T]) {
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      @scala.inline
-      def setDescriptor(value: Boolean): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+      inline def setDescriptor(value: Boolean): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptorUndefined: Self = StObject.set(x, "descriptor", js.undefined)
+      inline def setDescriptorUndefined: Self = StObject.set(x, "descriptor", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setResolve(value: Boolean | resolveFn[T]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: Boolean | resolveFn[T]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveFunction5(
+      inline def setResolveFunction5(
         value: (/* key */ java.lang.String, T, T, /* target */ js.Object, /* source */ js.Object) => Boolean
       ): Self = StObject.set(x, "resolve", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     }
   }
   
@@ -451,38 +440,28 @@ object Object {
   }
   object QueryStringOptions {
     
-    @scala.inline
-    def apply[T, U](): QueryStringOptions[T, U] = {
+    inline def apply[T, U](): QueryStringOptions[T, U] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryStringOptions[T, U]]
     }
     
-    @scala.inline
-    implicit class QueryStringOptionsMutableBuilder[Self <: QueryStringOptions[?, ?], T, U] (val x: Self & (QueryStringOptions[T, U])) extends AnyVal {
+    extension [Self <: QueryStringOptions[?, ?], T, U](x: Self & (QueryStringOptions[T, U])) {
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: java.lang.String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: java.lang.String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setTransform(value: (/* key */ java.lang.String, /* val */ T, /* obj */ js.Object) => U): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* key */ java.lang.String, /* val */ T, /* obj */ js.Object) => U): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -498,38 +477,28 @@ object Object {
   }
   object QueryStringParseOptions {
     
-    @scala.inline
-    def apply[T, U](): QueryStringParseOptions[T, U] = {
+    inline def apply[T, U](): QueryStringParseOptions[T, U] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryStringParseOptions[T, U]]
     }
     
-    @scala.inline
-    implicit class QueryStringParseOptionsMutableBuilder[Self <: QueryStringParseOptions[?, ?], T, U] (val x: Self & (QueryStringParseOptions[T, U])) extends AnyVal {
+    extension [Self <: QueryStringParseOptions[?, ?], T, U](x: Self & (QueryStringParseOptions[T, U])) {
       
-      @scala.inline
-      def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+      inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: java.lang.String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: java.lang.String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setTransform(value: (/* key */ java.lang.String, /* val */ T, /* obj */ js.Object) => U): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* key */ java.lang.String, /* val */ T, /* obj */ js.Object) => U): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   

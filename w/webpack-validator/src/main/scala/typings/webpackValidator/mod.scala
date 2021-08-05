@@ -9,15 +9,13 @@ object mod {
   /**
     * Validate your webpack configs with joi
     */
-  @scala.inline
-  def apply(
+  inline def apply(
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
   ): js.Any = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   /**
     * Validate your webpack configs with joi
     */
-  @scala.inline
-  def apply(
+  inline def apply(
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any,
     options: ValidationOptions
   ): js.Any = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
@@ -36,32 +34,24 @@ object mod {
   }
   object ValidationOptions {
     
-    @scala.inline
-    def apply(): ValidationOptions = {
+    inline def apply(): ValidationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    @scala.inline
-    implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationOptions](x: Self) {
       
-      @scala.inline
-      def `setLoader-enforce-include-or-exclude`(value: Boolean): Self = StObject.set(x, "loader-enforce-include-or-exclude", value.asInstanceOf[js.Any])
+      inline def `setLoader-enforce-include-or-exclude`(value: Boolean): Self = StObject.set(x, "loader-enforce-include-or-exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLoader-enforce-include-or-excludeUndefined`: Self = StObject.set(x, "loader-enforce-include-or-exclude", js.undefined)
+      inline def `setLoader-enforce-include-or-excludeUndefined`: Self = StObject.set(x, "loader-enforce-include-or-exclude", js.undefined)
       
-      @scala.inline
-      def `setLoader-prefer-include`(value: Boolean): Self = StObject.set(x, "loader-prefer-include", value.asInstanceOf[js.Any])
+      inline def `setLoader-prefer-include`(value: Boolean): Self = StObject.set(x, "loader-prefer-include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLoader-prefer-includeUndefined`: Self = StObject.set(x, "loader-prefer-include", js.undefined)
+      inline def `setLoader-prefer-includeUndefined`: Self = StObject.set(x, "loader-prefer-include", js.undefined)
       
-      @scala.inline
-      def `setNo-root-files-node-modules-nameclash`(value: Boolean): Self = StObject.set(x, "no-root-files-node-modules-nameclash", value.asInstanceOf[js.Any])
+      inline def `setNo-root-files-node-modules-nameclash`(value: Boolean): Self = StObject.set(x, "no-root-files-node-modules-nameclash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNo-root-files-node-modules-nameclashUndefined`: Self = StObject.set(x, "no-root-files-node-modules-nameclash", js.undefined)
+      inline def `setNo-root-files-node-modules-nameclashUndefined`: Self = StObject.set(x, "no-root-files-node-modules-nameclash", js.undefined)
     }
   }
 }

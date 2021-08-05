@@ -10,16 +10,13 @@ trait ProjectsUserSettings extends StObject {
 }
 object ProjectsUserSettings {
   
-  @scala.inline
-  def apply(init: js.Object => Unit): ProjectsUserSettings = {
+  inline def apply(init: js.Object => Unit): ProjectsUserSettings = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init))
     __obj.asInstanceOf[ProjectsUserSettings]
   }
   
-  @scala.inline
-  implicit class ProjectsUserSettingsMutableBuilder[Self <: ProjectsUserSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsUserSettings](x: Self) {
     
-    @scala.inline
-    def setInit(value: js.Object => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: js.Object => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
   }
 }

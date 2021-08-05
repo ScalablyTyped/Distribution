@@ -44,26 +44,20 @@ object menuItemsChoiceMod {
     }
     object Choice {
       
-      @scala.inline
-      def apply(label: String, value: String): Choice = {
+      inline def apply(label: String, value: String): Choice = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Choice]
       }
       
-      @scala.inline
-      implicit class ChoiceMutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
+      extension [Self <: Choice](x: Self) {
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+        inline def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+        inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -88,26 +82,20 @@ object menuItemsChoiceMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(choices: js.Array[Choice], onSelect: String => Unit, value: String): Props = {
+      inline def apply(choices: js.Array[Choice], onSelect: String => Unit, value: String): Props = {
         val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], onSelect = js.Any.fromFunction1(onSelect), value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+        inline def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
+        inline def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
         
-        @scala.inline
-        def setOnSelect(value: String => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+        inline def setOnSelect(value: String => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
   }

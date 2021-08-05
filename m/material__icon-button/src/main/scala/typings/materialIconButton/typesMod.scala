@@ -12,17 +12,14 @@ object typesMod {
   }
   object MDCIconButtonToggleEventDetail {
     
-    @scala.inline
-    def apply(isOn: Boolean): MDCIconButtonToggleEventDetail = {
+    inline def apply(isOn: Boolean): MDCIconButtonToggleEventDetail = {
       val __obj = js.Dynamic.literal(isOn = isOn.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCIconButtonToggleEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCIconButtonToggleEventDetailMutableBuilder[Self <: MDCIconButtonToggleEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCIconButtonToggleEventDetail](x: Self) {
       
-      @scala.inline
-      def setIsOn(value: Boolean): Self = StObject.set(x, "isOn", value.asInstanceOf[js.Any])
+      inline def setIsOn(value: Boolean): Self = StObject.set(x, "isOn", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,6 +11,5 @@ object formatjsEcma402AbstractIsValidTimeZoneNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def IsValidTimeZoneName(tz: String, hasTzDataUppercaseLinks: UppercaseLinks): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsValidTimeZoneName")(tz.asInstanceOf[js.Any], hasTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def IsValidTimeZoneName(tz: String, hasTzDataUppercaseLinks: UppercaseLinks): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsValidTimeZoneName")(tz.asInstanceOf[js.Any], hasTzDataUppercaseLinks.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

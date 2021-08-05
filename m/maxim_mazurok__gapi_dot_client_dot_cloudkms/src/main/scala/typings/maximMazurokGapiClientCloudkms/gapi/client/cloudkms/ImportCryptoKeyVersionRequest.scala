@@ -22,31 +22,23 @@ trait ImportCryptoKeyVersionRequest extends StObject {
 }
 object ImportCryptoKeyVersionRequest {
   
-  @scala.inline
-  def apply(): ImportCryptoKeyVersionRequest = {
+  inline def apply(): ImportCryptoKeyVersionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportCryptoKeyVersionRequest]
   }
   
-  @scala.inline
-  implicit class ImportCryptoKeyVersionRequestMutableBuilder[Self <: ImportCryptoKeyVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportCryptoKeyVersionRequest](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setImportJob(value: String): Self = StObject.set(x, "importJob", value.asInstanceOf[js.Any])
+    inline def setImportJob(value: String): Self = StObject.set(x, "importJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportJobUndefined: Self = StObject.set(x, "importJob", js.undefined)
+    inline def setImportJobUndefined: Self = StObject.set(x, "importJob", js.undefined)
     
-    @scala.inline
-    def setRsaAesWrappedKey(value: String): Self = StObject.set(x, "rsaAesWrappedKey", value.asInstanceOf[js.Any])
+    inline def setRsaAesWrappedKey(value: String): Self = StObject.set(x, "rsaAesWrappedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsaAesWrappedKeyUndefined: Self = StObject.set(x, "rsaAesWrappedKey", js.undefined)
+    inline def setRsaAesWrappedKeyUndefined: Self = StObject.set(x, "rsaAesWrappedKey", js.undefined)
   }
 }

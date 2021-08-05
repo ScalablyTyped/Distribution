@@ -16,17 +16,14 @@ trait Cancel
 }
 object Cancel {
   
-  @scala.inline
-  def apply(meta: Dictmeta): Cancel = {
+  inline def apply(meta: Dictmeta): Cancel = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("cancel")
     __obj.asInstanceOf[Cancel]
   }
   
-  @scala.inline
-  implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+  extension [Self <: Cancel](x: Self) {
     
-    @scala.inline
-    def setType(value: cancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: cancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

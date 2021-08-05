@@ -9,8 +9,7 @@ trait GetBucketRequestPaymentInput
      with typings.awsSdkClientS3Browser.typesGetBucketRequestPaymentInputMod.GetBucketRequestPaymentInput
 object GetBucketRequestPaymentInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketRequestPaymentInput = {
+  inline def apply(Bucket: String): GetBucketRequestPaymentInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketRequestPaymentInput]
   }

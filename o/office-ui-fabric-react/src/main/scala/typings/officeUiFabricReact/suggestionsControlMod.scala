@@ -49,22 +49,22 @@ object suggestionsControlMod {
     extends Component[ISuggestionsControlProps[T], ISuggestionsControlState[T], js.Any] {
     def this(suggestionsProps: ISuggestionsControlProps[T]) = this()
     
-    var SuggestionsOfProperType: js.Any = js.native
+    /* private */ var SuggestionsOfProperType: js.Any = js.native
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MSuggestionsControl(newProps: ISuggestionsControlProps[T]): Unit = js.native
     
-    var _forceResolveButton: IButton = js.native
+    /* protected */ var _forceResolveButton: IButton = js.native
     
-    var _getCurrentIndexForType: js.Any = js.native
+    /* private */ var _getCurrentIndexForType: js.Any = js.native
     
-    var _getNextItemSectionType: js.Any = js.native
+    /* private */ var _getNextItemSectionType: js.Any = js.native
     
-    var _getPreviousItemSectionType: js.Any = js.native
+    /* private */ var _getPreviousItemSectionType: js.Any = js.native
     
     /* protected */ def _renderSuggestions(): Element = js.native
     
-    var _searchForMoreButton: IButton = js.native
+    /* protected */ var _searchForMoreButton: IButton = js.native
     
     /**
       * Selects the next item in the suggestion item type group, given the current index
@@ -72,7 +72,7 @@ object suggestionsControlMod {
       * @param itemType - The suggestion item type
       * @param currentIndex - The current index, default is -1
       */
-    var _selectNextItemOfItemType: js.Any = js.native
+    /* private */ var _selectNextItemOfItemType: js.Any = js.native
     
     /**
       * Selects the previous item in the suggestion item type group, given the current index
@@ -80,11 +80,11 @@ object suggestionsControlMod {
       * @param itemType - The suggestion item type
       * @param currentIndex - The current index. If none is provided, the default is the items length of specified type
       */
-    var _selectPreviousItemOfItemType: js.Any = js.native
+    /* private */ var _selectPreviousItemOfItemType: js.Any = js.native
     
-    var _selectedElement: RefObject[HTMLDivElement] = js.native
+    /* protected */ var _selectedElement: RefObject[HTMLDivElement] = js.native
     
-    var _suggestions: RefObject[SuggestionsCore[T]] = js.native
+    /* protected */ var _suggestions: RefObject[SuggestionsCore[T]] = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MSuggestionsControl(): Unit = js.native
@@ -167,8 +167,7 @@ object suggestionsControlMod {
   }
   object ISuggestionsControlState {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       selectedFooterIndex: Double,
       selectedHeaderIndex: Double,
       suggestions: js.Array[ISuggestionModel[T]]
@@ -177,20 +176,15 @@ object suggestionsControlMod {
       __obj.asInstanceOf[ISuggestionsControlState[T]]
     }
     
-    @scala.inline
-    implicit class ISuggestionsControlStateMutableBuilder[Self <: ISuggestionsControlState[?], T] (val x: Self & ISuggestionsControlState[T]) extends AnyVal {
+    extension [Self <: ISuggestionsControlState[?], T](x: Self & ISuggestionsControlState[T]) {
       
-      @scala.inline
-      def setSelectedFooterIndex(value: Double): Self = StObject.set(x, "selectedFooterIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedFooterIndex(value: Double): Self = StObject.set(x, "selectedFooterIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedHeaderIndex(value: Double): Self = StObject.set(x, "selectedHeaderIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedHeaderIndex(value: Double): Self = StObject.set(x, "selectedHeaderIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestions(value: js.Array[ISuggestionModel[T]]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+      inline def setSuggestions(value: js.Array[ISuggestionModel[T]]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsVarargs(value: ISuggestionModel[T]*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+      inline def setSuggestionsVarargs(value: ISuggestionModel[T]*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
     }
   }
 }

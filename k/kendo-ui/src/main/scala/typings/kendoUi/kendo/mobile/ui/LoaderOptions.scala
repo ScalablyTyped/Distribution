@@ -10,19 +10,15 @@ trait LoaderOptions extends StObject {
 }
 object LoaderOptions {
   
-  @scala.inline
-  def apply(): LoaderOptions = {
+  inline def apply(): LoaderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoaderOptions]
   }
   
-  @scala.inline
-  implicit class LoaderOptionsMutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoaderOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

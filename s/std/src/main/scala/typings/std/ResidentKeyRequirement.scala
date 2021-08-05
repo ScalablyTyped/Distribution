@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResidentKeyRequirement extends StObject
 object ResidentKeyRequirement {
   
-  @scala.inline
-  def discouraged: typings.std.stdStrings.discouraged = "discouraged".asInstanceOf[typings.std.stdStrings.discouraged]
+  inline def discouraged: typings.std.stdStrings.discouraged = "discouraged".asInstanceOf[typings.std.stdStrings.discouraged]
   
-  @scala.inline
-  def preferred: typings.std.stdStrings.preferred = "preferred".asInstanceOf[typings.std.stdStrings.preferred]
+  inline def preferred: typings.std.stdStrings.preferred = "preferred".asInstanceOf[typings.std.stdStrings.preferred]
   
-  @scala.inline
-  def required: required_ = "required".asInstanceOf[required_]
+  inline def required: required_ = "required".asInstanceOf[required_]
 }

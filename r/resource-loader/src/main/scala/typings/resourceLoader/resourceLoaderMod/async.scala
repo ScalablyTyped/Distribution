@@ -25,14 +25,12 @@ object async {
     * @param {function} callback - Function to call when done, or on error.
     * @param {boolean} [deferNext=false] - Break synchronous each loop by calling next with a setTimeout of 1.
     */
-  @scala.inline
-  def eachSeries(
+  inline def eachSeries(
     array: js.Array[js.Any],
     iterator: js.Function1[/* repeated */ js.Any, js.Any],
     callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachSeries")(array.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def eachSeries(
+  inline def eachSeries(
     array: js.Array[js.Any],
     iterator: js.Function1[/* repeated */ js.Any, js.Any],
     callback: js.Function1[/* repeated */ js.Any, js.Any],
@@ -48,6 +46,5 @@ object async {
     * @param {number} concurrency - How many workers to run in parrallel.
     * @return {*} The async queue object.
     */
-  @scala.inline
-  def queue(worker: js.Function1[/* repeated */ js.Any, js.Any], concurrency: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("queue")(worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def queue(worker: js.Function1[/* repeated */ js.Any, js.Any], concurrency: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("queue")(worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

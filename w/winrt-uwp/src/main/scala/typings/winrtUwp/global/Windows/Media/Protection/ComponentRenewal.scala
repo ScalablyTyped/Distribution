@@ -23,6 +23,5 @@ object ComponentRenewal {
     * @return An object that is used to control the asynchronous operation.
     */
   /* static member */
-  @scala.inline
-  def renewSystemComponentsAsync(information: typings.winrtUwp.Windows.Media.Protection.RevocationAndRenewalInformation): IPromiseWithIAsyncOperationWithProgress[typings.winrtUwp.Windows.Media.Protection.RenewalStatus, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("renewSystemComponentsAsync")(information.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperationWithProgress[typings.winrtUwp.Windows.Media.Protection.RenewalStatus, Double]]
+  inline def renewSystemComponentsAsync(information: typings.winrtUwp.Windows.Media.Protection.RevocationAndRenewalInformation): IPromiseWithIAsyncOperationWithProgress[typings.winrtUwp.Windows.Media.Protection.RenewalStatus, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("renewSystemComponentsAsync")(information.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperationWithProgress[typings.winrtUwp.Windows.Media.Protection.RenewalStatus, Double]]
 }

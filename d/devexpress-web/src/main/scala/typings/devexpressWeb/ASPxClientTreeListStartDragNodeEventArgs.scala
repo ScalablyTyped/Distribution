@@ -18,19 +18,15 @@ trait ASPxClientTreeListStartDragNodeEventArgs
 }
 object ASPxClientTreeListStartDragNodeEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, htmlEvent: js.Any, nodeKey: String, targets: js.Array[js.Any]): ASPxClientTreeListStartDragNodeEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: js.Any, nodeKey: String, targets: js.Array[js.Any]): ASPxClientTreeListStartDragNodeEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListStartDragNodeEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListStartDragNodeEventArgsMutableBuilder[Self <: ASPxClientTreeListStartDragNodeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListStartDragNodeEventArgs](x: Self) {
     
-    @scala.inline
-    def setTargets(value: js.Array[js.Any]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: js.Array[js.Any]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsVarargs(value: js.Any*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: js.Any*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

@@ -35,8 +35,7 @@ trait XEmbeddedObjectSupplier2
 }
 object XEmbeddedObjectSupplier2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Aspect: Double,
     EmbeddedObject: XComponent,
     ExtendedControlOverEmbeddedObject: XEmbeddedObject,
@@ -51,19 +50,14 @@ object XEmbeddedObjectSupplier2 {
     __obj.asInstanceOf[XEmbeddedObjectSupplier2]
   }
   
-  @scala.inline
-  implicit class XEmbeddedObjectSupplier2MutableBuilder[Self <: XEmbeddedObjectSupplier2] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbeddedObjectSupplier2](x: Self) {
     
-    @scala.inline
-    def setAspect(value: Double): Self = StObject.set(x, "Aspect", value.asInstanceOf[js.Any])
+    inline def setAspect(value: Double): Self = StObject.set(x, "Aspect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedControlOverEmbeddedObject(value: XEmbeddedObject): Self = StObject.set(x, "ExtendedControlOverEmbeddedObject", value.asInstanceOf[js.Any])
+    inline def setExtendedControlOverEmbeddedObject(value: XEmbeddedObject): Self = StObject.set(x, "ExtendedControlOverEmbeddedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExtendedControlOverEmbeddedObject(value: () => XEmbeddedObject): Self = StObject.set(x, "getExtendedControlOverEmbeddedObject", js.Any.fromFunction0(value))
+    inline def setGetExtendedControlOverEmbeddedObject(value: () => XEmbeddedObject): Self = StObject.set(x, "getExtendedControlOverEmbeddedObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplacementGraphic(value: XGraphic): Self = StObject.set(x, "ReplacementGraphic", value.asInstanceOf[js.Any])
+    inline def setReplacementGraphic(value: XGraphic): Self = StObject.set(x, "ReplacementGraphic", value.asInstanceOf[js.Any])
   }
 }

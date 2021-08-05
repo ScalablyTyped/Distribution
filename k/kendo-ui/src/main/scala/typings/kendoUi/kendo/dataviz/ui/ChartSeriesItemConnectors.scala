@@ -14,31 +14,23 @@ trait ChartSeriesItemConnectors extends StObject {
 }
 object ChartSeriesItemConnectors {
   
-  @scala.inline
-  def apply(): ChartSeriesItemConnectors = {
+  inline def apply(): ChartSeriesItemConnectors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesItemConnectors]
   }
   
-  @scala.inline
-  implicit class ChartSeriesItemConnectorsMutableBuilder[Self <: ChartSeriesItemConnectors] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesItemConnectors](x: Self) {
     
-    @scala.inline
-    def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -41,22 +41,17 @@ trait WorkspaceSymbolProvider[T /* <: SymbolInformation */] extends StObject {
 }
 object WorkspaceSymbolProvider {
   
-  @scala.inline
-  def apply[T /* <: SymbolInformation */](provideWorkspaceSymbols: (String, CancellationToken) => ProviderResult[js.Array[T]]): WorkspaceSymbolProvider[T] = {
+  inline def apply[T /* <: SymbolInformation */](provideWorkspaceSymbols: (String, CancellationToken) => ProviderResult[js.Array[T]]): WorkspaceSymbolProvider[T] = {
     val __obj = js.Dynamic.literal(provideWorkspaceSymbols = js.Any.fromFunction2(provideWorkspaceSymbols))
     __obj.asInstanceOf[WorkspaceSymbolProvider[T]]
   }
   
-  @scala.inline
-  implicit class WorkspaceSymbolProviderMutableBuilder[Self <: WorkspaceSymbolProvider[?], T /* <: SymbolInformation */] (val x: Self & WorkspaceSymbolProvider[T]) extends AnyVal {
+  extension [Self <: WorkspaceSymbolProvider[?], T /* <: SymbolInformation */](x: Self & WorkspaceSymbolProvider[T]) {
     
-    @scala.inline
-    def setProvideWorkspaceSymbols(value: (String, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideWorkspaceSymbols", js.Any.fromFunction2(value))
+    inline def setProvideWorkspaceSymbols(value: (String, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideWorkspaceSymbols", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveWorkspaceSymbol(value: (/* symbol */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveWorkspaceSymbol", js.Any.fromFunction2(value))
+    inline def setResolveWorkspaceSymbol(value: (/* symbol */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveWorkspaceSymbol", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveWorkspaceSymbolUndefined: Self = StObject.set(x, "resolveWorkspaceSymbol", js.undefined)
+    inline def setResolveWorkspaceSymbolUndefined: Self = StObject.set(x, "resolveWorkspaceSymbol", js.undefined)
   }
 }

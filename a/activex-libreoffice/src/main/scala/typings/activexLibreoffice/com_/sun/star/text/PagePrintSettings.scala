@@ -36,8 +36,7 @@ trait PagePrintSettings extends StObject {
 }
 object PagePrintSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BottomMargin: Double,
     HoriMargin: Double,
     IsLandscape: Boolean,
@@ -52,34 +51,24 @@ object PagePrintSettings {
     __obj.asInstanceOf[PagePrintSettings]
   }
   
-  @scala.inline
-  implicit class PagePrintSettingsMutableBuilder[Self <: PagePrintSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PagePrintSettings](x: Self) {
     
-    @scala.inline
-    def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
+    inline def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoriMargin(value: Double): Self = StObject.set(x, "HoriMargin", value.asInstanceOf[js.Any])
+    inline def setHoriMargin(value: Double): Self = StObject.set(x, "HoriMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLandscape(value: Boolean): Self = StObject.set(x, "IsLandscape", value.asInstanceOf[js.Any])
+    inline def setIsLandscape(value: Boolean): Self = StObject.set(x, "IsLandscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
+    inline def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageColumns(value: Double): Self = StObject.set(x, "PageColumns", value.asInstanceOf[js.Any])
+    inline def setPageColumns(value: Double): Self = StObject.set(x, "PageColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageRows(value: Double): Self = StObject.set(x, "PageRows", value.asInstanceOf[js.Any])
+    inline def setPageRows(value: Double): Self = StObject.set(x, "PageRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
+    inline def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
+    inline def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertMargin(value: Double): Self = StObject.set(x, "VertMargin", value.asInstanceOf[js.Any])
+    inline def setVertMargin(value: Double): Self = StObject.set(x, "VertMargin", value.asInstanceOf[js.Any])
   }
 }

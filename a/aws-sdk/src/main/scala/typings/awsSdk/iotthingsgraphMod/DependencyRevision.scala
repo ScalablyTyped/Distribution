@@ -18,25 +18,19 @@ trait DependencyRevision extends StObject {
 }
 object DependencyRevision {
   
-  @scala.inline
-  def apply(): DependencyRevision = {
+  inline def apply(): DependencyRevision = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DependencyRevision]
   }
   
-  @scala.inline
-  implicit class DependencyRevisionMutableBuilder[Self <: DependencyRevision] (val x: Self) extends AnyVal {
+  extension [Self <: DependencyRevision](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setRevisionNumber(value: Version): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
+    inline def setRevisionNumber(value: Version): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
+    inline def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
   }
 }

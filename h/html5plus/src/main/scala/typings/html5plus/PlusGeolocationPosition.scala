@@ -57,43 +57,31 @@ trait PlusGeolocationPosition extends StObject {
 }
 object PlusGeolocationPosition {
   
-  @scala.inline
-  def apply(): PlusGeolocationPosition = {
+  inline def apply(): PlusGeolocationPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusGeolocationPosition]
   }
   
-  @scala.inline
-  implicit class PlusGeolocationPositionMutableBuilder[Self <: PlusGeolocationPosition] (val x: Self) extends AnyVal {
+  extension [Self <: PlusGeolocationPosition](x: Self) {
     
-    @scala.inline
-    def setAddress(value: PlusGeolocationAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: PlusGeolocationAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setAddresses(value: String): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: String): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    @scala.inline
-    def setCoords(value: PlusGeolocationCoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: PlusGeolocationCoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordsType(value: String): Self = StObject.set(x, "coordsType", value.asInstanceOf[js.Any])
+    inline def setCoordsType(value: String): Self = StObject.set(x, "coordsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordsTypeUndefined: Self = StObject.set(x, "coordsType", js.undefined)
+    inline def setCoordsTypeUndefined: Self = StObject.set(x, "coordsType", js.undefined)
     
-    @scala.inline
-    def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
+    inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

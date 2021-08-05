@@ -360,17 +360,14 @@ object mod extends Shortcut {
       }
       object BeginDetails {
         
-        @scala.inline
-        def apply(totalTests: Double): BeginDetails = {
+        inline def apply(totalTests: Double): BeginDetails = {
           val __obj = js.Dynamic.literal(totalTests = totalTests.asInstanceOf[js.Any])
           __obj.asInstanceOf[BeginDetails]
         }
         
-        @scala.inline
-        implicit class BeginDetailsMutableBuilder[Self <: BeginDetails] (val x: Self) extends AnyVal {
+        extension [Self <: BeginDetails](x: Self) {
           
-          @scala.inline
-          def setTotalTests(value: Double): Self = StObject.set(x, "totalTests", value.asInstanceOf[js.Any])
+          inline def setTotalTests(value: Double): Self = StObject.set(x, "totalTests", value.asInstanceOf[js.Any])
         }
       }
       
@@ -386,26 +383,20 @@ object mod extends Shortcut {
       }
       object DoneDetails {
         
-        @scala.inline
-        def apply(failed: Double, passed: Double, runtime: Double, total: Double): DoneDetails = {
+        inline def apply(failed: Double, passed: Double, runtime: Double, total: Double): DoneDetails = {
           val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
           __obj.asInstanceOf[DoneDetails]
         }
         
-        @scala.inline
-        implicit class DoneDetailsMutableBuilder[Self <: DoneDetails] (val x: Self) extends AnyVal {
+        extension [Self <: DoneDetails](x: Self) {
           
-          @scala.inline
-          def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+          inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPassed(value: Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+          inline def setPassed(value: Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+          inline def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+          inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
         }
       }
       
@@ -429,8 +420,7 @@ object mod extends Shortcut {
       }
       object LogDetails {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           actual: js.Any,
           expected: js.Any,
           message: String,
@@ -444,32 +434,23 @@ object mod extends Shortcut {
           __obj.asInstanceOf[LogDetails]
         }
         
-        @scala.inline
-        implicit class LogDetailsMutableBuilder[Self <: LogDetails] (val x: Self) extends AnyVal {
+        extension [Self <: LogDetails](x: Self) {
           
-          @scala.inline
-          def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+          inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+          inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+          inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+          inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+          inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+          inline def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+          inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         }
       }
       
@@ -487,29 +468,22 @@ object mod extends Shortcut {
       }
       object ModuleDoneDetails {
         
-        @scala.inline
-        def apply(failed: Double, name: String, passed: Double, runtime: Double, total: Double): ModuleDoneDetails = {
+        inline def apply(failed: Double, name: String, passed: Double, runtime: Double, total: Double): ModuleDoneDetails = {
           val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
           __obj.asInstanceOf[ModuleDoneDetails]
         }
         
-        @scala.inline
-        implicit class ModuleDoneDetailsMutableBuilder[Self <: ModuleDoneDetails] (val x: Self) extends AnyVal {
+        extension [Self <: ModuleDoneDetails](x: Self) {
           
-          @scala.inline
-          def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+          inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPassed(value: Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+          inline def setPassed(value: Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+          inline def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+          inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
         }
       }
       
@@ -519,17 +493,14 @@ object mod extends Shortcut {
       }
       object ModuleStartDetails {
         
-        @scala.inline
-        def apply(name: String): ModuleStartDetails = {
+        inline def apply(name: String): ModuleStartDetails = {
           val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
           __obj.asInstanceOf[ModuleStartDetails]
         }
         
-        @scala.inline
-        implicit class ModuleStartDetailsMutableBuilder[Self <: ModuleStartDetails] (val x: Self) extends AnyVal {
+        extension [Self <: ModuleStartDetails](x: Self) {
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         }
       }
       
@@ -549,32 +520,24 @@ object mod extends Shortcut {
       }
       object TestDoneDetails {
         
-        @scala.inline
-        def apply(failed: Double, module: String, name: String, passed: Double, runtime: Double, total: Double): TestDoneDetails = {
+        inline def apply(failed: Double, module: String, name: String, passed: Double, runtime: Double, total: Double): TestDoneDetails = {
           val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
           __obj.asInstanceOf[TestDoneDetails]
         }
         
-        @scala.inline
-        implicit class TestDoneDetailsMutableBuilder[Self <: TestDoneDetails] (val x: Self) extends AnyVal {
+        extension [Self <: TestDoneDetails](x: Self) {
           
-          @scala.inline
-          def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+          inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+          inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPassed(value: Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+          inline def setPassed(value: Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+          inline def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+          inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
         }
       }
       
@@ -586,20 +549,16 @@ object mod extends Shortcut {
       }
       object TestStartDetails {
         
-        @scala.inline
-        def apply(module: String, name: String): TestStartDetails = {
+        inline def apply(module: String, name: String): TestStartDetails = {
           val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
           __obj.asInstanceOf[TestStartDetails]
         }
         
-        @scala.inline
-        implicit class TestStartDetailsMutableBuilder[Self <: TestStartDetails] (val x: Self) extends AnyVal {
+        extension [Self <: TestStartDetails](x: Self) {
           
-          @scala.inline
-          def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+          inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         }
       }
       
@@ -953,8 +912,7 @@ object mod extends Shortcut {
     }
     object Config {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         altertitle: Boolean,
         autostart: Boolean,
         collapse: Boolean,
@@ -979,74 +937,51 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Config]
       }
       
-      @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      extension [Self <: Config](x: Self) {
         
-        @scala.inline
-        def setAltertitle(value: Boolean): Self = StObject.set(x, "altertitle", value.asInstanceOf[js.Any])
+        inline def setAltertitle(value: Boolean): Self = StObject.set(x, "altertitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
+        inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+        inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+        inline def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilter(value: String | RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+        inline def setFilter(value: String | RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFixture(value: String): Self = StObject.set(x, "fixture", value.asInstanceOf[js.Any])
+        inline def setFixture(value: String): Self = StObject.set(x, "fixture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHidepassed(value: Boolean): Self = StObject.set(x, "hidepassed", value.asInstanceOf[js.Any])
+        inline def setHidepassed(value: Boolean): Self = StObject.set(x, "hidepassed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+        inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+        inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModuleId(value: js.Array[String]): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+        inline def setModuleId(value: js.Array[String]): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModuleIdVarargs(value: String*): Self = StObject.set(x, "moduleId", js.Array(value :_*))
+        inline def setModuleIdVarargs(value: String*): Self = StObject.set(x, "moduleId", js.Array(value :_*))
         
-        @scala.inline
-        def setNoglobals(value: Boolean): Self = StObject.set(x, "noglobals", value.asInstanceOf[js.Any])
+        inline def setNoglobals(value: Boolean): Self = StObject.set(x, "noglobals", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotrycatch(value: Boolean): Self = StObject.set(x, "notrycatch", value.asInstanceOf[js.Any])
+        inline def setNotrycatch(value: Boolean): Self = StObject.set(x, "notrycatch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReorder(value: Boolean): Self = StObject.set(x, "reorder", value.asInstanceOf[js.Any])
+        inline def setReorder(value: Boolean): Self = StObject.set(x, "reorder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequireExpects(value: Boolean): Self = StObject.set(x, "requireExpects", value.asInstanceOf[js.Any])
+        inline def setRequireExpects(value: Boolean): Self = StObject.set(x, "requireExpects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrolltop(value: Boolean): Self = StObject.set(x, "scrolltop", value.asInstanceOf[js.Any])
+        inline def setScrolltop(value: Boolean): Self = StObject.set(x, "scrolltop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+        inline def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTestId(value: js.Array[String]): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
+        inline def setTestId(value: js.Array[String]): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTestIdVarargs(value: String*): Self = StObject.set(x, "testId", js.Array(value :_*))
+        inline def setTestIdVarargs(value: String*): Self = StObject.set(x, "testId", js.Array(value :_*))
         
-        @scala.inline
-        def setTestTimeout(value: Double): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
+        inline def setTestTimeout(value: Double): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlConfig(value: js.Array[Id]): Self = StObject.set(x, "urlConfig", value.asInstanceOf[js.Any])
+        inline def setUrlConfig(value: js.Array[Id]): Self = StObject.set(x, "urlConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlConfigVarargs(value: Id*): Self = StObject.set(x, "urlConfig", js.Array(value :_*))
+        inline def setUrlConfigVarargs(value: Id*): Self = StObject.set(x, "urlConfig", js.Array(value :_*))
       }
     }
     
@@ -1075,38 +1010,28 @@ object mod extends Shortcut {
     }
     object Hooks {
       
-      @scala.inline
-      def apply(): Hooks = {
+      inline def apply(): Hooks = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Hooks]
       }
       
-      @scala.inline
-      implicit class HooksMutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
+      extension [Self <: Hooks](x: Self) {
         
-        @scala.inline
-        def setAfter(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+        inline def setAfter(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAfterEach(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
+        inline def setAfterEach(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
+        inline def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
         
-        @scala.inline
-        def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+        inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
         
-        @scala.inline
-        def setBefore(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+        inline def setBefore(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setBeforeEach(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
+        inline def setBeforeEach(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
+        inline def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
         
-        @scala.inline
-        def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+        inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       }
     }
     
@@ -1122,17 +1047,14 @@ object mod extends Shortcut {
     }
     object ModuleOnly {
       
-      @scala.inline
-      def apply(only: moduleFunc1 & moduleFunc2): ModuleOnly = {
+      inline def apply(only: moduleFunc1 & moduleFunc2): ModuleOnly = {
         val __obj = js.Dynamic.literal(only = only.asInstanceOf[js.Any])
         __obj.asInstanceOf[ModuleOnly]
       }
       
-      @scala.inline
-      implicit class ModuleOnlyMutableBuilder[Self <: ModuleOnly] (val x: Self) extends AnyVal {
+      extension [Self <: ModuleOnly](x: Self) {
         
-        @scala.inline
-        def setOnly(value: moduleFunc1 & moduleFunc2): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+        inline def setOnly(value: moduleFunc1 & moduleFunc2): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1161,8 +1083,7 @@ object mod extends Shortcut {
     }
     object NestedHooks {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         after: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit,
         afterEach: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit,
         before: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit,
@@ -1172,20 +1093,15 @@ object mod extends Shortcut {
         __obj.asInstanceOf[NestedHooks]
       }
       
-      @scala.inline
-      implicit class NestedHooksMutableBuilder[Self <: NestedHooks] (val x: Self) extends AnyVal {
+      extension [Self <: NestedHooks](x: Self) {
         
-        @scala.inline
-        def setAfter(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+        inline def setAfter(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAfterEach(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
+        inline def setAfterEach(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setBefore(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+        inline def setBefore(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setBeforeEach(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
+        inline def setBeforeEach(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
       }
     }
     

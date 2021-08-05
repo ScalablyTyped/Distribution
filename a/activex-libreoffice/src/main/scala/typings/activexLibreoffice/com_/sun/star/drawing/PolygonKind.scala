@@ -29,42 +29,33 @@ trait PolygonKind extends StObject
 object PolygonKind {
   
   /** This is the PolygonKind for a ClosedFreeHandShape. */
-  @scala.inline
-  def FREEFILL: `6` = 6.asInstanceOf[`6`]
+  inline def FREEFILL: `6` = 6.asInstanceOf[`6`]
   
   /** This is the PolygonKind for an OpenFreeHandShape. */
-  @scala.inline
-  def FREELINE: `5` = 5.asInstanceOf[`5`]
+  inline def FREELINE: `5` = 5.asInstanceOf[`5`]
   
   /**
     * the {@link ConnectorShape} is drawn as a straight line
     *
     * This is the PolygonKind for a {@link LineShape} .
     */
-  @scala.inline
-  def LINE: `0` = 0.asInstanceOf[`0`]
+  inline def LINE: `0` = 0.asInstanceOf[`0`]
   
   /** This is the PolygonKind for a {@link ClosedBezierShape} . */
-  @scala.inline
-  def PATHFILL: `4` = 4.asInstanceOf[`4`]
+  inline def PATHFILL: `4` = 4.asInstanceOf[`4`]
   
   /** This is the PolygonKind for an {@link OpenBezierShape} . */
-  @scala.inline
-  def PATHLINE: `3` = 3.asInstanceOf[`3`]
+  inline def PATHLINE: `3` = 3.asInstanceOf[`3`]
   
   /** This is the PolygonKind for a PolyLinePathShape. */
-  @scala.inline
-  def PATHPLIN: `8` = 8.asInstanceOf[`8`]
+  inline def PATHPLIN: `8` = 8.asInstanceOf[`8`]
   
   /** This is the PolygonKind for a PolyPolygonPathShape. */
-  @scala.inline
-  def PATHPOLY: `7` = 7.asInstanceOf[`7`]
+  inline def PATHPOLY: `7` = 7.asInstanceOf[`7`]
   
   /** This is the PolygonKind for a {@link PolyLineShape} . */
-  @scala.inline
-  def PLIN: `2` = 2.asInstanceOf[`2`]
+  inline def PLIN: `2` = 2.asInstanceOf[`2`]
   
   /** This is the PolygonKind for a {@link PolyPolygonShape} . */
-  @scala.inline
-  def POLY: `1` = 1.asInstanceOf[`1`]
+  inline def POLY: `1` = 1.asInstanceOf[`1`]
 }

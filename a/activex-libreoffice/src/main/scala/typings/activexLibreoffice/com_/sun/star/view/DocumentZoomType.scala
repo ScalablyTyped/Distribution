@@ -21,19 +21,14 @@ object DocumentZoomType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BY_VALUE: `3` = 3.asInstanceOf[`3`]
+    inline def BY_VALUE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def ENTIRE_PAGE: `2` = 2.asInstanceOf[`2`]
+    inline def ENTIRE_PAGE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def OPTIMAL: `0` = 0.asInstanceOf[`0`]
+    inline def OPTIMAL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PAGE_WIDTH: `1` = 1.asInstanceOf[`1`]
+    inline def PAGE_WIDTH: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def PAGE_WIDTH_EXACT: `4` = 4.asInstanceOf[`4`]
+    inline def PAGE_WIDTH_EXACT: `4` = 4.asInstanceOf[`4`]
   }
 }

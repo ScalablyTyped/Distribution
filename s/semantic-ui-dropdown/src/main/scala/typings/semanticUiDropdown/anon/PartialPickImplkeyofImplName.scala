@@ -17,37 +17,27 @@ trait PartialPickImplkeyofImplName extends StObject {
 }
 object PartialPickImplkeyofImplName {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplName = {
+  inline def apply(): PartialPickImplkeyofImplName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplName]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplNameMutableBuilder[Self <: PartialPickImplkeyofImplName] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplName](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRemoteValues(value: String): Self = StObject.set(x, "remoteValues", value.asInstanceOf[js.Any])
+    inline def setRemoteValues(value: String): Self = StObject.set(x, "remoteValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteValuesUndefined: Self = StObject.set(x, "remoteValues", js.undefined)
+    inline def setRemoteValuesUndefined: Self = StObject.set(x, "remoteValues", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValues(value: String): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: String): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

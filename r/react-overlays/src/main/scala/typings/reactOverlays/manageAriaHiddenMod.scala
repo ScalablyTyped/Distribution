@@ -11,16 +11,12 @@ object manageAriaHiddenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ariaHidden(hide: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(hide.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def ariaHidden(hide: Boolean, node: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(hide.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ariaHidden(hide: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(hide.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ariaHidden(hide: Boolean, node: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ariaHidden")(hide.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def hideSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hideSiblings")(container.asInstanceOf[js.Any], hasDialogBackdrop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def hideSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hideSiblings")(container.asInstanceOf[js.Any], hasDialogBackdrop.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def showSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSiblings")(container.asInstanceOf[js.Any], hasDialogBackdrop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showSiblings(container: Element, hasDialogBackdrop: SiblingExclusions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showSiblings")(container.asInstanceOf[js.Any], hasDialogBackdrop.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait SiblingExclusions extends StObject {
     
@@ -30,20 +26,16 @@ object manageAriaHiddenMod {
   }
   object SiblingExclusions {
     
-    @scala.inline
-    def apply(backdrop: Element, dialog: Element): SiblingExclusions = {
+    inline def apply(backdrop: Element, dialog: Element): SiblingExclusions = {
       val __obj = js.Dynamic.literal(backdrop = backdrop.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any])
       __obj.asInstanceOf[SiblingExclusions]
     }
     
-    @scala.inline
-    implicit class SiblingExclusionsMutableBuilder[Self <: SiblingExclusions] (val x: Self) extends AnyVal {
+    extension [Self <: SiblingExclusions](x: Self) {
       
-      @scala.inline
-      def setBackdrop(value: Element): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+      inline def setBackdrop(value: Element): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialog(value: Element): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+      inline def setDialog(value: Element): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     }
   }
 }

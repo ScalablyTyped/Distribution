@@ -13,19 +13,15 @@ trait ExtensionParam extends StObject {
 }
 object ExtensionParam {
   
-  @scala.inline
-  def apply(accessLocation: UriParam, accessMethod: ObjectIdentifierParam): ExtensionParam = {
+  inline def apply(accessLocation: UriParam, accessMethod: ObjectIdentifierParam): ExtensionParam = {
     val __obj = js.Dynamic.literal(accessLocation = accessLocation.asInstanceOf[js.Any], accessMethod = accessMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionParam]
   }
   
-  @scala.inline
-  implicit class ExtensionParamMutableBuilder[Self <: ExtensionParam] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionParam](x: Self) {
     
-    @scala.inline
-    def setAccessLocation(value: UriParam): Self = StObject.set(x, "accessLocation", value.asInstanceOf[js.Any])
+    inline def setAccessLocation(value: UriParam): Self = StObject.set(x, "accessLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessMethod(value: ObjectIdentifierParam): Self = StObject.set(x, "accessMethod", value.asInstanceOf[js.Any])
+    inline def setAccessMethod(value: ObjectIdentifierParam): Self = StObject.set(x, "accessMethod", value.asInstanceOf[js.Any])
   }
 }

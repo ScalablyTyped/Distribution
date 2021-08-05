@@ -32,17 +32,13 @@ object browserPreviewWidgetMod extends Shortcut {
   trait BrowserBarSizes extends StObject
   object BrowserBarSizes {
     
-    @scala.inline
-    def size12: typings.wixStyleReact.wixStyleReactStrings.size12 = "size12".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.size12]
+    inline def size12: typings.wixStyleReact.wixStyleReactStrings.size12 = "size12".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.size12]
     
-    @scala.inline
-    def size18: typings.wixStyleReact.wixStyleReactStrings.size18 = "size18".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.size18]
+    inline def size18: typings.wixStyleReact.wixStyleReactStrings.size18 = "size18".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.size18]
     
-    @scala.inline
-    def size24: typings.wixStyleReact.wixStyleReactStrings.size24 = "size24".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.size24]
+    inline def size24: typings.wixStyleReact.wixStyleReactStrings.size24 = "size24".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.size24]
     
-    @scala.inline
-    def size9: typings.wixStyleReact.wixStyleReactStrings.size9 = "size9".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.size9]
+    inline def size9: typings.wixStyleReact.wixStyleReactStrings.size9 = "size9".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.size9]
   }
   
   trait BrowserPreviewWidgetProps extends StObject {
@@ -63,56 +59,40 @@ object browserPreviewWidgetMod extends Shortcut {
   }
   object BrowserPreviewWidgetProps {
     
-    @scala.inline
-    def apply(): BrowserPreviewWidgetProps = {
+    inline def apply(): BrowserPreviewWidgetProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserPreviewWidgetProps]
     }
     
-    @scala.inline
-    implicit class BrowserPreviewWidgetPropsMutableBuilder[Self <: BrowserPreviewWidgetProps] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserPreviewWidgetProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBrowserBarSize(value: BrowserBarSizes): Self = StObject.set(x, "browserBarSize", value.asInstanceOf[js.Any])
+      inline def setBrowserBarSize(value: BrowserBarSizes): Self = StObject.set(x, "browserBarSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserBarSizeUndefined: Self = StObject.set(x, "browserBarSize", js.undefined)
+      inline def setBrowserBarSizeUndefined: Self = StObject.set(x, "browserBarSize", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setSkin(value: BrowserPreviewWidgetSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: BrowserPreviewWidgetSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -124,14 +104,11 @@ object browserPreviewWidgetMod extends Shortcut {
   trait BrowserPreviewWidgetSkin extends StObject
   object BrowserPreviewWidgetSkin {
     
-    @scala.inline
-    def custom: typings.wixStyleReact.wixStyleReactStrings.custom = "custom".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.custom]
+    inline def custom: typings.wixStyleReact.wixStyleReactStrings.custom = "custom".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.custom]
     
-    @scala.inline
-    def gradient: typings.wixStyleReact.wixStyleReactStrings.gradient = "gradient".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.gradient]
+    inline def gradient: typings.wixStyleReact.wixStyleReactStrings.gradient = "gradient".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.gradient]
     
-    @scala.inline
-    def neutral: typings.wixStyleReact.wixStyleReactStrings.neutral = "neutral".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutral]
+    inline def neutral: typings.wixStyleReact.wixStyleReactStrings.neutral = "neutral".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutral]
   }
   
   type _To = ComponentClass[BrowserPreviewWidgetProps, ComponentState]

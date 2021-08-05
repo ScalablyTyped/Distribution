@@ -18,12 +18,8 @@ object Factory {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def newFromElementId(elementId: js.Any): typings.vexflow.Vex.Flow.Factory = ^.asInstanceOf[js.Dynamic].applyDynamic("newFromElementId")(elementId.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.Factory]
-  @scala.inline
-  def newFromElementId(elementId: js.Any, width: Double): typings.vexflow.Vex.Flow.Factory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFromElementId")(elementId.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.Factory]
-  @scala.inline
-  def newFromElementId(elementId: js.Any, width: Double, height: Double): typings.vexflow.Vex.Flow.Factory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFromElementId")(elementId.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.Factory]
-  @scala.inline
-  def newFromElementId(elementId: js.Any, width: Unit, height: Double): typings.vexflow.Vex.Flow.Factory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFromElementId")(elementId.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.Factory]
+  inline def newFromElementId(elementId: js.Any): typings.vexflow.Vex.Flow.Factory = ^.asInstanceOf[js.Dynamic].applyDynamic("newFromElementId")(elementId.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.Factory]
+  inline def newFromElementId(elementId: js.Any, width: Double): typings.vexflow.Vex.Flow.Factory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFromElementId")(elementId.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.Factory]
+  inline def newFromElementId(elementId: js.Any, width: Double, height: Double): typings.vexflow.Vex.Flow.Factory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFromElementId")(elementId.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.Factory]
+  inline def newFromElementId(elementId: js.Any, width: Unit, height: Double): typings.vexflow.Vex.Flow.Factory = (^.asInstanceOf[js.Dynamic].applyDynamic("newFromElementId")(elementId.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.vexflow.Vex.Flow.Factory]
 }

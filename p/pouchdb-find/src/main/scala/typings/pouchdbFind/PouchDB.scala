@@ -80,47 +80,34 @@ object PouchDB {
     }
     object CombinationOperators {
       
-      @scala.inline
-      def apply(): CombinationOperators = {
+      inline def apply(): CombinationOperators = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CombinationOperators]
       }
       
-      @scala.inline
-      implicit class CombinationOperatorsMutableBuilder[Self <: CombinationOperators] (val x: Self) extends AnyVal {
+      extension [Self <: CombinationOperators](x: Self) {
         
-        @scala.inline
-        def set$and(value: js.Array[Selector]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
+        inline def set$and(value: js.Array[Selector]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$andUndefined: Self = StObject.set(x, "$and", js.undefined)
+        inline def set$andUndefined: Self = StObject.set(x, "$and", js.undefined)
         
-        @scala.inline
-        def set$andVarargs(value: Selector*): Self = StObject.set(x, "$and", js.Array(value :_*))
+        inline def set$andVarargs(value: Selector*): Self = StObject.set(x, "$and", js.Array(value :_*))
         
-        @scala.inline
-        def set$nor(value: js.Array[Selector]): Self = StObject.set(x, "$nor", value.asInstanceOf[js.Any])
+        inline def set$nor(value: js.Array[Selector]): Self = StObject.set(x, "$nor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$norUndefined: Self = StObject.set(x, "$nor", js.undefined)
+        inline def set$norUndefined: Self = StObject.set(x, "$nor", js.undefined)
         
-        @scala.inline
-        def set$norVarargs(value: Selector*): Self = StObject.set(x, "$nor", js.Array(value :_*))
+        inline def set$norVarargs(value: Selector*): Self = StObject.set(x, "$nor", js.Array(value :_*))
         
-        @scala.inline
-        def set$not(value: Selector): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
+        inline def set$not(value: Selector): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$notUndefined: Self = StObject.set(x, "$not", js.undefined)
+        inline def set$notUndefined: Self = StObject.set(x, "$not", js.undefined)
         
-        @scala.inline
-        def set$or(value: js.Array[Selector]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
+        inline def set$or(value: js.Array[Selector]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$orUndefined: Self = StObject.set(x, "$or", js.undefined)
+        inline def set$orUndefined: Self = StObject.set(x, "$or", js.undefined)
         
-        @scala.inline
-        def set$orVarargs(value: Selector*): Self = StObject.set(x, "$or", js.Array(value :_*))
+        inline def set$orVarargs(value: Selector*): Self = StObject.set(x, "$or", js.Array(value :_*))
       }
     }
     
@@ -192,113 +179,78 @@ object PouchDB {
     }
     object ConditionOperators {
       
-      @scala.inline
-      def apply(): ConditionOperators = {
+      inline def apply(): ConditionOperators = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConditionOperators]
       }
       
-      @scala.inline
-      implicit class ConditionOperatorsMutableBuilder[Self <: ConditionOperators] (val x: Self) extends AnyVal {
+      extension [Self <: ConditionOperators](x: Self) {
         
-        @scala.inline
-        def set$all(value: js.Array[js.Any]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+        inline def set$all(value: js.Array[js.Any]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+        inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
         
-        @scala.inline
-        def set$allVarargs(value: js.Any*): Self = StObject.set(x, "$all", js.Array(value :_*))
+        inline def set$allVarargs(value: js.Any*): Self = StObject.set(x, "$all", js.Array(value :_*))
         
-        @scala.inline
-        def set$elemMatch(value: ConditionOperators): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
+        inline def set$elemMatch(value: ConditionOperators): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$elemMatchUndefined: Self = StObject.set(x, "$elemMatch", js.undefined)
+        inline def set$elemMatchUndefined: Self = StObject.set(x, "$elemMatch", js.undefined)
         
-        @scala.inline
-        def set$eq(value: js.Any): Self = StObject.set(x, "$eq", value.asInstanceOf[js.Any])
+        inline def set$eq(value: js.Any): Self = StObject.set(x, "$eq", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$eqUndefined: Self = StObject.set(x, "$eq", js.undefined)
+        inline def set$eqUndefined: Self = StObject.set(x, "$eq", js.undefined)
         
-        @scala.inline
-        def set$exists(value: Boolean): Self = StObject.set(x, "$exists", value.asInstanceOf[js.Any])
+        inline def set$exists(value: Boolean): Self = StObject.set(x, "$exists", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$existsUndefined: Self = StObject.set(x, "$exists", js.undefined)
+        inline def set$existsUndefined: Self = StObject.set(x, "$exists", js.undefined)
         
-        @scala.inline
-        def set$gt(value: js.Any): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
+        inline def set$gt(value: js.Any): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$gtUndefined: Self = StObject.set(x, "$gt", js.undefined)
+        inline def set$gtUndefined: Self = StObject.set(x, "$gt", js.undefined)
         
-        @scala.inline
-        def set$gte(value: js.Any): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
+        inline def set$gte(value: js.Any): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
+        inline def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
         
-        @scala.inline
-        def set$in(value: js.Array[js.Any]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
+        inline def set$in(value: js.Array[js.Any]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
+        inline def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
         
-        @scala.inline
-        def set$inVarargs(value: js.Any*): Self = StObject.set(x, "$in", js.Array(value :_*))
+        inline def set$inVarargs(value: js.Any*): Self = StObject.set(x, "$in", js.Array(value :_*))
         
-        @scala.inline
-        def set$lt(value: js.Any): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
+        inline def set$lt(value: js.Any): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$ltUndefined: Self = StObject.set(x, "$lt", js.undefined)
+        inline def set$ltUndefined: Self = StObject.set(x, "$lt", js.undefined)
         
-        @scala.inline
-        def set$lte(value: js.Any): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
+        inline def set$lte(value: js.Any): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$lteUndefined: Self = StObject.set(x, "$lte", js.undefined)
+        inline def set$lteUndefined: Self = StObject.set(x, "$lte", js.undefined)
         
-        @scala.inline
-        def set$mod(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "$mod", value.asInstanceOf[js.Any])
+        inline def set$mod(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "$mod", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$modUndefined: Self = StObject.set(x, "$mod", js.undefined)
+        inline def set$modUndefined: Self = StObject.set(x, "$mod", js.undefined)
         
-        @scala.inline
-        def set$ne(value: js.Any): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
+        inline def set$ne(value: js.Any): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
+        inline def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
         
-        @scala.inline
-        def set$nin(value: js.Array[js.Any]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
+        inline def set$nin(value: js.Array[js.Any]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$ninUndefined: Self = StObject.set(x, "$nin", js.undefined)
+        inline def set$ninUndefined: Self = StObject.set(x, "$nin", js.undefined)
         
-        @scala.inline
-        def set$ninVarargs(value: js.Any*): Self = StObject.set(x, "$nin", js.Array(value :_*))
+        inline def set$ninVarargs(value: js.Any*): Self = StObject.set(x, "$nin", js.Array(value :_*))
         
-        @scala.inline
-        def set$regex(value: String): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
+        inline def set$regex(value: String): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$regexUndefined: Self = StObject.set(x, "$regex", js.undefined)
+        inline def set$regexUndefined: Self = StObject.set(x, "$regex", js.undefined)
         
-        @scala.inline
-        def set$size(value: Double): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+        inline def set$size(value: Double): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
+        inline def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
         
-        @scala.inline
-        def set$type(value: `null` | boolean | number | string | array | `object`): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+        inline def set$type(value: `null` | boolean | number | string | array | `object`): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
+        inline def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
       }
     }
     
@@ -308,17 +260,14 @@ object PouchDB {
     }
     object CreateIndexOptions {
       
-      @scala.inline
-      def apply(index: Ddoc): CreateIndexOptions = {
+      inline def apply(index: Ddoc): CreateIndexOptions = {
         val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
         __obj.asInstanceOf[CreateIndexOptions]
       }
       
-      @scala.inline
-      implicit class CreateIndexOptionsMutableBuilder[Self <: CreateIndexOptions] (val x: Self) extends AnyVal {
+      extension [Self <: CreateIndexOptions](x: Self) {
         
-        @scala.inline
-        def setIndex(value: Ddoc): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Ddoc): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       }
     }
     
@@ -328,17 +277,14 @@ object PouchDB {
     }
     object CreateIndexResponse {
       
-      @scala.inline
-      def apply[Content /* <: js.Object */](result: String): CreateIndexResponse[Content] = {
+      inline def apply[Content /* <: js.Object */](result: String): CreateIndexResponse[Content] = {
         val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
         __obj.asInstanceOf[CreateIndexResponse[Content]]
       }
       
-      @scala.inline
-      implicit class CreateIndexResponseMutableBuilder[Self <: CreateIndexResponse[?], Content /* <: js.Object */] (val x: Self & CreateIndexResponse[Content]) extends AnyVal {
+      extension [Self <: CreateIndexResponse[?], Content /* <: js.Object */](x: Self & CreateIndexResponse[Content]) {
         
-        @scala.inline
-        def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+        inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       }
     }
     
@@ -355,26 +301,20 @@ object PouchDB {
     }
     object DeleteIndexOptions {
       
-      @scala.inline
-      def apply(ddoc: String, name: String): DeleteIndexOptions = {
+      inline def apply(ddoc: String, name: String): DeleteIndexOptions = {
         val __obj = js.Dynamic.literal(ddoc = ddoc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[DeleteIndexOptions]
       }
       
-      @scala.inline
-      implicit class DeleteIndexOptionsMutableBuilder[Self <: DeleteIndexOptions] (val x: Self) extends AnyVal {
+      extension [Self <: DeleteIndexOptions](x: Self) {
         
-        @scala.inline
-        def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
+        inline def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -402,53 +342,38 @@ object PouchDB {
     }
     object FindRequest {
       
-      @scala.inline
-      def apply[Content /* <: js.Object */](selector: Selector): FindRequest[Content] = {
+      inline def apply[Content /* <: js.Object */](selector: Selector): FindRequest[Content] = {
         val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
         __obj.asInstanceOf[FindRequest[Content]]
       }
       
-      @scala.inline
-      implicit class FindRequestMutableBuilder[Self <: FindRequest[?], Content /* <: js.Object */] (val x: Self & FindRequest[Content]) extends AnyVal {
+      extension [Self <: FindRequest[?], Content /* <: js.Object */](x: Self & FindRequest[Content]) {
         
-        @scala.inline
-        def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
         
-        @scala.inline
-        def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+        inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+        inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         
-        @scala.inline
-        def setSelector(value: Selector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: Selector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+        inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+        inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
         
-        @scala.inline
-        def setSort(value: js.Array[String | (StringDictionary[asc | desc])]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+        inline def setSort(value: js.Array[String | (StringDictionary[asc | desc])]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+        inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
         
-        @scala.inline
-        def setSortVarargs(value: (String | (StringDictionary[asc | desc]))*): Self = StObject.set(x, "sort", js.Array(value :_*))
+        inline def setSortVarargs(value: (String | (StringDictionary[asc | desc]))*): Self = StObject.set(x, "sort", js.Array(value :_*))
         
-        @scala.inline
-        def setUse_index(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "use_index", value.asInstanceOf[js.Any])
+        inline def setUse_index(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "use_index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUse_indexUndefined: Self = StObject.set(x, "use_index", js.undefined)
+        inline def setUse_indexUndefined: Self = StObject.set(x, "use_index", js.undefined)
       }
     }
     
@@ -462,8 +387,7 @@ object PouchDB {
     }
     object FindResponse {
       
-      @scala.inline
-      def apply[Content /* <: js.Object */](
+      inline def apply[Content /* <: js.Object */](
         docs: js.Array[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any
             ]
@@ -472,26 +396,21 @@ object PouchDB {
         __obj.asInstanceOf[FindResponse[Content]]
       }
       
-      @scala.inline
-      implicit class FindResponseMutableBuilder[Self <: FindResponse[?], Content /* <: js.Object */] (val x: Self & FindResponse[Content]) extends AnyVal {
+      extension [Self <: FindResponse[?], Content /* <: js.Object */](x: Self & FindResponse[Content]) {
         
-        @scala.inline
-        def setDocs(
+        inline def setDocs(
           value: js.Array[
                   /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any
                 ]
         ): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocsVarargs(
+        inline def setDocsVarargs(
           value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any)*
         ): Self = StObject.set(x, "docs", js.Array(value :_*))
         
-        @scala.inline
-        def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+        inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+        inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
       }
     }
     
@@ -501,20 +420,16 @@ object PouchDB {
     }
     object GetIndexesResponse {
       
-      @scala.inline
-      def apply[Content /* <: js.Object */](indexes: js.Array[Index]): GetIndexesResponse[Content] = {
+      inline def apply[Content /* <: js.Object */](indexes: js.Array[Index]): GetIndexesResponse[Content] = {
         val __obj = js.Dynamic.literal(indexes = indexes.asInstanceOf[js.Any])
         __obj.asInstanceOf[GetIndexesResponse[Content]]
       }
       
-      @scala.inline
-      implicit class GetIndexesResponseMutableBuilder[Self <: GetIndexesResponse[?], Content /* <: js.Object */] (val x: Self & GetIndexesResponse[Content]) extends AnyVal {
+      extension [Self <: GetIndexesResponse[?], Content /* <: js.Object */](x: Self & GetIndexesResponse[Content]) {
         
-        @scala.inline
-        def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+        inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexesVarargs(value: Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+        inline def setIndexesVarargs(value: Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
       }
     }
     
@@ -533,31 +448,24 @@ object PouchDB {
     }
     object Index {
       
-      @scala.inline
-      def apply(`def`: Fields, name: String, `type`: String): Index = {
+      inline def apply(`def`: Fields, name: String, `type`: String): Index = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ddoc = null)
         __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Index]
       }
       
-      @scala.inline
-      implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+      extension [Self <: Index](x: Self) {
         
-        @scala.inline
-        def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
+        inline def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDdocNull: Self = StObject.set(x, "ddoc", null)
+        inline def setDdocNull: Self = StObject.set(x, "ddoc", null)
         
-        @scala.inline
-        def setDef(value: Fields): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+        inline def setDef(value: Fields): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -570,20 +478,16 @@ object PouchDB {
     }
     object Selector {
       
-      @scala.inline
-      def apply(): Selector = {
+      inline def apply(): Selector = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Selector]
       }
       
-      @scala.inline
-      implicit class SelectorMutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
+      extension [Self <: Selector](x: Self) {
         
-        @scala.inline
-        def set_id(value: String | ConditionOperators): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+        inline def set_id(value: String | ConditionOperators): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+        inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
       }
     }
   }

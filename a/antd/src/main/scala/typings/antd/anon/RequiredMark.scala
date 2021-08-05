@@ -10,19 +10,15 @@ trait RequiredMark extends StObject {
 }
 object RequiredMark {
   
-  @scala.inline
-  def apply(): RequiredMark = {
+  inline def apply(): RequiredMark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequiredMark]
   }
   
-  @scala.inline
-  implicit class RequiredMarkMutableBuilder[Self <: RequiredMark] (val x: Self) extends AnyVal {
+  extension [Self <: RequiredMark](x: Self) {
     
-    @scala.inline
-    def setRequiredMark(value: typings.antd.formFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
+    inline def setRequiredMark(value: typings.antd.formFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
+    inline def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
   }
 }

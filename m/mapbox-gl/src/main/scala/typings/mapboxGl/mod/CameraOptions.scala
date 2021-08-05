@@ -23,43 +23,31 @@ trait CameraOptions extends StObject {
 }
 object CameraOptions {
   
-  @scala.inline
-  def apply(): CameraOptions = {
+  inline def apply(): CameraOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CameraOptions]
   }
   
-  @scala.inline
-  implicit class CameraOptionsMutableBuilder[Self <: CameraOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CameraOptions](x: Self) {
     
-    @scala.inline
-    def setAround(value: LngLatLike): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
+    inline def setAround(value: LngLatLike): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAroundUndefined: Self = StObject.set(x, "around", js.undefined)
+    inline def setAroundUndefined: Self = StObject.set(x, "around", js.undefined)
     
-    @scala.inline
-    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+    inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
+    inline def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
     
-    @scala.inline
-    def setCenter(value: LngLatLike): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: LngLatLike): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+    inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

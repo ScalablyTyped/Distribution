@@ -11,6 +11,5 @@ object Breakpoints {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBreakpointLocation(syntaxTree: SyntaxTree, askedPos: Double): typings.typescriptServices.TypeScript.Services.SpanInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getBreakpointLocation")(syntaxTree.asInstanceOf[js.Any], askedPos.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.SpanInfo]
+  inline def getBreakpointLocation(syntaxTree: SyntaxTree, askedPos: Double): typings.typescriptServices.TypeScript.Services.SpanInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getBreakpointLocation")(syntaxTree.asInstanceOf[js.Any], askedPos.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.SpanInfo]
 }

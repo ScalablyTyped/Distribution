@@ -14,20 +14,16 @@ object Emscripten {
   }
   object CCallOpts {
     
-    @scala.inline
-    def apply(): CCallOpts = {
+    inline def apply(): CCallOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CCallOpts]
     }
     
-    @scala.inline
-    implicit class CCallOptsMutableBuilder[Self <: CCallOpts] (val x: Self) extends AnyVal {
+    extension [Self <: CCallOpts](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     }
   }
   
@@ -38,11 +34,9 @@ object Emscripten {
   trait CFloatType extends StObject
   object CFloatType {
     
-    @scala.inline
-    def double: typings.emscripten.emscriptenStrings.double = "double".asInstanceOf[typings.emscripten.emscriptenStrings.double]
+    inline def double: typings.emscripten.emscriptenStrings.double = "double".asInstanceOf[typings.emscripten.emscriptenStrings.double]
     
-    @scala.inline
-    def float: typings.emscripten.emscriptenStrings.float = "float".asInstanceOf[typings.emscripten.emscriptenStrings.float]
+    inline def float: typings.emscripten.emscriptenStrings.float = "float".asInstanceOf[typings.emscripten.emscriptenStrings.float]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -54,17 +48,13 @@ object Emscripten {
   trait CIntType extends StObject
   object CIntType {
     
-    @scala.inline
-    def i16: typings.emscripten.emscriptenStrings.i16 = "i16".asInstanceOf[typings.emscripten.emscriptenStrings.i16]
+    inline def i16: typings.emscripten.emscriptenStrings.i16 = "i16".asInstanceOf[typings.emscripten.emscriptenStrings.i16]
     
-    @scala.inline
-    def i32: typings.emscripten.emscriptenStrings.i32 = "i32".asInstanceOf[typings.emscripten.emscriptenStrings.i32]
+    inline def i32: typings.emscripten.emscriptenStrings.i32 = "i32".asInstanceOf[typings.emscripten.emscriptenStrings.i32]
     
-    @scala.inline
-    def i64: typings.emscripten.emscriptenStrings.i64 = "i64".asInstanceOf[typings.emscripten.emscriptenStrings.i64]
+    inline def i64: typings.emscripten.emscriptenStrings.i64 = "i64".asInstanceOf[typings.emscripten.emscriptenStrings.i64]
     
-    @scala.inline
-    def i8: typings.emscripten.emscriptenStrings.i8 = "i8".asInstanceOf[typings.emscripten.emscriptenStrings.i8]
+    inline def i8: typings.emscripten.emscriptenStrings.i8 = "i8".asInstanceOf[typings.emscripten.emscriptenStrings.i8]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -79,26 +69,19 @@ object Emscripten {
   trait CPointerType extends StObject
   object CPointerType {
     
-    @scala.inline
-    def Asterisk: typings.emscripten.emscriptenStrings.Asterisk = "*".asInstanceOf[typings.emscripten.emscriptenStrings.Asterisk]
+    inline def Asterisk: typings.emscripten.emscriptenStrings.Asterisk = "*".asInstanceOf[typings.emscripten.emscriptenStrings.Asterisk]
     
-    @scala.inline
-    def doubleAsterisk: typings.emscripten.emscriptenStrings.doubleAsterisk = "double*".asInstanceOf[typings.emscripten.emscriptenStrings.doubleAsterisk]
+    inline def doubleAsterisk: typings.emscripten.emscriptenStrings.doubleAsterisk = "double*".asInstanceOf[typings.emscripten.emscriptenStrings.doubleAsterisk]
     
-    @scala.inline
-    def floatAsterisk: typings.emscripten.emscriptenStrings.floatAsterisk = "float*".asInstanceOf[typings.emscripten.emscriptenStrings.floatAsterisk]
+    inline def floatAsterisk: typings.emscripten.emscriptenStrings.floatAsterisk = "float*".asInstanceOf[typings.emscripten.emscriptenStrings.floatAsterisk]
     
-    @scala.inline
-    def i16Asterisk: typings.emscripten.emscriptenStrings.i16Asterisk = "i16*".asInstanceOf[typings.emscripten.emscriptenStrings.i16Asterisk]
+    inline def i16Asterisk: typings.emscripten.emscriptenStrings.i16Asterisk = "i16*".asInstanceOf[typings.emscripten.emscriptenStrings.i16Asterisk]
     
-    @scala.inline
-    def i32Asterisk: typings.emscripten.emscriptenStrings.i32Asterisk = "i32*".asInstanceOf[typings.emscripten.emscriptenStrings.i32Asterisk]
+    inline def i32Asterisk: typings.emscripten.emscriptenStrings.i32Asterisk = "i32*".asInstanceOf[typings.emscripten.emscriptenStrings.i32Asterisk]
     
-    @scala.inline
-    def i64Asterisk: typings.emscripten.emscriptenStrings.i64Asterisk = "i64*".asInstanceOf[typings.emscripten.emscriptenStrings.i64Asterisk]
+    inline def i64Asterisk: typings.emscripten.emscriptenStrings.i64Asterisk = "i64*".asInstanceOf[typings.emscripten.emscriptenStrings.i64Asterisk]
     
-    @scala.inline
-    def i8Asterisk: typings.emscripten.emscriptenStrings.i8Asterisk = "i8*".asInstanceOf[typings.emscripten.emscriptenStrings.i8Asterisk]
+    inline def i8Asterisk: typings.emscripten.emscriptenStrings.i8Asterisk = "i8*".asInstanceOf[typings.emscripten.emscriptenStrings.i8Asterisk]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -119,44 +102,31 @@ object Emscripten {
   trait CType extends StObject
   object CType {
     
-    @scala.inline
-    def Asterisk: typings.emscripten.emscriptenStrings.Asterisk = "*".asInstanceOf[typings.emscripten.emscriptenStrings.Asterisk]
+    inline def Asterisk: typings.emscripten.emscriptenStrings.Asterisk = "*".asInstanceOf[typings.emscripten.emscriptenStrings.Asterisk]
     
-    @scala.inline
-    def double: typings.emscripten.emscriptenStrings.double = "double".asInstanceOf[typings.emscripten.emscriptenStrings.double]
+    inline def double: typings.emscripten.emscriptenStrings.double = "double".asInstanceOf[typings.emscripten.emscriptenStrings.double]
     
-    @scala.inline
-    def doubleAsterisk: typings.emscripten.emscriptenStrings.doubleAsterisk = "double*".asInstanceOf[typings.emscripten.emscriptenStrings.doubleAsterisk]
+    inline def doubleAsterisk: typings.emscripten.emscriptenStrings.doubleAsterisk = "double*".asInstanceOf[typings.emscripten.emscriptenStrings.doubleAsterisk]
     
-    @scala.inline
-    def float: typings.emscripten.emscriptenStrings.float = "float".asInstanceOf[typings.emscripten.emscriptenStrings.float]
+    inline def float: typings.emscripten.emscriptenStrings.float = "float".asInstanceOf[typings.emscripten.emscriptenStrings.float]
     
-    @scala.inline
-    def floatAsterisk: typings.emscripten.emscriptenStrings.floatAsterisk = "float*".asInstanceOf[typings.emscripten.emscriptenStrings.floatAsterisk]
+    inline def floatAsterisk: typings.emscripten.emscriptenStrings.floatAsterisk = "float*".asInstanceOf[typings.emscripten.emscriptenStrings.floatAsterisk]
     
-    @scala.inline
-    def i16: typings.emscripten.emscriptenStrings.i16 = "i16".asInstanceOf[typings.emscripten.emscriptenStrings.i16]
+    inline def i16: typings.emscripten.emscriptenStrings.i16 = "i16".asInstanceOf[typings.emscripten.emscriptenStrings.i16]
     
-    @scala.inline
-    def i16Asterisk: typings.emscripten.emscriptenStrings.i16Asterisk = "i16*".asInstanceOf[typings.emscripten.emscriptenStrings.i16Asterisk]
+    inline def i16Asterisk: typings.emscripten.emscriptenStrings.i16Asterisk = "i16*".asInstanceOf[typings.emscripten.emscriptenStrings.i16Asterisk]
     
-    @scala.inline
-    def i32: typings.emscripten.emscriptenStrings.i32 = "i32".asInstanceOf[typings.emscripten.emscriptenStrings.i32]
+    inline def i32: typings.emscripten.emscriptenStrings.i32 = "i32".asInstanceOf[typings.emscripten.emscriptenStrings.i32]
     
-    @scala.inline
-    def i32Asterisk: typings.emscripten.emscriptenStrings.i32Asterisk = "i32*".asInstanceOf[typings.emscripten.emscriptenStrings.i32Asterisk]
+    inline def i32Asterisk: typings.emscripten.emscriptenStrings.i32Asterisk = "i32*".asInstanceOf[typings.emscripten.emscriptenStrings.i32Asterisk]
     
-    @scala.inline
-    def i64: typings.emscripten.emscriptenStrings.i64 = "i64".asInstanceOf[typings.emscripten.emscriptenStrings.i64]
+    inline def i64: typings.emscripten.emscriptenStrings.i64 = "i64".asInstanceOf[typings.emscripten.emscriptenStrings.i64]
     
-    @scala.inline
-    def i64Asterisk: typings.emscripten.emscriptenStrings.i64Asterisk = "i64*".asInstanceOf[typings.emscripten.emscriptenStrings.i64Asterisk]
+    inline def i64Asterisk: typings.emscripten.emscriptenStrings.i64Asterisk = "i64*".asInstanceOf[typings.emscripten.emscriptenStrings.i64Asterisk]
     
-    @scala.inline
-    def i8: typings.emscripten.emscriptenStrings.i8 = "i8".asInstanceOf[typings.emscripten.emscriptenStrings.i8]
+    inline def i8: typings.emscripten.emscriptenStrings.i8 = "i8".asInstanceOf[typings.emscripten.emscriptenStrings.i8]
     
-    @scala.inline
-    def i8Asterisk: typings.emscripten.emscriptenStrings.i8Asterisk = "i8*".asInstanceOf[typings.emscripten.emscriptenStrings.i8Asterisk]
+    inline def i8Asterisk: typings.emscripten.emscriptenStrings.i8Asterisk = "i8*".asInstanceOf[typings.emscripten.emscriptenStrings.i8Asterisk]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -168,17 +138,13 @@ object Emscripten {
   trait EnvironmentType extends StObject
   object EnvironmentType {
     
-    @scala.inline
-    def NODE: typings.emscripten.emscriptenStrings.NODE = "NODE".asInstanceOf[typings.emscripten.emscriptenStrings.NODE]
+    inline def NODE: typings.emscripten.emscriptenStrings.NODE = "NODE".asInstanceOf[typings.emscripten.emscriptenStrings.NODE]
     
-    @scala.inline
-    def SHELL: typings.emscripten.emscriptenStrings.SHELL = "SHELL".asInstanceOf[typings.emscripten.emscriptenStrings.SHELL]
+    inline def SHELL: typings.emscripten.emscriptenStrings.SHELL = "SHELL".asInstanceOf[typings.emscripten.emscriptenStrings.SHELL]
     
-    @scala.inline
-    def WEB: typings.emscripten.emscriptenStrings.WEB = "WEB".asInstanceOf[typings.emscripten.emscriptenStrings.WEB]
+    inline def WEB: typings.emscripten.emscriptenStrings.WEB = "WEB".asInstanceOf[typings.emscripten.emscriptenStrings.WEB]
     
-    @scala.inline
-    def WORKER: typings.emscripten.emscriptenStrings.WORKER = "WORKER".asInstanceOf[typings.emscripten.emscriptenStrings.WORKER]
+    inline def WORKER: typings.emscripten.emscriptenStrings.WORKER = "WORKER".asInstanceOf[typings.emscripten.emscriptenStrings.WORKER]
   }
   
   trait FileSystemType extends StObject
@@ -192,17 +158,13 @@ object Emscripten {
   trait JSType extends StObject
   object JSType {
     
-    @scala.inline
-    def array: typings.emscripten.emscriptenStrings.array = "array".asInstanceOf[typings.emscripten.emscriptenStrings.array]
+    inline def array: typings.emscripten.emscriptenStrings.array = "array".asInstanceOf[typings.emscripten.emscriptenStrings.array]
     
-    @scala.inline
-    def boolean: typings.emscripten.emscriptenStrings.boolean = "boolean".asInstanceOf[typings.emscripten.emscriptenStrings.boolean]
+    inline def boolean: typings.emscripten.emscriptenStrings.boolean = "boolean".asInstanceOf[typings.emscripten.emscriptenStrings.boolean]
     
-    @scala.inline
-    def number: typings.emscripten.emscriptenStrings.number = "number".asInstanceOf[typings.emscripten.emscriptenStrings.number]
+    inline def number: typings.emscripten.emscriptenStrings.number = "number".asInstanceOf[typings.emscripten.emscriptenStrings.number]
     
-    @scala.inline
-    def string: typings.emscripten.emscriptenStrings.string = "string".asInstanceOf[typings.emscripten.emscriptenStrings.string]
+    inline def string: typings.emscripten.emscriptenStrings.string = "string".asInstanceOf[typings.emscripten.emscriptenStrings.string]
   }
   
   type TypeCompatibleWithC = Double | String | js.Array[js.Any] | Boolean

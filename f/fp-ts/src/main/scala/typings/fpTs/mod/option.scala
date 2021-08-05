@@ -92,17 +92,13 @@ object option {
   @js.native
   val Witherable: Witherable1[typings.fpTs.optionMod.URI] = js.native
   
-  @scala.inline
-  def alt[A](that: Lazy[Option_[A]]): js.Function1[/* fa */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[A]]]
+  inline def alt[A](that: Lazy[Option_[A]]): js.Function1[/* fa */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[A]]]
   
-  @scala.inline
-  def ap[A](fa: Option_[A]): js.Function1[/* fab */ Option_[js.Function1[/* a */ A, js.Any]], Option_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Option_[js.Function1[/* a */ A, js.Any]], Option_[js.Any]]]
+  inline def ap[A](fa: Option_[A]): js.Function1[/* fab */ Option_[js.Function1[/* a */ A, js.Any]], Option_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Option_[js.Function1[/* a */ A, js.Any]], Option_[js.Any]]]
   
-  @scala.inline
-  def apFirst[B](fb: Option_[B]): js.Function1[/* fa */ Option_[js.Any], Option_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[js.Any], Option_[js.Any]]]
+  inline def apFirst[B](fb: Option_[B]): js.Function1[/* fa */ Option_[js.Any], Option_[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apFirst")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[js.Any], Option_[js.Any]]]
   
-  @scala.inline
-  def apS[A, N /* <: String */, B](name: Exclude[N, /* keyof A */ String], fb: Option_[B]): js.Function1[
+  inline def apS[A, N /* <: String */, B](name: Exclude[N, /* keyof A */ String], fb: Option_[B]): js.Function1[
     /* fa */ Option_[A], 
     Option_[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -118,11 +114,9 @@ object option {
     ]
   ]]
   
-  @scala.inline
-  def apSecond[B](fb: Option_[B]): js.Function1[/* fa */ Option_[js.Any], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[js.Any], Option_[B]]]
+  inline def apSecond[B](fb: Option_[B]): js.Function1[/* fa */ Option_[js.Any], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apSecond")(fb.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[js.Any], Option_[B]]]
   
-  @scala.inline
-  def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Option_[B]]): js.Function1[
+  inline def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Option_[B]]): js.Function1[
     /* fa */ Option_[A], 
     Option_[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -138,8 +132,7 @@ object option {
     ]
   ]]
   
-  @scala.inline
-  def bindTo[N /* <: String */](name: N): js.Function1[
+  inline def bindTo[N /* <: String */](name: N): js.Function1[
     /* fa */ Option_[js.Any], 
     Option_[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -155,107 +148,73 @@ object option {
     ]
   ]]
   
-  @scala.inline
-  def chain[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* ma */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Option_[B]]]
+  inline def chain[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* ma */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Option_[B]]]
   
-  @scala.inline
-  def chainFirst[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* ma */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Option_[A]]]
+  inline def chainFirst[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* ma */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Option_[A]]]
   
-  @scala.inline
-  def compact[A](fa: Option_[Option_[A]]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(fa.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
+  inline def compact[A](fa: Option_[Option_[A]]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(fa.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
-  @scala.inline
-  def duplicate[A](ma: Option_[A]): Option_[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(ma.asInstanceOf[js.Any]).asInstanceOf[Option_[Option_[A]]]
+  inline def duplicate[A](ma: Option_[A]): Option_[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(ma.asInstanceOf[js.Any]).asInstanceOf[Option_[Option_[A]]]
   
-  @scala.inline
-  def elem[A](E: Eq[A]): js.Function2[/* a */ A, /* ma */ Option_[A], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ A, /* ma */ Option_[A], Boolean]]
+  inline def elem[A](E: Eq[A]): js.Function2[/* a */ A, /* ma */ Option_[A], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ A, /* ma */ Option_[A], Boolean]]
   
-  @scala.inline
-  def exists[A](predicate: Predicate[A]): js.Function1[/* ma */ Option_[A], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Boolean]]
+  inline def exists[A](predicate: Predicate[A]): js.Function1[/* ma */ Option_[A], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Boolean]]
   
-  @scala.inline
-  def extend[A, B](f: js.Function1[/* wa */ Option_[A], B]): js.Function1[/* wa */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wa */ Option_[A], Option_[B]]]
+  inline def extend[A, B](f: js.Function1[/* wa */ Option_[A], B]): js.Function1[/* wa */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wa */ Option_[A], Option_[B]]]
   
-  @scala.inline
-  def filter[A](predicate: Predicate[A]): js.Function1[/* fa */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[A]]]
+  inline def filter[A](predicate: Predicate[A]): js.Function1[/* fa */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[A]]]
   
-  @scala.inline
-  def filterMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* fa */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[B]]]
+  inline def filterMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* fa */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[B]]]
   
-  @scala.inline
-  def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[B]]]
+  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[B]]]
   
-  @scala.inline
-  def flatten[A](mma: Option_[Option_[A]]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
+  inline def flatten[A](mma: Option_[Option_[A]]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
-  @scala.inline
-  def fold[A, B](onNone: Lazy[B], onSome: js.Function1[/* a */ A, B]): js.Function1[/* ma */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B]]
+  inline def fold[A, B](onNone: Lazy[B], onSome: js.Function1[/* a */ A, B]): js.Function1[/* ma */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B]]
   
-  @scala.inline
-  def foldMap[M](M: Monoid[M]): js.Function1[/* f */ js.Function1[/* a */ js.Any, M], js.Function1[/* fa */ Option_[js.Any], M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* a */ js.Any, M], js.Function1[/* fa */ Option_[js.Any], M]]]
+  inline def foldMap[M](M: Monoid[M]): js.Function1[/* f */ js.Function1[/* a */ js.Any, M], js.Function1[/* fa */ Option_[js.Any], M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* a */ js.Any, M], js.Function1[/* fa */ Option_[js.Any], M]]]
   
-  @scala.inline
-  def fromEither[E, A](ma: Either_[E, A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(ma.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
+  inline def fromEither[E, A](ma: Either_[E, A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(ma.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
-  @scala.inline
-  def fromNullable[A](a: A): Option_[NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(a.asInstanceOf[js.Any]).asInstanceOf[Option_[NonNullable[A]]]
+  inline def fromNullable[A](a: A): Option_[NonNullable[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(a.asInstanceOf[js.Any]).asInstanceOf[Option_[NonNullable[A]]]
   
-  @scala.inline
-  def fromPredicate[A](predicate: Predicate[A]): js.Function1[/* a */ A, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, Option_[A]]]
+  inline def fromPredicate[A](predicate: Predicate[A]): js.Function1[/* a */ A, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, Option_[A]]]
   
-  @scala.inline
-  def fromPredicate_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, Option_[B]]]
+  inline def fromPredicate_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, Option_[B]]]
   
-  @scala.inline
-  def getApplyMonoid[A](M: Monoid[A]): Monoid[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplyMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[Option_[A]]]
+  inline def getApplyMonoid[A](M: Monoid[A]): Monoid[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplyMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[Option_[A]]]
   
-  @scala.inline
-  def getApplySemigroup[A](S: Semigroup[A]): Semigroup[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplySemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[Option_[A]]]
+  inline def getApplySemigroup[A](S: Semigroup[A]): Semigroup[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplySemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[Option_[A]]]
   
-  @scala.inline
-  def getEq[A](E: Eq[A]): Eq[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(E.asInstanceOf[js.Any]).asInstanceOf[Eq[Option_[A]]]
+  inline def getEq[A](E: Eq[A]): Eq[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(E.asInstanceOf[js.Any]).asInstanceOf[Eq[Option_[A]]]
   
-  @scala.inline
-  def getFirstMonoid[A](): Monoid[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstMonoid")().asInstanceOf[Monoid[Option_[A]]]
+  inline def getFirstMonoid[A](): Monoid[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstMonoid")().asInstanceOf[Monoid[Option_[A]]]
   
-  @scala.inline
-  def getLastMonoid[A](): Monoid[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastMonoid")().asInstanceOf[Monoid[Option_[A]]]
+  inline def getLastMonoid[A](): Monoid[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastMonoid")().asInstanceOf[Monoid[Option_[A]]]
   
-  @scala.inline
-  def getLeft[E, A](ma: Either_[E, A]): Option_[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeft")(ma.asInstanceOf[js.Any]).asInstanceOf[Option_[E]]
+  inline def getLeft[E, A](ma: Either_[E, A]): Option_[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeft")(ma.asInstanceOf[js.Any]).asInstanceOf[Option_[E]]
   
-  @scala.inline
-  def getMonoid[A](S: Semigroup[A]): Monoid[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(S.asInstanceOf[js.Any]).asInstanceOf[Monoid[Option_[A]]]
+  inline def getMonoid[A](S: Semigroup[A]): Monoid[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(S.asInstanceOf[js.Any]).asInstanceOf[Monoid[Option_[A]]]
   
-  @scala.inline
-  def getOrElse[A](onNone: Lazy[A]): js.Function1[/* ma */ Option_[A], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], A]]
+  inline def getOrElse[A](onNone: Lazy[A]): js.Function1[/* ma */ Option_[A], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], A]]
   
-  @scala.inline
-  def getOrElseW[B](onNone: Lazy[B]): js.Function1[/* ma */ Option_[js.Any], B | js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[js.Any], B | js.Any]]
+  inline def getOrElseW[B](onNone: Lazy[B]): js.Function1[/* ma */ Option_[js.Any], B | js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[js.Any], B | js.Any]]
   
-  @scala.inline
-  def getOrd[A](O: Ord_[A]): Ord_[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrd")(O.asInstanceOf[js.Any]).asInstanceOf[Ord_[Option_[A]]]
+  inline def getOrd[A](O: Ord_[A]): Ord_[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrd")(O.asInstanceOf[js.Any]).asInstanceOf[Ord_[Option_[A]]]
   
-  @scala.inline
-  def getRefinement[A, B /* <: A */](getOption: js.Function1[/* a */ A, Option_[B]]): Refinement[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefinement")(getOption.asInstanceOf[js.Any]).asInstanceOf[Refinement[A, B]]
+  inline def getRefinement[A, B /* <: A */](getOption: js.Function1[/* a */ A, Option_[B]]): Refinement[A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefinement")(getOption.asInstanceOf[js.Any]).asInstanceOf[Refinement[A, B]]
   
-  @scala.inline
-  def getRight[E, A](ma: Either_[E, A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRight")(ma.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
+  inline def getRight[E, A](ma: Either_[E, A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRight")(ma.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
-  @scala.inline
-  def getShow[A](S: Show[A]): Show[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShow")(S.asInstanceOf[js.Any]).asInstanceOf[Show[Option_[A]]]
+  inline def getShow[A](S: Show[A]): Show[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShow")(S.asInstanceOf[js.Any]).asInstanceOf[Show[Option_[A]]]
   
-  @scala.inline
-  def isNone[A](fa: Option_[A]): /* is fp-ts.fp-ts/lib/Option.None */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNone")(fa.asInstanceOf[js.Any]).asInstanceOf[/* is fp-ts.fp-ts/lib/Option.None */ Boolean]
+  inline def isNone[A](fa: Option_[A]): /* is fp-ts.fp-ts/lib/Option.None */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNone")(fa.asInstanceOf[js.Any]).asInstanceOf[/* is fp-ts.fp-ts/lib/Option.None */ Boolean]
   
-  @scala.inline
-  def isSome[A](fa: Option_[A]): /* is fp-ts.fp-ts/lib/Option.Some<A> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSome")(fa.asInstanceOf[js.Any]).asInstanceOf[/* is fp-ts.fp-ts/lib/Option.Some<A> */ Boolean]
+  inline def isSome[A](fa: Option_[A]): /* is fp-ts.fp-ts/lib/Option.Some<A> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSome")(fa.asInstanceOf[js.Any]).asInstanceOf[/* is fp-ts.fp-ts/lib/Option.Some<A> */ Boolean]
   
-  @scala.inline
-  def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[B]]]
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[B]]]
   
-  @scala.inline
-  def mapNullable[A, B](f: js.Function1[/* a */ A, js.UndefOr[B | Null]]): js.Function1[/* ma */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapNullable")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Option_[B]]]
+  inline def mapNullable[A, B](f: js.Function1[/* a */ A, js.UndefOr[B | Null]]): js.Function1[/* ma */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapNullable")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Option_[B]]]
   
   @JSImport("fp-ts", "option.none")
   @js.native
@@ -272,30 +231,23 @@ object option {
   @js.native
   val option: Monad1[typings.fpTs.optionMod.URI] & Foldable1[typings.fpTs.optionMod.URI] & Alternative1[typings.fpTs.optionMod.URI] & Extend1[typings.fpTs.optionMod.URI] & Witherable1[typings.fpTs.optionMod.URI] & MonadThrow1[typings.fpTs.optionMod.URI] = js.native
   
-  @scala.inline
-  def partition[A](predicate: Predicate[A]): js.Function1[/* fa */ Option_[A], Separated[Option_[A], Option_[A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Separated[Option_[A], Option_[A]]]]
+  inline def partition[A](predicate: Predicate[A]): js.Function1[/* fa */ Option_[A], Separated[Option_[A], Option_[A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Separated[Option_[A], Option_[A]]]]
   
-  @scala.inline
-  def partitionMap[A, B, C](f: js.Function1[/* a */ A, Either_[B, C]]): js.Function1[/* fa */ Option_[A], Separated[Option_[B], Option_[C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Separated[Option_[B], Option_[C]]]]
+  inline def partitionMap[A, B, C](f: js.Function1[/* a */ A, Either_[B, C]]): js.Function1[/* fa */ Option_[A], Separated[Option_[B], Option_[C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Separated[Option_[B], Option_[C]]]]
   
-  @scala.inline
-  def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Option_[A], Separated[Option_[A], Option_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Separated[Option_[A], Option_[B]]]]
+  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Option_[A], Separated[Option_[A], Option_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Separated[Option_[A], Option_[B]]]]
   
-  @scala.inline
-  def reduce[A, B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): js.Function1[/* fa */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ Option_[A], B]]
+  inline def reduce[A, B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): js.Function1[/* fa */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ Option_[A], B]]
   
-  @scala.inline
-  def reduceRight[A, B](b: B, f: js.Function2[/* a */ A, /* b */ B, B]): js.Function1[/* fa */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ Option_[A], B]]
+  inline def reduceRight[A, B](b: B, f: js.Function2[/* a */ A, /* b */ B, B]): js.Function1[/* fa */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ Option_[A], B]]
   
-  @scala.inline
-  def separate[A, B](ma: Option_[Either_[A, B]]): Separated[Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separate")(ma.asInstanceOf[js.Any]).asInstanceOf[Separated[Option_[A], Option_[B]]]
+  inline def separate[A, B](ma: Option_[Either_[A, B]]): Separated[Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separate")(ma.asInstanceOf[js.Any]).asInstanceOf[Separated[Option_[A], Option_[B]]]
   
   @JSImport("fp-ts", "option.sequence")
   @js.native
   val sequence: Sequence1[typings.fpTs.optionMod.URI] = js.native
   
-  @scala.inline
-  def some[A](a: A): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(a.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
+  inline def some[A](a: A): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(a.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
   @JSImport("fp-ts", "option.throwError")
   @js.native
@@ -304,18 +256,15 @@ object option {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ js.Any
   ] = js.native
   
-  @scala.inline
-  def toNullable[A](ma: Option_[A]): A | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNullable")(ma.asInstanceOf[js.Any]).asInstanceOf[A | Null]
+  inline def toNullable[A](ma: Option_[A]): A | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNullable")(ma.asInstanceOf[js.Any]).asInstanceOf[A | Null]
   
-  @scala.inline
-  def toUndefined[A](ma: Option_[A]): js.UndefOr[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("toUndefined")(ma.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[A]]
+  inline def toUndefined[A](ma: Option_[A]): js.UndefOr[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("toUndefined")(ma.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[A]]
   
   @JSImport("fp-ts", "option.traverse")
   @js.native
   val traverse: PipeableTraverse1[typings.fpTs.optionMod.URI] = js.native
   
-  @scala.inline
-  def tryCatch[A](f: Lazy[A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
+  inline def tryCatch[A](f: Lazy[A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
   @JSImport("fp-ts", "option.wilt")
   @js.native

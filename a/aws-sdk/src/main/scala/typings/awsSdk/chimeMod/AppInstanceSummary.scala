@@ -23,31 +23,23 @@ trait AppInstanceSummary extends StObject {
 }
 object AppInstanceSummary {
   
-  @scala.inline
-  def apply(): AppInstanceSummary = {
+  inline def apply(): AppInstanceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppInstanceSummary]
   }
   
-  @scala.inline
-  implicit class AppInstanceSummaryMutableBuilder[Self <: AppInstanceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AppInstanceSummary](x: Self) {
     
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceArnUndefined: Self = StObject.set(x, "AppInstanceArn", js.undefined)
+    inline def setAppInstanceArnUndefined: Self = StObject.set(x, "AppInstanceArn", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait GetResourceContentResponse extends StObject {
 }
 object GetResourceContentResponse {
   
-  @scala.inline
-  def apply(base64Encoded: Boolean, content: String): GetResourceContentResponse = {
+  inline def apply(base64Encoded: Boolean, content: String): GetResourceContentResponse = {
     val __obj = js.Dynamic.literal(base64Encoded = base64Encoded.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceContentResponse]
   }
   
-  @scala.inline
-  implicit class GetResourceContentResponseMutableBuilder[Self <: GetResourceContentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceContentResponse](x: Self) {
     
-    @scala.inline
-    def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
+    inline def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

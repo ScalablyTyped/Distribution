@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(buffer: AudioBuffer, how: Options, cb: js.Function0[Unit]): AudioPlayHandle = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], how.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AudioPlayHandle]
+  inline def apply(buffer: AudioBuffer, how: Options, cb: js.Function0[Unit]): AudioPlayHandle = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], how.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[AudioPlayHandle]
   
   @JSImport("audio-play", JSImport.Namespace)
   @js.native
@@ -23,20 +22,16 @@ object mod {
   }
   object AudioPlayHandle {
     
-    @scala.inline
-    def apply(pause: () => js.Any, play: () => js.Any): AudioPlayHandle = {
+    inline def apply(pause: () => js.Any, play: () => js.Any): AudioPlayHandle = {
       val __obj = js.Dynamic.literal(pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play))
       __obj.asInstanceOf[AudioPlayHandle]
     }
     
-    @scala.inline
-    implicit class AudioPlayHandleMutableBuilder[Self <: AudioPlayHandle] (val x: Self) extends AnyVal {
+    extension [Self <: AudioPlayHandle](x: Self) {
       
-      @scala.inline
-      def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlay(value: () => js.Any): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+      inline def setPlay(value: () => js.Any): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     }
   }
   
@@ -71,62 +66,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setContext(value: AudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: AudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
+      inline def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetuneUndefined: Self = StObject.set(x, "detune", js.undefined)
+      inline def setDetuneUndefined: Self = StObject.set(x, "detune", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+      inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     }
   }
 }

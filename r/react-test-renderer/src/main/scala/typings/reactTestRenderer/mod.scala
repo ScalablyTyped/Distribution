@@ -16,16 +16,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def act(callback: js.Function0[js.UndefOr[Unit]]): DebugPromiseLike = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[DebugPromiseLike]
+  inline def act(callback: js.Function0[js.UndefOr[Unit]]): DebugPromiseLike = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[DebugPromiseLike]
   
-  @scala.inline
-  def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def create(nextElement: ReactElement): ReactTestRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(nextElement.asInstanceOf[js.Any]).asInstanceOf[ReactTestRenderer]
-  @scala.inline
-  def create(nextElement: ReactElement, options: TestRendererOptions): ReactTestRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(nextElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactTestRenderer]
+  inline def create(nextElement: ReactElement): ReactTestRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(nextElement.asInstanceOf[js.Any]).asInstanceOf[ReactTestRenderer]
+  inline def create(nextElement: ReactElement, options: TestRendererOptions): ReactTestRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(nextElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactTestRenderer]
   
   trait DebugPromiseLike extends StObject {
     
@@ -37,8 +33,7 @@ object mod {
   }
   object DebugPromiseLike {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `then`: (js.Function1[/* value */ scala.Nothing, scala.Nothing], js.Function1[/* reason */ scala.Nothing, scala.Nothing]) => scala.Nothing
     ): DebugPromiseLike = {
       val __obj = js.Dynamic.literal()
@@ -46,11 +41,9 @@ object mod {
       __obj.asInstanceOf[DebugPromiseLike]
     }
     
-    @scala.inline
-    implicit class DebugPromiseLikeMutableBuilder[Self <: DebugPromiseLike] (val x: Self) extends AnyVal {
+    extension [Self <: DebugPromiseLike](x: Self) {
       
-      @scala.inline
-      def setThen(
+      inline def setThen(
         value: (js.Function1[/* value */ scala.Nothing, scala.Nothing], js.Function1[/* reason */ scala.Nothing, scala.Nothing]) => scala.Nothing
       ): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
     }
@@ -112,30 +105,23 @@ object mod {
   }
   object ReactTestRendererJSON {
     
-    @scala.inline
-    def apply(props: StringDictionary[js.Any], `type`: String): ReactTestRendererJSON = {
+    inline def apply(props: StringDictionary[js.Any], `type`: String): ReactTestRendererJSON = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], children = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTestRendererJSON]
     }
     
-    @scala.inline
-    implicit class ReactTestRendererJSONMutableBuilder[Self <: ReactTestRendererJSON] (val x: Self) extends AnyVal {
+    extension [Self <: ReactTestRendererJSON](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactTestRendererNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactTestRendererNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenNull: Self = StObject.set(x, "children", null)
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactTestRendererNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactTestRendererNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,30 +139,23 @@ object mod {
   }
   object ReactTestRendererTree {
     
-    @scala.inline
-    def apply(instance: js.Any, nodeType: component | host, props: StringDictionary[js.Any], `type`: String): ReactTestRendererTree = {
+    inline def apply(instance: js.Any, nodeType: component | host, props: StringDictionary[js.Any], `type`: String): ReactTestRendererTree = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], children = null, rendered = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTestRendererTree]
     }
     
-    @scala.inline
-    implicit class ReactTestRendererTreeMutableBuilder[Self <: ReactTestRendererTree] (val x: Self) extends AnyVal {
+    extension [Self <: ReactTestRendererTree](x: Self) {
       
-      @scala.inline
-      def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeType(value: component | host): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: component | host): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendered(value: ReactTestRendererTree | js.Array[ReactTestRendererTree]): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+      inline def setRendered(value: ReactTestRendererTree | js.Array[ReactTestRendererTree]): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedNull: Self = StObject.set(x, "rendered", null)
+      inline def setRenderedNull: Self = StObject.set(x, "rendered", null)
       
-      @scala.inline
-      def setRenderedVarargs(value: ReactTestRendererTree*): Self = StObject.set(x, "rendered", js.Array(value :_*))
+      inline def setRenderedVarargs(value: ReactTestRendererTree*): Self = StObject.set(x, "rendered", js.Array(value :_*))
     }
   }
   
@@ -186,17 +165,14 @@ object mod {
   }
   object TestRendererOptions {
     
-    @scala.inline
-    def apply(createNodeMock: ReactElement => js.Any): TestRendererOptions = {
+    inline def apply(createNodeMock: ReactElement => js.Any): TestRendererOptions = {
       val __obj = js.Dynamic.literal(createNodeMock = js.Any.fromFunction1(createNodeMock))
       __obj.asInstanceOf[TestRendererOptions]
     }
     
-    @scala.inline
-    implicit class TestRendererOptionsMutableBuilder[Self <: TestRendererOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TestRendererOptions](x: Self) {
       
-      @scala.inline
-      def setCreateNodeMock(value: ReactElement => js.Any): Self = StObject.set(x, "createNodeMock", js.Any.fromFunction1(value))
+      inline def setCreateNodeMock(value: ReactElement => js.Any): Self = StObject.set(x, "createNodeMock", js.Any.fromFunction1(value))
     }
   }
 }

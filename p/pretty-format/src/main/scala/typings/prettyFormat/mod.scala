@@ -12,10 +12,8 @@ object mod {
     * @param val any potential JavaScript object
     * @param options Custom settings
     */
-  @scala.inline
-  def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("pretty-format", JSImport.Namespace)
   @js.native
@@ -30,44 +28,37 @@ object mod {
     @JSImport("pretty-format", "plugins.AsymmetricMatcher")
     @js.native
     def AsymmetricMatcher: typings.prettyFormat.typesMod.NewPlugin = js.native
-    @scala.inline
-    def AsymmetricMatcher_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsymmetricMatcher")(x.asInstanceOf[js.Any])
+    inline def AsymmetricMatcher_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsymmetricMatcher")(x.asInstanceOf[js.Any])
     
     @JSImport("pretty-format", "plugins.ConvertAnsi")
     @js.native
     def ConvertAnsi: typings.prettyFormat.typesMod.NewPlugin = js.native
-    @scala.inline
-    def ConvertAnsi_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertAnsi")(x.asInstanceOf[js.Any])
+    inline def ConvertAnsi_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertAnsi")(x.asInstanceOf[js.Any])
     
     @JSImport("pretty-format", "plugins.DOMCollection")
     @js.native
     def DOMCollection: typings.prettyFormat.typesMod.NewPlugin = js.native
-    @scala.inline
-    def DOMCollection_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMCollection")(x.asInstanceOf[js.Any])
+    inline def DOMCollection_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMCollection")(x.asInstanceOf[js.Any])
     
     @JSImport("pretty-format", "plugins.DOMElement")
     @js.native
     def DOMElement: typings.prettyFormat.typesMod.NewPlugin = js.native
-    @scala.inline
-    def DOMElement_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMElement")(x.asInstanceOf[js.Any])
+    inline def DOMElement_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMElement")(x.asInstanceOf[js.Any])
     
     @JSImport("pretty-format", "plugins.Immutable")
     @js.native
     def Immutable: typings.prettyFormat.typesMod.NewPlugin = js.native
-    @scala.inline
-    def Immutable_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Immutable")(x.asInstanceOf[js.Any])
+    inline def Immutable_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Immutable")(x.asInstanceOf[js.Any])
     
     @JSImport("pretty-format", "plugins.ReactElement")
     @js.native
     def ReactElement: typings.prettyFormat.typesMod.NewPlugin = js.native
-    @scala.inline
-    def ReactElement_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactElement")(x.asInstanceOf[js.Any])
+    inline def ReactElement_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactElement")(x.asInstanceOf[js.Any])
     
     @JSImport("pretty-format", "plugins.ReactTestComponent")
     @js.native
     def ReactTestComponent: typings.prettyFormat.typesMod.NewPlugin = js.native
-    @scala.inline
-    def ReactTestComponent_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactTestComponent")(x.asInstanceOf[js.Any])
+    inline def ReactTestComponent_=(x: typings.prettyFormat.typesMod.NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReactTestComponent")(x.asInstanceOf[js.Any])
   }
   
   type Colors = typings.prettyFormat.typesMod.Colors

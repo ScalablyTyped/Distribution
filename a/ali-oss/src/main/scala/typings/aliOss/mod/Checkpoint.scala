@@ -23,8 +23,7 @@ trait Checkpoint extends StObject {
 }
 object Checkpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     doneParts: js.Array[Etag],
     file: js.Any,
     fileSize: Double,
@@ -36,28 +35,20 @@ object Checkpoint {
     __obj.asInstanceOf[Checkpoint]
   }
   
-  @scala.inline
-  implicit class CheckpointMutableBuilder[Self <: Checkpoint] (val x: Self) extends AnyVal {
+  extension [Self <: Checkpoint](x: Self) {
     
-    @scala.inline
-    def setDoneParts(value: js.Array[Etag]): Self = StObject.set(x, "doneParts", value.asInstanceOf[js.Any])
+    inline def setDoneParts(value: js.Array[Etag]): Self = StObject.set(x, "doneParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDonePartsVarargs(value: Etag*): Self = StObject.set(x, "doneParts", js.Array(value :_*))
+    inline def setDonePartsVarargs(value: Etag*): Self = StObject.set(x, "doneParts", js.Array(value :_*))
     
-    @scala.inline
-    def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+    inline def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

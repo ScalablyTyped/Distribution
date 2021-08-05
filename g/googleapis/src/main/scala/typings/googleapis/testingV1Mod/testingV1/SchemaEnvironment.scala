@@ -21,25 +21,19 @@ trait SchemaEnvironment extends StObject {
 }
 object SchemaEnvironment {
   
-  @scala.inline
-  def apply(): SchemaEnvironment = {
+  inline def apply(): SchemaEnvironment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnvironment]
   }
   
-  @scala.inline
-  implicit class SchemaEnvironmentMutableBuilder[Self <: SchemaEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnvironment](x: Self) {
     
-    @scala.inline
-    def setAndroidDevice(value: SchemaAndroidDevice): Self = StObject.set(x, "androidDevice", value.asInstanceOf[js.Any])
+    inline def setAndroidDevice(value: SchemaAndroidDevice): Self = StObject.set(x, "androidDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDeviceUndefined: Self = StObject.set(x, "androidDevice", js.undefined)
+    inline def setAndroidDeviceUndefined: Self = StObject.set(x, "androidDevice", js.undefined)
     
-    @scala.inline
-    def setIosDevice(value: SchemaIosDevice): Self = StObject.set(x, "iosDevice", value.asInstanceOf[js.Any])
+    inline def setIosDevice(value: SchemaIosDevice): Self = StObject.set(x, "iosDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosDeviceUndefined: Self = StObject.set(x, "iosDevice", js.undefined)
+    inline def setIosDeviceUndefined: Self = StObject.set(x, "iosDevice", js.undefined)
   }
 }

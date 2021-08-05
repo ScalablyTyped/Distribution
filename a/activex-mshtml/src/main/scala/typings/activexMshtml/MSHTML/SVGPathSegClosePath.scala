@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGPathSegClosePath extends StObject {
   
-  @JSName("MSHTML.SVGPathSegClosePath_typekey")
+  /* private */ @JSName("MSHTML.SVGPathSegClosePath_typekey")
   var MSHTMLDotSVGPathSegClosePath_typekey: SVGPathSegClosePath
   
   var pathSegType: Double
@@ -15,8 +15,7 @@ trait SVGPathSegClosePath extends StObject {
 }
 object SVGPathSegClosePath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGPathSegClosePath_typekey: SVGPathSegClosePath,
     pathSegType: Double,
     pathSegTypeAsLetter: String
@@ -26,16 +25,12 @@ object SVGPathSegClosePath {
     __obj.asInstanceOf[SVGPathSegClosePath]
   }
   
-  @scala.inline
-  implicit class SVGPathSegClosePathMutableBuilder[Self <: SVGPathSegClosePath] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSegClosePath](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotSVGPathSegClosePath_typekey(value: SVGPathSegClosePath): Self = StObject.set(x, "MSHTML.SVGPathSegClosePath_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGPathSegClosePath_typekey(value: SVGPathSegClosePath): Self = StObject.set(x, "MSHTML.SVGPathSegClosePath_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
+    inline def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
+    inline def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
   }
 }

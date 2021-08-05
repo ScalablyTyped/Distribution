@@ -12,25 +12,19 @@ trait Show extends StObject {
 }
 object Show {
   
-  @scala.inline
-  def apply(): Show = {
+  inline def apply(): Show = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Show]
   }
   
-  @scala.inline
-  implicit class ShowMutableBuilder[Self <: Show] (val x: Self) extends AnyVal {
+  extension [Self <: Show](x: Self) {
     
-    @scala.inline
-    def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

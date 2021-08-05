@@ -47,41 +47,30 @@ object typesDestinationMod {
   }
   object Destination {
     
-    @scala.inline
-    def apply(Bucket: String): Destination = {
+    inline def apply(Bucket: String): Destination = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[Destination]
     }
     
-    @scala.inline
-    implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
+    extension [Self <: Destination](x: Self) {
       
-      @scala.inline
-      def setAccessControlTranslation(value: AccessControlTranslation): Self = StObject.set(x, "AccessControlTranslation", value.asInstanceOf[js.Any])
+      inline def setAccessControlTranslation(value: AccessControlTranslation): Self = StObject.set(x, "AccessControlTranslation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessControlTranslationUndefined: Self = StObject.set(x, "AccessControlTranslation", js.undefined)
+      inline def setAccessControlTranslationUndefined: Self = StObject.set(x, "AccessControlTranslation", js.undefined)
       
-      @scala.inline
-      def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
+      inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
+      inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
       
-      @scala.inline
-      def setStorageClass(value: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
+      inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     }
   }
   
@@ -103,26 +92,20 @@ object typesDestinationMod {
   }
   object UnmarshalledDestination {
     
-    @scala.inline
-    def apply(Bucket: String): UnmarshalledDestination = {
+    inline def apply(Bucket: String): UnmarshalledDestination = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledDestination]
     }
     
-    @scala.inline
-    implicit class UnmarshalledDestinationMutableBuilder[Self <: UnmarshalledDestination] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledDestination](x: Self) {
       
-      @scala.inline
-      def setAccessControlTranslation(value: UnmarshalledAccessControlTranslation): Self = StObject.set(x, "AccessControlTranslation", value.asInstanceOf[js.Any])
+      inline def setAccessControlTranslation(value: UnmarshalledAccessControlTranslation): Self = StObject.set(x, "AccessControlTranslation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessControlTranslationUndefined: Self = StObject.set(x, "AccessControlTranslation", js.undefined)
+      inline def setAccessControlTranslationUndefined: Self = StObject.set(x, "AccessControlTranslation", js.undefined)
       
-      @scala.inline
-      def setEncryptionConfiguration(value: UnmarshalledEncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setEncryptionConfiguration(value: UnmarshalledEncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
+      inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
     }
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesOnBehalfOf extends StObject {
 }
 object EnumValuesOnBehalfOf {
   
-  @scala.inline
-  def apply(enumValues: OnBehalfOf): EnumValuesOnBehalfOf = {
+  inline def apply(enumValues: OnBehalfOf): EnumValuesOnBehalfOf = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesOnBehalfOf]
   }
   
-  @scala.inline
-  implicit class EnumValuesOnBehalfOfMutableBuilder[Self <: EnumValuesOnBehalfOf] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesOnBehalfOf](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: OnBehalfOf): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: OnBehalfOf): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

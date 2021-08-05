@@ -17,25 +17,19 @@ trait GoogleCloudRecommenderV1CostProjection extends StObject {
 }
 object GoogleCloudRecommenderV1CostProjection {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommenderV1CostProjection = {
+  inline def apply(): GoogleCloudRecommenderV1CostProjection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommenderV1CostProjection]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommenderV1CostProjectionMutableBuilder[Self <: GoogleCloudRecommenderV1CostProjection] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommenderV1CostProjection](x: Self) {
     
-    @scala.inline
-    def setCost(value: GoogleTypeMoney): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+    inline def setCost(value: GoogleTypeMoney): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
+    inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object checkboxDotdriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def checkboxDriverFactory(hasElementEventTrigger: Element): Exists = ^.asInstanceOf[js.Dynamic].applyDynamic("checkboxDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Exists]
+  inline def checkboxDriverFactory(hasElementEventTrigger: Element): Exists = ^.asInstanceOf[js.Dynamic].applyDynamic("checkboxDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Exists]
 }

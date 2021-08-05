@@ -57,49 +57,35 @@ trait ILinkMatcherOptions extends StObject {
 }
 object ILinkMatcherOptions {
   
-  @scala.inline
-  def apply(): ILinkMatcherOptions = {
+  inline def apply(): ILinkMatcherOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILinkMatcherOptions]
   }
   
-  @scala.inline
-  implicit class ILinkMatcherOptionsMutableBuilder[Self <: ILinkMatcherOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ILinkMatcherOptions](x: Self) {
     
-    @scala.inline
-    def setLeaveCallback(value: () => Unit): Self = StObject.set(x, "leaveCallback", js.Any.fromFunction0(value))
+    inline def setLeaveCallback(value: () => Unit): Self = StObject.set(x, "leaveCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLeaveCallbackUndefined: Self = StObject.set(x, "leaveCallback", js.undefined)
+    inline def setLeaveCallbackUndefined: Self = StObject.set(x, "leaveCallback", js.undefined)
     
-    @scala.inline
-    def setMatchIndex(value: Double): Self = StObject.set(x, "matchIndex", value.asInstanceOf[js.Any])
+    inline def setMatchIndex(value: Double): Self = StObject.set(x, "matchIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchIndexUndefined: Self = StObject.set(x, "matchIndex", js.undefined)
+    inline def setMatchIndexUndefined: Self = StObject.set(x, "matchIndex", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setTooltipCallback(value: (/* event */ MouseEvent, /* uri */ String, /* location */ IViewportRange) => Boolean | Unit): Self = StObject.set(x, "tooltipCallback", js.Any.fromFunction3(value))
+    inline def setTooltipCallback(value: (/* event */ MouseEvent, /* uri */ String, /* location */ IViewportRange) => Boolean | Unit): Self = StObject.set(x, "tooltipCallback", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTooltipCallbackUndefined: Self = StObject.set(x, "tooltipCallback", js.undefined)
+    inline def setTooltipCallbackUndefined: Self = StObject.set(x, "tooltipCallback", js.undefined)
     
-    @scala.inline
-    def setValidationCallback(value: (/* uri */ String, /* callback */ js.Function1[/* isValid */ Boolean, Unit]) => Unit): Self = StObject.set(x, "validationCallback", js.Any.fromFunction2(value))
+    inline def setValidationCallback(value: (/* uri */ String, /* callback */ js.Function1[/* isValid */ Boolean, Unit]) => Unit): Self = StObject.set(x, "validationCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValidationCallbackUndefined: Self = StObject.set(x, "validationCallback", js.undefined)
+    inline def setValidationCallbackUndefined: Self = StObject.set(x, "validationCallback", js.undefined)
     
-    @scala.inline
-    def setWillLinkActivate(value: (/* event */ MouseEvent, /* uri */ String) => Boolean): Self = StObject.set(x, "willLinkActivate", js.Any.fromFunction2(value))
+    inline def setWillLinkActivate(value: (/* event */ MouseEvent, /* uri */ String) => Boolean): Self = StObject.set(x, "willLinkActivate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWillLinkActivateUndefined: Self = StObject.set(x, "willLinkActivate", js.undefined)
+    inline def setWillLinkActivateUndefined: Self = StObject.set(x, "willLinkActivate", js.undefined)
   }
 }

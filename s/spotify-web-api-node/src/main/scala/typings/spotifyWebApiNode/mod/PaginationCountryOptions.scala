@@ -10,8 +10,7 @@ trait PaginationCountryOptions
      with CountryOptions
 object PaginationCountryOptions {
   
-  @scala.inline
-  def apply(): PaginationCountryOptions = {
+  inline def apply(): PaginationCountryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginationCountryOptions]
   }

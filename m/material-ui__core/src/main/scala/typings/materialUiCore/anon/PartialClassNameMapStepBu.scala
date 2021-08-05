@@ -15,31 +15,23 @@ trait PartialClassNameMapStepBu extends StObject {
 }
 object PartialClassNameMapStepBu {
   
-  @scala.inline
-  def apply(): PartialClassNameMapStepBu = {
+  inline def apply(): PartialClassNameMapStepBu = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapStepBu]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapStepBuMutableBuilder[Self <: PartialClassNameMapStepBu] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapStepBu](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setTouchRipple(value: String): Self = StObject.set(x, "touchRipple", value.asInstanceOf[js.Any])
+    inline def setTouchRipple(value: String): Self = StObject.set(x, "touchRipple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchRippleUndefined: Self = StObject.set(x, "touchRipple", js.undefined)
+    inline def setTouchRippleUndefined: Self = StObject.set(x, "touchRipple", js.undefined)
     
-    @scala.inline
-    def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

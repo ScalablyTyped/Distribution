@@ -52,37 +52,27 @@ trait RasterFunctionProperties extends StObject {
 }
 object RasterFunctionProperties {
   
-  @scala.inline
-  def apply(): RasterFunctionProperties = {
+  inline def apply(): RasterFunctionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RasterFunctionProperties]
   }
   
-  @scala.inline
-  implicit class RasterFunctionPropertiesMutableBuilder[Self <: RasterFunctionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RasterFunctionProperties](x: Self) {
     
-    @scala.inline
-    def setFunctionArguments(value: js.Any): Self = StObject.set(x, "functionArguments", value.asInstanceOf[js.Any])
+    inline def setFunctionArguments(value: js.Any): Self = StObject.set(x, "functionArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionArgumentsUndefined: Self = StObject.set(x, "functionArguments", js.undefined)
+    inline def setFunctionArgumentsUndefined: Self = StObject.set(x, "functionArguments", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
-    @scala.inline
-    def setOutputPixelType(value: c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown): Self = StObject.set(x, "outputPixelType", value.asInstanceOf[js.Any])
+    inline def setOutputPixelType(value: c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown): Self = StObject.set(x, "outputPixelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputPixelTypeUndefined: Self = StObject.set(x, "outputPixelType", js.undefined)
+    inline def setOutputPixelTypeUndefined: Self = StObject.set(x, "outputPixelType", js.undefined)
     
-    @scala.inline
-    def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
+    inline def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableNameUndefined: Self = StObject.set(x, "variableName", js.undefined)
+    inline def setVariableNameUndefined: Self = StObject.set(x, "variableName", js.undefined)
   }
 }

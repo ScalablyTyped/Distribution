@@ -10,16 +10,13 @@ trait OESElementIndexUint extends StObject {
 }
 object OESElementIndexUint {
   
-  @scala.inline
-  def apply(__OESElementIndexUint: Unit): OESElementIndexUint = {
+  inline def apply(__OESElementIndexUint: Unit): OESElementIndexUint = {
     val __obj = js.Dynamic.literal(__OESElementIndexUint = __OESElementIndexUint.asInstanceOf[js.Any])
     __obj.asInstanceOf[OESElementIndexUint]
   }
   
-  @scala.inline
-  implicit class OESElementIndexUintMutableBuilder[Self <: OESElementIndexUint] (val x: Self) extends AnyVal {
+  extension [Self <: OESElementIndexUint](x: Self) {
     
-    @scala.inline
-    def set__OESElementIndexUint(value: Unit): Self = StObject.set(x, "__OESElementIndexUint", value.asInstanceOf[js.Any])
+    inline def set__OESElementIndexUint(value: Unit): Self = StObject.set(x, "__OESElementIndexUint", value.asInstanceOf[js.Any])
   }
 }

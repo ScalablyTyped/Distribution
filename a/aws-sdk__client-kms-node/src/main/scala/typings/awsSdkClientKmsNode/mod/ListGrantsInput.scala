@@ -9,8 +9,7 @@ trait ListGrantsInput
      with typings.awsSdkClientKmsNode.typesListGrantsInputMod.ListGrantsInput
 object ListGrantsInput {
   
-  @scala.inline
-  def apply(KeyId: String): ListGrantsInput = {
+  inline def apply(KeyId: String): ListGrantsInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGrantsInput]
   }

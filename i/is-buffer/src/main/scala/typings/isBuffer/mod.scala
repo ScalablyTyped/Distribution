@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(obj: js.Any): /* is node.Buffer */ Boolean = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[/* is node.Buffer */ Boolean]
+  inline def apply(obj: js.Any): /* is node.Buffer */ Boolean = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[/* is node.Buffer */ Boolean]
   
   @JSImport("is-buffer", JSImport.Namespace)
   @js.native

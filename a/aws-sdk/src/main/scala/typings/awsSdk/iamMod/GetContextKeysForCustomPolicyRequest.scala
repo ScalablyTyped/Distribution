@@ -13,19 +13,15 @@ trait GetContextKeysForCustomPolicyRequest extends StObject {
 }
 object GetContextKeysForCustomPolicyRequest {
   
-  @scala.inline
-  def apply(PolicyInputList: SimulationPolicyListType): GetContextKeysForCustomPolicyRequest = {
+  inline def apply(PolicyInputList: SimulationPolicyListType): GetContextKeysForCustomPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyInputList = PolicyInputList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContextKeysForCustomPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetContextKeysForCustomPolicyRequestMutableBuilder[Self <: GetContextKeysForCustomPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetContextKeysForCustomPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyInputList(value: SimulationPolicyListType): Self = StObject.set(x, "PolicyInputList", value.asInstanceOf[js.Any])
+    inline def setPolicyInputList(value: SimulationPolicyListType): Self = StObject.set(x, "PolicyInputList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyInputListVarargs(value: policyDocumentType*): Self = StObject.set(x, "PolicyInputList", js.Array(value :_*))
+    inline def setPolicyInputListVarargs(value: policyDocumentType*): Self = StObject.set(x, "PolicyInputList", js.Array(value :_*))
   }
 }

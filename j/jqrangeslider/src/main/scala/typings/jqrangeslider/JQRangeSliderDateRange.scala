@@ -13,25 +13,19 @@ trait JQRangeSliderDateRange extends StObject {
 }
 object JQRangeSliderDateRange {
   
-  @scala.inline
-  def apply(): JQRangeSliderDateRange = {
+  inline def apply(): JQRangeSliderDateRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQRangeSliderDateRange]
   }
   
-  @scala.inline
-  implicit class JQRangeSliderDateRangeMutableBuilder[Self <: JQRangeSliderDateRange] (val x: Self) extends AnyVal {
+  extension [Self <: JQRangeSliderDateRange](x: Self) {
     
-    @scala.inline
-    def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

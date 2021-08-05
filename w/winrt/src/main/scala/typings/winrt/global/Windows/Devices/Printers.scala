@@ -21,8 +21,7 @@ object Printers {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def fromDeviceId(deviceId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDeviceId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def fromDeviceId(deviceId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDeviceId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     }
     
     @JSGlobal("Windows.Devices.Printers.Extensions.PrintNotificationEventDetails")

@@ -15,6 +15,5 @@ class Set[T] ()
 }
 object Set {
   
-  @scala.inline
-  def apply: SetConstructor = js.Dynamic.global.selectDynamic("Set").asInstanceOf[SetConstructor]
+  inline def apply: SetConstructor = js.Dynamic.global.selectDynamic("Set").asInstanceOf[SetConstructor]
 }

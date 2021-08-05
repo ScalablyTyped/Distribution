@@ -13,19 +13,15 @@ trait ToDataURLOptions extends StObject {
 }
 object ToDataURLOptions {
   
-  @scala.inline
-  def apply(): ToDataURLOptions = {
+  inline def apply(): ToDataURLOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToDataURLOptions]
   }
   
-  @scala.inline
-  implicit class ToDataURLOptionsMutableBuilder[Self <: ToDataURLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ToDataURLOptions](x: Self) {
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
   }
 }

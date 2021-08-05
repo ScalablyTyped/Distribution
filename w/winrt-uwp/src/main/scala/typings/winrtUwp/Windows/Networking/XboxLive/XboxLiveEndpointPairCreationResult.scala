@@ -21,8 +21,7 @@ trait XboxLiveEndpointPairCreationResult extends StObject {
 }
 object XboxLiveEndpointPairCreationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceAddress: XboxLiveDeviceAddress,
     endpointPair: XboxLiveEndpointPair,
     isExistingPathEvaluation: Boolean,
@@ -32,19 +31,14 @@ object XboxLiveEndpointPairCreationResult {
     __obj.asInstanceOf[XboxLiveEndpointPairCreationResult]
   }
   
-  @scala.inline
-  implicit class XboxLiveEndpointPairCreationResultMutableBuilder[Self <: XboxLiveEndpointPairCreationResult] (val x: Self) extends AnyVal {
+  extension [Self <: XboxLiveEndpointPairCreationResult](x: Self) {
     
-    @scala.inline
-    def setDeviceAddress(value: XboxLiveDeviceAddress): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
+    inline def setDeviceAddress(value: XboxLiveDeviceAddress): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointPair(value: XboxLiveEndpointPair): Self = StObject.set(x, "endpointPair", value.asInstanceOf[js.Any])
+    inline def setEndpointPair(value: XboxLiveEndpointPair): Self = StObject.set(x, "endpointPair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExistingPathEvaluation(value: Boolean): Self = StObject.set(x, "isExistingPathEvaluation", value.asInstanceOf[js.Any])
+    inline def setIsExistingPathEvaluation(value: Boolean): Self = StObject.set(x, "isExistingPathEvaluation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: XboxLiveEndpointPairCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: XboxLiveEndpointPairCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

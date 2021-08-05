@@ -30,29 +30,22 @@ object Invitation {
   }
   object SFSInvitation {
     
-    @scala.inline
-    def apply(id: Double, invitee: SFSUser, inviter: SFSUser, params: js.Object, secondsForAnswer: Double): SFSInvitation = {
+    inline def apply(id: Double, invitee: SFSUser, inviter: SFSUser, params: js.Object, secondsForAnswer: Double): SFSInvitation = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invitee = invitee.asInstanceOf[js.Any], inviter = inviter.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], secondsForAnswer = secondsForAnswer.asInstanceOf[js.Any])
       __obj.asInstanceOf[SFSInvitation]
     }
     
-    @scala.inline
-    implicit class SFSInvitationMutableBuilder[Self <: SFSInvitation] (val x: Self) extends AnyVal {
+    extension [Self <: SFSInvitation](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvitee(value: SFSUser): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
+      inline def setInvitee(value: SFSUser): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInviter(value: SFSUser): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
+      inline def setInviter(value: SFSUser): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsForAnswer(value: Double): Self = StObject.set(x, "secondsForAnswer", value.asInstanceOf[js.Any])
+      inline def setSecondsForAnswer(value: Double): Self = StObject.set(x, "secondsForAnswer", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,28 +18,21 @@ trait ListTestsResult extends StObject {
 }
 object ListTestsResult {
   
-  @scala.inline
-  def apply(): ListTestsResult = {
+  inline def apply(): ListTestsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTestsResult]
   }
   
-  @scala.inline
-  implicit class ListTestsResultMutableBuilder[Self <: ListTestsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListTestsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTests(value: Tests): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+    inline def setTests(value: Tests): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
+    inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
     
-    @scala.inline
-    def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value :_*))
   }
 }

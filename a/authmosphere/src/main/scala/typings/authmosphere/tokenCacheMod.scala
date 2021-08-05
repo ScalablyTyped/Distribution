@@ -40,7 +40,7 @@ object tokenCacheMod {
       options: TokenCacheOptions
     ) = this()
     
-    var cacheConfig: js.Any = js.native
+    /* private */ var cacheConfig: js.Any = js.native
     
     /**
       * Resolves with either a cached token for the given name or with a newly requested one (which is then cached).
@@ -59,13 +59,13 @@ object tokenCacheMod {
       * @param tokenName
       * @returns {Promise<Token>}
       */
-    var getCachedToken: js.Any = js.native
+    /* private */ var getCachedToken: js.Any = js.native
     
-    var isTokenConfigured: js.Any = js.native
+    /* private */ var isTokenConfigured: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var oauthConfig: js.Any = js.native
+    /* private */ var oauthConfig: js.Any = js.native
     
     /**
       * Forces the cache to delete present tokens and request new ones.
@@ -95,9 +95,9 @@ object tokenCacheMod {
       */
     def resolveAccessTokenFactory(key: String): js.Function0[js.Promise[String]] = js.native
     
-    var tokenConfig: js.Any = js.native
+    /* private */ var tokenConfig: js.Any = js.native
     
-    var tokenMap: js.Any = js.native
+    /* private */ var tokenMap: js.Any = js.native
   }
   
   @JSImport("authmosphere/lib/src/token-cache", "defaultCacheConfig")

@@ -14,25 +14,19 @@ trait LocalSidValueBlockParams
 }
 object LocalSidValueBlockParams {
   
-  @scala.inline
-  def apply(): LocalSidValueBlockParams = {
+  inline def apply(): LocalSidValueBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalSidValueBlockParams]
   }
   
-  @scala.inline
-  implicit class LocalSidValueBlockParamsMutableBuilder[Self <: LocalSidValueBlockParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocalSidValueBlockParams](x: Self) {
     
-    @scala.inline
-    def setIsFirstSid(value: scala.Boolean): Self = StObject.set(x, "isFirstSid", value.asInstanceOf[js.Any])
+    inline def setIsFirstSid(value: scala.Boolean): Self = StObject.set(x, "isFirstSid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFirstSidUndefined: Self = StObject.set(x, "isFirstSid", js.undefined)
+    inline def setIsFirstSidUndefined: Self = StObject.set(x, "isFirstSid", js.undefined)
     
-    @scala.inline
-    def setValueDec(value: Double): Self = StObject.set(x, "valueDec", value.asInstanceOf[js.Any])
+    inline def setValueDec(value: Double): Self = StObject.set(x, "valueDec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueDecUndefined: Self = StObject.set(x, "valueDec", js.undefined)
+    inline def setValueDecUndefined: Self = StObject.set(x, "valueDec", js.undefined)
   }
 }

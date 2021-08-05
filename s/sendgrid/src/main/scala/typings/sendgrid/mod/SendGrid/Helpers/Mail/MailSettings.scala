@@ -30,8 +30,7 @@ trait MailSettings extends StObject {
 }
 object MailSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBcc: () => Bcc,
     getBypassListManagement: () => BypassListManagement,
     getFooter: () => Footer,
@@ -48,40 +47,28 @@ object MailSettings {
     __obj.asInstanceOf[MailSettings]
   }
   
-  @scala.inline
-  implicit class MailSettingsMutableBuilder[Self <: MailSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MailSettings](x: Self) {
     
-    @scala.inline
-    def setGetBcc(value: () => Bcc): Self = StObject.set(x, "getBcc", js.Any.fromFunction0(value))
+    inline def setGetBcc(value: () => Bcc): Self = StObject.set(x, "getBcc", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBypassListManagement(value: () => BypassListManagement): Self = StObject.set(x, "getBypassListManagement", js.Any.fromFunction0(value))
+    inline def setGetBypassListManagement(value: () => BypassListManagement): Self = StObject.set(x, "getBypassListManagement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFooter(value: () => Footer): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
+    inline def setGetFooter(value: () => Footer): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSandBoxMode(value: () => SandBoxMode): Self = StObject.set(x, "getSandBoxMode", js.Any.fromFunction0(value))
+    inline def setGetSandBoxMode(value: () => SandBoxMode): Self = StObject.set(x, "getSandBoxMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSpamCheck(value: () => SpamCheck): Self = StObject.set(x, "getSpamCheck", js.Any.fromFunction0(value))
+    inline def setGetSpamCheck(value: () => SpamCheck): Self = StObject.set(x, "getSpamCheck", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBcc(value: Bcc => Unit): Self = StObject.set(x, "setBcc", js.Any.fromFunction1(value))
+    inline def setSetBcc(value: Bcc => Unit): Self = StObject.set(x, "setBcc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBypassListManagement(value: BypassListManagement => Unit): Self = StObject.set(x, "setBypassListManagement", js.Any.fromFunction1(value))
+    inline def setSetBypassListManagement(value: BypassListManagement => Unit): Self = StObject.set(x, "setBypassListManagement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFooter(value: Footer => Unit): Self = StObject.set(x, "setFooter", js.Any.fromFunction1(value))
+    inline def setSetFooter(value: Footer => Unit): Self = StObject.set(x, "setFooter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSandBoxMode(value: SandBoxMode => Unit): Self = StObject.set(x, "setSandBoxMode", js.Any.fromFunction1(value))
+    inline def setSetSandBoxMode(value: SandBoxMode => Unit): Self = StObject.set(x, "setSandBoxMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSpamCheck(value: SpamCheck => Unit): Self = StObject.set(x, "setSpamCheck", js.Any.fromFunction1(value))
+    inline def setSetSpamCheck(value: SpamCheck => Unit): Self = StObject.set(x, "setSpamCheck", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => typings.sendgrid.anon.Bcc): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => typings.sendgrid.anon.Bcc): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

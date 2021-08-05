@@ -13,19 +13,15 @@ trait PaneNavigateEvent
 }
 object PaneNavigateEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Pane): PaneNavigateEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Pane): PaneNavigateEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneNavigateEvent]
   }
   
-  @scala.inline
-  implicit class PaneNavigateEventMutableBuilder[Self <: PaneNavigateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PaneNavigateEvent](x: Self) {
     
-    @scala.inline
-    def setUrl(value: JQuery): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: JQuery): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

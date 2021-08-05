@@ -19,31 +19,23 @@ trait SelectListState extends StObject {
 }
 object SelectListState {
   
-  @scala.inline
-  def apply(isExpanded: Boolean, isFocused: Boolean, isHovered: Boolean, selectedOption: Value): SelectListState = {
+  inline def apply(isExpanded: Boolean, isFocused: Boolean, isHovered: Boolean, selectedOption: Value): SelectListState = {
     val __obj = js.Dynamic.literal(isExpanded = isExpanded.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], selectedOption = selectedOption.asInstanceOf[js.Any], highlightedIdx = null)
     __obj.asInstanceOf[SelectListState]
   }
   
-  @scala.inline
-  implicit class SelectListStateMutableBuilder[Self <: SelectListState] (val x: Self) extends AnyVal {
+  extension [Self <: SelectListState](x: Self) {
     
-    @scala.inline
-    def setHighlightedIdx(value: Double): Self = StObject.set(x, "highlightedIdx", value.asInstanceOf[js.Any])
+    inline def setHighlightedIdx(value: Double): Self = StObject.set(x, "highlightedIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightedIdxNull: Self = StObject.set(x, "highlightedIdx", null)
+    inline def setHighlightedIdxNull: Self = StObject.set(x, "highlightedIdx", null)
     
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+    inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHovered(value: Boolean): Self = StObject.set(x, "isHovered", value.asInstanceOf[js.Any])
+    inline def setIsHovered(value: Boolean): Self = StObject.set(x, "isHovered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedOption(value: Value): Self = StObject.set(x, "selectedOption", value.asInstanceOf[js.Any])
+    inline def setSelectedOption(value: Value): Self = StObject.set(x, "selectedOption", value.asInstanceOf[js.Any])
   }
 }

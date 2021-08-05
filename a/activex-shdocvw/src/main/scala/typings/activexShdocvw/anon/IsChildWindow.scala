@@ -12,19 +12,15 @@ trait IsChildWindow extends StObject {
 }
 object IsChildWindow {
   
-  @scala.inline
-  def apply(Cancel: Boolean, IsChildWindow: Boolean): IsChildWindow = {
+  inline def apply(Cancel: Boolean, IsChildWindow: Boolean): IsChildWindow = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], IsChildWindow = IsChildWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsChildWindow]
   }
   
-  @scala.inline
-  implicit class IsChildWindowMutableBuilder[Self <: IsChildWindow] (val x: Self) extends AnyVal {
+  extension [Self <: IsChildWindow](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChildWindow(value: Boolean): Self = StObject.set(x, "IsChildWindow", value.asInstanceOf[js.Any])
+    inline def setIsChildWindow(value: Boolean): Self = StObject.set(x, "IsChildWindow", value.asInstanceOf[js.Any])
   }
 }

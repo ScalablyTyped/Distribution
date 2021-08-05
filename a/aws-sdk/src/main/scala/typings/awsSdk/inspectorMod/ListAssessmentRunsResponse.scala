@@ -18,25 +18,19 @@ trait ListAssessmentRunsResponse extends StObject {
 }
 object ListAssessmentRunsResponse {
   
-  @scala.inline
-  def apply(assessmentRunArns: ListReturnedArnList): ListAssessmentRunsResponse = {
+  inline def apply(assessmentRunArns: ListReturnedArnList): ListAssessmentRunsResponse = {
     val __obj = js.Dynamic.literal(assessmentRunArns = assessmentRunArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssessmentRunsResponse]
   }
   
-  @scala.inline
-  implicit class ListAssessmentRunsResponseMutableBuilder[Self <: ListAssessmentRunsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssessmentRunsResponse](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunArns(value: ListReturnedArnList): Self = StObject.set(x, "assessmentRunArns", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunArns(value: ListReturnedArnList): Self = StObject.set(x, "assessmentRunArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value :_*))
+    inline def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

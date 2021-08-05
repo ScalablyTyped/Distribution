@@ -32,8 +32,7 @@ object stepper {
   }
   object Step {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deselect: () => Unit,
       enable: Boolean => Unit,
       getEnabled: () => Boolean,
@@ -49,38 +48,27 @@ object stepper {
       __obj.asInstanceOf[Step]
     }
     
-    @scala.inline
-    implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+    extension [Self <: Step](x: Self) {
       
-      @scala.inline
-      def setDeselect(value: () => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
+      inline def setDeselect(value: () => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: Boolean => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+      inline def setEnable(value: Boolean => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
+      inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+      inline def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectable(value: () => Boolean): Self = StObject.set(x, "getSelectable", js.Any.fromFunction0(value))
+      inline def setGetSelectable(value: () => Boolean): Self = StObject.set(x, "getSelectable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelected(value: () => Boolean): Self = StObject.set(x, "getSelected", js.Any.fromFunction0(value))
+      inline def setGetSelected(value: () => Boolean): Self = StObject.set(x, "getSelected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOptions(value: StepOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StepOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelect(value: () => Unit): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+      inline def setSelect(value: () => Unit): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetPrevious(value: Boolean => Unit): Self = StObject.set(x, "setPrevious", js.Any.fromFunction1(value))
+      inline def setSetPrevious(value: Boolean => Unit): Self = StObject.set(x, "setPrevious", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetValid(value: Boolean => Unit): Self = StObject.set(x, "setValid", js.Any.fromFunction1(value))
+      inline def setSetValid(value: Boolean => Unit): Self = StObject.set(x, "setValid", js.Any.fromFunction1(value))
     }
   }
   
@@ -116,98 +104,68 @@ object stepper {
   }
   object StepOptions {
     
-    @scala.inline
-    def apply(): StepOptions = {
+    inline def apply(): StepOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepOptions]
     }
     
-    @scala.inline
-    implicit class StepOptionsMutableBuilder[Self <: StepOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StepOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconTemplate(value: String | js.Function): Self = StObject.set(x, "iconTemplate", value.asInstanceOf[js.Any])
+      inline def setIconTemplate(value: String | js.Function): Self = StObject.set(x, "iconTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconTemplateUndefined: Self = StObject.set(x, "iconTemplate", js.undefined)
+      inline def setIconTemplateUndefined: Self = StObject.set(x, "iconTemplate", js.undefined)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setIndicatorVisible(value: Boolean): Self = StObject.set(x, "indicatorVisible", value.asInstanceOf[js.Any])
+      inline def setIndicatorVisible(value: Boolean): Self = StObject.set(x, "indicatorVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicatorVisibleUndefined: Self = StObject.set(x, "indicatorVisible", js.undefined)
+      inline def setIndicatorVisibleUndefined: Self = StObject.set(x, "indicatorVisible", js.undefined)
       
-      @scala.inline
-      def setIsFirstStep(value: Boolean): Self = StObject.set(x, "isFirstStep", value.asInstanceOf[js.Any])
+      inline def setIsFirstStep(value: Boolean): Self = StObject.set(x, "isFirstStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFirstStepUndefined: Self = StObject.set(x, "isFirstStep", js.undefined)
+      inline def setIsFirstStepUndefined: Self = StObject.set(x, "isFirstStep", js.undefined)
       
-      @scala.inline
-      def setIsLastStep(value: Boolean): Self = StObject.set(x, "isLastStep", value.asInstanceOf[js.Any])
+      inline def setIsLastStep(value: Boolean): Self = StObject.set(x, "isLastStep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLastStepUndefined: Self = StObject.set(x, "isLastStep", js.undefined)
+      inline def setIsLastStepUndefined: Self = StObject.set(x, "isLastStep", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setLabelVisible(value: Boolean): Self = StObject.set(x, "labelVisible", value.asInstanceOf[js.Any])
+      inline def setLabelVisible(value: Boolean): Self = StObject.set(x, "labelVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelVisibleUndefined: Self = StObject.set(x, "labelVisible", js.undefined)
+      inline def setLabelVisibleUndefined: Self = StObject.set(x, "labelVisible", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: Boolean): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Boolean): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
       
-      @scala.inline
-      def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+      inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+      inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setSuccessIcon(value: String): Self = StObject.set(x, "successIcon", value.asInstanceOf[js.Any])
+      inline def setSuccessIcon(value: String): Self = StObject.set(x, "successIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessIconUndefined: Self = StObject.set(x, "successIcon", js.undefined)
+      inline def setSuccessIconUndefined: Self = StObject.set(x, "successIcon", js.undefined)
     }
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Dictionaries")
 @js.native
-class Dictionaries protected ()
+/* private */ class Dictionaries ()
   extends StObject
      with typings.activexWord.Word.Dictionaries {
   
@@ -37,7 +37,7 @@ class Dictionaries protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Dictionaries_typekey")
   var WordDotDictionaries_typekey: typings.activexWord.Word.Dictionaries = js.native
 }

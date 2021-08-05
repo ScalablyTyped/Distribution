@@ -28,40 +28,29 @@ trait WorkspacesIpGroup extends StObject {
 }
 object WorkspacesIpGroup {
   
-  @scala.inline
-  def apply(): WorkspacesIpGroup = {
+  inline def apply(): WorkspacesIpGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspacesIpGroup]
   }
   
-  @scala.inline
-  implicit class WorkspacesIpGroupMutableBuilder[Self <: WorkspacesIpGroup] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspacesIpGroup](x: Self) {
     
-    @scala.inline
-    def setGroupDesc(value: IpGroupDesc): Self = StObject.set(x, "groupDesc", value.asInstanceOf[js.Any])
+    inline def setGroupDesc(value: IpGroupDesc): Self = StObject.set(x, "groupDesc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupDescUndefined: Self = StObject.set(x, "groupDesc", js.undefined)
+    inline def setGroupDescUndefined: Self = StObject.set(x, "groupDesc", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: IpGroupId): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: IpGroupId): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: IpGroupName): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: IpGroupName): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    @scala.inline
-    def setUserRules(value: IpRuleList): Self = StObject.set(x, "userRules", value.asInstanceOf[js.Any])
+    inline def setUserRules(value: IpRuleList): Self = StObject.set(x, "userRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRulesUndefined: Self = StObject.set(x, "userRules", js.undefined)
+    inline def setUserRulesUndefined: Self = StObject.set(x, "userRules", js.undefined)
     
-    @scala.inline
-    def setUserRulesVarargs(value: IpRuleItem*): Self = StObject.set(x, "userRules", js.Array(value :_*))
+    inline def setUserRulesVarargs(value: IpRuleItem*): Self = StObject.set(x, "userRules", js.Array(value :_*))
   }
 }

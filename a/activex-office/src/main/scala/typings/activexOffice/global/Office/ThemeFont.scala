@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ThemeFont")
 @js.native
-class ThemeFont protected ()
+/* private */ class ThemeFont ()
   extends StObject
      with typings.activexOffice.Office.ThemeFont {
   
@@ -19,7 +19,7 @@ class ThemeFont protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ThemeFont_typekey")
   var OfficeDotThemeFont_typekey: typings.activexOffice.Office.ThemeFont = js.native
   

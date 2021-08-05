@@ -52,43 +52,31 @@ trait DocumentLoadOptions extends StObject {
 }
 object DocumentLoadOptions {
   
-  @scala.inline
-  def apply(): DocumentLoadOptions = {
+  inline def apply(): DocumentLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentLoadOptions]
   }
   
-  @scala.inline
-  implicit class DocumentLoadOptionsMutableBuilder[Self <: DocumentLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAllowCloseOnUntitled(value: Boolean): Self = StObject.set(x, "allowCloseOnUntitled", value.asInstanceOf[js.Any])
+    inline def setAllowCloseOnUntitled(value: Boolean): Self = StObject.set(x, "allowCloseOnUntitled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCloseOnUntitledUndefined: Self = StObject.set(x, "allowCloseOnUntitled", js.undefined)
+    inline def setAllowCloseOnUntitledUndefined: Self = StObject.set(x, "allowCloseOnUntitled", js.undefined)
     
-    @scala.inline
-    def setBody(value: BodyLoadOptions): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BodyLoadOptions): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setProperties(value: DocumentPropertiesLoadOptions): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: DocumentPropertiesLoadOptions): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setSaved(value: Boolean): Self = StObject.set(x, "saved", value.asInstanceOf[js.Any])
+    inline def setSaved(value: Boolean): Self = StObject.set(x, "saved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedUndefined: Self = StObject.set(x, "saved", js.undefined)
+    inline def setSavedUndefined: Self = StObject.set(x, "saved", js.undefined)
   }
 }

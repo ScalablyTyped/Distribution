@@ -18,28 +18,21 @@ trait ListStreamProcessorsResponse extends StObject {
 }
 object ListStreamProcessorsResponse {
   
-  @scala.inline
-  def apply(): ListStreamProcessorsResponse = {
+  inline def apply(): ListStreamProcessorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStreamProcessorsResponse]
   }
   
-  @scala.inline
-  implicit class ListStreamProcessorsResponseMutableBuilder[Self <: ListStreamProcessorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListStreamProcessorsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStreamProcessors(value: StreamProcessorList): Self = StObject.set(x, "StreamProcessors", value.asInstanceOf[js.Any])
+    inline def setStreamProcessors(value: StreamProcessorList): Self = StObject.set(x, "StreamProcessors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamProcessorsUndefined: Self = StObject.set(x, "StreamProcessors", js.undefined)
+    inline def setStreamProcessorsUndefined: Self = StObject.set(x, "StreamProcessors", js.undefined)
     
-    @scala.inline
-    def setStreamProcessorsVarargs(value: StreamProcessor*): Self = StObject.set(x, "StreamProcessors", js.Array(value :_*))
+    inline def setStreamProcessorsVarargs(value: StreamProcessor*): Self = StObject.set(x, "StreamProcessors", js.Array(value :_*))
   }
 }

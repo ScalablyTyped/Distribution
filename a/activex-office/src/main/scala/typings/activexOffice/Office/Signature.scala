@@ -34,7 +34,7 @@ trait Signature extends StObject {
   
   val Issuer: String = js.native
   
-  @JSName("Office.Signature_typekey")
+  /* private */ @JSName("Office.Signature_typekey")
   var OfficeDotSignature_typekey: Signature = js.native
   
   val Parent: js.Any = js.native

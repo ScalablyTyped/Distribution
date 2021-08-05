@@ -18,17 +18,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object VoidTypeAnnotation_ {
   
-  @scala.inline
-  def apply(): VoidTypeAnnotation_ = {
+  inline def apply(): VoidTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("VoidTypeAnnotation")
     __obj.asInstanceOf[VoidTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class VoidTypeAnnotation_MutableBuilder[Self <: VoidTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: VoidTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: VoidTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: VoidTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

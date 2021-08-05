@@ -82,206 +82,140 @@ object Featherlight {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAfterClose(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
+      inline def setAfterClose(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
+      inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      @scala.inline
-      def setAfterContent(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterContent", js.Any.fromFunction1(value))
+      inline def setAfterContent(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterContentUndefined: Self = StObject.set(x, "afterContent", js.undefined)
+      inline def setAfterContentUndefined: Self = StObject.set(x, "afterContent", js.undefined)
       
-      @scala.inline
-      def setAfterOpen(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
+      inline def setAfterOpen(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "afterOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
+      inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
-      @scala.inline
-      def setAjax(value: String): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
+      inline def setAjax(value: String): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
+      inline def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setBeforeClose(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+      inline def setBeforeClose(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
+      inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      @scala.inline
-      def setBeforeContent(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeContent", js.Any.fromFunction1(value))
+      inline def setBeforeContent(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeContentUndefined: Self = StObject.set(x, "beforeContent", js.undefined)
+      inline def setBeforeContentUndefined: Self = StObject.set(x, "beforeContent", js.undefined)
       
-      @scala.inline
-      def setBeforeOpen(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+      inline def setBeforeOpen(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
+      inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
-      @scala.inline
-      def setCloseIcon(value: String): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      inline def setCloseIcon(value: String): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
       
-      @scala.inline
-      def setCloseOnClick(value: Boolean | String): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+      inline def setCloseOnClick(value: Boolean | String): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+      inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
       
-      @scala.inline
-      def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+      inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
+      inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
       
-      @scala.inline
-      def setCloseSpeed(value: Double | String): Self = StObject.set(x, "closeSpeed", value.asInstanceOf[js.Any])
+      inline def setCloseSpeed(value: Double | String): Self = StObject.set(x, "closeSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseSpeedUndefined: Self = StObject.set(x, "closeSpeed", js.undefined)
+      inline def setCloseSpeedUndefined: Self = StObject.set(x, "closeSpeed", js.undefined)
       
-      @scala.inline
-      def setCloseTrigger(value: String): Self = StObject.set(x, "closeTrigger", value.asInstanceOf[js.Any])
+      inline def setCloseTrigger(value: String): Self = StObject.set(x, "closeTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseTriggerUndefined: Self = StObject.set(x, "closeTrigger", js.undefined)
+      inline def setCloseTriggerUndefined: Self = StObject.set(x, "closeTrigger", js.undefined)
       
-      @scala.inline
-      def setContentFilters(value: js.Any): Self = StObject.set(x, "contentFilters", value.asInstanceOf[js.Any])
+      inline def setContentFilters(value: js.Any): Self = StObject.set(x, "contentFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentFiltersUndefined: Self = StObject.set(x, "contentFilters", js.undefined)
+      inline def setContentFiltersUndefined: Self = StObject.set(x, "contentFilters", js.undefined)
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setJquery(value: JQuery): Self = StObject.set(x, "jquery", value.asInstanceOf[js.Any])
+      inline def setJquery(value: JQuery): Self = StObject.set(x, "jquery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJqueryUndefined: Self = StObject.set(x, "jquery", js.undefined)
+      inline def setJqueryUndefined: Self = StObject.set(x, "jquery", js.undefined)
       
-      @scala.inline
-      def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setOnKeyUp(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* event */ JQueryEventObject => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setOpenSpeed(value: Double | String): Self = StObject.set(x, "openSpeed", value.asInstanceOf[js.Any])
+      inline def setOpenSpeed(value: Double | String): Self = StObject.set(x, "openSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenSpeedUndefined: Self = StObject.set(x, "openSpeed", js.undefined)
+      inline def setOpenSpeedUndefined: Self = StObject.set(x, "openSpeed", js.undefined)
       
-      @scala.inline
-      def setOpenTrigger(value: String): Self = StObject.set(x, "openTrigger", value.asInstanceOf[js.Any])
+      inline def setOpenTrigger(value: String): Self = StObject.set(x, "openTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenTriggerUndefined: Self = StObject.set(x, "openTrigger", js.undefined)
+      inline def setOpenTriggerUndefined: Self = StObject.set(x, "openTrigger", js.undefined)
       
-      @scala.inline
-      def setOtherClose(value: String): Self = StObject.set(x, "otherClose", value.asInstanceOf[js.Any])
+      inline def setOtherClose(value: String): Self = StObject.set(x, "otherClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherCloseUndefined: Self = StObject.set(x, "otherClose", js.undefined)
+      inline def setOtherCloseUndefined: Self = StObject.set(x, "otherClose", js.undefined)
       
-      @scala.inline
-      def setPersist(value: Boolean | String): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+      inline def setPersist(value: Boolean | String): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+      inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
       
-      @scala.inline
-      def setResetCss(value: Boolean): Self = StObject.set(x, "resetCss", value.asInstanceOf[js.Any])
+      inline def setResetCss(value: Boolean): Self = StObject.set(x, "resetCss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetCssUndefined: Self = StObject.set(x, "resetCss", js.undefined)
+      inline def setResetCssUndefined: Self = StObject.set(x, "resetCss", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setTargetAttr(value: String): Self = StObject.set(x, "targetAttr", value.asInstanceOf[js.Any])
+      inline def setTargetAttr(value: String): Self = StObject.set(x, "targetAttr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetAttrUndefined: Self = StObject.set(x, "targetAttr", js.undefined)
+      inline def setTargetAttrUndefined: Self = StObject.set(x, "targetAttr", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+      inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     }
   }
   
@@ -295,32 +229,24 @@ object Featherlight {
   }
   object ContentFilter {
     
-    @scala.inline
-    def apply(): ContentFilter = {
+    inline def apply(): ContentFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentFilter]
     }
     
-    @scala.inline
-    implicit class ContentFilterMutableBuilder[Self <: ContentFilter] (val x: Self) extends AnyVal {
+    extension [Self <: ContentFilter](x: Self) {
       
-      @scala.inline
-      def setProcess(value: /* data */ JQuery | String => JQuery | JQueryPromise[JQuery]): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+      inline def setProcess(value: /* data */ JQuery | String => JQuery | JQueryPromise[JQuery]): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+      inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      @scala.inline
-      def setTest(value: /* data */ JQuery | String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: /* data */ JQuery | String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     }
   }
   

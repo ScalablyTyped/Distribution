@@ -73,21 +73,16 @@ object volumeAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VolumeAttachmentState): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VolumeAttachmentState, opts: CustomResourceOptions): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
+    inline def get(name: String, id: Input[ID]): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
+    inline def get(name: String, id: Input[ID], state: VolumeAttachmentState): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
+    inline def get(name: String, id: Input[ID], state: VolumeAttachmentState, opts: CustomResourceOptions): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
     
     /**
       * Returns true if the given object is an instance of VolumeAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/volumeAttachment.VolumeAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/volumeAttachment.VolumeAttachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/volumeAttachment.VolumeAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/volumeAttachment.VolumeAttachment */ Boolean]
   }
   
   trait VolumeAttachmentArgs extends StObject {
@@ -127,35 +122,26 @@ object volumeAttachmentMod {
   }
   object VolumeAttachmentArgs {
     
-    @scala.inline
-    def apply(deviceName: Input[String], instanceId: Input[String], volumeId: Input[String]): VolumeAttachmentArgs = {
+    inline def apply(deviceName: Input[String], instanceId: Input[String], volumeId: Input[String]): VolumeAttachmentArgs = {
       val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], volumeId = volumeId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VolumeAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class VolumeAttachmentArgsMutableBuilder[Self <: VolumeAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+      inline def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDetach(value: Input[Boolean]): Self = StObject.set(x, "forceDetach", value.asInstanceOf[js.Any])
+      inline def setForceDetach(value: Input[Boolean]): Self = StObject.set(x, "forceDetach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDetachUndefined: Self = StObject.set(x, "forceDetach", js.undefined)
+      inline def setForceDetachUndefined: Self = StObject.set(x, "forceDetach", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipDestroy(value: Input[Boolean]): Self = StObject.set(x, "skipDestroy", value.asInstanceOf[js.Any])
+      inline def setSkipDestroy(value: Input[Boolean]): Self = StObject.set(x, "skipDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipDestroyUndefined: Self = StObject.set(x, "skipDestroy", js.undefined)
+      inline def setSkipDestroyUndefined: Self = StObject.set(x, "skipDestroy", js.undefined)
       
-      @scala.inline
-      def setVolumeId(value: Input[String]): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+      inline def setVolumeId(value: Input[String]): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,44 +182,32 @@ object volumeAttachmentMod {
   }
   object VolumeAttachmentState {
     
-    @scala.inline
-    def apply(): VolumeAttachmentState = {
+    inline def apply(): VolumeAttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VolumeAttachmentState]
     }
     
-    @scala.inline
-    implicit class VolumeAttachmentStateMutableBuilder[Self <: VolumeAttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeAttachmentState](x: Self) {
       
-      @scala.inline
-      def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+      inline def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+      inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
       
-      @scala.inline
-      def setForceDetach(value: Input[Boolean]): Self = StObject.set(x, "forceDetach", value.asInstanceOf[js.Any])
+      inline def setForceDetach(value: Input[Boolean]): Self = StObject.set(x, "forceDetach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDetachUndefined: Self = StObject.set(x, "forceDetach", js.undefined)
+      inline def setForceDetachUndefined: Self = StObject.set(x, "forceDetach", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setSkipDestroy(value: Input[Boolean]): Self = StObject.set(x, "skipDestroy", value.asInstanceOf[js.Any])
+      inline def setSkipDestroy(value: Input[Boolean]): Self = StObject.set(x, "skipDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipDestroyUndefined: Self = StObject.set(x, "skipDestroy", js.undefined)
+      inline def setSkipDestroyUndefined: Self = StObject.set(x, "skipDestroy", js.undefined)
       
-      @scala.inline
-      def setVolumeId(value: Input[String]): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+      inline def setVolumeId(value: Input[String]): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+      inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
     }
   }
 }

@@ -15,7 +15,7 @@ object configurationMod {
     
     val baseUrl: String = js.native
     
-    var region: js.Any = js.native
+    /* private */ var region: js.Any = js.native
     
     val retryWhenThrottledOverride: Boolean = js.native
     

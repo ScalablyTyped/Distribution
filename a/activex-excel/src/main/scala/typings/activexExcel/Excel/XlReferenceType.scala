@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlReferenceType extends StObject
 object XlReferenceType {
   
-  @scala.inline
-  def xlAbsRowRelColumn: `2` = 2.asInstanceOf[`2`]
+  inline def xlAbsRowRelColumn: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlAbsolute: `1` = 1.asInstanceOf[`1`]
+  inline def xlAbsolute: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlRelRowAbsColumn: `3` = 3.asInstanceOf[`3`]
+  inline def xlRelRowAbsColumn: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlRelative: `4` = 4.asInstanceOf[`4`]
+  inline def xlRelative: `4` = 4.asInstanceOf[`4`]
 }

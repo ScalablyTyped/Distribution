@@ -17,8 +17,7 @@ trait InTangents extends StObject {
 }
 object InTangents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inTangents: js.Array[Cartesian3],
     outTangents: js.Array[Cartesian3],
     points: js.Array[Cartesian3],
@@ -28,31 +27,22 @@ object InTangents {
     __obj.asInstanceOf[InTangents]
   }
   
-  @scala.inline
-  implicit class InTangentsMutableBuilder[Self <: InTangents] (val x: Self) extends AnyVal {
+  extension [Self <: InTangents](x: Self) {
     
-    @scala.inline
-    def setInTangents(value: js.Array[Cartesian3]): Self = StObject.set(x, "inTangents", value.asInstanceOf[js.Any])
+    inline def setInTangents(value: js.Array[Cartesian3]): Self = StObject.set(x, "inTangents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInTangentsVarargs(value: Cartesian3*): Self = StObject.set(x, "inTangents", js.Array(value :_*))
+    inline def setInTangentsVarargs(value: Cartesian3*): Self = StObject.set(x, "inTangents", js.Array(value :_*))
     
-    @scala.inline
-    def setOutTangents(value: js.Array[Cartesian3]): Self = StObject.set(x, "outTangents", value.asInstanceOf[js.Any])
+    inline def setOutTangents(value: js.Array[Cartesian3]): Self = StObject.set(x, "outTangents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutTangentsVarargs(value: Cartesian3*): Self = StObject.set(x, "outTangents", js.Array(value :_*))
+    inline def setOutTangentsVarargs(value: Cartesian3*): Self = StObject.set(x, "outTangents", js.Array(value :_*))
     
-    @scala.inline
-    def setPoints(value: js.Array[Cartesian3]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Cartesian3]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: Cartesian3*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Cartesian3*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setTimes(value: js.Array[Double]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+    inline def setTimes(value: js.Array[Double]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimesVarargs(value: Double*): Self = StObject.set(x, "times", js.Array(value :_*))
+    inline def setTimesVarargs(value: Double*): Self = StObject.set(x, "times", js.Array(value :_*))
   }
 }

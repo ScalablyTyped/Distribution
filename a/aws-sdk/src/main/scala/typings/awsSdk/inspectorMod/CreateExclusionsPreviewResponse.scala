@@ -13,16 +13,13 @@ trait CreateExclusionsPreviewResponse extends StObject {
 }
 object CreateExclusionsPreviewResponse {
   
-  @scala.inline
-  def apply(previewToken: UUID): CreateExclusionsPreviewResponse = {
+  inline def apply(previewToken: UUID): CreateExclusionsPreviewResponse = {
     val __obj = js.Dynamic.literal(previewToken = previewToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateExclusionsPreviewResponse]
   }
   
-  @scala.inline
-  implicit class CreateExclusionsPreviewResponseMutableBuilder[Self <: CreateExclusionsPreviewResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateExclusionsPreviewResponse](x: Self) {
     
-    @scala.inline
-    def setPreviewToken(value: UUID): Self = StObject.set(x, "previewToken", value.asInstanceOf[js.Any])
+    inline def setPreviewToken(value: UUID): Self = StObject.set(x, "previewToken", value.asInstanceOf[js.Any])
   }
 }

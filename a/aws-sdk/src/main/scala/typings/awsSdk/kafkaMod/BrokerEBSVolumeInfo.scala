@@ -22,19 +22,15 @@ trait BrokerEBSVolumeInfo extends StObject {
 }
 object BrokerEBSVolumeInfo {
   
-  @scala.inline
-  def apply(KafkaBrokerNodeId: string, VolumeSizeGB: integer): BrokerEBSVolumeInfo = {
+  inline def apply(KafkaBrokerNodeId: string, VolumeSizeGB: integer): BrokerEBSVolumeInfo = {
     val __obj = js.Dynamic.literal(KafkaBrokerNodeId = KafkaBrokerNodeId.asInstanceOf[js.Any], VolumeSizeGB = VolumeSizeGB.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerEBSVolumeInfo]
   }
   
-  @scala.inline
-  implicit class BrokerEBSVolumeInfoMutableBuilder[Self <: BrokerEBSVolumeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BrokerEBSVolumeInfo](x: Self) {
     
-    @scala.inline
-    def setKafkaBrokerNodeId(value: string): Self = StObject.set(x, "KafkaBrokerNodeId", value.asInstanceOf[js.Any])
+    inline def setKafkaBrokerNodeId(value: string): Self = StObject.set(x, "KafkaBrokerNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeGB(value: integer): Self = StObject.set(x, "VolumeSizeGB", value.asInstanceOf[js.Any])
+    inline def setVolumeSizeGB(value: integer): Self = StObject.set(x, "VolumeSizeGB", value.asInstanceOf[js.Any])
   }
 }

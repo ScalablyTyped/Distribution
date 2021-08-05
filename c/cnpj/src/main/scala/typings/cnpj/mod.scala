@@ -10,12 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def format(cnpj: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(cnpj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(cnpj: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(cnpj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
+  inline def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
   
-  @scala.inline
-  def validate(cnpj: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(cnpj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validate(cnpj: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(cnpj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

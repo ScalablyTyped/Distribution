@@ -18,25 +18,19 @@ trait ListObjectChildrenResponse extends StObject {
 }
 object ListObjectChildrenResponse {
   
-  @scala.inline
-  def apply(): ListObjectChildrenResponse = {
+  inline def apply(): ListObjectChildrenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListObjectChildrenResponse]
   }
   
-  @scala.inline
-  implicit class ListObjectChildrenResponseMutableBuilder[Self <: ListObjectChildrenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListObjectChildrenResponse](x: Self) {
     
-    @scala.inline
-    def setChildren(value: LinkNameToObjectIdentifierMap): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: LinkNameToObjectIdentifierMap): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "Children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "Children", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

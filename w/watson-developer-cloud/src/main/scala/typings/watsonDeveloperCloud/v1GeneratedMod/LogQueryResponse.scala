@@ -15,28 +15,21 @@ trait LogQueryResponse extends StObject {
 }
 object LogQueryResponse {
   
-  @scala.inline
-  def apply(): LogQueryResponse = {
+  inline def apply(): LogQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogQueryResponse]
   }
   
-  @scala.inline
-  implicit class LogQueryResponseMutableBuilder[Self <: LogQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LogQueryResponse](x: Self) {
     
-    @scala.inline
-    def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
+    inline def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
+    inline def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[LogQueryResponseResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[LogQueryResponseResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: LogQueryResponseResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: LogQueryResponseResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

@@ -8,31 +8,25 @@ object maximMazurokGapiClientDomainsStrings {
   
   @js.native
   sealed trait Location extends StObject
-  @scala.inline
-  def Location: Location = "Location".asInstanceOf[Location]
+  inline def Location: Location = "Location".asInstanceOf[Location]
   
   @js.native
   sealed trait Operation extends StObject
-  @scala.inline
-  def Operation: Operation = "Operation".asInstanceOf[Operation]
+  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
   
   @js.native
   sealed trait Registration extends StObject
-  @scala.inline
-  def Registration: Registration = "Registration".asInstanceOf[Registration]
+  inline def Registration: Registration = "Registration".asInstanceOf[Registration]
   
   @js.native
   sealed trait Status extends StObject
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
+  inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
   sealed trait domains extends StObject
-  @scala.inline
-  def domains: domains = "domains".asInstanceOf[domains]
+  inline def domains: domains = "domains".asInstanceOf[domains]
   
   @js.native
   sealed trait v1beta1 extends StObject
-  @scala.inline
-  def v1beta1: v1beta1 = "v1beta1".asInstanceOf[v1beta1]
+  inline def v1beta1: v1beta1 = "v1beta1".asInstanceOf[v1beta1]
 }

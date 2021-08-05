@@ -14,25 +14,19 @@ trait Days extends StObject {
 }
 object Days {
   
-  @scala.inline
-  def apply(days: js.Array[Double], total: Double, week: Double): Days = {
+  inline def apply(days: js.Array[Double], total: Double, week: Double): Days = {
     val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], week = week.asInstanceOf[js.Any])
     __obj.asInstanceOf[Days]
   }
   
-  @scala.inline
-  implicit class DaysMutableBuilder[Self <: Days] (val x: Self) extends AnyVal {
+  extension [Self <: Days](x: Self) {
     
-    @scala.inline
-    def setDays(value: js.Array[Double]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: js.Array[Double]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysVarargs(value: Double*): Self = StObject.set(x, "days", js.Array(value :_*))
+    inline def setDaysVarargs(value: Double*): Self = StObject.set(x, "days", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeek(value: Double): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    inline def setWeek(value: Double): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
   }
 }

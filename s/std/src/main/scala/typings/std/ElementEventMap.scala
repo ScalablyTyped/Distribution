@@ -12,19 +12,15 @@ trait ElementEventMap extends StObject {
 }
 object ElementEventMap {
   
-  @scala.inline
-  def apply(fullscreenchange: Event, fullscreenerror: Event): ElementEventMap = {
+  inline def apply(fullscreenchange: Event, fullscreenerror: Event): ElementEventMap = {
     val __obj = js.Dynamic.literal(fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementEventMap]
   }
   
-  @scala.inline
-  implicit class ElementEventMapMutableBuilder[Self <: ElementEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ElementEventMap](x: Self) {
     
-    @scala.inline
-    def setFullscreenchange(value: Event): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
+    inline def setFullscreenchange(value: Event): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenerror(value: Event): Self = StObject.set(x, "fullscreenerror", value.asInstanceOf[js.Any])
+    inline def setFullscreenerror(value: Event): Self = StObject.set(x, "fullscreenerror", value.asInstanceOf[js.Any])
   }
 }

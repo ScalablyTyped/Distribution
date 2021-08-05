@@ -46,51 +46,37 @@ trait EnvelopeAttachments extends StObject {
 }
 object EnvelopeAttachments {
   
-  @scala.inline
-  def apply(): EnvelopeAttachments = {
+  inline def apply(): EnvelopeAttachments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeAttachments]
   }
   
-  @scala.inline
-  implicit class EnvelopeAttachmentsMutableBuilder[Self <: EnvelopeAttachments] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeAttachments](x: Self) {
     
-    @scala.inline
-    def setAccessControl(value: String): Self = StObject.set(x, "accessControl", value.asInstanceOf[js.Any])
+    inline def setAccessControl(value: String): Self = StObject.set(x, "accessControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessControlUndefined: Self = StObject.set(x, "accessControl", js.undefined)
+    inline def setAccessControlUndefined: Self = StObject.set(x, "accessControl", js.undefined)
     
-    @scala.inline
-    def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
+    inline def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
     
-    @scala.inline
-    def setAttachmentType(value: String): Self = StObject.set(x, "attachmentType", value.asInstanceOf[js.Any])
+    inline def setAttachmentType(value: String): Self = StObject.set(x, "attachmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentTypeUndefined: Self = StObject.set(x, "attachmentType", js.undefined)
+    inline def setAttachmentTypeUndefined: Self = StObject.set(x, "attachmentType", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

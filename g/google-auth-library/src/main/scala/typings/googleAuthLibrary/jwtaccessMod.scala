@@ -31,7 +31,7 @@ object jwtaccessMod {
       eagerRefreshThresholdMillis: js.UndefOr[Double]
     ) = this()
     
-    var cache: js.Any = js.native
+    /* private */ var cache: js.Any = js.native
     
     var eagerRefreshThresholdMillis: Double = js.native
     
@@ -51,7 +51,7 @@ object jwtaccessMod {
     def fromStream(inputStream: Readable): js.Promise[Unit] = js.native
     def fromStream(inputStream: Readable, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     
-    var fromStreamAsync: js.Any = js.native
+    /* private */ var fromStreamAsync: js.Any = js.native
     
     /**
       * Get a non-expired access token, after refreshing if necessary.
@@ -86,8 +86,7 @@ object jwtaccessMod {
     @JSImport("google-auth-library/build/src/auth/jwtaccess", "JWTAccess.getExpirationTime")
     @js.native
     def getExpirationTime: js.Any = js.native
-    @scala.inline
-    def getExpirationTime_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
+    inline def getExpirationTime_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
   }
   
   type Claims = StringDictionary[String]

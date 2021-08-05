@@ -138,21 +138,17 @@ object Path {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createSegment(`type`: SegmentType, args: js.Any*): PathSegmentUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSegment")(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[PathSegmentUnit]
+  inline def createSegment(`type`: SegmentType, args: js.Any*): PathSegmentUnit = (^.asInstanceOf[js.Dynamic].applyDynamic("createSegment")(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[PathSegmentUnit]
   
   /* static member */
-  @scala.inline
-  def isDataSupported(pathData: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataSupported")(pathData.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDataSupported(pathData: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataSupported")(pathData.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def parse(pathData: String): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(pathData.asInstanceOf[js.Any]).asInstanceOf[Path]
+  inline def parse(pathData: String): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(pathData.asInstanceOf[js.Any]).asInstanceOf[Path]
   
   /* static member */
   @JSImport("jointjs", "g.Path.segmentTypes")
   @js.native
   def segmentTypes: SegmentTypes = js.native
-  @scala.inline
-  def segmentTypes_=(x: SegmentTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("segmentTypes")(x.asInstanceOf[js.Any])
+  inline def segmentTypes_=(x: SegmentTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("segmentTypes")(x.asInstanceOf[js.Any])
 }

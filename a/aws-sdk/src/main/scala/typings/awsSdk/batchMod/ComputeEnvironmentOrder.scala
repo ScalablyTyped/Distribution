@@ -18,19 +18,15 @@ trait ComputeEnvironmentOrder extends StObject {
 }
 object ComputeEnvironmentOrder {
   
-  @scala.inline
-  def apply(computeEnvironment: String, order: Integer): ComputeEnvironmentOrder = {
+  inline def apply(computeEnvironment: String, order: Integer): ComputeEnvironmentOrder = {
     val __obj = js.Dynamic.literal(computeEnvironment = computeEnvironment.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeEnvironmentOrder]
   }
   
-  @scala.inline
-  implicit class ComputeEnvironmentOrderMutableBuilder[Self <: ComputeEnvironmentOrder] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeEnvironmentOrder](x: Self) {
     
-    @scala.inline
-    def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: Integer): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Integer): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }
 }

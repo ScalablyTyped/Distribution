@@ -24,14 +24,12 @@ object popupMod {
       @JSImport("@ant-design/react-native/lib/date-picker/datepicker/Popup", "default.defaultProps.pickerValueChangeProp")
       @js.native
       def pickerValueChangeProp: String = js.native
-      @scala.inline
-      def pickerValueChangeProp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pickerValueChangeProp")(x.asInstanceOf[js.Any])
+      inline def pickerValueChangeProp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pickerValueChangeProp")(x.asInstanceOf[js.Any])
       
       @JSImport("@ant-design/react-native/lib/date-picker/datepicker/Popup", "default.defaultProps.pickerValueProp")
       @js.native
       def pickerValueProp: String = js.native
-      @scala.inline
-      def pickerValueProp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pickerValueProp")(x.asInstanceOf[js.Any])
+      inline def pickerValueProp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pickerValueProp")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -54,29 +52,22 @@ object popupMod {
   }
   object PopupDatePickerProps {
     
-    @scala.inline
-    def apply(datePicker: ReactElement): PopupDatePickerProps = {
+    inline def apply(datePicker: ReactElement): PopupDatePickerProps = {
       val __obj = js.Dynamic.literal(datePicker = datePicker.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopupDatePickerProps]
     }
     
-    @scala.inline
-    implicit class PopupDatePickerPropsMutableBuilder[Self <: PopupDatePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopupDatePickerProps](x: Self) {
       
-      @scala.inline
-      def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatePicker(value: ReactElement): Self = StObject.set(x, "datePicker", value.asInstanceOf[js.Any])
+      inline def setDatePicker(value: ReactElement): Self = StObject.set(x, "datePicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* date */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* date */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }
   }
 }

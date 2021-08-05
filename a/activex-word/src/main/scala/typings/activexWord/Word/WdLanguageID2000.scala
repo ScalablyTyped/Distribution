@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdLanguageID2000 extends StObject
 object WdLanguageID2000 {
   
-  @scala.inline
-  def wdChineseHongKong: `3076` = 3076.asInstanceOf[`3076`]
+  inline def wdChineseHongKong: `3076` = 3076.asInstanceOf[`3076`]
   
-  @scala.inline
-  def wdChineseMacao: `5124` = 5124.asInstanceOf[`5124`]
+  inline def wdChineseMacao: `5124` = 5124.asInstanceOf[`5124`]
   
-  @scala.inline
-  def wdEnglishTrinidad: `11273` = 11273.asInstanceOf[`11273`]
+  inline def wdEnglishTrinidad: `11273` = 11273.asInstanceOf[`11273`]
 }

@@ -10,6 +10,5 @@ object xhttpPi {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dispatch(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")().asInstanceOf[Double]
+  inline def dispatch(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")().asInstanceOf[Double]
 }

@@ -33,31 +33,23 @@ trait SchemaDestinationTableProperties extends StObject {
 }
 object SchemaDestinationTableProperties {
   
-  @scala.inline
-  def apply(): SchemaDestinationTableProperties = {
+  inline def apply(): SchemaDestinationTableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDestinationTableProperties]
   }
   
-  @scala.inline
-  implicit class SchemaDestinationTablePropertiesMutableBuilder[Self <: SchemaDestinationTableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDestinationTableProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+    inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

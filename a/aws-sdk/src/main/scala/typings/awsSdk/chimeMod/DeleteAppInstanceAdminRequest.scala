@@ -18,19 +18,15 @@ trait DeleteAppInstanceAdminRequest extends StObject {
 }
 object DeleteAppInstanceAdminRequest {
   
-  @scala.inline
-  def apply(AppInstanceAdminArn: ChimeArn, AppInstanceArn: ChimeArn): DeleteAppInstanceAdminRequest = {
+  inline def apply(AppInstanceAdminArn: ChimeArn, AppInstanceArn: ChimeArn): DeleteAppInstanceAdminRequest = {
     val __obj = js.Dynamic.literal(AppInstanceAdminArn = AppInstanceAdminArn.asInstanceOf[js.Any], AppInstanceArn = AppInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAppInstanceAdminRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAppInstanceAdminRequestMutableBuilder[Self <: DeleteAppInstanceAdminRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAppInstanceAdminRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceAdminArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceAdminArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceAdminArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceAdminArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
   }
 }

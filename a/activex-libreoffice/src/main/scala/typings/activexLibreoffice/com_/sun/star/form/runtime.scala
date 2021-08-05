@@ -66,20 +66,16 @@ object runtime {
   }
   object FeatureState {
     
-    @scala.inline
-    def apply(Enabled: Boolean, State: js.Any): FeatureState = {
+    inline def apply(Enabled: Boolean, State: js.Any): FeatureState = {
       val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeatureState]
     }
     
-    @scala.inline
-    implicit class FeatureStateMutableBuilder[Self <: FeatureState] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureState](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,23 +99,18 @@ object runtime {
   }
   object FilterEvent {
     
-    @scala.inline
-    def apply(DisjunctiveTerm: Double, FilterComponent: Double, PredicateExpression: String, Source: XInterface): FilterEvent = {
+    inline def apply(DisjunctiveTerm: Double, FilterComponent: Double, PredicateExpression: String, Source: XInterface): FilterEvent = {
       val __obj = js.Dynamic.literal(DisjunctiveTerm = DisjunctiveTerm.asInstanceOf[js.Any], FilterComponent = FilterComponent.asInstanceOf[js.Any], PredicateExpression = PredicateExpression.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilterEvent]
     }
     
-    @scala.inline
-    implicit class FilterEventMutableBuilder[Self <: FilterEvent] (val x: Self) extends AnyVal {
+    extension [Self <: FilterEvent](x: Self) {
       
-      @scala.inline
-      def setDisjunctiveTerm(value: Double): Self = StObject.set(x, "DisjunctiveTerm", value.asInstanceOf[js.Any])
+      inline def setDisjunctiveTerm(value: Double): Self = StObject.set(x, "DisjunctiveTerm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterComponent(value: Double): Self = StObject.set(x, "FilterComponent", value.asInstanceOf[js.Any])
+      inline def setFilterComponent(value: Double): Self = StObject.set(x, "FilterComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicateExpression(value: String): Self = StObject.set(x, "PredicateExpression", value.asInstanceOf[js.Any])
+      inline def setPredicateExpression(value: String): Self = StObject.set(x, "PredicateExpression", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,62 +143,43 @@ object runtime {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def AutoFilter: `15` = 15.asInstanceOf[`15`]
+      inline def AutoFilter: `15` = 15.asInstanceOf[`15`]
       
-      @scala.inline
-      def DeleteRecord: `10` = 10.asInstanceOf[`10`]
+      inline def DeleteRecord: `10` = 10.asInstanceOf[`10`]
       
-      @scala.inline
-      def InteractiveFilter: `16` = 16.asInstanceOf[`16`]
+      inline def InteractiveFilter: `16` = 16.asInstanceOf[`16`]
       
-      @scala.inline
-      def InteractiveSort: `14` = 14.asInstanceOf[`14`]
+      inline def InteractiveSort: `14` = 14.asInstanceOf[`14`]
       
-      @scala.inline
-      def MoveAbsolute: `1` = 1.asInstanceOf[`1`]
+      inline def MoveAbsolute: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def MoveToFirst: `3` = 3.asInstanceOf[`3`]
+      inline def MoveToFirst: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def MoveToInsertRow: `7` = 7.asInstanceOf[`7`]
+      inline def MoveToInsertRow: `7` = 7.asInstanceOf[`7`]
       
-      @scala.inline
-      def MoveToLast: `6` = 6.asInstanceOf[`6`]
+      inline def MoveToLast: `6` = 6.asInstanceOf[`6`]
       
-      @scala.inline
-      def MoveToNext: `5` = 5.asInstanceOf[`5`]
+      inline def MoveToNext: `5` = 5.asInstanceOf[`5`]
       
-      @scala.inline
-      def MoveToPrevious: `4` = 4.asInstanceOf[`4`]
+      inline def MoveToPrevious: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def RefreshCurrentControl: `19` = 19.asInstanceOf[`19`]
+      inline def RefreshCurrentControl: `19` = 19.asInstanceOf[`19`]
       
-      @scala.inline
-      def ReloadForm: `11` = 11.asInstanceOf[`11`]
+      inline def ReloadForm: `11` = 11.asInstanceOf[`11`]
       
-      @scala.inline
-      def RemoveFilterAndSort: `18` = 18.asInstanceOf[`18`]
+      inline def RemoveFilterAndSort: `18` = 18.asInstanceOf[`18`]
       
-      @scala.inline
-      def SaveRecordChanges: `8` = 8.asInstanceOf[`8`]
+      inline def SaveRecordChanges: `8` = 8.asInstanceOf[`8`]
       
-      @scala.inline
-      def SortAscending: `12` = 12.asInstanceOf[`12`]
+      inline def SortAscending: `12` = 12.asInstanceOf[`12`]
       
-      @scala.inline
-      def SortDescending: `13` = 13.asInstanceOf[`13`]
+      inline def SortDescending: `13` = 13.asInstanceOf[`13`]
       
-      @scala.inline
-      def ToggleApplyFilter: `17` = 17.asInstanceOf[`17`]
+      inline def ToggleApplyFilter: `17` = 17.asInstanceOf[`17`]
       
-      @scala.inline
-      def TotalRecords: `2` = 2.asInstanceOf[`2`]
+      inline def TotalRecords: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def UndoRecordChanges: `9` = 9.asInstanceOf[`9`]
+      inline def UndoRecordChanges: `9` = 9.asInstanceOf[`9`]
     }
   }
   
@@ -233,8 +205,7 @@ object runtime {
   }
   object FormOperations {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Controller: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController,
       Cursor: XRowSet,
       FeatureInvalidation: XFeatureInvalidation,
@@ -260,14 +231,11 @@ object runtime {
       __obj.asInstanceOf[FormOperations]
     }
     
-    @scala.inline
-    implicit class FormOperationsMutableBuilder[Self <: FormOperations] (val x: Self) extends AnyVal {
+    extension [Self <: FormOperations](x: Self) {
       
-      @scala.inline
-      def setCreateWithForm(value: XForm => Unit): Self = StObject.set(x, "createWithForm", js.Any.fromFunction1(value))
+      inline def setCreateWithForm(value: XForm => Unit): Self = StObject.set(x, "createWithForm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateWithFormController(value: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController => Unit): Self = StObject.set(x, "createWithFormController", js.Any.fromFunction1(value))
+      inline def setCreateWithFormController(value: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController => Unit): Self = StObject.set(x, "createWithFormController", js.Any.fromFunction1(value))
     }
   }
   
@@ -297,20 +265,16 @@ object runtime {
   }
   object XFeatureInvalidation {
     
-    @scala.inline
-    def apply(invalidateAllFeatures: () => Unit, invalidateFeatures: SeqEquiv[Double] => Unit): XFeatureInvalidation = {
+    inline def apply(invalidateAllFeatures: () => Unit, invalidateFeatures: SeqEquiv[Double] => Unit): XFeatureInvalidation = {
       val __obj = js.Dynamic.literal(invalidateAllFeatures = js.Any.fromFunction0(invalidateAllFeatures), invalidateFeatures = js.Any.fromFunction1(invalidateFeatures))
       __obj.asInstanceOf[XFeatureInvalidation]
     }
     
-    @scala.inline
-    implicit class XFeatureInvalidationMutableBuilder[Self <: XFeatureInvalidation] (val x: Self) extends AnyVal {
+    extension [Self <: XFeatureInvalidation](x: Self) {
       
-      @scala.inline
-      def setInvalidateAllFeatures(value: () => Unit): Self = StObject.set(x, "invalidateAllFeatures", js.Any.fromFunction0(value))
+      inline def setInvalidateAllFeatures(value: () => Unit): Self = StObject.set(x, "invalidateAllFeatures", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvalidateFeatures(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "invalidateFeatures", js.Any.fromFunction1(value))
+      inline def setInvalidateFeatures(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "invalidateFeatures", js.Any.fromFunction1(value))
     }
   }
   
@@ -419,8 +383,7 @@ object runtime {
   }
   object XFilterController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveTerm: Double,
       DisjunctiveTerms: Double,
       FilterComponents: Double,
@@ -437,41 +400,29 @@ object runtime {
       __obj.asInstanceOf[XFilterController]
     }
     
-    @scala.inline
-    implicit class XFilterControllerMutableBuilder[Self <: XFilterController] (val x: Self) extends AnyVal {
+    extension [Self <: XFilterController](x: Self) {
       
-      @scala.inline
-      def setActiveTerm(value: Double): Self = StObject.set(x, "ActiveTerm", value.asInstanceOf[js.Any])
+      inline def setActiveTerm(value: Double): Self = StObject.set(x, "ActiveTerm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddFilterControllerListener(value: XFilterControllerListener => Unit): Self = StObject.set(x, "addFilterControllerListener", js.Any.fromFunction1(value))
+      inline def setAddFilterControllerListener(value: XFilterControllerListener => Unit): Self = StObject.set(x, "addFilterControllerListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAppendEmptyDisjunctiveTerm(value: () => Unit): Self = StObject.set(x, "appendEmptyDisjunctiveTerm", js.Any.fromFunction0(value))
+      inline def setAppendEmptyDisjunctiveTerm(value: () => Unit): Self = StObject.set(x, "appendEmptyDisjunctiveTerm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisjunctiveTerms(value: Double): Self = StObject.set(x, "DisjunctiveTerms", value.asInstanceOf[js.Any])
+      inline def setDisjunctiveTerms(value: Double): Self = StObject.set(x, "DisjunctiveTerms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterComponents(value: Double): Self = StObject.set(x, "FilterComponents", value.asInstanceOf[js.Any])
+      inline def setFilterComponents(value: Double): Self = StObject.set(x, "FilterComponents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetFilterComponent(value: Double => XControl): Self = StObject.set(x, "getFilterComponent", js.Any.fromFunction1(value))
+      inline def setGetFilterComponent(value: Double => XControl): Self = StObject.set(x, "getFilterComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPredicateExpressions(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getPredicateExpressions", js.Any.fromFunction0(value))
+      inline def setGetPredicateExpressions(value: () => SafeArray[SafeArray[String]]): Self = StObject.set(x, "getPredicateExpressions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPredicateExpressions(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "PredicateExpressions", value.asInstanceOf[js.Any])
+      inline def setPredicateExpressions(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "PredicateExpressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveDisjunctiveTerm(value: Double => Unit): Self = StObject.set(x, "removeDisjunctiveTerm", js.Any.fromFunction1(value))
+      inline def setRemoveDisjunctiveTerm(value: Double => Unit): Self = StObject.set(x, "removeDisjunctiveTerm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveFilterControllerListener(value: XFilterControllerListener => Unit): Self = StObject.set(x, "removeFilterControllerListener", js.Any.fromFunction1(value))
+      inline def setRemoveFilterControllerListener(value: XFilterControllerListener => Unit): Self = StObject.set(x, "removeFilterControllerListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPredicateExpression(value: (Double, Double, String) => Unit): Self = StObject.set(x, "setPredicateExpression", js.Any.fromFunction3(value))
+      inline def setSetPredicateExpression(value: (Double, Double, String) => Unit): Self = StObject.set(x, "setPredicateExpression", js.Any.fromFunction3(value))
     }
   }
   
@@ -515,8 +466,7 @@ object runtime {
   }
   object XFilterControllerListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       disjunctiveTermAdded: FilterEvent => Unit,
       disjunctiveTermRemoved: FilterEvent => Unit,
@@ -529,17 +479,13 @@ object runtime {
       __obj.asInstanceOf[XFilterControllerListener]
     }
     
-    @scala.inline
-    implicit class XFilterControllerListenerMutableBuilder[Self <: XFilterControllerListener] (val x: Self) extends AnyVal {
+    extension [Self <: XFilterControllerListener](x: Self) {
       
-      @scala.inline
-      def setDisjunctiveTermAdded(value: FilterEvent => Unit): Self = StObject.set(x, "disjunctiveTermAdded", js.Any.fromFunction1(value))
+      inline def setDisjunctiveTermAdded(value: FilterEvent => Unit): Self = StObject.set(x, "disjunctiveTermAdded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisjunctiveTermRemoved(value: FilterEvent => Unit): Self = StObject.set(x, "disjunctiveTermRemoved", js.Any.fromFunction1(value))
+      inline def setDisjunctiveTermRemoved(value: FilterEvent => Unit): Self = StObject.set(x, "disjunctiveTermRemoved", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPredicateExpressionChanged(value: FilterEvent => Unit): Self = StObject.set(x, "predicateExpressionChanged", js.Any.fromFunction1(value))
+      inline def setPredicateExpressionChanged(value: FilterEvent => Unit): Self = StObject.set(x, "predicateExpressionChanged", js.Any.fromFunction1(value))
     }
   }
   
@@ -651,8 +597,7 @@ object runtime {
   }
   object XFormController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ActiveTerm: Double,
       Container: XControlContainer,
       Context: XFormControllerContext,
@@ -721,29 +666,21 @@ object runtime {
       __obj.asInstanceOf[typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController]
     }
     
-    @scala.inline
-    implicit class XFormControllerMutableBuilder[Self <: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController] (val x: Self) extends AnyVal {
+    extension [Self <: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController](x: Self) {
       
-      @scala.inline
-      def setAddActivateListener(value: XFormControllerListener => Unit): Self = StObject.set(x, "addActivateListener", js.Any.fromFunction1(value))
+      inline def setAddActivateListener(value: XFormControllerListener => Unit): Self = StObject.set(x, "addActivateListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddChildController(value: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController => Unit): Self = StObject.set(x, "addChildController", js.Any.fromFunction1(value))
+      inline def setAddChildController(value: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController => Unit): Self = StObject.set(x, "addChildController", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContext(value: XFormControllerContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: XFormControllerContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentControl(value: XControl): Self = StObject.set(x, "CurrentControl", value.asInstanceOf[js.Any])
+      inline def setCurrentControl(value: XControl): Self = StObject.set(x, "CurrentControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormOperations(value: XFormOperations): Self = StObject.set(x, "FormOperations", value.asInstanceOf[js.Any])
+      inline def setFormOperations(value: XFormOperations): Self = StObject.set(x, "FormOperations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractionHandler(value: XInteractionHandler): Self = StObject.set(x, "InteractionHandler", value.asInstanceOf[js.Any])
+      inline def setInteractionHandler(value: XInteractionHandler): Self = StObject.set(x, "InteractionHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveActivateListener(value: XFormControllerListener => Unit): Self = StObject.set(x, "removeActivateListener", js.Any.fromFunction1(value))
+      inline def setRemoveActivateListener(value: XFormControllerListener => Unit): Self = StObject.set(x, "removeActivateListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -761,17 +698,14 @@ object runtime {
   }
   object XFormControllerContext {
     
-    @scala.inline
-    def apply(makeVisible: XControl => Unit): XFormControllerContext = {
+    inline def apply(makeVisible: XControl => Unit): XFormControllerContext = {
       val __obj = js.Dynamic.literal(makeVisible = js.Any.fromFunction1(makeVisible))
       __obj.asInstanceOf[XFormControllerContext]
     }
     
-    @scala.inline
-    implicit class XFormControllerContextMutableBuilder[Self <: XFormControllerContext] (val x: Self) extends AnyVal {
+    extension [Self <: XFormControllerContext](x: Self) {
       
-      @scala.inline
-      def setMakeVisible(value: XControl => Unit): Self = StObject.set(x, "makeVisible", js.Any.fromFunction1(value))
+      inline def setMakeVisible(value: XControl => Unit): Self = StObject.set(x, "makeVisible", js.Any.fromFunction1(value))
     }
   }
   
@@ -901,8 +835,7 @@ object runtime {
   }
   object XFormOperations {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Controller: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController,
       Cursor: XRowSet,
       FeatureInvalidation: XFeatureInvalidation,
@@ -926,44 +859,31 @@ object runtime {
       __obj.asInstanceOf[XFormOperations]
     }
     
-    @scala.inline
-    implicit class XFormOperationsMutableBuilder[Self <: XFormOperations] (val x: Self) extends AnyVal {
+    extension [Self <: XFormOperations](x: Self) {
       
-      @scala.inline
-      def setCommitCurrentControl(value: () => Boolean): Self = StObject.set(x, "commitCurrentControl", js.Any.fromFunction0(value))
+      inline def setCommitCurrentControl(value: () => Boolean): Self = StObject.set(x, "commitCurrentControl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCommitCurrentRecord(value: js.Array[Boolean] => Boolean): Self = StObject.set(x, "commitCurrentRecord", js.Any.fromFunction1(value))
+      inline def setCommitCurrentRecord(value: js.Array[Boolean] => Boolean): Self = StObject.set(x, "commitCurrentRecord", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setController(value: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
+      inline def setController(value: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursor(value: XRowSet): Self = StObject.set(x, "Cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: XRowSet): Self = StObject.set(x, "Cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecute(value: Double => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: Double => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecuteWithArguments(value: (Double, SeqEquiv[NamedValue]) => Unit): Self = StObject.set(x, "executeWithArguments", js.Any.fromFunction2(value))
+      inline def setExecuteWithArguments(value: (Double, SeqEquiv[NamedValue]) => Unit): Self = StObject.set(x, "executeWithArguments", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFeatureInvalidation(value: XFeatureInvalidation): Self = StObject.set(x, "FeatureInvalidation", value.asInstanceOf[js.Any])
+      inline def setFeatureInvalidation(value: XFeatureInvalidation): Self = StObject.set(x, "FeatureInvalidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetState(value: Double => FeatureState): Self = StObject.set(x, "getState", js.Any.fromFunction1(value))
+      inline def setGetState(value: Double => FeatureState): Self = StObject.set(x, "getState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEnabled(value: Double => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
+      inline def setIsEnabled(value: Double => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsInsertionRow(value: () => Boolean): Self = StObject.set(x, "isInsertionRow", js.Any.fromFunction0(value))
+      inline def setIsInsertionRow(value: () => Boolean): Self = StObject.set(x, "isInsertionRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsModifiedRow(value: () => Boolean): Self = StObject.set(x, "isModifiedRow", js.Any.fromFunction0(value))
+      inline def setIsModifiedRow(value: () => Boolean): Self = StObject.set(x, "isModifiedRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateCursor(value: XResultSetUpdate): Self = StObject.set(x, "UpdateCursor", value.asInstanceOf[js.Any])
+      inline def setUpdateCursor(value: XResultSetUpdate): Self = StObject.set(x, "UpdateCursor", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,8 +16,7 @@ trait StoryHashtag
 }
 object StoryHashtag {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: Double,
     is_sticker: Boolean,
     rotation: Double,
@@ -31,16 +30,12 @@ object StoryHashtag {
     __obj.asInstanceOf[StoryHashtag]
   }
   
-  @scala.inline
-  implicit class StoryHashtagMutableBuilder[Self <: StoryHashtag] (val x: Self) extends AnyVal {
+  extension [Self <: StoryHashtag](x: Self) {
     
-    @scala.inline
-    def setIs_sticker(value: Boolean): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
+    inline def setIs_sticker(value: Boolean): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag_name(value: String): Self = StObject.set(x, "tag_name", value.asInstanceOf[js.Any])
+    inline def setTag_name(value: String): Self = StObject.set(x, "tag_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_custom_title(value: Boolean): Self = StObject.set(x, "use_custom_title", value.asInstanceOf[js.Any])
+    inline def setUse_custom_title(value: Boolean): Self = StObject.set(x, "use_custom_title", value.asInstanceOf[js.Any])
   }
 }

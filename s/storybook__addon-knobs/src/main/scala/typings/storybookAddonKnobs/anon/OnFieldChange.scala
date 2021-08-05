@@ -15,25 +15,19 @@ trait OnFieldChange extends StObject {
 }
 object OnFieldChange {
   
-  @scala.inline
-  def apply(knobs: js.Array[KnobStoreKnob], onFieldChange: () => Unit, onFieldClick: () => Unit): OnFieldChange = {
+  inline def apply(knobs: js.Array[KnobStoreKnob], onFieldChange: () => Unit, onFieldClick: () => Unit): OnFieldChange = {
     val __obj = js.Dynamic.literal(knobs = knobs.asInstanceOf[js.Any], onFieldChange = js.Any.fromFunction0(onFieldChange), onFieldClick = js.Any.fromFunction0(onFieldClick))
     __obj.asInstanceOf[OnFieldChange]
   }
   
-  @scala.inline
-  implicit class OnFieldChangeMutableBuilder[Self <: OnFieldChange] (val x: Self) extends AnyVal {
+  extension [Self <: OnFieldChange](x: Self) {
     
-    @scala.inline
-    def setKnobs(value: js.Array[KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
+    inline def setKnobs(value: js.Array[KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnobsVarargs(value: KnobStoreKnob*): Self = StObject.set(x, "knobs", js.Array(value :_*))
+    inline def setKnobsVarargs(value: KnobStoreKnob*): Self = StObject.set(x, "knobs", js.Array(value :_*))
     
-    @scala.inline
-    def setOnFieldChange(value: () => Unit): Self = StObject.set(x, "onFieldChange", js.Any.fromFunction0(value))
+    inline def setOnFieldChange(value: () => Unit): Self = StObject.set(x, "onFieldChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFieldClick(value: () => Unit): Self = StObject.set(x, "onFieldClick", js.Any.fromFunction0(value))
+    inline def setOnFieldClick(value: () => Unit): Self = StObject.set(x, "onFieldClick", js.Any.fromFunction0(value))
   }
 }

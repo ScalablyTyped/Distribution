@@ -23,31 +23,23 @@ trait LogConfiguration extends StObject {
 }
 object LogConfiguration {
   
-  @scala.inline
-  def apply(logDriver: LogDriver): LogConfiguration = {
+  inline def apply(logDriver: LogDriver): LogConfiguration = {
     val __obj = js.Dynamic.literal(logDriver = logDriver.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogConfiguration]
   }
   
-  @scala.inline
-  implicit class LogConfigurationMutableBuilder[Self <: LogConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LogConfiguration](x: Self) {
     
-    @scala.inline
-    def setLogDriver(value: LogDriver): Self = StObject.set(x, "logDriver", value.asInstanceOf[js.Any])
+    inline def setLogDriver(value: LogDriver): Self = StObject.set(x, "logDriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: LogConfigurationOptionsMap): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: LogConfigurationOptionsMap): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSecretOptions(value: SecretList): Self = StObject.set(x, "secretOptions", value.asInstanceOf[js.Any])
+    inline def setSecretOptions(value: SecretList): Self = StObject.set(x, "secretOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretOptionsUndefined: Self = StObject.set(x, "secretOptions", js.undefined)
+    inline def setSecretOptionsUndefined: Self = StObject.set(x, "secretOptions", js.undefined)
     
-    @scala.inline
-    def setSecretOptionsVarargs(value: Secret*): Self = StObject.set(x, "secretOptions", js.Array(value :_*))
+    inline def setSecretOptionsVarargs(value: Secret*): Self = StObject.set(x, "secretOptions", js.Array(value :_*))
   }
 }

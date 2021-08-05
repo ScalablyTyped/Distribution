@@ -18,31 +18,23 @@ trait NormalizationOperation extends StObject {
 }
 object NormalizationOperation {
   
-  @scala.inline
-  def apply(): NormalizationOperation = {
+  inline def apply(): NormalizationOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NormalizationOperation]
   }
   
-  @scala.inline
-  implicit class NormalizationOperationMutableBuilder[Self <: NormalizationOperation] (val x: Self) extends AnyVal {
+  extension [Self <: NormalizationOperation](x: Self) {
     
-    @scala.inline
-    def setDestination_field(value: String): Self = StObject.set(x, "destination_field", value.asInstanceOf[js.Any])
+    inline def setDestination_field(value: String): Self = StObject.set(x, "destination_field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestination_fieldUndefined: Self = StObject.set(x, "destination_field", js.undefined)
+    inline def setDestination_fieldUndefined: Self = StObject.set(x, "destination_field", js.undefined)
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setSource_field(value: String): Self = StObject.set(x, "source_field", value.asInstanceOf[js.Any])
+    inline def setSource_field(value: String): Self = StObject.set(x, "source_field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_fieldUndefined: Self = StObject.set(x, "source_field", js.undefined)
+    inline def setSource_fieldUndefined: Self = StObject.set(x, "source_field", js.undefined)
   }
 }

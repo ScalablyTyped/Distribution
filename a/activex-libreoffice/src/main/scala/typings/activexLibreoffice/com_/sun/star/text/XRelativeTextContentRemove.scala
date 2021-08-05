@@ -30,8 +30,7 @@ trait XRelativeTextContentRemove
 }
 object XRelativeTextContentRemove {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -42,13 +41,10 @@ object XRelativeTextContentRemove {
     __obj.asInstanceOf[XRelativeTextContentRemove]
   }
   
-  @scala.inline
-  implicit class XRelativeTextContentRemoveMutableBuilder[Self <: XRelativeTextContentRemove] (val x: Self) extends AnyVal {
+  extension [Self <: XRelativeTextContentRemove](x: Self) {
     
-    @scala.inline
-    def setRemoveTextContentAfter(value: XTextContent => Unit): Self = StObject.set(x, "removeTextContentAfter", js.Any.fromFunction1(value))
+    inline def setRemoveTextContentAfter(value: XTextContent => Unit): Self = StObject.set(x, "removeTextContentAfter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveTextContentBefore(value: XTextContent => Unit): Self = StObject.set(x, "removeTextContentBefore", js.Any.fromFunction1(value))
+    inline def setRemoveTextContentBefore(value: XTextContent => Unit): Self = StObject.set(x, "removeTextContentBefore", js.Any.fromFunction1(value))
   }
 }

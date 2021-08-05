@@ -13,19 +13,15 @@ trait GetSavedFileListData extends StObject {
 }
 object GetSavedFileListData {
   
-  @scala.inline
-  def apply(fileList: js.Array[File]): GetSavedFileListData = {
+  inline def apply(fileList: js.Array[File]): GetSavedFileListData = {
     val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavedFileListData]
   }
   
-  @scala.inline
-  implicit class GetSavedFileListDataMutableBuilder[Self <: GetSavedFileListData] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavedFileListData](x: Self) {
     
-    @scala.inline
-    def setFileList(value: js.Array[File]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: js.Array[File]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileListVarargs(value: File*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: File*): Self = StObject.set(x, "fileList", js.Array(value :_*))
   }
 }

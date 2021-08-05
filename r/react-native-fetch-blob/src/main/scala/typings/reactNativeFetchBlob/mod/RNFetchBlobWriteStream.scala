@@ -18,8 +18,7 @@ trait RNFetchBlobWriteStream extends StObject {
 }
 object RNFetchBlobWriteStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     append: Boolean,
     close: () => Unit,
     encoding: String,
@@ -30,22 +29,16 @@ object RNFetchBlobWriteStream {
     __obj.asInstanceOf[RNFetchBlobWriteStream]
   }
   
-  @scala.inline
-  implicit class RNFetchBlobWriteStreamMutableBuilder[Self <: RNFetchBlobWriteStream] (val x: Self) extends AnyVal {
+  extension [Self <: RNFetchBlobWriteStream](x: Self) {
     
-    @scala.inline
-    def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrite(value: String => js.Promise[Unit]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: String => js.Promise[Unit]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

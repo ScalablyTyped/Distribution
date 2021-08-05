@@ -18,46 +18,33 @@ trait MediaSettings extends StObject {
 }
 object MediaSettings {
   
-  @scala.inline
-  def apply(): MediaSettings = {
+  inline def apply(): MediaSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaSettings]
   }
   
-  @scala.inline
-  implicit class MediaSettingsMutableBuilder[Self <: MediaSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MediaSettings](x: Self) {
     
-    @scala.inline
-    def setAccessibility(value: js.Any): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: js.Any): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
-    @scala.inline
-    def setAudioChannelConfiguration(value: js.Array[js.Any]): Self = StObject.set(x, "audioChannelConfiguration", value.asInstanceOf[js.Any])
+    inline def setAudioChannelConfiguration(value: js.Array[js.Any]): Self = StObject.set(x, "audioChannelConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioChannelConfigurationUndefined: Self = StObject.set(x, "audioChannelConfiguration", js.undefined)
+    inline def setAudioChannelConfigurationUndefined: Self = StObject.set(x, "audioChannelConfiguration", js.undefined)
     
-    @scala.inline
-    def setAudioChannelConfigurationVarargs(value: js.Any*): Self = StObject.set(x, "audioChannelConfiguration", js.Array(value :_*))
+    inline def setAudioChannelConfigurationVarargs(value: js.Any*): Self = StObject.set(x, "audioChannelConfiguration", js.Array(value :_*))
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setViewpoint(value: js.Any): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
+    inline def setViewpoint(value: js.Any): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
+    inline def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetSystemInstanceRequest extends StObject {
 }
 object GetSystemInstanceRequest {
   
-  @scala.inline
-  def apply(id: Urn): GetSystemInstanceRequest = {
+  inline def apply(id: Urn): GetSystemInstanceRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSystemInstanceRequest]
   }
   
-  @scala.inline
-  implicit class GetSystemInstanceRequestMutableBuilder[Self <: GetSystemInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSystemInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

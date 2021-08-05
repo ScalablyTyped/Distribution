@@ -14,17 +14,14 @@ object AjaxFileJQuery {
   }
   object IAjaxFileJQueryExtension {
     
-    @scala.inline
-    def apply(ajaxWithFile: IJQueryOption => JQueryDeferred[js.Any]): IAjaxFileJQueryExtension = {
+    inline def apply(ajaxWithFile: IJQueryOption => JQueryDeferred[js.Any]): IAjaxFileJQueryExtension = {
       val __obj = js.Dynamic.literal(ajaxWithFile = js.Any.fromFunction1(ajaxWithFile))
       __obj.asInstanceOf[IAjaxFileJQueryExtension]
     }
     
-    @scala.inline
-    implicit class IAjaxFileJQueryExtensionMutableBuilder[Self <: IAjaxFileJQueryExtension] (val x: Self) extends AnyVal {
+    extension [Self <: IAjaxFileJQueryExtension](x: Self) {
       
-      @scala.inline
-      def setAjaxWithFile(value: IJQueryOption => JQueryDeferred[js.Any]): Self = StObject.set(x, "ajaxWithFile", js.Any.fromFunction1(value))
+      inline def setAjaxWithFile(value: IJQueryOption => JQueryDeferred[js.Any]): Self = StObject.set(x, "ajaxWithFile", js.Any.fromFunction1(value))
     }
   }
   
@@ -56,77 +53,54 @@ object AjaxFileJQuery {
   }
   object IJQueryOption {
     
-    @scala.inline
-    def apply(): IJQueryOption = {
+    inline def apply(): IJQueryOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IJQueryOption]
     }
     
-    @scala.inline
-    implicit class IJQueryOptionMutableBuilder[Self <: IJQueryOption] (val x: Self) extends AnyVal {
+    extension [Self <: IJQueryOption](x: Self) {
       
-      @scala.inline
-      def setComplete(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String) => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
+      inline def setComplete(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String) => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+      inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+      inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setError(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      inline def setError(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFiles(value: js.Array[IFileData]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[IFileData]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: IFileData*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: IFileData*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: (/* data */ js.Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      inline def setSuccess(value: (/* data */ js.Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

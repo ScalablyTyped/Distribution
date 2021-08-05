@@ -19,8 +19,7 @@ trait XContextMenuInterceptor
 }
 object XContextMenuInterceptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     notifyContextMenuExecute: ContextMenuExecuteEvent => ContextMenuInterceptorAction,
     queryInterface: `type` => js.Any,
@@ -30,10 +29,8 @@ object XContextMenuInterceptor {
     __obj.asInstanceOf[XContextMenuInterceptor]
   }
   
-  @scala.inline
-  implicit class XContextMenuInterceptorMutableBuilder[Self <: XContextMenuInterceptor] (val x: Self) extends AnyVal {
+  extension [Self <: XContextMenuInterceptor](x: Self) {
     
-    @scala.inline
-    def setNotifyContextMenuExecute(value: ContextMenuExecuteEvent => ContextMenuInterceptorAction): Self = StObject.set(x, "notifyContextMenuExecute", js.Any.fromFunction1(value))
+    inline def setNotifyContextMenuExecute(value: ContextMenuExecuteEvent => ContextMenuInterceptorAction): Self = StObject.set(x, "notifyContextMenuExecute", js.Any.fromFunction1(value))
   }
 }

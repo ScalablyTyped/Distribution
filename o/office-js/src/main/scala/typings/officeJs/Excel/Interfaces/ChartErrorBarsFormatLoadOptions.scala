@@ -28,25 +28,19 @@ trait ChartErrorBarsFormatLoadOptions extends StObject {
 }
 object ChartErrorBarsFormatLoadOptions {
   
-  @scala.inline
-  def apply(): ChartErrorBarsFormatLoadOptions = {
+  inline def apply(): ChartErrorBarsFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartErrorBarsFormatLoadOptions]
   }
   
-  @scala.inline
-  implicit class ChartErrorBarsFormatLoadOptionsMutableBuilder[Self <: ChartErrorBarsFormatLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartErrorBarsFormatLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setLine(value: ChartLineFormatLoadOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: ChartLineFormatLoadOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

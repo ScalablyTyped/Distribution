@@ -8,6 +8,5 @@ object firebaseAuthInteropTypesStrings {
   
   @js.native
   sealed trait `auth-internal` extends StObject
-  @scala.inline
-  def `auth-internal`: `auth-internal` = "auth-internal".asInstanceOf[`auth-internal`]
+  inline def `auth-internal`: `auth-internal` = "auth-internal".asInstanceOf[`auth-internal`]
 }

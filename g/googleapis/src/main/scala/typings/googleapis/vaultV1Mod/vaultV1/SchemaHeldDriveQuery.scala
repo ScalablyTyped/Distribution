@@ -16,19 +16,15 @@ trait SchemaHeldDriveQuery extends StObject {
 }
 object SchemaHeldDriveQuery {
   
-  @scala.inline
-  def apply(): SchemaHeldDriveQuery = {
+  inline def apply(): SchemaHeldDriveQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHeldDriveQuery]
   }
   
-  @scala.inline
-  implicit class SchemaHeldDriveQueryMutableBuilder[Self <: SchemaHeldDriveQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHeldDriveQuery](x: Self) {
     
-    @scala.inline
-    def setIncludeTeamDriveFiles(value: Boolean): Self = StObject.set(x, "includeTeamDriveFiles", value.asInstanceOf[js.Any])
+    inline def setIncludeTeamDriveFiles(value: Boolean): Self = StObject.set(x, "includeTeamDriveFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTeamDriveFilesUndefined: Self = StObject.set(x, "includeTeamDriveFiles", js.undefined)
+    inline def setIncludeTeamDriveFilesUndefined: Self = StObject.set(x, "includeTeamDriveFiles", js.undefined)
   }
 }

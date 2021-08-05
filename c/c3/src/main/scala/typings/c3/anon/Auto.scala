@@ -13,19 +13,15 @@ trait Auto extends StObject {
 }
 object Auto {
   
-  @scala.inline
-  def apply(): Auto = {
+  inline def apply(): Auto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Auto]
   }
   
-  @scala.inline
-  implicit class AutoMutableBuilder[Self <: Auto] (val x: Self) extends AnyVal {
+  extension [Self <: Auto](x: Self) {
     
-    @scala.inline
-    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait MessageActionItem extends StObject {
 }
 object MessageActionItem {
   
-  @scala.inline
-  def apply(title: String): MessageActionItem = {
+  inline def apply(title: String): MessageActionItem = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageActionItem]
   }
   
-  @scala.inline
-  implicit class MessageActionItemMutableBuilder[Self <: MessageActionItem] (val x: Self) extends AnyVal {
+  extension [Self <: MessageActionItem](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

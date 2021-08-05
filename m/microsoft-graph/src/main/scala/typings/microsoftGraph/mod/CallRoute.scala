@@ -17,31 +17,23 @@ trait CallRoute extends StObject {
 }
 object CallRoute {
   
-  @scala.inline
-  def apply(): CallRoute = {
+  inline def apply(): CallRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallRoute]
   }
   
-  @scala.inline
-  implicit class CallRouteMutableBuilder[Self <: CallRoute] (val x: Self) extends AnyVal {
+  extension [Self <: CallRoute](x: Self) {
     
-    @scala.inline
-    def setFinal(value: IdentitySet): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
+    inline def setFinal(value: IdentitySet): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
+    inline def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
     
-    @scala.inline
-    def setOriginal(value: IdentitySet): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: IdentitySet): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
+    inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
     
-    @scala.inline
-    def setRoutingType(value: RoutingType): Self = StObject.set(x, "routingType", value.asInstanceOf[js.Any])
+    inline def setRoutingType(value: RoutingType): Self = StObject.set(x, "routingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingTypeUndefined: Self = StObject.set(x, "routingType", js.undefined)
+    inline def setRoutingTypeUndefined: Self = StObject.set(x, "routingType", js.undefined)
   }
 }

@@ -29,67 +29,47 @@ trait StepperOptions extends StObject {
 }
 object StepperOptions {
   
-  @scala.inline
-  def apply(steps: js.Array[StepOptions | String]): StepperOptions = {
+  inline def apply(steps: js.Array[StepOptions | String]): StepperOptions = {
     val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepperOptions]
   }
   
-  @scala.inline
-  implicit class StepperOptionsMutableBuilder[Self <: StepperOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StepperOptions](x: Self) {
     
-    @scala.inline
-    def setActivate(value: /* e */ StepperActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+    inline def setActivate(value: /* e */ StepperActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+    inline def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+    inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
-    @scala.inline
-    def setLabel(value: Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLinear(value: Boolean): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
+    inline def setLinear(value: Boolean): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearUndefined: Self = StObject.set(x, "linear", js.undefined)
+    inline def setLinearUndefined: Self = StObject.set(x, "linear", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String | horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String | horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setSelect(value: /* e */ StepperSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: /* e */ StepperSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectOnFocus(value: Boolean): Self = StObject.set(x, "selectOnFocus", value.asInstanceOf[js.Any])
+    inline def setSelectOnFocus(value: Boolean): Self = StObject.set(x, "selectOnFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectOnFocusUndefined: Self = StObject.set(x, "selectOnFocus", js.undefined)
+    inline def setSelectOnFocusUndefined: Self = StObject.set(x, "selectOnFocus", js.undefined)
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSteps(value: js.Array[StepOptions | String]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[StepOptions | String]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: (StepOptions | String)*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: (StepOptions | String)*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

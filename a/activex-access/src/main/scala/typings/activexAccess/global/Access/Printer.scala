@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Printer")
 @js.native
-class Printer protected ()
+/* private */ class Printer ()
   extends StObject
      with typings.activexAccess.Access.Printer {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.Printer_typekey")
   var AccessDotPrinter_typekey: typings.activexAccess.Access.Printer = js.native
   

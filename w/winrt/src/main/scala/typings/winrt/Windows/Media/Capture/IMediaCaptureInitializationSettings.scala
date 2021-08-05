@@ -16,8 +16,7 @@ trait IMediaCaptureInitializationSettings extends StObject {
 }
 object IMediaCaptureInitializationSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audioDeviceId: String,
     photoCaptureSource: PhotoCaptureSource,
     streamingCaptureMode: StreamingCaptureMode,
@@ -27,19 +26,14 @@ object IMediaCaptureInitializationSettings {
     __obj.asInstanceOf[IMediaCaptureInitializationSettings]
   }
   
-  @scala.inline
-  implicit class IMediaCaptureInitializationSettingsMutableBuilder[Self <: IMediaCaptureInitializationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaCaptureInitializationSettings](x: Self) {
     
-    @scala.inline
-    def setAudioDeviceId(value: String): Self = StObject.set(x, "audioDeviceId", value.asInstanceOf[js.Any])
+    inline def setAudioDeviceId(value: String): Self = StObject.set(x, "audioDeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoCaptureSource(value: PhotoCaptureSource): Self = StObject.set(x, "photoCaptureSource", value.asInstanceOf[js.Any])
+    inline def setPhotoCaptureSource(value: PhotoCaptureSource): Self = StObject.set(x, "photoCaptureSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingCaptureMode(value: StreamingCaptureMode): Self = StObject.set(x, "streamingCaptureMode", value.asInstanceOf[js.Any])
+    inline def setStreamingCaptureMode(value: StreamingCaptureMode): Self = StObject.set(x, "streamingCaptureMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDeviceId(value: String): Self = StObject.set(x, "videoDeviceId", value.asInstanceOf[js.Any])
+    inline def setVideoDeviceId(value: String): Self = StObject.set(x, "videoDeviceId", value.asInstanceOf[js.Any])
   }
 }

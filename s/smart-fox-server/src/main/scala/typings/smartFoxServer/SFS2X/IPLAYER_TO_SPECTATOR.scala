@@ -14,19 +14,15 @@ trait IPLAYER_TO_SPECTATOR extends StObject {
 }
 object IPLAYER_TO_SPECTATOR {
   
-  @scala.inline
-  def apply(room: SFSRoom, user: SFSUser): IPLAYER_TO_SPECTATOR = {
+  inline def apply(room: SFSRoom, user: SFSUser): IPLAYER_TO_SPECTATOR = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPLAYER_TO_SPECTATOR]
   }
   
-  @scala.inline
-  implicit class IPLAYER_TO_SPECTATORMutableBuilder[Self <: IPLAYER_TO_SPECTATOR] (val x: Self) extends AnyVal {
+  extension [Self <: IPLAYER_TO_SPECTATOR](x: Self) {
     
-    @scala.inline
-    def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: SFSUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: SFSUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -8,16 +8,13 @@ object jqueryUiDatetimepickerStrings {
   
   @js.native
   sealed trait formatTime extends StObject
-  @scala.inline
-  def formatTime: formatTime = "formatTime".asInstanceOf[formatTime]
+  inline def formatTime: formatTime = "formatTime".asInstanceOf[formatTime]
   
   @js.native
   sealed trait parseDateTime extends StObject
-  @scala.inline
-  def parseDateTime: parseDateTime = "parseDateTime".asInstanceOf[parseDateTime]
+  inline def parseDateTime: parseDateTime = "parseDateTime".asInstanceOf[parseDateTime]
   
   @js.native
   sealed trait parseTime extends StObject
-  @scala.inline
-  def parseTime: parseTime = "parseTime".asInstanceOf[parseTime]
+  inline def parseTime: parseTime = "parseTime".asInstanceOf[parseTime]
 }

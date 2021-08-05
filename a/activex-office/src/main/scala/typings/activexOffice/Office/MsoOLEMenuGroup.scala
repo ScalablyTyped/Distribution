@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoOLEMenuGroup extends StObject
 object MsoOLEMenuGroup {
   
-  @scala.inline
-  def msoOLEMenuGroupContainer: `2` = 2.asInstanceOf[`2`]
+  inline def msoOLEMenuGroupContainer: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoOLEMenuGroupEdit: `1` = 1.asInstanceOf[`1`]
+  inline def msoOLEMenuGroupEdit: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoOLEMenuGroupFile: `0` = 0.asInstanceOf[`0`]
+  inline def msoOLEMenuGroupFile: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoOLEMenuGroupHelp: `5` = 5.asInstanceOf[`5`]
+  inline def msoOLEMenuGroupHelp: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoOLEMenuGroupNone: `-1` = -1.asInstanceOf[`-1`]
+  inline def msoOLEMenuGroupNone: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def msoOLEMenuGroupObject: `3` = 3.asInstanceOf[`3`]
+  inline def msoOLEMenuGroupObject: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoOLEMenuGroupWindow: `4` = 4.asInstanceOf[`4`]
+  inline def msoOLEMenuGroupWindow: `4` = 4.asInstanceOf[`4`]
 }

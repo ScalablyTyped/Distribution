@@ -24,8 +24,7 @@ trait XUIFunctionListener
 }
 object XUIFunctionListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     functionExecute: (String, String) => Unit,
@@ -36,10 +35,8 @@ object XUIFunctionListener {
     __obj.asInstanceOf[XUIFunctionListener]
   }
   
-  @scala.inline
-  implicit class XUIFunctionListenerMutableBuilder[Self <: XUIFunctionListener] (val x: Self) extends AnyVal {
+  extension [Self <: XUIFunctionListener](x: Self) {
     
-    @scala.inline
-    def setFunctionExecute(value: (String, String) => Unit): Self = StObject.set(x, "functionExecute", js.Any.fromFunction2(value))
+    inline def setFunctionExecute(value: (String, String) => Unit): Self = StObject.set(x, "functionExecute", js.Any.fromFunction2(value))
   }
 }

@@ -10,8 +10,7 @@ object bisectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     func: js.Function1[/* x */ js.Any, Double],
     start: Double,
     end: Double,

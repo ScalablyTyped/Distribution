@@ -28,34 +28,25 @@ trait UpdateFirewallPolicyChangeProtectionRequest extends StObject {
 }
 object UpdateFirewallPolicyChangeProtectionRequest {
   
-  @scala.inline
-  def apply(FirewallPolicyChangeProtection: Boolean): UpdateFirewallPolicyChangeProtectionRequest = {
+  inline def apply(FirewallPolicyChangeProtection: Boolean): UpdateFirewallPolicyChangeProtectionRequest = {
     val __obj = js.Dynamic.literal(FirewallPolicyChangeProtection = FirewallPolicyChangeProtection.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFirewallPolicyChangeProtectionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFirewallPolicyChangeProtectionRequestMutableBuilder[Self <: UpdateFirewallPolicyChangeProtectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFirewallPolicyChangeProtectionRequest](x: Self) {
     
-    @scala.inline
-    def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
+    inline def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
+    inline def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
     
-    @scala.inline
-    def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
+    inline def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
+    inline def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
     
-    @scala.inline
-    def setFirewallPolicyChangeProtection(value: Boolean): Self = StObject.set(x, "FirewallPolicyChangeProtection", value.asInstanceOf[js.Any])
+    inline def setFirewallPolicyChangeProtection(value: Boolean): Self = StObject.set(x, "FirewallPolicyChangeProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
+    inline def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
+    inline def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
   }
 }

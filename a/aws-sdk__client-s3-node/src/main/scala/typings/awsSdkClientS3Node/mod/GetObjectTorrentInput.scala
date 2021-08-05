@@ -9,8 +9,7 @@ trait GetObjectTorrentInput
      with typings.awsSdkClientS3Node.typesGetObjectTorrentInputMod.GetObjectTorrentInput
 object GetObjectTorrentInput {
   
-  @scala.inline
-  def apply(Bucket: String, Key: String): GetObjectTorrentInput = {
+  inline def apply(Bucket: String, Key: String): GetObjectTorrentInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectTorrentInput]
   }

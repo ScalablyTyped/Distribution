@@ -11,22 +11,17 @@ trait ListValue extends StObject {
 }
 object ListValue {
   
-  @scala.inline
-  def apply(): ListValue = {
+  inline def apply(): ListValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListValue]
   }
   
-  @scala.inline
-  implicit class ListValueMutableBuilder[Self <: ListValue] (val x: Self) extends AnyVal {
+  extension [Self <: ListValue](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

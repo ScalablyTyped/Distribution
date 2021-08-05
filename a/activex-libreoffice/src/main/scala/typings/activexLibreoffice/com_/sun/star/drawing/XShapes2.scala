@@ -26,19 +26,15 @@ trait XShapes2 extends StObject {
 }
 object XShapes2 {
   
-  @scala.inline
-  def apply(addBottom: XShape => Unit, addTop: XShape => Unit): XShapes2 = {
+  inline def apply(addBottom: XShape => Unit, addTop: XShape => Unit): XShapes2 = {
     val __obj = js.Dynamic.literal(addBottom = js.Any.fromFunction1(addBottom), addTop = js.Any.fromFunction1(addTop))
     __obj.asInstanceOf[XShapes2]
   }
   
-  @scala.inline
-  implicit class XShapes2MutableBuilder[Self <: XShapes2] (val x: Self) extends AnyVal {
+  extension [Self <: XShapes2](x: Self) {
     
-    @scala.inline
-    def setAddBottom(value: XShape => Unit): Self = StObject.set(x, "addBottom", js.Any.fromFunction1(value))
+    inline def setAddBottom(value: XShape => Unit): Self = StObject.set(x, "addBottom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddTop(value: XShape => Unit): Self = StObject.set(x, "addTop", js.Any.fromFunction1(value))
+    inline def setAddTop(value: XShape => Unit): Self = StObject.set(x, "addTop", js.Any.fromFunction1(value))
   }
 }

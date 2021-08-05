@@ -81,98 +81,70 @@ trait CIMMarker
 }
 object CIMMarker {
   
-  @scala.inline
-  def apply(`type`: String): CIMMarker = {
+  inline def apply(`type`: String): CIMMarker = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMMarker]
   }
   
-  @scala.inline
-  implicit class CIMMarkerMutableBuilder[Self <: CIMMarker] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarker](x: Self) {
     
-    @scala.inline
-    def setAnchorPoint(value: ExternalReferencePoint): Self = StObject.set(x, "anchorPoint", value.asInstanceOf[js.Any])
+    inline def setAnchorPoint(value: ExternalReferencePoint): Self = StObject.set(x, "anchorPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorPointUndefined: Self = StObject.set(x, "anchorPoint", js.undefined)
+    inline def setAnchorPointUndefined: Self = StObject.set(x, "anchorPoint", js.undefined)
     
-    @scala.inline
-    def setAnchorPointUnits(
+    inline def setAnchorPointUnits(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SymbolUnits * / any */ String
     ): Self = StObject.set(x, "anchorPointUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorPointUnitsUndefined: Self = StObject.set(x, "anchorPointUnits", js.undefined)
+    inline def setAnchorPointUnitsUndefined: Self = StObject.set(x, "anchorPointUnits", js.undefined)
     
-    @scala.inline
-    def setAngleX(value: Double): Self = StObject.set(x, "angleX", value.asInstanceOf[js.Any])
+    inline def setAngleX(value: Double): Self = StObject.set(x, "angleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleXUndefined: Self = StObject.set(x, "angleX", js.undefined)
+    inline def setAngleXUndefined: Self = StObject.set(x, "angleX", js.undefined)
     
-    @scala.inline
-    def setAngleY(value: Double): Self = StObject.set(x, "angleY", value.asInstanceOf[js.Any])
+    inline def setAngleY(value: Double): Self = StObject.set(x, "angleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleYUndefined: Self = StObject.set(x, "angleY", js.undefined)
+    inline def setAngleYUndefined: Self = StObject.set(x, "angleY", js.undefined)
     
-    @scala.inline
-    def setBillboardMode3D(
+    inline def setBillboardMode3D(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BillboardMode * / any */ String
     ): Self = StObject.set(x, "billboardMode3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillboardMode3DUndefined: Self = StObject.set(x, "billboardMode3D", js.undefined)
+    inline def setBillboardMode3DUndefined: Self = StObject.set(x, "billboardMode3D", js.undefined)
     
-    @scala.inline
-    def setDominantSizeAxis3D(
+    inline def setDominantSizeAxis3D(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DominantSizeAxis * / any */ String
     ): Self = StObject.set(x, "dominantSizeAxis3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDominantSizeAxis3DUndefined: Self = StObject.set(x, "dominantSizeAxis3D", js.undefined)
+    inline def setDominantSizeAxis3DUndefined: Self = StObject.set(x, "dominantSizeAxis3D", js.undefined)
     
-    @scala.inline
-    def setMarkerPlacement(value: CIMMarkerPlacementType): Self = StObject.set(x, "markerPlacement", value.asInstanceOf[js.Any])
+    inline def setMarkerPlacement(value: CIMMarkerPlacementType): Self = StObject.set(x, "markerPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerPlacementUndefined: Self = StObject.set(x, "markerPlacement", js.undefined)
+    inline def setMarkerPlacementUndefined: Self = StObject.set(x, "markerPlacement", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setOffsetZ(value: Double): Self = StObject.set(x, "offsetZ", value.asInstanceOf[js.Any])
+    inline def setOffsetZ(value: Double): Self = StObject.set(x, "offsetZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetZUndefined: Self = StObject.set(x, "offsetZ", js.undefined)
+    inline def setOffsetZUndefined: Self = StObject.set(x, "offsetZ", js.undefined)
     
-    @scala.inline
-    def setRotateClockwise(value: Boolean): Self = StObject.set(x, "rotateClockwise", value.asInstanceOf[js.Any])
+    inline def setRotateClockwise(value: Boolean): Self = StObject.set(x, "rotateClockwise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateClockwiseUndefined: Self = StObject.set(x, "rotateClockwise", js.undefined)
+    inline def setRotateClockwiseUndefined: Self = StObject.set(x, "rotateClockwise", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

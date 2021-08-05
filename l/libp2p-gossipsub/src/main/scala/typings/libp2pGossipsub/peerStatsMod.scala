@@ -14,18 +14,13 @@ object peerStatsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPeerStats(): PeerStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerStats")().asInstanceOf[PeerStats]
-  @scala.inline
-  def createPeerStats(ps: PartialPeerStats): PeerStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerStats")(ps.asInstanceOf[js.Any]).asInstanceOf[PeerStats]
+  inline def createPeerStats(): PeerStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerStats")().asInstanceOf[PeerStats]
+  inline def createPeerStats(ps: PartialPeerStats): PeerStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerStats")(ps.asInstanceOf[js.Any]).asInstanceOf[PeerStats]
   
-  @scala.inline
-  def createTopicStats(): TopicStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicStats")().asInstanceOf[TopicStats]
-  @scala.inline
-  def createTopicStats(ts: PartialTopicStats): TopicStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicStats")(ts.asInstanceOf[js.Any]).asInstanceOf[TopicStats]
+  inline def createTopicStats(): TopicStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicStats")().asInstanceOf[TopicStats]
+  inline def createTopicStats(ts: PartialTopicStats): TopicStats = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicStats")(ts.asInstanceOf[js.Any]).asInstanceOf[TopicStats]
   
-  @scala.inline
-  def ensureTopicStats(topic: String, ps: PeerStats, params: PeerScoreParams): js.UndefOr[TopicStats] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureTopicStats")(topic.asInstanceOf[js.Any], ps.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TopicStats]]
+  inline def ensureTopicStats(topic: String, ps: PeerStats, params: PeerScoreParams): js.UndefOr[TopicStats] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureTopicStats")(topic.asInstanceOf[js.Any], ps.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TopicStats]]
   
   trait PeerStats extends StObject {
     
@@ -56,8 +51,7 @@ object peerStatsMod {
   }
   object PeerStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       behaviourPenalty: Double,
       connected: Boolean,
       expire: Double,
@@ -68,26 +62,19 @@ object peerStatsMod {
       __obj.asInstanceOf[PeerStats]
     }
     
-    @scala.inline
-    implicit class PeerStatsMutableBuilder[Self <: PeerStats] (val x: Self) extends AnyVal {
+    extension [Self <: PeerStats](x: Self) {
       
-      @scala.inline
-      def setBehaviourPenalty(value: Double): Self = StObject.set(x, "behaviourPenalty", value.asInstanceOf[js.Any])
+      inline def setBehaviourPenalty(value: Double): Self = StObject.set(x, "behaviourPenalty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+      inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
+      inline def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
+      inline def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
       
-      @scala.inline
-      def setTopics(value: Record[String, TopicStats]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: Record[String, TopicStats]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,8 +123,7 @@ object peerStatsMod {
   }
   object TopicStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       firstMessageDeliveries: Double,
       graftTime: Double,
       inMesh: Boolean,
@@ -151,32 +137,23 @@ object peerStatsMod {
       __obj.asInstanceOf[TopicStats]
     }
     
-    @scala.inline
-    implicit class TopicStatsMutableBuilder[Self <: TopicStats] (val x: Self) extends AnyVal {
+    extension [Self <: TopicStats](x: Self) {
       
-      @scala.inline
-      def setFirstMessageDeliveries(value: Double): Self = StObject.set(x, "firstMessageDeliveries", value.asInstanceOf[js.Any])
+      inline def setFirstMessageDeliveries(value: Double): Self = StObject.set(x, "firstMessageDeliveries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraftTime(value: Double): Self = StObject.set(x, "graftTime", value.asInstanceOf[js.Any])
+      inline def setGraftTime(value: Double): Self = StObject.set(x, "graftTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInMesh(value: Boolean): Self = StObject.set(x, "inMesh", value.asInstanceOf[js.Any])
+      inline def setInMesh(value: Boolean): Self = StObject.set(x, "inMesh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidMessageDeliveries(value: Double): Self = StObject.set(x, "invalidMessageDeliveries", value.asInstanceOf[js.Any])
+      inline def setInvalidMessageDeliveries(value: Double): Self = StObject.set(x, "invalidMessageDeliveries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshFailurePenalty(value: Double): Self = StObject.set(x, "meshFailurePenalty", value.asInstanceOf[js.Any])
+      inline def setMeshFailurePenalty(value: Double): Self = StObject.set(x, "meshFailurePenalty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshMessageDeliveries(value: Double): Self = StObject.set(x, "meshMessageDeliveries", value.asInstanceOf[js.Any])
+      inline def setMeshMessageDeliveries(value: Double): Self = StObject.set(x, "meshMessageDeliveries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshMessageDeliveriesActive(value: Boolean): Self = StObject.set(x, "meshMessageDeliveriesActive", value.asInstanceOf[js.Any])
+      inline def setMeshMessageDeliveriesActive(value: Boolean): Self = StObject.set(x, "meshMessageDeliveriesActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeshTime(value: Double): Self = StObject.set(x, "meshTime", value.asInstanceOf[js.Any])
+      inline def setMeshTime(value: Double): Self = StObject.set(x, "meshTime", value.asInstanceOf[js.Any])
     }
   }
 }

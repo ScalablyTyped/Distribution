@@ -19,19 +19,16 @@ trait GetElement extends StObject {
 }
 object GetElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getElement: (InsertModalColumnDescription[js.Any], EditableAttrs, String, Boolean, js.Any) => ReactElement | Boolean
   ): GetElement = {
     val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction5(getElement))
     __obj.asInstanceOf[GetElement]
   }
   
-  @scala.inline
-  implicit class GetElementMutableBuilder[Self <: GetElement] (val x: Self) extends AnyVal {
+  extension [Self <: GetElement](x: Self) {
     
-    @scala.inline
-    def setGetElement(
+    inline def setGetElement(
       value: (InsertModalColumnDescription[js.Any], EditableAttrs, String, Boolean, js.Any) => ReactElement | Boolean
     ): Self = StObject.set(x, "getElement", js.Any.fromFunction5(value))
   }

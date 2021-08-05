@@ -23,22 +23,17 @@ trait CaptionLanguageMapping extends StObject {
 }
 object CaptionLanguageMapping {
   
-  @scala.inline
-  def apply(CaptionChannel: integerMin1Max4, LanguageCode: stringMin3Max3, LanguageDescription: stringMin1): CaptionLanguageMapping = {
+  inline def apply(CaptionChannel: integerMin1Max4, LanguageCode: stringMin3Max3, LanguageDescription: stringMin1): CaptionLanguageMapping = {
     val __obj = js.Dynamic.literal(CaptionChannel = CaptionChannel.asInstanceOf[js.Any], LanguageCode = LanguageCode.asInstanceOf[js.Any], LanguageDescription = LanguageDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionLanguageMapping]
   }
   
-  @scala.inline
-  implicit class CaptionLanguageMappingMutableBuilder[Self <: CaptionLanguageMapping] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionLanguageMapping](x: Self) {
     
-    @scala.inline
-    def setCaptionChannel(value: integerMin1Max4): Self = StObject.set(x, "CaptionChannel", value.asInstanceOf[js.Any])
+    inline def setCaptionChannel(value: integerMin1Max4): Self = StObject.set(x, "CaptionChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCode(value: stringMin3Max3): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: stringMin3Max3): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageDescription(value: stringMin1): Self = StObject.set(x, "LanguageDescription", value.asInstanceOf[js.Any])
+    inline def setLanguageDescription(value: stringMin1): Self = StObject.set(x, "LanguageDescription", value.asInstanceOf[js.Any])
   }
 }

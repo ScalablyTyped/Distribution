@@ -20,6 +20,5 @@ object useCommittedRefMod {
     *
     * @param value The `Ref` value
     */
-  @scala.inline
-  def default[TValue](value: TValue): MutableRefObject[TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[TValue]]
+  inline def default[TValue](value: TValue): MutableRefObject[TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[TValue]]
 }

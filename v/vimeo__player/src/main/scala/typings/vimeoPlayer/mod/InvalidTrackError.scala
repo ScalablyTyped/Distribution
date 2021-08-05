@@ -13,16 +13,13 @@ trait InvalidTrackError
 }
 object InvalidTrackError {
   
-  @scala.inline
-  def apply(message: String, method: String): InvalidTrackError = {
+  inline def apply(message: String, method: String): InvalidTrackError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "InvalidTrackError")
     __obj.asInstanceOf[InvalidTrackError]
   }
   
-  @scala.inline
-  implicit class InvalidTrackErrorMutableBuilder[Self <: InvalidTrackError] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidTrackError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

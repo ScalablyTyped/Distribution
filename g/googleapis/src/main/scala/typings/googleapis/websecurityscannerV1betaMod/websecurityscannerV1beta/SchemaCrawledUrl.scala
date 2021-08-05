@@ -29,31 +29,23 @@ trait SchemaCrawledUrl extends StObject {
 }
 object SchemaCrawledUrl {
   
-  @scala.inline
-  def apply(): SchemaCrawledUrl = {
+  inline def apply(): SchemaCrawledUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCrawledUrl]
   }
   
-  @scala.inline
-  implicit class SchemaCrawledUrlMutableBuilder[Self <: SchemaCrawledUrl] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCrawledUrl](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
+    inline def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

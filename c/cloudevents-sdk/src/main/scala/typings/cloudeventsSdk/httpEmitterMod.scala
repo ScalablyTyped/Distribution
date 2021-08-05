@@ -58,7 +58,6 @@ object httpEmitterMod {
     @JSImport("cloudevents-sdk/lib/bindings/http/http_emitter", "HTTPEmitter.headers")
     @js.native
     def headers: js.Function = js.native
-    @scala.inline
-    def headers_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headers")(x.asInstanceOf[js.Any])
+    inline def headers_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headers")(x.asInstanceOf[js.Any])
   }
 }

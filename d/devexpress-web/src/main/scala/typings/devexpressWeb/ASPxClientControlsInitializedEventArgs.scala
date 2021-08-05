@@ -18,16 +18,13 @@ trait ASPxClientControlsInitializedEventArgs
 }
 object ASPxClientControlsInitializedEventArgs {
   
-  @scala.inline
-  def apply(isCallback: Boolean): ASPxClientControlsInitializedEventArgs = {
+  inline def apply(isCallback: Boolean): ASPxClientControlsInitializedEventArgs = {
     val __obj = js.Dynamic.literal(isCallback = isCallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientControlsInitializedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientControlsInitializedEventArgsMutableBuilder[Self <: ASPxClientControlsInitializedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientControlsInitializedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsCallback(value: Boolean): Self = StObject.set(x, "isCallback", value.asInstanceOf[js.Any])
+    inline def setIsCallback(value: Boolean): Self = StObject.set(x, "isCallback", value.asInstanceOf[js.Any])
   }
 }

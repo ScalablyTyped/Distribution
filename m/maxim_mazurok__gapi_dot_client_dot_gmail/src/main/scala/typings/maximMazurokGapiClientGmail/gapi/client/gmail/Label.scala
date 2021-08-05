@@ -43,73 +43,51 @@ trait Label extends StObject {
 }
 object Label {
   
-  @scala.inline
-  def apply(): Label = {
+  inline def apply(): Label = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Label]
   }
   
-  @scala.inline
-  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+  extension [Self <: Label](x: Self) {
     
-    @scala.inline
-    def setColor(value: LabelColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: LabelColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLabelListVisibility(value: String): Self = StObject.set(x, "labelListVisibility", value.asInstanceOf[js.Any])
+    inline def setLabelListVisibility(value: String): Self = StObject.set(x, "labelListVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelListVisibilityUndefined: Self = StObject.set(x, "labelListVisibility", js.undefined)
+    inline def setLabelListVisibilityUndefined: Self = StObject.set(x, "labelListVisibility", js.undefined)
     
-    @scala.inline
-    def setMessageListVisibility(value: String): Self = StObject.set(x, "messageListVisibility", value.asInstanceOf[js.Any])
+    inline def setMessageListVisibility(value: String): Self = StObject.set(x, "messageListVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageListVisibilityUndefined: Self = StObject.set(x, "messageListVisibility", js.undefined)
+    inline def setMessageListVisibilityUndefined: Self = StObject.set(x, "messageListVisibility", js.undefined)
     
-    @scala.inline
-    def setMessagesTotal(value: Double): Self = StObject.set(x, "messagesTotal", value.asInstanceOf[js.Any])
+    inline def setMessagesTotal(value: Double): Self = StObject.set(x, "messagesTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesTotalUndefined: Self = StObject.set(x, "messagesTotal", js.undefined)
+    inline def setMessagesTotalUndefined: Self = StObject.set(x, "messagesTotal", js.undefined)
     
-    @scala.inline
-    def setMessagesUnread(value: Double): Self = StObject.set(x, "messagesUnread", value.asInstanceOf[js.Any])
+    inline def setMessagesUnread(value: Double): Self = StObject.set(x, "messagesUnread", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUnreadUndefined: Self = StObject.set(x, "messagesUnread", js.undefined)
+    inline def setMessagesUnreadUndefined: Self = StObject.set(x, "messagesUnread", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setThreadsTotal(value: Double): Self = StObject.set(x, "threadsTotal", value.asInstanceOf[js.Any])
+    inline def setThreadsTotal(value: Double): Self = StObject.set(x, "threadsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadsTotalUndefined: Self = StObject.set(x, "threadsTotal", js.undefined)
+    inline def setThreadsTotalUndefined: Self = StObject.set(x, "threadsTotal", js.undefined)
     
-    @scala.inline
-    def setThreadsUnread(value: Double): Self = StObject.set(x, "threadsUnread", value.asInstanceOf[js.Any])
+    inline def setThreadsUnread(value: Double): Self = StObject.set(x, "threadsUnread", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadsUnreadUndefined: Self = StObject.set(x, "threadsUnread", js.undefined)
+    inline def setThreadsUnreadUndefined: Self = StObject.set(x, "threadsUnread", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

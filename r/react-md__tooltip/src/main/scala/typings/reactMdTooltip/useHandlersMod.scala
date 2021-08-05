@@ -22,18 +22,15 @@ object useHandlersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useKeyboardState(
+  inline def useKeyboardState(
     hasModeShowTooltipHideTooltipDelayInitiatedSetInitiatedOnFocusOnBlurOnKeyDownSetEstimatedPosition: KeyboardOptions
   ): KeyboardResult = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardState")(hasModeShowTooltipHideTooltipDelayInitiatedSetInitiatedOnFocusOnBlurOnKeyDownSetEstimatedPosition.asInstanceOf[js.Any]).asInstanceOf[KeyboardResult]
   
-  @scala.inline
-  def useMouseState(
+  inline def useMouseState(
     hasModeShowTooltipHideTooltipInitiatedSetInitiatedPropDelayOnMouseEnterOnMouseLeaveSetEstimatedPositionDisableHoverMode: MouseOptions
   ): MouseResult = ^.asInstanceOf[js.Dynamic].applyDynamic("useMouseState")(hasModeShowTooltipHideTooltipInitiatedSetInitiatedPropDelayOnMouseEnterOnMouseLeaveSetEstimatedPositionDisableHoverMode.asInstanceOf[js.Any]).asInstanceOf[MouseResult]
   
-  @scala.inline
-  def useTouchState(
+  inline def useTouchState(
     hasModeVisibleShowTooltipHideTooltipDelaySetInitiatedOnTouchStartOnTouchMoveOnContextMenuSetEstimatedPosition: TouchOptions
   ): TouchResult = ^.asInstanceOf[js.Dynamic].applyDynamic("useTouchState")(hasModeVisibleShowTooltipHideTooltipDelaySetInitiatedOnTouchStartOnTouchMoveOnContextMenuSetEstimatedPosition.asInstanceOf[js.Any]).asInstanceOf[TouchResult]
   
@@ -77,8 +74,7 @@ object useHandlersMod {
   }
   object HandlersBaseOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delay: Double,
       hideTooltip: () => Unit,
       initiated: MutableRefObject[TooltipInitiated],
@@ -91,29 +87,21 @@ object useHandlersMod {
       __obj.asInstanceOf[HandlersBaseOptions]
     }
     
-    @scala.inline
-    implicit class HandlersBaseOptionsMutableBuilder[Self <: HandlersBaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HandlersBaseOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideTooltip(value: () => Unit): Self = StObject.set(x, "hideTooltip", js.Any.fromFunction0(value))
+      inline def setHideTooltip(value: () => Unit): Self = StObject.set(x, "hideTooltip", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitiated(value: MutableRefObject[TooltipInitiated]): Self = StObject.set(x, "initiated", value.asInstanceOf[js.Any])
+      inline def setInitiated(value: MutableRefObject[TooltipInitiated]): Self = StObject.set(x, "initiated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: UserInteractionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: UserInteractionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetEstimatedPosition(value: HTMLElement => Unit): Self = StObject.set(x, "setEstimatedPosition", js.Any.fromFunction1(value))
+      inline def setSetEstimatedPosition(value: HTMLElement => Unit): Self = StObject.set(x, "setEstimatedPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetInitiated(value: TooltipInitiated => Unit): Self = StObject.set(x, "setInitiated", js.Any.fromFunction1(value))
+      inline def setSetInitiated(value: TooltipInitiated => Unit): Self = StObject.set(x, "setInitiated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowTooltip(value: () => Unit): Self = StObject.set(x, "showTooltip", js.Any.fromFunction0(value))
+      inline def setShowTooltip(value: () => Unit): Self = StObject.set(x, "showTooltip", js.Any.fromFunction0(value))
     }
   }
   
@@ -123,8 +111,7 @@ object useHandlersMod {
        with HandlersBaseOptions
   object KeyboardOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delay: Double,
       hideTooltip: () => Unit,
       initiated: MutableRefObject[TooltipInitiated],
@@ -166,62 +153,44 @@ object useHandlersMod {
   }
   object MergableHandlers {
     
-    @scala.inline
-    def apply(): MergableHandlers = {
+    inline def apply(): MergableHandlers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MergableHandlers]
     }
     
-    @scala.inline
-    implicit class MergableHandlersMutableBuilder[Self <: MergableHandlers] (val x: Self) extends AnyVal {
+    extension [Self <: MergableHandlers](x: Self) {
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnTouchMove(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     }
   }
   
@@ -236,32 +205,24 @@ object useHandlersMod {
   }
   object MergableKeyboardHandlers {
     
-    @scala.inline
-    def apply(): MergableKeyboardHandlers = {
+    inline def apply(): MergableKeyboardHandlers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MergableKeyboardHandlers]
     }
     
-    @scala.inline
-    implicit class MergableKeyboardHandlersMutableBuilder[Self <: MergableKeyboardHandlers] (val x: Self) extends AnyVal {
+    extension [Self <: MergableKeyboardHandlers](x: Self) {
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     }
   }
   
@@ -274,26 +235,20 @@ object useHandlersMod {
   }
   object MergableMouseHandlers {
     
-    @scala.inline
-    def apply(): MergableMouseHandlers = {
+    inline def apply(): MergableMouseHandlers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MergableMouseHandlers]
     }
     
-    @scala.inline
-    implicit class MergableMouseHandlersMutableBuilder[Self <: MergableMouseHandlers] (val x: Self) extends AnyVal {
+    extension [Self <: MergableMouseHandlers](x: Self) {
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     }
   }
   
@@ -308,32 +263,24 @@ object useHandlersMod {
   }
   object MergableTouchHandlers {
     
-    @scala.inline
-    def apply(): MergableTouchHandlers = {
+    inline def apply(): MergableTouchHandlers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MergableTouchHandlers]
     }
     
-    @scala.inline
-    implicit class MergableTouchHandlersMutableBuilder[Self <: MergableTouchHandlers] (val x: Self) extends AnyVal {
+    extension [Self <: MergableTouchHandlers](x: Self) {
       
-      @scala.inline
-      def setOnContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnTouchMove(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     }
   }
   
@@ -346,8 +293,7 @@ object useHandlersMod {
   }
   object MouseOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delay: Double,
       hideTooltip: () => Unit,
       initiated: MutableRefObject[TooltipInitiated],
@@ -360,14 +306,11 @@ object useHandlersMod {
       __obj.asInstanceOf[MouseOptions]
     }
     
-    @scala.inline
-    implicit class MouseOptionsMutableBuilder[Self <: MouseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MouseOptions](x: Self) {
       
-      @scala.inline
-      def setDisableHoverMode(value: Boolean): Self = StObject.set(x, "disableHoverMode", value.asInstanceOf[js.Any])
+      inline def setDisableHoverMode(value: Boolean): Self = StObject.set(x, "disableHoverMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHoverModeUndefined: Self = StObject.set(x, "disableHoverMode", js.undefined)
+      inline def setDisableHoverModeUndefined: Self = StObject.set(x, "disableHoverMode", js.undefined)
     }
   }
   
@@ -388,8 +331,7 @@ object useHandlersMod {
   }
   object TouchOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delay: Double,
       hideTooltip: () => Unit,
       initiated: MutableRefObject[TooltipInitiated],
@@ -403,11 +345,9 @@ object useHandlersMod {
       __obj.asInstanceOf[TouchOptions]
     }
     
-    @scala.inline
-    implicit class TouchOptionsMutableBuilder[Self <: TouchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TouchOptions](x: Self) {
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   

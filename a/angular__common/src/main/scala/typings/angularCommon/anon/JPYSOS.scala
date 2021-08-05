@@ -16,37 +16,27 @@ trait JPYSOS extends StObject {
 }
 object JPYSOS {
   
-  @scala.inline
-  def apply(BBD: js.Array[String], JPY: js.Array[String], SOS: js.Array[String], USD: js.Array[String]): JPYSOS = {
+  inline def apply(BBD: js.Array[String], JPY: js.Array[String], SOS: js.Array[String], USD: js.Array[String]): JPYSOS = {
     val __obj = js.Dynamic.literal(BBD = BBD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], SOS = SOS.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
     __obj.asInstanceOf[JPYSOS]
   }
   
-  @scala.inline
-  implicit class JPYSOSMutableBuilder[Self <: JPYSOS] (val x: Self) extends AnyVal {
+  extension [Self <: JPYSOS](x: Self) {
     
-    @scala.inline
-    def setBBD(value: js.Array[String]): Self = StObject.set(x, "BBD", value.asInstanceOf[js.Any])
+    inline def setBBD(value: js.Array[String]): Self = StObject.set(x, "BBD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBBDVarargs(value: String*): Self = StObject.set(x, "BBD", js.Array(value :_*))
+    inline def setBBDVarargs(value: String*): Self = StObject.set(x, "BBD", js.Array(value :_*))
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setSOS(value: js.Array[String]): Self = StObject.set(x, "SOS", value.asInstanceOf[js.Any])
+    inline def setSOS(value: js.Array[String]): Self = StObject.set(x, "SOS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSOSVarargs(value: String*): Self = StObject.set(x, "SOS", js.Array(value :_*))
+    inline def setSOSVarargs(value: String*): Self = StObject.set(x, "SOS", js.Array(value :_*))
     
-    @scala.inline
-    def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
   }
 }

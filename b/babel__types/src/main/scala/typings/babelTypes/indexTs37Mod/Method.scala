@@ -18,8 +18,7 @@ trait Method
      with _Node
 object Method {
   
-  @scala.inline
-  def ClassMethod_(
+  inline def ClassMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -35,8 +34,7 @@ object Method {
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassMethod_]
   }
   
-  @scala.inline
-  def ClassPrivateMethod_(
+  inline def ClassPrivateMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -52,8 +50,7 @@ object Method {
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassPrivateMethod_]
   }
   
-  @scala.inline
-  def ObjectMethod_(
+  inline def ObjectMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,

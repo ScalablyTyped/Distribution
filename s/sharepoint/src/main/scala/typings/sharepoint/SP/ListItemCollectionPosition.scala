@@ -14,8 +14,7 @@ trait ListItemCollectionPosition
 }
 object ListItemCollectionPosition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -28,13 +27,10 @@ object ListItemCollectionPosition {
     __obj.asInstanceOf[ListItemCollectionPosition]
   }
   
-  @scala.inline
-  implicit class ListItemCollectionPositionMutableBuilder[Self <: ListItemCollectionPosition] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemCollectionPosition](x: Self) {
     
-    @scala.inline
-    def setGet_pagingInfo(value: () => String): Self = StObject.set(x, "get_pagingInfo", js.Any.fromFunction0(value))
+    inline def setGet_pagingInfo(value: () => String): Self = StObject.set(x, "get_pagingInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_pagingInfo(value: String => Unit): Self = StObject.set(x, "set_pagingInfo", js.Any.fromFunction1(value))
+    inline def setSet_pagingInfo(value: String => Unit): Self = StObject.set(x, "set_pagingInfo", js.Any.fromFunction1(value))
   }
 }

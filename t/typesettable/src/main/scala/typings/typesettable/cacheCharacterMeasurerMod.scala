@@ -20,7 +20,7 @@ object cacheCharacterMeasurerMod {
     
     def _measureCharacterNotFromCache(c: String): IDimensions = js.native
     
-    var cache: js.Any = js.native
+    /* private */ var cache: js.Any = js.native
     
     def reset(): Unit = js.native
   }

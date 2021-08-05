@@ -20,8 +20,7 @@ trait Job
      with XCloseable
 object Job {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addCloseListener: XCloseListener => Unit,
     close: Boolean => Unit,

@@ -12,22 +12,17 @@ trait IConsensusNotifyBlockCommit extends StObject {
 }
 object IConsensusNotifyBlockCommit {
   
-  @scala.inline
-  def apply(): IConsensusNotifyBlockCommit = {
+  inline def apply(): IConsensusNotifyBlockCommit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusNotifyBlockCommit]
   }
   
-  @scala.inline
-  implicit class IConsensusNotifyBlockCommitMutableBuilder[Self <: IConsensusNotifyBlockCommit] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusNotifyBlockCommit](x: Self) {
     
-    @scala.inline
-    def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
+    inline def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIdNull: Self = StObject.set(x, "blockId", null)
+    inline def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     
-    @scala.inline
-    def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
+    inline def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
   }
 }

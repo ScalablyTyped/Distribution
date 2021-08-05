@@ -21,14 +21,12 @@ object checkoutMod {
   trait Adjustment extends StObject
   object Adjustment {
     
-    @scala.inline
-    def ItemAdjustment(itemCode: String, quantity: Double): typings.recurlyRecurlyJs.checkoutMod.ItemAdjustment = {
+    inline def ItemAdjustment(itemCode: String, quantity: Double): typings.recurlyRecurlyJs.checkoutMod.ItemAdjustment = {
       val __obj = js.Dynamic.literal(itemCode = itemCode.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.recurlyRecurlyJs.checkoutMod.ItemAdjustment]
     }
     
-    @scala.inline
-    def NonItemAdjustment(amount: Double, quantity: Double, taxCode: String, taxExempt: Boolean): typings.recurlyRecurlyJs.checkoutMod.NonItemAdjustment = {
+    inline def NonItemAdjustment(amount: Double, quantity: Double, taxCode: String, taxExempt: Boolean): typings.recurlyRecurlyJs.checkoutMod.NonItemAdjustment = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], taxCode = taxCode.asInstanceOf[js.Any], taxExempt = taxExempt.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.recurlyRecurlyJs.checkoutMod.NonItemAdjustment]
     }
@@ -46,29 +44,22 @@ object checkoutMod {
   }
   object CheckoutPrice {
     
-    @scala.inline
-    def apply(currency: Code, next: Adjustments, now: Adjustments, taxes: js.Array[CheckoutPricingStateTax]): CheckoutPrice = {
+    inline def apply(currency: Code, next: Adjustments, now: Adjustments, taxes: js.Array[CheckoutPricingStateTax]): CheckoutPrice = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], now = now.asInstanceOf[js.Any], taxes = taxes.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckoutPrice]
     }
     
-    @scala.inline
-    implicit class CheckoutPriceMutableBuilder[Self <: CheckoutPrice] (val x: Self) extends AnyVal {
+    extension [Self <: CheckoutPrice](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: Code): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: Code): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: Adjustments): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Adjustments): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNow(value: Adjustments): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Adjustments): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaxes(value: js.Array[CheckoutPricingStateTax]): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
+      inline def setTaxes(value: js.Array[CheckoutPricingStateTax]): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaxesVarargs(value: CheckoutPricingStateTax*): Self = StObject.set(x, "taxes", js.Array(value :_*))
+      inline def setTaxesVarargs(value: CheckoutPricingStateTax*): Self = StObject.set(x, "taxes", js.Array(value :_*))
     }
   }
   
@@ -107,8 +98,7 @@ object checkoutMod {
   }
   object CheckoutPricingMethods {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: Address => CheckoutPricingPromise,
       adjustment: Adjustment => CheckoutPricingPromise,
       coupon: String => CheckoutPricingPromise,
@@ -122,32 +112,23 @@ object checkoutMod {
       __obj.asInstanceOf[CheckoutPricingMethods]
     }
     
-    @scala.inline
-    implicit class CheckoutPricingMethodsMutableBuilder[Self <: CheckoutPricingMethods] (val x: Self) extends AnyVal {
+    extension [Self <: CheckoutPricingMethods](x: Self) {
       
-      @scala.inline
-      def setAddress(value: Address => CheckoutPricingPromise): Self = StObject.set(x, "address", js.Any.fromFunction1(value))
+      inline def setAddress(value: Address => CheckoutPricingPromise): Self = StObject.set(x, "address", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAdjustment(value: Adjustment => CheckoutPricingPromise): Self = StObject.set(x, "adjustment", js.Any.fromFunction1(value))
+      inline def setAdjustment(value: Adjustment => CheckoutPricingPromise): Self = StObject.set(x, "adjustment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCoupon(value: String => CheckoutPricingPromise): Self = StObject.set(x, "coupon", js.Any.fromFunction1(value))
+      inline def setCoupon(value: String => CheckoutPricingPromise): Self = StObject.set(x, "coupon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCurrency(value: String => CheckoutPricingPromise): Self = StObject.set(x, "currency", js.Any.fromFunction1(value))
+      inline def setCurrency(value: String => CheckoutPricingPromise): Self = StObject.set(x, "currency", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGiftCard(value: String => CheckoutPricingPromise): Self = StObject.set(x, "giftCard", js.Any.fromFunction1(value))
+      inline def setGiftCard(value: String => CheckoutPricingPromise): Self = StObject.set(x, "giftCard", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShippingAddress(value: Address => CheckoutPricingPromise): Self = StObject.set(x, "shippingAddress", js.Any.fromFunction1(value))
+      inline def setShippingAddress(value: Address => CheckoutPricingPromise): Self = StObject.set(x, "shippingAddress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscription(value: SubscriptionPricingState => CheckoutPricingPromise): Self = StObject.set(x, "subscription", js.Any.fromFunction1(value))
+      inline def setSubscription(value: SubscriptionPricingState => CheckoutPricingPromise): Self = StObject.set(x, "subscription", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTax(value: Tax => CheckoutPricingPromise): Self = StObject.set(x, "tax", js.Any.fromFunction1(value))
+      inline def setTax(value: Tax => CheckoutPricingPromise): Self = StObject.set(x, "tax", js.Any.fromFunction1(value))
     }
   }
   
@@ -171,17 +152,14 @@ object checkoutMod {
   }
   object CheckoutPricingState {
     
-    @scala.inline
-    def apply(price: CheckoutPrice): CheckoutPricingState = {
+    inline def apply(price: CheckoutPrice): CheckoutPricingState = {
       val __obj = js.Dynamic.literal(price = price.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckoutPricingState]
     }
     
-    @scala.inline
-    implicit class CheckoutPricingStateMutableBuilder[Self <: CheckoutPricingState] (val x: Self) extends AnyVal {
+    extension [Self <: CheckoutPricingState](x: Self) {
       
-      @scala.inline
-      def setPrice(value: CheckoutPrice): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: CheckoutPrice): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,23 +173,18 @@ object checkoutMod {
   }
   object CheckoutPricingStateTax {
     
-    @scala.inline
-    def apply(rate: String, region: String, tax_type: String): CheckoutPricingStateTax = {
+    inline def apply(rate: String, region: String, tax_type: String): CheckoutPricingStateTax = {
       val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], tax_type = tax_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckoutPricingStateTax]
     }
     
-    @scala.inline
-    implicit class CheckoutPricingStateTaxMutableBuilder[Self <: CheckoutPricingStateTax] (val x: Self) extends AnyVal {
+    extension [Self <: CheckoutPricingStateTax](x: Self) {
       
-      @scala.inline
-      def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_type(value: String): Self = StObject.set(x, "tax_type", value.asInstanceOf[js.Any])
+      inline def setTax_type(value: String): Self = StObject.set(x, "tax_type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,33 +204,25 @@ object checkoutMod {
   }
   object Item {
     
-    @scala.inline
-    def apply(addons: String, amount: String, id: String, plan: String, setupFee: String, `type`: String): Item = {
+    inline def apply(addons: String, amount: String, id: String, plan: String, setupFee: String, `type`: String): Item = {
       val __obj = js.Dynamic.literal(addons = addons.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], setupFee = setupFee.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setAddons(value: String): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
+      inline def setAddons(value: String): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupFee(value: String): Self = StObject.set(x, "setupFee", value.asInstanceOf[js.Any])
+      inline def setSetupFee(value: String): Self = StObject.set(x, "setupFee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,32 +253,24 @@ object checkoutMod {
   }
   object ItemAdjustment {
     
-    @scala.inline
-    def apply(itemCode: String, quantity: Double): ItemAdjustment = {
+    inline def apply(itemCode: String, quantity: Double): ItemAdjustment = {
       val __obj = js.Dynamic.literal(itemCode = itemCode.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemAdjustment]
     }
     
-    @scala.inline
-    implicit class ItemAdjustmentMutableBuilder[Self <: ItemAdjustment] (val x: Self) extends AnyVal {
+    extension [Self <: ItemAdjustment](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setItemCode(value: String): Self = StObject.set(x, "itemCode", value.asInstanceOf[js.Any])
+      inline def setItemCode(value: String): Self = StObject.set(x, "itemCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -353,38 +310,28 @@ object checkoutMod {
   }
   object NonItemAdjustment {
     
-    @scala.inline
-    def apply(amount: Double, quantity: Double, taxCode: String, taxExempt: Boolean): NonItemAdjustment = {
+    inline def apply(amount: Double, quantity: Double, taxCode: String, taxExempt: Boolean): NonItemAdjustment = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], taxCode = taxCode.asInstanceOf[js.Any], taxExempt = taxExempt.asInstanceOf[js.Any])
       __obj.asInstanceOf[NonItemAdjustment]
     }
     
-    @scala.inline
-    implicit class NonItemAdjustmentMutableBuilder[Self <: NonItemAdjustment] (val x: Self) extends AnyVal {
+    extension [Self <: NonItemAdjustment](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaxCode(value: String): Self = StObject.set(x, "taxCode", value.asInstanceOf[js.Any])
+      inline def setTaxCode(value: String): Self = StObject.set(x, "taxCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaxExempt(value: Boolean): Self = StObject.set(x, "taxExempt", value.asInstanceOf[js.Any])
+      inline def setTaxExempt(value: Boolean): Self = StObject.set(x, "taxExempt", value.asInstanceOf[js.Any])
     }
   }
 }

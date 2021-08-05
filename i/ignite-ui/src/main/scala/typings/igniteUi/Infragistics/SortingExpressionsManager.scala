@@ -22,8 +22,7 @@ trait SortingExpressionsManager extends StObject {
 }
 object SortingExpressionsManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addSortingExpression: (js.Object, js.Object, js.Object) => Unit,
     setFormattersForSortingExprs: (js.Object, js.Object) => Unit,
     setGridInstance: js.Object => Unit
@@ -32,16 +31,12 @@ object SortingExpressionsManager {
     __obj.asInstanceOf[SortingExpressionsManager]
   }
   
-  @scala.inline
-  implicit class SortingExpressionsManagerMutableBuilder[Self <: SortingExpressionsManager] (val x: Self) extends AnyVal {
+  extension [Self <: SortingExpressionsManager](x: Self) {
     
-    @scala.inline
-    def setAddSortingExpression(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "addSortingExpression", js.Any.fromFunction3(value))
+    inline def setAddSortingExpression(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "addSortingExpression", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetFormattersForSortingExprs(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setFormattersForSortingExprs", js.Any.fromFunction2(value))
+    inline def setSetFormattersForSortingExprs(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setFormattersForSortingExprs", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetGridInstance(value: js.Object => Unit): Self = StObject.set(x, "setGridInstance", js.Any.fromFunction1(value))
+    inline def setSetGridInstance(value: js.Object => Unit): Self = StObject.set(x, "setGridInstance", js.Any.fromFunction1(value))
   }
 }

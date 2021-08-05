@@ -22,29 +22,23 @@ trait GoogleCloudRecommenderV1MarkRecommendationFailedRequest extends StObject {
 }
 object GoogleCloudRecommenderV1MarkRecommendationFailedRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommenderV1MarkRecommendationFailedRequest = {
+  inline def apply(): GoogleCloudRecommenderV1MarkRecommendationFailedRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommenderV1MarkRecommendationFailedRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommenderV1MarkRecommendationFailedRequestMutableBuilder[Self <: GoogleCloudRecommenderV1MarkRecommendationFailedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommenderV1MarkRecommendationFailedRequest](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setStateMetadata(
+    inline def setStateMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkRecommendationFailedRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "stateMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)
+    inline def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)
   }
 }

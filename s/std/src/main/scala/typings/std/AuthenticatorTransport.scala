@@ -15,15 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticatorTransport extends StObject
 object AuthenticatorTransport {
   
-  @scala.inline
-  def ble: typings.std.stdStrings.ble = "ble".asInstanceOf[typings.std.stdStrings.ble]
+  inline def ble: typings.std.stdStrings.ble = "ble".asInstanceOf[typings.std.stdStrings.ble]
   
-  @scala.inline
-  def internal: typings.std.stdStrings.internal = "internal".asInstanceOf[typings.std.stdStrings.internal]
+  inline def internal: typings.std.stdStrings.internal = "internal".asInstanceOf[typings.std.stdStrings.internal]
   
-  @scala.inline
-  def nfc: nfc_ = "nfc".asInstanceOf[nfc_]
+  inline def nfc: nfc_ = "nfc".asInstanceOf[nfc_]
   
-  @scala.inline
-  def usb: usb_ = "usb".asInstanceOf[usb_]
+  inline def usb: usb_ = "usb".asInstanceOf[usb_]
 }

@@ -19,26 +19,20 @@ trait resourceShortManifestReso extends StObject {
 }
 object resourceShortManifestReso {
   
-  @scala.inline
-  def apply(extra: Genre, id: String, resource: ShortManifestResource, `type`: ContentType): resourceShortManifestReso = {
+  inline def apply(extra: Genre, id: String, resource: ShortManifestResource, `type`: ContentType): resourceShortManifestReso = {
     val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[resourceShortManifestReso]
   }
   
-  @scala.inline
-  implicit class resourceShortManifestResoMutableBuilder[Self <: resourceShortManifestReso] (val x: Self) extends AnyVal {
+  extension [Self <: resourceShortManifestReso](x: Self) {
     
-    @scala.inline
-    def setExtra(value: Genre): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Genre): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: ShortManifestResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ShortManifestResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

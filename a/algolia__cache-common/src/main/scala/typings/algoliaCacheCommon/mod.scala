@@ -12,11 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFallbackableCache(options: FallbackableCacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFallbackableCache")(options.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  inline def createFallbackableCache(options: FallbackableCacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createFallbackableCache")(options.asInstanceOf[js.Any]).asInstanceOf[Cache]
   
-  @scala.inline
-  def createNullCache(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullCache")().asInstanceOf[Cache]
+  inline def createNullCache(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullCache")().asInstanceOf[Cache]
   
   @js.native
   trait Cache extends StObject {
@@ -56,17 +54,14 @@ object mod {
   }
   object CacheEvents {
     
-    @scala.inline
-    def apply[TValue](miss: TValue => ReadonlyPromiseany): CacheEvents[TValue] = {
+    inline def apply[TValue](miss: TValue => ReadonlyPromiseany): CacheEvents[TValue] = {
       val __obj = js.Dynamic.literal(miss = js.Any.fromFunction1(miss))
       __obj.asInstanceOf[CacheEvents[TValue]]
     }
     
-    @scala.inline
-    implicit class CacheEventsMutableBuilder[Self <: CacheEvents[?], TValue] (val x: Self & CacheEvents[TValue]) extends AnyVal {
+    extension [Self <: CacheEvents[?], TValue](x: Self & CacheEvents[TValue]) {
       
-      @scala.inline
-      def setMiss(value: TValue => ReadonlyPromiseany): Self = StObject.set(x, "miss", js.Any.fromFunction1(value))
+      inline def setMiss(value: TValue => ReadonlyPromiseany): Self = StObject.set(x, "miss", js.Any.fromFunction1(value))
     }
   }
   
@@ -79,20 +74,16 @@ object mod {
   }
   object FallbackableCacheOptions {
     
-    @scala.inline
-    def apply(caches: js.Array[Cache]): FallbackableCacheOptions = {
+    inline def apply(caches: js.Array[Cache]): FallbackableCacheOptions = {
       val __obj = js.Dynamic.literal(caches = caches.asInstanceOf[js.Any])
       __obj.asInstanceOf[FallbackableCacheOptions]
     }
     
-    @scala.inline
-    implicit class FallbackableCacheOptionsMutableBuilder[Self <: FallbackableCacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FallbackableCacheOptions](x: Self) {
       
-      @scala.inline
-      def setCaches(value: js.Array[Cache]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
+      inline def setCaches(value: js.Array[Cache]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachesVarargs(value: Cache*): Self = StObject.set(x, "caches", js.Array(value :_*))
+      inline def setCachesVarargs(value: Cache*): Self = StObject.set(x, "caches", js.Array(value :_*))
     }
   }
 }

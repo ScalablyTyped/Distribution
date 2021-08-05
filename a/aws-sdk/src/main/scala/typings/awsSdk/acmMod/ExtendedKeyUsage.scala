@@ -18,25 +18,19 @@ trait ExtendedKeyUsage extends StObject {
 }
 object ExtendedKeyUsage {
   
-  @scala.inline
-  def apply(): ExtendedKeyUsage = {
+  inline def apply(): ExtendedKeyUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtendedKeyUsage]
   }
   
-  @scala.inline
-  implicit class ExtendedKeyUsageMutableBuilder[Self <: ExtendedKeyUsage] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedKeyUsage](x: Self) {
     
-    @scala.inline
-    def setName(value: ExtendedKeyUsageName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ExtendedKeyUsageName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOID(value: String): Self = StObject.set(x, "OID", value.asInstanceOf[js.Any])
+    inline def setOID(value: String): Self = StObject.set(x, "OID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOIDUndefined: Self = StObject.set(x, "OID", js.undefined)
+    inline def setOIDUndefined: Self = StObject.set(x, "OID", js.undefined)
   }
 }

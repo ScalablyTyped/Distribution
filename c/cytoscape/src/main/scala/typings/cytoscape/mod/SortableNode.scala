@@ -11,16 +11,13 @@ trait SortableNode extends StObject {
 }
 object SortableNode {
   
-  @scala.inline
-  def apply(data: Weight): SortableNode = {
+  inline def apply(data: Weight): SortableNode = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortableNode]
   }
   
-  @scala.inline
-  implicit class SortableNodeMutableBuilder[Self <: SortableNode] (val x: Self) extends AnyVal {
+  extension [Self <: SortableNode](x: Self) {
     
-    @scala.inline
-    def setData(value: Weight): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Weight): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait SketchMSBorderOptions extends StObject {
 }
 object SketchMSBorderOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dashPattern: js.Array[Double],
     isEnabled: Boolean,
     lineCapStyle: SketchMSBorderLineCapStyle,
@@ -30,25 +29,18 @@ object SketchMSBorderOptions {
     __obj.asInstanceOf[SketchMSBorderOptions]
   }
   
-  @scala.inline
-  implicit class SketchMSBorderOptionsMutableBuilder[Self <: SketchMSBorderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSBorderOptions](x: Self) {
     
-    @scala.inline
-    def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
+    inline def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
+    inline def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCapStyle(value: SketchMSBorderLineCapStyle): Self = StObject.set(x, "lineCapStyle", value.asInstanceOf[js.Any])
+    inline def setLineCapStyle(value: SketchMSBorderLineCapStyle): Self = StObject.set(x, "lineCapStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineJoinStyle(value: SketchMSBorderLineJoinStyle): Self = StObject.set(x, "lineJoinStyle", value.asInstanceOf[js.Any])
+    inline def setLineJoinStyle(value: SketchMSBorderLineJoinStyle): Self = StObject.set(x, "lineJoinStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: borderOptions): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: borderOptions): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

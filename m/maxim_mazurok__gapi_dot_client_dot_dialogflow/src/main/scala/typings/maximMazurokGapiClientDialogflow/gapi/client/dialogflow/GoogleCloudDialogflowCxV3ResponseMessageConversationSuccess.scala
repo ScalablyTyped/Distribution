@@ -16,23 +16,19 @@ trait GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess extends StObje
 }
 object GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess = {
+  inline def apply(): GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3ResponseMessageConversationSuccessMutableBuilder[Self <: GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess](x: Self) {
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3ResponseMessageConversationSuccess & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

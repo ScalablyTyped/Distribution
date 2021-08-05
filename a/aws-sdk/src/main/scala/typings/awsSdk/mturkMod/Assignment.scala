@@ -68,85 +68,59 @@ trait Assignment extends StObject {
 }
 object Assignment {
   
-  @scala.inline
-  def apply(): Assignment = {
+  inline def apply(): Assignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Assignment]
   }
   
-  @scala.inline
-  implicit class AssignmentMutableBuilder[Self <: Assignment] (val x: Self) extends AnyVal {
+  extension [Self <: Assignment](x: Self) {
     
-    @scala.inline
-    def setAcceptTime(value: Timestamp): Self = StObject.set(x, "AcceptTime", value.asInstanceOf[js.Any])
+    inline def setAcceptTime(value: Timestamp): Self = StObject.set(x, "AcceptTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptTimeUndefined: Self = StObject.set(x, "AcceptTime", js.undefined)
+    inline def setAcceptTimeUndefined: Self = StObject.set(x, "AcceptTime", js.undefined)
     
-    @scala.inline
-    def setAnswer(value: String): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
+    inline def setAnswer(value: String): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswerUndefined: Self = StObject.set(x, "Answer", js.undefined)
+    inline def setAnswerUndefined: Self = StObject.set(x, "Answer", js.undefined)
     
-    @scala.inline
-    def setApprovalTime(value: Timestamp): Self = StObject.set(x, "ApprovalTime", value.asInstanceOf[js.Any])
+    inline def setApprovalTime(value: Timestamp): Self = StObject.set(x, "ApprovalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalTimeUndefined: Self = StObject.set(x, "ApprovalTime", js.undefined)
+    inline def setApprovalTimeUndefined: Self = StObject.set(x, "ApprovalTime", js.undefined)
     
-    @scala.inline
-    def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
+    inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentIdUndefined: Self = StObject.set(x, "AssignmentId", js.undefined)
+    inline def setAssignmentIdUndefined: Self = StObject.set(x, "AssignmentId", js.undefined)
     
-    @scala.inline
-    def setAssignmentStatus(value: AssignmentStatus): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
+    inline def setAssignmentStatus(value: AssignmentStatus): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
+    inline def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
     
-    @scala.inline
-    def setAutoApprovalTime(value: Timestamp): Self = StObject.set(x, "AutoApprovalTime", value.asInstanceOf[js.Any])
+    inline def setAutoApprovalTime(value: Timestamp): Self = StObject.set(x, "AutoApprovalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoApprovalTimeUndefined: Self = StObject.set(x, "AutoApprovalTime", js.undefined)
+    inline def setAutoApprovalTimeUndefined: Self = StObject.set(x, "AutoApprovalTime", js.undefined)
     
-    @scala.inline
-    def setDeadline(value: Timestamp): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Timestamp): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadlineUndefined: Self = StObject.set(x, "Deadline", js.undefined)
+    inline def setDeadlineUndefined: Self = StObject.set(x, "Deadline", js.undefined)
     
-    @scala.inline
-    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
+    inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHITIdUndefined: Self = StObject.set(x, "HITId", js.undefined)
+    inline def setHITIdUndefined: Self = StObject.set(x, "HITId", js.undefined)
     
-    @scala.inline
-    def setRejectionTime(value: Timestamp): Self = StObject.set(x, "RejectionTime", value.asInstanceOf[js.Any])
+    inline def setRejectionTime(value: Timestamp): Self = StObject.set(x, "RejectionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectionTimeUndefined: Self = StObject.set(x, "RejectionTime", js.undefined)
+    inline def setRejectionTimeUndefined: Self = StObject.set(x, "RejectionTime", js.undefined)
     
-    @scala.inline
-    def setRequesterFeedback(value: String): Self = StObject.set(x, "RequesterFeedback", value.asInstanceOf[js.Any])
+    inline def setRequesterFeedback(value: String): Self = StObject.set(x, "RequesterFeedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterFeedbackUndefined: Self = StObject.set(x, "RequesterFeedback", js.undefined)
+    inline def setRequesterFeedbackUndefined: Self = StObject.set(x, "RequesterFeedback", js.undefined)
     
-    @scala.inline
-    def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
+    inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
   }
 }

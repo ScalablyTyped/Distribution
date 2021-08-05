@@ -15,7 +15,7 @@ class IonSpinner protected ()
      with typings.ionicCore.componentsMod.Components.IonSpinner {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * If `true`, the spinner's animation will be paused.
@@ -23,5 +23,5 @@ class IonSpinner protected ()
   /* CompleteClass */
   var paused: Boolean = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

@@ -32,8 +32,7 @@ object rsockettcpserverMod {
        with TransportServer
   object RSocketTCPServer {
     
-    @scala.inline
-    def apply(start: () => Flowable[DuplexConnection], stop: () => Unit): RSocketTCPServer = {
+    inline def apply(start: () => Flowable[DuplexConnection], stop: () => Unit): RSocketTCPServer = {
       val __obj = js.Dynamic.literal(start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[RSocketTCPServer]
     }
@@ -49,29 +48,22 @@ object rsockettcpserverMod {
   }
   object ServerOptions {
     
-    @scala.inline
-    def apply(port: Double): ServerOptions = {
+    inline def apply(port: Double): ServerOptions = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerOptions]
     }
     
-    @scala.inline
-    implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServerOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerFactory(value: /* onConnect */ js.Function1[/* socket */ Socket, Unit] => Server): Self = StObject.set(x, "serverFactory", js.Any.fromFunction1(value))
+      inline def setServerFactory(value: /* onConnect */ js.Function1[/* socket */ Socket, Unit] => Server): Self = StObject.set(x, "serverFactory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServerFactoryUndefined: Self = StObject.set(x, "serverFactory", js.undefined)
+      inline def setServerFactoryUndefined: Self = StObject.set(x, "serverFactory", js.undefined)
     }
   }
 }

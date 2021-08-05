@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShareDialogModeIOS extends StObject
 object ShareDialogModeIOS {
   
-  @scala.inline
-  def automatic: typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = "automatic".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic]
+  inline def automatic: typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = "automatic".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.automatic]
   
-  @scala.inline
-  def browser: typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser = "browser".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser]
+  inline def browser: typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser = "browser".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.browser]
   
-  @scala.inline
-  def webview: typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview = "webview".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview]
+  inline def webview: typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview = "webview".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.webview]
 }

@@ -30,47 +30,34 @@ object gapi {
       }
       object ApiDataRow {
         
-        @scala.inline
-        def apply(): ApiDataRow = {
+        inline def apply(): ApiDataRow = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ApiDataRow]
         }
         
-        @scala.inline
-        implicit class ApiDataRowMutableBuilder[Self <: ApiDataRow] (val x: Self) extends AnyVal {
+        extension [Self <: ApiDataRow](x: Self) {
           
-          @scala.inline
-          def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
+          inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setClicksUndefined: Self = StObject.set(x, "clicks", js.undefined)
+          inline def setClicksUndefined: Self = StObject.set(x, "clicks", js.undefined)
           
-          @scala.inline
-          def setCtr(value: Double): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
+          inline def setCtr(value: Double): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCtrUndefined: Self = StObject.set(x, "ctr", js.undefined)
+          inline def setCtrUndefined: Self = StObject.set(x, "ctr", js.undefined)
           
-          @scala.inline
-          def setImpressions(value: Double): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
+          inline def setImpressions(value: Double): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
+          inline def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
           
-          @scala.inline
-          def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+          inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+          inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
           
-          @scala.inline
-          def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+          inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
           
-          @scala.inline
-          def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+          inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+          inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         }
       }
       
@@ -84,32 +71,24 @@ object gapi {
       }
       object ApiDimensionFilter {
         
-        @scala.inline
-        def apply(): ApiDimensionFilter = {
+        inline def apply(): ApiDimensionFilter = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ApiDimensionFilter]
         }
         
-        @scala.inline
-        implicit class ApiDimensionFilterMutableBuilder[Self <: ApiDimensionFilter] (val x: Self) extends AnyVal {
+        extension [Self <: ApiDimensionFilter](x: Self) {
           
-          @scala.inline
-          def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+          inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+          inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
           
-          @scala.inline
-          def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+          inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+          inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
           
-          @scala.inline
-          def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+          inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+          inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
         }
       }
       
@@ -121,29 +100,22 @@ object gapi {
       }
       object ApiDimensionFilterGroup {
         
-        @scala.inline
-        def apply(): ApiDimensionFilterGroup = {
+        inline def apply(): ApiDimensionFilterGroup = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ApiDimensionFilterGroup]
         }
         
-        @scala.inline
-        implicit class ApiDimensionFilterGroupMutableBuilder[Self <: ApiDimensionFilterGroup] (val x: Self) extends AnyVal {
+        extension [Self <: ApiDimensionFilterGroup](x: Self) {
           
-          @scala.inline
-          def setFilters(value: js.Array[ApiDimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+          inline def setFilters(value: js.Array[ApiDimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+          inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
           
-          @scala.inline
-          def setFiltersVarargs(value: ApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+          inline def setFiltersVarargs(value: ApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
           
-          @scala.inline
-          def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
+          inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
+          inline def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
         }
       }
       
@@ -190,68 +162,48 @@ object gapi {
       }
       object SearchAnalyticsQueryRequest {
         
-        @scala.inline
-        def apply(): SearchAnalyticsQueryRequest = {
+        inline def apply(): SearchAnalyticsQueryRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SearchAnalyticsQueryRequest]
         }
         
-        @scala.inline
-        implicit class SearchAnalyticsQueryRequestMutableBuilder[Self <: SearchAnalyticsQueryRequest] (val x: Self) extends AnyVal {
+        extension [Self <: SearchAnalyticsQueryRequest](x: Self) {
           
-          @scala.inline
-          def setAggregationType(value: String): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
+          inline def setAggregationType(value: String): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
+          inline def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
           
-          @scala.inline
-          def setDimensionFilterGroups(value: js.Array[ApiDimensionFilterGroup]): Self = StObject.set(x, "dimensionFilterGroups", value.asInstanceOf[js.Any])
+          inline def setDimensionFilterGroups(value: js.Array[ApiDimensionFilterGroup]): Self = StObject.set(x, "dimensionFilterGroups", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDimensionFilterGroupsUndefined: Self = StObject.set(x, "dimensionFilterGroups", js.undefined)
+          inline def setDimensionFilterGroupsUndefined: Self = StObject.set(x, "dimensionFilterGroups", js.undefined)
           
-          @scala.inline
-          def setDimensionFilterGroupsVarargs(value: ApiDimensionFilterGroup*): Self = StObject.set(x, "dimensionFilterGroups", js.Array(value :_*))
+          inline def setDimensionFilterGroupsVarargs(value: ApiDimensionFilterGroup*): Self = StObject.set(x, "dimensionFilterGroups", js.Array(value :_*))
           
-          @scala.inline
-          def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+          inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+          inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
           
-          @scala.inline
-          def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+          inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
           
-          @scala.inline
-          def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+          inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+          inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
           
-          @scala.inline
-          def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
+          inline def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRowLimitUndefined: Self = StObject.set(x, "rowLimit", js.undefined)
+          inline def setRowLimitUndefined: Self = StObject.set(x, "rowLimit", js.undefined)
           
-          @scala.inline
-          def setSearchType(value: String): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
+          inline def setSearchType(value: String): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
+          inline def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
           
-          @scala.inline
-          def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+          inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+          inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
           
-          @scala.inline
-          def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
+          inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
+          inline def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
         }
       }
       
@@ -265,29 +217,22 @@ object gapi {
       }
       object SearchAnalyticsQueryResponse {
         
-        @scala.inline
-        def apply(): SearchAnalyticsQueryResponse = {
+        inline def apply(): SearchAnalyticsQueryResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SearchAnalyticsQueryResponse]
         }
         
-        @scala.inline
-        implicit class SearchAnalyticsQueryResponseMutableBuilder[Self <: SearchAnalyticsQueryResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SearchAnalyticsQueryResponse](x: Self) {
           
-          @scala.inline
-          def setResponseAggregationType(value: String): Self = StObject.set(x, "responseAggregationType", value.asInstanceOf[js.Any])
+          inline def setResponseAggregationType(value: String): Self = StObject.set(x, "responseAggregationType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResponseAggregationTypeUndefined: Self = StObject.set(x, "responseAggregationType", js.undefined)
+          inline def setResponseAggregationTypeUndefined: Self = StObject.set(x, "responseAggregationType", js.undefined)
           
-          @scala.inline
-          def setRows(value: js.Array[ApiDataRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+          inline def setRows(value: js.Array[ApiDataRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+          inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
           
-          @scala.inline
-          def setRowsVarargs(value: ApiDataRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+          inline def setRowsVarargs(value: ApiDataRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
         }
       }
       
@@ -311,23 +256,18 @@ object gapi {
       }
       object SitemapsListResponse {
         
-        @scala.inline
-        def apply(): SitemapsListResponse = {
+        inline def apply(): SitemapsListResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SitemapsListResponse]
         }
         
-        @scala.inline
-        implicit class SitemapsListResponseMutableBuilder[Self <: SitemapsListResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SitemapsListResponse](x: Self) {
           
-          @scala.inline
-          def setSitemap(value: js.Array[WmxSitemap]): Self = StObject.set(x, "sitemap", value.asInstanceOf[js.Any])
+          inline def setSitemap(value: js.Array[WmxSitemap]): Self = StObject.set(x, "sitemap", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSitemapUndefined: Self = StObject.set(x, "sitemap", js.undefined)
+          inline def setSitemapUndefined: Self = StObject.set(x, "sitemap", js.undefined)
           
-          @scala.inline
-          def setSitemapVarargs(value: WmxSitemap*): Self = StObject.set(x, "sitemap", js.Array(value :_*))
+          inline def setSitemapVarargs(value: WmxSitemap*): Self = StObject.set(x, "sitemap", js.Array(value :_*))
         }
       }
       
@@ -358,23 +298,18 @@ object gapi {
       }
       object SitesListResponse {
         
-        @scala.inline
-        def apply(): SitesListResponse = {
+        inline def apply(): SitesListResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SitesListResponse]
         }
         
-        @scala.inline
-        implicit class SitesListResponseMutableBuilder[Self <: SitesListResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SitesListResponse](x: Self) {
           
-          @scala.inline
-          def setSiteEntry(value: js.Array[WmxSite]): Self = StObject.set(x, "siteEntry", value.asInstanceOf[js.Any])
+          inline def setSiteEntry(value: js.Array[WmxSite]): Self = StObject.set(x, "siteEntry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSiteEntryUndefined: Self = StObject.set(x, "siteEntry", js.undefined)
+          inline def setSiteEntryUndefined: Self = StObject.set(x, "siteEntry", js.undefined)
           
-          @scala.inline
-          def setSiteEntryVarargs(value: WmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value :_*))
+          inline def setSiteEntryVarargs(value: WmxSite*): Self = StObject.set(x, "siteEntry", js.Array(value :_*))
         }
       }
       
@@ -408,26 +343,20 @@ object gapi {
       }
       object WmxSite {
         
-        @scala.inline
-        def apply(): WmxSite = {
+        inline def apply(): WmxSite = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[WmxSite]
         }
         
-        @scala.inline
-        implicit class WmxSiteMutableBuilder[Self <: WmxSite] (val x: Self) extends AnyVal {
+        extension [Self <: WmxSite](x: Self) {
           
-          @scala.inline
-          def setPermissionLevel(value: String): Self = StObject.set(x, "permissionLevel", value.asInstanceOf[js.Any])
+          inline def setPermissionLevel(value: String): Self = StObject.set(x, "permissionLevel", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPermissionLevelUndefined: Self = StObject.set(x, "permissionLevel", js.undefined)
+          inline def setPermissionLevelUndefined: Self = StObject.set(x, "permissionLevel", js.undefined)
           
-          @scala.inline
-          def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
+          inline def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
+          inline def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
         }
       }
       
@@ -462,71 +391,50 @@ object gapi {
       }
       object WmxSitemap {
         
-        @scala.inline
-        def apply(): WmxSitemap = {
+        inline def apply(): WmxSitemap = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[WmxSitemap]
         }
         
-        @scala.inline
-        implicit class WmxSitemapMutableBuilder[Self <: WmxSitemap] (val x: Self) extends AnyVal {
+        extension [Self <: WmxSitemap](x: Self) {
           
-          @scala.inline
-          def setContents(value: js.Array[WmxSitemapContent]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+          inline def setContents(value: js.Array[WmxSitemapContent]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+          inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
           
-          @scala.inline
-          def setContentsVarargs(value: WmxSitemapContent*): Self = StObject.set(x, "contents", js.Array(value :_*))
+          inline def setContentsVarargs(value: WmxSitemapContent*): Self = StObject.set(x, "contents", js.Array(value :_*))
           
-          @scala.inline
-          def setErrors(value: String): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+          inline def setErrors(value: String): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+          inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
           
-          @scala.inline
-          def setIsPending(value: Boolean): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
+          inline def setIsPending(value: Boolean): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsPendingUndefined: Self = StObject.set(x, "isPending", js.undefined)
+          inline def setIsPendingUndefined: Self = StObject.set(x, "isPending", js.undefined)
           
-          @scala.inline
-          def setIsSitemapsIndex(value: Boolean): Self = StObject.set(x, "isSitemapsIndex", value.asInstanceOf[js.Any])
+          inline def setIsSitemapsIndex(value: Boolean): Self = StObject.set(x, "isSitemapsIndex", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIsSitemapsIndexUndefined: Self = StObject.set(x, "isSitemapsIndex", js.undefined)
+          inline def setIsSitemapsIndexUndefined: Self = StObject.set(x, "isSitemapsIndex", js.undefined)
           
-          @scala.inline
-          def setLastDownloaded(value: String): Self = StObject.set(x, "lastDownloaded", value.asInstanceOf[js.Any])
+          inline def setLastDownloaded(value: String): Self = StObject.set(x, "lastDownloaded", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLastDownloadedUndefined: Self = StObject.set(x, "lastDownloaded", js.undefined)
+          inline def setLastDownloadedUndefined: Self = StObject.set(x, "lastDownloaded", js.undefined)
           
-          @scala.inline
-          def setLastSubmitted(value: String): Self = StObject.set(x, "lastSubmitted", value.asInstanceOf[js.Any])
+          inline def setLastSubmitted(value: String): Self = StObject.set(x, "lastSubmitted", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLastSubmittedUndefined: Self = StObject.set(x, "lastSubmitted", js.undefined)
+          inline def setLastSubmittedUndefined: Self = StObject.set(x, "lastSubmitted", js.undefined)
           
-          @scala.inline
-          def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+          inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+          inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
           
-          @scala.inline
-          def setWarnings(value: String): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+          inline def setWarnings(value: String): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+          inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
         }
       }
       
@@ -543,32 +451,24 @@ object gapi {
       }
       object WmxSitemapContent {
         
-        @scala.inline
-        def apply(): WmxSitemapContent = {
+        inline def apply(): WmxSitemapContent = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[WmxSitemapContent]
         }
         
-        @scala.inline
-        implicit class WmxSitemapContentMutableBuilder[Self <: WmxSitemapContent] (val x: Self) extends AnyVal {
+        extension [Self <: WmxSitemapContent](x: Self) {
           
-          @scala.inline
-          def setIndexed(value: String): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
+          inline def setIndexed(value: String): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
+          inline def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
           
-          @scala.inline
-          def setSubmitted(value: String): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
+          inline def setSubmitted(value: String): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSubmittedUndefined: Self = StObject.set(x, "submitted", js.undefined)
+          inline def setSubmittedUndefined: Self = StObject.set(x, "submitted", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         }
       }
     }

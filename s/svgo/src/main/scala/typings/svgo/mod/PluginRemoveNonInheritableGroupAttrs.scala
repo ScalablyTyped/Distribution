@@ -12,16 +12,13 @@ trait PluginRemoveNonInheritableGroupAttrs
 }
 object PluginRemoveNonInheritableGroupAttrs {
   
-  @scala.inline
-  def apply(removeNonInheritableGroupAttrs: Boolean | js.Object): PluginRemoveNonInheritableGroupAttrs = {
+  inline def apply(removeNonInheritableGroupAttrs: Boolean | js.Object): PluginRemoveNonInheritableGroupAttrs = {
     val __obj = js.Dynamic.literal(removeNonInheritableGroupAttrs = removeNonInheritableGroupAttrs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveNonInheritableGroupAttrs]
   }
   
-  @scala.inline
-  implicit class PluginRemoveNonInheritableGroupAttrsMutableBuilder[Self <: PluginRemoveNonInheritableGroupAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveNonInheritableGroupAttrs](x: Self) {
     
-    @scala.inline
-    def setRemoveNonInheritableGroupAttrs(value: Boolean | js.Object): Self = StObject.set(x, "removeNonInheritableGroupAttrs", value.asInstanceOf[js.Any])
+    inline def setRemoveNonInheritableGroupAttrs(value: Boolean | js.Object): Self = StObject.set(x, "removeNonInheritableGroupAttrs", value.asInstanceOf[js.Any])
   }
 }

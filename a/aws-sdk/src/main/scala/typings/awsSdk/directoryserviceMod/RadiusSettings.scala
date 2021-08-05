@@ -48,64 +48,45 @@ trait RadiusSettings extends StObject {
 }
 object RadiusSettings {
   
-  @scala.inline
-  def apply(): RadiusSettings = {
+  inline def apply(): RadiusSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadiusSettings]
   }
   
-  @scala.inline
-  implicit class RadiusSettingsMutableBuilder[Self <: RadiusSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RadiusSettings](x: Self) {
     
-    @scala.inline
-    def setAuthenticationProtocol(value: RadiusAuthenticationProtocol): Self = StObject.set(x, "AuthenticationProtocol", value.asInstanceOf[js.Any])
+    inline def setAuthenticationProtocol(value: RadiusAuthenticationProtocol): Self = StObject.set(x, "AuthenticationProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationProtocolUndefined: Self = StObject.set(x, "AuthenticationProtocol", js.undefined)
+    inline def setAuthenticationProtocolUndefined: Self = StObject.set(x, "AuthenticationProtocol", js.undefined)
     
-    @scala.inline
-    def setDisplayLabel(value: RadiusDisplayLabel): Self = StObject.set(x, "DisplayLabel", value.asInstanceOf[js.Any])
+    inline def setDisplayLabel(value: RadiusDisplayLabel): Self = StObject.set(x, "DisplayLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLabelUndefined: Self = StObject.set(x, "DisplayLabel", js.undefined)
+    inline def setDisplayLabelUndefined: Self = StObject.set(x, "DisplayLabel", js.undefined)
     
-    @scala.inline
-    def setRadiusPort(value: PortNumber): Self = StObject.set(x, "RadiusPort", value.asInstanceOf[js.Any])
+    inline def setRadiusPort(value: PortNumber): Self = StObject.set(x, "RadiusPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusPortUndefined: Self = StObject.set(x, "RadiusPort", js.undefined)
+    inline def setRadiusPortUndefined: Self = StObject.set(x, "RadiusPort", js.undefined)
     
-    @scala.inline
-    def setRadiusRetries(value: RadiusRetries): Self = StObject.set(x, "RadiusRetries", value.asInstanceOf[js.Any])
+    inline def setRadiusRetries(value: RadiusRetries): Self = StObject.set(x, "RadiusRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusRetriesUndefined: Self = StObject.set(x, "RadiusRetries", js.undefined)
+    inline def setRadiusRetriesUndefined: Self = StObject.set(x, "RadiusRetries", js.undefined)
     
-    @scala.inline
-    def setRadiusServers(value: Servers): Self = StObject.set(x, "RadiusServers", value.asInstanceOf[js.Any])
+    inline def setRadiusServers(value: Servers): Self = StObject.set(x, "RadiusServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusServersUndefined: Self = StObject.set(x, "RadiusServers", js.undefined)
+    inline def setRadiusServersUndefined: Self = StObject.set(x, "RadiusServers", js.undefined)
     
-    @scala.inline
-    def setRadiusServersVarargs(value: Server*): Self = StObject.set(x, "RadiusServers", js.Array(value :_*))
+    inline def setRadiusServersVarargs(value: Server*): Self = StObject.set(x, "RadiusServers", js.Array(value :_*))
     
-    @scala.inline
-    def setRadiusTimeout(value: RadiusTimeout): Self = StObject.set(x, "RadiusTimeout", value.asInstanceOf[js.Any])
+    inline def setRadiusTimeout(value: RadiusTimeout): Self = StObject.set(x, "RadiusTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusTimeoutUndefined: Self = StObject.set(x, "RadiusTimeout", js.undefined)
+    inline def setRadiusTimeoutUndefined: Self = StObject.set(x, "RadiusTimeout", js.undefined)
     
-    @scala.inline
-    def setSharedSecret(value: RadiusSharedSecret): Self = StObject.set(x, "SharedSecret", value.asInstanceOf[js.Any])
+    inline def setSharedSecret(value: RadiusSharedSecret): Self = StObject.set(x, "SharedSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedSecretUndefined: Self = StObject.set(x, "SharedSecret", js.undefined)
+    inline def setSharedSecretUndefined: Self = StObject.set(x, "SharedSecret", js.undefined)
     
-    @scala.inline
-    def setUseSameUsername(value: UseSameUsername): Self = StObject.set(x, "UseSameUsername", value.asInstanceOf[js.Any])
+    inline def setUseSameUsername(value: UseSameUsername): Self = StObject.set(x, "UseSameUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSameUsernameUndefined: Self = StObject.set(x, "UseSameUsername", js.undefined)
+    inline def setUseSameUsernameUndefined: Self = StObject.set(x, "UseSameUsername", js.undefined)
   }
 }

@@ -24,23 +24,18 @@ object filterableMultiSelectMod {
   }
   object FilterItemsExtra {
     
-    @scala.inline
-    def apply[T](inputValue: String): FilterItemsExtra[T] = {
+    inline def apply[T](inputValue: String): FilterItemsExtra[T] = {
       val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilterItemsExtra[T]]
     }
     
-    @scala.inline
-    implicit class FilterItemsExtraMutableBuilder[Self <: FilterItemsExtra[?], T] (val x: Self & FilterItemsExtra[T]) extends AnyVal {
+    extension [Self <: FilterItemsExtra[?], T](x: Self & FilterItemsExtra[T]) {
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemToString(value: /* item */ T => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
+      inline def setItemToString(value: /* item */ T => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItemToStringUndefined: Self = StObject.set(x, "itemToString", js.undefined)
+      inline def setItemToStringUndefined: Self = StObject.set(x, "itemToString", js.undefined)
     }
   }
   
@@ -58,23 +53,18 @@ object filterableMultiSelectMod {
   }
   object FilterableMultiSelectProps {
     
-    @scala.inline
-    def apply[T /* <: ListBoxBaseItemType */](id: String, items: js.Array[T], onChange: SelectedItems[T] => Unit, placeholder: String): FilterableMultiSelectProps[T] = {
+    inline def apply[T /* <: ListBoxBaseItemType */](id: String, items: js.Array[T], onChange: SelectedItems[T] => Unit, placeholder: String): FilterableMultiSelectProps[T] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), placeholder = placeholder.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilterableMultiSelectProps[T]]
     }
     
-    @scala.inline
-    implicit class FilterableMultiSelectPropsMutableBuilder[Self <: FilterableMultiSelectProps[?], T /* <: ListBoxBaseItemType */] (val x: Self & FilterableMultiSelectProps[T]) extends AnyVal {
+    extension [Self <: FilterableMultiSelectProps[?], T /* <: ListBoxBaseItemType */](x: Self & FilterableMultiSelectProps[T]) {
       
-      @scala.inline
-      def setFilterItems(value: (/* items */ js.Array[T], /* extra */ FilterItemsExtra[T]) => js.Array[T]): Self = StObject.set(x, "filterItems", js.Any.fromFunction2(value))
+      inline def setFilterItems(value: (/* items */ js.Array[T], /* extra */ FilterItemsExtra[T]) => js.Array[T]): Self = StObject.set(x, "filterItems", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterItemsUndefined: Self = StObject.set(x, "filterItems", js.undefined)
+      inline def setFilterItemsUndefined: Self = StObject.set(x, "filterItems", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     }
   }
 }

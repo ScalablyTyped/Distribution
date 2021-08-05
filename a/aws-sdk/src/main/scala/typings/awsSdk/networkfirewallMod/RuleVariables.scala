@@ -18,25 +18,19 @@ trait RuleVariables extends StObject {
 }
 object RuleVariables {
   
-  @scala.inline
-  def apply(): RuleVariables = {
+  inline def apply(): RuleVariables = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleVariables]
   }
   
-  @scala.inline
-  implicit class RuleVariablesMutableBuilder[Self <: RuleVariables] (val x: Self) extends AnyVal {
+  extension [Self <: RuleVariables](x: Self) {
     
-    @scala.inline
-    def setIPSets(value: IPSets): Self = StObject.set(x, "IPSets", value.asInstanceOf[js.Any])
+    inline def setIPSets(value: IPSets): Self = StObject.set(x, "IPSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPSetsUndefined: Self = StObject.set(x, "IPSets", js.undefined)
+    inline def setIPSetsUndefined: Self = StObject.set(x, "IPSets", js.undefined)
     
-    @scala.inline
-    def setPortSets(value: PortSets): Self = StObject.set(x, "PortSets", value.asInstanceOf[js.Any])
+    inline def setPortSets(value: PortSets): Self = StObject.set(x, "PortSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortSetsUndefined: Self = StObject.set(x, "PortSets", js.undefined)
+    inline def setPortSetsUndefined: Self = StObject.set(x, "PortSets", js.undefined)
   }
 }

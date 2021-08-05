@@ -19,8 +19,7 @@ trait ICoreDispatcher
 }
 object ICoreDispatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasThreadAccess: Boolean,
     onacceleratorkeyactivated: js.Any,
     processEvents: CoreProcessEventsOption => Unit,
@@ -31,19 +30,14 @@ object ICoreDispatcher {
     __obj.asInstanceOf[ICoreDispatcher]
   }
   
-  @scala.inline
-  implicit class ICoreDispatcherMutableBuilder[Self <: ICoreDispatcher] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreDispatcher](x: Self) {
     
-    @scala.inline
-    def setHasThreadAccess(value: Boolean): Self = StObject.set(x, "hasThreadAccess", value.asInstanceOf[js.Any])
+    inline def setHasThreadAccess(value: Boolean): Self = StObject.set(x, "hasThreadAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessEvents(value: CoreProcessEventsOption => Unit): Self = StObject.set(x, "processEvents", js.Any.fromFunction1(value))
+    inline def setProcessEvents(value: CoreProcessEventsOption => Unit): Self = StObject.set(x, "processEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRunAsync(value: (CoreDispatcherPriority, DispatchedHandler) => IAsyncAction): Self = StObject.set(x, "runAsync", js.Any.fromFunction2(value))
+    inline def setRunAsync(value: (CoreDispatcherPriority, DispatchedHandler) => IAsyncAction): Self = StObject.set(x, "runAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRunIdleAsync(value: IdleDispatchedHandler => IAsyncAction): Self = StObject.set(x, "runIdleAsync", js.Any.fromFunction1(value))
+    inline def setRunIdleAsync(value: IdleDispatchedHandler => IAsyncAction): Self = StObject.set(x, "runIdleAsync", js.Any.fromFunction1(value))
   }
 }

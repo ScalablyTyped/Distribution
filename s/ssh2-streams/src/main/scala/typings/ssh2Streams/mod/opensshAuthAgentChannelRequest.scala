@@ -13,19 +13,15 @@ trait opensshAuthAgentChannelRequest extends StObject {
 }
 object opensshAuthAgentChannelRequest {
   
-  @scala.inline
-  def apply(recipient: Double): opensshAuthAgentChannelRequest = {
+  inline def apply(recipient: Double): opensshAuthAgentChannelRequest = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = "auth-agent-req@openssh.com")
     __obj.asInstanceOf[opensshAuthAgentChannelRequest]
   }
   
-  @scala.inline
-  implicit class opensshAuthAgentChannelRequestMutableBuilder[Self <: opensshAuthAgentChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: opensshAuthAgentChannelRequest](x: Self) {
     
-    @scala.inline
-    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: `auth-agent-req@opensshDotcom`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: `auth-agent-req@opensshDotcom`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

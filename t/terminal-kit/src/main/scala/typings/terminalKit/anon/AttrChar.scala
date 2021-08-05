@@ -13,19 +13,15 @@ trait AttrChar extends StObject {
 }
 object AttrChar {
   
-  @scala.inline
-  def apply(attr: Attributes, char: String): AttrChar = {
+  inline def apply(attr: Attributes, char: String): AttrChar = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrChar]
   }
   
-  @scala.inline
-  implicit class AttrCharMutableBuilder[Self <: AttrChar] (val x: Self) extends AnyVal {
+  extension [Self <: AttrChar](x: Self) {
     
-    @scala.inline
-    def setAttr(value: Attributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: Attributes): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+    inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait Program_
 }
 object Program_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: js.Array[Statement | ModuleDeclaration],
     end: Double,
     loc: SourceLocation,
@@ -39,28 +38,20 @@ object Program_ {
     __obj.asInstanceOf[Program_]
   }
   
-  @scala.inline
-  implicit class Program_MutableBuilder[Self <: Program_] (val x: Self) extends AnyVal {
+  extension [Self <: Program_](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[Statement | ModuleDeclaration]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[Statement | ModuleDeclaration]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: (Statement | ModuleDeclaration)*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: (Statement | ModuleDeclaration)*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectives(value: js.Array[Directive_]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Array[Directive_]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    @scala.inline
-    def setDirectivesVarargs(value: Directive_ *): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: Directive_ *): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceType(value: script | module): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: script | module): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Program): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Program): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

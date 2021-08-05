@@ -14,16 +14,13 @@ trait GetFileInfoRequest extends StObject {
 }
 object GetFileInfoRequest {
   
-  @scala.inline
-  def apply(objectId: RemoteObjectId): GetFileInfoRequest = {
+  inline def apply(objectId: RemoteObjectId): GetFileInfoRequest = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileInfoRequest]
   }
   
-  @scala.inline
-  implicit class GetFileInfoRequestMutableBuilder[Self <: GetFileInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileInfoRequest](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

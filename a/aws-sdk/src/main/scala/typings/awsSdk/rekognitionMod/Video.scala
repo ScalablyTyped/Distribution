@@ -13,19 +13,15 @@ trait Video extends StObject {
 }
 object Video {
   
-  @scala.inline
-  def apply(): Video = {
+  inline def apply(): Video = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Video]
   }
   
-  @scala.inline
-  implicit class VideoMutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
+  extension [Self <: Video](x: Self) {
     
-    @scala.inline
-    def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
+    inline def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
+    inline def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
   }
 }

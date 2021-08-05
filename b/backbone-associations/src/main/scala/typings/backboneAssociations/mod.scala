@@ -78,50 +78,41 @@ object mod {
     @JSImport("backbone", "Associations.EVENTS_BUBBLE")
     @js.native
     def EVENTS_BUBBLE: Boolean = js.native
-    @scala.inline
-    def EVENTS_BUBBLE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENTS_BUBBLE")(x.asInstanceOf[js.Any])
+    inline def EVENTS_BUBBLE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENTS_BUBBLE")(x.asInstanceOf[js.Any])
     
     @JSImport("backbone", "Associations.EVENTS_NC")
     @js.native
     def EVENTS_NC: Boolean = js.native
-    @scala.inline
-    def EVENTS_NC_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENTS_NC")(x.asInstanceOf[js.Any])
+    inline def EVENTS_NC_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENTS_NC")(x.asInstanceOf[js.Any])
     
     @JSImport("backbone", "Associations.EVENTS_WILDCARD")
     @js.native
     def EVENTS_WILDCARD: Boolean = js.native
-    @scala.inline
-    def EVENTS_WILDCARD_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENTS_WILDCARD")(x.asInstanceOf[js.Any])
+    inline def EVENTS_WILDCARD_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENTS_WILDCARD")(x.asInstanceOf[js.Any])
     
     @JSImport("backbone", "Associations.Many")
     @js.native
     def Many: String = js.native
-    @scala.inline
-    def Many_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Many")(x.asInstanceOf[js.Any])
+    inline def Many_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Many")(x.asInstanceOf[js.Any])
     
     @JSImport("backbone", "Associations.One")
     @js.native
     def One: String = js.native
-    @scala.inline
-    def One_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("One")(x.asInstanceOf[js.Any])
+    inline def One_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("One")(x.asInstanceOf[js.Any])
     
     @JSImport("backbone", "Associations.SEPARATOR")
     @js.native
     def SEPARATOR: String = js.native
-    @scala.inline
-    def SEPARATOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPARATOR")(x.asInstanceOf[js.Any])
+    inline def SEPARATOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPARATOR")(x.asInstanceOf[js.Any])
     
     @JSImport("backbone", "Associations.Self")
     @js.native
     def Self: String = js.native
-    @scala.inline
-    def Self_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Self")(x.asInstanceOf[js.Any])
+    inline def Self_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Self")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getSeparator(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeparator")().asInstanceOf[js.Any]
+    inline def getSeparator(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeparator")().asInstanceOf[js.Any]
     
-    @scala.inline
-    def setSeparator(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSeparator")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setSeparator(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSeparator")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     trait IRelation extends StObject {
       
@@ -152,8 +143,7 @@ object mod {
     }
     object IRelation {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         key: String,
         relatedModel: String | Instantiable0[typings.backboneAssociations.mod.Associations.AssociatedModel],
         `type`: String
@@ -163,50 +153,35 @@ object mod {
         __obj.asInstanceOf[IRelation]
       }
       
-      @scala.inline
-      implicit class IRelationMutableBuilder[Self <: IRelation] (val x: Self) extends AnyVal {
+      extension [Self <: IRelation](x: Self) {
         
-        @scala.inline
-        def setCollectionType(value: String | Instantiable0[Collection[js.Any]]): Self = StObject.set(x, "collectionType", value.asInstanceOf[js.Any])
+        inline def setCollectionType(value: String | Instantiable0[Collection[js.Any]]): Self = StObject.set(x, "collectionType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCollectionTypeUndefined: Self = StObject.set(x, "collectionType", js.undefined)
+        inline def setCollectionTypeUndefined: Self = StObject.set(x, "collectionType", js.undefined)
         
-        @scala.inline
-        def setIsTransient(value: Boolean): Self = StObject.set(x, "isTransient", value.asInstanceOf[js.Any])
+        inline def setIsTransient(value: Boolean): Self = StObject.set(x, "isTransient", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsTransientUndefined: Self = StObject.set(x, "isTransient", js.undefined)
+        inline def setIsTransientUndefined: Self = StObject.set(x, "isTransient", js.undefined)
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMap(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+        inline def setMap(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+        inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
         
-        @scala.inline
-        def setRelatedModel(value: String | Instantiable0[typings.backboneAssociations.mod.Associations.AssociatedModel]): Self = StObject.set(x, "relatedModel", value.asInstanceOf[js.Any])
+        inline def setRelatedModel(value: String | Instantiable0[typings.backboneAssociations.mod.Associations.AssociatedModel]): Self = StObject.set(x, "relatedModel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoteKey(value: String): Self = StObject.set(x, "remoteKey", value.asInstanceOf[js.Any])
+        inline def setRemoteKey(value: String): Self = StObject.set(x, "remoteKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoteKeyUndefined: Self = StObject.set(x, "remoteKey", js.undefined)
+        inline def setRemoteKeyUndefined: Self = StObject.set(x, "remoteKey", js.undefined)
         
-        @scala.inline
-        def setSerialize(value: js.Array[String]): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
+        inline def setSerialize(value: js.Array[String]): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+        inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
         
-        @scala.inline
-        def setSerializeVarargs(value: String*): Self = StObject.set(x, "serialize", js.Array(value :_*))
+        inline def setSerializeVarargs(value: String*): Self = StObject.set(x, "serialize", js.Array(value :_*))
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -214,18 +189,15 @@ object mod {
   @JSImport("backbone", "Many")
   @js.native
   def Many: String = js.native
-  @scala.inline
-  def Many_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Many")(x.asInstanceOf[js.Any])
+  inline def Many_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Many")(x.asInstanceOf[js.Any])
   
   @JSImport("backbone", "One")
   @js.native
   def One: String = js.native
-  @scala.inline
-  def One_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("One")(x.asInstanceOf[js.Any])
+  inline def One_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("One")(x.asInstanceOf[js.Any])
   
   @JSImport("backbone", "Self")
   @js.native
   def Self: String = js.native
-  @scala.inline
-  def Self_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Self")(x.asInstanceOf[js.Any])
+  inline def Self_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Self")(x.asInstanceOf[js.Any])
 }

@@ -22,32 +22,24 @@ object JSONStore {
   }
   object AddOptions {
     
-    @scala.inline
-    def apply(): AddOptions = {
+    inline def apply(): AddOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddOptions]
     }
     
-    @scala.inline
-    implicit class AddOptionsMutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddOptions](x: Self) {
       
-      @scala.inline
-      def setAdditionalSearchFields(value: js.Any): Self = StObject.set(x, "additionalSearchFields", value.asInstanceOf[js.Any])
+      inline def setAdditionalSearchFields(value: js.Any): Self = StObject.set(x, "additionalSearchFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalSearchFieldsUndefined: Self = StObject.set(x, "additionalSearchFields", js.undefined)
+      inline def setAdditionalSearchFieldsUndefined: Self = StObject.set(x, "additionalSearchFields", js.undefined)
       
-      @scala.inline
-      def setMarkDirty(value: Boolean): Self = StObject.set(x, "markDirty", value.asInstanceOf[js.Any])
+      inline def setMarkDirty(value: Boolean): Self = StObject.set(x, "markDirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkDirtyUndefined: Self = StObject.set(x, "markDirty", js.undefined)
+      inline def setMarkDirtyUndefined: Self = StObject.set(x, "markDirty", js.undefined)
       
-      @scala.inline
-      def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     }
   }
   
@@ -61,26 +53,20 @@ object JSONStore {
   }
   object AdvancedFindOptions {
     
-    @scala.inline
-    def apply(): AdvancedFindOptions = {
+    inline def apply(): AdvancedFindOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdvancedFindOptions]
     }
     
-    @scala.inline
-    implicit class AdvancedFindOptionsMutableBuilder[Self <: AdvancedFindOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AdvancedFindOptions](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -94,32 +80,24 @@ object JSONStore {
   }
   object BasicFindOptions {
     
-    @scala.inline
-    def apply(): BasicFindOptions = {
+    inline def apply(): BasicFindOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BasicFindOptions]
     }
     
-    @scala.inline
-    implicit class BasicFindOptionsMutableBuilder[Self <: BasicFindOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BasicFindOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(value: js.Array[String]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.Array[String]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
       
-      @scala.inline
-      def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+      inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
     }
   }
   
@@ -135,35 +113,26 @@ object JSONStore {
   }
   object ChangeOptions {
     
-    @scala.inline
-    def apply(): ChangeOptions = {
+    inline def apply(): ChangeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChangeOptions]
     }
     
-    @scala.inline
-    implicit class ChangeOptionsMutableBuilder[Self <: ChangeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeOptions](x: Self) {
       
-      @scala.inline
-      def setAddNew(value: Boolean): Self = StObject.set(x, "addNew", value.asInstanceOf[js.Any])
+      inline def setAddNew(value: Boolean): Self = StObject.set(x, "addNew", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddNewUndefined: Self = StObject.set(x, "addNew", js.undefined)
+      inline def setAddNewUndefined: Self = StObject.set(x, "addNew", js.undefined)
       
-      @scala.inline
-      def setMarkDirty(value: Boolean): Self = StObject.set(x, "markDirty", value.asInstanceOf[js.Any])
+      inline def setMarkDirty(value: Boolean): Self = StObject.set(x, "markDirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkDirtyUndefined: Self = StObject.set(x, "markDirty", js.undefined)
+      inline def setMarkDirtyUndefined: Self = StObject.set(x, "markDirty", js.undefined)
       
-      @scala.inline
-      def setReplaceCriteria(value: js.Array[String]): Self = StObject.set(x, "replaceCriteria", value.asInstanceOf[js.Any])
+      inline def setReplaceCriteria(value: js.Array[String]): Self = StObject.set(x, "replaceCriteria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceCriteriaUndefined: Self = StObject.set(x, "replaceCriteria", js.undefined)
+      inline def setReplaceCriteriaUndefined: Self = StObject.set(x, "replaceCriteria", js.undefined)
       
-      @scala.inline
-      def setReplaceCriteriaVarargs(value: String*): Self = StObject.set(x, "replaceCriteria", js.Array(value :_*))
+      inline def setReplaceCriteriaVarargs(value: String*): Self = StObject.set(x, "replaceCriteria", js.Array(value :_*))
     }
   }
   
@@ -175,20 +144,16 @@ object JSONStore {
   }
   object EraseOptions {
     
-    @scala.inline
-    def apply(): EraseOptions = {
+    inline def apply(): EraseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EraseOptions]
     }
     
-    @scala.inline
-    implicit class EraseOptionsMutableBuilder[Self <: EraseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EraseOptions](x: Self) {
       
-      @scala.inline
-      def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     }
   }
   
@@ -204,32 +169,24 @@ object JSONStore {
   }
   object FindOptions {
     
-    @scala.inline
-    def apply(): FindOptions = {
+    inline def apply(): FindOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindOptions]
     }
     
-    @scala.inline
-    implicit class FindOptionsMutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FindOptions](x: Self) {
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -247,44 +204,32 @@ object JSONStore {
   }
   object InitOptions {
     
-    @scala.inline
-    def apply(): InitOptions = {
+    inline def apply(): InitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitOptions]
     }
     
-    @scala.inline
-    implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitOptions](x: Self) {
       
-      @scala.inline
-      def setAnalytics(value: Boolean): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
+      inline def setAnalytics(value: Boolean): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
+      inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
       
-      @scala.inline
-      def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      @scala.inline
-      def setLocalKeyGen(value: Boolean): Self = StObject.set(x, "localKeyGen", value.asInstanceOf[js.Any])
+      inline def setLocalKeyGen(value: Boolean): Self = StObject.set(x, "localKeyGen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalKeyGenUndefined: Self = StObject.set(x, "localKeyGen", js.undefined)
+      inline def setLocalKeyGenUndefined: Self = StObject.set(x, "localKeyGen", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -472,8 +417,7 @@ object JSONStore {
   }
   object QueryPartObj {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       between: (js.Any, js.Any) => js.Array[js.Any],
       equal: (js.Any, js.Any) => js.Array[js.Any],
       greaterOrEqualThan: (js.Any, js.Any) => js.Array[js.Any],
@@ -495,56 +439,39 @@ object JSONStore {
       __obj.asInstanceOf[QueryPartObj]
     }
     
-    @scala.inline
-    implicit class QueryPartObjMutableBuilder[Self <: QueryPartObj] (val x: Self) extends AnyVal {
+    extension [Self <: QueryPartObj](x: Self) {
       
-      @scala.inline
-      def setBetween(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
+      inline def setBetween(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEqual(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
+      inline def setEqual(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGreaterOrEqualThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "greaterOrEqualThan", js.Any.fromFunction2(value))
+      inline def setGreaterOrEqualThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "greaterOrEqualThan", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGreaterThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "greaterThan", js.Any.fromFunction2(value))
+      inline def setGreaterThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "greaterThan", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInside(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "inside", js.Any.fromFunction2(value))
+      inline def setInside(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "inside", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLeftLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "leftLike", js.Any.fromFunction2(value))
+      inline def setLeftLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "leftLike", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLessOrEqualThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "lessOrEqualThan", js.Any.fromFunction2(value))
+      inline def setLessOrEqualThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "lessOrEqualThan", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLessThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "lessThan", js.Any.fromFunction2(value))
+      inline def setLessThan(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "lessThan", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "like", js.Any.fromFunction2(value))
+      inline def setLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "like", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotBetween(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notBetween", js.Any.fromFunction2(value))
+      inline def setNotBetween(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notBetween", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotEqual(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notEqual", js.Any.fromFunction2(value))
+      inline def setNotEqual(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notEqual", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotInside(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notInside", js.Any.fromFunction2(value))
+      inline def setNotInside(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notInside", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotLeftLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notLeftLike", js.Any.fromFunction2(value))
+      inline def setNotLeftLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notLeftLike", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notLike", js.Any.fromFunction2(value))
+      inline def setNotLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notLike", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNotRightLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notRightLike", js.Any.fromFunction2(value))
+      inline def setNotRightLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "notRightLike", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRightLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "rightLike", js.Any.fromFunction2(value))
+      inline def setRightLike(value: (js.Any, js.Any) => js.Array[js.Any]): Self = StObject.set(x, "rightLike", js.Any.fromFunction2(value))
     }
   }
   
@@ -556,17 +483,14 @@ object JSONStore {
   }
   object RefreshOptions {
     
-    @scala.inline
-    def apply(push: Boolean): RefreshOptions = {
+    inline def apply(push: Boolean): RefreshOptions = {
       val __obj = js.Dynamic.literal(push = push.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefreshOptions]
     }
     
-    @scala.inline
-    implicit class RefreshOptionsMutableBuilder[Self <: RefreshOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshOptions](x: Self) {
       
-      @scala.inline
-      def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     }
   }
   
@@ -585,32 +509,24 @@ object JSONStore {
   }
   object RemoveOptions {
     
-    @scala.inline
-    def apply(): RemoveOptions = {
+    inline def apply(): RemoveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoveOptions]
     }
     
-    @scala.inline
-    implicit class RemoveOptionsMutableBuilder[Self <: RemoveOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveOptions](x: Self) {
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setMarkDirty(value: Boolean): Self = StObject.set(x, "markDirty", value.asInstanceOf[js.Any])
+      inline def setMarkDirty(value: Boolean): Self = StObject.set(x, "markDirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkDirtyUndefined: Self = StObject.set(x, "markDirty", js.undefined)
+      inline def setMarkDirtyUndefined: Self = StObject.set(x, "markDirty", js.undefined)
       
-      @scala.inline
-      def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     }
   }
   
@@ -627,26 +543,20 @@ object JSONStore {
   }
   object ReplaceOptions {
     
-    @scala.inline
-    def apply(): ReplaceOptions = {
+    inline def apply(): ReplaceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplaceOptions]
     }
     
-    @scala.inline
-    implicit class ReplaceOptionsMutableBuilder[Self <: ReplaceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReplaceOptions](x: Self) {
       
-      @scala.inline
-      def setMarkDirty(value: Boolean): Self = StObject.set(x, "markDirty", value.asInstanceOf[js.Any])
+      inline def setMarkDirty(value: Boolean): Self = StObject.set(x, "markDirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkDirtyUndefined: Self = StObject.set(x, "markDirty", js.undefined)
+      inline def setMarkDirtyUndefined: Self = StObject.set(x, "markDirty", js.undefined)
       
-      @scala.inline
-      def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     }
   }
   
@@ -660,26 +570,20 @@ object JSONStore {
   }
   object StoreOptions {
     
-    @scala.inline
-    def apply(): StoreOptions = {
+    inline def apply(): StoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StoreOptions]
     }
     
-    @scala.inline
-    implicit class StoreOptionsMutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StoreOptions](x: Self) {
       
-      @scala.inline
-      def setAdditionalSearchFields(value: js.Object): Self = StObject.set(x, "additionalSearchFields", value.asInstanceOf[js.Any])
+      inline def setAdditionalSearchFields(value: js.Object): Self = StObject.set(x, "additionalSearchFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalSearchFieldsUndefined: Self = StObject.set(x, "additionalSearchFields", js.undefined)
+      inline def setAdditionalSearchFieldsUndefined: Self = StObject.set(x, "additionalSearchFields", js.undefined)
       
-      @scala.inline
-      def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+      inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     }
   }
 }

@@ -135,38 +135,28 @@ object optionsMod {
   }
   object IDeclarationOptions {
     
-    @scala.inline
-    def apply(): IDeclarationOptions = {
+    inline def apply(): IDeclarationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDeclarationOptions]
     }
     
-    @scala.inline
-    implicit class IDeclarationOptionsMutableBuilder[Self <: IDeclarationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDeclarationOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setInclude(value: Boolean): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: Boolean): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      inline def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -199,38 +189,28 @@ object optionsMod {
   }
   object IDtdOptions {
     
-    @scala.inline
-    def apply(): IDtdOptions = {
+    inline def apply(): IDtdOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDtdOptions]
     }
     
-    @scala.inline
-    implicit class IDtdOptionsMutableBuilder[Self <: IDtdOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDtdOptions](x: Self) {
       
-      @scala.inline
-      def setInclude(value: Boolean): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: Boolean): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPubId(value: String): Self = StObject.set(x, "pubId", value.asInstanceOf[js.Any])
+      inline def setPubId(value: String): Self = StObject.set(x, "pubId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubIdUndefined: Self = StObject.set(x, "pubId", js.undefined)
+      inline def setPubIdUndefined: Self = StObject.set(x, "pubId", js.undefined)
       
-      @scala.inline
-      def setSysId(value: String): Self = StObject.set(x, "sysId", value.asInstanceOf[js.Any])
+      inline def setSysId(value: String): Self = StObject.set(x, "sysId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSysIdUndefined: Self = StObject.set(x, "sysId", js.undefined)
+      inline def setSysIdUndefined: Self = StObject.set(x, "sysId", js.undefined)
     }
   }
   
@@ -262,38 +242,28 @@ object optionsMod {
   }
   object IFormatOptions {
     
-    @scala.inline
-    def apply(): IFormatOptions = {
+    inline def apply(): IFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFormatOptions]
     }
     
-    @scala.inline
-    implicit class IFormatOptionsMutableBuilder[Self <: IFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IFormatOptions](x: Self) {
       
-      @scala.inline
-      def setDoubleQuotes(value: Boolean): Self = StObject.set(x, "doubleQuotes", value.asInstanceOf[js.Any])
+      inline def setDoubleQuotes(value: Boolean): Self = StObject.set(x, "doubleQuotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleQuotesUndefined: Self = StObject.set(x, "doubleQuotes", js.undefined)
+      inline def setDoubleQuotesUndefined: Self = StObject.set(x, "doubleQuotes", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
+      inline def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
+      inline def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
       
-      @scala.inline
-      def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
+      inline def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
+      inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
     }
   }
   
@@ -587,95 +557,66 @@ object optionsMod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setAliasString(value: String): Self = StObject.set(x, "aliasString", value.asInstanceOf[js.Any])
+      inline def setAliasString(value: String): Self = StObject.set(x, "aliasString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasStringUndefined: Self = StObject.set(x, "aliasString", js.undefined)
+      inline def setAliasStringUndefined: Self = StObject.set(x, "aliasString", js.undefined)
       
-      @scala.inline
-      def setAttributeString(value: String): Self = StObject.set(x, "attributeString", value.asInstanceOf[js.Any])
+      inline def setAttributeString(value: String): Self = StObject.set(x, "attributeString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeStringUndefined: Self = StObject.set(x, "attributeString", js.undefined)
+      inline def setAttributeStringUndefined: Self = StObject.set(x, "attributeString", js.undefined)
       
-      @scala.inline
-      def setCdataInvalidChars(value: Boolean): Self = StObject.set(x, "cdataInvalidChars", value.asInstanceOf[js.Any])
+      inline def setCdataInvalidChars(value: Boolean): Self = StObject.set(x, "cdataInvalidChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCdataInvalidCharsUndefined: Self = StObject.set(x, "cdataInvalidChars", js.undefined)
+      inline def setCdataInvalidCharsUndefined: Self = StObject.set(x, "cdataInvalidChars", js.undefined)
       
-      @scala.inline
-      def setCdataKeys(value: js.Array[String]): Self = StObject.set(x, "cdataKeys", value.asInstanceOf[js.Any])
+      inline def setCdataKeys(value: js.Array[String]): Self = StObject.set(x, "cdataKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCdataKeysUndefined: Self = StObject.set(x, "cdataKeys", js.undefined)
+      inline def setCdataKeysUndefined: Self = StObject.set(x, "cdataKeys", js.undefined)
       
-      @scala.inline
-      def setCdataKeysVarargs(value: String*): Self = StObject.set(x, "cdataKeys", js.Array(value :_*))
+      inline def setCdataKeysVarargs(value: String*): Self = StObject.set(x, "cdataKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setDeclaration(value: IDeclarationOptions): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+      inline def setDeclaration(value: IDeclarationOptions): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
+      inline def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
       
-      @scala.inline
-      def setDtd(value: IDtdOptions): Self = StObject.set(x, "dtd", value.asInstanceOf[js.Any])
+      inline def setDtd(value: IDtdOptions): Self = StObject.set(x, "dtd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtdUndefined: Self = StObject.set(x, "dtd", js.undefined)
+      inline def setDtdUndefined: Self = StObject.set(x, "dtd", js.undefined)
       
-      @scala.inline
-      def setFormat(value: IFormatOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: IFormatOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setReplaceInvalidChars(value: Boolean): Self = StObject.set(x, "replaceInvalidChars", value.asInstanceOf[js.Any])
+      inline def setReplaceInvalidChars(value: Boolean): Self = StObject.set(x, "replaceInvalidChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceInvalidCharsUndefined: Self = StObject.set(x, "replaceInvalidChars", js.undefined)
+      inline def setReplaceInvalidCharsUndefined: Self = StObject.set(x, "replaceInvalidChars", js.undefined)
       
-      @scala.inline
-      def setTypeHandlers(value: ITypeHandlers): Self = StObject.set(x, "typeHandlers", value.asInstanceOf[js.Any])
+      inline def setTypeHandlers(value: ITypeHandlers): Self = StObject.set(x, "typeHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeHandlersUndefined: Self = StObject.set(x, "typeHandlers", js.undefined)
+      inline def setTypeHandlersUndefined: Self = StObject.set(x, "typeHandlers", js.undefined)
       
-      @scala.inline
-      def setUseSelfClosingTagIfEmpty(value: Boolean): Self = StObject.set(x, "useSelfClosingTagIfEmpty", value.asInstanceOf[js.Any])
+      inline def setUseSelfClosingTagIfEmpty(value: Boolean): Self = StObject.set(x, "useSelfClosingTagIfEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSelfClosingTagIfEmptyUndefined: Self = StObject.set(x, "useSelfClosingTagIfEmpty", js.undefined)
+      inline def setUseSelfClosingTagIfEmptyUndefined: Self = StObject.set(x, "useSelfClosingTagIfEmpty", js.undefined)
       
-      @scala.inline
-      def setValidation(value: Boolean): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+      inline def setValidation(value: Boolean): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+      inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
       
-      @scala.inline
-      def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
+      inline def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
+      inline def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
       
-      @scala.inline
-      def setWrapHandlers(value: IWrapHandlers): Self = StObject.set(x, "wrapHandlers", value.asInstanceOf[js.Any])
+      inline def setWrapHandlers(value: IWrapHandlers): Self = StObject.set(x, "wrapHandlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapHandlersUndefined: Self = StObject.set(x, "wrapHandlers", js.undefined)
+      inline def setWrapHandlersUndefined: Self = StObject.set(x, "wrapHandlers", js.undefined)
     }
   }
   

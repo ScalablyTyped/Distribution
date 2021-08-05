@@ -27,8 +27,7 @@ trait AccessibleTabBarPageList
      with XAccessibleSelection
 object AccessibleTabBarPageList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

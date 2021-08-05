@@ -20,25 +20,19 @@ trait PaginationOptions extends StObject {
 }
 object PaginationOptions {
   
-  @scala.inline
-  def apply(): PaginationOptions = {
+  inline def apply(): PaginationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginationOptions]
   }
   
-  @scala.inline
-  implicit class PaginationOptionsMutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationOptions](x: Self) {
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "Page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "Page", js.undefined)
     
-    @scala.inline
-    def setPer_Page(value: Double): Self = StObject.set(x, "Per_Page", value.asInstanceOf[js.Any])
+    inline def setPer_Page(value: Double): Self = StObject.set(x, "Per_Page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_PageUndefined: Self = StObject.set(x, "Per_Page", js.undefined)
+    inline def setPer_PageUndefined: Self = StObject.set(x, "Per_Page", js.undefined)
   }
 }

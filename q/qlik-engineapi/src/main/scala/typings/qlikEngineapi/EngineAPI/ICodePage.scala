@@ -26,22 +26,17 @@ trait ICodePage extends StObject {
 }
 object ICodePage {
   
-  @scala.inline
-  def apply(qDescription: String, qName: String, qNumber: Double): ICodePage = {
+  inline def apply(qDescription: String, qName: String, qNumber: Double): ICodePage = {
     val __obj = js.Dynamic.literal(qDescription = qDescription.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qNumber = qNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICodePage]
   }
   
-  @scala.inline
-  implicit class ICodePageMutableBuilder[Self <: ICodePage] (val x: Self) extends AnyVal {
+  extension [Self <: ICodePage](x: Self) {
     
-    @scala.inline
-    def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
+    inline def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNumber(value: Double): Self = StObject.set(x, "qNumber", value.asInstanceOf[js.Any])
+    inline def setQNumber(value: Double): Self = StObject.set(x, "qNumber", value.asInstanceOf[js.Any])
   }
 }

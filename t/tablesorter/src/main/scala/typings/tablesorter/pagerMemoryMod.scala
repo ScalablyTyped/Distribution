@@ -36,8 +36,7 @@ object pagerMemoryMod {
   }
   object PagerMemory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentFilters: js.Array[String],
       page: Double,
       size: Double,
@@ -48,29 +47,21 @@ object pagerMemoryMod {
       __obj.asInstanceOf[PagerMemory]
     }
     
-    @scala.inline
-    implicit class PagerMemoryMutableBuilder[Self <: PagerMemory] (val x: Self) extends AnyVal {
+    extension [Self <: PagerMemory](x: Self) {
       
-      @scala.inline
-      def setCurrentFilters(value: js.Array[String]): Self = StObject.set(x, "currentFilters", value.asInstanceOf[js.Any])
+      inline def setCurrentFilters(value: js.Array[String]): Self = StObject.set(x, "currentFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentFiltersVarargs(value: String*): Self = StObject.set(x, "currentFilters", js.Array(value :_*))
+      inline def setCurrentFiltersVarargs(value: String*): Self = StObject.set(x, "currentFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
+      inline def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
+      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
+      inline def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
     }
   }
 }

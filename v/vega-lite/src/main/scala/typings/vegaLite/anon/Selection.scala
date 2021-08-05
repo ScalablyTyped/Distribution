@@ -14,16 +14,13 @@ trait Selection extends StObject {
 }
 object Selection {
   
-  @scala.inline
-  def apply(selection: LogicalComposition[String]): Selection = {
+  inline def apply(selection: LogicalComposition[String]): Selection = {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selection]
   }
   
-  @scala.inline
-  implicit class SelectionMutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
+  extension [Self <: Selection](x: Self) {
     
-    @scala.inline
-    def setSelection(value: LogicalComposition[String]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: LogicalComposition[String]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

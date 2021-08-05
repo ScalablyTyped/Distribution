@@ -41,20 +41,16 @@ object mod {
   }
   object GRPCError {
     
-    @scala.inline
-    def apply(code: Double, message: String, metadata: js.Object, name: String): GRPCError = {
+    inline def apply(code: Double, message: String, metadata: js.Object, name: String): GRPCError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GRPCError]
     }
     
-    @scala.inline
-    implicit class GRPCErrorMutableBuilder[Self <: GRPCError] (val x: Self) extends AnyVal {
+    extension [Self <: GRPCError](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
 }

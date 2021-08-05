@@ -34,12 +34,10 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromJSON(obj: Xpriv): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[HDNode]
+  inline def fromJSON(obj: Xpriv): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[HDNode]
   
   /* static member */
-  @scala.inline
-  def fromMasterSeed(seed: Buffer): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[HDNode]
+  inline def fromMasterSeed(seed: Buffer): HDNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[HDNode]
   
   trait HDNode extends StObject {
     
@@ -55,8 +53,7 @@ object mod {
   }
   object HDNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chainCode: Buffer,
       derive: String => HDNode,
       privateKey: Buffer,
@@ -67,23 +64,17 @@ object mod {
       __obj.asInstanceOf[HDNode]
     }
     
-    @scala.inline
-    implicit class HDNodeMutableBuilder[Self <: HDNode] (val x: Self) extends AnyVal {
+    extension [Self <: HDNode](x: Self) {
       
-      @scala.inline
-      def setChainCode(value: Buffer): Self = StObject.set(x, "chainCode", value.asInstanceOf[js.Any])
+      inline def setChainCode(value: Buffer): Self = StObject.set(x, "chainCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDerive(value: String => HDNode): Self = StObject.set(x, "derive", js.Any.fromFunction1(value))
+      inline def setDerive(value: String => HDNode): Self = StObject.set(x, "derive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrivateKey(value: Buffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Buffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKey(value: Buffer): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: Buffer): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => Xpriv): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => Xpriv): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
 }

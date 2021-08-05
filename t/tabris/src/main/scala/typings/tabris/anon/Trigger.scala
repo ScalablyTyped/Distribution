@@ -16,25 +16,19 @@ trait Trigger[Target] extends StObject {
 }
 object Trigger {
   
-  @scala.inline
-  def apply[Target](): Trigger[Target] = {
+  inline def apply[Target](): Trigger[Target] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Trigger[Target]]
   }
   
-  @scala.inline
-  implicit class TriggerMutableBuilder[Self <: Trigger[?], Target] (val x: Self & Trigger[Target]) extends AnyVal {
+  extension [Self <: Trigger[?], Target](x: Self & Trigger[Target]) {
     
-    @scala.inline
-    def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: ListenersKeysOf[Target] | update | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: ListenersKeysOf[Target] | update | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

@@ -17,19 +17,15 @@ trait SchemaContentMatcher extends StObject {
 }
 object SchemaContentMatcher {
   
-  @scala.inline
-  def apply(): SchemaContentMatcher = {
+  inline def apply(): SchemaContentMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContentMatcher]
   }
   
-  @scala.inline
-  implicit class SchemaContentMatcherMutableBuilder[Self <: SchemaContentMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContentMatcher](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

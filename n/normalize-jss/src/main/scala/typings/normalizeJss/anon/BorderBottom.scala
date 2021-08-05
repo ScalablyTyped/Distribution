@@ -12,19 +12,15 @@ trait BorderBottom extends StObject {
 }
 object BorderBottom {
   
-  @scala.inline
-  def apply(borderBottom: String, textDecoration: String): BorderBottom = {
+  inline def apply(borderBottom: String, textDecoration: String): BorderBottom = {
     val __obj = js.Dynamic.literal(borderBottom = borderBottom.asInstanceOf[js.Any], textDecoration = textDecoration.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderBottom]
   }
   
-  @scala.inline
-  implicit class BorderBottomMutableBuilder[Self <: BorderBottom] (val x: Self) extends AnyVal {
+  extension [Self <: BorderBottom](x: Self) {
     
-    @scala.inline
-    def setBorderBottom(value: String): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    inline def setBorderBottom(value: String): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    inline def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
   }
 }

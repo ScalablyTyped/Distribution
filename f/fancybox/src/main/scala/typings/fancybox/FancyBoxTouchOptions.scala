@@ -18,25 +18,19 @@ trait FancyBoxTouchOptions extends StObject {
 }
 object FancyBoxTouchOptions {
   
-  @scala.inline
-  def apply(): FancyBoxTouchOptions = {
+  inline def apply(): FancyBoxTouchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FancyBoxTouchOptions]
   }
   
-  @scala.inline
-  implicit class FancyBoxTouchOptionsMutableBuilder[Self <: FancyBoxTouchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxTouchOptions](x: Self) {
     
-    @scala.inline
-    def setMomentum(value: Boolean): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
+    inline def setMomentum(value: Boolean): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
+    inline def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

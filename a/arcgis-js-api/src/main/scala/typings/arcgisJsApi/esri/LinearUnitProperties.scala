@@ -28,25 +28,19 @@ trait LinearUnitProperties extends StObject {
 }
 object LinearUnitProperties {
   
-  @scala.inline
-  def apply(): LinearUnitProperties = {
+  inline def apply(): LinearUnitProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinearUnitProperties]
   }
   
-  @scala.inline
-  implicit class LinearUnitPropertiesMutableBuilder[Self <: LinearUnitProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LinearUnitProperties](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setUnits(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

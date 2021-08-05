@@ -16,25 +16,19 @@ trait MatcherResults extends StObject {
 }
 object MatcherResults {
   
-  @scala.inline
-  def apply(actual: js.Any, expected: js.Any, name: String, pass: Boolean): MatcherResults = {
+  inline def apply(actual: js.Any, expected: js.Any, name: String, pass: Boolean): MatcherResults = {
     val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatcherResults]
   }
   
-  @scala.inline
-  implicit class MatcherResultsMutableBuilder[Self <: MatcherResults] (val x: Self) extends AnyVal {
+  extension [Self <: MatcherResults](x: Self) {
     
-    @scala.inline
-    def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+    inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+    inline def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
   }
 }

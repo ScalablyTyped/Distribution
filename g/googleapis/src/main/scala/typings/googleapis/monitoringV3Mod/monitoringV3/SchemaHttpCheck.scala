@@ -60,49 +60,35 @@ trait SchemaHttpCheck extends StObject {
 }
 object SchemaHttpCheck {
   
-  @scala.inline
-  def apply(): SchemaHttpCheck = {
+  inline def apply(): SchemaHttpCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHttpCheck]
   }
   
-  @scala.inline
-  implicit class SchemaHttpCheckMutableBuilder[Self <: SchemaHttpCheck] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHttpCheck](x: Self) {
     
-    @scala.inline
-    def setAuthInfo(value: SchemaBasicAuthentication): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
+    inline def setAuthInfo(value: SchemaBasicAuthentication): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
+    inline def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMaskHeaders(value: Boolean): Self = StObject.set(x, "maskHeaders", value.asInstanceOf[js.Any])
+    inline def setMaskHeaders(value: Boolean): Self = StObject.set(x, "maskHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskHeadersUndefined: Self = StObject.set(x, "maskHeaders", js.undefined)
+    inline def setMaskHeadersUndefined: Self = StObject.set(x, "maskHeaders", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setUseSsl(value: Boolean): Self = StObject.set(x, "useSsl", value.asInstanceOf[js.Any])
+    inline def setUseSsl(value: Boolean): Self = StObject.set(x, "useSsl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSslUndefined: Self = StObject.set(x, "useSsl", js.undefined)
+    inline def setUseSslUndefined: Self = StObject.set(x, "useSsl", js.undefined)
   }
 }

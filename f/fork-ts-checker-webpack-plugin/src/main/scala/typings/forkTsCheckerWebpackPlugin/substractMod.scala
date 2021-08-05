@@ -10,12 +10,8 @@ object substractMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[T]]
-  @scala.inline
-  def default[T](arrayA: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arrayA.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def default[T](arrayA: js.Array[T], arrayB: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arrayA.asInstanceOf[js.Any], arrayB.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def default[T](arrayA: Unit, arrayB: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arrayA.asInstanceOf[js.Any], arrayB.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def default[T](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[T]]
+  inline def default[T](arrayA: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arrayA.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def default[T](arrayA: js.Array[T], arrayB: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arrayA.asInstanceOf[js.Any], arrayB.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def default[T](arrayA: Unit, arrayB: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arrayA.asInstanceOf[js.Any], arrayB.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

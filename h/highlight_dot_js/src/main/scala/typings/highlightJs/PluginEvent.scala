@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PluginEvent extends StObject
 object PluginEvent {
   
-  @scala.inline
-  def afterColonhighlight: typings.highlightJs.highlightJsStrings.afterColonhighlight = "after:highlight".asInstanceOf[typings.highlightJs.highlightJsStrings.afterColonhighlight]
+  inline def afterColonhighlight: typings.highlightJs.highlightJsStrings.afterColonhighlight = "after:highlight".asInstanceOf[typings.highlightJs.highlightJsStrings.afterColonhighlight]
   
-  @scala.inline
-  def afterColonhighlightBlock: typings.highlightJs.highlightJsStrings.afterColonhighlightBlock = "after:highlightBlock".asInstanceOf[typings.highlightJs.highlightJsStrings.afterColonhighlightBlock]
+  inline def afterColonhighlightBlock: typings.highlightJs.highlightJsStrings.afterColonhighlightBlock = "after:highlightBlock".asInstanceOf[typings.highlightJs.highlightJsStrings.afterColonhighlightBlock]
   
-  @scala.inline
-  def beforeColonhighlight: typings.highlightJs.highlightJsStrings.beforeColonhighlight = "before:highlight".asInstanceOf[typings.highlightJs.highlightJsStrings.beforeColonhighlight]
+  inline def beforeColonhighlight: typings.highlightJs.highlightJsStrings.beforeColonhighlight = "before:highlight".asInstanceOf[typings.highlightJs.highlightJsStrings.beforeColonhighlight]
   
-  @scala.inline
-  def beforeColonhighlightBlock: typings.highlightJs.highlightJsStrings.beforeColonhighlightBlock = "before:highlightBlock".asInstanceOf[typings.highlightJs.highlightJsStrings.beforeColonhighlightBlock]
+  inline def beforeColonhighlightBlock: typings.highlightJs.highlightJsStrings.beforeColonhighlightBlock = "before:highlightBlock".asInstanceOf[typings.highlightJs.highlightJsStrings.beforeColonhighlightBlock]
 }

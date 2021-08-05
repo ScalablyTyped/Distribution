@@ -19,7 +19,7 @@ object dragDropManagerImplMod {
        with DragDropManager {
     def this(debugMode: Boolean) = this()
     
-    var backend: js.Any = js.native
+    /* private */ var backend: js.Any = js.native
     
     /* CompleteClass */
     override def dispatch(action: js.Any): Unit = js.native
@@ -37,14 +37,14 @@ object dragDropManagerImplMod {
     /* CompleteClass */
     override def getRegistry(): HandlerRegistry = js.native
     
-    var handleRefCountChange: js.Any = js.native
+    /* private */ var handleRefCountChange: js.Any = js.native
     
-    var isSetUp: js.Any = js.native
+    /* private */ var isSetUp: js.Any = js.native
     
-    var monitor: js.Any = js.native
+    /* private */ var monitor: js.Any = js.native
     
     def receiveBackend(backend: Backend): Unit = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
   }
 }

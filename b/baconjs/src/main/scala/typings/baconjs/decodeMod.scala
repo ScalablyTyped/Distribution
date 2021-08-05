@@ -13,11 +13,9 @@ object decodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: Record[js.Any, js.Any] */](src: Observable[/* keyof T */ String], cases: T): Property[DecodedValueOf[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], cases.asInstanceOf[js.Any])).asInstanceOf[Property[DecodedValueOf[T]]]
+  inline def default[T /* <: Record[js.Any, js.Any] */](src: Observable[/* keyof T */ String], cases: T): Property[DecodedValueOf[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], cases.asInstanceOf[js.Any])).asInstanceOf[Property[DecodedValueOf[T]]]
   
-  @scala.inline
-  def decode[T /* <: Record[js.Any, js.Any] */](src: Observable[/* keyof T */ String], cases: T): Property[DecodedValueOf[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(src.asInstanceOf[js.Any], cases.asInstanceOf[js.Any])).asInstanceOf[Property[DecodedValueOf[T]]]
+  inline def decode[T /* <: Record[js.Any, js.Any] */](src: Observable[/* keyof T */ String], cases: T): Property[DecodedValueOf[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(src.asInstanceOf[js.Any], cases.asInstanceOf[js.Any])).asInstanceOf[Property[DecodedValueOf[T]]]
   
   type DecodedValueOf[O] = FlattenedObservable[
     /* import warning: importer.ImportType#apply Failed type conversion: O[keyof O] */ js.Any

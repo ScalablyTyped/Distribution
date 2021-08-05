@@ -18,22 +18,17 @@ trait DeleteNatGatewayRequest extends StObject {
 }
 object DeleteNatGatewayRequest {
   
-  @scala.inline
-  def apply(NatGatewayId: NatGatewayId): DeleteNatGatewayRequest = {
+  inline def apply(NatGatewayId: NatGatewayId): DeleteNatGatewayRequest = {
     val __obj = js.Dynamic.literal(NatGatewayId = NatGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNatGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DeleteNatGatewayRequestMutableBuilder[Self <: DeleteNatGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNatGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setNatGatewayId(value: NatGatewayId): Self = StObject.set(x, "NatGatewayId", value.asInstanceOf[js.Any])
+    inline def setNatGatewayId(value: NatGatewayId): Self = StObject.set(x, "NatGatewayId", value.asInstanceOf[js.Any])
   }
 }

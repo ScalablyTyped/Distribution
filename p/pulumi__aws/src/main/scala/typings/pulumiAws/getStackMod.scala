@@ -12,10 +12,8 @@ object getStackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStack(args: GetStackArgs): js.Promise[GetStackResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetStackResult]]
-  @scala.inline
-  def getStack(args: GetStackArgs, opts: InvokeOptions): js.Promise[GetStackResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetStackResult]]
+  inline def getStack(args: GetStackArgs): js.Promise[GetStackResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetStackResult]]
+  inline def getStack(args: GetStackArgs, opts: InvokeOptions): js.Promise[GetStackResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetStackResult]]
   
   trait GetStackArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getStackMod {
   }
   object GetStackArgs {
     
-    @scala.inline
-    def apply(name: String): GetStackArgs = {
+    inline def apply(name: String): GetStackArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetStackArgs]
     }
     
-    @scala.inline
-    implicit class GetStackArgsMutableBuilder[Self <: GetStackArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetStackArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -112,8 +105,7 @@ object getStackMod {
   }
   object GetStackResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       capabilities: js.Array[String],
       description: String,
       disableRollback: Boolean,
@@ -131,50 +123,35 @@ object getStackMod {
       __obj.asInstanceOf[GetStackResult]
     }
     
-    @scala.inline
-    implicit class GetStackResultMutableBuilder[Self <: GetStackResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetStackResult](x: Self) {
       
-      @scala.inline
-      def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRollback(value: Boolean): Self = StObject.set(x, "disableRollback", value.asInstanceOf[js.Any])
+      inline def setDisableRollback(value: Boolean): Self = StObject.set(x, "disableRollback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRoleArn(value: String): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+      inline def setIamRoleArn(value: String): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationArns(value: js.Array[String]): Self = StObject.set(x, "notificationArns", value.asInstanceOf[js.Any])
+      inline def setNotificationArns(value: js.Array[String]): Self = StObject.set(x, "notificationArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationArnsVarargs(value: String*): Self = StObject.set(x, "notificationArns", js.Array(value :_*))
+      inline def setNotificationArnsVarargs(value: String*): Self = StObject.set(x, "notificationArns", js.Array(value :_*))
       
-      @scala.inline
-      def setOutputs(value: StringDictionary[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: StringDictionary[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateBody(value: String): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+      inline def setTemplateBody(value: String): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
+      inline def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -29,36 +29,31 @@ object xmlProcInstMod {
   }
   object IXmlProcInstOptions {
     
-    @scala.inline
-    def apply(target: String): IXmlProcInstOptions = {
+    inline def apply(target: String): IXmlProcInstOptions = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlProcInstOptions]
     }
     
-    @scala.inline
-    implicit class IXmlProcInstOptionsMutableBuilder[Self <: IXmlProcInstOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlProcInstOptions](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait XmlProcInst[Parent] extends StObject {
     
-    var _content: js.Any = js.native
+    /* private */ var _content: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Gets the content of this processing instruction.

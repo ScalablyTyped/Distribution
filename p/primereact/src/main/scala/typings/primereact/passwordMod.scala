@@ -48,68 +48,48 @@ object passwordMod {
   }
   object PasswordProps {
     
-    @scala.inline
-    def apply(): PasswordProps = {
+    inline def apply(): PasswordProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PasswordProps]
     }
     
-    @scala.inline
-    implicit class PasswordPropsMutableBuilder[Self <: PasswordProps] (val x: Self) extends AnyVal {
+    extension [Self <: PasswordProps](x: Self) {
       
-      @scala.inline
-      def setFeedback(value: Boolean): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+      inline def setFeedback(value: Boolean): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
+      inline def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
       
-      @scala.inline
-      def setMediumLabel(value: String): Self = StObject.set(x, "mediumLabel", value.asInstanceOf[js.Any])
+      inline def setMediumLabel(value: String): Self = StObject.set(x, "mediumLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediumLabelUndefined: Self = StObject.set(x, "mediumLabel", js.undefined)
+      inline def setMediumLabelUndefined: Self = StObject.set(x, "mediumLabel", js.undefined)
       
-      @scala.inline
-      def setPanelClassName(value: String): Self = StObject.set(x, "panelClassName", value.asInstanceOf[js.Any])
+      inline def setPanelClassName(value: String): Self = StObject.set(x, "panelClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelClassNameUndefined: Self = StObject.set(x, "panelClassName", js.undefined)
+      inline def setPanelClassNameUndefined: Self = StObject.set(x, "panelClassName", js.undefined)
       
-      @scala.inline
-      def setPanelStyle(value: js.Object): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
+      inline def setPanelStyle(value: js.Object): Self = StObject.set(x, "panelStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelStyleUndefined: Self = StObject.set(x, "panelStyle", js.undefined)
+      inline def setPanelStyleUndefined: Self = StObject.set(x, "panelStyle", js.undefined)
       
-      @scala.inline
-      def setPromptLabel(value: String): Self = StObject.set(x, "promptLabel", value.asInstanceOf[js.Any])
+      inline def setPromptLabel(value: String): Self = StObject.set(x, "promptLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptLabelUndefined: Self = StObject.set(x, "promptLabel", js.undefined)
+      inline def setPromptLabelUndefined: Self = StObject.set(x, "promptLabel", js.undefined)
       
-      @scala.inline
-      def setStrongLabel(value: String): Self = StObject.set(x, "strongLabel", value.asInstanceOf[js.Any])
+      inline def setStrongLabel(value: String): Self = StObject.set(x, "strongLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrongLabelUndefined: Self = StObject.set(x, "strongLabel", js.undefined)
+      inline def setStrongLabelUndefined: Self = StObject.set(x, "strongLabel", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipOptions(value: TooltipOptions): Self = StObject.set(x, "tooltipOptions", value.asInstanceOf[js.Any])
+      inline def setTooltipOptions(value: TooltipOptions): Self = StObject.set(x, "tooltipOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipOptionsUndefined: Self = StObject.set(x, "tooltipOptions", js.undefined)
+      inline def setTooltipOptionsUndefined: Self = StObject.set(x, "tooltipOptions", js.undefined)
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setWeakLabel(value: String): Self = StObject.set(x, "weakLabel", value.asInstanceOf[js.Any])
+      inline def setWeakLabel(value: String): Self = StObject.set(x, "weakLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakLabelUndefined: Self = StObject.set(x, "weakLabel", js.undefined)
+      inline def setWeakLabelUndefined: Self = StObject.set(x, "weakLabel", js.undefined)
     }
   }
 }

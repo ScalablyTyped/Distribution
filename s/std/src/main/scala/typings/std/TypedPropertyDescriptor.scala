@@ -20,49 +20,35 @@ trait TypedPropertyDescriptor[T] extends StObject {
 }
 object TypedPropertyDescriptor {
   
-  @scala.inline
-  def apply[T](): TypedPropertyDescriptor[T] = {
+  inline def apply[T](): TypedPropertyDescriptor[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypedPropertyDescriptor[T]]
   }
   
-  @scala.inline
-  implicit class TypedPropertyDescriptorMutableBuilder[Self <: TypedPropertyDescriptor[?], T] (val x: Self & TypedPropertyDescriptor[T]) extends AnyVal {
+  extension [Self <: TypedPropertyDescriptor[?], T](x: Self & TypedPropertyDescriptor[T]) {
     
-    @scala.inline
-    def setConfigurable(value: scala.Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+    inline def setConfigurable(value: scala.Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
+    inline def setConfigurableUndefined: Self = StObject.set(x, "configurable", js.undefined)
     
-    @scala.inline
-    def setEnumerable(value: scala.Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
+    inline def setEnumerable(value: scala.Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
+    inline def setEnumerableUndefined: Self = StObject.set(x, "enumerable", js.undefined)
     
-    @scala.inline
-    def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setSet(value: /* value */ T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: /* value */ T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setWritable(value: scala.Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: scala.Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+    inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait SchemaGenerateDownloadUrlRequest extends StObject {
 }
 object SchemaGenerateDownloadUrlRequest {
   
-  @scala.inline
-  def apply(): SchemaGenerateDownloadUrlRequest = {
+  inline def apply(): SchemaGenerateDownloadUrlRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGenerateDownloadUrlRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGenerateDownloadUrlRequestMutableBuilder[Self <: SchemaGenerateDownloadUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGenerateDownloadUrlRequest](x: Self) {
     
-    @scala.inline
-    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

@@ -24,17 +24,14 @@ object hubsMod {
   }
   object Hub {
     
-    @scala.inline
-    def apply(get: () => js.Promise[js.Array[OnfleetHub]]): Hub = {
+    inline def apply(get: () => js.Promise[js.Array[OnfleetHub]]): Hub = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
       __obj.asInstanceOf[Hub]
     }
     
-    @scala.inline
-    implicit class HubMutableBuilder[Self <: Hub] (val x: Self) extends AnyVal {
+    extension [Self <: Hub](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => js.Promise[js.Array[OnfleetHub]]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => js.Promise[js.Array[OnfleetHub]]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
   
@@ -52,32 +49,24 @@ object hubsMod {
   }
   object OnfleetHub {
     
-    @scala.inline
-    def apply(address: Apartment, id: String, location: Location, name: String, teams: js.Array[String]): OnfleetHub = {
+    inline def apply(address: Apartment, id: String, location: Location, name: String, teams: js.Array[String]): OnfleetHub = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnfleetHub]
     }
     
-    @scala.inline
-    implicit class OnfleetHubMutableBuilder[Self <: OnfleetHub] (val x: Self) extends AnyVal {
+    extension [Self <: OnfleetHub](x: Self) {
       
-      @scala.inline
-      def setAddress(value: Apartment): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: Apartment): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeams(value: js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value :_*))
+      inline def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value :_*))
     }
   }
 }

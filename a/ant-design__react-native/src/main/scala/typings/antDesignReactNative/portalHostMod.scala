@@ -22,8 +22,7 @@ object portalHostMod {
     @JSImport("@ant-design/react-native/lib/portal/portal-host", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@ant-design/react-native/lib/portal/portal-host", "PortalContext")
@@ -42,22 +41,19 @@ object portalHostMod {
   trait Operation extends StObject
   object Operation {
     
-    @scala.inline
-    def ChildrenKey(key: Double): typings.antDesignReactNative.anon.ChildrenKey = {
+    inline def ChildrenKey(key: Double): typings.antDesignReactNative.anon.ChildrenKey = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("mount")
       __obj.asInstanceOf[typings.antDesignReactNative.anon.ChildrenKey]
     }
     
-    @scala.inline
-    def KeyNumber(key: Double): typings.antDesignReactNative.anon.KeyNumber = {
+    inline def KeyNumber(key: Double): typings.antDesignReactNative.anon.KeyNumber = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("unmount")
       __obj.asInstanceOf[typings.antDesignReactNative.anon.KeyNumber]
     }
     
-    @scala.inline
-    def KeyType(key: Double): typings.antDesignReactNative.anon.KeyType = {
+    inline def KeyType(key: Double): typings.antDesignReactNative.anon.KeyType = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[typings.antDesignReactNative.anon.KeyType]
@@ -68,29 +64,24 @@ object portalHostMod {
     
     def add(e: ReactNode): Double
     
-    var nextKey: js.Any
+    /* private */ var nextKey: js.Any
     
     def remove(key: Double): Unit
   }
   object PortalGuard {
     
-    @scala.inline
-    def apply(add: ReactNode => Double, nextKey: js.Any, remove: Double => Unit): PortalGuard = {
+    inline def apply(add: ReactNode => Double, nextKey: js.Any, remove: Double => Unit): PortalGuard = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), nextKey = nextKey.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove))
       __obj.asInstanceOf[PortalGuard]
     }
     
-    @scala.inline
-    implicit class PortalGuardMutableBuilder[Self <: PortalGuard] (val x: Self) extends AnyVal {
+    extension [Self <: PortalGuard](x: Self) {
       
-      @scala.inline
-      def setAdd(value: ReactNode => Double): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: ReactNode => Double): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNextKey(value: js.Any): Self = StObject.set(x, "nextKey", value.asInstanceOf[js.Any])
+      inline def setNextKey(value: js.Any): Self = StObject.set(x, "nextKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
   }
   
@@ -127,20 +118,16 @@ object portalHostMod {
   }
   object PortalHostProps {
     
-    @scala.inline
-    def apply(): PortalHostProps = {
+    inline def apply(): PortalHostProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortalHostProps]
     }
     
-    @scala.inline
-    implicit class PortalHostPropsMutableBuilder[Self <: PortalHostProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortalHostProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -154,23 +141,18 @@ object portalHostMod {
   }
   object PortalMethods {
     
-    @scala.inline
-    def apply(mount: ReactNode => Double, unmount: Double => Unit, update: (Double, ReactNode) => Unit): PortalMethods = {
+    inline def apply(mount: ReactNode => Double, unmount: Double => Unit, update: (Double, ReactNode) => Unit): PortalMethods = {
       val __obj = js.Dynamic.literal(mount = js.Any.fromFunction1(mount), unmount = js.Any.fromFunction1(unmount), update = js.Any.fromFunction2(update))
       __obj.asInstanceOf[PortalMethods]
     }
     
-    @scala.inline
-    implicit class PortalMethodsMutableBuilder[Self <: PortalMethods] (val x: Self) extends AnyVal {
+    extension [Self <: PortalMethods](x: Self) {
       
-      @scala.inline
-      def setMount(value: ReactNode => Double): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
+      inline def setMount(value: ReactNode => Double): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnmount(value: Double => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
+      inline def setUnmount(value: Double => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: (Double, ReactNode) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (Double, ReactNode) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }
   }
 }

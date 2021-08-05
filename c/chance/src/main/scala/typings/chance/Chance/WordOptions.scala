@@ -14,22 +14,17 @@ trait WordOptions extends StObject {
 }
 object WordOptions {
   
-  @scala.inline
-  def apply(capitalize: Boolean, length: Double, syllables: Double): WordOptions = {
+  inline def apply(capitalize: Boolean, length: Double, syllables: Double): WordOptions = {
     val __obj = js.Dynamic.literal(capitalize = capitalize.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], syllables = syllables.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordOptions]
   }
   
-  @scala.inline
-  implicit class WordOptionsMutableBuilder[Self <: WordOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WordOptions](x: Self) {
     
-    @scala.inline
-    def setCapitalize(value: Boolean): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
+    inline def setCapitalize(value: Boolean): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyllables(value: Double): Self = StObject.set(x, "syllables", value.asInstanceOf[js.Any])
+    inline def setSyllables(value: Double): Self = StObject.set(x, "syllables", value.asInstanceOf[js.Any])
   }
 }

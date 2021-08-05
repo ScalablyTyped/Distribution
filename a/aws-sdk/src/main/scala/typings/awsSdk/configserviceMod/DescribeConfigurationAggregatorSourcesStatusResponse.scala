@@ -18,28 +18,21 @@ trait DescribeConfigurationAggregatorSourcesStatusResponse extends StObject {
 }
 object DescribeConfigurationAggregatorSourcesStatusResponse {
   
-  @scala.inline
-  def apply(): DescribeConfigurationAggregatorSourcesStatusResponse = {
+  inline def apply(): DescribeConfigurationAggregatorSourcesStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConfigurationAggregatorSourcesStatusResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConfigurationAggregatorSourcesStatusResponseMutableBuilder[Self <: DescribeConfigurationAggregatorSourcesStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigurationAggregatorSourcesStatusResponse](x: Self) {
     
-    @scala.inline
-    def setAggregatedSourceStatusList(value: AggregatedSourceStatusList): Self = StObject.set(x, "AggregatedSourceStatusList", value.asInstanceOf[js.Any])
+    inline def setAggregatedSourceStatusList(value: AggregatedSourceStatusList): Self = StObject.set(x, "AggregatedSourceStatusList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatedSourceStatusListUndefined: Self = StObject.set(x, "AggregatedSourceStatusList", js.undefined)
+    inline def setAggregatedSourceStatusListUndefined: Self = StObject.set(x, "AggregatedSourceStatusList", js.undefined)
     
-    @scala.inline
-    def setAggregatedSourceStatusListVarargs(value: AggregatedSourceStatus*): Self = StObject.set(x, "AggregatedSourceStatusList", js.Array(value :_*))
+    inline def setAggregatedSourceStatusListVarargs(value: AggregatedSourceStatus*): Self = StObject.set(x, "AggregatedSourceStatusList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

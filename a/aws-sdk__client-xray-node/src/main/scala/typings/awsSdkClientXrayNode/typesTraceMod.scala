@@ -28,35 +28,26 @@ object typesTraceMod {
   }
   object Trace {
     
-    @scala.inline
-    def apply(): Trace = {
+    inline def apply(): Trace = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Trace]
     }
     
-    @scala.inline
-    implicit class TraceMutableBuilder[Self <: Trace] (val x: Self) extends AnyVal {
+    extension [Self <: Trace](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setSegments(value: js.Array[Segment] | Iterable[Segment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: js.Array[Segment] | Iterable[Segment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
+      inline def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
       
-      @scala.inline
-      def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "Segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "Segments", js.Array(value :_*))
     }
   }
   
@@ -72,23 +63,18 @@ object typesTraceMod {
   }
   object UnmarshalledTrace {
     
-    @scala.inline
-    def apply(): UnmarshalledTrace = {
+    inline def apply(): UnmarshalledTrace = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledTrace]
     }
     
-    @scala.inline
-    implicit class UnmarshalledTraceMutableBuilder[Self <: UnmarshalledTrace] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledTrace](x: Self) {
       
-      @scala.inline
-      def setSegments(value: js.Array[UnmarshalledSegment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: js.Array[UnmarshalledSegment]): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
+      inline def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
       
-      @scala.inline
-      def setSegmentsVarargs(value: UnmarshalledSegment*): Self = StObject.set(x, "Segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: UnmarshalledSegment*): Self = StObject.set(x, "Segments", js.Array(value :_*))
     }
   }
 }

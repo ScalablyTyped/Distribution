@@ -12,20 +12,16 @@ object anon {
   }
   object Relaxed {
     
-    @scala.inline
-    def apply(): Relaxed = {
+    inline def apply(): Relaxed = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Relaxed]
     }
     
-    @scala.inline
-    implicit class RelaxedMutableBuilder[Self <: Relaxed] (val x: Self) extends AnyVal {
+    extension [Self <: Relaxed](x: Self) {
       
-      @scala.inline
-      def setRelaxed(value: Boolean): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
+      inline def setRelaxed(value: Boolean): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
+      inline def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
     }
   }
 }

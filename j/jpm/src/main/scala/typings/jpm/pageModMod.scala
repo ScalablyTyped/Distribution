@@ -23,17 +23,13 @@ object pageModMod {
     @js.native
     def apply(options: AttachTo): PageMod = js.native
     
-    @scala.inline
-    implicit class PageModMutableBuilder[Self <: PageMod] (val x: Self) extends AnyVal {
+    extension [Self <: PageMod](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInclude(value: String | (js.Array[RegExp | String]) | RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | (js.Array[RegExp | String]) | RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeVarargs(value: (RegExp | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (RegExp | String)*): Self = StObject.set(x, "include", js.Array(value :_*))
     }
   }
   
@@ -45,13 +41,10 @@ object pageModMod {
   trait attachmentMode extends StObject
   object attachmentMode {
     
-    @scala.inline
-    def existing: typings.jpm.jpmStrings.existing = "existing".asInstanceOf[typings.jpm.jpmStrings.existing]
+    inline def existing: typings.jpm.jpmStrings.existing = "existing".asInstanceOf[typings.jpm.jpmStrings.existing]
     
-    @scala.inline
-    def frame: typings.jpm.jpmStrings.frame = "frame".asInstanceOf[typings.jpm.jpmStrings.frame]
+    inline def frame: typings.jpm.jpmStrings.frame = "frame".asInstanceOf[typings.jpm.jpmStrings.frame]
     
-    @scala.inline
-    def top: typings.jpm.jpmStrings.top = "top".asInstanceOf[typings.jpm.jpmStrings.top]
+    inline def top: typings.jpm.jpmStrings.top = "top".asInstanceOf[typings.jpm.jpmStrings.top]
   }
 }

@@ -32,8 +32,7 @@ object htmlParser {
   }
   object basicWriter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attribute: (String, String) => Unit,
       closeTag: String => Unit,
       comment: String => Unit,
@@ -48,35 +47,25 @@ object htmlParser {
       __obj.asInstanceOf[basicWriter]
     }
     
-    @scala.inline
-    implicit class basicWriterMutableBuilder[Self <: basicWriter] (val x: Self) extends AnyVal {
+    extension [Self <: basicWriter](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: (String, String) => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction2(value))
+      inline def setAttribute(value: (String, String) => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCloseTag(value: String => Unit): Self = StObject.set(x, "closeTag", js.Any.fromFunction1(value))
+      inline def setCloseTag(value: String => Unit): Self = StObject.set(x, "closeTag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComment(value: String => Unit): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
+      inline def setComment(value: String => Unit): Self = StObject.set(x, "comment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHtml(value: Boolean => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction1(value))
+      inline def setGetHtml(value: Boolean => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenTag(value: (String, StringDictionary[String]) => Unit): Self = StObject.set(x, "openTag", js.Any.fromFunction2(value))
+      inline def setOpenTag(value: (String, StringDictionary[String]) => Unit): Self = StObject.set(x, "openTag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpenTagClose(value: (String, Boolean) => Unit): Self = StObject.set(x, "openTagClose", js.Any.fromFunction2(value))
+      inline def setOpenTagClose(value: (String, Boolean) => Unit): Self = StObject.set(x, "openTagClose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setText(value: String => Unit): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setText(value: String => Unit): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -218,56 +207,40 @@ object htmlParser {
   }
   object filterRulesDefinition {
     
-    @scala.inline
-    def apply(): filterRulesDefinition = {
+    inline def apply(): filterRulesDefinition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[filterRulesDefinition]
     }
     
-    @scala.inline
-    implicit class filterRulesDefinitionMutableBuilder[Self <: filterRulesDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: filterRulesDefinition](x: Self) {
       
-      @scala.inline
-      def setAttributeNames(value: js.Any): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
+      inline def setAttributeNames(value: js.Any): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeNamesUndefined: Self = StObject.set(x, "attributeNames", js.undefined)
+      inline def setAttributeNamesUndefined: Self = StObject.set(x, "attributeNames", js.undefined)
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setComment(value: js.Any): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: js.Any): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setElementNames(value: js.Any): Self = StObject.set(x, "elementNames", value.asInstanceOf[js.Any])
+      inline def setElementNames(value: js.Any): Self = StObject.set(x, "elementNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementNamesUndefined: Self = StObject.set(x, "elementNames", js.undefined)
+      inline def setElementNamesUndefined: Self = StObject.set(x, "elementNames", js.undefined)
       
-      @scala.inline
-      def setElements(value: js.Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+      inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      @scala.inline
-      def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -354,26 +327,20 @@ object htmlParser {
   }
   object ruleOptions {
     
-    @scala.inline
-    def apply(): ruleOptions = {
+    inline def apply(): ruleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ruleOptions]
     }
     
-    @scala.inline
-    implicit class ruleOptionsMutableBuilder[Self <: ruleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ruleOptions](x: Self) {
       
-      @scala.inline
-      def setApplyToAll(value: Boolean): Self = StObject.set(x, "applyToAll", value.asInstanceOf[js.Any])
+      inline def setApplyToAll(value: Boolean): Self = StObject.set(x, "applyToAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyToAllUndefined: Self = StObject.set(x, "applyToAll", js.undefined)
+      inline def setApplyToAllUndefined: Self = StObject.set(x, "applyToAll", js.undefined)
       
-      @scala.inline
-      def setExcludeNestedEditable(value: Boolean): Self = StObject.set(x, "excludeNestedEditable", value.asInstanceOf[js.Any])
+      inline def setExcludeNestedEditable(value: Boolean): Self = StObject.set(x, "excludeNestedEditable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeNestedEditableUndefined: Self = StObject.set(x, "excludeNestedEditable", js.undefined)
+      inline def setExcludeNestedEditableUndefined: Self = StObject.set(x, "excludeNestedEditable", js.undefined)
     }
   }
   

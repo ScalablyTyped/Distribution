@@ -18,25 +18,19 @@ trait ObjectAttributeAction extends StObject {
 }
 object ObjectAttributeAction {
   
-  @scala.inline
-  def apply(): ObjectAttributeAction = {
+  inline def apply(): ObjectAttributeAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectAttributeAction]
   }
   
-  @scala.inline
-  implicit class ObjectAttributeActionMutableBuilder[Self <: ObjectAttributeAction] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectAttributeAction](x: Self) {
     
-    @scala.inline
-    def setObjectAttributeActionType(value: UpdateActionType): Self = StObject.set(x, "ObjectAttributeActionType", value.asInstanceOf[js.Any])
+    inline def setObjectAttributeActionType(value: UpdateActionType): Self = StObject.set(x, "ObjectAttributeActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectAttributeActionTypeUndefined: Self = StObject.set(x, "ObjectAttributeActionType", js.undefined)
+    inline def setObjectAttributeActionTypeUndefined: Self = StObject.set(x, "ObjectAttributeActionType", js.undefined)
     
-    @scala.inline
-    def setObjectAttributeUpdateValue(value: TypedAttributeValue): Self = StObject.set(x, "ObjectAttributeUpdateValue", value.asInstanceOf[js.Any])
+    inline def setObjectAttributeUpdateValue(value: TypedAttributeValue): Self = StObject.set(x, "ObjectAttributeUpdateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectAttributeUpdateValueUndefined: Self = StObject.set(x, "ObjectAttributeUpdateValue", js.undefined)
+    inline def setObjectAttributeUpdateValueUndefined: Self = StObject.set(x, "ObjectAttributeUpdateValue", js.undefined)
   }
 }

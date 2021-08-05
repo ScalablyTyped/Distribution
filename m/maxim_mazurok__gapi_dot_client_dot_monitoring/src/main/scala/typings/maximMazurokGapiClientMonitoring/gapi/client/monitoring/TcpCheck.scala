@@ -11,19 +11,15 @@ trait TcpCheck extends StObject {
 }
 object TcpCheck {
   
-  @scala.inline
-  def apply(): TcpCheck = {
+  inline def apply(): TcpCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TcpCheck]
   }
   
-  @scala.inline
-  implicit class TcpCheckMutableBuilder[Self <: TcpCheck] (val x: Self) extends AnyVal {
+  extension [Self <: TcpCheck](x: Self) {
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

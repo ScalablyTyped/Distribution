@@ -23,28 +23,21 @@ trait CreateDBClusterSnapshotMessage extends StObject {
 }
 object CreateDBClusterSnapshotMessage {
   
-  @scala.inline
-  def apply(DBClusterIdentifier: String, DBClusterSnapshotIdentifier: String): CreateDBClusterSnapshotMessage = {
+  inline def apply(DBClusterIdentifier: String, DBClusterSnapshotIdentifier: String): CreateDBClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any], DBClusterSnapshotIdentifier = DBClusterSnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDBClusterSnapshotMessage]
   }
   
-  @scala.inline
-  implicit class CreateDBClusterSnapshotMessageMutableBuilder[Self <: CreateDBClusterSnapshotMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDBClusterSnapshotMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

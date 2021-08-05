@@ -24,43 +24,31 @@ trait PartialRouterPropschildreBase extends StObject {
 }
 object PartialRouterPropschildreBase {
   
-  @scala.inline
-  def apply(): PartialRouterPropschildreBase = {
+  inline def apply(): PartialRouterPropschildreBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialRouterPropschildreBase]
   }
   
-  @scala.inline
-  implicit class PartialRouterPropschildreBaseMutableBuilder[Self <: PartialRouterPropschildreBase] (val x: Self) extends AnyVal {
+  extension [Self <: PartialRouterPropschildreBase](x: Self) {
     
-    @scala.inline
-    def setBase(value: Path): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Path): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenNull: Self = StObject.set(x, "children", null)
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ComponentChild*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ComponentChild*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setHook(value: BaseLocationHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+    inline def setHook(value: BaseLocationHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
+    inline def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
     
-    @scala.inline
-    def setMatcher(value: (/* pattern */ Path, /* path */ Path) => Match[DefaultParams]): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
+    inline def setMatcher(value: (/* pattern */ Path, /* path */ Path) => Match[DefaultParams]): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
+    inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
   }
 }

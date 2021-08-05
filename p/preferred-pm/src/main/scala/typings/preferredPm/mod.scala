@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pkgPath: String): js.Promise[Null | Name] = ^.asInstanceOf[js.Dynamic].apply(pkgPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null | Name]]
+  inline def apply(pkgPath: String): js.Promise[Null | Name] = ^.asInstanceOf[js.Dynamic].apply(pkgPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null | Name]]
   
   @JSImport("preferred-pm", JSImport.Namespace)
   @js.native

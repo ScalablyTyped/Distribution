@@ -23,31 +23,23 @@ trait QueryStatistics extends StObject {
 }
 object QueryStatistics {
   
-  @scala.inline
-  def apply(): QueryStatistics = {
+  inline def apply(): QueryStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryStatistics]
   }
   
-  @scala.inline
-  implicit class QueryStatisticsMutableBuilder[Self <: QueryStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: QueryStatistics](x: Self) {
     
-    @scala.inline
-    def setBytesScanned(value: StatsValue): Self = StObject.set(x, "bytesScanned", value.asInstanceOf[js.Any])
+    inline def setBytesScanned(value: StatsValue): Self = StObject.set(x, "bytesScanned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesScannedUndefined: Self = StObject.set(x, "bytesScanned", js.undefined)
+    inline def setBytesScannedUndefined: Self = StObject.set(x, "bytesScanned", js.undefined)
     
-    @scala.inline
-    def setRecordsMatched(value: StatsValue): Self = StObject.set(x, "recordsMatched", value.asInstanceOf[js.Any])
+    inline def setRecordsMatched(value: StatsValue): Self = StObject.set(x, "recordsMatched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsMatchedUndefined: Self = StObject.set(x, "recordsMatched", js.undefined)
+    inline def setRecordsMatchedUndefined: Self = StObject.set(x, "recordsMatched", js.undefined)
     
-    @scala.inline
-    def setRecordsScanned(value: StatsValue): Self = StObject.set(x, "recordsScanned", value.asInstanceOf[js.Any])
+    inline def setRecordsScanned(value: StatsValue): Self = StObject.set(x, "recordsScanned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsScannedUndefined: Self = StObject.set(x, "recordsScanned", js.undefined)
+    inline def setRecordsScannedUndefined: Self = StObject.set(x, "recordsScanned", js.undefined)
   }
 }

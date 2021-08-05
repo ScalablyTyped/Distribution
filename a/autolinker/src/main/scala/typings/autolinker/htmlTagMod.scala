@@ -31,7 +31,7 @@ object htmlTagMod {
       * An key/value Object (map) of attributes to create the tag with. The keys are the attribute names, and the
       * values are the attribute values.
       */
-    var attrs: js.Any = js.native
+    /* private */ var attrs: js.Any = js.native
     
     /**
       * Support method for {@link #toAnchorString}, returns the string space-separated key="value" pairs, used to populate
@@ -91,7 +91,7 @@ object htmlTagMod {
       *
       * The inner HTML for the tag.
       */
-    var innerHTML: js.Any = js.native
+    /* private */ var innerHTML: js.Any = js.native
     
     /**
       * Convenience method to remove one or more CSS classes from the HtmlTag.
@@ -158,7 +158,7 @@ object htmlTagMod {
       * Not required at instantiation time, but should be set using {@link #setTagName} before {@link #toAnchorString}
       * is executed.
       */
-    var tagName: js.Any = js.native
+    /* private */ var tagName: js.Any = js.native
     
     /**
       * Override of superclass method used to generate the HTML string for the tag.
@@ -173,7 +173,7 @@ object htmlTagMod {
       *
       * Regular expression used to match whitespace in a string of CSS classes.
       */
-    var whitespaceRegex: RegExp = js.native
+    /* protected */ var whitespaceRegex: RegExp = js.native
   }
   
   trait HtmlTagCfg extends StObject {
@@ -188,32 +188,24 @@ object htmlTagMod {
   }
   object HtmlTagCfg {
     
-    @scala.inline
-    def apply(): HtmlTagCfg = {
+    inline def apply(): HtmlTagCfg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HtmlTagCfg]
     }
     
-    @scala.inline
-    implicit class HtmlTagCfgMutableBuilder[Self <: HtmlTagCfg] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlTagCfg](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
+      inline def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
+      inline def setInnerHTMLUndefined: Self = StObject.set(x, "innerHTML", js.undefined)
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     }
   }
 }

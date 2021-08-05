@@ -21,8 +21,7 @@ trait TypeOperatorType
 }
 object TypeOperatorType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     operator: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly,
     target: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
     `type`: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String)
@@ -32,27 +31,20 @@ object TypeOperatorType {
     __obj.asInstanceOf[TypeOperatorType]
   }
   
-  @scala.inline
-  implicit class TypeOperatorTypeMutableBuilder[Self <: TypeOperatorType] (val x: Self) extends AnyVal {
+  extension [Self <: TypeOperatorType](x: Self) {
     
-    @scala.inline
-    def setOperator(value: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "operator", js.Array(value :_*))
+    inline def setOperatorVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "operator", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(
+    inline def setTarget(
       value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
     ): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "target", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

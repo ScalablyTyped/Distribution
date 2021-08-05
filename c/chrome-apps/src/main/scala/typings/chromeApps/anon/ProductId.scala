@@ -13,19 +13,15 @@ trait ProductId extends StObject {
 }
 object ProductId {
   
-  @scala.inline
-  def apply(productId: integer, vendorId: integer): ProductId = {
+  inline def apply(productId: integer, vendorId: integer): ProductId = {
     val __obj = js.Dynamic.literal(productId = productId.asInstanceOf[js.Any], vendorId = vendorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductId]
   }
   
-  @scala.inline
-  implicit class ProductIdMutableBuilder[Self <: ProductId] (val x: Self) extends AnyVal {
+  extension [Self <: ProductId](x: Self) {
     
-    @scala.inline
-    def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+    inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
   }
 }

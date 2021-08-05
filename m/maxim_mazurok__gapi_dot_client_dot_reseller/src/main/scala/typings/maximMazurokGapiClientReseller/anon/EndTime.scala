@@ -14,25 +14,19 @@ trait EndTime extends StObject {
 }
 object EndTime {
   
-  @scala.inline
-  def apply(): EndTime = {
+  inline def apply(): EndTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndTime]
   }
   
-  @scala.inline
-  implicit class EndTimeMutableBuilder[Self <: EndTime] (val x: Self) extends AnyVal {
+  extension [Self <: EndTime](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

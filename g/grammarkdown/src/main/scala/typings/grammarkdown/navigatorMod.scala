@@ -22,51 +22,51 @@ object navigatorMod {
       */
     def this(sourceFile: SourceFile) = this()
     
-    var _afterNavigate: js.Any = js.native
+    /* private */ var _afterNavigate: js.Any = js.native
     
-    var _arrayStack: js.Any = js.native
+    /* private */ var _arrayStack: js.Any = js.native
     
-    var _beforeNavigate: js.Any = js.native
+    /* private */ var _beforeNavigate: js.Any = js.native
     
-    var _copyOnNavigate: js.Any = js.native
+    /* private */ var _copyOnNavigate: js.Any = js.native
     
-    var _currentArray: js.Any = js.native
+    /* private */ var _currentArray: js.Any = js.native
     
-    var _currentDepth: js.Any = js.native
+    /* private */ var _currentDepth: js.Any = js.native
     
-    var _currentEdge: js.Any = js.native
+    /* private */ var _currentEdge: js.Any = js.native
     
-    var _currentNode: js.Any = js.native
+    /* private */ var _currentNode: js.Any = js.native
     
-    var _currentOffset: js.Any = js.native
+    /* private */ var _currentOffset: js.Any = js.native
     
-    var _edgeStack: js.Any = js.native
+    /* private */ var _edgeStack: js.Any = js.native
     
-    var _hasAnyChildren: js.Any = js.native
+    /* private */ var _hasAnyChildren: js.Any = js.native
     
-    var _moveToChild: js.Any = js.native
+    /* private */ var _moveToChild: js.Any = js.native
     
-    var _moveToElement: js.Any = js.native
+    /* private */ var _moveToElement: js.Any = js.native
     
-    var _moveToPositionWorker: js.Any = js.native
+    /* private */ var _moveToPositionWorker: js.Any = js.native
     
-    var _moveToSibling: js.Any = js.native
+    /* private */ var _moveToSibling: js.Any = js.native
     
-    var _nodeStack: js.Any = js.native
+    /* private */ var _nodeStack: js.Any = js.native
     
-    var _offsetStack: js.Any = js.native
+    /* private */ var _offsetStack: js.Any = js.native
     
-    var _parentNode: js.Any = js.native
+    /* private */ var _parentNode: js.Any = js.native
     
-    var _popEdge: js.Any = js.native
+    /* private */ var _popEdge: js.Any = js.native
     
-    var _pushEdge: js.Any = js.native
+    /* private */ var _pushEdge: js.Any = js.native
     
-    var _reset: js.Any = js.native
+    /* private */ var _reset: js.Any = js.native
     
-    var _setEdge: js.Any = js.native
+    /* private */ var _setEdge: js.Any = js.native
     
-    var _sourceFile: js.Any = js.native
+    /* private */ var _sourceFile: js.Any = js.native
     
     /**
       * Gets the containing node array of {@link Node} the navigator is currently focused on.

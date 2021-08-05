@@ -10,8 +10,7 @@ object warnConditionallyRequiredPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def warnConditionallyRequiredProps[P](
+  inline def warnConditionallyRequiredProps[P](
     componentName: String,
     props: P,
     requiredProps: js.Array[String],

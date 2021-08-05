@@ -24,7 +24,7 @@ object contextMod {
     /** @hidden */
     def _serializeV1(): js.Array[DialogflowV1Context] = js.native
     
-    var _session: js.Any = js.native
+    /* private */ var _session: js.Any = js.native
     
     /** @public */
     def delete(name: String): Unit = js.native
@@ -168,20 +168,16 @@ object contextMod {
   }
   object Context {
     
-    @scala.inline
-    def apply[TParameters /* <: Parameters */](lifespan: Double, name: String, parameters: TParameters): Context[TParameters] = {
+    inline def apply[TParameters /* <: Parameters */](lifespan: Double, name: String, parameters: TParameters): Context[TParameters] = {
       val __obj = js.Dynamic.literal(lifespan = lifespan.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context[TParameters]]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context[?], TParameters /* <: Parameters */] (val x: Self & Context[TParameters]) extends AnyVal {
+    extension [Self <: Context[?], TParameters /* <: Parameters */](x: Self & Context[TParameters]) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: TParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: TParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,23 +194,18 @@ object contextMod {
   }
   object OutputContext {
     
-    @scala.inline
-    def apply[TParameters /* <: Parameters */](lifespan: Double): OutputContext[TParameters] = {
+    inline def apply[TParameters /* <: Parameters */](lifespan: Double): OutputContext[TParameters] = {
       val __obj = js.Dynamic.literal(lifespan = lifespan.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutputContext[TParameters]]
     }
     
-    @scala.inline
-    implicit class OutputContextMutableBuilder[Self <: OutputContext[?], TParameters /* <: Parameters */] (val x: Self & OutputContext[TParameters]) extends AnyVal {
+    extension [Self <: OutputContext[?], TParameters /* <: Parameters */](x: Self & OutputContext[TParameters]) {
       
-      @scala.inline
-      def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
+      inline def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: TParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: TParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     }
   }
   

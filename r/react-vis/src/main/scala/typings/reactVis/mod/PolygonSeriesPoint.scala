@@ -14,19 +14,15 @@ trait PolygonSeriesPoint
 }
 object PolygonSeriesPoint {
   
-  @scala.inline
-  def apply(x: Double, y: Double): PolygonSeriesPoint = {
+  inline def apply(x: Double, y: Double): PolygonSeriesPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolygonSeriesPoint]
   }
   
-  @scala.inline
-  implicit class PolygonSeriesPointMutableBuilder[Self <: PolygonSeriesPoint] (val x: Self) extends AnyVal {
+  extension [Self <: PolygonSeriesPoint](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -31,29 +31,22 @@ object anon {
   }
   object Optionsmapfalseundefined {
     
-    @scala.inline
-    def apply(map: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsmapfalseundefined = {
+    inline def apply(map: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsmapfalseundefined = {
       val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsmapfalseundefined]
     }
     
-    @scala.inline
-    implicit class OptionsmapfalseundefinedMutableBuilder[Self <: Optionsmapfalseundefined] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsmapfalseundefined](x: Self) {
       
-      @scala.inline
-      def setDecodeValues(value: Boolean): Self = StObject.set(x, "decodeValues", value.asInstanceOf[js.Any])
+      inline def setDecodeValues(value: Boolean): Self = StObject.set(x, "decodeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeValuesUndefined: Self = StObject.set(x, "decodeValues", js.undefined)
+      inline def setDecodeValuesUndefined: Self = StObject.set(x, "decodeValues", js.undefined)
       
-      @scala.inline
-      def setMap(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   
@@ -80,29 +73,22 @@ object anon {
   }
   object Optionsmaptrue {
     
-    @scala.inline
-    def apply(map: js.UndefOr[Boolean] & `true`): Optionsmaptrue = {
+    inline def apply(map: js.UndefOr[Boolean] & `true`): Optionsmaptrue = {
       val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsmaptrue]
     }
     
-    @scala.inline
-    implicit class OptionsmaptrueMutableBuilder[Self <: Optionsmaptrue] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsmaptrue](x: Self) {
       
-      @scala.inline
-      def setDecodeValues(value: Boolean): Self = StObject.set(x, "decodeValues", value.asInstanceOf[js.Any])
+      inline def setDecodeValues(value: Boolean): Self = StObject.set(x, "decodeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeValuesUndefined: Self = StObject.set(x, "decodeValues", js.undefined)
+      inline def setDecodeValuesUndefined: Self = StObject.set(x, "decodeValues", js.undefined)
       
-      @scala.inline
-      def setMap(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
 }

@@ -47,48 +47,36 @@ object typesMessageRequestMod {
   }
   object MessageRequest {
     
-    @scala.inline
-    def apply(): MessageRequest = {
+    inline def apply(): MessageRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageRequest]
     }
     
-    @scala.inline
-    implicit class MessageRequestMutableBuilder[Self <: MessageRequest] (val x: Self) extends AnyVal {
+    extension [Self <: MessageRequest](x: Self) {
       
-      @scala.inline
-      def setAddresses(
+      inline def setAddresses(
         value: StringDictionary[AddressConfiguration] | (Iterable[js.Tuple2[String, AddressConfiguration]])
       ): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
+      inline def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
       
-      @scala.inline
-      def setContext(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
       
-      @scala.inline
-      def setEndpoints(
+      inline def setEndpoints(
         value: StringDictionary[EndpointSendConfiguration] | (Iterable[js.Tuple2[String, EndpointSendConfiguration]])
       ): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+      inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
       
-      @scala.inline
-      def setMessageConfiguration(value: DirectMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
+      inline def setMessageConfiguration(value: DirectMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
+      inline def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
       
-      @scala.inline
-      def setTraceId(value: String): Self = StObject.set(x, "TraceId", value.asInstanceOf[js.Any])
+      inline def setTraceId(value: String): Self = StObject.set(x, "TraceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceIdUndefined: Self = StObject.set(x, "TraceId", js.undefined)
+      inline def setTraceIdUndefined: Self = StObject.set(x, "TraceId", js.undefined)
     }
   }
   
@@ -122,38 +110,28 @@ object typesMessageRequestMod {
   }
   object UnmarshalledMessageRequest {
     
-    @scala.inline
-    def apply(): UnmarshalledMessageRequest = {
+    inline def apply(): UnmarshalledMessageRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledMessageRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledMessageRequestMutableBuilder[Self <: UnmarshalledMessageRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledMessageRequest](x: Self) {
       
-      @scala.inline
-      def setAddresses(value: StringDictionary[UnmarshalledAddressConfiguration]): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
+      inline def setAddresses(value: StringDictionary[UnmarshalledAddressConfiguration]): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
+      inline def setAddressesUndefined: Self = StObject.set(x, "Addresses", js.undefined)
       
-      @scala.inline
-      def setContext(value: StringDictionary[String]): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
       
-      @scala.inline
-      def setEndpoints(value: StringDictionary[UnmarshalledEndpointSendConfiguration]): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: StringDictionary[UnmarshalledEndpointSendConfiguration]): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+      inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
       
-      @scala.inline
-      def setMessageConfiguration(value: UnmarshalledDirectMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
+      inline def setMessageConfiguration(value: UnmarshalledDirectMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
+      inline def setMessageConfigurationUndefined: Self = StObject.set(x, "MessageConfiguration", js.undefined)
     }
   }
 }

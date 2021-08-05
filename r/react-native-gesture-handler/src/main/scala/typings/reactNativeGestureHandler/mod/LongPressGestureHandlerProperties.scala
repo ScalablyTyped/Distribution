@@ -18,37 +18,27 @@ trait LongPressGestureHandlerProperties
 }
 object LongPressGestureHandlerProperties {
   
-  @scala.inline
-  def apply(): LongPressGestureHandlerProperties = {
+  inline def apply(): LongPressGestureHandlerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LongPressGestureHandlerProperties]
   }
   
-  @scala.inline
-  implicit class LongPressGestureHandlerPropertiesMutableBuilder[Self <: LongPressGestureHandlerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LongPressGestureHandlerProperties](x: Self) {
     
-    @scala.inline
-    def setMaxDist(value: Double): Self = StObject.set(x, "maxDist", value.asInstanceOf[js.Any])
+    inline def setMaxDist(value: Double): Self = StObject.set(x, "maxDist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDistUndefined: Self = StObject.set(x, "maxDist", js.undefined)
+    inline def setMaxDistUndefined: Self = StObject.set(x, "maxDist", js.undefined)
     
-    @scala.inline
-    def setMinDurationMs(value: Double): Self = StObject.set(x, "minDurationMs", value.asInstanceOf[js.Any])
+    inline def setMinDurationMs(value: Double): Self = StObject.set(x, "minDurationMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDurationMsUndefined: Self = StObject.set(x, "minDurationMs", js.undefined)
+    inline def setMinDurationMsUndefined: Self = StObject.set(x, "minDurationMs", js.undefined)
     
-    @scala.inline
-    def setOnGestureEvent(value: /* event */ LongPressGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
+    inline def setOnGestureEvent(value: /* event */ LongPressGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
+    inline def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
     
-    @scala.inline
-    def setOnHandlerStateChange(value: /* event */ LongPressGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
+    inline def setOnHandlerStateChange(value: /* event */ LongPressGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
+    inline def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
   }
 }

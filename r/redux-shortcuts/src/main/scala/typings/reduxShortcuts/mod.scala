@@ -45,13 +45,10 @@ object mod {
     override def _to: js.Object & MousetrapStatic = ^
   }
   
-  @scala.inline
-  def bindShortcut(keys: KeyBindings, actionCreator: ActionBindings): js.Function1[/* dispatch */ Dispatch[js.Any], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcut")(keys.asInstanceOf[js.Any], actionCreator.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[js.Any], Unit]]
-  @scala.inline
-  def bindShortcut(keys: KeyBindings, actionCreator: ActionBindings, preventDefault: Boolean): js.Function1[/* dispatch */ Dispatch[js.Any], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcut")(keys.asInstanceOf[js.Any], actionCreator.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[js.Any], Unit]]
+  inline def bindShortcut(keys: KeyBindings, actionCreator: ActionBindings): js.Function1[/* dispatch */ Dispatch[js.Any], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcut")(keys.asInstanceOf[js.Any], actionCreator.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[js.Any], Unit]]
+  inline def bindShortcut(keys: KeyBindings, actionCreator: ActionBindings, preventDefault: Boolean): js.Function1[/* dispatch */ Dispatch[js.Any], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcut")(keys.asInstanceOf[js.Any], actionCreator.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* dispatch */ Dispatch[js.Any], Unit]]
   
-  @scala.inline
-  def bindShortcuts(shortcut: ShortcutDefinition*): js.Function1[/* dispatch */ Dispatch[js.Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcuts")(shortcut.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dispatch */ Dispatch[js.Any], Unit]]
+  inline def bindShortcuts(shortcut: ShortcutDefinition*): js.Function1[/* dispatch */ Dispatch[js.Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindShortcuts")(shortcut.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dispatch */ Dispatch[js.Any], Unit]]
   
   @JSImport("redux-shortcuts", "mousetrap")
   @js.native

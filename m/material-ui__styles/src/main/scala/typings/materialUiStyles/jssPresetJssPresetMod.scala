@@ -11,6 +11,5 @@ object jssPresetJssPresetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): JssOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[JssOptions]
+  inline def default(): JssOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[JssOptions]
 }

@@ -12,19 +12,15 @@ trait pluploadFiltersMimeTypes extends StObject {
 }
 object pluploadFiltersMimeTypes {
   
-  @scala.inline
-  def apply(extensions: String, title: String): pluploadFiltersMimeTypes = {
+  inline def apply(extensions: String, title: String): pluploadFiltersMimeTypes = {
     val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[pluploadFiltersMimeTypes]
   }
   
-  @scala.inline
-  implicit class pluploadFiltersMimeTypesMutableBuilder[Self <: pluploadFiltersMimeTypes] (val x: Self) extends AnyVal {
+  extension [Self <: pluploadFiltersMimeTypes](x: Self) {
     
-    @scala.inline
-    def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

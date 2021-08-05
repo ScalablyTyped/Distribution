@@ -14,11 +14,11 @@ object datePickerMod {
     extends Component[IDatePickerProps, js.Object, js.Any] {
     def this(props: IDatePickerProps) = this()
     
-    var _onChange: js.Any = js.native
+    /* private */ var _onChange: js.Any = js.native
     
-    var _rctDatePicker: js.Any = js.native
+    /* private */ var _rctDatePicker: js.Any = js.native
     
-    var _setRef: js.Any = js.native
+    /* private */ var _setRef: js.Any = js.native
   }
   /* static members */
   object DatePicker {
@@ -30,7 +30,6 @@ object datePickerMod {
     @JSImport("react-native-windows/Libraries/Components/DatePicker/DatePicker", "DatePicker.defaultProps")
     @js.native
     def defaultProps: IDatePickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

@@ -22,43 +22,43 @@ object dragBoxLayerMod {
     */
   class DragBoxLayer () extends SelectionBoxLayer {
     
-    var _detectionCornerBL: js.Any = js.native
+    /* private */ var _detectionCornerBL: js.Any = js.native
     
-    var _detectionCornerBR: js.Any = js.native
+    /* private */ var _detectionCornerBR: js.Any = js.native
     
-    var _detectionCornerTL: js.Any = js.native
+    /* private */ var _detectionCornerTL: js.Any = js.native
     
-    var _detectionCornerTR: js.Any = js.native
+    /* private */ var _detectionCornerTR: js.Any = js.native
     
-    var _detectionEdgeB: js.Any = js.native
+    /* private */ var _detectionEdgeB: js.Any = js.native
     
-    var _detectionEdgeL: js.Any = js.native
+    /* private */ var _detectionEdgeL: js.Any = js.native
     
-    var _detectionEdgeR: js.Any = js.native
+    /* private */ var _detectionEdgeR: js.Any = js.native
     
-    var _detectionEdgeT: js.Any = js.native
+    /* private */ var _detectionEdgeT: js.Any = js.native
     
-    var _detectionRadius: js.Any = js.native
+    /* private */ var _detectionRadius: js.Any = js.native
     
-    var _disconnectInteraction: js.Any = js.native
+    /* private */ var _disconnectInteraction: js.Any = js.native
     
-    var _dragCallbacks: js.Any = js.native
+    /* private */ var _dragCallbacks: js.Any = js.native
     
-    var _dragEndCallbacks: js.Any = js.native
+    /* private */ var _dragEndCallbacks: js.Any = js.native
     
-    var _dragInteraction: js.Any = js.native
+    /* private */ var _dragInteraction: js.Any = js.native
     
-    var _dragStartCallbacks: js.Any = js.native
+    /* private */ var _dragStartCallbacks: js.Any = js.native
     
     /* private */ def _getResizingEdges(p: js.Any): js.Any = js.native
     
-    var _hasCorners: Boolean = js.native
+    /* protected */ var _hasCorners: Boolean = js.native
     
-    var _movable: js.Any = js.native
+    /* private */ var _movable: js.Any = js.native
     
     /* private */ def _resetState(): js.Any = js.native
     
-    var _resizable: js.Any = js.native
+    /* private */ var _resizable: js.Any = js.native
     
     /* private */ def _setMovableClass(): js.Any = js.native
     

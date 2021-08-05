@@ -23,31 +23,23 @@ trait RequestImpactStatistics extends StObject {
 }
 object RequestImpactStatistics {
   
-  @scala.inline
-  def apply(): RequestImpactStatistics = {
+  inline def apply(): RequestImpactStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestImpactStatistics]
   }
   
-  @scala.inline
-  implicit class RequestImpactStatisticsMutableBuilder[Self <: RequestImpactStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: RequestImpactStatistics](x: Self) {
     
-    @scala.inline
-    def setFaultCount(value: NullableLong): Self = StObject.set(x, "FaultCount", value.asInstanceOf[js.Any])
+    inline def setFaultCount(value: NullableLong): Self = StObject.set(x, "FaultCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaultCountUndefined: Self = StObject.set(x, "FaultCount", js.undefined)
+    inline def setFaultCountUndefined: Self = StObject.set(x, "FaultCount", js.undefined)
     
-    @scala.inline
-    def setOkCount(value: NullableLong): Self = StObject.set(x, "OkCount", value.asInstanceOf[js.Any])
+    inline def setOkCount(value: NullableLong): Self = StObject.set(x, "OkCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkCountUndefined: Self = StObject.set(x, "OkCount", js.undefined)
+    inline def setOkCountUndefined: Self = StObject.set(x, "OkCount", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

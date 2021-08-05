@@ -43,8 +43,7 @@ trait DERAbstractString extends StObject {
 }
 object DERAbstractString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFreshValueHex: () => String,
     getString: () => String,
     s: String,
@@ -55,22 +54,16 @@ object DERAbstractString {
     __obj.asInstanceOf[DERAbstractString]
   }
   
-  @scala.inline
-  implicit class DERAbstractStringMutableBuilder[Self <: DERAbstractString] (val x: Self) extends AnyVal {
+  extension [Self <: DERAbstractString](x: Self) {
     
-    @scala.inline
-    def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
+    inline def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
+    inline def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
+    inline def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStringHex(value: String => Unit): Self = StObject.set(x, "setStringHex", js.Any.fromFunction1(value))
+    inline def setSetStringHex(value: String => Unit): Self = StObject.set(x, "setStringHex", js.Any.fromFunction1(value))
   }
 }

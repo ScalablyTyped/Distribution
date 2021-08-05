@@ -13,22 +13,17 @@ trait Plain extends StObject {
 }
 object Plain {
   
-  @scala.inline
-  def apply(plain: Record[String, String], styles: js.Array[Style]): Plain = {
+  inline def apply(plain: Record[String, String], styles: js.Array[Style]): Plain = {
     val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plain]
   }
   
-  @scala.inline
-  implicit class PlainMutableBuilder[Self <: Plain] (val x: Self) extends AnyVal {
+  extension [Self <: Plain](x: Self) {
     
-    @scala.inline
-    def setPlain(value: Record[String, String]): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+    inline def setPlain(value: Record[String, String]): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: js.Array[Style]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[Style]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesVarargs(value: Style*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: Style*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

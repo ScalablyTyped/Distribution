@@ -18,22 +18,17 @@ trait StringParameter extends StObject {
 }
 object StringParameter {
   
-  @scala.inline
-  def apply(Name: NonEmptyString, Values: StringList): StringParameter = {
+  inline def apply(Name: NonEmptyString, Values: StringList): StringParameter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringParameter]
   }
   
-  @scala.inline
-  implicit class StringParameterMutableBuilder[Self <: StringParameter] (val x: Self) extends AnyVal {
+  extension [Self <: StringParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: StringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: StringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

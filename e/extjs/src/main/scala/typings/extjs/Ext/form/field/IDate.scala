@@ -91,145 +91,99 @@ trait IDate
 }
 object IDate {
   
-  @scala.inline
-  def apply(): IDate = {
+  inline def apply(): IDate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDate]
   }
   
-  @scala.inline
-  implicit class IDateMutableBuilder[Self <: IDate] (val x: Self) extends AnyVal {
+  extension [Self <: IDate](x: Self) {
     
-    @scala.inline
-    def setAltFormats(value: String): Self = StObject.set(x, "altFormats", value.asInstanceOf[js.Any])
+    inline def setAltFormats(value: String): Self = StObject.set(x, "altFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltFormatsUndefined: Self = StObject.set(x, "altFormats", js.undefined)
+    inline def setAltFormatsUndefined: Self = StObject.set(x, "altFormats", js.undefined)
     
-    @scala.inline
-    def setBeforeBlur(value: () => Unit): Self = StObject.set(x, "beforeBlur", js.Any.fromFunction0(value))
+    inline def setBeforeBlur(value: () => Unit): Self = StObject.set(x, "beforeBlur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
+    inline def setBeforeBlurUndefined: Self = StObject.set(x, "beforeBlur", js.undefined)
     
-    @scala.inline
-    def setDisabledDates(value: Array): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
+    inline def setDisabledDates(value: Array): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledDatesText(value: String): Self = StObject.set(x, "disabledDatesText", value.asInstanceOf[js.Any])
+    inline def setDisabledDatesText(value: String): Self = StObject.set(x, "disabledDatesText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledDatesTextUndefined: Self = StObject.set(x, "disabledDatesText", js.undefined)
+    inline def setDisabledDatesTextUndefined: Self = StObject.set(x, "disabledDatesText", js.undefined)
     
-    @scala.inline
-    def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
+    inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
     
-    @scala.inline
-    def setDisabledDays(value: Array): Self = StObject.set(x, "disabledDays", value.asInstanceOf[js.Any])
+    inline def setDisabledDays(value: Array): Self = StObject.set(x, "disabledDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledDaysText(value: String): Self = StObject.set(x, "disabledDaysText", value.asInstanceOf[js.Any])
+    inline def setDisabledDaysText(value: String): Self = StObject.set(x, "disabledDaysText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledDaysTextUndefined: Self = StObject.set(x, "disabledDaysText", js.undefined)
+    inline def setDisabledDaysTextUndefined: Self = StObject.set(x, "disabledDaysText", js.undefined)
     
-    @scala.inline
-    def setDisabledDaysUndefined: Self = StObject.set(x, "disabledDays", js.undefined)
+    inline def setDisabledDaysUndefined: Self = StObject.set(x, "disabledDays", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setInitValue(value: () => Unit): Self = StObject.set(x, "initValue", js.Any.fromFunction0(value))
+    inline def setInitValue(value: () => Unit): Self = StObject.set(x, "initValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitValueUndefined: Self = StObject.set(x, "initValue", js.undefined)
+    inline def setInitValueUndefined: Self = StObject.set(x, "initValue", js.undefined)
     
-    @scala.inline
-    def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
+    inline def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
+    inline def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
+    inline def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
+    inline def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setSafeParse(value: js.Any): Self = StObject.set(x, "safeParse", value.asInstanceOf[js.Any])
+    inline def setSafeParse(value: js.Any): Self = StObject.set(x, "safeParse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeParseUndefined: Self = StObject.set(x, "safeParse", js.undefined)
+    inline def setSafeParseUndefined: Self = StObject.set(x, "safeParse", js.undefined)
     
-    @scala.inline
-    def setSetDisabledDates(value: /* disabledDates */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setDisabledDates", js.Any.fromFunction1(value))
+    inline def setSetDisabledDates(value: /* disabledDates */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setDisabledDates", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisabledDatesUndefined: Self = StObject.set(x, "setDisabledDates", js.undefined)
+    inline def setSetDisabledDatesUndefined: Self = StObject.set(x, "setDisabledDates", js.undefined)
     
-    @scala.inline
-    def setSetDisabledDays(value: /* disabledDays */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setDisabledDays", js.Any.fromFunction1(value))
+    inline def setSetDisabledDays(value: /* disabledDays */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setDisabledDays", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisabledDaysUndefined: Self = StObject.set(x, "setDisabledDays", js.undefined)
+    inline def setSetDisabledDaysUndefined: Self = StObject.set(x, "setDisabledDays", js.undefined)
     
-    @scala.inline
-    def setSetMaxValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
+    inline def setSetMaxValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
+    inline def setSetMaxValueUndefined: Self = StObject.set(x, "setMaxValue", js.undefined)
     
-    @scala.inline
-    def setSetMinValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
+    inline def setSetMinValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMinValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
+    inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* date */ js.UndefOr[js.Any] => IDate): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* date */ js.UndefOr[js.Any] => IDate): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    @scala.inline
-    def setShowToday(value: Boolean): Self = StObject.set(x, "showToday", value.asInstanceOf[js.Any])
+    inline def setShowToday(value: Boolean): Self = StObject.set(x, "showToday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTodayUndefined: Self = StObject.set(x, "showToday", js.undefined)
+    inline def setShowTodayUndefined: Self = StObject.set(x, "showToday", js.undefined)
     
-    @scala.inline
-    def setStartDay(value: Double): Self = StObject.set(x, "startDay", value.asInstanceOf[js.Any])
+    inline def setStartDay(value: Double): Self = StObject.set(x, "startDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDayUndefined: Self = StObject.set(x, "startDay", js.undefined)
+    inline def setStartDayUndefined: Self = StObject.set(x, "startDay", js.undefined)
     
-    @scala.inline
-    def setSubmitFormat(value: String): Self = StObject.set(x, "submitFormat", value.asInstanceOf[js.Any])
+    inline def setSubmitFormat(value: String): Self = StObject.set(x, "submitFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitFormatUndefined: Self = StObject.set(x, "submitFormat", js.undefined)
+    inline def setSubmitFormatUndefined: Self = StObject.set(x, "submitFormat", js.undefined)
     
-    @scala.inline
-    def setUseStrict(value: Boolean): Self = StObject.set(x, "useStrict", value.asInstanceOf[js.Any])
+    inline def setUseStrict(value: Boolean): Self = StObject.set(x, "useStrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseStrictUndefined: Self = StObject.set(x, "useStrict", js.undefined)
+    inline def setUseStrictUndefined: Self = StObject.set(x, "useStrict", js.undefined)
   }
 }

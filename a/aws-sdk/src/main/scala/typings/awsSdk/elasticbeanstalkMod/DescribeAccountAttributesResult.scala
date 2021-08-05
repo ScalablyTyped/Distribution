@@ -13,19 +13,15 @@ trait DescribeAccountAttributesResult extends StObject {
 }
 object DescribeAccountAttributesResult {
   
-  @scala.inline
-  def apply(): DescribeAccountAttributesResult = {
+  inline def apply(): DescribeAccountAttributesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountAttributesResult]
   }
   
-  @scala.inline
-  implicit class DescribeAccountAttributesResultMutableBuilder[Self <: DescribeAccountAttributesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountAttributesResult](x: Self) {
     
-    @scala.inline
-    def setResourceQuotas(value: ResourceQuotas): Self = StObject.set(x, "ResourceQuotas", value.asInstanceOf[js.Any])
+    inline def setResourceQuotas(value: ResourceQuotas): Self = StObject.set(x, "ResourceQuotas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceQuotasUndefined: Self = StObject.set(x, "ResourceQuotas", js.undefined)
+    inline def setResourceQuotasUndefined: Self = StObject.set(x, "ResourceQuotas", js.undefined)
   }
 }

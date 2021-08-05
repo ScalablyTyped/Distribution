@@ -15,7 +15,7 @@ object basickeyhandlerMod {
     extends StObject
        with IKeyHandler {
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
     /**
       * Dispose of the resources held by the object.

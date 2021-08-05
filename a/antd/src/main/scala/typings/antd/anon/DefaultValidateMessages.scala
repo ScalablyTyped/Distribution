@@ -12,22 +12,17 @@ trait DefaultValidateMessages extends StObject {
 }
 object DefaultValidateMessages {
   
-  @scala.inline
-  def apply(defaultValidateMessages: typings.rcFieldForm.interfaceMod.ValidateMessages): DefaultValidateMessages = {
+  inline def apply(defaultValidateMessages: typings.rcFieldForm.interfaceMod.ValidateMessages): DefaultValidateMessages = {
     val __obj = js.Dynamic.literal(defaultValidateMessages = defaultValidateMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultValidateMessages]
   }
   
-  @scala.inline
-  implicit class DefaultValidateMessagesMutableBuilder[Self <: DefaultValidateMessages] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultValidateMessages](x: Self) {
     
-    @scala.inline
-    def setDefaultValidateMessages(value: typings.rcFieldForm.interfaceMod.ValidateMessages): Self = StObject.set(x, "defaultValidateMessages", value.asInstanceOf[js.Any])
+    inline def setDefaultValidateMessages(value: typings.rcFieldForm.interfaceMod.ValidateMessages): Self = StObject.set(x, "defaultValidateMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: String): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: String): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }
 }

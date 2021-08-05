@@ -18,8 +18,7 @@ trait Input extends StObject {
 }
 object Input {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address_n: js.Array[Double],
     amount: String,
     prev_hash: String,
@@ -30,25 +29,18 @@ object Input {
     __obj.asInstanceOf[Input]
   }
   
-  @scala.inline
-  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+  extension [Self <: Input](x: Self) {
     
-    @scala.inline
-    def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
+    inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_nVarargs(value: Double*): Self = StObject.set(x, "address_n", js.Array(value :_*))
+    inline def setAddress_nVarargs(value: Double*): Self = StObject.set(x, "address_n", js.Array(value :_*))
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrev_hash(value: String): Self = StObject.set(x, "prev_hash", value.asInstanceOf[js.Any])
+    inline def setPrev_hash(value: String): Self = StObject.set(x, "prev_hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrev_index(value: Double): Self = StObject.set(x, "prev_index", value.asInstanceOf[js.Any])
+    inline def setPrev_index(value: Double): Self = StObject.set(x, "prev_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript_type(value: String): Self = StObject.set(x, "script_type", value.asInstanceOf[js.Any])
+    inline def setScript_type(value: String): Self = StObject.set(x, "script_type", value.asInstanceOf[js.Any])
   }
 }

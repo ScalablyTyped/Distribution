@@ -14,16 +14,13 @@ trait PlayVoiceOptions
 }
 object PlayVoiceOptions {
   
-  @scala.inline
-  def apply(filePath: String): PlayVoiceOptions = {
+  inline def apply(filePath: String): PlayVoiceOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayVoiceOptions]
   }
   
-  @scala.inline
-  implicit class PlayVoiceOptionsMutableBuilder[Self <: PlayVoiceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlayVoiceOptions](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }
 }

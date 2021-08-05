@@ -15,42 +15,33 @@ object mod {
   @js.native
   val timeDay: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeDays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeDays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeDays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeDays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeFriday")
   @js.native
   val timeFriday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeFridays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeFridays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeFridays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeFridays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeHour")
   @js.native
   val timeHour: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeHours(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeHours(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeHours(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeHours(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @scala.inline
-  def timeInterval(
+  inline def timeInterval(
     floor: js.Function1[/* date */ Date, Unit],
     offset: js.Function2[/* date */ Date, /* step */ Double, Unit]
   ): TimeInterval_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(floor.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[TimeInterval_]
-  @scala.inline
-  def timeInterval(
+  inline def timeInterval(
     floor: js.Function1[/* date */ Date, Unit],
     offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
     count: js.Function2[/* start */ Date, /* end */ Date, Double]
   ): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(floor.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
-  @scala.inline
-  def timeInterval(
+  inline def timeInterval(
     floor: js.Function1[/* date */ Date, Unit],
     offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
     count: js.Function2[/* start */ Date, /* end */ Date, Double],
@@ -61,244 +52,190 @@ object mod {
   @js.native
   val timeMillisecond: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeMilliseconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeMilliseconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeMinute")
   @js.native
   val timeMinute: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeMinutes(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeMinutes(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeMonday")
   @js.native
   val timeMonday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeMondays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeMondays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeMondays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeMondays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeMonth")
   @js.native
   val timeMonth: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeMonths(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeMonths(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeMonths(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeMonths(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeSaturday")
   @js.native
   val timeSaturday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeSaturdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeSaturdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeSecond")
   @js.native
   val timeSecond: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeSeconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeSeconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeSunday")
   @js.native
   val timeSunday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeSundays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeSundays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeSundays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeSundays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeThursday")
   @js.native
   val timeThursday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeThursdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeThursdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeTuesday")
   @js.native
   val timeTuesday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeTuesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeTuesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeWednesday")
   @js.native
   val timeWednesday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeWednesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeWednesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeWeek")
   @js.native
   val timeWeek: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeWeeks(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeWeeks(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "timeYear")
   @js.native
   val timeYear: CountableTimeInterval = js.native
   
-  @scala.inline
-  def timeYears(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def timeYears(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeYears(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def timeYears(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcDay")
   @js.native
   val utcDay: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcDays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcDays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcDays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcDays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcFriday")
   @js.native
   val utcFriday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcFridays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcFridays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcFridays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcFridays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcHour")
   @js.native
   val utcHour: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcHours(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcHours(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcHours(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcHours(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcMillisecond")
   @js.native
   val utcMillisecond: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcMilliseconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcMilliseconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcMinute")
   @js.native
   val utcMinute: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcMinutes(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcMinutes(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcMonday")
   @js.native
   val utcMonday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcMondays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcMondays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcMondays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcMondays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcMonth")
   @js.native
   val utcMonth: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcMonths(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcMonths(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcMonths(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcMonths(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcSaturday")
   @js.native
   val utcSaturday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcSaturdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcSaturdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcSecond")
   @js.native
   val utcSecond: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcSeconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcSeconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcSunday")
   @js.native
   val utcSunday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcSundays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcSundays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcSundays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcSundays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcThursday")
   @js.native
   val utcThursday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcThursdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcThursdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcTuesday")
   @js.native
   val utcTuesday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcTuesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcTuesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcWednesday")
   @js.native
   val utcWednesday: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcWednesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcWednesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcWeek")
   @js.native
   val utcWeek: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcWeeks(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcWeeks(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @JSImport("d3-time", "utcYear")
   @js.native
   val utcYear: CountableTimeInterval = js.native
   
-  @scala.inline
-  def utcYears(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-  @scala.inline
-  def utcYears(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcYears(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  inline def utcYears(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
   @js.native
   trait CountableTimeInterval

@@ -19,25 +19,20 @@ trait DictadditionalPropsOnClick
 }
 object DictadditionalPropsOnClick {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     tagName: /* keyof wix-style-react.anon.OmitPolyfillHTMLElementTaAbbr */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
   ): DictadditionalPropsOnClick = {
     val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictadditionalPropsOnClick]
   }
   
-  @scala.inline
-  implicit class DictadditionalPropsOnClickMutableBuilder[Self <: DictadditionalPropsOnClick] (val x: Self) extends AnyVal {
+  extension [Self <: DictadditionalPropsOnClick](x: Self) {
     
-    @scala.inline
-    def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setTagName(
+    inline def setTagName(
       value: /* keyof wix-style-react.anon.OmitPolyfillHTMLElementTaAbbr */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117 */ js.Any
     ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }

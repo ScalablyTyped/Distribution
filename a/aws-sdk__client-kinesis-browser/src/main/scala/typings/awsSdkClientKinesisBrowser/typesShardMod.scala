@@ -39,35 +39,26 @@ object typesShardMod {
   }
   object Shard {
     
-    @scala.inline
-    def apply(HashKeyRange: HashKeyRange, SequenceNumberRange: SequenceNumberRange, ShardId: String): Shard = {
+    inline def apply(HashKeyRange: HashKeyRange, SequenceNumberRange: SequenceNumberRange, ShardId: String): Shard = {
       val __obj = js.Dynamic.literal(HashKeyRange = HashKeyRange.asInstanceOf[js.Any], SequenceNumberRange = SequenceNumberRange.asInstanceOf[js.Any], ShardId = ShardId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Shard]
     }
     
-    @scala.inline
-    implicit class ShardMutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
+    extension [Self <: Shard](x: Self) {
       
-      @scala.inline
-      def setAdjacentParentShardId(value: String): Self = StObject.set(x, "AdjacentParentShardId", value.asInstanceOf[js.Any])
+      inline def setAdjacentParentShardId(value: String): Self = StObject.set(x, "AdjacentParentShardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjacentParentShardIdUndefined: Self = StObject.set(x, "AdjacentParentShardId", js.undefined)
+      inline def setAdjacentParentShardIdUndefined: Self = StObject.set(x, "AdjacentParentShardId", js.undefined)
       
-      @scala.inline
-      def setHashKeyRange(value: HashKeyRange): Self = StObject.set(x, "HashKeyRange", value.asInstanceOf[js.Any])
+      inline def setHashKeyRange(value: HashKeyRange): Self = StObject.set(x, "HashKeyRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentShardId(value: String): Self = StObject.set(x, "ParentShardId", value.asInstanceOf[js.Any])
+      inline def setParentShardId(value: String): Self = StObject.set(x, "ParentShardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentShardIdUndefined: Self = StObject.set(x, "ParentShardId", js.undefined)
+      inline def setParentShardIdUndefined: Self = StObject.set(x, "ParentShardId", js.undefined)
       
-      @scala.inline
-      def setSequenceNumberRange(value: SequenceNumberRange): Self = StObject.set(x, "SequenceNumberRange", value.asInstanceOf[js.Any])
+      inline def setSequenceNumberRange(value: SequenceNumberRange): Self = StObject.set(x, "SequenceNumberRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardId(value: String): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
+      inline def setShardId(value: String): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,8 +80,7 @@ object typesShardMod {
   }
   object UnmarshalledShard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       HashKeyRange: UnmarshalledHashKeyRange,
       SequenceNumberRange: UnmarshalledSequenceNumberRange,
       ShardId: String
@@ -99,14 +89,11 @@ object typesShardMod {
       __obj.asInstanceOf[UnmarshalledShard]
     }
     
-    @scala.inline
-    implicit class UnmarshalledShardMutableBuilder[Self <: UnmarshalledShard] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledShard](x: Self) {
       
-      @scala.inline
-      def setHashKeyRange(value: UnmarshalledHashKeyRange): Self = StObject.set(x, "HashKeyRange", value.asInstanceOf[js.Any])
+      inline def setHashKeyRange(value: UnmarshalledHashKeyRange): Self = StObject.set(x, "HashKeyRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumberRange(value: UnmarshalledSequenceNumberRange): Self = StObject.set(x, "SequenceNumberRange", value.asInstanceOf[js.Any])
+      inline def setSequenceNumberRange(value: UnmarshalledSequenceNumberRange): Self = StObject.set(x, "SequenceNumberRange", value.asInstanceOf[js.Any])
     }
   }
 }

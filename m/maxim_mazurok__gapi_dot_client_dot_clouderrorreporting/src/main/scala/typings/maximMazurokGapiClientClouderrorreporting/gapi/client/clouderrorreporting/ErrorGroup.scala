@@ -20,40 +20,29 @@ trait ErrorGroup extends StObject {
 }
 object ErrorGroup {
   
-  @scala.inline
-  def apply(): ErrorGroup = {
+  inline def apply(): ErrorGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorGroup]
   }
   
-  @scala.inline
-  implicit class ErrorGroupMutableBuilder[Self <: ErrorGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorGroup](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResolutionStatus(value: String): Self = StObject.set(x, "resolutionStatus", value.asInstanceOf[js.Any])
+    inline def setResolutionStatus(value: String): Self = StObject.set(x, "resolutionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionStatusUndefined: Self = StObject.set(x, "resolutionStatus", js.undefined)
+    inline def setResolutionStatusUndefined: Self = StObject.set(x, "resolutionStatus", js.undefined)
     
-    @scala.inline
-    def setTrackingIssues(value: js.Array[TrackingIssue]): Self = StObject.set(x, "trackingIssues", value.asInstanceOf[js.Any])
+    inline def setTrackingIssues(value: js.Array[TrackingIssue]): Self = StObject.set(x, "trackingIssues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingIssuesUndefined: Self = StObject.set(x, "trackingIssues", js.undefined)
+    inline def setTrackingIssuesUndefined: Self = StObject.set(x, "trackingIssues", js.undefined)
     
-    @scala.inline
-    def setTrackingIssuesVarargs(value: TrackingIssue*): Self = StObject.set(x, "trackingIssues", js.Array(value :_*))
+    inline def setTrackingIssuesVarargs(value: TrackingIssue*): Self = StObject.set(x, "trackingIssues", js.Array(value :_*))
   }
 }

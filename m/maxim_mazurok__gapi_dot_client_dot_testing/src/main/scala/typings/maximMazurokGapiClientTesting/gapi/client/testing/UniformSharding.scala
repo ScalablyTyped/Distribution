@@ -14,19 +14,15 @@ trait UniformSharding extends StObject {
 }
 object UniformSharding {
   
-  @scala.inline
-  def apply(): UniformSharding = {
+  inline def apply(): UniformSharding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UniformSharding]
   }
   
-  @scala.inline
-  implicit class UniformShardingMutableBuilder[Self <: UniformSharding] (val x: Self) extends AnyVal {
+  extension [Self <: UniformSharding](x: Self) {
     
-    @scala.inline
-    def setNumShards(value: Double): Self = StObject.set(x, "numShards", value.asInstanceOf[js.Any])
+    inline def setNumShards(value: Double): Self = StObject.set(x, "numShards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumShardsUndefined: Self = StObject.set(x, "numShards", js.undefined)
+    inline def setNumShardsUndefined: Self = StObject.set(x, "numShards", js.undefined)
   }
 }

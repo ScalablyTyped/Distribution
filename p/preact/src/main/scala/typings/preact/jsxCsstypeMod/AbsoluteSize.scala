@@ -19,27 +19,19 @@ trait AbsoluteSize
      with _FontSizeProperty[js.Any]
 object AbsoluteSize {
   
-  @scala.inline
-  def large: typings.preact.preactStrings.large = "large".asInstanceOf[typings.preact.preactStrings.large]
+  inline def large: typings.preact.preactStrings.large = "large".asInstanceOf[typings.preact.preactStrings.large]
   
-  @scala.inline
-  def medium: typings.preact.preactStrings.medium = "medium".asInstanceOf[typings.preact.preactStrings.medium]
+  inline def medium: typings.preact.preactStrings.medium = "medium".asInstanceOf[typings.preact.preactStrings.medium]
   
-  @scala.inline
-  def small: typings.preact.preactStrings.small = "small".asInstanceOf[typings.preact.preactStrings.small]
+  inline def small: typings.preact.preactStrings.small = "small".asInstanceOf[typings.preact.preactStrings.small]
   
-  @scala.inline
-  def `x-large`: typings.preact.preactStrings.`x-large` = "x-large".asInstanceOf[typings.preact.preactStrings.`x-large`]
+  inline def `x-large`: typings.preact.preactStrings.`x-large` = "x-large".asInstanceOf[typings.preact.preactStrings.`x-large`]
   
-  @scala.inline
-  def `x-small`: typings.preact.preactStrings.`x-small` = "x-small".asInstanceOf[typings.preact.preactStrings.`x-small`]
+  inline def `x-small`: typings.preact.preactStrings.`x-small` = "x-small".asInstanceOf[typings.preact.preactStrings.`x-small`]
   
-  @scala.inline
-  def `xx-large`: typings.preact.preactStrings.`xx-large` = "xx-large".asInstanceOf[typings.preact.preactStrings.`xx-large`]
+  inline def `xx-large`: typings.preact.preactStrings.`xx-large` = "xx-large".asInstanceOf[typings.preact.preactStrings.`xx-large`]
   
-  @scala.inline
-  def `xx-small`: typings.preact.preactStrings.`xx-small` = "xx-small".asInstanceOf[typings.preact.preactStrings.`xx-small`]
+  inline def `xx-small`: typings.preact.preactStrings.`xx-small` = "xx-small".asInstanceOf[typings.preact.preactStrings.`xx-small`]
   
-  @scala.inline
-  def `xxx-large`: typings.preact.preactStrings.`xxx-large` = "xxx-large".asInstanceOf[typings.preact.preactStrings.`xxx-large`]
+  inline def `xxx-large`: typings.preact.preactStrings.`xxx-large` = "xxx-large".asInstanceOf[typings.preact.preactStrings.`xxx-large`]
 }

@@ -13,16 +13,13 @@ trait DescribeBundleRequest extends StObject {
 }
 object DescribeBundleRequest {
   
-  @scala.inline
-  def apply(bundleId: BundleId): DescribeBundleRequest = {
+  inline def apply(bundleId: BundleId): DescribeBundleRequest = {
     val __obj = js.Dynamic.literal(bundleId = bundleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBundleRequest]
   }
   
-  @scala.inline
-  implicit class DescribeBundleRequestMutableBuilder[Self <: DescribeBundleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBundleRequest](x: Self) {
     
-    @scala.inline
-    def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    inline def setBundleId(value: BundleId): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
   }
 }

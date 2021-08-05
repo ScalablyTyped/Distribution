@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Platform extends StObject
 object Platform {
   
-  @scala.inline
-  def darwin: typings.fridaGum.fridaGumStrings.darwin = "darwin".asInstanceOf[typings.fridaGum.fridaGumStrings.darwin]
+  inline def darwin: typings.fridaGum.fridaGumStrings.darwin = "darwin".asInstanceOf[typings.fridaGum.fridaGumStrings.darwin]
   
-  @scala.inline
-  def linux: typings.fridaGum.fridaGumStrings.linux = "linux".asInstanceOf[typings.fridaGum.fridaGumStrings.linux]
+  inline def linux: typings.fridaGum.fridaGumStrings.linux = "linux".asInstanceOf[typings.fridaGum.fridaGumStrings.linux]
   
-  @scala.inline
-  def qnx: typings.fridaGum.fridaGumStrings.qnx = "qnx".asInstanceOf[typings.fridaGum.fridaGumStrings.qnx]
+  inline def qnx: typings.fridaGum.fridaGumStrings.qnx = "qnx".asInstanceOf[typings.fridaGum.fridaGumStrings.qnx]
   
-  @scala.inline
-  def windows: typings.fridaGum.fridaGumStrings.windows = "windows".asInstanceOf[typings.fridaGum.fridaGumStrings.windows]
+  inline def windows: typings.fridaGum.fridaGumStrings.windows = "windows".asInstanceOf[typings.fridaGum.fridaGumStrings.windows]
 }

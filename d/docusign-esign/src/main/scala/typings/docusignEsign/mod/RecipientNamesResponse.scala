@@ -23,34 +23,25 @@ trait RecipientNamesResponse extends StObject {
 }
 object RecipientNamesResponse {
   
-  @scala.inline
-  def apply(): RecipientNamesResponse = {
+  inline def apply(): RecipientNamesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientNamesResponse]
   }
   
-  @scala.inline
-  implicit class RecipientNamesResponseMutableBuilder[Self <: RecipientNamesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientNamesResponse](x: Self) {
     
-    @scala.inline
-    def setMultipleUsers(value: String): Self = StObject.set(x, "multipleUsers", value.asInstanceOf[js.Any])
+    inline def setMultipleUsers(value: String): Self = StObject.set(x, "multipleUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUsersUndefined: Self = StObject.set(x, "multipleUsers", js.undefined)
+    inline def setMultipleUsersUndefined: Self = StObject.set(x, "multipleUsers", js.undefined)
     
-    @scala.inline
-    def setRecipientNames(value: js.Array[String]): Self = StObject.set(x, "recipientNames", value.asInstanceOf[js.Any])
+    inline def setRecipientNames(value: js.Array[String]): Self = StObject.set(x, "recipientNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientNamesUndefined: Self = StObject.set(x, "recipientNames", js.undefined)
+    inline def setRecipientNamesUndefined: Self = StObject.set(x, "recipientNames", js.undefined)
     
-    @scala.inline
-    def setRecipientNamesVarargs(value: String*): Self = StObject.set(x, "recipientNames", js.Array(value :_*))
+    inline def setRecipientNamesVarargs(value: String*): Self = StObject.set(x, "recipientNames", js.Array(value :_*))
     
-    @scala.inline
-    def setReservedRecipientEmail(value: String): Self = StObject.set(x, "reservedRecipientEmail", value.asInstanceOf[js.Any])
+    inline def setReservedRecipientEmail(value: String): Self = StObject.set(x, "reservedRecipientEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedRecipientEmailUndefined: Self = StObject.set(x, "reservedRecipientEmail", js.undefined)
+    inline def setReservedRecipientEmailUndefined: Self = StObject.set(x, "reservedRecipientEmail", js.undefined)
   }
 }

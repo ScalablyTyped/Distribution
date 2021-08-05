@@ -195,8 +195,7 @@ trait XMenu
 }
 object XMenu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ItemCount: Double,
     acquire: () => Unit,
     addMenuListener: XMenuListener => Unit,
@@ -232,88 +231,60 @@ object XMenu {
     __obj.asInstanceOf[XMenu]
   }
   
-  @scala.inline
-  implicit class XMenuMutableBuilder[Self <: XMenu] (val x: Self) extends AnyVal {
+  extension [Self <: XMenu](x: Self) {
     
-    @scala.inline
-    def setAddMenuListener(value: XMenuListener => Unit): Self = StObject.set(x, "addMenuListener", js.Any.fromFunction1(value))
+    inline def setAddMenuListener(value: XMenuListener => Unit): Self = StObject.set(x, "addMenuListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnableAutoMnemonics(value: Boolean => Unit): Self = StObject.set(x, "enableAutoMnemonics", js.Any.fromFunction1(value))
+    inline def setEnableAutoMnemonics(value: Boolean => Unit): Self = StObject.set(x, "enableAutoMnemonics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnableItem(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enableItem", js.Any.fromFunction2(value))
+    inline def setEnableItem(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enableItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCommand(value: Double => String): Self = StObject.set(x, "getCommand", js.Any.fromFunction1(value))
+    inline def setGetCommand(value: Double => String): Self = StObject.set(x, "getCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHelpCommand(value: Double => String): Self = StObject.set(x, "getHelpCommand", js.Any.fromFunction1(value))
+    inline def setGetHelpCommand(value: Double => String): Self = StObject.set(x, "getHelpCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHelpText(value: Double => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction1(value))
+    inline def setGetHelpText(value: Double => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemCount(value: () => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction0(value))
+    inline def setGetItemCount(value: () => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemId(value: Double => Double): Self = StObject.set(x, "getItemId", js.Any.fromFunction1(value))
+    inline def setGetItemId(value: Double => Double): Self = StObject.set(x, "getItemId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemPos(value: Double => Double): Self = StObject.set(x, "getItemPos", js.Any.fromFunction1(value))
+    inline def setGetItemPos(value: Double => Double): Self = StObject.set(x, "getItemPos", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemText(value: Double => String): Self = StObject.set(x, "getItemText", js.Any.fromFunction1(value))
+    inline def setGetItemText(value: Double => String): Self = StObject.set(x, "getItemText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemType(value: Double => MenuItemType): Self = StObject.set(x, "getItemType", js.Any.fromFunction1(value))
+    inline def setGetItemType(value: Double => MenuItemType): Self = StObject.set(x, "getItemType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPopupMenu(value: Double => XPopupMenu): Self = StObject.set(x, "getPopupMenu", js.Any.fromFunction1(value))
+    inline def setGetPopupMenu(value: Double => XPopupMenu): Self = StObject.set(x, "getPopupMenu", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTipHelpText(value: Double => String): Self = StObject.set(x, "getTipHelpText", js.Any.fromFunction1(value))
+    inline def setGetTipHelpText(value: Double => String): Self = StObject.set(x, "getTipHelpText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideDisabledEntries(value: Boolean => Unit): Self = StObject.set(x, "hideDisabledEntries", js.Any.fromFunction1(value))
+    inline def setHideDisabledEntries(value: Boolean => Unit): Self = StObject.set(x, "hideDisabledEntries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertItem(value: (Double, String, Double, Double) => Unit): Self = StObject.set(x, "insertItem", js.Any.fromFunction4(value))
+    inline def setInsertItem(value: (Double, String, Double, Double) => Unit): Self = StObject.set(x, "insertItem", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setIsItemEnabled(value: Double => Boolean): Self = StObject.set(x, "isItemEnabled", js.Any.fromFunction1(value))
+    inline def setIsItemEnabled(value: Double => Boolean): Self = StObject.set(x, "isItemEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsPopupMenu(value: () => Boolean): Self = StObject.set(x, "isPopupMenu", js.Any.fromFunction0(value))
+    inline def setIsPopupMenu(value: () => Boolean): Self = StObject.set(x, "isPopupMenu", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveItem(value: (Double, Double) => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction2(value))
+    inline def setRemoveItem(value: (Double, Double) => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveMenuListener(value: XMenuListener => Unit): Self = StObject.set(x, "removeMenuListener", js.Any.fromFunction1(value))
+    inline def setRemoveMenuListener(value: XMenuListener => Unit): Self = StObject.set(x, "removeMenuListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCommand(value: (Double, String) => Unit): Self = StObject.set(x, "setCommand", js.Any.fromFunction2(value))
+    inline def setSetCommand(value: (Double, String) => Unit): Self = StObject.set(x, "setCommand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetHelpCommand(value: (Double, String) => Unit): Self = StObject.set(x, "setHelpCommand", js.Any.fromFunction2(value))
+    inline def setSetHelpCommand(value: (Double, String) => Unit): Self = StObject.set(x, "setHelpCommand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetHelpText(value: (Double, String) => Unit): Self = StObject.set(x, "setHelpText", js.Any.fromFunction2(value))
+    inline def setSetHelpText(value: (Double, String) => Unit): Self = StObject.set(x, "setHelpText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetItemText(value: (Double, String) => Unit): Self = StObject.set(x, "setItemText", js.Any.fromFunction2(value))
+    inline def setSetItemText(value: (Double, String) => Unit): Self = StObject.set(x, "setItemText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetPopupMenu(value: (Double, XPopupMenu) => Unit): Self = StObject.set(x, "setPopupMenu", js.Any.fromFunction2(value))
+    inline def setSetPopupMenu(value: (Double, XPopupMenu) => Unit): Self = StObject.set(x, "setPopupMenu", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetTipHelpText(value: (Double, String) => Unit): Self = StObject.set(x, "setTipHelpText", js.Any.fromFunction2(value))
+    inline def setSetTipHelpText(value: (Double, String) => Unit): Self = StObject.set(x, "setTipHelpText", js.Any.fromFunction2(value))
   }
 }

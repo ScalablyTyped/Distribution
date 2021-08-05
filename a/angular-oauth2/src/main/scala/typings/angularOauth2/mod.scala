@@ -18,20 +18,16 @@ object mod {
     }
     object Data {
       
-      @scala.inline
-      def apply(password: String, username: String): Data = {
+      inline def apply(password: String, username: String): Data = {
         val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
         __obj.asInstanceOf[Data]
       }
       
-      @scala.inline
-      implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+      extension [Self <: Data](x: Self) {
         
-        @scala.inline
-        def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+        inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       }
     }
     
@@ -68,38 +64,28 @@ object mod {
     }
     object OAuthConfig {
       
-      @scala.inline
-      def apply(baseUrl: String, clientId: String): OAuthConfig = {
+      inline def apply(baseUrl: String, clientId: String): OAuthConfig = {
         val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any])
         __obj.asInstanceOf[OAuthConfig]
       }
       
-      @scala.inline
-      implicit class OAuthConfigMutableBuilder[Self <: OAuthConfig] (val x: Self) extends AnyVal {
+      extension [Self <: OAuthConfig](x: Self) {
         
-        @scala.inline
-        def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+        inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+        inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+        inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+        inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
         
-        @scala.inline
-        def setGrantPath(value: String): Self = StObject.set(x, "grantPath", value.asInstanceOf[js.Any])
+        inline def setGrantPath(value: String): Self = StObject.set(x, "grantPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGrantPathUndefined: Self = StObject.set(x, "grantPath", js.undefined)
+        inline def setGrantPathUndefined: Self = StObject.set(x, "grantPath", js.undefined)
         
-        @scala.inline
-        def setRevokePath(value: String): Self = StObject.set(x, "revokePath", value.asInstanceOf[js.Any])
+        inline def setRevokePath(value: String): Self = StObject.set(x, "revokePath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRevokePathUndefined: Self = StObject.set(x, "revokePath", js.undefined)
+        inline def setRevokePathUndefined: Self = StObject.set(x, "revokePath", js.undefined)
       }
     }
     
@@ -109,17 +95,14 @@ object mod {
     }
     object OAuthProvider {
       
-      @scala.inline
-      def apply(configure: OAuthConfig => OAuthConfig): OAuthProvider = {
+      inline def apply(configure: OAuthConfig => OAuthConfig): OAuthProvider = {
         val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure))
         __obj.asInstanceOf[OAuthProvider]
       }
       
-      @scala.inline
-      implicit class OAuthProviderMutableBuilder[Self <: OAuthProvider] (val x: Self) extends AnyVal {
+      extension [Self <: OAuthProvider](x: Self) {
         
-        @scala.inline
-        def setConfigure(value: OAuthConfig => OAuthConfig): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+        inline def setConfigure(value: OAuthConfig => OAuthConfig): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
       }
     }
     
@@ -131,20 +114,16 @@ object mod {
     }
     object OAuthTokenConfig {
       
-      @scala.inline
-      def apply(name: String, options: js.Any): OAuthTokenConfig = {
+      inline def apply(name: String, options: js.Any): OAuthTokenConfig = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[OAuthTokenConfig]
       }
       
-      @scala.inline
-      implicit class OAuthTokenConfigMutableBuilder[Self <: OAuthTokenConfig] (val x: Self) extends AnyVal {
+      extension [Self <: OAuthTokenConfig](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       }
     }
     
@@ -154,17 +133,14 @@ object mod {
     }
     object OAuthTokenOptions {
       
-      @scala.inline
-      def apply(secure: Boolean): OAuthTokenOptions = {
+      inline def apply(secure: Boolean): OAuthTokenOptions = {
         val __obj = js.Dynamic.literal(secure = secure.asInstanceOf[js.Any])
         __obj.asInstanceOf[OAuthTokenOptions]
       }
       
-      @scala.inline
-      implicit class OAuthTokenOptionsMutableBuilder[Self <: OAuthTokenOptions] (val x: Self) extends AnyVal {
+      extension [Self <: OAuthTokenOptions](x: Self) {
         
-        @scala.inline
-        def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+        inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       }
     }
     
@@ -174,17 +150,14 @@ object mod {
     }
     object OAuthTokenProvider {
       
-      @scala.inline
-      def apply(configure: OAuthTokenConfig => OAuthTokenConfig): OAuthTokenProvider = {
+      inline def apply(configure: OAuthTokenConfig => OAuthTokenConfig): OAuthTokenProvider = {
         val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure))
         __obj.asInstanceOf[OAuthTokenProvider]
       }
       
-      @scala.inline
-      implicit class OAuthTokenProviderMutableBuilder[Self <: OAuthTokenProvider] (val x: Self) extends AnyVal {
+      extension [Self <: OAuthTokenProvider](x: Self) {
         
-        @scala.inline
-        def setConfigure(value: OAuthTokenConfig => OAuthTokenConfig): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+        inline def setConfigure(value: OAuthTokenConfig => OAuthTokenConfig): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
       }
     }
   }

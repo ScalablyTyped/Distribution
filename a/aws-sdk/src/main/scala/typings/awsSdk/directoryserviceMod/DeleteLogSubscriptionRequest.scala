@@ -13,16 +13,13 @@ trait DeleteLogSubscriptionRequest extends StObject {
 }
 object DeleteLogSubscriptionRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): DeleteLogSubscriptionRequest = {
+  inline def apply(DirectoryId: DirectoryId): DeleteLogSubscriptionRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLogSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLogSubscriptionRequestMutableBuilder[Self <: DeleteLogSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLogSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }
 }

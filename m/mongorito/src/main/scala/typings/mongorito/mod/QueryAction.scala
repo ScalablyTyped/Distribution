@@ -18,26 +18,20 @@ trait QueryAction
 }
 object QueryAction {
   
-  @scala.inline
-  def apply(method: String, query: js.Array[Args], `type`: QUERY): QueryAction = {
+  inline def apply(method: String, query: js.Array[Args], `type`: QUERY): QueryAction = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryAction]
   }
   
-  @scala.inline
-  implicit class QueryActionMutableBuilder[Self <: QueryAction] (val x: Self) extends AnyVal {
+  extension [Self <: QueryAction](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: js.Array[Args]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Array[Args]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryVarargs(value: Args*): Self = StObject.set(x, "query", js.Array(value :_*))
+    inline def setQueryVarargs(value: Args*): Self = StObject.set(x, "query", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: QUERY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: QUERY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

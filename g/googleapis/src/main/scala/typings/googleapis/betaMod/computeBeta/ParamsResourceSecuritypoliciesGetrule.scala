@@ -33,37 +33,27 @@ trait ParamsResourceSecuritypoliciesGetrule
 }
 object ParamsResourceSecuritypoliciesGetrule {
   
-  @scala.inline
-  def apply(): ParamsResourceSecuritypoliciesGetrule = {
+  inline def apply(): ParamsResourceSecuritypoliciesGetrule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSecuritypoliciesGetrule]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSecuritypoliciesGetruleMutableBuilder[Self <: ParamsResourceSecuritypoliciesGetrule] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSecuritypoliciesGetrule](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
+    inline def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
+    inline def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
   }
 }

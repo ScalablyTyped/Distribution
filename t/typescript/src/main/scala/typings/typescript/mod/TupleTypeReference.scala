@@ -13,8 +13,7 @@ trait TupleTypeReference
 }
 object TupleTypeReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -46,10 +45,8 @@ object TupleTypeReference {
     __obj.asInstanceOf[TupleTypeReference]
   }
   
-  @scala.inline
-  implicit class TupleTypeReferenceMutableBuilder[Self <: TupleTypeReference] (val x: Self) extends AnyVal {
+  extension [Self <: TupleTypeReference](x: Self) {
     
-    @scala.inline
-    def setTarget(value: TupleType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TupleType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -44,37 +44,27 @@ trait ConditionalFormatRuleLoadOptions extends StObject {
 }
 object ConditionalFormatRuleLoadOptions {
   
-  @scala.inline
-  def apply(): ConditionalFormatRuleLoadOptions = {
+  inline def apply(): ConditionalFormatRuleLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalFormatRuleLoadOptions]
   }
   
-  @scala.inline
-  implicit class ConditionalFormatRuleLoadOptionsMutableBuilder[Self <: ConditionalFormatRuleLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalFormatRuleLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setFormula(value: Boolean): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: Boolean): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaLocal(value: Boolean): Self = StObject.set(x, "formulaLocal", value.asInstanceOf[js.Any])
+    inline def setFormulaLocal(value: Boolean): Self = StObject.set(x, "formulaLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaLocalUndefined: Self = StObject.set(x, "formulaLocal", js.undefined)
+    inline def setFormulaLocalUndefined: Self = StObject.set(x, "formulaLocal", js.undefined)
     
-    @scala.inline
-    def setFormulaR1C1(value: Boolean): Self = StObject.set(x, "formulaR1C1", value.asInstanceOf[js.Any])
+    inline def setFormulaR1C1(value: Boolean): Self = StObject.set(x, "formulaR1C1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaR1C1Undefined: Self = StObject.set(x, "formulaR1C1", js.undefined)
+    inline def setFormulaR1C1Undefined: Self = StObject.set(x, "formulaR1C1", js.undefined)
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
   }
 }

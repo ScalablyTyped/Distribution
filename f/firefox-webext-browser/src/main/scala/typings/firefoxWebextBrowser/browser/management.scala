@@ -21,11 +21,9 @@ object management {
   trait ExtensionDisabledReason extends StObject
   object ExtensionDisabledReason {
     
-    @scala.inline
-    def permissions_increase: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.permissions_increase = "permissions_increase".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.permissions_increase]
+    inline def permissions_increase: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.permissions_increase = "permissions_increase".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.permissions_increase]
     
-    @scala.inline
-    def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
+    inline def unknown: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown = "unknown".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unknown]
   }
   
   /** Information about an installed extension. */
@@ -86,8 +84,7 @@ object management {
   }
   object ExtensionInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       enabled: Boolean,
       id: String,
@@ -103,92 +100,63 @@ object management {
       __obj.asInstanceOf[ExtensionInfo]
     }
     
-    @scala.inline
-    implicit class ExtensionInfoMutableBuilder[Self <: ExtensionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ExtensionInfo](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledReason(value: ExtensionDisabledReason): Self = StObject.set(x, "disabledReason", value.asInstanceOf[js.Any])
+      inline def setDisabledReason(value: ExtensionDisabledReason): Self = StObject.set(x, "disabledReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledReasonUndefined: Self = StObject.set(x, "disabledReason", js.undefined)
+      inline def setDisabledReasonUndefined: Self = StObject.set(x, "disabledReason", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomepageUrl(value: String): Self = StObject.set(x, "homepageUrl", value.asInstanceOf[js.Any])
+      inline def setHomepageUrl(value: String): Self = StObject.set(x, "homepageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomepageUrlUndefined: Self = StObject.set(x, "homepageUrl", js.undefined)
+      inline def setHomepageUrlUndefined: Self = StObject.set(x, "homepageUrl", js.undefined)
       
-      @scala.inline
-      def setHostPermissions(value: js.Array[String]): Self = StObject.set(x, "hostPermissions", value.asInstanceOf[js.Any])
+      inline def setHostPermissions(value: js.Array[String]): Self = StObject.set(x, "hostPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostPermissionsUndefined: Self = StObject.set(x, "hostPermissions", js.undefined)
+      inline def setHostPermissionsUndefined: Self = StObject.set(x, "hostPermissions", js.undefined)
       
-      @scala.inline
-      def setHostPermissionsVarargs(value: String*): Self = StObject.set(x, "hostPermissions", js.Array(value :_*))
+      inline def setHostPermissionsVarargs(value: String*): Self = StObject.set(x, "hostPermissions", js.Array(value :_*))
       
-      @scala.inline
-      def setIcons(value: js.Array[IconInfo]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: js.Array[IconInfo]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      @scala.inline
-      def setIconsVarargs(value: IconInfo*): Self = StObject.set(x, "icons", js.Array(value :_*))
+      inline def setIconsVarargs(value: IconInfo*): Self = StObject.set(x, "icons", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallType(value: ExtensionInstallType): Self = StObject.set(x, "installType", value.asInstanceOf[js.Any])
+      inline def setInstallType(value: ExtensionInstallType): Self = StObject.set(x, "installType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMayDisable(value: Boolean): Self = StObject.set(x, "mayDisable", value.asInstanceOf[js.Any])
+      inline def setMayDisable(value: Boolean): Self = StObject.set(x, "mayDisable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUrl(value: String): Self = StObject.set(x, "optionsUrl", value.asInstanceOf[js.Any])
+      inline def setOptionsUrl(value: String): Self = StObject.set(x, "optionsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+      inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       
-      @scala.inline
-      def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+      inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
       
-      @scala.inline
-      def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+      inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
-      @scala.inline
-      def setType(value: ExtensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ExtensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUrl(value: String): Self = StObject.set(x, "updateUrl", value.asInstanceOf[js.Any])
+      inline def setUpdateUrl(value: String): Self = StObject.set(x, "updateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUrlUndefined: Self = StObject.set(x, "updateUrl", js.undefined)
+      inline def setUpdateUrlUndefined: Self = StObject.set(x, "updateUrl", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
+      inline def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
+      inline def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
     }
   }
   
@@ -208,17 +176,13 @@ object management {
   trait ExtensionInstallType extends StObject
   object ExtensionInstallType {
     
-    @scala.inline
-    def development: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.development = "development".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.development]
+    inline def development: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.development = "development".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.development]
     
-    @scala.inline
-    def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
+    inline def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
     
-    @scala.inline
-    def other: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other = "other".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other]
+    inline def other: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other = "other".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.other]
     
-    @scala.inline
-    def sideload: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sideload = "sideload".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sideload]
+    inline def sideload: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sideload = "sideload".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sideload]
   }
   
   /** The type of this extension, 'extension' or 'theme'. */
@@ -229,11 +193,9 @@ object management {
   trait ExtensionType extends StObject
   object ExtensionType {
     
-    @scala.inline
-    def `extension`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension` = "extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`]
+    inline def `extension`: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension` = "extension".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`extension`]
     
-    @scala.inline
-    def theme: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme = "theme".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme]
+    inline def theme: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme = "theme".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.theme]
   }
   
   /* management types */
@@ -252,20 +214,16 @@ object management {
   }
   object IconInfo {
     
-    @scala.inline
-    def apply(size: Double, url: String): IconInfo = {
+    inline def apply(size: Double, url: String): IconInfo = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconInfo]
     }
     
-    @scala.inline
-    implicit class IconInfoMutableBuilder[Self <: IconInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IconInfo](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -279,23 +237,18 @@ object management {
   }
   object InstallOptions {
     
-    @scala.inline
-    def apply(url: HttpURL): InstallOptions = {
+    inline def apply(url: HttpURL): InstallOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstallOptions]
     }
     
-    @scala.inline
-    implicit class InstallOptionsMutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InstallOptions](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setUrl(value: HttpURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: HttpURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -305,17 +258,14 @@ object management {
   }
   object InstallReturnResult {
     
-    @scala.inline
-    def apply(id: ExtensionID): InstallReturnResult = {
+    inline def apply(id: ExtensionID): InstallReturnResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstallReturnResult]
     }
     
-    @scala.inline
-    implicit class InstallReturnResultMutableBuilder[Self <: InstallReturnResult] (val x: Self) extends AnyVal {
+    extension [Self <: InstallReturnResult](x: Self) {
       
-      @scala.inline
-      def setId(value: ExtensionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ExtensionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -329,26 +279,20 @@ object management {
   }
   object UninstallSelfOptions {
     
-    @scala.inline
-    def apply(): UninstallSelfOptions = {
+    inline def apply(): UninstallSelfOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UninstallSelfOptions]
     }
     
-    @scala.inline
-    implicit class UninstallSelfOptionsMutableBuilder[Self <: UninstallSelfOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UninstallSelfOptions](x: Self) {
       
-      @scala.inline
-      def setDialogMessage(value: String): Self = StObject.set(x, "dialogMessage", value.asInstanceOf[js.Any])
+      inline def setDialogMessage(value: String): Self = StObject.set(x, "dialogMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogMessageUndefined: Self = StObject.set(x, "dialogMessage", js.undefined)
+      inline def setDialogMessageUndefined: Self = StObject.set(x, "dialogMessage", js.undefined)
       
-      @scala.inline
-      def setShowConfirmDialog(value: Boolean): Self = StObject.set(x, "showConfirmDialog", value.asInstanceOf[js.Any])
+      inline def setShowConfirmDialog(value: Boolean): Self = StObject.set(x, "showConfirmDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowConfirmDialogUndefined: Self = StObject.set(x, "showConfirmDialog", js.undefined)
+      inline def setShowConfirmDialogUndefined: Self = StObject.set(x, "showConfirmDialog", js.undefined)
     }
   }
 }

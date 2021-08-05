@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PickerDialog")
 @js.native
-class PickerDialog protected ()
+/* private */ class PickerDialog ()
   extends StObject
      with typings.activexOffice.Office.PickerDialog

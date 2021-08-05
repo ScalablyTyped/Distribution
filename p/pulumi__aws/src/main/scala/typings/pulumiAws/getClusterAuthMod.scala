@@ -11,10 +11,8 @@ object getClusterAuthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getClusterAuth(args: GetClusterAuthArgs): js.Promise[GetClusterAuthResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClusterAuth")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterAuthResult]]
-  @scala.inline
-  def getClusterAuth(args: GetClusterAuthArgs, opts: InvokeOptions): js.Promise[GetClusterAuthResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getClusterAuth")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterAuthResult]]
+  inline def getClusterAuth(args: GetClusterAuthArgs): js.Promise[GetClusterAuthResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClusterAuth")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterAuthResult]]
+  inline def getClusterAuth(args: GetClusterAuthArgs, opts: InvokeOptions): js.Promise[GetClusterAuthResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getClusterAuth")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterAuthResult]]
   
   trait GetClusterAuthArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getClusterAuthMod {
   }
   object GetClusterAuthArgs {
     
-    @scala.inline
-    def apply(name: String): GetClusterAuthArgs = {
+    inline def apply(name: String): GetClusterAuthArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetClusterAuthArgs]
     }
     
-    @scala.inline
-    implicit class GetClusterAuthArgsMutableBuilder[Self <: GetClusterAuthArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterAuthArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,23 +50,18 @@ object getClusterAuthMod {
   }
   object GetClusterAuthResult {
     
-    @scala.inline
-    def apply(id: String, name: String, token: String): GetClusterAuthResult = {
+    inline def apply(id: String, name: String, token: String): GetClusterAuthResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetClusterAuthResult]
     }
     
-    @scala.inline
-    implicit class GetClusterAuthResultMutableBuilder[Self <: GetClusterAuthResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterAuthResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

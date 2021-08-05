@@ -11,15 +11,11 @@ object contextualMenuUtilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getIsChecked(item: IContextualMenuItem): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIsChecked")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
+  inline def getIsChecked(item: IContextualMenuItem): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIsChecked")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
   
-  @scala.inline
-  def getMenuItemAriaRole(item: IContextualMenuItem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuItemAriaRole")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getMenuItemAriaRole(item: IContextualMenuItem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuItemAriaRole")(item.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def hasSubmenu(item: IContextualMenuItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSubmenu")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasSubmenu(item: IContextualMenuItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSubmenu")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isItemDisabled(item: IContextualMenuItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItemDisabled")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isItemDisabled(item: IContextualMenuItem): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItemDisabled")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

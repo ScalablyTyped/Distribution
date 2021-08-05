@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("firebase", "default.firestore.Query")
 @js.native
-class Query[T] protected () extends StObject {
+/* protected */ class Query[T] () extends StObject {
   
   /**
     * Creates and returns a new Query that ends at the provided fields

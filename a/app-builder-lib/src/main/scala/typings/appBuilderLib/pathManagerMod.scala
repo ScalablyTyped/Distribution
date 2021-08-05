@@ -10,11 +10,8 @@ object pathManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTemplatePath(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplatePath")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTemplatePath(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplatePath")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getVendorPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVendorPath")().asInstanceOf[String]
-  @scala.inline
-  def getVendorPath(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVendorPath")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getVendorPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVendorPath")().asInstanceOf[String]
+  inline def getVendorPath(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVendorPath")(file.asInstanceOf[js.Any]).asInstanceOf[String]
 }

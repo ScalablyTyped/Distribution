@@ -9,6 +9,5 @@ object global {
   @JSGlobal("SwiftClick")
   @js.native
   def SwiftClick: SwiftClickStatic = js.native
-  @scala.inline
-  def SwiftClick_=(x: SwiftClickStatic): Unit = js.Dynamic.global.updateDynamic("SwiftClick")(x.asInstanceOf[js.Any])
+  inline def SwiftClick_=(x: SwiftClickStatic): Unit = js.Dynamic.global.updateDynamic("SwiftClick")(x.asInstanceOf[js.Any])
 }

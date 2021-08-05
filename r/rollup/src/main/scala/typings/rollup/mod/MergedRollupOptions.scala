@@ -12,19 +12,15 @@ trait MergedRollupOptions
 }
 object MergedRollupOptions {
   
-  @scala.inline
-  def apply(output: js.Array[OutputOptions]): MergedRollupOptions = {
+  inline def apply(output: js.Array[OutputOptions]): MergedRollupOptions = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergedRollupOptions]
   }
   
-  @scala.inline
-  implicit class MergedRollupOptionsMutableBuilder[Self <: MergedRollupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MergedRollupOptions](x: Self) {
     
-    @scala.inline
-    def setOutput(value: js.Array[OutputOptions]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: js.Array[OutputOptions]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputVarargs(value: OutputOptions*): Self = StObject.set(x, "output", js.Array(value :_*))
+    inline def setOutputVarargs(value: OutputOptions*): Self = StObject.set(x, "output", js.Array(value :_*))
   }
 }

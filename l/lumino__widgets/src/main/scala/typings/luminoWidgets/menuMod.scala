@@ -34,32 +34,32 @@ object menuMod {
       */
     def this(options: IOptions) = this()
     
-    var _aboutToClose: js.Any = js.native
+    /* private */ var _aboutToClose: js.Any = js.native
     
-    var _activeIndex: js.Any = js.native
+    /* private */ var _activeIndex: js.Any = js.native
     
     /**
       * Cancel the close timer, if the timer is pending.
       */
-    var _cancelCloseTimer: js.Any = js.native
+    /* private */ var _cancelCloseTimer: js.Any = js.native
     
     /**
       * Cancel the open timer, if the timer is pending.
       */
-    var _cancelOpenTimer: js.Any = js.native
+    /* private */ var _cancelOpenTimer: js.Any = js.native
     
-    var _childIndex: js.Any = js.native
+    /* private */ var _childIndex: js.Any = js.native
     
-    var _childMenu: js.Any = js.native
+    /* private */ var _childMenu: js.Any = js.native
     
     /**
       * Close the child menu immediately.
       *
       * This is a no-op if a child menu is not open.
       */
-    var _closeChildMenu: js.Any = js.native
+    /* private */ var _closeChildMenu: js.Any = js.native
     
-    var _closeTimerID: js.Any = js.native
+    /* private */ var _closeTimerID: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the menu.
@@ -67,7 +67,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the menu.
@@ -75,7 +75,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the document node.
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Handle the `'mouseenter'` event for the menu.
@@ -83,7 +83,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    var _evtMouseEnter: js.Any = js.native
+    /* private */ var _evtMouseEnter: js.Any = js.native
     
     /**
       * Handle the `'mouseleave'` event for the menu.
@@ -91,7 +91,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    var _evtMouseLeave: js.Any = js.native
+    /* private */ var _evtMouseLeave: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the menu.
@@ -99,7 +99,7 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the menu.
@@ -107,11 +107,11 @@ object menuMod {
       * #### Notes
       * This listener is attached to the menu node.
       */
-    var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
-    var _menuRequested: js.Any = js.native
+    /* private */ var _menuRequested: js.Any = js.native
     
     /**
       * Open the child menu at the active index immediately.
@@ -119,21 +119,21 @@ object menuMod {
       * If a different child menu is already open, it will be closed,
       * even if the active item is not a valid submenu.
       */
-    var _openChildMenu: js.Any = js.native
+    /* private */ var _openChildMenu: js.Any = js.native
     
-    var _openTimerID: js.Any = js.native
+    /* private */ var _openTimerID: js.Any = js.native
     
-    var _parentMenu: js.Any = js.native
+    /* private */ var _parentMenu: js.Any = js.native
     
     /**
       * Start the close timer, unless it is already pending.
       */
-    var _startCloseTimer: js.Any = js.native
+    /* private */ var _startCloseTimer: js.Any = js.native
     
     /**
       * Start the open timer, unless it is already pending.
       */
-    var _startOpenTimer: js.Any = js.native
+    /* private */ var _startOpenTimer: js.Any = js.native
     
     /**
       * A signal emitted just before the menu is closed.
@@ -553,8 +553,7 @@ object menuMod {
     }
     object IItem {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         args: ReadonlyJSONObject,
         caption: String,
         className: String,
@@ -574,65 +573,45 @@ object menuMod {
         __obj.asInstanceOf[IItem]
       }
       
-      @scala.inline
-      implicit class IItemMutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
+      extension [Self <: IItem](x: Self) {
         
-        @scala.inline
-        def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+        inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+        inline def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIcon(value: typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+        inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
+        inline def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+        inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsToggled(value: Boolean): Self = StObject.set(x, "isToggled", value.asInstanceOf[js.Any])
+        inline def setIsToggled(value: Boolean): Self = StObject.set(x, "isToggled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+        inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyBinding(value: IKeyBinding): Self = StObject.set(x, "keyBinding", value.asInstanceOf[js.Any])
+        inline def setKeyBinding(value: IKeyBinding): Self = StObject.set(x, "keyBinding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyBindingNull: Self = StObject.set(x, "keyBinding", null)
+        inline def setKeyBindingNull: Self = StObject.set(x, "keyBinding", null)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMnemonic(value: Double): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
+        inline def setMnemonic(value: Double): Self = StObject.set(x, "mnemonic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubmenu(value: Menu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
+        inline def setSubmenu(value: Menu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubmenuNull: Self = StObject.set(x, "submenu", null)
+        inline def setSubmenuNull: Self = StObject.set(x, "submenu", null)
         
-        @scala.inline
-        def setType(value: ItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: ItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -671,41 +650,30 @@ object menuMod {
     }
     object IItemOptions {
       
-      @scala.inline
-      def apply(): IItemOptions = {
+      inline def apply(): IItemOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IItemOptions]
       }
       
-      @scala.inline
-      implicit class IItemOptionsMutableBuilder[Self <: IItemOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IItemOptions](x: Self) {
         
-        @scala.inline
-        def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+        inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
         
-        @scala.inline
-        def setSubmenu(value: Menu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
+        inline def setSubmenu(value: Menu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubmenuNull: Self = StObject.set(x, "submenu", null)
+        inline def setSubmenuNull: Self = StObject.set(x, "submenu", null)
         
-        @scala.inline
-        def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
+        inline def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
         
-        @scala.inline
-        def setType(value: ItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: ItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -736,26 +704,20 @@ object menuMod {
     }
     object IOpenOptions {
       
-      @scala.inline
-      def apply(): IOpenOptions = {
+      inline def apply(): IOpenOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOpenOptions]
       }
       
-      @scala.inline
-      implicit class IOpenOptionsMutableBuilder[Self <: IOpenOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOpenOptions](x: Self) {
         
-        @scala.inline
-        def setForceX(value: Boolean): Self = StObject.set(x, "forceX", value.asInstanceOf[js.Any])
+        inline def setForceX(value: Boolean): Self = StObject.set(x, "forceX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceXUndefined: Self = StObject.set(x, "forceX", js.undefined)
+        inline def setForceXUndefined: Self = StObject.set(x, "forceX", js.undefined)
         
-        @scala.inline
-        def setForceY(value: Boolean): Self = StObject.set(x, "forceY", value.asInstanceOf[js.Any])
+        inline def setForceY(value: Boolean): Self = StObject.set(x, "forceY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceYUndefined: Self = StObject.set(x, "forceY", js.undefined)
+        inline def setForceYUndefined: Self = StObject.set(x, "forceY", js.undefined)
       }
     }
     
@@ -778,23 +740,18 @@ object menuMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(commands: CommandRegistry): IOptions = {
+      inline def apply(commands: CommandRegistry): IOptions = {
         val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+        inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       }
     }
     
@@ -820,23 +777,18 @@ object menuMod {
     }
     object IRenderData {
       
-      @scala.inline
-      def apply(active: Boolean, collapsed: Boolean, item: IItem): IRenderData = {
+      inline def apply(active: Boolean, collapsed: Boolean, item: IItem): IRenderData = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], collapsed = collapsed.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
         __obj.asInstanceOf[IRenderData]
       }
       
-      @scala.inline
-      implicit class IRenderDataMutableBuilder[Self <: IRenderData] (val x: Self) extends AnyVal {
+      extension [Self <: IRenderData](x: Self) {
         
-        @scala.inline
-        def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+        inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItem(value: IItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+        inline def setItem(value: IItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       }
     }
     
@@ -856,17 +808,14 @@ object menuMod {
     }
     object IRenderer {
       
-      @scala.inline
-      def apply(renderItem: IRenderData => VirtualElement): IRenderer = {
+      inline def apply(renderItem: IRenderData => VirtualElement): IRenderer = {
         val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction1(renderItem))
         __obj.asInstanceOf[IRenderer]
       }
       
-      @scala.inline
-      implicit class IRendererMutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
+      extension [Self <: IRenderer](x: Self) {
         
-        @scala.inline
-        def setRenderItem(value: IRenderData => VirtualElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+        inline def setRenderItem(value: IRenderData => VirtualElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       }
     }
     
@@ -881,14 +830,11 @@ object menuMod {
     trait ItemType extends StObject
     object ItemType {
       
-      @scala.inline
-      def command: typings.luminoWidgets.luminoWidgetsStrings.command = "command".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.command]
+      inline def command: typings.luminoWidgets.luminoWidgetsStrings.command = "command".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.command]
       
-      @scala.inline
-      def separator: typings.luminoWidgets.luminoWidgetsStrings.separator = "separator".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.separator]
+      inline def separator: typings.luminoWidgets.luminoWidgetsStrings.separator = "separator".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.separator]
       
-      @scala.inline
-      def submenu: typings.luminoWidgets.luminoWidgetsStrings.submenu = "submenu".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.submenu]
+      inline def submenu: typings.luminoWidgets.luminoWidgetsStrings.submenu = "submenu".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.submenu]
     }
   }
 }

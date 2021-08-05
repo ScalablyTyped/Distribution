@@ -12,22 +12,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clearAllBodyScrollLocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllBodyScrollLocks")().asInstanceOf[Unit]
+  inline def clearAllBodyScrollLocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllBodyScrollLocks")().asInstanceOf[Unit]
   
-  @scala.inline
-  def disableBodyScroll(targetElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def disableBodyScroll(targetElement: Element, options: BodyScrollOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def disableBodyScroll(targetElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def disableBodyScroll(targetElement: HTMLElement, options: BodyScrollOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disableBodyScroll(targetElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disableBodyScroll(targetElement: Element, options: BodyScrollOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def disableBodyScroll(targetElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disableBodyScroll(targetElement: HTMLElement, options: BodyScrollOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def enableBodyScroll(targetElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def enableBodyScroll(targetElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableBodyScroll(targetElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableBodyScroll(targetElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait BodyScrollOptions extends StObject {
     
@@ -37,26 +30,20 @@ object mod {
   }
   object BodyScrollOptions {
     
-    @scala.inline
-    def apply(): BodyScrollOptions = {
+    inline def apply(): BodyScrollOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BodyScrollOptions]
     }
     
-    @scala.inline
-    implicit class BodyScrollOptionsMutableBuilder[Self <: BodyScrollOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BodyScrollOptions](x: Self) {
       
-      @scala.inline
-      def setAllowTouchMove(value: /* el */ HTMLElement | Element => Unit): Self = StObject.set(x, "allowTouchMove", js.Any.fromFunction1(value))
+      inline def setAllowTouchMove(value: /* el */ HTMLElement | Element => Unit): Self = StObject.set(x, "allowTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAllowTouchMoveUndefined: Self = StObject.set(x, "allowTouchMove", js.undefined)
+      inline def setAllowTouchMoveUndefined: Self = StObject.set(x, "allowTouchMove", js.undefined)
       
-      @scala.inline
-      def setReserveScrollBarGap(value: Boolean): Self = StObject.set(x, "reserveScrollBarGap", value.asInstanceOf[js.Any])
+      inline def setReserveScrollBarGap(value: Boolean): Self = StObject.set(x, "reserveScrollBarGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReserveScrollBarGapUndefined: Self = StObject.set(x, "reserveScrollBarGap", js.undefined)
+      inline def setReserveScrollBarGapUndefined: Self = StObject.set(x, "reserveScrollBarGap", js.undefined)
     }
   }
 }

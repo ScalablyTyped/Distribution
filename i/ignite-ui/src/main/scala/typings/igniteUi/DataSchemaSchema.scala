@@ -35,37 +35,27 @@ trait DataSchemaSchema
 }
 object DataSchemaSchema {
   
-  @scala.inline
-  def apply(): DataSchemaSchema = {
+  inline def apply(): DataSchemaSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSchemaSchema]
   }
   
-  @scala.inline
-  implicit class DataSchemaSchemaMutableBuilder[Self <: DataSchemaSchema] (val x: Self) extends AnyVal {
+  extension [Self <: DataSchemaSchema](x: Self) {
     
-    @scala.inline
-    def setChildDataProperty(value: String): Self = StObject.set(x, "childDataProperty", value.asInstanceOf[js.Any])
+    inline def setChildDataProperty(value: String): Self = StObject.set(x, "childDataProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildDataPropertyUndefined: Self = StObject.set(x, "childDataProperty", js.undefined)
+    inline def setChildDataPropertyUndefined: Self = StObject.set(x, "childDataProperty", js.undefined)
     
-    @scala.inline
-    def setFields(value: DataSchemaSchemaFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: DataSchemaSchemaFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setOutputResultsName(value: String): Self = StObject.set(x, "outputResultsName", value.asInstanceOf[js.Any])
+    inline def setOutputResultsName(value: String): Self = StObject.set(x, "outputResultsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputResultsNameUndefined: Self = StObject.set(x, "outputResultsName", js.undefined)
+    inline def setOutputResultsNameUndefined: Self = StObject.set(x, "outputResultsName", js.undefined)
     
-    @scala.inline
-    def setSearchField(value: String): Self = StObject.set(x, "searchField", value.asInstanceOf[js.Any])
+    inline def setSearchField(value: String): Self = StObject.set(x, "searchField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFieldUndefined: Self = StObject.set(x, "searchField", js.undefined)
+    inline def setSearchFieldUndefined: Self = StObject.set(x, "searchField", js.undefined)
   }
 }

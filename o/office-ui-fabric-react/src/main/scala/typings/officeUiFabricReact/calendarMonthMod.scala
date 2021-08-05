@@ -20,49 +20,49 @@ object calendarMonthMod {
     extends Component[ICalendarMonthProps, ICalendarMonthState, js.Any] {
     def this(props: ICalendarMonthProps) = this()
     
-    var _calendarYearRef: js.Any = js.native
+    /* private */ var _calendarYearRef: js.Any = js.native
     
-    var _focusOnUpdate: js.Any = js.native
+    /* private */ var _focusOnUpdate: js.Any = js.native
     
-    var _isCurrentMonth: js.Any = js.native
+    /* private */ var _isCurrentMonth: js.Any = js.native
     
-    var _navigatedMonthRef: js.Any = js.native
+    /* private */ var _navigatedMonthRef: js.Any = js.native
     
-    var _onCalendarYearRef: js.Any = js.native
+    /* private */ var _onCalendarYearRef: js.Any = js.native
     
-    var _onHeaderKeyDown: js.Any = js.native
+    /* private */ var _onHeaderKeyDown: js.Any = js.native
     
-    var _onHeaderSelect: js.Any = js.native
+    /* private */ var _onHeaderSelect: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onRenderYear: js.Any = js.native
+    /* private */ var _onRenderYear: js.Any = js.native
     
-    var _onSelectMonth: js.Any = js.native
+    /* private */ var _onSelectMonth: js.Any = js.native
     
-    var _onSelectMonthKeyDown: js.Any = js.native
+    /* private */ var _onSelectMonthKeyDown: js.Any = js.native
     
-    var _onSelectNextYear: js.Any = js.native
+    /* private */ var _onSelectNextYear: js.Any = js.native
     
-    var _onSelectNextYearKeyDown: js.Any = js.native
+    /* private */ var _onSelectNextYearKeyDown: js.Any = js.native
     
-    var _onSelectPrevYear: js.Any = js.native
+    /* private */ var _onSelectPrevYear: js.Any = js.native
     
-    var _onSelectPrevYearKeyDown: js.Any = js.native
+    /* private */ var _onSelectPrevYearKeyDown: js.Any = js.native
     
-    var _onSelectYear: js.Any = js.native
+    /* private */ var _onSelectYear: js.Any = js.native
     
-    var _onYearPickerHeaderSelect: js.Any = js.native
+    /* private */ var _onYearPickerHeaderSelect: js.Any = js.native
     
-    var _selectMonthCallbacks: js.Any = js.native
+    /* private */ var _selectMonthCallbacks: js.Any = js.native
     
-    var _yearRangeToNextDecadeLabel: js.Any = js.native
+    /* private */ var _yearRangeToNextDecadeLabel: js.Any = js.native
     
-    var _yearRangeToPrevDecadeLabel: js.Any = js.native
+    /* private */ var _yearRangeToPrevDecadeLabel: js.Any = js.native
     
-    var _yearRangeToString: js.Any = js.native
+    /* private */ var _yearRangeToString: js.Any = js.native
     
-    var _yearToString: js.Any = js.native
+    /* private */ var _yearToString: js.Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MCalendarMonth(): Unit = js.native
@@ -82,17 +82,14 @@ object calendarMonthMod {
   }
   object ICalendarMonth {
     
-    @scala.inline
-    def apply(focus: () => Unit): ICalendarMonth = {
+    inline def apply(focus: () => Unit): ICalendarMonth = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[ICalendarMonth]
     }
     
-    @scala.inline
-    implicit class ICalendarMonthMutableBuilder[Self <: ICalendarMonth] (val x: Self) extends AnyVal {
+    extension [Self <: ICalendarMonth](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -130,8 +127,7 @@ object calendarMonthMod {
   }
   object ICalendarMonthProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dateTimeFormatter: ICalendarFormatDateCallbacks,
       highlightCurrentMonth: Boolean,
       highlightSelectedMonth: Boolean,
@@ -145,71 +141,49 @@ object calendarMonthMod {
       __obj.asInstanceOf[ICalendarMonthProps]
     }
     
-    @scala.inline
-    implicit class ICalendarMonthPropsMutableBuilder[Self <: ICalendarMonthProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICalendarMonthProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[ICalendarMonth]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[ICalendarMonth]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ ICalendarMonth | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ ICalendarMonth | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDateTimeFormatter(value: ICalendarFormatDateCallbacks): Self = StObject.set(x, "dateTimeFormatter", value.asInstanceOf[js.Any])
+      inline def setDateTimeFormatter(value: ICalendarFormatDateCallbacks): Self = StObject.set(x, "dateTimeFormatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightCurrentMonth(value: Boolean): Self = StObject.set(x, "highlightCurrentMonth", value.asInstanceOf[js.Any])
+      inline def setHighlightCurrentMonth(value: Boolean): Self = StObject.set(x, "highlightCurrentMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightSelectedMonth(value: Boolean): Self = StObject.set(x, "highlightSelectedMonth", value.asInstanceOf[js.Any])
+      inline def setHighlightSelectedMonth(value: Boolean): Self = StObject.set(x, "highlightSelectedMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+      inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      @scala.inline
-      def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+      inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      @scala.inline
-      def setNavigatedDate(value: Date): Self = StObject.set(x, "navigatedDate", value.asInstanceOf[js.Any])
+      inline def setNavigatedDate(value: Date): Self = StObject.set(x, "navigatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigationIcons(value: ICalendarIconStrings): Self = StObject.set(x, "navigationIcons", value.asInstanceOf[js.Any])
+      inline def setNavigationIcons(value: ICalendarIconStrings): Self = StObject.set(x, "navigationIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnHeaderSelect(value: /* focus */ Boolean => Unit): Self = StObject.set(x, "onHeaderSelect", js.Any.fromFunction1(value))
+      inline def setOnHeaderSelect(value: /* focus */ Boolean => Unit): Self = StObject.set(x, "onHeaderSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnHeaderSelectUndefined: Self = StObject.set(x, "onHeaderSelect", js.undefined)
+      inline def setOnHeaderSelectUndefined: Self = StObject.set(x, "onHeaderSelect", js.undefined)
       
-      @scala.inline
-      def setOnNavigateDate(value: (Date, Boolean) => Unit): Self = StObject.set(x, "onNavigateDate", js.Any.fromFunction2(value))
+      inline def setOnNavigateDate(value: (Date, Boolean) => Unit): Self = StObject.set(x, "onNavigateDate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
+      inline def setSelectedDate(value: Date): Self = StObject.set(x, "selectedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrings(value: ICalendarStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+      inline def setStrings(value: ICalendarStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToday(value: Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
+      inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
       
-      @scala.inline
-      def setYearPickerHidden(value: Boolean): Self = StObject.set(x, "yearPickerHidden", value.asInstanceOf[js.Any])
+      inline def setYearPickerHidden(value: Boolean): Self = StObject.set(x, "yearPickerHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearPickerHiddenUndefined: Self = StObject.set(x, "yearPickerHidden", js.undefined)
+      inline def setYearPickerHiddenUndefined: Self = StObject.set(x, "yearPickerHidden", js.undefined)
     }
   }
   
@@ -220,20 +194,16 @@ object calendarMonthMod {
   }
   object ICalendarMonthState {
     
-    @scala.inline
-    def apply(): ICalendarMonthState = {
+    inline def apply(): ICalendarMonthState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICalendarMonthState]
     }
     
-    @scala.inline
-    implicit class ICalendarMonthStateMutableBuilder[Self <: ICalendarMonthState] (val x: Self) extends AnyVal {
+    extension [Self <: ICalendarMonthState](x: Self) {
       
-      @scala.inline
-      def setIsYearPickerVisible(value: Boolean): Self = StObject.set(x, "isYearPickerVisible", value.asInstanceOf[js.Any])
+      inline def setIsYearPickerVisible(value: Boolean): Self = StObject.set(x, "isYearPickerVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsYearPickerVisibleUndefined: Self = StObject.set(x, "isYearPickerVisible", js.undefined)
+      inline def setIsYearPickerVisibleUndefined: Self = StObject.set(x, "isYearPickerVisible", js.undefined)
     }
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlDirection extends StObject
 object XlDirection {
   
-  @scala.inline
-  def xlDown: `-4121` = -4121.asInstanceOf[`-4121`]
+  inline def xlDown: `-4121` = -4121.asInstanceOf[`-4121`]
   
-  @scala.inline
-  def xlToLeft: `-4159` = -4159.asInstanceOf[`-4159`]
+  inline def xlToLeft: `-4159` = -4159.asInstanceOf[`-4159`]
   
-  @scala.inline
-  def xlToRight: `-4161` = -4161.asInstanceOf[`-4161`]
+  inline def xlToRight: `-4161` = -4161.asInstanceOf[`-4161`]
   
-  @scala.inline
-  def xlUp: `-4162` = -4162.asInstanceOf[`-4162`]
+  inline def xlUp: `-4162` = -4162.asInstanceOf[`-4162`]
 }

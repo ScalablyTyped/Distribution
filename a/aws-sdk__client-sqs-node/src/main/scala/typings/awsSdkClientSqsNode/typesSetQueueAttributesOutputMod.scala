@@ -20,17 +20,14 @@ object typesSetQueueAttributesOutputMod {
   }
   object SetQueueAttributesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): SetQueueAttributesOutput = {
+    inline def apply($metadata: ResponseMetadata): SetQueueAttributesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetQueueAttributesOutput]
     }
     
-    @scala.inline
-    implicit class SetQueueAttributesOutputMutableBuilder[Self <: SetQueueAttributesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: SetQueueAttributesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

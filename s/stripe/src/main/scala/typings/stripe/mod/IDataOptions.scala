@@ -12,31 +12,23 @@ trait IDataOptions extends StObject {
 }
 object IDataOptions {
   
-  @scala.inline
-  def apply(): IDataOptions = {
+  inline def apply(): IDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDataOptions]
   }
   
-  @scala.inline
-  implicit class IDataOptionsMutableBuilder[Self <: IDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDataOptions](x: Self) {
     
-    @scala.inline
-    def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
+    inline def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
   }
 }

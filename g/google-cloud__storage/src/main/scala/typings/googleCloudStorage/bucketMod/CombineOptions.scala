@@ -12,25 +12,19 @@ trait CombineOptions extends StObject {
 }
 object CombineOptions {
   
-  @scala.inline
-  def apply(): CombineOptions = {
+  inline def apply(): CombineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CombineOptions]
   }
   
-  @scala.inline
-  implicit class CombineOptionsMutableBuilder[Self <: CombineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CombineOptions](x: Self) {
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

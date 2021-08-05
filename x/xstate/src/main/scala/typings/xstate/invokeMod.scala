@@ -13,20 +13,16 @@ object invokeMod {
   }
   object InvokedPromiseOptions {
     
-    @scala.inline
-    def apply(): InvokedPromiseOptions = {
+    inline def apply(): InvokedPromiseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvokedPromiseOptions]
     }
     
-    @scala.inline
-    implicit class InvokedPromiseOptionsMutableBuilder[Self <: InvokedPromiseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InvokedPromiseOptions](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -36,17 +32,14 @@ object invokeMod {
   }
   object PromiseMachineSchema {
     
-    @scala.inline
-    def apply(states: Pending): PromiseMachineSchema = {
+    inline def apply(states: Pending): PromiseMachineSchema = {
       val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromiseMachineSchema]
     }
     
-    @scala.inline
-    implicit class PromiseMachineSchemaMutableBuilder[Self <: PromiseMachineSchema] (val x: Self) extends AnyVal {
+    extension [Self <: PromiseMachineSchema](x: Self) {
       
-      @scala.inline
-      def setStates(value: Pending): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+      inline def setStates(value: Pending): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     }
   }
 }

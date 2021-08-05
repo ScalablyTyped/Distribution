@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dagPutMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): APIWithExtraOptions[
+  inline def apply(clientOptions: ClientOptions): APIWithExtraOptions[
     js.Function2[
       /* dagNode */ js.Any, 
       /* options */ js.UndefOr[

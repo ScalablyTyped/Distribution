@@ -17,34 +17,25 @@ trait ExtensionTerm extends StObject {
 }
 object ExtensionTerm {
   
-  @scala.inline
-  def apply(): ExtensionTerm = {
+  inline def apply(): ExtensionTerm = {
     val __obj = js.Dynamic.literal(init = null)
     __obj.asInstanceOf[ExtensionTerm]
   }
   
-  @scala.inline
-  implicit class ExtensionTermMutableBuilder[Self <: ExtensionTerm] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionTerm](x: Self) {
     
-    @scala.inline
-    def setInit(value: js.Array[js.Any]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: js.Array[js.Any]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitNull: Self = StObject.set(x, "init", null)
+    inline def setInitNull: Self = StObject.set(x, "init", null)
     
-    @scala.inline
-    def setInitVarargs(value: js.Any*): Self = StObject.set(x, "init", js.Array(value :_*))
+    inline def setInitVarargs(value: js.Any*): Self = StObject.set(x, "init", js.Array(value :_*))
     
-    @scala.inline
-    def setManifest(value: Record[String, schema | single | ExtensionTermManifest]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: Record[String, schema | single | ExtensionTermManifest]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+    inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
     
-    @scala.inline
-    def setRegister(value: js.Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+    inline def setRegister(value: js.Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+    inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
   }
 }

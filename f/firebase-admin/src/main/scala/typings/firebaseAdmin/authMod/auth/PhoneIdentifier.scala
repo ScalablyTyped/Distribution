@@ -17,16 +17,13 @@ trait PhoneIdentifier
 }
 object PhoneIdentifier {
   
-  @scala.inline
-  def apply(phoneNumber: String): PhoneIdentifier = {
+  inline def apply(phoneNumber: String): PhoneIdentifier = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneIdentifier]
   }
   
-  @scala.inline
-  implicit class PhoneIdentifierMutableBuilder[Self <: PhoneIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneIdentifier](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

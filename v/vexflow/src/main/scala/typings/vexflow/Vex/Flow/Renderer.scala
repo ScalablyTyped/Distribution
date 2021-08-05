@@ -13,8 +13,7 @@ trait Renderer extends StObject {
 }
 object Renderer {
   
-  @scala.inline
-  def apply(getContext: () => IRenderContext, resize: (Double, Double) => Renderer): Renderer = {
+  inline def apply(getContext: () => IRenderContext, resize: (Double, Double) => Renderer): Renderer = {
     val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), resize = js.Any.fromFunction2(resize))
     __obj.asInstanceOf[Renderer]
   }
@@ -68,13 +67,10 @@ object Renderer {
          with LineEndType
   }
   
-  @scala.inline
-  implicit class RendererMutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
+  extension [Self <: Renderer](x: Self) {
     
-    @scala.inline
-    def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+    inline def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResize(value: (Double, Double) => Renderer): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
+    inline def setResize(value: (Double, Double) => Renderer): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
   }
 }

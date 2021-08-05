@@ -10,19 +10,15 @@ trait EditorPasteOptions extends StObject {
 }
 object EditorPasteOptions {
   
-  @scala.inline
-  def apply(): EditorPasteOptions = {
+  inline def apply(): EditorPasteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorPasteOptions]
   }
   
-  @scala.inline
-  implicit class EditorPasteOptionsMutableBuilder[Self <: EditorPasteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EditorPasteOptions](x: Self) {
     
-    @scala.inline
-    def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    inline def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+    inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
   }
 }

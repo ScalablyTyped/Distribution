@@ -36,8 +36,7 @@ trait IndoorMap extends StObject {
 }
 object IndoorMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getOpacity: () => Double,
     getSelectedBuilding: () => String,
     getSelectedBuildingId: () => String,
@@ -57,49 +56,34 @@ object IndoorMap {
     __obj.asInstanceOf[IndoorMap]
   }
   
-  @scala.inline
-  implicit class IndoorMapMutableBuilder[Self <: IndoorMap] (val x: Self) extends AnyVal {
+  extension [Self <: IndoorMap](x: Self) {
     
-    @scala.inline
-    def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
+    inline def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedBuilding(value: () => String): Self = StObject.set(x, "getSelectedBuilding", js.Any.fromFunction0(value))
+    inline def setGetSelectedBuilding(value: () => String): Self = StObject.set(x, "getSelectedBuilding", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedBuildingId(value: () => String): Self = StObject.set(x, "getSelectedBuildingId", js.Any.fromFunction0(value))
+    inline def setGetSelectedBuildingId(value: () => String): Self = StObject.set(x, "getSelectedBuildingId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideFloorBar(value: () => Unit): Self = StObject.set(x, "hideFloorBar", js.Any.fromFunction0(value))
+    inline def setHideFloorBar(value: () => Unit): Self = StObject.set(x, "hideFloorBar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideLabels(value: () => Unit): Self = StObject.set(x, "hideLabels", js.Any.fromFunction0(value))
+    inline def setHideLabels(value: () => Unit): Self = StObject.set(x, "hideLabels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
+    inline def setSetMap(value: Map => Unit): Self = StObject.set(x, "setMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
+    inline def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetzIndex(value: () => Unit): Self = StObject.set(x, "setzIndex", js.Any.fromFunction0(value))
+    inline def setSetzIndex(value: () => Unit): Self = StObject.set(x, "setzIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowFloor(value: (Double, Boolean) => Unit): Self = StObject.set(x, "showFloor", js.Any.fromFunction2(value))
+    inline def setShowFloor(value: (Double, Boolean) => Unit): Self = StObject.set(x, "showFloor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowFloorBar(value: () => Unit): Self = StObject.set(x, "showFloorBar", js.Any.fromFunction0(value))
+    inline def setShowFloorBar(value: () => Unit): Self = StObject.set(x, "showFloorBar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowIndoorMap(value: (String, Double, String) => Unit): Self = StObject.set(x, "showIndoorMap", js.Any.fromFunction3(value))
+    inline def setShowIndoorMap(value: (String, Double, String) => Unit): Self = StObject.set(x, "showIndoorMap", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setShowLabels(value: () => Unit): Self = StObject.set(x, "showLabels", js.Any.fromFunction0(value))
+    inline def setShowLabels(value: () => Unit): Self = StObject.set(x, "showLabels", js.Any.fromFunction0(value))
   }
 }

@@ -11,9 +11,7 @@ object parsestringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseDtstart(line: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDtstart")(line.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
+  inline def parseDtstart(line: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDtstart")(line.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
   
-  @scala.inline
-  def parseString(rfcString: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(rfcString.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
+  inline def parseString(rfcString: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(rfcString.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
 }

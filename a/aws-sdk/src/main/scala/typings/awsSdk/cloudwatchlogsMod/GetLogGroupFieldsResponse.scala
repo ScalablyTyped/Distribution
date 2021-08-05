@@ -13,22 +13,17 @@ trait GetLogGroupFieldsResponse extends StObject {
 }
 object GetLogGroupFieldsResponse {
   
-  @scala.inline
-  def apply(): GetLogGroupFieldsResponse = {
+  inline def apply(): GetLogGroupFieldsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLogGroupFieldsResponse]
   }
   
-  @scala.inline
-  implicit class GetLogGroupFieldsResponseMutableBuilder[Self <: GetLogGroupFieldsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLogGroupFieldsResponse](x: Self) {
     
-    @scala.inline
-    def setLogGroupFields(value: LogGroupFieldList): Self = StObject.set(x, "logGroupFields", value.asInstanceOf[js.Any])
+    inline def setLogGroupFields(value: LogGroupFieldList): Self = StObject.set(x, "logGroupFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupFieldsUndefined: Self = StObject.set(x, "logGroupFields", js.undefined)
+    inline def setLogGroupFieldsUndefined: Self = StObject.set(x, "logGroupFields", js.undefined)
     
-    @scala.inline
-    def setLogGroupFieldsVarargs(value: LogGroupField*): Self = StObject.set(x, "logGroupFields", js.Array(value :_*))
+    inline def setLogGroupFieldsVarargs(value: LogGroupField*): Self = StObject.set(x, "logGroupFields", js.Array(value :_*))
   }
 }

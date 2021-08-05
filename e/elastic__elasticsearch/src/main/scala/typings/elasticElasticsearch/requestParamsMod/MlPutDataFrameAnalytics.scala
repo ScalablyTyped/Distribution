@@ -14,19 +14,15 @@ trait MlPutDataFrameAnalytics[T]
 }
 object MlPutDataFrameAnalytics {
   
-  @scala.inline
-  def apply[T](body: T, id: String): MlPutDataFrameAnalytics[T] = {
+  inline def apply[T](body: T, id: String): MlPutDataFrameAnalytics[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlPutDataFrameAnalytics[T]]
   }
   
-  @scala.inline
-  implicit class MlPutDataFrameAnalyticsMutableBuilder[Self <: MlPutDataFrameAnalytics[?], T] (val x: Self & MlPutDataFrameAnalytics[T]) extends AnyVal {
+  extension [Self <: MlPutDataFrameAnalytics[?], T](x: Self & MlPutDataFrameAnalytics[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

@@ -20,34 +20,25 @@ trait ProjectReference extends StObject {
 }
 object ProjectReference {
   
-  @scala.inline
-  def apply(path: java.lang.String): ProjectReference = {
+  inline def apply(path: java.lang.String): ProjectReference = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectReference]
   }
   
-  @scala.inline
-  implicit class ProjectReferenceMutableBuilder[Self <: ProjectReference] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectReference](x: Self) {
     
-    @scala.inline
-    def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
+    inline def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
+    inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
     
-    @scala.inline
-    def setOriginalPath(value: java.lang.String): Self = StObject.set(x, "originalPath", value.asInstanceOf[js.Any])
+    inline def setOriginalPath(value: java.lang.String): Self = StObject.set(x, "originalPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPathUndefined: Self = StObject.set(x, "originalPath", js.undefined)
+    inline def setOriginalPathUndefined: Self = StObject.set(x, "originalPath", js.undefined)
     
-    @scala.inline
-    def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+    inline def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
+    inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
   }
 }

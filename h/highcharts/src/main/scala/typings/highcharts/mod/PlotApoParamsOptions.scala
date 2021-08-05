@@ -24,28 +24,21 @@ trait PlotApoParamsOptions extends StObject {
 }
 object PlotApoParamsOptions {
   
-  @scala.inline
-  def apply(): PlotApoParamsOptions = {
+  inline def apply(): PlotApoParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotApoParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotApoParamsOptionsMutableBuilder[Self <: PlotApoParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotApoParamsOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setPeriods(value: js.Array[Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
+    inline def setPeriods(value: js.Array[Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
+    inline def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
     
-    @scala.inline
-    def setPeriodsVarargs(value: Double*): Self = StObject.set(x, "periods", js.Array(value :_*))
+    inline def setPeriodsVarargs(value: Double*): Self = StObject.set(x, "periods", js.Array(value :_*))
   }
 }

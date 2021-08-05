@@ -11,25 +11,19 @@ trait IMessageList extends StObject {
 }
 object IMessageList {
   
-  @scala.inline
-  def apply(): IMessageList = {
+  inline def apply(): IMessageList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMessageList]
   }
   
-  @scala.inline
-  implicit class IMessageListMutableBuilder[Self <: IMessageList] (val x: Self) extends AnyVal {
+  extension [Self <: IMessageList](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[IMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[IMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesNull: Self = StObject.set(x, "messages", null)
+    inline def setMessagesNull: Self = StObject.set(x, "messages", null)
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: IMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: IMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

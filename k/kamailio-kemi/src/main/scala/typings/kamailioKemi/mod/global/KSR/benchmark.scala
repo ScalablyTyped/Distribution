@@ -10,9 +10,7 @@ object benchmark {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bmLogTimer(tname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bm_log_timer")(tname.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def bmLogTimer(tname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bm_log_timer")(tname.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def bmStartTimer(tname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bm_start_timer")(tname.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def bmStartTimer(tname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bm_start_timer")(tname.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

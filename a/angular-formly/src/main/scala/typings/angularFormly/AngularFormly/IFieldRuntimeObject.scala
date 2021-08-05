@@ -13,8 +13,7 @@ trait IFieldRuntimeObject
 }
 object IFieldRuntimeObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     model: StringDictionary[js.Any],
     value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])
   ): IFieldRuntimeObject = {
@@ -22,10 +21,8 @@ object IFieldRuntimeObject {
     __obj.asInstanceOf[IFieldRuntimeObject]
   }
   
-  @scala.inline
-  implicit class IFieldRuntimeObjectMutableBuilder[Self <: IFieldRuntimeObject] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldRuntimeObject](x: Self) {
     
-    @scala.inline
-    def setModel(value: StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

@@ -94,61 +94,43 @@ trait PlusBarcodeBarcodeStyles extends StObject {
 }
 object PlusBarcodeBarcodeStyles {
   
-  @scala.inline
-  def apply(): PlusBarcodeBarcodeStyles = {
+  inline def apply(): PlusBarcodeBarcodeStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusBarcodeBarcodeStyles]
   }
   
-  @scala.inline
-  implicit class PlusBarcodeBarcodeStylesMutableBuilder[Self <: PlusBarcodeBarcodeStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusBarcodeBarcodeStyles](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setFrameColor(value: String): Self = StObject.set(x, "frameColor", value.asInstanceOf[js.Any])
+    inline def setFrameColor(value: String): Self = StObject.set(x, "frameColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameColorUndefined: Self = StObject.set(x, "frameColor", js.undefined)
+    inline def setFrameColorUndefined: Self = StObject.set(x, "frameColor", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setScanbarColor(value: String): Self = StObject.set(x, "scanbarColor", value.asInstanceOf[js.Any])
+    inline def setScanbarColor(value: String): Self = StObject.set(x, "scanbarColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanbarColorUndefined: Self = StObject.set(x, "scanbarColor", js.undefined)
+    inline def setScanbarColorUndefined: Self = StObject.set(x, "scanbarColor", js.undefined)
     
-    @scala.inline
-    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

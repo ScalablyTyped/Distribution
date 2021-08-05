@@ -13,19 +13,15 @@ trait LastRunErrorStatus extends StObject {
 }
 object LastRunErrorStatus {
   
-  @scala.inline
-  def apply(): LastRunErrorStatus = {
+  inline def apply(): LastRunErrorStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LastRunErrorStatus]
   }
   
-  @scala.inline
-  implicit class LastRunErrorStatusMutableBuilder[Self <: LastRunErrorStatus] (val x: Self) extends AnyVal {
+  extension [Self <: LastRunErrorStatus](x: Self) {
     
-    @scala.inline
-    def setCode(value: LastRunErrorStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: LastRunErrorStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }
 }

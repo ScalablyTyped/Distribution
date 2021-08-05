@@ -38,49 +38,35 @@ trait SecurityGroupRuleDescription extends StObject {
 }
 object SecurityGroupRuleDescription {
   
-  @scala.inline
-  def apply(): SecurityGroupRuleDescription = {
+  inline def apply(): SecurityGroupRuleDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityGroupRuleDescription]
   }
   
-  @scala.inline
-  implicit class SecurityGroupRuleDescriptionMutableBuilder[Self <: SecurityGroupRuleDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityGroupRuleDescription](x: Self) {
     
-    @scala.inline
-    def setFromPort(value: IPPortNumber): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
+    inline def setFromPort(value: IPPortNumber): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
+    inline def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
     
-    @scala.inline
-    def setIPV4Range(value: CIDR): Self = StObject.set(x, "IPV4Range", value.asInstanceOf[js.Any])
+    inline def setIPV4Range(value: CIDR): Self = StObject.set(x, "IPV4Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPV4RangeUndefined: Self = StObject.set(x, "IPV4Range", js.undefined)
+    inline def setIPV4RangeUndefined: Self = StObject.set(x, "IPV4Range", js.undefined)
     
-    @scala.inline
-    def setIPV6Range(value: CIDR): Self = StObject.set(x, "IPV6Range", value.asInstanceOf[js.Any])
+    inline def setIPV6Range(value: CIDR): Self = StObject.set(x, "IPV6Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPV6RangeUndefined: Self = StObject.set(x, "IPV6Range", js.undefined)
+    inline def setIPV6RangeUndefined: Self = StObject.set(x, "IPV6Range", js.undefined)
     
-    @scala.inline
-    def setPrefixListId(value: ResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: ResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
+    inline def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: LengthBoundedString): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: LengthBoundedString): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
-    @scala.inline
-    def setToPort(value: IPPortNumber): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
+    inline def setToPort(value: IPPortNumber): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
+    inline def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
   }
 }

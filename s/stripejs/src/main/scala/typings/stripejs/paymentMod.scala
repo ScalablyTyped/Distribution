@@ -24,17 +24,14 @@ object paymentMod {
   }
   object CanMakePaymentResult {
     
-    @scala.inline
-    def apply(applePay: Boolean): CanMakePaymentResult = {
+    inline def apply(applePay: Boolean): CanMakePaymentResult = {
       val __obj = js.Dynamic.literal(applePay = applePay.asInstanceOf[js.Any])
       __obj.asInstanceOf[CanMakePaymentResult]
     }
     
-    @scala.inline
-    implicit class CanMakePaymentResultMutableBuilder[Self <: CanMakePaymentResult] (val x: Self) extends AnyVal {
+    extension [Self <: CanMakePaymentResult](x: Self) {
       
-      @scala.inline
-      def setApplePay(value: Boolean): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
+      inline def setApplePay(value: Boolean): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,20 +50,16 @@ object paymentMod {
   }
   object NewShippingAddress {
     
-    @scala.inline
-    def apply(shippingAddress: ShippingAddress, updateWith: UpdateOptions => Unit): NewShippingAddress = {
+    inline def apply(shippingAddress: ShippingAddress, updateWith: UpdateOptions => Unit): NewShippingAddress = {
       val __obj = js.Dynamic.literal(shippingAddress = shippingAddress.asInstanceOf[js.Any], updateWith = js.Any.fromFunction1(updateWith))
       __obj.asInstanceOf[NewShippingAddress]
     }
     
-    @scala.inline
-    implicit class NewShippingAddressMutableBuilder[Self <: NewShippingAddress] (val x: Self) extends AnyVal {
+    extension [Self <: NewShippingAddress](x: Self) {
       
-      @scala.inline
-      def setShippingAddress(value: ShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
+      inline def setShippingAddress(value: ShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateWith(value: UpdateOptions => Unit): Self = StObject.set(x, "updateWith", js.Any.fromFunction1(value))
+      inline def setUpdateWith(value: UpdateOptions => Unit): Self = StObject.set(x, "updateWith", js.Any.fromFunction1(value))
     }
   }
   
@@ -85,20 +78,16 @@ object paymentMod {
   }
   object NewShippingOptions {
     
-    @scala.inline
-    def apply(shippingOption: ShippingOption, updateWith: UpdateOptions => Unit): NewShippingOptions = {
+    inline def apply(shippingOption: ShippingOption, updateWith: UpdateOptions => Unit): NewShippingOptions = {
       val __obj = js.Dynamic.literal(shippingOption = shippingOption.asInstanceOf[js.Any], updateWith = js.Any.fromFunction1(updateWith))
       __obj.asInstanceOf[NewShippingOptions]
     }
     
-    @scala.inline
-    implicit class NewShippingOptionsMutableBuilder[Self <: NewShippingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NewShippingOptions](x: Self) {
       
-      @scala.inline
-      def setShippingOption(value: ShippingOption): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
+      inline def setShippingOption(value: ShippingOption): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateWith(value: UpdateOptions => Unit): Self = StObject.set(x, "updateWith", js.Any.fromFunction1(value))
+      inline def setUpdateWith(value: UpdateOptions => Unit): Self = StObject.set(x, "updateWith", js.Any.fromFunction1(value))
     }
   }
   
@@ -123,26 +112,20 @@ object paymentMod {
   }
   object PaymentItem {
     
-    @scala.inline
-    def apply(amount: Double, label: String): PaymentItem = {
+    inline def apply(amount: Double, label: String): PaymentItem = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaymentItem]
     }
     
-    @scala.inline
-    implicit class PaymentItemMutableBuilder[Self <: PaymentItem] (val x: Self) extends AnyVal {
+    extension [Self <: PaymentItem](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+      inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     }
   }
   
@@ -183,41 +166,30 @@ object paymentMod {
   }
   object StripePaymentOptions {
     
-    @scala.inline
-    def apply(country: String, currency: String, total: PaymentItem): StripePaymentOptions = {
+    inline def apply(country: String, currency: String, total: PaymentItem): StripePaymentOptions = {
       val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[StripePaymentOptions]
     }
     
-    @scala.inline
-    implicit class StripePaymentOptionsMutableBuilder[Self <: StripePaymentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StripePaymentOptions](x: Self) {
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPayerEmail(value: Boolean): Self = StObject.set(x, "requestPayerEmail", value.asInstanceOf[js.Any])
+      inline def setRequestPayerEmail(value: Boolean): Self = StObject.set(x, "requestPayerEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPayerEmailUndefined: Self = StObject.set(x, "requestPayerEmail", js.undefined)
+      inline def setRequestPayerEmailUndefined: Self = StObject.set(x, "requestPayerEmail", js.undefined)
       
-      @scala.inline
-      def setRequestPayerName(value: Boolean): Self = StObject.set(x, "requestPayerName", value.asInstanceOf[js.Any])
+      inline def setRequestPayerName(value: Boolean): Self = StObject.set(x, "requestPayerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPayerNameUndefined: Self = StObject.set(x, "requestPayerName", js.undefined)
+      inline def setRequestPayerNameUndefined: Self = StObject.set(x, "requestPayerName", js.undefined)
       
-      @scala.inline
-      def setRequestPayerPhone(value: Boolean): Self = StObject.set(x, "requestPayerPhone", value.asInstanceOf[js.Any])
+      inline def setRequestPayerPhone(value: Boolean): Self = StObject.set(x, "requestPayerPhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPayerPhoneUndefined: Self = StObject.set(x, "requestPayerPhone", js.undefined)
+      inline def setRequestPayerPhoneUndefined: Self = StObject.set(x, "requestPayerPhone", js.undefined)
       
-      @scala.inline
-      def setRequestShipping(value: Boolean): Self = StObject.set(x, "requestShipping", value.asInstanceOf[js.Any])
+      inline def setRequestShipping(value: Boolean): Self = StObject.set(x, "requestShipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestShippingUndefined: Self = StObject.set(x, "requestShipping", js.undefined)
+      inline def setRequestShippingUndefined: Self = StObject.set(x, "requestShipping", js.undefined)
     }
   }
   
@@ -319,8 +291,7 @@ object paymentMod {
   }
   object StripePaymentResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       complete: completeStatus => Unit,
       methodName: String,
       shippingAddress: ShippingAddress,
@@ -330,50 +301,35 @@ object paymentMod {
       __obj.asInstanceOf[StripePaymentResponse]
     }
     
-    @scala.inline
-    implicit class StripePaymentResponseMutableBuilder[Self <: StripePaymentResponse] (val x: Self) extends AnyVal {
+    extension [Self <: StripePaymentResponse](x: Self) {
       
-      @scala.inline
-      def setComplete(value: completeStatus => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: completeStatus => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayerEmail(value: String): Self = StObject.set(x, "payerEmail", value.asInstanceOf[js.Any])
+      inline def setPayerEmail(value: String): Self = StObject.set(x, "payerEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayerEmailUndefined: Self = StObject.set(x, "payerEmail", js.undefined)
+      inline def setPayerEmailUndefined: Self = StObject.set(x, "payerEmail", js.undefined)
       
-      @scala.inline
-      def setPayerName(value: String): Self = StObject.set(x, "payerName", value.asInstanceOf[js.Any])
+      inline def setPayerName(value: String): Self = StObject.set(x, "payerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayerNameUndefined: Self = StObject.set(x, "payerName", js.undefined)
+      inline def setPayerNameUndefined: Self = StObject.set(x, "payerName", js.undefined)
       
-      @scala.inline
-      def setPayerPhone(value: String): Self = StObject.set(x, "payerPhone", value.asInstanceOf[js.Any])
+      inline def setPayerPhone(value: String): Self = StObject.set(x, "payerPhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayerPhoneUndefined: Self = StObject.set(x, "payerPhone", js.undefined)
+      inline def setPayerPhoneUndefined: Self = StObject.set(x, "payerPhone", js.undefined)
       
-      @scala.inline
-      def setShippingAddress(value: ShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
+      inline def setShippingAddress(value: ShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingOption(value: ShippingOption): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
+      inline def setShippingOption(value: ShippingOption): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     }
   }
   
@@ -410,38 +366,28 @@ object paymentMod {
   }
   object UpdateOptions {
     
-    @scala.inline
-    def apply(currency: String, total: PaymentItem): UpdateOptions = {
+    inline def apply(currency: String, total: PaymentItem): UpdateOptions = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    @scala.inline
-    implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateOptions](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayItems(value: js.Array[PaymentItem]): Self = StObject.set(x, "displayItems", value.asInstanceOf[js.Any])
+      inline def setDisplayItems(value: js.Array[PaymentItem]): Self = StObject.set(x, "displayItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayItemsUndefined: Self = StObject.set(x, "displayItems", js.undefined)
+      inline def setDisplayItemsUndefined: Self = StObject.set(x, "displayItems", js.undefined)
       
-      @scala.inline
-      def setDisplayItemsVarargs(value: PaymentItem*): Self = StObject.set(x, "displayItems", js.Array(value :_*))
+      inline def setDisplayItemsVarargs(value: PaymentItem*): Self = StObject.set(x, "displayItems", js.Array(value :_*))
       
-      @scala.inline
-      def setShippingOptions(value: js.Array[ShippingOption]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
+      inline def setShippingOptions(value: js.Array[ShippingOption]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)
+      inline def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)
       
-      @scala.inline
-      def setShippingOptionsVarargs(value: ShippingOption*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
+      inline def setShippingOptionsVarargs(value: ShippingOption*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setTotal(value: PaymentItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: PaymentItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -456,22 +402,16 @@ object paymentMod {
   trait completeStatus extends StObject
   object completeStatus {
     
-    @scala.inline
-    def fail: typings.stripejs.stripejsStrings.fail = "fail".asInstanceOf[typings.stripejs.stripejsStrings.fail]
+    inline def fail: typings.stripejs.stripejsStrings.fail = "fail".asInstanceOf[typings.stripejs.stripejsStrings.fail]
     
-    @scala.inline
-    def invalid_payer_email: typings.stripejs.stripejsStrings.invalid_payer_email = "invalid_payer_email".asInstanceOf[typings.stripejs.stripejsStrings.invalid_payer_email]
+    inline def invalid_payer_email: typings.stripejs.stripejsStrings.invalid_payer_email = "invalid_payer_email".asInstanceOf[typings.stripejs.stripejsStrings.invalid_payer_email]
     
-    @scala.inline
-    def invalid_payer_name: typings.stripejs.stripejsStrings.invalid_payer_name = "invalid_payer_name".asInstanceOf[typings.stripejs.stripejsStrings.invalid_payer_name]
+    inline def invalid_payer_name: typings.stripejs.stripejsStrings.invalid_payer_name = "invalid_payer_name".asInstanceOf[typings.stripejs.stripejsStrings.invalid_payer_name]
     
-    @scala.inline
-    def invalid_payer_phone: typings.stripejs.stripejsStrings.invalid_payer_phone = "invalid_payer_phone".asInstanceOf[typings.stripejs.stripejsStrings.invalid_payer_phone]
+    inline def invalid_payer_phone: typings.stripejs.stripejsStrings.invalid_payer_phone = "invalid_payer_phone".asInstanceOf[typings.stripejs.stripejsStrings.invalid_payer_phone]
     
-    @scala.inline
-    def invalid_shipping_address: typings.stripejs.stripejsStrings.invalid_shipping_address = "invalid_shipping_address".asInstanceOf[typings.stripejs.stripejsStrings.invalid_shipping_address]
+    inline def invalid_shipping_address: typings.stripejs.stripejsStrings.invalid_shipping_address = "invalid_shipping_address".asInstanceOf[typings.stripejs.stripejsStrings.invalid_shipping_address]
     
-    @scala.inline
-    def success: typings.stripejs.stripejsStrings.success = "success".asInstanceOf[typings.stripejs.stripejsStrings.success]
+    inline def success: typings.stripejs.stripejsStrings.success = "success".asInstanceOf[typings.stripejs.stripejsStrings.success]
   }
 }

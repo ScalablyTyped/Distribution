@@ -24,8 +24,7 @@ trait GenerateVerificationToken extends StObject {
 }
 object GenerateVerificationToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     from: String,
     generateVerificationToken: () => Unit,
     redirect: String,
@@ -40,31 +39,22 @@ object GenerateVerificationToken {
     __obj.asInstanceOf[GenerateVerificationToken]
   }
   
-  @scala.inline
-  implicit class GenerateVerificationTokenMutableBuilder[Self <: GenerateVerificationToken] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateVerificationToken](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateVerificationToken(value: () => Unit): Self = StObject.set(x, "generateVerificationToken", js.Any.fromFunction0(value))
+    inline def setGenerateVerificationToken(value: () => Unit): Self = StObject.set(x, "generateVerificationToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,9 +10,7 @@ object processArgvMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProcessArgvBin(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProcessArgvBin")().asInstanceOf[String]
+  inline def getProcessArgvBin(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProcessArgvBin")().asInstanceOf[String]
   
-  @scala.inline
-  def getProcessArgvWithoutBin(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProcessArgvWithoutBin")().asInstanceOf[js.Array[String]]
+  inline def getProcessArgvWithoutBin(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProcessArgvWithoutBin")().asInstanceOf[js.Array[String]]
 }

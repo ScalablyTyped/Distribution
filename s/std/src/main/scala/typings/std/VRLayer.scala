@@ -14,46 +14,33 @@ trait VRLayer extends StObject {
 }
 object VRLayer {
   
-  @scala.inline
-  def apply(): VRLayer = {
+  inline def apply(): VRLayer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VRLayer]
   }
   
-  @scala.inline
-  implicit class VRLayerMutableBuilder[Self <: VRLayer] (val x: Self) extends AnyVal {
+  extension [Self <: VRLayer](x: Self) {
     
-    @scala.inline
-    def setLeftBounds(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "leftBounds", value.asInstanceOf[js.Any])
+    inline def setLeftBounds(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "leftBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftBoundsNull: Self = StObject.set(x, "leftBounds", null)
+    inline def setLeftBoundsNull: Self = StObject.set(x, "leftBounds", null)
     
-    @scala.inline
-    def setLeftBoundsUndefined: Self = StObject.set(x, "leftBounds", js.undefined)
+    inline def setLeftBoundsUndefined: Self = StObject.set(x, "leftBounds", js.undefined)
     
-    @scala.inline
-    def setLeftBoundsVarargs(value: Double*): Self = StObject.set(x, "leftBounds", js.Array(value :_*))
+    inline def setLeftBoundsVarargs(value: Double*): Self = StObject.set(x, "leftBounds", js.Array(value :_*))
     
-    @scala.inline
-    def setRightBounds(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "rightBounds", value.asInstanceOf[js.Any])
+    inline def setRightBounds(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "rightBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightBoundsNull: Self = StObject.set(x, "rightBounds", null)
+    inline def setRightBoundsNull: Self = StObject.set(x, "rightBounds", null)
     
-    @scala.inline
-    def setRightBoundsUndefined: Self = StObject.set(x, "rightBounds", js.undefined)
+    inline def setRightBoundsUndefined: Self = StObject.set(x, "rightBounds", js.undefined)
     
-    @scala.inline
-    def setRightBoundsVarargs(value: Double*): Self = StObject.set(x, "rightBounds", js.Array(value :_*))
+    inline def setRightBoundsVarargs(value: Double*): Self = StObject.set(x, "rightBounds", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: HTMLCanvasElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: HTMLCanvasElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait ArtifactSource extends StObject {
 }
 object ArtifactSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _package: scala.Double,
     artifactSource: scala.Double,
     containerImage: scala.Double,
@@ -38,28 +37,20 @@ object ArtifactSource {
     __obj.asInstanceOf[ArtifactSource]
   }
   
-  @scala.inline
-  implicit class ArtifactSourceMutableBuilder[Self <: ArtifactSource] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactSource](x: Self) {
     
-    @scala.inline
-    def setArtifactSource(value: scala.Double): Self = StObject.set(x, "artifactSource", value.asInstanceOf[js.Any])
+    inline def setArtifactSource(value: scala.Double): Self = StObject.set(x, "artifactSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerImage(value: scala.Double): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
+    inline def setContainerImage(value: scala.Double): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequest(value: scala.Double): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+    inline def setPullRequest(value: scala.Double): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRepo(value: scala.Double): Self = StObject.set(x, "sourceRepo", value.asInstanceOf[js.Any])
+    inline def setSourceRepo(value: scala.Double): Self = StObject.set(x, "sourceRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_package(value: scala.Double): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: scala.Double): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

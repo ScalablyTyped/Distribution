@@ -14,19 +14,15 @@ trait ListEditItemSelectedChangedEventArgs
 }
 object ListEditItemSelectedChangedEventArgs {
   
-  @scala.inline
-  def apply(index: Double, isSelected: Boolean, processOnServer: Boolean, sender: Control): ListEditItemSelectedChangedEventArgs = {
+  inline def apply(index: Double, isSelected: Boolean, processOnServer: Boolean, sender: Control): ListEditItemSelectedChangedEventArgs = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEditItemSelectedChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ListEditItemSelectedChangedEventArgsMutableBuilder[Self <: ListEditItemSelectedChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ListEditItemSelectedChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
   }
 }

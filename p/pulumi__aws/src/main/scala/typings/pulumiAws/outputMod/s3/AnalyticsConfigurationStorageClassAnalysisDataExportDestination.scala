@@ -13,18 +13,15 @@ trait AnalyticsConfigurationStorageClassAnalysisDataExportDestination extends St
 }
 object AnalyticsConfigurationStorageClassAnalysisDataExportDestination {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     s3BucketDestination: AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination
   ): AnalyticsConfigurationStorageClassAnalysisDataExportDestination = {
     val __obj = js.Dynamic.literal(s3BucketDestination = s3BucketDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsConfigurationStorageClassAnalysisDataExportDestination]
   }
   
-  @scala.inline
-  implicit class AnalyticsConfigurationStorageClassAnalysisDataExportDestinationMutableBuilder[Self <: AnalyticsConfigurationStorageClassAnalysisDataExportDestination] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsConfigurationStorageClassAnalysisDataExportDestination](x: Self) {
     
-    @scala.inline
-    def setS3BucketDestination(value: AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination): Self = StObject.set(x, "s3BucketDestination", value.asInstanceOf[js.Any])
+    inline def setS3BucketDestination(value: AnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination): Self = StObject.set(x, "s3BucketDestination", value.asInstanceOf[js.Any])
   }
 }

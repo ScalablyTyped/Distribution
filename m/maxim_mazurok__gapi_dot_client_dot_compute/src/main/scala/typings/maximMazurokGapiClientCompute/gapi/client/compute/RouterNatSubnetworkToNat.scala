@@ -23,37 +23,27 @@ trait RouterNatSubnetworkToNat extends StObject {
 }
 object RouterNatSubnetworkToNat {
   
-  @scala.inline
-  def apply(): RouterNatSubnetworkToNat = {
+  inline def apply(): RouterNatSubnetworkToNat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouterNatSubnetworkToNat]
   }
   
-  @scala.inline
-  implicit class RouterNatSubnetworkToNatMutableBuilder[Self <: RouterNatSubnetworkToNat] (val x: Self) extends AnyVal {
+  extension [Self <: RouterNatSubnetworkToNat](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSecondaryIpRangeNames(value: js.Array[String]): Self = StObject.set(x, "secondaryIpRangeNames", value.asInstanceOf[js.Any])
+    inline def setSecondaryIpRangeNames(value: js.Array[String]): Self = StObject.set(x, "secondaryIpRangeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryIpRangeNamesUndefined: Self = StObject.set(x, "secondaryIpRangeNames", js.undefined)
+    inline def setSecondaryIpRangeNamesUndefined: Self = StObject.set(x, "secondaryIpRangeNames", js.undefined)
     
-    @scala.inline
-    def setSecondaryIpRangeNamesVarargs(value: String*): Self = StObject.set(x, "secondaryIpRangeNames", js.Array(value :_*))
+    inline def setSecondaryIpRangeNamesVarargs(value: String*): Self = StObject.set(x, "secondaryIpRangeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceIpRangesToNat(value: js.Array[String]): Self = StObject.set(x, "sourceIpRangesToNat", value.asInstanceOf[js.Any])
+    inline def setSourceIpRangesToNat(value: js.Array[String]): Self = StObject.set(x, "sourceIpRangesToNat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIpRangesToNatUndefined: Self = StObject.set(x, "sourceIpRangesToNat", js.undefined)
+    inline def setSourceIpRangesToNatUndefined: Self = StObject.set(x, "sourceIpRangesToNat", js.undefined)
     
-    @scala.inline
-    def setSourceIpRangesToNatVarargs(value: String*): Self = StObject.set(x, "sourceIpRangesToNat", js.Array(value :_*))
+    inline def setSourceIpRangesToNatVarargs(value: String*): Self = StObject.set(x, "sourceIpRangesToNat", js.Array(value :_*))
   }
 }

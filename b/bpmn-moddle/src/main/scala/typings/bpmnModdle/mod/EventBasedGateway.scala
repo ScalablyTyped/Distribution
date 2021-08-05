@@ -17,8 +17,7 @@ trait EventBasedGateway
 }
 object EventBasedGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -36,13 +35,10 @@ object EventBasedGateway {
     __obj.asInstanceOf[EventBasedGateway]
   }
   
-  @scala.inline
-  implicit class EventBasedGatewayMutableBuilder[Self <: EventBasedGateway] (val x: Self) extends AnyVal {
+  extension [Self <: EventBasedGateway](x: Self) {
     
-    @scala.inline
-    def setEventGatewayType(value: EventBasedGatewayType): Self = StObject.set(x, "eventGatewayType", value.asInstanceOf[js.Any])
+    inline def setEventGatewayType(value: EventBasedGatewayType): Self = StObject.set(x, "eventGatewayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstantiate(value: Boolean): Self = StObject.set(x, "instantiate", value.asInstanceOf[js.Any])
+    inline def setInstantiate(value: Boolean): Self = StObject.set(x, "instantiate", value.asInstanceOf[js.Any])
   }
 }

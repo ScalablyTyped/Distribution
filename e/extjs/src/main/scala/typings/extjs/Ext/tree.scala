@@ -17,8 +17,7 @@ object tree {
        with typings.extjs.Ext.grid.column.IColumn
   object IColumn {
     
-    @scala.inline
-    def apply(): IColumn = {
+    inline def apply(): IColumn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IColumn]
     }
@@ -159,130 +158,92 @@ object tree {
   }
   object IPanel {
     
-    @scala.inline
-    def apply(): typings.extjs.Ext.tree.IPanel = {
+    inline def apply(): typings.extjs.Ext.tree.IPanel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.extjs.Ext.tree.IPanel]
     }
     
-    @scala.inline
-    implicit class IPanelMutableBuilder[Self <: typings.extjs.Ext.tree.IPanel] (val x: Self) extends AnyVal {
+    extension [Self <: typings.extjs.Ext.tree.IPanel](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setCollapseAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction2(value))
+      inline def setCollapseAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCollapseAllUndefined: Self = StObject.set(x, "collapseAll", js.undefined)
+      inline def setCollapseAllUndefined: Self = StObject.set(x, "collapseAll", js.undefined)
       
-      @scala.inline
-      def setCollapseNode(
+      inline def setCollapseNode(
         value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "collapseNode", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCollapseNodeUndefined: Self = StObject.set(x, "collapseNode", js.undefined)
+      inline def setCollapseNodeUndefined: Self = StObject.set(x, "collapseNode", js.undefined)
       
-      @scala.inline
-      def setDisplayField(value: java.lang.String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+      inline def setDisplayField(value: java.lang.String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
+      inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
       
-      @scala.inline
-      def setExpandAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction2(value))
+      inline def setExpandAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
+      inline def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
       
-      @scala.inline
-      def setExpandNode(
+      inline def setExpandNode(
         value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "expandNode", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setExpandNodeUndefined: Self = StObject.set(x, "expandNode", js.undefined)
+      inline def setExpandNodeUndefined: Self = StObject.set(x, "expandNode", js.undefined)
       
-      @scala.inline
-      def setExpandPath(
+      inline def setExpandPath(
         value: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "expandPath", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setExpandPathUndefined: Self = StObject.set(x, "expandPath", js.undefined)
+      inline def setExpandPathUndefined: Self = StObject.set(x, "expandPath", js.undefined)
       
-      @scala.inline
-      def setFolderSort(value: Boolean): Self = StObject.set(x, "folderSort", value.asInstanceOf[js.Any])
+      inline def setFolderSort(value: Boolean): Self = StObject.set(x, "folderSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderSortUndefined: Self = StObject.set(x, "folderSort", js.undefined)
+      inline def setFolderSortUndefined: Self = StObject.set(x, "folderSort", js.undefined)
       
-      @scala.inline
-      def setGetChecked(value: () => Array): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
+      inline def setGetChecked(value: () => Array): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
+      inline def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
       
-      @scala.inline
-      def setGetRootNode(value: () => INodeInterface): Self = StObject.set(x, "getRootNode", js.Any.fromFunction0(value))
+      inline def setGetRootNode(value: () => INodeInterface): Self = StObject.set(x, "getRootNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRootNodeUndefined: Self = StObject.set(x, "getRootNode", js.undefined)
+      inline def setGetRootNodeUndefined: Self = StObject.set(x, "getRootNode", js.undefined)
       
-      @scala.inline
-      def setLines(value: Boolean): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Boolean): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+      inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
       
-      @scala.inline
-      def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setRootVisible(value: Boolean): Self = StObject.set(x, "rootVisible", value.asInstanceOf[js.Any])
+      inline def setRootVisible(value: Boolean): Self = StObject.set(x, "rootVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
+      inline def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
       
-      @scala.inline
-      def setSelectPath(
+      inline def setSelectPath(
         value: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "selectPath", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setSelectPathUndefined: Self = StObject.set(x, "selectPath", js.undefined)
+      inline def setSelectPathUndefined: Self = StObject.set(x, "selectPath", js.undefined)
       
-      @scala.inline
-      def setSetRootNode(value: /* root */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
+      inline def setSetRootNode(value: /* root */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
+      inline def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
       
-      @scala.inline
-      def setSingleExpand(value: Boolean): Self = StObject.set(x, "singleExpand", value.asInstanceOf[js.Any])
+      inline def setSingleExpand(value: Boolean): Self = StObject.set(x, "singleExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleExpandUndefined: Self = StObject.set(x, "singleExpand", js.undefined)
+      inline def setSingleExpandUndefined: Self = StObject.set(x, "singleExpand", js.undefined)
       
-      @scala.inline
-      def setStore(value: ITreeStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: ITreeStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setUseArrows(value: Boolean): Self = StObject.set(x, "useArrows", value.asInstanceOf[js.Any])
+      inline def setUseArrows(value: Boolean): Self = StObject.set(x, "useArrows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseArrowsUndefined: Self = StObject.set(x, "useArrows", js.undefined)
+      inline def setUseArrowsUndefined: Self = StObject.set(x, "useArrows", js.undefined)
     }
   }
   
@@ -421,130 +382,92 @@ object tree {
   }
   object ITreePanel {
     
-    @scala.inline
-    def apply(): typings.extjs.Ext.tree.ITreePanel = {
+    inline def apply(): typings.extjs.Ext.tree.ITreePanel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.extjs.Ext.tree.ITreePanel]
     }
     
-    @scala.inline
-    implicit class ITreePanelMutableBuilder[Self <: typings.extjs.Ext.tree.ITreePanel] (val x: Self) extends AnyVal {
+    extension [Self <: typings.extjs.Ext.tree.ITreePanel](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setCollapseAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction2(value))
+      inline def setCollapseAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCollapseAllUndefined: Self = StObject.set(x, "collapseAll", js.undefined)
+      inline def setCollapseAllUndefined: Self = StObject.set(x, "collapseAll", js.undefined)
       
-      @scala.inline
-      def setCollapseNode(
+      inline def setCollapseNode(
         value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "collapseNode", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCollapseNodeUndefined: Self = StObject.set(x, "collapseNode", js.undefined)
+      inline def setCollapseNodeUndefined: Self = StObject.set(x, "collapseNode", js.undefined)
       
-      @scala.inline
-      def setDisplayField(value: java.lang.String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+      inline def setDisplayField(value: java.lang.String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
+      inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
       
-      @scala.inline
-      def setExpandAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction2(value))
+      inline def setExpandAll(value: (/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
+      inline def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
       
-      @scala.inline
-      def setExpandNode(
+      inline def setExpandNode(
         value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "expandNode", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setExpandNodeUndefined: Self = StObject.set(x, "expandNode", js.undefined)
+      inline def setExpandNodeUndefined: Self = StObject.set(x, "expandNode", js.undefined)
       
-      @scala.inline
-      def setExpandPath(
+      inline def setExpandPath(
         value: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "expandPath", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setExpandPathUndefined: Self = StObject.set(x, "expandPath", js.undefined)
+      inline def setExpandPathUndefined: Self = StObject.set(x, "expandPath", js.undefined)
       
-      @scala.inline
-      def setFolderSort(value: Boolean): Self = StObject.set(x, "folderSort", value.asInstanceOf[js.Any])
+      inline def setFolderSort(value: Boolean): Self = StObject.set(x, "folderSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderSortUndefined: Self = StObject.set(x, "folderSort", js.undefined)
+      inline def setFolderSortUndefined: Self = StObject.set(x, "folderSort", js.undefined)
       
-      @scala.inline
-      def setGetChecked(value: () => Array): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
+      inline def setGetChecked(value: () => Array): Self = StObject.set(x, "getChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
+      inline def setGetCheckedUndefined: Self = StObject.set(x, "getChecked", js.undefined)
       
-      @scala.inline
-      def setGetRootNode(value: () => INodeInterface): Self = StObject.set(x, "getRootNode", js.Any.fromFunction0(value))
+      inline def setGetRootNode(value: () => INodeInterface): Self = StObject.set(x, "getRootNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRootNodeUndefined: Self = StObject.set(x, "getRootNode", js.undefined)
+      inline def setGetRootNodeUndefined: Self = StObject.set(x, "getRootNode", js.undefined)
       
-      @scala.inline
-      def setLines(value: Boolean): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Boolean): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+      inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
       
-      @scala.inline
-      def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setRootVisible(value: Boolean): Self = StObject.set(x, "rootVisible", value.asInstanceOf[js.Any])
+      inline def setRootVisible(value: Boolean): Self = StObject.set(x, "rootVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
+      inline def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
       
-      @scala.inline
-      def setSelectPath(
+      inline def setSelectPath(
         value: (/* path */ js.UndefOr[java.lang.String], /* field */ js.UndefOr[java.lang.String], /* separator */ js.UndefOr[java.lang.String], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "selectPath", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setSelectPathUndefined: Self = StObject.set(x, "selectPath", js.undefined)
+      inline def setSelectPathUndefined: Self = StObject.set(x, "selectPath", js.undefined)
       
-      @scala.inline
-      def setSetRootNode(value: /* root */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
+      inline def setSetRootNode(value: /* root */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
+      inline def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
       
-      @scala.inline
-      def setSingleExpand(value: Boolean): Self = StObject.set(x, "singleExpand", value.asInstanceOf[js.Any])
+      inline def setSingleExpand(value: Boolean): Self = StObject.set(x, "singleExpand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleExpandUndefined: Self = StObject.set(x, "singleExpand", js.undefined)
+      inline def setSingleExpandUndefined: Self = StObject.set(x, "singleExpand", js.undefined)
       
-      @scala.inline
-      def setStore(value: ITreeStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: ITreeStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setUseArrows(value: Boolean): Self = StObject.set(x, "useArrows", value.asInstanceOf[js.Any])
+      inline def setUseArrows(value: Boolean): Self = StObject.set(x, "useArrows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseArrowsUndefined: Self = StObject.set(x, "useArrows", js.undefined)
+      inline def setUseArrowsUndefined: Self = StObject.set(x, "useArrows", js.undefined)
     }
   }
   
@@ -633,86 +556,62 @@ object tree {
   }
   object IView {
     
-    @scala.inline
-    def apply(): IView = {
+    inline def apply(): IView = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IView]
     }
     
-    @scala.inline
-    implicit class IViewMutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
+    extension [Self <: IView](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setCollapse(
+      inline def setCollapse(
         value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "collapse", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+      inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
       
-      @scala.inline
-      def setExpand(
+      inline def setExpand(
         value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "expand", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setGetStoreListeners(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
+      inline def setGetStoreListeners(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
+      inline def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
       
-      @scala.inline
-      def setGetTreeStore(value: () => Unit): Self = StObject.set(x, "getTreeStore", js.Any.fromFunction0(value))
+      inline def setGetTreeStore(value: () => Unit): Self = StObject.set(x, "getTreeStore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTreeStoreUndefined: Self = StObject.set(x, "getTreeStore", js.undefined)
+      inline def setGetTreeStoreUndefined: Self = StObject.set(x, "getTreeStore", js.undefined)
       
-      @scala.inline
-      def setIsTreeView(value: Boolean): Self = StObject.set(x, "isTreeView", value.asInstanceOf[js.Any])
+      inline def setIsTreeView(value: Boolean): Self = StObject.set(x, "isTreeView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTreeViewUndefined: Self = StObject.set(x, "isTreeView", js.undefined)
+      inline def setIsTreeViewUndefined: Self = StObject.set(x, "isTreeView", js.undefined)
       
-      @scala.inline
-      def setLoadMask(value: Boolean): Self = StObject.set(x, "loadMask", value.asInstanceOf[js.Any])
+      inline def setLoadMask(value: Boolean): Self = StObject.set(x, "loadMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadMaskUndefined: Self = StObject.set(x, "loadMask", js.undefined)
+      inline def setLoadMaskUndefined: Self = StObject.set(x, "loadMask", js.undefined)
       
-      @scala.inline
-      def setOnBindStore(value: () => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction0(value))
+      inline def setOnBindStore(value: () => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
+      inline def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
       
-      @scala.inline
-      def setOnUnbindStore(value: () => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction0(value))
+      inline def setOnUnbindStore(value: () => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnbindStoreUndefined: Self = StObject.set(x, "onUnbindStore", js.undefined)
+      inline def setOnUnbindStoreUndefined: Self = StObject.set(x, "onUnbindStore", js.undefined)
       
-      @scala.inline
-      def setRootVisible(value: Boolean): Self = StObject.set(x, "rootVisible", value.asInstanceOf[js.Any])
+      inline def setRootVisible(value: Boolean): Self = StObject.set(x, "rootVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
+      inline def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
       
-      @scala.inline
-      def setToggle(
+      inline def setToggle(
         value: (/* record */ js.UndefOr[IModel], /* deep */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "toggle", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+      inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }
   }
   
@@ -757,52 +656,38 @@ object tree {
   }
   object IViewDropZone {
     
-    @scala.inline
-    def apply(): IViewDropZone = {
+    inline def apply(): IViewDropZone = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IViewDropZone]
     }
     
-    @scala.inline
-    implicit class IViewDropZoneMutableBuilder[Self <: IViewDropZone] (val x: Self) extends AnyVal {
+    extension [Self <: IViewDropZone](x: Self) {
       
-      @scala.inline
-      def setAllowContainerDrop(value: Boolean): Self = StObject.set(x, "allowContainerDrop", value.asInstanceOf[js.Any])
+      inline def setAllowContainerDrop(value: Boolean): Self = StObject.set(x, "allowContainerDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowContainerDropUndefined: Self = StObject.set(x, "allowContainerDrop", js.undefined)
+      inline def setAllowContainerDropUndefined: Self = StObject.set(x, "allowContainerDrop", js.undefined)
       
-      @scala.inline
-      def setAllowParentInserts(value: Boolean): Self = StObject.set(x, "allowParentInserts", value.asInstanceOf[js.Any])
+      inline def setAllowParentInserts(value: Boolean): Self = StObject.set(x, "allowParentInserts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowParentInsertsUndefined: Self = StObject.set(x, "allowParentInserts", js.undefined)
+      inline def setAllowParentInsertsUndefined: Self = StObject.set(x, "allowParentInserts", js.undefined)
       
-      @scala.inline
-      def setAppendOnly(value: Boolean): Self = StObject.set(x, "appendOnly", value.asInstanceOf[js.Any])
+      inline def setAppendOnly(value: Boolean): Self = StObject.set(x, "appendOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendOnlyUndefined: Self = StObject.set(x, "appendOnly", js.undefined)
+      inline def setAppendOnlyUndefined: Self = StObject.set(x, "appendOnly", js.undefined)
       
-      @scala.inline
-      def setExpandDelay(value: Double): Self = StObject.set(x, "expandDelay", value.asInstanceOf[js.Any])
+      inline def setExpandDelay(value: Double): Self = StObject.set(x, "expandDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandDelayUndefined: Self = StObject.set(x, "expandDelay", js.undefined)
+      inline def setExpandDelayUndefined: Self = StObject.set(x, "expandDelay", js.undefined)
       
-      @scala.inline
-      def setNotifyOut(value: () => Unit): Self = StObject.set(x, "notifyOut", js.Any.fromFunction0(value))
+      inline def setNotifyOut(value: () => Unit): Self = StObject.set(x, "notifyOut", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyOutUndefined: Self = StObject.set(x, "notifyOut", js.undefined)
+      inline def setNotifyOutUndefined: Self = StObject.set(x, "notifyOut", js.undefined)
       
-      @scala.inline
-      def setOnNodeOut(
+      inline def setOnNodeOut(
         value: (/* n */ js.UndefOr[js.Any], /* dd */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "onNodeOut", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnNodeOutUndefined: Self = StObject.set(x, "onNodeOut", js.undefined)
+      inline def setOnNodeOutUndefined: Self = StObject.set(x, "onNodeOut", js.undefined)
     }
   }
   
@@ -868,116 +753,80 @@ object tree {
     }
     object ITreeViewDragDrop {
       
-      @scala.inline
-      def apply(): ITreeViewDragDrop = {
+      inline def apply(): ITreeViewDragDrop = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ITreeViewDragDrop]
       }
       
-      @scala.inline
-      implicit class ITreeViewDragDropMutableBuilder[Self <: ITreeViewDragDrop] (val x: Self) extends AnyVal {
+      extension [Self <: ITreeViewDragDrop](x: Self) {
         
-        @scala.inline
-        def setAllowContainerDrops(value: Boolean): Self = StObject.set(x, "allowContainerDrops", value.asInstanceOf[js.Any])
+        inline def setAllowContainerDrops(value: Boolean): Self = StObject.set(x, "allowContainerDrops", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowContainerDropsUndefined: Self = StObject.set(x, "allowContainerDrops", js.undefined)
+        inline def setAllowContainerDropsUndefined: Self = StObject.set(x, "allowContainerDrops", js.undefined)
         
-        @scala.inline
-        def setAllowParentInserts(value: Boolean): Self = StObject.set(x, "allowParentInserts", value.asInstanceOf[js.Any])
+        inline def setAllowParentInserts(value: Boolean): Self = StObject.set(x, "allowParentInserts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowParentInsertsUndefined: Self = StObject.set(x, "allowParentInserts", js.undefined)
+        inline def setAllowParentInsertsUndefined: Self = StObject.set(x, "allowParentInserts", js.undefined)
         
-        @scala.inline
-        def setAppendOnly(value: Boolean): Self = StObject.set(x, "appendOnly", value.asInstanceOf[js.Any])
+        inline def setAppendOnly(value: Boolean): Self = StObject.set(x, "appendOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppendOnlyUndefined: Self = StObject.set(x, "appendOnly", js.undefined)
+        inline def setAppendOnlyUndefined: Self = StObject.set(x, "appendOnly", js.undefined)
         
-        @scala.inline
-        def setContainerScroll(value: js.Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
+        inline def setContainerScroll(value: js.Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainerScrollUndefined: Self = StObject.set(x, "containerScroll", js.undefined)
+        inline def setContainerScrollUndefined: Self = StObject.set(x, "containerScroll", js.undefined)
         
-        @scala.inline
-        def setDdGroup(value: java.lang.String): Self = StObject.set(x, "ddGroup", value.asInstanceOf[js.Any])
+        inline def setDdGroup(value: java.lang.String): Self = StObject.set(x, "ddGroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDdGroupUndefined: Self = StObject.set(x, "ddGroup", js.undefined)
+        inline def setDdGroupUndefined: Self = StObject.set(x, "ddGroup", js.undefined)
         
-        @scala.inline
-        def setDisplayField(value: java.lang.String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+        inline def setDisplayField(value: java.lang.String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
+        inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
         
-        @scala.inline
-        def setDragGroup(value: java.lang.String): Self = StObject.set(x, "dragGroup", value.asInstanceOf[js.Any])
+        inline def setDragGroup(value: java.lang.String): Self = StObject.set(x, "dragGroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDragGroupUndefined: Self = StObject.set(x, "dragGroup", js.undefined)
+        inline def setDragGroupUndefined: Self = StObject.set(x, "dragGroup", js.undefined)
         
-        @scala.inline
-        def setDragText(value: java.lang.String): Self = StObject.set(x, "dragText", value.asInstanceOf[js.Any])
+        inline def setDragText(value: java.lang.String): Self = StObject.set(x, "dragText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDragTextUndefined: Self = StObject.set(x, "dragText", js.undefined)
+        inline def setDragTextUndefined: Self = StObject.set(x, "dragText", js.undefined)
         
-        @scala.inline
-        def setDropGroup(value: java.lang.String): Self = StObject.set(x, "dropGroup", value.asInstanceOf[js.Any])
+        inline def setDropGroup(value: java.lang.String): Self = StObject.set(x, "dropGroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDropGroupUndefined: Self = StObject.set(x, "dropGroup", js.undefined)
+        inline def setDropGroupUndefined: Self = StObject.set(x, "dropGroup", js.undefined)
         
-        @scala.inline
-        def setEnableDrag(value: Boolean): Self = StObject.set(x, "enableDrag", value.asInstanceOf[js.Any])
+        inline def setEnableDrag(value: Boolean): Self = StObject.set(x, "enableDrag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableDragUndefined: Self = StObject.set(x, "enableDrag", js.undefined)
+        inline def setEnableDragUndefined: Self = StObject.set(x, "enableDrag", js.undefined)
         
-        @scala.inline
-        def setEnableDrop(value: Boolean): Self = StObject.set(x, "enableDrop", value.asInstanceOf[js.Any])
+        inline def setEnableDrop(value: Boolean): Self = StObject.set(x, "enableDrop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableDropUndefined: Self = StObject.set(x, "enableDrop", js.undefined)
+        inline def setEnableDropUndefined: Self = StObject.set(x, "enableDrop", js.undefined)
         
-        @scala.inline
-        def setExpandDelay(value: Double): Self = StObject.set(x, "expandDelay", value.asInstanceOf[js.Any])
+        inline def setExpandDelay(value: Double): Self = StObject.set(x, "expandDelay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpandDelayUndefined: Self = StObject.set(x, "expandDelay", js.undefined)
+        inline def setExpandDelayUndefined: Self = StObject.set(x, "expandDelay", js.undefined)
         
-        @scala.inline
-        def setInit(value: /* view */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+        inline def setInit(value: /* view */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+        inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
         
-        @scala.inline
-        def setNodeHighlightColor(value: java.lang.String): Self = StObject.set(x, "nodeHighlightColor", value.asInstanceOf[js.Any])
+        inline def setNodeHighlightColor(value: java.lang.String): Self = StObject.set(x, "nodeHighlightColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNodeHighlightColorUndefined: Self = StObject.set(x, "nodeHighlightColor", js.undefined)
+        inline def setNodeHighlightColorUndefined: Self = StObject.set(x, "nodeHighlightColor", js.undefined)
         
-        @scala.inline
-        def setNodeHighlightOnDrop(value: Boolean): Self = StObject.set(x, "nodeHighlightOnDrop", value.asInstanceOf[js.Any])
+        inline def setNodeHighlightOnDrop(value: Boolean): Self = StObject.set(x, "nodeHighlightOnDrop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNodeHighlightOnDropUndefined: Self = StObject.set(x, "nodeHighlightOnDrop", js.undefined)
+        inline def setNodeHighlightOnDropUndefined: Self = StObject.set(x, "nodeHighlightOnDrop", js.undefined)
         
-        @scala.inline
-        def setNodeHighlightOnRepair(value: Boolean): Self = StObject.set(x, "nodeHighlightOnRepair", value.asInstanceOf[js.Any])
+        inline def setNodeHighlightOnRepair(value: Boolean): Self = StObject.set(x, "nodeHighlightOnRepair", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNodeHighlightOnRepairUndefined: Self = StObject.set(x, "nodeHighlightOnRepair", js.undefined)
+        inline def setNodeHighlightOnRepairUndefined: Self = StObject.set(x, "nodeHighlightOnRepair", js.undefined)
         
-        @scala.inline
-        def setSortOnDrop(value: Boolean): Self = StObject.set(x, "sortOnDrop", value.asInstanceOf[js.Any])
+        inline def setSortOnDrop(value: Boolean): Self = StObject.set(x, "sortOnDrop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSortOnDropUndefined: Self = StObject.set(x, "sortOnDrop", js.undefined)
+        inline def setSortOnDropUndefined: Self = StObject.set(x, "sortOnDrop", js.undefined)
       }
     }
   }

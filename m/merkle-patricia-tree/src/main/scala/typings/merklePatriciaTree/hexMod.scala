@@ -11,12 +11,9 @@ object hexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addHexPrefix(key: Nibbles, terminator: Boolean): Nibbles = (^.asInstanceOf[js.Dynamic].applyDynamic("addHexPrefix")(key.asInstanceOf[js.Any], terminator.asInstanceOf[js.Any])).asInstanceOf[Nibbles]
+  inline def addHexPrefix(key: Nibbles, terminator: Boolean): Nibbles = (^.asInstanceOf[js.Dynamic].applyDynamic("addHexPrefix")(key.asInstanceOf[js.Any], terminator.asInstanceOf[js.Any])).asInstanceOf[Nibbles]
   
-  @scala.inline
-  def isTerminator(key: Nibbles): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTerminator")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTerminator(key: Nibbles): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTerminator")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def removeHexPrefix(`val`: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHexPrefix")(`val`.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
+  inline def removeHexPrefix(`val`: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHexPrefix")(`val`.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
 }

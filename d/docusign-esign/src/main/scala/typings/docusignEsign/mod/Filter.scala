@@ -85,79 +85,55 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(): Filter = {
+  inline def apply(): Filter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setActionRequired(value: String): Self = StObject.set(x, "actionRequired", value.asInstanceOf[js.Any])
+    inline def setActionRequired(value: String): Self = StObject.set(x, "actionRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionRequiredUndefined: Self = StObject.set(x, "actionRequired", js.undefined)
+    inline def setActionRequiredUndefined: Self = StObject.set(x, "actionRequired", js.undefined)
     
-    @scala.inline
-    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
-    @scala.inline
-    def setFolderIds(value: String): Self = StObject.set(x, "folderIds", value.asInstanceOf[js.Any])
+    inline def setFolderIds(value: String): Self = StObject.set(x, "folderIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderIdsUndefined: Self = StObject.set(x, "folderIds", js.undefined)
+    inline def setFolderIdsUndefined: Self = StObject.set(x, "folderIds", js.undefined)
     
-    @scala.inline
-    def setFromDateTime(value: String): Self = StObject.set(x, "fromDateTime", value.asInstanceOf[js.Any])
+    inline def setFromDateTime(value: String): Self = StObject.set(x, "fromDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromDateTimeUndefined: Self = StObject.set(x, "fromDateTime", js.undefined)
+    inline def setFromDateTimeUndefined: Self = StObject.set(x, "fromDateTime", js.undefined)
     
-    @scala.inline
-    def setIsTemplate(value: String): Self = StObject.set(x, "isTemplate", value.asInstanceOf[js.Any])
+    inline def setIsTemplate(value: String): Self = StObject.set(x, "isTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTemplateUndefined: Self = StObject.set(x, "isTemplate", js.undefined)
+    inline def setIsTemplateUndefined: Self = StObject.set(x, "isTemplate", js.undefined)
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setSearchTarget(value: String): Self = StObject.set(x, "searchTarget", value.asInstanceOf[js.Any])
+    inline def setSearchTarget(value: String): Self = StObject.set(x, "searchTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTargetUndefined: Self = StObject.set(x, "searchTarget", js.undefined)
+    inline def setSearchTargetUndefined: Self = StObject.set(x, "searchTarget", js.undefined)
     
-    @scala.inline
-    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+    inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
+    inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setToDateTime(value: String): Self = StObject.set(x, "toDateTime", value.asInstanceOf[js.Any])
+    inline def setToDateTime(value: String): Self = StObject.set(x, "toDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDateTimeUndefined: Self = StObject.set(x, "toDateTime", js.undefined)
+    inline def setToDateTimeUndefined: Self = StObject.set(x, "toDateTime", js.undefined)
   }
 }

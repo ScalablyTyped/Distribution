@@ -18,19 +18,19 @@ object msiTargetMod {
   @js.native
   trait MsiTarget extends Target {
     
-    var computeFileDeclaration: js.Any = js.native
+    /* private */ var computeFileDeclaration: js.Any = js.native
     
-    var getCommonWixArgs: js.Any = js.native
+    /* private */ var getCommonWixArgs: js.Any = js.native
     
-    var light: js.Any = js.native
+    /* private */ var light: js.Any = js.native
     
     @JSName("options")
     val options_MsiTarget: MsiOptions = js.native
     
-    val packager: js.Any = js.native
+    /* private */ val packager: js.Any = js.native
     
-    val vm: js.Any = js.native
+    /* private */ val vm: js.Any = js.native
     
-    var writeManifest: js.Any = js.native
+    /* private */ var writeManifest: js.Any = js.native
   }
 }

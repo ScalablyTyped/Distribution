@@ -23,6 +23,5 @@ class Uint8ClampedArray protected ()
 }
 object Uint8ClampedArray {
   
-  @scala.inline
-  def apply: Uint8ClampedArrayConstructor = js.Dynamic.global.selectDynamic("Uint8ClampedArray").asInstanceOf[Uint8ClampedArrayConstructor]
+  inline def apply: Uint8ClampedArrayConstructor = js.Dynamic.global.selectDynamic("Uint8ClampedArray").asInstanceOf[Uint8ClampedArrayConstructor]
 }

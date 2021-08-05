@@ -12,22 +12,17 @@ trait TestToWorkItemLinks extends StObject {
 }
 object TestToWorkItemLinks {
   
-  @scala.inline
-  def apply(test: TestMethod, workItems: js.Array[WorkItemReference]): TestToWorkItemLinks = {
+  inline def apply(test: TestMethod, workItems: js.Array[WorkItemReference]): TestToWorkItemLinks = {
     val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any], workItems = workItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestToWorkItemLinks]
   }
   
-  @scala.inline
-  implicit class TestToWorkItemLinksMutableBuilder[Self <: TestToWorkItemLinks] (val x: Self) extends AnyVal {
+  extension [Self <: TestToWorkItemLinks](x: Self) {
     
-    @scala.inline
-    def setTest(value: TestMethod): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: TestMethod): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItems(value: js.Array[WorkItemReference]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
+    inline def setWorkItems(value: js.Array[WorkItemReference]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemsVarargs(value: WorkItemReference*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: WorkItemReference*): Self = StObject.set(x, "workItems", js.Array(value :_*))
   }
 }

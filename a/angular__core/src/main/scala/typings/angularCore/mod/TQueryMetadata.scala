@@ -19,8 +19,7 @@ trait TQueryMetadata extends StObject {
 }
 object TQueryMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     descendants: Boolean,
     isStatic: Boolean,
     predicate: Type[js.Any] | InjectionToken[js.Any] | js.Array[String],
@@ -30,22 +29,16 @@ object TQueryMetadata {
     __obj.asInstanceOf[TQueryMetadata]
   }
   
-  @scala.inline
-  implicit class TQueryMetadataMutableBuilder[Self <: TQueryMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: TQueryMetadata](x: Self) {
     
-    @scala.inline
-    def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
+    inline def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+    inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicate(value: Type[js.Any] | InjectionToken[js.Any] | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+    inline def setPredicate(value: Type[js.Any] | InjectionToken[js.Any] | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicateVarargs(value: String*): Self = StObject.set(x, "predicate", js.Array(value :_*))
+    inline def setPredicateVarargs(value: String*): Self = StObject.set(x, "predicate", js.Array(value :_*))
     
-    @scala.inline
-    def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
   }
 }

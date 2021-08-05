@@ -13,13 +13,11 @@ object simplePrefsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def on(prefName: String, listener: js.Function1[/* prefName */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(prefName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(prefName: String, listener: js.Function1[/* prefName */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(prefName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sdk/simple-prefs", "prefs")
   @js.native
   val prefs: js.Object = js.native
   
-  @scala.inline
-  def removeListener(prefName: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(prefName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeListener(prefName: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(prefName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -42,30 +42,23 @@ object mod {
   }
   object ReactGitHubButtonProps {
     
-    @scala.inline
-    def apply(namespace: String, repo: String, `type`: stargazers | watchers | forks): ReactGitHubButtonProps = {
+    inline def apply(namespace: String, repo: String, `type`: stargazers | watchers | forks): ReactGitHubButtonProps = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactGitHubButtonProps]
     }
     
-    @scala.inline
-    implicit class ReactGitHubButtonPropsMutableBuilder[Self <: ReactGitHubButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactGitHubButtonProps](x: Self) {
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: stargazers | watchers | forks): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: stargazers | watchers | forks): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

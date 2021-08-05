@@ -23,20 +23,16 @@ object typesCampaignStateMod {
   }
   object CampaignState {
     
-    @scala.inline
-    def apply(): CampaignState = {
+    inline def apply(): CampaignState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CampaignState]
     }
     
-    @scala.inline
-    implicit class CampaignStateMutableBuilder[Self <: CampaignState] (val x: Self) extends AnyVal {
+    extension [Self <: CampaignState](x: Self) {
       
-      @scala.inline
-      def setCampaignStatus(value: SCHEDULED | EXECUTING | PENDING_NEXT_RUN | COMPLETED | PAUSED | DELETED | String): Self = StObject.set(x, "CampaignStatus", value.asInstanceOf[js.Any])
+      inline def setCampaignStatus(value: SCHEDULED | EXECUTING | PENDING_NEXT_RUN | COMPLETED | PAUSED | DELETED | String): Self = StObject.set(x, "CampaignStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignStatusUndefined: Self = StObject.set(x, "CampaignStatus", js.undefined)
+      inline def setCampaignStatusUndefined: Self = StObject.set(x, "CampaignStatus", js.undefined)
     }
   }
   

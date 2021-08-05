@@ -45,79 +45,55 @@ trait Player extends StObject {
 }
 object Player {
   
-  @scala.inline
-  def apply(): Player = {
+  inline def apply(): Player = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Player]
   }
   
-  @scala.inline
-  implicit class PlayerMutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
+  extension [Self <: Player](x: Self) {
     
-    @scala.inline
-    def setAvatarImageUrl(value: String): Self = StObject.set(x, "avatarImageUrl", value.asInstanceOf[js.Any])
+    inline def setAvatarImageUrl(value: String): Self = StObject.set(x, "avatarImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarImageUrlUndefined: Self = StObject.set(x, "avatarImageUrl", js.undefined)
+    inline def setAvatarImageUrlUndefined: Self = StObject.set(x, "avatarImageUrl", js.undefined)
     
-    @scala.inline
-    def setBannerUrlLandscape(value: String): Self = StObject.set(x, "bannerUrlLandscape", value.asInstanceOf[js.Any])
+    inline def setBannerUrlLandscape(value: String): Self = StObject.set(x, "bannerUrlLandscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerUrlLandscapeUndefined: Self = StObject.set(x, "bannerUrlLandscape", js.undefined)
+    inline def setBannerUrlLandscapeUndefined: Self = StObject.set(x, "bannerUrlLandscape", js.undefined)
     
-    @scala.inline
-    def setBannerUrlPortrait(value: String): Self = StObject.set(x, "bannerUrlPortrait", value.asInstanceOf[js.Any])
+    inline def setBannerUrlPortrait(value: String): Self = StObject.set(x, "bannerUrlPortrait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerUrlPortraitUndefined: Self = StObject.set(x, "bannerUrlPortrait", js.undefined)
+    inline def setBannerUrlPortraitUndefined: Self = StObject.set(x, "bannerUrlPortrait", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setExperienceInfo(value: GamesPlayerExperienceInfoResource): Self = StObject.set(x, "experienceInfo", value.asInstanceOf[js.Any])
+    inline def setExperienceInfo(value: GamesPlayerExperienceInfoResource): Self = StObject.set(x, "experienceInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperienceInfoUndefined: Self = StObject.set(x, "experienceInfo", js.undefined)
+    inline def setExperienceInfoUndefined: Self = StObject.set(x, "experienceInfo", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOriginalPlayerId(value: String): Self = StObject.set(x, "originalPlayerId", value.asInstanceOf[js.Any])
+    inline def setOriginalPlayerId(value: String): Self = StObject.set(x, "originalPlayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPlayerIdUndefined: Self = StObject.set(x, "originalPlayerId", js.undefined)
+    inline def setOriginalPlayerIdUndefined: Self = StObject.set(x, "originalPlayerId", js.undefined)
     
-    @scala.inline
-    def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: String): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
+    inline def setPlayerIdUndefined: Self = StObject.set(x, "playerId", js.undefined)
     
-    @scala.inline
-    def setProfileSettings(value: ProfileSettings): Self = StObject.set(x, "profileSettings", value.asInstanceOf[js.Any])
+    inline def setProfileSettings(value: ProfileSettings): Self = StObject.set(x, "profileSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileSettingsUndefined: Self = StObject.set(x, "profileSettings", js.undefined)
+    inline def setProfileSettingsUndefined: Self = StObject.set(x, "profileSettings", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

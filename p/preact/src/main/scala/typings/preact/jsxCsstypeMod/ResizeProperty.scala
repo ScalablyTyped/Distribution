@@ -20,36 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResizeProperty extends StObject
 object ResizeProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def block: typings.preact.preactStrings.block = "block".asInstanceOf[typings.preact.preactStrings.block]
+  inline def block: typings.preact.preactStrings.block = "block".asInstanceOf[typings.preact.preactStrings.block]
   
-  @scala.inline
-  def both: typings.preact.preactStrings.both = "both".asInstanceOf[typings.preact.preactStrings.both]
+  inline def both: typings.preact.preactStrings.both = "both".asInstanceOf[typings.preact.preactStrings.both]
   
-  @scala.inline
-  def horizontal: typings.preact.preactStrings.horizontal = "horizontal".asInstanceOf[typings.preact.preactStrings.horizontal]
+  inline def horizontal: typings.preact.preactStrings.horizontal = "horizontal".asInstanceOf[typings.preact.preactStrings.horizontal]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def `inline`: typings.preact.preactStrings.`inline` = "inline".asInstanceOf[typings.preact.preactStrings.`inline`]
+  inline def `inline`: typings.preact.preactStrings.`inline` = "inline".asInstanceOf[typings.preact.preactStrings.`inline`]
   
-  @scala.inline
-  def none: typings.preact.preactStrings.none = "none".asInstanceOf[typings.preact.preactStrings.none]
+  inline def none: typings.preact.preactStrings.none = "none".asInstanceOf[typings.preact.preactStrings.none]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
   
-  @scala.inline
-  def vertical: typings.preact.preactStrings.vertical = "vertical".asInstanceOf[typings.preact.preactStrings.vertical]
+  inline def vertical: typings.preact.preactStrings.vertical = "vertical".asInstanceOf[typings.preact.preactStrings.vertical]
 }

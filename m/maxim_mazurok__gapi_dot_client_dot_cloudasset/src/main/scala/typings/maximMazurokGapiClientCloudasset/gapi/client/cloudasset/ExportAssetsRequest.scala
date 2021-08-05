@@ -29,40 +29,29 @@ trait ExportAssetsRequest extends StObject {
 }
 object ExportAssetsRequest {
   
-  @scala.inline
-  def apply(): ExportAssetsRequest = {
+  inline def apply(): ExportAssetsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportAssetsRequest]
   }
   
-  @scala.inline
-  implicit class ExportAssetsRequestMutableBuilder[Self <: ExportAssetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportAssetsRequest](x: Self) {
     
-    @scala.inline
-    def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
+    inline def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTypesUndefined: Self = StObject.set(x, "assetTypes", js.undefined)
+    inline def setAssetTypesUndefined: Self = StObject.set(x, "assetTypes", js.undefined)
     
-    @scala.inline
-    def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
+    inline def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
+    inline def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
+    inline def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
   }
 }

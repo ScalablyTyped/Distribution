@@ -27,26 +27,20 @@ object mod {
   }
   object ReactSvgPanZoomLoaderProps {
     
-    @scala.inline
-    def apply(render: ReactNode => ReactNode, src: String): ReactSvgPanZoomLoaderProps = {
+    inline def apply(render: ReactNode => ReactNode, src: String): ReactSvgPanZoomLoaderProps = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render), src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactSvgPanZoomLoaderProps]
     }
     
-    @scala.inline
-    implicit class ReactSvgPanZoomLoaderPropsMutableBuilder[Self <: ReactSvgPanZoomLoaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactSvgPanZoomLoaderProps](x: Self) {
       
-      @scala.inline
-      def setProxy(value: ReactNode): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: ReactNode): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setRender(value: ReactNode => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: ReactNode => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,23 +54,18 @@ object mod {
   }
   object SvgLoaderSelectElementProps {
     
-    @scala.inline
-    def apply(selector: String): SvgLoaderSelectElementProps = {
+    inline def apply(selector: String): SvgLoaderSelectElementProps = {
       val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[SvgLoaderSelectElementProps]
     }
     
-    @scala.inline
-    implicit class SvgLoaderSelectElementPropsMutableBuilder[Self <: SvgLoaderSelectElementProps] (val x: Self) extends AnyVal {
+    extension [Self <: SvgLoaderSelectElementProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     }
   }
 }

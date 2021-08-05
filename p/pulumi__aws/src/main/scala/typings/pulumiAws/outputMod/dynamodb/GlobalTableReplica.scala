@@ -13,16 +13,13 @@ trait GlobalTableReplica extends StObject {
 }
 object GlobalTableReplica {
   
-  @scala.inline
-  def apply(regionName: String): GlobalTableReplica = {
+  inline def apply(regionName: String): GlobalTableReplica = {
     val __obj = js.Dynamic.literal(regionName = regionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalTableReplica]
   }
   
-  @scala.inline
-  implicit class GlobalTableReplicaMutableBuilder[Self <: GlobalTableReplica] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalTableReplica](x: Self) {
     
-    @scala.inline
-    def setRegionName(value: String): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: String): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
   }
 }

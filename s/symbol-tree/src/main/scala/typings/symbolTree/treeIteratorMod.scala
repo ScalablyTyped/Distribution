@@ -74,20 +74,15 @@ object treeIteratorMod {
   trait IterateFunction extends StObject
   object IterateFunction {
     
-    @scala.inline
-    def `1`: typings.symbolTree.symbolTreeNumbers.`1` = 1.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`1`]
+    inline def `1`: typings.symbolTree.symbolTreeNumbers.`1` = 1.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.symbolTree.symbolTreeNumbers.`2` = 2.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`2`]
+    inline def `2`: typings.symbolTree.symbolTreeNumbers.`2` = 2.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.symbolTree.symbolTreeNumbers.`3` = 3.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`3`]
+    inline def `3`: typings.symbolTree.symbolTreeNumbers.`3` = 3.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`3`]
     
-    @scala.inline
-    def `4`: typings.symbolTree.symbolTreeNumbers.`4` = 4.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`4`]
+    inline def `4`: typings.symbolTree.symbolTreeNumbers.`4` = 4.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`4`]
     
-    @scala.inline
-    def `5`: typings.symbolTree.symbolTreeNumbers.`5` = 5.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`5`]
+    inline def `5`: typings.symbolTree.symbolTreeNumbers.`5` = 5.asInstanceOf[typings.symbolTree.symbolTreeNumbers.`5`]
   }
   
   @js.native
@@ -109,20 +104,16 @@ object treeIteratorMod {
   }
   object TreeIteratorResult {
     
-    @scala.inline
-    def apply[T](done: Boolean, value: T): TreeIteratorResult[T] = {
+    inline def apply[T](done: Boolean, value: T): TreeIteratorResult[T] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeIteratorResult[T]]
     }
     
-    @scala.inline
-    implicit class TreeIteratorResultMutableBuilder[Self <: TreeIteratorResult[?], T] (val x: Self & TreeIteratorResult[T]) extends AnyVal {
+    extension [Self <: TreeIteratorResult[?], T](x: Self & TreeIteratorResult[T]) {
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

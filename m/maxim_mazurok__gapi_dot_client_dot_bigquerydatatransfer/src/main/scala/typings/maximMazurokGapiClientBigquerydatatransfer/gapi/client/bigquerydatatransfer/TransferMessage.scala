@@ -17,31 +17,23 @@ trait TransferMessage extends StObject {
 }
 object TransferMessage {
   
-  @scala.inline
-  def apply(): TransferMessage = {
+  inline def apply(): TransferMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferMessage]
   }
   
-  @scala.inline
-  implicit class TransferMessageMutableBuilder[Self <: TransferMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TransferMessage](x: Self) {
     
-    @scala.inline
-    def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+    inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
+    inline def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
     
-    @scala.inline
-    def setMessageTime(value: String): Self = StObject.set(x, "messageTime", value.asInstanceOf[js.Any])
+    inline def setMessageTime(value: String): Self = StObject.set(x, "messageTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTimeUndefined: Self = StObject.set(x, "messageTime", js.undefined)
+    inline def setMessageTimeUndefined: Self = StObject.set(x, "messageTime", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
   }
 }

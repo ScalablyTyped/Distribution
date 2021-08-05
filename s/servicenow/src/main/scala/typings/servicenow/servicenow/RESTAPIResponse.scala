@@ -24,8 +24,7 @@ trait RESTAPIResponse extends StObject {
 }
 object RESTAPIResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getStreamWriter: () => RESTAPIResponseStream,
     setBody: js.Any => Unit,
     setContentType: String => Unit,
@@ -39,31 +38,22 @@ object RESTAPIResponse {
     __obj.asInstanceOf[RESTAPIResponse]
   }
   
-  @scala.inline
-  implicit class RESTAPIResponseMutableBuilder[Self <: RESTAPIResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RESTAPIResponse](x: Self) {
     
-    @scala.inline
-    def setGetStreamWriter(value: () => RESTAPIResponseStream): Self = StObject.set(x, "getStreamWriter", js.Any.fromFunction0(value))
+    inline def setGetStreamWriter(value: () => RESTAPIResponseStream): Self = StObject.set(x, "getStreamWriter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBody(value: js.Any => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
+    inline def setSetBody(value: js.Any => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
+    inline def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetError(value: js.Any => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+    inline def setSetError(value: js.Any => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
+    inline def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetHeaders(value: js.Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+    inline def setSetHeaders(value: js.Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocation(value: String => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
+    inline def setSetLocation(value: String => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStatus(value: Double => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
+    inline def setSetStatus(value: Double => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
   }
 }

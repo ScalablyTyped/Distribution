@@ -39,8 +39,7 @@ object paginationNavMod {
     @JSImport("carbon-components/components/pagination-nav/pagination-nav", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -58,8 +57,7 @@ object paginationNavMod {
   }
   object PaginationNav {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearActivePage: js.Any => Unit,
       getActivePageNumber: () => js.UndefOr[Double],
       handleClick: js.Any => Unit,
@@ -70,23 +68,17 @@ object paginationNavMod {
       __obj.asInstanceOf[PaginationNav]
     }
     
-    @scala.inline
-    implicit class PaginationNavMutableBuilder[Self <: PaginationNav] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationNav](x: Self) {
       
-      @scala.inline
-      def setClearActivePage(value: js.Any => Unit): Self = StObject.set(x, "clearActivePage", js.Any.fromFunction1(value))
+      inline def setClearActivePage(value: js.Any => Unit): Self = StObject.set(x, "clearActivePage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetActivePageNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getActivePageNumber", js.Any.fromFunction0(value))
+      inline def setGetActivePageNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getActivePageNumber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandleClick(value: js.Any => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction1(value))
+      inline def setHandleClick(value: js.Any => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleSelectChange(value: js.Any => Unit): Self = StObject.set(x, "handleSelectChange", js.Any.fromFunction1(value))
+      inline def setHandleSelectChange(value: js.Any => Unit): Self = StObject.set(x, "handleSelectChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPrevNextStates(value: () => Unit): Self = StObject.set(x, "setPrevNextStates", js.Any.fromFunction0(value))
+      inline def setSetPrevNextStates(value: () => Unit): Self = StObject.set(x, "setPrevNextStates", js.Any.fromFunction0(value))
     }
   }
 }

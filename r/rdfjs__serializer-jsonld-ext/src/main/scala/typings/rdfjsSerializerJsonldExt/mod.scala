@@ -61,59 +61,42 @@ object mod {
   }
   object SerializerOptions {
     
-    @scala.inline
-    def apply(): SerializerOptions = {
+    inline def apply(): SerializerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SerializerOptions]
     }
     
-    @scala.inline
-    implicit class SerializerOptionsMutableBuilder[Self <: SerializerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SerializerOptions](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setContextVarargs(value: JsonLdObj*): Self = StObject.set(x, "context", js.Array(value :_*))
+      inline def setContextVarargs(value: JsonLdObj*): Self = StObject.set(x, "context", js.Array(value :_*))
       
-      @scala.inline
-      def setEncoding(value: string | `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: string | `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+      inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
+      inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
       
-      @scala.inline
-      def setFrame(value: Boolean): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: Boolean): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+      inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      @scala.inline
-      def setSkipContext(value: Boolean): Self = StObject.set(x, "skipContext", value.asInstanceOf[js.Any])
+      inline def setSkipContext(value: Boolean): Self = StObject.set(x, "skipContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipContextUndefined: Self = StObject.set(x, "skipContext", js.undefined)
+      inline def setSkipContextUndefined: Self = StObject.set(x, "skipContext", js.undefined)
       
-      @scala.inline
-      def setSkipGraphProperty(value: Boolean): Self = StObject.set(x, "skipGraphProperty", value.asInstanceOf[js.Any])
+      inline def setSkipGraphProperty(value: Boolean): Self = StObject.set(x, "skipGraphProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipGraphPropertyUndefined: Self = StObject.set(x, "skipGraphProperty", js.undefined)
+      inline def setSkipGraphPropertyUndefined: Self = StObject.set(x, "skipGraphProperty", js.undefined)
     }
   }
 }

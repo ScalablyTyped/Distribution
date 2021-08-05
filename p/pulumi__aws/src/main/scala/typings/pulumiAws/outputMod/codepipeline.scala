@@ -31,30 +31,23 @@ object codepipeline {
   }
   object PipelineArtifactStore {
     
-    @scala.inline
-    def apply(location: String, region: String, `type`: String): PipelineArtifactStore = {
+    inline def apply(location: String, region: String, `type`: String): PipelineArtifactStore = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PipelineArtifactStore]
     }
     
-    @scala.inline
-    implicit class PipelineArtifactStoreMutableBuilder[Self <: PipelineArtifactStore] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineArtifactStore](x: Self) {
       
-      @scala.inline
-      def setEncryptionKey(value: PipelineArtifactStoreEncryptionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+      inline def setEncryptionKey(value: PipelineArtifactStoreEncryptionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+      inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,21 +65,17 @@ object codepipeline {
   }
   object PipelineArtifactStoreEncryptionKey {
     
-    @scala.inline
-    def apply(id: String, `type`: String): PipelineArtifactStoreEncryptionKey = {
+    inline def apply(id: String, `type`: String): PipelineArtifactStoreEncryptionKey = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PipelineArtifactStoreEncryptionKey]
     }
     
-    @scala.inline
-    implicit class PipelineArtifactStoreEncryptionKeyMutableBuilder[Self <: PipelineArtifactStoreEncryptionKey] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineArtifactStoreEncryptionKey](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,23 +93,18 @@ object codepipeline {
   }
   object PipelineStage {
     
-    @scala.inline
-    def apply(actions: js.Array[PipelineStageAction], name: String): PipelineStage = {
+    inline def apply(actions: js.Array[PipelineStageAction], name: String): PipelineStage = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PipelineStage]
     }
     
-    @scala.inline
-    implicit class PipelineStageMutableBuilder[Self <: PipelineStage] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineStage](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[PipelineStageAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[PipelineStageAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: PipelineStageAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: PipelineStageAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,8 +172,7 @@ object codepipeline {
   }
   object PipelineStageAction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       category: String,
       name: String,
       owner: String,
@@ -202,65 +185,45 @@ object codepipeline {
       __obj.asInstanceOf[PipelineStageAction]
     }
     
-    @scala.inline
-    implicit class PipelineStageActionMutableBuilder[Self <: PipelineStageAction] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineStageAction](x: Self) {
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfiguration(value: StringDictionary[String]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: StringDictionary[String]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+      inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
       
-      @scala.inline
-      def setInputArtifacts(value: js.Array[String]): Self = StObject.set(x, "inputArtifacts", value.asInstanceOf[js.Any])
+      inline def setInputArtifacts(value: js.Array[String]): Self = StObject.set(x, "inputArtifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputArtifactsUndefined: Self = StObject.set(x, "inputArtifacts", js.undefined)
+      inline def setInputArtifactsUndefined: Self = StObject.set(x, "inputArtifacts", js.undefined)
       
-      @scala.inline
-      def setInputArtifactsVarargs(value: String*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
+      inline def setInputArtifactsVarargs(value: String*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setOutputArtifacts(value: js.Array[String]): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
+      inline def setOutputArtifacts(value: js.Array[String]): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputArtifactsUndefined: Self = StObject.set(x, "outputArtifacts", js.undefined)
+      inline def setOutputArtifactsUndefined: Self = StObject.set(x, "outputArtifacts", js.undefined)
       
-      @scala.inline
-      def setOutputArtifactsVarargs(value: String*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
+      inline def setOutputArtifactsVarargs(value: String*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setRunOrder(value: Double): Self = StObject.set(x, "runOrder", value.asInstanceOf[js.Any])
+      inline def setRunOrder(value: Double): Self = StObject.set(x, "runOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -278,26 +241,20 @@ object codepipeline {
   }
   object WebhookAuthenticationConfiguration {
     
-    @scala.inline
-    def apply(): WebhookAuthenticationConfiguration = {
+    inline def apply(): WebhookAuthenticationConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebhookAuthenticationConfiguration]
     }
     
-    @scala.inline
-    implicit class WebhookAuthenticationConfigurationMutableBuilder[Self <: WebhookAuthenticationConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookAuthenticationConfiguration](x: Self) {
       
-      @scala.inline
-      def setAllowedIpRange(value: String): Self = StObject.set(x, "allowedIpRange", value.asInstanceOf[js.Any])
+      inline def setAllowedIpRange(value: String): Self = StObject.set(x, "allowedIpRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedIpRangeUndefined: Self = StObject.set(x, "allowedIpRange", js.undefined)
+      inline def setAllowedIpRangeUndefined: Self = StObject.set(x, "allowedIpRange", js.undefined)
       
-      @scala.inline
-      def setSecretToken(value: String): Self = StObject.set(x, "secretToken", value.asInstanceOf[js.Any])
+      inline def setSecretToken(value: String): Self = StObject.set(x, "secretToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretTokenUndefined: Self = StObject.set(x, "secretToken", js.undefined)
+      inline def setSecretTokenUndefined: Self = StObject.set(x, "secretToken", js.undefined)
     }
   }
   
@@ -315,20 +272,16 @@ object codepipeline {
   }
   object WebhookFilter {
     
-    @scala.inline
-    def apply(jsonPath: String, matchEquals: String): WebhookFilter = {
+    inline def apply(jsonPath: String, matchEquals: String): WebhookFilter = {
       val __obj = js.Dynamic.literal(jsonPath = jsonPath.asInstanceOf[js.Any], matchEquals = matchEquals.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebhookFilter]
     }
     
-    @scala.inline
-    implicit class WebhookFilterMutableBuilder[Self <: WebhookFilter] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookFilter](x: Self) {
       
-      @scala.inline
-      def setJsonPath(value: String): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
+      inline def setJsonPath(value: String): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchEquals(value: String): Self = StObject.set(x, "matchEquals", value.asInstanceOf[js.Any])
+      inline def setMatchEquals(value: String): Self = StObject.set(x, "matchEquals", value.asInstanceOf[js.Any])
     }
   }
 }

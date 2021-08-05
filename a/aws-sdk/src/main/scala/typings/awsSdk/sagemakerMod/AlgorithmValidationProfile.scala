@@ -23,25 +23,19 @@ trait AlgorithmValidationProfile extends StObject {
 }
 object AlgorithmValidationProfile {
   
-  @scala.inline
-  def apply(ProfileName: EntityName, TrainingJobDefinition: TrainingJobDefinition): AlgorithmValidationProfile = {
+  inline def apply(ProfileName: EntityName, TrainingJobDefinition: TrainingJobDefinition): AlgorithmValidationProfile = {
     val __obj = js.Dynamic.literal(ProfileName = ProfileName.asInstanceOf[js.Any], TrainingJobDefinition = TrainingJobDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgorithmValidationProfile]
   }
   
-  @scala.inline
-  implicit class AlgorithmValidationProfileMutableBuilder[Self <: AlgorithmValidationProfile] (val x: Self) extends AnyVal {
+  extension [Self <: AlgorithmValidationProfile](x: Self) {
     
-    @scala.inline
-    def setProfileName(value: EntityName): Self = StObject.set(x, "ProfileName", value.asInstanceOf[js.Any])
+    inline def setProfileName(value: EntityName): Self = StObject.set(x, "ProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingJobDefinition(value: TrainingJobDefinition): Self = StObject.set(x, "TrainingJobDefinition", value.asInstanceOf[js.Any])
+    inline def setTrainingJobDefinition(value: TrainingJobDefinition): Self = StObject.set(x, "TrainingJobDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformJobDefinition(value: TransformJobDefinition): Self = StObject.set(x, "TransformJobDefinition", value.asInstanceOf[js.Any])
+    inline def setTransformJobDefinition(value: TransformJobDefinition): Self = StObject.set(x, "TransformJobDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformJobDefinitionUndefined: Self = StObject.set(x, "TransformJobDefinition", js.undefined)
+    inline def setTransformJobDefinitionUndefined: Self = StObject.set(x, "TransformJobDefinition", js.undefined)
   }
 }

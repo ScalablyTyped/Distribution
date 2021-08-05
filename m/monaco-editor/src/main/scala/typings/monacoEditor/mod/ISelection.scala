@@ -28,8 +28,7 @@ trait ISelection extends StObject {
 }
 object ISelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     positionColumn: Double,
     positionLineNumber: Double,
     selectionStartColumn: Double,
@@ -39,19 +38,14 @@ object ISelection {
     __obj.asInstanceOf[ISelection]
   }
   
-  @scala.inline
-  implicit class ISelectionMutableBuilder[Self <: ISelection] (val x: Self) extends AnyVal {
+  extension [Self <: ISelection](x: Self) {
     
-    @scala.inline
-    def setPositionColumn(value: Double): Self = StObject.set(x, "positionColumn", value.asInstanceOf[js.Any])
+    inline def setPositionColumn(value: Double): Self = StObject.set(x, "positionColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionLineNumber(value: Double): Self = StObject.set(x, "positionLineNumber", value.asInstanceOf[js.Any])
+    inline def setPositionLineNumber(value: Double): Self = StObject.set(x, "positionLineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionStartColumn(value: Double): Self = StObject.set(x, "selectionStartColumn", value.asInstanceOf[js.Any])
+    inline def setSelectionStartColumn(value: Double): Self = StObject.set(x, "selectionStartColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionStartLineNumber(value: Double): Self = StObject.set(x, "selectionStartLineNumber", value.asInstanceOf[js.Any])
+    inline def setSelectionStartLineNumber(value: Double): Self = StObject.set(x, "selectionStartLineNumber", value.asInstanceOf[js.Any])
   }
 }

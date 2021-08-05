@@ -18,25 +18,19 @@ trait CloudWatchLogsDestination extends StObject {
 }
 object CloudWatchLogsDestination {
   
-  @scala.inline
-  def apply(): CloudWatchLogsDestination = {
+  inline def apply(): CloudWatchLogsDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudWatchLogsDestination]
   }
   
-  @scala.inline
-  implicit class CloudWatchLogsDestinationMutableBuilder[Self <: CloudWatchLogsDestination] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchLogsDestination](x: Self) {
     
-    @scala.inline
-    def setIamRoleArn(value: String): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: String): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
+    inline def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
-    @scala.inline
-    def setLogGroupArn(value: String): Self = StObject.set(x, "LogGroupArn", value.asInstanceOf[js.Any])
+    inline def setLogGroupArn(value: String): Self = StObject.set(x, "LogGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupArnUndefined: Self = StObject.set(x, "LogGroupArn", js.undefined)
+    inline def setLogGroupArnUndefined: Self = StObject.set(x, "LogGroupArn", js.undefined)
   }
 }

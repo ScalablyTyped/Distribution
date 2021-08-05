@@ -11,16 +11,13 @@ trait PickImplglyphWidth extends StObject {
 }
 object PickImplglyphWidth {
   
-  @scala.inline
-  def apply(glyphWidth: Double): PickImplglyphWidth = {
+  inline def apply(glyphWidth: Double): PickImplglyphWidth = {
     val __obj = js.Dynamic.literal(glyphWidth = glyphWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplglyphWidth]
   }
   
-  @scala.inline
-  implicit class PickImplglyphWidthMutableBuilder[Self <: PickImplglyphWidth] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplglyphWidth](x: Self) {
     
-    @scala.inline
-    def setGlyphWidth(value: Double): Self = StObject.set(x, "glyphWidth", value.asInstanceOf[js.Any])
+    inline def setGlyphWidth(value: Double): Self = StObject.set(x, "glyphWidth", value.asInstanceOf[js.Any])
   }
 }

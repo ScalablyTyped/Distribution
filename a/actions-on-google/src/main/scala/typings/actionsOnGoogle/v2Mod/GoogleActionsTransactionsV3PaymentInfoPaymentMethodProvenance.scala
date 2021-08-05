@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsTransactionsV3PaymentInfoPaymentMethodProvenance extends StObject
 object GoogleActionsTransactionsV3PaymentInfoPaymentMethodProvenance {
   
-  @scala.inline
-  def PAYMENT_METHOD_PROVENANCE_GOOGLE: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_GOOGLE = "PAYMENT_METHOD_PROVENANCE_GOOGLE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_GOOGLE]
+  inline def PAYMENT_METHOD_PROVENANCE_GOOGLE: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_GOOGLE = "PAYMENT_METHOD_PROVENANCE_GOOGLE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_GOOGLE]
   
-  @scala.inline
-  def PAYMENT_METHOD_PROVENANCE_MERCHANT: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_MERCHANT = "PAYMENT_METHOD_PROVENANCE_MERCHANT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_MERCHANT]
+  inline def PAYMENT_METHOD_PROVENANCE_MERCHANT: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_MERCHANT = "PAYMENT_METHOD_PROVENANCE_MERCHANT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_MERCHANT]
   
-  @scala.inline
-  def PAYMENT_METHOD_PROVENANCE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_UNSPECIFIED = "PAYMENT_METHOD_PROVENANCE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_UNSPECIFIED]
+  inline def PAYMENT_METHOD_PROVENANCE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_UNSPECIFIED = "PAYMENT_METHOD_PROVENANCE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_METHOD_PROVENANCE_UNSPECIFIED]
 }

@@ -33,31 +33,23 @@ trait PageUpdateData extends StObject {
 }
 object PageUpdateData {
   
-  @scala.inline
-  def apply(): PageUpdateData = {
+  inline def apply(): PageUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageUpdateData]
   }
   
-  @scala.inline
-  implicit class PageUpdateDataMutableBuilder[Self <: PageUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: PageUpdateData](x: Self) {
     
-    @scala.inline
-    def setInkAnalysisOrNull(value: InkAnalysisUpdateData): Self = StObject.set(x, "inkAnalysisOrNull", value.asInstanceOf[js.Any])
+    inline def setInkAnalysisOrNull(value: InkAnalysisUpdateData): Self = StObject.set(x, "inkAnalysisOrNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInkAnalysisOrNullUndefined: Self = StObject.set(x, "inkAnalysisOrNull", js.undefined)
+    inline def setInkAnalysisOrNullUndefined: Self = StObject.set(x, "inkAnalysisOrNull", js.undefined)
     
-    @scala.inline
-    def setPageLevel(value: Double): Self = StObject.set(x, "pageLevel", value.asInstanceOf[js.Any])
+    inline def setPageLevel(value: Double): Self = StObject.set(x, "pageLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLevelUndefined: Self = StObject.set(x, "pageLevel", js.undefined)
+    inline def setPageLevelUndefined: Self = StObject.set(x, "pageLevel", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

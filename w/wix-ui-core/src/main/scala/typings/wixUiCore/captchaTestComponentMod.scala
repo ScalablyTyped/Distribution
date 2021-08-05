@@ -19,7 +19,7 @@ object captchaTestComponentMod {
       */
     def this(props: js.Object, context: js.Any) = this()
     
-    var captchaRef: js.Any = js.native
+    /* private */ var captchaRef: js.Any = js.native
     
     def getVerifiedToken(): js.Any = js.native
     

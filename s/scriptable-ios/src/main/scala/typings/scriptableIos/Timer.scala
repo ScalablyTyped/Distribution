@@ -47,8 +47,7 @@ trait Timer extends StObject {
 }
 object Timer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     invalidate: () => Unit,
     repeats: Boolean,
     schedule: js.Function0[Unit] => Unit,
@@ -58,19 +57,14 @@ object Timer {
     __obj.asInstanceOf[Timer]
   }
   
-  @scala.inline
-  implicit class TimerMutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
+  extension [Self <: Timer](x: Self) {
     
-    @scala.inline
-    def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
+    inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRepeats(value: Boolean): Self = StObject.set(x, "repeats", value.asInstanceOf[js.Any])
+    inline def setRepeats(value: Boolean): Self = StObject.set(x, "repeats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedule(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+    inline def setSchedule(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeInterval(value: Double): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
+    inline def setTimeInterval(value: Double): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
   }
 }

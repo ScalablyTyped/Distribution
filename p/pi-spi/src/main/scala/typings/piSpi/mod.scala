@@ -35,8 +35,7 @@ object mod {
     def write(writebuf: Buffer, cb: js.Function2[/* error */ Error, /* data */ Buffer, Unit]): Unit = js.native
   }
   
-  @scala.inline
-  def initialize(device: String): SPI = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(device.asInstanceOf[js.Any]).asInstanceOf[SPI]
+  inline def initialize(device: String): SPI = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(device.asInstanceOf[js.Any]).asInstanceOf[SPI]
   
   @js.native
   sealed trait mode extends StObject

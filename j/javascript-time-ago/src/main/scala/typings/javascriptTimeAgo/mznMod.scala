@@ -31,29 +31,22 @@ object mznMod extends Shortcut {
   }
   object Locale {
     
-    @scala.inline
-    def apply(long: Duration, narrow: Duration, quantify: Double => one | two | few | other, short: Duration): Locale = {
+    inline def apply(long: Duration, narrow: Duration, quantify: Double => one | two | few | other, short: Duration): Locale = {
       val __obj = js.Dynamic.literal(locale = "mzn", long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify), short = short.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setLocale(value: mzn): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: mzn): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong(value: Duration): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      inline def setLong(value: Duration): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNarrow(value: Duration): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+      inline def setNarrow(value: Duration): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantify(value: Double => one | two | few | other): Self = StObject.set(x, "quantify", js.Any.fromFunction1(value))
+      inline def setQuantify(value: Double => one | two | few | other): Self = StObject.set(x, "quantify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShort(value: Duration): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: Duration): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     }
   }
   

@@ -61,8 +61,7 @@ trait KmlNetworkLink
 }
 object KmlNetworkLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -120,28 +119,20 @@ object KmlNetworkLink {
     __obj.asInstanceOf[KmlNetworkLink]
   }
   
-  @scala.inline
-  implicit class KmlNetworkLinkMutableBuilder[Self <: KmlNetworkLink] (val x: Self) extends AnyVal {
+  extension [Self <: KmlNetworkLink](x: Self) {
     
-    @scala.inline
-    def setGetFlyToView(value: () => Boolean): Self = StObject.set(x, "getFlyToView", js.Any.fromFunction0(value))
+    inline def setGetFlyToView(value: () => Boolean): Self = StObject.set(x, "getFlyToView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLink(value: () => KmlLink): Self = StObject.set(x, "getLink", js.Any.fromFunction0(value))
+    inline def setGetLink(value: () => KmlLink): Self = StObject.set(x, "getLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRefreshVisibility(value: () => Boolean): Self = StObject.set(x, "getRefreshVisibility", js.Any.fromFunction0(value))
+    inline def setGetRefreshVisibility(value: () => Boolean): Self = StObject.set(x, "getRefreshVisibility", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (KmlLink, Boolean, Boolean) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+    inline def setSet(value: (KmlLink, Boolean, Boolean) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetFlyToView(value: Boolean => Unit): Self = StObject.set(x, "setFlyToView", js.Any.fromFunction1(value))
+    inline def setSetFlyToView(value: Boolean => Unit): Self = StObject.set(x, "setFlyToView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLink(value: KmlLink => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction1(value))
+    inline def setSetLink(value: KmlLink => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRefreshVisibility(value: Boolean => Unit): Self = StObject.set(x, "setRefreshVisibility", js.Any.fromFunction1(value))
+    inline def setSetRefreshVisibility(value: Boolean => Unit): Self = StObject.set(x, "setRefreshVisibility", js.Any.fromFunction1(value))
   }
 }

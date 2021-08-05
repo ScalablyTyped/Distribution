@@ -17,9 +17,7 @@ object legacyUtilMod {
   @js.native
   val INTERNAL_COL_DEFINE: /* "RC_TABLE_INTERNAL_COL_DEFINE" */ String = js.native
   
-  @scala.inline
-  def getDataAndAriaProps(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getDataAndAriaProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def getDataAndAriaProps(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getDataAndAriaProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @scala.inline
-  def getExpandableProps[RecordType](props: LegacyExpandableProps[RecordType] & Expandable[RecordType]): ExpandableConfig[RecordType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExpandableProps")(props.asInstanceOf[js.Any]).asInstanceOf[ExpandableConfig[RecordType]]
+  inline def getExpandableProps[RecordType](props: LegacyExpandableProps[RecordType] & Expandable[RecordType]): ExpandableConfig[RecordType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExpandableProps")(props.asInstanceOf[js.Any]).asInstanceOf[ExpandableConfig[RecordType]]
 }

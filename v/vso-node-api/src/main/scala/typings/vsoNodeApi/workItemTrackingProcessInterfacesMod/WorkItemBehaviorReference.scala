@@ -12,19 +12,15 @@ trait WorkItemBehaviorReference extends StObject {
 }
 object WorkItemBehaviorReference {
   
-  @scala.inline
-  def apply(id: String, url: String): WorkItemBehaviorReference = {
+  inline def apply(id: String, url: String): WorkItemBehaviorReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemBehaviorReference]
   }
   
-  @scala.inline
-  implicit class WorkItemBehaviorReferenceMutableBuilder[Self <: WorkItemBehaviorReference] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemBehaviorReference](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

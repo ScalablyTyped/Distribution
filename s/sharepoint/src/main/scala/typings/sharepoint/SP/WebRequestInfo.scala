@@ -26,8 +26,7 @@ trait WebRequestInfo
 }
 object WebRequestInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -46,31 +45,22 @@ object WebRequestInfo {
     __obj.asInstanceOf[WebRequestInfo]
   }
   
-  @scala.inline
-  implicit class WebRequestInfoMutableBuilder[Self <: WebRequestInfo] (val x: Self) extends AnyVal {
+  extension [Self <: WebRequestInfo](x: Self) {
     
-    @scala.inline
-    def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
+    inline def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_headers(value: () => js.Any): Self = StObject.set(x, "get_headers", js.Any.fromFunction0(value))
+    inline def setGet_headers(value: () => js.Any): Self = StObject.set(x, "get_headers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_method(value: () => String): Self = StObject.set(x, "get_method", js.Any.fromFunction0(value))
+    inline def setGet_method(value: () => String): Self = StObject.set(x, "get_method", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
+    inline def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_headers(value: js.Any => Unit): Self = StObject.set(x, "set_headers", js.Any.fromFunction1(value))
+    inline def setSet_headers(value: js.Any => Unit): Self = StObject.set(x, "set_headers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_method(value: String => Unit): Self = StObject.set(x, "set_method", js.Any.fromFunction1(value))
+    inline def setSet_method(value: String => Unit): Self = StObject.set(x, "set_method", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+    inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
   }
 }

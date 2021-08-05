@@ -15,16 +15,13 @@ trait XSidebar extends StObject {
 }
 object XSidebar {
   
-  @scala.inline
-  def apply(requestLayout: () => Unit): XSidebar = {
+  inline def apply(requestLayout: () => Unit): XSidebar = {
     val __obj = js.Dynamic.literal(requestLayout = js.Any.fromFunction0(requestLayout))
     __obj.asInstanceOf[XSidebar]
   }
   
-  @scala.inline
-  implicit class XSidebarMutableBuilder[Self <: XSidebar] (val x: Self) extends AnyVal {
+  extension [Self <: XSidebar](x: Self) {
     
-    @scala.inline
-    def setRequestLayout(value: () => Unit): Self = StObject.set(x, "requestLayout", js.Any.fromFunction0(value))
+    inline def setRequestLayout(value: () => Unit): Self = StObject.set(x, "requestLayout", js.Any.fromFunction0(value))
   }
 }

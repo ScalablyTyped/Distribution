@@ -20,22 +20,22 @@ object locationServicesMod {
        with LocationServices {
     def this($locationProvider: ILocationProvider) = this()
     
-    @JSName("$browser")
+    /* private */ @JSName("$browser")
     var $browser: js.Any = js.native
     
-    @JSName("$location")
+    /* private */ @JSName("$location")
     var $location: js.Any = js.native
     
-    @JSName("$locationProvider")
+    /* private */ @JSName("$locationProvider")
     var $locationProvider: js.Any = js.native
     
-    @JSName("$sniffer")
+    /* private */ @JSName("$sniffer")
     var $sniffer: js.Any = js.native
     
-    @JSName("$window")
+    /* private */ @JSName("$window")
     var $window: js.Any = js.native
     
-    var _baseHref: js.Any = js.native
+    /* private */ var _baseHref: js.Any = js.native
     
     def _runtimeServices(
       $rootScope: js.Any,
@@ -45,7 +45,7 @@ object locationServicesMod {
       $window: IWindowService
     ): Unit = js.native
     
-    var _urlListeners: js.Any = js.native
+    /* private */ var _urlListeners: js.Any = js.native
     
     @JSName("hashPrefix")
     var hashPrefix_FNg1LocationServices: js.Any = js.native
@@ -89,7 +89,6 @@ object locationServicesMod {
       *
       * @param router
       */
-    @scala.inline
-    def monkeyPatchPathParameterType(router: UIRouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monkeyPatchPathParameterType")(router.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def monkeyPatchPathParameterType(router: UIRouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("monkeyPatchPathParameterType")(router.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

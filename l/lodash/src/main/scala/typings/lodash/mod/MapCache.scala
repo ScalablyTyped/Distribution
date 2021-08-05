@@ -45,8 +45,7 @@ trait MapCache extends StObject {
 }
 object MapCache {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: js.Any => Boolean,
     get: js.Any => js.Any,
     has: js.Any => Boolean,
@@ -56,25 +55,18 @@ object MapCache {
     __obj.asInstanceOf[MapCache]
   }
   
-  @scala.inline
-  implicit class MapCacheMutableBuilder[Self <: MapCache] (val x: Self) extends AnyVal {
+  extension [Self <: MapCache](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setDelete(value: js.Any => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: js.Any => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: (js.Any, js.Any) => MapCache): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (js.Any, js.Any) => MapCache): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

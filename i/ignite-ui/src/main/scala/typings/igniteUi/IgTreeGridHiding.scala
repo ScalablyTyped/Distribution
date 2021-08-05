@@ -212,232 +212,157 @@ trait IgTreeGridHiding
 }
 object IgTreeGridHiding {
   
-  @scala.inline
-  def apply(): IgTreeGridHiding = {
+  inline def apply(): IgTreeGridHiding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeGridHiding]
   }
   
-  @scala.inline
-  implicit class IgTreeGridHidingMutableBuilder[Self <: IgTreeGridHiding] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridHiding](x: Self) {
     
-    @scala.inline
-    def setColumnChooserAnimationDuration(value: Double): Self = StObject.set(x, "columnChooserAnimationDuration", value.asInstanceOf[js.Any])
+    inline def setColumnChooserAnimationDuration(value: Double): Self = StObject.set(x, "columnChooserAnimationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserAnimationDurationUndefined: Self = StObject.set(x, "columnChooserAnimationDuration", js.undefined)
+    inline def setColumnChooserAnimationDurationUndefined: Self = StObject.set(x, "columnChooserAnimationDuration", js.undefined)
     
-    @scala.inline
-    def setColumnChooserButtonApplyClick(value: (/* event */ Event, /* ui */ ColumnChooserButtonApplyClickEventUIParam) => Unit): Self = StObject.set(x, "columnChooserButtonApplyClick", js.Any.fromFunction2(value))
+    inline def setColumnChooserButtonApplyClick(value: (/* event */ Event, /* ui */ ColumnChooserButtonApplyClickEventUIParam) => Unit): Self = StObject.set(x, "columnChooserButtonApplyClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnChooserButtonApplyClickUndefined: Self = StObject.set(x, "columnChooserButtonApplyClick", js.undefined)
+    inline def setColumnChooserButtonApplyClickUndefined: Self = StObject.set(x, "columnChooserButtonApplyClick", js.undefined)
     
-    @scala.inline
-    def setColumnChooserButtonApplyText(value: String): Self = StObject.set(x, "columnChooserButtonApplyText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserButtonApplyText(value: String): Self = StObject.set(x, "columnChooserButtonApplyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserButtonApplyTextUndefined: Self = StObject.set(x, "columnChooserButtonApplyText", js.undefined)
+    inline def setColumnChooserButtonApplyTextUndefined: Self = StObject.set(x, "columnChooserButtonApplyText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserButtonCancelText(value: String): Self = StObject.set(x, "columnChooserButtonCancelText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserButtonCancelText(value: String): Self = StObject.set(x, "columnChooserButtonCancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserButtonCancelTextUndefined: Self = StObject.set(x, "columnChooserButtonCancelText", js.undefined)
+    inline def setColumnChooserButtonCancelTextUndefined: Self = StObject.set(x, "columnChooserButtonCancelText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserButtonResetClick(value: (/* event */ Event, /* ui */ ColumnChooserButtonResetClickEventUIParam) => Unit): Self = StObject.set(x, "columnChooserButtonResetClick", js.Any.fromFunction2(value))
+    inline def setColumnChooserButtonResetClick(value: (/* event */ Event, /* ui */ ColumnChooserButtonResetClickEventUIParam) => Unit): Self = StObject.set(x, "columnChooserButtonResetClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnChooserButtonResetClickUndefined: Self = StObject.set(x, "columnChooserButtonResetClick", js.undefined)
+    inline def setColumnChooserButtonResetClickUndefined: Self = StObject.set(x, "columnChooserButtonResetClick", js.undefined)
     
-    @scala.inline
-    def setColumnChooserCaptionText(value: String): Self = StObject.set(x, "columnChooserCaptionText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserCaptionText(value: String): Self = StObject.set(x, "columnChooserCaptionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserCaptionTextUndefined: Self = StObject.set(x, "columnChooserCaptionText", js.undefined)
+    inline def setColumnChooserCaptionTextUndefined: Self = StObject.set(x, "columnChooserCaptionText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserClosed(value: (/* event */ Event, /* ui */ ColumnChooserClosedEventUIParam) => Unit): Self = StObject.set(x, "columnChooserClosed", js.Any.fromFunction2(value))
+    inline def setColumnChooserClosed(value: (/* event */ Event, /* ui */ ColumnChooserClosedEventUIParam) => Unit): Self = StObject.set(x, "columnChooserClosed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnChooserClosedUndefined: Self = StObject.set(x, "columnChooserClosed", js.undefined)
+    inline def setColumnChooserClosedUndefined: Self = StObject.set(x, "columnChooserClosed", js.undefined)
     
-    @scala.inline
-    def setColumnChooserClosing(value: (/* event */ Event, /* ui */ ColumnChooserClosingEventUIParam) => Unit): Self = StObject.set(x, "columnChooserClosing", js.Any.fromFunction2(value))
+    inline def setColumnChooserClosing(value: (/* event */ Event, /* ui */ ColumnChooserClosingEventUIParam) => Unit): Self = StObject.set(x, "columnChooserClosing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnChooserClosingUndefined: Self = StObject.set(x, "columnChooserClosing", js.undefined)
+    inline def setColumnChooserClosingUndefined: Self = StObject.set(x, "columnChooserClosing", js.undefined)
     
-    @scala.inline
-    def setColumnChooserContainment(value: String): Self = StObject.set(x, "columnChooserContainment", value.asInstanceOf[js.Any])
+    inline def setColumnChooserContainment(value: String): Self = StObject.set(x, "columnChooserContainment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserContainmentUndefined: Self = StObject.set(x, "columnChooserContainment", js.undefined)
+    inline def setColumnChooserContainmentUndefined: Self = StObject.set(x, "columnChooserContainment", js.undefined)
     
-    @scala.inline
-    def setColumnChooserContentsRendered(value: (/* event */ Event, /* ui */ ColumnChooserContentsRenderedEventUIParam) => Unit): Self = StObject.set(x, "columnChooserContentsRendered", js.Any.fromFunction2(value))
+    inline def setColumnChooserContentsRendered(value: (/* event */ Event, /* ui */ ColumnChooserContentsRenderedEventUIParam) => Unit): Self = StObject.set(x, "columnChooserContentsRendered", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnChooserContentsRenderedUndefined: Self = StObject.set(x, "columnChooserContentsRendered", js.undefined)
+    inline def setColumnChooserContentsRenderedUndefined: Self = StObject.set(x, "columnChooserContentsRendered", js.undefined)
     
-    @scala.inline
-    def setColumnChooserContentsRendering(value: (/* event */ Event, /* ui */ ColumnChooserContentsRenderingEventUIParam) => Unit): Self = StObject.set(x, "columnChooserContentsRendering", js.Any.fromFunction2(value))
+    inline def setColumnChooserContentsRendering(value: (/* event */ Event, /* ui */ ColumnChooserContentsRenderingEventUIParam) => Unit): Self = StObject.set(x, "columnChooserContentsRendering", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnChooserContentsRenderingUndefined: Self = StObject.set(x, "columnChooserContentsRendering", js.undefined)
+    inline def setColumnChooserContentsRenderingUndefined: Self = StObject.set(x, "columnChooserContentsRendering", js.undefined)
     
-    @scala.inline
-    def setColumnChooserDisplayText(value: String): Self = StObject.set(x, "columnChooserDisplayText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserDisplayText(value: String): Self = StObject.set(x, "columnChooserDisplayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserDisplayTextUndefined: Self = StObject.set(x, "columnChooserDisplayText", js.undefined)
+    inline def setColumnChooserDisplayTextUndefined: Self = StObject.set(x, "columnChooserDisplayText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserHeight(value: String): Self = StObject.set(x, "columnChooserHeight", value.asInstanceOf[js.Any])
+    inline def setColumnChooserHeight(value: String): Self = StObject.set(x, "columnChooserHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserHeightUndefined: Self = StObject.set(x, "columnChooserHeight", js.undefined)
+    inline def setColumnChooserHeightUndefined: Self = StObject.set(x, "columnChooserHeight", js.undefined)
     
-    @scala.inline
-    def setColumnChooserHideOnClick(value: Boolean): Self = StObject.set(x, "columnChooserHideOnClick", value.asInstanceOf[js.Any])
+    inline def setColumnChooserHideOnClick(value: Boolean): Self = StObject.set(x, "columnChooserHideOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserHideOnClickUndefined: Self = StObject.set(x, "columnChooserHideOnClick", js.undefined)
+    inline def setColumnChooserHideOnClickUndefined: Self = StObject.set(x, "columnChooserHideOnClick", js.undefined)
     
-    @scala.inline
-    def setColumnChooserHideText(value: String): Self = StObject.set(x, "columnChooserHideText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserHideText(value: String): Self = StObject.set(x, "columnChooserHideText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserHideTextUndefined: Self = StObject.set(x, "columnChooserHideText", js.undefined)
+    inline def setColumnChooserHideTextUndefined: Self = StObject.set(x, "columnChooserHideText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserMoving(value: (/* event */ Event, /* ui */ ColumnChooserMovingEventUIParam) => Unit): Self = StObject.set(x, "columnChooserMoving", js.Any.fromFunction2(value))
+    inline def setColumnChooserMoving(value: (/* event */ Event, /* ui */ ColumnChooserMovingEventUIParam) => Unit): Self = StObject.set(x, "columnChooserMoving", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnChooserMovingUndefined: Self = StObject.set(x, "columnChooserMoving", js.undefined)
+    inline def setColumnChooserMovingUndefined: Self = StObject.set(x, "columnChooserMoving", js.undefined)
     
-    @scala.inline
-    def setColumnChooserOpened(value: (/* event */ Event, /* ui */ ColumnChooserOpenedEventUIParam) => Unit): Self = StObject.set(x, "columnChooserOpened", js.Any.fromFunction2(value))
+    inline def setColumnChooserOpened(value: (/* event */ Event, /* ui */ ColumnChooserOpenedEventUIParam) => Unit): Self = StObject.set(x, "columnChooserOpened", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnChooserOpenedUndefined: Self = StObject.set(x, "columnChooserOpened", js.undefined)
+    inline def setColumnChooserOpenedUndefined: Self = StObject.set(x, "columnChooserOpened", js.undefined)
     
-    @scala.inline
-    def setColumnChooserOpening(value: (/* event */ Event, /* ui */ ColumnChooserOpeningEventUIParam) => Unit): Self = StObject.set(x, "columnChooserOpening", js.Any.fromFunction2(value))
+    inline def setColumnChooserOpening(value: (/* event */ Event, /* ui */ ColumnChooserOpeningEventUIParam) => Unit): Self = StObject.set(x, "columnChooserOpening", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnChooserOpeningUndefined: Self = StObject.set(x, "columnChooserOpening", js.undefined)
+    inline def setColumnChooserOpeningUndefined: Self = StObject.set(x, "columnChooserOpening", js.undefined)
     
-    @scala.inline
-    def setColumnChooserResetButtonLabel(value: String): Self = StObject.set(x, "columnChooserResetButtonLabel", value.asInstanceOf[js.Any])
+    inline def setColumnChooserResetButtonLabel(value: String): Self = StObject.set(x, "columnChooserResetButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserResetButtonLabelUndefined: Self = StObject.set(x, "columnChooserResetButtonLabel", js.undefined)
+    inline def setColumnChooserResetButtonLabelUndefined: Self = StObject.set(x, "columnChooserResetButtonLabel", js.undefined)
     
-    @scala.inline
-    def setColumnChooserShowText(value: String): Self = StObject.set(x, "columnChooserShowText", value.asInstanceOf[js.Any])
+    inline def setColumnChooserShowText(value: String): Self = StObject.set(x, "columnChooserShowText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserShowTextUndefined: Self = StObject.set(x, "columnChooserShowText", js.undefined)
+    inline def setColumnChooserShowTextUndefined: Self = StObject.set(x, "columnChooserShowText", js.undefined)
     
-    @scala.inline
-    def setColumnChooserWidth(value: String): Self = StObject.set(x, "columnChooserWidth", value.asInstanceOf[js.Any])
+    inline def setColumnChooserWidth(value: String): Self = StObject.set(x, "columnChooserWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserWidthUndefined: Self = StObject.set(x, "columnChooserWidth", js.undefined)
+    inline def setColumnChooserWidthUndefined: Self = StObject.set(x, "columnChooserWidth", js.undefined)
     
-    @scala.inline
-    def setColumnHidden(value: (/* event */ Event, /* ui */ ColumnHiddenEventUIParam) => Unit): Self = StObject.set(x, "columnHidden", js.Any.fromFunction2(value))
+    inline def setColumnHidden(value: (/* event */ Event, /* ui */ ColumnHiddenEventUIParam) => Unit): Self = StObject.set(x, "columnHidden", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
+    inline def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
     
-    @scala.inline
-    def setColumnHideText(value: String): Self = StObject.set(x, "columnHideText", value.asInstanceOf[js.Any])
+    inline def setColumnHideText(value: String): Self = StObject.set(x, "columnHideText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHideTextUndefined: Self = StObject.set(x, "columnHideText", js.undefined)
+    inline def setColumnHideTextUndefined: Self = StObject.set(x, "columnHideText", js.undefined)
     
-    @scala.inline
-    def setColumnHiding(value: (/* event */ Event, /* ui */ ColumnHidingEventUIParam) => Unit): Self = StObject.set(x, "columnHiding", js.Any.fromFunction2(value))
+    inline def setColumnHiding(value: (/* event */ Event, /* ui */ ColumnHidingEventUIParam) => Unit): Self = StObject.set(x, "columnHiding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnHidingRefused(value: (/* event */ Event, /* ui */ ColumnHidingRefusedEventUIParam) => Unit): Self = StObject.set(x, "columnHidingRefused", js.Any.fromFunction2(value))
+    inline def setColumnHidingRefused(value: (/* event */ Event, /* ui */ ColumnHidingRefusedEventUIParam) => Unit): Self = StObject.set(x, "columnHidingRefused", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnHidingRefusedUndefined: Self = StObject.set(x, "columnHidingRefused", js.undefined)
+    inline def setColumnHidingRefusedUndefined: Self = StObject.set(x, "columnHidingRefused", js.undefined)
     
-    @scala.inline
-    def setColumnHidingUndefined: Self = StObject.set(x, "columnHiding", js.undefined)
+    inline def setColumnHidingUndefined: Self = StObject.set(x, "columnHiding", js.undefined)
     
-    @scala.inline
-    def setColumnSettings(value: js.Array[IgGridHidingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    inline def setColumnSettings(value: js.Array[IgGridHidingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    @scala.inline
-    def setColumnSettingsVarargs(value: IgGridHidingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridHidingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setColumnShowing(value: (/* event */ Event, /* ui */ ColumnShowingEventUIParam) => Unit): Self = StObject.set(x, "columnShowing", js.Any.fromFunction2(value))
+    inline def setColumnShowing(value: (/* event */ Event, /* ui */ ColumnShowingEventUIParam) => Unit): Self = StObject.set(x, "columnShowing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnShowingRefused(value: (/* event */ Event, /* ui */ ColumnShowingRefusedEventUIParam) => Unit): Self = StObject.set(x, "columnShowingRefused", js.Any.fromFunction2(value))
+    inline def setColumnShowingRefused(value: (/* event */ Event, /* ui */ ColumnShowingRefusedEventUIParam) => Unit): Self = StObject.set(x, "columnShowingRefused", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnShowingRefusedUndefined: Self = StObject.set(x, "columnShowingRefused", js.undefined)
+    inline def setColumnShowingRefusedUndefined: Self = StObject.set(x, "columnShowingRefused", js.undefined)
     
-    @scala.inline
-    def setColumnShowingUndefined: Self = StObject.set(x, "columnShowing", js.undefined)
+    inline def setColumnShowingUndefined: Self = StObject.set(x, "columnShowing", js.undefined)
     
-    @scala.inline
-    def setColumnShown(value: (/* event */ Event, /* ui */ ColumnShownEventUIParam) => Unit): Self = StObject.set(x, "columnShown", js.Any.fromFunction2(value))
+    inline def setColumnShown(value: (/* event */ Event, /* ui */ ColumnShownEventUIParam) => Unit): Self = StObject.set(x, "columnShown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnShownUndefined: Self = StObject.set(x, "columnShown", js.undefined)
+    inline def setColumnShownUndefined: Self = StObject.set(x, "columnShown", js.undefined)
     
-    @scala.inline
-    def setDialogWidget(value: String): Self = StObject.set(x, "dialogWidget", value.asInstanceOf[js.Any])
+    inline def setDialogWidget(value: String): Self = StObject.set(x, "dialogWidget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogWidgetUndefined: Self = StObject.set(x, "dialogWidget", js.undefined)
+    inline def setDialogWidgetUndefined: Self = StObject.set(x, "dialogWidget", js.undefined)
     
-    @scala.inline
-    def setDropDownAnimationDuration(value: Double): Self = StObject.set(x, "dropDownAnimationDuration", value.asInstanceOf[js.Any])
+    inline def setDropDownAnimationDuration(value: Double): Self = StObject.set(x, "dropDownAnimationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDownAnimationDurationUndefined: Self = StObject.set(x, "dropDownAnimationDuration", js.undefined)
+    inline def setDropDownAnimationDurationUndefined: Self = StObject.set(x, "dropDownAnimationDuration", js.undefined)
     
-    @scala.inline
-    def setHiddenColumnIndicatorHeaderWidth(value: Double): Self = StObject.set(x, "hiddenColumnIndicatorHeaderWidth", value.asInstanceOf[js.Any])
+    inline def setHiddenColumnIndicatorHeaderWidth(value: Double): Self = StObject.set(x, "hiddenColumnIndicatorHeaderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenColumnIndicatorHeaderWidthUndefined: Self = StObject.set(x, "hiddenColumnIndicatorHeaderWidth", js.undefined)
+    inline def setHiddenColumnIndicatorHeaderWidthUndefined: Self = StObject.set(x, "hiddenColumnIndicatorHeaderWidth", js.undefined)
     
-    @scala.inline
-    def setHiddenColumnIndicatorTooltipText(value: String): Self = StObject.set(x, "hiddenColumnIndicatorTooltipText", value.asInstanceOf[js.Any])
+    inline def setHiddenColumnIndicatorTooltipText(value: String): Self = StObject.set(x, "hiddenColumnIndicatorTooltipText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenColumnIndicatorTooltipTextUndefined: Self = StObject.set(x, "hiddenColumnIndicatorTooltipText", js.undefined)
+    inline def setHiddenColumnIndicatorTooltipTextUndefined: Self = StObject.set(x, "hiddenColumnIndicatorTooltipText", js.undefined)
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setLocale(value: IgGridHidingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: IgGridHidingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMultiColumnHiding(value: (/* event */ Event, /* ui */ MultiColumnHidingEventUIParam) => Unit): Self = StObject.set(x, "multiColumnHiding", js.Any.fromFunction2(value))
+    inline def setMultiColumnHiding(value: (/* event */ Event, /* ui */ MultiColumnHidingEventUIParam) => Unit): Self = StObject.set(x, "multiColumnHiding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMultiColumnHidingUndefined: Self = StObject.set(x, "multiColumnHiding", js.undefined)
+    inline def setMultiColumnHidingUndefined: Self = StObject.set(x, "multiColumnHiding", js.undefined)
   }
 }

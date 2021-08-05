@@ -31,27 +31,21 @@ trait MUIDataTableCustomFilterListOptions extends StObject {
 }
 object MUIDataTableCustomFilterListOptions {
   
-  @scala.inline
-  def apply(): MUIDataTableCustomFilterListOptions = {
+  inline def apply(): MUIDataTableCustomFilterListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MUIDataTableCustomFilterListOptions]
   }
   
-  @scala.inline
-  implicit class MUIDataTableCustomFilterListOptionsMutableBuilder[Self <: MUIDataTableCustomFilterListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableCustomFilterListOptions](x: Self) {
     
-    @scala.inline
-    def setRender(value: /* value */ js.Any => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* value */ js.Any => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setUpdate(
+    inline def setUpdate(
       value: (/* filterList */ js.Array[js.Array[String]], /* filterPos */ Double, /* index */ Double) => js.Array[js.Array[String]]
     ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

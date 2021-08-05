@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CameraDevice extends StObject
 object CameraDevice {
   
-  @scala.inline
-  def back: typings.weappApi.weappApiStrings.back = "back".asInstanceOf[typings.weappApi.weappApiStrings.back]
+  inline def back: typings.weappApi.weappApiStrings.back = "back".asInstanceOf[typings.weappApi.weappApiStrings.back]
   
-  @scala.inline
-  def front: typings.weappApi.weappApiStrings.front = "front".asInstanceOf[typings.weappApi.weappApiStrings.front]
+  inline def front: typings.weappApi.weappApiStrings.front = "front".asInstanceOf[typings.weappApi.weappApiStrings.front]
 }

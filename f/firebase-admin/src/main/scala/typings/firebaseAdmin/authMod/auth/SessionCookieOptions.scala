@@ -18,16 +18,13 @@ trait SessionCookieOptions extends StObject {
 }
 object SessionCookieOptions {
   
-  @scala.inline
-  def apply(expiresIn: Double): SessionCookieOptions = {
+  inline def apply(expiresIn: Double): SessionCookieOptions = {
     val __obj = js.Dynamic.literal(expiresIn = expiresIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionCookieOptions]
   }
   
-  @scala.inline
-  implicit class SessionCookieOptionsMutableBuilder[Self <: SessionCookieOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SessionCookieOptions](x: Self) {
     
-    @scala.inline
-    def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+    inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
   }
 }

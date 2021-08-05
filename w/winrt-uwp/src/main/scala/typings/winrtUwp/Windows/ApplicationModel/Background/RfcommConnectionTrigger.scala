@@ -28,8 +28,7 @@ trait RfcommConnectionTrigger extends StObject {
 }
 object RfcommConnectionTrigger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowMultipleConnections: Boolean,
     inboundConnection: RfcommInboundConnectionInformation,
     outboundConnection: RfcommOutboundConnectionInformation,
@@ -40,22 +39,16 @@ object RfcommConnectionTrigger {
     __obj.asInstanceOf[RfcommConnectionTrigger]
   }
   
-  @scala.inline
-  implicit class RfcommConnectionTriggerMutableBuilder[Self <: RfcommConnectionTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: RfcommConnectionTrigger](x: Self) {
     
-    @scala.inline
-    def setAllowMultipleConnections(value: Boolean): Self = StObject.set(x, "allowMultipleConnections", value.asInstanceOf[js.Any])
+    inline def setAllowMultipleConnections(value: Boolean): Self = StObject.set(x, "allowMultipleConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundConnection(value: RfcommInboundConnectionInformation): Self = StObject.set(x, "inboundConnection", value.asInstanceOf[js.Any])
+    inline def setInboundConnection(value: RfcommInboundConnectionInformation): Self = StObject.set(x, "inboundConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundConnection(value: RfcommOutboundConnectionInformation): Self = StObject.set(x, "outboundConnection", value.asInstanceOf[js.Any])
+    inline def setOutboundConnection(value: RfcommOutboundConnectionInformation): Self = StObject.set(x, "outboundConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionLevel(value: SocketProtectionLevel): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
+    inline def setProtectionLevel(value: SocketProtectionLevel): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteHostName(value: HostName): Self = StObject.set(x, "remoteHostName", value.asInstanceOf[js.Any])
+    inline def setRemoteHostName(value: HostName): Self = StObject.set(x, "remoteHostName", value.asInstanceOf[js.Any])
   }
 }

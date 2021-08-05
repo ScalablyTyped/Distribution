@@ -13,25 +13,19 @@ trait ShiftPreferences
 }
 object ShiftPreferences {
   
-  @scala.inline
-  def apply(): ShiftPreferences = {
+  inline def apply(): ShiftPreferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShiftPreferences]
   }
   
-  @scala.inline
-  implicit class ShiftPreferencesMutableBuilder[Self <: ShiftPreferences] (val x: Self) extends AnyVal {
+  extension [Self <: ShiftPreferences](x: Self) {
     
-    @scala.inline
-    def setAvailability(value: NullableOption[js.Array[ShiftAvailability]]): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: NullableOption[js.Array[ShiftAvailability]]): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityNull: Self = StObject.set(x, "availability", null)
+    inline def setAvailabilityNull: Self = StObject.set(x, "availability", null)
     
-    @scala.inline
-    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
+    inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
-    @scala.inline
-    def setAvailabilityVarargs(value: ShiftAvailability*): Self = StObject.set(x, "availability", js.Array(value :_*))
+    inline def setAvailabilityVarargs(value: ShiftAvailability*): Self = StObject.set(x, "availability", js.Array(value :_*))
   }
 }

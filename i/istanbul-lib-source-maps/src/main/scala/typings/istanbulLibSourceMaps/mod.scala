@@ -26,10 +26,8 @@ object mod {
     def registerSource(filepath: String, sourceText: String): Unit = js.native
   }
   
-  @scala.inline
-  def createSourceMapStore(): MapStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createSourceMapStore")().asInstanceOf[MapStore]
-  @scala.inline
-  def createSourceMapStore(options: PartialMapStoreOptions): MapStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createSourceMapStore")(options.asInstanceOf[js.Any]).asInstanceOf[MapStore]
+  inline def createSourceMapStore(): MapStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createSourceMapStore")().asInstanceOf[MapStore]
+  inline def createSourceMapStore(options: PartialMapStoreOptions): MapStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createSourceMapStore")(options.asInstanceOf[js.Any]).asInstanceOf[MapStore]
   
   trait MapStore extends StObject {
     
@@ -57,8 +55,7 @@ object mod {
   }
   object MapStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addInputSourceMapsSync: js.Any => Unit,
       data: StringDictionary[Data],
       dispose: () => Unit,
@@ -74,44 +71,31 @@ object mod {
       __obj.asInstanceOf[MapStore]
     }
     
-    @scala.inline
-    implicit class MapStoreMutableBuilder[Self <: MapStore] (val x: Self) extends AnyVal {
+    extension [Self <: MapStore](x: Self) {
       
-      @scala.inline
-      def setAddInputSourceMapsSync(value: js.Any => Unit): Self = StObject.set(x, "addInputSourceMapsSync", js.Any.fromFunction1(value))
+      inline def setAddInputSourceMapsSync(value: js.Any => Unit): Self = StObject.set(x, "addInputSourceMapsSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+      inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseDirNull: Self = StObject.set(x, "baseDir", null)
+      inline def setBaseDirNull: Self = StObject.set(x, "baseDir", null)
       
-      @scala.inline
-      def setData(value: StringDictionary[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSourceMapSync(value: String => js.Any): Self = StObject.set(x, "getSourceMapSync", js.Any.fromFunction1(value))
+      inline def setGetSourceMapSync(value: String => js.Any): Self = StObject.set(x, "getSourceMapSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterMap(value: (String, RawSourceMap) => Unit): Self = StObject.set(x, "registerMap", js.Any.fromFunction2(value))
+      inline def setRegisterMap(value: (String, RawSourceMap) => Unit): Self = StObject.set(x, "registerMap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterURL(value: (String, String) => Unit): Self = StObject.set(x, "registerURL", js.Any.fromFunction2(value))
+      inline def setRegisterURL(value: (String, String) => Unit): Self = StObject.set(x, "registerURL", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSourceFinder(value: String => String): Self = StObject.set(x, "sourceFinder", js.Any.fromFunction1(value))
+      inline def setSourceFinder(value: String => String): Self = StObject.set(x, "sourceFinder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSourceStore(value: SourceStore): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
+      inline def setSourceStore(value: SourceStore): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformCoverage(value: CoverageMap => js.Promise[CoverageMap]): Self = StObject.set(x, "transformCoverage", js.Any.fromFunction1(value))
+      inline def setTransformCoverage(value: CoverageMap => js.Promise[CoverageMap]): Self = StObject.set(x, "transformCoverage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,26 +111,20 @@ object mod {
   }
   object MapStoreOptions {
     
-    @scala.inline
-    def apply(baseDir: String, sourceStore: memory | file, tmpdir: String, verbose: Boolean): MapStoreOptions = {
+    inline def apply(baseDir: String, sourceStore: memory | file, tmpdir: String, verbose: Boolean): MapStoreOptions = {
       val __obj = js.Dynamic.literal(baseDir = baseDir.asInstanceOf[js.Any], sourceStore = sourceStore.asInstanceOf[js.Any], tmpdir = tmpdir.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapStoreOptions]
     }
     
-    @scala.inline
-    implicit class MapStoreOptionsMutableBuilder[Self <: MapStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapStoreOptions](x: Self) {
       
-      @scala.inline
-      def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+      inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceStore(value: memory | file): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
+      inline def setSourceStore(value: memory | file): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTmpdir(value: String): Self = StObject.set(x, "tmpdir", value.asInstanceOf[js.Any])
+      inline def setTmpdir(value: String): Self = StObject.set(x, "tmpdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -86,15 +86,11 @@ object mod {
   class TimeCat ()
     extends typings.antvScale.timeMod.default
   
-  @scala.inline
-  def getScale(key: String): ScaleConstructor[typings.antvScale.baseMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScale")(key.asInstanceOf[js.Any]).asInstanceOf[ScaleConstructor[typings.antvScale.baseMod.default]]
+  inline def getScale(key: String): ScaleConstructor[typings.antvScale.baseMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScale")(key.asInstanceOf[js.Any]).asInstanceOf[ScaleConstructor[typings.antvScale.baseMod.default]]
   
-  @scala.inline
-  def getTickMethod(key: String): TickMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickMethod")(key.asInstanceOf[js.Any]).asInstanceOf[TickMethod]
+  inline def getTickMethod(key: String): TickMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickMethod")(key.asInstanceOf[js.Any]).asInstanceOf[TickMethod]
   
-  @scala.inline
-  def registerScale(key: String, cls: ScaleConstructor[typings.antvScale.baseMod.default]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScale")(key.asInstanceOf[js.Any], cls.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerScale(key: String, cls: ScaleConstructor[typings.antvScale.baseMod.default]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScale")(key.asInstanceOf[js.Any], cls.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerTickMethod(key: String, method: TickMethod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTickMethod")(key.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerTickMethod(key: String, method: TickMethod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTickMethod")(key.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -28,34 +28,25 @@ trait SchemaListBeaconsResponse extends StObject {
 }
 object SchemaListBeaconsResponse {
   
-  @scala.inline
-  def apply(): SchemaListBeaconsResponse = {
+  inline def apply(): SchemaListBeaconsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListBeaconsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListBeaconsResponseMutableBuilder[Self <: SchemaListBeaconsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListBeaconsResponse](x: Self) {
     
-    @scala.inline
-    def setBeacons(value: js.Array[SchemaBeacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
+    inline def setBeacons(value: js.Array[SchemaBeacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
+    inline def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
     
-    @scala.inline
-    def setBeaconsVarargs(value: SchemaBeacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+    inline def setBeaconsVarargs(value: SchemaBeacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

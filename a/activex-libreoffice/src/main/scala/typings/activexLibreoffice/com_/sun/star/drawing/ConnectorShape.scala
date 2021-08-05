@@ -72,8 +72,7 @@ trait ConnectorShape
 }
 object ConnectorShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EdgeKind: ConnectorType,
     EdgeLine1Delta: Double,
     EdgeLine2Delta: Double,
@@ -161,34 +160,24 @@ object ConnectorShape {
     __obj.asInstanceOf[ConnectorShape]
   }
   
-  @scala.inline
-  implicit class ConnectorShapeMutableBuilder[Self <: ConnectorShape] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorShape](x: Self) {
     
-    @scala.inline
-    def setEdgeLine1Delta(value: Double): Self = StObject.set(x, "EdgeLine1Delta", value.asInstanceOf[js.Any])
+    inline def setEdgeLine1Delta(value: Double): Self = StObject.set(x, "EdgeLine1Delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeLine2Delta(value: Double): Self = StObject.set(x, "EdgeLine2Delta", value.asInstanceOf[js.Any])
+    inline def setEdgeLine2Delta(value: Double): Self = StObject.set(x, "EdgeLine2Delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeLine3Delta(value: Double): Self = StObject.set(x, "EdgeLine3Delta", value.asInstanceOf[js.Any])
+    inline def setEdgeLine3Delta(value: Double): Self = StObject.set(x, "EdgeLine3Delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndGluePointIndex(value: Double): Self = StObject.set(x, "EndGluePointIndex", value.asInstanceOf[js.Any])
+    inline def setEndGluePointIndex(value: Double): Self = StObject.set(x, "EndGluePointIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPosition(value: Point): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: Point): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndShape(value: XShape): Self = StObject.set(x, "EndShape", value.asInstanceOf[js.Any])
+    inline def setEndShape(value: XShape): Self = StObject.set(x, "EndShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartGluePointIndex(value: Double): Self = StObject.set(x, "StartGluePointIndex", value.asInstanceOf[js.Any])
+    inline def setStartGluePointIndex(value: Double): Self = StObject.set(x, "StartGluePointIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPosition(value: Point): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Point): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartShape(value: XShape): Self = StObject.set(x, "StartShape", value.asInstanceOf[js.Any])
+    inline def setStartShape(value: XShape): Self = StObject.set(x, "StartShape", value.asInstanceOf[js.Any])
   }
 }

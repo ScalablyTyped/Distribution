@@ -49,8 +49,7 @@ object valdr {
     }
     object ValdrMessage {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addMessages: StringDictionary[String] => Unit,
         angularMessagesEnabled: Boolean,
         getMessage: (String, String, String) => String,
@@ -62,26 +61,19 @@ object valdr {
         __obj.asInstanceOf[ValdrMessage]
       }
       
-      @scala.inline
-      implicit class ValdrMessageMutableBuilder[Self <: ValdrMessage] (val x: Self) extends AnyVal {
+      extension [Self <: ValdrMessage](x: Self) {
         
-        @scala.inline
-        def setAddMessages(value: StringDictionary[String] => Unit): Self = StObject.set(x, "addMessages", js.Any.fromFunction1(value))
+        inline def setAddMessages(value: StringDictionary[String] => Unit): Self = StObject.set(x, "addMessages", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAngularMessagesEnabled(value: Boolean): Self = StObject.set(x, "angularMessagesEnabled", value.asInstanceOf[js.Any])
+        inline def setAngularMessagesEnabled(value: Boolean): Self = StObject.set(x, "angularMessagesEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGetMessage(value: (String, String, String) => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction3(value))
+        inline def setGetMessage(value: (String, String, String) => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSetTemplate(value: String => Unit): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
+        inline def setSetTemplate(value: String => Unit): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+        inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTranslateAvailable(value: Boolean): Self = StObject.set(x, "translateAvailable", value.asInstanceOf[js.Any])
+        inline def setTranslateAvailable(value: Boolean): Self = StObject.set(x, "translateAvailable", value.asInstanceOf[js.Any])
       }
     }
     
@@ -116,8 +108,7 @@ object valdr {
     }
     object ValdrMessageProvider {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addMessages: StringDictionary[String] => Unit,
         getMessage: (String, String, String) => String,
         setTemplate: String => Unit,
@@ -127,20 +118,15 @@ object valdr {
         __obj.asInstanceOf[ValdrMessageProvider]
       }
       
-      @scala.inline
-      implicit class ValdrMessageProviderMutableBuilder[Self <: ValdrMessageProvider] (val x: Self) extends AnyVal {
+      extension [Self <: ValdrMessageProvider](x: Self) {
         
-        @scala.inline
-        def setAddMessages(value: StringDictionary[String] => Unit): Self = StObject.set(x, "addMessages", js.Any.fromFunction1(value))
+        inline def setAddMessages(value: StringDictionary[String] => Unit): Self = StObject.set(x, "addMessages", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetMessage(value: (String, String, String) => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction3(value))
+        inline def setGetMessage(value: (String, String, String) => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setSetTemplate(value: String => Unit): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
+        inline def setSetTemplate(value: String => Unit): Self = StObject.set(x, "setTemplate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetTemplateUrl(value: String => Unit): Self = StObject.set(x, "setTemplateUrl", js.Any.fromFunction1(value))
+        inline def setSetTemplateUrl(value: String => Unit): Self = StObject.set(x, "setTemplateUrl", js.Any.fromFunction1(value))
       }
     }
   }

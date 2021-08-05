@@ -13,25 +13,19 @@ trait MinimumInputs extends StObject {
 }
 object MinimumInputs {
   
-  @scala.inline
-  def apply(): MinimumInputs = {
+  inline def apply(): MinimumInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinimumInputs]
   }
   
-  @scala.inline
-  implicit class MinimumInputsMutableBuilder[Self <: MinimumInputs] (val x: Self) extends AnyVal {
+  extension [Self <: MinimumInputs](x: Self) {
     
-    @scala.inline
-    def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+    inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
-    @scala.inline
-    def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
   }
 }

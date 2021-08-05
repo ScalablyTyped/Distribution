@@ -16,28 +16,21 @@ trait UpgradeLanguageModelParams extends StObject {
 }
 object UpgradeLanguageModelParams {
   
-  @scala.inline
-  def apply(customization_id: String): UpgradeLanguageModelParams = {
+  inline def apply(customization_id: String): UpgradeLanguageModelParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeLanguageModelParams]
   }
   
-  @scala.inline
-  implicit class UpgradeLanguageModelParamsMutableBuilder[Self <: UpgradeLanguageModelParams] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeLanguageModelParams](x: Self) {
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

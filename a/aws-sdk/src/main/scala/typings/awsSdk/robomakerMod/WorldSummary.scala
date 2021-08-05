@@ -28,37 +28,27 @@ trait WorldSummary extends StObject {
 }
 object WorldSummary {
   
-  @scala.inline
-  def apply(): WorldSummary = {
+  inline def apply(): WorldSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorldSummary]
   }
   
-  @scala.inline
-  implicit class WorldSummaryMutableBuilder[Self <: WorldSummary] (val x: Self) extends AnyVal {
+  extension [Self <: WorldSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setGenerationJob(value: Arn): Self = StObject.set(x, "generationJob", value.asInstanceOf[js.Any])
+    inline def setGenerationJob(value: Arn): Self = StObject.set(x, "generationJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationJobUndefined: Self = StObject.set(x, "generationJob", js.undefined)
+    inline def setGenerationJobUndefined: Self = StObject.set(x, "generationJob", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

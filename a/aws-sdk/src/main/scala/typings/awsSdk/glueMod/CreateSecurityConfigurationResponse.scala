@@ -18,25 +18,19 @@ trait CreateSecurityConfigurationResponse extends StObject {
 }
 object CreateSecurityConfigurationResponse {
   
-  @scala.inline
-  def apply(): CreateSecurityConfigurationResponse = {
+  inline def apply(): CreateSecurityConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSecurityConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class CreateSecurityConfigurationResponseMutableBuilder[Self <: CreateSecurityConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSecurityConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedTimestamp(value: TimestampValue): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: TimestampValue): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

@@ -23,34 +23,25 @@ trait RedactionConfig extends StObject {
 }
 object RedactionConfig {
   
-  @scala.inline
-  def apply(): RedactionConfig = {
+  inline def apply(): RedactionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RedactionConfig]
   }
   
-  @scala.inline
-  implicit class RedactionConfigMutableBuilder[Self <: RedactionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RedactionConfig](x: Self) {
     
-    @scala.inline
-    def setMaskCharacter(value: MaskCharacter): Self = StObject.set(x, "MaskCharacter", value.asInstanceOf[js.Any])
+    inline def setMaskCharacter(value: MaskCharacter): Self = StObject.set(x, "MaskCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskCharacterUndefined: Self = StObject.set(x, "MaskCharacter", js.undefined)
+    inline def setMaskCharacterUndefined: Self = StObject.set(x, "MaskCharacter", js.undefined)
     
-    @scala.inline
-    def setMaskMode(value: PiiEntitiesDetectionMaskMode): Self = StObject.set(x, "MaskMode", value.asInstanceOf[js.Any])
+    inline def setMaskMode(value: PiiEntitiesDetectionMaskMode): Self = StObject.set(x, "MaskMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskModeUndefined: Self = StObject.set(x, "MaskMode", js.undefined)
+    inline def setMaskModeUndefined: Self = StObject.set(x, "MaskMode", js.undefined)
     
-    @scala.inline
-    def setPiiEntityTypes(value: ListOfPiiEntityTypes): Self = StObject.set(x, "PiiEntityTypes", value.asInstanceOf[js.Any])
+    inline def setPiiEntityTypes(value: ListOfPiiEntityTypes): Self = StObject.set(x, "PiiEntityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPiiEntityTypesUndefined: Self = StObject.set(x, "PiiEntityTypes", js.undefined)
+    inline def setPiiEntityTypesUndefined: Self = StObject.set(x, "PiiEntityTypes", js.undefined)
     
-    @scala.inline
-    def setPiiEntityTypesVarargs(value: PiiEntityType*): Self = StObject.set(x, "PiiEntityTypes", js.Array(value :_*))
+    inline def setPiiEntityTypesVarargs(value: PiiEntityType*): Self = StObject.set(x, "PiiEntityTypes", js.Array(value :_*))
   }
 }

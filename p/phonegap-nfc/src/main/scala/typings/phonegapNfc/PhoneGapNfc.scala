@@ -197,8 +197,7 @@ object PhoneGapNfc {
   }
   object Ndef {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RTD_ALTERNATIVE_CARRIER: js.Array[Double],
       RTD_HANDOVER_CARRIER: js.Array[Double],
       RTD_HANDOVER_REQUEST: js.Array[Double],
@@ -234,119 +233,81 @@ object PhoneGapNfc {
       __obj.asInstanceOf[Ndef]
     }
     
-    @scala.inline
-    implicit class NdefMutableBuilder[Self <: Ndef] (val x: Self) extends AnyVal {
+    extension [Self <: Ndef](x: Self) {
       
-      @scala.inline
-      def setAbsoluteUriRecord(value: (String, js.Array[Double], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "absoluteUriRecord", js.Any.fromFunction3(value))
+      inline def setAbsoluteUriRecord(value: (String, js.Array[Double], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "absoluteUriRecord", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAndroidApplicationRecord(value: String => NdefRecord): Self = StObject.set(x, "androidApplicationRecord", js.Any.fromFunction1(value))
+      inline def setAndroidApplicationRecord(value: String => NdefRecord): Self = StObject.set(x, "androidApplicationRecord", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecodeMessage(value: js.Array[Double] => js.Array[NdefRecord]): Self = StObject.set(x, "decodeMessage", js.Any.fromFunction1(value))
+      inline def setDecodeMessage(value: js.Array[Double] => js.Array[NdefRecord]): Self = StObject.set(x, "decodeMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDecodeTnf(value: Double => js.Any): Self = StObject.set(x, "decodeTnf", js.Any.fromFunction1(value))
+      inline def setDecodeTnf(value: Double => js.Any): Self = StObject.set(x, "decodeTnf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmptyRecord(value: () => NdefRecord): Self = StObject.set(x, "emptyRecord", js.Any.fromFunction0(value))
+      inline def setEmptyRecord(value: () => NdefRecord): Self = StObject.set(x, "emptyRecord", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEncodeMessage(value: js.Array[NdefRecord] => js.Array[Double]): Self = StObject.set(x, "encodeMessage", js.Any.fromFunction1(value))
+      inline def setEncodeMessage(value: js.Array[NdefRecord] => js.Array[Double]): Self = StObject.set(x, "encodeMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeTnf(value: (Double, Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "encodeTnf", js.Any.fromFunction6(value))
+      inline def setEncodeTnf(value: (Double, Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "encodeTnf", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setMimeMediaRecord(value: (String, js.Array[Double], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "mimeMediaRecord", js.Any.fromFunction3(value))
+      inline def setMimeMediaRecord(value: (String, js.Array[Double], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "mimeMediaRecord", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRTD_ALTERNATIVE_CARRIER(value: js.Array[Double]): Self = StObject.set(x, "RTD_ALTERNATIVE_CARRIER", value.asInstanceOf[js.Any])
+      inline def setRTD_ALTERNATIVE_CARRIER(value: js.Array[Double]): Self = StObject.set(x, "RTD_ALTERNATIVE_CARRIER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTD_ALTERNATIVE_CARRIERVarargs(value: Double*): Self = StObject.set(x, "RTD_ALTERNATIVE_CARRIER", js.Array(value :_*))
+      inline def setRTD_ALTERNATIVE_CARRIERVarargs(value: Double*): Self = StObject.set(x, "RTD_ALTERNATIVE_CARRIER", js.Array(value :_*))
       
-      @scala.inline
-      def setRTD_HANDOVER_CARRIER(value: js.Array[Double]): Self = StObject.set(x, "RTD_HANDOVER_CARRIER", value.asInstanceOf[js.Any])
+      inline def setRTD_HANDOVER_CARRIER(value: js.Array[Double]): Self = StObject.set(x, "RTD_HANDOVER_CARRIER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTD_HANDOVER_CARRIERVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_CARRIER", js.Array(value :_*))
+      inline def setRTD_HANDOVER_CARRIERVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_CARRIER", js.Array(value :_*))
       
-      @scala.inline
-      def setRTD_HANDOVER_REQUEST(value: js.Array[Double]): Self = StObject.set(x, "RTD_HANDOVER_REQUEST", value.asInstanceOf[js.Any])
+      inline def setRTD_HANDOVER_REQUEST(value: js.Array[Double]): Self = StObject.set(x, "RTD_HANDOVER_REQUEST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTD_HANDOVER_REQUESTVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_REQUEST", js.Array(value :_*))
+      inline def setRTD_HANDOVER_REQUESTVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_REQUEST", js.Array(value :_*))
       
-      @scala.inline
-      def setRTD_HANDOVER_SELECT(value: js.Array[Double]): Self = StObject.set(x, "RTD_HANDOVER_SELECT", value.asInstanceOf[js.Any])
+      inline def setRTD_HANDOVER_SELECT(value: js.Array[Double]): Self = StObject.set(x, "RTD_HANDOVER_SELECT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTD_HANDOVER_SELECTVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_SELECT", js.Array(value :_*))
+      inline def setRTD_HANDOVER_SELECTVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_SELECT", js.Array(value :_*))
       
-      @scala.inline
-      def setRTD_SMART_POSTER(value: js.Array[Double]): Self = StObject.set(x, "RTD_SMART_POSTER", value.asInstanceOf[js.Any])
+      inline def setRTD_SMART_POSTER(value: js.Array[Double]): Self = StObject.set(x, "RTD_SMART_POSTER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTD_SMART_POSTERVarargs(value: Double*): Self = StObject.set(x, "RTD_SMART_POSTER", js.Array(value :_*))
+      inline def setRTD_SMART_POSTERVarargs(value: Double*): Self = StObject.set(x, "RTD_SMART_POSTER", js.Array(value :_*))
       
-      @scala.inline
-      def setRTD_TEXT(value: js.Array[Double]): Self = StObject.set(x, "RTD_TEXT", value.asInstanceOf[js.Any])
+      inline def setRTD_TEXT(value: js.Array[Double]): Self = StObject.set(x, "RTD_TEXT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTD_TEXTVarargs(value: Double*): Self = StObject.set(x, "RTD_TEXT", js.Array(value :_*))
+      inline def setRTD_TEXTVarargs(value: Double*): Self = StObject.set(x, "RTD_TEXT", js.Array(value :_*))
       
-      @scala.inline
-      def setRTD_URI(value: js.Array[Double]): Self = StObject.set(x, "RTD_URI", value.asInstanceOf[js.Any])
+      inline def setRTD_URI(value: js.Array[Double]): Self = StObject.set(x, "RTD_URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTD_URIVarargs(value: Double*): Self = StObject.set(x, "RTD_URI", js.Array(value :_*))
+      inline def setRTD_URIVarargs(value: Double*): Self = StObject.set(x, "RTD_URI", js.Array(value :_*))
       
-      @scala.inline
-      def setRecord(value: (Double, js.Array[Double], js.Array[Double], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "record", js.Any.fromFunction4(value))
+      inline def setRecord(value: (Double, js.Array[Double], js.Array[Double], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "record", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSmartPoster(value: (js.Array[NdefRecord], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "smartPoster", js.Any.fromFunction2(value))
+      inline def setSmartPoster(value: (js.Array[NdefRecord], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "smartPoster", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTNF_ABSOLUTE_URI(value: Double): Self = StObject.set(x, "TNF_ABSOLUTE_URI", value.asInstanceOf[js.Any])
+      inline def setTNF_ABSOLUTE_URI(value: Double): Self = StObject.set(x, "TNF_ABSOLUTE_URI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTNF_EMPTY(value: Double): Self = StObject.set(x, "TNF_EMPTY", value.asInstanceOf[js.Any])
+      inline def setTNF_EMPTY(value: Double): Self = StObject.set(x, "TNF_EMPTY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTNF_EXTERNAL_TYPE(value: Double): Self = StObject.set(x, "TNF_EXTERNAL_TYPE", value.asInstanceOf[js.Any])
+      inline def setTNF_EXTERNAL_TYPE(value: Double): Self = StObject.set(x, "TNF_EXTERNAL_TYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTNF_MIME_MEDIA(value: Double): Self = StObject.set(x, "TNF_MIME_MEDIA", value.asInstanceOf[js.Any])
+      inline def setTNF_MIME_MEDIA(value: Double): Self = StObject.set(x, "TNF_MIME_MEDIA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTNF_RESERVED(value: Double): Self = StObject.set(x, "TNF_RESERVED", value.asInstanceOf[js.Any])
+      inline def setTNF_RESERVED(value: Double): Self = StObject.set(x, "TNF_RESERVED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTNF_UNCHANGED(value: Double): Self = StObject.set(x, "TNF_UNCHANGED", value.asInstanceOf[js.Any])
+      inline def setTNF_UNCHANGED(value: Double): Self = StObject.set(x, "TNF_UNCHANGED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTNF_UNKNOWN(value: Double): Self = StObject.set(x, "TNF_UNKNOWN", value.asInstanceOf[js.Any])
+      inline def setTNF_UNKNOWN(value: Double): Self = StObject.set(x, "TNF_UNKNOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTNF_WELL_KNOWN(value: Double): Self = StObject.set(x, "TNF_WELL_KNOWN", value.asInstanceOf[js.Any])
+      inline def setTNF_WELL_KNOWN(value: Double): Self = StObject.set(x, "TNF_WELL_KNOWN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextHelper(value: TextHelper): Self = StObject.set(x, "textHelper", value.asInstanceOf[js.Any])
+      inline def setTextHelper(value: TextHelper): Self = StObject.set(x, "textHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextRecord(value: (String, String, js.Array[Double]) => NdefRecord): Self = StObject.set(x, "textRecord", js.Any.fromFunction3(value))
+      inline def setTextRecord(value: (String, String, js.Array[Double]) => NdefRecord): Self = StObject.set(x, "textRecord", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTnfToString(value: Double => String): Self = StObject.set(x, "tnfToString", js.Any.fromFunction1(value))
+      inline def setTnfToString(value: Double => String): Self = StObject.set(x, "tnfToString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUriHelper(value: UriHelper): Self = StObject.set(x, "uriHelper", value.asInstanceOf[js.Any])
+      inline def setUriHelper(value: UriHelper): Self = StObject.set(x, "uriHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriRecord(value: (String, js.Array[Double]) => NdefRecord): Self = StObject.set(x, "uriRecord", js.Any.fromFunction2(value))
+      inline def setUriRecord(value: (String, js.Array[Double]) => NdefRecord): Self = StObject.set(x, "uriRecord", js.Any.fromFunction2(value))
     }
   }
   
@@ -374,36 +335,27 @@ object PhoneGapNfc {
   }
   object NdefRecord {
     
-    @scala.inline
-    def apply(id: js.Array[Double], payload: js.Array[Double], tnf: Double, `type`: js.Array[Double]): NdefRecord = {
+    inline def apply(id: js.Array[Double], payload: js.Array[Double], tnf: Double, `type`: js.Array[Double]): NdefRecord = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], tnf = tnf.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NdefRecord]
     }
     
-    @scala.inline
-    implicit class NdefRecordMutableBuilder[Self <: NdefRecord] (val x: Self) extends AnyVal {
+    extension [Self <: NdefRecord](x: Self) {
       
-      @scala.inline
-      def setId(value: js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
+      inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
       
-      @scala.inline
-      def setPayload(value: js.Array[Double]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Array[Double]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadVarargs(value: Double*): Self = StObject.set(x, "payload", js.Array(value :_*))
+      inline def setPayloadVarargs(value: Double*): Self = StObject.set(x, "payload", js.Array(value :_*))
       
-      @scala.inline
-      def setTnf(value: Double): Self = StObject.set(x, "tnf", value.asInstanceOf[js.Any])
+      inline def setTnf(value: Double): Self = StObject.set(x, "tnf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.Array[Double]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Array[Double]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeVarargs(value: Double*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: Double*): Self = StObject.set(x, "type", js.Array(value :_*))
     }
   }
   
@@ -421,8 +373,7 @@ object PhoneGapNfc {
   }
   object NdefTag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canMakeReadOnly: Boolean,
       date: String,
       id: js.Array[Double],
@@ -437,23 +388,17 @@ object PhoneGapNfc {
       __obj.asInstanceOf[NdefTag]
     }
     
-    @scala.inline
-    implicit class NdefTagMutableBuilder[Self <: NdefTag] (val x: Self) extends AnyVal {
+    extension [Self <: NdefTag](x: Self) {
       
-      @scala.inline
-      def setCanMakeReadOnly(value: Boolean): Self = StObject.set(x, "canMakeReadOnly", value.asInstanceOf[js.Any])
+      inline def setCanMakeReadOnly(value: Boolean): Self = StObject.set(x, "canMakeReadOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWritable(value: Boolean): Self = StObject.set(x, "isWritable", value.asInstanceOf[js.Any])
+      inline def setIsWritable(value: Boolean): Self = StObject.set(x, "isWritable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNdefMessage(value: js.Array[NdefRecord]): Self = StObject.set(x, "ndefMessage", value.asInstanceOf[js.Any])
+      inline def setNdefMessage(value: js.Array[NdefRecord]): Self = StObject.set(x, "ndefMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNdefMessageVarargs(value: NdefRecord*): Self = StObject.set(x, "ndefMessage", js.Array(value :_*))
+      inline def setNdefMessageVarargs(value: NdefRecord*): Self = StObject.set(x, "ndefMessage", js.Array(value :_*))
     }
   }
   
@@ -721,33 +666,25 @@ object PhoneGapNfc {
   }
   object Tag {
     
-    @scala.inline
-    def apply(date: String, id: js.Array[Double], techTypes: js.Array[String], `type`: String): Tag = {
+    inline def apply(date: String, id: js.Array[Double], techTypes: js.Array[String], `type`: String): Tag = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], techTypes = techTypes.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
+      inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
       
-      @scala.inline
-      def setTechTypes(value: js.Array[String]): Self = StObject.set(x, "techTypes", value.asInstanceOf[js.Any])
+      inline def setTechTypes(value: js.Array[String]): Self = StObject.set(x, "techTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTechTypesVarargs(value: String*): Self = StObject.set(x, "techTypes", js.Array(value :_*))
+      inline def setTechTypesVarargs(value: String*): Self = StObject.set(x, "techTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -777,20 +714,16 @@ object PhoneGapNfc {
   }
   object TextHelper {
     
-    @scala.inline
-    def apply(decodePayload: js.Any => String, encodePayload: (String, String, String) => js.Array[Double]): TextHelper = {
+    inline def apply(decodePayload: js.Any => String, encodePayload: (String, String, String) => js.Array[Double]): TextHelper = {
       val __obj = js.Dynamic.literal(decodePayload = js.Any.fromFunction1(decodePayload), encodePayload = js.Any.fromFunction3(encodePayload))
       __obj.asInstanceOf[TextHelper]
     }
     
-    @scala.inline
-    implicit class TextHelperMutableBuilder[Self <: TextHelper] (val x: Self) extends AnyVal {
+    extension [Self <: TextHelper](x: Self) {
       
-      @scala.inline
-      def setDecodePayload(value: js.Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
+      inline def setDecodePayload(value: js.Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodePayload(value: (String, String, String) => js.Array[Double]): Self = StObject.set(x, "encodePayload", js.Any.fromFunction3(value))
+      inline def setEncodePayload(value: (String, String, String) => js.Array[Double]): Self = StObject.set(x, "encodePayload", js.Any.fromFunction3(value))
     }
   }
   
@@ -816,8 +749,7 @@ object PhoneGapNfc {
   }
   object UriHelper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       decodePayload: js.Any => String,
       encodePayload: String => js.Array[Double],
       protocols: js.Array[String]
@@ -826,20 +758,15 @@ object PhoneGapNfc {
       __obj.asInstanceOf[UriHelper]
     }
     
-    @scala.inline
-    implicit class UriHelperMutableBuilder[Self <: UriHelper] (val x: Self) extends AnyVal {
+    extension [Self <: UriHelper](x: Self) {
       
-      @scala.inline
-      def setDecodePayload(value: js.Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
+      inline def setDecodePayload(value: js.Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodePayload(value: String => js.Array[Double]): Self = StObject.set(x, "encodePayload", js.Any.fromFunction1(value))
+      inline def setEncodePayload(value: String => js.Array[Double]): Self = StObject.set(x, "encodePayload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+      inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     }
   }
   
@@ -865,8 +792,7 @@ object PhoneGapNfc {
   }
   object Util {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytesToHexString: js.Array[Double] => String,
       bytesToString: js.Array[Double] => String,
       stringToBytes: String => js.Array[Double]
@@ -875,17 +801,13 @@ object PhoneGapNfc {
       __obj.asInstanceOf[Util]
     }
     
-    @scala.inline
-    implicit class UtilMutableBuilder[Self <: Util] (val x: Self) extends AnyVal {
+    extension [Self <: Util](x: Self) {
       
-      @scala.inline
-      def setBytesToHexString(value: js.Array[Double] => String): Self = StObject.set(x, "bytesToHexString", js.Any.fromFunction1(value))
+      inline def setBytesToHexString(value: js.Array[Double] => String): Self = StObject.set(x, "bytesToHexString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBytesToString(value: js.Array[Double] => String): Self = StObject.set(x, "bytesToString", js.Any.fromFunction1(value))
+      inline def setBytesToString(value: js.Array[Double] => String): Self = StObject.set(x, "bytesToString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringToBytes(value: String => js.Array[Double]): Self = StObject.set(x, "stringToBytes", js.Any.fromFunction1(value))
+      inline def setStringToBytes(value: String => js.Array[Double]): Self = StObject.set(x, "stringToBytes", js.Any.fromFunction1(value))
     }
   }
   
@@ -904,26 +826,20 @@ object PhoneGapNfc {
   }
   object Window {
     
-    @scala.inline
-    def apply(fireNfcTagEvent: (TagEvent, String) => Unit, ndef: Ndef, nfc: Nfc, util: Util): Window = {
+    inline def apply(fireNfcTagEvent: (TagEvent, String) => Unit, ndef: Ndef, nfc: Nfc, util: Util): Window = {
       val __obj = js.Dynamic.literal(fireNfcTagEvent = js.Any.fromFunction2(fireNfcTagEvent), ndef = ndef.asInstanceOf[js.Any], nfc = nfc.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any])
       __obj.asInstanceOf[Window]
     }
     
-    @scala.inline
-    implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+    extension [Self <: Window](x: Self) {
       
-      @scala.inline
-      def setFireNfcTagEvent(value: (TagEvent, String) => Unit): Self = StObject.set(x, "fireNfcTagEvent", js.Any.fromFunction2(value))
+      inline def setFireNfcTagEvent(value: (TagEvent, String) => Unit): Self = StObject.set(x, "fireNfcTagEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNdef(value: Ndef): Self = StObject.set(x, "ndef", value.asInstanceOf[js.Any])
+      inline def setNdef(value: Ndef): Self = StObject.set(x, "ndef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNfc(value: Nfc): Self = StObject.set(x, "nfc", value.asInstanceOf[js.Any])
+      inline def setNfc(value: Nfc): Self = StObject.set(x, "nfc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+      inline def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
     }
   }
 }

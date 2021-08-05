@@ -23,28 +23,21 @@ trait UpdateMemberDetectorsRequest extends StObject {
 }
 object UpdateMemberDetectorsRequest {
   
-  @scala.inline
-  def apply(AccountIds: AccountIds, DetectorId: DetectorId): UpdateMemberDetectorsRequest = {
+  inline def apply(AccountIds: AccountIds, DetectorId: DetectorId): UpdateMemberDetectorsRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMemberDetectorsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMemberDetectorsRequestMutableBuilder[Self <: UpdateMemberDetectorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMemberDetectorsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDataSources(value: DataSourceConfigurations): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
+    inline def setDataSources(value: DataSourceConfigurations): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
+    inline def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

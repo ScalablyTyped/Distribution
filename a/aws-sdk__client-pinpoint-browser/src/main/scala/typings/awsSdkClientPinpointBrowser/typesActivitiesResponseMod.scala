@@ -23,29 +23,22 @@ object typesActivitiesResponseMod {
   }
   object ActivitiesResponse {
     
-    @scala.inline
-    def apply(): ActivitiesResponse = {
+    inline def apply(): ActivitiesResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActivitiesResponse]
     }
     
-    @scala.inline
-    implicit class ActivitiesResponseMutableBuilder[Self <: ActivitiesResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ActivitiesResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[ActivityResponse] | Iterable[ActivityResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[ActivityResponse] | Iterable[ActivityResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: ActivityResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: ActivityResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -61,23 +54,18 @@ object typesActivitiesResponseMod {
   }
   object UnmarshalledActivitiesResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledActivitiesResponse = {
+    inline def apply(): UnmarshalledActivitiesResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledActivitiesResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledActivitiesResponseMutableBuilder[Self <: UnmarshalledActivitiesResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledActivitiesResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[UnmarshalledActivityResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[UnmarshalledActivityResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: UnmarshalledActivityResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledActivityResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
     }
   }
 }

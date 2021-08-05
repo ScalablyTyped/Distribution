@@ -16,25 +16,19 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(location: js.Array[ReactText], reason: String): Location = {
+  inline def apply(location: js.Array[ReactText], reason: String): Location = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], serializable = false)
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setLocation(value: js.Array[ReactText]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Array[ReactText]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationVarargs(value: ReactText*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: ReactText*): Self = StObject.set(x, "location", js.Array(value :_*))
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializable(value: `false`): Self = StObject.set(x, "serializable", value.asInstanceOf[js.Any])
+    inline def setSerializable(value: `false`): Self = StObject.set(x, "serializable", value.asInstanceOf[js.Any])
   }
 }

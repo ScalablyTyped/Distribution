@@ -17,19 +17,15 @@ trait DownloadFileResult
 }
 object DownloadFileResult {
   
-  @scala.inline
-  def apply(errMsg: String, statusCode: Double, tempFilePath: String): DownloadFileResult = {
+  inline def apply(errMsg: String, statusCode: Double, tempFilePath: String): DownloadFileResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadFileResult]
   }
   
-  @scala.inline
-  implicit class DownloadFileResultMutableBuilder[Self <: DownloadFileResult] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadFileResult](x: Self) {
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }
 }

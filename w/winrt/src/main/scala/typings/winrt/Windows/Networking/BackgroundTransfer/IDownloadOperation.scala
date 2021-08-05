@@ -26,8 +26,7 @@ trait IDownloadOperation
 }
 object IDownloadOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachAsync: () => IAsyncOperationWithProgress[DownloadOperation, DownloadOperation],
     costPolicy: BackgroundTransferCostPolicy,
     getResponseInformation: () => ResponseInformation,
@@ -46,25 +45,18 @@ object IDownloadOperation {
     __obj.asInstanceOf[IDownloadOperation]
   }
   
-  @scala.inline
-  implicit class IDownloadOperationMutableBuilder[Self <: IDownloadOperation] (val x: Self) extends AnyVal {
+  extension [Self <: IDownloadOperation](x: Self) {
     
-    @scala.inline
-    def setAttachAsync(value: () => IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
+    inline def setAttachAsync(value: () => IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProgress(value: BackgroundDownloadProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: BackgroundDownloadProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultFile(value: IStorageFile): Self = StObject.set(x, "resultFile", value.asInstanceOf[js.Any])
+    inline def setResultFile(value: IStorageFile): Self = StObject.set(x, "resultFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartAsync(value: () => IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
+    inline def setStartAsync(value: () => IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
   }
 }

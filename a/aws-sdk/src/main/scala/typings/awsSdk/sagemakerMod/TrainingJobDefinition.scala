@@ -38,8 +38,7 @@ trait TrainingJobDefinition extends StObject {
 }
 object TrainingJobDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputDataConfig: InputDataConfig,
     OutputDataConfig: OutputDataConfig,
     ResourceConfig: ResourceConfig,
@@ -50,31 +49,22 @@ object TrainingJobDefinition {
     __obj.asInstanceOf[TrainingJobDefinition]
   }
   
-  @scala.inline
-  implicit class TrainingJobDefinitionMutableBuilder[Self <: TrainingJobDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingJobDefinition](x: Self) {
     
-    @scala.inline
-    def setHyperParameters(value: HyperParameters): Self = StObject.set(x, "HyperParameters", value.asInstanceOf[js.Any])
+    inline def setHyperParameters(value: HyperParameters): Self = StObject.set(x, "HyperParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperParametersUndefined: Self = StObject.set(x, "HyperParameters", js.undefined)
+    inline def setHyperParametersUndefined: Self = StObject.set(x, "HyperParameters", js.undefined)
     
-    @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
+    inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDataConfigVarargs(value: Channel*): Self = StObject.set(x, "InputDataConfig", js.Array(value :_*))
+    inline def setInputDataConfigVarargs(value: Channel*): Self = StObject.set(x, "InputDataConfig", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
+    inline def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceConfig(value: ResourceConfig): Self = StObject.set(x, "ResourceConfig", value.asInstanceOf[js.Any])
+    inline def setResourceConfig(value: ResourceConfig): Self = StObject.set(x, "ResourceConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoppingCondition(value: StoppingCondition): Self = StObject.set(x, "StoppingCondition", value.asInstanceOf[js.Any])
+    inline def setStoppingCondition(value: StoppingCondition): Self = StObject.set(x, "StoppingCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingInputMode(value: TrainingInputMode): Self = StObject.set(x, "TrainingInputMode", value.asInstanceOf[js.Any])
+    inline def setTrainingInputMode(value: TrainingInputMode): Self = StObject.set(x, "TrainingInputMode", value.asInstanceOf[js.Any])
   }
 }

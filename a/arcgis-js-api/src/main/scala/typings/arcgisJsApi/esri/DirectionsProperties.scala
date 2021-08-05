@@ -67,61 +67,43 @@ trait DirectionsProperties
 }
 object DirectionsProperties {
   
-  @scala.inline
-  def apply(): DirectionsProperties = {
+  inline def apply(): DirectionsProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectionsProperties]
   }
   
-  @scala.inline
-  implicit class DirectionsPropertiesMutableBuilder[Self <: DirectionsProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsProperties](x: Self) {
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setMaxStops(value: Double): Self = StObject.set(x, "maxStops", value.asInstanceOf[js.Any])
+    inline def setMaxStops(value: Double): Self = StObject.set(x, "maxStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStopsUndefined: Self = StObject.set(x, "maxStops", js.undefined)
+    inline def setMaxStopsUndefined: Self = StObject.set(x, "maxStops", js.undefined)
     
-    @scala.inline
-    def setRouteServiceUrl(value: String): Self = StObject.set(x, "routeServiceUrl", value.asInstanceOf[js.Any])
+    inline def setRouteServiceUrl(value: String): Self = StObject.set(x, "routeServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteServiceUrlUndefined: Self = StObject.set(x, "routeServiceUrl", js.undefined)
+    inline def setRouteServiceUrlUndefined: Self = StObject.set(x, "routeServiceUrl", js.undefined)
     
-    @scala.inline
-    def setRouteSymbol(value: SimpleLineSymbolProperties): Self = StObject.set(x, "routeSymbol", value.asInstanceOf[js.Any])
+    inline def setRouteSymbol(value: SimpleLineSymbolProperties): Self = StObject.set(x, "routeSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteSymbolUndefined: Self = StObject.set(x, "routeSymbol", js.undefined)
+    inline def setRouteSymbolUndefined: Self = StObject.set(x, "routeSymbol", js.undefined)
     
-    @scala.inline
-    def setSearchProperties(value: DirectionsSearchProperties): Self = StObject.set(x, "searchProperties", value.asInstanceOf[js.Any])
+    inline def setSearchProperties(value: DirectionsSearchProperties): Self = StObject.set(x, "searchProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPropertiesUndefined: Self = StObject.set(x, "searchProperties", js.undefined)
+    inline def setSearchPropertiesUndefined: Self = StObject.set(x, "searchProperties", js.undefined)
     
-    @scala.inline
-    def setStopSymbols(value: DirectionsStopSymbols): Self = StObject.set(x, "stopSymbols", value.asInstanceOf[js.Any])
+    inline def setStopSymbols(value: DirectionsStopSymbols): Self = StObject.set(x, "stopSymbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopSymbolsUndefined: Self = StObject.set(x, "stopSymbols", js.undefined)
+    inline def setStopSymbolsUndefined: Self = StObject.set(x, "stopSymbols", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: DirectionsViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: DirectionsViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

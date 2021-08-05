@@ -36,35 +36,26 @@ object webhookEndpoints {
   }
   object IWebhookCreateOptions {
     
-    @scala.inline
-    def apply(enabled_events: js.Array[EventType], url: String): IWebhookCreateOptions = {
+    inline def apply(enabled_events: js.Array[EventType], url: String): IWebhookCreateOptions = {
       val __obj = js.Dynamic.literal(enabled_events = enabled_events.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWebhookCreateOptions]
     }
     
-    @scala.inline
-    implicit class IWebhookCreateOptionsMutableBuilder[Self <: IWebhookCreateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWebhookCreateOptions](x: Self) {
       
-      @scala.inline
-      def setApi_version(value: String): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
+      inline def setApi_version(value: String): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_versionUndefined: Self = StObject.set(x, "api_version", js.undefined)
+      inline def setApi_versionUndefined: Self = StObject.set(x, "api_version", js.undefined)
       
-      @scala.inline
-      def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+      inline def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+      inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
       
-      @scala.inline
-      def setEnabled_events(value: js.Array[EventType]): Self = StObject.set(x, "enabled_events", value.asInstanceOf[js.Any])
+      inline def setEnabled_events(value: js.Array[EventType]): Self = StObject.set(x, "enabled_events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled_eventsVarargs(value: EventType*): Self = StObject.set(x, "enabled_events", js.Array(value :_*))
+      inline def setEnabled_eventsVarargs(value: EventType*): Self = StObject.set(x, "enabled_events", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,8 +121,7 @@ object webhookEndpoints {
   }
   object IWebhookEndpoint {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       api_version: String,
       created: Double,
       enabled_events: js.Array[EventType],
@@ -145,53 +135,37 @@ object webhookEndpoints {
       __obj.asInstanceOf[IWebhookEndpoint]
     }
     
-    @scala.inline
-    implicit class IWebhookEndpointMutableBuilder[Self <: IWebhookEndpoint] (val x: Self) extends AnyVal {
+    extension [Self <: IWebhookEndpoint](x: Self) {
       
-      @scala.inline
-      def setApi_version(value: String): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
+      inline def setApi_version(value: String): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationNull: Self = StObject.set(x, "application", null)
+      inline def setApplicationNull: Self = StObject.set(x, "application", null)
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled_events(value: js.Array[EventType]): Self = StObject.set(x, "enabled_events", value.asInstanceOf[js.Any])
+      inline def setEnabled_events(value: js.Array[EventType]): Self = StObject.set(x, "enabled_events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled_eventsVarargs(value: EventType*): Self = StObject.set(x, "enabled_events", js.Array(value :_*))
+      inline def setEnabled_eventsVarargs(value: EventType*): Self = StObject.set(x, "enabled_events", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setObject(value: webhook_endpoint): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: webhook_endpoint): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+      inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
       
-      @scala.inline
-      def setStatus(value: enabled | disabled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: enabled | disabled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,41 +196,30 @@ object webhookEndpoints {
   }
   object IWebhookUpdateOptions {
     
-    @scala.inline
-    def apply(): IWebhookUpdateOptions = {
+    inline def apply(): IWebhookUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWebhookUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IWebhookUpdateOptionsMutableBuilder[Self <: IWebhookUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWebhookUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEnabled_events(value: js.Array[EventType]): Self = StObject.set(x, "enabled_events", value.asInstanceOf[js.Any])
+      inline def setEnabled_events(value: js.Array[EventType]): Self = StObject.set(x, "enabled_events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled_eventsUndefined: Self = StObject.set(x, "enabled_events", js.undefined)
+      inline def setEnabled_eventsUndefined: Self = StObject.set(x, "enabled_events", js.undefined)
       
-      @scala.inline
-      def setEnabled_eventsVarargs(value: EventType*): Self = StObject.set(x, "enabled_events", js.Array(value :_*))
+      inline def setEnabled_eventsVarargs(value: EventType*): Self = StObject.set(x, "enabled_events", js.Array(value :_*))
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

@@ -22,8 +22,7 @@ trait IPixelPolygonGeometry
 }
 object IPixelPolygonGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contains: js.Array[Double] => Boolean,
     equals_ : IPixelGeometry => Boolean,
     events: IEventManager[js.Object],
@@ -42,22 +41,16 @@ object IPixelPolygonGeometry {
     __obj.asInstanceOf[IPixelPolygonGeometry]
   }
   
-  @scala.inline
-  implicit class IPixelPolygonGeometryMutableBuilder[Self <: IPixelPolygonGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: IPixelPolygonGeometry](x: Self) {
     
-    @scala.inline
-    def setContains(value: js.Array[Double] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: js.Array[Double] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
+    inline def setGetClosest(value: js.Array[Double] => js.Object): Self = StObject.set(x, "getClosest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCoordinates(value: () => js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
+    inline def setGetCoordinates(value: () => js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFillRule(value: () => evenOdd | nonZero): Self = StObject.set(x, "getFillRule", js.Any.fromFunction0(value))
+    inline def setGetFillRule(value: () => evenOdd | nonZero): Self = StObject.set(x, "getFillRule", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
   }
 }

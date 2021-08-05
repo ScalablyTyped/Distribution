@@ -15,6 +15,5 @@ object defaults {
   @JSImport("chart.js", "defaults.global")
   @js.native
   def global: ChartOptionsChartFontOpti = js.native
-  @scala.inline
-  def global_=(x: ChartOptionsChartFontOpti): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
+  inline def global_=(x: ChartOptionsChartFontOpti): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
 }

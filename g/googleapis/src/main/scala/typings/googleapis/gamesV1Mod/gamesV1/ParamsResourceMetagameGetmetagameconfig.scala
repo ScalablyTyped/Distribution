@@ -19,19 +19,15 @@ trait ParamsResourceMetagameGetmetagameconfig
 }
 object ParamsResourceMetagameGetmetagameconfig {
   
-  @scala.inline
-  def apply(): ParamsResourceMetagameGetmetagameconfig = {
+  inline def apply(): ParamsResourceMetagameGetmetagameconfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMetagameGetmetagameconfig]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMetagameGetmetagameconfigMutableBuilder[Self <: ParamsResourceMetagameGetmetagameconfig] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMetagameGetmetagameconfig](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

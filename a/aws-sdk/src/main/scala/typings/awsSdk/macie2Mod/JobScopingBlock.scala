@@ -13,22 +13,17 @@ trait JobScopingBlock extends StObject {
 }
 object JobScopingBlock {
   
-  @scala.inline
-  def apply(): JobScopingBlock = {
+  inline def apply(): JobScopingBlock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobScopingBlock]
   }
   
-  @scala.inline
-  implicit class JobScopingBlockMutableBuilder[Self <: JobScopingBlock] (val x: Self) extends AnyVal {
+  extension [Self <: JobScopingBlock](x: Self) {
     
-    @scala.inline
-    def setAnd(value: listOfJobScopeTerm): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+    inline def setAnd(value: listOfJobScopeTerm): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
+    inline def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
     
-    @scala.inline
-    def setAndVarargs(value: JobScopeTerm*): Self = StObject.set(x, "and", js.Array(value :_*))
+    inline def setAndVarargs(value: JobScopeTerm*): Self = StObject.set(x, "and", js.Array(value :_*))
   }
 }

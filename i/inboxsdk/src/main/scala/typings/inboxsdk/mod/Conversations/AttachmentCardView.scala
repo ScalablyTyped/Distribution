@@ -27,8 +27,7 @@ trait AttachmentCardView extends StObject {
 }
 object AttachmentCardView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addButton: CustomButtonDescriptor => Unit,
     destroyed: Boolean,
     getAttachmentType: () => String,
@@ -41,28 +40,20 @@ object AttachmentCardView {
     __obj.asInstanceOf[AttachmentCardView]
   }
   
-  @scala.inline
-  implicit class AttachmentCardViewMutableBuilder[Self <: AttachmentCardView] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentCardView](x: Self) {
     
-    @scala.inline
-    def setAddButton(value: CustomButtonDescriptor => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
+    inline def setAddButton(value: CustomButtonDescriptor => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+    inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAttachmentType(value: () => String): Self = StObject.set(x, "getAttachmentType", js.Any.fromFunction0(value))
+    inline def setGetAttachmentType(value: () => String): Self = StObject.set(x, "getAttachmentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDownloadURL(value: () => js.Promise[String]): Self = StObject.set(x, "getDownloadURL", js.Any.fromFunction0(value))
+    inline def setGetDownloadURL(value: () => js.Promise[String]): Self = StObject.set(x, "getDownloadURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMessageView(value: () => MessageView | Null): Self = StObject.set(x, "getMessageView", js.Any.fromFunction0(value))
+    inline def setGetMessageView(value: () => MessageView | Null): Self = StObject.set(x, "getMessageView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (destroy, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

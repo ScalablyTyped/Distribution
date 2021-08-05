@@ -12,22 +12,17 @@ trait GrammarToken extends StObject {
 }
 object GrammarToken {
   
-  @scala.inline
-  def apply(scopes: js.Array[String], value: String): GrammarToken = {
+  inline def apply(scopes: js.Array[String], value: String): GrammarToken = {
     val __obj = js.Dynamic.literal(scopes = scopes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrammarToken]
   }
   
-  @scala.inline
-  implicit class GrammarTokenMutableBuilder[Self <: GrammarToken] (val x: Self) extends AnyVal {
+  extension [Self <: GrammarToken](x: Self) {
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

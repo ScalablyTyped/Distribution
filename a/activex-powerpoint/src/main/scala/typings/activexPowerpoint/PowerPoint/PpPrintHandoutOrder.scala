@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpPrintHandoutOrder extends StObject
 object PpPrintHandoutOrder {
   
-  @scala.inline
-  def ppPrintHandoutHorizontalFirst: `2` = 2.asInstanceOf[`2`]
+  inline def ppPrintHandoutHorizontalFirst: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppPrintHandoutVerticalFirst: `1` = 1.asInstanceOf[`1`]
+  inline def ppPrintHandoutVerticalFirst: `1` = 1.asInstanceOf[`1`]
 }

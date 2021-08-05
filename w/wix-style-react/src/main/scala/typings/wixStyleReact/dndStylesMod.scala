@@ -38,8 +38,7 @@ object dndStylesMod extends Shortcut {
   }
   object dndStylesType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       gridItemPlaceholder: String,
       gridItemPreview: String,
       isInitialPositionToDrop: String,
@@ -54,35 +53,25 @@ object dndStylesMod extends Shortcut {
       __obj.asInstanceOf[dndStylesType]
     }
     
-    @scala.inline
-    implicit class dndStylesTypeMutableBuilder[Self <: dndStylesType] (val x: Self) extends AnyVal {
+    extension [Self <: dndStylesType](x: Self) {
       
-      @scala.inline
-      def setGridItemPlaceholder(value: String): Self = StObject.set(x, "gridItemPlaceholder", value.asInstanceOf[js.Any])
+      inline def setGridItemPlaceholder(value: String): Self = StObject.set(x, "gridItemPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridItemPreview(value: String): Self = StObject.set(x, "gridItemPreview", value.asInstanceOf[js.Any])
+      inline def setGridItemPreview(value: String): Self = StObject.set(x, "gridItemPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInitialPositionToDrop(value: String): Self = StObject.set(x, "isInitialPositionToDrop", value.asInstanceOf[js.Any])
+      inline def setIsInitialPositionToDrop(value: String): Self = StObject.set(x, "isInitialPositionToDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemPlaceholder(value: String): Self = StObject.set(x, "itemPlaceholder", value.asInstanceOf[js.Any])
+      inline def setItemPlaceholder(value: String): Self = StObject.set(x, "itemPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemPreview(value: String): Self = StObject.set(x, "itemPreview", value.asInstanceOf[js.Any])
+      inline def setItemPreview(value: String): Self = StObject.set(x, "itemPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithGridItemStrip(value: String): Self = StObject.set(x, "withGridItemStrip", value.asInstanceOf[js.Any])
+      inline def setWithGridItemStrip(value: String): Self = StObject.set(x, "withGridItemStrip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithGridItemStripRight(value: String): Self = StObject.set(x, "withGridItemStripRight", value.asInstanceOf[js.Any])
+      inline def setWithGridItemStripRight(value: String): Self = StObject.set(x, "withGridItemStripRight", value.asInstanceOf[js.Any])
     }
   }
 }

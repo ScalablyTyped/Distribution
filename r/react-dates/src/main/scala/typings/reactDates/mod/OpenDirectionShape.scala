@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpenDirectionShape extends StObject
 object OpenDirectionShape {
   
-  @scala.inline
-  def down: typings.reactDates.reactDatesStrings.down = "down".asInstanceOf[typings.reactDates.reactDatesStrings.down]
+  inline def down: typings.reactDates.reactDatesStrings.down = "down".asInstanceOf[typings.reactDates.reactDatesStrings.down]
   
-  @scala.inline
-  def up: typings.reactDates.reactDatesStrings.up = "up".asInstanceOf[typings.reactDates.reactDatesStrings.up]
+  inline def up: typings.reactDates.reactDatesStrings.up = "up".asInstanceOf[typings.reactDates.reactDatesStrings.up]
 }

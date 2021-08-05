@@ -33,8 +33,7 @@ trait OriginRequestPolicyConfig extends StObject {
 }
 object OriginRequestPolicyConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CookiesConfig: OriginRequestPolicyCookiesConfig,
     HeadersConfig: OriginRequestPolicyHeadersConfig,
     Name: String,
@@ -44,25 +43,18 @@ object OriginRequestPolicyConfig {
     __obj.asInstanceOf[OriginRequestPolicyConfig]
   }
   
-  @scala.inline
-  implicit class OriginRequestPolicyConfigMutableBuilder[Self <: OriginRequestPolicyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OriginRequestPolicyConfig](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setCookiesConfig(value: OriginRequestPolicyCookiesConfig): Self = StObject.set(x, "CookiesConfig", value.asInstanceOf[js.Any])
+    inline def setCookiesConfig(value: OriginRequestPolicyCookiesConfig): Self = StObject.set(x, "CookiesConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersConfig(value: OriginRequestPolicyHeadersConfig): Self = StObject.set(x, "HeadersConfig", value.asInstanceOf[js.Any])
+    inline def setHeadersConfig(value: OriginRequestPolicyHeadersConfig): Self = StObject.set(x, "HeadersConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringsConfig(value: OriginRequestPolicyQueryStringsConfig): Self = StObject.set(x, "QueryStringsConfig", value.asInstanceOf[js.Any])
+    inline def setQueryStringsConfig(value: OriginRequestPolicyQueryStringsConfig): Self = StObject.set(x, "QueryStringsConfig", value.asInstanceOf[js.Any])
   }
 }

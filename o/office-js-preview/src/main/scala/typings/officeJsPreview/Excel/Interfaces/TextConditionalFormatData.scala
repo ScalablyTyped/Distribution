@@ -26,25 +26,19 @@ trait TextConditionalFormatData extends StObject {
 }
 object TextConditionalFormatData {
   
-  @scala.inline
-  def apply(): TextConditionalFormatData = {
+  inline def apply(): TextConditionalFormatData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextConditionalFormatData]
   }
   
-  @scala.inline
-  implicit class TextConditionalFormatDataMutableBuilder[Self <: TextConditionalFormatData] (val x: Self) extends AnyVal {
+  extension [Self <: TextConditionalFormatData](x: Self) {
     
-    @scala.inline
-    def setFormat(value: ConditionalRangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ConditionalRangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setRule(value: ConditionalTextComparisonRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ConditionalTextComparisonRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

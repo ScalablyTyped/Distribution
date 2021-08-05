@@ -23,16 +23,14 @@ object ProximitySensor {
     * @return Returns the ProximitySensor object from its identifier.
     */
   /* static member */
-  @scala.inline
-  def fromId(sensorId: String): typings.winrtUwp.Windows.Devices.Sensors.ProximitySensor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(sensorId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.ProximitySensor]
+  inline def fromId(sensorId: String): typings.winrtUwp.Windows.Devices.Sensors.ProximitySensor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(sensorId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.ProximitySensor]
   
   /**
     * Gets the device selector.
     * @return Returns the device selector. If no device selector is available, this method returns null.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+  inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   
   /**
     * Gets readings from the trigger details in background task.
@@ -40,6 +38,5 @@ object ProximitySensor {
     * @return The collection of proximity data retrieved from the trigger details.
     */
   /* static member */
-  @scala.inline
-  def getReadingsFromTriggerDetails(triggerDetails: typings.winrtUwp.Windows.Devices.Sensors.SensorDataThresholdTriggerDetails): IVectorView[typings.winrtUwp.Windows.Devices.Sensors.ProximitySensorReading] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReadingsFromTriggerDetails")(triggerDetails.asInstanceOf[js.Any]).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Devices.Sensors.ProximitySensorReading]]
+  inline def getReadingsFromTriggerDetails(triggerDetails: typings.winrtUwp.Windows.Devices.Sensors.SensorDataThresholdTriggerDetails): IVectorView[typings.winrtUwp.Windows.Devices.Sensors.ProximitySensorReading] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReadingsFromTriggerDetails")(triggerDetails.asInstanceOf[js.Any]).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Devices.Sensors.ProximitySensorReading]]
 }

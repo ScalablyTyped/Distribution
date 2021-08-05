@@ -21,8 +21,7 @@ trait NodeSelectorTerm extends StObject {
 }
 object NodeSelectorTerm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     matchExpressions: js.Array[NodeSelectorRequirement],
     matchFields: js.Array[NodeSelectorRequirement]
   ): NodeSelectorTerm = {
@@ -30,19 +29,14 @@ object NodeSelectorTerm {
     __obj.asInstanceOf[NodeSelectorTerm]
   }
   
-  @scala.inline
-  implicit class NodeSelectorTermMutableBuilder[Self <: NodeSelectorTerm] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSelectorTerm](x: Self) {
     
-    @scala.inline
-    def setMatchExpressions(value: js.Array[NodeSelectorRequirement]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
+    inline def setMatchExpressions(value: js.Array[NodeSelectorRequirement]): Self = StObject.set(x, "matchExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchExpressionsVarargs(value: NodeSelectorRequirement*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
+    inline def setMatchExpressionsVarargs(value: NodeSelectorRequirement*): Self = StObject.set(x, "matchExpressions", js.Array(value :_*))
     
-    @scala.inline
-    def setMatchFields(value: js.Array[NodeSelectorRequirement]): Self = StObject.set(x, "matchFields", value.asInstanceOf[js.Any])
+    inline def setMatchFields(value: js.Array[NodeSelectorRequirement]): Self = StObject.set(x, "matchFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchFieldsVarargs(value: NodeSelectorRequirement*): Self = StObject.set(x, "matchFields", js.Array(value :_*))
+    inline def setMatchFieldsVarargs(value: NodeSelectorRequirement*): Self = StObject.set(x, "matchFields", js.Array(value :_*))
   }
 }

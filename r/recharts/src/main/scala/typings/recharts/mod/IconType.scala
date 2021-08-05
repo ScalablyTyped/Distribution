@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IconType extends StObject
 object IconType {
   
-  @scala.inline
-  def circle: typings.recharts.rechartsStrings.circle = "circle".asInstanceOf[typings.recharts.rechartsStrings.circle]
+  inline def circle: typings.recharts.rechartsStrings.circle = "circle".asInstanceOf[typings.recharts.rechartsStrings.circle]
   
-  @scala.inline
-  def cross: typings.recharts.rechartsStrings.cross = "cross".asInstanceOf[typings.recharts.rechartsStrings.cross]
+  inline def cross: typings.recharts.rechartsStrings.cross = "cross".asInstanceOf[typings.recharts.rechartsStrings.cross]
   
-  @scala.inline
-  def diamond: typings.recharts.rechartsStrings.diamond = "diamond".asInstanceOf[typings.recharts.rechartsStrings.diamond]
+  inline def diamond: typings.recharts.rechartsStrings.diamond = "diamond".asInstanceOf[typings.recharts.rechartsStrings.diamond]
   
-  @scala.inline
-  def line: typings.recharts.rechartsStrings.line = "line".asInstanceOf[typings.recharts.rechartsStrings.line]
+  inline def line: typings.recharts.rechartsStrings.line = "line".asInstanceOf[typings.recharts.rechartsStrings.line]
   
-  @scala.inline
-  def plainline: typings.recharts.rechartsStrings.plainline = "plainline".asInstanceOf[typings.recharts.rechartsStrings.plainline]
+  inline def plainline: typings.recharts.rechartsStrings.plainline = "plainline".asInstanceOf[typings.recharts.rechartsStrings.plainline]
   
-  @scala.inline
-  def rect: typings.recharts.rechartsStrings.rect = "rect".asInstanceOf[typings.recharts.rechartsStrings.rect]
+  inline def rect: typings.recharts.rechartsStrings.rect = "rect".asInstanceOf[typings.recharts.rechartsStrings.rect]
   
-  @scala.inline
-  def square: typings.recharts.rechartsStrings.square = "square".asInstanceOf[typings.recharts.rechartsStrings.square]
+  inline def square: typings.recharts.rechartsStrings.square = "square".asInstanceOf[typings.recharts.rechartsStrings.square]
   
-  @scala.inline
-  def star: typings.recharts.rechartsStrings.star = "star".asInstanceOf[typings.recharts.rechartsStrings.star]
+  inline def star: typings.recharts.rechartsStrings.star = "star".asInstanceOf[typings.recharts.rechartsStrings.star]
   
-  @scala.inline
-  def triangle: typings.recharts.rechartsStrings.triangle = "triangle".asInstanceOf[typings.recharts.rechartsStrings.triangle]
+  inline def triangle: typings.recharts.rechartsStrings.triangle = "triangle".asInstanceOf[typings.recharts.rechartsStrings.triangle]
   
-  @scala.inline
-  def wye: typings.recharts.rechartsStrings.wye = "wye".asInstanceOf[typings.recharts.rechartsStrings.wye]
+  inline def wye: typings.recharts.rechartsStrings.wye = "wye".asInstanceOf[typings.recharts.rechartsStrings.wye]
 }

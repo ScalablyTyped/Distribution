@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlInsertShiftDirection extends StObject
 object XlInsertShiftDirection {
   
-  @scala.inline
-  def xlShiftDown: `-4121` = -4121.asInstanceOf[`-4121`]
+  inline def xlShiftDown: `-4121` = -4121.asInstanceOf[`-4121`]
   
-  @scala.inline
-  def xlShiftToRight: `-4161` = -4161.asInstanceOf[`-4161`]
+  inline def xlShiftToRight: `-4161` = -4161.asInstanceOf[`-4161`]
 }

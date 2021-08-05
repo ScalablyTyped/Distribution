@@ -21,19 +21,15 @@ trait SchemaLogConfigDataAccessOptions extends StObject {
 }
 object SchemaLogConfigDataAccessOptions {
   
-  @scala.inline
-  def apply(): SchemaLogConfigDataAccessOptions = {
+  inline def apply(): SchemaLogConfigDataAccessOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLogConfigDataAccessOptions]
   }
   
-  @scala.inline
-  implicit class SchemaLogConfigDataAccessOptionsMutableBuilder[Self <: SchemaLogConfigDataAccessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLogConfigDataAccessOptions](x: Self) {
     
-    @scala.inline
-    def setLogMode(value: String): Self = StObject.set(x, "logMode", value.asInstanceOf[js.Any])
+    inline def setLogMode(value: String): Self = StObject.set(x, "logMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogModeUndefined: Self = StObject.set(x, "logMode", js.undefined)
+    inline def setLogModeUndefined: Self = StObject.set(x, "logMode", js.undefined)
   }
 }

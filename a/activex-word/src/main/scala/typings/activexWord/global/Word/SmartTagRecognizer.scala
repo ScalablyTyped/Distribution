@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.SmartTagRecognizer")
 @js.native
-class SmartTagRecognizer protected ()
+/* private */ class SmartTagRecognizer ()
   extends StObject
      with typings.activexWord.Word.SmartTagRecognizer {
   
@@ -31,7 +31,7 @@ class SmartTagRecognizer protected ()
   /* CompleteClass */
   override val ProgID: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.SmartTagRecognizer_typekey")
   var WordDotSmartTagRecognizer_typekey: typings.activexWord.Word.SmartTagRecognizer = js.native
 }

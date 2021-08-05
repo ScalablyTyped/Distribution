@@ -17,6 +17,5 @@ object IgnoreElementsStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(source: typings.wonderFrp.streamMod.Stream): typings.wonderFrp.ignoreElementsStreamMod.IgnoreElementsStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.ignoreElementsStreamMod.IgnoreElementsStream]
+  inline def create(source: typings.wonderFrp.streamMod.Stream): typings.wonderFrp.ignoreElementsStreamMod.IgnoreElementsStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.ignoreElementsStreamMod.IgnoreElementsStream]
 }

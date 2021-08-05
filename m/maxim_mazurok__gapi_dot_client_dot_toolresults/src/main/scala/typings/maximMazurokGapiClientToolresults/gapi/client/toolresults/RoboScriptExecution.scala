@@ -14,25 +14,19 @@ trait RoboScriptExecution extends StObject {
 }
 object RoboScriptExecution {
   
-  @scala.inline
-  def apply(): RoboScriptExecution = {
+  inline def apply(): RoboScriptExecution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoboScriptExecution]
   }
   
-  @scala.inline
-  implicit class RoboScriptExecutionMutableBuilder[Self <: RoboScriptExecution] (val x: Self) extends AnyVal {
+  extension [Self <: RoboScriptExecution](x: Self) {
     
-    @scala.inline
-    def setSuccessfulActions(value: Double): Self = StObject.set(x, "successfulActions", value.asInstanceOf[js.Any])
+    inline def setSuccessfulActions(value: Double): Self = StObject.set(x, "successfulActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulActionsUndefined: Self = StObject.set(x, "successfulActions", js.undefined)
+    inline def setSuccessfulActionsUndefined: Self = StObject.set(x, "successfulActions", js.undefined)
     
-    @scala.inline
-    def setTotalActions(value: Double): Self = StObject.set(x, "totalActions", value.asInstanceOf[js.Any])
+    inline def setTotalActions(value: Double): Self = StObject.set(x, "totalActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalActionsUndefined: Self = StObject.set(x, "totalActions", js.undefined)
+    inline def setTotalActionsUndefined: Self = StObject.set(x, "totalActions", js.undefined)
   }
 }

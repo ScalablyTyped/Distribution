@@ -42,36 +42,27 @@ trait JobInfoProperties extends StObject {
 }
 object JobInfoProperties {
   
-  @scala.inline
-  def apply(): JobInfoProperties = {
+  inline def apply(): JobInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobInfoProperties]
   }
   
-  @scala.inline
-  implicit class JobInfoPropertiesMutableBuilder[Self <: JobInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: JobInfoProperties](x: Self) {
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setJobStatus(
+    inline def setJobStatus(
       value: `job-cancelled` | `job-cancelling` | `job-deleted` | `job-deleting` | `job-timed-out` | `job-executing` | `job-failed` | `job-new` | `job-submitted` | `job-succeeded` | `job-waiting`
     ): Self = StObject.set(x, "jobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "jobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "jobStatus", js.undefined)
     
-    @scala.inline
-    def setMessages(value: js.Array[GPMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[GPMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: GPMessageProperties*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: GPMessageProperties*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

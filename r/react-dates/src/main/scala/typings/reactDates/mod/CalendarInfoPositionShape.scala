@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CalendarInfoPositionShape extends StObject
 object CalendarInfoPositionShape {
   
-  @scala.inline
-  def after: typings.reactDates.reactDatesStrings.after = "after".asInstanceOf[typings.reactDates.reactDatesStrings.after]
+  inline def after: typings.reactDates.reactDatesStrings.after = "after".asInstanceOf[typings.reactDates.reactDatesStrings.after]
   
-  @scala.inline
-  def before: typings.reactDates.reactDatesStrings.before = "before".asInstanceOf[typings.reactDates.reactDatesStrings.before]
+  inline def before: typings.reactDates.reactDatesStrings.before = "before".asInstanceOf[typings.reactDates.reactDatesStrings.before]
   
-  @scala.inline
-  def bottom: typings.reactDates.reactDatesStrings.bottom = "bottom".asInstanceOf[typings.reactDates.reactDatesStrings.bottom]
+  inline def bottom: typings.reactDates.reactDatesStrings.bottom = "bottom".asInstanceOf[typings.reactDates.reactDatesStrings.bottom]
   
-  @scala.inline
-  def top: typings.reactDates.reactDatesStrings.top = "top".asInstanceOf[typings.reactDates.reactDatesStrings.top]
+  inline def top: typings.reactDates.reactDatesStrings.top = "top".asInstanceOf[typings.reactDates.reactDatesStrings.top]
 }

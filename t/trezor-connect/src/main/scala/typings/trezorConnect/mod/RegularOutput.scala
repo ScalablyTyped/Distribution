@@ -16,25 +16,19 @@ trait RegularOutput
 }
 object RegularOutput {
   
-  @scala.inline
-  def apply(address: String, amount: String): RegularOutput = {
+  inline def apply(address: String, amount: String): RegularOutput = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegularOutput]
   }
   
-  @scala.inline
-  implicit class RegularOutputMutableBuilder[Self <: RegularOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RegularOutput](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript_type(value: String): Self = StObject.set(x, "script_type", value.asInstanceOf[js.Any])
+    inline def setScript_type(value: String): Self = StObject.set(x, "script_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript_typeUndefined: Self = StObject.set(x, "script_type", js.undefined)
+    inline def setScript_typeUndefined: Self = StObject.set(x, "script_type", js.undefined)
   }
 }

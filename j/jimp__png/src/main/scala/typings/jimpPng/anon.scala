@@ -25,18 +25,15 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("image/png")(true)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setImageSlashpng(value: `true`): Self = StObject.set(x, "image/png", value.asInstanceOf[js.Any])
+      inline def setImageSlashpng(value: `true`): Self = StObject.set(x, "image/png", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,21 +44,17 @@ object anon {
   }
   object Imagepng {
     
-    @scala.inline
-    def apply(imageSlashpng: js.Array[String]): Imagepng = {
+    inline def apply(imageSlashpng: js.Array[String]): Imagepng = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("image/png")(imageSlashpng.asInstanceOf[js.Any])
       __obj.asInstanceOf[Imagepng]
     }
     
-    @scala.inline
-    implicit class ImagepngMutableBuilder[Self <: Imagepng] (val x: Self) extends AnyVal {
+    extension [Self <: Imagepng](x: Self) {
       
-      @scala.inline
-      def setImageSlashpng(value: js.Array[String]): Self = StObject.set(x, "image/png", value.asInstanceOf[js.Any])
+      inline def setImageSlashpng(value: js.Array[String]): Self = StObject.set(x, "image/png", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSlashpngVarargs(value: String*): Self = StObject.set(x, "image/png", js.Array(value :_*))
+      inline def setImageSlashpngVarargs(value: String*): Self = StObject.set(x, "image/png", js.Array(value :_*))
     }
   }
   
@@ -74,18 +67,15 @@ object anon {
   }
   object ImagepngDecoderFn {
     
-    @scala.inline
-    def apply(imageSlashpng: /* data */ Buffer => Bitmap): ImagepngDecoderFn = {
+    inline def apply(imageSlashpng: /* data */ Buffer => Bitmap): ImagepngDecoderFn = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("image/png")(js.Any.fromFunction1(imageSlashpng))
       __obj.asInstanceOf[ImagepngDecoderFn]
     }
     
-    @scala.inline
-    implicit class ImagepngDecoderFnMutableBuilder[Self <: ImagepngDecoderFn] (val x: Self) extends AnyVal {
+    extension [Self <: ImagepngDecoderFn](x: Self) {
       
-      @scala.inline
-      def setImageSlashpng(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/png", js.Any.fromFunction1(value))
+      inline def setImageSlashpng(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/png", js.Any.fromFunction1(value))
     }
   }
   
@@ -98,18 +88,15 @@ object anon {
   }
   object ImagepngEncoderFn {
     
-    @scala.inline
-    def apply(imageSlashpng: Image => Buffer): ImagepngEncoderFn = {
+    inline def apply(imageSlashpng: Image => Buffer): ImagepngEncoderFn = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("image/png")(js.Any.fromFunction1(imageSlashpng))
       __obj.asInstanceOf[ImagepngEncoderFn]
     }
     
-    @scala.inline
-    implicit class ImagepngEncoderFnMutableBuilder[Self <: ImagepngEncoderFn] (val x: Self) extends AnyVal {
+    extension [Self <: ImagepngEncoderFn](x: Self) {
       
-      @scala.inline
-      def setImageSlashpng(value: Image => Buffer): Self = StObject.set(x, "image/png", js.Any.fromFunction1(value))
+      inline def setImageSlashpng(value: Image => Buffer): Self = StObject.set(x, "image/png", js.Any.fromFunction1(value))
     }
   }
   
@@ -132,35 +119,26 @@ object anon {
   }
   object MIMEPNG {
     
-    @scala.inline
-    def apply(): MIMEPNG = {
+    inline def apply(): MIMEPNG = {
       val __obj = js.Dynamic.literal(MIME_PNG = "image/png", PNG_FILTER_AUTO = -1, PNG_FILTER_AVERAGE = 3, PNG_FILTER_NONE = 0, PNG_FILTER_PATH = 4, PNG_FILTER_SUB = 1, PNG_FILTER_UP = 2)
       __obj.asInstanceOf[MIMEPNG]
     }
     
-    @scala.inline
-    implicit class MIMEPNGMutableBuilder[Self <: MIMEPNG] (val x: Self) extends AnyVal {
+    extension [Self <: MIMEPNG](x: Self) {
       
-      @scala.inline
-      def setMIME_PNG(value: imageSlashpng): Self = StObject.set(x, "MIME_PNG", value.asInstanceOf[js.Any])
+      inline def setMIME_PNG(value: imageSlashpng): Self = StObject.set(x, "MIME_PNG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPNG_FILTER_AUTO(value: `-1`): Self = StObject.set(x, "PNG_FILTER_AUTO", value.asInstanceOf[js.Any])
+      inline def setPNG_FILTER_AUTO(value: `-1`): Self = StObject.set(x, "PNG_FILTER_AUTO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPNG_FILTER_AVERAGE(value: `3`): Self = StObject.set(x, "PNG_FILTER_AVERAGE", value.asInstanceOf[js.Any])
+      inline def setPNG_FILTER_AVERAGE(value: `3`): Self = StObject.set(x, "PNG_FILTER_AVERAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPNG_FILTER_NONE(value: typings.jimpPng.jimpPngNumbers.`0`): Self = StObject.set(x, "PNG_FILTER_NONE", value.asInstanceOf[js.Any])
+      inline def setPNG_FILTER_NONE(value: typings.jimpPng.jimpPngNumbers.`0`): Self = StObject.set(x, "PNG_FILTER_NONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPNG_FILTER_PATH(value: `4`): Self = StObject.set(x, "PNG_FILTER_PATH", value.asInstanceOf[js.Any])
+      inline def setPNG_FILTER_PATH(value: `4`): Self = StObject.set(x, "PNG_FILTER_PATH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPNG_FILTER_SUB(value: `1`): Self = StObject.set(x, "PNG_FILTER_SUB", value.asInstanceOf[js.Any])
+      inline def setPNG_FILTER_SUB(value: `1`): Self = StObject.set(x, "PNG_FILTER_SUB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPNG_FILTER_UP(value: `2`): Self = StObject.set(x, "PNG_FILTER_UP", value.asInstanceOf[js.Any])
+      inline def setPNG_FILTER_UP(value: `2`): Self = StObject.set(x, "PNG_FILTER_UP", value.asInstanceOf[js.Any])
     }
   }
 }

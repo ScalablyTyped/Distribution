@@ -24,8 +24,7 @@ trait XStatusIndicatorFactory
 }
 object XStatusIndicatorFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createStatusIndicator: () => XStatusIndicator,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XStatusIndicatorFactory {
     __obj.asInstanceOf[XStatusIndicatorFactory]
   }
   
-  @scala.inline
-  implicit class XStatusIndicatorFactoryMutableBuilder[Self <: XStatusIndicatorFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XStatusIndicatorFactory](x: Self) {
     
-    @scala.inline
-    def setCreateStatusIndicator(value: () => XStatusIndicator): Self = StObject.set(x, "createStatusIndicator", js.Any.fromFunction0(value))
+    inline def setCreateStatusIndicator(value: () => XStatusIndicator): Self = StObject.set(x, "createStatusIndicator", js.Any.fromFunction0(value))
   }
 }

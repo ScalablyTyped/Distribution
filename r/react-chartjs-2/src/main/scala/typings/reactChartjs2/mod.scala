@@ -62,8 +62,7 @@ object mod {
     @JSImport("react-chartjs-2", "defaults.global")
     @js.native
     def global: ChartOptions & ChartFontOptions = js.native
-    @scala.inline
-    def global_=(x: ChartOptions & ChartFontOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
+    inline def global_=(x: ChartOptions & ChartFontOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -104,95 +103,66 @@ object mod {
   }
   object ChartComponentProps {
     
-    @scala.inline
-    def apply(data: ChartData[typings.chartJs.mod.ChartData]): ChartComponentProps = {
+    inline def apply(data: ChartData[typings.chartJs.mod.ChartData]): ChartComponentProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChartComponentProps]
     }
     
-    @scala.inline
-    implicit class ChartComponentPropsMutableBuilder[Self <: ChartComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChartComponentProps](x: Self) {
       
-      @scala.inline
-      def setData(value: ChartData[typings.chartJs.mod.ChartData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ChartData[typings.chartJs.mod.ChartData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFunction1(value: /* element */ HTMLElement => typings.chartJs.mod.ChartData): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
+      inline def setDataFunction1(value: /* element */ HTMLElement => typings.chartJs.mod.ChartData): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDatasetKeyProvider(value: /* any */ js.Any => js.Any): Self = StObject.set(x, "datasetKeyProvider", js.Any.fromFunction1(value))
+      inline def setDatasetKeyProvider(value: /* any */ js.Any => js.Any): Self = StObject.set(x, "datasetKeyProvider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDatasetKeyProviderUndefined: Self = StObject.set(x, "datasetKeyProvider", js.undefined)
+      inline def setDatasetKeyProviderUndefined: Self = StObject.set(x, "datasetKeyProvider", js.undefined)
       
-      @scala.inline
-      def setGetDatasetAtEvent(value: /* e */ js.Any => Unit): Self = StObject.set(x, "getDatasetAtEvent", js.Any.fromFunction1(value))
+      inline def setGetDatasetAtEvent(value: /* e */ js.Any => Unit): Self = StObject.set(x, "getDatasetAtEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDatasetAtEventUndefined: Self = StObject.set(x, "getDatasetAtEvent", js.undefined)
+      inline def setGetDatasetAtEventUndefined: Self = StObject.set(x, "getDatasetAtEvent", js.undefined)
       
-      @scala.inline
-      def setGetElementAtEvent(value: /* e */ js.Any => Unit): Self = StObject.set(x, "getElementAtEvent", js.Any.fromFunction1(value))
+      inline def setGetElementAtEvent(value: /* e */ js.Any => Unit): Self = StObject.set(x, "getElementAtEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetElementAtEventUndefined: Self = StObject.set(x, "getElementAtEvent", js.undefined)
+      inline def setGetElementAtEventUndefined: Self = StObject.set(x, "getElementAtEvent", js.undefined)
       
-      @scala.inline
-      def setGetElementsAtEvent(value: /* e */ js.Any => Unit): Self = StObject.set(x, "getElementsAtEvent", js.Any.fromFunction1(value))
+      inline def setGetElementsAtEvent(value: /* e */ js.Any => Unit): Self = StObject.set(x, "getElementsAtEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetElementsAtEventUndefined: Self = StObject.set(x, "getElementsAtEvent", js.undefined)
+      inline def setGetElementsAtEventUndefined: Self = StObject.set(x, "getElementsAtEvent", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLegend(value: ChartLegendOptions): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      inline def setLegend(value: ChartLegendOptions): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+      inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
       
-      @scala.inline
-      def setOnElementsClick(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onElementsClick", js.Any.fromFunction1(value))
+      inline def setOnElementsClick(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onElementsClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnElementsClickUndefined: Self = StObject.set(x, "onElementsClick", js.undefined)
+      inline def setOnElementsClickUndefined: Self = StObject.set(x, "onElementsClick", js.undefined)
       
-      @scala.inline
-      def setOptions(value: ChartOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ChartOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[js.Object]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[js.Object]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: js.Object*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: js.Object*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setRedraw(value: Boolean): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
+      inline def setRedraw(value: Boolean): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
+      inline def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
       
-      @scala.inline
-      def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -205,8 +175,7 @@ object mod {
        with ChartComponentProps
   object LinearComponentProps {
     
-    @scala.inline
-    def apply(data: ChartData[typings.chartJs.mod.ChartData]): LinearComponentProps = {
+    inline def apply(data: ChartData[typings.chartJs.mod.ChartData]): LinearComponentProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinearComponentProps]
     }

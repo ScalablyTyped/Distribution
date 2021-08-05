@@ -13,8 +13,7 @@ trait C extends StObject {
 }
 object C {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: ParamListBase,
     b: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String
   ): C = {
@@ -22,14 +21,11 @@ object C {
     __obj.asInstanceOf[C]
   }
   
-  @scala.inline
-  implicit class CMutableBuilder[Self <: C] (val x: Self) extends AnyVal {
+  extension [Self <: C](x: Self) {
     
-    @scala.inline
-    def setA(value: ParamListBase): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: ParamListBase): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(
+    inline def setB(
       value: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String
     ): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
   }

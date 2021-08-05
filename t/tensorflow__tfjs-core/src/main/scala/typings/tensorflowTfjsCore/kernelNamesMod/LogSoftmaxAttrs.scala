@@ -10,16 +10,13 @@ trait LogSoftmaxAttrs extends StObject {
 }
 object LogSoftmaxAttrs {
   
-  @scala.inline
-  def apply(axis: Double): LogSoftmaxAttrs = {
+  inline def apply(axis: Double): LogSoftmaxAttrs = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogSoftmaxAttrs]
   }
   
-  @scala.inline
-  implicit class LogSoftmaxAttrsMutableBuilder[Self <: LogSoftmaxAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: LogSoftmaxAttrs](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
   }
 }

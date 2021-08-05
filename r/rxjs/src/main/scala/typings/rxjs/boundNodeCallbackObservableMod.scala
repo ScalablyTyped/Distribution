@@ -18,24 +18,21 @@ object boundNodeCallbackObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](callbackFunc: js.Function): js.Function1[
+    inline def create[T](callbackFunc: js.Function): js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
       ]]
-    @scala.inline
-    def create[R](
+    inline def create[R](
       callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], js.Any]
     ): js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[R](
+    inline def create[R](
       callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], js.Any],
       selector: Unit
     ): js.Function0[
@@ -43,8 +40,7 @@ object boundNodeCallbackObservableMod {
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[R](
+    inline def create[R](
       callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], js.Any],
       selector: Unit,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
@@ -53,16 +49,14 @@ object boundNodeCallbackObservableMod {
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T](callbackFunc: js.Function, selector: js.Function1[/* repeated */ js.Any, T]): js.Function1[
+    inline def create[T](callbackFunc: js.Function, selector: js.Function1[/* repeated */ js.Any, T]): js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
       ]]
-    @scala.inline
-    def create[T](
+    inline def create[T](
       callbackFunc: js.Function,
       selector: js.Function1[/* repeated */ js.Any, T],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
@@ -73,16 +67,14 @@ object boundNodeCallbackObservableMod {
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
       ]]
-    @scala.inline
-    def create[T](callbackFunc: js.Function, selector: Unit): js.Function1[
+    inline def create[T](callbackFunc: js.Function, selector: Unit): js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(callbackFunc.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
       ]]
-    @scala.inline
-    def create[T](
+    inline def create[T](
       callbackFunc: js.Function,
       selector: Unit,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
@@ -93,8 +85,7 @@ object boundNodeCallbackObservableMod {
         /* repeated */ js.Any, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any
       ]]
-    @scala.inline
-    def create[T, R](
+    inline def create[T, R](
       callbackFunc: js.Function2[
           /* v1 */ T, 
           /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
@@ -107,8 +98,7 @@ object boundNodeCallbackObservableMod {
         /* v1 */ T, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, R](
+    inline def create[T, R](
       callbackFunc: js.Function2[
           /* v1 */ T, 
           /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
@@ -122,8 +112,7 @@ object boundNodeCallbackObservableMod {
         /* v1 */ T, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, R](
+    inline def create[T, R](
       callbackFunc: js.Function2[
           /* v1 */ T, 
           /* callback */ js.Function2[/* err */ js.Any, /* result */ R, js.Any], 
@@ -138,8 +127,7 @@ object boundNodeCallbackObservableMod {
         /* v1 */ T, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, R](
+    inline def create[T, T2, R](
       callbackFunc: js.Function3[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -155,8 +143,7 @@ object boundNodeCallbackObservableMod {
         /* v2 */ T2, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, R](
+    inline def create[T, T2, R](
       callbackFunc: js.Function3[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -173,8 +160,7 @@ object boundNodeCallbackObservableMod {
         /* v2 */ T2, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, R](
+    inline def create[T, T2, R](
       callbackFunc: js.Function3[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -192,8 +178,7 @@ object boundNodeCallbackObservableMod {
         /* v2 */ T2, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, R](
+    inline def create[T, T2, T3, R](
       callbackFunc: js.Function4[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -212,8 +197,7 @@ object boundNodeCallbackObservableMod {
         /* v3 */ T3, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, R](
+    inline def create[T, T2, T3, R](
       callbackFunc: js.Function4[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -233,8 +217,7 @@ object boundNodeCallbackObservableMod {
         /* v3 */ T3, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, R](
+    inline def create[T, T2, T3, R](
       callbackFunc: js.Function4[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -255,8 +238,7 @@ object boundNodeCallbackObservableMod {
         /* v3 */ T3, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, T4, R](
+    inline def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -278,8 +260,7 @@ object boundNodeCallbackObservableMod {
         /* v4 */ T4, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, T4, R](
+    inline def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -302,8 +283,7 @@ object boundNodeCallbackObservableMod {
         /* v4 */ T4, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, T4, R](
+    inline def create[T, T2, T3, T4, R](
       callbackFunc: js.Function5[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -327,8 +307,7 @@ object boundNodeCallbackObservableMod {
         /* v4 */ T4, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, T4, T5, R](
+    inline def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -353,8 +332,7 @@ object boundNodeCallbackObservableMod {
         /* v5 */ T5, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, T4, T5, R](
+    inline def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -380,8 +358,7 @@ object boundNodeCallbackObservableMod {
         /* v5 */ T5, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, T4, T5, R](
+    inline def create[T, T2, T3, T4, T5, R](
       callbackFunc: js.Function6[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -408,8 +385,7 @@ object boundNodeCallbackObservableMod {
         /* v5 */ T5, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, T4, T5, T6, R](
+    inline def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -437,8 +413,7 @@ object boundNodeCallbackObservableMod {
         /* v6 */ T6, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, T4, T5, T6, R](
+    inline def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
           /* v1 */ T, 
           /* v2 */ T2, 
@@ -467,8 +442,7 @@ object boundNodeCallbackObservableMod {
         /* v6 */ T6, 
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
       ]]
-    @scala.inline
-    def create[T, T2, T3, T4, T5, T6, R](
+    inline def create[T, T2, T3, T4, T5, T6, R](
       callbackFunc: js.Function7[
           /* v1 */ T, 
           /* v2 */ T2, 

@@ -13,19 +13,15 @@ trait UpdateRuntimeConfigurationOutput extends StObject {
 }
 object UpdateRuntimeConfigurationOutput {
   
-  @scala.inline
-  def apply(): UpdateRuntimeConfigurationOutput = {
+  inline def apply(): UpdateRuntimeConfigurationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRuntimeConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class UpdateRuntimeConfigurationOutputMutableBuilder[Self <: UpdateRuntimeConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRuntimeConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setRuntimeConfiguration(value: RuntimeConfiguration): Self = StObject.set(x, "RuntimeConfiguration", value.asInstanceOf[js.Any])
+    inline def setRuntimeConfiguration(value: RuntimeConfiguration): Self = StObject.set(x, "RuntimeConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeConfigurationUndefined: Self = StObject.set(x, "RuntimeConfiguration", js.undefined)
+    inline def setRuntimeConfigurationUndefined: Self = StObject.set(x, "RuntimeConfiguration", js.undefined)
   }
 }

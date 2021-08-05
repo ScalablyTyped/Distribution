@@ -14,25 +14,19 @@ trait LatLongRect extends StObject {
 }
 object LatLongRect {
   
-  @scala.inline
-  def apply(): LatLongRect = {
+  inline def apply(): LatLongRect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LatLongRect]
   }
   
-  @scala.inline
-  implicit class LatLongRectMutableBuilder[Self <: LatLongRect] (val x: Self) extends AnyVal {
+  extension [Self <: LatLongRect](x: Self) {
     
-    @scala.inline
-    def setMaxLatLng(value: LatLng): Self = StObject.set(x, "maxLatLng", value.asInstanceOf[js.Any])
+    inline def setMaxLatLng(value: LatLng): Self = StObject.set(x, "maxLatLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLatLngUndefined: Self = StObject.set(x, "maxLatLng", js.undefined)
+    inline def setMaxLatLngUndefined: Self = StObject.set(x, "maxLatLng", js.undefined)
     
-    @scala.inline
-    def setMinLatLng(value: LatLng): Self = StObject.set(x, "minLatLng", value.asInstanceOf[js.Any])
+    inline def setMinLatLng(value: LatLng): Self = StObject.set(x, "minLatLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLatLngUndefined: Self = StObject.set(x, "minLatLng", js.undefined)
+    inline def setMinLatLngUndefined: Self = StObject.set(x, "minLatLng", js.undefined)
   }
 }

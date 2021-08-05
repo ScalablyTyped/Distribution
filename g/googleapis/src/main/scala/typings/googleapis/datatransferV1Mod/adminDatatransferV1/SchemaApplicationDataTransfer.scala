@@ -27,34 +27,25 @@ trait SchemaApplicationDataTransfer extends StObject {
 }
 object SchemaApplicationDataTransfer {
   
-  @scala.inline
-  def apply(): SchemaApplicationDataTransfer = {
+  inline def apply(): SchemaApplicationDataTransfer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApplicationDataTransfer]
   }
   
-  @scala.inline
-  implicit class SchemaApplicationDataTransferMutableBuilder[Self <: SchemaApplicationDataTransfer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApplicationDataTransfer](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+    inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
     
-    @scala.inline
-    def setApplicationTransferParams(value: js.Array[SchemaApplicationTransferParam]): Self = StObject.set(x, "applicationTransferParams", value.asInstanceOf[js.Any])
+    inline def setApplicationTransferParams(value: js.Array[SchemaApplicationTransferParam]): Self = StObject.set(x, "applicationTransferParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationTransferParamsUndefined: Self = StObject.set(x, "applicationTransferParams", js.undefined)
+    inline def setApplicationTransferParamsUndefined: Self = StObject.set(x, "applicationTransferParams", js.undefined)
     
-    @scala.inline
-    def setApplicationTransferParamsVarargs(value: SchemaApplicationTransferParam*): Self = StObject.set(x, "applicationTransferParams", js.Array(value :_*))
+    inline def setApplicationTransferParamsVarargs(value: SchemaApplicationTransferParam*): Self = StObject.set(x, "applicationTransferParams", js.Array(value :_*))
     
-    @scala.inline
-    def setApplicationTransferStatus(value: String): Self = StObject.set(x, "applicationTransferStatus", value.asInstanceOf[js.Any])
+    inline def setApplicationTransferStatus(value: String): Self = StObject.set(x, "applicationTransferStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationTransferStatusUndefined: Self = StObject.set(x, "applicationTransferStatus", js.undefined)
+    inline def setApplicationTransferStatusUndefined: Self = StObject.set(x, "applicationTransferStatus", js.undefined)
   }
 }

@@ -21,19 +21,15 @@ trait ILinkDecorations extends StObject {
 }
 object ILinkDecorations {
   
-  @scala.inline
-  def apply(pointerCursor: Boolean, underline: Boolean): ILinkDecorations = {
+  inline def apply(pointerCursor: Boolean, underline: Boolean): ILinkDecorations = {
     val __obj = js.Dynamic.literal(pointerCursor = pointerCursor.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinkDecorations]
   }
   
-  @scala.inline
-  implicit class ILinkDecorationsMutableBuilder[Self <: ILinkDecorations] (val x: Self) extends AnyVal {
+  extension [Self <: ILinkDecorations](x: Self) {
     
-    @scala.inline
-    def setPointerCursor(value: Boolean): Self = StObject.set(x, "pointerCursor", value.asInstanceOf[js.Any])
+    inline def setPointerCursor(value: Boolean): Self = StObject.set(x, "pointerCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
   }
 }

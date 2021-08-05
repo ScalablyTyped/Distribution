@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SmartHomeV1ExecuteStatus extends StObject
 object SmartHomeV1ExecuteStatus {
   
-  @scala.inline
-  def ERROR: typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR = "ERROR".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR]
+  inline def ERROR: typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR = "ERROR".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ERROR]
   
-  @scala.inline
-  def OFFLINE: typings.actionsOnGoogle.actionsOnGoogleStrings.OFFLINE = "OFFLINE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OFFLINE]
+  inline def OFFLINE: typings.actionsOnGoogle.actionsOnGoogleStrings.OFFLINE = "OFFLINE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OFFLINE]
   
-  @scala.inline
-  def PENDING: typings.actionsOnGoogle.actionsOnGoogleStrings.PENDING = "PENDING".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PENDING]
+  inline def PENDING: typings.actionsOnGoogle.actionsOnGoogleStrings.PENDING = "PENDING".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PENDING]
   
-  @scala.inline
-  def SUCCESS: typings.actionsOnGoogle.actionsOnGoogleStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SUCCESS]
+  inline def SUCCESS: typings.actionsOnGoogle.actionsOnGoogleStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SUCCESS]
 }

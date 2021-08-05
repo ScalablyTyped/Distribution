@@ -75,17 +75,14 @@ object serviceAccountMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ServiceAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ServiceAccount]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ServiceAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceAccount]
+    inline def get(name: String, id: Input[ID]): ServiceAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ServiceAccount]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): ServiceAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ServiceAccount]
     
     /**
       * Returns true if the given object is an instance of ServiceAccount.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/serviceAccount.ServiceAccount */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/serviceAccount.ServiceAccount */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/serviceAccount.ServiceAccount */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/serviceAccount.ServiceAccount */ Boolean]
   }
   
   trait ServiceAccountArgs extends StObject {
@@ -126,56 +123,40 @@ object serviceAccountMod {
   }
   object ServiceAccountArgs {
     
-    @scala.inline
-    def apply(): ServiceAccountArgs = {
+    inline def apply(): ServiceAccountArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceAccountArgs]
     }
     
-    @scala.inline
-    implicit class ServiceAccountArgsMutableBuilder[Self <: ServiceAccountArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceAccountArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setAutomountServiceAccountToken(value: Input[Boolean]): Self = StObject.set(x, "automountServiceAccountToken", value.asInstanceOf[js.Any])
+      inline def setAutomountServiceAccountToken(value: Input[Boolean]): Self = StObject.set(x, "automountServiceAccountToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomountServiceAccountTokenUndefined: Self = StObject.set(x, "automountServiceAccountToken", js.undefined)
+      inline def setAutomountServiceAccountTokenUndefined: Self = StObject.set(x, "automountServiceAccountToken", js.undefined)
       
-      @scala.inline
-      def setImagePullSecrets(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.LocalObjectReference]]]): Self = StObject.set(x, "imagePullSecrets", value.asInstanceOf[js.Any])
+      inline def setImagePullSecrets(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.LocalObjectReference]]]): Self = StObject.set(x, "imagePullSecrets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagePullSecretsUndefined: Self = StObject.set(x, "imagePullSecrets", js.undefined)
+      inline def setImagePullSecretsUndefined: Self = StObject.set(x, "imagePullSecrets", js.undefined)
       
-      @scala.inline
-      def setImagePullSecretsVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.LocalObjectReference]*): Self = StObject.set(x, "imagePullSecrets", js.Array(value :_*))
+      inline def setImagePullSecretsVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.LocalObjectReference]*): Self = StObject.set(x, "imagePullSecrets", js.Array(value :_*))
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ServiceAccount]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ServiceAccount]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setSecrets(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.ObjectReference]]]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+      inline def setSecrets(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.ObjectReference]]]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
+      inline def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
       
-      @scala.inline
-      def setSecretsVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.ObjectReference]*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+      inline def setSecretsVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.ObjectReference]*): Self = StObject.set(x, "secrets", js.Array(value :_*))
     }
   }
 }

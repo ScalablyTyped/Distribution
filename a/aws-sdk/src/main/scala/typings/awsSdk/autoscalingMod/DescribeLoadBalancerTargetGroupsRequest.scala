@@ -23,28 +23,21 @@ trait DescribeLoadBalancerTargetGroupsRequest extends StObject {
 }
 object DescribeLoadBalancerTargetGroupsRequest {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName): DescribeLoadBalancerTargetGroupsRequest = {
+  inline def apply(AutoScalingGroupName: ResourceName): DescribeLoadBalancerTargetGroupsRequest = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLoadBalancerTargetGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLoadBalancerTargetGroupsRequestMutableBuilder[Self <: DescribeLoadBalancerTargetGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLoadBalancerTargetGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

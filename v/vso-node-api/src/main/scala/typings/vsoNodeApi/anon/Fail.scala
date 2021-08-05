@@ -12,19 +12,15 @@ trait Fail extends StObject {
 }
 object Fail {
   
-  @scala.inline
-  def apply(fail: scala.Double, omit: scala.Double): Fail = {
+  inline def apply(fail: scala.Double, omit: scala.Double): Fail = {
     val __obj = js.Dynamic.literal(fail = fail.asInstanceOf[js.Any], omit = omit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fail]
   }
   
-  @scala.inline
-  implicit class FailMutableBuilder[Self <: Fail] (val x: Self) extends AnyVal {
+  extension [Self <: Fail](x: Self) {
     
-    @scala.inline
-    def setFail(value: scala.Double): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
+    inline def setFail(value: scala.Double): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmit(value: scala.Double): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
+    inline def setOmit(value: scala.Double): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
   }
 }

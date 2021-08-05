@@ -18,28 +18,21 @@ trait ListViolationEventsResponse extends StObject {
 }
 object ListViolationEventsResponse {
   
-  @scala.inline
-  def apply(): ListViolationEventsResponse = {
+  inline def apply(): ListViolationEventsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListViolationEventsResponse]
   }
   
-  @scala.inline
-  implicit class ListViolationEventsResponseMutableBuilder[Self <: ListViolationEventsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListViolationEventsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setViolationEvents(value: ViolationEvents): Self = StObject.set(x, "violationEvents", value.asInstanceOf[js.Any])
+    inline def setViolationEvents(value: ViolationEvents): Self = StObject.set(x, "violationEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationEventsUndefined: Self = StObject.set(x, "violationEvents", js.undefined)
+    inline def setViolationEventsUndefined: Self = StObject.set(x, "violationEvents", js.undefined)
     
-    @scala.inline
-    def setViolationEventsVarargs(value: ViolationEvent*): Self = StObject.set(x, "violationEvents", js.Array(value :_*))
+    inline def setViolationEventsVarargs(value: ViolationEvent*): Self = StObject.set(x, "violationEvents", js.Array(value :_*))
   }
 }

@@ -32,8 +32,7 @@ trait DictionaryBuilder_ extends StObject {
 }
 object DictionaryBuilder_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addTokenInfoDictionary: String => DictionaryBuilder_,
     build: () => DynamicDictionaries,
     buildConnectionCosts: () => ConnectionCosts,
@@ -50,46 +49,32 @@ object DictionaryBuilder_ {
     __obj.asInstanceOf[DictionaryBuilder_]
   }
   
-  @scala.inline
-  implicit class DictionaryBuilder_MutableBuilder[Self <: DictionaryBuilder_] (val x: Self) extends AnyVal {
+  extension [Self <: DictionaryBuilder_](x: Self) {
     
-    @scala.inline
-    def setAddTokenInfoDictionary(value: String => DictionaryBuilder_): Self = StObject.set(x, "addTokenInfoDictionary", js.Any.fromFunction1(value))
+    inline def setAddTokenInfoDictionary(value: String => DictionaryBuilder_): Self = StObject.set(x, "addTokenInfoDictionary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuild(value: () => DynamicDictionaries): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => DynamicDictionaries): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBuildConnectionCosts(value: () => ConnectionCosts): Self = StObject.set(x, "buildConnectionCosts", js.Any.fromFunction0(value))
+    inline def setBuildConnectionCosts(value: () => ConnectionCosts): Self = StObject.set(x, "buildConnectionCosts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBuildDoubleArray(value: () => DoubleArray): Self = StObject.set(x, "buildDoubleArray", js.Any.fromFunction0(value))
+    inline def setBuildDoubleArray(value: () => DoubleArray): Self = StObject.set(x, "buildDoubleArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBuildTokenInfoDictionary(value: () => Tokeninfodictionary): Self = StObject.set(x, "buildTokenInfoDictionary", js.Any.fromFunction0(value))
+    inline def setBuildTokenInfoDictionary(value: () => Tokeninfodictionary): Self = StObject.set(x, "buildTokenInfoDictionary", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBuildUnknownDictionary(value: () => UnknownDictionary): Self = StObject.set(x, "buildUnknownDictionary", js.Any.fromFunction0(value))
+    inline def setBuildUnknownDictionary(value: () => UnknownDictionary): Self = StObject.set(x, "buildUnknownDictionary", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCharDef(value: String => DictionaryBuilder_): Self = StObject.set(x, "charDef", js.Any.fromFunction1(value))
+    inline def setCharDef(value: String => DictionaryBuilder_): Self = StObject.set(x, "charDef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCostMatrix(value: String => DictionaryBuilder_): Self = StObject.set(x, "costMatrix", js.Any.fromFunction1(value))
+    inline def setCostMatrix(value: String => DictionaryBuilder_): Self = StObject.set(x, "costMatrix", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTid_entries(value: js.Array[String]): Self = StObject.set(x, "tid_entries", value.asInstanceOf[js.Any])
+    inline def setTid_entries(value: js.Array[String]): Self = StObject.set(x, "tid_entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTid_entriesVarargs(value: String*): Self = StObject.set(x, "tid_entries", js.Array(value :_*))
+    inline def setTid_entriesVarargs(value: String*): Self = StObject.set(x, "tid_entries", js.Array(value :_*))
     
-    @scala.inline
-    def setUnkDef(value: String => DictionaryBuilder_): Self = StObject.set(x, "unkDef", js.Any.fromFunction1(value))
+    inline def setUnkDef(value: String => DictionaryBuilder_): Self = StObject.set(x, "unkDef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnk_entries(value: js.Array[String]): Self = StObject.set(x, "unk_entries", value.asInstanceOf[js.Any])
+    inline def setUnk_entries(value: js.Array[String]): Self = StObject.set(x, "unk_entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnk_entriesVarargs(value: String*): Self = StObject.set(x, "unk_entries", js.Array(value :_*))
+    inline def setUnk_entriesVarargs(value: String*): Self = StObject.set(x, "unk_entries", js.Array(value :_*))
   }
 }

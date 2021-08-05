@@ -36,8 +36,7 @@ object mod {
       * @param key The key, if length 16 then AES 128 is used. For length 32, AES 256 is used.
       * @param iv Must have length 16.
       */
-    @scala.inline
-    def create(key: Uint8Array, iv: Uint8Array): js.Promise[Cipher] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Cipher]]
+    inline def create(key: Uint8Array, iv: Uint8Array): js.Promise[Cipher] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Cipher]]
     
     /**
       * AES Cipher in CTR mode.
@@ -50,20 +49,16 @@ object mod {
     }
     object Cipher {
       
-      @scala.inline
-      def apply(decrypt: Uint8Array => js.Promise[Uint8Array], encrypt: Uint8Array => js.Promise[Uint8Array]): Cipher = {
+      inline def apply(decrypt: Uint8Array => js.Promise[Uint8Array], encrypt: Uint8Array => js.Promise[Uint8Array]): Cipher = {
         val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt))
         __obj.asInstanceOf[Cipher]
       }
       
-      @scala.inline
-      implicit class CipherMutableBuilder[Self <: Cipher] (val x: Self) extends AnyVal {
+      extension [Self <: Cipher](x: Self) {
         
-        @scala.inline
-        def setDecrypt(value: Uint8Array => js.Promise[Uint8Array]): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
+        inline def setDecrypt(value: Uint8Array => js.Promise[Uint8Array]): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEncrypt(value: Uint8Array => js.Promise[Uint8Array]): Self = StObject.set(x, "encrypt", js.Any.fromFunction1(value))
+        inline def setEncrypt(value: Uint8Array => js.Promise[Uint8Array]): Self = StObject.set(x, "encrypt", js.Any.fromFunction1(value))
       }
     }
   }
@@ -74,20 +69,16 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(hash: String, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
+    inline def create(hash: String, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
     
     /**
       * Create a new HMAC Digest.
       */
-    @scala.inline
-    def create_SHA1(hash: SHA1, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
+    inline def create_SHA1(hash: SHA1, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
     
-    @scala.inline
-    def create_SHA256(hash: SHA256, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
+    inline def create_SHA256(hash: SHA256, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
     
-    @scala.inline
-    def create_SHA512(hash: SHA512, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
+    inline def create_SHA512(hash: SHA512, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
     
     /**
       * HMAC Digest.
@@ -100,20 +91,16 @@ object mod {
     }
     object Digest {
       
-      @scala.inline
-      def apply(digest: Uint8Array => js.Promise[Uint8Array], length: `20` | `32` | `64` | Double): Digest = {
+      inline def apply(digest: Uint8Array => js.Promise[Uint8Array], length: `20` | `32` | `64` | Double): Digest = {
         val __obj = js.Dynamic.literal(digest = js.Any.fromFunction1(digest), length = length.asInstanceOf[js.Any])
         __obj.asInstanceOf[Digest]
       }
       
-      @scala.inline
-      implicit class DigestMutableBuilder[Self <: Digest] (val x: Self) extends AnyVal {
+      extension [Self <: Digest](x: Self) {
         
-        @scala.inline
-        def setDigest(value: Uint8Array => js.Promise[Uint8Array]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
+        inline def setDigest(value: Uint8Array => js.Promise[Uint8Array]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLength(value: `20` | `32` | `64` | Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: `20` | `32` | `64` | Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -124,77 +111,51 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def generateEphemeralKeyPair(curve: String): js.Promise[GenSharedKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateEphemeralKeyPair")(curve.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GenSharedKey]]
-    @scala.inline
-    def generateEphemeralKeyPair(curve: CurveType): js.Promise[GenSharedKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateEphemeralKeyPair")(curve.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GenSharedKey]]
+    inline def generateEphemeralKeyPair(curve: String): js.Promise[GenSharedKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateEphemeralKeyPair")(curve.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GenSharedKey]]
+    inline def generateEphemeralKeyPair(curve: CurveType): js.Promise[GenSharedKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateEphemeralKeyPair")(curve.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GenSharedKey]]
     
-    @scala.inline
-    def generateKeyPair(`type`: String, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
-    @scala.inline
-    def generateKeyPair(`type`: KeyType, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
+    inline def generateKeyPair(`type`: String, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
+    inline def generateKeyPair(`type`: KeyType, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
     
-    @scala.inline
-    def generateKeyPairFromSeed(`type`: String, seed: Uint8Array, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(`type`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
-    @scala.inline
-    def generateKeyPairFromSeed(`type`: KeyType, seed: Uint8Array, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(`type`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
+    inline def generateKeyPairFromSeed(`type`: String, seed: Uint8Array, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(`type`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
+    inline def generateKeyPairFromSeed(`type`: KeyType, seed: Uint8Array, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(`type`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
     
-    @scala.inline
-    def generateKeyPairFromSeed_Ed25519(`type`: Ed25519, seed: Uint8Array, bits: Double): js.Promise[Ed25519PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(`type`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Ed25519PrivateKey]]
+    inline def generateKeyPairFromSeed_Ed25519(`type`: Ed25519, seed: Uint8Array, bits: Double): js.Promise[Ed25519PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(`type`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Ed25519PrivateKey]]
     
-    @scala.inline
-    def generateKeyPair_Ed25519(`type`: Ed25519): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ed25519PrivateKey]]
+    inline def generateKeyPair_Ed25519(`type`: Ed25519): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ed25519PrivateKey]]
     
-    @scala.inline
-    def generateKeyPair_RSA(`type`: RSA, bits: Double): js.Promise[RsaPrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RsaPrivateKey]]
+    inline def generateKeyPair_RSA(`type`: RSA, bits: Double): js.Promise[RsaPrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RsaPrivateKey]]
     
-    @scala.inline
-    def generateKeyPair_secp256k1(`type`: secp256k1): js.Promise[Secp256k1PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Secp256k1PrivateKey]]
+    inline def generateKeyPair_secp256k1(`type`: secp256k1): js.Promise[Secp256k1PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Secp256k1PrivateKey]]
     
     /**
       * Converts a PEM password protected private key into its representative object.
       * @param pem Password protected private key in PEM format.
       * @param password The password used to protect the key.
       */
-    @scala.inline
-    def `import`(pem: String, password: String): js.Promise[RsaPrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("_import")(pem.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RsaPrivateKey]]
-    @scala.inline
-    def `import`(pem: String, password: String, format: String): js.Promise[RsaPrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("_import")(pem.asInstanceOf[js.Any], password.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RsaPrivateKey]]
+    inline def `import`(pem: String, password: String): js.Promise[RsaPrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("_import")(pem.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RsaPrivateKey]]
+    inline def `import`(pem: String, password: String, format: String): js.Promise[RsaPrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("_import")(pem.asInstanceOf[js.Any], password.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RsaPrivateKey]]
     
-    @scala.inline
-    def keyStretcher(cipherType: String, hashType: String, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
-    @scala.inline
-    def keyStretcher(cipherType: String, hashType: String, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
-    @scala.inline
-    def keyStretcher(cipherType: String, hashType: HashType, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
-    @scala.inline
-    def keyStretcher(cipherType: String, hashType: HashType, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
-    @scala.inline
-    def keyStretcher(cipherType: CipherType, hashType: String, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
-    @scala.inline
-    def keyStretcher(cipherType: CipherType, hashType: String, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
-    @scala.inline
-    def keyStretcher(cipherType: CipherType, hashType: HashType, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
-    @scala.inline
-    def keyStretcher(cipherType: CipherType, hashType: HashType, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    inline def keyStretcher(cipherType: String, hashType: String, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    inline def keyStretcher(cipherType: String, hashType: String, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    inline def keyStretcher(cipherType: String, hashType: HashType, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    inline def keyStretcher(cipherType: String, hashType: HashType, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    inline def keyStretcher(cipherType: CipherType, hashType: String, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    inline def keyStretcher(cipherType: CipherType, hashType: String, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    inline def keyStretcher(cipherType: CipherType, hashType: HashType, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    inline def keyStretcher(cipherType: CipherType, hashType: HashType, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
     
     @JSImport("libp2p-crypto", "keys.keysPBM")
     @js.native
     val keysPBM: js.Any = js.native
     
-    @scala.inline
-    def marshalPrivateKey(key: PrivateKey): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("marshalPrivateKey")(key.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    @scala.inline
-    def marshalPrivateKey(key: PrivateKey, `type`: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPrivateKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-    @scala.inline
-    def marshalPrivateKey(key: PrivateKey, `type`: KeyType): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPrivateKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def marshalPrivateKey(key: PrivateKey): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("marshalPrivateKey")(key.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def marshalPrivateKey(key: PrivateKey, `type`: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPrivateKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def marshalPrivateKey(key: PrivateKey, `type`: KeyType): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPrivateKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def marshalPublicKey(key: PublicKey): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("marshalPublicKey")(key.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    @scala.inline
-    def marshalPublicKey(key: PublicKey, `type`: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPublicKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-    @scala.inline
-    def marshalPublicKey(key: PublicKey, `type`: KeyType): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPublicKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def marshalPublicKey(key: PublicKey): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("marshalPublicKey")(key.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def marshalPublicKey(key: PublicKey, `type`: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPublicKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def marshalPublicKey(key: PublicKey, `type`: KeyType): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPublicKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
     object supportedKeys {
       
@@ -240,17 +201,13 @@ object mod {
           override def verify(data: Uint8Array, sig: Uint8Array): js.Promise[Boolean] = js.native
         }
         
-        @scala.inline
-        def generateKeyPair(): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[js.Promise[Ed25519PrivateKey]]
+        inline def generateKeyPair(): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[js.Promise[Ed25519PrivateKey]]
         
-        @scala.inline
-        def generateKeyPairFromSeed(seed: Uint8Array): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ed25519PrivateKey]]
+        inline def generateKeyPairFromSeed(seed: Uint8Array): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ed25519PrivateKey]]
         
-        @scala.inline
-        def unmarshalEd25519PrivateKey(buf: Uint8Array): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalEd25519PrivateKey")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ed25519PrivateKey]]
+        inline def unmarshalEd25519PrivateKey(buf: Uint8Array): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalEd25519PrivateKey")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ed25519PrivateKey]]
         
-        @scala.inline
-        def unmarshalEd25519PublicKey(buf: Uint8Array): Ed25519PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalEd25519PublicKey")(buf.asInstanceOf[js.Any]).asInstanceOf[Ed25519PublicKey]
+        inline def unmarshalEd25519PublicKey(buf: Uint8Array): Ed25519PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalEd25519PublicKey")(buf.asInstanceOf[js.Any]).asInstanceOf[Ed25519PublicKey]
       }
       
       object rsa {
@@ -299,17 +256,13 @@ object mod {
           override def verify(data: Uint8Array, sig: Uint8Array): js.Promise[Boolean] = js.native
         }
         
-        @scala.inline
-        def fromJwk(jwk: Uint8Array): js.Promise[RsaPrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJwk")(jwk.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaPrivateKey]]
+        inline def fromJwk(jwk: Uint8Array): js.Promise[RsaPrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJwk")(jwk.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaPrivateKey]]
         
-        @scala.inline
-        def generateKeyPair(bits: Double): js.Promise[RsaPrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaPrivateKey]]
+        inline def generateKeyPair(bits: Double): js.Promise[RsaPrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaPrivateKey]]
         
-        @scala.inline
-        def unmarshalRsaPrivateKey(buf: Uint8Array): js.Promise[RsaPrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalRsaPrivateKey")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaPrivateKey]]
+        inline def unmarshalRsaPrivateKey(buf: Uint8Array): js.Promise[RsaPrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalRsaPrivateKey")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaPrivateKey]]
         
-        @scala.inline
-        def unmarshalRsaPublicKey(buf: Uint8Array): RsaPublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalRsaPublicKey")(buf.asInstanceOf[js.Any]).asInstanceOf[RsaPublicKey]
+        inline def unmarshalRsaPublicKey(buf: Uint8Array): RsaPublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalRsaPublicKey")(buf.asInstanceOf[js.Any]).asInstanceOf[RsaPublicKey]
       }
       
       object secp256k1 {
@@ -354,35 +307,25 @@ object mod {
           override def verify(data: Uint8Array, sig: Uint8Array): js.Promise[Boolean] = js.native
         }
         
-        @scala.inline
-        def generateKeyPair(): js.Promise[Secp256k1PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[js.Promise[Secp256k1PrivateKey]]
+        inline def generateKeyPair(): js.Promise[Secp256k1PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[js.Promise[Secp256k1PrivateKey]]
         
-        @scala.inline
-        def unmarshalSecp256k1PrivateKey(bytes: Uint8Array): js.Promise[Secp256k1PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalSecp256k1PrivateKey")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Secp256k1PrivateKey]]
+        inline def unmarshalSecp256k1PrivateKey(bytes: Uint8Array): js.Promise[Secp256k1PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalSecp256k1PrivateKey")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Secp256k1PrivateKey]]
         
-        @scala.inline
-        def unmarshalSecp256k1PublicKey(bytes: Uint8Array): Secp256k1PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalSecp256k1PublicKey")(bytes.asInstanceOf[js.Any]).asInstanceOf[Secp256k1PublicKey]
+        inline def unmarshalSecp256k1PublicKey(bytes: Uint8Array): Secp256k1PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalSecp256k1PublicKey")(bytes.asInstanceOf[js.Any]).asInstanceOf[Secp256k1PublicKey]
       }
     }
     
-    @scala.inline
-    def unmarshalPrivateKey(buf: Uint8Array): js.Promise[PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalPrivateKey")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PrivateKey]]
+    inline def unmarshalPrivateKey(buf: Uint8Array): js.Promise[PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalPrivateKey")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PrivateKey]]
     
-    @scala.inline
-    def unmarshalPublicKey(buf: Uint8Array): PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalPublicKey")(buf.asInstanceOf[js.Any]).asInstanceOf[PublicKey]
+    inline def unmarshalPublicKey(buf: Uint8Array): PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalPublicKey")(buf.asInstanceOf[js.Any]).asInstanceOf[PublicKey]
   }
   
-  @scala.inline
-  def pbkdf2(password: String, salt: String, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  @scala.inline
-  def pbkdf2(password: String, salt: Uint8Array, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  @scala.inline
-  def pbkdf2(password: Uint8Array, salt: String, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  @scala.inline
-  def pbkdf2(password: Uint8Array, salt: Uint8Array, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def pbkdf2(password: String, salt: String, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def pbkdf2(password: String, salt: Uint8Array, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def pbkdf2(password: Uint8Array, salt: String, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def pbkdf2(password: Uint8Array, salt: Uint8Array, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @scala.inline
-  def randomBytes(number: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(number.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def randomBytes(number: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(number.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
   /* Rewritten from type alias, can be one of: 
     - typings.libp2pCrypto.libp2pCryptoStrings.`AES-128`
@@ -392,14 +335,11 @@ object mod {
   trait CipherType extends StObject
   object CipherType {
     
-    @scala.inline
-    def `AES-128`: typings.libp2pCrypto.libp2pCryptoStrings.`AES-128` = "AES-128".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`AES-128`]
+    inline def `AES-128`: typings.libp2pCrypto.libp2pCryptoStrings.`AES-128` = "AES-128".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`AES-128`]
     
-    @scala.inline
-    def `AES-256`: typings.libp2pCrypto.libp2pCryptoStrings.`AES-256` = "AES-256".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`AES-256`]
+    inline def `AES-256`: typings.libp2pCrypto.libp2pCryptoStrings.`AES-256` = "AES-256".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`AES-256`]
     
-    @scala.inline
-    def Blowfish: typings.libp2pCrypto.libp2pCryptoStrings.Blowfish = "Blowfish".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.Blowfish]
+    inline def Blowfish: typings.libp2pCrypto.libp2pCryptoStrings.Blowfish = "Blowfish".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.Blowfish]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -410,14 +350,11 @@ object mod {
   trait CurveType extends StObject
   object CurveType {
     
-    @scala.inline
-    def `P-256`: typings.libp2pCrypto.libp2pCryptoStrings.`P-256` = "P-256".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`P-256`]
+    inline def `P-256`: typings.libp2pCrypto.libp2pCryptoStrings.`P-256` = "P-256".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`P-256`]
     
-    @scala.inline
-    def `P-384`: typings.libp2pCrypto.libp2pCryptoStrings.`P-384` = "P-384".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`P-384`]
+    inline def `P-384`: typings.libp2pCrypto.libp2pCryptoStrings.`P-384` = "P-384".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`P-384`]
     
-    @scala.inline
-    def `P-521`: typings.libp2pCrypto.libp2pCryptoStrings.`P-521` = "P-521".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`P-521`]
+    inline def `P-521`: typings.libp2pCrypto.libp2pCryptoStrings.`P-521` = "P-521".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.`P-521`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -428,14 +365,11 @@ object mod {
   trait HashType extends StObject
   object HashType {
     
-    @scala.inline
-    def SHA1: typings.libp2pCrypto.libp2pCryptoStrings.SHA1 = "SHA1".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.SHA1]
+    inline def SHA1: typings.libp2pCrypto.libp2pCryptoStrings.SHA1 = "SHA1".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.SHA1]
     
-    @scala.inline
-    def SHA256: typings.libp2pCrypto.libp2pCryptoStrings.SHA256 = "SHA256".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.SHA256]
+    inline def SHA256: typings.libp2pCrypto.libp2pCryptoStrings.SHA256 = "SHA256".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.SHA256]
     
-    @scala.inline
-    def SHA512: typings.libp2pCrypto.libp2pCryptoStrings.SHA512 = "SHA512".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.SHA512]
+    inline def SHA512: typings.libp2pCrypto.libp2pCryptoStrings.SHA512 = "SHA512".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.SHA512]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -446,14 +380,11 @@ object mod {
   trait KeyType extends StObject
   object KeyType {
     
-    @scala.inline
-    def Ed25519: typings.libp2pCrypto.libp2pCryptoStrings.Ed25519 = "Ed25519".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.Ed25519]
+    inline def Ed25519: typings.libp2pCrypto.libp2pCryptoStrings.Ed25519 = "Ed25519".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.Ed25519]
     
-    @scala.inline
-    def RSA: typings.libp2pCrypto.libp2pCryptoStrings.RSA = "RSA".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.RSA]
+    inline def RSA: typings.libp2pCrypto.libp2pCryptoStrings.RSA = "RSA".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.RSA]
     
-    @scala.inline
-    def secp256k1: typings.libp2pCrypto.libp2pCryptoStrings.secp256k1 = "secp256k1".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.secp256k1]
+    inline def secp256k1: typings.libp2pCrypto.libp2pCryptoStrings.secp256k1 = "secp256k1".asInstanceOf[typings.libp2pCrypto.libp2pCryptoStrings.secp256k1]
   }
   
   @js.native
@@ -515,8 +446,7 @@ object mod {
   }
   object PublicKey {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytes: Uint8Array,
       equals_ : PublicKey => Boolean,
       hash: () => js.Promise[Uint8Array],
@@ -528,23 +458,17 @@ object mod {
       __obj.asInstanceOf[PublicKey]
     }
     
-    @scala.inline
-    implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+    extension [Self <: PublicKey](x: Self) {
       
-      @scala.inline
-      def setBytes(value: Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_(value: PublicKey => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: PublicKey => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHash(value: () => js.Promise[Uint8Array]): Self = StObject.set(x, "hash", js.Any.fromFunction0(value))
+      inline def setHash(value: () => js.Promise[Uint8Array]): Self = StObject.set(x, "hash", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMarshal(value: () => Uint8Array): Self = StObject.set(x, "marshal", js.Any.fromFunction0(value))
+      inline def setMarshal(value: () => Uint8Array): Self = StObject.set(x, "marshal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVerify(value: (Uint8Array, Uint8Array) => js.Promise[Boolean]): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+      inline def setVerify(value: (Uint8Array, Uint8Array) => js.Promise[Boolean]): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
     }
   }
   
@@ -560,20 +484,16 @@ object mod {
   }
   object StretchPair {
     
-    @scala.inline
-    def apply(k1: Keystretcher, k2: Keystretcher): StretchPair = {
+    inline def apply(k1: Keystretcher, k2: Keystretcher): StretchPair = {
       val __obj = js.Dynamic.literal(k1 = k1.asInstanceOf[js.Any], k2 = k2.asInstanceOf[js.Any])
       __obj.asInstanceOf[StretchPair]
     }
     
-    @scala.inline
-    implicit class StretchPairMutableBuilder[Self <: StretchPair] (val x: Self) extends AnyVal {
+    extension [Self <: StretchPair](x: Self) {
       
-      @scala.inline
-      def setK1(value: Keystretcher): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
+      inline def setK1(value: Keystretcher): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setK2(value: Keystretcher): Self = StObject.set(x, "k2", value.asInstanceOf[js.Any])
+      inline def setK2(value: Keystretcher): Self = StObject.set(x, "k2", value.asInstanceOf[js.Any])
     }
   }
 }

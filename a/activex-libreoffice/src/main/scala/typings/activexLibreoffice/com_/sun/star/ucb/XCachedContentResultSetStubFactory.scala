@@ -21,8 +21,7 @@ trait XCachedContentResultSetStubFactory
 }
 object XCachedContentResultSetStubFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createCachedContentResultSetStub: XResultSet => XResultSet,
     queryInterface: `type` => js.Any,
@@ -32,10 +31,8 @@ object XCachedContentResultSetStubFactory {
     __obj.asInstanceOf[XCachedContentResultSetStubFactory]
   }
   
-  @scala.inline
-  implicit class XCachedContentResultSetStubFactoryMutableBuilder[Self <: XCachedContentResultSetStubFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XCachedContentResultSetStubFactory](x: Self) {
     
-    @scala.inline
-    def setCreateCachedContentResultSetStub(value: XResultSet => XResultSet): Self = StObject.set(x, "createCachedContentResultSetStub", js.Any.fromFunction1(value))
+    inline def setCreateCachedContentResultSetStub(value: XResultSet => XResultSet): Self = StObject.set(x, "createCachedContentResultSetStub", js.Any.fromFunction1(value))
   }
 }

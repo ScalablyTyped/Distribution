@@ -24,44 +24,32 @@ object anon {
   }
   object PartialCallOptions {
     
-    @scala.inline
-    def apply(): PartialCallOptions = {
+    inline def apply(): PartialCallOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialCallOptions]
     }
     
-    @scala.inline
-    implicit class PartialCallOptionsMutableBuilder[Self <: PartialCallOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialCallOptions](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: CallCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: CallCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setDeadline(value: Deadline): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+      inline def setDeadline(value: Deadline): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
+      inline def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setParent(value: Call): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Call): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setPropagate_flags(value: Double): Self = StObject.set(x, "propagate_flags", value.asInstanceOf[js.Any])
+      inline def setPropagate_flags(value: Double): Self = StObject.set(x, "propagate_flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropagate_flagsUndefined: Self = StObject.set(x, "propagate_flags", js.undefined)
+      inline def setPropagate_flagsUndefined: Self = StObject.set(x, "propagate_flags", js.undefined)
     }
   }
 }

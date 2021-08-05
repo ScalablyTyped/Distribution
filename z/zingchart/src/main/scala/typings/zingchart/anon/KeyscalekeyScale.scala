@@ -18,25 +18,19 @@ trait KeyscalekeyScale extends StObject {
 }
 object KeyscalekeyScale {
   
-  @scala.inline
-  def apply(): KeyscalekeyScale = {
+  inline def apply(): KeyscalekeyScale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyscalekeyScale]
   }
   
-  @scala.inline
-  implicit class KeyscalekeyScaleMutableBuilder[Self <: KeyscalekeyScale] (val x: Self) extends AnyVal {
+  extension [Self <: KeyscalekeyScale](x: Self) {
     
-    @scala.inline
-    def `setKey-scalekeyScale`(value: String): Self = StObject.set(x, "key-scalekeyScale", value.asInstanceOf[js.Any])
+    inline def `setKey-scalekeyScale`(value: String): Self = StObject.set(x, "key-scalekeyScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setKey-scalekeyScaleUndefined`: Self = StObject.set(x, "key-scalekeyScale", js.undefined)
+    inline def `setKey-scalekeyScaleUndefined`: Self = StObject.set(x, "key-scalekeyScale", js.undefined)
     
-    @scala.inline
-    def `setVal-scalevalScale`(value: String): Self = StObject.set(x, "val-scalevalScale", value.asInstanceOf[js.Any])
+    inline def `setVal-scalevalScale`(value: String): Self = StObject.set(x, "val-scalevalScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setVal-scalevalScaleUndefined`: Self = StObject.set(x, "val-scalevalScale", js.undefined)
+    inline def `setVal-scalevalScaleUndefined`: Self = StObject.set(x, "val-scalevalScale", js.undefined)
   }
 }

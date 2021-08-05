@@ -18,19 +18,15 @@ trait TerminologyData extends StObject {
 }
 object TerminologyData {
   
-  @scala.inline
-  def apply(File: TerminologyFile, Format: TerminologyDataFormat): TerminologyData = {
+  inline def apply(File: TerminologyFile, Format: TerminologyDataFormat): TerminologyData = {
     val __obj = js.Dynamic.literal(File = File.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminologyData]
   }
   
-  @scala.inline
-  implicit class TerminologyDataMutableBuilder[Self <: TerminologyData] (val x: Self) extends AnyVal {
+  extension [Self <: TerminologyData](x: Self) {
     
-    @scala.inline
-    def setFile(value: TerminologyFile): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+    inline def setFile(value: TerminologyFile): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: TerminologyDataFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: TerminologyDataFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
   }
 }

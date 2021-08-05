@@ -28,34 +28,25 @@ trait WorkflowExecutionSignaledEventAttributes extends StObject {
 }
 object WorkflowExecutionSignaledEventAttributes {
   
-  @scala.inline
-  def apply(signalName: SignalName): WorkflowExecutionSignaledEventAttributes = {
+  inline def apply(signalName: SignalName): WorkflowExecutionSignaledEventAttributes = {
     val __obj = js.Dynamic.literal(signalName = signalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowExecutionSignaledEventAttributes]
   }
   
-  @scala.inline
-  implicit class WorkflowExecutionSignaledEventAttributesMutableBuilder[Self <: WorkflowExecutionSignaledEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowExecutionSignaledEventAttributes](x: Self) {
     
-    @scala.inline
-    def setExternalInitiatedEventId(value: EventId): Self = StObject.set(x, "externalInitiatedEventId", value.asInstanceOf[js.Any])
+    inline def setExternalInitiatedEventId(value: EventId): Self = StObject.set(x, "externalInitiatedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalInitiatedEventIdUndefined: Self = StObject.set(x, "externalInitiatedEventId", js.undefined)
+    inline def setExternalInitiatedEventIdUndefined: Self = StObject.set(x, "externalInitiatedEventId", js.undefined)
     
-    @scala.inline
-    def setExternalWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "externalWorkflowExecution", value.asInstanceOf[js.Any])
+    inline def setExternalWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "externalWorkflowExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalWorkflowExecutionUndefined: Self = StObject.set(x, "externalWorkflowExecution", js.undefined)
+    inline def setExternalWorkflowExecutionUndefined: Self = StObject.set(x, "externalWorkflowExecution", js.undefined)
     
-    @scala.inline
-    def setInput(value: Data): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Data): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setSignalName(value: SignalName): Self = StObject.set(x, "signalName", value.asInstanceOf[js.Any])
+    inline def setSignalName(value: SignalName): Self = StObject.set(x, "signalName", value.asInstanceOf[js.Any])
   }
 }

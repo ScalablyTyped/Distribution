@@ -18,16 +18,13 @@ trait ASPxClientButtonClickEventArgs
 }
 object ASPxClientButtonClickEventArgs {
   
-  @scala.inline
-  def apply(cancelEventAndBubble: Boolean, processOnServer: Boolean): ASPxClientButtonClickEventArgs = {
+  inline def apply(cancelEventAndBubble: Boolean, processOnServer: Boolean): ASPxClientButtonClickEventArgs = {
     val __obj = js.Dynamic.literal(cancelEventAndBubble = cancelEventAndBubble.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientButtonClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientButtonClickEventArgsMutableBuilder[Self <: ASPxClientButtonClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientButtonClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancelEventAndBubble(value: Boolean): Self = StObject.set(x, "cancelEventAndBubble", value.asInstanceOf[js.Any])
+    inline def setCancelEventAndBubble(value: Boolean): Self = StObject.set(x, "cancelEventAndBubble", value.asInstanceOf[js.Any])
   }
 }

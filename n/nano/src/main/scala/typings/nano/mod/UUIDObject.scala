@@ -10,19 +10,15 @@ trait UUIDObject extends StObject {
 }
 object UUIDObject {
   
-  @scala.inline
-  def apply(uuids: js.Array[String]): UUIDObject = {
+  inline def apply(uuids: js.Array[String]): UUIDObject = {
     val __obj = js.Dynamic.literal(uuids = uuids.asInstanceOf[js.Any])
     __obj.asInstanceOf[UUIDObject]
   }
   
-  @scala.inline
-  implicit class UUIDObjectMutableBuilder[Self <: UUIDObject] (val x: Self) extends AnyVal {
+  extension [Self <: UUIDObject](x: Self) {
     
-    @scala.inline
-    def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
+    inline def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
   }
 }

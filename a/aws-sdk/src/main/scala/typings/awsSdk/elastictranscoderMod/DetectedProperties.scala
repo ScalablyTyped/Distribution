@@ -33,43 +33,31 @@ trait DetectedProperties extends StObject {
 }
 object DetectedProperties {
   
-  @scala.inline
-  def apply(): DetectedProperties = {
+  inline def apply(): DetectedProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectedProperties]
   }
   
-  @scala.inline
-  implicit class DetectedPropertiesMutableBuilder[Self <: DetectedProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DetectedProperties](x: Self) {
     
-    @scala.inline
-    def setDurationMillis(value: NullableLong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
+    inline def setDurationMillis(value: NullableLong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
+    inline def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
     
-    @scala.inline
-    def setFileSize(value: NullableLong): Self = StObject.set(x, "FileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: NullableLong): Self = StObject.set(x, "FileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSizeUndefined: Self = StObject.set(x, "FileSize", js.undefined)
+    inline def setFileSizeUndefined: Self = StObject.set(x, "FileSize", js.undefined)
     
-    @scala.inline
-    def setFrameRate(value: FloatString): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: FloatString): Self = StObject.set(x, "FrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
+    inline def setFrameRateUndefined: Self = StObject.set(x, "FrameRate", js.undefined)
     
-    @scala.inline
-    def setHeight(value: NullableInteger): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: NullableInteger): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: NullableInteger): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: NullableInteger): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

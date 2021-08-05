@@ -14,20 +14,16 @@ trait NumberFilterData
 }
 object NumberFilterData {
   
-  @scala.inline
-  def apply(value: NumberFilterValue): NumberFilterData = {
+  inline def apply(value: NumberFilterValue): NumberFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumberFilter")
     __obj.asInstanceOf[NumberFilterData]
   }
   
-  @scala.inline
-  implicit class NumberFilterDataMutableBuilder[Self <: NumberFilterData] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFilterData](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: NumberFilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NumberFilterValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

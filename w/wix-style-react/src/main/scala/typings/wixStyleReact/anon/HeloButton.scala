@@ -11,19 +11,15 @@ trait HeloButton extends StObject {
 }
 object HeloButton {
   
-  @scala.inline
-  def apply(): HeloButton = {
+  inline def apply(): HeloButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeloButton]
   }
   
-  @scala.inline
-  implicit class HeloButtonMutableBuilder[Self <: HeloButton] (val x: Self) extends AnyVal {
+  extension [Self <: HeloButton](x: Self) {
     
-    @scala.inline
-    def setHeloButton(value: FC[js.Object]): Self = StObject.set(x, "HeloButton", value.asInstanceOf[js.Any])
+    inline def setHeloButton(value: FC[js.Object]): Self = StObject.set(x, "HeloButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeloButtonUndefined: Self = StObject.set(x, "HeloButton", js.undefined)
+    inline def setHeloButtonUndefined: Self = StObject.set(x, "HeloButton", js.undefined)
   }
 }

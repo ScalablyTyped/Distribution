@@ -13,19 +13,15 @@ trait GetScalingPlanResourceForecastDataResponse extends StObject {
 }
 object GetScalingPlanResourceForecastDataResponse {
   
-  @scala.inline
-  def apply(Datapoints: Datapoints): GetScalingPlanResourceForecastDataResponse = {
+  inline def apply(Datapoints: Datapoints): GetScalingPlanResourceForecastDataResponse = {
     val __obj = js.Dynamic.literal(Datapoints = Datapoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScalingPlanResourceForecastDataResponse]
   }
   
-  @scala.inline
-  implicit class GetScalingPlanResourceForecastDataResponseMutableBuilder[Self <: GetScalingPlanResourceForecastDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetScalingPlanResourceForecastDataResponse](x: Self) {
     
-    @scala.inline
-    def setDatapoints(value: Datapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
+    inline def setDatapoints(value: Datapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatapointsVarargs(value: Datapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
+    inline def setDatapointsVarargs(value: Datapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
   }
 }

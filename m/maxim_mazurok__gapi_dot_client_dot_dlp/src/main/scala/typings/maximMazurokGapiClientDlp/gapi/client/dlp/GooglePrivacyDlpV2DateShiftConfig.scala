@@ -26,37 +26,27 @@ trait GooglePrivacyDlpV2DateShiftConfig extends StObject {
 }
 object GooglePrivacyDlpV2DateShiftConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2DateShiftConfig = {
+  inline def apply(): GooglePrivacyDlpV2DateShiftConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2DateShiftConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2DateShiftConfigMutableBuilder[Self <: GooglePrivacyDlpV2DateShiftConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2DateShiftConfig](x: Self) {
     
-    @scala.inline
-    def setContext(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setCryptoKey(value: GooglePrivacyDlpV2CryptoKey): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
+    inline def setCryptoKey(value: GooglePrivacyDlpV2CryptoKey): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
+    inline def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
     
-    @scala.inline
-    def setLowerBoundDays(value: Double): Self = StObject.set(x, "lowerBoundDays", value.asInstanceOf[js.Any])
+    inline def setLowerBoundDays(value: Double): Self = StObject.set(x, "lowerBoundDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerBoundDaysUndefined: Self = StObject.set(x, "lowerBoundDays", js.undefined)
+    inline def setLowerBoundDaysUndefined: Self = StObject.set(x, "lowerBoundDays", js.undefined)
     
-    @scala.inline
-    def setUpperBoundDays(value: Double): Self = StObject.set(x, "upperBoundDays", value.asInstanceOf[js.Any])
+    inline def setUpperBoundDays(value: Double): Self = StObject.set(x, "upperBoundDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperBoundDaysUndefined: Self = StObject.set(x, "upperBoundDays", js.undefined)
+    inline def setUpperBoundDaysUndefined: Self = StObject.set(x, "upperBoundDays", js.undefined)
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hasListenersMod {
   
-  @scala.inline
-  def apply(emitter: Emitter): Boolean = ^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(emitter: Emitter, name: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(emitter: Emitter): Boolean = ^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(emitter: Emitter, name: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("event-emitter/has-listeners", JSImport.Namespace)
   @js.native

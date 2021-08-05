@@ -32,7 +32,6 @@ object servicesCloudfrontMod {
         /* privateKey */ String, 
         typings.awsSdk.cloudfrontSignerMod.Signer
       ] = js.native
-    @scala.inline
-    def Signer_=(x: Instantiable2[/* keyPairId */ String, /* privateKey */ String, Signer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signer")(x.asInstanceOf[js.Any])
+    inline def Signer_=(x: Instantiable2[/* keyPairId */ String, /* privateKey */ String, Signer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signer")(x.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait ConsistencyPolicy extends StObject {
 }
 object ConsistencyPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultConsistencyLevel: ConsistencyLevel,
     maxStalenessIntervalInSeconds: Double,
     maxStalenessPrefix: Double
@@ -24,16 +23,12 @@ object ConsistencyPolicy {
     __obj.asInstanceOf[ConsistencyPolicy]
   }
   
-  @scala.inline
-  implicit class ConsistencyPolicyMutableBuilder[Self <: ConsistencyPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ConsistencyPolicy](x: Self) {
     
-    @scala.inline
-    def setDefaultConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "defaultConsistencyLevel", value.asInstanceOf[js.Any])
+    inline def setDefaultConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "defaultConsistencyLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStalenessIntervalInSeconds(value: Double): Self = StObject.set(x, "maxStalenessIntervalInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxStalenessIntervalInSeconds(value: Double): Self = StObject.set(x, "maxStalenessIntervalInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStalenessPrefix(value: Double): Self = StObject.set(x, "maxStalenessPrefix", value.asInstanceOf[js.Any])
+    inline def setMaxStalenessPrefix(value: Double): Self = StObject.set(x, "maxStalenessPrefix", value.asInstanceOf[js.Any])
   }
 }

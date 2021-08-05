@@ -19,25 +19,19 @@ trait CMD extends StObject {
 }
 object CMD {
   
-  @scala.inline
-  def apply(): CMD = {
+  inline def apply(): CMD = {
     val __obj = js.Dynamic.literal(CMD = "\u001B##QPIX", DEFAULT = 12, MAX = 24, MIN = 1)
     __obj.asInstanceOf[CMD]
   }
   
-  @scala.inline
-  implicit class CMDMutableBuilder[Self <: CMD] (val x: Self) extends AnyVal {
+  extension [Self <: CMD](x: Self) {
     
-    @scala.inline
-    def setCMD(value: EscapeNumbersignNumbersignQPIX): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
+    inline def setCMD(value: EscapeNumbersignNumbersignQPIX): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDEFAULT(value: `12`): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
+    inline def setDEFAULT(value: `12`): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAX(value: `24`): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
+    inline def setMAX(value: `24`): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMIN(value: typings.escpos.escposNumbers.`1`): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
+    inline def setMIN(value: typings.escpos.escposNumbers.`1`): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
   }
 }

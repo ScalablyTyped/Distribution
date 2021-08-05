@@ -11,13 +11,11 @@ object streamtestStrings {
   sealed trait v1
     extends StObject
        with VersionName
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
   
   @js.native
   sealed trait v2
     extends StObject
        with VersionName
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
+  inline def v2: v2 = "v2".asInstanceOf[v2]
 }

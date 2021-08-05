@@ -19,31 +19,23 @@ trait ListDate
 }
 object ListDate {
   
-  @scala.inline
-  def apply(value: js.Any): ListDate = {
+  inline def apply(value: js.Any): ListDate = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDate]
   }
   
-  @scala.inline
-  implicit class ListDateMutableBuilder[Self <: ListDate] (val x: Self) extends AnyVal {
+  extension [Self <: ListDate](x: Self) {
     
-    @scala.inline
-    def setIcon(value: ElementType[js.Any]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ElementType[js.Any]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
     
-    @scala.inline
-    def setStyles(value: StyleProp[ViewStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StyleProp[ViewStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesNull: Self = StObject.set(x, "styles", null)
+    inline def setStylesNull: Self = StObject.set(x, "styles", null)
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

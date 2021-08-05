@@ -33,34 +33,25 @@ trait SchemaGenerateIdTokenRequest extends StObject {
 }
 object SchemaGenerateIdTokenRequest {
   
-  @scala.inline
-  def apply(): SchemaGenerateIdTokenRequest = {
+  inline def apply(): SchemaGenerateIdTokenRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGenerateIdTokenRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGenerateIdTokenRequestMutableBuilder[Self <: SchemaGenerateIdTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGenerateIdTokenRequest](x: Self) {
     
-    @scala.inline
-    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    @scala.inline
-    def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+    inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+    inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
     
-    @scala.inline
-    def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+    inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeEmail(value: Boolean): Self = StObject.set(x, "includeEmail", value.asInstanceOf[js.Any])
+    inline def setIncludeEmail(value: Boolean): Self = StObject.set(x, "includeEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeEmailUndefined: Self = StObject.set(x, "includeEmail", js.undefined)
+    inline def setIncludeEmailUndefined: Self = StObject.set(x, "includeEmail", js.undefined)
   }
 }

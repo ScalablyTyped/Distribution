@@ -10,16 +10,13 @@ trait WebglFilterBackendOptions extends StObject {
 }
 object WebglFilterBackendOptions {
   
-  @scala.inline
-  def apply(tileSize: Double): WebglFilterBackendOptions = {
+  inline def apply(tileSize: Double): WebglFilterBackendOptions = {
     val __obj = js.Dynamic.literal(tileSize = tileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebglFilterBackendOptions]
   }
   
-  @scala.inline
-  implicit class WebglFilterBackendOptionsMutableBuilder[Self <: WebglFilterBackendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebglFilterBackendOptions](x: Self) {
     
-    @scala.inline
-    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
   }
 }

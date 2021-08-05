@@ -38,49 +38,35 @@ trait ShareResult extends StObject {
 }
 object ShareResult {
   
-  @scala.inline
-  def apply(): ShareResult = {
+  inline def apply(): ShareResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShareResult]
   }
   
-  @scala.inline
-  implicit class ShareResultMutableBuilder[Self <: ShareResult] (val x: Self) extends AnyVal {
+  extension [Self <: ShareResult](x: Self) {
     
-    @scala.inline
-    def setInviteePrincipalId(value: IdType): Self = StObject.set(x, "InviteePrincipalId", value.asInstanceOf[js.Any])
+    inline def setInviteePrincipalId(value: IdType): Self = StObject.set(x, "InviteePrincipalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInviteePrincipalIdUndefined: Self = StObject.set(x, "InviteePrincipalId", js.undefined)
+    inline def setInviteePrincipalIdUndefined: Self = StObject.set(x, "InviteePrincipalId", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: IdType): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: IdType): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
     
-    @scala.inline
-    def setRole(value: RoleType): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: RoleType): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
-    @scala.inline
-    def setShareId(value: ResourceIdType): Self = StObject.set(x, "ShareId", value.asInstanceOf[js.Any])
+    inline def setShareId(value: ResourceIdType): Self = StObject.set(x, "ShareId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareIdUndefined: Self = StObject.set(x, "ShareId", js.undefined)
+    inline def setShareIdUndefined: Self = StObject.set(x, "ShareId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ShareStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ShareStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: MessageType): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: MessageType): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

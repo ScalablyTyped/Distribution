@@ -15,19 +15,15 @@ trait SortingInfo extends StObject {
 }
 object SortingInfo {
   
-  @scala.inline
-  def apply(Ascending: Boolean, PropertyName: String): SortingInfo = {
+  inline def apply(Ascending: Boolean, PropertyName: String): SortingInfo = {
     val __obj = js.Dynamic.literal(Ascending = Ascending.asInstanceOf[js.Any], PropertyName = PropertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortingInfo]
   }
   
-  @scala.inline
-  implicit class SortingInfoMutableBuilder[Self <: SortingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SortingInfo](x: Self) {
     
-    @scala.inline
-    def setAscending(value: Boolean): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: Boolean): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "PropertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "PropertyName", value.asInstanceOf[js.Any])
   }
 }

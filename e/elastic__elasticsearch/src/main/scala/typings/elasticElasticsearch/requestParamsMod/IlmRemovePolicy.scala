@@ -12,16 +12,13 @@ trait IlmRemovePolicy
 }
 object IlmRemovePolicy {
   
-  @scala.inline
-  def apply(index: String): IlmRemovePolicy = {
+  inline def apply(index: String): IlmRemovePolicy = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IlmRemovePolicy]
   }
   
-  @scala.inline
-  implicit class IlmRemovePolicyMutableBuilder[Self <: IlmRemovePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IlmRemovePolicy](x: Self) {
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

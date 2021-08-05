@@ -18,35 +18,26 @@ object interfaceMod {
   }
   object CoordinateCfg {
     
-    @scala.inline
-    def apply(end: Point, start: Point): CoordinateCfg = {
+    inline def apply(end: Point, start: Point): CoordinateCfg = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoordinateCfg]
     }
     
-    @scala.inline
-    implicit class CoordinateCfgMutableBuilder[Self <: CoordinateCfg] (val x: Self) extends AnyVal {
+    extension [Self <: CoordinateCfg](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTransposed(value: Boolean): Self = StObject.set(x, "isTransposed", value.asInstanceOf[js.Any])
+      inline def setIsTransposed(value: Boolean): Self = StObject.set(x, "isTransposed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTransposedUndefined: Self = StObject.set(x, "isTransposed", js.undefined)
+      inline def setIsTransposedUndefined: Self = StObject.set(x, "isTransposed", js.undefined)
       
-      @scala.inline
-      def setMatrix(value: js.Array[Double]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      inline def setMatrix(value: js.Array[Double]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
+      inline def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
       
-      @scala.inline
-      def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
+      inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
       
-      @scala.inline
-      def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,20 +188,16 @@ object interfaceMod {
   }
   object Point {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Point = {
+    inline def apply(x: Double, y: Double): Point = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,38 +215,28 @@ object interfaceMod {
   }
   object PolarCfg {
     
-    @scala.inline
-    def apply(end: Point, start: Point): PolarCfg = {
+    inline def apply(end: Point, start: Point): PolarCfg = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolarCfg]
     }
     
-    @scala.inline
-    implicit class PolarCfgMutableBuilder[Self <: PolarCfg] (val x: Self) extends AnyVal {
+    extension [Self <: PolarCfg](x: Self) {
       
-      @scala.inline
-      def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+      inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
       
-      @scala.inline
-      def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+      inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
+      inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+      inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     }
   }
   
@@ -271,20 +248,16 @@ object interfaceMod {
   }
   object Range {
     
-    @scala.inline
-    def apply(end: Double, start: Double): Range = {
+    inline def apply(end: Double, start: Double): Range = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Range]
     }
     
-    @scala.inline
-    implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+    extension [Self <: Range](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

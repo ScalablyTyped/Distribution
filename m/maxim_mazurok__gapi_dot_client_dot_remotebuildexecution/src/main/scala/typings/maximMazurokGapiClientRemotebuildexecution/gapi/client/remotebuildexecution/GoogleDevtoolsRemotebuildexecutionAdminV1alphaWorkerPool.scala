@@ -29,49 +29,35 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends StObject 
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool = {
+  inline def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPoolMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool](x: Self) {
     
-    @scala.inline
-    def setAutoscale(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale): Self = StObject.set(x, "autoscale", value.asInstanceOf[js.Any])
+    inline def setAutoscale(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale): Self = StObject.set(x, "autoscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscaleUndefined: Self = StObject.set(x, "autoscale", js.undefined)
+    inline def setAutoscaleUndefined: Self = StObject.set(x, "autoscale", js.undefined)
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setWorkerConfig(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
+    inline def setWorkerConfig(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
+    inline def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
     
-    @scala.inline
-    def setWorkerCount(value: String): Self = StObject.set(x, "workerCount", value.asInstanceOf[js.Any])
+    inline def setWorkerCount(value: String): Self = StObject.set(x, "workerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerCountUndefined: Self = StObject.set(x, "workerCount", js.undefined)
+    inline def setWorkerCountUndefined: Self = StObject.set(x, "workerCount", js.undefined)
   }
 }

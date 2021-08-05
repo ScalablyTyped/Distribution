@@ -27,40 +27,29 @@ trait PacketMirroringMirroredResourceInfo extends StObject {
 }
 object PacketMirroringMirroredResourceInfo {
   
-  @scala.inline
-  def apply(): PacketMirroringMirroredResourceInfo = {
+  inline def apply(): PacketMirroringMirroredResourceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PacketMirroringMirroredResourceInfo]
   }
   
-  @scala.inline
-  implicit class PacketMirroringMirroredResourceInfoMutableBuilder[Self <: PacketMirroringMirroredResourceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PacketMirroringMirroredResourceInfo](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[PacketMirroringMirroredResourceInfoInstanceInfo]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[PacketMirroringMirroredResourceInfoInstanceInfo]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: PacketMirroringMirroredResourceInfoInstanceInfo*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: PacketMirroringMirroredResourceInfoInstanceInfo*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetworks(value: js.Array[PacketMirroringMirroredResourceInfoSubnetInfo]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
+    inline def setSubnetworks(value: js.Array[PacketMirroringMirroredResourceInfoSubnetInfo]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
+    inline def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
-    @scala.inline
-    def setSubnetworksVarargs(value: PacketMirroringMirroredResourceInfoSubnetInfo*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
+    inline def setSubnetworksVarargs(value: PacketMirroringMirroredResourceInfoSubnetInfo*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

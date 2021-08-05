@@ -13,22 +13,17 @@ trait Subjects extends StObject {
 }
 object Subjects {
   
-  @scala.inline
-  def apply(subjects: js.Array[Subject], target: js.Function | String): Subjects = {
+  inline def apply(subjects: js.Array[Subject], target: js.Function | String): Subjects = {
     val __obj = js.Dynamic.literal(subjects = subjects.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subjects]
   }
   
-  @scala.inline
-  implicit class SubjectsMutableBuilder[Self <: Subjects] (val x: Self) extends AnyVal {
+  extension [Self <: Subjects](x: Self) {
     
-    @scala.inline
-    def setSubjects(value: js.Array[Subject]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
+    inline def setSubjects(value: js.Array[Subject]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectsVarargs(value: Subject*): Self = StObject.set(x, "subjects", js.Array(value :_*))
+    inline def setSubjectsVarargs(value: Subject*): Self = StObject.set(x, "subjects", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object logMod {
   
-  @scala.inline
-  def apply(config: js.Any): Level = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Level]
+  inline def apply(config: js.Any): Level = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Level]
   
   @JSImport("ipfs-http-client/dist/src/log", JSImport.Namespace)
   @js.native

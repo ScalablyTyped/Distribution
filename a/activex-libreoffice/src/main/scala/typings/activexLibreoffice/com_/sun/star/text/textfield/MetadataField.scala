@@ -47,8 +47,7 @@ trait MetadataField
 }
 object MetadataField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -105,13 +104,10 @@ object MetadataField {
     __obj.asInstanceOf[MetadataField]
   }
   
-  @scala.inline
-  implicit class MetadataFieldMutableBuilder[Self <: MetadataField] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataField](x: Self) {
     
-    @scala.inline
-    def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
+    inline def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
   }
 }

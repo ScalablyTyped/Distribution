@@ -14,31 +14,23 @@ trait ChannelSectionContentDetails extends StObject {
 }
 object ChannelSectionContentDetails {
   
-  @scala.inline
-  def apply(): ChannelSectionContentDetails = {
+  inline def apply(): ChannelSectionContentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelSectionContentDetails]
   }
   
-  @scala.inline
-  implicit class ChannelSectionContentDetailsMutableBuilder[Self <: ChannelSectionContentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelSectionContentDetails](x: Self) {
     
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setPlaylists(value: js.Array[String]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
+    inline def setPlaylists(value: js.Array[String]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
+    inline def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
     
-    @scala.inline
-    def setPlaylistsVarargs(value: String*): Self = StObject.set(x, "playlists", js.Array(value :_*))
+    inline def setPlaylistsVarargs(value: String*): Self = StObject.set(x, "playlists", js.Array(value :_*))
   }
 }

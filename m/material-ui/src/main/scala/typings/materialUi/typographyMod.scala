@@ -18,9 +18,7 @@ object typographyMod {
   @JSImport("material-ui/styles/typography", "Typography")
   @js.native
   def Typography: typings.materialUi.MaterialUI.Styles.Typography = js.native
-  @scala.inline
-  def Typography_=(x: Typography): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Typography")(x.asInstanceOf[js.Any])
+  inline def Typography_=(x: Typography): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Typography")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def default_=(x: Typography): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Typography): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

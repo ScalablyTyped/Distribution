@@ -14,25 +14,19 @@ trait OperationDnsKeyContext extends StObject {
 }
 object OperationDnsKeyContext {
   
-  @scala.inline
-  def apply(): OperationDnsKeyContext = {
+  inline def apply(): OperationDnsKeyContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OperationDnsKeyContext]
   }
   
-  @scala.inline
-  implicit class OperationDnsKeyContextMutableBuilder[Self <: OperationDnsKeyContext] (val x: Self) extends AnyVal {
+  extension [Self <: OperationDnsKeyContext](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: DnsKey): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: DnsKey): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
-    @scala.inline
-    def setOldValue(value: DnsKey): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: DnsKey): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

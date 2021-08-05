@@ -28,26 +28,22 @@ object puffLoaderMod {
       @JSImport("react-spinners/PuffLoader", "default.defaultProps.color")
       @js.native
       def color: String = js.native
-      @scala.inline
-      def color_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
+      inline def color_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
       
       @JSImport("react-spinners/PuffLoader", "default.defaultProps.css")
       @js.native
       def css: String | PrecompiledCss = js.native
-      @scala.inline
-      def css_=(x: String | PrecompiledCss): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("css")(x.asInstanceOf[js.Any])
+      inline def css_=(x: String | PrecompiledCss): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("css")(x.asInstanceOf[js.Any])
       
       @JSImport("react-spinners/PuffLoader", "default.defaultProps.loading")
       @js.native
       def loading: Boolean = js.native
-      @scala.inline
-      def loading_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
+      inline def loading_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
       
       @JSImport("react-spinners/PuffLoader", "default.defaultProps.size")
       @js.native
       def size: LengthType = js.native
-      @scala.inline
-      def size_=(x: LengthType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+      inline def size_=(x: LengthType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
     }
   }
   

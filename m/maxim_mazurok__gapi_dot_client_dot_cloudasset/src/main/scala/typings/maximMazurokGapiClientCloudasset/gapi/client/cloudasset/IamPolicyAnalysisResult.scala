@@ -23,46 +23,33 @@ trait IamPolicyAnalysisResult extends StObject {
 }
 object IamPolicyAnalysisResult {
   
-  @scala.inline
-  def apply(): IamPolicyAnalysisResult = {
+  inline def apply(): IamPolicyAnalysisResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IamPolicyAnalysisResult]
   }
   
-  @scala.inline
-  implicit class IamPolicyAnalysisResultMutableBuilder[Self <: IamPolicyAnalysisResult] (val x: Self) extends AnyVal {
+  extension [Self <: IamPolicyAnalysisResult](x: Self) {
     
-    @scala.inline
-    def setAccessControlLists(value: js.Array[GoogleCloudAssetV1AccessControlList]): Self = StObject.set(x, "accessControlLists", value.asInstanceOf[js.Any])
+    inline def setAccessControlLists(value: js.Array[GoogleCloudAssetV1AccessControlList]): Self = StObject.set(x, "accessControlLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessControlListsUndefined: Self = StObject.set(x, "accessControlLists", js.undefined)
+    inline def setAccessControlListsUndefined: Self = StObject.set(x, "accessControlLists", js.undefined)
     
-    @scala.inline
-    def setAccessControlListsVarargs(value: GoogleCloudAssetV1AccessControlList*): Self = StObject.set(x, "accessControlLists", js.Array(value :_*))
+    inline def setAccessControlListsVarargs(value: GoogleCloudAssetV1AccessControlList*): Self = StObject.set(x, "accessControlLists", js.Array(value :_*))
     
-    @scala.inline
-    def setAttachedResourceFullName(value: String): Self = StObject.set(x, "attachedResourceFullName", value.asInstanceOf[js.Any])
+    inline def setAttachedResourceFullName(value: String): Self = StObject.set(x, "attachedResourceFullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedResourceFullNameUndefined: Self = StObject.set(x, "attachedResourceFullName", js.undefined)
+    inline def setAttachedResourceFullNameUndefined: Self = StObject.set(x, "attachedResourceFullName", js.undefined)
     
-    @scala.inline
-    def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
+    inline def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyExploredUndefined: Self = StObject.set(x, "fullyExplored", js.undefined)
+    inline def setFullyExploredUndefined: Self = StObject.set(x, "fullyExplored", js.undefined)
     
-    @scala.inline
-    def setIamBinding(value: Binding): Self = StObject.set(x, "iamBinding", value.asInstanceOf[js.Any])
+    inline def setIamBinding(value: Binding): Self = StObject.set(x, "iamBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamBindingUndefined: Self = StObject.set(x, "iamBinding", js.undefined)
+    inline def setIamBindingUndefined: Self = StObject.set(x, "iamBinding", js.undefined)
     
-    @scala.inline
-    def setIdentityList(value: GoogleCloudAssetV1IdentityList): Self = StObject.set(x, "identityList", value.asInstanceOf[js.Any])
+    inline def setIdentityList(value: GoogleCloudAssetV1IdentityList): Self = StObject.set(x, "identityList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityListUndefined: Self = StObject.set(x, "identityList", js.undefined)
+    inline def setIdentityListUndefined: Self = StObject.set(x, "identityList", js.undefined)
   }
 }

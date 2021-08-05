@@ -105,20 +105,16 @@ object rsocketleaseMod {
   }
   object Disposable {
     
-    @scala.inline
-    def apply(dispose: () => Unit, isDisposed: () => Boolean): Disposable = {
+    inline def apply(dispose: () => Unit, isDisposed: () => Boolean): Disposable = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), isDisposed = js.Any.fromFunction0(isDisposed))
       __obj.asInstanceOf[Disposable]
     }
     
-    @scala.inline
-    implicit class DisposableMutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
+    extension [Self <: Disposable](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
+      inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     }
   }
   
@@ -130,14 +126,11 @@ object rsocketleaseMod {
   trait EventType extends StObject
   object EventType {
     
-    @scala.inline
-    def Accept: typings.rsocketCore.rsocketCoreStrings.Accept = "Accept".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.Accept]
+    inline def Accept: typings.rsocketCore.rsocketCoreStrings.Accept = "Accept".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.Accept]
     
-    @scala.inline
-    def Reject: typings.rsocketCore.rsocketCoreStrings.Reject = "Reject".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.Reject]
+    inline def Reject: typings.rsocketCore.rsocketCoreStrings.Reject = "Reject".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.Reject]
     
-    @scala.inline
-    def Terminate: typings.rsocketCore.rsocketCoreStrings.Terminate = "Terminate".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.Terminate]
+    inline def Terminate: typings.rsocketCore.rsocketCoreStrings.Terminate = "Terminate".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.Terminate]
   }
   
   trait LeaseHandler extends StObject {
@@ -148,20 +141,16 @@ object rsocketleaseMod {
   }
   object LeaseHandler {
     
-    @scala.inline
-    def apply(errorMessage: () => String, use: () => Boolean): LeaseHandler = {
+    inline def apply(errorMessage: () => String, use: () => Boolean): LeaseHandler = {
       val __obj = js.Dynamic.literal(errorMessage = js.Any.fromFunction0(errorMessage), use = js.Any.fromFunction0(use))
       __obj.asInstanceOf[LeaseHandler]
     }
     
-    @scala.inline
-    implicit class LeaseHandlerMutableBuilder[Self <: LeaseHandler] (val x: Self) extends AnyVal {
+    extension [Self <: LeaseHandler](x: Self) {
       
-      @scala.inline
-      def setErrorMessage(value: () => String): Self = StObject.set(x, "errorMessage", js.Any.fromFunction0(value))
+      inline def setErrorMessage(value: () => String): Self = StObject.set(x, "errorMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUse(value: () => Boolean): Self = StObject.set(x, "use", js.Any.fromFunction0(value))
+      inline def setUse(value: () => Boolean): Self = StObject.set(x, "use", js.Any.fromFunction0(value))
     }
   }
   
@@ -171,17 +160,14 @@ object rsocketleaseMod {
   }
   object LeaseStats {
     
-    @scala.inline
-    def apply(onEvent: EventType => Unit): LeaseStats = {
+    inline def apply(onEvent: EventType => Unit): LeaseStats = {
       val __obj = js.Dynamic.literal(onEvent = js.Any.fromFunction1(onEvent))
       __obj.asInstanceOf[LeaseStats]
     }
     
-    @scala.inline
-    implicit class LeaseStatsMutableBuilder[Self <: LeaseStats] (val x: Self) extends AnyVal {
+    extension [Self <: LeaseStats](x: Self) {
       
-      @scala.inline
-      def setOnEvent(value: EventType => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
+      inline def setOnEvent(value: EventType => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
     }
   }
 }

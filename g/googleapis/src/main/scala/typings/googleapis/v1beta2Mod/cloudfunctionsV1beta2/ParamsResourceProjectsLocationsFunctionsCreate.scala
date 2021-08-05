@@ -30,31 +30,23 @@ trait ParamsResourceProjectsLocationsFunctionsCreate
 }
 object ParamsResourceProjectsLocationsFunctionsCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsLocationsFunctionsCreate = {
+  inline def apply(): ParamsResourceProjectsLocationsFunctionsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsLocationsFunctionsCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsLocationsFunctionsCreateMutableBuilder[Self <: ParamsResourceProjectsLocationsFunctionsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsLocationsFunctionsCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCloudFunction): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCloudFunction): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

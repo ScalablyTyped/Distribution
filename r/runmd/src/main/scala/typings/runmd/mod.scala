@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def render(inputText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(inputText.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def render(inputText: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(inputText.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def render(inputText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(inputText.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def render(inputText: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(inputText.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options extends StObject {
     
@@ -34,32 +32,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+      inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
+      inline def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
       
-      @scala.inline
-      def setLame(value: Boolean): Self = StObject.set(x, "lame", value.asInstanceOf[js.Any])
+      inline def setLame(value: Boolean): Self = StObject.set(x, "lame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLameUndefined: Self = StObject.set(x, "lame", js.undefined)
+      inline def setLameUndefined: Self = StObject.set(x, "lame", js.undefined)
       
-      @scala.inline
-      def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
+      inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputNameUndefined: Self = StObject.set(x, "outputName", js.undefined)
+      inline def setOutputNameUndefined: Self = StObject.set(x, "outputName", js.undefined)
     }
   }
 }

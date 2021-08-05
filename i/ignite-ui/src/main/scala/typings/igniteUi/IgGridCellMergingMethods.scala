@@ -51,8 +51,7 @@ trait IgGridCellMergingMethods extends StObject {
 }
 object IgGridCellMergingMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: js.Object => Unit,
@@ -67,34 +66,24 @@ object IgGridCellMergingMethods {
     __obj.asInstanceOf[IgGridCellMergingMethods]
   }
   
-  @scala.inline
-  implicit class IgGridCellMergingMethodsMutableBuilder[Self <: IgGridCellMergingMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridCellMergingMethods](x: Self) {
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
+    inline def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMerged(value: js.Object => Boolean): Self = StObject.set(x, "isMerged", js.Any.fromFunction1(value))
+    inline def setIsMerged(value: js.Object => Boolean): Self = StObject.set(x, "isMerged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMergeColumn(value: (js.Object, Boolean) => String): Self = StObject.set(x, "mergeColumn", js.Any.fromFunction2(value))
+    inline def setMergeColumn(value: (js.Object, Boolean) => String): Self = StObject.set(x, "mergeColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMergeRow(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "mergeRow", js.Any.fromFunction2(value))
+    inline def setMergeRow(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "mergeRow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnmergeColumn(value: js.Object => String): Self = StObject.set(x, "unmergeColumn", js.Any.fromFunction1(value))
+    inline def setUnmergeColumn(value: js.Object => String): Self = StObject.set(x, "unmergeColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnmergeRow(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "unmergeRow", js.Any.fromFunction2(value))
+    inline def setUnmergeRow(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "unmergeRow", js.Any.fromFunction2(value))
   }
 }

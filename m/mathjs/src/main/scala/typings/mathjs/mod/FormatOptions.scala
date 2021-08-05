@@ -51,43 +51,31 @@ trait FormatOptions extends StObject {
 }
 object FormatOptions {
   
-  @scala.inline
-  def apply(): FormatOptions = {
+  inline def apply(): FormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatOptions]
   }
   
-  @scala.inline
-  implicit class FormatOptionsMutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FormatOptions](x: Self) {
     
-    @scala.inline
-    def setFraction(value: String): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
+    inline def setFraction(value: String): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
+    inline def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
     
-    @scala.inline
-    def setLowerExp(value: Double): Self = StObject.set(x, "lowerExp", value.asInstanceOf[js.Any])
+    inline def setLowerExp(value: Double): Self = StObject.set(x, "lowerExp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerExpUndefined: Self = StObject.set(x, "lowerExp", js.undefined)
+    inline def setLowerExpUndefined: Self = StObject.set(x, "lowerExp", js.undefined)
     
-    @scala.inline
-    def setNotation(value: fixed | exponential | engineering | auto): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    inline def setNotation(value: fixed | exponential | engineering | auto): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
+    inline def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setUpperExp(value: Double): Self = StObject.set(x, "upperExp", value.asInstanceOf[js.Any])
+    inline def setUpperExp(value: Double): Self = StObject.set(x, "upperExp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperExpUndefined: Self = StObject.set(x, "upperExp", js.undefined)
+    inline def setUpperExpUndefined: Self = StObject.set(x, "upperExp", js.undefined)
   }
 }

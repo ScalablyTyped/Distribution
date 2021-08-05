@@ -40,8 +40,7 @@ trait Selection extends StObject {
 }
 object Selection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getActiveRange: () => Range | Null,
     getActiveRangeList: () => RangeList | Null,
     getActiveSheet: () => Sheet,
@@ -52,22 +51,16 @@ object Selection {
     __obj.asInstanceOf[Selection]
   }
   
-  @scala.inline
-  implicit class SelectionMutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
+  extension [Self <: Selection](x: Self) {
     
-    @scala.inline
-    def setGetActiveRange(value: () => Range | Null): Self = StObject.set(x, "getActiveRange", js.Any.fromFunction0(value))
+    inline def setGetActiveRange(value: () => Range | Null): Self = StObject.set(x, "getActiveRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveRangeList(value: () => RangeList | Null): Self = StObject.set(x, "getActiveRangeList", js.Any.fromFunction0(value))
+    inline def setGetActiveRangeList(value: () => RangeList | Null): Self = StObject.set(x, "getActiveRangeList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveSheet(value: () => Sheet): Self = StObject.set(x, "getActiveSheet", js.Any.fromFunction0(value))
+    inline def setGetActiveSheet(value: () => Sheet): Self = StObject.set(x, "getActiveSheet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentCell(value: () => Range | Null): Self = StObject.set(x, "getCurrentCell", js.Any.fromFunction0(value))
+    inline def setGetCurrentCell(value: () => Range | Null): Self = StObject.set(x, "getCurrentCell", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNextDataRange(value: Direction => Range | Null): Self = StObject.set(x, "getNextDataRange", js.Any.fromFunction1(value))
+    inline def setGetNextDataRange(value: Direction => Range | Null): Self = StObject.set(x, "getNextDataRange", js.Any.fromFunction1(value))
   }
 }

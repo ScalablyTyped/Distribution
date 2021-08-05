@@ -26,39 +26,29 @@ trait ReturnStubValue[Result /* <: EJSONable | (js.Array[EJSONable | EJSONablePr
 }
 object ReturnStubValue {
   
-  @scala.inline
-  def apply[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */](): ReturnStubValue[Result] = {
+  inline def apply[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */](): ReturnStubValue[Result] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnStubValue[Result]]
   }
   
-  @scala.inline
-  implicit class ReturnStubValueMutableBuilder[Self <: ReturnStubValue[?], Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] (val x: Self & ReturnStubValue[Result]) extends AnyVal {
+  extension [Self <: ReturnStubValue[?], Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */](x: Self & ReturnStubValue[Result]) {
     
-    @scala.inline
-    def setOnResultReceived(
+    inline def setOnResultReceived(
       value: (/* error */ js.UndefOr[globalError | typings.meteor.Meteor.Error], /* result */ js.UndefOr[Result]) => Unit
     ): Self = StObject.set(x, "onResultReceived", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnResultReceivedUndefined: Self = StObject.set(x, "onResultReceived", js.undefined)
+    inline def setOnResultReceivedUndefined: Self = StObject.set(x, "onResultReceived", js.undefined)
     
-    @scala.inline
-    def setReturnStubValue(value: Boolean): Self = StObject.set(x, "returnStubValue", value.asInstanceOf[js.Any])
+    inline def setReturnStubValue(value: Boolean): Self = StObject.set(x, "returnStubValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnStubValueUndefined: Self = StObject.set(x, "returnStubValue", js.undefined)
+    inline def setReturnStubValueUndefined: Self = StObject.set(x, "returnStubValue", js.undefined)
     
-    @scala.inline
-    def setThrowStubExceptions(value: Boolean): Self = StObject.set(x, "throwStubExceptions", value.asInstanceOf[js.Any])
+    inline def setThrowStubExceptions(value: Boolean): Self = StObject.set(x, "throwStubExceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrowStubExceptionsUndefined: Self = StObject.set(x, "throwStubExceptions", js.undefined)
+    inline def setThrowStubExceptionsUndefined: Self = StObject.set(x, "throwStubExceptions", js.undefined)
     
-    @scala.inline
-    def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+    inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

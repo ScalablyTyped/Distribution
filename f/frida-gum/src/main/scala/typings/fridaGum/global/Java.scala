@@ -43,10 +43,8 @@ object Java {
       * through this API.
       */
     /* static member */
-    @scala.inline
-    def get(): ClassFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[ClassFactory]
-    @scala.inline
-    def get(classLoader: Wrapper): ClassFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(classLoader.asInstanceOf[js.Any]).asInstanceOf[ClassFactory]
+    inline def get(): ClassFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[ClassFactory]
+    inline def get(classLoader: Wrapper): ClassFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(classLoader.asInstanceOf[js.Any]).asInstanceOf[ClassFactory]
   }
   
   /**
@@ -66,8 +64,7 @@ object Java {
     * @param elements Array of JavaScript values to use for constructing the
     *                 Java array.
     */
-  @scala.inline
-  def array(`type`: String, elements: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(`type`.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def array(`type`: String, elements: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(`type`.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   /**
     * Whether the current process has a Java runtime loaded. Do not invoke any other Java properties or
@@ -84,10 +81,8 @@ object Java {
     * @param handle An existing wrapper or a JNI handle.
     * @param klass Class wrapper for type to cast to.
     */
-  @scala.inline
-  def cast[From /* <: Members[From] */, To /* <: Members[To] */](handle: typings.fridaGum.Java.Wrapper[From], klass: typings.fridaGum.Java.Wrapper[To]): typings.fridaGum.Java.Wrapper[To] = (^.asInstanceOf[js.Dynamic].applyDynamic("cast")(handle.asInstanceOf[js.Any], klass.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.Java.Wrapper[To]]
-  @scala.inline
-  def cast[From /* <: Members[From] */, To /* <: Members[To] */](handle: NativePointerValue, klass: typings.fridaGum.Java.Wrapper[To]): typings.fridaGum.Java.Wrapper[To] = (^.asInstanceOf[js.Dynamic].applyDynamic("cast")(handle.asInstanceOf[js.Any], klass.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.Java.Wrapper[To]]
+  inline def cast[From /* <: Members[From] */, To /* <: Members[To] */](handle: typings.fridaGum.Java.Wrapper[From], klass: typings.fridaGum.Java.Wrapper[To]): typings.fridaGum.Java.Wrapper[To] = (^.asInstanceOf[js.Dynamic].applyDynamic("cast")(handle.asInstanceOf[js.Any], klass.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.Java.Wrapper[To]]
+  inline def cast[From /* <: Members[From] */, To /* <: Members[To] */](handle: NativePointerValue, klass: typings.fridaGum.Java.Wrapper[To]): typings.fridaGum.Java.Wrapper[To] = (^.asInstanceOf[js.Dynamic].applyDynamic("cast")(handle.asInstanceOf[js.Any], klass.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.Java.Wrapper[To]]
   
   /**
     * Enumerates live instances of the `className` class by scanning the Java
@@ -96,8 +91,7 @@ object Java {
     * @param className Name of class to enumerate instances of.
     * @param callbacks Object with callbacks.
     */
-  @scala.inline
-  def choose(className: String, callbacks: ChooseCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(className.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def choose(className: String, callbacks: ChooseCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(className.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * The default class factory used to implement e.g. `Java.use()`.
@@ -112,8 +106,7 @@ object Java {
     * prevent optimizations from bypassing method hooks in some cases, and
     * allows ART's Instrumentation APIs to be used for tracing the runtime.
     */
-  @scala.inline
-  def deoptimizeEverything(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deoptimizeEverything")().asInstanceOf[Unit]
+  inline def deoptimizeEverything(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deoptimizeEverything")().asInstanceOf[Unit]
   
   /**
     * Enumerates class loaders.
@@ -123,28 +116,24 @@ object Java {
     *
     * @param callbacks Object with callbacks.
     */
-  @scala.inline
-  def enumerateClassLoaders(callbacks: EnumerateClassLoadersCallbacks): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateClassLoaders")(callbacks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enumerateClassLoaders(callbacks: EnumerateClassLoadersCallbacks): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateClassLoaders")(callbacks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Synchronous version of `enumerateClassLoaders()`.
     */
-  @scala.inline
-  def enumerateClassLoadersSync(): js.Array[Wrapper] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateClassLoadersSync")().asInstanceOf[js.Array[Wrapper]]
+  inline def enumerateClassLoadersSync(): js.Array[Wrapper] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateClassLoadersSync")().asInstanceOf[js.Array[Wrapper]]
   
   /**
     * Enumerates loaded classes.
     *
     * @param callbacks Object with callbacks.
     */
-  @scala.inline
-  def enumerateLoadedClasses(callbacks: EnumerateLoadedClassesCallbacks): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClasses")(callbacks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enumerateLoadedClasses(callbacks: EnumerateLoadedClassesCallbacks): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClasses")(callbacks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Synchronous version of `enumerateLoadedClasses()`.
     */
-  @scala.inline
-  def enumerateLoadedClassesSync(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClassesSync")().asInstanceOf[js.Array[String]]
+  inline def enumerateLoadedClassesSync(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClassesSync")().asInstanceOf[js.Array[String]]
   
   /**
     * Enumerates methods matching `query`.
@@ -156,22 +145,19 @@ object Java {
     *                `"putInt(java.lang.String, int): void"`.
     *              - `u`: User-defined classes only, ignoring system classes.
     */
-  @scala.inline
-  def enumerateMethods(query: String): js.Array[EnumerateMethodsMatchGroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateMethods")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[EnumerateMethodsMatchGroup]]
+  inline def enumerateMethods(query: String): js.Array[EnumerateMethodsMatchGroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateMethods")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[EnumerateMethodsMatchGroup]]
   
   /**
     * Determines whether the caller is running on the main thread.
     */
-  @scala.inline
-  def isMainThread(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMainThread")().asInstanceOf[Boolean]
+  inline def isMainThread(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMainThread")().asInstanceOf[Boolean]
   
   /**
     * Opens the .dex file at `filePath`.
     *
     * @param filePath Path to .dex to open.
     */
-  @scala.inline
-  def openClassFile(filePath: String): DexFile = ^.asInstanceOf[js.Dynamic].applyDynamic("openClassFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[DexFile]
+  inline def openClassFile(filePath: String): DexFile = ^.asInstanceOf[js.Dynamic].applyDynamic("openClassFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[DexFile]
   
   /**
     * Ensures that the current thread is attached to the VM and calls `fn`.
@@ -182,8 +168,7 @@ object Java {
     *
     * @param fn Function to run while attached to the VM.
     */
-  @scala.inline
-  def perform(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("perform")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def perform(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("perform")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Ensures that the current thread is attached to the VM and calls `fn`.
@@ -191,32 +176,28 @@ object Java {
     *
     * @param fn Function to run while attached to the VM.
     */
-  @scala.inline
-  def performNow(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("performNow")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def performNow(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("performNow")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Creates a new Java class.
     *
     * @param spec Object describing the class to be created.
     */
-  @scala.inline
-  def registerClass(spec: ClassSpec): Wrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("registerClass")(spec.asInstanceOf[js.Any]).asInstanceOf[Wrapper]
+  inline def registerClass(spec: ClassSpec): Wrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("registerClass")(spec.asInstanceOf[js.Any]).asInstanceOf[Wrapper]
   
   /**
     * Duplicates a JavaScript wrapper for later use outside replacement method.
     *
     * @param obj An existing wrapper retrieved from `this` in replacement method.
     */
-  @scala.inline
-  def retain[T /* <: Members[T] */](obj: typings.fridaGum.Java.Wrapper[T]): typings.fridaGum.Java.Wrapper[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retain")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Java.Wrapper[T]]
+  inline def retain[T /* <: Members[T] */](obj: typings.fridaGum.Java.Wrapper[T]): typings.fridaGum.Java.Wrapper[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retain")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Java.Wrapper[T]]
   
   /**
     * Runs `fn` on the main thread of the VM.
     *
     * @param fn Function to run on the main thread of the VM.
     */
-  @scala.inline
-  def scheduleOnMainThread(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleOnMainThread")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def scheduleOnMainThread(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleOnMainThread")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Calls `func` with the `obj` lock held.
@@ -224,8 +205,7 @@ object Java {
     * @param obj Instance whose lock to hold.
     * @param fn Function to call with lock held.
     */
-  @scala.inline
-  def synchronized(obj: Wrapper, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("synchronized")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def synchronized(obj: Wrapper, fn: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("synchronized")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Dynamically generates a JavaScript wrapper for `className` that you can
@@ -240,8 +220,7 @@ object Java {
     *
     * @param className Canonical class name to get a wrapper for.
     */
-  @scala.inline
-  def use[T /* <: Members[T] */](className: String): typings.fridaGum.Java.Wrapper[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(className.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Java.Wrapper[T]]
+  inline def use[T /* <: Members[T] */](className: String): typings.fridaGum.Java.Wrapper[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(className.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Java.Wrapper[T]]
   
   @JSGlobal("Java.vm")
   @js.native

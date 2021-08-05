@@ -18,28 +18,21 @@ trait GetRecommendationSummariesResponse extends StObject {
 }
 object GetRecommendationSummariesResponse {
   
-  @scala.inline
-  def apply(): GetRecommendationSummariesResponse = {
+  inline def apply(): GetRecommendationSummariesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRecommendationSummariesResponse]
   }
   
-  @scala.inline
-  implicit class GetRecommendationSummariesResponseMutableBuilder[Self <: GetRecommendationSummariesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRecommendationSummariesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRecommendationSummaries(value: RecommendationSummaries): Self = StObject.set(x, "recommendationSummaries", value.asInstanceOf[js.Any])
+    inline def setRecommendationSummaries(value: RecommendationSummaries): Self = StObject.set(x, "recommendationSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationSummariesUndefined: Self = StObject.set(x, "recommendationSummaries", js.undefined)
+    inline def setRecommendationSummariesUndefined: Self = StObject.set(x, "recommendationSummaries", js.undefined)
     
-    @scala.inline
-    def setRecommendationSummariesVarargs(value: RecommendationSummary*): Self = StObject.set(x, "recommendationSummaries", js.Array(value :_*))
+    inline def setRecommendationSummariesVarargs(value: RecommendationSummary*): Self = StObject.set(x, "recommendationSummaries", js.Array(value :_*))
   }
 }

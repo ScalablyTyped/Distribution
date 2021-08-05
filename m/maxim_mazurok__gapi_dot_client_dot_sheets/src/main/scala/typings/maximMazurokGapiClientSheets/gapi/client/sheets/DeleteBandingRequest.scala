@@ -11,19 +11,15 @@ trait DeleteBandingRequest extends StObject {
 }
 object DeleteBandingRequest {
   
-  @scala.inline
-  def apply(): DeleteBandingRequest = {
+  inline def apply(): DeleteBandingRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteBandingRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBandingRequestMutableBuilder[Self <: DeleteBandingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBandingRequest](x: Self) {
     
-    @scala.inline
-    def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
+    inline def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandedRangeIdUndefined: Self = StObject.set(x, "bandedRangeId", js.undefined)
+    inline def setBandedRangeIdUndefined: Self = StObject.set(x, "bandedRangeId", js.undefined)
   }
 }

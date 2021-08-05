@@ -11,18 +11,12 @@ object testkitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): GetModule = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[GetModule]
-  @scala.inline
-  def default(config: js.Object): GetModule = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[GetModule]
-  @scala.inline
-  def default(config: js.Object, adapters: js.Any): GetModule = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], adapters.asInstanceOf[js.Any])).asInstanceOf[GetModule]
-  @scala.inline
-  def default(config: Unit, adapters: js.Any): GetModule = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], adapters.asInstanceOf[js.Any])).asInstanceOf[GetModule]
+  inline def default(): GetModule = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[GetModule]
+  inline def default(config: js.Object): GetModule = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[GetModule]
+  inline def default(config: js.Object, adapters: js.Any): GetModule = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], adapters.asInstanceOf[js.Any])).asInstanceOf[GetModule]
+  inline def default(config: Unit, adapters: js.Any): GetModule = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], adapters.asInstanceOf[js.Any])).asInstanceOf[GetModule]
   
-  @scala.inline
-  def resetProperty(target: js.Any, propertyKey: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resetProperty(target: js.Any, propertyKey: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setProperty(target: js.Any, propertyKey: js.Any, propertyValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], propertyValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setProperty(target: js.Any, propertyKey: js.Any, propertyValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], propertyValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -11,16 +11,13 @@ trait ReplicationReplicaSyncOffInfo extends StObject {
 }
 object ReplicationReplicaSyncOffInfo {
   
-  @scala.inline
-  def apply(master_sync_in_progress: OFF): ReplicationReplicaSyncOffInfo = {
+  inline def apply(master_sync_in_progress: OFF): ReplicationReplicaSyncOffInfo = {
     val __obj = js.Dynamic.literal(master_sync_in_progress = master_sync_in_progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationReplicaSyncOffInfo]
   }
   
-  @scala.inline
-  implicit class ReplicationReplicaSyncOffInfoMutableBuilder[Self <: ReplicationReplicaSyncOffInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationReplicaSyncOffInfo](x: Self) {
     
-    @scala.inline
-    def setMaster_sync_in_progress(value: OFF): Self = StObject.set(x, "master_sync_in_progress", value.asInstanceOf[js.Any])
+    inline def setMaster_sync_in_progress(value: OFF): Self = StObject.set(x, "master_sync_in_progress", value.asInstanceOf[js.Any])
   }
 }

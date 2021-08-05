@@ -53,67 +53,47 @@ trait ExternalModel extends StObject {
 }
 object ExternalModel {
   
-  @scala.inline
-  def apply(): ExternalModel = {
+  inline def apply(): ExternalModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExternalModel]
   }
   
-  @scala.inline
-  implicit class ExternalModelMutableBuilder[Self <: ExternalModel] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalModel](x: Self) {
     
-    @scala.inline
-    def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
-    @scala.inline
-    def setInputConfiguration(value: ModelInputConfiguration): Self = StObject.set(x, "inputConfiguration", value.asInstanceOf[js.Any])
+    inline def setInputConfiguration(value: ModelInputConfiguration): Self = StObject.set(x, "inputConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigurationUndefined: Self = StObject.set(x, "inputConfiguration", js.undefined)
+    inline def setInputConfigurationUndefined: Self = StObject.set(x, "inputConfiguration", js.undefined)
     
-    @scala.inline
-    def setInvokeModelEndpointRoleArn(value: String): Self = StObject.set(x, "invokeModelEndpointRoleArn", value.asInstanceOf[js.Any])
+    inline def setInvokeModelEndpointRoleArn(value: String): Self = StObject.set(x, "invokeModelEndpointRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvokeModelEndpointRoleArnUndefined: Self = StObject.set(x, "invokeModelEndpointRoleArn", js.undefined)
+    inline def setInvokeModelEndpointRoleArnUndefined: Self = StObject.set(x, "invokeModelEndpointRoleArn", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setModelEndpoint(value: String): Self = StObject.set(x, "modelEndpoint", value.asInstanceOf[js.Any])
+    inline def setModelEndpoint(value: String): Self = StObject.set(x, "modelEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelEndpointStatus(value: ModelEndpointStatus): Self = StObject.set(x, "modelEndpointStatus", value.asInstanceOf[js.Any])
+    inline def setModelEndpointStatus(value: ModelEndpointStatus): Self = StObject.set(x, "modelEndpointStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelEndpointStatusUndefined: Self = StObject.set(x, "modelEndpointStatus", js.undefined)
+    inline def setModelEndpointStatusUndefined: Self = StObject.set(x, "modelEndpointStatus", js.undefined)
     
-    @scala.inline
-    def setModelEndpointUndefined: Self = StObject.set(x, "modelEndpoint", js.undefined)
+    inline def setModelEndpointUndefined: Self = StObject.set(x, "modelEndpoint", js.undefined)
     
-    @scala.inline
-    def setModelSource(value: ModelSource): Self = StObject.set(x, "modelSource", value.asInstanceOf[js.Any])
+    inline def setModelSource(value: ModelSource): Self = StObject.set(x, "modelSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelSourceUndefined: Self = StObject.set(x, "modelSource", js.undefined)
+    inline def setModelSourceUndefined: Self = StObject.set(x, "modelSource", js.undefined)
     
-    @scala.inline
-    def setOutputConfiguration(value: ModelOutputConfiguration): Self = StObject.set(x, "outputConfiguration", value.asInstanceOf[js.Any])
+    inline def setOutputConfiguration(value: ModelOutputConfiguration): Self = StObject.set(x, "outputConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputConfigurationUndefined: Self = StObject.set(x, "outputConfiguration", js.undefined)
+    inline def setOutputConfigurationUndefined: Self = StObject.set(x, "outputConfiguration", js.undefined)
   }
 }

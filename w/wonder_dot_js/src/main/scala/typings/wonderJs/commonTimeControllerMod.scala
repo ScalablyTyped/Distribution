@@ -17,7 +17,6 @@ object commonTimeControllerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): CommonTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommonTimeController]
+    inline def create(): CommonTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommonTimeController]
   }
 }

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Array[String] | Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[String] | Boolean]
+  inline def apply(): js.Array[String] | Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[String] | Boolean]
   
   @JSImport("dev-ip", JSImport.Namespace)
   @js.native

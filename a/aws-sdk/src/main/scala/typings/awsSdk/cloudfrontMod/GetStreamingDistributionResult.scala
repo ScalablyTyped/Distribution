@@ -18,25 +18,19 @@ trait GetStreamingDistributionResult extends StObject {
 }
 object GetStreamingDistributionResult {
   
-  @scala.inline
-  def apply(): GetStreamingDistributionResult = {
+  inline def apply(): GetStreamingDistributionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStreamingDistributionResult]
   }
   
-  @scala.inline
-  implicit class GetStreamingDistributionResultMutableBuilder[Self <: GetStreamingDistributionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetStreamingDistributionResult](x: Self) {
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setStreamingDistribution(value: StreamingDistribution): Self = StObject.set(x, "StreamingDistribution", value.asInstanceOf[js.Any])
+    inline def setStreamingDistribution(value: StreamingDistribution): Self = StObject.set(x, "StreamingDistribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingDistributionUndefined: Self = StObject.set(x, "StreamingDistribution", js.undefined)
+    inline def setStreamingDistributionUndefined: Self = StObject.set(x, "StreamingDistribution", js.undefined)
   }
 }

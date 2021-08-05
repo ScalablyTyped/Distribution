@@ -11,48 +11,41 @@ object osrsJsonApiStrings {
   sealed trait dmm
     extends StObject
        with Gamemodes
-  @scala.inline
-  def dmm: dmm = "dmm".asInstanceOf[dmm]
+  inline def dmm: dmm = "dmm".asInstanceOf[dmm]
   
   @js.native
   sealed trait dmmt
     extends StObject
        with Gamemodes
-  @scala.inline
-  def dmmt: dmmt = "dmmt".asInstanceOf[dmmt]
+  inline def dmmt: dmmt = "dmmt".asInstanceOf[dmmt]
   
   @js.native
   sealed trait hcim
     extends StObject
        with Gamemodes
-  @scala.inline
-  def hcim: hcim = "hcim".asInstanceOf[hcim]
+  inline def hcim: hcim = "hcim".asInstanceOf[hcim]
   
   @js.native
   sealed trait iron
     extends StObject
        with Gamemodes
-  @scala.inline
-  def iron: iron = "iron".asInstanceOf[iron]
+  inline def iron: iron = "iron".asInstanceOf[iron]
   
   @js.native
   sealed trait main
     extends StObject
        with Gamemodes
-  @scala.inline
-  def main: main = "main".asInstanceOf[main]
+  inline def main: main = "main".asInstanceOf[main]
   
   @js.native
   sealed trait sdmm
     extends StObject
        with Gamemodes
-  @scala.inline
-  def sdmm: sdmm = "sdmm".asInstanceOf[sdmm]
+  inline def sdmm: sdmm = "sdmm".asInstanceOf[sdmm]
   
   @js.native
   sealed trait uim
     extends StObject
        with Gamemodes
-  @scala.inline
-  def uim: uim = "uim".asInstanceOf[uim]
+  inline def uim: uim = "uim".asInstanceOf[uim]
 }

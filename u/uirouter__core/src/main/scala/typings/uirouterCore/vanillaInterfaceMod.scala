@@ -41,23 +41,18 @@ object vanillaInterfaceMod {
   }
   object LocationLike {
     
-    @scala.inline
-    def apply(hash: String, pathname: String, search: String): LocationLike = {
+    inline def apply(hash: String, pathname: String, search: String): LocationLike = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocationLike]
     }
     
-    @scala.inline
-    implicit class LocationLikeMutableBuilder[Self <: LocationLike] (val x: Self) extends AnyVal {
+    extension [Self <: LocationLike](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     }
   }
   

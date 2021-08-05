@@ -18,28 +18,21 @@ trait ListFirewallPoliciesResponse extends StObject {
 }
 object ListFirewallPoliciesResponse {
   
-  @scala.inline
-  def apply(): ListFirewallPoliciesResponse = {
+  inline def apply(): ListFirewallPoliciesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFirewallPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class ListFirewallPoliciesResponseMutableBuilder[Self <: ListFirewallPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFirewallPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setFirewallPolicies(value: FirewallPolicies): Self = StObject.set(x, "FirewallPolicies", value.asInstanceOf[js.Any])
+    inline def setFirewallPolicies(value: FirewallPolicies): Self = StObject.set(x, "FirewallPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallPoliciesUndefined: Self = StObject.set(x, "FirewallPolicies", js.undefined)
+    inline def setFirewallPoliciesUndefined: Self = StObject.set(x, "FirewallPolicies", js.undefined)
     
-    @scala.inline
-    def setFirewallPoliciesVarargs(value: FirewallPolicyMetadata*): Self = StObject.set(x, "FirewallPolicies", js.Array(value :_*))
+    inline def setFirewallPoliciesVarargs(value: FirewallPolicyMetadata*): Self = StObject.set(x, "FirewallPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

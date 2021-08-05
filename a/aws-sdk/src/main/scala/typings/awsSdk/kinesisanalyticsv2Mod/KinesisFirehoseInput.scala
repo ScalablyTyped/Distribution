@@ -13,16 +13,13 @@ trait KinesisFirehoseInput extends StObject {
 }
 object KinesisFirehoseInput {
   
-  @scala.inline
-  def apply(ResourceARN: ResourceARN): KinesisFirehoseInput = {
+  inline def apply(ResourceARN: ResourceARN): KinesisFirehoseInput = {
     val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisFirehoseInput]
   }
   
-  @scala.inline
-  implicit class KinesisFirehoseInputMutableBuilder[Self <: KinesisFirehoseInput] (val x: Self) extends AnyVal {
+  extension [Self <: KinesisFirehoseInput](x: Self) {
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
   }
 }

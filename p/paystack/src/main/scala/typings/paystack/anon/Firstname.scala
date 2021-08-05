@@ -16,25 +16,19 @@ trait Firstname extends StObject {
 }
 object Firstname {
   
-  @scala.inline
-  def apply(email: String, first_name: String, last_name: String, phone: String): Firstname = {
+  inline def apply(email: String, first_name: String, last_name: String, phone: String): Firstname = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], first_name = first_name.asInstanceOf[js.Any], last_name = last_name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Firstname]
   }
   
-  @scala.inline
-  implicit class FirstnameMutableBuilder[Self <: Firstname] (val x: Self) extends AnyVal {
+  extension [Self <: Firstname](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
   }
 }

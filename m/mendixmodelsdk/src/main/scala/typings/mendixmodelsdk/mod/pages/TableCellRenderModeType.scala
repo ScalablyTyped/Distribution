@@ -21,20 +21,17 @@ object TableCellRenderModeType {
   @JSImport("mendixmodelsdk", "pages.TableCellRenderModeType.Default")
   @js.native
   def Default: typings.mendixmodelsdk.pagesMod.pages.TableCellRenderModeType = js.native
-  @scala.inline
-  def Default_=(x: typings.mendixmodelsdk.pagesMod.pages.TableCellRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+  inline def Default_=(x: typings.mendixmodelsdk.pagesMod.pages.TableCellRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.TableCellRenderModeType.Header")
   @js.native
   def Header: typings.mendixmodelsdk.pagesMod.pages.TableCellRenderModeType = js.native
-  @scala.inline
-  def Header_=(x: typings.mendixmodelsdk.pagesMod.pages.TableCellRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  inline def Header_=(x: typings.mendixmodelsdk.pagesMod.pages.TableCellRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.TableCellRenderModeType.Title")
   @js.native
   def Title: typings.mendixmodelsdk.pagesMod.pages.TableCellRenderModeType = js.native
-  @scala.inline
-  def Title_=(x: typings.mendixmodelsdk.pagesMod.pages.TableCellRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+  inline def Title_=(x: typings.mendixmodelsdk.pagesMod.pages.TableCellRenderModeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
 }

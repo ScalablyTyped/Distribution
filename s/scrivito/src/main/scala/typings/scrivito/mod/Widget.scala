@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Widget protected () extends StObject {
   def this(arg: js.Object) = this()
   
-  val _id: String = js.native
+  /* private */ val _id: String = js.native
   
-  var _objClass: String = js.native
+  /* private */ var _objClass: String = js.native
   
   // Instace methods
   def container(): Obj | Widget = js.native

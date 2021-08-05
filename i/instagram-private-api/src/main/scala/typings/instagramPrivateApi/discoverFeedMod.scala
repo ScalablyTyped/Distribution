@@ -15,7 +15,7 @@ object discoverFeedMod {
   class DiscoverFeed protected () extends Feed[DiscoverFeedResponseRootObject, DiscoverFeedResponseUser] {
     def this(client: IgApiClient) = this()
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     def request(): js.Promise[DiscoverFeedResponseRootObject] = js.native
   }

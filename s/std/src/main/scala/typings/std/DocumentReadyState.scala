@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentReadyState extends StObject
 object DocumentReadyState {
   
-  @scala.inline
-  def complete: typings.std.stdStrings.complete = "complete".asInstanceOf[typings.std.stdStrings.complete]
+  inline def complete: typings.std.stdStrings.complete = "complete".asInstanceOf[typings.std.stdStrings.complete]
   
-  @scala.inline
-  def interactive: typings.std.stdStrings.interactive = "interactive".asInstanceOf[typings.std.stdStrings.interactive]
+  inline def interactive: typings.std.stdStrings.interactive = "interactive".asInstanceOf[typings.std.stdStrings.interactive]
   
-  @scala.inline
-  def loading: typings.std.stdStrings.loading = "loading".asInstanceOf[typings.std.stdStrings.loading]
+  inline def loading: typings.std.stdStrings.loading = "loading".asInstanceOf[typings.std.stdStrings.loading]
 }

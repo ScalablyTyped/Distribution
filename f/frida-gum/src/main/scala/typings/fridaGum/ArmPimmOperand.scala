@@ -16,20 +16,16 @@ trait ArmPimmOperand
 }
 object ArmPimmOperand {
   
-  @scala.inline
-  def apply(subtracted: Boolean, value: Double): ArmPimmOperand = {
+  inline def apply(subtracted: Boolean, value: Double): ArmPimmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pimm")
     __obj.asInstanceOf[ArmPimmOperand]
   }
   
-  @scala.inline
-  implicit class ArmPimmOperandMutableBuilder[Self <: ArmPimmOperand] (val x: Self) extends AnyVal {
+  extension [Self <: ArmPimmOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: pimm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pimm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

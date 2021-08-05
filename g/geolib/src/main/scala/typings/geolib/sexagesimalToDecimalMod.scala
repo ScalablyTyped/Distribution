@@ -10,6 +10,5 @@ object sexagesimalToDecimalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(sexagesimal: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sexagesimal.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(sexagesimal: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sexagesimal.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

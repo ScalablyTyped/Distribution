@@ -10,16 +10,13 @@ trait EnumValuesFailedInProgress extends StObject {
 }
 object EnumValuesFailedInProgress {
   
-  @scala.inline
-  def apply(enumValues: FailedInProgress): EnumValuesFailedInProgress = {
+  inline def apply(enumValues: FailedInProgress): EnumValuesFailedInProgress = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFailedInProgress]
   }
   
-  @scala.inline
-  implicit class EnumValuesFailedInProgressMutableBuilder[Self <: EnumValuesFailedInProgress] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFailedInProgress](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FailedInProgress): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FailedInProgress): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

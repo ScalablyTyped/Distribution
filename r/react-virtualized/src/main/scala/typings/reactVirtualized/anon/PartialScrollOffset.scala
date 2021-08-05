@@ -13,25 +13,19 @@ trait PartialScrollOffset extends StObject {
 }
 object PartialScrollOffset {
   
-  @scala.inline
-  def apply(): PartialScrollOffset = {
+  inline def apply(): PartialScrollOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialScrollOffset]
   }
   
-  @scala.inline
-  implicit class PartialScrollOffsetMutableBuilder[Self <: PartialScrollOffset] (val x: Self) extends AnyVal {
+  extension [Self <: PartialScrollOffset](x: Self) {
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+    inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
   }
 }

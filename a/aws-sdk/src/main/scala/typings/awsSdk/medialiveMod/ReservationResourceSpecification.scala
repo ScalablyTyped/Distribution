@@ -48,61 +48,43 @@ trait ReservationResourceSpecification extends StObject {
 }
 object ReservationResourceSpecification {
   
-  @scala.inline
-  def apply(): ReservationResourceSpecification = {
+  inline def apply(): ReservationResourceSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservationResourceSpecification]
   }
   
-  @scala.inline
-  implicit class ReservationResourceSpecificationMutableBuilder[Self <: ReservationResourceSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ReservationResourceSpecification](x: Self) {
     
-    @scala.inline
-    def setChannelClass(value: ChannelClass): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
+    inline def setChannelClass(value: ChannelClass): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelClassUndefined: Self = StObject.set(x, "ChannelClass", js.undefined)
+    inline def setChannelClassUndefined: Self = StObject.set(x, "ChannelClass", js.undefined)
     
-    @scala.inline
-    def setCodec(value: ReservationCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: ReservationCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
-    @scala.inline
-    def setMaximumBitrate(value: ReservationMaximumBitrate): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
+    inline def setMaximumBitrate(value: ReservationMaximumBitrate): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumBitrateUndefined: Self = StObject.set(x, "MaximumBitrate", js.undefined)
+    inline def setMaximumBitrateUndefined: Self = StObject.set(x, "MaximumBitrate", js.undefined)
     
-    @scala.inline
-    def setMaximumFramerate(value: ReservationMaximumFramerate): Self = StObject.set(x, "MaximumFramerate", value.asInstanceOf[js.Any])
+    inline def setMaximumFramerate(value: ReservationMaximumFramerate): Self = StObject.set(x, "MaximumFramerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumFramerateUndefined: Self = StObject.set(x, "MaximumFramerate", js.undefined)
+    inline def setMaximumFramerateUndefined: Self = StObject.set(x, "MaximumFramerate", js.undefined)
     
-    @scala.inline
-    def setResolution(value: ReservationResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: ReservationResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ReservationResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ReservationResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setSpecialFeature(value: ReservationSpecialFeature): Self = StObject.set(x, "SpecialFeature", value.asInstanceOf[js.Any])
+    inline def setSpecialFeature(value: ReservationSpecialFeature): Self = StObject.set(x, "SpecialFeature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialFeatureUndefined: Self = StObject.set(x, "SpecialFeature", js.undefined)
+    inline def setSpecialFeatureUndefined: Self = StObject.set(x, "SpecialFeature", js.undefined)
     
-    @scala.inline
-    def setVideoQuality(value: ReservationVideoQuality): Self = StObject.set(x, "VideoQuality", value.asInstanceOf[js.Any])
+    inline def setVideoQuality(value: ReservationVideoQuality): Self = StObject.set(x, "VideoQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoQualityUndefined: Self = StObject.set(x, "VideoQuality", js.undefined)
+    inline def setVideoQualityUndefined: Self = StObject.set(x, "VideoQuality", js.undefined)
   }
 }

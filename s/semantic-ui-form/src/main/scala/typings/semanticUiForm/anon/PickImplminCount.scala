@@ -11,16 +11,13 @@ trait PickImplminCount extends StObject {
 }
 object PickImplminCount {
   
-  @scala.inline
-  def apply(minCount: String): PickImplminCount = {
+  inline def apply(minCount: String): PickImplminCount = {
     val __obj = js.Dynamic.literal(minCount = minCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplminCount]
   }
   
-  @scala.inline
-  implicit class PickImplminCountMutableBuilder[Self <: PickImplminCount] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplminCount](x: Self) {
     
-    @scala.inline
-    def setMinCount(value: String): Self = StObject.set(x, "minCount", value.asInstanceOf[js.Any])
+    inline def setMinCount(value: String): Self = StObject.set(x, "minCount", value.asInstanceOf[js.Any])
   }
 }

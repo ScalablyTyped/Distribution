@@ -53,8 +53,7 @@ object selectorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def parse(selector: String): js.Array[CssSelector] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[CssSelector]]
+    inline def parse(selector: String): js.Array[CssSelector] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[CssSelector]]
   }
   
   @JSImport("@angular/compiler/src/selector", "SelectorContext")
@@ -88,30 +87,30 @@ object selectorMod {
   @js.native
   class SelectorMatcher[T] () extends StObject {
     
-    var _addPartial: js.Any = js.native
+    /* private */ var _addPartial: js.Any = js.native
     
     /**
       * Add an object that can be found later on by calling `match`.
       * @param cssSelector A css selector
       * @param callbackCtxt An opaque object that will be given to the callback of the `match` function
       */
-    var _addSelectable: js.Any = js.native
+    /* private */ var _addSelectable: js.Any = js.native
     
-    var _addTerminal: js.Any = js.native
+    /* private */ var _addTerminal: js.Any = js.native
     
-    var _attrValueMap: js.Any = js.native
+    /* private */ var _attrValueMap: js.Any = js.native
     
-    var _attrValuePartialMap: js.Any = js.native
+    /* private */ var _attrValuePartialMap: js.Any = js.native
     
-    var _classMap: js.Any = js.native
+    /* private */ var _classMap: js.Any = js.native
     
-    var _classPartialMap: js.Any = js.native
+    /* private */ var _classPartialMap: js.Any = js.native
     
-    var _elementMap: js.Any = js.native
+    /* private */ var _elementMap: js.Any = js.native
     
-    var _elementPartialMap: js.Any = js.native
+    /* private */ var _elementPartialMap: js.Any = js.native
     
-    var _listContexts: js.Any = js.native
+    /* private */ var _listContexts: js.Any = js.native
     
     def addSelectables(cssSelectors: js.Array[CssSelector]): Unit = js.native
     def addSelectables(cssSelectors: js.Array[CssSelector], callbackCtxt: T): Unit = js.native
@@ -133,7 +132,6 @@ object selectorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createNotMatcher(notSelectors: js.Array[CssSelector]): SelectorMatcher[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNotMatcher")(notSelectors.asInstanceOf[js.Any]).asInstanceOf[SelectorMatcher[Null]]
+    inline def createNotMatcher(notSelectors: js.Array[CssSelector]): SelectorMatcher[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNotMatcher")(notSelectors.asInstanceOf[js.Any]).asInstanceOf[SelectorMatcher[Null]]
   }
 }

@@ -45,25 +45,19 @@ trait BootstrapOptions extends StObject {
 }
 object BootstrapOptions {
   
-  @scala.inline
-  def apply(): BootstrapOptions = {
+  inline def apply(): BootstrapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BootstrapOptions]
   }
   
-  @scala.inline
-  implicit class BootstrapOptionsMutableBuilder[Self <: BootstrapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapOptions](x: Self) {
     
-    @scala.inline
-    def setNgZone(value: NgZone | zoneDotjs | noop): Self = StObject.set(x, "ngZone", value.asInstanceOf[js.Any])
+    inline def setNgZone(value: NgZone | zoneDotjs | noop): Self = StObject.set(x, "ngZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgZoneEventCoalescing(value: Boolean): Self = StObject.set(x, "ngZoneEventCoalescing", value.asInstanceOf[js.Any])
+    inline def setNgZoneEventCoalescing(value: Boolean): Self = StObject.set(x, "ngZoneEventCoalescing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgZoneEventCoalescingUndefined: Self = StObject.set(x, "ngZoneEventCoalescing", js.undefined)
+    inline def setNgZoneEventCoalescingUndefined: Self = StObject.set(x, "ngZoneEventCoalescing", js.undefined)
     
-    @scala.inline
-    def setNgZoneUndefined: Self = StObject.set(x, "ngZone", js.undefined)
+    inline def setNgZoneUndefined: Self = StObject.set(x, "ngZone", js.undefined)
   }
 }

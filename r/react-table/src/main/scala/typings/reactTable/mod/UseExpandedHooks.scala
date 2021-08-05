@@ -13,8 +13,7 @@ trait UseExpandedHooks[D /* <: js.Object */] extends StObject {
 }
 object UseExpandedHooks {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](
+  inline def apply[D /* <: js.Object */](
     getToggleAllRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]],
     getToggleRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
   ): UseExpandedHooks[D] = {
@@ -22,19 +21,14 @@ object UseExpandedHooks {
     __obj.asInstanceOf[UseExpandedHooks[D]]
   }
   
-  @scala.inline
-  implicit class UseExpandedHooksMutableBuilder[Self <: UseExpandedHooks[?], D /* <: js.Object */] (val x: Self & UseExpandedHooks[D]) extends AnyVal {
+  extension [Self <: UseExpandedHooks[?], D /* <: js.Object */](x: Self & UseExpandedHooks[D]) {
     
-    @scala.inline
-    def setGetToggleAllRowsExpandedProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getToggleAllRowsExpandedProps", value.asInstanceOf[js.Any])
+    inline def setGetToggleAllRowsExpandedProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getToggleAllRowsExpandedProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetToggleAllRowsExpandedPropsVarargs(value: (PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps])*): Self = StObject.set(x, "getToggleAllRowsExpandedProps", js.Array(value :_*))
+    inline def setGetToggleAllRowsExpandedPropsVarargs(value: (PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps])*): Self = StObject.set(x, "getToggleAllRowsExpandedProps", js.Array(value :_*))
     
-    @scala.inline
-    def setGetToggleRowsExpandedProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getToggleRowsExpandedProps", value.asInstanceOf[js.Any])
+    inline def setGetToggleRowsExpandedProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getToggleRowsExpandedProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetToggleRowsExpandedPropsVarargs(value: (PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps])*): Self = StObject.set(x, "getToggleRowsExpandedProps", js.Array(value :_*))
+    inline def setGetToggleRowsExpandedPropsVarargs(value: (PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps])*): Self = StObject.set(x, "getToggleRowsExpandedProps", js.Array(value :_*))
   }
 }

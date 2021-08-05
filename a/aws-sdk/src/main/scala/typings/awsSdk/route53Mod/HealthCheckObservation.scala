@@ -23,31 +23,23 @@ trait HealthCheckObservation extends StObject {
 }
 object HealthCheckObservation {
   
-  @scala.inline
-  def apply(): HealthCheckObservation = {
+  inline def apply(): HealthCheckObservation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HealthCheckObservation]
   }
   
-  @scala.inline
-  implicit class HealthCheckObservationMutableBuilder[Self <: HealthCheckObservation] (val x: Self) extends AnyVal {
+  extension [Self <: HealthCheckObservation](x: Self) {
     
-    @scala.inline
-    def setIPAddress(value: IPAddress): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
+    inline def setIPAddress(value: IPAddress): Self = StObject.set(x, "IPAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPAddressUndefined: Self = StObject.set(x, "IPAddress", js.undefined)
+    inline def setIPAddressUndefined: Self = StObject.set(x, "IPAddress", js.undefined)
     
-    @scala.inline
-    def setRegion(value: HealthCheckRegion): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: HealthCheckRegion): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setStatusReport(value: StatusReport): Self = StObject.set(x, "StatusReport", value.asInstanceOf[js.Any])
+    inline def setStatusReport(value: StatusReport): Self = StObject.set(x, "StatusReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReportUndefined: Self = StObject.set(x, "StatusReport", js.undefined)
+    inline def setStatusReportUndefined: Self = StObject.set(x, "StatusReport", js.undefined)
   }
 }

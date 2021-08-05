@@ -18,25 +18,19 @@ trait DetectorModel extends StObject {
 }
 object DetectorModel {
   
-  @scala.inline
-  def apply(): DetectorModel = {
+  inline def apply(): DetectorModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectorModel]
   }
   
-  @scala.inline
-  implicit class DetectorModelMutableBuilder[Self <: DetectorModel] (val x: Self) extends AnyVal {
+  extension [Self <: DetectorModel](x: Self) {
     
-    @scala.inline
-    def setDetectorModelConfiguration(value: DetectorModelConfiguration): Self = StObject.set(x, "detectorModelConfiguration", value.asInstanceOf[js.Any])
+    inline def setDetectorModelConfiguration(value: DetectorModelConfiguration): Self = StObject.set(x, "detectorModelConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorModelConfigurationUndefined: Self = StObject.set(x, "detectorModelConfiguration", js.undefined)
+    inline def setDetectorModelConfigurationUndefined: Self = StObject.set(x, "detectorModelConfiguration", js.undefined)
     
-    @scala.inline
-    def setDetectorModelDefinition(value: DetectorModelDefinition): Self = StObject.set(x, "detectorModelDefinition", value.asInstanceOf[js.Any])
+    inline def setDetectorModelDefinition(value: DetectorModelDefinition): Self = StObject.set(x, "detectorModelDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorModelDefinitionUndefined: Self = StObject.set(x, "detectorModelDefinition", js.undefined)
+    inline def setDetectorModelDefinitionUndefined: Self = StObject.set(x, "detectorModelDefinition", js.undefined)
   }
 }

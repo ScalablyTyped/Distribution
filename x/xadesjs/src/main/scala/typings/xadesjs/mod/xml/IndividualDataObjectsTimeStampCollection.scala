@@ -13,6 +13,5 @@ class IndividualDataObjectsTimeStampCollection ()
   extends typings.xadesjs.xmlMod.IndividualDataObjectsTimeStampCollection
 object IndividualDataObjectsTimeStampCollection {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.IndividualDataObjectsTimeStampCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("IndividualDataObjectsTimeStampCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.IndividualDataObjectsTimeStampCollection]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.IndividualDataObjectsTimeStampCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("IndividualDataObjectsTimeStampCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.IndividualDataObjectsTimeStampCollection]]
 }

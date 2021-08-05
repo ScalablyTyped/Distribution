@@ -15,19 +15,15 @@ trait TypeofUpload extends StObject {
 }
 object TypeofUpload {
   
-  @scala.inline
-  def apply(extend: js.Object => Upload, fn: Upload): TypeofUpload = {
+  inline def apply(extend: js.Object => Upload, fn: Upload): TypeofUpload = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofUpload]
   }
   
-  @scala.inline
-  implicit class TypeofUploadMutableBuilder[Self <: TypeofUpload] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofUpload](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Upload): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Upload): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Upload): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Upload): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

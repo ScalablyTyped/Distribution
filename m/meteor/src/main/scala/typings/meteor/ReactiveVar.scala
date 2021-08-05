@@ -12,19 +12,15 @@ trait ReactiveVar[T] extends StObject {
 }
 object ReactiveVar {
   
-  @scala.inline
-  def apply[T](get: () => T, set: T => Unit): ReactiveVar[T] = {
+  inline def apply[T](get: () => T, set: T => Unit): ReactiveVar[T] = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
     __obj.asInstanceOf[ReactiveVar[T]]
   }
   
-  @scala.inline
-  implicit class ReactiveVarMutableBuilder[Self <: ReactiveVar[?], T] (val x: Self & ReactiveVar[T]) extends AnyVal {
+  extension [Self <: ReactiveVar[?], T](x: Self & ReactiveVar[T]) {
     
-    @scala.inline
-    def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

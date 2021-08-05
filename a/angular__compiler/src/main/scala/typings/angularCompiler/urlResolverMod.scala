@@ -22,11 +22,9 @@ object urlResolverMod {
     @js.native
     val ^ : UrlResolverCtor = js.native
     
-    @scala.inline
-    implicit class UrlResolverMutableBuilder[Self <: UrlResolver] (val x: Self) extends AnyVal {
+    extension [Self <: UrlResolver](x: Self) {
       
-      @scala.inline
-      def setResolve(value: (String, String) => String): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
+      inline def setResolve(value: (String, String) => String): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
     }
   }
   
@@ -42,14 +40,11 @@ object urlResolverMod {
     override def resolve(baseUrl: String, url: String): String = js.native
   }
   
-  @scala.inline
-  def createOfflineCompileUrlResolver(): UrlResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createOfflineCompileUrlResolver")().asInstanceOf[UrlResolver]
+  inline def createOfflineCompileUrlResolver(): UrlResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createOfflineCompileUrlResolver")().asInstanceOf[UrlResolver]
   
-  @scala.inline
-  def createUrlResolverWithoutPackagePrefix(): UrlResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createUrlResolverWithoutPackagePrefix")().asInstanceOf[UrlResolver]
+  inline def createUrlResolverWithoutPackagePrefix(): UrlResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createUrlResolverWithoutPackagePrefix")().asInstanceOf[UrlResolver]
   
-  @scala.inline
-  def getUrlScheme(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlScheme")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUrlScheme(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlScheme")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait UrlResolverCtor

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(inputs: js.Array[String]): RegExp = ^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  @scala.inline
-  def apply(inputs: js.Array[String], flags: String): RegExp = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def apply(inputs: js.Array[String]): RegExp = ^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def apply(inputs: js.Array[String], flags: String): RegExp = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[RegExp]
   
   @JSImport("regexgen", JSImport.Namespace)
   @js.native

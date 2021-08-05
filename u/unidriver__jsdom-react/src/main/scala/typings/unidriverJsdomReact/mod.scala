@@ -13,11 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def jsdomReactUniDriver(containerOrFn: ElementOrElementFinder): UniDriver[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsdomReactUniDriver")(containerOrFn.asInstanceOf[js.Any]).asInstanceOf[UniDriver[Element]]
+  inline def jsdomReactUniDriver(containerOrFn: ElementOrElementFinder): UniDriver[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsdomReactUniDriver")(containerOrFn.asInstanceOf[js.Any]).asInstanceOf[UniDriver[Element]]
   
-  @scala.inline
-  def jsdomReactUniDriverList(containerOrFn: ElementsOrElementsFinder): UniDriverList[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsdomReactUniDriverList")(containerOrFn.asInstanceOf[js.Any]).asInstanceOf[UniDriverList[Element]]
+  inline def jsdomReactUniDriverList(containerOrFn: ElementsOrElementsFinder): UniDriverList[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsdomReactUniDriverList")(containerOrFn.asInstanceOf[js.Any]).asInstanceOf[UniDriverList[Element]]
   
   type ElementOrElementFinder = (js.Function0[Element | js.Promise[Element]]) | Element
   

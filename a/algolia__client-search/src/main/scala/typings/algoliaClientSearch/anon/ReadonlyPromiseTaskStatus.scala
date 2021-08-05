@@ -16,8 +16,7 @@ trait ReadonlyPromiseTaskStatus extends StObject {
 }
 object ReadonlyPromiseTaskStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[TaskStatusResponse | js.Any],
     `finally`: () => js.Promise[TaskStatusResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyPromiseTaskStatus {
     __obj.asInstanceOf[ReadonlyPromiseTaskStatus]
   }
   
-  @scala.inline
-  implicit class ReadonlyPromiseTaskStatusMutableBuilder[Self <: ReadonlyPromiseTaskStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPromiseTaskStatus](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[TaskStatusResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[TaskStatusResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[TaskStatusResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[TaskStatusResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

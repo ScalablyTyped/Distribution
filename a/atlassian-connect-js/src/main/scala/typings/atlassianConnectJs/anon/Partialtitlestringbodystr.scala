@@ -26,43 +26,31 @@ trait Partialtitlestringbodystr extends StObject {
 }
 object Partialtitlestringbodystr {
   
-  @scala.inline
-  def apply(): Partialtitlestringbodystr = {
+  inline def apply(): Partialtitlestringbodystr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partialtitlestringbodystr]
   }
   
-  @scala.inline
-  implicit class PartialtitlestringbodystrMutableBuilder[Self <: Partialtitlestringbodystr] (val x: Self) extends AnyVal {
+  extension [Self <: Partialtitlestringbodystr](x: Self) {
     
-    @scala.inline
-    def setActions(value: StringDictionary[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: StringDictionary[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setClose(value: manual | auto): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: manual | auto): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: info | success | warning | error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: info | success | warning | error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

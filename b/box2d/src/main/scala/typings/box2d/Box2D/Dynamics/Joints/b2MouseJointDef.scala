@@ -26,8 +26,7 @@ trait b2MouseJointDef
 }
 object b2MouseJointDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bodyA: b2Body,
     bodyB: b2Body,
     collideConnected: Boolean,
@@ -42,16 +41,12 @@ object b2MouseJointDef {
     __obj.asInstanceOf[b2MouseJointDef]
   }
   
-  @scala.inline
-  implicit class b2MouseJointDefMutableBuilder[Self <: b2MouseJointDef] (val x: Self) extends AnyVal {
+  extension [Self <: b2MouseJointDef](x: Self) {
     
-    @scala.inline
-    def setDampingRatio(value: Double): Self = StObject.set(x, "dampingRatio", value.asInstanceOf[js.Any])
+    inline def setDampingRatio(value: Double): Self = StObject.set(x, "dampingRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyHz(value: Double): Self = StObject.set(x, "frequencyHz", value.asInstanceOf[js.Any])
+    inline def setFrequencyHz(value: Double): Self = StObject.set(x, "frequencyHz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
   }
 }

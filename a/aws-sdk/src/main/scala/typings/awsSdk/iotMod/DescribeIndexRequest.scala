@@ -13,16 +13,13 @@ trait DescribeIndexRequest extends StObject {
 }
 object DescribeIndexRequest {
   
-  @scala.inline
-  def apply(indexName: IndexName): DescribeIndexRequest = {
+  inline def apply(indexName: IndexName): DescribeIndexRequest = {
     val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIndexRequest]
   }
   
-  @scala.inline
-  implicit class DescribeIndexRequestMutableBuilder[Self <: DescribeIndexRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIndexRequest](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
   }
 }

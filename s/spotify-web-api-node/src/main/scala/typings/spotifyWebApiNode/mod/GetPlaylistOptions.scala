@@ -10,8 +10,7 @@ trait GetPlaylistOptions
      with FieldsOptions
 object GetPlaylistOptions {
   
-  @scala.inline
-  def apply(): GetPlaylistOptions = {
+  inline def apply(): GetPlaylistOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPlaylistOptions]
   }

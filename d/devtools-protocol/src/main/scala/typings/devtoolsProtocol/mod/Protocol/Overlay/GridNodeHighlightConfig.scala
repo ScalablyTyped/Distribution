@@ -19,19 +19,15 @@ trait GridNodeHighlightConfig extends StObject {
 }
 object GridNodeHighlightConfig {
   
-  @scala.inline
-  def apply(gridHighlightConfig: GridHighlightConfig, nodeId: NodeId): GridNodeHighlightConfig = {
+  inline def apply(gridHighlightConfig: GridHighlightConfig, nodeId: NodeId): GridNodeHighlightConfig = {
     val __obj = js.Dynamic.literal(gridHighlightConfig = gridHighlightConfig.asInstanceOf[js.Any], nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridNodeHighlightConfig]
   }
   
-  @scala.inline
-  implicit class GridNodeHighlightConfigMutableBuilder[Self <: GridNodeHighlightConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GridNodeHighlightConfig](x: Self) {
     
-    @scala.inline
-    def setGridHighlightConfig(value: GridHighlightConfig): Self = StObject.set(x, "gridHighlightConfig", value.asInstanceOf[js.Any])
+    inline def setGridHighlightConfig(value: GridHighlightConfig): Self = StObject.set(x, "gridHighlightConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

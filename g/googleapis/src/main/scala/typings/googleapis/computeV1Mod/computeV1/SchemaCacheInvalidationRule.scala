@@ -16,25 +16,19 @@ trait SchemaCacheInvalidationRule extends StObject {
 }
 object SchemaCacheInvalidationRule {
   
-  @scala.inline
-  def apply(): SchemaCacheInvalidationRule = {
+  inline def apply(): SchemaCacheInvalidationRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCacheInvalidationRule]
   }
   
-  @scala.inline
-  implicit class SchemaCacheInvalidationRuleMutableBuilder[Self <: SchemaCacheInvalidationRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCacheInvalidationRule](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

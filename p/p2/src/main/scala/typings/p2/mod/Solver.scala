@@ -41,12 +41,10 @@ object Solver {
   @JSImport("p2", "Solver.GS")
   @js.native
   def GS: Double = js.native
-  @scala.inline
-  def GS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GS")(x.asInstanceOf[js.Any])
+  inline def GS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GS")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Solver.ISLAND")
   @js.native
   def ISLAND: Double = js.native
-  @scala.inline
-  def ISLAND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISLAND")(x.asInstanceOf[js.Any])
+  inline def ISLAND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISLAND")(x.asInstanceOf[js.Any])
 }

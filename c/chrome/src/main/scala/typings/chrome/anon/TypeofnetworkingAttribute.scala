@@ -11,16 +11,13 @@ trait TypeofnetworkingAttribute extends StObject {
 }
 object TypeofnetworkingAttribute {
   
-  @scala.inline
-  def apply(getNetworkDetails: js.Function1[/* networkDetails */ NetworkDetails, Unit] => Unit): TypeofnetworkingAttribute = {
+  inline def apply(getNetworkDetails: js.Function1[/* networkDetails */ NetworkDetails, Unit] => Unit): TypeofnetworkingAttribute = {
     val __obj = js.Dynamic.literal(getNetworkDetails = js.Any.fromFunction1(getNetworkDetails))
     __obj.asInstanceOf[TypeofnetworkingAttribute]
   }
   
-  @scala.inline
-  implicit class TypeofnetworkingAttributeMutableBuilder[Self <: TypeofnetworkingAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofnetworkingAttribute](x: Self) {
     
-    @scala.inline
-    def setGetNetworkDetails(value: js.Function1[/* networkDetails */ NetworkDetails, Unit] => Unit): Self = StObject.set(x, "getNetworkDetails", js.Any.fromFunction1(value))
+    inline def setGetNetworkDetails(value: js.Function1[/* networkDetails */ NetworkDetails, Unit] => Unit): Self = StObject.set(x, "getNetworkDetails", js.Any.fromFunction1(value))
   }
 }

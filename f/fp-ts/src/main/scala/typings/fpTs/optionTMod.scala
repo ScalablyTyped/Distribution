@@ -20,14 +20,10 @@ object optionTMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOptionM[M](M: Monad[M]): OptionM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM[M]]
-  @scala.inline
-  def getOptionM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): OptionM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM1[M]]
-  @scala.inline
-  def getOptionM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): OptionM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM2[M]]
-  @scala.inline
-  def getOptionM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): OptionM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM2C[M, E]]
+  inline def getOptionM[M](M: Monad[M]): OptionM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM[M]]
+  inline def getOptionM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): OptionM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM1[M]]
+  inline def getOptionM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): OptionM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM2[M]]
+  inline def getOptionM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): OptionM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionM")(M.asInstanceOf[js.Any]).asInstanceOf[OptionM2C[M, E]]
   
   trait OptionM[M]
     extends StObject
@@ -63,8 +59,7 @@ object optionTMod {
   }
   object OptionM {
     
-    @scala.inline
-    def apply[M](
+    inline def apply[M](
       alt: (OptionT[M, js.Any], Lazy[OptionT[M, js.Any]]) => OptionT[M, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind<G, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind<G, A>> */ js.Any) => js.Any,
       chain: (OptionT[M, js.Any], js.Function1[js.Any, OptionT[M, js.Any]]) => OptionT[M, js.Any],
@@ -86,17 +81,13 @@ object optionTMod {
       __obj.asInstanceOf[OptionM[M]]
     }
     
-    @scala.inline
-    implicit class OptionMMutableBuilder[Self <: OptionM[?], M] (val x: Self & OptionM[M]) extends AnyVal {
+    extension [Self <: OptionM[?], M](x: Self & OptionM[M]) {
       
-      @scala.inline
-      def setAlt(value: (OptionT[M, js.Any], Lazy[OptionT[M, js.Any]]) => OptionT[M, js.Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (OptionT[M, js.Any], Lazy[OptionT[M, js.Any]]) => OptionT[M, js.Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(value: (OptionT[M, js.Any], js.Function1[js.Any, OptionT[M, js.Any]]) => OptionT[M, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
+      inline def setChain(value: (OptionT[M, js.Any], js.Function1[js.Any, OptionT[M, js.Any]]) => OptionT[M, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (OptionT[M, js.Any], Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, R> */ js.Any
             ], js.Function1[
@@ -105,20 +96,17 @@ object optionTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ js.Any => OptionT[M, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOrElse(
+      inline def setGetOrElse(
         value: (OptionT[M, js.Any], Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNone(value: () => OptionT[M, js.Any]): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
+      inline def setNone(value: () => OptionT[M, js.Any]): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
     }
   }
   
@@ -156,8 +144,7 @@ object optionTMod {
   }
   object OptionM1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       alt: (OptionT1[M, js.Any], Lazy[OptionT1[M, js.Any]]) => OptionT1[M, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, A>> */ js.Any) => js.Any,
       chain: (OptionT1[M, js.Any], js.Function1[js.Any, OptionT1[M, js.Any]]) => OptionT1[M, js.Any],
@@ -179,17 +166,13 @@ object optionTMod {
       __obj.asInstanceOf[OptionM1[M]]
     }
     
-    @scala.inline
-    implicit class OptionM1MutableBuilder[Self <: OptionM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & OptionM1[M]) extends AnyVal {
+    extension [Self <: OptionM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & OptionM1[M]) {
       
-      @scala.inline
-      def setAlt(value: (OptionT1[M, js.Any], Lazy[OptionT1[M, js.Any]]) => OptionT1[M, js.Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (OptionT1[M, js.Any], Lazy[OptionT1[M, js.Any]]) => OptionT1[M, js.Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(value: (OptionT1[M, js.Any], js.Function1[js.Any, OptionT1[M, js.Any]]) => OptionT1[M, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
+      inline def setChain(value: (OptionT1[M, js.Any], js.Function1[js.Any, OptionT1[M, js.Any]]) => OptionT1[M, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (OptionT1[M, js.Any], Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, R> */ js.Any
             ], js.Function1[
@@ -198,20 +181,17 @@ object optionTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ js.Any => OptionT1[M, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOrElse(
+      inline def setGetOrElse(
         value: (OptionT1[M, js.Any], Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNone(value: () => OptionT1[M, js.Any]): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
+      inline def setNone(value: () => OptionT1[M, js.Any]): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
     }
   }
   
@@ -249,8 +229,7 @@ object optionTMod {
   }
   object OptionM2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       alt: (OptionT2[M, js.Any, js.Any], Lazy[OptionT2[M, js.Any, js.Any]]) => OptionT2[M, js.Any, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ js.Any) => js.Any,
       chain: (OptionT2[M, js.Any, js.Any], js.Function1[js.Any, OptionT2[M, js.Any, js.Any]]) => OptionT2[M, js.Any, js.Any],
@@ -272,21 +251,17 @@ object optionTMod {
       __obj.asInstanceOf[OptionM2[M]]
     }
     
-    @scala.inline
-    implicit class OptionM2MutableBuilder[Self <: OptionM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & OptionM2[M]) extends AnyVal {
+    extension [Self <: OptionM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & OptionM2[M]) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (OptionT2[M, js.Any, js.Any], Lazy[OptionT2[M, js.Any, js.Any]]) => OptionT2[M, js.Any, js.Any]
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (OptionT2[M, js.Any, js.Any], js.Function1[js.Any, OptionT2[M, js.Any, js.Any]]) => OptionT2[M, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (OptionT2[M, js.Any, js.Any], Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ js.Any
             ], js.Function1[
@@ -295,20 +270,17 @@ object optionTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any => OptionT2[M, js.Any, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOrElse(
+      inline def setGetOrElse(
         value: (OptionT2[M, js.Any, js.Any], Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNone(value: () => OptionT2[M, js.Any, js.Any]): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
+      inline def setNone(value: () => OptionT2[M, js.Any, js.Any]): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
     }
   }
   
@@ -346,8 +318,7 @@ object optionTMod {
   }
   object OptionM2C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       alt: (OptionT2[M, E, js.Any], Lazy[OptionT2[M, E, js.Any]]) => OptionT2[M, E, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ js.Any) => js.Any,
       chain: (OptionT2[M, E, js.Any], js.Function1[js.Any, OptionT2[M, E, js.Any]]) => OptionT2[M, E, js.Any],
@@ -369,19 +340,15 @@ object optionTMod {
       __obj.asInstanceOf[OptionM2C[M, E]]
     }
     
-    @scala.inline
-    implicit class OptionM2CMutableBuilder[Self <: OptionM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (OptionM2C[M, E])) extends AnyVal {
+    extension [Self <: OptionM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (OptionM2C[M, E])) {
       
-      @scala.inline
-      def setAlt(value: (OptionT2[M, E, js.Any], Lazy[OptionT2[M, E, js.Any]]) => OptionT2[M, E, js.Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (OptionT2[M, E, js.Any], Lazy[OptionT2[M, E, js.Any]]) => OptionT2[M, E, js.Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (OptionT2[M, E, js.Any], js.Function1[js.Any, OptionT2[M, E, js.Any]]) => OptionT2[M, E, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (OptionT2[M, E, js.Any], Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, R> */ js.Any
             ], js.Function1[
@@ -390,20 +357,17 @@ object optionTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFromM(
+      inline def setFromM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any => OptionT2[M, E, js.Any]
       ): Self = StObject.set(x, "fromM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOrElse(
+      inline def setGetOrElse(
         value: (OptionT2[M, E, js.Any], Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, E, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNone(value: () => OptionT2[M, E, js.Any]): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
+      inline def setNone(value: () => OptionT2[M, E, js.Any]): Self = StObject.set(x, "none", js.Any.fromFunction0(value))
     }
   }
   

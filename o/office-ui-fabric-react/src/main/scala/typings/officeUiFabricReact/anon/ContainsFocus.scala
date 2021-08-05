@@ -16,25 +16,19 @@ trait ContainsFocus extends StObject {
 }
 object ContainsFocus {
   
-  @scala.inline
-  def apply(containsFocus: Boolean, documentContainsFocus: Boolean): ContainsFocus = {
+  inline def apply(containsFocus: Boolean, documentContainsFocus: Boolean): ContainsFocus = {
     val __obj = js.Dynamic.literal(containsFocus = containsFocus.asInstanceOf[js.Any], documentContainsFocus = documentContainsFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainsFocus]
   }
   
-  @scala.inline
-  implicit class ContainsFocusMutableBuilder[Self <: ContainsFocus] (val x: Self) extends AnyVal {
+  extension [Self <: ContainsFocus](x: Self) {
     
-    @scala.inline
-    def setContainsFocus(value: Boolean): Self = StObject.set(x, "containsFocus", value.asInstanceOf[js.Any])
+    inline def setContainsFocus(value: Boolean): Self = StObject.set(x, "containsFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentContainsFocus(value: Boolean): Self = StObject.set(x, "documentContainsFocus", value.asInstanceOf[js.Any])
+    inline def setDocumentContainsFocus(value: Boolean): Self = StObject.set(x, "documentContainsFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalElement(value: HTMLElement | Window): Self = StObject.set(x, "originalElement", value.asInstanceOf[js.Any])
+    inline def setOriginalElement(value: HTMLElement | Window): Self = StObject.set(x, "originalElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalElementUndefined: Self = StObject.set(x, "originalElement", js.undefined)
+    inline def setOriginalElementUndefined: Self = StObject.set(x, "originalElement", js.undefined)
   }
 }

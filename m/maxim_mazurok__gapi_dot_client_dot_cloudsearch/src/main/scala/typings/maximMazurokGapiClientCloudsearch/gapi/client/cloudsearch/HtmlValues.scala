@@ -11,22 +11,17 @@ trait HtmlValues extends StObject {
 }
 object HtmlValues {
   
-  @scala.inline
-  def apply(): HtmlValues = {
+  inline def apply(): HtmlValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlValues]
   }
   
-  @scala.inline
-  implicit class HtmlValuesMutableBuilder[Self <: HtmlValues] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlValues](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

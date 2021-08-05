@@ -18,25 +18,19 @@ trait DisableMetricsCollectionQuery extends StObject {
 }
 object DisableMetricsCollectionQuery {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName): DisableMetricsCollectionQuery = {
+  inline def apply(AutoScalingGroupName: ResourceName): DisableMetricsCollectionQuery = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableMetricsCollectionQuery]
   }
   
-  @scala.inline
-  implicit class DisableMetricsCollectionQueryMutableBuilder[Self <: DisableMetricsCollectionQuery] (val x: Self) extends AnyVal {
+  extension [Self <: DisableMetricsCollectionQuery](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
   }
 }

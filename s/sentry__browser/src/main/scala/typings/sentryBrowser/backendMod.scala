@@ -48,56 +48,40 @@ object backendMod {
   }
   object BrowserOptions {
     
-    @scala.inline
-    def apply(): BrowserOptions = {
+    inline def apply(): BrowserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserOptions]
     }
     
-    @scala.inline
-    implicit class BrowserOptionsMutableBuilder[Self <: BrowserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserOptions](x: Self) {
       
-      @scala.inline
-      def setAllowUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "allowUrls", value.asInstanceOf[js.Any])
+      inline def setAllowUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "allowUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUrlsUndefined: Self = StObject.set(x, "allowUrls", js.undefined)
+      inline def setAllowUrlsUndefined: Self = StObject.set(x, "allowUrls", js.undefined)
       
-      @scala.inline
-      def setAllowUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "allowUrls", js.Array(value :_*))
+      inline def setAllowUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "allowUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setAutoSessionTracking(value: Boolean): Self = StObject.set(x, "autoSessionTracking", value.asInstanceOf[js.Any])
+      inline def setAutoSessionTracking(value: Boolean): Self = StObject.set(x, "autoSessionTracking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSessionTrackingUndefined: Self = StObject.set(x, "autoSessionTracking", js.undefined)
+      inline def setAutoSessionTrackingUndefined: Self = StObject.set(x, "autoSessionTracking", js.undefined)
       
-      @scala.inline
-      def setBlacklistUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "blacklistUrls", value.asInstanceOf[js.Any])
+      inline def setBlacklistUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "blacklistUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUrlsUndefined: Self = StObject.set(x, "blacklistUrls", js.undefined)
+      inline def setBlacklistUrlsUndefined: Self = StObject.set(x, "blacklistUrls", js.undefined)
       
-      @scala.inline
-      def setBlacklistUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "blacklistUrls", js.Array(value :_*))
+      inline def setBlacklistUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "blacklistUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setDenyUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "denyUrls", value.asInstanceOf[js.Any])
+      inline def setDenyUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "denyUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenyUrlsUndefined: Self = StObject.set(x, "denyUrls", js.undefined)
+      inline def setDenyUrlsUndefined: Self = StObject.set(x, "denyUrls", js.undefined)
       
-      @scala.inline
-      def setDenyUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "denyUrls", js.Array(value :_*))
+      inline def setDenyUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "denyUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setWhitelistUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "whitelistUrls", value.asInstanceOf[js.Any])
+      inline def setWhitelistUrls(value: js.Array[String | RegExp]): Self = StObject.set(x, "whitelistUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUrlsUndefined: Self = StObject.set(x, "whitelistUrls", js.undefined)
+      inline def setWhitelistUrlsUndefined: Self = StObject.set(x, "whitelistUrls", js.undefined)
       
-      @scala.inline
-      def setWhitelistUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "whitelistUrls", js.Array(value :_*))
+      inline def setWhitelistUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "whitelistUrls", js.Array(value :_*))
     }
   }
 }

@@ -19,19 +19,15 @@ trait OlapFlatDataSourceOptionsMetadata
 }
 object OlapFlatDataSourceOptionsMetadata {
   
-  @scala.inline
-  def apply(): OlapFlatDataSourceOptionsMetadata = {
+  inline def apply(): OlapFlatDataSourceOptionsMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OlapFlatDataSourceOptionsMetadata]
   }
   
-  @scala.inline
-  implicit class OlapFlatDataSourceOptionsMetadataMutableBuilder[Self <: OlapFlatDataSourceOptionsMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: OlapFlatDataSourceOptionsMetadata](x: Self) {
     
-    @scala.inline
-    def setCube(value: OlapFlatDataSourceOptionsMetadataCube): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    inline def setCube(value: OlapFlatDataSourceOptionsMetadataCube): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
   }
 }

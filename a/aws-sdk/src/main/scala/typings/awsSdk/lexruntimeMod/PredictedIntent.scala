@@ -23,31 +23,23 @@ trait PredictedIntent extends StObject {
 }
 object PredictedIntent {
   
-  @scala.inline
-  def apply(): PredictedIntent = {
+  inline def apply(): PredictedIntent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PredictedIntent]
   }
   
-  @scala.inline
-  implicit class PredictedIntentMutableBuilder[Self <: PredictedIntent] (val x: Self) extends AnyVal {
+  extension [Self <: PredictedIntent](x: Self) {
     
-    @scala.inline
-    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
+    inline def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
+    inline def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
     
-    @scala.inline
-    def setNluIntentConfidence(value: IntentConfidence): Self = StObject.set(x, "nluIntentConfidence", value.asInstanceOf[js.Any])
+    inline def setNluIntentConfidence(value: IntentConfidence): Self = StObject.set(x, "nluIntentConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNluIntentConfidenceUndefined: Self = StObject.set(x, "nluIntentConfidence", js.undefined)
+    inline def setNluIntentConfidenceUndefined: Self = StObject.set(x, "nluIntentConfidence", js.undefined)
     
-    @scala.inline
-    def setSlots(value: StringMap): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: StringMap): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }
 }

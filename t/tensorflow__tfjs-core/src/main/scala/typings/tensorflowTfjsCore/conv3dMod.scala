@@ -17,8 +17,7 @@ object conv3dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def conv3d[T /* <: Tensor4D | Tensor5D */](
+  inline def conv3d[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D | TensorLike,
     strides: (js.Tuple3[Double, Double, Double]) | Double,

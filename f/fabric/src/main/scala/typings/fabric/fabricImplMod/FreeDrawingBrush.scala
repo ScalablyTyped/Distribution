@@ -18,19 +18,15 @@ trait FreeDrawingBrush extends StObject {
 }
 object FreeDrawingBrush {
   
-  @scala.inline
-  def apply(color: String, width: Double): FreeDrawingBrush = {
+  inline def apply(color: String, width: Double): FreeDrawingBrush = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeDrawingBrush]
   }
   
-  @scala.inline
-  implicit class FreeDrawingBrushMutableBuilder[Self <: FreeDrawingBrush] (val x: Self) extends AnyVal {
+  extension [Self <: FreeDrawingBrush](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

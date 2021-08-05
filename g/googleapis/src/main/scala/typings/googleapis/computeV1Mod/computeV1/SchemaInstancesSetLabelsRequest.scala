@@ -18,25 +18,19 @@ trait SchemaInstancesSetLabelsRequest extends StObject {
 }
 object SchemaInstancesSetLabelsRequest {
   
-  @scala.inline
-  def apply(): SchemaInstancesSetLabelsRequest = {
+  inline def apply(): SchemaInstancesSetLabelsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstancesSetLabelsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstancesSetLabelsRequestMutableBuilder[Self <: SchemaInstancesSetLabelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstancesSetLabelsRequest](x: Self) {
     
-    @scala.inline
-    def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
+    inline def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
+    inline def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

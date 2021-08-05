@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("tabris", "Layout")
 @js.native
 class Layout protected () extends StObject {
-  protected def this(options: js.Object) = this()
+  /* protected */ def this(options: js.Object) = this()
   
   /**
     * Callback used internally by widgets to register themselves as managed by this layout.

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XREnvironmentBlendMode extends StObject
 object XREnvironmentBlendMode {
   
-  @scala.inline
-  def additive: typings.three.threeStrings.additive = "additive".asInstanceOf[typings.three.threeStrings.additive]
+  inline def additive: typings.three.threeStrings.additive = "additive".asInstanceOf[typings.three.threeStrings.additive]
   
-  @scala.inline
-  def `alpha-blend`: typings.three.threeStrings.`alpha-blend` = "alpha-blend".asInstanceOf[typings.three.threeStrings.`alpha-blend`]
+  inline def `alpha-blend`: typings.three.threeStrings.`alpha-blend` = "alpha-blend".asInstanceOf[typings.three.threeStrings.`alpha-blend`]
   
-  @scala.inline
-  def opaque: typings.three.threeStrings.opaque = "opaque".asInstanceOf[typings.three.threeStrings.opaque]
+  inline def opaque: typings.three.threeStrings.opaque = "opaque".asInstanceOf[typings.three.threeStrings.opaque]
 }

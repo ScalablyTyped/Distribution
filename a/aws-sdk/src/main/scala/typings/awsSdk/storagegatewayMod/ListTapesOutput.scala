@@ -15,28 +15,21 @@ trait ListTapesOutput extends StObject {
 }
 object ListTapesOutput {
   
-  @scala.inline
-  def apply(): ListTapesOutput = {
+  inline def apply(): ListTapesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTapesOutput]
   }
   
-  @scala.inline
-  implicit class ListTapesOutputMutableBuilder[Self <: ListTapesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTapesOutput](x: Self) {
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setTapeInfos(value: TapeInfos): Self = StObject.set(x, "TapeInfos", value.asInstanceOf[js.Any])
+    inline def setTapeInfos(value: TapeInfos): Self = StObject.set(x, "TapeInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeInfosUndefined: Self = StObject.set(x, "TapeInfos", js.undefined)
+    inline def setTapeInfosUndefined: Self = StObject.set(x, "TapeInfos", js.undefined)
     
-    @scala.inline
-    def setTapeInfosVarargs(value: TapeInfo*): Self = StObject.set(x, "TapeInfos", js.Array(value :_*))
+    inline def setTapeInfosVarargs(value: TapeInfo*): Self = StObject.set(x, "TapeInfos", js.Array(value :_*))
   }
 }

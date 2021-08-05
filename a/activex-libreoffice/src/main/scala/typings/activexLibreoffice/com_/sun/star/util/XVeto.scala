@@ -19,19 +19,15 @@ trait XVeto extends StObject {
 }
 object XVeto {
   
-  @scala.inline
-  def apply(Details: js.Any, Reason: String): XVeto = {
+  inline def apply(Details: js.Any, Reason: String): XVeto = {
     val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[XVeto]
   }
   
-  @scala.inline
-  implicit class XVetoMutableBuilder[Self <: XVeto] (val x: Self) extends AnyVal {
+  extension [Self <: XVeto](x: Self) {
     
-    @scala.inline
-    def setDetails(value: js.Any): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Any): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

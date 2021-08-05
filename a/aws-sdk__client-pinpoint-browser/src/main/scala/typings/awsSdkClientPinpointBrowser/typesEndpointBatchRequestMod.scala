@@ -18,23 +18,18 @@ object typesEndpointBatchRequestMod {
   }
   object EndpointBatchRequest {
     
-    @scala.inline
-    def apply(): EndpointBatchRequest = {
+    inline def apply(): EndpointBatchRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointBatchRequest]
     }
     
-    @scala.inline
-    implicit class EndpointBatchRequestMutableBuilder[Self <: EndpointBatchRequest] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointBatchRequest](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[EndpointBatchItem] | Iterable[EndpointBatchItem]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[EndpointBatchItem] | Iterable[EndpointBatchItem]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: EndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: EndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value :_*))
     }
   }
   
@@ -50,23 +45,18 @@ object typesEndpointBatchRequestMod {
   }
   object UnmarshalledEndpointBatchRequest {
     
-    @scala.inline
-    def apply(): UnmarshalledEndpointBatchRequest = {
+    inline def apply(): UnmarshalledEndpointBatchRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEndpointBatchRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEndpointBatchRequestMutableBuilder[Self <: UnmarshalledEndpointBatchRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEndpointBatchRequest](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[UnmarshalledEndpointBatchItem]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[UnmarshalledEndpointBatchItem]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: UnmarshalledEndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledEndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value :_*))
     }
   }
 }

@@ -10,16 +10,13 @@ trait ColorPicker extends StObject {
 }
 object ColorPicker {
   
-  @scala.inline
-  def apply(render: ColorPickerOption => ColorPicker): ColorPicker = {
+  inline def apply(render: ColorPickerOption => ColorPicker): ColorPicker = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
     __obj.asInstanceOf[ColorPicker]
   }
   
-  @scala.inline
-  implicit class ColorPickerMutableBuilder[Self <: ColorPicker] (val x: Self) extends AnyVal {
+  extension [Self <: ColorPicker](x: Self) {
     
-    @scala.inline
-    def setRender(value: ColorPickerOption => ColorPicker): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: ColorPickerOption => ColorPicker): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
   }
 }

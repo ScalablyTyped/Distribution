@@ -19,8 +19,7 @@ trait FancyBoxFullScreen extends StObject {
 }
 object FancyBoxFullScreen {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enabled: () => Boolean,
     exit: () => Unit,
     isFullscreen: () => Boolean,
@@ -31,22 +30,16 @@ object FancyBoxFullScreen {
     __obj.asInstanceOf[FancyBoxFullScreen]
   }
   
-  @scala.inline
-  implicit class FancyBoxFullScreenMutableBuilder[Self <: FancyBoxFullScreen] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxFullScreen](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: () => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction0(value))
+    inline def setEnabled(value: () => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
+    inline def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFullscreen(value: () => Boolean): Self = StObject.set(x, "isFullscreen", js.Any.fromFunction0(value))
+    inline def setIsFullscreen(value: () => Boolean): Self = StObject.set(x, "isFullscreen", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequest(value: HTMLElement => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: HTMLElement => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggle(value: HTMLElement => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+    inline def setToggle(value: HTMLElement => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
   }
 }

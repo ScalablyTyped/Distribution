@@ -24,6 +24,5 @@ object ComponentFactoryResolver {
   @JSImport("@angular/core", "ComponentFactoryResolver.NULL")
   @js.native
   def NULL: ComponentFactoryResolver = js.native
-  @scala.inline
-  def NULL_=(x: ComponentFactoryResolver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
+  inline def NULL_=(x: ComponentFactoryResolver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
 }

@@ -33,34 +33,25 @@ trait Edge extends StObject {
 }
 object Edge {
   
-  @scala.inline
-  def apply(id: String, sourceNodeId: String, targetNodeId: String): Edge = {
+  inline def apply(id: String, sourceNodeId: String, targetNodeId: String): Edge = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceNodeId = sourceNodeId.asInstanceOf[js.Any], targetNodeId = targetNodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Edge]
   }
   
-  @scala.inline
-  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+  extension [Self <: Edge](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: Message): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Message): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setSourceNodeId(value: String): Self = StObject.set(x, "sourceNodeId", value.asInstanceOf[js.Any])
+    inline def setSourceNodeId(value: String): Self = StObject.set(x, "sourceNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNodeId(value: String): Self = StObject.set(x, "targetNodeId", value.asInstanceOf[js.Any])
+    inline def setTargetNodeId(value: String): Self = StObject.set(x, "targetNodeId", value.asInstanceOf[js.Any])
   }
 }

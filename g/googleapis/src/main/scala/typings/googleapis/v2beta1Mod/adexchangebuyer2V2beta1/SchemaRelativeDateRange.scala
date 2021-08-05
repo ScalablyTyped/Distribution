@@ -26,25 +26,19 @@ trait SchemaRelativeDateRange extends StObject {
 }
 object SchemaRelativeDateRange {
   
-  @scala.inline
-  def apply(): SchemaRelativeDateRange = {
+  inline def apply(): SchemaRelativeDateRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRelativeDateRange]
   }
   
-  @scala.inline
-  implicit class SchemaRelativeDateRangeMutableBuilder[Self <: SchemaRelativeDateRange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRelativeDateRange](x: Self) {
     
-    @scala.inline
-    def setDurationDays(value: Double): Self = StObject.set(x, "durationDays", value.asInstanceOf[js.Any])
+    inline def setDurationDays(value: Double): Self = StObject.set(x, "durationDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationDaysUndefined: Self = StObject.set(x, "durationDays", js.undefined)
+    inline def setDurationDaysUndefined: Self = StObject.set(x, "durationDays", js.undefined)
     
-    @scala.inline
-    def setOffsetDays(value: Double): Self = StObject.set(x, "offsetDays", value.asInstanceOf[js.Any])
+    inline def setOffsetDays(value: Double): Self = StObject.set(x, "offsetDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetDaysUndefined: Self = StObject.set(x, "offsetDays", js.undefined)
+    inline def setOffsetDaysUndefined: Self = StObject.set(x, "offsetDays", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait XInteractionHandlerSupplier
 }
 object XInteractionHandlerSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     hasInteractionHandler: () => Boolean,
     queryInterface: `type` => js.Any,
@@ -33,10 +32,8 @@ object XInteractionHandlerSupplier {
     __obj.asInstanceOf[XInteractionHandlerSupplier]
   }
   
-  @scala.inline
-  implicit class XInteractionHandlerSupplierMutableBuilder[Self <: XInteractionHandlerSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionHandlerSupplier](x: Self) {
     
-    @scala.inline
-    def setHasInteractionHandler(value: () => Boolean): Self = StObject.set(x, "hasInteractionHandler", js.Any.fromFunction0(value))
+    inline def setHasInteractionHandler(value: () => Boolean): Self = StObject.set(x, "hasInteractionHandler", js.Any.fromFunction0(value))
   }
 }

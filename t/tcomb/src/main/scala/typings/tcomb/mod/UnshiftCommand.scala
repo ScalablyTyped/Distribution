@@ -13,19 +13,15 @@ trait UnshiftCommand
 }
 object UnshiftCommand {
   
-  @scala.inline
-  def apply($unshift: js.Array[js.Any]): UnshiftCommand = {
+  inline def apply($unshift: js.Array[js.Any]): UnshiftCommand = {
     val __obj = js.Dynamic.literal($unshift = $unshift.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnshiftCommand]
   }
   
-  @scala.inline
-  implicit class UnshiftCommandMutableBuilder[Self <: UnshiftCommand] (val x: Self) extends AnyVal {
+  extension [Self <: UnshiftCommand](x: Self) {
     
-    @scala.inline
-    def set$unshift(value: js.Array[js.Any]): Self = StObject.set(x, "$unshift", value.asInstanceOf[js.Any])
+    inline def set$unshift(value: js.Array[js.Any]): Self = StObject.set(x, "$unshift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$unshiftVarargs(value: js.Any*): Self = StObject.set(x, "$unshift", js.Array(value :_*))
+    inline def set$unshiftVarargs(value: js.Any*): Self = StObject.set(x, "$unshift", js.Array(value :_*))
   }
 }

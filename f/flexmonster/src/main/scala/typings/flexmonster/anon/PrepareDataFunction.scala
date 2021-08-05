@@ -14,29 +14,22 @@ trait PrepareDataFunction extends StObject {
 }
 object PrepareDataFunction {
   
-  @scala.inline
-  def apply(`type`: String): PrepareDataFunction = {
+  inline def apply(`type`: String): PrepareDataFunction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrepareDataFunction]
   }
   
-  @scala.inline
-  implicit class PrepareDataFunctionMutableBuilder[Self <: PrepareDataFunction] (val x: Self) extends AnyVal {
+  extension [Self <: PrepareDataFunction](x: Self) {
     
-    @scala.inline
-    def setPrepareDataFunction(value: /* rawData */ js.Any => js.Any): Self = StObject.set(x, "prepareDataFunction", js.Any.fromFunction1(value))
+    inline def setPrepareDataFunction(value: /* rawData */ js.Any => js.Any): Self = StObject.set(x, "prepareDataFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrepareDataFunctionUndefined: Self = StObject.set(x, "prepareDataFunction", js.undefined)
+    inline def setPrepareDataFunctionUndefined: Self = StObject.set(x, "prepareDataFunction", js.undefined)
     
-    @scala.inline
-    def setSlice(value: typings.flexmonster.mod.Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+    inline def setSlice(value: typings.flexmonster.mod.Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+    inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

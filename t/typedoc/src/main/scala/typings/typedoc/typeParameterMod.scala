@@ -13,6 +13,5 @@ object typeParameterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTypeParameter(context: Context, node: TypeParameterDeclaration): js.UndefOr[TypeParameterType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TypeParameterType]]
+  inline def createTypeParameter(context: Context, node: TypeParameterDeclaration): js.UndefOr[TypeParameterType] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TypeParameterType]]
 }

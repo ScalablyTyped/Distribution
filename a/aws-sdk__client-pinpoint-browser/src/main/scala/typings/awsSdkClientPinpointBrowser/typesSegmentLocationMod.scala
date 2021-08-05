@@ -24,26 +24,20 @@ object typesSegmentLocationMod {
   }
   object SegmentLocation {
     
-    @scala.inline
-    def apply(): SegmentLocation = {
+    inline def apply(): SegmentLocation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SegmentLocation]
     }
     
-    @scala.inline
-    implicit class SegmentLocationMutableBuilder[Self <: SegmentLocation] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentLocation](x: Self) {
       
-      @scala.inline
-      def setCountry(value: SetDimension): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: SetDimension): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
       
-      @scala.inline
-      def setGPSPoint(value: GPSPointDimension): Self = StObject.set(x, "GPSPoint", value.asInstanceOf[js.Any])
+      inline def setGPSPoint(value: GPSPointDimension): Self = StObject.set(x, "GPSPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGPSPointUndefined: Self = StObject.set(x, "GPSPoint", js.undefined)
+      inline def setGPSPointUndefined: Self = StObject.set(x, "GPSPoint", js.undefined)
     }
   }
   
@@ -65,26 +59,20 @@ object typesSegmentLocationMod {
   }
   object UnmarshalledSegmentLocation {
     
-    @scala.inline
-    def apply(): UnmarshalledSegmentLocation = {
+    inline def apply(): UnmarshalledSegmentLocation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSegmentLocation]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSegmentLocationMutableBuilder[Self <: UnmarshalledSegmentLocation] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSegmentLocation](x: Self) {
       
-      @scala.inline
-      def setCountry(value: UnmarshalledSetDimension): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: UnmarshalledSetDimension): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
       
-      @scala.inline
-      def setGPSPoint(value: UnmarshalledGPSPointDimension): Self = StObject.set(x, "GPSPoint", value.asInstanceOf[js.Any])
+      inline def setGPSPoint(value: UnmarshalledGPSPointDimension): Self = StObject.set(x, "GPSPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGPSPointUndefined: Self = StObject.set(x, "GPSPoint", js.undefined)
+      inline def setGPSPointUndefined: Self = StObject.set(x, "GPSPoint", js.undefined)
     }
   }
 }

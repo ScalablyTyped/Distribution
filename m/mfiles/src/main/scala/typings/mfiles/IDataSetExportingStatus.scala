@@ -14,22 +14,17 @@ trait IDataSetExportingStatus extends StObject {
 }
 object IDataSetExportingStatus {
   
-  @scala.inline
-  def apply(CurrentServerTime: ITimestamp, IsExporting: Boolean, LatestActivity: ITimestamp): IDataSetExportingStatus = {
+  inline def apply(CurrentServerTime: ITimestamp, IsExporting: Boolean, LatestActivity: ITimestamp): IDataSetExportingStatus = {
     val __obj = js.Dynamic.literal(CurrentServerTime = CurrentServerTime.asInstanceOf[js.Any], IsExporting = IsExporting.asInstanceOf[js.Any], LatestActivity = LatestActivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataSetExportingStatus]
   }
   
-  @scala.inline
-  implicit class IDataSetExportingStatusMutableBuilder[Self <: IDataSetExportingStatus] (val x: Self) extends AnyVal {
+  extension [Self <: IDataSetExportingStatus](x: Self) {
     
-    @scala.inline
-    def setCurrentServerTime(value: ITimestamp): Self = StObject.set(x, "CurrentServerTime", value.asInstanceOf[js.Any])
+    inline def setCurrentServerTime(value: ITimestamp): Self = StObject.set(x, "CurrentServerTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExporting(value: Boolean): Self = StObject.set(x, "IsExporting", value.asInstanceOf[js.Any])
+    inline def setIsExporting(value: Boolean): Self = StObject.set(x, "IsExporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestActivity(value: ITimestamp): Self = StObject.set(x, "LatestActivity", value.asInstanceOf[js.Any])
+    inline def setLatestActivity(value: ITimestamp): Self = StObject.set(x, "LatestActivity", value.asInstanceOf[js.Any])
   }
 }

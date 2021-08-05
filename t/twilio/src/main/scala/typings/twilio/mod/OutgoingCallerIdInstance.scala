@@ -17,16 +17,13 @@ trait OutgoingCallerIdInstance
 }
 object OutgoingCallerIdInstance {
   
-  @scala.inline
-  def apply(delete: RestMethod, get: RestMethod, post: RestMethod, put: RestMethod, update: RestMethod): OutgoingCallerIdInstance = {
+  inline def apply(delete: RestMethod, get: RestMethod, post: RestMethod, put: RestMethod, update: RestMethod): OutgoingCallerIdInstance = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutgoingCallerIdInstance]
   }
   
-  @scala.inline
-  implicit class OutgoingCallerIdInstanceMutableBuilder[Self <: OutgoingCallerIdInstance] (val x: Self) extends AnyVal {
+  extension [Self <: OutgoingCallerIdInstance](x: Self) {
     
-    @scala.inline
-    def setPut(value: RestMethod): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: RestMethod): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

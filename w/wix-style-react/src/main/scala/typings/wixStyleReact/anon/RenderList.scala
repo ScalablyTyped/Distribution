@@ -16,8 +16,7 @@ trait RenderList extends StObject {
 }
 object RenderList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     renderList: () => ReactNode,
     renderToggleAllCheckBox: () => ReactNode,
     selectedItems: js.Array[SelectorListItem]
@@ -26,19 +25,14 @@ object RenderList {
     __obj.asInstanceOf[RenderList]
   }
   
-  @scala.inline
-  implicit class RenderListMutableBuilder[Self <: RenderList] (val x: Self) extends AnyVal {
+  extension [Self <: RenderList](x: Self) {
     
-    @scala.inline
-    def setRenderList(value: () => ReactNode): Self = StObject.set(x, "renderList", js.Any.fromFunction0(value))
+    inline def setRenderList(value: () => ReactNode): Self = StObject.set(x, "renderList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderToggleAllCheckBox(value: () => ReactNode): Self = StObject.set(x, "renderToggleAllCheckBox", js.Any.fromFunction0(value))
+    inline def setRenderToggleAllCheckBox(value: () => ReactNode): Self = StObject.set(x, "renderToggleAllCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectedItems(value: js.Array[SelectorListItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[SelectorListItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemsVarargs(value: SelectorListItem*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: SelectorListItem*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
   }
 }

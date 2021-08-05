@@ -43,83 +43,58 @@ object mod {
   }
   object InfiniteScrollerProps {
     
-    @scala.inline
-    def apply(loadMore: () => Unit): InfiniteScrollerProps = {
+    inline def apply(loadMore: () => Unit): InfiniteScrollerProps = {
       val __obj = js.Dynamic.literal(loadMore = js.Any.fromFunction0(loadMore))
       __obj.asInstanceOf[InfiniteScrollerProps]
     }
     
-    @scala.inline
-    implicit class InfiniteScrollerPropsMutableBuilder[Self <: InfiniteScrollerProps] (val x: Self) extends AnyVal {
+    extension [Self <: InfiniteScrollerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setContainerHeight(value: Double | String): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
+      inline def setContainerHeight(value: Double | String): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerHeightUndefined: Self = StObject.set(x, "containerHeight", js.undefined)
+      inline def setContainerHeightUndefined: Self = StObject.set(x, "containerHeight", js.undefined)
       
-      @scala.inline
-      def setElementIsScrollable(value: Boolean): Self = StObject.set(x, "elementIsScrollable", value.asInstanceOf[js.Any])
+      inline def setElementIsScrollable(value: Boolean): Self = StObject.set(x, "elementIsScrollable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementIsScrollableUndefined: Self = StObject.set(x, "elementIsScrollable", js.undefined)
+      inline def setElementIsScrollableUndefined: Self = StObject.set(x, "elementIsScrollable", js.undefined)
       
-      @scala.inline
-      def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
+      inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMoreUndefined: Self = StObject.set(x, "hasMore", js.undefined)
+      inline def setHasMoreUndefined: Self = StObject.set(x, "hasMore", js.undefined)
       
-      @scala.inline
-      def setHolderType(value: String): Self = StObject.set(x, "holderType", value.asInstanceOf[js.Any])
+      inline def setHolderType(value: String): Self = StObject.set(x, "holderType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHolderTypeUndefined: Self = StObject.set(x, "holderType", js.undefined)
+      inline def setHolderTypeUndefined: Self = StObject.set(x, "holderType", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[Element]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Element]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: Element*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Element*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadMore(value: () => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction0(value))
+      inline def setLoadMore(value: () => Unit): Self = StObject.set(x, "loadMore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoader(value: js.Any): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: js.Any): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+      inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
-      @scala.inline
-      def setLoadingMore(value: Boolean): Self = StObject.set(x, "loadingMore", value.asInstanceOf[js.Any])
+      inline def setLoadingMore(value: Boolean): Self = StObject.set(x, "loadingMore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingMoreUndefined: Self = StObject.set(x, "loadingMore", js.undefined)
+      inline def setLoadingMoreUndefined: Self = StObject.set(x, "loadingMore", js.undefined)
       
-      @scala.inline
-      def setShowLoader(value: Boolean): Self = StObject.set(x, "showLoader", value.asInstanceOf[js.Any])
+      inline def setShowLoader(value: Boolean): Self = StObject.set(x, "showLoader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLoaderUndefined: Self = StObject.set(x, "showLoader", js.undefined)
+      inline def setShowLoaderUndefined: Self = StObject.set(x, "showLoader", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

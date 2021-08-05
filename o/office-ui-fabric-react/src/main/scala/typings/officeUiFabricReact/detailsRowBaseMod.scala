@@ -17,30 +17,30 @@ object detailsRowBaseMod {
     extends Component[IDetailsRowBaseProps, IDetailsRowState, js.Any] {
     def this(props: IDetailsRowBaseProps) = this()
     
-    var _cellMeasurer: js.Any = js.native
+    /* private */ var _cellMeasurer: js.Any = js.native
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _dragDropSubscription: js.Any = js.native
+    /* private */ var _dragDropSubscription: js.Any = js.native
     
-    var _droppingClassNames: js.Any = js.native
+    /* private */ var _droppingClassNames: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var _focusZone: js.Any = js.native
+    /* private */ var _focusZone: js.Any = js.native
     
-    var _getRowDragDropOptions: js.Any = js.native
+    /* private */ var _getRowDragDropOptions: js.Any = js.native
     
     /** Whether this.props.onDidMount has been called */
-    var _onDidMountCalled: js.Any = js.native
+    /* private */ var _onDidMountCalled: js.Any = js.native
     
     /* protected */ def _onRenderCheck(props: IDetailsRowCheckProps): Element = js.native
     
-    var _onSelectionChanged: js.Any = js.native
+    /* private */ var _onSelectionChanged: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _rowClassNames: js.Any = js.native
+    /* private */ var _rowClassNames: js.Any = js.native
     
     /**
       * update isDropping state based on the input value, which is used to change style during drag and drop
@@ -53,7 +53,7 @@ object detailsRowBaseMod {
       * @param newValue - New isDropping state value
       * @param event - The event trigger dropping state change which can be dragenter, dragleave etc
       */
-    var _updateDroppingState: js.Any = js.native
+    /* private */ var _updateDroppingState: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDetailsRowBase(): Unit = js.native
@@ -85,8 +85,7 @@ object detailsRowBaseMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: IDetailsRowBaseProps, previousState: IDetailsRowState): IDetailsRowState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsRowState]
+    inline def getDerivedStateFromProps(nextProps: IDetailsRowBaseProps, previousState: IDetailsRowState): IDetailsRowState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsRowState]
   }
   
   trait IDetailsRowSelectionState extends StObject {
@@ -97,20 +96,16 @@ object detailsRowBaseMod {
   }
   object IDetailsRowSelectionState {
     
-    @scala.inline
-    def apply(isSelected: Boolean, isSelectionModal: Boolean): IDetailsRowSelectionState = {
+    inline def apply(isSelected: Boolean, isSelectionModal: Boolean): IDetailsRowSelectionState = {
       val __obj = js.Dynamic.literal(isSelected = isSelected.asInstanceOf[js.Any], isSelectionModal = isSelectionModal.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDetailsRowSelectionState]
     }
     
-    @scala.inline
-    implicit class IDetailsRowSelectionStateMutableBuilder[Self <: IDetailsRowSelectionState] (val x: Self) extends AnyVal {
+    extension [Self <: IDetailsRowSelectionState](x: Self) {
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectionModal(value: Boolean): Self = StObject.set(x, "isSelectionModal", value.asInstanceOf[js.Any])
+      inline def setIsSelectionModal(value: Boolean): Self = StObject.set(x, "isSelectionModal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,29 +119,22 @@ object detailsRowBaseMod {
   }
   object IDetailsRowState {
     
-    @scala.inline
-    def apply(selectionState: IDetailsRowSelectionState): IDetailsRowState = {
+    inline def apply(selectionState: IDetailsRowSelectionState): IDetailsRowState = {
       val __obj = js.Dynamic.literal(selectionState = selectionState.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDetailsRowState]
     }
     
-    @scala.inline
-    implicit class IDetailsRowStateMutableBuilder[Self <: IDetailsRowState] (val x: Self) extends AnyVal {
+    extension [Self <: IDetailsRowState](x: Self) {
       
-      @scala.inline
-      def setColumnMeasureInfo(value: Column): Self = StObject.set(x, "columnMeasureInfo", value.asInstanceOf[js.Any])
+      inline def setColumnMeasureInfo(value: Column): Self = StObject.set(x, "columnMeasureInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnMeasureInfoUndefined: Self = StObject.set(x, "columnMeasureInfo", js.undefined)
+      inline def setColumnMeasureInfoUndefined: Self = StObject.set(x, "columnMeasureInfo", js.undefined)
       
-      @scala.inline
-      def setIsDropping(value: Boolean): Self = StObject.set(x, "isDropping", value.asInstanceOf[js.Any])
+      inline def setIsDropping(value: Boolean): Self = StObject.set(x, "isDropping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDroppingUndefined: Self = StObject.set(x, "isDropping", js.undefined)
+      inline def setIsDroppingUndefined: Self = StObject.set(x, "isDropping", js.undefined)
       
-      @scala.inline
-      def setSelectionState(value: IDetailsRowSelectionState): Self = StObject.set(x, "selectionState", value.asInstanceOf[js.Any])
+      inline def setSelectionState(value: IDetailsRowSelectionState): Self = StObject.set(x, "selectionState", value.asInstanceOf[js.Any])
     }
   }
 }

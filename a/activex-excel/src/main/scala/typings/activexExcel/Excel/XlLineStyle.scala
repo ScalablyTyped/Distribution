@@ -27,27 +27,19 @@ trait XlLineStyle
      with LineStyle
 object XlLineStyle {
   
-  @scala.inline
-  def xlContinuous: `1` = 1.asInstanceOf[`1`]
+  inline def xlContinuous: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlDash: `-4115` = -4115.asInstanceOf[`-4115`]
+  inline def xlDash: `-4115` = -4115.asInstanceOf[`-4115`]
   
-  @scala.inline
-  def xlDashDot: `4` = 4.asInstanceOf[`4`]
+  inline def xlDashDot: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlDashDotDot: `5` = 5.asInstanceOf[`5`]
+  inline def xlDashDotDot: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlDot: `-4118` = -4118.asInstanceOf[`-4118`]
+  inline def xlDot: `-4118` = -4118.asInstanceOf[`-4118`]
   
-  @scala.inline
-  def xlDouble: `-4119` = -4119.asInstanceOf[`-4119`]
+  inline def xlDouble: `-4119` = -4119.asInstanceOf[`-4119`]
   
-  @scala.inline
-  def xlLineStyleNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlLineStyleNone: `-4142` = -4142.asInstanceOf[`-4142`]
   
-  @scala.inline
-  def xlSlantDashDot: `13` = 13.asInstanceOf[`13`]
+  inline def xlSlantDashDot: `13` = 13.asInstanceOf[`13`]
 }

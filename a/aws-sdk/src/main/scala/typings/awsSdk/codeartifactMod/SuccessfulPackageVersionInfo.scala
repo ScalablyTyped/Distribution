@@ -18,25 +18,19 @@ trait SuccessfulPackageVersionInfo extends StObject {
 }
 object SuccessfulPackageVersionInfo {
   
-  @scala.inline
-  def apply(): SuccessfulPackageVersionInfo = {
+  inline def apply(): SuccessfulPackageVersionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuccessfulPackageVersionInfo]
   }
   
-  @scala.inline
-  implicit class SuccessfulPackageVersionInfoMutableBuilder[Self <: SuccessfulPackageVersionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SuccessfulPackageVersionInfo](x: Self) {
     
-    @scala.inline
-    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
-    @scala.inline
-    def setStatus(value: PackageVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PackageVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait DeleteFirewallManagerRuleGroupsRequest extends StObject {
 }
 object DeleteFirewallManagerRuleGroupsRequest {
   
-  @scala.inline
-  def apply(WebACLArn: ResourceArn, WebACLLockToken: LockToken): DeleteFirewallManagerRuleGroupsRequest = {
+  inline def apply(WebACLArn: ResourceArn, WebACLLockToken: LockToken): DeleteFirewallManagerRuleGroupsRequest = {
     val __obj = js.Dynamic.literal(WebACLArn = WebACLArn.asInstanceOf[js.Any], WebACLLockToken = WebACLLockToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFirewallManagerRuleGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFirewallManagerRuleGroupsRequestMutableBuilder[Self <: DeleteFirewallManagerRuleGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFirewallManagerRuleGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setWebACLArn(value: ResourceArn): Self = StObject.set(x, "WebACLArn", value.asInstanceOf[js.Any])
+    inline def setWebACLArn(value: ResourceArn): Self = StObject.set(x, "WebACLArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLLockToken(value: LockToken): Self = StObject.set(x, "WebACLLockToken", value.asInstanceOf[js.Any])
+    inline def setWebACLLockToken(value: LockToken): Self = StObject.set(x, "WebACLLockToken", value.asInstanceOf[js.Any])
   }
 }

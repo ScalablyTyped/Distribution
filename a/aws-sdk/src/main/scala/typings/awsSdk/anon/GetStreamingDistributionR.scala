@@ -18,22 +18,17 @@ trait GetStreamingDistributionR extends StObject {
 }
 object GetStreamingDistributionR {
   
-  @scala.inline
-  def apply(Id: String): GetStreamingDistributionR = {
+  inline def apply(Id: String): GetStreamingDistributionR = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStreamingDistributionR]
   }
   
-  @scala.inline
-  implicit class GetStreamingDistributionRMutableBuilder[Self <: GetStreamingDistributionR] (val x: Self) extends AnyVal {
+  extension [Self <: GetStreamingDistributionR](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait SendUsersMessageResponse extends StObject {
 }
 object SendUsersMessageResponse {
   
-  @scala.inline
-  def apply(ApplicationId: string): SendUsersMessageResponse = {
+  inline def apply(ApplicationId: string): SendUsersMessageResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendUsersMessageResponse]
   }
   
-  @scala.inline
-  implicit class SendUsersMessageResponseMutableBuilder[Self <: SendUsersMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendUsersMessageResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setResult(value: MapOfMapOfEndpointMessageResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: MapOfMapOfEndpointMessageResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
   }
 }

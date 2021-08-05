@@ -10,6 +10,5 @@ object makeArrayOfStringsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(length: Double, makeString: js.Function0[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(length.asInstanceOf[js.Any], makeString.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def default(length: Double, makeString: js.Function0[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(length.asInstanceOf[js.Any], makeString.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

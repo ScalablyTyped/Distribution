@@ -28,8 +28,7 @@ trait BuildResourceUsage extends StObject {
 }
 object BuildResourceUsage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distributedTaskAgents: Double,
     paidPrivateAgentSlots: Double,
     totalUsage: Double,
@@ -39,19 +38,14 @@ object BuildResourceUsage {
     __obj.asInstanceOf[BuildResourceUsage]
   }
   
-  @scala.inline
-  implicit class BuildResourceUsageMutableBuilder[Self <: BuildResourceUsage] (val x: Self) extends AnyVal {
+  extension [Self <: BuildResourceUsage](x: Self) {
     
-    @scala.inline
-    def setDistributedTaskAgents(value: Double): Self = StObject.set(x, "distributedTaskAgents", value.asInstanceOf[js.Any])
+    inline def setDistributedTaskAgents(value: Double): Self = StObject.set(x, "distributedTaskAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaidPrivateAgentSlots(value: Double): Self = StObject.set(x, "paidPrivateAgentSlots", value.asInstanceOf[js.Any])
+    inline def setPaidPrivateAgentSlots(value: Double): Self = StObject.set(x, "paidPrivateAgentSlots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUsage(value: Double): Self = StObject.set(x, "totalUsage", value.asInstanceOf[js.Any])
+    inline def setTotalUsage(value: Double): Self = StObject.set(x, "totalUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXamlControllers(value: Double): Self = StObject.set(x, "xamlControllers", value.asInstanceOf[js.Any])
+    inline def setXamlControllers(value: Double): Self = StObject.set(x, "xamlControllers", value.asInstanceOf[js.Any])
   }
 }

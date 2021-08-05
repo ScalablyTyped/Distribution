@@ -18,28 +18,21 @@ trait RetryStrategy extends StObject {
 }
 object RetryStrategy {
   
-  @scala.inline
-  def apply(): RetryStrategy = {
+  inline def apply(): RetryStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryStrategy]
   }
   
-  @scala.inline
-  implicit class RetryStrategyMutableBuilder[Self <: RetryStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: RetryStrategy](x: Self) {
     
-    @scala.inline
-    def setAttempts(value: Integer): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+    inline def setAttempts(value: Integer): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
+    inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
     
-    @scala.inline
-    def setEvaluateOnExit(value: EvaluateOnExitList): Self = StObject.set(x, "evaluateOnExit", value.asInstanceOf[js.Any])
+    inline def setEvaluateOnExit(value: EvaluateOnExitList): Self = StObject.set(x, "evaluateOnExit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluateOnExitUndefined: Self = StObject.set(x, "evaluateOnExit", js.undefined)
+    inline def setEvaluateOnExitUndefined: Self = StObject.set(x, "evaluateOnExit", js.undefined)
     
-    @scala.inline
-    def setEvaluateOnExitVarargs(value: EvaluateOnExit*): Self = StObject.set(x, "evaluateOnExit", js.Array(value :_*))
+    inline def setEvaluateOnExitVarargs(value: EvaluateOnExit*): Self = StObject.set(x, "evaluateOnExit", js.Array(value :_*))
   }
 }

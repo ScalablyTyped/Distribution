@@ -14,22 +14,17 @@ trait SchemaInstancesSetMachineResourcesRequest extends StObject {
 }
 object SchemaInstancesSetMachineResourcesRequest {
   
-  @scala.inline
-  def apply(): SchemaInstancesSetMachineResourcesRequest = {
+  inline def apply(): SchemaInstancesSetMachineResourcesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstancesSetMachineResourcesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstancesSetMachineResourcesRequestMutableBuilder[Self <: SchemaInstancesSetMachineResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstancesSetMachineResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setGuestAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = StObject.set(x, "guestAccelerators", value.asInstanceOf[js.Any])
+    inline def setGuestAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = StObject.set(x, "guestAccelerators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestAcceleratorsUndefined: Self = StObject.set(x, "guestAccelerators", js.undefined)
+    inline def setGuestAcceleratorsUndefined: Self = StObject.set(x, "guestAccelerators", js.undefined)
     
-    @scala.inline
-    def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value :_*))
+    inline def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value :_*))
   }
 }

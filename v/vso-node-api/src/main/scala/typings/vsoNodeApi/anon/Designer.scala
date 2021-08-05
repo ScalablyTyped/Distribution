@@ -12,19 +12,15 @@ trait Designer extends StObject {
 }
 object Designer {
   
-  @scala.inline
-  def apply(designer: scala.Double, yaml: scala.Double): Designer = {
+  inline def apply(designer: scala.Double, yaml: scala.Double): Designer = {
     val __obj = js.Dynamic.literal(designer = designer.asInstanceOf[js.Any], yaml = yaml.asInstanceOf[js.Any])
     __obj.asInstanceOf[Designer]
   }
   
-  @scala.inline
-  implicit class DesignerMutableBuilder[Self <: Designer] (val x: Self) extends AnyVal {
+  extension [Self <: Designer](x: Self) {
     
-    @scala.inline
-    def setDesigner(value: scala.Double): Self = StObject.set(x, "designer", value.asInstanceOf[js.Any])
+    inline def setDesigner(value: scala.Double): Self = StObject.set(x, "designer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaml(value: scala.Double): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
+    inline def setYaml(value: scala.Double): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
   }
 }

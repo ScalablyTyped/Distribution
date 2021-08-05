@@ -23,22 +23,17 @@ trait WorkArtifactLink extends StObject {
 }
 object WorkArtifactLink {
   
-  @scala.inline
-  def apply(artifactType: String, linkType: String, toolType: String): WorkArtifactLink = {
+  inline def apply(artifactType: String, linkType: String, toolType: String): WorkArtifactLink = {
     val __obj = js.Dynamic.literal(artifactType = artifactType.asInstanceOf[js.Any], linkType = linkType.asInstanceOf[js.Any], toolType = toolType.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkArtifactLink]
   }
   
-  @scala.inline
-  implicit class WorkArtifactLinkMutableBuilder[Self <: WorkArtifactLink] (val x: Self) extends AnyVal {
+  extension [Self <: WorkArtifactLink](x: Self) {
     
-    @scala.inline
-    def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
+    inline def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+    inline def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolType(value: String): Self = StObject.set(x, "toolType", value.asInstanceOf[js.Any])
+    inline def setToolType(value: String): Self = StObject.set(x, "toolType", value.asInstanceOf[js.Any])
   }
 }

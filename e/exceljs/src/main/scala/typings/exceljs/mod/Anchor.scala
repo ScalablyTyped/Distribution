@@ -15,7 +15,7 @@ class Anchor ()
   /* CompleteClass */
   var col: Double = js.native
   
-  val colWidth: Double = js.native
+  /* private */ val colWidth: Double = js.native
   
   /* CompleteClass */
   var nativeCol: Double = js.native
@@ -32,7 +32,7 @@ class Anchor ()
   /* CompleteClass */
   var row: Double = js.native
   
-  val rowHeight: Double = js.native
+  /* private */ val rowHeight: Double = js.native
   
   var worksheet: Worksheet = js.native
 }

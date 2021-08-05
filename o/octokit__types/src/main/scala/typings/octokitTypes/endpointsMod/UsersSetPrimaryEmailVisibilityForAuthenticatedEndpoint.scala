@@ -18,19 +18,15 @@ trait UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint extends StObject {
 }
 object UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(email: String, visibility: String): UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint = {
+  inline def apply(email: String, visibility: String): UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersSetPrimaryEmailVisibilityForAuthenticatedEndpointMutableBuilder[Self <: UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

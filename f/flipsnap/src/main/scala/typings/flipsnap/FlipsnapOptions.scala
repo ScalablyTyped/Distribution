@@ -33,43 +33,31 @@ trait FlipsnapOptions extends StObject {
 }
 object FlipsnapOptions {
   
-  @scala.inline
-  def apply(): FlipsnapOptions = {
+  inline def apply(): FlipsnapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlipsnapOptions]
   }
   
-  @scala.inline
-  implicit class FlipsnapOptionsMutableBuilder[Self <: FlipsnapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FlipsnapOptions](x: Self) {
     
-    @scala.inline
-    def setDisable3d(value: Boolean): Self = StObject.set(x, "disable3d", value.asInstanceOf[js.Any])
+    inline def setDisable3d(value: Boolean): Self = StObject.set(x, "disable3d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable3dUndefined: Self = StObject.set(x, "disable3d", js.undefined)
+    inline def setDisable3dUndefined: Self = StObject.set(x, "disable3d", js.undefined)
     
-    @scala.inline
-    def setDisableTouch(value: Boolean): Self = StObject.set(x, "disableTouch", value.asInstanceOf[js.Any])
+    inline def setDisableTouch(value: Boolean): Self = StObject.set(x, "disableTouch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableTouchUndefined: Self = StObject.set(x, "disableTouch", js.undefined)
+    inline def setDisableTouchUndefined: Self = StObject.set(x, "disableTouch", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setMaxPoint(value: Double): Self = StObject.set(x, "maxPoint", value.asInstanceOf[js.Any])
+    inline def setMaxPoint(value: Double): Self = StObject.set(x, "maxPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPointUndefined: Self = StObject.set(x, "maxPoint", js.undefined)
+    inline def setMaxPointUndefined: Self = StObject.set(x, "maxPoint", js.undefined)
     
-    @scala.inline
-    def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+    inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+    inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
   }
 }

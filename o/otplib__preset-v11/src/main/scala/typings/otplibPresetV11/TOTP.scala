@@ -34,8 +34,7 @@ trait TOTP
 }
 object TOTP {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HOTP: Instantiable0[HOTP],
     TOTP: Instantiable0[TOTP],
     check: (String, String) => Boolean,
@@ -53,37 +52,26 @@ object TOTP {
     __obj.asInstanceOf[TOTP]
   }
   
-  @scala.inline
-  implicit class TOTPMutableBuilder[Self <: TOTP] (val x: Self) extends AnyVal {
+  extension [Self <: TOTP](x: Self) {
     
-    @scala.inline
-    def setCheck(value: (String, String) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
+    inline def setCheck(value: (String, String) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheckDelta(value: (String, String) => Double | Null): Self = StObject.set(x, "checkDelta", js.Any.fromFunction2(value))
+    inline def setCheckDelta(value: (String, String) => Double | Null): Self = StObject.set(x, "checkDelta", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDefaultOptions(value: TotpOptionsInterface): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultOptions(value: TotpOptionsInterface): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerate(value: String => String): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+    inline def setGenerate(value: String => String): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOptions(value: TotpOptionsInterface): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TotpOptionsInterface): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsAll(value: TotpOptionsInterface): Self = StObject.set(x, "optionsAll", value.asInstanceOf[js.Any])
+    inline def setOptionsAll(value: TotpOptionsInterface): Self = StObject.set(x, "optionsAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTOTP(value: Instantiable0[TOTP]): Self = StObject.set(x, "TOTP", value.asInstanceOf[js.Any])
+    inline def setTOTP(value: Instantiable0[TOTP]): Self = StObject.set(x, "TOTP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRemaining(value: () => Double): Self = StObject.set(x, "timeRemaining", js.Any.fromFunction0(value))
+    inline def setTimeRemaining(value: () => Double): Self = StObject.set(x, "timeRemaining", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTimeUsed(value: () => Double): Self = StObject.set(x, "timeUsed", js.Any.fromFunction0(value))
+    inline def setTimeUsed(value: () => Double): Self = StObject.set(x, "timeUsed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVerify(value: TotpVerifyOptionsInterface => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
+    inline def setVerify(value: TotpVerifyOptionsInterface => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
   }
 }

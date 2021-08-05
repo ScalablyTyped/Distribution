@@ -26,31 +26,23 @@ trait PlotRsiDataSortingOptions extends StObject {
 }
 object PlotRsiDataSortingOptions {
   
-  @scala.inline
-  def apply(): PlotRsiDataSortingOptions = {
+  inline def apply(): PlotRsiDataSortingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotRsiDataSortingOptions]
   }
   
-  @scala.inline
-  implicit class PlotRsiDataSortingOptionsMutableBuilder[Self <: PlotRsiDataSortingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotRsiDataSortingOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMatchByName(value: Boolean): Self = StObject.set(x, "matchByName", value.asInstanceOf[js.Any])
+    inline def setMatchByName(value: Boolean): Self = StObject.set(x, "matchByName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchByNameUndefined: Self = StObject.set(x, "matchByName", js.undefined)
+    inline def setMatchByNameUndefined: Self = StObject.set(x, "matchByName", js.undefined)
     
-    @scala.inline
-    def setSortKey(value: String): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
+    inline def setSortKey(value: String): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortKeyUndefined: Self = StObject.set(x, "sortKey", js.undefined)
+    inline def setSortKeyUndefined: Self = StObject.set(x, "sortKey", js.undefined)
   }
 }

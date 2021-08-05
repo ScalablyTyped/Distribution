@@ -47,8 +47,7 @@ trait CSVLayerCapabilities
 }
 object CSVLayerCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     data: CSVLayerCapabilitiesData,
     editing: CSVLayerCapabilitiesEditing,
@@ -62,22 +61,16 @@ object CSVLayerCapabilities {
     __obj.asInstanceOf[CSVLayerCapabilities]
   }
   
-  @scala.inline
-  implicit class CSVLayerCapabilitiesMutableBuilder[Self <: CSVLayerCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: CSVLayerCapabilities](x: Self) {
     
-    @scala.inline
-    def setData(value: CSVLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CSVLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditing(value: CSVLayerCapabilitiesEditing): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
+    inline def setEditing(value: CSVLayerCapabilitiesEditing): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: CSVLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: CSVLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: CSVLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: CSVLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryRelated(value: CSVLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
+    inline def setQueryRelated(value: CSVLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
   }
 }

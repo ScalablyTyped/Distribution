@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SubReport extends StObject {
   
-  @JSName("Access.SubReport_typekey")
+  /* private */ @JSName("Access.SubReport_typekey")
   var AccessDotSubReport_typekey: SubReport
   
   val Application: typings.activexAccess.Access.Application
@@ -21,8 +21,7 @@ trait SubReport extends StObject {
 }
 object SubReport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotSubReport_typekey: SubReport,
     Application: Application,
     Form: Form,
@@ -35,25 +34,18 @@ object SubReport {
     __obj.asInstanceOf[SubReport]
   }
   
-  @scala.inline
-  implicit class SubReportMutableBuilder[Self <: SubReport] (val x: Self) extends AnyVal {
+  extension [Self <: SubReport](x: Self) {
     
-    @scala.inline
-    def setAccessDotSubReport_typekey(value: SubReport): Self = StObject.set(x, "Access.SubReport_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotSubReport_typekey(value: SubReport): Self = StObject.set(x, "Access.SubReport_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForm(value: Form): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
+    inline def setForm(value: Form): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReport(value: Report): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
+    inline def setReport(value: Report): Self = StObject.set(x, "Report", value.asInstanceOf[js.Any])
   }
 }

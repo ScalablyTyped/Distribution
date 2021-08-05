@@ -10,17 +10,14 @@ trait AgEvent extends StObject {
 }
 object AgEvent {
   
-  @scala.inline
-  def apply(`type`: String): AgEvent = {
+  inline def apply(`type`: String): AgEvent = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgEvent]
   }
   
-  @scala.inline
-  implicit class AgEventMutableBuilder[Self <: AgEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AgEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

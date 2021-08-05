@@ -16,25 +16,19 @@ trait InferenceClassification
 }
 object InferenceClassification {
   
-  @scala.inline
-  def apply(): InferenceClassification = {
+  inline def apply(): InferenceClassification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InferenceClassification]
   }
   
-  @scala.inline
-  implicit class InferenceClassificationMutableBuilder[Self <: InferenceClassification] (val x: Self) extends AnyVal {
+  extension [Self <: InferenceClassification](x: Self) {
     
-    @scala.inline
-    def setOverrides(value: NullableOption[js.Array[InferenceClassificationOverride]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: NullableOption[js.Array[InferenceClassificationOverride]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesNull: Self = StObject.set(x, "overrides", null)
+    inline def setOverridesNull: Self = StObject.set(x, "overrides", null)
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setOverridesVarargs(value: InferenceClassificationOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: InferenceClassificationOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
   }
 }

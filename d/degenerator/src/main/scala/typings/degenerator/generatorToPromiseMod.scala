@@ -10,6 +10,5 @@ object generatorToPromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](generatorFunction: js.Any): js.Function1[/* repeated */ js.Any, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[T]]]
+  inline def default[T](generatorFunction: js.Any): js.Function1[/* repeated */ js.Any, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generatorFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[T]]]
 }

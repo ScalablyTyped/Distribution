@@ -18,19 +18,15 @@ trait RegisterTransitGatewayRequest extends StObject {
 }
 object RegisterTransitGatewayRequest {
   
-  @scala.inline
-  def apply(GlobalNetworkId: String, TransitGatewayArn: String): RegisterTransitGatewayRequest = {
+  inline def apply(GlobalNetworkId: String, TransitGatewayArn: String): RegisterTransitGatewayRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any], TransitGatewayArn = TransitGatewayArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterTransitGatewayRequest]
   }
   
-  @scala.inline
-  implicit class RegisterTransitGatewayRequestMutableBuilder[Self <: RegisterTransitGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterTransitGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayArn(value: String): Self = StObject.set(x, "TransitGatewayArn", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayArn(value: String): Self = StObject.set(x, "TransitGatewayArn", value.asInstanceOf[js.Any])
   }
 }

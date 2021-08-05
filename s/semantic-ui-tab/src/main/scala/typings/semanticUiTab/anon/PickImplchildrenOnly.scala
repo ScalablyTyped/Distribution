@@ -11,16 +11,13 @@ trait PickImplchildrenOnly extends StObject {
 }
 object PickImplchildrenOnly {
   
-  @scala.inline
-  def apply(childrenOnly: Boolean): PickImplchildrenOnly = {
+  inline def apply(childrenOnly: Boolean): PickImplchildrenOnly = {
     val __obj = js.Dynamic.literal(childrenOnly = childrenOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplchildrenOnly]
   }
   
-  @scala.inline
-  implicit class PickImplchildrenOnlyMutableBuilder[Self <: PickImplchildrenOnly] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplchildrenOnly](x: Self) {
     
-    @scala.inline
-    def setChildrenOnly(value: Boolean): Self = StObject.set(x, "childrenOnly", value.asInstanceOf[js.Any])
+    inline def setChildrenOnly(value: Boolean): Self = StObject.set(x, "childrenOnly", value.asInstanceOf[js.Any])
   }
 }

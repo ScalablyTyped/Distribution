@@ -35,30 +35,23 @@ trait CodeLensProvider[T /* <: CodeLens */] extends StObject {
 }
 object CodeLensProvider {
   
-  @scala.inline
-  def apply[T /* <: CodeLens */](provideCodeLenses: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): CodeLensProvider[T] = {
+  inline def apply[T /* <: CodeLens */](provideCodeLenses: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): CodeLensProvider[T] = {
     val __obj = js.Dynamic.literal(provideCodeLenses = js.Any.fromFunction2(provideCodeLenses))
     __obj.asInstanceOf[CodeLensProvider[T]]
   }
   
-  @scala.inline
-  implicit class CodeLensProviderMutableBuilder[Self <: CodeLensProvider[?], T /* <: CodeLens */] (val x: Self & CodeLensProvider[T]) extends AnyVal {
+  extension [Self <: CodeLensProvider[?], T /* <: CodeLens */](x: Self & CodeLensProvider[T]) {
     
-    @scala.inline
-    def setOnDidChangeCodeLenses(
+    inline def setOnDidChangeCodeLenses(
       value: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = StObject.set(x, "onDidChangeCodeLenses", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnDidChangeCodeLensesUndefined: Self = StObject.set(x, "onDidChangeCodeLenses", js.undefined)
+    inline def setOnDidChangeCodeLensesUndefined: Self = StObject.set(x, "onDidChangeCodeLenses", js.undefined)
     
-    @scala.inline
-    def setProvideCodeLenses(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideCodeLenses", js.Any.fromFunction2(value))
+    inline def setProvideCodeLenses(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideCodeLenses", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveCodeLens(value: (/* codeLens */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveCodeLens", js.Any.fromFunction2(value))
+    inline def setResolveCodeLens(value: (/* codeLens */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveCodeLens", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveCodeLensUndefined: Self = StObject.set(x, "resolveCodeLens", js.undefined)
+    inline def setResolveCodeLensUndefined: Self = StObject.set(x, "resolveCodeLens", js.undefined)
   }
 }

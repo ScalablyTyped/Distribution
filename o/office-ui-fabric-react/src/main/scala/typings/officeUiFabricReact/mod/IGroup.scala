@@ -9,8 +9,7 @@ trait IGroup
      with typings.officeUiFabricReact.groupedListTypesMod.IGroup
 object IGroup {
   
-  @scala.inline
-  def apply(count: Double, key: String, name: String, startIndex: Double): IGroup = {
+  inline def apply(count: Double, key: String, name: String, startIndex: Double): IGroup = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGroup]
   }

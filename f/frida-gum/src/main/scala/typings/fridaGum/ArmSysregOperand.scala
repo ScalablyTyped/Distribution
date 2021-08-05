@@ -16,20 +16,16 @@ trait ArmSysregOperand
 }
 object ArmSysregOperand {
   
-  @scala.inline
-  def apply(subtracted: Boolean, value: ArmRegister): ArmSysregOperand = {
+  inline def apply(subtracted: Boolean, value: ArmRegister): ArmSysregOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("sysreg")
     __obj.asInstanceOf[ArmSysregOperand]
   }
   
-  @scala.inline
-  implicit class ArmSysregOperandMutableBuilder[Self <: ArmSysregOperand] (val x: Self) extends AnyVal {
+  extension [Self <: ArmSysregOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: sysreg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: sysreg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ArmRegister): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ArmRegister): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -8,11 +8,9 @@ object ethersprojectJsonWalletsStrings {
   
   @js.native
   sealed trait CrowdsaleAccount extends StObject
-  @scala.inline
-  def CrowdsaleAccount: CrowdsaleAccount = "CrowdsaleAccount".asInstanceOf[CrowdsaleAccount]
+  inline def CrowdsaleAccount: CrowdsaleAccount = "CrowdsaleAccount".asInstanceOf[CrowdsaleAccount]
   
   @js.native
   sealed trait KeystoreAccount extends StObject
-  @scala.inline
-  def KeystoreAccount: KeystoreAccount = "KeystoreAccount".asInstanceOf[KeystoreAccount]
+  inline def KeystoreAccount: KeystoreAccount = "KeystoreAccount".asInstanceOf[KeystoreAccount]
 }

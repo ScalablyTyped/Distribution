@@ -101,17 +101,15 @@ object serviceWorkerMod {
     var waiting_FakeServiceWorkerRegistration: Null = js.native
   }
   
-  @scala.inline
-  def mockServiceWorker(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mockServiceWorker")().asInstanceOf[Unit]
+  inline def mockServiceWorker(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mockServiceWorker")().asInstanceOf[Unit]
   
-  @scala.inline
-  def restoreServiceWorker(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restoreServiceWorker")().asInstanceOf[Unit]
+  inline def restoreServiceWorker(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restoreServiceWorker")().asInstanceOf[Unit]
   
   @js.native
   trait FakePushManager
     extends StObject
        with PushManager {
     
-    var subscription: js.Any = js.native
+    /* private */ var subscription: js.Any = js.native
   }
 }

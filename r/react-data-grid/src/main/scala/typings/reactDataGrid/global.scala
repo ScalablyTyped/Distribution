@@ -66,11 +66,9 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        @scala.inline
-        def getRows(state: js.Object): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRows")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+        inline def getRows(state: js.Object): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRows")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
         
-        @scala.inline
-        def getSelectedRowsByKey(state: js.Object): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedRowsByKey")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+        inline def getSelectedRowsByKey(state: js.Object): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedRowsByKey")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
       }
     }
     
@@ -157,10 +155,8 @@ object global {
       class ContextMenu ()
         extends Component[js.Any, js.Object, js.Any]
       
-      @scala.inline
-      def ContextMenuLayer(identifier: js.Any): js.Function1[/* Component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ js.Any, js.Any]]
-      @scala.inline
-      def ContextMenuLayer(identifier: js.Any, configure: js.Function1[/* props */ js.Any, js.Any]): js.Function1[/* Component */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Component */ js.Any, js.Any]]
+      inline def ContextMenuLayer(identifier: js.Any): js.Function1[/* Component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ js.Any, js.Any]]
+      inline def ContextMenuLayer(identifier: js.Any, configure: js.Function1[/* props */ js.Any, js.Any]): js.Function1[/* Component */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Component */ js.Any, js.Any]]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Menu.MenuHeader")
       @js.native
@@ -177,8 +173,7 @@ object global {
       class SubMenu ()
         extends Component[js.Any, js.Object, js.Any]
       
-      @scala.inline
-      def connect(Menu: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(Menu.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def connect(Menu: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(Menu.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       object monitor {
         
@@ -186,14 +181,11 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        @scala.inline
-        def getItem(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")().asInstanceOf[js.Any]
+        inline def getItem(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")().asInstanceOf[js.Any]
         
-        @scala.inline
-        def getPosition(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")().asInstanceOf[js.Any]
+        inline def getPosition(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")().asInstanceOf[js.Any]
         
-        @scala.inline
-        def hideMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenu")().asInstanceOf[Unit]
+        inline def hideMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenu")().asInstanceOf[Unit]
       }
     }
     

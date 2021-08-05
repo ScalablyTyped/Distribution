@@ -18,16 +18,13 @@ trait ASPxClientTreeViewNodeEventArgs
 }
 object ASPxClientTreeViewNodeEventArgs {
   
-  @scala.inline
-  def apply(node: ASPxClientTreeViewNode): ASPxClientTreeViewNodeEventArgs = {
+  inline def apply(node: ASPxClientTreeViewNode): ASPxClientTreeViewNodeEventArgs = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeViewNodeEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeViewNodeEventArgsMutableBuilder[Self <: ASPxClientTreeViewNodeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeViewNodeEventArgs](x: Self) {
     
-    @scala.inline
-    def setNode(value: ASPxClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: ASPxClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(sections: js.Array[Section]): String = ^.asInstanceOf[js.Dynamic].apply(sections.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(sections: Section): String = ^.asInstanceOf[js.Dynamic].apply(sections.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(sections: js.Array[Section]): String = ^.asInstanceOf[js.Dynamic].apply(sections.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(sections: Section): String = ^.asInstanceOf[js.Dynamic].apply(sections.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("command-line-usage", JSImport.Namespace)
   @js.native
@@ -39,35 +37,26 @@ object mod {
   }
   object Content {
     
-    @scala.inline
-    def apply(): Content = {
+    inline def apply(): Content = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Content]
     }
     
-    @scala.inline
-    implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+    extension [Self <: Content](x: Self) {
       
-      @scala.inline
-      def setContent(value: String | (js.Array[js.Any | String]) | Data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | (js.Array[js.Any | String]) | Data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContentVarargs(value: (js.Any | String)*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: (js.Any | String)*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   
@@ -113,74 +102,52 @@ object mod {
   }
   object OptionDefinition {
     
-    @scala.inline
-    def apply(name: String): OptionDefinition = {
+    inline def apply(name: String): OptionDefinition = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionDefinition]
     }
     
-    @scala.inline
-    implicit class OptionDefinitionMutableBuilder[Self <: OptionDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: OptionDefinition](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setDefaultOption(value: Boolean): Self = StObject.set(x, "defaultOption", value.asInstanceOf[js.Any])
+      inline def setDefaultOption(value: Boolean): Self = StObject.set(x, "defaultOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOptionUndefined: Self = StObject.set(x, "defaultOption", js.undefined)
+      inline def setDefaultOptionUndefined: Self = StObject.set(x, "defaultOption", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setGroup(value: String | js.Array[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String | js.Array[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
       
-      @scala.inline
-      def setLazyMultiple(value: Boolean): Self = StObject.set(x, "lazyMultiple", value.asInstanceOf[js.Any])
+      inline def setLazyMultiple(value: Boolean): Self = StObject.set(x, "lazyMultiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyMultipleUndefined: Self = StObject.set(x, "lazyMultiple", js.undefined)
+      inline def setLazyMultipleUndefined: Self = StObject.set(x, "lazyMultiple", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeLabel(value: String): Self = StObject.set(x, "typeLabel", value.asInstanceOf[js.Any])
+      inline def setTypeLabel(value: String): Self = StObject.set(x, "typeLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeLabelUndefined: Self = StObject.set(x, "typeLabel", js.undefined)
+      inline def setTypeLabelUndefined: Self = StObject.set(x, "typeLabel", js.undefined)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -208,59 +175,42 @@ object mod {
   }
   object OptionList {
     
-    @scala.inline
-    def apply(): OptionList = {
+    inline def apply(): OptionList = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionList]
     }
     
-    @scala.inline
-    implicit class OptionListMutableBuilder[Self <: OptionList] (val x: Self) extends AnyVal {
+    extension [Self <: OptionList](x: Self) {
       
-      @scala.inline
-      def setGroup(value: String | js.Array[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String | js.Array[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setHide(value: String | js.Array[String]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: String | js.Array[String]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+      inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      @scala.inline
-      def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
+      inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
       
-      @scala.inline
-      def setOptionList(value: js.Array[OptionDefinition]): Self = StObject.set(x, "optionList", value.asInstanceOf[js.Any])
+      inline def setOptionList(value: js.Array[OptionDefinition]): Self = StObject.set(x, "optionList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionListUndefined: Self = StObject.set(x, "optionList", js.undefined)
+      inline def setOptionListUndefined: Self = StObject.set(x, "optionList", js.undefined)
       
-      @scala.inline
-      def setOptionListVarargs(value: OptionDefinition*): Self = StObject.set(x, "optionList", js.Array(value :_*))
+      inline def setOptionListVarargs(value: OptionDefinition*): Self = StObject.set(x, "optionList", js.Array(value :_*))
       
-      @scala.inline
-      def setReverseNameOrder(value: Boolean): Self = StObject.set(x, "reverseNameOrder", value.asInstanceOf[js.Any])
+      inline def setReverseNameOrder(value: Boolean): Self = StObject.set(x, "reverseNameOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseNameOrderUndefined: Self = StObject.set(x, "reverseNameOrder", js.undefined)
+      inline def setReverseNameOrderUndefined: Self = StObject.set(x, "reverseNameOrder", js.undefined)
       
-      @scala.inline
-      def setTableOptions(value: js.Any): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
+      inline def setTableOptions(value: js.Any): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
+      inline def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
     }
   }
   
@@ -272,14 +222,12 @@ object mod {
   trait Section extends StObject
   object Section {
     
-    @scala.inline
-    def Content(): typings.commandLineUsage.mod.Content = {
+    inline def Content(): typings.commandLineUsage.mod.Content = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.commandLineUsage.mod.Content]
     }
     
-    @scala.inline
-    def OptionList(): typings.commandLineUsage.mod.OptionList = {
+    inline def OptionList(): typings.commandLineUsage.mod.OptionList = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.commandLineUsage.mod.OptionList]
     }

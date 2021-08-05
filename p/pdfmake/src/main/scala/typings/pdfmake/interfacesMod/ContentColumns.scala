@@ -13,19 +13,15 @@ trait ContentColumns
 }
 object ContentColumns {
   
-  @scala.inline
-  def apply(columns: js.Array[Column]): ContentColumns = {
+  inline def apply(columns: js.Array[Column]): ContentColumns = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentColumns]
   }
   
-  @scala.inline
-  implicit class ContentColumnsMutableBuilder[Self <: ContentColumns] (val x: Self) extends AnyVal {
+  extension [Self <: ContentColumns](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
   }
 }

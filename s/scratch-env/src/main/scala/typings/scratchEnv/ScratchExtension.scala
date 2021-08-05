@@ -11,16 +11,13 @@ trait ScratchExtension extends StObject {
 }
 object ScratchExtension {
   
-  @scala.inline
-  def apply(getInfo: () => ExtensionMetadata): ScratchExtension = {
+  inline def apply(getInfo: () => ExtensionMetadata): ScratchExtension = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction0(getInfo))
     __obj.asInstanceOf[ScratchExtension]
   }
   
-  @scala.inline
-  implicit class ScratchExtensionMutableBuilder[Self <: ScratchExtension] (val x: Self) extends AnyVal {
+  extension [Self <: ScratchExtension](x: Self) {
     
-    @scala.inline
-    def setGetInfo(value: () => ExtensionMetadata): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    inline def setGetInfo(value: () => ExtensionMetadata): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
   }
 }

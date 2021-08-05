@@ -10,16 +10,13 @@ trait KeyKey extends StObject {
 }
 object KeyKey {
   
-  @scala.inline
-  def apply(key: typings.openpgp.mod.key.Key): KeyKey = {
+  inline def apply(key: typings.openpgp.mod.key.Key): KeyKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyKey]
   }
   
-  @scala.inline
-  implicit class KeyKeyMutableBuilder[Self <: KeyKey] (val x: Self) extends AnyVal {
+  extension [Self <: KeyKey](x: Self) {
     
-    @scala.inline
-    def setKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

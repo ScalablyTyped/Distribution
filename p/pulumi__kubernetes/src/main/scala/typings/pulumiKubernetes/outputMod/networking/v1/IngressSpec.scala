@@ -31,8 +31,7 @@ trait IngressSpec extends StObject {
 }
 object IngressSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultBackend: IngressBackend,
     ingressClassName: String,
     rules: js.Array[IngressRule],
@@ -42,25 +41,18 @@ object IngressSpec {
     __obj.asInstanceOf[IngressSpec]
   }
   
-  @scala.inline
-  implicit class IngressSpecMutableBuilder[Self <: IngressSpec] (val x: Self) extends AnyVal {
+  extension [Self <: IngressSpec](x: Self) {
     
-    @scala.inline
-    def setDefaultBackend(value: IngressBackend): Self = StObject.set(x, "defaultBackend", value.asInstanceOf[js.Any])
+    inline def setDefaultBackend(value: IngressBackend): Self = StObject.set(x, "defaultBackend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressClassName(value: String): Self = StObject.set(x, "ingressClassName", value.asInstanceOf[js.Any])
+    inline def setIngressClassName(value: String): Self = StObject.set(x, "ingressClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: js.Array[IngressRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[IngressRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: IngressRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: IngressRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
-    @scala.inline
-    def setTls(value: js.Array[IngressTLS]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: js.Array[IngressTLS]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsVarargs(value: IngressTLS*): Self = StObject.set(x, "tls", js.Array(value :_*))
+    inline def setTlsVarargs(value: IngressTLS*): Self = StObject.set(x, "tls", js.Array(value :_*))
   }
 }

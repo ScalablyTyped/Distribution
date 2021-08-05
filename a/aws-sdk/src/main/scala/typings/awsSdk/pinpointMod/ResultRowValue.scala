@@ -23,22 +23,17 @@ trait ResultRowValue extends StObject {
 }
 object ResultRowValue {
   
-  @scala.inline
-  def apply(Key: string, Type: string, Value: string): ResultRowValue = {
+  inline def apply(Key: string, Type: string, Value: string): ResultRowValue = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultRowValue]
   }
   
-  @scala.inline
-  implicit class ResultRowValueMutableBuilder[Self <: ResultRowValue] (val x: Self) extends AnyVal {
+  extension [Self <: ResultRowValue](x: Self) {
     
-    @scala.inline
-    def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: string): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: string): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

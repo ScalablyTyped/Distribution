@@ -28,25 +28,19 @@ trait ConditionalRangeFillLoadOptions extends StObject {
 }
 object ConditionalRangeFillLoadOptions {
   
-  @scala.inline
-  def apply(): ConditionalRangeFillLoadOptions = {
+  inline def apply(): ConditionalRangeFillLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalRangeFillLoadOptions]
   }
   
-  @scala.inline
-  implicit class ConditionalRangeFillLoadOptionsMutableBuilder[Self <: ConditionalRangeFillLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalRangeFillLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

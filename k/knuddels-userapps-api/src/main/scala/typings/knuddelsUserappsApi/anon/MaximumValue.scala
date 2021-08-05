@@ -12,25 +12,19 @@ trait MaximumValue extends StObject {
 }
 object MaximumValue {
   
-  @scala.inline
-  def apply(): MaximumValue = {
+  inline def apply(): MaximumValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaximumValue]
   }
   
-  @scala.inline
-  implicit class MaximumValueMutableBuilder[Self <: MaximumValue] (val x: Self) extends AnyVal {
+  extension [Self <: MaximumValue](x: Self) {
     
-    @scala.inline
-    def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
+    inline def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
+    inline def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
     
-    @scala.inline
-    def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
+    inline def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
+    inline def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
   }
 }

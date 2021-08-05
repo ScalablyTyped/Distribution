@@ -18,25 +18,19 @@ trait CreateWebACLResponse extends StObject {
 }
 object CreateWebACLResponse {
   
-  @scala.inline
-  def apply(): CreateWebACLResponse = {
+  inline def apply(): CreateWebACLResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateWebACLResponse]
   }
   
-  @scala.inline
-  implicit class CreateWebACLResponseMutableBuilder[Self <: CreateWebACLResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWebACLResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
-    @scala.inline
-    def setWebACL(value: WebACL): Self = StObject.set(x, "WebACL", value.asInstanceOf[js.Any])
+    inline def setWebACL(value: WebACL): Self = StObject.set(x, "WebACL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLUndefined: Self = StObject.set(x, "WebACL", js.undefined)
+    inline def setWebACLUndefined: Self = StObject.set(x, "WebACL", js.undefined)
   }
 }

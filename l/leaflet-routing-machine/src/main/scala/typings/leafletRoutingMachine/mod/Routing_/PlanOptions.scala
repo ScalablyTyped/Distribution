@@ -61,116 +61,81 @@ trait PlanOptions extends StObject {
 }
 object PlanOptions {
   
-  @scala.inline
-  def apply(): PlanOptions = {
+  inline def apply(): PlanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlanOptions]
   }
   
-  @scala.inline
-  implicit class PlanOptionsMutableBuilder[Self <: PlanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlanOptions](x: Self) {
     
-    @scala.inline
-    def setAddButtonClassName(value: String): Self = StObject.set(x, "addButtonClassName", value.asInstanceOf[js.Any])
+    inline def setAddButtonClassName(value: String): Self = StObject.set(x, "addButtonClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddButtonClassNameUndefined: Self = StObject.set(x, "addButtonClassName", js.undefined)
+    inline def setAddButtonClassNameUndefined: Self = StObject.set(x, "addButtonClassName", js.undefined)
     
-    @scala.inline
-    def setAddWaypoints(value: Boolean): Self = StObject.set(x, "addWaypoints", value.asInstanceOf[js.Any])
+    inline def setAddWaypoints(value: Boolean): Self = StObject.set(x, "addWaypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddWaypointsUndefined: Self = StObject.set(x, "addWaypoints", js.undefined)
+    inline def setAddWaypointsUndefined: Self = StObject.set(x, "addWaypoints", js.undefined)
     
-    @scala.inline
-    def setCreateGeocoder(value: (/* waypointIndex */ Double, /* numberWaypoints */ Double, /* plan */ Plan_) => js.Object): Self = StObject.set(x, "createGeocoder", js.Any.fromFunction3(value))
+    inline def setCreateGeocoder(value: (/* waypointIndex */ Double, /* numberWaypoints */ Double, /* plan */ Plan_) => js.Object): Self = StObject.set(x, "createGeocoder", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateGeocoderElement(
+    inline def setCreateGeocoderElement(
       value: (/* waypoint */ Waypoint_, /* waypointIndex */ Double, /* numberWaypoints */ Double, PlanOptions) => GeocoderElement_
     ): Self = StObject.set(x, "createGeocoderElement", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateGeocoderElementUndefined: Self = StObject.set(x, "createGeocoderElement", js.undefined)
+    inline def setCreateGeocoderElementUndefined: Self = StObject.set(x, "createGeocoderElement", js.undefined)
     
-    @scala.inline
-    def setCreateGeocoderUndefined: Self = StObject.set(x, "createGeocoder", js.undefined)
+    inline def setCreateGeocoderUndefined: Self = StObject.set(x, "createGeocoder", js.undefined)
     
-    @scala.inline
-    def setCreateMarker(
+    inline def setCreateMarker(
       value: (/* waypointIndex */ Double, /* waypoint */ Waypoint_, /* numberWaypoints */ Double) => Marker_[js.Any]
     ): Self = StObject.set(x, "createMarker", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateMarkerUndefined: Self = StObject.set(x, "createMarker", js.undefined)
+    inline def setCreateMarkerUndefined: Self = StObject.set(x, "createMarker", js.undefined)
     
-    @scala.inline
-    def setDragStyles(value: js.Array[PathOptions]): Self = StObject.set(x, "dragStyles", value.asInstanceOf[js.Any])
+    inline def setDragStyles(value: js.Array[PathOptions]): Self = StObject.set(x, "dragStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragStylesUndefined: Self = StObject.set(x, "dragStyles", js.undefined)
+    inline def setDragStylesUndefined: Self = StObject.set(x, "dragStyles", js.undefined)
     
-    @scala.inline
-    def setDragStylesVarargs(value: PathOptions*): Self = StObject.set(x, "dragStyles", js.Array(value :_*))
+    inline def setDragStylesVarargs(value: PathOptions*): Self = StObject.set(x, "dragStyles", js.Array(value :_*))
     
-    @scala.inline
-    def setDraggableWaypoints(value: Boolean): Self = StObject.set(x, "draggableWaypoints", value.asInstanceOf[js.Any])
+    inline def setDraggableWaypoints(value: Boolean): Self = StObject.set(x, "draggableWaypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableWaypointsUndefined: Self = StObject.set(x, "draggableWaypoints", js.undefined)
+    inline def setDraggableWaypointsUndefined: Self = StObject.set(x, "draggableWaypoints", js.undefined)
     
-    @scala.inline
-    def setGeocoder(value: js.Any): Self = StObject.set(x, "geocoder", value.asInstanceOf[js.Any])
+    inline def setGeocoder(value: js.Any): Self = StObject.set(x, "geocoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocoderClass(value: (/* waypointIndex */ Double, /* numberWaypoints */ Double) => Unit): Self = StObject.set(x, "geocoderClass", js.Any.fromFunction2(value))
+    inline def setGeocoderClass(value: (/* waypointIndex */ Double, /* numberWaypoints */ Double) => Unit): Self = StObject.set(x, "geocoderClass", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGeocoderClassUndefined: Self = StObject.set(x, "geocoderClass", js.undefined)
+    inline def setGeocoderClassUndefined: Self = StObject.set(x, "geocoderClass", js.undefined)
     
-    @scala.inline
-    def setGeocoderPlaceholder(value: (/* waypointIndex */ Double, /* numberWaypoints */ Double) => String): Self = StObject.set(x, "geocoderPlaceholder", js.Any.fromFunction2(value))
+    inline def setGeocoderPlaceholder(value: (/* waypointIndex */ Double, /* numberWaypoints */ Double) => String): Self = StObject.set(x, "geocoderPlaceholder", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGeocoderPlaceholderUndefined: Self = StObject.set(x, "geocoderPlaceholder", js.undefined)
+    inline def setGeocoderPlaceholderUndefined: Self = StObject.set(x, "geocoderPlaceholder", js.undefined)
     
-    @scala.inline
-    def setGeocoderUndefined: Self = StObject.set(x, "geocoder", js.undefined)
+    inline def setGeocoderUndefined: Self = StObject.set(x, "geocoder", js.undefined)
     
-    @scala.inline
-    def setGeocodersClassName(value: String): Self = StObject.set(x, "geocodersClassName", value.asInstanceOf[js.Any])
+    inline def setGeocodersClassName(value: String): Self = StObject.set(x, "geocodersClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocodersClassNameUndefined: Self = StObject.set(x, "geocodersClassName", js.undefined)
+    inline def setGeocodersClassNameUndefined: Self = StObject.set(x, "geocodersClassName", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setMaxGeocoderTolerance(value: Double): Self = StObject.set(x, "maxGeocoderTolerance", value.asInstanceOf[js.Any])
+    inline def setMaxGeocoderTolerance(value: Double): Self = StObject.set(x, "maxGeocoderTolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxGeocoderToleranceUndefined: Self = StObject.set(x, "maxGeocoderTolerance", js.undefined)
+    inline def setMaxGeocoderToleranceUndefined: Self = StObject.set(x, "maxGeocoderTolerance", js.undefined)
     
-    @scala.inline
-    def setReverseWaypoints(value: Boolean): Self = StObject.set(x, "reverseWaypoints", value.asInstanceOf[js.Any])
+    inline def setReverseWaypoints(value: Boolean): Self = StObject.set(x, "reverseWaypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseWaypointsUndefined: Self = StObject.set(x, "reverseWaypoints", js.undefined)
+    inline def setReverseWaypointsUndefined: Self = StObject.set(x, "reverseWaypoints", js.undefined)
     
-    @scala.inline
-    def setRouteWhileDragging(value: Boolean): Self = StObject.set(x, "routeWhileDragging", value.asInstanceOf[js.Any])
+    inline def setRouteWhileDragging(value: Boolean): Self = StObject.set(x, "routeWhileDragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteWhileDraggingUndefined: Self = StObject.set(x, "routeWhileDragging", js.undefined)
+    inline def setRouteWhileDraggingUndefined: Self = StObject.set(x, "routeWhileDragging", js.undefined)
     
-    @scala.inline
-    def setWaypointNameFallback(value: /* latLng */ LatLng_ => String): Self = StObject.set(x, "waypointNameFallback", js.Any.fromFunction1(value))
+    inline def setWaypointNameFallback(value: /* latLng */ LatLng_ => String): Self = StObject.set(x, "waypointNameFallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWaypointNameFallbackUndefined: Self = StObject.set(x, "waypointNameFallback", js.undefined)
+    inline def setWaypointNameFallbackUndefined: Self = StObject.set(x, "waypointNameFallback", js.undefined)
   }
 }

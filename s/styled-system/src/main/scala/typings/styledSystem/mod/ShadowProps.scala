@@ -10,8 +10,7 @@ trait ShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
      with TextShadowProps[ThemeType]
 object ShadowProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): ShadowProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): ShadowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowProps[ThemeType]]
   }

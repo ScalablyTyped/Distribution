@@ -352,41 +352,28 @@ object srcTimeunitMod {
   @js.native
   val VEGALITE_TIMEFORMAT: TimeFormatConfig = js.native
   
-  @scala.inline
-  def containsTimeUnit(fullTimeUnit: TimeUnit, timeUnit: TimeUnit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsTimeUnit")(fullTimeUnit.asInstanceOf[js.Any], timeUnit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def containsTimeUnit(fullTimeUnit: TimeUnit, timeUnit: TimeUnit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsTimeUnit")(fullTimeUnit.asInstanceOf[js.Any], timeUnit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def fieldExpr(fullTimeUnit: TimeUnit, field: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def fieldExpr(fullTimeUnit: TimeUnit, field: String, hasEnd: End): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], hasEnd.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fieldExpr(fullTimeUnit: TimeUnit, field: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fieldExpr(fullTimeUnit: TimeUnit, field: String, hasEnd: End): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], hasEnd.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def formatExpression(timeUnit: TimeUnit, field: String, isUTCScale: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExpression")(timeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], isUTCScale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExpression(timeUnit: TimeUnit, field: String, isUTCScale: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExpression")(timeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], isUTCScale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getLocalTimeUnit(t: UtcTimeUnit): LocalTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimeUnit")(t.asInstanceOf[js.Any]).asInstanceOf[LocalTimeUnit]
+  inline def getLocalTimeUnit(t: UtcTimeUnit): LocalTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimeUnit")(t.asInstanceOf[js.Any]).asInstanceOf[LocalTimeUnit]
   
-  @scala.inline
-  def getTimeUnitParts(timeUnit: TimeUnit): js.Array[typings.vegaTypings.transformMod.TimeUnit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitParts")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.vegaTypings.transformMod.TimeUnit]]
+  inline def getTimeUnitParts(timeUnit: TimeUnit): js.Array[typings.vegaTypings.transformMod.TimeUnit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitParts")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.vegaTypings.transformMod.TimeUnit]]
   
-  @scala.inline
-  def isLocalSingleTimeUnit(timeUnit: String): /* is vega-lite.vega-lite/build/src/timeunit.LocalSingleTimeUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalSingleTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/timeunit.LocalSingleTimeUnit */ Boolean]
+  inline def isLocalSingleTimeUnit(timeUnit: String): /* is vega-lite.vega-lite/build/src/timeunit.LocalSingleTimeUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalSingleTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/timeunit.LocalSingleTimeUnit */ Boolean]
   
-  @scala.inline
-  def isUTCTimeUnit(t: String): /* is vega-lite.vega-lite/build/src/timeunit.UtcTimeUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUTCTimeUnit")(t.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/timeunit.UtcTimeUnit */ Boolean]
+  inline def isUTCTimeUnit(t: String): /* is vega-lite.vega-lite/build/src/timeunit.UtcTimeUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUTCTimeUnit")(t.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/timeunit.UtcTimeUnit */ Boolean]
   
-  @scala.inline
-  def normalizeTimeUnit(timeUnit: TimeUnit): TimeUnitParams = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[TimeUnitParams]
-  @scala.inline
-  def normalizeTimeUnit(timeUnit: TimeUnitParams): TimeUnitParams = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[TimeUnitParams]
+  inline def normalizeTimeUnit(timeUnit: TimeUnit): TimeUnitParams = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[TimeUnitParams]
+  inline def normalizeTimeUnit(timeUnit: TimeUnitParams): TimeUnitParams = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[TimeUnitParams]
   
-  @scala.inline
-  def timeUnitSpecifierExpression(timeUnit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitSpecifierExpression")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def timeUnitSpecifierExpression(timeUnit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitSpecifierExpression")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def timeUnitToString(tu: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(tu.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def timeUnitToString(tu: TimeUnitParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(tu.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def timeUnitToString(tu: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(tu.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def timeUnitToString(tu: TimeUnitParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(tu.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* keyof vega-lite.anon.Dayhours */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.yearquarter
@@ -495,92 +482,64 @@ object srcTimeunitMod {
   }
   object TimeFormatConfig {
     
-    @scala.inline
-    def apply(): TimeFormatConfig = {
+    inline def apply(): TimeFormatConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeFormatConfig]
     }
     
-    @scala.inline
-    implicit class TimeFormatConfigMutableBuilder[Self <: TimeFormatConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TimeFormatConfig](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      @scala.inline
-      def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHours-minutes`(value: String): Self = StObject.set(x, "hours-minutes", value.asInstanceOf[js.Any])
+      inline def `setHours-minutes`(value: String): Self = StObject.set(x, "hours-minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHours-minutesUndefined`: Self = StObject.set(x, "hours-minutes", js.undefined)
+      inline def `setHours-minutesUndefined`: Self = StObject.set(x, "hours-minutes", js.undefined)
       
-      @scala.inline
-      def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+      inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
       
-      @scala.inline
-      def setMilliseconds(value: String): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+      inline def setMilliseconds(value: String): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisecondsUndefined: Self = StObject.set(x, "milliseconds", js.undefined)
+      inline def setMillisecondsUndefined: Self = StObject.set(x, "milliseconds", js.undefined)
       
-      @scala.inline
-      def setMinutes(value: String): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: String): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+      inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setQuarter(value: String): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
+      inline def setQuarter(value: String): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterUndefined: Self = StObject.set(x, "quarter", js.undefined)
+      inline def setQuarterUndefined: Self = StObject.set(x, "quarter", js.undefined)
       
-      @scala.inline
-      def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+      inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
       
-      @scala.inline
-      def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+      inline def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
+      inline def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setYear-month`(value: String): Self = StObject.set(x, "year-month", value.asInstanceOf[js.Any])
+      inline def `setYear-month`(value: String): Self = StObject.set(x, "year-month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setYear-month-date`(value: String): Self = StObject.set(x, "year-month-date", value.asInstanceOf[js.Any])
+      inline def `setYear-month-date`(value: String): Self = StObject.set(x, "year-month-date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setYear-month-dateUndefined`: Self = StObject.set(x, "year-month-date", js.undefined)
+      inline def `setYear-month-dateUndefined`: Self = StObject.set(x, "year-month-date", js.undefined)
       
-      @scala.inline
-      def `setYear-monthUndefined`: Self = StObject.set(x, "year-month", js.undefined)
+      inline def `setYear-monthUndefined`: Self = StObject.set(x, "year-month", js.undefined)
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   
@@ -608,44 +567,31 @@ object srcTimeunitMod {
   trait TimeUnitFormat extends StObject
   object TimeUnitFormat {
     
-    @scala.inline
-    def date: typings.vegaLite.vegaLiteStrings.date = "date".asInstanceOf[typings.vegaLite.vegaLiteStrings.date]
+    inline def date: typings.vegaLite.vegaLiteStrings.date = "date".asInstanceOf[typings.vegaLite.vegaLiteStrings.date]
     
-    @scala.inline
-    def day: typings.vegaLite.vegaLiteStrings.day = "day".asInstanceOf[typings.vegaLite.vegaLiteStrings.day]
+    inline def day: typings.vegaLite.vegaLiteStrings.day = "day".asInstanceOf[typings.vegaLite.vegaLiteStrings.day]
     
-    @scala.inline
-    def hours: typings.vegaLite.vegaLiteStrings.hours = "hours".asInstanceOf[typings.vegaLite.vegaLiteStrings.hours]
+    inline def hours: typings.vegaLite.vegaLiteStrings.hours = "hours".asInstanceOf[typings.vegaLite.vegaLiteStrings.hours]
     
-    @scala.inline
-    def `hours-minutes`: typings.vegaLite.vegaLiteStrings.`hours-minutes` = "hours-minutes".asInstanceOf[typings.vegaLite.vegaLiteStrings.`hours-minutes`]
+    inline def `hours-minutes`: typings.vegaLite.vegaLiteStrings.`hours-minutes` = "hours-minutes".asInstanceOf[typings.vegaLite.vegaLiteStrings.`hours-minutes`]
     
-    @scala.inline
-    def milliseconds: typings.vegaLite.vegaLiteStrings.milliseconds = "milliseconds".asInstanceOf[typings.vegaLite.vegaLiteStrings.milliseconds]
+    inline def milliseconds: typings.vegaLite.vegaLiteStrings.milliseconds = "milliseconds".asInstanceOf[typings.vegaLite.vegaLiteStrings.milliseconds]
     
-    @scala.inline
-    def minutes: typings.vegaLite.vegaLiteStrings.minutes = "minutes".asInstanceOf[typings.vegaLite.vegaLiteStrings.minutes]
+    inline def minutes: typings.vegaLite.vegaLiteStrings.minutes = "minutes".asInstanceOf[typings.vegaLite.vegaLiteStrings.minutes]
     
-    @scala.inline
-    def month: typings.vegaLite.vegaLiteStrings.month = "month".asInstanceOf[typings.vegaLite.vegaLiteStrings.month]
+    inline def month: typings.vegaLite.vegaLiteStrings.month = "month".asInstanceOf[typings.vegaLite.vegaLiteStrings.month]
     
-    @scala.inline
-    def quarter: typings.vegaLite.vegaLiteStrings.quarter = "quarter".asInstanceOf[typings.vegaLite.vegaLiteStrings.quarter]
+    inline def quarter: typings.vegaLite.vegaLiteStrings.quarter = "quarter".asInstanceOf[typings.vegaLite.vegaLiteStrings.quarter]
     
-    @scala.inline
-    def seconds: typings.vegaLite.vegaLiteStrings.seconds = "seconds".asInstanceOf[typings.vegaLite.vegaLiteStrings.seconds]
+    inline def seconds: typings.vegaLite.vegaLiteStrings.seconds = "seconds".asInstanceOf[typings.vegaLite.vegaLiteStrings.seconds]
     
-    @scala.inline
-    def week: typings.vegaLite.vegaLiteStrings.week = "week".asInstanceOf[typings.vegaLite.vegaLiteStrings.week]
+    inline def week: typings.vegaLite.vegaLiteStrings.week = "week".asInstanceOf[typings.vegaLite.vegaLiteStrings.week]
     
-    @scala.inline
-    def year: typings.vegaLite.vegaLiteStrings.year = "year".asInstanceOf[typings.vegaLite.vegaLiteStrings.year]
+    inline def year: typings.vegaLite.vegaLiteStrings.year = "year".asInstanceOf[typings.vegaLite.vegaLiteStrings.year]
     
-    @scala.inline
-    def `year-month`: typings.vegaLite.vegaLiteStrings.`year-month` = "year-month".asInstanceOf[typings.vegaLite.vegaLiteStrings.`year-month`]
+    inline def `year-month`: typings.vegaLite.vegaLiteStrings.`year-month` = "year-month".asInstanceOf[typings.vegaLite.vegaLiteStrings.`year-month`]
     
-    @scala.inline
-    def `year-month-date`: typings.vegaLite.vegaLiteStrings.`year-month-date` = "year-month-date".asInstanceOf[typings.vegaLite.vegaLiteStrings.`year-month-date`]
+    inline def `year-month-date`: typings.vegaLite.vegaLiteStrings.`year-month-date` = "year-month-date".asInstanceOf[typings.vegaLite.vegaLiteStrings.`year-month-date`]
   }
   
   trait TimeUnitParams extends StObject {
@@ -673,38 +619,28 @@ object srcTimeunitMod {
   }
   object TimeUnitParams {
     
-    @scala.inline
-    def apply(): TimeUnitParams = {
+    inline def apply(): TimeUnitParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeUnitParams]
     }
     
-    @scala.inline
-    implicit class TimeUnitParamsMutableBuilder[Self <: TimeUnitParams] (val x: Self) extends AnyVal {
+    extension [Self <: TimeUnitParams](x: Self) {
       
-      @scala.inline
-      def setMaxbins(value: Double): Self = StObject.set(x, "maxbins", value.asInstanceOf[js.Any])
+      inline def setMaxbins(value: Double): Self = StObject.set(x, "maxbins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxbinsUndefined: Self = StObject.set(x, "maxbins", js.undefined)
+      inline def setMaxbinsUndefined: Self = StObject.set(x, "maxbins", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setUnit(value: TimeUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: TimeUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
       
-      @scala.inline
-      def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
     }
   }
   

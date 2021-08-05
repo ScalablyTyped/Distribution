@@ -18,8 +18,7 @@ trait PerRouteMiddleware extends StObject {
 }
 object PerRouteMiddleware {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     handle: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any,
     route: String
   ): PerRouteMiddleware = {
@@ -27,21 +26,16 @@ object PerRouteMiddleware {
     __obj.asInstanceOf[PerRouteMiddleware]
   }
   
-  @scala.inline
-  implicit class PerRouteMiddlewareMutableBuilder[Self <: PerRouteMiddleware] (val x: Self) extends AnyVal {
+  extension [Self <: PerRouteMiddleware](x: Self) {
     
-    @scala.inline
-    def setHandle(
+    inline def setHandle(
       value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any
     ): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

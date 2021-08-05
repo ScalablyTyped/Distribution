@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // engine/view/documentfragment
 @JSImport("@ckeditor/ckeditor5-engine", "view.DocumentFragment")
 @js.native
-class DocumentFragment protected () extends StObject {
-  protected def this(children: Node) = this()
-  protected def this(children: Iterable[Node]) = this()
+/* protected */ class DocumentFragment () extends StObject {
+  /* protected */ def this(children: Node) = this()
+  /* protected */ def this(children: Iterable[Node]) = this()
   
   def _appendChild(items: Item): Double = js.native
   def _appendChild(items: Iterable[Item]): Double = js.native
   
-  var _children: js.Array[Element] = js.native
+  /* protected */ var _children: js.Array[Element] = js.native
   
   def _insertChild(index: Double, items: Item): Double = js.native
   def _insertChild(index: Double, items: Iterable[Item]): Double = js.native

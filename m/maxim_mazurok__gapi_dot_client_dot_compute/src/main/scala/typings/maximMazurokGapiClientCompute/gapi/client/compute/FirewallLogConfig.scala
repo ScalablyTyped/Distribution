@@ -14,25 +14,19 @@ trait FirewallLogConfig extends StObject {
 }
 object FirewallLogConfig {
   
-  @scala.inline
-  def apply(): FirewallLogConfig = {
+  inline def apply(): FirewallLogConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirewallLogConfig]
   }
   
-  @scala.inline
-  implicit class FirewallLogConfigMutableBuilder[Self <: FirewallLogConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallLogConfig](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

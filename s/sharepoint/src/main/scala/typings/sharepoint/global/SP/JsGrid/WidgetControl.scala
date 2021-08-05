@@ -21,28 +21,24 @@ object WidgetControl {
     @JSGlobal("SP.JsGrid.WidgetControl.Type.AddressBook")
     @js.native
     def AddressBook: String = js.native
-    @scala.inline
-    def AddressBook_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressBook")(x.asInstanceOf[js.Any])
+    inline def AddressBook_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AddressBook")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("SP.JsGrid.WidgetControl.Type.Date")
     @js.native
     def Date: String = js.native
-    @scala.inline
-    def Date_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
+    inline def Date_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("SP.JsGrid.WidgetControl.Type.Demo")
     @js.native
     def Demo: String = js.native
-    @scala.inline
-    def Demo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Demo")(x.asInstanceOf[js.Any])
+    inline def Demo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Demo")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("SP.JsGrid.WidgetControl.Type.Hyperlink")
     @js.native
     def Hyperlink: String = js.native
-    @scala.inline
-    def Hyperlink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hyperlink")(x.asInstanceOf[js.Any])
+    inline def Hyperlink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hyperlink")(x.asInstanceOf[js.Any])
   }
 }

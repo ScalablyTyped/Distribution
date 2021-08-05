@@ -12,9 +12,7 @@ object joinAlignedDiffsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def joinAlignedDiffsExpand(diffs: js.Array[Diff], options: DiffOptionsNormalized): String = (^.asInstanceOf[js.Dynamic].applyDynamic("joinAlignedDiffsExpand")(diffs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def joinAlignedDiffsExpand(diffs: js.Array[Diff], options: DiffOptionsNormalized): String = (^.asInstanceOf[js.Dynamic].applyDynamic("joinAlignedDiffsExpand")(diffs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def joinAlignedDiffsNoExpand(diffs: js.Array[Diff], options: DiffOptionsNormalized): String = (^.asInstanceOf[js.Dynamic].applyDynamic("joinAlignedDiffsNoExpand")(diffs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def joinAlignedDiffsNoExpand(diffs: js.Array[Diff], options: DiffOptionsNormalized): String = (^.asInstanceOf[js.Dynamic].applyDynamic("joinAlignedDiffsNoExpand")(diffs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

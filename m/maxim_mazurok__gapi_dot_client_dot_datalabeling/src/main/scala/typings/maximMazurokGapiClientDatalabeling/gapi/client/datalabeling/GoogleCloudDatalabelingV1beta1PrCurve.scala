@@ -20,40 +20,29 @@ trait GoogleCloudDatalabelingV1beta1PrCurve extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1PrCurve {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1PrCurve = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1PrCurve = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1PrCurve]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1PrCurveMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1PrCurve] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1PrCurve](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpec(value: GoogleCloudDatalabelingV1beta1AnnotationSpec): Self = StObject.set(x, "annotationSpec", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpec(value: GoogleCloudDatalabelingV1beta1AnnotationSpec): Self = StObject.set(x, "annotationSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecUndefined: Self = StObject.set(x, "annotationSpec", js.undefined)
+    inline def setAnnotationSpecUndefined: Self = StObject.set(x, "annotationSpec", js.undefined)
     
-    @scala.inline
-    def setAreaUnderCurve(value: Double): Self = StObject.set(x, "areaUnderCurve", value.asInstanceOf[js.Any])
+    inline def setAreaUnderCurve(value: Double): Self = StObject.set(x, "areaUnderCurve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUnderCurveUndefined: Self = StObject.set(x, "areaUnderCurve", js.undefined)
+    inline def setAreaUnderCurveUndefined: Self = StObject.set(x, "areaUnderCurve", js.undefined)
     
-    @scala.inline
-    def setConfidenceMetricsEntries(value: js.Array[GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry]): Self = StObject.set(x, "confidenceMetricsEntries", value.asInstanceOf[js.Any])
+    inline def setConfidenceMetricsEntries(value: js.Array[GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry]): Self = StObject.set(x, "confidenceMetricsEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceMetricsEntriesUndefined: Self = StObject.set(x, "confidenceMetricsEntries", js.undefined)
+    inline def setConfidenceMetricsEntriesUndefined: Self = StObject.set(x, "confidenceMetricsEntries", js.undefined)
     
-    @scala.inline
-    def setConfidenceMetricsEntriesVarargs(value: GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry*): Self = StObject.set(x, "confidenceMetricsEntries", js.Array(value :_*))
+    inline def setConfidenceMetricsEntriesVarargs(value: GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry*): Self = StObject.set(x, "confidenceMetricsEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setMeanAveragePrecision(value: Double): Self = StObject.set(x, "meanAveragePrecision", value.asInstanceOf[js.Any])
+    inline def setMeanAveragePrecision(value: Double): Self = StObject.set(x, "meanAveragePrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanAveragePrecisionUndefined: Self = StObject.set(x, "meanAveragePrecision", js.undefined)
+    inline def setMeanAveragePrecisionUndefined: Self = StObject.set(x, "meanAveragePrecision", js.undefined)
   }
 }

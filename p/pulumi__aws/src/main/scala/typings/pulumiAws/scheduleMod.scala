@@ -89,21 +89,16 @@ object scheduleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Schedule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Schedule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ScheduleState): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Schedule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ScheduleState, opts: CustomResourceOptions): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+    inline def get(name: String, id: Input[ID]): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+    inline def get(name: String, id: Input[ID], state: ScheduleState): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+    inline def get(name: String, id: Input[ID], state: ScheduleState, opts: CustomResourceOptions): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Schedule]
     
     /**
       * Returns true if the given object is an instance of Schedule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean]
   }
   
   trait ScheduleArgs extends StObject {
@@ -154,56 +149,40 @@ object scheduleMod {
   }
   object ScheduleArgs {
     
-    @scala.inline
-    def apply(autoscalingGroupName: Input[String], scheduledActionName: Input[String]): ScheduleArgs = {
+    inline def apply(autoscalingGroupName: Input[String], scheduledActionName: Input[String]): ScheduleArgs = {
       val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any], scheduledActionName = scheduledActionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScheduleArgs]
     }
     
-    @scala.inline
-    implicit class ScheduleArgsMutableBuilder[Self <: ScheduleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ScheduleArgs](x: Self) {
       
-      @scala.inline
-      def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
+      inline def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredCapacity(value: Input[Double]): Self = StObject.set(x, "desiredCapacity", value.asInstanceOf[js.Any])
+      inline def setDesiredCapacity(value: Input[Double]): Self = StObject.set(x, "desiredCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredCapacityUndefined: Self = StObject.set(x, "desiredCapacity", js.undefined)
+      inline def setDesiredCapacityUndefined: Self = StObject.set(x, "desiredCapacity", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: Input[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Input[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Input[Double]): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Input[Double]): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setMinSize(value: Input[Double]): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+      inline def setMinSize(value: Input[Double]): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+      inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
       
-      @scala.inline
-      def setRecurrence(value: Input[String]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
+      inline def setRecurrence(value: Input[String]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
+      inline def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
       
-      @scala.inline
-      def setScheduledActionName(value: Input[String]): Self = StObject.set(x, "scheduledActionName", value.asInstanceOf[js.Any])
+      inline def setScheduledActionName(value: Input[String]): Self = StObject.set(x, "scheduledActionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     }
   }
   
@@ -260,68 +239,48 @@ object scheduleMod {
   }
   object ScheduleState {
     
-    @scala.inline
-    def apply(): ScheduleState = {
+    inline def apply(): ScheduleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScheduleState]
     }
     
-    @scala.inline
-    implicit class ScheduleStateMutableBuilder[Self <: ScheduleState] (val x: Self) extends AnyVal {
+    extension [Self <: ScheduleState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
+      inline def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoscalingGroupNameUndefined: Self = StObject.set(x, "autoscalingGroupName", js.undefined)
+      inline def setAutoscalingGroupNameUndefined: Self = StObject.set(x, "autoscalingGroupName", js.undefined)
       
-      @scala.inline
-      def setDesiredCapacity(value: Input[Double]): Self = StObject.set(x, "desiredCapacity", value.asInstanceOf[js.Any])
+      inline def setDesiredCapacity(value: Input[Double]): Self = StObject.set(x, "desiredCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesiredCapacityUndefined: Self = StObject.set(x, "desiredCapacity", js.undefined)
+      inline def setDesiredCapacityUndefined: Self = StObject.set(x, "desiredCapacity", js.undefined)
       
-      @scala.inline
-      def setEndTime(value: Input[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Input[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Input[Double]): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Input[Double]): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setMinSize(value: Input[Double]): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+      inline def setMinSize(value: Input[Double]): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+      inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
       
-      @scala.inline
-      def setRecurrence(value: Input[String]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
+      inline def setRecurrence(value: Input[String]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
+      inline def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
       
-      @scala.inline
-      def setScheduledActionName(value: Input[String]): Self = StObject.set(x, "scheduledActionName", value.asInstanceOf[js.Any])
+      inline def setScheduledActionName(value: Input[String]): Self = StObject.set(x, "scheduledActionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduledActionNameUndefined: Self = StObject.set(x, "scheduledActionName", js.undefined)
+      inline def setScheduledActionNameUndefined: Self = StObject.set(x, "scheduledActionName", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Input[String]): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     }
   }
 }

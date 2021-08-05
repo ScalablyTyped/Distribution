@@ -23,28 +23,21 @@ trait UpdateConfigurationRequest extends StObject {
 }
 object UpdateConfigurationRequest {
   
-  @scala.inline
-  def apply(ConfigurationId: string): UpdateConfigurationRequest = {
+  inline def apply(ConfigurationId: string): UpdateConfigurationRequest = {
     val __obj = js.Dynamic.literal(ConfigurationId = ConfigurationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConfigurationRequestMutableBuilder[Self <: UpdateConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationId(value: string): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
+    inline def setConfigurationId(value: string): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

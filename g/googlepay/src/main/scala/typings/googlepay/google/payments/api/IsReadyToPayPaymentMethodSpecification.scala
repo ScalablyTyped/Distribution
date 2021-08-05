@@ -35,26 +35,20 @@ trait IsReadyToPayPaymentMethodSpecification extends StObject {
 }
 object IsReadyToPayPaymentMethodSpecification {
   
-  @scala.inline
-  def apply(parameters: CardParameters, `type`: PaymentMethodType): IsReadyToPayPaymentMethodSpecification = {
+  inline def apply(parameters: CardParameters, `type`: PaymentMethodType): IsReadyToPayPaymentMethodSpecification = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsReadyToPayPaymentMethodSpecification]
   }
   
-  @scala.inline
-  implicit class IsReadyToPayPaymentMethodSpecificationMutableBuilder[Self <: IsReadyToPayPaymentMethodSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: IsReadyToPayPaymentMethodSpecification](x: Self) {
     
-    @scala.inline
-    def setParameters(value: CardParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: CardParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenizationSpecification(value: PaymentMethodTokenizationSpecification): Self = StObject.set(x, "tokenizationSpecification", value.asInstanceOf[js.Any])
+    inline def setTokenizationSpecification(value: PaymentMethodTokenizationSpecification): Self = StObject.set(x, "tokenizationSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenizationSpecificationUndefined: Self = StObject.set(x, "tokenizationSpecification", js.undefined)
+    inline def setTokenizationSpecificationUndefined: Self = StObject.set(x, "tokenizationSpecification", js.undefined)
     
-    @scala.inline
-    def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

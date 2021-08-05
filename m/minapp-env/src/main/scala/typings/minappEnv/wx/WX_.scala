@@ -11,16 +11,13 @@ trait WX_ extends StObject {
 }
 object WX_ {
   
-  @scala.inline
-  def apply(cloud: CallFunction): WX_ = {
+  inline def apply(cloud: CallFunction): WX_ = {
     val __obj = js.Dynamic.literal(cloud = cloud.asInstanceOf[js.Any])
     __obj.asInstanceOf[WX_]
   }
   
-  @scala.inline
-  implicit class WX_MutableBuilder[Self <: WX_] (val x: Self) extends AnyVal {
+  extension [Self <: WX_](x: Self) {
     
-    @scala.inline
-    def setCloud(value: CallFunction): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
+    inline def setCloud(value: CallFunction): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
   }
 }

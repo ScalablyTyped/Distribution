@@ -118,44 +118,32 @@ object mod {
   }
   object GPXOptions {
     
-    @scala.inline
-    def apply(): GPXOptions = {
+    inline def apply(): GPXOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GPXOptions]
     }
     
-    @scala.inline
-    implicit class GPXOptionsMutableBuilder[Self <: GPXOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GPXOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setGpx_options(value: ParseElements): Self = StObject.set(x, "gpx_options", value.asInstanceOf[js.Any])
+      inline def setGpx_options(value: ParseElements): Self = StObject.set(x, "gpx_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGpx_optionsUndefined: Self = StObject.set(x, "gpx_options", js.undefined)
+      inline def setGpx_optionsUndefined: Self = StObject.set(x, "gpx_options", js.undefined)
       
-      @scala.inline
-      def setMarker_options(value: MarkerOptions): Self = StObject.set(x, "marker_options", value.asInstanceOf[js.Any])
+      inline def setMarker_options(value: MarkerOptions): Self = StObject.set(x, "marker_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarker_optionsUndefined: Self = StObject.set(x, "marker_options", js.undefined)
+      inline def setMarker_optionsUndefined: Self = StObject.set(x, "marker_options", js.undefined)
       
-      @scala.inline
-      def setMax_point_interval(value: Double): Self = StObject.set(x, "max_point_interval", value.asInstanceOf[js.Any])
+      inline def setMax_point_interval(value: Double): Self = StObject.set(x, "max_point_interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_point_intervalUndefined: Self = StObject.set(x, "max_point_interval", js.undefined)
+      inline def setMax_point_intervalUndefined: Self = StObject.set(x, "max_point_interval", js.undefined)
       
-      @scala.inline
-      def setPolyline_options(value: PolylineOptions): Self = StObject.set(x, "polyline_options", value.asInstanceOf[js.Any])
+      inline def setPolyline_options(value: PolylineOptions): Self = StObject.set(x, "polyline_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolyline_optionsUndefined: Self = StObject.set(x, "polyline_options", js.undefined)
+      inline def setPolyline_optionsUndefined: Self = StObject.set(x, "polyline_options", js.undefined)
     }
   }
 }

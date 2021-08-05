@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SameSiteOptions extends StObject
 object SameSiteOptions {
   
-  @scala.inline
-  def Lax: typings.webdriver.webdriverStrings.Lax = "Lax".asInstanceOf[typings.webdriver.webdriverStrings.Lax]
+  inline def Lax: typings.webdriver.webdriverStrings.Lax = "Lax".asInstanceOf[typings.webdriver.webdriverStrings.Lax]
   
-  @scala.inline
-  def Strict: typings.webdriver.webdriverStrings.Strict = "Strict".asInstanceOf[typings.webdriver.webdriverStrings.Strict]
+  inline def Strict: typings.webdriver.webdriverStrings.Strict = "Strict".asInstanceOf[typings.webdriver.webdriverStrings.Strict]
 }

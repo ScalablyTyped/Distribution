@@ -10,16 +10,13 @@ trait Bottom extends StObject {
 }
 object Bottom {
   
-  @scala.inline
-  def apply(bottom: String): Bottom = {
+  inline def apply(bottom: String): Bottom = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bottom]
   }
   
-  @scala.inline
-  implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+  extension [Self <: Bottom](x: Self) {
     
-    @scala.inline
-    def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
   }
 }

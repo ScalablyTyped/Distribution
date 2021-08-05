@@ -124,8 +124,7 @@ object Catalog {
          with CommonOptions
     object ListOptions {
       
-      @scala.inline
-      def apply(): ListOptions = {
+      inline def apply(): ListOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListOptions]
       }
@@ -139,17 +138,14 @@ object Catalog {
     }
     object ServicesOptions {
       
-      @scala.inline
-      def apply(node: String): typings.consul.mod.Catalog.Node.ServicesOptions = {
+      inline def apply(node: String): typings.consul.mod.Catalog.Node.ServicesOptions = {
         val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.consul.mod.Catalog.Node.ServicesOptions]
       }
       
-      @scala.inline
-      implicit class ServicesOptionsMutableBuilder[Self <: typings.consul.mod.Catalog.Node.ServicesOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.consul.mod.Catalog.Node.ServicesOptions](x: Self) {
         
-        @scala.inline
-        def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+        inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -209,8 +205,7 @@ object Catalog {
          with CommonOptions
     object ListOptions {
       
-      @scala.inline
-      def apply(): typings.consul.mod.Catalog.Service.ListOptions = {
+      inline def apply(): typings.consul.mod.Catalog.Service.ListOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.consul.mod.Catalog.Service.ListOptions]
       }
@@ -226,23 +221,18 @@ object Catalog {
     }
     object NodesOptions {
       
-      @scala.inline
-      def apply(service: String): typings.consul.mod.Catalog.Service.NodesOptions = {
+      inline def apply(service: String): typings.consul.mod.Catalog.Service.NodesOptions = {
         val __obj = js.Dynamic.literal(service = service.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.consul.mod.Catalog.Service.NodesOptions]
       }
       
-      @scala.inline
-      implicit class NodesOptionsMutableBuilder[Self <: typings.consul.mod.Catalog.Service.NodesOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.consul.mod.Catalog.Service.NodesOptions](x: Self) {
         
-        @scala.inline
-        def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+        inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+        inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       }
     }
   }

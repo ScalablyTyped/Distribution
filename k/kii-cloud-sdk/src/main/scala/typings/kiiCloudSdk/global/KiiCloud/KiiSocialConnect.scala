@@ -32,8 +32,7 @@ object KiiSocialConnect {
     * @return The current access token expiration date, null if unavailable
     */
   /* static member */
-  @scala.inline
-  def getAccessTokenExpirationForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenExpirationForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getAccessTokenExpirationForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenExpirationForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Retrieve the current user's access token from a social network
@@ -46,8 +45,7 @@ object KiiSocialConnect {
     * @return The current access token, null if unavailable
     */
   /* static member */
-  @scala.inline
-  def getAccessTokenForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getAccessTokenForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Retrieve the current user's access token object from a social network
@@ -83,8 +81,7 @@ object KiiSocialConnect {
     * @return tokenObject The current access token object, null if unavailable.
     */
   /* static member */
-  @scala.inline
-  def getAccessTokenObjectForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenObjectForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getAccessTokenObjectForNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessTokenObjectForNetwork")(networkName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Link the currently logged in user with a social network
@@ -252,8 +249,7 @@ object KiiSocialConnect {
     *      );
     */
   /* static member */
-  @scala.inline
-  def linkCurrentUserWithNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName, options: KiiSocialConnectOptions): js.Promise[
+  inline def linkCurrentUserWithNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName, options: KiiSocialConnectOptions): js.Promise[
     js.Tuple2[
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
@@ -264,8 +260,7 @@ object KiiSocialConnect {
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
   ]]
-  @scala.inline
-  def linkCurrentUserWithNetwork(
+  inline def linkCurrentUserWithNetwork(
     networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName,
     options: KiiSocialConnectOptions,
     callbacks: `36`
@@ -449,8 +444,7 @@ object KiiSocialConnect {
     *      );
     */
   /* static member */
-  @scala.inline
-  def logIn(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName, options: KiiSocialConnectOptions): js.Promise[
+  inline def logIn(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName, options: KiiSocialConnectOptions): js.Promise[
     js.Tuple2[
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
@@ -461,8 +455,7 @@ object KiiSocialConnect {
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
   ]]
-  @scala.inline
-  def logIn(
+  inline def logIn(
     networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName,
     options: KiiSocialConnectOptions,
     callbacks: `36`
@@ -606,8 +599,7 @@ object KiiSocialConnect {
     * @throws For details refer to the table above
     */
   /* static member */
-  @scala.inline
-  def setupNetwork(
+  inline def setupNetwork(
     networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName,
     apiKey: String,
     apiSecret: String,
@@ -664,8 +656,7 @@ object KiiSocialConnect {
     *      );
     */
   /* static member */
-  @scala.inline
-  def unLinkCurrentUserFromNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): js.Promise[
+  inline def unLinkCurrentUserFromNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName): js.Promise[
     js.Tuple2[
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
@@ -676,8 +667,7 @@ object KiiSocialConnect {
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName
     ]
   ]]
-  @scala.inline
-  def unLinkCurrentUserFromNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName, callbacks: `36`): js.Promise[
+  inline def unLinkCurrentUserFromNetwork(networkName: typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName, callbacks: `36`): js.Promise[
     js.Tuple2[
       typings.kiiCloudSdk.KiiCloud.KiiUser, 
       typings.kiiCloudSdk.KiiCloud.KiiSocialNetworkName

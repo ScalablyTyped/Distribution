@@ -50,8 +50,7 @@ trait GamePads extends StObject {
 }
 object GamePads {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAxis: (Double, Double) => Double,
     isPressed: (Double, Double) => Boolean,
     poll: () => js.Array[js.Object],
@@ -62,22 +61,16 @@ object GamePads {
     __obj.asInstanceOf[GamePads]
   }
   
-  @scala.inline
-  implicit class GamePadsMutableBuilder[Self <: GamePads] (val x: Self) extends AnyVal {
+  extension [Self <: GamePads](x: Self) {
     
-    @scala.inline
-    def setGetAxis(value: (Double, Double) => Double): Self = StObject.set(x, "getAxis", js.Any.fromFunction2(value))
+    inline def setGetAxis(value: (Double, Double) => Double): Self = StObject.set(x, "getAxis", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsPressed(value: (Double, Double) => Boolean): Self = StObject.set(x, "isPressed", js.Any.fromFunction2(value))
+    inline def setIsPressed(value: (Double, Double) => Boolean): Self = StObject.set(x, "isPressed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPoll(value: () => js.Array[js.Object]): Self = StObject.set(x, "poll", js.Any.fromFunction0(value))
+    inline def setPoll(value: () => js.Array[js.Object]): Self = StObject.set(x, "poll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWasPressed(value: (Double, Double) => Boolean): Self = StObject.set(x, "wasPressed", js.Any.fromFunction2(value))
+    inline def setWasPressed(value: (Double, Double) => Boolean): Self = StObject.set(x, "wasPressed", js.Any.fromFunction2(value))
   }
 }

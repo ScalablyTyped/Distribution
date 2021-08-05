@@ -29,31 +29,23 @@ trait SchemaToolOutputReference extends StObject {
 }
 object SchemaToolOutputReference {
   
-  @scala.inline
-  def apply(): SchemaToolOutputReference = {
+  inline def apply(): SchemaToolOutputReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaToolOutputReference]
   }
   
-  @scala.inline
-  implicit class SchemaToolOutputReferenceMutableBuilder[Self <: SchemaToolOutputReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaToolOutputReference](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: SchemaTimestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: SchemaTimestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setOutput(value: SchemaFileReference): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: SchemaFileReference): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setTestCase(value: SchemaTestCaseReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
+    inline def setTestCase(value: SchemaTestCaseReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseUndefined: Self = StObject.set(x, "testCase", js.undefined)
+    inline def setTestCaseUndefined: Self = StObject.set(x, "testCase", js.undefined)
   }
 }

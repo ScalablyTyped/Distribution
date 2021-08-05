@@ -19,7 +19,7 @@ object singletonlayoutMod {
   class SingletonLayout () extends Layout {
     def this(options: IOptions) = this()
     
-    var _widget: js.Any = js.native
+    /* private */ var _widget: js.Any = js.native
     
     /**
       * Attach a widget to the parent's DOM node.

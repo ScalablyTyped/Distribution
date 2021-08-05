@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGMatrix extends StObject {
   
-  @JSName("MSHTML.SVGMatrix_typekey")
+  /* private */ @JSName("MSHTML.SVGMatrix_typekey")
   var MSHTMLDotSVGMatrix_typekey: SVGMatrix
   
   var a: Double
@@ -45,8 +45,7 @@ trait SVGMatrix extends StObject {
 }
 object SVGMatrix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGMatrix_typekey: SVGMatrix,
     a: Double,
     b: Double,
@@ -71,61 +70,42 @@ object SVGMatrix {
     __obj.asInstanceOf[SVGMatrix]
   }
   
-  @scala.inline
-  implicit class SVGMatrixMutableBuilder[Self <: SVGMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: SVGMatrix](x: Self) {
     
-    @scala.inline
-    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipX(value: () => SVGMatrix): Self = StObject.set(x, "flipX", js.Any.fromFunction0(value))
+    inline def setFlipX(value: () => SVGMatrix): Self = StObject.set(x, "flipX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlipY(value: () => SVGMatrix): Self = StObject.set(x, "flipY", js.Any.fromFunction0(value))
+    inline def setFlipY(value: () => SVGMatrix): Self = StObject.set(x, "flipY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInverse(value: () => SVGMatrix): Self = StObject.set(x, "inverse", js.Any.fromFunction0(value))
+    inline def setInverse(value: () => SVGMatrix): Self = StObject.set(x, "inverse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMSHTMLDotSVGMatrix_typekey(value: SVGMatrix): Self = StObject.set(x, "MSHTML.SVGMatrix_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGMatrix_typekey(value: SVGMatrix): Self = StObject.set(x, "MSHTML.SVGMatrix_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiply(value: SVGMatrix => SVGMatrix): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
+    inline def setMultiply(value: SVGMatrix => SVGMatrix): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRotate(value: Double => SVGMatrix): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
+    inline def setRotate(value: Double => SVGMatrix): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRotateFromVector(value: (Double, Double) => SVGMatrix): Self = StObject.set(x, "rotateFromVector", js.Any.fromFunction2(value))
+    inline def setRotateFromVector(value: (Double, Double) => SVGMatrix): Self = StObject.set(x, "rotateFromVector", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScale(value: Double => SVGMatrix): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
+    inline def setScale(value: Double => SVGMatrix): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScaleNonUniform(value: (Double, Double) => SVGMatrix): Self = StObject.set(x, "scaleNonUniform", js.Any.fromFunction2(value))
+    inline def setScaleNonUniform(value: (Double, Double) => SVGMatrix): Self = StObject.set(x, "scaleNonUniform", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSkewX(value: Double => SVGMatrix): Self = StObject.set(x, "skewX", js.Any.fromFunction1(value))
+    inline def setSkewX(value: Double => SVGMatrix): Self = StObject.set(x, "skewX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkewY(value: Double => SVGMatrix): Self = StObject.set(x, "skewY", js.Any.fromFunction1(value))
+    inline def setSkewY(value: Double => SVGMatrix): Self = StObject.set(x, "skewY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTranslate(value: (Double, Double) => SVGMatrix): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (Double, Double) => SVGMatrix): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
   }
 }

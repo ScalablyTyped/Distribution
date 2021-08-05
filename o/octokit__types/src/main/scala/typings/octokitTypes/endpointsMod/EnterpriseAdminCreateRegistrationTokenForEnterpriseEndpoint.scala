@@ -13,16 +13,13 @@ trait EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint extends StObje
 }
 object EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String): EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint = {
+  inline def apply(enterprise: String): EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
   }
 }

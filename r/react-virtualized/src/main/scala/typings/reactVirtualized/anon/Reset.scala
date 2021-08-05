@@ -11,16 +11,13 @@ trait Reset extends StObject {
 }
 object Reset {
   
-  @scala.inline
-  def apply(reset: resetParams => Unit): Reset = {
+  inline def apply(reset: resetParams => Unit): Reset = {
     val __obj = js.Dynamic.literal(reset = js.Any.fromFunction1(reset))
     __obj.asInstanceOf[Reset]
   }
   
-  @scala.inline
-  implicit class ResetMutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
+  extension [Self <: Reset](x: Self) {
     
-    @scala.inline
-    def setReset(value: resetParams => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+    inline def setReset(value: resetParams => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
   }
 }

@@ -63,21 +63,16 @@ object bucketNotificationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketNotificationState): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BucketNotificationState, opts: CustomResourceOptions): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
+    inline def get(name: String, id: Input[ID]): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
+    inline def get(name: String, id: Input[ID], state: BucketNotificationState): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
+    inline def get(name: String, id: Input[ID], state: BucketNotificationState, opts: CustomResourceOptions): BucketNotification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketNotification]
     
     /**
       * Returns true if the given object is an instance of BucketNotification.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ Boolean]
   }
   
   trait BucketNotificationArgs extends StObject {
@@ -106,44 +101,32 @@ object bucketNotificationMod {
   }
   object BucketNotificationArgs {
     
-    @scala.inline
-    def apply(bucket: Input[String]): BucketNotificationArgs = {
+    inline def apply(bucket: Input[String]): BucketNotificationArgs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketNotificationArgs]
     }
     
-    @scala.inline
-    implicit class BucketNotificationArgsMutableBuilder[Self <: BucketNotificationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BucketNotificationArgs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaFunctions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]]]): Self = StObject.set(x, "lambdaFunctions", value.asInstanceOf[js.Any])
+      inline def setLambdaFunctions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]]]): Self = StObject.set(x, "lambdaFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaFunctionsUndefined: Self = StObject.set(x, "lambdaFunctions", js.undefined)
+      inline def setLambdaFunctionsUndefined: Self = StObject.set(x, "lambdaFunctions", js.undefined)
       
-      @scala.inline
-      def setLambdaFunctionsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]*): Self = StObject.set(x, "lambdaFunctions", js.Array(value :_*))
+      inline def setLambdaFunctionsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]*): Self = StObject.set(x, "lambdaFunctions", js.Array(value :_*))
       
-      @scala.inline
-      def setQueues(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]]]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
+      inline def setQueues(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]]]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
+      inline def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
       
-      @scala.inline
-      def setQueuesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]*): Self = StObject.set(x, "queues", js.Array(value :_*))
+      inline def setQueuesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]*): Self = StObject.set(x, "queues", js.Array(value :_*))
       
-      @scala.inline
-      def setTopics(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]]]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]]]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
+      inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
       
-      @scala.inline
-      def setTopicsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]*): Self = StObject.set(x, "topics", js.Array(value :_*))
     }
   }
   
@@ -173,47 +156,34 @@ object bucketNotificationMod {
   }
   object BucketNotificationState {
     
-    @scala.inline
-    def apply(): BucketNotificationState = {
+    inline def apply(): BucketNotificationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BucketNotificationState]
     }
     
-    @scala.inline
-    implicit class BucketNotificationStateMutableBuilder[Self <: BucketNotificationState] (val x: Self) extends AnyVal {
+    extension [Self <: BucketNotificationState](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setLambdaFunctions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]]]): Self = StObject.set(x, "lambdaFunctions", value.asInstanceOf[js.Any])
+      inline def setLambdaFunctions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]]]): Self = StObject.set(x, "lambdaFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaFunctionsUndefined: Self = StObject.set(x, "lambdaFunctions", js.undefined)
+      inline def setLambdaFunctionsUndefined: Self = StObject.set(x, "lambdaFunctions", js.undefined)
       
-      @scala.inline
-      def setLambdaFunctionsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]*): Self = StObject.set(x, "lambdaFunctions", js.Array(value :_*))
+      inline def setLambdaFunctionsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationLambdaFunction]*): Self = StObject.set(x, "lambdaFunctions", js.Array(value :_*))
       
-      @scala.inline
-      def setQueues(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]]]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
+      inline def setQueues(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]]]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
+      inline def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
       
-      @scala.inline
-      def setQueuesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]*): Self = StObject.set(x, "queues", js.Array(value :_*))
+      inline def setQueuesVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationQueue]*): Self = StObject.set(x, "queues", js.Array(value :_*))
       
-      @scala.inline
-      def setTopics(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]]]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: Input[js.Array[Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]]]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
+      inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
       
-      @scala.inline
-      def setTopicsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: Input[typings.pulumiAws.inputMod.s3.BucketNotificationTopic]*): Self = StObject.set(x, "topics", js.Array(value :_*))
     }
   }
 }

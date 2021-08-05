@@ -44,74 +44,53 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(): Message = {
+  inline def apply(): Message = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Message & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParsedData(value: ParsedData): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
+    inline def setParsedData(value: ParsedData): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsedDataUndefined: Self = StObject.set(x, "parsedData", js.undefined)
+    inline def setParsedDataUndefined: Self = StObject.set(x, "parsedData", js.undefined)
     
-    @scala.inline
-    def setPatientIds(value: js.Array[PatientId]): Self = StObject.set(x, "patientIds", value.asInstanceOf[js.Any])
+    inline def setPatientIds(value: js.Array[PatientId]): Self = StObject.set(x, "patientIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatientIdsUndefined: Self = StObject.set(x, "patientIds", js.undefined)
+    inline def setPatientIdsUndefined: Self = StObject.set(x, "patientIds", js.undefined)
     
-    @scala.inline
-    def setPatientIdsVarargs(value: PatientId*): Self = StObject.set(x, "patientIds", js.Array(value :_*))
+    inline def setPatientIdsVarargs(value: PatientId*): Self = StObject.set(x, "patientIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSendFacility(value: String): Self = StObject.set(x, "sendFacility", value.asInstanceOf[js.Any])
+    inline def setSendFacility(value: String): Self = StObject.set(x, "sendFacility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendFacilityUndefined: Self = StObject.set(x, "sendFacility", js.undefined)
+    inline def setSendFacilityUndefined: Self = StObject.set(x, "sendFacility", js.undefined)
     
-    @scala.inline
-    def setSendTime(value: String): Self = StObject.set(x, "sendTime", value.asInstanceOf[js.Any])
+    inline def setSendTime(value: String): Self = StObject.set(x, "sendTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendTimeUndefined: Self = StObject.set(x, "sendTime", js.undefined)
+    inline def setSendTimeUndefined: Self = StObject.set(x, "sendTime", js.undefined)
   }
 }

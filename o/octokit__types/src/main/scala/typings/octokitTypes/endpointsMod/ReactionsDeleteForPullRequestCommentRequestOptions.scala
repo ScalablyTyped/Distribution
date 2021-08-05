@@ -20,26 +20,20 @@ trait ReactionsDeleteForPullRequestCommentRequestOptions extends StObject {
 }
 object ReactionsDeleteForPullRequestCommentRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReactionsDeleteForPullRequestCommentRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReactionsDeleteForPullRequestCommentRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/pulls/comments/:comment_id/reactions/:reaction_id")
     __obj.asInstanceOf[ReactionsDeleteForPullRequestCommentRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReactionsDeleteForPullRequestCommentRequestOptionsMutableBuilder[Self <: ReactionsDeleteForPullRequestCommentRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionsDeleteForPullRequestCommentRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(
+    inline def setUrl(
       value: SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id
     ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

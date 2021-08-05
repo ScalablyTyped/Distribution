@@ -20,25 +20,19 @@ trait IonItemOptions extends StObject {
 }
 object IonItemOptions {
   
-  @scala.inline
-  def apply(): IonItemOptions = {
+  inline def apply(): IonItemOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonItemOptions]
   }
   
-  @scala.inline
-  implicit class IonItemOptionsMutableBuilder[Self <: IonItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IonItemOptions](x: Self) {
     
-    @scala.inline
-    def setOnIonSwipe(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "onIonSwipe", js.Any.fromFunction1(value))
+    inline def setOnIonSwipe(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "onIonSwipe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonSwipeUndefined: Self = StObject.set(x, "onIonSwipe", js.undefined)
+    inline def setOnIonSwipeUndefined: Self = StObject.set(x, "onIonSwipe", js.undefined)
     
-    @scala.inline
-    def setSide(value: Side): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: Side): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+    inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
   }
 }

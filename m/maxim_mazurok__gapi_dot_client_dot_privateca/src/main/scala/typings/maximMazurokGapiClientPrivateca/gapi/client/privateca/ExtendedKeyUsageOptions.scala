@@ -26,49 +26,35 @@ trait ExtendedKeyUsageOptions extends StObject {
 }
 object ExtendedKeyUsageOptions {
   
-  @scala.inline
-  def apply(): ExtendedKeyUsageOptions = {
+  inline def apply(): ExtendedKeyUsageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtendedKeyUsageOptions]
   }
   
-  @scala.inline
-  implicit class ExtendedKeyUsageOptionsMutableBuilder[Self <: ExtendedKeyUsageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedKeyUsageOptions](x: Self) {
     
-    @scala.inline
-    def setClientAuth(value: Boolean): Self = StObject.set(x, "clientAuth", value.asInstanceOf[js.Any])
+    inline def setClientAuth(value: Boolean): Self = StObject.set(x, "clientAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAuthUndefined: Self = StObject.set(x, "clientAuth", js.undefined)
+    inline def setClientAuthUndefined: Self = StObject.set(x, "clientAuth", js.undefined)
     
-    @scala.inline
-    def setCodeSigning(value: Boolean): Self = StObject.set(x, "codeSigning", value.asInstanceOf[js.Any])
+    inline def setCodeSigning(value: Boolean): Self = StObject.set(x, "codeSigning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeSigningUndefined: Self = StObject.set(x, "codeSigning", js.undefined)
+    inline def setCodeSigningUndefined: Self = StObject.set(x, "codeSigning", js.undefined)
     
-    @scala.inline
-    def setEmailProtection(value: Boolean): Self = StObject.set(x, "emailProtection", value.asInstanceOf[js.Any])
+    inline def setEmailProtection(value: Boolean): Self = StObject.set(x, "emailProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailProtectionUndefined: Self = StObject.set(x, "emailProtection", js.undefined)
+    inline def setEmailProtectionUndefined: Self = StObject.set(x, "emailProtection", js.undefined)
     
-    @scala.inline
-    def setOcspSigning(value: Boolean): Self = StObject.set(x, "ocspSigning", value.asInstanceOf[js.Any])
+    inline def setOcspSigning(value: Boolean): Self = StObject.set(x, "ocspSigning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcspSigningUndefined: Self = StObject.set(x, "ocspSigning", js.undefined)
+    inline def setOcspSigningUndefined: Self = StObject.set(x, "ocspSigning", js.undefined)
     
-    @scala.inline
-    def setServerAuth(value: Boolean): Self = StObject.set(x, "serverAuth", value.asInstanceOf[js.Any])
+    inline def setServerAuth(value: Boolean): Self = StObject.set(x, "serverAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerAuthUndefined: Self = StObject.set(x, "serverAuth", js.undefined)
+    inline def setServerAuthUndefined: Self = StObject.set(x, "serverAuth", js.undefined)
     
-    @scala.inline
-    def setTimeStamping(value: Boolean): Self = StObject.set(x, "timeStamping", value.asInstanceOf[js.Any])
+    inline def setTimeStamping(value: Boolean): Self = StObject.set(x, "timeStamping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStampingUndefined: Self = StObject.set(x, "timeStamping", js.undefined)
+    inline def setTimeStampingUndefined: Self = StObject.set(x, "timeStamping", js.undefined)
   }
 }

@@ -44,52 +44,37 @@ trait SchemaPartialGroupByKeyInstruction extends StObject {
 }
 object SchemaPartialGroupByKeyInstruction {
   
-  @scala.inline
-  def apply(): SchemaPartialGroupByKeyInstruction = {
+  inline def apply(): SchemaPartialGroupByKeyInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPartialGroupByKeyInstruction]
   }
   
-  @scala.inline
-  implicit class SchemaPartialGroupByKeyInstructionMutableBuilder[Self <: SchemaPartialGroupByKeyInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPartialGroupByKeyInstruction](x: Self) {
     
-    @scala.inline
-    def setInput(value: SchemaInstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: SchemaInstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputElementCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputElementCodec", value.asInstanceOf[js.Any])
+    inline def setInputElementCodec(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputElementCodec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputElementCodecUndefined: Self = StObject.set(x, "inputElementCodec", js.undefined)
+    inline def setInputElementCodecUndefined: Self = StObject.set(x, "inputElementCodec", js.undefined)
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setOriginalCombineValuesInputStoreName(value: String): Self = StObject.set(x, "originalCombineValuesInputStoreName", value.asInstanceOf[js.Any])
+    inline def setOriginalCombineValuesInputStoreName(value: String): Self = StObject.set(x, "originalCombineValuesInputStoreName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalCombineValuesInputStoreNameUndefined: Self = StObject.set(x, "originalCombineValuesInputStoreName", js.undefined)
+    inline def setOriginalCombineValuesInputStoreNameUndefined: Self = StObject.set(x, "originalCombineValuesInputStoreName", js.undefined)
     
-    @scala.inline
-    def setOriginalCombineValuesStepName(value: String): Self = StObject.set(x, "originalCombineValuesStepName", value.asInstanceOf[js.Any])
+    inline def setOriginalCombineValuesStepName(value: String): Self = StObject.set(x, "originalCombineValuesStepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalCombineValuesStepNameUndefined: Self = StObject.set(x, "originalCombineValuesStepName", js.undefined)
+    inline def setOriginalCombineValuesStepNameUndefined: Self = StObject.set(x, "originalCombineValuesStepName", js.undefined)
     
-    @scala.inline
-    def setSideInputs(value: js.Array[SchemaSideInputInfo]): Self = StObject.set(x, "sideInputs", value.asInstanceOf[js.Any])
+    inline def setSideInputs(value: js.Array[SchemaSideInputInfo]): Self = StObject.set(x, "sideInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
+    inline def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
     
-    @scala.inline
-    def setSideInputsVarargs(value: SchemaSideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
+    inline def setSideInputsVarargs(value: SchemaSideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
     
-    @scala.inline
-    def setValueCombiningFn(value: StringDictionary[js.Any]): Self = StObject.set(x, "valueCombiningFn", value.asInstanceOf[js.Any])
+    inline def setValueCombiningFn(value: StringDictionary[js.Any]): Self = StObject.set(x, "valueCombiningFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueCombiningFnUndefined: Self = StObject.set(x, "valueCombiningFn", js.undefined)
+    inline def setValueCombiningFnUndefined: Self = StObject.set(x, "valueCombiningFn", js.undefined)
   }
 }

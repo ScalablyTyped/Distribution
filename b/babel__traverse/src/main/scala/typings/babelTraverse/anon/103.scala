@@ -11,17 +11,14 @@ trait `103` extends StObject {
 }
 object `103` {
   
-  @scala.inline
-  def apply(): `103` = {
+  inline def apply(): `103` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("PipelineTopicExpression")
     __obj.asInstanceOf[`103`]
   }
   
-  @scala.inline
-  implicit class `103MutableBuilder`[Self <: `103`] (val x: Self) extends AnyVal {
+  extension [Self <: `103`](x: Self) {
     
-    @scala.inline
-    def setType(value: PipelineTopicExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PipelineTopicExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

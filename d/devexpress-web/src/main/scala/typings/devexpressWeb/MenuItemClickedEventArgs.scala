@@ -23,19 +23,15 @@ trait MenuItemClickedEventArgs
 }
 object MenuItemClickedEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, itemName: String): MenuItemClickedEventArgs = {
+  inline def apply(handled: Boolean, itemName: String): MenuItemClickedEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], itemName = itemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemClickedEventArgs]
   }
   
-  @scala.inline
-  implicit class MenuItemClickedEventArgsMutableBuilder[Self <: MenuItemClickedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MenuItemClickedEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
   }
 }

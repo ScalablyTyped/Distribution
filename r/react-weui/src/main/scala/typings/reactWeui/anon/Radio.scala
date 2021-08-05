@@ -22,8 +22,7 @@ trait Radio extends StObject {
 }
 object Radio {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkbox: Boolean,
     radio: Boolean,
     select: Boolean,
@@ -36,28 +35,20 @@ object Radio {
     __obj.asInstanceOf[Radio]
   }
   
-  @scala.inline
-  implicit class RadioMutableBuilder[Self <: Radio] (val x: Self) extends AnyVal {
+  extension [Self <: Radio](x: Self) {
     
-    @scala.inline
-    def setCheckbox(value: Boolean): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+    inline def setCheckbox(value: Boolean): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadio(value: Boolean): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+    inline def setRadio(value: Boolean): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectPos(value: js.Any): Self = StObject.set(x, "selectPos", value.asInstanceOf[js.Any])
+    inline def setSelectPos(value: js.Any): Self = StObject.set(x, "selectPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitch(value: Boolean): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
+    inline def setSwitch(value: Boolean): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcode(value: Boolean): Self = StObject.set(x, "vcode", value.asInstanceOf[js.Any])
+    inline def setVcode(value: Boolean): Self = StObject.set(x, "vcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+    inline def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
   }
 }

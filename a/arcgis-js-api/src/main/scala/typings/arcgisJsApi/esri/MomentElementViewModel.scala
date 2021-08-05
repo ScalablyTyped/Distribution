@@ -24,19 +24,15 @@ trait MomentElementViewModel extends StObject {
 }
 object MomentElementViewModel {
   
-  @scala.inline
-  def apply(value: Date): MomentElementViewModel = {
+  inline def apply(value: Date): MomentElementViewModel = {
     val __obj = js.Dynamic.literal(state = "ready", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MomentElementViewModel]
   }
   
-  @scala.inline
-  implicit class MomentElementViewModelMutableBuilder[Self <: MomentElementViewModel] (val x: Self) extends AnyVal {
+  extension [Self <: MomentElementViewModel](x: Self) {
     
-    @scala.inline
-    def setState(value: ready): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ready): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

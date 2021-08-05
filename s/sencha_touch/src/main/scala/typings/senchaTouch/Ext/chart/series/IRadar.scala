@@ -18,19 +18,15 @@ trait IRadar
 }
 object IRadar {
   
-  @scala.inline
-  def apply(): IRadar = {
+  inline def apply(): IRadar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRadar]
   }
   
-  @scala.inline
-  implicit class IRadarMutableBuilder[Self <: IRadar] (val x: Self) extends AnyVal {
+  extension [Self <: IRadar](x: Self) {
     
-    @scala.inline
-    def setGetItemForPoint(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
+    inline def setGetItemForPoint(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getItemForPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
+    inline def setGetItemForPointUndefined: Self = StObject.set(x, "getItemForPoint", js.undefined)
   }
 }

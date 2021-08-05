@@ -14,31 +14,23 @@ trait FaceDetectionParams extends StObject {
 }
 object FaceDetectionParams {
   
-  @scala.inline
-  def apply(): FaceDetectionParams = {
+  inline def apply(): FaceDetectionParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FaceDetectionParams]
   }
   
-  @scala.inline
-  implicit class FaceDetectionParamsMutableBuilder[Self <: FaceDetectionParams] (val x: Self) extends AnyVal {
+  extension [Self <: FaceDetectionParams](x: Self) {
     
-    @scala.inline
-    def setFaceindex(value: ImgixParamType): Self = StObject.set(x, "faceindex", value.asInstanceOf[js.Any])
+    inline def setFaceindex(value: ImgixParamType): Self = StObject.set(x, "faceindex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceindexUndefined: Self = StObject.set(x, "faceindex", js.undefined)
+    inline def setFaceindexUndefined: Self = StObject.set(x, "faceindex", js.undefined)
     
-    @scala.inline
-    def setFacepad(value: ImgixParamType): Self = StObject.set(x, "facepad", value.asInstanceOf[js.Any])
+    inline def setFacepad(value: ImgixParamType): Self = StObject.set(x, "facepad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacepadUndefined: Self = StObject.set(x, "facepad", js.undefined)
+    inline def setFacepadUndefined: Self = StObject.set(x, "facepad", js.undefined)
     
-    @scala.inline
-    def setFaces(value: ImgixParamType): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
+    inline def setFaces(value: ImgixParamType): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
+    inline def setFacesUndefined: Self = StObject.set(x, "faces", js.undefined)
   }
 }

@@ -24,13 +24,9 @@ object pointMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Point]
-    @scala.inline
-    def create(x: Double): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any]).asInstanceOf[Point]
-    @scala.inline
-    def create(x: Double, y: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Point]
-    @scala.inline
-    def create(x: Unit, y: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def create(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Point]
+    inline def create(x: Double): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any]).asInstanceOf[Point]
+    inline def create(x: Double, y: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def create(x: Unit, y: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Point]
   }
 }

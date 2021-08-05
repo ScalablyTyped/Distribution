@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlexWrapType extends StObject
 object FlexWrapType {
   
-  @scala.inline
-  def nowrap: typings.azdata.azdataStrings.nowrap = "nowrap".asInstanceOf[typings.azdata.azdataStrings.nowrap]
+  inline def nowrap: typings.azdata.azdataStrings.nowrap = "nowrap".asInstanceOf[typings.azdata.azdataStrings.nowrap]
   
-  @scala.inline
-  def wrap: typings.azdata.azdataStrings.wrap = "wrap".asInstanceOf[typings.azdata.azdataStrings.wrap]
+  inline def wrap: typings.azdata.azdataStrings.wrap = "wrap".asInstanceOf[typings.azdata.azdataStrings.wrap]
   
-  @scala.inline
-  def `wrap-reverse`: typings.azdata.azdataStrings.`wrap-reverse` = "wrap-reverse".asInstanceOf[typings.azdata.azdataStrings.`wrap-reverse`]
+  inline def `wrap-reverse`: typings.azdata.azdataStrings.`wrap-reverse` = "wrap-reverse".asInstanceOf[typings.azdata.azdataStrings.`wrap-reverse`]
 }

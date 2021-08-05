@@ -44,8 +44,7 @@ trait TileSource extends StObject {
 }
 object TileSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBounds: () => LocationRect,
     getHeight: () => Double,
     getMaxZoom: () => Double,
@@ -57,25 +56,18 @@ object TileSource {
     __obj.asInstanceOf[TileSource]
   }
   
-  @scala.inline
-  implicit class TileSourceMutableBuilder[Self <: TileSource] (val x: Self) extends AnyVal {
+  extension [Self <: TileSource](x: Self) {
     
-    @scala.inline
-    def setGetBounds(value: () => LocationRect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
+    inline def setGetBounds(value: () => LocationRect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
+    inline def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+    inline def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUriConstructor(value: () => String | (js.Function1[/* tile */ PyramidTileId, String])): Self = StObject.set(x, "getUriConstructor", js.Any.fromFunction0(value))
+    inline def setGetUriConstructor(value: () => String | (js.Function1[/* tile */ PyramidTileId, String])): Self = StObject.set(x, "getUriConstructor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
   }
 }

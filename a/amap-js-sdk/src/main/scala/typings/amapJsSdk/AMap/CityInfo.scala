@@ -16,25 +16,19 @@ trait CityInfo extends StObject {
 }
 object CityInfo {
   
-  @scala.inline
-  def apply(adcode: String, citycode: String, count: Double, name: String): CityInfo = {
+  inline def apply(adcode: String, citycode: String, count: Double, name: String): CityInfo = {
     val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CityInfo]
   }
   
-  @scala.inline
-  implicit class CityInfoMutableBuilder[Self <: CityInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CityInfo](x: Self) {
     
-    @scala.inline
-    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+    inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
+    inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

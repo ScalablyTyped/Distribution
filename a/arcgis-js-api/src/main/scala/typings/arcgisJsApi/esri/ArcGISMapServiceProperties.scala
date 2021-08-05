@@ -29,31 +29,23 @@ trait ArcGISMapServiceProperties extends StObject {
 }
 object ArcGISMapServiceProperties {
   
-  @scala.inline
-  def apply(): ArcGISMapServiceProperties = {
+  inline def apply(): ArcGISMapServiceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArcGISMapServiceProperties]
   }
   
-  @scala.inline
-  implicit class ArcGISMapServicePropertiesMutableBuilder[Self <: ArcGISMapServiceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISMapServiceProperties](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
+    inline def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullExtentUndefined: Self = StObject.set(x, "fullExtent", js.undefined)
+    inline def setFullExtentUndefined: Self = StObject.set(x, "fullExtent", js.undefined)
     
-    @scala.inline
-    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
   }
 }

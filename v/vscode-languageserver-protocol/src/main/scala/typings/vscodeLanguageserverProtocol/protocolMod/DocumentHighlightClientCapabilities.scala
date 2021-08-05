@@ -13,19 +13,15 @@ trait DocumentHighlightClientCapabilities extends StObject {
 }
 object DocumentHighlightClientCapabilities {
   
-  @scala.inline
-  def apply(): DocumentHighlightClientCapabilities = {
+  inline def apply(): DocumentHighlightClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentHighlightClientCapabilities]
   }
   
-  @scala.inline
-  implicit class DocumentHighlightClientCapabilitiesMutableBuilder[Self <: DocumentHighlightClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentHighlightClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

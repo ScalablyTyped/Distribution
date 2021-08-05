@@ -17,19 +17,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createBundleRenderer(bundle: String): BundleRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any]).asInstanceOf[BundleRenderer]
-  @scala.inline
-  def createBundleRenderer(bundle: String, options: BundleRendererOptions): BundleRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BundleRenderer]
-  @scala.inline
-  def createBundleRenderer(bundle: js.Object): BundleRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any]).asInstanceOf[BundleRenderer]
-  @scala.inline
-  def createBundleRenderer(bundle: js.Object, options: BundleRendererOptions): BundleRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BundleRenderer]
+  inline def createBundleRenderer(bundle: String): BundleRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any]).asInstanceOf[BundleRenderer]
+  inline def createBundleRenderer(bundle: String, options: BundleRendererOptions): BundleRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BundleRenderer]
+  inline def createBundleRenderer(bundle: js.Object): BundleRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any]).asInstanceOf[BundleRenderer]
+  inline def createBundleRenderer(bundle: js.Object, options: BundleRendererOptions): BundleRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("createBundleRenderer")(bundle.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BundleRenderer]
   
-  @scala.inline
-  def createRenderer(): Renderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[Renderer]
-  @scala.inline
-  def createRenderer(options: RendererOptions): Renderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[Renderer]
+  inline def createRenderer(): Renderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[Renderer]
+  inline def createRenderer(options: RendererOptions): Renderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[Renderer]
   
   @js.native
   trait BundleRenderer extends StObject {
@@ -57,38 +51,28 @@ object mod {
   }
   object BundleRendererOptions {
     
-    @scala.inline
-    def apply(): BundleRendererOptions = {
+    inline def apply(): BundleRendererOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BundleRendererOptions]
     }
     
-    @scala.inline
-    implicit class BundleRendererOptionsMutableBuilder[Self <: BundleRendererOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BundleRendererOptions](x: Self) {
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
       
-      @scala.inline
-      def setClientManifest(value: js.Object): Self = StObject.set(x, "clientManifest", value.asInstanceOf[js.Any])
+      inline def setClientManifest(value: js.Object): Self = StObject.set(x, "clientManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientManifestUndefined: Self = StObject.set(x, "clientManifest", js.undefined)
+      inline def setClientManifestUndefined: Self = StObject.set(x, "clientManifest", js.undefined)
       
-      @scala.inline
-      def setRunInNewContext(value: Boolean | once): Self = StObject.set(x, "runInNewContext", value.asInstanceOf[js.Any])
+      inline def setRunInNewContext(value: Boolean | once): Self = StObject.set(x, "runInNewContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunInNewContextUndefined: Self = StObject.set(x, "runInNewContext", js.undefined)
+      inline def setRunInNewContextUndefined: Self = StObject.set(x, "runInNewContext", js.undefined)
       
-      @scala.inline
-      def setSerializer(value: /* state */ js.Object => String): Self = StObject.set(x, "serializer", js.Any.fromFunction1(value))
+      inline def setSerializer(value: /* state */ js.Object => String): Self = StObject.set(x, "serializer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
+      inline def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
     }
   }
   
@@ -141,50 +125,36 @@ object mod {
   }
   object RendererOptions {
     
-    @scala.inline
-    def apply(): RendererOptions = {
+    inline def apply(): RendererOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RendererOptions]
     }
     
-    @scala.inline
-    implicit class RendererOptionsMutableBuilder[Self <: RendererOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RendererOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: RenderCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: RenderCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setDirectives(value: StringDictionary[js.Function2[/* vnode */ VNode, /* dir */ VNodeDirective, Unit]]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+      inline def setDirectives(value: StringDictionary[js.Function2[/* vnode */ VNode, /* dir */ VNodeDirective, Unit]]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+      inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
       
-      @scala.inline
-      def setInject(value: Boolean): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: Boolean): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      @scala.inline
-      def setShouldPrefetch(value: (/* file */ String, /* type */ String) => Boolean): Self = StObject.set(x, "shouldPrefetch", js.Any.fromFunction2(value))
+      inline def setShouldPrefetch(value: (/* file */ String, /* type */ String) => Boolean): Self = StObject.set(x, "shouldPrefetch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldPrefetchUndefined: Self = StObject.set(x, "shouldPrefetch", js.undefined)
+      inline def setShouldPrefetchUndefined: Self = StObject.set(x, "shouldPrefetch", js.undefined)
       
-      @scala.inline
-      def setShouldPreload(value: (/* file */ String, /* type */ String) => Boolean): Self = StObject.set(x, "shouldPreload", js.Any.fromFunction2(value))
+      inline def setShouldPreload(value: (/* file */ String, /* type */ String) => Boolean): Self = StObject.set(x, "shouldPreload", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldPreloadUndefined: Self = StObject.set(x, "shouldPreload", js.undefined)
+      inline def setShouldPreloadUndefined: Self = StObject.set(x, "shouldPreload", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
 }

@@ -10,19 +10,15 @@ trait OpenIDConnectProviderListEntry extends StObject {
 }
 object OpenIDConnectProviderListEntry {
   
-  @scala.inline
-  def apply(): OpenIDConnectProviderListEntry = {
+  inline def apply(): OpenIDConnectProviderListEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenIDConnectProviderListEntry]
   }
   
-  @scala.inline
-  implicit class OpenIDConnectProviderListEntryMutableBuilder[Self <: OpenIDConnectProviderListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: OpenIDConnectProviderListEntry](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

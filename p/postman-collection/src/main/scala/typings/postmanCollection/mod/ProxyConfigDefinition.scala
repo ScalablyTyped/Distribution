@@ -19,37 +19,27 @@ trait ProxyConfigDefinition
 }
 object ProxyConfigDefinition {
   
-  @scala.inline
-  def apply(): ProxyConfigDefinition = {
+  inline def apply(): ProxyConfigDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProxyConfigDefinition]
   }
   
-  @scala.inline
-  implicit class ProxyConfigDefinitionMutableBuilder[Self <: ProxyConfigDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyConfigDefinition](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setMatch(value: String | Pattern | UrlMatchPattern): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String | Pattern | UrlMatchPattern): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setTunnel(value: Boolean): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
+    inline def setTunnel(value: Boolean): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
+    inline def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
   }
 }

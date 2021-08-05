@@ -10,16 +10,13 @@ trait SuffixOptions extends StObject {
 }
 object SuffixOptions {
   
-  @scala.inline
-  def apply(full: Boolean): SuffixOptions = {
+  inline def apply(full: Boolean): SuffixOptions = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuffixOptions]
   }
   
-  @scala.inline
-  implicit class SuffixOptionsMutableBuilder[Self <: SuffixOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SuffixOptions](x: Self) {
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
   }
 }

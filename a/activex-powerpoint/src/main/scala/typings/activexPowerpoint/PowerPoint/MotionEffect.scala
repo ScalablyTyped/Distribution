@@ -20,7 +20,7 @@ trait MotionEffect extends StObject {
   
   var Path: String
   
-  @JSName("PowerPoint.MotionEffect_typekey")
+  /* private */ @JSName("PowerPoint.MotionEffect_typekey")
   var PowerPointDotMotionEffect_typekey: MotionEffect
   
   var ToX: Double
@@ -29,8 +29,7 @@ trait MotionEffect extends StObject {
 }
 object MotionEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     ByX: Double,
     ByY: Double,
@@ -47,37 +46,26 @@ object MotionEffect {
     __obj.asInstanceOf[MotionEffect]
   }
   
-  @scala.inline
-  implicit class MotionEffectMutableBuilder[Self <: MotionEffect] (val x: Self) extends AnyVal {
+  extension [Self <: MotionEffect](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByX(value: Double): Self = StObject.set(x, "ByX", value.asInstanceOf[js.Any])
+    inline def setByX(value: Double): Self = StObject.set(x, "ByX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByY(value: Double): Self = StObject.set(x, "ByY", value.asInstanceOf[js.Any])
+    inline def setByY(value: Double): Self = StObject.set(x, "ByY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromX(value: Double): Self = StObject.set(x, "FromX", value.asInstanceOf[js.Any])
+    inline def setFromX(value: Double): Self = StObject.set(x, "FromX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromY(value: Double): Self = StObject.set(x, "FromY", value.asInstanceOf[js.Any])
+    inline def setFromY(value: Double): Self = StObject.set(x, "FromY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotMotionEffect_typekey(value: MotionEffect): Self = StObject.set(x, "PowerPoint.MotionEffect_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotMotionEffect_typekey(value: MotionEffect): Self = StObject.set(x, "PowerPoint.MotionEffect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToX(value: Double): Self = StObject.set(x, "ToX", value.asInstanceOf[js.Any])
+    inline def setToX(value: Double): Self = StObject.set(x, "ToX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToY(value: Double): Self = StObject.set(x, "ToY", value.asInstanceOf[js.Any])
+    inline def setToY(value: Double): Self = StObject.set(x, "ToY", value.asInstanceOf[js.Any])
   }
 }

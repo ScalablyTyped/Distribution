@@ -14,26 +14,20 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply[E, T](): Error[E, T] = {
+    inline def apply[E, T](): Error[E, T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Error[E, T]]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error[?, ?], E, T] (val x: Self & (Error[E, T])) extends AnyVal {
+    extension [Self <: Error[?, ?], E, T](x: Self & (Error[E, T])) {
       
-      @scala.inline
-      def setError(value: E): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: E): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -50,41 +44,30 @@ object anon {
   }
   object RetryOptionsaritynumberun {
     
-    @scala.inline
-    def apply(): RetryOptionsaritynumberun = {
+    inline def apply(): RetryOptionsaritynumberun = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RetryOptionsaritynumberun]
     }
     
-    @scala.inline
-    implicit class RetryOptionsaritynumberunMutableBuilder[Self <: RetryOptionsaritynumberun] (val x: Self) extends AnyVal {
+    extension [Self <: RetryOptionsaritynumberun](x: Self) {
       
-      @scala.inline
-      def setArity(value: Double): Self = StObject.set(x, "arity", value.asInstanceOf[js.Any])
+      inline def setArity(value: Double): Self = StObject.set(x, "arity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArityUndefined: Self = StObject.set(x, "arity", js.undefined)
+      inline def setArityUndefined: Self = StObject.set(x, "arity", js.undefined)
       
-      @scala.inline
-      def setErrorFilter(value: /* error */ typings.std.Error => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
+      inline def setErrorFilter(value: /* error */ typings.std.Error => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
+      inline def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double | (js.Function1[/* retryCount */ Double, Double])): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double | (js.Function1[/* retryCount */ Double, Double])): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalFunction1(value: /* retryCount */ Double => Double): Self = StObject.set(x, "interval", js.Any.fromFunction1(value))
+      inline def setIntervalFunction1(value: /* retryCount */ Double => Double): Self = StObject.set(x, "interval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+      inline def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
+      inline def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
     }
   }
 }

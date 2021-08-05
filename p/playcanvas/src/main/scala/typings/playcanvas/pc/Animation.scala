@@ -42,8 +42,7 @@ trait Animation extends StObject {
 }
 object Animation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addNode: Node => Unit,
     duration: Double,
     getNode: String => Node,
@@ -54,25 +53,18 @@ object Animation {
     __obj.asInstanceOf[Animation]
   }
   
-  @scala.inline
-  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+  extension [Self <: Animation](x: Self) {
     
-    @scala.inline
-    def setAddNode(value: Node => Unit): Self = StObject.set(x, "addNode", js.Any.fromFunction1(value))
+    inline def setAddNode(value: Node => Unit): Self = StObject.set(x, "addNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetNode(value: String => Node): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
+    inline def setGetNode(value: String => Node): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

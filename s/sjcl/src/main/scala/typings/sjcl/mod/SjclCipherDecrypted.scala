@@ -12,19 +12,15 @@ trait SjclCipherDecrypted
 }
 object SjclCipherDecrypted {
   
-  @scala.inline
-  def apply(ct: BitArray_, iv: BitArray_, key: BitArray_, salt: BitArray_): SjclCipherDecrypted = {
+  inline def apply(ct: BitArray_, iv: BitArray_, key: BitArray_, salt: BitArray_): SjclCipherDecrypted = {
     val __obj = js.Dynamic.literal(ct = ct.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclCipherDecrypted]
   }
   
-  @scala.inline
-  implicit class SjclCipherDecryptedMutableBuilder[Self <: SjclCipherDecrypted] (val x: Self) extends AnyVal {
+  extension [Self <: SjclCipherDecrypted](x: Self) {
     
-    @scala.inline
-    def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: BitArray_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
+    inline def setKeyVarargs(value: Double*): Self = StObject.set(x, "key", js.Array(value :_*))
   }
 }

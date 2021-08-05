@@ -65,8 +65,7 @@ object asymmetricMatchersByNameMod {
   @js.native
   val before: ToBeBefore_ = js.native
   
-  @scala.inline
-  def calculable(actual: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("calculable")(actual.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def calculable(actual: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("calculable")(actual.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("jasmine-expect/dist/asymmetricMatchersByName", "emptyArray")
   @js.native

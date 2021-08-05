@@ -14,25 +14,19 @@ trait ServiceAccount extends StObject {
 }
 object ServiceAccount {
   
-  @scala.inline
-  def apply(): ServiceAccount = {
+  inline def apply(): ServiceAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceAccount]
   }
   
-  @scala.inline
-  implicit class ServiceAccountMutableBuilder[Self <: ServiceAccount] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccount](x: Self) {
     
-    @scala.inline
-    def setKey(value: ServiceAccountKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ServiceAccountKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

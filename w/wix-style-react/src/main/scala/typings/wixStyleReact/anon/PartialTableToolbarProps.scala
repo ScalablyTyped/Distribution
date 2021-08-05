@@ -12,19 +12,15 @@ trait PartialTableToolbarProps extends StObject {
 }
 object PartialTableToolbarProps {
   
-  @scala.inline
-  def apply(): PartialTableToolbarProps = {
+  inline def apply(): PartialTableToolbarProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTableToolbarProps]
   }
   
-  @scala.inline
-  implicit class PartialTableToolbarPropsMutableBuilder[Self <: PartialTableToolbarProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTableToolbarProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

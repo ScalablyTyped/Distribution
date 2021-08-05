@@ -20,22 +20,17 @@ trait CalendarItem extends StObject {
 }
 object CalendarItem {
   
-  @scala.inline
-  def apply(AbbrevName: String, FullName: String, ID: String): CalendarItem = {
+  inline def apply(AbbrevName: String, FullName: String, ID: String): CalendarItem = {
     val __obj = js.Dynamic.literal(AbbrevName = AbbrevName.asInstanceOf[js.Any], FullName = FullName.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarItem]
   }
   
-  @scala.inline
-  implicit class CalendarItemMutableBuilder[Self <: CalendarItem] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarItem](x: Self) {
     
-    @scala.inline
-    def setAbbrevName(value: String): Self = StObject.set(x, "AbbrevName", value.asInstanceOf[js.Any])
+    inline def setAbbrevName(value: String): Self = StObject.set(x, "AbbrevName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait GetAllCookiesResponse extends StObject {
 }
 object GetAllCookiesResponse {
   
-  @scala.inline
-  def apply(cookies: js.Array[Cookie]): GetAllCookiesResponse = {
+  inline def apply(cookies: js.Array[Cookie]): GetAllCookiesResponse = {
     val __obj = js.Dynamic.literal(cookies = cookies.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAllCookiesResponse]
   }
   
-  @scala.inline
-  implicit class GetAllCookiesResponseMutableBuilder[Self <: GetAllCookiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAllCookiesResponse](x: Self) {
     
-    @scala.inline
-    def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+    inline def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
   }
 }

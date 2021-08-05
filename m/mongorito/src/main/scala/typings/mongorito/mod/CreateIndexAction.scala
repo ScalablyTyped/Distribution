@@ -15,23 +15,18 @@ trait CreateIndexAction
 }
 object CreateIndexAction {
   
-  @scala.inline
-  def apply(args: js.Array[js.Any], `type`: CREATE_INDEX): CreateIndexAction = {
+  inline def apply(args: js.Array[js.Any], `type`: CREATE_INDEX): CreateIndexAction = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIndexAction]
   }
   
-  @scala.inline
-  implicit class CreateIndexActionMutableBuilder[Self <: CreateIndexAction] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIndexAction](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: CREATE_INDEX): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CREATE_INDEX): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

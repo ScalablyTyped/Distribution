@@ -23,31 +23,23 @@ trait RepositoryExternalConnectionInfo extends StObject {
 }
 object RepositoryExternalConnectionInfo {
   
-  @scala.inline
-  def apply(): RepositoryExternalConnectionInfo = {
+  inline def apply(): RepositoryExternalConnectionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepositoryExternalConnectionInfo]
   }
   
-  @scala.inline
-  implicit class RepositoryExternalConnectionInfoMutableBuilder[Self <: RepositoryExternalConnectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RepositoryExternalConnectionInfo](x: Self) {
     
-    @scala.inline
-    def setExternalConnectionName(value: ExternalConnectionName): Self = StObject.set(x, "externalConnectionName", value.asInstanceOf[js.Any])
+    inline def setExternalConnectionName(value: ExternalConnectionName): Self = StObject.set(x, "externalConnectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalConnectionNameUndefined: Self = StObject.set(x, "externalConnectionName", js.undefined)
+    inline def setExternalConnectionNameUndefined: Self = StObject.set(x, "externalConnectionName", js.undefined)
     
-    @scala.inline
-    def setPackageFormat(value: PackageFormat): Self = StObject.set(x, "packageFormat", value.asInstanceOf[js.Any])
+    inline def setPackageFormat(value: PackageFormat): Self = StObject.set(x, "packageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageFormatUndefined: Self = StObject.set(x, "packageFormat", js.undefined)
+    inline def setPackageFormatUndefined: Self = StObject.set(x, "packageFormat", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ExternalConnectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ExternalConnectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

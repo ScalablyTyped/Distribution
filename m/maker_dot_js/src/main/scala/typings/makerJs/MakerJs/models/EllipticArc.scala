@@ -15,16 +15,13 @@ trait EllipticArc
 }
 object EllipticArc {
   
-  @scala.inline
-  def apply(models: IModelMap): EllipticArc = {
+  inline def apply(models: IModelMap): EllipticArc = {
     val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any])
     __obj.asInstanceOf[EllipticArc]
   }
   
-  @scala.inline
-  implicit class EllipticArcMutableBuilder[Self <: EllipticArc] (val x: Self) extends AnyVal {
+  extension [Self <: EllipticArc](x: Self) {
     
-    @scala.inline
-    def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait TargetState extends StObject {
 }
 object TargetState {
   
-  @scala.inline
-  def apply(): TargetState = {
+  inline def apply(): TargetState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetState]
   }
   
-  @scala.inline
-  implicit class TargetStateMutableBuilder[Self <: TargetState] (val x: Self) extends AnyVal {
+  extension [Self <: TargetState](x: Self) {
     
-    @scala.inline
-    def setDetails(value: js.Array[TargetDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[TargetDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setDetailsVarargs(value: TargetDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: TargetDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
   }
 }

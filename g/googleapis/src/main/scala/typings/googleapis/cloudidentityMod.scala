@@ -41,8 +41,7 @@ object cloudidentityMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Cloudidentity
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -65,8 +64,7 @@ object cloudidentityMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -108,8 +106,7 @@ object cloudidentityMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -153,14 +150,10 @@ object cloudidentityMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudidentity(options: Options): Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudidentity]
-  @scala.inline
-  def cloudidentity(options: typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Options): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity]
+  inline def cloudidentity(options: Options): Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudidentity]
+  inline def cloudidentity(options: typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Options): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity]
   
-  @scala.inline
-  def cloudidentity_v1(version: v1): Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudidentity]
+  inline def cloudidentity_v1(version: v1): Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudidentity]
   
-  @scala.inline
-  def cloudidentity_v1beta1(version: v1beta1): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity]
+  inline def cloudidentity_v1beta1(version: v1beta1): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity]
 }

@@ -13,14 +13,12 @@ object tinyTestMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def add(
+    inline def add(
       description: String,
       func: js.Function1[/* test */ typings.meteor.tinyTestMod.ITinytestAssertions, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(description.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def addAsync(
+    inline def addAsync(
       description: String,
       func: js.Function1[/* test */ typings.meteor.tinyTestMod.ITinytestAssertions, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAsync")(description.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -32,17 +30,14 @@ object tinyTestMod {
   }
   object ILengthAble {
     
-    @scala.inline
-    def apply(length: Double): typings.meteor.tinyTestMod.ILengthAble = {
+    inline def apply(length: Double): typings.meteor.tinyTestMod.ILengthAble = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.meteor.tinyTestMod.ILengthAble]
     }
     
-    @scala.inline
-    implicit class ILengthAbleMutableBuilder[Self <: typings.meteor.tinyTestMod.ILengthAble] (val x: Self) extends AnyVal {
+    extension [Self <: typings.meteor.tinyTestMod.ILengthAble](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   

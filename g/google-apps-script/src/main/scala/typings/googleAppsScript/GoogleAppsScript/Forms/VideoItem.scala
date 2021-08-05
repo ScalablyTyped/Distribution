@@ -56,8 +56,7 @@ trait VideoItem extends StObject {
 }
 object VideoItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duplicate: () => VideoItem,
     getAlignment: () => Alignment,
     getHelpText: () => String,
@@ -76,46 +75,32 @@ object VideoItem {
     __obj.asInstanceOf[VideoItem]
   }
   
-  @scala.inline
-  implicit class VideoItemMutableBuilder[Self <: VideoItem] (val x: Self) extends AnyVal {
+  extension [Self <: VideoItem](x: Self) {
     
-    @scala.inline
-    def setDuplicate(value: () => VideoItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
+    inline def setDuplicate(value: () => VideoItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAlignment(value: () => Alignment): Self = StObject.set(x, "getAlignment", js.Any.fromFunction0(value))
+    inline def setGetAlignment(value: () => Alignment): Self = StObject.set(x, "getAlignment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
+    inline def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Integer): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+    inline def setGetIndex(value: () => Integer): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => ItemType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Integer): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAlignment(value: Alignment => VideoItem): Self = StObject.set(x, "setAlignment", js.Any.fromFunction1(value))
+    inline def setSetAlignment(value: Alignment => VideoItem): Self = StObject.set(x, "setAlignment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHelpText(value: String => VideoItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    inline def setSetHelpText(value: String => VideoItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitle(value: String => VideoItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => VideoItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVideoUrl(value: String => VideoItem): Self = StObject.set(x, "setVideoUrl", js.Any.fromFunction1(value))
+    inline def setSetVideoUrl(value: String => VideoItem): Self = StObject.set(x, "setVideoUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWidth(value: Integer => VideoItem): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: Integer => VideoItem): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
   }
 }

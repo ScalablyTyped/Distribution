@@ -22,8 +22,7 @@ trait FilterDialog
 }
 object FilterDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDefault: () => Unit,
     createWithQuery: (XSingleSelectQueryComposer, XRowSet, XWindow) => Unit,
@@ -36,13 +35,10 @@ object FilterDialog {
     __obj.asInstanceOf[FilterDialog]
   }
   
-  @scala.inline
-  implicit class FilterDialogMutableBuilder[Self <: FilterDialog] (val x: Self) extends AnyVal {
+  extension [Self <: FilterDialog](x: Self) {
     
-    @scala.inline
-    def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+    inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithQuery(value: (XSingleSelectQueryComposer, XRowSet, XWindow) => Unit): Self = StObject.set(x, "createWithQuery", js.Any.fromFunction3(value))
+    inline def setCreateWithQuery(value: (XSingleSelectQueryComposer, XRowSet, XWindow) => Unit): Self = StObject.set(x, "createWithQuery", js.Any.fromFunction3(value))
   }
 }

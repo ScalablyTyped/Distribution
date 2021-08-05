@@ -25,8 +25,7 @@ object rootErrorBoundaryMod {
       * Test this by adding `throw new Error('example')` to your root component
       * when the AppLoading component is rendered.
       */
-    @scala.inline
-    def getDerivedStateFromError(_error: Error): typings.expo.anon.Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(_error.asInstanceOf[js.Any]).asInstanceOf[typings.expo.anon.Error | Null]
+    inline def getDerivedStateFromError(_error: Error): typings.expo.anon.Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(_error.asInstanceOf[js.Any]).asInstanceOf[typings.expo.anon.Error | Null]
   }
   
   trait Props extends StObject {
@@ -35,20 +34,16 @@ object rootErrorBoundaryMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -70,20 +65,16 @@ object rootErrorBoundaryMod {
   }
   object State {
     
-    @scala.inline
-    def apply(): State = {
+    inline def apply(): State = {
       val __obj = js.Dynamic.literal(error = null)
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
     }
   }
 }

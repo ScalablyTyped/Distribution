@@ -12,19 +12,15 @@ trait TreeProperties
 }
 object TreeProperties {
   
-  @scala.inline
-  def apply(): TreeProperties = {
+  inline def apply(): TreeProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeProperties]
   }
   
-  @scala.inline
-  implicit class TreePropertiesMutableBuilder[Self <: TreeProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TreeProperties](x: Self) {
     
-    @scala.inline
-    def setWithCheckbox(value: Boolean): Self = StObject.set(x, "withCheckbox", value.asInstanceOf[js.Any])
+    inline def setWithCheckbox(value: Boolean): Self = StObject.set(x, "withCheckbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCheckboxUndefined: Self = StObject.set(x, "withCheckbox", js.undefined)
+    inline def setWithCheckboxUndefined: Self = StObject.set(x, "withCheckbox", js.undefined)
   }
 }

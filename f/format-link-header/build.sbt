@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "format-link-header"
-version := "2.1-dt-20191115Z-12c81d"
+version := "2.1-dt-20191115Z-18db1f"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

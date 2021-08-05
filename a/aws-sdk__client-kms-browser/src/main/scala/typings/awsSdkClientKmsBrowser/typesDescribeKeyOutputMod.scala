@@ -26,23 +26,18 @@ object typesDescribeKeyOutputMod {
   }
   object DescribeKeyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DescribeKeyOutput = {
+    inline def apply($metadata: ResponseMetadata): DescribeKeyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeKeyOutput]
     }
     
-    @scala.inline
-    implicit class DescribeKeyOutputMutableBuilder[Self <: DescribeKeyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeKeyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyMetadata(value: UnmarshalledKeyMetadata): Self = StObject.set(x, "KeyMetadata", value.asInstanceOf[js.Any])
+      inline def setKeyMetadata(value: UnmarshalledKeyMetadata): Self = StObject.set(x, "KeyMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyMetadataUndefined: Self = StObject.set(x, "KeyMetadata", js.undefined)
+      inline def setKeyMetadataUndefined: Self = StObject.set(x, "KeyMetadata", js.undefined)
     }
   }
 }

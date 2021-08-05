@@ -18,28 +18,21 @@ trait UsageLimitList extends StObject {
 }
 object UsageLimitList {
   
-  @scala.inline
-  def apply(): UsageLimitList = {
+  inline def apply(): UsageLimitList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageLimitList]
   }
   
-  @scala.inline
-  implicit class UsageLimitListMutableBuilder[Self <: UsageLimitList] (val x: Self) extends AnyVal {
+  extension [Self <: UsageLimitList](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setUsageLimits(value: UsageLimits): Self = StObject.set(x, "UsageLimits", value.asInstanceOf[js.Any])
+    inline def setUsageLimits(value: UsageLimits): Self = StObject.set(x, "UsageLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageLimitsUndefined: Self = StObject.set(x, "UsageLimits", js.undefined)
+    inline def setUsageLimitsUndefined: Self = StObject.set(x, "UsageLimits", js.undefined)
     
-    @scala.inline
-    def setUsageLimitsVarargs(value: UsageLimit*): Self = StObject.set(x, "UsageLimits", js.Array(value :_*))
+    inline def setUsageLimitsVarargs(value: UsageLimit*): Self = StObject.set(x, "UsageLimits", js.Array(value :_*))
   }
 }

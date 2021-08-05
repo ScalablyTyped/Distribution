@@ -14,25 +14,19 @@ trait PsbtGlobal
 }
 object PsbtGlobal {
   
-  @scala.inline
-  def apply(unsignedTx: Transaction): PsbtGlobal = {
+  inline def apply(unsignedTx: Transaction): PsbtGlobal = {
     val __obj = js.Dynamic.literal(unsignedTx = unsignedTx.asInstanceOf[js.Any])
     __obj.asInstanceOf[PsbtGlobal]
   }
   
-  @scala.inline
-  implicit class PsbtGlobalMutableBuilder[Self <: PsbtGlobal] (val x: Self) extends AnyVal {
+  extension [Self <: PsbtGlobal](x: Self) {
     
-    @scala.inline
-    def setUnknownKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "unknownKeyVals", value.asInstanceOf[js.Any])
+    inline def setUnknownKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "unknownKeyVals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownKeyValsUndefined: Self = StObject.set(x, "unknownKeyVals", js.undefined)
+    inline def setUnknownKeyValsUndefined: Self = StObject.set(x, "unknownKeyVals", js.undefined)
     
-    @scala.inline
-    def setUnknownKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "unknownKeyVals", js.Array(value :_*))
+    inline def setUnknownKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "unknownKeyVals", js.Array(value :_*))
     
-    @scala.inline
-    def setUnsignedTx(value: Transaction): Self = StObject.set(x, "unsignedTx", value.asInstanceOf[js.Any])
+    inline def setUnsignedTx(value: Transaction): Self = StObject.set(x, "unsignedTx", value.asInstanceOf[js.Any])
   }
 }

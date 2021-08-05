@@ -41,8 +41,7 @@ object Microsoft {
       @JSGlobal("Microsoft.VideoAdvertising.Extensions.defaultUserAgent")
       @js.native
       def defaultUserAgent: String = js.native
-      @scala.inline
-      def defaultUserAgent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultUserAgent")(x.asInstanceOf[js.Any])
+      inline def defaultUserAgent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultUserAgent")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Microsoft.VideoAdvertising.VastAdPayloadHandler")
@@ -60,8 +59,7 @@ object Microsoft {
       @JSGlobal("Microsoft.VideoAdvertising.VastAdPayloadHandler.adType")
       @js.native
       def adType: String = js.native
-      @scala.inline
-      def adType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adType")(x.asInstanceOf[js.Any])
+      inline def adType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adType")(x.asInstanceOf[js.Any])
     }
   }
 }

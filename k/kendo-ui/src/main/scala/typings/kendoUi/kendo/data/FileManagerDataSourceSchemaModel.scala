@@ -12,19 +12,15 @@ trait FileManagerDataSourceSchemaModel
 }
 object FileManagerDataSourceSchemaModel {
   
-  @scala.inline
-  def apply(): FileManagerDataSourceSchemaModel = {
+  inline def apply(): FileManagerDataSourceSchemaModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerDataSourceSchemaModel]
   }
   
-  @scala.inline
-  implicit class FileManagerDataSourceSchemaModelMutableBuilder[Self <: FileManagerDataSourceSchemaModel] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerDataSourceSchemaModel](x: Self) {
     
-    @scala.inline
-    def setIsDirectory(value: js.Any): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+    inline def setIsDirectory(value: js.Any): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
+    inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
   }
 }

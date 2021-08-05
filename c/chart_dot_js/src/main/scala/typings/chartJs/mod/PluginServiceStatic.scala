@@ -12,8 +12,7 @@ trait PluginServiceStatic extends StObject {
 }
 object PluginServiceStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     register: PluginServiceGlobalRegistration & PluginServiceRegistrationOptions => Unit,
     unregister: PluginServiceGlobalRegistration & PluginServiceRegistrationOptions => Unit
   ): PluginServiceStatic = {
@@ -21,13 +20,10 @@ object PluginServiceStatic {
     __obj.asInstanceOf[PluginServiceStatic]
   }
   
-  @scala.inline
-  implicit class PluginServiceStaticMutableBuilder[Self <: PluginServiceStatic] (val x: Self) extends AnyVal {
+  extension [Self <: PluginServiceStatic](x: Self) {
     
-    @scala.inline
-    def setRegister(value: PluginServiceGlobalRegistration & PluginServiceRegistrationOptions => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: PluginServiceGlobalRegistration & PluginServiceRegistrationOptions => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnregister(value: PluginServiceGlobalRegistration & PluginServiceRegistrationOptions => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
+    inline def setUnregister(value: PluginServiceGlobalRegistration & PluginServiceRegistrationOptions => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
   }
 }

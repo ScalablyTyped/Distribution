@@ -15,25 +15,19 @@ trait DeleteCredentials extends StObject {
 }
 object DeleteCredentials {
   
-  @scala.inline
-  def apply(): DeleteCredentials = {
+  inline def apply(): DeleteCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteCredentials]
   }
   
-  @scala.inline
-  implicit class DeleteCredentialsMutableBuilder[Self <: DeleteCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCredentials](x: Self) {
     
-    @scala.inline
-    def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
+    inline def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredential_idUndefined: Self = StObject.set(x, "credential_id", js.undefined)
+    inline def setCredential_idUndefined: Self = StObject.set(x, "credential_id", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

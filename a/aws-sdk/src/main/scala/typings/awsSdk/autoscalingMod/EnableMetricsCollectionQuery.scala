@@ -23,28 +23,21 @@ trait EnableMetricsCollectionQuery extends StObject {
 }
 object EnableMetricsCollectionQuery {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName, Granularity: XmlStringMaxLen255): EnableMetricsCollectionQuery = {
+  inline def apply(AutoScalingGroupName: ResourceName, Granularity: XmlStringMaxLen255): EnableMetricsCollectionQuery = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], Granularity = Granularity.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableMetricsCollectionQuery]
   }
   
-  @scala.inline
-  implicit class EnableMetricsCollectionQueryMutableBuilder[Self <: EnableMetricsCollectionQuery] (val x: Self) extends AnyVal {
+  extension [Self <: EnableMetricsCollectionQuery](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularity(value: XmlStringMaxLen255): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: XmlStringMaxLen255): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
   }
 }

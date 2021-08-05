@@ -23,25 +23,19 @@ trait SchemaTlsContext extends StObject {
 }
 object SchemaTlsContext {
   
-  @scala.inline
-  def apply(): SchemaTlsContext = {
+  inline def apply(): SchemaTlsContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTlsContext]
   }
   
-  @scala.inline
-  implicit class SchemaTlsContextMutableBuilder[Self <: SchemaTlsContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTlsContext](x: Self) {
     
-    @scala.inline
-    def setCertificateContext(value: SchemaTlsCertificateContext): Self = StObject.set(x, "certificateContext", value.asInstanceOf[js.Any])
+    inline def setCertificateContext(value: SchemaTlsCertificateContext): Self = StObject.set(x, "certificateContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateContextUndefined: Self = StObject.set(x, "certificateContext", js.undefined)
+    inline def setCertificateContextUndefined: Self = StObject.set(x, "certificateContext", js.undefined)
     
-    @scala.inline
-    def setValidationContext(value: SchemaTlsValidationContext): Self = StObject.set(x, "validationContext", value.asInstanceOf[js.Any])
+    inline def setValidationContext(value: SchemaTlsValidationContext): Self = StObject.set(x, "validationContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationContextUndefined: Self = StObject.set(x, "validationContext", js.undefined)
+    inline def setValidationContextUndefined: Self = StObject.set(x, "validationContext", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait FeatureReductionSelectionProperties extends StObject {
 }
 object FeatureReductionSelectionProperties {
   
-  @scala.inline
-  def apply(): FeatureReductionSelectionProperties = {
+  inline def apply(): FeatureReductionSelectionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureReductionSelectionProperties]
   }
   
-  @scala.inline
-  implicit class FeatureReductionSelectionPropertiesMutableBuilder[Self <: FeatureReductionSelectionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureReductionSelectionProperties](x: Self) {
     
-    @scala.inline
-    def setType(value: selection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: selection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

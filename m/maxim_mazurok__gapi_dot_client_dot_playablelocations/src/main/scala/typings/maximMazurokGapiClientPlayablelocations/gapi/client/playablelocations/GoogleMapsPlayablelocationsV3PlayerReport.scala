@@ -23,40 +23,29 @@ trait GoogleMapsPlayablelocationsV3PlayerReport extends StObject {
 }
 object GoogleMapsPlayablelocationsV3PlayerReport {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3PlayerReport = {
+  inline def apply(): GoogleMapsPlayablelocationsV3PlayerReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3PlayerReport]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3PlayerReportMutableBuilder[Self <: GoogleMapsPlayablelocationsV3PlayerReport] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3PlayerReport](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setLocationName(value: String): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
+    inline def setLocationName(value: String): Self = StObject.set(x, "locationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
+    inline def setLocationNameUndefined: Self = StObject.set(x, "locationName", js.undefined)
     
-    @scala.inline
-    def setReasonDetails(value: String): Self = StObject.set(x, "reasonDetails", value.asInstanceOf[js.Any])
+    inline def setReasonDetails(value: String): Self = StObject.set(x, "reasonDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonDetailsUndefined: Self = StObject.set(x, "reasonDetails", js.undefined)
+    inline def setReasonDetailsUndefined: Self = StObject.set(x, "reasonDetails", js.undefined)
     
-    @scala.inline
-    def setReasons(value: js.Array[String]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
+    inline def setReasons(value: js.Array[String]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
+    inline def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
     
-    @scala.inline
-    def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
   }
 }

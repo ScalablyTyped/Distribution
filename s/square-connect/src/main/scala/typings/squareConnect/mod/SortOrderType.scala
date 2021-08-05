@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SortOrderType extends StObject
 object SortOrderType {
   
-  @scala.inline
-  def ASC: typings.squareConnect.squareConnectStrings.ASC = "ASC".asInstanceOf[typings.squareConnect.squareConnectStrings.ASC]
+  inline def ASC: typings.squareConnect.squareConnectStrings.ASC = "ASC".asInstanceOf[typings.squareConnect.squareConnectStrings.ASC]
   
-  @scala.inline
-  def DESC: typings.squareConnect.squareConnectStrings.DESC = "DESC".asInstanceOf[typings.squareConnect.squareConnectStrings.DESC]
+  inline def DESC: typings.squareConnect.squareConnectStrings.DESC = "DESC".asInstanceOf[typings.squareConnect.squareConnectStrings.DESC]
 }

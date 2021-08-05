@@ -15,19 +15,15 @@ trait SocketActivityTriggerDetails extends StObject {
 }
 object SocketActivityTriggerDetails {
   
-  @scala.inline
-  def apply(reason: SocketActivityTriggerReason, socketInformation: SocketActivityInformation): SocketActivityTriggerDetails = {
+  inline def apply(reason: SocketActivityTriggerReason, socketInformation: SocketActivityInformation): SocketActivityTriggerDetails = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], socketInformation = socketInformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketActivityTriggerDetails]
   }
   
-  @scala.inline
-  implicit class SocketActivityTriggerDetailsMutableBuilder[Self <: SocketActivityTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SocketActivityTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setReason(value: SocketActivityTriggerReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: SocketActivityTriggerReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketInformation(value: SocketActivityInformation): Self = StObject.set(x, "socketInformation", value.asInstanceOf[js.Any])
+    inline def setSocketInformation(value: SocketActivityInformation): Self = StObject.set(x, "socketInformation", value.asInstanceOf[js.Any])
   }
 }

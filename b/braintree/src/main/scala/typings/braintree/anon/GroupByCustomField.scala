@@ -12,22 +12,17 @@ trait GroupByCustomField extends StObject {
 }
 object GroupByCustomField {
   
-  @scala.inline
-  def apply(settlementDate: String): GroupByCustomField = {
+  inline def apply(settlementDate: String): GroupByCustomField = {
     val __obj = js.Dynamic.literal(settlementDate = settlementDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupByCustomField]
   }
   
-  @scala.inline
-  implicit class GroupByCustomFieldMutableBuilder[Self <: GroupByCustomField] (val x: Self) extends AnyVal {
+  extension [Self <: GroupByCustomField](x: Self) {
     
-    @scala.inline
-    def setGroupByCustomField(value: String): Self = StObject.set(x, "groupByCustomField", value.asInstanceOf[js.Any])
+    inline def setGroupByCustomField(value: String): Self = StObject.set(x, "groupByCustomField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByCustomFieldUndefined: Self = StObject.set(x, "groupByCustomField", js.undefined)
+    inline def setGroupByCustomFieldUndefined: Self = StObject.set(x, "groupByCustomField", js.undefined)
     
-    @scala.inline
-    def setSettlementDate(value: String): Self = StObject.set(x, "settlementDate", value.asInstanceOf[js.Any])
+    inline def setSettlementDate(value: String): Self = StObject.set(x, "settlementDate", value.asInstanceOf[js.Any])
   }
 }

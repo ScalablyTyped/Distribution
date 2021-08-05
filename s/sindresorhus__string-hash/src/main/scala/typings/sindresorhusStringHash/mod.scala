@@ -17,8 +17,7 @@ object mod {
   	//=> 2868248295
   	```
   	*/
-  @scala.inline
-  def apply(string: String): Double = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(string: String): Double = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("@sindresorhus/string-hash", JSImport.Namespace)
   @js.native
@@ -35,8 +34,6 @@ object mod {
   	//=> 13487074350300261116944693128525960095n
   	```
   	*/
-  @scala.inline
-  def bigInt(string: String): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
-  @scala.inline
-  def bigInt(string: String, options: Options): js.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.BigInt]
+  inline def bigInt(string: String): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
+  inline def bigInt(string: String, options: Options): js.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.BigInt]
 }

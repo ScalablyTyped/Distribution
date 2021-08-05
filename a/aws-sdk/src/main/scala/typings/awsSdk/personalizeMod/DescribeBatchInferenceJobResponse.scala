@@ -13,19 +13,15 @@ trait DescribeBatchInferenceJobResponse extends StObject {
 }
 object DescribeBatchInferenceJobResponse {
   
-  @scala.inline
-  def apply(): DescribeBatchInferenceJobResponse = {
+  inline def apply(): DescribeBatchInferenceJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBatchInferenceJobResponse]
   }
   
-  @scala.inline
-  implicit class DescribeBatchInferenceJobResponseMutableBuilder[Self <: DescribeBatchInferenceJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBatchInferenceJobResponse](x: Self) {
     
-    @scala.inline
-    def setBatchInferenceJob(value: BatchInferenceJob): Self = StObject.set(x, "batchInferenceJob", value.asInstanceOf[js.Any])
+    inline def setBatchInferenceJob(value: BatchInferenceJob): Self = StObject.set(x, "batchInferenceJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchInferenceJobUndefined: Self = StObject.set(x, "batchInferenceJob", js.undefined)
+    inline def setBatchInferenceJobUndefined: Self = StObject.set(x, "batchInferenceJob", js.undefined)
   }
 }

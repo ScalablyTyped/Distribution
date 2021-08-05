@@ -46,49 +46,35 @@ trait ShareVideoContent
 }
 object ShareVideoContent {
   
-  @scala.inline
-  def apply(video: ShareVideo): ShareVideoContent = {
+  inline def apply(video: ShareVideo): ShareVideoContent = {
     val __obj = js.Dynamic.literal(contentType = "video", video = video.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareVideoContent]
   }
   
-  @scala.inline
-  implicit class ShareVideoContentMutableBuilder[Self <: ShareVideoContent] (val x: Self) extends AnyVal {
+  extension [Self <: ShareVideoContent](x: Self) {
     
-    @scala.inline
-    def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
+    inline def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
+    inline def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
     
-    @scala.inline
-    def setContentDescription(value: String): Self = StObject.set(x, "contentDescription", value.asInstanceOf[js.Any])
+    inline def setContentDescription(value: String): Self = StObject.set(x, "contentDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDescriptionUndefined: Self = StObject.set(x, "contentDescription", js.undefined)
+    inline def setContentDescriptionUndefined: Self = StObject.set(x, "contentDescription", js.undefined)
     
-    @scala.inline
-    def setContentTitle(value: String): Self = StObject.set(x, "contentTitle", value.asInstanceOf[js.Any])
+    inline def setContentTitle(value: String): Self = StObject.set(x, "contentTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTitleUndefined: Self = StObject.set(x, "contentTitle", js.undefined)
+    inline def setContentTitleUndefined: Self = StObject.set(x, "contentTitle", js.undefined)
     
-    @scala.inline
-    def setContentType(value: video): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: video): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
-    @scala.inline
-    def setPreviewPhoto(value: SharePhoto): Self = StObject.set(x, "previewPhoto", value.asInstanceOf[js.Any])
+    inline def setPreviewPhoto(value: SharePhoto): Self = StObject.set(x, "previewPhoto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewPhotoUndefined: Self = StObject.set(x, "previewPhoto", js.undefined)
+    inline def setPreviewPhotoUndefined: Self = StObject.set(x, "previewPhoto", js.undefined)
     
-    @scala.inline
-    def setVideo(value: ShareVideo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: ShareVideo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait ParametersUsersUpdateAuthenticatedEndpoint extends StObject {
 }
 object ParametersUsersUpdateAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersUpdateAuthenticatedEndpoint,
     request: UsersUpdateAuthenticatedRequestOptions,
     response: OctokitResponse[UsersUpdateAuthenticatedResponseData]
@@ -28,16 +27,12 @@ object ParametersUsersUpdateAuthenticatedEndpoint {
     __obj.asInstanceOf[ParametersUsersUpdateAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersUpdateAuthenticatedEndpointMutableBuilder[Self <: ParametersUsersUpdateAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersUpdateAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersUpdateAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersUpdateAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: UsersUpdateAuthenticatedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: UsersUpdateAuthenticatedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersUpdateAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersUpdateAuthenticatedResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

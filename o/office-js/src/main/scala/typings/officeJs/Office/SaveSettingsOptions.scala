@@ -21,25 +21,19 @@ trait SaveSettingsOptions extends StObject {
 }
 object SaveSettingsOptions {
   
-  @scala.inline
-  def apply(): SaveSettingsOptions = {
+  inline def apply(): SaveSettingsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaveSettingsOptions]
   }
   
-  @scala.inline
-  implicit class SaveSettingsOptionsMutableBuilder[Self <: SaveSettingsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveSettingsOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setOverwriteIfStale(value: Boolean): Self = StObject.set(x, "overwriteIfStale", value.asInstanceOf[js.Any])
+    inline def setOverwriteIfStale(value: Boolean): Self = StObject.set(x, "overwriteIfStale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteIfStaleUndefined: Self = StObject.set(x, "overwriteIfStale", js.undefined)
+    inline def setOverwriteIfStaleUndefined: Self = StObject.set(x, "overwriteIfStale", js.undefined)
   }
 }

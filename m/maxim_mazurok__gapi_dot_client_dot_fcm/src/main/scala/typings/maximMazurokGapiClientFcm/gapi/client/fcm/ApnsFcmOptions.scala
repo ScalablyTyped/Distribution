@@ -14,25 +14,19 @@ trait ApnsFcmOptions extends StObject {
 }
 object ApnsFcmOptions {
   
-  @scala.inline
-  def apply(): ApnsFcmOptions = {
+  inline def apply(): ApnsFcmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApnsFcmOptions]
   }
   
-  @scala.inline
-  implicit class ApnsFcmOptionsMutableBuilder[Self <: ApnsFcmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApnsFcmOptions](x: Self) {
     
-    @scala.inline
-    def setAnalyticsLabel(value: String): Self = StObject.set(x, "analyticsLabel", value.asInstanceOf[js.Any])
+    inline def setAnalyticsLabel(value: String): Self = StObject.set(x, "analyticsLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsLabelUndefined: Self = StObject.set(x, "analyticsLabel", js.undefined)
+    inline def setAnalyticsLabelUndefined: Self = StObject.set(x, "analyticsLabel", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

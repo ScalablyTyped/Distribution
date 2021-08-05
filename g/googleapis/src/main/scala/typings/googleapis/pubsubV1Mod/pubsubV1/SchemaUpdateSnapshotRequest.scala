@@ -22,25 +22,19 @@ trait SchemaUpdateSnapshotRequest extends StObject {
 }
 object SchemaUpdateSnapshotRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateSnapshotRequest = {
+  inline def apply(): SchemaUpdateSnapshotRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateSnapshotRequestMutableBuilder[Self <: SchemaUpdateSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setSnapshot(value: SchemaSnapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: SchemaSnapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

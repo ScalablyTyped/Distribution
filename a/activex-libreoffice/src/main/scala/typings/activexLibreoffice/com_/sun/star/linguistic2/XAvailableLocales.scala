@@ -23,8 +23,7 @@ trait XAvailableLocales
 }
 object XAvailableLocales {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getAvailableLocales: String => SafeArray[Locale],
     queryInterface: `type` => js.Any,
@@ -34,10 +33,8 @@ object XAvailableLocales {
     __obj.asInstanceOf[XAvailableLocales]
   }
   
-  @scala.inline
-  implicit class XAvailableLocalesMutableBuilder[Self <: XAvailableLocales] (val x: Self) extends AnyVal {
+  extension [Self <: XAvailableLocales](x: Self) {
     
-    @scala.inline
-    def setGetAvailableLocales(value: String => SafeArray[Locale]): Self = StObject.set(x, "getAvailableLocales", js.Any.fromFunction1(value))
+    inline def setGetAvailableLocales(value: String => SafeArray[Locale]): Self = StObject.set(x, "getAvailableLocales", js.Any.fromFunction1(value))
   }
 }

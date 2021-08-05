@@ -12,8 +12,7 @@ trait PaymentMethodNonceGateway extends StObject {
 }
 object PaymentMethodNonceGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: String => js.Promise[ValidatedResponse[PaymentMethodNonce]],
     find: String => js.Promise[PaymentMethodNonce]
   ): PaymentMethodNonceGateway = {
@@ -21,13 +20,10 @@ object PaymentMethodNonceGateway {
     __obj.asInstanceOf[PaymentMethodNonceGateway]
   }
   
-  @scala.inline
-  implicit class PaymentMethodNonceGatewayMutableBuilder[Self <: PaymentMethodNonceGateway] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethodNonceGateway](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFind(value: String => js.Promise[PaymentMethodNonce]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: String => js.Promise[PaymentMethodNonce]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
   }
 }

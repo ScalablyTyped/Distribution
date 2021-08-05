@@ -10,8 +10,7 @@ trait AsyncZlibOptions
      with AsyncOptions
 object AsyncZlibOptions {
   
-  @scala.inline
-  def apply(): AsyncZlibOptions = {
+  inline def apply(): AsyncZlibOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncZlibOptions]
   }

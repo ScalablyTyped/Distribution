@@ -10,16 +10,13 @@ trait SavedFeedResponseItemsItem extends StObject {
 }
 object SavedFeedResponseItemsItem {
   
-  @scala.inline
-  def apply(media: SavedFeedResponseMedia): SavedFeedResponseItemsItem = {
+  inline def apply(media: SavedFeedResponseMedia): SavedFeedResponseItemsItem = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseItemsItem]
   }
   
-  @scala.inline
-  implicit class SavedFeedResponseItemsItemMutableBuilder[Self <: SavedFeedResponseItemsItem] (val x: Self) extends AnyVal {
+  extension [Self <: SavedFeedResponseItemsItem](x: Self) {
     
-    @scala.inline
-    def setMedia(value: SavedFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: SavedFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }

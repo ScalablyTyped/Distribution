@@ -125,65 +125,65 @@ object Formatting {
       formattingRequestKind: FormattingRequestKind
     ) = this()
     
-    /* CompleteClass */
-    /* private */ override def RecordRuleEdits(rule: js.Any, t1: js.Any, t2: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def RecordRuleEdits(rule: js.Any, t1: js.Any, t2: js.Any): js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _edits: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _indentationNodeContextPool: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _lastTriviaWasNewLine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _parent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _position: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _snapshot: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _textSpan: js.Any = js.native
     
     /* CompleteClass */
     override def edits(): js.Array[typings.typescriptServices.TypeScript.Services.Formatting.TextEditInfo] = js.native
     
-    /* CompleteClass */
-    /* private */ override def findCommonParents(parent1: js.Any, parent2: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def findCommonParents(parent1: js.Any, parent2: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def forceIndentNextToken(tokenStart: Double): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def forceSkipIndentingNextToken(tokenStart: Double): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def formatPair(t1: js.Any, t1Parent: js.Any, t2: js.Any, t2Parent: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def formatPair(t1: js.Any, t1Parent: js.Any, t2: js.Any, t2Parent: js.Any): js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var formattingContext: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var formattingRequestKind: js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getLineNumber(span: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getLineNumber(span: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit = js.native
@@ -200,23 +200,23 @@ object Formatting {
     /* CompleteClass */
     override def position(): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var previousTokenParent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var previousTokenSpan: js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def processToken(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def processToken(token: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def processTrivia(triviaList: js.Any, fullStart: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def processTrivia(triviaList: js.Any, fullStart: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def recordEdit(position: Double, length: Double, replaceWith: String): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForMultiLineComment(
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForMultiLineComment(
       trivia: js.Any,
       fullStart: js.Any,
       indentationString: js.Any,
@@ -224,31 +224,31 @@ object Formatting {
       firstLineAlreadyIndented: js.Any
     ): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForSegment(
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForSegment(
       segment: js.Any,
       fullStart: js.Any,
       indentationColumns: js.Any,
       whiteSpaceColumnsInFirstSegment: js.Any
     ): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForSingleLineOrSkippedText(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForSingleLineOrSkippedText(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForToken(token: js.Any, indentationString: js.Any, commentIndentationString: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForToken(token: js.Any, indentationString: js.Any, commentIndentationString: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForWhitespace(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForWhitespace(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rulesProvider: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var scriptHasErrors: js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def snapshot(): ITextSnapshot = js.native
@@ -256,11 +256,11 @@ object Formatting {
     /* CompleteClass */
     override def textSpan(): TextSpan = js.native
     
-    /* CompleteClass */
-    /* private */ override def trimWhitespace(line: js.Any, token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def trimWhitespace(line: js.Any, token: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def trimWhitespaceInLineRange(startLine: js.Any, endLine: js.Any, token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def trimWhitespaceInLineRange(startLine: js.Any, endLine: js.Any, token: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def visitArgumentList(node: ArgumentListSyntax): js.Any = js.native
@@ -448,8 +448,8 @@ object Formatting {
     /* CompleteClass */
     override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def visitOptionalToken(token: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def visitParameter(node: ParameterSyntax): js.Any = js.native
@@ -551,8 +551,7 @@ object Formatting {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getEdits(
+    inline def getEdits(
       textSpan: TextSpan,
       sourceUnit: SourceUnitSyntax,
       options: FormattingOptions,
@@ -594,10 +593,10 @@ object Formatting {
     /* CompleteClass */
     var contextNode: typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContext = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var contextNodeAllOnSameLine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var contextNodeBlockIsOnOneLine: js.Any = js.native
     
     /* CompleteClass */
@@ -609,10 +608,10 @@ object Formatting {
     /* CompleteClass */
     var formattingRequestKind: FormattingRequestKind = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var nextNodeAllOnSameLine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var nextNodeBlockIsOnOneLine: js.Any = js.native
     
     /* CompleteClass */
@@ -621,10 +620,10 @@ object Formatting {
     /* CompleteClass */
     var nextTokenSpan: typings.typescriptServices.TypeScript.Services.Formatting.TokenSpan = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var snapshot: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tokensAreOnSameLine: js.Any = js.native
     
     /* CompleteClass */
@@ -667,19 +666,19 @@ object Formatting {
     /* CompleteClass */
     override def formatSelection(minChar: Double, limChar: Double): js.Array[typings.typescriptServices.TypeScript.Services.TextEdit] = js.native
     
-    /* CompleteClass */
-    /* private */ override def formatSpan(span: js.Any, formattingRequestKind: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def formatSpan(span: js.Any, formattingRequestKind: js.Any): js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var options: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rulesProvider: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var snapshot: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var syntaxTree: js.Any = js.native
   }
   
@@ -718,25 +717,25 @@ object Formatting {
       childIndentationAmountDelta: Double
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _childIndentationAmountDelta: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _depth: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _fullStart: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _hasSkippedOrMissingTokenChild: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _indentationAmount: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _node: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _parent: js.Any = js.native
     
     /* CompleteClass */
@@ -804,41 +803,41 @@ object Formatting {
       options: FormattingOptions
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _indentationNodeContextPool: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _lastTriviaWasNewLine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _parent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _position: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _snapshot: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _textSpan: js.Any = js.native
     
     /* CompleteClass */
     override def forceIndentNextToken(tokenStart: Double): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def forceSkipIndentingNextToken(tokenStart: Double): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit = js.native
@@ -855,8 +854,8 @@ object Formatting {
     /* CompleteClass */
     override def position(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def snapshot(): ITextSnapshot = js.native
@@ -1050,8 +1049,8 @@ object Formatting {
     /* CompleteClass */
     override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def visitOptionalToken(token: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def visitParameter(node: ParameterSyntax): js.Any = js.native
@@ -1160,25 +1159,25 @@ object Formatting {
       options: FormattingOptions
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _edits: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _indentationNodeContextPool: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _lastTriviaWasNewLine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _parent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _position: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _snapshot: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _textSpan: js.Any = js.native
     
     /* CompleteClass */
@@ -1187,20 +1186,20 @@ object Formatting {
     /* CompleteClass */
     override def forceIndentNextToken(tokenStart: Double): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def forceSkipIndentingNextToken(tokenStart: Double): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit = js.native
@@ -1220,8 +1219,8 @@ object Formatting {
     /* CompleteClass */
     override def recordEdit(position: Double, length: Double, replaceWith: String): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForMultiLineComment(
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForMultiLineComment(
       trivia: js.Any,
       fullStart: js.Any,
       indentationString: js.Any,
@@ -1229,25 +1228,25 @@ object Formatting {
       firstLineAlreadyIndented: js.Any
     ): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForSegment(
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForSegment(
       segment: js.Any,
       fullStart: js.Any,
       indentationColumns: js.Any,
       whiteSpaceColumnsInFirstSegment: js.Any
     ): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForSingleLineOrSkippedText(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForSingleLineOrSkippedText(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForToken(token: js.Any, indentationString: js.Any, commentIndentationString: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForToken(token: js.Any, indentationString: js.Any, commentIndentationString: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def recordIndentationEditsForWhitespace(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def recordIndentationEditsForWhitespace(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def snapshot(): ITextSnapshot = js.native
@@ -1441,8 +1440,8 @@ object Formatting {
     /* CompleteClass */
     override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def visitOptionalToken(token: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def visitParameter(node: ParameterSyntax): js.Any = js.native
@@ -1599,20 +1598,16 @@ object Formatting {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create1(left: SyntaxKind, right: SyntaxKind): typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor]
+    inline def create1(left: SyntaxKind, right: SyntaxKind): typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor]
     
     /* static member */
-    @scala.inline
-    def create2(left: TokenRange, right: SyntaxKind): typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("create2")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor]
+    inline def create2(left: TokenRange, right: SyntaxKind): typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("create2")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor]
     
     /* static member */
-    @scala.inline
-    def create3(left: SyntaxKind, right: TokenRange): typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("create3")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor]
+    inline def create3(left: SyntaxKind, right: TokenRange): typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("create3")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor]
     
     /* static member */
-    @scala.inline
-    def create4(left: TokenRange, right: TokenRange): typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("create4")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor]
+    inline def create4(left: TokenRange, right: TokenRange): typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("create4")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor]
   }
   
   @JSImport("typescript-services", "Services.Formatting.RuleFlags")
@@ -1646,12 +1641,10 @@ object Formatting {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create1(action: RuleAction): typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(action.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation]
+    inline def create1(action: RuleAction): typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(action.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation]
     
     /* static member */
-    @scala.inline
-    def create2(
+    inline def create2(
       context: typings.typescriptServices.TypeScript.Services.Formatting.RuleOperationContext,
       action: RuleAction
     ): typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation = (^.asInstanceOf[js.Dynamic].applyDynamic("create2")(context.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation]
@@ -1673,7 +1666,7 @@ object Formatting {
     /* CompleteClass */
     override def IsAny(): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var customContextChecks: js.Any = js.native
   }
   object RuleOperationContext {
@@ -1686,8 +1679,7 @@ object Formatting {
     @JSImport("typescript-services", "Services.Formatting.RuleOperationContext.Any")
     @js.native
     def Any: typings.typescriptServices.TypeScript.Services.Formatting.RuleOperationContext = js.native
-    @scala.inline
-    def Any_=(x: typings.typescriptServices.TypeScript.Services.Formatting.RuleOperationContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Any")(x.asInstanceOf[js.Any])
+    inline def Any_=(x: typings.typescriptServices.TypeScript.Services.Formatting.RuleOperationContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Any")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typescript-services", "Services.Formatting.Rules")
@@ -1970,112 +1962,85 @@ object Formatting {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def IsAfterCodeBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAfterCodeBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsAfterCodeBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAfterCodeBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsBeforeBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBeforeBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsBeforeBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBeforeBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsBeforeMultilineBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBeforeMultilineBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsBeforeMultilineBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBeforeMultilineBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsBinaryOpContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBinaryOpContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsBinaryOpContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBinaryOpContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsControlDeclContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsControlDeclContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsControlDeclContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsControlDeclContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsForContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsForContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsForContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsForContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsFunctionCallContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFunctionCallContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsFunctionCallContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFunctionCallContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsFunctionCallOrNewContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFunctionCallOrNewContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsFunctionCallOrNewContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFunctionCallOrNewContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsFunctionDeclContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFunctionDeclContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsFunctionDeclContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFunctionDeclContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsModuleDeclContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsModuleDeclContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsModuleDeclContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsModuleDeclContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsMultilineBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMultilineBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsMultilineBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMultilineBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsNewContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNewContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsNewContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNewContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsNotBinaryOpContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotBinaryOpContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsNotBinaryOpContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotBinaryOpContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsNotForContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotForContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsNotForContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotForContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsNotFormatOnEnter(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotFormatOnEnter")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsNotFormatOnEnter(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsNotFormatOnEnter")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsObjectContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsObjectContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsObjectContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsObjectContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsObjectTypeContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsObjectTypeContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsObjectTypeContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsObjectTypeContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsSameLineTokenContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSameLineTokenContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsSameLineTokenContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSameLineTokenContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsSameLineTokenOrBeforeMultilineBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSameLineTokenOrBeforeMultilineBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsSameLineTokenOrBeforeMultilineBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSameLineTokenOrBeforeMultilineBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsSingleLineBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSingleLineBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsSingleLineBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSingleLineBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsTypeArgumentOrParameter(tokenKind: SyntaxKind, parentKind: SyntaxKind): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsTypeArgumentOrParameter")(tokenKind.asInstanceOf[js.Any], parentKind.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def IsTypeArgumentOrParameter(tokenKind: SyntaxKind, parentKind: SyntaxKind): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsTypeArgumentOrParameter")(tokenKind.asInstanceOf[js.Any], parentKind.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsTypeArgumentOrParameterContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsTypeArgumentOrParameterContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsTypeArgumentOrParameterContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsTypeArgumentOrParameterContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsTypeScriptDeclWithBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsTypeScriptDeclWithBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsTypeScriptDeclWithBlockContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsTypeScriptDeclWithBlockContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def IsVoidOpContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsVoidOpContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsVoidOpContext(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsVoidOpContext")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def NodeIsBlockContext(node: typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("NodeIsBlockContext")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def NodeIsBlockContext(node: typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("NodeIsBlockContext")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def NodeIsTypeScriptDeclWithBlockContext(node: typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("NodeIsTypeScriptDeclWithBlockContext")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def NodeIsTypeScriptDeclWithBlockContext(node: typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("NodeIsTypeScriptDeclWithBlockContext")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("typescript-services", "Services.Formatting.RulesBucket")
@@ -2097,7 +2062,7 @@ object Formatting {
     /* CompleteClass */
     override def Rules(): js.Array[typings.typescriptServices.TypeScript.Services.Formatting.Rule] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rules: js.Any = js.native
   }
   
@@ -2113,7 +2078,7 @@ object Formatting {
     /* CompleteClass */
     override def IncreaseInsertionIndex(maskPosition: RulesPosition): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rulesInsertionIndexBitmap: js.Any = js.native
   }
   
@@ -2123,8 +2088,8 @@ object Formatting {
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.RulesMap {
     
-    /* CompleteClass */
-    /* private */ override def FillRule(rule: js.Any, rulesBucketConstructionStateList: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def FillRule(rule: js.Any, rulesBucketConstructionStateList: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def FillRules(
@@ -2137,8 +2102,8 @@ object Formatting {
     /* CompleteClass */
     override def GetRule(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): typings.typescriptServices.TypeScript.Services.Formatting.Rule = js.native
     
-    /* CompleteClass */
-    /* private */ override def GetRuleBucketIndex(row: js.Any, column: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def GetRuleBucketIndex(row: js.Any, column: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def Initialize(rules: js.Array[typings.typescriptServices.TypeScript.Services.Formatting.Rule]): js.Array[typings.typescriptServices.TypeScript.Services.Formatting.RulesBucket] = js.native
@@ -2156,8 +2121,7 @@ object Formatting {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(rules: js.Array[typings.typescriptServices.TypeScript.Services.Formatting.Rule]): typings.typescriptServices.TypeScript.Services.Formatting.RulesMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rules.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RulesMap]
+    inline def create(rules: js.Array[typings.typescriptServices.TypeScript.Services.Formatting.Rule]): typings.typescriptServices.TypeScript.Services.Formatting.RulesMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rules.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.RulesMap]
   }
   
   @JSImport("typescript-services", "Services.Formatting.RulesPosition")
@@ -2187,11 +2151,11 @@ object Formatting {
        with typings.typescriptServices.TypeScript.Services.Formatting.RulesProvider {
     def this(logger: ILogger) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var activeRules: js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def createActiveRules(options: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def createActiveRules(options: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def ensureUpToDate(options: typings.typescriptServices.TypeScript.Services.FormatCodeOptions): Unit = js.native
@@ -2205,16 +2169,16 @@ object Formatting {
     /* CompleteClass */
     override def getRulesMap(): typings.typescriptServices.TypeScript.Services.Formatting.RulesMap = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var globalRules: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var logger: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var options: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var rulesMap: js.Any = js.native
   }
   
@@ -2256,8 +2220,7 @@ object Formatting {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def AllTokens(): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = ^.asInstanceOf[js.Dynamic].applyDynamic("AllTokens")().asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
+      inline def AllTokens(): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = ^.asInstanceOf[js.Dynamic].applyDynamic("AllTokens")().asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.Any")
@@ -2268,116 +2231,97 @@ object Formatting {
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.AnyIncludingMultilineComments")
       @js.native
       def AnyIncludingMultilineComments: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def AnyIncludingMultilineComments_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnyIncludingMultilineComments")(x.asInstanceOf[js.Any])
+      inline def AnyIncludingMultilineComments_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnyIncludingMultilineComments")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def Any_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Any")(x.asInstanceOf[js.Any])
+      inline def Any_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Any")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.BinaryKeywordOperators")
       @js.native
       def BinaryKeywordOperators: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def BinaryKeywordOperators_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BinaryKeywordOperators")(x.asInstanceOf[js.Any])
+      inline def BinaryKeywordOperators_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BinaryKeywordOperators")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.BinaryOperators")
       @js.native
       def BinaryOperators: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def BinaryOperators_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BinaryOperators")(x.asInstanceOf[js.Any])
+      inline def BinaryOperators_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BinaryOperators")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.Comments")
       @js.native
       def Comments: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def Comments_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Comments")(x.asInstanceOf[js.Any])
+      inline def Comments_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Comments")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @scala.inline
-      def FromRange(f: SyntaxKind, to: SyntaxKind): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = (^.asInstanceOf[js.Dynamic].applyDynamic("FromRange")(f.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
-      @scala.inline
-      def FromRange(f: SyntaxKind, to: SyntaxKind, except: js.Array[SyntaxKind]): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = (^.asInstanceOf[js.Dynamic].applyDynamic("FromRange")(f.asInstanceOf[js.Any], to.asInstanceOf[js.Any], except.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
+      inline def FromRange(f: SyntaxKind, to: SyntaxKind): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = (^.asInstanceOf[js.Dynamic].applyDynamic("FromRange")(f.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
+      inline def FromRange(f: SyntaxKind, to: SyntaxKind, except: js.Array[SyntaxKind]): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = (^.asInstanceOf[js.Dynamic].applyDynamic("FromRange")(f.asInstanceOf[js.Any], to.asInstanceOf[js.Any], except.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
       
       /* static member */
-      @scala.inline
-      def FromToken(token: SyntaxKind): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = ^.asInstanceOf[js.Dynamic].applyDynamic("FromToken")(token.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
+      inline def FromToken(token: SyntaxKind): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = ^.asInstanceOf[js.Dynamic].applyDynamic("FromToken")(token.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
       
       /* static member */
-      @scala.inline
-      def FromTokens(tokens: js.Array[SyntaxKind]): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = ^.asInstanceOf[js.Dynamic].applyDynamic("FromTokens")(tokens.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
+      inline def FromTokens(tokens: js.Array[SyntaxKind]): typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = ^.asInstanceOf[js.Dynamic].applyDynamic("FromTokens")(tokens.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange]
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.Keywords")
       @js.native
       def Keywords: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def Keywords_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Keywords")(x.asInstanceOf[js.Any])
+      inline def Keywords_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Keywords")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.Operators")
       @js.native
       def Operators: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def Operators_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Operators")(x.asInstanceOf[js.Any])
+      inline def Operators_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Operators")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.ReservedKeywords")
       @js.native
       def ReservedKeywords: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def ReservedKeywords_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReservedKeywords")(x.asInstanceOf[js.Any])
+      inline def ReservedKeywords_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReservedKeywords")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.TypeNames")
       @js.native
       def TypeNames: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def TypeNames_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TypeNames")(x.asInstanceOf[js.Any])
+      inline def TypeNames_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TypeNames")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.UnaryPostdecrementExpressions")
       @js.native
       def UnaryPostdecrementExpressions: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def UnaryPostdecrementExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPostdecrementExpressions")(x.asInstanceOf[js.Any])
+      inline def UnaryPostdecrementExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPostdecrementExpressions")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.UnaryPostincrementExpressions")
       @js.native
       def UnaryPostincrementExpressions: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def UnaryPostincrementExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPostincrementExpressions")(x.asInstanceOf[js.Any])
+      inline def UnaryPostincrementExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPostincrementExpressions")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.UnaryPredecrementExpressions")
       @js.native
       def UnaryPredecrementExpressions: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def UnaryPredecrementExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPredecrementExpressions")(x.asInstanceOf[js.Any])
+      inline def UnaryPredecrementExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPredecrementExpressions")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.UnaryPrefixExpressions")
       @js.native
       def UnaryPrefixExpressions: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def UnaryPrefixExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPrefixExpressions")(x.asInstanceOf[js.Any])
+      inline def UnaryPrefixExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPrefixExpressions")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.UnaryPrefixOperators")
       @js.native
       def UnaryPrefixOperators: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def UnaryPrefixOperators_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPrefixOperators")(x.asInstanceOf[js.Any])
+      inline def UnaryPrefixOperators_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPrefixOperators")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("typescript-services", "Services.Formatting.Shared.TokenRange.UnaryPreincrementExpressions")
       @js.native
       def UnaryPreincrementExpressions: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange = js.native
-      @scala.inline
-      def UnaryPreincrementExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPreincrementExpressions")(x.asInstanceOf[js.Any])
+      inline def UnaryPreincrementExpressions_=(x: typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryPreincrementExpressions")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("typescript-services", "Services.Formatting.Shared.TokenRangeAccess")
@@ -2393,7 +2337,7 @@ object Formatting {
       /* CompleteClass */
       override def GetTokens(): js.Array[SyntaxKind] = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var tokens: js.Any = js.native
     }
     
@@ -2427,7 +2371,7 @@ object Formatting {
       /* CompleteClass */
       override def GetTokens(): js.Array[SyntaxKind] = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var tokens: js.Any = js.native
     }
   }
@@ -2445,52 +2389,52 @@ object Formatting {
       options: FormattingOptions
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _indentationNodeContextPool: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _lastTriviaWasNewLine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _parent: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _position: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _snapshot: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _textSpan: js.Any = js.native
     
     /* CompleteClass */
     override def forceIndentNextToken(tokenStart: Double): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def forceSkipIndentingNextToken(tokenStart: Double): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
     
-    /* CompleteClass */
-    /* private */ override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var indentationAmount: js.Any = js.native
     
     /* CompleteClass */
     override def indentationNodeContextPool(): typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContextPool = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var indentationPosition: js.Any = js.native
     
     /* CompleteClass */
@@ -2502,8 +2446,8 @@ object Formatting {
     /* CompleteClass */
     override def position(): Double = js.native
     
-    /* CompleteClass */
-    /* private */ override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def snapshot(): ITextSnapshot = js.native
@@ -2697,8 +2641,8 @@ object Formatting {
     /* CompleteClass */
     override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
-    /* CompleteClass */
-    /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def visitOptionalToken(token: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def visitParameter(node: ParameterSyntax): js.Any = js.native
@@ -2800,8 +2744,7 @@ object Formatting {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getIndentationAmount(
+    inline def getIndentationAmount(
       position: Double,
       sourceUnit: SourceUnitSyntax,
       snapshot: ITextSnapshot,
@@ -2856,8 +2799,8 @@ object Formatting {
     /* CompleteClass */
     override def getLineFromLineNumber(lineNumber: Double): ITextSnapshotLine = js.native
     
-    /* CompleteClass */
-    /* private */ override def getLineFromLineNumberWorker(lineNumber: js.Any): js.Any = js.native
+    /* private */ /* CompleteClass */
+    override def getLineFromLineNumberWorker(lineNumber: js.Any): js.Any = js.native
     
     /* CompleteClass */
     override def getLineFromPosition(position: Double): ITextSnapshotLine = js.native
@@ -2868,10 +2811,10 @@ object Formatting {
     /* CompleteClass */
     override def getText(span: TextSpan): String = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var lines: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var snapshot: js.Any = js.native
   }
   
@@ -2882,19 +2825,19 @@ object Formatting {
        with typings.typescriptServices.TypeScript.Services.Formatting.TextSnapshotLine {
     def this(_snapshot: ITextSnapshot, _lineNumber: Double, _start: Double, _end: Double, _lineBreak: String) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _end: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _lineBreak: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _lineNumber: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _snapshot: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _start: js.Any = js.native
     
     /* CompleteClass */
@@ -2935,13 +2878,13 @@ object Formatting {
        with typings.typescriptServices.TypeScript.Services.Formatting.TokenSpan {
     def this(kind: SyntaxKind, start: Double, length: Double) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _kind: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _length: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _start: js.Any = js.native
     
     /* CompleteClass */

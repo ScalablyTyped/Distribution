@@ -13,16 +13,13 @@ trait DisassociateWebACLRequest extends StObject {
 }
 object DisassociateWebACLRequest {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArn): DisassociateWebACLRequest = {
+  inline def apply(ResourceArn: ResourceArn): DisassociateWebACLRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateWebACLRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateWebACLRequestMutableBuilder[Self <: DisassociateWebACLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateWebACLRequest](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

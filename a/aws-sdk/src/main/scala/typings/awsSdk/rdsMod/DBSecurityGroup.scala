@@ -43,61 +43,43 @@ trait DBSecurityGroup extends StObject {
 }
 object DBSecurityGroup {
   
-  @scala.inline
-  def apply(): DBSecurityGroup = {
+  inline def apply(): DBSecurityGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBSecurityGroup]
   }
   
-  @scala.inline
-  implicit class DBSecurityGroupMutableBuilder[Self <: DBSecurityGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DBSecurityGroup](x: Self) {
     
-    @scala.inline
-    def setDBSecurityGroupArn(value: String): Self = StObject.set(x, "DBSecurityGroupArn", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroupArn(value: String): Self = StObject.set(x, "DBSecurityGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSecurityGroupArnUndefined: Self = StObject.set(x, "DBSecurityGroupArn", js.undefined)
+    inline def setDBSecurityGroupArnUndefined: Self = StObject.set(x, "DBSecurityGroupArn", js.undefined)
     
-    @scala.inline
-    def setDBSecurityGroupDescription(value: String): Self = StObject.set(x, "DBSecurityGroupDescription", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroupDescription(value: String): Self = StObject.set(x, "DBSecurityGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSecurityGroupDescriptionUndefined: Self = StObject.set(x, "DBSecurityGroupDescription", js.undefined)
+    inline def setDBSecurityGroupDescriptionUndefined: Self = StObject.set(x, "DBSecurityGroupDescription", js.undefined)
     
-    @scala.inline
-    def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSecurityGroupNameUndefined: Self = StObject.set(x, "DBSecurityGroupName", js.undefined)
+    inline def setDBSecurityGroupNameUndefined: Self = StObject.set(x, "DBSecurityGroupName", js.undefined)
     
-    @scala.inline
-    def setEC2SecurityGroups(value: EC2SecurityGroupList): Self = StObject.set(x, "EC2SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setEC2SecurityGroups(value: EC2SecurityGroupList): Self = StObject.set(x, "EC2SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2SecurityGroupsUndefined: Self = StObject.set(x, "EC2SecurityGroups", js.undefined)
+    inline def setEC2SecurityGroupsUndefined: Self = StObject.set(x, "EC2SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = StObject.set(x, "EC2SecurityGroups", js.Array(value :_*))
+    inline def setEC2SecurityGroupsVarargs(value: EC2SecurityGroup*): Self = StObject.set(x, "EC2SecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setIPRanges(value: IPRangeList): Self = StObject.set(x, "IPRanges", value.asInstanceOf[js.Any])
+    inline def setIPRanges(value: IPRangeList): Self = StObject.set(x, "IPRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPRangesUndefined: Self = StObject.set(x, "IPRanges", js.undefined)
+    inline def setIPRangesUndefined: Self = StObject.set(x, "IPRanges", js.undefined)
     
-    @scala.inline
-    def setIPRangesVarargs(value: IPRange*): Self = StObject.set(x, "IPRanges", js.Array(value :_*))
+    inline def setIPRangesVarargs(value: IPRange*): Self = StObject.set(x, "IPRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

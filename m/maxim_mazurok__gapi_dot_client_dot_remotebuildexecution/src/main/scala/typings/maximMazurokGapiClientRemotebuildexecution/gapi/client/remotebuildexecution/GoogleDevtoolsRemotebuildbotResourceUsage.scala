@@ -14,31 +14,23 @@ trait GoogleDevtoolsRemotebuildbotResourceUsage extends StObject {
 }
 object GoogleDevtoolsRemotebuildbotResourceUsage {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildbotResourceUsage = {
+  inline def apply(): GoogleDevtoolsRemotebuildbotResourceUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildbotResourceUsage]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildbotResourceUsageMutableBuilder[Self <: GoogleDevtoolsRemotebuildbotResourceUsage] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildbotResourceUsage](x: Self) {
     
-    @scala.inline
-    def setCpuUsedPercent(value: Double): Self = StObject.set(x, "cpuUsedPercent", value.asInstanceOf[js.Any])
+    inline def setCpuUsedPercent(value: Double): Self = StObject.set(x, "cpuUsedPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuUsedPercentUndefined: Self = StObject.set(x, "cpuUsedPercent", js.undefined)
+    inline def setCpuUsedPercentUndefined: Self = StObject.set(x, "cpuUsedPercent", js.undefined)
     
-    @scala.inline
-    def setDiskUsage(value: GoogleDevtoolsRemotebuildbotResourceUsageStat): Self = StObject.set(x, "diskUsage", value.asInstanceOf[js.Any])
+    inline def setDiskUsage(value: GoogleDevtoolsRemotebuildbotResourceUsageStat): Self = StObject.set(x, "diskUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskUsageUndefined: Self = StObject.set(x, "diskUsage", js.undefined)
+    inline def setDiskUsageUndefined: Self = StObject.set(x, "diskUsage", js.undefined)
     
-    @scala.inline
-    def setMemoryUsage(value: GoogleDevtoolsRemotebuildbotResourceUsageStat): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
+    inline def setMemoryUsage(value: GoogleDevtoolsRemotebuildbotResourceUsageStat): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryUsageUndefined: Self = StObject.set(x, "memoryUsage", js.undefined)
+    inline def setMemoryUsageUndefined: Self = StObject.set(x, "memoryUsage", js.undefined)
   }
 }

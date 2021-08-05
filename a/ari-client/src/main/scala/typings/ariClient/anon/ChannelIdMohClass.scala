@@ -12,22 +12,17 @@ trait ChannelIdMohClass extends StObject {
 }
 object ChannelIdMohClass {
   
-  @scala.inline
-  def apply(channelId: String): ChannelIdMohClass = {
+  inline def apply(channelId: String): ChannelIdMohClass = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelIdMohClass]
   }
   
-  @scala.inline
-  implicit class ChannelIdMohClassMutableBuilder[Self <: ChannelIdMohClass] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelIdMohClass](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMohClass(value: String): Self = StObject.set(x, "mohClass", value.asInstanceOf[js.Any])
+    inline def setMohClass(value: String): Self = StObject.set(x, "mohClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMohClassUndefined: Self = StObject.set(x, "mohClass", js.undefined)
+    inline def setMohClassUndefined: Self = StObject.set(x, "mohClass", js.undefined)
   }
 }

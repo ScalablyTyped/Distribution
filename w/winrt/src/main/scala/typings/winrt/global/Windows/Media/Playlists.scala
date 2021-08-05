@@ -20,8 +20,7 @@ object Playlists {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def loadAsync(file: IStorageFile): IAsyncOperation[typings.winrt.Windows.Media.Playlists.Playlist] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Media.Playlists.Playlist]]
+    inline def loadAsync(file: IStorageFile): IAsyncOperation[typings.winrt.Windows.Media.Playlists.Playlist] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Media.Playlists.Playlist]]
   }
   
   @JSGlobal("Windows.Media.Playlists.PlaylistFormat")

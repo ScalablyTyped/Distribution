@@ -25,8 +25,7 @@ trait XSerialNumberAdapter
 }
 object XSerialNumberAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -38,13 +37,10 @@ object XSerialNumberAdapter {
     __obj.asInstanceOf[XSerialNumberAdapter]
   }
   
-  @scala.inline
-  implicit class XSerialNumberAdapterMutableBuilder[Self <: XSerialNumberAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: XSerialNumberAdapter](x: Self) {
     
-    @scala.inline
-    def setToSequence(value: String => SafeArray[Double]): Self = StObject.set(x, "toSequence", js.Any.fromFunction1(value))
+    inline def setToSequence(value: String => SafeArray[Double]): Self = StObject.set(x, "toSequence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToString_(value: SeqEquiv[Double] => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+    inline def setToString_(value: SeqEquiv[Double] => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
   }
 }

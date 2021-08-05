@@ -39,53 +39,38 @@ object tableActionCellMod extends Shortcut {
   }
   object CommonTableActionCellProps {
     
-    @scala.inline
-    def apply(): CommonTableActionCellProps = {
+    inline def apply(): CommonTableActionCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonTableActionCellProps]
     }
     
-    @scala.inline
-    implicit class CommonTableActionCellPropsMutableBuilder[Self <: CommonTableActionCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: CommonTableActionCellProps](x: Self) {
       
-      @scala.inline
-      def setAlwaysShowSecondaryActions(value: Boolean): Self = StObject.set(x, "alwaysShowSecondaryActions", value.asInstanceOf[js.Any])
+      inline def setAlwaysShowSecondaryActions(value: Boolean): Self = StObject.set(x, "alwaysShowSecondaryActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysShowSecondaryActionsUndefined: Self = StObject.set(x, "alwaysShowSecondaryActions", js.undefined)
+      inline def setAlwaysShowSecondaryActionsUndefined: Self = StObject.set(x, "alwaysShowSecondaryActions", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setNumOfVisibleSecondaryActions(value: Double): Self = StObject.set(x, "numOfVisibleSecondaryActions", value.asInstanceOf[js.Any])
+      inline def setNumOfVisibleSecondaryActions(value: Double): Self = StObject.set(x, "numOfVisibleSecondaryActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumOfVisibleSecondaryActionsUndefined: Self = StObject.set(x, "numOfVisibleSecondaryActions", js.undefined)
+      inline def setNumOfVisibleSecondaryActionsUndefined: Self = StObject.set(x, "numOfVisibleSecondaryActions", js.undefined)
       
-      @scala.inline
-      def setPrimaryAction(value: TableActionCellPrimaryAction): Self = StObject.set(x, "primaryAction", value.asInstanceOf[js.Any])
+      inline def setPrimaryAction(value: TableActionCellPrimaryAction): Self = StObject.set(x, "primaryAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryActionUndefined: Self = StObject.set(x, "primaryAction", js.undefined)
+      inline def setPrimaryActionUndefined: Self = StObject.set(x, "primaryAction", js.undefined)
       
-      @scala.inline
-      def setSecondaryActions(value: js.Array[TableActionCellSecondaryAction]): Self = StObject.set(x, "secondaryActions", value.asInstanceOf[js.Any])
+      inline def setSecondaryActions(value: js.Array[TableActionCellSecondaryAction]): Self = StObject.set(x, "secondaryActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryActionsUndefined: Self = StObject.set(x, "secondaryActions", js.undefined)
+      inline def setSecondaryActionsUndefined: Self = StObject.set(x, "secondaryActions", js.undefined)
       
-      @scala.inline
-      def setSecondaryActionsVarargs(value: TableActionCellSecondaryAction*): Self = StObject.set(x, "secondaryActions", js.Array(value :_*))
+      inline def setSecondaryActionsVarargs(value: TableActionCellSecondaryAction*): Self = StObject.set(x, "secondaryActions", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -101,32 +86,24 @@ object tableActionCellMod extends Shortcut {
   }
   object TableActionCellPrimaryAction {
     
-    @scala.inline
-    def apply(onClick: () => Unit, text: String): TableActionCellPrimaryAction = {
+    inline def apply(onClick: () => Unit, text: String): TableActionCellPrimaryAction = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableActionCellPrimaryAction]
     }
     
-    @scala.inline
-    implicit class TableActionCellPrimaryActionMutableBuilder[Self <: TableActionCellPrimaryAction] (val x: Self) extends AnyVal {
+    extension [Self <: TableActionCellPrimaryAction](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSkin(value: standard | inverted): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: standard | inverted): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,20 +115,16 @@ object tableActionCellMod extends Shortcut {
   }
   object TableActionCellProps {
     
-    @scala.inline
-    def apply(): TableActionCellProps = {
+    inline def apply(): TableActionCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableActionCellProps]
     }
     
-    @scala.inline
-    implicit class TableActionCellPropsMutableBuilder[Self <: TableActionCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableActionCellProps](x: Self) {
       
-      @scala.inline
-      def setPopoverMenuProps(value: OmitPolyfillPopoverMenuPr): Self = StObject.set(x, "popoverMenuProps", value.asInstanceOf[js.Any])
+      inline def setPopoverMenuProps(value: OmitPolyfillPopoverMenuPr): Self = StObject.set(x, "popoverMenuProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoverMenuPropsUndefined: Self = StObject.set(x, "popoverMenuProps", js.undefined)
+      inline def setPopoverMenuPropsUndefined: Self = StObject.set(x, "popoverMenuProps", js.undefined)
     }
   }
   
@@ -173,47 +146,34 @@ object tableActionCellMod extends Shortcut {
   }
   object TableActionCellSecondaryAction {
     
-    @scala.inline
-    def apply(icon: IconElement, onClick: () => Unit, text: String): TableActionCellSecondaryAction = {
+    inline def apply(icon: IconElement, onClick: () => Unit, text: String): TableActionCellSecondaryAction = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableActionCellSecondaryAction]
     }
     
-    @scala.inline
-    implicit class TableActionCellSecondaryActionMutableBuilder[Self <: TableActionCellSecondaryAction] (val x: Self) extends AnyVal {
+    extension [Self <: TableActionCellSecondaryAction](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledDescription(value: String): Self = StObject.set(x, "disabledDescription", value.asInstanceOf[js.Any])
+      inline def setDisabledDescription(value: String): Self = StObject.set(x, "disabledDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledDescriptionUndefined: Self = StObject.set(x, "disabledDescription", js.undefined)
+      inline def setDisabledDescriptionUndefined: Self = StObject.set(x, "disabledDescription", js.undefined)
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IconElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
+      inline def setTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
+      inline def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
     }
   }
   

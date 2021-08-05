@@ -14,19 +14,15 @@ trait ServerGroupCopy
 }
 object ServerGroupCopy {
   
-  @scala.inline
-  def apply(): ServerGroupCopy = {
+  inline def apply(): ServerGroupCopy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerGroupCopy]
   }
   
-  @scala.inline
-  implicit class ServerGroupCopyMutableBuilder[Self <: ServerGroupCopy] (val x: Self) extends AnyVal {
+  extension [Self <: ServerGroupCopy](x: Self) {
     
-    @scala.inline
-    def setSgid(value: String): Self = StObject.set(x, "sgid", value.asInstanceOf[js.Any])
+    inline def setSgid(value: String): Self = StObject.set(x, "sgid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSgidUndefined: Self = StObject.set(x, "sgid", js.undefined)
+    inline def setSgidUndefined: Self = StObject.set(x, "sgid", js.undefined)
   }
 }

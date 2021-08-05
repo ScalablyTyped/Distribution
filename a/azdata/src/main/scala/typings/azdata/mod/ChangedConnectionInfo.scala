@@ -18,19 +18,15 @@ trait ChangedConnectionInfo extends StObject {
 }
 object ChangedConnectionInfo {
   
-  @scala.inline
-  def apply(connection: ConnectionSummary, connectionUri: String): ChangedConnectionInfo = {
+  inline def apply(connection: ConnectionSummary, connectionUri: String): ChangedConnectionInfo = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], connectionUri = connectionUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangedConnectionInfo]
   }
   
-  @scala.inline
-  implicit class ChangedConnectionInfoMutableBuilder[Self <: ChangedConnectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ChangedConnectionInfo](x: Self) {
     
-    @scala.inline
-    def setConnection(value: ConnectionSummary): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: ConnectionSummary): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUri(value: String): Self = StObject.set(x, "connectionUri", value.asInstanceOf[js.Any])
+    inline def setConnectionUri(value: String): Self = StObject.set(x, "connectionUri", value.asInstanceOf[js.Any])
   }
 }

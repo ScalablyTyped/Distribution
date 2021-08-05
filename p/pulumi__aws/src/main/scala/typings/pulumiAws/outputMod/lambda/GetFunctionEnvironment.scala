@@ -11,16 +11,13 @@ trait GetFunctionEnvironment extends StObject {
 }
 object GetFunctionEnvironment {
   
-  @scala.inline
-  def apply(variables: StringDictionary[String]): GetFunctionEnvironment = {
+  inline def apply(variables: StringDictionary[String]): GetFunctionEnvironment = {
     val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionEnvironment]
   }
   
-  @scala.inline
-  implicit class GetFunctionEnvironmentMutableBuilder[Self <: GetFunctionEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionEnvironment](x: Self) {
     
-    @scala.inline
-    def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

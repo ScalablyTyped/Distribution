@@ -24,15 +24,11 @@ object AppPart {
     
     /* Updated */
     /* static member */
-    @scala.inline
-    def Publish(t: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Publish")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def Publish(t: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Publish")(t.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Publish(t: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Publish")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Publish(t: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Publish")(t.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def Subscribe(e: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Subscribe")(e.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Subscribe(e: String, func: js.Any, caller: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Subscribe")(e.asInstanceOf[js.Any], func.asInstanceOf[js.Any], caller.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Subscribe(e: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Subscribe")(e.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Subscribe(e: String, func: js.Any, caller: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Subscribe")(e.asInstanceOf[js.Any], func.asInstanceOf[js.Any], caller.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

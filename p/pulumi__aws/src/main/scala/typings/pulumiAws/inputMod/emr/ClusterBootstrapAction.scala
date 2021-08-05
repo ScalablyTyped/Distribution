@@ -24,28 +24,21 @@ trait ClusterBootstrapAction extends StObject {
 }
 object ClusterBootstrapAction {
   
-  @scala.inline
-  def apply(name: Input[String], path: Input[String]): ClusterBootstrapAction = {
+  inline def apply(name: Input[String], path: Input[String]): ClusterBootstrapAction = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterBootstrapAction]
   }
   
-  @scala.inline
-  implicit class ClusterBootstrapActionMutableBuilder[Self <: ClusterBootstrapAction] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterBootstrapAction](x: Self) {
     
-    @scala.inline
-    def setArgs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: Input[String]*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Input[String]*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

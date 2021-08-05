@@ -16,9 +16,7 @@ object LoaderUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decodeText(array: TypedArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeText")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decodeText(array: TypedArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeText")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def extractUrlBase(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlBase")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def extractUrlBase(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlBase")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

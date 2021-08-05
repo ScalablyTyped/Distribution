@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxActivityLogging Class */
 @JSGlobal("FAXCOMEXLib.FaxActivityLogging")
 @js.native
-class FaxActivityLogging protected ()
+/* private */ class FaxActivityLogging ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxActivityLogging {
   
@@ -15,7 +15,7 @@ class FaxActivityLogging protected ()
   /* CompleteClass */
   var DatabasePath: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxActivityLogging_typekey")
   var FAXCOMEXLibDotFaxActivityLogging_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxActivityLogging = js.native
   

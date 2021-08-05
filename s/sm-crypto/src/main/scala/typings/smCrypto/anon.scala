@@ -19,41 +19,30 @@ object anon {
   }
   object Der {
     
-    @scala.inline
-    def apply(): Der = {
+    inline def apply(): Der = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Der]
     }
     
-    @scala.inline
-    implicit class DerMutableBuilder[Self <: Der] (val x: Self) extends AnyVal {
+    extension [Self <: Der](x: Self) {
       
-      @scala.inline
-      def setDer(value: Boolean): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: Boolean): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDerUndefined: Self = StObject.set(x, "der", js.undefined)
+      inline def setDerUndefined: Self = StObject.set(x, "der", js.undefined)
       
-      @scala.inline
-      def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setPointPool(value: js.Array[KeyPairPoint]): Self = StObject.set(x, "pointPool", value.asInstanceOf[js.Any])
+      inline def setPointPool(value: js.Array[KeyPairPoint]): Self = StObject.set(x, "pointPool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointPoolUndefined: Self = StObject.set(x, "pointPool", js.undefined)
+      inline def setPointPoolUndefined: Self = StObject.set(x, "pointPool", js.undefined)
       
-      @scala.inline
-      def setPointPoolVarargs(value: KeyPairPoint*): Self = StObject.set(x, "pointPool", js.Array(value :_*))
+      inline def setPointPoolVarargs(value: KeyPairPoint*): Self = StObject.set(x, "pointPool", js.Array(value :_*))
       
-      @scala.inline
-      def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+      inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     }
   }
   
@@ -67,32 +56,24 @@ object anon {
   }
   object Hash {
     
-    @scala.inline
-    def apply(): Hash = {
+    inline def apply(): Hash = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Hash]
     }
     
-    @scala.inline
-    implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
+    extension [Self <: Hash](x: Self) {
       
-      @scala.inline
-      def setDer(value: Boolean): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: Boolean): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDerUndefined: Self = StObject.set(x, "der", js.undefined)
+      inline def setDerUndefined: Self = StObject.set(x, "der", js.undefined)
       
-      @scala.inline
-      def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+      inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     }
   }
 }

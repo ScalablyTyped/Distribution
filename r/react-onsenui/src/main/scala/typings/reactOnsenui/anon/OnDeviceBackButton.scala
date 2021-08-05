@@ -32,64 +32,45 @@ trait OnDeviceBackButton extends StObject {
 }
 object OnDeviceBackButton {
   
-  @scala.inline
-  def apply(isOpen: Boolean): OnDeviceBackButton = {
+  inline def apply(isOpen: Boolean): OnDeviceBackButton = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDeviceBackButton]
   }
   
-  @scala.inline
-  implicit class OnDeviceBackButtonMutableBuilder[Self <: OnDeviceBackButton] (val x: Self) extends AnyVal {
+  extension [Self <: OnDeviceBackButton](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: default | ascend | lift | fall | fade | none): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: default | ascend | lift | fall | fade | none): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOptions(value: typings.reactOnsenui.mod.AnimationOptions): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
+    inline def setAnimationOptions(value: typings.reactOnsenui.mod.AnimationOptions): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
+    inline def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setOnDeviceBackButton(value: () => Unit): Self = StObject.set(x, "onDeviceBackButton", js.Any.fromFunction0(value))
+    inline def setOnDeviceBackButton(value: () => Unit): Self = StObject.set(x, "onDeviceBackButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDeviceBackButtonUndefined: Self = StObject.set(x, "onDeviceBackButton", js.undefined)
+    inline def setOnDeviceBackButtonUndefined: Self = StObject.set(x, "onDeviceBackButton", js.undefined)
     
-    @scala.inline
-    def setOnPostHide(value: () => Unit): Self = StObject.set(x, "onPostHide", js.Any.fromFunction0(value))
+    inline def setOnPostHide(value: () => Unit): Self = StObject.set(x, "onPostHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPostHideUndefined: Self = StObject.set(x, "onPostHide", js.undefined)
+    inline def setOnPostHideUndefined: Self = StObject.set(x, "onPostHide", js.undefined)
     
-    @scala.inline
-    def setOnPostShow(value: () => Unit): Self = StObject.set(x, "onPostShow", js.Any.fromFunction0(value))
+    inline def setOnPostShow(value: () => Unit): Self = StObject.set(x, "onPostShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPostShowUndefined: Self = StObject.set(x, "onPostShow", js.undefined)
+    inline def setOnPostShowUndefined: Self = StObject.set(x, "onPostShow", js.undefined)
     
-    @scala.inline
-    def setOnPreHide(value: () => Unit): Self = StObject.set(x, "onPreHide", js.Any.fromFunction0(value))
+    inline def setOnPreHide(value: () => Unit): Self = StObject.set(x, "onPreHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPreHideUndefined: Self = StObject.set(x, "onPreHide", js.undefined)
+    inline def setOnPreHideUndefined: Self = StObject.set(x, "onPreHide", js.undefined)
     
-    @scala.inline
-    def setOnPreShow(value: () => Unit): Self = StObject.set(x, "onPreShow", js.Any.fromFunction0(value))
+    inline def setOnPreShow(value: () => Unit): Self = StObject.set(x, "onPreShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPreShowUndefined: Self = StObject.set(x, "onPreShow", js.undefined)
+    inline def setOnPreShowUndefined: Self = StObject.set(x, "onPreShow", js.undefined)
   }
 }

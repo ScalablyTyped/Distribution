@@ -28,25 +28,19 @@ trait CloudwatchAlarmAction extends StObject {
 }
 object CloudwatchAlarmAction {
   
-  @scala.inline
-  def apply(alarmName: AlarmName, roleArn: AwsArn, stateReason: StateReason, stateValue: StateValue): CloudwatchAlarmAction = {
+  inline def apply(alarmName: AlarmName, roleArn: AwsArn, stateReason: StateReason, stateValue: StateValue): CloudwatchAlarmAction = {
     val __obj = js.Dynamic.literal(alarmName = alarmName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stateReason = stateReason.asInstanceOf[js.Any], stateValue = stateValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudwatchAlarmAction]
   }
   
-  @scala.inline
-  implicit class CloudwatchAlarmActionMutableBuilder[Self <: CloudwatchAlarmAction] (val x: Self) extends AnyVal {
+  extension [Self <: CloudwatchAlarmAction](x: Self) {
     
-    @scala.inline
-    def setAlarmName(value: AlarmName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: AlarmName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReason(value: StateReason): Self = StObject.set(x, "stateReason", value.asInstanceOf[js.Any])
+    inline def setStateReason(value: StateReason): Self = StObject.set(x, "stateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateValue(value: StateValue): Self = StObject.set(x, "stateValue", value.asInstanceOf[js.Any])
+    inline def setStateValue(value: StateValue): Self = StObject.set(x, "stateValue", value.asInstanceOf[js.Any])
   }
 }

@@ -22,36 +22,27 @@ trait InsertOptions extends StObject {
 }
 object InsertOptions {
   
-  @scala.inline
-  def apply(): InsertOptions = {
+  inline def apply(): InsertOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertOptions]
   }
   
-  @scala.inline
-  implicit class InsertOptionsMutableBuilder[Self <: InsertOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InsertOptions](x: Self) {
     
-    @scala.inline
-    def setConflict(
+    inline def setConflict(
       value: error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, js.Any])
     ): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictFunction3(value: (/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any) => js.Any): Self = StObject.set(x, "conflict", js.Any.fromFunction3(value))
+    inline def setConflictFunction3(value: (/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any) => js.Any): Self = StObject.set(x, "conflict", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setConflictUndefined: Self = StObject.set(x, "conflict", js.undefined)
+    inline def setConflictUndefined: Self = StObject.set(x, "conflict", js.undefined)
     
-    @scala.inline
-    def setDurability(value: hard | soft): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
+    inline def setDurability(value: hard | soft): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurabilityUndefined: Self = StObject.set(x, "durability", js.undefined)
+    inline def setDurabilityUndefined: Self = StObject.set(x, "durability", js.undefined)
     
-    @scala.inline
-    def setReturnChanges(value: Boolean | always): Self = StObject.set(x, "returnChanges", value.asInstanceOf[js.Any])
+    inline def setReturnChanges(value: Boolean | always): Self = StObject.set(x, "returnChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnChangesUndefined: Self = StObject.set(x, "returnChanges", js.undefined)
+    inline def setReturnChangesUndefined: Self = StObject.set(x, "returnChanges", js.undefined)
   }
 }

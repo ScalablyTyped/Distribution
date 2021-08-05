@@ -30,8 +30,7 @@ trait CancellationToken extends StObject {
 }
 object CancellationToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isCancellationRequested: Boolean,
     onCancellationRequested: (/* listener */ js.Function1[js.Any, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
   ): CancellationToken = {
@@ -39,14 +38,11 @@ object CancellationToken {
     __obj.asInstanceOf[CancellationToken]
   }
   
-  @scala.inline
-  implicit class CancellationTokenMutableBuilder[Self <: CancellationToken] (val x: Self) extends AnyVal {
+  extension [Self <: CancellationToken](x: Self) {
     
-    @scala.inline
-    def setIsCancellationRequested(value: Boolean): Self = StObject.set(x, "isCancellationRequested", value.asInstanceOf[js.Any])
+    inline def setIsCancellationRequested(value: Boolean): Self = StObject.set(x, "isCancellationRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCancellationRequested(
+    inline def setOnCancellationRequested(
       value: (/* listener */ js.Function1[js.Any, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = StObject.set(x, "onCancellationRequested", js.Any.fromFunction3(value))
   }

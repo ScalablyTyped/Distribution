@@ -10,19 +10,15 @@ trait DeviceOrientationOptions extends StObject {
 }
 object DeviceOrientationOptions {
   
-  @scala.inline
-  def apply(): DeviceOrientationOptions = {
+  inline def apply(): DeviceOrientationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceOrientationOptions]
   }
   
-  @scala.inline
-  implicit class DeviceOrientationOptionsMutableBuilder[Self <: DeviceOrientationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceOrientationOptions](x: Self) {
     
-    @scala.inline
-    def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
+    inline def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
+    inline def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
   }
 }

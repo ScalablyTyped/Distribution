@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetDrawProperty extends StObject
 object SetDrawProperty {
   
-  @scala.inline
-  def color: color_ = "color".asInstanceOf[color_]
+  inline def color: color_ = "color".asInstanceOf[color_]
   
-  @scala.inline
-  def matte: matte_ = "matte".asInstanceOf[matte_]
+  inline def matte: matte_ = "matte".asInstanceOf[matte_]
 }

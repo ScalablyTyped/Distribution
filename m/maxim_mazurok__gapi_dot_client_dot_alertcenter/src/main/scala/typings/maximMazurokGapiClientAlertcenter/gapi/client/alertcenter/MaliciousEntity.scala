@@ -17,31 +17,23 @@ trait MaliciousEntity extends StObject {
 }
 object MaliciousEntity {
   
-  @scala.inline
-  def apply(): MaliciousEntity = {
+  inline def apply(): MaliciousEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaliciousEntity]
   }
   
-  @scala.inline
-  implicit class MaliciousEntityMutableBuilder[Self <: MaliciousEntity] (val x: Self) extends AnyVal {
+  extension [Self <: MaliciousEntity](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEntity(value: User): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: User): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setFromHeader(value: String): Self = StObject.set(x, "fromHeader", value.asInstanceOf[js.Any])
+    inline def setFromHeader(value: String): Self = StObject.set(x, "fromHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromHeaderUndefined: Self = StObject.set(x, "fromHeader", js.undefined)
+    inline def setFromHeaderUndefined: Self = StObject.set(x, "fromHeader", js.undefined)
   }
 }

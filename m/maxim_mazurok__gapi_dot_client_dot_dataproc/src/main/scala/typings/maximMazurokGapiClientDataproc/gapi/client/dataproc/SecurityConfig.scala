@@ -11,19 +11,15 @@ trait SecurityConfig extends StObject {
 }
 object SecurityConfig {
   
-  @scala.inline
-  def apply(): SecurityConfig = {
+  inline def apply(): SecurityConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityConfig]
   }
   
-  @scala.inline
-  implicit class SecurityConfigMutableBuilder[Self <: SecurityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityConfig](x: Self) {
     
-    @scala.inline
-    def setKerberosConfig(value: KerberosConfig): Self = StObject.set(x, "kerberosConfig", value.asInstanceOf[js.Any])
+    inline def setKerberosConfig(value: KerberosConfig): Self = StObject.set(x, "kerberosConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKerberosConfigUndefined: Self = StObject.set(x, "kerberosConfig", js.undefined)
+    inline def setKerberosConfigUndefined: Self = StObject.set(x, "kerberosConfig", js.undefined)
   }
 }

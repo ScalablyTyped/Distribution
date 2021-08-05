@@ -17,8 +17,7 @@ trait ITextSnapshot extends StObject {
 }
 object ITextSnapshot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getLineFromLineNumber: Double => ITextSnapshotLine,
     getLineFromPosition: Double => ITextSnapshotLine,
     getLineNumberFromPosition: Double => Double,
@@ -28,19 +27,14 @@ object ITextSnapshot {
     __obj.asInstanceOf[ITextSnapshot]
   }
   
-  @scala.inline
-  implicit class ITextSnapshotMutableBuilder[Self <: ITextSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: ITextSnapshot](x: Self) {
     
-    @scala.inline
-    def setGetLineFromLineNumber(value: Double => ITextSnapshotLine): Self = StObject.set(x, "getLineFromLineNumber", js.Any.fromFunction1(value))
+    inline def setGetLineFromLineNumber(value: Double => ITextSnapshotLine): Self = StObject.set(x, "getLineFromLineNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLineFromPosition(value: Double => ITextSnapshotLine): Self = StObject.set(x, "getLineFromPosition", js.Any.fromFunction1(value))
+    inline def setGetLineFromPosition(value: Double => ITextSnapshotLine): Self = StObject.set(x, "getLineFromPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLineNumberFromPosition(value: Double => Double): Self = StObject.set(x, "getLineNumberFromPosition", js.Any.fromFunction1(value))
+    inline def setGetLineNumberFromPosition(value: Double => Double): Self = StObject.set(x, "getLineNumberFromPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetText(value: TextSpan => String): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
+    inline def setGetText(value: TextSpan => String): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
   }
 }

@@ -26,8 +26,7 @@ trait ClassedSizeSliderStyleProperties
 }
 object ClassedSizeSliderStyleProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,25 +35,18 @@ object ClassedSizeSliderStyleProperties {
     __obj.asInstanceOf[ClassedSizeSliderStyleProperties]
   }
   
-  @scala.inline
-  implicit class ClassedSizeSliderStylePropertiesMutableBuilder[Self <: ClassedSizeSliderStyleProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ClassedSizeSliderStyleProperties](x: Self) {
     
-    @scala.inline
-    def setTrackBackgroundColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "trackBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setTrackBackgroundColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "trackBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackBackgroundColorUndefined: Self = StObject.set(x, "trackBackgroundColor", js.undefined)
+    inline def setTrackBackgroundColorUndefined: Self = StObject.set(x, "trackBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setTrackBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "trackBackgroundColor", js.Array(value :_*))
+    inline def setTrackBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "trackBackgroundColor", js.Array(value :_*))
     
-    @scala.inline
-    def setTrackFillColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "trackFillColor", value.asInstanceOf[js.Any])
+    inline def setTrackFillColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "trackFillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackFillColorUndefined: Self = StObject.set(x, "trackFillColor", js.undefined)
+    inline def setTrackFillColorUndefined: Self = StObject.set(x, "trackFillColor", js.undefined)
     
-    @scala.inline
-    def setTrackFillColorVarargs(value: Double*): Self = StObject.set(x, "trackFillColor", js.Array(value :_*))
+    inline def setTrackFillColorVarargs(value: Double*): Self = StObject.set(x, "trackFillColor", js.Array(value :_*))
   }
 }

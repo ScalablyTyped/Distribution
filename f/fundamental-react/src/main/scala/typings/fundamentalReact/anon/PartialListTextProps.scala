@@ -15,31 +15,23 @@ trait PartialListTextProps extends StObject {
 }
 object PartialListTextProps {
   
-  @scala.inline
-  def apply(): PartialListTextProps = {
+  inline def apply(): PartialListTextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialListTextProps]
   }
   
-  @scala.inline
-  implicit class PartialListTextPropsMutableBuilder[Self <: PartialListTextProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialListTextProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+    inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
+    inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
     
-    @scala.inline
-    def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
   }
 }

@@ -23,34 +23,25 @@ trait LocalSecondaryIndexInfo extends StObject {
 }
 object LocalSecondaryIndexInfo {
   
-  @scala.inline
-  def apply(): LocalSecondaryIndexInfo = {
+  inline def apply(): LocalSecondaryIndexInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalSecondaryIndexInfo]
   }
   
-  @scala.inline
-  implicit class LocalSecondaryIndexInfoMutableBuilder[Self <: LocalSecondaryIndexInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LocalSecondaryIndexInfo](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+    inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+    inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
-    @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
-    @scala.inline
-    def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
   }
 }

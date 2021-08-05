@@ -11,19 +11,15 @@ trait PickTableContainerPropsst extends StObject {
 }
 object PickTableContainerPropsst {
   
-  @scala.inline
-  def apply(): PickTableContainerPropsst = {
+  inline def apply(): PickTableContainerPropsst = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickTableContainerPropsst]
   }
   
-  @scala.inline
-  implicit class PickTableContainerPropsstMutableBuilder[Self <: PickTableContainerPropsst] (val x: Self) extends AnyVal {
+  extension [Self <: PickTableContainerPropsst](x: Self) {
     
-    @scala.inline
-    def setStickyHeader(value: Boolean): Self = StObject.set(x, "stickyHeader", value.asInstanceOf[js.Any])
+    inline def setStickyHeader(value: Boolean): Self = StObject.set(x, "stickyHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickyHeaderUndefined: Self = StObject.set(x, "stickyHeader", js.undefined)
+    inline def setStickyHeaderUndefined: Self = StObject.set(x, "stickyHeader", js.undefined)
   }
 }

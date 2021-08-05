@@ -47,112 +47,77 @@ trait RoutingControlOptions
 }
 object RoutingControlOptions {
   
-  @scala.inline
-  def apply(): RoutingControlOptions = {
+  inline def apply(): RoutingControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoutingControlOptions]
   }
   
-  @scala.inline
-  implicit class RoutingControlOptionsMutableBuilder[Self <: RoutingControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RoutingControlOptions](x: Self) {
     
-    @scala.inline
-    def setAddWaypoints(value: Boolean): Self = StObject.set(x, "addWaypoints", value.asInstanceOf[js.Any])
+    inline def setAddWaypoints(value: Boolean): Self = StObject.set(x, "addWaypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddWaypointsUndefined: Self = StObject.set(x, "addWaypoints", js.undefined)
+    inline def setAddWaypointsUndefined: Self = StObject.set(x, "addWaypoints", js.undefined)
     
-    @scala.inline
-    def setAltLineOptions(value: LineOptions): Self = StObject.set(x, "altLineOptions", value.asInstanceOf[js.Any])
+    inline def setAltLineOptions(value: LineOptions): Self = StObject.set(x, "altLineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltLineOptionsUndefined: Self = StObject.set(x, "altLineOptions", js.undefined)
+    inline def setAltLineOptionsUndefined: Self = StObject.set(x, "altLineOptions", js.undefined)
     
-    @scala.inline
-    def setAutoRoute(value: Boolean): Self = StObject.set(x, "autoRoute", value.asInstanceOf[js.Any])
+    inline def setAutoRoute(value: Boolean): Self = StObject.set(x, "autoRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRouteUndefined: Self = StObject.set(x, "autoRoute", js.undefined)
+    inline def setAutoRouteUndefined: Self = StObject.set(x, "autoRoute", js.undefined)
     
-    @scala.inline
-    def setDefaultErrorHandler(value: /* error */ js.Any => Unit): Self = StObject.set(x, "defaultErrorHandler", js.Any.fromFunction1(value))
+    inline def setDefaultErrorHandler(value: /* error */ js.Any => Unit): Self = StObject.set(x, "defaultErrorHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultErrorHandlerUndefined: Self = StObject.set(x, "defaultErrorHandler", js.undefined)
+    inline def setDefaultErrorHandlerUndefined: Self = StObject.set(x, "defaultErrorHandler", js.undefined)
     
-    @scala.inline
-    def setFitSelectedRoutes(value: smart | Boolean): Self = StObject.set(x, "fitSelectedRoutes", value.asInstanceOf[js.Any])
+    inline def setFitSelectedRoutes(value: smart | Boolean): Self = StObject.set(x, "fitSelectedRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitSelectedRoutesUndefined: Self = StObject.set(x, "fitSelectedRoutes", js.undefined)
+    inline def setFitSelectedRoutesUndefined: Self = StObject.set(x, "fitSelectedRoutes", js.undefined)
     
-    @scala.inline
-    def setGeocoder(value: js.Any): Self = StObject.set(x, "geocoder", value.asInstanceOf[js.Any])
+    inline def setGeocoder(value: js.Any): Self = StObject.set(x, "geocoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocoderUndefined: Self = StObject.set(x, "geocoder", js.undefined)
+    inline def setGeocoderUndefined: Self = StObject.set(x, "geocoder", js.undefined)
     
-    @scala.inline
-    def setLineOptions(value: LineOptions): Self = StObject.set(x, "lineOptions", value.asInstanceOf[js.Any])
+    inline def setLineOptions(value: LineOptions): Self = StObject.set(x, "lineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineOptionsUndefined: Self = StObject.set(x, "lineOptions", js.undefined)
+    inline def setLineOptionsUndefined: Self = StObject.set(x, "lineOptions", js.undefined)
     
-    @scala.inline
-    def setPlan(value: Plan_): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: Plan_): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
+    inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
     
-    @scala.inline
-    def setRouteDragInterval(value: Double): Self = StObject.set(x, "routeDragInterval", value.asInstanceOf[js.Any])
+    inline def setRouteDragInterval(value: Double): Self = StObject.set(x, "routeDragInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteDragIntervalUndefined: Self = StObject.set(x, "routeDragInterval", js.undefined)
+    inline def setRouteDragIntervalUndefined: Self = StObject.set(x, "routeDragInterval", js.undefined)
     
-    @scala.inline
-    def setRouteLine(value: (/* route */ IRoute, /* options */ LineOptions) => Line_): Self = StObject.set(x, "routeLine", js.Any.fromFunction2(value))
+    inline def setRouteLine(value: (/* route */ IRoute, /* options */ LineOptions) => Line_): Self = StObject.set(x, "routeLine", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRouteLineUndefined: Self = StObject.set(x, "routeLine", js.undefined)
+    inline def setRouteLineUndefined: Self = StObject.set(x, "routeLine", js.undefined)
     
-    @scala.inline
-    def setRouteWhileDragging(value: Boolean): Self = StObject.set(x, "routeWhileDragging", value.asInstanceOf[js.Any])
+    inline def setRouteWhileDragging(value: Boolean): Self = StObject.set(x, "routeWhileDragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteWhileDraggingUndefined: Self = StObject.set(x, "routeWhileDragging", js.undefined)
+    inline def setRouteWhileDraggingUndefined: Self = StObject.set(x, "routeWhileDragging", js.undefined)
     
-    @scala.inline
-    def setRouter(value: IRouter): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: IRouter): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
+    inline def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
     
-    @scala.inline
-    def setShowAlternatives(value: Boolean): Self = StObject.set(x, "showAlternatives", value.asInstanceOf[js.Any])
+    inline def setShowAlternatives(value: Boolean): Self = StObject.set(x, "showAlternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAlternativesUndefined: Self = StObject.set(x, "showAlternatives", js.undefined)
+    inline def setShowAlternativesUndefined: Self = StObject.set(x, "showAlternatives", js.undefined)
     
-    @scala.inline
-    def setUseZoomParameter(value: Boolean): Self = StObject.set(x, "useZoomParameter", value.asInstanceOf[js.Any])
+    inline def setUseZoomParameter(value: Boolean): Self = StObject.set(x, "useZoomParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseZoomParameterUndefined: Self = StObject.set(x, "useZoomParameter", js.undefined)
+    inline def setUseZoomParameterUndefined: Self = StObject.set(x, "useZoomParameter", js.undefined)
     
-    @scala.inline
-    def setWaypointMode(value: connect | snap): Self = StObject.set(x, "waypointMode", value.asInstanceOf[js.Any])
+    inline def setWaypointMode(value: connect | snap): Self = StObject.set(x, "waypointMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointModeUndefined: Self = StObject.set(x, "waypointMode", js.undefined)
+    inline def setWaypointModeUndefined: Self = StObject.set(x, "waypointMode", js.undefined)
     
-    @scala.inline
-    def setWaypoints(value: js.Array[LatLng_ | Waypoint_]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: js.Array[LatLng_ | Waypoint_]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
+    inline def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
     
-    @scala.inline
-    def setWaypointsVarargs(value: (LatLng_ | Waypoint_)*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: (LatLng_ | Waypoint_)*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

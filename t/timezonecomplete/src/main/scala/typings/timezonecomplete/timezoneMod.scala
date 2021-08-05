@@ -24,17 +24,17 @@ object timezoneMod {
     * @throws timezonecomplete.NotFound.Zone if the given zone name doesn't exist
     * @throws timezonecomplete.InvalidTimeZoneData if the time zone database is invalid
     */
-  class TimeZone protected () extends StObject {
+  /* private */ class TimeZone () extends StObject {
     
     /**
       * Adhere to Daylight Saving Time if applicable
       */
-    var _dst: js.Any = js.native
+    /* private */ var _dst: js.Any = js.native
     
     /**
       * The kind of time zone specified by _name
       */
-    var _kind: js.Any = js.native
+    /* private */ var _kind: js.Any = js.native
     
     /**
       * Time zone identifier:
@@ -42,12 +42,12 @@ object timezoneMod {
       *  E.g. "-01:30" for a fixed offset from UTC
       *  E.g. "UTC" or "Europe/Amsterdam" for an Olsen TZ database time
       */
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
     /**
       * Only for fixed offsets: the offset in minutes
       */
-    var _offset: js.Any = js.native
+    /* private */ var _offset: js.Any = js.native
     
     /**
       * Zone abbreviation at given UTC timestamp e.g. CEST for Central European Summer Time.
@@ -310,8 +310,7 @@ object timezoneMod {
     @JSImport("timezonecomplete/dist/lib/timezone", "TimeZone._cache")
     @js.native
     def _cache: js.Any = js.native
-    @scala.inline
-    def _cache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_cache")(x.asInstanceOf[js.Any])
+    inline def _cache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_cache")(x.asInstanceOf[js.Any])
     
     /**
       * Find in cache or create zone
@@ -322,8 +321,7 @@ object timezoneMod {
     @JSImport("timezonecomplete/dist/lib/timezone", "TimeZone._findOrCreate")
     @js.native
     def _findOrCreate: js.Any = js.native
-    @scala.inline
-    def _findOrCreate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_findOrCreate")(x.asInstanceOf[js.Any])
+    inline def _findOrCreate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_findOrCreate")(x.asInstanceOf[js.Any])
     
     /**
       * Returns true iff the first non-whitespace character of s is +, -, or Z
@@ -333,8 +331,7 @@ object timezoneMod {
     @JSImport("timezonecomplete/dist/lib/timezone", "TimeZone._isOffsetString")
     @js.native
     def _isOffsetString: js.Any = js.native
-    @scala.inline
-    def _isOffsetString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isOffsetString")(x.asInstanceOf[js.Any])
+    inline def _isOffsetString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isOffsetString")(x.asInstanceOf[js.Any])
     
     /**
       * Normalize a string so it can be used as a key for a cache lookup
@@ -343,8 +340,7 @@ object timezoneMod {
     @JSImport("timezonecomplete/dist/lib/timezone", "TimeZone._normalizeString")
     @js.native
     def _normalizeString: js.Any = js.native
-    @scala.inline
-    def _normalizeString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_normalizeString")(x.asInstanceOf[js.Any])
+    inline def _normalizeString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_normalizeString")(x.asInstanceOf[js.Any])
     
     /**
       * The local time zone for a given date. Note that
@@ -352,8 +348,7 @@ object timezoneMod {
       * 2014-01-01 is +01:00 and amsterdam time for 2014-07-01 is +02:00
       * @throws nothing
       */
-    @scala.inline
-    def local(): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[TimeZone]
+    inline def local(): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[TimeZone]
     
     /**
       * Convert an offset number into an offset string
@@ -361,8 +356,7 @@ object timezoneMod {
       * @return the offset in ISO notation "+01:30" for +90 minutes
       * @throws Argument.Offset if offset is not a finite number or not within -24 * 60 ... +24 * 60 minutes
       */
-    @scala.inline
-    def offsetToString(offset: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetToString")(offset.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def offsetToString(offset: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetToString")(offset.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * String to offset conversion.
@@ -370,23 +364,20 @@ object timezoneMod {
       * @return offset w.r.t. UTC in minutes
       * @throws timezonecomplete.Argument.S if s cannot be parsed
       */
-    @scala.inline
-    def stringToOffset(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToOffset")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def stringToOffset(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToOffset")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * The UTC time zone.
       * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
       */
-    @scala.inline
-    def utc(): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[TimeZone]
+    inline def utc(): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[TimeZone]
     
     /**
       * Time zone with a fixed offset
       * @param offset	offset w.r.t. UTC in minutes, e.g. 90 for +01:30
       * @throws timezonecomplete.Argument.Offset if the offset is not within -24h...+24h (in minutes)
       */
-    @scala.inline
-    def zone(offset: Double): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[TimeZone]
+    inline def zone(offset: Double): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[TimeZone]
     /**
       * Time zone for an offset string or an IANA time zone string. Note that time zones are cached
       * so you don't necessarily get a new object each time.
@@ -402,10 +393,8 @@ object timezoneMod {
       * @throws timezonecomplete.Argument.S if s cannot be parsed
       * @throws timezonecomplete.NotFound.Zone if the zone name doesn't exist in the time zone database
       */
-    @scala.inline
-    def zone(s: String): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any]).asInstanceOf[TimeZone]
-    @scala.inline
-    def zone(s: String, dst: Boolean): TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[TimeZone]
+    inline def zone(s: String): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any]).asInstanceOf[TimeZone]
+    inline def zone(s: String, dst: Boolean): TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[TimeZone]
   }
   
   @js.native
@@ -446,19 +435,13 @@ object timezoneMod {
     /* 2 */ val Proper: typings.timezonecomplete.timezoneMod.TimeZoneKind.Proper & Double = js.native
   }
   
-  @scala.inline
-  def isTimeZone(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeZone")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean]
+  inline def isTimeZone(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeZone")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean]
   
-  @scala.inline
-  def local(): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[TimeZone]
+  inline def local(): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[TimeZone]
   
-  @scala.inline
-  def utc(): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[TimeZone]
+  inline def utc(): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[TimeZone]
   
-  @scala.inline
-  def zone(name: String): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any]).asInstanceOf[TimeZone]
-  @scala.inline
-  def zone(name: String, dst: Boolean): TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[TimeZone]
-  @scala.inline
-  def zone(offset: Double): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[TimeZone]
+  inline def zone(name: String): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any]).asInstanceOf[TimeZone]
+  inline def zone(name: String, dst: Boolean): TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[TimeZone]
+  inline def zone(offset: Double): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[TimeZone]
 }

@@ -12,19 +12,15 @@ trait RDomTokenList extends StObject {
 }
 object RDomTokenList {
   
-  @scala.inline
-  def apply(add: String => Unit, remove: String => Unit): RDomTokenList = {
+  inline def apply(add: String => Unit, remove: String => Unit): RDomTokenList = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[RDomTokenList]
   }
   
-  @scala.inline
-  implicit class RDomTokenListMutableBuilder[Self <: RDomTokenList] (val x: Self) extends AnyVal {
+  extension [Self <: RDomTokenList](x: Self) {
     
-    @scala.inline
-    def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

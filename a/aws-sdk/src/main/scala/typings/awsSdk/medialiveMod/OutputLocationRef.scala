@@ -10,19 +10,15 @@ trait OutputLocationRef extends StObject {
 }
 object OutputLocationRef {
   
-  @scala.inline
-  def apply(): OutputLocationRef = {
+  inline def apply(): OutputLocationRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputLocationRef]
   }
   
-  @scala.inline
-  implicit class OutputLocationRefMutableBuilder[Self <: OutputLocationRef] (val x: Self) extends AnyVal {
+  extension [Self <: OutputLocationRef](x: Self) {
     
-    @scala.inline
-    def setDestinationRefId(value: string): Self = StObject.set(x, "DestinationRefId", value.asInstanceOf[js.Any])
+    inline def setDestinationRefId(value: string): Self = StObject.set(x, "DestinationRefId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationRefIdUndefined: Self = StObject.set(x, "DestinationRefId", js.undefined)
+    inline def setDestinationRefIdUndefined: Self = StObject.set(x, "DestinationRefId", js.undefined)
   }
 }

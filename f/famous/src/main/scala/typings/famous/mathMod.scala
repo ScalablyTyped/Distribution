@@ -79,26 +79,19 @@ object mathMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def add(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
+    inline def add(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
     
-    @scala.inline
-    def clone(v: Vec2): Vec2 = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(v.asInstanceOf[js.Any]).asInstanceOf[Vec2]
+    inline def clone(v: Vec2): Vec2 = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(v.asInstanceOf[js.Any]).asInstanceOf[Vec2]
     
-    @scala.inline
-    def cross(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
+    inline def cross(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
     
-    @scala.inline
-    def dot(v1: Vec2, v2: Vec2): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def dot(v1: Vec2, v2: Vec2): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def normalize(v: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(v.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
+    inline def normalize(v: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(v.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
     
-    @scala.inline
-    def scale(v: Vec2, s: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(v.asInstanceOf[js.Any], s.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
+    inline def scale(v: Vec2, s: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(v.asInstanceOf[js.Any], s.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
     
-    @scala.inline
-    def subtract(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
+    inline def subtract(v1: Vec2, v2: Vec2, output: Vec2): Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec2]
   }
   
   @JSImport("famous/math", "Vec3")
@@ -172,31 +165,22 @@ object mathMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def add(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
+    inline def add(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @scala.inline
-    def applyRotation(v: Vec3, q: Quaternion, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("applyRotation")(v.asInstanceOf[js.Any], q.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
+    inline def applyRotation(v: Vec3, q: Quaternion, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("applyRotation")(v.asInstanceOf[js.Any], q.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @scala.inline
-    def clone(v: Vec3): Vec3 = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(v.asInstanceOf[js.Any]).asInstanceOf[Vec3]
+    inline def clone(v: Vec3): Vec3 = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(v.asInstanceOf[js.Any]).asInstanceOf[Vec3]
     
-    @scala.inline
-    def cross(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
+    inline def cross(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @scala.inline
-    def dot(v1: Vec3, v2: Vec3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def dot(v1: Vec3, v2: Vec3): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def normalize(v: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(v.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
+    inline def normalize(v: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(v.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @scala.inline
-    def project(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("project")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
+    inline def project(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("project")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @scala.inline
-    def scale(v: Vec3, s: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(v.asInstanceOf[js.Any], s.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
+    inline def scale(v: Vec3, s: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(v.asInstanceOf[js.Any], s.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
     
-    @scala.inline
-    def subtract(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
+    inline def subtract(v1: Vec3, v2: Vec3, output: Vec3): Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Vec3]
   }
 }

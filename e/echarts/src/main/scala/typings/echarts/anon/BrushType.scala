@@ -39,31 +39,23 @@ trait BrushType extends StObject {
 }
 object BrushType {
   
-  @scala.inline
-  def apply(): BrushType = {
+  inline def apply(): BrushType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrushType]
   }
   
-  @scala.inline
-  implicit class BrushTypeMutableBuilder[Self <: BrushType] (val x: Self) extends AnyVal {
+  extension [Self <: BrushType](x: Self) {
     
-    @scala.inline
-    def setBrushType(value: String): Self = StObject.set(x, "brushType", value.asInstanceOf[js.Any])
+    inline def setBrushType(value: String): Self = StObject.set(x, "brushType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrushTypeUndefined: Self = StObject.set(x, "brushType", js.undefined)
+    inline def setBrushTypeUndefined: Self = StObject.set(x, "brushType", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

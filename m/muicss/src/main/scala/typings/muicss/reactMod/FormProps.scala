@@ -14,19 +14,15 @@ trait FormProps
 }
 object FormProps {
   
-  @scala.inline
-  def apply(): FormProps = {
+  inline def apply(): FormProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormProps]
   }
   
-  @scala.inline
-  implicit class FormPropsMutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
+  extension [Self <: FormProps](x: Self) {
     
-    @scala.inline
-    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+    inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
   }
 }

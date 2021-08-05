@@ -26,8 +26,7 @@ trait KeyValueStore extends StObject {
 }
 object KeyValueStore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bs: () => js.Function2[/* array */ js.Array[js.Any], /* item */ js.Any, Found],
     get: js.Any => js.Array[js.Any],
     keys: js.Array[js.Any],
@@ -40,34 +39,24 @@ object KeyValueStore {
     __obj.asInstanceOf[KeyValueStore]
   }
   
-  @scala.inline
-  implicit class KeyValueStoreMutableBuilder[Self <: KeyValueStore] (val x: Self) extends AnyVal {
+  extension [Self <: KeyValueStore](x: Self) {
     
-    @scala.inline
-    def setBs(value: () => js.Function2[/* array */ js.Array[js.Any], /* item */ js.Any, Found]): Self = StObject.set(x, "bs", js.Any.fromFunction0(value))
+    inline def setBs(value: () => js.Function2[/* array */ js.Array[js.Any], /* item */ js.Any, Found]): Self = StObject.set(x, "bs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSort(value: js.Function2[/* target */ js.Any, /* test */ js.Any, js.Any] => Unit): Self = StObject.set(x, "setSort", js.Any.fromFunction1(value))
+    inline def setSetSort(value: js.Function2[/* target */ js.Any, /* test */ js.Any, js.Any] => Unit): Self = StObject.set(x, "setSort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSort(value: (js.Any, js.Any) => `-1` | `0` | `1`): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    inline def setSort(value: (js.Any, js.Any) => `-1` | `0` | `1`): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

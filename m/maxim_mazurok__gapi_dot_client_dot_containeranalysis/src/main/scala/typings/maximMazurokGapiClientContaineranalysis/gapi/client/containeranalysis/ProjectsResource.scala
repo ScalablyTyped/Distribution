@@ -14,22 +14,17 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(notes: NotesResource, occurrences: OccurrencesResource, scanConfigs: ScanConfigsResource): ProjectsResource = {
+  inline def apply(notes: NotesResource, occurrences: OccurrencesResource, scanConfigs: ScanConfigsResource): ProjectsResource = {
     val __obj = js.Dynamic.literal(notes = notes.asInstanceOf[js.Any], occurrences = occurrences.asInstanceOf[js.Any], scanConfigs = scanConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setNotes(value: NotesResource): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: NotesResource): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrences(value: OccurrencesResource): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
+    inline def setOccurrences(value: OccurrencesResource): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanConfigs(value: ScanConfigsResource): Self = StObject.set(x, "scanConfigs", value.asInstanceOf[js.Any])
+    inline def setScanConfigs(value: ScanConfigsResource): Self = StObject.set(x, "scanConfigs", value.asInstanceOf[js.Any])
   }
 }

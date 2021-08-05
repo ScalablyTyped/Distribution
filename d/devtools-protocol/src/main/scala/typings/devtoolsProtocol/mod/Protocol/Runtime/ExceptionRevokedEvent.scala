@@ -19,19 +19,15 @@ trait ExceptionRevokedEvent extends StObject {
 }
 object ExceptionRevokedEvent {
   
-  @scala.inline
-  def apply(exceptionId: integer, reason: String): ExceptionRevokedEvent = {
+  inline def apply(exceptionId: integer, reason: String): ExceptionRevokedEvent = {
     val __obj = js.Dynamic.literal(exceptionId = exceptionId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExceptionRevokedEvent]
   }
   
-  @scala.inline
-  implicit class ExceptionRevokedEventMutableBuilder[Self <: ExceptionRevokedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ExceptionRevokedEvent](x: Self) {
     
-    @scala.inline
-    def setExceptionId(value: integer): Self = StObject.set(x, "exceptionId", value.asInstanceOf[js.Any])
+    inline def setExceptionId(value: integer): Self = StObject.set(x, "exceptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

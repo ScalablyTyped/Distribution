@@ -33,13 +33,13 @@ object ecdsaKeyMod {
     
     var PublicKey: EcdsaPublicKey = js.native
     
-    var jwk: JsonWebKey | Null = js.native
+    /* protected */ var jwk: JsonWebKey | Null = js.native
     
-    var key: CryptoKey | Null = js.native
+    /* protected */ var key: CryptoKey | Null = js.native
     
-    var keyUsage: js.Array[String] | Null = js.native
+    /* protected */ var keyUsage: js.Array[String] | Null = js.native
     
-    var name: String = js.native
+    /* protected */ var name: String = js.native
   }
   
   @JSImport("xmldsigjs/build/types/xml/key_infos/ecdsa_key", "EcdsaPublicKey")

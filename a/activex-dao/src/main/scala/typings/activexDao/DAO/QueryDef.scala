@@ -33,7 +33,7 @@ trait QueryDef extends StObject {
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
   
-  @JSName("DAO.QueryDef_typekey")
+  /* private */ @JSName("DAO.QueryDef_typekey")
   var DAODotQueryDef_typekey: QueryDef = js.native
   
   val DateCreated: VarDate = js.native

@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputMedia extends StObject
 object InputMedia {
   
-  @scala.inline
-  def InputMediaPhoto(media: String): typings.nodeTelegramBotApi.mod.InputMediaPhoto = {
+  inline def InputMediaPhoto(media: String): typings.nodeTelegramBotApi.mod.InputMediaPhoto = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("photo")
     __obj.asInstanceOf[typings.nodeTelegramBotApi.mod.InputMediaPhoto]
   }
   
-  @scala.inline
-  def InputMediaVideo(media: String): typings.nodeTelegramBotApi.mod.InputMediaVideo = {
+  inline def InputMediaVideo(media: String): typings.nodeTelegramBotApi.mod.InputMediaVideo = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[typings.nodeTelegramBotApi.mod.InputMediaVideo]

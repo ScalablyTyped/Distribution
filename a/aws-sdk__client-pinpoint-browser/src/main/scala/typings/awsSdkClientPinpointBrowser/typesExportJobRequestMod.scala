@@ -34,38 +34,28 @@ object typesExportJobRequestMod {
   }
   object ExportJobRequest {
     
-    @scala.inline
-    def apply(): ExportJobRequest = {
+    inline def apply(): ExportJobRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExportJobRequest]
     }
     
-    @scala.inline
-    implicit class ExportJobRequestMutableBuilder[Self <: ExportJobRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ExportJobRequest](x: Self) {
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
       
-      @scala.inline
-      def setS3UrlPrefix(value: String): Self = StObject.set(x, "S3UrlPrefix", value.asInstanceOf[js.Any])
+      inline def setS3UrlPrefix(value: String): Self = StObject.set(x, "S3UrlPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3UrlPrefixUndefined: Self = StObject.set(x, "S3UrlPrefix", js.undefined)
+      inline def setS3UrlPrefixUndefined: Self = StObject.set(x, "S3UrlPrefix", js.undefined)
       
-      @scala.inline
-      def setSegmentId(value: String): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+      inline def setSegmentId(value: String): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
+      inline def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
       
-      @scala.inline
-      def setSegmentVersion(value: Double): Self = StObject.set(x, "SegmentVersion", value.asInstanceOf[js.Any])
+      inline def setSegmentVersion(value: Double): Self = StObject.set(x, "SegmentVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentVersionUndefined: Self = StObject.set(x, "SegmentVersion", js.undefined)
+      inline def setSegmentVersionUndefined: Self = StObject.set(x, "SegmentVersion", js.undefined)
     }
   }
   

@@ -14,20 +14,16 @@ object anon {
   }
   object CaCertPath {
     
-    @scala.inline
-    def apply(caCertPath: String, caKeyPath: String): CaCertPath = {
+    inline def apply(caCertPath: String, caKeyPath: String): CaCertPath = {
       val __obj = js.Dynamic.literal(caCertPath = caCertPath.asInstanceOf[js.Any], caKeyPath = caKeyPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[CaCertPath]
     }
     
-    @scala.inline
-    implicit class CaCertPathMutableBuilder[Self <: CaCertPath] (val x: Self) extends AnyVal {
+    extension [Self <: CaCertPath](x: Self) {
       
-      @scala.inline
-      def setCaCertPath(value: String): Self = StObject.set(x, "caCertPath", value.asInstanceOf[js.Any])
+      inline def setCaCertPath(value: String): Self = StObject.set(x, "caCertPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaKeyPath(value: String): Self = StObject.set(x, "caKeyPath", value.asInstanceOf[js.Any])
+      inline def setCaKeyPath(value: String): Self = StObject.set(x, "caKeyPath", value.asInstanceOf[js.Any])
     }
   }
 }

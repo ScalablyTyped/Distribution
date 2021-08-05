@@ -6,25 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BootstrapGridViewCellInfo extends StObject {
   
-  val instance: js.Any
+  /* protected */ val instance: js.Any
   
   val rowVisibleIndex: Double
 }
 object BootstrapGridViewCellInfo {
   
-  @scala.inline
-  def apply(instance: js.Any, rowVisibleIndex: Double): BootstrapGridViewCellInfo = {
+  inline def apply(instance: js.Any, rowVisibleIndex: Double): BootstrapGridViewCellInfo = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], rowVisibleIndex = rowVisibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapGridViewCellInfo]
   }
   
-  @scala.inline
-  implicit class BootstrapGridViewCellInfoMutableBuilder[Self <: BootstrapGridViewCellInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapGridViewCellInfo](x: Self) {
     
-    @scala.inline
-    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowVisibleIndex(value: Double): Self = StObject.set(x, "rowVisibleIndex", value.asInstanceOf[js.Any])
+    inline def setRowVisibleIndex(value: Double): Self = StObject.set(x, "rowVisibleIndex", value.asInstanceOf[js.Any])
   }
 }

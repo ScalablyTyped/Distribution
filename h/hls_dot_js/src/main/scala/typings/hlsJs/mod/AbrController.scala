@@ -42,8 +42,7 @@ trait AbrController extends StObject {
 }
 object AbrController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoLevelCapping: Double,
     handledEvents: js.Array[String],
     hls: Hls,
@@ -55,28 +54,20 @@ object AbrController {
     __obj.asInstanceOf[AbrController]
   }
   
-  @scala.inline
-  implicit class AbrControllerMutableBuilder[Self <: AbrController] (val x: Self) extends AnyVal {
+  extension [Self <: AbrController](x: Self) {
     
-    @scala.inline
-    def setAutoLevelCapping(value: Double): Self = StObject.set(x, "autoLevelCapping", value.asInstanceOf[js.Any])
+    inline def setAutoLevelCapping(value: Double): Self = StObject.set(x, "autoLevelCapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandledEvents(value: js.Array[String]): Self = StObject.set(x, "handledEvents", value.asInstanceOf[js.Any])
+    inline def setHandledEvents(value: js.Array[String]): Self = StObject.set(x, "handledEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandledEventsVarargs(value: String*): Self = StObject.set(x, "handledEvents", js.Array(value :_*))
+    inline def setHandledEventsVarargs(value: String*): Self = StObject.set(x, "handledEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setHls(value: Hls): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
+    inline def setHls(value: Hls): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastLoadedFragLevel(value: Double): Self = StObject.set(x, "lastLoadedFragLevel", value.asInstanceOf[js.Any])
+    inline def setLastLoadedFragLevel(value: Double): Self = StObject.set(x, "lastLoadedFragLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextAutoLevel(value: Double): Self = StObject.set(x, "nextAutoLevel", value.asInstanceOf[js.Any])
+    inline def setNextAutoLevel(value: Double): Self = StObject.set(x, "nextAutoLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseGenericHandler(value: Boolean): Self = StObject.set(x, "useGenericHandler", value.asInstanceOf[js.Any])
+    inline def setUseGenericHandler(value: Boolean): Self = StObject.set(x, "useGenericHandler", value.asInstanceOf[js.Any])
   }
 }

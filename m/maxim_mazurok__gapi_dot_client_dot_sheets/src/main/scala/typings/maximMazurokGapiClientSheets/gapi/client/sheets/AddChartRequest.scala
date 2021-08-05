@@ -14,19 +14,15 @@ trait AddChartRequest extends StObject {
 }
 object AddChartRequest {
   
-  @scala.inline
-  def apply(): AddChartRequest = {
+  inline def apply(): AddChartRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddChartRequest]
   }
   
-  @scala.inline
-  implicit class AddChartRequestMutableBuilder[Self <: AddChartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddChartRequest](x: Self) {
     
-    @scala.inline
-    def setChart(value: EmbeddedChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: EmbeddedChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
   }
 }

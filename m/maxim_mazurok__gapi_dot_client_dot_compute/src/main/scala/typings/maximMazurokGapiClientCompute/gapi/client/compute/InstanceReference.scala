@@ -11,19 +11,15 @@ trait InstanceReference extends StObject {
 }
 object InstanceReference {
   
-  @scala.inline
-  def apply(): InstanceReference = {
+  inline def apply(): InstanceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceReference]
   }
   
-  @scala.inline
-  implicit class InstanceReferenceMutableBuilder[Self <: InstanceReference] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceReference](x: Self) {
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
   }
 }

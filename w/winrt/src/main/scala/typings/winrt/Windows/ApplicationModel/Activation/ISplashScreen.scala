@@ -13,19 +13,15 @@ trait ISplashScreen extends StObject {
 }
 object ISplashScreen {
   
-  @scala.inline
-  def apply(imageLocation: Rect, ondismissed: js.Any): ISplashScreen = {
+  inline def apply(imageLocation: Rect, ondismissed: js.Any): ISplashScreen = {
     val __obj = js.Dynamic.literal(imageLocation = imageLocation.asInstanceOf[js.Any], ondismissed = ondismissed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISplashScreen]
   }
   
-  @scala.inline
-  implicit class ISplashScreenMutableBuilder[Self <: ISplashScreen] (val x: Self) extends AnyVal {
+  extension [Self <: ISplashScreen](x: Self) {
     
-    @scala.inline
-    def setImageLocation(value: Rect): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
+    inline def setImageLocation(value: Rect): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndismissed(value: js.Any): Self = StObject.set(x, "ondismissed", value.asInstanceOf[js.Any])
+    inline def setOndismissed(value: js.Any): Self = StObject.set(x, "ondismissed", value.asInstanceOf[js.Any])
   }
 }

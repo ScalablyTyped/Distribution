@@ -15,19 +15,15 @@ trait LayerViewProperties extends StObject {
 }
 object LayerViewProperties {
   
-  @scala.inline
-  def apply(): LayerViewProperties = {
+  inline def apply(): LayerViewProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerViewProperties]
   }
   
-  @scala.inline
-  implicit class LayerViewPropertiesMutableBuilder[Self <: LayerViewProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LayerViewProperties](x: Self) {
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

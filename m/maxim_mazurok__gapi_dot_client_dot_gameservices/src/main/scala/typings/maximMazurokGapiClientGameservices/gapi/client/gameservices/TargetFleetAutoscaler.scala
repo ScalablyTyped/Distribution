@@ -14,25 +14,19 @@ trait TargetFleetAutoscaler extends StObject {
 }
 object TargetFleetAutoscaler {
   
-  @scala.inline
-  def apply(): TargetFleetAutoscaler = {
+  inline def apply(): TargetFleetAutoscaler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetFleetAutoscaler]
   }
   
-  @scala.inline
-  implicit class TargetFleetAutoscalerMutableBuilder[Self <: TargetFleetAutoscaler] (val x: Self) extends AnyVal {
+  extension [Self <: TargetFleetAutoscaler](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSpecSource(value: SpecSource): Self = StObject.set(x, "specSource", value.asInstanceOf[js.Any])
+    inline def setSpecSource(value: SpecSource): Self = StObject.set(x, "specSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecSourceUndefined: Self = StObject.set(x, "specSource", js.undefined)
+    inline def setSpecSourceUndefined: Self = StObject.set(x, "specSource", js.undefined)
   }
 }

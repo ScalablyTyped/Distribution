@@ -10,7 +10,7 @@ trait HTMLMapElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLMapElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLMapElement_typekey")
   var MSHTMLDotHTMLMapElement_typekey: HTMLMapElement = js.native
   
   var accessKey: String = js.native

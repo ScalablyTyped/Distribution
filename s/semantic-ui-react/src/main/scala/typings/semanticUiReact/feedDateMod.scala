@@ -21,8 +21,7 @@ object feedDateMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object FeedDateProps {
     
-    @scala.inline
-    def apply(): FeedDateProps = {
+    inline def apply(): FeedDateProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeedDateProps]
     }
@@ -44,38 +43,28 @@ object feedDateMod extends Shortcut {
   }
   object StrictFeedDateProps {
     
-    @scala.inline
-    def apply(): StrictFeedDateProps = {
+    inline def apply(): StrictFeedDateProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictFeedDateProps]
     }
     
-    @scala.inline
-    implicit class StrictFeedDatePropsMutableBuilder[Self <: StrictFeedDateProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictFeedDateProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     }
   }
   

@@ -24,31 +24,23 @@ trait SchemaBackendServiceIAPOAuth2ClientInfo extends StObject {
 }
 object SchemaBackendServiceIAPOAuth2ClientInfo {
   
-  @scala.inline
-  def apply(): SchemaBackendServiceIAPOAuth2ClientInfo = {
+  inline def apply(): SchemaBackendServiceIAPOAuth2ClientInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendServiceIAPOAuth2ClientInfo]
   }
   
-  @scala.inline
-  implicit class SchemaBackendServiceIAPOAuth2ClientInfoMutableBuilder[Self <: SchemaBackendServiceIAPOAuth2ClientInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendServiceIAPOAuth2ClientInfo](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
-    @scala.inline
-    def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
+    inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
+    inline def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
     
-    @scala.inline
-    def setDeveloperEmailAddress(value: String): Self = StObject.set(x, "developerEmailAddress", value.asInstanceOf[js.Any])
+    inline def setDeveloperEmailAddress(value: String): Self = StObject.set(x, "developerEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperEmailAddressUndefined: Self = StObject.set(x, "developerEmailAddress", js.undefined)
+    inline def setDeveloperEmailAddressUndefined: Self = StObject.set(x, "developerEmailAddress", js.undefined)
   }
 }

@@ -11,22 +11,17 @@ trait GetDatabaseDdlResponse extends StObject {
 }
 object GetDatabaseDdlResponse {
   
-  @scala.inline
-  def apply(): GetDatabaseDdlResponse = {
+  inline def apply(): GetDatabaseDdlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDatabaseDdlResponse]
   }
   
-  @scala.inline
-  implicit class GetDatabaseDdlResponseMutableBuilder[Self <: GetDatabaseDdlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDatabaseDdlResponse](x: Self) {
     
-    @scala.inline
-    def setStatements(value: js.Array[String]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: js.Array[String]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+    inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
-    @scala.inline
-    def setStatementsVarargs(value: String*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: String*): Self = StObject.set(x, "statements", js.Array(value :_*))
   }
 }

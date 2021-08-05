@@ -32,31 +32,23 @@ trait SchemaMutationResult extends StObject {
 }
 object SchemaMutationResult {
   
-  @scala.inline
-  def apply(): SchemaMutationResult = {
+  inline def apply(): SchemaMutationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMutationResult]
   }
   
-  @scala.inline
-  implicit class SchemaMutationResultMutableBuilder[Self <: SchemaMutationResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMutationResult](x: Self) {
     
-    @scala.inline
-    def setConflictDetected(value: Boolean): Self = StObject.set(x, "conflictDetected", value.asInstanceOf[js.Any])
+    inline def setConflictDetected(value: Boolean): Self = StObject.set(x, "conflictDetected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictDetectedUndefined: Self = StObject.set(x, "conflictDetected", js.undefined)
+    inline def setConflictDetectedUndefined: Self = StObject.set(x, "conflictDetected", js.undefined)
     
-    @scala.inline
-    def setKey(value: SchemaKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: SchemaKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

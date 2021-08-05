@@ -836,17 +836,14 @@ object JsGridControl {
   }
   object GanttParameters {
     
-    @scala.inline
-    def apply(columns: ColumnInfoCollection): GanttParameters = {
+    inline def apply(columns: ColumnInfoCollection): GanttParameters = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
       __obj.asInstanceOf[GanttParameters]
     }
     
-    @scala.inline
-    implicit class GanttParametersMutableBuilder[Self <: GanttParameters] (val x: Self) extends AnyVal {
+    extension [Self <: GanttParameters](x: Self) {
       
-      @scala.inline
-      def setColumns(value: ColumnInfoCollection): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: ColumnInfoCollection): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     }
   }
   
@@ -877,8 +874,7 @@ object JsGridControl {
   }
   object Parameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bEnableDiffTracking: Boolean,
       bNotificationsEnabled: Boolean,
       commandMgr: CommandManager,
@@ -895,41 +891,29 @@ object JsGridControl {
       __obj.asInstanceOf[Parameters]
     }
     
-    @scala.inline
-    implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
+    extension [Self <: Parameters](x: Self) {
       
-      @scala.inline
-      def setBEnableDiffTracking(value: Boolean): Self = StObject.set(x, "bEnableDiffTracking", value.asInstanceOf[js.Any])
+      inline def setBEnableDiffTracking(value: Boolean): Self = StObject.set(x, "bEnableDiffTracking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBNotificationsEnabled(value: Boolean): Self = StObject.set(x, "bNotificationsEnabled", value.asInstanceOf[js.Any])
+      inline def setBNotificationsEnabled(value: Boolean): Self = StObject.set(x, "bNotificationsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandMgr(value: CommandManager): Self = StObject.set(x, "commandMgr", value.asInstanceOf[js.Any])
+      inline def setCommandMgr(value: CommandManager): Self = StObject.set(x, "commandMgr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledRowHeaderAutoStates(value: Set): Self = StObject.set(x, "enabledRowHeaderAutoStates", value.asInstanceOf[js.Any])
+      inline def setEnabledRowHeaderAutoStates(value: Set): Self = StObject.set(x, "enabledRowHeaderAutoStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
+      inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeaderHeight(value: Double): Self = StObject.set(x, "minHeaderHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeaderHeight(value: Double): Self = StObject.set(x, "minHeaderHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinRowHeight(value: Double): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
+      inline def setMinRowHeight(value: Double): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleManager(value: IStyleManager): Self = StObject.set(x, "styleManager", value.asInstanceOf[js.Any])
+      inline def setStyleManager(value: IStyleManager): Self = StObject.set(x, "styleManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableCache(value: TableCache): Self = StObject.set(x, "tableCache", value.asInstanceOf[js.Any])
+      inline def setTableCache(value: TableCache): Self = StObject.set(x, "tableCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableViewParams(value: TableViewParameters): Self = StObject.set(x, "tableViewParams", value.asInstanceOf[js.Any])
+      inline def setTableViewParams(value: TableViewParameters): Self = StObject.set(x, "tableViewParams", value.asInstanceOf[js.Any])
     }
   }
   
@@ -965,8 +949,7 @@ object JsGridControl {
   }
   object RowViewParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoFilterEntries: js.Any,
       autoFilterState: js.Any,
       filterState: js.Any,
@@ -985,47 +968,33 @@ object JsGridControl {
       __obj.asInstanceOf[RowViewParameters]
     }
     
-    @scala.inline
-    implicit class RowViewParametersMutableBuilder[Self <: RowViewParameters] (val x: Self) extends AnyVal {
+    extension [Self <: RowViewParameters](x: Self) {
       
-      @scala.inline
-      def setAutoFilterEntries(value: js.Any): Self = StObject.set(x, "autoFilterEntries", value.asInstanceOf[js.Any])
+      inline def setAutoFilterEntries(value: js.Any): Self = StObject.set(x, "autoFilterEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFilterState(value: js.Any): Self = StObject.set(x, "autoFilterState", value.asInstanceOf[js.Any])
+      inline def setAutoFilterState(value: js.Any): Self = StObject.set(x, "autoFilterState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterState(value: js.Any): Self = StObject.set(x, "filterState", value.asInstanceOf[js.Any])
+      inline def setFilterState(value: js.Any): Self = StObject.set(x, "filterState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredDescCounts(value: js.Any): Self = StObject.set(x, "filteredDescCounts", value.asInstanceOf[js.Any])
+      inline def setFilteredDescCounts(value: js.Any): Self = StObject.set(x, "filteredDescCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingLevel(value: js.Any): Self = StObject.set(x, "groupingLevel", value.asInstanceOf[js.Any])
+      inline def setGroupingLevel(value: js.Any): Self = StObject.set(x, "groupingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingRecordKeyPrefix(value: js.Any): Self = StObject.set(x, "groupingRecordKeyPrefix", value.asInstanceOf[js.Any])
+      inline def setGroupingRecordKeyPrefix(value: js.Any): Self = StObject.set(x, "groupingRecordKeyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHierarchyDelayLoadKeys(value: js.Any): Self = StObject.set(x, "hierarchyDelayLoadKeys", value.asInstanceOf[js.Any])
+      inline def setHierarchyDelayLoadKeys(value: js.Any): Self = StObject.set(x, "hierarchyDelayLoadKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHierarchyMode(value: HierarchyMode): Self = StObject.set(x, "hierarchyMode", value.asInstanceOf[js.Any])
+      inline def setHierarchyMode(value: HierarchyMode): Self = StObject.set(x, "hierarchyMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHierarchyState(value: js.Any): Self = StObject.set(x, "hierarchyState", value.asInstanceOf[js.Any])
+      inline def setHierarchyState(value: js.Any): Self = StObject.set(x, "hierarchyState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortState(value: js.Any): Self = StObject.set(x, "sortState", value.asInstanceOf[js.Any])
+      inline def setSortState(value: js.Any): Self = StObject.set(x, "sortState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopViewIdx(value: Double): Self = StObject.set(x, "topViewIdx", value.asInstanceOf[js.Any])
+      inline def setTopViewIdx(value: Double): Self = StObject.set(x, "topViewIdx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnfilteredHierarchyMgr(value: js.Any): Self = StObject.set(x, "unfilteredHierarchyMgr", value.asInstanceOf[js.Any])
+      inline def setUnfilteredHierarchyMgr(value: js.Any): Self = StObject.set(x, "unfilteredHierarchyMgr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1083,8 +1052,7 @@ object JsGridControl {
   }
   object TableViewParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowedSelectionTypes: SelectionTypeFlags,
       bAutoFilterableColumns: Boolean,
       bEditingEnabled: Boolean,
@@ -1114,89 +1082,61 @@ object JsGridControl {
       __obj.asInstanceOf[TableViewParameters]
     }
     
-    @scala.inline
-    implicit class TableViewParametersMutableBuilder[Self <: TableViewParameters] (val x: Self) extends AnyVal {
+    extension [Self <: TableViewParameters](x: Self) {
       
-      @scala.inline
-      def setAllowedSelectionTypes(value: SelectionTypeFlags): Self = StObject.set(x, "allowedSelectionTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedSelectionTypes(value: SelectionTypeFlags): Self = StObject.set(x, "allowedSelectionTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBAutoFilterableColumns(value: Boolean): Self = StObject.set(x, "bAutoFilterableColumns", value.asInstanceOf[js.Any])
+      inline def setBAutoFilterableColumns(value: Boolean): Self = StObject.set(x, "bAutoFilterableColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBEditingEnabled(value: Boolean): Self = StObject.set(x, "bEditingEnabled", value.asInstanceOf[js.Any])
+      inline def setBEditingEnabled(value: Boolean): Self = StObject.set(x, "bEditingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBFillControlEnabled(value: Boolean): Self = StObject.set(x, "bFillControlEnabled", value.asInstanceOf[js.Any])
+      inline def setBFillControlEnabled(value: Boolean): Self = StObject.set(x, "bFillControlEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBHidableColumns(value: Boolean): Self = StObject.set(x, "bHidableColumns", value.asInstanceOf[js.Any])
+      inline def setBHidableColumns(value: Boolean): Self = StObject.set(x, "bHidableColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBMovableColumns(value: Boolean): Self = StObject.set(x, "bMovableColumns", value.asInstanceOf[js.Any])
+      inline def setBMovableColumns(value: Boolean): Self = StObject.set(x, "bMovableColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBNewRowEnabled(value: Boolean): Self = StObject.set(x, "bNewRowEnabled", value.asInstanceOf[js.Any])
+      inline def setBNewRowEnabled(value: Boolean): Self = StObject.set(x, "bNewRowEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBRecordIndicatorCheckboxesEnabled(value: Boolean): Self = StObject.set(x, "bRecordIndicatorCheckboxesEnabled", value.asInstanceOf[js.Any])
+      inline def setBRecordIndicatorCheckboxesEnabled(value: Boolean): Self = StObject.set(x, "bRecordIndicatorCheckboxesEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBResizableColumns(value: Boolean): Self = StObject.set(x, "bResizableColumns", value.asInstanceOf[js.Any])
+      inline def setBResizableColumns(value: Boolean): Self = StObject.set(x, "bResizableColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBRowHeadersEnabled(value: Boolean): Self = StObject.set(x, "bRowHeadersEnabled", value.asInstanceOf[js.Any])
+      inline def setBRowHeadersEnabled(value: Boolean): Self = StObject.set(x, "bRowHeadersEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBSortableColumns(value: Boolean): Self = StObject.set(x, "bSortableColumns", value.asInstanceOf[js.Any])
+      inline def setBSortableColumns(value: Boolean): Self = StObject.set(x, "bSortableColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckSelectionCheckboxDisabledRecordKeys(value: js.Array[String]): Self = StObject.set(x, "checkSelectionCheckboxDisabledRecordKeys", value.asInstanceOf[js.Any])
+      inline def setCheckSelectionCheckboxDisabledRecordKeys(value: js.Array[String]): Self = StObject.set(x, "checkSelectionCheckboxDisabledRecordKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckSelectionCheckboxDisabledRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckboxDisabledRecordKeys", js.Array(value :_*))
+      inline def setCheckSelectionCheckboxDisabledRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckboxDisabledRecordKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setCheckSelectionCheckboxHiddenRecordKeys(value: js.Array[String]): Self = StObject.set(x, "checkSelectionCheckboxHiddenRecordKeys", value.asInstanceOf[js.Any])
+      inline def setCheckSelectionCheckboxHiddenRecordKeys(value: js.Array[String]): Self = StObject.set(x, "checkSelectionCheckboxHiddenRecordKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckSelectionCheckboxHiddenRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckboxHiddenRecordKeys", js.Array(value :_*))
+      inline def setCheckSelectionCheckboxHiddenRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckboxHiddenRecordKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setCheckSelectionCheckedRecordKeys(value: js.Array[String]): Self = StObject.set(x, "checkSelectionCheckedRecordKeys", value.asInstanceOf[js.Any])
+      inline def setCheckSelectionCheckedRecordKeys(value: js.Array[String]): Self = StObject.set(x, "checkSelectionCheckedRecordKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckSelectionCheckedRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckedRecordKeys", js.Array(value :_*))
+      inline def setCheckSelectionCheckedRecordKeysVarargs(value: String*): Self = StObject.set(x, "checkSelectionCheckedRecordKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setColumns(value: ColumnInfoCollection): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: ColumnInfoCollection): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultEditMode(value: EditMode): Self = StObject.set(x, "defaultEditMode", value.asInstanceOf[js.Any])
+      inline def setDefaultEditMode(value: EditMode): Self = StObject.set(x, "defaultEditMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGanttParams(value: GanttParameters): Self = StObject.set(x, "ganttParams", value.asInstanceOf[js.Any])
+      inline def setGanttParams(value: GanttParameters): Self = StObject.set(x, "ganttParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridFieldMap(value: StringDictionary[GridField]): Self = StObject.set(x, "gridFieldMap", value.asInstanceOf[js.Any])
+      inline def setGridFieldMap(value: StringDictionary[GridField]): Self = StObject.set(x, "gridFieldMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFieldName(value: String): Self = StObject.set(x, "keyFieldName", value.asInstanceOf[js.Any])
+      inline def setKeyFieldName(value: String): Self = StObject.set(x, "keyFieldName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageOverrides(value: js.Any): Self = StObject.set(x, "messageOverrides", value.asInstanceOf[js.Any])
+      inline def setMessageOverrides(value: js.Any): Self = StObject.set(x, "messageOverrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationalConstantsFieldKeyMap(value: js.Any): Self = StObject.set(x, "operationalConstantsFieldKeyMap", value.asInstanceOf[js.Any])
+      inline def setOperationalConstantsFieldKeyMap(value: js.Any): Self = StObject.set(x, "operationalConstantsFieldKeyMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaneLayout(value: PaneLayout): Self = StObject.set(x, "paneLayout", value.asInstanceOf[js.Any])
+      inline def setPaneLayout(value: PaneLayout): Self = StObject.set(x, "paneLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPivotedGridParams(value: PivotedGridParameters): Self = StObject.set(x, "pivotedGridParams", value.asInstanceOf[js.Any])
+      inline def setPivotedGridParams(value: PivotedGridParameters): Self = StObject.set(x, "pivotedGridParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowViewParams(value: RowViewParameters): Self = StObject.set(x, "rowViewParams", value.asInstanceOf[js.Any])
+      inline def setRowViewParams(value: RowViewParameters): Self = StObject.set(x, "rowViewParams", value.asInstanceOf[js.Any])
     }
   }
 }

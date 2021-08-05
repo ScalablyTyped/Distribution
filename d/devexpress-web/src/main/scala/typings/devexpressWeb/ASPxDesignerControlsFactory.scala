@@ -30,8 +30,7 @@ trait ASPxDesignerControlsFactory extends StObject {
 }
 object ASPxDesignerControlsFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createPopularBindingInfo: (ASPxDesignerElementSerializationInfoWithBindings, Boolean) => ASPxDesignerElementSerializationInfoWithBindings,
     getControlInfo: String => ASPxDesignerToolboxItem,
     getControlType: js.Any => String,
@@ -45,33 +44,24 @@ object ASPxDesignerControlsFactory {
     __obj.asInstanceOf[ASPxDesignerControlsFactory]
   }
   
-  @scala.inline
-  implicit class ASPxDesignerControlsFactoryMutableBuilder[Self <: ASPxDesignerControlsFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxDesignerControlsFactory](x: Self) {
     
-    @scala.inline
-    def setCreatePopularBindingInfo(
+    inline def setCreatePopularBindingInfo(
       value: (ASPxDesignerElementSerializationInfoWithBindings, Boolean) => ASPxDesignerElementSerializationInfoWithBindings
     ): Self = StObject.set(x, "createPopularBindingInfo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetControlInfo(value: String => ASPxDesignerToolboxItem): Self = StObject.set(x, "getControlInfo", js.Any.fromFunction1(value))
+    inline def setGetControlInfo(value: String => ASPxDesignerToolboxItem): Self = StObject.set(x, "getControlInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetControlType(value: js.Any => String): Self = StObject.set(x, "getControlType", js.Any.fromFunction1(value))
+    inline def setGetControlType(value: js.Any => String): Self = StObject.set(x, "getControlType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropertyInfo(value: (String, String) => ASPxDesignerElementSerializationInfo): Self = StObject.set(x, "getPropertyInfo", js.Any.fromFunction2(value))
+    inline def setGetPropertyInfo(value: (String, String) => ASPxDesignerElementSerializationInfo): Self = StObject.set(x, "getPropertyInfo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHideExpressionBindings(value: (String, /* repeated */ String) => Unit): Self = StObject.set(x, "hideExpressionBindings", js.Any.fromFunction2(value))
+    inline def setHideExpressionBindings(value: (String, /* repeated */ String) => Unit): Self = StObject.set(x, "hideExpressionBindings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInheritControl(value: (String, ASPxDesignerToolboxItem) => ASPxDesignerToolboxItem): Self = StObject.set(x, "inheritControl", js.Any.fromFunction2(value))
+    inline def setInheritControl(value: (String, ASPxDesignerToolboxItem) => ASPxDesignerToolboxItem): Self = StObject.set(x, "inheritControl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterControl(value: (String, ASPxDesignerToolboxItem) => Unit): Self = StObject.set(x, "registerControl", js.Any.fromFunction2(value))
+    inline def setRegisterControl(value: (String, ASPxDesignerToolboxItem) => Unit): Self = StObject.set(x, "registerControl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetExpressionBinding(value: (String, String, js.Array[String], String, js.Array[String]) => Unit): Self = StObject.set(x, "setExpressionBinding", js.Any.fromFunction5(value))
+    inline def setSetExpressionBinding(value: (String, String, js.Array[String], String, js.Array[String]) => Unit): Self = StObject.set(x, "setExpressionBinding", js.Any.fromFunction5(value))
   }
 }

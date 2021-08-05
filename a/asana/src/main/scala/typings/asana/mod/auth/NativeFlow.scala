@@ -32,13 +32,10 @@ object NativeFlow {
   @js.native
   val ^ : NativeFlowStatic = js.native
   
-  @scala.inline
-  implicit class NativeFlowMutableBuilder[Self <: NativeFlow] (val x: Self) extends AnyVal {
+  extension [Self <: NativeFlow](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String => Unit): Self = StObject.set(x, "accessToken", js.Any.fromFunction1(value))
+    inline def setAccessToken(value: String => Unit): Self = StObject.set(x, "accessToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPromptForCode(value: String => js.Any): Self = StObject.set(x, "promptForCode", js.Any.fromFunction1(value))
+    inline def setPromptForCode(value: String => js.Any): Self = StObject.set(x, "promptForCode", js.Any.fromFunction1(value))
   }
 }

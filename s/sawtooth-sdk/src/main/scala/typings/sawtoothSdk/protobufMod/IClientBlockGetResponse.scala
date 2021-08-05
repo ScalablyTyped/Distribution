@@ -15,31 +15,23 @@ trait IClientBlockGetResponse extends StObject {
 }
 object IClientBlockGetResponse {
   
-  @scala.inline
-  def apply(): IClientBlockGetResponse = {
+  inline def apply(): IClientBlockGetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBlockGetResponse]
   }
   
-  @scala.inline
-  implicit class IClientBlockGetResponseMutableBuilder[Self <: IClientBlockGetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBlockGetResponse](x: Self) {
     
-    @scala.inline
-    def setBlock(value: IBlock): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: IBlock): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockNull: Self = StObject.set(x, "block", null)
+    inline def setBlockNull: Self = StObject.set(x, "block", null)
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

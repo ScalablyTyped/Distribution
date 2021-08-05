@@ -46,8 +46,7 @@ object mod extends Shortcut {
   }
   object HCaptchaMethods {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       execute: () => Unit,
       onError: Error => Unit,
       onExpired: () => Unit,
@@ -59,26 +58,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HCaptchaMethods]
     }
     
-    @scala.inline
-    implicit class HCaptchaMethodsMutableBuilder[Self <: HCaptchaMethods] (val x: Self) extends AnyVal {
+    extension [Self <: HCaptchaMethods](x: Self) {
       
-      @scala.inline
-      def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpired(value: () => Unit): Self = StObject.set(x, "onExpired", js.Any.fromFunction0(value))
+      inline def setOnExpired(value: () => Unit): Self = StObject.set(x, "onExpired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnVerify(value: String => Unit): Self = StObject.set(x, "onVerify", js.Any.fromFunction1(value))
+      inline def setOnVerify(value: String => Unit): Self = StObject.set(x, "onVerify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnloadScript(value: () => Unit): Self = StObject.set(x, "onloadScript", js.Any.fromFunction0(value))
+      inline def setOnloadScript(value: () => Unit): Self = StObject.set(x, "onloadScript", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   
@@ -94,35 +86,26 @@ object mod extends Shortcut {
   }
   object HCaptchaProps {
     
-    @scala.inline
-    def apply(sitekey: String): HCaptchaProps = {
+    inline def apply(sitekey: String): HCaptchaProps = {
       val __obj = js.Dynamic.literal(sitekey = sitekey.asInstanceOf[js.Any])
       __obj.asInstanceOf[HCaptchaProps]
     }
     
-    @scala.inline
-    implicit class HCaptchaPropsMutableBuilder[Self <: HCaptchaProps] (val x: Self) extends AnyVal {
+    extension [Self <: HCaptchaProps](x: Self) {
       
-      @scala.inline
-      def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
+      inline def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTabindex(value: String): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
+      inline def setTabindex(value: String): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
+      inline def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   

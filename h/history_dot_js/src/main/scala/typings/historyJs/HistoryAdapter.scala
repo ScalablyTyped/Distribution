@@ -14,8 +14,7 @@ trait HistoryAdapter extends StObject {
 }
 object HistoryAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bind: (js.Any, String, js.Function0[Unit]) => Unit,
     onDomLoad: js.Function0[Unit] => Unit,
     trigger: (js.Any, String) => Unit
@@ -24,16 +23,12 @@ object HistoryAdapter {
     __obj.asInstanceOf[HistoryAdapter]
   }
   
-  @scala.inline
-  implicit class HistoryAdapterMutableBuilder[Self <: HistoryAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryAdapter](x: Self) {
     
-    @scala.inline
-    def setBind(value: (js.Any, String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
+    inline def setBind(value: (js.Any, String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnDomLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onDomLoad", js.Any.fromFunction1(value))
+    inline def setOnDomLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onDomLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrigger(value: (js.Any, String) => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
+    inline def setTrigger(value: (js.Any, String) => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
   }
 }

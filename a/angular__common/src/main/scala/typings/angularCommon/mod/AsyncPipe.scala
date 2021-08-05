@@ -16,23 +16,23 @@ class AsyncPipe protected ()
      with PipeTransform {
   def this(_ref: ChangeDetectorRef) = this()
   
-  var _dispose: js.Any = js.native
+  /* private */ var _dispose: js.Any = js.native
   
-  var _latestValue: js.Any = js.native
+  /* private */ var _latestValue: js.Any = js.native
   
-  var _obj: js.Any = js.native
+  /* private */ var _obj: js.Any = js.native
   
-  var _ref: js.Any = js.native
+  /* private */ var _ref: js.Any = js.native
   
-  var _selectStrategy: js.Any = js.native
+  /* private */ var _selectStrategy: js.Any = js.native
   
-  var _strategy: js.Any = js.native
+  /* private */ var _strategy: js.Any = js.native
   
-  var _subscribe: js.Any = js.native
+  /* private */ var _subscribe: js.Any = js.native
   
-  var _subscription: js.Any = js.native
+  /* private */ var _subscription: js.Any = js.native
   
-  var _updateLatestValue: js.Any = js.native
+  /* private */ var _updateLatestValue: js.Any = js.native
   
   /**
     * A callback method that performs custom clean-up, invoked immediately

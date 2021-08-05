@@ -19,19 +19,15 @@ trait AdUnitIdStyle extends StObject {
 }
 object AdUnitIdStyle {
   
-  @scala.inline
-  def apply(adUnitId: String, style: AdStyle): AdUnitIdStyle = {
+  inline def apply(adUnitId: String, style: AdStyle): AdUnitIdStyle = {
     val __obj = js.Dynamic.literal(adUnitId = adUnitId.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdUnitIdStyle]
   }
   
-  @scala.inline
-  implicit class AdUnitIdStyleMutableBuilder[Self <: AdUnitIdStyle] (val x: Self) extends AnyVal {
+  extension [Self <: AdUnitIdStyle](x: Self) {
     
-    @scala.inline
-    def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
+    inline def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: AdStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: AdStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait MediaPlayerFactory extends StObject {
 }
 object MediaPlayerFactory {
   
-  @scala.inline
-  def apply(create: () => MediaPlayerClass): MediaPlayerFactory = {
+  inline def apply(create: () => MediaPlayerClass): MediaPlayerFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create))
     __obj.asInstanceOf[MediaPlayerFactory]
   }
   
-  @scala.inline
-  implicit class MediaPlayerFactoryMutableBuilder[Self <: MediaPlayerFactory] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPlayerFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => MediaPlayerClass): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => MediaPlayerClass): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }
 }

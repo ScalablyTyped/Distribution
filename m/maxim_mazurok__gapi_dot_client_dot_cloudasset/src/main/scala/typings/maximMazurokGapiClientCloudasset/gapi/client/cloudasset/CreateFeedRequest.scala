@@ -17,25 +17,19 @@ trait CreateFeedRequest extends StObject {
 }
 object CreateFeedRequest {
   
-  @scala.inline
-  def apply(): CreateFeedRequest = {
+  inline def apply(): CreateFeedRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFeedRequest]
   }
   
-  @scala.inline
-  implicit class CreateFeedRequestMutableBuilder[Self <: CreateFeedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFeedRequest](x: Self) {
     
-    @scala.inline
-    def setFeed(value: Feed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
+    inline def setFeed(value: Feed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedId(value: String): Self = StObject.set(x, "feedId", value.asInstanceOf[js.Any])
+    inline def setFeedId(value: String): Self = StObject.set(x, "feedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedIdUndefined: Self = StObject.set(x, "feedId", js.undefined)
+    inline def setFeedIdUndefined: Self = StObject.set(x, "feedId", js.undefined)
     
-    @scala.inline
-    def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
+    inline def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
   }
 }

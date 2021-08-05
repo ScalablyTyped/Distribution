@@ -15,16 +15,13 @@ trait RemoteSystemDiscoveryTypeFilter
 }
 object RemoteSystemDiscoveryTypeFilter {
   
-  @scala.inline
-  def apply(remoteSystemKinds: IVectorView[String]): RemoteSystemDiscoveryTypeFilter = {
+  inline def apply(remoteSystemKinds: IVectorView[String]): RemoteSystemDiscoveryTypeFilter = {
     val __obj = js.Dynamic.literal(remoteSystemKinds = remoteSystemKinds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteSystemDiscoveryTypeFilter]
   }
   
-  @scala.inline
-  implicit class RemoteSystemDiscoveryTypeFilterMutableBuilder[Self <: RemoteSystemDiscoveryTypeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteSystemDiscoveryTypeFilter](x: Self) {
     
-    @scala.inline
-    def setRemoteSystemKinds(value: IVectorView[String]): Self = StObject.set(x, "remoteSystemKinds", value.asInstanceOf[js.Any])
+    inline def setRemoteSystemKinds(value: IVectorView[String]): Self = StObject.set(x, "remoteSystemKinds", value.asInstanceOf[js.Any])
   }
 }

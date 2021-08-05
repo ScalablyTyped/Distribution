@@ -56,40 +56,29 @@ trait SchemaPathMatcher extends StObject {
 }
 object SchemaPathMatcher {
   
-  @scala.inline
-  def apply(): SchemaPathMatcher = {
+  inline def apply(): SchemaPathMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPathMatcher]
   }
   
-  @scala.inline
-  implicit class SchemaPathMatcherMutableBuilder[Self <: SchemaPathMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPathMatcher](x: Self) {
     
-    @scala.inline
-    def setDefaultService(value: String): Self = StObject.set(x, "defaultService", value.asInstanceOf[js.Any])
+    inline def setDefaultService(value: String): Self = StObject.set(x, "defaultService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultServiceUndefined: Self = StObject.set(x, "defaultService", js.undefined)
+    inline def setDefaultServiceUndefined: Self = StObject.set(x, "defaultService", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPathRules(value: js.Array[SchemaPathRule]): Self = StObject.set(x, "pathRules", value.asInstanceOf[js.Any])
+    inline def setPathRules(value: js.Array[SchemaPathRule]): Self = StObject.set(x, "pathRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathRulesUndefined: Self = StObject.set(x, "pathRules", js.undefined)
+    inline def setPathRulesUndefined: Self = StObject.set(x, "pathRules", js.undefined)
     
-    @scala.inline
-    def setPathRulesVarargs(value: SchemaPathRule*): Self = StObject.set(x, "pathRules", js.Array(value :_*))
+    inline def setPathRulesVarargs(value: SchemaPathRule*): Self = StObject.set(x, "pathRules", js.Array(value :_*))
   }
 }

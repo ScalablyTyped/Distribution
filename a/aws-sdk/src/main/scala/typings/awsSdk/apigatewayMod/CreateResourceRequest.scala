@@ -23,22 +23,17 @@ trait CreateResourceRequest extends StObject {
 }
 object CreateResourceRequest {
   
-  @scala.inline
-  def apply(parentId: String, pathPart: String, restApiId: String): CreateResourceRequest = {
+  inline def apply(parentId: String, pathPart: String, restApiId: String): CreateResourceRequest = {
     val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any], pathPart = pathPart.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResourceRequest]
   }
   
-  @scala.inline
-  implicit class CreateResourceRequestMutableBuilder[Self <: CreateResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResourceRequest](x: Self) {
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPart(value: String): Self = StObject.set(x, "pathPart", value.asInstanceOf[js.Any])
+    inline def setPathPart(value: String): Self = StObject.set(x, "pathPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

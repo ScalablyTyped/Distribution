@@ -61,6 +61,5 @@ class Deposit protected ()
 }
 object Deposit {
   
-  @scala.inline
-  def apply: DepositConstructor = js.Dynamic.global.selectDynamic("Deposit").asInstanceOf[DepositConstructor]
+  inline def apply: DepositConstructor = js.Dynamic.global.selectDynamic("Deposit").asInstanceOf[DepositConstructor]
 }

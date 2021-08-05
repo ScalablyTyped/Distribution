@@ -10,19 +10,15 @@ trait ModifyEventSubscriptionResult extends StObject {
 }
 object ModifyEventSubscriptionResult {
   
-  @scala.inline
-  def apply(): ModifyEventSubscriptionResult = {
+  inline def apply(): ModifyEventSubscriptionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyEventSubscriptionResult]
   }
   
-  @scala.inline
-  implicit class ModifyEventSubscriptionResultMutableBuilder[Self <: ModifyEventSubscriptionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyEventSubscriptionResult](x: Self) {
     
-    @scala.inline
-    def setEventSubscription(value: EventSubscription): Self = StObject.set(x, "EventSubscription", value.asInstanceOf[js.Any])
+    inline def setEventSubscription(value: EventSubscription): Self = StObject.set(x, "EventSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSubscriptionUndefined: Self = StObject.set(x, "EventSubscription", js.undefined)
+    inline def setEventSubscriptionUndefined: Self = StObject.set(x, "EventSubscription", js.undefined)
   }
 }

@@ -19,17 +19,14 @@ object storyListViewMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(stories: js.Any): Props = {
+    inline def apply(stories: js.Any): Props = {
       val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setStories(value: js.Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+      inline def setStories(value: js.Any): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,26 +38,20 @@ object storyListViewMod {
   }
   object State {
     
-    @scala.inline
-    def apply(data: js.Array[js.Any], originalData: js.Array[js.Any]): State = {
+    inline def apply(data: js.Array[js.Any], originalData: js.Array[js.Any]): State = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalData = originalData.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setOriginalData(value: js.Array[js.Any]): Self = StObject.set(x, "originalData", value.asInstanceOf[js.Any])
+      inline def setOriginalData(value: js.Array[js.Any]): Self = StObject.set(x, "originalData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalDataVarargs(value: js.Any*): Self = StObject.set(x, "originalData", js.Array(value :_*))
+      inline def setOriginalDataVarargs(value: js.Any*): Self = StObject.set(x, "originalData", js.Array(value :_*))
     }
   }
   

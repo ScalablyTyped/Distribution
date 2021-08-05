@@ -22,22 +22,17 @@ trait ITreeResource extends StObject {
 }
 object ITreeResource {
   
-  @scala.inline
-  def apply(loadApplication: js.Any => Unit, loadMenu: js.Any => Unit, loadNodes: js.Any => Unit): ITreeResource = {
+  inline def apply(loadApplication: js.Any => Unit, loadMenu: js.Any => Unit, loadNodes: js.Any => Unit): ITreeResource = {
     val __obj = js.Dynamic.literal(loadApplication = js.Any.fromFunction1(loadApplication), loadMenu = js.Any.fromFunction1(loadMenu), loadNodes = js.Any.fromFunction1(loadNodes))
     __obj.asInstanceOf[ITreeResource]
   }
   
-  @scala.inline
-  implicit class ITreeResourceMutableBuilder[Self <: ITreeResource] (val x: Self) extends AnyVal {
+  extension [Self <: ITreeResource](x: Self) {
     
-    @scala.inline
-    def setLoadApplication(value: js.Any => Unit): Self = StObject.set(x, "loadApplication", js.Any.fromFunction1(value))
+    inline def setLoadApplication(value: js.Any => Unit): Self = StObject.set(x, "loadApplication", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadMenu(value: js.Any => Unit): Self = StObject.set(x, "loadMenu", js.Any.fromFunction1(value))
+    inline def setLoadMenu(value: js.Any => Unit): Self = StObject.set(x, "loadMenu", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadNodes(value: js.Any => Unit): Self = StObject.set(x, "loadNodes", js.Any.fromFunction1(value))
+    inline def setLoadNodes(value: js.Any => Unit): Self = StObject.set(x, "loadNodes", js.Any.fromFunction1(value))
   }
 }

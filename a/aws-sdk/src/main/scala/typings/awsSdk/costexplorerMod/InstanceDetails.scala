@@ -33,43 +33,31 @@ trait InstanceDetails extends StObject {
 }
 object InstanceDetails {
   
-  @scala.inline
-  def apply(): InstanceDetails = {
+  inline def apply(): InstanceDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceDetails]
   }
   
-  @scala.inline
-  implicit class InstanceDetailsMutableBuilder[Self <: InstanceDetails] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceDetails](x: Self) {
     
-    @scala.inline
-    def setEC2InstanceDetails(value: EC2InstanceDetails): Self = StObject.set(x, "EC2InstanceDetails", value.asInstanceOf[js.Any])
+    inline def setEC2InstanceDetails(value: EC2InstanceDetails): Self = StObject.set(x, "EC2InstanceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2InstanceDetailsUndefined: Self = StObject.set(x, "EC2InstanceDetails", js.undefined)
+    inline def setEC2InstanceDetailsUndefined: Self = StObject.set(x, "EC2InstanceDetails", js.undefined)
     
-    @scala.inline
-    def setESInstanceDetails(value: ESInstanceDetails): Self = StObject.set(x, "ESInstanceDetails", value.asInstanceOf[js.Any])
+    inline def setESInstanceDetails(value: ESInstanceDetails): Self = StObject.set(x, "ESInstanceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setESInstanceDetailsUndefined: Self = StObject.set(x, "ESInstanceDetails", js.undefined)
+    inline def setESInstanceDetailsUndefined: Self = StObject.set(x, "ESInstanceDetails", js.undefined)
     
-    @scala.inline
-    def setElastiCacheInstanceDetails(value: ElastiCacheInstanceDetails): Self = StObject.set(x, "ElastiCacheInstanceDetails", value.asInstanceOf[js.Any])
+    inline def setElastiCacheInstanceDetails(value: ElastiCacheInstanceDetails): Self = StObject.set(x, "ElastiCacheInstanceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElastiCacheInstanceDetailsUndefined: Self = StObject.set(x, "ElastiCacheInstanceDetails", js.undefined)
+    inline def setElastiCacheInstanceDetailsUndefined: Self = StObject.set(x, "ElastiCacheInstanceDetails", js.undefined)
     
-    @scala.inline
-    def setRDSInstanceDetails(value: RDSInstanceDetails): Self = StObject.set(x, "RDSInstanceDetails", value.asInstanceOf[js.Any])
+    inline def setRDSInstanceDetails(value: RDSInstanceDetails): Self = StObject.set(x, "RDSInstanceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRDSInstanceDetailsUndefined: Self = StObject.set(x, "RDSInstanceDetails", js.undefined)
+    inline def setRDSInstanceDetailsUndefined: Self = StObject.set(x, "RDSInstanceDetails", js.undefined)
     
-    @scala.inline
-    def setRedshiftInstanceDetails(value: RedshiftInstanceDetails): Self = StObject.set(x, "RedshiftInstanceDetails", value.asInstanceOf[js.Any])
+    inline def setRedshiftInstanceDetails(value: RedshiftInstanceDetails): Self = StObject.set(x, "RedshiftInstanceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftInstanceDetailsUndefined: Self = StObject.set(x, "RedshiftInstanceDetails", js.undefined)
+    inline def setRedshiftInstanceDetailsUndefined: Self = StObject.set(x, "RedshiftInstanceDetails", js.undefined)
   }
 }

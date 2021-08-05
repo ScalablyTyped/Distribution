@@ -15,10 +15,8 @@ object mod {
     * }
     * @returns {Function} prompt function
     */
-  @scala.inline
-  def apply(): Prompt = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Prompt]
-  @scala.inline
-  def apply(config: Config): Prompt = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Prompt]
+  inline def apply(): Prompt = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Prompt]
+  inline def apply(config: Config): Prompt = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Prompt]
   
   @JSImport("prompt-sync", JSImport.Namespace)
   @js.native
@@ -36,32 +34,24 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAutocomplete(value: /* input */ String => js.Array[String]): Self = StObject.set(x, "autocomplete", js.Any.fromFunction1(value))
+      inline def setAutocomplete(value: /* input */ String => js.Array[String]): Self = StObject.set(x, "autocomplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
+      inline def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
       
-      @scala.inline
-      def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setSigint(value: Boolean): Self = StObject.set(x, "sigint", value.asInstanceOf[js.Any])
+      inline def setSigint(value: Boolean): Self = StObject.set(x, "sigint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigintUndefined: Self = StObject.set(x, "sigint", js.undefined)
+      inline def setSigintUndefined: Self = StObject.set(x, "sigint", js.undefined)
     }
   }
   
@@ -87,8 +77,7 @@ object mod {
   }
   object History {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       atEnd: () => Boolean,
       atPenultimate: () => Boolean,
       atStart: () => Boolean,
@@ -103,35 +92,25 @@ object mod {
       __obj.asInstanceOf[History]
     }
     
-    @scala.inline
-    implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
+    extension [Self <: History](x: Self) {
       
-      @scala.inline
-      def setAtEnd(value: () => Boolean): Self = StObject.set(x, "atEnd", js.Any.fromFunction0(value))
+      inline def setAtEnd(value: () => Boolean): Self = StObject.set(x, "atEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAtPenultimate(value: () => Boolean): Self = StObject.set(x, "atPenultimate", js.Any.fromFunction0(value))
+      inline def setAtPenultimate(value: () => Boolean): Self = StObject.set(x, "atPenultimate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAtStart(value: () => Boolean): Self = StObject.set(x, "atStart", js.Any.fromFunction0(value))
+      inline def setAtStart(value: () => Boolean): Self = StObject.set(x, "atStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNext(value: () => String): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => String): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPastEnd(value: () => Boolean): Self = StObject.set(x, "pastEnd", js.Any.fromFunction0(value))
+      inline def setPastEnd(value: () => Boolean): Self = StObject.set(x, "pastEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrev(value: () => String): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
+      inline def setPrev(value: () => String): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: String => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: String => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+      inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     }
   }
   
@@ -147,38 +126,28 @@ object mod {
   }
   object Option {
     
-    @scala.inline
-    def apply(): Option = {
+    inline def apply(): Option = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setAsk(value: String): Self = StObject.set(x, "ask", value.asInstanceOf[js.Any])
+      inline def setAsk(value: String): Self = StObject.set(x, "ask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAskUndefined: Self = StObject.set(x, "ask", js.undefined)
+      inline def setAskUndefined: Self = StObject.set(x, "ask", js.undefined)
       
-      @scala.inline
-      def setAutocomplete(value: /* input */ String => js.Array[String]): Self = StObject.set(x, "autocomplete", js.Any.fromFunction1(value))
+      inline def setAutocomplete(value: /* input */ String => js.Array[String]): Self = StObject.set(x, "autocomplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
+      inline def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
       
-      @scala.inline
-      def setEcho(value: String): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
+      inline def setEcho(value: String): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
+      inline def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

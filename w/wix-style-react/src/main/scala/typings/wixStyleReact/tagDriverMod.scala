@@ -41,8 +41,7 @@ object tagDriverMod {
   }
   object TagDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => Unit,
       exists: () => Boolean,
       getLabel: () => String,
@@ -63,50 +62,35 @@ object tagDriverMod {
       __obj.asInstanceOf[TagDriver]
     }
     
-    @scala.inline
-    implicit class TagDriverMutableBuilder[Self <: TagDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TagDriver](x: Self) {
       
-      @scala.inline
-      def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDarkTheme(value: () => Boolean): Self = StObject.set(x, "isDarkTheme", js.Any.fromFunction0(value))
+      inline def setIsDarkTheme(value: () => Boolean): Self = StObject.set(x, "isDarkTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsErrorTheme(value: () => Boolean): Self = StObject.set(x, "isErrorTheme", js.Any.fromFunction0(value))
+      inline def setIsErrorTheme(value: () => Boolean): Self = StObject.set(x, "isErrorTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLarge(value: () => Boolean): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
+      inline def setIsLarge(value: () => Boolean): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMedium(value: () => Boolean): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
+      inline def setIsMedium(value: () => Boolean): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRemovable(value: () => Boolean): Self = StObject.set(x, "isRemovable", js.Any.fromFunction0(value))
+      inline def setIsRemovable(value: () => Boolean): Self = StObject.set(x, "isRemovable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSmall(value: () => Boolean): Self = StObject.set(x, "isSmall", js.Any.fromFunction0(value))
+      inline def setIsSmall(value: () => Boolean): Self = StObject.set(x, "isSmall", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsStandardTheme(value: () => Boolean): Self = StObject.set(x, "isStandardTheme", js.Any.fromFunction0(value))
+      inline def setIsStandardTheme(value: () => Boolean): Self = StObject.set(x, "isStandardTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsThumbExists(value: () => Boolean): Self = StObject.set(x, "isThumbExists", js.Any.fromFunction0(value))
+      inline def setIsThumbExists(value: () => Boolean): Self = StObject.set(x, "isThumbExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTiny(value: () => Boolean): Self = StObject.set(x, "isTiny", js.Any.fromFunction0(value))
+      inline def setIsTiny(value: () => Boolean): Self = StObject.set(x, "isTiny", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsWarningTheme(value: () => Boolean): Self = StObject.set(x, "isWarningTheme", js.Any.fromFunction0(value))
+      inline def setIsWarningTheme(value: () => Boolean): Self = StObject.set(x, "isWarningTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveTag(value: () => Unit): Self = StObject.set(x, "removeTag", js.Any.fromFunction0(value))
+      inline def setRemoveTag(value: () => Unit): Self = StObject.set(x, "removeTag", js.Any.fromFunction0(value))
     }
   }
 }

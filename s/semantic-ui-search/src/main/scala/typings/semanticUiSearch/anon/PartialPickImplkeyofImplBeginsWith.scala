@@ -14,25 +14,19 @@ trait PartialPickImplkeyofImplBeginsWith extends StObject {
 }
 object PartialPickImplkeyofImplBeginsWith {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplBeginsWith = {
+  inline def apply(): PartialPickImplkeyofImplBeginsWith = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplBeginsWith]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplBeginsWithMutableBuilder[Self <: PartialPickImplkeyofImplBeginsWith] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplBeginsWith](x: Self) {
     
-    @scala.inline
-    def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
+    inline def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginsWithUndefined: Self = StObject.set(x, "beginsWith", js.undefined)
+    inline def setBeginsWithUndefined: Self = StObject.set(x, "beginsWith", js.undefined)
     
-    @scala.inline
-    def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+    inline def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+    inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
   }
 }

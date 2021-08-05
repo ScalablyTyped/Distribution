@@ -12,19 +12,15 @@ trait LabelStyle extends StObject {
 }
 object LabelStyle {
   
-  @scala.inline
-  def apply(labelStyle: FontWeightNumber, tickLineStyle: LineWidthNumber): LabelStyle = {
+  inline def apply(labelStyle: FontWeightNumber, tickLineStyle: LineWidthNumber): LabelStyle = {
     val __obj = js.Dynamic.literal(labelStyle = labelStyle.asInstanceOf[js.Any], tickLineStyle = tickLineStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelStyle]
   }
   
-  @scala.inline
-  implicit class LabelStyleMutableBuilder[Self <: LabelStyle] (val x: Self) extends AnyVal {
+  extension [Self <: LabelStyle](x: Self) {
     
-    @scala.inline
-    def setLabelStyle(value: FontWeightNumber): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: FontWeightNumber): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickLineStyle(value: LineWidthNumber): Self = StObject.set(x, "tickLineStyle", value.asInstanceOf[js.Any])
+    inline def setTickLineStyle(value: LineWidthNumber): Self = StObject.set(x, "tickLineStyle", value.asInstanceOf[js.Any])
   }
 }

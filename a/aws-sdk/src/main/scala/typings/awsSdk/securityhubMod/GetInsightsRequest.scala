@@ -23,34 +23,25 @@ trait GetInsightsRequest extends StObject {
 }
 object GetInsightsRequest {
   
-  @scala.inline
-  def apply(): GetInsightsRequest = {
+  inline def apply(): GetInsightsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInsightsRequest]
   }
   
-  @scala.inline
-  implicit class GetInsightsRequestMutableBuilder[Self <: GetInsightsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInsightsRequest](x: Self) {
     
-    @scala.inline
-    def setInsightArns(value: ArnList): Self = StObject.set(x, "InsightArns", value.asInstanceOf[js.Any])
+    inline def setInsightArns(value: ArnList): Self = StObject.set(x, "InsightArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightArnsUndefined: Self = StObject.set(x, "InsightArns", js.undefined)
+    inline def setInsightArnsUndefined: Self = StObject.set(x, "InsightArns", js.undefined)
     
-    @scala.inline
-    def setInsightArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "InsightArns", js.Array(value :_*))
+    inline def setInsightArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "InsightArns", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

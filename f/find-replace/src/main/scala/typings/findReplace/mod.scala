@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(array: js.Array[js.Any], findFn: js.Function1[/* x */ js.Any, Boolean], replaceWiths: js.Any*): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], findFn.asInstanceOf[js.Any], replaceWiths.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def apply(array: js.Array[js.Any], findFn: js.Function1[/* x */ js.Any, Boolean], replaceWiths: js.Any*): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], findFn.asInstanceOf[js.Any], replaceWiths.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   @JSImport("find-replace", JSImport.Namespace)
   @js.native

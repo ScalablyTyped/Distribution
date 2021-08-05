@@ -10,16 +10,13 @@ trait X86BaseOperand extends StObject {
 }
 object X86BaseOperand {
   
-  @scala.inline
-  def apply(size: Double): X86BaseOperand = {
+  inline def apply(size: Double): X86BaseOperand = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[X86BaseOperand]
   }
   
-  @scala.inline
-  implicit class X86BaseOperandMutableBuilder[Self <: X86BaseOperand] (val x: Self) extends AnyVal {
+  extension [Self <: X86BaseOperand](x: Self) {
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

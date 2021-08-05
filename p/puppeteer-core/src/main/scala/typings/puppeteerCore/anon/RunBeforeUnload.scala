@@ -10,19 +10,15 @@ trait RunBeforeUnload extends StObject {
 }
 object RunBeforeUnload {
   
-  @scala.inline
-  def apply(): RunBeforeUnload = {
+  inline def apply(): RunBeforeUnload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunBeforeUnload]
   }
   
-  @scala.inline
-  implicit class RunBeforeUnloadMutableBuilder[Self <: RunBeforeUnload] (val x: Self) extends AnyVal {
+  extension [Self <: RunBeforeUnload](x: Self) {
     
-    @scala.inline
-    def setRunBeforeUnload(value: Boolean): Self = StObject.set(x, "runBeforeUnload", value.asInstanceOf[js.Any])
+    inline def setRunBeforeUnload(value: Boolean): Self = StObject.set(x, "runBeforeUnload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunBeforeUnloadUndefined: Self = StObject.set(x, "runBeforeUnload", js.undefined)
+    inline def setRunBeforeUnloadUndefined: Self = StObject.set(x, "runBeforeUnload", js.undefined)
   }
 }

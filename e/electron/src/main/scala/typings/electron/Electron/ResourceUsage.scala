@@ -20,8 +20,7 @@ trait ResourceUsage extends StObject {
 }
 object ResourceUsage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cssStyleSheets: MemoryUsageDetails,
     fonts: MemoryUsageDetails,
     images: MemoryUsageDetails,
@@ -33,25 +32,18 @@ object ResourceUsage {
     __obj.asInstanceOf[ResourceUsage]
   }
   
-  @scala.inline
-  implicit class ResourceUsageMutableBuilder[Self <: ResourceUsage] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceUsage](x: Self) {
     
-    @scala.inline
-    def setCssStyleSheets(value: MemoryUsageDetails): Self = StObject.set(x, "cssStyleSheets", value.asInstanceOf[js.Any])
+    inline def setCssStyleSheets(value: MemoryUsageDetails): Self = StObject.set(x, "cssStyleSheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFonts(value: MemoryUsageDetails): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    inline def setFonts(value: MemoryUsageDetails): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: MemoryUsageDetails): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: MemoryUsageDetails): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: MemoryUsageDetails): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: MemoryUsageDetails): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScripts(value: MemoryUsageDetails): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+    inline def setScripts(value: MemoryUsageDetails): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXslStyleSheets(value: MemoryUsageDetails): Self = StObject.set(x, "xslStyleSheets", value.asInstanceOf[js.Any])
+    inline def setXslStyleSheets(value: MemoryUsageDetails): Self = StObject.set(x, "xslStyleSheets", value.asInstanceOf[js.Any])
   }
 }

@@ -13,14 +13,10 @@ object getVpcEndpointServiceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVpcEndpointService(): js.Promise[GetVpcEndpointServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")().asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
-  @scala.inline
-  def getVpcEndpointService(args: Unit, opts: InvokeOptions): js.Promise[GetVpcEndpointServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
-  @scala.inline
-  def getVpcEndpointService(args: GetVpcEndpointServiceArgs): js.Promise[GetVpcEndpointServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
-  @scala.inline
-  def getVpcEndpointService(args: GetVpcEndpointServiceArgs, opts: InvokeOptions): js.Promise[GetVpcEndpointServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
+  inline def getVpcEndpointService(): js.Promise[GetVpcEndpointServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")().asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
+  inline def getVpcEndpointService(args: Unit, opts: InvokeOptions): js.Promise[GetVpcEndpointServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
+  inline def getVpcEndpointService(args: GetVpcEndpointServiceArgs): js.Promise[GetVpcEndpointServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
+  inline def getVpcEndpointService(args: GetVpcEndpointServiceArgs, opts: InvokeOptions): js.Promise[GetVpcEndpointServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcEndpointService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcEndpointServiceResult]]
   
   trait GetVpcEndpointServiceArgs extends StObject {
     
@@ -51,47 +47,34 @@ object getVpcEndpointServiceMod {
   }
   object GetVpcEndpointServiceArgs {
     
-    @scala.inline
-    def apply(): GetVpcEndpointServiceArgs = {
+    inline def apply(): GetVpcEndpointServiceArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetVpcEndpointServiceArgs]
     }
     
-    @scala.inline
-    implicit class GetVpcEndpointServiceArgsMutableBuilder[Self <: GetVpcEndpointServiceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpcEndpointServiceArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetVpcEndpointServiceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetVpcEndpointServiceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetVpcEndpointServiceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetVpcEndpointServiceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+      inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
       
-      @scala.inline
-      def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+      inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
+      inline def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -162,8 +145,7 @@ object getVpcEndpointServiceMod {
   }
   object GetVpcEndpointServiceResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acceptanceRequired: Boolean,
       arn: String,
       availabilityZones: js.Array[String],
@@ -182,68 +164,47 @@ object getVpcEndpointServiceMod {
       __obj.asInstanceOf[GetVpcEndpointServiceResult]
     }
     
-    @scala.inline
-    implicit class GetVpcEndpointServiceResultMutableBuilder[Self <: GetVpcEndpointServiceResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpcEndpointServiceResult](x: Self) {
       
-      @scala.inline
-      def setAcceptanceRequired(value: Boolean): Self = StObject.set(x, "acceptanceRequired", value.asInstanceOf[js.Any])
+      inline def setAcceptanceRequired(value: Boolean): Self = StObject.set(x, "acceptanceRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: js.Array[String]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setBaseEndpointDnsNames(value: js.Array[String]): Self = StObject.set(x, "baseEndpointDnsNames", value.asInstanceOf[js.Any])
+      inline def setBaseEndpointDnsNames(value: js.Array[String]): Self = StObject.set(x, "baseEndpointDnsNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseEndpointDnsNamesVarargs(value: String*): Self = StObject.set(x, "baseEndpointDnsNames", js.Array(value :_*))
+      inline def setBaseEndpointDnsNamesVarargs(value: String*): Self = StObject.set(x, "baseEndpointDnsNames", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetVpcEndpointServiceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetVpcEndpointServiceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetVpcEndpointServiceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetVpcEndpointServiceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagesVpcEndpoints(value: Boolean): Self = StObject.set(x, "managesVpcEndpoints", value.asInstanceOf[js.Any])
+      inline def setManagesVpcEndpoints(value: Boolean): Self = StObject.set(x, "managesVpcEndpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateDnsName(value: String): Self = StObject.set(x, "privateDnsName", value.asInstanceOf[js.Any])
+      inline def setPrivateDnsName(value: String): Self = StObject.set(x, "privateDnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+      inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+      inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointPolicySupported(value: Boolean): Self = StObject.set(x, "vpcEndpointPolicySupported", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointPolicySupported(value: Boolean): Self = StObject.set(x, "vpcEndpointPolicySupported", value.asInstanceOf[js.Any])
     }
   }
 }

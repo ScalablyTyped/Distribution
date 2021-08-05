@@ -40,8 +40,7 @@ trait BankAccountTokenOptions extends StObject {
 }
 object BankAccountTokenOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     account_holder_name: String,
     account_holder_type: individual | company,
     account_number: String,
@@ -52,28 +51,20 @@ object BankAccountTokenOptions {
     __obj.asInstanceOf[BankAccountTokenOptions]
   }
   
-  @scala.inline
-  implicit class BankAccountTokenOptionsMutableBuilder[Self <: BankAccountTokenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BankAccountTokenOptions](x: Self) {
     
-    @scala.inline
-    def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
+    inline def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
+    inline def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
+    inline def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
+    inline def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouting_numberUndefined: Self = StObject.set(x, "routing_number", js.undefined)
+    inline def setRouting_numberUndefined: Self = StObject.set(x, "routing_number", js.undefined)
   }
 }

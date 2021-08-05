@@ -42,37 +42,27 @@ trait ParamsResourceOrganizationsecuritypoliciesCopyrules
 }
 object ParamsResourceOrganizationsecuritypoliciesCopyrules {
   
-  @scala.inline
-  def apply(): ParamsResourceOrganizationsecuritypoliciesCopyrules = {
+  inline def apply(): ParamsResourceOrganizationsecuritypoliciesCopyrules = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOrganizationsecuritypoliciesCopyrules]
   }
   
-  @scala.inline
-  implicit class ParamsResourceOrganizationsecuritypoliciesCopyrulesMutableBuilder[Self <: ParamsResourceOrganizationsecuritypoliciesCopyrules] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceOrganizationsecuritypoliciesCopyrules](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
+    inline def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
+    inline def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
     
-    @scala.inline
-    def setSourceSecurityPolicy(value: String): Self = StObject.set(x, "sourceSecurityPolicy", value.asInstanceOf[js.Any])
+    inline def setSourceSecurityPolicy(value: String): Self = StObject.set(x, "sourceSecurityPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSecurityPolicyUndefined: Self = StObject.set(x, "sourceSecurityPolicy", js.undefined)
+    inline def setSourceSecurityPolicyUndefined: Self = StObject.set(x, "sourceSecurityPolicy", js.undefined)
   }
 }

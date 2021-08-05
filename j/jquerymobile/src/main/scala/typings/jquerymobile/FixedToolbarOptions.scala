@@ -28,73 +28,51 @@ trait FixedToolbarOptions extends StObject {
 }
 object FixedToolbarOptions {
   
-  @scala.inline
-  def apply(): FixedToolbarOptions = {
+  inline def apply(): FixedToolbarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FixedToolbarOptions]
   }
   
-  @scala.inline
-  implicit class FixedToolbarOptionsMutableBuilder[Self <: FixedToolbarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FixedToolbarOptions](x: Self) {
     
-    @scala.inline
-    def setDisablePageZoom(value: Boolean): Self = StObject.set(x, "disablePageZoom", value.asInstanceOf[js.Any])
+    inline def setDisablePageZoom(value: Boolean): Self = StObject.set(x, "disablePageZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisablePageZoomUndefined: Self = StObject.set(x, "disablePageZoom", js.undefined)
+    inline def setDisablePageZoomUndefined: Self = StObject.set(x, "disablePageZoom", js.undefined)
     
-    @scala.inline
-    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+    inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
-    @scala.inline
-    def setHideDuringFocus(value: String): Self = StObject.set(x, "hideDuringFocus", value.asInstanceOf[js.Any])
+    inline def setHideDuringFocus(value: String): Self = StObject.set(x, "hideDuringFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideDuringFocusUndefined: Self = StObject.set(x, "hideDuringFocus", js.undefined)
+    inline def setHideDuringFocusUndefined: Self = StObject.set(x, "hideDuringFocus", js.undefined)
     
-    @scala.inline
-    def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
+    inline def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
+    inline def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
     
-    @scala.inline
-    def setSupportBlacklist(value: js.Function): Self = StObject.set(x, "supportBlacklist", value.asInstanceOf[js.Any])
+    inline def setSupportBlacklist(value: js.Function): Self = StObject.set(x, "supportBlacklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportBlacklistUndefined: Self = StObject.set(x, "supportBlacklist", js.undefined)
+    inline def setSupportBlacklistUndefined: Self = StObject.set(x, "supportBlacklist", js.undefined)
     
-    @scala.inline
-    def setTapToggle(value: Boolean): Self = StObject.set(x, "tapToggle", value.asInstanceOf[js.Any])
+    inline def setTapToggle(value: Boolean): Self = StObject.set(x, "tapToggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapToggleBlacklist(value: String): Self = StObject.set(x, "tapToggleBlacklist", value.asInstanceOf[js.Any])
+    inline def setTapToggleBlacklist(value: String): Self = StObject.set(x, "tapToggleBlacklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapToggleBlacklistUndefined: Self = StObject.set(x, "tapToggleBlacklist", js.undefined)
+    inline def setTapToggleBlacklistUndefined: Self = StObject.set(x, "tapToggleBlacklist", js.undefined)
     
-    @scala.inline
-    def setTapToggleUndefined: Self = StObject.set(x, "tapToggle", js.undefined)
+    inline def setTapToggleUndefined: Self = StObject.set(x, "tapToggle", js.undefined)
     
-    @scala.inline
-    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    @scala.inline
-    def setUpdatePagePadding(value: Boolean): Self = StObject.set(x, "updatePagePadding", value.asInstanceOf[js.Any])
+    inline def setUpdatePagePadding(value: Boolean): Self = StObject.set(x, "updatePagePadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatePagePaddingUndefined: Self = StObject.set(x, "updatePagePadding", js.undefined)
+    inline def setUpdatePagePaddingUndefined: Self = StObject.set(x, "updatePagePadding", js.undefined)
     
-    @scala.inline
-    def setVisibleOnPageShow(value: Boolean): Self = StObject.set(x, "visibleOnPageShow", value.asInstanceOf[js.Any])
+    inline def setVisibleOnPageShow(value: Boolean): Self = StObject.set(x, "visibleOnPageShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleOnPageShowUndefined: Self = StObject.set(x, "visibleOnPageShow", js.undefined)
+    inline def setVisibleOnPageShowUndefined: Self = StObject.set(x, "visibleOnPageShow", js.undefined)
   }
 }

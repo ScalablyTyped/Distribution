@@ -11,10 +11,8 @@ object rdsGetEngineVersionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEngineVersion(args: GetEngineVersionArgs): js.Promise[GetEngineVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEngineVersionResult]]
-  @scala.inline
-  def getEngineVersion(args: GetEngineVersionArgs, opts: InvokeOptions): js.Promise[GetEngineVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEngineVersionResult]]
+  inline def getEngineVersion(args: GetEngineVersionArgs): js.Promise[GetEngineVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEngineVersionResult]]
+  inline def getEngineVersion(args: GetEngineVersionArgs, opts: InvokeOptions): js.Promise[GetEngineVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEngineVersionResult]]
   
   trait GetEngineVersionArgs extends StObject {
     
@@ -40,38 +38,28 @@ object rdsGetEngineVersionMod {
   }
   object GetEngineVersionArgs {
     
-    @scala.inline
-    def apply(engine: String): GetEngineVersionArgs = {
+    inline def apply(engine: String): GetEngineVersionArgs = {
       val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetEngineVersionArgs]
     }
     
-    @scala.inline
-    implicit class GetEngineVersionArgsMutableBuilder[Self <: GetEngineVersionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetEngineVersionArgs](x: Self) {
       
-      @scala.inline
-      def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterGroupFamily(value: String): Self = StObject.set(x, "parameterGroupFamily", value.asInstanceOf[js.Any])
+      inline def setParameterGroupFamily(value: String): Self = StObject.set(x, "parameterGroupFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterGroupFamilyUndefined: Self = StObject.set(x, "parameterGroupFamily", js.undefined)
+      inline def setParameterGroupFamilyUndefined: Self = StObject.set(x, "parameterGroupFamily", js.undefined)
       
-      @scala.inline
-      def setPreferredVersions(value: js.Array[String]): Self = StObject.set(x, "preferredVersions", value.asInstanceOf[js.Any])
+      inline def setPreferredVersions(value: js.Array[String]): Self = StObject.set(x, "preferredVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredVersionsUndefined: Self = StObject.set(x, "preferredVersions", js.undefined)
+      inline def setPreferredVersionsUndefined: Self = StObject.set(x, "preferredVersions", js.undefined)
       
-      @scala.inline
-      def setPreferredVersionsVarargs(value: String*): Self = StObject.set(x, "preferredVersions", js.Array(value :_*))
+      inline def setPreferredVersionsVarargs(value: String*): Self = StObject.set(x, "preferredVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -162,8 +150,7 @@ object rdsGetEngineVersionMod {
   }
   object GetEngineVersionResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultCharacterSet: String,
       engine: String,
       engineDescription: String,
@@ -187,89 +174,61 @@ object rdsGetEngineVersionMod {
       __obj.asInstanceOf[GetEngineVersionResult]
     }
     
-    @scala.inline
-    implicit class GetEngineVersionResultMutableBuilder[Self <: GetEngineVersionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetEngineVersionResult](x: Self) {
       
-      @scala.inline
-      def setDefaultCharacterSet(value: String): Self = StObject.set(x, "defaultCharacterSet", value.asInstanceOf[js.Any])
+      inline def setDefaultCharacterSet(value: String): Self = StObject.set(x, "defaultCharacterSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineDescription(value: String): Self = StObject.set(x, "engineDescription", value.asInstanceOf[js.Any])
+      inline def setEngineDescription(value: String): Self = StObject.set(x, "engineDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportableLogTypes(value: js.Array[String]): Self = StObject.set(x, "exportableLogTypes", value.asInstanceOf[js.Any])
+      inline def setExportableLogTypes(value: js.Array[String]): Self = StObject.set(x, "exportableLogTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportableLogTypesVarargs(value: String*): Self = StObject.set(x, "exportableLogTypes", js.Array(value :_*))
+      inline def setExportableLogTypesVarargs(value: String*): Self = StObject.set(x, "exportableLogTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterGroupFamily(value: String): Self = StObject.set(x, "parameterGroupFamily", value.asInstanceOf[js.Any])
+      inline def setParameterGroupFamily(value: String): Self = StObject.set(x, "parameterGroupFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredVersions(value: js.Array[String]): Self = StObject.set(x, "preferredVersions", value.asInstanceOf[js.Any])
+      inline def setPreferredVersions(value: js.Array[String]): Self = StObject.set(x, "preferredVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredVersionsUndefined: Self = StObject.set(x, "preferredVersions", js.undefined)
+      inline def setPreferredVersionsUndefined: Self = StObject.set(x, "preferredVersions", js.undefined)
       
-      @scala.inline
-      def setPreferredVersionsVarargs(value: String*): Self = StObject.set(x, "preferredVersions", js.Array(value :_*))
+      inline def setPreferredVersionsVarargs(value: String*): Self = StObject.set(x, "preferredVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedCharacterSets(value: js.Array[String]): Self = StObject.set(x, "supportedCharacterSets", value.asInstanceOf[js.Any])
+      inline def setSupportedCharacterSets(value: js.Array[String]): Self = StObject.set(x, "supportedCharacterSets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedCharacterSetsVarargs(value: String*): Self = StObject.set(x, "supportedCharacterSets", js.Array(value :_*))
+      inline def setSupportedCharacterSetsVarargs(value: String*): Self = StObject.set(x, "supportedCharacterSets", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedFeatureNames(value: js.Array[String]): Self = StObject.set(x, "supportedFeatureNames", value.asInstanceOf[js.Any])
+      inline def setSupportedFeatureNames(value: js.Array[String]): Self = StObject.set(x, "supportedFeatureNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedFeatureNamesVarargs(value: String*): Self = StObject.set(x, "supportedFeatureNames", js.Array(value :_*))
+      inline def setSupportedFeatureNamesVarargs(value: String*): Self = StObject.set(x, "supportedFeatureNames", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedModes(value: js.Array[String]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
+      inline def setSupportedModes(value: js.Array[String]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedModesVarargs(value: String*): Self = StObject.set(x, "supportedModes", js.Array(value :_*))
+      inline def setSupportedModesVarargs(value: String*): Self = StObject.set(x, "supportedModes", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedTimezones(value: js.Array[String]): Self = StObject.set(x, "supportedTimezones", value.asInstanceOf[js.Any])
+      inline def setSupportedTimezones(value: js.Array[String]): Self = StObject.set(x, "supportedTimezones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedTimezonesVarargs(value: String*): Self = StObject.set(x, "supportedTimezones", js.Array(value :_*))
+      inline def setSupportedTimezonesVarargs(value: String*): Self = StObject.set(x, "supportedTimezones", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportsGlobalDatabases(value: Boolean): Self = StObject.set(x, "supportsGlobalDatabases", value.asInstanceOf[js.Any])
+      inline def setSupportsGlobalDatabases(value: Boolean): Self = StObject.set(x, "supportsGlobalDatabases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsLogExportsToCloudwatch(value: Boolean): Self = StObject.set(x, "supportsLogExportsToCloudwatch", value.asInstanceOf[js.Any])
+      inline def setSupportsLogExportsToCloudwatch(value: Boolean): Self = StObject.set(x, "supportsLogExportsToCloudwatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsParallelQuery(value: Boolean): Self = StObject.set(x, "supportsParallelQuery", value.asInstanceOf[js.Any])
+      inline def setSupportsParallelQuery(value: Boolean): Self = StObject.set(x, "supportsParallelQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsReadReplica(value: Boolean): Self = StObject.set(x, "supportsReadReplica", value.asInstanceOf[js.Any])
+      inline def setSupportsReadReplica(value: Boolean): Self = StObject.set(x, "supportsReadReplica", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUpgradeTargets(value: js.Array[String]): Self = StObject.set(x, "validUpgradeTargets", value.asInstanceOf[js.Any])
+      inline def setValidUpgradeTargets(value: js.Array[String]): Self = StObject.set(x, "validUpgradeTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUpgradeTargetsVarargs(value: String*): Self = StObject.set(x, "validUpgradeTargets", js.Array(value :_*))
+      inline def setValidUpgradeTargetsVarargs(value: String*): Self = StObject.set(x, "validUpgradeTargets", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionDescription(value: String): Self = StObject.set(x, "versionDescription", value.asInstanceOf[js.Any])
+      inline def setVersionDescription(value: String): Self = StObject.set(x, "versionDescription", value.asInstanceOf[js.Any])
     }
   }
 }

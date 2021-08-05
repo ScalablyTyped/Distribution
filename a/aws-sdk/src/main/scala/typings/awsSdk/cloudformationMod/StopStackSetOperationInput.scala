@@ -18,19 +18,15 @@ trait StopStackSetOperationInput extends StObject {
 }
 object StopStackSetOperationInput {
   
-  @scala.inline
-  def apply(OperationId: ClientRequestToken, StackSetName: StackSetName): StopStackSetOperationInput = {
+  inline def apply(OperationId: ClientRequestToken, StackSetName: StackSetName): StopStackSetOperationInput = {
     val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopStackSetOperationInput]
   }
   
-  @scala.inline
-  implicit class StopStackSetOperationInputMutableBuilder[Self <: StopStackSetOperationInput] (val x: Self) extends AnyVal {
+  extension [Self <: StopStackSetOperationInput](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
+    inline def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait XImportable
 }
 object XImportable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createImportDescriptor: Boolean => SafeArray[PropertyValue],
     doImport: SeqEquiv[PropertyValue] => Unit,
@@ -34,13 +33,10 @@ object XImportable {
     __obj.asInstanceOf[XImportable]
   }
   
-  @scala.inline
-  implicit class XImportableMutableBuilder[Self <: XImportable] (val x: Self) extends AnyVal {
+  extension [Self <: XImportable](x: Self) {
     
-    @scala.inline
-    def setCreateImportDescriptor(value: Boolean => SafeArray[PropertyValue]): Self = StObject.set(x, "createImportDescriptor", js.Any.fromFunction1(value))
+    inline def setCreateImportDescriptor(value: Boolean => SafeArray[PropertyValue]): Self = StObject.set(x, "createImportDescriptor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoImport(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "doImport", js.Any.fromFunction1(value))
+    inline def setDoImport(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "doImport", js.Any.fromFunction1(value))
   }
 }

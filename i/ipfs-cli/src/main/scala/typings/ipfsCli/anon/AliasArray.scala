@@ -16,29 +16,22 @@ trait AliasArray extends StObject {
 }
 object AliasArray {
   
-  @scala.inline
-  def apply(alias: js.Array[String], default: Double, describe: String, `type`: String): AliasArray = {
+  inline def apply(alias: js.Array[String], default: Double, describe: String, `type`: String): AliasArray = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasArray]
   }
   
-  @scala.inline
-  implicit class AliasArrayMutableBuilder[Self <: AliasArray] (val x: Self) extends AnyVal {
+  extension [Self <: AliasArray](x: Self) {
     
-    @scala.inline
-    def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+    inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+    inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

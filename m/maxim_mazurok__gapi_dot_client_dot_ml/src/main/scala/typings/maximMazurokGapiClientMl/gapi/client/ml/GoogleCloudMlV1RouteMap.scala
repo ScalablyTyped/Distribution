@@ -30,25 +30,19 @@ trait GoogleCloudMlV1RouteMap extends StObject {
 }
 object GoogleCloudMlV1RouteMap {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1RouteMap = {
+  inline def apply(): GoogleCloudMlV1RouteMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1RouteMap]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1RouteMapMutableBuilder[Self <: GoogleCloudMlV1RouteMap] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1RouteMap](x: Self) {
     
-    @scala.inline
-    def setHealth(value: String): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
+    inline def setHealth(value: String): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
+    inline def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
-    @scala.inline
-    def setPredict(value: String): Self = StObject.set(x, "predict", value.asInstanceOf[js.Any])
+    inline def setPredict(value: String): Self = StObject.set(x, "predict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictUndefined: Self = StObject.set(x, "predict", js.undefined)
+    inline def setPredictUndefined: Self = StObject.set(x, "predict", js.undefined)
   }
 }

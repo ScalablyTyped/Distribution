@@ -37,8 +37,7 @@ object workspaceFoldersMod {
   }
   object WorkspaceFolders {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getWorkspaceFolders: () => js.Promise[js.Array[WorkspaceFolder] | Null],
       onDidChangeWorkspaceFolders: (/* listener */ js.Function1[WorkspaceFoldersChangeEvent, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): WorkspaceFolders = {
@@ -46,14 +45,11 @@ object workspaceFoldersMod {
       __obj.asInstanceOf[WorkspaceFolders]
     }
     
-    @scala.inline
-    implicit class WorkspaceFoldersMutableBuilder[Self <: WorkspaceFolders] (val x: Self) extends AnyVal {
+    extension [Self <: WorkspaceFolders](x: Self) {
       
-      @scala.inline
-      def setGetWorkspaceFolders(value: () => js.Promise[js.Array[WorkspaceFolder] | Null]): Self = StObject.set(x, "getWorkspaceFolders", js.Any.fromFunction0(value))
+      inline def setGetWorkspaceFolders(value: () => js.Promise[js.Array[WorkspaceFolder] | Null]): Self = StObject.set(x, "getWorkspaceFolders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDidChangeWorkspaceFolders(
+      inline def setOnDidChangeWorkspaceFolders(
         value: (/* listener */ js.Function1[WorkspaceFoldersChangeEvent, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
       ): Self = StObject.set(x, "onDidChangeWorkspaceFolders", js.Any.fromFunction3(value))
     }

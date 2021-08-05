@@ -11,19 +11,15 @@ trait VideoOptions extends StObject {
 }
 object VideoOptions {
   
-  @scala.inline
-  def apply(): VideoOptions = {
+  inline def apply(): VideoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoOptions]
   }
   
-  @scala.inline
-  implicit class VideoOptionsMutableBuilder[Self <: VideoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VideoOptions](x: Self) {
     
-    @scala.inline
-    def setComparisonEndPoint(value: String): Self = StObject.set(x, "comparisonEndPoint", value.asInstanceOf[js.Any])
+    inline def setComparisonEndPoint(value: String): Self = StObject.set(x, "comparisonEndPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonEndPointUndefined: Self = StObject.set(x, "comparisonEndPoint", js.undefined)
+    inline def setComparisonEndPointUndefined: Self = StObject.set(x, "comparisonEndPoint", js.undefined)
   }
 }

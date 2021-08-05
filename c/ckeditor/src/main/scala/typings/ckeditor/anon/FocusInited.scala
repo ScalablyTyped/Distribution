@@ -12,25 +12,19 @@ trait FocusInited extends StObject {
 }
 object FocusInited {
   
-  @scala.inline
-  def apply(): FocusInited = {
+  inline def apply(): FocusInited = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FocusInited]
   }
   
-  @scala.inline
-  implicit class FocusInitedMutableBuilder[Self <: FocusInited] (val x: Self) extends AnyVal {
+  extension [Self <: FocusInited](x: Self) {
     
-    @scala.inline
-    def setFocusInited(value: Boolean): Self = StObject.set(x, "focusInited", value.asInstanceOf[js.Any])
+    inline def setFocusInited(value: Boolean): Self = StObject.set(x, "focusInited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusInitedUndefined: Self = StObject.set(x, "focusInited", js.undefined)
+    inline def setFocusInitedUndefined: Self = StObject.set(x, "focusInited", js.undefined)
     
-    @scala.inline
-    def setInitOnlyNew(value: Boolean): Self = StObject.set(x, "initOnlyNew", value.asInstanceOf[js.Any])
+    inline def setInitOnlyNew(value: Boolean): Self = StObject.set(x, "initOnlyNew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitOnlyNewUndefined: Self = StObject.set(x, "initOnlyNew", js.undefined)
+    inline def setInitOnlyNewUndefined: Self = StObject.set(x, "initOnlyNew", js.undefined)
   }
 }

@@ -258,8 +258,7 @@ object currencyMod extends Shortcut {
   }
   object Currencies {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AED: Currency,
       AFN: Currency,
       ALL: Currency,
@@ -385,368 +384,247 @@ object currencyMod extends Shortcut {
       __obj.asInstanceOf[Currencies]
     }
     
-    @scala.inline
-    implicit class CurrenciesMutableBuilder[Self <: Currencies] (val x: Self) extends AnyVal {
+    extension [Self <: Currencies](x: Self) {
       
-      @scala.inline
-      def setAED(value: Currency): Self = StObject.set(x, "AED", value.asInstanceOf[js.Any])
+      inline def setAED(value: Currency): Self = StObject.set(x, "AED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAFN(value: Currency): Self = StObject.set(x, "AFN", value.asInstanceOf[js.Any])
+      inline def setAFN(value: Currency): Self = StObject.set(x, "AFN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALL(value: Currency): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
+      inline def setALL(value: Currency): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAMD(value: Currency): Self = StObject.set(x, "AMD", value.asInstanceOf[js.Any])
+      inline def setAMD(value: Currency): Self = StObject.set(x, "AMD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARS(value: Currency): Self = StObject.set(x, "ARS", value.asInstanceOf[js.Any])
+      inline def setARS(value: Currency): Self = StObject.set(x, "ARS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUD(value: Currency): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
+      inline def setAUD(value: Currency): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAZN(value: Currency): Self = StObject.set(x, "AZN", value.asInstanceOf[js.Any])
+      inline def setAZN(value: Currency): Self = StObject.set(x, "AZN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBAM(value: Currency): Self = StObject.set(x, "BAM", value.asInstanceOf[js.Any])
+      inline def setBAM(value: Currency): Self = StObject.set(x, "BAM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBDT(value: Currency): Self = StObject.set(x, "BDT", value.asInstanceOf[js.Any])
+      inline def setBDT(value: Currency): Self = StObject.set(x, "BDT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBGN(value: Currency): Self = StObject.set(x, "BGN", value.asInstanceOf[js.Any])
+      inline def setBGN(value: Currency): Self = StObject.set(x, "BGN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBHD(value: Currency): Self = StObject.set(x, "BHD", value.asInstanceOf[js.Any])
+      inline def setBHD(value: Currency): Self = StObject.set(x, "BHD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBIF(value: Currency): Self = StObject.set(x, "BIF", value.asInstanceOf[js.Any])
+      inline def setBIF(value: Currency): Self = StObject.set(x, "BIF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBND(value: Currency): Self = StObject.set(x, "BND", value.asInstanceOf[js.Any])
+      inline def setBND(value: Currency): Self = StObject.set(x, "BND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBOB(value: Currency): Self = StObject.set(x, "BOB", value.asInstanceOf[js.Any])
+      inline def setBOB(value: Currency): Self = StObject.set(x, "BOB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBRL(value: Currency): Self = StObject.set(x, "BRL", value.asInstanceOf[js.Any])
+      inline def setBRL(value: Currency): Self = StObject.set(x, "BRL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBTC(value: Currency): Self = StObject.set(x, "BTC", value.asInstanceOf[js.Any])
+      inline def setBTC(value: Currency): Self = StObject.set(x, "BTC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBWP(value: Currency): Self = StObject.set(x, "BWP", value.asInstanceOf[js.Any])
+      inline def setBWP(value: Currency): Self = StObject.set(x, "BWP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBYR(value: Currency): Self = StObject.set(x, "BYR", value.asInstanceOf[js.Any])
+      inline def setBYR(value: Currency): Self = StObject.set(x, "BYR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBZD(value: Currency): Self = StObject.set(x, "BZD", value.asInstanceOf[js.Any])
+      inline def setBZD(value: Currency): Self = StObject.set(x, "BZD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAD(value: Currency): Self = StObject.set(x, "CAD", value.asInstanceOf[js.Any])
+      inline def setCAD(value: Currency): Self = StObject.set(x, "CAD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCDF(value: Currency): Self = StObject.set(x, "CDF", value.asInstanceOf[js.Any])
+      inline def setCDF(value: Currency): Self = StObject.set(x, "CDF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHF(value: Currency): Self = StObject.set(x, "CHF", value.asInstanceOf[js.Any])
+      inline def setCHF(value: Currency): Self = StObject.set(x, "CHF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLP(value: Currency): Self = StObject.set(x, "CLP", value.asInstanceOf[js.Any])
+      inline def setCLP(value: Currency): Self = StObject.set(x, "CLP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCNY(value: Currency): Self = StObject.set(x, "CNY", value.asInstanceOf[js.Any])
+      inline def setCNY(value: Currency): Self = StObject.set(x, "CNY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOP(value: Currency): Self = StObject.set(x, "COP", value.asInstanceOf[js.Any])
+      inline def setCOP(value: Currency): Self = StObject.set(x, "COP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCRC(value: Currency): Self = StObject.set(x, "CRC", value.asInstanceOf[js.Any])
+      inline def setCRC(value: Currency): Self = StObject.set(x, "CRC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCVE(value: Currency): Self = StObject.set(x, "CVE", value.asInstanceOf[js.Any])
+      inline def setCVE(value: Currency): Self = StObject.set(x, "CVE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCZK(value: Currency): Self = StObject.set(x, "CZK", value.asInstanceOf[js.Any])
+      inline def setCZK(value: Currency): Self = StObject.set(x, "CZK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDJF(value: Currency): Self = StObject.set(x, "DJF", value.asInstanceOf[js.Any])
+      inline def setDJF(value: Currency): Self = StObject.set(x, "DJF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDKK(value: Currency): Self = StObject.set(x, "DKK", value.asInstanceOf[js.Any])
+      inline def setDKK(value: Currency): Self = StObject.set(x, "DKK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOP(value: Currency): Self = StObject.set(x, "DOP", value.asInstanceOf[js.Any])
+      inline def setDOP(value: Currency): Self = StObject.set(x, "DOP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDZD(value: Currency): Self = StObject.set(x, "DZD", value.asInstanceOf[js.Any])
+      inline def setDZD(value: Currency): Self = StObject.set(x, "DZD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEEK(value: Currency): Self = StObject.set(x, "EEK", value.asInstanceOf[js.Any])
+      inline def setEEK(value: Currency): Self = StObject.set(x, "EEK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEGP(value: Currency): Self = StObject.set(x, "EGP", value.asInstanceOf[js.Any])
+      inline def setEGP(value: Currency): Self = StObject.set(x, "EGP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERN(value: Currency): Self = StObject.set(x, "ERN", value.asInstanceOf[js.Any])
+      inline def setERN(value: Currency): Self = StObject.set(x, "ERN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setETB(value: Currency): Self = StObject.set(x, "ETB", value.asInstanceOf[js.Any])
+      inline def setETB(value: Currency): Self = StObject.set(x, "ETB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEUR(value: Currency): Self = StObject.set(x, "EUR", value.asInstanceOf[js.Any])
+      inline def setEUR(value: Currency): Self = StObject.set(x, "EUR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGBP(value: Currency): Self = StObject.set(x, "GBP", value.asInstanceOf[js.Any])
+      inline def setGBP(value: Currency): Self = StObject.set(x, "GBP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGEL(value: Currency): Self = StObject.set(x, "GEL", value.asInstanceOf[js.Any])
+      inline def setGEL(value: Currency): Self = StObject.set(x, "GEL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGHS(value: Currency): Self = StObject.set(x, "GHS", value.asInstanceOf[js.Any])
+      inline def setGHS(value: Currency): Self = StObject.set(x, "GHS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGNF(value: Currency): Self = StObject.set(x, "GNF", value.asInstanceOf[js.Any])
+      inline def setGNF(value: Currency): Self = StObject.set(x, "GNF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGTQ(value: Currency): Self = StObject.set(x, "GTQ", value.asInstanceOf[js.Any])
+      inline def setGTQ(value: Currency): Self = StObject.set(x, "GTQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHKD(value: Currency): Self = StObject.set(x, "HKD", value.asInstanceOf[js.Any])
+      inline def setHKD(value: Currency): Self = StObject.set(x, "HKD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHNL(value: Currency): Self = StObject.set(x, "HNL", value.asInstanceOf[js.Any])
+      inline def setHNL(value: Currency): Self = StObject.set(x, "HNL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHRK(value: Currency): Self = StObject.set(x, "HRK", value.asInstanceOf[js.Any])
+      inline def setHRK(value: Currency): Self = StObject.set(x, "HRK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHUF(value: Currency): Self = StObject.set(x, "HUF", value.asInstanceOf[js.Any])
+      inline def setHUF(value: Currency): Self = StObject.set(x, "HUF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIDR(value: Currency): Self = StObject.set(x, "IDR", value.asInstanceOf[js.Any])
+      inline def setIDR(value: Currency): Self = StObject.set(x, "IDR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setILS(value: Currency): Self = StObject.set(x, "ILS", value.asInstanceOf[js.Any])
+      inline def setILS(value: Currency): Self = StObject.set(x, "ILS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINR(value: Currency): Self = StObject.set(x, "INR", value.asInstanceOf[js.Any])
+      inline def setINR(value: Currency): Self = StObject.set(x, "INR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIQD(value: Currency): Self = StObject.set(x, "IQD", value.asInstanceOf[js.Any])
+      inline def setIQD(value: Currency): Self = StObject.set(x, "IQD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIRR(value: Currency): Self = StObject.set(x, "IRR", value.asInstanceOf[js.Any])
+      inline def setIRR(value: Currency): Self = StObject.set(x, "IRR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setISK(value: Currency): Self = StObject.set(x, "ISK", value.asInstanceOf[js.Any])
+      inline def setISK(value: Currency): Self = StObject.set(x, "ISK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJMD(value: Currency): Self = StObject.set(x, "JMD", value.asInstanceOf[js.Any])
+      inline def setJMD(value: Currency): Self = StObject.set(x, "JMD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJOD(value: Currency): Self = StObject.set(x, "JOD", value.asInstanceOf[js.Any])
+      inline def setJOD(value: Currency): Self = StObject.set(x, "JOD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJPY(value: Currency): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+      inline def setJPY(value: Currency): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKES(value: Currency): Self = StObject.set(x, "KES", value.asInstanceOf[js.Any])
+      inline def setKES(value: Currency): Self = StObject.set(x, "KES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKHR(value: Currency): Self = StObject.set(x, "KHR", value.asInstanceOf[js.Any])
+      inline def setKHR(value: Currency): Self = StObject.set(x, "KHR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMF(value: Currency): Self = StObject.set(x, "KMF", value.asInstanceOf[js.Any])
+      inline def setKMF(value: Currency): Self = StObject.set(x, "KMF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKRW(value: Currency): Self = StObject.set(x, "KRW", value.asInstanceOf[js.Any])
+      inline def setKRW(value: Currency): Self = StObject.set(x, "KRW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKWD(value: Currency): Self = StObject.set(x, "KWD", value.asInstanceOf[js.Any])
+      inline def setKWD(value: Currency): Self = StObject.set(x, "KWD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKZT(value: Currency): Self = StObject.set(x, "KZT", value.asInstanceOf[js.Any])
+      inline def setKZT(value: Currency): Self = StObject.set(x, "KZT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLAK(value: Currency): Self = StObject.set(x, "LAK", value.asInstanceOf[js.Any])
+      inline def setLAK(value: Currency): Self = StObject.set(x, "LAK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLBP(value: Currency): Self = StObject.set(x, "LBP", value.asInstanceOf[js.Any])
+      inline def setLBP(value: Currency): Self = StObject.set(x, "LBP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLKR(value: Currency): Self = StObject.set(x, "LKR", value.asInstanceOf[js.Any])
+      inline def setLKR(value: Currency): Self = StObject.set(x, "LKR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLTL(value: Currency): Self = StObject.set(x, "LTL", value.asInstanceOf[js.Any])
+      inline def setLTL(value: Currency): Self = StObject.set(x, "LTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLVL(value: Currency): Self = StObject.set(x, "LVL", value.asInstanceOf[js.Any])
+      inline def setLVL(value: Currency): Self = StObject.set(x, "LVL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLYD(value: Currency): Self = StObject.set(x, "LYD", value.asInstanceOf[js.Any])
+      inline def setLYD(value: Currency): Self = StObject.set(x, "LYD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAD(value: Currency): Self = StObject.set(x, "MAD", value.asInstanceOf[js.Any])
+      inline def setMAD(value: Currency): Self = StObject.set(x, "MAD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMDL(value: Currency): Self = StObject.set(x, "MDL", value.asInstanceOf[js.Any])
+      inline def setMDL(value: Currency): Self = StObject.set(x, "MDL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMGA(value: Currency): Self = StObject.set(x, "MGA", value.asInstanceOf[js.Any])
+      inline def setMGA(value: Currency): Self = StObject.set(x, "MGA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMKD(value: Currency): Self = StObject.set(x, "MKD", value.asInstanceOf[js.Any])
+      inline def setMKD(value: Currency): Self = StObject.set(x, "MKD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMMK(value: Currency): Self = StObject.set(x, "MMK", value.asInstanceOf[js.Any])
+      inline def setMMK(value: Currency): Self = StObject.set(x, "MMK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOP(value: Currency): Self = StObject.set(x, "MOP", value.asInstanceOf[js.Any])
+      inline def setMOP(value: Currency): Self = StObject.set(x, "MOP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMUR(value: Currency): Self = StObject.set(x, "MUR", value.asInstanceOf[js.Any])
+      inline def setMUR(value: Currency): Self = StObject.set(x, "MUR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMXN(value: Currency): Self = StObject.set(x, "MXN", value.asInstanceOf[js.Any])
+      inline def setMXN(value: Currency): Self = StObject.set(x, "MXN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMYR(value: Currency): Self = StObject.set(x, "MYR", value.asInstanceOf[js.Any])
+      inline def setMYR(value: Currency): Self = StObject.set(x, "MYR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMZN(value: Currency): Self = StObject.set(x, "MZN", value.asInstanceOf[js.Any])
+      inline def setMZN(value: Currency): Self = StObject.set(x, "MZN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNAD(value: Currency): Self = StObject.set(x, "NAD", value.asInstanceOf[js.Any])
+      inline def setNAD(value: Currency): Self = StObject.set(x, "NAD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNGN(value: Currency): Self = StObject.set(x, "NGN", value.asInstanceOf[js.Any])
+      inline def setNGN(value: Currency): Self = StObject.set(x, "NGN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNIO(value: Currency): Self = StObject.set(x, "NIO", value.asInstanceOf[js.Any])
+      inline def setNIO(value: Currency): Self = StObject.set(x, "NIO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOK(value: Currency): Self = StObject.set(x, "NOK", value.asInstanceOf[js.Any])
+      inline def setNOK(value: Currency): Self = StObject.set(x, "NOK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNPR(value: Currency): Self = StObject.set(x, "NPR", value.asInstanceOf[js.Any])
+      inline def setNPR(value: Currency): Self = StObject.set(x, "NPR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNZD(value: Currency): Self = StObject.set(x, "NZD", value.asInstanceOf[js.Any])
+      inline def setNZD(value: Currency): Self = StObject.set(x, "NZD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOMR(value: Currency): Self = StObject.set(x, "OMR", value.asInstanceOf[js.Any])
+      inline def setOMR(value: Currency): Self = StObject.set(x, "OMR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPAB(value: Currency): Self = StObject.set(x, "PAB", value.asInstanceOf[js.Any])
+      inline def setPAB(value: Currency): Self = StObject.set(x, "PAB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPEN(value: Currency): Self = StObject.set(x, "PEN", value.asInstanceOf[js.Any])
+      inline def setPEN(value: Currency): Self = StObject.set(x, "PEN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHP(value: Currency): Self = StObject.set(x, "PHP", value.asInstanceOf[js.Any])
+      inline def setPHP(value: Currency): Self = StObject.set(x, "PHP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPKR(value: Currency): Self = StObject.set(x, "PKR", value.asInstanceOf[js.Any])
+      inline def setPKR(value: Currency): Self = StObject.set(x, "PKR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPLN(value: Currency): Self = StObject.set(x, "PLN", value.asInstanceOf[js.Any])
+      inline def setPLN(value: Currency): Self = StObject.set(x, "PLN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPYG(value: Currency): Self = StObject.set(x, "PYG", value.asInstanceOf[js.Any])
+      inline def setPYG(value: Currency): Self = StObject.set(x, "PYG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQAR(value: Currency): Self = StObject.set(x, "QAR", value.asInstanceOf[js.Any])
+      inline def setQAR(value: Currency): Self = StObject.set(x, "QAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRON(value: Currency): Self = StObject.set(x, "RON", value.asInstanceOf[js.Any])
+      inline def setRON(value: Currency): Self = StObject.set(x, "RON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRSD(value: Currency): Self = StObject.set(x, "RSD", value.asInstanceOf[js.Any])
+      inline def setRSD(value: Currency): Self = StObject.set(x, "RSD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUB(value: Currency): Self = StObject.set(x, "RUB", value.asInstanceOf[js.Any])
+      inline def setRUB(value: Currency): Self = StObject.set(x, "RUB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRWF(value: Currency): Self = StObject.set(x, "RWF", value.asInstanceOf[js.Any])
+      inline def setRWF(value: Currency): Self = StObject.set(x, "RWF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSAR(value: Currency): Self = StObject.set(x, "SAR", value.asInstanceOf[js.Any])
+      inline def setSAR(value: Currency): Self = StObject.set(x, "SAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSDG(value: Currency): Self = StObject.set(x, "SDG", value.asInstanceOf[js.Any])
+      inline def setSDG(value: Currency): Self = StObject.set(x, "SDG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEK(value: Currency): Self = StObject.set(x, "SEK", value.asInstanceOf[js.Any])
+      inline def setSEK(value: Currency): Self = StObject.set(x, "SEK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSGD(value: Currency): Self = StObject.set(x, "SGD", value.asInstanceOf[js.Any])
+      inline def setSGD(value: Currency): Self = StObject.set(x, "SGD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOS(value: Currency): Self = StObject.set(x, "SOS", value.asInstanceOf[js.Any])
+      inline def setSOS(value: Currency): Self = StObject.set(x, "SOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSYP(value: Currency): Self = StObject.set(x, "SYP", value.asInstanceOf[js.Any])
+      inline def setSYP(value: Currency): Self = StObject.set(x, "SYP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTHB(value: Currency): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
+      inline def setTHB(value: Currency): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTND(value: Currency): Self = StObject.set(x, "TND", value.asInstanceOf[js.Any])
+      inline def setTND(value: Currency): Self = StObject.set(x, "TND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOP(value: Currency): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
+      inline def setTOP(value: Currency): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRY(value: Currency): Self = StObject.set(x, "TRY", value.asInstanceOf[js.Any])
+      inline def setTRY(value: Currency): Self = StObject.set(x, "TRY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTTD(value: Currency): Self = StObject.set(x, "TTD", value.asInstanceOf[js.Any])
+      inline def setTTD(value: Currency): Self = StObject.set(x, "TTD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTWD(value: Currency): Self = StObject.set(x, "TWD", value.asInstanceOf[js.Any])
+      inline def setTWD(value: Currency): Self = StObject.set(x, "TWD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTZS(value: Currency): Self = StObject.set(x, "TZS", value.asInstanceOf[js.Any])
+      inline def setTZS(value: Currency): Self = StObject.set(x, "TZS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUAH(value: Currency): Self = StObject.set(x, "UAH", value.asInstanceOf[js.Any])
+      inline def setUAH(value: Currency): Self = StObject.set(x, "UAH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUGX(value: Currency): Self = StObject.set(x, "UGX", value.asInstanceOf[js.Any])
+      inline def setUGX(value: Currency): Self = StObject.set(x, "UGX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSD(value: Currency): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+      inline def setUSD(value: Currency): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUYU(value: Currency): Self = StObject.set(x, "UYU", value.asInstanceOf[js.Any])
+      inline def setUYU(value: Currency): Self = StObject.set(x, "UYU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUZS(value: Currency): Self = StObject.set(x, "UZS", value.asInstanceOf[js.Any])
+      inline def setUZS(value: Currency): Self = StObject.set(x, "UZS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVEF(value: Currency): Self = StObject.set(x, "VEF", value.asInstanceOf[js.Any])
+      inline def setVEF(value: Currency): Self = StObject.set(x, "VEF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVND(value: Currency): Self = StObject.set(x, "VND", value.asInstanceOf[js.Any])
+      inline def setVND(value: Currency): Self = StObject.set(x, "VND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXAF(value: Currency): Self = StObject.set(x, "XAF", value.asInstanceOf[js.Any])
+      inline def setXAF(value: Currency): Self = StObject.set(x, "XAF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXOF(value: Currency): Self = StObject.set(x, "XOF", value.asInstanceOf[js.Any])
+      inline def setXOF(value: Currency): Self = StObject.set(x, "XOF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYER(value: Currency): Self = StObject.set(x, "YER", value.asInstanceOf[js.Any])
+      inline def setYER(value: Currency): Self = StObject.set(x, "YER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZAR(value: Currency): Self = StObject.set(x, "ZAR", value.asInstanceOf[js.Any])
+      inline def setZAR(value: Currency): Self = StObject.set(x, "ZAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZMK(value: Currency): Self = StObject.set(x, "ZMK", value.asInstanceOf[js.Any])
+      inline def setZMK(value: Currency): Self = StObject.set(x, "ZMK", value.asInstanceOf[js.Any])
     }
   }
   
@@ -768,8 +646,7 @@ object currencyMod extends Shortcut {
   }
   object Currency {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: String,
       decimal_digits: Double,
       name: String,
@@ -782,29 +659,21 @@ object currencyMod extends Shortcut {
       __obj.asInstanceOf[Currency]
     }
     
-    @scala.inline
-    implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+    extension [Self <: Currency](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimal_digits(value: Double): Self = StObject.set(x, "decimal_digits", value.asInstanceOf[js.Any])
+      inline def setDecimal_digits(value: Double): Self = StObject.set(x, "decimal_digits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName_plural(value: String): Self = StObject.set(x, "name_plural", value.asInstanceOf[js.Any])
+      inline def setName_plural(value: String): Self = StObject.set(x, "name_plural", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRounding(value: Double): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
+      inline def setRounding(value: Double): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol_native(value: String): Self = StObject.set(x, "symbol_native", value.asInstanceOf[js.Any])
+      inline def setSymbol_native(value: String): Self = StObject.set(x, "symbol_native", value.asInstanceOf[js.Any])
     }
   }
   

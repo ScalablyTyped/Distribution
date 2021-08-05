@@ -25,49 +25,35 @@ trait ManagedDeviceOverview
 }
 object ManagedDeviceOverview {
   
-  @scala.inline
-  def apply(): ManagedDeviceOverview = {
+  inline def apply(): ManagedDeviceOverview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedDeviceOverview]
   }
   
-  @scala.inline
-  implicit class ManagedDeviceOverviewMutableBuilder[Self <: ManagedDeviceOverview] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedDeviceOverview](x: Self) {
     
-    @scala.inline
-    def setDeviceExchangeAccessStateSummary(value: NullableOption[DeviceExchangeAccessStateSummary]): Self = StObject.set(x, "deviceExchangeAccessStateSummary", value.asInstanceOf[js.Any])
+    inline def setDeviceExchangeAccessStateSummary(value: NullableOption[DeviceExchangeAccessStateSummary]): Self = StObject.set(x, "deviceExchangeAccessStateSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceExchangeAccessStateSummaryNull: Self = StObject.set(x, "deviceExchangeAccessStateSummary", null)
+    inline def setDeviceExchangeAccessStateSummaryNull: Self = StObject.set(x, "deviceExchangeAccessStateSummary", null)
     
-    @scala.inline
-    def setDeviceExchangeAccessStateSummaryUndefined: Self = StObject.set(x, "deviceExchangeAccessStateSummary", js.undefined)
+    inline def setDeviceExchangeAccessStateSummaryUndefined: Self = StObject.set(x, "deviceExchangeAccessStateSummary", js.undefined)
     
-    @scala.inline
-    def setDeviceOperatingSystemSummary(value: NullableOption[DeviceOperatingSystemSummary]): Self = StObject.set(x, "deviceOperatingSystemSummary", value.asInstanceOf[js.Any])
+    inline def setDeviceOperatingSystemSummary(value: NullableOption[DeviceOperatingSystemSummary]): Self = StObject.set(x, "deviceOperatingSystemSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceOperatingSystemSummaryNull: Self = StObject.set(x, "deviceOperatingSystemSummary", null)
+    inline def setDeviceOperatingSystemSummaryNull: Self = StObject.set(x, "deviceOperatingSystemSummary", null)
     
-    @scala.inline
-    def setDeviceOperatingSystemSummaryUndefined: Self = StObject.set(x, "deviceOperatingSystemSummary", js.undefined)
+    inline def setDeviceOperatingSystemSummaryUndefined: Self = StObject.set(x, "deviceOperatingSystemSummary", js.undefined)
     
-    @scala.inline
-    def setDualEnrolledDeviceCount(value: Double): Self = StObject.set(x, "dualEnrolledDeviceCount", value.asInstanceOf[js.Any])
+    inline def setDualEnrolledDeviceCount(value: Double): Self = StObject.set(x, "dualEnrolledDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDualEnrolledDeviceCountUndefined: Self = StObject.set(x, "dualEnrolledDeviceCount", js.undefined)
+    inline def setDualEnrolledDeviceCountUndefined: Self = StObject.set(x, "dualEnrolledDeviceCount", js.undefined)
     
-    @scala.inline
-    def setEnrolledDeviceCount(value: Double): Self = StObject.set(x, "enrolledDeviceCount", value.asInstanceOf[js.Any])
+    inline def setEnrolledDeviceCount(value: Double): Self = StObject.set(x, "enrolledDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrolledDeviceCountUndefined: Self = StObject.set(x, "enrolledDeviceCount", js.undefined)
+    inline def setEnrolledDeviceCountUndefined: Self = StObject.set(x, "enrolledDeviceCount", js.undefined)
     
-    @scala.inline
-    def setMdmEnrolledCount(value: Double): Self = StObject.set(x, "mdmEnrolledCount", value.asInstanceOf[js.Any])
+    inline def setMdmEnrolledCount(value: Double): Self = StObject.set(x, "mdmEnrolledCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdmEnrolledCountUndefined: Self = StObject.set(x, "mdmEnrolledCount", js.undefined)
+    inline def setMdmEnrolledCountUndefined: Self = StObject.set(x, "mdmEnrolledCount", js.undefined)
   }
 }

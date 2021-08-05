@@ -11,8 +11,7 @@ trait CameraCaptureUI
      with ICameraCaptureUI
 object CameraCaptureUI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     captureFileAsync: CameraCaptureUIMode => IAsyncOperation[StorageFile],
     photoSettings: CameraCaptureUIPhotoCaptureSettings,
     videoSettings: CameraCaptureUIVideoCaptureSettings

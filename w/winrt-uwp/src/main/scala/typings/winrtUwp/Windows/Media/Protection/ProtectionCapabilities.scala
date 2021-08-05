@@ -10,16 +10,13 @@ trait ProtectionCapabilities extends StObject {
 }
 object ProtectionCapabilities {
   
-  @scala.inline
-  def apply(isTypeSupported: js.Any): ProtectionCapabilities = {
+  inline def apply(isTypeSupported: js.Any): ProtectionCapabilities = {
     val __obj = js.Dynamic.literal(isTypeSupported = isTypeSupported.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectionCapabilities]
   }
   
-  @scala.inline
-  implicit class ProtectionCapabilitiesMutableBuilder[Self <: ProtectionCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectionCapabilities](x: Self) {
     
-    @scala.inline
-    def setIsTypeSupported(value: js.Any): Self = StObject.set(x, "isTypeSupported", value.asInstanceOf[js.Any])
+    inline def setIsTypeSupported(value: js.Any): Self = StObject.set(x, "isTypeSupported", value.asInstanceOf[js.Any])
   }
 }

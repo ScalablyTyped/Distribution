@@ -15,26 +15,20 @@ object renderMod {
   }
   object RenderProps {
     
-    @scala.inline
-    def apply(): RenderProps = {
+    inline def apply(): RenderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderProps]
     }
     
-    @scala.inline
-    implicit class RenderPropsMutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: RenderProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setRender(value: ReactNode): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: ReactNode): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
 }

@@ -14,25 +14,19 @@ trait ISettingsStyle extends StObject {
 }
 object ISettingsStyle {
   
-  @scala.inline
-  def apply(): ISettingsStyle = {
+  inline def apply(): ISettingsStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISettingsStyle]
   }
   
-  @scala.inline
-  implicit class ISettingsStyleMutableBuilder[Self <: ISettingsStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ISettingsStyle](x: Self) {
     
-    @scala.inline
-    def setLandColor(value: String): Self = StObject.set(x, "landColor", value.asInstanceOf[js.Any])
+    inline def setLandColor(value: String): Self = StObject.set(x, "landColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandColorUndefined: Self = StObject.set(x, "landColor", js.undefined)
+    inline def setLandColorUndefined: Self = StObject.set(x, "landColor", js.undefined)
     
-    @scala.inline
-    def setShadedReliefVisible(value: Boolean): Self = StObject.set(x, "shadedReliefVisible", value.asInstanceOf[js.Any])
+    inline def setShadedReliefVisible(value: Boolean): Self = StObject.set(x, "shadedReliefVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadedReliefVisibleUndefined: Self = StObject.set(x, "shadedReliefVisible", js.undefined)
+    inline def setShadedReliefVisibleUndefined: Self = StObject.set(x, "shadedReliefVisible", js.undefined)
   }
 }

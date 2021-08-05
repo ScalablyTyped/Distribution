@@ -16,37 +16,27 @@ trait WeightIn extends StObject {
 }
 object WeightIn {
   
-  @scala.inline
-  def apply(): WeightIn = {
+  inline def apply(): WeightIn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeightIn]
   }
   
-  @scala.inline
-  implicit class WeightInMutableBuilder[Self <: WeightIn] (val x: Self) extends AnyVal {
+  extension [Self <: WeightIn](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setWeightIn(value: Double): Self = StObject.set(x, "weightIn", value.asInstanceOf[js.Any])
+    inline def setWeightIn(value: Double): Self = StObject.set(x, "weightIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightInUndefined: Self = StObject.set(x, "weightIn", js.undefined)
+    inline def setWeightInUndefined: Self = StObject.set(x, "weightIn", js.undefined)
     
-    @scala.inline
-    def setWeightOut(value: Double): Self = StObject.set(x, "weightOut", value.asInstanceOf[js.Any])
+    inline def setWeightOut(value: Double): Self = StObject.set(x, "weightOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightOutUndefined: Self = StObject.set(x, "weightOut", js.undefined)
+    inline def setWeightOutUndefined: Self = StObject.set(x, "weightOut", js.undefined)
   }
 }

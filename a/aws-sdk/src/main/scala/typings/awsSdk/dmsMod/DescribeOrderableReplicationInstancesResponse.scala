@@ -18,28 +18,21 @@ trait DescribeOrderableReplicationInstancesResponse extends StObject {
 }
 object DescribeOrderableReplicationInstancesResponse {
   
-  @scala.inline
-  def apply(): DescribeOrderableReplicationInstancesResponse = {
+  inline def apply(): DescribeOrderableReplicationInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOrderableReplicationInstancesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOrderableReplicationInstancesResponseMutableBuilder[Self <: DescribeOrderableReplicationInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrderableReplicationInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setOrderableReplicationInstances(value: OrderableReplicationInstanceList): Self = StObject.set(x, "OrderableReplicationInstances", value.asInstanceOf[js.Any])
+    inline def setOrderableReplicationInstances(value: OrderableReplicationInstanceList): Self = StObject.set(x, "OrderableReplicationInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderableReplicationInstancesUndefined: Self = StObject.set(x, "OrderableReplicationInstances", js.undefined)
+    inline def setOrderableReplicationInstancesUndefined: Self = StObject.set(x, "OrderableReplicationInstances", js.undefined)
     
-    @scala.inline
-    def setOrderableReplicationInstancesVarargs(value: OrderableReplicationInstance*): Self = StObject.set(x, "OrderableReplicationInstances", js.Array(value :_*))
+    inline def setOrderableReplicationInstancesVarargs(value: OrderableReplicationInstance*): Self = StObject.set(x, "OrderableReplicationInstances", js.Array(value :_*))
   }
 }

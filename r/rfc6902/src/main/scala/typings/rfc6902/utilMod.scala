@@ -20,16 +20,11 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clone_[T /* <: js.Any */](source: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def clone_[T /* <: js.Any */](source: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(source.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def hasOwnProperty_(v: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def hasOwnProperty_(v: js.Symbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def hasOwnProperty_(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasOwnProperty_(v: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasOwnProperty_(v: js.Symbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasOwnProperty_(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def objectType(`object`: js.Any): string | number | bigint | boolean | symbol | undefined | `object` | function | `null` | array = ^.asInstanceOf[js.Dynamic].applyDynamic("objectType")(`object`.asInstanceOf[js.Any]).asInstanceOf[string | number | bigint | boolean | symbol | undefined | `object` | function | `null` | array]
+  inline def objectType(`object`: js.Any): string | number | bigint | boolean | symbol | undefined | `object` | function | `null` | array = ^.asInstanceOf[js.Dynamic].applyDynamic("objectType")(`object`.asInstanceOf[js.Any]).asInstanceOf[string | number | bigint | boolean | symbol | undefined | `object` | function | `null` | array]
 }

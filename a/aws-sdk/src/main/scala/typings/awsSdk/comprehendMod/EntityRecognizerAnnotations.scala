@@ -13,16 +13,13 @@ trait EntityRecognizerAnnotations extends StObject {
 }
 object EntityRecognizerAnnotations {
   
-  @scala.inline
-  def apply(S3Uri: S3Uri): EntityRecognizerAnnotations = {
+  inline def apply(S3Uri: S3Uri): EntityRecognizerAnnotations = {
     val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityRecognizerAnnotations]
   }
   
-  @scala.inline
-  implicit class EntityRecognizerAnnotationsMutableBuilder[Self <: EntityRecognizerAnnotations] (val x: Self) extends AnyVal {
+  extension [Self <: EntityRecognizerAnnotations](x: Self) {
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

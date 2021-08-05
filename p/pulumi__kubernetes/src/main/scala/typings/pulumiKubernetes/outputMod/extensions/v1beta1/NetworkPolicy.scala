@@ -33,25 +33,19 @@ trait NetworkPolicy extends StObject {
 }
 object NetworkPolicy {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: NetworkPolicySpec): NetworkPolicy = {
+  inline def apply(metadata: ObjectMeta, spec: NetworkPolicySpec): NetworkPolicy = {
     val __obj = js.Dynamic.literal(apiVersion = "extensions/v1beta1", kind = "NetworkPolicy", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkPolicy]
   }
   
-  @scala.inline
-  implicit class NetworkPolicyMutableBuilder[Self <: NetworkPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPolicy](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: extensionsSlashv1beta1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: extensionsSlashv1beta1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.NetworkPolicy): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.NetworkPolicy): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: NetworkPolicySpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: NetworkPolicySpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
   }
 }

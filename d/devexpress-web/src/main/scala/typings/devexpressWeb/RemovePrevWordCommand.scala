@@ -18,16 +18,13 @@ trait RemovePrevWordCommand
 }
 object RemovePrevWordCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): RemovePrevWordCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): RemovePrevWordCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[RemovePrevWordCommand]
   }
   
-  @scala.inline
-  implicit class RemovePrevWordCommandMutableBuilder[Self <: RemovePrevWordCommand] (val x: Self) extends AnyVal {
+  extension [Self <: RemovePrevWordCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

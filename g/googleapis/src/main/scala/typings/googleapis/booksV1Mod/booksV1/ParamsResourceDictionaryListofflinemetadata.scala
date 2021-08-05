@@ -24,25 +24,19 @@ trait ParamsResourceDictionaryListofflinemetadata
 }
 object ParamsResourceDictionaryListofflinemetadata {
   
-  @scala.inline
-  def apply(): ParamsResourceDictionaryListofflinemetadata = {
+  inline def apply(): ParamsResourceDictionaryListofflinemetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDictionaryListofflinemetadata]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDictionaryListofflinemetadataMutableBuilder[Self <: ParamsResourceDictionaryListofflinemetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDictionaryListofflinemetadata](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCpksver(value: String): Self = StObject.set(x, "cpksver", value.asInstanceOf[js.Any])
+    inline def setCpksver(value: String): Self = StObject.set(x, "cpksver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpksverUndefined: Self = StObject.set(x, "cpksver", js.undefined)
+    inline def setCpksverUndefined: Self = StObject.set(x, "cpksver", js.undefined)
   }
 }

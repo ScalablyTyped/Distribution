@@ -10,6 +10,5 @@ object useCallbackRefMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TValue](): js.Tuple2[TValue | Null, js.Function1[/* ref */ TValue | Null, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[TValue | Null, js.Function1[/* ref */ TValue | Null, Unit]]]
+  inline def default[TValue](): js.Tuple2[TValue | Null, js.Function1[/* ref */ TValue | Null, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[TValue | Null, js.Function1[/* ref */ TValue | Null, Unit]]]
 }

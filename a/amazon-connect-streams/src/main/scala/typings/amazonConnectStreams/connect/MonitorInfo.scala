@@ -15,22 +15,17 @@ trait MonitorInfo extends StObject {
 }
 object MonitorInfo {
   
-  @scala.inline
-  def apply(agentName: String, customerName: String, joinTime: Date): MonitorInfo = {
+  inline def apply(agentName: String, customerName: String, joinTime: Date): MonitorInfo = {
     val __obj = js.Dynamic.literal(agentName = agentName.asInstanceOf[js.Any], customerName = customerName.asInstanceOf[js.Any], joinTime = joinTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitorInfo]
   }
   
-  @scala.inline
-  implicit class MonitorInfoMutableBuilder[Self <: MonitorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MonitorInfo](x: Self) {
     
-    @scala.inline
-    def setAgentName(value: String): Self = StObject.set(x, "agentName", value.asInstanceOf[js.Any])
+    inline def setAgentName(value: String): Self = StObject.set(x, "agentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerName(value: String): Self = StObject.set(x, "customerName", value.asInstanceOf[js.Any])
+    inline def setCustomerName(value: String): Self = StObject.set(x, "customerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinTime(value: Date): Self = StObject.set(x, "joinTime", value.asInstanceOf[js.Any])
+    inline def setJoinTime(value: Date): Self = StObject.set(x, "joinTime", value.asInstanceOf[js.Any])
   }
 }

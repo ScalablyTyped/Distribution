@@ -13,16 +13,13 @@ trait VirtualRouterStatus extends StObject {
 }
 object VirtualRouterStatus {
   
-  @scala.inline
-  def apply(status: VirtualRouterStatusCode): VirtualRouterStatus = {
+  inline def apply(status: VirtualRouterStatusCode): VirtualRouterStatus = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualRouterStatus]
   }
   
-  @scala.inline
-  implicit class VirtualRouterStatusMutableBuilder[Self <: VirtualRouterStatus] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualRouterStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: VirtualRouterStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VirtualRouterStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

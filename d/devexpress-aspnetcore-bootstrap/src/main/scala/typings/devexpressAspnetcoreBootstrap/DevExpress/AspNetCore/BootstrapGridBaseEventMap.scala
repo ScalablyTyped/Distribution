@@ -12,16 +12,13 @@ trait BootstrapGridBaseEventMap
 }
 object BootstrapGridBaseEventMap {
   
-  @scala.inline
-  def apply(init: EventArgs, toolbarItemClick: GridToolbarItemClickEventArgs): BootstrapGridBaseEventMap = {
+  inline def apply(init: EventArgs, toolbarItemClick: GridToolbarItemClickEventArgs): BootstrapGridBaseEventMap = {
     val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any], toolbarItemClick = toolbarItemClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapGridBaseEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapGridBaseEventMapMutableBuilder[Self <: BootstrapGridBaseEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapGridBaseEventMap](x: Self) {
     
-    @scala.inline
-    def setToolbarItemClick(value: GridToolbarItemClickEventArgs): Self = StObject.set(x, "toolbarItemClick", value.asInstanceOf[js.Any])
+    inline def setToolbarItemClick(value: GridToolbarItemClickEventArgs): Self = StObject.set(x, "toolbarItemClick", value.asInstanceOf[js.Any])
   }
 }

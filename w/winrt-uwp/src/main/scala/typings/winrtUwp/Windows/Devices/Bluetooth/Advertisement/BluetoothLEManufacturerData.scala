@@ -16,19 +16,15 @@ trait BluetoothLEManufacturerData extends StObject {
 }
 object BluetoothLEManufacturerData {
   
-  @scala.inline
-  def apply(companyId: Double, data: IBuffer): BluetoothLEManufacturerData = {
+  inline def apply(companyId: Double, data: IBuffer): BluetoothLEManufacturerData = {
     val __obj = js.Dynamic.literal(companyId = companyId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothLEManufacturerData]
   }
   
-  @scala.inline
-  implicit class BluetoothLEManufacturerDataMutableBuilder[Self <: BluetoothLEManufacturerData] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEManufacturerData](x: Self) {
     
-    @scala.inline
-    def setCompanyId(value: Double): Self = StObject.set(x, "companyId", value.asInstanceOf[js.Any])
+    inline def setCompanyId(value: Double): Self = StObject.set(x, "companyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

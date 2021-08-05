@@ -13,22 +13,17 @@ trait FileTypeList extends StObject {
 }
 object FileTypeList {
   
-  @scala.inline
-  def apply(): FileTypeList = {
+  inline def apply(): FileTypeList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileTypeList]
   }
   
-  @scala.inline
-  implicit class FileTypeListMutableBuilder[Self <: FileTypeList] (val x: Self) extends AnyVal {
+  extension [Self <: FileTypeList](x: Self) {
     
-    @scala.inline
-    def setFileTypes(value: js.Array[FileType]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+    inline def setFileTypes(value: js.Array[FileType]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
+    inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
-    @scala.inline
-    def setFileTypesVarargs(value: FileType*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+    inline def setFileTypesVarargs(value: FileType*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
   }
 }

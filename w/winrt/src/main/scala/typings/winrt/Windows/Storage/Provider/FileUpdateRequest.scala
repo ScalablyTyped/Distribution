@@ -11,8 +11,7 @@ trait FileUpdateRequest
      with IFileUpdateRequest
 object FileUpdateRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentId: String,
     file: StorageFile,
     getDeferral: () => FileUpdateRequestDeferral,

@@ -145,8 +145,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /** Create a Decimal128 instance from a string representation. */
-    @scala.inline
-    def fromString(s: String): Decimal128 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[Decimal128]
+    inline def fromString(s: String): Decimal128 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[Decimal128]
   }
   
   @JSImport("bson", "Double")
@@ -169,109 +168,75 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserialize(ejson: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-    @scala.inline
-    def deserialize(ejson: js.Object, options: Relaxed): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def deserialize(ejson: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def deserialize(ejson: js.Object, options: Relaxed): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @scala.inline
-    def parse(text: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-    @scala.inline
-    def parse(text: String, options: Relaxed): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def parse(text: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def parse(text: String, options: Relaxed): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @scala.inline
-    def serialize(bson: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(bson.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-    @scala.inline
-    def serialize(bson: js.Object, options: Relaxed): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(bson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def serialize(bson: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(bson.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def serialize(bson: js.Object, options: Relaxed): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(bson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @scala.inline
-    def stringify(value: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: js.Array[scala.Double | String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(
+    inline def stringify(value: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(value: js.Object, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: js.Array[scala.Double | String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(
       value: js.Object,
       replacer: js.Array[String | scala.Double],
       indents: scala.Double,
       options: Relaxed
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(
+    inline def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: js.Array[String | scala.Double], options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(
       value: js.Object,
       replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       indents: String
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(
+    inline def stringify(
       value: js.Object,
       replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       indents: String,
       options: Relaxed
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(
+    inline def stringify(
       value: js.Object,
       replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       indents: scala.Double
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(
+    inline def stringify(
       value: js.Object,
       replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       indents: scala.Double,
       options: Relaxed
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(
+    inline def stringify(
       value: js.Object,
       replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       indents: Unit,
       options: Relaxed
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(
+    inline def stringify(
       value: js.Object,
       replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       options: Relaxed
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Null, indents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Null, indents: String, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Null, indents: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Null, indents: scala.Double, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Null, indents: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Null, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Unit, indents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Unit, indents: String, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Unit, indents: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Unit, indents: scala.Double, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Unit, indents: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def stringify(value: js.Object, replacer: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Null, indents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Null, indents: String, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Null, indents: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Null, indents: scala.Double, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Null, indents: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Null, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Unit, indents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Unit, indents: String, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Unit, indents: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Unit, indents: scala.Double, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Unit, indents: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def stringify(value: js.Object, replacer: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("bson", "Int32")
@@ -320,25 +285,20 @@ object mod {
       * @param lowBits The low 32-bits.
       * @param highBits The high 32-bits.
       */
-    @scala.inline
-    def fromBits(lowBits: scala.Double, highBits: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Long]
+    inline def fromBits(lowBits: scala.Double, highBits: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Long]
     
     /** Returns a Long representing the given (32-bit) integer value. */
-    @scala.inline
-    def fromInt(i: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(i.asInstanceOf[js.Any]).asInstanceOf[Long]
+    inline def fromInt(i: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(i.asInstanceOf[js.Any]).asInstanceOf[Long]
     
     /** Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned. */
-    @scala.inline
-    def fromNumber(n: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+    inline def fromNumber(n: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
     
     /**
       * Returns a Long representation of the given string
       * @param opt_radix The radix in which the text is written. {default:10}
       */
-    @scala.inline
-    def fromString(s: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[Long]
-    @scala.inline
-    def fromString(s: String, opt_radix: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[Long]
+    inline def fromString(s: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[Long]
+    inline def fromString(s: String, opt_radix: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[Long]
   }
   
   @JSImport("bson", "MaxKey")
@@ -371,46 +331,38 @@ object mod {
     @JSImport("bson", "ObjectID.cacheHexString")
     @js.native
     def cacheHexString: js.UndefOr[Boolean] = js.native
-    @scala.inline
-    def cacheHexString_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cacheHexString")(x.asInstanceOf[js.Any])
+    inline def cacheHexString_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cacheHexString")(x.asInstanceOf[js.Any])
     
     /**
       * Creates an ObjectId from a hex string representation of an ObjectId.
       * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
       * @return {ObjectId} return the created ObjectId
       */
-    @scala.inline
-    def createFromHexString(hexString: String): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
+    inline def createFromHexString(hexString: String): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
     
     /**
       * Creates an ObjectId from a second based number, with the rest of the ObjectId zeroed out. Used for comparisons or sorting the ObjectId.
       * @param {number} time an integer number representing a number of seconds.
       * @return {ObjectId} return the created ObjectId
       */
-    @scala.inline
-    def createFromTime(time: scala.Double): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
+    inline def createFromTime(time: scala.Double): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
     
     /**
       * Generate a 12 byte id string used in ObjectId's
       * @param {number} time optional parameter allowing to pass in a second based timestamp.
       * @return {string} return the 12 byte id binary string.
       */
-    @scala.inline
-    def generate(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Buffer]
-    @scala.inline
-    def generate(time: scala.Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(time.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def generate(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Buffer]
+    inline def generate(time: scala.Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(time.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Checks if a value is a valid bson ObjectId
       *
       * @return {boolean} return true if the value is a valid bson ObjectId, return false otherwise.
       */
-    @scala.inline
-    def isValid(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def isValid(id: scala.Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def isValid(id: ObjectId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(id: scala.Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(id: ObjectId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("bson", "ObjectId")
@@ -458,46 +410,38 @@ object mod {
     @JSImport("bson", "ObjectId.cacheHexString")
     @js.native
     def cacheHexString: js.UndefOr[Boolean] = js.native
-    @scala.inline
-    def cacheHexString_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cacheHexString")(x.asInstanceOf[js.Any])
+    inline def cacheHexString_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cacheHexString")(x.asInstanceOf[js.Any])
     
     /**
       * Creates an ObjectId from a hex string representation of an ObjectId.
       * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
       * @return {ObjectId} return the created ObjectId
       */
-    @scala.inline
-    def createFromHexString(hexString: String): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
+    inline def createFromHexString(hexString: String): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
     
     /**
       * Creates an ObjectId from a second based number, with the rest of the ObjectId zeroed out. Used for comparisons or sorting the ObjectId.
       * @param {number} time an integer number representing a number of seconds.
       * @return {ObjectId} return the created ObjectId
       */
-    @scala.inline
-    def createFromTime(time: scala.Double): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
+    inline def createFromTime(time: scala.Double): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
     
     /**
       * Generate a 12 byte id string used in ObjectId's
       * @param {number} time optional parameter allowing to pass in a second based timestamp.
       * @return {string} return the 12 byte id binary string.
       */
-    @scala.inline
-    def generate(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Buffer]
-    @scala.inline
-    def generate(time: scala.Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(time.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+    inline def generate(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Buffer]
+    inline def generate(time: scala.Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(time.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Checks if a value is a valid bson ObjectId
       *
       * @return {boolean} return true if the value is a valid bson ObjectId, return false otherwise.
       */
-    @scala.inline
-    def isValid(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def isValid(id: scala.Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def isValid(id: ObjectId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(id: scala.Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(id: ObjectId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("bson", "Symbol")
@@ -543,47 +487,36 @@ object mod {
       * @param lowBits The low 32-bits.
       * @param highBits The high 32-bits.
       */
-    @scala.inline
-    def fromBits(lowBits: scala.Double, highBits: scala.Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+    inline def fromBits(lowBits: scala.Double, highBits: scala.Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
     
     /** Returns a Timestamp represented by the given (32-bit) integer value */
-    @scala.inline
-    def fromInt(value: scala.Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+    inline def fromInt(value: scala.Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
     
     /** Returns a Timestamp representing the given number value, provided that it is a finite number. */
-    @scala.inline
-    def fromNumber(value: scala.Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+    inline def fromNumber(value: scala.Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
     
     /**
       * Returns a Timestamp from the given string.
       * @param opt_radix The radix in which the text is written. {default:10}
       */
-    @scala.inline
-    def fromString(str: String): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
-    @scala.inline
-    def fromString(str: String, opt_radix: scala.Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+    inline def fromString(str: String): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+    inline def fromString(str: String, opt_radix: scala.Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
   }
   
-  @scala.inline
-  def calculateObjectSize(`object`: js.Any): scala.Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateObjectSize")(`object`.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
-  @scala.inline
-  def calculateObjectSize(`object`: js.Any, options: CalculateObjectSizeOptions): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateObjectSize")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  inline def calculateObjectSize(`object`: js.Any): scala.Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateObjectSize")(`object`.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+  inline def calculateObjectSize(`object`: js.Any, options: CalculateObjectSizeOptions): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateObjectSize")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
   
-  @scala.inline
-  def deserialize(buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def deserialize(buffer: Buffer, options: DeserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deserialize(buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def deserialize(buffer: Buffer, options: DeserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def deserializeStream(
+  inline def deserializeStream(
     data: Buffer,
     startIndex: scala.Double,
     numberOfDocuments: scala.Double,
     documents: js.Array[js.Any],
     docStartIndex: scala.Double
   ): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeStream")(data.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], numberOfDocuments.asInstanceOf[js.Any], documents.asInstanceOf[js.Any], docStartIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-  @scala.inline
-  def deserializeStream(
+  inline def deserializeStream(
     data: Buffer,
     startIndex: scala.Double,
     numberOfDocuments: scala.Double,
@@ -592,15 +525,11 @@ object mod {
     options: DeserializeOptions
   ): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeStream")(data.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], numberOfDocuments.asInstanceOf[js.Any], documents.asInstanceOf[js.Any], docStartIndex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
   
-  @scala.inline
-  def serialize(`object`: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def serialize(`object`: js.Any, options: SerializeOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def serialize(`object`: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def serialize(`object`: js.Any, options: SerializeOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def serializeWithBufferAndIndex(`object`: js.Any, buffer: Buffer): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeWithBufferAndIndex")(`object`.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-  @scala.inline
-  def serializeWithBufferAndIndex(`object`: js.Any, buffer: Buffer, options: SerializeWithBufferAndIndexOptions): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeWithBufferAndIndex")(`object`.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  inline def serializeWithBufferAndIndex(`object`: js.Any, buffer: Buffer): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeWithBufferAndIndex")(`object`.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  inline def serializeWithBufferAndIndex(`object`: js.Any, buffer: Buffer, options: SerializeWithBufferAndIndexOptions): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeWithBufferAndIndex")(`object`.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
   
   trait CalculateObjectSizeOptions extends StObject {
     
@@ -612,26 +541,20 @@ object mod {
   }
   object CalculateObjectSizeOptions {
     
-    @scala.inline
-    def apply(): CalculateObjectSizeOptions = {
+    inline def apply(): CalculateObjectSizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CalculateObjectSizeOptions]
     }
     
-    @scala.inline
-    implicit class CalculateObjectSizeOptionsMutableBuilder[Self <: CalculateObjectSizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CalculateObjectSizeOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
+      inline def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
+      inline def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
       
-      @scala.inline
-      def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
+      inline def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
+      inline def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
     }
   }
   
@@ -648,32 +571,24 @@ object mod {
   }
   object CommonSerializeOptions {
     
-    @scala.inline
-    def apply(): CommonSerializeOptions = {
+    inline def apply(): CommonSerializeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommonSerializeOptions]
     }
     
-    @scala.inline
-    implicit class CommonSerializeOptionsMutableBuilder[Self <: CommonSerializeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommonSerializeOptions](x: Self) {
       
-      @scala.inline
-      def setCheckKeys(value: Boolean): Self = StObject.set(x, "checkKeys", value.asInstanceOf[js.Any])
+      inline def setCheckKeys(value: Boolean): Self = StObject.set(x, "checkKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckKeysUndefined: Self = StObject.set(x, "checkKeys", js.undefined)
+      inline def setCheckKeysUndefined: Self = StObject.set(x, "checkKeys", js.undefined)
       
-      @scala.inline
-      def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
+      inline def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
+      inline def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
       
-      @scala.inline
-      def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
+      inline def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
+      inline def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
     }
   }
   
@@ -708,68 +623,48 @@ object mod {
   }
   object DeserializeOptions {
     
-    @scala.inline
-    def apply(): DeserializeOptions = {
+    inline def apply(): DeserializeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeserializeOptions]
     }
     
-    @scala.inline
-    implicit class DeserializeOptionsMutableBuilder[Self <: DeserializeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeserializeOptions](x: Self) {
       
-      @scala.inline
-      def setAllowObjectSmallerThanBufferSize(value: Boolean): Self = StObject.set(x, "allowObjectSmallerThanBufferSize", value.asInstanceOf[js.Any])
+      inline def setAllowObjectSmallerThanBufferSize(value: Boolean): Self = StObject.set(x, "allowObjectSmallerThanBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowObjectSmallerThanBufferSizeUndefined: Self = StObject.set(x, "allowObjectSmallerThanBufferSize", js.undefined)
+      inline def setAllowObjectSmallerThanBufferSizeUndefined: Self = StObject.set(x, "allowObjectSmallerThanBufferSize", js.undefined)
       
-      @scala.inline
-      def setBsonRegExp(value: Boolean): Self = StObject.set(x, "bsonRegExp", value.asInstanceOf[js.Any])
+      inline def setBsonRegExp(value: Boolean): Self = StObject.set(x, "bsonRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsonRegExpUndefined: Self = StObject.set(x, "bsonRegExp", js.undefined)
+      inline def setBsonRegExpUndefined: Self = StObject.set(x, "bsonRegExp", js.undefined)
       
-      @scala.inline
-      def setCacheFunctions(value: Boolean): Self = StObject.set(x, "cacheFunctions", value.asInstanceOf[js.Any])
+      inline def setCacheFunctions(value: Boolean): Self = StObject.set(x, "cacheFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheFunctionsCrc32(value: Boolean): Self = StObject.set(x, "cacheFunctionsCrc32", value.asInstanceOf[js.Any])
+      inline def setCacheFunctionsCrc32(value: Boolean): Self = StObject.set(x, "cacheFunctionsCrc32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheFunctionsCrc32Undefined: Self = StObject.set(x, "cacheFunctionsCrc32", js.undefined)
+      inline def setCacheFunctionsCrc32Undefined: Self = StObject.set(x, "cacheFunctionsCrc32", js.undefined)
       
-      @scala.inline
-      def setCacheFunctionsUndefined: Self = StObject.set(x, "cacheFunctions", js.undefined)
+      inline def setCacheFunctionsUndefined: Self = StObject.set(x, "cacheFunctions", js.undefined)
       
-      @scala.inline
-      def setEvalFunctions(value: Boolean): Self = StObject.set(x, "evalFunctions", value.asInstanceOf[js.Any])
+      inline def setEvalFunctions(value: Boolean): Self = StObject.set(x, "evalFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalFunctionsUndefined: Self = StObject.set(x, "evalFunctions", js.undefined)
+      inline def setEvalFunctionsUndefined: Self = StObject.set(x, "evalFunctions", js.undefined)
       
-      @scala.inline
-      def setFieldsAsRaw(value: StringDictionary[Boolean]): Self = StObject.set(x, "fieldsAsRaw", value.asInstanceOf[js.Any])
+      inline def setFieldsAsRaw(value: StringDictionary[Boolean]): Self = StObject.set(x, "fieldsAsRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsAsRawUndefined: Self = StObject.set(x, "fieldsAsRaw", js.undefined)
+      inline def setFieldsAsRawUndefined: Self = StObject.set(x, "fieldsAsRaw", js.undefined)
       
-      @scala.inline
-      def setPromoteBuffers(value: Boolean): Self = StObject.set(x, "promoteBuffers", value.asInstanceOf[js.Any])
+      inline def setPromoteBuffers(value: Boolean): Self = StObject.set(x, "promoteBuffers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromoteBuffersUndefined: Self = StObject.set(x, "promoteBuffers", js.undefined)
+      inline def setPromoteBuffersUndefined: Self = StObject.set(x, "promoteBuffers", js.undefined)
       
-      @scala.inline
-      def setPromoteLongs(value: Boolean): Self = StObject.set(x, "promoteLongs", value.asInstanceOf[js.Any])
+      inline def setPromoteLongs(value: Boolean): Self = StObject.set(x, "promoteLongs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromoteLongsUndefined: Self = StObject.set(x, "promoteLongs", js.undefined)
+      inline def setPromoteLongsUndefined: Self = StObject.set(x, "promoteLongs", js.undefined)
       
-      @scala.inline
-      def setPromoteValues(value: Boolean): Self = StObject.set(x, "promoteValues", value.asInstanceOf[js.Any])
+      inline def setPromoteValues(value: Boolean): Self = StObject.set(x, "promoteValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromoteValuesUndefined: Self = StObject.set(x, "promoteValues", js.undefined)
+      inline def setPromoteValuesUndefined: Self = StObject.set(x, "promoteValues", js.undefined)
     }
   }
   
@@ -892,20 +787,16 @@ object mod {
   }
   object SerializeOptions {
     
-    @scala.inline
-    def apply(): SerializeOptions = {
+    inline def apply(): SerializeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SerializeOptions]
     }
     
-    @scala.inline
-    implicit class SerializeOptionsMutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SerializeOptions](x: Self) {
       
-      @scala.inline
-      def setMinInternalBufferSize(value: scala.Double): Self = StObject.set(x, "minInternalBufferSize", value.asInstanceOf[js.Any])
+      inline def setMinInternalBufferSize(value: scala.Double): Self = StObject.set(x, "minInternalBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinInternalBufferSizeUndefined: Self = StObject.set(x, "minInternalBufferSize", js.undefined)
+      inline def setMinInternalBufferSizeUndefined: Self = StObject.set(x, "minInternalBufferSize", js.undefined)
     }
   }
   
@@ -918,20 +809,16 @@ object mod {
   }
   object SerializeWithBufferAndIndexOptions {
     
-    @scala.inline
-    def apply(): SerializeWithBufferAndIndexOptions = {
+    inline def apply(): SerializeWithBufferAndIndexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SerializeWithBufferAndIndexOptions]
     }
     
-    @scala.inline
-    implicit class SerializeWithBufferAndIndexOptionsMutableBuilder[Self <: SerializeWithBufferAndIndexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SerializeWithBufferAndIndexOptions](x: Self) {
       
-      @scala.inline
-      def setIndex(value: scala.Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: scala.Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     }
   }
 }

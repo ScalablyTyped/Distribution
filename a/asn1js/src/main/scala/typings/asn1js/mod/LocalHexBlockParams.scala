@@ -15,25 +15,19 @@ trait LocalHexBlockParams
 }
 object LocalHexBlockParams {
   
-  @scala.inline
-  def apply(): LocalHexBlockParams = {
+  inline def apply(): LocalHexBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalHexBlockParams]
   }
   
-  @scala.inline
-  implicit class LocalHexBlockParamsMutableBuilder[Self <: LocalHexBlockParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocalHexBlockParams](x: Self) {
     
-    @scala.inline
-    def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
+    inline def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHexOnlyUndefined: Self = StObject.set(x, "isHexOnly", js.undefined)
+    inline def setIsHexOnlyUndefined: Self = StObject.set(x, "isHexOnly", js.undefined)
     
-    @scala.inline
-    def setValueHex(value: ArrayBuffer): Self = StObject.set(x, "valueHex", value.asInstanceOf[js.Any])
+    inline def setValueHex(value: ArrayBuffer): Self = StObject.set(x, "valueHex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueHexUndefined: Self = StObject.set(x, "valueHex", js.undefined)
+    inline def setValueHexUndefined: Self = StObject.set(x, "valueHex", js.undefined)
   }
 }

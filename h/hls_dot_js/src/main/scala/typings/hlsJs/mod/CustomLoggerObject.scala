@@ -18,43 +18,31 @@ trait CustomLoggerObject extends StObject {
 }
 object CustomLoggerObject {
   
-  @scala.inline
-  def apply(): CustomLoggerObject = {
+  inline def apply(): CustomLoggerObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomLoggerObject]
   }
   
-  @scala.inline
-  implicit class CustomLoggerObjectMutableBuilder[Self <: CustomLoggerObject] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLoggerObject](x: Self) {
     
-    @scala.inline
-    def setDebug(value: CustomLogger): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: CustomLogger): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setError(value: CustomLogger): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: CustomLogger): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInfo(value: CustomLogger): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: CustomLogger): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setLog(value: CustomLogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: CustomLogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setWarn(value: CustomLogger): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+    inline def setWarn(value: CustomLogger): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+    inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
   }
 }

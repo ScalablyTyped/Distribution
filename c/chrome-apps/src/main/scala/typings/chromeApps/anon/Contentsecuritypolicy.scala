@@ -15,25 +15,19 @@ trait Contentsecuritypolicy extends StObject {
 }
 object Contentsecuritypolicy {
   
-  @scala.inline
-  def apply(pages: js.Array[String]): Contentsecuritypolicy = {
+  inline def apply(pages: js.Array[String]): Contentsecuritypolicy = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contentsecuritypolicy]
   }
   
-  @scala.inline
-  implicit class ContentsecuritypolicyMutableBuilder[Self <: Contentsecuritypolicy] (val x: Self) extends AnyVal {
+  extension [Self <: Contentsecuritypolicy](x: Self) {
     
-    @scala.inline
-    def setContent_security_policy(value: String): Self = StObject.set(x, "content_security_policy", value.asInstanceOf[js.Any])
+    inline def setContent_security_policy(value: String): Self = StObject.set(x, "content_security_policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_security_policyUndefined: Self = StObject.set(x, "content_security_policy", js.undefined)
+    inline def setContent_security_policyUndefined: Self = StObject.set(x, "content_security_policy", js.undefined)
     
-    @scala.inline
-    def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
   }
 }

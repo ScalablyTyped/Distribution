@@ -28,6 +28,5 @@ object CellComp {
   @JSImport("ag-grid", "CellComp.DOM_DATA_KEY_CELL_COMP")
   @js.native
   def DOM_DATA_KEY_CELL_COMP: String = js.native
-  @scala.inline
-  def DOM_DATA_KEY_CELL_COMP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DATA_KEY_CELL_COMP")(x.asInstanceOf[js.Any])
+  inline def DOM_DATA_KEY_CELL_COMP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DATA_KEY_CELL_COMP")(x.asInstanceOf[js.Any])
 }

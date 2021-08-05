@@ -29,7 +29,6 @@ object meshRendererMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): MeshRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MeshRenderer]
+    inline def create(): MeshRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MeshRenderer]
   }
 }

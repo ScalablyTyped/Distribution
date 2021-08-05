@@ -33,31 +33,23 @@ trait FieldLevelEncryptionProfileSummary extends StObject {
 }
 object FieldLevelEncryptionProfileSummary {
   
-  @scala.inline
-  def apply(EncryptionEntities: EncryptionEntities, Id: String, LastModifiedTime: timestamp, Name: String): FieldLevelEncryptionProfileSummary = {
+  inline def apply(EncryptionEntities: EncryptionEntities, Id: String, LastModifiedTime: timestamp, Name: String): FieldLevelEncryptionProfileSummary = {
     val __obj = js.Dynamic.literal(EncryptionEntities = EncryptionEntities.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldLevelEncryptionProfileSummary]
   }
   
-  @scala.inline
-  implicit class FieldLevelEncryptionProfileSummaryMutableBuilder[Self <: FieldLevelEncryptionProfileSummary] (val x: Self) extends AnyVal {
+  extension [Self <: FieldLevelEncryptionProfileSummary](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setEncryptionEntities(value: EncryptionEntities): Self = StObject.set(x, "EncryptionEntities", value.asInstanceOf[js.Any])
+    inline def setEncryptionEntities(value: EncryptionEntities): Self = StObject.set(x, "EncryptionEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

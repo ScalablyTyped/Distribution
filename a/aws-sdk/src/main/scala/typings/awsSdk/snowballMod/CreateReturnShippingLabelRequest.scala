@@ -18,22 +18,17 @@ trait CreateReturnShippingLabelRequest extends StObject {
 }
 object CreateReturnShippingLabelRequest {
   
-  @scala.inline
-  def apply(JobId: JobId): CreateReturnShippingLabelRequest = {
+  inline def apply(JobId: JobId): CreateReturnShippingLabelRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReturnShippingLabelRequest]
   }
   
-  @scala.inline
-  implicit class CreateReturnShippingLabelRequestMutableBuilder[Self <: CreateReturnShippingLabelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReturnShippingLabelRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOption(value: ShippingOption): Self = StObject.set(x, "ShippingOption", value.asInstanceOf[js.Any])
+    inline def setShippingOption(value: ShippingOption): Self = StObject.set(x, "ShippingOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOptionUndefined: Self = StObject.set(x, "ShippingOption", js.undefined)
+    inline def setShippingOptionUndefined: Self = StObject.set(x, "ShippingOption", js.undefined)
   }
 }

@@ -31,31 +31,23 @@ trait ParamsResourceServicesRolloutsGet
 }
 object ParamsResourceServicesRolloutsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceServicesRolloutsGet = {
+  inline def apply(): ParamsResourceServicesRolloutsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceServicesRolloutsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceServicesRolloutsGetMutableBuilder[Self <: ParamsResourceServicesRolloutsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceServicesRolloutsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRolloutId(value: String): Self = StObject.set(x, "rolloutId", value.asInstanceOf[js.Any])
+    inline def setRolloutId(value: String): Self = StObject.set(x, "rolloutId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolloutIdUndefined: Self = StObject.set(x, "rolloutId", js.undefined)
+    inline def setRolloutIdUndefined: Self = StObject.set(x, "rolloutId", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

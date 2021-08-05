@@ -32,55 +32,39 @@ trait LikeOptions extends StObject {
 }
 object LikeOptions {
   
-  @scala.inline
-  def apply(): LikeOptions = {
+  inline def apply(): LikeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LikeOptions]
   }
   
-  @scala.inline
-  implicit class LikeOptionsMutableBuilder[Self <: LikeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LikeOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setPageImage(value: String): Self = StObject.set(x, "pageImage", value.asInstanceOf[js.Any])
+    inline def setPageImage(value: String): Self = StObject.set(x, "pageImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageImageUndefined: Self = StObject.set(x, "pageImage", js.undefined)
+    inline def setPageImageUndefined: Self = StObject.set(x, "pageImage", js.undefined)
     
-    @scala.inline
-    def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
+    inline def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
+    inline def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
     
-    @scala.inline
-    def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
+    inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
+    inline def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
     
-    @scala.inline
-    def setType(value: button | mini | vertical | full): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: button | mini | vertical | full): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVerb(value: NumericBoolean): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: NumericBoolean): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+    inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

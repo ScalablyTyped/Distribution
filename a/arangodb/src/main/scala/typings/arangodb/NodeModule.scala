@@ -11,16 +11,13 @@ trait NodeModule extends StObject {
 }
 object NodeModule {
   
-  @scala.inline
-  def apply(context: Context): NodeModule = {
+  inline def apply(context: Context): NodeModule = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeModule]
   }
   
-  @scala.inline
-  implicit class NodeModuleMutableBuilder[Self <: NodeModule] (val x: Self) extends AnyVal {
+  extension [Self <: NodeModule](x: Self) {
     
-    @scala.inline
-    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

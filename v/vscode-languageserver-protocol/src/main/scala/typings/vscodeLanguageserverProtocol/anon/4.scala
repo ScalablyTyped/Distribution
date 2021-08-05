@@ -10,19 +10,15 @@ trait `4` extends StObject {
 }
 object `4` {
   
-  @scala.inline
-  def apply(): `4` = {
+  inline def apply(): `4` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`4`]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
+  extension [Self <: `4`](x: Self) {
     
-    @scala.inline
-    def setWorkspaceFolders(value: ChangeNotifications): Self = StObject.set(x, "workspaceFolders", value.asInstanceOf[js.Any])
+    inline def setWorkspaceFolders(value: ChangeNotifications): Self = StObject.set(x, "workspaceFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceFoldersUndefined: Self = StObject.set(x, "workspaceFolders", js.undefined)
+    inline def setWorkspaceFoldersUndefined: Self = StObject.set(x, "workspaceFolders", js.undefined)
   }
 }

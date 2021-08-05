@@ -53,20 +53,16 @@ object streamingMod {
   }
   object StreamingMessage {
     
-    @scala.inline
-    def apply(event: CreatedDate, sobject: Record[js.Any]): StreamingMessage = {
+    inline def apply(event: CreatedDate, sobject: Record[js.Any]): StreamingMessage = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], sobject = sobject.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamingMessage]
     }
     
-    @scala.inline
-    implicit class StreamingMessageMutableBuilder[Self <: StreamingMessage] (val x: Self) extends AnyVal {
+    extension [Self <: StreamingMessage](x: Self) {
       
-      @scala.inline
-      def setEvent(value: CreatedDate): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: CreatedDate): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSobject(value: Record[js.Any]): Self = StObject.set(x, "sobject", value.asInstanceOf[js.Any])
+      inline def setSobject(value: Record[js.Any]): Self = StObject.set(x, "sobject", value.asInstanceOf[js.Any])
     }
   }
 }

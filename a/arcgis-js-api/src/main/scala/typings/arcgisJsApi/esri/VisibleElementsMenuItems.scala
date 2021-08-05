@@ -33,8 +33,7 @@ trait VisibleElementsMenuItems
 }
 object VisibleElementsMenuItems {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object VisibleElementsMenuItems {
     __obj.asInstanceOf[VisibleElementsMenuItems]
   }
   
-  @scala.inline
-  implicit class VisibleElementsMenuItemsMutableBuilder[Self <: VisibleElementsMenuItems] (val x: Self) extends AnyVal {
+  extension [Self <: VisibleElementsMenuItems](x: Self) {
     
-    @scala.inline
-    def setClearSelection(value: Boolean): Self = StObject.set(x, "clearSelection", value.asInstanceOf[js.Any])
+    inline def setClearSelection(value: Boolean): Self = StObject.set(x, "clearSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearSelectionUndefined: Self = StObject.set(x, "clearSelection", js.undefined)
+    inline def setClearSelectionUndefined: Self = StObject.set(x, "clearSelection", js.undefined)
     
-    @scala.inline
-    def setRefreshData(value: Boolean): Self = StObject.set(x, "refreshData", value.asInstanceOf[js.Any])
+    inline def setRefreshData(value: Boolean): Self = StObject.set(x, "refreshData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshDataUndefined: Self = StObject.set(x, "refreshData", js.undefined)
+    inline def setRefreshDataUndefined: Self = StObject.set(x, "refreshData", js.undefined)
     
-    @scala.inline
-    def setToggleColumns(value: js.Any): Self = StObject.set(x, "toggleColumns", value.asInstanceOf[js.Any])
+    inline def setToggleColumns(value: js.Any): Self = StObject.set(x, "toggleColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleColumnsUndefined: Self = StObject.set(x, "toggleColumns", js.undefined)
+    inline def setToggleColumnsUndefined: Self = StObject.set(x, "toggleColumns", js.undefined)
   }
 }

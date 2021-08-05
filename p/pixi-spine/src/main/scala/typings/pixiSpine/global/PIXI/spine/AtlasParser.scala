@@ -16,8 +16,7 @@ object AtlasParser {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def use(
+  inline def use(
     resource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.LoaderResource */ js.Any,
     next: js.Function0[js.Any]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]

@@ -17,31 +17,23 @@ trait BodyClinicalImpression extends StObject {
 }
 object BodyClinicalImpression {
   
-  @scala.inline
-  def apply(body: ClinicalImpression): BodyClinicalImpression = {
+  inline def apply(body: ClinicalImpression): BodyClinicalImpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ClinicalImpression")
     __obj.asInstanceOf[BodyClinicalImpression]
   }
   
-  @scala.inline
-  implicit class BodyClinicalImpressionMutableBuilder[Self <: BodyClinicalImpression] (val x: Self) extends AnyVal {
+  extension [Self <: BodyClinicalImpression](x: Self) {
     
-    @scala.inline
-    def setBody(value: ClinicalImpression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: ClinicalImpression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.ClinicalImpression): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.ClinicalImpression): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

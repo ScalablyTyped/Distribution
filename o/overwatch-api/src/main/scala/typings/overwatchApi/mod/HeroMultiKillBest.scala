@@ -12,16 +12,13 @@ trait HeroMultiKillBest
 }
 object HeroMultiKillBest {
   
-  @scala.inline
-  def apply(hero: String, img: String, multikill_best: String): HeroMultiKillBest = {
+  inline def apply(hero: String, img: String, multikill_best: String): HeroMultiKillBest = {
     val __obj = js.Dynamic.literal(hero = hero.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], multikill_best = multikill_best.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeroMultiKillBest]
   }
   
-  @scala.inline
-  implicit class HeroMultiKillBestMutableBuilder[Self <: HeroMultiKillBest] (val x: Self) extends AnyVal {
+  extension [Self <: HeroMultiKillBest](x: Self) {
     
-    @scala.inline
-    def setMultikill_best(value: String): Self = StObject.set(x, "multikill_best", value.asInstanceOf[js.Any])
+    inline def setMultikill_best(value: String): Self = StObject.set(x, "multikill_best", value.asInstanceOf[js.Any])
   }
 }

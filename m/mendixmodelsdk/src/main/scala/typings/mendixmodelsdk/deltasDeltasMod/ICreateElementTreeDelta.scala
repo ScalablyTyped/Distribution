@@ -35,31 +35,23 @@ trait ICreateElementTreeDelta
 }
 object ICreateElementTreeDelta {
   
-  @scala.inline
-  def apply(elementTree: IStructureJSON, parentId: String, parentPropertyName: String, unitId: String): ICreateElementTreeDelta = {
+  inline def apply(elementTree: IStructureJSON, parentId: String, parentPropertyName: String, unitId: String): ICreateElementTreeDelta = {
     val __obj = js.Dynamic.literal(deltaType = "CREATE_ELEMENT_TREE", elementTree = elementTree.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any], parentPropertyName = parentPropertyName.asInstanceOf[js.Any], unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateElementTreeDelta]
   }
   
-  @scala.inline
-  implicit class ICreateElementTreeDeltaMutableBuilder[Self <: ICreateElementTreeDelta] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateElementTreeDelta](x: Self) {
     
-    @scala.inline
-    def setAdditionIndex(value: Double): Self = StObject.set(x, "additionIndex", value.asInstanceOf[js.Any])
+    inline def setAdditionIndex(value: Double): Self = StObject.set(x, "additionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionIndexUndefined: Self = StObject.set(x, "additionIndex", js.undefined)
+    inline def setAdditionIndexUndefined: Self = StObject.set(x, "additionIndex", js.undefined)
     
-    @scala.inline
-    def setDeltaType(value: CREATE_ELEMENT_TREE): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
+    inline def setDeltaType(value: CREATE_ELEMENT_TREE): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementTree(value: IStructureJSON): Self = StObject.set(x, "elementTree", value.asInstanceOf[js.Any])
+    inline def setElementTree(value: IStructureJSON): Self = StObject.set(x, "elementTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentPropertyName(value: String): Self = StObject.set(x, "parentPropertyName", value.asInstanceOf[js.Any])
+    inline def setParentPropertyName(value: String): Self = StObject.set(x, "parentPropertyName", value.asInstanceOf[js.Any])
   }
 }

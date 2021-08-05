@@ -48,8 +48,7 @@ trait ILayoutSite extends StObject {
 }
 object ILayoutSite {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animationsDisabled: Boolean,
     itemSurface: HTMLElement,
     rtl: Boolean,
@@ -62,28 +61,20 @@ object ILayoutSite {
     __obj.asInstanceOf[ILayoutSite]
   }
   
-  @scala.inline
-  implicit class ILayoutSiteMutableBuilder[Self <: ILayoutSite] (val x: Self) extends AnyVal {
+  extension [Self <: ILayoutSite](x: Self) {
     
-    @scala.inline
-    def setAnimationsDisabled(value: Boolean): Self = StObject.set(x, "animationsDisabled", value.asInstanceOf[js.Any])
+    inline def setAnimationsDisabled(value: Boolean): Self = StObject.set(x, "animationsDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemSurface(value: HTMLElement): Self = StObject.set(x, "itemSurface", value.asInstanceOf[js.Any])
+    inline def setItemSurface(value: HTMLElement): Self = StObject.set(x, "itemSurface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+    inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbarPos(value: Double): Self = StObject.set(x, "scrollbarPos", value.asInstanceOf[js.Any])
+    inline def setScrollbarPos(value: Double): Self = StObject.set(x, "scrollbarPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurface(value: HTMLElement): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
+    inline def setSurface(value: HTMLElement): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: HTMLElement): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: HTMLElement): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportSize(value: js.Any): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
+    inline def setViewportSize(value: js.Any): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
   }
 }

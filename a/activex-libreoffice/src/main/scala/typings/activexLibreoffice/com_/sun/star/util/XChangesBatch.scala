@@ -39,8 +39,7 @@ trait XChangesBatch
 }
 object XChangesBatch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PendingChanges: ChangesSet,
     acquire: () => Unit,
     commitChanges: () => Unit,
@@ -53,22 +52,16 @@ object XChangesBatch {
     __obj.asInstanceOf[XChangesBatch]
   }
   
-  @scala.inline
-  implicit class XChangesBatchMutableBuilder[Self <: XChangesBatch] (val x: Self) extends AnyVal {
+  extension [Self <: XChangesBatch](x: Self) {
     
-    @scala.inline
-    def setCommitChanges(value: () => Unit): Self = StObject.set(x, "commitChanges", js.Any.fromFunction0(value))
+    inline def setCommitChanges(value: () => Unit): Self = StObject.set(x, "commitChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPendingChanges(value: () => ChangesSet): Self = StObject.set(x, "getPendingChanges", js.Any.fromFunction0(value))
+    inline def setGetPendingChanges(value: () => ChangesSet): Self = StObject.set(x, "getPendingChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasPendingChanges(value: () => Boolean): Self = StObject.set(x, "hasPendingChanges", js.Any.fromFunction0(value))
+    inline def setHasPendingChanges(value: () => Boolean): Self = StObject.set(x, "hasPendingChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPendingChanges(value: ChangesSet): Self = StObject.set(x, "PendingChanges", value.asInstanceOf[js.Any])
+    inline def setPendingChanges(value: ChangesSet): Self = StObject.set(x, "PendingChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingChangesVarargs(value: ElementChange*): Self = StObject.set(x, "PendingChanges", js.Array(value :_*))
+    inline def setPendingChangesVarargs(value: ElementChange*): Self = StObject.set(x, "PendingChanges", js.Array(value :_*))
   }
 }

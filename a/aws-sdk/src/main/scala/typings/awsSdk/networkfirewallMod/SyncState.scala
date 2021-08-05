@@ -18,25 +18,19 @@ trait SyncState extends StObject {
 }
 object SyncState {
   
-  @scala.inline
-  def apply(): SyncState = {
+  inline def apply(): SyncState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncState]
   }
   
-  @scala.inline
-  implicit class SyncStateMutableBuilder[Self <: SyncState] (val x: Self) extends AnyVal {
+  extension [Self <: SyncState](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: Attachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: Attachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentUndefined: Self = StObject.set(x, "Attachment", js.undefined)
+    inline def setAttachmentUndefined: Self = StObject.set(x, "Attachment", js.undefined)
     
-    @scala.inline
-    def setConfig(value: SyncStateConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SyncStateConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
   }
 }

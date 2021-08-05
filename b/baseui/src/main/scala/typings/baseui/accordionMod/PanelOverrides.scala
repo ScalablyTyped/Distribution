@@ -24,45 +24,35 @@ trait PanelOverrides[T] extends StObject {
 }
 object PanelOverrides {
   
-  @scala.inline
-  def apply[T](): PanelOverrides[T] = {
+  inline def apply[T](): PanelOverrides[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PanelOverrides[T]]
   }
   
-  @scala.inline
-  implicit class PanelOverridesMutableBuilder[Self <: PanelOverrides[?], T] (val x: Self & PanelOverrides[T]) extends AnyVal {
+  extension [Self <: PanelOverrides[?], T](x: Self & PanelOverrides[T]) {
     
-    @scala.inline
-    def setContent(
+    inline def setContent(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
     ): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setHeader(
+    inline def setHeader(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
     ): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
     
-    @scala.inline
-    def setPanelContainer(
+    inline def setPanelContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
     ): Self = StObject.set(x, "PanelContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelContainerUndefined: Self = StObject.set(x, "PanelContainer", js.undefined)
+    inline def setPanelContainerUndefined: Self = StObject.set(x, "PanelContainer", js.undefined)
     
-    @scala.inline
-    def setToggleIcon(
+    inline def setToggleIcon(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
     ): Self = StObject.set(x, "ToggleIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleIconUndefined: Self = StObject.set(x, "ToggleIcon", js.undefined)
+    inline def setToggleIconUndefined: Self = StObject.set(x, "ToggleIcon", js.undefined)
   }
 }

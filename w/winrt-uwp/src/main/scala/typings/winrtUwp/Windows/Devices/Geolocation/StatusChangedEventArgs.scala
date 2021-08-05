@@ -12,16 +12,13 @@ trait StatusChangedEventArgs extends StObject {
 }
 object StatusChangedEventArgs {
   
-  @scala.inline
-  def apply(status: PositionStatus): StatusChangedEventArgs = {
+  inline def apply(status: PositionStatus): StatusChangedEventArgs = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class StatusChangedEventArgsMutableBuilder[Self <: StatusChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: StatusChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setStatus(value: PositionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PositionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

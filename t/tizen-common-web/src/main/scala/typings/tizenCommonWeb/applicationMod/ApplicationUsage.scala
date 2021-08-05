@@ -29,25 +29,19 @@ trait ApplicationUsage extends StObject {
 }
 object ApplicationUsage {
   
-  @scala.inline
-  def apply(appId: ApplicationId, lastTime: Date, totalCount: Double, totalDuration: Double): ApplicationUsage = {
+  inline def apply(appId: ApplicationId, lastTime: Date, totalCount: Double, totalDuration: Double): ApplicationUsage = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], lastTime = lastTime.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any], totalDuration = totalDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationUsage]
   }
   
-  @scala.inline
-  implicit class ApplicationUsageMutableBuilder[Self <: ApplicationUsage] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationUsage](x: Self) {
     
-    @scala.inline
-    def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTime(value: Date): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
+    inline def setLastTime(value: Date): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
+    inline def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
   }
 }

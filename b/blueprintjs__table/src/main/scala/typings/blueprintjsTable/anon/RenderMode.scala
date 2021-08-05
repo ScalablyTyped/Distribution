@@ -10,16 +10,13 @@ trait RenderMode extends StObject {
 }
 object RenderMode {
   
-  @scala.inline
-  def apply(renderMode: typings.blueprintjsTable.renderModeMod.RenderMode): RenderMode = {
+  inline def apply(renderMode: typings.blueprintjsTable.renderModeMod.RenderMode): RenderMode = {
     val __obj = js.Dynamic.literal(renderMode = renderMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderMode]
   }
   
-  @scala.inline
-  implicit class RenderModeMutableBuilder[Self <: RenderMode] (val x: Self) extends AnyVal {
+  extension [Self <: RenderMode](x: Self) {
     
-    @scala.inline
-    def setRenderMode(value: typings.blueprintjsTable.renderModeMod.RenderMode): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
+    inline def setRenderMode(value: typings.blueprintjsTable.renderModeMod.RenderMode): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
   }
 }

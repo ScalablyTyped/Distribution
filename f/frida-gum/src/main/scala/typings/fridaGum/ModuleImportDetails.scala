@@ -33,40 +33,29 @@ trait ModuleImportDetails extends StObject {
 }
 object ModuleImportDetails {
   
-  @scala.inline
-  def apply(name: String): ModuleImportDetails = {
+  inline def apply(name: String): ModuleImportDetails = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleImportDetails]
   }
   
-  @scala.inline
-  implicit class ModuleImportDetailsMutableBuilder[Self <: ModuleImportDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleImportDetails](x: Self) {
     
-    @scala.inline
-    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+    inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlot(value: NativePointer): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+    inline def setSlot(value: NativePointer): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+    inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    @scala.inline
-    def setType(value: ModuleImportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModuleImportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

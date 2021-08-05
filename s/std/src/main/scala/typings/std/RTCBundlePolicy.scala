@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCBundlePolicy extends StObject
 object RTCBundlePolicy {
   
-  @scala.inline
-  def balanced: typings.std.stdStrings.balanced = "balanced".asInstanceOf[typings.std.stdStrings.balanced]
+  inline def balanced: typings.std.stdStrings.balanced = "balanced".asInstanceOf[typings.std.stdStrings.balanced]
   
-  @scala.inline
-  def `max-bundle`: typings.std.stdStrings.`max-bundle` = "max-bundle".asInstanceOf[typings.std.stdStrings.`max-bundle`]
+  inline def `max-bundle`: typings.std.stdStrings.`max-bundle` = "max-bundle".asInstanceOf[typings.std.stdStrings.`max-bundle`]
   
-  @scala.inline
-  def `max-compat`: typings.std.stdStrings.`max-compat` = "max-compat".asInstanceOf[typings.std.stdStrings.`max-compat`]
+  inline def `max-compat`: typings.std.stdStrings.`max-compat` = "max-compat".asInstanceOf[typings.std.stdStrings.`max-compat`]
 }

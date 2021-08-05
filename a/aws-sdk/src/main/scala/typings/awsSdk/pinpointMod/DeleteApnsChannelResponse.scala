@@ -10,16 +10,13 @@ trait DeleteApnsChannelResponse extends StObject {
 }
 object DeleteApnsChannelResponse {
   
-  @scala.inline
-  def apply(APNSChannelResponse: APNSChannelResponse): DeleteApnsChannelResponse = {
+  inline def apply(APNSChannelResponse: APNSChannelResponse): DeleteApnsChannelResponse = {
     val __obj = js.Dynamic.literal(APNSChannelResponse = APNSChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApnsChannelResponse]
   }
   
-  @scala.inline
-  implicit class DeleteApnsChannelResponseMutableBuilder[Self <: DeleteApnsChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApnsChannelResponse](x: Self) {
     
-    @scala.inline
-    def setAPNSChannelResponse(value: APNSChannelResponse): Self = StObject.set(x, "APNSChannelResponse", value.asInstanceOf[js.Any])
+    inline def setAPNSChannelResponse(value: APNSChannelResponse): Self = StObject.set(x, "APNSChannelResponse", value.asInstanceOf[js.Any])
   }
 }

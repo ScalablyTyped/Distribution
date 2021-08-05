@@ -12,19 +12,15 @@ trait ReposGetLatestReleaseEndpoint extends StObject {
 }
 object ReposGetLatestReleaseEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ReposGetLatestReleaseEndpoint = {
+  inline def apply(owner: String, repo: String): ReposGetLatestReleaseEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposGetLatestReleaseEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposGetLatestReleaseEndpointMutableBuilder[Self <: ReposGetLatestReleaseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetLatestReleaseEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

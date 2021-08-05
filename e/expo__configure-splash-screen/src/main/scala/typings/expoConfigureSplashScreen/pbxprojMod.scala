@@ -11,8 +11,7 @@ object pbxprojMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(projectRootPath: String): js.Promise[IosProject] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRootPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IosProject]]
+  inline def default(projectRootPath: String): js.Promise[IosProject] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRootPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IosProject]]
   
   trait IosProject extends StObject {
     
@@ -35,8 +34,7 @@ object pbxprojMod {
   }
   object IosProject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applicationNativeTarget: Target,
       pbxProject: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ js.Any,
       projectName: String,
@@ -46,22 +44,17 @@ object pbxprojMod {
       __obj.asInstanceOf[IosProject]
     }
     
-    @scala.inline
-    implicit class IosProjectMutableBuilder[Self <: IosProject] (val x: Self) extends AnyVal {
+    extension [Self <: IosProject](x: Self) {
       
-      @scala.inline
-      def setApplicationNativeTarget(value: Target): Self = StObject.set(x, "applicationNativeTarget", value.asInstanceOf[js.Any])
+      inline def setApplicationNativeTarget(value: Target): Self = StObject.set(x, "applicationNativeTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPbxProject(
+      inline def setPbxProject(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ js.Any
       ): Self = StObject.set(x, "pbxProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+      inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectPath(value: String): Self = StObject.set(x, "projectPath", value.asInstanceOf[js.Any])
+      inline def setProjectPath(value: String): Self = StObject.set(x, "projectPath", value.asInstanceOf[js.Any])
     }
   }
 }

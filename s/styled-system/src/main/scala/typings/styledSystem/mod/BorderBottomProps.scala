@@ -16,25 +16,19 @@ trait BorderBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ext
 }
 object BorderBottomProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BorderBottomProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BorderBottomProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderBottomProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class BorderBottomPropsMutableBuilder[Self <: BorderBottomProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderBottomProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: BorderBottomProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderBottomProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setBorderBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    inline def setBorderBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomNull: Self = StObject.set(x, "borderBottom", null)
+    inline def setBorderBottomNull: Self = StObject.set(x, "borderBottom", null)
     
-    @scala.inline
-    def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+    inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
-    @scala.inline
-    def setBorderBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
+    inline def setBorderBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
   }
 }

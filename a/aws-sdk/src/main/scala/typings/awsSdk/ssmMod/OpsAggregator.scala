@@ -38,55 +38,39 @@ trait OpsAggregator extends StObject {
 }
 object OpsAggregator {
   
-  @scala.inline
-  def apply(): OpsAggregator = {
+  inline def apply(): OpsAggregator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpsAggregator]
   }
   
-  @scala.inline
-  implicit class OpsAggregatorMutableBuilder[Self <: OpsAggregator] (val x: Self) extends AnyVal {
+  extension [Self <: OpsAggregator](x: Self) {
     
-    @scala.inline
-    def setAggregatorType(value: OpsAggregatorType): Self = StObject.set(x, "AggregatorType", value.asInstanceOf[js.Any])
+    inline def setAggregatorType(value: OpsAggregatorType): Self = StObject.set(x, "AggregatorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatorTypeUndefined: Self = StObject.set(x, "AggregatorType", js.undefined)
+    inline def setAggregatorTypeUndefined: Self = StObject.set(x, "AggregatorType", js.undefined)
     
-    @scala.inline
-    def setAggregators(value: OpsAggregatorList): Self = StObject.set(x, "Aggregators", value.asInstanceOf[js.Any])
+    inline def setAggregators(value: OpsAggregatorList): Self = StObject.set(x, "Aggregators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
+    inline def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
     
-    @scala.inline
-    def setAggregatorsVarargs(value: OpsAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
+    inline def setAggregatorsVarargs(value: OpsAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
     
-    @scala.inline
-    def setAttributeName(value: OpsDataAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: OpsDataAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setFilters(value: OpsFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: OpsFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: OpsFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: OpsFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setTypeName(value: OpsDataTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: OpsDataTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
+    inline def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
     
-    @scala.inline
-    def setValues(value: OpsAggregatorValueMap): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: OpsAggregatorValueMap): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
   }
 }

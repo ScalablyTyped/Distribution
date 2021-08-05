@@ -14,22 +14,17 @@ trait MSInputMethodContextEventMap extends StObject {
 }
 object MSInputMethodContextEventMap {
   
-  @scala.inline
-  def apply(MSCandidateWindowHide: Event, MSCandidateWindowShow: Event, MSCandidateWindowUpdate: Event): MSInputMethodContextEventMap = {
+  inline def apply(MSCandidateWindowHide: Event, MSCandidateWindowShow: Event, MSCandidateWindowUpdate: Event): MSInputMethodContextEventMap = {
     val __obj = js.Dynamic.literal(MSCandidateWindowHide = MSCandidateWindowHide.asInstanceOf[js.Any], MSCandidateWindowShow = MSCandidateWindowShow.asInstanceOf[js.Any], MSCandidateWindowUpdate = MSCandidateWindowUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSInputMethodContextEventMap]
   }
   
-  @scala.inline
-  implicit class MSInputMethodContextEventMapMutableBuilder[Self <: MSInputMethodContextEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: MSInputMethodContextEventMap](x: Self) {
     
-    @scala.inline
-    def setMSCandidateWindowHide(value: Event): Self = StObject.set(x, "MSCandidateWindowHide", value.asInstanceOf[js.Any])
+    inline def setMSCandidateWindowHide(value: Event): Self = StObject.set(x, "MSCandidateWindowHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSCandidateWindowShow(value: Event): Self = StObject.set(x, "MSCandidateWindowShow", value.asInstanceOf[js.Any])
+    inline def setMSCandidateWindowShow(value: Event): Self = StObject.set(x, "MSCandidateWindowShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSCandidateWindowUpdate(value: Event): Self = StObject.set(x, "MSCandidateWindowUpdate", value.asInstanceOf[js.Any])
+    inline def setMSCandidateWindowUpdate(value: Event): Self = StObject.set(x, "MSCandidateWindowUpdate", value.asInstanceOf[js.Any])
   }
 }

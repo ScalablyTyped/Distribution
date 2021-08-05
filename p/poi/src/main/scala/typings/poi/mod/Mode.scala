@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Mode extends StObject
 object Mode {
   
-  @scala.inline
-  def development: typings.poi.poiStrings.development = "development".asInstanceOf[typings.poi.poiStrings.development]
+  inline def development: typings.poi.poiStrings.development = "development".asInstanceOf[typings.poi.poiStrings.development]
   
-  @scala.inline
-  def production: typings.poi.poiStrings.production = "production".asInstanceOf[typings.poi.poiStrings.production]
+  inline def production: typings.poi.poiStrings.production = "production".asInstanceOf[typings.poi.poiStrings.production]
   
-  @scala.inline
-  def test: typings.poi.poiStrings.test = "test".asInstanceOf[typings.poi.poiStrings.test]
+  inline def test: typings.poi.poiStrings.test = "test".asInstanceOf[typings.poi.poiStrings.test]
 }

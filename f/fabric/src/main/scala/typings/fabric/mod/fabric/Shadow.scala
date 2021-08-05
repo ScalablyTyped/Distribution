@@ -29,6 +29,5 @@ object Shadow {
   @JSImport("fabric", "fabric.Shadow.reOffsetsAndBlur")
   @js.native
   def reOffsetsAndBlur: RegExp = js.native
-  @scala.inline
-  def reOffsetsAndBlur_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reOffsetsAndBlur")(x.asInstanceOf[js.Any])
+  inline def reOffsetsAndBlur_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reOffsetsAndBlur")(x.asInstanceOf[js.Any])
 }

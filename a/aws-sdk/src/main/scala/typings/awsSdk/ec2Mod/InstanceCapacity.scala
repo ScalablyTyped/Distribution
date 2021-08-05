@@ -23,31 +23,23 @@ trait InstanceCapacity extends StObject {
 }
 object InstanceCapacity {
   
-  @scala.inline
-  def apply(): InstanceCapacity = {
+  inline def apply(): InstanceCapacity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceCapacity]
   }
   
-  @scala.inline
-  implicit class InstanceCapacityMutableBuilder[Self <: InstanceCapacity] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceCapacity](x: Self) {
     
-    @scala.inline
-    def setAvailableCapacity(value: Integer): Self = StObject.set(x, "AvailableCapacity", value.asInstanceOf[js.Any])
+    inline def setAvailableCapacity(value: Integer): Self = StObject.set(x, "AvailableCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableCapacityUndefined: Self = StObject.set(x, "AvailableCapacity", js.undefined)
+    inline def setAvailableCapacityUndefined: Self = StObject.set(x, "AvailableCapacity", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setTotalCapacity(value: Integer): Self = StObject.set(x, "TotalCapacity", value.asInstanceOf[js.Any])
+    inline def setTotalCapacity(value: Integer): Self = StObject.set(x, "TotalCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCapacityUndefined: Self = StObject.set(x, "TotalCapacity", js.undefined)
+    inline def setTotalCapacityUndefined: Self = StObject.set(x, "TotalCapacity", js.undefined)
   }
 }

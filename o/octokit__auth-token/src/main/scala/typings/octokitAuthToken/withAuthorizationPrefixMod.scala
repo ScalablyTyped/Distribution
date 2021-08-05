@@ -10,6 +10,5 @@ object withAuthorizationPrefixMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withAuthorizationPrefix(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withAuthorizationPrefix")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def withAuthorizationPrefix(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withAuthorizationPrefix")(token.asInstanceOf[js.Any]).asInstanceOf[String]
 }

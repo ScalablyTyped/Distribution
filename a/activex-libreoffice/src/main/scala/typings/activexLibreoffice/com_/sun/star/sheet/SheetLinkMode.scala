@@ -34,14 +34,11 @@ object SheetLinkMode {
     *
     * sheet is not linked.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** all contents (values and formulas) are copied. */
-  @scala.inline
-  def NORMAL: `1` = 1.asInstanceOf[`1`]
+  inline def NORMAL: `1` = 1.asInstanceOf[`1`]
   
   /** instead of using formulas, the result values are copied. */
-  @scala.inline
-  def VALUE: `2` = 2.asInstanceOf[`2`]
+  inline def VALUE: `2` = 2.asInstanceOf[`2`]
 }

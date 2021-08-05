@@ -18,16 +18,13 @@ trait BootstrapClientTreeViewNodeProcessingModeEventArgs
 }
 object BootstrapClientTreeViewNodeProcessingModeEventArgs {
   
-  @scala.inline
-  def apply(node: BootstrapClientTreeViewNode, processOnServer: Boolean): BootstrapClientTreeViewNodeProcessingModeEventArgs = {
+  inline def apply(node: BootstrapClientTreeViewNode, processOnServer: Boolean): BootstrapClientTreeViewNodeProcessingModeEventArgs = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapClientTreeViewNodeProcessingModeEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientTreeViewNodeProcessingModeEventArgsMutableBuilder[Self <: BootstrapClientTreeViewNodeProcessingModeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientTreeViewNodeProcessingModeEventArgs](x: Self) {
     
-    @scala.inline
-    def setNode(value: BootstrapClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: BootstrapClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

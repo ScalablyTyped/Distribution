@@ -15,7 +15,7 @@ object pendingOperationMod {
     
     def abort(): Unit = js.native
     
-    var deferred: Deferred[T] = js.native
+    /* protected */ var deferred: Deferred[T] = js.native
     
     var isRejected: Boolean = js.native
     
@@ -27,6 +27,6 @@ object pendingOperationMod {
     
     def resolve(value: T): Unit = js.native
     
-    var timeoutMillis: Double = js.native
+    /* protected */ var timeoutMillis: Double = js.native
   }
 }

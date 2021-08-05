@@ -17,31 +17,23 @@ trait OpenTabOptions extends StObject {
 }
 object OpenTabOptions {
   
-  @scala.inline
-  def apply(): OpenTabOptions = {
+  inline def apply(): OpenTabOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenTabOptions]
   }
   
-  @scala.inline
-  implicit class OpenTabOptionsMutableBuilder[Self <: OpenTabOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenTabOptions](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+    inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    @scala.inline
-    def setSetParent(value: Boolean): Self = StObject.set(x, "setParent", value.asInstanceOf[js.Any])
+    inline def setSetParent(value: Boolean): Self = StObject.set(x, "setParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetParentUndefined: Self = StObject.set(x, "setParent", js.undefined)
+    inline def setSetParentUndefined: Self = StObject.set(x, "setParent", js.undefined)
   }
 }

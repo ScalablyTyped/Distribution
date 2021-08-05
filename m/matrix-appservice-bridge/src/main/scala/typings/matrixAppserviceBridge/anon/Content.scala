@@ -12,19 +12,15 @@ trait Content[T] extends StObject {
 }
 object Content {
   
-  @scala.inline
-  def apply[T](content: T, ts: Double): Content[T] = {
+  inline def apply[T](content: T, ts: Double): Content[T] = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content[T]]
   }
   
-  @scala.inline
-  implicit class ContentMutableBuilder[Self <: Content[?], T] (val x: Self & Content[T]) extends AnyVal {
+  extension [Self <: Content[?], T](x: Self & Content[T]) {
     
-    @scala.inline
-    def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+    inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
   }
 }

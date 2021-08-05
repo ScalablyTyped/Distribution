@@ -21,26 +21,20 @@ object highlightToggleMod extends Shortcut {
   }
   object ToggleProps {
     
-    @scala.inline
-    def apply(elementsToHighlight: js.Array[NodeResult]): ToggleProps = {
+    inline def apply(elementsToHighlight: js.Array[NodeResult]): ToggleProps = {
       val __obj = js.Dynamic.literal(elementsToHighlight = elementsToHighlight.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToggleProps]
     }
     
-    @scala.inline
-    implicit class TogglePropsMutableBuilder[Self <: ToggleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleProps](x: Self) {
       
-      @scala.inline
-      def setElementsToHighlight(value: js.Array[NodeResult]): Self = StObject.set(x, "elementsToHighlight", value.asInstanceOf[js.Any])
+      inline def setElementsToHighlight(value: js.Array[NodeResult]): Self = StObject.set(x, "elementsToHighlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsToHighlightVarargs(value: NodeResult*): Self = StObject.set(x, "elementsToHighlight", js.Array(value :_*))
+      inline def setElementsToHighlightVarargs(value: NodeResult*): Self = StObject.set(x, "elementsToHighlight", js.Array(value :_*))
       
-      @scala.inline
-      def setToggleId(value: String): Self = StObject.set(x, "toggleId", value.asInstanceOf[js.Any])
+      inline def setToggleId(value: String): Self = StObject.set(x, "toggleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleIdUndefined: Self = StObject.set(x, "toggleId", js.undefined)
+      inline def setToggleIdUndefined: Self = StObject.set(x, "toggleId", js.undefined)
     }
   }
   

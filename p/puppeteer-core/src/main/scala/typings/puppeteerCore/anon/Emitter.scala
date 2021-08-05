@@ -15,22 +15,17 @@ trait Emitter extends StObject {
 }
 object Emitter {
   
-  @scala.inline
-  def apply(emitter: CommonEventEmitter, eventName: String | js.Symbol, handler: /* repeated */ js.Any => Unit): Emitter = {
+  inline def apply(emitter: CommonEventEmitter, eventName: String | js.Symbol, handler: /* repeated */ js.Any => Unit): Emitter = {
     val __obj = js.Dynamic.literal(emitter = emitter.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], handler = js.Any.fromFunction1(handler))
     __obj.asInstanceOf[Emitter]
   }
   
-  @scala.inline
-  implicit class EmitterMutableBuilder[Self <: Emitter] (val x: Self) extends AnyVal {
+  extension [Self <: Emitter](x: Self) {
     
-    @scala.inline
-    def setEmitter(value: CommonEventEmitter): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
+    inline def setEmitter(value: CommonEventEmitter): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventName(value: String | js.Symbol): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String | js.Symbol): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandler(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+    inline def setHandler(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
   }
 }

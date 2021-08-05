@@ -29,7 +29,7 @@ trait AutoCorrect extends StObject {
   
   var DisplayAutoCorrectOptions: Boolean
   
-  @JSName("Excel.AutoCorrect_typekey")
+  /* private */ @JSName("Excel.AutoCorrect_typekey")
   var ExcelDotAutoCorrect_typekey: AutoCorrect
   
   val Parent: js.Any
@@ -42,8 +42,7 @@ trait AutoCorrect extends StObject {
 }
 object AutoCorrect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddReplacement: (String, String) => String,
     Application: Application,
     AutoExpandListRange: Boolean,
@@ -65,52 +64,36 @@ object AutoCorrect {
     __obj.asInstanceOf[AutoCorrect]
   }
   
-  @scala.inline
-  implicit class AutoCorrectMutableBuilder[Self <: AutoCorrect] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCorrect](x: Self) {
     
-    @scala.inline
-    def setAddReplacement(value: (String, String) => String): Self = StObject.set(x, "AddReplacement", js.Any.fromFunction2(value))
+    inline def setAddReplacement(value: (String, String) => String): Self = StObject.set(x, "AddReplacement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoExpandListRange(value: Boolean): Self = StObject.set(x, "AutoExpandListRange", value.asInstanceOf[js.Any])
+    inline def setAutoExpandListRange(value: Boolean): Self = StObject.set(x, "AutoExpandListRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillFormulasInLists(value: Boolean): Self = StObject.set(x, "AutoFillFormulasInLists", value.asInstanceOf[js.Any])
+    inline def setAutoFillFormulasInLists(value: Boolean): Self = StObject.set(x, "AutoFillFormulasInLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapitalizeNamesOfDays(value: Boolean): Self = StObject.set(x, "CapitalizeNamesOfDays", value.asInstanceOf[js.Any])
+    inline def setCapitalizeNamesOfDays(value: Boolean): Self = StObject.set(x, "CapitalizeNamesOfDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrectCapsLock(value: Boolean): Self = StObject.set(x, "CorrectCapsLock", value.asInstanceOf[js.Any])
+    inline def setCorrectCapsLock(value: Boolean): Self = StObject.set(x, "CorrectCapsLock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrectSentenceCap(value: Boolean): Self = StObject.set(x, "CorrectSentenceCap", value.asInstanceOf[js.Any])
+    inline def setCorrectSentenceCap(value: Boolean): Self = StObject.set(x, "CorrectSentenceCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteReplacement(value: String => String): Self = StObject.set(x, "DeleteReplacement", js.Any.fromFunction1(value))
+    inline def setDeleteReplacement(value: String => String): Self = StObject.set(x, "DeleteReplacement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplayAutoCorrectOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoCorrectOptions", value.asInstanceOf[js.Any])
+    inline def setDisplayAutoCorrectOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoCorrectOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotAutoCorrect_typekey(value: AutoCorrect): Self = StObject.set(x, "Excel.AutoCorrect_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotAutoCorrect_typekey(value: AutoCorrect): Self = StObject.set(x, "Excel.AutoCorrect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceText(value: Boolean): Self = StObject.set(x, "ReplaceText", value.asInstanceOf[js.Any])
+    inline def setReplaceText(value: Boolean): Self = StObject.set(x, "ReplaceText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementList(value: Double => SafeArray[String]): Self = StObject.set(x, "ReplacementList", js.Any.fromFunction1(value))
+    inline def setReplacementList(value: Double => SafeArray[String]): Self = StObject.set(x, "ReplacementList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTwoInitialCapitals(value: Boolean): Self = StObject.set(x, "TwoInitialCapitals", value.asInstanceOf[js.Any])
+    inline def setTwoInitialCapitals(value: Boolean): Self = StObject.set(x, "TwoInitialCapitals", value.asInstanceOf[js.Any])
   }
 }

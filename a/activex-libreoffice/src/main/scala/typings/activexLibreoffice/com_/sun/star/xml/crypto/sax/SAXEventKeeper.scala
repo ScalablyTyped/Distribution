@@ -21,8 +21,7 @@ trait SAXEventKeeper
      with XInitialization
 object SAXEventKeeper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentBlockingNode: XXMLElementWrapper,
     acquire: () => Unit,
     addBlocker: () => Double,

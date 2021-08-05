@@ -18,8 +18,7 @@ trait WebixFilter extends StObject {
 }
 object WebixFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getValue: HTMLElement => js.Any,
     refresh: (baseview, HTMLElement, js.Any) => Unit,
     render: (baseview, StringDictionary[js.Any]) => String,
@@ -29,19 +28,14 @@ object WebixFilter {
     __obj.asInstanceOf[WebixFilter]
   }
   
-  @scala.inline
-  implicit class WebixFilterMutableBuilder[Self <: WebixFilter] (val x: Self) extends AnyVal {
+  extension [Self <: WebixFilter](x: Self) {
     
-    @scala.inline
-    def setGetValue(value: HTMLElement => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: HTMLElement => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefresh(value: (baseview, HTMLElement, js.Any) => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction3(value))
+    inline def setRefresh(value: (baseview, HTMLElement, js.Any) => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRender(value: (baseview, StringDictionary[js.Any]) => String): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRender(value: (baseview, StringDictionary[js.Any]) => String): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetValue(value: (HTMLElement, js.Any) => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (HTMLElement, js.Any) => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
   }
 }

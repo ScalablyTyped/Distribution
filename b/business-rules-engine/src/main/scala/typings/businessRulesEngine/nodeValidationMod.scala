@@ -56,26 +56,22 @@ object nodeValidationMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def GetValidationMessage(validator: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def GetValidationMessage(validator: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("node-validation", "MessageLocalization.ValidationMessages")
     @js.native
     def ValidationMessages: Contains = js.native
-    @scala.inline
-    def ValidationMessages_=(x: Contains): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValidationMessages")(x.asInstanceOf[js.Any])
+    inline def ValidationMessages_=(x: Contains): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ValidationMessages")(x.asInstanceOf[js.Any])
     
     @JSImport("node-validation", "MessageLocalization.customMsg")
     @js.native
     def customMsg: String = js.native
-    @scala.inline
-    def customMsg_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customMsg")(x.asInstanceOf[js.Any])
+    inline def customMsg_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customMsg")(x.asInstanceOf[js.Any])
     
     @JSImport("node-validation", "MessageLocalization.defaultMessages")
     @js.native
     def defaultMessages: Contains = js.native
-    @scala.inline
-    def defaultMessages_=(x: Contains): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMessages")(x.asInstanceOf[js.Any])
+    inline def defaultMessages_=(x: Contains): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMessages")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("node-validation", "ValidationFailure")

@@ -13,19 +13,15 @@ trait GetChannelMessageResponse extends StObject {
 }
 object GetChannelMessageResponse {
   
-  @scala.inline
-  def apply(): GetChannelMessageResponse = {
+  inline def apply(): GetChannelMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetChannelMessageResponse]
   }
   
-  @scala.inline
-  implicit class GetChannelMessageResponseMutableBuilder[Self <: GetChannelMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetChannelMessageResponse](x: Self) {
     
-    @scala.inline
-    def setChannelMessage(value: ChannelMessage): Self = StObject.set(x, "ChannelMessage", value.asInstanceOf[js.Any])
+    inline def setChannelMessage(value: ChannelMessage): Self = StObject.set(x, "ChannelMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelMessageUndefined: Self = StObject.set(x, "ChannelMessage", js.undefined)
+    inline def setChannelMessageUndefined: Self = StObject.set(x, "ChannelMessage", js.undefined)
   }
 }

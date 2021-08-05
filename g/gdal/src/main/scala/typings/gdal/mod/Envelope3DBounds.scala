@@ -14,19 +14,15 @@ trait Envelope3DBounds
 }
 object Envelope3DBounds {
   
-  @scala.inline
-  def apply(maxX: Double, maxY: Double, maxZ: Double, minX: Double, minY: Double, minZ: Double): Envelope3DBounds = {
+  inline def apply(maxX: Double, maxY: Double, maxZ: Double, minX: Double, minY: Double, minZ: Double): Envelope3DBounds = {
     val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], maxZ = maxZ.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any], minZ = minZ.asInstanceOf[js.Any])
     __obj.asInstanceOf[Envelope3DBounds]
   }
   
-  @scala.inline
-  implicit class Envelope3DBoundsMutableBuilder[Self <: Envelope3DBounds] (val x: Self) extends AnyVal {
+  extension [Self <: Envelope3DBounds](x: Self) {
     
-    @scala.inline
-    def setMaxZ(value: Double): Self = StObject.set(x, "maxZ", value.asInstanceOf[js.Any])
+    inline def setMaxZ(value: Double): Self = StObject.set(x, "maxZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZ(value: Double): Self = StObject.set(x, "minZ", value.asInstanceOf[js.Any])
+    inline def setMinZ(value: Double): Self = StObject.set(x, "minZ", value.asInstanceOf[js.Any])
   }
 }

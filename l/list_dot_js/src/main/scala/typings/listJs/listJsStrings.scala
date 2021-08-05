@@ -11,48 +11,41 @@ object listJsStrings {
   sealed trait filterComplete
     extends StObject
        with Event
-  @scala.inline
-  def filterComplete: filterComplete = "filterComplete".asInstanceOf[filterComplete]
+  inline def filterComplete: filterComplete = "filterComplete".asInstanceOf[filterComplete]
   
   @js.native
   sealed trait filterStart
     extends StObject
        with Event
-  @scala.inline
-  def filterStart: filterStart = "filterStart".asInstanceOf[filterStart]
+  inline def filterStart: filterStart = "filterStart".asInstanceOf[filterStart]
   
   @js.native
   sealed trait searchComplete
     extends StObject
        with Event
-  @scala.inline
-  def searchComplete: searchComplete = "searchComplete".asInstanceOf[searchComplete]
+  inline def searchComplete: searchComplete = "searchComplete".asInstanceOf[searchComplete]
   
   @js.native
   sealed trait searchStart
     extends StObject
        with Event
-  @scala.inline
-  def searchStart: searchStart = "searchStart".asInstanceOf[searchStart]
+  inline def searchStart: searchStart = "searchStart".asInstanceOf[searchStart]
   
   @js.native
   sealed trait sortComplete
     extends StObject
        with Event
-  @scala.inline
-  def sortComplete: sortComplete = "sortComplete".asInstanceOf[sortComplete]
+  inline def sortComplete: sortComplete = "sortComplete".asInstanceOf[sortComplete]
   
   @js.native
   sealed trait sortStart
     extends StObject
        with Event
-  @scala.inline
-  def sortStart: sortStart = "sortStart".asInstanceOf[sortStart]
+  inline def sortStart: sortStart = "sortStart".asInstanceOf[sortStart]
   
   @js.native
   sealed trait updated
     extends StObject
        with Event
-  @scala.inline
-  def updated: updated = "updated".asInstanceOf[updated]
+  inline def updated: updated = "updated".asInstanceOf[updated]
 }

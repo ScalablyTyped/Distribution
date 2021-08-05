@@ -13,16 +13,13 @@ trait DescribeSecretRequest extends StObject {
 }
 object DescribeSecretRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): DescribeSecretRequest = {
+  inline def apply(SecretId: SecretIdType): DescribeSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSecretRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSecretRequestMutableBuilder[Self <: DescribeSecretRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSecretRequest](x: Self) {
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

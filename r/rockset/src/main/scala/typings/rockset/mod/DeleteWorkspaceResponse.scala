@@ -11,19 +11,15 @@ trait DeleteWorkspaceResponse extends StObject {
 }
 object DeleteWorkspaceResponse {
   
-  @scala.inline
-  def apply(): DeleteWorkspaceResponse = {
+  inline def apply(): DeleteWorkspaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteWorkspaceResponse]
   }
   
-  @scala.inline
-  implicit class DeleteWorkspaceResponseMutableBuilder[Self <: DeleteWorkspaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWorkspaceResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: Workspace): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Workspace): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

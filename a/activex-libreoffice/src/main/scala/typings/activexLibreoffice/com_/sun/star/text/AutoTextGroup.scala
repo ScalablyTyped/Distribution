@@ -26,8 +26,7 @@ trait AutoTextGroup
 }
 object AutoTextGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,
@@ -56,13 +55,10 @@ object AutoTextGroup {
     __obj.asInstanceOf[AutoTextGroup]
   }
   
-  @scala.inline
-  implicit class AutoTextGroupMutableBuilder[Self <: AutoTextGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AutoTextGroup](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

@@ -24,40 +24,29 @@ trait UpdateTableRowPropertiesRequest extends StObject {
 }
 object UpdateTableRowPropertiesRequest {
   
-  @scala.inline
-  def apply(): UpdateTableRowPropertiesRequest = {
+  inline def apply(): UpdateTableRowPropertiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTableRowPropertiesRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTableRowPropertiesRequestMutableBuilder[Self <: UpdateTableRowPropertiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTableRowPropertiesRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setRowIndices(value: js.Array[Double]): Self = StObject.set(x, "rowIndices", value.asInstanceOf[js.Any])
+    inline def setRowIndices(value: js.Array[Double]): Self = StObject.set(x, "rowIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndicesUndefined: Self = StObject.set(x, "rowIndices", js.undefined)
+    inline def setRowIndicesUndefined: Self = StObject.set(x, "rowIndices", js.undefined)
     
-    @scala.inline
-    def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value :_*))
+    inline def setRowIndicesVarargs(value: Double*): Self = StObject.set(x, "rowIndices", js.Array(value :_*))
     
-    @scala.inline
-    def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
+    inline def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
+    inline def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
   }
 }

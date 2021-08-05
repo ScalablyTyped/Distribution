@@ -12,25 +12,19 @@ trait LangAccessibilityLegendOptions extends StObject {
 }
 object LangAccessibilityLegendOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilityLegendOptions = {
+  inline def apply(): LangAccessibilityLegendOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilityLegendOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilityLegendOptionsMutableBuilder[Self <: LangAccessibilityLegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilityLegendOptions](x: Self) {
     
-    @scala.inline
-    def setLegendItem(value: String): Self = StObject.set(x, "legendItem", value.asInstanceOf[js.Any])
+    inline def setLegendItem(value: String): Self = StObject.set(x, "legendItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendItemUndefined: Self = StObject.set(x, "legendItem", js.undefined)
+    inline def setLegendItemUndefined: Self = StObject.set(x, "legendItem", js.undefined)
     
-    @scala.inline
-    def setLegendLabel(value: String): Self = StObject.set(x, "legendLabel", value.asInstanceOf[js.Any])
+    inline def setLegendLabel(value: String): Self = StObject.set(x, "legendLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendLabelUndefined: Self = StObject.set(x, "legendLabel", js.undefined)
+    inline def setLegendLabelUndefined: Self = StObject.set(x, "legendLabel", js.undefined)
   }
 }

@@ -64,8 +64,7 @@ trait XInputStream
 }
 object XInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     available: () => Double,
     closeInput: () => Unit,
@@ -79,22 +78,16 @@ object XInputStream {
     __obj.asInstanceOf[XInputStream]
   }
   
-  @scala.inline
-  implicit class XInputStreamMutableBuilder[Self <: XInputStream] (val x: Self) extends AnyVal {
+  extension [Self <: XInputStream](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: () => Double): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
+    inline def setAvailable(value: () => Double): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloseInput(value: () => Unit): Self = StObject.set(x, "closeInput", js.Any.fromFunction0(value))
+    inline def setCloseInput(value: () => Unit): Self = StObject.set(x, "closeInput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "readBytes", js.Any.fromFunction2(value))
+    inline def setReadBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "readBytes", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReadSomeBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "readSomeBytes", js.Any.fromFunction2(value))
+    inline def setReadSomeBytes(value: (js.Array[SeqEquiv[Double]], Double) => Double): Self = StObject.set(x, "readSomeBytes", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSkipBytes(value: Double => Unit): Self = StObject.set(x, "skipBytes", js.Any.fromFunction1(value))
+    inline def setSkipBytes(value: Double => Unit): Self = StObject.set(x, "skipBytes", js.Any.fromFunction1(value))
   }
 }

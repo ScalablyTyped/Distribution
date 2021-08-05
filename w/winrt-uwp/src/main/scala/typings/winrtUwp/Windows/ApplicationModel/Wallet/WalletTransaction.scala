@@ -28,8 +28,7 @@ trait WalletTransaction extends StObject {
 }
 object WalletTransaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     displayAmount: String,
     displayLocation: String,
@@ -41,25 +40,18 @@ object WalletTransaction {
     __obj.asInstanceOf[WalletTransaction]
   }
   
-  @scala.inline
-  implicit class WalletTransactionMutableBuilder[Self <: WalletTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: WalletTransaction](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayAmount(value: String): Self = StObject.set(x, "displayAmount", value.asInstanceOf[js.Any])
+    inline def setDisplayAmount(value: String): Self = StObject.set(x, "displayAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLocation(value: String): Self = StObject.set(x, "displayLocation", value.asInstanceOf[js.Any])
+    inline def setDisplayLocation(value: String): Self = StObject.set(x, "displayLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreTimeOfDay(value: Boolean): Self = StObject.set(x, "ignoreTimeOfDay", value.asInstanceOf[js.Any])
+    inline def setIgnoreTimeOfDay(value: Boolean): Self = StObject.set(x, "ignoreTimeOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLaunchable(value: Boolean): Self = StObject.set(x, "isLaunchable", value.asInstanceOf[js.Any])
+    inline def setIsLaunchable(value: Boolean): Self = StObject.set(x, "isLaunchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionDate(value: Date): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
+    inline def setTransactionDate(value: Date): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
   }
 }

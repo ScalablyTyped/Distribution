@@ -21,22 +21,17 @@ trait EtaResponse extends StObject {
 }
 object EtaResponse {
   
-  @scala.inline
-  def apply(etas: js.Array[EtaResult], request: EtaRequestOptions): EtaResponse = {
+  inline def apply(etas: js.Array[EtaResult], request: EtaRequestOptions): EtaResponse = {
     val __obj = js.Dynamic.literal(etas = etas.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[EtaResponse]
   }
   
-  @scala.inline
-  implicit class EtaResponseMutableBuilder[Self <: EtaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EtaResponse](x: Self) {
     
-    @scala.inline
-    def setEtas(value: js.Array[EtaResult]): Self = StObject.set(x, "etas", value.asInstanceOf[js.Any])
+    inline def setEtas(value: js.Array[EtaResult]): Self = StObject.set(x, "etas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtasVarargs(value: EtaResult*): Self = StObject.set(x, "etas", js.Array(value :_*))
+    inline def setEtasVarargs(value: EtaResult*): Self = StObject.set(x, "etas", js.Array(value :_*))
     
-    @scala.inline
-    def setRequest(value: EtaRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EtaRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

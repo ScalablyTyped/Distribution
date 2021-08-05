@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.CustomTaskPane")
 @js.native
-class CustomTaskPane protected ()
+/* private */ class CustomTaskPane ()
   extends StObject
      with typings.activexOffice.Office.CustomTaskPane {
   
@@ -30,7 +30,7 @@ class CustomTaskPane protected ()
   /* CompleteClass */
   var Height: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.CustomTaskPane_typekey")
   var OfficeDotCustomTaskPane_typekey: typings.activexOffice.Office.CustomTaskPane = js.native
   

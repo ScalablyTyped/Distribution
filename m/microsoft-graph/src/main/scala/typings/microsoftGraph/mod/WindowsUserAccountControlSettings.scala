@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsUserAccountControlSettings extends StObject
 object WindowsUserAccountControlSettings {
   
-  @scala.inline
-  def alwaysNotify: typings.microsoftGraph.microsoftGraphStrings.alwaysNotify = "alwaysNotify".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alwaysNotify]
+  inline def alwaysNotify: typings.microsoftGraph.microsoftGraphStrings.alwaysNotify = "alwaysNotify".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alwaysNotify]
   
-  @scala.inline
-  def neverNotify: typings.microsoftGraph.microsoftGraphStrings.neverNotify = "neverNotify".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.neverNotify]
+  inline def neverNotify: typings.microsoftGraph.microsoftGraphStrings.neverNotify = "neverNotify".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.neverNotify]
   
-  @scala.inline
-  def notifyOnAppChanges: typings.microsoftGraph.microsoftGraphStrings.notifyOnAppChanges = "notifyOnAppChanges".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notifyOnAppChanges]
+  inline def notifyOnAppChanges: typings.microsoftGraph.microsoftGraphStrings.notifyOnAppChanges = "notifyOnAppChanges".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notifyOnAppChanges]
   
-  @scala.inline
-  def notifyOnAppChangesWithoutDimming: typings.microsoftGraph.microsoftGraphStrings.notifyOnAppChangesWithoutDimming = "notifyOnAppChangesWithoutDimming".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notifyOnAppChangesWithoutDimming]
+  inline def notifyOnAppChangesWithoutDimming: typings.microsoftGraph.microsoftGraphStrings.notifyOnAppChangesWithoutDimming = "notifyOnAppChangesWithoutDimming".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notifyOnAppChangesWithoutDimming]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

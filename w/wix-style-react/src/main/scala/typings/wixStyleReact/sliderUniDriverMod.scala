@@ -30,8 +30,7 @@ object sliderUniDriverMod {
   }
   object SliderUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -48,32 +47,23 @@ object sliderUniDriverMod {
       __obj.asInstanceOf[SliderUniDriver]
     }
     
-    @scala.inline
-    implicit class SliderUniDriverMutableBuilder[Self <: SliderUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SliderUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetToolTipValue(value: () => js.Promise[String]): Self = StObject.set(x, "getToolTipValue", js.Any.fromFunction0(value))
+      inline def setGetToolTipValue(value: () => js.Promise[String]): Self = StObject.set(x, "getToolTipValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHoverHandle(value: HandleIndex => js.Promise[Unit]): Self = StObject.set(x, "hoverHandle", js.Any.fromFunction1(value))
+      inline def setHoverHandle(value: HandleIndex => js.Promise[Unit]): Self = StObject.set(x, "hoverHandle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDotSelected(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isDotSelected", js.Any.fromFunction1(value))
+      inline def setIsDotSelected(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isDotSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNumOfSliderDots(value: () => js.Promise[Double]): Self = StObject.set(x, "numOfSliderDots", js.Any.fromFunction0(value))
+      inline def setNumOfSliderDots(value: () => js.Promise[Double]): Self = StObject.set(x, "numOfSliderDots", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNumOfSliderHandles(value: () => js.Promise[Double]): Self = StObject.set(x, "numOfSliderHandles", js.Any.fromFunction0(value))
+      inline def setNumOfSliderHandles(value: () => js.Promise[Double]): Self = StObject.set(x, "numOfSliderHandles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNumOfSliderMarksLabels(value: () => js.Promise[Double]): Self = StObject.set(x, "numOfSliderMarksLabels", js.Any.fromFunction0(value))
+      inline def setNumOfSliderMarksLabels(value: () => js.Promise[Double]): Self = StObject.set(x, "numOfSliderMarksLabels", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnHoverHandle(value: HandleIndex => js.Promise[Unit]): Self = StObject.set(x, "unHoverHandle", js.Any.fromFunction1(value))
+      inline def setUnHoverHandle(value: HandleIndex => js.Promise[Unit]): Self = StObject.set(x, "unHoverHandle", js.Any.fromFunction1(value))
     }
   }
 }

@@ -13,19 +13,15 @@ trait CacheAttributes extends StObject {
 }
 object CacheAttributes {
   
-  @scala.inline
-  def apply(): CacheAttributes = {
+  inline def apply(): CacheAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheAttributes]
   }
   
-  @scala.inline
-  implicit class CacheAttributesMutableBuilder[Self <: CacheAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: CacheAttributes](x: Self) {
     
-    @scala.inline
-    def setCacheStaleTimeoutInSeconds(value: CacheStaleTimeoutInSeconds): Self = StObject.set(x, "CacheStaleTimeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setCacheStaleTimeoutInSeconds(value: CacheStaleTimeoutInSeconds): Self = StObject.set(x, "CacheStaleTimeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheStaleTimeoutInSecondsUndefined: Self = StObject.set(x, "CacheStaleTimeoutInSeconds", js.undefined)
+    inline def setCacheStaleTimeoutInSecondsUndefined: Self = StObject.set(x, "CacheStaleTimeoutInSeconds", js.undefined)
   }
 }

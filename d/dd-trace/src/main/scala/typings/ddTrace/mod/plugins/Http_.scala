@@ -47,56 +47,41 @@ trait Http_
 }
 object Http_ {
   
-  @scala.inline
-  def apply(): Http_ = {
+  inline def apply(): Http_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Http_]
   }
   
-  @scala.inline
-  implicit class Http_MutableBuilder[Self <: Http_] (val x: Self) extends AnyVal {
+  extension [Self <: Http_](x: Self) {
     
-    @scala.inline
-    def setBlacklist(
+    inline def setBlacklist(
       value: String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])])
     ): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlacklistFunction1(value: /* url */ String => Boolean): Self = StObject.set(x, "blacklist", js.Any.fromFunction1(value))
+    inline def setBlacklistFunction1(value: /* url */ String => Boolean): Self = StObject.set(x, "blacklist", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+    inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
-    @scala.inline
-    def setBlacklistVarargs(value: (String | RegExp | (js.Function1[/* url */ String, Boolean]))*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+    inline def setBlacklistVarargs(value: (String | RegExp | (js.Function1[/* url */ String, Boolean]))*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setValidateStatus(value: /* code */ Double => Boolean): Self = StObject.set(x, "validateStatus", js.Any.fromFunction1(value))
+    inline def setValidateStatus(value: /* code */ Double => Boolean): Self = StObject.set(x, "validateStatus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateStatusUndefined: Self = StObject.set(x, "validateStatus", js.undefined)
+    inline def setValidateStatusUndefined: Self = StObject.set(x, "validateStatus", js.undefined)
     
-    @scala.inline
-    def setWhitelist(
+    inline def setWhitelist(
       value: String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])])
     ): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistFunction1(value: /* url */ String => Boolean): Self = StObject.set(x, "whitelist", js.Any.fromFunction1(value))
+    inline def setWhitelistFunction1(value: /* url */ String => Boolean): Self = StObject.set(x, "whitelist", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+    inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
-    @scala.inline
-    def setWhitelistVarargs(value: (String | RegExp | (js.Function1[/* url */ String, Boolean]))*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: (String | RegExp | (js.Function1[/* url */ String, Boolean]))*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
   }
 }

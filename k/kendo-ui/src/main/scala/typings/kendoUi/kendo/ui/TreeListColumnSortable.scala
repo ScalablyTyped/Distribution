@@ -10,19 +10,15 @@ trait TreeListColumnSortable extends StObject {
 }
 object TreeListColumnSortable {
   
-  @scala.inline
-  def apply(): TreeListColumnSortable = {
+  inline def apply(): TreeListColumnSortable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeListColumnSortable]
   }
   
-  @scala.inline
-  implicit class TreeListColumnSortableMutableBuilder[Self <: TreeListColumnSortable] (val x: Self) extends AnyVal {
+  extension [Self <: TreeListColumnSortable](x: Self) {
     
-    @scala.inline
-    def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
   }
 }

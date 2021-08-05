@@ -20,38 +20,28 @@ object activityIndicatorPropsTypeMod {
   }
   object ActivityIndicatorPropTypes {
     
-    @scala.inline
-    def apply(): ActivityIndicatorPropTypes = {
+    inline def apply(): ActivityIndicatorPropTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActivityIndicatorPropTypes]
     }
     
-    @scala.inline
-    implicit class ActivityIndicatorPropTypesMutableBuilder[Self <: ActivityIndicatorPropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: ActivityIndicatorPropTypes](x: Self) {
       
-      @scala.inline
-      def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
+      inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
+      inline def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
       
-      @scala.inline
-      def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setToast(value: Boolean): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
+      inline def setToast(value: Boolean): Self = StObject.set(x, "toast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToastUndefined: Self = StObject.set(x, "toast", js.undefined)
+      inline def setToastUndefined: Self = StObject.set(x, "toast", js.undefined)
     }
   }
 }

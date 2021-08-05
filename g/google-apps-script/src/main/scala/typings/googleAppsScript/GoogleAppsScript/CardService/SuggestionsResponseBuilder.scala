@@ -15,19 +15,15 @@ trait SuggestionsResponseBuilder extends StObject {
 }
 object SuggestionsResponseBuilder {
   
-  @scala.inline
-  def apply(build: () => SuggestionsResponse, setSuggestions: Suggestions => SuggestionsResponseBuilder): SuggestionsResponseBuilder = {
+  inline def apply(build: () => SuggestionsResponse, setSuggestions: Suggestions => SuggestionsResponseBuilder): SuggestionsResponseBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setSuggestions = js.Any.fromFunction1(setSuggestions))
     __obj.asInstanceOf[SuggestionsResponseBuilder]
   }
   
-  @scala.inline
-  implicit class SuggestionsResponseBuilderMutableBuilder[Self <: SuggestionsResponseBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestionsResponseBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => SuggestionsResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => SuggestionsResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetSuggestions(value: Suggestions => SuggestionsResponseBuilder): Self = StObject.set(x, "setSuggestions", js.Any.fromFunction1(value))
+    inline def setSetSuggestions(value: Suggestions => SuggestionsResponseBuilder): Self = StObject.set(x, "setSuggestions", js.Any.fromFunction1(value))
   }
 }

@@ -16,19 +16,15 @@ trait SchemaGoogleAppsScriptTypeExecutionApiConfig extends StObject {
 }
 object SchemaGoogleAppsScriptTypeExecutionApiConfig {
   
-  @scala.inline
-  def apply(): SchemaGoogleAppsScriptTypeExecutionApiConfig = {
+  inline def apply(): SchemaGoogleAppsScriptTypeExecutionApiConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleAppsScriptTypeExecutionApiConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleAppsScriptTypeExecutionApiConfigMutableBuilder[Self <: SchemaGoogleAppsScriptTypeExecutionApiConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleAppsScriptTypeExecutionApiConfig](x: Self) {
     
-    @scala.inline
-    def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait ConnectionConfiguration extends StObject {
 }
 object ConnectionConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DatabaseHost: DatabaseHost,
     DatabaseName: DatabaseName,
     DatabasePort: DatabasePort,
@@ -45,22 +44,16 @@ object ConnectionConfiguration {
     __obj.asInstanceOf[ConnectionConfiguration]
   }
   
-  @scala.inline
-  implicit class ConnectionConfigurationMutableBuilder[Self <: ConnectionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionConfiguration](x: Self) {
     
-    @scala.inline
-    def setDatabaseHost(value: DatabaseHost): Self = StObject.set(x, "DatabaseHost", value.asInstanceOf[js.Any])
+    inline def setDatabaseHost(value: DatabaseHost): Self = StObject.set(x, "DatabaseHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseName(value: DatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: DatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabasePort(value: DatabasePort): Self = StObject.set(x, "DatabasePort", value.asInstanceOf[js.Any])
+    inline def setDatabasePort(value: DatabasePort): Self = StObject.set(x, "DatabasePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

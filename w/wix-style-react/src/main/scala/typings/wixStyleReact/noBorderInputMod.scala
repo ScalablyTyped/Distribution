@@ -23,8 +23,7 @@ object noBorderInputMod {
     @JSImport("wix-style-react/dist/es/src/NoBorderInput", "default.StatusError")
     @js.native
     def StatusError: InputStatusError = js.native
-    @scala.inline
-    def StatusError_=(x: InputStatusError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StatusError")(x.asInstanceOf[js.Any])
+    inline def StatusError_=(x: InputStatusError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StatusError")(x.asInstanceOf[js.Any])
   }
   
   type NoBorderInput = Component[NoBorderInputProps, js.Object, js.Any]
@@ -40,26 +39,20 @@ object noBorderInputMod {
   }
   object NoBorderInputProps {
     
-    @scala.inline
-    def apply(): NoBorderInputProps = {
+    inline def apply(): NoBorderInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NoBorderInputProps]
     }
     
-    @scala.inline
-    implicit class NoBorderInputPropsMutableBuilder[Self <: NoBorderInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: NoBorderInputProps](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setStatus(value: NoBorderInputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: NoBorderInputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   

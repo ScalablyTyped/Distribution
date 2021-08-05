@@ -16,37 +16,27 @@ trait EndpointRectangleOptions extends StObject {
 }
 object EndpointRectangleOptions {
   
-  @scala.inline
-  def apply(): EndpointRectangleOptions = {
+  inline def apply(): EndpointRectangleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointRectangleOptions]
   }
   
-  @scala.inline
-  implicit class EndpointRectangleOptionsMutableBuilder[Self <: EndpointRectangleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointRectangleOptions](x: Self) {
     
-    @scala.inline
-    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
+    inline def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
+    inline def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -140,146 +140,100 @@ object FilterTable {
   }
   object FilterTableOptions {
     
-    @scala.inline
-    def apply(): FilterTableOptions = {
+    inline def apply(): FilterTableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilterTableOptions]
     }
     
-    @scala.inline
-    implicit class FilterTableOptionsMutableBuilder[Self <: FilterTableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FilterTableOptions](x: Self) {
       
-      @scala.inline
-      def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
+      inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
+      inline def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
       
-      @scala.inline
-      def setCallback(value: (/* term */ String, /* table */ JQuery) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* term */ String, /* table */ JQuery) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
+      inline def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
+      inline def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
       
-      @scala.inline
-      def setContainerTag(value: String): Self = StObject.set(x, "containerTag", value.asInstanceOf[js.Any])
+      inline def setContainerTag(value: String): Self = StObject.set(x, "containerTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerTagUndefined: Self = StObject.set(x, "containerTag", js.undefined)
+      inline def setContainerTagUndefined: Self = StObject.set(x, "containerTag", js.undefined)
       
-      @scala.inline
-      def setHideTFootOnFilter(value: Boolean): Self = StObject.set(x, "hideTFootOnFilter", value.asInstanceOf[js.Any])
+      inline def setHideTFootOnFilter(value: Boolean): Self = StObject.set(x, "hideTFootOnFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideTFootOnFilterUndefined: Self = StObject.set(x, "hideTFootOnFilter", js.undefined)
+      inline def setHideTFootOnFilterUndefined: Self = StObject.set(x, "hideTFootOnFilter", js.undefined)
       
-      @scala.inline
-      def setHighlightClass(value: String): Self = StObject.set(x, "highlightClass", value.asInstanceOf[js.Any])
+      inline def setHighlightClass(value: String): Self = StObject.set(x, "highlightClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightClassUndefined: Self = StObject.set(x, "highlightClass", js.undefined)
+      inline def setHighlightClassUndefined: Self = StObject.set(x, "highlightClass", js.undefined)
       
-      @scala.inline
-      def setIgnoreColumns(value: js.Array[Double]): Self = StObject.set(x, "ignoreColumns", value.asInstanceOf[js.Any])
+      inline def setIgnoreColumns(value: js.Array[Double]): Self = StObject.set(x, "ignoreColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreColumnsUndefined: Self = StObject.set(x, "ignoreColumns", js.undefined)
+      inline def setIgnoreColumnsUndefined: Self = StObject.set(x, "ignoreColumns", js.undefined)
       
-      @scala.inline
-      def setIgnoreColumnsVarargs(value: Double*): Self = StObject.set(x, "ignoreColumns", js.Array(value :_*))
+      inline def setIgnoreColumnsVarargs(value: Double*): Self = StObject.set(x, "ignoreColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+      inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
+      inline def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
       
-      @scala.inline
-      def setInputSelector(value: String): Self = StObject.set(x, "inputSelector", value.asInstanceOf[js.Any])
+      inline def setInputSelector(value: String): Self = StObject.set(x, "inputSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputSelectorUndefined: Self = StObject.set(x, "inputSelector", js.undefined)
+      inline def setInputSelectorUndefined: Self = StObject.set(x, "inputSelector", js.undefined)
       
-      @scala.inline
-      def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+      inline def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+      inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMinChars(value: Double): Self = StObject.set(x, "minChars", value.asInstanceOf[js.Any])
+      inline def setMinChars(value: Double): Self = StObject.set(x, "minChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCharsUndefined: Self = StObject.set(x, "minChars", js.undefined)
+      inline def setMinCharsUndefined: Self = StObject.set(x, "minChars", js.undefined)
       
-      @scala.inline
-      def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
+      inline def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
+      inline def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPreventReturnKey(value: Boolean): Self = StObject.set(x, "preventReturnKey", value.asInstanceOf[js.Any])
+      inline def setPreventReturnKey(value: Boolean): Self = StObject.set(x, "preventReturnKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventReturnKeyUndefined: Self = StObject.set(x, "preventReturnKey", js.undefined)
+      inline def setPreventReturnKeyUndefined: Self = StObject.set(x, "preventReturnKey", js.undefined)
       
-      @scala.inline
-      def setQuickList(value: js.Array[String]): Self = StObject.set(x, "quickList", value.asInstanceOf[js.Any])
+      inline def setQuickList(value: js.Array[String]): Self = StObject.set(x, "quickList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuickListClass(value: String): Self = StObject.set(x, "quickListClass", value.asInstanceOf[js.Any])
+      inline def setQuickListClass(value: String): Self = StObject.set(x, "quickListClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuickListClassUndefined: Self = StObject.set(x, "quickListClass", js.undefined)
+      inline def setQuickListClassUndefined: Self = StObject.set(x, "quickListClass", js.undefined)
       
-      @scala.inline
-      def setQuickListClear(value: String): Self = StObject.set(x, "quickListClear", value.asInstanceOf[js.Any])
+      inline def setQuickListClear(value: String): Self = StObject.set(x, "quickListClear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuickListClearUndefined: Self = StObject.set(x, "quickListClear", js.undefined)
+      inline def setQuickListClearUndefined: Self = StObject.set(x, "quickListClear", js.undefined)
       
-      @scala.inline
-      def setQuickListGroupTag(value: String): Self = StObject.set(x, "quickListGroupTag", value.asInstanceOf[js.Any])
+      inline def setQuickListGroupTag(value: String): Self = StObject.set(x, "quickListGroupTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuickListGroupTagUndefined: Self = StObject.set(x, "quickListGroupTag", js.undefined)
+      inline def setQuickListGroupTagUndefined: Self = StObject.set(x, "quickListGroupTag", js.undefined)
       
-      @scala.inline
-      def setQuickListTag(value: String): Self = StObject.set(x, "quickListTag", value.asInstanceOf[js.Any])
+      inline def setQuickListTag(value: String): Self = StObject.set(x, "quickListTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuickListTagUndefined: Self = StObject.set(x, "quickListTag", js.undefined)
+      inline def setQuickListTagUndefined: Self = StObject.set(x, "quickListTag", js.undefined)
       
-      @scala.inline
-      def setQuickListUndefined: Self = StObject.set(x, "quickList", js.undefined)
+      inline def setQuickListUndefined: Self = StObject.set(x, "quickList", js.undefined)
       
-      @scala.inline
-      def setQuickListVarargs(value: String*): Self = StObject.set(x, "quickList", js.Array(value :_*))
+      inline def setQuickListVarargs(value: String*): Self = StObject.set(x, "quickList", js.Array(value :_*))
       
-      @scala.inline
-      def setVisibleClass(value: String): Self = StObject.set(x, "visibleClass", value.asInstanceOf[js.Any])
+      inline def setVisibleClass(value: String): Self = StObject.set(x, "visibleClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleClassUndefined: Self = StObject.set(x, "visibleClass", js.undefined)
+      inline def setVisibleClassUndefined: Self = StObject.set(x, "visibleClass", js.undefined)
     }
   }
   

@@ -31,8 +31,7 @@ trait XExternalDocLinks
 }
 object XExternalDocLinks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,
@@ -53,10 +52,8 @@ object XExternalDocLinks {
     __obj.asInstanceOf[XExternalDocLinks]
   }
   
-  @scala.inline
-  implicit class XExternalDocLinksMutableBuilder[Self <: XExternalDocLinks] (val x: Self) extends AnyVal {
+  extension [Self <: XExternalDocLinks](x: Self) {
     
-    @scala.inline
-    def setAddDocLink(value: String => XExternalDocLink): Self = StObject.set(x, "addDocLink", js.Any.fromFunction1(value))
+    inline def setAddDocLink(value: String => XExternalDocLink): Self = StObject.set(x, "addDocLink", js.Any.fromFunction1(value))
   }
 }

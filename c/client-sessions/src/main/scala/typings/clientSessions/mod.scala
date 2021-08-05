@@ -22,20 +22,16 @@ object mod extends Shortcut {
   }
   object ComputeHmacOptions {
     
-    @scala.inline
-    def apply(signatureAlgorithm: String, signatureKey: Buffer): ComputeHmacOptions = {
+    inline def apply(signatureAlgorithm: String, signatureKey: Buffer): ComputeHmacOptions = {
       val __obj = js.Dynamic.literal(signatureAlgorithm = signatureAlgorithm.asInstanceOf[js.Any], signatureKey = signatureKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComputeHmacOptions]
     }
     
-    @scala.inline
-    implicit class ComputeHmacOptionsMutableBuilder[Self <: ComputeHmacOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ComputeHmacOptions](x: Self) {
       
-      @scala.inline
-      def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
+      inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureKey(value: Buffer): Self = StObject.set(x, "signatureKey", value.asInstanceOf[js.Any])
+      inline def setSignatureKey(value: Buffer): Self = StObject.set(x, "signatureKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,23 +45,18 @@ object mod extends Shortcut {
   }
   object DecodeResult {
     
-    @scala.inline
-    def apply(content: js.Any, createdAt: Double, duration: Double): DecodeResult = {
+    inline def apply(content: js.Any, createdAt: Double, duration: Double): DecodeResult = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodeResult]
     }
     
-    @scala.inline
-    implicit class DecodeResultMutableBuilder[Self <: DecodeResult] (val x: Self) extends AnyVal {
+    extension [Self <: DecodeResult](x: Self) {
       
-      @scala.inline
-      def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,47 +100,34 @@ object mod extends Shortcut {
   }
   object SessionOptions {
     
-    @scala.inline
-    def apply(secret: String): SessionOptions = {
+    inline def apply(secret: String): SessionOptions = {
       val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[SessionOptions]
     }
     
-    @scala.inline
-    implicit class SessionOptionsMutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SessionOptions](x: Self) {
       
-      @scala.inline
-      def setActiveDuration(value: Double): Self = StObject.set(x, "activeDuration", value.asInstanceOf[js.Any])
+      inline def setActiveDuration(value: Double): Self = StObject.set(x, "activeDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDurationUndefined: Self = StObject.set(x, "activeDuration", js.undefined)
+      inline def setActiveDurationUndefined: Self = StObject.set(x, "activeDuration", js.undefined)
       
-      @scala.inline
-      def setCookie(value: IOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: IOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
+      inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
+      inline def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setRequestKey(value: String): Self = StObject.set(x, "requestKey", value.asInstanceOf[js.Any])
+      inline def setRequestKey(value: String): Self = StObject.set(x, "requestKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestKeyUndefined: Self = StObject.set(x, "requestKey", js.undefined)
+      inline def setRequestKeyUndefined: Self = StObject.set(x, "requestKey", js.undefined)
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
   

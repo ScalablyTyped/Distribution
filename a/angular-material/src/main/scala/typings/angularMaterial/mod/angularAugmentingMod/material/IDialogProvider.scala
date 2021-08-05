@@ -11,16 +11,13 @@ trait IDialogProvider extends StObject {
 }
 object IDialogProvider {
   
-  @scala.inline
-  def apply(addPreset: (String, Methods) => IDialogProvider): IDialogProvider = {
+  inline def apply(addPreset: (String, Methods) => IDialogProvider): IDialogProvider = {
     val __obj = js.Dynamic.literal(addPreset = js.Any.fromFunction2(addPreset))
     __obj.asInstanceOf[IDialogProvider]
   }
   
-  @scala.inline
-  implicit class IDialogProviderMutableBuilder[Self <: IDialogProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IDialogProvider](x: Self) {
     
-    @scala.inline
-    def setAddPreset(value: (String, Methods) => IDialogProvider): Self = StObject.set(x, "addPreset", js.Any.fromFunction2(value))
+    inline def setAddPreset(value: (String, Methods) => IDialogProvider): Self = StObject.set(x, "addPreset", js.Any.fromFunction2(value))
   }
 }

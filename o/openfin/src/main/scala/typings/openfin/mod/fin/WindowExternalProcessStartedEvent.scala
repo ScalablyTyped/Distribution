@@ -19,20 +19,16 @@ trait WindowExternalProcessStartedEvent
 }
 object WindowExternalProcessStartedEvent {
   
-  @scala.inline
-  def apply(name: String, processUuid: String, uuid: String): WindowExternalProcessStartedEvent = {
+  inline def apply(name: String, processUuid: String, uuid: String): WindowExternalProcessStartedEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], processUuid = processUuid.asInstanceOf[js.Any], topic = "window", uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("external-process-started")
     __obj.asInstanceOf[WindowExternalProcessStartedEvent]
   }
   
-  @scala.inline
-  implicit class WindowExternalProcessStartedEventMutableBuilder[Self <: WindowExternalProcessStartedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowExternalProcessStartedEvent](x: Self) {
     
-    @scala.inline
-    def setProcessUuid(value: String): Self = StObject.set(x, "processUuid", value.asInstanceOf[js.Any])
+    inline def setProcessUuid(value: String): Self = StObject.set(x, "processUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `external-process-started`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `external-process-started`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

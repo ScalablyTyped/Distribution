@@ -15,19 +15,15 @@ trait DefaultTreeParentNode
 }
 object DefaultTreeParentNode {
   
-  @scala.inline
-  def apply(childNodes: js.Array[DefaultTreeNode], nodeName: String): DefaultTreeParentNode = {
+  inline def apply(childNodes: js.Array[DefaultTreeNode], nodeName: String): DefaultTreeParentNode = {
     val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultTreeParentNode]
   }
   
-  @scala.inline
-  implicit class DefaultTreeParentNodeMutableBuilder[Self <: DefaultTreeParentNode] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultTreeParentNode](x: Self) {
     
-    @scala.inline
-    def setChildNodes(value: js.Array[DefaultTreeNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+    inline def setChildNodes(value: js.Array[DefaultTreeNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNodesVarargs(value: DefaultTreeNode*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
+    inline def setChildNodesVarargs(value: DefaultTreeNode*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
   }
 }

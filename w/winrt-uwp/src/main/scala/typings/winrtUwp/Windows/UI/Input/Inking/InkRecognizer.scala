@@ -12,16 +12,13 @@ trait InkRecognizer extends StObject {
 }
 object InkRecognizer {
   
-  @scala.inline
-  def apply(name: String): InkRecognizer = {
+  inline def apply(name: String): InkRecognizer = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkRecognizer]
   }
   
-  @scala.inline
-  implicit class InkRecognizerMutableBuilder[Self <: InkRecognizer] (val x: Self) extends AnyVal {
+  extension [Self <: InkRecognizer](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

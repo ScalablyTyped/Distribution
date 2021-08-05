@@ -14,31 +14,23 @@ trait WizardStepper extends StObject {
 }
 object WizardStepper {
   
-  @scala.inline
-  def apply(): WizardStepper = {
+  inline def apply(): WizardStepper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WizardStepper]
   }
   
-  @scala.inline
-  implicit class WizardStepperMutableBuilder[Self <: WizardStepper] (val x: Self) extends AnyVal {
+  extension [Self <: WizardStepper](x: Self) {
     
-    @scala.inline
-    def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+    inline def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+    inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
-    @scala.inline
-    def setLabel(value: Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLinear(value: Boolean): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
+    inline def setLinear(value: Boolean): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearUndefined: Self = StObject.set(x, "linear", js.undefined)
+    inline def setLinearUndefined: Self = StObject.set(x, "linear", js.undefined)
   }
 }

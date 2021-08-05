@@ -13,16 +13,13 @@ trait RetrieveDomainAuthCodeResponse extends StObject {
 }
 object RetrieveDomainAuthCodeResponse {
   
-  @scala.inline
-  def apply(AuthCode: DomainAuthCode): RetrieveDomainAuthCodeResponse = {
+  inline def apply(AuthCode: DomainAuthCode): RetrieveDomainAuthCodeResponse = {
     val __obj = js.Dynamic.literal(AuthCode = AuthCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrieveDomainAuthCodeResponse]
   }
   
-  @scala.inline
-  implicit class RetrieveDomainAuthCodeResponseMutableBuilder[Self <: RetrieveDomainAuthCodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveDomainAuthCodeResponse](x: Self) {
     
-    @scala.inline
-    def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
+    inline def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
   }
 }

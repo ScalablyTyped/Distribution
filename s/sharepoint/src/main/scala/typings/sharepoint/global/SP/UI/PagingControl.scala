@@ -52,14 +52,12 @@ object PagingControl {
     @JSGlobal("SP.UI.PagingControl.ButtonIDs.next")
     @js.native
     def next: Double = js.native
-    @scala.inline
-    def next_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("next")(x.asInstanceOf[js.Any])
+    inline def next_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("next")(x.asInstanceOf[js.Any])
     
     @JSGlobal("SP.UI.PagingControl.ButtonIDs.prev")
     @js.native
     def prev: Double = js.native
-    @scala.inline
-    def prev_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prev")(x.asInstanceOf[js.Any])
+    inline def prev_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prev")(x.asInstanceOf[js.Any])
   }
   
   /* static member */
@@ -72,19 +70,16 @@ object PagingControl {
     @JSGlobal("SP.UI.PagingControl.ButtonState.disabled")
     @js.native
     def disabled: Double = js.native
-    @scala.inline
-    def disabled_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
+    inline def disabled_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
     
     @JSGlobal("SP.UI.PagingControl.ButtonState.enabled")
     @js.native
     def enabled: Double = js.native
-    @scala.inline
-    def enabled_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
+    inline def enabled_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
     
     @JSGlobal("SP.UI.PagingControl.ButtonState.hidden")
     @js.native
     def hidden: Double = js.native
-    @scala.inline
-    def hidden_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hidden")(x.asInstanceOf[js.Any])
+    inline def hidden_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hidden")(x.asInstanceOf[js.Any])
   }
 }

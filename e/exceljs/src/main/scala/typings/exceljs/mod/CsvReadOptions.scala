@@ -17,8 +17,7 @@ trait CsvReadOptions extends StObject {
 }
 object CsvReadOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dateFormats: js.Array[String],
     map: (js.Any, Double) => js.Any,
     parserOptions: PartialFastCsvParserOptio,
@@ -28,22 +27,16 @@ object CsvReadOptions {
     __obj.asInstanceOf[CsvReadOptions]
   }
   
-  @scala.inline
-  implicit class CsvReadOptionsMutableBuilder[Self <: CsvReadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CsvReadOptions](x: Self) {
     
-    @scala.inline
-    def setDateFormats(value: js.Array[String]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
+    inline def setDateFormats(value: js.Array[String]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
+    inline def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
     
-    @scala.inline
-    def setMap(value: (js.Any, Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (js.Any, Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParserOptions(value: PartialFastCsvParserOptio): Self = StObject.set(x, "parserOptions", value.asInstanceOf[js.Any])
+    inline def setParserOptions(value: PartialFastCsvParserOptio): Self = StObject.set(x, "parserOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
+    inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
   }
 }

@@ -31,29 +31,22 @@ object typesDecryptOutputMod {
   }
   object DecryptOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DecryptOutput = {
+    inline def apply($metadata: ResponseMetadata): DecryptOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecryptOutput]
     }
     
-    @scala.inline
-    implicit class DecryptOutputMutableBuilder[Self <: DecryptOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DecryptOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
       
-      @scala.inline
-      def setPlaintext(value: Uint8Array): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: Uint8Array): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
+      inline def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
     }
   }
 }

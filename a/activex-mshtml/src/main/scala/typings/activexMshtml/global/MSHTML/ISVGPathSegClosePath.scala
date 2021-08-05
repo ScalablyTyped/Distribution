@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ISVGPathSegClosePath")
 @js.native
-class ISVGPathSegClosePath protected ()
+/* private */ class ISVGPathSegClosePath ()
   extends StObject
      with typings.activexMshtml.MSHTML.ISVGPathSegClosePath {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.ISVGPathSegClosePath_typekey")
   var MSHTMLDotISVGPathSegClosePath_typekey: typings.activexMshtml.MSHTML.ISVGPathSegClosePath = js.native
 }

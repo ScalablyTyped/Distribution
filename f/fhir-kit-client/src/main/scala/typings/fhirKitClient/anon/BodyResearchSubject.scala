@@ -17,31 +17,23 @@ trait BodyResearchSubject extends StObject {
 }
 object BodyResearchSubject {
   
-  @scala.inline
-  def apply(body: ResearchSubject): BodyResearchSubject = {
+  inline def apply(body: ResearchSubject): BodyResearchSubject = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ResearchSubject")
     __obj.asInstanceOf[BodyResearchSubject]
   }
   
-  @scala.inline
-  implicit class BodyResearchSubjectMutableBuilder[Self <: BodyResearchSubject] (val x: Self) extends AnyVal {
+  extension [Self <: BodyResearchSubject](x: Self) {
     
-    @scala.inline
-    def setBody(value: ResearchSubject): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: ResearchSubject): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.ResearchSubject): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.ResearchSubject): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

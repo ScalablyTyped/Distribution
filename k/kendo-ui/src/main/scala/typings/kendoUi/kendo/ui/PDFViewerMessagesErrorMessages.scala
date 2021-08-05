@@ -14,31 +14,23 @@ trait PDFViewerMessagesErrorMessages extends StObject {
 }
 object PDFViewerMessagesErrorMessages {
   
-  @scala.inline
-  def apply(): PDFViewerMessagesErrorMessages = {
+  inline def apply(): PDFViewerMessagesErrorMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PDFViewerMessagesErrorMessages]
   }
   
-  @scala.inline
-  implicit class PDFViewerMessagesErrorMessagesMutableBuilder[Self <: PDFViewerMessagesErrorMessages] (val x: Self) extends AnyVal {
+  extension [Self <: PDFViewerMessagesErrorMessages](x: Self) {
     
-    @scala.inline
-    def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
+    inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
     
-    @scala.inline
-    def setNotSupported(value: String): Self = StObject.set(x, "notSupported", value.asInstanceOf[js.Any])
+    inline def setNotSupported(value: String): Self = StObject.set(x, "notSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSupportedUndefined: Self = StObject.set(x, "notSupported", js.undefined)
+    inline def setNotSupportedUndefined: Self = StObject.set(x, "notSupported", js.undefined)
     
-    @scala.inline
-    def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
+    inline def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseErrorUndefined: Self = StObject.set(x, "parseError", js.undefined)
+    inline def setParseErrorUndefined: Self = StObject.set(x, "parseError", js.undefined)
   }
 }

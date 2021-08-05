@@ -13,16 +13,13 @@ trait StorageLensDataExport extends StObject {
 }
 object StorageLensDataExport {
   
-  @scala.inline
-  def apply(S3BucketDestination: S3BucketDestination): StorageLensDataExport = {
+  inline def apply(S3BucketDestination: S3BucketDestination): StorageLensDataExport = {
     val __obj = js.Dynamic.literal(S3BucketDestination = S3BucketDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageLensDataExport]
   }
   
-  @scala.inline
-  implicit class StorageLensDataExportMutableBuilder[Self <: StorageLensDataExport] (val x: Self) extends AnyVal {
+  extension [Self <: StorageLensDataExport](x: Self) {
     
-    @scala.inline
-    def setS3BucketDestination(value: S3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
+    inline def setS3BucketDestination(value: S3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
   }
 }

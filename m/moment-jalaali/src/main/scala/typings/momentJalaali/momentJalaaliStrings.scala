@@ -11,23 +11,19 @@ object momentJalaaliStrings {
   sealed trait jMonth
     extends StObject
        with JUnitOfTime
-  @scala.inline
-  def jMonth: jMonth = "jMonth".asInstanceOf[jMonth]
+  inline def jMonth: jMonth = "jMonth".asInstanceOf[jMonth]
   
   @js.native
   sealed trait jYear
     extends StObject
        with JUnitOfTime
-  @scala.inline
-  def jYear: jYear = "jYear".asInstanceOf[jYear]
+  inline def jYear: jYear = "jYear".asInstanceOf[jYear]
   
   @js.native
   sealed trait persian extends StObject
-  @scala.inline
-  def persian: persian = "persian".asInstanceOf[persian]
+  inline def persian: persian = "persian".asInstanceOf[persian]
   
   @js.native
   sealed trait `persian-modern` extends StObject
-  @scala.inline
-  def `persian-modern`: `persian-modern` = "persian-modern".asInstanceOf[`persian-modern`]
+  inline def `persian-modern`: `persian-modern` = "persian-modern".asInstanceOf[`persian-modern`]
 }

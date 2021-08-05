@@ -18,8 +18,7 @@ trait PipeableBifunctor[F] extends StObject {
 }
 object PipeableBifunctor {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     bimap: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ /* fa */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, G, B> */ js.Any
@@ -33,19 +32,16 @@ object PipeableBifunctor {
     __obj.asInstanceOf[PipeableBifunctor[F]]
   }
   
-  @scala.inline
-  implicit class PipeableBifunctorMutableBuilder[Self <: PipeableBifunctor[?], F] (val x: Self & PipeableBifunctor[F]) extends AnyVal {
+  extension [Self <: PipeableBifunctor[?], F](x: Self & PipeableBifunctor[F]) {
     
-    @scala.inline
-    def setBimap(
+    inline def setBimap(
       value: (js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, G, B> */ js.Any
         ]
     ): Self = StObject.set(x, "bimap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMapLeft(
+    inline def setMapLeft(
       value: js.Function1[js.Any, js.Any] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, G, A> */ js.Any

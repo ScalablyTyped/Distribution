@@ -189,56 +189,40 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDht(value: Boolean | js.Object): Self = StObject.set(x, "dht", value.asInstanceOf[js.Any])
+      inline def setDht(value: Boolean | js.Object): Self = StObject.set(x, "dht", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDhtUndefined: Self = StObject.set(x, "dht", js.undefined)
+      inline def setDhtUndefined: Self = StObject.set(x, "dht", js.undefined)
       
-      @scala.inline
-      def setMaxConns(value: Double): Self = StObject.set(x, "maxConns", value.asInstanceOf[js.Any])
+      inline def setMaxConns(value: Double): Self = StObject.set(x, "maxConns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConnsUndefined: Self = StObject.set(x, "maxConns", js.undefined)
+      inline def setMaxConnsUndefined: Self = StObject.set(x, "maxConns", js.undefined)
       
-      @scala.inline
-      def setNodeId(value: String | Buffer): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+      inline def setNodeId(value: String | Buffer): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+      inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
       
-      @scala.inline
-      def setPeerId(value: String | Buffer): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+      inline def setPeerId(value: String | Buffer): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerIdUndefined: Self = StObject.set(x, "peerId", js.undefined)
+      inline def setPeerIdUndefined: Self = StObject.set(x, "peerId", js.undefined)
       
-      @scala.inline
-      def setTracker(value: Boolean | js.Object): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
+      inline def setTracker(value: Boolean | js.Object): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackerUndefined: Self = StObject.set(x, "tracker", js.undefined)
+      inline def setTrackerUndefined: Self = StObject.set(x, "tracker", js.undefined)
       
-      @scala.inline
-      def setUtp(value: Boolean): Self = StObject.set(x, "utp", value.asInstanceOf[js.Any])
+      inline def setUtp(value: Boolean): Self = StObject.set(x, "utp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtpUndefined: Self = StObject.set(x, "utp", js.undefined)
+      inline def setUtpUndefined: Self = StObject.set(x, "utp", js.undefined)
       
-      @scala.inline
-      def setWebSeeds(value: Boolean): Self = StObject.set(x, "webSeeds", value.asInstanceOf[js.Any])
+      inline def setWebSeeds(value: Boolean): Self = StObject.set(x, "webSeeds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebSeedsUndefined: Self = StObject.set(x, "webSeeds", js.undefined)
+      inline def setWebSeedsUndefined: Self = StObject.set(x, "webSeeds", js.undefined)
     }
   }
   
@@ -357,20 +341,16 @@ object mod extends Shortcut {
   }
   object TorrentDestroyOptions {
     
-    @scala.inline
-    def apply(): TorrentDestroyOptions = {
+    inline def apply(): TorrentDestroyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TorrentDestroyOptions]
     }
     
-    @scala.inline
-    implicit class TorrentDestroyOptionsMutableBuilder[Self <: TorrentDestroyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TorrentDestroyOptions](x: Self) {
       
-      @scala.inline
-      def setDestroyStore(value: Boolean): Self = StObject.set(x, "destroyStore", value.asInstanceOf[js.Any])
+      inline def setDestroyStore(value: Boolean): Self = StObject.set(x, "destroyStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyStoreUndefined: Self = StObject.set(x, "destroyStore", js.undefined)
+      inline def setDestroyStoreUndefined: Self = StObject.set(x, "destroyStore", js.undefined)
     }
   }
   
@@ -489,53 +469,38 @@ object mod extends Shortcut {
   }
   object TorrentOptions {
     
-    @scala.inline
-    def apply(): TorrentOptions = {
+    inline def apply(): TorrentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TorrentOptions]
     }
     
-    @scala.inline
-    implicit class TorrentOptionsMutableBuilder[Self <: TorrentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TorrentOptions](x: Self) {
       
-      @scala.inline
-      def setAnnounce(value: js.Array[js.Any]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
+      inline def setAnnounce(value: js.Array[js.Any]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnounceUndefined: Self = StObject.set(x, "announce", js.undefined)
+      inline def setAnnounceUndefined: Self = StObject.set(x, "announce", js.undefined)
       
-      @scala.inline
-      def setAnnounceVarargs(value: js.Any*): Self = StObject.set(x, "announce", js.Array(value :_*))
+      inline def setAnnounceVarargs(value: js.Any*): Self = StObject.set(x, "announce", js.Array(value :_*))
       
-      @scala.inline
-      def setGetAnnounceOpts(value: () => Unit): Self = StObject.set(x, "getAnnounceOpts", js.Any.fromFunction0(value))
+      inline def setGetAnnounceOpts(value: () => Unit): Self = StObject.set(x, "getAnnounceOpts", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAnnounceOptsUndefined: Self = StObject.set(x, "getAnnounceOpts", js.undefined)
+      inline def setGetAnnounceOptsUndefined: Self = StObject.set(x, "getAnnounceOpts", js.undefined)
       
-      @scala.inline
-      def setMaxWebConns(value: Double): Self = StObject.set(x, "maxWebConns", value.asInstanceOf[js.Any])
+      inline def setMaxWebConns(value: Double): Self = StObject.set(x, "maxWebConns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWebConnsUndefined: Self = StObject.set(x, "maxWebConns", js.undefined)
+      inline def setMaxWebConnsUndefined: Self = StObject.set(x, "maxWebConns", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
-      @scala.inline
-      def setStore(value: (/* chunkLength */ Double, /* storeOpts */ Files) => js.Any): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
+      inline def setStore(value: (/* chunkLength */ Double, /* storeOpts */ Files) => js.Any): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
   
@@ -547,20 +512,16 @@ object mod extends Shortcut {
   }
   object TorrentPiece {
     
-    @scala.inline
-    def apply(length: Double, missing: Double): TorrentPiece = {
+    inline def apply(length: Double, missing: Double): TorrentPiece = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any])
       __obj.asInstanceOf[TorrentPiece]
     }
     
-    @scala.inline
-    implicit class TorrentPieceMutableBuilder[Self <: TorrentPiece] (val x: Self) extends AnyVal {
+    extension [Self <: TorrentPiece](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissing(value: Double): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+      inline def setMissing(value: Double): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     }
   }
   

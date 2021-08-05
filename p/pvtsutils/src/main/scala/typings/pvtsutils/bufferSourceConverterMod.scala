@@ -19,17 +19,13 @@ object bufferSourceConverterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isArrayBufferView(data: js.Any): /* is std.ArrayBufferView */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayBufferView")(data.asInstanceOf[js.Any]).asInstanceOf[/* is std.ArrayBufferView */ Boolean]
+    inline def isArrayBufferView(data: js.Any): /* is std.ArrayBufferView */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayBufferView")(data.asInstanceOf[js.Any]).asInstanceOf[/* is std.ArrayBufferView */ Boolean]
     
-    @scala.inline
-    def isBufferSource(data: js.Any): /* is pvtsutils.pvtsutils/build/types/buffer_source_converter.BufferSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBufferSource")(data.asInstanceOf[js.Any]).asInstanceOf[/* is pvtsutils.pvtsutils/build/types/buffer_source_converter.BufferSource */ Boolean]
+    inline def isBufferSource(data: js.Any): /* is pvtsutils.pvtsutils/build/types/buffer_source_converter.BufferSource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBufferSource")(data.asInstanceOf[js.Any]).asInstanceOf[/* is pvtsutils.pvtsutils/build/types/buffer_source_converter.BufferSource */ Boolean]
     
-    @scala.inline
-    def toArrayBuffer(data: BufferSource): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(data.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+    inline def toArrayBuffer(data: BufferSource): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")(data.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
     
-    @scala.inline
-    def toUint8Array(data: BufferSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toUint8Array")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def toUint8Array(data: BufferSource): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toUint8Array")(data.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   }
   
   type BufferSource = ArrayBuffer | ArrayBufferView

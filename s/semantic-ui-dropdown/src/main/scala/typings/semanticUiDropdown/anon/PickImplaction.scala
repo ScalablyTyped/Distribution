@@ -24,8 +24,7 @@ trait PickImplaction extends StObject {
 }
 object PickImplaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: activate | select | combo | nothing | hide | (js.ThisFunction3[
       /* this */ JQuery, 
       /* text */ String, 
@@ -38,11 +37,9 @@ object PickImplaction {
     __obj.asInstanceOf[PickImplaction]
   }
   
-  @scala.inline
-  implicit class PickImplactionMutableBuilder[Self <: PickImplaction] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplaction](x: Self) {
     
-    @scala.inline
-    def setAction(
+    inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[
           /* this */ JQuery, 
           /* text */ String, 

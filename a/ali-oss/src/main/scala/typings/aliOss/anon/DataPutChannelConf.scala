@@ -14,19 +14,15 @@ trait DataPutChannelConf extends StObject {
 }
 object DataPutChannelConf {
   
-  @scala.inline
-  def apply(data: PutChannelConf, res: NormalSuccessResponse): DataPutChannelConf = {
+  inline def apply(data: PutChannelConf, res: NormalSuccessResponse): DataPutChannelConf = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPutChannelConf]
   }
   
-  @scala.inline
-  implicit class DataPutChannelConfMutableBuilder[Self <: DataPutChannelConf] (val x: Self) extends AnyVal {
+  extension [Self <: DataPutChannelConf](x: Self) {
     
-    @scala.inline
-    def setData(value: PutChannelConf): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PutChannelConf): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

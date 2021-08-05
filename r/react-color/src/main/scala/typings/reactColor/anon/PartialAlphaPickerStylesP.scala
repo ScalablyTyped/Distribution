@@ -14,25 +14,19 @@ trait PartialAlphaPickerStylesP extends StObject {
 }
 object PartialAlphaPickerStylesP {
   
-  @scala.inline
-  def apply(): PartialAlphaPickerStylesP = {
+  inline def apply(): PartialAlphaPickerStylesP = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialAlphaPickerStylesP]
   }
   
-  @scala.inline
-  implicit class PartialAlphaPickerStylesPMutableBuilder[Self <: PartialAlphaPickerStylesP] (val x: Self) extends AnyVal {
+  extension [Self <: PartialAlphaPickerStylesP](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: CSSProperties): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: CSSProperties): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+    inline def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
+    inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ImageIdentifier extends StObject {
 }
 object ImageIdentifier {
   
-  @scala.inline
-  def apply(): ImageIdentifier = {
+  inline def apply(): ImageIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageIdentifier]
   }
   
-  @scala.inline
-  implicit class ImageIdentifierMutableBuilder[Self <: ImageIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: ImageIdentifier](x: Self) {
     
-    @scala.inline
-    def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
+    inline def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
+    inline def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
-    @scala.inline
-    def setImageTag(value: ImageTag): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
+    inline def setImageTag(value: ImageTag): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
+    inline def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
   }
 }

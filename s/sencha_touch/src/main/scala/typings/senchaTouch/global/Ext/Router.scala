@@ -19,8 +19,6 @@ object Router {
   /** [Method] Application s onDependenciesLoaded has a deprecated wrapped line that calls this
     * @param app Object
     */
-  @scala.inline
-  def setAppInstance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppInstance")().asInstanceOf[Unit]
-  @scala.inline
-  def setAppInstance(app: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppInstance")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setAppInstance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppInstance")().asInstanceOf[Unit]
+  inline def setAppInstance(app: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAppInstance")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -16,19 +16,15 @@ trait SchemaCreateNamedRangeResponse extends StObject {
 }
 object SchemaCreateNamedRangeResponse {
   
-  @scala.inline
-  def apply(): SchemaCreateNamedRangeResponse = {
+  inline def apply(): SchemaCreateNamedRangeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateNamedRangeResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCreateNamedRangeResponseMutableBuilder[Self <: SchemaCreateNamedRangeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateNamedRangeResponse](x: Self) {
     
-    @scala.inline
-    def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
+    inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
+    inline def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
   }
 }

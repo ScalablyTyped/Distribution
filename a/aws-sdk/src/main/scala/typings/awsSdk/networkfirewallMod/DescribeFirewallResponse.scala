@@ -23,31 +23,23 @@ trait DescribeFirewallResponse extends StObject {
 }
 object DescribeFirewallResponse {
   
-  @scala.inline
-  def apply(): DescribeFirewallResponse = {
+  inline def apply(): DescribeFirewallResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFirewallResponse]
   }
   
-  @scala.inline
-  implicit class DescribeFirewallResponseMutableBuilder[Self <: DescribeFirewallResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFirewallResponse](x: Self) {
     
-    @scala.inline
-    def setFirewall(value: Firewall): Self = StObject.set(x, "Firewall", value.asInstanceOf[js.Any])
+    inline def setFirewall(value: Firewall): Self = StObject.set(x, "Firewall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallStatus(value: FirewallStatus): Self = StObject.set(x, "FirewallStatus", value.asInstanceOf[js.Any])
+    inline def setFirewallStatus(value: FirewallStatus): Self = StObject.set(x, "FirewallStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallStatusUndefined: Self = StObject.set(x, "FirewallStatus", js.undefined)
+    inline def setFirewallStatusUndefined: Self = StObject.set(x, "FirewallStatus", js.undefined)
     
-    @scala.inline
-    def setFirewallUndefined: Self = StObject.set(x, "Firewall", js.undefined)
+    inline def setFirewallUndefined: Self = StObject.set(x, "Firewall", js.undefined)
     
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
+    inline def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
+    inline def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
   }
 }

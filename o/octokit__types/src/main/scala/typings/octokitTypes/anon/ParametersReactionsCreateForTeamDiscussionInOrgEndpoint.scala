@@ -18,8 +18,7 @@ trait ParametersReactionsCreateForTeamDiscussionInOrgEndpoint extends StObject {
 }
 object ParametersReactionsCreateForTeamDiscussionInOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReactionsCreateForTeamDiscussionInOrgEndpoint,
     request: ReactionsCreateForTeamDiscussionInOrgRequestOptions,
     response: OctokitResponse[ReactionsCreateForTeamDiscussionInOrgResponseData]
@@ -28,16 +27,12 @@ object ParametersReactionsCreateForTeamDiscussionInOrgEndpoint {
     __obj.asInstanceOf[ParametersReactionsCreateForTeamDiscussionInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReactionsCreateForTeamDiscussionInOrgEndpointMutableBuilder[Self <: ParametersReactionsCreateForTeamDiscussionInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReactionsCreateForTeamDiscussionInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReactionsCreateForTeamDiscussionInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReactionsCreateForTeamDiscussionInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReactionsCreateForTeamDiscussionInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReactionsCreateForTeamDiscussionInOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReactionsCreateForTeamDiscussionInOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReactionsCreateForTeamDiscussionInOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

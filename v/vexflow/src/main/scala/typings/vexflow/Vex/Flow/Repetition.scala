@@ -24,8 +24,7 @@ trait Repetition
 }
 object Repetition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEndModifier: () => Unit,
     addModifier: () => Unit,
     addToStave: (Stave, Boolean) => StaveModifier,
@@ -115,25 +114,18 @@ object Repetition {
          with `type`
   }
   
-  @scala.inline
-  implicit class RepetitionMutableBuilder[Self <: Repetition] (val x: Self) extends AnyVal {
+  extension [Self <: Repetition](x: Self) {
     
-    @scala.inline
-    def setDraw(value: (Stave, Double) => Repetition): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
+    inline def setDraw(value: (Stave, Double) => Repetition): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrawCodaFixed(value: (Stave, Double) => Repetition): Self = StObject.set(x, "drawCodaFixed", js.Any.fromFunction2(value))
+    inline def setDrawCodaFixed(value: (Stave, Double) => Repetition): Self = StObject.set(x, "drawCodaFixed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrawSignoFixed(value: (Stave, Double) => Repetition): Self = StObject.set(x, "drawSignoFixed", js.Any.fromFunction2(value))
+    inline def setDrawSignoFixed(value: (Stave, Double) => Repetition): Self = StObject.set(x, "drawSignoFixed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrawSymbolText(value: (Stave, Double, String, Boolean) => Repetition): Self = StObject.set(x, "drawSymbolText", js.Any.fromFunction4(value))
+    inline def setDrawSymbolText(value: (Stave, Double, String, Boolean) => Repetition): Self = StObject.set(x, "drawSymbolText", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetShiftX(value: Double => Repetition): Self = StObject.set(x, "setShiftX", js.Any.fromFunction1(value))
+    inline def setSetShiftX(value: Double => Repetition): Self = StObject.set(x, "setShiftX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetShiftY(value: Double => Repetition): Self = StObject.set(x, "setShiftY", js.Any.fromFunction1(value))
+    inline def setSetShiftY(value: Double => Repetition): Self = StObject.set(x, "setShiftY", js.Any.fromFunction1(value))
   }
 }

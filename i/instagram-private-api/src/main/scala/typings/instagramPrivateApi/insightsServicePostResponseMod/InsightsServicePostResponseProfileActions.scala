@@ -10,16 +10,13 @@ trait InsightsServicePostResponseProfileActions extends StObject {
 }
 object InsightsServicePostResponseProfileActions {
   
-  @scala.inline
-  def apply(actions: InsightsServicePostResponseActions): InsightsServicePostResponseProfileActions = {
+  inline def apply(actions: InsightsServicePostResponseActions): InsightsServicePostResponseProfileActions = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServicePostResponseProfileActions]
   }
   
-  @scala.inline
-  implicit class InsightsServicePostResponseProfileActionsMutableBuilder[Self <: InsightsServicePostResponseProfileActions] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServicePostResponseProfileActions](x: Self) {
     
-    @scala.inline
-    def setActions(value: InsightsServicePostResponseActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: InsightsServicePostResponseActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
   }
 }

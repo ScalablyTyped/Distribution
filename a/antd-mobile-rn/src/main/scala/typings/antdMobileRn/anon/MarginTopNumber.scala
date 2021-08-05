@@ -12,19 +12,15 @@ trait MarginTopNumber extends StObject {
 }
 object MarginTopNumber {
   
-  @scala.inline
-  def apply(fontSize: Double, marginTop: Double): MarginTopNumber = {
+  inline def apply(fontSize: Double, marginTop: Double): MarginTopNumber = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginTopNumber]
   }
   
-  @scala.inline
-  implicit class MarginTopNumberMutableBuilder[Self <: MarginTopNumber] (val x: Self) extends AnyVal {
+  extension [Self <: MarginTopNumber](x: Self) {
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
   }
 }

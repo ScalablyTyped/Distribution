@@ -12,16 +12,13 @@ trait PluginRemoveStyleElement
 }
 object PluginRemoveStyleElement {
   
-  @scala.inline
-  def apply(removeStyleElement: Boolean | js.Object): PluginRemoveStyleElement = {
+  inline def apply(removeStyleElement: Boolean | js.Object): PluginRemoveStyleElement = {
     val __obj = js.Dynamic.literal(removeStyleElement = removeStyleElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveStyleElement]
   }
   
-  @scala.inline
-  implicit class PluginRemoveStyleElementMutableBuilder[Self <: PluginRemoveStyleElement] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveStyleElement](x: Self) {
     
-    @scala.inline
-    def setRemoveStyleElement(value: Boolean | js.Object): Self = StObject.set(x, "removeStyleElement", value.asInstanceOf[js.Any])
+    inline def setRemoveStyleElement(value: Boolean | js.Object): Self = StObject.set(x, "removeStyleElement", value.asInstanceOf[js.Any])
   }
 }

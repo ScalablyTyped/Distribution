@@ -35,8 +35,7 @@ trait AccessibleOLEShape
      with XAccessibleAction
 object AccessibleOLEShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleActionCount: Double,
     AccessibleChildCount: Double,
     AccessibleContext: XAccessibleContext,

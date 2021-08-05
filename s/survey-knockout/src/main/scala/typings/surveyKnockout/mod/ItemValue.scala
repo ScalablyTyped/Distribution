@@ -56,7 +56,7 @@ class ItemValue protected () extends Base {
   
   var text: String = js.native
   
-  var typeName: String = js.native
+  /* protected */ var typeName: String = js.native
   
   var value: js.Any = js.native
   
@@ -72,34 +72,26 @@ object ItemValue {
   @JSImport("survey-knockout", "ItemValue.Separator")
   @js.native
   def Separator: String = js.native
-  @scala.inline
-  def Separator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Separator")(x.asInstanceOf[js.Any])
+  inline def Separator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Separator")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def createArray(locOwner: ILocalizableOwner): js.Array[ItemValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createArray")(locOwner.asInstanceOf[js.Any]).asInstanceOf[js.Array[ItemValue]]
+  inline def createArray(locOwner: ILocalizableOwner): js.Array[ItemValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createArray")(locOwner.asInstanceOf[js.Any]).asInstanceOf[js.Array[ItemValue]]
   
-  @scala.inline
-  def getData(items: js.Array[ItemValue]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(items.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getData(items: js.Array[ItemValue]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(items.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getItemByValue(items: js.Array[ItemValue], `val`: js.Any): ItemValue = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemByValue")(items.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[ItemValue]
+  inline def getItemByValue(items: js.Array[ItemValue], `val`: js.Any): ItemValue = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemByValue")(items.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[ItemValue]
   
-  @scala.inline
-  def getTextOrHtmlByValue(items: js.Array[ItemValue], `val`: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextOrHtmlByValue")(items.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getTextOrHtmlByValue(items: js.Array[ItemValue], `val`: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextOrHtmlByValue")(items.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def locStrsChanged(items: js.Array[ItemValue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("locStrsChanged")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def locStrsChanged(items: js.Array[ItemValue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("locStrsChanged")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def runConditionsForItems(
+  inline def runConditionsForItems(
     items: js.Array[ItemValue],
     filteredItems: js.Array[ItemValue],
     runner: ConditionRunner,
     values: js.Any,
     properties: js.Any
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runConditionsForItems")(items.asInstanceOf[js.Any], filteredItems.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def runConditionsForItems(
+  inline def runConditionsForItems(
     items: js.Array[ItemValue],
     filteredItems: js.Array[ItemValue],
     runner: ConditionRunner,
@@ -108,10 +100,8 @@ object ItemValue {
     useItemExpression: Boolean
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runConditionsForItems")(items.asInstanceOf[js.Any], filteredItems.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], useItemExpression.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def runEnabledConditionsForItems(items: js.Array[ItemValue], runner: ConditionRunner, values: js.Any, properties: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runEnabledConditionsForItems")(items.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def runEnabledConditionsForItems(
+  inline def runEnabledConditionsForItems(items: js.Array[ItemValue], runner: ConditionRunner, values: js.Any, properties: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runEnabledConditionsForItems")(items.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def runEnabledConditionsForItems(
     items: js.Array[ItemValue],
     runner: ConditionRunner,
     values: js.Any,
@@ -119,9 +109,7 @@ object ItemValue {
     onItemCallBack: js.Function1[/* item */ this.type, Boolean]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runEnabledConditionsForItems")(items.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], onItemCallBack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def setData(items: js.Array[ItemValue], values: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(items.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setData(items: js.Array[ItemValue], values: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(items.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setupArray(items: js.Array[ItemValue], locOwner: ILocalizableOwner): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupArray")(items.asInstanceOf[js.Any], locOwner.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setupArray(items: js.Array[ItemValue], locOwner: ILocalizableOwner): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupArray")(items.asInstanceOf[js.Any], locOwner.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

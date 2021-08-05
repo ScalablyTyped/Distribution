@@ -78,100 +78,69 @@ trait FlowLog extends StObject {
 }
 object FlowLog {
   
-  @scala.inline
-  def apply(): FlowLog = {
+  inline def apply(): FlowLog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlowLog]
   }
   
-  @scala.inline
-  implicit class FlowLogMutableBuilder[Self <: FlowLog] (val x: Self) extends AnyVal {
+  extension [Self <: FlowLog](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: MillisecondDateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: MillisecondDateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDeliverLogsErrorMessage(value: String): Self = StObject.set(x, "DeliverLogsErrorMessage", value.asInstanceOf[js.Any])
+    inline def setDeliverLogsErrorMessage(value: String): Self = StObject.set(x, "DeliverLogsErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliverLogsErrorMessageUndefined: Self = StObject.set(x, "DeliverLogsErrorMessage", js.undefined)
+    inline def setDeliverLogsErrorMessageUndefined: Self = StObject.set(x, "DeliverLogsErrorMessage", js.undefined)
     
-    @scala.inline
-    def setDeliverLogsPermissionArn(value: String): Self = StObject.set(x, "DeliverLogsPermissionArn", value.asInstanceOf[js.Any])
+    inline def setDeliverLogsPermissionArn(value: String): Self = StObject.set(x, "DeliverLogsPermissionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliverLogsPermissionArnUndefined: Self = StObject.set(x, "DeliverLogsPermissionArn", js.undefined)
+    inline def setDeliverLogsPermissionArnUndefined: Self = StObject.set(x, "DeliverLogsPermissionArn", js.undefined)
     
-    @scala.inline
-    def setDeliverLogsStatus(value: String): Self = StObject.set(x, "DeliverLogsStatus", value.asInstanceOf[js.Any])
+    inline def setDeliverLogsStatus(value: String): Self = StObject.set(x, "DeliverLogsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliverLogsStatusUndefined: Self = StObject.set(x, "DeliverLogsStatus", js.undefined)
+    inline def setDeliverLogsStatusUndefined: Self = StObject.set(x, "DeliverLogsStatus", js.undefined)
     
-    @scala.inline
-    def setFlowLogId(value: String): Self = StObject.set(x, "FlowLogId", value.asInstanceOf[js.Any])
+    inline def setFlowLogId(value: String): Self = StObject.set(x, "FlowLogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowLogIdUndefined: Self = StObject.set(x, "FlowLogId", js.undefined)
+    inline def setFlowLogIdUndefined: Self = StObject.set(x, "FlowLogId", js.undefined)
     
-    @scala.inline
-    def setFlowLogStatus(value: String): Self = StObject.set(x, "FlowLogStatus", value.asInstanceOf[js.Any])
+    inline def setFlowLogStatus(value: String): Self = StObject.set(x, "FlowLogStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowLogStatusUndefined: Self = StObject.set(x, "FlowLogStatus", js.undefined)
+    inline def setFlowLogStatusUndefined: Self = StObject.set(x, "FlowLogStatus", js.undefined)
     
-    @scala.inline
-    def setLogDestination(value: String): Self = StObject.set(x, "LogDestination", value.asInstanceOf[js.Any])
+    inline def setLogDestination(value: String): Self = StObject.set(x, "LogDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogDestinationType(value: LogDestinationType): Self = StObject.set(x, "LogDestinationType", value.asInstanceOf[js.Any])
+    inline def setLogDestinationType(value: LogDestinationType): Self = StObject.set(x, "LogDestinationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogDestinationTypeUndefined: Self = StObject.set(x, "LogDestinationType", js.undefined)
+    inline def setLogDestinationTypeUndefined: Self = StObject.set(x, "LogDestinationType", js.undefined)
     
-    @scala.inline
-    def setLogDestinationUndefined: Self = StObject.set(x, "LogDestination", js.undefined)
+    inline def setLogDestinationUndefined: Self = StObject.set(x, "LogDestination", js.undefined)
     
-    @scala.inline
-    def setLogFormat(value: String): Self = StObject.set(x, "LogFormat", value.asInstanceOf[js.Any])
+    inline def setLogFormat(value: String): Self = StObject.set(x, "LogFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogFormatUndefined: Self = StObject.set(x, "LogFormat", js.undefined)
+    inline def setLogFormatUndefined: Self = StObject.set(x, "LogFormat", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: String): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: String): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
-    @scala.inline
-    def setMaxAggregationInterval(value: Integer): Self = StObject.set(x, "MaxAggregationInterval", value.asInstanceOf[js.Any])
+    inline def setMaxAggregationInterval(value: Integer): Self = StObject.set(x, "MaxAggregationInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAggregationIntervalUndefined: Self = StObject.set(x, "MaxAggregationInterval", js.undefined)
+    inline def setMaxAggregationIntervalUndefined: Self = StObject.set(x, "MaxAggregationInterval", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTrafficType(value: TrafficType): Self = StObject.set(x, "TrafficType", value.asInstanceOf[js.Any])
+    inline def setTrafficType(value: TrafficType): Self = StObject.set(x, "TrafficType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficTypeUndefined: Self = StObject.set(x, "TrafficType", js.undefined)
+    inline def setTrafficTypeUndefined: Self = StObject.set(x, "TrafficType", js.undefined)
   }
 }

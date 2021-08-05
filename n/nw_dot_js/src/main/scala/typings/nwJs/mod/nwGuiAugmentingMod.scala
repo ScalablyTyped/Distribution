@@ -22,14 +22,12 @@ object nwGuiAugmentingMod {
   @JSImport("nw.gui", "App")
   @js.native
   def App: typings.nwJs.mod.global.nw.App = js.native
-  @scala.inline
-  def App_=(x: App): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("App")(x.asInstanceOf[js.Any])
+  inline def App_=(x: App): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("App")(x.asInstanceOf[js.Any])
   
   @JSImport("nw.gui", "Clipboard")
   @js.native
   def Clipboard: typings.nwJs.mod.global.nw.Clipboard = js.native
-  @scala.inline
-  def Clipboard_=(x: Clipboard): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Clipboard")(x.asInstanceOf[js.Any])
+  inline def Clipboard_=(x: Clipboard): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Clipboard")(x.asInstanceOf[js.Any])
   
   @JSImport("nw.gui", "Menu")
   @js.native
@@ -58,14 +56,12 @@ object nwGuiAugmentingMod {
   @JSImport("nw.gui", "Screen")
   @js.native
   def Screen: typings.nwJs.mod.global.nw.Screen = js.native
-  @scala.inline
-  def Screen_=(x: Screen): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Screen")(x.asInstanceOf[js.Any])
+  inline def Screen_=(x: Screen): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Screen")(x.asInstanceOf[js.Any])
   
   @JSImport("nw.gui", "Shell")
   @js.native
   def Shell: typings.nwJs.mod.global.nw.Shell = js.native
-  @scala.inline
-  def Shell_=(x: Shell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Shell")(x.asInstanceOf[js.Any])
+  inline def Shell_=(x: Shell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Shell")(x.asInstanceOf[js.Any])
   
   @JSImport("nw.gui", "Shortcut")
   @js.native
@@ -93,6 +89,5 @@ object nwGuiAugmentingMod {
   @JSImport("nw.gui", "Window")
   @js.native
   def Window: typings.nwJs.mod.global.nw.Window = js.native
-  @scala.inline
-  def Window_=(x: Window): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Window")(x.asInstanceOf[js.Any])
+  inline def Window_=(x: Window): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Window")(x.asInstanceOf[js.Any])
 }

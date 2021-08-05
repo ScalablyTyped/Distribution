@@ -23,28 +23,21 @@ trait CohortGroup extends StObject {
 }
 object CohortGroup {
   
-  @scala.inline
-  def apply(): CohortGroup = {
+  inline def apply(): CohortGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CohortGroup]
   }
   
-  @scala.inline
-  implicit class CohortGroupMutableBuilder[Self <: CohortGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CohortGroup](x: Self) {
     
-    @scala.inline
-    def setCohorts(value: js.Array[Cohort]): Self = StObject.set(x, "cohorts", value.asInstanceOf[js.Any])
+    inline def setCohorts(value: js.Array[Cohort]): Self = StObject.set(x, "cohorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCohortsUndefined: Self = StObject.set(x, "cohorts", js.undefined)
+    inline def setCohortsUndefined: Self = StObject.set(x, "cohorts", js.undefined)
     
-    @scala.inline
-    def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value :_*))
+    inline def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value :_*))
     
-    @scala.inline
-    def setLifetimeValue(value: Boolean): Self = StObject.set(x, "lifetimeValue", value.asInstanceOf[js.Any])
+    inline def setLifetimeValue(value: Boolean): Self = StObject.set(x, "lifetimeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifetimeValueUndefined: Self = StObject.set(x, "lifetimeValue", js.undefined)
+    inline def setLifetimeValueUndefined: Self = StObject.set(x, "lifetimeValue", js.undefined)
   }
 }

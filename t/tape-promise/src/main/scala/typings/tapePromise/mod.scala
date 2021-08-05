@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(tapeTest: js.Any): AsyncTapeFunctionNoneopts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tapeTest.asInstanceOf[js.Any]).asInstanceOf[AsyncTapeFunctionNoneopts]
+  inline def default(tapeTest: js.Any): AsyncTapeFunctionNoneopts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tapeTest.asInstanceOf[js.Any]).asInstanceOf[AsyncTapeFunctionNoneopts]
   
   // tslint:enable: ban-types
   // tslint:disable: unified-signatures

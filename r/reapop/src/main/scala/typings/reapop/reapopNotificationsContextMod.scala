@@ -25,8 +25,7 @@ object reapopNotificationsContextMod {
   }
   object NotificationsContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dismissNotification: String => Unit,
       dismissNotifications: () => Unit,
       notifications: js.Array[Notification],
@@ -37,23 +36,17 @@ object reapopNotificationsContextMod {
       __obj.asInstanceOf[NotificationsContext]
     }
     
-    @scala.inline
-    implicit class NotificationsContextMutableBuilder[Self <: NotificationsContext] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationsContext](x: Self) {
       
-      @scala.inline
-      def setDismissNotification(value: String => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
+      inline def setDismissNotification(value: String => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDismissNotifications(value: () => Unit): Self = StObject.set(x, "dismissNotifications", js.Any.fromFunction0(value))
+      inline def setDismissNotifications(value: () => Unit): Self = StObject.set(x, "dismissNotifications", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setNotify_(value: NewNotification => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
+      inline def setNotify_(value: NewNotification => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
     }
   }
 }

@@ -24,19 +24,16 @@ object restrictPlusOperandsRuleMod {
     @JSImport("tslint/lib/rules/restrictPlusOperandsRule", "Rule.INVALID_TYPES_ERROR")
     @js.native
     def INVALID_TYPES_ERROR: String = js.native
-    @scala.inline
-    def INVALID_TYPES_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_TYPES_ERROR")(x.asInstanceOf[js.Any])
+    inline def INVALID_TYPES_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_TYPES_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/restrictPlusOperandsRule", "Rule.SUGGEST_TEMPLATE_LITERALS")
     @js.native
     def SUGGEST_TEMPLATE_LITERALS: String = js.native
-    @scala.inline
-    def SUGGEST_TEMPLATE_LITERALS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUGGEST_TEMPLATE_LITERALS")(x.asInstanceOf[js.Any])
+    inline def SUGGEST_TEMPLATE_LITERALS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUGGEST_TEMPLATE_LITERALS")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/restrictPlusOperandsRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

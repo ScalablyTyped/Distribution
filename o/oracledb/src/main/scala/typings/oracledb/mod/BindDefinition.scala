@@ -32,31 +32,23 @@ trait BindDefinition extends StObject {
 }
 object BindDefinition {
   
-  @scala.inline
-  def apply(): BindDefinition = {
+  inline def apply(): BindDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BindDefinition]
   }
   
-  @scala.inline
-  implicit class BindDefinitionMutableBuilder[Self <: BindDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: BindDefinition](x: Self) {
     
-    @scala.inline
-    def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ object transformsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def forEachTransform(selCmpt: SelectionComponent[SelectionType], cb: js.Function1[/* tx */ TransformCompiler, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachTransform")(selCmpt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEachTransform(selCmpt: SelectionComponent[SelectionType], cb: js.Function1[/* tx */ TransformCompiler, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachTransform")(selCmpt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait TransformCompiler extends StObject {
     
@@ -72,57 +71,44 @@ object transformsMod {
   }
   object TransformCompiler {
     
-    @scala.inline
-    def apply(has: SelectionComponent[SelectionType] => Boolean): TransformCompiler = {
+    inline def apply(has: SelectionComponent[SelectionType] => Boolean): TransformCompiler = {
       val __obj = js.Dynamic.literal(has = js.Any.fromFunction1(has))
       __obj.asInstanceOf[TransformCompiler]
     }
     
-    @scala.inline
-    implicit class TransformCompilerMutableBuilder[Self <: TransformCompiler] (val x: Self) extends AnyVal {
+    extension [Self <: TransformCompiler](x: Self) {
       
-      @scala.inline
-      def setHas(value: SelectionComponent[SelectionType] => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: SelectionComponent[SelectionType] => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMarks(
+      inline def setMarks(
         value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[SelectionType], /* marks */ js.Array[js.Any]) => js.Array[js.Any]
       ): Self = StObject.set(x, "marks", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+      inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      @scala.inline
-      def setModifyExpr(
+      inline def setModifyExpr(
         value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[SelectionType], /* expr */ String) => String
       ): Self = StObject.set(x, "modifyExpr", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setModifyExprUndefined: Self = StObject.set(x, "modifyExpr", js.undefined)
+      inline def setModifyExprUndefined: Self = StObject.set(x, "modifyExpr", js.undefined)
       
-      @scala.inline
-      def setParse(
+      inline def setParse(
         value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[SelectionType], /* def */ SelectionDef, /* origDef */ SelectionDef) => Unit
       ): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setSignals(
+      inline def setSignals(
         value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[SelectionType], /* signals */ js.Array[NewSignal]) => js.Array[Signal]
       ): Self = StObject.set(x, "signals", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
+      inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
-      @scala.inline
-      def setTopLevelSignals(
+      inline def setTopLevelSignals(
         value: (/* model */ Model, /* selCmpt */ SelectionComponent[SelectionType], /* signals */ js.Array[NewSignal]) => js.Array[NewSignal]
       ): Self = StObject.set(x, "topLevelSignals", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTopLevelSignalsUndefined: Self = StObject.set(x, "topLevelSignals", js.undefined)
+      inline def setTopLevelSignalsUndefined: Self = StObject.set(x, "topLevelSignals", js.undefined)
     }
   }
 }

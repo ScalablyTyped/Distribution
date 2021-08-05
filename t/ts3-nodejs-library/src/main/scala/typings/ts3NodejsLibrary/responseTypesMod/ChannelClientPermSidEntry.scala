@@ -23,8 +23,7 @@ trait ChannelClientPermSidEntry
 }
 object ChannelClientPermSidEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cid: String,
     cldbid: String,
     permnegated: Boolean,
@@ -36,25 +35,18 @@ object ChannelClientPermSidEntry {
     __obj.asInstanceOf[ChannelClientPermSidEntry]
   }
   
-  @scala.inline
-  implicit class ChannelClientPermSidEntryMutableBuilder[Self <: ChannelClientPermSidEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelClientPermSidEntry](x: Self) {
     
-    @scala.inline
-    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+    inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermnegated(value: Boolean): Self = StObject.set(x, "permnegated", value.asInstanceOf[js.Any])
+    inline def setPermnegated(value: Boolean): Self = StObject.set(x, "permnegated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermsid(value: String): Self = StObject.set(x, "permsid", value.asInstanceOf[js.Any])
+    inline def setPermsid(value: String): Self = StObject.set(x, "permsid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermskip(value: Boolean): Self = StObject.set(x, "permskip", value.asInstanceOf[js.Any])
+    inline def setPermskip(value: Boolean): Self = StObject.set(x, "permskip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermvalue(value: Double): Self = StObject.set(x, "permvalue", value.asInstanceOf[js.Any])
+    inline def setPermvalue(value: Double): Self = StObject.set(x, "permvalue", value.asInstanceOf[js.Any])
   }
 }

@@ -50,34 +50,25 @@ object IDBKeyRange {
   /**
     * Returns a new IDBKeyRange spanning from lower to upper. If lowerOpen is true, lower is not included in the range. If upperOpen is true, upper is not included in the range.
     */
-  @scala.inline
-  def bound(lower: js.Any, upper: js.Any): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
-  @scala.inline
-  def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], lowerOpen.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
-  @scala.inline
-  def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean, upperOpen: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], lowerOpen.asInstanceOf[js.Any], upperOpen.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
-  @scala.inline
-  def bound(lower: js.Any, upper: js.Any, lowerOpen: Unit, upperOpen: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], lowerOpen.asInstanceOf[js.Any], upperOpen.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
+  inline def bound(lower: js.Any, upper: js.Any): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
+  inline def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], lowerOpen.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
+  inline def bound(lower: js.Any, upper: js.Any, lowerOpen: scala.Boolean, upperOpen: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], lowerOpen.asInstanceOf[js.Any], upperOpen.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
+  inline def bound(lower: js.Any, upper: js.Any, lowerOpen: Unit, upperOpen: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("bound")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], lowerOpen.asInstanceOf[js.Any], upperOpen.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
   
   /**
     * Returns a new IDBKeyRange starting at key with no upper bound. If open is true, key is not included in the range.
     */
-  @scala.inline
-  def lowerBound(lower: js.Any): typings.std.IDBKeyRange = ^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(lower.asInstanceOf[js.Any]).asInstanceOf[typings.std.IDBKeyRange]
-  @scala.inline
-  def lowerBound(lower: js.Any, open: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(lower.asInstanceOf[js.Any], open.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
+  inline def lowerBound(lower: js.Any): typings.std.IDBKeyRange = ^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(lower.asInstanceOf[js.Any]).asInstanceOf[typings.std.IDBKeyRange]
+  inline def lowerBound(lower: js.Any, open: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("lowerBound")(lower.asInstanceOf[js.Any], open.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
   
   /**
     * Returns a new IDBKeyRange spanning only key.
     */
-  @scala.inline
-  def only(value: js.Any): typings.std.IDBKeyRange = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(value.asInstanceOf[js.Any]).asInstanceOf[typings.std.IDBKeyRange]
+  inline def only(value: js.Any): typings.std.IDBKeyRange = ^.asInstanceOf[js.Dynamic].applyDynamic("only")(value.asInstanceOf[js.Any]).asInstanceOf[typings.std.IDBKeyRange]
   
   /**
     * Returns a new IDBKeyRange with no lower bound and ending at key. If open is true, key is not included in the range.
     */
-  @scala.inline
-  def upperBound(upper: js.Any): typings.std.IDBKeyRange = ^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(upper.asInstanceOf[js.Any]).asInstanceOf[typings.std.IDBKeyRange]
-  @scala.inline
-  def upperBound(upper: js.Any, open: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(upper.asInstanceOf[js.Any], open.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
+  inline def upperBound(upper: js.Any): typings.std.IDBKeyRange = ^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(upper.asInstanceOf[js.Any]).asInstanceOf[typings.std.IDBKeyRange]
+  inline def upperBound(upper: js.Any, open: scala.Boolean): typings.std.IDBKeyRange = (^.asInstanceOf[js.Dynamic].applyDynamic("upperBound")(upper.asInstanceOf[js.Any], open.asInstanceOf[js.Any])).asInstanceOf[typings.std.IDBKeyRange]
 }

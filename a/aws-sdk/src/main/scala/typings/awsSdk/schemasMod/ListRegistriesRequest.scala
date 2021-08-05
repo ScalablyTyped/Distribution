@@ -25,37 +25,27 @@ trait ListRegistriesRequest extends StObject {
 }
 object ListRegistriesRequest {
   
-  @scala.inline
-  def apply(): ListRegistriesRequest = {
+  inline def apply(): ListRegistriesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRegistriesRequest]
   }
   
-  @scala.inline
-  implicit class ListRegistriesRequestMutableBuilder[Self <: ListRegistriesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListRegistriesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRegistryNamePrefix(value: string): Self = StObject.set(x, "RegistryNamePrefix", value.asInstanceOf[js.Any])
+    inline def setRegistryNamePrefix(value: string): Self = StObject.set(x, "RegistryNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryNamePrefixUndefined: Self = StObject.set(x, "RegistryNamePrefix", js.undefined)
+    inline def setRegistryNamePrefixUndefined: Self = StObject.set(x, "RegistryNamePrefix", js.undefined)
     
-    @scala.inline
-    def setScope(value: string): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: string): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
   }
 }

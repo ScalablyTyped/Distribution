@@ -18,19 +18,15 @@ trait GetLayerVersionRequest extends StObject {
 }
 object GetLayerVersionRequest {
   
-  @scala.inline
-  def apply(LayerName: LayerName, VersionNumber: LayerVersionNumber): GetLayerVersionRequest = {
+  inline def apply(LayerName: LayerName, VersionNumber: LayerVersionNumber): GetLayerVersionRequest = {
     val __obj = js.Dynamic.literal(LayerName = LayerName.asInstanceOf[js.Any], VersionNumber = VersionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLayerVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetLayerVersionRequestMutableBuilder[Self <: GetLayerVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetLayerVersionRequest](x: Self) {
     
-    @scala.inline
-    def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
+    inline def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumber(value: LayerVersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: LayerVersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
   }
 }

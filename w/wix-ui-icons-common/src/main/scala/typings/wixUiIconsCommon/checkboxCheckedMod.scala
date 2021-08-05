@@ -22,20 +22,16 @@ object checkboxCheckedMod extends Shortcut {
   }
   object CheckboxCheckedProps {
     
-    @scala.inline
-    def apply(): CheckboxCheckedProps = {
+    inline def apply(): CheckboxCheckedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheckboxCheckedProps]
     }
     
-    @scala.inline
-    implicit class CheckboxCheckedPropsMutableBuilder[Self <: CheckboxCheckedProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxCheckedProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

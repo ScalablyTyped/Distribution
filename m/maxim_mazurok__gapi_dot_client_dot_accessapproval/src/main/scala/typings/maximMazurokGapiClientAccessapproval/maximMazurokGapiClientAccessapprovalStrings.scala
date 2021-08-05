@@ -8,11 +8,9 @@ object maximMazurokGapiClientAccessapprovalStrings {
   
   @js.native
   sealed trait accessapproval extends StObject
-  @scala.inline
-  def accessapproval: accessapproval = "accessapproval".asInstanceOf[accessapproval]
+  inline def accessapproval: accessapproval = "accessapproval".asInstanceOf[accessapproval]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

@@ -12,19 +12,15 @@ trait PBC extends StObject {
 }
 object PBC {
   
-  @scala.inline
-  def apply(): PBC = {
+  inline def apply(): PBC = {
     val __obj = js.Dynamic.literal(PBC = "PBC", PIN = "PIN")
     __obj.asInstanceOf[PBC]
   }
   
-  @scala.inline
-  implicit class PBCMutableBuilder[Self <: PBC] (val x: Self) extends AnyVal {
+  extension [Self <: PBC](x: Self) {
     
-    @scala.inline
-    def setPBC(value: typings.chromeApps.chromeAppsStrings.PBC): Self = StObject.set(x, "PBC", value.asInstanceOf[js.Any])
+    inline def setPBC(value: typings.chromeApps.chromeAppsStrings.PBC): Self = StObject.set(x, "PBC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPIN(value: typings.chromeApps.chromeAppsStrings.PIN): Self = StObject.set(x, "PIN", value.asInstanceOf[js.Any])
+    inline def setPIN(value: typings.chromeApps.chromeAppsStrings.PIN): Self = StObject.set(x, "PIN", value.asInstanceOf[js.Any])
   }
 }

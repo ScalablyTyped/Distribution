@@ -77,38 +77,28 @@ object mod {
   }
   object ReadableStreamBufferOptions {
     
-    @scala.inline
-    def apply(): ReadableStreamBufferOptions = {
+    inline def apply(): ReadableStreamBufferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadableStreamBufferOptions]
     }
     
-    @scala.inline
-    implicit class ReadableStreamBufferOptionsMutableBuilder[Self <: ReadableStreamBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadableStreamBufferOptions](x: Self) {
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
       
-      @scala.inline
-      def setIncrementAmount(value: Double): Self = StObject.set(x, "incrementAmount", value.asInstanceOf[js.Any])
+      inline def setIncrementAmount(value: Double): Self = StObject.set(x, "incrementAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementAmountUndefined: Self = StObject.set(x, "incrementAmount", js.undefined)
+      inline def setIncrementAmountUndefined: Self = StObject.set(x, "incrementAmount", js.undefined)
       
-      @scala.inline
-      def setInitialSize(value: Double): Self = StObject.set(x, "initialSize", value.asInstanceOf[js.Any])
+      inline def setInitialSize(value: Double): Self = StObject.set(x, "initialSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSizeUndefined: Self = StObject.set(x, "initialSize", js.undefined)
+      inline def setInitialSizeUndefined: Self = StObject.set(x, "initialSize", js.undefined)
     }
   }
   
@@ -122,26 +112,20 @@ object mod {
   }
   object WritableStreamBufferOptions {
     
-    @scala.inline
-    def apply(): WritableStreamBufferOptions = {
+    inline def apply(): WritableStreamBufferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WritableStreamBufferOptions]
     }
     
-    @scala.inline
-    implicit class WritableStreamBufferOptionsMutableBuilder[Self <: WritableStreamBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WritableStreamBufferOptions](x: Self) {
       
-      @scala.inline
-      def setIncrementAmount(value: Double): Self = StObject.set(x, "incrementAmount", value.asInstanceOf[js.Any])
+      inline def setIncrementAmount(value: Double): Self = StObject.set(x, "incrementAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementAmountUndefined: Self = StObject.set(x, "incrementAmount", js.undefined)
+      inline def setIncrementAmountUndefined: Self = StObject.set(x, "incrementAmount", js.undefined)
       
-      @scala.inline
-      def setInitialSize(value: Double): Self = StObject.set(x, "initialSize", value.asInstanceOf[js.Any])
+      inline def setInitialSize(value: Double): Self = StObject.set(x, "initialSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSizeUndefined: Self = StObject.set(x, "initialSize", js.undefined)
+      inline def setInitialSizeUndefined: Self = StObject.set(x, "initialSize", js.undefined)
     }
   }
 }

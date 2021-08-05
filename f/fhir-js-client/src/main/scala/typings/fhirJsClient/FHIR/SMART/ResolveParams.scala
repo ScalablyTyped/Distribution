@@ -26,28 +26,21 @@ trait ResolveParams extends StObject {
 }
 object ResolveParams {
   
-  @scala.inline
-  def apply(reference: Reference): ResolveParams = {
+  inline def apply(reference: Reference): ResolveParams = {
     val __obj = js.Dynamic.literal(reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveParams]
   }
   
-  @scala.inline
-  implicit class ResolveParamsMutableBuilder[Self <: ResolveParams] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveParams](x: Self) {
     
-    @scala.inline
-    def setBundle(value: Resource): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
+    inline def setBundle(value: Resource): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleUndefined: Self = StObject.set(x, "bundle", js.undefined)
+    inline def setBundleUndefined: Self = StObject.set(x, "bundle", js.undefined)
     
-    @scala.inline
-    def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

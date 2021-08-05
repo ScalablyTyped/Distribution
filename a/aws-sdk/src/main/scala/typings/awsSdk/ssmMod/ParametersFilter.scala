@@ -18,22 +18,17 @@ trait ParametersFilter extends StObject {
 }
 object ParametersFilter {
   
-  @scala.inline
-  def apply(Key: ParametersFilterKey, Values: ParametersFilterValueList): ParametersFilter = {
+  inline def apply(Key: ParametersFilterKey, Values: ParametersFilterValueList): ParametersFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersFilter]
   }
   
-  @scala.inline
-  implicit class ParametersFilterMutableBuilder[Self <: ParametersFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: ParametersFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ParametersFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: ParametersFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ParametersFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: ParametersFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ParametersFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

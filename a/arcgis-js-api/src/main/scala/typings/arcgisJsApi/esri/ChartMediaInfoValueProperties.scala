@@ -36,43 +36,31 @@ trait ChartMediaInfoValueProperties extends StObject {
 }
 object ChartMediaInfoValueProperties {
   
-  @scala.inline
-  def apply(): ChartMediaInfoValueProperties = {
+  inline def apply(): ChartMediaInfoValueProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartMediaInfoValueProperties]
   }
   
-  @scala.inline
-  implicit class ChartMediaInfoValuePropertiesMutableBuilder[Self <: ChartMediaInfoValueProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ChartMediaInfoValueProperties](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setNormalizeField(value: String): Self = StObject.set(x, "normalizeField", value.asInstanceOf[js.Any])
+    inline def setNormalizeField(value: String): Self = StObject.set(x, "normalizeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeFieldUndefined: Self = StObject.set(x, "normalizeField", js.undefined)
+    inline def setNormalizeFieldUndefined: Self = StObject.set(x, "normalizeField", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Array[ChartMediaInfoValueSeriesProperties]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Array[ChartMediaInfoValueSeriesProperties]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setSeriesVarargs(value: ChartMediaInfoValueSeriesProperties*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: ChartMediaInfoValueSeriesProperties*): Self = StObject.set(x, "series", js.Array(value :_*))
     
-    @scala.inline
-    def setTooltipField(value: String): Self = StObject.set(x, "tooltipField", value.asInstanceOf[js.Any])
+    inline def setTooltipField(value: String): Self = StObject.set(x, "tooltipField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipFieldUndefined: Self = StObject.set(x, "tooltipField", js.undefined)
+    inline def setTooltipFieldUndefined: Self = StObject.set(x, "tooltipField", js.undefined)
   }
 }

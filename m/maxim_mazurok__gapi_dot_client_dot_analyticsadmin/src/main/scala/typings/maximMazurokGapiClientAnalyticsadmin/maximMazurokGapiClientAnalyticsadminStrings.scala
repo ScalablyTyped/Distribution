@@ -8,11 +8,9 @@ object maximMazurokGapiClientAnalyticsadminStrings {
   
   @js.native
   sealed trait analyticsadmin extends StObject
-  @scala.inline
-  def analyticsadmin: analyticsadmin = "analyticsadmin".asInstanceOf[analyticsadmin]
+  inline def analyticsadmin: analyticsadmin = "analyticsadmin".asInstanceOf[analyticsadmin]
   
   @js.native
   sealed trait v1alpha extends StObject
-  @scala.inline
-  def v1alpha: v1alpha = "v1alpha".asInstanceOf[v1alpha]
+  inline def v1alpha: v1alpha = "v1alpha".asInstanceOf[v1alpha]
 }

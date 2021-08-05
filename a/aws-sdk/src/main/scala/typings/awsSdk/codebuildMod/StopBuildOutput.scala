@@ -13,19 +13,15 @@ trait StopBuildOutput extends StObject {
 }
 object StopBuildOutput {
   
-  @scala.inline
-  def apply(): StopBuildOutput = {
+  inline def apply(): StopBuildOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopBuildOutput]
   }
   
-  @scala.inline
-  implicit class StopBuildOutputMutableBuilder[Self <: StopBuildOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StopBuildOutput](x: Self) {
     
-    @scala.inline
-    def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
   }
 }

@@ -23,19 +23,15 @@ trait ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs
 }
 object ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs {
   
-  @scala.inline
-  def apply(column: ASPxClientTreeListColumn, handled: Boolean): ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs = {
+  inline def apply(column: ASPxClientTreeListColumn, handled: Boolean): ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListBatchEditTemplateCellFocusedEventArgsMutableBuilder[Self <: ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }
 }

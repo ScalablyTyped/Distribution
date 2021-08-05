@@ -17,31 +17,23 @@ trait SchemaBucketByTimePeriod extends StObject {
 }
 object SchemaBucketByTimePeriod {
   
-  @scala.inline
-  def apply(): SchemaBucketByTimePeriod = {
+  inline def apply(): SchemaBucketByTimePeriod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBucketByTimePeriod]
   }
   
-  @scala.inline
-  implicit class SchemaBucketByTimePeriodMutableBuilder[Self <: SchemaBucketByTimePeriod] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBucketByTimePeriod](x: Self) {
     
-    @scala.inline
-    def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
+    inline def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneIdUndefined: Self = StObject.set(x, "timeZoneId", js.undefined)
+    inline def setTimeZoneIdUndefined: Self = StObject.set(x, "timeZoneId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

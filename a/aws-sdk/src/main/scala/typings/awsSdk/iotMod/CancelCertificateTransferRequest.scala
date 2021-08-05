@@ -13,16 +13,13 @@ trait CancelCertificateTransferRequest extends StObject {
 }
 object CancelCertificateTransferRequest {
   
-  @scala.inline
-  def apply(certificateId: CertificateId): CancelCertificateTransferRequest = {
+  inline def apply(certificateId: CertificateId): CancelCertificateTransferRequest = {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelCertificateTransferRequest]
   }
   
-  @scala.inline
-  implicit class CancelCertificateTransferRequestMutableBuilder[Self <: CancelCertificateTransferRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelCertificateTransferRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
   }
 }

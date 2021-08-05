@@ -23,28 +23,21 @@ trait PutEmailIdentityMailFromAttributesRequest extends StObject {
 }
 object PutEmailIdentityMailFromAttributesRequest {
   
-  @scala.inline
-  def apply(EmailIdentity: Identity): PutEmailIdentityMailFromAttributesRequest = {
+  inline def apply(EmailIdentity: Identity): PutEmailIdentityMailFromAttributesRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEmailIdentityMailFromAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutEmailIdentityMailFromAttributesRequestMutableBuilder[Self <: PutEmailIdentityMailFromAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEmailIdentityMailFromAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setBehaviorOnMxFailure(value: BehaviorOnMxFailure): Self = StObject.set(x, "BehaviorOnMxFailure", value.asInstanceOf[js.Any])
+    inline def setBehaviorOnMxFailure(value: BehaviorOnMxFailure): Self = StObject.set(x, "BehaviorOnMxFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorOnMxFailureUndefined: Self = StObject.set(x, "BehaviorOnMxFailure", js.undefined)
+    inline def setBehaviorOnMxFailureUndefined: Self = StObject.set(x, "BehaviorOnMxFailure", js.undefined)
     
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
+    inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailFromDomain(value: MailFromDomainName): Self = StObject.set(x, "MailFromDomain", value.asInstanceOf[js.Any])
+    inline def setMailFromDomain(value: MailFromDomainName): Self = StObject.set(x, "MailFromDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailFromDomainUndefined: Self = StObject.set(x, "MailFromDomain", js.undefined)
+    inline def setMailFromDomainUndefined: Self = StObject.set(x, "MailFromDomain", js.undefined)
   }
 }

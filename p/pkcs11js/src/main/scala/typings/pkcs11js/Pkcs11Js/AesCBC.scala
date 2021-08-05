@@ -15,23 +15,18 @@ trait AesCBC
 }
 object AesCBC {
   
-  @scala.inline
-  def apply(iv: Buffer, `type`: Double): AesCBC = {
+  inline def apply(iv: Buffer, `type`: Double): AesCBC = {
     val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesCBC]
   }
   
-  @scala.inline
-  implicit class AesCBCMutableBuilder[Self <: AesCBC] (val x: Self) extends AnyVal {
+  extension [Self <: AesCBC](x: Self) {
     
-    @scala.inline
-    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
   }
 }

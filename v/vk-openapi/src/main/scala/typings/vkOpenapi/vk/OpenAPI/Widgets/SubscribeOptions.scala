@@ -13,25 +13,19 @@ trait SubscribeOptions extends StObject {
 }
 object SubscribeOptions {
   
-  @scala.inline
-  def apply(): SubscribeOptions = {
+  inline def apply(): SubscribeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscribeOptions]
   }
   
-  @scala.inline
-  implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeOptions](x: Self) {
     
-    @scala.inline
-    def setMode(value: NumericBoolean): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: NumericBoolean): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSoft(value: NumericBoolean): Self = StObject.set(x, "soft", value.asInstanceOf[js.Any])
+    inline def setSoft(value: NumericBoolean): Self = StObject.set(x, "soft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftUndefined: Self = StObject.set(x, "soft", js.undefined)
+    inline def setSoftUndefined: Self = StObject.set(x, "soft", js.undefined)
   }
 }

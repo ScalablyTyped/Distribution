@@ -40,46 +40,33 @@ trait FieldGroupConfigProperties extends StObject {
 }
 object FieldGroupConfigProperties {
   
-  @scala.inline
-  def apply(): FieldGroupConfigProperties = {
+  inline def apply(): FieldGroupConfigProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldGroupConfigProperties]
   }
   
-  @scala.inline
-  implicit class FieldGroupConfigPropertiesMutableBuilder[Self <: FieldGroupConfigProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FieldGroupConfigProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFieldConfig(value: js.Array[FieldConfigProperties]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
+    inline def setFieldConfig(value: js.Array[FieldConfigProperties]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
+    inline def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
     
-    @scala.inline
-    def setFieldConfigVarargs(value: FieldConfigProperties*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
+    inline def setFieldConfigVarargs(value: FieldConfigProperties*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
     
-    @scala.inline
-    def setInitialState(value: expanded | collapsed): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: expanded | collapsed): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
+    inline def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityExpressionUndefined: Self = StObject.set(x, "visibilityExpression", js.undefined)
+    inline def setVisibilityExpressionUndefined: Self = StObject.set(x, "visibilityExpression", js.undefined)
   }
 }

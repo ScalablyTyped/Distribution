@@ -10,19 +10,15 @@ trait ClipEffect extends StObject {
 }
 object ClipEffect {
   
-  @scala.inline
-  def apply(): ClipEffect = {
+  inline def apply(): ClipEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClipEffect]
   }
   
-  @scala.inline
-  implicit class ClipEffectMutableBuilder[Self <: ClipEffect] (val x: Self) extends AnyVal {
+  extension [Self <: ClipEffect](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
   }
 }

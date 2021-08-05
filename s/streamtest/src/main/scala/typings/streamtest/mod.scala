@@ -28,10 +28,8 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @scala.inline
-    def fromChunks(chunks: js.Array[Chunk]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[Readable]
-    @scala.inline
-    def fromChunks(chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromChunks(chunks: js.Array[Chunk]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    inline def fromChunks(chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'chunks' each after 'timeout'
@@ -43,10 +41,8 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @scala.inline
-    def fromErroredChunks(err: Error, chunks: js.Array[Chunk]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Readable]
-    @scala.inline
-    def fromErroredChunks(err: Error, chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromErroredChunks(err: Error, chunks: js.Array[Chunk]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromErroredChunks(err: Error, chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'objects' each after 'timeout'
@@ -58,10 +54,8 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @scala.inline
-    def fromErroredObjects(err: Error, objects: js.Array[NonNull]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[Readable]
-    @scala.inline
-    def fromErroredObjects(err: Error, objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromErroredObjects(err: Error, objects: js.Array[NonNull]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromErroredObjects(err: Error, objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'objects' each after 'timeout'
@@ -71,20 +65,16 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @scala.inline
-    def fromObjects(objects: js.Array[NonNull]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[Readable]
-    @scala.inline
-    def fromObjects(objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromObjects(objects: js.Array[NonNull]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    inline def fromObjects(objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a new readable stream
       * @param options The options used to create the stream
       * @returns A new readable stream
       */
-    @scala.inline
-    def readable(): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")().asInstanceOf[Readable]
-    @scala.inline
-    def readable(options: ReadableOptions): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    inline def readable(): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")().asInstanceOf[Readable]
+    inline def readable(options: ReadableOptions): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
     
     /**
       * Write chunks to a stream synchronously and emit an error when done
@@ -92,30 +82,26 @@ object mod {
       * @param err The error to emit
       * @param chunks The chunks to write
       */
-    @scala.inline
-    def syncError(stream: Writable, err: Error, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncError")(stream.asInstanceOf[js.Any], err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def syncError(stream: Writable, err: Error, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncError")(stream.asInstanceOf[js.Any], err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a synchronous PassThrough stream
       * @returns A PassThrough stream
       */
-    @scala.inline
-    def syncReadableChunks(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableChunks")().asInstanceOf[PassThrough]
+    inline def syncReadableChunks(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableChunks")().asInstanceOf[PassThrough]
     
     /**
       * Create a synchronous PassThrough stream in object mode
       * @returns A PassThrough stream
       */
-    @scala.inline
-    def syncReadableObjects(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableObjects")().asInstanceOf[PassThrough]
+    inline def syncReadableObjects(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableObjects")().asInstanceOf[PassThrough]
     
     /**
       * Write chunks to a stream synchronously
       * @param stream The stream to write to
       * @param chunks The chunks to write
       */
-    @scala.inline
-    def syncWrite(stream: Writable, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncWrite")(stream.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def syncWrite(stream: Writable, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncWrite")(stream.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -124,8 +110,7 @@ object mod {
       * an array of chunks as its second
       * @returns A new writable stream
       */
-    @scala.inline
-    def toChunks(cb: js.Function2[/* err */ Error, /* chunks */ js.Array[Chunk], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toChunks")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    inline def toChunks(cb: js.Function2[/* err */ Error, /* chunks */ js.Array[Chunk], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toChunks")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -134,8 +119,7 @@ object mod {
       * an array of objects as its second
       * @returns A new writable stream
       */
-    @scala.inline
-    def toObjects(cb: js.Function2[/* err */ Error, /* objects */ js.Array[NonNull], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toObjects")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    inline def toObjects(cb: js.Function2[/* err */ Error, /* objects */ js.Array[NonNull], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toObjects")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -144,18 +128,15 @@ object mod {
       * an string as its second
       * @returns A new writable stream
       */
-    @scala.inline
-    def toText(cb: js.Function2[/* err */ Error, /* text */ String, js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toText")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    inline def toText(cb: js.Function2[/* err */ Error, /* text */ String, js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toText")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a new writable stream
       * @param options The options used to create the stream
       * @returns A new writable stream
       */
-    @scala.inline
-    def writable(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")().asInstanceOf[Writable]
-    @scala.inline
-    def writable(options: WritableOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    inline def writable(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")().asInstanceOf[Writable]
+    inline def writable(options: WritableOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
   }
   
   object v2 {
@@ -172,10 +153,8 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @scala.inline
-    def fromChunks(chunks: js.Array[Chunk]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[Readable]
-    @scala.inline
-    def fromChunks(chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromChunks(chunks: js.Array[Chunk]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    inline def fromChunks(chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'chunks' each after 'timeout'
@@ -187,10 +166,8 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @scala.inline
-    def fromErroredChunks(err: Error, chunks: js.Array[Chunk]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Readable]
-    @scala.inline
-    def fromErroredChunks(err: Error, chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromErroredChunks(err: Error, chunks: js.Array[Chunk]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromErroredChunks(err: Error, chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'objects' each after 'timeout'
@@ -202,10 +179,8 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @scala.inline
-    def fromErroredObjects(err: Error, objects: js.Array[NonNull]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[Readable]
-    @scala.inline
-    def fromErroredObjects(err: Error, objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromErroredObjects(err: Error, objects: js.Array[NonNull]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromErroredObjects(err: Error, objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'objects' each after 'timeout'
@@ -215,20 +190,16 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @scala.inline
-    def fromObjects(objects: js.Array[NonNull]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[Readable]
-    @scala.inline
-    def fromObjects(objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    inline def fromObjects(objects: js.Array[NonNull]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    inline def fromObjects(objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a new readable stream
       * @param options The options used to create the stream
       * @returns A new readable stream
       */
-    @scala.inline
-    def readable(): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")().asInstanceOf[Readable]
-    @scala.inline
-    def readable(options: ReadableOptions): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    inline def readable(): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")().asInstanceOf[Readable]
+    inline def readable(options: ReadableOptions): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
     
     /**
       * Write chunks to a stream synchronously and emit an error when done
@@ -236,30 +207,26 @@ object mod {
       * @param err The error to emit
       * @param chunks The chunks to write
       */
-    @scala.inline
-    def syncError(stream: Writable, err: Error, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncError")(stream.asInstanceOf[js.Any], err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def syncError(stream: Writable, err: Error, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncError")(stream.asInstanceOf[js.Any], err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a synchronous PassThrough stream
       * @returns A PassThrough stream
       */
-    @scala.inline
-    def syncReadableChunks(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableChunks")().asInstanceOf[PassThrough]
+    inline def syncReadableChunks(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableChunks")().asInstanceOf[PassThrough]
     
     /**
       * Create a synchronous PassThrough stream in object mode
       * @returns A PassThrough stream
       */
-    @scala.inline
-    def syncReadableObjects(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableObjects")().asInstanceOf[PassThrough]
+    inline def syncReadableObjects(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableObjects")().asInstanceOf[PassThrough]
     
     /**
       * Write chunks to a stream synchronously
       * @param stream The stream to write to
       * @param chunks The chunks to write
       */
-    @scala.inline
-    def syncWrite(stream: Writable, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncWrite")(stream.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def syncWrite(stream: Writable, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncWrite")(stream.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -268,8 +235,7 @@ object mod {
       * an array of chunks as its second
       * @returns A new writable stream
       */
-    @scala.inline
-    def toChunks(cb: js.Function2[/* err */ Error, /* chunks */ js.Array[Chunk], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toChunks")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    inline def toChunks(cb: js.Function2[/* err */ Error, /* chunks */ js.Array[Chunk], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toChunks")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -278,8 +244,7 @@ object mod {
       * an array of objects as its second
       * @returns A new writable stream
       */
-    @scala.inline
-    def toObjects(cb: js.Function2[/* err */ Error, /* objects */ js.Array[NonNull], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toObjects")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    inline def toObjects(cb: js.Function2[/* err */ Error, /* objects */ js.Array[NonNull], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toObjects")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -288,18 +253,15 @@ object mod {
       * an string as its second
       * @returns A new writable stream
       */
-    @scala.inline
-    def toText(cb: js.Function2[/* err */ Error, /* text */ String, js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toText")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    inline def toText(cb: js.Function2[/* err */ Error, /* text */ String, js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toText")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a new writable stream
       * @param options The options used to create the stream
       * @returns A new writable stream
       */
-    @scala.inline
-    def writable(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")().asInstanceOf[Writable]
-    @scala.inline
-    def writable(options: WritableOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    inline def writable(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")().asInstanceOf[Writable]
+    inline def writable(options: WritableOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
   }
   
   @JSImport("streamtest", "versions")
@@ -317,10 +279,8 @@ object mod {
   trait VersionName extends StObject
   object VersionName {
     
-    @scala.inline
-    def v1: typings.streamtest.streamtestStrings.v1 = "v1".asInstanceOf[typings.streamtest.streamtestStrings.v1]
+    inline def v1: typings.streamtest.streamtestStrings.v1 = "v1".asInstanceOf[typings.streamtest.streamtestStrings.v1]
     
-    @scala.inline
-    def v2: typings.streamtest.streamtestStrings.v2 = "v2".asInstanceOf[typings.streamtest.streamtestStrings.v2]
+    inline def v2: typings.streamtest.streamtestStrings.v2 = "v2".asInstanceOf[typings.streamtest.streamtestStrings.v2]
   }
 }

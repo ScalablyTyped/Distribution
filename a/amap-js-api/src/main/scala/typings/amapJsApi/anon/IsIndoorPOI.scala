@@ -30,25 +30,19 @@ trait IsIndoorPOI extends StObject {
 }
 object IsIndoorPOI {
   
-  @scala.inline
-  def apply(id: String, isIndoorPOI: Boolean, lnglat: LngLat, name: String): IsIndoorPOI = {
+  inline def apply(id: String, isIndoorPOI: Boolean, lnglat: LngLat, name: String): IsIndoorPOI = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isIndoorPOI = isIndoorPOI.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsIndoorPOI]
   }
   
-  @scala.inline
-  implicit class IsIndoorPOIMutableBuilder[Self <: IsIndoorPOI] (val x: Self) extends AnyVal {
+  extension [Self <: IsIndoorPOI](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIndoorPOI(value: Boolean): Self = StObject.set(x, "isIndoorPOI", value.asInstanceOf[js.Any])
+    inline def setIsIndoorPOI(value: Boolean): Self = StObject.set(x, "isIndoorPOI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
+    inline def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

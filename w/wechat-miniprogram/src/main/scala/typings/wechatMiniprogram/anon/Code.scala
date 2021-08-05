@@ -25,8 +25,7 @@ trait Code extends StObject {
 }
 object Code {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: js.Tuple3[String, String, String],
     postcode: String,
     value: String | js.Array[Double] | (js.Tuple3[String, String, String])
@@ -35,19 +34,14 @@ object Code {
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setCode(value: js.Tuple3[String, String, String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: js.Tuple3[String, String, String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
+    inline def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | js.Array[Double] | (js.Tuple3[String, String, String])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | js.Array[Double] | (js.Tuple3[String, String, String])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

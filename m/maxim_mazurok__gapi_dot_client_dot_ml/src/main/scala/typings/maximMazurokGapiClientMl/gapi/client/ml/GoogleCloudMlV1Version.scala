@@ -160,164 +160,113 @@ trait GoogleCloudMlV1Version extends StObject {
 }
 object GoogleCloudMlV1Version {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1Version = {
+  inline def apply(): GoogleCloudMlV1Version = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1Version]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1VersionMutableBuilder[Self <: GoogleCloudMlV1Version] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1Version](x: Self) {
     
-    @scala.inline
-    def setAcceleratorConfig(value: GoogleCloudMlV1AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
+    inline def setAcceleratorConfig(value: GoogleCloudMlV1AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
+    inline def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
     
-    @scala.inline
-    def setAutoScaling(value: GoogleCloudMlV1AutoScaling): Self = StObject.set(x, "autoScaling", value.asInstanceOf[js.Any])
+    inline def setAutoScaling(value: GoogleCloudMlV1AutoScaling): Self = StObject.set(x, "autoScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingUndefined: Self = StObject.set(x, "autoScaling", js.undefined)
+    inline def setAutoScalingUndefined: Self = StObject.set(x, "autoScaling", js.undefined)
     
-    @scala.inline
-    def setContainer(value: GoogleCloudMlV1ContainerSpec): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: GoogleCloudMlV1ContainerSpec): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDeploymentUri(value: String): Self = StObject.set(x, "deploymentUri", value.asInstanceOf[js.Any])
+    inline def setDeploymentUri(value: String): Self = StObject.set(x, "deploymentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentUriUndefined: Self = StObject.set(x, "deploymentUri", js.undefined)
+    inline def setDeploymentUriUndefined: Self = StObject.set(x, "deploymentUri", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setExplanationConfig(value: GoogleCloudMlV1ExplanationConfig): Self = StObject.set(x, "explanationConfig", value.asInstanceOf[js.Any])
+    inline def setExplanationConfig(value: GoogleCloudMlV1ExplanationConfig): Self = StObject.set(x, "explanationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplanationConfigUndefined: Self = StObject.set(x, "explanationConfig", js.undefined)
+    inline def setExplanationConfigUndefined: Self = StObject.set(x, "explanationConfig", js.undefined)
     
-    @scala.inline
-    def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+    inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
+    inline def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ GoogleCloudMlV1__Version & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLastUseTime(value: String): Self = StObject.set(x, "lastUseTime", value.asInstanceOf[js.Any])
+    inline def setLastUseTime(value: String): Self = StObject.set(x, "lastUseTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUseTimeUndefined: Self = StObject.set(x, "lastUseTime", js.undefined)
+    inline def setLastUseTimeUndefined: Self = StObject.set(x, "lastUseTime", js.undefined)
     
-    @scala.inline
-    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
+    inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
-    @scala.inline
-    def setManualScaling(value: GoogleCloudMlV1ManualScaling): Self = StObject.set(x, "manualScaling", value.asInstanceOf[js.Any])
+    inline def setManualScaling(value: GoogleCloudMlV1ManualScaling): Self = StObject.set(x, "manualScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualScalingUndefined: Self = StObject.set(x, "manualScaling", js.undefined)
+    inline def setManualScalingUndefined: Self = StObject.set(x, "manualScaling", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPackageUris(value: js.Array[String]): Self = StObject.set(x, "packageUris", value.asInstanceOf[js.Any])
+    inline def setPackageUris(value: js.Array[String]): Self = StObject.set(x, "packageUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageUrisUndefined: Self = StObject.set(x, "packageUris", js.undefined)
+    inline def setPackageUrisUndefined: Self = StObject.set(x, "packageUris", js.undefined)
     
-    @scala.inline
-    def setPackageUrisVarargs(value: String*): Self = StObject.set(x, "packageUris", js.Array(value :_*))
+    inline def setPackageUrisVarargs(value: String*): Self = StObject.set(x, "packageUris", js.Array(value :_*))
     
-    @scala.inline
-    def setPredictionClass(value: String): Self = StObject.set(x, "predictionClass", value.asInstanceOf[js.Any])
+    inline def setPredictionClass(value: String): Self = StObject.set(x, "predictionClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionClassUndefined: Self = StObject.set(x, "predictionClass", js.undefined)
+    inline def setPredictionClassUndefined: Self = StObject.set(x, "predictionClass", js.undefined)
     
-    @scala.inline
-    def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
+    inline def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
+    inline def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
     
-    @scala.inline
-    def setRequestLoggingConfig(value: GoogleCloudMlV1RequestLoggingConfig): Self = StObject.set(x, "requestLoggingConfig", value.asInstanceOf[js.Any])
+    inline def setRequestLoggingConfig(value: GoogleCloudMlV1RequestLoggingConfig): Self = StObject.set(x, "requestLoggingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestLoggingConfigUndefined: Self = StObject.set(x, "requestLoggingConfig", js.undefined)
+    inline def setRequestLoggingConfigUndefined: Self = StObject.set(x, "requestLoggingConfig", js.undefined)
     
-    @scala.inline
-    def setRoutes(value: GoogleCloudMlV1RouteMap): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: GoogleCloudMlV1RouteMap): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
-    @scala.inline
-    def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
+    inline def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
+    inline def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

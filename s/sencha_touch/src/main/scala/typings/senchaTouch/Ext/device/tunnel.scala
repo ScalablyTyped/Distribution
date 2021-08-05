@@ -51,46 +51,34 @@ object tunnel {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setBroadcast(value: /* message */ js.UndefOr[String] => IPromise): Self = StObject.set(x, "broadcast", js.Any.fromFunction1(value))
+      inline def setBroadcast(value: /* message */ js.UndefOr[String] => IPromise): Self = StObject.set(x, "broadcast", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBroadcastUndefined: Self = StObject.set(x, "broadcast", js.undefined)
+      inline def setBroadcastUndefined: Self = StObject.set(x, "broadcast", js.undefined)
       
-      @scala.inline
-      def setConnect(value: /* receiverId */ js.UndefOr[String] => IPromise): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+      inline def setConnect(value: /* receiverId */ js.UndefOr[String] => IPromise): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+      inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
       
-      @scala.inline
-      def setOnConnect(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
+      inline def setOnConnect(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+      inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      @scala.inline
-      def setOnMessage(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+      inline def setOnMessage(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
+      inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
       
-      @scala.inline
-      def setSend(
+      inline def setSend(
         value: (/* receiverId */ js.UndefOr[String], /* message */ js.UndefOr[js.Any], /* foreground */ js.UndefOr[Boolean]) => IPromise
       ): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+      inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     }
   }
 }

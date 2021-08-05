@@ -43,8 +43,7 @@ object mod {
       * @param fn The function to inspect for Origin metadata.
       * @return Returns the Origin metadata.
       */
-    @scala.inline
-    def get(fn: js.Function): Origin = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(fn.asInstanceOf[js.Any]).asInstanceOf[Origin]
+    inline def get(fn: js.Function): Origin = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(fn.asInstanceOf[js.Any]).asInstanceOf[Origin]
     
     /**
       * Set the Origin metadata for the specified function.
@@ -52,43 +51,29 @@ object mod {
       * @param fn The Origin metadata to store on the function.
       * @return Returns the Origin metadata.
       */
-    @scala.inline
-    def set(fn: js.Function, origin: Origin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(fn.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(fn: js.Function, origin: Origin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(fn.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def decorators(rest: js.Function*): DecoratorApplicator = ^.asInstanceOf[js.Dynamic].applyDynamic("decorators")(rest.asInstanceOf[js.Any]).asInstanceOf[DecoratorApplicator]
+  inline def decorators(rest: js.Function*): DecoratorApplicator = ^.asInstanceOf[js.Dynamic].applyDynamic("decorators")(rest.asInstanceOf[js.Any]).asInstanceOf[DecoratorApplicator]
   
-  @scala.inline
-  def deprecated(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")().asInstanceOf[js.Any]
-  @scala.inline
-  def deprecated(optionsOrTarget: Unit, maybeKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def deprecated(optionsOrTarget: Unit, maybeKey: String, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def deprecated(optionsOrTarget: Unit, maybeKey: Unit, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def deprecated(optionsOrTarget: DeprecatedOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: String, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: Unit, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deprecated(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")().asInstanceOf[js.Any]
+  inline def deprecated(optionsOrTarget: Unit, maybeKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deprecated(optionsOrTarget: Unit, maybeKey: String, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deprecated(optionsOrTarget: Unit, maybeKey: Unit, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deprecated(optionsOrTarget: DeprecatedOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: String, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: Unit, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("aurelia-metadata", "metadata")
   @js.native
   val metadata: MetadataType = js.native
   
-  @scala.inline
-  def mixin(behavior: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(behavior.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def mixin(behavior: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(behavior.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def protocol(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("protocol")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def protocol(name: String, options: js.Function1[/* target */ js.Any, String | Boolean]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("protocol")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def protocol(name: String, options: ProtocolOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("protocol")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def protocol(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("protocol")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def protocol(name: String, options: js.Function1[/* target */ js.Any, String | Boolean]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("protocol")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def protocol(name: String, options: ProtocolOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("protocol")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @js.native
   trait DecoratorApplicator extends StObject {
@@ -119,20 +104,16 @@ object mod {
   }
   object DeprecatedOptions {
     
-    @scala.inline
-    def apply(error: Boolean, message: String): DeprecatedOptions = {
+    inline def apply(error: Boolean, message: String): DeprecatedOptions = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeprecatedOptions]
     }
     
-    @scala.inline
-    implicit class DeprecatedOptionsMutableBuilder[Self <: DeprecatedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeprecatedOptions](x: Self) {
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,26 +193,20 @@ object mod {
   }
   object ProtocolOptions {
     
-    @scala.inline
-    def apply(): ProtocolOptions = {
+    inline def apply(): ProtocolOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProtocolOptions]
     }
     
-    @scala.inline
-    implicit class ProtocolOptionsMutableBuilder[Self <: ProtocolOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProtocolOptions](x: Self) {
       
-      @scala.inline
-      def setCompose(value: /* target */ js.Any => Unit): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
+      inline def setCompose(value: /* target */ js.Any => Unit): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComposeUndefined: Self = StObject.set(x, "compose", js.undefined)
+      inline def setComposeUndefined: Self = StObject.set(x, "compose", js.undefined)
       
-      @scala.inline
-      def setValidate(value: /* target */ js.Any => String | Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: /* target */ js.Any => String | Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
 }

@@ -80,94 +80,67 @@ trait UserProfiles extends StObject {
 }
 object UserProfiles {
   
-  @scala.inline
-  def apply(): UserProfiles = {
+  inline def apply(): UserProfiles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserProfiles]
   }
   
-  @scala.inline
-  implicit class UserProfilesMutableBuilder[Self <: UserProfiles] (val x: Self) extends AnyVal {
+  extension [Self <: UserProfiles](x: Self) {
     
-    @scala.inline
-    def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setAuthenticationMethods(
+    inline def setAuthenticationMethods(
       value: js.Array[
           /* Contains information about the method used for authentication. */ AuthenticationMethod
         ]
     ): Self = StObject.set(x, "authenticationMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationMethodsUndefined: Self = StObject.set(x, "authenticationMethods", js.undefined)
+    inline def setAuthenticationMethodsUndefined: Self = StObject.set(x, "authenticationMethods", js.undefined)
     
-    @scala.inline
-    def setAuthenticationMethodsVarargs(
+    inline def setAuthenticationMethodsVarargs(
       value: (/* Contains information about the method used for authentication. */ AuthenticationMethod)*
     ): Self = StObject.set(x, "authenticationMethods", js.Array(value :_*))
     
-    @scala.inline
-    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
+    inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
+    inline def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
-    @scala.inline
-    def setDisplayOrganizationInfo(value: String): Self = StObject.set(x, "displayOrganizationInfo", value.asInstanceOf[js.Any])
+    inline def setDisplayOrganizationInfo(value: String): Self = StObject.set(x, "displayOrganizationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOrganizationInfoUndefined: Self = StObject.set(x, "displayOrganizationInfo", js.undefined)
+    inline def setDisplayOrganizationInfoUndefined: Self = StObject.set(x, "displayOrganizationInfo", js.undefined)
     
-    @scala.inline
-    def setDisplayPersonalInfo(value: String): Self = StObject.set(x, "displayPersonalInfo", value.asInstanceOf[js.Any])
+    inline def setDisplayPersonalInfo(value: String): Self = StObject.set(x, "displayPersonalInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPersonalInfoUndefined: Self = StObject.set(x, "displayPersonalInfo", js.undefined)
+    inline def setDisplayPersonalInfoUndefined: Self = StObject.set(x, "displayPersonalInfo", js.undefined)
     
-    @scala.inline
-    def setDisplayProfile(value: String): Self = StObject.set(x, "displayProfile", value.asInstanceOf[js.Any])
+    inline def setDisplayProfile(value: String): Self = StObject.set(x, "displayProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayProfileUndefined: Self = StObject.set(x, "displayProfile", js.undefined)
+    inline def setDisplayProfileUndefined: Self = StObject.set(x, "displayProfile", js.undefined)
     
-    @scala.inline
-    def setDisplayUsageHistory(value: String): Self = StObject.set(x, "displayUsageHistory", value.asInstanceOf[js.Any])
+    inline def setDisplayUsageHistory(value: String): Self = StObject.set(x, "displayUsageHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUsageHistoryUndefined: Self = StObject.set(x, "displayUsageHistory", js.undefined)
+    inline def setDisplayUsageHistoryUndefined: Self = StObject.set(x, "displayUsageHistory", js.undefined)
     
-    @scala.inline
-    def setProfileImageUri(value: String): Self = StObject.set(x, "profileImageUri", value.asInstanceOf[js.Any])
+    inline def setProfileImageUri(value: String): Self = StObject.set(x, "profileImageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileImageUriUndefined: Self = StObject.set(x, "profileImageUri", js.undefined)
+    inline def setProfileImageUriUndefined: Self = StObject.set(x, "profileImageUri", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUsageHistory(value: UsageHistory): Self = StObject.set(x, "usageHistory", value.asInstanceOf[js.Any])
+    inline def setUsageHistory(value: UsageHistory): Self = StObject.set(x, "usageHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageHistoryUndefined: Self = StObject.set(x, "usageHistory", js.undefined)
+    inline def setUsageHistoryUndefined: Self = StObject.set(x, "usageHistory", js.undefined)
     
-    @scala.inline
-    def setUserDetails(value: UserInformation): Self = StObject.set(x, "userDetails", value.asInstanceOf[js.Any])
+    inline def setUserDetails(value: UserInformation): Self = StObject.set(x, "userDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDetailsUndefined: Self = StObject.set(x, "userDetails", js.undefined)
+    inline def setUserDetailsUndefined: Self = StObject.set(x, "userDetails", js.undefined)
     
-    @scala.inline
-    def setUserProfileLastModifiedDate(value: String): Self = StObject.set(x, "userProfileLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setUserProfileLastModifiedDate(value: String): Self = StObject.set(x, "userProfileLastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProfileLastModifiedDateUndefined: Self = StObject.set(x, "userProfileLastModifiedDate", js.undefined)
+    inline def setUserProfileLastModifiedDateUndefined: Self = StObject.set(x, "userProfileLastModifiedDate", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait DataSourceFormula extends StObject {
 }
 object DataSourceFormula {
   
-  @scala.inline
-  def apply(): DataSourceFormula = {
+  inline def apply(): DataSourceFormula = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceFormula]
   }
   
-  @scala.inline
-  implicit class DataSourceFormulaMutableBuilder[Self <: DataSourceFormula] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceFormula](x: Self) {
     
-    @scala.inline
-    def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
+    inline def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
+    inline def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
   }
 }

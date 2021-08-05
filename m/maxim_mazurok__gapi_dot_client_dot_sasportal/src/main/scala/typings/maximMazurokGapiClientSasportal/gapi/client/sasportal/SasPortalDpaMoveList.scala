@@ -14,25 +14,19 @@ trait SasPortalDpaMoveList extends StObject {
 }
 object SasPortalDpaMoveList {
   
-  @scala.inline
-  def apply(): SasPortalDpaMoveList = {
+  inline def apply(): SasPortalDpaMoveList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalDpaMoveList]
   }
   
-  @scala.inline
-  implicit class SasPortalDpaMoveListMutableBuilder[Self <: SasPortalDpaMoveList] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalDpaMoveList](x: Self) {
     
-    @scala.inline
-    def setDpaId(value: String): Self = StObject.set(x, "dpaId", value.asInstanceOf[js.Any])
+    inline def setDpaId(value: String): Self = StObject.set(x, "dpaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpaIdUndefined: Self = StObject.set(x, "dpaId", js.undefined)
+    inline def setDpaIdUndefined: Self = StObject.set(x, "dpaId", js.undefined)
     
-    @scala.inline
-    def setFrequencyRange(value: SasPortalFrequencyRange): Self = StObject.set(x, "frequencyRange", value.asInstanceOf[js.Any])
+    inline def setFrequencyRange(value: SasPortalFrequencyRange): Self = StObject.set(x, "frequencyRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyRangeUndefined: Self = StObject.set(x, "frequencyRange", js.undefined)
+    inline def setFrequencyRangeUndefined: Self = StObject.set(x, "frequencyRange", js.undefined)
   }
 }

@@ -36,8 +36,7 @@ trait LocalResult extends StObject {
 }
 object LocalResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: Bounds,
     center: LocalResultPoi,
     city: String,
@@ -57,52 +56,36 @@ object LocalResult {
     __obj.asInstanceOf[LocalResult]
   }
   
-  @scala.inline
-  implicit class LocalResultMutableBuilder[Self <: LocalResult] (val x: Self) extends AnyVal {
+  extension [Self <: LocalResult](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenter(value: LocalResultPoi): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: LocalResultPoi): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCityList(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCityList", js.Any.fromFunction0(value))
+    inline def setGetCityList(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCityList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentNumPois(value: () => Double): Self = StObject.set(x, "getCurrentNumPois", js.Any.fromFunction0(value))
+    inline def setGetCurrentNumPois(value: () => Double): Self = StObject.set(x, "getCurrentNumPois", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumPages(value: () => Double): Self = StObject.set(x, "getNumPages", js.Any.fromFunction0(value))
+    inline def setGetNumPages(value: () => Double): Self = StObject.set(x, "getNumPages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumPois(value: () => Double): Self = StObject.set(x, "getNumPois", js.Any.fromFunction0(value))
+    inline def setGetNumPois(value: () => Double): Self = StObject.set(x, "getNumPois", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPageIndex(value: () => Double): Self = StObject.set(x, "getPageIndex", js.Any.fromFunction0(value))
+    inline def setGetPageIndex(value: () => Double): Self = StObject.set(x, "getPageIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPoi(value: Double => LocalResultPoi): Self = StObject.set(x, "getPoi", js.Any.fromFunction1(value))
+    inline def setGetPoi(value: Double => LocalResultPoi): Self = StObject.set(x, "getPoi", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreResultsUrl(value: String): Self = StObject.set(x, "moreResultsUrl", value.asInstanceOf[js.Any])
+    inline def setMoreResultsUrl(value: String): Self = StObject.set(x, "moreResultsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

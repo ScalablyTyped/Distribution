@@ -13,22 +13,17 @@ trait DescribeEC2InstanceLimitsOutput extends StObject {
 }
 object DescribeEC2InstanceLimitsOutput {
   
-  @scala.inline
-  def apply(): DescribeEC2InstanceLimitsOutput = {
+  inline def apply(): DescribeEC2InstanceLimitsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEC2InstanceLimitsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeEC2InstanceLimitsOutputMutableBuilder[Self <: DescribeEC2InstanceLimitsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEC2InstanceLimitsOutput](x: Self) {
     
-    @scala.inline
-    def setEC2InstanceLimits(value: EC2InstanceLimitList): Self = StObject.set(x, "EC2InstanceLimits", value.asInstanceOf[js.Any])
+    inline def setEC2InstanceLimits(value: EC2InstanceLimitList): Self = StObject.set(x, "EC2InstanceLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2InstanceLimitsUndefined: Self = StObject.set(x, "EC2InstanceLimits", js.undefined)
+    inline def setEC2InstanceLimitsUndefined: Self = StObject.set(x, "EC2InstanceLimits", js.undefined)
     
-    @scala.inline
-    def setEC2InstanceLimitsVarargs(value: EC2InstanceLimit*): Self = StObject.set(x, "EC2InstanceLimits", js.Array(value :_*))
+    inline def setEC2InstanceLimitsVarargs(value: EC2InstanceLimit*): Self = StObject.set(x, "EC2InstanceLimits", js.Array(value :_*))
   }
 }

@@ -12,8 +12,6 @@ object getComputedStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: HTMLElement): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
-  @scala.inline
-  def default(node: HTMLElement, psuedoElement: String): CSSStyleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], psuedoElement.asInstanceOf[js.Any])).asInstanceOf[CSSStyleDeclaration]
+  inline def default(node: HTMLElement): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
+  inline def default(node: HTMLElement, psuedoElement: String): CSSStyleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], psuedoElement.asInstanceOf[js.Any])).asInstanceOf[CSSStyleDeclaration]
 }

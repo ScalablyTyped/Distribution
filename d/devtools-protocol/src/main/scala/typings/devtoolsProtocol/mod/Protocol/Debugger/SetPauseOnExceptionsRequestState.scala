@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetPauseOnExceptionsRequestState extends StObject
 object SetPauseOnExceptionsRequestState {
   
-  @scala.inline
-  def All: all = "all".asInstanceOf[all]
+  inline def All: all = "all".asInstanceOf[all]
   
-  @scala.inline
-  def None: none_ = "none".asInstanceOf[none_]
+  inline def None: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def Uncaught: uncaught = "uncaught".asInstanceOf[uncaught]
+  inline def Uncaught: uncaught = "uncaught".asInstanceOf[uncaught]
 }

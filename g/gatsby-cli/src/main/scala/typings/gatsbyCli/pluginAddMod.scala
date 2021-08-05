@@ -11,14 +11,12 @@ object pluginAddMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addPlugins(
+  inline def addPlugins(
     plugins: js.Array[String],
     pluginOptions: Record[String, Record[String, js.Any]],
     directory: String
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(plugins.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any], directory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def addPlugins(
+  inline def addPlugins(
     plugins: js.Array[String],
     pluginOptions: Record[String, Record[String, js.Any]],
     directory: String,

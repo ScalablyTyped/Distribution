@@ -27,8 +27,7 @@ trait XUpdatableLayer
 }
 object XUpdatableLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     readData: XLayerHandler => Unit,
@@ -39,10 +38,8 @@ object XUpdatableLayer {
     __obj.asInstanceOf[XUpdatableLayer]
   }
   
-  @scala.inline
-  implicit class XUpdatableLayerMutableBuilder[Self <: XUpdatableLayer] (val x: Self) extends AnyVal {
+  extension [Self <: XUpdatableLayer](x: Self) {
     
-    @scala.inline
-    def setReplaceWith(value: XLayer => Unit): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+    inline def setReplaceWith(value: XLayer => Unit): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
   }
 }

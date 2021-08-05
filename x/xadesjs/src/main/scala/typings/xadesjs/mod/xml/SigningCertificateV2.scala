@@ -13,6 +13,5 @@ class SigningCertificateV2 ()
   extends typings.xadesjs.xmlMod.SigningCertificateV2
 object SigningCertificateV2 {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SigningCertificateV2] = ^.asInstanceOf[js.Dynamic].selectDynamic("SigningCertificateV2").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SigningCertificateV2]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SigningCertificateV2] = ^.asInstanceOf[js.Dynamic].selectDynamic("SigningCertificateV2").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SigningCertificateV2]]
 }

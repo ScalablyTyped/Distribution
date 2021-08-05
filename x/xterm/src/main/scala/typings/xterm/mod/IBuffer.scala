@@ -66,8 +66,7 @@ trait IBuffer extends StObject {
 }
 object IBuffer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseY: Double,
     cursorX: Double,
     cursorY: Double,
@@ -82,31 +81,22 @@ object IBuffer {
     __obj.asInstanceOf[IBuffer]
   }
   
-  @scala.inline
-  implicit class IBufferMutableBuilder[Self <: IBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: IBuffer](x: Self) {
     
-    @scala.inline
-    def setBaseY(value: Double): Self = StObject.set(x, "baseY", value.asInstanceOf[js.Any])
+    inline def setBaseY(value: Double): Self = StObject.set(x, "baseY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorX(value: Double): Self = StObject.set(x, "cursorX", value.asInstanceOf[js.Any])
+    inline def setCursorX(value: Double): Self = StObject.set(x, "cursorX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorY(value: Double): Self = StObject.set(x, "cursorY", value.asInstanceOf[js.Any])
+    inline def setCursorY(value: Double): Self = StObject.set(x, "cursorY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLine(value: Double => js.UndefOr[IBufferLine]): Self = StObject.set(x, "getLine", js.Any.fromFunction1(value))
+    inline def setGetLine(value: Double => js.UndefOr[IBufferLine]): Self = StObject.set(x, "getLine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNullCell(value: () => IBufferCell): Self = StObject.set(x, "getNullCell", js.Any.fromFunction0(value))
+    inline def setGetNullCell(value: () => IBufferCell): Self = StObject.set(x, "getNullCell", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: normal | alternate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: normal | alternate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
+    inline def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
   }
 }

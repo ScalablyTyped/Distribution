@@ -18,25 +18,19 @@ trait ThemableDecorationInstanceRenderOptions extends StObject {
 }
 object ThemableDecorationInstanceRenderOptions {
   
-  @scala.inline
-  def apply(): ThemableDecorationInstanceRenderOptions = {
+  inline def apply(): ThemableDecorationInstanceRenderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemableDecorationInstanceRenderOptions]
   }
   
-  @scala.inline
-  implicit class ThemableDecorationInstanceRenderOptionsMutableBuilder[Self <: ThemableDecorationInstanceRenderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ThemableDecorationInstanceRenderOptions](x: Self) {
     
-    @scala.inline
-    def setAfter(value: ThemableDecorationAttachmentRenderOptions): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: ThemableDecorationAttachmentRenderOptions): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(value: ThemableDecorationAttachmentRenderOptions): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: ThemableDecorationAttachmentRenderOptions): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
   }
 }

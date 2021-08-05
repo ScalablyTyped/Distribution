@@ -26,20 +26,16 @@ object mod extends Shortcut {
   }
   object CPConv {
     
-    @scala.inline
-    def apply(dec: NumberDictionary[String], enc: StringDictionary[Double]): CPConv = {
+    inline def apply(dec: NumberDictionary[String], enc: StringDictionary[Double]): CPConv = {
       val __obj = js.Dynamic.literal(dec = dec.asInstanceOf[js.Any], enc = enc.asInstanceOf[js.Any])
       __obj.asInstanceOf[CPConv]
     }
     
-    @scala.inline
-    implicit class CPConvMutableBuilder[Self <: CPConv] (val x: Self) extends AnyVal {
+    extension [Self <: CPConv](x: Self) {
       
-      @scala.inline
-      def setDec(value: NumberDictionary[String]): Self = StObject.set(x, "dec", value.asInstanceOf[js.Any])
+      inline def setDec(value: NumberDictionary[String]): Self = StObject.set(x, "dec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnc(value: StringDictionary[Double]): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
+      inline def setEnc(value: StringDictionary[Double]): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,20 +56,16 @@ object mod extends Shortcut {
   }
   object CPModule {
     
-    @scala.inline
-    def apply(utils: CPUtils, version: String): CPModule = {
+    inline def apply(utils: CPUtils, version: String): CPModule = {
       val __obj = js.Dynamic.literal(utils = utils.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[CPModule]
     }
     
-    @scala.inline
-    implicit class CPModuleMutableBuilder[Self <: CPModule] (val x: Self) extends AnyVal {
+    extension [Self <: CPModule](x: Self) {
       
-      @scala.inline
-      def setUtils(value: CPUtils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: CPUtils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

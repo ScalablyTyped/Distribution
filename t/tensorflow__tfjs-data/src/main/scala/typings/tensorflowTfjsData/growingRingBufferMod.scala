@@ -17,7 +17,7 @@ object growingRingBufferMod {
     /**
       * Doubles the capacity of the buffer.
       */
-    var expand: js.Any = js.native
+    /* private */ var expand: js.Any = js.native
   }
   /* static members */
   object GrowingRingBuffer {
@@ -29,7 +29,6 @@ object growingRingBufferMod {
     @JSImport("@tensorflow/tfjs-data/dist/util/growing_ring_buffer", "GrowingRingBuffer.INITIAL_CAPACITY")
     @js.native
     def INITIAL_CAPACITY: js.Any = js.native
-    @scala.inline
-    def INITIAL_CAPACITY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INITIAL_CAPACITY")(x.asInstanceOf[js.Any])
+    inline def INITIAL_CAPACITY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INITIAL_CAPACITY")(x.asInstanceOf[js.Any])
   }
 }

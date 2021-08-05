@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useRowState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](hooks: Hooks[D]): Unit = ^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply[D /* <: js.Object */](hooks: Hooks[D]): Unit = ^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("react-table", "useRowState")
   @js.native

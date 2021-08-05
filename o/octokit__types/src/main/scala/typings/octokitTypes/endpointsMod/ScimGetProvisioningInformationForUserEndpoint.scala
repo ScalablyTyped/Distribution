@@ -16,20 +16,16 @@ trait ScimGetProvisioningInformationForUserEndpoint extends StObject {
 }
 object ScimGetProvisioningInformationForUserEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, scim_user_id: String): ScimGetProvisioningInformationForUserEndpoint = {
+  inline def apply(org_ : String, scim_user_id: String): ScimGetProvisioningInformationForUserEndpoint = {
     val __obj = js.Dynamic.literal(scim_user_id = scim_user_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScimGetProvisioningInformationForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ScimGetProvisioningInformationForUserEndpointMutableBuilder[Self <: ScimGetProvisioningInformationForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ScimGetProvisioningInformationForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
+    inline def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
   }
 }

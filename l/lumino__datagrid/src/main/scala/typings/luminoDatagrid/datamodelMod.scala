@@ -25,7 +25,7 @@ object datamodelMod {
   @js.native
   abstract class DataModel () extends StObject {
     
-    var _changed: js.Any = js.native
+    /* private */ var _changed: js.Any = js.native
     
     /**
       * A signal emitted when the data model has changed.
@@ -124,17 +124,13 @@ object datamodelMod {
     trait CellRegion extends StObject
     object CellRegion {
       
-      @scala.inline
-      def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
+      inline def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
       
-      @scala.inline
-      def `column-header`: typings.luminoDatagrid.luminoDatagridStrings.`column-header` = "column-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`column-header`]
+      inline def `column-header`: typings.luminoDatagrid.luminoDatagridStrings.`column-header` = "column-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`column-header`]
       
-      @scala.inline
-      def `corner-header`: typings.luminoDatagrid.luminoDatagridStrings.`corner-header` = "corner-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`corner-header`]
+      inline def `corner-header`: typings.luminoDatagrid.luminoDatagridStrings.`corner-header` = "corner-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`corner-header`]
       
-      @scala.inline
-      def `row-header`: typings.luminoDatagrid.luminoDatagridStrings.`row-header` = "row-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`row-header`]
+      inline def `row-header`: typings.luminoDatagrid.luminoDatagridStrings.`row-header` = "row-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`row-header`]
     }
     
     /**
@@ -180,33 +176,25 @@ object datamodelMod {
     }
     object CellsChangedArgs {
       
-      @scala.inline
-      def apply(column: Double, columnSpan: Double, region: CellRegion, row: Double, rowSpan: Double): CellsChangedArgs = {
+      inline def apply(column: Double, columnSpan: Double, region: CellRegion, row: Double, rowSpan: Double): CellsChangedArgs = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnSpan = columnSpan.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowSpan = rowSpan.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("cells-changed")
         __obj.asInstanceOf[CellsChangedArgs]
       }
       
-      @scala.inline
-      implicit class CellsChangedArgsMutableBuilder[Self <: CellsChangedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: CellsChangedArgs](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+        inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegion(value: CellRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: CellRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+        inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+        inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: `cells-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `cells-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -224,43 +212,37 @@ object datamodelMod {
     trait ChangedArgs extends StObject
     object ChangedArgs {
       
-      @scala.inline
-      def CellsChangedArgs(column: Double, columnSpan: Double, region: CellRegion, row: Double, rowSpan: Double): typings.luminoDatagrid.datamodelMod.DataModel.CellsChangedArgs = {
+      inline def CellsChangedArgs(column: Double, columnSpan: Double, region: CellRegion, row: Double, rowSpan: Double): typings.luminoDatagrid.datamodelMod.DataModel.CellsChangedArgs = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnSpan = columnSpan.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowSpan = rowSpan.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("cells-changed")
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.CellsChangedArgs]
       }
       
-      @scala.inline
-      def ColumnsChangedArgs(index: Double, region: ColumnRegion, span: Double, `type`: `columns-inserted` | `columns-removed`): typings.luminoDatagrid.datamodelMod.DataModel.ColumnsChangedArgs = {
+      inline def ColumnsChangedArgs(index: Double, region: ColumnRegion, span: Double, `type`: `columns-inserted` | `columns-removed`): typings.luminoDatagrid.datamodelMod.DataModel.ColumnsChangedArgs = {
         val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.ColumnsChangedArgs]
       }
       
-      @scala.inline
-      def ColumnsMovedArgs(destination: Double, index: Double, region: ColumnRegion, span: Double): typings.luminoDatagrid.datamodelMod.DataModel.ColumnsMovedArgs = {
+      inline def ColumnsMovedArgs(destination: Double, index: Double, region: ColumnRegion, span: Double): typings.luminoDatagrid.datamodelMod.DataModel.ColumnsMovedArgs = {
         val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("columns-moved")
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.ColumnsMovedArgs]
       }
       
-      @scala.inline
-      def ModelResetArgs(): typings.luminoDatagrid.datamodelMod.DataModel.ModelResetArgs = {
+      inline def ModelResetArgs(): typings.luminoDatagrid.datamodelMod.DataModel.ModelResetArgs = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")("model-reset")
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.ModelResetArgs]
       }
       
-      @scala.inline
-      def RowsChangedArgs(index: Double, region: RowRegion, span: Double, `type`: `rows-inserted` | `rows-removed`): typings.luminoDatagrid.datamodelMod.DataModel.RowsChangedArgs = {
+      inline def RowsChangedArgs(index: Double, region: RowRegion, span: Double, `type`: `rows-inserted` | `rows-removed`): typings.luminoDatagrid.datamodelMod.DataModel.RowsChangedArgs = {
         val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.RowsChangedArgs]
       }
       
-      @scala.inline
-      def RowsMovedArgs(destination: Double, index: Double, region: RowRegion, span: Double): typings.luminoDatagrid.datamodelMod.DataModel.RowsMovedArgs = {
+      inline def RowsMovedArgs(destination: Double, index: Double, region: RowRegion, span: Double): typings.luminoDatagrid.datamodelMod.DataModel.RowsMovedArgs = {
         val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("rows-moved")
         __obj.asInstanceOf[typings.luminoDatagrid.datamodelMod.DataModel.RowsMovedArgs]
@@ -277,11 +259,9 @@ object datamodelMod {
     trait ColumnRegion extends StObject
     object ColumnRegion {
       
-      @scala.inline
-      def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
+      inline def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
       
-      @scala.inline
-      def `row-header`: typings.luminoDatagrid.luminoDatagridStrings.`row-header` = "row-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`row-header`]
+      inline def `row-header`: typings.luminoDatagrid.luminoDatagridStrings.`row-header` = "row-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`row-header`]
     }
     
     /**
@@ -317,27 +297,21 @@ object datamodelMod {
     }
     object ColumnsChangedArgs {
       
-      @scala.inline
-      def apply(index: Double, region: ColumnRegion, span: Double, `type`: `columns-inserted` | `columns-removed`): ColumnsChangedArgs = {
+      inline def apply(index: Double, region: ColumnRegion, span: Double, `type`: `columns-inserted` | `columns-removed`): ColumnsChangedArgs = {
         val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[ColumnsChangedArgs]
       }
       
-      @scala.inline
-      implicit class ColumnsChangedArgsMutableBuilder[Self <: ColumnsChangedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: ColumnsChangedArgs](x: Self) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegion(value: ColumnRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: ColumnRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+        inline def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: `columns-inserted` | `columns-removed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `columns-inserted` | `columns-removed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -379,30 +353,23 @@ object datamodelMod {
     }
     object ColumnsMovedArgs {
       
-      @scala.inline
-      def apply(destination: Double, index: Double, region: ColumnRegion, span: Double): ColumnsMovedArgs = {
+      inline def apply(destination: Double, index: Double, region: ColumnRegion, span: Double): ColumnsMovedArgs = {
         val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("columns-moved")
         __obj.asInstanceOf[ColumnsMovedArgs]
       }
       
-      @scala.inline
-      implicit class ColumnsMovedArgsMutableBuilder[Self <: ColumnsMovedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: ColumnsMovedArgs](x: Self) {
         
-        @scala.inline
-        def setDestination(value: Double): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+        inline def setDestination(value: Double): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegion(value: ColumnRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: ColumnRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+        inline def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: `columns-moved`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `columns-moved`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -434,18 +401,15 @@ object datamodelMod {
     }
     object ModelResetArgs {
       
-      @scala.inline
-      def apply(): ModelResetArgs = {
+      inline def apply(): ModelResetArgs = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")("model-reset")
         __obj.asInstanceOf[ModelResetArgs]
       }
       
-      @scala.inline
-      implicit class ModelResetArgsMutableBuilder[Self <: ModelResetArgs] (val x: Self) extends AnyVal {
+      extension [Self <: ModelResetArgs](x: Self) {
         
-        @scala.inline
-        def setType(value: `model-reset`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `model-reset`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -459,11 +423,9 @@ object datamodelMod {
     trait RowRegion extends StObject
     object RowRegion {
       
-      @scala.inline
-      def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
+      inline def body: typings.luminoDatagrid.luminoDatagridStrings.body = "body".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.body]
       
-      @scala.inline
-      def `column-header`: typings.luminoDatagrid.luminoDatagridStrings.`column-header` = "column-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`column-header`]
+      inline def `column-header`: typings.luminoDatagrid.luminoDatagridStrings.`column-header` = "column-header".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`column-header`]
     }
     
     /**
@@ -499,27 +461,21 @@ object datamodelMod {
     }
     object RowsChangedArgs {
       
-      @scala.inline
-      def apply(index: Double, region: RowRegion, span: Double, `type`: `rows-inserted` | `rows-removed`): RowsChangedArgs = {
+      inline def apply(index: Double, region: RowRegion, span: Double, `type`: `rows-inserted` | `rows-removed`): RowsChangedArgs = {
         val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[RowsChangedArgs]
       }
       
-      @scala.inline
-      implicit class RowsChangedArgsMutableBuilder[Self <: RowsChangedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: RowsChangedArgs](x: Self) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegion(value: RowRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: RowRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+        inline def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: `rows-inserted` | `rows-removed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `rows-inserted` | `rows-removed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -561,30 +517,23 @@ object datamodelMod {
     }
     object RowsMovedArgs {
       
-      @scala.inline
-      def apply(destination: Double, index: Double, region: RowRegion, span: Double): RowsMovedArgs = {
+      inline def apply(destination: Double, index: Double, region: RowRegion, span: Double): RowsMovedArgs = {
         val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
         __obj.updateDynamic("type")("rows-moved")
         __obj.asInstanceOf[RowsMovedArgs]
       }
       
-      @scala.inline
-      implicit class RowsMovedArgsMutableBuilder[Self <: RowsMovedArgs] (val x: Self) extends AnyVal {
+      extension [Self <: RowsMovedArgs](x: Self) {
         
-        @scala.inline
-        def setDestination(value: Double): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+        inline def setDestination(value: Double): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegion(value: RowRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: RowRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+        inline def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: `rows-moved`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `rows-moved`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }

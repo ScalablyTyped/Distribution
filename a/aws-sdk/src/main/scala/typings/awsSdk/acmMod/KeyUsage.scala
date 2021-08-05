@@ -13,19 +13,15 @@ trait KeyUsage extends StObject {
 }
 object KeyUsage {
   
-  @scala.inline
-  def apply(): KeyUsage = {
+  inline def apply(): KeyUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyUsage]
   }
   
-  @scala.inline
-  implicit class KeyUsageMutableBuilder[Self <: KeyUsage] (val x: Self) extends AnyVal {
+  extension [Self <: KeyUsage](x: Self) {
     
-    @scala.inline
-    def setName(value: KeyUsageName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: KeyUsageName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

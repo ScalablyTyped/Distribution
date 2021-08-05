@@ -8,16 +8,13 @@ object rollupTypescriptStrings {
   
   @js.native
   sealed trait dts extends StObject
-  @scala.inline
-  def dts: dts = "dts".asInstanceOf[dts]
+  inline def dts: dts = "dts".asInstanceOf[dts]
   
   @js.native
   sealed trait js_ extends StObject
-  @scala.inline
-  def js_ : js_ = "js".asInstanceOf[js_]
+  inline def js_ : js_ = "js".asInstanceOf[js_]
   
   @js.native
   sealed trait quit extends StObject
-  @scala.inline
-  def quit: quit = "quit".asInstanceOf[quit]
+  inline def quit: quit = "quit".asInstanceOf[quit]
 }

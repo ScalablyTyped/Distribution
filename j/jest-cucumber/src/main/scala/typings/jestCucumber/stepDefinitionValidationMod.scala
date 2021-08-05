@@ -16,21 +16,17 @@ object stepDefinitionValidationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps(
+  inline def ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps(
     options: Options,
     parsedScenario: ParsedScenarioOutline,
     scenarioFromStepDefinitions: ScenarioFromStepDefinitions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps")(options.asInstanceOf[js.Any], parsedScenario.asInstanceOf[js.Any], scenarioFromStepDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps(
+  inline def ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps(
     options: Options,
     parsedScenario: ParsedScenario,
     scenarioFromStepDefinitions: ScenarioFromStepDefinitions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps")(options.asInstanceOf[js.Any], parsedScenario.asInstanceOf[js.Any], scenarioFromStepDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def matchSteps(stepFromFeatureFile: String, stepMatcher: String): Boolean | RegExpMatchArray | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSteps")(stepFromFeatureFile.asInstanceOf[js.Any], stepMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean | RegExpMatchArray | Null]
-  @scala.inline
-  def matchSteps(stepFromFeatureFile: String, stepMatcher: RegExp): Boolean | RegExpMatchArray | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSteps")(stepFromFeatureFile.asInstanceOf[js.Any], stepMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean | RegExpMatchArray | Null]
+  inline def matchSteps(stepFromFeatureFile: String, stepMatcher: String): Boolean | RegExpMatchArray | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSteps")(stepFromFeatureFile.asInstanceOf[js.Any], stepMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean | RegExpMatchArray | Null]
+  inline def matchSteps(stepFromFeatureFile: String, stepMatcher: RegExp): Boolean | RegExpMatchArray | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSteps")(stepFromFeatureFile.asInstanceOf[js.Any], stepMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean | RegExpMatchArray | Null]
 }

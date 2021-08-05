@@ -8,11 +8,9 @@ object maximMazurokGapiClientIamcredentialsStrings {
   
   @js.native
   sealed trait iamcredentials extends StObject
-  @scala.inline
-  def iamcredentials: iamcredentials = "iamcredentials".asInstanceOf[iamcredentials]
+  inline def iamcredentials: iamcredentials = "iamcredentials".asInstanceOf[iamcredentials]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

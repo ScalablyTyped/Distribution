@@ -13,16 +13,13 @@ trait GetBackupVaultAccessPolicyInput extends StObject {
 }
 object GetBackupVaultAccessPolicyInput {
   
-  @scala.inline
-  def apply(BackupVaultName: BackupVaultName): GetBackupVaultAccessPolicyInput = {
+  inline def apply(BackupVaultName: BackupVaultName): GetBackupVaultAccessPolicyInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBackupVaultAccessPolicyInput]
   }
   
-  @scala.inline
-  implicit class GetBackupVaultAccessPolicyInputMutableBuilder[Self <: GetBackupVaultAccessPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackupVaultAccessPolicyInput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
   }
 }

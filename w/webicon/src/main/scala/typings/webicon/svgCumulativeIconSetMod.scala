@@ -24,23 +24,18 @@ object svgCumulativeIconSetMod {
   }
   object SvgCumulativeIconSet {
     
-    @scala.inline
-    def apply(): SvgCumulativeIconSet = {
+    inline def apply(): SvgCumulativeIconSet = {
       val __obj = js.Dynamic.literal(cumulative = true)
       __obj.asInstanceOf[SvgCumulativeIconSet]
     }
     
-    @scala.inline
-    implicit class SvgCumulativeIconSetMutableBuilder[Self <: SvgCumulativeIconSet] (val x: Self) extends AnyVal {
+    extension [Self <: SvgCumulativeIconSet](x: Self) {
       
-      @scala.inline
-      def setCumulative(value: `true`): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+      inline def setCumulative(value: `true`): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitDuration(value: Double): Self = StObject.set(x, "waitDuration", value.asInstanceOf[js.Any])
+      inline def setWaitDuration(value: Double): Self = StObject.set(x, "waitDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitDurationUndefined: Self = StObject.set(x, "waitDuration", js.undefined)
+      inline def setWaitDurationUndefined: Self = StObject.set(x, "waitDuration", js.undefined)
     }
   }
 }

@@ -22,31 +22,23 @@ trait OutlookCategory
 }
 object OutlookCategory {
   
-  @scala.inline
-  def apply(): OutlookCategory = {
+  inline def apply(): OutlookCategory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutlookCategory]
   }
   
-  @scala.inline
-  implicit class OutlookCategoryMutableBuilder[Self <: OutlookCategory] (val x: Self) extends AnyVal {
+  extension [Self <: OutlookCategory](x: Self) {
     
-    @scala.inline
-    def setColor(value: NullableOption[CategoryColor]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: NullableOption[CategoryColor]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNull: Self = StObject.set(x, "color", null)
+    inline def setColorNull: Self = StObject.set(x, "color", null)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

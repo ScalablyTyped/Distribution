@@ -128,29 +128,22 @@ object mod {
   }
   object PeekInterface {
     
-    @scala.inline
-    def apply(isExpired: Boolean): PeekInterface = {
+    inline def apply(isExpired: Boolean): PeekInterface = {
       val __obj = js.Dynamic.literal(isExpired = isExpired.asInstanceOf[js.Any], timeLeft = null, value = null)
       __obj.asInstanceOf[PeekInterface]
     }
     
-    @scala.inline
-    implicit class PeekInterfaceMutableBuilder[Self <: PeekInterface] (val x: Self) extends AnyVal {
+    extension [Self <: PeekInterface](x: Self) {
       
-      @scala.inline
-      def setIsExpired(value: Boolean): Self = StObject.set(x, "isExpired", value.asInstanceOf[js.Any])
+      inline def setIsExpired(value: Boolean): Self = StObject.set(x, "isExpired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
+      inline def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLeftNull: Self = StObject.set(x, "timeLeft", null)
+      inline def setTimeLeftNull: Self = StObject.set(x, "timeLeft", null)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
     }
   }
 }

@@ -8,16 +8,15 @@ trait BuiltInType
   extends StObject
      with IASTToken {
   
-  var _nodeType: js.Any
+  /* private */ var _nodeType: js.Any
   
-  var _text: js.Any
+  /* private */ var _text: js.Any
   
-  var _valueText: js.Any
+  /* private */ var _valueText: js.Any
 }
 object BuiltInType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _nodeType: js.Any,
@@ -48,16 +47,12 @@ object BuiltInType {
     __obj.asInstanceOf[BuiltInType]
   }
   
-  @scala.inline
-  implicit class BuiltInTypeMutableBuilder[Self <: BuiltInType] (val x: Self) extends AnyVal {
+  extension [Self <: BuiltInType](x: Self) {
     
-    @scala.inline
-    def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
+    inline def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
+    inline def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

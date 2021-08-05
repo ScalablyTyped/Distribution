@@ -13,19 +13,15 @@ trait ReactLink[T] extends StObject {
 }
 object ReactLink {
   
-  @scala.inline
-  def apply[T](requestChange: T => Unit, value: T): ReactLink[T] = {
+  inline def apply[T](requestChange: T => Unit, value: T): ReactLink[T] = {
     val __obj = js.Dynamic.literal(requestChange = js.Any.fromFunction1(requestChange), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactLink[T]]
   }
   
-  @scala.inline
-  implicit class ReactLinkMutableBuilder[Self <: ReactLink[?], T] (val x: Self & ReactLink[T]) extends AnyVal {
+  extension [Self <: ReactLink[?], T](x: Self & ReactLink[T]) {
     
-    @scala.inline
-    def setRequestChange(value: T => Unit): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
+    inline def setRequestChange(value: T => Unit): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

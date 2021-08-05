@@ -12,16 +12,13 @@ trait PluginRemoveUnknownsAndDefaults
 }
 object PluginRemoveUnknownsAndDefaults {
   
-  @scala.inline
-  def apply(removeUnknownsAndDefaults: Boolean | js.Object): PluginRemoveUnknownsAndDefaults = {
+  inline def apply(removeUnknownsAndDefaults: Boolean | js.Object): PluginRemoveUnknownsAndDefaults = {
     val __obj = js.Dynamic.literal(removeUnknownsAndDefaults = removeUnknownsAndDefaults.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveUnknownsAndDefaults]
   }
   
-  @scala.inline
-  implicit class PluginRemoveUnknownsAndDefaultsMutableBuilder[Self <: PluginRemoveUnknownsAndDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveUnknownsAndDefaults](x: Self) {
     
-    @scala.inline
-    def setRemoveUnknownsAndDefaults(value: Boolean | js.Object): Self = StObject.set(x, "removeUnknownsAndDefaults", value.asInstanceOf[js.Any])
+    inline def setRemoveUnknownsAndDefaults(value: Boolean | js.Object): Self = StObject.set(x, "removeUnknownsAndDefaults", value.asInstanceOf[js.Any])
   }
 }

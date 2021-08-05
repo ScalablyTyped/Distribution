@@ -13,16 +13,13 @@ trait TaskAgentPoolMaintenanceRetentionPolicy extends StObject {
 }
 object TaskAgentPoolMaintenanceRetentionPolicy {
   
-  @scala.inline
-  def apply(numberOfHistoryRecordsToKeep: Double): TaskAgentPoolMaintenanceRetentionPolicy = {
+  inline def apply(numberOfHistoryRecordsToKeep: Double): TaskAgentPoolMaintenanceRetentionPolicy = {
     val __obj = js.Dynamic.literal(numberOfHistoryRecordsToKeep = numberOfHistoryRecordsToKeep.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskAgentPoolMaintenanceRetentionPolicy]
   }
   
-  @scala.inline
-  implicit class TaskAgentPoolMaintenanceRetentionPolicyMutableBuilder[Self <: TaskAgentPoolMaintenanceRetentionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentPoolMaintenanceRetentionPolicy](x: Self) {
     
-    @scala.inline
-    def setNumberOfHistoryRecordsToKeep(value: Double): Self = StObject.set(x, "numberOfHistoryRecordsToKeep", value.asInstanceOf[js.Any])
+    inline def setNumberOfHistoryRecordsToKeep(value: Double): Self = StObject.set(x, "numberOfHistoryRecordsToKeep", value.asInstanceOf[js.Any])
   }
 }

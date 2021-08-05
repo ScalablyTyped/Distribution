@@ -20,17 +20,14 @@ object typesImportKeyMaterialOutputMod {
   }
   object ImportKeyMaterialOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ImportKeyMaterialOutput = {
+    inline def apply($metadata: ResponseMetadata): ImportKeyMaterialOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImportKeyMaterialOutput]
     }
     
-    @scala.inline
-    implicit class ImportKeyMaterialOutputMutableBuilder[Self <: ImportKeyMaterialOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ImportKeyMaterialOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

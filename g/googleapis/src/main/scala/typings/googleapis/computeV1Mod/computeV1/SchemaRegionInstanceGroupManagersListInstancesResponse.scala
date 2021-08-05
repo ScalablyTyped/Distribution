@@ -13,22 +13,17 @@ trait SchemaRegionInstanceGroupManagersListInstancesResponse extends StObject {
 }
 object SchemaRegionInstanceGroupManagersListInstancesResponse {
   
-  @scala.inline
-  def apply(): SchemaRegionInstanceGroupManagersListInstancesResponse = {
+  inline def apply(): SchemaRegionInstanceGroupManagersListInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionInstanceGroupManagersListInstancesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRegionInstanceGroupManagersListInstancesResponseMutableBuilder[Self <: SchemaRegionInstanceGroupManagersListInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionInstanceGroupManagersListInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setManagedInstances(value: js.Array[SchemaManagedInstance]): Self = StObject.set(x, "managedInstances", value.asInstanceOf[js.Any])
+    inline def setManagedInstances(value: js.Array[SchemaManagedInstance]): Self = StObject.set(x, "managedInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedInstancesUndefined: Self = StObject.set(x, "managedInstances", js.undefined)
+    inline def setManagedInstancesUndefined: Self = StObject.set(x, "managedInstances", js.undefined)
     
-    @scala.inline
-    def setManagedInstancesVarargs(value: SchemaManagedInstance*): Self = StObject.set(x, "managedInstances", js.Array(value :_*))
+    inline def setManagedInstancesVarargs(value: SchemaManagedInstance*): Self = StObject.set(x, "managedInstances", js.Array(value :_*))
   }
 }

@@ -14,8 +14,7 @@ trait ThenRet extends StObject {
 }
 object ThenRet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `else`: js.Any => TernaryOperation,
     else_ : TernaryOperation,
     otherwise: js.Any => TernaryOperation
@@ -25,16 +24,12 @@ object ThenRet {
     __obj.asInstanceOf[ThenRet]
   }
   
-  @scala.inline
-  implicit class ThenRetMutableBuilder[Self <: ThenRet] (val x: Self) extends AnyVal {
+  extension [Self <: ThenRet](x: Self) {
     
-    @scala.inline
-    def setElse(value: js.Any => TernaryOperation): Self = StObject.set(x, "else", js.Any.fromFunction1(value))
+    inline def setElse(value: js.Any => TernaryOperation): Self = StObject.set(x, "else", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElse_(value: TernaryOperation): Self = StObject.set(x, "else_", value.asInstanceOf[js.Any])
+    inline def setElse_(value: TernaryOperation): Self = StObject.set(x, "else_", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherwise(value: js.Any => TernaryOperation): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
+    inline def setOtherwise(value: js.Any => TernaryOperation): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
   }
 }

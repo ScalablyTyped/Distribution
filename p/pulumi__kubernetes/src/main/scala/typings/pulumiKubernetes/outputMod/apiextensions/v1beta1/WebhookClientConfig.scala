@@ -38,22 +38,17 @@ trait WebhookClientConfig extends StObject {
 }
 object WebhookClientConfig {
   
-  @scala.inline
-  def apply(caBundle: String, service: ServiceReference, url: String): WebhookClientConfig = {
+  inline def apply(caBundle: String, service: ServiceReference, url: String): WebhookClientConfig = {
     val __obj = js.Dynamic.literal(caBundle = caBundle.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookClientConfig]
   }
   
-  @scala.inline
-  implicit class WebhookClientConfigMutableBuilder[Self <: WebhookClientConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookClientConfig](x: Self) {
     
-    @scala.inline
-    def setCaBundle(value: String): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
+    inline def setCaBundle(value: String): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: ServiceReference): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: ServiceReference): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

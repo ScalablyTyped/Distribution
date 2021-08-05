@@ -11,19 +11,15 @@ trait PartialClassesBlockPicker extends StObject {
 }
 object PartialClassesBlockPicker {
   
-  @scala.inline
-  def apply(): PartialClassesBlockPicker = {
+  inline def apply(): PartialClassesBlockPicker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesBlockPicker]
   }
   
-  @scala.inline
-  implicit class PartialClassesBlockPickerMutableBuilder[Self <: PartialClassesBlockPicker] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesBlockPicker](x: Self) {
     
-    @scala.inline
-    def setDefault(value: PartialBlockPickerStylesP): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: PartialBlockPickerStylesP): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

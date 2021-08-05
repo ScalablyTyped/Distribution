@@ -24,19 +24,15 @@ trait ASPxClientReportDesignerTabClosingEventArgs
 }
 object ASPxClientReportDesignerTabClosingEventArgs {
   
-  @scala.inline
-  def apply(Handled: Boolean, ReadyToClose: JQueryDeferred[js.Any], Tab: ASPxDesignerNavigateTab): ASPxClientReportDesignerTabClosingEventArgs = {
+  inline def apply(Handled: Boolean, ReadyToClose: JQueryDeferred[js.Any], Tab: ASPxDesignerNavigateTab): ASPxClientReportDesignerTabClosingEventArgs = {
     val __obj = js.Dynamic.literal(Handled = Handled.asInstanceOf[js.Any], ReadyToClose = ReadyToClose.asInstanceOf[js.Any], Tab = Tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerTabClosingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientReportDesignerTabClosingEventArgsMutableBuilder[Self <: ASPxClientReportDesignerTabClosingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReportDesignerTabClosingEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "Handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "Handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyToClose(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "ReadyToClose", value.asInstanceOf[js.Any])
+    inline def setReadyToClose(value: JQueryDeferred[js.Any]): Self = StObject.set(x, "ReadyToClose", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait CheckIsOpenAccessibilitySuccessCallbackOption extends StObject {
 }
 object CheckIsOpenAccessibilitySuccessCallbackOption {
   
-  @scala.inline
-  def apply(open: Boolean): CheckIsOpenAccessibilitySuccessCallbackOption = {
+  inline def apply(open: Boolean): CheckIsOpenAccessibilitySuccessCallbackOption = {
     val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIsOpenAccessibilitySuccessCallbackOption]
   }
   
-  @scala.inline
-  implicit class CheckIsOpenAccessibilitySuccessCallbackOptionMutableBuilder[Self <: CheckIsOpenAccessibilitySuccessCallbackOption] (val x: Self) extends AnyVal {
+  extension [Self <: CheckIsOpenAccessibilitySuccessCallbackOption](x: Self) {
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

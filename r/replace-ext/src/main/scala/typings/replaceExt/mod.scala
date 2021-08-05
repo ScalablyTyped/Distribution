@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(path: String, `extension`: String): String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(path: String, `extension`: String): String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("replace-ext", JSImport.Namespace)
   @js.native

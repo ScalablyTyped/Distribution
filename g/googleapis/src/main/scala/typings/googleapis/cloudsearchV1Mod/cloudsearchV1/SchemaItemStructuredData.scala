@@ -24,25 +24,19 @@ trait SchemaItemStructuredData extends StObject {
 }
 object SchemaItemStructuredData {
   
-  @scala.inline
-  def apply(): SchemaItemStructuredData = {
+  inline def apply(): SchemaItemStructuredData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaItemStructuredData]
   }
   
-  @scala.inline
-  implicit class SchemaItemStructuredDataMutableBuilder[Self <: SchemaItemStructuredData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaItemStructuredData](x: Self) {
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setObject(value: SchemaStructuredDataObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: SchemaStructuredDataObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
   }
 }

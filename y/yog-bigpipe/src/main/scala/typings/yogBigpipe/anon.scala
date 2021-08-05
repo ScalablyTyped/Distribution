@@ -16,26 +16,20 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply(): Default = {
+    inline def apply(): Default = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Default]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+    extension [Self <: Default](x: Self) {
       
-      @scala.inline
-      def setQuickling(value: String): Self = StObject.set(x, "quickling", value.asInstanceOf[js.Any])
+      inline def setQuickling(value: String): Self = StObject.set(x, "quickling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuicklingUndefined: Self = StObject.set(x, "quickling", js.undefined)
+      inline def setQuicklingUndefined: Self = StObject.set(x, "quickling", js.undefined)
       
-      @scala.inline
-      def set_default(value: String): Self = StObject.set(x, "_default", value.asInstanceOf[js.Any])
+      inline def set_default(value: String): Self = StObject.set(x, "_default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_defaultUndefined: Self = StObject.set(x, "_default", js.undefined)
+      inline def set_defaultUndefined: Self = StObject.set(x, "_default", js.undefined)
     }
   }
   
@@ -47,17 +41,14 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(mode: mode): Dictkey = {
+    inline def apply(mode: mode): Dictkey = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setMode(value: mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
   }
 }

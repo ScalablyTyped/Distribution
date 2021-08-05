@@ -12,19 +12,15 @@ trait TopicalExploreFeedResponseThumbnailImage extends StObject {
 }
 object TopicalExploreFeedResponseThumbnailImage {
   
-  @scala.inline
-  def apply(image_versions2: TopicalExploreFeedResponseImageVersions2, preview: String): TopicalExploreFeedResponseThumbnailImage = {
+  inline def apply(image_versions2: TopicalExploreFeedResponseImageVersions2, preview: String): TopicalExploreFeedResponseThumbnailImage = {
     val __obj = js.Dynamic.literal(image_versions2 = image_versions2.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicalExploreFeedResponseThumbnailImage]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseThumbnailImageMutableBuilder[Self <: TopicalExploreFeedResponseThumbnailImage] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseThumbnailImage](x: Self) {
     
-    @scala.inline
-    def setImage_versions2(value: TopicalExploreFeedResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
+    inline def setImage_versions2(value: TopicalExploreFeedResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
   }
 }

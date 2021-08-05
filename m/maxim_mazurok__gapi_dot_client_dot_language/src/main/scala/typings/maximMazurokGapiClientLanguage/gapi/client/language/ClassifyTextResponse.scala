@@ -11,22 +11,17 @@ trait ClassifyTextResponse extends StObject {
 }
 object ClassifyTextResponse {
   
-  @scala.inline
-  def apply(): ClassifyTextResponse = {
+  inline def apply(): ClassifyTextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassifyTextResponse]
   }
   
-  @scala.inline
-  implicit class ClassifyTextResponseMutableBuilder[Self <: ClassifyTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifyTextResponse](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[ClassificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[ClassificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: ClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: ClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
   }
 }

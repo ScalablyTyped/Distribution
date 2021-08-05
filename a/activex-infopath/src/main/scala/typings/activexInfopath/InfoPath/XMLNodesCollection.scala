@@ -9,15 +9,14 @@ trait XMLNodesCollection extends StObject {
   
   val Count: Double
   
-  @JSName("InfoPath.XMLNodesCollection_typekey")
+  /* private */ @JSName("InfoPath.XMLNodesCollection_typekey")
   var InfoPathDotXMLNodesCollection_typekey: XMLNodesCollection
   
   def Item(varIndex: js.Any): IXMLDOMNode
 }
 object XMLNodesCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     InfoPathDotXMLNodesCollection_typekey: XMLNodesCollection,
     Item: js.Any => IXMLDOMNode
@@ -27,16 +26,12 @@ object XMLNodesCollection {
     __obj.asInstanceOf[XMLNodesCollection]
   }
   
-  @scala.inline
-  implicit class XMLNodesCollectionMutableBuilder[Self <: XMLNodesCollection] (val x: Self) extends AnyVal {
+  extension [Self <: XMLNodesCollection](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotXMLNodesCollection_typekey(value: XMLNodesCollection): Self = StObject.set(x, "InfoPath.XMLNodesCollection_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotXMLNodesCollection_typekey(value: XMLNodesCollection): Self = StObject.set(x, "InfoPath.XMLNodesCollection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => IXMLDOMNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => IXMLDOMNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

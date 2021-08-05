@@ -18,37 +18,27 @@ trait DefaultRef extends StObject {
 }
 object DefaultRef {
   
-  @scala.inline
-  def apply(): DefaultRef = {
+  inline def apply(): DefaultRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultRef]
   }
   
-  @scala.inline
-  implicit class DefaultRefMutableBuilder[Self <: DefaultRef] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultRef](x: Self) {
     
-    @scala.inline
-    def setDefaultRef(value: VgValueRef): Self = StObject.set(x, "defaultRef", value.asInstanceOf[js.Any])
+    inline def setDefaultRef(value: VgValueRef): Self = StObject.set(x, "defaultRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRefUndefined: Self = StObject.set(x, "defaultRef", js.undefined)
+    inline def setDefaultRefUndefined: Self = StObject.set(x, "defaultRef", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: (typings.vegaLite.channeldefMod.Value[ExprRef | SignalRef]) | SignalRef): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: (typings.vegaLite.channeldefMod.Value[ExprRef | SignalRef]) | SignalRef): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+    inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDefaultValueVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+    inline def setDefaultValueVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
     
-    @scala.inline
-    def setVgChannel(value: VgEncodeChannel): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
+    inline def setVgChannel(value: VgEncodeChannel): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVgChannelUndefined: Self = StObject.set(x, "vgChannel", js.undefined)
+    inline def setVgChannelUndefined: Self = StObject.set(x, "vgChannel", js.undefined)
   }
 }

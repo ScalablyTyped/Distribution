@@ -15,6 +15,5 @@ object contentScripts {
   
   /* contentScripts functions */
   /** Register a content script programmatically */
-  @scala.inline
-  def register(contentScriptOptions: RegisteredContentScriptOptions): js.Promise[RegisteredContentScript] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(contentScriptOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RegisteredContentScript]]
+  inline def register(contentScriptOptions: RegisteredContentScriptOptions): js.Promise[RegisteredContentScript] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(contentScriptOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RegisteredContentScript]]
 }

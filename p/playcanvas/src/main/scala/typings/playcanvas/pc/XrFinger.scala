@@ -37,31 +37,23 @@ trait XrFinger extends StObject {
 }
 object XrFinger {
   
-  @scala.inline
-  def apply(hand: XrHand, index: Double, joints: js.Array[XrJoint]): XrFinger = {
+  inline def apply(hand: XrHand, index: Double, joints: js.Array[XrJoint]): XrFinger = {
     val __obj = js.Dynamic.literal(hand = hand.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], joints = joints.asInstanceOf[js.Any], tip = null)
     __obj.asInstanceOf[XrFinger]
   }
   
-  @scala.inline
-  implicit class XrFingerMutableBuilder[Self <: XrFinger] (val x: Self) extends AnyVal {
+  extension [Self <: XrFinger](x: Self) {
     
-    @scala.inline
-    def setHand(value: XrHand): Self = StObject.set(x, "hand", value.asInstanceOf[js.Any])
+    inline def setHand(value: XrHand): Self = StObject.set(x, "hand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoints(value: js.Array[XrJoint]): Self = StObject.set(x, "joints", value.asInstanceOf[js.Any])
+    inline def setJoints(value: js.Array[XrJoint]): Self = StObject.set(x, "joints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJointsVarargs(value: XrJoint*): Self = StObject.set(x, "joints", js.Array(value :_*))
+    inline def setJointsVarargs(value: XrJoint*): Self = StObject.set(x, "joints", js.Array(value :_*))
     
-    @scala.inline
-    def setTip(value: XrJoint): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
+    inline def setTip(value: XrJoint): Self = StObject.set(x, "tip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTipNull: Self = StObject.set(x, "tip", null)
+    inline def setTipNull: Self = StObject.set(x, "tip", null)
   }
 }

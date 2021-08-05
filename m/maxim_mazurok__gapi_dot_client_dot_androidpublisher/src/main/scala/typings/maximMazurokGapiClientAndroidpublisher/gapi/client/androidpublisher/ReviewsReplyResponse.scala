@@ -11,19 +11,15 @@ trait ReviewsReplyResponse extends StObject {
 }
 object ReviewsReplyResponse {
   
-  @scala.inline
-  def apply(): ReviewsReplyResponse = {
+  inline def apply(): ReviewsReplyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReviewsReplyResponse]
   }
   
-  @scala.inline
-  implicit class ReviewsReplyResponseMutableBuilder[Self <: ReviewsReplyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewsReplyResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: ReviewReplyResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: ReviewReplyResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

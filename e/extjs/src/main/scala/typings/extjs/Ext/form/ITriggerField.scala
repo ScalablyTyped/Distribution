@@ -64,97 +64,67 @@ trait ITriggerField
 }
 object ITriggerField {
   
-  @scala.inline
-  def apply(): ITriggerField = {
+  inline def apply(): ITriggerField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITriggerField]
   }
   
-  @scala.inline
-  implicit class ITriggerFieldMutableBuilder[Self <: ITriggerField] (val x: Self) extends AnyVal {
+  extension [Self <: ITriggerField](x: Self) {
     
-    @scala.inline
-    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    @scala.inline
-    def setGetLabelableRenderData(value: () => js.Any): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
+    inline def setGetLabelableRenderData(value: () => js.Any): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelableRenderDataUndefined: Self = StObject.set(x, "getLabelableRenderData", js.undefined)
+    inline def setGetLabelableRenderDataUndefined: Self = StObject.set(x, "getLabelableRenderData", js.undefined)
     
-    @scala.inline
-    def setGetTriggerWidth(value: () => Double): Self = StObject.set(x, "getTriggerWidth", js.Any.fromFunction0(value))
+    inline def setGetTriggerWidth(value: () => Double): Self = StObject.set(x, "getTriggerWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTriggerWidthUndefined: Self = StObject.set(x, "getTriggerWidth", js.undefined)
+    inline def setGetTriggerWidthUndefined: Self = StObject.set(x, "getTriggerWidth", js.undefined)
     
-    @scala.inline
-    def setHideTrigger(value: Boolean): Self = StObject.set(x, "hideTrigger", value.asInstanceOf[js.Any])
+    inline def setHideTrigger(value: Boolean): Self = StObject.set(x, "hideTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideTriggerUndefined: Self = StObject.set(x, "hideTrigger", js.undefined)
+    inline def setHideTriggerUndefined: Self = StObject.set(x, "hideTrigger", js.undefined)
     
-    @scala.inline
-    def setInputCell(value: IElement): Self = StObject.set(x, "inputCell", value.asInstanceOf[js.Any])
+    inline def setInputCell(value: IElement): Self = StObject.set(x, "inputCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputCellUndefined: Self = StObject.set(x, "inputCell", js.undefined)
+    inline def setInputCellUndefined: Self = StObject.set(x, "inputCell", js.undefined)
     
-    @scala.inline
-    def setOnTriggerClick(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onTriggerClick", js.Any.fromFunction1(value))
+    inline def setOnTriggerClick(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onTriggerClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTriggerClickUndefined: Self = StObject.set(x, "onTriggerClick", js.undefined)
+    inline def setOnTriggerClickUndefined: Self = StObject.set(x, "onTriggerClick", js.undefined)
     
-    @scala.inline
-    def setRepeatTriggerClick(value: Boolean): Self = StObject.set(x, "repeatTriggerClick", value.asInstanceOf[js.Any])
+    inline def setRepeatTriggerClick(value: Boolean): Self = StObject.set(x, "repeatTriggerClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatTriggerClickUndefined: Self = StObject.set(x, "repeatTriggerClick", js.undefined)
+    inline def setRepeatTriggerClickUndefined: Self = StObject.set(x, "repeatTriggerClick", js.undefined)
     
-    @scala.inline
-    def setSetEditable(value: /* editable */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEditable", js.Any.fromFunction1(value))
+    inline def setSetEditable(value: /* editable */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setEditable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEditableUndefined: Self = StObject.set(x, "setEditable", js.undefined)
+    inline def setSetEditableUndefined: Self = StObject.set(x, "setEditable", js.undefined)
     
-    @scala.inline
-    def setTriggerBaseCls(value: String): Self = StObject.set(x, "triggerBaseCls", value.asInstanceOf[js.Any])
+    inline def setTriggerBaseCls(value: String): Self = StObject.set(x, "triggerBaseCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerBaseClsUndefined: Self = StObject.set(x, "triggerBaseCls", js.undefined)
+    inline def setTriggerBaseClsUndefined: Self = StObject.set(x, "triggerBaseCls", js.undefined)
     
-    @scala.inline
-    def setTriggerCls(value: String): Self = StObject.set(x, "triggerCls", value.asInstanceOf[js.Any])
+    inline def setTriggerCls(value: String): Self = StObject.set(x, "triggerCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerClsUndefined: Self = StObject.set(x, "triggerCls", js.undefined)
+    inline def setTriggerClsUndefined: Self = StObject.set(x, "triggerCls", js.undefined)
     
-    @scala.inline
-    def setTriggerEl(value: ICompositeElement): Self = StObject.set(x, "triggerEl", value.asInstanceOf[js.Any])
+    inline def setTriggerEl(value: ICompositeElement): Self = StObject.set(x, "triggerEl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerElUndefined: Self = StObject.set(x, "triggerEl", js.undefined)
+    inline def setTriggerElUndefined: Self = StObject.set(x, "triggerEl", js.undefined)
     
-    @scala.inline
-    def setTriggerNoEditCls(value: String): Self = StObject.set(x, "triggerNoEditCls", value.asInstanceOf[js.Any])
+    inline def setTriggerNoEditCls(value: String): Self = StObject.set(x, "triggerNoEditCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerNoEditClsUndefined: Self = StObject.set(x, "triggerNoEditCls", js.undefined)
+    inline def setTriggerNoEditClsUndefined: Self = StObject.set(x, "triggerNoEditCls", js.undefined)
     
-    @scala.inline
-    def setTriggerWrap(value: IElement): Self = StObject.set(x, "triggerWrap", value.asInstanceOf[js.Any])
+    inline def setTriggerWrap(value: IElement): Self = StObject.set(x, "triggerWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerWrapCls(value: String): Self = StObject.set(x, "triggerWrapCls", value.asInstanceOf[js.Any])
+    inline def setTriggerWrapCls(value: String): Self = StObject.set(x, "triggerWrapCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerWrapClsUndefined: Self = StObject.set(x, "triggerWrapCls", js.undefined)
+    inline def setTriggerWrapClsUndefined: Self = StObject.set(x, "triggerWrapCls", js.undefined)
     
-    @scala.inline
-    def setTriggerWrapUndefined: Self = StObject.set(x, "triggerWrap", js.undefined)
+    inline def setTriggerWrapUndefined: Self = StObject.set(x, "triggerWrap", js.undefined)
   }
 }

@@ -65,8 +65,7 @@ object imageMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromURL(url: js.Any, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fromURL(url: js.Any, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   trait ImageConfig
@@ -79,26 +78,20 @@ object imageMod {
   }
   object ImageConfig {
     
-    @scala.inline
-    def apply(): ImageConfig = {
+    inline def apply(): ImageConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageConfig]
     }
     
-    @scala.inline
-    implicit class ImageConfigMutableBuilder[Self <: ImageConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ImageConfig](x: Self) {
       
-      @scala.inline
-      def setCrop(value: IRect): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: IRect): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
       
-      @scala.inline
-      def setImage(value: CanvasImageSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: CanvasImageSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     }
   }
 }

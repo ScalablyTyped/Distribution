@@ -8,6 +8,5 @@ object fluentReactNumbers {
   
   @js.native
   sealed trait `3` extends StObject
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
 }

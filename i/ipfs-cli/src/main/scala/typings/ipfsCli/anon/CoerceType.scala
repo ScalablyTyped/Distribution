@@ -16,20 +16,16 @@ trait CoerceType extends StObject {
 }
 object CoerceType {
   
-  @scala.inline
-  def apply(coerce: FnCall, `type`: String): CoerceType = {
+  inline def apply(coerce: FnCall, `type`: String): CoerceType = {
     val __obj = js.Dynamic.literal(coerce = coerce.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoerceType]
   }
   
-  @scala.inline
-  implicit class CoerceTypeMutableBuilder[Self <: CoerceType] (val x: Self) extends AnyVal {
+  extension [Self <: CoerceType](x: Self) {
     
-    @scala.inline
-    def setCoerce(value: FnCall): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+    inline def setCoerce(value: FnCall): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

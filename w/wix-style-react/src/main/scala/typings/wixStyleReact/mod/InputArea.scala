@@ -19,6 +19,5 @@ object InputArea {
   @JSImport("wix-style-react", "InputArea.MIN_ROWS")
   @js.native
   def MIN_ROWS: `2` = js.native
-  @scala.inline
-  def MIN_ROWS_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_ROWS")(x.asInstanceOf[js.Any])
+  inline def MIN_ROWS_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_ROWS")(x.asInstanceOf[js.Any])
 }

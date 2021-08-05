@@ -15,19 +15,15 @@ trait CrosshairLineCfg extends StObject {
 }
 object CrosshairLineCfg {
   
-  @scala.inline
-  def apply(): CrosshairLineCfg = {
+  inline def apply(): CrosshairLineCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrosshairLineCfg]
   }
   
-  @scala.inline
-  implicit class CrosshairLineCfgMutableBuilder[Self <: CrosshairLineCfg] (val x: Self) extends AnyVal {
+  extension [Self <: CrosshairLineCfg](x: Self) {
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

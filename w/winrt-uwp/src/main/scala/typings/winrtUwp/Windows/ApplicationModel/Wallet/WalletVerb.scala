@@ -12,16 +12,13 @@ trait WalletVerb extends StObject {
 }
 object WalletVerb {
   
-  @scala.inline
-  def apply(name: String): WalletVerb = {
+  inline def apply(name: String): WalletVerb = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalletVerb]
   }
   
-  @scala.inline
-  implicit class WalletVerbMutableBuilder[Self <: WalletVerb] (val x: Self) extends AnyVal {
+  extension [Self <: WalletVerb](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

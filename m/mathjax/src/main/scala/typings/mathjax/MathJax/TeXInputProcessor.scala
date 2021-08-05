@@ -51,64 +51,45 @@ trait TeXInputProcessor extends StObject {
 }
 object TeXInputProcessor {
   
-  @scala.inline
-  def apply(): TeXInputProcessor = {
+  inline def apply(): TeXInputProcessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeXInputProcessor]
   }
   
-  @scala.inline
-  implicit class TeXInputProcessorMutableBuilder[Self <: TeXInputProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: TeXInputProcessor](x: Self) {
     
-    @scala.inline
-    def setEquationNumbers(value: EquationNumbers): Self = StObject.set(x, "equationNumbers", value.asInstanceOf[js.Any])
+    inline def setEquationNumbers(value: EquationNumbers): Self = StObject.set(x, "equationNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquationNumbersUndefined: Self = StObject.set(x, "equationNumbers", js.undefined)
+    inline def setEquationNumbersUndefined: Self = StObject.set(x, "equationNumbers", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMAXBUFFER(value: Double): Self = StObject.set(x, "MAXBUFFER", value.asInstanceOf[js.Any])
+    inline def setMAXBUFFER(value: Double): Self = StObject.set(x, "MAXBUFFER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAXBUFFERUndefined: Self = StObject.set(x, "MAXBUFFER", js.undefined)
+    inline def setMAXBUFFERUndefined: Self = StObject.set(x, "MAXBUFFER", js.undefined)
     
-    @scala.inline
-    def setMAXMACROS(value: Double): Self = StObject.set(x, "MAXMACROS", value.asInstanceOf[js.Any])
+    inline def setMAXMACROS(value: Double): Self = StObject.set(x, "MAXMACROS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAXMACROSUndefined: Self = StObject.set(x, "MAXMACROS", js.undefined)
+    inline def setMAXMACROSUndefined: Self = StObject.set(x, "MAXMACROS", js.undefined)
     
-    @scala.inline
-    def setMacros(value: js.Any): Self = StObject.set(x, "Macros", value.asInstanceOf[js.Any])
+    inline def setMacros(value: js.Any): Self = StObject.set(x, "Macros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacrosUndefined: Self = StObject.set(x, "Macros", js.undefined)
+    inline def setMacrosUndefined: Self = StObject.set(x, "Macros", js.undefined)
     
-    @scala.inline
-    def setMultLineWidth(value: String): Self = StObject.set(x, "MultLineWidth", value.asInstanceOf[js.Any])
+    inline def setMultLineWidth(value: String): Self = StObject.set(x, "MultLineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultLineWidthUndefined: Self = StObject.set(x, "MultLineWidth", js.undefined)
+    inline def setMultLineWidthUndefined: Self = StObject.set(x, "MultLineWidth", js.undefined)
     
-    @scala.inline
-    def setTagIndent(value: String): Self = StObject.set(x, "TagIndent", value.asInstanceOf[js.Any])
+    inline def setTagIndent(value: String): Self = StObject.set(x, "TagIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagIndentUndefined: Self = StObject.set(x, "TagIndent", js.undefined)
+    inline def setTagIndentUndefined: Self = StObject.set(x, "TagIndent", js.undefined)
     
-    @scala.inline
-    def setTagSide(value: String): Self = StObject.set(x, "TagSide", value.asInstanceOf[js.Any])
+    inline def setTagSide(value: String): Self = StObject.set(x, "TagSide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSideUndefined: Self = StObject.set(x, "TagSide", js.undefined)
+    inline def setTagSideUndefined: Self = StObject.set(x, "TagSide", js.undefined)
   }
 }

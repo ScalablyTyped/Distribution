@@ -23,49 +23,35 @@ trait TreeViewDragEvent
 }
 object TreeViewDragEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeView): TreeViewDragEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeView): TreeViewDragEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewDragEvent]
   }
   
-  @scala.inline
-  implicit class TreeViewDragEventMutableBuilder[Self <: TreeViewDragEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TreeViewDragEvent](x: Self) {
     
-    @scala.inline
-    def setDropTarget(value: Element): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+    inline def setDropTarget(value: Element): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+    inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
     
-    @scala.inline
-    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+    inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
+    inline def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
     
-    @scala.inline
-    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+    inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
+    inline def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
     
-    @scala.inline
-    def setSetStatusClass(value: js.Function): Self = StObject.set(x, "setStatusClass", value.asInstanceOf[js.Any])
+    inline def setSetStatusClass(value: js.Function): Self = StObject.set(x, "setStatusClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetStatusClassUndefined: Self = StObject.set(x, "setStatusClass", js.undefined)
+    inline def setSetStatusClassUndefined: Self = StObject.set(x, "setStatusClass", js.undefined)
     
-    @scala.inline
-    def setSourceNode(value: Element): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
+    inline def setSourceNode(value: Element): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNodeUndefined: Self = StObject.set(x, "sourceNode", js.undefined)
+    inline def setSourceNodeUndefined: Self = StObject.set(x, "sourceNode", js.undefined)
     
-    @scala.inline
-    def setStatusClass(value: String): Self = StObject.set(x, "statusClass", value.asInstanceOf[js.Any])
+    inline def setStatusClass(value: String): Self = StObject.set(x, "statusClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusClassUndefined: Self = StObject.set(x, "statusClass", js.undefined)
+    inline def setStatusClassUndefined: Self = StObject.set(x, "statusClass", js.undefined)
   }
 }

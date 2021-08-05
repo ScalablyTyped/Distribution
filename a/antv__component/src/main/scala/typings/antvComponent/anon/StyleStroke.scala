@@ -10,16 +10,13 @@ trait StyleStroke extends StObject {
 }
 object StyleStroke {
   
-  @scala.inline
-  def apply(style: Stroke): StyleStroke = {
+  inline def apply(style: Stroke): StyleStroke = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleStroke]
   }
   
-  @scala.inline
-  implicit class StyleStrokeMutableBuilder[Self <: StyleStroke] (val x: Self) extends AnyVal {
+  extension [Self <: StyleStroke](x: Self) {
     
-    @scala.inline
-    def setStyle(value: Stroke): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Stroke): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

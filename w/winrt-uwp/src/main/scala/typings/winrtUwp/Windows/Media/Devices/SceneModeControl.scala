@@ -24,8 +24,7 @@ trait SceneModeControl extends StObject {
 }
 object SceneModeControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setValueAsync: CaptureSceneMode => IPromiseWithIAsyncAction,
     supportedModes: IVectorView[CaptureSceneMode],
     value: CaptureSceneMode
@@ -34,16 +33,12 @@ object SceneModeControl {
     __obj.asInstanceOf[SceneModeControl]
   }
   
-  @scala.inline
-  implicit class SceneModeControlMutableBuilder[Self <: SceneModeControl] (val x: Self) extends AnyVal {
+  extension [Self <: SceneModeControl](x: Self) {
     
-    @scala.inline
-    def setSetValueAsync(value: CaptureSceneMode => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
+    inline def setSetValueAsync(value: CaptureSceneMode => IPromiseWithIAsyncAction): Self = StObject.set(x, "setValueAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportedModes(value: IVectorView[CaptureSceneMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
+    inline def setSupportedModes(value: IVectorView[CaptureSceneMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: CaptureSceneMode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: CaptureSceneMode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

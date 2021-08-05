@@ -18,26 +18,20 @@ trait DSNodeType
 }
 object DSNodeType {
   
-  @scala.inline
-  def apply(name: String): DSNodeType = {
+  inline def apply(name: String): DSNodeType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], opts = null)
     __obj.updateDynamic("type")("Type")
     __obj.asInstanceOf[DSNodeType]
   }
   
-  @scala.inline
-  implicit class DSNodeTypeMutableBuilder[Self <: DSNodeType] (val x: Self) extends AnyVal {
+  extension [Self <: DSNodeType](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpts(value: DSNodeTypeOpts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: DSNodeTypeOpts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptsNull: Self = StObject.set(x, "opts", null)
+    inline def setOptsNull: Self = StObject.set(x, "opts", null)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

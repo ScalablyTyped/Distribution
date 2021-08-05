@@ -13,22 +13,17 @@ trait ItemAttachment
 }
 object ItemAttachment {
   
-  @scala.inline
-  def apply(): ItemAttachment = {
+  inline def apply(): ItemAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemAttachment]
   }
   
-  @scala.inline
-  implicit class ItemAttachmentMutableBuilder[Self <: ItemAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: ItemAttachment](x: Self) {
     
-    @scala.inline
-    def setItem(value: NullableOption[OutlookItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: NullableOption[OutlookItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemNull: Self = StObject.set(x, "item", null)
+    inline def setItemNull: Self = StObject.set(x, "item", null)
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

@@ -25,38 +25,28 @@ object endorseContentLayoutMod extends Shortcut {
   }
   object EndorseContentLayoutProps {
     
-    @scala.inline
-    def apply(): EndorseContentLayoutProps = {
+    inline def apply(): EndorseContentLayoutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndorseContentLayoutProps]
     }
     
-    @scala.inline
-    implicit class EndorseContentLayoutPropsMutableBuilder[Self <: EndorseContentLayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: EndorseContentLayoutProps](x: Self) {
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setHead(value: ReactNode): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: ReactNode): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setPrimaryCta(value: ReactNode): Self = StObject.set(x, "primaryCta", value.asInstanceOf[js.Any])
+      inline def setPrimaryCta(value: ReactNode): Self = StObject.set(x, "primaryCta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryCtaUndefined: Self = StObject.set(x, "primaryCta", js.undefined)
+      inline def setPrimaryCtaUndefined: Self = StObject.set(x, "primaryCta", js.undefined)
       
-      @scala.inline
-      def setSecondaryCta(value: ReactNode): Self = StObject.set(x, "secondaryCta", value.asInstanceOf[js.Any])
+      inline def setSecondaryCta(value: ReactNode): Self = StObject.set(x, "secondaryCta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryCtaUndefined: Self = StObject.set(x, "secondaryCta", js.undefined)
+      inline def setSecondaryCtaUndefined: Self = StObject.set(x, "secondaryCta", js.undefined)
     }
   }
   

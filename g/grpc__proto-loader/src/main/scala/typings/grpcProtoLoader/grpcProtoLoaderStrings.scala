@@ -8,11 +8,9 @@ object grpcProtoLoaderStrings {
   
   @js.native
   sealed trait `Protocol Buffer 3 DescriptorProto` extends StObject
-  @scala.inline
-  def `Protocol Buffer 3 DescriptorProto`: `Protocol Buffer 3 DescriptorProto` = ("Protocol Buffer 3 DescriptorProto").asInstanceOf[`Protocol Buffer 3 DescriptorProto`]
+  inline def `Protocol Buffer 3 DescriptorProto`: `Protocol Buffer 3 DescriptorProto` = ("Protocol Buffer 3 DescriptorProto").asInstanceOf[`Protocol Buffer 3 DescriptorProto`]
   
   @js.native
   sealed trait `Protocol Buffer 3 EnumDescriptorProto` extends StObject
-  @scala.inline
-  def `Protocol Buffer 3 EnumDescriptorProto`: `Protocol Buffer 3 EnumDescriptorProto` = ("Protocol Buffer 3 EnumDescriptorProto").asInstanceOf[`Protocol Buffer 3 EnumDescriptorProto`]
+  inline def `Protocol Buffer 3 EnumDescriptorProto`: `Protocol Buffer 3 EnumDescriptorProto` = ("Protocol Buffer 3 EnumDescriptorProto").asInstanceOf[`Protocol Buffer 3 EnumDescriptorProto`]
 }

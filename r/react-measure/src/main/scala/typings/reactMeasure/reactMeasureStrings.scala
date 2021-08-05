@@ -11,34 +11,29 @@ object reactMeasureStrings {
   sealed trait bounds
     extends StObject
        with MeasurementType
-  @scala.inline
-  def bounds: bounds = "bounds".asInstanceOf[bounds]
+  inline def bounds: bounds = "bounds".asInstanceOf[bounds]
   
   @js.native
   sealed trait client
     extends StObject
        with MeasurementType
-  @scala.inline
-  def client: client = "client".asInstanceOf[client]
+  inline def client: client = "client".asInstanceOf[client]
   
   @js.native
   sealed trait margin
     extends StObject
        with MeasurementType
-  @scala.inline
-  def margin: margin = "margin".asInstanceOf[margin]
+  inline def margin: margin = "margin".asInstanceOf[margin]
   
   @js.native
   sealed trait offset
     extends StObject
        with MeasurementType
-  @scala.inline
-  def offset: offset = "offset".asInstanceOf[offset]
+  inline def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
   sealed trait scroll
     extends StObject
        with MeasurementType
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
 }

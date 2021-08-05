@@ -25,8 +25,7 @@ trait IELangSearchDefaults
 }
 object IELangSearchDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentCSS: String,
     contentInnerCSS: String,
     contentInnerHtml: String,
@@ -53,28 +52,20 @@ object IELangSearchDefaults {
     __obj.asInstanceOf[IELangSearchDefaults]
   }
   
-  @scala.inline
-  implicit class IELangSearchDefaultsMutableBuilder[Self <: IELangSearchDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: IELangSearchDefaults](x: Self) {
     
-    @scala.inline
-    def setExpressionsLabel(value: String): Self = StObject.set(x, "expressionsLabel", value.asInstanceOf[js.Any])
+    inline def setExpressionsLabel(value: String): Self = StObject.set(x, "expressionsLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsTooltip(value: String): Self = StObject.set(x, "expressionsTooltip", value.asInstanceOf[js.Any])
+    inline def setExpressionsTooltip(value: String): Self = StObject.set(x, "expressionsTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeaningsLabel(value: String): Self = StObject.set(x, "meaningsLabel", value.asInstanceOf[js.Any])
+    inline def setMeaningsLabel(value: String): Self = StObject.set(x, "meaningsLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeaningsTooltip(value: String): Self = StObject.set(x, "meaningsTooltip", value.asInstanceOf[js.Any])
+    inline def setMeaningsTooltip(value: String): Self = StObject.set(x, "meaningsTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchButtonLabel(value: String): Self = StObject.set(x, "searchButtonLabel", value.asInstanceOf[js.Any])
+    inline def setSearchButtonLabel(value: String): Self = StObject.set(x, "searchButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFieldHtml(value: String): Self = StObject.set(x, "searchFieldHtml", value.asInstanceOf[js.Any])
+    inline def setSearchFieldHtml(value: String): Self = StObject.set(x, "searchFieldHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFormHtml(value: String): Self = StObject.set(x, "searchFormHtml", value.asInstanceOf[js.Any])
+    inline def setSearchFormHtml(value: String): Self = StObject.set(x, "searchFormHtml", value.asInstanceOf[js.Any])
   }
 }

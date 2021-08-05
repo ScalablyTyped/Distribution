@@ -53,8 +53,7 @@ trait ModeBarButton extends StObject {
 }
 object ModeBarButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: (/* gd */ PlotlyHTMLElement, /* ev */ MouseEvent) => Unit,
     icon: String | Icon,
     name: String,
@@ -64,43 +63,30 @@ object ModeBarButton {
     __obj.asInstanceOf[ModeBarButton]
   }
   
-  @scala.inline
-  implicit class ModeBarButtonMutableBuilder[Self <: ModeBarButton] (val x: Self) extends AnyVal {
+  extension [Self <: ModeBarButton](x: Self) {
     
-    @scala.inline
-    def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+    inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
-    @scala.inline
-    def setClick(value: (/* gd */ PlotlyHTMLElement, /* ev */ MouseEvent) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
+    inline def setClick(value: (/* gd */ PlotlyHTMLElement, /* ev */ MouseEvent) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: String): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String | Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String | Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    inline def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
-    @scala.inline
-    def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValUndefined: Self = StObject.set(x, "val", js.undefined)
+    inline def setValUndefined: Self = StObject.set(x, "val", js.undefined)
   }
 }

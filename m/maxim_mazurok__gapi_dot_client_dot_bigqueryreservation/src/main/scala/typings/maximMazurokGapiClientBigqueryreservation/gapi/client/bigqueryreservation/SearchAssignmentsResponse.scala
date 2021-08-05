@@ -14,28 +14,21 @@ trait SearchAssignmentsResponse extends StObject {
 }
 object SearchAssignmentsResponse {
   
-  @scala.inline
-  def apply(): SearchAssignmentsResponse = {
+  inline def apply(): SearchAssignmentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchAssignmentsResponse]
   }
   
-  @scala.inline
-  implicit class SearchAssignmentsResponseMutableBuilder[Self <: SearchAssignmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchAssignmentsResponse](x: Self) {
     
-    @scala.inline
-    def setAssignments(value: js.Array[Assignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    inline def setAssignments(value: js.Array[Assignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    @scala.inline
-    def setAssignmentsVarargs(value: Assignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: Assignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

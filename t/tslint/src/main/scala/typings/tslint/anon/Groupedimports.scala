@@ -16,8 +16,7 @@ trait Groupedimports extends StObject {
 }
 object Groupedimports {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `grouped-imports`: Boolean,
     `import-sources-order`: String,
     `module-source-path`: String,
@@ -31,19 +30,14 @@ object Groupedimports {
     __obj.asInstanceOf[Groupedimports]
   }
   
-  @scala.inline
-  implicit class GroupedimportsMutableBuilder[Self <: Groupedimports] (val x: Self) extends AnyVal {
+  extension [Self <: Groupedimports](x: Self) {
     
-    @scala.inline
-    def `setGrouped-imports`(value: Boolean): Self = StObject.set(x, "grouped-imports", value.asInstanceOf[js.Any])
+    inline def `setGrouped-imports`(value: Boolean): Self = StObject.set(x, "grouped-imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setImport-sources-order`(value: String): Self = StObject.set(x, "import-sources-order", value.asInstanceOf[js.Any])
+    inline def `setImport-sources-order`(value: String): Self = StObject.set(x, "import-sources-order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setModule-source-path`(value: String): Self = StObject.set(x, "module-source-path", value.asInstanceOf[js.Any])
+    inline def `setModule-source-path`(value: String): Self = StObject.set(x, "module-source-path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setNamed-imports-order`(value: String): Self = StObject.set(x, "named-imports-order", value.asInstanceOf[js.Any])
+    inline def `setNamed-imports-order`(value: String): Self = StObject.set(x, "named-imports-order", value.asInstanceOf[js.Any])
   }
 }

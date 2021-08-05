@@ -18,34 +18,25 @@ trait RTCPeerConnectionIceErrorEventInit
 }
 object RTCPeerConnectionIceErrorEventInit {
   
-  @scala.inline
-  def apply(errorCode: Double): RTCPeerConnectionIceErrorEventInit = {
+  inline def apply(errorCode: Double): RTCPeerConnectionIceErrorEventInit = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCPeerConnectionIceErrorEventInit]
   }
   
-  @scala.inline
-  implicit class RTCPeerConnectionIceErrorEventInitMutableBuilder[Self <: RTCPeerConnectionIceErrorEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: RTCPeerConnectionIceErrorEventInit](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostCandidate(value: java.lang.String): Self = StObject.set(x, "hostCandidate", value.asInstanceOf[js.Any])
+    inline def setHostCandidate(value: java.lang.String): Self = StObject.set(x, "hostCandidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostCandidateUndefined: Self = StObject.set(x, "hostCandidate", js.undefined)
+    inline def setHostCandidateUndefined: Self = StObject.set(x, "hostCandidate", js.undefined)
     
-    @scala.inline
-    def setStatusText(value: java.lang.String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: java.lang.String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+    inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
     
-    @scala.inline
-    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

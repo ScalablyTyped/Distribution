@@ -21,20 +21,16 @@ object adapterMod {
     }
     object Window {
       
-      @scala.inline
-      def apply(__viewport__ : ViewportConfiguration, viewport: Viewport): Window = {
+      inline def apply(__viewport__ : ViewportConfiguration, viewport: Viewport): Window = {
         val __obj = js.Dynamic.literal(__viewport__ = __viewport__.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+        inline def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set__viewport__(value: ViewportConfiguration): Self = StObject.set(x, "__viewport__", value.asInstanceOf[js.Any])
+        inline def set__viewport__(value: ViewportConfiguration): Self = StObject.set(x, "__viewport__", value.asInstanceOf[js.Any])
       }
     }
   }

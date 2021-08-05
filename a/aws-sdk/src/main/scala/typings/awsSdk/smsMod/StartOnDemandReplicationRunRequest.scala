@@ -18,22 +18,17 @@ trait StartOnDemandReplicationRunRequest extends StObject {
 }
 object StartOnDemandReplicationRunRequest {
   
-  @scala.inline
-  def apply(replicationJobId: ReplicationJobId): StartOnDemandReplicationRunRequest = {
+  inline def apply(replicationJobId: ReplicationJobId): StartOnDemandReplicationRunRequest = {
     val __obj = js.Dynamic.literal(replicationJobId = replicationJobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOnDemandReplicationRunRequest]
   }
   
-  @scala.inline
-  implicit class StartOnDemandReplicationRunRequestMutableBuilder[Self <: StartOnDemandReplicationRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartOnDemandReplicationRunRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setReplicationJobId(value: ReplicationJobId): Self = StObject.set(x, "replicationJobId", value.asInstanceOf[js.Any])
+    inline def setReplicationJobId(value: ReplicationJobId): Self = StObject.set(x, "replicationJobId", value.asInstanceOf[js.Any])
   }
 }

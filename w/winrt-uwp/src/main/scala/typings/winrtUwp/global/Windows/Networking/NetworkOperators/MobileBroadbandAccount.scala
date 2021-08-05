@@ -51,8 +51,7 @@ object MobileBroadbandAccount {
   @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount.availableNetworkAccountIds")
   @js.native
   def availableNetworkAccountIds: IVectorView[String] = js.native
-  @scala.inline
-  def availableNetworkAccountIds_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableNetworkAccountIds")(x.asInstanceOf[js.Any])
+  inline def availableNetworkAccountIds_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableNetworkAccountIds")(x.asInstanceOf[js.Any])
   
   /**
     * Creates a mobile broadband account for the mobile device associated with the supplied network account ID.
@@ -60,6 +59,5 @@ object MobileBroadbandAccount {
     * @return A mobile broadband account for the mobile device associated with the supplied network account ID.
     */
   /* static member */
-  @scala.inline
-  def createFromNetworkAccountId(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandAccount = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromNetworkAccountId")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandAccount]
+  inline def createFromNetworkAccountId(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandAccount = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromNetworkAccountId")(networkAccountId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandAccount]
 }

@@ -18,16 +18,13 @@ trait MergeTableCellsCommand
 }
 object MergeTableCellsCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): MergeTableCellsCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): MergeTableCellsCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[MergeTableCellsCommand]
   }
   
-  @scala.inline
-  implicit class MergeTableCellsCommandMutableBuilder[Self <: MergeTableCellsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: MergeTableCellsCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

@@ -18,19 +18,15 @@ trait TaskExecution extends StObject {
 }
 object TaskExecution {
   
-  @scala.inline
-  def apply(task: Task, terminate: () => Unit): TaskExecution = {
+  inline def apply(task: Task, terminate: () => Unit): TaskExecution = {
     val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any], terminate = js.Any.fromFunction0(terminate))
     __obj.asInstanceOf[TaskExecution]
   }
   
-  @scala.inline
-  implicit class TaskExecutionMutableBuilder[Self <: TaskExecution] (val x: Self) extends AnyVal {
+  extension [Self <: TaskExecution](x: Self) {
     
-    @scala.inline
-    def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+    inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

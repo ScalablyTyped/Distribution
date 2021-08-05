@@ -25,8 +25,7 @@ trait MetaGetResponseData extends StObject {
 }
 object MetaGetResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: js.Array[String],
     git: js.Array[String],
     hooks: js.Array[String],
@@ -40,49 +39,34 @@ object MetaGetResponseData {
     __obj.asInstanceOf[MetaGetResponseData]
   }
   
-  @scala.inline
-  implicit class MetaGetResponseDataMutableBuilder[Self <: MetaGetResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: MetaGetResponseData](x: Self) {
     
-    @scala.inline
-    def setApi(value: js.Array[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: js.Array[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVarargs(value: String*): Self = StObject.set(x, "api", js.Array(value :_*))
+    inline def setApiVarargs(value: String*): Self = StObject.set(x, "api", js.Array(value :_*))
     
-    @scala.inline
-    def setGit(value: js.Array[String]): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+    inline def setGit(value: js.Array[String]): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitVarargs(value: String*): Self = StObject.set(x, "git", js.Array(value :_*))
+    inline def setGitVarargs(value: String*): Self = StObject.set(x, "git", js.Array(value :_*))
     
-    @scala.inline
-    def setHooks(value: js.Array[String]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: js.Array[String]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksVarargs(value: String*): Self = StObject.set(x, "hooks", js.Array(value :_*))
+    inline def setHooksVarargs(value: String*): Self = StObject.set(x, "hooks", js.Array(value :_*))
     
-    @scala.inline
-    def setImporter(value: js.Array[String]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
+    inline def setImporter(value: js.Array[String]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImporterVarargs(value: String*): Self = StObject.set(x, "importer", js.Array(value :_*))
+    inline def setImporterVarargs(value: String*): Self = StObject.set(x, "importer", js.Array(value :_*))
     
-    @scala.inline
-    def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setSsh_key_fingerprints(value: MD5DSA): Self = StObject.set(x, "ssh_key_fingerprints", value.asInstanceOf[js.Any])
+    inline def setSsh_key_fingerprints(value: MD5DSA): Self = StObject.set(x, "ssh_key_fingerprints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiable_password_authentication(value: Boolean): Self = StObject.set(x, "verifiable_password_authentication", value.asInstanceOf[js.Any])
+    inline def setVerifiable_password_authentication(value: Boolean): Self = StObject.set(x, "verifiable_password_authentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeb(value: js.Array[String]): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
+    inline def setWeb(value: js.Array[String]): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebVarargs(value: String*): Self = StObject.set(x, "web", js.Array(value :_*))
+    inline def setWebVarargs(value: String*): Self = StObject.set(x, "web", js.Array(value :_*))
   }
 }

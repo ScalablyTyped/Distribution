@@ -105,15 +105,13 @@ object headerMod {
     def formatType: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def formatType_=(
+    inline def formatType_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatType")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def format_=(
+    inline def format_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -124,8 +122,7 @@ object headerMod {
     def labelAlign: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelAlign_=(
+    inline def labelAlign_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -136,8 +133,7 @@ object headerMod {
     def labelAnchor: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelAnchor_=(
+    inline def labelAnchor_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -148,8 +144,7 @@ object headerMod {
     def labelAngle: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelAngle_=(
+    inline def labelAngle_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -160,8 +155,7 @@ object headerMod {
     def labelBaseline: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelBaseline_=(
+    inline def labelBaseline_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -172,8 +166,7 @@ object headerMod {
     def labelColor: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelColor_=(
+    inline def labelColor_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -184,8 +177,7 @@ object headerMod {
     def labelExpr: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelExpr_=(
+    inline def labelExpr_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -202,8 +194,7 @@ object headerMod {
     def labelFontSize: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelFontSize_=(
+    inline def labelFontSize_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -214,8 +205,7 @@ object headerMod {
     def labelFontStyle: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelFontStyle_=(
+    inline def labelFontStyle_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -226,15 +216,13 @@ object headerMod {
     def labelFontWeight: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelFontWeight_=(
+    inline def labelFontWeight_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelFontWeight")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def labelFont_=(
+    inline def labelFont_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -245,8 +233,7 @@ object headerMod {
     def labelLimit: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelLimit_=(
+    inline def labelLimit_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -257,8 +244,7 @@ object headerMod {
     def labelLineHeight: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelLineHeight_=(
+    inline def labelLineHeight_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -269,8 +255,7 @@ object headerMod {
     def labelOrient: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelOrient_=(
+    inline def labelOrient_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -281,8 +266,7 @@ object headerMod {
     def labelPadding: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelPadding_=(
+    inline def labelPadding_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -293,8 +277,7 @@ object headerMod {
     def labels: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labels_=(
+    inline def labels_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -305,8 +288,7 @@ object headerMod {
     def orient: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | typings.vegaLite.vegaLiteStrings.orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def orient_=(
+    inline def orient_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -317,8 +299,7 @@ object headerMod {
     def titleAlign: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleAlign_=(
+    inline def titleAlign_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -329,8 +310,7 @@ object headerMod {
     def titleAnchor: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleAnchor_=(
+    inline def titleAnchor_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -341,8 +321,7 @@ object headerMod {
     def titleAngle: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleAngle_=(
+    inline def titleAngle_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -353,8 +332,7 @@ object headerMod {
     def titleBaseline: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleBaseline_=(
+    inline def titleBaseline_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -365,8 +343,7 @@ object headerMod {
     def titleColor: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleColor_=(
+    inline def titleColor_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -383,8 +360,7 @@ object headerMod {
     def titleFontSize: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleFontSize_=(
+    inline def titleFontSize_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -395,8 +371,7 @@ object headerMod {
     def titleFontStyle: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleFontStyle_=(
+    inline def titleFontStyle_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -407,15 +382,13 @@ object headerMod {
     def titleFontWeight: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleFontWeight_=(
+    inline def titleFontWeight_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("titleFontWeight")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def titleFont_=(
+    inline def titleFont_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -426,8 +399,7 @@ object headerMod {
     def titleLimit: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleLimit_=(
+    inline def titleLimit_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -438,8 +410,7 @@ object headerMod {
     def titleLineHeight: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleLineHeight_=(
+    inline def titleLineHeight_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -450,8 +421,7 @@ object headerMod {
     def titleOrient: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleOrient_=(
+    inline def titleOrient_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -462,8 +432,7 @@ object headerMod {
     def titlePadding: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titlePadding_=(
+    inline def titlePadding_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -494,15 +463,13 @@ object headerMod {
     def formatType: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def formatType_=(
+    inline def formatType_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatType")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def format_=(
+    inline def format_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -513,8 +480,7 @@ object headerMod {
     def labelAlign: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelAlign_=(
+    inline def labelAlign_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -525,8 +491,7 @@ object headerMod {
     def labelAnchor: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelAnchor_=(
+    inline def labelAnchor_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -537,8 +502,7 @@ object headerMod {
     def labelAngle: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelAngle_=(
+    inline def labelAngle_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -549,8 +513,7 @@ object headerMod {
     def labelBaseline: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelBaseline_=(
+    inline def labelBaseline_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -561,8 +524,7 @@ object headerMod {
     def labelColor: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelColor_=(
+    inline def labelColor_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -573,8 +535,7 @@ object headerMod {
     def labelExpr: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelExpr_=(
+    inline def labelExpr_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -591,8 +552,7 @@ object headerMod {
     def labelFontSize: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelFontSize_=(
+    inline def labelFontSize_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -603,8 +563,7 @@ object headerMod {
     def labelFontStyle: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelFontStyle_=(
+    inline def labelFontStyle_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -615,15 +574,13 @@ object headerMod {
     def labelFontWeight: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelFontWeight_=(
+    inline def labelFontWeight_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labelFontWeight")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def labelFont_=(
+    inline def labelFont_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -634,8 +591,7 @@ object headerMod {
     def labelLimit: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelLimit_=(
+    inline def labelLimit_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -646,8 +602,7 @@ object headerMod {
     def labelLineHeight: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelLineHeight_=(
+    inline def labelLineHeight_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -658,8 +613,7 @@ object headerMod {
     def labelOrient: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelOrient_=(
+    inline def labelOrient_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -670,8 +624,7 @@ object headerMod {
     def labelPadding: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labelPadding_=(
+    inline def labelPadding_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -682,8 +635,7 @@ object headerMod {
     def labels: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def labels_=(
+    inline def labels_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -694,8 +646,7 @@ object headerMod {
     def orient: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | typings.vegaLite.vegaLiteStrings.orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def orient_=(
+    inline def orient_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -706,8 +657,7 @@ object headerMod {
     def titleAlign: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleAlign_=(
+    inline def titleAlign_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -718,8 +668,7 @@ object headerMod {
     def titleAnchor: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleAnchor_=(
+    inline def titleAnchor_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -730,8 +679,7 @@ object headerMod {
     def titleAngle: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleAngle_=(
+    inline def titleAngle_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -742,8 +690,7 @@ object headerMod {
     def titleBaseline: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleBaseline_=(
+    inline def titleBaseline_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -754,8 +701,7 @@ object headerMod {
     def titleColor: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleColor_=(
+    inline def titleColor_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -772,8 +718,7 @@ object headerMod {
     def titleFontSize: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleFontSize_=(
+    inline def titleFontSize_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -784,8 +729,7 @@ object headerMod {
     def titleFontStyle: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleFontStyle_=(
+    inline def titleFontStyle_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -796,15 +740,13 @@ object headerMod {
     def titleFontWeight: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleFontWeight_=(
+    inline def titleFontWeight_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("titleFontWeight")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def titleFont_=(
+    inline def titleFont_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -815,8 +757,7 @@ object headerMod {
     def titleLimit: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleLimit_=(
+    inline def titleLimit_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -827,8 +768,7 @@ object headerMod {
     def titleLineHeight: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleLineHeight_=(
+    inline def titleLineHeight_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -839,8 +779,7 @@ object headerMod {
     def titleOrient: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titleOrient_=(
+    inline def titleOrient_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -851,8 +790,7 @@ object headerMod {
     def titlePadding: js.UndefOr[
         subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
       ] = js.native
-    @scala.inline
-    def titlePadding_=(
+    inline def titlePadding_=(
       x: js.UndefOr[
           subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
         ]
@@ -1035,188 +973,128 @@ object headerMod {
   }
   object CoreHeader {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): CoreHeader[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): CoreHeader[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CoreHeader[ES]]
     }
     
-    @scala.inline
-    implicit class CoreHeaderMutableBuilder[Self <: CoreHeader[?], ES /* <: ExprRef | SignalRef */] (val x: Self & CoreHeader[ES]) extends AnyVal {
+    extension [Self <: CoreHeader[?], ES /* <: ExprRef | SignalRef */](x: Self & CoreHeader[ES]) {
       
-      @scala.inline
-      def setLabelAlign(value: Align | ES): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
+      inline def setLabelAlign(value: Align | ES): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
+      inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
       
-      @scala.inline
-      def setLabelAnchor(value: TitleAnchor): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
+      inline def setLabelAnchor(value: TitleAnchor): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAnchorNull: Self = StObject.set(x, "labelAnchor", null)
+      inline def setLabelAnchorNull: Self = StObject.set(x, "labelAnchor", null)
       
-      @scala.inline
-      def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
+      inline def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
       
-      @scala.inline
-      def setLabelAngle(value: Double): Self = StObject.set(x, "labelAngle", value.asInstanceOf[js.Any])
+      inline def setLabelAngle(value: Double): Self = StObject.set(x, "labelAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAngleUndefined: Self = StObject.set(x, "labelAngle", js.undefined)
+      inline def setLabelAngleUndefined: Self = StObject.set(x, "labelAngle", js.undefined)
       
-      @scala.inline
-      def setLabelBaseline(value: TextBaseline | ES): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
+      inline def setLabelBaseline(value: TextBaseline | ES): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
+      inline def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
       
-      @scala.inline
-      def setLabelColor(value: Color | ES): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
+      inline def setLabelColor(value: Color | ES): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
+      inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
       
-      @scala.inline
-      def setLabelFont(value: String | ES): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
+      inline def setLabelFont(value: String | ES): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontSize(value: Double | ES): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
+      inline def setLabelFontSize(value: Double | ES): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
+      inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
       
-      @scala.inline
-      def setLabelFontStyle(value: FontStyle | ES): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
+      inline def setLabelFontStyle(value: FontStyle | ES): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
+      inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
       
-      @scala.inline
-      def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
+      inline def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
       
-      @scala.inline
-      def setLabelFontWeight(value: FontWeight | ES): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
+      inline def setLabelFontWeight(value: FontWeight | ES): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
+      inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
       
-      @scala.inline
-      def setLabelLimit(value: Double | ES): Self = StObject.set(x, "labelLimit", value.asInstanceOf[js.Any])
+      inline def setLabelLimit(value: Double | ES): Self = StObject.set(x, "labelLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
+      inline def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
       
-      @scala.inline
-      def setLabelLineHeight(value: Double | ES): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
+      inline def setLabelLineHeight(value: Double | ES): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
+      inline def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
       
-      @scala.inline
-      def setLabelOrient(value: Orient): Self = StObject.set(x, "labelOrient", value.asInstanceOf[js.Any])
+      inline def setLabelOrient(value: Orient): Self = StObject.set(x, "labelOrient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelOrientUndefined: Self = StObject.set(x, "labelOrient", js.undefined)
+      inline def setLabelOrientUndefined: Self = StObject.set(x, "labelOrient", js.undefined)
       
-      @scala.inline
-      def setLabelPadding(value: Double | ES): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
+      inline def setLabelPadding(value: Double | ES): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
+      inline def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
       
-      @scala.inline
-      def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setOrient(value: Orient): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+      inline def setOrient(value: Orient): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+      inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
-      @scala.inline
-      def setTitleAlign(value: Align | ES): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
+      inline def setTitleAlign(value: Align | ES): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
+      inline def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
       
-      @scala.inline
-      def setTitleAnchor(value: TitleAnchor): Self = StObject.set(x, "titleAnchor", value.asInstanceOf[js.Any])
+      inline def setTitleAnchor(value: TitleAnchor): Self = StObject.set(x, "titleAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAnchorNull: Self = StObject.set(x, "titleAnchor", null)
+      inline def setTitleAnchorNull: Self = StObject.set(x, "titleAnchor", null)
       
-      @scala.inline
-      def setTitleAnchorUndefined: Self = StObject.set(x, "titleAnchor", js.undefined)
+      inline def setTitleAnchorUndefined: Self = StObject.set(x, "titleAnchor", js.undefined)
       
-      @scala.inline
-      def setTitleAngle(value: Double): Self = StObject.set(x, "titleAngle", value.asInstanceOf[js.Any])
+      inline def setTitleAngle(value: Double): Self = StObject.set(x, "titleAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAngleUndefined: Self = StObject.set(x, "titleAngle", js.undefined)
+      inline def setTitleAngleUndefined: Self = StObject.set(x, "titleAngle", js.undefined)
       
-      @scala.inline
-      def setTitleBaseline(value: TextBaseline | ES): Self = StObject.set(x, "titleBaseline", value.asInstanceOf[js.Any])
+      inline def setTitleBaseline(value: TextBaseline | ES): Self = StObject.set(x, "titleBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
+      inline def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
       
-      @scala.inline
-      def setTitleColor(value: Color | ES): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+      inline def setTitleColor(value: Color | ES): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+      inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
       
-      @scala.inline
-      def setTitleFont(value: String | ES): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
+      inline def setTitleFont(value: String | ES): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontSize(value: Double | ES): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
+      inline def setTitleFontSize(value: Double | ES): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
+      inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
       
-      @scala.inline
-      def setTitleFontStyle(value: FontStyle | ES): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
+      inline def setTitleFontStyle(value: FontStyle | ES): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
+      inline def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
       
-      @scala.inline
-      def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
+      inline def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
       
-      @scala.inline
-      def setTitleFontWeight(value: FontWeight | ES): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
+      inline def setTitleFontWeight(value: FontWeight | ES): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
+      inline def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
       
-      @scala.inline
-      def setTitleLimit(value: Double | ES): Self = StObject.set(x, "titleLimit", value.asInstanceOf[js.Any])
+      inline def setTitleLimit(value: Double | ES): Self = StObject.set(x, "titleLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
+      inline def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
       
-      @scala.inline
-      def setTitleLineHeight(value: Double | ES): Self = StObject.set(x, "titleLineHeight", value.asInstanceOf[js.Any])
+      inline def setTitleLineHeight(value: Double | ES): Self = StObject.set(x, "titleLineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
+      inline def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
       
-      @scala.inline
-      def setTitleOrient(value: Orient): Self = StObject.set(x, "titleOrient", value.asInstanceOf[js.Any])
+      inline def setTitleOrient(value: Orient): Self = StObject.set(x, "titleOrient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleOrientUndefined: Self = StObject.set(x, "titleOrient", js.undefined)
+      inline def setTitleOrientUndefined: Self = StObject.set(x, "titleOrient", js.undefined)
       
-      @scala.inline
-      def setTitlePadding(value: Double | ES): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
+      inline def setTitlePadding(value: Double | ES): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
+      inline def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
     }
   }
   
@@ -1228,8 +1106,7 @@ object headerMod {
        with TitleMixins
   object Header {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): Header[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): Header[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Header[ES]]
     }
@@ -1241,8 +1118,7 @@ object headerMod {
        with VlOnlyGuideConfig
   object HeaderConfig {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): HeaderConfig[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): HeaderConfig[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderConfig[ES]]
     }
@@ -1280,38 +1156,28 @@ object headerMod {
   }
   object HeaderConfigMixins {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): HeaderConfigMixins[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): HeaderConfigMixins[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderConfigMixins[ES]]
     }
     
-    @scala.inline
-    implicit class HeaderConfigMixinsMutableBuilder[Self <: HeaderConfigMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & HeaderConfigMixins[ES]) extends AnyVal {
+    extension [Self <: HeaderConfigMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & HeaderConfigMixins[ES]) {
       
-      @scala.inline
-      def setHeader(value: HeaderConfig[ES]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: HeaderConfig[ES]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderColumn(value: HeaderConfig[ES]): Self = StObject.set(x, "headerColumn", value.asInstanceOf[js.Any])
+      inline def setHeaderColumn(value: HeaderConfig[ES]): Self = StObject.set(x, "headerColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderColumnUndefined: Self = StObject.set(x, "headerColumn", js.undefined)
+      inline def setHeaderColumnUndefined: Self = StObject.set(x, "headerColumn", js.undefined)
       
-      @scala.inline
-      def setHeaderFacet(value: HeaderConfig[ES]): Self = StObject.set(x, "headerFacet", value.asInstanceOf[js.Any])
+      inline def setHeaderFacet(value: HeaderConfig[ES]): Self = StObject.set(x, "headerFacet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFacetUndefined: Self = StObject.set(x, "headerFacet", js.undefined)
+      inline def setHeaderFacetUndefined: Self = StObject.set(x, "headerFacet", js.undefined)
       
-      @scala.inline
-      def setHeaderRow(value: HeaderConfig[ES]): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
+      inline def setHeaderRow(value: HeaderConfig[ES]): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderRowUndefined: Self = StObject.set(x, "headerRow", js.undefined)
+      inline def setHeaderRowUndefined: Self = StObject.set(x, "headerRow", js.undefined)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
 }

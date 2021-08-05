@@ -18,25 +18,19 @@ trait RowExpandedEventUIParam extends StObject {
 }
 object RowExpandedEventUIParam {
   
-  @scala.inline
-  def apply(): RowExpandedEventUIParam = {
+  inline def apply(): RowExpandedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowExpandedEventUIParam]
   }
   
-  @scala.inline
-  implicit class RowExpandedEventUIParamMutableBuilder[Self <: RowExpandedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: RowExpandedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setParentrow(value: String): Self = StObject.set(x, "parentrow", value.asInstanceOf[js.Any])
+    inline def setParentrow(value: String): Self = StObject.set(x, "parentrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentrowUndefined: Self = StObject.set(x, "parentrow", js.undefined)
+    inline def setParentrowUndefined: Self = StObject.set(x, "parentrow", js.undefined)
   }
 }

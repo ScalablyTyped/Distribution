@@ -25,25 +25,19 @@ trait IGroupOptions
 }
 object IGroupOptions {
   
-  @scala.inline
-  def apply(): IGroupOptions = {
+  inline def apply(): IGroupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGroupOptions]
   }
   
-  @scala.inline
-  implicit class IGroupOptionsMutableBuilder[Self <: IGroupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGroupOptions](x: Self) {
     
-    @scala.inline
-    def setSubTargetCheck(value: Boolean): Self = StObject.set(x, "subTargetCheck", value.asInstanceOf[js.Any])
+    inline def setSubTargetCheck(value: Boolean): Self = StObject.set(x, "subTargetCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTargetCheckUndefined: Self = StObject.set(x, "subTargetCheck", js.undefined)
+    inline def setSubTargetCheckUndefined: Self = StObject.set(x, "subTargetCheck", js.undefined)
     
-    @scala.inline
-    def setUseSetOnGroup(value: Boolean): Self = StObject.set(x, "useSetOnGroup", value.asInstanceOf[js.Any])
+    inline def setUseSetOnGroup(value: Boolean): Self = StObject.set(x, "useSetOnGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSetOnGroupUndefined: Self = StObject.set(x, "useSetOnGroup", js.undefined)
+    inline def setUseSetOnGroupUndefined: Self = StObject.set(x, "useSetOnGroup", js.undefined)
   }
 }

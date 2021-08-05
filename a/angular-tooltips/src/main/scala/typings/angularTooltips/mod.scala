@@ -31,17 +31,14 @@ object mod extends Shortcut {
   }
   object TooltipsConfProvider {
     
-    @scala.inline
-    def apply(configure: TooltipsConfProviderOptions => Unit): TooltipsConfProvider = {
+    inline def apply(configure: TooltipsConfProviderOptions => Unit): TooltipsConfProvider = {
       val __obj = js.Dynamic.literal(configure = js.Any.fromFunction1(configure))
       __obj.asInstanceOf[TooltipsConfProvider]
     }
     
-    @scala.inline
-    implicit class TooltipsConfProviderMutableBuilder[Self <: TooltipsConfProvider] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipsConfProvider](x: Self) {
       
-      @scala.inline
-      def setConfigure(value: TooltipsConfProviderOptions => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+      inline def setConfigure(value: TooltipsConfProviderOptions => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     }
   }
   
@@ -71,76 +68,54 @@ object mod extends Shortcut {
   }
   object TooltipsConfProviderOptions {
     
-    @scala.inline
-    def apply(): TooltipsConfProviderOptions = {
+    inline def apply(): TooltipsConfProviderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TooltipsConfProviderOptions]
     }
     
-    @scala.inline
-    implicit class TooltipsConfProviderOptionsMutableBuilder[Self <: TooltipsConfProviderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipsConfProviderOptions](x: Self) {
       
-      @scala.inline
-      def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+      inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
       
-      @scala.inline
-      def setHideTrigger(value: String): Self = StObject.set(x, "hideTrigger", value.asInstanceOf[js.Any])
+      inline def setHideTrigger(value: String): Self = StObject.set(x, "hideTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideTriggerUndefined: Self = StObject.set(x, "hideTrigger", js.undefined)
+      inline def setHideTriggerUndefined: Self = StObject.set(x, "hideTrigger", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTrigger(value: String): Self = StObject.set(x, "showTrigger", value.asInstanceOf[js.Any])
+      inline def setShowTrigger(value: String): Self = StObject.set(x, "showTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTriggerUndefined: Self = StObject.set(x, "showTrigger", js.undefined)
+      inline def setShowTriggerUndefined: Self = StObject.set(x, "showTrigger", js.undefined)
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setSide(
+      inline def setSide(
         value: left | right | top | bottom | (`top left`) | (`top right`) | (`bottom left`) | (`bottom right`)
       ): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+      inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      @scala.inline
-      def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
+      inline def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
+      inline def setSmartUndefined: Self = StObject.set(x, "smart", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: slow | medium | fast): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: slow | medium | fast): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setTooltipTemplateUrlCache(value: Boolean): Self = StObject.set(x, "tooltipTemplateUrlCache", value.asInstanceOf[js.Any])
+      inline def setTooltipTemplateUrlCache(value: Boolean): Self = StObject.set(x, "tooltipTemplateUrlCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipTemplateUrlCacheUndefined: Self = StObject.set(x, "tooltipTemplateUrlCache", js.undefined)
+      inline def setTooltipTemplateUrlCacheUndefined: Self = StObject.set(x, "tooltipTemplateUrlCache", js.undefined)
     }
   }
   

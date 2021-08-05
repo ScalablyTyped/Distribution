@@ -14,11 +14,9 @@ object hintsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def numberHints(schema: Schema, logic: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("numberHints")(schema.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def numberHints(schema: Schema, logic: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("numberHints")(schema.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def stringHints(schema: Schema, logic: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringHints")(schema.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def stringHints(schema: Schema, logic: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringHints")(schema.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   type Schema = (JSONSchema4 & Extend) | (JSONSchema6 & Extend) | (JSONSchema7 & Extend)
 }

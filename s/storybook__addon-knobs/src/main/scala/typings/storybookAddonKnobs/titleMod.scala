@@ -11,6 +11,5 @@ object titleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTitleListener(api: API): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTitleListener")(api.asInstanceOf[js.Any]).asInstanceOf[js.Function0[String]]
+  inline def createTitleListener(api: API): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTitleListener")(api.asInstanceOf[js.Any]).asInstanceOf[js.Function0[String]]
 }

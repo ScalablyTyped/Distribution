@@ -17,20 +17,16 @@ object global {
   }
   object JQueryEventObject {
     
-    @scala.inline
-    def apply(): JQueryEventObject = {
+    inline def apply(): JQueryEventObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JQueryEventObject]
     }
     
-    @scala.inline
-    implicit class JQueryEventObjectMutableBuilder[Self <: JQueryEventObject] (val x: Self) extends AnyVal {
+    extension [Self <: JQueryEventObject](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     }
   }
   

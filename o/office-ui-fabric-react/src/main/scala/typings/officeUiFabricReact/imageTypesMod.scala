@@ -226,71 +226,50 @@ object imageTypesMod {
   }
   object IImageProps {
     
-    @scala.inline
-    def apply(): IImageProps = {
+    inline def apply(): IImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IImageProps]
     }
     
-    @scala.inline
-    implicit class IImagePropsMutableBuilder[Self <: IImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: IImageProps](x: Self) {
       
-      @scala.inline
-      def setCoverStyle(value: ImageCoverStyle): Self = StObject.set(x, "coverStyle", value.asInstanceOf[js.Any])
+      inline def setCoverStyle(value: ImageCoverStyle): Self = StObject.set(x, "coverStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverStyleUndefined: Self = StObject.set(x, "coverStyle", js.undefined)
+      inline def setCoverStyleUndefined: Self = StObject.set(x, "coverStyle", js.undefined)
       
-      @scala.inline
-      def setErrorSrc(value: String): Self = StObject.set(x, "errorSrc", value.asInstanceOf[js.Any])
+      inline def setErrorSrc(value: String): Self = StObject.set(x, "errorSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorSrcUndefined: Self = StObject.set(x, "errorSrc", js.undefined)
+      inline def setErrorSrcUndefined: Self = StObject.set(x, "errorSrc", js.undefined)
       
-      @scala.inline
-      def setImageFit(value: ImageFit): Self = StObject.set(x, "imageFit", value.asInstanceOf[js.Any])
+      inline def setImageFit(value: ImageFit): Self = StObject.set(x, "imageFit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageFitUndefined: Self = StObject.set(x, "imageFit", js.undefined)
+      inline def setImageFitUndefined: Self = StObject.set(x, "imageFit", js.undefined)
       
-      @scala.inline
-      def setMaximizeFrame(value: Boolean): Self = StObject.set(x, "maximizeFrame", value.asInstanceOf[js.Any])
+      inline def setMaximizeFrame(value: Boolean): Self = StObject.set(x, "maximizeFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximizeFrameUndefined: Self = StObject.set(x, "maximizeFrame", js.undefined)
+      inline def setMaximizeFrameUndefined: Self = StObject.set(x, "maximizeFrame", js.undefined)
       
-      @scala.inline
-      def setOnLoadingStateChange(value: /* loadState */ ImageLoadState => Unit): Self = StObject.set(x, "onLoadingStateChange", js.Any.fromFunction1(value))
+      inline def setOnLoadingStateChange(value: /* loadState */ ImageLoadState => Unit): Self = StObject.set(x, "onLoadingStateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadingStateChangeUndefined: Self = StObject.set(x, "onLoadingStateChange", js.undefined)
+      inline def setOnLoadingStateChangeUndefined: Self = StObject.set(x, "onLoadingStateChange", js.undefined)
       
-      @scala.inline
-      def setShouldFadeIn(value: Boolean): Self = StObject.set(x, "shouldFadeIn", value.asInstanceOf[js.Any])
+      inline def setShouldFadeIn(value: Boolean): Self = StObject.set(x, "shouldFadeIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldFadeInUndefined: Self = StObject.set(x, "shouldFadeIn", js.undefined)
+      inline def setShouldFadeInUndefined: Self = StObject.set(x, "shouldFadeIn", js.undefined)
       
-      @scala.inline
-      def setShouldStartVisible(value: Boolean): Self = StObject.set(x, "shouldStartVisible", value.asInstanceOf[js.Any])
+      inline def setShouldStartVisible(value: Boolean): Self = StObject.set(x, "shouldStartVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldStartVisibleUndefined: Self = StObject.set(x, "shouldStartVisible", js.undefined)
+      inline def setShouldStartVisibleUndefined: Self = StObject.set(x, "shouldStartVisible", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IImageStyleProps, IImageStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IImageStyleProps, IImageStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IImageStyleProps => DeepPartial[IImageStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IImageStyleProps => DeepPartial[IImageStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -371,113 +350,78 @@ object imageTypesMod {
   }
   object IImageStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IImageStyleProps = {
+    inline def apply(theme: ITheme): IImageStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IImageStyleProps]
     }
     
-    @scala.inline
-    implicit class IImageStylePropsMutableBuilder[Self <: IImageStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IImageStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIsCenter(value: Boolean): Self = StObject.set(x, "isCenter", value.asInstanceOf[js.Any])
+      inline def setIsCenter(value: Boolean): Self = StObject.set(x, "isCenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCenterContain(value: Boolean): Self = StObject.set(x, "isCenterContain", value.asInstanceOf[js.Any])
+      inline def setIsCenterContain(value: Boolean): Self = StObject.set(x, "isCenterContain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCenterContainUndefined: Self = StObject.set(x, "isCenterContain", js.undefined)
+      inline def setIsCenterContainUndefined: Self = StObject.set(x, "isCenterContain", js.undefined)
       
-      @scala.inline
-      def setIsCenterCover(value: Boolean): Self = StObject.set(x, "isCenterCover", value.asInstanceOf[js.Any])
+      inline def setIsCenterCover(value: Boolean): Self = StObject.set(x, "isCenterCover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCenterCoverUndefined: Self = StObject.set(x, "isCenterCover", js.undefined)
+      inline def setIsCenterCoverUndefined: Self = StObject.set(x, "isCenterCover", js.undefined)
       
-      @scala.inline
-      def setIsCenterUndefined: Self = StObject.set(x, "isCenter", js.undefined)
+      inline def setIsCenterUndefined: Self = StObject.set(x, "isCenter", js.undefined)
       
-      @scala.inline
-      def setIsContain(value: Boolean): Self = StObject.set(x, "isContain", value.asInstanceOf[js.Any])
+      inline def setIsContain(value: Boolean): Self = StObject.set(x, "isContain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsContainUndefined: Self = StObject.set(x, "isContain", js.undefined)
+      inline def setIsContainUndefined: Self = StObject.set(x, "isContain", js.undefined)
       
-      @scala.inline
-      def setIsCover(value: Boolean): Self = StObject.set(x, "isCover", value.asInstanceOf[js.Any])
+      inline def setIsCover(value: Boolean): Self = StObject.set(x, "isCover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCoverUndefined: Self = StObject.set(x, "isCover", js.undefined)
+      inline def setIsCoverUndefined: Self = StObject.set(x, "isCover", js.undefined)
       
-      @scala.inline
-      def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
+      inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsErrorUndefined: Self = StObject.set(x, "isError", js.undefined)
+      inline def setIsErrorUndefined: Self = StObject.set(x, "isError", js.undefined)
       
-      @scala.inline
-      def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
+      inline def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLandscapeUndefined: Self = StObject.set(x, "isLandscape", js.undefined)
+      inline def setIsLandscapeUndefined: Self = StObject.set(x, "isLandscape", js.undefined)
       
-      @scala.inline
-      def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
+      inline def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoadedUndefined: Self = StObject.set(x, "isLoaded", js.undefined)
+      inline def setIsLoadedUndefined: Self = StObject.set(x, "isLoaded", js.undefined)
       
-      @scala.inline
-      def setIsNone(value: Boolean): Self = StObject.set(x, "isNone", value.asInstanceOf[js.Any])
+      inline def setIsNone(value: Boolean): Self = StObject.set(x, "isNone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNoneUndefined: Self = StObject.set(x, "isNone", js.undefined)
+      inline def setIsNoneUndefined: Self = StObject.set(x, "isNone", js.undefined)
       
-      @scala.inline
-      def setIsNotImageFit(value: Boolean): Self = StObject.set(x, "isNotImageFit", value.asInstanceOf[js.Any])
+      inline def setIsNotImageFit(value: Boolean): Self = StObject.set(x, "isNotImageFit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNotImageFitUndefined: Self = StObject.set(x, "isNotImageFit", js.undefined)
+      inline def setIsNotImageFitUndefined: Self = StObject.set(x, "isNotImageFit", js.undefined)
       
-      @scala.inline
-      def setMaximizeFrame(value: Boolean): Self = StObject.set(x, "maximizeFrame", value.asInstanceOf[js.Any])
+      inline def setMaximizeFrame(value: Boolean): Self = StObject.set(x, "maximizeFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximizeFrameUndefined: Self = StObject.set(x, "maximizeFrame", js.undefined)
+      inline def setMaximizeFrameUndefined: Self = StObject.set(x, "maximizeFrame", js.undefined)
       
-      @scala.inline
-      def setShouldFadeIn(value: Boolean): Self = StObject.set(x, "shouldFadeIn", value.asInstanceOf[js.Any])
+      inline def setShouldFadeIn(value: Boolean): Self = StObject.set(x, "shouldFadeIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldFadeInUndefined: Self = StObject.set(x, "shouldFadeIn", js.undefined)
+      inline def setShouldFadeInUndefined: Self = StObject.set(x, "shouldFadeIn", js.undefined)
       
-      @scala.inline
-      def setShouldStartVisible(value: Boolean): Self = StObject.set(x, "shouldStartVisible", value.asInstanceOf[js.Any])
+      inline def setShouldStartVisible(value: Boolean): Self = StObject.set(x, "shouldStartVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldStartVisibleUndefined: Self = StObject.set(x, "shouldStartVisible", js.undefined)
+      inline def setShouldStartVisibleUndefined: Self = StObject.set(x, "shouldStartVisible", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -495,32 +439,24 @@ object imageTypesMod {
   }
   object IImageStyles {
     
-    @scala.inline
-    def apply(): IImageStyles = {
+    inline def apply(): IImageStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IImageStyles]
     }
     
-    @scala.inline
-    implicit class IImageStylesMutableBuilder[Self <: IImageStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IImageStyles](x: Self) {
       
-      @scala.inline
-      def setImage(value: IStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: IStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageNull: Self = StObject.set(x, "image", null)
+      inline def setImageNull: Self = StObject.set(x, "image", null)
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

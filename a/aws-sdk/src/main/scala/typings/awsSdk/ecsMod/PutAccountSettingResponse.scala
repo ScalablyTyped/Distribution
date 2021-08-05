@@ -13,19 +13,15 @@ trait PutAccountSettingResponse extends StObject {
 }
 object PutAccountSettingResponse {
   
-  @scala.inline
-  def apply(): PutAccountSettingResponse = {
+  inline def apply(): PutAccountSettingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAccountSettingResponse]
   }
   
-  @scala.inline
-  implicit class PutAccountSettingResponseMutableBuilder[Self <: PutAccountSettingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutAccountSettingResponse](x: Self) {
     
-    @scala.inline
-    def setSetting(value: Setting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: Setting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
+    inline def setSettingUndefined: Self = StObject.set(x, "setting", js.undefined)
   }
 }

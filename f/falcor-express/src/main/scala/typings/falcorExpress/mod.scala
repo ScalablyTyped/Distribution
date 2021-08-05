@@ -16,8 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dataSourceRoute(
+  inline def dataSourceRoute(
     getDataSource: js.Function2[
       /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
       /* res */ Response_[js.Any], 

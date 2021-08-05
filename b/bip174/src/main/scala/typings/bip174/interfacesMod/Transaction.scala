@@ -18,8 +18,7 @@ trait Transaction extends StObject {
 }
 object Transaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addInput: js.Any => Unit,
     addOutput: js.Any => Unit,
     getInputOutputCounts: () => InputCount,
@@ -29,19 +28,14 @@ object Transaction {
     __obj.asInstanceOf[Transaction]
   }
   
-  @scala.inline
-  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+  extension [Self <: Transaction](x: Self) {
     
-    @scala.inline
-    def setAddInput(value: js.Any => Unit): Self = StObject.set(x, "addInput", js.Any.fromFunction1(value))
+    inline def setAddInput(value: js.Any => Unit): Self = StObject.set(x, "addInput", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddOutput(value: js.Any => Unit): Self = StObject.set(x, "addOutput", js.Any.fromFunction1(value))
+    inline def setAddOutput(value: js.Any => Unit): Self = StObject.set(x, "addOutput", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInputOutputCounts(value: () => InputCount): Self = StObject.set(x, "getInputOutputCounts", js.Any.fromFunction0(value))
+    inline def setGetInputOutputCounts(value: () => InputCount): Self = StObject.set(x, "getInputOutputCounts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
+    inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
   }
 }

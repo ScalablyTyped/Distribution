@@ -20,8 +20,7 @@ trait IsAvailable extends StObject {
 }
 object IsAvailable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isAvailable: Boolean,
     isAway: Boolean,
     isBlocked: Boolean,
@@ -33,25 +32,18 @@ object IsAvailable {
     __obj.asInstanceOf[IsAvailable]
   }
   
-  @scala.inline
-  implicit class IsAvailableMutableBuilder[Self <: IsAvailable] (val x: Self) extends AnyVal {
+  extension [Self <: IsAvailable](x: Self) {
     
-    @scala.inline
-    def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
+    inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAway(value: Boolean): Self = StObject.set(x, "isAway", value.asInstanceOf[js.Any])
+    inline def setIsAway(value: Boolean): Self = StObject.set(x, "isAway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBlocked(value: Boolean): Self = StObject.set(x, "isBlocked", value.asInstanceOf[js.Any])
+    inline def setIsBlocked(value: Boolean): Self = StObject.set(x, "isBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBusy(value: Boolean): Self = StObject.set(x, "isBusy", value.asInstanceOf[js.Any])
+    inline def setIsBusy(value: Boolean): Self = StObject.set(x, "isBusy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDoNotDisturb(value: Boolean): Self = StObject.set(x, "isDoNotDisturb", value.asInstanceOf[js.Any])
+    inline def setIsDoNotDisturb(value: Boolean): Self = StObject.set(x, "isDoNotDisturb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOffline(value: Boolean): Self = StObject.set(x, "isOffline", value.asInstanceOf[js.Any])
+    inline def setIsOffline(value: Boolean): Self = StObject.set(x, "isOffline", value.asInstanceOf[js.Any])
   }
 }

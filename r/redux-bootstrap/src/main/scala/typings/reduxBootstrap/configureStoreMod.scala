@@ -17,8 +17,7 @@ object configureStoreMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     middlewares: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]],
     enhancers: js.Array[StoreEnhancer[js.Any, js.Object]],
     rootReducer: Reducer[js.Any, AnyAction],

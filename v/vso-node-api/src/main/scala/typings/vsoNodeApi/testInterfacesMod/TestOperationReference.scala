@@ -14,22 +14,17 @@ trait TestOperationReference extends StObject {
 }
 object TestOperationReference {
   
-  @scala.inline
-  def apply(id: String, status: String, url: String): TestOperationReference = {
+  inline def apply(id: String, status: String, url: String): TestOperationReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestOperationReference]
   }
   
-  @scala.inline
-  implicit class TestOperationReferenceMutableBuilder[Self <: TestOperationReference] (val x: Self) extends AnyVal {
+  extension [Self <: TestOperationReference](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

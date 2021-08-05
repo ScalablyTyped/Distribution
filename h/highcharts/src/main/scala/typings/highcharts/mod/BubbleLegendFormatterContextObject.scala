@@ -23,22 +23,17 @@ trait BubbleLegendFormatterContextObject extends StObject {
 }
 object BubbleLegendFormatterContextObject {
   
-  @scala.inline
-  def apply(center: Double, radius: Double, value: Double): BubbleLegendFormatterContextObject = {
+  inline def apply(center: Double, radius: Double, value: Double): BubbleLegendFormatterContextObject = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BubbleLegendFormatterContextObject]
   }
   
-  @scala.inline
-  implicit class BubbleLegendFormatterContextObjectMutableBuilder[Self <: BubbleLegendFormatterContextObject] (val x: Self) extends AnyVal {
+  extension [Self <: BubbleLegendFormatterContextObject](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Double): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Double): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

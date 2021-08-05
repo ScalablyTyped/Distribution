@@ -42,8 +42,7 @@ trait DeviceInfo extends StObject {
 }
 object DeviceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BitsPerPixel: Double,
     BottomInset: Double,
     Capabilities: Double,
@@ -59,37 +58,26 @@ object DeviceInfo {
     __obj.asInstanceOf[DeviceInfo]
   }
   
-  @scala.inline
-  implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceInfo](x: Self) {
     
-    @scala.inline
-    def setBitsPerPixel(value: Double): Self = StObject.set(x, "BitsPerPixel", value.asInstanceOf[js.Any])
+    inline def setBitsPerPixel(value: Double): Self = StObject.set(x, "BitsPerPixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomInset(value: Double): Self = StObject.set(x, "BottomInset", value.asInstanceOf[js.Any])
+    inline def setBottomInset(value: Double): Self = StObject.set(x, "BottomInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilities(value: Double): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: Double): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftInset(value: Double): Self = StObject.set(x, "LeftInset", value.asInstanceOf[js.Any])
+    inline def setLeftInset(value: Double): Self = StObject.set(x, "LeftInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelPerMeterX(value: Double): Self = StObject.set(x, "PixelPerMeterX", value.asInstanceOf[js.Any])
+    inline def setPixelPerMeterX(value: Double): Self = StObject.set(x, "PixelPerMeterX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelPerMeterY(value: Double): Self = StObject.set(x, "PixelPerMeterY", value.asInstanceOf[js.Any])
+    inline def setPixelPerMeterY(value: Double): Self = StObject.set(x, "PixelPerMeterY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightInset(value: Double): Self = StObject.set(x, "RightInset", value.asInstanceOf[js.Any])
+    inline def setRightInset(value: Double): Self = StObject.set(x, "RightInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopInset(value: Double): Self = StObject.set(x, "TopInset", value.asInstanceOf[js.Any])
+    inline def setTopInset(value: Double): Self = StObject.set(x, "TopInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

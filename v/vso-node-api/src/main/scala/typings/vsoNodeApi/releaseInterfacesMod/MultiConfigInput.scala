@@ -12,8 +12,7 @@ trait MultiConfigInput
 }
 object MultiConfigInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     continueOnError: Boolean,
     maxNumberOfAgents: Double,
     multipliers: String,
@@ -23,10 +22,8 @@ object MultiConfigInput {
     __obj.asInstanceOf[MultiConfigInput]
   }
   
-  @scala.inline
-  implicit class MultiConfigInputMutableBuilder[Self <: MultiConfigInput] (val x: Self) extends AnyVal {
+  extension [Self <: MultiConfigInput](x: Self) {
     
-    @scala.inline
-    def setMultipliers(value: String): Self = StObject.set(x, "multipliers", value.asInstanceOf[js.Any])
+    inline def setMultipliers(value: String): Self = StObject.set(x, "multipliers", value.asInstanceOf[js.Any])
   }
 }

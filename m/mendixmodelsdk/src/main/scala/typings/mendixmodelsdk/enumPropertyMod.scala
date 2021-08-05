@@ -25,8 +25,8 @@ object enumPropertyMod {
       enumType: Instantiable2[/* key */ String, /* lifeCycle */ ILifeCycle, AbstractEnum]
     ) = this()
     
-    var enumType: Instantiable2[/* key */ String, /* lifeCycle */ ILifeCycle, AbstractEnum] = js.native
+    /* protected */ var enumType: Instantiable2[/* key */ String, /* lifeCycle */ ILifeCycle, AbstractEnum] = js.native
     
-    var initialValue: js.Any = js.native
+    /* private */ var initialValue: js.Any = js.native
   }
 }

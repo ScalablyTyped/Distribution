@@ -16,8 +16,7 @@ trait HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem extends 
 }
 object HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     max_id: Null,
     more_available: Boolean,
     participants: js.Array[HighlightsRepositoryEditReelResponseParticipantsItem],
@@ -27,22 +26,16 @@ object HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem {
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItemMutableBuilder[Self <: HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryEditReelResponseStoryQuizParticipantInfosItem](x: Self) {
     
-    @scala.inline
-    def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
+    inline def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+    inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipants(value: js.Array[HighlightsRepositoryEditReelResponseParticipantsItem]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: js.Array[HighlightsRepositoryEditReelResponseParticipantsItem]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantsVarargs(value: HighlightsRepositoryEditReelResponseParticipantsItem*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: HighlightsRepositoryEditReelResponseParticipantsItem*): Self = StObject.set(x, "participants", js.Array(value :_*))
     
-    @scala.inline
-    def setQuiz_id(value: String): Self = StObject.set(x, "quiz_id", value.asInstanceOf[js.Any])
+    inline def setQuiz_id(value: String): Self = StObject.set(x, "quiz_id", value.asInstanceOf[js.Any])
   }
 }

@@ -34,37 +34,27 @@ trait SchemaUpdateConditionalFormatRuleResponse extends StObject {
 }
 object SchemaUpdateConditionalFormatRuleResponse {
   
-  @scala.inline
-  def apply(): SchemaUpdateConditionalFormatRuleResponse = {
+  inline def apply(): SchemaUpdateConditionalFormatRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateConditionalFormatRuleResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateConditionalFormatRuleResponseMutableBuilder[Self <: SchemaUpdateConditionalFormatRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateConditionalFormatRuleResponse](x: Self) {
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+    inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
     
-    @scala.inline
-    def setNewRule(value: SchemaConditionalFormatRule): Self = StObject.set(x, "newRule", value.asInstanceOf[js.Any])
+    inline def setNewRule(value: SchemaConditionalFormatRule): Self = StObject.set(x, "newRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewRuleUndefined: Self = StObject.set(x, "newRule", js.undefined)
+    inline def setNewRuleUndefined: Self = StObject.set(x, "newRule", js.undefined)
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
+    inline def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
     
-    @scala.inline
-    def setOldRule(value: SchemaConditionalFormatRule): Self = StObject.set(x, "oldRule", value.asInstanceOf[js.Any])
+    inline def setOldRule(value: SchemaConditionalFormatRule): Self = StObject.set(x, "oldRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldRuleUndefined: Self = StObject.set(x, "oldRule", js.undefined)
+    inline def setOldRuleUndefined: Self = StObject.set(x, "oldRule", js.undefined)
   }
 }

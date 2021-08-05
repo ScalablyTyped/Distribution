@@ -17,22 +17,17 @@ trait ParametersEmojisGetEndpoint extends StObject {
 }
 object ParametersEmojisGetEndpoint {
   
-  @scala.inline
-  def apply(parameters: EmojisGetEndpoint, request: EmojisGetRequestOptions, response: OctokitResponse[js.Any]): ParametersEmojisGetEndpoint = {
+  inline def apply(parameters: EmojisGetEndpoint, request: EmojisGetRequestOptions, response: OctokitResponse[js.Any]): ParametersEmojisGetEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersEmojisGetEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEmojisGetEndpointMutableBuilder[Self <: ParametersEmojisGetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEmojisGetEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EmojisGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EmojisGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EmojisGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EmojisGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

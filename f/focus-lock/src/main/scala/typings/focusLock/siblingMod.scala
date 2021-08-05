@@ -13,15 +13,11 @@ object siblingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def focusNextElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def focusNextElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def focusNextElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def focusNextElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusNextElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def focusPrevElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def focusPrevElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def focusPrevElement(baseElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def focusPrevElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait FocusNextOptions extends StObject {
     
@@ -31,26 +27,20 @@ object siblingMod {
   }
   object FocusNextOptions {
     
-    @scala.inline
-    def apply(): FocusNextOptions = {
+    inline def apply(): FocusNextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusNextOptions]
     }
     
-    @scala.inline
-    implicit class FocusNextOptionsMutableBuilder[Self <: FocusNextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FocusNextOptions](x: Self) {
       
-      @scala.inline
-      def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+      inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+      inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
       
-      @scala.inline
-      def setScope(value: HTMLElement | HTMLDocument): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: HTMLElement | HTMLDocument): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
 }

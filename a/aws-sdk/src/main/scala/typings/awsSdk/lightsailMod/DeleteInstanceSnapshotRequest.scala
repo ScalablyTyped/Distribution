@@ -13,16 +13,13 @@ trait DeleteInstanceSnapshotRequest extends StObject {
 }
 object DeleteInstanceSnapshotRequest {
   
-  @scala.inline
-  def apply(instanceSnapshotName: ResourceName): DeleteInstanceSnapshotRequest = {
+  inline def apply(instanceSnapshotName: ResourceName): DeleteInstanceSnapshotRequest = {
     val __obj = js.Dynamic.literal(instanceSnapshotName = instanceSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInstanceSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInstanceSnapshotRequestMutableBuilder[Self <: DeleteInstanceSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInstanceSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceSnapshotName(value: ResourceName): Self = StObject.set(x, "instanceSnapshotName", value.asInstanceOf[js.Any])
+    inline def setInstanceSnapshotName(value: ResourceName): Self = StObject.set(x, "instanceSnapshotName", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait Toolchain extends StObject {
 }
 object Toolchain {
   
-  @scala.inline
-  def apply(source: ToolchainSource): Toolchain = {
+  inline def apply(source: ToolchainSource): Toolchain = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Toolchain]
   }
   
-  @scala.inline
-  implicit class ToolchainMutableBuilder[Self <: Toolchain] (val x: Self) extends AnyVal {
+  extension [Self <: Toolchain](x: Self) {
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
-    @scala.inline
-    def setSource(value: ToolchainSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ToolchainSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackParameters(value: TemplateParameterMap): Self = StObject.set(x, "stackParameters", value.asInstanceOf[js.Any])
+    inline def setStackParameters(value: TemplateParameterMap): Self = StObject.set(x, "stackParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackParametersUndefined: Self = StObject.set(x, "stackParameters", js.undefined)
+    inline def setStackParametersUndefined: Self = StObject.set(x, "stackParameters", js.undefined)
   }
 }

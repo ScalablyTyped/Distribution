@@ -22,7 +22,6 @@ object ioactionMod {
       * and returning a value of type B into an I/O action of type
       * (sa : Stream<A>) => Stream<B>
       */
-    @scala.inline
-    def fromAsync[A, B](performIO: js.Function2[/* a */ A, /* result */ js.Function1[/* b */ B, Unit], Unit]): js.Function1[/* sa */ Stream[A], Stream[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAsync")(performIO.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Stream[A], Stream[B]]]
+    inline def fromAsync[A, B](performIO: js.Function2[/* a */ A, /* result */ js.Function1[/* b */ B, Unit], Unit]): js.Function1[/* sa */ Stream[A], Stream[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAsync")(performIO.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* sa */ Stream[A], Stream[B]]]
   }
 }

@@ -12,25 +12,19 @@ trait IBatchUpdateIntentsResponse extends StObject {
 }
 object IBatchUpdateIntentsResponse {
   
-  @scala.inline
-  def apply(): IBatchUpdateIntentsResponse = {
+  inline def apply(): IBatchUpdateIntentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBatchUpdateIntentsResponse]
   }
   
-  @scala.inline
-  implicit class IBatchUpdateIntentsResponseMutableBuilder[Self <: IBatchUpdateIntentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IBatchUpdateIntentsResponse](x: Self) {
     
-    @scala.inline
-    def setIntents(value: js.Array[IIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    inline def setIntents(value: js.Array[IIntent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentsNull: Self = StObject.set(x, "intents", null)
+    inline def setIntentsNull: Self = StObject.set(x, "intents", null)
     
-    @scala.inline
-    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
+    inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    @scala.inline
-    def setIntentsVarargs(value: IIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: IIntent*): Self = StObject.set(x, "intents", js.Array(value :_*))
   }
 }

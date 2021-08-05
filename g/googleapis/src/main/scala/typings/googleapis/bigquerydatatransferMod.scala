@@ -40,8 +40,7 @@ object bigquerydatatransferMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Bigquerydatatransfer
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object bigquerydatatransferMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object bigquerydatatransferMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def bigquerydatatransfer(options: Options): Bigquerydatatransfer = ^.asInstanceOf[js.Dynamic].applyDynamic("bigquerydatatransfer")(options.asInstanceOf[js.Any]).asInstanceOf[Bigquerydatatransfer]
+  inline def bigquerydatatransfer(options: Options): Bigquerydatatransfer = ^.asInstanceOf[js.Dynamic].applyDynamic("bigquerydatatransfer")(options.asInstanceOf[js.Any]).asInstanceOf[Bigquerydatatransfer]
   
-  @scala.inline
-  def bigquerydatatransfer_v1(version: v1): Bigquerydatatransfer = ^.asInstanceOf[js.Dynamic].applyDynamic("bigquerydatatransfer")(version.asInstanceOf[js.Any]).asInstanceOf[Bigquerydatatransfer]
+  inline def bigquerydatatransfer_v1(version: v1): Bigquerydatatransfer = ^.asInstanceOf[js.Dynamic].applyDynamic("bigquerydatatransfer")(version.asInstanceOf[js.Any]).asInstanceOf[Bigquerydatatransfer]
 }

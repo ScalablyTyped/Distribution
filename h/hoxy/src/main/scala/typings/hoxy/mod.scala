@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("hoxy", "Cycle")
   @js.native
-  class Cycle protected () extends StObject {
+  /* private */ class Cycle () extends StObject {
     
     /**
       * Stores and retrieves data on a cycle instance. This is useful since the same
@@ -49,7 +49,7 @@ object mod {
   @JSImport("hoxy", "Proxy")
   @js.native
   class Proxy protected () extends StObject {
-    protected def this(opts: CreateServerOptions) = this()
+    /* protected */ def this(opts: CreateServerOptions) = this()
     
     /**
       * Stops proxy receiving requests. Finalizes and/or cleans up any
@@ -124,7 +124,7 @@ object mod {
   
   @JSImport("hoxy", "Request")
   @js.native
-  class Request protected () extends StObject {
+  /* private */ class Request () extends StObject {
     
     /**
       * Request body binary buffer. This is only present if you intercept the
@@ -221,7 +221,7 @@ object mod {
   
   @JSImport("hoxy", "Response")
   @js.native
-  class Response protected () extends StObject {
+  /* private */ class Response () extends StObject {
     
     /**
       * Response body parsed as DOM. This object is only present if you intercept
@@ -281,10 +281,8 @@ object mod {
     def tee(stream: Writable): Unit = js.native
   }
   
-  @scala.inline
-  def createServer(): Proxy = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Proxy]
-  @scala.inline
-  def createServer(opts: CreateServerOptions): Proxy = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(opts.asInstanceOf[js.Any]).asInstanceOf[Proxy]
+  inline def createServer(): Proxy = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Proxy]
+  inline def createServer(opts: CreateServerOptions): Proxy = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(opts.asInstanceOf[js.Any]).asInstanceOf[Proxy]
   
   /* Rewritten from type alias, can be one of: 
     - typings.hoxy.hoxyStrings.$
@@ -296,20 +294,15 @@ object mod {
   trait BodyParser extends StObject
   object BodyParser {
     
-    @scala.inline
-    def $: typings.hoxy.hoxyStrings.$ = "$".asInstanceOf[typings.hoxy.hoxyStrings.$]
+    inline def $: typings.hoxy.hoxyStrings.$ = "$".asInstanceOf[typings.hoxy.hoxyStrings.$]
     
-    @scala.inline
-    def buffer: typings.hoxy.hoxyStrings.buffer = "buffer".asInstanceOf[typings.hoxy.hoxyStrings.buffer]
+    inline def buffer: typings.hoxy.hoxyStrings.buffer = "buffer".asInstanceOf[typings.hoxy.hoxyStrings.buffer]
     
-    @scala.inline
-    def json: typings.hoxy.hoxyStrings.json = "json".asInstanceOf[typings.hoxy.hoxyStrings.json]
+    inline def json: typings.hoxy.hoxyStrings.json = "json".asInstanceOf[typings.hoxy.hoxyStrings.json]
     
-    @scala.inline
-    def params: typings.hoxy.hoxyStrings.params = "params".asInstanceOf[typings.hoxy.hoxyStrings.params]
+    inline def params: typings.hoxy.hoxyStrings.params = "params".asInstanceOf[typings.hoxy.hoxyStrings.params]
     
-    @scala.inline
-    def string: typings.hoxy.hoxyStrings.string = "string".asInstanceOf[typings.hoxy.hoxyStrings.string]
+    inline def string: typings.hoxy.hoxyStrings.string = "string".asInstanceOf[typings.hoxy.hoxyStrings.string]
   }
   
   trait CertificateParams extends StObject {
@@ -320,8 +313,7 @@ object mod {
   }
   object CertificateParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cert: String | (js.Array[Buffer | String]) | Buffer,
       key: String | (js.Array[Buffer | js.Object | String]) | Buffer
     ): CertificateParams = {
@@ -329,20 +321,15 @@ object mod {
       __obj.asInstanceOf[CertificateParams]
     }
     
-    @scala.inline
-    implicit class CertificateParamsMutableBuilder[Self <: CertificateParams] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateParams](x: Self) {
       
-      @scala.inline
-      def setCert(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+      inline def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: String | (js.Array[Buffer | js.Object | String]) | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | (js.Array[Buffer | js.Object | String]) | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyVarargs(value: (Buffer | js.Object | String)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (Buffer | js.Object | String)*): Self = StObject.set(x, "key", js.Array(value :_*))
     }
   }
   
@@ -387,44 +374,32 @@ object mod {
   }
   object CreateServerOptions {
     
-    @scala.inline
-    def apply(): CreateServerOptions = {
+    inline def apply(): CreateServerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateServerOptions]
     }
     
-    @scala.inline
-    implicit class CreateServerOptionsMutableBuilder[Self <: CreateServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateServerOptions](x: Self) {
       
-      @scala.inline
-      def setCertAuthority(value: CertificateParams): Self = StObject.set(x, "certAuthority", value.asInstanceOf[js.Any])
+      inline def setCertAuthority(value: CertificateParams): Self = StObject.set(x, "certAuthority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertAuthorityUndefined: Self = StObject.set(x, "certAuthority", js.undefined)
+      inline def setCertAuthorityUndefined: Self = StObject.set(x, "certAuthority", js.undefined)
       
-      @scala.inline
-      def setReverse(value: String): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: String): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setSlow(value: Slow): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+      inline def setSlow(value: Slow): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
+      inline def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
       
-      @scala.inline
-      def setTls(value: CertificateParams): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: CertificateParams): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      @scala.inline
-      def setUpstreamProxy(value: String): Self = StObject.set(x, "upstreamProxy", value.asInstanceOf[js.Any])
+      inline def setUpstreamProxy(value: String): Self = StObject.set(x, "upstreamProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpstreamProxyUndefined: Self = StObject.set(x, "upstreamProxy", js.undefined)
+      inline def setUpstreamProxyUndefined: Self = StObject.set(x, "upstreamProxy", js.undefined)
     }
   }
   
@@ -440,20 +415,15 @@ object mod {
   trait HttpMethod extends StObject
   object HttpMethod {
     
-    @scala.inline
-    def DELETE: typings.hoxy.hoxyStrings.DELETE = "DELETE".asInstanceOf[typings.hoxy.hoxyStrings.DELETE]
+    inline def DELETE: typings.hoxy.hoxyStrings.DELETE = "DELETE".asInstanceOf[typings.hoxy.hoxyStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.hoxy.hoxyStrings.GET = "GET".asInstanceOf[typings.hoxy.hoxyStrings.GET]
+    inline def GET: typings.hoxy.hoxyStrings.GET = "GET".asInstanceOf[typings.hoxy.hoxyStrings.GET]
     
-    @scala.inline
-    def PATCH: typings.hoxy.hoxyStrings.PATCH = "PATCH".asInstanceOf[typings.hoxy.hoxyStrings.PATCH]
+    inline def PATCH: typings.hoxy.hoxyStrings.PATCH = "PATCH".asInstanceOf[typings.hoxy.hoxyStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.hoxy.hoxyStrings.POST = "POST".asInstanceOf[typings.hoxy.hoxyStrings.POST]
+    inline def POST: typings.hoxy.hoxyStrings.POST = "POST".asInstanceOf[typings.hoxy.hoxyStrings.POST]
     
-    @scala.inline
-    def PUT: typings.hoxy.hoxyStrings.PUT = "PUT".asInstanceOf[typings.hoxy.hoxyStrings.PUT]
+    inline def PUT: typings.hoxy.hoxyStrings.PUT = "PUT".asInstanceOf[typings.hoxy.hoxyStrings.PUT]
   }
   
   trait InterceptOptions extends StObject {
@@ -535,131 +505,90 @@ object mod {
   }
   object InterceptOptions {
     
-    @scala.inline
-    def apply(phase: Phase): InterceptOptions = {
+    inline def apply(phase: Phase): InterceptOptions = {
       val __obj = js.Dynamic.literal(phase = phase.asInstanceOf[js.Any])
       __obj.asInstanceOf[InterceptOptions]
     }
     
-    @scala.inline
-    implicit class InterceptOptionsMutableBuilder[Self <: InterceptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InterceptOptions](x: Self) {
       
-      @scala.inline
-      def setAs(value: BodyParser): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: BodyParser): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setContentType(value: Filter[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: Filter[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeFunction1(value: String => Boolean): Self = StObject.set(x, "contentType", js.Any.fromFunction1(value))
+      inline def setContentTypeFunction1(value: String => Boolean): Self = StObject.set(x, "contentType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setFullUrl(value: Filter[String]): Self = StObject.set(x, "fullUrl", value.asInstanceOf[js.Any])
+      inline def setFullUrl(value: Filter[String]): Self = StObject.set(x, "fullUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullUrlFunction1(value: String => Boolean): Self = StObject.set(x, "fullUrl", js.Any.fromFunction1(value))
+      inline def setFullUrlFunction1(value: String => Boolean): Self = StObject.set(x, "fullUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFullUrlUndefined: Self = StObject.set(x, "fullUrl", js.undefined)
+      inline def setFullUrlUndefined: Self = StObject.set(x, "fullUrl", js.undefined)
       
-      @scala.inline
-      def setHostname(value: Filter[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: Filter[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameFunction1(value: String => Boolean): Self = StObject.set(x, "hostname", js.Any.fromFunction1(value))
+      inline def setHostnameFunction1(value: String => Boolean): Self = StObject.set(x, "hostname", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setMethod(value: Filter[HttpMethod]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Filter[HttpMethod]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodFunction1(value: HttpMethod => Boolean): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
+      inline def setMethodFunction1(value: HttpMethod => Boolean): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: Filter[String]): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: Filter[String]): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypeFunction1(value: String => Boolean): Self = StObject.set(x, "mimeType", js.Any.fromFunction1(value))
+      inline def setMimeTypeFunction1(value: String => Boolean): Self = StObject.set(x, "mimeType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       
-      @scala.inline
-      def setPhase(value: Phase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+      inline def setPhase(value: Phase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Filter[Double | String]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Filter[Double | String]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortFunction1(value: Double | String => Boolean): Self = StObject.set(x, "port", js.Any.fromFunction1(value))
+      inline def setPortFunction1(value: Double | String => Boolean): Self = StObject.set(x, "port", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: Filter[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Filter[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolFunction1(value: String => Boolean): Self = StObject.set(x, "protocol", js.Any.fromFunction1(value))
+      inline def setProtocolFunction1(value: String => Boolean): Self = StObject.set(x, "protocol", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setRequestContentType(value: Filter[String]): Self = StObject.set(x, "requestContentType", value.asInstanceOf[js.Any])
+      inline def setRequestContentType(value: Filter[String]): Self = StObject.set(x, "requestContentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestContentTypeFunction1(value: String => Boolean): Self = StObject.set(x, "requestContentType", js.Any.fromFunction1(value))
+      inline def setRequestContentTypeFunction1(value: String => Boolean): Self = StObject.set(x, "requestContentType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestContentTypeUndefined: Self = StObject.set(x, "requestContentType", js.undefined)
+      inline def setRequestContentTypeUndefined: Self = StObject.set(x, "requestContentType", js.undefined)
       
-      @scala.inline
-      def setRequestMimeType(value: Filter[String]): Self = StObject.set(x, "requestMimeType", value.asInstanceOf[js.Any])
+      inline def setRequestMimeType(value: Filter[String]): Self = StObject.set(x, "requestMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestMimeTypeFunction1(value: String => Boolean): Self = StObject.set(x, "requestMimeType", js.Any.fromFunction1(value))
+      inline def setRequestMimeTypeFunction1(value: String => Boolean): Self = StObject.set(x, "requestMimeType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestMimeTypeUndefined: Self = StObject.set(x, "requestMimeType", js.undefined)
+      inline def setRequestMimeTypeUndefined: Self = StObject.set(x, "requestMimeType", js.undefined)
       
-      @scala.inline
-      def setResponseContentType(value: Filter[String]): Self = StObject.set(x, "responseContentType", value.asInstanceOf[js.Any])
+      inline def setResponseContentType(value: Filter[String]): Self = StObject.set(x, "responseContentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseContentTypeFunction1(value: String => Boolean): Self = StObject.set(x, "responseContentType", js.Any.fromFunction1(value))
+      inline def setResponseContentTypeFunction1(value: String => Boolean): Self = StObject.set(x, "responseContentType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseContentTypeUndefined: Self = StObject.set(x, "responseContentType", js.undefined)
+      inline def setResponseContentTypeUndefined: Self = StObject.set(x, "responseContentType", js.undefined)
       
-      @scala.inline
-      def setResponseMimeType(value: Filter[String]): Self = StObject.set(x, "responseMimeType", value.asInstanceOf[js.Any])
+      inline def setResponseMimeType(value: Filter[String]): Self = StObject.set(x, "responseMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseMimeTypeFunction1(value: String => Boolean): Self = StObject.set(x, "responseMimeType", js.Any.fromFunction1(value))
+      inline def setResponseMimeTypeFunction1(value: String => Boolean): Self = StObject.set(x, "responseMimeType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseMimeTypeUndefined: Self = StObject.set(x, "responseMimeType", js.undefined)
+      inline def setResponseMimeTypeUndefined: Self = StObject.set(x, "responseMimeType", js.undefined)
       
-      @scala.inline
-      def setUrl(value: Filter[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Filter[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlFunction1(value: String => Boolean): Self = StObject.set(x, "url", js.Any.fromFunction1(value))
+      inline def setUrlFunction1(value: String => Boolean): Self = StObject.set(x, "url", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -681,26 +610,20 @@ object mod {
   }
   object Log {
     
-    @scala.inline
-    def apply(level: LogLevel, message: String): Log = {
+    inline def apply(level: LogLevel, message: String): Log = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Log]
     }
     
-    @scala.inline
-    implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+    extension [Self <: Log](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -713,17 +636,13 @@ object mod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def debug: typings.hoxy.hoxyStrings.debug = "debug".asInstanceOf[typings.hoxy.hoxyStrings.debug]
+    inline def debug: typings.hoxy.hoxyStrings.debug = "debug".asInstanceOf[typings.hoxy.hoxyStrings.debug]
     
-    @scala.inline
-    def error: typings.hoxy.hoxyStrings.error = "error".asInstanceOf[typings.hoxy.hoxyStrings.error]
+    inline def error: typings.hoxy.hoxyStrings.error = "error".asInstanceOf[typings.hoxy.hoxyStrings.error]
     
-    @scala.inline
-    def info: typings.hoxy.hoxyStrings.info = "info".asInstanceOf[typings.hoxy.hoxyStrings.info]
+    inline def info: typings.hoxy.hoxyStrings.info = "info".asInstanceOf[typings.hoxy.hoxyStrings.info]
     
-    @scala.inline
-    def warn: typings.hoxy.hoxyStrings.warn = "warn".asInstanceOf[typings.hoxy.hoxyStrings.warn]
+    inline def warn: typings.hoxy.hoxyStrings.warn = "warn".asInstanceOf[typings.hoxy.hoxyStrings.warn]
   }
   
   type LoggerCallbackFunction = js.Function1[/* log */ Log, js.Any]
@@ -737,17 +656,13 @@ object mod {
   trait Phase extends StObject
   object Phase {
     
-    @scala.inline
-    def request: typings.hoxy.hoxyStrings.request = "request".asInstanceOf[typings.hoxy.hoxyStrings.request]
+    inline def request: typings.hoxy.hoxyStrings.request = "request".asInstanceOf[typings.hoxy.hoxyStrings.request]
     
-    @scala.inline
-    def `request-sent`: typings.hoxy.hoxyStrings.`request-sent` = "request-sent".asInstanceOf[typings.hoxy.hoxyStrings.`request-sent`]
+    inline def `request-sent`: typings.hoxy.hoxyStrings.`request-sent` = "request-sent".asInstanceOf[typings.hoxy.hoxyStrings.`request-sent`]
     
-    @scala.inline
-    def response: typings.hoxy.hoxyStrings.response = "response".asInstanceOf[typings.hoxy.hoxyStrings.response]
+    inline def response: typings.hoxy.hoxyStrings.response = "response".asInstanceOf[typings.hoxy.hoxyStrings.response]
     
-    @scala.inline
-    def `response-sent`: typings.hoxy.hoxyStrings.`response-sent` = "response-sent".asInstanceOf[typings.hoxy.hoxyStrings.`response-sent`]
+    inline def `response-sent`: typings.hoxy.hoxyStrings.`response-sent` = "response-sent".asInstanceOf[typings.hoxy.hoxyStrings.`response-sent`]
   }
   
   type PossibleErrorCallback = js.Function1[/* err */ js.UndefOr[Error], js.Any]
@@ -785,32 +700,24 @@ object mod {
   }
   object ServeOptions {
     
-    @scala.inline
-    def apply(): ServeOptions = {
+    inline def apply(): ServeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServeOptions]
     }
     
-    @scala.inline
-    implicit class ServeOptionsMutableBuilder[Self <: ServeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServeOptions](x: Self) {
       
-      @scala.inline
-      def setDocroot(value: String): Self = StObject.set(x, "docroot", value.asInstanceOf[js.Any])
+      inline def setDocroot(value: String): Self = StObject.set(x, "docroot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocrootUndefined: Self = StObject.set(x, "docroot", js.undefined)
+      inline def setDocrootUndefined: Self = StObject.set(x, "docroot", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: ServeStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: ServeStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
   
@@ -822,14 +729,11 @@ object mod {
   trait ServeStrategy extends StObject
   object ServeStrategy {
     
-    @scala.inline
-    def mirror: typings.hoxy.hoxyStrings.mirror = "mirror".asInstanceOf[typings.hoxy.hoxyStrings.mirror]
+    inline def mirror: typings.hoxy.hoxyStrings.mirror = "mirror".asInstanceOf[typings.hoxy.hoxyStrings.mirror]
     
-    @scala.inline
-    def overlay: typings.hoxy.hoxyStrings.overlay = "overlay".asInstanceOf[typings.hoxy.hoxyStrings.overlay]
+    inline def overlay: typings.hoxy.hoxyStrings.overlay = "overlay".asInstanceOf[typings.hoxy.hoxyStrings.overlay]
     
-    @scala.inline
-    def replace: typings.hoxy.hoxyStrings.replace = "replace".asInstanceOf[typings.hoxy.hoxyStrings.replace]
+    inline def replace: typings.hoxy.hoxyStrings.replace = "replace".asInstanceOf[typings.hoxy.hoxyStrings.replace]
   }
   
   trait Slow extends StObject {
@@ -856,26 +760,20 @@ object mod {
   }
   object Slow {
     
-    @scala.inline
-    def apply(down: Double, latency: Double, rate: Double, up: Double): Slow = {
+    inline def apply(down: Double, latency: Double, rate: Double, up: Double): Slow = {
       val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], rate = rate.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
       __obj.asInstanceOf[Slow]
     }
     
-    @scala.inline
-    implicit class SlowMutableBuilder[Self <: Slow] (val x: Self) extends AnyVal {
+    extension [Self <: Slow](x: Self) {
       
-      @scala.inline
-      def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+      inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+      inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+      inline def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     }
   }
   

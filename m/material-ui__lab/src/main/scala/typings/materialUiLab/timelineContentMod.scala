@@ -12,6 +12,5 @@ object timelineContentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: TimelineContentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: TimelineContentProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

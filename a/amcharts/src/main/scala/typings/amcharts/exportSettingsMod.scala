@@ -97,8 +97,7 @@ object exportSettingsMod {
   }
   object ExportSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       capture: (js.Any, js.Function0[Unit]) => js.Any,
       config: js.Any,
       enabled: Boolean,
@@ -120,56 +119,39 @@ object exportSettingsMod {
       __obj.asInstanceOf[ExportSettings]
     }
     
-    @scala.inline
-    implicit class ExportSettingsMutableBuilder[Self <: ExportSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ExportSettings](x: Self) {
       
-      @scala.inline
-      def setCapture(value: (js.Any, js.Function0[Unit]) => js.Any): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
+      inline def setCapture(value: (js.Any, js.Function0[Unit]) => js.Any): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLibs(value: js.Object): Self = StObject.set(x, "libs", value.asInstanceOf[js.Any])
+      inline def setLibs(value: js.Object): Self = StObject.set(x, "libs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenu(value: js.Object): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: js.Object): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToArray(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toArray", js.Any.fromFunction2(value))
+      inline def setToArray(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toArray", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToBlob(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toBlob", js.Any.fromFunction2(value))
+      inline def setToBlob(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toBlob", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToCSV(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toCSV", js.Any.fromFunction2(value))
+      inline def setToCSV(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toCSV", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToCanvas(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toCanvas", js.Any.fromFunction2(value))
+      inline def setToCanvas(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toCanvas", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToImage(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toImage", js.Any.fromFunction2(value))
+      inline def setToImage(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toImage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToJPG(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toJPG", js.Any.fromFunction2(value))
+      inline def setToJPG(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toJPG", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToJSON(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction2(value))
+      inline def setToJSON(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToPDF(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toPDF", js.Any.fromFunction2(value))
+      inline def setToPDF(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toPDF", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToPNG(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toPNG", js.Any.fromFunction2(value))
+      inline def setToPNG(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toPNG", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToSVG(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toSVG", js.Any.fromFunction2(value))
+      inline def setToSVG(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toSVG", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToXLSX(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toXLSX", js.Any.fromFunction2(value))
+      inline def setToXLSX(value: (js.Any, js.Function1[/* data */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "toXLSX", js.Any.fromFunction2(value))
     }
   }
 }

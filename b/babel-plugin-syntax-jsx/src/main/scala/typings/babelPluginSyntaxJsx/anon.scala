@@ -12,17 +12,14 @@ object anon {
   }
   object ManipulateOptions {
     
-    @scala.inline
-    def apply(manipulateOptions: (js.Any, Plugins) => Unit): ManipulateOptions = {
+    inline def apply(manipulateOptions: (js.Any, Plugins) => Unit): ManipulateOptions = {
       val __obj = js.Dynamic.literal(manipulateOptions = js.Any.fromFunction2(manipulateOptions))
       __obj.asInstanceOf[ManipulateOptions]
     }
     
-    @scala.inline
-    implicit class ManipulateOptionsMutableBuilder[Self <: ManipulateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ManipulateOptions](x: Self) {
       
-      @scala.inline
-      def setManipulateOptions(value: (js.Any, Plugins) => Unit): Self = StObject.set(x, "manipulateOptions", js.Any.fromFunction2(value))
+      inline def setManipulateOptions(value: (js.Any, Plugins) => Unit): Self = StObject.set(x, "manipulateOptions", js.Any.fromFunction2(value))
     }
   }
   
@@ -32,20 +29,16 @@ object anon {
   }
   object Plugins {
     
-    @scala.inline
-    def apply(plugins: js.Array[String]): Plugins = {
+    inline def apply(plugins: js.Array[String]): Plugins = {
       val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
       __obj.asInstanceOf[Plugins]
     }
     
-    @scala.inline
-    implicit class PluginsMutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
+    extension [Self <: Plugins](x: Self) {
       
-      @scala.inline
-      def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     }
   }
 }

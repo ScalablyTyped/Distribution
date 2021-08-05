@@ -51,43 +51,31 @@ trait SchemaGooglePrivacyDlpV2ReidentifyContentRequest extends StObject {
 }
 object SchemaGooglePrivacyDlpV2ReidentifyContentRequest {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2ReidentifyContentRequest = {
+  inline def apply(): SchemaGooglePrivacyDlpV2ReidentifyContentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ReidentifyContentRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ReidentifyContentRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2ReidentifyContentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2ReidentifyContentRequest](x: Self) {
     
-    @scala.inline
-    def setInspectConfig(value: SchemaGooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
+    inline def setInspectConfig(value: SchemaGooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
+    inline def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
     
-    @scala.inline
-    def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
+    inline def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
+    inline def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
     
-    @scala.inline
-    def setItem(value: SchemaGooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: SchemaGooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setReidentifyConfig(value: SchemaGooglePrivacyDlpV2DeidentifyConfig): Self = StObject.set(x, "reidentifyConfig", value.asInstanceOf[js.Any])
+    inline def setReidentifyConfig(value: SchemaGooglePrivacyDlpV2DeidentifyConfig): Self = StObject.set(x, "reidentifyConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReidentifyConfigUndefined: Self = StObject.set(x, "reidentifyConfig", js.undefined)
+    inline def setReidentifyConfigUndefined: Self = StObject.set(x, "reidentifyConfig", js.undefined)
     
-    @scala.inline
-    def setReidentifyTemplateName(value: String): Self = StObject.set(x, "reidentifyTemplateName", value.asInstanceOf[js.Any])
+    inline def setReidentifyTemplateName(value: String): Self = StObject.set(x, "reidentifyTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReidentifyTemplateNameUndefined: Self = StObject.set(x, "reidentifyTemplateName", js.undefined)
+    inline def setReidentifyTemplateNameUndefined: Self = StObject.set(x, "reidentifyTemplateName", js.undefined)
   }
 }

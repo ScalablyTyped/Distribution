@@ -8,6 +8,5 @@ object bootpagStrings {
   
   @js.native
   sealed trait page extends StObject
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
+  inline def page: page = "page".asInstanceOf[page]
 }

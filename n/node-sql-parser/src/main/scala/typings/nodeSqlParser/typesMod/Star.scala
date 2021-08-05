@@ -14,20 +14,16 @@ trait Star extends StObject {
 }
 object Star {
   
-  @scala.inline
-  def apply(): Star = {
+  inline def apply(): Star = {
     val __obj = js.Dynamic.literal(value = "*")
     __obj.updateDynamic("type")("star")
     __obj.asInstanceOf[Star]
   }
   
-  @scala.inline
-  implicit class StarMutableBuilder[Self <: Star] (val x: Self) extends AnyVal {
+  extension [Self <: Star](x: Self) {
     
-    @scala.inline
-    def setType(value: star): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: star): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Asterisk): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Asterisk): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait ClusterParameterGroupsMessage extends StObject {
 }
 object ClusterParameterGroupsMessage {
   
-  @scala.inline
-  def apply(): ClusterParameterGroupsMessage = {
+  inline def apply(): ClusterParameterGroupsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterParameterGroupsMessage]
   }
   
-  @scala.inline
-  implicit class ClusterParameterGroupsMessageMutableBuilder[Self <: ClusterParameterGroupsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterParameterGroupsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setParameterGroups(value: ParameterGroupList): Self = StObject.set(x, "ParameterGroups", value.asInstanceOf[js.Any])
+    inline def setParameterGroups(value: ParameterGroupList): Self = StObject.set(x, "ParameterGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterGroupsUndefined: Self = StObject.set(x, "ParameterGroups", js.undefined)
+    inline def setParameterGroupsUndefined: Self = StObject.set(x, "ParameterGroups", js.undefined)
     
-    @scala.inline
-    def setParameterGroupsVarargs(value: ClusterParameterGroup*): Self = StObject.set(x, "ParameterGroups", js.Array(value :_*))
+    inline def setParameterGroupsVarargs(value: ClusterParameterGroup*): Self = StObject.set(x, "ParameterGroups", js.Array(value :_*))
   }
 }

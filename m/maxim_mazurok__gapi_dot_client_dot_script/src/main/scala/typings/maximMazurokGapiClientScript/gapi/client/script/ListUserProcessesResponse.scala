@@ -14,28 +14,21 @@ trait ListUserProcessesResponse extends StObject {
 }
 object ListUserProcessesResponse {
   
-  @scala.inline
-  def apply(): ListUserProcessesResponse = {
+  inline def apply(): ListUserProcessesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUserProcessesResponse]
   }
   
-  @scala.inline
-  implicit class ListUserProcessesResponseMutableBuilder[Self <: ListUserProcessesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUserProcessesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setProcesses(value: js.Array[GoogleAppsScriptTypeProcess]): Self = StObject.set(x, "processes", value.asInstanceOf[js.Any])
+    inline def setProcesses(value: js.Array[GoogleAppsScriptTypeProcess]): Self = StObject.set(x, "processes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessesUndefined: Self = StObject.set(x, "processes", js.undefined)
+    inline def setProcessesUndefined: Self = StObject.set(x, "processes", js.undefined)
     
-    @scala.inline
-    def setProcessesVarargs(value: GoogleAppsScriptTypeProcess*): Self = StObject.set(x, "processes", js.Array(value :_*))
+    inline def setProcessesVarargs(value: GoogleAppsScriptTypeProcess*): Self = StObject.set(x, "processes", js.Array(value :_*))
   }
 }

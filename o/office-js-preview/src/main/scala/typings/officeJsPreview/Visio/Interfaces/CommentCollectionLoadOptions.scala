@@ -41,37 +41,27 @@ trait CommentCollectionLoadOptions extends StObject {
 }
 object CommentCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): CommentCollectionLoadOptions = {
+  inline def apply(): CommentCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class CommentCollectionLoadOptionsMutableBuilder[Self <: CommentCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommentCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAuthor(value: Boolean): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Boolean): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

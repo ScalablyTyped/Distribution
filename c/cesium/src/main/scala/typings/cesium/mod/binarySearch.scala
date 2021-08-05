@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object binarySearch {
   
-  @scala.inline
-  def apply(array: js.Array[js.Any], itemToFind: js.Any, comparator: Comparator): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], itemToFind.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(array: js.Array[js.Any], itemToFind: js.Any, comparator: Comparator): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], itemToFind.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("cesium", "binarySearch")
   @js.native

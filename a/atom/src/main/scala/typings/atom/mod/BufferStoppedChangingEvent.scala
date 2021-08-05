@@ -10,19 +10,15 @@ trait BufferStoppedChangingEvent extends StObject {
 }
 object BufferStoppedChangingEvent {
   
-  @scala.inline
-  def apply(changes: js.Array[TextChange]): BufferStoppedChangingEvent = {
+  inline def apply(changes: js.Array[TextChange]): BufferStoppedChangingEvent = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferStoppedChangingEvent]
   }
   
-  @scala.inline
-  implicit class BufferStoppedChangingEventMutableBuilder[Self <: BufferStoppedChangingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BufferStoppedChangingEvent](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[TextChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[TextChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: TextChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: TextChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
   }
 }

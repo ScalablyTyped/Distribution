@@ -17,31 +17,23 @@ trait PrivacyProfile extends StObject {
 }
 object PrivacyProfile {
   
-  @scala.inline
-  def apply(): PrivacyProfile = {
+  inline def apply(): PrivacyProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrivacyProfile]
   }
   
-  @scala.inline
-  implicit class PrivacyProfileMutableBuilder[Self <: PrivacyProfile] (val x: Self) extends AnyVal {
+  extension [Self <: PrivacyProfile](x: Self) {
     
-    @scala.inline
-    def setContactEmail(value: NullableOption[String]): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
+    inline def setContactEmail(value: NullableOption[String]): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactEmailNull: Self = StObject.set(x, "contactEmail", null)
+    inline def setContactEmailNull: Self = StObject.set(x, "contactEmail", null)
     
-    @scala.inline
-    def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
+    inline def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
-    @scala.inline
-    def setStatementUrl(value: NullableOption[String]): Self = StObject.set(x, "statementUrl", value.asInstanceOf[js.Any])
+    inline def setStatementUrl(value: NullableOption[String]): Self = StObject.set(x, "statementUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementUrlNull: Self = StObject.set(x, "statementUrl", null)
+    inline def setStatementUrlNull: Self = StObject.set(x, "statementUrl", null)
     
-    @scala.inline
-    def setStatementUrlUndefined: Self = StObject.set(x, "statementUrl", js.undefined)
+    inline def setStatementUrlUndefined: Self = StObject.set(x, "statementUrl", js.undefined)
   }
 }

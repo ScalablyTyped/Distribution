@@ -37,8 +37,7 @@ object configMod {
     @JSImport("rxjs/internal/config", "config.Promise")
     @js.native
     def Promise: PromiseConstructorLike = js.native
-    @scala.inline
-    def Promise_=(x: PromiseConstructorLike): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+    inline def Promise_=(x: PromiseConstructorLike): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
     
     /**
       * If true, turns on synchronous error rethrowing, which is a deprecated behavior
@@ -51,7 +50,6 @@ object configMod {
     @JSImport("rxjs/internal/config", "config.useDeprecatedSynchronousErrorHandling")
     @js.native
     def useDeprecatedSynchronousErrorHandling: Boolean = js.native
-    @scala.inline
-    def useDeprecatedSynchronousErrorHandling_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useDeprecatedSynchronousErrorHandling")(x.asInstanceOf[js.Any])
+    inline def useDeprecatedSynchronousErrorHandling_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useDeprecatedSynchronousErrorHandling")(x.asInstanceOf[js.Any])
   }
 }

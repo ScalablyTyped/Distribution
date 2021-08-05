@@ -26,8 +26,7 @@ trait PackFile
      with File
 object PackFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,

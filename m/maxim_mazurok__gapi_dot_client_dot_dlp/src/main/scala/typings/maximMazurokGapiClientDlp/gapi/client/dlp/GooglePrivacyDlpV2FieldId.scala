@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2FieldId extends StObject {
 }
 object GooglePrivacyDlpV2FieldId {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2FieldId = {
+  inline def apply(): GooglePrivacyDlpV2FieldId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2FieldId]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2FieldIdMutableBuilder[Self <: GooglePrivacyDlpV2FieldId] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2FieldId](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

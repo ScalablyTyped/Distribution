@@ -10,19 +10,15 @@ trait ProcessResultsDelay extends StObject {
 }
 object ProcessResultsDelay {
   
-  @scala.inline
-  def apply(): ProcessResultsDelay = {
+  inline def apply(): ProcessResultsDelay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProcessResultsDelay]
   }
   
-  @scala.inline
-  implicit class ProcessResultsDelayMutableBuilder[Self <: ProcessResultsDelay] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessResultsDelay](x: Self) {
     
-    @scala.inline
-    def setProcessResultsDelay(value: Double): Self = StObject.set(x, "processResultsDelay", value.asInstanceOf[js.Any])
+    inline def setProcessResultsDelay(value: Double): Self = StObject.set(x, "processResultsDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessResultsDelayUndefined: Self = StObject.set(x, "processResultsDelay", js.undefined)
+    inline def setProcessResultsDelayUndefined: Self = StObject.set(x, "processResultsDelay", js.undefined)
   }
 }

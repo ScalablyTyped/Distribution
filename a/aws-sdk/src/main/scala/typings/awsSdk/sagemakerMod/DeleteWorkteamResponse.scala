@@ -13,16 +13,13 @@ trait DeleteWorkteamResponse extends StObject {
 }
 object DeleteWorkteamResponse {
   
-  @scala.inline
-  def apply(Success: Success): DeleteWorkteamResponse = {
+  inline def apply(Success: Success): DeleteWorkteamResponse = {
     val __obj = js.Dynamic.literal(Success = Success.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWorkteamResponse]
   }
   
-  @scala.inline
-  implicit class DeleteWorkteamResponseMutableBuilder[Self <: DeleteWorkteamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWorkteamResponse](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
   }
 }

@@ -27,44 +27,32 @@ trait DirectiveNode
 }
 object DirectiveNode {
   
-  @scala.inline
-  def apply(loc: SourceLocation, modifiers: js.Array[String], name: String): DirectiveNode = {
+  inline def apply(loc: SourceLocation, modifiers: js.Array[String], name: String): DirectiveNode = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(7)
     __obj.asInstanceOf[DirectiveNode]
   }
   
-  @scala.inline
-  implicit class DirectiveNodeMutableBuilder[Self <: DirectiveNode] (val x: Self) extends AnyVal {
+  extension [Self <: DirectiveNode](x: Self) {
     
-    @scala.inline
-    def setArg(value: ExpressionNode): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+    inline def setArg(value: ExpressionNode): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgUndefined: Self = StObject.set(x, "arg", js.undefined)
+    inline def setArgUndefined: Self = StObject.set(x, "arg", js.undefined)
     
-    @scala.inline
-    def setExp(value: ExpressionNode): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+    inline def setExp(value: ExpressionNode): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
+    inline def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
     
-    @scala.inline
-    def setModifiers(value: js.Array[String]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[String]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseResult(value: ForParseResult): Self = StObject.set(x, "parseResult", value.asInstanceOf[js.Any])
+    inline def setParseResult(value: ForParseResult): Self = StObject.set(x, "parseResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseResultUndefined: Self = StObject.set(x, "parseResult", js.undefined)
+    inline def setParseResultUndefined: Self = StObject.set(x, "parseResult", js.undefined)
     
-    @scala.inline
-    def setType(value: `7`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `7`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

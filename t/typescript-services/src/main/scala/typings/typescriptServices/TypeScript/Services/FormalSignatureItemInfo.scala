@@ -16,8 +16,7 @@ trait FormalSignatureItemInfo extends StObject {
 }
 object FormalSignatureItemInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     docComment: String,
     parameters: js.Array[FormalParameterInfo],
     signatureInfo: String,
@@ -27,25 +26,18 @@ object FormalSignatureItemInfo {
     __obj.asInstanceOf[FormalSignatureItemInfo]
   }
   
-  @scala.inline
-  implicit class FormalSignatureItemInfoMutableBuilder[Self <: FormalSignatureItemInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FormalSignatureItemInfo](x: Self) {
     
-    @scala.inline
-    def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
+    inline def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: js.Array[FormalParameterInfo]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[FormalParameterInfo]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: FormalParameterInfo*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: FormalParameterInfo*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setSignatureInfo(value: String): Self = StObject.set(x, "signatureInfo", value.asInstanceOf[js.Any])
+    inline def setSignatureInfo(value: String): Self = StObject.set(x, "signatureInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: js.Array[FormalTypeParameterInfo]): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: js.Array[FormalTypeParameterInfo]): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersVarargs(value: FormalTypeParameterInfo*): Self = StObject.set(x, "typeParameters", js.Array(value :_*))
+    inline def setTypeParametersVarargs(value: FormalTypeParameterInfo*): Self = StObject.set(x, "typeParameters", js.Array(value :_*))
   }
 }

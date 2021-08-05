@@ -18,28 +18,21 @@ trait ListElasticsearchInstanceTypesResponse extends StObject {
 }
 object ListElasticsearchInstanceTypesResponse {
   
-  @scala.inline
-  def apply(): ListElasticsearchInstanceTypesResponse = {
+  inline def apply(): ListElasticsearchInstanceTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListElasticsearchInstanceTypesResponse]
   }
   
-  @scala.inline
-  implicit class ListElasticsearchInstanceTypesResponseMutableBuilder[Self <: ListElasticsearchInstanceTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListElasticsearchInstanceTypesResponse](x: Self) {
     
-    @scala.inline
-    def setElasticsearchInstanceTypes(value: ElasticsearchInstanceTypeList): Self = StObject.set(x, "ElasticsearchInstanceTypes", value.asInstanceOf[js.Any])
+    inline def setElasticsearchInstanceTypes(value: ElasticsearchInstanceTypeList): Self = StObject.set(x, "ElasticsearchInstanceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticsearchInstanceTypesUndefined: Self = StObject.set(x, "ElasticsearchInstanceTypes", js.undefined)
+    inline def setElasticsearchInstanceTypesUndefined: Self = StObject.set(x, "ElasticsearchInstanceTypes", js.undefined)
     
-    @scala.inline
-    def setElasticsearchInstanceTypesVarargs(value: ESPartitionInstanceType*): Self = StObject.set(x, "ElasticsearchInstanceTypes", js.Array(value :_*))
+    inline def setElasticsearchInstanceTypesVarargs(value: ESPartitionInstanceType*): Self = StObject.set(x, "ElasticsearchInstanceTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

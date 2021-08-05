@@ -157,20 +157,17 @@ object mod {
       * Deserialize a message id object from a Buffer.
       * @param data
       */
-    @scala.inline
-    def deserialize(data: Buffer): MessageId = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[MessageId]
+    inline def deserialize(data: Buffer): MessageId = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[MessageId]
     
     /**
       * MessageId representing the earliest, or oldest available message stored in the topic.
       */
-    @scala.inline
-    def earliest(): MessageId = ^.asInstanceOf[js.Dynamic].applyDynamic("earliest")().asInstanceOf[MessageId]
+    inline def earliest(): MessageId = ^.asInstanceOf[js.Dynamic].applyDynamic("earliest")().asInstanceOf[MessageId]
     
     /**
       * MessageId representing the latest, or last published message in the topic.
       */
-    @scala.inline
-    def latest(): MessageId = ^.asInstanceOf[js.Dynamic].applyDynamic("latest")().asInstanceOf[MessageId]
+    inline def latest(): MessageId = ^.asInstanceOf[js.Dynamic].applyDynamic("latest")().asInstanceOf[MessageId]
   }
   
   @JSImport("pulsar-client", "Producer")
@@ -286,71 +283,50 @@ object mod {
   }
   object ClientOpts {
     
-    @scala.inline
-    def apply(serviceUrl: String): ClientOpts = {
+    inline def apply(serviceUrl: String): ClientOpts = {
       val __obj = js.Dynamic.literal(serviceUrl = serviceUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientOpts]
     }
     
-    @scala.inline
-    implicit class ClientOptsMutableBuilder[Self <: ClientOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOpts](x: Self) {
       
-      @scala.inline
-      def setAuthentication(value: AuthenticationTls | AuthenticationToken): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+      inline def setAuthentication(value: AuthenticationTls | AuthenticationToken): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
+      inline def setAuthenticationUndefined: Self = StObject.set(x, "authentication", js.undefined)
       
-      @scala.inline
-      def setConcurrentLookupRequest(value: Double): Self = StObject.set(x, "concurrentLookupRequest", value.asInstanceOf[js.Any])
+      inline def setConcurrentLookupRequest(value: Double): Self = StObject.set(x, "concurrentLookupRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentLookupRequestUndefined: Self = StObject.set(x, "concurrentLookupRequest", js.undefined)
+      inline def setConcurrentLookupRequestUndefined: Self = StObject.set(x, "concurrentLookupRequest", js.undefined)
       
-      @scala.inline
-      def setIoThreads(value: Double): Self = StObject.set(x, "ioThreads", value.asInstanceOf[js.Any])
+      inline def setIoThreads(value: Double): Self = StObject.set(x, "ioThreads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIoThreadsUndefined: Self = StObject.set(x, "ioThreads", js.undefined)
+      inline def setIoThreadsUndefined: Self = StObject.set(x, "ioThreads", js.undefined)
       
-      @scala.inline
-      def setMessageListenerThreads(value: Double): Self = StObject.set(x, "messageListenerThreads", value.asInstanceOf[js.Any])
+      inline def setMessageListenerThreads(value: Double): Self = StObject.set(x, "messageListenerThreads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageListenerThreadsUndefined: Self = StObject.set(x, "messageListenerThreads", js.undefined)
+      inline def setMessageListenerThreadsUndefined: Self = StObject.set(x, "messageListenerThreads", js.undefined)
       
-      @scala.inline
-      def setOperationTimeoutSeconds(value: Double): Self = StObject.set(x, "operationTimeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setOperationTimeoutSeconds(value: Double): Self = StObject.set(x, "operationTimeoutSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationTimeoutSecondsUndefined: Self = StObject.set(x, "operationTimeoutSeconds", js.undefined)
+      inline def setOperationTimeoutSecondsUndefined: Self = StObject.set(x, "operationTimeoutSeconds", js.undefined)
       
-      @scala.inline
-      def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
+      inline def setServiceUrl(value: String): Self = StObject.set(x, "serviceUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsIntervalInSeconds(value: Double): Self = StObject.set(x, "statsIntervalInSeconds", value.asInstanceOf[js.Any])
+      inline def setStatsIntervalInSeconds(value: Double): Self = StObject.set(x, "statsIntervalInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsIntervalInSecondsUndefined: Self = StObject.set(x, "statsIntervalInSeconds", js.undefined)
+      inline def setStatsIntervalInSecondsUndefined: Self = StObject.set(x, "statsIntervalInSeconds", js.undefined)
       
-      @scala.inline
-      def setTlsAllowInsecureConnection(value: Boolean): Self = StObject.set(x, "tlsAllowInsecureConnection", value.asInstanceOf[js.Any])
+      inline def setTlsAllowInsecureConnection(value: Boolean): Self = StObject.set(x, "tlsAllowInsecureConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsAllowInsecureConnectionUndefined: Self = StObject.set(x, "tlsAllowInsecureConnection", js.undefined)
+      inline def setTlsAllowInsecureConnectionUndefined: Self = StObject.set(x, "tlsAllowInsecureConnection", js.undefined)
       
-      @scala.inline
-      def setTlsTrustCertsFilePath(value: String): Self = StObject.set(x, "tlsTrustCertsFilePath", value.asInstanceOf[js.Any])
+      inline def setTlsTrustCertsFilePath(value: String): Self = StObject.set(x, "tlsTrustCertsFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsTrustCertsFilePathUndefined: Self = StObject.set(x, "tlsTrustCertsFilePath", js.undefined)
+      inline def setTlsTrustCertsFilePathUndefined: Self = StObject.set(x, "tlsTrustCertsFilePath", js.undefined)
       
-      @scala.inline
-      def setTlsValidateHostname(value: Boolean): Self = StObject.set(x, "tlsValidateHostname", value.asInstanceOf[js.Any])
+      inline def setTlsValidateHostname(value: Boolean): Self = StObject.set(x, "tlsValidateHostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsValidateHostnameUndefined: Self = StObject.set(x, "tlsValidateHostname", js.undefined)
+      inline def setTlsValidateHostnameUndefined: Self = StObject.set(x, "tlsValidateHostname", js.undefined)
     }
   }
   
@@ -361,11 +337,9 @@ object mod {
   trait CompressionType extends StObject
   object CompressionType {
     
-    @scala.inline
-    def LZ4: typings.pulsarClient.pulsarClientStrings.LZ4 = "LZ4".asInstanceOf[typings.pulsarClient.pulsarClientStrings.LZ4]
+    inline def LZ4: typings.pulsarClient.pulsarClientStrings.LZ4 = "LZ4".asInstanceOf[typings.pulsarClient.pulsarClientStrings.LZ4]
     
-    @scala.inline
-    def Zlib: typings.pulsarClient.pulsarClientStrings.Zlib = "Zlib".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Zlib]
+    inline def Zlib: typings.pulsarClient.pulsarClientStrings.Zlib = "Zlib".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Zlib]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -376,14 +350,11 @@ object mod {
   trait HashingScheme extends StObject
   object HashingScheme {
     
-    @scala.inline
-    def BoostHash: typings.pulsarClient.pulsarClientStrings.BoostHash = "BoostHash".asInstanceOf[typings.pulsarClient.pulsarClientStrings.BoostHash]
+    inline def BoostHash: typings.pulsarClient.pulsarClientStrings.BoostHash = "BoostHash".asInstanceOf[typings.pulsarClient.pulsarClientStrings.BoostHash]
     
-    @scala.inline
-    def JavaStringHash: typings.pulsarClient.pulsarClientStrings.JavaStringHash = "JavaStringHash".asInstanceOf[typings.pulsarClient.pulsarClientStrings.JavaStringHash]
+    inline def JavaStringHash: typings.pulsarClient.pulsarClientStrings.JavaStringHash = "JavaStringHash".asInstanceOf[typings.pulsarClient.pulsarClientStrings.JavaStringHash]
     
-    @scala.inline
-    def Murmur3_32Hash: typings.pulsarClient.pulsarClientStrings.Murmur3_32Hash = "Murmur3_32Hash".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Murmur3_32Hash]
+    inline def Murmur3_32Hash: typings.pulsarClient.pulsarClientStrings.Murmur3_32Hash = "Murmur3_32Hash".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Murmur3_32Hash]
   }
   
   type MessageProperties = StringDictionary[String]
@@ -396,14 +367,11 @@ object mod {
   trait MessageRoutingModes extends StObject
   object MessageRoutingModes {
     
-    @scala.inline
-    def CustomPartition: typings.pulsarClient.pulsarClientStrings.CustomPartition = "CustomPartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.CustomPartition]
+    inline def CustomPartition: typings.pulsarClient.pulsarClientStrings.CustomPartition = "CustomPartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.CustomPartition]
     
-    @scala.inline
-    def RoundRobinPartition: typings.pulsarClient.pulsarClientStrings.RoundRobinPartition = "RoundRobinPartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.RoundRobinPartition]
+    inline def RoundRobinPartition: typings.pulsarClient.pulsarClientStrings.RoundRobinPartition = "RoundRobinPartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.RoundRobinPartition]
     
-    @scala.inline
-    def SinglePartition: typings.pulsarClient.pulsarClientStrings.SinglePartition = "SinglePartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.SinglePartition]
+    inline def SinglePartition: typings.pulsarClient.pulsarClientStrings.SinglePartition = "SinglePartition".asInstanceOf[typings.pulsarClient.pulsarClientStrings.SinglePartition]
   }
   
   trait ProducerMessage extends StObject {
@@ -441,50 +409,36 @@ object mod {
   }
   object ProducerMessage {
     
-    @scala.inline
-    def apply(data: Buffer): ProducerMessage = {
+    inline def apply(data: Buffer): ProducerMessage = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProducerMessage]
     }
     
-    @scala.inline
-    implicit class ProducerMessageMutableBuilder[Self <: ProducerMessage] (val x: Self) extends AnyVal {
+    extension [Self <: ProducerMessage](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTimestamp(value: Double): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
+      inline def setEventTimestamp(value: Double): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTimestampUndefined: Self = StObject.set(x, "eventTimestamp", js.undefined)
+      inline def setEventTimestampUndefined: Self = StObject.set(x, "eventTimestamp", js.undefined)
       
-      @scala.inline
-      def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      inline def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
+      inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
       
-      @scala.inline
-      def setProperties(value: MessageProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: MessageProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setReplicationClusters(value: js.Array[String]): Self = StObject.set(x, "replicationClusters", value.asInstanceOf[js.Any])
+      inline def setReplicationClusters(value: js.Array[String]): Self = StObject.set(x, "replicationClusters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationClustersUndefined: Self = StObject.set(x, "replicationClusters", js.undefined)
+      inline def setReplicationClustersUndefined: Self = StObject.set(x, "replicationClusters", js.undefined)
       
-      @scala.inline
-      def setReplicationClustersVarargs(value: String*): Self = StObject.set(x, "replicationClusters", js.Array(value :_*))
+      inline def setReplicationClustersVarargs(value: String*): Self = StObject.set(x, "replicationClusters", js.Array(value :_*))
       
-      @scala.inline
-      def setSequenceId(value: Double): Self = StObject.set(x, "sequenceId", value.asInstanceOf[js.Any])
+      inline def setSequenceId(value: Double): Self = StObject.set(x, "sequenceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceIdUndefined: Self = StObject.set(x, "sequenceId", js.undefined)
+      inline def setSequenceIdUndefined: Self = StObject.set(x, "sequenceId", js.undefined)
     }
   }
   
@@ -581,95 +535,66 @@ object mod {
   }
   object ProducerOpts {
     
-    @scala.inline
-    def apply(topic: String): ProducerOpts = {
+    inline def apply(topic: String): ProducerOpts = {
       val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProducerOpts]
     }
     
-    @scala.inline
-    implicit class ProducerOptsMutableBuilder[Self <: ProducerOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ProducerOpts](x: Self) {
       
-      @scala.inline
-      def setBatchingEnabled(value: Boolean): Self = StObject.set(x, "batchingEnabled", value.asInstanceOf[js.Any])
+      inline def setBatchingEnabled(value: Boolean): Self = StObject.set(x, "batchingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchingEnabledUndefined: Self = StObject.set(x, "batchingEnabled", js.undefined)
+      inline def setBatchingEnabledUndefined: Self = StObject.set(x, "batchingEnabled", js.undefined)
       
-      @scala.inline
-      def setBatchingMaxMessages(value: Double): Self = StObject.set(x, "batchingMaxMessages", value.asInstanceOf[js.Any])
+      inline def setBatchingMaxMessages(value: Double): Self = StObject.set(x, "batchingMaxMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchingMaxMessagesUndefined: Self = StObject.set(x, "batchingMaxMessages", js.undefined)
+      inline def setBatchingMaxMessagesUndefined: Self = StObject.set(x, "batchingMaxMessages", js.undefined)
       
-      @scala.inline
-      def setBatchingMaxPublishDelayMs(value: Double): Self = StObject.set(x, "batchingMaxPublishDelayMs", value.asInstanceOf[js.Any])
+      inline def setBatchingMaxPublishDelayMs(value: Double): Self = StObject.set(x, "batchingMaxPublishDelayMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchingMaxPublishDelayMsUndefined: Self = StObject.set(x, "batchingMaxPublishDelayMs", js.undefined)
+      inline def setBatchingMaxPublishDelayMsUndefined: Self = StObject.set(x, "batchingMaxPublishDelayMs", js.undefined)
       
-      @scala.inline
-      def setBlockIfQueueFull(value: Boolean): Self = StObject.set(x, "blockIfQueueFull", value.asInstanceOf[js.Any])
+      inline def setBlockIfQueueFull(value: Boolean): Self = StObject.set(x, "blockIfQueueFull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockIfQueueFullUndefined: Self = StObject.set(x, "blockIfQueueFull", js.undefined)
+      inline def setBlockIfQueueFullUndefined: Self = StObject.set(x, "blockIfQueueFull", js.undefined)
       
-      @scala.inline
-      def setCompressionType(value: CompressionType): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
+      inline def setCompressionType(value: CompressionType): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
+      inline def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
       
-      @scala.inline
-      def setHashingScheme(value: HashingScheme): Self = StObject.set(x, "hashingScheme", value.asInstanceOf[js.Any])
+      inline def setHashingScheme(value: HashingScheme): Self = StObject.set(x, "hashingScheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashingSchemeUndefined: Self = StObject.set(x, "hashingScheme", js.undefined)
+      inline def setHashingSchemeUndefined: Self = StObject.set(x, "hashingScheme", js.undefined)
       
-      @scala.inline
-      def setInitialSequenceId(value: Double): Self = StObject.set(x, "initialSequenceId", value.asInstanceOf[js.Any])
+      inline def setInitialSequenceId(value: Double): Self = StObject.set(x, "initialSequenceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSequenceIdUndefined: Self = StObject.set(x, "initialSequenceId", js.undefined)
+      inline def setInitialSequenceIdUndefined: Self = StObject.set(x, "initialSequenceId", js.undefined)
       
-      @scala.inline
-      def setMaxPendingMessages(value: Double): Self = StObject.set(x, "maxPendingMessages", value.asInstanceOf[js.Any])
+      inline def setMaxPendingMessages(value: Double): Self = StObject.set(x, "maxPendingMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPendingMessagesAcrossPartitions(value: Double): Self = StObject.set(x, "maxPendingMessagesAcrossPartitions", value.asInstanceOf[js.Any])
+      inline def setMaxPendingMessagesAcrossPartitions(value: Double): Self = StObject.set(x, "maxPendingMessagesAcrossPartitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPendingMessagesAcrossPartitionsUndefined: Self = StObject.set(x, "maxPendingMessagesAcrossPartitions", js.undefined)
+      inline def setMaxPendingMessagesAcrossPartitionsUndefined: Self = StObject.set(x, "maxPendingMessagesAcrossPartitions", js.undefined)
       
-      @scala.inline
-      def setMaxPendingMessagesUndefined: Self = StObject.set(x, "maxPendingMessages", js.undefined)
+      inline def setMaxPendingMessagesUndefined: Self = StObject.set(x, "maxPendingMessages", js.undefined)
       
-      @scala.inline
-      def setMessageRoutingMode(value: MessageRoutingModes): Self = StObject.set(x, "messageRoutingMode", value.asInstanceOf[js.Any])
+      inline def setMessageRoutingMode(value: MessageRoutingModes): Self = StObject.set(x, "messageRoutingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageRoutingModeUndefined: Self = StObject.set(x, "messageRoutingMode", js.undefined)
+      inline def setMessageRoutingModeUndefined: Self = StObject.set(x, "messageRoutingMode", js.undefined)
       
-      @scala.inline
-      def setProducerName(value: String): Self = StObject.set(x, "producerName", value.asInstanceOf[js.Any])
+      inline def setProducerName(value: String): Self = StObject.set(x, "producerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProducerNameUndefined: Self = StObject.set(x, "producerName", js.undefined)
+      inline def setProducerNameUndefined: Self = StObject.set(x, "producerName", js.undefined)
       
-      @scala.inline
-      def setProperties(value: MessageProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: MessageProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setSendTimeoutMs(value: Double): Self = StObject.set(x, "sendTimeoutMs", value.asInstanceOf[js.Any])
+      inline def setSendTimeoutMs(value: Double): Self = StObject.set(x, "sendTimeoutMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendTimeoutMsUndefined: Self = StObject.set(x, "sendTimeoutMs", js.undefined)
+      inline def setSendTimeoutMsUndefined: Self = StObject.set(x, "sendTimeoutMs", js.undefined)
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -706,38 +631,28 @@ object mod {
   }
   object ReaderOpts {
     
-    @scala.inline
-    def apply(startMessageId: MessageId, topic: String): ReaderOpts = {
+    inline def apply(startMessageId: MessageId, topic: String): ReaderOpts = {
       val __obj = js.Dynamic.literal(startMessageId = startMessageId.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReaderOpts]
     }
     
-    @scala.inline
-    implicit class ReaderOptsMutableBuilder[Self <: ReaderOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ReaderOpts](x: Self) {
       
-      @scala.inline
-      def setReaderName(value: String): Self = StObject.set(x, "readerName", value.asInstanceOf[js.Any])
+      inline def setReaderName(value: String): Self = StObject.set(x, "readerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReaderNameUndefined: Self = StObject.set(x, "readerName", js.undefined)
+      inline def setReaderNameUndefined: Self = StObject.set(x, "readerName", js.undefined)
       
-      @scala.inline
-      def setReceiverQueueSize(value: Double): Self = StObject.set(x, "receiverQueueSize", value.asInstanceOf[js.Any])
+      inline def setReceiverQueueSize(value: Double): Self = StObject.set(x, "receiverQueueSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiverQueueSizeUndefined: Self = StObject.set(x, "receiverQueueSize", js.undefined)
+      inline def setReceiverQueueSizeUndefined: Self = StObject.set(x, "receiverQueueSize", js.undefined)
       
-      @scala.inline
-      def setStartMessageId(value: MessageId): Self = StObject.set(x, "startMessageId", value.asInstanceOf[js.Any])
+      inline def setStartMessageId(value: MessageId): Self = StObject.set(x, "startMessageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionRolePrefix(value: String): Self = StObject.set(x, "subscriptionRolePrefix", value.asInstanceOf[js.Any])
+      inline def setSubscriptionRolePrefix(value: String): Self = StObject.set(x, "subscriptionRolePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionRolePrefixUndefined: Self = StObject.set(x, "subscriptionRolePrefix", js.undefined)
+      inline def setSubscriptionRolePrefixUndefined: Self = StObject.set(x, "subscriptionRolePrefix", js.undefined)
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -791,56 +706,40 @@ object mod {
   }
   object SubscribeOpts {
     
-    @scala.inline
-    def apply(subscription: String, topic: String): SubscribeOpts = {
+    inline def apply(subscription: String, topic: String): SubscribeOpts = {
       val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscribeOpts]
     }
     
-    @scala.inline
-    implicit class SubscribeOptsMutableBuilder[Self <: SubscribeOpts] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeOpts](x: Self) {
       
-      @scala.inline
-      def setAckTimeoutMs(value: Double): Self = StObject.set(x, "ackTimeoutMs", value.asInstanceOf[js.Any])
+      inline def setAckTimeoutMs(value: Double): Self = StObject.set(x, "ackTimeoutMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAckTimeoutMsUndefined: Self = StObject.set(x, "ackTimeoutMs", js.undefined)
+      inline def setAckTimeoutMsUndefined: Self = StObject.set(x, "ackTimeoutMs", js.undefined)
       
-      @scala.inline
-      def setConsumerName(value: String): Self = StObject.set(x, "consumerName", value.asInstanceOf[js.Any])
+      inline def setConsumerName(value: String): Self = StObject.set(x, "consumerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerNameUndefined: Self = StObject.set(x, "consumerName", js.undefined)
+      inline def setConsumerNameUndefined: Self = StObject.set(x, "consumerName", js.undefined)
       
-      @scala.inline
-      def setProperties(value: MessageProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: MessageProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setReceiverQueueSize(value: Double): Self = StObject.set(x, "receiverQueueSize", value.asInstanceOf[js.Any])
+      inline def setReceiverQueueSize(value: Double): Self = StObject.set(x, "receiverQueueSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiverQueueSizeAcrossPartitions(value: Double): Self = StObject.set(x, "receiverQueueSizeAcrossPartitions", value.asInstanceOf[js.Any])
+      inline def setReceiverQueueSizeAcrossPartitions(value: Double): Self = StObject.set(x, "receiverQueueSizeAcrossPartitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiverQueueSizeAcrossPartitionsUndefined: Self = StObject.set(x, "receiverQueueSizeAcrossPartitions", js.undefined)
+      inline def setReceiverQueueSizeAcrossPartitionsUndefined: Self = StObject.set(x, "receiverQueueSizeAcrossPartitions", js.undefined)
       
-      @scala.inline
-      def setReceiverQueueSizeUndefined: Self = StObject.set(x, "receiverQueueSize", js.undefined)
+      inline def setReceiverQueueSizeUndefined: Self = StObject.set(x, "receiverQueueSize", js.undefined)
       
-      @scala.inline
-      def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionType(value: SubscriptionType): Self = StObject.set(x, "subscriptionType", value.asInstanceOf[js.Any])
+      inline def setSubscriptionType(value: SubscriptionType): Self = StObject.set(x, "subscriptionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionTypeUndefined: Self = StObject.set(x, "subscriptionType", js.undefined)
+      inline def setSubscriptionTypeUndefined: Self = StObject.set(x, "subscriptionType", js.undefined)
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -853,16 +752,12 @@ object mod {
   trait SubscriptionType extends StObject
   object SubscriptionType {
     
-    @scala.inline
-    def Exclusive: typings.pulsarClient.pulsarClientStrings.Exclusive = "Exclusive".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Exclusive]
+    inline def Exclusive: typings.pulsarClient.pulsarClientStrings.Exclusive = "Exclusive".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Exclusive]
     
-    @scala.inline
-    def Failover: typings.pulsarClient.pulsarClientStrings.Failover = "Failover".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Failover]
+    inline def Failover: typings.pulsarClient.pulsarClientStrings.Failover = "Failover".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Failover]
     
-    @scala.inline
-    def KeyShared: typings.pulsarClient.pulsarClientStrings.KeyShared = "KeyShared".asInstanceOf[typings.pulsarClient.pulsarClientStrings.KeyShared]
+    inline def KeyShared: typings.pulsarClient.pulsarClientStrings.KeyShared = "KeyShared".asInstanceOf[typings.pulsarClient.pulsarClientStrings.KeyShared]
     
-    @scala.inline
-    def Shared: typings.pulsarClient.pulsarClientStrings.Shared = "Shared".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Shared]
+    inline def Shared: typings.pulsarClient.pulsarClientStrings.Shared = "Shared".asInstanceOf[typings.pulsarClient.pulsarClientStrings.Shared]
   }
 }

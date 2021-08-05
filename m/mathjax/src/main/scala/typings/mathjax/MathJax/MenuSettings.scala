@@ -57,79 +57,55 @@ trait MenuSettings extends StObject {
 }
 object MenuSettings {
   
-  @scala.inline
-  def apply(): MenuSettings = {
+  inline def apply(): MenuSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MenuSettings]
   }
   
-  @scala.inline
-  implicit class MenuSettingsMutableBuilder[Self <: MenuSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MenuSettings](x: Self) {
     
-    @scala.inline
-    def setALT(value: Boolean): Self = StObject.set(x, "ALT", value.asInstanceOf[js.Any])
+    inline def setALT(value: Boolean): Self = StObject.set(x, "ALT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setALTUndefined: Self = StObject.set(x, "ALT", js.undefined)
+    inline def setALTUndefined: Self = StObject.set(x, "ALT", js.undefined)
     
-    @scala.inline
-    def setCMD(value: Boolean): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
+    inline def setCMD(value: Boolean): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCMDUndefined: Self = StObject.set(x, "CMD", js.undefined)
+    inline def setCMDUndefined: Self = StObject.set(x, "CMD", js.undefined)
     
-    @scala.inline
-    def setCTRL(value: Boolean): Self = StObject.set(x, "CTRL", value.asInstanceOf[js.Any])
+    inline def setCTRL(value: Boolean): Self = StObject.set(x, "CTRL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCTRLUndefined: Self = StObject.set(x, "CTRL", js.undefined)
+    inline def setCTRLUndefined: Self = StObject.set(x, "CTRL", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setMpContext(value: Boolean): Self = StObject.set(x, "mpContext", value.asInstanceOf[js.Any])
+    inline def setMpContext(value: Boolean): Self = StObject.set(x, "mpContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpContextUndefined: Self = StObject.set(x, "mpContext", js.undefined)
+    inline def setMpContextUndefined: Self = StObject.set(x, "mpContext", js.undefined)
     
-    @scala.inline
-    def setMpMouse(value: Boolean): Self = StObject.set(x, "mpMouse", value.asInstanceOf[js.Any])
+    inline def setMpMouse(value: Boolean): Self = StObject.set(x, "mpMouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpMouseUndefined: Self = StObject.set(x, "mpMouse", js.undefined)
+    inline def setMpMouseUndefined: Self = StObject.set(x, "mpMouse", js.undefined)
     
-    @scala.inline
-    def setRenderer(value: `HTML-CSS` | CommonHTML | PreviewHTML | NativeMML | SVG | PlainSource): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: `HTML-CSS` | CommonHTML | PreviewHTML | NativeMML | SVG | PlainSource): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    @scala.inline
-    def setShift(value: Boolean): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+    inline def setShift(value: Boolean): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftUndefined: Self = StObject.set(x, "Shift", js.undefined)
+    inline def setShiftUndefined: Self = StObject.set(x, "Shift", js.undefined)
     
-    @scala.inline
-    def setTexHints(value: Boolean): Self = StObject.set(x, "texHints", value.asInstanceOf[js.Any])
+    inline def setTexHints(value: Boolean): Self = StObject.set(x, "texHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexHintsUndefined: Self = StObject.set(x, "texHints", js.undefined)
+    inline def setTexHintsUndefined: Self = StObject.set(x, "texHints", js.undefined)
     
-    @scala.inline
-    def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     
-    @scala.inline
-    def setZscale(value: String): Self = StObject.set(x, "zscale", value.asInstanceOf[js.Any])
+    inline def setZscale(value: String): Self = StObject.set(x, "zscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZscaleUndefined: Self = StObject.set(x, "zscale", js.undefined)
+    inline def setZscaleUndefined: Self = StObject.set(x, "zscale", js.undefined)
   }
 }

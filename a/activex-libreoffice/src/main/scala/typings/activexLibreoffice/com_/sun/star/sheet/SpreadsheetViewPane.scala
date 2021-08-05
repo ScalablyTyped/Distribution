@@ -18,8 +18,7 @@ trait SpreadsheetViewPane
      with XControlAccess
 object SpreadsheetViewPane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FirstVisibleColumn: Double,
     FirstVisibleRow: Double,
     ReferredCells: XCellRange,

@@ -16,10 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pattern: String, cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]): IGlob = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[IGlob]
-  @scala.inline
-  def apply(
+  inline def apply(pattern: String, cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]): IGlob = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[IGlob]
+  inline def apply(
     pattern: String,
     options: IOptions,
     cb: js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]
@@ -65,8 +63,7 @@ object mod {
   @JSImport("glob", "GlobSync")
   @js.native
   def GlobSync: IGlobSyncStatic = js.native
-  @scala.inline
-  def GlobSync_=(x: IGlobSyncStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobSync")(x.asInstanceOf[js.Any])
+  inline def GlobSync_=(x: IGlobSyncStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobSync")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("glob", "Glob")
@@ -110,24 +107,18 @@ object mod {
   @js.native
   def Glob_ : IGlobStatic = js.native
   
-  @scala.inline
-  def Glob__=(x: IGlobStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Glob")(x.asInstanceOf[js.Any])
+  inline def Glob__=(x: IGlobStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Glob")(x.asInstanceOf[js.Any])
   
   @JSImport("glob", "glob")
   @js.native
   def glob: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ js.Any = js.native
-  @scala.inline
-  def glob_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glob")(x.asInstanceOf[js.Any])
+  inline def glob_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof G */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("glob")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def hasMagic(pattern: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def hasMagic(pattern: String, options: IOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasMagic(pattern: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasMagic(pattern: String, options: IOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMagic")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def sync(pattern: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def sync(pattern: String, options: IOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def sync(pattern: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def sync(pattern: String, options: IOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @js.native
   trait IGlob
@@ -161,8 +152,7 @@ object mod {
   }
   object IGlobBase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aborted: Boolean,
       cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]],
       found: js.Array[String],
@@ -176,35 +166,25 @@ object mod {
       __obj.asInstanceOf[IGlobBase]
     }
     
-    @scala.inline
-    implicit class IGlobBaseMutableBuilder[Self <: IGlobBase] (val x: Self) extends AnyVal {
+    extension [Self <: IGlobBase](x: Self) {
       
-      @scala.inline
-      def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+      inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCache(value: StringDictionary[Boolean | DIR | FILE | js.Array[String]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: StringDictionary[Boolean | DIR | FILE | js.Array[String]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFound(value: js.Array[String]): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+      inline def setFound(value: js.Array[String]): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoundVarargs(value: String*): Self = StObject.set(x, "found", js.Array(value :_*))
+      inline def setFoundVarargs(value: String*): Self = StObject.set(x, "found", js.Array(value :_*))
       
-      @scala.inline
-      def setMinimatch(value: IMinimatch): Self = StObject.set(x, "minimatch", value.asInstanceOf[js.Any])
+      inline def setMinimatch(value: IMinimatch): Self = StObject.set(x, "minimatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: IOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: IOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealpathCache(value: StringDictionary[String]): Self = StObject.set(x, "realpathCache", value.asInstanceOf[js.Any])
+      inline def setRealpathCache(value: StringDictionary[String]): Self = StObject.set(x, "realpathCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatCache(value: StringDictionary[js.UndefOr[`false` | IsDirectory]]): Self = StObject.set(x, "statCache", value.asInstanceOf[js.Any])
+      inline def setStatCache(value: StringDictionary[js.UndefOr[`false` | IsDirectory]]): Self = StObject.set(x, "statCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymlinks(value: StringDictionary[js.UndefOr[Boolean]]): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
+      inline def setSymlinks(value: StringDictionary[js.UndefOr[Boolean]]): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,131 +253,90 @@ object mod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
       
-      @scala.inline
-      def setCache(value: StringDictionary[Boolean | DIR | FILE | js.Array[String]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: StringDictionary[Boolean | DIR | FILE | js.Array[String]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+      inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+      inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
       
-      @scala.inline
-      def setNodir(value: Boolean): Self = StObject.set(x, "nodir", value.asInstanceOf[js.Any])
+      inline def setNodir(value: Boolean): Self = StObject.set(x, "nodir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodirUndefined: Self = StObject.set(x, "nodir", js.undefined)
+      inline def setNodirUndefined: Self = StObject.set(x, "nodir", js.undefined)
       
-      @scala.inline
-      def setNomount(value: Boolean): Self = StObject.set(x, "nomount", value.asInstanceOf[js.Any])
+      inline def setNomount(value: Boolean): Self = StObject.set(x, "nomount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNomountUndefined: Self = StObject.set(x, "nomount", js.undefined)
+      inline def setNomountUndefined: Self = StObject.set(x, "nomount", js.undefined)
       
-      @scala.inline
-      def setNosort(value: Boolean): Self = StObject.set(x, "nosort", value.asInstanceOf[js.Any])
+      inline def setNosort(value: Boolean): Self = StObject.set(x, "nosort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNosortUndefined: Self = StObject.set(x, "nosort", js.undefined)
+      inline def setNosortUndefined: Self = StObject.set(x, "nosort", js.undefined)
       
-      @scala.inline
-      def setNounique(value: Boolean): Self = StObject.set(x, "nounique", value.asInstanceOf[js.Any])
+      inline def setNounique(value: Boolean): Self = StObject.set(x, "nounique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNouniqueUndefined: Self = StObject.set(x, "nounique", js.undefined)
+      inline def setNouniqueUndefined: Self = StObject.set(x, "nounique", js.undefined)
       
-      @scala.inline
-      def setRealpath(value: Boolean): Self = StObject.set(x, "realpath", value.asInstanceOf[js.Any])
+      inline def setRealpath(value: Boolean): Self = StObject.set(x, "realpath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealpathCache(value: StringDictionary[String]): Self = StObject.set(x, "realpathCache", value.asInstanceOf[js.Any])
+      inline def setRealpathCache(value: StringDictionary[String]): Self = StObject.set(x, "realpathCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealpathCacheUndefined: Self = StObject.set(x, "realpathCache", js.undefined)
+      inline def setRealpathCacheUndefined: Self = StObject.set(x, "realpathCache", js.undefined)
       
-      @scala.inline
-      def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
+      inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      @scala.inline
-      def setStat(value: Boolean): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Boolean): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatCache(value: StringDictionary[js.UndefOr[`false` | IsDirectory]]): Self = StObject.set(x, "statCache", value.asInstanceOf[js.Any])
+      inline def setStatCache(value: StringDictionary[js.UndefOr[`false` | IsDirectory]]): Self = StObject.set(x, "statCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatCacheUndefined: Self = StObject.set(x, "statCache", js.undefined)
+      inline def setStatCacheUndefined: Self = StObject.set(x, "statCache", js.undefined)
       
-      @scala.inline
-      def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
+      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setSymlinks(value: StringDictionary[js.UndefOr[Boolean]]): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
+      inline def setSymlinks(value: StringDictionary[js.UndefOr[Boolean]]): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
+      inline def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
 }

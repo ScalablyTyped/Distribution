@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDistPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistPath")().asInstanceOf[String]
+  inline def getDistPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistPath")().asInstanceOf[String]
   
-  @scala.inline
-  def getIndexFile(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndexFile")().asInstanceOf[String]
+  inline def getIndexFile(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndexFile")().asInstanceOf[String]
 }

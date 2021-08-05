@@ -31,29 +31,22 @@ object typesGenerateDataKeyWithoutPlaintextOutputMod {
   }
   object GenerateDataKeyWithoutPlaintextOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GenerateDataKeyWithoutPlaintextOutput = {
+    inline def apply($metadata: ResponseMetadata): GenerateDataKeyWithoutPlaintextOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateDataKeyWithoutPlaintextOutput]
     }
     
-    @scala.inline
-    implicit class GenerateDataKeyWithoutPlaintextOutputMutableBuilder[Self <: GenerateDataKeyWithoutPlaintextOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateDataKeyWithoutPlaintextOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphertextBlob(value: Uint8Array): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
+      inline def setCiphertextBlob(value: Uint8Array): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
+      inline def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     }
   }
 }

@@ -22,8 +22,7 @@ trait XModifiable
 }
 object XModifiable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addModifyListener: XModifyListener => Unit,
     isModified: () => Boolean,
@@ -36,13 +35,10 @@ object XModifiable {
     __obj.asInstanceOf[XModifiable]
   }
   
-  @scala.inline
-  implicit class XModifiableMutableBuilder[Self <: XModifiable] (val x: Self) extends AnyVal {
+  extension [Self <: XModifiable](x: Self) {
     
-    @scala.inline
-    def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
+    inline def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetModified(value: Boolean => Unit): Self = StObject.set(x, "setModified", js.Any.fromFunction1(value))
+    inline def setSetModified(value: Boolean => Unit): Self = StObject.set(x, "setModified", js.Any.fromFunction1(value))
   }
 }

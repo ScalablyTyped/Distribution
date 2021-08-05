@@ -40,8 +40,7 @@ trait XConversionPropertyType
 }
 object XConversionPropertyType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getPropertyType: (String, String) => Double,
     queryInterface: `type` => js.Any,
@@ -52,13 +51,10 @@ object XConversionPropertyType {
     __obj.asInstanceOf[XConversionPropertyType]
   }
   
-  @scala.inline
-  implicit class XConversionPropertyTypeMutableBuilder[Self <: XConversionPropertyType] (val x: Self) extends AnyVal {
+  extension [Self <: XConversionPropertyType](x: Self) {
     
-    @scala.inline
-    def setGetPropertyType(value: (String, String) => Double): Self = StObject.set(x, "getPropertyType", js.Any.fromFunction2(value))
+    inline def setGetPropertyType(value: (String, String) => Double): Self = StObject.set(x, "getPropertyType", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetPropertyType(value: (String, String, Double) => Unit): Self = StObject.set(x, "setPropertyType", js.Any.fromFunction3(value))
+    inline def setSetPropertyType(value: (String, String, Double) => Unit): Self = StObject.set(x, "setPropertyType", js.Any.fromFunction3(value))
   }
 }

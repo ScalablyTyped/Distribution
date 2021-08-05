@@ -33,31 +33,23 @@ trait SchemaBigQueryDestination extends StObject {
 }
 object SchemaBigQueryDestination {
   
-  @scala.inline
-  def apply(): SchemaBigQueryDestination = {
+  inline def apply(): SchemaBigQueryDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBigQueryDestination]
   }
   
-  @scala.inline
-  implicit class SchemaBigQueryDestinationMutableBuilder[Self <: SchemaBigQueryDestination] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBigQueryDestination](x: Self) {
     
-    @scala.inline
-    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setOverwriteTable(value: Boolean): Self = StObject.set(x, "overwriteTable", value.asInstanceOf[js.Any])
+    inline def setOverwriteTable(value: Boolean): Self = StObject.set(x, "overwriteTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteTableUndefined: Self = StObject.set(x, "overwriteTable", js.undefined)
+    inline def setOverwriteTableUndefined: Self = StObject.set(x, "overwriteTable", js.undefined)
     
-    @scala.inline
-    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

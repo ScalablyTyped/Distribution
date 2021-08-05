@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConversionAccuracy extends StObject
 object ConversionAccuracy {
   
-  @scala.inline
-  def casual: typings.luxon.luxonStrings.casual = "casual".asInstanceOf[typings.luxon.luxonStrings.casual]
+  inline def casual: typings.luxon.luxonStrings.casual = "casual".asInstanceOf[typings.luxon.luxonStrings.casual]
   
-  @scala.inline
-  def longterm: typings.luxon.luxonStrings.longterm = "longterm".asInstanceOf[typings.luxon.luxonStrings.longterm]
+  inline def longterm: typings.luxon.luxonStrings.longterm = "longterm".asInstanceOf[typings.luxon.luxonStrings.longterm]
 }

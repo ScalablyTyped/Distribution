@@ -463,10 +463,8 @@ object inputMod {
   /* Inlined @emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick<@storybook/components.@storybook/components/dist/form/input/input.InputProps, 'color' | 'content' | 'height' | 'translate' | 'width' | 'default' | 'hidden' | 'key' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'name' | 'type' | 'value' | 'start' | 'cite' | 'data' | 'label' | 'span' | 'summary' | 'pattern' | 'list' | 'step' | 'wrap' | 'href' | 'size' | 'open' | 'multiple' | 'cellPadding' | 'cellSpacing' | 'alt' | 'crossOrigin' | 'sizes' | 'src' | 'srcSet' | 'useMap' | 'reversed' | 'max' | 'media' | 'method' | 'min' | 'target' | 'download' | 'hrefLang' | 'rel' | 'htmlFor' | 'valid' | 'align' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'as' | 'async' | 'autoComplete' | 'autoPlay' | 'capture' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'dateTime' | 'defer' | 'encType' | 'frameBorder' | 'headers' | 'high' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'low' | 'manifest' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'minLength' | 'muted' | 'nonce' | 'noValidate' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'required' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'srcDoc' | 'srcLang' | 'wmode'> & react.react.RefAttributes<any>, @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string} */
   object Input {
     
-    @scala.inline
-    def apply(props: PropsWithChildrenPickInpu): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildrenPickInpu, context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildrenPickInpu): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildrenPickInpu, context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("@storybook/components/dist/form/input/input", "Input")
     @js.native
@@ -475,42 +473,35 @@ object inputMod {
     @JSImport("@storybook/components/dist/form/input/input", "Input.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Input.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialPickInputPropscolo] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialPickInputPropscolo]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialPickInputPropscolo]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Input.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Input.__emotion_styles")
     @js.native
     def emotionStyles: js.Any = js.native
     
-    @scala.inline
-    def emotionStyles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__emotion_styles")(x.asInstanceOf[js.Any])
+    inline def emotionStyles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__emotion_styles")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Input.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapPickInpu] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapPickInpu]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapPickInpu]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[PropsOf[Tag], InputStyleProps, Theme]]
+    inline def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[PropsOf[Tag], InputStyleProps, Theme]]
     
     /**
       * @desc this method is type-unsafe
       */
-    @scala.inline
-    def withComponent_a(tag: a): StyledComponent[
+    inline def withComponent_a(tag: a): StyledComponent[
         DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
         InputStyleProps, 
         Theme
@@ -520,23 +511,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_abbr(tag: abbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_abbr(tag: abbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_address(tag: address): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_address(tag: address): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme]]
+    inline def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme]]
+    inline def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme]]
+    inline def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_area(tag: area): StyledComponent[
+    inline def withComponent_area(tag: area): StyledComponent[
         DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
         InputStyleProps, 
         Theme
@@ -546,14 +531,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_article(tag: article): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_article(tag: article): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_aside(tag: aside): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_aside(tag: aside): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_audio(tag: audio): StyledComponent[
+    inline def withComponent_audio(tag: audio): StyledComponent[
         DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
         InputStyleProps, 
         Theme
@@ -563,11 +545,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_b(tag: b): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_b(tag: b): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_base(tag: base): StyledComponent[
+    inline def withComponent_base(tag: base): StyledComponent[
         DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
         InputStyleProps, 
         Theme
@@ -577,17 +557,13 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_bdi(tag: bdi): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_bdi(tag: bdi): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_bdo(tag: bdo): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_bdo(tag: bdo): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_big(tag: big): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_big(tag: big): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_blockquote(tag: blockquote): StyledComponent[
+    inline def withComponent_blockquote(tag: blockquote): StyledComponent[
         DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
         InputStyleProps, 
         Theme
@@ -597,8 +573,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_body(tag: body): StyledComponent[
+    inline def withComponent_body(tag: body): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
         InputStyleProps, 
         Theme
@@ -608,8 +583,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_br(tag: br): StyledComponent[
+    inline def withComponent_br(tag: br): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
         InputStyleProps, 
         Theme
@@ -619,8 +593,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_button(tag: button): StyledComponent[
+    inline def withComponent_button(tag: button): StyledComponent[
         DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
         InputStyleProps, 
         Theme
@@ -630,8 +603,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_canvas(tag: canvas): StyledComponent[
+    inline def withComponent_canvas(tag: canvas): StyledComponent[
         DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
         InputStyleProps, 
         Theme
@@ -641,23 +613,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_caption(tag: caption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_caption(tag: caption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGCircleElement], InputStyleProps, Theme]]
+    inline def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGCircleElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_cite(tag: cite): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_cite(tag: cite): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGClipPathElement], InputStyleProps, Theme]]
+    inline def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGClipPathElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_code(tag: code): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_code(tag: code): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_col(tag: col): StyledComponent[
+    inline def withComponent_col(tag: col): StyledComponent[
         DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         InputStyleProps, 
         Theme
@@ -667,8 +633,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_colgroup(tag: colgroup): StyledComponent[
+    inline def withComponent_colgroup(tag: colgroup): StyledComponent[
         DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         InputStyleProps, 
         Theme
@@ -678,8 +643,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_data(tag: data): StyledComponent[
+    inline def withComponent_data(tag: data): StyledComponent[
         DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
         InputStyleProps, 
         Theme
@@ -689,8 +653,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_datalist(tag: datalist): StyledComponent[
+    inline def withComponent_datalist(tag: datalist): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
         InputStyleProps, 
         Theme
@@ -700,14 +663,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dd(tag: dd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_dd(tag: dd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDefsElement], InputStyleProps, Theme]]
+    inline def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDefsElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_del(tag: del): StyledComponent[
+    inline def withComponent_del(tag: del): StyledComponent[
         DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], 
         InputStyleProps, 
         Theme
@@ -717,11 +677,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDescElement], InputStyleProps, Theme]]
+    inline def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDescElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_details(tag: details): StyledComponent[
+    inline def withComponent_details(tag: details): StyledComponent[
         DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
         InputStyleProps, 
         Theme
@@ -731,11 +689,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dfn(tag: dfn): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_dfn(tag: dfn): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_dialog(tag: dialog): StyledComponent[
+    inline def withComponent_dialog(tag: dialog): StyledComponent[
         DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
         InputStyleProps, 
         Theme
@@ -745,8 +701,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_div(tag: div): StyledComponent[
+    inline def withComponent_div(tag: div): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
         InputStyleProps, 
         Theme
@@ -756,8 +711,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dl(tag: dl): StyledComponent[
+    inline def withComponent_dl(tag: dl): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
         InputStyleProps, 
         Theme
@@ -767,17 +721,13 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dt(tag: dt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_dt(tag: dt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGEllipseElement], InputStyleProps, Theme]]
+    inline def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGEllipseElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_em(tag: em): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_em(tag: em): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_embed(tag: embed): StyledComponent[
+    inline def withComponent_embed(tag: embed): StyledComponent[
         DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
         InputStyleProps, 
         Theme
@@ -787,83 +737,57 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEBlendElement], InputStyleProps, Theme]]
+    inline def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEBlendElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEColorMatrixElement], InputStyleProps, Theme]]
+    inline def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEColorMatrixElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEComponentTransferElement], InputStyleProps, Theme]]
+    inline def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEComponentTransferElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFECompositeElement], InputStyleProps, Theme]]
+    inline def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFECompositeElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEConvolveMatrixElement], InputStyleProps, Theme]]
+    inline def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEConvolveMatrixElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDiffuseLightingElement], InputStyleProps, Theme]]
+    inline def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDiffuseLightingElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDisplacementMapElement], InputStyleProps, Theme]]
+    inline def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDisplacementMapElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDistantLightElement], InputStyleProps, Theme]]
+    inline def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDistantLightElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDropShadowElement], InputStyleProps, Theme]]
+    inline def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDropShadowElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFloodElement], InputStyleProps, Theme]]
+    inline def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFloodElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncAElement], InputStyleProps, Theme]]
+    inline def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncAElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncBElement], InputStyleProps, Theme]]
+    inline def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncBElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncGElement], InputStyleProps, Theme]]
+    inline def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncGElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncRElement], InputStyleProps, Theme]]
+    inline def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncRElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEGaussianBlurElement], InputStyleProps, Theme]]
+    inline def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEGaussianBlurElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEImageElement], InputStyleProps, Theme]]
+    inline def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEImageElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeElement], InputStyleProps, Theme]]
+    inline def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeNodeElement], InputStyleProps, Theme]]
+    inline def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeNodeElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMorphologyElement], InputStyleProps, Theme]]
+    inline def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMorphologyElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEOffsetElement], InputStyleProps, Theme]]
+    inline def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEOffsetElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEPointLightElement], InputStyleProps, Theme]]
+    inline def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEPointLightElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpecularLightingElement], InputStyleProps, Theme]]
+    inline def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpecularLightingElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpotLightElement], InputStyleProps, Theme]]
+    inline def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpotLightElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETileElement], InputStyleProps, Theme]]
+    inline def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETileElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETurbulenceElement], InputStyleProps, Theme]]
+    inline def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETurbulenceElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_fieldset(tag: fieldset): StyledComponent[
+    inline def withComponent_fieldset(tag: fieldset): StyledComponent[
         DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
         InputStyleProps, 
         Theme
@@ -873,23 +797,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_figcaption(tag: figcaption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_figcaption(tag: figcaption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_figure(tag: figure): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_figure(tag: figure): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFilterElement], InputStyleProps, Theme]]
+    inline def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFilterElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_footer(tag: footer): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_footer(tag: footer): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGForeignObjectElement], InputStyleProps, Theme]]
+    inline def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGForeignObjectElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_form(tag: form): StyledComponent[
+    inline def withComponent_form(tag: form): StyledComponent[
         DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
         InputStyleProps, 
         Theme
@@ -899,11 +817,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGGElement], InputStyleProps, Theme]]
+    inline def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGGElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_h1(tag: h1): StyledComponent[
+    inline def withComponent_h1(tag: h1): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         InputStyleProps, 
         Theme
@@ -913,8 +829,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h2(tag: h2): StyledComponent[
+    inline def withComponent_h2(tag: h2): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         InputStyleProps, 
         Theme
@@ -924,8 +839,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h3(tag: h3): StyledComponent[
+    inline def withComponent_h3(tag: h3): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         InputStyleProps, 
         Theme
@@ -935,8 +849,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h4(tag: h4): StyledComponent[
+    inline def withComponent_h4(tag: h4): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         InputStyleProps, 
         Theme
@@ -946,8 +859,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h5(tag: h5): StyledComponent[
+    inline def withComponent_h5(tag: h5): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         InputStyleProps, 
         Theme
@@ -957,8 +869,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h6(tag: h6): StyledComponent[
+    inline def withComponent_h6(tag: h6): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         InputStyleProps, 
         Theme
@@ -968,8 +879,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_head(tag: head): StyledComponent[
+    inline def withComponent_head(tag: head): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
         InputStyleProps, 
         Theme
@@ -979,14 +889,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_header(tag: header): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_header(tag: header): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_hgroup(tag: hgroup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_hgroup(tag: hgroup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_hr(tag: hr): StyledComponent[
+    inline def withComponent_hr(tag: hr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
         InputStyleProps, 
         Theme
@@ -996,8 +903,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_html(tag: html): StyledComponent[
+    inline def withComponent_html(tag: html): StyledComponent[
         DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
         InputStyleProps, 
         Theme
@@ -1007,11 +913,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_i(tag: i): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_i(tag: i): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_iframe(tag: iframe): StyledComponent[
+    inline def withComponent_iframe(tag: iframe): StyledComponent[
         DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
         InputStyleProps, 
         Theme
@@ -1021,11 +925,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGImageElement], InputStyleProps, Theme]]
+    inline def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGImageElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_img(tag: img): StyledComponent[
+    inline def withComponent_img(tag: img): StyledComponent[
         DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
         InputStyleProps, 
         Theme
@@ -1035,8 +937,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_input(tag: input): StyledComponent[
+    inline def withComponent_input(tag: input): StyledComponent[
         DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
         InputStyleProps, 
         Theme
@@ -1046,8 +947,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ins(tag: ins): StyledComponent[
+    inline def withComponent_ins(tag: ins): StyledComponent[
         DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
         InputStyleProps, 
         Theme
@@ -1057,11 +957,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_kbd(tag: kbd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_kbd(tag: kbd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_keygen(tag: keygen): StyledComponent[
+    inline def withComponent_keygen(tag: keygen): StyledComponent[
         DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
         InputStyleProps, 
         Theme
@@ -1071,8 +969,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_label(tag: label): StyledComponent[
+    inline def withComponent_label(tag: label): StyledComponent[
         DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
         InputStyleProps, 
         Theme
@@ -1082,8 +979,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_legend(tag: legend): StyledComponent[
+    inline def withComponent_legend(tag: legend): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
         InputStyleProps, 
         Theme
@@ -1093,8 +989,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_li(tag: li): StyledComponent[
+    inline def withComponent_li(tag: li): StyledComponent[
         DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
         InputStyleProps, 
         Theme
@@ -1104,14 +999,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLineElement], InputStyleProps, Theme]]
+    inline def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLineElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLinearGradientElement], InputStyleProps, Theme]]
+    inline def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLinearGradientElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_link(tag: link): StyledComponent[
+    inline def withComponent_link(tag: link): StyledComponent[
         DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
         InputStyleProps, 
         Theme
@@ -1121,11 +1013,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_main(tag: main): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_main(tag: main): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_map(tag: map): StyledComponent[
+    inline def withComponent_map(tag: map): StyledComponent[
         DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
         InputStyleProps, 
         Theme
@@ -1135,17 +1025,13 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_mark(tag: mark): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_mark(tag: mark): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMarkerElement], InputStyleProps, Theme]]
+    inline def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMarkerElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMaskElement], InputStyleProps, Theme]]
+    inline def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMaskElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_menu(tag: menu): StyledComponent[
+    inline def withComponent_menu(tag: menu): StyledComponent[
         DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
         InputStyleProps, 
         Theme
@@ -1155,11 +1041,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_menuitem(tag: menuitem): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_menuitem(tag: menuitem): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_meta(tag: meta): StyledComponent[
+    inline def withComponent_meta(tag: meta): StyledComponent[
         DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
         InputStyleProps, 
         Theme
@@ -1169,11 +1053,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMetadataElement], InputStyleProps, Theme]]
+    inline def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMetadataElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_meter(tag: meter): StyledComponent[
+    inline def withComponent_meter(tag: meter): StyledComponent[
         DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], 
         InputStyleProps, 
         Theme
@@ -1183,20 +1065,15 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme]]
+    inline def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_nav(tag: nav): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_nav(tag: nav): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_noindex(tag: noindex): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_noindex(tag: noindex): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_noscript(tag: noscript): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_noscript(tag: noscript): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_object(tag: `object`): StyledComponent[
+    inline def withComponent_object(tag: `object`): StyledComponent[
         DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
         InputStyleProps, 
         Theme
@@ -1206,8 +1083,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ol(tag: ol): StyledComponent[
+    inline def withComponent_ol(tag: ol): StyledComponent[
         DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
         InputStyleProps, 
         Theme
@@ -1217,8 +1093,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_optgroup(tag: optgroup): StyledComponent[
+    inline def withComponent_optgroup(tag: optgroup): StyledComponent[
         DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
         InputStyleProps, 
         Theme
@@ -1228,8 +1103,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_option(tag: option): StyledComponent[
+    inline def withComponent_option(tag: option): StyledComponent[
         DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
         InputStyleProps, 
         Theme
@@ -1239,8 +1113,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_output(tag: output): StyledComponent[
+    inline def withComponent_output(tag: output): StyledComponent[
         DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], 
         InputStyleProps, 
         Theme
@@ -1250,8 +1123,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_p(tag: p): StyledComponent[
+    inline def withComponent_p(tag: p): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
         InputStyleProps, 
         Theme
@@ -1261,8 +1133,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_param(tag: param): StyledComponent[
+    inline def withComponent_param(tag: param): StyledComponent[
         DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
         InputStyleProps, 
         Theme
@@ -1272,23 +1143,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPathElement], InputStyleProps, Theme]]
+    inline def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPathElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPatternElement], InputStyleProps, Theme]]
+    inline def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPatternElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_picture(tag: picture): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_picture(tag: picture): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolygonElement], InputStyleProps, Theme]]
+    inline def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolygonElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolylineElement], InputStyleProps, Theme]]
+    inline def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolylineElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_pre(tag: pre): StyledComponent[
+    inline def withComponent_pre(tag: pre): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
         InputStyleProps, 
         Theme
@@ -1298,8 +1163,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_progress(tag: progress): StyledComponent[
+    inline def withComponent_progress(tag: progress): StyledComponent[
         DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
         InputStyleProps, 
         Theme
@@ -1309,8 +1173,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_q(tag: q): StyledComponent[
+    inline def withComponent_q(tag: q): StyledComponent[
         DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
         InputStyleProps, 
         Theme
@@ -1320,29 +1183,21 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRadialGradientElement], InputStyleProps, Theme]]
+    inline def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRadialGradientElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRectElement], InputStyleProps, Theme]]
+    inline def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRectElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_rp(tag: rp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_rp(tag: rp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_rt(tag: rt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_rt(tag: rt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_ruby(tag: ruby): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_ruby(tag: ruby): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_s(tag: s): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_s(tag: s): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_samp(tag: samp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_samp(tag: samp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_script(tag: script): StyledComponent[
+    inline def withComponent_script(tag: script): StyledComponent[
         DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
         InputStyleProps, 
         Theme
@@ -1352,11 +1207,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_section(tag: section): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_section(tag: section): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_select(tag: select): StyledComponent[
+    inline def withComponent_select(tag: select): StyledComponent[
         DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
         InputStyleProps, 
         Theme
@@ -1366,8 +1219,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_slot(tag: slot): StyledComponent[
+    inline def withComponent_slot(tag: slot): StyledComponent[
         DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
         InputStyleProps, 
         Theme
@@ -1377,11 +1229,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_small(tag: small): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_small(tag: small): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_source(tag: source): StyledComponent[
+    inline def withComponent_source(tag: source): StyledComponent[
         DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
         InputStyleProps, 
         Theme
@@ -1391,8 +1241,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_span(tag: span): StyledComponent[
+    inline def withComponent_span(tag: span): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
         InputStyleProps, 
         Theme
@@ -1402,14 +1251,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGStopElement], InputStyleProps, Theme]]
+    inline def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGStopElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_strong(tag: strong): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_strong(tag: strong): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_style(tag: style): StyledComponent[
+    inline def withComponent_style(tag: style): StyledComponent[
         DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
         InputStyleProps, 
         Theme
@@ -1419,26 +1265,19 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_sub(tag: sub): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_sub(tag: sub): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_summary(tag: summary): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_summary(tag: summary): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_sup(tag: sup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_sup(tag: sup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSVGElement], InputStyleProps, Theme]]
+    inline def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSVGElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSwitchElement], InputStyleProps, Theme]]
+    inline def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSwitchElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSymbolElement], InputStyleProps, Theme]]
+    inline def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSymbolElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_table(tag: table): StyledComponent[
+    inline def withComponent_table(tag: table): StyledComponent[
         DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
         InputStyleProps, 
         Theme
@@ -1448,8 +1287,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tbody(tag: tbody): StyledComponent[
+    inline def withComponent_tbody(tag: tbody): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         InputStyleProps, 
         Theme
@@ -1459,8 +1297,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_td(tag: td): StyledComponent[
+    inline def withComponent_td(tag: td): StyledComponent[
         DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
         InputStyleProps, 
         Theme
@@ -1470,8 +1307,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_template(tag: template): StyledComponent[
+    inline def withComponent_template(tag: template): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
         InputStyleProps, 
         Theme
@@ -1481,14 +1317,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextElement], InputStyleProps, Theme]]
+    inline def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextPathElement], InputStyleProps, Theme]]
+    inline def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextPathElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_textarea(tag: textarea): StyledComponent[
+    inline def withComponent_textarea(tag: textarea): StyledComponent[
         DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
         InputStyleProps, 
         Theme
@@ -1498,8 +1331,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tfoot(tag: tfoot): StyledComponent[
+    inline def withComponent_tfoot(tag: tfoot): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         InputStyleProps, 
         Theme
@@ -1509,8 +1341,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_th(tag: th): StyledComponent[
+    inline def withComponent_th(tag: th): StyledComponent[
         DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
         InputStyleProps, 
         Theme
@@ -1520,8 +1351,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_thead(tag: thead): StyledComponent[
+    inline def withComponent_thead(tag: thead): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         InputStyleProps, 
         Theme
@@ -1531,8 +1361,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_time(tag: time): StyledComponent[
+    inline def withComponent_time(tag: time): StyledComponent[
         DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], 
         InputStyleProps, 
         Theme
@@ -1542,8 +1371,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_title(tag: title): StyledComponent[
+    inline def withComponent_title(tag: title): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
         InputStyleProps, 
         Theme
@@ -1553,8 +1381,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tr(tag: tr): StyledComponent[
+    inline def withComponent_tr(tag: tr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
         InputStyleProps, 
         Theme
@@ -1564,8 +1391,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_track(tag: track): StyledComponent[
+    inline def withComponent_track(tag: track): StyledComponent[
         DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
         InputStyleProps, 
         Theme
@@ -1575,14 +1401,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTSpanElement], InputStyleProps, Theme]]
+    inline def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTSpanElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_u(tag: u): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_u(tag: u): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_ul(tag: ul): StyledComponent[
+    inline def withComponent_ul(tag: ul): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
         InputStyleProps, 
         Theme
@@ -1592,14 +1415,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGUseElement], InputStyleProps, Theme]]
+    inline def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGUseElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_var(tag: `var`): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_var(tag: `var`): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_video(tag: video): StyledComponent[
+    inline def withComponent_video(tag: video): StyledComponent[
         DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
         InputStyleProps, 
         Theme
@@ -1609,14 +1429,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGViewElement], InputStyleProps, Theme]]
+    inline def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGViewElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_wbr(tag: wbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
+    inline def withComponent_wbr(tag: wbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], InputStyleProps, Theme]]
     
-    @scala.inline
-    def withComponent_webview(tag: webview): StyledComponent[
+    inline def withComponent_webview(tag: webview): StyledComponent[
         DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
         InputStyleProps, 
         Theme
@@ -1630,10 +1447,8 @@ object inputMod {
   /* Inlined @emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'multiple' | 'autoComplete' | 'required'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps & react.react.RefAttributes<any>, @storybook/components.@storybook/components/dist/form/input/input.SelectProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string} */
   object Select {
     
-    @scala.inline
-    def apply(props: PropsWithChildrenPickSeleAbout): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildrenPickSeleAbout, context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildrenPickSeleAbout): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildrenPickSeleAbout, context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("@storybook/components/dist/form/input/input", "Select")
     @js.native
@@ -1642,42 +1457,35 @@ object inputMod {
     @JSImport("@storybook/components/dist/form/input/input", "Select.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Select.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialPickSelectHTMLAttr] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialPickSelectHTMLAttr]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialPickSelectHTMLAttr]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Select.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Select.__emotion_styles")
     @js.native
     def emotionStyles: js.Any = js.native
     
-    @scala.inline
-    def emotionStyles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__emotion_styles")(x.asInstanceOf[js.Any])
+    inline def emotionStyles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__emotion_styles")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Select.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapPickSele] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapPickSele]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapPickSele]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[PropsOf[Tag], SelectProps, Theme]]
+    inline def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[PropsOf[Tag], SelectProps, Theme]]
     
     /**
       * @desc this method is type-unsafe
       */
-    @scala.inline
-    def withComponent_a(tag: a): StyledComponent[
+    inline def withComponent_a(tag: a): StyledComponent[
         DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
         SelectProps, 
         Theme
@@ -1687,23 +1495,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_abbr(tag: abbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_abbr(tag: abbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_address(tag: address): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_address(tag: address): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], SelectProps, Theme]]
+    inline def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], SelectProps, Theme]]
+    inline def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], SelectProps, Theme]]
+    inline def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_area(tag: area): StyledComponent[
+    inline def withComponent_area(tag: area): StyledComponent[
         DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
         SelectProps, 
         Theme
@@ -1713,14 +1515,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_article(tag: article): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_article(tag: article): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_aside(tag: aside): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_aside(tag: aside): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_audio(tag: audio): StyledComponent[
+    inline def withComponent_audio(tag: audio): StyledComponent[
         DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
         SelectProps, 
         Theme
@@ -1730,11 +1529,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_b(tag: b): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_b(tag: b): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_base(tag: base): StyledComponent[
+    inline def withComponent_base(tag: base): StyledComponent[
         DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
         SelectProps, 
         Theme
@@ -1744,17 +1541,13 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_bdi(tag: bdi): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_bdi(tag: bdi): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_bdo(tag: bdo): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_bdo(tag: bdo): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_big(tag: big): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_big(tag: big): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_blockquote(tag: blockquote): StyledComponent[
+    inline def withComponent_blockquote(tag: blockquote): StyledComponent[
         DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
         SelectProps, 
         Theme
@@ -1764,8 +1557,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_body(tag: body): StyledComponent[
+    inline def withComponent_body(tag: body): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
         SelectProps, 
         Theme
@@ -1775,11 +1567,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_br(tag: br): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], SelectProps, Theme]]
+    inline def withComponent_br(tag: br): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_button(tag: button): StyledComponent[
+    inline def withComponent_button(tag: button): StyledComponent[
         DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
         SelectProps, 
         Theme
@@ -1789,8 +1579,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_canvas(tag: canvas): StyledComponent[
+    inline def withComponent_canvas(tag: canvas): StyledComponent[
         DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
         SelectProps, 
         Theme
@@ -1800,23 +1589,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_caption(tag: caption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_caption(tag: caption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGCircleElement], SelectProps, Theme]]
+    inline def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGCircleElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_cite(tag: cite): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_cite(tag: cite): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGClipPathElement], SelectProps, Theme]]
+    inline def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGClipPathElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_code(tag: code): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_code(tag: code): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_col(tag: col): StyledComponent[
+    inline def withComponent_col(tag: col): StyledComponent[
         DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         SelectProps, 
         Theme
@@ -1826,8 +1609,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_colgroup(tag: colgroup): StyledComponent[
+    inline def withComponent_colgroup(tag: colgroup): StyledComponent[
         DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         SelectProps, 
         Theme
@@ -1837,8 +1619,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_data(tag: data): StyledComponent[
+    inline def withComponent_data(tag: data): StyledComponent[
         DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
         SelectProps, 
         Theme
@@ -1848,8 +1629,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_datalist(tag: datalist): StyledComponent[
+    inline def withComponent_datalist(tag: datalist): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
         SelectProps, 
         Theme
@@ -1859,20 +1639,15 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dd(tag: dd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_dd(tag: dd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDefsElement], SelectProps, Theme]]
+    inline def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDefsElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_del(tag: del): StyledComponent[DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_del(tag: del): StyledComponent[DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDescElement], SelectProps, Theme]]
+    inline def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDescElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_details(tag: details): StyledComponent[
+    inline def withComponent_details(tag: details): StyledComponent[
         DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
         SelectProps, 
         Theme
@@ -1882,11 +1657,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dfn(tag: dfn): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_dfn(tag: dfn): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_dialog(tag: dialog): StyledComponent[
+    inline def withComponent_dialog(tag: dialog): StyledComponent[
         DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
         SelectProps, 
         Theme
@@ -1896,8 +1669,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_div(tag: div): StyledComponent[
+    inline def withComponent_div(tag: div): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
         SelectProps, 
         Theme
@@ -1907,8 +1679,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dl(tag: dl): StyledComponent[
+    inline def withComponent_dl(tag: dl): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
         SelectProps, 
         Theme
@@ -1918,17 +1689,13 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dt(tag: dt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_dt(tag: dt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGEllipseElement], SelectProps, Theme]]
+    inline def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGEllipseElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_em(tag: em): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_em(tag: em): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_embed(tag: embed): StyledComponent[
+    inline def withComponent_embed(tag: embed): StyledComponent[
         DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
         SelectProps, 
         Theme
@@ -1938,83 +1705,57 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEBlendElement], SelectProps, Theme]]
+    inline def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEBlendElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEColorMatrixElement], SelectProps, Theme]]
+    inline def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEColorMatrixElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEComponentTransferElement], SelectProps, Theme]]
+    inline def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEComponentTransferElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFECompositeElement], SelectProps, Theme]]
+    inline def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFECompositeElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEConvolveMatrixElement], SelectProps, Theme]]
+    inline def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEConvolveMatrixElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDiffuseLightingElement], SelectProps, Theme]]
+    inline def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDiffuseLightingElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDisplacementMapElement], SelectProps, Theme]]
+    inline def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDisplacementMapElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDistantLightElement], SelectProps, Theme]]
+    inline def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDistantLightElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDropShadowElement], SelectProps, Theme]]
+    inline def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDropShadowElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFloodElement], SelectProps, Theme]]
+    inline def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFloodElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncAElement], SelectProps, Theme]]
+    inline def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncAElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncBElement], SelectProps, Theme]]
+    inline def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncBElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncGElement], SelectProps, Theme]]
+    inline def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncGElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncRElement], SelectProps, Theme]]
+    inline def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncRElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEGaussianBlurElement], SelectProps, Theme]]
+    inline def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEGaussianBlurElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEImageElement], SelectProps, Theme]]
+    inline def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEImageElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeElement], SelectProps, Theme]]
+    inline def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeNodeElement], SelectProps, Theme]]
+    inline def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeNodeElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMorphologyElement], SelectProps, Theme]]
+    inline def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMorphologyElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEOffsetElement], SelectProps, Theme]]
+    inline def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEOffsetElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEPointLightElement], SelectProps, Theme]]
+    inline def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEPointLightElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpecularLightingElement], SelectProps, Theme]]
+    inline def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpecularLightingElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpotLightElement], SelectProps, Theme]]
+    inline def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpotLightElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETileElement], SelectProps, Theme]]
+    inline def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETileElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETurbulenceElement], SelectProps, Theme]]
+    inline def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETurbulenceElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_fieldset(tag: fieldset): StyledComponent[
+    inline def withComponent_fieldset(tag: fieldset): StyledComponent[
         DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
         SelectProps, 
         Theme
@@ -2024,23 +1765,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_figcaption(tag: figcaption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_figcaption(tag: figcaption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_figure(tag: figure): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_figure(tag: figure): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFilterElement], SelectProps, Theme]]
+    inline def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFilterElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_footer(tag: footer): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_footer(tag: footer): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGForeignObjectElement], SelectProps, Theme]]
+    inline def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGForeignObjectElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_form(tag: form): StyledComponent[
+    inline def withComponent_form(tag: form): StyledComponent[
         DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
         SelectProps, 
         Theme
@@ -2050,11 +1785,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGGElement], SelectProps, Theme]]
+    inline def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGGElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_h1(tag: h1): StyledComponent[
+    inline def withComponent_h1(tag: h1): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         SelectProps, 
         Theme
@@ -2064,8 +1797,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h2(tag: h2): StyledComponent[
+    inline def withComponent_h2(tag: h2): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         SelectProps, 
         Theme
@@ -2075,8 +1807,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h3(tag: h3): StyledComponent[
+    inline def withComponent_h3(tag: h3): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         SelectProps, 
         Theme
@@ -2086,8 +1817,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h4(tag: h4): StyledComponent[
+    inline def withComponent_h4(tag: h4): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         SelectProps, 
         Theme
@@ -2097,8 +1827,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h5(tag: h5): StyledComponent[
+    inline def withComponent_h5(tag: h5): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         SelectProps, 
         Theme
@@ -2108,8 +1837,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h6(tag: h6): StyledComponent[
+    inline def withComponent_h6(tag: h6): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         SelectProps, 
         Theme
@@ -2119,8 +1847,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_head(tag: head): StyledComponent[
+    inline def withComponent_head(tag: head): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
         SelectProps, 
         Theme
@@ -2130,17 +1857,13 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_header(tag: header): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_header(tag: header): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_hgroup(tag: hgroup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_hgroup(tag: hgroup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_hr(tag: hr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], SelectProps, Theme]]
+    inline def withComponent_hr(tag: hr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_html(tag: html): StyledComponent[
+    inline def withComponent_html(tag: html): StyledComponent[
         DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
         SelectProps, 
         Theme
@@ -2150,11 +1873,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_i(tag: i): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_i(tag: i): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_iframe(tag: iframe): StyledComponent[
+    inline def withComponent_iframe(tag: iframe): StyledComponent[
         DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
         SelectProps, 
         Theme
@@ -2164,11 +1885,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGImageElement], SelectProps, Theme]]
+    inline def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGImageElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_img(tag: img): StyledComponent[
+    inline def withComponent_img(tag: img): StyledComponent[
         DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
         SelectProps, 
         Theme
@@ -2178,8 +1897,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_input(tag: input): StyledComponent[
+    inline def withComponent_input(tag: input): StyledComponent[
         DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
         SelectProps, 
         Theme
@@ -2189,8 +1907,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ins(tag: ins): StyledComponent[
+    inline def withComponent_ins(tag: ins): StyledComponent[
         DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
         SelectProps, 
         Theme
@@ -2200,11 +1917,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_kbd(tag: kbd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_kbd(tag: kbd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_keygen(tag: keygen): StyledComponent[
+    inline def withComponent_keygen(tag: keygen): StyledComponent[
         DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
         SelectProps, 
         Theme
@@ -2214,8 +1929,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_label(tag: label): StyledComponent[
+    inline def withComponent_label(tag: label): StyledComponent[
         DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
         SelectProps, 
         Theme
@@ -2225,8 +1939,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_legend(tag: legend): StyledComponent[
+    inline def withComponent_legend(tag: legend): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
         SelectProps, 
         Theme
@@ -2236,8 +1949,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_li(tag: li): StyledComponent[
+    inline def withComponent_li(tag: li): StyledComponent[
         DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
         SelectProps, 
         Theme
@@ -2247,14 +1959,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLineElement], SelectProps, Theme]]
+    inline def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLineElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLinearGradientElement], SelectProps, Theme]]
+    inline def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLinearGradientElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_link(tag: link): StyledComponent[
+    inline def withComponent_link(tag: link): StyledComponent[
         DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
         SelectProps, 
         Theme
@@ -2264,11 +1973,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_main(tag: main): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_main(tag: main): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_map(tag: map): StyledComponent[
+    inline def withComponent_map(tag: map): StyledComponent[
         DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
         SelectProps, 
         Theme
@@ -2278,23 +1985,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_mark(tag: mark): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_mark(tag: mark): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMarkerElement], SelectProps, Theme]]
+    inline def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMarkerElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMaskElement], SelectProps, Theme]]
+    inline def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMaskElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_menu(tag: menu): StyledComponent[DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_menu(tag: menu): StyledComponent[DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_menuitem(tag: menuitem): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_menuitem(tag: menuitem): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_meta(tag: meta): StyledComponent[
+    inline def withComponent_meta(tag: meta): StyledComponent[
         DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
         SelectProps, 
         Theme
@@ -2304,26 +2005,19 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMetadataElement], SelectProps, Theme]]
+    inline def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMetadataElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_meter(tag: meter): StyledComponent[DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_meter(tag: meter): StyledComponent[DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], SelectProps, Theme]]
+    inline def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_nav(tag: nav): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_nav(tag: nav): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_noindex(tag: noindex): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_noindex(tag: noindex): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_noscript(tag: noscript): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_noscript(tag: noscript): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_object(tag: `object`): StyledComponent[
+    inline def withComponent_object(tag: `object`): StyledComponent[
         DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
         SelectProps, 
         Theme
@@ -2333,8 +2027,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ol(tag: ol): StyledComponent[
+    inline def withComponent_ol(tag: ol): StyledComponent[
         DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
         SelectProps, 
         Theme
@@ -2344,8 +2037,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_optgroup(tag: optgroup): StyledComponent[
+    inline def withComponent_optgroup(tag: optgroup): StyledComponent[
         DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
         SelectProps, 
         Theme
@@ -2355,8 +2047,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_option(tag: option): StyledComponent[
+    inline def withComponent_option(tag: option): StyledComponent[
         DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
         SelectProps, 
         Theme
@@ -2366,8 +2057,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_output(tag: output): StyledComponent[
+    inline def withComponent_output(tag: output): StyledComponent[
         DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], 
         SelectProps, 
         Theme
@@ -2377,8 +2067,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_p(tag: p): StyledComponent[
+    inline def withComponent_p(tag: p): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
         SelectProps, 
         Theme
@@ -2388,8 +2077,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_param(tag: param): StyledComponent[
+    inline def withComponent_param(tag: param): StyledComponent[
         DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
         SelectProps, 
         Theme
@@ -2399,23 +2087,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPathElement], SelectProps, Theme]]
+    inline def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPathElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPatternElement], SelectProps, Theme]]
+    inline def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPatternElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_picture(tag: picture): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_picture(tag: picture): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolygonElement], SelectProps, Theme]]
+    inline def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolygonElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolylineElement], SelectProps, Theme]]
+    inline def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolylineElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_pre(tag: pre): StyledComponent[
+    inline def withComponent_pre(tag: pre): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
         SelectProps, 
         Theme
@@ -2425,8 +2107,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_progress(tag: progress): StyledComponent[
+    inline def withComponent_progress(tag: progress): StyledComponent[
         DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
         SelectProps, 
         Theme
@@ -2436,8 +2117,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_q(tag: q): StyledComponent[
+    inline def withComponent_q(tag: q): StyledComponent[
         DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
         SelectProps, 
         Theme
@@ -2447,29 +2127,21 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRadialGradientElement], SelectProps, Theme]]
+    inline def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRadialGradientElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRectElement], SelectProps, Theme]]
+    inline def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRectElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_rp(tag: rp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_rp(tag: rp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_rt(tag: rt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_rt(tag: rt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_ruby(tag: ruby): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_ruby(tag: ruby): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_s(tag: s): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_s(tag: s): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_samp(tag: samp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_samp(tag: samp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_script(tag: script): StyledComponent[
+    inline def withComponent_script(tag: script): StyledComponent[
         DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
         SelectProps, 
         Theme
@@ -2479,11 +2151,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_section(tag: section): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_section(tag: section): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_select(tag: select): StyledComponent[
+    inline def withComponent_select(tag: select): StyledComponent[
         DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
         SelectProps, 
         Theme
@@ -2493,8 +2163,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_slot(tag: slot): StyledComponent[
+    inline def withComponent_slot(tag: slot): StyledComponent[
         DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
         SelectProps, 
         Theme
@@ -2504,11 +2173,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_small(tag: small): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_small(tag: small): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_source(tag: source): StyledComponent[
+    inline def withComponent_source(tag: source): StyledComponent[
         DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
         SelectProps, 
         Theme
@@ -2518,8 +2185,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_span(tag: span): StyledComponent[
+    inline def withComponent_span(tag: span): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
         SelectProps, 
         Theme
@@ -2529,14 +2195,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGStopElement], SelectProps, Theme]]
+    inline def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGStopElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_strong(tag: strong): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_strong(tag: strong): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_style(tag: style): StyledComponent[
+    inline def withComponent_style(tag: style): StyledComponent[
         DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
         SelectProps, 
         Theme
@@ -2546,26 +2209,19 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_sub(tag: sub): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_sub(tag: sub): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_summary(tag: summary): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_summary(tag: summary): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_sup(tag: sup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_sup(tag: sup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSVGElement], SelectProps, Theme]]
+    inline def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSVGElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSwitchElement], SelectProps, Theme]]
+    inline def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSwitchElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSymbolElement], SelectProps, Theme]]
+    inline def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSymbolElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_table(tag: table): StyledComponent[
+    inline def withComponent_table(tag: table): StyledComponent[
         DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
         SelectProps, 
         Theme
@@ -2575,8 +2231,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tbody(tag: tbody): StyledComponent[
+    inline def withComponent_tbody(tag: tbody): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         SelectProps, 
         Theme
@@ -2586,8 +2241,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_td(tag: td): StyledComponent[
+    inline def withComponent_td(tag: td): StyledComponent[
         DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
         SelectProps, 
         Theme
@@ -2597,8 +2251,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_template(tag: template): StyledComponent[
+    inline def withComponent_template(tag: template): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
         SelectProps, 
         Theme
@@ -2608,14 +2261,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextElement], SelectProps, Theme]]
+    inline def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextPathElement], SelectProps, Theme]]
+    inline def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextPathElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_textarea(tag: textarea): StyledComponent[
+    inline def withComponent_textarea(tag: textarea): StyledComponent[
         DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
         SelectProps, 
         Theme
@@ -2625,8 +2275,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tfoot(tag: tfoot): StyledComponent[
+    inline def withComponent_tfoot(tag: tfoot): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         SelectProps, 
         Theme
@@ -2636,8 +2285,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_th(tag: th): StyledComponent[
+    inline def withComponent_th(tag: th): StyledComponent[
         DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
         SelectProps, 
         Theme
@@ -2647,8 +2295,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_thead(tag: thead): StyledComponent[
+    inline def withComponent_thead(tag: thead): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         SelectProps, 
         Theme
@@ -2658,11 +2305,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_time(tag: time): StyledComponent[DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_time(tag: time): StyledComponent[DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_title(tag: title): StyledComponent[
+    inline def withComponent_title(tag: title): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
         SelectProps, 
         Theme
@@ -2672,8 +2317,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tr(tag: tr): StyledComponent[
+    inline def withComponent_tr(tag: tr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
         SelectProps, 
         Theme
@@ -2683,8 +2327,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_track(tag: track): StyledComponent[
+    inline def withComponent_track(tag: track): StyledComponent[
         DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
         SelectProps, 
         Theme
@@ -2694,14 +2337,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTSpanElement], SelectProps, Theme]]
+    inline def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTSpanElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_u(tag: u): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_u(tag: u): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_ul(tag: ul): StyledComponent[
+    inline def withComponent_ul(tag: ul): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
         SelectProps, 
         Theme
@@ -2711,14 +2351,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGUseElement], SelectProps, Theme]]
+    inline def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGUseElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_var(tag: `var`): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_var(tag: `var`): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_video(tag: video): StyledComponent[
+    inline def withComponent_video(tag: video): StyledComponent[
         DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
         SelectProps, 
         Theme
@@ -2728,14 +2365,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGViewElement], SelectProps, Theme]]
+    inline def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGViewElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_wbr(tag: wbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
+    inline def withComponent_wbr(tag: wbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], SelectProps, Theme]]
     
-    @scala.inline
-    def withComponent_webview(tag: webview): StyledComponent[
+    inline def withComponent_webview(tag: webview): StyledComponent[
         DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
         SelectProps, 
         Theme
@@ -2749,12 +2383,10 @@ object inputMod {
   /* Inlined @emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TextareaAutosizeProps * / any, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'wrap' | 'autoComplete' | 'cols' | 'maxLength' | 'minLength' | 'readOnly' | 'required' | 'rows' | 'dirName' | 'maxRows' | 'minRows' | 'onHeightChange' | 'cacheMeasurements'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps & react.react.RefAttributes<any>, @storybook/components.@storybook/components/dist/form/input/input.TextareaProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string} */
   object Textarea {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       props: PropsWithChildren[PickanycolortranslatehiddAbout & (Omit[TextareaProps, theme]) & `0`[Theme]]
     ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(
+    inline def apply(
       props: PropsWithChildren[PickanycolortranslatehiddAbout & (Omit[TextareaProps, theme]) & `0`[Theme]],
       context: js.Any
     ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
@@ -2766,16 +2398,14 @@ object inputMod {
     @JSImport("@storybook/components/dist/form/input/input", "Textarea.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Textarea.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[
         Partial[PickanycolortranslatehiddAbout & (Omit[TextareaProps, theme]) & `0`[Theme]]
       ] = js.native
-    @scala.inline
-    def defaultProps_=(
+    inline def defaultProps_=(
       x: js.UndefOr[
           Partial[PickanycolortranslatehiddAbout & (Omit[TextareaProps, theme]) & `0`[Theme]]
         ]
@@ -2784,36 +2414,31 @@ object inputMod {
     @JSImport("@storybook/components/dist/form/input/input", "Textarea.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Textarea.__emotion_styles")
     @js.native
     def emotionStyles: js.Any = js.native
     
-    @scala.inline
-    def emotionStyles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__emotion_styles")(x.asInstanceOf[js.Any])
+    inline def emotionStyles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__emotion_styles")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/components/dist/form/input/input", "Textarea.propTypes")
     @js.native
     def propTypes: js.UndefOr[
         WeakValidationMap[PickanycolortranslatehiddAbout & (Omit[TextareaProps, theme]) & `0`[Theme]]
       ] = js.native
-    @scala.inline
-    def propTypes_=(
+    inline def propTypes_=(
       x: js.UndefOr[
           WeakValidationMap[PickanycolortranslatehiddAbout & (Omit[TextareaProps, theme]) & `0`[Theme]]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[PropsOf[Tag], TextareaProps, Theme]]
+    inline def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[PropsOf[Tag], TextareaProps, Theme]]
     
     /**
       * @desc this method is type-unsafe
       */
-    @scala.inline
-    def withComponent_a(tag: a): StyledComponent[
+    inline def withComponent_a(tag: a): StyledComponent[
         DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
         TextareaProps, 
         Theme
@@ -2823,23 +2448,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_abbr(tag: abbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_abbr(tag: abbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_address(tag: address): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_address(tag: address): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], TextareaProps, Theme]]
+    inline def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], TextareaProps, Theme]]
+    inline def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], TextareaProps, Theme]]
+    inline def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_area(tag: area): StyledComponent[
+    inline def withComponent_area(tag: area): StyledComponent[
         DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
         TextareaProps, 
         Theme
@@ -2849,14 +2468,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_article(tag: article): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_article(tag: article): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_aside(tag: aside): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_aside(tag: aside): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_audio(tag: audio): StyledComponent[
+    inline def withComponent_audio(tag: audio): StyledComponent[
         DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
         TextareaProps, 
         Theme
@@ -2866,11 +2482,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_b(tag: b): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_b(tag: b): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_base(tag: base): StyledComponent[
+    inline def withComponent_base(tag: base): StyledComponent[
         DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
         TextareaProps, 
         Theme
@@ -2880,17 +2494,13 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_bdi(tag: bdi): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_bdi(tag: bdi): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_bdo(tag: bdo): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_bdo(tag: bdo): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_big(tag: big): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_big(tag: big): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_blockquote(tag: blockquote): StyledComponent[
+    inline def withComponent_blockquote(tag: blockquote): StyledComponent[
         DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
         TextareaProps, 
         Theme
@@ -2900,8 +2510,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_body(tag: body): StyledComponent[
+    inline def withComponent_body(tag: body): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
         TextareaProps, 
         Theme
@@ -2911,8 +2520,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_br(tag: br): StyledComponent[
+    inline def withComponent_br(tag: br): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
         TextareaProps, 
         Theme
@@ -2922,8 +2530,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_button(tag: button): StyledComponent[
+    inline def withComponent_button(tag: button): StyledComponent[
         DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
         TextareaProps, 
         Theme
@@ -2933,8 +2540,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_canvas(tag: canvas): StyledComponent[
+    inline def withComponent_canvas(tag: canvas): StyledComponent[
         DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
         TextareaProps, 
         Theme
@@ -2944,23 +2550,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_caption(tag: caption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_caption(tag: caption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGCircleElement], TextareaProps, Theme]]
+    inline def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGCircleElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_cite(tag: cite): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_cite(tag: cite): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGClipPathElement], TextareaProps, Theme]]
+    inline def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGClipPathElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_code(tag: code): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_code(tag: code): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_col(tag: col): StyledComponent[
+    inline def withComponent_col(tag: col): StyledComponent[
         DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         TextareaProps, 
         Theme
@@ -2970,8 +2570,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_colgroup(tag: colgroup): StyledComponent[
+    inline def withComponent_colgroup(tag: colgroup): StyledComponent[
         DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         TextareaProps, 
         Theme
@@ -2981,8 +2580,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_data(tag: data): StyledComponent[
+    inline def withComponent_data(tag: data): StyledComponent[
         DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
         TextareaProps, 
         Theme
@@ -2992,8 +2590,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_datalist(tag: datalist): StyledComponent[
+    inline def withComponent_datalist(tag: datalist): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
         TextareaProps, 
         Theme
@@ -3003,20 +2600,15 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dd(tag: dd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_dd(tag: dd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDefsElement], TextareaProps, Theme]]
+    inline def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDefsElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_del(tag: del): StyledComponent[DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_del(tag: del): StyledComponent[DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDescElement], TextareaProps, Theme]]
+    inline def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGDescElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_details(tag: details): StyledComponent[
+    inline def withComponent_details(tag: details): StyledComponent[
         DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
         TextareaProps, 
         Theme
@@ -3026,11 +2618,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dfn(tag: dfn): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_dfn(tag: dfn): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_dialog(tag: dialog): StyledComponent[
+    inline def withComponent_dialog(tag: dialog): StyledComponent[
         DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
         TextareaProps, 
         Theme
@@ -3040,8 +2630,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_div(tag: div): StyledComponent[
+    inline def withComponent_div(tag: div): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
         TextareaProps, 
         Theme
@@ -3051,8 +2640,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dl(tag: dl): StyledComponent[
+    inline def withComponent_dl(tag: dl): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
         TextareaProps, 
         Theme
@@ -3062,17 +2650,13 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_dt(tag: dt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_dt(tag: dt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGEllipseElement], TextareaProps, Theme]]
+    inline def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGEllipseElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_em(tag: em): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_em(tag: em): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_embed(tag: embed): StyledComponent[
+    inline def withComponent_embed(tag: embed): StyledComponent[
         DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
         TextareaProps, 
         Theme
@@ -3082,83 +2666,57 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEBlendElement], TextareaProps, Theme]]
+    inline def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEBlendElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEColorMatrixElement], TextareaProps, Theme]]
+    inline def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEColorMatrixElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEComponentTransferElement], TextareaProps, Theme]]
+    inline def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEComponentTransferElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFECompositeElement], TextareaProps, Theme]]
+    inline def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFECompositeElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEConvolveMatrixElement], TextareaProps, Theme]]
+    inline def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEConvolveMatrixElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDiffuseLightingElement], TextareaProps, Theme]]
+    inline def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDiffuseLightingElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDisplacementMapElement], TextareaProps, Theme]]
+    inline def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDisplacementMapElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDistantLightElement], TextareaProps, Theme]]
+    inline def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDistantLightElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDropShadowElement], TextareaProps, Theme]]
+    inline def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEDropShadowElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFloodElement], TextareaProps, Theme]]
+    inline def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFloodElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncAElement], TextareaProps, Theme]]
+    inline def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncAElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncBElement], TextareaProps, Theme]]
+    inline def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncBElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncGElement], TextareaProps, Theme]]
+    inline def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncGElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncRElement], TextareaProps, Theme]]
+    inline def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEFuncRElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEGaussianBlurElement], TextareaProps, Theme]]
+    inline def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEGaussianBlurElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEImageElement], TextareaProps, Theme]]
+    inline def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEImageElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeElement], TextareaProps, Theme]]
+    inline def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeNodeElement], TextareaProps, Theme]]
+    inline def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMergeNodeElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMorphologyElement], TextareaProps, Theme]]
+    inline def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEMorphologyElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEOffsetElement], TextareaProps, Theme]]
+    inline def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEOffsetElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEPointLightElement], TextareaProps, Theme]]
+    inline def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFEPointLightElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpecularLightingElement], TextareaProps, Theme]]
+    inline def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpecularLightingElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpotLightElement], TextareaProps, Theme]]
+    inline def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFESpotLightElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETileElement], TextareaProps, Theme]]
+    inline def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETileElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETurbulenceElement], TextareaProps, Theme]]
+    inline def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFETurbulenceElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_fieldset(tag: fieldset): StyledComponent[
+    inline def withComponent_fieldset(tag: fieldset): StyledComponent[
         DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
         TextareaProps, 
         Theme
@@ -3168,23 +2726,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_figcaption(tag: figcaption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_figcaption(tag: figcaption): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_figure(tag: figure): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_figure(tag: figure): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFilterElement], TextareaProps, Theme]]
+    inline def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGFilterElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_footer(tag: footer): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_footer(tag: footer): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGForeignObjectElement], TextareaProps, Theme]]
+    inline def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGForeignObjectElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_form(tag: form): StyledComponent[
+    inline def withComponent_form(tag: form): StyledComponent[
         DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
         TextareaProps, 
         Theme
@@ -3194,11 +2746,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGGElement], TextareaProps, Theme]]
+    inline def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGGElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_h1(tag: h1): StyledComponent[
+    inline def withComponent_h1(tag: h1): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         TextareaProps, 
         Theme
@@ -3208,8 +2758,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h2(tag: h2): StyledComponent[
+    inline def withComponent_h2(tag: h2): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         TextareaProps, 
         Theme
@@ -3219,8 +2768,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h3(tag: h3): StyledComponent[
+    inline def withComponent_h3(tag: h3): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         TextareaProps, 
         Theme
@@ -3230,8 +2778,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h4(tag: h4): StyledComponent[
+    inline def withComponent_h4(tag: h4): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         TextareaProps, 
         Theme
@@ -3241,8 +2788,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h5(tag: h5): StyledComponent[
+    inline def withComponent_h5(tag: h5): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         TextareaProps, 
         Theme
@@ -3252,8 +2798,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_h6(tag: h6): StyledComponent[
+    inline def withComponent_h6(tag: h6): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         TextareaProps, 
         Theme
@@ -3263,8 +2808,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_head(tag: head): StyledComponent[
+    inline def withComponent_head(tag: head): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
         TextareaProps, 
         Theme
@@ -3274,14 +2818,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_header(tag: header): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_header(tag: header): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_hgroup(tag: hgroup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_hgroup(tag: hgroup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_hr(tag: hr): StyledComponent[
+    inline def withComponent_hr(tag: hr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
         TextareaProps, 
         Theme
@@ -3291,8 +2832,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_html(tag: html): StyledComponent[
+    inline def withComponent_html(tag: html): StyledComponent[
         DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
         TextareaProps, 
         Theme
@@ -3302,11 +2842,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_i(tag: i): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_i(tag: i): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_iframe(tag: iframe): StyledComponent[
+    inline def withComponent_iframe(tag: iframe): StyledComponent[
         DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
         TextareaProps, 
         Theme
@@ -3316,11 +2854,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGImageElement], TextareaProps, Theme]]
+    inline def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGImageElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_img(tag: img): StyledComponent[
+    inline def withComponent_img(tag: img): StyledComponent[
         DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
         TextareaProps, 
         Theme
@@ -3330,8 +2866,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_input(tag: input): StyledComponent[
+    inline def withComponent_input(tag: input): StyledComponent[
         DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
         TextareaProps, 
         Theme
@@ -3341,8 +2876,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ins(tag: ins): StyledComponent[
+    inline def withComponent_ins(tag: ins): StyledComponent[
         DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
         TextareaProps, 
         Theme
@@ -3352,11 +2886,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_kbd(tag: kbd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_kbd(tag: kbd): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_keygen(tag: keygen): StyledComponent[
+    inline def withComponent_keygen(tag: keygen): StyledComponent[
         DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
         TextareaProps, 
         Theme
@@ -3366,8 +2898,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_label(tag: label): StyledComponent[
+    inline def withComponent_label(tag: label): StyledComponent[
         DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
         TextareaProps, 
         Theme
@@ -3377,8 +2908,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_legend(tag: legend): StyledComponent[
+    inline def withComponent_legend(tag: legend): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
         TextareaProps, 
         Theme
@@ -3388,8 +2918,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_li(tag: li): StyledComponent[
+    inline def withComponent_li(tag: li): StyledComponent[
         DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
         TextareaProps, 
         Theme
@@ -3399,14 +2928,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLineElement], TextareaProps, Theme]]
+    inline def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLineElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLinearGradientElement], TextareaProps, Theme]]
+    inline def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGLinearGradientElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_link(tag: link): StyledComponent[
+    inline def withComponent_link(tag: link): StyledComponent[
         DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
         TextareaProps, 
         Theme
@@ -3416,11 +2942,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_main(tag: main): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_main(tag: main): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_map(tag: map): StyledComponent[
+    inline def withComponent_map(tag: map): StyledComponent[
         DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
         TextareaProps, 
         Theme
@@ -3430,17 +2954,13 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_mark(tag: mark): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_mark(tag: mark): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMarkerElement], TextareaProps, Theme]]
+    inline def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMarkerElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMaskElement], TextareaProps, Theme]]
+    inline def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMaskElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_menu(tag: menu): StyledComponent[
+    inline def withComponent_menu(tag: menu): StyledComponent[
         DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
         TextareaProps, 
         Theme
@@ -3450,11 +2970,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_menuitem(tag: menuitem): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_menuitem(tag: menuitem): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_meta(tag: meta): StyledComponent[
+    inline def withComponent_meta(tag: meta): StyledComponent[
         DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
         TextareaProps, 
         Theme
@@ -3464,11 +2982,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMetadataElement], TextareaProps, Theme]]
+    inline def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGMetadataElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_meter(tag: meter): StyledComponent[
+    inline def withComponent_meter(tag: meter): StyledComponent[
         DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], 
         TextareaProps, 
         Theme
@@ -3478,20 +2994,15 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], TextareaProps, Theme]]
+    inline def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_nav(tag: nav): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_nav(tag: nav): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_noindex(tag: noindex): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_noindex(tag: noindex): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_noscript(tag: noscript): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_noscript(tag: noscript): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_object(tag: `object`): StyledComponent[
+    inline def withComponent_object(tag: `object`): StyledComponent[
         DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
         TextareaProps, 
         Theme
@@ -3501,8 +3012,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_ol(tag: ol): StyledComponent[
+    inline def withComponent_ol(tag: ol): StyledComponent[
         DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
         TextareaProps, 
         Theme
@@ -3512,8 +3022,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_optgroup(tag: optgroup): StyledComponent[
+    inline def withComponent_optgroup(tag: optgroup): StyledComponent[
         DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
         TextareaProps, 
         Theme
@@ -3523,8 +3032,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_option(tag: option): StyledComponent[
+    inline def withComponent_option(tag: option): StyledComponent[
         DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
         TextareaProps, 
         Theme
@@ -3534,8 +3042,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_output(tag: output): StyledComponent[
+    inline def withComponent_output(tag: output): StyledComponent[
         DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], 
         TextareaProps, 
         Theme
@@ -3545,8 +3052,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_p(tag: p): StyledComponent[
+    inline def withComponent_p(tag: p): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
         TextareaProps, 
         Theme
@@ -3556,8 +3062,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_param(tag: param): StyledComponent[
+    inline def withComponent_param(tag: param): StyledComponent[
         DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
         TextareaProps, 
         Theme
@@ -3567,23 +3072,17 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPathElement], TextareaProps, Theme]]
+    inline def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPathElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPatternElement], TextareaProps, Theme]]
+    inline def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPatternElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_picture(tag: picture): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_picture(tag: picture): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolygonElement], TextareaProps, Theme]]
+    inline def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolygonElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolylineElement], TextareaProps, Theme]]
+    inline def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGPolylineElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_pre(tag: pre): StyledComponent[
+    inline def withComponent_pre(tag: pre): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
         TextareaProps, 
         Theme
@@ -3593,8 +3092,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_progress(tag: progress): StyledComponent[
+    inline def withComponent_progress(tag: progress): StyledComponent[
         DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
         TextareaProps, 
         Theme
@@ -3604,8 +3102,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_q(tag: q): StyledComponent[
+    inline def withComponent_q(tag: q): StyledComponent[
         DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
         TextareaProps, 
         Theme
@@ -3615,29 +3112,21 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRadialGradientElement], TextareaProps, Theme]]
+    inline def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRadialGradientElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRectElement], TextareaProps, Theme]]
+    inline def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGRectElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_rp(tag: rp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_rp(tag: rp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_rt(tag: rt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_rt(tag: rt): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_ruby(tag: ruby): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_ruby(tag: ruby): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_s(tag: s): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_s(tag: s): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_samp(tag: samp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_samp(tag: samp): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_script(tag: script): StyledComponent[
+    inline def withComponent_script(tag: script): StyledComponent[
         DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
         TextareaProps, 
         Theme
@@ -3647,11 +3136,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_section(tag: section): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_section(tag: section): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_select(tag: select): StyledComponent[
+    inline def withComponent_select(tag: select): StyledComponent[
         DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
         TextareaProps, 
         Theme
@@ -3661,8 +3148,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_slot(tag: slot): StyledComponent[
+    inline def withComponent_slot(tag: slot): StyledComponent[
         DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
         TextareaProps, 
         Theme
@@ -3672,11 +3158,9 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_small(tag: small): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_small(tag: small): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_source(tag: source): StyledComponent[
+    inline def withComponent_source(tag: source): StyledComponent[
         DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
         TextareaProps, 
         Theme
@@ -3686,8 +3170,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_span(tag: span): StyledComponent[
+    inline def withComponent_span(tag: span): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
         TextareaProps, 
         Theme
@@ -3697,14 +3180,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGStopElement], TextareaProps, Theme]]
+    inline def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGStopElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_strong(tag: strong): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_strong(tag: strong): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_style(tag: style): StyledComponent[
+    inline def withComponent_style(tag: style): StyledComponent[
         DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
         TextareaProps, 
         Theme
@@ -3714,26 +3194,19 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_sub(tag: sub): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_sub(tag: sub): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_summary(tag: summary): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_summary(tag: summary): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_sup(tag: sup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_sup(tag: sup): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSVGElement], TextareaProps, Theme]]
+    inline def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSVGElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSwitchElement], TextareaProps, Theme]]
+    inline def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSwitchElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSymbolElement], TextareaProps, Theme]]
+    inline def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGSymbolElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_table(tag: table): StyledComponent[
+    inline def withComponent_table(tag: table): StyledComponent[
         DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
         TextareaProps, 
         Theme
@@ -3743,8 +3216,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tbody(tag: tbody): StyledComponent[
+    inline def withComponent_tbody(tag: tbody): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         TextareaProps, 
         Theme
@@ -3754,8 +3226,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_td(tag: td): StyledComponent[
+    inline def withComponent_td(tag: td): StyledComponent[
         DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
         TextareaProps, 
         Theme
@@ -3765,8 +3236,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_template(tag: template): StyledComponent[
+    inline def withComponent_template(tag: template): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
         TextareaProps, 
         Theme
@@ -3776,14 +3246,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextElement], TextareaProps, Theme]]
+    inline def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextPathElement], TextareaProps, Theme]]
+    inline def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTextPathElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_textarea(tag: textarea): StyledComponent[
+    inline def withComponent_textarea(tag: textarea): StyledComponent[
         DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
         TextareaProps, 
         Theme
@@ -3793,8 +3260,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tfoot(tag: tfoot): StyledComponent[
+    inline def withComponent_tfoot(tag: tfoot): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         TextareaProps, 
         Theme
@@ -3804,8 +3270,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_th(tag: th): StyledComponent[
+    inline def withComponent_th(tag: th): StyledComponent[
         DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
         TextareaProps, 
         Theme
@@ -3815,8 +3280,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_thead(tag: thead): StyledComponent[
+    inline def withComponent_thead(tag: thead): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         TextareaProps, 
         Theme
@@ -3826,8 +3290,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_time(tag: time): StyledComponent[
+    inline def withComponent_time(tag: time): StyledComponent[
         DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], 
         TextareaProps, 
         Theme
@@ -3837,8 +3300,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_title(tag: title): StyledComponent[
+    inline def withComponent_title(tag: title): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
         TextareaProps, 
         Theme
@@ -3848,8 +3310,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tr(tag: tr): StyledComponent[
+    inline def withComponent_tr(tag: tr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
         TextareaProps, 
         Theme
@@ -3859,8 +3320,7 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_track(tag: track): StyledComponent[
+    inline def withComponent_track(tag: track): StyledComponent[
         DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
         TextareaProps, 
         Theme
@@ -3870,14 +3330,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTSpanElement], TextareaProps, Theme]]
+    inline def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGTSpanElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_u(tag: u): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_u(tag: u): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_ul(tag: ul): StyledComponent[
+    inline def withComponent_ul(tag: ul): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
         TextareaProps, 
         Theme
@@ -3887,14 +3344,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGUseElement], TextareaProps, Theme]]
+    inline def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGUseElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_var(tag: `var`): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_var(tag: `var`): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_video(tag: video): StyledComponent[
+    inline def withComponent_video(tag: video): StyledComponent[
         DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
         TextareaProps, 
         Theme
@@ -3904,14 +3358,11 @@ object inputMod {
         Theme
       ]]
     
-    @scala.inline
-    def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGViewElement], TextareaProps, Theme]]
+    inline def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[SVGProps[SVGViewElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_wbr(tag: wbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
+    inline def withComponent_wbr(tag: wbr): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(tag.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], TextareaProps, Theme]]
     
-    @scala.inline
-    def withComponent_webview(tag: webview): StyledComponent[
+    inline def withComponent_webview(tag: webview): StyledComponent[
         DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
         TextareaProps, 
         Theme
@@ -3930,14 +3381,11 @@ object inputMod {
   trait Alignments extends StObject
   object Alignments {
     
-    @scala.inline
-    def center: typings.storybookComponents.storybookComponentsStrings.center = "center".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.center]
+    inline def center: typings.storybookComponents.storybookComponentsStrings.center = "center".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.center]
     
-    @scala.inline
-    def end: typings.storybookComponents.storybookComponentsStrings.end = "end".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.end]
+    inline def end: typings.storybookComponents.storybookComponentsStrings.end = "end".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.end]
     
-    @scala.inline
-    def start: typings.storybookComponents.storybookComponentsStrings.start = "start".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.start]
+    inline def start: typings.storybookComponents.storybookComponentsStrings.start = "start".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.start]
   }
   
   /* Inlined std.Omit<react.react.HTMLProps<std.HTMLInputElement>, keyof @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps */
@@ -4511,1723 +3959,1152 @@ object inputMod {
   }
   object InputProps {
     
-    @scala.inline
-    def apply(): InputProps = {
+    inline def apply(): InputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputProps]
     }
     
-    @scala.inline
-    implicit class InputPropsMutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputProps](x: Self) {
       
-      @scala.inline
-      def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
+      inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
+      inline def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
       
-      @scala.inline
-      def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptCharset(value: String): Self = StObject.set(x, "acceptCharset", value.asInstanceOf[js.Any])
+      inline def setAcceptCharset(value: String): Self = StObject.set(x, "acceptCharset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptCharsetUndefined: Self = StObject.set(x, "acceptCharset", js.undefined)
+      inline def setAcceptCharsetUndefined: Self = StObject.set(x, "acceptCharset", js.undefined)
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setAlign(value: Alignments): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Alignments): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAllowFullScreen(value: Boolean): Self = StObject.set(x, "allowFullScreen", value.asInstanceOf[js.Any])
+      inline def setAllowFullScreen(value: Boolean): Self = StObject.set(x, "allowFullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowFullScreenUndefined: Self = StObject.set(x, "allowFullScreen", js.undefined)
+      inline def setAllowFullScreenUndefined: Self = StObject.set(x, "allowFullScreen", js.undefined)
       
-      @scala.inline
-      def setAllowTransparency(value: Boolean): Self = StObject.set(x, "allowTransparency", value.asInstanceOf[js.Any])
+      inline def setAllowTransparency(value: Boolean): Self = StObject.set(x, "allowTransparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowTransparencyUndefined: Self = StObject.set(x, "allowTransparency", js.undefined)
+      inline def setAllowTransparencyUndefined: Self = StObject.set(x, "allowTransparency", js.undefined)
       
-      @scala.inline
-      def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
+      inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
+      inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      @scala.inline
-      def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
+      inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      @scala.inline
-      def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
+      inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      @scala.inline
-      def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
+      inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      @scala.inline
-      def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
+      inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
-      @scala.inline
-      def `setAria-colcount`(value: Double): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
+      inline def `setAria-colcount`(value: Double): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
+      inline def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
       
-      @scala.inline
-      def `setAria-colindex`(value: Double): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
+      inline def `setAria-colindex`(value: Double): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
+      inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
       
-      @scala.inline
-      def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
+      inline def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
+      inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
       
-      @scala.inline
-      def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
+      inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
+      inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      @scala.inline
-      def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
+      inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
-      @scala.inline
-      def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+      inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+      inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
       
-      @scala.inline
-      def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
+      inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
+      inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      @scala.inline
-      def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
+      inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      @scala.inline
-      def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
+      inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
-      @scala.inline
-      def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
+      inline def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
+      inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      @scala.inline
-      def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
+      inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
-      @scala.inline
-      def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
+      inline def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
+      inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      @scala.inline
-      def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
+      inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      @scala.inline
-      def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+      inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      @scala.inline
-      def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
+      inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      @scala.inline
-      def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
+      inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
-      @scala.inline
-      def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
+      inline def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
+      inline def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
       
-      @scala.inline
-      def `setAria-level`(value: Double): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
+      inline def `setAria-level`(value: Double): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
+      inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      @scala.inline
-      def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
+      inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      @scala.inline
-      def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
+      inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      @scala.inline
-      def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
+      inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      @scala.inline
-      def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
+      inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      @scala.inline
-      def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
+      inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
-      @scala.inline
-      def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
+      inline def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
+      inline def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
       
-      @scala.inline
-      def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
+      inline def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
+      inline def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
       
-      @scala.inline
-      def `setAria-posinset`(value: Double): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
+      inline def `setAria-posinset`(value: Double): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
+      inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      @scala.inline
-      def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
+      inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      @scala.inline
-      def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
+      inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
-      @scala.inline
-      def `setAria-relevant`(
+      inline def `setAria-relevant`(
         value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
+      inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      @scala.inline
-      def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
+      inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
-      @scala.inline
-      def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
+      inline def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
+      inline def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
       
-      @scala.inline
-      def `setAria-rowcount`(value: Double): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
+      inline def `setAria-rowcount`(value: Double): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
+      inline def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
       
-      @scala.inline
-      def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
+      inline def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+      inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
       
-      @scala.inline
-      def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
+      inline def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
+      inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      @scala.inline
-      def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
+      inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
-      @scala.inline
-      def `setAria-setsize`(value: Double): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
+      inline def `setAria-setsize`(value: Double): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
+      inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      @scala.inline
-      def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
+      inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
-      @scala.inline
-      def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
+      inline def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
+      inline def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
       
-      @scala.inline
-      def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
+      inline def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
+      inline def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
       
-      @scala.inline
-      def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
+      inline def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
+      inline def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
       
-      @scala.inline
-      def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
+      inline def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
+      inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+      inline def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
+      inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
       
-      @scala.inline
-      def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+      inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+      inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
       
-      @scala.inline
-      def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
+      inline def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
+      inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+      inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
+      inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
       
-      @scala.inline
-      def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
+      inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+      inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      @scala.inline
-      def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      @scala.inline
-      def setCellPadding(value: Double | String): Self = StObject.set(x, "cellPadding", value.asInstanceOf[js.Any])
+      inline def setCellPadding(value: Double | String): Self = StObject.set(x, "cellPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellPaddingUndefined: Self = StObject.set(x, "cellPadding", js.undefined)
+      inline def setCellPaddingUndefined: Self = StObject.set(x, "cellPadding", js.undefined)
       
-      @scala.inline
-      def setCellSpacing(value: Double | String): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
+      inline def setCellSpacing(value: Double | String): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
+      inline def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
       
-      @scala.inline
-      def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
+      inline def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChallengeUndefined: Self = StObject.set(x, "challenge", js.undefined)
+      inline def setChallengeUndefined: Self = StObject.set(x, "challenge", js.undefined)
       
-      @scala.inline
-      def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
+      inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
+      inline def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+      inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
+      inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
       
-      @scala.inline
-      def setClassID(value: String): Self = StObject.set(x, "classID", value.asInstanceOf[js.Any])
+      inline def setClassID(value: String): Self = StObject.set(x, "classID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassIDUndefined: Self = StObject.set(x, "classID", js.undefined)
+      inline def setClassIDUndefined: Self = StObject.set(x, "classID", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+      inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      @scala.inline
-      def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      @scala.inline
-      def setCoords(value: String): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: String): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
+      inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
       
-      @scala.inline
-      def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      @scala.inline
-      def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+      inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
+      inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+      inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+      inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
       
-      @scala.inline
-      def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+      inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
+      inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
       
-      @scala.inline
-      def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
+      inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
+      inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+      inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+      inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+      inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setEncType(value: String): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
+      inline def setEncType(value: String): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncTypeUndefined: Self = StObject.set(x, "encType", js.undefined)
+      inline def setEncTypeUndefined: Self = StObject.set(x, "encType", js.undefined)
       
-      @scala.inline
-      def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
+      inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
-      @scala.inline
-      def setFormEncType(value: String): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
+      inline def setFormEncType(value: String): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
+      inline def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
       
-      @scala.inline
-      def setFormMethod(value: String): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+      inline def setFormMethod(value: String): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
+      inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
       
-      @scala.inline
-      def setFormNoValidate(value: Boolean): Self = StObject.set(x, "formNoValidate", value.asInstanceOf[js.Any])
+      inline def setFormNoValidate(value: Boolean): Self = StObject.set(x, "formNoValidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormNoValidateUndefined: Self = StObject.set(x, "formNoValidate", js.undefined)
+      inline def setFormNoValidateUndefined: Self = StObject.set(x, "formNoValidate", js.undefined)
       
-      @scala.inline
-      def setFormTarget(value: String): Self = StObject.set(x, "formTarget", value.asInstanceOf[js.Any])
+      inline def setFormTarget(value: String): Self = StObject.set(x, "formTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormTargetUndefined: Self = StObject.set(x, "formTarget", js.undefined)
+      inline def setFormTargetUndefined: Self = StObject.set(x, "formTarget", js.undefined)
       
-      @scala.inline
-      def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      @scala.inline
-      def setFrameBorder(value: Double | String): Self = StObject.set(x, "frameBorder", value.asInstanceOf[js.Any])
+      inline def setFrameBorder(value: Double | String): Self = StObject.set(x, "frameBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameBorderUndefined: Self = StObject.set(x, "frameBorder", js.undefined)
+      inline def setFrameBorderUndefined: Self = StObject.set(x, "frameBorder", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+      inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
+      inline def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefLang(value: String): Self = StObject.set(x, "hrefLang", value.asInstanceOf[js.Any])
+      inline def setHrefLang(value: String): Self = StObject.set(x, "hrefLang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefLangUndefined: Self = StObject.set(x, "hrefLang", js.undefined)
+      inline def setHrefLangUndefined: Self = StObject.set(x, "hrefLang", js.undefined)
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setHtmlFor(value: String): Self = StObject.set(x, "htmlFor", value.asInstanceOf[js.Any])
+      inline def setHtmlFor(value: String): Self = StObject.set(x, "htmlFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlForUndefined: Self = StObject.set(x, "htmlFor", js.undefined)
+      inline def setHtmlForUndefined: Self = StObject.set(x, "htmlFor", js.undefined)
       
-      @scala.inline
-      def setHttpEquiv(value: String): Self = StObject.set(x, "httpEquiv", value.asInstanceOf[js.Any])
+      inline def setHttpEquiv(value: String): Self = StObject.set(x, "httpEquiv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpEquivUndefined: Self = StObject.set(x, "httpEquiv", js.undefined)
+      inline def setHttpEquivUndefined: Self = StObject.set(x, "httpEquiv", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
+      inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      @scala.inline
-      def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
+      inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
-      @scala.inline
-      def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+      inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
       
-      @scala.inline
-      def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+      inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+      inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
-      @scala.inline
-      def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
+      inline def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
+      inline def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
       
-      @scala.inline
-      def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
+      inline def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
+      inline def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
       
-      @scala.inline
-      def setItemRef(value: String): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
+      inline def setItemRef(value: String): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemRefUndefined: Self = StObject.set(x, "itemRef", js.undefined)
+      inline def setItemRefUndefined: Self = StObject.set(x, "itemRef", js.undefined)
       
-      @scala.inline
-      def setItemScope(value: Boolean): Self = StObject.set(x, "itemScope", value.asInstanceOf[js.Any])
+      inline def setItemScope(value: Boolean): Self = StObject.set(x, "itemScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
+      inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      @scala.inline
-      def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+      inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+      inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNull: Self = StObject.set(x, "key", null)
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
       
-      @scala.inline
-      def setKeyParams(value: String): Self = StObject.set(x, "keyParams", value.asInstanceOf[js.Any])
+      inline def setKeyParams(value: String): Self = StObject.set(x, "keyParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyParamsUndefined: Self = StObject.set(x, "keyParams", js.undefined)
+      inline def setKeyParamsUndefined: Self = StObject.set(x, "keyParams", js.undefined)
       
-      @scala.inline
-      def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+      inline def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+      inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+      inline def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
+      inline def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
       
-      @scala.inline
-      def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+      inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+      inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
       
-      @scala.inline
-      def setMarginHeight(value: Double): Self = StObject.set(x, "marginHeight", value.asInstanceOf[js.Any])
+      inline def setMarginHeight(value: Double): Self = StObject.set(x, "marginHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginHeightUndefined: Self = StObject.set(x, "marginHeight", js.undefined)
+      inline def setMarginHeightUndefined: Self = StObject.set(x, "marginHeight", js.undefined)
       
-      @scala.inline
-      def setMarginWidth(value: Double): Self = StObject.set(x, "marginWidth", value.asInstanceOf[js.Any])
+      inline def setMarginWidth(value: Double): Self = StObject.set(x, "marginWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginWidthUndefined: Self = StObject.set(x, "marginWidth", js.undefined)
+      inline def setMarginWidthUndefined: Self = StObject.set(x, "marginWidth", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaGroup(value: String): Self = StObject.set(x, "mediaGroup", value.asInstanceOf[js.Any])
+      inline def setMediaGroup(value: String): Self = StObject.set(x, "mediaGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaGroupUndefined: Self = StObject.set(x, "mediaGroup", js.undefined)
+      inline def setMediaGroupUndefined: Self = StObject.set(x, "mediaGroup", js.undefined)
       
-      @scala.inline
-      def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+      inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+      inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+      inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
+      inline def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
+      inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setOnAbort(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
+      inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      @scala.inline
-      def setOnAnimationEnd(value: AnimationEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+      inline def setOnAnimationEnd(value: AnimationEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+      inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      @scala.inline
-      def setOnAnimationIteration(value: AnimationEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
+      inline def setOnAnimationIteration(value: AnimationEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
+      inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
       
-      @scala.inline
-      def setOnAnimationStart(value: AnimationEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+      inline def setOnAnimationStart(value: AnimationEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
+      inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
       
-      @scala.inline
-      def setOnAuxClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+      inline def setOnAuxClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
+      inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      @scala.inline
-      def setOnBeforeInput(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
+      inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnCanPlay(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+      inline def setOnCanPlay(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThrough(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+      inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
+      inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
       
-      @scala.inline
-      def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
+      inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnCompositionEnd(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+      inline def setOnCompositionEnd(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
+      inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
       
-      @scala.inline
-      def setOnCompositionStart(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+      inline def setOnCompositionStart(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
+      inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
       
-      @scala.inline
-      def setOnCompositionUpdate(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
+      inline def setOnCompositionUpdate(value: CompositionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
+      inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
       
-      @scala.inline
-      def setOnContextMenu(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnCopy(value: ClipboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      inline def setOnCopy(value: ClipboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+      inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      @scala.inline
-      def setOnCut(value: ClipboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+      inline def setOnCut(value: ClipboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
+      inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
       
-      @scala.inline
-      def setOnDoubleClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnDoubleClick(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
+      inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
-      @scala.inline
-      def setOnDrag(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnd(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      inline def setOnDragEnd(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+      inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnDragEnter(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+      inline def setOnDragEnter(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
+      inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
-      @scala.inline
-      def setOnDragExit(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
+      inline def setOnDragExit(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
+      inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
       
-      @scala.inline
-      def setOnDragLeave(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+      inline def setOnDragLeave(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
+      inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
-      @scala.inline
-      def setOnDragOver(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      inline def setOnDragOver(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
+      inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+      inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      @scala.inline
-      def setOnDrop(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+      inline def setOnDrop(value: DragEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
+      inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      @scala.inline
-      def setOnDurationChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+      inline def setOnDurationChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
+      inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
       
-      @scala.inline
-      def setOnEmptied(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+      inline def setOnEmptied(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
+      inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
       
-      @scala.inline
-      def setOnEncrypted(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+      inline def setOnEncrypted(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
+      inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
       
-      @scala.inline
-      def setOnEnded(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+      inline def setOnEnded(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
+      inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      @scala.inline
-      def setOnError(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnInput(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+      inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      @scala.inline
-      def setOnInvalid(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
+      inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyPress(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+      inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      @scala.inline
-      def setOnKeyUp(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadStart(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+      inline def setOnLoadStart(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
+      inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnLoadedData(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
+      inline def setOnLoadedData(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
+      inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
       
-      @scala.inline
-      def setOnLoadedMetadata(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+      inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
+      inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+      inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setOnMouseOut(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+      inline def setOnMouseOut(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
+      inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
       
-      @scala.inline
-      def setOnMouseOver(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+      inline def setOnMouseOver(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
+      inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
       
-      @scala.inline
-      def setOnMouseUp(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      inline def setOnMouseUp(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+      inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      @scala.inline
-      def setOnPaste(value: ClipboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      inline def setOnPaste(value: ClipboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
+      inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
       
-      @scala.inline
-      def setOnPause(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+      inline def setOnPause(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
+      inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      @scala.inline
-      def setOnPlay(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
+      inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      @scala.inline
-      def setOnPlaying(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+      inline def setOnPlaying(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
+      inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
       
-      @scala.inline
-      def setOnPointerCancel(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+      inline def setOnPointerCancel(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+      inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
       
-      @scala.inline
-      def setOnPointerDown(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      inline def setOnPointerDown(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+      inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
       
-      @scala.inline
-      def setOnPointerEnter(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+      inline def setOnPointerEnter(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+      inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
       
-      @scala.inline
-      def setOnPointerLeave(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+      inline def setOnPointerLeave(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+      inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
       
-      @scala.inline
-      def setOnPointerMove(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      inline def setOnPointerMove(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+      inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
       
-      @scala.inline
-      def setOnPointerOut(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+      inline def setOnPointerOut(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
+      inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
       
-      @scala.inline
-      def setOnPointerOver(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+      inline def setOnPointerOver(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
+      inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
       
-      @scala.inline
-      def setOnPointerUp(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      inline def setOnPointerUp(value: PointerEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
+      inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
-      @scala.inline
-      def setOnProgress(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      @scala.inline
-      def setOnRateChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
+      inline def setOnRateChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
+      inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      @scala.inline
-      def setOnReset(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: UIEvent[HTMLInputElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setOnSeeked(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+      inline def setOnSeeked(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
+      inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
       
-      @scala.inline
-      def setOnSeeking(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+      inline def setOnSeeking(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
+      inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOnStalled(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+      inline def setOnStalled(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
+      inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      @scala.inline
-      def setOnSuspend(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+      inline def setOnSuspend(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
+      inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      @scala.inline
-      def setOnTimeUpdate(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
+      inline def setOnTimeUpdate(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
+      inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      @scala.inline
-      def setOnTouchCancel(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+      inline def setOnTouchCancel(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
+      inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
       
-      @scala.inline
-      def setOnTouchEnd(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+      inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
-      @scala.inline
-      def setOnTouchMove(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      @scala.inline
-      def setOnTransitionEnd(value: TransitionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+      inline def setOnTransitionEnd(value: TransitionEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
+      inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      @scala.inline
-      def setOnVolumeChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
+      inline def setOnVolumeChange(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
+      inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
       
-      @scala.inline
-      def setOnWaiting(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+      inline def setOnWaiting(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
+      inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
       
-      @scala.inline
-      def setOnWheel(value: WheelEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+      inline def setOnWheel(value: WheelEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
+      inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setOptimum(value: Double): Self = StObject.set(x, "optimum", value.asInstanceOf[js.Any])
+      inline def setOptimum(value: Double): Self = StObject.set(x, "optimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimumUndefined: Self = StObject.set(x, "optimum", js.undefined)
+      inline def setOptimumUndefined: Self = StObject.set(x, "optimum", js.undefined)
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPlaysInline(value: Boolean): Self = StObject.set(x, "playsInline", value.asInstanceOf[js.Any])
+      inline def setPlaysInline(value: Boolean): Self = StObject.set(x, "playsInline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaysInlineUndefined: Self = StObject.set(x, "playsInline", js.undefined)
+      inline def setPlaysInlineUndefined: Self = StObject.set(x, "playsInline", js.undefined)
       
-      @scala.inline
-      def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
+      inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
+      inline def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setPreload(value: String): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+      inline def setPreload(value: String): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+      inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
+      inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
+      inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setRef(value: LegacyRef[HTMLInputElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: LegacyRef[HTMLInputElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+      inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+      inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setSandbox(value: String): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+      inline def setSandbox(value: String): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+      inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+      inline def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
+      inline def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
       
-      @scala.inline
-      def setScrolling(value: String): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
+      inline def setScrolling(value: String): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
+      inline def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
       
-      @scala.inline
-      def setSeamless(value: Boolean): Self = StObject.set(x, "seamless", value.asInstanceOf[js.Any])
+      inline def setSeamless(value: Boolean): Self = StObject.set(x, "seamless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeamlessUndefined: Self = StObject.set(x, "seamless", js.undefined)
+      inline def setSeamlessUndefined: Self = StObject.set(x, "seamless", js.undefined)
       
-      @scala.inline
-      def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+      inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setSize(value: Sizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Sizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      @scala.inline
-      def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+      inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      @scala.inline
-      def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+      inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
       
-      @scala.inline
-      def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
+      inline def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
+      inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcDoc(value: String): Self = StObject.set(x, "srcDoc", value.asInstanceOf[js.Any])
+      inline def setSrcDoc(value: String): Self = StObject.set(x, "srcDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcDocUndefined: Self = StObject.set(x, "srcDoc", js.undefined)
+      inline def setSrcDocUndefined: Self = StObject.set(x, "srcDoc", js.undefined)
       
-      @scala.inline
-      def setSrcLang(value: String): Self = StObject.set(x, "srcLang", value.asInstanceOf[js.Any])
+      inline def setSrcLang(value: String): Self = StObject.set(x, "srcLang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcLangUndefined: Self = StObject.set(x, "srcLang", js.undefined)
+      inline def setSrcLangUndefined: Self = StObject.set(x, "srcLang", js.undefined)
       
-      @scala.inline
-      def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
+      inline def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
+      inline def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double | String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double | String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
       
-      @scala.inline
-      def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressContentEditableWarningUndefined: Self = StObject.set(x, "suppressContentEditableWarning", js.undefined)
+      inline def setSuppressContentEditableWarningUndefined: Self = StObject.set(x, "suppressContentEditableWarning", js.undefined)
       
-      @scala.inline
-      def setSuppressHydrationWarning(value: Boolean): Self = StObject.set(x, "suppressHydrationWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressHydrationWarning(value: Boolean): Self = StObject.set(x, "suppressHydrationWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
+      inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
+      inline def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
+      inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      @scala.inline
-      def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+      inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      @scala.inline
-      def setUseMap(value: String): Self = StObject.set(x, "useMap", value.asInstanceOf[js.Any])
+      inline def setUseMap(value: String): Self = StObject.set(x, "useMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseMapUndefined: Self = StObject.set(x, "useMap", js.undefined)
+      inline def setUseMapUndefined: Self = StObject.set(x, "useMap", js.undefined)
       
-      @scala.inline
-      def setValid(value: ValidationStates): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: ValidationStates): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
       
-      @scala.inline
-      def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
+      inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+      inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setWmode(value: String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
+      inline def setWmode(value: String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
+      inline def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
       
-      @scala.inline
-      def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -6243,38 +5120,28 @@ object inputMod {
   }
   object InputStyleProps {
     
-    @scala.inline
-    def apply(): InputStyleProps = {
+    inline def apply(): InputStyleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputStyleProps]
     }
     
-    @scala.inline
-    implicit class InputStylePropsMutableBuilder[Self <: InputStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputStyleProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: Alignments): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Alignments): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setSize(value: Sizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Sizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setValid(value: ValidationStates): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: ValidationStates): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     }
   }
   
@@ -6655,1132 +5522,758 @@ object inputMod {
   }
   object SelectProps {
     
-    @scala.inline
-    def apply(): SelectProps = {
+    inline def apply(): SelectProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectProps]
     }
     
-    @scala.inline
-    implicit class SelectPropsMutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectProps](x: Self) {
       
-      @scala.inline
-      def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
+      inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
+      inline def setAboutUndefined: Self = StObject.set(x, "about", js.undefined)
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      @scala.inline
-      def setAlign(value: Alignments): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Alignments): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
+      inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
+      inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      @scala.inline
-      def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
+      inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
-      @scala.inline
-      def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
+      inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      @scala.inline
-      def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
+      inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
-      @scala.inline
-      def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
+      inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
       
-      @scala.inline
-      def `setAria-colcount`(value: Double): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
+      inline def `setAria-colcount`(value: Double): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
+      inline def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
       
-      @scala.inline
-      def `setAria-colindex`(value: Double): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
+      inline def `setAria-colindex`(value: Double): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
+      inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
       
-      @scala.inline
-      def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
+      inline def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
+      inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
       
-      @scala.inline
-      def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
+      inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
+      inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
       
-      @scala.inline
-      def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
+      inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
       
-      @scala.inline
-      def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+      inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+      inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
       
-      @scala.inline
-      def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
+      inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
+      inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      @scala.inline
-      def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
+      inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
-      @scala.inline
-      def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
+      inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
       
-      @scala.inline
-      def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
+      inline def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
+      inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      @scala.inline
-      def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
+      inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
-      @scala.inline
-      def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
+      inline def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
+      inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      @scala.inline
-      def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
+      inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
-      @scala.inline
-      def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+      inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      @scala.inline
-      def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
+      inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
-      @scala.inline
-      def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
+      inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
       
-      @scala.inline
-      def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
+      inline def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
+      inline def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
       
-      @scala.inline
-      def `setAria-level`(value: Double): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
+      inline def `setAria-level`(value: Double): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
+      inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
       
-      @scala.inline
-      def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
+      inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      @scala.inline
-      def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
+      inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      @scala.inline
-      def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
+      inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      @scala.inline
-      def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
+      inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
-      @scala.inline
-      def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
+      inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
       
-      @scala.inline
-      def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
+      inline def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
+      inline def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
       
-      @scala.inline
-      def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
+      inline def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
+      inline def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
       
-      @scala.inline
-      def `setAria-posinset`(value: Double): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
+      inline def `setAria-posinset`(value: Double): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
+      inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
       
-      @scala.inline
-      def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
+      inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      @scala.inline
-      def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
+      inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
-      @scala.inline
-      def `setAria-relevant`(
+      inline def `setAria-relevant`(
         value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
+      inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      @scala.inline
-      def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
+      inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
-      @scala.inline
-      def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
+      inline def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
+      inline def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
       
-      @scala.inline
-      def `setAria-rowcount`(value: Double): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
+      inline def `setAria-rowcount`(value: Double): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
+      inline def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
       
-      @scala.inline
-      def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
+      inline def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+      inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
       
-      @scala.inline
-      def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
+      inline def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
+      inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      @scala.inline
-      def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
+      inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
-      @scala.inline
-      def `setAria-setsize`(value: Double): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
+      inline def `setAria-setsize`(value: Double): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
+      inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
       
-      @scala.inline
-      def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
+      inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
-      @scala.inline
-      def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
+      inline def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
+      inline def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
       
-      @scala.inline
-      def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
+      inline def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
+      inline def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
       
-      @scala.inline
-      def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
+      inline def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
+      inline def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
       
-      @scala.inline
-      def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
+      inline def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
+      inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
-      @scala.inline
-      def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
+      inline def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
+      inline def setAutoCapitalizeUndefined: Self = StObject.set(x, "autoCapitalize", js.undefined)
       
-      @scala.inline
-      def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+      inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+      inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
       
-      @scala.inline
-      def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
+      inline def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
+      inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
+      inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+      inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
+      inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
-      @scala.inline
-      def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+      inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      @scala.inline
-      def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+      inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
+      inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
       
-      @scala.inline
-      def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+      inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+      inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
       
-      @scala.inline
-      def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
+      inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
+      inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String | Double | js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+      inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      @scala.inline
-      def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
+      inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      @scala.inline
-      def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
+      inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
-      @scala.inline
-      def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+      inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+      inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
-      @scala.inline
-      def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
+      inline def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
+      inline def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
       
-      @scala.inline
-      def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
+      inline def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
+      inline def setItemPropUndefined: Self = StObject.set(x, "itemProp", js.undefined)
       
-      @scala.inline
-      def setItemRef(value: String): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
+      inline def setItemRef(value: String): Self = StObject.set(x, "itemRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemRefUndefined: Self = StObject.set(x, "itemRef", js.undefined)
+      inline def setItemRefUndefined: Self = StObject.set(x, "itemRef", js.undefined)
       
-      @scala.inline
-      def setItemScope(value: Boolean): Self = StObject.set(x, "itemScope", value.asInstanceOf[js.Any])
+      inline def setItemScope(value: Boolean): Self = StObject.set(x, "itemScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
+      inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      @scala.inline
-      def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+      inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+      inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnAbort(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
+      inline def setOnAbort(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
+      inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      @scala.inline
-      def setOnAnimationEnd(value: AnimationEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+      inline def setOnAnimationEnd(value: AnimationEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+      inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      @scala.inline
-      def setOnAnimationIteration(value: AnimationEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
+      inline def setOnAnimationIteration(value: AnimationEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onAnimationIteration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
+      inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
       
-      @scala.inline
-      def setOnAnimationStart(value: AnimationEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+      inline def setOnAnimationStart(value: AnimationEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
+      inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
       
-      @scala.inline
-      def setOnAuxClick(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+      inline def setOnAuxClick(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
+      inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      @scala.inline
-      def setOnBeforeInput(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
+      inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnCanPlay(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
+      inline def setOnCanPlay(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThrough(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
+      inline def setOnCanPlayThrough(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onCanPlayThrough", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
+      inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
       
-      @scala.inline
-      def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
+      inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: ChangeEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: ChangeEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnCompositionEnd(value: CompositionEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
+      inline def setOnCompositionEnd(value: CompositionEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCompositionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
+      inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
       
-      @scala.inline
-      def setOnCompositionStart(value: CompositionEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
+      inline def setOnCompositionStart(value: CompositionEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCompositionStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
+      inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
       
-      @scala.inline
-      def setOnCompositionUpdate(value: CompositionEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
+      inline def setOnCompositionUpdate(value: CompositionEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCompositionUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
+      inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
       
-      @scala.inline
-      def setOnContextMenu(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnCopy(value: ClipboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      inline def setOnCopy(value: ClipboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+      inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      @scala.inline
-      def setOnCut(value: ClipboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
+      inline def setOnCut(value: ClipboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onCut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
+      inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
       
-      @scala.inline
-      def setOnDoubleClick(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnDoubleClick(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
+      inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
-      @scala.inline
-      def setOnDrag(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnd(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+      inline def setOnDragEnd(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+      inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnDragEnter(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+      inline def setOnDragEnter(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
+      inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
-      @scala.inline
-      def setOnDragExit(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
+      inline def setOnDragExit(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
+      inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
       
-      @scala.inline
-      def setOnDragLeave(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+      inline def setOnDragLeave(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
+      inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
-      @scala.inline
-      def setOnDragOver(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
+      inline def setOnDragOver(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
+      inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+      inline def setOnDragStart(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+      inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      @scala.inline
-      def setOnDrop(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
+      inline def setOnDrop(value: DragEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
+      inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      @scala.inline
-      def setOnDurationChange(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+      inline def setOnDurationChange(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
+      inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
       
-      @scala.inline
-      def setOnEmptied(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
+      inline def setOnEmptied(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onEmptied", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
+      inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
       
-      @scala.inline
-      def setOnEncrypted(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
+      inline def setOnEncrypted(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onEncrypted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
+      inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
       
-      @scala.inline
-      def setOnEnded(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+      inline def setOnEnded(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
+      inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      @scala.inline
-      def setOnError(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnInput(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
+      inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      @scala.inline
-      def setOnInvalid(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
+      inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyPress(value: KeyboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      inline def setOnKeyPress(value: KeyboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+      inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
-      @scala.inline
-      def setOnKeyUp(value: KeyboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadStart(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
+      inline def setOnLoadStart(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onLoadStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
+      inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnLoadedData(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
+      inline def setOnLoadedData(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onLoadedData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
+      inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
       
-      @scala.inline
-      def setOnLoadedMetadata(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
+      inline def setOnLoadedMetadata(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onLoadedMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
+      inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+      inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnMouseMove(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+      inline def setOnMouseMove(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+      inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      @scala.inline
-      def setOnMouseOut(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+      inline def setOnMouseOut(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
+      inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
       
-      @scala.inline
-      def setOnMouseOver(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+      inline def setOnMouseOver(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
+      inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
       
-      @scala.inline
-      def setOnMouseUp(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+      inline def setOnMouseUp(value: MouseEvent[HTMLSelectElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+      inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      @scala.inline
-      def setOnPaste(value: ClipboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      inline def setOnPaste(value: ClipboardEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
+      inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
       
-      @scala.inline
-      def setOnPause(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+      inline def setOnPause(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
+      inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      @scala.inline
-      def setOnPlay(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
+      inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      @scala.inline
-      def setOnPlaying(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
+      inline def setOnPlaying(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onPlaying", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
+      inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
       
-      @scala.inline
-      def setOnPointerCancel(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+      inline def setOnPointerCancel(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+      inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
       
-      @scala.inline
-      def setOnPointerDown(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      inline def setOnPointerDown(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+      inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
       
-      @scala.inline
-      def setOnPointerEnter(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+      inline def setOnPointerEnter(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+      inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
       
-      @scala.inline
-      def setOnPointerLeave(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+      inline def setOnPointerLeave(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+      inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
       
-      @scala.inline
-      def setOnPointerMove(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      inline def setOnPointerMove(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+      inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
       
-      @scala.inline
-      def setOnPointerOut(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+      inline def setOnPointerOut(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
+      inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
       
-      @scala.inline
-      def setOnPointerOver(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+      inline def setOnPointerOver(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
+      inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
       
-      @scala.inline
-      def setOnPointerUp(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      inline def setOnPointerUp(value: PointerEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
+      inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
-      @scala.inline
-      def setOnProgress(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      @scala.inline
-      def setOnRateChange(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
+      inline def setOnRateChange(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onRateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
+      inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      @scala.inline
-      def setOnReset(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
-      @scala.inline
-      def setOnScroll(value: UIEvent[HTMLSelectElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: UIEvent[HTMLSelectElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      @scala.inline
-      def setOnSeeked(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
+      inline def setOnSeeked(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onSeeked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
+      inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
       
-      @scala.inline
-      def setOnSeeking(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
+      inline def setOnSeeking(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onSeeking", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
+      inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOnStalled(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
+      inline def setOnStalled(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onStalled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
+      inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: FormEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
-      @scala.inline
-      def setOnSuspend(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
+      inline def setOnSuspend(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
+      inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      @scala.inline
-      def setOnTimeUpdate(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
+      inline def setOnTimeUpdate(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onTimeUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
+      inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      @scala.inline
-      def setOnTouchCancel(value: TouchEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+      inline def setOnTouchCancel(value: TouchEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
+      inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
       
-      @scala.inline
-      def setOnTouchEnd(value: TouchEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+      inline def setOnTouchEnd(value: TouchEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+      inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
-      @scala.inline
-      def setOnTouchMove(value: TouchEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+      inline def setOnTouchMove(value: TouchEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      @scala.inline
-      def setOnTransitionEnd(value: TransitionEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+      inline def setOnTransitionEnd(value: TransitionEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
+      inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      @scala.inline
-      def setOnVolumeChange(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
+      inline def setOnVolumeChange(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
+      inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
       
-      @scala.inline
-      def setOnWaiting(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
+      inline def setOnWaiting(value: SyntheticEvent[HTMLSelectElement, Event] => Unit): Self = StObject.set(x, "onWaiting", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
+      inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
       
-      @scala.inline
-      def setOnWheel(value: WheelEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+      inline def setOnWheel(value: WheelEvent[HTMLSelectElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
+      inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
+      inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
+      inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+      inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      @scala.inline
-      def setSize(value: Sizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Sizes): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+      inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+      inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
       
-      @scala.inline
-      def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
+      inline def setSpellCheck(value: Booleanish): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
+      inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressContentEditableWarningUndefined: Self = StObject.set(x, "suppressContentEditableWarning", js.undefined)
+      inline def setSuppressContentEditableWarningUndefined: Self = StObject.set(x, "suppressContentEditableWarning", js.undefined)
       
-      @scala.inline
-      def setSuppressHydrationWarning(value: Boolean): Self = StObject.set(x, "suppressHydrationWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressHydrationWarning(value: Boolean): Self = StObject.set(x, "suppressHydrationWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
+      inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
+      inline def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
+      inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
       
-      @scala.inline
-      def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: on | off): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+      inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      @scala.inline
-      def setValid(value: ValidationStates): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: ValidationStates): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
       
-      @scala.inline
-      def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
+      inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+      inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
   
@@ -7792,14 +6285,11 @@ object inputMod {
   trait Sizes extends StObject
   object Sizes {
     
-    @scala.inline
-    def `100Percentsign`: typings.storybookComponents.storybookComponentsStrings.`100Percentsign` = "100%".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`100Percentsign`]
+    inline def `100Percentsign`: typings.storybookComponents.storybookComponentsStrings.`100Percentsign` = "100%".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`100Percentsign`]
     
-    @scala.inline
-    def auto: typings.storybookComponents.storybookComponentsStrings.auto = "auto".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.auto]
+    inline def auto: typings.storybookComponents.storybookComponentsStrings.auto = "auto".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.auto]
     
-    @scala.inline
-    def flex: typings.storybookComponents.storybookComponentsStrings.flex = "flex".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.flex]
+    inline def flex: typings.storybookComponents.storybookComponentsStrings.flex = "flex".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.flex]
   }
   
   type TextareaProps = (typings.std.Omit[
@@ -7815,13 +6305,10 @@ object inputMod {
   trait ValidationStates extends StObject
   object ValidationStates {
     
-    @scala.inline
-    def error: typings.storybookComponents.storybookComponentsStrings.error = "error".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.error]
+    inline def error: typings.storybookComponents.storybookComponentsStrings.error = "error".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.error]
     
-    @scala.inline
-    def valid: typings.storybookComponents.storybookComponentsStrings.valid = "valid".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.valid]
+    inline def valid: typings.storybookComponents.storybookComponentsStrings.valid = "valid".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.valid]
     
-    @scala.inline
-    def warn: typings.storybookComponents.storybookComponentsStrings.warn = "warn".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.warn]
+    inline def warn: typings.storybookComponents.storybookComponentsStrings.warn = "warn".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.warn]
   }
 }

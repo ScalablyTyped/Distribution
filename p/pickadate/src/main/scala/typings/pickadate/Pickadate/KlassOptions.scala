@@ -56,97 +56,67 @@ trait KlassOptions extends StObject {
 }
 object KlassOptions {
   
-  @scala.inline
-  def apply(): KlassOptions = {
+  inline def apply(): KlassOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KlassOptions]
   }
   
-  @scala.inline
-  implicit class KlassOptionsMutableBuilder[Self <: KlassOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KlassOptions](x: Self) {
     
-    @scala.inline
-    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setBox(value: String): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+    inline def setBox(value: String): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
+    inline def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
     
-    @scala.inline
-    def setButtonClear(value: String): Self = StObject.set(x, "buttonClear", value.asInstanceOf[js.Any])
+    inline def setButtonClear(value: String): Self = StObject.set(x, "buttonClear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonClearUndefined: Self = StObject.set(x, "buttonClear", js.undefined)
+    inline def setButtonClearUndefined: Self = StObject.set(x, "buttonClear", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+    inline def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+    inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
-    @scala.inline
-    def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
-    @scala.inline
-    def setHighlighted(value: String): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+    inline def setHighlighted(value: String): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
+    inline def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
     
-    @scala.inline
-    def setHolder(value: String): Self = StObject.set(x, "holder", value.asInstanceOf[js.Any])
+    inline def setHolder(value: String): Self = StObject.set(x, "holder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHolderUndefined: Self = StObject.set(x, "holder", js.undefined)
+    inline def setHolderUndefined: Self = StObject.set(x, "holder", js.undefined)
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setNow(value: String): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+    inline def setNow(value: String): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+    inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
     
-    @scala.inline
-    def setOpened(value: String): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
+    inline def setOpened(value: String): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
+    inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
     
-    @scala.inline
-    def setPicker(value: String): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+    inline def setPicker(value: String): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
+    inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
     
-    @scala.inline
-    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    inline def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

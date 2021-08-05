@@ -48,61 +48,43 @@ trait AccountSettings extends StObject {
 }
 object AccountSettings {
   
-  @scala.inline
-  def apply(): AccountSettings = {
+  inline def apply(): AccountSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountSettings]
   }
   
-  @scala.inline
-  implicit class AccountSettingsMutableBuilder[Self <: AccountSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSettings](x: Self) {
     
-    @scala.inline
-    def setAwsAccountNumber(value: AWSAccountNumber): Self = StObject.set(x, "awsAccountNumber", value.asInstanceOf[js.Any])
+    inline def setAwsAccountNumber(value: AWSAccountNumber): Self = StObject.set(x, "awsAccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountNumberUndefined: Self = StObject.set(x, "awsAccountNumber", js.undefined)
+    inline def setAwsAccountNumberUndefined: Self = StObject.set(x, "awsAccountNumber", js.undefined)
     
-    @scala.inline
-    def setDefaultJobTimeoutMinutes(value: JobTimeoutMinutes): Self = StObject.set(x, "defaultJobTimeoutMinutes", value.asInstanceOf[js.Any])
+    inline def setDefaultJobTimeoutMinutes(value: JobTimeoutMinutes): Self = StObject.set(x, "defaultJobTimeoutMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultJobTimeoutMinutesUndefined: Self = StObject.set(x, "defaultJobTimeoutMinutes", js.undefined)
+    inline def setDefaultJobTimeoutMinutesUndefined: Self = StObject.set(x, "defaultJobTimeoutMinutes", js.undefined)
     
-    @scala.inline
-    def setMaxJobTimeoutMinutes(value: JobTimeoutMinutes): Self = StObject.set(x, "maxJobTimeoutMinutes", value.asInstanceOf[js.Any])
+    inline def setMaxJobTimeoutMinutes(value: JobTimeoutMinutes): Self = StObject.set(x, "maxJobTimeoutMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxJobTimeoutMinutesUndefined: Self = StObject.set(x, "maxJobTimeoutMinutes", js.undefined)
+    inline def setMaxJobTimeoutMinutesUndefined: Self = StObject.set(x, "maxJobTimeoutMinutes", js.undefined)
     
-    @scala.inline
-    def setMaxSlots(value: MaxSlotMap): Self = StObject.set(x, "maxSlots", value.asInstanceOf[js.Any])
+    inline def setMaxSlots(value: MaxSlotMap): Self = StObject.set(x, "maxSlots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSlotsUndefined: Self = StObject.set(x, "maxSlots", js.undefined)
+    inline def setMaxSlotsUndefined: Self = StObject.set(x, "maxSlots", js.undefined)
     
-    @scala.inline
-    def setSkipAppResign(value: SkipAppResign): Self = StObject.set(x, "skipAppResign", value.asInstanceOf[js.Any])
+    inline def setSkipAppResign(value: SkipAppResign): Self = StObject.set(x, "skipAppResign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
+    inline def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
     
-    @scala.inline
-    def setTrialMinutes(value: TrialMinutes): Self = StObject.set(x, "trialMinutes", value.asInstanceOf[js.Any])
+    inline def setTrialMinutes(value: TrialMinutes): Self = StObject.set(x, "trialMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialMinutesUndefined: Self = StObject.set(x, "trialMinutes", js.undefined)
+    inline def setTrialMinutesUndefined: Self = StObject.set(x, "trialMinutes", js.undefined)
     
-    @scala.inline
-    def setUnmeteredDevices(value: PurchasedDevicesMap): Self = StObject.set(x, "unmeteredDevices", value.asInstanceOf[js.Any])
+    inline def setUnmeteredDevices(value: PurchasedDevicesMap): Self = StObject.set(x, "unmeteredDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmeteredDevicesUndefined: Self = StObject.set(x, "unmeteredDevices", js.undefined)
+    inline def setUnmeteredDevicesUndefined: Self = StObject.set(x, "unmeteredDevices", js.undefined)
     
-    @scala.inline
-    def setUnmeteredRemoteAccessDevices(value: PurchasedDevicesMap): Self = StObject.set(x, "unmeteredRemoteAccessDevices", value.asInstanceOf[js.Any])
+    inline def setUnmeteredRemoteAccessDevices(value: PurchasedDevicesMap): Self = StObject.set(x, "unmeteredRemoteAccessDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmeteredRemoteAccessDevicesUndefined: Self = StObject.set(x, "unmeteredRemoteAccessDevices", js.undefined)
+    inline def setUnmeteredRemoteAccessDevicesUndefined: Self = StObject.set(x, "unmeteredRemoteAccessDevices", js.undefined)
   }
 }

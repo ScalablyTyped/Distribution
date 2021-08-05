@@ -11,16 +11,13 @@ trait Props extends StObject {
 }
 object Props {
   
-  @scala.inline
-  def apply(props: DropdownInjectedProps): Props = {
+  inline def apply(props: DropdownInjectedProps): Props = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
   
-  @scala.inline
-  implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+  extension [Self <: Props](x: Self) {
     
-    @scala.inline
-    def setProps(value: DropdownInjectedProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: DropdownInjectedProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

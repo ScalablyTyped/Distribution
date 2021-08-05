@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSubscribeToFormat extends StObject
 object XlSubscribeToFormat {
   
-  @scala.inline
-  def xlSubscribeToPicture: `-4147` = -4147.asInstanceOf[`-4147`]
+  inline def xlSubscribeToPicture: `-4147` = -4147.asInstanceOf[`-4147`]
   
-  @scala.inline
-  def xlSubscribeToText: `-4158` = -4158.asInstanceOf[`-4158`]
+  inline def xlSubscribeToText: `-4158` = -4158.asInstanceOf[`-4158`]
 }

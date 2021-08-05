@@ -22,20 +22,16 @@ object sortAscendingSmallMod extends Shortcut {
   }
   object SortAscendingSmallProps {
     
-    @scala.inline
-    def apply(): SortAscendingSmallProps = {
+    inline def apply(): SortAscendingSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SortAscendingSmallProps]
     }
     
-    @scala.inline
-    implicit class SortAscendingSmallPropsMutableBuilder[Self <: SortAscendingSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: SortAscendingSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

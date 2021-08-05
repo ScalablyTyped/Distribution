@@ -11,6 +11,5 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findSources(args: js.Any): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("findSources")(args.asInstanceOf[js.Any]).asInstanceOf[Options]
+  inline def findSources(args: js.Any): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("findSources")(args.asInstanceOf[js.Any]).asInstanceOf[Options]
 }

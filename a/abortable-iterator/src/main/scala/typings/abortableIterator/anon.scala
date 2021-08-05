@@ -15,23 +15,18 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply[T](signal: AbortSignal): Options[T] = {
+    inline def apply[T](signal: AbortSignal): Options[T] = {
       val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T](x: Self & Options[T]) {
       
-      @scala.inline
-      def setOptions(value: typings.abortableIterator.mod.Options[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.abortableIterator.mod.Options[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
   }
 }

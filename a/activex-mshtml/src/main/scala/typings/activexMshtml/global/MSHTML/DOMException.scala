@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMException")
 @js.native
-class DOMException protected ()
+/* private */ class DOMException ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMException {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMException_typekey")
   var MSHTMLDotDOMException_typekey: typings.activexMshtml.MSHTML.DOMException = js.native
   

@@ -15,19 +15,15 @@ trait TypeofTreeMap extends StObject {
 }
 object TypeofTreeMap {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: TreeMap): TypeofTreeMap = {
+  inline def apply(Locale: js.Any, fn: TreeMap): TypeofTreeMap = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTreeMap]
   }
   
-  @scala.inline
-  implicit class TypeofTreeMapMutableBuilder[Self <: TypeofTreeMap] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTreeMap](x: Self) {
     
-    @scala.inline
-    def setFn(value: TreeMap): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: TreeMap): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

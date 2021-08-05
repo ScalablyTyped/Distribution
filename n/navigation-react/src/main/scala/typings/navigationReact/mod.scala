@@ -50,8 +50,7 @@ object mod {
   @JSImport("navigation-react", "NavigationContext")
   @js.native
   def NavigationContext: Context[NavigationEvent] = js.native
-  @scala.inline
-  def NavigationContext_=(x: Context[NavigationEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NavigationContext")(x.asInstanceOf[js.Any])
+  inline def NavigationContext_=(x: Context[NavigationEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NavigationContext")(x.asInstanceOf[js.Any])
   
   @JSImport("navigation-react", "NavigationHandler")
   @js.native
@@ -105,23 +104,18 @@ object mod {
   }
   object FluentLinkProps {
     
-    @scala.inline
-    def apply(navigate: FluentNavigator => FluentNavigator): FluentLinkProps = {
+    inline def apply(navigate: FluentNavigator => FluentNavigator): FluentLinkProps = {
       val __obj = js.Dynamic.literal(navigate = js.Any.fromFunction1(navigate))
       __obj.asInstanceOf[FluentLinkProps]
     }
     
-    @scala.inline
-    implicit class FluentLinkPropsMutableBuilder[Self <: FluentLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: FluentLinkProps](x: Self) {
       
-      @scala.inline
-      def setNavigate(value: FluentNavigator => FluentNavigator): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+      inline def setNavigate(value: FluentNavigator => FluentNavigator): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWithContext(value: Boolean): Self = StObject.set(x, "withContext", value.asInstanceOf[js.Any])
+      inline def setWithContext(value: Boolean): Self = StObject.set(x, "withContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithContextUndefined: Self = StObject.set(x, "withContext", js.undefined)
+      inline def setWithContextUndefined: Self = StObject.set(x, "withContext", js.undefined)
     }
   }
   
@@ -144,26 +138,20 @@ object mod {
   }
   object LinkProps {
     
-    @scala.inline
-    def apply(): LinkProps = {
+    inline def apply(): LinkProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkProps]
     }
     
-    @scala.inline
-    implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkProps](x: Self) {
       
-      @scala.inline
-      def setHistoryAction(value: add | replace | none): Self = StObject.set(x, "historyAction", value.asInstanceOf[js.Any])
+      inline def setHistoryAction(value: add | replace | none): Self = StObject.set(x, "historyAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryActionUndefined: Self = StObject.set(x, "historyAction", js.undefined)
+      inline def setHistoryActionUndefined: Self = StObject.set(x, "historyAction", js.undefined)
       
-      @scala.inline
-      def setNavigating(value: (/* e */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* link */ String) => Boolean): Self = StObject.set(x, "navigating", js.Any.fromFunction2(value))
+      inline def setNavigating(value: (/* e */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* link */ String) => Boolean): Self = StObject.set(x, "navigating", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNavigatingUndefined: Self = StObject.set(x, "navigating", js.undefined)
+      inline def setNavigatingUndefined: Self = StObject.set(x, "navigating", js.undefined)
     }
   }
   
@@ -178,17 +166,14 @@ object mod {
   }
   object NavigationBackLinkProps {
     
-    @scala.inline
-    def apply(distance: Double): NavigationBackLinkProps = {
+    inline def apply(distance: Double): NavigationBackLinkProps = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationBackLinkProps]
     }
     
-    @scala.inline
-    implicit class NavigationBackLinkPropsMutableBuilder[Self <: NavigationBackLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationBackLinkProps](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,8 +206,7 @@ object mod {
   }
   object NavigationEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asyncData: js.Any,
       data: js.Any,
       oldState: State,
@@ -233,23 +217,17 @@ object mod {
       __obj.asInstanceOf[NavigationEvent]
     }
     
-    @scala.inline
-    implicit class NavigationEventMutableBuilder[Self <: NavigationEvent] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationEvent](x: Self) {
       
-      @scala.inline
-      def setAsyncData(value: js.Any): Self = StObject.set(x, "asyncData", value.asInstanceOf[js.Any])
+      inline def setAsyncData(value: js.Any): Self = StObject.set(x, "asyncData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldState(value: State): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
+      inline def setOldState(value: State): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateNavigator(value: typings.navigation.mod.StateNavigator): Self = StObject.set(x, "stateNavigator", value.asInstanceOf[js.Any])
+      inline def setStateNavigator(value: typings.navigation.mod.StateNavigator): Self = StObject.set(x, "stateNavigator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,17 +242,14 @@ object mod {
   }
   object NavigationLinkProps {
     
-    @scala.inline
-    def apply(stateKey: String): NavigationLinkProps = {
+    inline def apply(stateKey: String): NavigationLinkProps = {
       val __obj = js.Dynamic.literal(stateKey = stateKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationLinkProps]
     }
     
-    @scala.inline
-    implicit class NavigationLinkPropsMutableBuilder[Self <: NavigationLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationLinkProps](x: Self) {
       
-      @scala.inline
-      def setStateKey(value: String): Self = StObject.set(x, "stateKey", value.asInstanceOf[js.Any])
+      inline def setStateKey(value: String): Self = StObject.set(x, "stateKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -314,53 +289,38 @@ object mod {
   }
   object RefreshLinkProps {
     
-    @scala.inline
-    def apply(): RefreshLinkProps = {
+    inline def apply(): RefreshLinkProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefreshLinkProps]
     }
     
-    @scala.inline
-    implicit class RefreshLinkPropsMutableBuilder[Self <: RefreshLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshLinkProps](x: Self) {
       
-      @scala.inline
-      def setActiveCssClass(value: String): Self = StObject.set(x, "activeCssClass", value.asInstanceOf[js.Any])
+      inline def setActiveCssClass(value: String): Self = StObject.set(x, "activeCssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveCssClassUndefined: Self = StObject.set(x, "activeCssClass", js.undefined)
+      inline def setActiveCssClassUndefined: Self = StObject.set(x, "activeCssClass", js.undefined)
       
-      @scala.inline
-      def setActiveStyle(value: js.Any): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
+      inline def setActiveStyle(value: js.Any): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
+      inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
       
-      @scala.inline
-      def setCurrentDataKeys(value: String | js.Array[String]): Self = StObject.set(x, "currentDataKeys", value.asInstanceOf[js.Any])
+      inline def setCurrentDataKeys(value: String | js.Array[String]): Self = StObject.set(x, "currentDataKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentDataKeysUndefined: Self = StObject.set(x, "currentDataKeys", js.undefined)
+      inline def setCurrentDataKeysUndefined: Self = StObject.set(x, "currentDataKeys", js.undefined)
       
-      @scala.inline
-      def setCurrentDataKeysVarargs(value: String*): Self = StObject.set(x, "currentDataKeys", js.Array(value :_*))
+      inline def setCurrentDataKeysVarargs(value: String*): Self = StObject.set(x, "currentDataKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setDisableActive(value: Boolean): Self = StObject.set(x, "disableActive", value.asInstanceOf[js.Any])
+      inline def setDisableActive(value: Boolean): Self = StObject.set(x, "disableActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableActiveUndefined: Self = StObject.set(x, "disableActive", js.undefined)
+      inline def setDisableActiveUndefined: Self = StObject.set(x, "disableActive", js.undefined)
       
-      @scala.inline
-      def setIncludeCurrentData(value: Boolean): Self = StObject.set(x, "includeCurrentData", value.asInstanceOf[js.Any])
+      inline def setIncludeCurrentData(value: Boolean): Self = StObject.set(x, "includeCurrentData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeCurrentDataUndefined: Self = StObject.set(x, "includeCurrentData", js.undefined)
+      inline def setIncludeCurrentDataUndefined: Self = StObject.set(x, "includeCurrentData", js.undefined)
       
-      @scala.inline
-      def setNavigationData(value: js.Any): Self = StObject.set(x, "navigationData", value.asInstanceOf[js.Any])
+      inline def setNavigationData(value: js.Any): Self = StObject.set(x, "navigationData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigationDataUndefined: Self = StObject.set(x, "navigationData", js.undefined)
+      inline def setNavigationDataUndefined: Self = StObject.set(x, "navigationData", js.undefined)
     }
   }
 }

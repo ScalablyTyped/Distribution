@@ -10,19 +10,15 @@ trait HoverOptions extends StObject {
 }
 object HoverOptions {
   
-  @scala.inline
-  def apply(): HoverOptions = {
+  inline def apply(): HoverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HoverOptions]
   }
   
-  @scala.inline
-  implicit class HoverOptionsMutableBuilder[Self <: HoverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HoverOptions](x: Self) {
     
-    @scala.inline
-    def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
+    inline def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientOffsetUndefined: Self = StObject.set(x, "clientOffset", js.undefined)
+    inline def setClientOffsetUndefined: Self = StObject.set(x, "clientOffset", js.undefined)
   }
 }

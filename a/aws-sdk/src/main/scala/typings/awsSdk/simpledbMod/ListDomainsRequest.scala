@@ -18,25 +18,19 @@ trait ListDomainsRequest extends StObject {
 }
 object ListDomainsRequest {
   
-  @scala.inline
-  def apply(): ListDomainsRequest = {
+  inline def apply(): ListDomainsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDomainsRequest]
   }
   
-  @scala.inline
-  implicit class ListDomainsRequestMutableBuilder[Self <: ListDomainsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDomainsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxNumberOfDomains(value: Integer): Self = StObject.set(x, "MaxNumberOfDomains", value.asInstanceOf[js.Any])
+    inline def setMaxNumberOfDomains(value: Integer): Self = StObject.set(x, "MaxNumberOfDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNumberOfDomainsUndefined: Self = StObject.set(x, "MaxNumberOfDomains", js.undefined)
+    inline def setMaxNumberOfDomainsUndefined: Self = StObject.set(x, "MaxNumberOfDomains", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

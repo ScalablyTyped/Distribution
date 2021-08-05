@@ -67,37 +67,29 @@ trait DebugConfigurationProvider extends StObject {
 }
 object DebugConfigurationProvider {
   
-  @scala.inline
-  def apply(): DebugConfigurationProvider = {
+  inline def apply(): DebugConfigurationProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugConfigurationProvider]
   }
   
-  @scala.inline
-  implicit class DebugConfigurationProviderMutableBuilder[Self <: DebugConfigurationProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DebugConfigurationProvider](x: Self) {
     
-    @scala.inline
-    def setProvideDebugConfigurations(
+    inline def setProvideDebugConfigurations(
       value: (/* folder */ js.UndefOr[WorkspaceFolder], /* token */ js.UndefOr[CancellationToken]) => ProviderResult[js.Array[DebugConfiguration]]
     ): Self = StObject.set(x, "provideDebugConfigurations", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProvideDebugConfigurationsUndefined: Self = StObject.set(x, "provideDebugConfigurations", js.undefined)
+    inline def setProvideDebugConfigurationsUndefined: Self = StObject.set(x, "provideDebugConfigurations", js.undefined)
     
-    @scala.inline
-    def setResolveDebugConfiguration(
+    inline def setResolveDebugConfiguration(
       value: (/* folder */ js.UndefOr[WorkspaceFolder], /* debugConfiguration */ DebugConfiguration, /* token */ js.UndefOr[CancellationToken]) => ProviderResult[DebugConfiguration]
     ): Self = StObject.set(x, "resolveDebugConfiguration", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResolveDebugConfigurationUndefined: Self = StObject.set(x, "resolveDebugConfiguration", js.undefined)
+    inline def setResolveDebugConfigurationUndefined: Self = StObject.set(x, "resolveDebugConfiguration", js.undefined)
     
-    @scala.inline
-    def setResolveDebugConfigurationWithSubstitutedVariables(
+    inline def setResolveDebugConfigurationWithSubstitutedVariables(
       value: (/* folder */ js.UndefOr[WorkspaceFolder], /* debugConfiguration */ DebugConfiguration, /* token */ js.UndefOr[CancellationToken]) => ProviderResult[DebugConfiguration]
     ): Self = StObject.set(x, "resolveDebugConfigurationWithSubstitutedVariables", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResolveDebugConfigurationWithSubstitutedVariablesUndefined: Self = StObject.set(x, "resolveDebugConfigurationWithSubstitutedVariables", js.undefined)
+    inline def setResolveDebugConfigurationWithSubstitutedVariablesUndefined: Self = StObject.set(x, "resolveDebugConfigurationWithSubstitutedVariables", js.undefined)
   }
 }

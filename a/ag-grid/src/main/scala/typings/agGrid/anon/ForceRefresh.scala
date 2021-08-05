@@ -14,31 +14,23 @@ trait ForceRefresh extends StObject {
 }
 object ForceRefresh {
   
-  @scala.inline
-  def apply(): ForceRefresh = {
+  inline def apply(): ForceRefresh = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForceRefresh]
   }
   
-  @scala.inline
-  implicit class ForceRefreshMutableBuilder[Self <: ForceRefresh] (val x: Self) extends AnyVal {
+  extension [Self <: ForceRefresh](x: Self) {
     
-    @scala.inline
-    def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
+    inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
+    inline def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
     
-    @scala.inline
-    def setNewData(value: Boolean): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
+    inline def setNewData(value: Boolean): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewDataUndefined: Self = StObject.set(x, "newData", js.undefined)
+    inline def setNewDataUndefined: Self = StObject.set(x, "newData", js.undefined)
     
-    @scala.inline
-    def setSuppressFlash(value: Boolean): Self = StObject.set(x, "suppressFlash", value.asInstanceOf[js.Any])
+    inline def setSuppressFlash(value: Boolean): Self = StObject.set(x, "suppressFlash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressFlashUndefined: Self = StObject.set(x, "suppressFlash", js.undefined)
+    inline def setSuppressFlashUndefined: Self = StObject.set(x, "suppressFlash", js.undefined)
   }
 }

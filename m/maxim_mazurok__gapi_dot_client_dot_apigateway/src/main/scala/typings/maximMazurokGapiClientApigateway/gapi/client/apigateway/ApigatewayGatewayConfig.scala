@@ -11,19 +11,15 @@ trait ApigatewayGatewayConfig extends StObject {
 }
 object ApigatewayGatewayConfig {
   
-  @scala.inline
-  def apply(): ApigatewayGatewayConfig = {
+  inline def apply(): ApigatewayGatewayConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApigatewayGatewayConfig]
   }
   
-  @scala.inline
-  implicit class ApigatewayGatewayConfigMutableBuilder[Self <: ApigatewayGatewayConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ApigatewayGatewayConfig](x: Self) {
     
-    @scala.inline
-    def setBackendConfig(value: ApigatewayBackendConfig): Self = StObject.set(x, "backendConfig", value.asInstanceOf[js.Any])
+    inline def setBackendConfig(value: ApigatewayBackendConfig): Self = StObject.set(x, "backendConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendConfigUndefined: Self = StObject.set(x, "backendConfig", js.undefined)
+    inline def setBackendConfigUndefined: Self = StObject.set(x, "backendConfig", js.undefined)
   }
 }

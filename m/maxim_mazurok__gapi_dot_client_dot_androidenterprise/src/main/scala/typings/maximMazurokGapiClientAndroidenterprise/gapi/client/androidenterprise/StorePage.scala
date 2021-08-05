@@ -23,37 +23,27 @@ trait StorePage extends StObject {
 }
 object StorePage {
   
-  @scala.inline
-  def apply(): StorePage = {
+  inline def apply(): StorePage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorePage]
   }
   
-  @scala.inline
-  implicit class StorePageMutableBuilder[Self <: StorePage] (val x: Self) extends AnyVal {
+  extension [Self <: StorePage](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLink(value: js.Array[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: js.Array[String]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: String*): Self = StObject.set(x, "link", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: js.Array[LocalizedText]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Array[LocalizedText]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNameVarargs(value: LocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: LocalizedText*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

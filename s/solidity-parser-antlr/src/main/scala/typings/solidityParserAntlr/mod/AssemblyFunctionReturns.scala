@@ -14,17 +14,14 @@ trait AssemblyFunctionReturns
 }
 object AssemblyFunctionReturns {
   
-  @scala.inline
-  def apply(): AssemblyFunctionReturns = {
+  inline def apply(): AssemblyFunctionReturns = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AssemblyFunctionReturns")
     __obj.asInstanceOf[AssemblyFunctionReturns]
   }
   
-  @scala.inline
-  implicit class AssemblyFunctionReturnsMutableBuilder[Self <: AssemblyFunctionReturns] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyFunctionReturns](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFunctionReturns): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

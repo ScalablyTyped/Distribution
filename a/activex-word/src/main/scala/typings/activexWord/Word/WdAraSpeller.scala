@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdAraSpeller extends StObject
 object WdAraSpeller {
   
-  @scala.inline
-  def wdBoth: `3` = 3.asInstanceOf[`3`]
+  inline def wdBoth: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdFinalYaa: `2` = 2.asInstanceOf[`2`]
+  inline def wdFinalYaa: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdInitialAlef: `1` = 1.asInstanceOf[`1`]
+  inline def wdInitialAlef: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdNone: `0` = 0.asInstanceOf[`0`]
+  inline def wdNone: `0` = 0.asInstanceOf[`0`]
 }

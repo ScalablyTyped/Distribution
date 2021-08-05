@@ -28,37 +28,27 @@ trait RemoveThingFromThingGroupRequest extends StObject {
 }
 object RemoveThingFromThingGroupRequest {
   
-  @scala.inline
-  def apply(): RemoveThingFromThingGroupRequest = {
+  inline def apply(): RemoveThingFromThingGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveThingFromThingGroupRequest]
   }
   
-  @scala.inline
-  implicit class RemoveThingFromThingGroupRequestMutableBuilder[Self <: RemoveThingFromThingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveThingFromThingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
+    inline def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
+    inline def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
     
-    @scala.inline
-    def setThingGroupArn(value: ThingGroupArn): Self = StObject.set(x, "thingGroupArn", value.asInstanceOf[js.Any])
+    inline def setThingGroupArn(value: ThingGroupArn): Self = StObject.set(x, "thingGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupArnUndefined: Self = StObject.set(x, "thingGroupArn", js.undefined)
+    inline def setThingGroupArnUndefined: Self = StObject.set(x, "thingGroupArn", js.undefined)
     
-    @scala.inline
-    def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
+    inline def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupNameUndefined: Self = StObject.set(x, "thingGroupName", js.undefined)
+    inline def setThingGroupNameUndefined: Self = StObject.set(x, "thingGroupName", js.undefined)
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
   }
 }

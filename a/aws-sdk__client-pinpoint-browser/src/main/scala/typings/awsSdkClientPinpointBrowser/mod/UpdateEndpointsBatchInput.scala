@@ -10,8 +10,7 @@ trait UpdateEndpointsBatchInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateEndpointsBatchInputMod.UpdateEndpointsBatchInput
 object UpdateEndpointsBatchInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, EndpointBatchRequest: EndpointBatchRequest): UpdateEndpointsBatchInput = {
+  inline def apply(ApplicationId: String, EndpointBatchRequest: EndpointBatchRequest): UpdateEndpointsBatchInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointBatchRequest = EndpointBatchRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointsBatchInput]
   }

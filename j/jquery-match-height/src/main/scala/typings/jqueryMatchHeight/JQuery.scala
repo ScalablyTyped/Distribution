@@ -18,16 +18,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(matchHeight: JQueryMatchHeight): JQuery = {
+  inline def apply(matchHeight: JQueryMatchHeight): JQuery = {
     val __obj = js.Dynamic.literal(matchHeight = matchHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setMatchHeight(value: JQueryMatchHeight): Self = StObject.set(x, "matchHeight", value.asInstanceOf[js.Any])
+    inline def setMatchHeight(value: JQueryMatchHeight): Self = StObject.set(x, "matchHeight", value.asInstanceOf[js.Any])
   }
 }

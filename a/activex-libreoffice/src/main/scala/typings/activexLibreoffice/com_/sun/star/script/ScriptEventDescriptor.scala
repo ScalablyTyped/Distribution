@@ -28,8 +28,7 @@ trait ScriptEventDescriptor extends StObject {
 }
 object ScriptEventDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddListenerParam: String,
     EventMethod: String,
     ListenerType: String,
@@ -40,22 +39,16 @@ object ScriptEventDescriptor {
     __obj.asInstanceOf[ScriptEventDescriptor]
   }
   
-  @scala.inline
-  implicit class ScriptEventDescriptorMutableBuilder[Self <: ScriptEventDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptEventDescriptor](x: Self) {
     
-    @scala.inline
-    def setAddListenerParam(value: String): Self = StObject.set(x, "AddListenerParam", value.asInstanceOf[js.Any])
+    inline def setAddListenerParam(value: String): Self = StObject.set(x, "AddListenerParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventMethod(value: String): Self = StObject.set(x, "EventMethod", value.asInstanceOf[js.Any])
+    inline def setEventMethod(value: String): Self = StObject.set(x, "EventMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerType(value: String): Self = StObject.set(x, "ListenerType", value.asInstanceOf[js.Any])
+    inline def setListenerType(value: String): Self = StObject.set(x, "ListenerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptCode(value: String): Self = StObject.set(x, "ScriptCode", value.asInstanceOf[js.Any])
+    inline def setScriptCode(value: String): Self = StObject.set(x, "ScriptCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptType(value: String): Self = StObject.set(x, "ScriptType", value.asInstanceOf[js.Any])
+    inline def setScriptType(value: String): Self = StObject.set(x, "ScriptType", value.asInstanceOf[js.Any])
   }
 }

@@ -8,15 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   // Module
-  @scala.inline
-  def apply(Options: InterceptorOptions): TokenProvider = ^.asInstanceOf[js.Dynamic].apply(Options.asInstanceOf[js.Any]).asInstanceOf[TokenProvider]
+  inline def apply(Options: InterceptorOptions): TokenProvider = ^.asInstanceOf[js.Dynamic].apply(Options.asInstanceOf[js.Any]).asInstanceOf[TokenProvider]
   
   @JSImport("axios-token-interceptor", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tokenCache(getToken: js.Function0[js.Promise[String]], options: TokenCacheOptions): TokenCache_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenCache")(getToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TokenCache_]
+  inline def tokenCache(getToken: js.Function0[js.Promise[String]], options: TokenCacheOptions): TokenCache_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenCache")(getToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TokenCache_]
   
   // Interfaces
   trait InterceptorOptions extends StObject {
@@ -31,38 +29,28 @@ object mod {
   }
   object InterceptorOptions {
     
-    @scala.inline
-    def apply(): InterceptorOptions = {
+    inline def apply(): InterceptorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InterceptorOptions]
     }
     
-    @scala.inline
-    implicit class InterceptorOptionsMutableBuilder[Self <: InterceptorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InterceptorOptions](x: Self) {
       
-      @scala.inline
-      def setGetToken(value: () => String | js.Promise[String]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
+      inline def setGetToken(value: () => String | js.Promise[String]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTokenUndefined: Self = StObject.set(x, "getToken", js.undefined)
+      inline def setGetTokenUndefined: Self = StObject.set(x, "getToken", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFormatter(value: /* token */ String => String): Self = StObject.set(x, "headerFormatter", js.Any.fromFunction1(value))
+      inline def setHeaderFormatter(value: /* token */ String => String): Self = StObject.set(x, "headerFormatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeaderFormatterUndefined: Self = StObject.set(x, "headerFormatter", js.undefined)
+      inline def setHeaderFormatterUndefined: Self = StObject.set(x, "headerFormatter", js.undefined)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     }
   }
   
@@ -74,26 +62,20 @@ object mod {
   }
   object TokenCacheOptions {
     
-    @scala.inline
-    def apply(): TokenCacheOptions = {
+    inline def apply(): TokenCacheOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokenCacheOptions]
     }
     
-    @scala.inline
-    implicit class TokenCacheOptionsMutableBuilder[Self <: TokenCacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TokenCacheOptions](x: Self) {
       
-      @scala.inline
-      def setGetMaxAge(value: () => Double): Self = StObject.set(x, "getMaxAge", js.Any.fromFunction0(value))
+      inline def setGetMaxAge(value: () => Double): Self = StObject.set(x, "getMaxAge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxAgeUndefined: Self = StObject.set(x, "getMaxAge", js.undefined)
+      inline def setGetMaxAgeUndefined: Self = StObject.set(x, "getMaxAge", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     }
   }
   

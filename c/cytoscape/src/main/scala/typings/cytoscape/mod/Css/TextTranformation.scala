@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextTranformation extends StObject
 object TextTranformation {
   
-  @scala.inline
-  def lowercase: typings.cytoscape.cytoscapeStrings.lowercase = "lowercase".asInstanceOf[typings.cytoscape.cytoscapeStrings.lowercase]
+  inline def lowercase: typings.cytoscape.cytoscapeStrings.lowercase = "lowercase".asInstanceOf[typings.cytoscape.cytoscapeStrings.lowercase]
   
-  @scala.inline
-  def none: typings.cytoscape.cytoscapeStrings.none = "none".asInstanceOf[typings.cytoscape.cytoscapeStrings.none]
+  inline def none: typings.cytoscape.cytoscapeStrings.none = "none".asInstanceOf[typings.cytoscape.cytoscapeStrings.none]
   
-  @scala.inline
-  def uppercase: typings.cytoscape.cytoscapeStrings.uppercase = "uppercase".asInstanceOf[typings.cytoscape.cytoscapeStrings.uppercase]
+  inline def uppercase: typings.cytoscape.cytoscapeStrings.uppercase = "uppercase".asInstanceOf[typings.cytoscape.cytoscapeStrings.uppercase]
 }

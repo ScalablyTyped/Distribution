@@ -225,8 +225,7 @@ object dds {
   }
   object DataReader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addListener: js.Function1[/* msg */ js.Any, Unit] => Double,
       close: () => Unit,
       removeListener: Double => Unit,
@@ -236,20 +235,15 @@ object dds {
       __obj.asInstanceOf[DataReader]
     }
     
-    @scala.inline
-    implicit class DataReaderMutableBuilder[Self <: DataReader] (val x: Self) extends AnyVal {
+    extension [Self <: DataReader](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: js.Function1[/* msg */ js.Any, Unit] => Double): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: js.Function1[/* msg */ js.Any, Unit] => Double): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveListener(value: Double => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: Double => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResetStats(value: () => Unit): Self = StObject.set(x, "resetStats", js.Any.fromFunction0(value))
+      inline def setResetStats(value: () => Unit): Self = StObject.set(x, "resetStats", js.Any.fromFunction0(value))
     }
   }
   
@@ -268,20 +262,16 @@ object dds {
   }
   object DataWriter {
     
-    @scala.inline
-    def apply(close: () => Unit, write: /* repeated */ js.Any => Unit): DataWriter = {
+    inline def apply(close: () => Unit, write: /* repeated */ js.Any => Unit): DataWriter = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[DataWriter]
     }
     
-    @scala.inline
-    implicit class DataWriterMutableBuilder[Self <: DataWriter] (val x: Self) extends AnyVal {
+    extension [Self <: DataWriter](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWrite(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -305,20 +295,16 @@ object dds {
   }
   object Topic {
     
-    @scala.inline
-    def apply(onregistered: () => Unit, onunregistered: () => Unit): Topic = {
+    inline def apply(onregistered: () => Unit, onunregistered: () => Unit): Topic = {
       val __obj = js.Dynamic.literal(onregistered = js.Any.fromFunction0(onregistered), onunregistered = js.Any.fromFunction0(onunregistered))
       __obj.asInstanceOf[Topic]
     }
     
-    @scala.inline
-    implicit class TopicMutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
+    extension [Self <: Topic](x: Self) {
       
-      @scala.inline
-      def setOnregistered(value: () => Unit): Self = StObject.set(x, "onregistered", js.Any.fromFunction0(value))
+      inline def setOnregistered(value: () => Unit): Self = StObject.set(x, "onregistered", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnunregistered(value: () => Unit): Self = StObject.set(x, "onunregistered", js.Any.fromFunction0(value))
+      inline def setOnunregistered(value: () => Unit): Self = StObject.set(x, "onunregistered", js.Any.fromFunction0(value))
     }
   }
 }

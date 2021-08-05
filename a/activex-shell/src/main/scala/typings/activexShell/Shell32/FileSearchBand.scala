@@ -26,6 +26,6 @@ trait FileSearchBand extends StObject {
   def SetSearchParameters(pbstrSearchID: String, bNavToResults: Boolean, pvarScope: js.Any, pvarQueryFile: js.Any): Unit = js.native
   def SetSearchParameters(pbstrSearchID: String, bNavToResults: Boolean, pvarScope: Unit, pvarQueryFile: js.Any): Unit = js.native
   
-  @JSName("Shell32.FileSearchBand_typekey")
+  /* private */ @JSName("Shell32.FileSearchBand_typekey")
   var Shell32DotFileSearchBand_typekey: FileSearchBand = js.native
 }

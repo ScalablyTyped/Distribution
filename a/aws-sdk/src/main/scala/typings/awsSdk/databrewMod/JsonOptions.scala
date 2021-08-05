@@ -13,19 +13,15 @@ trait JsonOptions extends StObject {
 }
 object JsonOptions {
   
-  @scala.inline
-  def apply(): JsonOptions = {
+  inline def apply(): JsonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonOptions]
   }
   
-  @scala.inline
-  implicit class JsonOptionsMutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JsonOptions](x: Self) {
     
-    @scala.inline
-    def setMultiLine(value: MultiLine): Self = StObject.set(x, "MultiLine", value.asInstanceOf[js.Any])
+    inline def setMultiLine(value: MultiLine): Self = StObject.set(x, "MultiLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiLineUndefined: Self = StObject.set(x, "MultiLine", js.undefined)
+    inline def setMultiLineUndefined: Self = StObject.set(x, "MultiLine", js.undefined)
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientCardViewGroupCancelEventArgs
 }
 object ASPxClientCardViewGroupCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, visibleIndex: Double): ASPxClientCardViewGroupCancelEventArgs = {
+  inline def apply(cancel: Boolean, visibleIndex: Double): ASPxClientCardViewGroupCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewGroupCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewGroupCancelEventArgsMutableBuilder[Self <: ASPxClientCardViewGroupCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewGroupCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

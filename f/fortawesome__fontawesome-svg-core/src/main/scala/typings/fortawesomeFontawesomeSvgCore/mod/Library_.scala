@@ -12,19 +12,15 @@ trait Library_ extends StObject {
 }
 object Library_ {
   
-  @scala.inline
-  def apply(add: /* repeated */ IconDefinitionOrPack => Unit, reset: () => Unit): Library_ = {
+  inline def apply(add: /* repeated */ IconDefinitionOrPack => Unit, reset: () => Unit): Library_ = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), reset = js.Any.fromFunction0(reset))
     __obj.asInstanceOf[Library_]
   }
   
-  @scala.inline
-  implicit class Library_MutableBuilder[Self <: Library_] (val x: Self) extends AnyVal {
+  extension [Self <: Library_](x: Self) {
     
-    @scala.inline
-    def setAdd(value: /* repeated */ IconDefinitionOrPack => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* repeated */ IconDefinitionOrPack => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

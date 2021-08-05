@@ -14,22 +14,17 @@ trait PreviousChange extends StObject {
 }
 object PreviousChange {
   
-  @scala.inline
-  def apply(firstParent: scala.Double, none: scala.Double, previousChange: scala.Double): PreviousChange = {
+  inline def apply(firstParent: scala.Double, none: scala.Double, previousChange: scala.Double): PreviousChange = {
     val __obj = js.Dynamic.literal(firstParent = firstParent.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], previousChange = previousChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviousChange]
   }
   
-  @scala.inline
-  implicit class PreviousChangeMutableBuilder[Self <: PreviousChange] (val x: Self) extends AnyVal {
+  extension [Self <: PreviousChange](x: Self) {
     
-    @scala.inline
-    def setFirstParent(value: scala.Double): Self = StObject.set(x, "firstParent", value.asInstanceOf[js.Any])
+    inline def setFirstParent(value: scala.Double): Self = StObject.set(x, "firstParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousChange(value: scala.Double): Self = StObject.set(x, "previousChange", value.asInstanceOf[js.Any])
+    inline def setPreviousChange(value: scala.Double): Self = StObject.set(x, "previousChange", value.asInstanceOf[js.Any])
   }
 }

@@ -43,52 +43,37 @@ trait ReportInstanceStatusRequest extends StObject {
 }
 object ReportInstanceStatusRequest {
   
-  @scala.inline
-  def apply(Instances: InstanceIdStringList, ReasonCodes: ReasonCodesList, Status: ReportStatusType): ReportInstanceStatusRequest = {
+  inline def apply(Instances: InstanceIdStringList, ReasonCodes: ReasonCodesList, Status: ReportStatusType): ReportInstanceStatusRequest = {
     val __obj = js.Dynamic.literal(Instances = Instances.asInstanceOf[js.Any], ReasonCodes = ReasonCodes.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportInstanceStatusRequest]
   }
   
-  @scala.inline
-  implicit class ReportInstanceStatusRequestMutableBuilder[Self <: ReportInstanceStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReportInstanceStatusRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setInstances(value: InstanceIdStringList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: InstanceIdStringList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesVarargs(value: InstanceId*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: InstanceId*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
-    @scala.inline
-    def setReasonCodes(value: ReasonCodesList): Self = StObject.set(x, "ReasonCodes", value.asInstanceOf[js.Any])
+    inline def setReasonCodes(value: ReasonCodesList): Self = StObject.set(x, "ReasonCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonCodesVarargs(value: ReportInstanceReasonCodes*): Self = StObject.set(x, "ReasonCodes", js.Array(value :_*))
+    inline def setReasonCodesVarargs(value: ReportInstanceReasonCodes*): Self = StObject.set(x, "ReasonCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ReportStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReportStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait CallArgument extends StObject {
 }
 object CallArgument {
   
-  @scala.inline
-  def apply(): CallArgument = {
+  inline def apply(): CallArgument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallArgument]
   }
   
-  @scala.inline
-  implicit class CallArgumentMutableBuilder[Self <: CallArgument] (val x: Self) extends AnyVal {
+  extension [Self <: CallArgument](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setUnserializableValue(value: UnserializableValue): Self = StObject.set(x, "unserializableValue", value.asInstanceOf[js.Any])
+    inline def setUnserializableValue(value: UnserializableValue): Self = StObject.set(x, "unserializableValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnserializableValueUndefined: Self = StObject.set(x, "unserializableValue", js.undefined)
+    inline def setUnserializableValueUndefined: Self = StObject.set(x, "unserializableValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -40,20 +40,16 @@ object markdownMod {
   }
   object MarkdownProps {
     
-    @scala.inline
-    def apply(): MarkdownProps = {
+    inline def apply(): MarkdownProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarkdownProps]
     }
     
-    @scala.inline
-    implicit class MarkdownPropsMutableBuilder[Self <: MarkdownProps] (val x: Self) extends AnyVal {
+    extension [Self <: MarkdownProps](x: Self) {
       
-      @scala.inline
-      def setComponents(value: js.Object): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Object): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     }
   }
 }

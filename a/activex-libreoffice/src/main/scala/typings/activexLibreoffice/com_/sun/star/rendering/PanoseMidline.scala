@@ -39,46 +39,32 @@ object PanoseMidline {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ANYTHING: `0` = 0.asInstanceOf[`0`]
+    inline def ANYTHING: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def CONSTANT_POINTED: `9` = 9.asInstanceOf[`9`]
+    inline def CONSTANT_POINTED: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def CONSTANT_SERIFED: `10` = 10.asInstanceOf[`10`]
+    inline def CONSTANT_SERIFED: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def CONSTANT_TRIMMED: `8` = 8.asInstanceOf[`8`]
+    inline def CONSTANT_TRIMMED: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def HIGH_POINTED: `6` = 6.asInstanceOf[`6`]
+    inline def HIGH_POINTED: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def HIGH_SERIFED: `7` = 7.asInstanceOf[`7`]
+    inline def HIGH_SERIFED: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def HIGH_TRIMMER: `5` = 5.asInstanceOf[`5`]
+    inline def HIGH_TRIMMER: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def LOW_POINTED: `12` = 12.asInstanceOf[`12`]
+    inline def LOW_POINTED: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def LOW_SERIFED: `13` = 13.asInstanceOf[`13`]
+    inline def LOW_SERIFED: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def LOW_TRIMMED: `11` = 11.asInstanceOf[`11`]
+    inline def LOW_TRIMMED: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def NO_FIT: `1` = 1.asInstanceOf[`1`]
+    inline def NO_FIT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def STANDARD_POINTED: `3` = 3.asInstanceOf[`3`]
+    inline def STANDARD_POINTED: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def STANDARD_SERIFED: `4` = 4.asInstanceOf[`4`]
+    inline def STANDARD_SERIFED: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def STANDARD_TRIMMED: `2` = 2.asInstanceOf[`2`]
+    inline def STANDARD_TRIMMED: `2` = 2.asInstanceOf[`2`]
   }
 }

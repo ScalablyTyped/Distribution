@@ -21,8 +21,7 @@ object Geom {
   @js.native
   def CIRCLE_ : integer = js.native
   
-  @scala.inline
-  def CIRCLE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCLE")(x.asInstanceOf[js.Any])
+  inline def CIRCLE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CIRCLE")(x.asInstanceOf[js.Any])
   
   /**
     * A Circle object.
@@ -61,16 +60,14 @@ object Geom {
       * @param circle The Circle to get the area of.
       */
     /* static member */
-    @scala.inline
-    def Area(circle: typings.phaser.Phaser.Geom.Circle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Area")(circle.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Area(circle: typings.phaser.Phaser.Geom.Circle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Area")(circle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the circumference of the given Circle.
       * @param circle The Circle to get the circumference of.
       */
     /* static member */
-    @scala.inline
-    def Circumference(circle: typings.phaser.Phaser.Geom.Circle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Circumference")(circle.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Circumference(circle: typings.phaser.Phaser.Geom.Circle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Circumference")(circle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns a Point object containing the coordinates of a point on the circumference of the Circle based on the given angle.
@@ -79,20 +76,16 @@ object Geom {
       * @param out A Point, or point-like object, to store the results in. If not given a Point will be created.
       */
     /* static member */
-    @scala.inline
-    def CircumferencePoint[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumferencePoint")(circle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def CircumferencePoint[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, angle: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumferencePoint")(circle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CircumferencePoint[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumferencePoint")(circle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CircumferencePoint[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, angle: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumferencePoint")(circle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @scala.inline
-    def Clone(source: js.Object): typings.phaser.Phaser.Geom.Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Circle]
+    inline def Clone(source: js.Object): typings.phaser.Phaser.Geom.Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Circle]
     /**
       * Creates a new Circle instance based on the values contained in the given source.
       * @param source The Circle to be cloned. Can be an instance of a Circle or a circle-like object, with x, y and radius properties.
       */
     /* static member */
-    @scala.inline
-    def Clone(source: typings.phaser.Phaser.Geom.Circle): typings.phaser.Phaser.Geom.Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Circle]
+    inline def Clone(source: typings.phaser.Phaser.Geom.Circle): typings.phaser.Phaser.Geom.Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Circle]
     
     /**
       * Check to see if the Circle contains the given x / y coordinates.
@@ -101,30 +94,25 @@ object Geom {
       * @param y The y coordinate to check within the circle.
       */
     /* static member */
-    @scala.inline
-    def Contains(circle: typings.phaser.Phaser.Geom.Circle, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(circle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Contains(circle: typings.phaser.Phaser.Geom.Circle, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(circle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ContainsPoint(circle: typings.phaser.Phaser.Geom.Circle, point: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(circle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(circle: typings.phaser.Phaser.Geom.Circle, point: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(circle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Check to see if the Circle contains the given Point object.
       * @param circle The Circle to check.
       * @param point The Point object to check if it's within the Circle or not.
       */
     /* static member */
-    @scala.inline
-    def ContainsPoint(circle: typings.phaser.Phaser.Geom.Circle, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(circle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(circle: typings.phaser.Phaser.Geom.Circle, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(circle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ContainsRect(circle: typings.phaser.Phaser.Geom.Circle, rect: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsRect(circle: typings.phaser.Phaser.Geom.Circle, rect: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Check to see if the Circle contains all four points of the given Rectangle object.
       * @param circle The Circle to check.
       * @param rect The Rectangle object to check if it's within the Circle or not.
       */
     /* static member */
-    @scala.inline
-    def ContainsRect(circle: typings.phaser.Phaser.Geom.Circle, rect: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsRect(circle: typings.phaser.Phaser.Geom.Circle, rect: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Copies the `x`, `y` and `radius` properties from the `source` Circle
@@ -133,8 +121,7 @@ object Geom {
       * @param dest The destination Circle to copy the values to.
       */
     /* static member */
-    @scala.inline
-    def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Circle */](source: typings.phaser.Phaser.Geom.Circle, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Circle */](source: typings.phaser.Phaser.Geom.Circle, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Compares the `x`, `y` and `radius` properties of the two given Circles.
@@ -143,8 +130,7 @@ object Geom {
       * @param toCompare The second Circle to compare.
       */
     /* static member */
-    @scala.inline
-    def Equals(circle: typings.phaser.Phaser.Geom.Circle, toCompare: typings.phaser.Phaser.Geom.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(circle.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Equals(circle: typings.phaser.Phaser.Geom.Circle, toCompare: typings.phaser.Phaser.Geom.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(circle.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns the bounds of the Circle object.
@@ -152,10 +138,8 @@ object Geom {
       * @param out A Rectangle, or rectangle-like object, to store the circle bounds in. If not given a new Rectangle will be created.
       */
     /* static member */
-    @scala.inline
-    def GetBounds[O /* <: typings.phaser.Phaser.Geom.Rectangle */](circle: typings.phaser.Phaser.Geom.Circle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(circle.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetBounds[O /* <: typings.phaser.Phaser.Geom.Rectangle */](circle: typings.phaser.Phaser.Geom.Circle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetBounds[O /* <: typings.phaser.Phaser.Geom.Rectangle */](circle: typings.phaser.Phaser.Geom.Circle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(circle.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetBounds[O /* <: typings.phaser.Phaser.Geom.Rectangle */](circle: typings.phaser.Phaser.Geom.Circle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns a Point object containing the coordinates of a point on the circumference of the Circle
@@ -166,10 +150,8 @@ object Geom {
       * @param out An object to store the return values in. If not given a Point object will be created.
       */
     /* static member */
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(circle.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(circle.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(circle.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(circle.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns an array of Point objects containing the coordinates of the points around the circumference of the Circle,
@@ -180,19 +162,15 @@ object Geom {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     /* static member */
-    @scala.inline
-    def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: integer): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    @scala.inline
-    def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: integer, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    @scala.inline
-    def GetPoints(
+    inline def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: integer): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def GetPoints(circle: typings.phaser.Phaser.Geom.Circle, quantity: integer, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def GetPoints(
       circle: typings.phaser.Phaser.Geom.Circle,
       quantity: integer,
       stepRate: Double,
       output: js.Array[js.Any]
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(circle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    @scala.inline
-    def GetPoints(
+    inline def GetPoints(
       circle: typings.phaser.Phaser.Geom.Circle,
       quantity: integer,
       stepRate: Unit,
@@ -206,19 +184,16 @@ object Geom {
       * @param y The amount to vertically offset the Circle by.
       */
     /* static member */
-    @scala.inline
-    def Offset[O /* <: typings.phaser.Phaser.Geom.Circle */](circle: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(circle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Offset[O /* <: typings.phaser.Phaser.Geom.Circle */](circle: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(circle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @scala.inline
-    def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Circle */](circle: O, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(circle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Circle */](circle: O, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(circle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
     /**
       * Offsets the Circle by the values given in the `x` and `y` properties of the Point object.
       * @param circle The Circle to be offset (translated.)
       * @param point The Point object containing the values to offset the Circle by.
       */
     /* static member */
-    @scala.inline
-    def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Circle */](circle: O, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(circle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Circle */](circle: O, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(circle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns a uniformly distributed random point from anywhere within the given Circle.
@@ -226,10 +201,8 @@ object Geom {
       * @param out A Point or point-like object to set the random `x` and `y` values in.
       */
     /* static member */
-    @scala.inline
-    def Random[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(circle.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def Random[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Random[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(circle.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Random[O /* <: typings.phaser.Phaser.Geom.Point */](circle: typings.phaser.Phaser.Geom.Circle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
   }
   
   /**
@@ -239,8 +212,7 @@ object Geom {
   @js.native
   def ELLIPSE_ : integer = js.native
   
-  @scala.inline
-  def ELLIPSE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELLIPSE")(x.asInstanceOf[js.Any])
+  inline def ELLIPSE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELLIPSE")(x.asInstanceOf[js.Any])
   
   /**
     * An Ellipse object.
@@ -288,16 +260,14 @@ object Geom {
       * @param ellipse The Ellipse to get the area of.
       */
     /* static member */
-    @scala.inline
-    def Area(ellipse: typings.phaser.Phaser.Geom.Ellipse): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Area")(ellipse.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Area(ellipse: typings.phaser.Phaser.Geom.Ellipse): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Area")(ellipse.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the circumference of the given Ellipse.
       * @param ellipse The Ellipse to get the circumference of.
       */
     /* static member */
-    @scala.inline
-    def Circumference(ellipse: typings.phaser.Phaser.Geom.Ellipse): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Circumference")(ellipse.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Circumference(ellipse: typings.phaser.Phaser.Geom.Ellipse): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Circumference")(ellipse.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns a Point object containing the coordinates of a point on the circumference of the Ellipse based on the given angle.
@@ -306,18 +276,15 @@ object Geom {
       * @param out A Point, or point-like object, to store the results in. If not given a Point will be created.
       */
     /* static member */
-    @scala.inline
-    def CircumferencePoint[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumferencePoint")(ellipse.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def CircumferencePoint[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, angle: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumferencePoint")(ellipse.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CircumferencePoint[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumferencePoint")(ellipse.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CircumferencePoint[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, angle: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumferencePoint")(ellipse.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Creates a new Ellipse instance based on the values contained in the given source.
       * @param source The Ellipse to be cloned. Can be an instance of an Ellipse or a ellipse-like object, with x, y, width and height properties.
       */
     /* static member */
-    @scala.inline
-    def Clone(source: typings.phaser.Phaser.Geom.Ellipse): typings.phaser.Phaser.Geom.Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Ellipse]
+    inline def Clone(source: typings.phaser.Phaser.Geom.Ellipse): typings.phaser.Phaser.Geom.Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Ellipse]
     
     /**
       * Check to see if the Ellipse contains the given x / y coordinates.
@@ -326,30 +293,25 @@ object Geom {
       * @param y The y coordinate to check within the ellipse.
       */
     /* static member */
-    @scala.inline
-    def Contains(ellipse: typings.phaser.Phaser.Geom.Ellipse, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(ellipse.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Contains(ellipse: typings.phaser.Phaser.Geom.Ellipse, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(ellipse.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ContainsPoint(ellipse: typings.phaser.Phaser.Geom.Ellipse, point: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(ellipse.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(ellipse: typings.phaser.Phaser.Geom.Ellipse, point: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(ellipse.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Check to see if the Ellipse contains the given Point object.
       * @param ellipse The Ellipse to check.
       * @param point The Point object to check if it's within the Circle or not.
       */
     /* static member */
-    @scala.inline
-    def ContainsPoint(ellipse: typings.phaser.Phaser.Geom.Ellipse, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(ellipse.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(ellipse: typings.phaser.Phaser.Geom.Ellipse, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(ellipse.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ContainsRect(ellipse: typings.phaser.Phaser.Geom.Ellipse, rect: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(ellipse.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsRect(ellipse: typings.phaser.Phaser.Geom.Ellipse, rect: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(ellipse.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Check to see if the Ellipse contains all four points of the given Rectangle object.
       * @param ellipse The Ellipse to check.
       * @param rect The Rectangle object to check if it's within the Ellipse or not.
       */
     /* static member */
-    @scala.inline
-    def ContainsRect(ellipse: typings.phaser.Phaser.Geom.Ellipse, rect: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(ellipse.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsRect(ellipse: typings.phaser.Phaser.Geom.Ellipse, rect: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(ellipse.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Copies the `x`, `y`, `width` and `height` properties from the `source` Ellipse
@@ -358,8 +320,7 @@ object Geom {
       * @param dest The destination Ellipse to copy the values to.
       */
     /* static member */
-    @scala.inline
-    def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Ellipse */](source: typings.phaser.Phaser.Geom.Ellipse, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Ellipse */](source: typings.phaser.Phaser.Geom.Ellipse, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Compares the `x`, `y`, `width` and `height` properties of the two given Ellipses.
@@ -368,8 +329,7 @@ object Geom {
       * @param toCompare The second Ellipse to compare.
       */
     /* static member */
-    @scala.inline
-    def Equals(ellipse: typings.phaser.Phaser.Geom.Ellipse, toCompare: typings.phaser.Phaser.Geom.Ellipse): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(ellipse.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Equals(ellipse: typings.phaser.Phaser.Geom.Ellipse, toCompare: typings.phaser.Phaser.Geom.Ellipse): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(ellipse.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns the bounds of the Ellipse object.
@@ -377,10 +337,8 @@ object Geom {
       * @param out A Rectangle, or rectangle-like object, to store the ellipse bounds in. If not given a new Rectangle will be created.
       */
     /* static member */
-    @scala.inline
-    def GetBounds[O /* <: typings.phaser.Phaser.Geom.Rectangle */](ellipse: typings.phaser.Phaser.Geom.Ellipse): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(ellipse.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetBounds[O /* <: typings.phaser.Phaser.Geom.Rectangle */](ellipse: typings.phaser.Phaser.Geom.Ellipse, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(ellipse.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetBounds[O /* <: typings.phaser.Phaser.Geom.Rectangle */](ellipse: typings.phaser.Phaser.Geom.Ellipse): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(ellipse.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetBounds[O /* <: typings.phaser.Phaser.Geom.Rectangle */](ellipse: typings.phaser.Phaser.Geom.Ellipse, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(ellipse.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns a Point object containing the coordinates of a point on the circumference of the Ellipse
@@ -391,10 +349,8 @@ object Geom {
       * @param out An object to store the return values in. If not given a Point object will be created.
       */
     /* static member */
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(ellipse.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(ellipse.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(ellipse.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(ellipse.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns an array of Point objects containing the coordinates of the points around the circumference of the Ellipse,
@@ -405,14 +361,10 @@ object Geom {
       * @param out An array to insert the points in to. If not provided a new array will be created.
       */
     /* static member */
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](ellipse: typings.phaser.Phaser.Geom.Ellipse, quantity: integer, stepRate: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(ellipse.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Offsets the Ellipse by the values given.
@@ -421,19 +373,16 @@ object Geom {
       * @param y The amount to vertically offset the Ellipse by.
       */
     /* static member */
-    @scala.inline
-    def Offset[O /* <: typings.phaser.Phaser.Geom.Ellipse */](ellipse: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(ellipse.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Offset[O /* <: typings.phaser.Phaser.Geom.Ellipse */](ellipse: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(ellipse.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @scala.inline
-    def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Ellipse */](ellipse: O, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(ellipse.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Ellipse */](ellipse: O, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(ellipse.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
     /**
       * Offsets the Ellipse by the values given in the `x` and `y` properties of the Point object.
       * @param ellipse The Ellipse to be offset (translated.)
       * @param point The Point object containing the values to offset the Ellipse by.
       */
     /* static member */
-    @scala.inline
-    def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Ellipse */](ellipse: O, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(ellipse.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Ellipse */](ellipse: O, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(ellipse.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns a uniformly distributed random point from anywhere within the given Ellipse.
@@ -441,10 +390,8 @@ object Geom {
       * @param out A Point or point-like object to set the random `x` and `y` values in.
       */
     /* static member */
-    @scala.inline
-    def Random[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(ellipse.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def Random[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(ellipse.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Random[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(ellipse.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Random[O /* <: typings.phaser.Phaser.Geom.Point */](ellipse: typings.phaser.Phaser.Geom.Ellipse, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(ellipse.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
   }
   
   object Intersects {
@@ -458,16 +405,14 @@ object Geom {
       * @param circleA The first Circle to check for intersection.
       * @param circleB The second Circle to check for intersection.
       */
-    @scala.inline
-    def CircleToCircle(circleA: typings.phaser.Phaser.Geom.Circle, circleB: typings.phaser.Phaser.Geom.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("CircleToCircle")(circleA.asInstanceOf[js.Any], circleB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def CircleToCircle(circleA: typings.phaser.Phaser.Geom.Circle, circleB: typings.phaser.Phaser.Geom.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("CircleToCircle")(circleA.asInstanceOf[js.Any], circleB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Checks for intersection between a circle and a rectangle.
       * @param circle The circle to be checked.
       * @param rect The rectangle to be checked.
       */
-    @scala.inline
-    def CircleToRectangle(circle: typings.phaser.Phaser.Geom.Circle, rect: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("CircleToRectangle")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def CircleToRectangle(circle: typings.phaser.Phaser.Geom.Circle, rect: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("CircleToRectangle")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Checks if two Circles intersect and returns the intersection points as a Point object array.
@@ -475,10 +420,8 @@ object Geom {
       * @param circleB The second Circle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    @scala.inline
-    def GetCircleToCircle(circleA: typings.phaser.Phaser.Geom.Circle, circleB: typings.phaser.Phaser.Geom.Circle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToCircle")(circleA.asInstanceOf[js.Any], circleB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetCircleToCircle(
+    inline def GetCircleToCircle(circleA: typings.phaser.Phaser.Geom.Circle, circleB: typings.phaser.Phaser.Geom.Circle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToCircle")(circleA.asInstanceOf[js.Any], circleB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetCircleToCircle(
       circleA: typings.phaser.Phaser.Geom.Circle,
       circleB: typings.phaser.Phaser.Geom.Circle,
       out: js.Array[js.Any]
@@ -491,10 +434,8 @@ object Geom {
       * @param rect The rectangle to be checked.
       * @param out An optional array in which to store the points of intersection.
       */
-    @scala.inline
-    def GetCircleToRectangle(circle: typings.phaser.Phaser.Geom.Circle, rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToRectangle")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetCircleToRectangle(
+    inline def GetCircleToRectangle(circle: typings.phaser.Phaser.Geom.Circle, rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCircleToRectangle")(circle.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetCircleToRectangle(
       circle: typings.phaser.Phaser.Geom.Circle,
       rect: typings.phaser.Phaser.Geom.Rectangle,
       out: js.Array[js.Any]
@@ -507,19 +448,15 @@ object Geom {
       * @param circle The circle to check against the line.
       * @param out An optional array in which to store the points of intersection.
       */
-    @scala.inline
-    def GetLineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetLineToCircle(
+    inline def GetLineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetLineToCircle(
       line: typings.phaser.Phaser.Geom.Line,
       circle: typings.phaser.Phaser.Geom.Circle,
       out: js.Array[js.Any]
     ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @scala.inline
-    def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object, out: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object, out: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     /**
       * Checks for intersection between the Line and a Rectangle shape,
       * and returns the intersection points as a Point object array.
@@ -527,10 +464,8 @@ object Geom {
       * @param rect The Rectangle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    @scala.inline
-    def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetLineToRectangle(
+    inline def GetLineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetLineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetLineToRectangle(
       line: typings.phaser.Phaser.Geom.Line,
       rect: typings.phaser.Phaser.Geom.Rectangle,
       out: js.Array[js.Any]
@@ -546,10 +481,8 @@ object Geom {
       * @param rectB The second Rectangle object.
       * @param output Optional Rectangle object. If given, the intersection data will be loaded into it (in case of no intersection, it will be left unchanged). Otherwise, new Rectangle object will be created and returned with either intersection data or empty (all values set to zero), if there is no intersection.
       */
-    @scala.inline
-    def GetRectangleIntersection[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleIntersection")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetRectangleIntersection[O /* <: typings.phaser.Phaser.Geom.Rectangle */](
+    inline def GetRectangleIntersection[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleIntersection")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetRectangleIntersection[O /* <: typings.phaser.Phaser.Geom.Rectangle */](
       rectA: typings.phaser.Phaser.Geom.Rectangle,
       rectB: typings.phaser.Phaser.Geom.Rectangle,
       output: O
@@ -563,10 +496,8 @@ object Geom {
       * @param rectB The second Rectangle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    @scala.inline
-    def GetRectangleToRectangle(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToRectangle")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetRectangleToRectangle(
+    inline def GetRectangleToRectangle(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToRectangle")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetRectangleToRectangle(
       rectA: typings.phaser.Phaser.Geom.Rectangle,
       rectB: typings.phaser.Phaser.Geom.Rectangle,
       out: js.Array[js.Any]
@@ -579,10 +510,8 @@ object Geom {
       * @param triangle Triangle object to test.
       * @param out An optional array in which to store the points of intersection.
       */
-    @scala.inline
-    def GetRectangleToTriangle(rect: typings.phaser.Phaser.Geom.Rectangle, triangle: typings.phaser.Phaser.Geom.Triangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToTriangle")(rect.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetRectangleToTriangle(
+    inline def GetRectangleToTriangle(rect: typings.phaser.Phaser.Geom.Rectangle, triangle: typings.phaser.Phaser.Geom.Triangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleToTriangle")(rect.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetRectangleToTriangle(
       rect: typings.phaser.Phaser.Geom.Rectangle,
       triangle: typings.phaser.Phaser.Geom.Triangle,
       out: js.Array[js.Any]
@@ -596,10 +525,8 @@ object Geom {
       * @param circle The Circle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    @scala.inline
-    def GetTriangleToCircle(triangle: typings.phaser.Phaser.Geom.Triangle, circle: typings.phaser.Phaser.Geom.Circle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToCircle")(triangle.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetTriangleToCircle(
+    inline def GetTriangleToCircle(triangle: typings.phaser.Phaser.Geom.Triangle, circle: typings.phaser.Phaser.Geom.Circle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToCircle")(triangle.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetTriangleToCircle(
       triangle: typings.phaser.Phaser.Geom.Triangle,
       circle: typings.phaser.Phaser.Geom.Circle,
       out: js.Array[js.Any]
@@ -613,10 +540,8 @@ object Geom {
       * @param line The Line to check with.
       * @param out An optional array in which to store the points of intersection.
       */
-    @scala.inline
-    def GetTriangleToLine(triangle: typings.phaser.Phaser.Geom.Triangle, line: typings.phaser.Phaser.Geom.Line): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToLine")(triangle.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetTriangleToLine(
+    inline def GetTriangleToLine(triangle: typings.phaser.Phaser.Geom.Triangle, line: typings.phaser.Phaser.Geom.Line): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToLine")(triangle.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetTriangleToLine(
       triangle: typings.phaser.Phaser.Geom.Triangle,
       line: typings.phaser.Phaser.Geom.Line,
       out: js.Array[js.Any]
@@ -630,10 +555,8 @@ object Geom {
       * @param triangleB The second Triangle to check for intersection.
       * @param out An optional array in which to store the points of intersection.
       */
-    @scala.inline
-    def GetTriangleToTriangle(triangleA: typings.phaser.Phaser.Geom.Triangle, triangleB: typings.phaser.Phaser.Geom.Triangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToTriangle")(triangleA.asInstanceOf[js.Any], triangleB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def GetTriangleToTriangle(
+    inline def GetTriangleToTriangle(triangleA: typings.phaser.Phaser.Geom.Triangle, triangleB: typings.phaser.Phaser.Geom.Triangle): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTriangleToTriangle")(triangleA.asInstanceOf[js.Any], triangleB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetTriangleToTriangle(
       triangleA: typings.phaser.Phaser.Geom.Triangle,
       triangleB: typings.phaser.Phaser.Geom.Triangle,
       out: js.Array[js.Any]
@@ -647,12 +570,9 @@ object Geom {
       * @param circle The circle to check against the line.
       * @param nearest An optional Point-like object. If given the closest point on the Line where the circle intersects will be stored in this object.
       */
-    @scala.inline
-    def LineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def LineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle, nearest: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], nearest.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def LineToCircle(
+    inline def LineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def LineToCircle(line: typings.phaser.Phaser.Geom.Line, circle: typings.phaser.Phaser.Geom.Circle, nearest: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToCircle")(line.asInstanceOf[js.Any], circle.asInstanceOf[js.Any], nearest.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def LineToCircle(
       line: typings.phaser.Phaser.Geom.Line,
       circle: typings.phaser.Phaser.Geom.Circle,
       nearest: typings.phaser.Phaser.Geom.Point
@@ -664,17 +584,14 @@ object Geom {
       * @param line2 The second Line to check.
       * @param out A Point in which to optionally store the point of intersection.
       */
-    @scala.inline
-    def LineToLine(line1: typings.phaser.Phaser.Geom.Line, line2: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def LineToLine(
+    inline def LineToLine(line1: typings.phaser.Phaser.Geom.Line, line2: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def LineToLine(
       line1: typings.phaser.Phaser.Geom.Line,
       line2: typings.phaser.Phaser.Geom.Line,
       out: typings.phaser.Phaser.Geom.Point
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToLine")(line1.asInstanceOf[js.Any], line2.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def LineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def LineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Checks for intersection between the Line and a Rectangle shape, or a rectangle-like
       * object, with public `x`, `y`, `right` and `bottom` properties, such as a Sprite or Body.
@@ -688,13 +605,10 @@ object Geom {
       * @param line The Line to check for intersection.
       * @param rect The Rectangle to check for intersection.
       */
-    @scala.inline
-    def LineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def LineToRectangle(line: typings.phaser.Phaser.Geom.Line, rect: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("LineToRectangle")(line.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def PointToLine(point: js.Any, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def PointToLine(point: js.Any, line: typings.phaser.Phaser.Geom.Line, lineThickness: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any], lineThickness.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def PointToLine(point: js.Any, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def PointToLine(point: js.Any, line: typings.phaser.Phaser.Geom.Line, lineThickness: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any], lineThickness.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Checks if the a Point falls between the two end-points of a Line, based on the given line thickness.
       * 
@@ -703,10 +617,8 @@ object Geom {
       * @param line The line segment to test for intersection on.
       * @param lineThickness The line thickness. Assumes that the line end points are circular. Default 1.
       */
-    @scala.inline
-    def PointToLine(point: typings.phaser.Phaser.Geom.Point, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def PointToLine(
+    inline def PointToLine(point: typings.phaser.Phaser.Geom.Point, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLine")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def PointToLine(
       point: typings.phaser.Phaser.Geom.Point,
       line: typings.phaser.Phaser.Geom.Line,
       lineThickness: Double
@@ -717,8 +629,7 @@ object Geom {
       * @param point The Point to check for intersection.
       * @param line The line segment to check for intersection.
       */
-    @scala.inline
-    def PointToLineSegment(point: typings.phaser.Phaser.Geom.Point, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLineSegment")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def PointToLineSegment(point: typings.phaser.Phaser.Geom.Point, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointToLineSegment")(point.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Checks if two Rectangles intersect.
@@ -729,16 +640,14 @@ object Geom {
       * @param rectA The first Rectangle to check for intersection.
       * @param rectB The second Rectangle to check for intersection.
       */
-    @scala.inline
-    def RectangleToRectangle(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("RectangleToRectangle")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def RectangleToRectangle(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("RectangleToRectangle")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Checks for intersection between Rectangle shape and Triangle shape.
       * @param rect Rectangle object to test.
       * @param triangle Triangle object to test.
       */
-    @scala.inline
-    def RectangleToTriangle(rect: typings.phaser.Phaser.Geom.Rectangle, triangle: typings.phaser.Phaser.Geom.Triangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("RectangleToTriangle")(rect.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def RectangleToTriangle(rect: typings.phaser.Phaser.Geom.Rectangle, triangle: typings.phaser.Phaser.Geom.Triangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("RectangleToTriangle")(rect.asInstanceOf[js.Any], triangle.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Check if rectangle intersects with values.
@@ -749,16 +658,14 @@ object Geom {
       * @param bottom The y coordinate of the bottom of the Rectangle.
       * @param tolerance Tolerance allowed in the calculation, expressed in pixels. Default 0.
       */
-    @scala.inline
-    def RectangleToValues(
+    inline def RectangleToValues(
       rect: typings.phaser.Phaser.Geom.Rectangle,
       left: Double,
       right: Double,
       top: Double,
       bottom: Double
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("RectangleToValues")(rect.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], top.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def RectangleToValues(
+    inline def RectangleToValues(
       rect: typings.phaser.Phaser.Geom.Rectangle,
       left: Double,
       right: Double,
@@ -774,8 +681,7 @@ object Geom {
       * @param triangle The Triangle to check for intersection.
       * @param circle The Circle to check for intersection.
       */
-    @scala.inline
-    def TriangleToCircle(triangle: typings.phaser.Phaser.Geom.Triangle, circle: typings.phaser.Phaser.Geom.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TriangleToCircle")(triangle.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def TriangleToCircle(triangle: typings.phaser.Phaser.Geom.Triangle, circle: typings.phaser.Phaser.Geom.Circle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TriangleToCircle")(triangle.asInstanceOf[js.Any], circle.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Checks if a Triangle and a Line intersect.
@@ -784,8 +690,7 @@ object Geom {
       * @param triangle The Triangle to check with.
       * @param line The Line to check with.
       */
-    @scala.inline
-    def TriangleToLine(triangle: typings.phaser.Phaser.Geom.Triangle, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TriangleToLine")(triangle.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def TriangleToLine(triangle: typings.phaser.Phaser.Geom.Triangle, line: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TriangleToLine")(triangle.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Checks if two Triangles intersect.
@@ -794,8 +699,7 @@ object Geom {
       * @param triangleA The first Triangle to check for intersection.
       * @param triangleB The second Triangle to check for intersection.
       */
-    @scala.inline
-    def TriangleToTriangle(triangleA: typings.phaser.Phaser.Geom.Triangle, triangleB: typings.phaser.Phaser.Geom.Triangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TriangleToTriangle")(triangleA.asInstanceOf[js.Any], triangleB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def TriangleToTriangle(triangleA: typings.phaser.Phaser.Geom.Triangle, triangleB: typings.phaser.Phaser.Geom.Triangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TriangleToTriangle")(triangleA.asInstanceOf[js.Any], triangleB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /**
@@ -805,8 +709,7 @@ object Geom {
   @js.native
   def LINE_ : integer = js.native
   
-  @scala.inline
-  def LINE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE")(x.asInstanceOf[js.Any])
+  inline def LINE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE")(x.asInstanceOf[js.Any])
   
   /**
     * Defines a Line segment, a part of a line between two endpoints.
@@ -850,8 +753,7 @@ object Geom {
       * @param line The line to calculate the angle of.
       */
     /* static member */
-    @scala.inline
-    def Angle(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Angle(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Angle")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Using Bresenham's line algorithm this will return an array of all coordinates on this line.
@@ -862,14 +764,10 @@ object Geom {
       * @param results An optional array to push the resulting coordinates into.
       */
     /* static member */
-    @scala.inline
-    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line): js.Array[Vector2Like] = ^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector2Like]]
-    @scala.inline
-    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: Unit, results: js.Array[Vector2Like]): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
-    @scala.inline
-    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
-    @scala.inline
-    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer, results: js.Array[Vector2Like]): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
+    inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line): js.Array[Vector2Like] = ^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector2Like]]
+    inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: Unit, results: js.Array[Vector2Like]): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
+    inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
+    inline def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer, results: js.Array[Vector2Like]): js.Array[Vector2Like] = (^.asInstanceOf[js.Dynamic].applyDynamic("BresenhamPoints")(line.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector2Like]]
     
     /**
       * Center a line on the given coordinates.
@@ -878,16 +776,14 @@ object Geom {
       * @param y The vertical coordinate to center the line on.
       */
     /* static member */
-    @scala.inline
-    def CenterOn(line: typings.phaser.Phaser.Geom.Line, x: Double, y: Double): typings.phaser.Phaser.Geom.Line = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterOn")(line.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Line]
+    inline def CenterOn(line: typings.phaser.Phaser.Geom.Line, x: Double, y: Double): typings.phaser.Phaser.Geom.Line = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterOn")(line.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Line]
     
     /**
       * Clone the given line.
       * @param source The source line to clone.
       */
     /* static member */
-    @scala.inline
-    def Clone(source: typings.phaser.Phaser.Geom.Line): typings.phaser.Phaser.Geom.Line = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Line]
+    inline def Clone(source: typings.phaser.Phaser.Geom.Line): typings.phaser.Phaser.Geom.Line = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Line]
     
     /**
       * Copy the values of one line to a destination line.
@@ -895,8 +791,7 @@ object Geom {
       * @param dest The destination line to copy the values to.
       */
     /* static member */
-    @scala.inline
-    def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Line */](source: typings.phaser.Phaser.Geom.Line, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Line */](source: typings.phaser.Phaser.Geom.Line, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Compare two lines for strict equality.
@@ -904,8 +799,7 @@ object Geom {
       * @param toCompare The second line to compare.
       */
     /* static member */
-    @scala.inline
-    def Equals(line: typings.phaser.Phaser.Geom.Line, toCompare: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(line.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Equals(line: typings.phaser.Phaser.Geom.Line, toCompare: typings.phaser.Phaser.Geom.Line): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(line.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Extends the start and end points of a Line by the given amounts.
@@ -921,10 +815,8 @@ object Geom {
       * @param right The amount to extend the end of the line by. If not given it will be set to the `left` value.
       */
     /* static member */
-    @scala.inline
-    def Extend(line: typings.phaser.Phaser.Geom.Line, left: Double): typings.phaser.Phaser.Geom.Line = (^.asInstanceOf[js.Dynamic].applyDynamic("Extend")(line.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Line]
-    @scala.inline
-    def Extend(line: typings.phaser.Phaser.Geom.Line, left: Double, right: Double): typings.phaser.Phaser.Geom.Line = (^.asInstanceOf[js.Dynamic].applyDynamic("Extend")(line.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Line]
+    inline def Extend(line: typings.phaser.Phaser.Geom.Line, left: Double): typings.phaser.Phaser.Geom.Line = (^.asInstanceOf[js.Dynamic].applyDynamic("Extend")(line.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Line]
+    inline def Extend(line: typings.phaser.Phaser.Geom.Line, left: Double, right: Double): typings.phaser.Phaser.Geom.Line = (^.asInstanceOf[js.Dynamic].applyDynamic("Extend")(line.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Line]
     
     /**
       * Returns an array of `quantity` Points where each point is taken from the given Line,
@@ -954,45 +846,37 @@ object Geom {
       * @param easeParams An optional array of ease parameters to go with the ease.
       */
     /* static member */
-    @scala.inline
-    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer, collinearThreshold: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: String, quantity: integer, collinearThreshold: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: String,
       quantity: integer,
       collinearThreshold: Double,
       easeParams: js.Array[Double]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any], easeParams.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: String,
       quantity: integer,
       collinearThreshold: Unit,
       easeParams: js.Array[Double]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any], easeParams.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: js.Function, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, ease: js.Function, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: js.Function,
       quantity: integer,
       collinearThreshold: Double
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: js.Function,
       quantity: integer,
       collinearThreshold: Double,
       easeParams: js.Array[Double]
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEasedPoints")(line.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], collinearThreshold.asInstanceOf[js.Any], easeParams.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
+    inline def GetEasedPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](
       line: typings.phaser.Phaser.Geom.Line,
       ease: js.Function,
       quantity: integer,
@@ -1006,15 +890,11 @@ object Geom {
       * @param out An optional point object to store the midpoint in.
       */
     /* static member */
-    @scala.inline
-    def GetMidPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMidPoint")(line.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetMidPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMidPoint")(line.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetMidPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMidPoint")(line.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetMidPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMidPoint")(line.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @scala.inline
-    def GetNearestPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNearestPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetNearestPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: js.Object, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNearestPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetNearestPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNearestPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetNearestPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: js.Object, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNearestPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     /**
       * Get the nearest point on a line perpendicular to the given point.
       * @param line The line to get the nearest point on.
@@ -1022,10 +902,8 @@ object Geom {
       * @param out An optional point, or point-like object, to store the coordinates of the nearest point on the line.
       */
     /* static member */
-    @scala.inline
-    def GetNearestPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNearestPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetNearestPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: typings.phaser.Phaser.Geom.Point, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNearestPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetNearestPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNearestPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetNearestPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: typings.phaser.Phaser.Geom.Point, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNearestPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculate the normal of the given line.
@@ -1035,10 +913,8 @@ object Geom {
       * @param out An optional point object to store the normal in.
       */
     /* static member */
-    @scala.inline
-    def GetNormal[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNormal")(line.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetNormal[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNormal")(line.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetNormal[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNormal")(line.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetNormal[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNormal")(line.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Get a point on a line that's a given percentage along its length.
@@ -1047,10 +923,8 @@ object Geom {
       * @param out An optional point, or point-like object, to store the coordinates of the point on the line.
       */
     /* static member */
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(line.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(line.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(line.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(line.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Get a number of points along a line's length.
@@ -1065,57 +939,47 @@ object Geom {
       * @param out An optional array of Points, or point-like objects, to store the coordinates of the points on the line.
       */
     /* static member */
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](line: typings.phaser.Phaser.Geom.Line, quantity: integer, stepRate: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(line.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @scala.inline
-    def GetShortestDistance[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetShortestDistance")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetShortestDistance[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: js.Object): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetShortestDistance")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
     /**
       * Get the shortest distance from a Line to the given Point.
       * @param line The line to get the distance from.
       * @param point The point to get the shortest distance to.
       */
     /* static member */
-    @scala.inline
-    def GetShortestDistance[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetShortestDistance")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetShortestDistance[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetShortestDistance")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculate the height of the given line.
       * @param line The line to calculate the height of.
       */
     /* static member */
-    @scala.inline
-    def Height(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Height")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Height(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Height")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Calculate the length of the given line.
       * @param line The line to calculate the length of.
       */
     /* static member */
-    @scala.inline
-    def Length(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Length")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Length(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Length")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Get the angle of the normal of the given line in radians.
       * @param line The line to calculate the angle of the normal of.
       */
     /* static member */
-    @scala.inline
-    def NormalAngle(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalAngle")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def NormalAngle(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalAngle")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the x component of the normal vector of the given line.
       * @param line The Line object to get the normal value from.
       */
     /* static member */
-    @scala.inline
-    def NormalX(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalX")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def NormalX(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalX")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * The Y value of the normal of the given line.
@@ -1123,8 +987,7 @@ object Geom {
       * @param line The line to calculate the normal of.
       */
     /* static member */
-    @scala.inline
-    def NormalY(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalY")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def NormalY(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalY")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Offset a line by the given amount.
@@ -1133,16 +996,14 @@ object Geom {
       * @param y The vertical offset to add to the line.
       */
     /* static member */
-    @scala.inline
-    def Offset[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(line.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Offset[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(line.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculate the perpendicular slope of the given line.
       * @param line The line to calculate the perpendicular slope of.
       */
     /* static member */
-    @scala.inline
-    def PerpSlope(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("PerpSlope")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def PerpSlope(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("PerpSlope")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns a random point on a given Line.
@@ -1150,10 +1011,8 @@ object Geom {
       * @param out An instance of a Point to be modified.
       */
     /* static member */
-    @scala.inline
-    def Random[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(line.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def Random[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(line.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Random[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(line.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Random[O /* <: typings.phaser.Phaser.Geom.Point */](line: typings.phaser.Phaser.Geom.Line, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(line.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculate the reflected angle between two lines.
@@ -1163,8 +1022,7 @@ object Geom {
       * @param lineB The second line.
       */
     /* static member */
-    @scala.inline
-    def ReflectAngle(lineA: typings.phaser.Phaser.Geom.Line, lineB: typings.phaser.Phaser.Geom.Line): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ReflectAngle")(lineA.asInstanceOf[js.Any], lineB.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def ReflectAngle(lineA: typings.phaser.Phaser.Geom.Line, lineB: typings.phaser.Phaser.Geom.Line): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ReflectAngle")(lineA.asInstanceOf[js.Any], lineB.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Rotate a line around its midpoint by the given angle in radians.
@@ -1172,11 +1030,9 @@ object Geom {
       * @param angle The angle of rotation in radians.
       */
     /* static member */
-    @scala.inline
-    def Rotate[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(line.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Rotate[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(line.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @scala.inline
-    def RotateAroundPoint[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, point: js.Object, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def RotateAroundPoint[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, point: js.Object, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
     /**
       * Rotate a line around a point by the given angle in radians.
       * @param line The line to rotate.
@@ -1184,8 +1040,7 @@ object Geom {
       * @param angle The angle of rotation in radians.
       */
     /* static member */
-    @scala.inline
-    def RotateAroundPoint[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, point: typings.phaser.Phaser.Geom.Point, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def RotateAroundPoint[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, point: typings.phaser.Phaser.Geom.Point, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundPoint")(line.asInstanceOf[js.Any], point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Rotate a line around the given coordinates by the given angle in radians.
@@ -1195,8 +1050,7 @@ object Geom {
       * @param angle The angle of rotation in radians.
       */
     /* static member */
-    @scala.inline
-    def RotateAroundXY[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, x: Double, y: Double, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundXY")(line.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def RotateAroundXY[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, x: Double, y: Double, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundXY")(line.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Set a line to a given position, angle and length.
@@ -1207,24 +1061,21 @@ object Geom {
       * @param length The length of the line.
       */
     /* static member */
-    @scala.inline
-    def SetToAngle[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, x: Double, y: Double, angle: Double, length: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("SetToAngle")(line.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def SetToAngle[O /* <: typings.phaser.Phaser.Geom.Line */](line: O, x: Double, y: Double, angle: Double, length: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("SetToAngle")(line.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculate the slope of the given line.
       * @param line The line to calculate the slope of.
       */
     /* static member */
-    @scala.inline
-    def Slope(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Slope")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Slope(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Slope")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Calculate the width of the given line.
       * @param line The line to calculate the width of.
       */
     /* static member */
-    @scala.inline
-    def Width(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Width")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Width(line: typings.phaser.Phaser.Geom.Line): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Width")(line.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   /**
@@ -1234,8 +1085,7 @@ object Geom {
   @js.native
   def POINT_ : integer = js.native
   
-  @scala.inline
-  def POINT__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINT")(x.asInstanceOf[js.Any])
+  inline def POINT__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINT")(x.asInstanceOf[js.Any])
   
   /**
     * A Polygon Geometry object type.
@@ -1244,8 +1094,7 @@ object Geom {
   @js.native
   def POLYGON_ : integer = js.native
   
-  @scala.inline
-  def POLYGON__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POLYGON")(x.asInstanceOf[js.Any])
+  inline def POLYGON__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POLYGON")(x.asInstanceOf[js.Any])
   
   /**
     * Defines a Point in 2D space, with an x and y component.
@@ -1275,16 +1124,14 @@ object Geom {
       * @param point The Point to ceil.
       */
     /* static member */
-    @scala.inline
-    def Ceil[O /* <: typings.phaser.Phaser.Geom.Point */](point: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(point.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Ceil[O /* <: typings.phaser.Phaser.Geom.Point */](point: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(point.asInstanceOf[js.Any]).asInstanceOf[O]
     
     /**
       * Clone the given Point.
       * @param source The source Point to clone.
       */
     /* static member */
-    @scala.inline
-    def Clone(source: typings.phaser.Phaser.Geom.Point): typings.phaser.Phaser.Geom.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Point]
+    inline def Clone(source: typings.phaser.Phaser.Geom.Point): typings.phaser.Phaser.Geom.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Point]
     
     /**
       * Copy the values of one Point to a destination Point.
@@ -1292,8 +1139,7 @@ object Geom {
       * @param dest The destination Point to copy the values to.
       */
     /* static member */
-    @scala.inline
-    def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Point */](source: typings.phaser.Phaser.Geom.Point, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Point */](source: typings.phaser.Phaser.Geom.Point, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * A comparison of two `Point` objects to see if they are equal.
@@ -1301,16 +1147,14 @@ object Geom {
       * @param toCompare The second `Point` to compare.
       */
     /* static member */
-    @scala.inline
-    def Equals(point: typings.phaser.Phaser.Geom.Point, toCompare: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(point.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Equals(point: typings.phaser.Phaser.Geom.Point, toCompare: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(point.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Apply `Math.ceil()` to each coordinate of the given Point.
       * @param point The Point to floor.
       */
     /* static member */
-    @scala.inline
-    def Floor[O /* <: typings.phaser.Phaser.Geom.Point */](point: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(point.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Floor[O /* <: typings.phaser.Phaser.Geom.Point */](point: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(point.asInstanceOf[js.Any]).asInstanceOf[O]
     
     /**
       * Get the centroid or geometric center of a plane figure (the arithmetic mean position of all the points in the figure).
@@ -1319,26 +1163,22 @@ object Geom {
       * @param out A Point object to store the output coordinates in. If not given, a new Point instance is created.
       */
     /* static member */
-    @scala.inline
-    def GetCentroid[O /* <: typings.phaser.Phaser.Geom.Point */](points: js.Array[Vector2Like]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCentroid")(points.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetCentroid[O /* <: typings.phaser.Phaser.Geom.Point */](points: js.Array[Vector2Like], out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCentroid")(points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetCentroid[O /* <: typings.phaser.Phaser.Geom.Point */](points: js.Array[Vector2Like]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCentroid")(points.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetCentroid[O /* <: typings.phaser.Phaser.Geom.Point */](points: js.Array[Vector2Like], out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCentroid")(points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculate the magnitude of the point, which equivalent to the length of the line from the origin to this point.
       * @param point The point to calculate the magnitude for
       */
     /* static member */
-    @scala.inline
-    def GetMagnitude(point: typings.phaser.Phaser.Geom.Point): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMagnitude")(point.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def GetMagnitude(point: typings.phaser.Phaser.Geom.Point): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMagnitude")(point.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Calculates the square of magnitude of given point.(Can be used for fast magnitude calculation of point)
       * @param point Returns square of the magnitude/length of given point.
       */
     /* static member */
-    @scala.inline
-    def GetMagnitudeSq(point: typings.phaser.Phaser.Geom.Point): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMagnitudeSq")(point.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def GetMagnitudeSq(point: typings.phaser.Phaser.Geom.Point): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMagnitudeSq")(point.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Calculates the Axis Aligned Bounding Box (or aabb) from an array of points.
@@ -1346,10 +1186,8 @@ object Geom {
       * @param out A Rectangle object to store the results in. If not given, a new Rectangle instance is created.
       */
     /* static member */
-    @scala.inline
-    def GetRectangleFromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[Vector2Like]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleFromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetRectangleFromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[Vector2Like], out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleFromPoints")(points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetRectangleFromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[Vector2Like]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleFromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetRectangleFromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[Vector2Like], out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRectangleFromPoints")(points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns the linear interpolation point between the two given points, based on `t`.
@@ -1359,19 +1197,15 @@ object Geom {
       * @param out An optional `Point` object whose `x` and `y` values will be set to the result of the interpolation (can also be any object with `x` and `y` properties). If omitted, a new `Point` created and returned.
       */
     /* static member */
-    @scala.inline
-    def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Interpolate")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point, t: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Interpolate")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](
+    inline def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Interpolate")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point, t: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Interpolate")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](
       pointA: typings.phaser.Phaser.Geom.Point,
       pointB: typings.phaser.Phaser.Geom.Point,
       t: Double,
       out: O
     ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Interpolate")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any], t.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](
+    inline def Interpolate[O /* <: typings.phaser.Phaser.Geom.Point */](
       pointA: typings.phaser.Phaser.Geom.Point,
       pointB: typings.phaser.Phaser.Geom.Point,
       t: Unit,
@@ -1383,8 +1217,7 @@ object Geom {
       * @param point The Point to modify.
       */
     /* static member */
-    @scala.inline
-    def Invert[O /* <: typings.phaser.Phaser.Geom.Point */](point: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Invert")(point.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Invert[O /* <: typings.phaser.Phaser.Geom.Point */](point: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Invert")(point.asInstanceOf[js.Any]).asInstanceOf[O]
     
     /**
       * Inverts a Point's coordinates.
@@ -1392,10 +1225,8 @@ object Geom {
       * @param out The Point to return the inverted coordinates in.
       */
     /* static member */
-    @scala.inline
-    def Negative[O /* <: typings.phaser.Phaser.Geom.Point */](point: typings.phaser.Phaser.Geom.Point): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Negative")(point.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def Negative[O /* <: typings.phaser.Phaser.Geom.Point */](point: typings.phaser.Phaser.Geom.Point, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Negative")(point.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Negative[O /* <: typings.phaser.Phaser.Geom.Point */](point: typings.phaser.Phaser.Geom.Point): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Negative")(point.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Negative[O /* <: typings.phaser.Phaser.Geom.Point */](point: typings.phaser.Phaser.Geom.Point, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Negative")(point.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculates the vector projection of `pointA` onto the nonzero `pointB`. This is the
@@ -1405,10 +1236,8 @@ object Geom {
       * @param out The Point object to store the position in. If not given, a new Point instance is created.
       */
     /* static member */
-    @scala.inline
-    def Project[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Project")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def Project[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Project")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Project[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Project")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Project[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Project")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculates the vector projection of `pointA` onto the nonzero `pointB`. This is the
@@ -1418,10 +1247,8 @@ object Geom {
       * @param out The Point object to store the position in. If not given, a new Point instance is created.
       */
     /* static member */
-    @scala.inline
-    def ProjectUnit[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ProjectUnit")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def ProjectUnit[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ProjectUnit")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def ProjectUnit[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ProjectUnit")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def ProjectUnit[O /* <: typings.phaser.Phaser.Geom.Point */](pointA: typings.phaser.Phaser.Geom.Point, pointB: typings.phaser.Phaser.Geom.Point, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("ProjectUnit")(pointA.asInstanceOf[js.Any], pointB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Changes the magnitude (length) of a two-dimensional vector without changing its direction.
@@ -1429,8 +1256,7 @@ object Geom {
       * @param magnitude The new magnitude of the vector.
       */
     /* static member */
-    @scala.inline
-    def SetMagnitude[O /* <: typings.phaser.Phaser.Geom.Point */](point: O, magnitude: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("SetMagnitude")(point.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def SetMagnitude[O /* <: typings.phaser.Phaser.Geom.Point */](point: O, magnitude: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("SetMagnitude")(point.asInstanceOf[js.Any], magnitude.asInstanceOf[js.Any])).asInstanceOf[O]
   }
   
   /**
@@ -1469,8 +1295,7 @@ object Geom {
       * @param polygon The polygon to create a clone of
       */
     /* static member */
-    @scala.inline
-    def Clone(polygon: typings.phaser.Phaser.Geom.Polygon): typings.phaser.Phaser.Geom.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(polygon.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Polygon]
+    inline def Clone(polygon: typings.phaser.Phaser.Geom.Polygon): typings.phaser.Phaser.Geom.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(polygon.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Polygon]
     
     /**
       * Checks if a point is within the bounds of a Polygon.
@@ -1479,8 +1304,7 @@ object Geom {
       * @param y The Y coordinate of the point to check.
       */
     /* static member */
-    @scala.inline
-    def Contains(polygon: typings.phaser.Phaser.Geom.Polygon, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(polygon.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Contains(polygon: typings.phaser.Phaser.Geom.Polygon, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(polygon.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Checks the given Point again the Polygon to see if the Point lays within its vertices.
@@ -1488,8 +1312,7 @@ object Geom {
       * @param point The Point to check if it's within the Polygon.
       */
     /* static member */
-    @scala.inline
-    def ContainsPoint(polygon: typings.phaser.Phaser.Geom.Polygon, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(polygon.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(polygon: typings.phaser.Phaser.Geom.Polygon, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(polygon.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Calculates the bounding AABB rectangle of a polygon.
@@ -1497,10 +1320,8 @@ object Geom {
       * @param out The rectangle or object that has x, y, width, and height properties to store the result. Optional.
       */
     /* static member */
-    @scala.inline
-    def GetAABB[O /* <: typings.phaser.Phaser.Geom.Rectangle */](polygon: typings.phaser.Phaser.Geom.Polygon): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAABB")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetAABB[O /* <: typings.phaser.Phaser.Geom.Rectangle */](polygon: typings.phaser.Phaser.Geom.Polygon, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAABB")(polygon.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetAABB[O /* <: typings.phaser.Phaser.Geom.Rectangle */](polygon: typings.phaser.Phaser.Geom.Polygon): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAABB")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetAABB[O /* <: typings.phaser.Phaser.Geom.Rectangle */](polygon: typings.phaser.Phaser.Geom.Polygon, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAABB")(polygon.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Stores all of the points of a Polygon into a flat array of numbers following the sequence [ x,y, x,y, x,y ],
@@ -1510,10 +1331,8 @@ object Geom {
       * @param output An array to which the points' coordinates should be appended.
       */
     /* static member */
-    @scala.inline
-    def GetNumberArray[O /* <: js.Array[Double] */](polygon: typings.phaser.Phaser.Geom.Polygon): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNumberArray")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetNumberArray[O /* <: js.Array[Double] */](polygon: typings.phaser.Phaser.Geom.Polygon, output: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNumberArray")(polygon.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetNumberArray[O /* <: js.Array[Double] */](polygon: typings.phaser.Phaser.Geom.Polygon): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetNumberArray")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetNumberArray[O /* <: js.Array[Double] */](polygon: typings.phaser.Phaser.Geom.Polygon, output: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNumberArray")(polygon.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns an array of Point objects containing the coordinates of the points around the perimeter of the Polygon,
@@ -1524,19 +1343,15 @@ object Geom {
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
     /* static member */
-    @scala.inline
-    def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: integer): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    @scala.inline
-    def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: integer, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    @scala.inline
-    def GetPoints(
+    inline def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: integer): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def GetPoints(polygon: typings.phaser.Phaser.Geom.Polygon, quantity: integer, stepRate: Double): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def GetPoints(
       polygon: typings.phaser.Phaser.Geom.Polygon,
       quantity: integer,
       stepRate: Double,
       output: js.Array[js.Any]
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(polygon.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    @scala.inline
-    def GetPoints(
+    inline def GetPoints(
       polygon: typings.phaser.Phaser.Geom.Polygon,
       quantity: integer,
       stepRate: Unit,
@@ -1548,24 +1363,21 @@ object Geom {
       * @param polygon The Polygon to get the perimeter of.
       */
     /* static member */
-    @scala.inline
-    def Perimeter(polygon: typings.phaser.Phaser.Geom.Polygon): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Perimeter")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Perimeter(polygon: typings.phaser.Phaser.Geom.Polygon): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Perimeter")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Reverses the order of the points of a Polygon.
       * @param polygon The Polygon to modify.
       */
     /* static member */
-    @scala.inline
-    def Reverse[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Reverse")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Reverse[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Reverse")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
     
     /**
       * Takes a Polygon object and applies Chaikin's smoothing algorithm on its points.
       * @param polygon The polygon to be smoothed. The polygon will be modified in-place and returned.
       */
     /* static member */
-    @scala.inline
-    def Smooth[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Smooth")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Smooth[O /* <: typings.phaser.Phaser.Geom.Polygon */](polygon: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Smooth")(polygon.asInstanceOf[js.Any]).asInstanceOf[O]
   }
   
   /**
@@ -1575,8 +1387,7 @@ object Geom {
   @js.native
   def RECTANGLE_ : integer = js.native
   
-  @scala.inline
-  def RECTANGLE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECTANGLE")(x.asInstanceOf[js.Any])
+  inline def RECTANGLE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECTANGLE")(x.asInstanceOf[js.Any])
   
   /**
     * Encapsulates a 2D rectangle defined by its corner point in the top-left and its extends in x (width) and y (height)
@@ -1620,24 +1431,21 @@ object Geom {
       * @param rect The rectangle to calculate the area of.
       */
     /* static member */
-    @scala.inline
-    def Area(rect: typings.phaser.Phaser.Geom.Rectangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Area")(rect.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Area(rect: typings.phaser.Phaser.Geom.Rectangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Area")(rect.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Rounds a Rectangle's position up to the smallest integer greater than or equal to each current coordinate.
       * @param rect The Rectangle to adjust.
       */
     /* static member */
-    @scala.inline
-    def Ceil[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Ceil[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Ceil")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
     
     /**
       * Rounds a Rectangle's position and size up to the smallest integer greater than or equal to each respective value.
       * @param rect The Rectangle to modify.
       */
     /* static member */
-    @scala.inline
-    def CeilAll[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("CeilAll")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def CeilAll[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("CeilAll")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
     
     /**
       * Moves the top-left corner of a Rectangle so that its center is at the given coordinates.
@@ -1646,16 +1454,14 @@ object Geom {
       * @param y The Y coordinate of the Rectangle's center.
       */
     /* static member */
-    @scala.inline
-    def CenterOn[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterOn")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CenterOn[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterOn")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Creates a new Rectangle which is identical to the given one.
       * @param source The Rectangle to clone.
       */
     /* static member */
-    @scala.inline
-    def Clone(source: typings.phaser.Phaser.Geom.Rectangle): typings.phaser.Phaser.Geom.Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Rectangle]
+    inline def Clone(source: typings.phaser.Phaser.Geom.Rectangle): typings.phaser.Phaser.Geom.Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Rectangle]
     
     /**
       * Checks if a given point is inside a Rectangle's bounds.
@@ -1664,8 +1470,7 @@ object Geom {
       * @param y The Y coordinate of the point to check.
       */
     /* static member */
-    @scala.inline
-    def Contains(rect: typings.phaser.Phaser.Geom.Rectangle, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Contains(rect: typings.phaser.Phaser.Geom.Rectangle, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Determines whether the specified point is contained within the rectangular region defined by this Rectangle object.
@@ -1673,8 +1478,7 @@ object Geom {
       * @param point The point object to be checked. Can be a Phaser Point object or any object with x and y values.
       */
     /* static member */
-    @scala.inline
-    def ContainsPoint(rect: typings.phaser.Phaser.Geom.Rectangle, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(rect.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(rect: typings.phaser.Phaser.Geom.Rectangle, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(rect.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Tests if one rectangle fully contains another.
@@ -1682,8 +1486,7 @@ object Geom {
       * @param rectB The second rectangle.
       */
     /* static member */
-    @scala.inline
-    def ContainsRect(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsRect(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsRect")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Copy the values of one Rectangle to a destination Rectangle.
@@ -1691,8 +1494,7 @@ object Geom {
       * @param dest The destination Rectangle to copy the values to.
       */
     /* static member */
-    @scala.inline
-    def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Rectangle */](source: typings.phaser.Phaser.Geom.Rectangle, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Rectangle */](source: typings.phaser.Phaser.Geom.Rectangle, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Create an array of points for each corner of a Rectangle
@@ -1701,10 +1503,8 @@ object Geom {
       * @param out If provided, each point will be added to this array.
       */
     /* static member */
-    @scala.inline
-    def Decompose(rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(rect.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def Decompose(rect: typings.phaser.Phaser.Geom.Rectangle, out: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def Decompose(rect: typings.phaser.Phaser.Geom.Rectangle): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(rect.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def Decompose(rect: typings.phaser.Phaser.Geom.Rectangle, out: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Compares the `x`, `y`, `width` and `height` properties of two rectangles.
@@ -1712,8 +1512,7 @@ object Geom {
       * @param toCompare Rectangle B
       */
     /* static member */
-    @scala.inline
-    def Equals(rect: typings.phaser.Phaser.Geom.Rectangle, toCompare: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(rect.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Equals(rect: typings.phaser.Phaser.Geom.Rectangle, toCompare: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(rect.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Adjusts the target rectangle, changing its width, height and position,
@@ -1725,8 +1524,7 @@ object Geom {
       * @param source The source rectangle to envelop the target in.
       */
     /* static member */
-    @scala.inline
-    def FitInside[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, source: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FitInside")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def FitInside[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, source: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FitInside")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Adjusts the target rectangle, changing its width, height and position,
@@ -1738,24 +1536,21 @@ object Geom {
       * @param source The source rectangle to envelope the target in.
       */
     /* static member */
-    @scala.inline
-    def FitOutside[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, source: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FitOutside")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def FitOutside[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, source: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FitOutside")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Rounds down (floors) the top left X and Y coordinates of the given Rectangle to the largest integer less than or equal to them
       * @param rect The rectangle to floor the top left X and Y coordinates of
       */
     /* static member */
-    @scala.inline
-    def Floor[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Floor[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Floor")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
     
     /**
       * Rounds a Rectangle's position and size down to the largest integer less than or equal to each current coordinate or dimension.
       * @param rect The Rectangle to adjust.
       */
     /* static member */
-    @scala.inline
-    def FloorAll[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("FloorAll")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def FloorAll[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O): O = ^.asInstanceOf[js.Dynamic].applyDynamic("FloorAll")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
     
     /**
       * Constructs new Rectangle or repositions and resizes an existing Rectangle so that all of the given points are on or within its bounds.
@@ -1763,10 +1558,8 @@ object Geom {
       * @param out Optional Rectangle to adjust.
       */
     /* static member */
-    @scala.inline
-    def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[js.Any]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[js.Any], out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[js.Any]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def FromPoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](points: js.Array[js.Any], out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPoints")(points.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Create the smallest Rectangle containing two coordinate pairs.
@@ -1777,18 +1570,15 @@ object Geom {
       * @param out Optional Rectangle to adjust.
       */
     /* static member */
-    @scala.inline
-    def FromXY[O /* <: typings.phaser.Phaser.Geom.Rectangle */](x1: Double, y1: Double, x2: Double, y2: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FromXY")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def FromXY[O /* <: typings.phaser.Phaser.Geom.Rectangle */](x1: Double, y1: Double, x2: Double, y2: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FromXY")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def FromXY[O /* <: typings.phaser.Phaser.Geom.Rectangle */](x1: Double, y1: Double, x2: Double, y2: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FromXY")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def FromXY[O /* <: typings.phaser.Phaser.Geom.Rectangle */](x1: Double, y1: Double, x2: Double, y2: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("FromXY")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculates the width/height ratio of a rectangle.
       * @param rect The rectangle.
       */
     /* static member */
-    @scala.inline
-    def GetAspectRatio(rect: typings.phaser.Phaser.Geom.Rectangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAspectRatio")(rect.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def GetAspectRatio(rect: typings.phaser.Phaser.Geom.Rectangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAspectRatio")(rect.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns the center of a Rectangle as a Point.
@@ -1796,10 +1586,8 @@ object Geom {
       * @param out Optional point-like object to update with the center coordinates.
       */
     /* static member */
-    @scala.inline
-    def GetCenter[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCenter")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetCenter[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCenter")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetCenter[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCenter")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetCenter[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCenter")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculates the coordinates of a point at a certain `position` on the Rectangle's perimeter.
@@ -1812,10 +1600,8 @@ object Geom {
       * @param out An object to update with the `x` and `y` coordinates of the point.
       */
     /* static member */
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(rectangle.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(rectangle.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(rectangle.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(rectangle.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Return an array of points from the perimeter of the rectangle, each spaced out based on the quantity or step required.
@@ -1825,10 +1611,8 @@ object Geom {
       * @param out An optional array to store the points in.
       */
     /* static member */
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(rectangle.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(rectangle.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(rectangle.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rectangle: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(rectangle.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns the size of the Rectangle, expressed as a Point object.
@@ -1837,10 +1621,8 @@ object Geom {
       * @param out The Point object to store the size in. If not given, a new Point instance is created.
       */
     /* static member */
-    @scala.inline
-    def GetSize[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSize")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def GetSize[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetSize")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetSize[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSize")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def GetSize[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetSize")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Increases the size of a Rectangle by a specified amount.
@@ -1851,8 +1633,7 @@ object Geom {
       * @param y How many pixels the top and the bottom side should be moved by vertically.
       */
     /* static member */
-    @scala.inline
-    def Inflate[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Inflate")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Inflate[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Inflate")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Takes two Rectangles and first checks to see if they intersect.
@@ -1863,10 +1644,8 @@ object Geom {
       * @param out A Rectangle to store the intersection results in.
       */
     /* static member */
-    @scala.inline
-    def Intersection[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersection")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def Intersection[O /* <: typings.phaser.Phaser.Geom.Rectangle */](
+    inline def Intersection[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Intersection")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Intersection[O /* <: typings.phaser.Phaser.Geom.Rectangle */](
       rectA: typings.phaser.Phaser.Geom.Rectangle,
       rectB: typings.phaser.Phaser.Geom.Rectangle,
       out: typings.phaser.Phaser.Geom.Rectangle
@@ -1881,22 +1660,14 @@ object Geom {
       * @param out An array in which the perimeter points will be stored. If not given, a new array instance is created.
       */
     /* static member */
-    @scala.inline
-    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Double, quantity: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MarchingAnts[O /* <: js.Array[typings.phaser.Phaser.Geom.Point] */](rect: typings.phaser.Phaser.Geom.Rectangle, step: Unit, quantity: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MarchingAnts")(rect.asInstanceOf[js.Any], step.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Merges a Rectangle with a list of points by repositioning and/or resizing it such that all points are located on or within its bounds.
@@ -1904,8 +1675,7 @@ object Geom {
       * @param points An array of Points (or any object with public `x` and `y` properties) which should be merged with the Rectangle.
       */
     /* static member */
-    @scala.inline
-    def MergePoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, points: js.Array[typings.phaser.Phaser.Geom.Point]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MergePoints")(target.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MergePoints[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, points: js.Array[typings.phaser.Phaser.Geom.Point]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MergePoints")(target.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Merges the source rectangle into the target rectangle and returns the target.
@@ -1914,8 +1684,7 @@ object Geom {
       * @param source Rectangle that will be merged into target rectangle.
       */
     /* static member */
-    @scala.inline
-    def MergeRect[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, source: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeRect")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MergeRect[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, source: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeRect")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Merges a Rectangle with a point by repositioning and/or resizing it so that the point is on or within its bounds.
@@ -1924,8 +1693,7 @@ object Geom {
       * @param y The Y coordinate of the point which should be merged.
       */
     /* static member */
-    @scala.inline
-    def MergeXY[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeXY")(target.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def MergeXY[O /* <: typings.phaser.Phaser.Geom.Rectangle */](target: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeXY")(target.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Nudges (translates) the top left corner of a Rectangle by a given offset.
@@ -1934,8 +1702,7 @@ object Geom {
       * @param y The distance to move the Rectangle vertically.
       */
     /* static member */
-    @scala.inline
-    def Offset[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Offset[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Nudges (translates) the top-left corner of a Rectangle by the coordinates of a point (translation vector).
@@ -1943,10 +1710,8 @@ object Geom {
       * @param point The point whose coordinates should be used as an offset.
       */
     /* static member */
-    @scala.inline
-    def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(rect.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, point: Vector2): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(rect.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, point: typings.phaser.Phaser.Geom.Point): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(rect.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def OffsetPoint[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, point: Vector2): O = (^.asInstanceOf[js.Dynamic].applyDynamic("OffsetPoint")(rect.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Checks if two Rectangles overlap. If a Rectangle is within another Rectangle, the two will be considered overlapping. Thus, the Rectangles are treated as "solid".
@@ -1954,16 +1719,14 @@ object Geom {
       * @param rectB The second Rectangle to check.
       */
     /* static member */
-    @scala.inline
-    def Overlaps(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Overlaps")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Overlaps(rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Overlaps")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Calculates the perimeter of a Rectangle.
       * @param rect The Rectangle to use.
       */
     /* static member */
-    @scala.inline
-    def Perimeter(rect: typings.phaser.Phaser.Geom.Rectangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Perimeter")(rect.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Perimeter(rect: typings.phaser.Phaser.Geom.Rectangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Perimeter")(rect.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns a Point from the perimeter of a Rectangle based on the given angle.
@@ -1972,10 +1735,8 @@ object Geom {
       * @param out The Point object to store the position in. If not given, a new Point instance is created.
       */
     /* static member */
-    @scala.inline
-    def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("PerimeterPoint")(rectangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("PerimeterPoint")(rectangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: integer): O = (^.asInstanceOf[js.Dynamic].applyDynamic("PerimeterPoint")(rectangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def PerimeterPoint[O /* <: typings.phaser.Phaser.Geom.Point */](rectangle: typings.phaser.Phaser.Geom.Rectangle, angle: integer, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("PerimeterPoint")(rectangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns a random point within a Rectangle.
@@ -1983,8 +1744,7 @@ object Geom {
       * @param out The object to update with the point's coordinates.
       */
     /* static member */
-    @scala.inline
-    def Random[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Random[O /* <: typings.phaser.Phaser.Geom.Point */](rect: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(rect.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculates a random point that lies within the `outer` Rectangle, but outside of the `inner` Rectangle.
@@ -1994,10 +1754,8 @@ object Geom {
       * @param out A Point, or Point-like object to store the result in. If not specified, a new Point will be created.
       */
     /* static member */
-    @scala.inline
-    def RandomOutside[O /* <: typings.phaser.Phaser.Geom.Point */](outer: typings.phaser.Phaser.Geom.Rectangle, inner: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomOutside")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def RandomOutside[O /* <: typings.phaser.Phaser.Geom.Point */](outer: typings.phaser.Phaser.Geom.Rectangle, inner: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomOutside")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def RandomOutside[O /* <: typings.phaser.Phaser.Geom.Point */](outer: typings.phaser.Phaser.Geom.Rectangle, inner: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomOutside")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def RandomOutside[O /* <: typings.phaser.Phaser.Geom.Point */](outer: typings.phaser.Phaser.Geom.Rectangle, inner: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomOutside")(outer.asInstanceOf[js.Any], inner.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Determines if the two objects (either Rectangles or Rectangle-like) have the same width and height values under strict equality.
@@ -2005,8 +1763,7 @@ object Geom {
       * @param toCompare The second Rectangle object.
       */
     /* static member */
-    @scala.inline
-    def SameDimensions(rect: typings.phaser.Phaser.Geom.Rectangle, toCompare: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SameDimensions")(rect.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def SameDimensions(rect: typings.phaser.Phaser.Geom.Rectangle, toCompare: typings.phaser.Phaser.Geom.Rectangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SameDimensions")(rect.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Scales the width and height of this Rectangle by the given amounts.
@@ -2015,8 +1772,7 @@ object Geom {
       * @param y The amount by which to scale the rectangle vertically. If this is not specified, the rectangle will be scaled by the factor `x` in both directions.
       */
     /* static member */
-    @scala.inline
-    def Scale[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Scale")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Scale[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rect: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Scale")(rect.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Creates a new Rectangle or repositions and/or resizes an existing Rectangle so that it encompasses the two given Rectangles, i.e. calculates their union.
@@ -2025,10 +1781,8 @@ object Geom {
       * @param out The Rectangle to store the union in.
       */
     /* static member */
-    @scala.inline
-    def Union[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Union")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def Union[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Union")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Union[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Union")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Union[O /* <: typings.phaser.Phaser.Geom.Rectangle */](rectA: typings.phaser.Phaser.Geom.Rectangle, rectB: typings.phaser.Phaser.Geom.Rectangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Union")(rectA.asInstanceOf[js.Any], rectB.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
   }
   
   /**
@@ -2038,8 +1792,7 @@ object Geom {
   @js.native
   def TRIANGLE_ : integer = js.native
   
-  @scala.inline
-  def TRIANGLE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIANGLE")(x.asInstanceOf[js.Any])
+  inline def TRIANGLE__=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIANGLE")(x.asInstanceOf[js.Any])
   
   /**
     * A triangle is a plane created by connecting three points.
@@ -2080,8 +1833,7 @@ object Geom {
       * @param triangle The Triangle to use.
       */
     /* static member */
-    @scala.inline
-    def Area(triangle: typings.phaser.Phaser.Geom.Triangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Area")(triangle.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Area(triangle: typings.phaser.Phaser.Geom.Triangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Area")(triangle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Builds an equilateral triangle. In the equilateral triangle, all the sides are the same length (congruent) and all the angles are the same size (congruent).
@@ -2091,8 +1843,7 @@ object Geom {
       * @param length Length of each side of the triangle.
       */
     /* static member */
-    @scala.inline
-    def BuildEquilateral(x: Double, y: Double, length: Double): typings.phaser.Phaser.Geom.Triangle = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildEquilateral")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Triangle]
+    inline def BuildEquilateral(x: Double, y: Double, length: Double): typings.phaser.Phaser.Geom.Triangle = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildEquilateral")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Triangle]
     
     /**
       * Takes an array of vertex coordinates, and optionally an array of hole indices, then returns an array
@@ -2104,38 +1855,22 @@ object Geom {
       * @param out An array to store the resulting Triangle instances in. If not provided, a new array is created.
       */
     /* static member */
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Unit, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Unit, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Unit, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Unit, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Unit, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Unit, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any]): O = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Double, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Unit, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Unit, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: js.Array[js.Any], scaleX: Unit, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Double, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Unit, scaleY: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Unit, scaleY: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def BuildFromPolygon[O /* <: js.Array[typings.phaser.Phaser.Geom.Triangle] */](data: js.Array[js.Any], holes: Unit, scaleX: Unit, scaleY: Unit, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildFromPolygon")(data.asInstanceOf[js.Any], holes.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Builds a right triangle, i.e. one which has a 90-degree angle and two acute angles.
@@ -2145,8 +1880,7 @@ object Geom {
       * @param height The length of the side which is above or below the right angle.
       */
     /* static member */
-    @scala.inline
-    def BuildRight(x: Double, y: Double, width: Double, height: Double): typings.phaser.Phaser.Geom.Triangle = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildRight")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Triangle]
+    inline def BuildRight(x: Double, y: Double, width: Double, height: Double): typings.phaser.Phaser.Geom.Triangle = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildRight")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Geom.Triangle]
     
     /**
       * Positions the Triangle so that it is centered on the given coordinates.
@@ -2156,10 +1890,8 @@ object Geom {
       * @param centerFunc The function used to center the triangle. Defaults to Centroid centering.
       */
     /* static member */
-    @scala.inline
-    def CenterOn[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterOn")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def CenterOn[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, x: Double, y: Double, centerFunc: CenterFunction): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterOn")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], centerFunc.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CenterOn[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterOn")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CenterOn[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, x: Double, y: Double, centerFunc: CenterFunction): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterOn")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], centerFunc.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculates the position of a Triangle's centroid, which is also its center of mass (center of gravity).
@@ -2169,10 +1901,8 @@ object Geom {
       * @param out An object to store the coordinates in.
       */
     /* static member */
-    @scala.inline
-    def Centroid[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Centroid")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def Centroid[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Centroid")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Centroid[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Centroid")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Centroid[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Centroid")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Computes the circumcentre of a triangle. The circumcentre is the centre of
@@ -2184,10 +1914,8 @@ object Geom {
       * @param out The Vector2 object to store the position in. If not given, a new Vector2 instance is created.
       */
     /* static member */
-    @scala.inline
-    def CircumCenter[O /* <: Vector2 */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("CircumCenter")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def CircumCenter[O /* <: Vector2 */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumCenter")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CircumCenter[O /* <: Vector2 */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("CircumCenter")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def CircumCenter[O /* <: Vector2 */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumCenter")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Finds the circumscribed circle (circumcircle) of a Triangle object. The circumcircle is the circle which touches all of the triangle's vertices.
@@ -2195,18 +1923,15 @@ object Geom {
       * @param out An optional Circle to store the result in.
       */
     /* static member */
-    @scala.inline
-    def CircumCircle[O /* <: typings.phaser.Phaser.Geom.Circle */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("CircumCircle")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def CircumCircle[O /* <: typings.phaser.Phaser.Geom.Circle */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumCircle")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CircumCircle[O /* <: typings.phaser.Phaser.Geom.Circle */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("CircumCircle")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def CircumCircle[O /* <: typings.phaser.Phaser.Geom.Circle */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CircumCircle")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Clones a Triangle object.
       * @param source The Triangle to clone.
       */
     /* static member */
-    @scala.inline
-    def Clone(source: typings.phaser.Phaser.Geom.Triangle): typings.phaser.Phaser.Geom.Triangle = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Triangle]
+    inline def Clone(source: typings.phaser.Phaser.Geom.Triangle): typings.phaser.Phaser.Geom.Triangle = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(source.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Geom.Triangle]
     
     /**
       * Checks if a point (as a pair of coordinates) is inside a Triangle's bounds.
@@ -2215,8 +1940,7 @@ object Geom {
       * @param y The Y coordinate of the point to check.
       */
     /* static member */
-    @scala.inline
-    def Contains(triangle: typings.phaser.Phaser.Geom.Triangle, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Contains(triangle: typings.phaser.Phaser.Geom.Triangle, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Contains")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Filters an array of point-like objects to only those contained within a triangle.
@@ -2227,41 +1951,34 @@ object Geom {
       * @param out If provided, the points that are within the triangle will be appended to this array instead of being added to a new array. If `returnFirst` is true, only the first point found within the triangle will be appended. This array will also be returned by this function.
       */
     /* static member */
-    @scala.inline
-    def ContainsArray(triangle: typings.phaser.Phaser.Geom.Triangle, points: js.Array[typings.phaser.Phaser.Geom.Point]): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsArray")(triangle.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    @scala.inline
-    def ContainsArray(
+    inline def ContainsArray(triangle: typings.phaser.Phaser.Geom.Triangle, points: js.Array[typings.phaser.Phaser.Geom.Point]): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsArray")(triangle.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
+    inline def ContainsArray(
       triangle: typings.phaser.Phaser.Geom.Triangle,
       points: js.Array[typings.phaser.Phaser.Geom.Point],
       returnFirst: Boolean
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsArray")(triangle.asInstanceOf[js.Any], points.asInstanceOf[js.Any], returnFirst.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    @scala.inline
-    def ContainsArray(
+    inline def ContainsArray(
       triangle: typings.phaser.Phaser.Geom.Triangle,
       points: js.Array[typings.phaser.Phaser.Geom.Point],
       returnFirst: Boolean,
       out: js.Array[js.Any]
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsArray")(triangle.asInstanceOf[js.Any], points.asInstanceOf[js.Any], returnFirst.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
-    @scala.inline
-    def ContainsArray(
+    inline def ContainsArray(
       triangle: typings.phaser.Phaser.Geom.Triangle,
       points: js.Array[typings.phaser.Phaser.Geom.Point],
       returnFirst: Unit,
       out: js.Array[js.Any]
     ): js.Array[typings.phaser.Phaser.Geom.Point] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsArray")(triangle.asInstanceOf[js.Any], points.asInstanceOf[js.Any], returnFirst.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Geom.Point]]
     
-    @scala.inline
-    def ContainsPoint(triangle: typings.phaser.Phaser.Geom.Triangle, point: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(triangle: typings.phaser.Phaser.Geom.Triangle, point: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Tests if a triangle contains a point.
       * @param triangle The triangle.
       * @param point The point to test, or any point-like object with public `x` and `y` properties.
       */
     /* static member */
-    @scala.inline
-    def ContainsPoint(triangle: typings.phaser.Phaser.Geom.Triangle, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def ContainsPoint(triangle: typings.phaser.Phaser.Geom.Triangle, point: Vector2): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(triangle: typings.phaser.Phaser.Geom.Triangle, point: typings.phaser.Phaser.Geom.Point): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def ContainsPoint(triangle: typings.phaser.Phaser.Geom.Triangle, point: Vector2): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ContainsPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Copy the values of one Triangle to a destination Triangle.
@@ -2269,8 +1986,7 @@ object Geom {
       * @param dest The destination Triangle to copy the values to.
       */
     /* static member */
-    @scala.inline
-    def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Triangle */](source: typings.phaser.Phaser.Geom.Triangle, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def CopyFrom[O /* <: typings.phaser.Phaser.Geom.Triangle */](source: typings.phaser.Phaser.Geom.Triangle, dest: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("CopyFrom")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Decomposes a Triangle into an array of its points.
@@ -2278,10 +1994,8 @@ object Geom {
       * @param out An array to store the points into.
       */
     /* static member */
-    @scala.inline
-    def Decompose(triangle: typings.phaser.Phaser.Geom.Triangle): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(triangle.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-    @scala.inline
-    def Decompose(triangle: typings.phaser.Phaser.Geom.Triangle, out: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def Decompose(triangle: typings.phaser.Phaser.Geom.Triangle): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(triangle.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def Decompose(triangle: typings.phaser.Phaser.Geom.Triangle, out: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Decompose")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Returns true if two triangles have the same coordinates.
@@ -2289,8 +2003,7 @@ object Geom {
       * @param toCompare The second triangle to check.
       */
     /* static member */
-    @scala.inline
-    def Equals(triangle: typings.phaser.Phaser.Geom.Triangle, toCompare: typings.phaser.Phaser.Geom.Triangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(triangle.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Equals(triangle: typings.phaser.Phaser.Geom.Triangle, toCompare: typings.phaser.Phaser.Geom.Triangle): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Equals")(triangle.asInstanceOf[js.Any], toCompare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns a Point from around the perimeter of a Triangle.
@@ -2299,10 +2012,8 @@ object Geom {
       * @param out An option Point, or Point-like object to store the value in. If not given a new Point will be created.
       */
     /* static member */
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(triangle.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(triangle.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, position: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(triangle.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoint[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, position: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoint")(triangle.asInstanceOf[js.Any], position.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Returns an array of evenly spaced points on the perimeter of a Triangle.
@@ -2312,10 +2023,8 @@ object Geom {
       * @param out An array to which the points should be appended.
       */
     /* static member */
-    @scala.inline
-    def GetPoints[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, quantity: integer, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(triangle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
-    @scala.inline
-    def GetPoints[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, quantity: integer, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(triangle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, quantity: integer, stepRate: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(triangle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def GetPoints[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, quantity: integer, stepRate: Double, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("GetPoints")(triangle.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], stepRate.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Calculates the position of the incenter of a Triangle object. This is the point where its three angle bisectors meet and it's also the center of the incircle, which is the circle inscribed in the triangle.
@@ -2323,10 +2032,8 @@ object Geom {
       * @param out An optional Point in which to store the coordinates.
       */
     /* static member */
-    @scala.inline
-    def InCenter[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("InCenter")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def InCenter[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("InCenter")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def InCenter[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("InCenter")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def InCenter[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("InCenter")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Moves each point (vertex) of a Triangle by a given offset, thus moving the entire Triangle by that offset.
@@ -2335,8 +2042,7 @@ object Geom {
       * @param y The vertical offset (distance) by which to move each point. Can be positive or negative.
       */
     /* static member */
-    @scala.inline
-    def Offset[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Offset[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, x: Double, y: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Offset")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Gets the length of the perimeter of the given triangle.
@@ -2344,8 +2050,7 @@ object Geom {
       * @param triangle The Triangle to get the length from.
       */
     /* static member */
-    @scala.inline
-    def Perimeter(triangle: typings.phaser.Phaser.Geom.Triangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Perimeter")(triangle.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Perimeter(triangle: typings.phaser.Phaser.Geom.Triangle): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Perimeter")(triangle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Returns a random Point from within the area of the given Triangle.
@@ -2353,10 +2058,8 @@ object Geom {
       * @param out The Point object to store the position in. If not given, a new Point instance is created.
       */
     /* static member */
-    @scala.inline
-    def Random[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
-    @scala.inline
-    def Random[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Random[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle): O = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(triangle.asInstanceOf[js.Any]).asInstanceOf[O]
+    inline def Random[O /* <: typings.phaser.Phaser.Geom.Point */](triangle: typings.phaser.Phaser.Geom.Triangle, out: O): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(triangle.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Rotates a Triangle about its incenter, which is the point at which its three angle bisectors meet.
@@ -2364,8 +2067,7 @@ object Geom {
       * @param angle The angle by which to rotate the Triangle, in radians.
       */
     /* static member */
-    @scala.inline
-    def Rotate[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(triangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def Rotate[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("Rotate")(triangle.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Rotates a Triangle at a certain angle about a given Point or object with public `x` and `y` properties.
@@ -2374,8 +2076,7 @@ object Geom {
       * @param angle The angle by which to rotate the Triangle, in radians.
       */
     /* static member */
-    @scala.inline
-    def RotateAroundPoint[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, point: typings.phaser.Phaser.Geom.Point, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def RotateAroundPoint[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, point: typings.phaser.Phaser.Geom.Point, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundPoint")(triangle.asInstanceOf[js.Any], point.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
     
     /**
       * Rotates an entire Triangle at a given angle about a specific point.
@@ -2385,7 +2086,6 @@ object Geom {
       * @param angle The angle by which to rotate the Triangle, in radians.
       */
     /* static member */
-    @scala.inline
-    def RotateAroundXY[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, x: Double, y: Double, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundXY")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
+    inline def RotateAroundXY[O /* <: typings.phaser.Phaser.Geom.Triangle */](triangle: O, x: Double, y: Double, angle: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateAroundXY")(triangle.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[O]
   }
 }

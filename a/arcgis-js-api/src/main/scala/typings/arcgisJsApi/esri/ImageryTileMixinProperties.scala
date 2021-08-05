@@ -38,42 +38,31 @@ trait ImageryTileMixinProperties extends StObject {
 }
 object ImageryTileMixinProperties {
   
-  @scala.inline
-  def apply(): ImageryTileMixinProperties = {
+  inline def apply(): ImageryTileMixinProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageryTileMixinProperties]
   }
   
-  @scala.inline
-  implicit class ImageryTileMixinPropertiesMutableBuilder[Self <: ImageryTileMixinProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageryTileMixinProperties](x: Self) {
     
-    @scala.inline
-    def setBandIds(value: js.Array[Double]): Self = StObject.set(x, "bandIds", value.asInstanceOf[js.Any])
+    inline def setBandIds(value: js.Array[Double]): Self = StObject.set(x, "bandIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandIdsUndefined: Self = StObject.set(x, "bandIds", js.undefined)
+    inline def setBandIdsUndefined: Self = StObject.set(x, "bandIds", js.undefined)
     
-    @scala.inline
-    def setBandIdsVarargs(value: Double*): Self = StObject.set(x, "bandIds", js.Array(value :_*))
+    inline def setBandIdsVarargs(value: Double*): Self = StObject.set(x, "bandIds", js.Array(value :_*))
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setRenderer(
+    inline def setRenderer(
       value: ClassBreaksRendererProperties | UniqueValueRendererProperties | RasterStretchRendererProperties | RasterShadedReliefRendererProperties | RasterColormapRendererProperties
     ): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

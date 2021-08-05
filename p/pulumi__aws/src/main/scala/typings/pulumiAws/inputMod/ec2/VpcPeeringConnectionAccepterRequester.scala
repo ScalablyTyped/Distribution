@@ -27,31 +27,23 @@ trait VpcPeeringConnectionAccepterRequester extends StObject {
 }
 object VpcPeeringConnectionAccepterRequester {
   
-  @scala.inline
-  def apply(): VpcPeeringConnectionAccepterRequester = {
+  inline def apply(): VpcPeeringConnectionAccepterRequester = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpcPeeringConnectionAccepterRequester]
   }
   
-  @scala.inline
-  implicit class VpcPeeringConnectionAccepterRequesterMutableBuilder[Self <: VpcPeeringConnectionAccepterRequester] (val x: Self) extends AnyVal {
+  extension [Self <: VpcPeeringConnectionAccepterRequester](x: Self) {
     
-    @scala.inline
-    def setAllowClassicLinkToRemoteVpc(value: Input[Boolean]): Self = StObject.set(x, "allowClassicLinkToRemoteVpc", value.asInstanceOf[js.Any])
+    inline def setAllowClassicLinkToRemoteVpc(value: Input[Boolean]): Self = StObject.set(x, "allowClassicLinkToRemoteVpc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowClassicLinkToRemoteVpcUndefined: Self = StObject.set(x, "allowClassicLinkToRemoteVpc", js.undefined)
+    inline def setAllowClassicLinkToRemoteVpcUndefined: Self = StObject.set(x, "allowClassicLinkToRemoteVpc", js.undefined)
     
-    @scala.inline
-    def setAllowRemoteVpcDnsResolution(value: Input[Boolean]): Self = StObject.set(x, "allowRemoteVpcDnsResolution", value.asInstanceOf[js.Any])
+    inline def setAllowRemoteVpcDnsResolution(value: Input[Boolean]): Self = StObject.set(x, "allowRemoteVpcDnsResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowRemoteVpcDnsResolutionUndefined: Self = StObject.set(x, "allowRemoteVpcDnsResolution", js.undefined)
+    inline def setAllowRemoteVpcDnsResolutionUndefined: Self = StObject.set(x, "allowRemoteVpcDnsResolution", js.undefined)
     
-    @scala.inline
-    def setAllowVpcToRemoteClassicLink(value: Input[Boolean]): Self = StObject.set(x, "allowVpcToRemoteClassicLink", value.asInstanceOf[js.Any])
+    inline def setAllowVpcToRemoteClassicLink(value: Input[Boolean]): Self = StObject.set(x, "allowVpcToRemoteClassicLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowVpcToRemoteClassicLinkUndefined: Self = StObject.set(x, "allowVpcToRemoteClassicLink", js.undefined)
+    inline def setAllowVpcToRemoteClassicLinkUndefined: Self = StObject.set(x, "allowVpcToRemoteClassicLink", js.undefined)
   }
 }

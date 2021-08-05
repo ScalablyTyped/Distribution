@@ -18,25 +18,19 @@ trait SourceOptionsFolder extends StObject {
 }
 object SourceOptionsFolder {
   
-  @scala.inline
-  def apply(folder_id: String, owner_user_id: String): SourceOptionsFolder = {
+  inline def apply(folder_id: String, owner_user_id: String): SourceOptionsFolder = {
     val __obj = js.Dynamic.literal(folder_id = folder_id.asInstanceOf[js.Any], owner_user_id = owner_user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptionsFolder]
   }
   
-  @scala.inline
-  implicit class SourceOptionsFolderMutableBuilder[Self <: SourceOptionsFolder] (val x: Self) extends AnyVal {
+  extension [Self <: SourceOptionsFolder](x: Self) {
     
-    @scala.inline
-    def setFolder_id(value: String): Self = StObject.set(x, "folder_id", value.asInstanceOf[js.Any])
+    inline def setFolder_id(value: String): Self = StObject.set(x, "folder_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOwner_user_id(value: String): Self = StObject.set(x, "owner_user_id", value.asInstanceOf[js.Any])
+    inline def setOwner_user_id(value: String): Self = StObject.set(x, "owner_user_id", value.asInstanceOf[js.Any])
   }
 }

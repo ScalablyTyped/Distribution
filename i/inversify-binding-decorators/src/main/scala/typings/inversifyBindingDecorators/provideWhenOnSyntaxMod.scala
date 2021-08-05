@@ -21,8 +21,8 @@ object provideWhenOnSyntaxMod {
     extends StObject
        with typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideWhenOnSyntax[T] {
     
-    var _provideOnSyntax: js.Any = js.native
+    /* private */ var _provideOnSyntax: js.Any = js.native
     
-    var _provideWhenSyntax: js.Any = js.native
+    /* private */ var _provideWhenSyntax: js.Any = js.native
   }
 }

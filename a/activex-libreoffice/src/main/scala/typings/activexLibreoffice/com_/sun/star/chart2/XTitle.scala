@@ -20,8 +20,7 @@ trait XTitle
 }
 object XTitle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Text: SafeArray[XFormattedString],
     acquire: () => Unit,
     getText: () => SafeArray[XFormattedString],
@@ -33,16 +32,12 @@ object XTitle {
     __obj.asInstanceOf[XTitle]
   }
   
-  @scala.inline
-  implicit class XTitleMutableBuilder[Self <: XTitle] (val x: Self) extends AnyVal {
+  extension [Self <: XTitle](x: Self) {
     
-    @scala.inline
-    def setGetText(value: () => SafeArray[XFormattedString]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => SafeArray[XFormattedString]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetText(value: SeqEquiv[XFormattedString] => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: SeqEquiv[XFormattedString] => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setText(value: SafeArray[XFormattedString]): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: SafeArray[XFormattedString]): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

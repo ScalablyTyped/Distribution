@@ -38,23 +38,18 @@ object mod {
   }
   object MathJaxContextValue {
     
-    @scala.inline
-    def apply(registerNode: () => Unit): MathJaxContextValue = {
+    inline def apply(registerNode: () => Unit): MathJaxContextValue = {
       val __obj = js.Dynamic.literal(registerNode = js.Any.fromFunction0(registerNode))
       __obj.asInstanceOf[MathJaxContextValue]
     }
     
-    @scala.inline
-    implicit class MathJaxContextValueMutableBuilder[Self <: MathJaxContextValue] (val x: Self) extends AnyVal {
+    extension [Self <: MathJaxContextValue](x: Self) {
       
-      @scala.inline
-      def setMathJax(value: js.Object): Self = StObject.set(x, "MathJax", value.asInstanceOf[js.Any])
+      inline def setMathJax(value: js.Object): Self = StObject.set(x, "MathJax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathJaxUndefined: Self = StObject.set(x, "MathJax", js.undefined)
+      inline def setMathJaxUndefined: Self = StObject.set(x, "MathJax", js.undefined)
       
-      @scala.inline
-      def setRegisterNode(value: () => Unit): Self = StObject.set(x, "registerNode", js.Any.fromFunction0(value))
+      inline def setRegisterNode(value: () => Unit): Self = StObject.set(x, "registerNode", js.Any.fromFunction0(value))
     }
   }
 }

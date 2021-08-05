@@ -15,19 +15,15 @@ trait AudioGraphConnection extends StObject {
 }
 object AudioGraphConnection {
   
-  @scala.inline
-  def apply(destination: IAudioNode, gain: Double): AudioGraphConnection = {
+  inline def apply(destination: IAudioNode, gain: Double): AudioGraphConnection = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], gain = gain.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioGraphConnection]
   }
   
-  @scala.inline
-  implicit class AudioGraphConnectionMutableBuilder[Self <: AudioGraphConnection] (val x: Self) extends AnyVal {
+  extension [Self <: AudioGraphConnection](x: Self) {
     
-    @scala.inline
-    def setDestination(value: IAudioNode): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: IAudioNode): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
+    inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
   }
 }

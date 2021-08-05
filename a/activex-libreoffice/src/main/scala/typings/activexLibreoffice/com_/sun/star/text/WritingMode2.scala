@@ -21,22 +21,16 @@ object WritingMode2 {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CONTEXT: `4` = 4.asInstanceOf[`4`]
+    inline def CONTEXT: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def LR_TB: `0` = 0.asInstanceOf[`0`]
+    inline def LR_TB: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PAGE: `4` = 4.asInstanceOf[`4`]
+    inline def PAGE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def RL_TB: `1` = 1.asInstanceOf[`1`]
+    inline def RL_TB: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def TB_LR: `3` = 3.asInstanceOf[`3`]
+    inline def TB_LR: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def TB_RL: `2` = 2.asInstanceOf[`2`]
+    inline def TB_RL: `2` = 2.asInstanceOf[`2`]
   }
 }

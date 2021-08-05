@@ -50,37 +50,27 @@ trait PlusShareAuthOptions extends StObject {
 }
 object PlusShareAuthOptions {
   
-  @scala.inline
-  def apply(): PlusShareAuthOptions = {
+  inline def apply(): PlusShareAuthOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusShareAuthOptions]
   }
   
-  @scala.inline
-  implicit class PlusShareAuthOptionsMutableBuilder[Self <: PlusShareAuthOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusShareAuthOptions](x: Self) {
     
-    @scala.inline
-    def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
+    inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
+    inline def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
-    @scala.inline
-    def setAppkey(value: String): Self = StObject.set(x, "appkey", value.asInstanceOf[js.Any])
+    inline def setAppkey(value: String): Self = StObject.set(x, "appkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppkeyUndefined: Self = StObject.set(x, "appkey", js.undefined)
+    inline def setAppkeyUndefined: Self = StObject.set(x, "appkey", js.undefined)
     
-    @scala.inline
-    def setAppsecret(value: String): Self = StObject.set(x, "appsecret", value.asInstanceOf[js.Any])
+    inline def setAppsecret(value: String): Self = StObject.set(x, "appsecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsecretUndefined: Self = StObject.set(x, "appsecret", js.undefined)
+    inline def setAppsecretUndefined: Self = StObject.set(x, "appsecret", js.undefined)
     
-    @scala.inline
-    def setRedirect_url(value: String): Self = StObject.set(x, "redirect_url", value.asInstanceOf[js.Any])
+    inline def setRedirect_url(value: String): Self = StObject.set(x, "redirect_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect_urlUndefined: Self = StObject.set(x, "redirect_url", js.undefined)
+    inline def setRedirect_urlUndefined: Self = StObject.set(x, "redirect_url", js.undefined)
   }
 }

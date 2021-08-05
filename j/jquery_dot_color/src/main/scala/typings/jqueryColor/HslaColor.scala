@@ -16,37 +16,27 @@ trait HslaColor extends StObject {
 }
 object HslaColor {
   
-  @scala.inline
-  def apply(): HslaColor = {
+  inline def apply(): HslaColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HslaColor]
   }
   
-  @scala.inline
-  implicit class HslaColorMutableBuilder[Self <: HslaColor] (val x: Self) extends AnyVal {
+  extension [Self <: HslaColor](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+    inline def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
+    inline def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
     
-    @scala.inline
-    def setLightness(value: Double): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
+    inline def setLightness(value: Double): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
+    inline def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
     
-    @scala.inline
-    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+    inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+    inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
   }
 }

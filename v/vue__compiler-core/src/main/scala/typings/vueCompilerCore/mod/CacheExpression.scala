@@ -21,26 +21,20 @@ trait CacheExpression
 }
 object CacheExpression {
   
-  @scala.inline
-  def apply(index: Double, isVNode: Boolean, loc: SourceLocation, value: JSChildNode): CacheExpression = {
+  inline def apply(index: Double, isVNode: Boolean, loc: SourceLocation, value: JSChildNode): CacheExpression = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isVNode = isVNode.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(20)
     __obj.asInstanceOf[CacheExpression]
   }
   
-  @scala.inline
-  implicit class CacheExpressionMutableBuilder[Self <: CacheExpression] (val x: Self) extends AnyVal {
+  extension [Self <: CacheExpression](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVNode(value: Boolean): Self = StObject.set(x, "isVNode", value.asInstanceOf[js.Any])
+    inline def setIsVNode(value: Boolean): Self = StObject.set(x, "isVNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `20`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `20`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: JSChildNode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: JSChildNode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

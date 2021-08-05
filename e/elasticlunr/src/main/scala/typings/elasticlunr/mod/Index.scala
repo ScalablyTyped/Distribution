@@ -78,6 +78,5 @@ object Index {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def load[T](serialisedData: SerialisedIndexData[T]): Index[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[Index[T]]
+  inline def load[T](serialisedData: SerialisedIndexData[T]): Index[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[Index[T]]
 }

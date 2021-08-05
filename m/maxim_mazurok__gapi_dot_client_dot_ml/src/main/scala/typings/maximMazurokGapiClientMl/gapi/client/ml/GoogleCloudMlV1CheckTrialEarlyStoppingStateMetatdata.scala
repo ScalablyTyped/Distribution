@@ -17,31 +17,23 @@ trait GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata extends StObject {
 }
 object GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata = {
+  inline def apply(): GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdataMutableBuilder[Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateMetatdata](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setStudy(value: String): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
+    inline def setStudy(value: String): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudyUndefined: Self = StObject.set(x, "study", js.undefined)
+    inline def setStudyUndefined: Self = StObject.set(x, "study", js.undefined)
     
-    @scala.inline
-    def setTrial(value: String): Self = StObject.set(x, "trial", value.asInstanceOf[js.Any])
+    inline def setTrial(value: String): Self = StObject.set(x, "trial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialUndefined: Self = StObject.set(x, "trial", js.undefined)
+    inline def setTrialUndefined: Self = StObject.set(x, "trial", js.undefined)
   }
 }

@@ -57,103 +57,71 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(): Filter = {
+  inline def apply(): Filter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAdvancedDetails(value: CaseSensitive): Self = StObject.set(x, "advancedDetails", value.asInstanceOf[js.Any])
+    inline def setAdvancedDetails(value: CaseSensitive): Self = StObject.set(x, "advancedDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvancedDetailsUndefined: Self = StObject.set(x, "advancedDetails", js.undefined)
+    inline def setAdvancedDetailsUndefined: Self = StObject.set(x, "advancedDetails", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setExcludeDetails(value: FilterExpression): Self = StObject.set(x, "excludeDetails", value.asInstanceOf[js.Any])
+    inline def setExcludeDetails(value: FilterExpression): Self = StObject.set(x, "excludeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDetailsUndefined: Self = StObject.set(x, "excludeDetails", js.undefined)
+    inline def setExcludeDetailsUndefined: Self = StObject.set(x, "excludeDetails", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIncludeDetails(value: FilterExpression): Self = StObject.set(x, "includeDetails", value.asInstanceOf[js.Any])
+    inline def setIncludeDetails(value: FilterExpression): Self = StObject.set(x, "includeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDetailsUndefined: Self = StObject.set(x, "includeDetails", js.undefined)
+    inline def setIncludeDetailsUndefined: Self = StObject.set(x, "includeDetails", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLowercaseDetails(value: Field): Self = StObject.set(x, "lowercaseDetails", value.asInstanceOf[js.Any])
+    inline def setLowercaseDetails(value: Field): Self = StObject.set(x, "lowercaseDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowercaseDetailsUndefined: Self = StObject.set(x, "lowercaseDetails", js.undefined)
+    inline def setLowercaseDetailsUndefined: Self = StObject.set(x, "lowercaseDetails", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentLink(value: Href): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
+    inline def setParentLink(value: Href): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
+    inline def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
     
-    @scala.inline
-    def setSearchAndReplaceDetails(value: FieldIndex): Self = StObject.set(x, "searchAndReplaceDetails", value.asInstanceOf[js.Any])
+    inline def setSearchAndReplaceDetails(value: FieldIndex): Self = StObject.set(x, "searchAndReplaceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchAndReplaceDetailsUndefined: Self = StObject.set(x, "searchAndReplaceDetails", js.undefined)
+    inline def setSearchAndReplaceDetailsUndefined: Self = StObject.set(x, "searchAndReplaceDetails", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setUppercaseDetails(value: Field): Self = StObject.set(x, "uppercaseDetails", value.asInstanceOf[js.Any])
+    inline def setUppercaseDetails(value: Field): Self = StObject.set(x, "uppercaseDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUppercaseDetailsUndefined: Self = StObject.set(x, "uppercaseDetails", js.undefined)
+    inline def setUppercaseDetailsUndefined: Self = StObject.set(x, "uppercaseDetails", js.undefined)
   }
 }

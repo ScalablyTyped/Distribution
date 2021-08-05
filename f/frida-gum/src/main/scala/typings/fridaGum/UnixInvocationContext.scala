@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object UnixInvocationContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     context: CpuContext,
     depth: Double,
     errno: Double,
@@ -28,10 +27,8 @@ object UnixInvocationContext {
     __obj.asInstanceOf[UnixInvocationContext]
   }
   
-  @scala.inline
-  implicit class UnixInvocationContextMutableBuilder[Self <: UnixInvocationContext] (val x: Self) extends AnyVal {
+  extension [Self <: UnixInvocationContext](x: Self) {
     
-    @scala.inline
-    def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
+    inline def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
   }
 }

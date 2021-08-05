@@ -16,17 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Import_ {
   
-  @scala.inline
-  def apply(): Import_ = {
+  inline def apply(): Import_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("Import")
     __obj.asInstanceOf[Import_]
   }
   
-  @scala.inline
-  implicit class Import_MutableBuilder[Self <: Import_] (val x: Self) extends AnyVal {
+  extension [Self <: Import_](x: Self) {
     
-    @scala.inline
-    def setType(value: Import): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Import): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

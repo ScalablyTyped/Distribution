@@ -14,16 +14,13 @@ trait GetScreenBrightnessOptions
 }
 object GetScreenBrightnessOptions {
   
-  @scala.inline
-  def apply(success: Double => Unit): GetScreenBrightnessOptions = {
+  inline def apply(success: Double => Unit): GetScreenBrightnessOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetScreenBrightnessOptions]
   }
   
-  @scala.inline
-  implicit class GetScreenBrightnessOptionsMutableBuilder[Self <: GetScreenBrightnessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetScreenBrightnessOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Double => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Double => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

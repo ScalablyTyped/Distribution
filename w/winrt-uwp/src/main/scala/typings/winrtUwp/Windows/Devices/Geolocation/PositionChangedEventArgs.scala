@@ -12,16 +12,13 @@ trait PositionChangedEventArgs extends StObject {
 }
 object PositionChangedEventArgs {
   
-  @scala.inline
-  def apply(position: Geoposition): PositionChangedEventArgs = {
+  inline def apply(position: Geoposition): PositionChangedEventArgs = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class PositionChangedEventArgsMutableBuilder[Self <: PositionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PositionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Geoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Geoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ object TextContentAnchorType {
     *
     * <p>The size of the object influences the height of the text line.</p>
     */
-  @scala.inline
-  def AS_CHARACTER: `1` = 1.asInstanceOf[`1`]
+  inline def AS_CHARACTER: `1` = 1.asInstanceOf[`1`]
   
   /**
     * The object is anchored to a character.
@@ -37,22 +36,18 @@ object TextContentAnchorType {
     *
     * </p>
     */
-  @scala.inline
-  def AT_CHARACTER: `4` = 4.asInstanceOf[`4`]
+  inline def AT_CHARACTER: `4` = 4.asInstanceOf[`4`]
   
   /** The object is anchored to a text frame. */
-  @scala.inline
-  def AT_FRAME: `3` = 3.asInstanceOf[`3`]
+  inline def AT_FRAME: `3` = 3.asInstanceOf[`3`]
   
   /**
     * The object is anchored to the page.
     *
     * <p>The position does not change if the content of the document is changed.</p>
     */
-  @scala.inline
-  def AT_PAGE: `2` = 2.asInstanceOf[`2`]
+  inline def AT_PAGE: `2` = 2.asInstanceOf[`2`]
   
   /** The anchor of the object is set at the top left position of the paragraph. */
-  @scala.inline
-  def AT_PARAGRAPH: `0` = 0.asInstanceOf[`0`]
+  inline def AT_PARAGRAPH: `0` = 0.asInstanceOf[`0`]
 }

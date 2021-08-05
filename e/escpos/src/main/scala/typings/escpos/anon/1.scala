@@ -32,8 +32,7 @@ trait `1` extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply(): `1` = {
+  inline def apply(): `1` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("1")("\u0000")
     __obj.updateDynamic("2")("\u0001")
@@ -46,31 +45,22 @@ object `1` {
     __obj.asInstanceOf[`1`]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+  extension [Self <: `1`](x: Self) {
     
-    @scala.inline
-    def set1(value: Null): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: Null): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2(value: Startofheading): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: Startofheading): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set3(value: Startoftext): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+    inline def set3(value: Startoftext): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set4(value: Endoftext): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+    inline def set4(value: Endoftext): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set5(value: Endoftransmission): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+    inline def set5(value: Endoftransmission): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set6(value: Enquiry): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+    inline def set6(value: Enquiry): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set7(value: Acknowledge): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+    inline def set7(value: Acknowledge): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set8(value: Bell): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+    inline def set8(value: Bell): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
   }
 }

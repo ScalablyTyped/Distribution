@@ -8,16 +8,13 @@ object koaJoiRouterStrings {
   
   @js.native
   sealed trait form extends StObject
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
   sealed trait json extends StObject
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait multipart extends StObject
-  @scala.inline
-  def multipart: multipart = "multipart".asInstanceOf[multipart]
+  inline def multipart: multipart = "multipart".asInstanceOf[multipart]
 }

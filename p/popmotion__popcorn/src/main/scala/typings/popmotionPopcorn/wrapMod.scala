@@ -10,8 +10,6 @@ object wrapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(min: Double, max: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def default(min: Double, max: Double, v: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(min: Double, max: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(min: Double, max: Double, v: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

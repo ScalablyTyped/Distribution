@@ -24,8 +24,7 @@ object accountEditProfileOptionsMod {
   }
   object AccountEditProfileOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       biography: String,
       email: String,
       external_url: String,
@@ -38,29 +37,21 @@ object accountEditProfileOptionsMod {
       __obj.asInstanceOf[AccountEditProfileOptions]
     }
     
-    @scala.inline
-    implicit class AccountEditProfileOptionsMutableBuilder[Self <: AccountEditProfileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AccountEditProfileOptions](x: Self) {
       
-      @scala.inline
-      def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
+      inline def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
+      inline def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+      inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+      inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+      inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

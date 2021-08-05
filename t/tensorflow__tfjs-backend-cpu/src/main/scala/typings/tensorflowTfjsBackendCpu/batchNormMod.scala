@@ -13,8 +13,7 @@ object batchNormMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def batchNorm(args: BackendInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNorm")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def batchNorm(args: BackendInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNorm")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/BatchNorm", "batchNormConfig")
   @js.native

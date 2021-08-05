@@ -14,28 +14,21 @@ trait ListPretargetingConfigsResponse extends StObject {
 }
 object ListPretargetingConfigsResponse {
   
-  @scala.inline
-  def apply(): ListPretargetingConfigsResponse = {
+  inline def apply(): ListPretargetingConfigsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPretargetingConfigsResponse]
   }
   
-  @scala.inline
-  implicit class ListPretargetingConfigsResponseMutableBuilder[Self <: ListPretargetingConfigsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPretargetingConfigsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPretargetingConfigs(value: js.Array[PretargetingConfig]): Self = StObject.set(x, "pretargetingConfigs", value.asInstanceOf[js.Any])
+    inline def setPretargetingConfigs(value: js.Array[PretargetingConfig]): Self = StObject.set(x, "pretargetingConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPretargetingConfigsUndefined: Self = StObject.set(x, "pretargetingConfigs", js.undefined)
+    inline def setPretargetingConfigsUndefined: Self = StObject.set(x, "pretargetingConfigs", js.undefined)
     
-    @scala.inline
-    def setPretargetingConfigsVarargs(value: PretargetingConfig*): Self = StObject.set(x, "pretargetingConfigs", js.Array(value :_*))
+    inline def setPretargetingConfigsVarargs(value: PretargetingConfig*): Self = StObject.set(x, "pretargetingConfigs", js.Array(value :_*))
   }
 }

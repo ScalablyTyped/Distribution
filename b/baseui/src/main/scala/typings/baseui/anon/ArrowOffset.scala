@@ -34,8 +34,7 @@ trait ArrowOffset extends StObject {
 }
 object ArrowOffset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrowOffset: Left,
     placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top,
     popoverOffset: Left
@@ -44,27 +43,20 @@ object ArrowOffset {
     __obj.asInstanceOf[ArrowOffset]
   }
   
-  @scala.inline
-  implicit class ArrowOffsetMutableBuilder[Self <: ArrowOffset] (val x: Self) extends AnyVal {
+  extension [Self <: ArrowOffset](x: Self) {
     
-    @scala.inline
-    def setArrowOffset(value: Left): Self = StObject.set(x, "arrowOffset", value.asInstanceOf[js.Any])
+    inline def setArrowOffset(value: Left): Self = StObject.set(x, "arrowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAnimating(value: `false`): Self = StObject.set(x, "isAnimating", value.asInstanceOf[js.Any])
+    inline def setIsAnimating(value: `false`): Self = StObject.set(x, "isAnimating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLayerMounted(value: `false`): Self = StObject.set(x, "isLayerMounted", value.asInstanceOf[js.Any])
+    inline def setIsLayerMounted(value: `false`): Self = StObject.set(x, "isLayerMounted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMounted(value: `false`): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
+    inline def setIsMounted(value: `false`): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacement(
+    inline def setPlacement(
       value: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
     ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopoverOffset(value: Left): Self = StObject.set(x, "popoverOffset", value.asInstanceOf[js.Any])
+    inline def setPopoverOffset(value: Left): Self = StObject.set(x, "popoverOffset", value.asInstanceOf[js.Any])
   }
 }

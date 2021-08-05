@@ -26,22 +26,17 @@ trait RequestSettings extends StObject {
 }
 object RequestSettings {
   
-  @scala.inline
-  def apply(maxCommandCount: Double, pendingPeriod: Double, responseWaitingTime: Double): RequestSettings = {
+  inline def apply(maxCommandCount: Double, pendingPeriod: Double, responseWaitingTime: Double): RequestSettings = {
     val __obj = js.Dynamic.literal(maxCommandCount = maxCommandCount.asInstanceOf[js.Any], pendingPeriod = pendingPeriod.asInstanceOf[js.Any], responseWaitingTime = responseWaitingTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSettings]
   }
   
-  @scala.inline
-  implicit class RequestSettingsMutableBuilder[Self <: RequestSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSettings](x: Self) {
     
-    @scala.inline
-    def setMaxCommandCount(value: Double): Self = StObject.set(x, "maxCommandCount", value.asInstanceOf[js.Any])
+    inline def setMaxCommandCount(value: Double): Self = StObject.set(x, "maxCommandCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingPeriod(value: Double): Self = StObject.set(x, "pendingPeriod", value.asInstanceOf[js.Any])
+    inline def setPendingPeriod(value: Double): Self = StObject.set(x, "pendingPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseWaitingTime(value: Double): Self = StObject.set(x, "responseWaitingTime", value.asInstanceOf[js.Any])
+    inline def setResponseWaitingTime(value: Double): Self = StObject.set(x, "responseWaitingTime", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait SchemaMedia extends StObject {
 }
 object SchemaMedia {
   
-  @scala.inline
-  def apply(): SchemaMedia = {
+  inline def apply(): SchemaMedia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMedia]
   }
   
-  @scala.inline
-  implicit class SchemaMediaMutableBuilder[Self <: SchemaMedia] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMedia](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

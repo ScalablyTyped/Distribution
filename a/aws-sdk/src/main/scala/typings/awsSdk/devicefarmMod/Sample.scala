@@ -23,31 +23,23 @@ trait Sample extends StObject {
 }
 object Sample {
   
-  @scala.inline
-  def apply(): Sample = {
+  inline def apply(): Sample = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sample]
   }
   
-  @scala.inline
-  implicit class SampleMutableBuilder[Self <: Sample] (val x: Self) extends AnyVal {
+  extension [Self <: Sample](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setType(value: SampleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SampleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

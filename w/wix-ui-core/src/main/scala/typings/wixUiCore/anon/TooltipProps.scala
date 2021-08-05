@@ -12,25 +12,19 @@ trait TooltipProps extends StObject {
 }
 object TooltipProps {
   
-  @scala.inline
-  def apply(): TooltipProps = {
+  inline def apply(): TooltipProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TooltipProps]
   }
   
-  @scala.inline
-  implicit class TooltipPropsMutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipProps](x: Self) {
     
-    @scala.inline
-    def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+    inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
+    inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
     
-    @scala.inline
-    def setTooltipProps(value: js.Object): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
+    inline def setTooltipProps(value: js.Object): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
+    inline def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
   }
 }

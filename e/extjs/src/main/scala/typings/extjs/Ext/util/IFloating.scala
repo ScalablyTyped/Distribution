@@ -56,73 +56,51 @@ trait IFloating
 }
 object IFloating {
   
-  @scala.inline
-  def apply(): IFloating = {
+  inline def apply(): IFloating = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFloating]
   }
   
-  @scala.inline
-  implicit class IFloatingMutableBuilder[Self <: IFloating] (val x: Self) extends AnyVal {
+  extension [Self <: IFloating](x: Self) {
     
-    @scala.inline
-    def setCenter(value: () => IComponent): Self = StObject.set(x, "center", js.Any.fromFunction0(value))
+    inline def setCenter(value: () => IComponent): Self = StObject.set(x, "center", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
+    inline def setConstrain(value: Boolean): Self = StObject.set(x, "constrain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
+    inline def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
     
-    @scala.inline
-    def setDoConstrain(value: /* constrainTo */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "doConstrain", js.Any.fromFunction1(value))
+    inline def setDoConstrain(value: /* constrainTo */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "doConstrain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoConstrainUndefined: Self = StObject.set(x, "doConstrain", js.undefined)
+    inline def setDoConstrainUndefined: Self = StObject.set(x, "doConstrain", js.undefined)
     
-    @scala.inline
-    def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setFocusOnToFront(value: Boolean): Self = StObject.set(x, "focusOnToFront", value.asInstanceOf[js.Any])
+    inline def setFocusOnToFront(value: Boolean): Self = StObject.set(x, "focusOnToFront", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusOnToFrontUndefined: Self = StObject.set(x, "focusOnToFront", js.undefined)
+    inline def setFocusOnToFrontUndefined: Self = StObject.set(x, "focusOnToFront", js.undefined)
     
-    @scala.inline
-    def setSetActive(value: (/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent]) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction2(value))
+    inline def setSetActive(value: (/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent]) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetActiveUndefined: Self = StObject.set(x, "setActive", js.undefined)
+    inline def setSetActiveUndefined: Self = StObject.set(x, "setActive", js.undefined)
     
-    @scala.inline
-    def setShadow(value: js.Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: js.Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    inline def setShadowOffset(value: Double): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
+    inline def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    @scala.inline
-    def setToBack(value: () => IComponent): Self = StObject.set(x, "toBack", js.Any.fromFunction0(value))
+    inline def setToBack(value: () => IComponent): Self = StObject.set(x, "toBack", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToBackUndefined: Self = StObject.set(x, "toBack", js.undefined)
+    inline def setToBackUndefined: Self = StObject.set(x, "toBack", js.undefined)
     
-    @scala.inline
-    def setToFront(value: /* preventFocus */ js.UndefOr[Boolean] => IComponent): Self = StObject.set(x, "toFront", js.Any.fromFunction1(value))
+    inline def setToFront(value: /* preventFocus */ js.UndefOr[Boolean] => IComponent): Self = StObject.set(x, "toFront", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToFrontUndefined: Self = StObject.set(x, "toFront", js.undefined)
+    inline def setToFrontUndefined: Self = StObject.set(x, "toFront", js.undefined)
   }
 }

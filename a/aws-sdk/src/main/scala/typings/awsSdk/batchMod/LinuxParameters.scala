@@ -38,55 +38,39 @@ trait LinuxParameters extends StObject {
 }
 object LinuxParameters {
   
-  @scala.inline
-  def apply(): LinuxParameters = {
+  inline def apply(): LinuxParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinuxParameters]
   }
   
-  @scala.inline
-  implicit class LinuxParametersMutableBuilder[Self <: LinuxParameters] (val x: Self) extends AnyVal {
+  extension [Self <: LinuxParameters](x: Self) {
     
-    @scala.inline
-    def setDevices(value: DevicesList): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: DevicesList): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
-    @scala.inline
-    def setInitProcessEnabled(value: Boolean): Self = StObject.set(x, "initProcessEnabled", value.asInstanceOf[js.Any])
+    inline def setInitProcessEnabled(value: Boolean): Self = StObject.set(x, "initProcessEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitProcessEnabledUndefined: Self = StObject.set(x, "initProcessEnabled", js.undefined)
+    inline def setInitProcessEnabledUndefined: Self = StObject.set(x, "initProcessEnabled", js.undefined)
     
-    @scala.inline
-    def setMaxSwap(value: Integer): Self = StObject.set(x, "maxSwap", value.asInstanceOf[js.Any])
+    inline def setMaxSwap(value: Integer): Self = StObject.set(x, "maxSwap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSwapUndefined: Self = StObject.set(x, "maxSwap", js.undefined)
+    inline def setMaxSwapUndefined: Self = StObject.set(x, "maxSwap", js.undefined)
     
-    @scala.inline
-    def setSharedMemorySize(value: Integer): Self = StObject.set(x, "sharedMemorySize", value.asInstanceOf[js.Any])
+    inline def setSharedMemorySize(value: Integer): Self = StObject.set(x, "sharedMemorySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedMemorySizeUndefined: Self = StObject.set(x, "sharedMemorySize", js.undefined)
+    inline def setSharedMemorySizeUndefined: Self = StObject.set(x, "sharedMemorySize", js.undefined)
     
-    @scala.inline
-    def setSwappiness(value: Integer): Self = StObject.set(x, "swappiness", value.asInstanceOf[js.Any])
+    inline def setSwappiness(value: Integer): Self = StObject.set(x, "swappiness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwappinessUndefined: Self = StObject.set(x, "swappiness", js.undefined)
+    inline def setSwappinessUndefined: Self = StObject.set(x, "swappiness", js.undefined)
     
-    @scala.inline
-    def setTmpfs(value: TmpfsList): Self = StObject.set(x, "tmpfs", value.asInstanceOf[js.Any])
+    inline def setTmpfs(value: TmpfsList): Self = StObject.set(x, "tmpfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTmpfsUndefined: Self = StObject.set(x, "tmpfs", js.undefined)
+    inline def setTmpfsUndefined: Self = StObject.set(x, "tmpfs", js.undefined)
     
-    @scala.inline
-    def setTmpfsVarargs(value: Tmpfs*): Self = StObject.set(x, "tmpfs", js.Array(value :_*))
+    inline def setTmpfsVarargs(value: Tmpfs*): Self = StObject.set(x, "tmpfs", js.Array(value :_*))
   }
 }

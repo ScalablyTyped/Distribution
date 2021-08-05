@@ -13,19 +13,15 @@ trait OmaSettingDateTime
 }
 object OmaSettingDateTime {
   
-  @scala.inline
-  def apply(): OmaSettingDateTime = {
+  inline def apply(): OmaSettingDateTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmaSettingDateTime]
   }
   
-  @scala.inline
-  implicit class OmaSettingDateTimeMutableBuilder[Self <: OmaSettingDateTime] (val x: Self) extends AnyVal {
+  extension [Self <: OmaSettingDateTime](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -20,30 +20,21 @@ object tracingMod {
   @js.native
   val _SubscriberRef: IfSchedulerTracing[SubscriberRef, Null] = js.native
   
-  @scala.inline
-  def unstableClear[T](callback: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_clear")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def unstableClear[T](callback: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_clear")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def unstableGetCurrent(): Set[Interaction] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_getCurrent")().asInstanceOf[Set[Interaction] | Null]
+  inline def unstableGetCurrent(): Set[Interaction] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_getCurrent")().asInstanceOf[Set[Interaction] | Null]
   
-  @scala.inline
-  def unstableGetThreadID(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_getThreadID")().asInstanceOf[Double]
+  inline def unstableGetThreadID(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_getThreadID")().asInstanceOf[Double]
   
-  @scala.inline
-  def unstableSubscribe(subscriber: Subscriber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_subscribe")(subscriber.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unstableSubscribe(subscriber: Subscriber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_subscribe")(subscriber.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def unstableTrace[T](name: String, timestamp: Double, callback: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_trace")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def unstableTrace[T](name: String, timestamp: Double, callback: js.Function0[T], threadID: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_trace")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], threadID.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def unstableTrace[T](name: String, timestamp: Double, callback: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_trace")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def unstableTrace[T](name: String, timestamp: Double, callback: js.Function0[T], threadID: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_trace")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], threadID.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def unstableUnsubscribe(subscriber: Subscriber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_unsubscribe")(subscriber.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unstableUnsubscribe(subscriber: Subscriber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_unsubscribe")(subscriber.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T): IfSchedulerTracing[WrappedFunction[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any]).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
-  @scala.inline
-  def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, threadID: Double): IfSchedulerTracing[WrappedFunction[T], T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any], threadID.asInstanceOf[js.Any])).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
+  inline def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T): IfSchedulerTracing[WrappedFunction[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any]).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
+  inline def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, threadID: Double): IfSchedulerTracing[WrappedFunction[T], T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any], threadID.asInstanceOf[js.Any])).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
   
   trait Build extends StObject
   
@@ -68,26 +59,20 @@ object tracingMod {
   }
   object Interaction {
     
-    @scala.inline
-    def apply(__count: Double, id: Double, name: String, timestamp: Double): Interaction = {
+    inline def apply(__count: Double, id: Double, name: String, timestamp: Double): Interaction = {
       val __obj = js.Dynamic.literal(__count = __count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Interaction]
     }
     
-    @scala.inline
-    implicit class InteractionMutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
+    extension [Self <: Interaction](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__count(value: Double): Self = StObject.set(x, "__count", value.asInstanceOf[js.Any])
+      inline def set__count(value: Double): Self = StObject.set(x, "__count", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,17 +82,14 @@ object tracingMod {
   }
   object InteractionsRef {
     
-    @scala.inline
-    def apply(current: Set[Interaction]): InteractionsRef = {
+    inline def apply(current: Set[Interaction]): InteractionsRef = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
       __obj.asInstanceOf[InteractionsRef]
     }
     
-    @scala.inline
-    implicit class InteractionsRefMutableBuilder[Self <: InteractionsRef] (val x: Self) extends AnyVal {
+    extension [Self <: InteractionsRef](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Set[Interaction]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Set[Interaction]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,8 +138,7 @@ object tracingMod {
   }
   object Subscriber {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onInteractionScheduledWorkCompleted: Interaction => Unit,
       onInteractionTraced: Interaction => Unit,
       onWorkCanceled: (Set[Interaction], Double) => Unit,
@@ -169,26 +150,19 @@ object tracingMod {
       __obj.asInstanceOf[Subscriber]
     }
     
-    @scala.inline
-    implicit class SubscriberMutableBuilder[Self <: Subscriber] (val x: Self) extends AnyVal {
+    extension [Self <: Subscriber](x: Self) {
       
-      @scala.inline
-      def setOnInteractionScheduledWorkCompleted(value: Interaction => Unit): Self = StObject.set(x, "onInteractionScheduledWorkCompleted", js.Any.fromFunction1(value))
+      inline def setOnInteractionScheduledWorkCompleted(value: Interaction => Unit): Self = StObject.set(x, "onInteractionScheduledWorkCompleted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInteractionTraced(value: Interaction => Unit): Self = StObject.set(x, "onInteractionTraced", js.Any.fromFunction1(value))
+      inline def setOnInteractionTraced(value: Interaction => Unit): Self = StObject.set(x, "onInteractionTraced", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWorkCanceled(value: (Set[Interaction], Double) => Unit): Self = StObject.set(x, "onWorkCanceled", js.Any.fromFunction2(value))
+      inline def setOnWorkCanceled(value: (Set[Interaction], Double) => Unit): Self = StObject.set(x, "onWorkCanceled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnWorkScheduled(value: (Set[Interaction], Double) => Unit): Self = StObject.set(x, "onWorkScheduled", js.Any.fromFunction2(value))
+      inline def setOnWorkScheduled(value: (Set[Interaction], Double) => Unit): Self = StObject.set(x, "onWorkScheduled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnWorkStarted(value: (Set[Interaction], Double) => Unit): Self = StObject.set(x, "onWorkStarted", js.Any.fromFunction2(value))
+      inline def setOnWorkStarted(value: (Set[Interaction], Double) => Unit): Self = StObject.set(x, "onWorkStarted", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnWorkStopped(value: (Set[Interaction], Double) => Unit): Self = StObject.set(x, "onWorkStopped", js.Any.fromFunction2(value))
+      inline def setOnWorkStopped(value: (Set[Interaction], Double) => Unit): Self = StObject.set(x, "onWorkStopped", js.Any.fromFunction2(value))
     }
   }
   
@@ -198,20 +172,16 @@ object tracingMod {
   }
   object SubscriberRef {
     
-    @scala.inline
-    def apply(): SubscriberRef = {
+    inline def apply(): SubscriberRef = {
       val __obj = js.Dynamic.literal(current = null)
       __obj.asInstanceOf[SubscriberRef]
     }
     
-    @scala.inline
-    implicit class SubscriberRefMutableBuilder[Self <: SubscriberRef] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriberRef](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Subscriber): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Subscriber): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentNull: Self = StObject.set(x, "current", null)
+      inline def setCurrentNull: Self = StObject.set(x, "current", null)
     }
   }
   

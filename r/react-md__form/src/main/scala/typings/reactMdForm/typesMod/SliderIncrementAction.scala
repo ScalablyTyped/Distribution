@@ -16,20 +16,16 @@ trait SliderIncrementAction
 }
 object SliderIncrementAction {
   
-  @scala.inline
-  def apply(dragging: Boolean, max: Double, min: Double, step: Double): SliderIncrementAction = {
+  inline def apply(dragging: Boolean, max: Double, min: Double, step: Double): SliderIncrementAction = {
     val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("increment")
     __obj.asInstanceOf[SliderIncrementAction]
   }
   
-  @scala.inline
-  implicit class SliderIncrementActionMutableBuilder[Self <: SliderIncrementAction] (val x: Self) extends AnyVal {
+  extension [Self <: SliderIncrementAction](x: Self) {
     
-    @scala.inline
-    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+    inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: increment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: increment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait PrefixCls extends StObject {
 }
 object PrefixCls {
   
-  @scala.inline
-  def apply(prefixCls: String): PrefixCls = {
+  inline def apply(prefixCls: String): PrefixCls = {
     val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrefixCls]
   }
   
-  @scala.inline
-  implicit class PrefixClsMutableBuilder[Self <: PrefixCls] (val x: Self) extends AnyVal {
+  extension [Self <: PrefixCls](x: Self) {
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

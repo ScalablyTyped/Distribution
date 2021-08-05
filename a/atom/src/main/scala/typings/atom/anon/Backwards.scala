@@ -10,19 +10,15 @@ trait Backwards extends StObject {
 }
 object Backwards {
   
-  @scala.inline
-  def apply(): Backwards = {
+  inline def apply(): Backwards = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Backwards]
   }
   
-  @scala.inline
-  implicit class BackwardsMutableBuilder[Self <: Backwards] (val x: Self) extends AnyVal {
+  extension [Self <: Backwards](x: Self) {
     
-    @scala.inline
-    def setBackwards(value: Boolean): Self = StObject.set(x, "backwards", value.asInstanceOf[js.Any])
+    inline def setBackwards(value: Boolean): Self = StObject.set(x, "backwards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackwardsUndefined: Self = StObject.set(x, "backwards", js.undefined)
+    inline def setBackwardsUndefined: Self = StObject.set(x, "backwards", js.undefined)
   }
 }

@@ -14,16 +14,13 @@ trait RemoveSavedFileFailCallbackResult extends StObject {
 }
 object RemoveSavedFileFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): RemoveSavedFileFailCallbackResult = {
+  inline def apply(errMsg: String): RemoveSavedFileFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveSavedFileFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class RemoveSavedFileFailCallbackResultMutableBuilder[Self <: RemoveSavedFileFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveSavedFileFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

@@ -31,31 +31,23 @@ trait SchemaObservation extends StObject {
 }
 object SchemaObservation {
   
-  @scala.inline
-  def apply(): SchemaObservation = {
+  inline def apply(): SchemaObservation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaObservation]
   }
   
-  @scala.inline
-  implicit class SchemaObservationMutableBuilder[Self <: SchemaObservation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaObservation](x: Self) {
     
-    @scala.inline
-    def setAdvertisedId(value: SchemaAdvertisedId): Self = StObject.set(x, "advertisedId", value.asInstanceOf[js.Any])
+    inline def setAdvertisedId(value: SchemaAdvertisedId): Self = StObject.set(x, "advertisedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisedIdUndefined: Self = StObject.set(x, "advertisedId", js.undefined)
+    inline def setAdvertisedIdUndefined: Self = StObject.set(x, "advertisedId", js.undefined)
     
-    @scala.inline
-    def setTelemetry(value: String): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
+    inline def setTelemetry(value: String): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
+    inline def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
     
-    @scala.inline
-    def setTimestampMs(value: String): Self = StObject.set(x, "timestampMs", value.asInstanceOf[js.Any])
+    inline def setTimestampMs(value: String): Self = StObject.set(x, "timestampMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMsUndefined: Self = StObject.set(x, "timestampMs", js.undefined)
+    inline def setTimestampMsUndefined: Self = StObject.set(x, "timestampMs", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait Indoormap extends StObject {
 }
 object Indoormap {
   
-  @scala.inline
-  def apply(): Indoormap = {
+  inline def apply(): Indoormap = {
     val __obj = js.Dynamic.literal(indoor_map = false)
     __obj.asInstanceOf[Indoormap]
   }
   
-  @scala.inline
-  implicit class IndoormapMutableBuilder[Self <: Indoormap] (val x: Self) extends AnyVal {
+  extension [Self <: Indoormap](x: Self) {
     
-    @scala.inline
-    def setIndoor_map(value: `false`): Self = StObject.set(x, "indoor_map", value.asInstanceOf[js.Any])
+    inline def setIndoor_map(value: `false`): Self = StObject.set(x, "indoor_map", value.asInstanceOf[js.Any])
   }
 }

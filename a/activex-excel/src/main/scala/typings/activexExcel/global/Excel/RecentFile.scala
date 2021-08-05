@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.RecentFile")
 @js.native
-class RecentFile protected ()
+/* private */ class RecentFile ()
   extends StObject
      with typings.activexExcel.Excel.RecentFile {
   
@@ -20,7 +20,7 @@ class RecentFile protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.RecentFile_typekey")
   var ExcelDotRecentFile_typekey: typings.activexExcel.Excel.RecentFile = js.native
   

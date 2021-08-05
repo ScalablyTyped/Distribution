@@ -63,8 +63,7 @@ trait RDSDataSpec extends StObject {
 }
 object RDSDataSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DatabaseCredentials: RDSDatabaseCredentials,
     DatabaseInformation: RDSDatabase,
     ResourceRole: EDPResourceRole,
@@ -78,52 +77,36 @@ object RDSDataSpec {
     __obj.asInstanceOf[RDSDataSpec]
   }
   
-  @scala.inline
-  implicit class RDSDataSpecMutableBuilder[Self <: RDSDataSpec] (val x: Self) extends AnyVal {
+  extension [Self <: RDSDataSpec](x: Self) {
     
-    @scala.inline
-    def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
+    inline def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
+    inline def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
     
-    @scala.inline
-    def setDataSchema(value: DataSchema): Self = StObject.set(x, "DataSchema", value.asInstanceOf[js.Any])
+    inline def setDataSchema(value: DataSchema): Self = StObject.set(x, "DataSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSchemaUndefined: Self = StObject.set(x, "DataSchema", js.undefined)
+    inline def setDataSchemaUndefined: Self = StObject.set(x, "DataSchema", js.undefined)
     
-    @scala.inline
-    def setDataSchemaUri(value: S3Url): Self = StObject.set(x, "DataSchemaUri", value.asInstanceOf[js.Any])
+    inline def setDataSchemaUri(value: S3Url): Self = StObject.set(x, "DataSchemaUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSchemaUriUndefined: Self = StObject.set(x, "DataSchemaUri", js.undefined)
+    inline def setDataSchemaUriUndefined: Self = StObject.set(x, "DataSchemaUri", js.undefined)
     
-    @scala.inline
-    def setDatabaseCredentials(value: RDSDatabaseCredentials): Self = StObject.set(x, "DatabaseCredentials", value.asInstanceOf[js.Any])
+    inline def setDatabaseCredentials(value: RDSDatabaseCredentials): Self = StObject.set(x, "DatabaseCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseInformation(value: RDSDatabase): Self = StObject.set(x, "DatabaseInformation", value.asInstanceOf[js.Any])
+    inline def setDatabaseInformation(value: RDSDatabase): Self = StObject.set(x, "DatabaseInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRole(value: EDPResourceRole): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
+    inline def setResourceRole(value: EDPResourceRole): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3StagingLocation(value: S3Url): Self = StObject.set(x, "S3StagingLocation", value.asInstanceOf[js.Any])
+    inline def setS3StagingLocation(value: S3Url): Self = StObject.set(x, "S3StagingLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIds(value: EDPSecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: EDPSecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: EDPSecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: EDPSecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectSqlQuery(value: RDSSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
+    inline def setSelectSqlQuery(value: RDSSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRole(value: EDPServiceRole): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
+    inline def setServiceRole(value: EDPServiceRole): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetId(value: EDPSubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: EDPSubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
   }
 }

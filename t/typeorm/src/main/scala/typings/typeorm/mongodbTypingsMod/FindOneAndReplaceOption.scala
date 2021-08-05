@@ -33,43 +33,31 @@ trait FindOneAndReplaceOption extends StObject {
 }
 object FindOneAndReplaceOption {
   
-  @scala.inline
-  def apply(): FindOneAndReplaceOption = {
+  inline def apply(): FindOneAndReplaceOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindOneAndReplaceOption]
   }
   
-  @scala.inline
-  implicit class FindOneAndReplaceOptionMutableBuilder[Self <: FindOneAndReplaceOption] (val x: Self) extends AnyVal {
+  extension [Self <: FindOneAndReplaceOption](x: Self) {
     
-    @scala.inline
-    def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
+    inline def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
+    inline def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     
-    @scala.inline
-    def setProjection(value: js.Object): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: js.Object): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setReturnOriginal(value: Boolean): Self = StObject.set(x, "returnOriginal", value.asInstanceOf[js.Any])
+    inline def setReturnOriginal(value: Boolean): Self = StObject.set(x, "returnOriginal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnOriginalUndefined: Self = StObject.set(x, "returnOriginal", js.undefined)
+    inline def setReturnOriginalUndefined: Self = StObject.set(x, "returnOriginal", js.undefined)
     
-    @scala.inline
-    def setSort(value: js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+    inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+    inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

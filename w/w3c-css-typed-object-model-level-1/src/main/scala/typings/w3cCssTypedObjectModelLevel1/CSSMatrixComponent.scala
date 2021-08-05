@@ -13,16 +13,13 @@ trait CSSMatrixComponent
 }
 object CSSMatrixComponent {
   
-  @scala.inline
-  def apply(is2D: Boolean, matrix: DOMMatrix, toMatrix: () => DOMMatrix): CSSMatrixComponent = {
+  inline def apply(is2D: Boolean, matrix: DOMMatrix, toMatrix: () => DOMMatrix): CSSMatrixComponent = {
     val __obj = js.Dynamic.literal(is2D = is2D.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], toMatrix = js.Any.fromFunction0(toMatrix))
     __obj.asInstanceOf[CSSMatrixComponent]
   }
   
-  @scala.inline
-  implicit class CSSMatrixComponentMutableBuilder[Self <: CSSMatrixComponent] (val x: Self) extends AnyVal {
+  extension [Self <: CSSMatrixComponent](x: Self) {
     
-    @scala.inline
-    def setMatrix(value: DOMMatrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: DOMMatrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
   }
 }

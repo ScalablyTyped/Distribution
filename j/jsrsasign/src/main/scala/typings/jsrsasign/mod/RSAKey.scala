@@ -80,8 +80,7 @@ object RSAKey {
     * RSAKey.getHexValueArrayOfChildrenFromHex("3082...") → ["00", "3b42...", ...]
     */
   /* static member */
-  @scala.inline
-  def getHexValueArrayOfChildrenFromHex(sPEMPrivateKey: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHexValueArrayOfChildrenFromHex")(sPEMPrivateKey.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def getHexValueArrayOfChildrenFromHex(sPEMPrivateKey: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHexValueArrayOfChildrenFromHex")(sPEMPrivateKey.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     * static method to get array of field positions from hexadecimal PKCS#5 RSA private key.
@@ -91,8 +90,7 @@ object RSAKey {
     * RSAKey.getPosArrayOfChildrenFromHex("3082...") → [8, 32, ...]
     */
   /* static member */
-  @scala.inline
-  def getPosArrayOfChildrenFromHex(sPEMPrivateKey: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosArrayOfChildrenFromHex")(sPEMPrivateKey.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def getPosArrayOfChildrenFromHex(sPEMPrivateKey: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosArrayOfChildrenFromHex")(sPEMPrivateKey.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   /**
     * sign for a message string with RSA private key.
@@ -101,8 +99,7 @@ object RSAKey {
     * @return returns hexadecimal string of signature value.
     */
   /* static member */
-  @scala.inline
-  def sign(s: String, hashAlg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(s.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sign(s: String, hashAlg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(s.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * sign for a message string with RSA private key by PKCS#1 PSS signing.
@@ -118,8 +115,7 @@ object RSAKey {
     * @return returns hexadecimal string of signature value.
     */
   /* static member */
-  @scala.inline
-  def signPSS(s: String, hashAlg: String, sLen: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signPSS")(s.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any], sLen.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def signPSS(s: String, hashAlg: String, sLen: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signPSS")(s.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any], sLen.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * sign hash value of message to be signed with RSA private key.
@@ -128,8 +124,7 @@ object RSAKey {
     * @return returns hexadecimal string of signature value.
     */
   /* static member */
-  @scala.inline
-  def signWithMessageHash(sHashHex: String, hashAlg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signWithMessageHash")(sHashHex.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def signWithMessageHash(sHashHex: String, hashAlg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signWithMessageHash")(sHashHex.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * sign hash value of message with RSA private key by PKCS#1 PSS signing.
@@ -145,8 +140,7 @@ object RSAKey {
     * @return returns hexadecimal string of signature value.
     */
   /* static member */
-  @scala.inline
-  def signWithMessageHashPSS(hHash: String, hashAlg: String, sLen: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signWithMessageHashPSS")(hHash.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any], sLen.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def signWithMessageHashPSS(hHash: String, hashAlg: String, sLen: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signWithMessageHashPSS")(hHash.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any], sLen.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * verifies a sigature for a message string with RSA public key by PKCS#1 PSS sign.
@@ -163,8 +157,7 @@ object RSAKey {
     * @return returns true if valid, otherwise false
     */
   /* static member */
-  @scala.inline
-  def verifyPSS(sMsg: String, hSig: String, hashAlg: String, sLen: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPSS")(sMsg.asInstanceOf[js.Any], hSig.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any], sLen.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def verifyPSS(sMsg: String, hSig: String, hashAlg: String, sLen: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyPSS")(sMsg.asInstanceOf[js.Any], hSig.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any], sLen.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * verifies a sigature for a message string with RSA public key.
@@ -174,8 +167,7 @@ object RSAKey {
     * @return returns 1 if valid, otherwise 0
     */
   /* static member */
-  @scala.inline
-  def verifyWithMessageHash(sHashHex: String, hSig: String): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyWithMessageHash")(sHashHex.asInstanceOf[js.Any], hSig.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
+  inline def verifyWithMessageHash(sHashHex: String, hSig: String): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyWithMessageHash")(sHashHex.asInstanceOf[js.Any], hSig.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
   
   /**
     * verifies a sigature for a hash value of message string with RSA public key by PKCS#1 PSS sign.
@@ -192,6 +184,5 @@ object RSAKey {
     * @return returns true if valid, otherwise false
     */
   /* static member */
-  @scala.inline
-  def verifyWithMessageHashPSS(hHash: String, hSig: String, hashAlg: String, sLen: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyWithMessageHashPSS")(hHash.asInstanceOf[js.Any], hSig.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any], sLen.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def verifyWithMessageHashPSS(hHash: String, hSig: String, hashAlg: String, sLen: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyWithMessageHashPSS")(hHash.asInstanceOf[js.Any], hSig.asInstanceOf[js.Any], hashAlg.asInstanceOf[js.Any], sLen.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

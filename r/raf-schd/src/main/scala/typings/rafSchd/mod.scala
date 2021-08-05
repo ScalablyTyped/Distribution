@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](fn: T): Schedule[T] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Schedule[T]]
+  inline def apply[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](fn: T): Schedule[T] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Schedule[T]]
   
   @JSImport("raf-schd", JSImport.Namespace)
   @js.native

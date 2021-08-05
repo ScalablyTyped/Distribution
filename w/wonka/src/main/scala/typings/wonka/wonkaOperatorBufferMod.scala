@@ -12,6 +12,5 @@ object wonkaOperatorBufferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buffer[A](signal: Source[js.Any]): Operator[A, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(signal.asInstanceOf[js.Any]).asInstanceOf[Operator[A, js.Array[A]]]
+  inline def buffer[A](signal: Source[js.Any]): Operator[A, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(signal.asInstanceOf[js.Any]).asInstanceOf[Operator[A, js.Array[A]]]
 }

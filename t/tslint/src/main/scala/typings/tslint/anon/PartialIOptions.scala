@@ -19,43 +19,31 @@ trait PartialIOptions extends StObject {
 }
 object PartialIOptions {
   
-  @scala.inline
-  def apply(): PartialIOptions = {
+  inline def apply(): PartialIOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialIOptions]
   }
   
-  @scala.inline
-  implicit class PartialIOptionsMutableBuilder[Self <: PartialIOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialIOptions](x: Self) {
     
-    @scala.inline
-    def setDisabledIntervals(value: js.Array[IDisabledInterval]): Self = StObject.set(x, "disabledIntervals", value.asInstanceOf[js.Any])
+    inline def setDisabledIntervals(value: js.Array[IDisabledInterval]): Self = StObject.set(x, "disabledIntervals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledIntervalsUndefined: Self = StObject.set(x, "disabledIntervals", js.undefined)
+    inline def setDisabledIntervalsUndefined: Self = StObject.set(x, "disabledIntervals", js.undefined)
     
-    @scala.inline
-    def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value :_*))
+    inline def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value :_*))
     
-    @scala.inline
-    def setRuleArguments(value: js.Array[js.Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
+    inline def setRuleArguments(value: js.Array[js.Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleArgumentsUndefined: Self = StObject.set(x, "ruleArguments", js.undefined)
+    inline def setRuleArgumentsUndefined: Self = StObject.set(x, "ruleArguments", js.undefined)
     
-    @scala.inline
-    def setRuleArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "ruleArguments", js.Array(value :_*))
+    inline def setRuleArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "ruleArguments", js.Array(value :_*))
     
-    @scala.inline
-    def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
+    inline def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
     
-    @scala.inline
-    def setRuleSeverity(value: RuleSeverity): Self = StObject.set(x, "ruleSeverity", value.asInstanceOf[js.Any])
+    inline def setRuleSeverity(value: RuleSeverity): Self = StObject.set(x, "ruleSeverity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSeverityUndefined: Self = StObject.set(x, "ruleSeverity", js.undefined)
+    inline def setRuleSeverityUndefined: Self = StObject.set(x, "ruleSeverity", js.undefined)
   }
 }

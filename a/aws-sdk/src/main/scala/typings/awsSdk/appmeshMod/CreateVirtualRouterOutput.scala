@@ -13,16 +13,13 @@ trait CreateVirtualRouterOutput extends StObject {
 }
 object CreateVirtualRouterOutput {
   
-  @scala.inline
-  def apply(virtualRouter: VirtualRouterData): CreateVirtualRouterOutput = {
+  inline def apply(virtualRouter: VirtualRouterData): CreateVirtualRouterOutput = {
     val __obj = js.Dynamic.literal(virtualRouter = virtualRouter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVirtualRouterOutput]
   }
   
-  @scala.inline
-  implicit class CreateVirtualRouterOutputMutableBuilder[Self <: CreateVirtualRouterOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVirtualRouterOutput](x: Self) {
     
-    @scala.inline
-    def setVirtualRouter(value: VirtualRouterData): Self = StObject.set(x, "virtualRouter", value.asInstanceOf[js.Any])
+    inline def setVirtualRouter(value: VirtualRouterData): Self = StObject.set(x, "virtualRouter", value.asInstanceOf[js.Any])
   }
 }

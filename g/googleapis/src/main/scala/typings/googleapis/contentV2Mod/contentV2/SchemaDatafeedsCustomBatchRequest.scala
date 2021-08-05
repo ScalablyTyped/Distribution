@@ -13,22 +13,17 @@ trait SchemaDatafeedsCustomBatchRequest extends StObject {
 }
 object SchemaDatafeedsCustomBatchRequest {
   
-  @scala.inline
-  def apply(): SchemaDatafeedsCustomBatchRequest = {
+  inline def apply(): SchemaDatafeedsCustomBatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDatafeedsCustomBatchRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDatafeedsCustomBatchRequestMutableBuilder[Self <: SchemaDatafeedsCustomBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDatafeedsCustomBatchRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[SchemaDatafeedsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[SchemaDatafeedsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: SchemaDatafeedsCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaDatafeedsCustomBatchRequestEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

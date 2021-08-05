@@ -19,20 +19,16 @@ object focusTrapCalloutTypesMod {
   }
   object IFocusTrapCalloutProps {
     
-    @scala.inline
-    def apply(): IFocusTrapCalloutProps = {
+    inline def apply(): IFocusTrapCalloutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFocusTrapCalloutProps]
     }
     
-    @scala.inline
-    implicit class IFocusTrapCalloutPropsMutableBuilder[Self <: IFocusTrapCalloutProps] (val x: Self) extends AnyVal {
+    extension [Self <: IFocusTrapCalloutProps](x: Self) {
       
-      @scala.inline
-      def setFocusTrapProps(value: IFocusTrapZoneProps): Self = StObject.set(x, "focusTrapProps", value.asInstanceOf[js.Any])
+      inline def setFocusTrapProps(value: IFocusTrapZoneProps): Self = StObject.set(x, "focusTrapProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusTrapPropsUndefined: Self = StObject.set(x, "focusTrapProps", js.undefined)
+      inline def setFocusTrapPropsUndefined: Self = StObject.set(x, "focusTrapProps", js.undefined)
     }
   }
 }

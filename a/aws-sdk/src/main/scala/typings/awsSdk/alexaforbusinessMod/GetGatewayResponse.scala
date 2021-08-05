@@ -13,19 +13,15 @@ trait GetGatewayResponse extends StObject {
 }
 object GetGatewayResponse {
   
-  @scala.inline
-  def apply(): GetGatewayResponse = {
+  inline def apply(): GetGatewayResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGatewayResponse]
   }
   
-  @scala.inline
-  implicit class GetGatewayResponseMutableBuilder[Self <: GetGatewayResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetGatewayResponse](x: Self) {
     
-    @scala.inline
-    def setGateway(value: Gateway): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])
+    inline def setGateway(value: Gateway): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayUndefined: Self = StObject.set(x, "Gateway", js.undefined)
+    inline def setGatewayUndefined: Self = StObject.set(x, "Gateway", js.undefined)
   }
 }

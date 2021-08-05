@@ -10,16 +10,13 @@ trait BackgroundImage extends StObject {
 }
 object BackgroundImage {
   
-  @scala.inline
-  def apply(backgroundImage: String): BackgroundImage = {
+  inline def apply(backgroundImage: String): BackgroundImage = {
     val __obj = js.Dynamic.literal(backgroundImage = backgroundImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundImage]
   }
   
-  @scala.inline
-  implicit class BackgroundImageMutableBuilder[Self <: BackgroundImage] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundImage](x: Self) {
     
-    @scala.inline
-    def setBackgroundImage(value: String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+    inline def setBackgroundImage(value: String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
   }
 }

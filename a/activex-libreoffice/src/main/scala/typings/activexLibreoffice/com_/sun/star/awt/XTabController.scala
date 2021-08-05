@@ -47,8 +47,7 @@ trait XTabController
 }
 object XTabController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Container: XControlContainer,
     Controls: SafeArray[XControl],
     acquire: () => Unit,
@@ -68,40 +67,28 @@ object XTabController {
     __obj.asInstanceOf[XTabController]
   }
   
-  @scala.inline
-  implicit class XTabControllerMutableBuilder[Self <: XTabController] (val x: Self) extends AnyVal {
+  extension [Self <: XTabController](x: Self) {
     
-    @scala.inline
-    def setActivateFirst(value: () => Unit): Self = StObject.set(x, "activateFirst", js.Any.fromFunction0(value))
+    inline def setActivateFirst(value: () => Unit): Self = StObject.set(x, "activateFirst", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivateLast(value: () => Unit): Self = StObject.set(x, "activateLast", js.Any.fromFunction0(value))
+    inline def setActivateLast(value: () => Unit): Self = StObject.set(x, "activateLast", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivateTabOrder(value: () => Unit): Self = StObject.set(x, "activateTabOrder", js.Any.fromFunction0(value))
+    inline def setActivateTabOrder(value: () => Unit): Self = StObject.set(x, "activateTabOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAutoTabOrder(value: () => Unit): Self = StObject.set(x, "autoTabOrder", js.Any.fromFunction0(value))
+    inline def setAutoTabOrder(value: () => Unit): Self = StObject.set(x, "autoTabOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContainer(value: XControlContainer): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: XControlContainer): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControls(value: SafeArray[XControl]): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: SafeArray[XControl]): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContainer(value: () => XControlContainer): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+    inline def setGetContainer(value: () => XControlContainer): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetControls(value: () => SafeArray[XControl]): Self = StObject.set(x, "getControls", js.Any.fromFunction0(value))
+    inline def setGetControls(value: () => SafeArray[XControl]): Self = StObject.set(x, "getControls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModel(value: () => XTabControllerModel): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+    inline def setGetModel(value: () => XTabControllerModel): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContainer(value: XControlContainer => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
+    inline def setSetContainer(value: XControlContainer => Unit): Self = StObject.set(x, "setContainer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetModel(value: XTabControllerModel => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
+    inline def setSetModel(value: XTabControllerModel => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
   }
 }

@@ -90,6 +90,5 @@ class StructurePortal protected ()
 }
 object StructurePortal {
   
-  @scala.inline
-  def apply: StructurePortalConstructor = js.Dynamic.global.selectDynamic("StructurePortal").asInstanceOf[StructurePortalConstructor]
+  inline def apply: StructurePortalConstructor = js.Dynamic.global.selectDynamic("StructurePortal").asInstanceOf[StructurePortalConstructor]
 }

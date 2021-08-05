@@ -14,6 +14,6 @@ abstract class Interpolation ()
   @JSName("apply")
   override def apply(start: Double, end: Double, a: Double): Double = js.native
   
-  /* CompleteClass */
-  /* protected */ override def applyInternal(a: Double): Double = js.native
+  /* protected */ /* CompleteClass */
+  override def applyInternal(a: Double): Double = js.native
 }

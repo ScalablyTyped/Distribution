@@ -12,19 +12,15 @@ trait LinearTickOptions
 }
 object LinearTickOptions {
   
-  @scala.inline
-  def apply(): LinearTickOptions = {
+  inline def apply(): LinearTickOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinearTickOptions]
   }
   
-  @scala.inline
-  implicit class LinearTickOptionsMutableBuilder[Self <: LinearTickOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LinearTickOptions](x: Self) {
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
   }
 }

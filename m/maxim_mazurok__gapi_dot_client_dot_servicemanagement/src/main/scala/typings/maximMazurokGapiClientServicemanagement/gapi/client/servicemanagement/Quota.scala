@@ -14,31 +14,23 @@ trait Quota extends StObject {
 }
 object Quota {
   
-  @scala.inline
-  def apply(): Quota = {
+  inline def apply(): Quota = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Quota]
   }
   
-  @scala.inline
-  implicit class QuotaMutableBuilder[Self <: Quota] (val x: Self) extends AnyVal {
+  extension [Self <: Quota](x: Self) {
     
-    @scala.inline
-    def setLimits(value: js.Array[QuotaLimit]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: js.Array[QuotaLimit]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    @scala.inline
-    def setLimitsVarargs(value: QuotaLimit*): Self = StObject.set(x, "limits", js.Array(value :_*))
+    inline def setLimitsVarargs(value: QuotaLimit*): Self = StObject.set(x, "limits", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricRules(value: js.Array[MetricRule]): Self = StObject.set(x, "metricRules", value.asInstanceOf[js.Any])
+    inline def setMetricRules(value: js.Array[MetricRule]): Self = StObject.set(x, "metricRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricRulesUndefined: Self = StObject.set(x, "metricRules", js.undefined)
+    inline def setMetricRulesUndefined: Self = StObject.set(x, "metricRules", js.undefined)
     
-    @scala.inline
-    def setMetricRulesVarargs(value: MetricRule*): Self = StObject.set(x, "metricRules", js.Array(value :_*))
+    inline def setMetricRulesVarargs(value: MetricRule*): Self = StObject.set(x, "metricRules", js.Array(value :_*))
   }
 }

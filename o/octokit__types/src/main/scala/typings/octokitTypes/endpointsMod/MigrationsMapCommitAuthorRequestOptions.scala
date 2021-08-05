@@ -20,25 +20,19 @@ trait MigrationsMapCommitAuthorRequestOptions extends StObject {
 }
 object MigrationsMapCommitAuthorRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsMapCommitAuthorRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsMapCommitAuthorRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/import/authors/:author_id")
     __obj.asInstanceOf[MigrationsMapCommitAuthorRequestOptions]
   }
   
-  @scala.inline
-  implicit class MigrationsMapCommitAuthorRequestOptionsMutableBuilder[Self <: MigrationsMapCommitAuthorRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsMapCommitAuthorRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashimportSlashauthorsSlashColonauthor_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashimportSlashauthorsSlashColonauthor_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

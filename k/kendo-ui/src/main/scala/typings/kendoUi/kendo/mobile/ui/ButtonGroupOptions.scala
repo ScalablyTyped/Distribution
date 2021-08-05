@@ -18,43 +18,31 @@ trait ButtonGroupOptions extends StObject {
 }
 object ButtonGroupOptions {
   
-  @scala.inline
-  def apply(): ButtonGroupOptions = {
+  inline def apply(): ButtonGroupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonGroupOptions]
   }
   
-  @scala.inline
-  implicit class ButtonGroupOptionsMutableBuilder[Self <: ButtonGroupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonGroupOptions](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSelect(value: /* e */ ButtonGroupSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: /* e */ ButtonGroupSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectOn(value: String): Self = StObject.set(x, "selectOn", value.asInstanceOf[js.Any])
+    inline def setSelectOn(value: String): Self = StObject.set(x, "selectOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectOnUndefined: Self = StObject.set(x, "selectOn", js.undefined)
+    inline def setSelectOnUndefined: Self = StObject.set(x, "selectOn", js.undefined)
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

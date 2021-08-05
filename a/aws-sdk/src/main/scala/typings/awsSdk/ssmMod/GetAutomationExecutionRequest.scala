@@ -13,16 +13,13 @@ trait GetAutomationExecutionRequest extends StObject {
 }
 object GetAutomationExecutionRequest {
   
-  @scala.inline
-  def apply(AutomationExecutionId: AutomationExecutionId): GetAutomationExecutionRequest = {
+  inline def apply(AutomationExecutionId: AutomationExecutionId): GetAutomationExecutionRequest = {
     val __obj = js.Dynamic.literal(AutomationExecutionId = AutomationExecutionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAutomationExecutionRequest]
   }
   
-  @scala.inline
-  implicit class GetAutomationExecutionRequestMutableBuilder[Self <: GetAutomationExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAutomationExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
+    inline def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,18 +17,18 @@ object mapCollectorMod {
     
     def add(index: Double, value: ObjT): Unit = js.native
     
-    var cmp: js.Any = js.native
+    /* private */ var cmp: js.Any = js.native
     
-    var curr: js.Any = js.native
+    /* private */ var curr: js.Any = js.native
     
-    var currVal: js.Any = js.native
+    /* private */ var currVal: js.Any = js.native
     
     def getIterator(): SparseIntervalsMapIterator[IntervalT, ObjT] = js.native
     
-    var intervals: js.Any = js.native
+    /* private */ var intervals: js.Any = js.native
     
-    var template: js.Any = js.native
+    /* private */ var template: js.Any = js.native
     
-    var valMap: js.Any = js.native
+    /* private */ var valMap: js.Any = js.native
   }
 }

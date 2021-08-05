@@ -16,20 +16,16 @@ trait Arm64RegMsrOperand
 }
 object Arm64RegMsrOperand {
   
-  @scala.inline
-  def apply(value: Arm64Register): Arm64RegMsrOperand = {
+  inline def apply(value: Arm64Register): Arm64RegMsrOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("reg-msr")
     __obj.asInstanceOf[Arm64RegMsrOperand]
   }
   
-  @scala.inline
-  implicit class Arm64RegMsrOperandMutableBuilder[Self <: Arm64RegMsrOperand] (val x: Self) extends AnyVal {
+  extension [Self <: Arm64RegMsrOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: `reg-msr`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `reg-msr`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Arm64Register): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Arm64Register): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

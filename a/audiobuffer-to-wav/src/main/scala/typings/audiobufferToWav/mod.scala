@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(buffer: AudioBuffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
-  @scala.inline
-  def apply(buffer: AudioBuffer, options: Options): ArrayBuffer = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  inline def apply(buffer: AudioBuffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def apply(buffer: AudioBuffer, options: Options): ArrayBuffer = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
   
   @JSImport("audiobuffer-to-wav", JSImport.Namespace)
   @js.native
@@ -23,20 +21,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFloat32(value: Boolean): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
+      inline def setFloat32(value: Boolean): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloat32Undefined: Self = StObject.set(x, "float32", js.undefined)
+      inline def setFloat32Undefined: Self = StObject.set(x, "float32", js.undefined)
     }
   }
 }

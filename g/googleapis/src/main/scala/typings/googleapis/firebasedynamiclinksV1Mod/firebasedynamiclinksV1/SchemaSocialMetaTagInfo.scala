@@ -27,31 +27,23 @@ trait SchemaSocialMetaTagInfo extends StObject {
 }
 object SchemaSocialMetaTagInfo {
   
-  @scala.inline
-  def apply(): SchemaSocialMetaTagInfo = {
+  inline def apply(): SchemaSocialMetaTagInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSocialMetaTagInfo]
   }
   
-  @scala.inline
-  implicit class SchemaSocialMetaTagInfoMutableBuilder[Self <: SchemaSocialMetaTagInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSocialMetaTagInfo](x: Self) {
     
-    @scala.inline
-    def setSocialDescription(value: String): Self = StObject.set(x, "socialDescription", value.asInstanceOf[js.Any])
+    inline def setSocialDescription(value: String): Self = StObject.set(x, "socialDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocialDescriptionUndefined: Self = StObject.set(x, "socialDescription", js.undefined)
+    inline def setSocialDescriptionUndefined: Self = StObject.set(x, "socialDescription", js.undefined)
     
-    @scala.inline
-    def setSocialImageLink(value: String): Self = StObject.set(x, "socialImageLink", value.asInstanceOf[js.Any])
+    inline def setSocialImageLink(value: String): Self = StObject.set(x, "socialImageLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocialImageLinkUndefined: Self = StObject.set(x, "socialImageLink", js.undefined)
+    inline def setSocialImageLinkUndefined: Self = StObject.set(x, "socialImageLink", js.undefined)
     
-    @scala.inline
-    def setSocialTitle(value: String): Self = StObject.set(x, "socialTitle", value.asInstanceOf[js.Any])
+    inline def setSocialTitle(value: String): Self = StObject.set(x, "socialTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocialTitleUndefined: Self = StObject.set(x, "socialTitle", js.undefined)
+    inline def setSocialTitleUndefined: Self = StObject.set(x, "socialTitle", js.undefined)
   }
 }

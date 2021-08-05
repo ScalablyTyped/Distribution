@@ -23,34 +23,25 @@ trait ShareError extends StObject {
 }
 object ShareError {
   
-  @scala.inline
-  def apply(): ShareError = {
+  inline def apply(): ShareError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShareError]
   }
   
-  @scala.inline
-  implicit class ShareErrorMutableBuilder[Self <: ShareError] (val x: Self) extends AnyVal {
+  extension [Self <: ShareError](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: Namespaces): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: Namespaces): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
+    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    @scala.inline
-    def setAccountsVarargs(value: AccountId*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: AccountId*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       webpack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Configuration */ js.Any,
       webpackMiddleware: KarmaWebpackMiddlewareOptions
     ): ConfigOptions = {
@@ -28,16 +27,13 @@ object mod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setWebpack(
+      inline def setWebpack(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Configuration */ js.Any
       ): Self = StObject.set(x, "webpack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebpackMiddleware(value: KarmaWebpackMiddlewareOptions): Self = StObject.set(x, "webpackMiddleware", value.asInstanceOf[js.Any])
+      inline def setWebpackMiddleware(value: KarmaWebpackMiddlewareOptions): Self = StObject.set(x, "webpackMiddleware", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,105 +76,74 @@ object mod {
   }
   object KarmaWebpackMiddlewareOptions {
     
-    @scala.inline
-    def apply(): KarmaWebpackMiddlewareOptions = {
+    inline def apply(): KarmaWebpackMiddlewareOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KarmaWebpackMiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class KarmaWebpackMiddlewareOptionsMutableBuilder[Self <: KarmaWebpackMiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KarmaWebpackMiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setError(value: Logger): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Logger): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setNoInfo(value: Boolean): Self = StObject.set(x, "noInfo", value.asInstanceOf[js.Any])
+      inline def setNoInfo(value: Boolean): Self = StObject.set(x, "noInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoInfoUndefined: Self = StObject.set(x, "noInfo", js.undefined)
+      inline def setNoInfoUndefined: Self = StObject.set(x, "noInfo", js.undefined)
       
-      @scala.inline
-      def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      @scala.inline
-      def setReporter(value: (/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions) => Unit): Self = StObject.set(x, "reporter", js.Any.fromFunction2(value))
+      inline def setReporter(value: (/* middlewareOptions */ Options, /* reporterOptions */ ReporterOptions) => Unit): Self = StObject.set(x, "reporter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReporterNull: Self = StObject.set(x, "reporter", null)
+      inline def setReporterNull: Self = StObject.set(x, "reporter", null)
       
-      @scala.inline
-      def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+      inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
-      @scala.inline
-      def setServerSideRender(value: Boolean): Self = StObject.set(x, "serverSideRender", value.asInstanceOf[js.Any])
+      inline def setServerSideRender(value: Boolean): Self = StObject.set(x, "serverSideRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideRenderUndefined: Self = StObject.set(x, "serverSideRender", js.undefined)
+      inline def setServerSideRenderUndefined: Self = StObject.set(x, "serverSideRender", js.undefined)
       
-      @scala.inline
-      def setStats(
+      inline def setStats(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.Stats */ js.Any
       ): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
-      @scala.inline
-      def setWarn(value: Logger): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Logger): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
-      @scala.inline
-      def setWatchOptions(
+      inline def setWatchOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.WatchOptions */ js.Any
       ): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
+      inline def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
     }
   }
   

@@ -14,23 +14,18 @@ trait Tags extends StObject {
 }
 object Tags {
   
-  @scala.inline
-  def apply(tags: js.Array[Tag]): Tags = {
+  inline def apply(tags: js.Array[Tag]): Tags = {
     val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("tag.list")
     __obj.asInstanceOf[Tags]
   }
   
-  @scala.inline
-  implicit class TagsMutableBuilder[Self <: Tags] (val x: Self) extends AnyVal {
+  extension [Self <: Tags](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: tagDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: tagDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

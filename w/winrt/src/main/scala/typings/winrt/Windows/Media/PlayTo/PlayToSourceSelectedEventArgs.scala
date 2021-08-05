@@ -10,8 +10,7 @@ trait PlayToSourceSelectedEventArgs
      with IPlayToSourceSelectedEventArgs
 object PlayToSourceSelectedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friendlyName: String,
     icon: IRandomAccessStreamWithContentType,
     supportsAudio: Boolean,

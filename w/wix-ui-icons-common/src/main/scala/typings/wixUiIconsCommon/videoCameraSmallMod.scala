@@ -22,20 +22,16 @@ object videoCameraSmallMod extends Shortcut {
   }
   object VideoCameraSmallProps {
     
-    @scala.inline
-    def apply(): VideoCameraSmallProps = {
+    inline def apply(): VideoCameraSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VideoCameraSmallProps]
     }
     
-    @scala.inline
-    implicit class VideoCameraSmallPropsMutableBuilder[Self <: VideoCameraSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: VideoCameraSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

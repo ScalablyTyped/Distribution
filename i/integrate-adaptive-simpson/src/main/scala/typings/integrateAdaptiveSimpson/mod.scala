@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(f: Func, a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply(f: Func, a: Double, b: Double, tol: Double): Double = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tol.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply(f: Func, a: Double, b: Double, tol: Double, maxdepth: Double): Double = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tol.asInstanceOf[js.Any], maxdepth.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply(f: Func, a: Double, b: Double, tol: Unit, maxdepth: Double): Double = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tol.asInstanceOf[js.Any], maxdepth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(f: Func, a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(f: Func, a: Double, b: Double, tol: Double): Double = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tol.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(f: Func, a: Double, b: Double, tol: Double, maxdepth: Double): Double = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tol.asInstanceOf[js.Any], maxdepth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(f: Func, a: Double, b: Double, tol: Unit, maxdepth: Double): Double = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tol.asInstanceOf[js.Any], maxdepth.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("integrate-adaptive-simpson", JSImport.Namespace)
   @js.native

@@ -28,40 +28,29 @@ trait GetSatelliteResponse extends StObject {
 }
 object GetSatelliteResponse {
   
-  @scala.inline
-  def apply(): GetSatelliteResponse = {
+  inline def apply(): GetSatelliteResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSatelliteResponse]
   }
   
-  @scala.inline
-  implicit class GetSatelliteResponseMutableBuilder[Self <: GetSatelliteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSatelliteResponse](x: Self) {
     
-    @scala.inline
-    def setGroundStations(value: GroundStationIdList): Self = StObject.set(x, "groundStations", value.asInstanceOf[js.Any])
+    inline def setGroundStations(value: GroundStationIdList): Self = StObject.set(x, "groundStations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundStationsUndefined: Self = StObject.set(x, "groundStations", js.undefined)
+    inline def setGroundStationsUndefined: Self = StObject.set(x, "groundStations", js.undefined)
     
-    @scala.inline
-    def setGroundStationsVarargs(value: String*): Self = StObject.set(x, "groundStations", js.Array(value :_*))
+    inline def setGroundStationsVarargs(value: String*): Self = StObject.set(x, "groundStations", js.Array(value :_*))
     
-    @scala.inline
-    def setNoradSatelliteID(value: noradSatelliteID): Self = StObject.set(x, "noradSatelliteID", value.asInstanceOf[js.Any])
+    inline def setNoradSatelliteID(value: noradSatelliteID): Self = StObject.set(x, "noradSatelliteID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoradSatelliteIDUndefined: Self = StObject.set(x, "noradSatelliteID", js.undefined)
+    inline def setNoradSatelliteIDUndefined: Self = StObject.set(x, "noradSatelliteID", js.undefined)
     
-    @scala.inline
-    def setSatelliteArn(value: satelliteArn): Self = StObject.set(x, "satelliteArn", value.asInstanceOf[js.Any])
+    inline def setSatelliteArn(value: satelliteArn): Self = StObject.set(x, "satelliteArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSatelliteArnUndefined: Self = StObject.set(x, "satelliteArn", js.undefined)
+    inline def setSatelliteArnUndefined: Self = StObject.set(x, "satelliteArn", js.undefined)
     
-    @scala.inline
-    def setSatelliteId(value: Uuid): Self = StObject.set(x, "satelliteId", value.asInstanceOf[js.Any])
+    inline def setSatelliteId(value: Uuid): Self = StObject.set(x, "satelliteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSatelliteIdUndefined: Self = StObject.set(x, "satelliteId", js.undefined)
+    inline def setSatelliteIdUndefined: Self = StObject.set(x, "satelliteId", js.undefined)
   }
 }

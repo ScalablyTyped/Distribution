@@ -132,8 +132,7 @@ object PropertyTypes {
   }
   object DataSet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearSelectedRecordIds: () => Unit,
       columns: js.Array[Column],
       error: Boolean,
@@ -157,77 +156,53 @@ object PropertyTypes {
       __obj.asInstanceOf[DataSet]
     }
     
-    @scala.inline
-    implicit class DataSetMutableBuilder[Self <: DataSet] (val x: Self) extends AnyVal {
+    extension [Self <: DataSet](x: Self) {
       
-      @scala.inline
-      def setAddColumn(value: (/* name */ String, /* entityAlias */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
+      inline def setAddColumn(value: (/* name */ String, /* entityAlias */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddColumnUndefined: Self = StObject.set(x, "addColumn", js.undefined)
+      inline def setAddColumnUndefined: Self = StObject.set(x, "addColumn", js.undefined)
       
-      @scala.inline
-      def setClearSelectedRecordIds(value: () => Unit): Self = StObject.set(x, "clearSelectedRecordIds", js.Any.fromFunction0(value))
+      inline def setClearSelectedRecordIds(value: () => Unit): Self = StObject.set(x, "clearSelectedRecordIds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltering(value: Filtering): Self = StObject.set(x, "filtering", value.asInstanceOf[js.Any])
+      inline def setFiltering(value: Filtering): Self = StObject.set(x, "filtering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetSelectedRecordIds(value: () => js.Array[String]): Self = StObject.set(x, "getSelectedRecordIds", js.Any.fromFunction0(value))
+      inline def setGetSelectedRecordIds(value: () => js.Array[String]): Self = StObject.set(x, "getSelectedRecordIds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTargetEntityType(value: () => String): Self = StObject.set(x, "getTargetEntityType", js.Any.fromFunction0(value))
+      inline def setGetTargetEntityType(value: () => String): Self = StObject.set(x, "getTargetEntityType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetViewId(value: () => String): Self = StObject.set(x, "getViewId", js.Any.fromFunction0(value))
+      inline def setGetViewId(value: () => String): Self = StObject.set(x, "getViewId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLinking(value: Linking): Self = StObject.set(x, "linking", value.asInstanceOf[js.Any])
+      inline def setLinking(value: Linking): Self = StObject.set(x, "linking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDatasetItem(value: EntityReference => Unit): Self = StObject.set(x, "openDatasetItem", js.Any.fromFunction1(value))
+      inline def setOpenDatasetItem(value: EntityReference => Unit): Self = StObject.set(x, "openDatasetItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPaging(value: Paging): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
+      inline def setPaging(value: Paging): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecords(value: StringDictionary[EntityRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: StringDictionary[EntityRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetSelectedRecordIds(value: js.Array[String] => Unit): Self = StObject.set(x, "setSelectedRecordIds", js.Any.fromFunction1(value))
+      inline def setSetSelectedRecordIds(value: js.Array[String] => Unit): Self = StObject.set(x, "setSelectedRecordIds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSortedRecordIds(value: js.Array[String]): Self = StObject.set(x, "sortedRecordIds", value.asInstanceOf[js.Any])
+      inline def setSortedRecordIds(value: js.Array[String]): Self = StObject.set(x, "sortedRecordIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortedRecordIdsVarargs(value: String*): Self = StObject.set(x, "sortedRecordIds", js.Array(value :_*))
+      inline def setSortedRecordIdsVarargs(value: String*): Self = StObject.set(x, "sortedRecordIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSorting(value: js.Array[SortStatus]): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
+      inline def setSorting(value: js.Array[SortStatus]): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortingVarargs(value: SortStatus*): Self = StObject.set(x, "sorting", js.Array(value :_*))
+      inline def setSortingVarargs(value: SortStatus*): Self = StObject.set(x, "sorting", js.Array(value :_*))
     }
   }
   
@@ -246,27 +221,21 @@ object PropertyTypes {
   }
   object DateTimeProperty {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, `type`: String): DateTimeProperty = {
+    inline def apply(error: Boolean, errorMessage: String, `type`: String): DateTimeProperty = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateTimeProperty]
     }
     
-    @scala.inline
-    implicit class DateTimePropertyMutableBuilder[Self <: DateTimeProperty] (val x: Self) extends AnyVal {
+    extension [Self <: DateTimeProperty](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: DateTimeMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: DateTimeMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Date): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Date): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawNull: Self = StObject.set(x, "raw", null)
+      inline def setRawNull: Self = StObject.set(x, "raw", null)
     }
   }
   
@@ -282,21 +251,17 @@ object PropertyTypes {
   }
   object DecimalNumberProperty {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, `type`: String): DecimalNumberProperty = {
+    inline def apply(error: Boolean, errorMessage: String, `type`: String): DecimalNumberProperty = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecimalNumberProperty]
     }
     
-    @scala.inline
-    implicit class DecimalNumberPropertyMutableBuilder[Self <: DecimalNumberProperty] (val x: Self) extends AnyVal {
+    extension [Self <: DecimalNumberProperty](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: DecimalNumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: DecimalNumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     }
   }
   
@@ -311,21 +276,17 @@ object PropertyTypes {
   }
   object EnumProperty {
     
-    @scala.inline
-    def apply[EnumType](raw: EnumType, `type`: String): EnumProperty[EnumType] = {
+    inline def apply[EnumType](raw: EnumType, `type`: String): EnumProperty[EnumType] = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnumProperty[EnumType]]
     }
     
-    @scala.inline
-    implicit class EnumPropertyMutableBuilder[Self <: EnumProperty[?], EnumType] (val x: Self & EnumProperty[EnumType]) extends AnyVal {
+    extension [Self <: EnumProperty[?], EnumType](x: Self & EnumProperty[EnumType]) {
       
-      @scala.inline
-      def setRaw(value: EnumType): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: EnumType): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,21 +302,17 @@ object PropertyTypes {
   }
   object FloatingNumberProperty {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, `type`: String): FloatingNumberProperty = {
+    inline def apply(error: Boolean, errorMessage: String, `type`: String): FloatingNumberProperty = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FloatingNumberProperty]
     }
     
-    @scala.inline
-    implicit class FloatingNumberPropertyMutableBuilder[Self <: FloatingNumberProperty] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingNumberProperty](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: FloatingNumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: FloatingNumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     }
   }
   
@@ -376,20 +333,16 @@ object PropertyTypes {
   }
   object ImageInfo {
     
-    @scala.inline
-    def apply(Tooltip: String, Url: String): ImageInfo = {
+    inline def apply(Tooltip: String, Url: String): ImageInfo = {
       val __obj = js.Dynamic.literal(Tooltip = Tooltip.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageInfo]
     }
     
-    @scala.inline
-    implicit class ImageInfoMutableBuilder[Self <: ImageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ImageInfo](x: Self) {
       
-      @scala.inline
-      def setTooltip(value: String): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: String): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -408,30 +361,23 @@ object PropertyTypes {
   }
   object MultiSelectOptionSetProperty {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, `type`: String): MultiSelectOptionSetProperty = {
+    inline def apply(error: Boolean, errorMessage: String, `type`: String): MultiSelectOptionSetProperty = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiSelectOptionSetProperty]
     }
     
-    @scala.inline
-    implicit class MultiSelectOptionSetPropertyMutableBuilder[Self <: MultiSelectOptionSetProperty] (val x: Self) extends AnyVal {
+    extension [Self <: MultiSelectOptionSetProperty](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: OptionSetMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: OptionSetMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setRaw(value: js.Array[Double]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: js.Array[Double]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawNull: Self = StObject.set(x, "raw", null)
+      inline def setRawNull: Self = StObject.set(x, "raw", null)
       
-      @scala.inline
-      def setRawVarargs(value: Double*): Self = StObject.set(x, "raw", js.Array(value :_*))
+      inline def setRawVarargs(value: Double*): Self = StObject.set(x, "raw", js.Array(value :_*))
     }
   }
   
@@ -450,27 +396,21 @@ object PropertyTypes {
   }
   object NumberProperty {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, `type`: String): NumberProperty = {
+    inline def apply(error: Boolean, errorMessage: String, `type`: String): NumberProperty = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NumberProperty]
     }
     
-    @scala.inline
-    implicit class NumberPropertyMutableBuilder[Self <: NumberProperty] (val x: Self) extends AnyVal {
+    extension [Self <: NumberProperty](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: NumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: NumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Double): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Double): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawNull: Self = StObject.set(x, "raw", null)
+      inline def setRawNull: Self = StObject.set(x, "raw", null)
     }
   }
   
@@ -489,27 +429,21 @@ object PropertyTypes {
   }
   object OptionSetProperty {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, `type`: String): OptionSetProperty = {
+    inline def apply(error: Boolean, errorMessage: String, `type`: String): OptionSetProperty = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionSetProperty]
     }
     
-    @scala.inline
-    implicit class OptionSetPropertyMutableBuilder[Self <: OptionSetProperty] (val x: Self) extends AnyVal {
+    extension [Self <: OptionSetProperty](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: OptionSetMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: OptionSetMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Double): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Double): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawNull: Self = StObject.set(x, "raw", null)
+      inline def setRawNull: Self = StObject.set(x, "raw", null)
     }
   }
   
@@ -534,45 +468,33 @@ object PropertyTypes {
   }
   object Property {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, raw: js.Any, `type`: String): Property = {
+    inline def apply(error: Boolean, errorMessage: String, raw: js.Any, `type`: String): Property = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Property]
     }
     
-    @scala.inline
-    implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
+    extension [Self <: Property](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Metadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Metadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+      inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattedUndefined: Self = StObject.set(x, "formatted", js.undefined)
+      inline def setFormattedUndefined: Self = StObject.set(x, "formatted", js.undefined)
       
-      @scala.inline
-      def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity(value: SecurityValues): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+      inline def setSecurity(value: SecurityValues): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -591,27 +513,21 @@ object PropertyTypes {
   }
   object StringProperty {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, `type`: String): StringProperty = {
+    inline def apply(error: Boolean, errorMessage: String, `type`: String): StringProperty = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StringProperty]
     }
     
-    @scala.inline
-    implicit class StringPropertyMutableBuilder[Self <: StringProperty] (val x: Self) extends AnyVal {
+    extension [Self <: StringProperty](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawNull: Self = StObject.set(x, "raw", null)
+      inline def setRawNull: Self = StObject.set(x, "raw", null)
     }
   }
   
@@ -630,24 +546,19 @@ object PropertyTypes {
   }
   object TwoOptionsProperty {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, raw: Boolean, `type`: String): TwoOptionsProperty = {
+    inline def apply(error: Boolean, errorMessage: String, raw: Boolean, `type`: String): TwoOptionsProperty = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TwoOptionsProperty]
     }
     
-    @scala.inline
-    implicit class TwoOptionsPropertyMutableBuilder[Self <: TwoOptionsProperty] (val x: Self) extends AnyVal {
+    extension [Self <: TwoOptionsProperty](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: TwoOptionMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: TwoOptionMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -663,21 +574,17 @@ object PropertyTypes {
   }
   object WholeNumberProperty {
     
-    @scala.inline
-    def apply(error: Boolean, errorMessage: String, `type`: String): WholeNumberProperty = {
+    inline def apply(error: Boolean, errorMessage: String, `type`: String): WholeNumberProperty = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], raw = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WholeNumberProperty]
     }
     
-    @scala.inline
-    implicit class WholeNumberPropertyMutableBuilder[Self <: WholeNumberProperty] (val x: Self) extends AnyVal {
+    extension [Self <: WholeNumberProperty](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: WholeNumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: WholeNumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     }
   }
 }

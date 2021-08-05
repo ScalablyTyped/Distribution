@@ -19,17 +19,14 @@ object exprMod {
   }
   object ExprRef {
     
-    @scala.inline
-    def apply(expr: Expr): ExprRef = {
+    inline def apply(expr: Expr): ExprRef = {
       val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExprRef]
     }
     
-    @scala.inline
-    implicit class ExprRefMutableBuilder[Self <: ExprRef] (val x: Self) extends AnyVal {
+    extension [Self <: ExprRef](x: Self) {
       
-      @scala.inline
-      def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+      inline def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     }
   }
 }

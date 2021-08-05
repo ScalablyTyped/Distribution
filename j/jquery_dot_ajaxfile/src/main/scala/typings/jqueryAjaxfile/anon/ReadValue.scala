@@ -13,19 +13,15 @@ trait ReadValue extends StObject {
 }
 object ReadValue {
   
-  @scala.inline
-  def apply(readValue: HTMLElement => js.Any, writeValue: (HTMLElement, js.Any) => Unit): ReadValue = {
+  inline def apply(readValue: HTMLElement => js.Any, writeValue: (HTMLElement, js.Any) => Unit): ReadValue = {
     val __obj = js.Dynamic.literal(readValue = js.Any.fromFunction1(readValue), writeValue = js.Any.fromFunction2(writeValue))
     __obj.asInstanceOf[ReadValue]
   }
   
-  @scala.inline
-  implicit class ReadValueMutableBuilder[Self <: ReadValue] (val x: Self) extends AnyVal {
+  extension [Self <: ReadValue](x: Self) {
     
-    @scala.inline
-    def setReadValue(value: HTMLElement => js.Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
+    inline def setReadValue(value: HTMLElement => js.Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteValue(value: (HTMLElement, js.Any) => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction2(value))
+    inline def setWriteValue(value: (HTMLElement, js.Any) => Unit): Self = StObject.set(x, "writeValue", js.Any.fromFunction2(value))
   }
 }

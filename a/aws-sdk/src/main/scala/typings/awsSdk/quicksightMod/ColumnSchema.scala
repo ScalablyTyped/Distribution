@@ -23,31 +23,23 @@ trait ColumnSchema extends StObject {
 }
 object ColumnSchema {
   
-  @scala.inline
-  def apply(): ColumnSchema = {
+  inline def apply(): ColumnSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnSchema]
   }
   
-  @scala.inline
-  implicit class ColumnSchemaMutableBuilder[Self <: ColumnSchema] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnSchema](x: Self) {
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "DataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "DataType", js.undefined)
     
-    @scala.inline
-    def setGeographicRole(value: String): Self = StObject.set(x, "GeographicRole", value.asInstanceOf[js.Any])
+    inline def setGeographicRole(value: String): Self = StObject.set(x, "GeographicRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicRoleUndefined: Self = StObject.set(x, "GeographicRole", js.undefined)
+    inline def setGeographicRoleUndefined: Self = StObject.set(x, "GeographicRole", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

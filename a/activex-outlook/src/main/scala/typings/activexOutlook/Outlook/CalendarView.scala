@@ -51,7 +51,7 @@ trait CalendarView extends StObject {
   
   var Name: String
   
-  @JSName("Outlook.CalendarView_typekey")
+  /* private */ @JSName("Outlook.CalendarView_typekey")
   var OutlookDotCalendarView_typekey: CalendarView
   
   val Parent: js.Any
@@ -78,8 +78,7 @@ trait CalendarView extends StObject {
 }
 object CalendarView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Apply: () => Unit,
     AutoFormatRules: AutoFormatRules,
@@ -120,109 +119,74 @@ object CalendarView {
     __obj.asInstanceOf[CalendarView]
   }
   
-  @scala.inline
-  implicit class CalendarViewMutableBuilder[Self <: CalendarView] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarView](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApply(value: () => Unit): Self = StObject.set(x, "Apply", js.Any.fromFunction0(value))
+    inline def setApply(value: () => Unit): Self = StObject.set(x, "Apply", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAutoFormatRules(value: AutoFormatRules): Self = StObject.set(x, "AutoFormatRules", value.asInstanceOf[js.Any])
+    inline def setAutoFormatRules(value: AutoFormatRules): Self = StObject.set(x, "AutoFormatRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldDatesWithItems(value: Boolean): Self = StObject.set(x, "BoldDatesWithItems", value.asInstanceOf[js.Any])
+    inline def setBoldDatesWithItems(value: Boolean): Self = StObject.set(x, "BoldDatesWithItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldSubjects(value: Boolean): Self = StObject.set(x, "BoldSubjects", value.asInstanceOf[js.Any])
+    inline def setBoldSubjects(value: Boolean): Self = StObject.set(x, "BoldSubjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarViewMode(value: OlCalendarViewMode): Self = StObject.set(x, "CalendarViewMode", value.asInstanceOf[js.Any])
+    inline def setCalendarViewMode(value: OlCalendarViewMode): Self = StObject.set(x, "CalendarViewMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: (String, OlViewSaveOption) => View): Self = StObject.set(x, "Copy", js.Any.fromFunction2(value))
+    inline def setCopy(value: (String, OlViewSaveOption) => View): Self = StObject.set(x, "Copy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDayWeekFont(value: ViewFont): Self = StObject.set(x, "DayWeekFont", value.asInstanceOf[js.Any])
+    inline def setDayWeekFont(value: ViewFont): Self = StObject.set(x, "DayWeekFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayWeekTimeFont(value: ViewFont): Self = StObject.set(x, "DayWeekTimeFont", value.asInstanceOf[js.Any])
+    inline def setDayWeekTimeFont(value: ViewFont): Self = StObject.set(x, "DayWeekTimeFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayWeekTimeScale(value: OlDayWeekTimeScale): Self = StObject.set(x, "DayWeekTimeScale", value.asInstanceOf[js.Any])
+    inline def setDayWeekTimeScale(value: OlDayWeekTimeScale): Self = StObject.set(x, "DayWeekTimeScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysInMultiDayMode(value: Double): Self = StObject.set(x, "DaysInMultiDayMode", value.asInstanceOf[js.Any])
+    inline def setDaysInMultiDayMode(value: Double): Self = StObject.set(x, "DaysInMultiDayMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplayedDates(value: js.Any): Self = StObject.set(x, "DisplayedDates", value.asInstanceOf[js.Any])
+    inline def setDisplayedDates(value: js.Any): Self = StObject.set(x, "DisplayedDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndField(value: String): Self = StObject.set(x, "EndField", value.asInstanceOf[js.Any])
+    inline def setEndField(value: String): Self = StObject.set(x, "EndField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToDate(value: VarDate => Unit): Self = StObject.set(x, "GoToDate", js.Any.fromFunction1(value))
+    inline def setGoToDate(value: VarDate => Unit): Self = StObject.set(x, "GoToDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockUserChanges(value: Boolean): Self = StObject.set(x, "LockUserChanges", value.asInstanceOf[js.Any])
+    inline def setLockUserChanges(value: Boolean): Self = StObject.set(x, "LockUserChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthFont(value: ViewFont): Self = StObject.set(x, "MonthFont", value.asInstanceOf[js.Any])
+    inline def setMonthFont(value: ViewFont): Self = StObject.set(x, "MonthFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthShowEndTime(value: Boolean): Self = StObject.set(x, "MonthShowEndTime", value.asInstanceOf[js.Any])
+    inline def setMonthShowEndTime(value: Boolean): Self = StObject.set(x, "MonthShowEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotCalendarView_typekey(value: CalendarView): Self = StObject.set(x, "Outlook.CalendarView_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotCalendarView_typekey(value: CalendarView): Self = StObject.set(x, "Outlook.CalendarView_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveOption(value: OlViewSaveOption): Self = StObject.set(x, "SaveOption", value.asInstanceOf[js.Any])
+    inline def setSaveOption(value: OlViewSaveOption): Self = StObject.set(x, "SaveOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedEndTime(value: VarDate): Self = StObject.set(x, "SelectedEndTime", value.asInstanceOf[js.Any])
+    inline def setSelectedEndTime(value: VarDate): Self = StObject.set(x, "SelectedEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedStartTime(value: VarDate): Self = StObject.set(x, "SelectedStartTime", value.asInstanceOf[js.Any])
+    inline def setSelectedStartTime(value: VarDate): Self = StObject.set(x, "SelectedStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandard(value: Boolean): Self = StObject.set(x, "Standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: Boolean): Self = StObject.set(x, "Standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartField(value: String): Self = StObject.set(x, "StartField", value.asInstanceOf[js.Any])
+    inline def setStartField(value: String): Self = StObject.set(x, "StartField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewType(value: OlViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: OlViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
+    inline def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
   }
 }

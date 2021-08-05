@@ -17,31 +17,23 @@ trait IdentityAwareProxyClient extends StObject {
 }
 object IdentityAwareProxyClient {
   
-  @scala.inline
-  def apply(): IdentityAwareProxyClient = {
+  inline def apply(): IdentityAwareProxyClient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentityAwareProxyClient]
   }
   
-  @scala.inline
-  implicit class IdentityAwareProxyClientMutableBuilder[Self <: IdentityAwareProxyClient] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityAwareProxyClient](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
   }
 }

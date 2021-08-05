@@ -10,16 +10,13 @@ trait IPanoramaGraphNode extends StObject {
 }
 object IPanoramaGraphNode {
   
-  @scala.inline
-  def apply(getConnectedPanorama: () => js.Promise[IPanorama]): IPanoramaGraphNode = {
+  inline def apply(getConnectedPanorama: () => js.Promise[IPanorama]): IPanoramaGraphNode = {
     val __obj = js.Dynamic.literal(getConnectedPanorama = js.Any.fromFunction0(getConnectedPanorama))
     __obj.asInstanceOf[IPanoramaGraphNode]
   }
   
-  @scala.inline
-  implicit class IPanoramaGraphNodeMutableBuilder[Self <: IPanoramaGraphNode] (val x: Self) extends AnyVal {
+  extension [Self <: IPanoramaGraphNode](x: Self) {
     
-    @scala.inline
-    def setGetConnectedPanorama(value: () => js.Promise[IPanorama]): Self = StObject.set(x, "getConnectedPanorama", js.Any.fromFunction0(value))
+    inline def setGetConnectedPanorama(value: () => js.Promise[IPanorama]): Self = StObject.set(x, "getConnectedPanorama", js.Any.fromFunction0(value))
   }
 }

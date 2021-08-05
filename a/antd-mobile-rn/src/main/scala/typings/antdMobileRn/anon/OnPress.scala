@@ -10,16 +10,13 @@ trait OnPress extends StObject {
 }
 object OnPress {
   
-  @scala.inline
-  def apply(onPress: () => Unit): OnPress = {
+  inline def apply(onPress: () => Unit): OnPress = {
     val __obj = js.Dynamic.literal(onPress = js.Any.fromFunction0(onPress))
     __obj.asInstanceOf[OnPress]
   }
   
-  @scala.inline
-  implicit class OnPressMutableBuilder[Self <: OnPress] (val x: Self) extends AnyVal {
+  extension [Self <: OnPress](x: Self) {
     
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
   }
 }

@@ -22,11 +22,9 @@ object extensionTypes {
   trait CSSOrigin extends StObject
   object CSSOrigin {
     
-    @scala.inline
-    def author: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.author = "author".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.author]
+    inline def author: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.author = "author".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.author]
     
-    @scala.inline
-    def user: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user = "user".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user]
+    inline def user: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user = "user".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user]
   }
   
   type Date = String | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Date */ js.Any)
@@ -38,14 +36,12 @@ object extensionTypes {
   trait ExtensionFileOrCode extends StObject
   object ExtensionFileOrCode {
     
-    @scala.inline
-    def Code(code: String): typings.firefoxWebextBrowser.anon.Code = {
+    inline def Code(code: String): typings.firefoxWebextBrowser.anon.Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firefoxWebextBrowser.anon.Code]
     }
     
-    @scala.inline
-    def File(file: ExtensionURL): typings.firefoxWebextBrowser.anon.File = {
+    inline def File(file: ExtensionURL): typings.firefoxWebextBrowser.anon.File = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firefoxWebextBrowser.anon.File]
     }
@@ -72,38 +68,28 @@ object extensionTypes {
   }
   object ImageDetails {
     
-    @scala.inline
-    def apply(): ImageDetails = {
+    inline def apply(): ImageDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageDetails]
     }
     
-    @scala.inline
-    implicit class ImageDetailsMutableBuilder[Self <: ImageDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ImageDetails](x: Self) {
       
-      @scala.inline
-      def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setRect(value: ImageDetailsRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+      inline def setRect(value: ImageDetailsRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+      inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     }
   }
   
@@ -122,26 +108,20 @@ object extensionTypes {
   }
   object ImageDetailsRect {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): ImageDetailsRect = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): ImageDetailsRect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageDetailsRect]
     }
     
-    @scala.inline
-    implicit class ImageDetailsRectMutableBuilder[Self <: ImageDetailsRect] (val x: Self) extends AnyVal {
+    extension [Self <: ImageDetailsRect](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,11 +134,9 @@ object extensionTypes {
   trait ImageFormat extends StObject
   object ImageFormat {
     
-    @scala.inline
-    def jpeg: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg = "jpeg".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg]
+    inline def jpeg: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg = "jpeg".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jpeg]
     
-    @scala.inline
-    def png: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png = "png".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png]
+    inline def png: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png = "png".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.png]
   }
   
   /**
@@ -198,56 +176,40 @@ object extensionTypes {
   }
   object InjectDetails {
     
-    @scala.inline
-    def apply(): InjectDetails = {
+    inline def apply(): InjectDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InjectDetails]
     }
     
-    @scala.inline
-    implicit class InjectDetailsMutableBuilder[Self <: InjectDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InjectDetails](x: Self) {
       
-      @scala.inline
-      def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
+      inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
+      inline def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setCssOrigin(value: CSSOrigin): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
+      inline def setCssOrigin(value: CSSOrigin): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssOriginUndefined: Self = StObject.set(x, "cssOrigin", js.undefined)
+      inline def setCssOriginUndefined: Self = StObject.set(x, "cssOrigin", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+      inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
       
-      @scala.inline
-      def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
+      inline def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchAboutBlankUndefined: Self = StObject.set(x, "matchAboutBlank", js.undefined)
+      inline def setMatchAboutBlankUndefined: Self = StObject.set(x, "matchAboutBlank", js.undefined)
       
-      @scala.inline
-      def setRunAt(value: RunAt): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
+      inline def setRunAt(value: RunAt): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunAtUndefined: Self = StObject.set(x, "runAt", js.undefined)
+      inline def setRunAtUndefined: Self = StObject.set(x, "runAt", js.undefined)
     }
   }
   
@@ -263,8 +225,7 @@ object extensionTypes {
        with _PlainJSONValue
   object PlainJSONObject {
     
-    @scala.inline
-    def apply(): PlainJSONObject = {
+    inline def apply(): PlainJSONObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PlainJSONObject]
     }
@@ -290,14 +251,11 @@ object extensionTypes {
   trait RunAt extends StObject
   object RunAt {
     
-    @scala.inline
-    def document_end: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_end = "document_end".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_end]
+    inline def document_end: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_end = "document_end".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_end]
     
-    @scala.inline
-    def document_idle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_idle = "document_idle".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_idle]
+    inline def document_idle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_idle = "document_idle".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_idle]
     
-    @scala.inline
-    def document_start: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_start = "document_start".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_start]
+    inline def document_start: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_start = "document_start".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.document_start]
   }
   
   trait _PlainJSONValue extends StObject

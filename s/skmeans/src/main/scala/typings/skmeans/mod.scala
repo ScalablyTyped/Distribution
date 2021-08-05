@@ -15,61 +15,51 @@ object mod {
     * @param iterations Maximum number of iterations. If not provided, it will be set to 10000.
     * @param distance Custom distance function. Takes two points as arguments and returns a scalar number.
     */
-  @scala.inline
-  def apply(data: js.Array[js.Array[Double] | Double], k: Double): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Data]
-  @scala.inline
-  def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: Unit, iterations: Double): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any])).asInstanceOf[Data]
-  @scala.inline
-  def apply(
+  inline def apply(data: js.Array[js.Array[Double] | Double], k: Double): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Data]
+  inline def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: Unit, iterations: Double): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any])).asInstanceOf[Data]
+  inline def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
     centroids: Unit,
     iterations: Double,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
     centroids: Unit,
     iterations: Null,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
     centroids: Unit,
     iterations: Unit,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
-  @scala.inline
-  def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: CentroidValues): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any])).asInstanceOf[Data]
-  @scala.inline
-  def apply(
+  inline def apply(data: js.Array[js.Array[Double] | Double], k: Double, centroids: CentroidValues): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any])).asInstanceOf[Data]
+  inline def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
     centroids: CentroidValues,
     iterations: Double
   ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any])).asInstanceOf[Data]
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
     centroids: CentroidValues,
     iterations: Double,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
     centroids: CentroidValues,
     iterations: Null,
     distance: js.Function2[/* x */ Double, /* y */ Double, Double]
   ): Data = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], k.asInstanceOf[js.Any], centroids.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Data]
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Array[js.Array[Double] | Double],
     k: Double,
     centroids: CentroidValues,

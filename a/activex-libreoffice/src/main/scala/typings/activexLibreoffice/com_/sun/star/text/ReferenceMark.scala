@@ -14,8 +14,7 @@ trait ReferenceMark
      with XNamed
 object ReferenceMark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     Name: String,
     acquire: () => Unit,

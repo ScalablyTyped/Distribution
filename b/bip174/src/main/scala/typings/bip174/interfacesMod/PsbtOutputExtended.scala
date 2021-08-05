@@ -11,8 +11,7 @@ trait PsbtOutputExtended
      with /* index */ StringDictionary[js.Any]
 object PsbtOutputExtended {
   
-  @scala.inline
-  def apply(): PsbtOutputExtended = {
+  inline def apply(): PsbtOutputExtended = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PsbtOutputExtended]
   }

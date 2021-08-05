@@ -38,8 +38,7 @@ trait WebAclRule extends StObject {
 }
 object WebAclRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     priority: Double,
     statement: WebAclRuleStatement,
@@ -49,31 +48,22 @@ object WebAclRule {
     __obj.asInstanceOf[WebAclRule]
   }
   
-  @scala.inline
-  implicit class WebAclRuleMutableBuilder[Self <: WebAclRule] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: WebAclRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: WebAclRuleAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideAction(value: WebAclRuleOverrideAction): Self = StObject.set(x, "overrideAction", value.asInstanceOf[js.Any])
+    inline def setOverrideAction(value: WebAclRuleOverrideAction): Self = StObject.set(x, "overrideAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideActionUndefined: Self = StObject.set(x, "overrideAction", js.undefined)
+    inline def setOverrideActionUndefined: Self = StObject.set(x, "overrideAction", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement(value: WebAclRuleStatement): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: WebAclRuleStatement): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityConfig(value: WebAclRuleVisibilityConfig): Self = StObject.set(x, "visibilityConfig", value.asInstanceOf[js.Any])
+    inline def setVisibilityConfig(value: WebAclRuleVisibilityConfig): Self = StObject.set(x, "visibilityConfig", value.asInstanceOf[js.Any])
   }
 }

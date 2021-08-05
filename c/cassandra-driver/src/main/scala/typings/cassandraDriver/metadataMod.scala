@@ -75,8 +75,7 @@ object metadataMod {
     }
     object Aggregate {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         argumentTypes: js.Array[Code],
         finalFunction: String,
         initCondition: String,
@@ -90,38 +89,27 @@ object metadataMod {
         __obj.asInstanceOf[Aggregate]
       }
       
-      @scala.inline
-      implicit class AggregateMutableBuilder[Self <: Aggregate] (val x: Self) extends AnyVal {
+      extension [Self <: Aggregate](x: Self) {
         
-        @scala.inline
-        def setArgumentTypes(value: js.Array[Code]): Self = StObject.set(x, "argumentTypes", value.asInstanceOf[js.Any])
+        inline def setArgumentTypes(value: js.Array[Code]): Self = StObject.set(x, "argumentTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgumentTypesVarargs(value: Code*): Self = StObject.set(x, "argumentTypes", js.Array(value :_*))
+        inline def setArgumentTypesVarargs(value: Code*): Self = StObject.set(x, "argumentTypes", js.Array(value :_*))
         
-        @scala.inline
-        def setFinalFunction(value: String): Self = StObject.set(x, "finalFunction", value.asInstanceOf[js.Any])
+        inline def setFinalFunction(value: String): Self = StObject.set(x, "finalFunction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitCondition(value: String): Self = StObject.set(x, "initCondition", value.asInstanceOf[js.Any])
+        inline def setInitCondition(value: String): Self = StObject.set(x, "initCondition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyspaceName(value: String): Self = StObject.set(x, "keyspaceName", value.asInstanceOf[js.Any])
+        inline def setKeyspaceName(value: String): Self = StObject.set(x, "keyspaceName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+        inline def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignature(value: js.Array[String]): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+        inline def setSignature(value: js.Array[String]): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignatureVarargs(value: String*): Self = StObject.set(x, "signature", js.Array(value :_*))
+        inline def setSignatureVarargs(value: String*): Self = StObject.set(x, "signature", js.Array(value :_*))
         
-        @scala.inline
-        def setStateFunction(value: String): Self = StObject.set(x, "stateFunction", value.asInstanceOf[js.Any])
+        inline def setStateFunction(value: String): Self = StObject.set(x, "stateFunction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStateType(value: String): Self = StObject.set(x, "stateType", value.asInstanceOf[js.Any])
+        inline def setStateType(value: String): Self = StObject.set(x, "stateType", value.asInstanceOf[js.Any])
       }
     }
     
@@ -135,8 +123,7 @@ object metadataMod {
     }
     object ClientState {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getConnectedHosts: () => js.Array[Host],
         getInFlightQueries: Host => Double,
         getOpenConnections: Host => Double
@@ -145,17 +132,13 @@ object metadataMod {
         __obj.asInstanceOf[ClientState]
       }
       
-      @scala.inline
-      implicit class ClientStateMutableBuilder[Self <: ClientState] (val x: Self) extends AnyVal {
+      extension [Self <: ClientState](x: Self) {
         
-        @scala.inline
-        def setGetConnectedHosts(value: () => js.Array[Host]): Self = StObject.set(x, "getConnectedHosts", js.Any.fromFunction0(value))
+        inline def setGetConnectedHosts(value: () => js.Array[Host]): Self = StObject.set(x, "getConnectedHosts", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetInFlightQueries(value: Host => Double): Self = StObject.set(x, "getInFlightQueries", js.Any.fromFunction1(value))
+        inline def setGetInFlightQueries(value: Host => Double): Self = StObject.set(x, "getInFlightQueries", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetOpenConnections(value: Host => Double): Self = StObject.set(x, "getOpenConnections", js.Any.fromFunction1(value))
+        inline def setGetOpenConnections(value: Host => Double): Self = StObject.set(x, "getOpenConnections", js.Any.fromFunction1(value))
       }
     }
     
@@ -167,21 +150,17 @@ object metadataMod {
     }
     object ColumnInfo {
       
-      @scala.inline
-      def apply(name: String, `type`: DataTypeInfo): ColumnInfo = {
+      inline def apply(name: String, `type`: DataTypeInfo): ColumnInfo = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[ColumnInfo]
       }
       
-      @scala.inline
-      implicit class ColumnInfoMutableBuilder[Self <: ColumnInfo] (val x: Self) extends AnyVal {
+      extension [Self <: ColumnInfo](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: DataTypeInfo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: DataTypeInfo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -233,8 +212,7 @@ object metadataMod {
     }
     object DataCollection {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bloomFilterFalsePositiveChance: Double,
         caching: String,
         clusteringKeys: js.Array[ColumnInfo],
@@ -259,95 +237,65 @@ object metadataMod {
         __obj.asInstanceOf[DataCollection]
       }
       
-      @scala.inline
-      implicit class DataCollectionMutableBuilder[Self <: DataCollection] (val x: Self) extends AnyVal {
+      extension [Self <: DataCollection](x: Self) {
         
-        @scala.inline
-        def setBloomFilterFalsePositiveChance(value: Double): Self = StObject.set(x, "bloomFilterFalsePositiveChance", value.asInstanceOf[js.Any])
+        inline def setBloomFilterFalsePositiveChance(value: Double): Self = StObject.set(x, "bloomFilterFalsePositiveChance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaching(value: String): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
+        inline def setCaching(value: String): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClusteringKeys(value: js.Array[ColumnInfo]): Self = StObject.set(x, "clusteringKeys", value.asInstanceOf[js.Any])
+        inline def setClusteringKeys(value: js.Array[ColumnInfo]): Self = StObject.set(x, "clusteringKeys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClusteringKeysVarargs(value: ColumnInfo*): Self = StObject.set(x, "clusteringKeys", js.Array(value :_*))
+        inline def setClusteringKeysVarargs(value: ColumnInfo*): Self = StObject.set(x, "clusteringKeys", js.Array(value :_*))
         
-        @scala.inline
-        def setClusteringOrder(value: js.Array[String]): Self = StObject.set(x, "clusteringOrder", value.asInstanceOf[js.Any])
+        inline def setClusteringOrder(value: js.Array[String]): Self = StObject.set(x, "clusteringOrder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClusteringOrderVarargs(value: String*): Self = StObject.set(x, "clusteringOrder", js.Array(value :_*))
+        inline def setClusteringOrderVarargs(value: String*): Self = StObject.set(x, "clusteringOrder", js.Array(value :_*))
         
-        @scala.inline
-        def setColumns(value: js.Array[ColumnInfo]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+        inline def setColumns(value: js.Array[ColumnInfo]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnsByName(value: StringDictionary[ColumnInfo]): Self = StObject.set(x, "columnsByName", value.asInstanceOf[js.Any])
+        inline def setColumnsByName(value: StringDictionary[ColumnInfo]): Self = StObject.set(x, "columnsByName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColumnsVarargs(value: ColumnInfo*): Self = StObject.set(x, "columns", js.Array(value :_*))
+        inline def setColumnsVarargs(value: ColumnInfo*): Self = StObject.set(x, "columns", js.Array(value :_*))
         
-        @scala.inline
-        def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+        inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompactionClass(value: String): Self = StObject.set(x, "compactionClass", value.asInstanceOf[js.Any])
+        inline def setCompactionClass(value: String): Self = StObject.set(x, "compactionClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompactionOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "compactionOptions", value.asInstanceOf[js.Any])
+        inline def setCompactionOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "compactionOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompression(value: Dictoption): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+        inline def setCompression(value: Dictoption): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCrcCheckChange(value: Double): Self = StObject.set(x, "crcCheckChange", value.asInstanceOf[js.Any])
+        inline def setCrcCheckChange(value: Double): Self = StObject.set(x, "crcCheckChange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCrcCheckChangeUndefined: Self = StObject.set(x, "crcCheckChange", js.undefined)
+        inline def setCrcCheckChangeUndefined: Self = StObject.set(x, "crcCheckChange", js.undefined)
         
-        @scala.inline
-        def setDefaultTtl(value: Double): Self = StObject.set(x, "defaultTtl", value.asInstanceOf[js.Any])
+        inline def setDefaultTtl(value: Double): Self = StObject.set(x, "defaultTtl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtensions(value: StringDictionary[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+        inline def setExtensions(value: StringDictionary[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGcGraceSeconds(value: Double): Self = StObject.set(x, "gcGraceSeconds", value.asInstanceOf[js.Any])
+        inline def setGcGraceSeconds(value: Double): Self = StObject.set(x, "gcGraceSeconds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalReadRepairChance(value: Double): Self = StObject.set(x, "localReadRepairChance", value.asInstanceOf[js.Any])
+        inline def setLocalReadRepairChance(value: Double): Self = StObject.set(x, "localReadRepairChance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxIndexInterval(value: Double): Self = StObject.set(x, "maxIndexInterval", value.asInstanceOf[js.Any])
+        inline def setMaxIndexInterval(value: Double): Self = StObject.set(x, "maxIndexInterval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxIndexIntervalUndefined: Self = StObject.set(x, "maxIndexInterval", js.undefined)
+        inline def setMaxIndexIntervalUndefined: Self = StObject.set(x, "maxIndexInterval", js.undefined)
         
-        @scala.inline
-        def setMinIndexInterval(value: Double): Self = StObject.set(x, "minIndexInterval", value.asInstanceOf[js.Any])
+        inline def setMinIndexInterval(value: Double): Self = StObject.set(x, "minIndexInterval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinIndexIntervalUndefined: Self = StObject.set(x, "minIndexInterval", js.undefined)
+        inline def setMinIndexIntervalUndefined: Self = StObject.set(x, "minIndexInterval", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPartitionKeys(value: js.Array[ColumnInfo]): Self = StObject.set(x, "partitionKeys", value.asInstanceOf[js.Any])
+        inline def setPartitionKeys(value: js.Array[ColumnInfo]): Self = StObject.set(x, "partitionKeys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPartitionKeysVarargs(value: ColumnInfo*): Self = StObject.set(x, "partitionKeys", js.Array(value :_*))
+        inline def setPartitionKeysVarargs(value: ColumnInfo*): Self = StObject.set(x, "partitionKeys", js.Array(value :_*))
         
-        @scala.inline
-        def setPopulateCacheOnFlush(value: Boolean): Self = StObject.set(x, "populateCacheOnFlush", value.asInstanceOf[js.Any])
+        inline def setPopulateCacheOnFlush(value: Boolean): Self = StObject.set(x, "populateCacheOnFlush", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReadRepairChance(value: Double): Self = StObject.set(x, "readRepairChance", value.asInstanceOf[js.Any])
+        inline def setReadRepairChance(value: Double): Self = StObject.set(x, "readRepairChance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpeculativeRetry(value: String): Self = StObject.set(x, "speculativeRetry", value.asInstanceOf[js.Any])
+        inline def setSpeculativeRetry(value: String): Self = StObject.set(x, "speculativeRetry", value.asInstanceOf[js.Any])
       }
     }
     
@@ -361,26 +309,20 @@ object metadataMod {
     }
     object DataTypeInfo {
       
-      @scala.inline
-      def apply(code: dataTypes, info: String | DataTypeInfo | js.Array[DataTypeInfo], options: Frozen): DataTypeInfo = {
+      inline def apply(code: dataTypes, info: String | DataTypeInfo | js.Array[DataTypeInfo], options: Frozen): DataTypeInfo = {
         val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[DataTypeInfo]
       }
       
-      @scala.inline
-      implicit class DataTypeInfoMutableBuilder[Self <: DataTypeInfo] (val x: Self) extends AnyVal {
+      extension [Self <: DataTypeInfo](x: Self) {
         
-        @scala.inline
-        def setCode(value: dataTypes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCode(value: dataTypes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfo(value: String | DataTypeInfo | js.Array[DataTypeInfo]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String | DataTypeInfo | js.Array[DataTypeInfo]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfoVarargs(value: DataTypeInfo*): Self = StObject.set(x, "info", js.Array(value :_*))
+        inline def setInfoVarargs(value: DataTypeInfo*): Self = StObject.set(x, "info", js.Array(value :_*))
         
-        @scala.inline
-        def setOptions(value: Frozen): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: Frozen): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       }
     }
     
@@ -402,8 +344,7 @@ object metadataMod {
     }
     object Index {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         isCompositesKind: () => Boolean,
         isCustomKind: () => Boolean,
         isKeysKind: () => Boolean,
@@ -416,29 +357,21 @@ object metadataMod {
         __obj.asInstanceOf[Index]
       }
       
-      @scala.inline
-      implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+      extension [Self <: Index](x: Self) {
         
-        @scala.inline
-        def setIsCompositesKind(value: () => Boolean): Self = StObject.set(x, "isCompositesKind", js.Any.fromFunction0(value))
+        inline def setIsCompositesKind(value: () => Boolean): Self = StObject.set(x, "isCompositesKind", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsCustomKind(value: () => Boolean): Self = StObject.set(x, "isCustomKind", js.Any.fromFunction0(value))
+        inline def setIsCustomKind(value: () => Boolean): Self = StObject.set(x, "isCustomKind", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsKeysKind(value: () => Boolean): Self = StObject.set(x, "isKeysKind", js.Any.fromFunction0(value))
+        inline def setIsKeysKind(value: () => Boolean): Self = StObject.set(x, "isKeysKind", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setKind(value: IndexKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: IndexKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
@@ -454,8 +387,7 @@ object metadataMod {
     }
     object MaterializedView {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bloomFilterFalsePositiveChance: Double,
         caching: String,
         clusteringKeys: js.Array[ColumnInfo],
@@ -483,17 +415,13 @@ object metadataMod {
         __obj.asInstanceOf[MaterializedView]
       }
       
-      @scala.inline
-      implicit class MaterializedViewMutableBuilder[Self <: MaterializedView] (val x: Self) extends AnyVal {
+      extension [Self <: MaterializedView](x: Self) {
         
-        @scala.inline
-        def setIncludeAllColumns(value: Boolean): Self = StObject.set(x, "includeAllColumns", value.asInstanceOf[js.Any])
+        inline def setIncludeAllColumns(value: Boolean): Self = StObject.set(x, "includeAllColumns", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+        inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWhereClause(value: String): Self = StObject.set(x, "whereClause", value.asInstanceOf[js.Any])
+        inline def setWhereClause(value: String): Self = StObject.set(x, "whereClause", value.asInstanceOf[js.Any])
       }
     }
     
@@ -581,8 +509,7 @@ object metadataMod {
     }
     object QueryTrace {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         clientAddress: String,
         coordinator: InetAddress,
         duration: Double,
@@ -595,32 +522,23 @@ object metadataMod {
         __obj.asInstanceOf[QueryTrace]
       }
       
-      @scala.inline
-      implicit class QueryTraceMutableBuilder[Self <: QueryTrace] (val x: Self) extends AnyVal {
+      extension [Self <: QueryTrace](x: Self) {
         
-        @scala.inline
-        def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
+        inline def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCoordinator(value: InetAddress): Self = StObject.set(x, "coordinator", value.asInstanceOf[js.Any])
+        inline def setCoordinator(value: InetAddress): Self = StObject.set(x, "coordinator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+        inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEvents(value: js.Array[Activity]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+        inline def setEvents(value: js.Array[Activity]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventsVarargs(value: Activity*): Self = StObject.set(x, "events", js.Array(value :_*))
+        inline def setEventsVarargs(value: Activity*): Self = StObject.set(x, "events", js.Array(value :_*))
         
-        @scala.inline
-        def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+        inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+        inline def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartedAt(value: Double | Long): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+        inline def setStartedAt(value: Double | Long): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
       }
     }
     
@@ -646,8 +564,7 @@ object metadataMod {
     }
     object SchemaFunction {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         argumentNames: js.Array[String],
         argumentTypes: js.Array[Code],
         body: String,
@@ -662,44 +579,31 @@ object metadataMod {
         __obj.asInstanceOf[SchemaFunction]
       }
       
-      @scala.inline
-      implicit class SchemaFunctionMutableBuilder[Self <: SchemaFunction] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaFunction](x: Self) {
         
-        @scala.inline
-        def setArgumentNames(value: js.Array[String]): Self = StObject.set(x, "argumentNames", value.asInstanceOf[js.Any])
+        inline def setArgumentNames(value: js.Array[String]): Self = StObject.set(x, "argumentNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgumentNamesVarargs(value: String*): Self = StObject.set(x, "argumentNames", js.Array(value :_*))
+        inline def setArgumentNamesVarargs(value: String*): Self = StObject.set(x, "argumentNames", js.Array(value :_*))
         
-        @scala.inline
-        def setArgumentTypes(value: js.Array[Code]): Self = StObject.set(x, "argumentTypes", value.asInstanceOf[js.Any])
+        inline def setArgumentTypes(value: js.Array[Code]): Self = StObject.set(x, "argumentTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgumentTypesVarargs(value: Code*): Self = StObject.set(x, "argumentTypes", js.Array(value :_*))
+        inline def setArgumentTypesVarargs(value: Code*): Self = StObject.set(x, "argumentTypes", js.Array(value :_*))
         
-        @scala.inline
-        def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCalledOnNullInput(value: Boolean): Self = StObject.set(x, "calledOnNullInput", value.asInstanceOf[js.Any])
+        inline def setCalledOnNullInput(value: Boolean): Self = StObject.set(x, "calledOnNullInput", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyspaceName(value: String): Self = StObject.set(x, "keyspaceName", value.asInstanceOf[js.Any])
+        inline def setKeyspaceName(value: String): Self = StObject.set(x, "keyspaceName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+        inline def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignature(value: js.Array[String]): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+        inline def setSignature(value: js.Array[String]): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSignatureVarargs(value: String*): Self = StObject.set(x, "signature", js.Array(value :_*))
+        inline def setSignatureVarargs(value: String*): Self = StObject.set(x, "signature", js.Array(value :_*))
       }
     }
     
@@ -723,8 +627,7 @@ object metadataMod {
     }
     object TableMetadata {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bloomFilterFalsePositiveChance: Double,
         caching: String,
         clusteringKeys: js.Array[ColumnInfo],
@@ -754,38 +657,27 @@ object metadataMod {
         __obj.asInstanceOf[TableMetadata]
       }
       
-      @scala.inline
-      implicit class TableMetadataMutableBuilder[Self <: TableMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: TableMetadata](x: Self) {
         
-        @scala.inline
-        def setCdc(value: Boolean): Self = StObject.set(x, "cdc", value.asInstanceOf[js.Any])
+        inline def setCdc(value: Boolean): Self = StObject.set(x, "cdc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCdcUndefined: Self = StObject.set(x, "cdc", js.undefined)
+        inline def setCdcUndefined: Self = StObject.set(x, "cdc", js.undefined)
         
-        @scala.inline
-        def setIndexInterval(value: Double): Self = StObject.set(x, "indexInterval", value.asInstanceOf[js.Any])
+        inline def setIndexInterval(value: Double): Self = StObject.set(x, "indexInterval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexIntervalUndefined: Self = StObject.set(x, "indexInterval", js.undefined)
+        inline def setIndexIntervalUndefined: Self = StObject.set(x, "indexInterval", js.undefined)
         
-        @scala.inline
-        def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+        inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndexesVarargs(value: Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+        inline def setIndexesVarargs(value: Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
         
-        @scala.inline
-        def setIsCompact(value: Boolean): Self = StObject.set(x, "isCompact", value.asInstanceOf[js.Any])
+        inline def setIsCompact(value: Boolean): Self = StObject.set(x, "isCompact", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMemtableFlushPeriod(value: Double): Self = StObject.set(x, "memtableFlushPeriod", value.asInstanceOf[js.Any])
+        inline def setMemtableFlushPeriod(value: Double): Self = StObject.set(x, "memtableFlushPeriod", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplicateOnWrite(value: Boolean): Self = StObject.set(x, "replicateOnWrite", value.asInstanceOf[js.Any])
+        inline def setReplicateOnWrite(value: Boolean): Self = StObject.set(x, "replicateOnWrite", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+        inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
       }
     }
     
@@ -797,23 +689,18 @@ object metadataMod {
     }
     object Udt {
       
-      @scala.inline
-      def apply(fields: js.Array[ColumnInfo], name: String): Udt = {
+      inline def apply(fields: js.Array[ColumnInfo], name: String): Udt = {
         val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[Udt]
       }
       
-      @scala.inline
-      implicit class UdtMutableBuilder[Self <: Udt] (val x: Self) extends AnyVal {
+      extension [Self <: Udt](x: Self) {
         
-        @scala.inline
-        def setFields(value: js.Array[ColumnInfo]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: js.Array[ColumnInfo]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsVarargs(value: ColumnInfo*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: ColumnInfo*): Self = StObject.set(x, "fields", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
   }

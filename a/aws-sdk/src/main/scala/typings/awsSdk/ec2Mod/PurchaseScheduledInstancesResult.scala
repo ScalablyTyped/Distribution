@@ -13,22 +13,17 @@ trait PurchaseScheduledInstancesResult extends StObject {
 }
 object PurchaseScheduledInstancesResult {
   
-  @scala.inline
-  def apply(): PurchaseScheduledInstancesResult = {
+  inline def apply(): PurchaseScheduledInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PurchaseScheduledInstancesResult]
   }
   
-  @scala.inline
-  implicit class PurchaseScheduledInstancesResultMutableBuilder[Self <: PurchaseScheduledInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseScheduledInstancesResult](x: Self) {
     
-    @scala.inline
-    def setScheduledInstanceSet(value: PurchasedScheduledInstanceSet): Self = StObject.set(x, "ScheduledInstanceSet", value.asInstanceOf[js.Any])
+    inline def setScheduledInstanceSet(value: PurchasedScheduledInstanceSet): Self = StObject.set(x, "ScheduledInstanceSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledInstanceSetUndefined: Self = StObject.set(x, "ScheduledInstanceSet", js.undefined)
+    inline def setScheduledInstanceSetUndefined: Self = StObject.set(x, "ScheduledInstanceSet", js.undefined)
     
-    @scala.inline
-    def setScheduledInstanceSetVarargs(value: ScheduledInstance*): Self = StObject.set(x, "ScheduledInstanceSet", js.Array(value :_*))
+    inline def setScheduledInstanceSetVarargs(value: ScheduledInstance*): Self = StObject.set(x, "ScheduledInstanceSet", js.Array(value :_*))
   }
 }

@@ -18,8 +18,7 @@ trait PanoramaData extends StObject {
 }
 object PanoramaData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     id: String,
     links: js.Array[PanoramaLink],
@@ -30,25 +29,18 @@ object PanoramaData {
     __obj.asInstanceOf[PanoramaData]
   }
   
-  @scala.inline
-  implicit class PanoramaDataMutableBuilder[Self <: PanoramaData] (val x: Self) extends AnyVal {
+  extension [Self <: PanoramaData](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: js.Array[PanoramaLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[PanoramaLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksVarargs(value: PanoramaLink*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: PanoramaLink*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiles(value: PanoramaTileData): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+    inline def setTiles(value: PanoramaTileData): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
   }
 }

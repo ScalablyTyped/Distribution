@@ -10,16 +10,13 @@ trait QueryQuery extends StObject {
 }
 object QueryQuery {
   
-  @scala.inline
-  def apply(query: typings.tern.ternMod.Query): QueryQuery = {
+  inline def apply(query: typings.tern.ternMod.Query): QueryQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryQuery]
   }
   
-  @scala.inline
-  implicit class QueryQueryMutableBuilder[Self <: QueryQuery] (val x: Self) extends AnyVal {
+  extension [Self <: QueryQuery](x: Self) {
     
-    @scala.inline
-    def setQuery(value: typings.tern.ternMod.Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: typings.tern.ternMod.Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

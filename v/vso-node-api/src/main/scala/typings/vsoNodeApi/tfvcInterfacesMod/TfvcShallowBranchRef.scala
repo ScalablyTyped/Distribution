@@ -13,16 +13,13 @@ trait TfvcShallowBranchRef extends StObject {
 }
 object TfvcShallowBranchRef {
   
-  @scala.inline
-  def apply(path: String): TfvcShallowBranchRef = {
+  inline def apply(path: String): TfvcShallowBranchRef = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[TfvcShallowBranchRef]
   }
   
-  @scala.inline
-  implicit class TfvcShallowBranchRefMutableBuilder[Self <: TfvcShallowBranchRef] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcShallowBranchRef](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

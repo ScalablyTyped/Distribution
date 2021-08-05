@@ -16,8 +16,7 @@ trait AccordionItemEventArgs
 }
 object AccordionItemEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     htmlElement: js.Object,
     htmlEvent: js.Object,
     item: BootstrapAccordionItem,
@@ -28,16 +27,12 @@ object AccordionItemEventArgs {
     __obj.asInstanceOf[AccordionItemEventArgs]
   }
   
-  @scala.inline
-  implicit class AccordionItemEventArgsMutableBuilder[Self <: AccordionItemEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AccordionItemEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Object): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Object): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: BootstrapAccordionItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: BootstrapAccordionItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

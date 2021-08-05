@@ -26,19 +26,16 @@ trait SignatureHelpProvider extends StObject {
 }
 object SignatureHelpProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideSignatureHelp: (TextDocument, Position, CancellationToken, SignatureHelpContext) => ProviderResult[SignatureHelp]
   ): SignatureHelpProvider = {
     val __obj = js.Dynamic.literal(provideSignatureHelp = js.Any.fromFunction4(provideSignatureHelp))
     __obj.asInstanceOf[SignatureHelpProvider]
   }
   
-  @scala.inline
-  implicit class SignatureHelpProviderMutableBuilder[Self <: SignatureHelpProvider] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureHelpProvider](x: Self) {
     
-    @scala.inline
-    def setProvideSignatureHelp(
+    inline def setProvideSignatureHelp(
       value: (TextDocument, Position, CancellationToken, SignatureHelpContext) => ProviderResult[SignatureHelp]
     ): Self = StObject.set(x, "provideSignatureHelp", js.Any.fromFunction4(value))
   }

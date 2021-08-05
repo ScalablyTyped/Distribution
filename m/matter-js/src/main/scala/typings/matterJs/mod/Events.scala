@@ -40,11 +40,9 @@ object Events {
     * @param eventName
     * @param callback
     */
-  @scala.inline
-  def off(obj: js.Any, eventName: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(obj.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off(obj: js.Any, eventName: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(obj.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def on(obj: js.Any, name: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(obj: js.Any, name: String, callback: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when a call to `Composite.add` is made, after objects have been added.
@@ -55,8 +53,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_afterAdd(obj: Engine, name: afterAdd, callback: js.Function1[/* e */ IEventComposite[Composite], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_afterAdd(obj: Engine, name: afterAdd, callback: js.Function1[/* e */ IEventComposite[Composite], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when a call to `Composite.remove` is made, after objects have been removed.
@@ -67,8 +64,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_afterRemove(obj: Engine, name: afterRemove, callback: js.Function1[/* e */ IEventComposite[Composite], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_afterRemove(obj: Engine, name: afterRemove, callback: js.Function1[/* e */ IEventComposite[Composite], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired after rendering
@@ -79,8 +75,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_afterRender(
+  inline def on_afterRender(
     obj: Engine,
     name: afterRender,
     callback: js.Function1[/* e */ IEventTimestamped[Render | Runner], Unit]
@@ -95,8 +90,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_afterTick(obj: Engine, name: afterTick, callback: js.Function1[/* e */ IEventTimestamped[Runner], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_afterTick(obj: Engine, name: afterTick, callback: js.Function1[/* e */ IEventTimestamped[Runner], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired after engine update and all collision events
@@ -107,8 +101,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_afterUpdate(obj: Engine, name: afterUpdate, callback: js.Function1[/* e */ IEventTimestamped[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_afterUpdate(obj: Engine, name: afterUpdate, callback: js.Function1[/* e */ IEventTimestamped[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when a call to `Composite.add` is made, before objects have been added.
@@ -119,8 +112,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_beforeAdd(obj: Engine, name: beforeAdd, callback: js.Function1[/* e */ IEventComposite[Composite], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_beforeAdd(obj: Engine, name: beforeAdd, callback: js.Function1[/* e */ IEventComposite[Composite], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when a call to `Composite.remove` is made, before objects have been removed.
@@ -131,8 +123,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_beforeRemove(obj: Engine, name: beforeRemove, callback: js.Function1[/* e */ IEventComposite[Composite], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_beforeRemove(obj: Engine, name: beforeRemove, callback: js.Function1[/* e */ IEventComposite[Composite], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired before rendering
@@ -143,8 +134,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_beforeRender(
+  inline def on_beforeRender(
     obj: Engine,
     name: beforeRender,
     callback: js.Function1[/* e */ IEventTimestamped[Render | Runner], Unit]
@@ -159,8 +149,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_beforeTick(obj: Engine, name: beforeTick, callback: js.Function1[/* e */ IEventTimestamped[Runner], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_beforeTick(obj: Engine, name: beforeTick, callback: js.Function1[/* e */ IEventTimestamped[Runner], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired just before an update
@@ -171,8 +160,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_beforeUpdate(obj: Engine, name: beforeUpdate, callback: js.Function1[/* e */ IEventTimestamped[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_beforeUpdate(obj: Engine, name: beforeUpdate, callback: js.Function1[/* e */ IEventTimestamped[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired after engine update, provides a list of all pairs that are colliding in the current tick (if any)
@@ -184,8 +172,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_collisionActive(obj: Engine, name: collisionActive, callback: js.Function1[/* e */ IEventCollision[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_collisionActive(obj: Engine, name: collisionActive, callback: js.Function1[/* e */ IEventCollision[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired after engine update, provides a list of all pairs that have ended collision in the current tick (if any)
@@ -197,8 +184,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_collisionEnd(obj: Engine, name: collisionEnd, callback: js.Function1[/* e */ IEventCollision[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_collisionEnd(obj: Engine, name: collisionEnd, callback: js.Function1[/* e */ IEventCollision[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired after engine update, provides a list of all pairs that have started to collide in the current tick (if any)
@@ -210,8 +196,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_collisionStart(obj: Engine, name: collisionStart, callback: js.Function1[/* e */ IEventCollision[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_collisionStart(obj: Engine, name: collisionStart, callback: js.Function1[/* e */ IEventCollision[Engine], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when the mouse is down (or a touch has started) during the last step
@@ -219,8 +204,7 @@ object Events {
     * @param name
     * @param callback
     */
-  @scala.inline
-  def on_mousedown(
+  inline def on_mousedown(
     obj: MouseConstraint,
     name: mousedown,
     callback: js.Function1[/* e */ IMouseEvent[MouseConstraint], Unit]
@@ -232,8 +216,7 @@ object Events {
     * @param name
     * @param callback
     */
-  @scala.inline
-  def on_mousemove(
+  inline def on_mousemove(
     obj: MouseConstraint,
     name: mousemove,
     callback: js.Function1[/* e */ IMouseEvent[MouseConstraint], Unit]
@@ -245,8 +228,7 @@ object Events {
     * @param name
     * @param callback
     */
-  @scala.inline
-  def on_mouseup(
+  inline def on_mouseup(
     obj: MouseConstraint,
     name: mouseup,
     callback: js.Function1[/* e */ IMouseEvent[MouseConstraint], Unit]
@@ -261,8 +243,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_sleepEnd(obj: Body, name: sleepEnd, callback: js.Function1[/* e */ IEvent[Body], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_sleepEnd(obj: Body, name: sleepEnd, callback: js.Function1[/* e */ IEvent[Body], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when a body starts sleeping (where `this` is the body).
@@ -273,8 +254,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_sleepStart(obj: Body, name: sleepStart, callback: js.Function1[/* e */ IEvent[Body], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_sleepStart(obj: Body, name: sleepStart, callback: js.Function1[/* e */ IEvent[Body], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired after engine timing updated, but just before update
@@ -285,8 +265,7 @@ object Events {
     * @param {} event.source The source object of the event
     * @param {} event.name The name of the event
     */
-  @scala.inline
-  def on_tick(obj: Engine, name: tick, callback: js.Function1[/* e */ IEventTimestamped[Runner], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_tick(obj: Engine, name: tick, callback: js.Function1[/* e */ IEventTimestamped[Runner], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fires all the callbacks subscribed to the given object's eventName, in the order they subscribed, if any.
@@ -295,8 +274,6 @@ object Events {
     * @param eventNames
     * @param event
     */
-  @scala.inline
-  def trigger(`object`: js.Any, eventNames: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def trigger(`object`: js.Any, eventNames: String, event: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trigger(`object`: js.Any, eventNames: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trigger(`object`: js.Any, eventNames: String, event: js.Function1[/* e */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(`object`.asInstanceOf[js.Any], eventNames.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -13,16 +13,13 @@ trait InvalidTrackLanguageError
 }
 object InvalidTrackLanguageError {
   
-  @scala.inline
-  def apply(message: String, method: String): InvalidTrackLanguageError = {
+  inline def apply(message: String, method: String): InvalidTrackLanguageError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "InvalidTrackLanguageError")
     __obj.asInstanceOf[InvalidTrackLanguageError]
   }
   
-  @scala.inline
-  implicit class InvalidTrackLanguageErrorMutableBuilder[Self <: InvalidTrackLanguageError] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidTrackLanguageError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackLanguageError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackLanguageError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

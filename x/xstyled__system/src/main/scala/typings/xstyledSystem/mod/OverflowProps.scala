@@ -14,27 +14,22 @@ trait OverflowProps extends StObject {
 }
 object OverflowProps {
   
-  @scala.inline
-  def apply(): OverflowProps = {
+  inline def apply(): OverflowProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverflowProps]
   }
   
-  @scala.inline
-  implicit class OverflowPropsMutableBuilder[Self <: OverflowProps] (val x: Self) extends AnyVal {
+  extension [Self <: OverflowProps](x: Self) {
     
-    @scala.inline
-    def setOverflow(
+    inline def setOverflow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any
         ]
     ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    @scala.inline
-    def setOverflowVarargs(
+    inline def setOverflowVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any)*
     ): Self = StObject.set(x, "overflow", js.Array(value :_*))
   }

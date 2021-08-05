@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RendererType extends StObject
 object RendererType {
   
-  @scala.inline
-  def canvas: typings.xterm.xtermStrings.canvas = "canvas".asInstanceOf[typings.xterm.xtermStrings.canvas]
+  inline def canvas: typings.xterm.xtermStrings.canvas = "canvas".asInstanceOf[typings.xterm.xtermStrings.canvas]
   
-  @scala.inline
-  def dom: typings.xterm.xtermStrings.dom = "dom".asInstanceOf[typings.xterm.xtermStrings.dom]
+  inline def dom: typings.xterm.xtermStrings.dom = "dom".asInstanceOf[typings.xterm.xtermStrings.dom]
 }

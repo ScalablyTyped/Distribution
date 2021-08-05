@@ -57,44 +57,32 @@ object layoutMainMod {
   }
   object LayoutMainProps {
     
-    @scala.inline
-    def apply(): LayoutMainProps = {
+    inline def apply(): LayoutMainProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutMainProps]
     }
     
-    @scala.inline
-    implicit class LayoutMainPropsMutableBuilder[Self <: LayoutMainProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutMainProps](x: Self) {
       
-      @scala.inline
-      def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      @scala.inline
-      def setComponent(value: div | main): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: div | main): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setHeaderOffset(value: Boolean): Self = StObject.set(x, "headerOffset", value.asInstanceOf[js.Any])
+      inline def setHeaderOffset(value: Boolean): Self = StObject.set(x, "headerOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderOffsetUndefined: Self = StObject.set(x, "headerOffset", js.undefined)
+      inline def setHeaderOffsetUndefined: Self = StObject.set(x, "headerOffset", js.undefined)
       
-      @scala.inline
-      def setNavOffset(value: Boolean): Self = StObject.set(x, "navOffset", value.asInstanceOf[js.Any])
+      inline def setNavOffset(value: Boolean): Self = StObject.set(x, "navOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavOffsetUndefined: Self = StObject.set(x, "navOffset", js.undefined)
+      inline def setNavOffsetUndefined: Self = StObject.set(x, "navOffset", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: TransitionTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: TransitionTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

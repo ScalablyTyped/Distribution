@@ -29,7 +29,7 @@ trait Document extends StObject {
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
   
-  @JSName("DAO.Document_typekey")
+  /* private */ @JSName("DAO.Document_typekey")
   var DAODotDocument_typekey: Document = js.native
   
   val DateCreated: VarDate = js.native

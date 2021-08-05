@@ -38,8 +38,7 @@ trait AuthRequiredEvent extends StObject {
 }
 object AuthRequiredEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authChallenge: AuthChallenge,
     frameId: FrameId,
     request: Request,
@@ -50,22 +49,16 @@ object AuthRequiredEvent {
     __obj.asInstanceOf[AuthRequiredEvent]
   }
   
-  @scala.inline
-  implicit class AuthRequiredEventMutableBuilder[Self <: AuthRequiredEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AuthRequiredEvent](x: Self) {
     
-    @scala.inline
-    def setAuthChallenge(value: AuthChallenge): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
+    inline def setAuthChallenge(value: AuthChallenge): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

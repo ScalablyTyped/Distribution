@@ -16,25 +16,19 @@ trait SketchMSFlowConnection extends StObject {
 }
 object SketchMSFlowConnection {
   
-  @scala.inline
-  def apply(animationType: Double): SketchMSFlowConnection = {
+  inline def apply(animationType: Double): SketchMSFlowConnection = {
     val __obj = js.Dynamic.literal(_class = "immutableFlowConnection", animationType = animationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSFlowConnection]
   }
   
-  @scala.inline
-  implicit class SketchMSFlowConnectionMutableBuilder[Self <: SketchMSFlowConnection] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSFlowConnection](x: Self) {
     
-    @scala.inline
-    def setAnimationType(value: Double): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+    inline def setAnimationType(value: Double): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationArtboardID(value: String | back): Self = StObject.set(x, "destinationArtboardID", value.asInstanceOf[js.Any])
+    inline def setDestinationArtboardID(value: String | back): Self = StObject.set(x, "destinationArtboardID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationArtboardIDUndefined: Self = StObject.set(x, "destinationArtboardID", js.undefined)
+    inline def setDestinationArtboardIDUndefined: Self = StObject.set(x, "destinationArtboardID", js.undefined)
     
-    @scala.inline
-    def set_class(value: immutableFlowConnection): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: immutableFlowConnection): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

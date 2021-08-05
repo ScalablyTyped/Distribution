@@ -19,22 +19,17 @@ trait VideoDisplayProperties extends StObject {
 }
 object VideoDisplayProperties {
   
-  @scala.inline
-  def apply(genres: IVector[String], subtitle: String, title: String): VideoDisplayProperties = {
+  inline def apply(genres: IVector[String], subtitle: String, title: String): VideoDisplayProperties = {
     val __obj = js.Dynamic.literal(genres = genres.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoDisplayProperties]
   }
   
-  @scala.inline
-  implicit class VideoDisplayPropertiesMutableBuilder[Self <: VideoDisplayProperties] (val x: Self) extends AnyVal {
+  extension [Self <: VideoDisplayProperties](x: Self) {
     
-    @scala.inline
-    def setGenres(value: IVector[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+    inline def setGenres(value: IVector[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

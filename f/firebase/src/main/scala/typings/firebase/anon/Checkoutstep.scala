@@ -15,25 +15,19 @@ trait Checkoutstep
 }
 object Checkoutstep {
   
-  @scala.inline
-  def apply(): Checkoutstep = {
+  inline def apply(): Checkoutstep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Checkoutstep]
   }
   
-  @scala.inline
-  implicit class CheckoutstepMutableBuilder[Self <: Checkoutstep] (val x: Self) extends AnyVal {
+  extension [Self <: Checkoutstep](x: Self) {
     
-    @scala.inline
-    def setCheckout_option(value: String): Self = StObject.set(x, "checkout_option", value.asInstanceOf[js.Any])
+    inline def setCheckout_option(value: String): Self = StObject.set(x, "checkout_option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckout_optionUndefined: Self = StObject.set(x, "checkout_option", js.undefined)
+    inline def setCheckout_optionUndefined: Self = StObject.set(x, "checkout_option", js.undefined)
     
-    @scala.inline
-    def setCheckout_step(value: Double): Self = StObject.set(x, "checkout_step", value.asInstanceOf[js.Any])
+    inline def setCheckout_step(value: Double): Self = StObject.set(x, "checkout_step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckout_stepUndefined: Self = StObject.set(x, "checkout_step", js.undefined)
+    inline def setCheckout_stepUndefined: Self = StObject.set(x, "checkout_step", js.undefined)
   }
 }

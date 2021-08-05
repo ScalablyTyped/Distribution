@@ -13,13 +13,11 @@ object fillMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fill[R /* <: Rank */](
+  inline def fill[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: String
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def fill[R /* <: Rank */](
+  inline def fill[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: String,
     dtype: DataType
@@ -38,13 +36,11 @@ object fillMod {
     *
     * @doc {heading: 'Tensors', subheading: 'Creation'}
     */
-  @scala.inline
-  def fill[R /* <: Rank */](
+  inline def fill[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: Double
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def fill[R /* <: Rank */](
+  inline def fill[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: Double,
     dtype: DataType

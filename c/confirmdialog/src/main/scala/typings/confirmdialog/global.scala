@@ -15,7 +15,6 @@ object global {
     @JSGlobal("jconfirm.defaults")
     @js.native
     def defaults: js.Any = js.native
-    @scala.inline
-    def defaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+    inline def defaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   }
 }

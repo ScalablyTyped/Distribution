@@ -24,8 +24,7 @@ trait ApplicationCacheEventMap extends StObject {
 }
 object ApplicationCacheEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cached: Event,
     checking: Event,
     downloading: Event,
@@ -39,31 +38,22 @@ object ApplicationCacheEventMap {
     __obj.asInstanceOf[ApplicationCacheEventMap]
   }
   
-  @scala.inline
-  implicit class ApplicationCacheEventMapMutableBuilder[Self <: ApplicationCacheEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationCacheEventMap](x: Self) {
     
-    @scala.inline
-    def setCached(value: Event): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
+    inline def setCached(value: Event): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecking(value: Event): Self = StObject.set(x, "checking", value.asInstanceOf[js.Any])
+    inline def setChecking(value: Event): Self = StObject.set(x, "checking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloading(value: Event): Self = StObject.set(x, "downloading", value.asInstanceOf[js.Any])
+    inline def setDownloading(value: Event): Self = StObject.set(x, "downloading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoupdate(value: Event): Self = StObject.set(x, "noupdate", value.asInstanceOf[js.Any])
+    inline def setNoupdate(value: Event): Self = StObject.set(x, "noupdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObsolete(value: Event): Self = StObject.set(x, "obsolete", value.asInstanceOf[js.Any])
+    inline def setObsolete(value: Event): Self = StObject.set(x, "obsolete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: ProgressEvent[ApplicationCache]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: ProgressEvent[ApplicationCache]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateready(value: Event): Self = StObject.set(x, "updateready", value.asInstanceOf[js.Any])
+    inline def setUpdateready(value: Event): Self = StObject.set(x, "updateready", value.asInstanceOf[js.Any])
   }
 }

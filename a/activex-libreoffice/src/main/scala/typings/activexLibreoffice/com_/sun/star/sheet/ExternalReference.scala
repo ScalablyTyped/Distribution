@@ -43,19 +43,15 @@ trait ExternalReference extends StObject {
 }
 object ExternalReference {
   
-  @scala.inline
-  def apply(Index: Double, Reference: js.Any): ExternalReference = {
+  inline def apply(Index: Double, Reference: js.Any): ExternalReference = {
     val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any], Reference = Reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalReference]
   }
   
-  @scala.inline
-  implicit class ExternalReferenceMutableBuilder[Self <: ExternalReference] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalReference](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: js.Any): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: js.Any): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
   }
 }

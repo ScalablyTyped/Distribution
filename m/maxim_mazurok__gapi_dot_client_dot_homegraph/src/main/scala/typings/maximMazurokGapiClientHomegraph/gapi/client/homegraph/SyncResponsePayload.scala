@@ -14,28 +14,21 @@ trait SyncResponsePayload extends StObject {
 }
 object SyncResponsePayload {
   
-  @scala.inline
-  def apply(): SyncResponsePayload = {
+  inline def apply(): SyncResponsePayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncResponsePayload]
   }
   
-  @scala.inline
-  implicit class SyncResponsePayloadMutableBuilder[Self <: SyncResponsePayload] (val x: Self) extends AnyVal {
+  extension [Self <: SyncResponsePayload](x: Self) {
     
-    @scala.inline
-    def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
+    inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
+    inline def setAgentUserIdUndefined: Self = StObject.set(x, "agentUserId", js.undefined)
     
-    @scala.inline
-    def setDevices(value: js.Array[Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[Device]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
   }
 }

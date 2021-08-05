@@ -17,31 +17,23 @@ trait CPUInfo extends StObject {
 }
 object CPUInfo {
   
-  @scala.inline
-  def apply(): CPUInfo = {
+  inline def apply(): CPUInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CPUInfo]
   }
   
-  @scala.inline
-  implicit class CPUInfoMutableBuilder[Self <: CPUInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CPUInfo](x: Self) {
     
-    @scala.inline
-    def setCpuProcessor(value: String): Self = StObject.set(x, "cpuProcessor", value.asInstanceOf[js.Any])
+    inline def setCpuProcessor(value: String): Self = StObject.set(x, "cpuProcessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuProcessorUndefined: Self = StObject.set(x, "cpuProcessor", js.undefined)
+    inline def setCpuProcessorUndefined: Self = StObject.set(x, "cpuProcessor", js.undefined)
     
-    @scala.inline
-    def setCpuSpeedInGhz(value: Double): Self = StObject.set(x, "cpuSpeedInGhz", value.asInstanceOf[js.Any])
+    inline def setCpuSpeedInGhz(value: Double): Self = StObject.set(x, "cpuSpeedInGhz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuSpeedInGhzUndefined: Self = StObject.set(x, "cpuSpeedInGhz", js.undefined)
+    inline def setCpuSpeedInGhzUndefined: Self = StObject.set(x, "cpuSpeedInGhz", js.undefined)
     
-    @scala.inline
-    def setNumberOfCores(value: Double): Self = StObject.set(x, "numberOfCores", value.asInstanceOf[js.Any])
+    inline def setNumberOfCores(value: Double): Self = StObject.set(x, "numberOfCores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfCoresUndefined: Self = StObject.set(x, "numberOfCores", js.undefined)
+    inline def setNumberOfCoresUndefined: Self = StObject.set(x, "numberOfCores", js.undefined)
   }
 }

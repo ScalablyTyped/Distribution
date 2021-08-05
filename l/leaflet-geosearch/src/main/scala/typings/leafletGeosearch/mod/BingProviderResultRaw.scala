@@ -28,8 +28,7 @@ trait BingProviderResultRaw extends StObject {
 }
 object BingProviderResultRaw {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     __type: String,
     address: AdminDistrict,
     bbox: js.Tuple4[Double, Double, Double, Double],
@@ -44,40 +43,28 @@ object BingProviderResultRaw {
     __obj.asInstanceOf[BingProviderResultRaw]
   }
   
-  @scala.inline
-  implicit class BingProviderResultRawMutableBuilder[Self <: BingProviderResultRaw] (val x: Self) extends AnyVal {
+  extension [Self <: BingProviderResultRaw](x: Self) {
     
-    @scala.inline
-    def setAddress(value: AdminDistrict): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: AdminDistrict): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBbox(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+    inline def setBbox(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidence(value: String): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: String): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocodePoints(value: js.Array[BingProviderResultPointca]): Self = StObject.set(x, "geocodePoints", value.asInstanceOf[js.Any])
+    inline def setGeocodePoints(value: js.Array[BingProviderResultPointca]): Self = StObject.set(x, "geocodePoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocodePointsVarargs(value: BingProviderResultPointca*): Self = StObject.set(x, "geocodePoints", js.Array(value :_*))
+    inline def setGeocodePointsVarargs(value: BingProviderResultPointca*): Self = StObject.set(x, "geocodePoints", js.Array(value :_*))
     
-    @scala.inline
-    def setMatchCodes(value: js.Array[String]): Self = StObject.set(x, "matchCodes", value.asInstanceOf[js.Any])
+    inline def setMatchCodes(value: js.Array[String]): Self = StObject.set(x, "matchCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCodesVarargs(value: String*): Self = StObject.set(x, "matchCodes", js.Array(value :_*))
+    inline def setMatchCodesVarargs(value: String*): Self = StObject.set(x, "matchCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: BingProviderResultPoint): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: BingProviderResultPoint): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+    inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

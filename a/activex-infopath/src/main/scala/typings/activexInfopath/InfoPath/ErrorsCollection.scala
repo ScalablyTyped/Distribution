@@ -73,7 +73,7 @@ trait ErrorsCollection extends StObject {
   
   def DeleteAll(): Unit = js.native
   
-  @JSName("InfoPath.ErrorsCollection_typekey")
+  /* private */ @JSName("InfoPath.ErrorsCollection_typekey")
   var InfoPathDotErrorsCollection_typekey: ErrorsCollection = js.native
   
   def Item(index: Double): Error = js.native

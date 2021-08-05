@@ -10,16 +10,13 @@ trait Protocol extends StObject {
 }
 object Protocol {
   
-  @scala.inline
-  def apply(protocol: String): Protocol = {
+  inline def apply(protocol: String): Protocol = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[Protocol]
   }
   
-  @scala.inline
-  implicit class ProtocolMutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
+  extension [Self <: Protocol](x: Self) {
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

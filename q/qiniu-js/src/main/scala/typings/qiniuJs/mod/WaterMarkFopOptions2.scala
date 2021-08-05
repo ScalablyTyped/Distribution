@@ -21,8 +21,7 @@ trait WaterMarkFopOptions2
 }
 object WaterMarkFopOptions2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dissolve: Double,
     dx: Double,
     dy: Double,
@@ -36,10 +35,8 @@ object WaterMarkFopOptions2 {
     __obj.asInstanceOf[WaterMarkFopOptions2]
   }
   
-  @scala.inline
-  implicit class WaterMarkFopOptions2MutableBuilder[Self <: WaterMarkFopOptions2] (val x: Self) extends AnyVal {
+  extension [Self <: WaterMarkFopOptions2](x: Self) {
     
-    @scala.inline
-    def setFop(value: typings.qiniuJs.qiniuJsStrings.watermark): Self = StObject.set(x, "fop", value.asInstanceOf[js.Any])
+    inline def setFop(value: typings.qiniuJs.qiniuJsStrings.watermark): Self = StObject.set(x, "fop", value.asInstanceOf[js.Any])
   }
 }

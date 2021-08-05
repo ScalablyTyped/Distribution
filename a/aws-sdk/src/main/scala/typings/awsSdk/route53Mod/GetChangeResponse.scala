@@ -13,16 +13,13 @@ trait GetChangeResponse extends StObject {
 }
 object GetChangeResponse {
   
-  @scala.inline
-  def apply(ChangeInfo: ChangeInfo): GetChangeResponse = {
+  inline def apply(ChangeInfo: ChangeInfo): GetChangeResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChangeResponse]
   }
   
-  @scala.inline
-  implicit class GetChangeResponseMutableBuilder[Self <: GetChangeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetChangeResponse](x: Self) {
     
-    @scala.inline
-    def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
+    inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }
 }

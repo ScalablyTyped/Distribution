@@ -146,85 +146,59 @@ trait GridExcelExporterCallbacks
 }
 object GridExcelExporterCallbacks {
   
-  @scala.inline
-  def apply(): GridExcelExporterCallbacks = {
+  inline def apply(): GridExcelExporterCallbacks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridExcelExporterCallbacks]
   }
   
-  @scala.inline
-  implicit class GridExcelExporterCallbacksMutableBuilder[Self <: GridExcelExporterCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: GridExcelExporterCallbacks](x: Self) {
     
-    @scala.inline
-    def setCellExported(value: js.Function): Self = StObject.set(x, "cellExported", value.asInstanceOf[js.Any])
+    inline def setCellExported(value: js.Function): Self = StObject.set(x, "cellExported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellExportedUndefined: Self = StObject.set(x, "cellExported", js.undefined)
+    inline def setCellExportedUndefined: Self = StObject.set(x, "cellExported", js.undefined)
     
-    @scala.inline
-    def setCellExporting(value: js.Function): Self = StObject.set(x, "cellExporting", value.asInstanceOf[js.Any])
+    inline def setCellExporting(value: js.Function): Self = StObject.set(x, "cellExporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellExportingUndefined: Self = StObject.set(x, "cellExporting", js.undefined)
+    inline def setCellExportingUndefined: Self = StObject.set(x, "cellExporting", js.undefined)
     
-    @scala.inline
-    def setError(value: js.Function): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Function): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setExportEnding(value: js.Function): Self = StObject.set(x, "exportEnding", value.asInstanceOf[js.Any])
+    inline def setExportEnding(value: js.Function): Self = StObject.set(x, "exportEnding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportEndingUndefined: Self = StObject.set(x, "exportEnding", js.undefined)
+    inline def setExportEndingUndefined: Self = StObject.set(x, "exportEnding", js.undefined)
     
-    @scala.inline
-    def setExportStarting(value: js.Function): Self = StObject.set(x, "exportStarting", value.asInstanceOf[js.Any])
+    inline def setExportStarting(value: js.Function): Self = StObject.set(x, "exportStarting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportStartingUndefined: Self = StObject.set(x, "exportStarting", js.undefined)
+    inline def setExportStartingUndefined: Self = StObject.set(x, "exportStarting", js.undefined)
     
-    @scala.inline
-    def setHeaderCellExported(value: js.Function): Self = StObject.set(x, "headerCellExported", value.asInstanceOf[js.Any])
+    inline def setHeaderCellExported(value: js.Function): Self = StObject.set(x, "headerCellExported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderCellExportedUndefined: Self = StObject.set(x, "headerCellExported", js.undefined)
+    inline def setHeaderCellExportedUndefined: Self = StObject.set(x, "headerCellExported", js.undefined)
     
-    @scala.inline
-    def setHeaderCellExporting(value: js.Function): Self = StObject.set(x, "headerCellExporting", value.asInstanceOf[js.Any])
+    inline def setHeaderCellExporting(value: js.Function): Self = StObject.set(x, "headerCellExporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderCellExportingUndefined: Self = StObject.set(x, "headerCellExporting", js.undefined)
+    inline def setHeaderCellExportingUndefined: Self = StObject.set(x, "headerCellExporting", js.undefined)
     
-    @scala.inline
-    def setRowExported(value: js.Function): Self = StObject.set(x, "rowExported", value.asInstanceOf[js.Any])
+    inline def setRowExported(value: js.Function): Self = StObject.set(x, "rowExported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowExportedUndefined: Self = StObject.set(x, "rowExported", js.undefined)
+    inline def setRowExportedUndefined: Self = StObject.set(x, "rowExported", js.undefined)
     
-    @scala.inline
-    def setRowExporting(value: js.Function): Self = StObject.set(x, "rowExporting", value.asInstanceOf[js.Any])
+    inline def setRowExporting(value: js.Function): Self = StObject.set(x, "rowExporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowExportingUndefined: Self = StObject.set(x, "rowExporting", js.undefined)
+    inline def setRowExportingUndefined: Self = StObject.set(x, "rowExporting", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setSummaryExported(value: js.Function): Self = StObject.set(x, "summaryExported", value.asInstanceOf[js.Any])
+    inline def setSummaryExported(value: js.Function): Self = StObject.set(x, "summaryExported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryExportedUndefined: Self = StObject.set(x, "summaryExported", js.undefined)
+    inline def setSummaryExportedUndefined: Self = StObject.set(x, "summaryExported", js.undefined)
     
-    @scala.inline
-    def setSummaryExporting(value: js.Function): Self = StObject.set(x, "summaryExporting", value.asInstanceOf[js.Any])
+    inline def setSummaryExporting(value: js.Function): Self = StObject.set(x, "summaryExporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryExportingUndefined: Self = StObject.set(x, "summaryExporting", js.undefined)
+    inline def setSummaryExportingUndefined: Self = StObject.set(x, "summaryExporting", js.undefined)
   }
 }

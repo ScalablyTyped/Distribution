@@ -21,19 +21,15 @@ trait SignatureHelpParams
 }
 object SignatureHelpParams {
   
-  @scala.inline
-  def apply(position: Position, textDocument: TextDocumentIdentifier): SignatureHelpParams = {
+  inline def apply(position: Position, textDocument: TextDocumentIdentifier): SignatureHelpParams = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureHelpParams]
   }
   
-  @scala.inline
-  implicit class SignatureHelpParamsMutableBuilder[Self <: SignatureHelpParams] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureHelpParams](x: Self) {
     
-    @scala.inline
-    def setContext(value: SignatureHelpContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: SignatureHelpContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
   }
 }

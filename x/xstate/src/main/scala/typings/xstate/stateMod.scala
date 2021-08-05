@@ -134,48 +134,34 @@ object stateMod {
       * Creates a new State instance for the given `config`.
       * @param config The state config
       */
-    @scala.inline
-    def create[TC, TE /* <: EventObject */](config: StateConfig[TC, TE]): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def create[TC, TE /* <: EventObject */](config: StateConfig[TC, TE]): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
     
     /**
       * Creates a new State instance for the given `stateValue` and `context`.
       * @param stateValue
       * @param context
       */
-    @scala.inline
-    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]]): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
-    @scala.inline
-    def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]], context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
-    @scala.inline
-    def from[TC, TE /* <: EventObject */](stateValue: StateValue): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
-    @scala.inline
-    def from[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]]): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def from[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]], context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def from[TC, TE /* <: EventObject */](stateValue: StateValue): State[TC, TE, js.Any, Context[TC]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any]).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def from[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
     
     /**
       * Creates a new `State` instance for the given `stateValue` and `context` with no actions (side-effects).
       * @param stateValue
       * @param context
       */
-    @scala.inline
-    def inert[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]], context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
-    @scala.inline
-    def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def inert[TC, TE /* <: EventObject */](stateValue: State[TC, TE, js.Any, Context[TC]], context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
+    inline def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, js.Any, Context[TC]] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, js.Any, Context[TC]]]
   }
   
-  @scala.inline
-  def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, js.Any, Context[TC]]): ActionObject[TC, TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionToState")(action.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TC, TE]]
+  inline def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, js.Any, Context[TC]]): ActionObject[TC, TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionToState")(action.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TC, TE]]
   
-  @scala.inline
-  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean]
-  @scala.inline
-  def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean]
+  inline def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean]
+  inline def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean]
   
-  @scala.inline
-  def stateValuesEqual(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")().asInstanceOf[Boolean]
-  @scala.inline
-  def stateValuesEqual(a: Unit, b: StateValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def stateValuesEqual(a: StateValue): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def stateValuesEqual(a: StateValue, b: StateValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def stateValuesEqual(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")().asInstanceOf[Boolean]
+  inline def stateValuesEqual(a: Unit, b: StateValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def stateValuesEqual(a: StateValue): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def stateValuesEqual(a: StateValue, b: StateValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("stateValuesEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

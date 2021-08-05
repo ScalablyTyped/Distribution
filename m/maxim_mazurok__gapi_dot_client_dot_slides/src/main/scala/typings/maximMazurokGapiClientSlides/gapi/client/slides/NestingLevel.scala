@@ -11,19 +11,15 @@ trait NestingLevel extends StObject {
 }
 object NestingLevel {
   
-  @scala.inline
-  def apply(): NestingLevel = {
+  inline def apply(): NestingLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NestingLevel]
   }
   
-  @scala.inline
-  implicit class NestingLevelMutableBuilder[Self <: NestingLevel] (val x: Self) extends AnyVal {
+  extension [Self <: NestingLevel](x: Self) {
     
-    @scala.inline
-    def setBulletStyle(value: TextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
+    inline def setBulletStyle(value: TextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
+    inline def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
   }
 }

@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def voronoi[T](): VoronoiLayout[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("voronoi")().asInstanceOf[VoronoiLayout[T]]
+  inline def voronoi[T](): VoronoiLayout[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("voronoi")().asInstanceOf[VoronoiLayout[T]]
   
   trait VoronoiCell[T] extends StObject {
     
@@ -28,23 +27,18 @@ object mod {
   }
   object VoronoiCell {
     
-    @scala.inline
-    def apply[T](halfedges: js.Array[Double], site: VoronoiSite[T]): VoronoiCell[T] = {
+    inline def apply[T](halfedges: js.Array[Double], site: VoronoiSite[T]): VoronoiCell[T] = {
       val __obj = js.Dynamic.literal(halfedges = halfedges.asInstanceOf[js.Any], site = site.asInstanceOf[js.Any])
       __obj.asInstanceOf[VoronoiCell[T]]
     }
     
-    @scala.inline
-    implicit class VoronoiCellMutableBuilder[Self <: VoronoiCell[?], T] (val x: Self & VoronoiCell[T]) extends AnyVal {
+    extension [Self <: VoronoiCell[?], T](x: Self & VoronoiCell[T]) {
       
-      @scala.inline
-      def setHalfedges(value: js.Array[Double]): Self = StObject.set(x, "halfedges", value.asInstanceOf[js.Any])
+      inline def setHalfedges(value: js.Array[Double]): Self = StObject.set(x, "halfedges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalfedgesVarargs(value: Double*): Self = StObject.set(x, "halfedges", js.Array(value :_*))
+      inline def setHalfedgesVarargs(value: Double*): Self = StObject.set(x, "halfedges", js.Array(value :_*))
       
-      @scala.inline
-      def setSite(value: VoronoiSite[T]): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+      inline def setSite(value: VoronoiSite[T]): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,20 +233,16 @@ object mod {
   }
   object VoronoiLink {
     
-    @scala.inline
-    def apply[T](source: T, target: T): VoronoiLink[T] = {
+    inline def apply[T](source: T, target: T): VoronoiLink[T] = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[VoronoiLink[T]]
     }
     
-    @scala.inline
-    implicit class VoronoiLinkMutableBuilder[Self <: VoronoiLink[?], T] (val x: Self & VoronoiLink[T]) extends AnyVal {
+    extension [Self <: VoronoiLink[?], T](x: Self & VoronoiLink[T]) {
       
-      @scala.inline
-      def setSource(value: T): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: T): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   

@@ -16,7 +16,7 @@ trait CategoryRuleCondition extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Outlook.CategoryRuleCondition_typekey")
+  /* private */ @JSName("Outlook.CategoryRuleCondition_typekey")
   var OutlookDotCategoryRuleCondition_typekey: CategoryRuleCondition
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait CategoryRuleCondition extends StObject {
 }
 object CategoryRuleCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Categories: js.Any,
     Class: OlObjectClass,
@@ -41,31 +40,22 @@ object CategoryRuleCondition {
     __obj.asInstanceOf[CategoryRuleCondition]
   }
   
-  @scala.inline
-  implicit class CategoryRuleConditionMutableBuilder[Self <: CategoryRuleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryRuleCondition](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategories(value: js.Any): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Any): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotCategoryRuleCondition_typekey(value: CategoryRuleCondition): Self = StObject.set(x, "Outlook.CategoryRuleCondition_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotCategoryRuleCondition_typekey(value: CategoryRuleCondition): Self = StObject.set(x, "Outlook.CategoryRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

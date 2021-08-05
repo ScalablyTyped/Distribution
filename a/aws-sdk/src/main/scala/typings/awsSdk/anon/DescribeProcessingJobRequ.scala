@@ -19,22 +19,17 @@ trait DescribeProcessingJobRequ extends StObject {
 }
 object DescribeProcessingJobRequ {
   
-  @scala.inline
-  def apply(ProcessingJobName: ProcessingJobName): DescribeProcessingJobRequ = {
+  inline def apply(ProcessingJobName: ProcessingJobName): DescribeProcessingJobRequ = {
     val __obj = js.Dynamic.literal(ProcessingJobName = ProcessingJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProcessingJobRequ]
   }
   
-  @scala.inline
-  implicit class DescribeProcessingJobRequMutableBuilder[Self <: DescribeProcessingJobRequ] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProcessingJobRequ](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setProcessingJobName(value: ProcessingJobName): Self = StObject.set(x, "ProcessingJobName", value.asInstanceOf[js.Any])
+    inline def setProcessingJobName(value: ProcessingJobName): Self = StObject.set(x, "ProcessingJobName", value.asInstanceOf[js.Any])
   }
 }

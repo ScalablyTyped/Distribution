@@ -20,8 +20,7 @@ trait IVideoEncodingProperties
 }
 object IVideoEncodingProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitrate: Double,
     frameRate: MediaRatio,
     height: Double,
@@ -36,22 +35,16 @@ object IVideoEncodingProperties {
     __obj.asInstanceOf[IVideoEncodingProperties]
   }
   
-  @scala.inline
-  implicit class IVideoEncodingPropertiesMutableBuilder[Self <: IVideoEncodingProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IVideoEncodingProperties](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameRate(value: MediaRatio): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    inline def setFrameRate(value: MediaRatio): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelAspectRatio(value: MediaRatio): Self = StObject.set(x, "pixelAspectRatio", value.asInstanceOf[js.Any])
+    inline def setPixelAspectRatio(value: MediaRatio): Self = StObject.set(x, "pixelAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

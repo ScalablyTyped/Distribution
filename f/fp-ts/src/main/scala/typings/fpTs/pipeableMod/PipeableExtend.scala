@@ -24,8 +24,7 @@ trait PipeableExtend[F]
 }
 object PipeableExtend {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     duplicate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any => js.Any,
     extend: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* wa */ js.Any, 
@@ -43,16 +42,13 @@ object PipeableExtend {
     __obj.asInstanceOf[PipeableExtend[F]]
   }
   
-  @scala.inline
-  implicit class PipeableExtendMutableBuilder[Self <: PipeableExtend[?], F] (val x: Self & PipeableExtend[F]) extends AnyVal {
+  extension [Self <: PipeableExtend[?], F](x: Self & PipeableExtend[F]) {
     
-    @scala.inline
-    def setDuplicate(
+    inline def setDuplicate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any => js.Any
     ): Self = StObject.set(x, "duplicate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtend(
+    inline def setExtend(
       value: js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* wa */ js.Any, 
           js.Any

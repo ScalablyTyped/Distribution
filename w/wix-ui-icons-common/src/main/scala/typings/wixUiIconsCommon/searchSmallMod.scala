@@ -22,20 +22,16 @@ object searchSmallMod extends Shortcut {
   }
   object SearchSmallProps {
     
-    @scala.inline
-    def apply(): SearchSmallProps = {
+    inline def apply(): SearchSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchSmallProps]
     }
     
-    @scala.inline
-    implicit class SearchSmallPropsMutableBuilder[Self <: SearchSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: SearchSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

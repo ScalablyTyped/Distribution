@@ -13,19 +13,15 @@ trait ItemsHttpChallengeHeaderValue extends StObject {
 }
 object ItemsHttpChallengeHeaderValue {
   
-  @scala.inline
-  def apply(items: HttpChallengeHeaderValue, returnValue: Double): ItemsHttpChallengeHeaderValue = {
+  inline def apply(items: HttpChallengeHeaderValue, returnValue: Double): ItemsHttpChallengeHeaderValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsHttpChallengeHeaderValue]
   }
   
-  @scala.inline
-  implicit class ItemsHttpChallengeHeaderValueMutableBuilder[Self <: ItemsHttpChallengeHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsHttpChallengeHeaderValue](x: Self) {
     
-    @scala.inline
-    def setItems(value: HttpChallengeHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: HttpChallengeHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

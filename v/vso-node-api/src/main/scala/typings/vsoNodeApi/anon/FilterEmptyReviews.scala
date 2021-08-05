@@ -14,22 +14,17 @@ trait FilterEmptyReviews extends StObject {
 }
 object FilterEmptyReviews {
   
-  @scala.inline
-  def apply(filterEmptyReviews: scala.Double, filterEmptyUserNames: scala.Double, none: scala.Double): FilterEmptyReviews = {
+  inline def apply(filterEmptyReviews: scala.Double, filterEmptyUserNames: scala.Double, none: scala.Double): FilterEmptyReviews = {
     val __obj = js.Dynamic.literal(filterEmptyReviews = filterEmptyReviews.asInstanceOf[js.Any], filterEmptyUserNames = filterEmptyUserNames.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterEmptyReviews]
   }
   
-  @scala.inline
-  implicit class FilterEmptyReviewsMutableBuilder[Self <: FilterEmptyReviews] (val x: Self) extends AnyVal {
+  extension [Self <: FilterEmptyReviews](x: Self) {
     
-    @scala.inline
-    def setFilterEmptyReviews(value: scala.Double): Self = StObject.set(x, "filterEmptyReviews", value.asInstanceOf[js.Any])
+    inline def setFilterEmptyReviews(value: scala.Double): Self = StObject.set(x, "filterEmptyReviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterEmptyUserNames(value: scala.Double): Self = StObject.set(x, "filterEmptyUserNames", value.asInstanceOf[js.Any])
+    inline def setFilterEmptyUserNames(value: scala.Double): Self = StObject.set(x, "filterEmptyUserNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

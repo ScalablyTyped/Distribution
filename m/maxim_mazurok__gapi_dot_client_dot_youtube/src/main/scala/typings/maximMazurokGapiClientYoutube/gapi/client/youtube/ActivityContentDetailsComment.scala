@@ -11,19 +11,15 @@ trait ActivityContentDetailsComment extends StObject {
 }
 object ActivityContentDetailsComment {
   
-  @scala.inline
-  def apply(): ActivityContentDetailsComment = {
+  inline def apply(): ActivityContentDetailsComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityContentDetailsComment]
   }
   
-  @scala.inline
-  implicit class ActivityContentDetailsCommentMutableBuilder[Self <: ActivityContentDetailsComment] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityContentDetailsComment](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait RefreshSchemasResponse extends StObject {
 }
 object RefreshSchemasResponse {
   
-  @scala.inline
-  def apply(): RefreshSchemasResponse = {
+  inline def apply(): RefreshSchemasResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshSchemasResponse]
   }
   
-  @scala.inline
-  implicit class RefreshSchemasResponseMutableBuilder[Self <: RefreshSchemasResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshSchemasResponse](x: Self) {
     
-    @scala.inline
-    def setRefreshSchemasStatus(value: RefreshSchemasStatus): Self = StObject.set(x, "RefreshSchemasStatus", value.asInstanceOf[js.Any])
+    inline def setRefreshSchemasStatus(value: RefreshSchemasStatus): Self = StObject.set(x, "RefreshSchemasStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshSchemasStatusUndefined: Self = StObject.set(x, "RefreshSchemasStatus", js.undefined)
+    inline def setRefreshSchemasStatusUndefined: Self = StObject.set(x, "RefreshSchemasStatus", js.undefined)
   }
 }

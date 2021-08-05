@@ -12,20 +12,16 @@ trait ITransportFactory extends StObject {
 }
 object ITransportFactory {
   
-  @scala.inline
-  def apply(create: () => ITransport, `type`: TransportType): ITransportFactory = {
+  inline def apply(create: () => ITransport, `type`: TransportType): ITransportFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransportFactory]
   }
   
-  @scala.inline
-  implicit class ITransportFactoryMutableBuilder[Self <: ITransportFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ITransportFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => ITransport): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => ITransport): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: TransportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TransportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

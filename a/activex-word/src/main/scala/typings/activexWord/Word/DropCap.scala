@@ -24,13 +24,12 @@ trait DropCap extends StObject {
   
   var Position: WdDropPosition
   
-  @JSName("Word.DropCap_typekey")
+  /* private */ @JSName("Word.DropCap_typekey")
   var WordDotDropCap_typekey: DropCap
 }
 object DropCap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Clear: () => Unit,
     Creator: Double,
@@ -47,37 +46,26 @@ object DropCap {
     __obj.asInstanceOf[DropCap]
   }
   
-  @scala.inline
-  implicit class DropCapMutableBuilder[Self <: DropCap] (val x: Self) extends AnyVal {
+  extension [Self <: DropCap](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceFromText(value: Double): Self = StObject.set(x, "DistanceFromText", value.asInstanceOf[js.Any])
+    inline def setDistanceFromText(value: Double): Self = StObject.set(x, "DistanceFromText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnable(value: () => Unit): Self = StObject.set(x, "Enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => Unit): Self = StObject.set(x, "Enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
+    inline def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesToDrop(value: Double): Self = StObject.set(x, "LinesToDrop", value.asInstanceOf[js.Any])
+    inline def setLinesToDrop(value: Double): Self = StObject.set(x, "LinesToDrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: WdDropPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: WdDropPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotDropCap_typekey(value: DropCap): Self = StObject.set(x, "Word.DropCap_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotDropCap_typekey(value: DropCap): Self = StObject.set(x, "Word.DropCap_typekey", value.asInstanceOf[js.Any])
   }
 }

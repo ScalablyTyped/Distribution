@@ -19,19 +19,15 @@ trait Initial[State /* <: NavigationState[ParamListBase] */] extends StObject {
 }
 object Initial {
   
-  @scala.inline
-  def apply[State /* <: NavigationState[ParamListBase] */](): Initial[State] = {
+  inline def apply[State /* <: NavigationState[ParamListBase] */](): Initial[State] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Initial[State]]
   }
   
-  @scala.inline
-  implicit class InitialMutableBuilder[Self <: Initial[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Initial[State]) extends AnyVal {
+  extension [Self <: Initial[?], State /* <: NavigationState[ParamListBase] */](x: Self & Initial[State]) {
     
-    @scala.inline
-    def setState(value: PartialState[State] | State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: PartialState[State] | State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

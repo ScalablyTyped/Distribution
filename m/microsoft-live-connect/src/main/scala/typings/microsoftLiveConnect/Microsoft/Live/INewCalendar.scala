@@ -21,22 +21,17 @@ trait INewCalendar extends StObject {
 }
 object INewCalendar {
   
-  @scala.inline
-  def apply(name: String): INewCalendar = {
+  inline def apply(name: String): INewCalendar = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewCalendar]
   }
   
-  @scala.inline
-  implicit class INewCalendarMutableBuilder[Self <: INewCalendar] (val x: Self) extends AnyVal {
+  extension [Self <: INewCalendar](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ trait UpdateGlobalTableInput
      with typings.awsSdkClientDynamodbBrowser.typesUpdateGlobalTableInputMod.UpdateGlobalTableInput
 object UpdateGlobalTableInput {
   
-  @scala.inline
-  def apply(GlobalTableName: String, ReplicaUpdates: js.Array[ReplicaUpdate] | Iterable[ReplicaUpdate]): UpdateGlobalTableInput = {
+  inline def apply(GlobalTableName: String, ReplicaUpdates: js.Array[ReplicaUpdate] | Iterable[ReplicaUpdate]): UpdateGlobalTableInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicaUpdates = ReplicaUpdates.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGlobalTableInput]
   }

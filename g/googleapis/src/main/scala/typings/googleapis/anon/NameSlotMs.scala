@@ -12,25 +12,19 @@ trait NameSlotMs extends StObject {
 }
 object NameSlotMs {
   
-  @scala.inline
-  def apply(): NameSlotMs = {
+  inline def apply(): NameSlotMs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NameSlotMs]
   }
   
-  @scala.inline
-  implicit class NameSlotMsMutableBuilder[Self <: NameSlotMs] (val x: Self) extends AnyVal {
+  extension [Self <: NameSlotMs](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSlotMs(value: String): Self = StObject.set(x, "slotMs", value.asInstanceOf[js.Any])
+    inline def setSlotMs(value: String): Self = StObject.set(x, "slotMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotMsUndefined: Self = StObject.set(x, "slotMs", js.undefined)
+    inline def setSlotMsUndefined: Self = StObject.set(x, "slotMs", js.undefined)
   }
 }

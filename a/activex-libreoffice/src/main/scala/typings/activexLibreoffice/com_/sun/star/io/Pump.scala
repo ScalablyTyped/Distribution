@@ -18,8 +18,7 @@ trait Pump
      with XActiveDataControl
 object Pump {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputStream: XInputStream,
     OutputStream: XOutputStream,
     acquire: () => Unit,

@@ -16,7 +16,7 @@ object ngTableEventsChannelMod {
   class NgTableEventsChannel protected () extends StObject {
     def this($rootScope: IRootScopeService) = this()
     
-    @JSName("$rootScope")
+    /* private */ @JSName("$rootScope")
     var $rootScope: js.Any = js.native
     
     /* private */ def addTableParamsEvent(eventName: js.Any, target: js.Any): js.Any = js.native
@@ -183,8 +183,7 @@ object ngTableEventsChannelMod {
     @JSImport("ng-table/src/core/ngTableEventsChannel", "NgTableEventsChannel.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   type EventSelector[T] = NgTableParams[T] | IEventSelectorFunc

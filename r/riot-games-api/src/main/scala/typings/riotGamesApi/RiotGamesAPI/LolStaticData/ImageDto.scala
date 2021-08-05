@@ -22,34 +22,25 @@ trait ImageDto extends StObject {
 }
 object ImageDto {
   
-  @scala.inline
-  def apply(full: String, group: String, h: Double, sprite: String, w: Double, x: Double, y: Double): ImageDto = {
+  inline def apply(full: String, group: String, h: Double, sprite: String, w: Double, x: Double, y: Double): ImageDto = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], sprite = sprite.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageDto]
   }
   
-  @scala.inline
-  implicit class ImageDtoMutableBuilder[Self <: ImageDto] (val x: Self) extends AnyVal {
+  extension [Self <: ImageDto](x: Self) {
     
-    @scala.inline
-    def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSprite(value: String): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
+    inline def setSprite(value: String): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

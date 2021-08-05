@@ -68,8 +68,7 @@ object requestMod {
   }
   object FastifyRequest {
     
-    @scala.inline
-    def apply[RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */](
+    inline def apply[RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */](
       body: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Body'] */ js.Any,
       connection: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any,
       headers: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['headers'] */ js.Any,
@@ -93,89 +92,65 @@ object requestMod {
       __obj.asInstanceOf[FastifyRequest[RouteGeneric, RawServer, RawRequest]]
     }
     
-    @scala.inline
-    implicit class FastifyRequestMutableBuilder[Self <: FastifyRequest[?, ?, ?], RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */] (val x: Self & (FastifyRequest[RouteGeneric, RawServer, RawRequest])) extends AnyVal {
+    extension [Self <: FastifyRequest[?, ?, ?], RouteGeneric /* <: RouteGenericInterface */, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */](x: Self & (FastifyRequest[RouteGeneric, RawServer, RawRequest])) {
       
-      @scala.inline
-      def setBody(
+      inline def setBody(
         value: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Body'] */ js.Any
       ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnection(
+      inline def setConnection(
         value: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any
       ): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(
+      inline def setHeaders(
         value: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['headers'] */ js.Any
       ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
+      inline def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpsUndefined: Self = StObject.set(x, "ips", js.undefined)
+      inline def setIpsUndefined: Self = StObject.set(x, "ips", js.undefined)
       
-      @scala.inline
-      def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
+      inline def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
       
-      @scala.inline
-      def setIs404(value: Boolean): Self = StObject.set(x, "is404", value.asInstanceOf[js.Any])
+      inline def setIs404(value: Boolean): Self = StObject.set(x, "is404", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: FastifyLoggerInstance): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: FastifyLoggerInstance): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(
+      inline def setParams(
         value: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Params'] */ js.Any
       ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: http | https): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(
+      inline def setQuery(
         value: /* import warning: importer.ImportType#apply Failed type conversion: RouteGeneric['Querystring'] */ js.Any
       ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: RawRequest): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: RawRequest): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq(value: RawRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: RawRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouterMethod(value: String): Self = StObject.set(x, "routerMethod", value.asInstanceOf[js.Any])
+      inline def setRouterMethod(value: String): Self = StObject.set(x, "routerMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouterPath(value: String): Self = StObject.set(x, "routerPath", value.asInstanceOf[js.Any])
+      inline def setRouterPath(value: String): Self = StObject.set(x, "routerPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket(
+      inline def setSocket(
         value: /* import warning: importer.ImportType#apply Failed type conversion: RawRequest['socket'] */ js.Any
       ): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationError(value: Errorvalidationanyvalidat): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
+      inline def setValidationError(value: Errorvalidationanyvalidat): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
+      inline def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
     }
   }
   
@@ -191,38 +166,28 @@ object requestMod {
   }
   object RequestGenericInterface {
     
-    @scala.inline
-    def apply(): RequestGenericInterface = {
+    inline def apply(): RequestGenericInterface = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestGenericInterface]
     }
     
-    @scala.inline
-    implicit class RequestGenericInterfaceMutableBuilder[Self <: RequestGenericInterface] (val x: Self) extends AnyVal {
+    extension [Self <: RequestGenericInterface](x: Self) {
       
-      @scala.inline
-      def setBody(value: RequestBodyDefault): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: RequestBodyDefault): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: RequestHeadersDefault): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: RequestHeadersDefault): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
       
-      @scala.inline
-      def setParams(value: RequestParamsDefault): Self = StObject.set(x, "Params", value.asInstanceOf[js.Any])
+      inline def setParams(value: RequestParamsDefault): Self = StObject.set(x, "Params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "Params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "Params", js.undefined)
       
-      @scala.inline
-      def setQuerystring(value: RequestQuerystringDefault): Self = StObject.set(x, "Querystring", value.asInstanceOf[js.Any])
+      inline def setQuerystring(value: RequestQuerystringDefault): Self = StObject.set(x, "Querystring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerystringUndefined: Self = StObject.set(x, "Querystring", js.undefined)
+      inline def setQuerystringUndefined: Self = StObject.set(x, "Querystring", js.undefined)
     }
   }
 }

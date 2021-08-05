@@ -23,8 +23,7 @@ object patcherMod {
   @js.native
   val Patcher: PatcherConstructor = js.native
   
-  @scala.inline
-  def getReprinter(path: js.Any): js.UndefOr[js.Function1[/* print */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReprinter")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Function1[/* print */ js.Any, js.Any]]]
+  inline def getReprinter(path: js.Any): js.UndefOr[js.Function1[/* print */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReprinter")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Function1[/* print */ js.Any, js.Any]]]
   
   @js.native
   trait PatcherConstructor

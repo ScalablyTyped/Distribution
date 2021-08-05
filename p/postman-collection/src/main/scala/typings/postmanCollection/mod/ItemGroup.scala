@@ -33,6 +33,5 @@ object ItemGroup {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isItemGroup(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItemGroup")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isItemGroup(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItemGroup")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

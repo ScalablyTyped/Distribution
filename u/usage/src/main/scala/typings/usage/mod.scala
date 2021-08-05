@@ -12,15 +12,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clearHistory(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHistory")().asInstanceOf[Unit]
-  @scala.inline
-  def clearHistory(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHistory")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearHistory(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHistory")().asInstanceOf[Unit]
+  inline def clearHistory(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHistory")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def lookup(pid: Double, callback: js.Function2[/* err */ Error, /* result */ ResultObject, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def lookup(
+  inline def lookup(pid: Double, callback: js.Function2[/* err */ Error, /* result */ ResultObject, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lookup(
     pid: Double,
     options: Options,
     callback: js.Function2[/* err */ Error, /* result */ ResultObject, Unit]
@@ -32,17 +28,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(keepHistory: Boolean): Options = {
+    inline def apply(keepHistory: Boolean): Options = {
       val __obj = js.Dynamic.literal(keepHistory = keepHistory.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setKeepHistory(value: Boolean): Self = StObject.set(x, "keepHistory", value.asInstanceOf[js.Any])
+      inline def setKeepHistory(value: Boolean): Self = StObject.set(x, "keepHistory", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,23 +49,18 @@ object mod {
   }
   object ResultObject {
     
-    @scala.inline
-    def apply(cpu: Double, memory: Double, memoryInfo: Rss): ResultObject = {
+    inline def apply(cpu: Double, memory: Double, memoryInfo: Rss): ResultObject = {
       val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], memoryInfo = memoryInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultObject]
     }
     
-    @scala.inline
-    implicit class ResultObjectMutableBuilder[Self <: ResultObject] (val x: Self) extends AnyVal {
+    extension [Self <: ResultObject](x: Self) {
       
-      @scala.inline
-      def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryInfo(value: Rss): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
+      inline def setMemoryInfo(value: Rss): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     }
   }
 }

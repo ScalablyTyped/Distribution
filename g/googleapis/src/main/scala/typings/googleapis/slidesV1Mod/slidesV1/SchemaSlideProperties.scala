@@ -36,31 +36,23 @@ trait SchemaSlideProperties extends StObject {
 }
 object SchemaSlideProperties {
   
-  @scala.inline
-  def apply(): SchemaSlideProperties = {
+  inline def apply(): SchemaSlideProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSlideProperties]
   }
   
-  @scala.inline
-  implicit class SchemaSlidePropertiesMutableBuilder[Self <: SchemaSlideProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSlideProperties](x: Self) {
     
-    @scala.inline
-    def setLayoutObjectId(value: String): Self = StObject.set(x, "layoutObjectId", value.asInstanceOf[js.Any])
+    inline def setLayoutObjectId(value: String): Self = StObject.set(x, "layoutObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutObjectIdUndefined: Self = StObject.set(x, "layoutObjectId", js.undefined)
+    inline def setLayoutObjectIdUndefined: Self = StObject.set(x, "layoutObjectId", js.undefined)
     
-    @scala.inline
-    def setMasterObjectId(value: String): Self = StObject.set(x, "masterObjectId", value.asInstanceOf[js.Any])
+    inline def setMasterObjectId(value: String): Self = StObject.set(x, "masterObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterObjectIdUndefined: Self = StObject.set(x, "masterObjectId", js.undefined)
+    inline def setMasterObjectIdUndefined: Self = StObject.set(x, "masterObjectId", js.undefined)
     
-    @scala.inline
-    def setNotesPage(value: SchemaPage): Self = StObject.set(x, "notesPage", value.asInstanceOf[js.Any])
+    inline def setNotesPage(value: SchemaPage): Self = StObject.set(x, "notesPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesPageUndefined: Self = StObject.set(x, "notesPage", js.undefined)
+    inline def setNotesPageUndefined: Self = StObject.set(x, "notesPage", js.undefined)
   }
 }

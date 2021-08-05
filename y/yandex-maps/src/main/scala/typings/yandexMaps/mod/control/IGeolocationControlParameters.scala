@@ -17,25 +17,19 @@ trait IGeolocationControlParameters
 }
 object IGeolocationControlParameters {
   
-  @scala.inline
-  def apply(): IGeolocationControlParameters = {
+  inline def apply(): IGeolocationControlParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeolocationControlParameters]
   }
   
-  @scala.inline
-  implicit class IGeolocationControlParametersMutableBuilder[Self <: IGeolocationControlParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IGeolocationControlParameters](x: Self) {
     
-    @scala.inline
-    def setData(value: Image): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Image): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setOptions(value: IBaseButtonParametersOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IBaseButtonParametersOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait MaintenanceWindowAutomationParameters extends StObject {
 }
 object MaintenanceWindowAutomationParameters {
   
-  @scala.inline
-  def apply(): MaintenanceWindowAutomationParameters = {
+  inline def apply(): MaintenanceWindowAutomationParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindowAutomationParameters]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowAutomationParametersMutableBuilder[Self <: MaintenanceWindowAutomationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowAutomationParameters](x: Self) {
     
-    @scala.inline
-    def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
+    inline def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
     
-    @scala.inline
-    def setParameters(value: AutomationParameterMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AutomationParameterMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
   }
 }

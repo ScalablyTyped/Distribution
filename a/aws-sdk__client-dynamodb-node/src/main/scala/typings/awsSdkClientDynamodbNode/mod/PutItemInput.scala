@@ -12,8 +12,7 @@ trait PutItemInput
      with typings.awsSdkClientDynamodbNode.typesPutItemInputMod.PutItemInput
 object PutItemInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Item: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
     TableName: String
   ): PutItemInput = {

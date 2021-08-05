@@ -12,8 +12,7 @@ trait NotificationEventBacklogStatus extends StObject {
 }
 object NotificationEventBacklogStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventBacklogStatus: js.Array[EventBacklogStatus],
     notificationBacklogStatus: js.Array[NotificationBacklogStatus]
   ): NotificationEventBacklogStatus = {
@@ -21,19 +20,14 @@ object NotificationEventBacklogStatus {
     __obj.asInstanceOf[NotificationEventBacklogStatus]
   }
   
-  @scala.inline
-  implicit class NotificationEventBacklogStatusMutableBuilder[Self <: NotificationEventBacklogStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationEventBacklogStatus](x: Self) {
     
-    @scala.inline
-    def setEventBacklogStatus(value: js.Array[EventBacklogStatus]): Self = StObject.set(x, "eventBacklogStatus", value.asInstanceOf[js.Any])
+    inline def setEventBacklogStatus(value: js.Array[EventBacklogStatus]): Self = StObject.set(x, "eventBacklogStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBacklogStatusVarargs(value: EventBacklogStatus*): Self = StObject.set(x, "eventBacklogStatus", js.Array(value :_*))
+    inline def setEventBacklogStatusVarargs(value: EventBacklogStatus*): Self = StObject.set(x, "eventBacklogStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setNotificationBacklogStatus(value: js.Array[NotificationBacklogStatus]): Self = StObject.set(x, "notificationBacklogStatus", value.asInstanceOf[js.Any])
+    inline def setNotificationBacklogStatus(value: js.Array[NotificationBacklogStatus]): Self = StObject.set(x, "notificationBacklogStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationBacklogStatusVarargs(value: NotificationBacklogStatus*): Self = StObject.set(x, "notificationBacklogStatus", js.Array(value :_*))
+    inline def setNotificationBacklogStatusVarargs(value: NotificationBacklogStatus*): Self = StObject.set(x, "notificationBacklogStatus", js.Array(value :_*))
   }
 }

@@ -19,8 +19,7 @@ trait SlideEnvironment
 }
 object SlideEnvironment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,13 +29,10 @@ object SlideEnvironment {
     __obj.asInstanceOf[SlideEnvironment]
   }
   
-  @scala.inline
-  implicit class SlideEnvironmentMutableBuilder[Self <: SlideEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: SlideEnvironment](x: Self) {
     
-    @scala.inline
-    def setLighting(value: Lighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
+    inline def setLighting(value: Lighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
+    inline def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
   }
 }

@@ -31,8 +31,7 @@ trait UIElementSettings
 }
 object UIElementSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     UIName: String,
@@ -50,10 +49,8 @@ object UIElementSettings {
     __obj.asInstanceOf[UIElementSettings]
   }
   
-  @scala.inline
-  implicit class UIElementSettingsMutableBuilder[Self <: UIElementSettings] (val x: Self) extends AnyVal {
+  extension [Self <: UIElementSettings](x: Self) {
     
-    @scala.inline
-    def setUIName(value: String): Self = StObject.set(x, "UIName", value.asInstanceOf[js.Any])
+    inline def setUIName(value: String): Self = StObject.set(x, "UIName", value.asInstanceOf[js.Any])
   }
 }

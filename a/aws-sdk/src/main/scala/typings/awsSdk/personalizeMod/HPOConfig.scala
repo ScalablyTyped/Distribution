@@ -23,31 +23,23 @@ trait HPOConfig extends StObject {
 }
 object HPOConfig {
   
-  @scala.inline
-  def apply(): HPOConfig = {
+  inline def apply(): HPOConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HPOConfig]
   }
   
-  @scala.inline
-  implicit class HPOConfigMutableBuilder[Self <: HPOConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HPOConfig](x: Self) {
     
-    @scala.inline
-    def setAlgorithmHyperParameterRanges(value: HyperParameterRanges): Self = StObject.set(x, "algorithmHyperParameterRanges", value.asInstanceOf[js.Any])
+    inline def setAlgorithmHyperParameterRanges(value: HyperParameterRanges): Self = StObject.set(x, "algorithmHyperParameterRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmHyperParameterRangesUndefined: Self = StObject.set(x, "algorithmHyperParameterRanges", js.undefined)
+    inline def setAlgorithmHyperParameterRangesUndefined: Self = StObject.set(x, "algorithmHyperParameterRanges", js.undefined)
     
-    @scala.inline
-    def setHpoObjective(value: HPOObjective): Self = StObject.set(x, "hpoObjective", value.asInstanceOf[js.Any])
+    inline def setHpoObjective(value: HPOObjective): Self = StObject.set(x, "hpoObjective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHpoObjectiveUndefined: Self = StObject.set(x, "hpoObjective", js.undefined)
+    inline def setHpoObjectiveUndefined: Self = StObject.set(x, "hpoObjective", js.undefined)
     
-    @scala.inline
-    def setHpoResourceConfig(value: HPOResourceConfig): Self = StObject.set(x, "hpoResourceConfig", value.asInstanceOf[js.Any])
+    inline def setHpoResourceConfig(value: HPOResourceConfig): Self = StObject.set(x, "hpoResourceConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHpoResourceConfigUndefined: Self = StObject.set(x, "hpoResourceConfig", js.undefined)
+    inline def setHpoResourceConfigUndefined: Self = StObject.set(x, "hpoResourceConfig", js.undefined)
   }
 }

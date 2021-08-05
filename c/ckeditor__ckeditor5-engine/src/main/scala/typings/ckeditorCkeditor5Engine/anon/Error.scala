@@ -12,19 +12,15 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(error: /* repeated */ js.Any => String, log: /* repeated */ js.Any => String): Error = {
+  inline def apply(error: /* repeated */ js.Any => String, log: /* repeated */ js.Any => String): Error = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), log = js.Any.fromFunction1(log))
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setError(value: /* repeated */ js.Any => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ js.Any => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLog(value: /* repeated */ js.Any => String): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: /* repeated */ js.Any => String): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
   }
 }

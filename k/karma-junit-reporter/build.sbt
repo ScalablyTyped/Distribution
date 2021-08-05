@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-junit-reporter"
-version := "2.0-dt-20200214Z-657cf0"
+version := "2.0-dt-20200214Z-6f3389"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

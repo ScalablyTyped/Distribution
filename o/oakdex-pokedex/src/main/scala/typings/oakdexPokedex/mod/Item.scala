@@ -22,8 +22,7 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: String,
     descriptions: js.Array[ItemDescription],
     effects: js.Array[ItemEffect],
@@ -36,40 +35,28 @@ object Item {
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptions(value: js.Array[ItemDescription]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
+    inline def setDescriptions(value: js.Array[ItemDescription]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionsVarargs(value: ItemDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
+    inline def setDescriptionsVarargs(value: ItemDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setEffects(value: js.Array[ItemEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    inline def setEffects(value: js.Array[ItemEffect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectsVarargs(value: ItemEffect*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: ItemEffect*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
-    @scala.inline
-    def setFling_power(value: Double): Self = StObject.set(x, "fling_power", value.asInstanceOf[js.Any])
+    inline def setFling_power(value: Double): Self = StObject.set(x, "fling_power", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPockets(value: js.Array[ItemPocket]): Self = StObject.set(x, "pockets", value.asInstanceOf[js.Any])
+    inline def setPockets(value: js.Array[ItemPocket]): Self = StObject.set(x, "pockets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPocketsVarargs(value: ItemPocket*): Self = StObject.set(x, "pockets", js.Array(value :_*))
+    inline def setPocketsVarargs(value: ItemPocket*): Self = StObject.set(x, "pockets", js.Array(value :_*))
     
-    @scala.inline
-    def setPrices(value: js.Array[ItemPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
+    inline def setPrices(value: js.Array[ItemPrice]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricesVarargs(value: ItemPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: ItemPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
   }
 }

@@ -16,28 +16,21 @@ trait SchemaApkListingsListResponse extends StObject {
 }
 object SchemaApkListingsListResponse {
   
-  @scala.inline
-  def apply(): SchemaApkListingsListResponse = {
+  inline def apply(): SchemaApkListingsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApkListingsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaApkListingsListResponseMutableBuilder[Self <: SchemaApkListingsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApkListingsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setListings(value: js.Array[SchemaApkListing]): Self = StObject.set(x, "listings", value.asInstanceOf[js.Any])
+    inline def setListings(value: js.Array[SchemaApkListing]): Self = StObject.set(x, "listings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListingsUndefined: Self = StObject.set(x, "listings", js.undefined)
+    inline def setListingsUndefined: Self = StObject.set(x, "listings", js.undefined)
     
-    @scala.inline
-    def setListingsVarargs(value: SchemaApkListing*): Self = StObject.set(x, "listings", js.Array(value :_*))
+    inline def setListingsVarargs(value: SchemaApkListing*): Self = StObject.set(x, "listings", js.Array(value :_*))
   }
 }

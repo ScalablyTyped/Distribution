@@ -21,25 +21,19 @@ trait CheckContext
 }
 object CheckContext {
   
-  @scala.inline
-  def apply(): CheckContext = {
+  inline def apply(): CheckContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckContext]
   }
   
-  @scala.inline
-  implicit class CheckContextMutableBuilder[Self <: CheckContext] (val x: Self) extends AnyVal {
+  extension [Self <: CheckContext](x: Self) {
     
-    @scala.inline
-    def setCheckContext(value: /* context */ String => Boolean): Self = StObject.set(x, "checkContext", js.Any.fromFunction1(value))
+    inline def setCheckContext(value: /* context */ String => Boolean): Self = StObject.set(x, "checkContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCheckContextUndefined: Self = StObject.set(x, "checkContext", js.undefined)
+    inline def setCheckContextUndefined: Self = StObject.set(x, "checkContext", js.undefined)
     
-    @scala.inline
-    def setCheckResource(value: (/* resource */ String, /* context */ String) => Boolean): Self = StObject.set(x, "checkResource", js.Any.fromFunction2(value))
+    inline def setCheckResource(value: (/* resource */ String, /* context */ String) => Boolean): Self = StObject.set(x, "checkResource", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheckResourceUndefined: Self = StObject.set(x, "checkResource", js.undefined)
+    inline def setCheckResourceUndefined: Self = StObject.set(x, "checkResource", js.undefined)
   }
 }

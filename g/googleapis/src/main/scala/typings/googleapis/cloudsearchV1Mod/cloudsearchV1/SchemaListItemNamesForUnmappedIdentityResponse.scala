@@ -16,28 +16,21 @@ trait SchemaListItemNamesForUnmappedIdentityResponse extends StObject {
 }
 object SchemaListItemNamesForUnmappedIdentityResponse {
   
-  @scala.inline
-  def apply(): SchemaListItemNamesForUnmappedIdentityResponse = {
+  inline def apply(): SchemaListItemNamesForUnmappedIdentityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListItemNamesForUnmappedIdentityResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListItemNamesForUnmappedIdentityResponseMutableBuilder[Self <: SchemaListItemNamesForUnmappedIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListItemNamesForUnmappedIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setItemNames(value: js.Array[String]): Self = StObject.set(x, "itemNames", value.asInstanceOf[js.Any])
+    inline def setItemNames(value: js.Array[String]): Self = StObject.set(x, "itemNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemNamesUndefined: Self = StObject.set(x, "itemNames", js.undefined)
+    inline def setItemNamesUndefined: Self = StObject.set(x, "itemNames", js.undefined)
     
-    @scala.inline
-    def setItemNamesVarargs(value: String*): Self = StObject.set(x, "itemNames", js.Array(value :_*))
+    inline def setItemNamesVarargs(value: String*): Self = StObject.set(x, "itemNames", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

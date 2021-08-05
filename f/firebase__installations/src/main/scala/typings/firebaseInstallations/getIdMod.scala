@@ -11,6 +11,5 @@ object getIdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getId(dependencies: FirebaseDependencies): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getId(dependencies: FirebaseDependencies): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

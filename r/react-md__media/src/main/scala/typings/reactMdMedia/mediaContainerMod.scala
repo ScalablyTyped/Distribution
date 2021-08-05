@@ -44,38 +44,28 @@ object mediaContainerMod {
   }
   object MediaContainerProps {
     
-    @scala.inline
-    def apply(): MediaContainerProps = {
+    inline def apply(): MediaContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MediaContainerProps]
     }
     
-    @scala.inline
-    implicit class MediaContainerPropsMutableBuilder[Self <: MediaContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: MediaContainerProps](x: Self) {
       
-      @scala.inline
-      def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+      inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
       
-      @scala.inline
-      def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+      inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+      inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -91,20 +81,16 @@ object mediaContainerMod {
   }
   object MediaContainerWithAspectRatioProps {
     
-    @scala.inline
-    def apply(height: Double, width: Double): MediaContainerWithAspectRatioProps = {
+    inline def apply(height: Double, width: Double): MediaContainerWithAspectRatioProps = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaContainerWithAspectRatioProps]
     }
     
-    @scala.inline
-    implicit class MediaContainerWithAspectRatioPropsMutableBuilder[Self <: MediaContainerWithAspectRatioProps] (val x: Self) extends AnyVal {
+    extension [Self <: MediaContainerWithAspectRatioProps](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,6 +10,5 @@ object global {
   @JSGlobal("sqlitePlugin")
   @js.native
   def sqlitePlugin: SQLite = js.native
-  @scala.inline
-  def sqlitePlugin_=(x: SQLite): Unit = js.Dynamic.global.updateDynamic("sqlitePlugin")(x.asInstanceOf[js.Any])
+  inline def sqlitePlugin_=(x: SQLite): Unit = js.Dynamic.global.updateDynamic("sqlitePlugin")(x.asInstanceOf[js.Any])
 }

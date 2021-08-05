@@ -88,8 +88,7 @@ trait ComputeResource extends StObject {
 }
 object ComputeResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     instanceRole: String,
     instanceTypes: StringList,
     maxvCpus: Integer,
@@ -102,94 +101,64 @@ object ComputeResource {
     __obj.asInstanceOf[ComputeResource]
   }
   
-  @scala.inline
-  implicit class ComputeResourceMutableBuilder[Self <: ComputeResource] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeResource](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: CRAllocationStrategy): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: CRAllocationStrategy): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationStrategyUndefined: Self = StObject.set(x, "allocationStrategy", js.undefined)
+    inline def setAllocationStrategyUndefined: Self = StObject.set(x, "allocationStrategy", js.undefined)
     
-    @scala.inline
-    def setBidPercentage(value: Integer): Self = StObject.set(x, "bidPercentage", value.asInstanceOf[js.Any])
+    inline def setBidPercentage(value: Integer): Self = StObject.set(x, "bidPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPercentageUndefined: Self = StObject.set(x, "bidPercentage", js.undefined)
+    inline def setBidPercentageUndefined: Self = StObject.set(x, "bidPercentage", js.undefined)
     
-    @scala.inline
-    def setDesiredvCpus(value: Integer): Self = StObject.set(x, "desiredvCpus", value.asInstanceOf[js.Any])
+    inline def setDesiredvCpus(value: Integer): Self = StObject.set(x, "desiredvCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredvCpusUndefined: Self = StObject.set(x, "desiredvCpus", js.undefined)
+    inline def setDesiredvCpusUndefined: Self = StObject.set(x, "desiredvCpus", js.undefined)
     
-    @scala.inline
-    def setEc2KeyPair(value: String): Self = StObject.set(x, "ec2KeyPair", value.asInstanceOf[js.Any])
+    inline def setEc2KeyPair(value: String): Self = StObject.set(x, "ec2KeyPair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2KeyPairUndefined: Self = StObject.set(x, "ec2KeyPair", js.undefined)
+    inline def setEc2KeyPairUndefined: Self = StObject.set(x, "ec2KeyPair", js.undefined)
     
-    @scala.inline
-    def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
     
-    @scala.inline
-    def setInstanceRole(value: String): Self = StObject.set(x, "instanceRole", value.asInstanceOf[js.Any])
+    inline def setInstanceRole(value: String): Self = StObject.set(x, "instanceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypes(value: StringList): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
+    inline def setInstanceTypes(value: StringList): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
+    inline def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
+    inline def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
     
-    @scala.inline
-    def setMaxvCpus(value: Integer): Self = StObject.set(x, "maxvCpus", value.asInstanceOf[js.Any])
+    inline def setMaxvCpus(value: Integer): Self = StObject.set(x, "maxvCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinvCpus(value: Integer): Self = StObject.set(x, "minvCpus", value.asInstanceOf[js.Any])
+    inline def setMinvCpus(value: Integer): Self = StObject.set(x, "minvCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementGroup(value: String): Self = StObject.set(x, "placementGroup", value.asInstanceOf[js.Any])
+    inline def setPlacementGroup(value: String): Self = StObject.set(x, "placementGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementGroupUndefined: Self = StObject.set(x, "placementGroup", js.undefined)
+    inline def setPlacementGroupUndefined: Self = StObject.set(x, "placementGroup", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupIds(value: StringList): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: StringList): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
+    inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSpotIamFleetRole(value: String): Self = StObject.set(x, "spotIamFleetRole", value.asInstanceOf[js.Any])
+    inline def setSpotIamFleetRole(value: String): Self = StObject.set(x, "spotIamFleetRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotIamFleetRoleUndefined: Self = StObject.set(x, "spotIamFleetRole", js.undefined)
+    inline def setSpotIamFleetRoleUndefined: Self = StObject.set(x, "spotIamFleetRole", js.undefined)
     
-    @scala.inline
-    def setSubnets(value: StringList): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: StringList): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setType(value: CRType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CRType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

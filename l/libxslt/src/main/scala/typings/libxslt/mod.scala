@@ -36,8 +36,7 @@ object mod {
     @JSImport("libxslt", "libxmljs.Attribute")
     @js.native
     def Attribute: Instantiable0[typings.libxmljs.mod.Attribute] = js.native
-    @scala.inline
-    def Attribute_=(x: Instantiable0[typings.libxmljs.mod.Attribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Attribute")(x.asInstanceOf[js.Any])
+    inline def Attribute_=(x: Instantiable0[typings.libxmljs.mod.Attribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Attribute")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.Document")
@@ -52,8 +51,7 @@ object mod {
     @JSImport("libxslt", "libxmljs.Document")
     @js.native
     def Document: Instantiable0[typings.libxmljs.mod.Document] = js.native
-    @scala.inline
-    def Document_=(x: Instantiable0[typings.libxmljs.mod.Document]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Document")(x.asInstanceOf[js.Any])
+    inline def Document_=(x: Instantiable0[typings.libxmljs.mod.Document]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Document")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.Element")
@@ -69,8 +67,7 @@ object mod {
         /* name */ String, 
         typings.libxmljs.mod.Element
       ] = js.native
-    @scala.inline
-    def Element_=(
+    inline def Element_=(
       x: Instantiable2[
           /* doc */ typings.libxmljs.mod.Document, 
           /* name */ String, 
@@ -86,8 +83,7 @@ object mod {
     @JSImport("libxslt", "libxmljs.Namespace")
     @js.native
     def Namespace: Instantiable0[typings.libxmljs.mod.Namespace] = js.native
-    @scala.inline
-    def Namespace_=(x: Instantiable0[typings.libxmljs.mod.Namespace]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Namespace")(x.asInstanceOf[js.Any])
+    inline def Namespace_=(x: Instantiable0[typings.libxmljs.mod.Namespace]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Namespace")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.Node")
@@ -97,8 +93,7 @@ object mod {
     @JSImport("libxslt", "libxmljs.Node")
     @js.native
     def Node: Instantiable0[typings.libxmljs.mod.Node] = js.native
-    @scala.inline
-    def Node_=(x: Instantiable0[typings.libxmljs.mod.Node]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Node")(x.asInstanceOf[js.Any])
+    inline def Node_=(x: Instantiable0[typings.libxmljs.mod.Node]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Node")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.SaxParser")
@@ -108,8 +103,7 @@ object mod {
     @JSImport("libxslt", "libxmljs.SaxParser")
     @js.native
     def SaxParser: Instantiable0[typings.libxmljs.mod.SaxParser] = js.native
-    @scala.inline
-    def SaxParser_=(x: Instantiable0[typings.libxmljs.mod.SaxParser]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaxParser")(x.asInstanceOf[js.Any])
+    inline def SaxParser_=(x: Instantiable0[typings.libxmljs.mod.SaxParser]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaxParser")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("libxslt", "libxmljs.SaxPushParser")
@@ -119,8 +113,7 @@ object mod {
     @JSImport("libxslt", "libxmljs.SaxPushParser")
     @js.native
     def SaxPushParser: Instantiable0[typings.libxmljs.mod.SaxPushParser] = js.native
-    @scala.inline
-    def SaxPushParser_=(x: Instantiable0[typings.libxmljs.mod.SaxPushParser]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaxPushParser")(x.asInstanceOf[js.Any])
+    inline def SaxPushParser_=(x: Instantiable0[typings.libxmljs.mod.SaxPushParser]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaxPushParser")(x.asInstanceOf[js.Any])
     
     @JSImport("libxslt", "libxmljs.libxml_parser_version")
     @js.native
@@ -130,53 +123,36 @@ object mod {
     @js.native
     val libxmlVersion: String = js.native
     
-    @scala.inline
-    def memoryUsage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryUsage")().asInstanceOf[Double]
+    inline def memoryUsage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryUsage")().asInstanceOf[Double]
     
-    @scala.inline
-    def nodeCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeCount")().asInstanceOf[Double]
+    inline def nodeCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeCount")().asInstanceOf[Double]
     
-    @scala.inline
-    def parseHtml(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
-    @scala.inline
-    def parseHtml(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseHtml(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseHtml(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
-    @scala.inline
-    def parseHtmlFragment(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
-    @scala.inline
-    def parseHtmlFragment(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseHtmlFragment(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseHtmlFragment(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
-    @scala.inline
-    def parseHtmlString(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlString")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
-    @scala.inline
-    def parseHtmlString(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlString")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseHtmlString(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlString")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseHtmlString(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlString")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
-    @scala.inline
-    def parseXml(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
-    @scala.inline
-    def parseXml(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseXml(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseXml(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
-    @scala.inline
-    def parseXmlString(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXmlString")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
-    @scala.inline
-    def parseXmlString(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXmlString")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseXmlString(source: String): typings.libxmljs.mod.Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXmlString")(source.asInstanceOf[js.Any]).asInstanceOf[typings.libxmljs.mod.Document]
+    inline def parseXmlString(source: String, options: ParserOptions): typings.libxmljs.mod.Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXmlString")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.libxmljs.mod.Document]
     
     @JSImport("libxslt", "libxmljs.version")
     @js.native
     val version: String = js.native
   }
   
-  @scala.inline
-  def parse(source: String): Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Stylesheet]
-  @scala.inline
-  def parse(source: String, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def parse(source: Document): Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Stylesheet]
-  @scala.inline
-  def parse(source: Document, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(source: String): Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Stylesheet]
+  inline def parse(source: String, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(source: Document): Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Stylesheet]
+  inline def parse(source: Document, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def parseFile(sourcePath: String, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(sourcePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parseFile(sourcePath: String, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(sourcePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ApplyOptions extends StObject {
     
@@ -186,23 +162,18 @@ object mod {
   }
   object ApplyOptions {
     
-    @scala.inline
-    def apply(outputFormat: string | document): ApplyOptions = {
+    inline def apply(outputFormat: string | document): ApplyOptions = {
       val __obj = js.Dynamic.literal(outputFormat = outputFormat.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplyOptions]
     }
     
-    @scala.inline
-    implicit class ApplyOptionsMutableBuilder[Self <: ApplyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ApplyOptions](x: Self) {
       
-      @scala.inline
-      def setNoWrapParams(value: Boolean): Self = StObject.set(x, "noWrapParams", value.asInstanceOf[js.Any])
+      inline def setNoWrapParams(value: Boolean): Self = StObject.set(x, "noWrapParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoWrapParamsUndefined: Self = StObject.set(x, "noWrapParams", js.undefined)
+      inline def setNoWrapParamsUndefined: Self = StObject.set(x, "noWrapParams", js.undefined)
       
-      @scala.inline
-      def setOutputFormat(value: string | document): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: string | document): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     }
   }
   

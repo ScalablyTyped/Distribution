@@ -34,17 +34,14 @@ object PubSubJS {
   }
   object CountSubscriptions {
     
-    @scala.inline
-    def apply(countSubscriptions: js.Any => Double): CountSubscriptions = {
+    inline def apply(countSubscriptions: js.Any => Double): CountSubscriptions = {
       val __obj = js.Dynamic.literal(countSubscriptions = js.Any.fromFunction1(countSubscriptions))
       __obj.asInstanceOf[CountSubscriptions]
     }
     
-    @scala.inline
-    implicit class CountSubscriptionsMutableBuilder[Self <: CountSubscriptions] (val x: Self) extends AnyVal {
+    extension [Self <: CountSubscriptions](x: Self) {
       
-      @scala.inline
-      def setCountSubscriptions(value: js.Any => Double): Self = StObject.set(x, "countSubscriptions", js.Any.fromFunction1(value))
+      inline def setCountSubscriptions(value: js.Any => Double): Self = StObject.set(x, "countSubscriptions", js.Any.fromFunction1(value))
     }
   }
   
@@ -54,17 +51,14 @@ object PubSubJS {
   }
   object GetSubscriptions {
     
-    @scala.inline
-    def apply(getSubscriptions: js.Any => js.Array[js.Any]): GetSubscriptions = {
+    inline def apply(getSubscriptions: js.Any => js.Array[js.Any]): GetSubscriptions = {
       val __obj = js.Dynamic.literal(getSubscriptions = js.Any.fromFunction1(getSubscriptions))
       __obj.asInstanceOf[GetSubscriptions]
     }
     
-    @scala.inline
-    implicit class GetSubscriptionsMutableBuilder[Self <: GetSubscriptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetSubscriptions](x: Self) {
       
-      @scala.inline
-      def setGetSubscriptions(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getSubscriptions", js.Any.fromFunction1(value))
+      inline def setGetSubscriptions(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getSubscriptions", js.Any.fromFunction1(value))
     }
   }
   
@@ -86,20 +80,16 @@ object PubSubJS {
   }
   object Subscribe {
     
-    @scala.inline
-    def apply(subscribe: (String, js.Function) => String, subscribeOnce: (String, js.Function) => js.Any): Subscribe = {
+    inline def apply(subscribe: (String, js.Function) => String, subscribeOnce: (String, js.Function) => js.Any): Subscribe = {
       val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction2(subscribe), subscribeOnce = js.Any.fromFunction2(subscribeOnce))
       __obj.asInstanceOf[Subscribe]
     }
     
-    @scala.inline
-    implicit class SubscribeMutableBuilder[Self <: Subscribe] (val x: Self) extends AnyVal {
+    extension [Self <: Subscribe](x: Self) {
       
-      @scala.inline
-      def setSubscribe(value: (String, js.Function) => String): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
+      inline def setSubscribe(value: (String, js.Function) => String): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSubscribeOnce(value: (String, js.Function) => js.Any): Self = StObject.set(x, "subscribeOnce", js.Any.fromFunction2(value))
+      inline def setSubscribeOnce(value: (String, js.Function) => js.Any): Self = StObject.set(x, "subscribeOnce", js.Any.fromFunction2(value))
     }
   }
   
@@ -109,17 +99,14 @@ object PubSubJS {
   }
   object Unsubscribe {
     
-    @scala.inline
-    def apply(unsubscribe: js.Any => js.Any): Unsubscribe = {
+    inline def apply(unsubscribe: js.Any => js.Any): Unsubscribe = {
       val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction1(unsubscribe))
       __obj.asInstanceOf[Unsubscribe]
     }
     
-    @scala.inline
-    implicit class UnsubscribeMutableBuilder[Self <: Unsubscribe] (val x: Self) extends AnyVal {
+    extension [Self <: Unsubscribe](x: Self) {
       
-      @scala.inline
-      def setUnsubscribe(value: js.Any => js.Any): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
+      inline def setUnsubscribe(value: js.Any => js.Any): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
     }
   }
 }

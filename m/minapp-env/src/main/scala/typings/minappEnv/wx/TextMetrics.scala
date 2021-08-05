@@ -11,16 +11,13 @@ trait TextMetrics extends StObject {
 }
 object TextMetrics {
   
-  @scala.inline
-  def apply(width: Double): TextMetrics = {
+  inline def apply(width: Double): TextMetrics = {
     val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextMetrics]
   }
   
-  @scala.inline
-  implicit class TextMetricsMutableBuilder[Self <: TextMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: TextMetrics](x: Self) {
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

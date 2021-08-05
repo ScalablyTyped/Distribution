@@ -10,19 +10,15 @@ trait Draft extends StObject {
 }
 object Draft {
   
-  @scala.inline
-  def apply(): Draft = {
+  inline def apply(): Draft = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Draft]
   }
   
-  @scala.inline
-  implicit class DraftMutableBuilder[Self <: Draft] (val x: Self) extends AnyVal {
+  extension [Self <: Draft](x: Self) {
     
-    @scala.inline
-    def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
   }
 }

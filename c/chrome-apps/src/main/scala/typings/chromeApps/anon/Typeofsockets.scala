@@ -36,22 +36,17 @@ trait Typeofsockets extends StObject {
 }
 object Typeofsockets {
   
-  @scala.inline
-  def apply(tcp: Typeoftcp, tcpServer: TypeoftcpServer, udp: Typeofudp): Typeofsockets = {
+  inline def apply(tcp: Typeoftcp, tcpServer: TypeoftcpServer, udp: Typeofudp): Typeofsockets = {
     val __obj = js.Dynamic.literal(tcp = tcp.asInstanceOf[js.Any], tcpServer = tcpServer.asInstanceOf[js.Any], udp = udp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofsockets]
   }
   
-  @scala.inline
-  implicit class TypeofsocketsMutableBuilder[Self <: Typeofsockets] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofsockets](x: Self) {
     
-    @scala.inline
-    def setTcp(value: Typeoftcp): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
+    inline def setTcp(value: Typeoftcp): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpServer(value: TypeoftcpServer): Self = StObject.set(x, "tcpServer", value.asInstanceOf[js.Any])
+    inline def setTcpServer(value: TypeoftcpServer): Self = StObject.set(x, "tcpServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUdp(value: Typeofudp): Self = StObject.set(x, "udp", value.asInstanceOf[js.Any])
+    inline def setUdp(value: Typeofudp): Self = StObject.set(x, "udp", value.asInstanceOf[js.Any])
   }
 }

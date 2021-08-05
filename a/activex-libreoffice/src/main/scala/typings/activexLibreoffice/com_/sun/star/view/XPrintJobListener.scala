@@ -28,8 +28,7 @@ trait XPrintJobListener
 }
 object XPrintJobListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     printJobEvent: PrintJobEvent => Unit,
@@ -40,10 +39,8 @@ object XPrintJobListener {
     __obj.asInstanceOf[XPrintJobListener]
   }
   
-  @scala.inline
-  implicit class XPrintJobListenerMutableBuilder[Self <: XPrintJobListener] (val x: Self) extends AnyVal {
+  extension [Self <: XPrintJobListener](x: Self) {
     
-    @scala.inline
-    def setPrintJobEvent(value: PrintJobEvent => Unit): Self = StObject.set(x, "printJobEvent", js.Any.fromFunction1(value))
+    inline def setPrintJobEvent(value: PrintJobEvent => Unit): Self = StObject.set(x, "printJobEvent", js.Any.fromFunction1(value))
   }
 }

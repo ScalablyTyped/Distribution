@@ -12,25 +12,19 @@ trait Compact extends StObject {
 }
 object Compact {
   
-  @scala.inline
-  def apply(): Compact = {
+  inline def apply(): Compact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Compact]
   }
   
-  @scala.inline
-  implicit class CompactMutableBuilder[Self <: Compact] (val x: Self) extends AnyVal {
+  extension [Self <: Compact](x: Self) {
     
-    @scala.inline
-    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+    inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
-    @scala.inline
-    def setInAddonPanel(value: Boolean): Self = StObject.set(x, "inAddonPanel", value.asInstanceOf[js.Any])
+    inline def setInAddonPanel(value: Boolean): Self = StObject.set(x, "inAddonPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInAddonPanelUndefined: Self = StObject.set(x, "inAddonPanel", js.undefined)
+    inline def setInAddonPanelUndefined: Self = StObject.set(x, "inAddonPanel", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait UploadMultipartPartOutput extends StObject {
 }
 object UploadMultipartPartOutput {
   
-  @scala.inline
-  def apply(): UploadMultipartPartOutput = {
+  inline def apply(): UploadMultipartPartOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadMultipartPartOutput]
   }
   
-  @scala.inline
-  implicit class UploadMultipartPartOutputMutableBuilder[Self <: UploadMultipartPartOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UploadMultipartPartOutput](x: Self) {
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
   }
 }

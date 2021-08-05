@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormatOptionsCurrencySign extends StObject
 object NumberFormatOptionsCurrencySign {
   
-  @scala.inline
-  def accounting: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.accounting = "accounting".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.accounting]
+  inline def accounting: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.accounting = "accounting".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.accounting]
   
-  @scala.inline
-  def standard: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.standard = "standard".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.standard]
+  inline def standard: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.standard = "standard".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.standard]
 }

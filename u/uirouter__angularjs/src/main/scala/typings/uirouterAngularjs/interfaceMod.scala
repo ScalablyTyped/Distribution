@@ -96,8 +96,7 @@ object interfaceMod {
   }
   object Ng1Controller {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $onInit: () => Unit,
       uiCanExit: Transition => HookResult,
       uiOnParamsChanged: (js.Any, Transition) => Unit
@@ -106,17 +105,13 @@ object interfaceMod {
       __obj.asInstanceOf[Ng1Controller]
     }
     
-    @scala.inline
-    implicit class Ng1ControllerMutableBuilder[Self <: Ng1Controller] (val x: Self) extends AnyVal {
+    extension [Self <: Ng1Controller](x: Self) {
       
-      @scala.inline
-      def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
+      inline def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUiCanExit(value: Transition => HookResult): Self = StObject.set(x, "uiCanExit", js.Any.fromFunction1(value))
+      inline def setUiCanExit(value: Transition => HookResult): Self = StObject.set(x, "uiCanExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUiOnParamsChanged(value: (js.Any, Transition) => Unit): Self = StObject.set(x, "uiOnParamsChanged", js.Any.fromFunction2(value))
+      inline def setUiOnParamsChanged(value: (js.Any, Transition) => Unit): Self = StObject.set(x, "uiOnParamsChanged", js.Any.fromFunction2(value))
     }
   }
   
@@ -364,56 +359,40 @@ object interfaceMod {
   }
   object Ng1StateDeclaration {
     
-    @scala.inline
-    def apply(): Ng1StateDeclaration = {
+    inline def apply(): Ng1StateDeclaration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ng1StateDeclaration]
     }
     
-    @scala.inline
-    implicit class Ng1StateDeclarationMutableBuilder[Self <: Ng1StateDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: Ng1StateDeclaration](x: Self) {
       
-      @scala.inline
-      def setOnEnter(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEnterFunction1(value: /* repeated */ js.Any => HookResult): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+      inline def setOnEnterFunction1(value: /* repeated */ js.Any => HookResult): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      @scala.inline
-      def setOnEnterVarargs(value: js.Any*): Self = StObject.set(x, "onEnter", js.Array(value :_*))
+      inline def setOnEnterVarargs(value: js.Any*): Self = StObject.set(x, "onEnter", js.Array(value :_*))
       
-      @scala.inline
-      def setOnExit(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+      inline def setOnExit(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExitFunction1(value: /* repeated */ js.Any => HookResult): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
+      inline def setOnExitFunction1(value: /* repeated */ js.Any => HookResult): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+      inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      @scala.inline
-      def setOnExitVarargs(value: js.Any*): Self = StObject.set(x, "onExit", js.Array(value :_*))
+      inline def setOnExitVarargs(value: js.Any*): Self = StObject.set(x, "onExit", js.Array(value :_*))
       
-      @scala.inline
-      def setOnRetain(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onRetain", value.asInstanceOf[js.Any])
+      inline def setOnRetain(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onRetain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRetainFunction1(value: /* repeated */ js.Any => HookResult): Self = StObject.set(x, "onRetain", js.Any.fromFunction1(value))
+      inline def setOnRetainFunction1(value: /* repeated */ js.Any => HookResult): Self = StObject.set(x, "onRetain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRetainUndefined: Self = StObject.set(x, "onRetain", js.undefined)
+      inline def setOnRetainUndefined: Self = StObject.set(x, "onRetain", js.undefined)
       
-      @scala.inline
-      def setOnRetainVarargs(value: js.Any*): Self = StObject.set(x, "onRetain", js.Array(value :_*))
+      inline def setOnRetainVarargs(value: js.Any*): Self = StObject.set(x, "onRetain", js.Array(value :_*))
       
-      @scala.inline
-      def setViews(value: StringDictionary[String | Ng1ViewDeclaration]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: StringDictionary[String | Ng1ViewDeclaration]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     }
   }
   
@@ -673,86 +652,60 @@ object interfaceMod {
   }
   object Ng1ViewDeclaration {
     
-    @scala.inline
-    def apply(): Ng1ViewDeclaration = {
+    inline def apply(): Ng1ViewDeclaration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ng1ViewDeclaration]
     }
     
-    @scala.inline
-    implicit class Ng1ViewDeclarationMutableBuilder[Self <: Ng1ViewDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: Ng1ViewDeclaration](x: Self) {
       
-      @scala.inline
-      def setBindings(value: StringDictionary[String]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+      inline def setBindings(value: StringDictionary[String]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+      inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentProvider(value: IInjectable): Self = StObject.set(x, "componentProvider", value.asInstanceOf[js.Any])
+      inline def setComponentProvider(value: IInjectable): Self = StObject.set(x, "componentProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentProviderUndefined: Self = StObject.set(x, "componentProvider", js.undefined)
+      inline def setComponentProviderUndefined: Self = StObject.set(x, "componentProvider", js.undefined)
       
-      @scala.inline
-      def setComponentProviderVarargs(value: js.Any*): Self = StObject.set(x, "componentProvider", js.Array(value :_*))
+      inline def setComponentProviderVarargs(value: js.Any*): Self = StObject.set(x, "componentProvider", js.Array(value :_*))
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setController(value: IInjectable | String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: IInjectable | String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+      inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
+      inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
       
-      @scala.inline
-      def setControllerProvider(value: IInjectable): Self = StObject.set(x, "controllerProvider", value.asInstanceOf[js.Any])
+      inline def setControllerProvider(value: IInjectable): Self = StObject.set(x, "controllerProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerProviderUndefined: Self = StObject.set(x, "controllerProvider", js.undefined)
+      inline def setControllerProviderUndefined: Self = StObject.set(x, "controllerProvider", js.undefined)
       
-      @scala.inline
-      def setControllerProviderVarargs(value: js.Any*): Self = StObject.set(x, "controllerProvider", js.Array(value :_*))
+      inline def setControllerProviderVarargs(value: js.Any*): Self = StObject.set(x, "controllerProvider", js.Array(value :_*))
       
-      @scala.inline
-      def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+      inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
       
-      @scala.inline
-      def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
+      inline def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
       
-      @scala.inline
-      def setResolveAs(value: String): Self = StObject.set(x, "resolveAs", value.asInstanceOf[js.Any])
+      inline def setResolveAs(value: String): Self = StObject.set(x, "resolveAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveAsUndefined: Self = StObject.set(x, "resolveAs", js.undefined)
+      inline def setResolveAsUndefined: Self = StObject.set(x, "resolveAs", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: js.Function | String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: js.Function | String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateProvider(value: IInjectable): Self = StObject.set(x, "templateProvider", value.asInstanceOf[js.Any])
+      inline def setTemplateProvider(value: IInjectable): Self = StObject.set(x, "templateProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateProviderUndefined: Self = StObject.set(x, "templateProvider", js.undefined)
+      inline def setTemplateProviderUndefined: Self = StObject.set(x, "templateProvider", js.undefined)
       
-      @scala.inline
-      def setTemplateProviderVarargs(value: js.Any*): Self = StObject.set(x, "templateProvider", js.Array(value :_*))
+      inline def setTemplateProviderVarargs(value: js.Any*): Self = StObject.set(x, "templateProvider", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTemplateUrl(value: String | js.Function): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: String | js.Function): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+      inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     }
   }
   
@@ -783,17 +736,14 @@ object interfaceMod {
   }
   object TemplateFactoryProvider {
     
-    @scala.inline
-    def apply(useHttpService: Boolean => js.Any): TemplateFactoryProvider = {
+    inline def apply(useHttpService: Boolean => js.Any): TemplateFactoryProvider = {
       val __obj = js.Dynamic.literal(useHttpService = js.Any.fromFunction1(useHttpService))
       __obj.asInstanceOf[TemplateFactoryProvider]
     }
     
-    @scala.inline
-    implicit class TemplateFactoryProviderMutableBuilder[Self <: TemplateFactoryProvider] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateFactoryProvider](x: Self) {
       
-      @scala.inline
-      def setUseHttpService(value: Boolean => js.Any): Self = StObject.set(x, "useHttpService", js.Any.fromFunction1(value))
+      inline def setUseHttpService(value: Boolean => js.Any): Self = StObject.set(x, "useHttpService", js.Any.fromFunction1(value))
     }
   }
   
@@ -815,38 +765,28 @@ object interfaceMod {
   }
   object _Ng1StateDeclaration {
     
-    @scala.inline
-    def apply(): _Ng1StateDeclaration = {
+    inline def apply(): _Ng1StateDeclaration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[_Ng1StateDeclaration]
     }
     
-    @scala.inline
-    implicit class _Ng1StateDeclarationMutableBuilder[Self <: _Ng1StateDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: _Ng1StateDeclaration](x: Self) {
       
-      @scala.inline
-      def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      @scala.inline
-      def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+      inline def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+      inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      @scala.inline
-      def setOnRetain(value: js.Any): Self = StObject.set(x, "onRetain", value.asInstanceOf[js.Any])
+      inline def setOnRetain(value: js.Any): Self = StObject.set(x, "onRetain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRetainUndefined: Self = StObject.set(x, "onRetain", js.undefined)
+      inline def setOnRetainUndefined: Self = StObject.set(x, "onRetain", js.undefined)
       
-      @scala.inline
-      def setViews(value: js.Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: js.Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     }
   }
   

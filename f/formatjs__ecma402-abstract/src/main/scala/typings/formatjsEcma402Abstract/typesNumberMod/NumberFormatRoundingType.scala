@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormatRoundingType extends StObject
 object NumberFormatRoundingType {
   
-  @scala.inline
-  def compactRounding: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.compactRounding = "compactRounding".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.compactRounding]
+  inline def compactRounding: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.compactRounding = "compactRounding".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.compactRounding]
   
-  @scala.inline
-  def fractionDigits: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionDigits = "fractionDigits".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionDigits]
+  inline def fractionDigits: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionDigits = "fractionDigits".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionDigits]
   
-  @scala.inline
-  def significantDigits: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.significantDigits = "significantDigits".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.significantDigits]
+  inline def significantDigits: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.significantDigits = "significantDigits".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.significantDigits]
 }

@@ -17,31 +17,23 @@ trait Authentication extends StObject {
 }
 object Authentication {
   
-  @scala.inline
-  def apply(): Authentication = {
+  inline def apply(): Authentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Authentication]
   }
   
-  @scala.inline
-  implicit class AuthenticationMutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
+  extension [Self <: Authentication](x: Self) {
     
-    @scala.inline
-    def setCustomAccount(value: CustomAccount): Self = StObject.set(x, "customAccount", value.asInstanceOf[js.Any])
+    inline def setCustomAccount(value: CustomAccount): Self = StObject.set(x, "customAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAccountUndefined: Self = StObject.set(x, "customAccount", js.undefined)
+    inline def setCustomAccountUndefined: Self = StObject.set(x, "customAccount", js.undefined)
     
-    @scala.inline
-    def setGoogleAccount(value: GoogleAccount): Self = StObject.set(x, "googleAccount", value.asInstanceOf[js.Any])
+    inline def setGoogleAccount(value: GoogleAccount): Self = StObject.set(x, "googleAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAccountUndefined: Self = StObject.set(x, "googleAccount", js.undefined)
+    inline def setGoogleAccountUndefined: Self = StObject.set(x, "googleAccount", js.undefined)
     
-    @scala.inline
-    def setIapCredential(value: IapCredential): Self = StObject.set(x, "iapCredential", value.asInstanceOf[js.Any])
+    inline def setIapCredential(value: IapCredential): Self = StObject.set(x, "iapCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIapCredentialUndefined: Self = StObject.set(x, "iapCredential", js.undefined)
+    inline def setIapCredentialUndefined: Self = StObject.set(x, "iapCredential", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ object useCustomEffectMod {
     * @param dependencies A list of dependencies
     * @param isEqual A function comparing the next and previous dependencyLists
     */
-  @scala.inline
-  def default[TDeps /* <: DependencyList */](effect: EffectCallback, dependencies: TDeps, isEqual: IsEqual[TDeps]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], isEqual.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default[TDeps /* <: DependencyList */](effect: EffectCallback, dependencies: TDeps, isEqual: IsEqual[TDeps]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], isEqual.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * a useEffect() hook with customized depedency comparision
     *
@@ -30,8 +29,7 @@ object useCustomEffectMod {
     * @param options.isEqual A function comparing the next and previous dependencyLists
     * @param options.effectHook the underlying effect hook used, defaults to useEffect
     */
-  @scala.inline
-  def default[TDeps /* <: DependencyList */](effect: EffectCallback, dependencies: TDeps, options: CustomEffectOptions[TDeps]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default[TDeps /* <: DependencyList */](effect: EffectCallback, dependencies: TDeps, options: CustomEffectOptions[TDeps]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait CustomEffectOptions[TDeps /* <: DependencyList */] extends StObject {
     
@@ -41,23 +39,18 @@ object useCustomEffectMod {
   }
   object CustomEffectOptions {
     
-    @scala.inline
-    def apply[TDeps /* <: DependencyList */](isEqual: (TDeps, TDeps) => Boolean): CustomEffectOptions[TDeps] = {
+    inline def apply[TDeps /* <: DependencyList */](isEqual: (TDeps, TDeps) => Boolean): CustomEffectOptions[TDeps] = {
       val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction2(isEqual))
       __obj.asInstanceOf[CustomEffectOptions[TDeps]]
     }
     
-    @scala.inline
-    implicit class CustomEffectOptionsMutableBuilder[Self <: CustomEffectOptions[?], TDeps /* <: DependencyList */] (val x: Self & CustomEffectOptions[TDeps]) extends AnyVal {
+    extension [Self <: CustomEffectOptions[?], TDeps /* <: DependencyList */](x: Self & CustomEffectOptions[TDeps]) {
       
-      @scala.inline
-      def setEffectHook(value: (/* effect */ EffectCallback, /* deps */ js.UndefOr[DependencyList]) => Unit): Self = StObject.set(x, "effectHook", js.Any.fromFunction2(value))
+      inline def setEffectHook(value: (/* effect */ EffectCallback, /* deps */ js.UndefOr[DependencyList]) => Unit): Self = StObject.set(x, "effectHook", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEffectHookUndefined: Self = StObject.set(x, "effectHook", js.undefined)
+      inline def setEffectHookUndefined: Self = StObject.set(x, "effectHook", js.undefined)
       
-      @scala.inline
-      def setIsEqual(value: (TDeps, TDeps) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
+      inline def setIsEqual(value: (TDeps, TDeps) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
     }
   }
   

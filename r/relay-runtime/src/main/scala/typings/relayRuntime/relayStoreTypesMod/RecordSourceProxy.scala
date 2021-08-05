@@ -18,8 +18,7 @@ trait RecordSourceProxy extends StObject {
 }
 object RecordSourceProxy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: (DataID, String) => RecordProxy[js.Object],
     delete: DataID => Unit,
     get: DataID => js.UndefOr[RecordProxy[js.Any] | Null],
@@ -29,19 +28,14 @@ object RecordSourceProxy {
     __obj.asInstanceOf[RecordSourceProxy]
   }
   
-  @scala.inline
-  implicit class RecordSourceProxyMutableBuilder[Self <: RecordSourceProxy] (val x: Self) extends AnyVal {
+  extension [Self <: RecordSourceProxy](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (DataID, String) => RecordProxy[js.Object]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (DataID, String) => RecordProxy[js.Object]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDelete(value: DataID => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: DataID => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: DataID => js.UndefOr[RecordProxy[js.Any] | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: DataID => js.UndefOr[RecordProxy[js.Any] | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRoot(value: () => RecordProxy[js.Object]): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+    inline def setGetRoot(value: () => RecordProxy[js.Object]): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
   }
 }

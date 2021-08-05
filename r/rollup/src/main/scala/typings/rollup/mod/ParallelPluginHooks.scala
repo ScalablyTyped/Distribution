@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParallelPluginHooks extends StObject
 object ParallelPluginHooks {
   
-  @scala.inline
-  def banner: typings.rollup.rollupStrings.banner = "banner".asInstanceOf[typings.rollup.rollupStrings.banner]
+  inline def banner: typings.rollup.rollupStrings.banner = "banner".asInstanceOf[typings.rollup.rollupStrings.banner]
   
-  @scala.inline
-  def buildEnd: typings.rollup.rollupStrings.buildEnd = "buildEnd".asInstanceOf[typings.rollup.rollupStrings.buildEnd]
+  inline def buildEnd: typings.rollup.rollupStrings.buildEnd = "buildEnd".asInstanceOf[typings.rollup.rollupStrings.buildEnd]
   
-  @scala.inline
-  def buildStart: typings.rollup.rollupStrings.buildStart = "buildStart".asInstanceOf[typings.rollup.rollupStrings.buildStart]
+  inline def buildStart: typings.rollup.rollupStrings.buildStart = "buildStart".asInstanceOf[typings.rollup.rollupStrings.buildStart]
   
-  @scala.inline
-  def footer: typings.rollup.rollupStrings.footer = "footer".asInstanceOf[typings.rollup.rollupStrings.footer]
+  inline def footer: typings.rollup.rollupStrings.footer = "footer".asInstanceOf[typings.rollup.rollupStrings.footer]
   
-  @scala.inline
-  def intro: typings.rollup.rollupStrings.intro = "intro".asInstanceOf[typings.rollup.rollupStrings.intro]
+  inline def intro: typings.rollup.rollupStrings.intro = "intro".asInstanceOf[typings.rollup.rollupStrings.intro]
   
-  @scala.inline
-  def moduleParsed: typings.rollup.rollupStrings.moduleParsed = "moduleParsed".asInstanceOf[typings.rollup.rollupStrings.moduleParsed]
+  inline def moduleParsed: typings.rollup.rollupStrings.moduleParsed = "moduleParsed".asInstanceOf[typings.rollup.rollupStrings.moduleParsed]
   
-  @scala.inline
-  def outro: typings.rollup.rollupStrings.outro = "outro".asInstanceOf[typings.rollup.rollupStrings.outro]
+  inline def outro: typings.rollup.rollupStrings.outro = "outro".asInstanceOf[typings.rollup.rollupStrings.outro]
   
-  @scala.inline
-  def renderError: typings.rollup.rollupStrings.renderError = "renderError".asInstanceOf[typings.rollup.rollupStrings.renderError]
+  inline def renderError: typings.rollup.rollupStrings.renderError = "renderError".asInstanceOf[typings.rollup.rollupStrings.renderError]
   
-  @scala.inline
-  def renderStart: typings.rollup.rollupStrings.renderStart = "renderStart".asInstanceOf[typings.rollup.rollupStrings.renderStart]
+  inline def renderStart: typings.rollup.rollupStrings.renderStart = "renderStart".asInstanceOf[typings.rollup.rollupStrings.renderStart]
   
-  @scala.inline
-  def writeBundle: typings.rollup.rollupStrings.writeBundle = "writeBundle".asInstanceOf[typings.rollup.rollupStrings.writeBundle]
+  inline def writeBundle: typings.rollup.rollupStrings.writeBundle = "writeBundle".asInstanceOf[typings.rollup.rollupStrings.writeBundle]
 }

@@ -29,31 +29,23 @@ trait SchemaCreativeFieldValue extends StObject {
 }
 object SchemaCreativeFieldValue {
   
-  @scala.inline
-  def apply(): SchemaCreativeFieldValue = {
+  inline def apply(): SchemaCreativeFieldValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreativeFieldValue]
   }
   
-  @scala.inline
-  implicit class SchemaCreativeFieldValueMutableBuilder[Self <: SchemaCreativeFieldValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreativeFieldValue](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

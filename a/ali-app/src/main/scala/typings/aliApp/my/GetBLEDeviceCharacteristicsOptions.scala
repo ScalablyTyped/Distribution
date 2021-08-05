@@ -27,22 +27,17 @@ trait GetBLEDeviceCharacteristicsOptions
 }
 object GetBLEDeviceCharacteristicsOptions {
   
-  @scala.inline
-  def apply(deviceId: String, serviceId: String, success: characteristicsArraychara => Unit): GetBLEDeviceCharacteristicsOptions = {
+  inline def apply(deviceId: String, serviceId: String, success: characteristicsArraychara => Unit): GetBLEDeviceCharacteristicsOptions = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsOptions]
   }
   
-  @scala.inline
-  implicit class GetBLEDeviceCharacteristicsOptionsMutableBuilder[Self <: GetBLEDeviceCharacteristicsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetBLEDeviceCharacteristicsOptions](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: characteristicsArraychara => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: characteristicsArraychara => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

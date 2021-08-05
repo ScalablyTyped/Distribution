@@ -11,6 +11,5 @@ object getPropertiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: NodePath[js.Any, js.Any], id: String): js.Array[NodePath[js.Any, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Array[NodePath[js.Any, js.Any]]]
+  inline def default(path: NodePath[js.Any, js.Any], id: String): js.Array[NodePath[js.Any, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Array[NodePath[js.Any, js.Any]]]
 }

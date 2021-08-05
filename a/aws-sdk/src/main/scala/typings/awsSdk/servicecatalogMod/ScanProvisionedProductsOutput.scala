@@ -18,28 +18,21 @@ trait ScanProvisionedProductsOutput extends StObject {
 }
 object ScanProvisionedProductsOutput {
   
-  @scala.inline
-  def apply(): ScanProvisionedProductsOutput = {
+  inline def apply(): ScanProvisionedProductsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScanProvisionedProductsOutput]
   }
   
-  @scala.inline
-  implicit class ScanProvisionedProductsOutputMutableBuilder[Self <: ScanProvisionedProductsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ScanProvisionedProductsOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setProvisionedProducts(value: ProvisionedProductDetails): Self = StObject.set(x, "ProvisionedProducts", value.asInstanceOf[js.Any])
+    inline def setProvisionedProducts(value: ProvisionedProductDetails): Self = StObject.set(x, "ProvisionedProducts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductsUndefined: Self = StObject.set(x, "ProvisionedProducts", js.undefined)
+    inline def setProvisionedProductsUndefined: Self = StObject.set(x, "ProvisionedProducts", js.undefined)
     
-    @scala.inline
-    def setProvisionedProductsVarargs(value: ProvisionedProductDetail*): Self = StObject.set(x, "ProvisionedProducts", js.Array(value :_*))
+    inline def setProvisionedProductsVarargs(value: ProvisionedProductDetail*): Self = StObject.set(x, "ProvisionedProducts", js.Array(value :_*))
   }
 }

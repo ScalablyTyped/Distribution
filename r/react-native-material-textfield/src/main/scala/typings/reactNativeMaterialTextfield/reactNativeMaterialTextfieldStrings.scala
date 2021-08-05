@@ -8,21 +8,17 @@ object reactNativeMaterialTextfieldStrings {
   
   @js.native
   sealed trait dashed extends StObject
-  @scala.inline
-  def dashed: dashed = "dashed".asInstanceOf[dashed]
+  inline def dashed: dashed = "dashed".asInstanceOf[dashed]
   
   @js.native
   sealed trait dotted extends StObject
-  @scala.inline
-  def dotted: dotted = "dotted".asInstanceOf[dotted]
+  inline def dotted: dotted = "dotted".asInstanceOf[dotted]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait solid extends StObject
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
+  inline def solid: solid = "solid".asInstanceOf[solid]
 }

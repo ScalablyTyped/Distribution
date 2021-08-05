@@ -28,8 +28,7 @@ trait WorkItemTypeTemplateUpdateModel extends StObject {
 }
 object WorkItemTypeTemplateUpdateModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionType: ProvisioningActionType,
     methodology: String,
     template: String,
@@ -39,19 +38,14 @@ object WorkItemTypeTemplateUpdateModel {
     __obj.asInstanceOf[WorkItemTypeTemplateUpdateModel]
   }
   
-  @scala.inline
-  implicit class WorkItemTypeTemplateUpdateModelMutableBuilder[Self <: WorkItemTypeTemplateUpdateModel] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTypeTemplateUpdateModel](x: Self) {
     
-    @scala.inline
-    def setActionType(value: ProvisioningActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: ProvisioningActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodology(value: String): Self = StObject.set(x, "methodology", value.asInstanceOf[js.Any])
+    inline def setMethodology(value: String): Self = StObject.set(x, "methodology", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateType(value: TemplateType): Self = StObject.set(x, "templateType", value.asInstanceOf[js.Any])
+    inline def setTemplateType(value: TemplateType): Self = StObject.set(x, "templateType", value.asInstanceOf[js.Any])
   }
 }

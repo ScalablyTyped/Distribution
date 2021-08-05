@@ -21,65 +21,49 @@ object builders {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addAlignmentToDoc(doc: Doc, size: Double, tabWidth: Double): Doc = (^.asInstanceOf[js.Dynamic].applyDynamic("addAlignmentToDoc")(doc.asInstanceOf[js.Any], size.asInstanceOf[js.Any], tabWidth.asInstanceOf[js.Any])).asInstanceOf[Doc]
+  inline def addAlignmentToDoc(doc: Doc, size: Double, tabWidth: Double): Doc = (^.asInstanceOf[js.Dynamic].applyDynamic("addAlignmentToDoc")(doc.asInstanceOf[js.Any], size.asInstanceOf[js.Any], tabWidth.asInstanceOf[js.Any])).asInstanceOf[Doc]
   
-  @scala.inline
-  def align(n: String, contents: Doc): Align_ = (^.asInstanceOf[js.Dynamic].applyDynamic("align")(n.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[Align_]
-  @scala.inline
-  def align(n: Double, contents: Doc): Align_ = (^.asInstanceOf[js.Dynamic].applyDynamic("align")(n.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[Align_]
-  @scala.inline
-  def align(n: Type, contents: Doc): Align_ = (^.asInstanceOf[js.Dynamic].applyDynamic("align")(n.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[Align_]
+  inline def align(n: String, contents: Doc): Align_ = (^.asInstanceOf[js.Dynamic].applyDynamic("align")(n.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[Align_]
+  inline def align(n: Double, contents: Doc): Align_ = (^.asInstanceOf[js.Dynamic].applyDynamic("align")(n.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[Align_]
+  inline def align(n: Type, contents: Doc): Align_ = (^.asInstanceOf[js.Dynamic].applyDynamic("align")(n.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[Align_]
   
   @JSImport("prettier/doc", "builders.breakParent")
   @js.native
   val breakParent: BreakParent_ = js.native
   
-  @scala.inline
-  def concat(contents: js.Array[Doc]): Concat_ = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(contents.asInstanceOf[js.Any]).asInstanceOf[Concat_]
+  inline def concat(contents: js.Array[Doc]): Concat_ = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(contents.asInstanceOf[js.Any]).asInstanceOf[Concat_]
   
-  @scala.inline
-  def conditionalGroup(states: js.Array[Doc]): Group_ = ^.asInstanceOf[js.Dynamic].applyDynamic("conditionalGroup")(states.asInstanceOf[js.Any]).asInstanceOf[Group_]
-  @scala.inline
-  def conditionalGroup(states: js.Array[Doc], opts: ShouldBreak): Group_ = (^.asInstanceOf[js.Dynamic].applyDynamic("conditionalGroup")(states.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group_]
+  inline def conditionalGroup(states: js.Array[Doc]): Group_ = ^.asInstanceOf[js.Dynamic].applyDynamic("conditionalGroup")(states.asInstanceOf[js.Any]).asInstanceOf[Group_]
+  inline def conditionalGroup(states: js.Array[Doc], opts: ShouldBreak): Group_ = (^.asInstanceOf[js.Dynamic].applyDynamic("conditionalGroup")(states.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group_]
   
   @JSImport("prettier/doc", "builders.cursor")
   @js.native
   val cursor: Cursor_ = js.native
   
-  @scala.inline
-  def dedent(contents: Doc): Align_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(contents.asInstanceOf[js.Any]).asInstanceOf[Align_]
+  inline def dedent(contents: Doc): Align_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dedent")(contents.asInstanceOf[js.Any]).asInstanceOf[Align_]
   
-  @scala.inline
-  def dedentToRoot(contents: Doc): Align_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dedentToRoot")(contents.asInstanceOf[js.Any]).asInstanceOf[Align_]
+  inline def dedentToRoot(contents: Doc): Align_ = ^.asInstanceOf[js.Dynamic].applyDynamic("dedentToRoot")(contents.asInstanceOf[js.Any]).asInstanceOf[Align_]
   
-  @scala.inline
-  def fill(parts: js.Array[Doc]): Fill_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fill")(parts.asInstanceOf[js.Any]).asInstanceOf[Fill_]
+  inline def fill(parts: js.Array[Doc]): Fill_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fill")(parts.asInstanceOf[js.Any]).asInstanceOf[Fill_]
   
-  @scala.inline
-  def group(contents: Doc): Group_ = ^.asInstanceOf[js.Dynamic].applyDynamic("group")(contents.asInstanceOf[js.Any]).asInstanceOf[Group_]
-  @scala.inline
-  def group(contents: Doc, opts: ShouldBreak): Group_ = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(contents.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group_]
+  inline def group(contents: Doc): Group_ = ^.asInstanceOf[js.Dynamic].applyDynamic("group")(contents.asInstanceOf[js.Any]).asInstanceOf[Group_]
+  inline def group(contents: Doc, opts: ShouldBreak): Group_ = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(contents.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group_]
   
   @JSImport("prettier/doc", "builders.hardline")
   @js.native
   val hardline: Concat_ = js.native
   
-  @scala.inline
-  def ifBreak(breakContents: Doc, flatContents: Doc): IfBreak_ = (^.asInstanceOf[js.Dynamic].applyDynamic("ifBreak")(breakContents.asInstanceOf[js.Any], flatContents.asInstanceOf[js.Any])).asInstanceOf[IfBreak_]
+  inline def ifBreak(breakContents: Doc, flatContents: Doc): IfBreak_ = (^.asInstanceOf[js.Dynamic].applyDynamic("ifBreak")(breakContents.asInstanceOf[js.Any], flatContents.asInstanceOf[js.Any])).asInstanceOf[IfBreak_]
   
-  @scala.inline
-  def indent(contents: Doc): Indent_ = ^.asInstanceOf[js.Dynamic].applyDynamic("indent")(contents.asInstanceOf[js.Any]).asInstanceOf[Indent_]
+  inline def indent(contents: Doc): Indent_ = ^.asInstanceOf[js.Dynamic].applyDynamic("indent")(contents.asInstanceOf[js.Any]).asInstanceOf[Indent_]
   
-  @scala.inline
-  def join(separator: Doc, parts: js.Array[Doc]): Concat_ = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(separator.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[Concat_]
+  inline def join(separator: Doc, parts: js.Array[Doc]): Concat_ = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(separator.asInstanceOf[js.Any], parts.asInstanceOf[js.Any])).asInstanceOf[Concat_]
   
   @JSImport("prettier/doc", "builders.line")
   @js.native
   val line: Line_ = js.native
   
-  @scala.inline
-  def lineSuffix(contents: Doc): LineSuffix_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lineSuffix")(contents.asInstanceOf[js.Any]).asInstanceOf[LineSuffix_]
+  inline def lineSuffix(contents: Doc): LineSuffix_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lineSuffix")(contents.asInstanceOf[js.Any]).asInstanceOf[LineSuffix_]
   
   @JSImport("prettier/doc", "builders.lineSuffixBoundary")
   @js.native
@@ -89,8 +73,7 @@ object builders {
   @js.native
   val literalline: Concat_ = js.native
   
-  @scala.inline
-  def markAsRoot(contents: Doc): Align_ = ^.asInstanceOf[js.Dynamic].applyDynamic("markAsRoot")(contents.asInstanceOf[js.Any]).asInstanceOf[Align_]
+  inline def markAsRoot(contents: Doc): Align_ = ^.asInstanceOf[js.Dynamic].applyDynamic("markAsRoot")(contents.asInstanceOf[js.Any]).asInstanceOf[Align_]
   
   @JSImport("prettier/doc", "builders.softline")
   @js.native
@@ -112,24 +95,19 @@ object builders {
   }
   object Align_ {
     
-    @scala.inline
-    def apply(contents: Doc, n: Double | String | Type): Align_ = {
+    inline def apply(contents: Doc, n: Double | String | Type): Align_ = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("align")
       __obj.asInstanceOf[Align_]
     }
     
-    @scala.inline
-    implicit class Align_MutableBuilder[Self <: Align_] (val x: Self) extends AnyVal {
+    extension [Self <: Align_](x: Self) {
       
-      @scala.inline
-      def setContents(value: Doc): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Doc): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: Double | String | Type): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: Double | String | Type): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: align): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: align): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,18 +119,15 @@ object builders {
   }
   object BreakParent_ {
     
-    @scala.inline
-    def apply(): BreakParent_ = {
+    inline def apply(): BreakParent_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("break-parent")
       __obj.asInstanceOf[BreakParent_]
     }
     
-    @scala.inline
-    implicit class BreakParent_MutableBuilder[Self <: BreakParent_] (val x: Self) extends AnyVal {
+    extension [Self <: BreakParent_](x: Self) {
       
-      @scala.inline
-      def setType(value: `break-parent`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `break-parent`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,24 +141,19 @@ object builders {
   }
   object Concat_ {
     
-    @scala.inline
-    def apply(parts: js.Array[Doc]): Concat_ = {
+    inline def apply(parts: js.Array[Doc]): Concat_ = {
       val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("concat")
       __obj.asInstanceOf[Concat_]
     }
     
-    @scala.inline
-    implicit class Concat_MutableBuilder[Self <: Concat_] (val x: Self) extends AnyVal {
+    extension [Self <: Concat_](x: Self) {
       
-      @scala.inline
-      def setParts(value: js.Array[Doc]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[Doc]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsVarargs(value: Doc*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: Doc*): Self = StObject.set(x, "parts", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: concat): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: concat): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,21 +167,17 @@ object builders {
   }
   object Cursor_ {
     
-    @scala.inline
-    def apply(placeholder: js.Symbol): Cursor_ = {
+    inline def apply(placeholder: js.Symbol): Cursor_ = {
       val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("cursor")
       __obj.asInstanceOf[Cursor_]
     }
     
-    @scala.inline
-    implicit class Cursor_MutableBuilder[Self <: Cursor_] (val x: Self) extends AnyVal {
+    extension [Self <: Cursor_](x: Self) {
       
-      @scala.inline
-      def setPlaceholder(value: js.Symbol): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: js.Symbol): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: typings.prettier.prettierStrings.cursor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.prettier.prettierStrings.cursor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,24 +208,19 @@ object builders {
   }
   object Fill_ {
     
-    @scala.inline
-    def apply(parts: js.Array[Doc]): Fill_ = {
+    inline def apply(parts: js.Array[Doc]): Fill_ = {
       val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("fill")
       __obj.asInstanceOf[Fill_]
     }
     
-    @scala.inline
-    implicit class Fill_MutableBuilder[Self <: Fill_] (val x: Self) extends AnyVal {
+    extension [Self <: Fill_](x: Self) {
       
-      @scala.inline
-      def setParts(value: js.Array[Doc]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[Doc]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsVarargs(value: Doc*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: Doc*): Self = StObject.set(x, "parts", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: fill): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fill): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,30 +238,23 @@ object builders {
   }
   object Group_ {
     
-    @scala.inline
-    def apply(break: Boolean, contents: Doc, expandedStates: js.Array[Doc]): Group_ = {
+    inline def apply(break: Boolean, contents: Doc, expandedStates: js.Array[Doc]): Group_ = {
       val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], expandedStates = expandedStates.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("group")
       __obj.asInstanceOf[Group_]
     }
     
-    @scala.inline
-    implicit class Group_MutableBuilder[Self <: Group_] (val x: Self) extends AnyVal {
+    extension [Self <: Group_](x: Self) {
       
-      @scala.inline
-      def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
+      inline def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContents(value: Doc): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Doc): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedStates(value: js.Array[Doc]): Self = StObject.set(x, "expandedStates", value.asInstanceOf[js.Any])
+      inline def setExpandedStates(value: js.Array[Doc]): Self = StObject.set(x, "expandedStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedStatesVarargs(value: Doc*): Self = StObject.set(x, "expandedStates", js.Array(value :_*))
+      inline def setExpandedStatesVarargs(value: Doc*): Self = StObject.set(x, "expandedStates", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -316,24 +270,19 @@ object builders {
   }
   object IfBreak_ {
     
-    @scala.inline
-    def apply(breakContents: Doc, flatContents: Doc): IfBreak_ = {
+    inline def apply(breakContents: Doc, flatContents: Doc): IfBreak_ = {
       val __obj = js.Dynamic.literal(breakContents = breakContents.asInstanceOf[js.Any], flatContents = flatContents.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("if-break")
       __obj.asInstanceOf[IfBreak_]
     }
     
-    @scala.inline
-    implicit class IfBreak_MutableBuilder[Self <: IfBreak_] (val x: Self) extends AnyVal {
+    extension [Self <: IfBreak_](x: Self) {
       
-      @scala.inline
-      def setBreakContents(value: Doc): Self = StObject.set(x, "breakContents", value.asInstanceOf[js.Any])
+      inline def setBreakContents(value: Doc): Self = StObject.set(x, "breakContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatContents(value: Doc): Self = StObject.set(x, "flatContents", value.asInstanceOf[js.Any])
+      inline def setFlatContents(value: Doc): Self = StObject.set(x, "flatContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `if-break`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `if-break`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -347,21 +296,17 @@ object builders {
   }
   object Indent_ {
     
-    @scala.inline
-    def apply(contents: Doc): Indent_ = {
+    inline def apply(contents: Doc): Indent_ = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("indent")
       __obj.asInstanceOf[Indent_]
     }
     
-    @scala.inline
-    implicit class Indent_MutableBuilder[Self <: Indent_] (val x: Self) extends AnyVal {
+    extension [Self <: Indent_](x: Self) {
       
-      @scala.inline
-      def setContents(value: Doc): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Doc): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: indent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: indent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -373,18 +318,15 @@ object builders {
   }
   object LineSuffixBoundary_ {
     
-    @scala.inline
-    def apply(): LineSuffixBoundary_ = {
+    inline def apply(): LineSuffixBoundary_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("line-suffix-boundary")
       __obj.asInstanceOf[LineSuffixBoundary_]
     }
     
-    @scala.inline
-    implicit class LineSuffixBoundary_MutableBuilder[Self <: LineSuffixBoundary_] (val x: Self) extends AnyVal {
+    extension [Self <: LineSuffixBoundary_](x: Self) {
       
-      @scala.inline
-      def setType(value: `line-suffix-boundary`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `line-suffix-boundary`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -398,21 +340,17 @@ object builders {
   }
   object LineSuffix_ {
     
-    @scala.inline
-    def apply(contents: Doc): LineSuffix_ = {
+    inline def apply(contents: Doc): LineSuffix_ = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("line-suffix")
       __obj.asInstanceOf[LineSuffix_]
     }
     
-    @scala.inline
-    implicit class LineSuffix_MutableBuilder[Self <: LineSuffix_] (val x: Self) extends AnyVal {
+    extension [Self <: LineSuffix_](x: Self) {
       
-      @scala.inline
-      def setContents(value: Doc): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Doc): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `line-suffix`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `line-suffix`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -430,36 +368,27 @@ object builders {
   }
   object Line_ {
     
-    @scala.inline
-    def apply(): Line_ = {
+    inline def apply(): Line_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("line")
       __obj.asInstanceOf[Line_]
     }
     
-    @scala.inline
-    implicit class Line_MutableBuilder[Self <: Line_] (val x: Self) extends AnyVal {
+    extension [Self <: Line_](x: Self) {
       
-      @scala.inline
-      def setHard(value: Boolean): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
+      inline def setHard(value: Boolean): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
+      inline def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
       
-      @scala.inline
-      def setLiteral(value: Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiteralUndefined: Self = StObject.set(x, "literal", js.undefined)
+      inline def setLiteralUndefined: Self = StObject.set(x, "literal", js.undefined)
       
-      @scala.inline
-      def setSoft(value: Boolean): Self = StObject.set(x, "soft", value.asInstanceOf[js.Any])
+      inline def setSoft(value: Boolean): Self = StObject.set(x, "soft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoftUndefined: Self = StObject.set(x, "soft", js.undefined)
+      inline def setSoftUndefined: Self = StObject.set(x, "soft", js.undefined)
       
-      @scala.inline
-      def setType(value: typings.prettier.prettierStrings.line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.prettier.prettierStrings.line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -471,103 +400,88 @@ object builders {
   }
   object Trim_ {
     
-    @scala.inline
-    def apply(): Trim_ = {
+    inline def apply(): Trim_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("trim")
       __obj.asInstanceOf[Trim_]
     }
     
-    @scala.inline
-    implicit class Trim_MutableBuilder[Self <: Trim_] (val x: Self) extends AnyVal {
+    extension [Self <: Trim_](x: Self) {
       
-      @scala.inline
-      def setType(value: typings.prettier.prettierStrings.trim): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.prettier.prettierStrings.trim): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait _Doc extends StObject
   object _Doc {
     
-    @scala.inline
-    def Align_(contents: Doc, n: Double | String | Type): typings.prettier.docMod.builders.Align_ = {
+    inline def Align_(contents: Doc, n: Double | String | Type): typings.prettier.docMod.builders.Align_ = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("align")
       __obj.asInstanceOf[typings.prettier.docMod.builders.Align_]
     }
     
-    @scala.inline
-    def BreakParent_(): typings.prettier.docMod.builders.BreakParent_ = {
+    inline def BreakParent_(): typings.prettier.docMod.builders.BreakParent_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("break-parent")
       __obj.asInstanceOf[typings.prettier.docMod.builders.BreakParent_]
     }
     
-    @scala.inline
-    def Concat_(parts: js.Array[Doc]): typings.prettier.docMod.builders.Concat_ = {
+    inline def Concat_(parts: js.Array[Doc]): typings.prettier.docMod.builders.Concat_ = {
       val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("concat")
       __obj.asInstanceOf[typings.prettier.docMod.builders.Concat_]
     }
     
-    @scala.inline
-    def Cursor_(placeholder: js.Symbol): typings.prettier.docMod.builders.Cursor_ = {
+    inline def Cursor_(placeholder: js.Symbol): typings.prettier.docMod.builders.Cursor_ = {
       val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("cursor")
       __obj.asInstanceOf[typings.prettier.docMod.builders.Cursor_]
     }
     
-    @scala.inline
-    def Fill_(parts: js.Array[Doc]): typings.prettier.docMod.builders.Fill_ = {
+    inline def Fill_(parts: js.Array[Doc]): typings.prettier.docMod.builders.Fill_ = {
       val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("fill")
       __obj.asInstanceOf[typings.prettier.docMod.builders.Fill_]
     }
     
-    @scala.inline
-    def Group_(break: Boolean, contents: Doc, expandedStates: js.Array[Doc]): typings.prettier.docMod.builders.Group_ = {
+    inline def Group_(break: Boolean, contents: Doc, expandedStates: js.Array[Doc]): typings.prettier.docMod.builders.Group_ = {
       val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], expandedStates = expandedStates.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("group")
       __obj.asInstanceOf[typings.prettier.docMod.builders.Group_]
     }
     
-    @scala.inline
-    def IfBreak_(breakContents: Doc, flatContents: Doc): typings.prettier.docMod.builders.IfBreak_ = {
+    inline def IfBreak_(breakContents: Doc, flatContents: Doc): typings.prettier.docMod.builders.IfBreak_ = {
       val __obj = js.Dynamic.literal(breakContents = breakContents.asInstanceOf[js.Any], flatContents = flatContents.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("if-break")
       __obj.asInstanceOf[typings.prettier.docMod.builders.IfBreak_]
     }
     
-    @scala.inline
-    def Indent_(contents: Doc): typings.prettier.docMod.builders.Indent_ = {
+    inline def Indent_(contents: Doc): typings.prettier.docMod.builders.Indent_ = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("indent")
       __obj.asInstanceOf[typings.prettier.docMod.builders.Indent_]
     }
     
-    @scala.inline
-    def LineSuffixBoundary_(): typings.prettier.docMod.builders.LineSuffixBoundary_ = {
+    inline def LineSuffixBoundary_(): typings.prettier.docMod.builders.LineSuffixBoundary_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("line-suffix-boundary")
       __obj.asInstanceOf[typings.prettier.docMod.builders.LineSuffixBoundary_]
     }
     
-    @scala.inline
-    def LineSuffix_(contents: Doc): typings.prettier.docMod.builders.LineSuffix_ = {
+    inline def LineSuffix_(contents: Doc): typings.prettier.docMod.builders.LineSuffix_ = {
       val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("line-suffix")
       __obj.asInstanceOf[typings.prettier.docMod.builders.LineSuffix_]
     }
     
-    @scala.inline
-    def Line_(): typings.prettier.docMod.builders.Line_ = {
+    inline def Line_(): typings.prettier.docMod.builders.Line_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("line")
       __obj.asInstanceOf[typings.prettier.docMod.builders.Line_]
     }
     
-    @scala.inline
-    def Trim_(): typings.prettier.docMod.builders.Trim_ = {
+    inline def Trim_(): typings.prettier.docMod.builders.Trim_ = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("trim")
       __obj.asInstanceOf[typings.prettier.docMod.builders.Trim_]

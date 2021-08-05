@@ -23,19 +23,15 @@ trait ASPxClientCardViewBatchEditCardRecoveringEventArgs
 }
 object ASPxClientCardViewBatchEditCardRecoveringEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, cardValues: js.Any, visibleIndex: Double): ASPxClientCardViewBatchEditCardRecoveringEventArgs = {
+  inline def apply(cancel: Boolean, cardValues: js.Any, visibleIndex: Double): ASPxClientCardViewBatchEditCardRecoveringEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cardValues = cardValues.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewBatchEditCardRecoveringEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewBatchEditCardRecoveringEventArgsMutableBuilder[Self <: ASPxClientCardViewBatchEditCardRecoveringEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewBatchEditCardRecoveringEventArgs](x: Self) {
     
-    @scala.inline
-    def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
+    inline def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

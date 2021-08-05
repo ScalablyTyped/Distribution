@@ -13,19 +13,15 @@ trait RetrieveTapeRecoveryPointOutput extends StObject {
 }
 object RetrieveTapeRecoveryPointOutput {
   
-  @scala.inline
-  def apply(): RetrieveTapeRecoveryPointOutput = {
+  inline def apply(): RetrieveTapeRecoveryPointOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetrieveTapeRecoveryPointOutput]
   }
   
-  @scala.inline
-  implicit class RetrieveTapeRecoveryPointOutputMutableBuilder[Self <: RetrieveTapeRecoveryPointOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveTapeRecoveryPointOutput](x: Self) {
     
-    @scala.inline
-    def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
+    inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
+    inline def setTapeARNUndefined: Self = StObject.set(x, "TapeARN", js.undefined)
   }
 }

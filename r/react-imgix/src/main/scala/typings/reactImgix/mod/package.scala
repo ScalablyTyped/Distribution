@@ -5,21 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Background: typings.react.mod.FunctionComponent[typings.react.mod.PropsWithChildren[typings.reactImgix.mod.BackgroundProps]] = typings.reactImgix.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Background").asInstanceOf[typings.react.mod.FunctionComponent[typings.react.mod.PropsWithChildren[typings.reactImgix.mod.BackgroundProps]]]
+inline def Background: typings.react.mod.FunctionComponent[typings.react.mod.PropsWithChildren[typings.reactImgix.mod.BackgroundProps]] = typings.reactImgix.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Background").asInstanceOf[typings.react.mod.FunctionComponent[typings.react.mod.PropsWithChildren[typings.reactImgix.mod.BackgroundProps]]]
 
-@scala.inline
-def buildURL(src: java.lang.String): java.lang.String = typings.reactImgix.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildURL")(src.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-@scala.inline
-def buildURL(
+inline def buildURL(src: java.lang.String): java.lang.String = typings.reactImgix.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildURL")(src.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def buildURL(
   src: java.lang.String,
   imgixParams: scala.Unit,
   options: typings.reactImgix.mod.SharedImigixAndSourceProps
 ): java.lang.String = (typings.reactImgix.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildURL")(src.asInstanceOf[js.Any], imgixParams.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def buildURL(src: java.lang.String, imgixParams: typings.reactImgix.mod.ImigixParams): java.lang.String = (typings.reactImgix.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildURL")(src.asInstanceOf[js.Any], imgixParams.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-@scala.inline
-def buildURL(
+inline def buildURL(src: java.lang.String, imgixParams: typings.reactImgix.mod.ImigixParams): java.lang.String = (typings.reactImgix.mod.^.asInstanceOf[js.Dynamic].applyDynamic("buildURL")(src.asInstanceOf[js.Any], imgixParams.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def buildURL(
   src: java.lang.String,
   imgixParams: typings.reactImgix.mod.ImigixParams,
   options: typings.reactImgix.mod.SharedImigixAndSourceProps

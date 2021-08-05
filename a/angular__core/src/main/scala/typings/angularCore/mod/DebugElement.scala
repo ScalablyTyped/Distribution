@@ -35,8 +35,7 @@ trait DebugElement
 }
 object DebugElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: StringDictionary[String | Null],
     childNodes: js.Array[DebugNode],
     children: js.Array[DebugElement],
@@ -61,49 +60,34 @@ object DebugElement {
     __obj.asInstanceOf[DebugElement]
   }
   
-  @scala.inline
-  implicit class DebugElementMutableBuilder[Self <: DebugElement] (val x: Self) extends AnyVal {
+  extension [Self <: DebugElement](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[String | Null]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[String | Null]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNodes(value: js.Array[DebugNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+    inline def setChildNodes(value: js.Array[DebugNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNodesVarargs(value: DebugNode*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
+    inline def setChildNodesVarargs(value: DebugNode*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setChildren(value: js.Array[DebugElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[DebugElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: DebugElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: DebugElement*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setClasses(value: StringDictionary[Boolean]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: StringDictionary[Boolean]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeElement(value: js.Any): Self = StObject.set(x, "nativeElement", value.asInstanceOf[js.Any])
+    inline def setNativeElement(value: js.Any): Self = StObject.set(x, "nativeElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: Predicate[DebugElement] => DebugElement): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+    inline def setQuery(value: Predicate[DebugElement] => DebugElement): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryAll(value: Predicate[DebugElement] => js.Array[DebugElement]): Self = StObject.set(x, "queryAll", js.Any.fromFunction1(value))
+    inline def setQueryAll(value: Predicate[DebugElement] => js.Array[DebugElement]): Self = StObject.set(x, "queryAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryAllNodes(value: Predicate[DebugNode] => js.Array[DebugNode]): Self = StObject.set(x, "queryAllNodes", js.Any.fromFunction1(value))
+    inline def setQueryAllNodes(value: Predicate[DebugNode] => js.Array[DebugNode]): Self = StObject.set(x, "queryAllNodes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyles(value: StringDictionary[String | Null]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[String | Null]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerEventHandler(value: (String, js.Any) => Unit): Self = StObject.set(x, "triggerEventHandler", js.Any.fromFunction2(value))
+    inline def setTriggerEventHandler(value: (String, js.Any) => Unit): Self = StObject.set(x, "triggerEventHandler", js.Any.fromFunction2(value))
   }
 }

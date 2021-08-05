@@ -16,8 +16,7 @@ object dilation2dMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dilation2d[T /* <: Tensor3D | Tensor4D */](
+  inline def dilation2d[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filter: Tensor3D | TensorLike,
     strides: (js.Tuple2[Double, Double]) | Double,

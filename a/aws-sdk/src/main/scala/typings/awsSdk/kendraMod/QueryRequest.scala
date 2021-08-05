@@ -58,73 +58,51 @@ trait QueryRequest extends StObject {
 }
 object QueryRequest {
   
-  @scala.inline
-  def apply(IndexId: IndexId, QueryText: QueryText): QueryRequest = {
+  inline def apply(IndexId: IndexId, QueryText: QueryText): QueryRequest = {
     val __obj = js.Dynamic.literal(IndexId = IndexId.asInstanceOf[js.Any], QueryText = QueryText.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryRequest]
   }
   
-  @scala.inline
-  implicit class QueryRequestMutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeFilter(value: AttributeFilter): Self = StObject.set(x, "AttributeFilter", value.asInstanceOf[js.Any])
+    inline def setAttributeFilter(value: AttributeFilter): Self = StObject.set(x, "AttributeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeFilterUndefined: Self = StObject.set(x, "AttributeFilter", js.undefined)
+    inline def setAttributeFilterUndefined: Self = StObject.set(x, "AttributeFilter", js.undefined)
     
-    @scala.inline
-    def setFacets(value: FacetList): Self = StObject.set(x, "Facets", value.asInstanceOf[js.Any])
+    inline def setFacets(value: FacetList): Self = StObject.set(x, "Facets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetsUndefined: Self = StObject.set(x, "Facets", js.undefined)
+    inline def setFacetsUndefined: Self = StObject.set(x, "Facets", js.undefined)
     
-    @scala.inline
-    def setFacetsVarargs(value: Facet*): Self = StObject.set(x, "Facets", js.Array(value :_*))
+    inline def setFacetsVarargs(value: Facet*): Self = StObject.set(x, "Facets", js.Array(value :_*))
     
-    @scala.inline
-    def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumber(value: Integer): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
+    inline def setPageNumber(value: Integer): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumberUndefined: Self = StObject.set(x, "PageNumber", js.undefined)
+    inline def setPageNumberUndefined: Self = StObject.set(x, "PageNumber", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Integer): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Integer): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setQueryResultTypeFilter(value: QueryResultType): Self = StObject.set(x, "QueryResultTypeFilter", value.asInstanceOf[js.Any])
+    inline def setQueryResultTypeFilter(value: QueryResultType): Self = StObject.set(x, "QueryResultTypeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryResultTypeFilterUndefined: Self = StObject.set(x, "QueryResultTypeFilter", js.undefined)
+    inline def setQueryResultTypeFilterUndefined: Self = StObject.set(x, "QueryResultTypeFilter", js.undefined)
     
-    @scala.inline
-    def setQueryText(value: QueryText): Self = StObject.set(x, "QueryText", value.asInstanceOf[js.Any])
+    inline def setQueryText(value: QueryText): Self = StObject.set(x, "QueryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedDocumentAttributes(value: DocumentAttributeKeyList): Self = StObject.set(x, "RequestedDocumentAttributes", value.asInstanceOf[js.Any])
+    inline def setRequestedDocumentAttributes(value: DocumentAttributeKeyList): Self = StObject.set(x, "RequestedDocumentAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedDocumentAttributesUndefined: Self = StObject.set(x, "RequestedDocumentAttributes", js.undefined)
+    inline def setRequestedDocumentAttributesUndefined: Self = StObject.set(x, "RequestedDocumentAttributes", js.undefined)
     
-    @scala.inline
-    def setRequestedDocumentAttributesVarargs(value: DocumentAttributeKey*): Self = StObject.set(x, "RequestedDocumentAttributes", js.Array(value :_*))
+    inline def setRequestedDocumentAttributesVarargs(value: DocumentAttributeKey*): Self = StObject.set(x, "RequestedDocumentAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setSortingConfiguration(value: SortingConfiguration): Self = StObject.set(x, "SortingConfiguration", value.asInstanceOf[js.Any])
+    inline def setSortingConfiguration(value: SortingConfiguration): Self = StObject.set(x, "SortingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortingConfigurationUndefined: Self = StObject.set(x, "SortingConfiguration", js.undefined)
+    inline def setSortingConfigurationUndefined: Self = StObject.set(x, "SortingConfiguration", js.undefined)
     
-    @scala.inline
-    def setUserContext(value: UserContext): Self = StObject.set(x, "UserContext", value.asInstanceOf[js.Any])
+    inline def setUserContext(value: UserContext): Self = StObject.set(x, "UserContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserContextUndefined: Self = StObject.set(x, "UserContext", js.undefined)
+    inline def setUserContextUndefined: Self = StObject.set(x, "UserContext", js.undefined)
   }
 }

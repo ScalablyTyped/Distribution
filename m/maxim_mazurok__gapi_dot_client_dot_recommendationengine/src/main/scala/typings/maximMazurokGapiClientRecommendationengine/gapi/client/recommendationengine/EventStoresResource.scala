@@ -16,8 +16,7 @@ trait EventStoresResource extends StObject {
 }
 object EventStoresResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     operations: OperationsResource,
     placements: PlacementsResource,
     predictionApiKeyRegistrations: PredictionApiKeyRegistrationsResource,
@@ -27,19 +26,14 @@ object EventStoresResource {
     __obj.asInstanceOf[EventStoresResource]
   }
   
-  @scala.inline
-  implicit class EventStoresResourceMutableBuilder[Self <: EventStoresResource] (val x: Self) extends AnyVal {
+  extension [Self <: EventStoresResource](x: Self) {
     
-    @scala.inline
-    def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacements(value: PlacementsResource): Self = StObject.set(x, "placements", value.asInstanceOf[js.Any])
+    inline def setPlacements(value: PlacementsResource): Self = StObject.set(x, "placements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionApiKeyRegistrations(value: PredictionApiKeyRegistrationsResource): Self = StObject.set(x, "predictionApiKeyRegistrations", value.asInstanceOf[js.Any])
+    inline def setPredictionApiKeyRegistrations(value: PredictionApiKeyRegistrationsResource): Self = StObject.set(x, "predictionApiKeyRegistrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEvents(value: UserEventsResource): Self = StObject.set(x, "userEvents", value.asInstanceOf[js.Any])
+    inline def setUserEvents(value: UserEventsResource): Self = StObject.set(x, "userEvents", value.asInstanceOf[js.Any])
   }
 }

@@ -15,28 +15,21 @@ trait DiskTypesScopedList extends StObject {
 }
 object DiskTypesScopedList {
   
-  @scala.inline
-  def apply(): DiskTypesScopedList = {
+  inline def apply(): DiskTypesScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskTypesScopedList]
   }
   
-  @scala.inline
-  implicit class DiskTypesScopedListMutableBuilder[Self <: DiskTypesScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: DiskTypesScopedList](x: Self) {
     
-    @scala.inline
-    def setDiskTypes(value: js.Array[DiskType]): Self = StObject.set(x, "diskTypes", value.asInstanceOf[js.Any])
+    inline def setDiskTypes(value: js.Array[DiskType]): Self = StObject.set(x, "diskTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskTypesUndefined: Self = StObject.set(x, "diskTypes", js.undefined)
+    inline def setDiskTypesUndefined: Self = StObject.set(x, "diskTypes", js.undefined)
     
-    @scala.inline
-    def setDiskTypesVarargs(value: DiskType*): Self = StObject.set(x, "diskTypes", js.Array(value :_*))
+    inline def setDiskTypesVarargs(value: DiskType*): Self = StObject.set(x, "diskTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

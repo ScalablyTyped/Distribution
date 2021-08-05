@@ -28,17 +28,14 @@ object fileUploadMod {
   }
   object FileUploadChildrenProps {
     
-    @scala.inline
-    def apply(openFileUploadDialog: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): FileUploadChildrenProps = {
+    inline def apply(openFileUploadDialog: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): FileUploadChildrenProps = {
       val __obj = js.Dynamic.literal(openFileUploadDialog = js.Any.fromFunction1(openFileUploadDialog))
       __obj.asInstanceOf[FileUploadChildrenProps]
     }
     
-    @scala.inline
-    implicit class FileUploadChildrenPropsMutableBuilder[Self <: FileUploadChildrenProps] (val x: Self) extends AnyVal {
+    extension [Self <: FileUploadChildrenProps](x: Self) {
       
-      @scala.inline
-      def setOpenFileUploadDialog(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "openFileUploadDialog", js.Any.fromFunction1(value))
+      inline def setOpenFileUploadDialog(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "openFileUploadDialog", js.Any.fromFunction1(value))
     }
   }
   
@@ -62,56 +59,40 @@ object fileUploadMod {
   }
   object FileUploadProps {
     
-    @scala.inline
-    def apply(children: FileUploadChildrenProps => ClassicElement[js.Any], onChange: FileList => Unit): FileUploadProps = {
+    inline def apply(children: FileUploadChildrenProps => ClassicElement[js.Any], onChange: FileList => Unit): FileUploadProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[FileUploadProps]
     }
     
-    @scala.inline
-    implicit class FileUploadPropsMutableBuilder[Self <: FileUploadProps] (val x: Self) extends AnyVal {
+    extension [Self <: FileUploadProps](x: Self) {
       
-      @scala.inline
-      def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      @scala.inline
-      def setCapture(value: user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      @scala.inline
-      def setChildren(value: FileUploadChildrenProps => ClassicElement[js.Any]): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: FileUploadChildrenProps => ClassicElement[js.Any]): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: FileList => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: FileList => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     }
   }
 }

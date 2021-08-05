@@ -16,28 +16,21 @@ trait SchemaPosListResponse extends StObject {
 }
 object SchemaPosListResponse {
   
-  @scala.inline
-  def apply(): SchemaPosListResponse = {
+  inline def apply(): SchemaPosListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPosListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPosListResponseMutableBuilder[Self <: SchemaPosListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPosListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setResources(value: js.Array[SchemaPosStore]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[SchemaPosStore]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: SchemaPosStore*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: SchemaPosStore*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

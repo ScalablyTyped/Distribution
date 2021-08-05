@@ -20,20 +20,16 @@ object apigateway {
   }
   object AccountThrottleSettings {
     
-    @scala.inline
-    def apply(burstLimit: Double, rateLimit: Double): AccountThrottleSettings = {
+    inline def apply(burstLimit: Double, rateLimit: Double): AccountThrottleSettings = {
       val __obj = js.Dynamic.literal(burstLimit = burstLimit.asInstanceOf[js.Any], rateLimit = rateLimit.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountThrottleSettings]
     }
     
-    @scala.inline
-    implicit class AccountThrottleSettingsMutableBuilder[Self <: AccountThrottleSettings] (val x: Self) extends AnyVal {
+    extension [Self <: AccountThrottleSettings](x: Self) {
       
-      @scala.inline
-      def setBurstLimit(value: Double): Self = StObject.set(x, "burstLimit", value.asInstanceOf[js.Any])
+      inline def setBurstLimit(value: Double): Self = StObject.set(x, "burstLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,42 +62,31 @@ object apigateway {
   }
   object DocumentationPartLocation {
     
-    @scala.inline
-    def apply(`type`: String): DocumentationPartLocation = {
+    inline def apply(`type`: String): DocumentationPartLocation = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentationPartLocation]
     }
     
-    @scala.inline
-    implicit class DocumentationPartLocationMutableBuilder[Self <: DocumentationPartLocation] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentationPartLocation](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,17 +99,14 @@ object apigateway {
   }
   object DomainNameEndpointConfiguration {
     
-    @scala.inline
-    def apply(types: String): DomainNameEndpointConfiguration = {
+    inline def apply(types: String): DomainNameEndpointConfiguration = {
       val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainNameEndpointConfiguration]
     }
     
-    @scala.inline
-    implicit class DomainNameEndpointConfigurationMutableBuilder[Self <: DomainNameEndpointConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: DomainNameEndpointConfiguration](x: Self) {
       
-      @scala.inline
-      def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,26 +118,20 @@ object apigateway {
   }
   object GetRestApiEndpointConfiguration {
     
-    @scala.inline
-    def apply(types: js.Array[String], vpcEndpointIds: js.Array[String]): GetRestApiEndpointConfiguration = {
+    inline def apply(types: js.Array[String], vpcEndpointIds: js.Array[String]): GetRestApiEndpointConfiguration = {
       val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], vpcEndpointIds = vpcEndpointIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRestApiEndpointConfiguration]
     }
     
-    @scala.inline
-    implicit class GetRestApiEndpointConfigurationMutableBuilder[Self <: GetRestApiEndpointConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: GetRestApiEndpointConfiguration](x: Self) {
       
-      @scala.inline
-      def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
       
-      @scala.inline
-      def setVpcEndpointIds(value: js.Array[String]): Self = StObject.set(x, "vpcEndpointIds", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointIds(value: js.Array[String]): Self = StObject.set(x, "vpcEndpointIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointIdsVarargs(value: String*): Self = StObject.set(x, "vpcEndpointIds", js.Array(value :_*))
+      inline def setVpcEndpointIdsVarargs(value: String*): Self = StObject.set(x, "vpcEndpointIds", js.Array(value :_*))
     }
   }
   
@@ -213,8 +189,7 @@ object apigateway {
   }
   object MethodSettingsSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cacheDataEncrypted: Boolean,
       cacheTtlInSeconds: Double,
       cachingEnabled: Boolean,
@@ -228,44 +203,31 @@ object apigateway {
       __obj.asInstanceOf[MethodSettingsSettings]
     }
     
-    @scala.inline
-    implicit class MethodSettingsSettingsMutableBuilder[Self <: MethodSettingsSettings] (val x: Self) extends AnyVal {
+    extension [Self <: MethodSettingsSettings](x: Self) {
       
-      @scala.inline
-      def setCacheDataEncrypted(value: Boolean): Self = StObject.set(x, "cacheDataEncrypted", value.asInstanceOf[js.Any])
+      inline def setCacheDataEncrypted(value: Boolean): Self = StObject.set(x, "cacheDataEncrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheTtlInSeconds(value: Double): Self = StObject.set(x, "cacheTtlInSeconds", value.asInstanceOf[js.Any])
+      inline def setCacheTtlInSeconds(value: Double): Self = StObject.set(x, "cacheTtlInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachingEnabled(value: Boolean): Self = StObject.set(x, "cachingEnabled", value.asInstanceOf[js.Any])
+      inline def setCachingEnabled(value: Boolean): Self = StObject.set(x, "cachingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "dataTraceEnabled", value.asInstanceOf[js.Any])
+      inline def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "dataTraceEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingLevel(value: String): Self = StObject.set(x, "loggingLevel", value.asInstanceOf[js.Any])
+      inline def setLoggingLevel(value: String): Self = StObject.set(x, "loggingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsEnabled(value: Boolean): Self = StObject.set(x, "metricsEnabled", value.asInstanceOf[js.Any])
+      inline def setMetricsEnabled(value: Boolean): Self = StObject.set(x, "metricsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireAuthorizationForCacheControl(value: Boolean): Self = StObject.set(x, "requireAuthorizationForCacheControl", value.asInstanceOf[js.Any])
+      inline def setRequireAuthorizationForCacheControl(value: Boolean): Self = StObject.set(x, "requireAuthorizationForCacheControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingBurstLimit(value: Double): Self = StObject.set(x, "throttlingBurstLimit", value.asInstanceOf[js.Any])
+      inline def setThrottlingBurstLimit(value: Double): Self = StObject.set(x, "throttlingBurstLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingBurstLimitUndefined: Self = StObject.set(x, "throttlingBurstLimit", js.undefined)
+      inline def setThrottlingBurstLimitUndefined: Self = StObject.set(x, "throttlingBurstLimit", js.undefined)
       
-      @scala.inline
-      def setThrottlingRateLimit(value: Double): Self = StObject.set(x, "throttlingRateLimit", value.asInstanceOf[js.Any])
+      inline def setThrottlingRateLimit(value: Double): Self = StObject.set(x, "throttlingRateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottlingRateLimitUndefined: Self = StObject.set(x, "throttlingRateLimit", js.undefined)
+      inline def setThrottlingRateLimitUndefined: Self = StObject.set(x, "throttlingRateLimit", js.undefined)
       
-      @scala.inline
-      def setUnauthorizedCacheControlHeaderStrategy(value: String): Self = StObject.set(x, "unauthorizedCacheControlHeaderStrategy", value.asInstanceOf[js.Any])
+      inline def setUnauthorizedCacheControlHeaderStrategy(value: String): Self = StObject.set(x, "unauthorizedCacheControlHeaderStrategy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,26 +245,20 @@ object apigateway {
   }
   object RestApiEndpointConfiguration {
     
-    @scala.inline
-    def apply(types: String): RestApiEndpointConfiguration = {
+    inline def apply(types: String): RestApiEndpointConfiguration = {
       val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[RestApiEndpointConfiguration]
     }
     
-    @scala.inline
-    implicit class RestApiEndpointConfigurationMutableBuilder[Self <: RestApiEndpointConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: RestApiEndpointConfiguration](x: Self) {
       
-      @scala.inline
-      def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointIds(value: js.Array[String]): Self = StObject.set(x, "vpcEndpointIds", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointIds(value: js.Array[String]): Self = StObject.set(x, "vpcEndpointIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointIdsUndefined: Self = StObject.set(x, "vpcEndpointIds", js.undefined)
+      inline def setVpcEndpointIdsUndefined: Self = StObject.set(x, "vpcEndpointIds", js.undefined)
       
-      @scala.inline
-      def setVpcEndpointIdsVarargs(value: String*): Self = StObject.set(x, "vpcEndpointIds", js.Array(value :_*))
+      inline def setVpcEndpointIdsVarargs(value: String*): Self = StObject.set(x, "vpcEndpointIds", js.Array(value :_*))
     }
   }
   
@@ -321,20 +277,16 @@ object apigateway {
   }
   object StageAccessLogSettings {
     
-    @scala.inline
-    def apply(destinationArn: String, format: String): StageAccessLogSettings = {
+    inline def apply(destinationArn: String, format: String): StageAccessLogSettings = {
       val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[StageAccessLogSettings]
     }
     
-    @scala.inline
-    implicit class StageAccessLogSettingsMutableBuilder[Self <: StageAccessLogSettings] (val x: Self) extends AnyVal {
+    extension [Self <: StageAccessLogSettings](x: Self) {
       
-      @scala.inline
-      def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
   
@@ -352,20 +304,16 @@ object apigateway {
   }
   object UsagePlanApiStage {
     
-    @scala.inline
-    def apply(apiId: String, stage: String): UsagePlanApiStage = {
+    inline def apply(apiId: String, stage: String): UsagePlanApiStage = {
       val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
       __obj.asInstanceOf[UsagePlanApiStage]
     }
     
-    @scala.inline
-    implicit class UsagePlanApiStageMutableBuilder[Self <: UsagePlanApiStage] (val x: Self) extends AnyVal {
+    extension [Self <: UsagePlanApiStage](x: Self) {
       
-      @scala.inline
-      def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,26 +336,20 @@ object apigateway {
   }
   object UsagePlanQuotaSettings {
     
-    @scala.inline
-    def apply(limit: Double, period: String): UsagePlanQuotaSettings = {
+    inline def apply(limit: Double, period: String): UsagePlanQuotaSettings = {
       val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any])
       __obj.asInstanceOf[UsagePlanQuotaSettings]
     }
     
-    @scala.inline
-    implicit class UsagePlanQuotaSettingsMutableBuilder[Self <: UsagePlanQuotaSettings] (val x: Self) extends AnyVal {
+    extension [Self <: UsagePlanQuotaSettings](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     }
   }
   
@@ -425,26 +367,20 @@ object apigateway {
   }
   object UsagePlanThrottleSettings {
     
-    @scala.inline
-    def apply(): UsagePlanThrottleSettings = {
+    inline def apply(): UsagePlanThrottleSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UsagePlanThrottleSettings]
     }
     
-    @scala.inline
-    implicit class UsagePlanThrottleSettingsMutableBuilder[Self <: UsagePlanThrottleSettings] (val x: Self) extends AnyVal {
+    extension [Self <: UsagePlanThrottleSettings](x: Self) {
       
-      @scala.inline
-      def setBurstLimit(value: Double): Self = StObject.set(x, "burstLimit", value.asInstanceOf[js.Any])
+      inline def setBurstLimit(value: Double): Self = StObject.set(x, "burstLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBurstLimitUndefined: Self = StObject.set(x, "burstLimit", js.undefined)
+      inline def setBurstLimitUndefined: Self = StObject.set(x, "burstLimit", js.undefined)
       
-      @scala.inline
-      def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
     }
   }
 }

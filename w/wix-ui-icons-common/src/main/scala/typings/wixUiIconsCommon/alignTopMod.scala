@@ -22,20 +22,16 @@ object alignTopMod extends Shortcut {
   }
   object AlignTopProps {
     
-    @scala.inline
-    def apply(): AlignTopProps = {
+    inline def apply(): AlignTopProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlignTopProps]
     }
     
-    @scala.inline
-    implicit class AlignTopPropsMutableBuilder[Self <: AlignTopProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlignTopProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

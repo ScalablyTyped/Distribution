@@ -62,73 +62,51 @@ trait EnvelopeTransferRule extends StObject {
 }
 object EnvelopeTransferRule {
   
-  @scala.inline
-  def apply(): EnvelopeTransferRule = {
+  inline def apply(): EnvelopeTransferRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeTransferRule]
   }
   
-  @scala.inline
-  implicit class EnvelopeTransferRuleMutableBuilder[Self <: EnvelopeTransferRule] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeTransferRule](x: Self) {
     
-    @scala.inline
-    def setCarbonCopyOriginalOwner(value: String): Self = StObject.set(x, "carbonCopyOriginalOwner", value.asInstanceOf[js.Any])
+    inline def setCarbonCopyOriginalOwner(value: String): Self = StObject.set(x, "carbonCopyOriginalOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarbonCopyOriginalOwnerUndefined: Self = StObject.set(x, "carbonCopyOriginalOwner", js.undefined)
+    inline def setCarbonCopyOriginalOwnerUndefined: Self = StObject.set(x, "carbonCopyOriginalOwner", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setEnvelopeTransferRuleId(value: String): Self = StObject.set(x, "envelopeTransferRuleId", value.asInstanceOf[js.Any])
+    inline def setEnvelopeTransferRuleId(value: String): Self = StObject.set(x, "envelopeTransferRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeTransferRuleIdUndefined: Self = StObject.set(x, "envelopeTransferRuleId", js.undefined)
+    inline def setEnvelopeTransferRuleIdUndefined: Self = StObject.set(x, "envelopeTransferRuleId", js.undefined)
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
-    @scala.inline
-    def setFromGroup(value: /* This object contains information about a group. */ Group): Self = StObject.set(x, "fromGroup", value.asInstanceOf[js.Any])
+    inline def setFromGroup(value: /* This object contains information about a group. */ Group): Self = StObject.set(x, "fromGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromGroupUndefined: Self = StObject.set(x, "fromGroup", js.undefined)
+    inline def setFromGroupUndefined: Self = StObject.set(x, "fromGroup", js.undefined)
     
-    @scala.inline
-    def setFromUser(value: UserInformation): Self = StObject.set(x, "fromUser", value.asInstanceOf[js.Any])
+    inline def setFromUser(value: UserInformation): Self = StObject.set(x, "fromUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUserUndefined: Self = StObject.set(x, "fromUser", js.undefined)
+    inline def setFromUserUndefined: Self = StObject.set(x, "fromUser", js.undefined)
     
-    @scala.inline
-    def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
+    inline def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
     
-    @scala.inline
-    def setModifiedUser(value: UserInformation): Self = StObject.set(x, "modifiedUser", value.asInstanceOf[js.Any])
+    inline def setModifiedUser(value: UserInformation): Self = StObject.set(x, "modifiedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedUserUndefined: Self = StObject.set(x, "modifiedUser", js.undefined)
+    inline def setModifiedUserUndefined: Self = StObject.set(x, "modifiedUser", js.undefined)
     
-    @scala.inline
-    def setToFolder(value: /* This object contains details about a folder. */ Folder): Self = StObject.set(x, "toFolder", value.asInstanceOf[js.Any])
+    inline def setToFolder(value: /* This object contains details about a folder. */ Folder): Self = StObject.set(x, "toFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToFolderUndefined: Self = StObject.set(x, "toFolder", js.undefined)
+    inline def setToFolderUndefined: Self = StObject.set(x, "toFolder", js.undefined)
     
-    @scala.inline
-    def setToUser(value: UserInformation): Self = StObject.set(x, "toUser", value.asInstanceOf[js.Any])
+    inline def setToUser(value: UserInformation): Self = StObject.set(x, "toUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUserUndefined: Self = StObject.set(x, "toUser", js.undefined)
+    inline def setToUserUndefined: Self = StObject.set(x, "toUser", js.undefined)
   }
 }

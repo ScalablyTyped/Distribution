@@ -36,37 +36,27 @@ trait IRendererOptions extends StObject {
 }
 object IRendererOptions {
   
-  @scala.inline
-  def apply(mimeType: String, sanitizer: ISanitizer): IRendererOptions = {
+  inline def apply(mimeType: String, sanitizer: ISanitizer): IRendererOptions = {
     val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any], sanitizer = sanitizer.asInstanceOf[js.Any], latexTypesetter = null, linkHandler = null, resolver = null)
     __obj.asInstanceOf[IRendererOptions]
   }
   
-  @scala.inline
-  implicit class IRendererOptionsMutableBuilder[Self <: IRendererOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IRendererOptions](x: Self) {
     
-    @scala.inline
-    def setLatexTypesetter(value: ILatexTypesetter): Self = StObject.set(x, "latexTypesetter", value.asInstanceOf[js.Any])
+    inline def setLatexTypesetter(value: ILatexTypesetter): Self = StObject.set(x, "latexTypesetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatexTypesetterNull: Self = StObject.set(x, "latexTypesetter", null)
+    inline def setLatexTypesetterNull: Self = StObject.set(x, "latexTypesetter", null)
     
-    @scala.inline
-    def setLinkHandler(value: ILinkHandler): Self = StObject.set(x, "linkHandler", value.asInstanceOf[js.Any])
+    inline def setLinkHandler(value: ILinkHandler): Self = StObject.set(x, "linkHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkHandlerNull: Self = StObject.set(x, "linkHandler", null)
+    inline def setLinkHandlerNull: Self = StObject.set(x, "linkHandler", null)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+    inline def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverNull: Self = StObject.set(x, "resolver", null)
+    inline def setResolverNull: Self = StObject.set(x, "resolver", null)
     
-    @scala.inline
-    def setSanitizer(value: ISanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
+    inline def setSanitizer(value: ISanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
   }
 }

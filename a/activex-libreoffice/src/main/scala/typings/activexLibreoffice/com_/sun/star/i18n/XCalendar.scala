@@ -122,8 +122,7 @@ trait XCalendar
 }
 object XCalendar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DateTime: Double,
     Days: SafeArray[CalendarItem],
     FirstDayOfWeek: Double,
@@ -161,94 +160,64 @@ object XCalendar {
     __obj.asInstanceOf[XCalendar]
   }
   
-  @scala.inline
-  implicit class XCalendarMutableBuilder[Self <: XCalendar] (val x: Self) extends AnyVal {
+  extension [Self <: XCalendar](x: Self) {
     
-    @scala.inline
-    def setAddValue(value: (Double, Double) => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
+    inline def setAddValue(value: (Double, Double) => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDateTime(value: Double): Self = StObject.set(x, "DateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: Double): Self = StObject.set(x, "DateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDays(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+    inline def setDays(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "FirstDayOfWeek", value.asInstanceOf[js.Any])
+    inline def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "FirstDayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllCalendars(value: Locale => SafeArray[String]): Self = StObject.set(x, "getAllCalendars", js.Any.fromFunction1(value))
+    inline def setGetAllCalendars(value: Locale => SafeArray[String]): Self = StObject.set(x, "getAllCalendars", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDateTime(value: () => Double): Self = StObject.set(x, "getDateTime", js.Any.fromFunction0(value))
+    inline def setGetDateTime(value: () => Double): Self = StObject.set(x, "getDateTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDays(value: () => SafeArray[CalendarItem]): Self = StObject.set(x, "getDays", js.Any.fromFunction0(value))
+    inline def setGetDays(value: () => SafeArray[CalendarItem]): Self = StObject.set(x, "getDays", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayName(value: (Double, Double, Double) => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction3(value))
+    inline def setGetDisplayName(value: (Double, Double, Double) => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetFirstDayOfWeek(value: () => Double): Self = StObject.set(x, "getFirstDayOfWeek", js.Any.fromFunction0(value))
+    inline def setGetFirstDayOfWeek(value: () => Double): Self = StObject.set(x, "getFirstDayOfWeek", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLoadedCalendar(value: () => Calendar): Self = StObject.set(x, "getLoadedCalendar", js.Any.fromFunction0(value))
+    inline def setGetLoadedCalendar(value: () => Calendar): Self = StObject.set(x, "getLoadedCalendar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinimumNumberOfDaysForFirstWeek(value: () => Double): Self = StObject.set(x, "getMinimumNumberOfDaysForFirstWeek", js.Any.fromFunction0(value))
+    inline def setGetMinimumNumberOfDaysForFirstWeek(value: () => Double): Self = StObject.set(x, "getMinimumNumberOfDaysForFirstWeek", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMonths(value: () => SafeArray[CalendarItem]): Self = StObject.set(x, "getMonths", js.Any.fromFunction0(value))
+    inline def setGetMonths(value: () => SafeArray[CalendarItem]): Self = StObject.set(x, "getMonths", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumberOfDaysInWeek(value: () => Double): Self = StObject.set(x, "getNumberOfDaysInWeek", js.Any.fromFunction0(value))
+    inline def setGetNumberOfDaysInWeek(value: () => Double): Self = StObject.set(x, "getNumberOfDaysInWeek", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumberOfMonthsInYear(value: () => Double): Self = StObject.set(x, "getNumberOfMonthsInYear", js.Any.fromFunction0(value))
+    inline def setGetNumberOfMonthsInYear(value: () => Double): Self = StObject.set(x, "getNumberOfMonthsInYear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUniqueID(value: () => String): Self = StObject.set(x, "getUniqueID", js.Any.fromFunction0(value))
+    inline def setGetUniqueID(value: () => String): Self = StObject.set(x, "getUniqueID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: Double => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: Double => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadCalendar(value: (String, Locale) => Unit): Self = StObject.set(x, "loadCalendar", js.Any.fromFunction2(value))
+    inline def setLoadCalendar(value: (String, Locale) => Unit): Self = StObject.set(x, "loadCalendar", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadDefaultCalendar(value: Locale => Unit): Self = StObject.set(x, "loadDefaultCalendar", js.Any.fromFunction1(value))
+    inline def setLoadDefaultCalendar(value: Locale => Unit): Self = StObject.set(x, "loadDefaultCalendar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadedCalendar(value: Calendar): Self = StObject.set(x, "LoadedCalendar", value.asInstanceOf[js.Any])
+    inline def setLoadedCalendar(value: Calendar): Self = StObject.set(x, "LoadedCalendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumNumberOfDaysForFirstWeek(value: Double): Self = StObject.set(x, "MinimumNumberOfDaysForFirstWeek", value.asInstanceOf[js.Any])
+    inline def setMinimumNumberOfDaysForFirstWeek(value: Double): Self = StObject.set(x, "MinimumNumberOfDaysForFirstWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonths(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfDaysInWeek(value: Double): Self = StObject.set(x, "NumberOfDaysInWeek", value.asInstanceOf[js.Any])
+    inline def setNumberOfDaysInWeek(value: Double): Self = StObject.set(x, "NumberOfDaysInWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfMonthsInYear(value: Double): Self = StObject.set(x, "NumberOfMonthsInYear", value.asInstanceOf[js.Any])
+    inline def setNumberOfMonthsInYear(value: Double): Self = StObject.set(x, "NumberOfMonthsInYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDateTime(value: Double => Unit): Self = StObject.set(x, "setDateTime", js.Any.fromFunction1(value))
+    inline def setSetDateTime(value: Double => Unit): Self = StObject.set(x, "setDateTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFirstDayOfWeek(value: Double => Unit): Self = StObject.set(x, "setFirstDayOfWeek", js.Any.fromFunction1(value))
+    inline def setSetFirstDayOfWeek(value: Double => Unit): Self = StObject.set(x, "setFirstDayOfWeek", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinimumNumberOfDaysForFirstWeek(value: Double => Unit): Self = StObject.set(x, "setMinimumNumberOfDaysForFirstWeek", js.Any.fromFunction1(value))
+    inline def setSetMinimumNumberOfDaysForFirstWeek(value: Double => Unit): Self = StObject.set(x, "setMinimumNumberOfDaysForFirstWeek", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: (Double, Double) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (Double, Double) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUniqueID(value: String): Self = StObject.set(x, "UniqueID", value.asInstanceOf[js.Any])
+    inline def setUniqueID(value: String): Self = StObject.set(x, "UniqueID", value.asInstanceOf[js.Any])
   }
 }

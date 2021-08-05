@@ -28,40 +28,29 @@ trait BqmlTrainingRun extends StObject {
 }
 object BqmlTrainingRun {
   
-  @scala.inline
-  def apply(): BqmlTrainingRun = {
+  inline def apply(): BqmlTrainingRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BqmlTrainingRun]
   }
   
-  @scala.inline
-  implicit class BqmlTrainingRunMutableBuilder[Self <: BqmlTrainingRun] (val x: Self) extends AnyVal {
+  extension [Self <: BqmlTrainingRun](x: Self) {
     
-    @scala.inline
-    def setIterationResults(value: js.Array[BqmlIterationResult]): Self = StObject.set(x, "iterationResults", value.asInstanceOf[js.Any])
+    inline def setIterationResults(value: js.Array[BqmlIterationResult]): Self = StObject.set(x, "iterationResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationResultsUndefined: Self = StObject.set(x, "iterationResults", js.undefined)
+    inline def setIterationResultsUndefined: Self = StObject.set(x, "iterationResults", js.undefined)
     
-    @scala.inline
-    def setIterationResultsVarargs(value: BqmlIterationResult*): Self = StObject.set(x, "iterationResults", js.Array(value :_*))
+    inline def setIterationResultsVarargs(value: BqmlIterationResult*): Self = StObject.set(x, "iterationResults", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTrainingOptions(value: EarlyStop): Self = StObject.set(x, "trainingOptions", value.asInstanceOf[js.Any])
+    inline def setTrainingOptions(value: EarlyStop): Self = StObject.set(x, "trainingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingOptionsUndefined: Self = StObject.set(x, "trainingOptions", js.undefined)
+    inline def setTrainingOptionsUndefined: Self = StObject.set(x, "trainingOptions", js.undefined)
   }
 }

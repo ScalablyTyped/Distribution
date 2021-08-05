@@ -14,14 +14,12 @@ object createComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createReactComponent[PropType, ElementType](tagName: String): ForwardRefExoticComponent[
+  inline def createReactComponent[PropType, ElementType](tagName: String): ForwardRefExoticComponent[
     (PropsWithoutRef[IonicReactExternalProps[PropType, ElementType]]) & RefAttributes[ElementType]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReactComponent")(tagName.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[
     (PropsWithoutRef[IonicReactExternalProps[PropType, ElementType]]) & RefAttributes[ElementType]
   ]]
-  @scala.inline
-  def createReactComponent[PropType, ElementType](tagName: String, routerLinkComponent: Boolean): ForwardRefExoticComponent[
+  inline def createReactComponent[PropType, ElementType](tagName: String, routerLinkComponent: Boolean): ForwardRefExoticComponent[
     (PropsWithoutRef[IonicReactExternalProps[PropType, ElementType]]) & RefAttributes[ElementType]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createReactComponent")(tagName.asInstanceOf[js.Any], routerLinkComponent.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[
     (PropsWithoutRef[IonicReactExternalProps[PropType, ElementType]]) & RefAttributes[ElementType]

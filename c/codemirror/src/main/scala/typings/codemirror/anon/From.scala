@@ -13,19 +13,15 @@ trait From extends StObject {
 }
 object From {
   
-  @scala.inline
-  def apply(from: Position, to: Position): From = {
+  inline def apply(from: Position, to: Position): From = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[From]
   }
   
-  @scala.inline
-  implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+  extension [Self <: From](x: Self) {
     
-    @scala.inline
-    def setFrom(value: Position): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Position): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: Position): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Position): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

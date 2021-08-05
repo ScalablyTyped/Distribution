@@ -30,17 +30,14 @@ object tabBarStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/tab-bar/style/index.native", "default.badgeText")
     @js.native
     def badgeText: ColorTextAlign = js.native
-    @scala.inline
-    def badgeText_=(x: ColorTextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badgeText")(x.asInstanceOf[js.Any])
+    inline def badgeText_=(x: ColorTextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badgeText")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def badge_=(x: MinWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badge")(x.asInstanceOf[js.Any])
+    inline def badge_=(x: MinWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badge")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tab-bar/style/index.native", "default.barIcon")
     @js.native
     def barIcon: MarginTopWidth = js.native
-    @scala.inline
-    def barIcon_=(x: MarginTopWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barIcon")(x.asInstanceOf[js.Any])
+    inline def barIcon_=(x: MarginTopWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barIcon")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tab-bar/style/index.native", "default.barItem")
     @js.native
@@ -49,11 +46,9 @@ object tabBarStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/tab-bar/style/index.native", "default.barItemTitle")
     @js.native
     def barItemTitle: MarginTopNumber = js.native
-    @scala.inline
-    def barItemTitle_=(x: MarginTopNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barItemTitle")(x.asInstanceOf[js.Any])
+    inline def barItemTitle_=(x: MarginTopNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barItemTitle")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def barItem_=(x: FlexJustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barItem")(x.asInstanceOf[js.Any])
+    inline def barItem_=(x: FlexJustifyContent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barItem")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tab-bar/style/index.native", "default.content")
     @js.native
@@ -66,26 +61,21 @@ object tabBarStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/tab-bar/style/index.native", "default.contentItemSelected")
     @js.native
     def contentItemSelected: HeightNull = js.native
-    @scala.inline
-    def contentItemSelected_=(x: HeightNull): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentItemSelected")(x.asInstanceOf[js.Any])
+    inline def contentItemSelected_=(x: HeightNull): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentItemSelected")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def contentItem_=(x: BottomHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentItem")(x.asInstanceOf[js.Any])
+    inline def contentItem_=(x: BottomHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentItem")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def content_=(x: FlexNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content")(x.asInstanceOf[js.Any])
+    inline def content_=(x: FlexNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tab-bar/style/index.native", "default.tabbar")
     @js.native
     def tabbar: FlexNumber = js.native
-    @scala.inline
-    def tabbar_=(x: FlexNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabbar")(x.asInstanceOf[js.Any])
+    inline def tabbar_=(x: FlexNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabbar")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tab-bar/style/index.native", "default.tabs")
     @js.native
     def tabs: BorderColorBorderStyle = js.native
-    @scala.inline
-    def tabs_=(x: BorderColorBorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabs")(x.asInstanceOf[js.Any])
+    inline def tabs_=(x: BorderColorBorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabs")(x.asInstanceOf[js.Any])
   }
   
   trait ITabBarStyle extends StObject {
@@ -114,8 +104,7 @@ object tabBarStyleIndexNativeMod {
   }
   object ITabBarStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       badge: ViewStyle,
       badgeText: TextStyle,
       barIcon: ViewStyle,
@@ -132,41 +121,29 @@ object tabBarStyleIndexNativeMod {
       __obj.asInstanceOf[ITabBarStyle]
     }
     
-    @scala.inline
-    implicit class ITabBarStyleMutableBuilder[Self <: ITabBarStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ITabBarStyle](x: Self) {
       
-      @scala.inline
-      def setBadge(value: ViewStyle): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: ViewStyle): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeText(value: TextStyle): Self = StObject.set(x, "badgeText", value.asInstanceOf[js.Any])
+      inline def setBadgeText(value: TextStyle): Self = StObject.set(x, "badgeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarIcon(value: ViewStyle): Self = StObject.set(x, "barIcon", value.asInstanceOf[js.Any])
+      inline def setBarIcon(value: ViewStyle): Self = StObject.set(x, "barIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarItem(value: ViewStyle): Self = StObject.set(x, "barItem", value.asInstanceOf[js.Any])
+      inline def setBarItem(value: ViewStyle): Self = StObject.set(x, "barItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarItemSelected(value: ViewStyle): Self = StObject.set(x, "barItemSelected", value.asInstanceOf[js.Any])
+      inline def setBarItemSelected(value: ViewStyle): Self = StObject.set(x, "barItemSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarItemTitle(value: TextStyle): Self = StObject.set(x, "barItemTitle", value.asInstanceOf[js.Any])
+      inline def setBarItemTitle(value: TextStyle): Self = StObject.set(x, "barItemTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentItem(value: ViewStyle): Self = StObject.set(x, "contentItem", value.asInstanceOf[js.Any])
+      inline def setContentItem(value: ViewStyle): Self = StObject.set(x, "contentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentItemSelected(value: ViewStyle): Self = StObject.set(x, "contentItemSelected", value.asInstanceOf[js.Any])
+      inline def setContentItemSelected(value: ViewStyle): Self = StObject.set(x, "contentItemSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabbar(value: ViewStyle): Self = StObject.set(x, "tabbar", value.asInstanceOf[js.Any])
+      inline def setTabbar(value: ViewStyle): Self = StObject.set(x, "tabbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabs(value: ViewStyle): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: ViewStyle): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     }
   }
 }

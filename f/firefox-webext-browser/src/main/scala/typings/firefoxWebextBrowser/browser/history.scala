@@ -30,35 +30,26 @@ object history {
   }
   object AddUrlDetails {
     
-    @scala.inline
-    def apply(url: String): AddUrlDetails = {
+    inline def apply(url: String): AddUrlDetails = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddUrlDetails]
     }
     
-    @scala.inline
-    implicit class AddUrlDetailsMutableBuilder[Self <: AddUrlDetails] (val x: Self) extends AnyVal {
+    extension [Self <: AddUrlDetails](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTransition(value: TransitionType): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: TransitionType): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTime(value: Date): Self = StObject.set(x, "visitTime", value.asInstanceOf[js.Any])
+      inline def setVisitTime(value: Date): Self = StObject.set(x, "visitTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTimeUndefined: Self = StObject.set(x, "visitTime", js.undefined)
+      inline def setVisitTimeUndefined: Self = StObject.set(x, "visitTime", js.undefined)
     }
   }
   
@@ -72,20 +63,16 @@ object history {
   }
   object DeleteRangeRange {
     
-    @scala.inline
-    def apply(endTime: Date, startTime: Date): DeleteRangeRange = {
+    inline def apply(endTime: Date, startTime: Date): DeleteRangeRange = {
       val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteRangeRange]
     }
     
-    @scala.inline
-    implicit class DeleteRangeRangeMutableBuilder[Self <: DeleteRangeRange] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteRangeRange](x: Self) {
       
-      @scala.inline
-      def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,17 +83,14 @@ object history {
   }
   object DeleteUrlDetails {
     
-    @scala.inline
-    def apply(url: String): DeleteUrlDetails = {
+    inline def apply(url: String): DeleteUrlDetails = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteUrlDetails]
     }
     
-    @scala.inline
-    implicit class DeleteUrlDetailsMutableBuilder[Self <: DeleteUrlDetails] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteUrlDetails](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,17 +103,14 @@ object history {
   }
   object GetVisitsDetails {
     
-    @scala.inline
-    def apply(url: String): GetVisitsDetails = {
+    inline def apply(url: String): GetVisitsDetails = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetVisitsDetails]
     }
     
-    @scala.inline
-    implicit class GetVisitsDetailsMutableBuilder[Self <: GetVisitsDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetVisitsDetails](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,47 +137,34 @@ object history {
   }
   object HistoryItem {
     
-    @scala.inline
-    def apply(id: String): HistoryItem = {
+    inline def apply(id: String): HistoryItem = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[HistoryItem]
     }
     
-    @scala.inline
-    implicit class HistoryItemMutableBuilder[Self <: HistoryItem] (val x: Self) extends AnyVal {
+    extension [Self <: HistoryItem](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastVisitTime(value: Double): Self = StObject.set(x, "lastVisitTime", value.asInstanceOf[js.Any])
+      inline def setLastVisitTime(value: Double): Self = StObject.set(x, "lastVisitTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastVisitTimeUndefined: Self = StObject.set(x, "lastVisitTime", js.undefined)
+      inline def setLastVisitTimeUndefined: Self = StObject.set(x, "lastVisitTime", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTypedCount(value: Double): Self = StObject.set(x, "typedCount", value.asInstanceOf[js.Any])
+      inline def setTypedCount(value: Double): Self = StObject.set(x, "typedCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypedCountUndefined: Self = StObject.set(x, "typedCount", js.undefined)
+      inline def setTypedCountUndefined: Self = StObject.set(x, "typedCount", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setVisitCount(value: Double): Self = StObject.set(x, "visitCount", value.asInstanceOf[js.Any])
+      inline def setVisitCount(value: Double): Self = StObject.set(x, "visitCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitCountUndefined: Self = StObject.set(x, "visitCount", js.undefined)
+      inline def setVisitCountUndefined: Self = StObject.set(x, "visitCount", js.undefined)
     }
   }
   
@@ -210,20 +178,16 @@ object history {
   }
   object OnTitleChangedChanged {
     
-    @scala.inline
-    def apply(title: String, url: String): OnTitleChangedChanged = {
+    inline def apply(title: String, url: String): OnTitleChangedChanged = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnTitleChangedChanged]
     }
     
-    @scala.inline
-    implicit class OnTitleChangedChangedMutableBuilder[Self <: OnTitleChangedChanged] (val x: Self) extends AnyVal {
+    extension [Self <: OnTitleChangedChanged](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,23 +200,18 @@ object history {
   }
   object OnVisitRemovedRemoved {
     
-    @scala.inline
-    def apply(allHistory: Boolean, urls: js.Array[String]): OnVisitRemovedRemoved = {
+    inline def apply(allHistory: Boolean, urls: js.Array[String]): OnVisitRemovedRemoved = {
       val __obj = js.Dynamic.literal(allHistory = allHistory.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnVisitRemovedRemoved]
     }
     
-    @scala.inline
-    implicit class OnVisitRemovedRemovedMutableBuilder[Self <: OnVisitRemovedRemoved] (val x: Self) extends AnyVal {
+    extension [Self <: OnVisitRemovedRemoved](x: Self) {
       
-      @scala.inline
-      def setAllHistory(value: Boolean): Self = StObject.set(x, "allHistory", value.asInstanceOf[js.Any])
+      inline def setAllHistory(value: Boolean): Self = StObject.set(x, "allHistory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+      inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
     }
   }
   
@@ -274,35 +233,26 @@ object history {
   }
   object SearchQuery {
     
-    @scala.inline
-    def apply(text: String): SearchQuery = {
+    inline def apply(text: String): SearchQuery = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchQuery]
     }
     
-    @scala.inline
-    implicit class SearchQueryMutableBuilder[Self <: SearchQuery] (val x: Self) extends AnyVal {
+    extension [Self <: SearchQuery](x: Self) {
       
-      @scala.inline
-      def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -324,38 +274,27 @@ object history {
   trait TransitionType extends StObject
   object TransitionType {
     
-    @scala.inline
-    def auto_bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_bookmark = "auto_bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_bookmark]
+    inline def auto_bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_bookmark = "auto_bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_bookmark]
     
-    @scala.inline
-    def auto_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_subframe = "auto_subframe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_subframe]
+    inline def auto_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_subframe = "auto_subframe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_subframe]
     
-    @scala.inline
-    def auto_toplevel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_toplevel = "auto_toplevel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_toplevel]
+    inline def auto_toplevel: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_toplevel = "auto_toplevel".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.auto_toplevel]
     
-    @scala.inline
-    def form_submit: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.form_submit = "form_submit".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.form_submit]
+    inline def form_submit: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.form_submit = "form_submit".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.form_submit]
     
-    @scala.inline
-    def generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.generated = "generated".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.generated]
+    inline def generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.generated = "generated".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.generated]
     
-    @scala.inline
-    def keyword: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword = "keyword".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword]
+    inline def keyword: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword = "keyword".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword]
     
-    @scala.inline
-    def keyword_generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated = "keyword_generated".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated]
+    inline def keyword_generated: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated = "keyword_generated".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword_generated]
     
-    @scala.inline
-    def link: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link = "link".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link]
+    inline def link: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link = "link".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link]
     
-    @scala.inline
-    def manual_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual_subframe = "manual_subframe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual_subframe]
+    inline def manual_subframe: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual_subframe = "manual_subframe".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual_subframe]
     
-    @scala.inline
-    def reload: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reload = "reload".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reload]
+    inline def reload: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reload = "reload".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.reload]
     
-    @scala.inline
-    def typed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.typed = "typed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.typed]
+    inline def typed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.typed = "typed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.typed]
   }
   
   /** An object encapsulating one visit to a URL. */
@@ -378,32 +317,24 @@ object history {
   }
   object VisitItem {
     
-    @scala.inline
-    def apply(id: String, referringVisitId: String, transition: TransitionType, visitId: String): VisitItem = {
+    inline def apply(id: String, referringVisitId: String, transition: TransitionType, visitId: String): VisitItem = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], referringVisitId = referringVisitId.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], visitId = visitId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VisitItem]
     }
     
-    @scala.inline
-    implicit class VisitItemMutableBuilder[Self <: VisitItem] (val x: Self) extends AnyVal {
+    extension [Self <: VisitItem](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferringVisitId(value: String): Self = StObject.set(x, "referringVisitId", value.asInstanceOf[js.Any])
+      inline def setReferringVisitId(value: String): Self = StObject.set(x, "referringVisitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransition(value: TransitionType): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: TransitionType): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitId(value: String): Self = StObject.set(x, "visitId", value.asInstanceOf[js.Any])
+      inline def setVisitId(value: String): Self = StObject.set(x, "visitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTime(value: Double): Self = StObject.set(x, "visitTime", value.asInstanceOf[js.Any])
+      inline def setVisitTime(value: Double): Self = StObject.set(x, "visitTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTimeUndefined: Self = StObject.set(x, "visitTime", js.undefined)
+      inline def setVisitTimeUndefined: Self = StObject.set(x, "visitTime", js.undefined)
     }
   }
 }

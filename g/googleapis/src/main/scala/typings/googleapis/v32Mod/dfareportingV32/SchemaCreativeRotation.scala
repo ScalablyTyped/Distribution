@@ -36,40 +36,29 @@ trait SchemaCreativeRotation extends StObject {
 }
 object SchemaCreativeRotation {
   
-  @scala.inline
-  def apply(): SchemaCreativeRotation = {
+  inline def apply(): SchemaCreativeRotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreativeRotation]
   }
   
-  @scala.inline
-  implicit class SchemaCreativeRotationMutableBuilder[Self <: SchemaCreativeRotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreativeRotation](x: Self) {
     
-    @scala.inline
-    def setCreativeAssignments(value: js.Array[SchemaCreativeAssignment]): Self = StObject.set(x, "creativeAssignments", value.asInstanceOf[js.Any])
+    inline def setCreativeAssignments(value: js.Array[SchemaCreativeAssignment]): Self = StObject.set(x, "creativeAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeAssignmentsUndefined: Self = StObject.set(x, "creativeAssignments", js.undefined)
+    inline def setCreativeAssignmentsUndefined: Self = StObject.set(x, "creativeAssignments", js.undefined)
     
-    @scala.inline
-    def setCreativeAssignmentsVarargs(value: SchemaCreativeAssignment*): Self = StObject.set(x, "creativeAssignments", js.Array(value :_*))
+    inline def setCreativeAssignmentsVarargs(value: SchemaCreativeAssignment*): Self = StObject.set(x, "creativeAssignments", js.Array(value :_*))
     
-    @scala.inline
-    def setCreativeOptimizationConfigurationId(value: String): Self = StObject.set(x, "creativeOptimizationConfigurationId", value.asInstanceOf[js.Any])
+    inline def setCreativeOptimizationConfigurationId(value: String): Self = StObject.set(x, "creativeOptimizationConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeOptimizationConfigurationIdUndefined: Self = StObject.set(x, "creativeOptimizationConfigurationId", js.undefined)
+    inline def setCreativeOptimizationConfigurationIdUndefined: Self = StObject.set(x, "creativeOptimizationConfigurationId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWeightCalculationStrategy(value: String): Self = StObject.set(x, "weightCalculationStrategy", value.asInstanceOf[js.Any])
+    inline def setWeightCalculationStrategy(value: String): Self = StObject.set(x, "weightCalculationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightCalculationStrategyUndefined: Self = StObject.set(x, "weightCalculationStrategy", js.undefined)
+    inline def setWeightCalculationStrategyUndefined: Self = StObject.set(x, "weightCalculationStrategy", js.undefined)
   }
 }

@@ -22,22 +22,17 @@ trait Date extends StObject {
 }
 object Date {
   
-  @scala.inline
-  def apply(Day: Double, Month: Double, Year: Double): Date = {
+  inline def apply(Day: Double, Month: Double, Year: Double): Date = {
     val __obj = js.Dynamic.literal(Day = Day.asInstanceOf[js.Any], Month = Month.asInstanceOf[js.Any], Year = Year.asInstanceOf[js.Any])
     __obj.asInstanceOf[Date]
   }
   
-  @scala.inline
-  implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+  extension [Self <: Date](x: Self) {
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "Month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "Month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "Year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "Year", value.asInstanceOf[js.Any])
   }
 }

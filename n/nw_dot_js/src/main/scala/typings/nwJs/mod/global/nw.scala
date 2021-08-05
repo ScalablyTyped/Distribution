@@ -163,8 +163,7 @@ object nw {
   @JSGlobal("nw.App")
   @js.native
   def App: App = js.native
-  @scala.inline
-  def App_=(x: App): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("App")(x.asInstanceOf[js.Any])
+  inline def App_=(x: App): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("App")(x.asInstanceOf[js.Any])
   
   trait Clipboard extends StObject {
     
@@ -181,11 +180,9 @@ object nw {
     @js.native
     val ^ : Clipboard = js.native
     
-    @scala.inline
-    implicit class ClipboardMutableBuilder[Self <: Clipboard] (val x: Self) extends AnyVal {
+    extension [Self <: Clipboard](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => clip): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => clip): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
   
@@ -401,8 +398,7 @@ object nw {
   @JSGlobal("nw.Screen")
   @js.native
   def Screen: Screen = js.native
-  @scala.inline
-  def Screen_=(x: Screen): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Screen")(x.asInstanceOf[js.Any])
+  inline def Screen_=(x: Screen): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Screen")(x.asInstanceOf[js.Any])
   
   /* Shell: http://docs.nwjs.io/en/latest/References/Shell/ */
   /**
@@ -437,17 +433,13 @@ object nw {
     @js.native
     val ^ : Shell = js.native
     
-    @scala.inline
-    implicit class ShellMutableBuilder[Self <: Shell] (val x: Self) extends AnyVal {
+    extension [Self <: Shell](x: Self) {
       
-      @scala.inline
-      def setOpenExternal(value: String => Unit): Self = StObject.set(x, "openExternal", js.Any.fromFunction1(value))
+      inline def setOpenExternal(value: String => Unit): Self = StObject.set(x, "openExternal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpenItem(value: String => Unit): Self = StObject.set(x, "openItem", js.Any.fromFunction1(value))
+      inline def setOpenItem(value: String => Unit): Self = StObject.set(x, "openItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowItemInFolder(value: String => Unit): Self = StObject.set(x, "showItemInFolder", js.Any.fromFunction1(value))
+      inline def setShowItemInFolder(value: String => Unit): Self = StObject.set(x, "showItemInFolder", js.Any.fromFunction1(value))
     }
   }
   
@@ -592,9 +584,7 @@ object nw {
   @JSGlobal("nw.Window")
   @js.native
   def Window: Window = js.native
-  @scala.inline
-  def Window_=(x: Window): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Window")(x.asInstanceOf[js.Any])
+  inline def Window_=(x: Window): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Window")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def require(id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def require(id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

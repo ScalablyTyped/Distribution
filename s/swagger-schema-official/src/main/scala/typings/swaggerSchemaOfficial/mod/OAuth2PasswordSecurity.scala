@@ -17,20 +17,16 @@ trait OAuth2PasswordSecurity
 }
 object OAuth2PasswordSecurity {
   
-  @scala.inline
-  def apply(tokenUrl: String): OAuth2PasswordSecurity = {
+  inline def apply(tokenUrl: String): OAuth2PasswordSecurity = {
     val __obj = js.Dynamic.literal(flow = "password", tokenUrl = tokenUrl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[OAuth2PasswordSecurity]
   }
   
-  @scala.inline
-  implicit class OAuth2PasswordSecurityMutableBuilder[Self <: OAuth2PasswordSecurity] (val x: Self) extends AnyVal {
+  extension [Self <: OAuth2PasswordSecurity](x: Self) {
     
-    @scala.inline
-    def setFlow(value: password): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: password): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
+    inline def setTokenUrl(value: String): Self = StObject.set(x, "tokenUrl", value.asInstanceOf[js.Any])
   }
 }

@@ -55,52 +55,37 @@ trait DeploymentProperties extends StObject {
 }
 object DeploymentProperties {
   
-  @scala.inline
-  def apply(mode: String): DeploymentProperties = {
+  inline def apply(mode: String): DeploymentProperties = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentProperties]
   }
   
-  @scala.inline
-  implicit class DeploymentPropertiesMutableBuilder[Self <: DeploymentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentProperties](x: Self) {
     
-    @scala.inline
-    def setDebugSetting(value: DebugSetting): Self = StObject.set(x, "debugSetting", value.asInstanceOf[js.Any])
+    inline def setDebugSetting(value: DebugSetting): Self = StObject.set(x, "debugSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugSettingUndefined: Self = StObject.set(x, "debugSetting", js.undefined)
+    inline def setDebugSettingUndefined: Self = StObject.set(x, "debugSetting", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnErrorDeployment(value: OnErrorDeployment): Self = StObject.set(x, "onErrorDeployment", value.asInstanceOf[js.Any])
+    inline def setOnErrorDeployment(value: OnErrorDeployment): Self = StObject.set(x, "onErrorDeployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnErrorDeploymentUndefined: Self = StObject.set(x, "onErrorDeployment", js.undefined)
+    inline def setOnErrorDeploymentUndefined: Self = StObject.set(x, "onErrorDeployment", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersLink(value: ParametersLink): Self = StObject.set(x, "parametersLink", value.asInstanceOf[js.Any])
+    inline def setParametersLink(value: ParametersLink): Self = StObject.set(x, "parametersLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersLinkUndefined: Self = StObject.set(x, "parametersLink", js.undefined)
+    inline def setParametersLinkUndefined: Self = StObject.set(x, "parametersLink", js.undefined)
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateLink(value: TemplateLink): Self = StObject.set(x, "templateLink", value.asInstanceOf[js.Any])
+    inline def setTemplateLink(value: TemplateLink): Self = StObject.set(x, "templateLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateLinkUndefined: Self = StObject.set(x, "templateLink", js.undefined)
+    inline def setTemplateLinkUndefined: Self = StObject.set(x, "templateLink", js.undefined)
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

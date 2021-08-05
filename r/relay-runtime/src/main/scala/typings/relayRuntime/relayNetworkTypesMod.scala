@@ -54,47 +54,34 @@ object relayNetworkTypesMod {
   }
   object GraphQLResponseWithData {
     
-    @scala.inline
-    def apply(data: PayloadData): GraphQLResponseWithData = {
+    inline def apply(data: PayloadData): GraphQLResponseWithData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLResponseWithData]
     }
     
-    @scala.inline
-    implicit class GraphQLResponseWithDataMutableBuilder[Self <: GraphQLResponseWithData] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLResponseWithData](x: Self) {
       
-      @scala.inline
-      def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: js.Array[PayloadError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[PayloadError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensions(value: PayloadExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: PayloadExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setPath(value: js.Array[Double | String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[Double | String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPathVarargs(value: (Double | String)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (Double | String)*): Self = StObject.set(x, "path", js.Array(value :_*))
     }
   }
   
@@ -116,20 +103,16 @@ object relayNetworkTypesMod {
   }
   object GraphQLResponseWithExtensionsOnly {
     
-    @scala.inline
-    def apply(data: Null, extensions: PayloadExtensions): GraphQLResponseWithExtensionsOnly = {
+    inline def apply(data: Null, extensions: PayloadExtensions): GraphQLResponseWithExtensionsOnly = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLResponseWithExtensionsOnly]
     }
     
-    @scala.inline
-    implicit class GraphQLResponseWithExtensionsOnlyMutableBuilder[Self <: GraphQLResponseWithExtensionsOnly] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLResponseWithExtensionsOnly](x: Self) {
       
-      @scala.inline
-      def setData(value: Null): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Null): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensions(value: PayloadExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: PayloadExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,47 +132,34 @@ object relayNetworkTypesMod {
   }
   object GraphQLResponseWithoutData {
     
-    @scala.inline
-    def apply(errors: js.Array[PayloadError]): GraphQLResponseWithoutData = {
+    inline def apply(errors: js.Array[PayloadError]): GraphQLResponseWithoutData = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLResponseWithoutData]
     }
     
-    @scala.inline
-    implicit class GraphQLResponseWithoutDataMutableBuilder[Self <: GraphQLResponseWithoutData] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLResponseWithoutData](x: Self) {
       
-      @scala.inline
-      def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setErrors(value: js.Array[PayloadError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[PayloadError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensions(value: PayloadExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: PayloadExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
     }
   }
   
@@ -201,20 +171,17 @@ object relayNetworkTypesMod {
   trait GraphQLSingularResponse extends StObject
   object GraphQLSingularResponse {
     
-    @scala.inline
-    def GraphQLResponseWithData(data: PayloadData): typings.relayRuntime.relayNetworkTypesMod.GraphQLResponseWithData = {
+    inline def GraphQLResponseWithData(data: PayloadData): typings.relayRuntime.relayNetworkTypesMod.GraphQLResponseWithData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.relayRuntime.relayNetworkTypesMod.GraphQLResponseWithData]
     }
     
-    @scala.inline
-    def GraphQLResponseWithExtensionsOnly(data: Null, extensions: PayloadExtensions): typings.relayRuntime.relayNetworkTypesMod.GraphQLResponseWithExtensionsOnly = {
+    inline def GraphQLResponseWithExtensionsOnly(data: Null, extensions: PayloadExtensions): typings.relayRuntime.relayNetworkTypesMod.GraphQLResponseWithExtensionsOnly = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.relayRuntime.relayNetworkTypesMod.GraphQLResponseWithExtensionsOnly]
     }
     
-    @scala.inline
-    def GraphQLResponseWithoutData(errors: js.Array[PayloadError]): typings.relayRuntime.relayNetworkTypesMod.GraphQLResponseWithoutData = {
+    inline def GraphQLResponseWithoutData(errors: js.Array[PayloadError]): typings.relayRuntime.relayNetworkTypesMod.GraphQLResponseWithoutData = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.relayRuntime.relayNetworkTypesMod.GraphQLResponseWithoutData]
     }
@@ -230,32 +197,24 @@ object relayNetworkTypesMod {
   }
   object LegacyObserver {
     
-    @scala.inline
-    def apply[T](): LegacyObserver[T] = {
+    inline def apply[T](): LegacyObserver[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LegacyObserver[T]]
     }
     
-    @scala.inline
-    implicit class LegacyObserverMutableBuilder[Self <: LegacyObserver[?], T] (val x: Self & LegacyObserver[T]) extends AnyVal {
+    extension [Self <: LegacyObserver[?], T](x: Self & LegacyObserver[T]) {
       
-      @scala.inline
-      def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
+      inline def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
+      inline def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnNext(value: /* data */ T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
+      inline def setOnNext(value: /* data */ T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
+      inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
     }
   }
   
@@ -275,19 +234,16 @@ object relayNetworkTypesMod {
   }
   object Network {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       execute: (/* request */ RequestParameters, /* variables */ Variables, /* cacheConfig */ CacheConfig, /* uploadables */ js.UndefOr[UploadableMap | Null]) => RelayObservable[GraphQLResponse]
     ): Network = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction4(execute))
       __obj.asInstanceOf[Network]
     }
     
-    @scala.inline
-    implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
+    extension [Self <: Network](x: Self) {
       
-      @scala.inline
-      def setExecute(
+      inline def setExecute(
         value: (/* request */ RequestParameters, /* variables */ Variables, /* cacheConfig */ CacheConfig, /* uploadables */ js.UndefOr[UploadableMap | Null]) => RelayObservable[GraphQLResponse]
       ): Self = StObject.set(x, "execute", js.Any.fromFunction4(value))
     }
@@ -305,32 +261,24 @@ object relayNetworkTypesMod {
   }
   object PayloadError {
     
-    @scala.inline
-    def apply(message: String): PayloadError = {
+    inline def apply(message: String): PayloadError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[PayloadError]
     }
     
-    @scala.inline
-    implicit class PayloadErrorMutableBuilder[Self <: PayloadError] (val x: Self) extends AnyVal {
+    extension [Self <: PayloadError](x: Self) {
       
-      @scala.inline
-      def setLocations(value: js.Array[Column]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Column]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+      inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
       
-      @scala.inline
-      def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeverity(value: CRITICAL | ERROR | WARNING): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: CRITICAL | ERROR | WARNING): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+      inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     }
   }
   

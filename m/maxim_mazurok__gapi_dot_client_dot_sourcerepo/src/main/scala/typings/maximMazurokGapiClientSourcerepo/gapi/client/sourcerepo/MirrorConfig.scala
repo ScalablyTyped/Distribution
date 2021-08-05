@@ -20,31 +20,23 @@ trait MirrorConfig extends StObject {
 }
 object MirrorConfig {
   
-  @scala.inline
-  def apply(): MirrorConfig = {
+  inline def apply(): MirrorConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MirrorConfig]
   }
   
-  @scala.inline
-  implicit class MirrorConfigMutableBuilder[Self <: MirrorConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MirrorConfig](x: Self) {
     
-    @scala.inline
-    def setDeployKeyId(value: String): Self = StObject.set(x, "deployKeyId", value.asInstanceOf[js.Any])
+    inline def setDeployKeyId(value: String): Self = StObject.set(x, "deployKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployKeyIdUndefined: Self = StObject.set(x, "deployKeyId", js.undefined)
+    inline def setDeployKeyIdUndefined: Self = StObject.set(x, "deployKeyId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWebhookId(value: String): Self = StObject.set(x, "webhookId", value.asInstanceOf[js.Any])
+    inline def setWebhookId(value: String): Self = StObject.set(x, "webhookId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookIdUndefined: Self = StObject.set(x, "webhookId", js.undefined)
+    inline def setWebhookIdUndefined: Self = StObject.set(x, "webhookId", js.undefined)
   }
 }

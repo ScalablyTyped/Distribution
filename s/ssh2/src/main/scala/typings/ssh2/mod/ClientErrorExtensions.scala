@@ -14,25 +14,19 @@ trait ClientErrorExtensions extends StObject {
 }
 object ClientErrorExtensions {
   
-  @scala.inline
-  def apply(): ClientErrorExtensions = {
+  inline def apply(): ClientErrorExtensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientErrorExtensions]
   }
   
-  @scala.inline
-  implicit class ClientErrorExtensionsMutableBuilder[Self <: ClientErrorExtensions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientErrorExtensions](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

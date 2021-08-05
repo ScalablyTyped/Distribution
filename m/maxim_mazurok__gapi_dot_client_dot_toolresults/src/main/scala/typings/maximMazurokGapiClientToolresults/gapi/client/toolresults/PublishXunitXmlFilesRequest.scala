@@ -11,22 +11,17 @@ trait PublishXunitXmlFilesRequest extends StObject {
 }
 object PublishXunitXmlFilesRequest {
   
-  @scala.inline
-  def apply(): PublishXunitXmlFilesRequest = {
+  inline def apply(): PublishXunitXmlFilesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublishXunitXmlFilesRequest]
   }
   
-  @scala.inline
-  implicit class PublishXunitXmlFilesRequestMutableBuilder[Self <: PublishXunitXmlFilesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PublishXunitXmlFilesRequest](x: Self) {
     
-    @scala.inline
-    def setXunitXmlFiles(value: js.Array[FileReference]): Self = StObject.set(x, "xunitXmlFiles", value.asInstanceOf[js.Any])
+    inline def setXunitXmlFiles(value: js.Array[FileReference]): Self = StObject.set(x, "xunitXmlFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXunitXmlFilesUndefined: Self = StObject.set(x, "xunitXmlFiles", js.undefined)
+    inline def setXunitXmlFilesUndefined: Self = StObject.set(x, "xunitXmlFiles", js.undefined)
     
-    @scala.inline
-    def setXunitXmlFilesVarargs(value: FileReference*): Self = StObject.set(x, "xunitXmlFiles", js.Array(value :_*))
+    inline def setXunitXmlFilesVarargs(value: FileReference*): Self = StObject.set(x, "xunitXmlFiles", js.Array(value :_*))
   }
 }

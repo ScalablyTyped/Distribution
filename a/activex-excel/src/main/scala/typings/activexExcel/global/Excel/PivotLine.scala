@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotLine")
 @js.native
-class PivotLine protected ()
+/* private */ class PivotLine ()
   extends StObject
      with typings.activexExcel.Excel.PivotLine {
   
@@ -19,7 +19,7 @@ class PivotLine protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.PivotLine_typekey")
   var ExcelDotPivotLine_typekey: typings.activexExcel.Excel.PivotLine = js.native
   

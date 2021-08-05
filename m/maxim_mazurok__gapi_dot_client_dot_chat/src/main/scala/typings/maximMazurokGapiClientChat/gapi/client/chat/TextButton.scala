@@ -14,25 +14,19 @@ trait TextButton extends StObject {
 }
 object TextButton {
   
-  @scala.inline
-  def apply(): TextButton = {
+  inline def apply(): TextButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextButton]
   }
   
-  @scala.inline
-  implicit class TextButtonMutableBuilder[Self <: TextButton] (val x: Self) extends AnyVal {
+  extension [Self <: TextButton](x: Self) {
     
-    @scala.inline
-    def setOnClick(value: OnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: OnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

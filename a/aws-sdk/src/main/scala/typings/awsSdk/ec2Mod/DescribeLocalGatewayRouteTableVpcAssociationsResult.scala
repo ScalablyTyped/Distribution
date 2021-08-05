@@ -18,28 +18,21 @@ trait DescribeLocalGatewayRouteTableVpcAssociationsResult extends StObject {
 }
 object DescribeLocalGatewayRouteTableVpcAssociationsResult {
   
-  @scala.inline
-  def apply(): DescribeLocalGatewayRouteTableVpcAssociationsResult = {
+  inline def apply(): DescribeLocalGatewayRouteTableVpcAssociationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLocalGatewayRouteTableVpcAssociationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeLocalGatewayRouteTableVpcAssociationsResultMutableBuilder[Self <: DescribeLocalGatewayRouteTableVpcAssociationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocalGatewayRouteTableVpcAssociationsResult](x: Self) {
     
-    @scala.inline
-    def setLocalGatewayRouteTableVpcAssociations(value: LocalGatewayRouteTableVpcAssociationSet): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociations", value.asInstanceOf[js.Any])
+    inline def setLocalGatewayRouteTableVpcAssociations(value: LocalGatewayRouteTableVpcAssociationSet): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalGatewayRouteTableVpcAssociationsUndefined: Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociations", js.undefined)
+    inline def setLocalGatewayRouteTableVpcAssociationsUndefined: Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociations", js.undefined)
     
-    @scala.inline
-    def setLocalGatewayRouteTableVpcAssociationsVarargs(value: LocalGatewayRouteTableVpcAssociation*): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociations", js.Array(value :_*))
+    inline def setLocalGatewayRouteTableVpcAssociationsVarargs(value: LocalGatewayRouteTableVpcAssociation*): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

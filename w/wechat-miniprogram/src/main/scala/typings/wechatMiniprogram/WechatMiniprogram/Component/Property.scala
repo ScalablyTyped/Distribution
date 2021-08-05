@@ -11,16 +11,13 @@ trait Property[P /* <: PropertyOption */] extends StObject {
 }
 object Property {
   
-  @scala.inline
-  def apply[P /* <: PropertyOption */](properties: P): Property[P] = {
+  inline def apply[P /* <: PropertyOption */](properties: P): Property[P] = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Property[P]]
   }
   
-  @scala.inline
-  implicit class PropertyMutableBuilder[Self <: Property[?], P /* <: PropertyOption */] (val x: Self & Property[P]) extends AnyVal {
+  extension [Self <: Property[?], P /* <: PropertyOption */](x: Self & Property[P]) {
     
-    @scala.inline
-    def setProperties(value: P): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: P): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

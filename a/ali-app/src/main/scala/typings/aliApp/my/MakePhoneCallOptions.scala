@@ -17,16 +17,13 @@ trait MakePhoneCallOptions
 }
 object MakePhoneCallOptions {
   
-  @scala.inline
-  def apply(number: String): MakePhoneCallOptions = {
+  inline def apply(number: String): MakePhoneCallOptions = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakePhoneCallOptions]
   }
   
-  @scala.inline
-  implicit class MakePhoneCallOptionsMutableBuilder[Self <: MakePhoneCallOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MakePhoneCallOptions](x: Self) {
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

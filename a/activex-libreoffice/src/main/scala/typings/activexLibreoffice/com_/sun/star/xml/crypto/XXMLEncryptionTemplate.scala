@@ -44,8 +44,7 @@ trait XXMLEncryptionTemplate
 }
 object XXMLEncryptionTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Status: SecurityOperationStatus,
     Target: XXMLElementWrapper,
     Template: XXMLElementWrapper,
@@ -63,13 +62,10 @@ object XXMLEncryptionTemplate {
     __obj.asInstanceOf[XXMLEncryptionTemplate]
   }
   
-  @scala.inline
-  implicit class XXMLEncryptionTemplateMutableBuilder[Self <: XXMLEncryptionTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: XXMLEncryptionTemplate](x: Self) {
     
-    @scala.inline
-    def setGetTarget(value: () => XXMLElementWrapper): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+    inline def setGetTarget(value: () => XXMLElementWrapper): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarget(value: XXMLElementWrapper): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: XXMLElementWrapper): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

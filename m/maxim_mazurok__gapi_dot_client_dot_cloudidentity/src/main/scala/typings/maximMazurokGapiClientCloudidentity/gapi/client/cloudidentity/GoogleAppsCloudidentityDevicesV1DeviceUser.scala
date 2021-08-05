@@ -41,73 +41,51 @@ trait GoogleAppsCloudidentityDevicesV1DeviceUser extends StObject {
 }
 object GoogleAppsCloudidentityDevicesV1DeviceUser {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1DeviceUser = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1DeviceUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1DeviceUser]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1DeviceUserMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1DeviceUser] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1DeviceUser](x: Self) {
     
-    @scala.inline
-    def setCompromisedState(value: String): Self = StObject.set(x, "compromisedState", value.asInstanceOf[js.Any])
+    inline def setCompromisedState(value: String): Self = StObject.set(x, "compromisedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompromisedStateUndefined: Self = StObject.set(x, "compromisedState", js.undefined)
+    inline def setCompromisedStateUndefined: Self = StObject.set(x, "compromisedState", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setFirstSyncTime(value: String): Self = StObject.set(x, "firstSyncTime", value.asInstanceOf[js.Any])
+    inline def setFirstSyncTime(value: String): Self = StObject.set(x, "firstSyncTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstSyncTimeUndefined: Self = StObject.set(x, "firstSyncTime", js.undefined)
+    inline def setFirstSyncTimeUndefined: Self = StObject.set(x, "firstSyncTime", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setLastSyncTime(value: String): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
+    inline def setLastSyncTime(value: String): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSyncTimeUndefined: Self = StObject.set(x, "lastSyncTime", js.undefined)
+    inline def setLastSyncTimeUndefined: Self = StObject.set(x, "lastSyncTime", js.undefined)
     
-    @scala.inline
-    def setManagementState(value: String): Self = StObject.set(x, "managementState", value.asInstanceOf[js.Any])
+    inline def setManagementState(value: String): Self = StObject.set(x, "managementState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagementStateUndefined: Self = StObject.set(x, "managementState", js.undefined)
+    inline def setManagementStateUndefined: Self = StObject.set(x, "managementState", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPasswordState(value: String): Self = StObject.set(x, "passwordState", value.asInstanceOf[js.Any])
+    inline def setPasswordState(value: String): Self = StObject.set(x, "passwordState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordStateUndefined: Self = StObject.set(x, "passwordState", js.undefined)
+    inline def setPasswordStateUndefined: Self = StObject.set(x, "passwordState", js.undefined)
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+    inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     
-    @scala.inline
-    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
+    inline def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
+    inline def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
   }
 }

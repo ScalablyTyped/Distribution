@@ -15,31 +15,23 @@ trait CropAndResizeInputs extends StObject {
 }
 object CropAndResizeInputs {
   
-  @scala.inline
-  def apply(): CropAndResizeInputs = {
+  inline def apply(): CropAndResizeInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CropAndResizeInputs]
   }
   
-  @scala.inline
-  implicit class CropAndResizeInputsMutableBuilder[Self <: CropAndResizeInputs] (val x: Self) extends AnyVal {
+  extension [Self <: CropAndResizeInputs](x: Self) {
     
-    @scala.inline
-    def setBoxInd(value: js.Any): Self = StObject.set(x, "boxInd", value.asInstanceOf[js.Any])
+    inline def setBoxInd(value: js.Any): Self = StObject.set(x, "boxInd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxIndUndefined: Self = StObject.set(x, "boxInd", js.undefined)
+    inline def setBoxIndUndefined: Self = StObject.set(x, "boxInd", js.undefined)
     
-    @scala.inline
-    def setBoxes(value: js.Any): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
+    inline def setBoxes(value: js.Any): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxesUndefined: Self = StObject.set(x, "boxes", js.undefined)
+    inline def setBoxesUndefined: Self = StObject.set(x, "boxes", js.undefined)
     
-    @scala.inline
-    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

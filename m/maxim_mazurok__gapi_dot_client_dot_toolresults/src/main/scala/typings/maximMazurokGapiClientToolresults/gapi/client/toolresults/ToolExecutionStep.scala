@@ -11,19 +11,15 @@ trait ToolExecutionStep extends StObject {
 }
 object ToolExecutionStep {
   
-  @scala.inline
-  def apply(): ToolExecutionStep = {
+  inline def apply(): ToolExecutionStep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolExecutionStep]
   }
   
-  @scala.inline
-  implicit class ToolExecutionStepMutableBuilder[Self <: ToolExecutionStep] (val x: Self) extends AnyVal {
+  extension [Self <: ToolExecutionStep](x: Self) {
     
-    @scala.inline
-    def setToolExecution(value: ToolExecution): Self = StObject.set(x, "toolExecution", value.asInstanceOf[js.Any])
+    inline def setToolExecution(value: ToolExecution): Self = StObject.set(x, "toolExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolExecutionUndefined: Self = StObject.set(x, "toolExecution", js.undefined)
+    inline def setToolExecutionUndefined: Self = StObject.set(x, "toolExecution", js.undefined)
   }
 }

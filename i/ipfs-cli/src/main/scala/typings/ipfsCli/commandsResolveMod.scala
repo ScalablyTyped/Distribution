@@ -24,20 +24,17 @@ object commandsResolveMod {
     @js.native
     def cidBase: Choices = js.native
     
-    @scala.inline
-    def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/resolve", "builder.recursive")
     @js.native
     def recursive: Default = js.native
-    @scala.inline
-    def recursive_=(x: Default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recursive")(x.asInstanceOf[js.Any])
+    inline def recursive_=(x: Default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recursive")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/resolve", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/resolve", "command")
@@ -48,6 +45,5 @@ object commandsResolveMod {
   @js.native
   val description: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsNameRecursiveCidBaseTimeout: NameRecursive): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsNameRecursiveCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def handler(hasHasIpfsNameRecursiveCidBaseTimeout: NameRecursive): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsNameRecursiveCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

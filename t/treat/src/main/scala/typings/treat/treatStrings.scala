@@ -8,6 +8,5 @@ object treatStrings {
   
   @js.native
   sealed trait PseudoProperties extends StObject
-  @scala.inline
-  def PseudoProperties: PseudoProperties = "PseudoProperties".asInstanceOf[PseudoProperties]
+  inline def PseudoProperties: PseudoProperties = "PseudoProperties".asInstanceOf[PseudoProperties]
 }

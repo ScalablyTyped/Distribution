@@ -21,28 +21,21 @@ trait SchemaGoogleDatastoreAdminV1ListIndexesResponse extends StObject {
 }
 object SchemaGoogleDatastoreAdminV1ListIndexesResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleDatastoreAdminV1ListIndexesResponse = {
+  inline def apply(): SchemaGoogleDatastoreAdminV1ListIndexesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1ListIndexesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1ListIndexesResponseMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1ListIndexesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDatastoreAdminV1ListIndexesResponse](x: Self) {
     
-    @scala.inline
-    def setIndexes(value: js.Array[SchemaGoogleDatastoreAdminV1Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: js.Array[SchemaGoogleDatastoreAdminV1Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
+    inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    @scala.inline
-    def setIndexesVarargs(value: SchemaGoogleDatastoreAdminV1Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: SchemaGoogleDatastoreAdminV1Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

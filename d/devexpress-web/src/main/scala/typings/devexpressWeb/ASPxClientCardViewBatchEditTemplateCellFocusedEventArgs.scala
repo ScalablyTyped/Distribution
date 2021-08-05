@@ -23,19 +23,15 @@ trait ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs
 }
 object ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs {
   
-  @scala.inline
-  def apply(column: ASPxClientCardViewColumn, handled: Boolean): ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs = {
+  inline def apply(column: ASPxClientCardViewColumn, handled: Boolean): ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewBatchEditTemplateCellFocusedEventArgsMutableBuilder[Self <: ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }
 }

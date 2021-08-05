@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlMeasurementUnits extends StObject
 object XlMeasurementUnits {
   
-  @scala.inline
-  def xlCentimeters: `1` = 1.asInstanceOf[`1`]
+  inline def xlCentimeters: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlInches: `0` = 0.asInstanceOf[`0`]
+  inline def xlInches: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlMillimeters: `2` = 2.asInstanceOf[`2`]
+  inline def xlMillimeters: `2` = 2.asInstanceOf[`2`]
 }

@@ -53,73 +53,51 @@ trait AnnotationsFibonacciTypeOptions extends StObject {
 }
 object AnnotationsFibonacciTypeOptions {
   
-  @scala.inline
-  def apply(): AnnotationsFibonacciTypeOptions = {
+  inline def apply(): AnnotationsFibonacciTypeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsFibonacciTypeOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsFibonacciTypeOptionsMutableBuilder[Self <: AnnotationsFibonacciTypeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsFibonacciTypeOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColors(value: js.Object): Self = StObject.set(x, "backgroundColors", value.asInstanceOf[js.Any])
+    inline def setBackgroundColors(value: js.Object): Self = StObject.set(x, "backgroundColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorsUndefined: Self = StObject.set(x, "backgroundColors", js.undefined)
+    inline def setBackgroundColorsUndefined: Self = StObject.set(x, "backgroundColors", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Array[AnnotationsFibonacciTypeLabelsOptions]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[AnnotationsFibonacciTypeLabelsOptions]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: AnnotationsFibonacciTypeLabelsOptions*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: AnnotationsFibonacciTypeLabelsOptions*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setLine(value: AnnotationsFibonacciTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: AnnotationsFibonacciTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineColors(value: js.Object): Self = StObject.set(x, "lineColors", value.asInstanceOf[js.Any])
+    inline def setLineColors(value: js.Object): Self = StObject.set(x, "lineColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorsUndefined: Self = StObject.set(x, "lineColors", js.undefined)
+    inline def setLineColorsUndefined: Self = StObject.set(x, "lineColors", js.undefined)
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setPoints(value: js.Array[AnnotationsFibonacciTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[AnnotationsFibonacciTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: AnnotationsFibonacciTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: AnnotationsFibonacciTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    @scala.inline
-    def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

@@ -18,20 +18,16 @@ trait LinkedUser extends StObject {
 }
 object LinkedUser {
   
-  @scala.inline
-  def apply(name: String, `type`: UserType): LinkedUser = {
+  inline def apply(name: String, `type`: UserType): LinkedUser = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkedUser]
   }
   
-  @scala.inline
-  implicit class LinkedUserMutableBuilder[Self <: LinkedUser] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedUser](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: UserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

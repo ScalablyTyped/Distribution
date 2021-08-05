@@ -5,54 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(options: typings.cqrsDomain.mod.CreateDomainOptions): typings.cqrsDomain.mod.CqrsDomain = typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.cqrsDomain.mod.CqrsDomain]
+inline def apply(options: typings.cqrsDomain.mod.CreateDomainOptions): typings.cqrsDomain.mod.CqrsDomain = typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.cqrsDomain.mod.CqrsDomain]
 
-@scala.inline
-def defineAggregate(options: typings.cqrsDomain.mod.DefineAggregateOptions): typings.cqrsDomain.mod.DefineAggregateResult = typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineAggregate")(options.asInstanceOf[js.Any]).asInstanceOf[typings.cqrsDomain.mod.DefineAggregateResult]
-@scala.inline
-def defineAggregate(options: typings.cqrsDomain.mod.DefineAggregateOptions, initializationData: js.Any): typings.cqrsDomain.mod.DefineAggregateResult = (typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineAggregate")(options.asInstanceOf[js.Any], initializationData.asInstanceOf[js.Any])).asInstanceOf[typings.cqrsDomain.mod.DefineAggregateResult]
+inline def defineAggregate(options: typings.cqrsDomain.mod.DefineAggregateOptions): typings.cqrsDomain.mod.DefineAggregateResult = typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineAggregate")(options.asInstanceOf[js.Any]).asInstanceOf[typings.cqrsDomain.mod.DefineAggregateResult]
+inline def defineAggregate(options: typings.cqrsDomain.mod.DefineAggregateOptions, initializationData: js.Any): typings.cqrsDomain.mod.DefineAggregateResult = (typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineAggregate")(options.asInstanceOf[js.Any], initializationData.asInstanceOf[js.Any])).asInstanceOf[typings.cqrsDomain.mod.DefineAggregateResult]
 
-@scala.inline
-def defineBusinessRule(
+inline def defineBusinessRule(
   options: typings.cqrsDomain.mod.DefineBusinessRuleOptions,
   handler: typings.cqrsDomain.mod.businessRuleHandler
 ): scala.Unit = (typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineBusinessRule")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def defineCommand(
+inline def defineCommand(
   options: typings.cqrsDomain.mod.DefineCommandOptions,
   handler: typings.cqrsDomain.mod.commandHandler
 ): typings.cqrsDomain.mod.DefineCommandResult = (typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineCommand")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.cqrsDomain.mod.DefineCommandResult]
 
-@scala.inline
-def defineCommandHandler(
+inline def defineCommandHandler(
   options: typings.cqrsDomain.mod.DefineCommandHandlerOptions,
   handler: typings.cqrsDomain.mod.commandHandlerHandler
 ): scala.Unit = (typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineCommandHandler")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def defineContext(options: typings.cqrsDomain.mod.DefineAggregateOptions): scala.Unit = typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineContext")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def defineContext(options: typings.cqrsDomain.mod.DefineAggregateOptions): scala.Unit = typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineContext")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def defineEvent(options: typings.cqrsDomain.mod.DefineEventOptions, handler: typings.cqrsDomain.mod.eventHandler): scala.Unit = (typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineEvent")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def defineEvent(options: typings.cqrsDomain.mod.DefineEventOptions, handler: typings.cqrsDomain.mod.eventHandler): scala.Unit = (typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineEvent")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def definePreCondition(
+inline def definePreCondition(
   options: typings.cqrsDomain.mod.DefinePreConditionOptions,
   handler: typings.cqrsDomain.mod.preConditionHandler
 ): scala.Unit = (typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("definePreCondition")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def definePreLoadCondition(
+inline def definePreLoadCondition(
   options: typings.cqrsDomain.mod.DefinePreLoadConditionOptions,
   handler: typings.cqrsDomain.mod.preLoadConditionHandler
 ): scala.Unit = (typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("definePreLoadCondition")(options.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 // endregion
 // region extendValidator
-@scala.inline
-def extendValidator(cb: js.Function1[/* validator */ js.Any, scala.Unit]): scala.Unit = typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendValidator")(cb.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def extendValidator(cb: js.Function1[/* validator */ js.Any, scala.Unit]): scala.Unit = typings.cqrsDomain.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendValidator")(cb.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 /**
   * @param changed is the new aggregate object

@@ -26,13 +26,12 @@ trait Editor extends StObject {
   
   def SelectAll(): Unit
   
-  @JSName("Word.Editor_typekey")
+  /* private */ @JSName("Word.Editor_typekey")
   var WordDotEditor_typekey: Editor
 }
 object Editor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -50,40 +49,28 @@ object Editor {
     __obj.asInstanceOf[Editor]
   }
   
-  @scala.inline
-  implicit class EditorMutableBuilder[Self <: Editor] (val x: Self) extends AnyVal {
+  extension [Self <: Editor](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteAll(value: () => Unit): Self = StObject.set(x, "DeleteAll", js.Any.fromFunction0(value))
+    inline def setDeleteAll(value: () => Unit): Self = StObject.set(x, "DeleteAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextRange(value: Range): Self = StObject.set(x, "NextRange", value.asInstanceOf[js.Any])
+    inline def setNextRange(value: Range): Self = StObject.set(x, "NextRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
+    inline def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotEditor_typekey(value: Editor): Self = StObject.set(x, "Word.Editor_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotEditor_typekey(value: Editor): Self = StObject.set(x, "Word.Editor_typekey", value.asInstanceOf[js.Any])
   }
 }

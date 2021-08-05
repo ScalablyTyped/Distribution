@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "filenamify-url"
-version := "2.1.1-8c8307"
+version := "2.1.1-fff756"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

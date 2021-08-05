@@ -29,37 +29,27 @@ trait GeoHaystackSearchOptions extends StObject {
 }
 object GeoHaystackSearchOptions {
   
-  @scala.inline
-  def apply(): GeoHaystackSearchOptions = {
+  inline def apply(): GeoHaystackSearchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoHaystackSearchOptions]
   }
   
-  @scala.inline
-  implicit class GeoHaystackSearchOptionsMutableBuilder[Self <: GeoHaystackSearchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeoHaystackSearchOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: scala.Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: scala.Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMaxDistance(value: scala.Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
+    inline def setMaxDistance(value: scala.Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
+    inline def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
-    @scala.inline
-    def setSearch(value: js.Object): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: js.Object): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
   }
 }

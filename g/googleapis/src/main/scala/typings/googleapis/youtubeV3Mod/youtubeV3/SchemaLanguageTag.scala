@@ -10,19 +10,15 @@ trait SchemaLanguageTag extends StObject {
 }
 object SchemaLanguageTag {
   
-  @scala.inline
-  def apply(): SchemaLanguageTag = {
+  inline def apply(): SchemaLanguageTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLanguageTag]
   }
   
-  @scala.inline
-  implicit class SchemaLanguageTagMutableBuilder[Self <: SchemaLanguageTag] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLanguageTag](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

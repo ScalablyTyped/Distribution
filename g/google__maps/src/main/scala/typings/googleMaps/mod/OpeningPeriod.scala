@@ -19,22 +19,17 @@ trait OpeningPeriod extends StObject {
 }
 object OpeningPeriod {
   
-  @scala.inline
-  def apply(open: OpeningHoursTime): OpeningPeriod = {
+  inline def apply(open: OpeningHoursTime): OpeningPeriod = {
     val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpeningPeriod]
   }
   
-  @scala.inline
-  implicit class OpeningPeriodMutableBuilder[Self <: OpeningPeriod] (val x: Self) extends AnyVal {
+  extension [Self <: OpeningPeriod](x: Self) {
     
-    @scala.inline
-    def setClose(value: OpeningHoursTime): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: OpeningHoursTime): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: OpeningHoursTime): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: OpeningHoursTime): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

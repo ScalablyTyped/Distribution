@@ -29,34 +29,25 @@ trait SchemaSectionStyle extends StObject {
 }
 object SchemaSectionStyle {
   
-  @scala.inline
-  def apply(): SchemaSectionStyle = {
+  inline def apply(): SchemaSectionStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSectionStyle]
   }
   
-  @scala.inline
-  implicit class SchemaSectionStyleMutableBuilder[Self <: SchemaSectionStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSectionStyle](x: Self) {
     
-    @scala.inline
-    def setColumnProperties(value: js.Array[SchemaSectionColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
+    inline def setColumnProperties(value: js.Array[SchemaSectionColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
+    inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
-    @scala.inline
-    def setColumnPropertiesVarargs(value: SchemaSectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+    inline def setColumnPropertiesVarargs(value: SchemaSectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setColumnSeparatorStyle(value: String): Self = StObject.set(x, "columnSeparatorStyle", value.asInstanceOf[js.Any])
+    inline def setColumnSeparatorStyle(value: String): Self = StObject.set(x, "columnSeparatorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSeparatorStyleUndefined: Self = StObject.set(x, "columnSeparatorStyle", js.undefined)
+    inline def setColumnSeparatorStyleUndefined: Self = StObject.set(x, "columnSeparatorStyle", js.undefined)
     
-    @scala.inline
-    def setContentDirection(value: String): Self = StObject.set(x, "contentDirection", value.asInstanceOf[js.Any])
+    inline def setContentDirection(value: String): Self = StObject.set(x, "contentDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDirectionUndefined: Self = StObject.set(x, "contentDirection", js.undefined)
+    inline def setContentDirectionUndefined: Self = StObject.set(x, "contentDirection", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ object devtoolsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def handleRequestInterception(client: Client, mocks: Set[typings.webdriverio.interceptionMod.default]): js.Function1[/* event */ Event, js.Promise[Unit | ClientResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRequestInterception")(client.asInstanceOf[js.Any], mocks.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, js.Promise[Unit | ClientResponse]]]
+    inline def handleRequestInterception(client: Client, mocks: Set[typings.webdriverio.interceptionMod.default]): js.Function1[/* event */ Event, js.Promise[Unit | ClientResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRequestInterception")(client.asInstanceOf[js.Any], mocks.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, js.Promise[Unit | ClientResponse]]]
   }
   
   trait Client extends StObject {
@@ -29,17 +28,14 @@ object devtoolsMod {
   }
   object Client {
     
-    @scala.inline
-    def apply(send: (String, RequestOptions) => js.Promise[ClientResponse]): Client = {
+    inline def apply(send: (String, RequestOptions) => js.Promise[ClientResponse]): Client = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction2(send))
       __obj.asInstanceOf[Client]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+    extension [Self <: Client](x: Self) {
       
-      @scala.inline
-      def setSend(value: (String, RequestOptions) => js.Promise[ClientResponse]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+      inline def setSend(value: (String, RequestOptions) => js.Promise[ClientResponse]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     }
   }
   
@@ -51,23 +47,18 @@ object devtoolsMod {
   }
   object ClientResponse {
     
-    @scala.inline
-    def apply(body: String): ClientResponse = {
+    inline def apply(body: String): ClientResponse = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientResponse]
     }
     
-    @scala.inline
-    implicit class ClientResponseMutableBuilder[Self <: ClientResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ClientResponse](x: Self) {
       
-      @scala.inline
-      def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
+      inline def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64EncodedUndefined: Self = StObject.set(x, "base64Encoded", js.undefined)
+      inline def setBase64EncodedUndefined: Self = StObject.set(x, "base64Encoded", js.undefined)
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,8 +109,7 @@ object devtoolsMod {
   }
   object Event {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       request: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Matches */ js.Any) & MockedResponse,
       requestId: String,
       responseHeaders: js.Array[Record[String, String]]
@@ -128,28 +118,21 @@ object devtoolsMod {
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setRequest(
+      inline def setRequest(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.Matches */ js.Any) & MockedResponse
       ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseHeaders(value: js.Array[Record[String, String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+      inline def setResponseHeaders(value: js.Array[Record[String, String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseHeadersVarargs(value: (Record[String, String])*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+      inline def setResponseHeadersVarargs(value: (Record[String, String])*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setResponseStatusCode(value: Double): Self = StObject.set(x, "responseStatusCode", value.asInstanceOf[js.Any])
+      inline def setResponseStatusCode(value: Double): Self = StObject.set(x, "responseStatusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseStatusCodeUndefined: Self = StObject.set(x, "responseStatusCode", js.undefined)
+      inline def setResponseStatusCodeUndefined: Self = StObject.set(x, "responseStatusCode", js.undefined)
     }
   }
   
@@ -169,46 +152,34 @@ object devtoolsMod {
   }
   object RequestOptions {
     
-    @scala.inline
-    def apply(requestId: String): RequestOptions = {
+    inline def apply(requestId: String): RequestOptions = {
       val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestOptions]
     }
     
-    @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOptions](x: Self) {
       
-      @scala.inline
-      def setBody(
+      inline def setBody(
         value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebdriverIO.JsonCompatible */ js.Any)
       ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setErrorReason(value: String): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
+      inline def setErrorReason(value: String): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorReasonUndefined: Self = StObject.set(x, "errorReason", js.undefined)
+      inline def setErrorReasonUndefined: Self = StObject.set(x, "errorReason", js.undefined)
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+      inline def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
+      inline def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
       
-      @scala.inline
-      def setResponseHeaders(value: js.Array[Record[String, String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+      inline def setResponseHeaders(value: js.Array[Record[String, String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+      inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
       
-      @scala.inline
-      def setResponseHeadersVarargs(value: (Record[String, String])*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+      inline def setResponseHeadersVarargs(value: (Record[String, String])*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
     }
   }
 }

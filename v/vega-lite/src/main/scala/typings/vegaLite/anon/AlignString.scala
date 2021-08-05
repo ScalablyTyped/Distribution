@@ -10,16 +10,13 @@ trait AlignString extends StObject {
 }
 object AlignString {
   
-  @scala.inline
-  def apply(align: String): AlignString = {
+  inline def apply(align: String): AlignString = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignString]
   }
   
-  @scala.inline
-  implicit class AlignStringMutableBuilder[Self <: AlignString] (val x: Self) extends AnyVal {
+  extension [Self <: AlignString](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ trait ViewDragEventOrigin
 }
 object ViewDragEventOrigin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -28,13 +27,10 @@ object ViewDragEventOrigin {
     __obj.asInstanceOf[ViewDragEventOrigin]
   }
   
-  @scala.inline
-  implicit class ViewDragEventOriginMutableBuilder[Self <: ViewDragEventOrigin] (val x: Self) extends AnyVal {
+  extension [Self <: ViewDragEventOrigin](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

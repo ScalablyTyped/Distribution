@@ -26,41 +26,30 @@ object mod {
   }
   object ExtractCommentsOptions {
     
-    @scala.inline
-    def apply(): ExtractCommentsOptions = {
+    inline def apply(): ExtractCommentsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExtractCommentsOptions]
     }
     
-    @scala.inline
-    implicit class ExtractCommentsOptionsMutableBuilder[Self <: ExtractCommentsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExtractCommentsOptions](x: Self) {
       
-      @scala.inline
-      def setBanner(value: Boolean | String | (js.Function1[/* fileName */ String, String])): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+      inline def setBanner(value: Boolean | String | (js.Function1[/* fileName */ String, String])): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBannerFunction1(value: /* fileName */ String => String): Self = StObject.set(x, "banner", js.Any.fromFunction1(value))
+      inline def setBannerFunction1(value: /* fileName */ String => String): Self = StObject.set(x, "banner", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
+      inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
       
-      @scala.inline
-      def setCondition(value: RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean])): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean])): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionFunction2(value: (/* node */ js.Object, /* comment */ String) => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction2(value))
+      inline def setConditionFunction2(value: (/* node */ js.Object, /* comment */ String) => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String | (js.Function1[/* originalFileName */ String, String])): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String | (js.Function1[/* originalFileName */ String, String])): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameFunction1(value: /* originalFileName */ String => String): Self = StObject.set(x, "filename", js.Any.fromFunction1(value))
+      inline def setFilenameFunction1(value: /* originalFileName */ String => String): Self = StObject.set(x, "filename", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     }
   }
   
@@ -92,86 +81,60 @@ object mod {
   }
   object UglifyJsOptions {
     
-    @scala.inline
-    def apply(): UglifyJsOptions = {
+    inline def apply(): UglifyJsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UglifyJsOptions]
     }
     
-    @scala.inline
-    implicit class UglifyJsOptionsMutableBuilder[Self <: UglifyJsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UglifyJsOptions](x: Self) {
       
-      @scala.inline
-      def setCompress(value: Boolean | js.Object): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean | js.Object): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setEcma(value: Double): Self = StObject.set(x, "ecma", value.asInstanceOf[js.Any])
+      inline def setEcma(value: Double): Self = StObject.set(x, "ecma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcmaUndefined: Self = StObject.set(x, "ecma", js.undefined)
+      inline def setEcmaUndefined: Self = StObject.set(x, "ecma", js.undefined)
       
-      @scala.inline
-      def setIe8(value: Boolean): Self = StObject.set(x, "ie8", value.asInstanceOf[js.Any])
+      inline def setIe8(value: Boolean): Self = StObject.set(x, "ie8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIe8Undefined: Self = StObject.set(x, "ie8", js.undefined)
+      inline def setIe8Undefined: Self = StObject.set(x, "ie8", js.undefined)
       
-      @scala.inline
-      def setKeep_classnames(value: Boolean): Self = StObject.set(x, "keep_classnames", value.asInstanceOf[js.Any])
+      inline def setKeep_classnames(value: Boolean): Self = StObject.set(x, "keep_classnames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeep_classnamesUndefined: Self = StObject.set(x, "keep_classnames", js.undefined)
+      inline def setKeep_classnamesUndefined: Self = StObject.set(x, "keep_classnames", js.undefined)
       
-      @scala.inline
-      def setKeep_fnames(value: Boolean): Self = StObject.set(x, "keep_fnames", value.asInstanceOf[js.Any])
+      inline def setKeep_fnames(value: Boolean): Self = StObject.set(x, "keep_fnames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeep_fnamesUndefined: Self = StObject.set(x, "keep_fnames", js.undefined)
+      inline def setKeep_fnamesUndefined: Self = StObject.set(x, "keep_fnames", js.undefined)
       
-      @scala.inline
-      def setMangle(value: Boolean | js.Object): Self = StObject.set(x, "mangle", value.asInstanceOf[js.Any])
+      inline def setMangle(value: Boolean | js.Object): Self = StObject.set(x, "mangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMangleUndefined: Self = StObject.set(x, "mangle", js.undefined)
+      inline def setMangleUndefined: Self = StObject.set(x, "mangle", js.undefined)
       
-      @scala.inline
-      def setNameCache(value: js.Object): Self = StObject.set(x, "nameCache", value.asInstanceOf[js.Any])
+      inline def setNameCache(value: js.Object): Self = StObject.set(x, "nameCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameCacheUndefined: Self = StObject.set(x, "nameCache", js.undefined)
+      inline def setNameCacheUndefined: Self = StObject.set(x, "nameCache", js.undefined)
       
-      @scala.inline
-      def setOutput(value: js.Object): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: js.Object): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setParse(value: js.Object): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: js.Object): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setSafari10(value: Boolean): Self = StObject.set(x, "safari10", value.asInstanceOf[js.Any])
+      inline def setSafari10(value: Boolean): Self = StObject.set(x, "safari10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafari10Undefined: Self = StObject.set(x, "safari10", js.undefined)
+      inline def setSafari10Undefined: Self = StObject.set(x, "safari10", js.undefined)
       
-      @scala.inline
-      def setToplevel(value: Boolean): Self = StObject.set(x, "toplevel", value.asInstanceOf[js.Any])
+      inline def setToplevel(value: Boolean): Self = StObject.set(x, "toplevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToplevelUndefined: Self = StObject.set(x, "toplevel", js.undefined)
+      inline def setToplevelUndefined: Self = StObject.set(x, "toplevel", js.undefined)
       
-      @scala.inline
-      def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     }
   }
   
@@ -201,82 +164,58 @@ object mod {
   }
   object UglifyJsPluginOptions {
     
-    @scala.inline
-    def apply(): UglifyJsPluginOptions = {
+    inline def apply(): UglifyJsPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UglifyJsPluginOptions]
     }
     
-    @scala.inline
-    implicit class UglifyJsPluginOptionsMutableBuilder[Self <: UglifyJsPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UglifyJsPluginOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean | String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean | String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setExclude(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: RegExp*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: RegExp*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setExtractComments(
+      inline def setExtractComments(
         value: Boolean | RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean]) | ExtractCommentsOptions
       ): Self = StObject.set(x, "extractComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractCommentsFunction2(value: (/* node */ js.Object, /* comment */ String) => Boolean): Self = StObject.set(x, "extractComments", js.Any.fromFunction2(value))
+      inline def setExtractCommentsFunction2(value: (/* node */ js.Object, /* comment */ String) => Boolean): Self = StObject.set(x, "extractComments", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExtractCommentsUndefined: Self = StObject.set(x, "extractComments", js.undefined)
+      inline def setExtractCommentsUndefined: Self = StObject.set(x, "extractComments", js.undefined)
       
-      @scala.inline
-      def setInclude(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: RegExp*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: RegExp*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+      inline def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+      inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      @scala.inline
-      def setTest(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      @scala.inline
-      def setTestVarargs(value: RegExp*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: RegExp*): Self = StObject.set(x, "test", js.Array(value :_*))
       
-      @scala.inline
-      def setUglifyOptions(value: UglifyJsOptions): Self = StObject.set(x, "uglifyOptions", value.asInstanceOf[js.Any])
+      inline def setUglifyOptions(value: UglifyJsOptions): Self = StObject.set(x, "uglifyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUglifyOptionsUndefined: Self = StObject.set(x, "uglifyOptions", js.undefined)
+      inline def setUglifyOptionsUndefined: Self = StObject.set(x, "uglifyOptions", js.undefined)
       
-      @scala.inline
-      def setWarningsFilter(value: /* source */ String => Boolean): Self = StObject.set(x, "warningsFilter", js.Any.fromFunction1(value))
+      inline def setWarningsFilter(value: /* source */ String => Boolean): Self = StObject.set(x, "warningsFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
+      inline def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
     }
   }
 }

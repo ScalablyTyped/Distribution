@@ -19,19 +19,15 @@ trait IgResponsiveContainer
 }
 object IgResponsiveContainer {
   
-  @scala.inline
-  def apply(): IgResponsiveContainer = {
+  inline def apply(): IgResponsiveContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgResponsiveContainer]
   }
   
-  @scala.inline
-  implicit class IgResponsiveContainerMutableBuilder[Self <: IgResponsiveContainer] (val x: Self) extends AnyVal {
+  extension [Self <: IgResponsiveContainer](x: Self) {
     
-    @scala.inline
-    def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
+    inline def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollingIntervalUndefined: Self = StObject.set(x, "pollingInterval", js.undefined)
+    inline def setPollingIntervalUndefined: Self = StObject.set(x, "pollingInterval", js.undefined)
   }
 }

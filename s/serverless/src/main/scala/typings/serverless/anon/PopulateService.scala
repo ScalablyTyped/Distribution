@@ -10,16 +10,13 @@ trait PopulateService extends StObject {
 }
 object PopulateService {
   
-  @scala.inline
-  def apply(populateService: () => js.Promise[js.Any]): PopulateService = {
+  inline def apply(populateService: () => js.Promise[js.Any]): PopulateService = {
     val __obj = js.Dynamic.literal(populateService = js.Any.fromFunction0(populateService))
     __obj.asInstanceOf[PopulateService]
   }
   
-  @scala.inline
-  implicit class PopulateServiceMutableBuilder[Self <: PopulateService] (val x: Self) extends AnyVal {
+  extension [Self <: PopulateService](x: Self) {
     
-    @scala.inline
-    def setPopulateService(value: () => js.Promise[js.Any]): Self = StObject.set(x, "populateService", js.Any.fromFunction0(value))
+    inline def setPopulateService(value: () => js.Promise[js.Any]): Self = StObject.set(x, "populateService", js.Any.fromFunction0(value))
   }
 }

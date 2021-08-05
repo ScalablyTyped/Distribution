@@ -24,25 +24,19 @@ trait BaseElevationLayerProperties
 }
 object BaseElevationLayerProperties {
   
-  @scala.inline
-  def apply(): BaseElevationLayerProperties = {
+  inline def apply(): BaseElevationLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseElevationLayerProperties]
   }
   
-  @scala.inline
-  implicit class BaseElevationLayerPropertiesMutableBuilder[Self <: BaseElevationLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BaseElevationLayerProperties](x: Self) {
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
+    inline def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
   }
 }

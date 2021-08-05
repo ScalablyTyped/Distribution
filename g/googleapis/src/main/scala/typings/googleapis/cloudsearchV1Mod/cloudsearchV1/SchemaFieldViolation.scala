@@ -18,25 +18,19 @@ trait SchemaFieldViolation extends StObject {
 }
 object SchemaFieldViolation {
   
-  @scala.inline
-  def apply(): SchemaFieldViolation = {
+  inline def apply(): SchemaFieldViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFieldViolation]
   }
   
-  @scala.inline
-  implicit class SchemaFieldViolationMutableBuilder[Self <: SchemaFieldViolation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFieldViolation](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

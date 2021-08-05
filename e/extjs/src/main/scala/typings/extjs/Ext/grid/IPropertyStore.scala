@@ -10,8 +10,7 @@ trait IPropertyStore
      with IStore
 object IPropertyStore {
   
-  @scala.inline
-  def apply(): IPropertyStore = {
+  inline def apply(): IPropertyStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPropertyStore]
   }

@@ -6,27 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGNumber extends StObject {
   
-  @JSName("MSHTML.SVGNumber_typekey")
+  /* private */ @JSName("MSHTML.SVGNumber_typekey")
   var MSHTMLDotSVGNumber_typekey: SVGNumber
   
   var value: Double
 }
 object SVGNumber {
   
-  @scala.inline
-  def apply(MSHTMLDotSVGNumber_typekey: SVGNumber, value: Double): SVGNumber = {
+  inline def apply(MSHTMLDotSVGNumber_typekey: SVGNumber, value: Double): SVGNumber = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.SVGNumber_typekey")(MSHTMLDotSVGNumber_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGNumber]
   }
   
-  @scala.inline
-  implicit class SVGNumberMutableBuilder[Self <: SVGNumber] (val x: Self) extends AnyVal {
+  extension [Self <: SVGNumber](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotSVGNumber_typekey(value: SVGNumber): Self = StObject.set(x, "MSHTML.SVGNumber_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGNumber_typekey(value: SVGNumber): Self = StObject.set(x, "MSHTML.SVGNumber_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

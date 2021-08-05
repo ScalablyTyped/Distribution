@@ -12,19 +12,15 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(amount: String, options: SubmitForSettlement): Options = {
+  inline def apply(amount: String, options: SubmitForSettlement): Options = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: SubmitForSettlement): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SubmitForSettlement): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

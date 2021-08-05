@@ -12,19 +12,15 @@ trait AfterOptions
 }
 object AfterOptions {
   
-  @scala.inline
-  def apply(): AfterOptions = {
+  inline def apply(): AfterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AfterOptions]
   }
   
-  @scala.inline
-  implicit class AfterOptionsMutableBuilder[Self <: AfterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AfterOptions](x: Self) {
     
-    @scala.inline
-    def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
   }
 }

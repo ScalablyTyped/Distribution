@@ -15,26 +15,20 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+      inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
+      inline def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
       
-      @scala.inline
-      def setMessage(value: /* version */ String => String): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+      inline def setMessage(value: /* version */ String => String): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

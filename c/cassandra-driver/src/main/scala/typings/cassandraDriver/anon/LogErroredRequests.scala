@@ -20,49 +20,35 @@ trait LogErroredRequests extends StObject {
 }
 object LogErroredRequests {
   
-  @scala.inline
-  def apply(): LogErroredRequests = {
+  inline def apply(): LogErroredRequests = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogErroredRequests]
   }
   
-  @scala.inline
-  implicit class LogErroredRequestsMutableBuilder[Self <: LogErroredRequests] (val x: Self) extends AnyVal {
+  extension [Self <: LogErroredRequests](x: Self) {
     
-    @scala.inline
-    def setLogErroredRequests(value: Boolean): Self = StObject.set(x, "logErroredRequests", value.asInstanceOf[js.Any])
+    inline def setLogErroredRequests(value: Boolean): Self = StObject.set(x, "logErroredRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogErroredRequestsUndefined: Self = StObject.set(x, "logErroredRequests", js.undefined)
+    inline def setLogErroredRequestsUndefined: Self = StObject.set(x, "logErroredRequests", js.undefined)
     
-    @scala.inline
-    def setLogNormalRequests(value: Boolean): Self = StObject.set(x, "logNormalRequests", value.asInstanceOf[js.Any])
+    inline def setLogNormalRequests(value: Boolean): Self = StObject.set(x, "logNormalRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogNormalRequestsUndefined: Self = StObject.set(x, "logNormalRequests", js.undefined)
+    inline def setLogNormalRequestsUndefined: Self = StObject.set(x, "logNormalRequests", js.undefined)
     
-    @scala.inline
-    def setMessageMaxErrorStackTraceLength(value: Double): Self = StObject.set(x, "messageMaxErrorStackTraceLength", value.asInstanceOf[js.Any])
+    inline def setMessageMaxErrorStackTraceLength(value: Double): Self = StObject.set(x, "messageMaxErrorStackTraceLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageMaxErrorStackTraceLengthUndefined: Self = StObject.set(x, "messageMaxErrorStackTraceLength", js.undefined)
+    inline def setMessageMaxErrorStackTraceLengthUndefined: Self = StObject.set(x, "messageMaxErrorStackTraceLength", js.undefined)
     
-    @scala.inline
-    def setMessageMaxParameterValueLength(value: Double): Self = StObject.set(x, "messageMaxParameterValueLength", value.asInstanceOf[js.Any])
+    inline def setMessageMaxParameterValueLength(value: Double): Self = StObject.set(x, "messageMaxParameterValueLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageMaxParameterValueLengthUndefined: Self = StObject.set(x, "messageMaxParameterValueLength", js.undefined)
+    inline def setMessageMaxParameterValueLengthUndefined: Self = StObject.set(x, "messageMaxParameterValueLength", js.undefined)
     
-    @scala.inline
-    def setMessageMaxQueryLength(value: Double): Self = StObject.set(x, "messageMaxQueryLength", value.asInstanceOf[js.Any])
+    inline def setMessageMaxQueryLength(value: Double): Self = StObject.set(x, "messageMaxQueryLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageMaxQueryLengthUndefined: Self = StObject.set(x, "messageMaxQueryLength", js.undefined)
+    inline def setMessageMaxQueryLengthUndefined: Self = StObject.set(x, "messageMaxQueryLength", js.undefined)
     
-    @scala.inline
-    def setSlowThreshold(value: Double): Self = StObject.set(x, "slowThreshold", value.asInstanceOf[js.Any])
+    inline def setSlowThreshold(value: Double): Self = StObject.set(x, "slowThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlowThresholdUndefined: Self = StObject.set(x, "slowThreshold", js.undefined)
+    inline def setSlowThresholdUndefined: Self = StObject.set(x, "slowThreshold", js.undefined)
   }
 }

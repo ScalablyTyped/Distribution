@@ -10,16 +10,13 @@ trait GridEventArgs[T /* <: SlickData */] extends StObject {
 }
 object GridEventArgs {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](grid: Grid[T]): GridEventArgs[T] = {
+  inline def apply[T /* <: SlickData */](grid: Grid[T]): GridEventArgs[T] = {
     val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridEventArgs[T]]
   }
   
-  @scala.inline
-  implicit class GridEventArgsMutableBuilder[Self <: GridEventArgs[?], T /* <: SlickData */] (val x: Self & GridEventArgs[T]) extends AnyVal {
+  extension [Self <: GridEventArgs[?], T /* <: SlickData */](x: Self & GridEventArgs[T]) {
     
-    @scala.inline
-    def setGrid(value: Grid[T]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Grid[T]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
   }
 }

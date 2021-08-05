@@ -20,31 +20,23 @@ trait StartTaskExecutionRequest extends StObject {
 }
 object StartTaskExecutionRequest {
   
-  @scala.inline
-  def apply(TaskArn: TaskArn): StartTaskExecutionRequest = {
+  inline def apply(TaskArn: TaskArn): StartTaskExecutionRequest = {
     val __obj = js.Dynamic.literal(TaskArn = TaskArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartTaskExecutionRequest]
   }
   
-  @scala.inline
-  implicit class StartTaskExecutionRequestMutableBuilder[Self <: StartTaskExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartTaskExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setIncludes(value: FilterList): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: FilterList): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
+    inline def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
     
-    @scala.inline
-    def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value :_*))
     
-    @scala.inline
-    def setOverrideOptions(value: Options): Self = StObject.set(x, "OverrideOptions", value.asInstanceOf[js.Any])
+    inline def setOverrideOptions(value: Options): Self = StObject.set(x, "OverrideOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideOptionsUndefined: Self = StObject.set(x, "OverrideOptions", js.undefined)
+    inline def setOverrideOptionsUndefined: Self = StObject.set(x, "OverrideOptions", js.undefined)
     
-    @scala.inline
-    def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
+    inline def setTaskArn(value: TaskArn): Self = StObject.set(x, "TaskArn", value.asInstanceOf[js.Any])
   }
 }

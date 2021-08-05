@@ -19,20 +19,16 @@ object typesMod {
   }
   object Styling {
     
-    @scala.inline
-    def apply(className: String, style: Properties[String | Double]): Styling = {
+    inline def apply(className: String, style: Properties[String | Double]): Styling = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[Styling]
     }
     
-    @scala.inline
-    implicit class StylingMutableBuilder[Self <: Styling] (val x: Self) extends AnyVal {
+    extension [Self <: Styling](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: Properties[String | Double]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Properties[String | Double]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,20 +40,16 @@ object typesMod {
   }
   object StylingConfig {
     
-    @scala.inline
-    def apply(): StylingConfig = {
+    inline def apply(): StylingConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StylingConfig]
     }
     
-    @scala.inline
-    implicit class StylingConfigMutableBuilder[Self <: StylingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StylingConfig](x: Self) {
       
-      @scala.inline
-      def setExtend(value: String | Base16Theme | StylingValue): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+      inline def setExtend(value: String | Base16Theme | StylingValue): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+      inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     }
   }
   

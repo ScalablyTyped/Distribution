@@ -42,8 +42,7 @@ object websocketProviderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUrl")().asInstanceOf[String]
+    inline def defaultUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUrl")().asInstanceOf[String]
   }
   
   trait InflightRequest extends StObject {
@@ -54,20 +53,16 @@ object websocketProviderMod {
   }
   object InflightRequest {
     
-    @scala.inline
-    def apply(callback: (Error, js.Any) => Unit, payload: String): InflightRequest = {
+    inline def apply(callback: (Error, js.Any) => Unit, payload: String): InflightRequest = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[InflightRequest]
     }
     
-    @scala.inline
-    implicit class InflightRequestMutableBuilder[Self <: InflightRequest] (val x: Self) extends AnyVal {
+    extension [Self <: InflightRequest](x: Self) {
       
-      @scala.inline
-      def setCallback(value: (Error, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (Error, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,20 +74,16 @@ object websocketProviderMod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(processFunc: js.Any => Unit, tag: String): Subscription = {
+    inline def apply(processFunc: js.Any => Unit, tag: String): Subscription = {
       val __obj = js.Dynamic.literal(processFunc = js.Any.fromFunction1(processFunc), tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setProcessFunc(value: js.Any => Unit): Self = StObject.set(x, "processFunc", js.Any.fromFunction1(value))
+      inline def setProcessFunc(value: js.Any => Unit): Self = StObject.set(x, "processFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
 }

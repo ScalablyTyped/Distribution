@@ -12,19 +12,15 @@ trait SceneNodeMixin extends StObject {
 }
 object SceneNodeMixin {
   
-  @scala.inline
-  def apply(locked: Boolean, visible: Boolean): SceneNodeMixin = {
+  inline def apply(locked: Boolean, visible: Boolean): SceneNodeMixin = {
     val __obj = js.Dynamic.literal(locked = locked.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneNodeMixin]
   }
   
-  @scala.inline
-  implicit class SceneNodeMixinMutableBuilder[Self <: SceneNodeMixin] (val x: Self) extends AnyVal {
+  extension [Self <: SceneNodeMixin](x: Self) {
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

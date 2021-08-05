@@ -36,7 +36,7 @@ object platformPlatformMod {
     
     var Layout: typings.openfin.layoutMod.default = js.native
     
-    var _channel: js.Any = js.native
+    /* private */ var _channel: js.Any = js.native
     
     def applySnapshot(requestedSnapshot: String): js.Promise[Platform] = js.native
     def applySnapshot(requestedSnapshot: String, options: ApplySnapshotOptions): js.Promise[Platform] = js.native
@@ -156,9 +156,9 @@ object platformPlatformMod {
     
     var Layout: typings.openfin.layoutMod.default = js.native
     
-    var _channel: js.Any = js.native
+    /* private */ var _channel: js.Any = js.native
     
-    var _initializer: js.Any = js.native
+    /* private */ var _initializer: js.Any = js.native
     
     /**
       * Asynchronously returns a Platform object that represents the current platform.

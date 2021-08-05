@@ -24,7 +24,7 @@ object localStorageMod {
     extends StObject
        with ModelStoreManager {
     
-    val LS: js.Any = js.native
+    /* private */ val LS: js.Any = js.native
     
     /**
       * List all models in the model store.
@@ -55,9 +55,9 @@ object localStorageMod {
        with IOHandler {
     def this(modelPath: String) = this()
     
-    val LS: Storage = js.native
+    /* protected */ val LS: Storage = js.native
     
-    val keys: LocalStorageKeys = js.native
+    /* protected */ val keys: LocalStorageKeys = js.native
     
     /**
       * Load a model from local storage.
@@ -70,7 +70,7 @@ object localStorageMod {
     @JSName("load")
     def load_MBrowserLocalStorage_(): js.Promise[ModelArtifacts] = js.native
     
-    val modelPath: String = js.native
+    /* protected */ val modelPath: String = js.native
     
     /**
       * Save model artifacts to browser local storage.
@@ -92,15 +92,13 @@ object localStorageMod {
     val URL_SCHEME: /* "localstorage://" */ String = js.native
   }
   
-  @scala.inline
-  def browserLocalStorage(modelPath: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserLocalStorage")(modelPath.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  inline def browserLocalStorage(modelPath: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserLocalStorage")(modelPath.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
   
   @JSImport("@tensorflow/tfjs-core/dist/io/local_storage", "localStorageRouter")
   @js.native
   val localStorageRouter: IORouter = js.native
   
-  @scala.inline
-  def purgeLocalStorageArtifacts(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeLocalStorageArtifacts")().asInstanceOf[js.Array[String]]
+  inline def purgeLocalStorageArtifacts(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeLocalStorageArtifacts")().asInstanceOf[js.Array[String]]
   
   trait LocalStorageKeys extends StObject {
     
@@ -116,29 +114,22 @@ object localStorageMod {
   }
   object LocalStorageKeys {
     
-    @scala.inline
-    def apply(info: String, modelMetadata: String, topology: String, weightData: String, weightSpecs: String): LocalStorageKeys = {
+    inline def apply(info: String, modelMetadata: String, topology: String, weightData: String, weightSpecs: String): LocalStorageKeys = {
       val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], modelMetadata = modelMetadata.asInstanceOf[js.Any], topology = topology.asInstanceOf[js.Any], weightData = weightData.asInstanceOf[js.Any], weightSpecs = weightSpecs.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalStorageKeys]
     }
     
-    @scala.inline
-    implicit class LocalStorageKeysMutableBuilder[Self <: LocalStorageKeys] (val x: Self) extends AnyVal {
+    extension [Self <: LocalStorageKeys](x: Self) {
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelMetadata(value: String): Self = StObject.set(x, "modelMetadata", value.asInstanceOf[js.Any])
+      inline def setModelMetadata(value: String): Self = StObject.set(x, "modelMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopology(value: String): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
+      inline def setTopology(value: String): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightData(value: String): Self = StObject.set(x, "weightData", value.asInstanceOf[js.Any])
+      inline def setWeightData(value: String): Self = StObject.set(x, "weightData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightSpecs(value: String): Self = StObject.set(x, "weightSpecs", value.asInstanceOf[js.Any])
+      inline def setWeightSpecs(value: String): Self = StObject.set(x, "weightSpecs", value.asInstanceOf[js.Any])
     }
   }
 }

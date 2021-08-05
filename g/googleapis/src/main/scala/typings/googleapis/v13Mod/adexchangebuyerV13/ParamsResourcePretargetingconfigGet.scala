@@ -29,31 +29,23 @@ trait ParamsResourcePretargetingconfigGet
 }
 object ParamsResourcePretargetingconfigGet {
   
-  @scala.inline
-  def apply(): ParamsResourcePretargetingconfigGet = {
+  inline def apply(): ParamsResourcePretargetingconfigGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePretargetingconfigGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePretargetingconfigGetMutableBuilder[Self <: ParamsResourcePretargetingconfigGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePretargetingconfigGet](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
+    inline def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
   }
 }

@@ -60,8 +60,7 @@ trait ParameterValueSetRequest extends StObject {
 }
 object ParameterValueSetRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFilterExpression: () => FilterExpression,
     getSortExpression: () => SortExpression,
     getURIQueryOptionValue: String => String,
@@ -74,28 +73,20 @@ object ParameterValueSetRequest {
     __obj.asInstanceOf[ParameterValueSetRequest]
   }
   
-  @scala.inline
-  implicit class ParameterValueSetRequestMutableBuilder[Self <: ParameterValueSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterValueSetRequest](x: Self) {
     
-    @scala.inline
-    def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
+    inline def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSortExpression(value: () => SortExpression): Self = StObject.set(x, "getSortExpression", js.Any.fromFunction0(value))
+    inline def setGetSortExpression(value: () => SortExpression): Self = StObject.set(x, "getSortExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURIQueryOptionValue(value: String => String): Self = StObject.set(x, "getURIQueryOptionValue", js.Any.fromFunction1(value))
+    inline def setGetURIQueryOptionValue(value: String => String): Self = StObject.set(x, "getURIQueryOptionValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetURIToParameterValueSetEntries(value: String => String): Self = StObject.set(x, "getURIToParameterValueSetEntries", js.Any.fromFunction1(value))
+    inline def setGetURIToParameterValueSetEntries(value: String => String): Self = StObject.set(x, "getURIToParameterValueSetEntries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludeParameterText(value: js.Any => Unit): Self = StObject.set(x, "includeParameterText", js.Any.fromFunction1(value))
+    inline def setIncludeParameterText(value: js.Any => Unit): Self = StObject.set(x, "includeParameterText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilterExpression(value: FilterExpression => Unit): Self = StObject.set(x, "setFilterExpression", js.Any.fromFunction1(value))
+    inline def setSetFilterExpression(value: FilterExpression => Unit): Self = StObject.set(x, "setFilterExpression", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSortExpression(value: SortExpression => Unit): Self = StObject.set(x, "setSortExpression", js.Any.fromFunction1(value))
+    inline def setSetSortExpression(value: SortExpression => Unit): Self = StObject.set(x, "setSortExpression", js.Any.fromFunction1(value))
   }
 }

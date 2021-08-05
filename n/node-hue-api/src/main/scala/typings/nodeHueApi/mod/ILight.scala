@@ -28,8 +28,7 @@ trait ILight extends StObject {
 }
 object ILight {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     manufacturername: String,
     modelid: String,
     name: String,
@@ -43,40 +42,28 @@ object ILight {
     __obj.asInstanceOf[ILight]
   }
   
-  @scala.inline
-  implicit class ILightMutableBuilder[Self <: ILight] (val x: Self) extends AnyVal {
+  extension [Self <: ILight](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setManufacturername(value: String): Self = StObject.set(x, "manufacturername", value.asInstanceOf[js.Any])
+    inline def setManufacturername(value: String): Self = StObject.set(x, "manufacturername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelid(value: String): Self = StObject.set(x, "modelid", value.asInstanceOf[js.Any])
+    inline def setModelid(value: String): Self = StObject.set(x, "modelid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsymbol(value: `1`): Self = StObject.set(x, "pointsymbol", value.asInstanceOf[js.Any])
+    inline def setPointsymbol(value: `1`): Self = StObject.set(x, "pointsymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsymbolUndefined: Self = StObject.set(x, "pointsymbol", js.undefined)
+    inline def setPointsymbolUndefined: Self = StObject.set(x, "pointsymbol", js.undefined)
     
-    @scala.inline
-    def setState(value: Alert): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Alert): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwversion(value: String): Self = StObject.set(x, "swversion", value.asInstanceOf[js.Any])
+    inline def setSwversion(value: String): Self = StObject.set(x, "swversion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueid(value: String): Self = StObject.set(x, "uniqueid", value.asInstanceOf[js.Any])
+    inline def setUniqueid(value: String): Self = StObject.set(x, "uniqueid", value.asInstanceOf[js.Any])
   }
 }

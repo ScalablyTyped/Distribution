@@ -100,21 +100,16 @@ object platformApplicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PlatformApplicationState): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PlatformApplicationState, opts: CustomResourceOptions): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
+    inline def get(name: String, id: Input[ID]): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
+    inline def get(name: String, id: Input[ID], state: PlatformApplicationState): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
+    inline def get(name: String, id: Input[ID], state: PlatformApplicationState, opts: CustomResourceOptions): PlatformApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PlatformApplication]
     
     /**
       * Returns true if the given object is an instance of PlatformApplication.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/platformApplication.PlatformApplication */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/platformApplication.PlatformApplication */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/platformApplication.PlatformApplication */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/platformApplication.PlatformApplication */ Boolean]
   }
   
   trait PlatformApplicationArgs extends StObject {
@@ -176,74 +171,52 @@ object platformApplicationMod {
   }
   object PlatformApplicationArgs {
     
-    @scala.inline
-    def apply(platform: Input[String], platformCredential: Input[String]): PlatformApplicationArgs = {
+    inline def apply(platform: Input[String], platformCredential: Input[String]): PlatformApplicationArgs = {
       val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any], platformCredential = platformCredential.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlatformApplicationArgs]
     }
     
-    @scala.inline
-    implicit class PlatformApplicationArgsMutableBuilder[Self <: PlatformApplicationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PlatformApplicationArgs](x: Self) {
       
-      @scala.inline
-      def setEventDeliveryFailureTopicArn(value: Input[String]): Self = StObject.set(x, "eventDeliveryFailureTopicArn", value.asInstanceOf[js.Any])
+      inline def setEventDeliveryFailureTopicArn(value: Input[String]): Self = StObject.set(x, "eventDeliveryFailureTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventDeliveryFailureTopicArnUndefined: Self = StObject.set(x, "eventDeliveryFailureTopicArn", js.undefined)
+      inline def setEventDeliveryFailureTopicArnUndefined: Self = StObject.set(x, "eventDeliveryFailureTopicArn", js.undefined)
       
-      @scala.inline
-      def setEventEndpointCreatedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointCreatedTopicArn", value.asInstanceOf[js.Any])
+      inline def setEventEndpointCreatedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointCreatedTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventEndpointCreatedTopicArnUndefined: Self = StObject.set(x, "eventEndpointCreatedTopicArn", js.undefined)
+      inline def setEventEndpointCreatedTopicArnUndefined: Self = StObject.set(x, "eventEndpointCreatedTopicArn", js.undefined)
       
-      @scala.inline
-      def setEventEndpointDeletedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointDeletedTopicArn", value.asInstanceOf[js.Any])
+      inline def setEventEndpointDeletedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointDeletedTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventEndpointDeletedTopicArnUndefined: Self = StObject.set(x, "eventEndpointDeletedTopicArn", js.undefined)
+      inline def setEventEndpointDeletedTopicArnUndefined: Self = StObject.set(x, "eventEndpointDeletedTopicArn", js.undefined)
       
-      @scala.inline
-      def setEventEndpointUpdatedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointUpdatedTopicArn", value.asInstanceOf[js.Any])
+      inline def setEventEndpointUpdatedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointUpdatedTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventEndpointUpdatedTopicArnUndefined: Self = StObject.set(x, "eventEndpointUpdatedTopicArn", js.undefined)
+      inline def setEventEndpointUpdatedTopicArnUndefined: Self = StObject.set(x, "eventEndpointUpdatedTopicArn", js.undefined)
       
-      @scala.inline
-      def setFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "failureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "failureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "failureFeedbackRoleArn", js.undefined)
+      inline def setFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "failureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: Input[String]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: Input[String]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformCredential(value: Input[String]): Self = StObject.set(x, "platformCredential", value.asInstanceOf[js.Any])
+      inline def setPlatformCredential(value: Input[String]): Self = StObject.set(x, "platformCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformPrincipal(value: Input[String]): Self = StObject.set(x, "platformPrincipal", value.asInstanceOf[js.Any])
+      inline def setPlatformPrincipal(value: Input[String]): Self = StObject.set(x, "platformPrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformPrincipalUndefined: Self = StObject.set(x, "platformPrincipal", js.undefined)
+      inline def setPlatformPrincipalUndefined: Self = StObject.set(x, "platformPrincipal", js.undefined)
       
-      @scala.inline
-      def setSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "successFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "successFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "successFeedbackRoleArn", js.undefined)
+      inline def setSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "successFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setSuccessFeedbackSampleRate(value: Input[String]): Self = StObject.set(x, "successFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setSuccessFeedbackSampleRate(value: Input[String]): Self = StObject.set(x, "successFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "successFeedbackSampleRate", js.undefined)
+      inline def setSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "successFeedbackSampleRate", js.undefined)
     }
   }
   
@@ -311,86 +284,60 @@ object platformApplicationMod {
   }
   object PlatformApplicationState {
     
-    @scala.inline
-    def apply(): PlatformApplicationState = {
+    inline def apply(): PlatformApplicationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PlatformApplicationState]
     }
     
-    @scala.inline
-    implicit class PlatformApplicationStateMutableBuilder[Self <: PlatformApplicationState] (val x: Self) extends AnyVal {
+    extension [Self <: PlatformApplicationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEventDeliveryFailureTopicArn(value: Input[String]): Self = StObject.set(x, "eventDeliveryFailureTopicArn", value.asInstanceOf[js.Any])
+      inline def setEventDeliveryFailureTopicArn(value: Input[String]): Self = StObject.set(x, "eventDeliveryFailureTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventDeliveryFailureTopicArnUndefined: Self = StObject.set(x, "eventDeliveryFailureTopicArn", js.undefined)
+      inline def setEventDeliveryFailureTopicArnUndefined: Self = StObject.set(x, "eventDeliveryFailureTopicArn", js.undefined)
       
-      @scala.inline
-      def setEventEndpointCreatedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointCreatedTopicArn", value.asInstanceOf[js.Any])
+      inline def setEventEndpointCreatedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointCreatedTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventEndpointCreatedTopicArnUndefined: Self = StObject.set(x, "eventEndpointCreatedTopicArn", js.undefined)
+      inline def setEventEndpointCreatedTopicArnUndefined: Self = StObject.set(x, "eventEndpointCreatedTopicArn", js.undefined)
       
-      @scala.inline
-      def setEventEndpointDeletedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointDeletedTopicArn", value.asInstanceOf[js.Any])
+      inline def setEventEndpointDeletedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointDeletedTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventEndpointDeletedTopicArnUndefined: Self = StObject.set(x, "eventEndpointDeletedTopicArn", js.undefined)
+      inline def setEventEndpointDeletedTopicArnUndefined: Self = StObject.set(x, "eventEndpointDeletedTopicArn", js.undefined)
       
-      @scala.inline
-      def setEventEndpointUpdatedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointUpdatedTopicArn", value.asInstanceOf[js.Any])
+      inline def setEventEndpointUpdatedTopicArn(value: Input[String]): Self = StObject.set(x, "eventEndpointUpdatedTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventEndpointUpdatedTopicArnUndefined: Self = StObject.set(x, "eventEndpointUpdatedTopicArn", js.undefined)
+      inline def setEventEndpointUpdatedTopicArnUndefined: Self = StObject.set(x, "eventEndpointUpdatedTopicArn", js.undefined)
       
-      @scala.inline
-      def setFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "failureFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setFailureFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "failureFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "failureFeedbackRoleArn", js.undefined)
+      inline def setFailureFeedbackRoleArnUndefined: Self = StObject.set(x, "failureFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: Input[String]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: Input[String]): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformCredential(value: Input[String]): Self = StObject.set(x, "platformCredential", value.asInstanceOf[js.Any])
+      inline def setPlatformCredential(value: Input[String]): Self = StObject.set(x, "platformCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformCredentialUndefined: Self = StObject.set(x, "platformCredential", js.undefined)
+      inline def setPlatformCredentialUndefined: Self = StObject.set(x, "platformCredential", js.undefined)
       
-      @scala.inline
-      def setPlatformPrincipal(value: Input[String]): Self = StObject.set(x, "platformPrincipal", value.asInstanceOf[js.Any])
+      inline def setPlatformPrincipal(value: Input[String]): Self = StObject.set(x, "platformPrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformPrincipalUndefined: Self = StObject.set(x, "platformPrincipal", js.undefined)
+      inline def setPlatformPrincipalUndefined: Self = StObject.set(x, "platformPrincipal", js.undefined)
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "successFeedbackRoleArn", value.asInstanceOf[js.Any])
+      inline def setSuccessFeedbackRoleArn(value: Input[String]): Self = StObject.set(x, "successFeedbackRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "successFeedbackRoleArn", js.undefined)
+      inline def setSuccessFeedbackRoleArnUndefined: Self = StObject.set(x, "successFeedbackRoleArn", js.undefined)
       
-      @scala.inline
-      def setSuccessFeedbackSampleRate(value: Input[String]): Self = StObject.set(x, "successFeedbackSampleRate", value.asInstanceOf[js.Any])
+      inline def setSuccessFeedbackSampleRate(value: Input[String]): Self = StObject.set(x, "successFeedbackSampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "successFeedbackSampleRate", js.undefined)
+      inline def setSuccessFeedbackSampleRateUndefined: Self = StObject.set(x, "successFeedbackSampleRate", js.undefined)
     }
   }
 }

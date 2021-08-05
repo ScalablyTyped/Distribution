@@ -19,25 +19,19 @@ trait GrafeasV1beta1BuildDetails extends StObject {
 }
 object GrafeasV1beta1BuildDetails {
   
-  @scala.inline
-  def apply(): GrafeasV1beta1BuildDetails = {
+  inline def apply(): GrafeasV1beta1BuildDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrafeasV1beta1BuildDetails]
   }
   
-  @scala.inline
-  implicit class GrafeasV1beta1BuildDetailsMutableBuilder[Self <: GrafeasV1beta1BuildDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GrafeasV1beta1BuildDetails](x: Self) {
     
-    @scala.inline
-    def setProvenance(value: BuildProvenance): Self = StObject.set(x, "provenance", value.asInstanceOf[js.Any])
+    inline def setProvenance(value: BuildProvenance): Self = StObject.set(x, "provenance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvenanceBytes(value: String): Self = StObject.set(x, "provenanceBytes", value.asInstanceOf[js.Any])
+    inline def setProvenanceBytes(value: String): Self = StObject.set(x, "provenanceBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvenanceBytesUndefined: Self = StObject.set(x, "provenanceBytes", js.undefined)
+    inline def setProvenanceBytesUndefined: Self = StObject.set(x, "provenanceBytes", js.undefined)
     
-    @scala.inline
-    def setProvenanceUndefined: Self = StObject.set(x, "provenance", js.undefined)
+    inline def setProvenanceUndefined: Self = StObject.set(x, "provenance", js.undefined)
   }
 }

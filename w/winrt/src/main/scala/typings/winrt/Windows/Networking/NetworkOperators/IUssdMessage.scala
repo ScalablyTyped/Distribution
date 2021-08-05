@@ -17,8 +17,7 @@ trait IUssdMessage extends StObject {
 }
 object IUssdMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataCodingScheme: Double,
     getPayload: () => Uint8Array,
     payloadAsText: String,
@@ -28,19 +27,14 @@ object IUssdMessage {
     __obj.asInstanceOf[IUssdMessage]
   }
   
-  @scala.inline
-  implicit class IUssdMessageMutableBuilder[Self <: IUssdMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IUssdMessage](x: Self) {
     
-    @scala.inline
-    def setDataCodingScheme(value: Double): Self = StObject.set(x, "dataCodingScheme", value.asInstanceOf[js.Any])
+    inline def setDataCodingScheme(value: Double): Self = StObject.set(x, "dataCodingScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPayload(value: () => Uint8Array): Self = StObject.set(x, "getPayload", js.Any.fromFunction0(value))
+    inline def setGetPayload(value: () => Uint8Array): Self = StObject.set(x, "getPayload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPayloadAsText(value: String): Self = StObject.set(x, "payloadAsText", value.asInstanceOf[js.Any])
+    inline def setPayloadAsText(value: String): Self = StObject.set(x, "payloadAsText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPayload(value: Uint8Array => Unit): Self = StObject.set(x, "setPayload", js.Any.fromFunction1(value))
+    inline def setSetPayload(value: Uint8Array => Unit): Self = StObject.set(x, "setPayload", js.Any.fromFunction1(value))
   }
 }

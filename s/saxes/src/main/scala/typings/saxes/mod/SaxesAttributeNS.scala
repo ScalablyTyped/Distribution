@@ -34,28 +34,21 @@ trait SaxesAttributeNS
 }
 object SaxesAttributeNS {
   
-  @scala.inline
-  def apply(local: String, name: String, prefix: String, uri: String, value: String): SaxesAttributeNS = {
+  inline def apply(local: String, name: String, prefix: String, uri: String, value: String): SaxesAttributeNS = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaxesAttributeNS]
   }
   
-  @scala.inline
-  implicit class SaxesAttributeNSMutableBuilder[Self <: SaxesAttributeNS] (val x: Self) extends AnyVal {
+  extension [Self <: SaxesAttributeNS](x: Self) {
     
-    @scala.inline
-    def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

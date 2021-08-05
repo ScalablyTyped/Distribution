@@ -26,8 +26,7 @@ trait FileStats extends StObject {
 }
 object FileStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     atime: Date,
     birthtime: Date,
     ctime: Date,
@@ -41,31 +40,22 @@ object FileStats {
     __obj.asInstanceOf[FileStats]
   }
   
-  @scala.inline
-  implicit class FileStatsMutableBuilder[Self <: FileStats] (val x: Self) extends AnyVal {
+  extension [Self <: FileStats](x: Self) {
     
-    @scala.inline
-    def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+    inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
+    inline def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+    inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
+    inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
+    inline def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSymbolicLink(value: () => Boolean): Self = StObject.set(x, "isSymbolicLink", js.Any.fromFunction0(value))
+    inline def setIsSymbolicLink(value: () => Boolean): Self = StObject.set(x, "isSymbolicLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

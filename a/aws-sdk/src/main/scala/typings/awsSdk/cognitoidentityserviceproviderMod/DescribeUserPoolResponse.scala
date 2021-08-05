@@ -13,19 +13,15 @@ trait DescribeUserPoolResponse extends StObject {
 }
 object DescribeUserPoolResponse {
   
-  @scala.inline
-  def apply(): DescribeUserPoolResponse = {
+  inline def apply(): DescribeUserPoolResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeUserPoolResponse]
   }
   
-  @scala.inline
-  implicit class DescribeUserPoolResponseMutableBuilder[Self <: DescribeUserPoolResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUserPoolResponse](x: Self) {
     
-    @scala.inline
-    def setUserPool(value: UserPoolType): Self = StObject.set(x, "UserPool", value.asInstanceOf[js.Any])
+    inline def setUserPool(value: UserPoolType): Self = StObject.set(x, "UserPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolUndefined: Self = StObject.set(x, "UserPool", js.undefined)
+    inline def setUserPoolUndefined: Self = StObject.set(x, "UserPool", js.undefined)
   }
 }

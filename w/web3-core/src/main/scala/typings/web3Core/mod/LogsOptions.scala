@@ -14,37 +14,27 @@ trait LogsOptions extends StObject {
 }
 object LogsOptions {
   
-  @scala.inline
-  def apply(): LogsOptions = {
+  inline def apply(): LogsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogsOptions]
   }
   
-  @scala.inline
-  implicit class LogsOptionsMutableBuilder[Self <: LogsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LogsOptions](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String | js.Array[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String | js.Array[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
+    inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
     
-    @scala.inline
-    def setFromBlock(value: BlockNumber): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
+    inline def setFromBlock(value: BlockNumber): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromBlockUndefined: Self = StObject.set(x, "fromBlock", js.undefined)
+    inline def setFromBlockUndefined: Self = StObject.set(x, "fromBlock", js.undefined)
     
-    @scala.inline
-    def setTopics(value: js.Array[String | js.Array[String] | Null]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    inline def setTopics(value: js.Array[String | js.Array[String] | Null]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
+    inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
     
-    @scala.inline
-    def setTopicsVarargs(value: (String | js.Array[String] | Null)*): Self = StObject.set(x, "topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: (String | js.Array[String] | Null)*): Self = StObject.set(x, "topics", js.Array(value :_*))
   }
 }

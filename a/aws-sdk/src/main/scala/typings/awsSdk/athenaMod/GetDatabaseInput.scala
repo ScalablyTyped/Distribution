@@ -18,19 +18,15 @@ trait GetDatabaseInput extends StObject {
 }
 object GetDatabaseInput {
   
-  @scala.inline
-  def apply(CatalogName: CatalogNameString, DatabaseName: NameString): GetDatabaseInput = {
+  inline def apply(CatalogName: CatalogNameString, DatabaseName: NameString): GetDatabaseInput = {
     val __obj = js.Dynamic.literal(CatalogName = CatalogName.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDatabaseInput]
   }
   
-  @scala.inline
-  implicit class GetDatabaseInputMutableBuilder[Self <: GetDatabaseInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDatabaseInput](x: Self) {
     
-    @scala.inline
-    def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
+    inline def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
   }
 }

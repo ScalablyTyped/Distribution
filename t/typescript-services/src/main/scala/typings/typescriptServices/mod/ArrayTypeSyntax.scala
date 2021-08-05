@@ -95,6 +95,5 @@ object ArrayTypeSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(`type`: ITypeSyntax): typings.typescriptServices.TypeScript.ArrayTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ArrayTypeSyntax]
+  inline def create1(`type`: ITypeSyntax): typings.typescriptServices.TypeScript.ArrayTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ArrayTypeSyntax]
 }

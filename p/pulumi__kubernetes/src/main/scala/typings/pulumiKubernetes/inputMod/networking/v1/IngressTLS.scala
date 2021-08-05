@@ -22,28 +22,21 @@ trait IngressTLS extends StObject {
 }
 object IngressTLS {
   
-  @scala.inline
-  def apply(): IngressTLS = {
+  inline def apply(): IngressTLS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngressTLS]
   }
   
-  @scala.inline
-  implicit class IngressTLSMutableBuilder[Self <: IngressTLS] (val x: Self) extends AnyVal {
+  extension [Self <: IngressTLS](x: Self) {
     
-    @scala.inline
-    def setHosts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+    inline def setHosts(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+    inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
     
-    @scala.inline
-    def setHostsVarargs(value: Input[String]*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+    inline def setHostsVarargs(value: Input[String]*): Self = StObject.set(x, "hosts", js.Array(value :_*))
     
-    @scala.inline
-    def setSecretName(value: Input[String]): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
+    inline def setSecretName(value: Input[String]): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretNameUndefined: Self = StObject.set(x, "secretName", js.undefined)
+    inline def setSecretNameUndefined: Self = StObject.set(x, "secretName", js.undefined)
   }
 }

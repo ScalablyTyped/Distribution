@@ -21,8 +21,7 @@ trait Extension
      with ASN1Object
 object Extension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,

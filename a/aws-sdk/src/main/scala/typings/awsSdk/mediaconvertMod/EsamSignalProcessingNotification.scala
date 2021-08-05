@@ -13,19 +13,15 @@ trait EsamSignalProcessingNotification extends StObject {
 }
 object EsamSignalProcessingNotification {
   
-  @scala.inline
-  def apply(): EsamSignalProcessingNotification = {
+  inline def apply(): EsamSignalProcessingNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EsamSignalProcessingNotification]
   }
   
-  @scala.inline
-  implicit class EsamSignalProcessingNotificationMutableBuilder[Self <: EsamSignalProcessingNotification] (val x: Self) extends AnyVal {
+  extension [Self <: EsamSignalProcessingNotification](x: Self) {
     
-    @scala.inline
-    def setSccXml(value: stringPatternSNSignalProcessingNotificationNS): Self = StObject.set(x, "SccXml", value.asInstanceOf[js.Any])
+    inline def setSccXml(value: stringPatternSNSignalProcessingNotificationNS): Self = StObject.set(x, "SccXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSccXmlUndefined: Self = StObject.set(x, "SccXml", js.undefined)
+    inline def setSccXmlUndefined: Self = StObject.set(x, "SccXml", js.undefined)
   }
 }

@@ -30,33 +30,25 @@ trait PointSonifyOptionsObject extends StObject {
 }
 object PointSonifyOptionsObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     instruments: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject]
   ): PointSonifyOptionsObject = {
     val __obj = js.Dynamic.literal(instruments = instruments.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointSonifyOptionsObject]
   }
   
-  @scala.inline
-  implicit class PointSonifyOptionsObjectMutableBuilder[Self <: PointSonifyOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointSonifyOptionsObject](x: Self) {
     
-    @scala.inline
-    def setDataExtremes(value: js.Object): Self = StObject.set(x, "dataExtremes", value.asInstanceOf[js.Any])
+    inline def setDataExtremes(value: js.Object): Self = StObject.set(x, "dataExtremes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataExtremesUndefined: Self = StObject.set(x, "dataExtremes", js.undefined)
+    inline def setDataExtremesUndefined: Self = StObject.set(x, "dataExtremes", js.undefined)
     
-    @scala.inline
-    def setInstruments(value: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    inline def setInstruments(value: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstrumentsVarargs(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value :_*))
+    inline def setInstrumentsVarargs(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value :_*))
     
-    @scala.inline
-    def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
+    inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
   }
 }

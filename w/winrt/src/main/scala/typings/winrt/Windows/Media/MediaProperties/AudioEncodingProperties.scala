@@ -9,8 +9,7 @@ trait AudioEncodingProperties
      with IAudioEncodingProperties
 object AudioEncodingProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitrate: Double,
     bitsPerSample: Double,
     channelCount: Double,

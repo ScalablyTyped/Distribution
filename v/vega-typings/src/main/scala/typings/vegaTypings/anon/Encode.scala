@@ -10,16 +10,13 @@ trait Encode extends StObject {
 }
 object Encode {
   
-  @scala.inline
-  def apply(encode: String): Encode = {
+  inline def apply(encode: String): Encode = {
     val __obj = js.Dynamic.literal(encode = encode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encode]
   }
   
-  @scala.inline
-  implicit class EncodeMutableBuilder[Self <: Encode] (val x: Self) extends AnyVal {
+  extension [Self <: Encode](x: Self) {
     
-    @scala.inline
-    def setEncode(value: String): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+    inline def setEncode(value: String): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
   }
 }

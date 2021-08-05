@@ -12,25 +12,19 @@ trait WebExtensionManifestCommands extends StObject {
 }
 object WebExtensionManifestCommands {
   
-  @scala.inline
-  def apply(): WebExtensionManifestCommands = {
+  inline def apply(): WebExtensionManifestCommands = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebExtensionManifestCommands]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestCommandsMutableBuilder[Self <: WebExtensionManifestCommands] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestCommands](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setSuggested_key(value: WebExtensionManifestCommandsSuggestedKey): Self = StObject.set(x, "suggested_key", value.asInstanceOf[js.Any])
+    inline def setSuggested_key(value: WebExtensionManifestCommandsSuggestedKey): Self = StObject.set(x, "suggested_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggested_keyUndefined: Self = StObject.set(x, "suggested_key", js.undefined)
+    inline def setSuggested_keyUndefined: Self = StObject.set(x, "suggested_key", js.undefined)
   }
 }

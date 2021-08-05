@@ -13,16 +13,13 @@ trait GetConnectorDefinitionRequest extends StObject {
 }
 object GetConnectorDefinitionRequest {
   
-  @scala.inline
-  def apply(ConnectorDefinitionId: string): GetConnectorDefinitionRequest = {
+  inline def apply(ConnectorDefinitionId: string): GetConnectorDefinitionRequest = {
     val __obj = js.Dynamic.literal(ConnectorDefinitionId = ConnectorDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectorDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class GetConnectorDefinitionRequestMutableBuilder[Self <: GetConnectorDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectorDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
+    inline def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
   }
 }

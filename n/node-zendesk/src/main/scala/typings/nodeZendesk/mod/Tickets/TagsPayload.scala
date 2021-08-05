@@ -10,19 +10,15 @@ trait TagsPayload extends StObject {
 }
 object TagsPayload {
   
-  @scala.inline
-  def apply(tags: js.Array[String]): TagsPayload = {
+  inline def apply(tags: js.Array[String]): TagsPayload = {
     val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagsPayload]
   }
   
-  @scala.inline
-  implicit class TagsPayloadMutableBuilder[Self <: TagsPayload] (val x: Self) extends AnyVal {
+  extension [Self <: TagsPayload](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

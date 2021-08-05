@@ -34,23 +34,18 @@ object cacheMapMod {
   }
   object CacheMap {
     
-    @scala.inline
-    def apply(get: ReactText => Double, maps: Record[String, Double], set: (ReactText, Double) => Unit): CacheMap = {
+    inline def apply(get: ReactText => Double, maps: Record[String, Double], set: (ReactText, Double) => Unit): CacheMap = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), maps = maps.asInstanceOf[js.Any], set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[CacheMap]
     }
     
-    @scala.inline
-    implicit class CacheMapMutableBuilder[Self <: CacheMap] (val x: Self) extends AnyVal {
+    extension [Self <: CacheMap](x: Self) {
       
-      @scala.inline
-      def setGet(value: ReactText => Double): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: ReactText => Double): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaps(value: Record[String, Double]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+      inline def setMaps(value: Record[String, Double]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: (ReactText, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (ReactText, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
 }

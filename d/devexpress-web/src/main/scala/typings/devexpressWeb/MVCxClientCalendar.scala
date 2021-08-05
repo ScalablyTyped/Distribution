@@ -20,8 +20,7 @@ trait MVCxClientCalendar
 }
 object MVCxClientCalendar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     BeginCallback: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientCalendar]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientCalendar]],
@@ -86,10 +85,8 @@ object MVCxClientCalendar {
     __obj.asInstanceOf[MVCxClientCalendar]
   }
   
-  @scala.inline
-  implicit class MVCxClientCalendarMutableBuilder[Self <: MVCxClientCalendar] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientCalendar](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientCalendar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientCalendar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
   }
 }

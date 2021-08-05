@@ -29,12 +29,12 @@ object shortestpathsMod {
       prevCost: js.Function3[/* u */ Double, /* v */ Double, /* w */ Double, Double]
     ): js.Array[Double] = js.native
     
-    var dijkstraNeighbours: js.Any = js.native
+    /* private */ var dijkstraNeighbours: js.Any = js.native
     
     var es: js.Array[Link] = js.native
     
     var n: Double = js.native
     
-    var neighbours: js.Any = js.native
+    /* private */ var neighbours: js.Any = js.native
   }
 }

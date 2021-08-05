@@ -14,25 +14,19 @@ trait Module extends StObject {
 }
 object Module {
   
-  @scala.inline
-  def apply(): Module = {
+  inline def apply(): Module = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Module]
   }
   
-  @scala.inline
-  implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+  extension [Self <: Module](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: TruncatableString): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: TruncatableString): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildIdUndefined: Self = StObject.set(x, "buildId", js.undefined)
+    inline def setBuildIdUndefined: Self = StObject.set(x, "buildId", js.undefined)
     
-    @scala.inline
-    def setModule(value: TruncatableString): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: TruncatableString): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+    inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
   }
 }

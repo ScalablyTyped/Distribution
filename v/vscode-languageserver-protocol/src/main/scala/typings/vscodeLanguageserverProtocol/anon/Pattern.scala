@@ -20,28 +20,21 @@ trait Pattern
 }
 object Pattern {
   
-  @scala.inline
-  def apply(scheme: String): Pattern = {
+  inline def apply(scheme: String): Pattern = {
     val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pattern]
   }
   
-  @scala.inline
-  implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+  extension [Self <: Pattern](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait AnalyticsApplicationInputsParallelism extends StObject {
 }
 object AnalyticsApplicationInputsParallelism {
   
-  @scala.inline
-  def apply(): AnalyticsApplicationInputsParallelism = {
+  inline def apply(): AnalyticsApplicationInputsParallelism = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyticsApplicationInputsParallelism]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationInputsParallelismMutableBuilder[Self <: AnalyticsApplicationInputsParallelism] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationInputsParallelism](x: Self) {
     
-    @scala.inline
-    def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Input[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
   }
 }

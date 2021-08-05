@@ -38,41 +38,30 @@ object typesGetSamplingTargetsOutputMod {
   }
   object GetSamplingTargetsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetSamplingTargetsOutput = {
+    inline def apply($metadata: ResponseMetadata): GetSamplingTargetsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSamplingTargetsOutput]
     }
     
-    @scala.inline
-    implicit class GetSamplingTargetsOutputMutableBuilder[Self <: GetSamplingTargetsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetSamplingTargetsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastRuleModification(value: Date): Self = StObject.set(x, "LastRuleModification", value.asInstanceOf[js.Any])
+      inline def setLastRuleModification(value: Date): Self = StObject.set(x, "LastRuleModification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastRuleModificationUndefined: Self = StObject.set(x, "LastRuleModification", js.undefined)
+      inline def setLastRuleModificationUndefined: Self = StObject.set(x, "LastRuleModification", js.undefined)
       
-      @scala.inline
-      def setSamplingTargetDocuments(value: js.Array[UnmarshalledSamplingTargetDocument]): Self = StObject.set(x, "SamplingTargetDocuments", value.asInstanceOf[js.Any])
+      inline def setSamplingTargetDocuments(value: js.Array[UnmarshalledSamplingTargetDocument]): Self = StObject.set(x, "SamplingTargetDocuments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingTargetDocumentsUndefined: Self = StObject.set(x, "SamplingTargetDocuments", js.undefined)
+      inline def setSamplingTargetDocumentsUndefined: Self = StObject.set(x, "SamplingTargetDocuments", js.undefined)
       
-      @scala.inline
-      def setSamplingTargetDocumentsVarargs(value: UnmarshalledSamplingTargetDocument*): Self = StObject.set(x, "SamplingTargetDocuments", js.Array(value :_*))
+      inline def setSamplingTargetDocumentsVarargs(value: UnmarshalledSamplingTargetDocument*): Self = StObject.set(x, "SamplingTargetDocuments", js.Array(value :_*))
       
-      @scala.inline
-      def setUnprocessedStatistics(value: js.Array[UnmarshalledUnprocessedStatistics]): Self = StObject.set(x, "UnprocessedStatistics", value.asInstanceOf[js.Any])
+      inline def setUnprocessedStatistics(value: js.Array[UnmarshalledUnprocessedStatistics]): Self = StObject.set(x, "UnprocessedStatistics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprocessedStatisticsUndefined: Self = StObject.set(x, "UnprocessedStatistics", js.undefined)
+      inline def setUnprocessedStatisticsUndefined: Self = StObject.set(x, "UnprocessedStatistics", js.undefined)
       
-      @scala.inline
-      def setUnprocessedStatisticsVarargs(value: UnmarshalledUnprocessedStatistics*): Self = StObject.set(x, "UnprocessedStatistics", js.Array(value :_*))
+      inline def setUnprocessedStatisticsVarargs(value: UnmarshalledUnprocessedStatistics*): Self = StObject.set(x, "UnprocessedStatistics", js.Array(value :_*))
     }
   }
 }

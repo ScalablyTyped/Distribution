@@ -33,43 +33,31 @@ trait TaskStatisticsForAuditCheck extends StObject {
 }
 object TaskStatisticsForAuditCheck {
   
-  @scala.inline
-  def apply(): TaskStatisticsForAuditCheck = {
+  inline def apply(): TaskStatisticsForAuditCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskStatisticsForAuditCheck]
   }
   
-  @scala.inline
-  implicit class TaskStatisticsForAuditCheckMutableBuilder[Self <: TaskStatisticsForAuditCheck] (val x: Self) extends AnyVal {
+  extension [Self <: TaskStatisticsForAuditCheck](x: Self) {
     
-    @scala.inline
-    def setCanceledFindingsCount(value: CanceledFindingsCount): Self = StObject.set(x, "canceledFindingsCount", value.asInstanceOf[js.Any])
+    inline def setCanceledFindingsCount(value: CanceledFindingsCount): Self = StObject.set(x, "canceledFindingsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceledFindingsCountUndefined: Self = StObject.set(x, "canceledFindingsCount", js.undefined)
+    inline def setCanceledFindingsCountUndefined: Self = StObject.set(x, "canceledFindingsCount", js.undefined)
     
-    @scala.inline
-    def setFailedFindingsCount(value: FailedFindingsCount): Self = StObject.set(x, "failedFindingsCount", value.asInstanceOf[js.Any])
+    inline def setFailedFindingsCount(value: FailedFindingsCount): Self = StObject.set(x, "failedFindingsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedFindingsCountUndefined: Self = StObject.set(x, "failedFindingsCount", js.undefined)
+    inline def setFailedFindingsCountUndefined: Self = StObject.set(x, "failedFindingsCount", js.undefined)
     
-    @scala.inline
-    def setSkippedFindingsCount(value: SkippedFindingsCount): Self = StObject.set(x, "skippedFindingsCount", value.asInstanceOf[js.Any])
+    inline def setSkippedFindingsCount(value: SkippedFindingsCount): Self = StObject.set(x, "skippedFindingsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippedFindingsCountUndefined: Self = StObject.set(x, "skippedFindingsCount", js.undefined)
+    inline def setSkippedFindingsCountUndefined: Self = StObject.set(x, "skippedFindingsCount", js.undefined)
     
-    @scala.inline
-    def setSucceededFindingsCount(value: SucceededFindingsCount): Self = StObject.set(x, "succeededFindingsCount", value.asInstanceOf[js.Any])
+    inline def setSucceededFindingsCount(value: SucceededFindingsCount): Self = StObject.set(x, "succeededFindingsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceededFindingsCountUndefined: Self = StObject.set(x, "succeededFindingsCount", js.undefined)
+    inline def setSucceededFindingsCountUndefined: Self = StObject.set(x, "succeededFindingsCount", js.undefined)
     
-    @scala.inline
-    def setTotalFindingsCount(value: TotalFindingsCount): Self = StObject.set(x, "totalFindingsCount", value.asInstanceOf[js.Any])
+    inline def setTotalFindingsCount(value: TotalFindingsCount): Self = StObject.set(x, "totalFindingsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFindingsCountUndefined: Self = StObject.set(x, "totalFindingsCount", js.undefined)
+    inline def setTotalFindingsCountUndefined: Self = StObject.set(x, "totalFindingsCount", js.undefined)
   }
 }

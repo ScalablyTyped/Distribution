@@ -18,22 +18,17 @@ trait DeleteWorkGroupInput extends StObject {
 }
 object DeleteWorkGroupInput {
   
-  @scala.inline
-  def apply(WorkGroup: WorkGroupName): DeleteWorkGroupInput = {
+  inline def apply(WorkGroup: WorkGroupName): DeleteWorkGroupInput = {
     val __obj = js.Dynamic.literal(WorkGroup = WorkGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWorkGroupInput]
   }
   
-  @scala.inline
-  implicit class DeleteWorkGroupInputMutableBuilder[Self <: DeleteWorkGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWorkGroupInput](x: Self) {
     
-    @scala.inline
-    def setRecursiveDeleteOption(value: BoxedBoolean): Self = StObject.set(x, "RecursiveDeleteOption", value.asInstanceOf[js.Any])
+    inline def setRecursiveDeleteOption(value: BoxedBoolean): Self = StObject.set(x, "RecursiveDeleteOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveDeleteOptionUndefined: Self = StObject.set(x, "RecursiveDeleteOption", js.undefined)
+    inline def setRecursiveDeleteOptionUndefined: Self = StObject.set(x, "RecursiveDeleteOption", js.undefined)
     
-    @scala.inline
-    def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
+    inline def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
   }
 }

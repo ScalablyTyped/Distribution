@@ -13,19 +13,15 @@ trait CreateDeploymentOutput extends StObject {
 }
 object CreateDeploymentOutput {
   
-  @scala.inline
-  def apply(): CreateDeploymentOutput = {
+  inline def apply(): CreateDeploymentOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDeploymentOutput]
   }
   
-  @scala.inline
-  implicit class CreateDeploymentOutputMutableBuilder[Self <: CreateDeploymentOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeploymentOutput](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
   }
 }

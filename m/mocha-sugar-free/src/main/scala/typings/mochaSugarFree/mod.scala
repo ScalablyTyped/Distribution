@@ -235,8 +235,7 @@ object mod extends Shortcut {
   }
   object AnyInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       after: HookFunction,
       afterEach: HookFunction,
       before: HookFunction,
@@ -262,68 +261,47 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnyInterface]
     }
     
-    @scala.inline
-    implicit class AnyInterfaceMutableBuilder[Self <: AnyInterface] (val x: Self) extends AnyVal {
+    extension [Self <: AnyInterface](x: Self) {
       
-      @scala.inline
-      def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterEach(value: HookFunction): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
+      inline def setAfterEach(value: HookFunction): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBefore(value: HookFunction): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: HookFunction): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeEach(value: HookFunction): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+      inline def setBeforeEach(value: HookFunction): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: SuiteFunction): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: SuiteFunction): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescribe(value: SuiteFunction): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      inline def setDescribe(value: SuiteFunction): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectedInterface(value: bdd | tdd | qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
+      inline def setDetectedInterface(value: bdd | tdd | qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIt(value: TestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      inline def setIt(value: TestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetup(value: HookFunction): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+      inline def setSetup(value: HookFunction): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecify(value: TestFunction): Self = StObject.set(x, "specify", value.asInstanceOf[js.Any])
+      inline def setSpecify(value: TestFunction): Self = StObject.set(x, "specify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      inline def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuiteSetup(value: HookFunction): Self = StObject.set(x, "suiteSetup", value.asInstanceOf[js.Any])
+      inline def setSuiteSetup(value: HookFunction): Self = StObject.set(x, "suiteSetup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuiteTeardown(value: HookFunction): Self = StObject.set(x, "suiteTeardown", value.asInstanceOf[js.Any])
+      inline def setSuiteTeardown(value: HookFunction): Self = StObject.set(x, "suiteTeardown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeardown(value: HookFunction): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
+      inline def setTeardown(value: HookFunction): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXcontext(value: PendingSuiteFunction): Self = StObject.set(x, "xcontext", value.asInstanceOf[js.Any])
+      inline def setXcontext(value: PendingSuiteFunction): Self = StObject.set(x, "xcontext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXdescribe(value: PendingSuiteFunction): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
+      inline def setXdescribe(value: PendingSuiteFunction): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXit(value: PendingTestFunction): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
+      inline def setXit(value: PendingTestFunction): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXspecify(value: PendingTestFunction): Self = StObject.set(x, "xspecify", value.asInstanceOf[js.Any])
+      inline def setXspecify(value: PendingTestFunction): Self = StObject.set(x, "xspecify", value.asInstanceOf[js.Any])
     }
   }
   
@@ -850,8 +828,7 @@ object mod extends Shortcut {
   }
   object BDD {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       after: HookFunction,
       afterEach: HookFunction,
       before: HookFunction,
@@ -870,47 +847,33 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BDD]
     }
     
-    @scala.inline
-    implicit class BDDMutableBuilder[Self <: BDD] (val x: Self) extends AnyVal {
+    extension [Self <: BDD](x: Self) {
       
-      @scala.inline
-      def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterEach(value: HookFunction): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
+      inline def setAfterEach(value: HookFunction): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBefore(value: HookFunction): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: HookFunction): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeEach(value: HookFunction): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+      inline def setBeforeEach(value: HookFunction): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: SuiteFunction): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: SuiteFunction): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescribe(value: SuiteFunction): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      inline def setDescribe(value: SuiteFunction): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectedInterface(value: bdd): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
+      inline def setDetectedInterface(value: bdd): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIt(value: TestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      inline def setIt(value: TestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecify(value: TestFunction): Self = StObject.set(x, "specify", value.asInstanceOf[js.Any])
+      inline def setSpecify(value: TestFunction): Self = StObject.set(x, "specify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXcontext(value: PendingSuiteFunction): Self = StObject.set(x, "xcontext", value.asInstanceOf[js.Any])
+      inline def setXcontext(value: PendingSuiteFunction): Self = StObject.set(x, "xcontext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXdescribe(value: PendingSuiteFunction): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
+      inline def setXdescribe(value: PendingSuiteFunction): Self = StObject.set(x, "xdescribe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXit(value: PendingTestFunction): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
+      inline def setXit(value: PendingTestFunction): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXspecify(value: PendingTestFunction): Self = StObject.set(x, "xspecify", value.asInstanceOf[js.Any])
+      inline def setXspecify(value: PendingTestFunction): Self = StObject.set(x, "xspecify", value.asInstanceOf[js.Any])
     }
   }
   
@@ -935,20 +898,16 @@ object mod extends Shortcut {
   }
   object BaseInterface {
     
-    @scala.inline
-    def apply(detectedInterface: bdd | tdd | qunit, run: () => Unit): BaseInterface = {
+    inline def apply(detectedInterface: bdd | tdd | qunit, run: () => Unit): BaseInterface = {
       val __obj = js.Dynamic.literal(detectedInterface = detectedInterface.asInstanceOf[js.Any], run = js.Any.fromFunction0(run))
       __obj.asInstanceOf[BaseInterface]
     }
     
-    @scala.inline
-    implicit class BaseInterfaceMutableBuilder[Self <: BaseInterface] (val x: Self) extends AnyVal {
+    extension [Self <: BaseInterface](x: Self) {
       
-      @scala.inline
-      def setDetectedInterface(value: bdd | tdd | qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
+      inline def setDetectedInterface(value: bdd | tdd | qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     }
   }
   
@@ -1010,26 +969,20 @@ object mod extends Shortcut {
   }
   object HookContext {
     
-    @scala.inline
-    def apply(hook: before | after | beforeEach | afterEach): HookContext = {
+    inline def apply(hook: before | after | beforeEach | afterEach): HookContext = {
       val __obj = js.Dynamic.literal(hook = hook.asInstanceOf[js.Any], isHook = true, isSuite = false, isTest = false)
       __obj.asInstanceOf[HookContext]
     }
     
-    @scala.inline
-    implicit class HookContextMutableBuilder[Self <: HookContext] (val x: Self) extends AnyVal {
+    extension [Self <: HookContext](x: Self) {
       
-      @scala.inline
-      def setHook(value: before | after | beforeEach | afterEach): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+      inline def setHook(value: before | after | beforeEach | afterEach): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHook(value: `true`): Self = StObject.set(x, "isHook", value.asInstanceOf[js.Any])
+      inline def setIsHook(value: `true`): Self = StObject.set(x, "isHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSuite(value: `false`): Self = StObject.set(x, "isSuite", value.asInstanceOf[js.Any])
+      inline def setIsSuite(value: `false`): Self = StObject.set(x, "isSuite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTest(value: `false`): Self = StObject.set(x, "isTest", value.asInstanceOf[js.Any])
+      inline def setIsTest(value: `false`): Self = StObject.set(x, "isTest", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1117,80 +1070,56 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setEnableTimeouts(value: Boolean): Self = StObject.set(x, "enableTimeouts", value.asInstanceOf[js.Any])
+      inline def setEnableTimeouts(value: Boolean): Self = StObject.set(x, "enableTimeouts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTimeoutsUndefined: Self = StObject.set(x, "enableTimeouts", js.undefined)
+      inline def setEnableTimeoutsUndefined: Self = StObject.set(x, "enableTimeouts", js.undefined)
       
-      @scala.inline
-      def setExpectPromise(value: Boolean): Self = StObject.set(x, "expectPromise", value.asInstanceOf[js.Any])
+      inline def setExpectPromise(value: Boolean): Self = StObject.set(x, "expectPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
+      inline def setExpectPromiseUndefined: Self = StObject.set(x, "expectPromise", js.undefined)
       
-      @scala.inline
-      def setFn(value: TestCase | TestCaseWithDone | SuiteFunc | HookFunc): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: TestCase | TestCaseWithDone | SuiteFunc | HookFunc): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipIfBrowser(value: Boolean): Self = StObject.set(x, "skipIfBrowser", value.asInstanceOf[js.Any])
+      inline def setSkipIfBrowser(value: Boolean): Self = StObject.set(x, "skipIfBrowser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipIfBrowserUndefined: Self = StObject.set(x, "skipIfBrowser", js.undefined)
+      inline def setSkipIfBrowserUndefined: Self = StObject.set(x, "skipIfBrowser", js.undefined)
       
-      @scala.inline
-      def setSkipIfWebWorker(value: Boolean): Self = StObject.set(x, "skipIfWebWorker", value.asInstanceOf[js.Any])
+      inline def setSkipIfWebWorker(value: Boolean): Self = StObject.set(x, "skipIfWebWorker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipIfWebWorkerUndefined: Self = StObject.set(x, "skipIfWebWorker", js.undefined)
+      inline def setSkipIfWebWorkerUndefined: Self = StObject.set(x, "skipIfWebWorker", js.undefined)
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setSkipUnlessBrowser(value: Boolean): Self = StObject.set(x, "skipUnlessBrowser", value.asInstanceOf[js.Any])
+      inline def setSkipUnlessBrowser(value: Boolean): Self = StObject.set(x, "skipUnlessBrowser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUnlessBrowserUndefined: Self = StObject.set(x, "skipUnlessBrowser", js.undefined)
+      inline def setSkipUnlessBrowserUndefined: Self = StObject.set(x, "skipUnlessBrowser", js.undefined)
       
-      @scala.inline
-      def setSlow(value: String | Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+      inline def setSlow(value: String | Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
+      inline def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: String | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: String | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -1278,23 +1207,18 @@ object mod extends Shortcut {
   }
   object QUnit {
     
-    @scala.inline
-    def apply(run: () => Unit, suite: SuiteFunction, test: TestFunction): QUnit = {
+    inline def apply(run: () => Unit, suite: SuiteFunction, test: TestFunction): QUnit = {
       val __obj = js.Dynamic.literal(detectedInterface = "qunit", run = js.Any.fromFunction0(run), suite = suite.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
       __obj.asInstanceOf[QUnit]
     }
     
-    @scala.inline
-    implicit class QUnitMutableBuilder[Self <: QUnit] (val x: Self) extends AnyVal {
+    extension [Self <: QUnit](x: Self) {
       
-      @scala.inline
-      def setDetectedInterface(value: qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
+      inline def setDetectedInterface(value: qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      inline def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1310,23 +1234,18 @@ object mod extends Shortcut {
   }
   object SuiteContext {
     
-    @scala.inline
-    def apply(): SuiteContext = {
+    inline def apply(): SuiteContext = {
       val __obj = js.Dynamic.literal(isHook = false, isSuite = true, isTest = false)
       __obj.asInstanceOf[SuiteContext]
     }
     
-    @scala.inline
-    implicit class SuiteContextMutableBuilder[Self <: SuiteContext] (val x: Self) extends AnyVal {
+    extension [Self <: SuiteContext](x: Self) {
       
-      @scala.inline
-      def setIsHook(value: `false`): Self = StObject.set(x, "isHook", value.asInstanceOf[js.Any])
+      inline def setIsHook(value: `false`): Self = StObject.set(x, "isHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSuite(value: `true`): Self = StObject.set(x, "isSuite", value.asInstanceOf[js.Any])
+      inline def setIsSuite(value: `true`): Self = StObject.set(x, "isSuite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTest(value: `false`): Self = StObject.set(x, "isTest", value.asInstanceOf[js.Any])
+      inline def setIsTest(value: `false`): Self = StObject.set(x, "isTest", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1614,8 +1533,7 @@ object mod extends Shortcut {
   }
   object TDD {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       run: () => Unit,
       setup: HookFunction,
       suite: SuiteFunction,
@@ -1628,29 +1546,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TDD]
     }
     
-    @scala.inline
-    implicit class TDDMutableBuilder[Self <: TDD] (val x: Self) extends AnyVal {
+    extension [Self <: TDD](x: Self) {
       
-      @scala.inline
-      def setDetectedInterface(value: tdd): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
+      inline def setDetectedInterface(value: tdd): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetup(value: HookFunction): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+      inline def setSetup(value: HookFunction): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      inline def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuiteSetup(value: HookFunction): Self = StObject.set(x, "suiteSetup", value.asInstanceOf[js.Any])
+      inline def setSuiteSetup(value: HookFunction): Self = StObject.set(x, "suiteSetup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuiteTeardown(value: HookFunction): Self = StObject.set(x, "suiteTeardown", value.asInstanceOf[js.Any])
+      inline def setSuiteTeardown(value: HookFunction): Self = StObject.set(x, "suiteTeardown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeardown(value: HookFunction): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
+      inline def setTeardown(value: HookFunction): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     }
   }
   

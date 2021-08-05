@@ -23,37 +23,27 @@ trait VolumeMount extends StObject {
 }
 object VolumeMount {
   
-  @scala.inline
-  def apply(): VolumeMount = {
+  inline def apply(): VolumeMount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeMount]
   }
   
-  @scala.inline
-  implicit class VolumeMountMutableBuilder[Self <: VolumeMount] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeMount](x: Self) {
     
-    @scala.inline
-    def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
+    inline def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPathUndefined: Self = StObject.set(x, "mountPath", js.undefined)
+    inline def setMountPathUndefined: Self = StObject.set(x, "mountPath", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSubPath(value: String): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
+    inline def setSubPath(value: String): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubPathUndefined: Self = StObject.set(x, "subPath", js.undefined)
+    inline def setSubPathUndefined: Self = StObject.set(x, "subPath", js.undefined)
   }
 }

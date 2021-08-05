@@ -31,25 +31,19 @@ trait TouchableWithoutFeedbackPropsIOS extends StObject {
 }
 object TouchableWithoutFeedbackPropsIOS {
   
-  @scala.inline
-  def apply(): TouchableWithoutFeedbackPropsIOS = {
+  inline def apply(): TouchableWithoutFeedbackPropsIOS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchableWithoutFeedbackPropsIOS]
   }
   
-  @scala.inline
-  implicit class TouchableWithoutFeedbackPropsIOSMutableBuilder[Self <: TouchableWithoutFeedbackPropsIOS] (val x: Self) extends AnyVal {
+  extension [Self <: TouchableWithoutFeedbackPropsIOS](x: Self) {
     
-    @scala.inline
-    def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
+    inline def setHasTVPreferredFocus(value: Boolean): Self = StObject.set(x, "hasTVPreferredFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
+    inline def setHasTVPreferredFocusUndefined: Self = StObject.set(x, "hasTVPreferredFocus", js.undefined)
     
-    @scala.inline
-    def setTvParallaxProperties(value: TVParallaxProperties): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
+    inline def setTvParallaxProperties(value: TVParallaxProperties): Self = StObject.set(x, "tvParallaxProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
+    inline def setTvParallaxPropertiesUndefined: Self = StObject.set(x, "tvParallaxProperties", js.undefined)
   }
 }

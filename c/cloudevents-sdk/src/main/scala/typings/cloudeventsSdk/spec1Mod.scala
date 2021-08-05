@@ -26,17 +26,14 @@ object spec1Mod {
   }
   object CloudEvent {
     
-    @scala.inline
-    def apply(CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): CloudEvent = {
+    inline def apply(CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): CloudEvent = {
       val __obj = js.Dynamic.literal(CloudEvent = CloudEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudEvent]
     }
     
-    @scala.inline
-    implicit class CloudEventMutableBuilder[Self <: CloudEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CloudEvent](x: Self) {
       
-      @scala.inline
-      def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
+      inline def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
     }
   }
   

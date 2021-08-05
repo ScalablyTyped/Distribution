@@ -30,29 +30,23 @@ object StorageFile {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createStreamedFileAsync(
+  inline def createStreamedFileAsync(
     displayNameWithExtension: String,
     dataRequested: StreamedFileDataRequestedHandler,
     thumbnail: IRandomAccessStreamReference
   ): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStreamedFileAsync")(displayNameWithExtension.asInstanceOf[js.Any], dataRequested.asInstanceOf[js.Any], thumbnail.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
   
-  @scala.inline
-  def createStreamedFileFromUriAsync(displayNameWithExtension: String, uri: Uri, thumbnail: IRandomAccessStreamReference): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStreamedFileFromUriAsync")(displayNameWithExtension.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], thumbnail.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
+  inline def createStreamedFileFromUriAsync(displayNameWithExtension: String, uri: Uri, thumbnail: IRandomAccessStreamReference): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStreamedFileFromUriAsync")(displayNameWithExtension.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], thumbnail.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
   
-  @scala.inline
-  def getFileFromApplicationUriAsync(uri: Uri): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromApplicationUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
+  inline def getFileFromApplicationUriAsync(uri: Uri): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromApplicationUriAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
   
-  @scala.inline
-  def getFileFromPathAsync(path: String): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromPathAsync")(path.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
+  inline def getFileFromPathAsync(path: String): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileFromPathAsync")(path.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
   
-  @scala.inline
-  def replaceWithStreamedFileAsync(
+  inline def replaceWithStreamedFileAsync(
     fileToReplace: IStorageFile,
     dataRequested: StreamedFileDataRequestedHandler,
     thumbnail: IRandomAccessStreamReference
   ): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceWithStreamedFileAsync")(fileToReplace.asInstanceOf[js.Any], dataRequested.asInstanceOf[js.Any], thumbnail.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
   
-  @scala.inline
-  def replaceWithStreamedFileFromUriAsync(fileToReplace: IStorageFile, uri: Uri, thumbnail: IRandomAccessStreamReference): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceWithStreamedFileFromUriAsync")(fileToReplace.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], thumbnail.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
+  inline def replaceWithStreamedFileFromUriAsync(fileToReplace: IStorageFile, uri: Uri, thumbnail: IRandomAccessStreamReference): IAsyncOperation[typings.winrt.Windows.Storage.StorageFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceWithStreamedFileFromUriAsync")(fileToReplace.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], thumbnail.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Storage.StorageFile]]
 }

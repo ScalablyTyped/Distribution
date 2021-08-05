@@ -12,8 +12,7 @@ trait GlobalTask
 }
 object GlobalTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -27,10 +26,8 @@ object GlobalTask {
     __obj.asInstanceOf[GlobalTask]
   }
   
-  @scala.inline
-  implicit class GlobalTaskMutableBuilder[Self <: GlobalTask] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalTask](x: Self) {
     
-    @scala.inline
-    def setResources(value: ResourceRole): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ResourceRole): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
   }
 }

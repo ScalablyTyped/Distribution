@@ -268,355 +268,239 @@ trait IRequest
 }
 object IRequest {
   
-  @scala.inline
-  def apply(): IRequest = {
+  inline def apply(): IRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRequest]
   }
   
-  @scala.inline
-  implicit class IRequestMutableBuilder[Self <: IRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setCallbackKey(value: String): Self = StObject.set(x, "callbackKey", value.asInstanceOf[js.Any])
+    inline def setCallbackKey(value: String): Self = StObject.set(x, "callbackKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
+    inline def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
     
-    @scala.inline
-    def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
+    inline def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
+    inline def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
     
-    @scala.inline
-    def setGetAction(value: () => String): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
+    inline def setGetAction(value: () => String): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActionUndefined: Self = StObject.set(x, "getAction", js.undefined)
+    inline def setGetActionUndefined: Self = StObject.set(x, "getAction", js.undefined)
     
-    @scala.inline
-    def setGetArgs(value: () => js.Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+    inline def setGetArgs(value: () => js.Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
+    inline def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
     
-    @scala.inline
-    def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
+    inline def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCallbackKey(value: () => String): Self = StObject.set(x, "getCallbackKey", js.Any.fromFunction0(value))
+    inline def setGetCallbackKey(value: () => String): Self = StObject.set(x, "getCallbackKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCallbackKeyUndefined: Self = StObject.set(x, "getCallbackKey", js.undefined)
+    inline def setGetCallbackKeyUndefined: Self = StObject.set(x, "getCallbackKey", js.undefined)
     
-    @scala.inline
-    def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
+    inline def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
     
-    @scala.inline
-    def setGetDirectFn(value: () => js.Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
+    inline def setGetDirectFn(value: () => js.Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
+    inline def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
     
-    @scala.inline
-    def setGetDisableCaching(value: () => Boolean): Self = StObject.set(x, "getDisableCaching", js.Any.fromFunction0(value))
+    inline def setGetDisableCaching(value: () => Boolean): Self = StObject.set(x, "getDisableCaching", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisableCachingUndefined: Self = StObject.set(x, "getDisableCaching", js.undefined)
+    inline def setGetDisableCachingUndefined: Self = StObject.set(x, "getDisableCaching", js.undefined)
     
-    @scala.inline
-    def setGetHeaders(value: () => js.Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
+    inline def setGetHeaders(value: () => js.Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
+    inline def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
     
-    @scala.inline
-    def setGetJsonData(value: () => js.Any): Self = StObject.set(x, "getJsonData", js.Any.fromFunction0(value))
+    inline def setGetJsonData(value: () => js.Any): Self = StObject.set(x, "getJsonData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetJsonDataUndefined: Self = StObject.set(x, "getJsonData", js.undefined)
+    inline def setGetJsonDataUndefined: Self = StObject.set(x, "getJsonData", js.undefined)
     
-    @scala.inline
-    def setGetMethod(value: () => String): Self = StObject.set(x, "getMethod", js.Any.fromFunction0(value))
+    inline def setGetMethod(value: () => String): Self = StObject.set(x, "getMethod", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
+    inline def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
     
-    @scala.inline
-    def setGetOperation(value: () => IOperation): Self = StObject.set(x, "getOperation", js.Any.fromFunction0(value))
+    inline def setGetOperation(value: () => IOperation): Self = StObject.set(x, "getOperation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOperationUndefined: Self = StObject.set(x, "getOperation", js.undefined)
+    inline def setGetOperationUndefined: Self = StObject.set(x, "getOperation", js.undefined)
     
-    @scala.inline
-    def setGetParams(value: () => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+    inline def setGetParams(value: () => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
+    inline def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
     
-    @scala.inline
-    def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
+    inline def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPasswordUndefined: Self = StObject.set(x, "getPassword", js.undefined)
+    inline def setGetPasswordUndefined: Self = StObject.set(x, "getPassword", js.undefined)
     
-    @scala.inline
-    def setGetProxy(value: () => typings.senchaTouch.Ext.data.proxy.IProxy): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
+    inline def setGetProxy(value: () => typings.senchaTouch.Ext.data.proxy.IProxy): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
+    inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
     
-    @scala.inline
-    def setGetRecords(value: () => js.Any): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
+    inline def setGetRecords(value: () => js.Any): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecordsUndefined: Self = StObject.set(x, "getRecords", js.undefined)
+    inline def setGetRecordsUndefined: Self = StObject.set(x, "getRecords", js.undefined)
     
-    @scala.inline
-    def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
+    inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
-    @scala.inline
-    def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
+    inline def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
+    inline def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
     
-    @scala.inline
-    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+    inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
+    inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
-    @scala.inline
-    def setGetUseDefaultXhrHeader(value: () => js.Any): Self = StObject.set(x, "getUseDefaultXhrHeader", js.Any.fromFunction0(value))
+    inline def setGetUseDefaultXhrHeader(value: () => js.Any): Self = StObject.set(x, "getUseDefaultXhrHeader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "getUseDefaultXhrHeader", js.undefined)
+    inline def setGetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "getUseDefaultXhrHeader", js.undefined)
     
-    @scala.inline
-    def setGetUsername(value: () => String): Self = StObject.set(x, "getUsername", js.Any.fromFunction0(value))
+    inline def setGetUsername(value: () => String): Self = StObject.set(x, "getUsername", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUsernameUndefined: Self = StObject.set(x, "getUsername", js.undefined)
+    inline def setGetUsernameUndefined: Self = StObject.set(x, "getUsername", js.undefined)
     
-    @scala.inline
-    def setGetWithCredentials(value: () => Boolean): Self = StObject.set(x, "getWithCredentials", js.Any.fromFunction0(value))
+    inline def setGetWithCredentials(value: () => Boolean): Self = StObject.set(x, "getWithCredentials", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWithCredentialsUndefined: Self = StObject.set(x, "getWithCredentials", js.undefined)
+    inline def setGetWithCredentialsUndefined: Self = StObject.set(x, "getWithCredentials", js.undefined)
     
-    @scala.inline
-    def setGetXmlData(value: () => js.Any): Self = StObject.set(x, "getXmlData", js.Any.fromFunction0(value))
+    inline def setGetXmlData(value: () => js.Any): Self = StObject.set(x, "getXmlData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetXmlDataUndefined: Self = StObject.set(x, "getXmlData", js.undefined)
+    inline def setGetXmlDataUndefined: Self = StObject.set(x, "getXmlData", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setJsonData(value: js.Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
+    inline def setJsonData(value: js.Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonDataUndefined: Self = StObject.set(x, "jsonData", js.undefined)
+    inline def setJsonDataUndefined: Self = StObject.set(x, "jsonData", js.undefined)
     
-    @scala.inline
-    def setJsonp(value: IJsonP): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    inline def setJsonp(value: IJsonP): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+    inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOperation(value: IOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: IOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setProxy(value: typings.senchaTouch.Ext.data.proxy.IProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: typings.senchaTouch.Ext.data.proxy.IProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setSetAction(value: /* action */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAction", js.Any.fromFunction1(value))
+    inline def setSetAction(value: /* action */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActionUndefined: Self = StObject.set(x, "setAction", js.undefined)
+    inline def setSetActionUndefined: Self = StObject.set(x, "setAction", js.undefined)
     
-    @scala.inline
-    def setSetArgs(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
+    inline def setSetArgs(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetArgsUndefined: Self = StObject.set(x, "setArgs", js.undefined)
+    inline def setSetArgsUndefined: Self = StObject.set(x, "setArgs", js.undefined)
     
-    @scala.inline
-    def setSetCallback(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
+    inline def setSetCallback(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCallbackKey(value: /* callbackKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCallbackKey", js.Any.fromFunction1(value))
+    inline def setSetCallbackKey(value: /* callbackKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCallbackKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCallbackKeyUndefined: Self = StObject.set(x, "setCallbackKey", js.undefined)
+    inline def setSetCallbackKeyUndefined: Self = StObject.set(x, "setCallbackKey", js.undefined)
     
-    @scala.inline
-    def setSetCallbackUndefined: Self = StObject.set(x, "setCallback", js.undefined)
+    inline def setSetCallbackUndefined: Self = StObject.set(x, "setCallback", js.undefined)
     
-    @scala.inline
-    def setSetDirectFn(value: /* directFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDirectFn", js.Any.fromFunction1(value))
+    inline def setSetDirectFn(value: /* directFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDirectFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDirectFnUndefined: Self = StObject.set(x, "setDirectFn", js.undefined)
+    inline def setSetDirectFnUndefined: Self = StObject.set(x, "setDirectFn", js.undefined)
     
-    @scala.inline
-    def setSetDisableCaching(value: /* disableCaching */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisableCaching", js.Any.fromFunction1(value))
+    inline def setSetDisableCaching(value: /* disableCaching */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisableCaching", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisableCachingUndefined: Self = StObject.set(x, "setDisableCaching", js.undefined)
+    inline def setSetDisableCachingUndefined: Self = StObject.set(x, "setDisableCaching", js.undefined)
     
-    @scala.inline
-    def setSetHeaders(value: /* headers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+    inline def setSetHeaders(value: /* headers */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
+    inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
     
-    @scala.inline
-    def setSetJsonData(value: /* jsonData */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setJsonData", js.Any.fromFunction1(value))
+    inline def setSetJsonData(value: /* jsonData */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setJsonData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetJsonDataUndefined: Self = StObject.set(x, "setJsonData", js.undefined)
+    inline def setSetJsonDataUndefined: Self = StObject.set(x, "setJsonData", js.undefined)
     
-    @scala.inline
-    def setSetMethod(value: /* method */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMethod", js.Any.fromFunction1(value))
+    inline def setSetMethod(value: /* method */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
+    inline def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
     
-    @scala.inline
-    def setSetOperation(value: /* operation */ js.UndefOr[IOperation] => Unit): Self = StObject.set(x, "setOperation", js.Any.fromFunction1(value))
+    inline def setSetOperation(value: /* operation */ js.UndefOr[IOperation] => Unit): Self = StObject.set(x, "setOperation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOperationUndefined: Self = StObject.set(x, "setOperation", js.undefined)
+    inline def setSetOperationUndefined: Self = StObject.set(x, "setOperation", js.undefined)
     
-    @scala.inline
-    def setSetParams(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
+    inline def setSetParams(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParamsUndefined: Self = StObject.set(x, "setParams", js.undefined)
+    inline def setSetParamsUndefined: Self = StObject.set(x, "setParams", js.undefined)
     
-    @scala.inline
-    def setSetPassword(value: /* password */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
+    inline def setSetPassword(value: /* password */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPasswordUndefined: Self = StObject.set(x, "setPassword", js.undefined)
+    inline def setSetPasswordUndefined: Self = StObject.set(x, "setPassword", js.undefined)
     
-    @scala.inline
-    def setSetProxy(value: /* proxy */ js.UndefOr[typings.senchaTouch.Ext.data.proxy.IProxy] => Unit): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
+    inline def setSetProxy(value: /* proxy */ js.UndefOr[typings.senchaTouch.Ext.data.proxy.IProxy] => Unit): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
+    inline def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
     
-    @scala.inline
-    def setSetRecords(value: /* records */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRecords", js.Any.fromFunction1(value))
+    inline def setSetRecords(value: /* records */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setRecords", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRecordsUndefined: Self = StObject.set(x, "setRecords", js.undefined)
+    inline def setSetRecordsUndefined: Self = StObject.set(x, "setRecords", js.undefined)
     
-    @scala.inline
-    def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+    inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
+    inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
     
-    @scala.inline
-    def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
+    inline def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
+    inline def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
     
-    @scala.inline
-    def setSetUrl(value: /* url */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: /* url */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
+    inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
-    @scala.inline
-    def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUseDefaultXhrHeader", js.Any.fromFunction1(value))
+    inline def setSetUseDefaultXhrHeader(value: /* useDefaultXhrHeader */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUseDefaultXhrHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "setUseDefaultXhrHeader", js.undefined)
+    inline def setSetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "setUseDefaultXhrHeader", js.undefined)
     
-    @scala.inline
-    def setSetUsername(value: /* username */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUsername", js.Any.fromFunction1(value))
+    inline def setSetUsername(value: /* username */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setUsername", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUsernameUndefined: Self = StObject.set(x, "setUsername", js.undefined)
+    inline def setSetUsernameUndefined: Self = StObject.set(x, "setUsername", js.undefined)
     
-    @scala.inline
-    def setSetWithCredentials(value: /* withCredentials */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setWithCredentials", js.Any.fromFunction1(value))
+    inline def setSetWithCredentials(value: /* withCredentials */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setWithCredentials", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWithCredentialsUndefined: Self = StObject.set(x, "setWithCredentials", js.undefined)
+    inline def setSetWithCredentialsUndefined: Self = StObject.set(x, "setWithCredentials", js.undefined)
     
-    @scala.inline
-    def setSetXmlData(value: /* xmlData */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setXmlData", js.Any.fromFunction1(value))
+    inline def setSetXmlData(value: /* xmlData */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setXmlData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXmlDataUndefined: Self = StObject.set(x, "setXmlData", js.undefined)
+    inline def setSetXmlDataUndefined: Self = StObject.set(x, "setXmlData", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     
-    @scala.inline
-    def setXmlData(value: js.Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
+    inline def setXmlData(value: js.Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlDataUndefined: Self = StObject.set(x, "xmlData", js.undefined)
+    inline def setXmlDataUndefined: Self = StObject.set(x, "xmlData", js.undefined)
   }
 }

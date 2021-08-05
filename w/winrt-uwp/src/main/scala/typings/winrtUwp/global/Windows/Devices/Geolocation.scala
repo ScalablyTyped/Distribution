@@ -149,8 +149,7 @@ object Geolocation {
       * @return The calculated rectangle that contains the specified set of geographic positions.
       */
     /* static member */
-    @scala.inline
-    def tryCompute(positions: IIterable[BasicGeoposition]): typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCompute")(positions.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox]
+    inline def tryCompute(positions: IIterable[BasicGeoposition]): typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCompute")(positions.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox]
     /**
       * Calculates a GeoboundingBox that contains the specified set of geographic positions and uses the specified altitude reference system.
       * @param positions A collection of geographic positions to include inside the GeoboundingBox .
@@ -158,8 +157,7 @@ object Geolocation {
       * @return The calculated rectangle that contains the specified set of geographic positions.
       */
     /* static member */
-    @scala.inline
-    def tryCompute(positions: IIterable[BasicGeoposition], altitudeRefSystem: AltitudeReferenceSystem): typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCompute")(positions.asInstanceOf[js.Any], altitudeRefSystem.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox]
+    inline def tryCompute(positions: IIterable[BasicGeoposition], altitudeRefSystem: AltitudeReferenceSystem): typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCompute")(positions.asInstanceOf[js.Any], altitudeRefSystem.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Geolocation.GeoboundingBox]
     /**
       * Calculates a GeoboundingBox that contains the specified set of geographic positions and uses the specified altitude reference system and spatial reference ID (SRID).
       * @param positions A collection of geographic positions to include inside the GeoboundingBox .
@@ -168,8 +166,7 @@ object Geolocation {
       * @return The calculated rectangle that contains the specified set of geographic positions.
       */
     /* static member */
-    @scala.inline
-    def tryCompute(
+    inline def tryCompute(
       positions: IIterable[BasicGeoposition],
       altitudeRefSystem: AltitudeReferenceSystem,
       spatialReferenceId: Double
@@ -410,8 +407,7 @@ object Geolocation {
       @JSGlobal("Windows.Devices.Geolocation.Geofencing.GeofenceMonitor.current")
       @js.native
       def current: typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitor = js.native
-      @scala.inline
-      def current_=(x: typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+      inline def current_=(x: typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
     }
     
     /** Indicates the current state of a GeofenceMonitor . */
@@ -547,8 +543,7 @@ object Geolocation {
       * @return Positions (of type Geoposition ) that were collected during the specified time span.
       */
     /* static member */
-    @scala.inline
-    def getGeopositionHistoryAsync(startTime: Date): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeopositionHistoryAsync")(startTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getGeopositionHistoryAsync(startTime: Date): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeopositionHistoryAsync")(startTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     /**
       * Starts an asynchronous operation to retrieve the location history of the device.
       * @param startTime Represents the beginning of the time span for which positions are to be returned.
@@ -556,16 +551,14 @@ object Geolocation {
       * @return Positions (of type Geoposition ) that were collected during the specified time span.
       */
     /* static member */
-    @scala.inline
-    def getGeopositionHistoryAsync(startTime: Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGeopositionHistoryAsync")(startTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getGeopositionHistoryAsync(startTime: Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGeopositionHistoryAsync")(startTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Requests permission to access location data.
       * @return A GeolocationAccessStatus that indicates if permission to location data has been granted.
       */
     /* static member */
-    @scala.inline
-    def requestAccessAsync(): IPromiseWithIAsyncOperation[GeolocationAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IPromiseWithIAsyncOperation[GeolocationAccessStatus]]
+    inline def requestAccessAsync(): IPromiseWithIAsyncOperation[GeolocationAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IPromiseWithIAsyncOperation[GeolocationAccessStatus]]
   }
   
   /** Represents an ordered series of geographic points. */

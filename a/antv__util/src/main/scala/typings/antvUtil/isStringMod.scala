@@ -10,6 +10,5 @@ object isStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(str: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  inline def default(str: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
 }

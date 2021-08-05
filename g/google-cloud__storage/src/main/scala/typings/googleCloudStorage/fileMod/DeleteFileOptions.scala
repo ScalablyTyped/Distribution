@@ -10,19 +10,15 @@ trait DeleteFileOptions extends StObject {
 }
 object DeleteFileOptions {
   
-  @scala.inline
-  def apply(): DeleteFileOptions = {
+  inline def apply(): DeleteFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFileOptions]
   }
   
-  @scala.inline
-  implicit class DeleteFileOptionsMutableBuilder[Self <: DeleteFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFileOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

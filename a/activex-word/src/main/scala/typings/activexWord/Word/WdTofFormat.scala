@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdTofFormat extends StObject
 object WdTofFormat {
   
-  @scala.inline
-  def wdTOFCentered: `3` = 3.asInstanceOf[`3`]
+  inline def wdTOFCentered: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdTOFClassic: `1` = 1.asInstanceOf[`1`]
+  inline def wdTOFClassic: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdTOFDistinctive: `2` = 2.asInstanceOf[`2`]
+  inline def wdTOFDistinctive: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdTOFFormal: `4` = 4.asInstanceOf[`4`]
+  inline def wdTOFFormal: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdTOFSimple: `5` = 5.asInstanceOf[`5`]
+  inline def wdTOFSimple: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdTOFTemplate: `0` = 0.asInstanceOf[`0`]
+  inline def wdTOFTemplate: `0` = 0.asInstanceOf[`0`]
 }

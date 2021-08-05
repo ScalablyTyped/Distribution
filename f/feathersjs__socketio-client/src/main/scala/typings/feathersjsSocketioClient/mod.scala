@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(socket: Socket): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def default(socket: Socket, options: FeathersSocketIOClientOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default(socket: Socket): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def default(socket: Socket, options: FeathersSocketIOClientOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   trait FeathersSocketIOClientOptions extends StObject {
     
@@ -22,20 +20,16 @@ object mod {
   }
   object FeathersSocketIOClientOptions {
     
-    @scala.inline
-    def apply(): FeathersSocketIOClientOptions = {
+    inline def apply(): FeathersSocketIOClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeathersSocketIOClientOptions]
     }
     
-    @scala.inline
-    implicit class FeathersSocketIOClientOptionsMutableBuilder[Self <: FeathersSocketIOClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FeathersSocketIOClientOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

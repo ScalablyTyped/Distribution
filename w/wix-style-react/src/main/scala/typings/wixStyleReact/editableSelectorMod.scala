@@ -24,23 +24,18 @@ object editableSelectorMod {
   }
   object EditableSelectorOption {
     
-    @scala.inline
-    def apply(title: String): EditableSelectorOption = {
+    inline def apply(title: String): EditableSelectorOption = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditableSelectorOption]
     }
     
-    @scala.inline
-    implicit class EditableSelectorOptionMutableBuilder[Self <: EditableSelectorOption] (val x: Self) extends AnyVal {
+    extension [Self <: EditableSelectorOption](x: Self) {
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,83 +65,58 @@ object editableSelectorMod {
   }
   object EditableSelectorProps {
     
-    @scala.inline
-    def apply(): EditableSelectorProps = {
+    inline def apply(): EditableSelectorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditableSelectorProps]
     }
     
-    @scala.inline
-    implicit class EditableSelectorPropsMutableBuilder[Self <: EditableSelectorProps] (val x: Self) extends AnyVal {
+    extension [Self <: EditableSelectorProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setEditButtonText(value: String): Self = StObject.set(x, "editButtonText", value.asInstanceOf[js.Any])
+      inline def setEditButtonText(value: String): Self = StObject.set(x, "editButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditButtonTextUndefined: Self = StObject.set(x, "editButtonText", js.undefined)
+      inline def setEditButtonTextUndefined: Self = StObject.set(x, "editButtonText", js.undefined)
       
-      @scala.inline
-      def setNewRowLabel(value: String): Self = StObject.set(x, "newRowLabel", value.asInstanceOf[js.Any])
+      inline def setNewRowLabel(value: String): Self = StObject.set(x, "newRowLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewRowLabelUndefined: Self = StObject.set(x, "newRowLabel", js.undefined)
+      inline def setNewRowLabelUndefined: Self = StObject.set(x, "newRowLabel", js.undefined)
       
-      @scala.inline
-      def setOnOptionAdded(value: /* title */ String => Unit): Self = StObject.set(x, "onOptionAdded", js.Any.fromFunction1(value))
+      inline def setOnOptionAdded(value: /* title */ String => Unit): Self = StObject.set(x, "onOptionAdded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOptionAddedUndefined: Self = StObject.set(x, "onOptionAdded", js.undefined)
+      inline def setOnOptionAddedUndefined: Self = StObject.set(x, "onOptionAdded", js.undefined)
       
-      @scala.inline
-      def setOnOptionDelete(value: /* id */ Double => Unit): Self = StObject.set(x, "onOptionDelete", js.Any.fromFunction1(value))
+      inline def setOnOptionDelete(value: /* id */ Double => Unit): Self = StObject.set(x, "onOptionDelete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOptionDeleteUndefined: Self = StObject.set(x, "onOptionDelete", js.undefined)
+      inline def setOnOptionDeleteUndefined: Self = StObject.set(x, "onOptionDelete", js.undefined)
       
-      @scala.inline
-      def setOnOptionEdit(value: (/* title */ String, /* id */ Double) => Unit): Self = StObject.set(x, "onOptionEdit", js.Any.fromFunction2(value))
+      inline def setOnOptionEdit(value: (/* title */ String, /* id */ Double) => Unit): Self = StObject.set(x, "onOptionEdit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnOptionEditUndefined: Self = StObject.set(x, "onOptionEdit", js.undefined)
+      inline def setOnOptionEditUndefined: Self = StObject.set(x, "onOptionEdit", js.undefined)
       
-      @scala.inline
-      def setOnOptionToggle(value: /* id */ Double => Unit): Self = StObject.set(x, "onOptionToggle", js.Any.fromFunction1(value))
+      inline def setOnOptionToggle(value: /* id */ Double => Unit): Self = StObject.set(x, "onOptionToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOptionToggleUndefined: Self = StObject.set(x, "onOptionToggle", js.undefined)
+      inline def setOnOptionToggleUndefined: Self = StObject.set(x, "onOptionToggle", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[EditableSelectorOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[EditableSelectorOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: EditableSelectorOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: EditableSelectorOption*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setToggleType(value: checkbox | radio): Self = StObject.set(x, "toggleType", value.asInstanceOf[js.Any])
+      inline def setToggleType(value: checkbox | radio): Self = StObject.set(x, "toggleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleTypeUndefined: Self = StObject.set(x, "toggleType", js.undefined)
+      inline def setToggleTypeUndefined: Self = StObject.set(x, "toggleType", js.undefined)
     }
   }
 }

@@ -11,19 +11,15 @@ trait PickDatepickersetDate extends StObject {
 }
 object PickDatepickersetDate {
   
-  @scala.inline
-  def apply(): PickDatepickersetDate = {
+  inline def apply(): PickDatepickersetDate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickDatepickersetDate]
   }
   
-  @scala.inline
-  implicit class PickDatepickersetDateMutableBuilder[Self <: PickDatepickersetDate] (val x: Self) extends AnyVal {
+  extension [Self <: PickDatepickersetDate](x: Self) {
     
-    @scala.inline
-    def setSetDate(value: js.Any): Self = StObject.set(x, "setDate", value.asInstanceOf[js.Any])
+    inline def setSetDate(value: js.Any): Self = StObject.set(x, "setDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDateUndefined: Self = StObject.set(x, "setDate", js.undefined)
+    inline def setSetDateUndefined: Self = StObject.set(x, "setDate", js.undefined)
   }
 }

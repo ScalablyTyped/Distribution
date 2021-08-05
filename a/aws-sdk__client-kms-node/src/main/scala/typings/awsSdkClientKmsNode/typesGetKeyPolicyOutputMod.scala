@@ -25,23 +25,18 @@ object typesGetKeyPolicyOutputMod {
   }
   object GetKeyPolicyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetKeyPolicyOutput = {
+    inline def apply($metadata: ResponseMetadata): GetKeyPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetKeyPolicyOutput]
     }
     
-    @scala.inline
-    implicit class GetKeyPolicyOutputMutableBuilder[Self <: GetKeyPolicyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetKeyPolicyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     }
   }
 }

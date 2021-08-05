@@ -19,6 +19,5 @@ class CommentAction protected ()
 }
 object CommentAction {
   
-  @scala.inline
-  def apply: ComponentClass[CommentActionProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommentAction").asInstanceOf[ComponentClass[CommentActionProps, ComponentState]]
+  inline def apply: ComponentClass[CommentActionProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommentAction").asInstanceOf[ComponentClass[CommentActionProps, ComponentState]]
 }

@@ -23,28 +23,21 @@ trait ListFailuresForLicenseConfigurationOperationsRequest extends StObject {
 }
 object ListFailuresForLicenseConfigurationOperationsRequest {
   
-  @scala.inline
-  def apply(LicenseConfigurationArn: String): ListFailuresForLicenseConfigurationOperationsRequest = {
+  inline def apply(LicenseConfigurationArn: String): ListFailuresForLicenseConfigurationOperationsRequest = {
     val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFailuresForLicenseConfigurationOperationsRequest]
   }
   
-  @scala.inline
-  implicit class ListFailuresForLicenseConfigurationOperationsRequestMutableBuilder[Self <: ListFailuresForLicenseConfigurationOperationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListFailuresForLicenseConfigurationOperationsRequest](x: Self) {
     
-    @scala.inline
-    def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: BoxInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

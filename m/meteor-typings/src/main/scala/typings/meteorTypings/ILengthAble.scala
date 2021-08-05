@@ -10,16 +10,13 @@ trait ILengthAble extends StObject {
 }
 object ILengthAble {
   
-  @scala.inline
-  def apply(length: Double): ILengthAble = {
+  inline def apply(length: Double): ILengthAble = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILengthAble]
   }
   
-  @scala.inline
-  implicit class ILengthAbleMutableBuilder[Self <: ILengthAble] (val x: Self) extends AnyVal {
+  extension [Self <: ILengthAble](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

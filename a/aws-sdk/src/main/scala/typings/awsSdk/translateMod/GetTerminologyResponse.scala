@@ -18,25 +18,19 @@ trait GetTerminologyResponse extends StObject {
 }
 object GetTerminologyResponse {
   
-  @scala.inline
-  def apply(): GetTerminologyResponse = {
+  inline def apply(): GetTerminologyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTerminologyResponse]
   }
   
-  @scala.inline
-  implicit class GetTerminologyResponseMutableBuilder[Self <: GetTerminologyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTerminologyResponse](x: Self) {
     
-    @scala.inline
-    def setTerminologyDataLocation(value: TerminologyDataLocation): Self = StObject.set(x, "TerminologyDataLocation", value.asInstanceOf[js.Any])
+    inline def setTerminologyDataLocation(value: TerminologyDataLocation): Self = StObject.set(x, "TerminologyDataLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminologyDataLocationUndefined: Self = StObject.set(x, "TerminologyDataLocation", js.undefined)
+    inline def setTerminologyDataLocationUndefined: Self = StObject.set(x, "TerminologyDataLocation", js.undefined)
     
-    @scala.inline
-    def setTerminologyProperties(value: TerminologyProperties): Self = StObject.set(x, "TerminologyProperties", value.asInstanceOf[js.Any])
+    inline def setTerminologyProperties(value: TerminologyProperties): Self = StObject.set(x, "TerminologyProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminologyPropertiesUndefined: Self = StObject.set(x, "TerminologyProperties", js.undefined)
+    inline def setTerminologyPropertiesUndefined: Self = StObject.set(x, "TerminologyProperties", js.undefined)
   }
 }

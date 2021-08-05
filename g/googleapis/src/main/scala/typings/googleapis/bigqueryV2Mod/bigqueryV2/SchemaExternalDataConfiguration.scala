@@ -100,82 +100,57 @@ trait SchemaExternalDataConfiguration extends StObject {
 }
 object SchemaExternalDataConfiguration {
   
-  @scala.inline
-  def apply(): SchemaExternalDataConfiguration = {
+  inline def apply(): SchemaExternalDataConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExternalDataConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaExternalDataConfigurationMutableBuilder[Self <: SchemaExternalDataConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExternalDataConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutodetect(value: Boolean): Self = StObject.set(x, "autodetect", value.asInstanceOf[js.Any])
+    inline def setAutodetect(value: Boolean): Self = StObject.set(x, "autodetect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutodetectUndefined: Self = StObject.set(x, "autodetect", js.undefined)
+    inline def setAutodetectUndefined: Self = StObject.set(x, "autodetect", js.undefined)
     
-    @scala.inline
-    def setBigtableOptions(value: SchemaBigtableOptions): Self = StObject.set(x, "bigtableOptions", value.asInstanceOf[js.Any])
+    inline def setBigtableOptions(value: SchemaBigtableOptions): Self = StObject.set(x, "bigtableOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigtableOptionsUndefined: Self = StObject.set(x, "bigtableOptions", js.undefined)
+    inline def setBigtableOptionsUndefined: Self = StObject.set(x, "bigtableOptions", js.undefined)
     
-    @scala.inline
-    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setCsvOptions(value: SchemaCsvOptions): Self = StObject.set(x, "csvOptions", value.asInstanceOf[js.Any])
+    inline def setCsvOptions(value: SchemaCsvOptions): Self = StObject.set(x, "csvOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvOptionsUndefined: Self = StObject.set(x, "csvOptions", js.undefined)
+    inline def setCsvOptionsUndefined: Self = StObject.set(x, "csvOptions", js.undefined)
     
-    @scala.inline
-    def setGoogleSheetsOptions(value: SchemaGoogleSheetsOptions): Self = StObject.set(x, "googleSheetsOptions", value.asInstanceOf[js.Any])
+    inline def setGoogleSheetsOptions(value: SchemaGoogleSheetsOptions): Self = StObject.set(x, "googleSheetsOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleSheetsOptionsUndefined: Self = StObject.set(x, "googleSheetsOptions", js.undefined)
+    inline def setGoogleSheetsOptionsUndefined: Self = StObject.set(x, "googleSheetsOptions", js.undefined)
     
-    @scala.inline
-    def setHivePartitioningMode(value: String): Self = StObject.set(x, "hivePartitioningMode", value.asInstanceOf[js.Any])
+    inline def setHivePartitioningMode(value: String): Self = StObject.set(x, "hivePartitioningMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHivePartitioningModeUndefined: Self = StObject.set(x, "hivePartitioningMode", js.undefined)
+    inline def setHivePartitioningModeUndefined: Self = StObject.set(x, "hivePartitioningMode", js.undefined)
     
-    @scala.inline
-    def setIgnoreUnknownValues(value: Boolean): Self = StObject.set(x, "ignoreUnknownValues", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnknownValues(value: Boolean): Self = StObject.set(x, "ignoreUnknownValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnknownValuesUndefined: Self = StObject.set(x, "ignoreUnknownValues", js.undefined)
+    inline def setIgnoreUnknownValuesUndefined: Self = StObject.set(x, "ignoreUnknownValues", js.undefined)
     
-    @scala.inline
-    def setMaxBadRecords(value: Double): Self = StObject.set(x, "maxBadRecords", value.asInstanceOf[js.Any])
+    inline def setMaxBadRecords(value: Double): Self = StObject.set(x, "maxBadRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBadRecordsUndefined: Self = StObject.set(x, "maxBadRecords", js.undefined)
+    inline def setMaxBadRecordsUndefined: Self = StObject.set(x, "maxBadRecords", js.undefined)
     
-    @scala.inline
-    def setSchema(value: SchemaTableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: SchemaTableSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setSourceFormat(value: String): Self = StObject.set(x, "sourceFormat", value.asInstanceOf[js.Any])
+    inline def setSourceFormat(value: String): Self = StObject.set(x, "sourceFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFormatUndefined: Self = StObject.set(x, "sourceFormat", js.undefined)
+    inline def setSourceFormatUndefined: Self = StObject.set(x, "sourceFormat", js.undefined)
     
-    @scala.inline
-    def setSourceUris(value: js.Array[String]): Self = StObject.set(x, "sourceUris", value.asInstanceOf[js.Any])
+    inline def setSourceUris(value: js.Array[String]): Self = StObject.set(x, "sourceUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrisUndefined: Self = StObject.set(x, "sourceUris", js.undefined)
+    inline def setSourceUrisUndefined: Self = StObject.set(x, "sourceUris", js.undefined)
     
-    @scala.inline
-    def setSourceUrisVarargs(value: String*): Self = StObject.set(x, "sourceUris", js.Array(value :_*))
+    inline def setSourceUrisVarargs(value: String*): Self = StObject.set(x, "sourceUris", js.Array(value :_*))
   }
 }

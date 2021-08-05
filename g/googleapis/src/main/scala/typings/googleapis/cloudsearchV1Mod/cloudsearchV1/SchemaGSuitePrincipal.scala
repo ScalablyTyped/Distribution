@@ -24,31 +24,23 @@ trait SchemaGSuitePrincipal extends StObject {
 }
 object SchemaGSuitePrincipal {
   
-  @scala.inline
-  def apply(): SchemaGSuitePrincipal = {
+  inline def apply(): SchemaGSuitePrincipal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGSuitePrincipal]
   }
   
-  @scala.inline
-  implicit class SchemaGSuitePrincipalMutableBuilder[Self <: SchemaGSuitePrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGSuitePrincipal](x: Self) {
     
-    @scala.inline
-    def setGsuiteDomain(value: Boolean): Self = StObject.set(x, "gsuiteDomain", value.asInstanceOf[js.Any])
+    inline def setGsuiteDomain(value: Boolean): Self = StObject.set(x, "gsuiteDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGsuiteDomainUndefined: Self = StObject.set(x, "gsuiteDomain", js.undefined)
+    inline def setGsuiteDomainUndefined: Self = StObject.set(x, "gsuiteDomain", js.undefined)
     
-    @scala.inline
-    def setGsuiteGroupEmail(value: String): Self = StObject.set(x, "gsuiteGroupEmail", value.asInstanceOf[js.Any])
+    inline def setGsuiteGroupEmail(value: String): Self = StObject.set(x, "gsuiteGroupEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGsuiteGroupEmailUndefined: Self = StObject.set(x, "gsuiteGroupEmail", js.undefined)
+    inline def setGsuiteGroupEmailUndefined: Self = StObject.set(x, "gsuiteGroupEmail", js.undefined)
     
-    @scala.inline
-    def setGsuiteUserEmail(value: String): Self = StObject.set(x, "gsuiteUserEmail", value.asInstanceOf[js.Any])
+    inline def setGsuiteUserEmail(value: String): Self = StObject.set(x, "gsuiteUserEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGsuiteUserEmailUndefined: Self = StObject.set(x, "gsuiteUserEmail", js.undefined)
+    inline def setGsuiteUserEmailUndefined: Self = StObject.set(x, "gsuiteUserEmail", js.undefined)
   }
 }

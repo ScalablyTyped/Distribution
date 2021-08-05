@@ -26,8 +26,7 @@ object strategyUtilMod {
   @js.native
   val SHOW_PARENT: /* "SHOW_PARENT" */ String = js.native
   
-  @scala.inline
-  def formatStrategyKeys(keys: js.Array[Key], strategy: CheckedStrategy, keyEntities: Record[Key, DataEntity]): js.Array[RawValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatStrategyKeys")(keys.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[js.Array[RawValueType]]
+  inline def formatStrategyKeys(keys: js.Array[Key], strategy: CheckedStrategy, keyEntities: Record[Key, DataEntity]): js.Array[RawValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatStrategyKeys")(keys.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[js.Array[RawValueType]]
   
   type CheckedStrategy = /* "SHOW_ALL" */ String
 }

@@ -15,17 +15,14 @@ trait AskQuery
 }
 object AskQuery {
   
-  @scala.inline
-  def apply(prefixes: StringDictionary[String]): AskQuery = {
+  inline def apply(prefixes: StringDictionary[String]): AskQuery = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "ASK")
     __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[AskQuery]
   }
   
-  @scala.inline
-  implicit class AskQueryMutableBuilder[Self <: AskQuery] (val x: Self) extends AnyVal {
+  extension [Self <: AskQuery](x: Self) {
     
-    @scala.inline
-    def setQueryType(value: ASK): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
+    inline def setQueryType(value: ASK): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
   }
 }

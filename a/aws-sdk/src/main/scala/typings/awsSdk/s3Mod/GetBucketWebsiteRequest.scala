@@ -18,22 +18,17 @@ trait GetBucketWebsiteRequest extends StObject {
 }
 object GetBucketWebsiteRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName): GetBucketWebsiteRequest = {
+  inline def apply(Bucket: BucketName): GetBucketWebsiteRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketWebsiteRequest]
   }
   
-  @scala.inline
-  implicit class GetBucketWebsiteRequestMutableBuilder[Self <: GetBucketWebsiteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketWebsiteRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait OpenVoucherDetailOptions2
 }
 object OpenVoucherDetailOptions2 {
   
-  @scala.inline
-  def apply(partnerId: String, serialNumber: String): OpenVoucherDetailOptions2 = {
+  inline def apply(partnerId: String, serialNumber: String): OpenVoucherDetailOptions2 = {
     val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any], serialNumber = serialNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenVoucherDetailOptions2]
   }
   
-  @scala.inline
-  implicit class OpenVoucherDetailOptions2MutableBuilder[Self <: OpenVoucherDetailOptions2] (val x: Self) extends AnyVal {
+  extension [Self <: OpenVoucherDetailOptions2](x: Self) {
     
-    @scala.inline
-    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
   }
 }

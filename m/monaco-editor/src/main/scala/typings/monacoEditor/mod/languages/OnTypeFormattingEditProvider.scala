@@ -28,8 +28,7 @@ trait OnTypeFormattingEditProvider extends StObject {
 }
 object OnTypeFormattingEditProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoFormatTriggerCharacters: js.Array[String],
     provideOnTypeFormattingEdits: (ITextModel, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): OnTypeFormattingEditProvider = {
@@ -37,17 +36,13 @@ object OnTypeFormattingEditProvider {
     __obj.asInstanceOf[OnTypeFormattingEditProvider]
   }
   
-  @scala.inline
-  implicit class OnTypeFormattingEditProviderMutableBuilder[Self <: OnTypeFormattingEditProvider] (val x: Self) extends AnyVal {
+  extension [Self <: OnTypeFormattingEditProvider](x: Self) {
     
-    @scala.inline
-    def setAutoFormatTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "autoFormatTriggerCharacters", value.asInstanceOf[js.Any])
+    inline def setAutoFormatTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "autoFormatTriggerCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "autoFormatTriggerCharacters", js.Array(value :_*))
+    inline def setAutoFormatTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "autoFormatTriggerCharacters", js.Array(value :_*))
     
-    @scala.inline
-    def setProvideOnTypeFormattingEdits(
+    inline def setProvideOnTypeFormattingEdits(
       value: (ITextModel, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
     ): Self = StObject.set(x, "provideOnTypeFormattingEdits", js.Any.fromFunction5(value))
   }

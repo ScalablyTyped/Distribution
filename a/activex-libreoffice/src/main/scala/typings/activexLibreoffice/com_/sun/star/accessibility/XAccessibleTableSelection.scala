@@ -20,8 +20,7 @@ trait XAccessibleTableSelection
 }
 object XAccessibleTableSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -34,19 +33,14 @@ object XAccessibleTableSelection {
     __obj.asInstanceOf[XAccessibleTableSelection]
   }
   
-  @scala.inline
-  implicit class XAccessibleTableSelectionMutableBuilder[Self <: XAccessibleTableSelection] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleTableSelection](x: Self) {
     
-    @scala.inline
-    def setSelectColumn(value: Double => Boolean): Self = StObject.set(x, "selectColumn", js.Any.fromFunction1(value))
+    inline def setSelectColumn(value: Double => Boolean): Self = StObject.set(x, "selectColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectRow(value: Double => Boolean): Self = StObject.set(x, "selectRow", js.Any.fromFunction1(value))
+    inline def setSelectRow(value: Double => Boolean): Self = StObject.set(x, "selectRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnselectColumn(value: Double => Boolean): Self = StObject.set(x, "unselectColumn", js.Any.fromFunction1(value))
+    inline def setUnselectColumn(value: Double => Boolean): Self = StObject.set(x, "unselectColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnselectRow(value: Double => Boolean): Self = StObject.set(x, "unselectRow", js.Any.fromFunction1(value))
+    inline def setUnselectRow(value: Double => Boolean): Self = StObject.set(x, "unselectRow", js.Any.fromFunction1(value))
   }
 }

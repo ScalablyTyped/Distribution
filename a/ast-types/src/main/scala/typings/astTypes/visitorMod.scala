@@ -1509,84 +1509,64 @@ object visitorMod {
   }
   object Visitor {
     
-    @scala.inline
-    def apply[M](): Visitor[M] = {
+    inline def apply[M](): Visitor[M] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Visitor[M]]
     }
     
-    @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor[?], M] (val x: Self & Visitor[M]) extends AnyVal {
+    extension [Self <: Visitor[?], M](x: Self & Visitor[M]) {
       
-      @scala.inline
-      def setVisitAnyTypeAnnotation(
+      inline def setVisitAnyTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[AnyTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitAnyTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitAnyTypeAnnotationUndefined: Self = StObject.set(x, "visitAnyTypeAnnotation", js.undefined)
+      inline def setVisitAnyTypeAnnotationUndefined: Self = StObject.set(x, "visitAnyTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitArrayExpression(
+      inline def setVisitArrayExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ArrayExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitArrayExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitArrayExpressionUndefined: Self = StObject.set(x, "visitArrayExpression", js.undefined)
+      inline def setVisitArrayExpressionUndefined: Self = StObject.set(x, "visitArrayExpression", js.undefined)
       
-      @scala.inline
-      def setVisitArrayPattern(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ArrayPattern, js.Any], js.Any]): Self = StObject.set(x, "visitArrayPattern", value.asInstanceOf[js.Any])
+      inline def setVisitArrayPattern(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ArrayPattern, js.Any], js.Any]): Self = StObject.set(x, "visitArrayPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitArrayPatternUndefined: Self = StObject.set(x, "visitArrayPattern", js.undefined)
+      inline def setVisitArrayPatternUndefined: Self = StObject.set(x, "visitArrayPattern", js.undefined)
       
-      @scala.inline
-      def setVisitArrayTypeAnnotation(
+      inline def setVisitArrayTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ArrayTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitArrayTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitArrayTypeAnnotationUndefined: Self = StObject.set(x, "visitArrayTypeAnnotation", js.undefined)
+      inline def setVisitArrayTypeAnnotationUndefined: Self = StObject.set(x, "visitArrayTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitArrowFunctionExpression(
+      inline def setVisitArrowFunctionExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ArrowFunctionExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitArrowFunctionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitArrowFunctionExpressionUndefined: Self = StObject.set(x, "visitArrowFunctionExpression", js.undefined)
+      inline def setVisitArrowFunctionExpressionUndefined: Self = StObject.set(x, "visitArrowFunctionExpression", js.undefined)
       
-      @scala.inline
-      def setVisitAssignmentExpression(
+      inline def setVisitAssignmentExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[AssignmentExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitAssignmentExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitAssignmentExpressionUndefined: Self = StObject.set(x, "visitAssignmentExpression", js.undefined)
+      inline def setVisitAssignmentExpressionUndefined: Self = StObject.set(x, "visitAssignmentExpression", js.undefined)
       
-      @scala.inline
-      def setVisitAssignmentPattern(
+      inline def setVisitAssignmentPattern(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[AssignmentPattern, js.Any], js.Any]
       ): Self = StObject.set(x, "visitAssignmentPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitAssignmentPatternUndefined: Self = StObject.set(x, "visitAssignmentPattern", js.undefined)
+      inline def setVisitAssignmentPatternUndefined: Self = StObject.set(x, "visitAssignmentPattern", js.undefined)
       
-      @scala.inline
-      def setVisitAwaitExpression(
+      inline def setVisitAwaitExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[AwaitExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitAwaitExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitAwaitExpressionUndefined: Self = StObject.set(x, "visitAwaitExpression", js.undefined)
+      inline def setVisitAwaitExpressionUndefined: Self = StObject.set(x, "visitAwaitExpression", js.undefined)
       
-      @scala.inline
-      def setVisitBigIntLiteral(
+      inline def setVisitBigIntLiteral(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[BigIntLiteral, js.Any], js.Any]
       ): Self = StObject.set(x, "visitBigIntLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBigIntLiteralTypeAnnotation(
+      inline def setVisitBigIntLiteralTypeAnnotation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[BigIntLiteralTypeAnnotation, js.Any], 
@@ -1594,57 +1574,43 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitBigIntLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBigIntLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitBigIntLiteralTypeAnnotation", js.undefined)
+      inline def setVisitBigIntLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitBigIntLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitBigIntLiteralUndefined: Self = StObject.set(x, "visitBigIntLiteral", js.undefined)
+      inline def setVisitBigIntLiteralUndefined: Self = StObject.set(x, "visitBigIntLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitBigIntTypeAnnotation(
+      inline def setVisitBigIntTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[BigIntTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitBigIntTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBigIntTypeAnnotationUndefined: Self = StObject.set(x, "visitBigIntTypeAnnotation", js.undefined)
+      inline def setVisitBigIntTypeAnnotationUndefined: Self = StObject.set(x, "visitBigIntTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitBinaryExpression(
+      inline def setVisitBinaryExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[BinaryExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitBinaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBinaryExpressionUndefined: Self = StObject.set(x, "visitBinaryExpression", js.undefined)
+      inline def setVisitBinaryExpressionUndefined: Self = StObject.set(x, "visitBinaryExpression", js.undefined)
       
-      @scala.inline
-      def setVisitBindExpression(
+      inline def setVisitBindExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[BindExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitBindExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBindExpressionUndefined: Self = StObject.set(x, "visitBindExpression", js.undefined)
+      inline def setVisitBindExpressionUndefined: Self = StObject.set(x, "visitBindExpression", js.undefined)
       
-      @scala.inline
-      def setVisitBlock(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Block, js.Any], js.Any]): Self = StObject.set(x, "visitBlock", value.asInstanceOf[js.Any])
+      inline def setVisitBlock(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Block, js.Any], js.Any]): Self = StObject.set(x, "visitBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBlockStatement(
+      inline def setVisitBlockStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[BlockStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitBlockStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBlockStatementUndefined: Self = StObject.set(x, "visitBlockStatement", js.undefined)
+      inline def setVisitBlockStatementUndefined: Self = StObject.set(x, "visitBlockStatement", js.undefined)
       
-      @scala.inline
-      def setVisitBlockUndefined: Self = StObject.set(x, "visitBlock", js.undefined)
+      inline def setVisitBlockUndefined: Self = StObject.set(x, "visitBlock", js.undefined)
       
-      @scala.inline
-      def setVisitBooleanLiteral(
+      inline def setVisitBooleanLiteral(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[BooleanLiteral, js.Any], js.Any]
       ): Self = StObject.set(x, "visitBooleanLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBooleanLiteralTypeAnnotation(
+      inline def setVisitBooleanLiteralTypeAnnotation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[BooleanLiteralTypeAnnotation, js.Any], 
@@ -1652,196 +1618,143 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitBooleanLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBooleanLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitBooleanLiteralTypeAnnotation", js.undefined)
+      inline def setVisitBooleanLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitBooleanLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitBooleanLiteralUndefined: Self = StObject.set(x, "visitBooleanLiteral", js.undefined)
+      inline def setVisitBooleanLiteralUndefined: Self = StObject.set(x, "visitBooleanLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitBooleanTypeAnnotation(
+      inline def setVisitBooleanTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[BooleanTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitBooleanTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBooleanTypeAnnotationUndefined: Self = StObject.set(x, "visitBooleanTypeAnnotation", js.undefined)
+      inline def setVisitBooleanTypeAnnotationUndefined: Self = StObject.set(x, "visitBooleanTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitBreakStatement(
+      inline def setVisitBreakStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[BreakStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitBreakStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitBreakStatementUndefined: Self = StObject.set(x, "visitBreakStatement", js.undefined)
+      inline def setVisitBreakStatementUndefined: Self = StObject.set(x, "visitBreakStatement", js.undefined)
       
-      @scala.inline
-      def setVisitCallExpression(
+      inline def setVisitCallExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[CallExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitCallExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitCallExpressionUndefined: Self = StObject.set(x, "visitCallExpression", js.undefined)
+      inline def setVisitCallExpressionUndefined: Self = StObject.set(x, "visitCallExpression", js.undefined)
       
-      @scala.inline
-      def setVisitCatchClause(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[CatchClause, js.Any], js.Any]): Self = StObject.set(x, "visitCatchClause", value.asInstanceOf[js.Any])
+      inline def setVisitCatchClause(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[CatchClause, js.Any], js.Any]): Self = StObject.set(x, "visitCatchClause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitCatchClauseUndefined: Self = StObject.set(x, "visitCatchClause", js.undefined)
+      inline def setVisitCatchClauseUndefined: Self = StObject.set(x, "visitCatchClause", js.undefined)
       
-      @scala.inline
-      def setVisitChainElement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ChainElement, js.Any], js.Any]): Self = StObject.set(x, "visitChainElement", value.asInstanceOf[js.Any])
+      inline def setVisitChainElement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ChainElement, js.Any], js.Any]): Self = StObject.set(x, "visitChainElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitChainElementUndefined: Self = StObject.set(x, "visitChainElement", js.undefined)
+      inline def setVisitChainElementUndefined: Self = StObject.set(x, "visitChainElement", js.undefined)
       
-      @scala.inline
-      def setVisitChainExpression(
+      inline def setVisitChainExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ChainExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitChainExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitChainExpressionUndefined: Self = StObject.set(x, "visitChainExpression", js.undefined)
+      inline def setVisitChainExpressionUndefined: Self = StObject.set(x, "visitChainExpression", js.undefined)
       
-      @scala.inline
-      def setVisitClassBody(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassBody, js.Any], js.Any]): Self = StObject.set(x, "visitClassBody", value.asInstanceOf[js.Any])
+      inline def setVisitClassBody(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassBody, js.Any], js.Any]): Self = StObject.set(x, "visitClassBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitClassBodyUndefined: Self = StObject.set(x, "visitClassBody", js.undefined)
+      inline def setVisitClassBodyUndefined: Self = StObject.set(x, "visitClassBody", js.undefined)
       
-      @scala.inline
-      def setVisitClassDeclaration(
+      inline def setVisitClassDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitClassDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitClassDeclarationUndefined: Self = StObject.set(x, "visitClassDeclaration", js.undefined)
+      inline def setVisitClassDeclarationUndefined: Self = StObject.set(x, "visitClassDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitClassExpression(
+      inline def setVisitClassExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitClassExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitClassExpressionUndefined: Self = StObject.set(x, "visitClassExpression", js.undefined)
+      inline def setVisitClassExpressionUndefined: Self = StObject.set(x, "visitClassExpression", js.undefined)
       
-      @scala.inline
-      def setVisitClassImplements(
+      inline def setVisitClassImplements(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassImplements, js.Any], js.Any]
       ): Self = StObject.set(x, "visitClassImplements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitClassImplementsUndefined: Self = StObject.set(x, "visitClassImplements", js.undefined)
+      inline def setVisitClassImplementsUndefined: Self = StObject.set(x, "visitClassImplements", js.undefined)
       
-      @scala.inline
-      def setVisitClassMethod(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassMethod, js.Any], js.Any]): Self = StObject.set(x, "visitClassMethod", value.asInstanceOf[js.Any])
+      inline def setVisitClassMethod(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassMethod, js.Any], js.Any]): Self = StObject.set(x, "visitClassMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitClassMethodUndefined: Self = StObject.set(x, "visitClassMethod", js.undefined)
+      inline def setVisitClassMethodUndefined: Self = StObject.set(x, "visitClassMethod", js.undefined)
       
-      @scala.inline
-      def setVisitClassPrivateMethod(
+      inline def setVisitClassPrivateMethod(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassPrivateMethod, js.Any], js.Any]
       ): Self = StObject.set(x, "visitClassPrivateMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitClassPrivateMethodUndefined: Self = StObject.set(x, "visitClassPrivateMethod", js.undefined)
+      inline def setVisitClassPrivateMethodUndefined: Self = StObject.set(x, "visitClassPrivateMethod", js.undefined)
       
-      @scala.inline
-      def setVisitClassPrivateProperty(
+      inline def setVisitClassPrivateProperty(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassPrivateProperty, js.Any], js.Any]
       ): Self = StObject.set(x, "visitClassPrivateProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitClassPrivatePropertyUndefined: Self = StObject.set(x, "visitClassPrivateProperty", js.undefined)
+      inline def setVisitClassPrivatePropertyUndefined: Self = StObject.set(x, "visitClassPrivateProperty", js.undefined)
       
-      @scala.inline
-      def setVisitClassProperty(
+      inline def setVisitClassProperty(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassProperty, js.Any], js.Any]
       ): Self = StObject.set(x, "visitClassProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitClassPropertyDefinition(
+      inline def setVisitClassPropertyDefinition(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ClassPropertyDefinition, js.Any], js.Any]
       ): Self = StObject.set(x, "visitClassPropertyDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitClassPropertyDefinitionUndefined: Self = StObject.set(x, "visitClassPropertyDefinition", js.undefined)
+      inline def setVisitClassPropertyDefinitionUndefined: Self = StObject.set(x, "visitClassPropertyDefinition", js.undefined)
       
-      @scala.inline
-      def setVisitClassPropertyUndefined: Self = StObject.set(x, "visitClassProperty", js.undefined)
+      inline def setVisitClassPropertyUndefined: Self = StObject.set(x, "visitClassProperty", js.undefined)
       
-      @scala.inline
-      def setVisitComment(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Comment, js.Any], js.Any]): Self = StObject.set(x, "visitComment", value.asInstanceOf[js.Any])
+      inline def setVisitComment(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Comment, js.Any], js.Any]): Self = StObject.set(x, "visitComment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitCommentBlock(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[CommentBlock, js.Any], js.Any]): Self = StObject.set(x, "visitCommentBlock", value.asInstanceOf[js.Any])
+      inline def setVisitCommentBlock(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[CommentBlock, js.Any], js.Any]): Self = StObject.set(x, "visitCommentBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitCommentBlockUndefined: Self = StObject.set(x, "visitCommentBlock", js.undefined)
+      inline def setVisitCommentBlockUndefined: Self = StObject.set(x, "visitCommentBlock", js.undefined)
       
-      @scala.inline
-      def setVisitCommentLine(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[CommentLine, js.Any], js.Any]): Self = StObject.set(x, "visitCommentLine", value.asInstanceOf[js.Any])
+      inline def setVisitCommentLine(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[CommentLine, js.Any], js.Any]): Self = StObject.set(x, "visitCommentLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitCommentLineUndefined: Self = StObject.set(x, "visitCommentLine", js.undefined)
+      inline def setVisitCommentLineUndefined: Self = StObject.set(x, "visitCommentLine", js.undefined)
       
-      @scala.inline
-      def setVisitCommentUndefined: Self = StObject.set(x, "visitComment", js.undefined)
+      inline def setVisitCommentUndefined: Self = StObject.set(x, "visitComment", js.undefined)
       
-      @scala.inline
-      def setVisitComprehensionBlock(
+      inline def setVisitComprehensionBlock(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ComprehensionBlock, js.Any], js.Any]
       ): Self = StObject.set(x, "visitComprehensionBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitComprehensionBlockUndefined: Self = StObject.set(x, "visitComprehensionBlock", js.undefined)
+      inline def setVisitComprehensionBlockUndefined: Self = StObject.set(x, "visitComprehensionBlock", js.undefined)
       
-      @scala.inline
-      def setVisitComprehensionExpression(
+      inline def setVisitComprehensionExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ComprehensionExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitComprehensionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitComprehensionExpressionUndefined: Self = StObject.set(x, "visitComprehensionExpression", js.undefined)
+      inline def setVisitComprehensionExpressionUndefined: Self = StObject.set(x, "visitComprehensionExpression", js.undefined)
       
-      @scala.inline
-      def setVisitConditionalExpression(
+      inline def setVisitConditionalExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ConditionalExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitConditionalExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitConditionalExpressionUndefined: Self = StObject.set(x, "visitConditionalExpression", js.undefined)
+      inline def setVisitConditionalExpressionUndefined: Self = StObject.set(x, "visitConditionalExpression", js.undefined)
       
-      @scala.inline
-      def setVisitContinueStatement(
+      inline def setVisitContinueStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ContinueStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitContinueStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitContinueStatementUndefined: Self = StObject.set(x, "visitContinueStatement", js.undefined)
+      inline def setVisitContinueStatementUndefined: Self = StObject.set(x, "visitContinueStatement", js.undefined)
       
-      @scala.inline
-      def setVisitDebuggerStatement(
+      inline def setVisitDebuggerStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DebuggerStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDebuggerStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDebuggerStatementUndefined: Self = StObject.set(x, "visitDebuggerStatement", js.undefined)
+      inline def setVisitDebuggerStatementUndefined: Self = StObject.set(x, "visitDebuggerStatement", js.undefined)
       
-      @scala.inline
-      def setVisitDeclaration(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Declaration, js.Any], js.Any]): Self = StObject.set(x, "visitDeclaration", value.asInstanceOf[js.Any])
+      inline def setVisitDeclaration(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Declaration, js.Any], js.Any]): Self = StObject.set(x, "visitDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclarationUndefined: Self = StObject.set(x, "visitDeclaration", js.undefined)
+      inline def setVisitDeclarationUndefined: Self = StObject.set(x, "visitDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareClass(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclareClass, js.Any], js.Any]): Self = StObject.set(x, "visitDeclareClass", value.asInstanceOf[js.Any])
+      inline def setVisitDeclareClass(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclareClass, js.Any], js.Any]): Self = StObject.set(x, "visitDeclareClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareClassUndefined: Self = StObject.set(x, "visitDeclareClass", js.undefined)
+      inline def setVisitDeclareClassUndefined: Self = StObject.set(x, "visitDeclareClass", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareExportAllDeclaration(
+      inline def setVisitDeclareExportAllDeclaration(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[DeclareExportAllDeclaration, js.Any], 
@@ -1849,11 +1762,9 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitDeclareExportAllDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareExportAllDeclarationUndefined: Self = StObject.set(x, "visitDeclareExportAllDeclaration", js.undefined)
+      inline def setVisitDeclareExportAllDeclarationUndefined: Self = StObject.set(x, "visitDeclareExportAllDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareExportDeclaration(
+      inline def setVisitDeclareExportDeclaration(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[DeclareExportDeclaration, js.Any], 
@@ -1861,237 +1772,177 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitDeclareExportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareExportDeclarationUndefined: Self = StObject.set(x, "visitDeclareExportDeclaration", js.undefined)
+      inline def setVisitDeclareExportDeclarationUndefined: Self = StObject.set(x, "visitDeclareExportDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareFunction(
+      inline def setVisitDeclareFunction(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclareFunction, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDeclareFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareFunctionUndefined: Self = StObject.set(x, "visitDeclareFunction", js.undefined)
+      inline def setVisitDeclareFunctionUndefined: Self = StObject.set(x, "visitDeclareFunction", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareInterface(
+      inline def setVisitDeclareInterface(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclareInterface, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDeclareInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareInterfaceUndefined: Self = StObject.set(x, "visitDeclareInterface", js.undefined)
+      inline def setVisitDeclareInterfaceUndefined: Self = StObject.set(x, "visitDeclareInterface", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareModule(
+      inline def setVisitDeclareModule(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclareModule, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDeclareModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareModuleExports(
+      inline def setVisitDeclareModuleExports(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclareModuleExports, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDeclareModuleExports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareModuleExportsUndefined: Self = StObject.set(x, "visitDeclareModuleExports", js.undefined)
+      inline def setVisitDeclareModuleExportsUndefined: Self = StObject.set(x, "visitDeclareModuleExports", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareModuleUndefined: Self = StObject.set(x, "visitDeclareModule", js.undefined)
+      inline def setVisitDeclareModuleUndefined: Self = StObject.set(x, "visitDeclareModule", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareOpaqueType(
+      inline def setVisitDeclareOpaqueType(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclareOpaqueType, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDeclareOpaqueType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareOpaqueTypeUndefined: Self = StObject.set(x, "visitDeclareOpaqueType", js.undefined)
+      inline def setVisitDeclareOpaqueTypeUndefined: Self = StObject.set(x, "visitDeclareOpaqueType", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareTypeAlias(
+      inline def setVisitDeclareTypeAlias(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclareTypeAlias, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDeclareTypeAlias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareTypeAliasUndefined: Self = StObject.set(x, "visitDeclareTypeAlias", js.undefined)
+      inline def setVisitDeclareTypeAliasUndefined: Self = StObject.set(x, "visitDeclareTypeAlias", js.undefined)
       
-      @scala.inline
-      def setVisitDeclareVariable(
+      inline def setVisitDeclareVariable(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclareVariable, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDeclareVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclareVariableUndefined: Self = StObject.set(x, "visitDeclareVariable", js.undefined)
+      inline def setVisitDeclareVariableUndefined: Self = StObject.set(x, "visitDeclareVariable", js.undefined)
       
-      @scala.inline
-      def setVisitDeclaredPredicate(
+      inline def setVisitDeclaredPredicate(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DeclaredPredicate, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDeclaredPredicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDeclaredPredicateUndefined: Self = StObject.set(x, "visitDeclaredPredicate", js.undefined)
+      inline def setVisitDeclaredPredicateUndefined: Self = StObject.set(x, "visitDeclaredPredicate", js.undefined)
       
-      @scala.inline
-      def setVisitDecorator(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Decorator, js.Any], js.Any]): Self = StObject.set(x, "visitDecorator", value.asInstanceOf[js.Any])
+      inline def setVisitDecorator(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Decorator, js.Any], js.Any]): Self = StObject.set(x, "visitDecorator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDecoratorUndefined: Self = StObject.set(x, "visitDecorator", js.undefined)
+      inline def setVisitDecoratorUndefined: Self = StObject.set(x, "visitDecorator", js.undefined)
       
-      @scala.inline
-      def setVisitDirective(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Directive, js.Any], js.Any]): Self = StObject.set(x, "visitDirective", value.asInstanceOf[js.Any])
+      inline def setVisitDirective(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Directive, js.Any], js.Any]): Self = StObject.set(x, "visitDirective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDirectiveLiteral(
+      inline def setVisitDirectiveLiteral(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DirectiveLiteral, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDirectiveLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDirectiveLiteralUndefined: Self = StObject.set(x, "visitDirectiveLiteral", js.undefined)
+      inline def setVisitDirectiveLiteralUndefined: Self = StObject.set(x, "visitDirectiveLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitDirectiveUndefined: Self = StObject.set(x, "visitDirective", js.undefined)
+      inline def setVisitDirectiveUndefined: Self = StObject.set(x, "visitDirective", js.undefined)
       
-      @scala.inline
-      def setVisitDoExpression(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DoExpression, js.Any], js.Any]): Self = StObject.set(x, "visitDoExpression", value.asInstanceOf[js.Any])
+      inline def setVisitDoExpression(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DoExpression, js.Any], js.Any]): Self = StObject.set(x, "visitDoExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDoExpressionUndefined: Self = StObject.set(x, "visitDoExpression", js.undefined)
+      inline def setVisitDoExpressionUndefined: Self = StObject.set(x, "visitDoExpression", js.undefined)
       
-      @scala.inline
-      def setVisitDoWhileStatement(
+      inline def setVisitDoWhileStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[DoWhileStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitDoWhileStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitDoWhileStatementUndefined: Self = StObject.set(x, "visitDoWhileStatement", js.undefined)
+      inline def setVisitDoWhileStatementUndefined: Self = StObject.set(x, "visitDoWhileStatement", js.undefined)
       
-      @scala.inline
-      def setVisitEmptyStatement(
+      inline def setVisitEmptyStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EmptyStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEmptyStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEmptyStatementUndefined: Self = StObject.set(x, "visitEmptyStatement", js.undefined)
+      inline def setVisitEmptyStatementUndefined: Self = StObject.set(x, "visitEmptyStatement", js.undefined)
       
-      @scala.inline
-      def setVisitEmptyTypeAnnotation(
+      inline def setVisitEmptyTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EmptyTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEmptyTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEmptyTypeAnnotationUndefined: Self = StObject.set(x, "visitEmptyTypeAnnotation", js.undefined)
+      inline def setVisitEmptyTypeAnnotationUndefined: Self = StObject.set(x, "visitEmptyTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitEnumBooleanBody(
+      inline def setVisitEnumBooleanBody(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EnumBooleanBody, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEnumBooleanBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEnumBooleanBodyUndefined: Self = StObject.set(x, "visitEnumBooleanBody", js.undefined)
+      inline def setVisitEnumBooleanBodyUndefined: Self = StObject.set(x, "visitEnumBooleanBody", js.undefined)
       
-      @scala.inline
-      def setVisitEnumBooleanMember(
+      inline def setVisitEnumBooleanMember(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EnumBooleanMember, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEnumBooleanMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEnumBooleanMemberUndefined: Self = StObject.set(x, "visitEnumBooleanMember", js.undefined)
+      inline def setVisitEnumBooleanMemberUndefined: Self = StObject.set(x, "visitEnumBooleanMember", js.undefined)
       
-      @scala.inline
-      def setVisitEnumDeclaration(
+      inline def setVisitEnumDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EnumDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEnumDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEnumDeclarationUndefined: Self = StObject.set(x, "visitEnumDeclaration", js.undefined)
+      inline def setVisitEnumDeclarationUndefined: Self = StObject.set(x, "visitEnumDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitEnumDefaultedMember(
+      inline def setVisitEnumDefaultedMember(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EnumDefaultedMember, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEnumDefaultedMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEnumDefaultedMemberUndefined: Self = StObject.set(x, "visitEnumDefaultedMember", js.undefined)
+      inline def setVisitEnumDefaultedMemberUndefined: Self = StObject.set(x, "visitEnumDefaultedMember", js.undefined)
       
-      @scala.inline
-      def setVisitEnumNumberBody(
+      inline def setVisitEnumNumberBody(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EnumNumberBody, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEnumNumberBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEnumNumberBodyUndefined: Self = StObject.set(x, "visitEnumNumberBody", js.undefined)
+      inline def setVisitEnumNumberBodyUndefined: Self = StObject.set(x, "visitEnumNumberBody", js.undefined)
       
-      @scala.inline
-      def setVisitEnumNumberMember(
+      inline def setVisitEnumNumberMember(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EnumNumberMember, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEnumNumberMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEnumNumberMemberUndefined: Self = StObject.set(x, "visitEnumNumberMember", js.undefined)
+      inline def setVisitEnumNumberMemberUndefined: Self = StObject.set(x, "visitEnumNumberMember", js.undefined)
       
-      @scala.inline
-      def setVisitEnumStringBody(
+      inline def setVisitEnumStringBody(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EnumStringBody, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEnumStringBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEnumStringBodyUndefined: Self = StObject.set(x, "visitEnumStringBody", js.undefined)
+      inline def setVisitEnumStringBodyUndefined: Self = StObject.set(x, "visitEnumStringBody", js.undefined)
       
-      @scala.inline
-      def setVisitEnumStringMember(
+      inline def setVisitEnumStringMember(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EnumStringMember, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEnumStringMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEnumStringMemberUndefined: Self = StObject.set(x, "visitEnumStringMember", js.undefined)
+      inline def setVisitEnumStringMemberUndefined: Self = StObject.set(x, "visitEnumStringMember", js.undefined)
       
-      @scala.inline
-      def setVisitEnumSymbolBody(
+      inline def setVisitEnumSymbolBody(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[EnumSymbolBody, js.Any], js.Any]
       ): Self = StObject.set(x, "visitEnumSymbolBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitEnumSymbolBodyUndefined: Self = StObject.set(x, "visitEnumSymbolBody", js.undefined)
+      inline def setVisitEnumSymbolBodyUndefined: Self = StObject.set(x, "visitEnumSymbolBody", js.undefined)
       
-      @scala.inline
-      def setVisitExistentialTypeParam(
+      inline def setVisitExistentialTypeParam(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ExistentialTypeParam, js.Any], js.Any]
       ): Self = StObject.set(x, "visitExistentialTypeParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExistentialTypeParamUndefined: Self = StObject.set(x, "visitExistentialTypeParam", js.undefined)
+      inline def setVisitExistentialTypeParamUndefined: Self = StObject.set(x, "visitExistentialTypeParam", js.undefined)
       
-      @scala.inline
-      def setVisitExistsTypeAnnotation(
+      inline def setVisitExistsTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ExistsTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitExistsTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExistsTypeAnnotationUndefined: Self = StObject.set(x, "visitExistsTypeAnnotation", js.undefined)
+      inline def setVisitExistsTypeAnnotationUndefined: Self = StObject.set(x, "visitExistsTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitExportAllDeclaration(
+      inline def setVisitExportAllDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ExportAllDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitExportAllDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExportAllDeclarationUndefined: Self = StObject.set(x, "visitExportAllDeclaration", js.undefined)
+      inline def setVisitExportAllDeclarationUndefined: Self = StObject.set(x, "visitExportAllDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitExportBatchSpecifier(
+      inline def setVisitExportBatchSpecifier(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ExportBatchSpecifier, js.Any], js.Any]
       ): Self = StObject.set(x, "visitExportBatchSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExportBatchSpecifierUndefined: Self = StObject.set(x, "visitExportBatchSpecifier", js.undefined)
+      inline def setVisitExportBatchSpecifierUndefined: Self = StObject.set(x, "visitExportBatchSpecifier", js.undefined)
       
-      @scala.inline
-      def setVisitExportDeclaration(
+      inline def setVisitExportDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ExportDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitExportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExportDeclarationUndefined: Self = StObject.set(x, "visitExportDeclaration", js.undefined)
+      inline def setVisitExportDeclarationUndefined: Self = StObject.set(x, "visitExportDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitExportDefaultDeclaration(
+      inline def setVisitExportDefaultDeclaration(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[ExportDefaultDeclaration, js.Any], 
@@ -2099,27 +1950,21 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitExportDefaultDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExportDefaultDeclarationUndefined: Self = StObject.set(x, "visitExportDefaultDeclaration", js.undefined)
+      inline def setVisitExportDefaultDeclarationUndefined: Self = StObject.set(x, "visitExportDefaultDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitExportDefaultSpecifier(
+      inline def setVisitExportDefaultSpecifier(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ExportDefaultSpecifier, js.Any], js.Any]
       ): Self = StObject.set(x, "visitExportDefaultSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExportDefaultSpecifierUndefined: Self = StObject.set(x, "visitExportDefaultSpecifier", js.undefined)
+      inline def setVisitExportDefaultSpecifierUndefined: Self = StObject.set(x, "visitExportDefaultSpecifier", js.undefined)
       
-      @scala.inline
-      def setVisitExportNamedDeclaration(
+      inline def setVisitExportNamedDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ExportNamedDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitExportNamedDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExportNamedDeclarationUndefined: Self = StObject.set(x, "visitExportNamedDeclaration", js.undefined)
+      inline def setVisitExportNamedDeclarationUndefined: Self = StObject.set(x, "visitExportNamedDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitExportNamespaceSpecifier(
+      inline def setVisitExportNamespaceSpecifier(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[ExportNamespaceSpecifier, js.Any], 
@@ -2127,182 +1972,133 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitExportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExportNamespaceSpecifierUndefined: Self = StObject.set(x, "visitExportNamespaceSpecifier", js.undefined)
+      inline def setVisitExportNamespaceSpecifierUndefined: Self = StObject.set(x, "visitExportNamespaceSpecifier", js.undefined)
       
-      @scala.inline
-      def setVisitExportSpecifier(
+      inline def setVisitExportSpecifier(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ExportSpecifier, js.Any], js.Any]
       ): Self = StObject.set(x, "visitExportSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExportSpecifierUndefined: Self = StObject.set(x, "visitExportSpecifier", js.undefined)
+      inline def setVisitExportSpecifierUndefined: Self = StObject.set(x, "visitExportSpecifier", js.undefined)
       
-      @scala.inline
-      def setVisitExpression(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Expression, js.Any], js.Any]): Self = StObject.set(x, "visitExpression", value.asInstanceOf[js.Any])
+      inline def setVisitExpression(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Expression, js.Any], js.Any]): Self = StObject.set(x, "visitExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExpressionStatement(
+      inline def setVisitExpressionStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ExpressionStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitExpressionStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitExpressionStatementUndefined: Self = StObject.set(x, "visitExpressionStatement", js.undefined)
+      inline def setVisitExpressionStatementUndefined: Self = StObject.set(x, "visitExpressionStatement", js.undefined)
       
-      @scala.inline
-      def setVisitExpressionUndefined: Self = StObject.set(x, "visitExpression", js.undefined)
+      inline def setVisitExpressionUndefined: Self = StObject.set(x, "visitExpression", js.undefined)
       
-      @scala.inline
-      def setVisitFile(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[File, js.Any], js.Any]): Self = StObject.set(x, "visitFile", value.asInstanceOf[js.Any])
+      inline def setVisitFile(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[File, js.Any], js.Any]): Self = StObject.set(x, "visitFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitFileUndefined: Self = StObject.set(x, "visitFile", js.undefined)
+      inline def setVisitFileUndefined: Self = StObject.set(x, "visitFile", js.undefined)
       
-      @scala.inline
-      def setVisitFlow(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Flow, js.Any], js.Any]): Self = StObject.set(x, "visitFlow", value.asInstanceOf[js.Any])
+      inline def setVisitFlow(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Flow, js.Any], js.Any]): Self = StObject.set(x, "visitFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitFlowPredicate(
+      inline def setVisitFlowPredicate(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[FlowPredicate, js.Any], js.Any]
       ): Self = StObject.set(x, "visitFlowPredicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitFlowPredicateUndefined: Self = StObject.set(x, "visitFlowPredicate", js.undefined)
+      inline def setVisitFlowPredicateUndefined: Self = StObject.set(x, "visitFlowPredicate", js.undefined)
       
-      @scala.inline
-      def setVisitFlowType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[FlowType, js.Any], js.Any]): Self = StObject.set(x, "visitFlowType", value.asInstanceOf[js.Any])
+      inline def setVisitFlowType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[FlowType, js.Any], js.Any]): Self = StObject.set(x, "visitFlowType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitFlowTypeUndefined: Self = StObject.set(x, "visitFlowType", js.undefined)
+      inline def setVisitFlowTypeUndefined: Self = StObject.set(x, "visitFlowType", js.undefined)
       
-      @scala.inline
-      def setVisitFlowUndefined: Self = StObject.set(x, "visitFlow", js.undefined)
+      inline def setVisitFlowUndefined: Self = StObject.set(x, "visitFlow", js.undefined)
       
-      @scala.inline
-      def setVisitForAwaitStatement(
+      inline def setVisitForAwaitStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ForAwaitStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitForAwaitStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitForAwaitStatementUndefined: Self = StObject.set(x, "visitForAwaitStatement", js.undefined)
+      inline def setVisitForAwaitStatementUndefined: Self = StObject.set(x, "visitForAwaitStatement", js.undefined)
       
-      @scala.inline
-      def setVisitForInStatement(
+      inline def setVisitForInStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ForInStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitForInStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitForInStatementUndefined: Self = StObject.set(x, "visitForInStatement", js.undefined)
+      inline def setVisitForInStatementUndefined: Self = StObject.set(x, "visitForInStatement", js.undefined)
       
-      @scala.inline
-      def setVisitForOfStatement(
+      inline def setVisitForOfStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ForOfStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitForOfStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitForOfStatementUndefined: Self = StObject.set(x, "visitForOfStatement", js.undefined)
+      inline def setVisitForOfStatementUndefined: Self = StObject.set(x, "visitForOfStatement", js.undefined)
       
-      @scala.inline
-      def setVisitForStatement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ForStatement, js.Any], js.Any]): Self = StObject.set(x, "visitForStatement", value.asInstanceOf[js.Any])
+      inline def setVisitForStatement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ForStatement, js.Any], js.Any]): Self = StObject.set(x, "visitForStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitForStatementUndefined: Self = StObject.set(x, "visitForStatement", js.undefined)
+      inline def setVisitForStatementUndefined: Self = StObject.set(x, "visitForStatement", js.undefined)
       
-      @scala.inline
-      def setVisitFunction(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Function, js.Any], js.Any]): Self = StObject.set(x, "visitFunction", value.asInstanceOf[js.Any])
+      inline def setVisitFunction(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Function, js.Any], js.Any]): Self = StObject.set(x, "visitFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitFunctionDeclaration(
+      inline def setVisitFunctionDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[FunctionDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitFunctionDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitFunctionDeclarationUndefined: Self = StObject.set(x, "visitFunctionDeclaration", js.undefined)
+      inline def setVisitFunctionDeclarationUndefined: Self = StObject.set(x, "visitFunctionDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitFunctionExpression(
+      inline def setVisitFunctionExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[FunctionExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitFunctionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitFunctionExpressionUndefined: Self = StObject.set(x, "visitFunctionExpression", js.undefined)
+      inline def setVisitFunctionExpressionUndefined: Self = StObject.set(x, "visitFunctionExpression", js.undefined)
       
-      @scala.inline
-      def setVisitFunctionTypeAnnotation(
+      inline def setVisitFunctionTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[FunctionTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitFunctionTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitFunctionTypeAnnotationUndefined: Self = StObject.set(x, "visitFunctionTypeAnnotation", js.undefined)
+      inline def setVisitFunctionTypeAnnotationUndefined: Self = StObject.set(x, "visitFunctionTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitFunctionTypeParam(
+      inline def setVisitFunctionTypeParam(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[FunctionTypeParam, js.Any], js.Any]
       ): Self = StObject.set(x, "visitFunctionTypeParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitFunctionTypeParamUndefined: Self = StObject.set(x, "visitFunctionTypeParam", js.undefined)
+      inline def setVisitFunctionTypeParamUndefined: Self = StObject.set(x, "visitFunctionTypeParam", js.undefined)
       
-      @scala.inline
-      def setVisitFunctionUndefined: Self = StObject.set(x, "visitFunction", js.undefined)
+      inline def setVisitFunctionUndefined: Self = StObject.set(x, "visitFunction", js.undefined)
       
-      @scala.inline
-      def setVisitGeneratorExpression(
+      inline def setVisitGeneratorExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[GeneratorExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitGeneratorExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitGeneratorExpressionUndefined: Self = StObject.set(x, "visitGeneratorExpression", js.undefined)
+      inline def setVisitGeneratorExpressionUndefined: Self = StObject.set(x, "visitGeneratorExpression", js.undefined)
       
-      @scala.inline
-      def setVisitGenericTypeAnnotation(
+      inline def setVisitGenericTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[GenericTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitGenericTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitGenericTypeAnnotationUndefined: Self = StObject.set(x, "visitGenericTypeAnnotation", js.undefined)
+      inline def setVisitGenericTypeAnnotationUndefined: Self = StObject.set(x, "visitGenericTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitIdentifier(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Identifier, js.Any], js.Any]): Self = StObject.set(x, "visitIdentifier", value.asInstanceOf[js.Any])
+      inline def setVisitIdentifier(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Identifier, js.Any], js.Any]): Self = StObject.set(x, "visitIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitIdentifierUndefined: Self = StObject.set(x, "visitIdentifier", js.undefined)
+      inline def setVisitIdentifierUndefined: Self = StObject.set(x, "visitIdentifier", js.undefined)
       
-      @scala.inline
-      def setVisitIfStatement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[IfStatement, js.Any], js.Any]): Self = StObject.set(x, "visitIfStatement", value.asInstanceOf[js.Any])
+      inline def setVisitIfStatement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[IfStatement, js.Any], js.Any]): Self = StObject.set(x, "visitIfStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitIfStatementUndefined: Self = StObject.set(x, "visitIfStatement", js.undefined)
+      inline def setVisitIfStatementUndefined: Self = StObject.set(x, "visitIfStatement", js.undefined)
       
-      @scala.inline
-      def setVisitImport(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Import, js.Any], js.Any]): Self = StObject.set(x, "visitImport", value.asInstanceOf[js.Any])
+      inline def setVisitImport(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Import, js.Any], js.Any]): Self = StObject.set(x, "visitImport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitImportDeclaration(
+      inline def setVisitImportDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ImportDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitImportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitImportDeclarationUndefined: Self = StObject.set(x, "visitImportDeclaration", js.undefined)
+      inline def setVisitImportDeclarationUndefined: Self = StObject.set(x, "visitImportDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitImportDefaultSpecifier(
+      inline def setVisitImportDefaultSpecifier(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ImportDefaultSpecifier, js.Any], js.Any]
       ): Self = StObject.set(x, "visitImportDefaultSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitImportDefaultSpecifierUndefined: Self = StObject.set(x, "visitImportDefaultSpecifier", js.undefined)
+      inline def setVisitImportDefaultSpecifierUndefined: Self = StObject.set(x, "visitImportDefaultSpecifier", js.undefined)
       
-      @scala.inline
-      def setVisitImportExpression(
+      inline def setVisitImportExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ImportExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitImportExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitImportExpressionUndefined: Self = StObject.set(x, "visitImportExpression", js.undefined)
+      inline def setVisitImportExpressionUndefined: Self = StObject.set(x, "visitImportExpression", js.undefined)
       
-      @scala.inline
-      def setVisitImportNamespaceSpecifier(
+      inline def setVisitImportNamespaceSpecifier(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[ImportNamespaceSpecifier, js.Any], 
@@ -2310,62 +2106,47 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitImportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitImportNamespaceSpecifierUndefined: Self = StObject.set(x, "visitImportNamespaceSpecifier", js.undefined)
+      inline def setVisitImportNamespaceSpecifierUndefined: Self = StObject.set(x, "visitImportNamespaceSpecifier", js.undefined)
       
-      @scala.inline
-      def setVisitImportSpecifier(
+      inline def setVisitImportSpecifier(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ImportSpecifier, js.Any], js.Any]
       ): Self = StObject.set(x, "visitImportSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitImportSpecifierUndefined: Self = StObject.set(x, "visitImportSpecifier", js.undefined)
+      inline def setVisitImportSpecifierUndefined: Self = StObject.set(x, "visitImportSpecifier", js.undefined)
       
-      @scala.inline
-      def setVisitImportUndefined: Self = StObject.set(x, "visitImport", js.undefined)
+      inline def setVisitImportUndefined: Self = StObject.set(x, "visitImport", js.undefined)
       
-      @scala.inline
-      def setVisitInferredPredicate(
+      inline def setVisitInferredPredicate(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[InferredPredicate, js.Any], js.Any]
       ): Self = StObject.set(x, "visitInferredPredicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitInferredPredicateUndefined: Self = StObject.set(x, "visitInferredPredicate", js.undefined)
+      inline def setVisitInferredPredicateUndefined: Self = StObject.set(x, "visitInferredPredicate", js.undefined)
       
-      @scala.inline
-      def setVisitInterfaceDeclaration(
+      inline def setVisitInterfaceDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[InterfaceDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitInterfaceDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitInterfaceDeclarationUndefined: Self = StObject.set(x, "visitInterfaceDeclaration", js.undefined)
+      inline def setVisitInterfaceDeclarationUndefined: Self = StObject.set(x, "visitInterfaceDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitInterfaceExtends(
+      inline def setVisitInterfaceExtends(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[InterfaceExtends, js.Any], js.Any]
       ): Self = StObject.set(x, "visitInterfaceExtends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitInterfaceExtendsUndefined: Self = StObject.set(x, "visitInterfaceExtends", js.undefined)
+      inline def setVisitInterfaceExtendsUndefined: Self = StObject.set(x, "visitInterfaceExtends", js.undefined)
       
-      @scala.inline
-      def setVisitInterfaceTypeAnnotation(
+      inline def setVisitInterfaceTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[InterfaceTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitInterfaceTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitInterfaceTypeAnnotationUndefined: Self = StObject.set(x, "visitInterfaceTypeAnnotation", js.undefined)
+      inline def setVisitInterfaceTypeAnnotationUndefined: Self = StObject.set(x, "visitInterfaceTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitInterpreterDirective(
+      inline def setVisitInterpreterDirective(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[InterpreterDirective, js.Any], js.Any]
       ): Self = StObject.set(x, "visitInterpreterDirective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitInterpreterDirectiveUndefined: Self = StObject.set(x, "visitInterpreterDirective", js.undefined)
+      inline def setVisitInterpreterDirectiveUndefined: Self = StObject.set(x, "visitInterpreterDirective", js.undefined)
       
-      @scala.inline
-      def setVisitIntersectionTypeAnnotation(
+      inline def setVisitIntersectionTypeAnnotation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[IntersectionTypeAnnotation, js.Any], 
@@ -2373,220 +2154,161 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitIntersectionTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitIntersectionTypeAnnotationUndefined: Self = StObject.set(x, "visitIntersectionTypeAnnotation", js.undefined)
+      inline def setVisitIntersectionTypeAnnotationUndefined: Self = StObject.set(x, "visitIntersectionTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitJSXAttribute(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXAttribute, js.Any], js.Any]): Self = StObject.set(x, "visitJSXAttribute", value.asInstanceOf[js.Any])
+      inline def setVisitJSXAttribute(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXAttribute, js.Any], js.Any]): Self = StObject.set(x, "visitJSXAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXAttributeUndefined: Self = StObject.set(x, "visitJSXAttribute", js.undefined)
+      inline def setVisitJSXAttributeUndefined: Self = StObject.set(x, "visitJSXAttribute", js.undefined)
       
-      @scala.inline
-      def setVisitJSXClosingElement(
+      inline def setVisitJSXClosingElement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXClosingElement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXClosingElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXClosingElementUndefined: Self = StObject.set(x, "visitJSXClosingElement", js.undefined)
+      inline def setVisitJSXClosingElementUndefined: Self = StObject.set(x, "visitJSXClosingElement", js.undefined)
       
-      @scala.inline
-      def setVisitJSXClosingFragment(
+      inline def setVisitJSXClosingFragment(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXClosingFragment, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXClosingFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXClosingFragmentUndefined: Self = StObject.set(x, "visitJSXClosingFragment", js.undefined)
+      inline def setVisitJSXClosingFragmentUndefined: Self = StObject.set(x, "visitJSXClosingFragment", js.undefined)
       
-      @scala.inline
-      def setVisitJSXElement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXElement, js.Any], js.Any]): Self = StObject.set(x, "visitJSXElement", value.asInstanceOf[js.Any])
+      inline def setVisitJSXElement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXElement, js.Any], js.Any]): Self = StObject.set(x, "visitJSXElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXElementUndefined: Self = StObject.set(x, "visitJSXElement", js.undefined)
+      inline def setVisitJSXElementUndefined: Self = StObject.set(x, "visitJSXElement", js.undefined)
       
-      @scala.inline
-      def setVisitJSXEmptyExpression(
+      inline def setVisitJSXEmptyExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXEmptyExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXEmptyExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXEmptyExpressionUndefined: Self = StObject.set(x, "visitJSXEmptyExpression", js.undefined)
+      inline def setVisitJSXEmptyExpressionUndefined: Self = StObject.set(x, "visitJSXEmptyExpression", js.undefined)
       
-      @scala.inline
-      def setVisitJSXExpressionContainer(
+      inline def setVisitJSXExpressionContainer(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXExpressionContainer, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXExpressionContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXExpressionContainerUndefined: Self = StObject.set(x, "visitJSXExpressionContainer", js.undefined)
+      inline def setVisitJSXExpressionContainerUndefined: Self = StObject.set(x, "visitJSXExpressionContainer", js.undefined)
       
-      @scala.inline
-      def setVisitJSXFragment(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXFragment, js.Any], js.Any]): Self = StObject.set(x, "visitJSXFragment", value.asInstanceOf[js.Any])
+      inline def setVisitJSXFragment(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXFragment, js.Any], js.Any]): Self = StObject.set(x, "visitJSXFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXFragmentUndefined: Self = StObject.set(x, "visitJSXFragment", js.undefined)
+      inline def setVisitJSXFragmentUndefined: Self = StObject.set(x, "visitJSXFragment", js.undefined)
       
-      @scala.inline
-      def setVisitJSXIdentifier(
+      inline def setVisitJSXIdentifier(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXIdentifier, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXIdentifierUndefined: Self = StObject.set(x, "visitJSXIdentifier", js.undefined)
+      inline def setVisitJSXIdentifierUndefined: Self = StObject.set(x, "visitJSXIdentifier", js.undefined)
       
-      @scala.inline
-      def setVisitJSXMemberExpression(
+      inline def setVisitJSXMemberExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXMemberExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXMemberExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXMemberExpressionUndefined: Self = StObject.set(x, "visitJSXMemberExpression", js.undefined)
+      inline def setVisitJSXMemberExpressionUndefined: Self = StObject.set(x, "visitJSXMemberExpression", js.undefined)
       
-      @scala.inline
-      def setVisitJSXNamespacedName(
+      inline def setVisitJSXNamespacedName(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXNamespacedName, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXNamespacedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXNamespacedNameUndefined: Self = StObject.set(x, "visitJSXNamespacedName", js.undefined)
+      inline def setVisitJSXNamespacedNameUndefined: Self = StObject.set(x, "visitJSXNamespacedName", js.undefined)
       
-      @scala.inline
-      def setVisitJSXOpeningElement(
+      inline def setVisitJSXOpeningElement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXOpeningElement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXOpeningElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXOpeningElementUndefined: Self = StObject.set(x, "visitJSXOpeningElement", js.undefined)
+      inline def setVisitJSXOpeningElementUndefined: Self = StObject.set(x, "visitJSXOpeningElement", js.undefined)
       
-      @scala.inline
-      def setVisitJSXOpeningFragment(
+      inline def setVisitJSXOpeningFragment(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXOpeningFragment, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXOpeningFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXOpeningFragmentUndefined: Self = StObject.set(x, "visitJSXOpeningFragment", js.undefined)
+      inline def setVisitJSXOpeningFragmentUndefined: Self = StObject.set(x, "visitJSXOpeningFragment", js.undefined)
       
-      @scala.inline
-      def setVisitJSXSpreadAttribute(
+      inline def setVisitJSXSpreadAttribute(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXSpreadAttribute, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXSpreadAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXSpreadAttributeUndefined: Self = StObject.set(x, "visitJSXSpreadAttribute", js.undefined)
+      inline def setVisitJSXSpreadAttributeUndefined: Self = StObject.set(x, "visitJSXSpreadAttribute", js.undefined)
       
-      @scala.inline
-      def setVisitJSXSpreadChild(
+      inline def setVisitJSXSpreadChild(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXSpreadChild, js.Any], js.Any]
       ): Self = StObject.set(x, "visitJSXSpreadChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXSpreadChildUndefined: Self = StObject.set(x, "visitJSXSpreadChild", js.undefined)
+      inline def setVisitJSXSpreadChildUndefined: Self = StObject.set(x, "visitJSXSpreadChild", js.undefined)
       
-      @scala.inline
-      def setVisitJSXText(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXText, js.Any], js.Any]): Self = StObject.set(x, "visitJSXText", value.asInstanceOf[js.Any])
+      inline def setVisitJSXText(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[JSXText, js.Any], js.Any]): Self = StObject.set(x, "visitJSXText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitJSXTextUndefined: Self = StObject.set(x, "visitJSXText", js.undefined)
+      inline def setVisitJSXTextUndefined: Self = StObject.set(x, "visitJSXText", js.undefined)
       
-      @scala.inline
-      def setVisitLabeledStatement(
+      inline def setVisitLabeledStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[LabeledStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitLabeledStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitLabeledStatementUndefined: Self = StObject.set(x, "visitLabeledStatement", js.undefined)
+      inline def setVisitLabeledStatementUndefined: Self = StObject.set(x, "visitLabeledStatement", js.undefined)
       
-      @scala.inline
-      def setVisitLine(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Line, js.Any], js.Any]): Self = StObject.set(x, "visitLine", value.asInstanceOf[js.Any])
+      inline def setVisitLine(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Line, js.Any], js.Any]): Self = StObject.set(x, "visitLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitLineUndefined: Self = StObject.set(x, "visitLine", js.undefined)
+      inline def setVisitLineUndefined: Self = StObject.set(x, "visitLine", js.undefined)
       
-      @scala.inline
-      def setVisitLiteral(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Literal, js.Any], js.Any]): Self = StObject.set(x, "visitLiteral", value.asInstanceOf[js.Any])
+      inline def setVisitLiteral(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Literal, js.Any], js.Any]): Self = StObject.set(x, "visitLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitLiteralUndefined: Self = StObject.set(x, "visitLiteral", js.undefined)
+      inline def setVisitLiteralUndefined: Self = StObject.set(x, "visitLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitLogicalExpression(
+      inline def setVisitLogicalExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[LogicalExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitLogicalExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitLogicalExpressionUndefined: Self = StObject.set(x, "visitLogicalExpression", js.undefined)
+      inline def setVisitLogicalExpressionUndefined: Self = StObject.set(x, "visitLogicalExpression", js.undefined)
       
-      @scala.inline
-      def setVisitMemberExpression(
+      inline def setVisitMemberExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[MemberExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitMemberExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitMemberExpressionUndefined: Self = StObject.set(x, "visitMemberExpression", js.undefined)
+      inline def setVisitMemberExpressionUndefined: Self = StObject.set(x, "visitMemberExpression", js.undefined)
       
-      @scala.inline
-      def setVisitMemberTypeAnnotation(
+      inline def setVisitMemberTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[MemberTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitMemberTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitMemberTypeAnnotationUndefined: Self = StObject.set(x, "visitMemberTypeAnnotation", js.undefined)
+      inline def setVisitMemberTypeAnnotationUndefined: Self = StObject.set(x, "visitMemberTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitMetaProperty(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[MetaProperty, js.Any], js.Any]): Self = StObject.set(x, "visitMetaProperty", value.asInstanceOf[js.Any])
+      inline def setVisitMetaProperty(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[MetaProperty, js.Any], js.Any]): Self = StObject.set(x, "visitMetaProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitMetaPropertyUndefined: Self = StObject.set(x, "visitMetaProperty", js.undefined)
+      inline def setVisitMetaPropertyUndefined: Self = StObject.set(x, "visitMetaProperty", js.undefined)
       
-      @scala.inline
-      def setVisitMethodDefinition(
+      inline def setVisitMethodDefinition(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[MethodDefinition, js.Any], js.Any]
       ): Self = StObject.set(x, "visitMethodDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitMethodDefinitionUndefined: Self = StObject.set(x, "visitMethodDefinition", js.undefined)
+      inline def setVisitMethodDefinitionUndefined: Self = StObject.set(x, "visitMethodDefinition", js.undefined)
       
-      @scala.inline
-      def setVisitMixedTypeAnnotation(
+      inline def setVisitMixedTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[MixedTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitMixedTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitMixedTypeAnnotationUndefined: Self = StObject.set(x, "visitMixedTypeAnnotation", js.undefined)
+      inline def setVisitMixedTypeAnnotationUndefined: Self = StObject.set(x, "visitMixedTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitModuleSpecifier(
+      inline def setVisitModuleSpecifier(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ModuleSpecifier, js.Any], js.Any]
       ): Self = StObject.set(x, "visitModuleSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitModuleSpecifierUndefined: Self = StObject.set(x, "visitModuleSpecifier", js.undefined)
+      inline def setVisitModuleSpecifierUndefined: Self = StObject.set(x, "visitModuleSpecifier", js.undefined)
       
-      @scala.inline
-      def setVisitNewExpression(
+      inline def setVisitNewExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[NewExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitNewExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNewExpressionUndefined: Self = StObject.set(x, "visitNewExpression", js.undefined)
+      inline def setVisitNewExpressionUndefined: Self = StObject.set(x, "visitNewExpression", js.undefined)
       
-      @scala.inline
-      def setVisitNode(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Node, js.Any], js.Any]): Self = StObject.set(x, "visitNode", value.asInstanceOf[js.Any])
+      inline def setVisitNode(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Node, js.Any], js.Any]): Self = StObject.set(x, "visitNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNodeUndefined: Self = StObject.set(x, "visitNode", js.undefined)
+      inline def setVisitNodeUndefined: Self = StObject.set(x, "visitNode", js.undefined)
       
-      @scala.inline
-      def setVisitNoop(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Noop, js.Any], js.Any]): Self = StObject.set(x, "visitNoop", value.asInstanceOf[js.Any])
+      inline def setVisitNoop(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Noop, js.Any], js.Any]): Self = StObject.set(x, "visitNoop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNoopUndefined: Self = StObject.set(x, "visitNoop", js.undefined)
+      inline def setVisitNoopUndefined: Self = StObject.set(x, "visitNoop", js.undefined)
       
-      @scala.inline
-      def setVisitNullLiteral(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[NullLiteral, js.Any], js.Any]): Self = StObject.set(x, "visitNullLiteral", value.asInstanceOf[js.Any])
+      inline def setVisitNullLiteral(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[NullLiteral, js.Any], js.Any]): Self = StObject.set(x, "visitNullLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNullLiteralTypeAnnotation(
+      inline def setVisitNullLiteralTypeAnnotation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[NullLiteralTypeAnnotation, js.Any], 
@@ -2594,30 +2316,23 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitNullLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNullLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitNullLiteralTypeAnnotation", js.undefined)
+      inline def setVisitNullLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitNullLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitNullLiteralUndefined: Self = StObject.set(x, "visitNullLiteral", js.undefined)
+      inline def setVisitNullLiteralUndefined: Self = StObject.set(x, "visitNullLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitNullTypeAnnotation(
+      inline def setVisitNullTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[NullTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitNullTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNullTypeAnnotationUndefined: Self = StObject.set(x, "visitNullTypeAnnotation", js.undefined)
+      inline def setVisitNullTypeAnnotationUndefined: Self = StObject.set(x, "visitNullTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitNullableTypeAnnotation(
+      inline def setVisitNullableTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[NullableTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitNullableTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNullableTypeAnnotationUndefined: Self = StObject.set(x, "visitNullableTypeAnnotation", js.undefined)
+      inline def setVisitNullableTypeAnnotationUndefined: Self = StObject.set(x, "visitNullableTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitNumberLiteralTypeAnnotation(
+      inline def setVisitNumberLiteralTypeAnnotation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[NumberLiteralTypeAnnotation, js.Any], 
@@ -2625,24 +2340,19 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitNumberLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNumberLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitNumberLiteralTypeAnnotation", js.undefined)
+      inline def setVisitNumberLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitNumberLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitNumberTypeAnnotation(
+      inline def setVisitNumberTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[NumberTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitNumberTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNumberTypeAnnotationUndefined: Self = StObject.set(x, "visitNumberTypeAnnotation", js.undefined)
+      inline def setVisitNumberTypeAnnotationUndefined: Self = StObject.set(x, "visitNumberTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitNumericLiteral(
+      inline def setVisitNumericLiteral(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[NumericLiteral, js.Any], js.Any]
       ): Self = StObject.set(x, "visitNumericLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNumericLiteralTypeAnnotation(
+      inline def setVisitNumericLiteralTypeAnnotation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[NumericLiteralTypeAnnotation, js.Any], 
@@ -2650,84 +2360,63 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitNumericLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitNumericLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitNumericLiteralTypeAnnotation", js.undefined)
+      inline def setVisitNumericLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitNumericLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitNumericLiteralUndefined: Self = StObject.set(x, "visitNumericLiteral", js.undefined)
+      inline def setVisitNumericLiteralUndefined: Self = StObject.set(x, "visitNumericLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitObjectExpression(
+      inline def setVisitObjectExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitObjectExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectExpressionUndefined: Self = StObject.set(x, "visitObjectExpression", js.undefined)
+      inline def setVisitObjectExpressionUndefined: Self = StObject.set(x, "visitObjectExpression", js.undefined)
       
-      @scala.inline
-      def setVisitObjectMethod(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectMethod, js.Any], js.Any]): Self = StObject.set(x, "visitObjectMethod", value.asInstanceOf[js.Any])
+      inline def setVisitObjectMethod(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectMethod, js.Any], js.Any]): Self = StObject.set(x, "visitObjectMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectMethodUndefined: Self = StObject.set(x, "visitObjectMethod", js.undefined)
+      inline def setVisitObjectMethodUndefined: Self = StObject.set(x, "visitObjectMethod", js.undefined)
       
-      @scala.inline
-      def setVisitObjectPattern(
+      inline def setVisitObjectPattern(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectPattern, js.Any], js.Any]
       ): Self = StObject.set(x, "visitObjectPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectPatternUndefined: Self = StObject.set(x, "visitObjectPattern", js.undefined)
+      inline def setVisitObjectPatternUndefined: Self = StObject.set(x, "visitObjectPattern", js.undefined)
       
-      @scala.inline
-      def setVisitObjectProperty(
+      inline def setVisitObjectProperty(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectProperty, js.Any], js.Any]
       ): Self = StObject.set(x, "visitObjectProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectPropertyUndefined: Self = StObject.set(x, "visitObjectProperty", js.undefined)
+      inline def setVisitObjectPropertyUndefined: Self = StObject.set(x, "visitObjectProperty", js.undefined)
       
-      @scala.inline
-      def setVisitObjectTypeAnnotation(
+      inline def setVisitObjectTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitObjectTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectTypeAnnotationUndefined: Self = StObject.set(x, "visitObjectTypeAnnotation", js.undefined)
+      inline def setVisitObjectTypeAnnotationUndefined: Self = StObject.set(x, "visitObjectTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitObjectTypeCallProperty(
+      inline def setVisitObjectTypeCallProperty(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectTypeCallProperty, js.Any], js.Any]
       ): Self = StObject.set(x, "visitObjectTypeCallProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectTypeCallPropertyUndefined: Self = StObject.set(x, "visitObjectTypeCallProperty", js.undefined)
+      inline def setVisitObjectTypeCallPropertyUndefined: Self = StObject.set(x, "visitObjectTypeCallProperty", js.undefined)
       
-      @scala.inline
-      def setVisitObjectTypeIndexer(
+      inline def setVisitObjectTypeIndexer(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectTypeIndexer, js.Any], js.Any]
       ): Self = StObject.set(x, "visitObjectTypeIndexer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectTypeIndexerUndefined: Self = StObject.set(x, "visitObjectTypeIndexer", js.undefined)
+      inline def setVisitObjectTypeIndexerUndefined: Self = StObject.set(x, "visitObjectTypeIndexer", js.undefined)
       
-      @scala.inline
-      def setVisitObjectTypeInternalSlot(
+      inline def setVisitObjectTypeInternalSlot(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectTypeInternalSlot, js.Any], js.Any]
       ): Self = StObject.set(x, "visitObjectTypeInternalSlot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectTypeInternalSlotUndefined: Self = StObject.set(x, "visitObjectTypeInternalSlot", js.undefined)
+      inline def setVisitObjectTypeInternalSlotUndefined: Self = StObject.set(x, "visitObjectTypeInternalSlot", js.undefined)
       
-      @scala.inline
-      def setVisitObjectTypeProperty(
+      inline def setVisitObjectTypeProperty(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ObjectTypeProperty, js.Any], js.Any]
       ): Self = StObject.set(x, "visitObjectTypeProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectTypePropertyUndefined: Self = StObject.set(x, "visitObjectTypeProperty", js.undefined)
+      inline def setVisitObjectTypePropertyUndefined: Self = StObject.set(x, "visitObjectTypeProperty", js.undefined)
       
-      @scala.inline
-      def setVisitObjectTypeSpreadProperty(
+      inline def setVisitObjectTypeSpreadProperty(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[ObjectTypeSpreadProperty, js.Any], 
@@ -2735,25 +2424,19 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitObjectTypeSpreadProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitObjectTypeSpreadPropertyUndefined: Self = StObject.set(x, "visitObjectTypeSpreadProperty", js.undefined)
+      inline def setVisitObjectTypeSpreadPropertyUndefined: Self = StObject.set(x, "visitObjectTypeSpreadProperty", js.undefined)
       
-      @scala.inline
-      def setVisitOpaqueType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[OpaqueType, js.Any], js.Any]): Self = StObject.set(x, "visitOpaqueType", value.asInstanceOf[js.Any])
+      inline def setVisitOpaqueType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[OpaqueType, js.Any], js.Any]): Self = StObject.set(x, "visitOpaqueType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitOpaqueTypeUndefined: Self = StObject.set(x, "visitOpaqueType", js.undefined)
+      inline def setVisitOpaqueTypeUndefined: Self = StObject.set(x, "visitOpaqueType", js.undefined)
       
-      @scala.inline
-      def setVisitOptionalCallExpression(
+      inline def setVisitOptionalCallExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[OptionalCallExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitOptionalCallExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitOptionalCallExpressionUndefined: Self = StObject.set(x, "visitOptionalCallExpression", js.undefined)
+      inline def setVisitOptionalCallExpressionUndefined: Self = StObject.set(x, "visitOptionalCallExpression", js.undefined)
       
-      @scala.inline
-      def setVisitOptionalMemberExpression(
+      inline def setVisitOptionalMemberExpression(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[OptionalMemberExpression, js.Any], 
@@ -2761,164 +2444,119 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitOptionalMemberExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitOptionalMemberExpressionUndefined: Self = StObject.set(x, "visitOptionalMemberExpression", js.undefined)
+      inline def setVisitOptionalMemberExpressionUndefined: Self = StObject.set(x, "visitOptionalMemberExpression", js.undefined)
       
-      @scala.inline
-      def setVisitParenthesizedExpression(
+      inline def setVisitParenthesizedExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ParenthesizedExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitParenthesizedExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitParenthesizedExpressionUndefined: Self = StObject.set(x, "visitParenthesizedExpression", js.undefined)
+      inline def setVisitParenthesizedExpressionUndefined: Self = StObject.set(x, "visitParenthesizedExpression", js.undefined)
       
-      @scala.inline
-      def setVisitPattern(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Pattern, js.Any], js.Any]): Self = StObject.set(x, "visitPattern", value.asInstanceOf[js.Any])
+      inline def setVisitPattern(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Pattern, js.Any], js.Any]): Self = StObject.set(x, "visitPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitPatternUndefined: Self = StObject.set(x, "visitPattern", js.undefined)
+      inline def setVisitPatternUndefined: Self = StObject.set(x, "visitPattern", js.undefined)
       
-      @scala.inline
-      def setVisitPosition(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Position, js.Any], js.Any]): Self = StObject.set(x, "visitPosition", value.asInstanceOf[js.Any])
+      inline def setVisitPosition(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Position, js.Any], js.Any]): Self = StObject.set(x, "visitPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitPositionUndefined: Self = StObject.set(x, "visitPosition", js.undefined)
+      inline def setVisitPositionUndefined: Self = StObject.set(x, "visitPosition", js.undefined)
       
-      @scala.inline
-      def setVisitPrintable(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Printable, js.Any], js.Any]): Self = StObject.set(x, "visitPrintable", value.asInstanceOf[js.Any])
+      inline def setVisitPrintable(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Printable, js.Any], js.Any]): Self = StObject.set(x, "visitPrintable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitPrintableUndefined: Self = StObject.set(x, "visitPrintable", js.undefined)
+      inline def setVisitPrintableUndefined: Self = StObject.set(x, "visitPrintable", js.undefined)
       
-      @scala.inline
-      def setVisitPrivateName(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[PrivateName, js.Any], js.Any]): Self = StObject.set(x, "visitPrivateName", value.asInstanceOf[js.Any])
+      inline def setVisitPrivateName(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[PrivateName, js.Any], js.Any]): Self = StObject.set(x, "visitPrivateName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitPrivateNameUndefined: Self = StObject.set(x, "visitPrivateName", js.undefined)
+      inline def setVisitPrivateNameUndefined: Self = StObject.set(x, "visitPrivateName", js.undefined)
       
-      @scala.inline
-      def setVisitProgram(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Program, js.Any], js.Any]): Self = StObject.set(x, "visitProgram", value.asInstanceOf[js.Any])
+      inline def setVisitProgram(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Program, js.Any], js.Any]): Self = StObject.set(x, "visitProgram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitProgramUndefined: Self = StObject.set(x, "visitProgram", js.undefined)
+      inline def setVisitProgramUndefined: Self = StObject.set(x, "visitProgram", js.undefined)
       
-      @scala.inline
-      def setVisitProperty(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Property, js.Any], js.Any]): Self = StObject.set(x, "visitProperty", value.asInstanceOf[js.Any])
+      inline def setVisitProperty(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Property, js.Any], js.Any]): Self = StObject.set(x, "visitProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitPropertyPattern(
+      inline def setVisitPropertyPattern(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[PropertyPattern, js.Any], js.Any]
       ): Self = StObject.set(x, "visitPropertyPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitPropertyPatternUndefined: Self = StObject.set(x, "visitPropertyPattern", js.undefined)
+      inline def setVisitPropertyPatternUndefined: Self = StObject.set(x, "visitPropertyPattern", js.undefined)
       
-      @scala.inline
-      def setVisitPropertyUndefined: Self = StObject.set(x, "visitProperty", js.undefined)
+      inline def setVisitPropertyUndefined: Self = StObject.set(x, "visitProperty", js.undefined)
       
-      @scala.inline
-      def setVisitQualifiedTypeIdentifier(
+      inline def setVisitQualifiedTypeIdentifier(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[QualifiedTypeIdentifier, js.Any], js.Any]
       ): Self = StObject.set(x, "visitQualifiedTypeIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitQualifiedTypeIdentifierUndefined: Self = StObject.set(x, "visitQualifiedTypeIdentifier", js.undefined)
+      inline def setVisitQualifiedTypeIdentifierUndefined: Self = StObject.set(x, "visitQualifiedTypeIdentifier", js.undefined)
       
-      @scala.inline
-      def setVisitRegExpLiteral(
+      inline def setVisitRegExpLiteral(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[RegExpLiteral, js.Any], js.Any]
       ): Self = StObject.set(x, "visitRegExpLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitRegExpLiteralUndefined: Self = StObject.set(x, "visitRegExpLiteral", js.undefined)
+      inline def setVisitRegExpLiteralUndefined: Self = StObject.set(x, "visitRegExpLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitRestElement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[RestElement, js.Any], js.Any]): Self = StObject.set(x, "visitRestElement", value.asInstanceOf[js.Any])
+      inline def setVisitRestElement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[RestElement, js.Any], js.Any]): Self = StObject.set(x, "visitRestElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitRestElementUndefined: Self = StObject.set(x, "visitRestElement", js.undefined)
+      inline def setVisitRestElementUndefined: Self = StObject.set(x, "visitRestElement", js.undefined)
       
-      @scala.inline
-      def setVisitRestProperty(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[RestProperty, js.Any], js.Any]): Self = StObject.set(x, "visitRestProperty", value.asInstanceOf[js.Any])
+      inline def setVisitRestProperty(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[RestProperty, js.Any], js.Any]): Self = StObject.set(x, "visitRestProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitRestPropertyUndefined: Self = StObject.set(x, "visitRestProperty", js.undefined)
+      inline def setVisitRestPropertyUndefined: Self = StObject.set(x, "visitRestProperty", js.undefined)
       
-      @scala.inline
-      def setVisitReturnStatement(
+      inline def setVisitReturnStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ReturnStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitReturnStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitReturnStatementUndefined: Self = StObject.set(x, "visitReturnStatement", js.undefined)
+      inline def setVisitReturnStatementUndefined: Self = StObject.set(x, "visitReturnStatement", js.undefined)
       
-      @scala.inline
-      def setVisitSequenceExpression(
+      inline def setVisitSequenceExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SequenceExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitSequenceExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSequenceExpressionUndefined: Self = StObject.set(x, "visitSequenceExpression", js.undefined)
+      inline def setVisitSequenceExpressionUndefined: Self = StObject.set(x, "visitSequenceExpression", js.undefined)
       
-      @scala.inline
-      def setVisitSourceLocation(
+      inline def setVisitSourceLocation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SourceLocation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitSourceLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSourceLocationUndefined: Self = StObject.set(x, "visitSourceLocation", js.undefined)
+      inline def setVisitSourceLocationUndefined: Self = StObject.set(x, "visitSourceLocation", js.undefined)
       
-      @scala.inline
-      def setVisitSpecifier(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Specifier, js.Any], js.Any]): Self = StObject.set(x, "visitSpecifier", value.asInstanceOf[js.Any])
+      inline def setVisitSpecifier(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Specifier, js.Any], js.Any]): Self = StObject.set(x, "visitSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSpecifierUndefined: Self = StObject.set(x, "visitSpecifier", js.undefined)
+      inline def setVisitSpecifierUndefined: Self = StObject.set(x, "visitSpecifier", js.undefined)
       
-      @scala.inline
-      def setVisitSpreadElement(
+      inline def setVisitSpreadElement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SpreadElement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitSpreadElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSpreadElementPattern(
+      inline def setVisitSpreadElementPattern(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SpreadElementPattern, js.Any], js.Any]
       ): Self = StObject.set(x, "visitSpreadElementPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSpreadElementPatternUndefined: Self = StObject.set(x, "visitSpreadElementPattern", js.undefined)
+      inline def setVisitSpreadElementPatternUndefined: Self = StObject.set(x, "visitSpreadElementPattern", js.undefined)
       
-      @scala.inline
-      def setVisitSpreadElementUndefined: Self = StObject.set(x, "visitSpreadElement", js.undefined)
+      inline def setVisitSpreadElementUndefined: Self = StObject.set(x, "visitSpreadElement", js.undefined)
       
-      @scala.inline
-      def setVisitSpreadProperty(
+      inline def setVisitSpreadProperty(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SpreadProperty, js.Any], js.Any]
       ): Self = StObject.set(x, "visitSpreadProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSpreadPropertyPattern(
+      inline def setVisitSpreadPropertyPattern(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SpreadPropertyPattern, js.Any], js.Any]
       ): Self = StObject.set(x, "visitSpreadPropertyPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSpreadPropertyPatternUndefined: Self = StObject.set(x, "visitSpreadPropertyPattern", js.undefined)
+      inline def setVisitSpreadPropertyPatternUndefined: Self = StObject.set(x, "visitSpreadPropertyPattern", js.undefined)
       
-      @scala.inline
-      def setVisitSpreadPropertyUndefined: Self = StObject.set(x, "visitSpreadProperty", js.undefined)
+      inline def setVisitSpreadPropertyUndefined: Self = StObject.set(x, "visitSpreadProperty", js.undefined)
       
-      @scala.inline
-      def setVisitStatement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Statement, js.Any], js.Any]): Self = StObject.set(x, "visitStatement", value.asInstanceOf[js.Any])
+      inline def setVisitStatement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Statement, js.Any], js.Any]): Self = StObject.set(x, "visitStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitStatementUndefined: Self = StObject.set(x, "visitStatement", js.undefined)
+      inline def setVisitStatementUndefined: Self = StObject.set(x, "visitStatement", js.undefined)
       
-      @scala.inline
-      def setVisitStringLiteral(
+      inline def setVisitStringLiteral(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[StringLiteral, js.Any], js.Any]
       ): Self = StObject.set(x, "visitStringLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitStringLiteralTypeAnnotation(
+      inline def setVisitStringLiteralTypeAnnotation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[StringLiteralTypeAnnotation, js.Any], 
@@ -2926,86 +2564,63 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitStringLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitStringLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitStringLiteralTypeAnnotation", js.undefined)
+      inline def setVisitStringLiteralTypeAnnotationUndefined: Self = StObject.set(x, "visitStringLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitStringLiteralUndefined: Self = StObject.set(x, "visitStringLiteral", js.undefined)
+      inline def setVisitStringLiteralUndefined: Self = StObject.set(x, "visitStringLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitStringTypeAnnotation(
+      inline def setVisitStringTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[StringTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitStringTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitStringTypeAnnotationUndefined: Self = StObject.set(x, "visitStringTypeAnnotation", js.undefined)
+      inline def setVisitStringTypeAnnotationUndefined: Self = StObject.set(x, "visitStringTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitSuper(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Super, js.Any], js.Any]): Self = StObject.set(x, "visitSuper", value.asInstanceOf[js.Any])
+      inline def setVisitSuper(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Super, js.Any], js.Any]): Self = StObject.set(x, "visitSuper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSuperUndefined: Self = StObject.set(x, "visitSuper", js.undefined)
+      inline def setVisitSuperUndefined: Self = StObject.set(x, "visitSuper", js.undefined)
       
-      @scala.inline
-      def setVisitSwitchCase(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SwitchCase, js.Any], js.Any]): Self = StObject.set(x, "visitSwitchCase", value.asInstanceOf[js.Any])
+      inline def setVisitSwitchCase(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SwitchCase, js.Any], js.Any]): Self = StObject.set(x, "visitSwitchCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSwitchCaseUndefined: Self = StObject.set(x, "visitSwitchCase", js.undefined)
+      inline def setVisitSwitchCaseUndefined: Self = StObject.set(x, "visitSwitchCase", js.undefined)
       
-      @scala.inline
-      def setVisitSwitchStatement(
+      inline def setVisitSwitchStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SwitchStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitSwitchStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSwitchStatementUndefined: Self = StObject.set(x, "visitSwitchStatement", js.undefined)
+      inline def setVisitSwitchStatementUndefined: Self = StObject.set(x, "visitSwitchStatement", js.undefined)
       
-      @scala.inline
-      def setVisitSymbolTypeAnnotation(
+      inline def setVisitSymbolTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[SymbolTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitSymbolTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitSymbolTypeAnnotationUndefined: Self = StObject.set(x, "visitSymbolTypeAnnotation", js.undefined)
+      inline def setVisitSymbolTypeAnnotationUndefined: Self = StObject.set(x, "visitSymbolTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitTSAnyKeyword(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSAnyKeyword, js.Any], js.Any]): Self = StObject.set(x, "visitTSAnyKeyword", value.asInstanceOf[js.Any])
+      inline def setVisitTSAnyKeyword(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSAnyKeyword, js.Any], js.Any]): Self = StObject.set(x, "visitTSAnyKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSAnyKeywordUndefined: Self = StObject.set(x, "visitTSAnyKeyword", js.undefined)
+      inline def setVisitTSAnyKeywordUndefined: Self = StObject.set(x, "visitTSAnyKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSArrayType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSArrayType, js.Any], js.Any]): Self = StObject.set(x, "visitTSArrayType", value.asInstanceOf[js.Any])
+      inline def setVisitTSArrayType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSArrayType, js.Any], js.Any]): Self = StObject.set(x, "visitTSArrayType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSArrayTypeUndefined: Self = StObject.set(x, "visitTSArrayType", js.undefined)
+      inline def setVisitTSArrayTypeUndefined: Self = StObject.set(x, "visitTSArrayType", js.undefined)
       
-      @scala.inline
-      def setVisitTSAsExpression(
+      inline def setVisitTSAsExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSAsExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSAsExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSAsExpressionUndefined: Self = StObject.set(x, "visitTSAsExpression", js.undefined)
+      inline def setVisitTSAsExpressionUndefined: Self = StObject.set(x, "visitTSAsExpression", js.undefined)
       
-      @scala.inline
-      def setVisitTSBigIntKeyword(
+      inline def setVisitTSBigIntKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSBigIntKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSBigIntKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSBigIntKeywordUndefined: Self = StObject.set(x, "visitTSBigIntKeyword", js.undefined)
+      inline def setVisitTSBigIntKeywordUndefined: Self = StObject.set(x, "visitTSBigIntKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSBooleanKeyword(
+      inline def setVisitTSBooleanKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSBooleanKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSBooleanKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSBooleanKeywordUndefined: Self = StObject.set(x, "visitTSBooleanKeyword", js.undefined)
+      inline def setVisitTSBooleanKeywordUndefined: Self = StObject.set(x, "visitTSBooleanKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSCallSignatureDeclaration(
+      inline def setVisitTSCallSignatureDeclaration(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSCallSignatureDeclaration, js.Any], 
@@ -3013,19 +2628,15 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSCallSignatureDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSCallSignatureDeclarationUndefined: Self = StObject.set(x, "visitTSCallSignatureDeclaration", js.undefined)
+      inline def setVisitTSCallSignatureDeclarationUndefined: Self = StObject.set(x, "visitTSCallSignatureDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTSConditionalType(
+      inline def setVisitTSConditionalType(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSConditionalType, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSConditionalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSConditionalTypeUndefined: Self = StObject.set(x, "visitTSConditionalType", js.undefined)
+      inline def setVisitTSConditionalTypeUndefined: Self = StObject.set(x, "visitTSConditionalType", js.undefined)
       
-      @scala.inline
-      def setVisitTSConstructSignatureDeclaration(
+      inline def setVisitTSConstructSignatureDeclaration(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSConstructSignatureDeclaration, js.Any], 
@@ -3033,57 +2644,43 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSConstructSignatureDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSConstructSignatureDeclarationUndefined: Self = StObject.set(x, "visitTSConstructSignatureDeclaration", js.undefined)
+      inline def setVisitTSConstructSignatureDeclarationUndefined: Self = StObject.set(x, "visitTSConstructSignatureDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTSConstructorType(
+      inline def setVisitTSConstructorType(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSConstructorType, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSConstructorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSConstructorTypeUndefined: Self = StObject.set(x, "visitTSConstructorType", js.undefined)
+      inline def setVisitTSConstructorTypeUndefined: Self = StObject.set(x, "visitTSConstructorType", js.undefined)
       
-      @scala.inline
-      def setVisitTSDeclareFunction(
+      inline def setVisitTSDeclareFunction(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSDeclareFunction, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSDeclareFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSDeclareFunctionUndefined: Self = StObject.set(x, "visitTSDeclareFunction", js.undefined)
+      inline def setVisitTSDeclareFunctionUndefined: Self = StObject.set(x, "visitTSDeclareFunction", js.undefined)
       
-      @scala.inline
-      def setVisitTSDeclareMethod(
+      inline def setVisitTSDeclareMethod(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSDeclareMethod, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSDeclareMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSDeclareMethodUndefined: Self = StObject.set(x, "visitTSDeclareMethod", js.undefined)
+      inline def setVisitTSDeclareMethodUndefined: Self = StObject.set(x, "visitTSDeclareMethod", js.undefined)
       
-      @scala.inline
-      def setVisitTSEnumDeclaration(
+      inline def setVisitTSEnumDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSEnumDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSEnumDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSEnumDeclarationUndefined: Self = StObject.set(x, "visitTSEnumDeclaration", js.undefined)
+      inline def setVisitTSEnumDeclarationUndefined: Self = StObject.set(x, "visitTSEnumDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTSEnumMember(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSEnumMember, js.Any], js.Any]): Self = StObject.set(x, "visitTSEnumMember", value.asInstanceOf[js.Any])
+      inline def setVisitTSEnumMember(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSEnumMember, js.Any], js.Any]): Self = StObject.set(x, "visitTSEnumMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSEnumMemberUndefined: Self = StObject.set(x, "visitTSEnumMember", js.undefined)
+      inline def setVisitTSEnumMemberUndefined: Self = StObject.set(x, "visitTSEnumMember", js.undefined)
       
-      @scala.inline
-      def setVisitTSExportAssignment(
+      inline def setVisitTSExportAssignment(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSExportAssignment, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSExportAssignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSExportAssignmentUndefined: Self = StObject.set(x, "visitTSExportAssignment", js.undefined)
+      inline def setVisitTSExportAssignmentUndefined: Self = StObject.set(x, "visitTSExportAssignment", js.undefined)
       
-      @scala.inline
-      def setVisitTSExpressionWithTypeArguments(
+      inline def setVisitTSExpressionWithTypeArguments(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSExpressionWithTypeArguments, js.Any], 
@@ -3091,11 +2688,9 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSExpressionWithTypeArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSExpressionWithTypeArgumentsUndefined: Self = StObject.set(x, "visitTSExpressionWithTypeArguments", js.undefined)
+      inline def setVisitTSExpressionWithTypeArgumentsUndefined: Self = StObject.set(x, "visitTSExpressionWithTypeArguments", js.undefined)
       
-      @scala.inline
-      def setVisitTSExternalModuleReference(
+      inline def setVisitTSExternalModuleReference(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSExternalModuleReference, js.Any], 
@@ -3103,19 +2698,15 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSExternalModuleReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSExternalModuleReferenceUndefined: Self = StObject.set(x, "visitTSExternalModuleReference", js.undefined)
+      inline def setVisitTSExternalModuleReferenceUndefined: Self = StObject.set(x, "visitTSExternalModuleReference", js.undefined)
       
-      @scala.inline
-      def setVisitTSFunctionType(
+      inline def setVisitTSFunctionType(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSFunctionType, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSFunctionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSFunctionTypeUndefined: Self = StObject.set(x, "visitTSFunctionType", js.undefined)
+      inline def setVisitTSFunctionTypeUndefined: Self = StObject.set(x, "visitTSFunctionType", js.undefined)
       
-      @scala.inline
-      def setVisitTSHasOptionalTypeAnnotation(
+      inline def setVisitTSHasOptionalTypeAnnotation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSHasOptionalTypeAnnotation, js.Any], 
@@ -3123,11 +2714,9 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSHasOptionalTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSHasOptionalTypeAnnotationUndefined: Self = StObject.set(x, "visitTSHasOptionalTypeAnnotation", js.undefined)
+      inline def setVisitTSHasOptionalTypeAnnotationUndefined: Self = StObject.set(x, "visitTSHasOptionalTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitTSHasOptionalTypeParameterInstantiation(
+      inline def setVisitTSHasOptionalTypeParameterInstantiation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSHasOptionalTypeParameterInstantiation, js.Any], 
@@ -3135,11 +2724,9 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSHasOptionalTypeParameterInstantiation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSHasOptionalTypeParameterInstantiationUndefined: Self = StObject.set(x, "visitTSHasOptionalTypeParameterInstantiation", js.undefined)
+      inline def setVisitTSHasOptionalTypeParameterInstantiationUndefined: Self = StObject.set(x, "visitTSHasOptionalTypeParameterInstantiation", js.undefined)
       
-      @scala.inline
-      def setVisitTSHasOptionalTypeParameters(
+      inline def setVisitTSHasOptionalTypeParameters(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSHasOptionalTypeParameters, js.Any], 
@@ -3147,11 +2734,9 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSHasOptionalTypeParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSHasOptionalTypeParametersUndefined: Self = StObject.set(x, "visitTSHasOptionalTypeParameters", js.undefined)
+      inline def setVisitTSHasOptionalTypeParametersUndefined: Self = StObject.set(x, "visitTSHasOptionalTypeParameters", js.undefined)
       
-      @scala.inline
-      def setVisitTSImportEqualsDeclaration(
+      inline def setVisitTSImportEqualsDeclaration(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSImportEqualsDeclaration, js.Any], 
@@ -3159,109 +2744,81 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSImportEqualsDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSImportEqualsDeclarationUndefined: Self = StObject.set(x, "visitTSImportEqualsDeclaration", js.undefined)
+      inline def setVisitTSImportEqualsDeclarationUndefined: Self = StObject.set(x, "visitTSImportEqualsDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTSImportType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSImportType, js.Any], js.Any]): Self = StObject.set(x, "visitTSImportType", value.asInstanceOf[js.Any])
+      inline def setVisitTSImportType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSImportType, js.Any], js.Any]): Self = StObject.set(x, "visitTSImportType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSImportTypeUndefined: Self = StObject.set(x, "visitTSImportType", js.undefined)
+      inline def setVisitTSImportTypeUndefined: Self = StObject.set(x, "visitTSImportType", js.undefined)
       
-      @scala.inline
-      def setVisitTSIndexSignature(
+      inline def setVisitTSIndexSignature(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSIndexSignature, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSIndexSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSIndexSignatureUndefined: Self = StObject.set(x, "visitTSIndexSignature", js.undefined)
+      inline def setVisitTSIndexSignatureUndefined: Self = StObject.set(x, "visitTSIndexSignature", js.undefined)
       
-      @scala.inline
-      def setVisitTSIndexedAccessType(
+      inline def setVisitTSIndexedAccessType(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSIndexedAccessType, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSIndexedAccessType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSIndexedAccessTypeUndefined: Self = StObject.set(x, "visitTSIndexedAccessType", js.undefined)
+      inline def setVisitTSIndexedAccessTypeUndefined: Self = StObject.set(x, "visitTSIndexedAccessType", js.undefined)
       
-      @scala.inline
-      def setVisitTSInferType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSInferType, js.Any], js.Any]): Self = StObject.set(x, "visitTSInferType", value.asInstanceOf[js.Any])
+      inline def setVisitTSInferType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSInferType, js.Any], js.Any]): Self = StObject.set(x, "visitTSInferType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSInferTypeUndefined: Self = StObject.set(x, "visitTSInferType", js.undefined)
+      inline def setVisitTSInferTypeUndefined: Self = StObject.set(x, "visitTSInferType", js.undefined)
       
-      @scala.inline
-      def setVisitTSInterfaceBody(
+      inline def setVisitTSInterfaceBody(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSInterfaceBody, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSInterfaceBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSInterfaceBodyUndefined: Self = StObject.set(x, "visitTSInterfaceBody", js.undefined)
+      inline def setVisitTSInterfaceBodyUndefined: Self = StObject.set(x, "visitTSInterfaceBody", js.undefined)
       
-      @scala.inline
-      def setVisitTSInterfaceDeclaration(
+      inline def setVisitTSInterfaceDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSInterfaceDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSInterfaceDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSInterfaceDeclarationUndefined: Self = StObject.set(x, "visitTSInterfaceDeclaration", js.undefined)
+      inline def setVisitTSInterfaceDeclarationUndefined: Self = StObject.set(x, "visitTSInterfaceDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTSIntersectionType(
+      inline def setVisitTSIntersectionType(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSIntersectionType, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSIntersectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSIntersectionTypeUndefined: Self = StObject.set(x, "visitTSIntersectionType", js.undefined)
+      inline def setVisitTSIntersectionTypeUndefined: Self = StObject.set(x, "visitTSIntersectionType", js.undefined)
       
-      @scala.inline
-      def setVisitTSLiteralType(
+      inline def setVisitTSLiteralType(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSLiteralType, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSLiteralType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSLiteralTypeUndefined: Self = StObject.set(x, "visitTSLiteralType", js.undefined)
+      inline def setVisitTSLiteralTypeUndefined: Self = StObject.set(x, "visitTSLiteralType", js.undefined)
       
-      @scala.inline
-      def setVisitTSMappedType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSMappedType, js.Any], js.Any]): Self = StObject.set(x, "visitTSMappedType", value.asInstanceOf[js.Any])
+      inline def setVisitTSMappedType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSMappedType, js.Any], js.Any]): Self = StObject.set(x, "visitTSMappedType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSMappedTypeUndefined: Self = StObject.set(x, "visitTSMappedType", js.undefined)
+      inline def setVisitTSMappedTypeUndefined: Self = StObject.set(x, "visitTSMappedType", js.undefined)
       
-      @scala.inline
-      def setVisitTSMethodSignature(
+      inline def setVisitTSMethodSignature(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSMethodSignature, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSMethodSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSMethodSignatureUndefined: Self = StObject.set(x, "visitTSMethodSignature", js.undefined)
+      inline def setVisitTSMethodSignatureUndefined: Self = StObject.set(x, "visitTSMethodSignature", js.undefined)
       
-      @scala.inline
-      def setVisitTSModuleBlock(
+      inline def setVisitTSModuleBlock(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSModuleBlock, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSModuleBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSModuleBlockUndefined: Self = StObject.set(x, "visitTSModuleBlock", js.undefined)
+      inline def setVisitTSModuleBlockUndefined: Self = StObject.set(x, "visitTSModuleBlock", js.undefined)
       
-      @scala.inline
-      def setVisitTSModuleDeclaration(
+      inline def setVisitTSModuleDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSModuleDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSModuleDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSModuleDeclarationUndefined: Self = StObject.set(x, "visitTSModuleDeclaration", js.undefined)
+      inline def setVisitTSModuleDeclarationUndefined: Self = StObject.set(x, "visitTSModuleDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTSNamedTupleMember(
+      inline def setVisitTSNamedTupleMember(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSNamedTupleMember, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSNamedTupleMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSNamedTupleMemberUndefined: Self = StObject.set(x, "visitTSNamedTupleMember", js.undefined)
+      inline def setVisitTSNamedTupleMemberUndefined: Self = StObject.set(x, "visitTSNamedTupleMember", js.undefined)
       
-      @scala.inline
-      def setVisitTSNamespaceExportDeclaration(
+      inline def setVisitTSNamespaceExportDeclaration(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSNamespaceExportDeclaration, js.Any], 
@@ -3269,173 +2826,129 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSNamespaceExportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSNamespaceExportDeclarationUndefined: Self = StObject.set(x, "visitTSNamespaceExportDeclaration", js.undefined)
+      inline def setVisitTSNamespaceExportDeclarationUndefined: Self = StObject.set(x, "visitTSNamespaceExportDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTSNeverKeyword(
+      inline def setVisitTSNeverKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSNeverKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSNeverKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSNeverKeywordUndefined: Self = StObject.set(x, "visitTSNeverKeyword", js.undefined)
+      inline def setVisitTSNeverKeywordUndefined: Self = StObject.set(x, "visitTSNeverKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSNonNullExpression(
+      inline def setVisitTSNonNullExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSNonNullExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSNonNullExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSNonNullExpressionUndefined: Self = StObject.set(x, "visitTSNonNullExpression", js.undefined)
+      inline def setVisitTSNonNullExpressionUndefined: Self = StObject.set(x, "visitTSNonNullExpression", js.undefined)
       
-      @scala.inline
-      def setVisitTSNullKeyword(
+      inline def setVisitTSNullKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSNullKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSNullKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSNullKeywordUndefined: Self = StObject.set(x, "visitTSNullKeyword", js.undefined)
+      inline def setVisitTSNullKeywordUndefined: Self = StObject.set(x, "visitTSNullKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSNumberKeyword(
+      inline def setVisitTSNumberKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSNumberKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSNumberKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSNumberKeywordUndefined: Self = StObject.set(x, "visitTSNumberKeyword", js.undefined)
+      inline def setVisitTSNumberKeywordUndefined: Self = StObject.set(x, "visitTSNumberKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSObjectKeyword(
+      inline def setVisitTSObjectKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSObjectKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSObjectKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSObjectKeywordUndefined: Self = StObject.set(x, "visitTSObjectKeyword", js.undefined)
+      inline def setVisitTSObjectKeywordUndefined: Self = StObject.set(x, "visitTSObjectKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSOptionalType(
+      inline def setVisitTSOptionalType(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSOptionalType, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSOptionalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSOptionalTypeUndefined: Self = StObject.set(x, "visitTSOptionalType", js.undefined)
+      inline def setVisitTSOptionalTypeUndefined: Self = StObject.set(x, "visitTSOptionalType", js.undefined)
       
-      @scala.inline
-      def setVisitTSParameterProperty(
+      inline def setVisitTSParameterProperty(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSParameterProperty, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSParameterProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSParameterPropertyUndefined: Self = StObject.set(x, "visitTSParameterProperty", js.undefined)
+      inline def setVisitTSParameterPropertyUndefined: Self = StObject.set(x, "visitTSParameterProperty", js.undefined)
       
-      @scala.inline
-      def setVisitTSParenthesizedType(
+      inline def setVisitTSParenthesizedType(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSParenthesizedType, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSParenthesizedType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSParenthesizedTypeUndefined: Self = StObject.set(x, "visitTSParenthesizedType", js.undefined)
+      inline def setVisitTSParenthesizedTypeUndefined: Self = StObject.set(x, "visitTSParenthesizedType", js.undefined)
       
-      @scala.inline
-      def setVisitTSPropertySignature(
+      inline def setVisitTSPropertySignature(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSPropertySignature, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSPropertySignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSPropertySignatureUndefined: Self = StObject.set(x, "visitTSPropertySignature", js.undefined)
+      inline def setVisitTSPropertySignatureUndefined: Self = StObject.set(x, "visitTSPropertySignature", js.undefined)
       
-      @scala.inline
-      def setVisitTSQualifiedName(
+      inline def setVisitTSQualifiedName(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSQualifiedName, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSQualifiedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSQualifiedNameUndefined: Self = StObject.set(x, "visitTSQualifiedName", js.undefined)
+      inline def setVisitTSQualifiedNameUndefined: Self = StObject.set(x, "visitTSQualifiedName", js.undefined)
       
-      @scala.inline
-      def setVisitTSRestType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSRestType, js.Any], js.Any]): Self = StObject.set(x, "visitTSRestType", value.asInstanceOf[js.Any])
+      inline def setVisitTSRestType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSRestType, js.Any], js.Any]): Self = StObject.set(x, "visitTSRestType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSRestTypeUndefined: Self = StObject.set(x, "visitTSRestType", js.undefined)
+      inline def setVisitTSRestTypeUndefined: Self = StObject.set(x, "visitTSRestType", js.undefined)
       
-      @scala.inline
-      def setVisitTSStringKeyword(
+      inline def setVisitTSStringKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSStringKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSStringKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSStringKeywordUndefined: Self = StObject.set(x, "visitTSStringKeyword", js.undefined)
+      inline def setVisitTSStringKeywordUndefined: Self = StObject.set(x, "visitTSStringKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSSymbolKeyword(
+      inline def setVisitTSSymbolKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSSymbolKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSSymbolKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSSymbolKeywordUndefined: Self = StObject.set(x, "visitTSSymbolKeyword", js.undefined)
+      inline def setVisitTSSymbolKeywordUndefined: Self = StObject.set(x, "visitTSSymbolKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSThisType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSThisType, js.Any], js.Any]): Self = StObject.set(x, "visitTSThisType", value.asInstanceOf[js.Any])
+      inline def setVisitTSThisType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSThisType, js.Any], js.Any]): Self = StObject.set(x, "visitTSThisType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSThisTypeUndefined: Self = StObject.set(x, "visitTSThisType", js.undefined)
+      inline def setVisitTSThisTypeUndefined: Self = StObject.set(x, "visitTSThisType", js.undefined)
       
-      @scala.inline
-      def setVisitTSTupleType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTupleType, js.Any], js.Any]): Self = StObject.set(x, "visitTSTupleType", value.asInstanceOf[js.Any])
+      inline def setVisitTSTupleType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTupleType, js.Any], js.Any]): Self = StObject.set(x, "visitTSTupleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTupleTypeUndefined: Self = StObject.set(x, "visitTSTupleType", js.undefined)
+      inline def setVisitTSTupleTypeUndefined: Self = StObject.set(x, "visitTSTupleType", js.undefined)
       
-      @scala.inline
-      def setVisitTSType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSType, js.Any], js.Any]): Self = StObject.set(x, "visitTSType", value.asInstanceOf[js.Any])
+      inline def setVisitTSType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSType, js.Any], js.Any]): Self = StObject.set(x, "visitTSType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeAliasDeclaration(
+      inline def setVisitTSTypeAliasDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypeAliasDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSTypeAliasDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeAliasDeclarationUndefined: Self = StObject.set(x, "visitTSTypeAliasDeclaration", js.undefined)
+      inline def setVisitTSTypeAliasDeclarationUndefined: Self = StObject.set(x, "visitTSTypeAliasDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeAnnotation(
+      inline def setVisitTSTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeAnnotationUndefined: Self = StObject.set(x, "visitTSTypeAnnotation", js.undefined)
+      inline def setVisitTSTypeAnnotationUndefined: Self = StObject.set(x, "visitTSTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeAssertion(
+      inline def setVisitTSTypeAssertion(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypeAssertion, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSTypeAssertion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeAssertionUndefined: Self = StObject.set(x, "visitTSTypeAssertion", js.undefined)
+      inline def setVisitTSTypeAssertionUndefined: Self = StObject.set(x, "visitTSTypeAssertion", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeLiteral(
+      inline def setVisitTSTypeLiteral(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypeLiteral, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSTypeLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeLiteralUndefined: Self = StObject.set(x, "visitTSTypeLiteral", js.undefined)
+      inline def setVisitTSTypeLiteralUndefined: Self = StObject.set(x, "visitTSTypeLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeOperator(
+      inline def setVisitTSTypeOperator(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypeOperator, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSTypeOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeOperatorUndefined: Self = StObject.set(x, "visitTSTypeOperator", js.undefined)
+      inline def setVisitTSTypeOperatorUndefined: Self = StObject.set(x, "visitTSTypeOperator", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeParameter(
+      inline def setVisitTSTypeParameter(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypeParameter, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSTypeParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeParameterDeclaration(
+      inline def setVisitTSTypeParameterDeclaration(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSTypeParameterDeclaration, js.Any], 
@@ -3443,11 +2956,9 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSTypeParameterDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeParameterDeclarationUndefined: Self = StObject.set(x, "visitTSTypeParameterDeclaration", js.undefined)
+      inline def setVisitTSTypeParameterDeclarationUndefined: Self = StObject.set(x, "visitTSTypeParameterDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeParameterInstantiation(
+      inline def setVisitTSTypeParameterInstantiation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TSTypeParameterInstantiation, js.Any], 
@@ -3455,69 +2966,51 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTSTypeParameterInstantiation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeParameterInstantiationUndefined: Self = StObject.set(x, "visitTSTypeParameterInstantiation", js.undefined)
+      inline def setVisitTSTypeParameterInstantiationUndefined: Self = StObject.set(x, "visitTSTypeParameterInstantiation", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeParameterUndefined: Self = StObject.set(x, "visitTSTypeParameter", js.undefined)
+      inline def setVisitTSTypeParameterUndefined: Self = StObject.set(x, "visitTSTypeParameter", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypePredicate(
+      inline def setVisitTSTypePredicate(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypePredicate, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSTypePredicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypePredicateUndefined: Self = StObject.set(x, "visitTSTypePredicate", js.undefined)
+      inline def setVisitTSTypePredicateUndefined: Self = StObject.set(x, "visitTSTypePredicate", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeQuery(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypeQuery, js.Any], js.Any]): Self = StObject.set(x, "visitTSTypeQuery", value.asInstanceOf[js.Any])
+      inline def setVisitTSTypeQuery(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypeQuery, js.Any], js.Any]): Self = StObject.set(x, "visitTSTypeQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeQueryUndefined: Self = StObject.set(x, "visitTSTypeQuery", js.undefined)
+      inline def setVisitTSTypeQueryUndefined: Self = StObject.set(x, "visitTSTypeQuery", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeReference(
+      inline def setVisitTSTypeReference(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSTypeReference, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSTypeReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSTypeReferenceUndefined: Self = StObject.set(x, "visitTSTypeReference", js.undefined)
+      inline def setVisitTSTypeReferenceUndefined: Self = StObject.set(x, "visitTSTypeReference", js.undefined)
       
-      @scala.inline
-      def setVisitTSTypeUndefined: Self = StObject.set(x, "visitTSType", js.undefined)
+      inline def setVisitTSTypeUndefined: Self = StObject.set(x, "visitTSType", js.undefined)
       
-      @scala.inline
-      def setVisitTSUndefinedKeyword(
+      inline def setVisitTSUndefinedKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSUndefinedKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSUndefinedKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSUndefinedKeywordUndefined: Self = StObject.set(x, "visitTSUndefinedKeyword", js.undefined)
+      inline def setVisitTSUndefinedKeywordUndefined: Self = StObject.set(x, "visitTSUndefinedKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSUnionType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSUnionType, js.Any], js.Any]): Self = StObject.set(x, "visitTSUnionType", value.asInstanceOf[js.Any])
+      inline def setVisitTSUnionType(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSUnionType, js.Any], js.Any]): Self = StObject.set(x, "visitTSUnionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSUnionTypeUndefined: Self = StObject.set(x, "visitTSUnionType", js.undefined)
+      inline def setVisitTSUnionTypeUndefined: Self = StObject.set(x, "visitTSUnionType", js.undefined)
       
-      @scala.inline
-      def setVisitTSUnknownKeyword(
+      inline def setVisitTSUnknownKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSUnknownKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSUnknownKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSUnknownKeywordUndefined: Self = StObject.set(x, "visitTSUnknownKeyword", js.undefined)
+      inline def setVisitTSUnknownKeywordUndefined: Self = StObject.set(x, "visitTSUnknownKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTSVoidKeyword(
+      inline def setVisitTSVoidKeyword(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TSVoidKeyword, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTSVoidKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTSVoidKeywordUndefined: Self = StObject.set(x, "visitTSVoidKeyword", js.undefined)
+      inline def setVisitTSVoidKeywordUndefined: Self = StObject.set(x, "visitTSVoidKeyword", js.undefined)
       
-      @scala.inline
-      def setVisitTaggedTemplateExpression(
+      inline def setVisitTaggedTemplateExpression(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TaggedTemplateExpression, js.Any], 
@@ -3525,92 +3018,69 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTaggedTemplateExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTaggedTemplateExpressionUndefined: Self = StObject.set(x, "visitTaggedTemplateExpression", js.undefined)
+      inline def setVisitTaggedTemplateExpressionUndefined: Self = StObject.set(x, "visitTaggedTemplateExpression", js.undefined)
       
-      @scala.inline
-      def setVisitTemplateElement(
+      inline def setVisitTemplateElement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TemplateElement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTemplateElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTemplateElementUndefined: Self = StObject.set(x, "visitTemplateElement", js.undefined)
+      inline def setVisitTemplateElementUndefined: Self = StObject.set(x, "visitTemplateElement", js.undefined)
       
-      @scala.inline
-      def setVisitTemplateLiteral(
+      inline def setVisitTemplateLiteral(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TemplateLiteral, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTemplateLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTemplateLiteralUndefined: Self = StObject.set(x, "visitTemplateLiteral", js.undefined)
+      inline def setVisitTemplateLiteralUndefined: Self = StObject.set(x, "visitTemplateLiteral", js.undefined)
       
-      @scala.inline
-      def setVisitThisExpression(
+      inline def setVisitThisExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ThisExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitThisExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitThisExpressionUndefined: Self = StObject.set(x, "visitThisExpression", js.undefined)
+      inline def setVisitThisExpressionUndefined: Self = StObject.set(x, "visitThisExpression", js.undefined)
       
-      @scala.inline
-      def setVisitThisTypeAnnotation(
+      inline def setVisitThisTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ThisTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitThisTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitThisTypeAnnotationUndefined: Self = StObject.set(x, "visitThisTypeAnnotation", js.undefined)
+      inline def setVisitThisTypeAnnotationUndefined: Self = StObject.set(x, "visitThisTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitThrowStatement(
+      inline def setVisitThrowStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[ThrowStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitThrowStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitThrowStatementUndefined: Self = StObject.set(x, "visitThrowStatement", js.undefined)
+      inline def setVisitThrowStatementUndefined: Self = StObject.set(x, "visitThrowStatement", js.undefined)
       
-      @scala.inline
-      def setVisitTryStatement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TryStatement, js.Any], js.Any]): Self = StObject.set(x, "visitTryStatement", value.asInstanceOf[js.Any])
+      inline def setVisitTryStatement(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TryStatement, js.Any], js.Any]): Self = StObject.set(x, "visitTryStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTryStatementUndefined: Self = StObject.set(x, "visitTryStatement", js.undefined)
+      inline def setVisitTryStatementUndefined: Self = StObject.set(x, "visitTryStatement", js.undefined)
       
-      @scala.inline
-      def setVisitTupleTypeAnnotation(
+      inline def setVisitTupleTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TupleTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTupleTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTupleTypeAnnotationUndefined: Self = StObject.set(x, "visitTupleTypeAnnotation", js.undefined)
+      inline def setVisitTupleTypeAnnotationUndefined: Self = StObject.set(x, "visitTupleTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitTypeAlias(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TypeAlias, js.Any], js.Any]): Self = StObject.set(x, "visitTypeAlias", value.asInstanceOf[js.Any])
+      inline def setVisitTypeAlias(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TypeAlias, js.Any], js.Any]): Self = StObject.set(x, "visitTypeAlias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTypeAliasUndefined: Self = StObject.set(x, "visitTypeAlias", js.undefined)
+      inline def setVisitTypeAliasUndefined: Self = StObject.set(x, "visitTypeAlias", js.undefined)
       
-      @scala.inline
-      def setVisitTypeAnnotation(
+      inline def setVisitTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTypeAnnotationUndefined: Self = StObject.set(x, "visitTypeAnnotation", js.undefined)
+      inline def setVisitTypeAnnotationUndefined: Self = StObject.set(x, "visitTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitTypeCastExpression(
+      inline def setVisitTypeCastExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TypeCastExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTypeCastExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTypeCastExpressionUndefined: Self = StObject.set(x, "visitTypeCastExpression", js.undefined)
+      inline def setVisitTypeCastExpressionUndefined: Self = StObject.set(x, "visitTypeCastExpression", js.undefined)
       
-      @scala.inline
-      def setVisitTypeParameter(
+      inline def setVisitTypeParameter(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TypeParameter, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTypeParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTypeParameterDeclaration(
+      inline def setVisitTypeParameterDeclaration(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TypeParameterDeclaration, js.Any], 
@@ -3618,11 +3088,9 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTypeParameterDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTypeParameterDeclarationUndefined: Self = StObject.set(x, "visitTypeParameterDeclaration", js.undefined)
+      inline def setVisitTypeParameterDeclarationUndefined: Self = StObject.set(x, "visitTypeParameterDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitTypeParameterInstantiation(
+      inline def setVisitTypeParameterInstantiation(
         value: js.ThisFunction1[
               /* this */ Context & M, 
               /* path */ NodePath[TypeParameterInstantiation, js.Any], 
@@ -3630,97 +3098,73 @@ object visitorMod {
             ]
       ): Self = StObject.set(x, "visitTypeParameterInstantiation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTypeParameterInstantiationUndefined: Self = StObject.set(x, "visitTypeParameterInstantiation", js.undefined)
+      inline def setVisitTypeParameterInstantiationUndefined: Self = StObject.set(x, "visitTypeParameterInstantiation", js.undefined)
       
-      @scala.inline
-      def setVisitTypeParameterUndefined: Self = StObject.set(x, "visitTypeParameter", js.undefined)
+      inline def setVisitTypeParameterUndefined: Self = StObject.set(x, "visitTypeParameter", js.undefined)
       
-      @scala.inline
-      def setVisitTypeofTypeAnnotation(
+      inline def setVisitTypeofTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[TypeofTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitTypeofTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitTypeofTypeAnnotationUndefined: Self = StObject.set(x, "visitTypeofTypeAnnotation", js.undefined)
+      inline def setVisitTypeofTypeAnnotationUndefined: Self = StObject.set(x, "visitTypeofTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitUnaryExpression(
+      inline def setVisitUnaryExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[UnaryExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitUnaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitUnaryExpressionUndefined: Self = StObject.set(x, "visitUnaryExpression", js.undefined)
+      inline def setVisitUnaryExpressionUndefined: Self = StObject.set(x, "visitUnaryExpression", js.undefined)
       
-      @scala.inline
-      def setVisitUnionTypeAnnotation(
+      inline def setVisitUnionTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[UnionTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitUnionTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitUnionTypeAnnotationUndefined: Self = StObject.set(x, "visitUnionTypeAnnotation", js.undefined)
+      inline def setVisitUnionTypeAnnotationUndefined: Self = StObject.set(x, "visitUnionTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitUpdateExpression(
+      inline def setVisitUpdateExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[UpdateExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitUpdateExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitUpdateExpressionUndefined: Self = StObject.set(x, "visitUpdateExpression", js.undefined)
+      inline def setVisitUpdateExpressionUndefined: Self = StObject.set(x, "visitUpdateExpression", js.undefined)
       
-      @scala.inline
-      def setVisitVariableDeclaration(
+      inline def setVisitVariableDeclaration(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[VariableDeclaration, js.Any], js.Any]
       ): Self = StObject.set(x, "visitVariableDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitVariableDeclarationUndefined: Self = StObject.set(x, "visitVariableDeclaration", js.undefined)
+      inline def setVisitVariableDeclarationUndefined: Self = StObject.set(x, "visitVariableDeclaration", js.undefined)
       
-      @scala.inline
-      def setVisitVariableDeclarator(
+      inline def setVisitVariableDeclarator(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[VariableDeclarator, js.Any], js.Any]
       ): Self = StObject.set(x, "visitVariableDeclarator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitVariableDeclaratorUndefined: Self = StObject.set(x, "visitVariableDeclarator", js.undefined)
+      inline def setVisitVariableDeclaratorUndefined: Self = StObject.set(x, "visitVariableDeclarator", js.undefined)
       
-      @scala.inline
-      def setVisitVariance(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Variance, js.Any], js.Any]): Self = StObject.set(x, "visitVariance", value.asInstanceOf[js.Any])
+      inline def setVisitVariance(value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[Variance, js.Any], js.Any]): Self = StObject.set(x, "visitVariance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitVarianceUndefined: Self = StObject.set(x, "visitVariance", js.undefined)
+      inline def setVisitVarianceUndefined: Self = StObject.set(x, "visitVariance", js.undefined)
       
-      @scala.inline
-      def setVisitVoidTypeAnnotation(
+      inline def setVisitVoidTypeAnnotation(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[VoidTypeAnnotation, js.Any], js.Any]
       ): Self = StObject.set(x, "visitVoidTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitVoidTypeAnnotationUndefined: Self = StObject.set(x, "visitVoidTypeAnnotation", js.undefined)
+      inline def setVisitVoidTypeAnnotationUndefined: Self = StObject.set(x, "visitVoidTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setVisitWhileStatement(
+      inline def setVisitWhileStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[WhileStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitWhileStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitWhileStatementUndefined: Self = StObject.set(x, "visitWhileStatement", js.undefined)
+      inline def setVisitWhileStatementUndefined: Self = StObject.set(x, "visitWhileStatement", js.undefined)
       
-      @scala.inline
-      def setVisitWithStatement(
+      inline def setVisitWithStatement(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[WithStatement, js.Any], js.Any]
       ): Self = StObject.set(x, "visitWithStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitWithStatementUndefined: Self = StObject.set(x, "visitWithStatement", js.undefined)
+      inline def setVisitWithStatementUndefined: Self = StObject.set(x, "visitWithStatement", js.undefined)
       
-      @scala.inline
-      def setVisitYieldExpression(
+      inline def setVisitYieldExpression(
         value: js.ThisFunction1[/* this */ Context & M, /* path */ NodePath[YieldExpression, js.Any], js.Any]
       ): Self = StObject.set(x, "visitYieldExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitYieldExpressionUndefined: Self = StObject.set(x, "visitYieldExpression", js.undefined)
+      inline def setVisitYieldExpressionUndefined: Self = StObject.set(x, "visitYieldExpression", js.undefined)
     }
   }
 }

@@ -10,16 +10,13 @@ trait DropTargetAreaEvent extends StObject {
 }
 object DropTargetAreaEvent {
   
-  @scala.inline
-  def apply(sender: DropTargetArea): DropTargetAreaEvent = {
+  inline def apply(sender: DropTargetArea): DropTargetAreaEvent = {
     val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropTargetAreaEvent]
   }
   
-  @scala.inline
-  implicit class DropTargetAreaEventMutableBuilder[Self <: DropTargetAreaEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DropTargetAreaEvent](x: Self) {
     
-    @scala.inline
-    def setSender(value: DropTargetArea): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: DropTargetArea): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

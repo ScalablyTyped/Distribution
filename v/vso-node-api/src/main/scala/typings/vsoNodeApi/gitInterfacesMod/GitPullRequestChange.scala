@@ -15,8 +15,7 @@ trait GitPullRequestChange
 }
 object GitPullRequestChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeId: Double,
     changeTrackingId: Double,
     changeType: VersionControlChangeType,
@@ -31,10 +30,8 @@ object GitPullRequestChange {
     __obj.asInstanceOf[GitPullRequestChange]
   }
   
-  @scala.inline
-  implicit class GitPullRequestChangeMutableBuilder[Self <: GitPullRequestChange] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestChange](x: Self) {
     
-    @scala.inline
-    def setChangeTrackingId(value: Double): Self = StObject.set(x, "changeTrackingId", value.asInstanceOf[js.Any])
+    inline def setChangeTrackingId(value: Double): Self = StObject.set(x, "changeTrackingId", value.asInstanceOf[js.Any])
   }
 }

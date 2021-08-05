@@ -15,10 +15,8 @@ object getAmiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAmi(args: GetAmiArgs): js.Promise[GetAmiResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAmi")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAmiResult]]
-  @scala.inline
-  def getAmi(args: GetAmiArgs, opts: InvokeOptions): js.Promise[GetAmiResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAmi")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAmiResult]]
+  inline def getAmi(args: GetAmiArgs): js.Promise[GetAmiResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAmi")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAmiResult]]
+  inline def getAmi(args: GetAmiArgs, opts: InvokeOptions): js.Promise[GetAmiResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAmi")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAmiResult]]
   
   trait GetAmiArgs extends StObject {
     
@@ -64,56 +62,40 @@ object getAmiMod {
   }
   object GetAmiArgs {
     
-    @scala.inline
-    def apply(owners: js.Array[String]): GetAmiArgs = {
+    inline def apply(owners: js.Array[String]): GetAmiArgs = {
       val __obj = js.Dynamic.literal(owners = owners.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAmiArgs]
     }
     
-    @scala.inline
-    implicit class GetAmiArgsMutableBuilder[Self <: GetAmiArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetAmiArgs](x: Self) {
       
-      @scala.inline
-      def setExecutableUsers(value: js.Array[String]): Self = StObject.set(x, "executableUsers", value.asInstanceOf[js.Any])
+      inline def setExecutableUsers(value: js.Array[String]): Self = StObject.set(x, "executableUsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutableUsersUndefined: Self = StObject.set(x, "executableUsers", js.undefined)
+      inline def setExecutableUsersUndefined: Self = StObject.set(x, "executableUsers", js.undefined)
       
-      @scala.inline
-      def setExecutableUsersVarargs(value: String*): Self = StObject.set(x, "executableUsers", js.Array(value :_*))
+      inline def setExecutableUsersVarargs(value: String*): Self = StObject.set(x, "executableUsers", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[GetAmiFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetAmiFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetAmiFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetAmiFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setNameRegex(value: String): Self = StObject.set(x, "nameRegex", value.asInstanceOf[js.Any])
+      inline def setNameRegex(value: String): Self = StObject.set(x, "nameRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameRegexUndefined: Self = StObject.set(x, "nameRegex", js.undefined)
+      inline def setNameRegexUndefined: Self = StObject.set(x, "nameRegex", js.undefined)
       
-      @scala.inline
-      def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+      inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+      inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -288,8 +270,7 @@ object getAmiMod {
   }
   object GetAmiResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       architecture: String,
       arn: String,
       blockDeviceMappings: js.Array[GetAmiBlockDeviceMapping],
@@ -322,128 +303,87 @@ object getAmiMod {
       __obj.asInstanceOf[GetAmiResult]
     }
     
-    @scala.inline
-    implicit class GetAmiResultMutableBuilder[Self <: GetAmiResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetAmiResult](x: Self) {
       
-      @scala.inline
-      def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+      inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockDeviceMappings(value: js.Array[GetAmiBlockDeviceMapping]): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
+      inline def setBlockDeviceMappings(value: js.Array[GetAmiBlockDeviceMapping]): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockDeviceMappingsVarargs(value: GetAmiBlockDeviceMapping*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
+      inline def setBlockDeviceMappingsVarargs(value: GetAmiBlockDeviceMapping*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutableUsers(value: js.Array[String]): Self = StObject.set(x, "executableUsers", value.asInstanceOf[js.Any])
+      inline def setExecutableUsers(value: js.Array[String]): Self = StObject.set(x, "executableUsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutableUsersUndefined: Self = StObject.set(x, "executableUsers", js.undefined)
+      inline def setExecutableUsersUndefined: Self = StObject.set(x, "executableUsers", js.undefined)
       
-      @scala.inline
-      def setExecutableUsersVarargs(value: String*): Self = StObject.set(x, "executableUsers", js.Array(value :_*))
+      inline def setExecutableUsersVarargs(value: String*): Self = StObject.set(x, "executableUsers", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetAmiFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetAmiFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetAmiFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetAmiFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setHypervisor(value: String): Self = StObject.set(x, "hypervisor", value.asInstanceOf[js.Any])
+      inline def setHypervisor(value: String): Self = StObject.set(x, "hypervisor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+      inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageLocation(value: String): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
+      inline def setImageLocation(value: String): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageOwnerAlias(value: String): Self = StObject.set(x, "imageOwnerAlias", value.asInstanceOf[js.Any])
+      inline def setImageOwnerAlias(value: String): Self = StObject.set(x, "imageOwnerAlias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+      inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelId(value: String): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
+      inline def setKernelId(value: String): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameRegex(value: String): Self = StObject.set(x, "nameRegex", value.asInstanceOf[js.Any])
+      inline def setNameRegex(value: String): Self = StObject.set(x, "nameRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameRegexUndefined: Self = StObject.set(x, "nameRegex", js.undefined)
+      inline def setNameRegexUndefined: Self = StObject.set(x, "nameRegex", js.undefined)
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+      inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+      inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductCodes(value: js.Array[GetAmiProductCode]): Self = StObject.set(x, "productCodes", value.asInstanceOf[js.Any])
+      inline def setProductCodes(value: js.Array[GetAmiProductCode]): Self = StObject.set(x, "productCodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductCodesVarargs(value: GetAmiProductCode*): Self = StObject.set(x, "productCodes", js.Array(value :_*))
+      inline def setProductCodesVarargs(value: GetAmiProductCode*): Self = StObject.set(x, "productCodes", js.Array(value :_*))
       
-      @scala.inline
-      def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRamdiskId(value: String): Self = StObject.set(x, "ramdiskId", value.asInstanceOf[js.Any])
+      inline def setRamdiskId(value: String): Self = StObject.set(x, "ramdiskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDeviceName(value: String): Self = StObject.set(x, "rootDeviceName", value.asInstanceOf[js.Any])
+      inline def setRootDeviceName(value: String): Self = StObject.set(x, "rootDeviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDeviceType(value: String): Self = StObject.set(x, "rootDeviceType", value.asInstanceOf[js.Any])
+      inline def setRootDeviceType(value: String): Self = StObject.set(x, "rootDeviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootSnapshotId(value: String): Self = StObject.set(x, "rootSnapshotId", value.asInstanceOf[js.Any])
+      inline def setRootSnapshotId(value: String): Self = StObject.set(x, "rootSnapshotId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSriovNetSupport(value: String): Self = StObject.set(x, "sriovNetSupport", value.asInstanceOf[js.Any])
+      inline def setSriovNetSupport(value: String): Self = StObject.set(x, "sriovNetSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateReason(value: StringDictionary[String]): Self = StObject.set(x, "stateReason", value.asInstanceOf[js.Any])
+      inline def setStateReason(value: StringDictionary[String]): Self = StObject.set(x, "stateReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualizationType(value: String): Self = StObject.set(x, "virtualizationType", value.asInstanceOf[js.Any])
+      inline def setVirtualizationType(value: String): Self = StObject.set(x, "virtualizationType", value.asInstanceOf[js.Any])
     }
   }
 }

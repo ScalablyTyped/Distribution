@@ -11,6 +11,5 @@ object hideVisuallyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
+  inline def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
 }

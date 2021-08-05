@@ -11,19 +11,15 @@ trait IStyleUrl extends StObject {
 }
 object IStyleUrl {
   
-  @scala.inline
-  def apply(styleURLs: js.Array[String]): IStyleUrl = {
+  inline def apply(styleURLs: js.Array[String]): IStyleUrl = {
     val __obj = js.Dynamic.literal(styleURLs = styleURLs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStyleUrl]
   }
   
-  @scala.inline
-  implicit class IStyleUrlMutableBuilder[Self <: IStyleUrl] (val x: Self) extends AnyVal {
+  extension [Self <: IStyleUrl](x: Self) {
     
-    @scala.inline
-    def setStyleURLs(value: js.Array[String]): Self = StObject.set(x, "styleURLs", value.asInstanceOf[js.Any])
+    inline def setStyleURLs(value: js.Array[String]): Self = StObject.set(x, "styleURLs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleURLsVarargs(value: String*): Self = StObject.set(x, "styleURLs", js.Array(value :_*))
+    inline def setStyleURLsVarargs(value: String*): Self = StObject.set(x, "styleURLs", js.Array(value :_*))
   }
 }

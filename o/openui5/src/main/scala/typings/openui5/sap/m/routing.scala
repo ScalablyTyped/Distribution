@@ -36,8 +36,7 @@ object routing {
   }
   object RouteMatchedHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => RouteMatchedHandler,
       getCloseDialogs: () => Boolean,
       getMetadata: () => Metadata,
@@ -47,20 +46,15 @@ object routing {
       __obj.asInstanceOf[RouteMatchedHandler]
     }
     
-    @scala.inline
-    implicit class RouteMatchedHandlerMutableBuilder[Self <: RouteMatchedHandler] (val x: Self) extends AnyVal {
+    extension [Self <: RouteMatchedHandler](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => RouteMatchedHandler): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => RouteMatchedHandler): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCloseDialogs(value: () => Boolean): Self = StObject.set(x, "getCloseDialogs", js.Any.fromFunction0(value))
+      inline def setGetCloseDialogs(value: () => Boolean): Self = StObject.set(x, "getCloseDialogs", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMetadata(value: () => Metadata): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
+      inline def setGetMetadata(value: () => Metadata): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetCloseDialogs(value: Boolean => RouteMatchedHandler): Self = StObject.set(x, "setCloseDialogs", js.Any.fromFunction1(value))
+      inline def setSetCloseDialogs(value: Boolean => RouteMatchedHandler): Self = StObject.set(x, "setCloseDialogs", js.Any.fromFunction1(value))
     }
   }
   
@@ -99,8 +93,7 @@ object routing {
   }
   object TargetHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCloseDialogs: () => Boolean,
       getMetadata: () => Metadata,
       setCloseDialogs: Boolean => TargetHandler
@@ -109,17 +102,13 @@ object routing {
       __obj.asInstanceOf[TargetHandler]
     }
     
-    @scala.inline
-    implicit class TargetHandlerMutableBuilder[Self <: TargetHandler] (val x: Self) extends AnyVal {
+    extension [Self <: TargetHandler](x: Self) {
       
-      @scala.inline
-      def setGetCloseDialogs(value: () => Boolean): Self = StObject.set(x, "getCloseDialogs", js.Any.fromFunction0(value))
+      inline def setGetCloseDialogs(value: () => Boolean): Self = StObject.set(x, "getCloseDialogs", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMetadata(value: () => Metadata): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
+      inline def setGetMetadata(value: () => Metadata): Self = StObject.set(x, "getMetadata", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetCloseDialogs(value: Boolean => TargetHandler): Self = StObject.set(x, "setCloseDialogs", js.Any.fromFunction1(value))
+      inline def setSetCloseDialogs(value: Boolean => TargetHandler): Self = StObject.set(x, "setCloseDialogs", js.Any.fromFunction1(value))
     }
   }
   

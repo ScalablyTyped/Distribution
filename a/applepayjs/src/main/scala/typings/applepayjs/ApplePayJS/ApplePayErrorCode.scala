@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplePayErrorCode extends StObject
 object ApplePayErrorCode {
   
-  @scala.inline
-  def addressUnserviceable: typings.applepayjs.applepayjsStrings.addressUnserviceable = "addressUnserviceable".asInstanceOf[typings.applepayjs.applepayjsStrings.addressUnserviceable]
+  inline def addressUnserviceable: typings.applepayjs.applepayjsStrings.addressUnserviceable = "addressUnserviceable".asInstanceOf[typings.applepayjs.applepayjsStrings.addressUnserviceable]
   
-  @scala.inline
-  def billingContactInvalid: typings.applepayjs.applepayjsStrings.billingContactInvalid = "billingContactInvalid".asInstanceOf[typings.applepayjs.applepayjsStrings.billingContactInvalid]
+  inline def billingContactInvalid: typings.applepayjs.applepayjsStrings.billingContactInvalid = "billingContactInvalid".asInstanceOf[typings.applepayjs.applepayjsStrings.billingContactInvalid]
   
-  @scala.inline
-  def shippingContactInvalid: typings.applepayjs.applepayjsStrings.shippingContactInvalid = "shippingContactInvalid".asInstanceOf[typings.applepayjs.applepayjsStrings.shippingContactInvalid]
+  inline def shippingContactInvalid: typings.applepayjs.applepayjsStrings.shippingContactInvalid = "shippingContactInvalid".asInstanceOf[typings.applepayjs.applepayjsStrings.shippingContactInvalid]
   
-  @scala.inline
-  def unknown: typings.applepayjs.applepayjsStrings.unknown = "unknown".asInstanceOf[typings.applepayjs.applepayjsStrings.unknown]
+  inline def unknown: typings.applepayjs.applepayjsStrings.unknown = "unknown".asInstanceOf[typings.applepayjs.applepayjsStrings.unknown]
 }

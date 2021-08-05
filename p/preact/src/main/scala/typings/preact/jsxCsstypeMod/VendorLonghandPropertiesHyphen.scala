@@ -2043,1375 +2043,919 @@ trait VendorLonghandPropertiesHyphen[TLength] extends StObject {
 }
 object VendorLonghandPropertiesHyphen {
   
-  @scala.inline
-  def apply[TLength](): VendorLonghandPropertiesHyphen[TLength] = {
+  inline def apply[TLength](): VendorLonghandPropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VendorLonghandPropertiesHyphen[TLength]]
   }
   
-  @scala.inline
-  implicit class VendorLonghandPropertiesHyphenMutableBuilder[Self <: VendorLonghandPropertiesHyphen[?], TLength] (val x: Self & VendorLonghandPropertiesHyphen[TLength]) extends AnyVal {
+  extension [Self <: VendorLonghandPropertiesHyphen[?], TLength](x: Self & VendorLonghandPropertiesHyphen[TLength]) {
     
-    @scala.inline
-    def `set-moz-animation-delay`(value: GlobalsString): Self = StObject.set(x, "-moz-animation-delay", value.asInstanceOf[js.Any])
+    inline def `set-moz-animation-delay`(value: GlobalsString): Self = StObject.set(x, "-moz-animation-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-animation-delayUndefined`: Self = StObject.set(x, "-moz-animation-delay", js.undefined)
+    inline def `set-moz-animation-delayUndefined`: Self = StObject.set(x, "-moz-animation-delay", js.undefined)
     
-    @scala.inline
-    def `set-moz-animation-direction`(value: AnimationDirectionProperty): Self = StObject.set(x, "-moz-animation-direction", value.asInstanceOf[js.Any])
+    inline def `set-moz-animation-direction`(value: AnimationDirectionProperty): Self = StObject.set(x, "-moz-animation-direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-animation-directionUndefined`: Self = StObject.set(x, "-moz-animation-direction", js.undefined)
+    inline def `set-moz-animation-directionUndefined`: Self = StObject.set(x, "-moz-animation-direction", js.undefined)
     
-    @scala.inline
-    def `set-moz-animation-duration`(value: GlobalsString): Self = StObject.set(x, "-moz-animation-duration", value.asInstanceOf[js.Any])
+    inline def `set-moz-animation-duration`(value: GlobalsString): Self = StObject.set(x, "-moz-animation-duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-animation-durationUndefined`: Self = StObject.set(x, "-moz-animation-duration", js.undefined)
+    inline def `set-moz-animation-durationUndefined`: Self = StObject.set(x, "-moz-animation-duration", js.undefined)
     
-    @scala.inline
-    def `set-moz-animation-fill-mode`(value: AnimationFillModeProperty): Self = StObject.set(x, "-moz-animation-fill-mode", value.asInstanceOf[js.Any])
+    inline def `set-moz-animation-fill-mode`(value: AnimationFillModeProperty): Self = StObject.set(x, "-moz-animation-fill-mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-animation-fill-modeUndefined`: Self = StObject.set(x, "-moz-animation-fill-mode", js.undefined)
+    inline def `set-moz-animation-fill-modeUndefined`: Self = StObject.set(x, "-moz-animation-fill-mode", js.undefined)
     
-    @scala.inline
-    def `set-moz-animation-iteration-count`(value: AnimationIterationCountProperty): Self = StObject.set(x, "-moz-animation-iteration-count", value.asInstanceOf[js.Any])
+    inline def `set-moz-animation-iteration-count`(value: AnimationIterationCountProperty): Self = StObject.set(x, "-moz-animation-iteration-count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-animation-iteration-countUndefined`: Self = StObject.set(x, "-moz-animation-iteration-count", js.undefined)
+    inline def `set-moz-animation-iteration-countUndefined`: Self = StObject.set(x, "-moz-animation-iteration-count", js.undefined)
     
-    @scala.inline
-    def `set-moz-animation-name`(value: AnimationNameProperty): Self = StObject.set(x, "-moz-animation-name", value.asInstanceOf[js.Any])
+    inline def `set-moz-animation-name`(value: AnimationNameProperty): Self = StObject.set(x, "-moz-animation-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-animation-nameUndefined`: Self = StObject.set(x, "-moz-animation-name", js.undefined)
+    inline def `set-moz-animation-nameUndefined`: Self = StObject.set(x, "-moz-animation-name", js.undefined)
     
-    @scala.inline
-    def `set-moz-animation-play-state`(value: AnimationPlayStateProperty): Self = StObject.set(x, "-moz-animation-play-state", value.asInstanceOf[js.Any])
+    inline def `set-moz-animation-play-state`(value: AnimationPlayStateProperty): Self = StObject.set(x, "-moz-animation-play-state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-animation-play-stateUndefined`: Self = StObject.set(x, "-moz-animation-play-state", js.undefined)
+    inline def `set-moz-animation-play-stateUndefined`: Self = StObject.set(x, "-moz-animation-play-state", js.undefined)
     
-    @scala.inline
-    def `set-moz-animation-timing-function`(value: AnimationTimingFunctionProperty): Self = StObject.set(x, "-moz-animation-timing-function", value.asInstanceOf[js.Any])
+    inline def `set-moz-animation-timing-function`(value: AnimationTimingFunctionProperty): Self = StObject.set(x, "-moz-animation-timing-function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-animation-timing-functionUndefined`: Self = StObject.set(x, "-moz-animation-timing-function", js.undefined)
+    inline def `set-moz-animation-timing-functionUndefined`: Self = StObject.set(x, "-moz-animation-timing-function", js.undefined)
     
-    @scala.inline
-    def `set-moz-appearance`(value: MozAppearanceProperty): Self = StObject.set(x, "-moz-appearance", value.asInstanceOf[js.Any])
+    inline def `set-moz-appearance`(value: MozAppearanceProperty): Self = StObject.set(x, "-moz-appearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-appearanceUndefined`: Self = StObject.set(x, "-moz-appearance", js.undefined)
+    inline def `set-moz-appearanceUndefined`: Self = StObject.set(x, "-moz-appearance", js.undefined)
     
-    @scala.inline
-    def `set-moz-backface-visibility`(value: BackfaceVisibilityProperty): Self = StObject.set(x, "-moz-backface-visibility", value.asInstanceOf[js.Any])
+    inline def `set-moz-backface-visibility`(value: BackfaceVisibilityProperty): Self = StObject.set(x, "-moz-backface-visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-backface-visibilityUndefined`: Self = StObject.set(x, "-moz-backface-visibility", js.undefined)
+    inline def `set-moz-backface-visibilityUndefined`: Self = StObject.set(x, "-moz-backface-visibility", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-bottom-colors`(value: MozBorderBottomColorsProperty): Self = StObject.set(x, "-moz-border-bottom-colors", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-bottom-colors`(value: MozBorderBottomColorsProperty): Self = StObject.set(x, "-moz-border-bottom-colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-bottom-colorsUndefined`: Self = StObject.set(x, "-moz-border-bottom-colors", js.undefined)
+    inline def `set-moz-border-bottom-colorsUndefined`: Self = StObject.set(x, "-moz-border-bottom-colors", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-end-color`(value: BorderInlineEndColorProperty): Self = StObject.set(x, "-moz-border-end-color", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-end-color`(value: BorderInlineEndColorProperty): Self = StObject.set(x, "-moz-border-end-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-end-colorUndefined`: Self = StObject.set(x, "-moz-border-end-color", js.undefined)
+    inline def `set-moz-border-end-colorUndefined`: Self = StObject.set(x, "-moz-border-end-color", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-end-style`(value: BorderInlineEndStyleProperty): Self = StObject.set(x, "-moz-border-end-style", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-end-style`(value: BorderInlineEndStyleProperty): Self = StObject.set(x, "-moz-border-end-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-end-styleUndefined`: Self = StObject.set(x, "-moz-border-end-style", js.undefined)
+    inline def `set-moz-border-end-styleUndefined`: Self = StObject.set(x, "-moz-border-end-style", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-end-width`(value: BorderInlineEndWidthProperty[TLength]): Self = StObject.set(x, "-moz-border-end-width", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-end-width`(value: BorderInlineEndWidthProperty[TLength]): Self = StObject.set(x, "-moz-border-end-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-end-widthUndefined`: Self = StObject.set(x, "-moz-border-end-width", js.undefined)
+    inline def `set-moz-border-end-widthUndefined`: Self = StObject.set(x, "-moz-border-end-width", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-left-colors`(value: MozBorderLeftColorsProperty): Self = StObject.set(x, "-moz-border-left-colors", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-left-colors`(value: MozBorderLeftColorsProperty): Self = StObject.set(x, "-moz-border-left-colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-left-colorsUndefined`: Self = StObject.set(x, "-moz-border-left-colors", js.undefined)
+    inline def `set-moz-border-left-colorsUndefined`: Self = StObject.set(x, "-moz-border-left-colors", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-right-colors`(value: MozBorderRightColorsProperty): Self = StObject.set(x, "-moz-border-right-colors", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-right-colors`(value: MozBorderRightColorsProperty): Self = StObject.set(x, "-moz-border-right-colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-right-colorsUndefined`: Self = StObject.set(x, "-moz-border-right-colors", js.undefined)
+    inline def `set-moz-border-right-colorsUndefined`: Self = StObject.set(x, "-moz-border-right-colors", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-start-color`(value: BorderInlineStartColorProperty): Self = StObject.set(x, "-moz-border-start-color", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-start-color`(value: BorderInlineStartColorProperty): Self = StObject.set(x, "-moz-border-start-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-start-colorUndefined`: Self = StObject.set(x, "-moz-border-start-color", js.undefined)
+    inline def `set-moz-border-start-colorUndefined`: Self = StObject.set(x, "-moz-border-start-color", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-start-style`(value: BorderInlineStartStyleProperty): Self = StObject.set(x, "-moz-border-start-style", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-start-style`(value: BorderInlineStartStyleProperty): Self = StObject.set(x, "-moz-border-start-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-start-styleUndefined`: Self = StObject.set(x, "-moz-border-start-style", js.undefined)
+    inline def `set-moz-border-start-styleUndefined`: Self = StObject.set(x, "-moz-border-start-style", js.undefined)
     
-    @scala.inline
-    def `set-moz-border-top-colors`(value: MozBorderTopColorsProperty): Self = StObject.set(x, "-moz-border-top-colors", value.asInstanceOf[js.Any])
+    inline def `set-moz-border-top-colors`(value: MozBorderTopColorsProperty): Self = StObject.set(x, "-moz-border-top-colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-border-top-colorsUndefined`: Self = StObject.set(x, "-moz-border-top-colors", js.undefined)
+    inline def `set-moz-border-top-colorsUndefined`: Self = StObject.set(x, "-moz-border-top-colors", js.undefined)
     
-    @scala.inline
-    def `set-moz-box-sizing`(value: BoxSizingProperty): Self = StObject.set(x, "-moz-box-sizing", value.asInstanceOf[js.Any])
+    inline def `set-moz-box-sizing`(value: BoxSizingProperty): Self = StObject.set(x, "-moz-box-sizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-box-sizingUndefined`: Self = StObject.set(x, "-moz-box-sizing", js.undefined)
+    inline def `set-moz-box-sizingUndefined`: Self = StObject.set(x, "-moz-box-sizing", js.undefined)
     
-    @scala.inline
-    def `set-moz-column-count`(value: ColumnCountProperty): Self = StObject.set(x, "-moz-column-count", value.asInstanceOf[js.Any])
+    inline def `set-moz-column-count`(value: ColumnCountProperty): Self = StObject.set(x, "-moz-column-count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-column-countUndefined`: Self = StObject.set(x, "-moz-column-count", js.undefined)
+    inline def `set-moz-column-countUndefined`: Self = StObject.set(x, "-moz-column-count", js.undefined)
     
-    @scala.inline
-    def `set-moz-column-fill`(value: ColumnFillProperty): Self = StObject.set(x, "-moz-column-fill", value.asInstanceOf[js.Any])
+    inline def `set-moz-column-fill`(value: ColumnFillProperty): Self = StObject.set(x, "-moz-column-fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-column-fillUndefined`: Self = StObject.set(x, "-moz-column-fill", js.undefined)
+    inline def `set-moz-column-fillUndefined`: Self = StObject.set(x, "-moz-column-fill", js.undefined)
     
-    @scala.inline
-    def `set-moz-column-gap`(value: ColumnGapProperty[TLength]): Self = StObject.set(x, "-moz-column-gap", value.asInstanceOf[js.Any])
+    inline def `set-moz-column-gap`(value: ColumnGapProperty[TLength]): Self = StObject.set(x, "-moz-column-gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-column-gapUndefined`: Self = StObject.set(x, "-moz-column-gap", js.undefined)
+    inline def `set-moz-column-gapUndefined`: Self = StObject.set(x, "-moz-column-gap", js.undefined)
     
-    @scala.inline
-    def `set-moz-column-rule-color`(value: ColumnRuleColorProperty): Self = StObject.set(x, "-moz-column-rule-color", value.asInstanceOf[js.Any])
+    inline def `set-moz-column-rule-color`(value: ColumnRuleColorProperty): Self = StObject.set(x, "-moz-column-rule-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-column-rule-colorUndefined`: Self = StObject.set(x, "-moz-column-rule-color", js.undefined)
+    inline def `set-moz-column-rule-colorUndefined`: Self = StObject.set(x, "-moz-column-rule-color", js.undefined)
     
-    @scala.inline
-    def `set-moz-column-rule-style`(value: ColumnRuleStyleProperty): Self = StObject.set(x, "-moz-column-rule-style", value.asInstanceOf[js.Any])
+    inline def `set-moz-column-rule-style`(value: ColumnRuleStyleProperty): Self = StObject.set(x, "-moz-column-rule-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-column-rule-styleUndefined`: Self = StObject.set(x, "-moz-column-rule-style", js.undefined)
+    inline def `set-moz-column-rule-styleUndefined`: Self = StObject.set(x, "-moz-column-rule-style", js.undefined)
     
-    @scala.inline
-    def `set-moz-column-rule-width`(value: ColumnRuleWidthProperty[TLength]): Self = StObject.set(x, "-moz-column-rule-width", value.asInstanceOf[js.Any])
+    inline def `set-moz-column-rule-width`(value: ColumnRuleWidthProperty[TLength]): Self = StObject.set(x, "-moz-column-rule-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-column-rule-widthUndefined`: Self = StObject.set(x, "-moz-column-rule-width", js.undefined)
+    inline def `set-moz-column-rule-widthUndefined`: Self = StObject.set(x, "-moz-column-rule-width", js.undefined)
     
-    @scala.inline
-    def `set-moz-column-width`(value: ColumnWidthProperty[TLength]): Self = StObject.set(x, "-moz-column-width", value.asInstanceOf[js.Any])
+    inline def `set-moz-column-width`(value: ColumnWidthProperty[TLength]): Self = StObject.set(x, "-moz-column-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-column-widthUndefined`: Self = StObject.set(x, "-moz-column-width", js.undefined)
+    inline def `set-moz-column-widthUndefined`: Self = StObject.set(x, "-moz-column-width", js.undefined)
     
-    @scala.inline
-    def `set-moz-context-properties`(value: MozContextPropertiesProperty): Self = StObject.set(x, "-moz-context-properties", value.asInstanceOf[js.Any])
+    inline def `set-moz-context-properties`(value: MozContextPropertiesProperty): Self = StObject.set(x, "-moz-context-properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-context-propertiesUndefined`: Self = StObject.set(x, "-moz-context-properties", js.undefined)
+    inline def `set-moz-context-propertiesUndefined`: Self = StObject.set(x, "-moz-context-properties", js.undefined)
     
-    @scala.inline
-    def `set-moz-float-edge`(value: MozFloatEdgeProperty): Self = StObject.set(x, "-moz-float-edge", value.asInstanceOf[js.Any])
+    inline def `set-moz-float-edge`(value: MozFloatEdgeProperty): Self = StObject.set(x, "-moz-float-edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-float-edgeUndefined`: Self = StObject.set(x, "-moz-float-edge", js.undefined)
+    inline def `set-moz-float-edgeUndefined`: Self = StObject.set(x, "-moz-float-edge", js.undefined)
     
-    @scala.inline
-    def `set-moz-font-feature-settings`(value: FontFeatureSettingsProperty): Self = StObject.set(x, "-moz-font-feature-settings", value.asInstanceOf[js.Any])
+    inline def `set-moz-font-feature-settings`(value: FontFeatureSettingsProperty): Self = StObject.set(x, "-moz-font-feature-settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-font-feature-settingsUndefined`: Self = StObject.set(x, "-moz-font-feature-settings", js.undefined)
+    inline def `set-moz-font-feature-settingsUndefined`: Self = StObject.set(x, "-moz-font-feature-settings", js.undefined)
     
-    @scala.inline
-    def `set-moz-font-language-override`(value: FontLanguageOverrideProperty): Self = StObject.set(x, "-moz-font-language-override", value.asInstanceOf[js.Any])
+    inline def `set-moz-font-language-override`(value: FontLanguageOverrideProperty): Self = StObject.set(x, "-moz-font-language-override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-font-language-overrideUndefined`: Self = StObject.set(x, "-moz-font-language-override", js.undefined)
+    inline def `set-moz-font-language-overrideUndefined`: Self = StObject.set(x, "-moz-font-language-override", js.undefined)
     
-    @scala.inline
-    def `set-moz-force-broken-image-icon`(value: GlobalsNumber): Self = StObject.set(x, "-moz-force-broken-image-icon", value.asInstanceOf[js.Any])
+    inline def `set-moz-force-broken-image-icon`(value: GlobalsNumber): Self = StObject.set(x, "-moz-force-broken-image-icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-force-broken-image-iconUndefined`: Self = StObject.set(x, "-moz-force-broken-image-icon", js.undefined)
+    inline def `set-moz-force-broken-image-iconUndefined`: Self = StObject.set(x, "-moz-force-broken-image-icon", js.undefined)
     
-    @scala.inline
-    def `set-moz-hyphens`(value: HyphensProperty): Self = StObject.set(x, "-moz-hyphens", value.asInstanceOf[js.Any])
+    inline def `set-moz-hyphens`(value: HyphensProperty): Self = StObject.set(x, "-moz-hyphens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-hyphensUndefined`: Self = StObject.set(x, "-moz-hyphens", js.undefined)
+    inline def `set-moz-hyphensUndefined`: Self = StObject.set(x, "-moz-hyphens", js.undefined)
     
-    @scala.inline
-    def `set-moz-image-region`(value: MozImageRegionProperty): Self = StObject.set(x, "-moz-image-region", value.asInstanceOf[js.Any])
+    inline def `set-moz-image-region`(value: MozImageRegionProperty): Self = StObject.set(x, "-moz-image-region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-image-regionUndefined`: Self = StObject.set(x, "-moz-image-region", js.undefined)
+    inline def `set-moz-image-regionUndefined`: Self = StObject.set(x, "-moz-image-region", js.undefined)
     
-    @scala.inline
-    def `set-moz-margin-end`(value: MarginInlineEndProperty[TLength]): Self = StObject.set(x, "-moz-margin-end", value.asInstanceOf[js.Any])
+    inline def `set-moz-margin-end`(value: MarginInlineEndProperty[TLength]): Self = StObject.set(x, "-moz-margin-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-margin-endUndefined`: Self = StObject.set(x, "-moz-margin-end", js.undefined)
+    inline def `set-moz-margin-endUndefined`: Self = StObject.set(x, "-moz-margin-end", js.undefined)
     
-    @scala.inline
-    def `set-moz-margin-start`(value: MarginInlineStartProperty[TLength]): Self = StObject.set(x, "-moz-margin-start", value.asInstanceOf[js.Any])
+    inline def `set-moz-margin-start`(value: MarginInlineStartProperty[TLength]): Self = StObject.set(x, "-moz-margin-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-margin-startUndefined`: Self = StObject.set(x, "-moz-margin-start", js.undefined)
+    inline def `set-moz-margin-startUndefined`: Self = StObject.set(x, "-moz-margin-start", js.undefined)
     
-    @scala.inline
-    def `set-moz-orient`(value: MozOrientProperty): Self = StObject.set(x, "-moz-orient", value.asInstanceOf[js.Any])
+    inline def `set-moz-orient`(value: MozOrientProperty): Self = StObject.set(x, "-moz-orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-orientUndefined`: Self = StObject.set(x, "-moz-orient", js.undefined)
+    inline def `set-moz-orientUndefined`: Self = StObject.set(x, "-moz-orient", js.undefined)
     
-    @scala.inline
-    def `set-moz-outline-radius-bottomleft`(value: MozOutlineRadiusBottomleftProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius-bottomleft", value.asInstanceOf[js.Any])
+    inline def `set-moz-outline-radius-bottomleft`(value: MozOutlineRadiusBottomleftProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius-bottomleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-outline-radius-bottomleftUndefined`: Self = StObject.set(x, "-moz-outline-radius-bottomleft", js.undefined)
+    inline def `set-moz-outline-radius-bottomleftUndefined`: Self = StObject.set(x, "-moz-outline-radius-bottomleft", js.undefined)
     
-    @scala.inline
-    def `set-moz-outline-radius-bottomright`(value: MozOutlineRadiusBottomrightProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius-bottomright", value.asInstanceOf[js.Any])
+    inline def `set-moz-outline-radius-bottomright`(value: MozOutlineRadiusBottomrightProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius-bottomright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-outline-radius-bottomrightUndefined`: Self = StObject.set(x, "-moz-outline-radius-bottomright", js.undefined)
+    inline def `set-moz-outline-radius-bottomrightUndefined`: Self = StObject.set(x, "-moz-outline-radius-bottomright", js.undefined)
     
-    @scala.inline
-    def `set-moz-outline-radius-topleft`(value: MozOutlineRadiusTopleftProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius-topleft", value.asInstanceOf[js.Any])
+    inline def `set-moz-outline-radius-topleft`(value: MozOutlineRadiusTopleftProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius-topleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-outline-radius-topleftUndefined`: Self = StObject.set(x, "-moz-outline-radius-topleft", js.undefined)
+    inline def `set-moz-outline-radius-topleftUndefined`: Self = StObject.set(x, "-moz-outline-radius-topleft", js.undefined)
     
-    @scala.inline
-    def `set-moz-outline-radius-topright`(value: MozOutlineRadiusToprightProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius-topright", value.asInstanceOf[js.Any])
+    inline def `set-moz-outline-radius-topright`(value: MozOutlineRadiusToprightProperty[TLength]): Self = StObject.set(x, "-moz-outline-radius-topright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-outline-radius-toprightUndefined`: Self = StObject.set(x, "-moz-outline-radius-topright", js.undefined)
+    inline def `set-moz-outline-radius-toprightUndefined`: Self = StObject.set(x, "-moz-outline-radius-topright", js.undefined)
     
-    @scala.inline
-    def `set-moz-padding-end`(value: PaddingInlineEndProperty[TLength]): Self = StObject.set(x, "-moz-padding-end", value.asInstanceOf[js.Any])
+    inline def `set-moz-padding-end`(value: PaddingInlineEndProperty[TLength]): Self = StObject.set(x, "-moz-padding-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-padding-endUndefined`: Self = StObject.set(x, "-moz-padding-end", js.undefined)
+    inline def `set-moz-padding-endUndefined`: Self = StObject.set(x, "-moz-padding-end", js.undefined)
     
-    @scala.inline
-    def `set-moz-padding-start`(value: PaddingInlineStartProperty[TLength]): Self = StObject.set(x, "-moz-padding-start", value.asInstanceOf[js.Any])
+    inline def `set-moz-padding-start`(value: PaddingInlineStartProperty[TLength]): Self = StObject.set(x, "-moz-padding-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-padding-startUndefined`: Self = StObject.set(x, "-moz-padding-start", js.undefined)
+    inline def `set-moz-padding-startUndefined`: Self = StObject.set(x, "-moz-padding-start", js.undefined)
     
-    @scala.inline
-    def `set-moz-perspective`(value: PerspectiveProperty[TLength]): Self = StObject.set(x, "-moz-perspective", value.asInstanceOf[js.Any])
+    inline def `set-moz-perspective`(value: PerspectiveProperty[TLength]): Self = StObject.set(x, "-moz-perspective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-perspective-origin`(value: PerspectiveOriginProperty[TLength]): Self = StObject.set(x, "-moz-perspective-origin", value.asInstanceOf[js.Any])
+    inline def `set-moz-perspective-origin`(value: PerspectiveOriginProperty[TLength]): Self = StObject.set(x, "-moz-perspective-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-perspective-originUndefined`: Self = StObject.set(x, "-moz-perspective-origin", js.undefined)
+    inline def `set-moz-perspective-originUndefined`: Self = StObject.set(x, "-moz-perspective-origin", js.undefined)
     
-    @scala.inline
-    def `set-moz-perspectiveUndefined`: Self = StObject.set(x, "-moz-perspective", js.undefined)
+    inline def `set-moz-perspectiveUndefined`: Self = StObject.set(x, "-moz-perspective", js.undefined)
     
-    @scala.inline
-    def `set-moz-stack-sizing`(value: MozStackSizingProperty): Self = StObject.set(x, "-moz-stack-sizing", value.asInstanceOf[js.Any])
+    inline def `set-moz-stack-sizing`(value: MozStackSizingProperty): Self = StObject.set(x, "-moz-stack-sizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-stack-sizingUndefined`: Self = StObject.set(x, "-moz-stack-sizing", js.undefined)
+    inline def `set-moz-stack-sizingUndefined`: Self = StObject.set(x, "-moz-stack-sizing", js.undefined)
     
-    @scala.inline
-    def `set-moz-tab-size`(value: TabSizeProperty[TLength]): Self = StObject.set(x, "-moz-tab-size", value.asInstanceOf[js.Any])
+    inline def `set-moz-tab-size`(value: TabSizeProperty[TLength]): Self = StObject.set(x, "-moz-tab-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-tab-sizeUndefined`: Self = StObject.set(x, "-moz-tab-size", js.undefined)
+    inline def `set-moz-tab-sizeUndefined`: Self = StObject.set(x, "-moz-tab-size", js.undefined)
     
-    @scala.inline
-    def `set-moz-text-blink`(value: MozTextBlinkProperty): Self = StObject.set(x, "-moz-text-blink", value.asInstanceOf[js.Any])
+    inline def `set-moz-text-blink`(value: MozTextBlinkProperty): Self = StObject.set(x, "-moz-text-blink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-text-blinkUndefined`: Self = StObject.set(x, "-moz-text-blink", js.undefined)
+    inline def `set-moz-text-blinkUndefined`: Self = StObject.set(x, "-moz-text-blink", js.undefined)
     
-    @scala.inline
-    def `set-moz-text-size-adjust`(value: TextSizeAdjustProperty): Self = StObject.set(x, "-moz-text-size-adjust", value.asInstanceOf[js.Any])
+    inline def `set-moz-text-size-adjust`(value: TextSizeAdjustProperty): Self = StObject.set(x, "-moz-text-size-adjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-text-size-adjustUndefined`: Self = StObject.set(x, "-moz-text-size-adjust", js.undefined)
+    inline def `set-moz-text-size-adjustUndefined`: Self = StObject.set(x, "-moz-text-size-adjust", js.undefined)
     
-    @scala.inline
-    def `set-moz-transform-origin`(value: TransformOriginProperty[TLength]): Self = StObject.set(x, "-moz-transform-origin", value.asInstanceOf[js.Any])
+    inline def `set-moz-transform-origin`(value: TransformOriginProperty[TLength]): Self = StObject.set(x, "-moz-transform-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-transform-originUndefined`: Self = StObject.set(x, "-moz-transform-origin", js.undefined)
+    inline def `set-moz-transform-originUndefined`: Self = StObject.set(x, "-moz-transform-origin", js.undefined)
     
-    @scala.inline
-    def `set-moz-transform-style`(value: TransformStyleProperty): Self = StObject.set(x, "-moz-transform-style", value.asInstanceOf[js.Any])
+    inline def `set-moz-transform-style`(value: TransformStyleProperty): Self = StObject.set(x, "-moz-transform-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-transform-styleUndefined`: Self = StObject.set(x, "-moz-transform-style", js.undefined)
+    inline def `set-moz-transform-styleUndefined`: Self = StObject.set(x, "-moz-transform-style", js.undefined)
     
-    @scala.inline
-    def `set-moz-transition-delay`(value: GlobalsString): Self = StObject.set(x, "-moz-transition-delay", value.asInstanceOf[js.Any])
+    inline def `set-moz-transition-delay`(value: GlobalsString): Self = StObject.set(x, "-moz-transition-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-transition-delayUndefined`: Self = StObject.set(x, "-moz-transition-delay", js.undefined)
+    inline def `set-moz-transition-delayUndefined`: Self = StObject.set(x, "-moz-transition-delay", js.undefined)
     
-    @scala.inline
-    def `set-moz-transition-duration`(value: GlobalsString): Self = StObject.set(x, "-moz-transition-duration", value.asInstanceOf[js.Any])
+    inline def `set-moz-transition-duration`(value: GlobalsString): Self = StObject.set(x, "-moz-transition-duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-transition-durationUndefined`: Self = StObject.set(x, "-moz-transition-duration", js.undefined)
+    inline def `set-moz-transition-durationUndefined`: Self = StObject.set(x, "-moz-transition-duration", js.undefined)
     
-    @scala.inline
-    def `set-moz-transition-property`(value: TransitionPropertyProperty): Self = StObject.set(x, "-moz-transition-property", value.asInstanceOf[js.Any])
+    inline def `set-moz-transition-property`(value: TransitionPropertyProperty): Self = StObject.set(x, "-moz-transition-property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-transition-propertyUndefined`: Self = StObject.set(x, "-moz-transition-property", js.undefined)
+    inline def `set-moz-transition-propertyUndefined`: Self = StObject.set(x, "-moz-transition-property", js.undefined)
     
-    @scala.inline
-    def `set-moz-transition-timing-function`(value: TransitionTimingFunctionProperty): Self = StObject.set(x, "-moz-transition-timing-function", value.asInstanceOf[js.Any])
+    inline def `set-moz-transition-timing-function`(value: TransitionTimingFunctionProperty): Self = StObject.set(x, "-moz-transition-timing-function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-transition-timing-functionUndefined`: Self = StObject.set(x, "-moz-transition-timing-function", js.undefined)
+    inline def `set-moz-transition-timing-functionUndefined`: Self = StObject.set(x, "-moz-transition-timing-function", js.undefined)
     
-    @scala.inline
-    def `set-moz-user-focus`(value: MozUserFocusProperty): Self = StObject.set(x, "-moz-user-focus", value.asInstanceOf[js.Any])
+    inline def `set-moz-user-focus`(value: MozUserFocusProperty): Self = StObject.set(x, "-moz-user-focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-user-focusUndefined`: Self = StObject.set(x, "-moz-user-focus", js.undefined)
+    inline def `set-moz-user-focusUndefined`: Self = StObject.set(x, "-moz-user-focus", js.undefined)
     
-    @scala.inline
-    def `set-moz-user-modify`(value: MozUserModifyProperty): Self = StObject.set(x, "-moz-user-modify", value.asInstanceOf[js.Any])
+    inline def `set-moz-user-modify`(value: MozUserModifyProperty): Self = StObject.set(x, "-moz-user-modify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-user-modifyUndefined`: Self = StObject.set(x, "-moz-user-modify", js.undefined)
+    inline def `set-moz-user-modifyUndefined`: Self = StObject.set(x, "-moz-user-modify", js.undefined)
     
-    @scala.inline
-    def `set-moz-user-select`(value: UserSelectProperty): Self = StObject.set(x, "-moz-user-select", value.asInstanceOf[js.Any])
+    inline def `set-moz-user-select`(value: UserSelectProperty): Self = StObject.set(x, "-moz-user-select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-user-selectUndefined`: Self = StObject.set(x, "-moz-user-select", js.undefined)
+    inline def `set-moz-user-selectUndefined`: Self = StObject.set(x, "-moz-user-select", js.undefined)
     
-    @scala.inline
-    def `set-moz-window-dragging`(value: MozWindowDraggingProperty): Self = StObject.set(x, "-moz-window-dragging", value.asInstanceOf[js.Any])
+    inline def `set-moz-window-dragging`(value: MozWindowDraggingProperty): Self = StObject.set(x, "-moz-window-dragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-window-draggingUndefined`: Self = StObject.set(x, "-moz-window-dragging", js.undefined)
+    inline def `set-moz-window-draggingUndefined`: Self = StObject.set(x, "-moz-window-dragging", js.undefined)
     
-    @scala.inline
-    def `set-moz-window-shadow`(value: MozWindowShadowProperty): Self = StObject.set(x, "-moz-window-shadow", value.asInstanceOf[js.Any])
+    inline def `set-moz-window-shadow`(value: MozWindowShadowProperty): Self = StObject.set(x, "-moz-window-shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-moz-window-shadowUndefined`: Self = StObject.set(x, "-moz-window-shadow", js.undefined)
+    inline def `set-moz-window-shadowUndefined`: Self = StObject.set(x, "-moz-window-shadow", js.undefined)
     
-    @scala.inline
-    def `set-ms-accelerator`(value: MsAcceleratorProperty): Self = StObject.set(x, "-ms-accelerator", value.asInstanceOf[js.Any])
+    inline def `set-ms-accelerator`(value: MsAcceleratorProperty): Self = StObject.set(x, "-ms-accelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-acceleratorUndefined`: Self = StObject.set(x, "-ms-accelerator", js.undefined)
+    inline def `set-ms-acceleratorUndefined`: Self = StObject.set(x, "-ms-accelerator", js.undefined)
     
-    @scala.inline
-    def `set-ms-align-self`(value: AlignSelfProperty): Self = StObject.set(x, "-ms-align-self", value.asInstanceOf[js.Any])
+    inline def `set-ms-align-self`(value: AlignSelfProperty): Self = StObject.set(x, "-ms-align-self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-align-selfUndefined`: Self = StObject.set(x, "-ms-align-self", js.undefined)
+    inline def `set-ms-align-selfUndefined`: Self = StObject.set(x, "-ms-align-self", js.undefined)
     
-    @scala.inline
-    def `set-ms-block-progression`(value: MsBlockProgressionProperty): Self = StObject.set(x, "-ms-block-progression", value.asInstanceOf[js.Any])
+    inline def `set-ms-block-progression`(value: MsBlockProgressionProperty): Self = StObject.set(x, "-ms-block-progression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-block-progressionUndefined`: Self = StObject.set(x, "-ms-block-progression", js.undefined)
+    inline def `set-ms-block-progressionUndefined`: Self = StObject.set(x, "-ms-block-progression", js.undefined)
     
-    @scala.inline
-    def `set-ms-content-zoom-chaining`(value: MsContentZoomChainingProperty): Self = StObject.set(x, "-ms-content-zoom-chaining", value.asInstanceOf[js.Any])
+    inline def `set-ms-content-zoom-chaining`(value: MsContentZoomChainingProperty): Self = StObject.set(x, "-ms-content-zoom-chaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-content-zoom-chainingUndefined`: Self = StObject.set(x, "-ms-content-zoom-chaining", js.undefined)
+    inline def `set-ms-content-zoom-chainingUndefined`: Self = StObject.set(x, "-ms-content-zoom-chaining", js.undefined)
     
-    @scala.inline
-    def `set-ms-content-zoom-limit-max`(value: GlobalsString): Self = StObject.set(x, "-ms-content-zoom-limit-max", value.asInstanceOf[js.Any])
+    inline def `set-ms-content-zoom-limit-max`(value: GlobalsString): Self = StObject.set(x, "-ms-content-zoom-limit-max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-content-zoom-limit-maxUndefined`: Self = StObject.set(x, "-ms-content-zoom-limit-max", js.undefined)
+    inline def `set-ms-content-zoom-limit-maxUndefined`: Self = StObject.set(x, "-ms-content-zoom-limit-max", js.undefined)
     
-    @scala.inline
-    def `set-ms-content-zoom-limit-min`(value: GlobalsString): Self = StObject.set(x, "-ms-content-zoom-limit-min", value.asInstanceOf[js.Any])
+    inline def `set-ms-content-zoom-limit-min`(value: GlobalsString): Self = StObject.set(x, "-ms-content-zoom-limit-min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-content-zoom-limit-minUndefined`: Self = StObject.set(x, "-ms-content-zoom-limit-min", js.undefined)
+    inline def `set-ms-content-zoom-limit-minUndefined`: Self = StObject.set(x, "-ms-content-zoom-limit-min", js.undefined)
     
-    @scala.inline
-    def `set-ms-content-zoom-snap-points`(value: GlobalsString): Self = StObject.set(x, "-ms-content-zoom-snap-points", value.asInstanceOf[js.Any])
+    inline def `set-ms-content-zoom-snap-points`(value: GlobalsString): Self = StObject.set(x, "-ms-content-zoom-snap-points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-content-zoom-snap-pointsUndefined`: Self = StObject.set(x, "-ms-content-zoom-snap-points", js.undefined)
+    inline def `set-ms-content-zoom-snap-pointsUndefined`: Self = StObject.set(x, "-ms-content-zoom-snap-points", js.undefined)
     
-    @scala.inline
-    def `set-ms-content-zoom-snap-type`(value: MsContentZoomSnapTypeProperty): Self = StObject.set(x, "-ms-content-zoom-snap-type", value.asInstanceOf[js.Any])
+    inline def `set-ms-content-zoom-snap-type`(value: MsContentZoomSnapTypeProperty): Self = StObject.set(x, "-ms-content-zoom-snap-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-content-zoom-snap-typeUndefined`: Self = StObject.set(x, "-ms-content-zoom-snap-type", js.undefined)
+    inline def `set-ms-content-zoom-snap-typeUndefined`: Self = StObject.set(x, "-ms-content-zoom-snap-type", js.undefined)
     
-    @scala.inline
-    def `set-ms-content-zooming`(value: MsContentZoomingProperty): Self = StObject.set(x, "-ms-content-zooming", value.asInstanceOf[js.Any])
+    inline def `set-ms-content-zooming`(value: MsContentZoomingProperty): Self = StObject.set(x, "-ms-content-zooming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-content-zoomingUndefined`: Self = StObject.set(x, "-ms-content-zooming", js.undefined)
+    inline def `set-ms-content-zoomingUndefined`: Self = StObject.set(x, "-ms-content-zooming", js.undefined)
     
-    @scala.inline
-    def `set-ms-filter`(value: GlobalsString): Self = StObject.set(x, "-ms-filter", value.asInstanceOf[js.Any])
+    inline def `set-ms-filter`(value: GlobalsString): Self = StObject.set(x, "-ms-filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-filterUndefined`: Self = StObject.set(x, "-ms-filter", js.undefined)
+    inline def `set-ms-filterUndefined`: Self = StObject.set(x, "-ms-filter", js.undefined)
     
-    @scala.inline
-    def `set-ms-flex-direction`(value: FlexDirectionProperty): Self = StObject.set(x, "-ms-flex-direction", value.asInstanceOf[js.Any])
+    inline def `set-ms-flex-direction`(value: FlexDirectionProperty): Self = StObject.set(x, "-ms-flex-direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-flex-directionUndefined`: Self = StObject.set(x, "-ms-flex-direction", js.undefined)
+    inline def `set-ms-flex-directionUndefined`: Self = StObject.set(x, "-ms-flex-direction", js.undefined)
     
-    @scala.inline
-    def `set-ms-flex-positive`(value: GlobalsNumber): Self = StObject.set(x, "-ms-flex-positive", value.asInstanceOf[js.Any])
+    inline def `set-ms-flex-positive`(value: GlobalsNumber): Self = StObject.set(x, "-ms-flex-positive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-flex-positiveUndefined`: Self = StObject.set(x, "-ms-flex-positive", js.undefined)
+    inline def `set-ms-flex-positiveUndefined`: Self = StObject.set(x, "-ms-flex-positive", js.undefined)
     
-    @scala.inline
-    def `set-ms-flow-from`(value: MsFlowFromProperty): Self = StObject.set(x, "-ms-flow-from", value.asInstanceOf[js.Any])
+    inline def `set-ms-flow-from`(value: MsFlowFromProperty): Self = StObject.set(x, "-ms-flow-from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-flow-fromUndefined`: Self = StObject.set(x, "-ms-flow-from", js.undefined)
+    inline def `set-ms-flow-fromUndefined`: Self = StObject.set(x, "-ms-flow-from", js.undefined)
     
-    @scala.inline
-    def `set-ms-flow-into`(value: MsFlowIntoProperty): Self = StObject.set(x, "-ms-flow-into", value.asInstanceOf[js.Any])
+    inline def `set-ms-flow-into`(value: MsFlowIntoProperty): Self = StObject.set(x, "-ms-flow-into", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-flow-intoUndefined`: Self = StObject.set(x, "-ms-flow-into", js.undefined)
+    inline def `set-ms-flow-intoUndefined`: Self = StObject.set(x, "-ms-flow-into", js.undefined)
     
-    @scala.inline
-    def `set-ms-grid-columns`(value: GridAutoColumnsProperty[TLength]): Self = StObject.set(x, "-ms-grid-columns", value.asInstanceOf[js.Any])
+    inline def `set-ms-grid-columns`(value: GridAutoColumnsProperty[TLength]): Self = StObject.set(x, "-ms-grid-columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-grid-columnsUndefined`: Self = StObject.set(x, "-ms-grid-columns", js.undefined)
+    inline def `set-ms-grid-columnsUndefined`: Self = StObject.set(x, "-ms-grid-columns", js.undefined)
     
-    @scala.inline
-    def `set-ms-grid-rows`(value: GridAutoRowsProperty[TLength]): Self = StObject.set(x, "-ms-grid-rows", value.asInstanceOf[js.Any])
+    inline def `set-ms-grid-rows`(value: GridAutoRowsProperty[TLength]): Self = StObject.set(x, "-ms-grid-rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-grid-rowsUndefined`: Self = StObject.set(x, "-ms-grid-rows", js.undefined)
+    inline def `set-ms-grid-rowsUndefined`: Self = StObject.set(x, "-ms-grid-rows", js.undefined)
     
-    @scala.inline
-    def `set-ms-high-contrast-adjust`(value: MsHighContrastAdjustProperty): Self = StObject.set(x, "-ms-high-contrast-adjust", value.asInstanceOf[js.Any])
+    inline def `set-ms-high-contrast-adjust`(value: MsHighContrastAdjustProperty): Self = StObject.set(x, "-ms-high-contrast-adjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-high-contrast-adjustUndefined`: Self = StObject.set(x, "-ms-high-contrast-adjust", js.undefined)
+    inline def `set-ms-high-contrast-adjustUndefined`: Self = StObject.set(x, "-ms-high-contrast-adjust", js.undefined)
     
-    @scala.inline
-    def `set-ms-hyphenate-limit-chars`(value: MsHyphenateLimitCharsProperty): Self = StObject.set(x, "-ms-hyphenate-limit-chars", value.asInstanceOf[js.Any])
+    inline def `set-ms-hyphenate-limit-chars`(value: MsHyphenateLimitCharsProperty): Self = StObject.set(x, "-ms-hyphenate-limit-chars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-hyphenate-limit-charsUndefined`: Self = StObject.set(x, "-ms-hyphenate-limit-chars", js.undefined)
+    inline def `set-ms-hyphenate-limit-charsUndefined`: Self = StObject.set(x, "-ms-hyphenate-limit-chars", js.undefined)
     
-    @scala.inline
-    def `set-ms-hyphenate-limit-lines`(value: MsHyphenateLimitLinesProperty): Self = StObject.set(x, "-ms-hyphenate-limit-lines", value.asInstanceOf[js.Any])
+    inline def `set-ms-hyphenate-limit-lines`(value: MsHyphenateLimitLinesProperty): Self = StObject.set(x, "-ms-hyphenate-limit-lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-hyphenate-limit-linesUndefined`: Self = StObject.set(x, "-ms-hyphenate-limit-lines", js.undefined)
+    inline def `set-ms-hyphenate-limit-linesUndefined`: Self = StObject.set(x, "-ms-hyphenate-limit-lines", js.undefined)
     
-    @scala.inline
-    def `set-ms-hyphenate-limit-zone`(value: MsHyphenateLimitZoneProperty[TLength]): Self = StObject.set(x, "-ms-hyphenate-limit-zone", value.asInstanceOf[js.Any])
+    inline def `set-ms-hyphenate-limit-zone`(value: MsHyphenateLimitZoneProperty[TLength]): Self = StObject.set(x, "-ms-hyphenate-limit-zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-hyphenate-limit-zoneUndefined`: Self = StObject.set(x, "-ms-hyphenate-limit-zone", js.undefined)
+    inline def `set-ms-hyphenate-limit-zoneUndefined`: Self = StObject.set(x, "-ms-hyphenate-limit-zone", js.undefined)
     
-    @scala.inline
-    def `set-ms-hyphens`(value: HyphensProperty): Self = StObject.set(x, "-ms-hyphens", value.asInstanceOf[js.Any])
+    inline def `set-ms-hyphens`(value: HyphensProperty): Self = StObject.set(x, "-ms-hyphens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-hyphensUndefined`: Self = StObject.set(x, "-ms-hyphens", js.undefined)
+    inline def `set-ms-hyphensUndefined`: Self = StObject.set(x, "-ms-hyphens", js.undefined)
     
-    @scala.inline
-    def `set-ms-ime-align`(value: MsImeAlignProperty): Self = StObject.set(x, "-ms-ime-align", value.asInstanceOf[js.Any])
+    inline def `set-ms-ime-align`(value: MsImeAlignProperty): Self = StObject.set(x, "-ms-ime-align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-ime-alignUndefined`: Self = StObject.set(x, "-ms-ime-align", js.undefined)
+    inline def `set-ms-ime-alignUndefined`: Self = StObject.set(x, "-ms-ime-align", js.undefined)
     
-    @scala.inline
-    def `set-ms-line-break`(value: LineBreakProperty): Self = StObject.set(x, "-ms-line-break", value.asInstanceOf[js.Any])
+    inline def `set-ms-line-break`(value: LineBreakProperty): Self = StObject.set(x, "-ms-line-break", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-line-breakUndefined`: Self = StObject.set(x, "-ms-line-break", js.undefined)
+    inline def `set-ms-line-breakUndefined`: Self = StObject.set(x, "-ms-line-break", js.undefined)
     
-    @scala.inline
-    def `set-ms-order`(value: GlobalsNumber): Self = StObject.set(x, "-ms-order", value.asInstanceOf[js.Any])
+    inline def `set-ms-order`(value: GlobalsNumber): Self = StObject.set(x, "-ms-order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-orderUndefined`: Self = StObject.set(x, "-ms-order", js.undefined)
+    inline def `set-ms-orderUndefined`: Self = StObject.set(x, "-ms-order", js.undefined)
     
-    @scala.inline
-    def `set-ms-overflow-style`(value: MsOverflowStyleProperty): Self = StObject.set(x, "-ms-overflow-style", value.asInstanceOf[js.Any])
+    inline def `set-ms-overflow-style`(value: MsOverflowStyleProperty): Self = StObject.set(x, "-ms-overflow-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-overflow-styleUndefined`: Self = StObject.set(x, "-ms-overflow-style", js.undefined)
+    inline def `set-ms-overflow-styleUndefined`: Self = StObject.set(x, "-ms-overflow-style", js.undefined)
     
-    @scala.inline
-    def `set-ms-overflow-x`(value: OverflowXProperty): Self = StObject.set(x, "-ms-overflow-x", value.asInstanceOf[js.Any])
+    inline def `set-ms-overflow-x`(value: OverflowXProperty): Self = StObject.set(x, "-ms-overflow-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-overflow-xUndefined`: Self = StObject.set(x, "-ms-overflow-x", js.undefined)
+    inline def `set-ms-overflow-xUndefined`: Self = StObject.set(x, "-ms-overflow-x", js.undefined)
     
-    @scala.inline
-    def `set-ms-overflow-y`(value: OverflowYProperty): Self = StObject.set(x, "-ms-overflow-y", value.asInstanceOf[js.Any])
+    inline def `set-ms-overflow-y`(value: OverflowYProperty): Self = StObject.set(x, "-ms-overflow-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-overflow-yUndefined`: Self = StObject.set(x, "-ms-overflow-y", js.undefined)
+    inline def `set-ms-overflow-yUndefined`: Self = StObject.set(x, "-ms-overflow-y", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-chaining`(value: MsScrollChainingProperty): Self = StObject.set(x, "-ms-scroll-chaining", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-chaining`(value: MsScrollChainingProperty): Self = StObject.set(x, "-ms-scroll-chaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-chainingUndefined`: Self = StObject.set(x, "-ms-scroll-chaining", js.undefined)
+    inline def `set-ms-scroll-chainingUndefined`: Self = StObject.set(x, "-ms-scroll-chaining", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-limit-x-max`(value: MsScrollLimitXMaxProperty[TLength]): Self = StObject.set(x, "-ms-scroll-limit-x-max", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-limit-x-max`(value: MsScrollLimitXMaxProperty[TLength]): Self = StObject.set(x, "-ms-scroll-limit-x-max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-limit-x-maxUndefined`: Self = StObject.set(x, "-ms-scroll-limit-x-max", js.undefined)
+    inline def `set-ms-scroll-limit-x-maxUndefined`: Self = StObject.set(x, "-ms-scroll-limit-x-max", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-limit-x-min`(value: MsScrollLimitXMinProperty[TLength]): Self = StObject.set(x, "-ms-scroll-limit-x-min", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-limit-x-min`(value: MsScrollLimitXMinProperty[TLength]): Self = StObject.set(x, "-ms-scroll-limit-x-min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-limit-x-minUndefined`: Self = StObject.set(x, "-ms-scroll-limit-x-min", js.undefined)
+    inline def `set-ms-scroll-limit-x-minUndefined`: Self = StObject.set(x, "-ms-scroll-limit-x-min", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-limit-y-max`(value: MsScrollLimitYMaxProperty[TLength]): Self = StObject.set(x, "-ms-scroll-limit-y-max", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-limit-y-max`(value: MsScrollLimitYMaxProperty[TLength]): Self = StObject.set(x, "-ms-scroll-limit-y-max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-limit-y-maxUndefined`: Self = StObject.set(x, "-ms-scroll-limit-y-max", js.undefined)
+    inline def `set-ms-scroll-limit-y-maxUndefined`: Self = StObject.set(x, "-ms-scroll-limit-y-max", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-limit-y-min`(value: MsScrollLimitYMinProperty[TLength]): Self = StObject.set(x, "-ms-scroll-limit-y-min", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-limit-y-min`(value: MsScrollLimitYMinProperty[TLength]): Self = StObject.set(x, "-ms-scroll-limit-y-min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-limit-y-minUndefined`: Self = StObject.set(x, "-ms-scroll-limit-y-min", js.undefined)
+    inline def `set-ms-scroll-limit-y-minUndefined`: Self = StObject.set(x, "-ms-scroll-limit-y-min", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-rails`(value: MsScrollRailsProperty): Self = StObject.set(x, "-ms-scroll-rails", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-rails`(value: MsScrollRailsProperty): Self = StObject.set(x, "-ms-scroll-rails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-railsUndefined`: Self = StObject.set(x, "-ms-scroll-rails", js.undefined)
+    inline def `set-ms-scroll-railsUndefined`: Self = StObject.set(x, "-ms-scroll-rails", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-snap-points-x`(value: GlobalsString): Self = StObject.set(x, "-ms-scroll-snap-points-x", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-snap-points-x`(value: GlobalsString): Self = StObject.set(x, "-ms-scroll-snap-points-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-snap-points-xUndefined`: Self = StObject.set(x, "-ms-scroll-snap-points-x", js.undefined)
+    inline def `set-ms-scroll-snap-points-xUndefined`: Self = StObject.set(x, "-ms-scroll-snap-points-x", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-snap-points-y`(value: GlobalsString): Self = StObject.set(x, "-ms-scroll-snap-points-y", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-snap-points-y`(value: GlobalsString): Self = StObject.set(x, "-ms-scroll-snap-points-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-snap-points-yUndefined`: Self = StObject.set(x, "-ms-scroll-snap-points-y", js.undefined)
+    inline def `set-ms-scroll-snap-points-yUndefined`: Self = StObject.set(x, "-ms-scroll-snap-points-y", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-snap-type`(value: MsScrollSnapTypeProperty): Self = StObject.set(x, "-ms-scroll-snap-type", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-snap-type`(value: MsScrollSnapTypeProperty): Self = StObject.set(x, "-ms-scroll-snap-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-snap-typeUndefined`: Self = StObject.set(x, "-ms-scroll-snap-type", js.undefined)
+    inline def `set-ms-scroll-snap-typeUndefined`: Self = StObject.set(x, "-ms-scroll-snap-type", js.undefined)
     
-    @scala.inline
-    def `set-ms-scroll-translation`(value: MsScrollTranslationProperty): Self = StObject.set(x, "-ms-scroll-translation", value.asInstanceOf[js.Any])
+    inline def `set-ms-scroll-translation`(value: MsScrollTranslationProperty): Self = StObject.set(x, "-ms-scroll-translation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scroll-translationUndefined`: Self = StObject.set(x, "-ms-scroll-translation", js.undefined)
+    inline def `set-ms-scroll-translationUndefined`: Self = StObject.set(x, "-ms-scroll-translation", js.undefined)
     
-    @scala.inline
-    def `set-ms-scrollbar-3dlight-color`(value: MsScrollbar3dlightColorProperty): Self = StObject.set(x, "-ms-scrollbar-3dlight-color", value.asInstanceOf[js.Any])
+    inline def `set-ms-scrollbar-3dlight-color`(value: MsScrollbar3dlightColorProperty): Self = StObject.set(x, "-ms-scrollbar-3dlight-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scrollbar-3dlight-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-3dlight-color", js.undefined)
+    inline def `set-ms-scrollbar-3dlight-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-3dlight-color", js.undefined)
     
-    @scala.inline
-    def `set-ms-scrollbar-arrow-color`(value: MsScrollbarArrowColorProperty): Self = StObject.set(x, "-ms-scrollbar-arrow-color", value.asInstanceOf[js.Any])
+    inline def `set-ms-scrollbar-arrow-color`(value: MsScrollbarArrowColorProperty): Self = StObject.set(x, "-ms-scrollbar-arrow-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scrollbar-arrow-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-arrow-color", js.undefined)
+    inline def `set-ms-scrollbar-arrow-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-arrow-color", js.undefined)
     
-    @scala.inline
-    def `set-ms-scrollbar-base-color`(value: MsScrollbarBaseColorProperty): Self = StObject.set(x, "-ms-scrollbar-base-color", value.asInstanceOf[js.Any])
+    inline def `set-ms-scrollbar-base-color`(value: MsScrollbarBaseColorProperty): Self = StObject.set(x, "-ms-scrollbar-base-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scrollbar-base-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-base-color", js.undefined)
+    inline def `set-ms-scrollbar-base-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-base-color", js.undefined)
     
-    @scala.inline
-    def `set-ms-scrollbar-darkshadow-color`(value: MsScrollbarDarkshadowColorProperty): Self = StObject.set(x, "-ms-scrollbar-darkshadow-color", value.asInstanceOf[js.Any])
+    inline def `set-ms-scrollbar-darkshadow-color`(value: MsScrollbarDarkshadowColorProperty): Self = StObject.set(x, "-ms-scrollbar-darkshadow-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scrollbar-darkshadow-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-darkshadow-color", js.undefined)
+    inline def `set-ms-scrollbar-darkshadow-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-darkshadow-color", js.undefined)
     
-    @scala.inline
-    def `set-ms-scrollbar-face-color`(value: MsScrollbarFaceColorProperty): Self = StObject.set(x, "-ms-scrollbar-face-color", value.asInstanceOf[js.Any])
+    inline def `set-ms-scrollbar-face-color`(value: MsScrollbarFaceColorProperty): Self = StObject.set(x, "-ms-scrollbar-face-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scrollbar-face-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-face-color", js.undefined)
+    inline def `set-ms-scrollbar-face-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-face-color", js.undefined)
     
-    @scala.inline
-    def `set-ms-scrollbar-highlight-color`(value: MsScrollbarHighlightColorProperty): Self = StObject.set(x, "-ms-scrollbar-highlight-color", value.asInstanceOf[js.Any])
+    inline def `set-ms-scrollbar-highlight-color`(value: MsScrollbarHighlightColorProperty): Self = StObject.set(x, "-ms-scrollbar-highlight-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scrollbar-highlight-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-highlight-color", js.undefined)
+    inline def `set-ms-scrollbar-highlight-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-highlight-color", js.undefined)
     
-    @scala.inline
-    def `set-ms-scrollbar-shadow-color`(value: MsScrollbarShadowColorProperty): Self = StObject.set(x, "-ms-scrollbar-shadow-color", value.asInstanceOf[js.Any])
+    inline def `set-ms-scrollbar-shadow-color`(value: MsScrollbarShadowColorProperty): Self = StObject.set(x, "-ms-scrollbar-shadow-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-scrollbar-shadow-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-shadow-color", js.undefined)
+    inline def `set-ms-scrollbar-shadow-colorUndefined`: Self = StObject.set(x, "-ms-scrollbar-shadow-color", js.undefined)
     
-    @scala.inline
-    def `set-ms-text-autospace`(value: MsTextAutospaceProperty): Self = StObject.set(x, "-ms-text-autospace", value.asInstanceOf[js.Any])
+    inline def `set-ms-text-autospace`(value: MsTextAutospaceProperty): Self = StObject.set(x, "-ms-text-autospace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-text-autospaceUndefined`: Self = StObject.set(x, "-ms-text-autospace", js.undefined)
+    inline def `set-ms-text-autospaceUndefined`: Self = StObject.set(x, "-ms-text-autospace", js.undefined)
     
-    @scala.inline
-    def `set-ms-text-combine-horizontal`(value: TextCombineUprightProperty): Self = StObject.set(x, "-ms-text-combine-horizontal", value.asInstanceOf[js.Any])
+    inline def `set-ms-text-combine-horizontal`(value: TextCombineUprightProperty): Self = StObject.set(x, "-ms-text-combine-horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-text-combine-horizontalUndefined`: Self = StObject.set(x, "-ms-text-combine-horizontal", js.undefined)
+    inline def `set-ms-text-combine-horizontalUndefined`: Self = StObject.set(x, "-ms-text-combine-horizontal", js.undefined)
     
-    @scala.inline
-    def `set-ms-text-overflow`(value: TextOverflowProperty): Self = StObject.set(x, "-ms-text-overflow", value.asInstanceOf[js.Any])
+    inline def `set-ms-text-overflow`(value: TextOverflowProperty): Self = StObject.set(x, "-ms-text-overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-text-overflowUndefined`: Self = StObject.set(x, "-ms-text-overflow", js.undefined)
+    inline def `set-ms-text-overflowUndefined`: Self = StObject.set(x, "-ms-text-overflow", js.undefined)
     
-    @scala.inline
-    def `set-ms-touch-action`(value: TouchActionProperty): Self = StObject.set(x, "-ms-touch-action", value.asInstanceOf[js.Any])
+    inline def `set-ms-touch-action`(value: TouchActionProperty): Self = StObject.set(x, "-ms-touch-action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-touch-actionUndefined`: Self = StObject.set(x, "-ms-touch-action", js.undefined)
+    inline def `set-ms-touch-actionUndefined`: Self = StObject.set(x, "-ms-touch-action", js.undefined)
     
-    @scala.inline
-    def `set-ms-touch-select`(value: MsTouchSelectProperty): Self = StObject.set(x, "-ms-touch-select", value.asInstanceOf[js.Any])
+    inline def `set-ms-touch-select`(value: MsTouchSelectProperty): Self = StObject.set(x, "-ms-touch-select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-touch-selectUndefined`: Self = StObject.set(x, "-ms-touch-select", js.undefined)
+    inline def `set-ms-touch-selectUndefined`: Self = StObject.set(x, "-ms-touch-select", js.undefined)
     
-    @scala.inline
-    def `set-ms-transform`(value: TransformProperty): Self = StObject.set(x, "-ms-transform", value.asInstanceOf[js.Any])
+    inline def `set-ms-transform`(value: TransformProperty): Self = StObject.set(x, "-ms-transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-transform-origin`(value: TransformOriginProperty[TLength]): Self = StObject.set(x, "-ms-transform-origin", value.asInstanceOf[js.Any])
+    inline def `set-ms-transform-origin`(value: TransformOriginProperty[TLength]): Self = StObject.set(x, "-ms-transform-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-transform-originUndefined`: Self = StObject.set(x, "-ms-transform-origin", js.undefined)
+    inline def `set-ms-transform-originUndefined`: Self = StObject.set(x, "-ms-transform-origin", js.undefined)
     
-    @scala.inline
-    def `set-ms-transformUndefined`: Self = StObject.set(x, "-ms-transform", js.undefined)
+    inline def `set-ms-transformUndefined`: Self = StObject.set(x, "-ms-transform", js.undefined)
     
-    @scala.inline
-    def `set-ms-transition-delay`(value: GlobalsString): Self = StObject.set(x, "-ms-transition-delay", value.asInstanceOf[js.Any])
+    inline def `set-ms-transition-delay`(value: GlobalsString): Self = StObject.set(x, "-ms-transition-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-transition-delayUndefined`: Self = StObject.set(x, "-ms-transition-delay", js.undefined)
+    inline def `set-ms-transition-delayUndefined`: Self = StObject.set(x, "-ms-transition-delay", js.undefined)
     
-    @scala.inline
-    def `set-ms-transition-duration`(value: GlobalsString): Self = StObject.set(x, "-ms-transition-duration", value.asInstanceOf[js.Any])
+    inline def `set-ms-transition-duration`(value: GlobalsString): Self = StObject.set(x, "-ms-transition-duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-transition-durationUndefined`: Self = StObject.set(x, "-ms-transition-duration", js.undefined)
+    inline def `set-ms-transition-durationUndefined`: Self = StObject.set(x, "-ms-transition-duration", js.undefined)
     
-    @scala.inline
-    def `set-ms-transition-property`(value: TransitionPropertyProperty): Self = StObject.set(x, "-ms-transition-property", value.asInstanceOf[js.Any])
+    inline def `set-ms-transition-property`(value: TransitionPropertyProperty): Self = StObject.set(x, "-ms-transition-property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-transition-propertyUndefined`: Self = StObject.set(x, "-ms-transition-property", js.undefined)
+    inline def `set-ms-transition-propertyUndefined`: Self = StObject.set(x, "-ms-transition-property", js.undefined)
     
-    @scala.inline
-    def `set-ms-transition-timing-function`(value: TransitionTimingFunctionProperty): Self = StObject.set(x, "-ms-transition-timing-function", value.asInstanceOf[js.Any])
+    inline def `set-ms-transition-timing-function`(value: TransitionTimingFunctionProperty): Self = StObject.set(x, "-ms-transition-timing-function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-transition-timing-functionUndefined`: Self = StObject.set(x, "-ms-transition-timing-function", js.undefined)
+    inline def `set-ms-transition-timing-functionUndefined`: Self = StObject.set(x, "-ms-transition-timing-function", js.undefined)
     
-    @scala.inline
-    def `set-ms-user-select`(value: MsUserSelectProperty): Self = StObject.set(x, "-ms-user-select", value.asInstanceOf[js.Any])
+    inline def `set-ms-user-select`(value: MsUserSelectProperty): Self = StObject.set(x, "-ms-user-select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-user-selectUndefined`: Self = StObject.set(x, "-ms-user-select", js.undefined)
+    inline def `set-ms-user-selectUndefined`: Self = StObject.set(x, "-ms-user-select", js.undefined)
     
-    @scala.inline
-    def `set-ms-word-break`(value: WordBreakProperty): Self = StObject.set(x, "-ms-word-break", value.asInstanceOf[js.Any])
+    inline def `set-ms-word-break`(value: WordBreakProperty): Self = StObject.set(x, "-ms-word-break", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-word-breakUndefined`: Self = StObject.set(x, "-ms-word-break", js.undefined)
+    inline def `set-ms-word-breakUndefined`: Self = StObject.set(x, "-ms-word-break", js.undefined)
     
-    @scala.inline
-    def `set-ms-wrap-flow`(value: MsWrapFlowProperty): Self = StObject.set(x, "-ms-wrap-flow", value.asInstanceOf[js.Any])
+    inline def `set-ms-wrap-flow`(value: MsWrapFlowProperty): Self = StObject.set(x, "-ms-wrap-flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-wrap-flowUndefined`: Self = StObject.set(x, "-ms-wrap-flow", js.undefined)
+    inline def `set-ms-wrap-flowUndefined`: Self = StObject.set(x, "-ms-wrap-flow", js.undefined)
     
-    @scala.inline
-    def `set-ms-wrap-margin`(value: MsWrapMarginProperty[TLength]): Self = StObject.set(x, "-ms-wrap-margin", value.asInstanceOf[js.Any])
+    inline def `set-ms-wrap-margin`(value: MsWrapMarginProperty[TLength]): Self = StObject.set(x, "-ms-wrap-margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-wrap-marginUndefined`: Self = StObject.set(x, "-ms-wrap-margin", js.undefined)
+    inline def `set-ms-wrap-marginUndefined`: Self = StObject.set(x, "-ms-wrap-margin", js.undefined)
     
-    @scala.inline
-    def `set-ms-wrap-through`(value: MsWrapThroughProperty): Self = StObject.set(x, "-ms-wrap-through", value.asInstanceOf[js.Any])
+    inline def `set-ms-wrap-through`(value: MsWrapThroughProperty): Self = StObject.set(x, "-ms-wrap-through", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-wrap-throughUndefined`: Self = StObject.set(x, "-ms-wrap-through", js.undefined)
+    inline def `set-ms-wrap-throughUndefined`: Self = StObject.set(x, "-ms-wrap-through", js.undefined)
     
-    @scala.inline
-    def `set-ms-writing-mode`(value: WritingModeProperty): Self = StObject.set(x, "-ms-writing-mode", value.asInstanceOf[js.Any])
+    inline def `set-ms-writing-mode`(value: WritingModeProperty): Self = StObject.set(x, "-ms-writing-mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-ms-writing-modeUndefined`: Self = StObject.set(x, "-ms-writing-mode", js.undefined)
+    inline def `set-ms-writing-modeUndefined`: Self = StObject.set(x, "-ms-writing-mode", js.undefined)
     
-    @scala.inline
-    def `set-o-object-fit`(value: ObjectFitProperty): Self = StObject.set(x, "-o-object-fit", value.asInstanceOf[js.Any])
+    inline def `set-o-object-fit`(value: ObjectFitProperty): Self = StObject.set(x, "-o-object-fit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-object-fitUndefined`: Self = StObject.set(x, "-o-object-fit", js.undefined)
+    inline def `set-o-object-fitUndefined`: Self = StObject.set(x, "-o-object-fit", js.undefined)
     
-    @scala.inline
-    def `set-o-object-position`(value: ObjectPositionProperty[TLength]): Self = StObject.set(x, "-o-object-position", value.asInstanceOf[js.Any])
+    inline def `set-o-object-position`(value: ObjectPositionProperty[TLength]): Self = StObject.set(x, "-o-object-position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-object-positionUndefined`: Self = StObject.set(x, "-o-object-position", js.undefined)
+    inline def `set-o-object-positionUndefined`: Self = StObject.set(x, "-o-object-position", js.undefined)
     
-    @scala.inline
-    def `set-o-tab-size`(value: TabSizeProperty[TLength]): Self = StObject.set(x, "-o-tab-size", value.asInstanceOf[js.Any])
+    inline def `set-o-tab-size`(value: TabSizeProperty[TLength]): Self = StObject.set(x, "-o-tab-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-tab-sizeUndefined`: Self = StObject.set(x, "-o-tab-size", js.undefined)
+    inline def `set-o-tab-sizeUndefined`: Self = StObject.set(x, "-o-tab-size", js.undefined)
     
-    @scala.inline
-    def `set-o-text-overflow`(value: TextOverflowProperty): Self = StObject.set(x, "-o-text-overflow", value.asInstanceOf[js.Any])
+    inline def `set-o-text-overflow`(value: TextOverflowProperty): Self = StObject.set(x, "-o-text-overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-text-overflowUndefined`: Self = StObject.set(x, "-o-text-overflow", js.undefined)
+    inline def `set-o-text-overflowUndefined`: Self = StObject.set(x, "-o-text-overflow", js.undefined)
     
-    @scala.inline
-    def `set-o-transform-origin`(value: TransformOriginProperty[TLength]): Self = StObject.set(x, "-o-transform-origin", value.asInstanceOf[js.Any])
+    inline def `set-o-transform-origin`(value: TransformOriginProperty[TLength]): Self = StObject.set(x, "-o-transform-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-o-transform-originUndefined`: Self = StObject.set(x, "-o-transform-origin", js.undefined)
+    inline def `set-o-transform-originUndefined`: Self = StObject.set(x, "-o-transform-origin", js.undefined)
     
-    @scala.inline
-    def `set-webkit-align-content`(value: AlignContentProperty): Self = StObject.set(x, "-webkit-align-content", value.asInstanceOf[js.Any])
+    inline def `set-webkit-align-content`(value: AlignContentProperty): Self = StObject.set(x, "-webkit-align-content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-align-contentUndefined`: Self = StObject.set(x, "-webkit-align-content", js.undefined)
+    inline def `set-webkit-align-contentUndefined`: Self = StObject.set(x, "-webkit-align-content", js.undefined)
     
-    @scala.inline
-    def `set-webkit-align-items`(value: AlignItemsProperty): Self = StObject.set(x, "-webkit-align-items", value.asInstanceOf[js.Any])
+    inline def `set-webkit-align-items`(value: AlignItemsProperty): Self = StObject.set(x, "-webkit-align-items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-align-itemsUndefined`: Self = StObject.set(x, "-webkit-align-items", js.undefined)
+    inline def `set-webkit-align-itemsUndefined`: Self = StObject.set(x, "-webkit-align-items", js.undefined)
     
-    @scala.inline
-    def `set-webkit-align-self`(value: AlignSelfProperty): Self = StObject.set(x, "-webkit-align-self", value.asInstanceOf[js.Any])
+    inline def `set-webkit-align-self`(value: AlignSelfProperty): Self = StObject.set(x, "-webkit-align-self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-align-selfUndefined`: Self = StObject.set(x, "-webkit-align-self", js.undefined)
+    inline def `set-webkit-align-selfUndefined`: Self = StObject.set(x, "-webkit-align-self", js.undefined)
     
-    @scala.inline
-    def `set-webkit-animation-delay`(value: GlobalsString): Self = StObject.set(x, "-webkit-animation-delay", value.asInstanceOf[js.Any])
+    inline def `set-webkit-animation-delay`(value: GlobalsString): Self = StObject.set(x, "-webkit-animation-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-animation-delayUndefined`: Self = StObject.set(x, "-webkit-animation-delay", js.undefined)
+    inline def `set-webkit-animation-delayUndefined`: Self = StObject.set(x, "-webkit-animation-delay", js.undefined)
     
-    @scala.inline
-    def `set-webkit-animation-direction`(value: AnimationDirectionProperty): Self = StObject.set(x, "-webkit-animation-direction", value.asInstanceOf[js.Any])
+    inline def `set-webkit-animation-direction`(value: AnimationDirectionProperty): Self = StObject.set(x, "-webkit-animation-direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-animation-directionUndefined`: Self = StObject.set(x, "-webkit-animation-direction", js.undefined)
+    inline def `set-webkit-animation-directionUndefined`: Self = StObject.set(x, "-webkit-animation-direction", js.undefined)
     
-    @scala.inline
-    def `set-webkit-animation-duration`(value: GlobalsString): Self = StObject.set(x, "-webkit-animation-duration", value.asInstanceOf[js.Any])
+    inline def `set-webkit-animation-duration`(value: GlobalsString): Self = StObject.set(x, "-webkit-animation-duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-animation-durationUndefined`: Self = StObject.set(x, "-webkit-animation-duration", js.undefined)
+    inline def `set-webkit-animation-durationUndefined`: Self = StObject.set(x, "-webkit-animation-duration", js.undefined)
     
-    @scala.inline
-    def `set-webkit-animation-fill-mode`(value: AnimationFillModeProperty): Self = StObject.set(x, "-webkit-animation-fill-mode", value.asInstanceOf[js.Any])
+    inline def `set-webkit-animation-fill-mode`(value: AnimationFillModeProperty): Self = StObject.set(x, "-webkit-animation-fill-mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-animation-fill-modeUndefined`: Self = StObject.set(x, "-webkit-animation-fill-mode", js.undefined)
+    inline def `set-webkit-animation-fill-modeUndefined`: Self = StObject.set(x, "-webkit-animation-fill-mode", js.undefined)
     
-    @scala.inline
-    def `set-webkit-animation-iteration-count`(value: AnimationIterationCountProperty): Self = StObject.set(x, "-webkit-animation-iteration-count", value.asInstanceOf[js.Any])
+    inline def `set-webkit-animation-iteration-count`(value: AnimationIterationCountProperty): Self = StObject.set(x, "-webkit-animation-iteration-count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-animation-iteration-countUndefined`: Self = StObject.set(x, "-webkit-animation-iteration-count", js.undefined)
+    inline def `set-webkit-animation-iteration-countUndefined`: Self = StObject.set(x, "-webkit-animation-iteration-count", js.undefined)
     
-    @scala.inline
-    def `set-webkit-animation-name`(value: AnimationNameProperty): Self = StObject.set(x, "-webkit-animation-name", value.asInstanceOf[js.Any])
+    inline def `set-webkit-animation-name`(value: AnimationNameProperty): Self = StObject.set(x, "-webkit-animation-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-animation-nameUndefined`: Self = StObject.set(x, "-webkit-animation-name", js.undefined)
+    inline def `set-webkit-animation-nameUndefined`: Self = StObject.set(x, "-webkit-animation-name", js.undefined)
     
-    @scala.inline
-    def `set-webkit-animation-play-state`(value: AnimationPlayStateProperty): Self = StObject.set(x, "-webkit-animation-play-state", value.asInstanceOf[js.Any])
+    inline def `set-webkit-animation-play-state`(value: AnimationPlayStateProperty): Self = StObject.set(x, "-webkit-animation-play-state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-animation-play-stateUndefined`: Self = StObject.set(x, "-webkit-animation-play-state", js.undefined)
+    inline def `set-webkit-animation-play-stateUndefined`: Self = StObject.set(x, "-webkit-animation-play-state", js.undefined)
     
-    @scala.inline
-    def `set-webkit-animation-timing-function`(value: AnimationTimingFunctionProperty): Self = StObject.set(x, "-webkit-animation-timing-function", value.asInstanceOf[js.Any])
+    inline def `set-webkit-animation-timing-function`(value: AnimationTimingFunctionProperty): Self = StObject.set(x, "-webkit-animation-timing-function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-animation-timing-functionUndefined`: Self = StObject.set(x, "-webkit-animation-timing-function", js.undefined)
+    inline def `set-webkit-animation-timing-functionUndefined`: Self = StObject.set(x, "-webkit-animation-timing-function", js.undefined)
     
-    @scala.inline
-    def `set-webkit-appearance`(value: WebkitAppearanceProperty): Self = StObject.set(x, "-webkit-appearance", value.asInstanceOf[js.Any])
+    inline def `set-webkit-appearance`(value: WebkitAppearanceProperty): Self = StObject.set(x, "-webkit-appearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-appearanceUndefined`: Self = StObject.set(x, "-webkit-appearance", js.undefined)
+    inline def `set-webkit-appearanceUndefined`: Self = StObject.set(x, "-webkit-appearance", js.undefined)
     
-    @scala.inline
-    def `set-webkit-backdrop-filter`(value: BackdropFilterProperty): Self = StObject.set(x, "-webkit-backdrop-filter", value.asInstanceOf[js.Any])
+    inline def `set-webkit-backdrop-filter`(value: BackdropFilterProperty): Self = StObject.set(x, "-webkit-backdrop-filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-backdrop-filterUndefined`: Self = StObject.set(x, "-webkit-backdrop-filter", js.undefined)
+    inline def `set-webkit-backdrop-filterUndefined`: Self = StObject.set(x, "-webkit-backdrop-filter", js.undefined)
     
-    @scala.inline
-    def `set-webkit-backface-visibility`(value: BackfaceVisibilityProperty): Self = StObject.set(x, "-webkit-backface-visibility", value.asInstanceOf[js.Any])
+    inline def `set-webkit-backface-visibility`(value: BackfaceVisibilityProperty): Self = StObject.set(x, "-webkit-backface-visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-backface-visibilityUndefined`: Self = StObject.set(x, "-webkit-backface-visibility", js.undefined)
+    inline def `set-webkit-backface-visibilityUndefined`: Self = StObject.set(x, "-webkit-backface-visibility", js.undefined)
     
-    @scala.inline
-    def `set-webkit-background-clip`(value: BackgroundClipProperty): Self = StObject.set(x, "-webkit-background-clip", value.asInstanceOf[js.Any])
+    inline def `set-webkit-background-clip`(value: BackgroundClipProperty): Self = StObject.set(x, "-webkit-background-clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-background-clipUndefined`: Self = StObject.set(x, "-webkit-background-clip", js.undefined)
+    inline def `set-webkit-background-clipUndefined`: Self = StObject.set(x, "-webkit-background-clip", js.undefined)
     
-    @scala.inline
-    def `set-webkit-background-origin`(value: BackgroundOriginProperty): Self = StObject.set(x, "-webkit-background-origin", value.asInstanceOf[js.Any])
+    inline def `set-webkit-background-origin`(value: BackgroundOriginProperty): Self = StObject.set(x, "-webkit-background-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-background-originUndefined`: Self = StObject.set(x, "-webkit-background-origin", js.undefined)
+    inline def `set-webkit-background-originUndefined`: Self = StObject.set(x, "-webkit-background-origin", js.undefined)
     
-    @scala.inline
-    def `set-webkit-background-size`(value: BackgroundSizeProperty[TLength]): Self = StObject.set(x, "-webkit-background-size", value.asInstanceOf[js.Any])
+    inline def `set-webkit-background-size`(value: BackgroundSizeProperty[TLength]): Self = StObject.set(x, "-webkit-background-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-background-sizeUndefined`: Self = StObject.set(x, "-webkit-background-size", js.undefined)
+    inline def `set-webkit-background-sizeUndefined`: Self = StObject.set(x, "-webkit-background-size", js.undefined)
     
-    @scala.inline
-    def `set-webkit-border-before-color`(value: WebkitBorderBeforeColorProperty): Self = StObject.set(x, "-webkit-border-before-color", value.asInstanceOf[js.Any])
+    inline def `set-webkit-border-before-color`(value: WebkitBorderBeforeColorProperty): Self = StObject.set(x, "-webkit-border-before-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-border-before-colorUndefined`: Self = StObject.set(x, "-webkit-border-before-color", js.undefined)
+    inline def `set-webkit-border-before-colorUndefined`: Self = StObject.set(x, "-webkit-border-before-color", js.undefined)
     
-    @scala.inline
-    def `set-webkit-border-before-style`(value: WebkitBorderBeforeStyleProperty): Self = StObject.set(x, "-webkit-border-before-style", value.asInstanceOf[js.Any])
+    inline def `set-webkit-border-before-style`(value: WebkitBorderBeforeStyleProperty): Self = StObject.set(x, "-webkit-border-before-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-border-before-styleUndefined`: Self = StObject.set(x, "-webkit-border-before-style", js.undefined)
+    inline def `set-webkit-border-before-styleUndefined`: Self = StObject.set(x, "-webkit-border-before-style", js.undefined)
     
-    @scala.inline
-    def `set-webkit-border-before-width`(value: WebkitBorderBeforeWidthProperty[TLength]): Self = StObject.set(x, "-webkit-border-before-width", value.asInstanceOf[js.Any])
+    inline def `set-webkit-border-before-width`(value: WebkitBorderBeforeWidthProperty[TLength]): Self = StObject.set(x, "-webkit-border-before-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-border-before-widthUndefined`: Self = StObject.set(x, "-webkit-border-before-width", js.undefined)
+    inline def `set-webkit-border-before-widthUndefined`: Self = StObject.set(x, "-webkit-border-before-width", js.undefined)
     
-    @scala.inline
-    def `set-webkit-border-bottom-left-radius`(value: BorderBottomLeftRadiusProperty[TLength]): Self = StObject.set(x, "-webkit-border-bottom-left-radius", value.asInstanceOf[js.Any])
+    inline def `set-webkit-border-bottom-left-radius`(value: BorderBottomLeftRadiusProperty[TLength]): Self = StObject.set(x, "-webkit-border-bottom-left-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-border-bottom-left-radiusUndefined`: Self = StObject.set(x, "-webkit-border-bottom-left-radius", js.undefined)
+    inline def `set-webkit-border-bottom-left-radiusUndefined`: Self = StObject.set(x, "-webkit-border-bottom-left-radius", js.undefined)
     
-    @scala.inline
-    def `set-webkit-border-bottom-right-radius`(value: BorderBottomRightRadiusProperty[TLength]): Self = StObject.set(x, "-webkit-border-bottom-right-radius", value.asInstanceOf[js.Any])
+    inline def `set-webkit-border-bottom-right-radius`(value: BorderBottomRightRadiusProperty[TLength]): Self = StObject.set(x, "-webkit-border-bottom-right-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-border-bottom-right-radiusUndefined`: Self = StObject.set(x, "-webkit-border-bottom-right-radius", js.undefined)
+    inline def `set-webkit-border-bottom-right-radiusUndefined`: Self = StObject.set(x, "-webkit-border-bottom-right-radius", js.undefined)
     
-    @scala.inline
-    def `set-webkit-border-image-slice`(value: BorderImageSliceProperty): Self = StObject.set(x, "-webkit-border-image-slice", value.asInstanceOf[js.Any])
+    inline def `set-webkit-border-image-slice`(value: BorderImageSliceProperty): Self = StObject.set(x, "-webkit-border-image-slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-border-image-sliceUndefined`: Self = StObject.set(x, "-webkit-border-image-slice", js.undefined)
+    inline def `set-webkit-border-image-sliceUndefined`: Self = StObject.set(x, "-webkit-border-image-slice", js.undefined)
     
-    @scala.inline
-    def `set-webkit-border-top-left-radius`(value: BorderTopLeftRadiusProperty[TLength]): Self = StObject.set(x, "-webkit-border-top-left-radius", value.asInstanceOf[js.Any])
+    inline def `set-webkit-border-top-left-radius`(value: BorderTopLeftRadiusProperty[TLength]): Self = StObject.set(x, "-webkit-border-top-left-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-border-top-left-radiusUndefined`: Self = StObject.set(x, "-webkit-border-top-left-radius", js.undefined)
+    inline def `set-webkit-border-top-left-radiusUndefined`: Self = StObject.set(x, "-webkit-border-top-left-radius", js.undefined)
     
-    @scala.inline
-    def `set-webkit-border-top-right-radius`(value: BorderTopRightRadiusProperty[TLength]): Self = StObject.set(x, "-webkit-border-top-right-radius", value.asInstanceOf[js.Any])
+    inline def `set-webkit-border-top-right-radius`(value: BorderTopRightRadiusProperty[TLength]): Self = StObject.set(x, "-webkit-border-top-right-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-border-top-right-radiusUndefined`: Self = StObject.set(x, "-webkit-border-top-right-radius", js.undefined)
+    inline def `set-webkit-border-top-right-radiusUndefined`: Self = StObject.set(x, "-webkit-border-top-right-radius", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-decoration-break`(value: BoxDecorationBreakProperty): Self = StObject.set(x, "-webkit-box-decoration-break", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-decoration-break`(value: BoxDecorationBreakProperty): Self = StObject.set(x, "-webkit-box-decoration-break", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-decoration-breakUndefined`: Self = StObject.set(x, "-webkit-box-decoration-break", js.undefined)
+    inline def `set-webkit-box-decoration-breakUndefined`: Self = StObject.set(x, "-webkit-box-decoration-break", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-reflect`(value: WebkitBoxReflectProperty[TLength]): Self = StObject.set(x, "-webkit-box-reflect", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-reflect`(value: WebkitBoxReflectProperty[TLength]): Self = StObject.set(x, "-webkit-box-reflect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-reflectUndefined`: Self = StObject.set(x, "-webkit-box-reflect", js.undefined)
+    inline def `set-webkit-box-reflectUndefined`: Self = StObject.set(x, "-webkit-box-reflect", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-shadow`(value: BoxShadowProperty): Self = StObject.set(x, "-webkit-box-shadow", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-shadow`(value: BoxShadowProperty): Self = StObject.set(x, "-webkit-box-shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-shadowUndefined`: Self = StObject.set(x, "-webkit-box-shadow", js.undefined)
+    inline def `set-webkit-box-shadowUndefined`: Self = StObject.set(x, "-webkit-box-shadow", js.undefined)
     
-    @scala.inline
-    def `set-webkit-box-sizing`(value: BoxSizingProperty): Self = StObject.set(x, "-webkit-box-sizing", value.asInstanceOf[js.Any])
+    inline def `set-webkit-box-sizing`(value: BoxSizingProperty): Self = StObject.set(x, "-webkit-box-sizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-box-sizingUndefined`: Self = StObject.set(x, "-webkit-box-sizing", js.undefined)
+    inline def `set-webkit-box-sizingUndefined`: Self = StObject.set(x, "-webkit-box-sizing", js.undefined)
     
-    @scala.inline
-    def `set-webkit-clip-path`(value: ClipPathProperty): Self = StObject.set(x, "-webkit-clip-path", value.asInstanceOf[js.Any])
+    inline def `set-webkit-clip-path`(value: ClipPathProperty): Self = StObject.set(x, "-webkit-clip-path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-clip-pathUndefined`: Self = StObject.set(x, "-webkit-clip-path", js.undefined)
+    inline def `set-webkit-clip-pathUndefined`: Self = StObject.set(x, "-webkit-clip-path", js.undefined)
     
-    @scala.inline
-    def `set-webkit-column-count`(value: ColumnCountProperty): Self = StObject.set(x, "-webkit-column-count", value.asInstanceOf[js.Any])
+    inline def `set-webkit-column-count`(value: ColumnCountProperty): Self = StObject.set(x, "-webkit-column-count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-column-countUndefined`: Self = StObject.set(x, "-webkit-column-count", js.undefined)
+    inline def `set-webkit-column-countUndefined`: Self = StObject.set(x, "-webkit-column-count", js.undefined)
     
-    @scala.inline
-    def `set-webkit-column-fill`(value: ColumnFillProperty): Self = StObject.set(x, "-webkit-column-fill", value.asInstanceOf[js.Any])
+    inline def `set-webkit-column-fill`(value: ColumnFillProperty): Self = StObject.set(x, "-webkit-column-fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-column-fillUndefined`: Self = StObject.set(x, "-webkit-column-fill", js.undefined)
+    inline def `set-webkit-column-fillUndefined`: Self = StObject.set(x, "-webkit-column-fill", js.undefined)
     
-    @scala.inline
-    def `set-webkit-column-gap`(value: ColumnGapProperty[TLength]): Self = StObject.set(x, "-webkit-column-gap", value.asInstanceOf[js.Any])
+    inline def `set-webkit-column-gap`(value: ColumnGapProperty[TLength]): Self = StObject.set(x, "-webkit-column-gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-column-gapUndefined`: Self = StObject.set(x, "-webkit-column-gap", js.undefined)
+    inline def `set-webkit-column-gapUndefined`: Self = StObject.set(x, "-webkit-column-gap", js.undefined)
     
-    @scala.inline
-    def `set-webkit-column-rule-color`(value: ColumnRuleColorProperty): Self = StObject.set(x, "-webkit-column-rule-color", value.asInstanceOf[js.Any])
+    inline def `set-webkit-column-rule-color`(value: ColumnRuleColorProperty): Self = StObject.set(x, "-webkit-column-rule-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-column-rule-colorUndefined`: Self = StObject.set(x, "-webkit-column-rule-color", js.undefined)
+    inline def `set-webkit-column-rule-colorUndefined`: Self = StObject.set(x, "-webkit-column-rule-color", js.undefined)
     
-    @scala.inline
-    def `set-webkit-column-rule-style`(value: ColumnRuleStyleProperty): Self = StObject.set(x, "-webkit-column-rule-style", value.asInstanceOf[js.Any])
+    inline def `set-webkit-column-rule-style`(value: ColumnRuleStyleProperty): Self = StObject.set(x, "-webkit-column-rule-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-column-rule-styleUndefined`: Self = StObject.set(x, "-webkit-column-rule-style", js.undefined)
+    inline def `set-webkit-column-rule-styleUndefined`: Self = StObject.set(x, "-webkit-column-rule-style", js.undefined)
     
-    @scala.inline
-    def `set-webkit-column-rule-width`(value: ColumnRuleWidthProperty[TLength]): Self = StObject.set(x, "-webkit-column-rule-width", value.asInstanceOf[js.Any])
+    inline def `set-webkit-column-rule-width`(value: ColumnRuleWidthProperty[TLength]): Self = StObject.set(x, "-webkit-column-rule-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-column-rule-widthUndefined`: Self = StObject.set(x, "-webkit-column-rule-width", js.undefined)
+    inline def `set-webkit-column-rule-widthUndefined`: Self = StObject.set(x, "-webkit-column-rule-width", js.undefined)
     
-    @scala.inline
-    def `set-webkit-column-span`(value: ColumnSpanProperty): Self = StObject.set(x, "-webkit-column-span", value.asInstanceOf[js.Any])
+    inline def `set-webkit-column-span`(value: ColumnSpanProperty): Self = StObject.set(x, "-webkit-column-span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-column-spanUndefined`: Self = StObject.set(x, "-webkit-column-span", js.undefined)
+    inline def `set-webkit-column-spanUndefined`: Self = StObject.set(x, "-webkit-column-span", js.undefined)
     
-    @scala.inline
-    def `set-webkit-column-width`(value: ColumnWidthProperty[TLength]): Self = StObject.set(x, "-webkit-column-width", value.asInstanceOf[js.Any])
+    inline def `set-webkit-column-width`(value: ColumnWidthProperty[TLength]): Self = StObject.set(x, "-webkit-column-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-column-widthUndefined`: Self = StObject.set(x, "-webkit-column-width", js.undefined)
+    inline def `set-webkit-column-widthUndefined`: Self = StObject.set(x, "-webkit-column-width", js.undefined)
     
-    @scala.inline
-    def `set-webkit-filter`(value: FilterProperty): Self = StObject.set(x, "-webkit-filter", value.asInstanceOf[js.Any])
+    inline def `set-webkit-filter`(value: FilterProperty): Self = StObject.set(x, "-webkit-filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-filterUndefined`: Self = StObject.set(x, "-webkit-filter", js.undefined)
+    inline def `set-webkit-filterUndefined`: Self = StObject.set(x, "-webkit-filter", js.undefined)
     
-    @scala.inline
-    def `set-webkit-flex-basis`(value: FlexBasisProperty[TLength]): Self = StObject.set(x, "-webkit-flex-basis", value.asInstanceOf[js.Any])
+    inline def `set-webkit-flex-basis`(value: FlexBasisProperty[TLength]): Self = StObject.set(x, "-webkit-flex-basis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-flex-basisUndefined`: Self = StObject.set(x, "-webkit-flex-basis", js.undefined)
+    inline def `set-webkit-flex-basisUndefined`: Self = StObject.set(x, "-webkit-flex-basis", js.undefined)
     
-    @scala.inline
-    def `set-webkit-flex-direction`(value: FlexDirectionProperty): Self = StObject.set(x, "-webkit-flex-direction", value.asInstanceOf[js.Any])
+    inline def `set-webkit-flex-direction`(value: FlexDirectionProperty): Self = StObject.set(x, "-webkit-flex-direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-flex-directionUndefined`: Self = StObject.set(x, "-webkit-flex-direction", js.undefined)
+    inline def `set-webkit-flex-directionUndefined`: Self = StObject.set(x, "-webkit-flex-direction", js.undefined)
     
-    @scala.inline
-    def `set-webkit-flex-grow`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-flex-grow", value.asInstanceOf[js.Any])
+    inline def `set-webkit-flex-grow`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-flex-grow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-flex-growUndefined`: Self = StObject.set(x, "-webkit-flex-grow", js.undefined)
+    inline def `set-webkit-flex-growUndefined`: Self = StObject.set(x, "-webkit-flex-grow", js.undefined)
     
-    @scala.inline
-    def `set-webkit-flex-shrink`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-flex-shrink", value.asInstanceOf[js.Any])
+    inline def `set-webkit-flex-shrink`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-flex-shrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-flex-shrinkUndefined`: Self = StObject.set(x, "-webkit-flex-shrink", js.undefined)
+    inline def `set-webkit-flex-shrinkUndefined`: Self = StObject.set(x, "-webkit-flex-shrink", js.undefined)
     
-    @scala.inline
-    def `set-webkit-flex-wrap`(value: FlexWrapProperty): Self = StObject.set(x, "-webkit-flex-wrap", value.asInstanceOf[js.Any])
+    inline def `set-webkit-flex-wrap`(value: FlexWrapProperty): Self = StObject.set(x, "-webkit-flex-wrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-flex-wrapUndefined`: Self = StObject.set(x, "-webkit-flex-wrap", js.undefined)
+    inline def `set-webkit-flex-wrapUndefined`: Self = StObject.set(x, "-webkit-flex-wrap", js.undefined)
     
-    @scala.inline
-    def `set-webkit-font-feature-settings`(value: FontFeatureSettingsProperty): Self = StObject.set(x, "-webkit-font-feature-settings", value.asInstanceOf[js.Any])
+    inline def `set-webkit-font-feature-settings`(value: FontFeatureSettingsProperty): Self = StObject.set(x, "-webkit-font-feature-settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-font-feature-settingsUndefined`: Self = StObject.set(x, "-webkit-font-feature-settings", js.undefined)
+    inline def `set-webkit-font-feature-settingsUndefined`: Self = StObject.set(x, "-webkit-font-feature-settings", js.undefined)
     
-    @scala.inline
-    def `set-webkit-font-kerning`(value: FontKerningProperty): Self = StObject.set(x, "-webkit-font-kerning", value.asInstanceOf[js.Any])
+    inline def `set-webkit-font-kerning`(value: FontKerningProperty): Self = StObject.set(x, "-webkit-font-kerning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-font-kerningUndefined`: Self = StObject.set(x, "-webkit-font-kerning", js.undefined)
+    inline def `set-webkit-font-kerningUndefined`: Self = StObject.set(x, "-webkit-font-kerning", js.undefined)
     
-    @scala.inline
-    def `set-webkit-font-variant-ligatures`(value: FontVariantLigaturesProperty): Self = StObject.set(x, "-webkit-font-variant-ligatures", value.asInstanceOf[js.Any])
+    inline def `set-webkit-font-variant-ligatures`(value: FontVariantLigaturesProperty): Self = StObject.set(x, "-webkit-font-variant-ligatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-font-variant-ligaturesUndefined`: Self = StObject.set(x, "-webkit-font-variant-ligatures", js.undefined)
+    inline def `set-webkit-font-variant-ligaturesUndefined`: Self = StObject.set(x, "-webkit-font-variant-ligatures", js.undefined)
     
-    @scala.inline
-    def `set-webkit-hyphens`(value: HyphensProperty): Self = StObject.set(x, "-webkit-hyphens", value.asInstanceOf[js.Any])
+    inline def `set-webkit-hyphens`(value: HyphensProperty): Self = StObject.set(x, "-webkit-hyphens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-hyphensUndefined`: Self = StObject.set(x, "-webkit-hyphens", js.undefined)
+    inline def `set-webkit-hyphensUndefined`: Self = StObject.set(x, "-webkit-hyphens", js.undefined)
     
-    @scala.inline
-    def `set-webkit-justify-content`(value: JustifyContentProperty): Self = StObject.set(x, "-webkit-justify-content", value.asInstanceOf[js.Any])
+    inline def `set-webkit-justify-content`(value: JustifyContentProperty): Self = StObject.set(x, "-webkit-justify-content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-justify-contentUndefined`: Self = StObject.set(x, "-webkit-justify-content", js.undefined)
+    inline def `set-webkit-justify-contentUndefined`: Self = StObject.set(x, "-webkit-justify-content", js.undefined)
     
-    @scala.inline
-    def `set-webkit-line-break`(value: LineBreakProperty): Self = StObject.set(x, "-webkit-line-break", value.asInstanceOf[js.Any])
+    inline def `set-webkit-line-break`(value: LineBreakProperty): Self = StObject.set(x, "-webkit-line-break", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-line-breakUndefined`: Self = StObject.set(x, "-webkit-line-break", js.undefined)
+    inline def `set-webkit-line-breakUndefined`: Self = StObject.set(x, "-webkit-line-break", js.undefined)
     
-    @scala.inline
-    def `set-webkit-line-clamp`(value: WebkitLineClampProperty): Self = StObject.set(x, "-webkit-line-clamp", value.asInstanceOf[js.Any])
+    inline def `set-webkit-line-clamp`(value: WebkitLineClampProperty): Self = StObject.set(x, "-webkit-line-clamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-line-clampUndefined`: Self = StObject.set(x, "-webkit-line-clamp", js.undefined)
+    inline def `set-webkit-line-clampUndefined`: Self = StObject.set(x, "-webkit-line-clamp", js.undefined)
     
-    @scala.inline
-    def `set-webkit-margin-end`(value: MarginInlineEndProperty[TLength]): Self = StObject.set(x, "-webkit-margin-end", value.asInstanceOf[js.Any])
+    inline def `set-webkit-margin-end`(value: MarginInlineEndProperty[TLength]): Self = StObject.set(x, "-webkit-margin-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-margin-endUndefined`: Self = StObject.set(x, "-webkit-margin-end", js.undefined)
+    inline def `set-webkit-margin-endUndefined`: Self = StObject.set(x, "-webkit-margin-end", js.undefined)
     
-    @scala.inline
-    def `set-webkit-margin-start`(value: MarginInlineStartProperty[TLength]): Self = StObject.set(x, "-webkit-margin-start", value.asInstanceOf[js.Any])
+    inline def `set-webkit-margin-start`(value: MarginInlineStartProperty[TLength]): Self = StObject.set(x, "-webkit-margin-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-margin-startUndefined`: Self = StObject.set(x, "-webkit-margin-start", js.undefined)
+    inline def `set-webkit-margin-startUndefined`: Self = StObject.set(x, "-webkit-margin-start", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-attachment`(value: WebkitMaskAttachmentProperty): Self = StObject.set(x, "-webkit-mask-attachment", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-attachment`(value: WebkitMaskAttachmentProperty): Self = StObject.set(x, "-webkit-mask-attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-attachmentUndefined`: Self = StObject.set(x, "-webkit-mask-attachment", js.undefined)
+    inline def `set-webkit-mask-attachmentUndefined`: Self = StObject.set(x, "-webkit-mask-attachment", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-clip`(value: WebkitMaskClipProperty): Self = StObject.set(x, "-webkit-mask-clip", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-clip`(value: WebkitMaskClipProperty): Self = StObject.set(x, "-webkit-mask-clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-clipUndefined`: Self = StObject.set(x, "-webkit-mask-clip", js.undefined)
+    inline def `set-webkit-mask-clipUndefined`: Self = StObject.set(x, "-webkit-mask-clip", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-composite`(value: WebkitMaskCompositeProperty): Self = StObject.set(x, "-webkit-mask-composite", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-composite`(value: WebkitMaskCompositeProperty): Self = StObject.set(x, "-webkit-mask-composite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-compositeUndefined`: Self = StObject.set(x, "-webkit-mask-composite", js.undefined)
+    inline def `set-webkit-mask-compositeUndefined`: Self = StObject.set(x, "-webkit-mask-composite", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-image`(value: WebkitMaskImageProperty): Self = StObject.set(x, "-webkit-mask-image", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-image`(value: WebkitMaskImageProperty): Self = StObject.set(x, "-webkit-mask-image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-imageUndefined`: Self = StObject.set(x, "-webkit-mask-image", js.undefined)
+    inline def `set-webkit-mask-imageUndefined`: Self = StObject.set(x, "-webkit-mask-image", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-origin`(value: WebkitMaskOriginProperty): Self = StObject.set(x, "-webkit-mask-origin", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-origin`(value: WebkitMaskOriginProperty): Self = StObject.set(x, "-webkit-mask-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-originUndefined`: Self = StObject.set(x, "-webkit-mask-origin", js.undefined)
+    inline def `set-webkit-mask-originUndefined`: Self = StObject.set(x, "-webkit-mask-origin", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-position`(value: WebkitMaskPositionProperty[TLength]): Self = StObject.set(x, "-webkit-mask-position", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-position`(value: WebkitMaskPositionProperty[TLength]): Self = StObject.set(x, "-webkit-mask-position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-position-x`(value: WebkitMaskPositionXProperty[TLength]): Self = StObject.set(x, "-webkit-mask-position-x", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-position-x`(value: WebkitMaskPositionXProperty[TLength]): Self = StObject.set(x, "-webkit-mask-position-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-position-xUndefined`: Self = StObject.set(x, "-webkit-mask-position-x", js.undefined)
+    inline def `set-webkit-mask-position-xUndefined`: Self = StObject.set(x, "-webkit-mask-position-x", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-position-y`(value: WebkitMaskPositionYProperty[TLength]): Self = StObject.set(x, "-webkit-mask-position-y", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-position-y`(value: WebkitMaskPositionYProperty[TLength]): Self = StObject.set(x, "-webkit-mask-position-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-position-yUndefined`: Self = StObject.set(x, "-webkit-mask-position-y", js.undefined)
+    inline def `set-webkit-mask-position-yUndefined`: Self = StObject.set(x, "-webkit-mask-position-y", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-positionUndefined`: Self = StObject.set(x, "-webkit-mask-position", js.undefined)
+    inline def `set-webkit-mask-positionUndefined`: Self = StObject.set(x, "-webkit-mask-position", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-repeat`(value: WebkitMaskRepeatProperty): Self = StObject.set(x, "-webkit-mask-repeat", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-repeat`(value: WebkitMaskRepeatProperty): Self = StObject.set(x, "-webkit-mask-repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-repeat-x`(value: WebkitMaskRepeatXProperty): Self = StObject.set(x, "-webkit-mask-repeat-x", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-repeat-x`(value: WebkitMaskRepeatXProperty): Self = StObject.set(x, "-webkit-mask-repeat-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-repeat-xUndefined`: Self = StObject.set(x, "-webkit-mask-repeat-x", js.undefined)
+    inline def `set-webkit-mask-repeat-xUndefined`: Self = StObject.set(x, "-webkit-mask-repeat-x", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-repeat-y`(value: WebkitMaskRepeatYProperty): Self = StObject.set(x, "-webkit-mask-repeat-y", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-repeat-y`(value: WebkitMaskRepeatYProperty): Self = StObject.set(x, "-webkit-mask-repeat-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-repeat-yUndefined`: Self = StObject.set(x, "-webkit-mask-repeat-y", js.undefined)
+    inline def `set-webkit-mask-repeat-yUndefined`: Self = StObject.set(x, "-webkit-mask-repeat-y", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-repeatUndefined`: Self = StObject.set(x, "-webkit-mask-repeat", js.undefined)
+    inline def `set-webkit-mask-repeatUndefined`: Self = StObject.set(x, "-webkit-mask-repeat", js.undefined)
     
-    @scala.inline
-    def `set-webkit-mask-size`(value: WebkitMaskSizeProperty[TLength]): Self = StObject.set(x, "-webkit-mask-size", value.asInstanceOf[js.Any])
+    inline def `set-webkit-mask-size`(value: WebkitMaskSizeProperty[TLength]): Self = StObject.set(x, "-webkit-mask-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-mask-sizeUndefined`: Self = StObject.set(x, "-webkit-mask-size", js.undefined)
+    inline def `set-webkit-mask-sizeUndefined`: Self = StObject.set(x, "-webkit-mask-size", js.undefined)
     
-    @scala.inline
-    def `set-webkit-max-inline-size`(value: MaxInlineSizeProperty[TLength]): Self = StObject.set(x, "-webkit-max-inline-size", value.asInstanceOf[js.Any])
+    inline def `set-webkit-max-inline-size`(value: MaxInlineSizeProperty[TLength]): Self = StObject.set(x, "-webkit-max-inline-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-max-inline-sizeUndefined`: Self = StObject.set(x, "-webkit-max-inline-size", js.undefined)
+    inline def `set-webkit-max-inline-sizeUndefined`: Self = StObject.set(x, "-webkit-max-inline-size", js.undefined)
     
-    @scala.inline
-    def `set-webkit-order`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-order", value.asInstanceOf[js.Any])
+    inline def `set-webkit-order`(value: GlobalsNumber): Self = StObject.set(x, "-webkit-order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-orderUndefined`: Self = StObject.set(x, "-webkit-order", js.undefined)
+    inline def `set-webkit-orderUndefined`: Self = StObject.set(x, "-webkit-order", js.undefined)
     
-    @scala.inline
-    def `set-webkit-overflow-scrolling`(value: WebkitOverflowScrollingProperty): Self = StObject.set(x, "-webkit-overflow-scrolling", value.asInstanceOf[js.Any])
+    inline def `set-webkit-overflow-scrolling`(value: WebkitOverflowScrollingProperty): Self = StObject.set(x, "-webkit-overflow-scrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-overflow-scrollingUndefined`: Self = StObject.set(x, "-webkit-overflow-scrolling", js.undefined)
+    inline def `set-webkit-overflow-scrollingUndefined`: Self = StObject.set(x, "-webkit-overflow-scrolling", js.undefined)
     
-    @scala.inline
-    def `set-webkit-padding-end`(value: PaddingInlineEndProperty[TLength]): Self = StObject.set(x, "-webkit-padding-end", value.asInstanceOf[js.Any])
+    inline def `set-webkit-padding-end`(value: PaddingInlineEndProperty[TLength]): Self = StObject.set(x, "-webkit-padding-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-padding-endUndefined`: Self = StObject.set(x, "-webkit-padding-end", js.undefined)
+    inline def `set-webkit-padding-endUndefined`: Self = StObject.set(x, "-webkit-padding-end", js.undefined)
     
-    @scala.inline
-    def `set-webkit-padding-start`(value: PaddingInlineStartProperty[TLength]): Self = StObject.set(x, "-webkit-padding-start", value.asInstanceOf[js.Any])
+    inline def `set-webkit-padding-start`(value: PaddingInlineStartProperty[TLength]): Self = StObject.set(x, "-webkit-padding-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-padding-startUndefined`: Self = StObject.set(x, "-webkit-padding-start", js.undefined)
+    inline def `set-webkit-padding-startUndefined`: Self = StObject.set(x, "-webkit-padding-start", js.undefined)
     
-    @scala.inline
-    def `set-webkit-perspective`(value: PerspectiveProperty[TLength]): Self = StObject.set(x, "-webkit-perspective", value.asInstanceOf[js.Any])
+    inline def `set-webkit-perspective`(value: PerspectiveProperty[TLength]): Self = StObject.set(x, "-webkit-perspective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-perspective-origin`(value: PerspectiveOriginProperty[TLength]): Self = StObject.set(x, "-webkit-perspective-origin", value.asInstanceOf[js.Any])
+    inline def `set-webkit-perspective-origin`(value: PerspectiveOriginProperty[TLength]): Self = StObject.set(x, "-webkit-perspective-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-perspective-originUndefined`: Self = StObject.set(x, "-webkit-perspective-origin", js.undefined)
+    inline def `set-webkit-perspective-originUndefined`: Self = StObject.set(x, "-webkit-perspective-origin", js.undefined)
     
-    @scala.inline
-    def `set-webkit-perspectiveUndefined`: Self = StObject.set(x, "-webkit-perspective", js.undefined)
+    inline def `set-webkit-perspectiveUndefined`: Self = StObject.set(x, "-webkit-perspective", js.undefined)
     
-    @scala.inline
-    def `set-webkit-print-color-adjust`(value: ColorAdjustProperty): Self = StObject.set(x, "-webkit-print-color-adjust", value.asInstanceOf[js.Any])
+    inline def `set-webkit-print-color-adjust`(value: ColorAdjustProperty): Self = StObject.set(x, "-webkit-print-color-adjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-print-color-adjustUndefined`: Self = StObject.set(x, "-webkit-print-color-adjust", js.undefined)
+    inline def `set-webkit-print-color-adjustUndefined`: Self = StObject.set(x, "-webkit-print-color-adjust", js.undefined)
     
-    @scala.inline
-    def `set-webkit-scroll-snap-type`(value: ScrollSnapTypeProperty): Self = StObject.set(x, "-webkit-scroll-snap-type", value.asInstanceOf[js.Any])
+    inline def `set-webkit-scroll-snap-type`(value: ScrollSnapTypeProperty): Self = StObject.set(x, "-webkit-scroll-snap-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-scroll-snap-typeUndefined`: Self = StObject.set(x, "-webkit-scroll-snap-type", js.undefined)
+    inline def `set-webkit-scroll-snap-typeUndefined`: Self = StObject.set(x, "-webkit-scroll-snap-type", js.undefined)
     
-    @scala.inline
-    def `set-webkit-shape-margin`(value: ShapeMarginProperty[TLength]): Self = StObject.set(x, "-webkit-shape-margin", value.asInstanceOf[js.Any])
+    inline def `set-webkit-shape-margin`(value: ShapeMarginProperty[TLength]): Self = StObject.set(x, "-webkit-shape-margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-shape-marginUndefined`: Self = StObject.set(x, "-webkit-shape-margin", js.undefined)
+    inline def `set-webkit-shape-marginUndefined`: Self = StObject.set(x, "-webkit-shape-margin", js.undefined)
     
-    @scala.inline
-    def `set-webkit-tap-highlight-color`(value: WebkitTapHighlightColorProperty): Self = StObject.set(x, "-webkit-tap-highlight-color", value.asInstanceOf[js.Any])
+    inline def `set-webkit-tap-highlight-color`(value: WebkitTapHighlightColorProperty): Self = StObject.set(x, "-webkit-tap-highlight-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-tap-highlight-colorUndefined`: Self = StObject.set(x, "-webkit-tap-highlight-color", js.undefined)
+    inline def `set-webkit-tap-highlight-colorUndefined`: Self = StObject.set(x, "-webkit-tap-highlight-color", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-combine`(value: TextCombineUprightProperty): Self = StObject.set(x, "-webkit-text-combine", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-combine`(value: TextCombineUprightProperty): Self = StObject.set(x, "-webkit-text-combine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-combineUndefined`: Self = StObject.set(x, "-webkit-text-combine", js.undefined)
+    inline def `set-webkit-text-combineUndefined`: Self = StObject.set(x, "-webkit-text-combine", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-decoration-color`(value: TextDecorationColorProperty): Self = StObject.set(x, "-webkit-text-decoration-color", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-decoration-color`(value: TextDecorationColorProperty): Self = StObject.set(x, "-webkit-text-decoration-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-decoration-colorUndefined`: Self = StObject.set(x, "-webkit-text-decoration-color", js.undefined)
+    inline def `set-webkit-text-decoration-colorUndefined`: Self = StObject.set(x, "-webkit-text-decoration-color", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-decoration-line`(value: TextDecorationLineProperty): Self = StObject.set(x, "-webkit-text-decoration-line", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-decoration-line`(value: TextDecorationLineProperty): Self = StObject.set(x, "-webkit-text-decoration-line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-decoration-lineUndefined`: Self = StObject.set(x, "-webkit-text-decoration-line", js.undefined)
+    inline def `set-webkit-text-decoration-lineUndefined`: Self = StObject.set(x, "-webkit-text-decoration-line", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-decoration-skip`(value: TextDecorationSkipProperty): Self = StObject.set(x, "-webkit-text-decoration-skip", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-decoration-skip`(value: TextDecorationSkipProperty): Self = StObject.set(x, "-webkit-text-decoration-skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-decoration-skipUndefined`: Self = StObject.set(x, "-webkit-text-decoration-skip", js.undefined)
+    inline def `set-webkit-text-decoration-skipUndefined`: Self = StObject.set(x, "-webkit-text-decoration-skip", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-decoration-style`(value: TextDecorationStyleProperty): Self = StObject.set(x, "-webkit-text-decoration-style", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-decoration-style`(value: TextDecorationStyleProperty): Self = StObject.set(x, "-webkit-text-decoration-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-decoration-styleUndefined`: Self = StObject.set(x, "-webkit-text-decoration-style", js.undefined)
+    inline def `set-webkit-text-decoration-styleUndefined`: Self = StObject.set(x, "-webkit-text-decoration-style", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-emphasis-color`(value: TextEmphasisColorProperty): Self = StObject.set(x, "-webkit-text-emphasis-color", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-emphasis-color`(value: TextEmphasisColorProperty): Self = StObject.set(x, "-webkit-text-emphasis-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-emphasis-colorUndefined`: Self = StObject.set(x, "-webkit-text-emphasis-color", js.undefined)
+    inline def `set-webkit-text-emphasis-colorUndefined`: Self = StObject.set(x, "-webkit-text-emphasis-color", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-emphasis-position`(value: GlobalsString): Self = StObject.set(x, "-webkit-text-emphasis-position", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-emphasis-position`(value: GlobalsString): Self = StObject.set(x, "-webkit-text-emphasis-position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-emphasis-positionUndefined`: Self = StObject.set(x, "-webkit-text-emphasis-position", js.undefined)
+    inline def `set-webkit-text-emphasis-positionUndefined`: Self = StObject.set(x, "-webkit-text-emphasis-position", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-emphasis-style`(value: TextEmphasisStyleProperty): Self = StObject.set(x, "-webkit-text-emphasis-style", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-emphasis-style`(value: TextEmphasisStyleProperty): Self = StObject.set(x, "-webkit-text-emphasis-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-emphasis-styleUndefined`: Self = StObject.set(x, "-webkit-text-emphasis-style", js.undefined)
+    inline def `set-webkit-text-emphasis-styleUndefined`: Self = StObject.set(x, "-webkit-text-emphasis-style", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-fill-color`(value: WebkitTextFillColorProperty): Self = StObject.set(x, "-webkit-text-fill-color", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-fill-color`(value: WebkitTextFillColorProperty): Self = StObject.set(x, "-webkit-text-fill-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-fill-colorUndefined`: Self = StObject.set(x, "-webkit-text-fill-color", js.undefined)
+    inline def `set-webkit-text-fill-colorUndefined`: Self = StObject.set(x, "-webkit-text-fill-color", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-orientation`(value: TextOrientationProperty): Self = StObject.set(x, "-webkit-text-orientation", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-orientation`(value: TextOrientationProperty): Self = StObject.set(x, "-webkit-text-orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-orientationUndefined`: Self = StObject.set(x, "-webkit-text-orientation", js.undefined)
+    inline def `set-webkit-text-orientationUndefined`: Self = StObject.set(x, "-webkit-text-orientation", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-size-adjust`(value: TextSizeAdjustProperty): Self = StObject.set(x, "-webkit-text-size-adjust", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-size-adjust`(value: TextSizeAdjustProperty): Self = StObject.set(x, "-webkit-text-size-adjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-size-adjustUndefined`: Self = StObject.set(x, "-webkit-text-size-adjust", js.undefined)
+    inline def `set-webkit-text-size-adjustUndefined`: Self = StObject.set(x, "-webkit-text-size-adjust", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-stroke-color`(value: WebkitTextStrokeColorProperty): Self = StObject.set(x, "-webkit-text-stroke-color", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-stroke-color`(value: WebkitTextStrokeColorProperty): Self = StObject.set(x, "-webkit-text-stroke-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-stroke-colorUndefined`: Self = StObject.set(x, "-webkit-text-stroke-color", js.undefined)
+    inline def `set-webkit-text-stroke-colorUndefined`: Self = StObject.set(x, "-webkit-text-stroke-color", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-stroke-width`(value: WebkitTextStrokeWidthProperty[TLength]): Self = StObject.set(x, "-webkit-text-stroke-width", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-stroke-width`(value: WebkitTextStrokeWidthProperty[TLength]): Self = StObject.set(x, "-webkit-text-stroke-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-stroke-widthUndefined`: Self = StObject.set(x, "-webkit-text-stroke-width", js.undefined)
+    inline def `set-webkit-text-stroke-widthUndefined`: Self = StObject.set(x, "-webkit-text-stroke-width", js.undefined)
     
-    @scala.inline
-    def `set-webkit-text-underline-position`(value: TextUnderlinePositionProperty): Self = StObject.set(x, "-webkit-text-underline-position", value.asInstanceOf[js.Any])
+    inline def `set-webkit-text-underline-position`(value: TextUnderlinePositionProperty): Self = StObject.set(x, "-webkit-text-underline-position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-text-underline-positionUndefined`: Self = StObject.set(x, "-webkit-text-underline-position", js.undefined)
+    inline def `set-webkit-text-underline-positionUndefined`: Self = StObject.set(x, "-webkit-text-underline-position", js.undefined)
     
-    @scala.inline
-    def `set-webkit-touch-callout`(value: WebkitTouchCalloutProperty): Self = StObject.set(x, "-webkit-touch-callout", value.asInstanceOf[js.Any])
+    inline def `set-webkit-touch-callout`(value: WebkitTouchCalloutProperty): Self = StObject.set(x, "-webkit-touch-callout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-touch-calloutUndefined`: Self = StObject.set(x, "-webkit-touch-callout", js.undefined)
+    inline def `set-webkit-touch-calloutUndefined`: Self = StObject.set(x, "-webkit-touch-callout", js.undefined)
     
-    @scala.inline
-    def `set-webkit-transform`(value: TransformProperty): Self = StObject.set(x, "-webkit-transform", value.asInstanceOf[js.Any])
+    inline def `set-webkit-transform`(value: TransformProperty): Self = StObject.set(x, "-webkit-transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-transform-origin`(value: TransformOriginProperty[TLength]): Self = StObject.set(x, "-webkit-transform-origin", value.asInstanceOf[js.Any])
+    inline def `set-webkit-transform-origin`(value: TransformOriginProperty[TLength]): Self = StObject.set(x, "-webkit-transform-origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-transform-originUndefined`: Self = StObject.set(x, "-webkit-transform-origin", js.undefined)
+    inline def `set-webkit-transform-originUndefined`: Self = StObject.set(x, "-webkit-transform-origin", js.undefined)
     
-    @scala.inline
-    def `set-webkit-transform-style`(value: TransformStyleProperty): Self = StObject.set(x, "-webkit-transform-style", value.asInstanceOf[js.Any])
+    inline def `set-webkit-transform-style`(value: TransformStyleProperty): Self = StObject.set(x, "-webkit-transform-style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-transform-styleUndefined`: Self = StObject.set(x, "-webkit-transform-style", js.undefined)
+    inline def `set-webkit-transform-styleUndefined`: Self = StObject.set(x, "-webkit-transform-style", js.undefined)
     
-    @scala.inline
-    def `set-webkit-transformUndefined`: Self = StObject.set(x, "-webkit-transform", js.undefined)
+    inline def `set-webkit-transformUndefined`: Self = StObject.set(x, "-webkit-transform", js.undefined)
     
-    @scala.inline
-    def `set-webkit-transition-delay`(value: GlobalsString): Self = StObject.set(x, "-webkit-transition-delay", value.asInstanceOf[js.Any])
+    inline def `set-webkit-transition-delay`(value: GlobalsString): Self = StObject.set(x, "-webkit-transition-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-transition-delayUndefined`: Self = StObject.set(x, "-webkit-transition-delay", js.undefined)
+    inline def `set-webkit-transition-delayUndefined`: Self = StObject.set(x, "-webkit-transition-delay", js.undefined)
     
-    @scala.inline
-    def `set-webkit-transition-duration`(value: GlobalsString): Self = StObject.set(x, "-webkit-transition-duration", value.asInstanceOf[js.Any])
+    inline def `set-webkit-transition-duration`(value: GlobalsString): Self = StObject.set(x, "-webkit-transition-duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-transition-durationUndefined`: Self = StObject.set(x, "-webkit-transition-duration", js.undefined)
+    inline def `set-webkit-transition-durationUndefined`: Self = StObject.set(x, "-webkit-transition-duration", js.undefined)
     
-    @scala.inline
-    def `set-webkit-transition-property`(value: TransitionPropertyProperty): Self = StObject.set(x, "-webkit-transition-property", value.asInstanceOf[js.Any])
+    inline def `set-webkit-transition-property`(value: TransitionPropertyProperty): Self = StObject.set(x, "-webkit-transition-property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-transition-propertyUndefined`: Self = StObject.set(x, "-webkit-transition-property", js.undefined)
+    inline def `set-webkit-transition-propertyUndefined`: Self = StObject.set(x, "-webkit-transition-property", js.undefined)
     
-    @scala.inline
-    def `set-webkit-transition-timing-function`(value: TransitionTimingFunctionProperty): Self = StObject.set(x, "-webkit-transition-timing-function", value.asInstanceOf[js.Any])
+    inline def `set-webkit-transition-timing-function`(value: TransitionTimingFunctionProperty): Self = StObject.set(x, "-webkit-transition-timing-function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-transition-timing-functionUndefined`: Self = StObject.set(x, "-webkit-transition-timing-function", js.undefined)
+    inline def `set-webkit-transition-timing-functionUndefined`: Self = StObject.set(x, "-webkit-transition-timing-function", js.undefined)
     
-    @scala.inline
-    def `set-webkit-user-modify`(value: WebkitUserModifyProperty): Self = StObject.set(x, "-webkit-user-modify", value.asInstanceOf[js.Any])
+    inline def `set-webkit-user-modify`(value: WebkitUserModifyProperty): Self = StObject.set(x, "-webkit-user-modify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-user-modifyUndefined`: Self = StObject.set(x, "-webkit-user-modify", js.undefined)
+    inline def `set-webkit-user-modifyUndefined`: Self = StObject.set(x, "-webkit-user-modify", js.undefined)
     
-    @scala.inline
-    def `set-webkit-user-select`(value: UserSelectProperty): Self = StObject.set(x, "-webkit-user-select", value.asInstanceOf[js.Any])
+    inline def `set-webkit-user-select`(value: UserSelectProperty): Self = StObject.set(x, "-webkit-user-select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-user-selectUndefined`: Self = StObject.set(x, "-webkit-user-select", js.undefined)
+    inline def `set-webkit-user-selectUndefined`: Self = StObject.set(x, "-webkit-user-select", js.undefined)
     
-    @scala.inline
-    def `set-webkit-writing-mode`(value: WritingModeProperty): Self = StObject.set(x, "-webkit-writing-mode", value.asInstanceOf[js.Any])
+    inline def `set-webkit-writing-mode`(value: WritingModeProperty): Self = StObject.set(x, "-webkit-writing-mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-webkit-writing-modeUndefined`: Self = StObject.set(x, "-webkit-writing-mode", js.undefined)
+    inline def `set-webkit-writing-modeUndefined`: Self = StObject.set(x, "-webkit-writing-mode", js.undefined)
   }
 }

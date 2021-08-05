@@ -18,27 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TeamSpecialization extends StObject
 object TeamSpecialization {
   
-  @scala.inline
-  def educationClass: typings.microsoftGraph.microsoftGraphStrings.educationClass = "educationClass".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.educationClass]
+  inline def educationClass: typings.microsoftGraph.microsoftGraphStrings.educationClass = "educationClass".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.educationClass]
   
-  @scala.inline
-  def educationProfessionalLearningCommunity: typings.microsoftGraph.microsoftGraphStrings.educationProfessionalLearningCommunity = "educationProfessionalLearningCommunity".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.educationProfessionalLearningCommunity]
+  inline def educationProfessionalLearningCommunity: typings.microsoftGraph.microsoftGraphStrings.educationProfessionalLearningCommunity = "educationProfessionalLearningCommunity".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.educationProfessionalLearningCommunity]
   
-  @scala.inline
-  def educationStaff: typings.microsoftGraph.microsoftGraphStrings.educationStaff = "educationStaff".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.educationStaff]
+  inline def educationStaff: typings.microsoftGraph.microsoftGraphStrings.educationStaff = "educationStaff".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.educationStaff]
   
-  @scala.inline
-  def educationStandard: typings.microsoftGraph.microsoftGraphStrings.educationStandard = "educationStandard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.educationStandard]
+  inline def educationStandard: typings.microsoftGraph.microsoftGraphStrings.educationStandard = "educationStandard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.educationStandard]
   
-  @scala.inline
-  def healthcareCareCoordination: typings.microsoftGraph.microsoftGraphStrings.healthcareCareCoordination = "healthcareCareCoordination".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.healthcareCareCoordination]
+  inline def healthcareCareCoordination: typings.microsoftGraph.microsoftGraphStrings.healthcareCareCoordination = "healthcareCareCoordination".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.healthcareCareCoordination]
   
-  @scala.inline
-  def healthcareStandard: typings.microsoftGraph.microsoftGraphStrings.healthcareStandard = "healthcareStandard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.healthcareStandard]
+  inline def healthcareStandard: typings.microsoftGraph.microsoftGraphStrings.healthcareStandard = "healthcareStandard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.healthcareStandard]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

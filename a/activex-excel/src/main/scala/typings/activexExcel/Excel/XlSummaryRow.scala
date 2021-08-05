@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSummaryRow extends StObject
 object XlSummaryRow {
   
-  @scala.inline
-  def xlSummaryAbove: `0` = 0.asInstanceOf[`0`]
+  inline def xlSummaryAbove: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlSummaryBelow: `1` = 1.asInstanceOf[`1`]
+  inline def xlSummaryBelow: `1` = 1.asInstanceOf[`1`]
 }

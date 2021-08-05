@@ -13,16 +13,13 @@ trait ProcessingStoppingCondition extends StObject {
 }
 object ProcessingStoppingCondition {
   
-  @scala.inline
-  def apply(MaxRuntimeInSeconds: ProcessingMaxRuntimeInSeconds): ProcessingStoppingCondition = {
+  inline def apply(MaxRuntimeInSeconds: ProcessingMaxRuntimeInSeconds): ProcessingStoppingCondition = {
     val __obj = js.Dynamic.literal(MaxRuntimeInSeconds = MaxRuntimeInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessingStoppingCondition]
   }
   
-  @scala.inline
-  implicit class ProcessingStoppingConditionMutableBuilder[Self <: ProcessingStoppingCondition] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingStoppingCondition](x: Self) {
     
-    @scala.inline
-    def setMaxRuntimeInSeconds(value: ProcessingMaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxRuntimeInSeconds(value: ProcessingMaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
   }
 }

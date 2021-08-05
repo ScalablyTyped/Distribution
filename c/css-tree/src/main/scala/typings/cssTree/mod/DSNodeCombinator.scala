@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DSNodeCombinator extends StObject
 object DSNodeCombinator {
   
-  @scala.inline
-  def AmpersandAmpersand: typings.cssTree.cssTreeStrings.AmpersandAmpersand = "&&".asInstanceOf[typings.cssTree.cssTreeStrings.AmpersandAmpersand]
+  inline def AmpersandAmpersand: typings.cssTree.cssTreeStrings.AmpersandAmpersand = "&&".asInstanceOf[typings.cssTree.cssTreeStrings.AmpersandAmpersand]
   
-  @scala.inline
-  def Space: typings.cssTree.cssTreeStrings.Space = (" ").asInstanceOf[typings.cssTree.cssTreeStrings.Space]
+  inline def Space: typings.cssTree.cssTreeStrings.Space = (" ").asInstanceOf[typings.cssTree.cssTreeStrings.Space]
   
-  @scala.inline
-  def Verticalline: typings.cssTree.cssTreeStrings.Verticalline = "|".asInstanceOf[typings.cssTree.cssTreeStrings.Verticalline]
+  inline def Verticalline: typings.cssTree.cssTreeStrings.Verticalline = "|".asInstanceOf[typings.cssTree.cssTreeStrings.Verticalline]
   
-  @scala.inline
-  def VerticallineVerticalline: typings.cssTree.cssTreeStrings.VerticallineVerticalline = "||".asInstanceOf[typings.cssTree.cssTreeStrings.VerticallineVerticalline]
+  inline def VerticallineVerticalline: typings.cssTree.cssTreeStrings.VerticallineVerticalline = "||".asInstanceOf[typings.cssTree.cssTreeStrings.VerticallineVerticalline]
 }

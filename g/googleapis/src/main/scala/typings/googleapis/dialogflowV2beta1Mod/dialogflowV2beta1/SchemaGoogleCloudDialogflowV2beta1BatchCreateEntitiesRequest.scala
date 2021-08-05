@@ -25,28 +25,21 @@ trait SchemaGoogleCloudDialogflowV2beta1BatchCreateEntitiesRequest extends StObj
 }
 object SchemaGoogleCloudDialogflowV2beta1BatchCreateEntitiesRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1BatchCreateEntitiesRequest = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1BatchCreateEntitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1BatchCreateEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1BatchCreateEntitiesRequestMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1BatchCreateEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1BatchCreateEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

@@ -23,40 +23,29 @@ trait UploadFilter extends StObject {
 }
 object UploadFilter {
   
-  @scala.inline
-  def apply(): UploadFilter = {
+  inline def apply(): UploadFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadFilter]
   }
   
-  @scala.inline
-  implicit class UploadFilterMutableBuilder[Self <: UploadFilter] (val x: Self) extends AnyVal {
+  extension [Self <: UploadFilter](x: Self) {
     
-    @scala.inline
-    def setId(value: Double | js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
+    inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String | js.Array[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String | js.Array[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: String*): Self = StObject.set(x, "status", js.Array(value :_*))
     
-    @scala.inline
-    def setUuid(value: Double | js.Array[Double]): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: Double | js.Array[Double]): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     
-    @scala.inline
-    def setUuidVarargs(value: Double*): Self = StObject.set(x, "uuid", js.Array(value :_*))
+    inline def setUuidVarargs(value: Double*): Self = StObject.set(x, "uuid", js.Array(value :_*))
   }
 }

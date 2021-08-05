@@ -18,25 +18,19 @@ trait ModifyMountTargetSecurityGroupsRequest extends StObject {
 }
 object ModifyMountTargetSecurityGroupsRequest {
   
-  @scala.inline
-  def apply(MountTargetId: MountTargetId): ModifyMountTargetSecurityGroupsRequest = {
+  inline def apply(MountTargetId: MountTargetId): ModifyMountTargetSecurityGroupsRequest = {
     val __obj = js.Dynamic.literal(MountTargetId = MountTargetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyMountTargetSecurityGroupsRequest]
   }
   
-  @scala.inline
-  implicit class ModifyMountTargetSecurityGroupsRequestMutableBuilder[Self <: ModifyMountTargetSecurityGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyMountTargetSecurityGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
+    inline def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
   }
 }

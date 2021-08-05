@@ -19,16 +19,13 @@ trait IInvoiceFinalizeOptions
 }
 object IInvoiceFinalizeOptions {
   
-  @scala.inline
-  def apply(auto_advance: Boolean): IInvoiceFinalizeOptions = {
+  inline def apply(auto_advance: Boolean): IInvoiceFinalizeOptions = {
     val __obj = js.Dynamic.literal(auto_advance = auto_advance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceFinalizeOptions]
   }
   
-  @scala.inline
-  implicit class IInvoiceFinalizeOptionsMutableBuilder[Self <: IInvoiceFinalizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IInvoiceFinalizeOptions](x: Self) {
     
-    @scala.inline
-    def setAuto_advance(value: Boolean): Self = StObject.set(x, "auto_advance", value.asInstanceOf[js.Any])
+    inline def setAuto_advance(value: Boolean): Self = StObject.set(x, "auto_advance", value.asInstanceOf[js.Any])
   }
 }

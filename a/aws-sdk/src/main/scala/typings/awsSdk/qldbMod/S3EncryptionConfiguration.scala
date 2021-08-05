@@ -18,22 +18,17 @@ trait S3EncryptionConfiguration extends StObject {
 }
 object S3EncryptionConfiguration {
   
-  @scala.inline
-  def apply(ObjectEncryptionType: S3ObjectEncryptionType): S3EncryptionConfiguration = {
+  inline def apply(ObjectEncryptionType: S3ObjectEncryptionType): S3EncryptionConfiguration = {
     val __obj = js.Dynamic.literal(ObjectEncryptionType = ObjectEncryptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3EncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class S3EncryptionConfigurationMutableBuilder[Self <: S3EncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: S3EncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setKmsKeyArn(value: Arn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: Arn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
     
-    @scala.inline
-    def setObjectEncryptionType(value: S3ObjectEncryptionType): Self = StObject.set(x, "ObjectEncryptionType", value.asInstanceOf[js.Any])
+    inline def setObjectEncryptionType(value: S3ObjectEncryptionType): Self = StObject.set(x, "ObjectEncryptionType", value.asInstanceOf[js.Any])
   }
 }

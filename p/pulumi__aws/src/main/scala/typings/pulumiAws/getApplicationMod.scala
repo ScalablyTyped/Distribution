@@ -12,10 +12,8 @@ object getApplicationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getApplication(args: GetApplicationArgs): js.Promise[GetApplicationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetApplicationResult]]
-  @scala.inline
-  def getApplication(args: GetApplicationArgs, opts: InvokeOptions): js.Promise[GetApplicationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetApplicationResult]]
+  inline def getApplication(args: GetApplicationArgs): js.Promise[GetApplicationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetApplicationResult]]
+  inline def getApplication(args: GetApplicationArgs, opts: InvokeOptions): js.Promise[GetApplicationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplication")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetApplicationResult]]
   
   trait GetApplicationArgs extends StObject {
     
@@ -26,17 +24,14 @@ object getApplicationMod {
   }
   object GetApplicationArgs {
     
-    @scala.inline
-    def apply(name: String): GetApplicationArgs = {
+    inline def apply(name: String): GetApplicationArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetApplicationArgs]
     }
     
-    @scala.inline
-    implicit class GetApplicationArgsMutableBuilder[Self <: GetApplicationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetApplicationArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,8 +58,7 @@ object getApplicationMod {
   }
   object GetApplicationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appversionLifecycle: GetApplicationAppversionLifecycle,
       arn: String,
       description: String,
@@ -75,23 +69,17 @@ object getApplicationMod {
       __obj.asInstanceOf[GetApplicationResult]
     }
     
-    @scala.inline
-    implicit class GetApplicationResultMutableBuilder[Self <: GetApplicationResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetApplicationResult](x: Self) {
       
-      @scala.inline
-      def setAppversionLifecycle(value: GetApplicationAppversionLifecycle): Self = StObject.set(x, "appversionLifecycle", value.asInstanceOf[js.Any])
+      inline def setAppversionLifecycle(value: GetApplicationAppversionLifecycle): Self = StObject.set(x, "appversionLifecycle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

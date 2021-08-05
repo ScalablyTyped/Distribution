@@ -21,8 +21,7 @@ object KnownPerceptionColorFrameSourceProperties {
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties.autoExposureEnabled")
   @js.native
   def autoExposureEnabled: String = js.native
-  @scala.inline
-  def autoExposureEnabled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoExposureEnabled")(x.asInstanceOf[js.Any])
+  inline def autoExposureEnabled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoExposureEnabled")(x.asInstanceOf[js.Any])
   
   /** Gets a string key used to retrieve a TimeSpan property indicating the current exposure duration of the camera. */
   /* static member */
@@ -35,9 +34,7 @@ object KnownPerceptionColorFrameSourceProperties {
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties.exposureCompensation")
   @js.native
   def exposureCompensation: String = js.native
-  @scala.inline
-  def exposureCompensation_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exposureCompensation")(x.asInstanceOf[js.Any])
+  inline def exposureCompensation_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exposureCompensation")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def exposure_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exposure")(x.asInstanceOf[js.Any])
+  inline def exposure_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exposure")(x.asInstanceOf[js.Any])
 }

@@ -23,19 +23,15 @@ trait ASPxClientAxisTitle
 }
 object ASPxClientAxisTitle {
   
-  @scala.inline
-  def apply(axis: ASPxClientAxisBase, chart: ASPxClientWebChart, text: String): ASPxClientAxisTitle = {
+  inline def apply(axis: ASPxClientAxisBase, chart: ASPxClientWebChart, text: String): ASPxClientAxisTitle = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientAxisTitle]
   }
   
-  @scala.inline
-  implicit class ASPxClientAxisTitleMutableBuilder[Self <: ASPxClientAxisTitle] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAxisTitle](x: Self) {
     
-    @scala.inline
-    def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

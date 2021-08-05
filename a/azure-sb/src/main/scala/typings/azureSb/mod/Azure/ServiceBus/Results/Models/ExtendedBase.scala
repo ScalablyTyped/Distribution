@@ -41,8 +41,7 @@ trait ExtendedBase
 }
 object ExtendedBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AuthorizationRules: String,
     AutoDeleteOnIdle: String,
     CreatedAt: DateString,
@@ -65,49 +64,34 @@ object ExtendedBase {
     __obj.asInstanceOf[ExtendedBase]
   }
   
-  @scala.inline
-  implicit class ExtendedBaseMutableBuilder[Self <: ExtendedBase] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedBase](x: Self) {
     
-    @scala.inline
-    def setAuthorizationRules(value: String): Self = StObject.set(x, "AuthorizationRules", value.asInstanceOf[js.Any])
+    inline def setAuthorizationRules(value: String): Self = StObject.set(x, "AuthorizationRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteOnIdle(value: String): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
+    inline def setAutoDeleteOnIdle(value: String): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplicateDetectionHistoryTimeWindow(value: Duration): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
+    inline def setDuplicateDetectionHistoryTimeWindow(value: Duration): Self = StObject.set(x, "DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableBatchedOperations(value: String): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
+    inline def setEnableBatchedOperations(value: String): Self = StObject.set(x, "EnableBatchedOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableExpress(value: String): Self = StObject.set(x, "EnableExpress", value.asInstanceOf[js.Any])
+    inline def setEnableExpress(value: String): Self = StObject.set(x, "EnableExpress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePartitioning(value: String): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
+    inline def setEnablePartitioning(value: String): Self = StObject.set(x, "EnablePartitioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityAvailabilityStatus(value: String): Self = StObject.set(x, "EntityAvailabilityStatus", value.asInstanceOf[js.Any])
+    inline def setEntityAvailabilityStatus(value: String): Self = StObject.set(x, "EntityAvailabilityStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAnonymousAccessible(value: String): Self = StObject.set(x, "IsAnonymousAccessible", value.asInstanceOf[js.Any])
+    inline def setIsAnonymousAccessible(value: String): Self = StObject.set(x, "IsAnonymousAccessible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeInMegabytes(value: String): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
+    inline def setMaxSizeInMegabytes(value: String): Self = StObject.set(x, "MaxSizeInMegabytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresDuplicateDetection(value: String): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
+    inline def setRequiresDuplicateDetection(value: String): Self = StObject.set(x, "RequiresDuplicateDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytes(value: String): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: String): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: EntityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EntityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: DateString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: DateString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

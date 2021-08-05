@@ -17,16 +17,13 @@ trait ManualIndirection
 }
 object ManualIndirection {
   
-  @scala.inline
-  def apply(manualIndirection: ResourceUid, name: String, resourceType: ResourceType, uid: String): ManualIndirection = {
+  inline def apply(manualIndirection: ResourceUid, name: String, resourceType: ResourceType, uid: String): ManualIndirection = {
     val __obj = js.Dynamic.literal(manualIndirection = manualIndirection.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManualIndirection]
   }
   
-  @scala.inline
-  implicit class ManualIndirectionMutableBuilder[Self <: ManualIndirection] (val x: Self) extends AnyVal {
+  extension [Self <: ManualIndirection](x: Self) {
     
-    @scala.inline
-    def setManualIndirection(value: ResourceUid): Self = StObject.set(x, "manualIndirection", value.asInstanceOf[js.Any])
+    inline def setManualIndirection(value: ResourceUid): Self = StObject.set(x, "manualIndirection", value.asInstanceOf[js.Any])
   }
 }

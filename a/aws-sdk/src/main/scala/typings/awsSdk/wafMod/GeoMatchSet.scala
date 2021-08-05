@@ -23,28 +23,21 @@ trait GeoMatchSet extends StObject {
 }
 object GeoMatchSet {
   
-  @scala.inline
-  def apply(GeoMatchConstraints: GeoMatchConstraints, GeoMatchSetId: ResourceId): GeoMatchSet = {
+  inline def apply(GeoMatchConstraints: GeoMatchConstraints, GeoMatchSetId: ResourceId): GeoMatchSet = {
     val __obj = js.Dynamic.literal(GeoMatchConstraints = GeoMatchConstraints.asInstanceOf[js.Any], GeoMatchSetId = GeoMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoMatchSet]
   }
   
-  @scala.inline
-  implicit class GeoMatchSetMutableBuilder[Self <: GeoMatchSet] (val x: Self) extends AnyVal {
+  extension [Self <: GeoMatchSet](x: Self) {
     
-    @scala.inline
-    def setGeoMatchConstraints(value: GeoMatchConstraints): Self = StObject.set(x, "GeoMatchConstraints", value.asInstanceOf[js.Any])
+    inline def setGeoMatchConstraints(value: GeoMatchConstraints): Self = StObject.set(x, "GeoMatchConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoMatchConstraintsVarargs(value: GeoMatchConstraint*): Self = StObject.set(x, "GeoMatchConstraints", js.Array(value :_*))
+    inline def setGeoMatchConstraintsVarargs(value: GeoMatchConstraint*): Self = StObject.set(x, "GeoMatchConstraints", js.Array(value :_*))
     
-    @scala.inline
-    def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
+    inline def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

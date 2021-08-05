@@ -35,76 +35,53 @@ trait InventoryWindowsUpdatePackage extends StObject {
 }
 object InventoryWindowsUpdatePackage {
   
-  @scala.inline
-  def apply(): InventoryWindowsUpdatePackage = {
+  inline def apply(): InventoryWindowsUpdatePackage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventoryWindowsUpdatePackage]
   }
   
-  @scala.inline
-  implicit class InventoryWindowsUpdatePackageMutableBuilder[Self <: InventoryWindowsUpdatePackage] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryWindowsUpdatePackage](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[InventoryWindowsUpdatePackageWindowsUpdateCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[InventoryWindowsUpdatePackageWindowsUpdateCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: InventoryWindowsUpdatePackageWindowsUpdateCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: InventoryWindowsUpdatePackageWindowsUpdateCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setKbArticleIds(value: js.Array[String]): Self = StObject.set(x, "kbArticleIds", value.asInstanceOf[js.Any])
+    inline def setKbArticleIds(value: js.Array[String]): Self = StObject.set(x, "kbArticleIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKbArticleIdsUndefined: Self = StObject.set(x, "kbArticleIds", js.undefined)
+    inline def setKbArticleIdsUndefined: Self = StObject.set(x, "kbArticleIds", js.undefined)
     
-    @scala.inline
-    def setKbArticleIdsVarargs(value: String*): Self = StObject.set(x, "kbArticleIds", js.Array(value :_*))
+    inline def setKbArticleIdsVarargs(value: String*): Self = StObject.set(x, "kbArticleIds", js.Array(value :_*))
     
-    @scala.inline
-    def setLastDeploymentChangeTime(value: String): Self = StObject.set(x, "lastDeploymentChangeTime", value.asInstanceOf[js.Any])
+    inline def setLastDeploymentChangeTime(value: String): Self = StObject.set(x, "lastDeploymentChangeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDeploymentChangeTimeUndefined: Self = StObject.set(x, "lastDeploymentChangeTime", js.undefined)
+    inline def setLastDeploymentChangeTimeUndefined: Self = StObject.set(x, "lastDeploymentChangeTime", js.undefined)
     
-    @scala.inline
-    def setMoreInfoUrls(value: js.Array[String]): Self = StObject.set(x, "moreInfoUrls", value.asInstanceOf[js.Any])
+    inline def setMoreInfoUrls(value: js.Array[String]): Self = StObject.set(x, "moreInfoUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreInfoUrlsUndefined: Self = StObject.set(x, "moreInfoUrls", js.undefined)
+    inline def setMoreInfoUrlsUndefined: Self = StObject.set(x, "moreInfoUrls", js.undefined)
     
-    @scala.inline
-    def setMoreInfoUrlsVarargs(value: String*): Self = StObject.set(x, "moreInfoUrls", js.Array(value :_*))
+    inline def setMoreInfoUrlsVarargs(value: String*): Self = StObject.set(x, "moreInfoUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setRevisionNumber(value: Double): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
+    inline def setRevisionNumber(value: Double): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
+    inline def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
     
-    @scala.inline
-    def setSupportUrl(value: String): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
+    inline def setSupportUrl(value: String): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportUrlUndefined: Self = StObject.set(x, "supportUrl", js.undefined)
+    inline def setSupportUrlUndefined: Self = StObject.set(x, "supportUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUpdateId(value: String): Self = StObject.set(x, "updateId", value.asInstanceOf[js.Any])
+    inline def setUpdateId(value: String): Self = StObject.set(x, "updateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateIdUndefined: Self = StObject.set(x, "updateId", js.undefined)
+    inline def setUpdateIdUndefined: Self = StObject.set(x, "updateId", js.undefined)
   }
 }

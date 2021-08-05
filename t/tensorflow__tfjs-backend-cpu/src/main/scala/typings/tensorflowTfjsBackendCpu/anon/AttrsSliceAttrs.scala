@@ -17,22 +17,17 @@ trait AttrsSliceAttrs extends StObject {
 }
 object AttrsSliceAttrs {
   
-  @scala.inline
-  def apply(attrs: SliceAttrs, backend: MathBackendCPU, inputs: SliceInputs): AttrsSliceAttrs = {
+  inline def apply(attrs: SliceAttrs, backend: MathBackendCPU, inputs: SliceInputs): AttrsSliceAttrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsSliceAttrs]
   }
   
-  @scala.inline
-  implicit class AttrsSliceAttrsMutableBuilder[Self <: AttrsSliceAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsSliceAttrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: SliceAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: SliceAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: SliceInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: SliceInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

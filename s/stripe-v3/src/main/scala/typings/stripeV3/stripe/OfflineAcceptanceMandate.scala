@@ -10,16 +10,13 @@ trait OfflineAcceptanceMandate extends StObject {
 }
 object OfflineAcceptanceMandate {
   
-  @scala.inline
-  def apply(contact_email: String): OfflineAcceptanceMandate = {
+  inline def apply(contact_email: String): OfflineAcceptanceMandate = {
     val __obj = js.Dynamic.literal(contact_email = contact_email.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineAcceptanceMandate]
   }
   
-  @scala.inline
-  implicit class OfflineAcceptanceMandateMutableBuilder[Self <: OfflineAcceptanceMandate] (val x: Self) extends AnyVal {
+  extension [Self <: OfflineAcceptanceMandate](x: Self) {
     
-    @scala.inline
-    def setContact_email(value: String): Self = StObject.set(x, "contact_email", value.asInstanceOf[js.Any])
+    inline def setContact_email(value: String): Self = StObject.set(x, "contact_email", value.asInstanceOf[js.Any])
   }
 }

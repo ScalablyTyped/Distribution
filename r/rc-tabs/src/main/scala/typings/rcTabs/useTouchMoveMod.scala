@@ -12,8 +12,7 @@ object useTouchMoveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     ref: RefObject[HTMLDivElement],
     onOffset: js.Function2[/* offsetX */ Double, /* offsetY */ Double, Boolean]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any], onOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]

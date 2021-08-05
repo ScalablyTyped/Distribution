@@ -11,19 +11,15 @@ trait SasPortalGenerateSecretResponse extends StObject {
 }
 object SasPortalGenerateSecretResponse {
   
-  @scala.inline
-  def apply(): SasPortalGenerateSecretResponse = {
+  inline def apply(): SasPortalGenerateSecretResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalGenerateSecretResponse]
   }
   
-  @scala.inline
-  implicit class SasPortalGenerateSecretResponseMutableBuilder[Self <: SasPortalGenerateSecretResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalGenerateSecretResponse](x: Self) {
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
   }
 }

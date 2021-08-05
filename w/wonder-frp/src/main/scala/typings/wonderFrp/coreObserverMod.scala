@@ -17,11 +17,11 @@ object coreObserverMod {
     def this(observer: IObserver) = this()
     def this(onNext: js.Function, onError: js.Function, onCompleted: js.Function) = this()
     
-    var _disposable: js.Any = js.native
+    /* private */ var _disposable: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _isStop: js.Any = js.native
+    /* private */ var _isStop: js.Any = js.native
     
     /* CompleteClass */
     override def completed(): js.Any = js.native
@@ -43,11 +43,11 @@ object coreObserverMod {
     
     /* protected */ def onNext(value: js.Any): js.Any = js.native
     
-    var onUserCompleted: js.Function = js.native
+    /* protected */ var onUserCompleted: js.Function = js.native
     
-    var onUserError: js.Function = js.native
+    /* protected */ var onUserError: js.Function = js.native
     
-    var onUserNext: js.Function = js.native
+    /* protected */ var onUserNext: js.Function = js.native
     
     def setDisposable(disposable: IDisposable): Unit = js.native
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Lists")
 @js.native
-class Lists protected ()
+/* private */ class Lists ()
   extends StObject
      with typings.activexWord.Word.Lists {
   
@@ -25,7 +25,7 @@ class Lists protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Lists_typekey")
   var WordDotLists_typekey: typings.activexWord.Word.Lists = js.native
 }

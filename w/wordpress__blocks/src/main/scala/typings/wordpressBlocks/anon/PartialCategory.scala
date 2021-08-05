@@ -16,34 +16,25 @@ trait PartialCategory extends StObject {
 }
 object PartialCategory {
   
-  @scala.inline
-  def apply(): PartialCategory = {
+  inline def apply(): PartialCategory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCategory]
   }
   
-  @scala.inline
-  implicit class PartialCategoryMutableBuilder[Self <: PartialCategory] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCategory](x: Self) {
     
-    @scala.inline
-    def setIcon(value: Element | typings.wordpressComponents.dashiconMod.Dashicon.Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Element | typings.wordpressComponents.dashiconMod.Dashicon.Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconNull: Self = StObject.set(x, "icon", null)
+    inline def setIconNull: Self = StObject.set(x, "icon", null)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
+    inline def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

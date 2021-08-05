@@ -10,19 +10,15 @@ trait NearestTo extends StObject {
 }
 object NearestTo {
   
-  @scala.inline
-  def apply(): NearestTo = {
+  inline def apply(): NearestTo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NearestTo]
   }
   
-  @scala.inline
-  implicit class NearestToMutableBuilder[Self <: NearestTo] (val x: Self) extends AnyVal {
+  extension [Self <: NearestTo](x: Self) {
     
-    @scala.inline
-    def setNearestTo(value: Double): Self = StObject.set(x, "nearestTo", value.asInstanceOf[js.Any])
+    inline def setNearestTo(value: Double): Self = StObject.set(x, "nearestTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearestToUndefined: Self = StObject.set(x, "nearestTo", js.undefined)
+    inline def setNearestToUndefined: Self = StObject.set(x, "nearestTo", js.undefined)
   }
 }

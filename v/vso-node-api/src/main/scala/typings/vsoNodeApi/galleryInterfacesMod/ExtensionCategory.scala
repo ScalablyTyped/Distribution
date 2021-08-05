@@ -35,8 +35,7 @@ trait ExtensionCategory extends StObject {
 }
 object ExtensionCategory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     associatedProducts: js.Array[String],
     categoryId: Double,
     categoryName: String,
@@ -48,31 +47,22 @@ object ExtensionCategory {
     __obj.asInstanceOf[ExtensionCategory]
   }
   
-  @scala.inline
-  implicit class ExtensionCategoryMutableBuilder[Self <: ExtensionCategory] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionCategory](x: Self) {
     
-    @scala.inline
-    def setAssociatedProducts(value: js.Array[String]): Self = StObject.set(x, "associatedProducts", value.asInstanceOf[js.Any])
+    inline def setAssociatedProducts(value: js.Array[String]): Self = StObject.set(x, "associatedProducts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedProductsVarargs(value: String*): Self = StObject.set(x, "associatedProducts", js.Array(value :_*))
+    inline def setAssociatedProductsVarargs(value: String*): Self = StObject.set(x, "associatedProducts", js.Array(value :_*))
     
-    @scala.inline
-    def setCategoryId(value: Double): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
+    inline def setCategoryId(value: Double): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
+    inline def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageTitles(value: js.Array[CategoryLanguageTitle]): Self = StObject.set(x, "languageTitles", value.asInstanceOf[js.Any])
+    inline def setLanguageTitles(value: js.Array[CategoryLanguageTitle]): Self = StObject.set(x, "languageTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageTitlesVarargs(value: CategoryLanguageTitle*): Self = StObject.set(x, "languageTitles", js.Array(value :_*))
+    inline def setLanguageTitlesVarargs(value: CategoryLanguageTitle*): Self = StObject.set(x, "languageTitles", js.Array(value :_*))
     
-    @scala.inline
-    def setParentCategoryName(value: String): Self = StObject.set(x, "parentCategoryName", value.asInstanceOf[js.Any])
+    inline def setParentCategoryName(value: String): Self = StObject.set(x, "parentCategoryName", value.asInstanceOf[js.Any])
   }
 }

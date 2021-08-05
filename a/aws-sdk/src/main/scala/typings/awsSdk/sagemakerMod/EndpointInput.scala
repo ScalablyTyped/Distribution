@@ -28,31 +28,23 @@ trait EndpointInput extends StObject {
 }
 object EndpointInput {
   
-  @scala.inline
-  def apply(EndpointName: EndpointName, LocalPath: ProcessingLocalPath): EndpointInput = {
+  inline def apply(EndpointName: EndpointName, LocalPath: ProcessingLocalPath): EndpointInput = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any], LocalPath = LocalPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointInput]
   }
   
-  @scala.inline
-  implicit class EndpointInputMutableBuilder[Self <: EndpointInput] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointInput](x: Self) {
     
-    @scala.inline
-    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
+    inline def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DataDistributionType(value: ProcessingS3DataDistributionType): Self = StObject.set(x, "S3DataDistributionType", value.asInstanceOf[js.Any])
+    inline def setS3DataDistributionType(value: ProcessingS3DataDistributionType): Self = StObject.set(x, "S3DataDistributionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DataDistributionTypeUndefined: Self = StObject.set(x, "S3DataDistributionType", js.undefined)
+    inline def setS3DataDistributionTypeUndefined: Self = StObject.set(x, "S3DataDistributionType", js.undefined)
     
-    @scala.inline
-    def setS3InputMode(value: ProcessingS3InputMode): Self = StObject.set(x, "S3InputMode", value.asInstanceOf[js.Any])
+    inline def setS3InputMode(value: ProcessingS3InputMode): Self = StObject.set(x, "S3InputMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3InputModeUndefined: Self = StObject.set(x, "S3InputMode", js.undefined)
+    inline def setS3InputModeUndefined: Self = StObject.set(x, "S3InputMode", js.undefined)
   }
 }

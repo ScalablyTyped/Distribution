@@ -25,16 +25,13 @@ trait ModeChangeEvent
 }
 object ModeChangeEvent {
   
-  @scala.inline
-  def apply(NewMode: String, Source: XInterface): ModeChangeEvent = {
+  inline def apply(NewMode: String, Source: XInterface): ModeChangeEvent = {
     val __obj = js.Dynamic.literal(NewMode = NewMode.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModeChangeEvent]
   }
   
-  @scala.inline
-  implicit class ModeChangeEventMutableBuilder[Self <: ModeChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ModeChangeEvent](x: Self) {
     
-    @scala.inline
-    def setNewMode(value: String): Self = StObject.set(x, "NewMode", value.asInstanceOf[js.Any])
+    inline def setNewMode(value: String): Self = StObject.set(x, "NewMode", value.asInstanceOf[js.Any])
   }
 }

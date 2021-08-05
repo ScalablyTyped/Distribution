@@ -20,16 +20,13 @@ trait DeferrableAbstract extends StObject {
 }
 object DeferrableAbstract {
   
-  @scala.inline
-  def apply(toSql: () => String): DeferrableAbstract = {
+  inline def apply(toSql: () => String): DeferrableAbstract = {
     val __obj = js.Dynamic.literal(toSql = js.Any.fromFunction0(toSql))
     __obj.asInstanceOf[DeferrableAbstract]
   }
   
-  @scala.inline
-  implicit class DeferrableAbstractMutableBuilder[Self <: DeferrableAbstract] (val x: Self) extends AnyVal {
+  extension [Self <: DeferrableAbstract](x: Self) {
     
-    @scala.inline
-    def setToSql(value: () => String): Self = StObject.set(x, "toSql", js.Any.fromFunction0(value))
+    inline def setToSql(value: () => String): Self = StObject.set(x, "toSql", js.Any.fromFunction0(value))
   }
 }

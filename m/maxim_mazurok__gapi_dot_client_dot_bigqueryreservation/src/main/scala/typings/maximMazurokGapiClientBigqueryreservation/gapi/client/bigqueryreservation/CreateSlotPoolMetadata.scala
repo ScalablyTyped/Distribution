@@ -11,19 +11,15 @@ trait CreateSlotPoolMetadata extends StObject {
 }
 object CreateSlotPoolMetadata {
   
-  @scala.inline
-  def apply(): CreateSlotPoolMetadata = {
+  inline def apply(): CreateSlotPoolMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSlotPoolMetadata]
   }
   
-  @scala.inline
-  implicit class CreateSlotPoolMetadataMutableBuilder[Self <: CreateSlotPoolMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSlotPoolMetadata](x: Self) {
     
-    @scala.inline
-    def setSlotPool(value: String): Self = StObject.set(x, "slotPool", value.asInstanceOf[js.Any])
+    inline def setSlotPool(value: String): Self = StObject.set(x, "slotPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotPoolUndefined: Self = StObject.set(x, "slotPool", js.undefined)
+    inline def setSlotPoolUndefined: Self = StObject.set(x, "slotPool", js.undefined)
   }
 }

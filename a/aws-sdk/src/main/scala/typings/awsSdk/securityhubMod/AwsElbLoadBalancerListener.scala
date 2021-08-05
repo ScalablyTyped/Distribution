@@ -33,43 +33,31 @@ trait AwsElbLoadBalancerListener extends StObject {
 }
 object AwsElbLoadBalancerListener {
   
-  @scala.inline
-  def apply(): AwsElbLoadBalancerListener = {
+  inline def apply(): AwsElbLoadBalancerListener = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElbLoadBalancerListener]
   }
   
-  @scala.inline
-  implicit class AwsElbLoadBalancerListenerMutableBuilder[Self <: AwsElbLoadBalancerListener] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElbLoadBalancerListener](x: Self) {
     
-    @scala.inline
-    def setInstancePort(value: Integer): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
+    inline def setInstancePort(value: Integer): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancePortUndefined: Self = StObject.set(x, "InstancePort", js.undefined)
+    inline def setInstancePortUndefined: Self = StObject.set(x, "InstancePort", js.undefined)
     
-    @scala.inline
-    def setInstanceProtocol(value: NonEmptyString): Self = StObject.set(x, "InstanceProtocol", value.asInstanceOf[js.Any])
+    inline def setInstanceProtocol(value: NonEmptyString): Self = StObject.set(x, "InstanceProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceProtocolUndefined: Self = StObject.set(x, "InstanceProtocol", js.undefined)
+    inline def setInstanceProtocolUndefined: Self = StObject.set(x, "InstanceProtocol", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerPort(value: Integer): Self = StObject.set(x, "LoadBalancerPort", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerPort(value: Integer): Self = StObject.set(x, "LoadBalancerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerPortUndefined: Self = StObject.set(x, "LoadBalancerPort", js.undefined)
+    inline def setLoadBalancerPortUndefined: Self = StObject.set(x, "LoadBalancerPort", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: NonEmptyString): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: NonEmptyString): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
-    @scala.inline
-    def setSslCertificateId(value: NonEmptyString): Self = StObject.set(x, "SslCertificateId", value.asInstanceOf[js.Any])
+    inline def setSslCertificateId(value: NonEmptyString): Self = StObject.set(x, "SslCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslCertificateIdUndefined: Self = StObject.set(x, "SslCertificateId", js.undefined)
+    inline def setSslCertificateIdUndefined: Self = StObject.set(x, "SslCertificateId", js.undefined)
   }
 }

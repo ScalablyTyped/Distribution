@@ -16,23 +16,18 @@ trait ConsoleAppender
 }
 object ConsoleAppender {
   
-  @scala.inline
-  def apply(): ConsoleAppender = {
+  inline def apply(): ConsoleAppender = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("console")
     __obj.asInstanceOf[ConsoleAppender]
   }
   
-  @scala.inline
-  implicit class ConsoleAppenderMutableBuilder[Self <: ConsoleAppender] (val x: Self) extends AnyVal {
+  extension [Self <: ConsoleAppender](x: Self) {
     
-    @scala.inline
-    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setType(value: console): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: console): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

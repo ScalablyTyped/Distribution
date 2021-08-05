@@ -67,15 +67,15 @@ object buttonMod {
       */
     var fill: js.UndefOr[clear | outline | solid | default] = js.native
     
-    var handleClick: js.Any = js.native
+    /* private */ var handleClick: js.Any = js.native
     
     /* private */ def hasIconOnly: js.Any = js.native
     
-    var inItem: js.Any = js.native
+    /* private */ var inItem: js.Any = js.native
     
-    var inListHeader: js.Any = js.native
+    /* private */ var inListHeader: js.Any = js.native
     
-    var inToolbar: js.Any = js.native
+    /* private */ var inToolbar: js.Any = js.native
     
     /**
       * Emitted when the button loses focus.
@@ -87,9 +87,9 @@ object buttonMod {
       */
     var ionFocus: EventEmitter[Unit] = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
     @JSName("render")
     def render_MButton(): js.Any = js.native

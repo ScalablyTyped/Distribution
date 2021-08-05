@@ -35,8 +35,7 @@ object adapterMod {
   }
   object MDCTabIndicatorAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       computeContentClientRect: () => ClientRect,
       removeClass: String => Unit,
@@ -46,20 +45,15 @@ object adapterMod {
       __obj.asInstanceOf[MDCTabIndicatorAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTabIndicatorAdapterMutableBuilder[Self <: MDCTabIndicatorAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTabIndicatorAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComputeContentClientRect(value: () => ClientRect): Self = StObject.set(x, "computeContentClientRect", js.Any.fromFunction0(value))
+      inline def setComputeContentClientRect(value: () => ClientRect): Self = StObject.set(x, "computeContentClientRect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetContentStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setContentStyleProperty", js.Any.fromFunction2(value))
+      inline def setSetContentStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setContentStyleProperty", js.Any.fromFunction2(value))
     }
   }
 }

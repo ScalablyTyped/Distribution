@@ -13,19 +13,15 @@ trait SaveFileSuccessCallbackResult extends StObject {
 }
 object SaveFileSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, savedFilePath: String): SaveFileSuccessCallbackResult = {
+  inline def apply(errMsg: String, savedFilePath: String): SaveFileSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], savedFilePath = savedFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveFileSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class SaveFileSuccessCallbackResultMutableBuilder[Self <: SaveFileSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: SaveFileSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedFilePath(value: String): Self = StObject.set(x, "savedFilePath", value.asInstanceOf[js.Any])
+    inline def setSavedFilePath(value: String): Self = StObject.set(x, "savedFilePath", value.asInstanceOf[js.Any])
   }
 }

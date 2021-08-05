@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineBreakProperty extends StObject
 object LineBreakProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def anywhere: typings.preact.preactStrings.anywhere = "anywhere".asInstanceOf[typings.preact.preactStrings.anywhere]
+  inline def anywhere: typings.preact.preactStrings.anywhere = "anywhere".asInstanceOf[typings.preact.preactStrings.anywhere]
   
-  @scala.inline
-  def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
+  inline def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def loose: typings.preact.preactStrings.loose = "loose".asInstanceOf[typings.preact.preactStrings.loose]
+  inline def loose: typings.preact.preactStrings.loose = "loose".asInstanceOf[typings.preact.preactStrings.loose]
   
-  @scala.inline
-  def normal: typings.preact.preactStrings.normal = "normal".asInstanceOf[typings.preact.preactStrings.normal]
+  inline def normal: typings.preact.preactStrings.normal = "normal".asInstanceOf[typings.preact.preactStrings.normal]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def strict: typings.preact.preactStrings.strict = "strict".asInstanceOf[typings.preact.preactStrings.strict]
+  inline def strict: typings.preact.preactStrings.strict = "strict".asInstanceOf[typings.preact.preactStrings.strict]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
 }

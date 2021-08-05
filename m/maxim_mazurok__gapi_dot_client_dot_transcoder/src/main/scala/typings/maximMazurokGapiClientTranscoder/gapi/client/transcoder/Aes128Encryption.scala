@@ -11,19 +11,15 @@ trait Aes128Encryption extends StObject {
 }
 object Aes128Encryption {
   
-  @scala.inline
-  def apply(): Aes128Encryption = {
+  inline def apply(): Aes128Encryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Aes128Encryption]
   }
   
-  @scala.inline
-  implicit class Aes128EncryptionMutableBuilder[Self <: Aes128Encryption] (val x: Self) extends AnyVal {
+  extension [Self <: Aes128Encryption](x: Self) {
     
-    @scala.inline
-    def setKeyUri(value: String): Self = StObject.set(x, "keyUri", value.asInstanceOf[js.Any])
+    inline def setKeyUri(value: String): Self = StObject.set(x, "keyUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUriUndefined: Self = StObject.set(x, "keyUri", js.undefined)
+    inline def setKeyUriUndefined: Self = StObject.set(x, "keyUri", js.undefined)
   }
 }

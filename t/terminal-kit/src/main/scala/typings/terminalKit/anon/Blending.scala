@@ -11,16 +11,13 @@ trait Blending extends StObject {
 }
 object Blending {
   
-  @scala.inline
-  def apply(blending: IsBlending): Blending = {
+  inline def apply(blending: IsBlending): Blending = {
     val __obj = js.Dynamic.literal(blending = blending.asInstanceOf[js.Any])
     __obj.asInstanceOf[Blending]
   }
   
-  @scala.inline
-  implicit class BlendingMutableBuilder[Self <: Blending] (val x: Self) extends AnyVal {
+  extension [Self <: Blending](x: Self) {
     
-    @scala.inline
-    def setBlending(value: IsBlending): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
+    inline def setBlending(value: IsBlending): Self = StObject.set(x, "blending", value.asInstanceOf[js.Any])
   }
 }

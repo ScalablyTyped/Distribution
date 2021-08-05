@@ -10,6 +10,5 @@ object toggleBitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(int32: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(int32: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(int32.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

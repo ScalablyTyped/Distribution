@@ -43,8 +43,7 @@ trait KnockoutValidationRuleDefinitions
 }
 object KnockoutValidationRuleDefinitions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: KnockoutValidationRuleDefinition,
     dateISO: KnockoutValidationRuleDefinition,
     digit: KnockoutValidationRuleDefinition,
@@ -66,55 +65,38 @@ object KnockoutValidationRuleDefinitions {
     __obj.asInstanceOf[KnockoutValidationRuleDefinitions]
   }
   
-  @scala.inline
-  implicit class KnockoutValidationRuleDefinitionsMutableBuilder[Self <: KnockoutValidationRuleDefinitions] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutValidationRuleDefinitions](x: Self) {
     
-    @scala.inline
-    def setDate(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateISO(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "dateISO", value.asInstanceOf[js.Any])
+    inline def setDateISO(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "dateISO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigit(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "digit", value.asInstanceOf[js.Any])
+    inline def setDigit(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "digit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqual(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
+    inline def setEqual(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLength(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLength(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotEqual(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "notEqual", value.asInstanceOf[js.Any])
+    inline def setNotEqual(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "notEqual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUS(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "phoneUS", value.asInstanceOf[js.Any])
+    inline def setPhoneUS(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "phoneUS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnique(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: KnockoutValidationRuleDefinition): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
   }
 }

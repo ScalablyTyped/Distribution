@@ -15,8 +15,7 @@ trait ServiceEventHandlers extends StObject {
 }
 object ServiceEventHandlers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onserviceadded: Event => js.Any,
     onservicechanged: Event => js.Any,
     onserviceremoved: Event => js.Any
@@ -25,16 +24,12 @@ object ServiceEventHandlers {
     __obj.asInstanceOf[ServiceEventHandlers]
   }
   
-  @scala.inline
-  implicit class ServiceEventHandlersMutableBuilder[Self <: ServiceEventHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceEventHandlers](x: Self) {
     
-    @scala.inline
-    def setOnserviceadded(value: Event => js.Any): Self = StObject.set(x, "onserviceadded", js.Any.fromFunction1(value))
+    inline def setOnserviceadded(value: Event => js.Any): Self = StObject.set(x, "onserviceadded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnservicechanged(value: Event => js.Any): Self = StObject.set(x, "onservicechanged", js.Any.fromFunction1(value))
+    inline def setOnservicechanged(value: Event => js.Any): Self = StObject.set(x, "onservicechanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnserviceremoved(value: Event => js.Any): Self = StObject.set(x, "onserviceremoved", js.Any.fromFunction1(value))
+    inline def setOnserviceremoved(value: Event => js.Any): Self = StObject.set(x, "onserviceremoved", js.Any.fromFunction1(value))
   }
 }

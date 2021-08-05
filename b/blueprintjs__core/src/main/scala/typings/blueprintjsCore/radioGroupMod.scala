@@ -19,13 +19,13 @@ object radioGroupMod {
     def this(props: IRadioGroupProps) = this()
     def this(props: IRadioGroupProps, context: js.Any) = this()
     
-    var autoGroupName: js.Any = js.native
+    /* private */ var autoGroupName: js.Any = js.native
     
-    var getRadioProps: js.Any = js.native
+    /* private */ var getRadioProps: js.Any = js.native
     
-    var renderChildren: js.Any = js.native
+    /* private */ var renderChildren: js.Any = js.native
     
-    var renderOptions: js.Any = js.native
+    /* private */ var renderOptions: js.Any = js.native
     
     /* protected */ def validateProps(): Unit = js.native
   }
@@ -39,8 +39,7 @@ object radioGroupMod {
     @JSImport("@blueprintjs/core/lib/esm/components/forms/radioGroup", "RadioGroup.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IRadioGroupProps
@@ -86,56 +85,40 @@ object radioGroupMod {
   }
   object IRadioGroupProps {
     
-    @scala.inline
-    def apply(onChange: FormEvent[HTMLInputElement] => Unit): IRadioGroupProps = {
+    inline def apply(onChange: FormEvent[HTMLInputElement] => Unit): IRadioGroupProps = {
       val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[IRadioGroupProps]
     }
     
-    @scala.inline
-    implicit class IRadioGroupPropsMutableBuilder[Self <: IRadioGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: IRadioGroupProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: js.Array[IOptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[IOptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: IOptionProps*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: IOptionProps*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectedValue(value: String | Double): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      inline def setSelectedValue(value: String | Double): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
+      inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
     }
   }
 }

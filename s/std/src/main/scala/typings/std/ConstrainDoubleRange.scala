@@ -14,25 +14,19 @@ trait ConstrainDoubleRange
 }
 object ConstrainDoubleRange {
   
-  @scala.inline
-  def apply(): ConstrainDoubleRange = {
+  inline def apply(): ConstrainDoubleRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstrainDoubleRange]
   }
   
-  @scala.inline
-  implicit class ConstrainDoubleRangeMutableBuilder[Self <: ConstrainDoubleRange] (val x: Self) extends AnyVal {
+  extension [Self <: ConstrainDoubleRange](x: Self) {
     
-    @scala.inline
-    def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    @scala.inline
-    def setIdeal(value: Double): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
+    inline def setIdeal(value: Double): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
+    inline def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
   }
 }

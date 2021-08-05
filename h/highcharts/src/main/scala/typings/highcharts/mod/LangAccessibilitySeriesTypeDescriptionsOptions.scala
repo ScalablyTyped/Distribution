@@ -26,67 +26,47 @@ trait LangAccessibilitySeriesTypeDescriptionsOptions extends StObject {
 }
 object LangAccessibilitySeriesTypeDescriptionsOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilitySeriesTypeDescriptionsOptions = {
+  inline def apply(): LangAccessibilitySeriesTypeDescriptionsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilitySeriesTypeDescriptionsOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilitySeriesTypeDescriptionsOptionsMutableBuilder[Self <: LangAccessibilitySeriesTypeDescriptionsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilitySeriesTypeDescriptionsOptions](x: Self) {
     
-    @scala.inline
-    def setArearange(value: String): Self = StObject.set(x, "arearange", value.asInstanceOf[js.Any])
+    inline def setArearange(value: String): Self = StObject.set(x, "arearange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArearangeUndefined: Self = StObject.set(x, "arearange", js.undefined)
+    inline def setArearangeUndefined: Self = StObject.set(x, "arearange", js.undefined)
     
-    @scala.inline
-    def setAreasplinerange(value: String): Self = StObject.set(x, "areasplinerange", value.asInstanceOf[js.Any])
+    inline def setAreasplinerange(value: String): Self = StObject.set(x, "areasplinerange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreasplinerangeUndefined: Self = StObject.set(x, "areasplinerange", js.undefined)
+    inline def setAreasplinerangeUndefined: Self = StObject.set(x, "areasplinerange", js.undefined)
     
-    @scala.inline
-    def setBoxplot(value: String): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
+    inline def setBoxplot(value: String): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxplotUndefined: Self = StObject.set(x, "boxplot", js.undefined)
+    inline def setBoxplotUndefined: Self = StObject.set(x, "boxplot", js.undefined)
     
-    @scala.inline
-    def setBubble(value: String): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
+    inline def setBubble(value: String): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
+    inline def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
     
-    @scala.inline
-    def setColumnrange(value: String): Self = StObject.set(x, "columnrange", value.asInstanceOf[js.Any])
+    inline def setColumnrange(value: String): Self = StObject.set(x, "columnrange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnrangeUndefined: Self = StObject.set(x, "columnrange", js.undefined)
+    inline def setColumnrangeUndefined: Self = StObject.set(x, "columnrange", js.undefined)
     
-    @scala.inline
-    def setErrorbar(value: String): Self = StObject.set(x, "errorbar", value.asInstanceOf[js.Any])
+    inline def setErrorbar(value: String): Self = StObject.set(x, "errorbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorbarUndefined: Self = StObject.set(x, "errorbar", js.undefined)
+    inline def setErrorbarUndefined: Self = StObject.set(x, "errorbar", js.undefined)
     
-    @scala.inline
-    def setFunnel(value: String): Self = StObject.set(x, "funnel", value.asInstanceOf[js.Any])
+    inline def setFunnel(value: String): Self = StObject.set(x, "funnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunnelUndefined: Self = StObject.set(x, "funnel", js.undefined)
+    inline def setFunnelUndefined: Self = StObject.set(x, "funnel", js.undefined)
     
-    @scala.inline
-    def setPyramid(value: String): Self = StObject.set(x, "pyramid", value.asInstanceOf[js.Any])
+    inline def setPyramid(value: String): Self = StObject.set(x, "pyramid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPyramidUndefined: Self = StObject.set(x, "pyramid", js.undefined)
+    inline def setPyramidUndefined: Self = StObject.set(x, "pyramid", js.undefined)
     
-    @scala.inline
-    def setWaterfall(value: String): Self = StObject.set(x, "waterfall", value.asInstanceOf[js.Any])
+    inline def setWaterfall(value: String): Self = StObject.set(x, "waterfall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaterfallUndefined: Self = StObject.set(x, "waterfall", js.undefined)
+    inline def setWaterfallUndefined: Self = StObject.set(x, "waterfall", js.undefined)
   }
 }

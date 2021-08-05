@@ -14,22 +14,17 @@ trait AttachmentsToolbarButtonDescriptor extends StObject {
 }
 object AttachmentsToolbarButtonDescriptor {
   
-  @scala.inline
-  def apply(iconUrl: String, onClick: AttachmentsToolbarButtonEvent => Unit, tooltip: String): AttachmentsToolbarButtonDescriptor = {
+  inline def apply(iconUrl: String, onClick: AttachmentsToolbarButtonEvent => Unit, tooltip: String): AttachmentsToolbarButtonDescriptor = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentsToolbarButtonDescriptor]
   }
   
-  @scala.inline
-  implicit class AttachmentsToolbarButtonDescriptorMutableBuilder[Self <: AttachmentsToolbarButtonDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentsToolbarButtonDescriptor](x: Self) {
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClick(value: AttachmentsToolbarButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: AttachmentsToolbarButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

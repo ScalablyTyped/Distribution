@@ -30,8 +30,7 @@ object formFieldUniDriverMod {
   }
   object FormFieldUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -48,32 +47,23 @@ object formFieldUniDriverMod {
       __obj.asInstanceOf[FormFieldUniDriver]
     }
     
-    @scala.inline
-    implicit class FormFieldUniDriverMutableBuilder[Self <: FormFieldUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FormFieldUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetChildren(value: () => js.Promise[HTMLElement | Null]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
+      inline def setGetChildren(value: () => js.Promise[HTMLElement | Null]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInfoContent(value: () => js.Promise[String]): Self = StObject.set(x, "getInfoContent", js.Any.fromFunction0(value))
+      inline def setGetInfoContent(value: () => js.Promise[String]): Self = StObject.set(x, "getInfoContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabel(value: () => js.Promise[HTMLElement | Null]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => js.Promise[HTMLElement | Null]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLengthLeft(value: () => js.Promise[Double | Null]): Self = StObject.set(x, "getLengthLeft", js.Any.fromFunction0(value))
+      inline def setGetLengthLeft(value: () => js.Promise[Double | Null]): Self = StObject.set(x, "getLengthLeft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSuffix(value: () => js.Promise[HTMLElement | Null]): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
+      inline def setGetSuffix(value: () => js.Promise[HTMLElement | Null]): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTooltip(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTooltip", js.Any.fromFunction0(value))
+      inline def setHasTooltip(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasTooltip", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLengthExceeded(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLengthExceeded", js.Any.fromFunction0(value))
+      inline def setIsLengthExceeded(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLengthExceeded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRequired(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
+      inline def setIsRequired(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
     }
   }
 }

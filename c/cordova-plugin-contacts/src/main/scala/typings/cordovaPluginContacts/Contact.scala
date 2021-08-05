@@ -33,8 +33,7 @@ trait Contact
 }
 object Contact {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     remove: (js.Function0[Unit], js.Function1[/* error */ Error, Unit]) => Unit,
     save: (js.Function1[Contact, Unit], js.Function1[/* error */ Error, Unit]) => Unit
   ): Contact = {
@@ -42,13 +41,10 @@ object Contact {
     __obj.asInstanceOf[Contact]
   }
   
-  @scala.inline
-  implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
+  extension [Self <: Contact](x: Self) {
     
-    @scala.inline
-    def setRemove(value: (js.Function0[Unit], js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+    inline def setRemove(value: (js.Function0[Unit], js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSave(value: (js.Function1[Contact, Unit], js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
+    inline def setSave(value: (js.Function1[Contact, Unit], js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
   }
 }

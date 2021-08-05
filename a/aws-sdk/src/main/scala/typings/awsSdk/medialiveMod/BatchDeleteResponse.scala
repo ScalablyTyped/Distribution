@@ -18,31 +18,23 @@ trait BatchDeleteResponse extends StObject {
 }
 object BatchDeleteResponse {
   
-  @scala.inline
-  def apply(): BatchDeleteResponse = {
+  inline def apply(): BatchDeleteResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteResponse]
   }
   
-  @scala.inline
-  implicit class BatchDeleteResponseMutableBuilder[Self <: BatchDeleteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteResponse](x: Self) {
     
-    @scala.inline
-    def setFailed(value: listOfBatchFailedResultModel): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: listOfBatchFailedResultModel): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
+    inline def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
     
-    @scala.inline
-    def setFailedVarargs(value: BatchFailedResultModel*): Self = StObject.set(x, "Failed", js.Array(value :_*))
+    inline def setFailedVarargs(value: BatchFailedResultModel*): Self = StObject.set(x, "Failed", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessful(value: listOfBatchSuccessfulResultModel): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
+    inline def setSuccessful(value: listOfBatchSuccessfulResultModel): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
+    inline def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
     
-    @scala.inline
-    def setSuccessfulVarargs(value: BatchSuccessfulResultModel*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+    inline def setSuccessfulVarargs(value: BatchSuccessfulResultModel*): Self = StObject.set(x, "Successful", js.Array(value :_*))
   }
 }

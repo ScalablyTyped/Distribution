@@ -30,35 +30,26 @@ object elasticbeanstalk {
   }
   object ApplicationAppversionLifecycle {
     
-    @scala.inline
-    def apply(serviceRole: String): ApplicationAppversionLifecycle = {
+    inline def apply(serviceRole: String): ApplicationAppversionLifecycle = {
       val __obj = js.Dynamic.literal(serviceRole = serviceRole.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicationAppversionLifecycle]
     }
     
-    @scala.inline
-    implicit class ApplicationAppversionLifecycleMutableBuilder[Self <: ApplicationAppversionLifecycle] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationAppversionLifecycle](x: Self) {
       
-      @scala.inline
-      def setDeleteSourceFromS3(value: Boolean): Self = StObject.set(x, "deleteSourceFromS3", value.asInstanceOf[js.Any])
+      inline def setDeleteSourceFromS3(value: Boolean): Self = StObject.set(x, "deleteSourceFromS3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteSourceFromS3Undefined: Self = StObject.set(x, "deleteSourceFromS3", js.undefined)
+      inline def setDeleteSourceFromS3Undefined: Self = StObject.set(x, "deleteSourceFromS3", js.undefined)
       
-      @scala.inline
-      def setMaxAgeInDays(value: Double): Self = StObject.set(x, "maxAgeInDays", value.asInstanceOf[js.Any])
+      inline def setMaxAgeInDays(value: Double): Self = StObject.set(x, "maxAgeInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeInDaysUndefined: Self = StObject.set(x, "maxAgeInDays", js.undefined)
+      inline def setMaxAgeInDaysUndefined: Self = StObject.set(x, "maxAgeInDays", js.undefined)
       
-      @scala.inline
-      def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+      inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
+      inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
       
-      @scala.inline
-      def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+      inline def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,29 +68,22 @@ object elasticbeanstalk {
   }
   object ConfigurationTemplateSetting {
     
-    @scala.inline
-    def apply(name: String, namespace: String, value: String): ConfigurationTemplateSetting = {
+    inline def apply(name: String, namespace: String, value: String): ConfigurationTemplateSetting = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigurationTemplateSetting]
     }
     
-    @scala.inline
-    implicit class ConfigurationTemplateSettingMutableBuilder[Self <: ConfigurationTemplateSetting] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationTemplateSetting](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,29 +103,22 @@ object elasticbeanstalk {
   }
   object EnvironmentAllSetting {
     
-    @scala.inline
-    def apply(name: String, namespace: String, value: String): EnvironmentAllSetting = {
+    inline def apply(name: String, namespace: String, value: String): EnvironmentAllSetting = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentAllSetting]
     }
     
-    @scala.inline
-    implicit class EnvironmentAllSettingMutableBuilder[Self <: EnvironmentAllSetting] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentAllSetting](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,29 +138,22 @@ object elasticbeanstalk {
   }
   object EnvironmentSetting {
     
-    @scala.inline
-    def apply(name: String, namespace: String, value: String): EnvironmentSetting = {
+    inline def apply(name: String, namespace: String, value: String): EnvironmentSetting = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnvironmentSetting]
     }
     
-    @scala.inline
-    implicit class EnvironmentSettingMutableBuilder[Self <: EnvironmentSetting] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentSetting](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,26 +181,20 @@ object elasticbeanstalk {
   }
   object GetApplicationAppversionLifecycle {
     
-    @scala.inline
-    def apply(deleteSourceFromS3: Boolean, maxAgeInDays: Double, maxCount: Double, serviceRole: String): GetApplicationAppversionLifecycle = {
+    inline def apply(deleteSourceFromS3: Boolean, maxAgeInDays: Double, maxCount: Double, serviceRole: String): GetApplicationAppversionLifecycle = {
       val __obj = js.Dynamic.literal(deleteSourceFromS3 = deleteSourceFromS3.asInstanceOf[js.Any], maxAgeInDays = maxAgeInDays.asInstanceOf[js.Any], maxCount = maxCount.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetApplicationAppversionLifecycle]
     }
     
-    @scala.inline
-    implicit class GetApplicationAppversionLifecycleMutableBuilder[Self <: GetApplicationAppversionLifecycle] (val x: Self) extends AnyVal {
+    extension [Self <: GetApplicationAppversionLifecycle](x: Self) {
       
-      @scala.inline
-      def setDeleteSourceFromS3(value: Boolean): Self = StObject.set(x, "deleteSourceFromS3", value.asInstanceOf[js.Any])
+      inline def setDeleteSourceFromS3(value: Boolean): Self = StObject.set(x, "deleteSourceFromS3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeInDays(value: Double): Self = StObject.set(x, "maxAgeInDays", value.asInstanceOf[js.Any])
+      inline def setMaxAgeInDays(value: Double): Self = StObject.set(x, "maxAgeInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+      inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+      inline def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     }
   }
 }

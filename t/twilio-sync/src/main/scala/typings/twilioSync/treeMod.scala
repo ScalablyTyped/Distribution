@@ -22,7 +22,7 @@ object treeMod {
     
     def clear(): Unit = js.native
     
-    var count: js.Any = js.native
+    /* private */ var count: js.Any = js.native
     
     def delete(key: K): Unit = js.native
     
@@ -32,27 +32,27 @@ object treeMod {
     def getIterator(): IterableIterator[js.Tuple2[K, V]] = js.native
     def getIterator(key: K): IterableIterator[js.Tuple2[K, V]] = js.native
     
-    var getNode: js.Any = js.native
+    /* private */ var getNode: js.Any = js.native
     
     def getReverseIterator(): IterableIterator[js.Tuple2[K, V]] = js.native
     def getReverseIterator(key: K): IterableIterator[js.Tuple2[K, V]] = js.native
     
     def insert(key: K, value: V): Unit = js.native
     
-    var isEqual: js.Any = js.native
+    /* private */ var isEqual: js.Any = js.native
     
-    var isLessThan: js.Any = js.native
+    /* private */ var isLessThan: js.Any = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator_TreeMap: js.Function0[IterableIterator[js.Tuple2[K, V]]] = js.native
     
-    var rebalance: js.Any = js.native
+    /* private */ var rebalance: js.Any = js.native
     
-    var root: js.Any = js.native
+    /* private */ var root: js.Any = js.native
     
-    var rotateLeft: js.Any = js.native
+    /* private */ var rotateLeft: js.Any = js.native
     
-    var rotateRight: js.Any = js.native
+    /* private */ var rotateRight: js.Any = js.native
     
     /* CompleteClass */
     override def set(key: K, value: V): Unit = js.native
@@ -72,20 +72,16 @@ object treeMod {
   }
   object Map {
     
-    @scala.inline
-    def apply[K, V](get: K => V, set: (K, V) => Unit): Map[K, V] = {
+    inline def apply[K, V](get: K => V, set: (K, V) => Unit): Map[K, V] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Map[K, V]]
     }
     
-    @scala.inline
-    implicit class MapMutableBuilder[Self <: Map[?, ?], K, V] (val x: Self & (Map[K, V])) extends AnyVal {
+    extension [Self <: Map[?, ?], K, V](x: Self & (Map[K, V])) {
       
-      @scala.inline
-      def setGet(value: K => V): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: K => V): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (K, V) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (K, V) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   

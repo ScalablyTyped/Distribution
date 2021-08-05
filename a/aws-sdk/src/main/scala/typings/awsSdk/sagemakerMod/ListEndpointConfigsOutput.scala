@@ -18,25 +18,19 @@ trait ListEndpointConfigsOutput extends StObject {
 }
 object ListEndpointConfigsOutput {
   
-  @scala.inline
-  def apply(EndpointConfigs: EndpointConfigSummaryList): ListEndpointConfigsOutput = {
+  inline def apply(EndpointConfigs: EndpointConfigSummaryList): ListEndpointConfigsOutput = {
     val __obj = js.Dynamic.literal(EndpointConfigs = EndpointConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEndpointConfigsOutput]
   }
   
-  @scala.inline
-  implicit class ListEndpointConfigsOutputMutableBuilder[Self <: ListEndpointConfigsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListEndpointConfigsOutput](x: Self) {
     
-    @scala.inline
-    def setEndpointConfigs(value: EndpointConfigSummaryList): Self = StObject.set(x, "EndpointConfigs", value.asInstanceOf[js.Any])
+    inline def setEndpointConfigs(value: EndpointConfigSummaryList): Self = StObject.set(x, "EndpointConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointConfigsVarargs(value: EndpointConfigSummary*): Self = StObject.set(x, "EndpointConfigs", js.Array(value :_*))
+    inline def setEndpointConfigsVarargs(value: EndpointConfigSummary*): Self = StObject.set(x, "EndpointConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

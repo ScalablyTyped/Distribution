@@ -27,21 +27,17 @@ trait SimpleFillSymbolProperties
 }
 object SimpleFillSymbolProperties {
   
-  @scala.inline
-  def apply(): SimpleFillSymbolProperties = {
+  inline def apply(): SimpleFillSymbolProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimpleFillSymbolProperties]
   }
   
-  @scala.inline
-  implicit class SimpleFillSymbolPropertiesMutableBuilder[Self <: SimpleFillSymbolProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleFillSymbolProperties](x: Self) {
     
-    @scala.inline
-    def setStyle(
+    inline def setStyle(
       value: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none | solid | vertical
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

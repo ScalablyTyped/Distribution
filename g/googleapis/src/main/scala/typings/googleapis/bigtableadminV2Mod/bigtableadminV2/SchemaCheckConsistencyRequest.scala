@@ -17,19 +17,15 @@ trait SchemaCheckConsistencyRequest extends StObject {
 }
 object SchemaCheckConsistencyRequest {
   
-  @scala.inline
-  def apply(): SchemaCheckConsistencyRequest = {
+  inline def apply(): SchemaCheckConsistencyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCheckConsistencyRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCheckConsistencyRequestMutableBuilder[Self <: SchemaCheckConsistencyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCheckConsistencyRequest](x: Self) {
     
-    @scala.inline
-    def setConsistencyToken(value: String): Self = StObject.set(x, "consistencyToken", value.asInstanceOf[js.Any])
+    inline def setConsistencyToken(value: String): Self = StObject.set(x, "consistencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistencyTokenUndefined: Self = StObject.set(x, "consistencyToken", js.undefined)
+    inline def setConsistencyTokenUndefined: Self = StObject.set(x, "consistencyToken", js.undefined)
   }
 }

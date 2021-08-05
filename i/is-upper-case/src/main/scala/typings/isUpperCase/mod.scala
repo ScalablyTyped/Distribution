@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isUpperCase(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUpperCase")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUpperCase(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUpperCase")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

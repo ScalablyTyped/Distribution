@@ -37,46 +37,33 @@ trait SchemaTier extends StObject {
 }
 object SchemaTier {
   
-  @scala.inline
-  def apply(): SchemaTier = {
+  inline def apply(): SchemaTier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTier]
   }
   
-  @scala.inline
-  implicit class SchemaTierMutableBuilder[Self <: SchemaTier] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTier](x: Self) {
     
-    @scala.inline
-    def setDiskQuota(value: String): Self = StObject.set(x, "DiskQuota", value.asInstanceOf[js.Any])
+    inline def setDiskQuota(value: String): Self = StObject.set(x, "DiskQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskQuotaUndefined: Self = StObject.set(x, "DiskQuota", js.undefined)
+    inline def setDiskQuotaUndefined: Self = StObject.set(x, "DiskQuota", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRAM(value: String): Self = StObject.set(x, "RAM", value.asInstanceOf[js.Any])
+    inline def setRAM(value: String): Self = StObject.set(x, "RAM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRAMUndefined: Self = StObject.set(x, "RAM", js.undefined)
+    inline def setRAMUndefined: Self = StObject.set(x, "RAM", js.undefined)
     
-    @scala.inline
-    def setRegion(value: js.Array[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: js.Array[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setRegionVarargs(value: String*): Self = StObject.set(x, "region", js.Array(value :_*))
+    inline def setRegionVarargs(value: String*): Self = StObject.set(x, "region", js.Array(value :_*))
     
-    @scala.inline
-    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
   }
 }

@@ -37,37 +37,27 @@ trait SchemaAsset extends StObject {
 }
 object SchemaAsset {
   
-  @scala.inline
-  def apply(): SchemaAsset = {
+  inline def apply(): SchemaAsset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAsset]
   }
   
-  @scala.inline
-  implicit class SchemaAssetMutableBuilder[Self <: SchemaAsset] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAsset](x: Self) {
     
-    @scala.inline
-    def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+    inline def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+    inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
-    @scala.inline
-    def setIamPolicy(value: SchemaPolicy): Self = StObject.set(x, "iamPolicy", value.asInstanceOf[js.Any])
+    inline def setIamPolicy(value: SchemaPolicy): Self = StObject.set(x, "iamPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamPolicyUndefined: Self = StObject.set(x, "iamPolicy", js.undefined)
+    inline def setIamPolicyUndefined: Self = StObject.set(x, "iamPolicy", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResource(value: SchemaResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SchemaResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

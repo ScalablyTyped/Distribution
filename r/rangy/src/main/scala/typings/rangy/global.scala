@@ -9,6 +9,5 @@ object global {
   @JSGlobal("rangy")
   @js.native
   def rangy: RangyStatic = js.native
-  @scala.inline
-  def rangy_=(x: RangyStatic): Unit = js.Dynamic.global.updateDynamic("rangy")(x.asInstanceOf[js.Any])
+  inline def rangy_=(x: RangyStatic): Unit = js.Dynamic.global.updateDynamic("rangy")(x.asInstanceOf[js.Any])
 }

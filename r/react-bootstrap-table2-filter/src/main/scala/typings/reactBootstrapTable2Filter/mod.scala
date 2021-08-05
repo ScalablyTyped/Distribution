@@ -26,8 +26,7 @@ object mod {
   /**
     * declaration for table filter sub module
     */
-  @scala.inline
-  def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
+  inline def default(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Any]
   
   @js.native
   sealed trait Comparator extends StObject
@@ -121,25 +120,18 @@ object mod {
     /* "TEXT" */ val TEXT: typings.reactBootstrapTable2Filter.mod.FILTER_TYPES.TEXT & String = js.native
   }
   
-  @scala.inline
-  def customFilter(props: CustomFilterProps): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
+  inline def customFilter(props: CustomFilterProps): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
   
-  @scala.inline
-  def dateFilter(props: DateFilter_[js.Any]): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dateFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
+  inline def dateFilter(props: DateFilter_[js.Any]): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dateFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
   
-  @scala.inline
-  def multiSelectFilter(props: PartialMultiSelectFilterP): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiSelectFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
+  inline def multiSelectFilter(props: PartialMultiSelectFilterP): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiSelectFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
   
-  @scala.inline
-  def numberFilter(props: PartialNumberFilterPropsa): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("numberFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
+  inline def numberFilter(props: PartialNumberFilterPropsa): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("numberFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
   
-  @scala.inline
-  def selectFilter(props: PartialSelectFilterPropsa): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
+  inline def selectFilter(props: PartialSelectFilterPropsa): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
   
-  @scala.inline
-  def textFilter(): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("textFilter")().asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
-  @scala.inline
-  def textFilter(props: PartialTextFilterPropsany): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("textFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
+  inline def textFilter(): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("textFilter")().asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
+  inline def textFilter(props: PartialTextFilterPropsany): TableColumnFilterProps[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("textFilter")(props.asInstanceOf[js.Any]).asInstanceOf[TableColumnFilterProps[js.Any, js.Any]]
   
   trait CustomFilterProps extends StObject {
     
@@ -151,32 +143,24 @@ object mod {
   }
   object CustomFilterProps {
     
-    @scala.inline
-    def apply(): CustomFilterProps = {
+    inline def apply(): CustomFilterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomFilterProps]
     }
     
-    @scala.inline
-    implicit class CustomFilterPropsMutableBuilder[Self <: CustomFilterProps] (val x: Self) extends AnyVal {
+    extension [Self <: CustomFilterProps](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+      inline def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      @scala.inline
-      def setType(value: String | FILTER_TYPES): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | FILTER_TYPES): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -201,59 +185,42 @@ object mod {
   }
   object DateFilter_ {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](): DateFilter_[T] = {
+    inline def apply[T /* <: js.Object */](): DateFilter_[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DateFilter_[T]]
     }
     
-    @scala.inline
-    implicit class DateFilter_MutableBuilder[Self <: DateFilter_[?], T /* <: js.Object */] (val x: Self & DateFilter_[T]) extends AnyVal {
+    extension [Self <: DateFilter_[?], T /* <: js.Object */](x: Self & DateFilter_[T]) {
       
-      @scala.inline
-      def setComparator(value: js.Array[Comparator]): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+      inline def setComparator(value: js.Array[Comparator]): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorClassName(value: String): Self = StObject.set(x, "comparatorClassName", value.asInstanceOf[js.Any])
+      inline def setComparatorClassName(value: String): Self = StObject.set(x, "comparatorClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorClassNameUndefined: Self = StObject.set(x, "comparatorClassName", js.undefined)
+      inline def setComparatorClassNameUndefined: Self = StObject.set(x, "comparatorClassName", js.undefined)
       
-      @scala.inline
-      def setComparatorStyle(value: CSSProperties): Self = StObject.set(x, "comparatorStyle", value.asInstanceOf[js.Any])
+      inline def setComparatorStyle(value: CSSProperties): Self = StObject.set(x, "comparatorStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorStyleUndefined: Self = StObject.set(x, "comparatorStyle", js.undefined)
+      inline def setComparatorStyleUndefined: Self = StObject.set(x, "comparatorStyle", js.undefined)
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      @scala.inline
-      def setComparatorVarargs(value: Comparator*): Self = StObject.set(x, "comparator", js.Array(value :_*))
+      inline def setComparatorVarargs(value: Comparator*): Self = StObject.set(x, "comparator", js.Array(value :_*))
       
-      @scala.inline
-      def setDateClassName(value: String): Self = StObject.set(x, "dateClassName", value.asInstanceOf[js.Any])
+      inline def setDateClassName(value: String): Self = StObject.set(x, "dateClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateClassNameUndefined: Self = StObject.set(x, "dateClassName", js.undefined)
+      inline def setDateClassNameUndefined: Self = StObject.set(x, "dateClassName", js.undefined)
       
-      @scala.inline
-      def setDateStyle(value: CSSProperties): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
+      inline def setDateStyle(value: CSSProperties): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
+      inline def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setWithoutEmptyComparatorOption(value: Boolean): Self = StObject.set(x, "withoutEmptyComparatorOption", value.asInstanceOf[js.Any])
+      inline def setWithoutEmptyComparatorOption(value: Boolean): Self = StObject.set(x, "withoutEmptyComparatorOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutEmptyComparatorOptionUndefined: Self = StObject.set(x, "withoutEmptyComparatorOption", js.undefined)
+      inline def setWithoutEmptyComparatorOptionUndefined: Self = StObject.set(x, "withoutEmptyComparatorOption", js.undefined)
     }
   }
   
@@ -274,32 +241,24 @@ object mod {
   }
   object MultiSelectFilterProps {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](options: MultiSelectFilterOptions | js.Function0[MultiSelectFilterOptions]): MultiSelectFilterProps[T] = {
+    inline def apply[T /* <: js.Object */](options: MultiSelectFilterOptions | js.Function0[MultiSelectFilterOptions]): MultiSelectFilterProps[T] = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiSelectFilterProps[T]]
     }
     
-    @scala.inline
-    implicit class MultiSelectFilterPropsMutableBuilder[Self <: MultiSelectFilterProps[?], T /* <: js.Object */] (val x: Self & MultiSelectFilterProps[T]) extends AnyVal {
+    extension [Self <: MultiSelectFilterProps[?], T /* <: js.Object */](x: Self & MultiSelectFilterProps[T]) {
       
-      @scala.inline
-      def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+      inline def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      @scala.inline
-      def setOptions(value: MultiSelectFilterOptions | js.Function0[MultiSelectFilterOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: MultiSelectFilterOptions | js.Function0[MultiSelectFilterOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsFunction0(value: () => MultiSelectFilterOptions): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
+      inline def setOptionsFunction0(value: () => MultiSelectFilterOptions): Self = StObject.set(x, "options", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
+      inline def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
+      inline def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
     }
   }
   
@@ -331,74 +290,52 @@ object mod {
   }
   object NumberFilterProps {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](): NumberFilterProps[T] = {
+    inline def apply[T /* <: js.Object */](): NumberFilterProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberFilterProps[T]]
     }
     
-    @scala.inline
-    implicit class NumberFilterPropsMutableBuilder[Self <: NumberFilterProps[?], T /* <: js.Object */] (val x: Self & NumberFilterProps[T]) extends AnyVal {
+    extension [Self <: NumberFilterProps[?], T /* <: js.Object */](x: Self & NumberFilterProps[T]) {
       
-      @scala.inline
-      def setComparatorClassName(value: String): Self = StObject.set(x, "comparatorClassName", value.asInstanceOf[js.Any])
+      inline def setComparatorClassName(value: String): Self = StObject.set(x, "comparatorClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorClassNameUndefined: Self = StObject.set(x, "comparatorClassName", js.undefined)
+      inline def setComparatorClassNameUndefined: Self = StObject.set(x, "comparatorClassName", js.undefined)
       
-      @scala.inline
-      def setComparatorStyle(value: CSSProperties): Self = StObject.set(x, "comparatorStyle", value.asInstanceOf[js.Any])
+      inline def setComparatorStyle(value: CSSProperties): Self = StObject.set(x, "comparatorStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorStyleUndefined: Self = StObject.set(x, "comparatorStyle", js.undefined)
+      inline def setComparatorStyleUndefined: Self = StObject.set(x, "comparatorStyle", js.undefined)
       
-      @scala.inline
-      def setComparators(value: js.Array[Comparator]): Self = StObject.set(x, "comparators", value.asInstanceOf[js.Any])
+      inline def setComparators(value: js.Array[Comparator]): Self = StObject.set(x, "comparators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorsUndefined: Self = StObject.set(x, "comparators", js.undefined)
+      inline def setComparatorsUndefined: Self = StObject.set(x, "comparators", js.undefined)
       
-      @scala.inline
-      def setComparatorsVarargs(value: Comparator*): Self = StObject.set(x, "comparators", js.Array(value :_*))
+      inline def setComparatorsVarargs(value: Comparator*): Self = StObject.set(x, "comparators", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultValue(value: typings.reactBootstrapTable2Filter.anon.Comparator): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: typings.reactBootstrapTable2Filter.anon.Comparator): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setNumberClassName(value: String): Self = StObject.set(x, "numberClassName", value.asInstanceOf[js.Any])
+      inline def setNumberClassName(value: String): Self = StObject.set(x, "numberClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberClassNameUndefined: Self = StObject.set(x, "numberClassName", js.undefined)
+      inline def setNumberClassNameUndefined: Self = StObject.set(x, "numberClassName", js.undefined)
       
-      @scala.inline
-      def setNumberStyle(value: CSSProperties): Self = StObject.set(x, "numberStyle", value.asInstanceOf[js.Any])
+      inline def setNumberStyle(value: CSSProperties): Self = StObject.set(x, "numberStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberStyleUndefined: Self = StObject.set(x, "numberStyle", js.undefined)
+      inline def setNumberStyleUndefined: Self = StObject.set(x, "numberStyle", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[Double]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[Double]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setWithoutEmptyComparatorOption(value: Boolean): Self = StObject.set(x, "withoutEmptyComparatorOption", value.asInstanceOf[js.Any])
+      inline def setWithoutEmptyComparatorOption(value: Boolean): Self = StObject.set(x, "withoutEmptyComparatorOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutEmptyComparatorOptionUndefined: Self = StObject.set(x, "withoutEmptyComparatorOption", js.undefined)
+      inline def setWithoutEmptyComparatorOptionUndefined: Self = StObject.set(x, "withoutEmptyComparatorOption", js.undefined)
       
-      @scala.inline
-      def setWithoutEmptyNumberOption(value: Boolean): Self = StObject.set(x, "withoutEmptyNumberOption", value.asInstanceOf[js.Any])
+      inline def setWithoutEmptyNumberOption(value: Boolean): Self = StObject.set(x, "withoutEmptyNumberOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutEmptyNumberOptionUndefined: Self = StObject.set(x, "withoutEmptyNumberOption", js.undefined)
+      inline def setWithoutEmptyNumberOptionUndefined: Self = StObject.set(x, "withoutEmptyNumberOption", js.undefined)
     }
   }
   
@@ -419,39 +356,30 @@ object mod {
   }
   object SelectFilterProps {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](
+    inline def apply[T /* <: js.Object */](
       options: SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[T, js.Any], SelectFilterOptions])
     ): SelectFilterProps[T] = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectFilterProps[T]]
     }
     
-    @scala.inline
-    implicit class SelectFilterPropsMutableBuilder[Self <: SelectFilterProps[?], T /* <: js.Object */] (val x: Self & SelectFilterProps[T]) extends AnyVal {
+    extension [Self <: SelectFilterProps[?], T /* <: js.Object */](x: Self & SelectFilterProps[T]) {
       
-      @scala.inline
-      def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+      inline def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      @scala.inline
-      def setOptions(
+      inline def setOptions(
         value: SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[T, js.Any], SelectFilterOptions])
       ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsFunction1(value: /* column */ ColumnDescription[T, js.Any] => SelectFilterOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+      inline def setOptionsFunction1(value: /* column */ ColumnDescription[T, js.Any] => SelectFilterOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptionsVarargs(value: Label*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Label*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
+      inline def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
+      inline def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
     }
   }
   
@@ -484,80 +412,56 @@ object mod {
   }
   object TextFilterProps {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](): TextFilterProps[T] = {
+    inline def apply[T /* <: js.Object */](): TextFilterProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextFilterProps[T]]
     }
     
-    @scala.inline
-    implicit class TextFilterPropsMutableBuilder[Self <: TextFilterProps[?], T /* <: js.Object */] (val x: Self & TextFilterProps[T]) extends AnyVal {
+    extension [Self <: TextFilterProps[?], T /* <: js.Object */](x: Self & TextFilterProps[T]) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+      inline def setComparator(value: Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setGetFilter(value: /* filter */ TableColumnFilterProps[js.Any, js.Any] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
+      inline def setGetFilter(value: /* filter */ TableColumnFilterProps[js.Any, js.Any] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
+      inline def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* e */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnFilter(value: /* filterValue */ TableColumnFilterProps[js.Any, js.Any] => Unit | js.Array[T]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      inline def setOnFilter(value: /* filterValue */ TableColumnFilterProps[js.Any, js.Any] => Unit | js.Array[T]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
+      inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

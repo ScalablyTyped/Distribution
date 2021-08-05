@@ -14,28 +14,21 @@ trait EditAllOrderDealsResponse extends StObject {
 }
 object EditAllOrderDealsResponse {
   
-  @scala.inline
-  def apply(): EditAllOrderDealsResponse = {
+  inline def apply(): EditAllOrderDealsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditAllOrderDealsResponse]
   }
   
-  @scala.inline
-  implicit class EditAllOrderDealsResponseMutableBuilder[Self <: EditAllOrderDealsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EditAllOrderDealsResponse](x: Self) {
     
-    @scala.inline
-    def setDeals(value: js.Array[MarketplaceDeal]): Self = StObject.set(x, "deals", value.asInstanceOf[js.Any])
+    inline def setDeals(value: js.Array[MarketplaceDeal]): Self = StObject.set(x, "deals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
+    inline def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
-    @scala.inline
-    def setDealsVarargs(value: MarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
+    inline def setDealsVarargs(value: MarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderRevisionNumber(value: String): Self = StObject.set(x, "orderRevisionNumber", value.asInstanceOf[js.Any])
+    inline def setOrderRevisionNumber(value: String): Self = StObject.set(x, "orderRevisionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderRevisionNumberUndefined: Self = StObject.set(x, "orderRevisionNumber", js.undefined)
+    inline def setOrderRevisionNumberUndefined: Self = StObject.set(x, "orderRevisionNumber", js.undefined)
   }
 }

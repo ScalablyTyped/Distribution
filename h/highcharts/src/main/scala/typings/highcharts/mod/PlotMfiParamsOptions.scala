@@ -27,31 +27,23 @@ trait PlotMfiParamsOptions extends StObject {
 }
 object PlotMfiParamsOptions {
   
-  @scala.inline
-  def apply(): PlotMfiParamsOptions = {
+  inline def apply(): PlotMfiParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotMfiParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotMfiParamsOptionsMutableBuilder[Self <: PlotMfiParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotMfiParamsOptions](x: Self) {
     
-    @scala.inline
-    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setVolumeSeriesID(value: String): Self = StObject.set(x, "volumeSeriesID", value.asInstanceOf[js.Any])
+    inline def setVolumeSeriesID(value: String): Self = StObject.set(x, "volumeSeriesID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSeriesIDUndefined: Self = StObject.set(x, "volumeSeriesID", js.undefined)
+    inline def setVolumeSeriesIDUndefined: Self = StObject.set(x, "volumeSeriesID", js.undefined)
   }
 }

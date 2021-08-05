@@ -18,16 +18,13 @@ trait AddSpacingAfterParagraphCommand
 }
 object AddSpacingAfterParagraphCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): AddSpacingAfterParagraphCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): AddSpacingAfterParagraphCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[AddSpacingAfterParagraphCommand]
   }
   
-  @scala.inline
-  implicit class AddSpacingAfterParagraphCommandMutableBuilder[Self <: AddSpacingAfterParagraphCommand] (val x: Self) extends AnyVal {
+  extension [Self <: AddSpacingAfterParagraphCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

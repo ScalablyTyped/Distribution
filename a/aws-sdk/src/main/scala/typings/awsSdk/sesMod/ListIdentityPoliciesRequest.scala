@@ -13,16 +13,13 @@ trait ListIdentityPoliciesRequest extends StObject {
 }
 object ListIdentityPoliciesRequest {
   
-  @scala.inline
-  def apply(Identity: Identity): ListIdentityPoliciesRequest = {
+  inline def apply(Identity: Identity): ListIdentityPoliciesRequest = {
     val __obj = js.Dynamic.literal(Identity = Identity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIdentityPoliciesRequest]
   }
   
-  @scala.inline
-  implicit class ListIdentityPoliciesRequestMutableBuilder[Self <: ListIdentityPoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListIdentityPoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
   }
 }

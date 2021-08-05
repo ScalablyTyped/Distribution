@@ -14,28 +14,21 @@ trait FindPlaceFromQueryRequest extends StObject {
 }
 object FindPlaceFromQueryRequest {
   
-  @scala.inline
-  def apply(fields: js.Array[String], query: String): FindPlaceFromQueryRequest = {
+  inline def apply(fields: js.Array[String], query: String): FindPlaceFromQueryRequest = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindPlaceFromQueryRequest]
   }
   
-  @scala.inline
-  implicit class FindPlaceFromQueryRequestMutableBuilder[Self <: FindPlaceFromQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FindPlaceFromQueryRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setLocationBias(value: LocationBias): Self = StObject.set(x, "locationBias", value.asInstanceOf[js.Any])
+    inline def setLocationBias(value: LocationBias): Self = StObject.set(x, "locationBias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationBiasUndefined: Self = StObject.set(x, "locationBias", js.undefined)
+    inline def setLocationBiasUndefined: Self = StObject.set(x, "locationBias", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait SchedulerEnterprise extends StObject {
 }
 object SchedulerEnterprise {
   
-  @scala.inline
-  def apply(getSchedulerInstance: () => SchedulerStatic): SchedulerEnterprise = {
+  inline def apply(getSchedulerInstance: () => SchedulerStatic): SchedulerEnterprise = {
     val __obj = js.Dynamic.literal(getSchedulerInstance = js.Any.fromFunction0(getSchedulerInstance))
     __obj.asInstanceOf[SchedulerEnterprise]
   }
   
-  @scala.inline
-  implicit class SchedulerEnterpriseMutableBuilder[Self <: SchedulerEnterprise] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerEnterprise](x: Self) {
     
-    @scala.inline
-    def setGetSchedulerInstance(value: () => SchedulerStatic): Self = StObject.set(x, "getSchedulerInstance", js.Any.fromFunction0(value))
+    inline def setGetSchedulerInstance(value: () => SchedulerStatic): Self = StObject.set(x, "getSchedulerInstance", js.Any.fromFunction0(value))
   }
 }

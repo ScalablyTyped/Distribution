@@ -12,16 +12,13 @@ trait SearchableSnapshotsRepositoryStats
 }
 object SearchableSnapshotsRepositoryStats {
   
-  @scala.inline
-  def apply(repository: String): SearchableSnapshotsRepositoryStats = {
+  inline def apply(repository: String): SearchableSnapshotsRepositoryStats = {
     val __obj = js.Dynamic.literal(repository = repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchableSnapshotsRepositoryStats]
   }
   
-  @scala.inline
-  implicit class SearchableSnapshotsRepositoryStatsMutableBuilder[Self <: SearchableSnapshotsRepositoryStats] (val x: Self) extends AnyVal {
+  extension [Self <: SearchableSnapshotsRepositoryStats](x: Self) {
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

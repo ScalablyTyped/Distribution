@@ -16,20 +16,16 @@ trait StyleSheet
 }
 object StyleSheet {
   
-  @scala.inline
-  def apply(children: List[CssNode]): StyleSheet = {
+  inline def apply(children: List[CssNode]): StyleSheet = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StyleSheet")
     __obj.asInstanceOf[StyleSheet]
   }
   
-  @scala.inline
-  implicit class StyleSheetMutableBuilder[Self <: StyleSheet] (val x: Self) extends AnyVal {
+  extension [Self <: StyleSheet](x: Self) {
     
-    @scala.inline
-    def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.StyleSheet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.StyleSheet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

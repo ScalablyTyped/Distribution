@@ -23,32 +23,24 @@ object headerSideNavItemsMod extends Shortcut {
   }
   object HeaderSideNavItemsProps {
     
-    @scala.inline
-    def apply(): HeaderSideNavItemsProps = {
+    inline def apply(): HeaderSideNavItemsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderSideNavItemsProps]
     }
     
-    @scala.inline
-    implicit class HeaderSideNavItemsPropsMutableBuilder[Self <: HeaderSideNavItemsProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderSideNavItemsProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHasDivider(value: Boolean): Self = StObject.set(x, "hasDivider", value.asInstanceOf[js.Any])
+      inline def setHasDivider(value: Boolean): Self = StObject.set(x, "hasDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasDividerUndefined: Self = StObject.set(x, "hasDivider", js.undefined)
+      inline def setHasDividerUndefined: Self = StObject.set(x, "hasDivider", js.undefined)
     }
   }
   

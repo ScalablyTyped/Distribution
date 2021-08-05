@@ -43,55 +43,39 @@ trait EmailTemplateRequest extends StObject {
 }
 object EmailTemplateRequest {
   
-  @scala.inline
-  def apply(): EmailTemplateRequest = {
+  inline def apply(): EmailTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailTemplateRequest]
   }
   
-  @scala.inline
-  implicit class EmailTemplateRequestMutableBuilder[Self <: EmailTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EmailTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultSubstitutions(value: string): Self = StObject.set(x, "DefaultSubstitutions", value.asInstanceOf[js.Any])
+    inline def setDefaultSubstitutions(value: string): Self = StObject.set(x, "DefaultSubstitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSubstitutionsUndefined: Self = StObject.set(x, "DefaultSubstitutions", js.undefined)
+    inline def setDefaultSubstitutionsUndefined: Self = StObject.set(x, "DefaultSubstitutions", js.undefined)
     
-    @scala.inline
-    def setHtmlPart(value: string): Self = StObject.set(x, "HtmlPart", value.asInstanceOf[js.Any])
+    inline def setHtmlPart(value: string): Self = StObject.set(x, "HtmlPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlPartUndefined: Self = StObject.set(x, "HtmlPart", js.undefined)
+    inline def setHtmlPartUndefined: Self = StObject.set(x, "HtmlPart", js.undefined)
     
-    @scala.inline
-    def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
+    inline def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommenderIdUndefined: Self = StObject.set(x, "RecommenderId", js.undefined)
+    inline def setRecommenderIdUndefined: Self = StObject.set(x, "RecommenderId", js.undefined)
     
-    @scala.inline
-    def setSubject(value: string): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: string): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
     
-    @scala.inline
-    def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTemplateDescription(value: string): Self = StObject.set(x, "TemplateDescription", value.asInstanceOf[js.Any])
+    inline def setTemplateDescription(value: string): Self = StObject.set(x, "TemplateDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateDescriptionUndefined: Self = StObject.set(x, "TemplateDescription", js.undefined)
+    inline def setTemplateDescriptionUndefined: Self = StObject.set(x, "TemplateDescription", js.undefined)
     
-    @scala.inline
-    def setTextPart(value: string): Self = StObject.set(x, "TextPart", value.asInstanceOf[js.Any])
+    inline def setTextPart(value: string): Self = StObject.set(x, "TextPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPartUndefined: Self = StObject.set(x, "TextPart", js.undefined)
+    inline def setTextPartUndefined: Self = StObject.set(x, "TextPart", js.undefined)
   }
 }

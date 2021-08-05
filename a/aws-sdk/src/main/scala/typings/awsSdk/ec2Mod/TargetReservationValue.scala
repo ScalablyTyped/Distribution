@@ -18,25 +18,19 @@ trait TargetReservationValue extends StObject {
 }
 object TargetReservationValue {
   
-  @scala.inline
-  def apply(): TargetReservationValue = {
+  inline def apply(): TargetReservationValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetReservationValue]
   }
   
-  @scala.inline
-  implicit class TargetReservationValueMutableBuilder[Self <: TargetReservationValue] (val x: Self) extends AnyVal {
+  extension [Self <: TargetReservationValue](x: Self) {
     
-    @scala.inline
-    def setReservationValue(value: ReservationValue): Self = StObject.set(x, "ReservationValue", value.asInstanceOf[js.Any])
+    inline def setReservationValue(value: ReservationValue): Self = StObject.set(x, "ReservationValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationValueUndefined: Self = StObject.set(x, "ReservationValue", js.undefined)
+    inline def setReservationValueUndefined: Self = StObject.set(x, "ReservationValue", js.undefined)
     
-    @scala.inline
-    def setTargetConfiguration(value: TargetConfiguration): Self = StObject.set(x, "TargetConfiguration", value.asInstanceOf[js.Any])
+    inline def setTargetConfiguration(value: TargetConfiguration): Self = StObject.set(x, "TargetConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetConfigurationUndefined: Self = StObject.set(x, "TargetConfiguration", js.undefined)
+    inline def setTargetConfigurationUndefined: Self = StObject.set(x, "TargetConfiguration", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait SlashCommands[T] extends StObject {
 }
 object SlashCommands {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     addResponse: SlashCommandOptions[T] => Unit,
     calls: js.Array[SlashCommandCall[T]],
     reset: () => Unit,
@@ -27,22 +26,16 @@ object SlashCommands {
     __obj.asInstanceOf[SlashCommands[T]]
   }
   
-  @scala.inline
-  implicit class SlashCommandsMutableBuilder[Self <: SlashCommands[?], T] (val x: Self & SlashCommands[T]) extends AnyVal {
+  extension [Self <: SlashCommands[?], T](x: Self & SlashCommands[T]) {
     
-    @scala.inline
-    def setAddResponse(value: SlashCommandOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
+    inline def setAddResponse(value: SlashCommandOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalls(value: js.Array[SlashCommandCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    inline def setCalls(value: js.Array[SlashCommandCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallsVarargs(value: SlashCommandCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: SlashCommandCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSend(value: (SlashCommandUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    inline def setSend(value: (SlashCommandUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
   }
 }

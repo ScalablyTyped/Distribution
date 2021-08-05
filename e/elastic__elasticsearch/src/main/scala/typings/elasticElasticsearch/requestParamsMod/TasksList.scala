@@ -27,61 +27,43 @@ trait TasksList
 }
 object TasksList {
   
-  @scala.inline
-  def apply(): TasksList = {
+  inline def apply(): TasksList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TasksList]
   }
   
-  @scala.inline
-  implicit class TasksListMutableBuilder[Self <: TasksList] (val x: Self) extends AnyVal {
+  extension [Self <: TasksList](x: Self) {
     
-    @scala.inline
-    def setActions(value: String | js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: String | js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+    inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
+    inline def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
     
-    @scala.inline
-    def setGroup_by(value: nodes | parents | none): Self = StObject.set(x, "group_by", value.asInstanceOf[js.Any])
+    inline def setGroup_by(value: nodes | parents | none): Self = StObject.set(x, "group_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup_byUndefined: Self = StObject.set(x, "group_by", js.undefined)
+    inline def setGroup_byUndefined: Self = StObject.set(x, "group_by", js.undefined)
     
-    @scala.inline
-    def setNodes(value: String | js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: String | js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setParent_task_id(value: String): Self = StObject.set(x, "parent_task_id", value.asInstanceOf[js.Any])
+    inline def setParent_task_id(value: String): Self = StObject.set(x, "parent_task_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent_task_idUndefined: Self = StObject.set(x, "parent_task_id", js.undefined)
+    inline def setParent_task_idUndefined: Self = StObject.set(x, "parent_task_id", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
+    inline def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
+    inline def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
   }
 }

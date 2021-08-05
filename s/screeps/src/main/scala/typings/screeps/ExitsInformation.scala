@@ -21,37 +21,27 @@ trait ExitsInformation extends StObject {
 }
 object ExitsInformation {
   
-  @scala.inline
-  def apply(): ExitsInformation = {
+  inline def apply(): ExitsInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExitsInformation]
   }
   
-  @scala.inline
-  implicit class ExitsInformationMutableBuilder[Self <: ExitsInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ExitsInformation](x: Self) {
     
-    @scala.inline
-    def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1Undefined: Self = StObject.set(x, "1", js.undefined)
+    inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
     
-    @scala.inline
-    def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+    inline def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set3Undefined: Self = StObject.set(x, "3", js.undefined)
+    inline def set3Undefined: Self = StObject.set(x, "3", js.undefined)
     
-    @scala.inline
-    def set5(value: String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+    inline def set5(value: String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set5Undefined: Self = StObject.set(x, "5", js.undefined)
+    inline def set5Undefined: Self = StObject.set(x, "5", js.undefined)
     
-    @scala.inline
-    def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+    inline def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set7Undefined: Self = StObject.set(x, "7", js.undefined)
+    inline def set7Undefined: Self = StObject.set(x, "7", js.undefined)
   }
 }

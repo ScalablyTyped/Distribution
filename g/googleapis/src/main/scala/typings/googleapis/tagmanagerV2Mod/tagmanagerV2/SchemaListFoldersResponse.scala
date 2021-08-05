@@ -21,28 +21,21 @@ trait SchemaListFoldersResponse extends StObject {
 }
 object SchemaListFoldersResponse {
   
-  @scala.inline
-  def apply(): SchemaListFoldersResponse = {
+  inline def apply(): SchemaListFoldersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListFoldersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListFoldersResponseMutableBuilder[Self <: SchemaListFoldersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListFoldersResponse](x: Self) {
     
-    @scala.inline
-    def setFolder(value: js.Array[SchemaFolder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: js.Array[SchemaFolder]): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    @scala.inline
-    def setFolderVarargs(value: SchemaFolder*): Self = StObject.set(x, "folder", js.Array(value :_*))
+    inline def setFolderVarargs(value: SchemaFolder*): Self = StObject.set(x, "folder", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

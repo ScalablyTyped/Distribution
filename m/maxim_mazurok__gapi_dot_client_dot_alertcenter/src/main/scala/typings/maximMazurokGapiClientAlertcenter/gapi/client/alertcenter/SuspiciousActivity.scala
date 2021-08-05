@@ -14,28 +14,21 @@ trait SuspiciousActivity extends StObject {
 }
 object SuspiciousActivity {
   
-  @scala.inline
-  def apply(): SuspiciousActivity = {
+  inline def apply(): SuspiciousActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuspiciousActivity]
   }
   
-  @scala.inline
-  implicit class SuspiciousActivityMutableBuilder[Self <: SuspiciousActivity] (val x: Self) extends AnyVal {
+  extension [Self <: SuspiciousActivity](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[SuspiciousActivitySecurityDetail]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[SuspiciousActivitySecurityDetail]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: SuspiciousActivitySecurityDetail*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: SuspiciousActivitySecurityDetail*): Self = StObject.set(x, "events", js.Array(value :_*))
   }
 }

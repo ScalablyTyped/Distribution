@@ -22,20 +22,16 @@ object headerPanelMod extends Shortcut {
   }
   object HeaderPanelProps {
     
-    @scala.inline
-    def apply(): HeaderPanelProps = {
+    inline def apply(): HeaderPanelProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderPanelProps]
     }
     
-    @scala.inline
-    implicit class HeaderPanelPropsMutableBuilder[Self <: HeaderPanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderPanelProps](x: Self) {
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     }
   }
   

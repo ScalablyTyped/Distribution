@@ -14,22 +14,17 @@ trait StringInsertOp
 }
 object StringInsertOp {
   
-  @scala.inline
-  def apply(p: Path, si: String): StringInsertOp = {
+  inline def apply(p: Path, si: String): StringInsertOp = {
     val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any], si = si.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringInsertOp]
   }
   
-  @scala.inline
-  implicit class StringInsertOpMutableBuilder[Self <: StringInsertOp] (val x: Self) extends AnyVal {
+  extension [Self <: StringInsertOp](x: Self) {
     
-    @scala.inline
-    def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
     
-    @scala.inline
-    def setSi(value: String): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
+    inline def setSi(value: String): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
   }
 }

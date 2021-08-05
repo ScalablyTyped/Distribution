@@ -12,19 +12,15 @@ trait Physics extends StObject {
 }
 object Physics {
   
-  @scala.inline
-  def apply(physics: Gravity, render: Exposure): Physics = {
+  inline def apply(physics: Gravity, render: Exposure): Physics = {
     val __obj = js.Dynamic.literal(physics = physics.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
     __obj.asInstanceOf[Physics]
   }
   
-  @scala.inline
-  implicit class PhysicsMutableBuilder[Self <: Physics] (val x: Self) extends AnyVal {
+  extension [Self <: Physics](x: Self) {
     
-    @scala.inline
-    def setPhysics(value: Gravity): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+    inline def setPhysics(value: Gravity): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender(value: Exposure): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: Exposure): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
   }
 }

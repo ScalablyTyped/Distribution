@@ -42,8 +42,7 @@ trait Statvfs extends StObject {
 }
 object Statvfs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     f_bavail: Double,
     f_bfree: Double,
     f_blocks: Double,
@@ -60,40 +59,28 @@ object Statvfs {
     __obj.asInstanceOf[Statvfs]
   }
   
-  @scala.inline
-  implicit class StatvfsMutableBuilder[Self <: Statvfs] (val x: Self) extends AnyVal {
+  extension [Self <: Statvfs](x: Self) {
     
-    @scala.inline
-    def setF_bavail(value: Double): Self = StObject.set(x, "f_bavail", value.asInstanceOf[js.Any])
+    inline def setF_bavail(value: Double): Self = StObject.set(x, "f_bavail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_bfree(value: Double): Self = StObject.set(x, "f_bfree", value.asInstanceOf[js.Any])
+    inline def setF_bfree(value: Double): Self = StObject.set(x, "f_bfree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_blocks(value: Double): Self = StObject.set(x, "f_blocks", value.asInstanceOf[js.Any])
+    inline def setF_blocks(value: Double): Self = StObject.set(x, "f_blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_bsize(value: Double): Self = StObject.set(x, "f_bsize", value.asInstanceOf[js.Any])
+    inline def setF_bsize(value: Double): Self = StObject.set(x, "f_bsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_favail(value: Double): Self = StObject.set(x, "f_favail", value.asInstanceOf[js.Any])
+    inline def setF_favail(value: Double): Self = StObject.set(x, "f_favail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_ffree(value: Double): Self = StObject.set(x, "f_ffree", value.asInstanceOf[js.Any])
+    inline def setF_ffree(value: Double): Self = StObject.set(x, "f_ffree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_files(value: Double): Self = StObject.set(x, "f_files", value.asInstanceOf[js.Any])
+    inline def setF_files(value: Double): Self = StObject.set(x, "f_files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_flag(value: Double): Self = StObject.set(x, "f_flag", value.asInstanceOf[js.Any])
+    inline def setF_flag(value: Double): Self = StObject.set(x, "f_flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_frsize(value: Double): Self = StObject.set(x, "f_frsize", value.asInstanceOf[js.Any])
+    inline def setF_frsize(value: Double): Self = StObject.set(x, "f_frsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_fsid(value: Double): Self = StObject.set(x, "f_fsid", value.asInstanceOf[js.Any])
+    inline def setF_fsid(value: Double): Self = StObject.set(x, "f_fsid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_namemax(value: Double): Self = StObject.set(x, "f_namemax", value.asInstanceOf[js.Any])
+    inline def setF_namemax(value: Double): Self = StObject.set(x, "f_namemax", value.asInstanceOf[js.Any])
   }
 }

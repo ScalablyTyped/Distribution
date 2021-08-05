@@ -10,8 +10,7 @@ trait AllRoomAttributes
      with ImmutableRoomAttributes
 object AllRoomAttributes {
   
-  @scala.inline
-  def apply(description: String, name: String): AllRoomAttributes = {
+  inline def apply(description: String, name: String): AllRoomAttributes = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllRoomAttributes]
   }

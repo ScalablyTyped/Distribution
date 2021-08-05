@@ -24,48 +24,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScaleType extends StObject
 object ScaleType {
   
-  @scala.inline
-  def auto: typings.recharts.rechartsStrings.auto = "auto".asInstanceOf[typings.recharts.rechartsStrings.auto]
+  inline def auto: typings.recharts.rechartsStrings.auto = "auto".asInstanceOf[typings.recharts.rechartsStrings.auto]
   
-  @scala.inline
-  def band: typings.recharts.rechartsStrings.band = "band".asInstanceOf[typings.recharts.rechartsStrings.band]
+  inline def band: typings.recharts.rechartsStrings.band = "band".asInstanceOf[typings.recharts.rechartsStrings.band]
   
-  @scala.inline
-  def identity: typings.recharts.rechartsStrings.identity = "identity".asInstanceOf[typings.recharts.rechartsStrings.identity]
+  inline def identity: typings.recharts.rechartsStrings.identity = "identity".asInstanceOf[typings.recharts.rechartsStrings.identity]
   
-  @scala.inline
-  def linear: typings.recharts.rechartsStrings.linear = "linear".asInstanceOf[typings.recharts.rechartsStrings.linear]
+  inline def linear: typings.recharts.rechartsStrings.linear = "linear".asInstanceOf[typings.recharts.rechartsStrings.linear]
   
-  @scala.inline
-  def log: typings.recharts.rechartsStrings.log = "log".asInstanceOf[typings.recharts.rechartsStrings.log]
+  inline def log: typings.recharts.rechartsStrings.log = "log".asInstanceOf[typings.recharts.rechartsStrings.log]
   
-  @scala.inline
-  def ordinal: typings.recharts.rechartsStrings.ordinal = "ordinal".asInstanceOf[typings.recharts.rechartsStrings.ordinal]
+  inline def ordinal: typings.recharts.rechartsStrings.ordinal = "ordinal".asInstanceOf[typings.recharts.rechartsStrings.ordinal]
   
-  @scala.inline
-  def point: typings.recharts.rechartsStrings.point = "point".asInstanceOf[typings.recharts.rechartsStrings.point]
+  inline def point: typings.recharts.rechartsStrings.point = "point".asInstanceOf[typings.recharts.rechartsStrings.point]
   
-  @scala.inline
-  def pow: typings.recharts.rechartsStrings.pow = "pow".asInstanceOf[typings.recharts.rechartsStrings.pow]
+  inline def pow: typings.recharts.rechartsStrings.pow = "pow".asInstanceOf[typings.recharts.rechartsStrings.pow]
   
-  @scala.inline
-  def quantile: typings.recharts.rechartsStrings.quantile = "quantile".asInstanceOf[typings.recharts.rechartsStrings.quantile]
+  inline def quantile: typings.recharts.rechartsStrings.quantile = "quantile".asInstanceOf[typings.recharts.rechartsStrings.quantile]
   
-  @scala.inline
-  def quantize: typings.recharts.rechartsStrings.quantize = "quantize".asInstanceOf[typings.recharts.rechartsStrings.quantize]
+  inline def quantize: typings.recharts.rechartsStrings.quantize = "quantize".asInstanceOf[typings.recharts.rechartsStrings.quantize]
   
-  @scala.inline
-  def sequential: typings.recharts.rechartsStrings.sequential = "sequential".asInstanceOf[typings.recharts.rechartsStrings.sequential]
+  inline def sequential: typings.recharts.rechartsStrings.sequential = "sequential".asInstanceOf[typings.recharts.rechartsStrings.sequential]
   
-  @scala.inline
-  def sqrt: typings.recharts.rechartsStrings.sqrt = "sqrt".asInstanceOf[typings.recharts.rechartsStrings.sqrt]
+  inline def sqrt: typings.recharts.rechartsStrings.sqrt = "sqrt".asInstanceOf[typings.recharts.rechartsStrings.sqrt]
   
-  @scala.inline
-  def threshold: typings.recharts.rechartsStrings.threshold = "threshold".asInstanceOf[typings.recharts.rechartsStrings.threshold]
+  inline def threshold: typings.recharts.rechartsStrings.threshold = "threshold".asInstanceOf[typings.recharts.rechartsStrings.threshold]
   
-  @scala.inline
-  def time: typings.recharts.rechartsStrings.time = "time".asInstanceOf[typings.recharts.rechartsStrings.time]
+  inline def time: typings.recharts.rechartsStrings.time = "time".asInstanceOf[typings.recharts.rechartsStrings.time]
   
-  @scala.inline
-  def utc: typings.recharts.rechartsStrings.utc = "utc".asInstanceOf[typings.recharts.rechartsStrings.utc]
+  inline def utc: typings.recharts.rechartsStrings.utc = "utc".asInstanceOf[typings.recharts.rechartsStrings.utc]
 }

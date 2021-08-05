@@ -58,20 +58,17 @@ object mod {
     @JSImport("onoff", "Gpio.HIGH")
     @js.native
     def HIGH: High = js.native
-    @scala.inline
-    def HIGH_=(x: High): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIGH")(x.asInstanceOf[js.Any])
+    inline def HIGH_=(x: High): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIGH")(x.asInstanceOf[js.Any])
     
     @JSImport("onoff", "Gpio.LOW")
     @js.native
     def LOW: Low = js.native
-    @scala.inline
-    def LOW_=(x: Low): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOW")(x.asInstanceOf[js.Any])
+    inline def LOW_=(x: Low): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOW")(x.asInstanceOf[js.Any])
     
     @JSImport("onoff", "Gpio.accessible")
     @js.native
     def accessible: Boolean = js.native
-    @scala.inline
-    def accessible_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessible")(x.asInstanceOf[js.Any])
+    inline def accessible_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accessible")(x.asInstanceOf[js.Any])
   }
   
   type BinaryValue = High | Low
@@ -85,17 +82,13 @@ object mod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def high: typings.onoff.onoffStrings.high = "high".asInstanceOf[typings.onoff.onoffStrings.high]
+    inline def high: typings.onoff.onoffStrings.high = "high".asInstanceOf[typings.onoff.onoffStrings.high]
     
-    @scala.inline
-    def in: typings.onoff.onoffStrings.in = "in".asInstanceOf[typings.onoff.onoffStrings.in]
+    inline def in: typings.onoff.onoffStrings.in = "in".asInstanceOf[typings.onoff.onoffStrings.in]
     
-    @scala.inline
-    def low: typings.onoff.onoffStrings.low = "low".asInstanceOf[typings.onoff.onoffStrings.low]
+    inline def low: typings.onoff.onoffStrings.low = "low".asInstanceOf[typings.onoff.onoffStrings.low]
     
-    @scala.inline
-    def out: typings.onoff.onoffStrings.out = "out".asInstanceOf[typings.onoff.onoffStrings.out]
+    inline def out: typings.onoff.onoffStrings.out = "out".asInstanceOf[typings.onoff.onoffStrings.out]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -107,17 +100,13 @@ object mod {
   trait Edge extends StObject
   object Edge {
     
-    @scala.inline
-    def both: typings.onoff.onoffStrings.both = "both".asInstanceOf[typings.onoff.onoffStrings.both]
+    inline def both: typings.onoff.onoffStrings.both = "both".asInstanceOf[typings.onoff.onoffStrings.both]
     
-    @scala.inline
-    def falling: typings.onoff.onoffStrings.falling = "falling".asInstanceOf[typings.onoff.onoffStrings.falling]
+    inline def falling: typings.onoff.onoffStrings.falling = "falling".asInstanceOf[typings.onoff.onoffStrings.falling]
     
-    @scala.inline
-    def none: typings.onoff.onoffStrings.none = "none".asInstanceOf[typings.onoff.onoffStrings.none]
+    inline def none: typings.onoff.onoffStrings.none = "none".asInstanceOf[typings.onoff.onoffStrings.none]
     
-    @scala.inline
-    def rising: typings.onoff.onoffStrings.rising = "rising".asInstanceOf[typings.onoff.onoffStrings.rising]
+    inline def rising: typings.onoff.onoffStrings.rising = "rising".asInstanceOf[typings.onoff.onoffStrings.rising]
   }
   
   type High = `1`
@@ -134,32 +123,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setActiveLow(value: Boolean): Self = StObject.set(x, "activeLow", value.asInstanceOf[js.Any])
+      inline def setActiveLow(value: Boolean): Self = StObject.set(x, "activeLow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveLowUndefined: Self = StObject.set(x, "activeLow", js.undefined)
+      inline def setActiveLowUndefined: Self = StObject.set(x, "activeLow", js.undefined)
       
-      @scala.inline
-      def setDebounceTimeout(value: Double): Self = StObject.set(x, "debounceTimeout", value.asInstanceOf[js.Any])
+      inline def setDebounceTimeout(value: Double): Self = StObject.set(x, "debounceTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceTimeoutUndefined: Self = StObject.set(x, "debounceTimeout", js.undefined)
+      inline def setDebounceTimeoutUndefined: Self = StObject.set(x, "debounceTimeout", js.undefined)
       
-      @scala.inline
-      def setReconfigureDirection(value: Boolean): Self = StObject.set(x, "reconfigureDirection", value.asInstanceOf[js.Any])
+      inline def setReconfigureDirection(value: Boolean): Self = StObject.set(x, "reconfigureDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconfigureDirectionUndefined: Self = StObject.set(x, "reconfigureDirection", js.undefined)
+      inline def setReconfigureDirectionUndefined: Self = StObject.set(x, "reconfigureDirection", js.undefined)
     }
   }
   

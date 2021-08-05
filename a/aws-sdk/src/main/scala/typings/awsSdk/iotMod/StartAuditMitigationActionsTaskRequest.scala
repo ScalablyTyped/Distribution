@@ -28,8 +28,7 @@ trait StartAuditMitigationActionsTaskRequest extends StObject {
 }
 object StartAuditMitigationActionsTaskRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auditCheckToActionsMapping: AuditCheckToActionsMapping,
     clientRequestToken: ClientRequestToken,
     target: AuditMitigationActionsTaskTarget,
@@ -39,19 +38,14 @@ object StartAuditMitigationActionsTaskRequest {
     __obj.asInstanceOf[StartAuditMitigationActionsTaskRequest]
   }
   
-  @scala.inline
-  implicit class StartAuditMitigationActionsTaskRequestMutableBuilder[Self <: StartAuditMitigationActionsTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartAuditMitigationActionsTaskRequest](x: Self) {
     
-    @scala.inline
-    def setAuditCheckToActionsMapping(value: AuditCheckToActionsMapping): Self = StObject.set(x, "auditCheckToActionsMapping", value.asInstanceOf[js.Any])
+    inline def setAuditCheckToActionsMapping(value: AuditCheckToActionsMapping): Self = StObject.set(x, "auditCheckToActionsMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: AuditMitigationActionsTaskTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: AuditMitigationActionsTaskTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: AuditMitigationActionsTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

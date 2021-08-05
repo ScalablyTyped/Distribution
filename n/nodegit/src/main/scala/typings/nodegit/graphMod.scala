@@ -18,10 +18,8 @@ object graphMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def aheadBehind(repo: Repository, local: Oid, upstream: Oid): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("aheadBehind")(repo.asInstanceOf[js.Any], local.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def aheadBehind(repo: Repository, local: Oid, upstream: Oid): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("aheadBehind")(repo.asInstanceOf[js.Any], local.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def descendantOf(repo: Repository, commit: Oid, ancestor: Oid): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("descendantOf")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], ancestor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def descendantOf(repo: Repository, commit: Oid, ancestor: Oid): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("descendantOf")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], ancestor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   }
 }

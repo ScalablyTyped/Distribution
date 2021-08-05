@@ -18,19 +18,15 @@ trait DescribeIdentityProviderRequest extends StObject {
 }
 object DescribeIdentityProviderRequest {
   
-  @scala.inline
-  def apply(ProviderName: ProviderNameType, UserPoolId: UserPoolIdType): DescribeIdentityProviderRequest = {
+  inline def apply(ProviderName: ProviderNameType, UserPoolId: UserPoolIdType): DescribeIdentityProviderRequest = {
     val __obj = js.Dynamic.literal(ProviderName = ProviderName.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIdentityProviderRequest]
   }
   
-  @scala.inline
-  implicit class DescribeIdentityProviderRequestMutableBuilder[Self <: DescribeIdentityProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIdentityProviderRequest](x: Self) {
     
-    @scala.inline
-    def setProviderName(value: ProviderNameType): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: ProviderNameType): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

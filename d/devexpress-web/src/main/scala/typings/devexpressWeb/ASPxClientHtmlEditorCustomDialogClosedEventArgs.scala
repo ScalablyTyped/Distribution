@@ -18,16 +18,13 @@ trait ASPxClientHtmlEditorCustomDialogClosedEventArgs
 }
 object ASPxClientHtmlEditorCustomDialogClosedEventArgs {
   
-  @scala.inline
-  def apply(data: js.Any, name: String, status: js.Any): ASPxClientHtmlEditorCustomDialogClosedEventArgs = {
+  inline def apply(data: js.Any, name: String, status: js.Any): ASPxClientHtmlEditorCustomDialogClosedEventArgs = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogClosedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorCustomDialogClosedEventArgsMutableBuilder[Self <: ASPxClientHtmlEditorCustomDialogClosedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorCustomDialogClosedEventArgs](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

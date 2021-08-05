@@ -44,32 +44,24 @@ object mod extends Shortcut {
   }
   object ErrorContext {
     
-    @scala.inline
-    def apply(errorType: String, schema: String): ErrorContext = {
+    inline def apply(errorType: String, schema: String): ErrorContext = {
       val __obj = js.Dynamic.literal(errorType = errorType.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorContext]
     }
     
-    @scala.inline
-    implicit class ErrorContextMutableBuilder[Self <: ErrorContext] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorContext](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+      inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,99 +180,70 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(validate: (js.Object, Request, ResponseToolkit) => ValidationResult | js.Promise[ValidationResult]): Options = {
+    inline def apply(validate: (js.Object, Request, ResponseToolkit) => ValidationResult | js.Promise[ValidationResult]): Options = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttemptToExtractTokenInPayload(value: Boolean): Self = StObject.set(x, "attemptToExtractTokenInPayload", value.asInstanceOf[js.Any])
+      inline def setAttemptToExtractTokenInPayload(value: Boolean): Self = StObject.set(x, "attemptToExtractTokenInPayload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptToExtractTokenInPayloadUndefined: Self = StObject.set(x, "attemptToExtractTokenInPayload", js.undefined)
+      inline def setAttemptToExtractTokenInPayloadUndefined: Self = StObject.set(x, "attemptToExtractTokenInPayload", js.undefined)
       
-      @scala.inline
-      def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setCookieKey(value: String | Boolean): Self = StObject.set(x, "cookieKey", value.asInstanceOf[js.Any])
+      inline def setCookieKey(value: String | Boolean): Self = StObject.set(x, "cookieKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieKeyUndefined: Self = StObject.set(x, "cookieKey", js.undefined)
+      inline def setCookieKeyUndefined: Self = StObject.set(x, "cookieKey", js.undefined)
       
-      @scala.inline
-      def setCustomExtractionFunc(value: /* request */ Request => String): Self = StObject.set(x, "customExtractionFunc", js.Any.fromFunction1(value))
+      inline def setCustomExtractionFunc(value: /* request */ Request => String): Self = StObject.set(x, "customExtractionFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomExtractionFuncUndefined: Self = StObject.set(x, "customExtractionFunc", js.undefined)
+      inline def setCustomExtractionFuncUndefined: Self = StObject.set(x, "customExtractionFunc", js.undefined)
       
-      @scala.inline
-      def setErrorFunc(value: (/* ctx */ ErrorContext, /* request */ Request, /* h */ ResponseToolkit) => ErrorContext): Self = StObject.set(x, "errorFunc", js.Any.fromFunction3(value))
+      inline def setErrorFunc(value: (/* ctx */ ErrorContext, /* request */ Request, /* h */ ResponseToolkit) => ErrorContext): Self = StObject.set(x, "errorFunc", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setErrorFuncUndefined: Self = StObject.set(x, "errorFunc", js.undefined)
+      inline def setErrorFuncUndefined: Self = StObject.set(x, "errorFunc", js.undefined)
       
-      @scala.inline
-      def setHeaderKey(value: String | Boolean): Self = StObject.set(x, "headerKey", value.asInstanceOf[js.Any])
+      inline def setHeaderKey(value: String | Boolean): Self = StObject.set(x, "headerKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderKeyUndefined: Self = StObject.set(x, "headerKey", js.undefined)
+      inline def setHeaderKeyUndefined: Self = StObject.set(x, "headerKey", js.undefined)
       
-      @scala.inline
-      def setKey(
+      inline def setKey(
         value: String | js.Array[String] | Buffer | (js.Function1[/* decodedToken */ js.Any, js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]])
       ): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFunction1(value: /* decodedToken */ js.Any => js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      inline def setKeyFunction1(value: /* decodedToken */ js.Any => js.Promise[typings.hapiAuthJwt2.anon.ExtraInfo]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value :_*))
       
-      @scala.inline
-      def setPayloadKey(value: String | Boolean): Self = StObject.set(x, "payloadKey", value.asInstanceOf[js.Any])
+      inline def setPayloadKey(value: String | Boolean): Self = StObject.set(x, "payloadKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadKeyUndefined: Self = StObject.set(x, "payloadKey", js.undefined)
+      inline def setPayloadKeyUndefined: Self = StObject.set(x, "payloadKey", js.undefined)
       
-      @scala.inline
-      def setResponseFunc(
+      inline def setResponseFunc(
         value: (/* request */ Request, /* reply */ js.Function2[/* err */ js.Any, /* response */ ResponseObject, Unit]) => Unit
       ): Self = StObject.set(x, "responseFunc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResponseFuncUndefined: Self = StObject.set(x, "responseFunc", js.undefined)
+      inline def setResponseFuncUndefined: Self = StObject.set(x, "responseFunc", js.undefined)
       
-      @scala.inline
-      def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
+      inline def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenTypeUndefined: Self = StObject.set(x, "tokenType", js.undefined)
+      inline def setTokenTypeUndefined: Self = StObject.set(x, "tokenType", js.undefined)
       
-      @scala.inline
-      def setUrlKey(value: String | Boolean): Self = StObject.set(x, "urlKey", value.asInstanceOf[js.Any])
+      inline def setUrlKey(value: String | Boolean): Self = StObject.set(x, "urlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlKeyUndefined: Self = StObject.set(x, "urlKey", js.undefined)
+      inline def setUrlKeyUndefined: Self = StObject.set(x, "urlKey", js.undefined)
       
-      @scala.inline
-      def setValidate(value: (js.Object, Request, ResponseToolkit) => ValidationResult | js.Promise[ValidationResult]): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
+      inline def setValidate(value: (js.Object, Request, ResponseToolkit) => ValidationResult | js.Promise[ValidationResult]): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setVerifyOptions(value: VerifyOptions): Self = StObject.set(x, "verifyOptions", value.asInstanceOf[js.Any])
+      inline def setVerifyOptions(value: VerifyOptions): Self = StObject.set(x, "verifyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifyOptionsUndefined: Self = StObject.set(x, "verifyOptions", js.undefined)
+      inline def setVerifyOptionsUndefined: Self = StObject.set(x, "verifyOptions", js.undefined)
     }
   }
   
@@ -295,20 +258,16 @@ object mod extends Shortcut {
   }
   object RegisterOptions {
     
-    @scala.inline
-    def apply(): RegisterOptions = {
+    inline def apply(): RegisterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegisterOptions]
     }
     
-    @scala.inline
-    implicit class RegisterOptionsMutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegisterOptions](x: Self) {
       
-      @scala.inline
-      def setVerify(value: (/* decoded */ js.Any, /* request */ Request) => js.Promise[Credentials]): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+      inline def setVerify(value: (/* decoded */ js.Any, /* request */ Request) => js.Promise[Credentials]): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
+      inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
     }
   }
   
@@ -324,35 +283,26 @@ object mod extends Shortcut {
   }
   object ValidationResult {
     
-    @scala.inline
-    def apply(isValid: Boolean): ValidationResult = {
+    inline def apply(isValid: Boolean): ValidationResult = {
       val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationResult]
     }
     
-    @scala.inline
-    implicit class ValidationResultMutableBuilder[Self <: ValidationResult] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationResult](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: ResponseObject): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: ResponseObject): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   

@@ -19,22 +19,17 @@ trait ClientPositions extends StObject {
 }
 object ClientPositions {
   
-  @scala.inline
-  def apply(borderBoxCenter: Position, offset: Position, selection: Position): ClientPositions = {
+  inline def apply(borderBoxCenter: Position, offset: Position, selection: Position): ClientPositions = {
     val __obj = js.Dynamic.literal(borderBoxCenter = borderBoxCenter.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientPositions]
   }
   
-  @scala.inline
-  implicit class ClientPositionsMutableBuilder[Self <: ClientPositions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientPositions](x: Self) {
     
-    @scala.inline
-    def setBorderBoxCenter(value: Position): Self = StObject.set(x, "borderBoxCenter", value.asInstanceOf[js.Any])
+    inline def setBorderBoxCenter(value: Position): Self = StObject.set(x, "borderBoxCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Position): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Position): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: Position): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Position): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

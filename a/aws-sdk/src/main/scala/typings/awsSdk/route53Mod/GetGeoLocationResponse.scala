@@ -13,16 +13,13 @@ trait GetGeoLocationResponse extends StObject {
 }
 object GetGeoLocationResponse {
   
-  @scala.inline
-  def apply(GeoLocationDetails: GeoLocationDetails): GetGeoLocationResponse = {
+  inline def apply(GeoLocationDetails: GeoLocationDetails): GetGeoLocationResponse = {
     val __obj = js.Dynamic.literal(GeoLocationDetails = GeoLocationDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGeoLocationResponse]
   }
   
-  @scala.inline
-  implicit class GetGeoLocationResponseMutableBuilder[Self <: GetGeoLocationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetGeoLocationResponse](x: Self) {
     
-    @scala.inline
-    def setGeoLocationDetails(value: GeoLocationDetails): Self = StObject.set(x, "GeoLocationDetails", value.asInstanceOf[js.Any])
+    inline def setGeoLocationDetails(value: GeoLocationDetails): Self = StObject.set(x, "GeoLocationDetails", value.asInstanceOf[js.Any])
   }
 }

@@ -70,8 +70,7 @@ trait JSTreeStaticDefaultsCheckbox extends StObject {
 }
 object JSTreeStaticDefaultsCheckbox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cascade: String,
     cascade_to_disabled: Boolean,
     cascade_to_hidden: Boolean,
@@ -85,31 +84,22 @@ object JSTreeStaticDefaultsCheckbox {
     __obj.asInstanceOf[JSTreeStaticDefaultsCheckbox]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsCheckboxMutableBuilder[Self <: JSTreeStaticDefaultsCheckbox] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaultsCheckbox](x: Self) {
     
-    @scala.inline
-    def setCascade(value: String): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+    inline def setCascade(value: String): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCascade_to_disabled(value: Boolean): Self = StObject.set(x, "cascade_to_disabled", value.asInstanceOf[js.Any])
+    inline def setCascade_to_disabled(value: Boolean): Self = StObject.set(x, "cascade_to_disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCascade_to_hidden(value: Boolean): Self = StObject.set(x, "cascade_to_hidden", value.asInstanceOf[js.Any])
+    inline def setCascade_to_hidden(value: Boolean): Self = StObject.set(x, "cascade_to_hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_selected_style(value: Boolean): Self = StObject.set(x, "keep_selected_style", value.asInstanceOf[js.Any])
+    inline def setKeep_selected_style(value: Boolean): Self = StObject.set(x, "keep_selected_style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThree_state(value: Boolean): Self = StObject.set(x, "three_state", value.asInstanceOf[js.Any])
+    inline def setThree_state(value: Boolean): Self = StObject.set(x, "three_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTie_selection(value: Boolean): Self = StObject.set(x, "tie_selection", value.asInstanceOf[js.Any])
+    inline def setTie_selection(value: Boolean): Self = StObject.set(x, "tie_selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhole_node(value: Boolean): Self = StObject.set(x, "whole_node", value.asInstanceOf[js.Any])
+    inline def setWhole_node(value: Boolean): Self = StObject.set(x, "whole_node", value.asInstanceOf[js.Any])
   }
 }

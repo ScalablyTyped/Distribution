@@ -15,19 +15,15 @@ trait SocketTransport
 }
 object SocketTransport {
   
-  @scala.inline
-  def apply(kind: socket, port: Double): SocketTransport = {
+  inline def apply(kind: socket, port: Double): SocketTransport = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketTransport]
   }
   
-  @scala.inline
-  implicit class SocketTransportMutableBuilder[Self <: SocketTransport] (val x: Self) extends AnyVal {
+  extension [Self <: SocketTransport](x: Self) {
     
-    @scala.inline
-    def setKind(value: socket): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: socket): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

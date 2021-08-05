@@ -27,8 +27,7 @@ trait KmlLineString
 }
 object KmlLineString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -58,16 +57,12 @@ object KmlLineString {
     __obj.asInstanceOf[KmlLineString]
   }
   
-  @scala.inline
-  implicit class KmlLineStringMutableBuilder[Self <: KmlLineString] (val x: Self) extends AnyVal {
+  extension [Self <: KmlLineString](x: Self) {
     
-    @scala.inline
-    def setGetAltitudeOffset(value: () => Double): Self = StObject.set(x, "getAltitudeOffset", js.Any.fromFunction0(value))
+    inline def setGetAltitudeOffset(value: () => Double): Self = StObject.set(x, "getAltitudeOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCoordinates(value: () => KmlCoordArray): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
+    inline def setGetCoordinates(value: () => KmlCoordArray): Self = StObject.set(x, "getCoordinates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAltitudeOffset(value: Double => Unit): Self = StObject.set(x, "setAltitudeOffset", js.Any.fromFunction1(value))
+    inline def setSetAltitudeOffset(value: Double => Unit): Self = StObject.set(x, "setAltitudeOffset", js.Any.fromFunction1(value))
   }
 }

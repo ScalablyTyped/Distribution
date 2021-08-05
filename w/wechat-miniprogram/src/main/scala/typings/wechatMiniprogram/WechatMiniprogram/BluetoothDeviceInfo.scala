@@ -15,19 +15,15 @@ trait BluetoothDeviceInfo extends StObject {
 }
 object BluetoothDeviceInfo {
   
-  @scala.inline
-  def apply(deviceId: String, name: String): BluetoothDeviceInfo = {
+  inline def apply(deviceId: String, name: String): BluetoothDeviceInfo = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothDeviceInfo]
   }
   
-  @scala.inline
-  implicit class BluetoothDeviceInfoMutableBuilder[Self <: BluetoothDeviceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothDeviceInfo](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

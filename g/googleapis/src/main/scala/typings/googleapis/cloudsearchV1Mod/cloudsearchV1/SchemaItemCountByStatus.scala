@@ -18,25 +18,19 @@ trait SchemaItemCountByStatus extends StObject {
 }
 object SchemaItemCountByStatus {
   
-  @scala.inline
-  def apply(): SchemaItemCountByStatus = {
+  inline def apply(): SchemaItemCountByStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaItemCountByStatus]
   }
   
-  @scala.inline
-  implicit class SchemaItemCountByStatusMutableBuilder[Self <: SchemaItemCountByStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaItemCountByStatus](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

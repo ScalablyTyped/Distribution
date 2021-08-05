@@ -13,19 +13,15 @@ trait TargetHTMLElement extends StObject {
 }
 object TargetHTMLElement {
   
-  @scala.inline
-  def apply(originalEvent: typings.std.Event, target: HTMLElement): TargetHTMLElement = {
+  inline def apply(originalEvent: typings.std.Event, target: HTMLElement): TargetHTMLElement = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetHTMLElement]
   }
   
-  @scala.inline
-  implicit class TargetHTMLElementMutableBuilder[Self <: TargetHTMLElement] (val x: Self) extends AnyVal {
+  extension [Self <: TargetHTMLElement](x: Self) {
     
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

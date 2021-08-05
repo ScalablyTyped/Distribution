@@ -14,22 +14,19 @@ trait NavigationTabAction
      with _NavigationAction
 object NavigationTabAction {
   
-  @scala.inline
-  def NavigationBackAction(): typings.reactNavigation.mod.NavigationBackAction = {
+  inline def NavigationBackAction(): typings.reactNavigation.mod.NavigationBackAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/BACK")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationBackAction]
   }
   
-  @scala.inline
-  def NavigationInitAction(): typings.reactNavigation.mod.NavigationInitAction = {
+  inline def NavigationInitAction(): typings.reactNavigation.mod.NavigationInitAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/INIT")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationInitAction]
   }
   
-  @scala.inline
-  def NavigationNavigateAction(routeName: String): typings.reactNavigation.mod.NavigationNavigateAction = {
+  inline def NavigationNavigateAction(routeName: String): typings.reactNavigation.mod.NavigationNavigateAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/NAVIGATE")
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationNavigateAction]

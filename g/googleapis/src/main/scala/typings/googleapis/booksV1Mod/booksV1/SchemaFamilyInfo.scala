@@ -19,25 +19,19 @@ trait SchemaFamilyInfo extends StObject {
 }
 object SchemaFamilyInfo {
   
-  @scala.inline
-  def apply(): SchemaFamilyInfo = {
+  inline def apply(): SchemaFamilyInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFamilyInfo]
   }
   
-  @scala.inline
-  implicit class SchemaFamilyInfoMutableBuilder[Self <: SchemaFamilyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFamilyInfo](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMembership(value: AcquirePermission): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
+    inline def setMembership(value: AcquirePermission): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
+    inline def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
   }
 }

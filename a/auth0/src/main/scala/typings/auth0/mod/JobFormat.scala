@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobFormat extends StObject
 object JobFormat {
   
-  @scala.inline
-  def csv: typings.auth0.auth0Strings.csv = "csv".asInstanceOf[typings.auth0.auth0Strings.csv]
+  inline def csv: typings.auth0.auth0Strings.csv = "csv".asInstanceOf[typings.auth0.auth0Strings.csv]
   
-  @scala.inline
-  def json: typings.auth0.auth0Strings.json = "json".asInstanceOf[typings.auth0.auth0Strings.json]
+  inline def json: typings.auth0.auth0Strings.json = "json".asInstanceOf[typings.auth0.auth0Strings.json]
 }

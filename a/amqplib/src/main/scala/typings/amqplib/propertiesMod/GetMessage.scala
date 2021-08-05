@@ -14,16 +14,13 @@ trait GetMessage
 }
 object GetMessage {
   
-  @scala.inline
-  def apply(content: Buffer, fields: GetMessageFields, properties: MessageProperties): GetMessage = {
+  inline def apply(content: Buffer, fields: GetMessageFields, properties: MessageProperties): GetMessage = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMessage]
   }
   
-  @scala.inline
-  implicit class GetMessageMutableBuilder[Self <: GetMessage] (val x: Self) extends AnyVal {
+  extension [Self <: GetMessage](x: Self) {
     
-    @scala.inline
-    def setFields(value: GetMessageFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: GetMessageFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ADCPROP_AUTORECALC_ENUM extends StObject
 object ADCPROP_AUTORECALC_ENUM {
   
-  @scala.inline
-  def adRecalcAlways: `1` = 1.asInstanceOf[`1`]
+  inline def adRecalcAlways: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adRecalcUpFront: `0` = 0.asInstanceOf[`0`]
+  inline def adRecalcUpFront: `0` = 0.asInstanceOf[`0`]
 }

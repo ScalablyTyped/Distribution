@@ -27,28 +27,21 @@ trait SubscriptionTables extends StObject {
 }
 object SubscriptionTables {
   
-  @scala.inline
-  def apply(name: String, operation: Double): SubscriptionTables = {
+  inline def apply(name: String, operation: Double): SubscriptionTables = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionTables]
   }
   
-  @scala.inline
-  implicit class SubscriptionTablesMutableBuilder[Self <: SubscriptionTables] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionTables](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: Double): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Double): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: js.Array[Operation]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Operation]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: Operation*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Operation*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

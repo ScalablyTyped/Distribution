@@ -23,8 +23,7 @@ trait RenderContextFieldInView
 }
 object RenderContextFieldInView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowCreateFolder: Boolean,
     AllowGridMode: Boolean,
     BasePermissions: StringDictionary[Boolean],
@@ -118,22 +117,16 @@ object RenderContextFieldInView {
     __obj.asInstanceOf[RenderContextFieldInView]
   }
   
-  @scala.inline
-  implicit class RenderContextFieldInViewMutableBuilder[Self <: RenderContextFieldInView] (val x: Self) extends AnyVal {
+  extension [Self <: RenderContextFieldInView](x: Self) {
     
-    @scala.inline
-    def setCurrentFieldSchema(value: FieldSchemaInForm | FieldSchemaInView): Self = StObject.set(x, "CurrentFieldSchema", value.asInstanceOf[js.Any])
+    inline def setCurrentFieldSchema(value: FieldSchemaInForm | FieldSchemaInView): Self = StObject.set(x, "CurrentFieldSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentFieldValue(value: js.Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
+    inline def setCurrentFieldValue(value: js.Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldControlsModes(value: StringDictionary[ClientControlMode]): Self = StObject.set(x, "FieldControlsModes", value.asInstanceOf[js.Any])
+    inline def setFieldControlsModes(value: StringDictionary[ClientControlMode]): Self = StObject.set(x, "FieldControlsModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormContext(value: ClientFormContext): Self = StObject.set(x, "FormContext", value.asInstanceOf[js.Any])
+    inline def setFormContext(value: ClientFormContext): Self = StObject.set(x, "FormContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUniqueId(value: String): Self = StObject.set(x, "FormUniqueId", value.asInstanceOf[js.Any])
+    inline def setFormUniqueId(value: String): Self = StObject.set(x, "FormUniqueId", value.asInstanceOf[js.Any])
   }
 }

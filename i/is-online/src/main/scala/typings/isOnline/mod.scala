@@ -24,10 +24,8 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def apply(options: Options): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def apply(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Boolean]]
+  inline def apply(options: Options): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   @JSImport("is-online", JSImport.Namespace)
   @js.native
@@ -49,26 +47,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIpVersion(value: `4` | `6`): Self = StObject.set(x, "ipVersion", value.asInstanceOf[js.Any])
+      inline def setIpVersion(value: `4` | `6`): Self = StObject.set(x, "ipVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpVersionUndefined: Self = StObject.set(x, "ipVersion", js.undefined)
+      inline def setIpVersionUndefined: Self = StObject.set(x, "ipVersion", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

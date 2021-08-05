@@ -16,11 +16,9 @@ object subselectsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ensureIsTag[Node, ElementNode /* <: Node */](next: CompiledQuery[ElementNode], adapter: Adapter[Node, ElementNode]): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureIsTag")(next.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
+  inline def ensureIsTag[Node, ElementNode /* <: Node */](next: CompiledQuery[ElementNode], adapter: Adapter[Node, ElementNode]): CompiledQuery[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureIsTag")(next.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[CompiledQuery[ElementNode]]
   
-  @scala.inline
-  def getNextSiblings[Node, ElementNode /* <: Node */](elem: Node, adapter: Adapter[Node, ElementNode]): js.Array[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblings")(elem.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[js.Array[ElementNode]]
+  inline def getNextSiblings[Node, ElementNode /* <: Node */](elem: Node, adapter: Adapter[Node, ElementNode]): js.Array[ElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblings")(elem.asInstanceOf[js.Any], adapter.asInstanceOf[js.Any])).asInstanceOf[js.Array[ElementNode]]
   
   @JSImport("css-select/lib/pseudo-selectors/subselects", "subselects")
   @js.native

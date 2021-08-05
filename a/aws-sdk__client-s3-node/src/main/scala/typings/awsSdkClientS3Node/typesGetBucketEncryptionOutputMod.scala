@@ -22,20 +22,16 @@ object typesGetBucketEncryptionOutputMod {
   }
   object GetBucketEncryptionOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketEncryptionOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketEncryptionOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketEncryptionOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketEncryptionOutputMutableBuilder[Self <: GetBucketEncryptionOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketEncryptionOutput](x: Self) {
       
-      @scala.inline
-      def setServerSideEncryptionConfiguration(value: UnmarshalledServerSideEncryptionConfiguration): Self = StObject.set(x, "ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryptionConfiguration(value: UnmarshalledServerSideEncryptionConfiguration): Self = StObject.set(x, "ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "ServerSideEncryptionConfiguration", js.undefined)
+      inline def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "ServerSideEncryptionConfiguration", js.undefined)
     }
   }
 }

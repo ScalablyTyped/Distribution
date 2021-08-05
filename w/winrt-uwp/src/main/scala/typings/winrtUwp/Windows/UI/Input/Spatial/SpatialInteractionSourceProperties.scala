@@ -16,22 +16,17 @@ trait SpatialInteractionSourceProperties extends StObject {
 }
 object SpatialInteractionSourceProperties {
   
-  @scala.inline
-  def apply(sourceLossRisk: js.Any, tryGetLocation: js.Any, tryGetSourceLossMitigationDirection: js.Any): SpatialInteractionSourceProperties = {
+  inline def apply(sourceLossRisk: js.Any, tryGetLocation: js.Any, tryGetSourceLossMitigationDirection: js.Any): SpatialInteractionSourceProperties = {
     val __obj = js.Dynamic.literal(sourceLossRisk = sourceLossRisk.asInstanceOf[js.Any], tryGetLocation = tryGetLocation.asInstanceOf[js.Any], tryGetSourceLossMitigationDirection = tryGetSourceLossMitigationDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialInteractionSourceProperties]
   }
   
-  @scala.inline
-  implicit class SpatialInteractionSourcePropertiesMutableBuilder[Self <: SpatialInteractionSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialInteractionSourceProperties](x: Self) {
     
-    @scala.inline
-    def setSourceLossRisk(value: js.Any): Self = StObject.set(x, "sourceLossRisk", value.asInstanceOf[js.Any])
+    inline def setSourceLossRisk(value: js.Any): Self = StObject.set(x, "sourceLossRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryGetLocation(value: js.Any): Self = StObject.set(x, "tryGetLocation", value.asInstanceOf[js.Any])
+    inline def setTryGetLocation(value: js.Any): Self = StObject.set(x, "tryGetLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryGetSourceLossMitigationDirection(value: js.Any): Self = StObject.set(x, "tryGetSourceLossMitigationDirection", value.asInstanceOf[js.Any])
+    inline def setTryGetSourceLossMitigationDirection(value: js.Any): Self = StObject.set(x, "tryGetSourceLossMitigationDirection", value.asInstanceOf[js.Any])
   }
 }

@@ -28,37 +28,27 @@ trait BoundingBox extends StObject {
 }
 object BoundingBox {
   
-  @scala.inline
-  def apply(): BoundingBox = {
+  inline def apply(): BoundingBox = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoundingBox]
   }
   
-  @scala.inline
-  implicit class BoundingBoxMutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
+  extension [Self <: BoundingBox](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Float): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Float): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Float): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Float): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "Left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "Left", js.undefined)
     
-    @scala.inline
-    def setTop(value: Float): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Float): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "Top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "Top", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Float): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Float): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

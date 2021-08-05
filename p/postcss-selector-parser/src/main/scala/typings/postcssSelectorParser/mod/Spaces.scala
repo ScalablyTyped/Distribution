@@ -12,8 +12,7 @@ trait Spaces
      with /* spaceType */ StringDictionary[js.UndefOr[String | PartialSpaceAround]]
 object Spaces {
   
-  @scala.inline
-  def apply(after: String, before: String): Spaces = {
+  inline def apply(after: String, before: String): Spaces = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spaces]
   }

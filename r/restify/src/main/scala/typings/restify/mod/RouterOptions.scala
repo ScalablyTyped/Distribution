@@ -18,43 +18,31 @@ trait RouterOptions extends StObject {
 }
 object RouterOptions {
   
-  @scala.inline
-  def apply(): RouterOptions = {
+  inline def apply(): RouterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouterOptions]
   }
   
-  @scala.inline
-  implicit class RouterOptionsMutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RouterOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreTrailingSlash(value: Boolean): Self = StObject.set(x, "ignoreTrailingSlash", value.asInstanceOf[js.Any])
+    inline def setIgnoreTrailingSlash(value: Boolean): Self = StObject.set(x, "ignoreTrailingSlash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreTrailingSlashUndefined: Self = StObject.set(x, "ignoreTrailingSlash", js.undefined)
+    inline def setIgnoreTrailingSlashUndefined: Self = StObject.set(x, "ignoreTrailingSlash", js.undefined)
     
-    @scala.inline
-    def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
+    inline def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceNextUndefined: Self = StObject.set(x, "onceNext", js.undefined)
+    inline def setOnceNextUndefined: Self = StObject.set(x, "onceNext", js.undefined)
     
-    @scala.inline
-    def setRegistry(value: RouterRegistryRadix): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: RouterRegistryRadix): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
+    inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
     
-    @scala.inline
-    def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])
+    inline def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictNextUndefined: Self = StObject.set(x, "strictNext", js.undefined)
+    inline def setStrictNextUndefined: Self = StObject.set(x, "strictNext", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait NotStatement extends StObject {
 }
 object NotStatement {
   
-  @scala.inline
-  def apply(Statement: Statement): NotStatement = {
+  inline def apply(Statement: Statement): NotStatement = {
     val __obj = js.Dynamic.literal(Statement = Statement.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotStatement]
   }
   
-  @scala.inline
-  implicit class NotStatementMutableBuilder[Self <: NotStatement] (val x: Self) extends AnyVal {
+  extension [Self <: NotStatement](x: Self) {
     
-    @scala.inline
-    def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
   }
 }

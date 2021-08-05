@@ -18,34 +18,25 @@ trait ChosenInlineResult extends StObject {
 }
 object ChosenInlineResult {
   
-  @scala.inline
-  def apply(from: User, query: String, result_id: String): ChosenInlineResult = {
+  inline def apply(from: User, query: String, result_id: String): ChosenInlineResult = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], result_id = result_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChosenInlineResult]
   }
   
-  @scala.inline
-  implicit class ChosenInlineResultMutableBuilder[Self <: ChosenInlineResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChosenInlineResult](x: Self) {
     
-    @scala.inline
-    def setFrom(value: User): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: User): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInline_message_id(value: String): Self = StObject.set(x, "inline_message_id", value.asInstanceOf[js.Any])
+    inline def setInline_message_id(value: String): Self = StObject.set(x, "inline_message_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInline_message_idUndefined: Self = StObject.set(x, "inline_message_id", js.undefined)
+    inline def setInline_message_idUndefined: Self = StObject.set(x, "inline_message_id", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult_id(value: String): Self = StObject.set(x, "result_id", value.asInstanceOf[js.Any])
+    inline def setResult_id(value: String): Self = StObject.set(x, "result_id", value.asInstanceOf[js.Any])
   }
 }

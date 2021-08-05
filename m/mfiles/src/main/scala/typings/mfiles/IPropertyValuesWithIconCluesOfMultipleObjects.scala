@@ -14,8 +14,7 @@ trait IPropertyValuesWithIconCluesOfMultipleObjects extends StObject {
 }
 object IPropertyValuesWithIconCluesOfMultipleObjects {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IPropertyValuesWithIconCluesOfMultipleObjects,
     Count: Double,
     Item: Double => IPropertyValuesWithIconClues
@@ -24,16 +23,12 @@ object IPropertyValuesWithIconCluesOfMultipleObjects {
     __obj.asInstanceOf[IPropertyValuesWithIconCluesOfMultipleObjects]
   }
   
-  @scala.inline
-  implicit class IPropertyValuesWithIconCluesOfMultipleObjectsMutableBuilder[Self <: IPropertyValuesWithIconCluesOfMultipleObjects] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyValuesWithIconCluesOfMultipleObjects](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IPropertyValuesWithIconCluesOfMultipleObjects): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyValuesWithIconCluesOfMultipleObjects): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IPropertyValuesWithIconClues): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IPropertyValuesWithIconClues): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

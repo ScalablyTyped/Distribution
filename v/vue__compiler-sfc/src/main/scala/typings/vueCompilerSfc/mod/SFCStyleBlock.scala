@@ -23,35 +23,26 @@ trait SFCStyleBlock
 }
 object SFCStyleBlock {
   
-  @scala.inline
-  def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation): SFCStyleBlock = {
+  inline def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation): SFCStyleBlock = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("style")
     __obj.asInstanceOf[SFCStyleBlock]
   }
   
-  @scala.inline
-  implicit class SFCStyleBlockMutableBuilder[Self <: SFCStyleBlock] (val x: Self) extends AnyVal {
+  extension [Self <: SFCStyleBlock](x: Self) {
     
-    @scala.inline
-    def setModule(value: String | Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: String | Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+    inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
-    @scala.inline
-    def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+    inline def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
+    inline def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
     
-    @scala.inline
-    def setType(value: style): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: style): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVars(value: String): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+    inline def setVars(value: String): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
+    inline def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
   }
 }

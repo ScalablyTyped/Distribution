@@ -30,15 +30,13 @@ object global {
   @JSGlobal("App")
   @js.native
   def App: Constructor = js.native
-  @scala.inline
-  def App_=(x: Constructor): Unit = js.Dynamic.global.updateDynamic("App")(x.asInstanceOf[js.Any])
+  inline def App_=(x: Constructor): Unit = js.Dynamic.global.updateDynamic("App")(x.asInstanceOf[js.Any])
   
   /** 注册一个 `behavior`，接受一个 `Object` 类型的参数。*/
   @JSGlobal("Behavior")
   @js.native
   def Behavior: typings.wechatMiniprogram.WechatMiniprogram.Behavior.Constructor = js.native
-  @scala.inline
-  def Behavior_=(x: typings.wechatMiniprogram.WechatMiniprogram.Behavior.Constructor): Unit = js.Dynamic.global.updateDynamic("Behavior")(x.asInstanceOf[js.Any])
+  inline def Behavior_=(x: typings.wechatMiniprogram.WechatMiniprogram.Behavior.Constructor): Unit = js.Dynamic.global.updateDynamic("Behavior")(x.asInstanceOf[js.Any])
   
   /** Component构造器可用于定义组件，调用Component构造器时可以指定组件的属性、数据、方法等。
     *
@@ -52,8 +50,7 @@ object global {
   @JSGlobal("Component")
   @js.native
   def Component: typings.wechatMiniprogram.WechatMiniprogram.Component.Constructor = js.native
-  @scala.inline
-  def Component_=(x: typings.wechatMiniprogram.WechatMiniprogram.Component.Constructor): Unit = js.Dynamic.global.updateDynamic("Component")(x.asInstanceOf[js.Any])
+  inline def Component_=(x: typings.wechatMiniprogram.WechatMiniprogram.Component.Constructor): Unit = js.Dynamic.global.updateDynamic("Component")(x.asInstanceOf[js.Any])
   
   // === Database ===
   object DB {
@@ -94,7 +91,7 @@ object global {
     class CollectionReference protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.CollectionReference {
-      protected def this(name: String, database: typings.wechatMiniprogram.DB.Database) = this()
+      /* private */ def this(name: String, database: typings.wechatMiniprogram.DB.Database) = this()
     }
     
     /**
@@ -102,7 +99,7 @@ object global {
       */
     @JSGlobal("DB.Database")
     @js.native
-    class Database protected ()
+    /* private */ class Database ()
       extends StObject
          with typings.wechatMiniprogram.DB.Database {
       
@@ -237,8 +234,8 @@ object global {
     class DocumentReference protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.DocumentReference {
-      protected def this(docId: String, database: typings.wechatMiniprogram.DB.Database) = this()
-      protected def this(docId: Double, database: typings.wechatMiniprogram.DB.Database) = this()
+      /* private */ def this(docId: String, database: typings.wechatMiniprogram.DB.Database) = this()
+      /* private */ def this(docId: Double, database: typings.wechatMiniprogram.DB.Database) = this()
     }
     
     @JSGlobal("DB.GeoLineString")
@@ -515,21 +512,18 @@ object global {
   @JSGlobal("Page")
   @js.native
   def Page: typings.wechatMiniprogram.WechatMiniprogram.Page.Constructor = js.native
-  @scala.inline
-  def Page_=(x: typings.wechatMiniprogram.WechatMiniprogram.Page.Constructor): Unit = js.Dynamic.global.updateDynamic("Page")(x.asInstanceOf[js.Any])
+  inline def Page_=(x: typings.wechatMiniprogram.WechatMiniprogram.Page.Constructor): Unit = js.Dynamic.global.updateDynamic("Page")(x.asInstanceOf[js.Any])
   
   /** [clearInterval(number intervalID)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/clearInterval.html)
     *
     * 取消由 setInterval 设置的定时器。 */
-  @scala.inline
-  def clearInterval(/** 要取消的定时器的 ID */
+  inline def clearInterval(/** 要取消的定时器的 ID */
   intervalID: Double): Unit = js.Dynamic.global.applyDynamic("clearInterval")(intervalID.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [clearTimeout(number timeoutID)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/clearTimeout.html)
     *
     * 取消由 setTimeout 设置的定时器。 */
-  @scala.inline
-  def clearTimeout(/** 要取消的定时器的 ID */
+  inline def clearTimeout(/** 要取消的定时器的 ID */
   timeoutID: Double): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(timeoutID.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("console")
@@ -539,14 +533,12 @@ object global {
   @JSGlobal("exports")
   @js.native
   def exports: js.Any = js.native
-  @scala.inline
-  def exports_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
+  inline def exports_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
   
   @JSGlobal("getApp")
   @js.native
   def getApp: GetApp = js.native
-  @scala.inline
-  def getApp_=(x: GetApp): Unit = js.Dynamic.global.updateDynamic("getApp")(x.asInstanceOf[js.Any])
+  inline def getApp_=(x: GetApp): Unit = js.Dynamic.global.updateDynamic("getApp")(x.asInstanceOf[js.Any])
   
   /**
     * 获取当前页面栈。数组中第一个元素为首页，最后一个元素为当前页面。
@@ -557,8 +549,7 @@ object global {
   @JSGlobal("getCurrentPages")
   @js.native
   def getCurrentPages: GetCurrentPages = js.native
-  @scala.inline
-  def getCurrentPages_=(x: GetCurrentPages): Unit = js.Dynamic.global.updateDynamic("getCurrentPages")(x.asInstanceOf[js.Any])
+  inline def getCurrentPages_=(x: GetCurrentPages): Unit = js.Dynamic.global.updateDynamic("getCurrentPages")(x.asInstanceOf[js.Any])
   
   object module {
     
@@ -569,28 +560,23 @@ object global {
     @JSGlobal("module.exports")
     @js.native
     def exports: js.Any = js.native
-    @scala.inline
-    def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
+    inline def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def require(module: String): js.Any = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def require(module: String): js.Any = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [number setInterval(function callback, number delay, any rest)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/setInterval.html)
     *
     * 设定一个定时器。按照指定的周期（以毫秒计）来执行注册的回调函数 */
-  @scala.inline
-  def setInterval(/** 回调函数 */
+  inline def setInterval(/** 回调函数 */
   callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def setInterval(
+  inline def setInterval(
     /** 回调函数 */
   callback: js.Function1[/* repeated */ js.Any, js.Any],
     /** 执行回调函数之间的时间间隔，单位 ms。 */
   delay: Double
   ): Double = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setInterval(
+  inline def setInterval(
     /** 回调函数 */
   callback: js.Function1[/* repeated */ js.Any, js.Any],
     /** 执行回调函数之间的时间间隔，单位 ms。 */
@@ -598,8 +584,7 @@ object global {
     /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
   rest: js.Any
   ): Double = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setInterval(
+  inline def setInterval(
     /** 回调函数 */
   callback: js.Function1[/* repeated */ js.Any, js.Any],
     /** 执行回调函数之间的时间间隔，单位 ms。 */
@@ -611,18 +596,15 @@ object global {
   /** [number setTimeout(function callback, number delay, any rest)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/setTimeout.html)
     *
     * 设定一个定时器。在定时到期以后执行注册的回调函数 */
-  @scala.inline
-  def setTimeout(/** 回调函数 */
+  inline def setTimeout(/** 回调函数 */
   callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def setTimeout(
+  inline def setTimeout(
     /** 回调函数 */
   callback: js.Function1[/* repeated */ js.Any, js.Any],
     /** 延迟的时间，函数的调用会在该延迟之后发生，单位 ms。 */
   delay: Double
   ): Double = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setTimeout(
+  inline def setTimeout(
     /** 回调函数 */
   callback: js.Function1[/* repeated */ js.Any, js.Any],
     /** 延迟的时间，函数的调用会在该延迟之后发生，单位 ms。 */
@@ -630,8 +612,7 @@ object global {
     /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
   rest: js.Any
   ): Double = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setTimeout(
+  inline def setTimeout(
     /** 回调函数 */
   callback: js.Function1[/* repeated */ js.Any, js.Any],
     /** 延迟的时间，函数的调用会在该延迟之后发生，单位 ms。 */

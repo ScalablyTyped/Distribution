@@ -24,8 +24,7 @@ trait RuleGroupRuleGroupRulesSourceStatefulRule extends StObject {
 }
 object RuleGroupRuleGroupRulesSourceStatefulRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: Input[String],
     header: Input[RuleGroupRuleGroupRulesSourceStatefulRuleHeader],
     ruleOptions: Input[js.Array[Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]]]
@@ -34,19 +33,14 @@ object RuleGroupRuleGroupRulesSourceStatefulRule {
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatefulRule]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatefulRuleMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatefulRule] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatefulRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: Input[RuleGroupRuleGroupRulesSourceStatefulRuleHeader]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Input[RuleGroupRuleGroupRulesSourceStatefulRuleHeader]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleOptions(value: Input[js.Array[Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]]]): Self = StObject.set(x, "ruleOptions", value.asInstanceOf[js.Any])
+    inline def setRuleOptions(value: Input[js.Array[Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]]]): Self = StObject.set(x, "ruleOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleOptionsVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]*): Self = StObject.set(x, "ruleOptions", js.Array(value :_*))
+    inline def setRuleOptionsVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatefulRuleRuleOption]*): Self = StObject.set(x, "ruleOptions", js.Array(value :_*))
   }
 }

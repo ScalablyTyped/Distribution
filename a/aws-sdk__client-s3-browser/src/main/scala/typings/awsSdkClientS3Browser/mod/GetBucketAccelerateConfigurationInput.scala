@@ -9,8 +9,7 @@ trait GetBucketAccelerateConfigurationInput
      with typings.awsSdkClientS3Browser.typesGetBucketAccelerateConfigurationInputMod.GetBucketAccelerateConfigurationInput
 object GetBucketAccelerateConfigurationInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketAccelerateConfigurationInput = {
+  inline def apply(Bucket: String): GetBucketAccelerateConfigurationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketAccelerateConfigurationInput]
   }

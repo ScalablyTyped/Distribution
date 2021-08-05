@@ -168,29 +168,22 @@ object mod extends Shortcut {
   }
   object MustacheContext {
     
-    @scala.inline
-    def apply(lookup: String => js.Any, push: js.Any => MustacheContext, view: js.Any): MustacheContext = {
+    inline def apply(lookup: String => js.Any, push: js.Any => MustacheContext, view: js.Any): MustacheContext = {
       val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), push = js.Any.fromFunction1(push), view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[MustacheContext]
     }
     
-    @scala.inline
-    implicit class MustacheContextMutableBuilder[Self <: MustacheContext] (val x: Self) extends AnyVal {
+    extension [Self <: MustacheContext](x: Self) {
       
-      @scala.inline
-      def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParentContext(value: MustacheContext): Self = StObject.set(x, "parentContext", value.asInstanceOf[js.Any])
+      inline def setParentContext(value: MustacheContext): Self = StObject.set(x, "parentContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentContextUndefined: Self = StObject.set(x, "parentContext", js.undefined)
+      inline def setParentContextUndefined: Self = StObject.set(x, "parentContext", js.undefined)
       
-      @scala.inline
-      def setPush(value: js.Any => MustacheContext): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: js.Any => MustacheContext): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,8 +227,7 @@ object mod extends Shortcut {
   }
   object MustacheScanner {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       eos: () => Boolean,
       pos: Double,
       scan: RegExp => String,
@@ -247,26 +239,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MustacheScanner]
     }
     
-    @scala.inline
-    implicit class MustacheScannerMutableBuilder[Self <: MustacheScanner] (val x: Self) extends AnyVal {
+    extension [Self <: MustacheScanner](x: Self) {
       
-      @scala.inline
-      def setEos(value: () => Boolean): Self = StObject.set(x, "eos", js.Any.fromFunction0(value))
+      inline def setEos(value: () => Boolean): Self = StObject.set(x, "eos", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScan(value: RegExp => String): Self = StObject.set(x, "scan", js.Any.fromFunction1(value))
+      inline def setScan(value: RegExp => String): Self = StObject.set(x, "scan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScanUntil(value: RegExp => String): Self = StObject.set(x, "scanUntil", js.Any.fromFunction1(value))
+      inline def setScanUntil(value: RegExp => String): Self = StObject.set(x, "scanUntil", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail(value: String): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+      inline def setTail(value: String): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     }
   }
   
@@ -614,23 +599,18 @@ object mod extends Shortcut {
   }
   object TemplateCache {
     
-    @scala.inline
-    def apply(clear: () => Unit, get: String => js.UndefOr[String], set: (String, String) => Unit): TemplateCache = {
+    inline def apply(clear: () => Unit, get: String => js.UndefOr[String], set: (String, String) => Unit): TemplateCache = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[TemplateCache]
     }
     
-    @scala.inline
-    implicit class TemplateCacheMutableBuilder[Self <: TemplateCache] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateCache](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: String => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   

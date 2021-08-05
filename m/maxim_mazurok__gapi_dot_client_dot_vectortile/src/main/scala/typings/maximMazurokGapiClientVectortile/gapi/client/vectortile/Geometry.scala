@@ -20,49 +20,35 @@ trait Geometry extends StObject {
 }
 object Geometry {
   
-  @scala.inline
-  def apply(): Geometry = {
+  inline def apply(): Geometry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Geometry]
   }
   
-  @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+  extension [Self <: Geometry](x: Self) {
     
-    @scala.inline
-    def setAreas(value: js.Array[Area]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
+    inline def setAreas(value: js.Array[Area]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreasUndefined: Self = StObject.set(x, "areas", js.undefined)
+    inline def setAreasUndefined: Self = StObject.set(x, "areas", js.undefined)
     
-    @scala.inline
-    def setAreasVarargs(value: Area*): Self = StObject.set(x, "areas", js.Array(value :_*))
+    inline def setAreasVarargs(value: Area*): Self = StObject.set(x, "areas", js.Array(value :_*))
     
-    @scala.inline
-    def setExtrudedAreas(value: js.Array[ExtrudedArea]): Self = StObject.set(x, "extrudedAreas", value.asInstanceOf[js.Any])
+    inline def setExtrudedAreas(value: js.Array[ExtrudedArea]): Self = StObject.set(x, "extrudedAreas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtrudedAreasUndefined: Self = StObject.set(x, "extrudedAreas", js.undefined)
+    inline def setExtrudedAreasUndefined: Self = StObject.set(x, "extrudedAreas", js.undefined)
     
-    @scala.inline
-    def setExtrudedAreasVarargs(value: ExtrudedArea*): Self = StObject.set(x, "extrudedAreas", js.Array(value :_*))
+    inline def setExtrudedAreasVarargs(value: ExtrudedArea*): Self = StObject.set(x, "extrudedAreas", js.Array(value :_*))
     
-    @scala.inline
-    def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
-    @scala.inline
-    def setModeledVolumes(value: js.Array[ModeledVolume]): Self = StObject.set(x, "modeledVolumes", value.asInstanceOf[js.Any])
+    inline def setModeledVolumes(value: js.Array[ModeledVolume]): Self = StObject.set(x, "modeledVolumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeledVolumesUndefined: Self = StObject.set(x, "modeledVolumes", js.undefined)
+    inline def setModeledVolumesUndefined: Self = StObject.set(x, "modeledVolumes", js.undefined)
     
-    @scala.inline
-    def setModeledVolumesVarargs(value: ModeledVolume*): Self = StObject.set(x, "modeledVolumes", js.Array(value :_*))
+    inline def setModeledVolumesVarargs(value: ModeledVolume*): Self = StObject.set(x, "modeledVolumes", js.Array(value :_*))
   }
 }

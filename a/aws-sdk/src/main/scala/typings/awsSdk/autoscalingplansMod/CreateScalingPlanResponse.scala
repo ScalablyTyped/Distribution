@@ -13,16 +13,13 @@ trait CreateScalingPlanResponse extends StObject {
 }
 object CreateScalingPlanResponse {
   
-  @scala.inline
-  def apply(ScalingPlanVersion: ScalingPlanVersion): CreateScalingPlanResponse = {
+  inline def apply(ScalingPlanVersion: ScalingPlanVersion): CreateScalingPlanResponse = {
     val __obj = js.Dynamic.literal(ScalingPlanVersion = ScalingPlanVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateScalingPlanResponse]
   }
   
-  @scala.inline
-  implicit class CreateScalingPlanResponseMutableBuilder[Self <: CreateScalingPlanResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateScalingPlanResponse](x: Self) {
     
-    @scala.inline
-    def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
+    inline def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
   }
 }

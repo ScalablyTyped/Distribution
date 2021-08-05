@@ -13,22 +13,17 @@ trait DescribeApplicationsMessage extends StObject {
 }
 object DescribeApplicationsMessage {
   
-  @scala.inline
-  def apply(): DescribeApplicationsMessage = {
+  inline def apply(): DescribeApplicationsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeApplicationsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeApplicationsMessageMutableBuilder[Self <: DescribeApplicationsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeApplicationsMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationNames(value: ApplicationNamesList): Self = StObject.set(x, "ApplicationNames", value.asInstanceOf[js.Any])
+    inline def setApplicationNames(value: ApplicationNamesList): Self = StObject.set(x, "ApplicationNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNamesUndefined: Self = StObject.set(x, "ApplicationNames", js.undefined)
+    inline def setApplicationNamesUndefined: Self = StObject.set(x, "ApplicationNames", js.undefined)
     
-    @scala.inline
-    def setApplicationNamesVarargs(value: ApplicationName*): Self = StObject.set(x, "ApplicationNames", js.Array(value :_*))
+    inline def setApplicationNamesVarargs(value: ApplicationName*): Self = StObject.set(x, "ApplicationNames", js.Array(value :_*))
   }
 }

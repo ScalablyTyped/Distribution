@@ -26,8 +26,7 @@ trait Session extends StObject {
 }
 object Session {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getActiveUser: () => User,
     getActiveUserLocale: () => String,
     getEffectiveUser: () => User,
@@ -40,28 +39,20 @@ object Session {
     __obj.asInstanceOf[Session]
   }
   
-  @scala.inline
-  implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+  extension [Self <: Session](x: Self) {
     
-    @scala.inline
-    def setGetActiveUser(value: () => User): Self = StObject.set(x, "getActiveUser", js.Any.fromFunction0(value))
+    inline def setGetActiveUser(value: () => User): Self = StObject.set(x, "getActiveUser", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveUserLocale(value: () => String): Self = StObject.set(x, "getActiveUserLocale", js.Any.fromFunction0(value))
+    inline def setGetActiveUserLocale(value: () => String): Self = StObject.set(x, "getActiveUserLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEffectiveUser(value: () => User): Self = StObject.set(x, "getEffectiveUser", js.Any.fromFunction0(value))
+    inline def setGetEffectiveUser(value: () => User): Self = StObject.set(x, "getEffectiveUser", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScriptTimeZone(value: () => String): Self = StObject.set(x, "getScriptTimeZone", js.Any.fromFunction0(value))
+    inline def setGetScriptTimeZone(value: () => String): Self = StObject.set(x, "getScriptTimeZone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTemporaryActiveUserKey(value: () => String): Self = StObject.set(x, "getTemporaryActiveUserKey", js.Any.fromFunction0(value))
+    inline def setGetTemporaryActiveUserKey(value: () => String): Self = StObject.set(x, "getTemporaryActiveUserKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTimeZone(value: () => String): Self = StObject.set(x, "getTimeZone", js.Any.fromFunction0(value))
+    inline def setGetTimeZone(value: () => String): Self = StObject.set(x, "getTimeZone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUser(value: () => User): Self = StObject.set(x, "getUser", js.Any.fromFunction0(value))
+    inline def setGetUser(value: () => User): Self = StObject.set(x, "getUser", js.Any.fromFunction0(value))
   }
 }

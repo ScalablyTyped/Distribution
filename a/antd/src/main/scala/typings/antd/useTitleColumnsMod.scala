@@ -12,6 +12,5 @@ object useTitleColumnsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[RecordType](columnTitleProps: ColumnTitleProps[RecordType]): js.Array[TransformColumns[RecordType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(columnTitleProps.asInstanceOf[js.Any]).asInstanceOf[js.Array[TransformColumns[RecordType]]]
+  inline def default[RecordType](columnTitleProps: ColumnTitleProps[RecordType]): js.Array[TransformColumns[RecordType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(columnTitleProps.asInstanceOf[js.Any]).asInstanceOf[js.Array[TransformColumns[RecordType]]]
 }

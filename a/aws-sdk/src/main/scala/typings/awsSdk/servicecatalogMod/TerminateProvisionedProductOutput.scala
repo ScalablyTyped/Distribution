@@ -13,19 +13,15 @@ trait TerminateProvisionedProductOutput extends StObject {
 }
 object TerminateProvisionedProductOutput {
   
-  @scala.inline
-  def apply(): TerminateProvisionedProductOutput = {
+  inline def apply(): TerminateProvisionedProductOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminateProvisionedProductOutput]
   }
   
-  @scala.inline
-  implicit class TerminateProvisionedProductOutputMutableBuilder[Self <: TerminateProvisionedProductOutput] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateProvisionedProductOutput](x: Self) {
     
-    @scala.inline
-    def setRecordDetail(value: RecordDetail): Self = StObject.set(x, "RecordDetail", value.asInstanceOf[js.Any])
+    inline def setRecordDetail(value: RecordDetail): Self = StObject.set(x, "RecordDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordDetailUndefined: Self = StObject.set(x, "RecordDetail", js.undefined)
+    inline def setRecordDetailUndefined: Self = StObject.set(x, "RecordDetail", js.undefined)
   }
 }

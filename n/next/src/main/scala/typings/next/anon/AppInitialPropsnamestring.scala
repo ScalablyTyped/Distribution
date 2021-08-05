@@ -14,16 +14,13 @@ trait AppInitialPropsnamestring
 }
 object AppInitialPropsnamestring {
   
-  @scala.inline
-  def apply(pageProps: js.Any): AppInitialPropsnamestring = {
+  inline def apply(pageProps: js.Any): AppInitialPropsnamestring = {
     val __obj = js.Dynamic.literal(pageProps = pageProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppInitialPropsnamestring]
   }
   
-  @scala.inline
-  implicit class AppInitialPropsnamestringMutableBuilder[Self <: AppInitialPropsnamestring] (val x: Self) extends AnyVal {
+  extension [Self <: AppInitialPropsnamestring](x: Self) {
     
-    @scala.inline
-    def setPageProps(value: js.Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
+    inline def setPageProps(value: js.Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
   }
 }

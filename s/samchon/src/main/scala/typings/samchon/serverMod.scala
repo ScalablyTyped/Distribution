@@ -18,7 +18,7 @@ object serverMod {
     /**
       * @hidden
       */
-    var _Handle_connect: js.Any = js.native
+    /* private */ var _Handle_connect: js.Any = js.native
     
     /**
       * @inheritdoc
@@ -56,7 +56,7 @@ object serverMod {
     /**
       * @hidden
       */
-    var net_driver_ : js.Any = js.native
+    /* private */ var net_driver_ : js.Any = js.native
     
     /**
       * Open server.

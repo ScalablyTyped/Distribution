@@ -22,8 +22,7 @@ trait CallHierarchyItem extends StObject {
 }
 object CallHierarchyItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     file: java.lang.String,
     kind: ScriptElementKind,
     name: java.lang.String,
@@ -34,34 +33,24 @@ object CallHierarchyItem {
     __obj.asInstanceOf[CallHierarchyItem]
   }
   
-  @scala.inline
-  implicit class CallHierarchyItemMutableBuilder[Self <: CallHierarchyItem] (val x: Self) extends AnyVal {
+  extension [Self <: CallHierarchyItem](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: java.lang.String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: java.lang.String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
-    @scala.inline
-    def setFile(value: java.lang.String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: java.lang.String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
+    inline def setKindModifiers(value: java.lang.String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindModifiersUndefined: Self = StObject.set(x, "kindModifiers", js.undefined)
+    inline def setKindModifiersUndefined: Self = StObject.set(x, "kindModifiers", js.undefined)
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionSpan(value: TextSpan): Self = StObject.set(x, "selectionSpan", value.asInstanceOf[js.Any])
+    inline def setSelectionSpan(value: TextSpan): Self = StObject.set(x, "selectionSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpan(value: TextSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: TextSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
   }
 }

@@ -56,82 +56,58 @@ object internal {
   }
   object NetworkConfigBase {
     
-    @scala.inline
-    def apply[M /* <: ManagedObject */, IF /* <: InterfaceType */, OF /* <: ObjectFunction */](): NetworkConfigBase[M, IF, OF] = {
+    inline def apply[M /* <: ManagedObject */, IF /* <: InterfaceType */, OF /* <: ObjectFunction */](): NetworkConfigBase[M, IF, OF] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NetworkConfigBase[M, IF, OF]]
     }
     
-    @scala.inline
-    implicit class NetworkConfigBaseMutableBuilder[Self <: NetworkConfigBase[?, ?, ?], M /* <: ManagedObject */, IF /* <: InterfaceType */, OF /* <: ObjectFunction */] (val x: Self & (NetworkConfigBase[M, IF, OF])) extends AnyVal {
+    extension [Self <: NetworkConfigBase[?, ?, ?], M /* <: ManagedObject */, IF /* <: InterfaceType */, OF /* <: ObjectFunction */](x: Self & (NetworkConfigBase[M, IF, OF])) {
       
-      @scala.inline
-      def setCellular(value: CellularProperties[M] | CellularBase): Self = StObject.set(x, "Cellular", value.asInstanceOf[js.Any])
+      inline def setCellular(value: CellularProperties[M] | CellularBase): Self = StObject.set(x, "Cellular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellularUndefined: Self = StObject.set(x, "Cellular", js.undefined)
+      inline def setCellularUndefined: Self = StObject.set(x, "Cellular", js.undefined)
       
-      @scala.inline
-      def setEthernet(value: EthernetProperties[M] | Authentication): Self = StObject.set(x, "Ethernet", value.asInstanceOf[js.Any])
+      inline def setEthernet(value: EthernetProperties[M] | Authentication): Self = StObject.set(x, "Ethernet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEthernetUndefined: Self = StObject.set(x, "Ethernet", js.undefined)
+      inline def setEthernetUndefined: Self = StObject.set(x, "Ethernet", js.undefined)
       
-      @scala.inline
-      def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+      inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGUIDUndefined: Self = StObject.set(x, "GUID", js.undefined)
+      inline def setGUIDUndefined: Self = StObject.set(x, "GUID", js.undefined)
       
-      @scala.inline
-      def setIPAddressConfigType(value: IPConfigType | ManagedIPConfigType): Self = StObject.set(x, "IPAddressConfigType", value.asInstanceOf[js.Any])
+      inline def setIPAddressConfigType(value: IPConfigType | ManagedIPConfigType): Self = StObject.set(x, "IPAddressConfigType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPAddressConfigTypeUndefined: Self = StObject.set(x, "IPAddressConfigType", js.undefined)
+      inline def setIPAddressConfigTypeUndefined: Self = StObject.set(x, "IPAddressConfigType", js.undefined)
       
-      @scala.inline
-      def setName(value: String | ManagedDOMString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | ManagedDOMString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameServersConfigType(value: IPConfigType | ManagedIPConfigType): Self = StObject.set(x, "NameServersConfigType", value.asInstanceOf[js.Any])
+      inline def setNameServersConfigType(value: IPConfigType | ManagedIPConfigType): Self = StObject.set(x, "NameServersConfigType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameServersConfigTypeUndefined: Self = StObject.set(x, "NameServersConfigType", js.undefined)
+      inline def setNameServersConfigTypeUndefined: Self = StObject.set(x, "NameServersConfigType", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
       
-      @scala.inline
-      def setPriority(value: integer | ManagedLong): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: integer | ManagedLong): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
       
-      @scala.inline
-      def setType(value: NetworkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: NetworkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
       
-      @scala.inline
-      def setVPN(value: (VPNProperties[M, Boolean | ManagedBoolean, String | ManagedDOMString]) | Type): Self = StObject.set(x, "VPN", value.asInstanceOf[js.Any])
+      inline def setVPN(value: (VPNProperties[M, Boolean | ManagedBoolean, String | ManagedDOMString]) | Type): Self = StObject.set(x, "VPN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVPNUndefined: Self = StObject.set(x, "VPN", js.undefined)
+      inline def setVPNUndefined: Self = StObject.set(x, "VPN", js.undefined)
       
-      @scala.inline
-      def setWiFi(
+      inline def setWiFi(
         value: (WiFiProperties[M, OF, Boolean | ManagedBoolean, String | ManagedDOMString, integer | ManagedLong]) | (WiFiPropertiesBase[unmanaged, String | ManagedDOMString])
       ): Self = StObject.set(x, "WiFi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWiFiUndefined: Self = StObject.set(x, "WiFi", js.undefined)
+      inline def setWiFiUndefined: Self = StObject.set(x, "WiFi", js.undefined)
       
-      @scala.inline
-      def setWiMAX(value: (WiMAXProperties[M, Boolean | ManagedBoolean]) | SignalStrength): Self = StObject.set(x, "WiMAX", value.asInstanceOf[js.Any])
+      inline def setWiMAX(value: (WiMAXProperties[M, Boolean | ManagedBoolean]) | SignalStrength): Self = StObject.set(x, "WiMAX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWiMAXUndefined: Self = StObject.set(x, "WiMAX", js.undefined)
+      inline def setWiMAXUndefined: Self = StObject.set(x, "WiMAX", js.undefined)
     }
   }
   
@@ -143,13 +119,10 @@ object internal {
   trait ObjectFunction extends StObject
   object ObjectFunction {
     
-    @scala.inline
-    def getter: typings.chromeApps.chromeAppsStrings.getter = "getter".asInstanceOf[typings.chromeApps.chromeAppsStrings.getter]
+    inline def getter: typings.chromeApps.chromeAppsStrings.getter = "getter".asInstanceOf[typings.chromeApps.chromeAppsStrings.getter]
     
-    @scala.inline
-    def setter: typings.chromeApps.chromeAppsStrings.setter = "setter".asInstanceOf[typings.chromeApps.chromeAppsStrings.setter]
+    inline def setter: typings.chromeApps.chromeAppsStrings.setter = "setter".asInstanceOf[typings.chromeApps.chromeAppsStrings.setter]
     
-    @scala.inline
-    def unknown: unknown__ = "unknown".asInstanceOf[unknown__]
+    inline def unknown: unknown__ = "unknown".asInstanceOf[unknown__]
   }
 }

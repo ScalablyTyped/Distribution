@@ -17,31 +17,23 @@ trait HttpCacheControlResponseHeader extends StObject {
 }
 object HttpCacheControlResponseHeader {
   
-  @scala.inline
-  def apply(): HttpCacheControlResponseHeader = {
+  inline def apply(): HttpCacheControlResponseHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpCacheControlResponseHeader]
   }
   
-  @scala.inline
-  implicit class HttpCacheControlResponseHeaderMutableBuilder[Self <: HttpCacheControlResponseHeader] (val x: Self) extends AnyVal {
+  extension [Self <: HttpCacheControlResponseHeader](x: Self) {
     
-    @scala.inline
-    def setAge(value: String): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    inline def setAge(value: String): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
+    inline def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
     
-    @scala.inline
-    def setDirective(value: String): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
+    inline def setDirective(value: String): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
+    inline def setDirectiveUndefined: Self = StObject.set(x, "directive", js.undefined)
     
-    @scala.inline
-    def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
   }
 }

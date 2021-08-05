@@ -67,8 +67,7 @@ trait CommandsPermissions extends StObject {
 }
 object CommandsPermissions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authEnabled: Permission,
     chmodFile: ObjectOrStatePermission,
     disconnect: Permission,
@@ -103,94 +102,64 @@ object CommandsPermissions {
     __obj.asInstanceOf[CommandsPermissions]
   }
   
-  @scala.inline
-  implicit class CommandsPermissionsMutableBuilder[Self <: CommandsPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: CommandsPermissions](x: Self) {
     
-    @scala.inline
-    def setAuthEnabled(value: Permission): Self = StObject.set(x, "authEnabled", value.asInstanceOf[js.Any])
+    inline def setAuthEnabled(value: Permission): Self = StObject.set(x, "authEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChmodFile(value: ObjectOrStatePermission): Self = StObject.set(x, "chmodFile", value.asInstanceOf[js.Any])
+    inline def setChmodFile(value: ObjectOrStatePermission): Self = StObject.set(x, "chmodFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisconnect(value: Permission): Self = StObject.set(x, "disconnect", value.asInstanceOf[js.Any])
+    inline def setDisconnect(value: Permission): Self = StObject.set(x, "disconnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetObject(value: ObjectOrStatePermission): Self = StObject.set(x, "getObject", value.asInstanceOf[js.Any])
+    inline def setGetObject(value: ObjectOrStatePermission): Self = StObject.set(x, "getObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetObjectView(value: ObjectOrStatePermission): Self = StObject.set(x, "getObjectView", value.asInstanceOf[js.Any])
+    inline def setGetObjectView(value: ObjectOrStatePermission): Self = StObject.set(x, "getObjectView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetObjects(value: ObjectOrStatePermission): Self = StObject.set(x, "getObjects", value.asInstanceOf[js.Any])
+    inline def setGetObjects(value: ObjectOrStatePermission): Self = StObject.set(x, "getObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetState(value: ObjectOrStatePermission): Self = StObject.set(x, "getState", value.asInstanceOf[js.Any])
+    inline def setGetState(value: ObjectOrStatePermission): Self = StObject.set(x, "getState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetStateHistory(value: ObjectOrStatePermission): Self = StObject.set(x, "getStateHistory", value.asInstanceOf[js.Any])
+    inline def setGetStateHistory(value: ObjectOrStatePermission): Self = StObject.set(x, "getStateHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetStates(value: ObjectOrStatePermission): Self = StObject.set(x, "getStates", value.asInstanceOf[js.Any])
+    inline def setGetStates(value: ObjectOrStatePermission): Self = StObject.set(x, "getStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUserPermissions(value: ObjectOrStatePermission): Self = StObject.set(x, "getUserPermissions", value.asInstanceOf[js.Any])
+    inline def setGetUserPermissions(value: ObjectOrStatePermission): Self = StObject.set(x, "getUserPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetVersion(value: Permission): Self = StObject.set(x, "getVersion", value.asInstanceOf[js.Any])
+    inline def setGetVersion(value: Permission): Self = StObject.set(x, "getVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpGet(value: OtherPermission): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
+    inline def setHttpGet(value: OtherPermission): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPermissions(value: Permission): Self = StObject.set(x, "listPermissions", value.asInstanceOf[js.Any])
+    inline def setListPermissions(value: Permission): Self = StObject.set(x, "listPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMkdir(value: ObjectOrStatePermission): Self = StObject.set(x, "mkdir", value.asInstanceOf[js.Any])
+    inline def setMkdir(value: ObjectOrStatePermission): Self = StObject.set(x, "mkdir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadDir(value: ObjectOrStatePermission): Self = StObject.set(x, "readDir", value.asInstanceOf[js.Any])
+    inline def setReadDir(value: ObjectOrStatePermission): Self = StObject.set(x, "readDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadFile(value: ObjectOrStatePermission): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
+    inline def setReadFile(value: ObjectOrStatePermission): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadFile64(value: ObjectOrStatePermission): Self = StObject.set(x, "readFile64", value.asInstanceOf[js.Any])
+    inline def setReadFile64(value: ObjectOrStatePermission): Self = StObject.set(x, "readFile64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRename(value: ObjectOrStatePermission): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+    inline def setRename(value: ObjectOrStatePermission): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendTo(value: OtherPermission): Self = StObject.set(x, "sendTo", value.asInstanceOf[js.Any])
+    inline def setSendTo(value: OtherPermission): Self = StObject.set(x, "sendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendToHost(value: OtherPermission): Self = StObject.set(x, "sendToHost", value.asInstanceOf[js.Any])
+    inline def setSendToHost(value: OtherPermission): Self = StObject.set(x, "sendToHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetObject(value: ObjectOrStatePermission): Self = StObject.set(x, "setObject", value.asInstanceOf[js.Any])
+    inline def setSetObject(value: ObjectOrStatePermission): Self = StObject.set(x, "setObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetState(value: ObjectOrStatePermission): Self = StObject.set(x, "setState", value.asInstanceOf[js.Any])
+    inline def setSetState(value: ObjectOrStatePermission): Self = StObject.set(x, "setState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribe(value: ObjectOrStatePermission): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
+    inline def setSubscribe(value: ObjectOrStatePermission): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribeObjects(value: ObjectOrStatePermission): Self = StObject.set(x, "subscribeObjects", value.asInstanceOf[js.Any])
+    inline def setSubscribeObjects(value: ObjectOrStatePermission): Self = StObject.set(x, "subscribeObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlink(value: ObjectOrStatePermission): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
+    inline def setUnlink(value: ObjectOrStatePermission): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsubscribe(value: ObjectOrStatePermission): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
+    inline def setUnsubscribe(value: ObjectOrStatePermission): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsubscribeObjects(value: ObjectOrStatePermission): Self = StObject.set(x, "unsubscribeObjects", value.asInstanceOf[js.Any])
+    inline def setUnsubscribeObjects(value: ObjectOrStatePermission): Self = StObject.set(x, "unsubscribeObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteFile(value: ObjectOrStatePermission): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
+    inline def setWriteFile(value: ObjectOrStatePermission): Self = StObject.set(x, "writeFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteFile64(value: ObjectOrStatePermission): Self = StObject.set(x, "writeFile64", value.asInstanceOf[js.Any])
+    inline def setWriteFile64(value: ObjectOrStatePermission): Self = StObject.set(x, "writeFile64", value.asInstanceOf[js.Any])
   }
 }

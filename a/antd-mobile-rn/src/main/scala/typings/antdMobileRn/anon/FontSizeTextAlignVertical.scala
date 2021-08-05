@@ -14,22 +14,17 @@ trait FontSizeTextAlignVertical extends StObject {
 }
 object FontSizeTextAlignVertical {
   
-  @scala.inline
-  def apply(color: String, fontSize: Double, textAlignVertical: String): FontSizeTextAlignVertical = {
+  inline def apply(color: String, fontSize: Double, textAlignVertical: String): FontSizeTextAlignVertical = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], textAlignVertical = textAlignVertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSizeTextAlignVertical]
   }
   
-  @scala.inline
-  implicit class FontSizeTextAlignVerticalMutableBuilder[Self <: FontSizeTextAlignVertical] (val x: Self) extends AnyVal {
+  extension [Self <: FontSizeTextAlignVertical](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignVertical(value: String): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
+    inline def setTextAlignVertical(value: String): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
   }
 }

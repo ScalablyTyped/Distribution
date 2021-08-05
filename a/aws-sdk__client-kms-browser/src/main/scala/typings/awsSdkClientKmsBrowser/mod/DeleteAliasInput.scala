@@ -9,8 +9,7 @@ trait DeleteAliasInput
      with typings.awsSdkClientKmsBrowser.typesDeleteAliasInputMod.DeleteAliasInput
 object DeleteAliasInput {
   
-  @scala.inline
-  def apply(AliasName: String): DeleteAliasInput = {
+  inline def apply(AliasName: String): DeleteAliasInput = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAliasInput]
   }

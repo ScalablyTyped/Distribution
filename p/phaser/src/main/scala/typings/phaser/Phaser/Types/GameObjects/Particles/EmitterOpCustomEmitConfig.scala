@@ -21,16 +21,13 @@ trait EmitterOpCustomEmitConfig
 }
 object EmitterOpCustomEmitConfig {
   
-  @scala.inline
-  def apply(onEmit: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): EmitterOpCustomEmitConfig = {
+  inline def apply(onEmit: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): EmitterOpCustomEmitConfig = {
     val __obj = js.Dynamic.literal(onEmit = js.Any.fromFunction3(onEmit))
     __obj.asInstanceOf[EmitterOpCustomEmitConfig]
   }
   
-  @scala.inline
-  implicit class EmitterOpCustomEmitConfigMutableBuilder[Self <: EmitterOpCustomEmitConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EmitterOpCustomEmitConfig](x: Self) {
     
-    @scala.inline
-    def setOnEmit(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "onEmit", js.Any.fromFunction3(value))
+    inline def setOnEmit(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "onEmit", js.Any.fromFunction3(value))
   }
 }

@@ -96,8 +96,7 @@ trait FindTypes
 }
 object FindTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `1`: RoomPosition,
     `10`: RoomPosition,
     `101`: Creep,
@@ -159,91 +158,62 @@ object FindTypes {
     __obj.asInstanceOf[FindTypes]
   }
   
-  @scala.inline
-  implicit class FindTypesMutableBuilder[Self <: FindTypes] (val x: Self) extends AnyVal {
+  extension [Self <: FindTypes](x: Self) {
     
-    @scala.inline
-    def set1(value: RoomPosition): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: RoomPosition): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set10(value: RoomPosition): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
+    inline def set10(value: RoomPosition): Self = StObject.set(x, "10", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set101(value: Creep): Self = StObject.set(x, "101", value.asInstanceOf[js.Any])
+    inline def set101(value: Creep): Self = StObject.set(x, "101", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set102(value: Creep): Self = StObject.set(x, "102", value.asInstanceOf[js.Any])
+    inline def set102(value: Creep): Self = StObject.set(x, "102", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set103(value: Creep): Self = StObject.set(x, "103", value.asInstanceOf[js.Any])
+    inline def set103(value: Creep): Self = StObject.set(x, "103", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set104(value: Source): Self = StObject.set(x, "104", value.asInstanceOf[js.Any])
+    inline def set104(value: Source): Self = StObject.set(x, "104", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set105(value: Source): Self = StObject.set(x, "105", value.asInstanceOf[js.Any])
+    inline def set105(value: Source): Self = StObject.set(x, "105", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set106(value: Resource[ResourceConstant]): Self = StObject.set(x, "106", value.asInstanceOf[js.Any])
+    inline def set106(value: Resource[ResourceConstant]): Self = StObject.set(x, "106", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set107(value: AnyStructure): Self = StObject.set(x, "107", value.asInstanceOf[js.Any])
+    inline def set107(value: AnyStructure): Self = StObject.set(x, "107", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set108(value: AnyOwnedStructure): Self = StObject.set(x, "108", value.asInstanceOf[js.Any])
+    inline def set108(value: AnyOwnedStructure): Self = StObject.set(x, "108", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set109(value: AnyOwnedStructure): Self = StObject.set(x, "109", value.asInstanceOf[js.Any])
+    inline def set109(value: AnyOwnedStructure): Self = StObject.set(x, "109", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set110(value: Flag): Self = StObject.set(x, "110", value.asInstanceOf[js.Any])
+    inline def set110(value: Flag): Self = StObject.set(x, "110", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set111(value: ConstructionSite[BuildableStructureConstant]): Self = StObject.set(x, "111", value.asInstanceOf[js.Any])
+    inline def set111(value: ConstructionSite[BuildableStructureConstant]): Self = StObject.set(x, "111", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set112(value: StructureSpawn): Self = StObject.set(x, "112", value.asInstanceOf[js.Any])
+    inline def set112(value: StructureSpawn): Self = StObject.set(x, "112", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set113(value: StructureSpawn): Self = StObject.set(x, "113", value.asInstanceOf[js.Any])
+    inline def set113(value: StructureSpawn): Self = StObject.set(x, "113", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set114(value: ConstructionSite[BuildableStructureConstant]): Self = StObject.set(x, "114", value.asInstanceOf[js.Any])
+    inline def set114(value: ConstructionSite[BuildableStructureConstant]): Self = StObject.set(x, "114", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set115(value: ConstructionSite[BuildableStructureConstant]): Self = StObject.set(x, "115", value.asInstanceOf[js.Any])
+    inline def set115(value: ConstructionSite[BuildableStructureConstant]): Self = StObject.set(x, "115", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set116(value: Mineral[MineralConstant]): Self = StObject.set(x, "116", value.asInstanceOf[js.Any])
+    inline def set116(value: Mineral[MineralConstant]): Self = StObject.set(x, "116", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set117(value: Nuke): Self = StObject.set(x, "117", value.asInstanceOf[js.Any])
+    inline def set117(value: Nuke): Self = StObject.set(x, "117", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set118(value: Tombstone): Self = StObject.set(x, "118", value.asInstanceOf[js.Any])
+    inline def set118(value: Tombstone): Self = StObject.set(x, "118", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set119(value: PowerCreep): Self = StObject.set(x, "119", value.asInstanceOf[js.Any])
+    inline def set119(value: PowerCreep): Self = StObject.set(x, "119", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set120(value: PowerCreep): Self = StObject.set(x, "120", value.asInstanceOf[js.Any])
+    inline def set120(value: PowerCreep): Self = StObject.set(x, "120", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set121(value: PowerCreep): Self = StObject.set(x, "121", value.asInstanceOf[js.Any])
+    inline def set121(value: PowerCreep): Self = StObject.set(x, "121", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set122(value: Deposit): Self = StObject.set(x, "122", value.asInstanceOf[js.Any])
+    inline def set122(value: Deposit): Self = StObject.set(x, "122", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set123(value: Ruin): Self = StObject.set(x, "123", value.asInstanceOf[js.Any])
+    inline def set123(value: Ruin): Self = StObject.set(x, "123", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set3(value: RoomPosition): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+    inline def set3(value: RoomPosition): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set5(value: RoomPosition): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+    inline def set5(value: RoomPosition): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set7(value: RoomPosition): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+    inline def set7(value: RoomPosition): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
   }
 }

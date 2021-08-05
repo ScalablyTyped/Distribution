@@ -12,25 +12,19 @@ trait RTCRtcpParameters extends StObject {
 }
 object RTCRtcpParameters {
   
-  @scala.inline
-  def apply(): RTCRtcpParameters = {
+  inline def apply(): RTCRtcpParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCRtcpParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtcpParametersMutableBuilder[Self <: RTCRtcpParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtcpParameters](x: Self) {
     
-    @scala.inline
-    def setCname(value: java.lang.String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
+    inline def setCname(value: java.lang.String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
+    inline def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
     
-    @scala.inline
-    def setReducedSize(value: scala.Boolean): Self = StObject.set(x, "reducedSize", value.asInstanceOf[js.Any])
+    inline def setReducedSize(value: scala.Boolean): Self = StObject.set(x, "reducedSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReducedSizeUndefined: Self = StObject.set(x, "reducedSize", js.undefined)
+    inline def setReducedSizeUndefined: Self = StObject.set(x, "reducedSize", js.undefined)
   }
 }

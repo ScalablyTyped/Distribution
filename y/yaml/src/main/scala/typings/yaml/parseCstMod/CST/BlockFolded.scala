@@ -17,8 +17,7 @@ trait BlockFolded
 }
 object BlockFolded {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chomping: CLIP | KEEP | STRIP,
     hasComment: Boolean,
     hasProps: Boolean,
@@ -33,10 +32,8 @@ object BlockFolded {
     __obj.asInstanceOf[BlockFolded]
   }
   
-  @scala.inline
-  implicit class BlockFoldedMutableBuilder[Self <: BlockFolded] (val x: Self) extends AnyVal {
+  extension [Self <: BlockFolded](x: Self) {
     
-    @scala.inline
-    def setType(value: BLOCK_FOLDED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BLOCK_FOLDED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

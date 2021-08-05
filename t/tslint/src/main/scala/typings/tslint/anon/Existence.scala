@@ -12,19 +12,15 @@ trait Existence extends StObject {
 }
 object Existence {
   
-  @scala.inline
-  def apply(content: Items, existence: Items): Existence = {
+  inline def apply(content: Items, existence: Items): Existence = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], existence = existence.asInstanceOf[js.Any])
     __obj.asInstanceOf[Existence]
   }
   
-  @scala.inline
-  implicit class ExistenceMutableBuilder[Self <: Existence] (val x: Self) extends AnyVal {
+  extension [Self <: Existence](x: Self) {
     
-    @scala.inline
-    def setContent(value: Items): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Items): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistence(value: Items): Self = StObject.set(x, "existence", value.asInstanceOf[js.Any])
+    inline def setExistence(value: Items): Self = StObject.set(x, "existence", value.asInstanceOf[js.Any])
   }
 }

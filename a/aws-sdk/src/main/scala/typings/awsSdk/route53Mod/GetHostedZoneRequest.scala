@@ -13,16 +13,13 @@ trait GetHostedZoneRequest extends StObject {
 }
 object GetHostedZoneRequest {
   
-  @scala.inline
-  def apply(Id: ResourceId): GetHostedZoneRequest = {
+  inline def apply(Id: ResourceId): GetHostedZoneRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHostedZoneRequest]
   }
   
-  @scala.inline
-  implicit class GetHostedZoneRequestMutableBuilder[Self <: GetHostedZoneRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetHostedZoneRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

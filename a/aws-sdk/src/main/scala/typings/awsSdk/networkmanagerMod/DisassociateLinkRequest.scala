@@ -23,22 +23,17 @@ trait DisassociateLinkRequest extends StObject {
 }
 object DisassociateLinkRequest {
   
-  @scala.inline
-  def apply(DeviceId: String, GlobalNetworkId: String, LinkId: String): DisassociateLinkRequest = {
+  inline def apply(DeviceId: String, GlobalNetworkId: String, LinkId: String): DisassociateLinkRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any], LinkId = LinkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateLinkRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateLinkRequestMutableBuilder[Self <: DisassociateLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateLinkRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
   }
 }

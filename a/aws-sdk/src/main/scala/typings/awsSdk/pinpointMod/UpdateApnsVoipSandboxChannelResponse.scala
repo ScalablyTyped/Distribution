@@ -10,16 +10,13 @@ trait UpdateApnsVoipSandboxChannelResponse extends StObject {
 }
 object UpdateApnsVoipSandboxChannelResponse {
   
-  @scala.inline
-  def apply(APNSVoipSandboxChannelResponse: APNSVoipSandboxChannelResponse): UpdateApnsVoipSandboxChannelResponse = {
+  inline def apply(APNSVoipSandboxChannelResponse: APNSVoipSandboxChannelResponse): UpdateApnsVoipSandboxChannelResponse = {
     val __obj = js.Dynamic.literal(APNSVoipSandboxChannelResponse = APNSVoipSandboxChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApnsVoipSandboxChannelResponse]
   }
   
-  @scala.inline
-  implicit class UpdateApnsVoipSandboxChannelResponseMutableBuilder[Self <: UpdateApnsVoipSandboxChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApnsVoipSandboxChannelResponse](x: Self) {
     
-    @scala.inline
-    def setAPNSVoipSandboxChannelResponse(value: APNSVoipSandboxChannelResponse): Self = StObject.set(x, "APNSVoipSandboxChannelResponse", value.asInstanceOf[js.Any])
+    inline def setAPNSVoipSandboxChannelResponse(value: APNSVoipSandboxChannelResponse): Self = StObject.set(x, "APNSVoipSandboxChannelResponse", value.asInstanceOf[js.Any])
   }
 }

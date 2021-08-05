@@ -15,8 +15,7 @@ trait ParametersUsersListGpgKeysForUserEndpoint extends StObject {
 }
 object ParametersUsersListGpgKeysForUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersListGpgKeysForUserEndpoint,
     response: OctokitResponse[UsersListGpgKeysForUserResponseData]
   ): ParametersUsersListGpgKeysForUserEndpoint = {
@@ -24,13 +23,10 @@ object ParametersUsersListGpgKeysForUserEndpoint {
     __obj.asInstanceOf[ParametersUsersListGpgKeysForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersListGpgKeysForUserEndpointMutableBuilder[Self <: ParametersUsersListGpgKeysForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersListGpgKeysForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersListGpgKeysForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersListGpgKeysForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersListGpgKeysForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersListGpgKeysForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

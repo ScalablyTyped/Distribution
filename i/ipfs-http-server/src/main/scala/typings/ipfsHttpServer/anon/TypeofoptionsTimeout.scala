@@ -12,19 +12,15 @@ trait TypeofoptionsTimeout extends StObject {
 }
 object TypeofoptionsTimeout {
   
-  @scala.inline
-  def apply(timeout: Typeoftimeout, validate: Typeofvalidate): TypeofoptionsTimeout = {
+  inline def apply(timeout: Typeoftimeout, validate: Typeofvalidate): TypeofoptionsTimeout = {
     val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofoptionsTimeout]
   }
   
-  @scala.inline
-  implicit class TypeofoptionsTimeoutMutableBuilder[Self <: TypeofoptionsTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofoptionsTimeout](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: Typeoftimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Typeoftimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate(value: Typeofvalidate): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: Typeofvalidate): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
   }
 }

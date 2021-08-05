@@ -18,8 +18,7 @@ trait USBControlTransferParameters extends StObject {
 }
 object USBControlTransferParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     index: Double,
     recipient: USBRecipient,
     request: Double,
@@ -30,22 +29,16 @@ object USBControlTransferParameters {
     __obj.asInstanceOf[USBControlTransferParameters]
   }
   
-  @scala.inline
-  implicit class USBControlTransferParametersMutableBuilder[Self <: USBControlTransferParameters] (val x: Self) extends AnyVal {
+  extension [Self <: USBControlTransferParameters](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient(value: USBRecipient): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: USBRecipient): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestType(value: USBRequestType): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+    inline def setRequestType(value: USBRequestType): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

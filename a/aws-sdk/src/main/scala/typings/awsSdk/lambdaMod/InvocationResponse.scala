@@ -33,43 +33,31 @@ trait InvocationResponse extends StObject {
 }
 object InvocationResponse {
   
-  @scala.inline
-  def apply(): InvocationResponse = {
+  inline def apply(): InvocationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvocationResponse]
   }
   
-  @scala.inline
-  implicit class InvocationResponseMutableBuilder[Self <: InvocationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InvocationResponse](x: Self) {
     
-    @scala.inline
-    def setExecutedVersion(value: Version): Self = StObject.set(x, "ExecutedVersion", value.asInstanceOf[js.Any])
+    inline def setExecutedVersion(value: Version): Self = StObject.set(x, "ExecutedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutedVersionUndefined: Self = StObject.set(x, "ExecutedVersion", js.undefined)
+    inline def setExecutedVersionUndefined: Self = StObject.set(x, "ExecutedVersion", js.undefined)
     
-    @scala.inline
-    def setFunctionError(value: String): Self = StObject.set(x, "FunctionError", value.asInstanceOf[js.Any])
+    inline def setFunctionError(value: String): Self = StObject.set(x, "FunctionError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionErrorUndefined: Self = StObject.set(x, "FunctionError", js.undefined)
+    inline def setFunctionErrorUndefined: Self = StObject.set(x, "FunctionError", js.undefined)
     
-    @scala.inline
-    def setLogResult(value: String): Self = StObject.set(x, "LogResult", value.asInstanceOf[js.Any])
+    inline def setLogResult(value: String): Self = StObject.set(x, "LogResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogResultUndefined: Self = StObject.set(x, "LogResult", js.undefined)
+    inline def setLogResultUndefined: Self = StObject.set(x, "LogResult", js.undefined)
     
-    @scala.inline
-    def setPayload(value: _Blob): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: _Blob): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Integer): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Integer): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
   }
 }

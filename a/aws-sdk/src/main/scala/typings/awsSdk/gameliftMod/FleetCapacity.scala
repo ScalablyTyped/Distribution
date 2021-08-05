@@ -23,31 +23,23 @@ trait FleetCapacity extends StObject {
 }
 object FleetCapacity {
   
-  @scala.inline
-  def apply(): FleetCapacity = {
+  inline def apply(): FleetCapacity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetCapacity]
   }
   
-  @scala.inline
-  implicit class FleetCapacityMutableBuilder[Self <: FleetCapacity] (val x: Self) extends AnyVal {
+  extension [Self <: FleetCapacity](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setInstanceCounts(value: EC2InstanceCounts): Self = StObject.set(x, "InstanceCounts", value.asInstanceOf[js.Any])
+    inline def setInstanceCounts(value: EC2InstanceCounts): Self = StObject.set(x, "InstanceCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountsUndefined: Self = StObject.set(x, "InstanceCounts", js.undefined)
+    inline def setInstanceCountsUndefined: Self = StObject.set(x, "InstanceCounts", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: EC2InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: EC2InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
   }
 }

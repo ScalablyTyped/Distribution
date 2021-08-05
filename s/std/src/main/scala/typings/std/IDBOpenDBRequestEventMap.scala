@@ -14,19 +14,15 @@ trait IDBOpenDBRequestEventMap
 }
 object IDBOpenDBRequestEventMap {
   
-  @scala.inline
-  def apply(blocked: Event, error: Event, success: Event, upgradeneeded: IDBVersionChangeEvent): IDBOpenDBRequestEventMap = {
+  inline def apply(blocked: Event, error: Event, success: Event, upgradeneeded: IDBVersionChangeEvent): IDBOpenDBRequestEventMap = {
     val __obj = js.Dynamic.literal(blocked = blocked.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], upgradeneeded = upgradeneeded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBOpenDBRequestEventMap]
   }
   
-  @scala.inline
-  implicit class IDBOpenDBRequestEventMapMutableBuilder[Self <: IDBOpenDBRequestEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: IDBOpenDBRequestEventMap](x: Self) {
     
-    @scala.inline
-    def setBlocked(value: Event): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: Event): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeneeded(value: IDBVersionChangeEvent): Self = StObject.set(x, "upgradeneeded", value.asInstanceOf[js.Any])
+    inline def setUpgradeneeded(value: IDBVersionChangeEvent): Self = StObject.set(x, "upgradeneeded", value.asInstanceOf[js.Any])
   }
 }

@@ -27,26 +27,20 @@ object panelBodyMod {
   }
   object PanelBodyProps {
     
-    @scala.inline
-    def apply(): PanelBodyProps = {
+    inline def apply(): PanelBodyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PanelBodyProps]
     }
     
-    @scala.inline
-    implicit class PanelBodyPropsMutableBuilder[Self <: PanelBodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: PanelBodyProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+      inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+      inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     }
   }
 }

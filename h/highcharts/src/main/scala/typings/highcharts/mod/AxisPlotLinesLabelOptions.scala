@@ -12,20 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AxisPlotLinesLabelOptions extends StObject
 object AxisPlotLinesLabelOptions {
   
-  @scala.inline
-  def XAxisPlotLinesLabelOptions(): typings.highcharts.mod.XAxisPlotLinesLabelOptions = {
+  inline def XAxisPlotLinesLabelOptions(): typings.highcharts.mod.XAxisPlotLinesLabelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.highcharts.mod.XAxisPlotLinesLabelOptions]
   }
   
-  @scala.inline
-  def YAxisPlotLinesLabelOptions(): typings.highcharts.mod.YAxisPlotLinesLabelOptions = {
+  inline def YAxisPlotLinesLabelOptions(): typings.highcharts.mod.YAxisPlotLinesLabelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.highcharts.mod.YAxisPlotLinesLabelOptions]
   }
   
-  @scala.inline
-  def ZAxisPlotLinesLabelOptions(): typings.highcharts.mod.ZAxisPlotLinesLabelOptions = {
+  inline def ZAxisPlotLinesLabelOptions(): typings.highcharts.mod.ZAxisPlotLinesLabelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.highcharts.mod.ZAxisPlotLinesLabelOptions]
   }

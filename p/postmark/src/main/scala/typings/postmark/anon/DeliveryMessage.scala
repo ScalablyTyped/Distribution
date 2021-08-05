@@ -14,22 +14,17 @@ trait DeliveryMessage extends StObject {
 }
 object DeliveryMessage {
   
-  @scala.inline
-  def apply(DeliveryMessage: String, DestinationIP: String, DestinationServer: String): DeliveryMessage = {
+  inline def apply(DeliveryMessage: String, DestinationIP: String, DestinationServer: String): DeliveryMessage = {
     val __obj = js.Dynamic.literal(DeliveryMessage = DeliveryMessage.asInstanceOf[js.Any], DestinationIP = DestinationIP.asInstanceOf[js.Any], DestinationServer = DestinationServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryMessage]
   }
   
-  @scala.inline
-  implicit class DeliveryMessageMutableBuilder[Self <: DeliveryMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryMessage](x: Self) {
     
-    @scala.inline
-    def setDeliveryMessage(value: String): Self = StObject.set(x, "DeliveryMessage", value.asInstanceOf[js.Any])
+    inline def setDeliveryMessage(value: String): Self = StObject.set(x, "DeliveryMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationIP(value: String): Self = StObject.set(x, "DestinationIP", value.asInstanceOf[js.Any])
+    inline def setDestinationIP(value: String): Self = StObject.set(x, "DestinationIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationServer(value: String): Self = StObject.set(x, "DestinationServer", value.asInstanceOf[js.Any])
+    inline def setDestinationServer(value: String): Self = StObject.set(x, "DestinationServer", value.asInstanceOf[js.Any])
   }
 }

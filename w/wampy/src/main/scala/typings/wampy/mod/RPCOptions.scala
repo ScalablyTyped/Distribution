@@ -10,19 +10,15 @@ trait RPCOptions extends StObject {
 }
 object RPCOptions {
   
-  @scala.inline
-  def apply(): RPCOptions = {
+  inline def apply(): RPCOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RPCOptions]
   }
   
-  @scala.inline
-  implicit class RPCOptionsMutableBuilder[Self <: RPCOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RPCOptions](x: Self) {
     
-    @scala.inline
-    def setProcess(value: Boolean): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: Boolean): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+    inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
   }
 }

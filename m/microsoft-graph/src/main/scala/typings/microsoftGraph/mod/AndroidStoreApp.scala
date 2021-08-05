@@ -19,40 +19,29 @@ trait AndroidStoreApp
 }
 object AndroidStoreApp {
   
-  @scala.inline
-  def apply(): AndroidStoreApp = {
+  inline def apply(): AndroidStoreApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidStoreApp]
   }
   
-  @scala.inline
-  implicit class AndroidStoreAppMutableBuilder[Self <: AndroidStoreApp] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidStoreApp](x: Self) {
     
-    @scala.inline
-    def setAppStoreUrl(value: NullableOption[String]): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
+    inline def setAppStoreUrl(value: NullableOption[String]): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppStoreUrlNull: Self = StObject.set(x, "appStoreUrl", null)
+    inline def setAppStoreUrlNull: Self = StObject.set(x, "appStoreUrl", null)
     
-    @scala.inline
-    def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
+    inline def setAppStoreUrlUndefined: Self = StObject.set(x, "appStoreUrl", js.undefined)
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystem(value: NullableOption[AndroidMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
+    inline def setMinimumSupportedOperatingSystem(value: NullableOption[AndroidMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystemNull: Self = StObject.set(x, "minimumSupportedOperatingSystem", null)
+    inline def setMinimumSupportedOperatingSystemNull: Self = StObject.set(x, "minimumSupportedOperatingSystem", null)
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
+    inline def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
     
-    @scala.inline
-    def setPackageId(value: NullableOption[String]): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
+    inline def setPackageId(value: NullableOption[String]): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageIdNull: Self = StObject.set(x, "packageId", null)
+    inline def setPackageIdNull: Self = StObject.set(x, "packageId", null)
     
-    @scala.inline
-    def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
+    inline def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
   }
 }

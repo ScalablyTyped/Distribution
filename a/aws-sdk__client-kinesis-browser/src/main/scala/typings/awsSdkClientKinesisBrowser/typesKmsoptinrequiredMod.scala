@@ -22,17 +22,14 @@ object typesKmsoptinrequiredMod {
   }
   object KMSOptInRequired {
     
-    @scala.inline
-    def apply(): KMSOptInRequired = {
+    inline def apply(): KMSOptInRequired = {
       val __obj = js.Dynamic.literal(name = "KMSOptInRequired")
       __obj.asInstanceOf[KMSOptInRequired]
     }
     
-    @scala.inline
-    implicit class KMSOptInRequiredMutableBuilder[Self <: KMSOptInRequired] (val x: Self) extends AnyVal {
+    extension [Self <: KMSOptInRequired](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSOptInRequired): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSOptInRequired): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +42,16 @@ object typesKmsoptinrequiredMod {
   }
   object KMSOptInRequiredDetails {
     
-    @scala.inline
-    def apply(): KMSOptInRequiredDetails = {
+    inline def apply(): KMSOptInRequiredDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KMSOptInRequiredDetails]
     }
     
-    @scala.inline
-    implicit class KMSOptInRequiredDetailsMutableBuilder[Self <: KMSOptInRequiredDetails] (val x: Self) extends AnyVal {
+    extension [Self <: KMSOptInRequiredDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

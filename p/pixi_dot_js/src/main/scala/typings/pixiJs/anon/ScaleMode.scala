@@ -11,19 +11,15 @@ trait ScaleMode extends StObject {
 }
 object ScaleMode {
   
-  @scala.inline
-  def apply(): ScaleMode = {
+  inline def apply(): ScaleMode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaleMode]
   }
   
-  @scala.inline
-  implicit class ScaleModeMutableBuilder[Self <: ScaleMode] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleMode](x: Self) {
     
-    @scala.inline
-    def setScaleMode(value: SCALE_MODES): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
+    inline def setScaleMode(value: SCALE_MODES): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleModeUndefined: Self = StObject.set(x, "scaleMode", js.undefined)
+    inline def setScaleModeUndefined: Self = StObject.set(x, "scaleMode", js.undefined)
   }
 }

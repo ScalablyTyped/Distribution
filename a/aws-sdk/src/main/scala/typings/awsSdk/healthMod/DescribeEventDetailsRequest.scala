@@ -18,25 +18,19 @@ trait DescribeEventDetailsRequest extends StObject {
 }
 object DescribeEventDetailsRequest {
   
-  @scala.inline
-  def apply(eventArns: eventArnList): DescribeEventDetailsRequest = {
+  inline def apply(eventArns: eventArnList): DescribeEventDetailsRequest = {
     val __obj = js.Dynamic.literal(eventArns = eventArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEventDetailsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEventDetailsRequestMutableBuilder[Self <: DescribeEventDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setEventArns(value: eventArnList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
+    inline def setEventArns(value: eventArnList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
+    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
     
-    @scala.inline
-    def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

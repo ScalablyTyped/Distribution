@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Style")
 @js.native
-class Style protected ()
+/* private */ class Style ()
   extends StObject
      with typings.activexExcel.Excel.Style {
   
@@ -37,7 +37,7 @@ class Style protected ()
   /* CompleteClass */
   override def Delete(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Style_typekey")
   var ExcelDotStyle_typekey: typings.activexExcel.Excel.Style = js.native
   

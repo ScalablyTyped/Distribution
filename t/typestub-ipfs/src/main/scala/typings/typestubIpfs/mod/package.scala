@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def createNode(options: typings.typestubIpfs.mod.Options): typings.typestubIpfs.mod.IPFS = typings.typestubIpfs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(options.asInstanceOf[js.Any]).asInstanceOf[typings.typestubIpfs.mod.IPFS]
+inline def createNode(options: typings.typestubIpfs.mod.Options): typings.typestubIpfs.mod.IPFS = typings.typestubIpfs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(options.asInstanceOf[js.Any]).asInstanceOf[typings.typestubIpfs.mod.IPFS]
 
 type Big = js.Any
 

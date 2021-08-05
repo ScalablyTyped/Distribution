@@ -27,13 +27,12 @@ trait Version extends StObject {
   
   val SavedBy: String
   
-  @JSName("Word.Version_typekey")
+  /* private */ @JSName("Word.Version_typekey")
   var WordDotVersion_typekey: Version
 }
 object Version {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Comment: String,
     Creator: Double,
@@ -51,40 +50,28 @@ object Version {
     __obj.asInstanceOf[Version]
   }
   
-  @scala.inline
-  implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+  extension [Self <: Version](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: () => Document): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Document): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenOld(value: () => Unit): Self = StObject.set(x, "OpenOld", js.Any.fromFunction0(value))
+    inline def setOpenOld(value: () => Unit): Self = StObject.set(x, "OpenOld", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedBy(value: String): Self = StObject.set(x, "SavedBy", value.asInstanceOf[js.Any])
+    inline def setSavedBy(value: String): Self = StObject.set(x, "SavedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotVersion_typekey(value: Version): Self = StObject.set(x, "Word.Version_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotVersion_typekey(value: Version): Self = StObject.set(x, "Word.Version_typekey", value.asInstanceOf[js.Any])
   }
 }

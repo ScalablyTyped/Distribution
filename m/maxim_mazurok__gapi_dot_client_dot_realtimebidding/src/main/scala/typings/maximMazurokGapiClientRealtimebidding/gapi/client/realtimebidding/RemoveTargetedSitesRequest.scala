@@ -11,22 +11,17 @@ trait RemoveTargetedSitesRequest extends StObject {
 }
 object RemoveTargetedSitesRequest {
   
-  @scala.inline
-  def apply(): RemoveTargetedSitesRequest = {
+  inline def apply(): RemoveTargetedSitesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveTargetedSitesRequest]
   }
   
-  @scala.inline
-  implicit class RemoveTargetedSitesRequestMutableBuilder[Self <: RemoveTargetedSitesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTargetedSitesRequest](x: Self) {
     
-    @scala.inline
-    def setSites(value: js.Array[String]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
+    inline def setSites(value: js.Array[String]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
+    inline def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
     
-    @scala.inline
-    def setSitesVarargs(value: String*): Self = StObject.set(x, "sites", js.Array(value :_*))
+    inline def setSitesVarargs(value: String*): Self = StObject.set(x, "sites", js.Array(value :_*))
   }
 }

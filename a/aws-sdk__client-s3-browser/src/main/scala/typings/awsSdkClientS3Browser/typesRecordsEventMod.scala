@@ -18,20 +18,16 @@ object typesRecordsEventMod {
   }
   object RecordsEvent {
     
-    @scala.inline
-    def apply(): RecordsEvent = {
+    inline def apply(): RecordsEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecordsEvent]
     }
     
-    @scala.inline
-    implicit class RecordsEventMutableBuilder[Self <: RecordsEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RecordsEvent](x: Self) {
       
-      @scala.inline
-      def setPayload(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     }
   }
   
@@ -47,20 +43,16 @@ object typesRecordsEventMod {
   }
   object UnmarshalledRecordsEvent {
     
-    @scala.inline
-    def apply(): UnmarshalledRecordsEvent = {
+    inline def apply(): UnmarshalledRecordsEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledRecordsEvent]
     }
     
-    @scala.inline
-    implicit class UnmarshalledRecordsEventMutableBuilder[Self <: UnmarshalledRecordsEvent] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledRecordsEvent](x: Self) {
       
-      @scala.inline
-      def setPayload(value: Uint8Array): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Uint8Array): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     }
   }
 }

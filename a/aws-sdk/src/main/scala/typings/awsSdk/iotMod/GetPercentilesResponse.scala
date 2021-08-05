@@ -13,22 +13,17 @@ trait GetPercentilesResponse extends StObject {
 }
 object GetPercentilesResponse {
   
-  @scala.inline
-  def apply(): GetPercentilesResponse = {
+  inline def apply(): GetPercentilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPercentilesResponse]
   }
   
-  @scala.inline
-  implicit class GetPercentilesResponseMutableBuilder[Self <: GetPercentilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPercentilesResponse](x: Self) {
     
-    @scala.inline
-    def setPercentiles(value: Percentiles): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
+    inline def setPercentiles(value: Percentiles): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
+    inline def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
     
-    @scala.inline
-    def setPercentilesVarargs(value: PercentPair*): Self = StObject.set(x, "percentiles", js.Array(value :_*))
+    inline def setPercentilesVarargs(value: PercentPair*): Self = StObject.set(x, "percentiles", js.Array(value :_*))
   }
 }

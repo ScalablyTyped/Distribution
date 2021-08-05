@@ -12,25 +12,19 @@ trait ChartSeriesItemErrorBarsLine extends StObject {
 }
 object ChartSeriesItemErrorBarsLine {
   
-  @scala.inline
-  def apply(): ChartSeriesItemErrorBarsLine = {
+  inline def apply(): ChartSeriesItemErrorBarsLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesItemErrorBarsLine]
   }
   
-  @scala.inline
-  implicit class ChartSeriesItemErrorBarsLineMutableBuilder[Self <: ChartSeriesItemErrorBarsLine] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesItemErrorBarsLine](x: Self) {
     
-    @scala.inline
-    def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
+    inline def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
+    inline def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

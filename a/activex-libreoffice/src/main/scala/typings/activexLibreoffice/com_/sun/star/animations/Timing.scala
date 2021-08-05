@@ -14,10 +14,8 @@ trait Timing extends StObject
 object Timing {
   
   /** specifies that a duration, end or start time is indefinite */
-  @scala.inline
-  def INDEFINITE: `0` = 0.asInstanceOf[`0`]
+  inline def INDEFINITE: `0` = 0.asInstanceOf[`0`]
   
   /** specifies a simple duration as the intrinsic media duration. This is only valid for elements that define media. */
-  @scala.inline
-  def MEDIA: `1` = 1.asInstanceOf[`1`]
+  inline def MEDIA: `1` = 1.asInstanceOf[`1`]
 }

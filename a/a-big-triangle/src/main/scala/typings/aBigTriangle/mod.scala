@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(gl: WebGLRenderingContext): Unit = ^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(gl: WebGLRenderingContext): Unit = ^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("a-big-triangle", JSImport.Namespace)
   @js.native

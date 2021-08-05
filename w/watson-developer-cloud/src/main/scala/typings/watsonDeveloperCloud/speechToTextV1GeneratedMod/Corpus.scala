@@ -24,31 +24,23 @@ trait Corpus extends StObject {
 }
 object Corpus {
   
-  @scala.inline
-  def apply(name: String, out_of_vocabulary_words: Double, status: String, total_words: Double): Corpus = {
+  inline def apply(name: String, out_of_vocabulary_words: Double, status: String, total_words: Double): Corpus = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], out_of_vocabulary_words = out_of_vocabulary_words.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], total_words = total_words.asInstanceOf[js.Any])
     __obj.asInstanceOf[Corpus]
   }
   
-  @scala.inline
-  implicit class CorpusMutableBuilder[Self <: Corpus] (val x: Self) extends AnyVal {
+  extension [Self <: Corpus](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOut_of_vocabulary_words(value: Double): Self = StObject.set(x, "out_of_vocabulary_words", value.asInstanceOf[js.Any])
+    inline def setOut_of_vocabulary_words(value: Double): Self = StObject.set(x, "out_of_vocabulary_words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_words(value: Double): Self = StObject.set(x, "total_words", value.asInstanceOf[js.Any])
+    inline def setTotal_words(value: Double): Self = StObject.set(x, "total_words", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ object mod {
   /**
     * Load SVG icon sprites safely and asynchronously
     */
-  @scala.inline
-  def apply(svgURL: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(svgURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(svgURL: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(svgURL.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("loadicons", JSImport.Namespace)
   @js.native

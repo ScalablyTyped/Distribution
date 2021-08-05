@@ -12,19 +12,15 @@ trait OIndexEntry extends StObject {
 }
 object OIndexEntry {
   
-  @scala.inline
-  def apply(key: String, value: String | ORID): OIndexEntry = {
+  inline def apply(key: String, value: String | ORID): OIndexEntry = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OIndexEntry]
   }
   
-  @scala.inline
-  implicit class OIndexEntryMutableBuilder[Self <: OIndexEntry] (val x: Self) extends AnyVal {
+  extension [Self <: OIndexEntry](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | ORID): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | ORID): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

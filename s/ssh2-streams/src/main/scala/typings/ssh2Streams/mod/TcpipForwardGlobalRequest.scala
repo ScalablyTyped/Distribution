@@ -20,19 +20,15 @@ trait TcpipForwardGlobalRequest
 }
 object TcpipForwardGlobalRequest {
   
-  @scala.inline
-  def apply(bindAddr: String, bindPort: Double): TcpipForwardGlobalRequest = {
+  inline def apply(bindAddr: String, bindPort: Double): TcpipForwardGlobalRequest = {
     val __obj = js.Dynamic.literal(bindAddr = bindAddr.asInstanceOf[js.Any], bindPort = bindPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpipForwardGlobalRequest]
   }
   
-  @scala.inline
-  implicit class TcpipForwardGlobalRequestMutableBuilder[Self <: TcpipForwardGlobalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TcpipForwardGlobalRequest](x: Self) {
     
-    @scala.inline
-    def setBindAddr(value: String): Self = StObject.set(x, "bindAddr", value.asInstanceOf[js.Any])
+    inline def setBindAddr(value: String): Self = StObject.set(x, "bindAddr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindPort(value: Double): Self = StObject.set(x, "bindPort", value.asInstanceOf[js.Any])
+    inline def setBindPort(value: Double): Self = StObject.set(x, "bindPort", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait AccessControlListConfiguration extends StObject {
 }
 object AccessControlListConfiguration {
   
-  @scala.inline
-  def apply(): AccessControlListConfiguration = {
+  inline def apply(): AccessControlListConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessControlListConfiguration]
   }
   
-  @scala.inline
-  implicit class AccessControlListConfigurationMutableBuilder[Self <: AccessControlListConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AccessControlListConfiguration](x: Self) {
     
-    @scala.inline
-    def setKeyPath(value: S3ObjectKey): Self = StObject.set(x, "KeyPath", value.asInstanceOf[js.Any])
+    inline def setKeyPath(value: S3ObjectKey): Self = StObject.set(x, "KeyPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPathUndefined: Self = StObject.set(x, "KeyPath", js.undefined)
+    inline def setKeyPathUndefined: Self = StObject.set(x, "KeyPath", js.undefined)
   }
 }

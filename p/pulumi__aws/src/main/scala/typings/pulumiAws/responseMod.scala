@@ -66,21 +66,16 @@ object responseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Response]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Response]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResponseState): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Response]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResponseState, opts: CustomResourceOptions): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Response]
+    inline def get(name: String, id: Input[ID]): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Response]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Response]
+    inline def get(name: String, id: Input[ID], state: ResponseState): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Response]
+    inline def get(name: String, id: Input[ID], state: ResponseState, opts: CustomResourceOptions): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Response]
     
     /**
       * Returns true if the given object is an instance of Response.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/response.Response */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/response.Response */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/response.Response */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/response.Response */ Boolean]
   }
   
   trait ResponseArgs extends StObject {
@@ -112,38 +107,28 @@ object responseMod {
   }
   object ResponseArgs {
     
-    @scala.inline
-    def apply(responseType: Input[String], restApiId: Input[String]): ResponseArgs = {
+    inline def apply(responseType: Input[String], restApiId: Input[String]): ResponseArgs = {
       val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseArgs]
     }
     
-    @scala.inline
-    implicit class ResponseArgsMutableBuilder[Self <: ResponseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseArgs](x: Self) {
       
-      @scala.inline
-      def setResponseParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
+      inline def setResponseParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
+      inline def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
       
-      @scala.inline
-      def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
+      inline def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
+      inline def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: Input[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: Input[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+      inline def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
   
@@ -176,44 +161,32 @@ object responseMod {
   }
   object ResponseState {
     
-    @scala.inline
-    def apply(): ResponseState = {
+    inline def apply(): ResponseState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponseState]
     }
     
-    @scala.inline
-    implicit class ResponseStateMutableBuilder[Self <: ResponseState] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseState](x: Self) {
       
-      @scala.inline
-      def setResponseParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
+      inline def setResponseParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
+      inline def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
       
-      @scala.inline
-      def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
+      inline def setResponseTemplates(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
+      inline def setResponseTemplatesUndefined: Self = StObject.set(x, "responseTemplates", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: Input[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: Input[String]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      @scala.inline
-      def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+      inline def setRestApiId(value: Input[String]): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
+      inline def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
 }

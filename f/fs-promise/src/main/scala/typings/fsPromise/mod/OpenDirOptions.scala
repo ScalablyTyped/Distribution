@@ -9,8 +9,7 @@ trait OpenDirOptions
      with typings.node.fsMod.OpenDirOptions
 object OpenDirOptions {
   
-  @scala.inline
-  def apply(): OpenDirOptions = {
+  inline def apply(): OpenDirOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenDirOptions]
   }

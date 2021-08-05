@@ -12,25 +12,19 @@ trait BroadCastToAttrs extends StObject {
 }
 object BroadCastToAttrs {
   
-  @scala.inline
-  def apply(inputShape: js.Array[Double], shape: js.Array[Double]): BroadCastToAttrs = {
+  inline def apply(inputShape: js.Array[Double], shape: js.Array[Double]): BroadCastToAttrs = {
     val __obj = js.Dynamic.literal(inputShape = inputShape.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadCastToAttrs]
   }
   
-  @scala.inline
-  implicit class BroadCastToAttrsMutableBuilder[Self <: BroadCastToAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: BroadCastToAttrs](x: Self) {
     
-    @scala.inline
-    def setInputShape(value: js.Array[Double]): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
+    inline def setInputShape(value: js.Array[Double]): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputShapeVarargs(value: Double*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+    inline def setInputShapeVarargs(value: Double*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
     
-    @scala.inline
-    def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
   }
 }

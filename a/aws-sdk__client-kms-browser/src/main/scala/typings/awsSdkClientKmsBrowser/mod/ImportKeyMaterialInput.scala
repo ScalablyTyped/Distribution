@@ -11,8 +11,7 @@ trait ImportKeyMaterialInput
      with typings.awsSdkClientKmsBrowser.typesImportKeyMaterialInputMod.ImportKeyMaterialInput
 object ImportKeyMaterialInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EncryptedKeyMaterial: ArrayBuffer | ArrayBufferView | String,
     ImportToken: ArrayBuffer | ArrayBufferView | String,
     KeyId: String

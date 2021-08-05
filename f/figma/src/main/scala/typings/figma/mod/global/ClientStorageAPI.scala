@@ -12,19 +12,15 @@ trait ClientStorageAPI extends StObject {
 }
 object ClientStorageAPI {
   
-  @scala.inline
-  def apply(getAsync: String => js.Promise[js.Any], setAsync: (String, js.Any) => js.Promise[Unit]): ClientStorageAPI = {
+  inline def apply(getAsync: String => js.Promise[js.Any], setAsync: (String, js.Any) => js.Promise[Unit]): ClientStorageAPI = {
     val __obj = js.Dynamic.literal(getAsync = js.Any.fromFunction1(getAsync), setAsync = js.Any.fromFunction2(setAsync))
     __obj.asInstanceOf[ClientStorageAPI]
   }
   
-  @scala.inline
-  implicit class ClientStorageAPIMutableBuilder[Self <: ClientStorageAPI] (val x: Self) extends AnyVal {
+  extension [Self <: ClientStorageAPI](x: Self) {
     
-    @scala.inline
-    def setGetAsync(value: String => js.Promise[js.Any]): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
+    inline def setGetAsync(value: String => js.Promise[js.Any]): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAsync(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "setAsync", js.Any.fromFunction2(value))
+    inline def setSetAsync(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "setAsync", js.Any.fromFunction2(value))
   }
 }

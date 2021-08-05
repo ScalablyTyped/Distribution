@@ -12,19 +12,15 @@ trait OrgsConvertMemberToOutsideCollaboratorResponseData extends StObject {
 }
 object OrgsConvertMemberToOutsideCollaboratorResponseData {
   
-  @scala.inline
-  def apply(documentation_url: String, message: String): OrgsConvertMemberToOutsideCollaboratorResponseData = {
+  inline def apply(documentation_url: String, message: String): OrgsConvertMemberToOutsideCollaboratorResponseData = {
     val __obj = js.Dynamic.literal(documentation_url = documentation_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsConvertMemberToOutsideCollaboratorResponseData]
   }
   
-  @scala.inline
-  implicit class OrgsConvertMemberToOutsideCollaboratorResponseDataMutableBuilder[Self <: OrgsConvertMemberToOutsideCollaboratorResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsConvertMemberToOutsideCollaboratorResponseData](x: Self) {
     
-    @scala.inline
-    def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
+    inline def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

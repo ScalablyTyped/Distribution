@@ -15,19 +15,15 @@ trait ChatMessageChange extends StObject {
 }
 object ChatMessageChange {
   
-  @scala.inline
-  def apply(changeType: ChatMessageChangeType, message: ChatMessage): ChatMessageChange = {
+  inline def apply(changeType: ChatMessageChangeType, message: ChatMessage): ChatMessageChange = {
     val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatMessageChange]
   }
   
-  @scala.inline
-  implicit class ChatMessageChangeMutableBuilder[Self <: ChatMessageChange] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageChange](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: ChatMessageChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: ChatMessageChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: ChatMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ChatMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait XChapterNumberingSupplier
 }
 object XChapterNumberingSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChapterNumberingRules: XIndexReplace,
     acquire: () => Unit,
     getChapterNumberingRules: () => XIndexReplace,
@@ -32,13 +31,10 @@ object XChapterNumberingSupplier {
     __obj.asInstanceOf[XChapterNumberingSupplier]
   }
   
-  @scala.inline
-  implicit class XChapterNumberingSupplierMutableBuilder[Self <: XChapterNumberingSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XChapterNumberingSupplier](x: Self) {
     
-    @scala.inline
-    def setChapterNumberingRules(value: XIndexReplace): Self = StObject.set(x, "ChapterNumberingRules", value.asInstanceOf[js.Any])
+    inline def setChapterNumberingRules(value: XIndexReplace): Self = StObject.set(x, "ChapterNumberingRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetChapterNumberingRules(value: () => XIndexReplace): Self = StObject.set(x, "getChapterNumberingRules", js.Any.fromFunction0(value))
+    inline def setGetChapterNumberingRules(value: () => XIndexReplace): Self = StObject.set(x, "getChapterNumberingRules", js.Any.fromFunction0(value))
   }
 }

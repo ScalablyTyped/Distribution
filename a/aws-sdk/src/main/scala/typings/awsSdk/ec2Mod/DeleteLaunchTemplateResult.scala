@@ -13,19 +13,15 @@ trait DeleteLaunchTemplateResult extends StObject {
 }
 object DeleteLaunchTemplateResult {
   
-  @scala.inline
-  def apply(): DeleteLaunchTemplateResult = {
+  inline def apply(): DeleteLaunchTemplateResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteLaunchTemplateResult]
   }
   
-  @scala.inline
-  implicit class DeleteLaunchTemplateResultMutableBuilder[Self <: DeleteLaunchTemplateResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLaunchTemplateResult](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
+    inline def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
   }
 }

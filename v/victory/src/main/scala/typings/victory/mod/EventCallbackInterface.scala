@@ -29,34 +29,25 @@ trait EventCallbackInterface[TTarget, TEventKey] extends StObject {
 }
 object EventCallbackInterface {
   
-  @scala.inline
-  def apply[TTarget, TEventKey](mutation: js.Any => js.Any): EventCallbackInterface[TTarget, TEventKey] = {
+  inline def apply[TTarget, TEventKey](mutation: js.Any => js.Any): EventCallbackInterface[TTarget, TEventKey] = {
     val __obj = js.Dynamic.literal(mutation = js.Any.fromFunction1(mutation))
     __obj.asInstanceOf[EventCallbackInterface[TTarget, TEventKey]]
   }
   
-  @scala.inline
-  implicit class EventCallbackInterfaceMutableBuilder[Self <: EventCallbackInterface[?, ?], TTarget, TEventKey] (val x: Self & (EventCallbackInterface[TTarget, TEventKey])) extends AnyVal {
+  extension [Self <: EventCallbackInterface[?, ?], TTarget, TEventKey](x: Self & (EventCallbackInterface[TTarget, TEventKey])) {
     
-    @scala.inline
-    def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
+    inline def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNameUndefined: Self = StObject.set(x, "childName", js.undefined)
+    inline def setChildNameUndefined: Self = StObject.set(x, "childName", js.undefined)
     
-    @scala.inline
-    def setEventKey(value: TEventKey): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+    inline def setEventKey(value: TEventKey): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
+    inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
-    @scala.inline
-    def setMutation(value: js.Any => js.Any): Self = StObject.set(x, "mutation", js.Any.fromFunction1(value))
+    inline def setMutation(value: js.Any => js.Any): Self = StObject.set(x, "mutation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTarget(value: TTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

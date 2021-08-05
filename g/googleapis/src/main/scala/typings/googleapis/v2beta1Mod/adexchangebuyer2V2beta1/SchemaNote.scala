@@ -38,43 +38,31 @@ trait SchemaNote extends StObject {
 }
 object SchemaNote {
   
-  @scala.inline
-  def apply(): SchemaNote = {
+  inline def apply(): SchemaNote = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNote]
   }
   
-  @scala.inline
-  implicit class SchemaNoteMutableBuilder[Self <: SchemaNote] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNote](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setCreatorRole(value: String): Self = StObject.set(x, "creatorRole", value.asInstanceOf[js.Any])
+    inline def setCreatorRole(value: String): Self = StObject.set(x, "creatorRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorRoleUndefined: Self = StObject.set(x, "creatorRole", js.undefined)
+    inline def setCreatorRoleUndefined: Self = StObject.set(x, "creatorRole", js.undefined)
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteId(value: String): Self = StObject.set(x, "noteId", value.asInstanceOf[js.Any])
+    inline def setNoteId(value: String): Self = StObject.set(x, "noteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteIdUndefined: Self = StObject.set(x, "noteId", js.undefined)
+    inline def setNoteIdUndefined: Self = StObject.set(x, "noteId", js.undefined)
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
-    @scala.inline
-    def setProposalRevision(value: String): Self = StObject.set(x, "proposalRevision", value.asInstanceOf[js.Any])
+    inline def setProposalRevision(value: String): Self = StObject.set(x, "proposalRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalRevisionUndefined: Self = StObject.set(x, "proposalRevision", js.undefined)
+    inline def setProposalRevisionUndefined: Self = StObject.set(x, "proposalRevision", js.undefined)
   }
 }

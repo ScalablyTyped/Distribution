@@ -11,16 +11,13 @@ trait Header[H /* <: DataTableHeader[String] */] extends StObject {
 }
 object Header {
   
-  @scala.inline
-  def apply[H /* <: DataTableHeader[String] */](header: /* import warning: importer.ImportType#apply Failed type conversion: H['key'] */ js.Any): Header[H] = {
+  inline def apply[H /* <: DataTableHeader[String] */](header: /* import warning: importer.ImportType#apply Failed type conversion: H['key'] */ js.Any): Header[H] = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header[H]]
   }
   
-  @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header[?], H /* <: DataTableHeader[String] */] (val x: Self & Header[H]) extends AnyVal {
+  extension [Self <: Header[?], H /* <: DataTableHeader[String] */](x: Self & Header[H]) {
     
-    @scala.inline
-    def setHeader(value: /* import warning: importer.ImportType#apply Failed type conversion: H['key'] */ js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: /* import warning: importer.ImportType#apply Failed type conversion: H['key'] */ js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

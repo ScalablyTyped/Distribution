@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def DEFAULT_TIMEOUT: /* 30000 */ scala.Double = typings.socks.constantsMod.^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_TIMEOUT").asInstanceOf[/* 30000 */ scala.Double]
+inline def DEFAULT_TIMEOUT: /* 30000 */ scala.Double = typings.socks.constantsMod.^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_TIMEOUT").asInstanceOf[/* 30000 */ scala.Double]
 
 type SocksClientBoundEvent = typings.socks.constantsMod.SocksClientEstablishedEvent
 

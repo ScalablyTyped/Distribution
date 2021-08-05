@@ -12,19 +12,15 @@ trait IAuthCra extends StObject {
 }
 object IAuthCra {
   
-  @scala.inline
-  def apply(derive_key: (String, String, Double, Double) => String, sign: (String, String) => String): IAuthCra = {
+  inline def apply(derive_key: (String, String, Double, Double) => String, sign: (String, String) => String): IAuthCra = {
     val __obj = js.Dynamic.literal(derive_key = js.Any.fromFunction4(derive_key), sign = js.Any.fromFunction2(sign))
     __obj.asInstanceOf[IAuthCra]
   }
   
-  @scala.inline
-  implicit class IAuthCraMutableBuilder[Self <: IAuthCra] (val x: Self) extends AnyVal {
+  extension [Self <: IAuthCra](x: Self) {
     
-    @scala.inline
-    def setDerive_key(value: (String, String, Double, Double) => String): Self = StObject.set(x, "derive_key", js.Any.fromFunction4(value))
+    inline def setDerive_key(value: (String, String, Double, Double) => String): Self = StObject.set(x, "derive_key", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
+    inline def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
   }
 }

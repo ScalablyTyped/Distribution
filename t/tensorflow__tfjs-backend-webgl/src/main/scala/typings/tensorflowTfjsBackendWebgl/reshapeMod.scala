@@ -13,8 +13,7 @@ object reshapeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reshape(args: AttrsReshapeAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def reshape(args: AttrsReshapeAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Reshape", "reshapeConfig")
   @js.native

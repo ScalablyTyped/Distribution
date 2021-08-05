@@ -13,19 +13,15 @@ trait Done extends StObject {
 }
 object Done {
   
-  @scala.inline
-  def apply(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Done = {
+  inline def apply(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Done = {
     val __obj = js.Dynamic.literal(done = false, value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Done]
   }
   
-  @scala.inline
-  implicit class DoneMutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
+  extension [Self <: Done](x: Self) {
     
-    @scala.inline
-    def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait SourceCredentialsInfo extends StObject {
 }
 object SourceCredentialsInfo {
   
-  @scala.inline
-  def apply(): SourceCredentialsInfo = {
+  inline def apply(): SourceCredentialsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceCredentialsInfo]
   }
   
-  @scala.inline
-  implicit class SourceCredentialsInfoMutableBuilder[Self <: SourceCredentialsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SourceCredentialsInfo](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setAuthType(value: AuthType): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    inline def setAuthType(value: AuthType): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
+    inline def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
     
-    @scala.inline
-    def setServerType(value: ServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
+    inline def setServerType(value: ServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
+    inline def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
   }
 }

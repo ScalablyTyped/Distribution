@@ -57,8 +57,7 @@ object mod {
     @js.native
     class ObservableCls[T, S] () extends Observable[T, S]
     
-    @scala.inline
-    def Observable_=(x: Instantiable0[Observable[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Observable")(x.asInstanceOf[js.Any])
+    inline def Observable_=(x: Instantiable0[Observable[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Observable")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("kefir", "default.Pool")
@@ -69,8 +68,7 @@ object mod {
     @js.native
     def Pool_ : Instantiable0[typings.kefir.mod.Pool_[js.Object, js.Object]] = js.native
     
-    @scala.inline
-    def Pool__=(x: Instantiable0[Pool_[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pool")(x.asInstanceOf[js.Any])
+    inline def Pool__=(x: Instantiable0[Pool_[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pool")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.Property")
     @js.native
@@ -81,8 +79,7 @@ object mod {
     @js.native
     class PropertyCls[T, S] () extends Property[T, S]
     
-    @scala.inline
-    def Property_=(x: Instantiable0[Property[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
+    inline def Property_=(x: Instantiable0[Property[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Property")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("kefir", "default.Stream")
@@ -93,14 +90,12 @@ object mod {
     @js.native
     def Stream_ : Instantiable0[typings.kefir.mod.Stream_[js.Object, js.Object]] = js.native
     
-    @scala.inline
-    def Stream__=(x: Instantiable0[Stream_[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stream")(x.asInstanceOf[js.Any])
+    inline def Stream__=(x: Instantiable0[Stream_[js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Stream")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.combine")
     @js.native
     def combine: FnCallObssObssPCombinator = js.native
-    @scala.inline
-    def combine[T /* <: js.Tuple5[
+    inline def combine[T /* <: js.Tuple5[
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
@@ -145,21 +140,16 @@ object mod {
         ], 
         js.Any
       ]]
-    @scala.inline
-    def combine[T /* <: StringDictionary[Observable[js.Any, js.Any]] */, K /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any]]
-    @scala.inline
-    def combine[T, S, U](obss: js.Array[Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
-    @scala.inline
-    def combine[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
-    @scala.inline
-    def combine[T, S, U](
+    inline def combine[T /* <: StringDictionary[Observable[js.Any, js.Any]] */, K /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any]]
+    inline def combine[T, S, U](obss: js.Array[Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
+    inline def combine[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
+    inline def combine[T, S, U](
       obss: js.Array[Observable[T, S]],
       passiveObss: js.Array[Observable[T, S]],
       combinator: js.Function1[/* repeated */ T, U]
     ): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
     
-    @scala.inline
-    def combine_0[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: js.Array[Observable[js.Any, js.Any]] */, K](
+    inline def combine_0[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: js.Array[Observable[js.Any, js.Any]] */, K](
       obss: T,
       obssP: P,
       combinator: js.Function2[
@@ -169,14 +159,11 @@ object mod {
         ]
     ): Observable[K, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], obssP.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[K, js.Any]]
     
-    @scala.inline
-    def combine_=(x: FnCallObssObssPCombinator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
+    inline def combine_=(x: FnCallObssObssPCombinator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def combine_T_ArrayNothing[T /* <: js.Array[scala.Nothing] */](obss: T): Stream_[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[scala.Nothing, scala.Nothing]]
+    inline def combine_T_ArrayNothing[T /* <: js.Array[scala.Nothing] */](obss: T): Stream_[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[scala.Nothing, scala.Nothing]]
     
-    @scala.inline
-    def combine_T_ArrayObservableAnyAny[T /* <: js.Array[Observable[js.Any, js.Any]] */](obss: T): Stream_[
+    inline def combine_T_ArrayObservableAnyAny[T /* <: js.Array[Observable[js.Any, js.Any]] */](obss: T): Stream_[
         js.Array[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -192,8 +179,7 @@ object mod {
         js.Any
       ]]
     
-    @scala.inline
-    def combine_T_ArrayObservableAnyAnyP_String[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: /* keyof T */ String */](obss: T): Stream_[
+    inline def combine_T_ArrayObservableAnyAnyP_String[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: /* keyof T */ String */](obss: T): Stream_[
         js.Array[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -209,8 +195,7 @@ object mod {
         js.Any
       ]]
     
-    @scala.inline
-    def combine_T_StringDictionaryObservableAnyAny[T /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T): Stream_[
+    inline def combine_T_StringDictionaryObservableAnyAny[T /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T): Stream_[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
       */ combine & TopLevel[T], 
@@ -222,8 +207,7 @@ object mod {
         js.Any
       ]]
     
-    @scala.inline
-    def combine_T_Tuple2ObservableAnyAnyObservableAnyAny[T /* <: js.Tuple2[Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
+    inline def combine_T_Tuple2ObservableAnyAnyObservableAnyAny[T /* <: js.Tuple2[Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
         js.Tuple2[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -245,8 +229,7 @@ object mod {
         js.Any
       ]]
     
-    @scala.inline
-    def combine_T_Tuple3ObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple3[Observable[js.Any, js.Any], Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
+    inline def combine_T_Tuple3ObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple3[Observable[js.Any, js.Any], Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
         js.Tuple3[
           ValueOfAnObservable[
             /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -274,8 +257,7 @@ object mod {
         js.Any
       ]]
     
-    @scala.inline
-    def combine_T_Tuple4ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple4[
+    inline def combine_T_Tuple4ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple4[
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
@@ -314,8 +296,7 @@ object mod {
         js.Any
       ]]
     
-    @scala.inline
-    def combine_T_Tuple6ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple6[
+    inline def combine_T_Tuple6ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple6[
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
@@ -368,8 +349,7 @@ object mod {
         js.Any
       ]]
     
-    @scala.inline
-    def combine_T_Tuple7ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple7[
+    inline def combine_T_Tuple7ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple7[
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
@@ -429,8 +409,7 @@ object mod {
         js.Any
       ]]
     
-    @scala.inline
-    def combine_T_Tuple8ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple8[
+    inline def combine_T_Tuple8ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple8[
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
         Observable[js.Any, js.Any], 
@@ -500,174 +479,129 @@ object mod {
     @JSImport("kefir", "default.concat")
     @js.native
     def concat: FnCallObss = js.native
-    @scala.inline
-    def concat[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
-    @scala.inline
-    def concat_=(x: FnCallObss): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("concat")(x.asInstanceOf[js.Any])
+    inline def concat[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
+    inline def concat_=(x: FnCallObss): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("concat")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.constant")
     @js.native
     def constant: FnCallValue = js.native
-    @scala.inline
-    def constant[T](value: T): Property[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(value.asInstanceOf[js.Any]).asInstanceOf[Property[T, scala.Nothing]]
+    inline def constant[T](value: T): Property[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(value.asInstanceOf[js.Any]).asInstanceOf[Property[T, scala.Nothing]]
     
     @JSImport("kefir", "default.constantError")
     @js.native
     def constantError: FnCallError = js.native
-    @scala.inline
-    def constantError[T](error: T): Property[scala.Nothing, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("constantError")(error.asInstanceOf[js.Any]).asInstanceOf[Property[scala.Nothing, T]]
-    @scala.inline
-    def constantError_=(x: FnCallError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constantError")(x.asInstanceOf[js.Any])
+    inline def constantError[T](error: T): Property[scala.Nothing, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("constantError")(error.asInstanceOf[js.Any]).asInstanceOf[Property[scala.Nothing, T]]
+    inline def constantError_=(x: FnCallError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constantError")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def constant_=(x: FnCallValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constant")(x.asInstanceOf[js.Any])
+    inline def constant_=(x: FnCallValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("constant")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.fromCallback")
     @js.native
     def fromCallback: FnCallFn = js.native
-    @scala.inline
-    def fromCallback[T](fn: js.Function1[/* callback */ js.Function1[/* value */ T, Unit], Unit]): Stream_[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, scala.Nothing]]
-    @scala.inline
-    def fromCallback_=(x: FnCallFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromCallback")(x.asInstanceOf[js.Any])
+    inline def fromCallback[T](fn: js.Function1[/* callback */ js.Function1[/* value */ T, Unit], Unit]): Stream_[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, scala.Nothing]]
+    inline def fromCallback_=(x: FnCallFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromCallback")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.fromESObservable")
     @js.native
     def fromESObservable: FnCallObservable = js.native
-    @scala.inline
-    def fromESObservable[T, S](observable: js.Any): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(observable.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def fromESObservable_=(x: FnCallObservable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromESObservable")(x.asInstanceOf[js.Any])
+    inline def fromESObservable[T, S](observable: js.Any): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(observable.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
+    inline def fromESObservable_=(x: FnCallObservable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromESObservable")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.fromEvents")
     @js.native
     def fromEvents: FnCallTargetEventNameTransform = js.native
-    @scala.inline
-    def fromEvents[T, S](target: Off, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def fromEvents[T, S](target: Off, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def fromEvents[T, S](target: EventEmitter, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def fromEvents[T, S](target: EventEmitter, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def fromEvents[T, S](target: EventTarget, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def fromEvents[T, S](target: EventTarget, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def fromEvents_=(x: FnCallTargetEventNameTransform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEvents")(x.asInstanceOf[js.Any])
+    inline def fromEvents[T, S](target: Off, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+    inline def fromEvents[T, S](target: Off, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+    inline def fromEvents[T, S](target: EventEmitter, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+    inline def fromEvents[T, S](target: EventEmitter, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+    inline def fromEvents[T, S](target: EventTarget, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+    inline def fromEvents[T, S](target: EventTarget, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+    inline def fromEvents_=(x: FnCallTargetEventNameTransform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromEvents")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.fromNodeCallback")
     @js.native
     def fromNodeCallback: Fn0 = js.native
-    @scala.inline
-    def fromNodeCallback[T, S](fn: js.Function1[/* callback */ js.Function2[/* error */ S | Null, /* result */ T, Unit], Unit]): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def fromNodeCallback_=(x: Fn0): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromNodeCallback")(x.asInstanceOf[js.Any])
+    inline def fromNodeCallback[T, S](fn: js.Function1[/* callback */ js.Function2[/* error */ S | Null, /* result */ T, Unit], Unit]): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
+    inline def fromNodeCallback_=(x: Fn0): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromNodeCallback")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.fromPoll")
     @js.native
     def fromPoll: FnCallIntervalFn = js.native
-    @scala.inline
-    def fromPoll[T](interval: Double, fn: js.Function0[T]): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoll")(interval.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
-    @scala.inline
-    def fromPoll_=(x: FnCallIntervalFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromPoll")(x.asInstanceOf[js.Any])
+    inline def fromPoll[T](interval: Double, fn: js.Function0[T]): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoll")(interval.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
+    inline def fromPoll_=(x: FnCallIntervalFn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromPoll")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.fromPromise")
     @js.native
     def fromPromise: FnCallPromise = js.native
-    @scala.inline
-    def fromPromise[T, S](promise: js.Promise[T]): Property[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Property[T, S]]
-    @scala.inline
-    def fromPromise_=(x: FnCallPromise): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromPromise")(x.asInstanceOf[js.Any])
+    inline def fromPromise[T, S](promise: js.Promise[T]): Property[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Property[T, S]]
+    inline def fromPromise_=(x: FnCallPromise): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromPromise")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.interval")
     @js.native
     def interval: FnCall = js.native
-    @scala.inline
-    def interval[T](interval: Double, value: T): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(interval.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
-    @scala.inline
-    def interval_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interval")(x.asInstanceOf[js.Any])
+    inline def interval[T](interval: Double, value: T): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(interval.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
+    inline def interval_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interval")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.later")
     @js.native
     def later: FnCall = js.native
-    @scala.inline
-    def later[T](interval: Double, value: T): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(interval.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
-    @scala.inline
-    def later_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("later")(x.asInstanceOf[js.Any])
+    inline def later[T](interval: Double, value: T): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(interval.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
+    inline def later_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("later")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.merge")
     @js.native
     def merge: FnCallObss = js.native
-    @scala.inline
-    def merge[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
-    @scala.inline
-    def merge_=(x: FnCallObss): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
+    inline def merge[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
+    inline def merge_=(x: FnCallObss): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("merge")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def pool[T, S](): Pool_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")().asInstanceOf[Pool_[T, S]]
+    inline def pool[T, S](): Pool_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")().asInstanceOf[Pool_[T, S]]
     @JSImport("kefir", "default.pool")
     @js.native
     def pool_Fdefault: Fn1 = js.native
     
-    @scala.inline
-    def pool_Fdefault_=(x: Fn1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pool")(x.asInstanceOf[js.Any])
+    inline def pool_Fdefault_=(x: Fn1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pool")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.repeat")
     @js.native
     def repeat: FnCallGenerator = js.native
-    @scala.inline
-    def repeat[T, S](generator: js.Function1[/* i */ Double, (Observable[T, S]) | Boolean]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(generator.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
-    @scala.inline
-    def repeat_=(x: FnCallGenerator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("repeat")(x.asInstanceOf[js.Any])
+    inline def repeat[T, S](generator: js.Function1[/* i */ Double, (Observable[T, S]) | Boolean]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(generator.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
+    inline def repeat_=(x: FnCallGenerator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("repeat")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.sequentially")
     @js.native
     def sequentially: FnCallIntervalValues = js.native
-    @scala.inline
-    def sequentially[T](interval: Double, values: js.Array[T]): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequentially")(interval.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
-    @scala.inline
-    def sequentially_=(x: FnCallIntervalValues): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sequentially")(x.asInstanceOf[js.Any])
+    inline def sequentially[T](interval: Double, values: js.Array[T]): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequentially")(interval.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
+    inline def sequentially_=(x: FnCallIntervalValues): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sequentially")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.staticLand")
     @js.native
     def staticLand: typings.kefir.anon.Observable = js.native
-    @scala.inline
-    def staticLand_=(x: typings.kefir.anon.Observable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("staticLand")(x.asInstanceOf[js.Any])
+    inline def staticLand_=(x: typings.kefir.anon.Observable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("staticLand")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.stream")
     @js.native
     def stream: FnCallSubscribe = js.native
-    @scala.inline
-    def stream[T, S](subscribe: js.Function1[/* emitter */ Emitter[T, S], js.Function | Unit]): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(subscribe.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def stream_=(x: FnCallSubscribe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
+    inline def stream[T, S](subscribe: js.Function1[/* emitter */ Emitter[T, S], js.Function | Unit]): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(subscribe.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
+    inline def stream_=(x: FnCallSubscribe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.withInterval")
     @js.native
     def withInterval: FnCallIntervalHandler = js.native
-    @scala.inline
-    def withInterval[T, S](interval: Double, handler: js.Function1[/* emitter */ Emitter[T, S], Unit]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("withInterval")(interval.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-    @scala.inline
-    def withInterval_=(x: FnCallIntervalHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withInterval")(x.asInstanceOf[js.Any])
+    inline def withInterval[T, S](interval: Double, handler: js.Function1[/* emitter */ Emitter[T, S], Unit]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("withInterval")(interval.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+    inline def withInterval_=(x: FnCallIntervalHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withInterval")(x.asInstanceOf[js.Any])
     
     @JSImport("kefir", "default.zip")
     @js.native
     def zip: FnCallObssPassiveObssCombinator = js.native
-    @scala.inline
-    def zip[T, S, U](obss: js.Array[Observable[T, S]]): Observable[U, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[U, S]]
-    @scala.inline
-    def zip[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
-    @scala.inline
-    def zip[T, S, U](
+    inline def zip[T, S, U](obss: js.Array[Observable[T, S]]): Observable[U, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[U, S]]
+    inline def zip[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
+    inline def zip[T, S, U](
       obss: js.Array[Observable[T, S]],
       passiveObss: js.Array[Observable[T, S]],
       combinator: js.Function1[/* repeated */ T, U]
     ): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
-    @scala.inline
-    def zip[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: Unit, combinator: js.Function1[/* repeated */ T, U]): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
-    @scala.inline
-    def zip_=(x: FnCallObssPassiveObssCombinator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zip")(x.asInstanceOf[js.Any])
+    inline def zip[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: Unit, combinator: js.Function1[/* repeated */ T, U]): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
+    inline def zip_=(x: FnCallObssPassiveObssCombinator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zip")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("kefir", "Observable")
@@ -883,8 +817,7 @@ object mod {
   @js.native
   class Stream_[T, S] () extends Observable[T, S]
   
-  @scala.inline
-  def combine[T /* <: js.Tuple5[
+  inline def combine[T /* <: js.Tuple5[
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
@@ -929,21 +862,16 @@ object mod {
     ], 
     js.Any
   ]]
-  @scala.inline
-  def combine[T /* <: StringDictionary[Observable[js.Any, js.Any]] */, K /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any]]
-  @scala.inline
-  def combine[T, S, U](obss: js.Array[Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
-  @scala.inline
-  def combine[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
-  @scala.inline
-  def combine[T, S, U](
+  inline def combine[T /* <: StringDictionary[Observable[js.Any, js.Any]] */, K /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T, passiveObss: K): Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[typings.kefir.kefirStrings.combine & TopLevel[T] & TopLevel[K], js.Any]]
+  inline def combine[T, S, U](obss: js.Array[Observable[T, S]], combinator: js.Function1[/* repeated */ T, U]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
+  inline def combine[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
+  inline def combine[T, S, U](
     obss: js.Array[Observable[T, S]],
     passiveObss: js.Array[Observable[T, S]],
     combinator: js.Function1[/* repeated */ T, U]
   ): Stream_[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Stream_[U, S]]
   
-  @scala.inline
-  def combine_0[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: js.Array[Observable[js.Any, js.Any]] */, K](
+  inline def combine_0[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: js.Array[Observable[js.Any, js.Any]] */, K](
     obss: T,
     obssP: P,
     combinator: js.Function2[
@@ -953,11 +881,9 @@ object mod {
     ]
   ): Observable[K, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any], obssP.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[K, js.Any]]
   
-  @scala.inline
-  def combine_T_ArrayNothing[T /* <: js.Array[scala.Nothing] */](obss: T): Stream_[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[scala.Nothing, scala.Nothing]]
+  inline def combine_T_ArrayNothing[T /* <: js.Array[scala.Nothing] */](obss: T): Stream_[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(obss.asInstanceOf[js.Any]).asInstanceOf[Stream_[scala.Nothing, scala.Nothing]]
   
-  @scala.inline
-  def combine_T_ArrayObservableAnyAny[T /* <: js.Array[Observable[js.Any, js.Any]] */](obss: T): Stream_[
+  inline def combine_T_ArrayObservableAnyAny[T /* <: js.Array[Observable[js.Any, js.Any]] */](obss: T): Stream_[
     js.Array[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -973,8 +899,7 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def combine_T_ArrayObservableAnyAnyP_String[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: /* keyof T */ String */](obss: T): Stream_[
+  inline def combine_T_ArrayObservableAnyAnyP_String[T /* <: js.Array[Observable[js.Any, js.Any]] */, P /* <: /* keyof T */ String */](obss: T): Stream_[
     js.Array[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -990,8 +915,7 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def combine_T_StringDictionaryObservableAnyAny[T /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T): Stream_[
+  inline def combine_T_StringDictionaryObservableAnyAny[T /* <: StringDictionary[Observable[js.Any, js.Any]] */](obss: T): Stream_[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: kefir.kefir.ValueOfAnObservable<T[P]>}
     */ combine & TopLevel[T], 
@@ -1003,8 +927,7 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def combine_T_Tuple2ObservableAnyAnyObservableAnyAny[T /* <: js.Tuple2[Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
+  inline def combine_T_Tuple2ObservableAnyAnyObservableAnyAny[T /* <: js.Tuple2[Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
     js.Tuple2[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -1026,8 +949,7 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def combine_T_Tuple3ObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple3[Observable[js.Any, js.Any], Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
+  inline def combine_T_Tuple3ObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple3[Observable[js.Any, js.Any], Observable[js.Any, js.Any], Observable[js.Any, js.Any]] */](obss: T): Stream_[
     js.Tuple3[
       ValueOfAnObservable[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
@@ -1055,8 +977,7 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def combine_T_Tuple4ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple4[
+  inline def combine_T_Tuple4ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple4[
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
@@ -1095,8 +1016,7 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def combine_T_Tuple6ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple6[
+  inline def combine_T_Tuple6ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple6[
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
@@ -1149,8 +1069,7 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def combine_T_Tuple7ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple7[
+  inline def combine_T_Tuple7ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple7[
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
@@ -1210,8 +1129,7 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def combine_T_Tuple8ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple8[
+  inline def combine_T_Tuple8ObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAnyObservableAnyAny[T /* <: js.Tuple8[
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
     Observable[js.Any, js.Any], 
@@ -1278,63 +1196,42 @@ object mod {
     js.Any
   ]]
   
-  @scala.inline
-  def concat[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
+  inline def concat[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
   
-  @scala.inline
-  def constant[T](value: T): Property[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(value.asInstanceOf[js.Any]).asInstanceOf[Property[T, scala.Nothing]]
+  inline def constant[T](value: T): Property[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(value.asInstanceOf[js.Any]).asInstanceOf[Property[T, scala.Nothing]]
   
-  @scala.inline
-  def constantError[T](error: T): Property[scala.Nothing, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("constantError")(error.asInstanceOf[js.Any]).asInstanceOf[Property[scala.Nothing, T]]
+  inline def constantError[T](error: T): Property[scala.Nothing, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("constantError")(error.asInstanceOf[js.Any]).asInstanceOf[Property[scala.Nothing, T]]
   
-  @scala.inline
-  def fromCallback[T](fn: js.Function1[/* callback */ js.Function1[/* value */ T, Unit], Unit]): Stream_[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, scala.Nothing]]
+  inline def fromCallback[T](fn: js.Function1[/* callback */ js.Function1[/* value */ T, Unit], Unit]): Stream_[T, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, scala.Nothing]]
   
-  @scala.inline
-  def fromESObservable[T, S](observable: js.Any): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(observable.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
+  inline def fromESObservable[T, S](observable: js.Any): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromESObservable")(observable.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
   
-  @scala.inline
-  def fromEvents[T, S](target: Off, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-  @scala.inline
-  def fromEvents[T, S](target: Off, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-  @scala.inline
-  def fromEvents[T, S](target: EventEmitter, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-  @scala.inline
-  def fromEvents[T, S](target: EventEmitter, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-  @scala.inline
-  def fromEvents[T, S](target: EventTarget, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
-  @scala.inline
-  def fromEvents[T, S](target: EventTarget, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+  inline def fromEvents[T, S](target: Off, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+  inline def fromEvents[T, S](target: Off, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+  inline def fromEvents[T, S](target: EventEmitter, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+  inline def fromEvents[T, S](target: EventEmitter, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+  inline def fromEvents[T, S](target: EventTarget, eventName: String): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+  inline def fromEvents[T, S](target: EventTarget, eventName: String, transform: js.Function1[/* value */ T, S]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEvents")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
   
-  @scala.inline
-  def fromNodeCallback[T, S](fn: js.Function1[/* callback */ js.Function2[/* error */ S | Null, /* result */ T, Unit], Unit]): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
+  inline def fromNodeCallback[T, S](fn: js.Function1[/* callback */ js.Function2[/* error */ S | Null, /* result */ T, Unit], Unit]): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
   
-  @scala.inline
-  def fromPoll[T](interval: Double, fn: js.Function0[T]): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoll")(interval.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
+  inline def fromPoll[T](interval: Double, fn: js.Function0[T]): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoll")(interval.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
   
-  @scala.inline
-  def fromPromise[T, S](promise: js.Promise[T]): Property[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Property[T, S]]
+  inline def fromPromise[T, S](promise: js.Promise[T]): Property[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Property[T, S]]
   
-  @scala.inline
-  def interval[T](interval: Double, value: T): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(interval.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
+  inline def interval[T](interval: Double, value: T): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(interval.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
   
-  @scala.inline
-  def later[T](wait: Double, value: T): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(wait.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
+  inline def later[T](wait: Double, value: T): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("later")(wait.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
   
-  @scala.inline
-  def merge[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
+  inline def merge[T, S](obss: js.Array[Observable[T, S]]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
   
-  @scala.inline
-  def never(): Stream_[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Stream_[scala.Nothing, scala.Nothing]]
+  inline def never(): Stream_[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Stream_[scala.Nothing, scala.Nothing]]
   
-  @scala.inline
-  def pool[T, S](): Pool_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")().asInstanceOf[Pool_[T, S]]
+  inline def pool[T, S](): Pool_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("pool")().asInstanceOf[Pool_[T, S]]
   
-  @scala.inline
-  def repeat[T, S](generator: js.Function1[/* i */ Double, (Observable[T, S]) | Boolean]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(generator.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
+  inline def repeat[T, S](generator: js.Function1[/* i */ Double, (Observable[T, S]) | Boolean]): Observable[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(generator.asInstanceOf[js.Any]).asInstanceOf[Observable[T, S]]
   
-  @scala.inline
-  def sequentially[T](interval: Double, values: js.Array[T]): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequentially")(interval.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
+  inline def sequentially[T](interval: Double, values: js.Array[T]): Stream_[T, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequentially")(interval.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, scala.Nothing]]
   
   object staticLand {
     
@@ -1345,28 +1242,21 @@ object mod {
     @JSImport("kefir", "staticLand.Observable")
     @js.native
     def Observable: Ap = js.native
-    @scala.inline
-    def Observable_=(x: Ap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Observable")(x.asInstanceOf[js.Any])
+    inline def Observable_=(x: Ap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Observable")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def stream[T, S](subscribe: js.Function1[/* emitter */ Emitter[T, S], js.Function | Unit]): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(subscribe.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
+  inline def stream[T, S](subscribe: js.Function1[/* emitter */ Emitter[T, S], js.Function | Unit]): Stream_[T, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(subscribe.asInstanceOf[js.Any]).asInstanceOf[Stream_[T, S]]
   
-  @scala.inline
-  def withInterval[T, S](interval: Double, handler: js.Function1[/* emitter */ Emitter[T, S], Unit]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("withInterval")(interval.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
+  inline def withInterval[T, S](interval: Double, handler: js.Function1[/* emitter */ Emitter[T, S], Unit]): Stream_[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("withInterval")(interval.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Stream_[T, S]]
   
-  @scala.inline
-  def zip[T, S, U](obss: js.Array[Observable[T, S]]): Observable[U, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[U, S]]
-  @scala.inline
-  def zip[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
-  @scala.inline
-  def zip[T, S, U](
+  inline def zip[T, S, U](obss: js.Array[Observable[T, S]]): Observable[U, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any]).asInstanceOf[Observable[U, S]]
+  inline def zip[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: js.Array[Observable[T, S]]): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
+  inline def zip[T, S, U](
     obss: js.Array[Observable[T, S]],
     passiveObss: js.Array[Observable[T, S]],
     combinator: js.Function1[/* repeated */ T, U]
   ): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
-  @scala.inline
-  def zip[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: Unit, combinator: js.Function1[/* repeated */ T, U]): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
+  inline def zip[T, S, U](obss: js.Array[Observable[T, S]], passiveObss: Unit, combinator: js.Function1[/* repeated */ T, U]): Observable[U, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(obss.asInstanceOf[js.Any], passiveObss.asInstanceOf[js.Any], combinator.asInstanceOf[js.Any])).asInstanceOf[Observable[U, S]]
   
   trait ESObservable[T, S] extends StObject {
     
@@ -1374,17 +1264,14 @@ object mod {
   }
   object ESObservable {
     
-    @scala.inline
-    def apply[T, S](subscribe: ESObserver[T, S] => Unsubscribe): ESObservable[T, S] = {
+    inline def apply[T, S](subscribe: ESObserver[T, S] => Unsubscribe): ESObservable[T, S] = {
       val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
       __obj.asInstanceOf[ESObservable[T, S]]
     }
     
-    @scala.inline
-    implicit class ESObservableMutableBuilder[Self <: ESObservable[?, ?], T, S] (val x: Self & (ESObservable[T, S])) extends AnyVal {
+    extension [Self <: ESObservable[?, ?], T, S](x: Self & (ESObservable[T, S])) {
       
-      @scala.inline
-      def setSubscribe(value: ESObserver[T, S] => Unsubscribe): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: ESObserver[T, S] => Unsubscribe): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -1400,38 +1287,28 @@ object mod {
   }
   object ESObserver {
     
-    @scala.inline
-    def apply[T, S](): ESObserver[T, S] = {
+    inline def apply[T, S](): ESObserver[T, S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ESObserver[T, S]]
     }
     
-    @scala.inline
-    implicit class ESObserverMutableBuilder[Self <: ESObserver[?, ?], T, S] (val x: Self & (ESObserver[T, S])) extends AnyVal {
+    extension [Self <: ESObserver[?, ?], T, S](x: Self & (ESObserver[T, S])) {
       
-      @scala.inline
-      def setComplete(value: () => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setError(value: /* error */ S => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ S => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setNext(value: /* value */ T => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* value */ T => js.Any): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setStart(value: js.Function): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Function): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -1452,8 +1329,7 @@ object mod {
   }
   object Emitter {
     
-    @scala.inline
-    def apply[V, E](
+    inline def apply[V, E](
       emit: V => Boolean,
       emitEvent: Event[V, E] => Boolean,
       end: () => Unit,
@@ -1465,26 +1341,19 @@ object mod {
       __obj.asInstanceOf[Emitter[V, E]]
     }
     
-    @scala.inline
-    implicit class EmitterMutableBuilder[Self <: Emitter[?, ?], V, E] (val x: Self & (Emitter[V, E])) extends AnyVal {
+    extension [Self <: Emitter[?, ?], V, E](x: Self & (Emitter[V, E])) {
       
-      @scala.inline
-      def setEmit(value: V => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+      inline def setEmit(value: V => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmitEvent(value: Event[V, E] => Boolean): Self = StObject.set(x, "emitEvent", js.Any.fromFunction1(value))
+      inline def setEmitEvent(value: Event[V, E] => Boolean): Self = StObject.set(x, "emitEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: E => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: E => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvent(value: Event[V, E] => Boolean): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
+      inline def setEvent(value: Event[V, E] => Boolean): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: V => Boolean): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValue(value: V => Boolean): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
     }
   }
   
@@ -1496,22 +1365,19 @@ object mod {
   trait Event[V, E] extends StObject
   object Event {
     
-    @scala.inline
-    def Type[V](value: V): typings.kefir.anon.Type[V] = {
+    inline def Type[V](value: V): typings.kefir.anon.Type[V] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("value")
       __obj.asInstanceOf[typings.kefir.anon.Type[V]]
     }
     
-    @scala.inline
-    def TypeValue[E](value: E): typings.kefir.anon.TypeValue[E] = {
+    inline def TypeValue[E](value: E): typings.kefir.anon.TypeValue[E] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("error")
       __obj.asInstanceOf[typings.kefir.anon.TypeValue[E]]
     }
     
-    @scala.inline
-    def ValueVoid(value: Unit): typings.kefir.anon.ValueVoid = {
+    inline def ValueVoid(value: Unit): typings.kefir.anon.ValueVoid = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("end")
       __obj.asInstanceOf[typings.kefir.anon.ValueVoid]
@@ -1528,32 +1394,24 @@ object mod {
   }
   object Observer {
     
-    @scala.inline
-    def apply[T, S](): Observer[T, S] = {
+    inline def apply[T, S](): Observer[T, S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Observer[T, S]]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[?, ?], T, S] (val x: Self & (Observer[T, S])) extends AnyVal {
+    extension [Self <: Observer[?, ?], T, S](x: Self & (Observer[T, S])) {
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setError(value: /* error */ S => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ S => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setValue(value: /* value */ T => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValue(value: /* value */ T => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -1565,20 +1423,16 @@ object mod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(closed: Boolean, unsubscribe: () => Unit): Subscription = {
+    inline def apply(closed: Boolean, unsubscribe: () => Unit): Subscription = {
       val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+      inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
   

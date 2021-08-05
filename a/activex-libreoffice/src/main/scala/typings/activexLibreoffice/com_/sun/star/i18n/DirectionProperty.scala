@@ -48,60 +48,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionProperty extends StObject
 object DirectionProperty {
   
-  @scala.inline
-  def ARABIC_NUMBER: `5` = 5.asInstanceOf[`5`]
+  inline def ARABIC_NUMBER: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def BLOCK_SEPARATOR: `7` = 7.asInstanceOf[`7`]
+  inline def BLOCK_SEPARATOR: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def BOUNDARY_NEUTRAL: `18` = 18.asInstanceOf[`18`]
+  inline def BOUNDARY_NEUTRAL: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def COMMON_NUMBER_SEPARATOR: `6` = 6.asInstanceOf[`6`]
+  inline def COMMON_NUMBER_SEPARATOR: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def DIR_NON_SPACING_MARK: `17` = 17.asInstanceOf[`17`]
+  inline def DIR_NON_SPACING_MARK: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def EUROPEAN_NUMBER: `2` = 2.asInstanceOf[`2`]
+  inline def EUROPEAN_NUMBER: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def EUROPEAN_NUMBER_SEPARATOR: `3` = 3.asInstanceOf[`3`]
+  inline def EUROPEAN_NUMBER_SEPARATOR: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def EUROPEAN_NUMBER_TERMINATOR: `4` = 4.asInstanceOf[`4`]
+  inline def EUROPEAN_NUMBER_TERMINATOR: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def LEFT_TO_RIGHT: `0` = 0.asInstanceOf[`0`]
+  inline def LEFT_TO_RIGHT: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def LEFT_TO_RIGHT_EMBEDDING: `11` = 11.asInstanceOf[`11`]
+  inline def LEFT_TO_RIGHT_EMBEDDING: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def LEFT_TO_RIGHT_OVERRIDE: `12` = 12.asInstanceOf[`12`]
+  inline def LEFT_TO_RIGHT_OVERRIDE: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def OTHER_NEUTRAL: `10` = 10.asInstanceOf[`10`]
+  inline def OTHER_NEUTRAL: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def POP_DIRECTIONAL_FORMAT: `16` = 16.asInstanceOf[`16`]
+  inline def POP_DIRECTIONAL_FORMAT: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def RIGHT_TO_LEFT: `1` = 1.asInstanceOf[`1`]
+  inline def RIGHT_TO_LEFT: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def RIGHT_TO_LEFT_ARABIC: `13` = 13.asInstanceOf[`13`]
+  inline def RIGHT_TO_LEFT_ARABIC: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def RIGHT_TO_LEFT_EMBEDDING: `14` = 14.asInstanceOf[`14`]
+  inline def RIGHT_TO_LEFT_EMBEDDING: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def RIGHT_TO_LEFT_OVERRIDE: `15` = 15.asInstanceOf[`15`]
+  inline def RIGHT_TO_LEFT_OVERRIDE: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def SEGMENT_SEPARATOR: `8` = 8.asInstanceOf[`8`]
+  inline def SEGMENT_SEPARATOR: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def WHITE_SPACE_NEUTRAL: `9` = 9.asInstanceOf[`9`]
+  inline def WHITE_SPACE_NEUTRAL: `9` = 9.asInstanceOf[`9`]
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XRTargetRayMode extends StObject
 object XRTargetRayMode {
   
-  @scala.inline
-  def gaze: typings.three.threeStrings.gaze = "gaze".asInstanceOf[typings.three.threeStrings.gaze]
+  inline def gaze: typings.three.threeStrings.gaze = "gaze".asInstanceOf[typings.three.threeStrings.gaze]
   
-  @scala.inline
-  def screen: typings.three.threeStrings.screen = "screen".asInstanceOf[typings.three.threeStrings.screen]
+  inline def screen: typings.three.threeStrings.screen = "screen".asInstanceOf[typings.three.threeStrings.screen]
   
-  @scala.inline
-  def `tracked-pointer`: typings.three.threeStrings.`tracked-pointer` = "tracked-pointer".asInstanceOf[typings.three.threeStrings.`tracked-pointer`]
+  inline def `tracked-pointer`: typings.three.threeStrings.`tracked-pointer` = "tracked-pointer".asInstanceOf[typings.three.threeStrings.`tracked-pointer`]
 }

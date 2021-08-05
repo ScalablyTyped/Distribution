@@ -30,8 +30,7 @@ trait VirtualServiceData extends StObject {
 }
 object VirtualServiceData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     meshName: ResourceName,
     metadata: ResourceMetadata,
     spec: VirtualServiceSpec,
@@ -42,22 +41,16 @@ object VirtualServiceData {
     __obj.asInstanceOf[VirtualServiceData]
   }
   
-  @scala.inline
-  implicit class VirtualServiceDataMutableBuilder[Self <: VirtualServiceData] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualServiceData](x: Self) {
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: VirtualServiceSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: VirtualServiceSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: VirtualServiceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VirtualServiceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualServiceName(value: ServiceName): Self = StObject.set(x, "virtualServiceName", value.asInstanceOf[js.Any])
+    inline def setVirtualServiceName(value: ServiceName): Self = StObject.set(x, "virtualServiceName", value.asInstanceOf[js.Any])
   }
 }

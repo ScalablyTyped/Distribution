@@ -19,20 +19,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setCoverageReporter(value: KarmaCoverageReporterrepo): Self = StObject.set(x, "coverageReporter", value.asInstanceOf[js.Any])
+      inline def setCoverageReporter(value: KarmaCoverageReporterrepo): Self = StObject.set(x, "coverageReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageReporterUndefined: Self = StObject.set(x, "coverageReporter", js.undefined)
+      inline def setCoverageReporterUndefined: Self = StObject.set(x, "coverageReporter", js.undefined)
     }
   }
   
@@ -86,86 +82,60 @@ object mod {
   }
   object KarmaCoverageReporter {
     
-    @scala.inline
-    def apply(): KarmaCoverageReporter = {
+    inline def apply(): KarmaCoverageReporter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KarmaCoverageReporter]
     }
     
-    @scala.inline
-    implicit class KarmaCoverageReporterMutableBuilder[Self <: KarmaCoverageReporter] (val x: Self) extends AnyVal {
+    extension [Self <: KarmaCoverageReporter](x: Self) {
       
-      @scala.inline
-      def setCheck(value: js.Any): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: js.Any): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setIncludeAllSources(value: Boolean): Self = StObject.set(x, "includeAllSources", value.asInstanceOf[js.Any])
+      inline def setIncludeAllSources(value: Boolean): Self = StObject.set(x, "includeAllSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAllSourcesUndefined: Self = StObject.set(x, "includeAllSources", js.undefined)
+      inline def setIncludeAllSourcesUndefined: Self = StObject.set(x, "includeAllSources", js.undefined)
       
-      @scala.inline
-      def setInstrumenter(value: js.Any): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
+      inline def setInstrumenter(value: js.Any): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstrumenterUndefined: Self = StObject.set(x, "instrumenter", js.undefined)
+      inline def setInstrumenterUndefined: Self = StObject.set(x, "instrumenter", js.undefined)
       
-      @scala.inline
-      def setReporters(value: js.Array[Reporter]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+      inline def setReporters(value: js.Array[Reporter]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
+      inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
       
-      @scala.inline
-      def setReportersVarargs(value: Reporter*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+      inline def setReportersVarargs(value: Reporter*): Self = StObject.set(x, "reporters", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceStore(value: Store): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
+      inline def setSourceStore(value: Store): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceStoreUndefined: Self = StObject.set(x, "sourceStore", js.undefined)
+      inline def setSourceStoreUndefined: Self = StObject.set(x, "sourceStore", js.undefined)
       
-      @scala.inline
-      def setSubdir(value: String | (js.Function1[/* browser */ String, String])): Self = StObject.set(x, "subdir", value.asInstanceOf[js.Any])
+      inline def setSubdir(value: String | (js.Function1[/* browser */ String, String])): Self = StObject.set(x, "subdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirFunction1(value: /* browser */ String => String): Self = StObject.set(x, "subdir", js.Any.fromFunction1(value))
+      inline def setSubdirFunction1(value: /* browser */ String => String): Self = StObject.set(x, "subdir", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubdirUndefined: Self = StObject.set(x, "subdir", js.undefined)
+      inline def setSubdirUndefined: Self = StObject.set(x, "subdir", js.undefined)
       
-      @scala.inline
-      def setType(value: ReporterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ReporterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUseJSExtensionForCoffeeScript(value: Boolean): Self = StObject.set(x, "useJSExtensionForCoffeeScript", value.asInstanceOf[js.Any])
+      inline def setUseJSExtensionForCoffeeScript(value: Boolean): Self = StObject.set(x, "useJSExtensionForCoffeeScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseJSExtensionForCoffeeScriptUndefined: Self = StObject.set(x, "useJSExtensionForCoffeeScript", js.undefined)
+      inline def setUseJSExtensionForCoffeeScriptUndefined: Self = StObject.set(x, "useJSExtensionForCoffeeScript", js.undefined)
       
-      @scala.inline
-      def setWatermarks(value: js.Any): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
+      inline def setWatermarks(value: js.Any): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatermarksUndefined: Self = StObject.set(x, "watermarks", js.undefined)
+      inline def setWatermarksUndefined: Self = StObject.set(x, "watermarks", js.undefined)
     }
   }
   
@@ -181,39 +151,29 @@ object mod {
   }
   object Reporter {
     
-    @scala.inline
-    def apply(`type`: ReporterType): Reporter = {
+    inline def apply(`type`: ReporterType): Reporter = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Reporter]
     }
     
-    @scala.inline
-    implicit class ReporterMutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
+    extension [Self <: Reporter](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setSubdir(value: String | (js.Function1[/* browser */ String, String])): Self = StObject.set(x, "subdir", value.asInstanceOf[js.Any])
+      inline def setSubdir(value: String | (js.Function1[/* browser */ String, String])): Self = StObject.set(x, "subdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirFunction1(value: /* browser */ String => String): Self = StObject.set(x, "subdir", js.Any.fromFunction1(value))
+      inline def setSubdirFunction1(value: /* browser */ String => String): Self = StObject.set(x, "subdir", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubdirUndefined: Self = StObject.set(x, "subdir", js.undefined)
+      inline def setSubdirUndefined: Self = StObject.set(x, "subdir", js.undefined)
       
-      @scala.inline
-      def setType(value: ReporterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ReporterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,37 +193,26 @@ object mod {
   trait ReporterType extends StObject
   object ReporterType {
     
-    @scala.inline
-    def cobertura: typings.karmaCoverage.karmaCoverageStrings.cobertura = "cobertura".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.cobertura]
+    inline def cobertura: typings.karmaCoverage.karmaCoverageStrings.cobertura = "cobertura".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.cobertura]
     
-    @scala.inline
-    def html: typings.karmaCoverage.karmaCoverageStrings.html = "html".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.html]
+    inline def html: typings.karmaCoverage.karmaCoverageStrings.html = "html".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.html]
     
-    @scala.inline
-    def `in-memory`: typings.karmaCoverage.karmaCoverageStrings.`in-memory` = "in-memory".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.`in-memory`]
+    inline def `in-memory`: typings.karmaCoverage.karmaCoverageStrings.`in-memory` = "in-memory".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.`in-memory`]
     
-    @scala.inline
-    def json: typings.karmaCoverage.karmaCoverageStrings.json = "json".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.json]
+    inline def json: typings.karmaCoverage.karmaCoverageStrings.json = "json".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.json]
     
-    @scala.inline
-    def `json-summary`: typings.karmaCoverage.karmaCoverageStrings.`json-summary` = "json-summary".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.`json-summary`]
+    inline def `json-summary`: typings.karmaCoverage.karmaCoverageStrings.`json-summary` = "json-summary".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.`json-summary`]
     
-    @scala.inline
-    def lcov: typings.karmaCoverage.karmaCoverageStrings.lcov = "lcov".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.lcov]
+    inline def lcov: typings.karmaCoverage.karmaCoverageStrings.lcov = "lcov".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.lcov]
     
-    @scala.inline
-    def lcovonly: typings.karmaCoverage.karmaCoverageStrings.lcovonly = "lcovonly".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.lcovonly]
+    inline def lcovonly: typings.karmaCoverage.karmaCoverageStrings.lcovonly = "lcovonly".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.lcovonly]
     
-    @scala.inline
-    def none: typings.karmaCoverage.karmaCoverageStrings.none = "none".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.none]
+    inline def none: typings.karmaCoverage.karmaCoverageStrings.none = "none".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.none]
     
-    @scala.inline
-    def teamcity: typings.karmaCoverage.karmaCoverageStrings.teamcity = "teamcity".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.teamcity]
+    inline def teamcity: typings.karmaCoverage.karmaCoverageStrings.teamcity = "teamcity".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.teamcity]
     
-    @scala.inline
-    def text: typings.karmaCoverage.karmaCoverageStrings.text = "text".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.text]
+    inline def text: typings.karmaCoverage.karmaCoverageStrings.text = "text".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.text]
     
-    @scala.inline
-    def `text-summary`: typings.karmaCoverage.karmaCoverageStrings.`text-summary` = "text-summary".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.`text-summary`]
+    inline def `text-summary`: typings.karmaCoverage.karmaCoverageStrings.`text-summary` = "text-summary".asInstanceOf[typings.karmaCoverage.karmaCoverageStrings.`text-summary`]
   }
 }

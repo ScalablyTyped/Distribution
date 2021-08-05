@@ -11,19 +11,15 @@ trait InterconnectAttachmentPrivateInfo extends StObject {
 }
 object InterconnectAttachmentPrivateInfo {
   
-  @scala.inline
-  def apply(): InterconnectAttachmentPrivateInfo = {
+  inline def apply(): InterconnectAttachmentPrivateInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterconnectAttachmentPrivateInfo]
   }
   
-  @scala.inline
-  implicit class InterconnectAttachmentPrivateInfoMutableBuilder[Self <: InterconnectAttachmentPrivateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InterconnectAttachmentPrivateInfo](x: Self) {
     
-    @scala.inline
-    def setTag8021q(value: Double): Self = StObject.set(x, "tag8021q", value.asInstanceOf[js.Any])
+    inline def setTag8021q(value: Double): Self = StObject.set(x, "tag8021q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag8021qUndefined: Self = StObject.set(x, "tag8021q", js.undefined)
+    inline def setTag8021qUndefined: Self = StObject.set(x, "tag8021q", js.undefined)
   }
 }

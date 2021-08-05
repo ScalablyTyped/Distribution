@@ -29,31 +29,23 @@ trait FilePondHookProps extends StObject {
 }
 object FilePondHookProps {
   
-  @scala.inline
-  def apply(): FilePondHookProps = {
+  inline def apply(): FilePondHookProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilePondHookProps]
   }
   
-  @scala.inline
-  implicit class FilePondHookPropsMutableBuilder[Self <: FilePondHookProps] (val x: Self) extends AnyVal {
+  extension [Self <: FilePondHookProps](x: Self) {
     
-    @scala.inline
-    def setBeforeAddFile(value: /* item */ FilePondFile => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "beforeAddFile", js.Any.fromFunction1(value))
+    inline def setBeforeAddFile(value: /* item */ FilePondFile => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "beforeAddFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeAddFileUndefined: Self = StObject.set(x, "beforeAddFile", js.undefined)
+    inline def setBeforeAddFileUndefined: Self = StObject.set(x, "beforeAddFile", js.undefined)
     
-    @scala.inline
-    def setBeforeDropFile(value: /* file */ FilePondFile | String => Boolean): Self = StObject.set(x, "beforeDropFile", js.Any.fromFunction1(value))
+    inline def setBeforeDropFile(value: /* file */ FilePondFile | String => Boolean): Self = StObject.set(x, "beforeDropFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeDropFileUndefined: Self = StObject.set(x, "beforeDropFile", js.undefined)
+    inline def setBeforeDropFileUndefined: Self = StObject.set(x, "beforeDropFile", js.undefined)
     
-    @scala.inline
-    def setBeforeRemoveFile(value: /* item */ FilePondFile => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "beforeRemoveFile", js.Any.fromFunction1(value))
+    inline def setBeforeRemoveFile(value: /* item */ FilePondFile => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "beforeRemoveFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeRemoveFileUndefined: Self = StObject.set(x, "beforeRemoveFile", js.undefined)
+    inline def setBeforeRemoveFileUndefined: Self = StObject.set(x, "beforeRemoveFile", js.undefined)
   }
 }

@@ -12,22 +12,17 @@ trait RefreshTokenParams extends StObject {
 }
 object RefreshTokenParams {
   
-  @scala.inline
-  def apply(refreshToken: String): RefreshTokenParams = {
+  inline def apply(refreshToken: String): RefreshTokenParams = {
     val __obj = js.Dynamic.literal(refreshToken = refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshTokenParams]
   }
   
-  @scala.inline
-  implicit class RefreshTokenParamsMutableBuilder[Self <: RefreshTokenParams] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshTokenParams](x: Self) {
     
-    @scala.inline
-    def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

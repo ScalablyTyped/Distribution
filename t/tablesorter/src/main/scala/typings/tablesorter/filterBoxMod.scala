@@ -15,16 +15,12 @@ object filterBoxMod {
   trait FilterBox extends StObject
   object FilterBox {
     
-    @scala.inline
-    def from: typings.tablesorter.tablesorterStrings.from = "from".asInstanceOf[typings.tablesorter.tablesorterStrings.from]
+    inline def from: typings.tablesorter.tablesorterStrings.from = "from".asInstanceOf[typings.tablesorter.tablesorterStrings.from]
     
-    @scala.inline
-    def search: typings.tablesorter.tablesorterStrings.search = "search".asInstanceOf[typings.tablesorter.tablesorterStrings.search]
+    inline def search: typings.tablesorter.tablesorterStrings.search = "search".asInstanceOf[typings.tablesorter.tablesorterStrings.search]
     
-    @scala.inline
-    def select: typings.tablesorter.tablesorterStrings.select = "select".asInstanceOf[typings.tablesorter.tablesorterStrings.select]
+    inline def select: typings.tablesorter.tablesorterStrings.select = "select".asInstanceOf[typings.tablesorter.tablesorterStrings.select]
     
-    @scala.inline
-    def to: typings.tablesorter.tablesorterStrings.to = "to".asInstanceOf[typings.tablesorter.tablesorterStrings.to]
+    inline def to: typings.tablesorter.tablesorterStrings.to = "to".asInstanceOf[typings.tablesorter.tablesorterStrings.to]
   }
 }

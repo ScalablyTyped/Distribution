@@ -25,8 +25,6 @@ object ShowGeometryInstanceAttribute {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def toValue(show: Boolean): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(show.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  @scala.inline
-  def toValue(show: Boolean, result: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(show.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def toValue(show: Boolean): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(show.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def toValue(show: Boolean, result: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(show.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

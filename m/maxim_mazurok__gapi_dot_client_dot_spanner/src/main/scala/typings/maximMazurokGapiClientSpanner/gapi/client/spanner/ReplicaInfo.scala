@@ -20,31 +20,23 @@ trait ReplicaInfo extends StObject {
 }
 object ReplicaInfo {
   
-  @scala.inline
-  def apply(): ReplicaInfo = {
+  inline def apply(): ReplicaInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicaInfo]
   }
   
-  @scala.inline
-  implicit class ReplicaInfoMutableBuilder[Self <: ReplicaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicaInfo](x: Self) {
     
-    @scala.inline
-    def setDefaultLeaderLocation(value: Boolean): Self = StObject.set(x, "defaultLeaderLocation", value.asInstanceOf[js.Any])
+    inline def setDefaultLeaderLocation(value: Boolean): Self = StObject.set(x, "defaultLeaderLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLeaderLocationUndefined: Self = StObject.set(x, "defaultLeaderLocation", js.undefined)
+    inline def setDefaultLeaderLocationUndefined: Self = StObject.set(x, "defaultLeaderLocation", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

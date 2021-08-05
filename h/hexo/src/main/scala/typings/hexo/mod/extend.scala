@@ -66,44 +66,32 @@ object extend {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setArguments(value: js.Array[Desc]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+        inline def setArguments(value: js.Array[Desc]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+        inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
         
-        @scala.inline
-        def setArgumentsVarargs(value: Desc*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+        inline def setArgumentsVarargs(value: Desc*): Self = StObject.set(x, "arguments", js.Array(value :_*))
         
-        @scala.inline
-        def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+        inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+        inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
         
-        @scala.inline
-        def setOptions(value: js.Array[Desc]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: js.Array[Desc]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
         
-        @scala.inline
-        def setOptionsVarargs(value: Desc*): Self = StObject.set(x, "options", js.Array(value :_*))
+        inline def setOptionsVarargs(value: Desc*): Self = StObject.set(x, "options", js.Array(value :_*))
         
-        @scala.inline
-        def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+        inline def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+        inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
       }
     }
   }
@@ -114,8 +102,7 @@ object extend {
   }
   object Deployer {
     
-    @scala.inline
-    def apply(register: (String, js.Function1[/* args */ Config, Unit]) => Unit): Deployer = {
+    inline def apply(register: (String, js.Function1[/* args */ Config, Unit]) => Unit): Deployer = {
       val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[Deployer]
     }
@@ -128,28 +115,22 @@ object extend {
     }
     object Config {
       
-      @scala.inline
-      def apply(): Config = {
+      inline def apply(): Config = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Config]
       }
       
-      @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      extension [Self <: Config](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
-    @scala.inline
-    implicit class DeployerMutableBuilder[Self <: Deployer] (val x: Self) extends AnyVal {
+    extension [Self <: Deployer](x: Self) {
       
-      @scala.inline
-      def setRegister(value: (String, js.Function1[/* args */ Config, Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, js.Function1[/* args */ Config, Unit]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
   }
   
@@ -290,29 +271,22 @@ object extend {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.hexo.mod.extend.Filter.Options = {
+      inline def apply(): typings.hexo.mod.extend.Filter.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.hexo.mod.extend.Filter.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.hexo.mod.extend.Filter.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.hexo.mod.extend.Filter.Options](x: Self) {
         
-        @scala.inline
-        def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        @scala.inline
-        def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+        inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
         
-        @scala.inline
-        def setContext(value: Hexo): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: Hexo): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+        inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       }
     }
   }
@@ -323,17 +297,14 @@ object extend {
   }
   object Generator {
     
-    @scala.inline
-    def apply(register: (String, js.Function1[/* locals */ Site, Return | js.Array[Return]]) => Unit): Generator = {
+    inline def apply(register: (String, js.Function1[/* locals */ Site, Return | js.Array[Return]]) => Unit): Generator = {
       val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[Generator]
     }
     
-    @scala.inline
-    implicit class GeneratorMutableBuilder[Self <: Generator] (val x: Self) extends AnyVal {
+    extension [Self <: Generator](x: Self) {
       
-      @scala.inline
-      def setRegister(value: (String, js.Function1[/* locals */ Site, Return | js.Array[Return]]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, js.Function1[/* locals */ Site, Return | js.Array[Return]]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
     
     trait Return extends StObject {
@@ -352,26 +323,20 @@ object extend {
     }
     object Return {
       
-      @scala.inline
-      def apply(data: js.Any, layout: String | js.Array[String], path: String): Return = {
+      inline def apply(data: js.Any, layout: String | js.Array[String], path: String): Return = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
         __obj.asInstanceOf[Return]
       }
       
-      @scala.inline
-      implicit class ReturnMutableBuilder[Self <: Return] (val x: Self) extends AnyVal {
+      extension [Self <: Return](x: Self) {
         
-        @scala.inline
-        def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayout(value: String | js.Array[String]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+        inline def setLayout(value: String | js.Array[String]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutVarargs(value: String*): Self = StObject.set(x, "layout", js.Array(value :_*))
+        inline def setLayoutVarargs(value: String*): Self = StObject.set(x, "layout", js.Array(value :_*))
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -386,8 +351,7 @@ object extend {
   }
   object Helper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get: String => js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]],
       list: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
       register: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit
@@ -396,17 +360,13 @@ object extend {
       __obj.asInstanceOf[Helper]
     }
     
-    @scala.inline
-    implicit class HelperMutableBuilder[Self <: Helper] (val x: Self) extends AnyVal {
+    extension [Self <: Helper](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setList(value: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+      inline def setList(value: () => StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegister(value: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, js.Function1[/* repeated */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
   }
   
@@ -419,19 +379,16 @@ object extend {
   }
   object Migrator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       register: (String, js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ js.Any, Unit], Unit]) => Unit
     ): Migrator = {
       val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[Migrator]
     }
     
-    @scala.inline
-    implicit class MigratorMutableBuilder[Self <: Migrator] (val x: Self) extends AnyVal {
+    extension [Self <: Migrator](x: Self) {
       
-      @scala.inline
-      def setRegister(
+      inline def setRegister(
         value: (String, js.Function2[/* args */ ParsedArgs, /* fn */ js.Function1[/* err */ js.Any, Unit], Unit]) => Unit
       ): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
@@ -484,23 +441,18 @@ object extend {
   }
   object RendererData {
     
-    @scala.inline
-    def apply(text: String): RendererData = {
+    inline def apply(text: String): RendererData = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[RendererData]
     }
     
-    @scala.inline
-    implicit class RendererDataMutableBuilder[Self <: RendererData] (val x: Self) extends AnyVal {
+    extension [Self <: RendererData](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -527,26 +479,20 @@ object extend {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.hexo.mod.extend.Tag.Options = {
+      inline def apply(): typings.hexo.mod.extend.Tag.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.hexo.mod.extend.Tag.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.hexo.mod.extend.Tag.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.hexo.mod.extend.Tag.Options](x: Self) {
         
-        @scala.inline
-        def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+        inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+        inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
         
-        @scala.inline
-        def setEnds(value: Boolean): Self = StObject.set(x, "ends", value.asInstanceOf[js.Any])
+        inline def setEnds(value: Boolean): Self = StObject.set(x, "ends", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndsUndefined: Self = StObject.set(x, "ends", js.undefined)
+        inline def setEndsUndefined: Self = StObject.set(x, "ends", js.undefined)
       }
     }
   }

@@ -11,16 +11,13 @@ trait Element extends StObject {
 }
 object Element {
   
-  @scala.inline
-  def apply(element: Node): Element = {
+  inline def apply(element: Node): Element = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

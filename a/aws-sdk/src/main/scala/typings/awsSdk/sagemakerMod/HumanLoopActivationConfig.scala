@@ -13,16 +13,13 @@ trait HumanLoopActivationConfig extends StObject {
 }
 object HumanLoopActivationConfig {
   
-  @scala.inline
-  def apply(HumanLoopActivationConditionsConfig: HumanLoopActivationConditionsConfig): HumanLoopActivationConfig = {
+  inline def apply(HumanLoopActivationConditionsConfig: HumanLoopActivationConditionsConfig): HumanLoopActivationConfig = {
     val __obj = js.Dynamic.literal(HumanLoopActivationConditionsConfig = HumanLoopActivationConditionsConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumanLoopActivationConfig]
   }
   
-  @scala.inline
-  implicit class HumanLoopActivationConfigMutableBuilder[Self <: HumanLoopActivationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HumanLoopActivationConfig](x: Self) {
     
-    @scala.inline
-    def setHumanLoopActivationConditionsConfig(value: HumanLoopActivationConditionsConfig): Self = StObject.set(x, "HumanLoopActivationConditionsConfig", value.asInstanceOf[js.Any])
+    inline def setHumanLoopActivationConditionsConfig(value: HumanLoopActivationConditionsConfig): Self = StObject.set(x, "HumanLoopActivationConditionsConfig", value.asInstanceOf[js.Any])
   }
 }

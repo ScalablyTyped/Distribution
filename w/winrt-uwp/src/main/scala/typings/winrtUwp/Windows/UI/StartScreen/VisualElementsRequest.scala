@@ -26,8 +26,7 @@ trait VisualElementsRequest extends StObject {
 }
 object VisualElementsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternateVisualElements: IVectorView[SecondaryTileVisualElements],
     deadline: Date,
     getDeferral: () => VisualElementsRequestDeferral,
@@ -37,19 +36,14 @@ object VisualElementsRequest {
     __obj.asInstanceOf[VisualElementsRequest]
   }
   
-  @scala.inline
-  implicit class VisualElementsRequestMutableBuilder[Self <: VisualElementsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VisualElementsRequest](x: Self) {
     
-    @scala.inline
-    def setAlternateVisualElements(value: IVectorView[SecondaryTileVisualElements]): Self = StObject.set(x, "alternateVisualElements", value.asInstanceOf[js.Any])
+    inline def setAlternateVisualElements(value: IVectorView[SecondaryTileVisualElements]): Self = StObject.set(x, "alternateVisualElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => VisualElementsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => VisualElementsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisualElements(value: SecondaryTileVisualElements): Self = StObject.set(x, "visualElements", value.asInstanceOf[js.Any])
+    inline def setVisualElements(value: SecondaryTileVisualElements): Self = StObject.set(x, "visualElements", value.asInstanceOf[js.Any])
   }
 }

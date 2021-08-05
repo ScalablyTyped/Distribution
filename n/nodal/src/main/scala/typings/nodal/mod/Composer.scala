@@ -124,9 +124,9 @@ class Composer[T /* <: Model */] protected () extends StObject {
     */
   /* private */ def __removeLastLimitCommand__(composerArray: js.Any): js.Any = js.native
   
-  var _command: js.Any = js.native
+  /* private */ var _command: js.Any = js.native
   
-  var _parent: js.Any = js.native
+  /* private */ var _parent: js.Any = js.native
   
   /**
     * Aggregates a field

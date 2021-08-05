@@ -21,8 +21,7 @@ trait SketchMSImmutableForeignSymbol extends StObject {
 }
 object SketchMSImmutableForeignSymbol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     libraryID: String,
     originalMaster: SketchMSSymbolMasterLayer,
     sourceLibraryName: String,
@@ -33,25 +32,18 @@ object SketchMSImmutableForeignSymbol {
     __obj.asInstanceOf[SketchMSImmutableForeignSymbol]
   }
   
-  @scala.inline
-  implicit class SketchMSImmutableForeignSymbolMutableBuilder[Self <: SketchMSImmutableForeignSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSImmutableForeignSymbol](x: Self) {
     
-    @scala.inline
-    def setLibraryID(value: String): Self = StObject.set(x, "libraryID", value.asInstanceOf[js.Any])
+    inline def setLibraryID(value: String): Self = StObject.set(x, "libraryID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalMaster(value: SketchMSSymbolMasterLayer): Self = StObject.set(x, "originalMaster", value.asInstanceOf[js.Any])
+    inline def setOriginalMaster(value: SketchMSSymbolMasterLayer): Self = StObject.set(x, "originalMaster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLibraryName(value: String): Self = StObject.set(x, "sourceLibraryName", value.asInstanceOf[js.Any])
+    inline def setSourceLibraryName(value: String): Self = StObject.set(x, "sourceLibraryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolMaster(value: SketchMSSymbolMasterLayer): Self = StObject.set(x, "symbolMaster", value.asInstanceOf[js.Any])
+    inline def setSymbolMaster(value: SketchMSSymbolMasterLayer): Self = StObject.set(x, "symbolMaster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolPrivate(value: Boolean): Self = StObject.set(x, "symbolPrivate", value.asInstanceOf[js.Any])
+    inline def setSymbolPrivate(value: Boolean): Self = StObject.set(x, "symbolPrivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: MSImmutableForeignSymbol): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: MSImmutableForeignSymbol): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

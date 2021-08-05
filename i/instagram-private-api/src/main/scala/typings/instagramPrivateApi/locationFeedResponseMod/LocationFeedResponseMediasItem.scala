@@ -10,16 +10,13 @@ trait LocationFeedResponseMediasItem extends StObject {
 }
 object LocationFeedResponseMediasItem {
   
-  @scala.inline
-  def apply(media: LocationFeedResponseMedia): LocationFeedResponseMediasItem = {
+  inline def apply(media: LocationFeedResponseMedia): LocationFeedResponseMediasItem = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationFeedResponseMediasItem]
   }
   
-  @scala.inline
-  implicit class LocationFeedResponseMediasItemMutableBuilder[Self <: LocationFeedResponseMediasItem] (val x: Self) extends AnyVal {
+  extension [Self <: LocationFeedResponseMediasItem](x: Self) {
     
-    @scala.inline
-    def setMedia(value: LocationFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: LocationFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait TintColor extends StObject {
 }
 object TintColor {
   
-  @scala.inline
-  def apply(): TintColor = {
+  inline def apply(): TintColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TintColor]
   }
   
-  @scala.inline
-  implicit class TintColorMutableBuilder[Self <: TintColor] (val x: Self) extends AnyVal {
+  extension [Self <: TintColor](x: Self) {
     
-    @scala.inline
-    def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+    inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+    inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
   }
 }

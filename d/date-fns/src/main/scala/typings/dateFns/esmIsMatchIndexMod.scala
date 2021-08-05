@@ -9,10 +9,8 @@ object esmIsMatchIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(dateString: String, formatString: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def apply(dateString: String, formatString: String, options: UseAdditionalWeekYearTokensWeekStartsOn): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(dateString: String, formatString: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(dateString: String, formatString: String, options: UseAdditionalWeekYearTokensWeekStartsOn): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("date-fns/esm/isMatch/index", JSImport.Default)
     @js.native

@@ -12,22 +12,17 @@ trait TestResultHistory extends StObject {
 }
 object TestResultHistory {
   
-  @scala.inline
-  def apply(groupByField: String, resultsForGroup: js.Array[TestResultHistoryDetailsForGroup]): TestResultHistory = {
+  inline def apply(groupByField: String, resultsForGroup: js.Array[TestResultHistoryDetailsForGroup]): TestResultHistory = {
     val __obj = js.Dynamic.literal(groupByField = groupByField.asInstanceOf[js.Any], resultsForGroup = resultsForGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResultHistory]
   }
   
-  @scala.inline
-  implicit class TestResultHistoryMutableBuilder[Self <: TestResultHistory] (val x: Self) extends AnyVal {
+  extension [Self <: TestResultHistory](x: Self) {
     
-    @scala.inline
-    def setGroupByField(value: String): Self = StObject.set(x, "groupByField", value.asInstanceOf[js.Any])
+    inline def setGroupByField(value: String): Self = StObject.set(x, "groupByField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsForGroup(value: js.Array[TestResultHistoryDetailsForGroup]): Self = StObject.set(x, "resultsForGroup", value.asInstanceOf[js.Any])
+    inline def setResultsForGroup(value: js.Array[TestResultHistoryDetailsForGroup]): Self = StObject.set(x, "resultsForGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsForGroupVarargs(value: TestResultHistoryDetailsForGroup*): Self = StObject.set(x, "resultsForGroup", js.Array(value :_*))
+    inline def setResultsForGroupVarargs(value: TestResultHistoryDetailsForGroup*): Self = StObject.set(x, "resultsForGroup", js.Array(value :_*))
   }
 }

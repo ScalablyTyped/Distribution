@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlClear extends StObject
 object htmlClear {
   
-  @scala.inline
-  def htmlClearAll: `1` = 1.asInstanceOf[`1`]
+  inline def htmlClearAll: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlClearBoth: `4` = 4.asInstanceOf[`4`]
+  inline def htmlClearBoth: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def htmlClearLeft: `2` = 2.asInstanceOf[`2`]
+  inline def htmlClearLeft: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlClearNone: `5` = 5.asInstanceOf[`5`]
+  inline def htmlClearNone: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def htmlClearNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def htmlClearNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlClearRight: `3` = 3.asInstanceOf[`3`]
+  inline def htmlClearRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlClear_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlClear_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

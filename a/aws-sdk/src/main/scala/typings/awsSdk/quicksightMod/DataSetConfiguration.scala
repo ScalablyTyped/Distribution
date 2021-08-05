@@ -23,34 +23,25 @@ trait DataSetConfiguration extends StObject {
 }
 object DataSetConfiguration {
   
-  @scala.inline
-  def apply(): DataSetConfiguration = {
+  inline def apply(): DataSetConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSetConfiguration]
   }
   
-  @scala.inline
-  implicit class DataSetConfigurationMutableBuilder[Self <: DataSetConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DataSetConfiguration](x: Self) {
     
-    @scala.inline
-    def setColumnGroupSchemaList(value: ColumnGroupSchemaList): Self = StObject.set(x, "ColumnGroupSchemaList", value.asInstanceOf[js.Any])
+    inline def setColumnGroupSchemaList(value: ColumnGroupSchemaList): Self = StObject.set(x, "ColumnGroupSchemaList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnGroupSchemaListUndefined: Self = StObject.set(x, "ColumnGroupSchemaList", js.undefined)
+    inline def setColumnGroupSchemaListUndefined: Self = StObject.set(x, "ColumnGroupSchemaList", js.undefined)
     
-    @scala.inline
-    def setColumnGroupSchemaListVarargs(value: ColumnGroupSchema*): Self = StObject.set(x, "ColumnGroupSchemaList", js.Array(value :_*))
+    inline def setColumnGroupSchemaListVarargs(value: ColumnGroupSchema*): Self = StObject.set(x, "ColumnGroupSchemaList", js.Array(value :_*))
     
-    @scala.inline
-    def setDataSetSchema(value: DataSetSchema): Self = StObject.set(x, "DataSetSchema", value.asInstanceOf[js.Any])
+    inline def setDataSetSchema(value: DataSetSchema): Self = StObject.set(x, "DataSetSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetSchemaUndefined: Self = StObject.set(x, "DataSetSchema", js.undefined)
+    inline def setDataSetSchemaUndefined: Self = StObject.set(x, "DataSetSchema", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "Placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "Placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "Placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "Placeholder", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait Phase2IntegrityAlgorithmsListValue extends StObject {
 }
 object Phase2IntegrityAlgorithmsListValue {
   
-  @scala.inline
-  def apply(): Phase2IntegrityAlgorithmsListValue = {
+  inline def apply(): Phase2IntegrityAlgorithmsListValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Phase2IntegrityAlgorithmsListValue]
   }
   
-  @scala.inline
-  implicit class Phase2IntegrityAlgorithmsListValueMutableBuilder[Self <: Phase2IntegrityAlgorithmsListValue] (val x: Self) extends AnyVal {
+  extension [Self <: Phase2IntegrityAlgorithmsListValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

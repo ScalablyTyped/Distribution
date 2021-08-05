@@ -28,8 +28,7 @@ object pgLiteralMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(str: String): PgLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(str.asInstanceOf[js.Any]).asInstanceOf[PgLiteral]
+    inline def create(str: String): PgLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(str.asInstanceOf[js.Any]).asInstanceOf[PgLiteral]
   }
   
   trait PgLiteral extends StObject {
@@ -40,20 +39,16 @@ object pgLiteralMod {
   }
   object PgLiteral {
     
-    @scala.inline
-    def apply(literal: /* true */ Boolean, value: String): PgLiteral = {
+    inline def apply(literal: /* true */ Boolean, value: String): PgLiteral = {
       val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PgLiteral]
     }
     
-    @scala.inline
-    implicit class PgLiteralMutableBuilder[Self <: PgLiteral] (val x: Self) extends AnyVal {
+    extension [Self <: PgLiteral](x: Self) {
       
-      @scala.inline
-      def setLiteral(value: /* true */ Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: /* true */ Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

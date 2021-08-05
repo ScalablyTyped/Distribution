@@ -31,8 +31,7 @@ trait XSelectionSupplier
 }
 object XSelectionSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Selection: js.Any,
     acquire: () => Unit,
     addSelectionChangeListener: XSelectionChangeListener => Unit,
@@ -46,22 +45,16 @@ object XSelectionSupplier {
     __obj.asInstanceOf[XSelectionSupplier]
   }
   
-  @scala.inline
-  implicit class XSelectionSupplierMutableBuilder[Self <: XSelectionSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XSelectionSupplier](x: Self) {
     
-    @scala.inline
-    def setAddSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "addSelectionChangeListener", js.Any.fromFunction1(value))
+    inline def setAddSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "addSelectionChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSelection(value: () => js.Any): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
+    inline def setGetSelection(value: () => js.Any): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "removeSelectionChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "removeSelectionChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelect(value: js.Any => Boolean): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: js.Any => Boolean): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelection(value: js.Any): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: js.Any): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
   }
 }

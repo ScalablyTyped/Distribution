@@ -12,22 +12,17 @@ trait SecurityGetUser
 }
 object SecurityGetUser {
   
-  @scala.inline
-  def apply(): SecurityGetUser = {
+  inline def apply(): SecurityGetUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityGetUser]
   }
   
-  @scala.inline
-  implicit class SecurityGetUserMutableBuilder[Self <: SecurityGetUser] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityGetUser](x: Self) {
     
-    @scala.inline
-    def setUsername(value: String | js.Array[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String | js.Array[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
-    @scala.inline
-    def setUsernameVarargs(value: String*): Self = StObject.set(x, "username", js.Array(value :_*))
+    inline def setUsernameVarargs(value: String*): Self = StObject.set(x, "username", js.Array(value :_*))
   }
 }

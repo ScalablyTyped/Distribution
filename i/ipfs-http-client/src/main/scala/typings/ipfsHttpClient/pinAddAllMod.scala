@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pinAddAllMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function2[
+  inline def apply(clientOptions: ClientOptions): js.Function2[
     /* source */ js.Any, 
     /* options */ js.UndefOr[js.Object], 
     AsyncGenerator[typings.cids.mod.^, Unit, js.Any]

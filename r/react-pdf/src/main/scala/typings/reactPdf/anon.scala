@@ -12,17 +12,14 @@ object anon {
   }
   object PageNumber {
     
-    @scala.inline
-    def apply(pageNumber: String): PageNumber = {
+    inline def apply(pageNumber: String): PageNumber = {
       val __obj = js.Dynamic.literal(pageNumber = pageNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageNumber]
     }
     
-    @scala.inline
-    implicit class PageNumberMutableBuilder[Self <: PageNumber] (val x: Self) extends AnyVal {
+    extension [Self <: PageNumber](x: Self) {
       
-      @scala.inline
-      def setPageNumber(value: String): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+      inline def setPageNumber(value: String): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     }
   }
 }

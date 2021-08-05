@@ -36,50 +36,36 @@ object calendarPanelFooterMod {
   }
   object CalendarPanelFooterItem {
     
-    @scala.inline
-    def apply(): CalendarPanelFooterItem = {
+    inline def apply(): CalendarPanelFooterItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CalendarPanelFooterItem]
     }
     
-    @scala.inline
-    implicit class CalendarPanelFooterItemMutableBuilder[Self <: CalendarPanelFooterItem] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarPanelFooterItem](x: Self) {
       
-      @scala.inline
-      def setButtonType(value: CalendarPanelFooterItemButtonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+      inline def setButtonType(value: CalendarPanelFooterItemButtonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
+      inline def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
       
-      @scala.inline
-      def setCollapseLabel(value: ReactNode): Self = StObject.set(x, "collapseLabel", value.asInstanceOf[js.Any])
+      inline def setCollapseLabel(value: ReactNode): Self = StObject.set(x, "collapseLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseLabelUndefined: Self = StObject.set(x, "collapseLabel", js.undefined)
+      inline def setCollapseLabelUndefined: Self = StObject.set(x, "collapseLabel", js.undefined)
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setExpandLabel(value: ReactNode): Self = StObject.set(x, "expandLabel", value.asInstanceOf[js.Any])
+      inline def setExpandLabel(value: ReactNode): Self = StObject.set(x, "expandLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandLabelUndefined: Self = StObject.set(x, "expandLabel", js.undefined)
+      inline def setExpandLabelUndefined: Self = StObject.set(x, "expandLabel", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -90,11 +76,9 @@ object calendarPanelFooterMod {
   trait CalendarPanelFooterItemButtonType extends StObject
   object CalendarPanelFooterItemButtonType {
     
-    @scala.inline
-    def button: typings.wixStyleReact.wixStyleReactStrings.button = "button".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.button]
+    inline def button: typings.wixStyleReact.wixStyleReactStrings.button = "button".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.button]
     
-    @scala.inline
-    def textButton: typings.wixStyleReact.wixStyleReactStrings.textButton = "textButton".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.textButton]
+    inline def textButton: typings.wixStyleReact.wixStyleReactStrings.textButton = "textButton".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.textButton]
   }
   
   trait CalendarPanelFooterProps extends StObject {
@@ -117,8 +101,7 @@ object calendarPanelFooterMod {
   }
   object CalendarPanelFooterProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dateToString: SelectedDaysType => String,
       primaryActionDisabled: Boolean,
       primaryActionLabel: String,
@@ -130,38 +113,27 @@ object calendarPanelFooterMod {
       __obj.asInstanceOf[CalendarPanelFooterProps]
     }
     
-    @scala.inline
-    implicit class CalendarPanelFooterPropsMutableBuilder[Self <: CalendarPanelFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: CalendarPanelFooterProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDateToString(value: SelectedDaysType => String): Self = StObject.set(x, "dateToString", js.Any.fromFunction1(value))
+      inline def setDateToString(value: SelectedDaysType => String): Self = StObject.set(x, "dateToString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrimaryActionDisabled(value: Boolean): Self = StObject.set(x, "primaryActionDisabled", value.asInstanceOf[js.Any])
+      inline def setPrimaryActionDisabled(value: Boolean): Self = StObject.set(x, "primaryActionDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryActionLabel(value: String): Self = StObject.set(x, "primaryActionLabel", value.asInstanceOf[js.Any])
+      inline def setPrimaryActionLabel(value: String): Self = StObject.set(x, "primaryActionLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryActionOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "primaryActionOnClick", js.Any.fromFunction1(value))
+      inline def setPrimaryActionOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "primaryActionOnClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSecondaryActionLabel(value: String): Self = StObject.set(x, "secondaryActionLabel", value.asInstanceOf[js.Any])
+      inline def setSecondaryActionLabel(value: String): Self = StObject.set(x, "secondaryActionLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryActionOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "secondaryActionOnClick", js.Any.fromFunction1(value))
+      inline def setSecondaryActionOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "secondaryActionOnClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectedDays(value: SelectedDaysType): Self = StObject.set(x, "selectedDays", value.asInstanceOf[js.Any])
+      inline def setSelectedDays(value: SelectedDaysType): Self = StObject.set(x, "selectedDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedDaysUndefined: Self = StObject.set(x, "selectedDays", js.undefined)
+      inline def setSelectedDaysUndefined: Self = StObject.set(x, "selectedDays", js.undefined)
     }
   }
 }

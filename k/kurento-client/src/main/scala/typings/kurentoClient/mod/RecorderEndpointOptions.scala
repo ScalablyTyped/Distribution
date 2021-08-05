@@ -12,22 +12,17 @@ trait RecorderEndpointOptions extends StObject {
 }
 object RecorderEndpointOptions {
   
-  @scala.inline
-  def apply(uri: String): RecorderEndpointOptions = {
+  inline def apply(uri: String): RecorderEndpointOptions = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecorderEndpointOptions]
   }
   
-  @scala.inline
-  implicit class RecorderEndpointOptionsMutableBuilder[Self <: RecorderEndpointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RecorderEndpointOptions](x: Self) {
     
-    @scala.inline
-    def setStopOnEndOfStream(value: Boolean): Self = StObject.set(x, "stopOnEndOfStream", value.asInstanceOf[js.Any])
+    inline def setStopOnEndOfStream(value: Boolean): Self = StObject.set(x, "stopOnEndOfStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopOnEndOfStreamUndefined: Self = StObject.set(x, "stopOnEndOfStream", js.undefined)
+    inline def setStopOnEndOfStreamUndefined: Self = StObject.set(x, "stopOnEndOfStream", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

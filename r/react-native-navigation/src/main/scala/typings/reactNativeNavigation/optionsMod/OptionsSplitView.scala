@@ -44,43 +44,31 @@ trait OptionsSplitView extends StObject {
 }
 object OptionsSplitView {
   
-  @scala.inline
-  def apply(): OptionsSplitView = {
+  inline def apply(): OptionsSplitView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsSplitView]
   }
   
-  @scala.inline
-  implicit class OptionsSplitViewMutableBuilder[Self <: OptionsSplitView] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsSplitView](x: Self) {
     
-    @scala.inline
-    def setDisplayMode(value: auto | visible | hidden | overlay): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+    inline def setDisplayMode(value: auto | visible | hidden | overlay): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
+    inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setPrimaryBackgroundStyle(value: none | sidebar): Self = StObject.set(x, "primaryBackgroundStyle", value.asInstanceOf[js.Any])
+    inline def setPrimaryBackgroundStyle(value: none | sidebar): Self = StObject.set(x, "primaryBackgroundStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryBackgroundStyleUndefined: Self = StObject.set(x, "primaryBackgroundStyle", js.undefined)
+    inline def setPrimaryBackgroundStyleUndefined: Self = StObject.set(x, "primaryBackgroundStyle", js.undefined)
     
-    @scala.inline
-    def setPrimaryEdge(value: leading | trailing): Self = StObject.set(x, "primaryEdge", value.asInstanceOf[js.Any])
+    inline def setPrimaryEdge(value: leading | trailing): Self = StObject.set(x, "primaryEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryEdgeUndefined: Self = StObject.set(x, "primaryEdge", js.undefined)
+    inline def setPrimaryEdgeUndefined: Self = StObject.set(x, "primaryEdge", js.undefined)
   }
 }

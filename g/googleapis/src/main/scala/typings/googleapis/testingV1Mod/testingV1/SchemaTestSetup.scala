@@ -54,61 +54,43 @@ trait SchemaTestSetup extends StObject {
 }
 object SchemaTestSetup {
   
-  @scala.inline
-  def apply(): SchemaTestSetup = {
+  inline def apply(): SchemaTestSetup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestSetup]
   }
   
-  @scala.inline
-  implicit class SchemaTestSetupMutableBuilder[Self <: SchemaTestSetup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestSetup](x: Self) {
     
-    @scala.inline
-    def setAccount(value: SchemaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: SchemaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setAdditionalApks(value: js.Array[SchemaApk]): Self = StObject.set(x, "additionalApks", value.asInstanceOf[js.Any])
+    inline def setAdditionalApks(value: js.Array[SchemaApk]): Self = StObject.set(x, "additionalApks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalApksUndefined: Self = StObject.set(x, "additionalApks", js.undefined)
+    inline def setAdditionalApksUndefined: Self = StObject.set(x, "additionalApks", js.undefined)
     
-    @scala.inline
-    def setAdditionalApksVarargs(value: SchemaApk*): Self = StObject.set(x, "additionalApks", js.Array(value :_*))
+    inline def setAdditionalApksVarargs(value: SchemaApk*): Self = StObject.set(x, "additionalApks", js.Array(value :_*))
     
-    @scala.inline
-    def setDirectoriesToPull(value: js.Array[String]): Self = StObject.set(x, "directoriesToPull", value.asInstanceOf[js.Any])
+    inline def setDirectoriesToPull(value: js.Array[String]): Self = StObject.set(x, "directoriesToPull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoriesToPullUndefined: Self = StObject.set(x, "directoriesToPull", js.undefined)
+    inline def setDirectoriesToPullUndefined: Self = StObject.set(x, "directoriesToPull", js.undefined)
     
-    @scala.inline
-    def setDirectoriesToPullVarargs(value: String*): Self = StObject.set(x, "directoriesToPull", js.Array(value :_*))
+    inline def setDirectoriesToPullVarargs(value: String*): Self = StObject.set(x, "directoriesToPull", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironmentVariables(value: js.Array[SchemaEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
+    inline def setEnvironmentVariables(value: js.Array[SchemaEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
-    @scala.inline
-    def setEnvironmentVariablesVarargs(value: SchemaEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
+    inline def setEnvironmentVariablesVarargs(value: SchemaEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
     
-    @scala.inline
-    def setFilesToPush(value: js.Array[SchemaDeviceFile]): Self = StObject.set(x, "filesToPush", value.asInstanceOf[js.Any])
+    inline def setFilesToPush(value: js.Array[SchemaDeviceFile]): Self = StObject.set(x, "filesToPush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesToPushUndefined: Self = StObject.set(x, "filesToPush", js.undefined)
+    inline def setFilesToPushUndefined: Self = StObject.set(x, "filesToPush", js.undefined)
     
-    @scala.inline
-    def setFilesToPushVarargs(value: SchemaDeviceFile*): Self = StObject.set(x, "filesToPush", js.Array(value :_*))
+    inline def setFilesToPushVarargs(value: SchemaDeviceFile*): Self = StObject.set(x, "filesToPush", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
+    inline def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
+    inline def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
   }
 }

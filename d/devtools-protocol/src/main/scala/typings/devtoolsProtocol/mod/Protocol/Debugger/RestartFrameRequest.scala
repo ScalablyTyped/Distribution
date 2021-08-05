@@ -13,16 +13,13 @@ trait RestartFrameRequest extends StObject {
 }
 object RestartFrameRequest {
   
-  @scala.inline
-  def apply(callFrameId: CallFrameId): RestartFrameRequest = {
+  inline def apply(callFrameId: CallFrameId): RestartFrameRequest = {
     val __obj = js.Dynamic.literal(callFrameId = callFrameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestartFrameRequest]
   }
   
-  @scala.inline
-  implicit class RestartFrameRequestMutableBuilder[Self <: RestartFrameRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestartFrameRequest](x: Self) {
     
-    @scala.inline
-    def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
+    inline def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
   }
 }

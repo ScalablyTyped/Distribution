@@ -14,7 +14,7 @@ object monthAndYearMod {
     def this(month: Double, year: Double) = this()
     def this(month: Unit, year: Double) = this()
     
-    var date: js.Any = js.native
+    /* private */ var date: js.Any = js.native
     
     def getFullDate(): Date = js.native
     
@@ -41,7 +41,6 @@ object monthAndYearMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromDate(date: Date): MonthAndYear = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[MonthAndYear]
+    inline def fromDate(date: Date): MonthAndYear = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[MonthAndYear]
   }
 }

@@ -14,31 +14,23 @@ trait ToolConfig extends StObject {
 }
 object ToolConfig {
   
-  @scala.inline
-  def apply(): ToolConfig = {
+  inline def apply(): ToolConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolConfig]
   }
   
-  @scala.inline
-  implicit class ToolConfigMutableBuilder[Self <: ToolConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ToolConfig](x: Self) {
     
-    @scala.inline
-    def setData(value: StringList): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringList): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

@@ -48,8 +48,7 @@ trait GitPullRequestSearchCriteria extends StObject {
 }
 object GitPullRequestSearchCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     creatorId: String,
     includeLinks: Boolean,
     repositoryId: String,
@@ -63,31 +62,22 @@ object GitPullRequestSearchCriteria {
     __obj.asInstanceOf[GitPullRequestSearchCriteria]
   }
   
-  @scala.inline
-  implicit class GitPullRequestSearchCriteriaMutableBuilder[Self <: GitPullRequestSearchCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestSearchCriteria](x: Self) {
     
-    @scala.inline
-    def setCreatorId(value: String): Self = StObject.set(x, "creatorId", value.asInstanceOf[js.Any])
+    inline def setCreatorId(value: String): Self = StObject.set(x, "creatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
+    inline def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewerId(value: String): Self = StObject.set(x, "reviewerId", value.asInstanceOf[js.Any])
+    inline def setReviewerId(value: String): Self = StObject.set(x, "reviewerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRefName(value: String): Self = StObject.set(x, "sourceRefName", value.asInstanceOf[js.Any])
+    inline def setSourceRefName(value: String): Self = StObject.set(x, "sourceRefName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRepositoryId(value: String): Self = StObject.set(x, "sourceRepositoryId", value.asInstanceOf[js.Any])
+    inline def setSourceRepositoryId(value: String): Self = StObject.set(x, "sourceRepositoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PullRequestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PullRequestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRefName(value: String): Self = StObject.set(x, "targetRefName", value.asInstanceOf[js.Any])
+    inline def setTargetRefName(value: String): Self = StObject.set(x, "targetRefName", value.asInstanceOf[js.Any])
   }
 }

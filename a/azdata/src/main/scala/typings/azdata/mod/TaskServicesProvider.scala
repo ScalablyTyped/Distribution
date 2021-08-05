@@ -19,8 +19,7 @@ trait TaskServicesProvider
 }
 object TaskServicesProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancelTask: CancelTaskParams => Thenable[Boolean],
     getAllTasks: ListTasksParams => Thenable[ListTasksResponse],
     providerId: String,
@@ -31,19 +30,14 @@ object TaskServicesProvider {
     __obj.asInstanceOf[TaskServicesProvider]
   }
   
-  @scala.inline
-  implicit class TaskServicesProviderMutableBuilder[Self <: TaskServicesProvider] (val x: Self) extends AnyVal {
+  extension [Self <: TaskServicesProvider](x: Self) {
     
-    @scala.inline
-    def setCancelTask(value: CancelTaskParams => Thenable[Boolean]): Self = StObject.set(x, "cancelTask", js.Any.fromFunction1(value))
+    inline def setCancelTask(value: CancelTaskParams => Thenable[Boolean]): Self = StObject.set(x, "cancelTask", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllTasks(value: ListTasksParams => Thenable[ListTasksResponse]): Self = StObject.set(x, "getAllTasks", js.Any.fromFunction1(value))
+    inline def setGetAllTasks(value: ListTasksParams => Thenable[ListTasksResponse]): Self = StObject.set(x, "getAllTasks", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnTaskCreated(value: js.Function1[/* response */ TaskInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnTaskCreated", js.Any.fromFunction1(value))
+    inline def setRegisterOnTaskCreated(value: js.Function1[/* response */ TaskInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnTaskCreated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnTaskStatusChanged(value: js.Function1[/* response */ TaskProgressInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnTaskStatusChanged", js.Any.fromFunction1(value))
+    inline def setRegisterOnTaskStatusChanged(value: js.Function1[/* response */ TaskProgressInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnTaskStatusChanged", js.Any.fromFunction1(value))
   }
 }

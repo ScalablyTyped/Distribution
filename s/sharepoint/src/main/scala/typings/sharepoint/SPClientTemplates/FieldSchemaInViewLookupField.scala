@@ -19,8 +19,7 @@ trait FieldSchemaInViewLookupField
 }
 object FieldSchemaInViewLookupField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     AllowMultipleValues: String,
     CalloutMenu: String,
@@ -49,16 +48,12 @@ object FieldSchemaInViewLookupField {
     __obj.asInstanceOf[FieldSchemaInViewLookupField]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInViewLookupFieldMutableBuilder[Self <: FieldSchemaInViewLookupField] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInViewLookupField](x: Self) {
     
-    @scala.inline
-    def setAllowMultipleValues(value: String): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
+    inline def setAllowMultipleValues(value: String): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispFormUrl(value: String): Self = StObject.set(x, "DispFormUrl", value.asInstanceOf[js.Any])
+    inline def setDispFormUrl(value: String): Self = StObject.set(x, "DispFormUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPrefix(value: String): Self = StObject.set(x, "HasPrefix", value.asInstanceOf[js.Any])
+    inline def setHasPrefix(value: String): Self = StObject.set(x, "HasPrefix", value.asInstanceOf[js.Any])
   }
 }

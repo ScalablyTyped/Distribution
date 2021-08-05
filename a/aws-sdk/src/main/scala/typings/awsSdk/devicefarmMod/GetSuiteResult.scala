@@ -13,19 +13,15 @@ trait GetSuiteResult extends StObject {
 }
 object GetSuiteResult {
   
-  @scala.inline
-  def apply(): GetSuiteResult = {
+  inline def apply(): GetSuiteResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSuiteResult]
   }
   
-  @scala.inline
-  implicit class GetSuiteResultMutableBuilder[Self <: GetSuiteResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSuiteResult](x: Self) {
     
-    @scala.inline
-    def setSuite(value: Suite): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+    inline def setSuite(value: Suite): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuiteUndefined: Self = StObject.set(x, "suite", js.undefined)
+    inline def setSuiteUndefined: Self = StObject.set(x, "suite", js.undefined)
   }
 }

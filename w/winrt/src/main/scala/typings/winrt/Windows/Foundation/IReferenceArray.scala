@@ -20,8 +20,7 @@ trait IReferenceArray[T]
 }
 object IReferenceArray {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     getBoolean: () => Boolean,
     getBooleanArray: () => js.Array[Boolean],
     getChar16: () => String,
@@ -68,13 +67,10 @@ object IReferenceArray {
     __obj.asInstanceOf[IReferenceArray[T]]
   }
   
-  @scala.inline
-  implicit class IReferenceArrayMutableBuilder[Self <: IReferenceArray[?], T] (val x: Self & IReferenceArray[T]) extends AnyVal {
+  extension [Self <: IReferenceArray[?], T](x: Self & IReferenceArray[T]) {
     
-    @scala.inline
-    def setValue(value: js.Array[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: T*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: T*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

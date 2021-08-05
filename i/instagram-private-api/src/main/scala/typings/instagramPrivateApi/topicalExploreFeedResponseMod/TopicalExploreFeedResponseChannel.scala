@@ -22,8 +22,7 @@ trait TopicalExploreFeedResponseChannel extends StObject {
 }
 object TopicalExploreFeedResponseChannel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel_id: String,
     channel_type: String,
     context: String,
@@ -36,28 +35,20 @@ object TopicalExploreFeedResponseChannel {
     __obj.asInstanceOf[TopicalExploreFeedResponseChannel]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseChannelMutableBuilder[Self <: TopicalExploreFeedResponseChannel] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseChannel](x: Self) {
     
-    @scala.inline
-    def setChannel_id(value: String): Self = StObject.set(x, "channel_id", value.asInstanceOf[js.Any])
+    inline def setChannel_id(value: String): Self = StObject.set(x, "channel_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel_type(value: String): Self = StObject.set(x, "channel_type", value.asInstanceOf[js.Any])
+    inline def setChannel_type(value: String): Self = StObject.set(x, "channel_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: TopicalExploreFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: TopicalExploreFeedResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
+    inline def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

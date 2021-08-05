@@ -65,41 +65,30 @@ object commonMod {
   }
   object InstanceChainContext {
     
-    @scala.inline
-    def apply(value: js.Any): InstanceChainContext = {
+    inline def apply(value: js.Any): InstanceChainContext = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstanceChainContext]
     }
     
-    @scala.inline
-    implicit class InstanceChainContextMutableBuilder[Self <: InstanceChainContext] (val x: Self) extends AnyVal {
+    extension [Self <: InstanceChainContext](x: Self) {
       
-      @scala.inline
-      def setGetter(value: Boolean): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
+      inline def setGetter(value: Boolean): Self = StObject.set(x, "getter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetterUndefined: Self = StObject.set(x, "getter", js.undefined)
+      inline def setGetterUndefined: Self = StObject.set(x, "getter", js.undefined)
       
-      @scala.inline
-      def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setProperty(value: Boolean): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: Boolean): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setSetter(value: Boolean): Self = StObject.set(x, "setter", value.asInstanceOf[js.Any])
+      inline def setSetter(value: Boolean): Self = StObject.set(x, "setter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
+      inline def setSetterUndefined: Self = StObject.set(x, "setter", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,8 +108,7 @@ object commonMod {
   }
   object InstanceChainData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fns: js.Array[js.Function],
       isGetter: Boolean,
       isMethod: Boolean,
@@ -132,32 +120,23 @@ object commonMod {
       __obj.asInstanceOf[InstanceChainData]
     }
     
-    @scala.inline
-    implicit class InstanceChainDataMutableBuilder[Self <: InstanceChainData] (val x: Self) extends AnyVal {
+    extension [Self <: InstanceChainData](x: Self) {
       
-      @scala.inline
-      def setFns(value: js.Array[js.Function]): Self = StObject.set(x, "fns", value.asInstanceOf[js.Any])
+      inline def setFns(value: js.Array[js.Function]): Self = StObject.set(x, "fns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFnsVarargs(value: js.Function*): Self = StObject.set(x, "fns", js.Array(value :_*))
+      inline def setFnsVarargs(value: js.Function*): Self = StObject.set(x, "fns", js.Array(value :_*))
       
-      @scala.inline
-      def setIsGetter(value: Boolean): Self = StObject.set(x, "isGetter", value.asInstanceOf[js.Any])
+      inline def setIsGetter(value: Boolean): Self = StObject.set(x, "isGetter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMethod(value: Boolean): Self = StObject.set(x, "isMethod", value.asInstanceOf[js.Any])
+      inline def setIsMethod(value: Boolean): Self = StObject.set(x, "isMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsProperty(value: Boolean): Self = StObject.set(x, "isProperty", value.asInstanceOf[js.Any])
+      inline def setIsProperty(value: Boolean): Self = StObject.set(x, "isProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSetter(value: Boolean): Self = StObject.set(x, "isSetter", value.asInstanceOf[js.Any])
+      inline def setIsSetter(value: Boolean): Self = StObject.set(x, "isSetter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
     }
   }
   

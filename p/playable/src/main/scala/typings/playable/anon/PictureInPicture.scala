@@ -23,8 +23,7 @@ trait PictureInPicture extends StObject {
 }
 object PictureInPicture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventEmitter: IEventEmitter,
     pictureInPicture: IPictureInPicture,
     textMap: ITextMap,
@@ -35,22 +34,16 @@ object PictureInPicture {
     __obj.asInstanceOf[PictureInPicture]
   }
   
-  @scala.inline
-  implicit class PictureInPictureMutableBuilder[Self <: PictureInPicture] (val x: Self) extends AnyVal {
+  extension [Self <: PictureInPicture](x: Self) {
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureInPicture(value: IPictureInPicture): Self = StObject.set(x, "pictureInPicture", value.asInstanceOf[js.Any])
+    inline def setPictureInPicture(value: IPictureInPicture): Self = StObject.set(x, "pictureInPicture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+    inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+    inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

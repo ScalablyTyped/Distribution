@@ -63,79 +63,55 @@ trait PullRequestEvent extends StObject {
 }
 object PullRequestEvent {
   
-  @scala.inline
-  def apply(): PullRequestEvent = {
+  inline def apply(): PullRequestEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PullRequestEvent]
   }
   
-  @scala.inline
-  implicit class PullRequestEventMutableBuilder[Self <: PullRequestEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PullRequestEvent](x: Self) {
     
-    @scala.inline
-    def setActorArn(value: Arn): Self = StObject.set(x, "actorArn", value.asInstanceOf[js.Any])
+    inline def setActorArn(value: Arn): Self = StObject.set(x, "actorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorArnUndefined: Self = StObject.set(x, "actorArn", js.undefined)
+    inline def setActorArnUndefined: Self = StObject.set(x, "actorArn", js.undefined)
     
-    @scala.inline
-    def setApprovalRuleEventMetadata(value: ApprovalRuleEventMetadata): Self = StObject.set(x, "approvalRuleEventMetadata", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleEventMetadata(value: ApprovalRuleEventMetadata): Self = StObject.set(x, "approvalRuleEventMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleEventMetadataUndefined: Self = StObject.set(x, "approvalRuleEventMetadata", js.undefined)
+    inline def setApprovalRuleEventMetadataUndefined: Self = StObject.set(x, "approvalRuleEventMetadata", js.undefined)
     
-    @scala.inline
-    def setApprovalRuleOverriddenEventMetadata(value: ApprovalRuleOverriddenEventMetadata): Self = StObject.set(x, "approvalRuleOverriddenEventMetadata", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleOverriddenEventMetadata(value: ApprovalRuleOverriddenEventMetadata): Self = StObject.set(x, "approvalRuleOverriddenEventMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleOverriddenEventMetadataUndefined: Self = StObject.set(x, "approvalRuleOverriddenEventMetadata", js.undefined)
+    inline def setApprovalRuleOverriddenEventMetadataUndefined: Self = StObject.set(x, "approvalRuleOverriddenEventMetadata", js.undefined)
     
-    @scala.inline
-    def setApprovalStateChangedEventMetadata(value: ApprovalStateChangedEventMetadata): Self = StObject.set(x, "approvalStateChangedEventMetadata", value.asInstanceOf[js.Any])
+    inline def setApprovalStateChangedEventMetadata(value: ApprovalStateChangedEventMetadata): Self = StObject.set(x, "approvalStateChangedEventMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalStateChangedEventMetadataUndefined: Self = StObject.set(x, "approvalStateChangedEventMetadata", js.undefined)
+    inline def setApprovalStateChangedEventMetadataUndefined: Self = StObject.set(x, "approvalStateChangedEventMetadata", js.undefined)
     
-    @scala.inline
-    def setEventDate(value: EventDate): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
+    inline def setEventDate(value: EventDate): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDateUndefined: Self = StObject.set(x, "eventDate", js.undefined)
+    inline def setEventDateUndefined: Self = StObject.set(x, "eventDate", js.undefined)
     
-    @scala.inline
-    def setPullRequestCreatedEventMetadata(value: PullRequestCreatedEventMetadata): Self = StObject.set(x, "pullRequestCreatedEventMetadata", value.asInstanceOf[js.Any])
+    inline def setPullRequestCreatedEventMetadata(value: PullRequestCreatedEventMetadata): Self = StObject.set(x, "pullRequestCreatedEventMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestCreatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestCreatedEventMetadata", js.undefined)
+    inline def setPullRequestCreatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestCreatedEventMetadata", js.undefined)
     
-    @scala.inline
-    def setPullRequestEventType(value: PullRequestEventType): Self = StObject.set(x, "pullRequestEventType", value.asInstanceOf[js.Any])
+    inline def setPullRequestEventType(value: PullRequestEventType): Self = StObject.set(x, "pullRequestEventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestEventTypeUndefined: Self = StObject.set(x, "pullRequestEventType", js.undefined)
+    inline def setPullRequestEventTypeUndefined: Self = StObject.set(x, "pullRequestEventType", js.undefined)
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
+    inline def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
     
-    @scala.inline
-    def setPullRequestMergedStateChangedEventMetadata(value: PullRequestMergedStateChangedEventMetadata): Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", value.asInstanceOf[js.Any])
+    inline def setPullRequestMergedStateChangedEventMetadata(value: PullRequestMergedStateChangedEventMetadata): Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestMergedStateChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", js.undefined)
+    inline def setPullRequestMergedStateChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", js.undefined)
     
-    @scala.inline
-    def setPullRequestSourceReferenceUpdatedEventMetadata(value: PullRequestSourceReferenceUpdatedEventMetadata): Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", value.asInstanceOf[js.Any])
+    inline def setPullRequestSourceReferenceUpdatedEventMetadata(value: PullRequestSourceReferenceUpdatedEventMetadata): Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestSourceReferenceUpdatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", js.undefined)
+    inline def setPullRequestSourceReferenceUpdatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", js.undefined)
     
-    @scala.inline
-    def setPullRequestStatusChangedEventMetadata(value: PullRequestStatusChangedEventMetadata): Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", value.asInstanceOf[js.Any])
+    inline def setPullRequestStatusChangedEventMetadata(value: PullRequestStatusChangedEventMetadata): Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestStatusChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", js.undefined)
+    inline def setPullRequestStatusChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", js.undefined)
   }
 }

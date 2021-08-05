@@ -35,8 +35,7 @@ trait SocketProfile extends StObject {
 }
 object SocketProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectEnd: Double,
     connectStart: Double,
     cost: Double,
@@ -50,31 +49,22 @@ object SocketProfile {
     __obj.asInstanceOf[SocketProfile]
   }
   
-  @scala.inline
-  implicit class SocketProfileMutableBuilder[Self <: SocketProfile] (val x: Self) extends AnyVal {
+  extension [Self <: SocketProfile](x: Self) {
     
-    @scala.inline
-    def setConnectEnd(value: Double): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
+    inline def setConnectEnd(value: Double): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectStart(value: Double): Self = StObject.set(x, "connectStart", value.asInstanceOf[js.Any])
+    inline def setConnectStart(value: Double): Self = StObject.set(x, "connectStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+    inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainLookupEnd(value: Double): Self = StObject.set(x, "domainLookupEnd", value.asInstanceOf[js.Any])
+    inline def setDomainLookupEnd(value: Double): Self = StObject.set(x, "domainLookupEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainLookupStart(value: Double): Self = StObject.set(x, "domainLookupStart", value.asInstanceOf[js.Any])
+    inline def setDomainLookupStart(value: Double): Self = StObject.set(x, "domainLookupStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchStart(value: Double): Self = StObject.set(x, "fetchStart", value.asInstanceOf[js.Any])
+    inline def setFetchStart(value: Double): Self = StObject.set(x, "fetchStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandshakeCost(value: Double): Self = StObject.set(x, "handshakeCost", value.asInstanceOf[js.Any])
+    inline def setHandshakeCost(value: Double): Self = StObject.set(x, "handshakeCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
+    inline def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
   }
 }

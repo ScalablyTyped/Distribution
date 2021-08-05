@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkPageControl")
 @js.native
-class OlkPageControl protected ()
+/* private */ class OlkPageControl ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkPageControl {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OlkPageControl_typekey")
   var OutlookDotOlkPageControl_typekey: typings.activexOutlook.Outlook.OlkPageControl = js.native
   

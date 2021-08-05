@@ -10,19 +10,15 @@ trait audioTracksUpdatedData extends StObject {
 }
 object audioTracksUpdatedData {
   
-  @scala.inline
-  def apply(audioTracks: js.Array[HlsAudioTrack]): audioTracksUpdatedData = {
+  inline def apply(audioTracks: js.Array[HlsAudioTrack]): audioTracksUpdatedData = {
     val __obj = js.Dynamic.literal(audioTracks = audioTracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[audioTracksUpdatedData]
   }
   
-  @scala.inline
-  implicit class audioTracksUpdatedDataMutableBuilder[Self <: audioTracksUpdatedData] (val x: Self) extends AnyVal {
+  extension [Self <: audioTracksUpdatedData](x: Self) {
     
-    @scala.inline
-    def setAudioTracks(value: js.Array[HlsAudioTrack]): Self = StObject.set(x, "audioTracks", value.asInstanceOf[js.Any])
+    inline def setAudioTracks(value: js.Array[HlsAudioTrack]): Self = StObject.set(x, "audioTracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioTracksVarargs(value: HlsAudioTrack*): Self = StObject.set(x, "audioTracks", js.Array(value :_*))
+    inline def setAudioTracksVarargs(value: HlsAudioTrack*): Self = StObject.set(x, "audioTracks", js.Array(value :_*))
   }
 }

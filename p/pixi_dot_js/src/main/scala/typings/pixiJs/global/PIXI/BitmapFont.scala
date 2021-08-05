@@ -182,33 +182,20 @@ object BitmapFont {
     * const title = new PIXI.BitmapText("This is the title", { fontName: "TitleFont" });
     */
   /* static member */
-  @scala.inline
-  def from(name: String): typings.pixiJs.PIXI.BitmapFont = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def from(name: String, style: js.Any): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def from(name: String, style: js.Any, options: Chars): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def from(name: String, style: Unit, options: Chars): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def from(name: String, style: typings.pixiJs.PIXI.TextStyle): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def from(name: String, style: typings.pixiJs.PIXI.TextStyle, options: Chars): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def from(name: String): typings.pixiJs.PIXI.BitmapFont = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def from(name: String, style: js.Any): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def from(name: String, style: js.Any, options: Chars): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def from(name: String, style: Unit, options: Chars): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def from(name: String, style: typings.pixiJs.PIXI.TextStyle): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def from(name: String, style: typings.pixiJs.PIXI.TextStyle, options: Chars): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(name.asInstanceOf[js.Any], style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
   
-  @scala.inline
-  def install(data: String, textures: js.Array[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def install(data: String, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def install(data: String, textures: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def install(data: typings.pixiJs.PIXI.BitmapFontData, textures: js.Array[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def install(data: typings.pixiJs.PIXI.BitmapFontData, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def install(data: typings.pixiJs.PIXI.BitmapFontData, textures: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def install(data: XMLDocument, textures: js.Array[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def install(data: String, textures: js.Array[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def install(data: String, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def install(data: String, textures: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def install(data: typings.pixiJs.PIXI.BitmapFontData, textures: js.Array[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def install(data: typings.pixiJs.PIXI.BitmapFontData, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def install(data: typings.pixiJs.PIXI.BitmapFontData, textures: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def install(data: XMLDocument, textures: js.Array[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
   /**
     * Register a new bitmap font.
     *
@@ -221,10 +208,8 @@ object BitmapFont {
     *         and char fields.
     */
   /* static member */
-  @scala.inline
-  def install(data: XMLDocument, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
-  @scala.inline
-  def install(data: XMLDocument, textures: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def install(data: XMLDocument, textures: StringDictionary[typings.pixiJs.PIXI.Texture]): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
+  inline def install(data: XMLDocument, textures: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.BitmapFont = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(data.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.BitmapFont]
   
   /**
     * Remove bitmap font by name.
@@ -233,8 +218,7 @@ object BitmapFont {
     * @param {string} name
     */
   /* static member */
-  @scala.inline
-  def uninstall(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def uninstall(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Collection of available/installed fonts.

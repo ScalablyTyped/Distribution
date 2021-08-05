@@ -19,26 +19,20 @@ trait RestElement_
 }
 object RestElement_ {
   
-  @scala.inline
-  def apply(argument: LVal, end: Double, loc: SourceLocation, start: Double): RestElement_ = {
+  inline def apply(argument: LVal, end: Double, loc: SourceLocation, start: Double): RestElement_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RestElement")
     __obj.asInstanceOf[RestElement_]
   }
   
-  @scala.inline
-  implicit class RestElement_MutableBuilder[Self <: RestElement_] (val x: Self) extends AnyVal {
+  extension [Self <: RestElement_](x: Self) {
     
-    @scala.inline
-    def setArgument(value: LVal): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: LVal): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RestElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RestElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
   }
 }

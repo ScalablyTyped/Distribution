@@ -18,22 +18,17 @@ trait GetFileArgs
 }
 object GetFileArgs {
   
-  @scala.inline
-  def apply(apFilePath: String): GetFileArgs = {
+  inline def apply(apFilePath: String): GetFileArgs = {
     val __obj = js.Dynamic.literal(apFilePath = apFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileArgs]
   }
   
-  @scala.inline
-  implicit class GetFileArgsMutableBuilder[Self <: GetFileArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileArgs](x: Self) {
     
-    @scala.inline
-    def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
+    inline def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+    inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
+    inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
   }
 }

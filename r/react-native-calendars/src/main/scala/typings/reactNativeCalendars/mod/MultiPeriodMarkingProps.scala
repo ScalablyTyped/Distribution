@@ -16,19 +16,15 @@ trait MultiPeriodMarkingProps
 }
 object MultiPeriodMarkingProps {
   
-  @scala.inline
-  def apply(markedDates: StringDictionary[MultiPeriodMarking]): MultiPeriodMarkingProps = {
+  inline def apply(markedDates: StringDictionary[MultiPeriodMarking]): MultiPeriodMarkingProps = {
     val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any], markingType = "multi-period")
     __obj.asInstanceOf[MultiPeriodMarkingProps]
   }
   
-  @scala.inline
-  implicit class MultiPeriodMarkingPropsMutableBuilder[Self <: MultiPeriodMarkingProps] (val x: Self) extends AnyVal {
+  extension [Self <: MultiPeriodMarkingProps](x: Self) {
     
-    @scala.inline
-    def setMarkedDates(value: StringDictionary[MultiPeriodMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
+    inline def setMarkedDates(value: StringDictionary[MultiPeriodMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkingType(value: `multi-period`): Self = StObject.set(x, "markingType", value.asInstanceOf[js.Any])
+    inline def setMarkingType(value: `multi-period`): Self = StObject.set(x, "markingType", value.asInstanceOf[js.Any])
   }
 }

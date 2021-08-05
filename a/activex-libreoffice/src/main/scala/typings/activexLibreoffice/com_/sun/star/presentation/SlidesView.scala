@@ -49,8 +49,7 @@ trait SlidesView
 }
 object SlidesView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     Model: XModel,
     PosSize: Rectangle,
@@ -115,10 +114,8 @@ object SlidesView {
     __obj.asInstanceOf[SlidesView]
   }
   
-  @scala.inline
-  implicit class SlidesViewMutableBuilder[Self <: SlidesView] (val x: Self) extends AnyVal {
+  extension [Self <: SlidesView](x: Self) {
     
-    @scala.inline
-    def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
+    inline def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
   }
 }

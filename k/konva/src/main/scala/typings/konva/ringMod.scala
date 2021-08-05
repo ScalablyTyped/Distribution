@@ -47,26 +47,20 @@ object ringMod {
   }
   object RingConfig {
     
-    @scala.inline
-    def apply(innerRadius: Double, outerRadius: Double): RingConfig = {
+    inline def apply(innerRadius: Double, outerRadius: Double): RingConfig = {
       val __obj = js.Dynamic.literal(innerRadius = innerRadius.asInstanceOf[js.Any], outerRadius = outerRadius.asInstanceOf[js.Any])
       __obj.asInstanceOf[RingConfig]
     }
     
-    @scala.inline
-    implicit class RingConfigMutableBuilder[Self <: RingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RingConfig](x: Self) {
       
-      @scala.inline
-      def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
+      inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
+      inline def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
       
-      @scala.inline
-      def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+      inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
+      inline def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     }
   }
 }

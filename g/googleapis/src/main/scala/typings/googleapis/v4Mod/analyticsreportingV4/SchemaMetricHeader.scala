@@ -21,31 +21,23 @@ trait SchemaMetricHeader extends StObject {
 }
 object SchemaMetricHeader {
   
-  @scala.inline
-  def apply(): SchemaMetricHeader = {
+  inline def apply(): SchemaMetricHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetricHeader]
   }
   
-  @scala.inline
-  implicit class SchemaMetricHeaderMutableBuilder[Self <: SchemaMetricHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetricHeader](x: Self) {
     
-    @scala.inline
-    def setMetricHeaderEntries(value: js.Array[SchemaMetricHeaderEntry]): Self = StObject.set(x, "metricHeaderEntries", value.asInstanceOf[js.Any])
+    inline def setMetricHeaderEntries(value: js.Array[SchemaMetricHeaderEntry]): Self = StObject.set(x, "metricHeaderEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricHeaderEntriesUndefined: Self = StObject.set(x, "metricHeaderEntries", js.undefined)
+    inline def setMetricHeaderEntriesUndefined: Self = StObject.set(x, "metricHeaderEntries", js.undefined)
     
-    @scala.inline
-    def setMetricHeaderEntriesVarargs(value: SchemaMetricHeaderEntry*): Self = StObject.set(x, "metricHeaderEntries", js.Array(value :_*))
+    inline def setMetricHeaderEntriesVarargs(value: SchemaMetricHeaderEntry*): Self = StObject.set(x, "metricHeaderEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setPivotHeaders(value: js.Array[SchemaPivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
+    inline def setPivotHeaders(value: js.Array[SchemaPivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
+    inline def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
     
-    @scala.inline
-    def setPivotHeadersVarargs(value: SchemaPivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
+    inline def setPivotHeadersVarargs(value: SchemaPivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
   }
 }

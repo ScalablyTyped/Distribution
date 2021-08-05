@@ -26,23 +26,18 @@ object typesUpdateCommentOutputMod {
   }
   object UpdateCommentOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UpdateCommentOutput = {
+    inline def apply($metadata: ResponseMetadata): UpdateCommentOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateCommentOutput]
     }
     
-    @scala.inline
-    implicit class UpdateCommentOutputMutableBuilder[Self <: UpdateCommentOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateCommentOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: UnmarshalledComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: UnmarshalledComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     }
   }
 }

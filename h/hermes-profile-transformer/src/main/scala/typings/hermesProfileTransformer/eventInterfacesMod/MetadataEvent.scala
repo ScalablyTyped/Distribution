@@ -15,16 +15,13 @@ trait MetadataEvent
 }
 object MetadataEvent {
   
-  @scala.inline
-  def apply(ph: METADATA_EVENTS): MetadataEvent = {
+  inline def apply(ph: METADATA_EVENTS): MetadataEvent = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataEvent]
   }
   
-  @scala.inline
-  implicit class MetadataEventMutableBuilder[Self <: MetadataEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataEvent](x: Self) {
     
-    @scala.inline
-    def setPh(value: METADATA_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: METADATA_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

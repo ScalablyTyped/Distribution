@@ -44,49 +44,35 @@ trait GoogleCloudMlV1ReplicaConfig extends StObject {
 }
 object GoogleCloudMlV1ReplicaConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1ReplicaConfig = {
+  inline def apply(): GoogleCloudMlV1ReplicaConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1ReplicaConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ReplicaConfigMutableBuilder[Self <: GoogleCloudMlV1ReplicaConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1ReplicaConfig](x: Self) {
     
-    @scala.inline
-    def setAcceleratorConfig(value: GoogleCloudMlV1AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
+    inline def setAcceleratorConfig(value: GoogleCloudMlV1AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
+    inline def setAcceleratorConfigUndefined: Self = StObject.set(x, "acceleratorConfig", js.undefined)
     
-    @scala.inline
-    def setContainerArgs(value: js.Array[String]): Self = StObject.set(x, "containerArgs", value.asInstanceOf[js.Any])
+    inline def setContainerArgs(value: js.Array[String]): Self = StObject.set(x, "containerArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerArgsUndefined: Self = StObject.set(x, "containerArgs", js.undefined)
+    inline def setContainerArgsUndefined: Self = StObject.set(x, "containerArgs", js.undefined)
     
-    @scala.inline
-    def setContainerArgsVarargs(value: String*): Self = StObject.set(x, "containerArgs", js.Array(value :_*))
+    inline def setContainerArgsVarargs(value: String*): Self = StObject.set(x, "containerArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerCommand(value: js.Array[String]): Self = StObject.set(x, "containerCommand", value.asInstanceOf[js.Any])
+    inline def setContainerCommand(value: js.Array[String]): Self = StObject.set(x, "containerCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerCommandUndefined: Self = StObject.set(x, "containerCommand", js.undefined)
+    inline def setContainerCommandUndefined: Self = StObject.set(x, "containerCommand", js.undefined)
     
-    @scala.inline
-    def setContainerCommandVarargs(value: String*): Self = StObject.set(x, "containerCommand", js.Array(value :_*))
+    inline def setContainerCommandVarargs(value: String*): Self = StObject.set(x, "containerCommand", js.Array(value :_*))
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
-    @scala.inline
-    def setTpuTfVersion(value: String): Self = StObject.set(x, "tpuTfVersion", value.asInstanceOf[js.Any])
+    inline def setTpuTfVersion(value: String): Self = StObject.set(x, "tpuTfVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpuTfVersionUndefined: Self = StObject.set(x, "tpuTfVersion", js.undefined)
+    inline def setTpuTfVersionUndefined: Self = StObject.set(x, "tpuTfVersion", js.undefined)
   }
 }

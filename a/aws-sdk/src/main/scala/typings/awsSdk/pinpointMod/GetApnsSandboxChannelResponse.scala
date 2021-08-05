@@ -10,16 +10,13 @@ trait GetApnsSandboxChannelResponse extends StObject {
 }
 object GetApnsSandboxChannelResponse {
   
-  @scala.inline
-  def apply(APNSSandboxChannelResponse: APNSSandboxChannelResponse): GetApnsSandboxChannelResponse = {
+  inline def apply(APNSSandboxChannelResponse: APNSSandboxChannelResponse): GetApnsSandboxChannelResponse = {
     val __obj = js.Dynamic.literal(APNSSandboxChannelResponse = APNSSandboxChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApnsSandboxChannelResponse]
   }
   
-  @scala.inline
-  implicit class GetApnsSandboxChannelResponseMutableBuilder[Self <: GetApnsSandboxChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetApnsSandboxChannelResponse](x: Self) {
     
-    @scala.inline
-    def setAPNSSandboxChannelResponse(value: APNSSandboxChannelResponse): Self = StObject.set(x, "APNSSandboxChannelResponse", value.asInstanceOf[js.Any])
+    inline def setAPNSSandboxChannelResponse(value: APNSSandboxChannelResponse): Self = StObject.set(x, "APNSSandboxChannelResponse", value.asInstanceOf[js.Any])
   }
 }

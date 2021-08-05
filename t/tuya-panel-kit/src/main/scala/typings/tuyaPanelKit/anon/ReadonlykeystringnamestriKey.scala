@@ -17,31 +17,23 @@ trait ReadonlykeystringnamestriKey extends StObject {
 }
 object ReadonlykeystringnamestriKey {
   
-  @scala.inline
-  def apply(key: String, name: String): ReadonlykeystringnamestriKey = {
+  inline def apply(key: String, name: String): ReadonlykeystringnamestriKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlykeystringnamestriKey]
   }
   
-  @scala.inline
-  implicit class ReadonlykeystringnamestriKeyMutableBuilder[Self <: ReadonlykeystringnamestriKey] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlykeystringnamestriKey](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setState(value: ReadonlykeystringindexnumIndex | PartialStateReadonlykeystIndex): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ReadonlykeystringindexnumIndex | PartialStateReadonlykeystIndex): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

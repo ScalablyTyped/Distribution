@@ -25,25 +25,19 @@ trait RowColumnPivotHierarchyUpdateData extends StObject {
 }
 object RowColumnPivotHierarchyUpdateData {
   
-  @scala.inline
-  def apply(): RowColumnPivotHierarchyUpdateData = {
+  inline def apply(): RowColumnPivotHierarchyUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowColumnPivotHierarchyUpdateData]
   }
   
-  @scala.inline
-  implicit class RowColumnPivotHierarchyUpdateDataMutableBuilder[Self <: RowColumnPivotHierarchyUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: RowColumnPivotHierarchyUpdateData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

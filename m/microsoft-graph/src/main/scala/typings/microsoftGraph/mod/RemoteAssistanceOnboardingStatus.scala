@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoteAssistanceOnboardingStatus extends StObject
 object RemoteAssistanceOnboardingStatus {
   
-  @scala.inline
-  def notOnboarded: typings.microsoftGraph.microsoftGraphStrings.notOnboarded = "notOnboarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notOnboarded]
+  inline def notOnboarded: typings.microsoftGraph.microsoftGraphStrings.notOnboarded = "notOnboarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notOnboarded]
   
-  @scala.inline
-  def onboarded: typings.microsoftGraph.microsoftGraphStrings.onboarded = "onboarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onboarded]
+  inline def onboarded: typings.microsoftGraph.microsoftGraphStrings.onboarded = "onboarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onboarded]
   
-  @scala.inline
-  def onboarding: typings.microsoftGraph.microsoftGraphStrings.onboarding = "onboarding".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onboarding]
+  inline def onboarding: typings.microsoftGraph.microsoftGraphStrings.onboarding = "onboarding".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onboarding]
 }

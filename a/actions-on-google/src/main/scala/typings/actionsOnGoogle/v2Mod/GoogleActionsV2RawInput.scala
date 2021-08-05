@@ -24,31 +24,23 @@ trait GoogleActionsV2RawInput extends StObject {
 }
 object GoogleActionsV2RawInput {
   
-  @scala.inline
-  def apply(): GoogleActionsV2RawInput = {
+  inline def apply(): GoogleActionsV2RawInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2RawInput]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2RawInputMutableBuilder[Self <: GoogleActionsV2RawInput] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2RawInput](x: Self) {
     
-    @scala.inline
-    def setInputType(value: GoogleActionsV2RawInputInputType): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+    inline def setInputType(value: GoogleActionsV2RawInputInputType): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+    inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

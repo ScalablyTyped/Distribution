@@ -136,22 +136,16 @@ object mod {
     override val version: String = js.native
   }
   
-  @scala.inline
-  def browserName(ua: String): Browser | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("browserName")(ua.asInstanceOf[js.Any]).asInstanceOf[Browser | Null]
+  inline def browserName(ua: String): Browser | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("browserName")(ua.asInstanceOf[js.Any]).asInstanceOf[Browser | Null]
   
-  @scala.inline
-  def detect(): BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")().asInstanceOf[BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null]
-  @scala.inline
-  def detect(userAgent: String): BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(userAgent.asInstanceOf[js.Any]).asInstanceOf[BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null]
+  inline def detect(): BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")().asInstanceOf[BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null]
+  inline def detect(userAgent: String): BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(userAgent.asInstanceOf[js.Any]).asInstanceOf[BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null]
   
-  @scala.inline
-  def detectOS(ua: String): OperatingSystem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOS")(ua.asInstanceOf[js.Any]).asInstanceOf[OperatingSystem | Null]
+  inline def detectOS(ua: String): OperatingSystem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOS")(ua.asInstanceOf[js.Any]).asInstanceOf[OperatingSystem | Null]
   
-  @scala.inline
-  def getNodeVersion(): NodeInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeVersion")().asInstanceOf[NodeInfo | Null]
+  inline def getNodeVersion(): NodeInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeVersion")().asInstanceOf[NodeInfo | Null]
   
-  @scala.inline
-  def parseUserAgent(ua: String): BrowserInfo | SearchBotDeviceInfo | BotInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUserAgent")(ua.asInstanceOf[js.Any]).asInstanceOf[BrowserInfo | SearchBotDeviceInfo | BotInfo | Null]
+  inline def parseUserAgent(ua: String): BrowserInfo | SearchBotDeviceInfo | BotInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUserAgent")(ua.asInstanceOf[js.Any]).asInstanceOf[BrowserInfo | SearchBotDeviceInfo | BotInfo | Null]
   
   /* Rewritten from type alias, can be one of: 
     - typings.detectBrowser.detectBrowserStrings.aol
@@ -185,86 +179,59 @@ object mod {
   trait Browser extends StObject
   object Browser {
     
-    @scala.inline
-    def android: typings.detectBrowser.detectBrowserStrings.android = "android".asInstanceOf[typings.detectBrowser.detectBrowserStrings.android]
+    inline def android: typings.detectBrowser.detectBrowserStrings.android = "android".asInstanceOf[typings.detectBrowser.detectBrowserStrings.android]
     
-    @scala.inline
-    def aol: typings.detectBrowser.detectBrowserStrings.aol = "aol".asInstanceOf[typings.detectBrowser.detectBrowserStrings.aol]
+    inline def aol: typings.detectBrowser.detectBrowserStrings.aol = "aol".asInstanceOf[typings.detectBrowser.detectBrowserStrings.aol]
     
-    @scala.inline
-    def bb10: typings.detectBrowser.detectBrowserStrings.bb10 = "bb10".asInstanceOf[typings.detectBrowser.detectBrowserStrings.bb10]
+    inline def bb10: typings.detectBrowser.detectBrowserStrings.bb10 = "bb10".asInstanceOf[typings.detectBrowser.detectBrowserStrings.bb10]
     
-    @scala.inline
-    def beaker: typings.detectBrowser.detectBrowserStrings.beaker = "beaker".asInstanceOf[typings.detectBrowser.detectBrowserStrings.beaker]
+    inline def beaker: typings.detectBrowser.detectBrowserStrings.beaker = "beaker".asInstanceOf[typings.detectBrowser.detectBrowserStrings.beaker]
     
-    @scala.inline
-    def chrome: typings.detectBrowser.detectBrowserStrings.chrome = "chrome".asInstanceOf[typings.detectBrowser.detectBrowserStrings.chrome]
+    inline def chrome: typings.detectBrowser.detectBrowserStrings.chrome = "chrome".asInstanceOf[typings.detectBrowser.detectBrowserStrings.chrome]
     
-    @scala.inline
-    def `chromium-webview`: typings.detectBrowser.detectBrowserStrings.`chromium-webview` = "chromium-webview".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`chromium-webview`]
+    inline def `chromium-webview`: typings.detectBrowser.detectBrowserStrings.`chromium-webview` = "chromium-webview".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`chromium-webview`]
     
-    @scala.inline
-    def crios: typings.detectBrowser.detectBrowserStrings.crios = "crios".asInstanceOf[typings.detectBrowser.detectBrowserStrings.crios]
+    inline def crios: typings.detectBrowser.detectBrowserStrings.crios = "crios".asInstanceOf[typings.detectBrowser.detectBrowserStrings.crios]
     
-    @scala.inline
-    def edge: typings.detectBrowser.detectBrowserStrings.edge = "edge".asInstanceOf[typings.detectBrowser.detectBrowserStrings.edge]
+    inline def edge: typings.detectBrowser.detectBrowserStrings.edge = "edge".asInstanceOf[typings.detectBrowser.detectBrowserStrings.edge]
     
-    @scala.inline
-    def `edge-chromium`: typings.detectBrowser.detectBrowserStrings.`edge-chromium` = "edge-chromium".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`edge-chromium`]
+    inline def `edge-chromium`: typings.detectBrowser.detectBrowserStrings.`edge-chromium` = "edge-chromium".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`edge-chromium`]
     
-    @scala.inline
-    def `edge-ios`: typings.detectBrowser.detectBrowserStrings.`edge-ios` = "edge-ios".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`edge-ios`]
+    inline def `edge-ios`: typings.detectBrowser.detectBrowserStrings.`edge-ios` = "edge-ios".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`edge-ios`]
     
-    @scala.inline
-    def facebook: typings.detectBrowser.detectBrowserStrings.facebook = "facebook".asInstanceOf[typings.detectBrowser.detectBrowserStrings.facebook]
+    inline def facebook: typings.detectBrowser.detectBrowserStrings.facebook = "facebook".asInstanceOf[typings.detectBrowser.detectBrowserStrings.facebook]
     
-    @scala.inline
-    def firefox: typings.detectBrowser.detectBrowserStrings.firefox = "firefox".asInstanceOf[typings.detectBrowser.detectBrowserStrings.firefox]
+    inline def firefox: typings.detectBrowser.detectBrowserStrings.firefox = "firefox".asInstanceOf[typings.detectBrowser.detectBrowserStrings.firefox]
     
-    @scala.inline
-    def fxios: typings.detectBrowser.detectBrowserStrings.fxios = "fxios".asInstanceOf[typings.detectBrowser.detectBrowserStrings.fxios]
+    inline def fxios: typings.detectBrowser.detectBrowserStrings.fxios = "fxios".asInstanceOf[typings.detectBrowser.detectBrowserStrings.fxios]
     
-    @scala.inline
-    def ie: typings.detectBrowser.detectBrowserStrings.ie = "ie".asInstanceOf[typings.detectBrowser.detectBrowserStrings.ie]
+    inline def ie: typings.detectBrowser.detectBrowserStrings.ie = "ie".asInstanceOf[typings.detectBrowser.detectBrowserStrings.ie]
     
-    @scala.inline
-    def instagram: typings.detectBrowser.detectBrowserStrings.instagram = "instagram".asInstanceOf[typings.detectBrowser.detectBrowserStrings.instagram]
+    inline def instagram: typings.detectBrowser.detectBrowserStrings.instagram = "instagram".asInstanceOf[typings.detectBrowser.detectBrowserStrings.instagram]
     
-    @scala.inline
-    def ios: ios_ = "ios".asInstanceOf[ios_]
+    inline def ios: ios_ = "ios".asInstanceOf[ios_]
     
-    @scala.inline
-    def `ios-webview`: typings.detectBrowser.detectBrowserStrings.`ios-webview` = "ios-webview".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`ios-webview`]
+    inline def `ios-webview`: typings.detectBrowser.detectBrowserStrings.`ios-webview` = "ios-webview".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`ios-webview`]
     
-    @scala.inline
-    def kakaotalk: typings.detectBrowser.detectBrowserStrings.kakaotalk = "kakaotalk".asInstanceOf[typings.detectBrowser.detectBrowserStrings.kakaotalk]
+    inline def kakaotalk: typings.detectBrowser.detectBrowserStrings.kakaotalk = "kakaotalk".asInstanceOf[typings.detectBrowser.detectBrowserStrings.kakaotalk]
     
-    @scala.inline
-    def miui: typings.detectBrowser.detectBrowserStrings.miui = "miui".asInstanceOf[typings.detectBrowser.detectBrowserStrings.miui]
+    inline def miui: typings.detectBrowser.detectBrowserStrings.miui = "miui".asInstanceOf[typings.detectBrowser.detectBrowserStrings.miui]
     
-    @scala.inline
-    def opera: typings.detectBrowser.detectBrowserStrings.opera = "opera".asInstanceOf[typings.detectBrowser.detectBrowserStrings.opera]
+    inline def opera: typings.detectBrowser.detectBrowserStrings.opera = "opera".asInstanceOf[typings.detectBrowser.detectBrowserStrings.opera]
     
-    @scala.inline
-    def `opera-mini`: typings.detectBrowser.detectBrowserStrings.`opera-mini` = "opera-mini".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`opera-mini`]
+    inline def `opera-mini`: typings.detectBrowser.detectBrowserStrings.`opera-mini` = "opera-mini".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`opera-mini`]
     
-    @scala.inline
-    def phantomjs: typings.detectBrowser.detectBrowserStrings.phantomjs = "phantomjs".asInstanceOf[typings.detectBrowser.detectBrowserStrings.phantomjs]
+    inline def phantomjs: typings.detectBrowser.detectBrowserStrings.phantomjs = "phantomjs".asInstanceOf[typings.detectBrowser.detectBrowserStrings.phantomjs]
     
-    @scala.inline
-    def safari: typings.detectBrowser.detectBrowserStrings.safari = "safari".asInstanceOf[typings.detectBrowser.detectBrowserStrings.safari]
+    inline def safari: typings.detectBrowser.detectBrowserStrings.safari = "safari".asInstanceOf[typings.detectBrowser.detectBrowserStrings.safari]
     
-    @scala.inline
-    def samsung: typings.detectBrowser.detectBrowserStrings.samsung = "samsung".asInstanceOf[typings.detectBrowser.detectBrowserStrings.samsung]
+    inline def samsung: typings.detectBrowser.detectBrowserStrings.samsung = "samsung".asInstanceOf[typings.detectBrowser.detectBrowserStrings.samsung]
     
-    @scala.inline
-    def searchbot: typings.detectBrowser.detectBrowserStrings.searchbot = "searchbot".asInstanceOf[typings.detectBrowser.detectBrowserStrings.searchbot]
+    inline def searchbot: typings.detectBrowser.detectBrowserStrings.searchbot = "searchbot".asInstanceOf[typings.detectBrowser.detectBrowserStrings.searchbot]
     
-    @scala.inline
-    def silk: typings.detectBrowser.detectBrowserStrings.silk = "silk".asInstanceOf[typings.detectBrowser.detectBrowserStrings.silk]
+    inline def silk: typings.detectBrowser.detectBrowserStrings.silk = "silk".asInstanceOf[typings.detectBrowser.detectBrowserStrings.silk]
     
-    @scala.inline
-    def yandexbrowser: typings.detectBrowser.detectBrowserStrings.yandexbrowser = "yandexbrowser".asInstanceOf[typings.detectBrowser.detectBrowserStrings.yandexbrowser]
+    inline def yandexbrowser: typings.detectBrowser.detectBrowserStrings.yandexbrowser = "yandexbrowser".asInstanceOf[typings.detectBrowser.detectBrowserStrings.yandexbrowser]
   }
   
   trait DetectedInfo[T /* <: DetectedInfoType */, N /* <: String */, O, V] extends StObject {
@@ -279,27 +246,21 @@ object mod {
   }
   object DetectedInfo {
     
-    @scala.inline
-    def apply[T /* <: DetectedInfoType */, N /* <: String */, O, V](name: N, os: O, `type`: T, version: V): DetectedInfo[T, N, O, V] = {
+    inline def apply[T /* <: DetectedInfoType */, N /* <: String */, O, V](name: N, os: O, `type`: T, version: V): DetectedInfo[T, N, O, V] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetectedInfo[T, N, O, V]]
     }
     
-    @scala.inline
-    implicit class DetectedInfoMutableBuilder[Self <: DetectedInfo[?, ?, ?, ?], T /* <: DetectedInfoType */, N /* <: String */, O, V] (val x: Self & (DetectedInfo[T, N, O, V])) extends AnyVal {
+    extension [Self <: DetectedInfo[?, ?, ?, ?], T /* <: DetectedInfoType */, N /* <: String */, O, V](x: Self & (DetectedInfo[T, N, O, V])) {
       
-      @scala.inline
-      def setName(value: N): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: N): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: O): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: O): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: V): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: V): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,20 +274,15 @@ object mod {
   trait DetectedInfoType extends StObject
   object DetectedInfoType {
     
-    @scala.inline
-    def bot: typings.detectBrowser.detectBrowserStrings.bot = "bot".asInstanceOf[typings.detectBrowser.detectBrowserStrings.bot]
+    inline def bot: typings.detectBrowser.detectBrowserStrings.bot = "bot".asInstanceOf[typings.detectBrowser.detectBrowserStrings.bot]
     
-    @scala.inline
-    def `bot-device`: typings.detectBrowser.detectBrowserStrings.`bot-device` = "bot-device".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`bot-device`]
+    inline def `bot-device`: typings.detectBrowser.detectBrowserStrings.`bot-device` = "bot-device".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`bot-device`]
     
-    @scala.inline
-    def browser: typings.detectBrowser.detectBrowserStrings.browser = "browser".asInstanceOf[typings.detectBrowser.detectBrowserStrings.browser]
+    inline def browser: typings.detectBrowser.detectBrowserStrings.browser = "browser".asInstanceOf[typings.detectBrowser.detectBrowserStrings.browser]
     
-    @scala.inline
-    def node: typings.detectBrowser.detectBrowserStrings.node = "node".asInstanceOf[typings.detectBrowser.detectBrowserStrings.node]
+    inline def node: typings.detectBrowser.detectBrowserStrings.node = "node".asInstanceOf[typings.detectBrowser.detectBrowserStrings.node]
     
-    @scala.inline
-    def `react-native`: typings.detectBrowser.detectBrowserStrings.`react-native` = "react-native".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`react-native`]
+    inline def `react-native`: typings.detectBrowser.detectBrowserStrings.`react-native` = "react-native".asInstanceOf[typings.detectBrowser.detectBrowserStrings.`react-native`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -359,79 +315,54 @@ object mod {
   trait OperatingSystem extends StObject
   object OperatingSystem {
     
-    @scala.inline
-    def `Amazon OS`: typings.detectBrowser.detectBrowserStrings.`Amazon OS` = ("Amazon OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Amazon OS`]
+    inline def `Amazon OS`: typings.detectBrowser.detectBrowserStrings.`Amazon OS` = ("Amazon OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Amazon OS`]
     
-    @scala.inline
-    def `Android OS`: typings.detectBrowser.detectBrowserStrings.`Android OS` = ("Android OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Android OS`]
+    inline def `Android OS`: typings.detectBrowser.detectBrowserStrings.`Android OS` = ("Android OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Android OS`]
     
-    @scala.inline
-    def BeOS: typings.detectBrowser.detectBrowserStrings.BeOS = "BeOS".asInstanceOf[typings.detectBrowser.detectBrowserStrings.BeOS]
+    inline def BeOS: typings.detectBrowser.detectBrowserStrings.BeOS = "BeOS".asInstanceOf[typings.detectBrowser.detectBrowserStrings.BeOS]
     
-    @scala.inline
-    def `BlackBerry OS`: typings.detectBrowser.detectBrowserStrings.`BlackBerry OS` = ("BlackBerry OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`BlackBerry OS`]
+    inline def `BlackBerry OS`: typings.detectBrowser.detectBrowserStrings.`BlackBerry OS` = ("BlackBerry OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`BlackBerry OS`]
     
-    @scala.inline
-    def `Chrome OS`: typings.detectBrowser.detectBrowserStrings.`Chrome OS` = ("Chrome OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Chrome OS`]
+    inline def `Chrome OS`: typings.detectBrowser.detectBrowserStrings.`Chrome OS` = ("Chrome OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Chrome OS`]
     
-    @scala.inline
-    def Linux: typings.detectBrowser.detectBrowserStrings.Linux = "Linux".asInstanceOf[typings.detectBrowser.detectBrowserStrings.Linux]
+    inline def Linux: typings.detectBrowser.detectBrowserStrings.Linux = "Linux".asInstanceOf[typings.detectBrowser.detectBrowserStrings.Linux]
     
-    @scala.inline
-    def `Mac OS`: typings.detectBrowser.detectBrowserStrings.`Mac OS` = ("Mac OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Mac OS`]
+    inline def `Mac OS`: typings.detectBrowser.detectBrowserStrings.`Mac OS` = ("Mac OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Mac OS`]
     
-    @scala.inline
-    def OSSlash2: typings.detectBrowser.detectBrowserStrings.OSSlash2 = "OS/2".asInstanceOf[typings.detectBrowser.detectBrowserStrings.OSSlash2]
+    inline def OSSlash2: typings.detectBrowser.detectBrowserStrings.OSSlash2 = "OS/2".asInstanceOf[typings.detectBrowser.detectBrowserStrings.OSSlash2]
     
-    @scala.inline
-    def `Open BSD`: typings.detectBrowser.detectBrowserStrings.`Open BSD` = ("Open BSD").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Open BSD`]
+    inline def `Open BSD`: typings.detectBrowser.detectBrowserStrings.`Open BSD` = ("Open BSD").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Open BSD`]
     
-    @scala.inline
-    def QNX: typings.detectBrowser.detectBrowserStrings.QNX = "QNX".asInstanceOf[typings.detectBrowser.detectBrowserStrings.QNX]
+    inline def QNX: typings.detectBrowser.detectBrowserStrings.QNX = "QNX".asInstanceOf[typings.detectBrowser.detectBrowserStrings.QNX]
     
-    @scala.inline
-    def `Sun OS`: typings.detectBrowser.detectBrowserStrings.`Sun OS` = ("Sun OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Sun OS`]
+    inline def `Sun OS`: typings.detectBrowser.detectBrowserStrings.`Sun OS` = ("Sun OS").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Sun OS`]
     
-    @scala.inline
-    def `Windows 10`: typings.detectBrowser.detectBrowserStrings.`Windows 10` = ("Windows 10").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 10`]
+    inline def `Windows 10`: typings.detectBrowser.detectBrowserStrings.`Windows 10` = ("Windows 10").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 10`]
     
-    @scala.inline
-    def `Windows 2000`: typings.detectBrowser.detectBrowserStrings.`Windows 2000` = ("Windows 2000").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 2000`]
+    inline def `Windows 2000`: typings.detectBrowser.detectBrowserStrings.`Windows 2000` = ("Windows 2000").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 2000`]
     
-    @scala.inline
-    def `Windows 3Dot11`: typings.detectBrowser.detectBrowserStrings.`Windows 3Dot11` = ("Windows 3.11").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 3Dot11`]
+    inline def `Windows 3Dot11`: typings.detectBrowser.detectBrowserStrings.`Windows 3Dot11` = ("Windows 3.11").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 3Dot11`]
     
-    @scala.inline
-    def `Windows 7`: typings.detectBrowser.detectBrowserStrings.`Windows 7` = ("Windows 7").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 7`]
+    inline def `Windows 7`: typings.detectBrowser.detectBrowserStrings.`Windows 7` = ("Windows 7").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 7`]
     
-    @scala.inline
-    def `Windows 8`: typings.detectBrowser.detectBrowserStrings.`Windows 8` = ("Windows 8").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 8`]
+    inline def `Windows 8`: typings.detectBrowser.detectBrowserStrings.`Windows 8` = ("Windows 8").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 8`]
     
-    @scala.inline
-    def `Windows 8Dot1`: typings.detectBrowser.detectBrowserStrings.`Windows 8Dot1` = ("Windows 8.1").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 8Dot1`]
+    inline def `Windows 8Dot1`: typings.detectBrowser.detectBrowserStrings.`Windows 8Dot1` = ("Windows 8.1").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 8Dot1`]
     
-    @scala.inline
-    def `Windows 95`: typings.detectBrowser.detectBrowserStrings.`Windows 95` = ("Windows 95").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 95`]
+    inline def `Windows 95`: typings.detectBrowser.detectBrowserStrings.`Windows 95` = ("Windows 95").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 95`]
     
-    @scala.inline
-    def `Windows 98`: typings.detectBrowser.detectBrowserStrings.`Windows 98` = ("Windows 98").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 98`]
+    inline def `Windows 98`: typings.detectBrowser.detectBrowserStrings.`Windows 98` = ("Windows 98").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows 98`]
     
-    @scala.inline
-    def `Windows ME`: typings.detectBrowser.detectBrowserStrings.`Windows ME` = ("Windows ME").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows ME`]
+    inline def `Windows ME`: typings.detectBrowser.detectBrowserStrings.`Windows ME` = ("Windows ME").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows ME`]
     
-    @scala.inline
-    def `Windows Mobile`: typings.detectBrowser.detectBrowserStrings.`Windows Mobile` = ("Windows Mobile").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows Mobile`]
+    inline def `Windows Mobile`: typings.detectBrowser.detectBrowserStrings.`Windows Mobile` = ("Windows Mobile").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows Mobile`]
     
-    @scala.inline
-    def `Windows Server 2003`: typings.detectBrowser.detectBrowserStrings.`Windows Server 2003` = ("Windows Server 2003").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows Server 2003`]
+    inline def `Windows Server 2003`: typings.detectBrowser.detectBrowserStrings.`Windows Server 2003` = ("Windows Server 2003").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows Server 2003`]
     
-    @scala.inline
-    def `Windows Vista`: typings.detectBrowser.detectBrowserStrings.`Windows Vista` = ("Windows Vista").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows Vista`]
+    inline def `Windows Vista`: typings.detectBrowser.detectBrowserStrings.`Windows Vista` = ("Windows Vista").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows Vista`]
     
-    @scala.inline
-    def `Windows XP`: typings.detectBrowser.detectBrowserStrings.`Windows XP` = ("Windows XP").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows XP`]
+    inline def `Windows XP`: typings.detectBrowser.detectBrowserStrings.`Windows XP` = ("Windows XP").asInstanceOf[typings.detectBrowser.detectBrowserStrings.`Windows XP`]
     
-    @scala.inline
-    def iOS: typings.detectBrowser.detectBrowserStrings.iOS = "iOS".asInstanceOf[typings.detectBrowser.detectBrowserStrings.iOS]
+    inline def iOS: typings.detectBrowser.detectBrowserStrings.iOS = "iOS".asInstanceOf[typings.detectBrowser.detectBrowserStrings.iOS]
   }
 }

@@ -18,43 +18,31 @@ trait Auth0LockThemeOptions extends StObject {
 }
 object Auth0LockThemeOptions {
   
-  @scala.inline
-  def apply(): Auth0LockThemeOptions = {
+  inline def apply(): Auth0LockThemeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Auth0LockThemeOptions]
   }
   
-  @scala.inline
-  implicit class Auth0LockThemeOptionsMutableBuilder[Self <: Auth0LockThemeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0LockThemeOptions](x: Self) {
     
-    @scala.inline
-    def setAuthButtons(value: Auth0LockThemeButtonOptions): Self = StObject.set(x, "authButtons", value.asInstanceOf[js.Any])
+    inline def setAuthButtons(value: Auth0LockThemeButtonOptions): Self = StObject.set(x, "authButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthButtonsUndefined: Self = StObject.set(x, "authButtons", js.undefined)
+    inline def setAuthButtonsUndefined: Self = StObject.set(x, "authButtons", js.undefined)
     
-    @scala.inline
-    def setHideMainScreenTitle(value: Boolean): Self = StObject.set(x, "hideMainScreenTitle", value.asInstanceOf[js.Any])
+    inline def setHideMainScreenTitle(value: Boolean): Self = StObject.set(x, "hideMainScreenTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideMainScreenTitleUndefined: Self = StObject.set(x, "hideMainScreenTitle", js.undefined)
+    inline def setHideMainScreenTitleUndefined: Self = StObject.set(x, "hideMainScreenTitle", js.undefined)
     
-    @scala.inline
-    def setLabeledSubmitButton(value: Boolean): Self = StObject.set(x, "labeledSubmitButton", value.asInstanceOf[js.Any])
+    inline def setLabeledSubmitButton(value: Boolean): Self = StObject.set(x, "labeledSubmitButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabeledSubmitButtonUndefined: Self = StObject.set(x, "labeledSubmitButton", js.undefined)
+    inline def setLabeledSubmitButtonUndefined: Self = StObject.set(x, "labeledSubmitButton", js.undefined)
     
-    @scala.inline
-    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    @scala.inline
-    def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+    inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+    inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
   }
 }

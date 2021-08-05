@@ -24,8 +24,7 @@ trait Compressedpagesread extends StObject {
 }
 object Compressedpagesread {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `compressed pages read`: Double,
     `compressed pages written`: Double,
     `page written failed to compress`: Double,
@@ -45,28 +44,20 @@ object Compressedpagesread {
     __obj.asInstanceOf[Compressedpagesread]
   }
   
-  @scala.inline
-  implicit class CompressedpagesreadMutableBuilder[Self <: Compressedpagesread] (val x: Self) extends AnyVal {
+  extension [Self <: Compressedpagesread](x: Self) {
     
-    @scala.inline
-    def `setCompressed pages read`(value: Double): Self = StObject.set(x, "compressed pages read", value.asInstanceOf[js.Any])
+    inline def `setCompressed pages read`(value: Double): Self = StObject.set(x, "compressed pages read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCompressed pages written`(value: Double): Self = StObject.set(x, "compressed pages written", value.asInstanceOf[js.Any])
+    inline def `setCompressed pages written`(value: Double): Self = StObject.set(x, "compressed pages written", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPage written failed to compress`(value: Double): Self = StObject.set(x, "page written failed to compress", value.asInstanceOf[js.Any])
+    inline def `setPage written failed to compress`(value: Double): Self = StObject.set(x, "page written failed to compress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPage written was too small to compress`(value: Double): Self = StObject.set(x, "page written was too small to compress", value.asInstanceOf[js.Any])
+    inline def `setPage written was too small to compress`(value: Double): Self = StObject.set(x, "page written was too small to compress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRaw compression call failedComma additional data available`(value: Double): Self = StObject.set(x, "raw compression call failed, additional data available", value.asInstanceOf[js.Any])
+    inline def `setRaw compression call failedComma additional data available`(value: Double): Self = StObject.set(x, "raw compression call failed, additional data available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRaw compression call failedComma no additional data available`(value: Double): Self = StObject.set(x, "raw compression call failed, no additional data available", value.asInstanceOf[js.Any])
+    inline def `setRaw compression call failedComma no additional data available`(value: Double): Self = StObject.set(x, "raw compression call failed, no additional data available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRaw compression call succeeded`(value: Double): Self = StObject.set(x, "raw compression call succeeded", value.asInstanceOf[js.Any])
+    inline def `setRaw compression call succeeded`(value: Double): Self = StObject.set(x, "raw compression call succeeded", value.asInstanceOf[js.Any])
   }
 }

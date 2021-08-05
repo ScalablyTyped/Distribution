@@ -36,28 +36,22 @@ object typesConditionMod {
   }
   object Condition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ComparisonOperator: EQ | NE | IN | LE | LT | GE | GT | BETWEEN | NOT_NULL | NULL | CONTAINS | NOT_CONTAINS | BEGINS_WITH | String
     ): Condition = {
       val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any])
       __obj.asInstanceOf[Condition]
     }
     
-    @scala.inline
-    implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+    extension [Self <: Condition](x: Self) {
       
-      @scala.inline
-      def setAttributeValueList(value: js.Array[AttributeValue] | Iterable[AttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
+      inline def setAttributeValueList(value: js.Array[AttributeValue] | Iterable[AttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
+      inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
       
-      @scala.inline
-      def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+      inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
       
-      @scala.inline
-      def setComparisonOperator(
+      inline def setComparisonOperator(
         value: EQ | NE | IN | LE | LT | GE | GT | BETWEEN | NOT_NULL | NULL | CONTAINS | NOT_CONTAINS | BEGINS_WITH | String
       ): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     }
@@ -75,25 +69,20 @@ object typesConditionMod {
   }
   object UnmarshalledCondition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ComparisonOperator: EQ | NE | IN | LE | LT | GE | GT | BETWEEN | NOT_NULL | NULL | CONTAINS | NOT_CONTAINS | BEGINS_WITH | String
     ): UnmarshalledCondition = {
       val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledCondition]
     }
     
-    @scala.inline
-    implicit class UnmarshalledConditionMutableBuilder[Self <: UnmarshalledCondition] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCondition](x: Self) {
       
-      @scala.inline
-      def setAttributeValueList(value: js.Array[UnmarshalledAttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
+      inline def setAttributeValueList(value: js.Array[UnmarshalledAttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
+      inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
       
-      @scala.inline
-      def setAttributeValueListVarargs(value: UnmarshalledAttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+      inline def setAttributeValueListVarargs(value: UnmarshalledAttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
     }
   }
 }

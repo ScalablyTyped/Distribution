@@ -32,25 +32,19 @@ trait SchemaConfigurationSpec extends StObject {
 }
 object SchemaConfigurationSpec {
   
-  @scala.inline
-  def apply(): SchemaConfigurationSpec = {
+  inline def apply(): SchemaConfigurationSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfigurationSpec]
   }
   
-  @scala.inline
-  implicit class SchemaConfigurationSpecMutableBuilder[Self <: SchemaConfigurationSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConfigurationSpec](x: Self) {
     
-    @scala.inline
-    def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setRevisionTemplate(value: SchemaRevisionTemplate): Self = StObject.set(x, "revisionTemplate", value.asInstanceOf[js.Any])
+    inline def setRevisionTemplate(value: SchemaRevisionTemplate): Self = StObject.set(x, "revisionTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionTemplateUndefined: Self = StObject.set(x, "revisionTemplate", js.undefined)
+    inline def setRevisionTemplateUndefined: Self = StObject.set(x, "revisionTemplate", js.undefined)
   }
 }

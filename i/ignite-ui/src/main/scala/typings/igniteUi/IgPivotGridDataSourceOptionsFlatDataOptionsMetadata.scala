@@ -19,19 +19,15 @@ trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadata
 }
 object IgPivotGridDataSourceOptionsFlatDataOptionsMetadata {
   
-  @scala.inline
-  def apply(): IgPivotGridDataSourceOptionsFlatDataOptionsMetadata = {
+  inline def apply(): IgPivotGridDataSourceOptionsFlatDataOptionsMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotGridDataSourceOptionsFlatDataOptionsMetadata]
   }
   
-  @scala.inline
-  implicit class IgPivotGridDataSourceOptionsFlatDataOptionsMetadataMutableBuilder[Self <: IgPivotGridDataSourceOptionsFlatDataOptionsMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotGridDataSourceOptionsFlatDataOptionsMetadata](x: Self) {
     
-    @scala.inline
-    def setCube(value: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    inline def setCube(value: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
   }
 }

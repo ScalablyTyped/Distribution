@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-iphone-x-helper"
-version := "1.3.1-5aae92"
+version := "1.3.1-17e516"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

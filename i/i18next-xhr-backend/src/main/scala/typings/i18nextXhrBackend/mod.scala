@@ -124,81 +124,58 @@ object mod {
   }
   object BackendOptions {
     
-    @scala.inline
-    def apply(): BackendOptions = {
+    inline def apply(): BackendOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BackendOptions]
     }
     
-    @scala.inline
-    implicit class BackendOptionsMutableBuilder[Self <: BackendOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BackendOptions](x: Self) {
       
-      @scala.inline
-      def setAddPath(value: String): Self = StObject.set(x, "addPath", value.asInstanceOf[js.Any])
+      inline def setAddPath(value: String): Self = StObject.set(x, "addPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddPathUndefined: Self = StObject.set(x, "addPath", js.undefined)
+      inline def setAddPathUndefined: Self = StObject.set(x, "addPath", js.undefined)
       
-      @scala.inline
-      def setAjax(
+      inline def setAjax(
         value: (/* url */ String, BackendOptions, /* callback */ AjaxRequestCallback, /* data */ js.Object | String, /* cache */ Boolean) => Unit
       ): Self = StObject.set(x, "ajax", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
+      inline def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
       
-      @scala.inline
-      def setAllowMultiLoading(value: Boolean): Self = StObject.set(x, "allowMultiLoading", value.asInstanceOf[js.Any])
+      inline def setAllowMultiLoading(value: Boolean): Self = StObject.set(x, "allowMultiLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMultiLoadingUndefined: Self = StObject.set(x, "allowMultiLoading", js.undefined)
+      inline def setAllowMultiLoadingUndefined: Self = StObject.set(x, "allowMultiLoading", js.undefined)
       
-      @scala.inline
-      def setCrossDomain(value: Boolean): Self = StObject.set(x, "crossDomain", value.asInstanceOf[js.Any])
+      inline def setCrossDomain(value: Boolean): Self = StObject.set(x, "crossDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossDomainUndefined: Self = StObject.set(x, "crossDomain", js.undefined)
+      inline def setCrossDomainUndefined: Self = StObject.set(x, "crossDomain", js.undefined)
       
-      @scala.inline
-      def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+      inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
-      @scala.inline
-      def setLoadPath(value: LoadPathOption): Self = StObject.set(x, "loadPath", value.asInstanceOf[js.Any])
+      inline def setLoadPath(value: LoadPathOption): Self = StObject.set(x, "loadPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadPathFunction2(value: (/* lngs */ js.Array[String], /* namespaces */ js.Array[String]) => String): Self = StObject.set(x, "loadPath", js.Any.fromFunction2(value))
+      inline def setLoadPathFunction2(value: (/* lngs */ js.Array[String], /* namespaces */ js.Array[String]) => String): Self = StObject.set(x, "loadPath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadPathUndefined: Self = StObject.set(x, "loadPath", js.undefined)
+      inline def setLoadPathUndefined: Self = StObject.set(x, "loadPath", js.undefined)
       
-      @scala.inline
-      def setParse(value: /* data */ String => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* data */ String => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParsePayload(
+      inline def setParsePayload(
         value: (/* namespace */ String, /* key */ String, /* fallbackValue */ js.UndefOr[String]) => StringDictionary[js.Any]
       ): Self = StObject.set(x, "parsePayload", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setParsePayloadUndefined: Self = StObject.set(x, "parsePayload", js.undefined)
+      inline def setParsePayloadUndefined: Self = StObject.set(x, "parsePayload", js.undefined)
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setQueryStringParams(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParams", value.asInstanceOf[js.Any])
+      inline def setQueryStringParams(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringParamsUndefined: Self = StObject.set(x, "queryStringParams", js.undefined)
+      inline def setQueryStringParamsUndefined: Self = StObject.set(x, "queryStringParams", js.undefined)
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   

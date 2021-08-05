@@ -14,16 +14,13 @@ trait DidOpenTextDocumentParams extends StObject {
 }
 object DidOpenTextDocumentParams {
   
-  @scala.inline
-  def apply(textDocument: TextDocumentItem): DidOpenTextDocumentParams = {
+  inline def apply(textDocument: TextDocumentItem): DidOpenTextDocumentParams = {
     val __obj = js.Dynamic.literal(textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[DidOpenTextDocumentParams]
   }
   
-  @scala.inline
-  implicit class DidOpenTextDocumentParamsMutableBuilder[Self <: DidOpenTextDocumentParams] (val x: Self) extends AnyVal {
+  extension [Self <: DidOpenTextDocumentParams](x: Self) {
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentItem): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentItem): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

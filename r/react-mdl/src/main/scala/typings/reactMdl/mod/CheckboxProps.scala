@@ -11,8 +11,7 @@ trait CheckboxProps
      with RippleComponent
 object CheckboxProps {
   
-  @scala.inline
-  def apply(): CheckboxProps = {
+  inline def apply(): CheckboxProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckboxProps]
   }

@@ -34,8 +34,7 @@ object peerStreamsMod {
   }
   object PeerStreams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachInboundConnection: DuplexIterableStream[js.Any, js.Any, js.Any] => Unit,
       attachOutboundConnection: DuplexIterableStream[js.Any, js.Any, js.Any] => js.Promise[Unit],
       close: () => Unit,
@@ -51,38 +50,27 @@ object peerStreamsMod {
       __obj.asInstanceOf[PeerStreams]
     }
     
-    @scala.inline
-    implicit class PeerStreamsMutableBuilder[Self <: PeerStreams] (val x: Self) extends AnyVal {
+    extension [Self <: PeerStreams](x: Self) {
       
-      @scala.inline
-      def setAttachInboundConnection(value: DuplexIterableStream[js.Any, js.Any, js.Any] => Unit): Self = StObject.set(x, "attachInboundConnection", js.Any.fromFunction1(value))
+      inline def setAttachInboundConnection(value: DuplexIterableStream[js.Any, js.Any, js.Any] => Unit): Self = StObject.set(x, "attachInboundConnection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAttachOutboundConnection(value: DuplexIterableStream[js.Any, js.Any, js.Any] => js.Promise[Unit]): Self = StObject.set(x, "attachOutboundConnection", js.Any.fromFunction1(value))
+      inline def setAttachOutboundConnection(value: DuplexIterableStream[js.Any, js.Any, js.Any] => js.Promise[Unit]): Self = StObject.set(x, "attachOutboundConnection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setId(value: ^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundStream(value: DuplexIterableStream[js.Any, js.Any, js.Any]): Self = StObject.set(x, "inboundStream", value.asInstanceOf[js.Any])
+      inline def setInboundStream(value: DuplexIterableStream[js.Any, js.Any, js.Any]): Self = StObject.set(x, "inboundStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsReadable(value: Boolean): Self = StObject.set(x, "isReadable", value.asInstanceOf[js.Any])
+      inline def setIsReadable(value: Boolean): Self = StObject.set(x, "isReadable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWritable(value: Boolean): Self = StObject.set(x, "isWritable", value.asInstanceOf[js.Any])
+      inline def setIsWritable(value: Boolean): Self = StObject.set(x, "isWritable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutboundStream(value: Pushable[Uint8Array]): Self = StObject.set(x, "outboundStream", value.asInstanceOf[js.Any])
+      inline def setOutboundStream(value: Pushable[Uint8Array]): Self = StObject.set(x, "outboundStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrite(value: Uint8Array => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: Uint8Array => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
 }

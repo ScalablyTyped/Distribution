@@ -31,37 +31,27 @@ trait IClassList
 }
 object IClassList {
   
-  @scala.inline
-  def apply(): IClassList = {
+  inline def apply(): IClassList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClassList]
   }
   
-  @scala.inline
-  implicit class IClassListMutableBuilder[Self <: IClassList] (val x: Self) extends AnyVal {
+  extension [Self <: IClassList](x: Self) {
     
-    @scala.inline
-    def setAdd(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddMany(value: /* classes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addMany", js.Any.fromFunction1(value))
+    inline def setAddMany(value: /* classes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addMany", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddManyUndefined: Self = StObject.set(x, "addMany", js.undefined)
+    inline def setAddManyUndefined: Self = StObject.set(x, "addMany", js.undefined)
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setRemove(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* cls */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveMany(value: /* classes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeMany", js.Any.fromFunction1(value))
+    inline def setRemoveMany(value: /* classes */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeMany", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveManyUndefined: Self = StObject.set(x, "removeMany", js.undefined)
+    inline def setRemoveManyUndefined: Self = StObject.set(x, "removeMany", js.undefined)
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }
 }

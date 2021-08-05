@@ -23,25 +23,19 @@ trait KendraConfiguration extends StObject {
 }
 object KendraConfiguration {
   
-  @scala.inline
-  def apply(kendraIndex: KendraIndexArn, role: roleArn): KendraConfiguration = {
+  inline def apply(kendraIndex: KendraIndexArn, role: roleArn): KendraConfiguration = {
     val __obj = js.Dynamic.literal(kendraIndex = kendraIndex.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[KendraConfiguration]
   }
   
-  @scala.inline
-  implicit class KendraConfigurationMutableBuilder[Self <: KendraConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: KendraConfiguration](x: Self) {
     
-    @scala.inline
-    def setKendraIndex(value: KendraIndexArn): Self = StObject.set(x, "kendraIndex", value.asInstanceOf[js.Any])
+    inline def setKendraIndex(value: KendraIndexArn): Self = StObject.set(x, "kendraIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryFilterString(value: QueryFilterString): Self = StObject.set(x, "queryFilterString", value.asInstanceOf[js.Any])
+    inline def setQueryFilterString(value: QueryFilterString): Self = StObject.set(x, "queryFilterString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryFilterStringUndefined: Self = StObject.set(x, "queryFilterString", js.undefined)
+    inline def setQueryFilterStringUndefined: Self = StObject.set(x, "queryFilterString", js.undefined)
     
-    @scala.inline
-    def setRole(value: roleArn): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: roleArn): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

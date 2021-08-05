@@ -20,34 +20,25 @@ trait SetOpts extends StObject {
 }
 object SetOpts {
   
-  @scala.inline
-  def apply(): SetOpts = {
+  inline def apply(): SetOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetOpts]
   }
   
-  @scala.inline
-  implicit class SetOptsMutableBuilder[Self <: SetOpts] (val x: Self) extends AnyVal {
+  extension [Self <: SetOpts](x: Self) {
     
-    @scala.inline
-    def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+    inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+    inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
     
-    @scala.inline
-    def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
+    inline def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepUndefined: Self = StObject.set(x, "keep", js.undefined)
+    inline def setKeepUndefined: Self = StObject.set(x, "keep", js.undefined)
     
-    @scala.inline
-    def setShuffle(value: Shuffler): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
+    inline def setShuffle(value: Shuffler): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShuffleFunction2(value: (/* left */ js.Any, /* right */ js.Any) => `1` | `0` | `-1`): Self = StObject.set(x, "shuffle", js.Any.fromFunction2(value))
+    inline def setShuffleFunction2(value: (/* left */ js.Any, /* right */ js.Any) => `1` | `0` | `-1`): Self = StObject.set(x, "shuffle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
+    inline def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
   }
 }

@@ -17,37 +17,27 @@ trait ILoaderOptions extends StObject {
 }
 object ILoaderOptions {
   
-  @scala.inline
-  def apply(): ILoaderOptions = {
+  inline def apply(): ILoaderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILoaderOptions]
   }
   
-  @scala.inline
-  implicit class ILoaderOptionsMutableBuilder[Self <: ILoaderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ILoaderOptions](x: Self) {
     
-    @scala.inline
-    def setCrossOrigin(value: Boolean | String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: Boolean | String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    @scala.inline
-    def setLoadType(value: Double): Self = StObject.set(x, "loadType", value.asInstanceOf[js.Any])
+    inline def setLoadType(value: Double): Self = StObject.set(x, "loadType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadTypeUndefined: Self = StObject.set(x, "loadType", js.undefined)
+    inline def setLoadTypeUndefined: Self = StObject.set(x, "loadType", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: LoadElement): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: LoadElement): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setXhrType(value: String): Self = StObject.set(x, "xhrType", value.asInstanceOf[js.Any])
+    inline def setXhrType(value: String): Self = StObject.set(x, "xhrType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrTypeUndefined: Self = StObject.set(x, "xhrType", js.undefined)
+    inline def setXhrTypeUndefined: Self = StObject.set(x, "xhrType", js.undefined)
   }
 }

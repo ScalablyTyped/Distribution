@@ -24,8 +24,7 @@ trait OptimizeDefinition extends StObject {
 }
 object OptimizeDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     crop: center | top | left | right | bottom,
     fit: resize | crop,
     height: Double | String,
@@ -35,19 +34,14 @@ object OptimizeDefinition {
     __obj.asInstanceOf[OptimizeDefinition]
   }
   
-  @scala.inline
-  implicit class OptimizeDefinitionMutableBuilder[Self <: OptimizeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: OptimizeDefinition](x: Self) {
     
-    @scala.inline
-    def setCrop(value: center | top | left | right | bottom): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    inline def setCrop(value: center | top | left | right | bottom): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFit(value: resize | crop): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    inline def setFit(value: resize | crop): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

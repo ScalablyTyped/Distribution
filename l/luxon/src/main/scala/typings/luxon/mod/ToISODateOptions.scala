@@ -14,19 +14,15 @@ trait ToISODateOptions extends StObject {
 }
 object ToISODateOptions {
   
-  @scala.inline
-  def apply(): ToISODateOptions = {
+  inline def apply(): ToISODateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToISODateOptions]
   }
   
-  @scala.inline
-  implicit class ToISODateOptionsMutableBuilder[Self <: ToISODateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ToISODateOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: ToISOFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ToISOFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

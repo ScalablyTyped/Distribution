@@ -27,8 +27,7 @@ trait OpenCommandArgument2
 }
 object OpenCommandArgument2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Mode: Double,
     Priority: Double,
     Properties: SafeArray[Property],
@@ -39,10 +38,8 @@ object OpenCommandArgument2 {
     __obj.asInstanceOf[OpenCommandArgument2]
   }
   
-  @scala.inline
-  implicit class OpenCommandArgument2MutableBuilder[Self <: OpenCommandArgument2] (val x: Self) extends AnyVal {
+  extension [Self <: OpenCommandArgument2](x: Self) {
     
-    @scala.inline
-    def setSortingInfo(value: SafeArray[NumberedSortingInfo]): Self = StObject.set(x, "SortingInfo", value.asInstanceOf[js.Any])
+    inline def setSortingInfo(value: SafeArray[NumberedSortingInfo]): Self = StObject.set(x, "SortingInfo", value.asInstanceOf[js.Any])
   }
 }

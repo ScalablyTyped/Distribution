@@ -14,28 +14,21 @@ trait PaginablePayload extends StObject {
 }
 object PaginablePayload {
   
-  @scala.inline
-  def apply(count: Double): PaginablePayload = {
+  inline def apply(count: Double): PaginablePayload = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], next_page = null, previous_page = null)
     __obj.asInstanceOf[PaginablePayload]
   }
   
-  @scala.inline
-  implicit class PaginablePayloadMutableBuilder[Self <: PaginablePayload] (val x: Self) extends AnyVal {
+  extension [Self <: PaginablePayload](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_page(value: Double): Self = StObject.set(x, "next_page", value.asInstanceOf[js.Any])
+    inline def setNext_page(value: Double): Self = StObject.set(x, "next_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_pageNull: Self = StObject.set(x, "next_page", null)
+    inline def setNext_pageNull: Self = StObject.set(x, "next_page", null)
     
-    @scala.inline
-    def setPrevious_page(value: Double): Self = StObject.set(x, "previous_page", value.asInstanceOf[js.Any])
+    inline def setPrevious_page(value: Double): Self = StObject.set(x, "previous_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious_pageNull: Self = StObject.set(x, "previous_page", null)
+    inline def setPrevious_pageNull: Self = StObject.set(x, "previous_page", null)
   }
 }

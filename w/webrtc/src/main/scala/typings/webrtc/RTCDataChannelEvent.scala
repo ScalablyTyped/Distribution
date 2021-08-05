@@ -11,16 +11,13 @@ trait RTCDataChannelEvent extends StObject {
 }
 object RTCDataChannelEvent {
   
-  @scala.inline
-  def apply(channel: RTCDataChannel): RTCDataChannelEvent = {
+  inline def apply(channel: RTCDataChannel): RTCDataChannelEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDataChannelEvent]
   }
   
-  @scala.inline
-  implicit class RTCDataChannelEventMutableBuilder[Self <: RTCDataChannelEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RTCDataChannelEvent](x: Self) {
     
-    @scala.inline
-    def setChannel(value: RTCDataChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: RTCDataChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

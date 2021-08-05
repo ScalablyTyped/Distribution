@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLStyleSheetRule")
 @js.native
-class HTMLStyleSheetRule protected ()
+/* private */ class HTMLStyleSheetRule ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLStyleSheetRule {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLStyleSheetRule_typekey")
   var MSHTMLDotHTMLStyleSheetRule_typekey: typings.activexMshtml.MSHTML.HTMLStyleSheetRule = js.native
   

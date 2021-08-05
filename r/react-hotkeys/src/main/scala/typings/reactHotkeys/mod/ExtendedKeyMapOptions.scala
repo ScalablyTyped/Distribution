@@ -19,8 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ExtendedKeyMapOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: KeyEventName,
     sequence: MouseTrapKeySequence,
     sequences: js.Array[KeyMapOptions | MouseTrapKeySequence]
@@ -29,31 +28,22 @@ object ExtendedKeyMapOptions {
     __obj.asInstanceOf[ExtendedKeyMapOptions]
   }
   
-  @scala.inline
-  implicit class ExtendedKeyMapOptionsMutableBuilder[Self <: ExtendedKeyMapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedKeyMapOptions](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSequences(value: js.Array[KeyMapOptions | MouseTrapKeySequence]): Self = StObject.set(x, "sequences", value.asInstanceOf[js.Any])
+    inline def setSequences(value: js.Array[KeyMapOptions | MouseTrapKeySequence]): Self = StObject.set(x, "sequences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequencesVarargs(value: (KeyMapOptions | MouseTrapKeySequence)*): Self = StObject.set(x, "sequences", js.Array(value :_*))
+    inline def setSequencesVarargs(value: (KeyMapOptions | MouseTrapKeySequence)*): Self = StObject.set(x, "sequences", js.Array(value :_*))
   }
 }

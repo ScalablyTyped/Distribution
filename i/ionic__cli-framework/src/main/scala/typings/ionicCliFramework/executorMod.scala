@@ -114,8 +114,7 @@ object executorMod {
   @js.native
   val HELP_FLAGS: js.Array[String] = js.native
   
-  @scala.inline
-  def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](hasNamespaceArgvEnvRest: (Argv[N, C, M, I, O]) & (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(hasNamespaceArgvEnvRest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](hasNamespaceArgvEnvRest: (Argv[N, C, M, I, O]) & (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(hasNamespaceArgvEnvRest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait BaseExecutorDeps[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
     
@@ -129,35 +128,26 @@ object executorMod {
   }
   object BaseExecutorDeps {
     
-    @scala.inline
-    def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](namespace: N): BaseExecutorDeps[C, N, M, I, O] = {
+    inline def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](namespace: N): BaseExecutorDeps[C, N, M, I, O] = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseExecutorDeps[C, N, M, I, O]]
     }
     
-    @scala.inline
-    implicit class BaseExecutorDepsMutableBuilder[Self <: BaseExecutorDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (BaseExecutorDeps[C, N, M, I, O])) extends AnyVal {
+    extension [Self <: BaseExecutorDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (BaseExecutorDeps[C, N, M, I, O])) {
       
-      @scala.inline
-      def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: N): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: N): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     }
   }
   
@@ -167,20 +157,16 @@ object executorMod {
   }
   object BaseExecutorFormatHelpOptions {
     
-    @scala.inline
-    def apply(): BaseExecutorFormatHelpOptions = {
+    inline def apply(): BaseExecutorFormatHelpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseExecutorFormatHelpOptions]
     }
     
-    @scala.inline
-    implicit class BaseExecutorFormatHelpOptionsMutableBuilder[Self <: BaseExecutorFormatHelpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseExecutorFormatHelpOptions](x: Self) {
       
-      @scala.inline
-      def setFormat(value: terminal | json): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: terminal | json): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   
@@ -190,17 +176,14 @@ object executorMod {
   }
   object ExecutorOperations {
     
-    @scala.inline
-    def apply(RPC: String): ExecutorOperations = {
+    inline def apply(RPC: String): ExecutorOperations = {
       val __obj = js.Dynamic.literal(RPC = RPC.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecutorOperations]
     }
     
-    @scala.inline
-    implicit class ExecutorOperationsMutableBuilder[Self <: ExecutorOperations] (val x: Self) extends AnyVal {
+    extension [Self <: ExecutorOperations](x: Self) {
       
-      @scala.inline
-      def setRPC(value: String): Self = StObject.set(x, "RPC", value.asInstanceOf[js.Any])
+      inline def setRPC(value: String): Self = StObject.set(x, "RPC", value.asInstanceOf[js.Any])
     }
   }
   

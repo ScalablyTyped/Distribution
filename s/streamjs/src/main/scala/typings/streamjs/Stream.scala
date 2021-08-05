@@ -179,23 +179,18 @@ object Stream {
   }
   object Collector {
     
-    @scala.inline
-    def apply[T](accumulator: (T, T) => T, finisher: T => T, supplier: () => T): Collector[T] = {
+    inline def apply[T](accumulator: (T, T) => T, finisher: T => T, supplier: () => T): Collector[T] = {
       val __obj = js.Dynamic.literal(accumulator = js.Any.fromFunction2(accumulator), finisher = js.Any.fromFunction1(finisher), supplier = js.Any.fromFunction0(supplier))
       __obj.asInstanceOf[Collector[T]]
     }
     
-    @scala.inline
-    implicit class CollectorMutableBuilder[Self <: Collector[?], T] (val x: Self & Collector[T]) extends AnyVal {
+    extension [Self <: Collector[?], T](x: Self & Collector[T]) {
       
-      @scala.inline
-      def setAccumulator(value: (T, T) => T): Self = StObject.set(x, "accumulator", js.Any.fromFunction2(value))
+      inline def setAccumulator(value: (T, T) => T): Self = StObject.set(x, "accumulator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFinisher(value: T => T): Self = StObject.set(x, "finisher", js.Any.fromFunction1(value))
+      inline def setFinisher(value: T => T): Self = StObject.set(x, "finisher", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSupplier(value: () => T): Self = StObject.set(x, "supplier", js.Any.fromFunction0(value))
+      inline def setSupplier(value: () => T): Self = StObject.set(x, "supplier", js.Any.fromFunction0(value))
     }
   }
   
@@ -215,20 +210,16 @@ object Stream {
   }
   object Iterator {
     
-    @scala.inline
-    def apply[T](done: Boolean, next: () => T): typings.streamjs.Stream.Iterator[T] = {
+    inline def apply[T](done: Boolean, next: () => T): typings.streamjs.Stream.Iterator[T] = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[typings.streamjs.Stream.Iterator[T]]
     }
     
-    @scala.inline
-    implicit class IteratorMutableBuilder[Self <: typings.streamjs.Stream.Iterator[?], T] (val x: Self & typings.streamjs.Stream.Iterator[T]) extends AnyVal {
+    extension [Self <: typings.streamjs.Stream.Iterator[?], T](x: Self & typings.streamjs.Stream.Iterator[T]) {
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: () => T): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => T): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
   
@@ -242,23 +233,18 @@ object Stream {
   }
   object JoinOptions {
     
-    @scala.inline
-    def apply(delimiter: String, prefix: String, suffix: String): JoinOptions = {
+    inline def apply(delimiter: String, prefix: String, suffix: String): JoinOptions = {
       val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
       __obj.asInstanceOf[JoinOptions]
     }
     
-    @scala.inline
-    implicit class JoinOptionsMutableBuilder[Self <: JoinOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JoinOptions](x: Self) {
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,8 +272,7 @@ object Stream {
   }
   object Optional {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       filter: js.Function1[/* elem */ T, Boolean] => Optional[T],
       flatMap: js.Function1[/* elem */ T, Optional[js.Any]] => Optional[js.Any],
       get: () => T,
@@ -302,35 +287,25 @@ object Stream {
       __obj.asInstanceOf[Optional[T]]
     }
     
-    @scala.inline
-    implicit class OptionalMutableBuilder[Self <: Optional[?], T] (val x: Self & Optional[T]) extends AnyVal {
+    extension [Self <: Optional[?], T](x: Self & Optional[T]) {
       
-      @scala.inline
-      def setFilter(value: js.Function1[/* elem */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: js.Function1[/* elem */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlatMap(value: js.Function1[/* elem */ T, Optional[js.Any]] => Optional[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
+      inline def setFlatMap(value: js.Function1[/* elem */ T, Optional[js.Any]] => Optional[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIfPresent(value: js.Function1[/* elem */ T, Unit] => Unit): Self = StObject.set(x, "ifPresent", js.Any.fromFunction1(value))
+      inline def setIfPresent(value: js.Function1[/* elem */ T, Unit] => Unit): Self = StObject.set(x, "ifPresent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsPresent(value: () => Boolean): Self = StObject.set(x, "isPresent", js.Any.fromFunction0(value))
+      inline def setIsPresent(value: () => Boolean): Self = StObject.set(x, "isPresent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMap(value: js.Function1[/* elem */ T, js.Any] => Optional[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* elem */ T, js.Any] => Optional[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrElse(value: T => T): Self = StObject.set(x, "orElse", js.Any.fromFunction1(value))
+      inline def setOrElse(value: T => T): Self = StObject.set(x, "orElse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrElseGet(value: Supplier[T] => T): Self = StObject.set(x, "orElseGet", js.Any.fromFunction1(value))
+      inline def setOrElseGet(value: Supplier[T] => T): Self = StObject.set(x, "orElseGet", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrElseThrow(value: js.Any => T): Self = StObject.set(x, "orElseThrow", js.Any.fromFunction1(value))
+      inline def setOrElseThrow(value: js.Any => T): Self = StObject.set(x, "orElseThrow", js.Any.fromFunction1(value))
     }
   }
   

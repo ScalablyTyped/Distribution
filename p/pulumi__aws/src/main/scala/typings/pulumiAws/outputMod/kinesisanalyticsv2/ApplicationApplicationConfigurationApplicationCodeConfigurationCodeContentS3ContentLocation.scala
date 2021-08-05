@@ -23,25 +23,19 @@ trait ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent
 }
 object ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation {
   
-  @scala.inline
-  def apply(bucketArn: String, fileKey: String): ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation = {
+  inline def apply(bucketArn: String, fileKey: String): ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation = {
     val __obj = js.Dynamic.literal(bucketArn = bucketArn.asInstanceOf[js.Any], fileKey = fileKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationMutableBuilder[Self <: ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation](x: Self) {
     
-    @scala.inline
-    def setBucketArn(value: String): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
+    inline def setBucketArn(value: String): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileKey(value: String): Self = StObject.set(x, "fileKey", value.asInstanceOf[js.Any])
+    inline def setFileKey(value: String): Self = StObject.set(x, "fileKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
+    inline def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
+    inline def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }
 }

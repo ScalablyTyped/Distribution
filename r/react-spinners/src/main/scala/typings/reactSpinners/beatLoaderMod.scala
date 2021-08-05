@@ -22,8 +22,7 @@ object beatLoaderMod {
     @JSImport("react-spinners/BeatLoader", "default.defaultProps")
     @js.native
     def defaultProps: LoaderSizeMarginProps = js.native
-    @scala.inline
-    def defaultProps_=(x: LoaderSizeMarginProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: LoaderSizeMarginProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

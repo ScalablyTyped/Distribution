@@ -35,8 +35,7 @@ trait CoreTextTextUpdatingEventArgs extends StObject {
 }
 object CoreTextTextUpdatingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => Deferral,
     inputLanguage: Language,
     isCanceled: Boolean,
@@ -49,28 +48,20 @@ object CoreTextTextUpdatingEventArgs {
     __obj.asInstanceOf[CoreTextTextUpdatingEventArgs]
   }
   
-  @scala.inline
-  implicit class CoreTextTextUpdatingEventArgsMutableBuilder[Self <: CoreTextTextUpdatingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextTextUpdatingEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInputLanguage(value: Language): Self = StObject.set(x, "inputLanguage", value.asInstanceOf[js.Any])
+    inline def setInputLanguage(value: Language): Self = StObject.set(x, "inputLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewSelection(value: CoreTextRange): Self = StObject.set(x, "newSelection", value.asInstanceOf[js.Any])
+    inline def setNewSelection(value: CoreTextRange): Self = StObject.set(x, "newSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: CoreTextTextUpdatingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: CoreTextTextUpdatingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

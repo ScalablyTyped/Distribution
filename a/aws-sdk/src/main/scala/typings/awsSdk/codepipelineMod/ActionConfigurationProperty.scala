@@ -43,43 +43,31 @@ trait ActionConfigurationProperty extends StObject {
 }
 object ActionConfigurationProperty {
   
-  @scala.inline
-  def apply(key: Boolean, name: ActionConfigurationKey, required: Boolean, secret: Boolean): ActionConfigurationProperty = {
+  inline def apply(key: Boolean, name: ActionConfigurationKey, required: Boolean, secret: Boolean): ActionConfigurationProperty = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionConfigurationProperty]
   }
   
-  @scala.inline
-  implicit class ActionConfigurationPropertyMutableBuilder[Self <: ActionConfigurationProperty] (val x: Self) extends AnyVal {
+  extension [Self <: ActionConfigurationProperty](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setKey(value: Boolean): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Boolean): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ActionConfigurationKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ActionConfigurationKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryable(value: Boolean): Self = StObject.set(x, "queryable", value.asInstanceOf[js.Any])
+    inline def setQueryable(value: Boolean): Self = StObject.set(x, "queryable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryableUndefined: Self = StObject.set(x, "queryable", js.undefined)
+    inline def setQueryableUndefined: Self = StObject.set(x, "queryable", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret(value: Boolean): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: Boolean): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ActionConfigurationPropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ActionConfigurationPropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

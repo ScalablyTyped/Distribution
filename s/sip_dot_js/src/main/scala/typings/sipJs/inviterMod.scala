@@ -56,30 +56,30 @@ object inviterMod {
     def cancel(): js.Promise[Unit] = js.native
     def cancel(options: InviterCancelOptions): js.Promise[Unit] = js.native
     
-    var disposeEarlyMedia: js.Any = js.native
+    /* private */ var disposeEarlyMedia: js.Any = js.native
     
     /** True if dispose() has been called. */
-    var disposed: js.Any = js.native
+    /* private */ var disposed: js.Any = js.native
     
     /** True if early media use is enabled. */
-    var earlyMedia: js.Any = js.native
+    /* private */ var earlyMedia: js.Any = js.native
     
     /** The early media session. */
-    var earlyMediaDialog: js.Any = js.native
+    /* private */ var earlyMediaDialog: js.Any = js.native
     
     /** The early media session description handlers. */
-    var earlyMediaSessionDescriptionHandlers: js.Any = js.native
+    /* private */ var earlyMediaSessionDescriptionHandlers: js.Any = js.native
     
     /** Our From tag. */
-    var fromTag: js.Any = js.native
+    /* private */ var fromTag: js.Any = js.native
     
     def invite(options: InviterInviteOptions): js.Promise[OutgoingInviteRequest] = js.native
     
     /** True if initial INVITE without SDP. */
-    var inviteWithoutSdp: js.Any = js.native
+    /* private */ var inviteWithoutSdp: js.Any = js.native
     
     /** True if cancel() was called. */
-    var isCanceled: js.Any = js.native
+    /* private */ var isCanceled: js.Any = js.native
     
     /**
       * The identity of the local user.
@@ -87,43 +87,43 @@ object inviterMod {
     @JSName("localIdentity")
     def localIdentity_MInviter: NameAddrHeader = js.native
     
-    var notifyReferer: js.Any = js.native
+    /* private */ var notifyReferer: js.Any = js.native
     
     /**
       * Handle final response to initial INVITE.
       * @param inviteResponse - 2xx response.
       */
-    var onAccept: js.Any = js.native
+    /* private */ var onAccept: js.Any = js.native
     
     /**
       * Handle provisional response to initial INVITE.
       * @param inviteResponse - 1xx response.
       */
-    var onProgress: js.Any = js.native
+    /* private */ var onProgress: js.Any = js.native
     
     /**
       * Handle final response to initial INVITE.
       * @param inviteResponse - 3xx response.
       */
-    var onRedirect: js.Any = js.native
+    /* private */ var onRedirect: js.Any = js.native
     
     /**
       * Handle final response to initial INVITE.
       * @param inviteResponse - 4xx, 5xx, or 6xx response.
       */
-    var onReject: js.Any = js.native
+    /* private */ var onReject: js.Any = js.native
     
     /**
       * Handle final response to initial INVITE.
       * @param inviteResponse - 100 response.
       */
-    var onTrying: js.Any = js.native
+    /* private */ var onTrying: js.Any = js.native
     
     /** Initial INVITE request sent by core. Undefined until sent. */
-    var outgoingInviteRequest: js.Any = js.native
+    /* private */ var outgoingInviteRequest: js.Any = js.native
     
     /** Initial INVITE message provided to core to send. */
-    var outgoingRequestMessage: js.Any = js.native
+    /* private */ var outgoingRequestMessage: js.Any = js.native
     
     /**
       * The identity of the remote user.
@@ -175,6 +175,6 @@ object inviterMod {
       *
       * https://tools.ietf.org/html/rfc3261#section-13.2.1
       */
-    var sendInvite: js.Any = js.native
+    /* private */ var sendInvite: js.Any = js.native
   }
 }

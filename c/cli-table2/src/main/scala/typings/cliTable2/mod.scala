@@ -42,65 +42,46 @@ object mod extends Shortcut {
   }
   object CellOptions {
     
-    @scala.inline
-    def apply(): CellOptions = {
+    inline def apply(): CellOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellOptions]
     }
     
-    @scala.inline
-    implicit class CellOptionsMutableBuilder[Self <: CellOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CellOptions](x: Self) {
       
-      @scala.inline
-      def setChars(value: PartialRecordCharNamestri): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: PartialRecordCharNamestri): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
+      inline def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
       
-      @scala.inline
-      def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setContent(value: CellValue): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: CellValue): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentNull: Self = StObject.set(x, "content", null)
+      inline def setContentNull: Self = StObject.set(x, "content", null)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setHAlign(value: HorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
+      inline def setHAlign(value: HorizontalAlignment): Self = StObject.set(x, "hAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
+      inline def setHAlignUndefined: Self = StObject.set(x, "hAlign", js.undefined)
       
-      @scala.inline
-      def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+      inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+      inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
       
-      @scala.inline
-      def setStyle(value: Head): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Head): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
       
-      @scala.inline
-      def setVAlign(value: VerticalAlignment): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
+      inline def setVAlign(value: VerticalAlignment): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
+      inline def setVAlignUndefined: Self = StObject.set(x, "vAlign", js.undefined)
     }
   }
   
@@ -126,50 +107,35 @@ object mod extends Shortcut {
   trait CharName extends StObject
   object CharName {
     
-    @scala.inline
-    def bottom: typings.cliTable2.cliTable2Strings.bottom = "bottom".asInstanceOf[typings.cliTable2.cliTable2Strings.bottom]
+    inline def bottom: typings.cliTable2.cliTable2Strings.bottom = "bottom".asInstanceOf[typings.cliTable2.cliTable2Strings.bottom]
     
-    @scala.inline
-    def `bottom-left`: typings.cliTable2.cliTable2Strings.`bottom-left` = "bottom-left".asInstanceOf[typings.cliTable2.cliTable2Strings.`bottom-left`]
+    inline def `bottom-left`: typings.cliTable2.cliTable2Strings.`bottom-left` = "bottom-left".asInstanceOf[typings.cliTable2.cliTable2Strings.`bottom-left`]
     
-    @scala.inline
-    def `bottom-mid`: typings.cliTable2.cliTable2Strings.`bottom-mid` = "bottom-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`bottom-mid`]
+    inline def `bottom-mid`: typings.cliTable2.cliTable2Strings.`bottom-mid` = "bottom-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`bottom-mid`]
     
-    @scala.inline
-    def `bottom-right`: typings.cliTable2.cliTable2Strings.`bottom-right` = "bottom-right".asInstanceOf[typings.cliTable2.cliTable2Strings.`bottom-right`]
+    inline def `bottom-right`: typings.cliTable2.cliTable2Strings.`bottom-right` = "bottom-right".asInstanceOf[typings.cliTable2.cliTable2Strings.`bottom-right`]
     
-    @scala.inline
-    def left: typings.cliTable2.cliTable2Strings.left = "left".asInstanceOf[typings.cliTable2.cliTable2Strings.left]
+    inline def left: typings.cliTable2.cliTable2Strings.left = "left".asInstanceOf[typings.cliTable2.cliTable2Strings.left]
     
-    @scala.inline
-    def `left-mid`: typings.cliTable2.cliTable2Strings.`left-mid` = "left-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`left-mid`]
+    inline def `left-mid`: typings.cliTable2.cliTable2Strings.`left-mid` = "left-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`left-mid`]
     
-    @scala.inline
-    def mid: typings.cliTable2.cliTable2Strings.mid = "mid".asInstanceOf[typings.cliTable2.cliTable2Strings.mid]
+    inline def mid: typings.cliTable2.cliTable2Strings.mid = "mid".asInstanceOf[typings.cliTable2.cliTable2Strings.mid]
     
-    @scala.inline
-    def `mid-mid`: typings.cliTable2.cliTable2Strings.`mid-mid` = "mid-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`mid-mid`]
+    inline def `mid-mid`: typings.cliTable2.cliTable2Strings.`mid-mid` = "mid-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`mid-mid`]
     
-    @scala.inline
-    def middle: typings.cliTable2.cliTable2Strings.middle = "middle".asInstanceOf[typings.cliTable2.cliTable2Strings.middle]
+    inline def middle: typings.cliTable2.cliTable2Strings.middle = "middle".asInstanceOf[typings.cliTable2.cliTable2Strings.middle]
     
-    @scala.inline
-    def right: typings.cliTable2.cliTable2Strings.right = "right".asInstanceOf[typings.cliTable2.cliTable2Strings.right]
+    inline def right: typings.cliTable2.cliTable2Strings.right = "right".asInstanceOf[typings.cliTable2.cliTable2Strings.right]
     
-    @scala.inline
-    def `right-mid`: typings.cliTable2.cliTable2Strings.`right-mid` = "right-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`right-mid`]
+    inline def `right-mid`: typings.cliTable2.cliTable2Strings.`right-mid` = "right-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`right-mid`]
     
-    @scala.inline
-    def top: typings.cliTable2.cliTable2Strings.top = "top".asInstanceOf[typings.cliTable2.cliTable2Strings.top]
+    inline def top: typings.cliTable2.cliTable2Strings.top = "top".asInstanceOf[typings.cliTable2.cliTable2Strings.top]
     
-    @scala.inline
-    def `top-left`: typings.cliTable2.cliTable2Strings.`top-left` = "top-left".asInstanceOf[typings.cliTable2.cliTable2Strings.`top-left`]
+    inline def `top-left`: typings.cliTable2.cliTable2Strings.`top-left` = "top-left".asInstanceOf[typings.cliTable2.cliTable2Strings.`top-left`]
     
-    @scala.inline
-    def `top-mid`: typings.cliTable2.cliTable2Strings.`top-mid` = "top-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`top-mid`]
+    inline def `top-mid`: typings.cliTable2.cliTable2Strings.`top-mid` = "top-mid".asInstanceOf[typings.cliTable2.cliTable2Strings.`top-mid`]
     
-    @scala.inline
-    def `top-right`: typings.cliTable2.cliTable2Strings.`top-right` = "top-right".asInstanceOf[typings.cliTable2.cliTable2Strings.`top-right`]
+    inline def `top-right`: typings.cliTable2.cliTable2Strings.`top-right` = "top-right".asInstanceOf[typings.cliTable2.cliTable2Strings.`top-right`]
   }
   
   @js.native
@@ -200,14 +166,11 @@ object mod extends Shortcut {
   trait HorizontalAlignment extends StObject
   object HorizontalAlignment {
     
-    @scala.inline
-    def center: typings.cliTable2.cliTable2Strings.center = "center".asInstanceOf[typings.cliTable2.cliTable2Strings.center]
+    inline def center: typings.cliTable2.cliTable2Strings.center = "center".asInstanceOf[typings.cliTable2.cliTable2Strings.center]
     
-    @scala.inline
-    def left: typings.cliTable2.cliTable2Strings.left = "left".asInstanceOf[typings.cliTable2.cliTable2Strings.left]
+    inline def left: typings.cliTable2.cliTable2Strings.left = "left".asInstanceOf[typings.cliTable2.cliTable2Strings.left]
     
-    @scala.inline
-    def right: typings.cliTable2.cliTable2Strings.right = "right".asInstanceOf[typings.cliTable2.cliTable2Strings.right]
+    inline def right: typings.cliTable2.cliTable2Strings.right = "right".asInstanceOf[typings.cliTable2.cliTable2Strings.right]
   }
   
   type HorizontalTable = GenericTable[HorizontalTableRow]
@@ -239,83 +202,58 @@ object mod extends Shortcut {
   }
   object TableConstructorOptions {
     
-    @scala.inline
-    def apply(): TableConstructorOptions = {
+    inline def apply(): TableConstructorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableConstructorOptions]
     }
     
-    @scala.inline
-    implicit class TableConstructorOptionsMutableBuilder[Self <: TableConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setChars(value: PartialRecordCharNamestri): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: PartialRecordCharNamestri): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
+      inline def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
       
-      @scala.inline
-      def setColAligns(value: js.Array[HorizontalAlignment]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
+      inline def setColAligns(value: js.Array[HorizontalAlignment]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColAlignsUndefined: Self = StObject.set(x, "colAligns", js.undefined)
+      inline def setColAlignsUndefined: Self = StObject.set(x, "colAligns", js.undefined)
       
-      @scala.inline
-      def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
+      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
       
-      @scala.inline
-      def setColWidths(value: js.Array[Double | Null]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
+      inline def setColWidths(value: js.Array[Double | Null]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColWidthsUndefined: Self = StObject.set(x, "colWidths", js.undefined)
+      inline def setColWidthsUndefined: Self = StObject.set(x, "colWidths", js.undefined)
       
-      @scala.inline
-      def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
       
-      @scala.inline
-      def setHead(value: js.Array[Cell]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: js.Array[Cell]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setHeadVarargs(value: Cell*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: Cell*): Self = StObject.set(x, "head", js.Array(value :_*))
       
-      @scala.inline
-      def setRowAligns(value: js.Array[VerticalAlignment]): Self = StObject.set(x, "rowAligns", value.asInstanceOf[js.Any])
+      inline def setRowAligns(value: js.Array[VerticalAlignment]): Self = StObject.set(x, "rowAligns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowAlignsUndefined: Self = StObject.set(x, "rowAligns", js.undefined)
+      inline def setRowAlignsUndefined: Self = StObject.set(x, "rowAligns", js.undefined)
       
-      @scala.inline
-      def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value :_*))
+      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value :_*))
       
-      @scala.inline
-      def setRowHeights(value: js.Array[Double | Null]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
+      inline def setRowHeights(value: js.Array[Double | Null]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightsUndefined: Self = StObject.set(x, "rowHeights", js.undefined)
+      inline def setRowHeightsUndefined: Self = StObject.set(x, "rowHeights", js.undefined)
       
-      @scala.inline
-      def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
+      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: Partial[Border]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Partial[Border]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
       
-      @scala.inline
-      def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+      inline def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
+      inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
     }
   }
   
@@ -329,8 +267,7 @@ object mod extends Shortcut {
   }
   object TableInstanceOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chars: RecordCharNamestring,
       colAligns: js.Array[HorizontalAlignment],
       colWidths: js.Array[Double | Null],
@@ -345,14 +282,11 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TableInstanceOptions]
     }
     
-    @scala.inline
-    implicit class TableInstanceOptionsMutableBuilder[Self <: TableInstanceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableInstanceOptions](x: Self) {
       
-      @scala.inline
-      def setChars(value: RecordCharNamestring): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: RecordCharNamestring): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: Border): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Border): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -374,8 +308,7 @@ object mod extends Shortcut {
   }
   object TableOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       colAligns: js.Array[HorizontalAlignment],
       colWidths: js.Array[Double | Null],
       head: js.Array[Cell],
@@ -388,44 +321,31 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TableOptions]
     }
     
-    @scala.inline
-    implicit class TableOptionsMutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableOptions](x: Self) {
       
-      @scala.inline
-      def setColAligns(value: js.Array[HorizontalAlignment]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
+      inline def setColAligns(value: js.Array[HorizontalAlignment]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
+      inline def setColAlignsVarargs(value: HorizontalAlignment*): Self = StObject.set(x, "colAligns", js.Array(value :_*))
       
-      @scala.inline
-      def setColWidths(value: js.Array[Double | Null]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
+      inline def setColWidths(value: js.Array[Double | Null]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
+      inline def setColWidthsVarargs(value: (Double | Null)*): Self = StObject.set(x, "colWidths", js.Array(value :_*))
       
-      @scala.inline
-      def setHead(value: js.Array[Cell]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: js.Array[Cell]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadVarargs(value: Cell*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: Cell*): Self = StObject.set(x, "head", js.Array(value :_*))
       
-      @scala.inline
-      def setRowAligns(value: js.Array[VerticalAlignment]): Self = StObject.set(x, "rowAligns", value.asInstanceOf[js.Any])
+      inline def setRowAligns(value: js.Array[VerticalAlignment]): Self = StObject.set(x, "rowAligns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value :_*))
+      inline def setRowAlignsVarargs(value: VerticalAlignment*): Self = StObject.set(x, "rowAligns", js.Array(value :_*))
       
-      @scala.inline
-      def setRowHeights(value: js.Array[Double | Null]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
+      inline def setRowHeights(value: js.Array[Double | Null]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
+      inline def setRowHeightsVarargs(value: (Double | Null)*): Self = StObject.set(x, "rowHeights", js.Array(value :_*))
       
-      @scala.inline
-      def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: String): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+      inline def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -437,14 +357,11 @@ object mod extends Shortcut {
   trait VerticalAlignment extends StObject
   object VerticalAlignment {
     
-    @scala.inline
-    def bottom: typings.cliTable2.cliTable2Strings.bottom = "bottom".asInstanceOf[typings.cliTable2.cliTable2Strings.bottom]
+    inline def bottom: typings.cliTable2.cliTable2Strings.bottom = "bottom".asInstanceOf[typings.cliTable2.cliTable2Strings.bottom]
     
-    @scala.inline
-    def center: typings.cliTable2.cliTable2Strings.center = "center".asInstanceOf[typings.cliTable2.cliTable2Strings.center]
+    inline def center: typings.cliTable2.cliTable2Strings.center = "center".asInstanceOf[typings.cliTable2.cliTable2Strings.center]
     
-    @scala.inline
-    def top: typings.cliTable2.cliTable2Strings.top = "top".asInstanceOf[typings.cliTable2.cliTable2Strings.top]
+    inline def top: typings.cliTable2.cliTable2Strings.top = "top".asInstanceOf[typings.cliTable2.cliTable2Strings.top]
   }
   
   type VerticalTable = GenericTable[VerticalTableRow]

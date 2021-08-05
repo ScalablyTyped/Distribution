@@ -58,22 +58,19 @@ object screenMod {
     @JSImport("playable/dist/src/modules/ui/screen/screen", "default.View")
     @js.native
     def View: Instantiable1[/* config */ IScreenViewConfig, typings.playable.screenViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable1[/* config */ IScreenViewConfig, typings.playable.screenViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable1[/* config */ IScreenViewConfig, typings.playable.screenViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/screen/screen", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/screen/screen", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -81,45 +78,45 @@ object screenMod {
     extends StObject
        with IScreen {
     
-    var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _clearDelayedPlaybackToggle: js.Any = js.native
+    /* private */ var _clearDelayedPlaybackToggle: js.Any = js.native
     
-    var _delayedToggleVideoPlaybackTimeout: js.Any = js.native
+    /* private */ var _delayedToggleVideoPlaybackTimeout: js.Any = js.native
     
-    var _engine: js.Any = js.native
+    /* private */ var _engine: js.Any = js.native
     
-    var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: js.Any = js.native
     
-    var _fullScreenManager: js.Any = js.native
+    /* private */ var _fullScreenManager: js.Any = js.native
     
-    var _hideDelayedPlaybackChangeIndicator: js.Any = js.native
+    /* private */ var _hideDelayedPlaybackChangeIndicator: js.Any = js.native
     
-    var _initUI: js.Any = js.native
+    /* private */ var _initUI: js.Any = js.native
     
-    var _interactionIndicator: js.Any = js.native
+    /* private */ var _interactionIndicator: js.Any = js.native
     
-    var _isClickProcessingDisabled: js.Any = js.native
+    /* private */ var _isClickProcessingDisabled: js.Any = js.native
     
     /* private */ def _isDelayedPlaybackToggleExist: js.Any = js.native
     
-    var _processClick: js.Any = js.native
+    /* private */ var _processClick: js.Any = js.native
     
-    var _processDblClick: js.Any = js.native
+    /* private */ var _processDblClick: js.Any = js.native
     
-    var _setDelayedPlaybackToggle: js.Any = js.native
+    /* private */ var _setDelayedPlaybackToggle: js.Any = js.native
     
-    var _showPlaybackChangeIndicator: js.Any = js.native
+    /* private */ var _showPlaybackChangeIndicator: js.Any = js.native
     
-    var _toggleFullScreen: js.Any = js.native
+    /* private */ var _toggleFullScreen: js.Any = js.native
     
-    var _toggleVideoPlayback: js.Any = js.native
+    /* private */ var _toggleVideoPlayback: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
-    var _updateSizes: js.Any = js.native
+    /* private */ var _updateSizes: js.Any = js.native
     
     var isHidden: Boolean = js.native
     

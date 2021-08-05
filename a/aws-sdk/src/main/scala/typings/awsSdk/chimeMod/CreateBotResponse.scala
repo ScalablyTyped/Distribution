@@ -13,19 +13,15 @@ trait CreateBotResponse extends StObject {
 }
 object CreateBotResponse {
   
-  @scala.inline
-  def apply(): CreateBotResponse = {
+  inline def apply(): CreateBotResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBotResponse]
   }
   
-  @scala.inline
-  implicit class CreateBotResponseMutableBuilder[Self <: CreateBotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBotResponse](x: Self) {
     
-    @scala.inline
-    def setBot(value: Bot): Self = StObject.set(x, "Bot", value.asInstanceOf[js.Any])
+    inline def setBot(value: Bot): Self = StObject.set(x, "Bot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotUndefined: Self = StObject.set(x, "Bot", js.undefined)
+    inline def setBotUndefined: Self = StObject.set(x, "Bot", js.undefined)
   }
 }

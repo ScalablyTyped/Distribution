@@ -58,52 +58,37 @@ trait SchemaItemAcl extends StObject {
 }
 object SchemaItemAcl {
   
-  @scala.inline
-  def apply(): SchemaItemAcl = {
+  inline def apply(): SchemaItemAcl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaItemAcl]
   }
   
-  @scala.inline
-  implicit class SchemaItemAclMutableBuilder[Self <: SchemaItemAcl] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaItemAcl](x: Self) {
     
-    @scala.inline
-    def setAclInheritanceType(value: String): Self = StObject.set(x, "aclInheritanceType", value.asInstanceOf[js.Any])
+    inline def setAclInheritanceType(value: String): Self = StObject.set(x, "aclInheritanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclInheritanceTypeUndefined: Self = StObject.set(x, "aclInheritanceType", js.undefined)
+    inline def setAclInheritanceTypeUndefined: Self = StObject.set(x, "aclInheritanceType", js.undefined)
     
-    @scala.inline
-    def setDeniedReaders(value: js.Array[SchemaPrincipal]): Self = StObject.set(x, "deniedReaders", value.asInstanceOf[js.Any])
+    inline def setDeniedReaders(value: js.Array[SchemaPrincipal]): Self = StObject.set(x, "deniedReaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeniedReadersUndefined: Self = StObject.set(x, "deniedReaders", js.undefined)
+    inline def setDeniedReadersUndefined: Self = StObject.set(x, "deniedReaders", js.undefined)
     
-    @scala.inline
-    def setDeniedReadersVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "deniedReaders", js.Array(value :_*))
+    inline def setDeniedReadersVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "deniedReaders", js.Array(value :_*))
     
-    @scala.inline
-    def setInheritAclFrom(value: String): Self = StObject.set(x, "inheritAclFrom", value.asInstanceOf[js.Any])
+    inline def setInheritAclFrom(value: String): Self = StObject.set(x, "inheritAclFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritAclFromUndefined: Self = StObject.set(x, "inheritAclFrom", js.undefined)
+    inline def setInheritAclFromUndefined: Self = StObject.set(x, "inheritAclFrom", js.undefined)
     
-    @scala.inline
-    def setOwners(value: js.Array[SchemaPrincipal]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+    inline def setOwners(value: js.Array[SchemaPrincipal]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+    inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    @scala.inline
-    def setOwnersVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
-    @scala.inline
-    def setReaders(value: js.Array[SchemaPrincipal]): Self = StObject.set(x, "readers", value.asInstanceOf[js.Any])
+    inline def setReaders(value: js.Array[SchemaPrincipal]): Self = StObject.set(x, "readers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadersUndefined: Self = StObject.set(x, "readers", js.undefined)
+    inline def setReadersUndefined: Self = StObject.set(x, "readers", js.undefined)
     
-    @scala.inline
-    def setReadersVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "readers", js.Array(value :_*))
+    inline def setReadersVarargs(value: SchemaPrincipal*): Self = StObject.set(x, "readers", js.Array(value :_*))
   }
 }

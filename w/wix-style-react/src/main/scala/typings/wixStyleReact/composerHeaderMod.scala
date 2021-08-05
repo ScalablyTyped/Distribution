@@ -30,20 +30,17 @@ object composerHeaderMod {
     @JSImport("wix-style-react/dist/es/src/ComposerHeader", "default.Actions")
     @js.native
     def Actions: SFC[ComposerHeaderActionsProps] = js.native
-    @scala.inline
-    def Actions_=(x: SFC[ComposerHeaderActionsProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Actions")(x.asInstanceOf[js.Any])
+    inline def Actions_=(x: SFC[ComposerHeaderActionsProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Actions")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/ComposerHeader", "default.MainActions")
     @js.native
     def MainActions: SFC[ComposerHeaderMainActionsProps] = js.native
-    @scala.inline
-    def MainActions_=(x: SFC[ComposerHeaderMainActionsProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MainActions")(x.asInstanceOf[js.Any])
+    inline def MainActions_=(x: SFC[ComposerHeaderMainActionsProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MainActions")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/ComposerHeader", "default.SaveStatus")
     @js.native
     def SaveStatus: SFC[ComposerHeaderSaveStatusProps] = js.native
-    @scala.inline
-    def SaveStatus_=(x: SFC[ComposerHeaderSaveStatusProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaveStatus")(x.asInstanceOf[js.Any])
+    inline def SaveStatus_=(x: SFC[ComposerHeaderSaveStatusProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaveStatus")(x.asInstanceOf[js.Any])
   }
   
   type ComposerHeader = Component[ComposerHeaderProps, js.Object, js.Any]
@@ -56,26 +53,20 @@ object composerHeaderMod {
   }
   object ComposerHeaderActionsProps {
     
-    @scala.inline
-    def apply(): ComposerHeaderActionsProps = {
+    inline def apply(): ComposerHeaderActionsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComposerHeaderActionsProps]
     }
     
-    @scala.inline
-    implicit class ComposerHeaderActionsPropsMutableBuilder[Self <: ComposerHeaderActionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ComposerHeaderActionsProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setJustifyContent(value: JustifyContentProperty): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+      inline def setJustifyContent(value: JustifyContentProperty): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+      inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     }
   }
   
@@ -85,20 +76,16 @@ object composerHeaderMod {
   }
   object ComposerHeaderMainActionsProps {
     
-    @scala.inline
-    def apply(): ComposerHeaderMainActionsProps = {
+    inline def apply(): ComposerHeaderMainActionsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComposerHeaderMainActionsProps]
     }
     
-    @scala.inline
-    implicit class ComposerHeaderMainActionsPropsMutableBuilder[Self <: ComposerHeaderMainActionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ComposerHeaderMainActionsProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     }
   }
   
@@ -116,44 +103,32 @@ object composerHeaderMod {
   }
   object ComposerHeaderProps {
     
-    @scala.inline
-    def apply(): ComposerHeaderProps = {
+    inline def apply(): ComposerHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComposerHeaderProps]
     }
     
-    @scala.inline
-    implicit class ComposerHeaderPropsMutableBuilder[Self <: ComposerHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ComposerHeaderProps](x: Self) {
       
-      @scala.inline
-      def setBackButtonValue(value: ReactNode): Self = StObject.set(x, "backButtonValue", value.asInstanceOf[js.Any])
+      inline def setBackButtonValue(value: ReactNode): Self = StObject.set(x, "backButtonValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackButtonValueUndefined: Self = StObject.set(x, "backButtonValue", js.undefined)
+      inline def setBackButtonValueUndefined: Self = StObject.set(x, "backButtonValue", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDropShadow(value: Boolean): Self = StObject.set(x, "dropShadow", value.asInstanceOf[js.Any])
+      inline def setDropShadow(value: Boolean): Self = StObject.set(x, "dropShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropShadowUndefined: Self = StObject.set(x, "dropShadow", js.undefined)
+      inline def setDropShadowUndefined: Self = StObject.set(x, "dropShadow", js.undefined)
       
-      @scala.inline
-      def setOnBackClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBackClick", js.Any.fromFunction1(value))
+      inline def setOnBackClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBackClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBackClickUndefined: Self = StObject.set(x, "onBackClick", js.undefined)
+      inline def setOnBackClickUndefined: Self = StObject.set(x, "onBackClick", js.undefined)
       
-      @scala.inline
-      def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -169,35 +144,26 @@ object composerHeaderMod {
   }
   object ComposerHeaderSaveStatusProps {
     
-    @scala.inline
-    def apply(saveStatusValue: String): ComposerHeaderSaveStatusProps = {
+    inline def apply(saveStatusValue: String): ComposerHeaderSaveStatusProps = {
       val __obj = js.Dynamic.literal(saveStatusValue = saveStatusValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComposerHeaderSaveStatusProps]
     }
     
-    @scala.inline
-    implicit class ComposerHeaderSaveStatusPropsMutableBuilder[Self <: ComposerHeaderSaveStatusProps] (val x: Self) extends AnyVal {
+    extension [Self <: ComposerHeaderSaveStatusProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setSaveStatusError(value: String): Self = StObject.set(x, "saveStatusError", value.asInstanceOf[js.Any])
+      inline def setSaveStatusError(value: String): Self = StObject.set(x, "saveStatusError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveStatusErrorUndefined: Self = StObject.set(x, "saveStatusError", js.undefined)
+      inline def setSaveStatusErrorUndefined: Self = StObject.set(x, "saveStatusError", js.undefined)
       
-      @scala.inline
-      def setSaveStatusValue(value: String): Self = StObject.set(x, "saveStatusValue", value.asInstanceOf[js.Any])
+      inline def setSaveStatusValue(value: String): Self = StObject.set(x, "saveStatusValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small | medium): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

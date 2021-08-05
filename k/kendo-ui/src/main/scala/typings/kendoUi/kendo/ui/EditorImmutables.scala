@@ -12,25 +12,19 @@ trait EditorImmutables extends StObject {
 }
 object EditorImmutables {
   
-  @scala.inline
-  def apply(): EditorImmutables = {
+  inline def apply(): EditorImmutables = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorImmutables]
   }
   
-  @scala.inline
-  implicit class EditorImmutablesMutableBuilder[Self <: EditorImmutables] (val x: Self) extends AnyVal {
+  extension [Self <: EditorImmutables](x: Self) {
     
-    @scala.inline
-    def setDeserialization(value: js.Function): Self = StObject.set(x, "deserialization", value.asInstanceOf[js.Any])
+    inline def setDeserialization(value: js.Function): Self = StObject.set(x, "deserialization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeserializationUndefined: Self = StObject.set(x, "deserialization", js.undefined)
+    inline def setDeserializationUndefined: Self = StObject.set(x, "deserialization", js.undefined)
     
-    @scala.inline
-    def setSerialization(value: String | js.Function): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
+    inline def setSerialization(value: String | js.Function): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+    inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
   }
 }

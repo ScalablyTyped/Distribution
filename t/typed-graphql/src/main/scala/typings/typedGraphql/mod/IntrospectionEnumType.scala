@@ -19,31 +19,23 @@ trait IntrospectionEnumType
 }
 object IntrospectionEnumType {
   
-  @scala.inline
-  def apply(enumValues: js.Array[IntrospectionEnumValue], name: String): IntrospectionEnumType = {
+  inline def apply(enumValues: js.Array[IntrospectionEnumValue], name: String): IntrospectionEnumType = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any], kind = "ENUM", name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionEnumType]
   }
   
-  @scala.inline
-  implicit class IntrospectionEnumTypeMutableBuilder[Self <: IntrospectionEnumType] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionEnumType](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnumValues(value: js.Array[IntrospectionEnumValue]): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: js.Array[IntrospectionEnumValue]): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumValuesVarargs(value: IntrospectionEnumValue*): Self = StObject.set(x, "enumValues", js.Array(value :_*))
+    inline def setEnumValuesVarargs(value: IntrospectionEnumValue*): Self = StObject.set(x, "enumValues", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: ENUM): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ENUM): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

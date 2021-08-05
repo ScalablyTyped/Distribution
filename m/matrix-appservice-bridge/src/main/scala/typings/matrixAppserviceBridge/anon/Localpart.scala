@@ -10,16 +10,13 @@ trait Localpart extends StObject {
 }
 object Localpart {
   
-  @scala.inline
-  def apply(localpart: String): Localpart = {
+  inline def apply(localpart: String): Localpart = {
     val __obj = js.Dynamic.literal(localpart = localpart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Localpart]
   }
   
-  @scala.inline
-  implicit class LocalpartMutableBuilder[Self <: Localpart] (val x: Self) extends AnyVal {
+  extension [Self <: Localpart](x: Self) {
     
-    @scala.inline
-    def setLocalpart(value: String): Self = StObject.set(x, "localpart", value.asInstanceOf[js.Any])
+    inline def setLocalpart(value: String): Self = StObject.set(x, "localpart", value.asInstanceOf[js.Any])
   }
 }

@@ -88,33 +88,21 @@ object mod {
   @js.native
   class Trans () extends default
   
-  @scala.inline
-  def date(value: Date): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
-  @scala.inline
-  def date(value: Date, format: DateTimeFormatOptions): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
+  inline def date(value: Date): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  inline def date(value: Date, format: DateTimeFormatOptions): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @scala.inline
-  def number(value: Double): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
-  @scala.inline
-  def number(value: Double, format: NumberFormatOptions): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
+  inline def number(value: Double): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  inline def number(value: Double, format: NumberFormatOptions): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @scala.inline
-  def plural(config: PluralProps): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("plural")(config.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
-  @scala.inline
-  def plural(id: String, config: PluralProps): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("plural")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
+  inline def plural(config: PluralProps): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("plural")(config.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  inline def plural(id: String, config: PluralProps): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("plural")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @scala.inline
-  def select(config: SelectProps): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(config.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
-  @scala.inline
-  def select(id: String, config: SelectProps): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
+  inline def select(config: SelectProps): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(config.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  inline def select(id: String, config: SelectProps): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @scala.inline
-  def selectOrdinal(config: PluralProps): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("selectOrdinal")(config.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
-  @scala.inline
-  def selectOrdinal(id: String, config: PluralProps): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOrdinal")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
+  inline def selectOrdinal(config: PluralProps): MessageDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("selectOrdinal")(config.asInstanceOf[js.Any]).asInstanceOf[MessageDescriptor]
+  inline def selectOrdinal(id: String, config: PluralProps): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOrdinal")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
   
-  @scala.inline
-  def t(id: String): js.Function2[/* strings */ TemplateStringsArray, /* repeated */ js.Any, MessageDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(id.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* strings */ TemplateStringsArray, /* repeated */ js.Any, MessageDescriptor]]
-  @scala.inline
-  def t(strings: TemplateStringsArray, values: js.Any*): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
+  inline def t(id: String): js.Function2[/* strings */ TemplateStringsArray, /* repeated */ js.Any, MessageDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(id.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* strings */ TemplateStringsArray, /* repeated */ js.Any, MessageDescriptor]]
+  inline def t(strings: TemplateStringsArray, values: js.Any*): MessageDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[MessageDescriptor]
 }

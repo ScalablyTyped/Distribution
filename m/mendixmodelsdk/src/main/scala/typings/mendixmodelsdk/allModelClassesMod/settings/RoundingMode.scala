@@ -21,13 +21,11 @@ object RoundingMode {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.RoundingMode.HalfEven")
   @js.native
   def HalfEven: typings.mendixmodelsdk.settingsMod.settings.RoundingMode = js.native
-  @scala.inline
-  def HalfEven_=(x: typings.mendixmodelsdk.settingsMod.settings.RoundingMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HalfEven")(x.asInstanceOf[js.Any])
+  inline def HalfEven_=(x: typings.mendixmodelsdk.settingsMod.settings.RoundingMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HalfEven")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "settings.RoundingMode.HalfUp")
   @js.native
   def HalfUp: typings.mendixmodelsdk.settingsMod.settings.RoundingMode = js.native
-  @scala.inline
-  def HalfUp_=(x: typings.mendixmodelsdk.settingsMod.settings.RoundingMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HalfUp")(x.asInstanceOf[js.Any])
+  inline def HalfUp_=(x: typings.mendixmodelsdk.settingsMod.settings.RoundingMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HalfUp")(x.asInstanceOf[js.Any])
 }

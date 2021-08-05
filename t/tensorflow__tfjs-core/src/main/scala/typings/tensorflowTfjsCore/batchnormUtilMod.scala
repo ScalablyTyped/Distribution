@@ -13,6 +13,5 @@ object batchnormUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def xAs4D[R /* <: Rank */](x: Tensor[R]): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("xAs4D")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+  inline def xAs4D[R /* <: Rank */](x: Tensor[R]): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("xAs4D")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
 }

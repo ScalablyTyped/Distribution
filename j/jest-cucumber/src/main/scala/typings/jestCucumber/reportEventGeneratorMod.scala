@@ -11,13 +11,13 @@ object reportEventGeneratorMod {
   @js.native
   class ReportEventGenerator () extends StObject {
     
-    var calculateTotalDuration: js.Any = js.native
+    /* private */ var calculateTotalDuration: js.Any = js.native
     
     var eventBroadcaster: EventEmitter = js.native
     
     var eventDataCollector: js.Any = js.native
     
-    var featureFileEventGenerator: js.Any = js.native
+    /* private */ var featureFileEventGenerator: js.Any = js.native
     
     def onScenarioComplete(jestTestResult: js.Any): js.Promise[
         js.Tuple10[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any]
@@ -25,6 +25,6 @@ object reportEventGeneratorMod {
     
     def onTestRunComplete(jestTestResult: js.Any): Unit = js.native
     
-    var testCaseEventGenerator: js.Any = js.native
+    /* private */ var testCaseEventGenerator: js.Any = js.native
   }
 }

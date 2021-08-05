@@ -17,8 +17,7 @@ trait ParametersMarkdownRenderEndpoint extends StObject {
 }
 object ParametersMarkdownRenderEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MarkdownRenderEndpoint,
     request: MarkdownRenderRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersMarkdownRenderEndpoint {
     __obj.asInstanceOf[ParametersMarkdownRenderEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMarkdownRenderEndpointMutableBuilder[Self <: ParametersMarkdownRenderEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMarkdownRenderEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MarkdownRenderEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MarkdownRenderEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MarkdownRenderRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MarkdownRenderRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

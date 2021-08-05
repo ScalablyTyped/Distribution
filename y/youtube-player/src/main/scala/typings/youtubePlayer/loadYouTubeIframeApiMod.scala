@@ -12,6 +12,5 @@ object loadYouTubeIframeApiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(emitter: EmitterType): js.Promise[IframeApiType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(emitter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IframeApiType]]
+  inline def default(emitter: EmitterType): js.Promise[IframeApiType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(emitter.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IframeApiType]]
 }

@@ -33,25 +33,19 @@ trait SchemaPullMessage extends StObject {
 }
 object SchemaPullMessage {
   
-  @scala.inline
-  def apply(): SchemaPullMessage = {
+  inline def apply(): SchemaPullMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPullMessage]
   }
   
-  @scala.inline
-  implicit class SchemaPullMessageMutableBuilder[Self <: SchemaPullMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPullMessage](x: Self) {
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

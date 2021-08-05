@@ -22,8 +22,7 @@ trait BaseEventLinkModelLinkMod extends StObject {
 }
 object BaseEventLinkModelLinkMod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     entity: BaseEntity[BaseListener[js.Any]],
     firing: Boolean,
     id: String,
@@ -33,25 +32,18 @@ object BaseEventLinkModelLinkMod {
     __obj.asInstanceOf[BaseEventLinkModelLinkMod]
   }
   
-  @scala.inline
-  implicit class BaseEventLinkModelLinkModMutableBuilder[Self <: BaseEventLinkModelLinkMod] (val x: Self) extends AnyVal {
+  extension [Self <: BaseEventLinkModelLinkMod](x: Self) {
     
-    @scala.inline
-    def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
+    inline def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: PortModel): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: PortModel): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNull: Self = StObject.set(x, "port", null)
+    inline def setPortNull: Self = StObject.set(x, "port", null)
     
-    @scala.inline
-    def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

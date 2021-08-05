@@ -9,8 +9,7 @@ trait WebUINavigatedDeferral
      with IWebUINavigatedDeferral
 object WebUINavigatedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): WebUINavigatedDeferral = {
+  inline def apply(complete: () => Unit): WebUINavigatedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[WebUINavigatedDeferral]
   }

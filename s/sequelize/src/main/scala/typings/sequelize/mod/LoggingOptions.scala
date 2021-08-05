@@ -18,25 +18,19 @@ trait LoggingOptions extends StObject {
 }
 object LoggingOptions {
   
-  @scala.inline
-  def apply(): LoggingOptions = {
+  inline def apply(): LoggingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoggingOptions]
   }
   
-  @scala.inline
-  implicit class LoggingOptionsMutableBuilder[Self <: LoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingOptions](x: Self) {
     
-    @scala.inline
-    def setBenchmark(value: Boolean): Self = StObject.set(x, "benchmark", value.asInstanceOf[js.Any])
+    inline def setBenchmark(value: Boolean): Self = StObject.set(x, "benchmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBenchmarkUndefined: Self = StObject.set(x, "benchmark", js.undefined)
+    inline def setBenchmarkUndefined: Self = StObject.set(x, "benchmark", js.undefined)
     
-    @scala.inline
-    def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
   }
 }

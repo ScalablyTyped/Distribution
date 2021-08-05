@@ -23,28 +23,21 @@ trait UpdateGroupRequest extends StObject {
 }
 object UpdateGroupRequest {
   
-  @scala.inline
-  def apply(GroupName: groupNameType): UpdateGroupRequest = {
+  inline def apply(GroupName: groupNameType): UpdateGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateGroupRequestMutableBuilder[Self <: UpdateGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGroupRequest](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewGroupName(value: groupNameType): Self = StObject.set(x, "NewGroupName", value.asInstanceOf[js.Any])
+    inline def setNewGroupName(value: groupNameType): Self = StObject.set(x, "NewGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewGroupNameUndefined: Self = StObject.set(x, "NewGroupName", js.undefined)
+    inline def setNewGroupNameUndefined: Self = StObject.set(x, "NewGroupName", js.undefined)
     
-    @scala.inline
-    def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
+    inline def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPathUndefined: Self = StObject.set(x, "NewPath", js.undefined)
+    inline def setNewPathUndefined: Self = StObject.set(x, "NewPath", js.undefined)
   }
 }

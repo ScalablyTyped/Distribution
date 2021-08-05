@@ -18,8 +18,7 @@ object strongMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fanout[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](F: Category4[F] & Strong4[F]): js.Function2[
+  inline def fanout[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](F: Category4[F] & Strong4[F]): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ /* pab */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, C> */ /* pac */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, [B, C]> */ js.Any
@@ -28,8 +27,7 @@ object strongMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, C> */ /* pac */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, [B, C]> */ js.Any
   ]]
-  @scala.inline
-  def fanout[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Category3[F] & Strong3[F]): js.Function2[
+  inline def fanout[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Category3[F] & Strong3[F]): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ /* pab */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, C> */ /* pac */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, [B, C]> */ js.Any
@@ -38,8 +36,7 @@ object strongMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, C> */ /* pac */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, [B, C]> */ js.Any
   ]]
-  @scala.inline
-  def fanout[F](F: Category[F] & Strong[F]): js.Function2[
+  inline def fanout[F](F: Category[F] & Strong[F]): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ /* pab */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, C> */ /* pac */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, [B, C]> */ js.Any
@@ -48,8 +45,7 @@ object strongMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, C> */ /* pac */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, [B, C]> */ js.Any
   ]]
-  @scala.inline
-  def fanout[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Category2[F] & Strong2[F]): js.Function2[
+  inline def fanout[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Category2[F] & Strong2[F]): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ /* pab */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, C> */ /* pac */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, [B, C]> */ js.Any
@@ -59,8 +55,7 @@ object strongMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, [B, C]> */ js.Any
   ]]
   
-  @scala.inline
-  def splitStrong[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Category3[F] & Strong3[F]): js.Function2[
+  inline def splitStrong[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](F: Category3[F] & Strong3[F]): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ /* pab */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, C, D> */ /* pcd */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, [A, C], [B, D]> */ js.Any
@@ -69,8 +64,7 @@ object strongMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, C, D> */ /* pcd */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, [A, C], [B, D]> */ js.Any
   ]]
-  @scala.inline
-  def splitStrong[F](F: Category[F] & Strong[F]): js.Function2[
+  inline def splitStrong[F](F: Category[F] & Strong[F]): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ /* pab */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, C, D> */ /* pcd */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, [A, C], [B, D]> */ js.Any
@@ -79,8 +73,7 @@ object strongMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, C, D> */ /* pcd */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, [A, C], [B, D]> */ js.Any
   ]]
-  @scala.inline
-  def splitStrong[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](F: Category4[F] & Strong4[F]): js.Function2[
+  inline def splitStrong[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](F: Category4[F] & Strong4[F]): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ /* pab */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, C, D> */ /* pcd */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, [A, C], [B, D]> */ js.Any
@@ -89,8 +82,7 @@ object strongMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, C, D> */ /* pcd */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, [A, C], [B, D]> */ js.Any
   ]]
-  @scala.inline
-  def splitStrong[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Category2[F] & Strong2[F]): js.Function2[
+  inline def splitStrong[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Category2[F] & Strong2[F]): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ /* pab */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, C, D> */ /* pcd */ js.Any, 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, [A, C], [B, D]> */ js.Any
@@ -114,8 +106,7 @@ object strongMod {
   }
   object Strong {
     
-    @scala.inline
-    def apply[F](
+    inline def apply[F](
       URI: F,
       first: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ js.Any => js.Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
@@ -126,16 +117,13 @@ object strongMod {
       __obj.asInstanceOf[Strong[F]]
     }
     
-    @scala.inline
-    implicit class StrongMutableBuilder[Self <: Strong[?], F] (val x: Self & Strong[F]) extends AnyVal {
+    extension [Self <: Strong[?], F](x: Self & Strong[F]) {
       
-      @scala.inline
-      def setFirst(
+      inline def setFirst(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ js.Any => js.Any
       ): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSecond(
+      inline def setSecond(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, B, C> */ js.Any => js.Any
       ): Self = StObject.set(x, "second", js.Any.fromFunction1(value))
     }
@@ -155,8 +143,7 @@ object strongMod {
   }
   object Strong2 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: F,
       first: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ js.Any => js.Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
@@ -167,16 +154,13 @@ object strongMod {
       __obj.asInstanceOf[Strong2[F]]
     }
     
-    @scala.inline
-    implicit class Strong2MutableBuilder[Self <: Strong2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & Strong2[F]) extends AnyVal {
+    extension [Self <: Strong2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & Strong2[F]) {
       
-      @scala.inline
-      def setFirst(
+      inline def setFirst(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ js.Any => js.Any
       ): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSecond(
+      inline def setSecond(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, B, C> */ js.Any => js.Any
       ): Self = StObject.set(x, "second", js.Any.fromFunction1(value))
     }
@@ -196,8 +180,7 @@ object strongMod {
   }
   object Strong3 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: F,
       first: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ js.Any => js.Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
@@ -208,16 +191,13 @@ object strongMod {
       __obj.asInstanceOf[Strong3[F]]
     }
     
-    @scala.inline
-    implicit class Strong3MutableBuilder[Self <: Strong3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & Strong3[F]) extends AnyVal {
+    extension [Self <: Strong3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & Strong3[F]) {
       
-      @scala.inline
-      def setFirst(
+      inline def setFirst(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ js.Any => js.Any
       ): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSecond(
+      inline def setSecond(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, B, C> */ js.Any => js.Any
       ): Self = StObject.set(x, "second", js.Any.fromFunction1(value))
     }
@@ -237,8 +217,7 @@ object strongMod {
   }
   object Strong4 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: F,
       first: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ js.Any => js.Any,
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
@@ -249,16 +228,13 @@ object strongMod {
       __obj.asInstanceOf[Strong4[F]]
     }
     
-    @scala.inline
-    implicit class Strong4MutableBuilder[Self <: Strong4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & Strong4[F]) extends AnyVal {
+    extension [Self <: Strong4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & Strong4[F]) {
       
-      @scala.inline
-      def setFirst(
+      inline def setFirst(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ js.Any => js.Any
       ): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSecond(
+      inline def setSecond(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, B, C> */ js.Any => js.Any
       ): Self = StObject.set(x, "second", js.Any.fromFunction1(value))
     }

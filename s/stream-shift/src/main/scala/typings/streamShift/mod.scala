@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(stream: ReadableStream): Buffer | String | Null = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Buffer | String | Null]
+  inline def apply(stream: ReadableStream): Buffer | String | Null = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Buffer | String | Null]
   
   @JSImport("stream-shift", JSImport.Namespace)
   @js.native

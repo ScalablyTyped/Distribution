@@ -22,15 +22,15 @@ object toggleSwitchToggleSwitchMod {
       */
     def this(props: ToggleSwitchProps, context: js.Any) = this()
     
-    var focusedByMouse: js.Any = js.native
+    /* private */ var focusedByMouse: js.Any = js.native
     
-    val handleBlur: js.Any = js.native
+    /* private */ val handleBlur: js.Any = js.native
     
-    val handleFocus: js.Any = js.native
+    /* private */ val handleFocus: js.Any = js.native
     
-    val handleKeyDown: js.Any = js.native
+    /* private */ val handleKeyDown: js.Any = js.native
     
-    val handleMouseDown: js.Any = js.native
+    /* private */ val handleMouseDown: js.Any = js.native
     
     @JSName("state")
     var state_ToggleSwitch: FocusFocusVisible = js.native
@@ -45,14 +45,12 @@ object toggleSwitchToggleSwitchMod {
     @JSImport("wix-ui-core/dist/src/components/toggle-switch/ToggleSwitch", "ToggleSwitch.defaultProps")
     @js.native
     def defaultProps: TabIndex = js.native
-    @scala.inline
-    def defaultProps_=(x: TabIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: TabIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/toggle-switch/ToggleSwitch", "ToggleSwitch.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait ToggleSwitchProps extends StObject {
@@ -82,80 +80,56 @@ object toggleSwitchToggleSwitchMod {
   }
   object ToggleSwitchProps {
     
-    @scala.inline
-    def apply(): ToggleSwitchProps = {
+    inline def apply(): ToggleSwitchProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToggleSwitchProps]
     }
     
-    @scala.inline
-    implicit class ToggleSwitchPropsMutableBuilder[Self <: ToggleSwitchProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleSwitchProps](x: Self) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedIcon(value: ReactNode): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
+      inline def setCheckedIcon(value: ReactNode): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedIconUndefined: Self = StObject.set(x, "checkedIcon", js.undefined)
+      inline def setCheckedIconUndefined: Self = StObject.set(x, "checkedIcon", js.undefined)
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+      inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setStyles(value: ToggleSwitchStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: ToggleSwitchStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setUncheckedIcon(value: ReactNode): Self = StObject.set(x, "uncheckedIcon", value.asInstanceOf[js.Any])
+      inline def setUncheckedIcon(value: ReactNode): Self = StObject.set(x, "uncheckedIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
+      inline def setUncheckedIconUndefined: Self = StObject.set(x, "uncheckedIcon", js.undefined)
     }
   }
   
@@ -167,20 +141,16 @@ object toggleSwitchToggleSwitchMod {
   }
   object ToggleSwitchState {
     
-    @scala.inline
-    def apply(focus: Boolean, focusVisible: Boolean): ToggleSwitchState = {
+    inline def apply(focus: Boolean, focusVisible: Boolean): ToggleSwitchState = {
       val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any], focusVisible = focusVisible.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToggleSwitchState]
     }
     
-    @scala.inline
-    implicit class ToggleSwitchStateMutableBuilder[Self <: ToggleSwitchState] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleSwitchState](x: Self) {
       
-      @scala.inline
-      def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+      inline def setFocusVisible(value: Boolean): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,38 +166,28 @@ object toggleSwitchToggleSwitchMod {
   }
   object ToggleSwitchStyles {
     
-    @scala.inline
-    def apply(): ToggleSwitchStyles = {
+    inline def apply(): ToggleSwitchStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToggleSwitchStyles]
     }
     
-    @scala.inline
-    implicit class ToggleSwitchStylesMutableBuilder[Self <: ToggleSwitchStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleSwitchStyles](x: Self) {
       
-      @scala.inline
-      def setKnob(value: CSSProperties): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+      inline def setKnob(value: CSSProperties): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKnobIcon(value: CSSProperties): Self = StObject.set(x, "knobIcon", value.asInstanceOf[js.Any])
+      inline def setKnobIcon(value: CSSProperties): Self = StObject.set(x, "knobIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKnobIconUndefined: Self = StObject.set(x, "knobIcon", js.undefined)
+      inline def setKnobIconUndefined: Self = StObject.set(x, "knobIcon", js.undefined)
       
-      @scala.inline
-      def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
+      inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
       
-      @scala.inline
-      def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setTrack(value: CSSProperties): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: CSSProperties): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+      inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     }
   }
 }

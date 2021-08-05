@@ -65,55 +65,39 @@ trait SearchOptionsData extends StObject {
 }
 object SearchOptionsData {
   
-  @scala.inline
-  def apply(): SearchOptionsData = {
+  inline def apply(): SearchOptionsData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchOptionsData]
   }
   
-  @scala.inline
-  implicit class SearchOptionsDataMutableBuilder[Self <: SearchOptionsData] (val x: Self) extends AnyVal {
+  extension [Self <: SearchOptionsData](x: Self) {
     
-    @scala.inline
-    def setIgnorePunct(value: Boolean): Self = StObject.set(x, "ignorePunct", value.asInstanceOf[js.Any])
+    inline def setIgnorePunct(value: Boolean): Self = StObject.set(x, "ignorePunct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePunctUndefined: Self = StObject.set(x, "ignorePunct", js.undefined)
+    inline def setIgnorePunctUndefined: Self = StObject.set(x, "ignorePunct", js.undefined)
     
-    @scala.inline
-    def setIgnoreSpace(value: Boolean): Self = StObject.set(x, "ignoreSpace", value.asInstanceOf[js.Any])
+    inline def setIgnoreSpace(value: Boolean): Self = StObject.set(x, "ignoreSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreSpaceUndefined: Self = StObject.set(x, "ignoreSpace", js.undefined)
+    inline def setIgnoreSpaceUndefined: Self = StObject.set(x, "ignoreSpace", js.undefined)
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
-    @scala.inline
-    def setMatchPrefix(value: Boolean): Self = StObject.set(x, "matchPrefix", value.asInstanceOf[js.Any])
+    inline def setMatchPrefix(value: Boolean): Self = StObject.set(x, "matchPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchPrefixUndefined: Self = StObject.set(x, "matchPrefix", js.undefined)
+    inline def setMatchPrefixUndefined: Self = StObject.set(x, "matchPrefix", js.undefined)
     
-    @scala.inline
-    def setMatchSuffix(value: Boolean): Self = StObject.set(x, "matchSuffix", value.asInstanceOf[js.Any])
+    inline def setMatchSuffix(value: Boolean): Self = StObject.set(x, "matchSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchSuffixUndefined: Self = StObject.set(x, "matchSuffix", js.undefined)
+    inline def setMatchSuffixUndefined: Self = StObject.set(x, "matchSuffix", js.undefined)
     
-    @scala.inline
-    def setMatchWholeWord(value: Boolean): Self = StObject.set(x, "matchWholeWord", value.asInstanceOf[js.Any])
+    inline def setMatchWholeWord(value: Boolean): Self = StObject.set(x, "matchWholeWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchWholeWordUndefined: Self = StObject.set(x, "matchWholeWord", js.undefined)
+    inline def setMatchWholeWordUndefined: Self = StObject.set(x, "matchWholeWord", js.undefined)
     
-    @scala.inline
-    def setMatchWildcards(value: Boolean): Self = StObject.set(x, "matchWildcards", value.asInstanceOf[js.Any])
+    inline def setMatchWildcards(value: Boolean): Self = StObject.set(x, "matchWildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchWildcardsUndefined: Self = StObject.set(x, "matchWildcards", js.undefined)
+    inline def setMatchWildcardsUndefined: Self = StObject.set(x, "matchWildcards", js.undefined)
   }
 }

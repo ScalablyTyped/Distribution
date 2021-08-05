@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintSupports extends StObject
 object PrintSupports {
   
-  @scala.inline
-  def material: typings.ipp.ippStrings.material = "material".asInstanceOf[typings.ipp.ippStrings.material]
+  inline def material: typings.ipp.ippStrings.material = "material".asInstanceOf[typings.ipp.ippStrings.material]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def standard: typings.ipp.ippStrings.standard = "standard".asInstanceOf[typings.ipp.ippStrings.standard]
+  inline def standard: typings.ipp.ippStrings.standard = "standard".asInstanceOf[typings.ipp.ippStrings.standard]
 }

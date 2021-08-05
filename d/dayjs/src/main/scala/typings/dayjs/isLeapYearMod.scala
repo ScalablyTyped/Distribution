@@ -26,17 +26,14 @@ object isLeapYearMod extends Shortcut {
     }
     object Dayjs {
       
-      @scala.inline
-      def apply(isLeapYear: () => Boolean): Dayjs = {
+      inline def apply(isLeapYear: () => Boolean): Dayjs = {
         val __obj = js.Dynamic.literal(isLeapYear = js.Any.fromFunction0(isLeapYear))
         __obj.asInstanceOf[Dayjs]
       }
       
-      @scala.inline
-      implicit class DayjsMutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
+      extension [Self <: Dayjs](x: Self) {
         
-        @scala.inline
-        def setIsLeapYear(value: () => Boolean): Self = StObject.set(x, "isLeapYear", js.Any.fromFunction0(value))
+        inline def setIsLeapYear(value: () => Boolean): Self = StObject.set(x, "isLeapYear", js.Any.fromFunction0(value))
       }
     }
   }

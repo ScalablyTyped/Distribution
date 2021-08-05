@@ -18,22 +18,17 @@ trait EncryptionOptions extends StObject {
 }
 object EncryptionOptions {
   
-  @scala.inline
-  def apply(UseAwsOwnedKey: boolean): EncryptionOptions = {
+  inline def apply(UseAwsOwnedKey: boolean): EncryptionOptions = {
     val __obj = js.Dynamic.literal(UseAwsOwnedKey = UseAwsOwnedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionOptions]
   }
   
-  @scala.inline
-  implicit class EncryptionOptionsMutableBuilder[Self <: EncryptionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionOptions](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: string): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: string): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setUseAwsOwnedKey(value: boolean): Self = StObject.set(x, "UseAwsOwnedKey", value.asInstanceOf[js.Any])
+    inline def setUseAwsOwnedKey(value: boolean): Self = StObject.set(x, "UseAwsOwnedKey", value.asInstanceOf[js.Any])
   }
 }

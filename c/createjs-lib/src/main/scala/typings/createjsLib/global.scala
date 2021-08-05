@@ -137,24 +137,17 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def initialize(target: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def initialize(target: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
-    @scala.inline
-    def extend(subclass: js.Function0[js.Any], superclass: js.Function0[js.Any]): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(subclass.asInstanceOf[js.Any], superclass.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+    inline def extend(subclass: js.Function0[js.Any], superclass: js.Function0[js.Any]): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(subclass.asInstanceOf[js.Any], superclass.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
     
-    @scala.inline
-    def indexOf(array: js.Array[js.Any], searchElement: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def indexOf(array: js.Array[js.Any], searchElement: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def promote(subclass: js.Function0[js.Any], prefix: String): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promote")(subclass.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+    inline def promote(subclass: js.Function0[js.Any], prefix: String): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promote")(subclass.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
     
-    @scala.inline
-    def proxy(method: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* eventObj */ js.Object, js.Any]]
-    @scala.inline
-    def proxy(method: HandleEvent, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* eventObj */ js.Object, js.Any]]
-    @scala.inline
-    def proxy(method: `0`, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* eventObj */ js.Object, js.Any]]
+    inline def proxy(method: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* eventObj */ js.Object, js.Any]]
+    inline def proxy(method: HandleEvent, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* eventObj */ js.Object, js.Any]]
+    inline def proxy(method: `0`, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* eventObj */ js.Object, js.Any]]
   }
 }

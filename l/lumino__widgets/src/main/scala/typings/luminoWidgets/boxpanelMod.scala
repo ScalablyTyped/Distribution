@@ -71,8 +71,7 @@ object boxpanelMod {
       *
       * @returns The box panel size basis for the widget.
       */
-    @scala.inline
-    def getSizeBasis(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeBasis")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getSizeBasis(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeBasis")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Get the box panel stretch factor for the given widget.
@@ -81,8 +80,7 @@ object boxpanelMod {
       *
       * @returns The box panel stretch factor for the widget.
       */
-    @scala.inline
-    def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Set the box panel size basis for the given widget.
@@ -91,8 +89,7 @@ object boxpanelMod {
       *
       * @param value - The value for the size basis.
       */
-    @scala.inline
-    def setSizeBasis(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSizeBasis")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setSizeBasis(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSizeBasis")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Set the box panel stretch factor for the given widget.
@@ -101,8 +98,7 @@ object boxpanelMod {
       *
       * @param value - The value for the stretch factor.
       */
-    @scala.inline
-    def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * A type alias for a box panel alignment.
@@ -151,38 +147,28 @@ object boxpanelMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+        inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+        inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
         
-        @scala.inline
-        def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+        inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+        inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
         
-        @scala.inline
-        def setLayout(value: BoxLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+        inline def setLayout(value: BoxLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+        inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
         
-        @scala.inline
-        def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+        inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+        inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       }
     }
   }

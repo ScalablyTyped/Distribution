@@ -17,16 +17,13 @@ trait IGenericBookmarkListNxInfo
 }
 object IGenericBookmarkListNxInfo {
   
-  @scala.inline
-  def apply(): IGenericBookmarkListNxInfo = {
+  inline def apply(): IGenericBookmarkListNxInfo = {
     val __obj = js.Dynamic.literal(qType = "BookmarkList")
     __obj.asInstanceOf[IGenericBookmarkListNxInfo]
   }
   
-  @scala.inline
-  implicit class IGenericBookmarkListNxInfoMutableBuilder[Self <: IGenericBookmarkListNxInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericBookmarkListNxInfo](x: Self) {
     
-    @scala.inline
-    def setQType(value: BookmarkList): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: BookmarkList): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

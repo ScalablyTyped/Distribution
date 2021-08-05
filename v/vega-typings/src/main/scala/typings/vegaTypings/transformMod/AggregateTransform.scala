@@ -30,77 +30,54 @@ trait AggregateTransform
 }
 object AggregateTransform {
   
-  @scala.inline
-  def apply(): AggregateTransform = {
+  inline def apply(): AggregateTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("aggregate")
     __obj.asInstanceOf[AggregateTransform]
   }
   
-  @scala.inline
-  implicit class AggregateTransformMutableBuilder[Self <: AggregateTransform] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: (js.Array[String | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: (js.Array[String | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setAsVarargs(value: (String | SignalRef | Null)*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: (String | SignalRef | Null)*): Self = StObject.set(x, "as", js.Array(value :_*))
     
-    @scala.inline
-    def setCross(value: Boolean | SignalRef): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
+    inline def setCross(value: Boolean | SignalRef): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossUndefined: Self = StObject.set(x, "cross", js.undefined)
+    inline def setCrossUndefined: Self = StObject.set(x, "cross", js.undefined)
     
-    @scala.inline
-    def setDrop(value: Boolean | SignalRef): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: Boolean | SignalRef): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setFields(value: (js.Array[FieldRef | Null]) | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: (js.Array[FieldRef | Null]) | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: (FieldRef | Null)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (FieldRef | Null)*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: String | TransformField): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String | TransformField): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOps(value: (js.Array[AggregateOp | SignalRef]) | SignalRef): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: (js.Array[AggregateOp | SignalRef]) | SignalRef): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
+    inline def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
     
-    @scala.inline
-    def setOpsVarargs(value: (AggregateOp | SignalRef)*): Self = StObject.set(x, "ops", js.Array(value :_*))
+    inline def setOpsVarargs(value: (AggregateOp | SignalRef)*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
-    @scala.inline
-    def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setType(value: aggregate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: aggregate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

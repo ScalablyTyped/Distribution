@@ -11,16 +11,13 @@ trait PickImplselectOnKeydown extends StObject {
 }
 object PickImplselectOnKeydown {
   
-  @scala.inline
-  def apply(selectOnKeydown: Boolean): PickImplselectOnKeydown = {
+  inline def apply(selectOnKeydown: Boolean): PickImplselectOnKeydown = {
     val __obj = js.Dynamic.literal(selectOnKeydown = selectOnKeydown.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplselectOnKeydown]
   }
   
-  @scala.inline
-  implicit class PickImplselectOnKeydownMutableBuilder[Self <: PickImplselectOnKeydown] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplselectOnKeydown](x: Self) {
     
-    @scala.inline
-    def setSelectOnKeydown(value: Boolean): Self = StObject.set(x, "selectOnKeydown", value.asInstanceOf[js.Any])
+    inline def setSelectOnKeydown(value: Boolean): Self = StObject.set(x, "selectOnKeydown", value.asInstanceOf[js.Any])
   }
 }

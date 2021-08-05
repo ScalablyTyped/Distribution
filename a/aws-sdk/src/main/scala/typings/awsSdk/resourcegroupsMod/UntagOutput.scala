@@ -18,28 +18,21 @@ trait UntagOutput extends StObject {
 }
 object UntagOutput {
   
-  @scala.inline
-  def apply(): UntagOutput = {
+  inline def apply(): UntagOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UntagOutput]
   }
   
-  @scala.inline
-  implicit class UntagOutputMutableBuilder[Self <: UntagOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UntagOutput](x: Self) {
     
-    @scala.inline
-    def setArn(value: GroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: GroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setKeys(value: TagKeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: TagKeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: TagKey*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: TagKey*): Self = StObject.set(x, "Keys", js.Array(value :_*))
   }
 }

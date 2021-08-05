@@ -21,19 +21,15 @@ trait IBezierRange extends StObject {
 }
 object IBezierRange {
   
-  @scala.inline
-  def apply(endT: Double, startT: Double): IBezierRange = {
+  inline def apply(endT: Double, startT: Double): IBezierRange = {
     val __obj = js.Dynamic.literal(endT = endT.asInstanceOf[js.Any], startT = startT.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBezierRange]
   }
   
-  @scala.inline
-  implicit class IBezierRangeMutableBuilder[Self <: IBezierRange] (val x: Self) extends AnyVal {
+  extension [Self <: IBezierRange](x: Self) {
     
-    @scala.inline
-    def setEndT(value: Double): Self = StObject.set(x, "endT", value.asInstanceOf[js.Any])
+    inline def setEndT(value: Double): Self = StObject.set(x, "endT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartT(value: Double): Self = StObject.set(x, "startT", value.asInstanceOf[js.Any])
+    inline def setStartT(value: Double): Self = StObject.set(x, "startT", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait UpdateProfilingGroupResponse extends StObject {
 }
 object UpdateProfilingGroupResponse {
   
-  @scala.inline
-  def apply(profilingGroup: ProfilingGroupDescription): UpdateProfilingGroupResponse = {
+  inline def apply(profilingGroup: ProfilingGroupDescription): UpdateProfilingGroupResponse = {
     val __obj = js.Dynamic.literal(profilingGroup = profilingGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProfilingGroupResponse]
   }
   
-  @scala.inline
-  implicit class UpdateProfilingGroupResponseMutableBuilder[Self <: UpdateProfilingGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProfilingGroupResponse](x: Self) {
     
-    @scala.inline
-    def setProfilingGroup(value: ProfilingGroupDescription): Self = StObject.set(x, "profilingGroup", value.asInstanceOf[js.Any])
+    inline def setProfilingGroup(value: ProfilingGroupDescription): Self = StObject.set(x, "profilingGroup", value.asInstanceOf[js.Any])
   }
 }

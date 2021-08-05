@@ -23,22 +23,17 @@ trait CustomResourceConversion extends StObject {
 }
 object CustomResourceConversion {
   
-  @scala.inline
-  def apply(strategy: Input[String]): CustomResourceConversion = {
+  inline def apply(strategy: Input[String]): CustomResourceConversion = {
     val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomResourceConversion]
   }
   
-  @scala.inline
-  implicit class CustomResourceConversionMutableBuilder[Self <: CustomResourceConversion] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceConversion](x: Self) {
     
-    @scala.inline
-    def setStrategy(value: Input[String]): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: Input[String]): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhook(value: Input[WebhookConversion]): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+    inline def setWebhook(value: Input[WebhookConversion]): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
+    inline def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
   }
 }

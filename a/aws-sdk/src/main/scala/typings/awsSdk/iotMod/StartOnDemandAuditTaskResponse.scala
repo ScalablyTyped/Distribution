@@ -13,19 +13,15 @@ trait StartOnDemandAuditTaskResponse extends StObject {
 }
 object StartOnDemandAuditTaskResponse {
   
-  @scala.inline
-  def apply(): StartOnDemandAuditTaskResponse = {
+  inline def apply(): StartOnDemandAuditTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartOnDemandAuditTaskResponse]
   }
   
-  @scala.inline
-  implicit class StartOnDemandAuditTaskResponseMutableBuilder[Self <: StartOnDemandAuditTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartOnDemandAuditTaskResponse](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: AuditTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: AuditTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }
 }

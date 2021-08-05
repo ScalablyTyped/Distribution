@@ -13,19 +13,15 @@ trait DataLakePrincipal extends StObject {
 }
 object DataLakePrincipal {
   
-  @scala.inline
-  def apply(): DataLakePrincipal = {
+  inline def apply(): DataLakePrincipal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataLakePrincipal]
   }
   
-  @scala.inline
-  implicit class DataLakePrincipalMutableBuilder[Self <: DataLakePrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: DataLakePrincipal](x: Self) {
     
-    @scala.inline
-    def setDataLakePrincipalIdentifier(value: DataLakePrincipalString): Self = StObject.set(x, "DataLakePrincipalIdentifier", value.asInstanceOf[js.Any])
+    inline def setDataLakePrincipalIdentifier(value: DataLakePrincipalString): Self = StObject.set(x, "DataLakePrincipalIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLakePrincipalIdentifierUndefined: Self = StObject.set(x, "DataLakePrincipalIdentifier", js.undefined)
+    inline def setDataLakePrincipalIdentifierUndefined: Self = StObject.set(x, "DataLakePrincipalIdentifier", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait InitCoordsPayload extends StObject {
 }
 object InitCoordsPayload {
   
-  @scala.inline
-  def apply(): InitCoordsPayload = {
+  inline def apply(): InitCoordsPayload = {
     val __obj = js.Dynamic.literal(clientOffset = null, sourceClientOffset = null)
     __obj.asInstanceOf[InitCoordsPayload]
   }
   
-  @scala.inline
-  implicit class InitCoordsPayloadMutableBuilder[Self <: InitCoordsPayload] (val x: Self) extends AnyVal {
+  extension [Self <: InitCoordsPayload](x: Self) {
     
-    @scala.inline
-    def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
+    inline def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientOffsetNull: Self = StObject.set(x, "clientOffset", null)
+    inline def setClientOffsetNull: Self = StObject.set(x, "clientOffset", null)
     
-    @scala.inline
-    def setSourceClientOffset(value: XYCoord): Self = StObject.set(x, "sourceClientOffset", value.asInstanceOf[js.Any])
+    inline def setSourceClientOffset(value: XYCoord): Self = StObject.set(x, "sourceClientOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceClientOffsetNull: Self = StObject.set(x, "sourceClientOffset", null)
+    inline def setSourceClientOffsetNull: Self = StObject.set(x, "sourceClientOffset", null)
   }
 }

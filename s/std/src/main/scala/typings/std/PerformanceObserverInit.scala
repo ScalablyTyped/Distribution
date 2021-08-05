@@ -14,34 +14,25 @@ trait PerformanceObserverInit extends StObject {
 }
 object PerformanceObserverInit {
   
-  @scala.inline
-  def apply(): PerformanceObserverInit = {
+  inline def apply(): PerformanceObserverInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformanceObserverInit]
   }
   
-  @scala.inline
-  implicit class PerformanceObserverInitMutableBuilder[Self <: PerformanceObserverInit] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceObserverInit](x: Self) {
     
-    @scala.inline
-    def setBuffered(value: scala.Boolean): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
+    inline def setBuffered(value: scala.Boolean): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
+    inline def setBufferedUndefined: Self = StObject.set(x, "buffered", js.undefined)
     
-    @scala.inline
-    def setEntryTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "entryTypes", value.asInstanceOf[js.Any])
+    inline def setEntryTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "entryTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryTypesUndefined: Self = StObject.set(x, "entryTypes", js.undefined)
+    inline def setEntryTypesUndefined: Self = StObject.set(x, "entryTypes", js.undefined)
     
-    @scala.inline
-    def setEntryTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "entryTypes", js.Array(value :_*))
+    inline def setEntryTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "entryTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait AudioEffect extends StObject {
 }
 object AudioEffect {
   
-  @scala.inline
-  def apply(audioEffectType: AudioEffectType): AudioEffect = {
+  inline def apply(audioEffectType: AudioEffectType): AudioEffect = {
     val __obj = js.Dynamic.literal(audioEffectType = audioEffectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioEffect]
   }
   
-  @scala.inline
-  implicit class AudioEffectMutableBuilder[Self <: AudioEffect] (val x: Self) extends AnyVal {
+  extension [Self <: AudioEffect](x: Self) {
     
-    @scala.inline
-    def setAudioEffectType(value: AudioEffectType): Self = StObject.set(x, "audioEffectType", value.asInstanceOf[js.Any])
+    inline def setAudioEffectType(value: AudioEffectType): Self = StObject.set(x, "audioEffectType", value.asInstanceOf[js.Any])
   }
 }

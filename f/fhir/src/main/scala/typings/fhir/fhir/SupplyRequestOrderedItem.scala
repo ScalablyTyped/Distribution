@@ -28,28 +28,21 @@ trait SupplyRequestOrderedItem
 }
 object SupplyRequestOrderedItem {
   
-  @scala.inline
-  def apply(quantity: Quantity): SupplyRequestOrderedItem = {
+  inline def apply(quantity: Quantity): SupplyRequestOrderedItem = {
     val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupplyRequestOrderedItem]
   }
   
-  @scala.inline
-  implicit class SupplyRequestOrderedItemMutableBuilder[Self <: SupplyRequestOrderedItem] (val x: Self) extends AnyVal {
+  extension [Self <: SupplyRequestOrderedItem](x: Self) {
     
-    @scala.inline
-    def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCodeableConceptUndefined: Self = StObject.set(x, "itemCodeableConcept", js.undefined)
+    inline def setItemCodeableConceptUndefined: Self = StObject.set(x, "itemCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setItemReference(value: Reference): Self = StObject.set(x, "itemReference", value.asInstanceOf[js.Any])
+    inline def setItemReference(value: Reference): Self = StObject.set(x, "itemReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemReferenceUndefined: Self = StObject.set(x, "itemReference", js.undefined)
+    inline def setItemReferenceUndefined: Self = StObject.set(x, "itemReference", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
   }
 }

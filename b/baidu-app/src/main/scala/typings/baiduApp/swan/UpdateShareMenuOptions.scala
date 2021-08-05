@@ -13,19 +13,15 @@ trait UpdateShareMenuOptions
 }
 object UpdateShareMenuOptions {
   
-  @scala.inline
-  def apply(): UpdateShareMenuOptions = {
+  inline def apply(): UpdateShareMenuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateShareMenuOptions]
   }
   
-  @scala.inline
-  implicit class UpdateShareMenuOptionsMutableBuilder[Self <: UpdateShareMenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateShareMenuOptions](x: Self) {
     
-    @scala.inline
-    def setWithShareTicket(value: Boolean): Self = StObject.set(x, "withShareTicket", value.asInstanceOf[js.Any])
+    inline def setWithShareTicket(value: Boolean): Self = StObject.set(x, "withShareTicket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithShareTicketUndefined: Self = StObject.set(x, "withShareTicket", js.undefined)
+    inline def setWithShareTicketUndefined: Self = StObject.set(x, "withShareTicket", js.undefined)
   }
 }

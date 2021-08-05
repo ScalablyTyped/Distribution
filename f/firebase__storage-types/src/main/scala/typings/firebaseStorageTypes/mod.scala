@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("@firebase/storage-types", "FirebaseStorage")
   @js.native
-  class FirebaseStorage protected () extends StObject {
+  /* private */ class FirebaseStorage () extends StObject {
     
     var app: FirebaseApp = js.native
     
@@ -57,8 +57,7 @@ object mod {
   }
   object FullMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bucket: String,
       fullPath: String,
       generation: String,
@@ -72,32 +71,23 @@ object mod {
       __obj.asInstanceOf[FullMetadata]
     }
     
-    @scala.inline
-    implicit class FullMetadataMutableBuilder[Self <: FullMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: FullMetadata](x: Self) {
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
+      inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+      inline def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetageneration(value: String): Self = StObject.set(x, "metageneration", value.asInstanceOf[js.Any])
+      inline def setMetageneration(value: String): Self = StObject.set(x, "metageneration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeCreated(value: String): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+      inline def setTimeCreated(value: String): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,32 +99,24 @@ object mod {
   }
   object ListOptions {
     
-    @scala.inline
-    def apply(): ListOptions = {
+    inline def apply(): ListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListOptions]
     }
     
-    @scala.inline
-    implicit class ListOptionsMutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ListOptions](x: Self) {
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsNull: Self = StObject.set(x, "maxResults", null)
+      inline def setMaxResultsNull: Self = StObject.set(x, "maxResults", null)
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+      inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
+      inline def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
       
-      @scala.inline
-      def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+      inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     }
   }
   
@@ -148,32 +130,24 @@ object mod {
   }
   object ListResult {
     
-    @scala.inline
-    def apply(items: js.Array[Reference], prefixes: js.Array[Reference]): ListResult = {
+    inline def apply(items: js.Array[Reference], prefixes: js.Array[Reference]): ListResult = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], prefixes = prefixes.asInstanceOf[js.Any], nextPageToken = null)
       __obj.asInstanceOf[ListResult]
     }
     
-    @scala.inline
-    implicit class ListResultMutableBuilder[Self <: ListResult] (val x: Self) extends AnyVal {
+    extension [Self <: ListResult](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[Reference]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Reference]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Reference*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Reference*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+      inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+      inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
       
-      @scala.inline
-      def setPrefixes(value: js.Array[Reference]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+      inline def setPrefixes(value: js.Array[Reference]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixesVarargs(value: Reference*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
+      inline def setPrefixesVarargs(value: Reference*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
     }
   }
   
@@ -236,68 +210,48 @@ object mod {
   }
   object SettableMetadata {
     
-    @scala.inline
-    def apply(): SettableMetadata = {
+    inline def apply(): SettableMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SettableMetadata]
     }
     
-    @scala.inline
-    implicit class SettableMetadataMutableBuilder[Self <: SettableMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: SettableMetadata](x: Self) {
       
-      @scala.inline
-      def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+      inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheControlNull: Self = StObject.set(x, "cacheControl", null)
+      inline def setCacheControlNull: Self = StObject.set(x, "cacheControl", null)
       
-      @scala.inline
-      def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
+      inline def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
       
-      @scala.inline
-      def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+      inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentDispositionNull: Self = StObject.set(x, "contentDisposition", null)
+      inline def setContentDispositionNull: Self = StObject.set(x, "contentDisposition", null)
       
-      @scala.inline
-      def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
+      inline def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
       
-      @scala.inline
-      def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
+      inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEncodingNull: Self = StObject.set(x, "contentEncoding", null)
+      inline def setContentEncodingNull: Self = StObject.set(x, "contentEncoding", null)
       
-      @scala.inline
-      def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
+      inline def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
       
-      @scala.inline
-      def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
+      inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentLanguageNull: Self = StObject.set(x, "contentLanguage", null)
+      inline def setContentLanguageNull: Self = StObject.set(x, "contentLanguage", null)
       
-      @scala.inline
-      def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
+      inline def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeNull: Self = StObject.set(x, "contentType", null)
+      inline def setContentTypeNull: Self = StObject.set(x, "contentType", null)
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setCustomMetadata(value: StringDictionary[String]): Self = StObject.set(x, "customMetadata", value.asInstanceOf[js.Any])
+      inline def setCustomMetadata(value: StringDictionary[String]): Self = StObject.set(x, "customMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomMetadataNull: Self = StObject.set(x, "customMetadata", null)
+      inline def setCustomMetadataNull: Self = StObject.set(x, "customMetadata", null)
       
-      @scala.inline
-      def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
+      inline def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
     }
   }
   
@@ -315,23 +269,18 @@ object mod {
   }
   object UploadMetadata {
     
-    @scala.inline
-    def apply(): UploadMetadata = {
+    inline def apply(): UploadMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UploadMetadata]
     }
     
-    @scala.inline
-    implicit class UploadMetadataMutableBuilder[Self <: UploadMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: UploadMetadata](x: Self) {
       
-      @scala.inline
-      def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
+      inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd5HashNull: Self = StObject.set(x, "md5Hash", null)
+      inline def setMd5HashNull: Self = StObject.set(x, "md5Hash", null)
       
-      @scala.inline
-      def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
+      inline def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
     }
   }
   
@@ -432,8 +381,7 @@ object mod {
   }
   object UploadTaskSnapshot {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytesTransferred: Double,
       metadata: FullMetadata,
       ref: Reference,
@@ -445,26 +393,19 @@ object mod {
       __obj.asInstanceOf[UploadTaskSnapshot]
     }
     
-    @scala.inline
-    implicit class UploadTaskSnapshotMutableBuilder[Self <: UploadTaskSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: UploadTaskSnapshot](x: Self) {
       
-      @scala.inline
-      def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
+      inline def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: FullMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: FullMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTask(value: UploadTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: UploadTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
+      inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -476,17 +417,14 @@ object mod {
     }
     object NameServiceMapping {
       
-      @scala.inline
-      def apply(storage: FirebaseStorage): NameServiceMapping = {
+      inline def apply(storage: FirebaseStorage): NameServiceMapping = {
         val __obj = js.Dynamic.literal(storage = storage.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      @scala.inline
-      implicit class NameServiceMappingMutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+      extension [Self <: NameServiceMapping](x: Self) {
         
-        @scala.inline
-        def setStorage(value: FirebaseStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+        inline def setStorage(value: FirebaseStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       }
     }
   }

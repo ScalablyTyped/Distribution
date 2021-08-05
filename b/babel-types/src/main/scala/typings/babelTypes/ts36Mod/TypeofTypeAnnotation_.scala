@@ -18,20 +18,16 @@ trait TypeofTypeAnnotation_
 }
 object TypeofTypeAnnotation_ {
   
-  @scala.inline
-  def apply(argument: FlowTypeAnnotation, end: Double, loc: SourceLocation, start: Double): TypeofTypeAnnotation_ = {
+  inline def apply(argument: FlowTypeAnnotation, end: Double, loc: SourceLocation, start: Double): TypeofTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TypeofTypeAnnotation")
     __obj.asInstanceOf[TypeofTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class TypeofTypeAnnotation_MutableBuilder[Self <: TypeofTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setArgument(value: FlowTypeAnnotation): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: FlowTypeAnnotation): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TypeofTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeofTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

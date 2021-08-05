@@ -19,16 +19,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(featherlight: JQueryExtension): JQuery = {
+  inline def apply(featherlight: JQueryExtension): JQuery = {
     val __obj = js.Dynamic.literal(featherlight = featherlight.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setFeatherlight(value: JQueryExtension): Self = StObject.set(x, "featherlight", value.asInstanceOf[js.Any])
+    inline def setFeatherlight(value: JQueryExtension): Self = StObject.set(x, "featherlight", value.asInstanceOf[js.Any])
   }
 }

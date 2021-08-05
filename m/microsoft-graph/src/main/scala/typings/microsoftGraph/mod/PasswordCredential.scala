@@ -40,76 +40,53 @@ trait PasswordCredential extends StObject {
 }
 object PasswordCredential {
   
-  @scala.inline
-  def apply(): PasswordCredential = {
+  inline def apply(): PasswordCredential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PasswordCredential]
   }
   
-  @scala.inline
-  implicit class PasswordCredentialMutableBuilder[Self <: PasswordCredential] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordCredential](x: Self) {
     
-    @scala.inline
-    def setCustomKeyIdentifier(value: NullableOption[Double]): Self = StObject.set(x, "customKeyIdentifier", value.asInstanceOf[js.Any])
+    inline def setCustomKeyIdentifier(value: NullableOption[Double]): Self = StObject.set(x, "customKeyIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomKeyIdentifierNull: Self = StObject.set(x, "customKeyIdentifier", null)
+    inline def setCustomKeyIdentifierNull: Self = StObject.set(x, "customKeyIdentifier", null)
     
-    @scala.inline
-    def setCustomKeyIdentifierUndefined: Self = StObject.set(x, "customKeyIdentifier", js.undefined)
+    inline def setCustomKeyIdentifierUndefined: Self = StObject.set(x, "customKeyIdentifier", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
+    inline def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
-    @scala.inline
-    def setHint(value: NullableOption[String]): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: NullableOption[String]): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintNull: Self = StObject.set(x, "hint", null)
+    inline def setHintNull: Self = StObject.set(x, "hint", null)
     
-    @scala.inline
-    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
-    @scala.inline
-    def setKeyId(value: NullableOption[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: NullableOption[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdNull: Self = StObject.set(x, "keyId", null)
+    inline def setKeyIdNull: Self = StObject.set(x, "keyId", null)
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
-    @scala.inline
-    def setSecretText(value: NullableOption[String]): Self = StObject.set(x, "secretText", value.asInstanceOf[js.Any])
+    inline def setSecretText(value: NullableOption[String]): Self = StObject.set(x, "secretText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretTextNull: Self = StObject.set(x, "secretText", null)
+    inline def setSecretTextNull: Self = StObject.set(x, "secretText", null)
     
-    @scala.inline
-    def setSecretTextUndefined: Self = StObject.set(x, "secretText", js.undefined)
+    inline def setSecretTextUndefined: Self = StObject.set(x, "secretText", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
+    inline def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
   }
 }

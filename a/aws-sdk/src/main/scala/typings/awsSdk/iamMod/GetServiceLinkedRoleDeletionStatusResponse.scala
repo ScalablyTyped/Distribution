@@ -18,22 +18,17 @@ trait GetServiceLinkedRoleDeletionStatusResponse extends StObject {
 }
 object GetServiceLinkedRoleDeletionStatusResponse {
   
-  @scala.inline
-  def apply(Status: DeletionTaskStatusType): GetServiceLinkedRoleDeletionStatusResponse = {
+  inline def apply(Status: DeletionTaskStatusType): GetServiceLinkedRoleDeletionStatusResponse = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceLinkedRoleDeletionStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetServiceLinkedRoleDeletionStatusResponseMutableBuilder[Self <: GetServiceLinkedRoleDeletionStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetServiceLinkedRoleDeletionStatusResponse](x: Self) {
     
-    @scala.inline
-    def setReason(value: DeletionTaskFailureReasonType): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: DeletionTaskFailureReasonType): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DeletionTaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DeletionTaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

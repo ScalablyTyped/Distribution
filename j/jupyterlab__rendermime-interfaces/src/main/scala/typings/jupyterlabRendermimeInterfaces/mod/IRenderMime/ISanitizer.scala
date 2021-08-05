@@ -16,16 +16,13 @@ trait ISanitizer extends StObject {
 }
 object ISanitizer {
   
-  @scala.inline
-  def apply(sanitize: String => String): ISanitizer = {
+  inline def apply(sanitize: String => String): ISanitizer = {
     val __obj = js.Dynamic.literal(sanitize = js.Any.fromFunction1(sanitize))
     __obj.asInstanceOf[ISanitizer]
   }
   
-  @scala.inline
-  implicit class ISanitizerMutableBuilder[Self <: ISanitizer] (val x: Self) extends AnyVal {
+  extension [Self <: ISanitizer](x: Self) {
     
-    @scala.inline
-    def setSanitize(value: String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
+    inline def setSanitize(value: String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
   }
 }

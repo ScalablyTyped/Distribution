@@ -14,31 +14,23 @@ trait AverageComparativeScore extends StObject {
 }
 object AverageComparativeScore {
   
-  @scala.inline
-  def apply(): AverageComparativeScore = {
+  inline def apply(): AverageComparativeScore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AverageComparativeScore]
   }
   
-  @scala.inline
-  implicit class AverageComparativeScoreMutableBuilder[Self <: AverageComparativeScore] (val x: Self) extends AnyVal {
+  extension [Self <: AverageComparativeScore](x: Self) {
     
-    @scala.inline
-    def setAverageScore(value: NullableOption[Double]): Self = StObject.set(x, "averageScore", value.asInstanceOf[js.Any])
+    inline def setAverageScore(value: NullableOption[Double]): Self = StObject.set(x, "averageScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageScoreNull: Self = StObject.set(x, "averageScore", null)
+    inline def setAverageScoreNull: Self = StObject.set(x, "averageScore", null)
     
-    @scala.inline
-    def setAverageScoreUndefined: Self = StObject.set(x, "averageScore", js.undefined)
+    inline def setAverageScoreUndefined: Self = StObject.set(x, "averageScore", js.undefined)
     
-    @scala.inline
-    def setBasis(value: NullableOption[String]): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
+    inline def setBasis(value: NullableOption[String]): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasisNull: Self = StObject.set(x, "basis", null)
+    inline def setBasisNull: Self = StObject.set(x, "basis", null)
     
-    @scala.inline
-    def setBasisUndefined: Self = StObject.set(x, "basis", js.undefined)
+    inline def setBasisUndefined: Self = StObject.set(x, "basis", js.undefined)
   }
 }

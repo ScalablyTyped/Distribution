@@ -20,12 +20,10 @@ object commands {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.commands.onCommand")
   @js.native
   def onCommand: CommandEvent = js.native
-  @scala.inline
-  def onCommand_=(x: CommandEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onCommand")(x.asInstanceOf[js.Any])
+  inline def onCommand_=(x: CommandEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onCommand")(x.asInstanceOf[js.Any])
 }

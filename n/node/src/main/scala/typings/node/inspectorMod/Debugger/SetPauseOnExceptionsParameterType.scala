@@ -13,16 +13,13 @@ trait SetPauseOnExceptionsParameterType extends StObject {
 }
 object SetPauseOnExceptionsParameterType {
   
-  @scala.inline
-  def apply(state: String): SetPauseOnExceptionsParameterType = {
+  inline def apply(state: String): SetPauseOnExceptionsParameterType = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetPauseOnExceptionsParameterType]
   }
   
-  @scala.inline
-  implicit class SetPauseOnExceptionsParameterTypeMutableBuilder[Self <: SetPauseOnExceptionsParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: SetPauseOnExceptionsParameterType](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

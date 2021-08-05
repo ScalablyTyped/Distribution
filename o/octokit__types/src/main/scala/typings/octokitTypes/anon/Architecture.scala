@@ -16,25 +16,19 @@ trait Architecture extends StObject {
 }
 object Architecture {
   
-  @scala.inline
-  def apply(architecture: String, download_url: String, filename: String, os: String): Architecture = {
+  inline def apply(architecture: String, download_url: String, filename: String, os: String): Architecture = {
     val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], download_url = download_url.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
     __obj.asInstanceOf[Architecture]
   }
   
-  @scala.inline
-  implicit class ArchitectureMutableBuilder[Self <: Architecture] (val x: Self) extends AnyVal {
+  extension [Self <: Architecture](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownload_url(value: String): Self = StObject.set(x, "download_url", value.asInstanceOf[js.Any])
+    inline def setDownload_url(value: String): Self = StObject.set(x, "download_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
   }
 }

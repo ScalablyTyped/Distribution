@@ -13,22 +13,16 @@ object loggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def logCipherState(session: NoiseSession): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logCipherState")(session.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logCipherState(session: NoiseSession): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logCipherState")(session.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def logLocalEphemeralKeys(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLocalEphemeralKeys")().asInstanceOf[Unit]
-  @scala.inline
-  def logLocalEphemeralKeys(e: KeyPair): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLocalEphemeralKeys")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logLocalEphemeralKeys(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLocalEphemeralKeys")().asInstanceOf[Unit]
+  inline def logLocalEphemeralKeys(e: KeyPair): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLocalEphemeralKeys")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def logLocalStaticKeys(s: KeyPair): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLocalStaticKeys")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logLocalStaticKeys(s: KeyPair): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLocalStaticKeys")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def logRemoteEphemeralKey(re: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logRemoteEphemeralKey")(re.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logRemoteEphemeralKey(re: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logRemoteEphemeralKey")(re.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def logRemoteStaticKey(rs: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logRemoteStaticKey")(rs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logRemoteStaticKey(rs: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logRemoteStaticKey")(rs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("libp2p-noise/dist/src/logger", "logger")
   @js.native

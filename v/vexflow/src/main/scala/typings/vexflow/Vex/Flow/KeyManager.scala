@@ -20,8 +20,7 @@ trait KeyManager extends StObject {
 }
 object KeyManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAccidental: String => AccidentalNote,
     getKey: () => String,
     reset: () => KeyManager,
@@ -32,22 +31,16 @@ object KeyManager {
     __obj.asInstanceOf[KeyManager]
   }
   
-  @scala.inline
-  implicit class KeyManagerMutableBuilder[Self <: KeyManager] (val x: Self) extends AnyVal {
+  extension [Self <: KeyManager](x: Self) {
     
-    @scala.inline
-    def setGetAccidental(value: String => AccidentalNote): Self = StObject.set(x, "getAccidental", js.Any.fromFunction1(value))
+    inline def setGetAccidental(value: String => AccidentalNote): Self = StObject.set(x, "getAccidental", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
+    inline def setGetKey(value: () => String): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => KeyManager): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => KeyManager): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectNote(value: String => Change): Self = StObject.set(x, "selectNote", js.Any.fromFunction1(value))
+    inline def setSelectNote(value: String => Change): Self = StObject.set(x, "selectNote", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetKey(value: String => KeyManager): Self = StObject.set(x, "setKey", js.Any.fromFunction1(value))
+    inline def setSetKey(value: String => KeyManager): Self = StObject.set(x, "setKey", js.Any.fromFunction1(value))
   }
 }

@@ -17,34 +17,25 @@ trait SasPortalNode extends StObject {
 }
 object SasPortalNode {
   
-  @scala.inline
-  def apply(): SasPortalNode = {
+  inline def apply(): SasPortalNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalNode]
   }
   
-  @scala.inline
-  implicit class SasPortalNodeMutableBuilder[Self <: SasPortalNode] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalNode](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSasUserIds(value: js.Array[String]): Self = StObject.set(x, "sasUserIds", value.asInstanceOf[js.Any])
+    inline def setSasUserIds(value: js.Array[String]): Self = StObject.set(x, "sasUserIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSasUserIdsUndefined: Self = StObject.set(x, "sasUserIds", js.undefined)
+    inline def setSasUserIdsUndefined: Self = StObject.set(x, "sasUserIds", js.undefined)
     
-    @scala.inline
-    def setSasUserIdsVarargs(value: String*): Self = StObject.set(x, "sasUserIds", js.Array(value :_*))
+    inline def setSasUserIdsVarargs(value: String*): Self = StObject.set(x, "sasUserIds", js.Array(value :_*))
   }
 }

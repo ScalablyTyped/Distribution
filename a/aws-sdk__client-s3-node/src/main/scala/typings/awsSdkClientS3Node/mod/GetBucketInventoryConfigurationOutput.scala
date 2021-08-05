@@ -10,8 +10,7 @@ trait GetBucketInventoryConfigurationOutput
      with typings.awsSdkClientS3Node.typesGetBucketInventoryConfigurationOutputMod.GetBucketInventoryConfigurationOutput
 object GetBucketInventoryConfigurationOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketInventoryConfigurationOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketInventoryConfigurationOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketInventoryConfigurationOutput]
   }

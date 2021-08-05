@@ -47,8 +47,7 @@ trait WorkItemUpdate
 }
 object WorkItemUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     fields: StringDictionary[WorkItemFieldUpdate],
     id: Double,
@@ -63,28 +62,20 @@ object WorkItemUpdate {
     __obj.asInstanceOf[WorkItemUpdate]
   }
   
-  @scala.inline
-  implicit class WorkItemUpdateMutableBuilder[Self <: WorkItemUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemUpdate](x: Self) {
     
-    @scala.inline
-    def setFields(value: StringDictionary[WorkItemFieldUpdate]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[WorkItemFieldUpdate]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelations(value: WorkItemRelationUpdates): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: WorkItemRelationUpdates): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    inline def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisedBy(value: IdentityReference): Self = StObject.set(x, "revisedBy", value.asInstanceOf[js.Any])
+    inline def setRevisedBy(value: IdentityReference): Self = StObject.set(x, "revisedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisedDate(value: Date): Self = StObject.set(x, "revisedDate", value.asInstanceOf[js.Any])
+    inline def setRevisedDate(value: Date): Self = StObject.set(x, "revisedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemId(value: Double): Self = StObject.set(x, "workItemId", value.asInstanceOf[js.Any])
+    inline def setWorkItemId(value: Double): Self = StObject.set(x, "workItemId", value.asInstanceOf[js.Any])
   }
 }

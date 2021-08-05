@@ -10,16 +10,13 @@ trait LocalCity extends StObject {
 }
 object LocalCity {
   
-  @scala.inline
-  def apply(get: js.Function1[/* result */ LocalCityResult, Unit] => Unit): LocalCity = {
+  inline def apply(get: js.Function1[/* result */ LocalCityResult, Unit] => Unit): LocalCity = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[LocalCity]
   }
   
-  @scala.inline
-  implicit class LocalCityMutableBuilder[Self <: LocalCity] (val x: Self) extends AnyVal {
+  extension [Self <: LocalCity](x: Self) {
     
-    @scala.inline
-    def setGet(value: js.Function1[/* result */ LocalCityResult, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Function1[/* result */ LocalCityResult, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

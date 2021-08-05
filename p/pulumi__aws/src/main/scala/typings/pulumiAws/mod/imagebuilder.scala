@@ -56,21 +56,16 @@ object imagebuilder {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.componentMod.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.componentMod.Component]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.componentMod.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.componentMod.Component]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ComponentState): typings.pulumiAws.componentMod.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.componentMod.Component]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ComponentState, opts: CustomResourceOptions): typings.pulumiAws.componentMod.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.componentMod.Component]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.componentMod.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.componentMod.Component]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.componentMod.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.componentMod.Component]
+    inline def get(name: String, id: Input[ID], state: ComponentState): typings.pulumiAws.componentMod.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.componentMod.Component]
+    inline def get(name: String, id: Input[ID], state: ComponentState, opts: CustomResourceOptions): typings.pulumiAws.componentMod.Component = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.componentMod.Component]
     
     /**
       * Returns true if the given object is an instance of Component.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/component.Component */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/component.Component */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/component.Component */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/component.Component */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "imagebuilder.DistributionConfiguration")
@@ -103,21 +98,16 @@ object imagebuilder {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DistributionConfigurationState): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DistributionConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration]
+    inline def get(name: String, id: Input[ID], state: DistributionConfigurationState): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration]
+    inline def get(name: String, id: Input[ID], state: DistributionConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.distributionConfigurationMod.DistributionConfiguration]
     
     /**
       * Returns true if the given object is an instance of DistributionConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/distributionConfiguration.DistributionConfiguration */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "imagebuilder.InfrastructureConfiguration")
@@ -150,35 +140,24 @@ object imagebuilder {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InfrastructureConfigurationState): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InfrastructureConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration]
+    inline def get(name: String, id: Input[ID], state: InfrastructureConfigurationState): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration]
+    inline def get(name: String, id: Input[ID], state: InfrastructureConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.infrastructureConfigurationMod.InfrastructureConfiguration]
     
     /**
       * Returns true if the given object is an instance of InfrastructureConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/infrastructureConfiguration.InfrastructureConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/infrastructureConfiguration.InfrastructureConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/imagebuilder/infrastructureConfiguration.InfrastructureConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/imagebuilder/infrastructureConfiguration.InfrastructureConfiguration */ Boolean]
   }
   
-  @scala.inline
-  def getComponent(args: GetComponentArgs): js.Promise[GetComponentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetComponentResult]]
-  @scala.inline
-  def getComponent(args: GetComponentArgs, opts: InvokeOptions): js.Promise[GetComponentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetComponentResult]]
+  inline def getComponent(args: GetComponentArgs): js.Promise[GetComponentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetComponentResult]]
+  inline def getComponent(args: GetComponentArgs, opts: InvokeOptions): js.Promise[GetComponentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetComponentResult]]
   
-  @scala.inline
-  def getDistributionConfiguration(args: GetDistributionConfigurationArgs): js.Promise[GetDistributionConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistributionConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDistributionConfigurationResult]]
-  @scala.inline
-  def getDistributionConfiguration(args: GetDistributionConfigurationArgs, opts: InvokeOptions): js.Promise[GetDistributionConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistributionConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDistributionConfigurationResult]]
+  inline def getDistributionConfiguration(args: GetDistributionConfigurationArgs): js.Promise[GetDistributionConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistributionConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDistributionConfigurationResult]]
+  inline def getDistributionConfiguration(args: GetDistributionConfigurationArgs, opts: InvokeOptions): js.Promise[GetDistributionConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistributionConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDistributionConfigurationResult]]
   
-  @scala.inline
-  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs): js.Promise[GetInfrastructureConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
-  @scala.inline
-  def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs, opts: InvokeOptions): js.Promise[GetInfrastructureConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
+  inline def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs): js.Promise[GetInfrastructureConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
+  inline def getInfrastructureConfiguration(args: GetInfrastructureConfigurationArgs, opts: InvokeOptions): js.Promise[GetInfrastructureConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfrastructureConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInfrastructureConfigurationResult]]
 }

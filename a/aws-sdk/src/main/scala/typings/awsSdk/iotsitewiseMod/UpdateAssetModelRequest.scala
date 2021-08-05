@@ -38,49 +38,35 @@ trait UpdateAssetModelRequest extends StObject {
 }
 object UpdateAssetModelRequest {
   
-  @scala.inline
-  def apply(assetModelId: ID, assetModelName: Name): UpdateAssetModelRequest = {
+  inline def apply(assetModelId: ID, assetModelName: Name): UpdateAssetModelRequest = {
     val __obj = js.Dynamic.literal(assetModelId = assetModelId.asInstanceOf[js.Any], assetModelName = assetModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAssetModelRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAssetModelRequestMutableBuilder[Self <: UpdateAssetModelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAssetModelRequest](x: Self) {
     
-    @scala.inline
-    def setAssetModelDescription(value: Description): Self = StObject.set(x, "assetModelDescription", value.asInstanceOf[js.Any])
+    inline def setAssetModelDescription(value: Description): Self = StObject.set(x, "assetModelDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelDescriptionUndefined: Self = StObject.set(x, "assetModelDescription", js.undefined)
+    inline def setAssetModelDescriptionUndefined: Self = StObject.set(x, "assetModelDescription", js.undefined)
     
-    @scala.inline
-    def setAssetModelHierarchies(value: AssetModelHierarchies): Self = StObject.set(x, "assetModelHierarchies", value.asInstanceOf[js.Any])
+    inline def setAssetModelHierarchies(value: AssetModelHierarchies): Self = StObject.set(x, "assetModelHierarchies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelHierarchiesUndefined: Self = StObject.set(x, "assetModelHierarchies", js.undefined)
+    inline def setAssetModelHierarchiesUndefined: Self = StObject.set(x, "assetModelHierarchies", js.undefined)
     
-    @scala.inline
-    def setAssetModelHierarchiesVarargs(value: AssetModelHierarchy*): Self = StObject.set(x, "assetModelHierarchies", js.Array(value :_*))
+    inline def setAssetModelHierarchiesVarargs(value: AssetModelHierarchy*): Self = StObject.set(x, "assetModelHierarchies", js.Array(value :_*))
     
-    @scala.inline
-    def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
+    inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelName(value: Name): Self = StObject.set(x, "assetModelName", value.asInstanceOf[js.Any])
+    inline def setAssetModelName(value: Name): Self = StObject.set(x, "assetModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelProperties(value: AssetModelProperties): Self = StObject.set(x, "assetModelProperties", value.asInstanceOf[js.Any])
+    inline def setAssetModelProperties(value: AssetModelProperties): Self = StObject.set(x, "assetModelProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelPropertiesUndefined: Self = StObject.set(x, "assetModelProperties", js.undefined)
+    inline def setAssetModelPropertiesUndefined: Self = StObject.set(x, "assetModelProperties", js.undefined)
     
-    @scala.inline
-    def setAssetModelPropertiesVarargs(value: AssetModelProperty*): Self = StObject.set(x, "assetModelProperties", js.Array(value :_*))
+    inline def setAssetModelPropertiesVarargs(value: AssetModelProperty*): Self = StObject.set(x, "assetModelProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

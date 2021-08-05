@@ -30,8 +30,7 @@ trait SinonArrayMatcher
 }
 object SinonArrayMatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     and: SinonMatcher => SinonMatcher,
     contains: js.Array[js.Any] => SinonMatcher,
     deepEquals: js.Array[js.Any] => SinonMatcher,
@@ -44,19 +43,14 @@ object SinonArrayMatcher {
     __obj.asInstanceOf[SinonArrayMatcher]
   }
   
-  @scala.inline
-  implicit class SinonArrayMatcherMutableBuilder[Self <: SinonArrayMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: SinonArrayMatcher](x: Self) {
     
-    @scala.inline
-    def setContains(value: js.Array[js.Any] => SinonMatcher): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: js.Array[js.Any] => SinonMatcher): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeepEquals(value: js.Array[js.Any] => SinonMatcher): Self = StObject.set(x, "deepEquals", js.Any.fromFunction1(value))
+    inline def setDeepEquals(value: js.Array[js.Any] => SinonMatcher): Self = StObject.set(x, "deepEquals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndsWith(value: js.Array[js.Any] => SinonMatcher): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
+    inline def setEndsWith(value: js.Array[js.Any] => SinonMatcher): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartsWith(value: js.Array[js.Any] => SinonMatcher): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
+    inline def setStartsWith(value: js.Array[js.Any] => SinonMatcher): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
   }
 }

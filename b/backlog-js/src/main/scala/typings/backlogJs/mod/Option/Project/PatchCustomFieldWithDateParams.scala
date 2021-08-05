@@ -20,43 +20,31 @@ trait PatchCustomFieldWithDateParams
 }
 object PatchCustomFieldWithDateParams {
   
-  @scala.inline
-  def apply(): PatchCustomFieldWithDateParams = {
+  inline def apply(): PatchCustomFieldWithDateParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchCustomFieldWithDateParams]
   }
   
-  @scala.inline
-  implicit class PatchCustomFieldWithDateParamsMutableBuilder[Self <: PatchCustomFieldWithDateParams] (val x: Self) extends AnyVal {
+  extension [Self <: PatchCustomFieldWithDateParams](x: Self) {
     
-    @scala.inline
-    def setInitialDate(value: String): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+    inline def setInitialDate(value: String): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
+    inline def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
     
-    @scala.inline
-    def setInitialShift(value: Double): Self = StObject.set(x, "initialShift", value.asInstanceOf[js.Any])
+    inline def setInitialShift(value: Double): Self = StObject.set(x, "initialShift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialShiftUndefined: Self = StObject.set(x, "initialShift", js.undefined)
+    inline def setInitialShiftUndefined: Self = StObject.set(x, "initialShift", js.undefined)
     
-    @scala.inline
-    def setInitialValueType(value: Double): Self = StObject.set(x, "initialValueType", value.asInstanceOf[js.Any])
+    inline def setInitialValueType(value: Double): Self = StObject.set(x, "initialValueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialValueTypeUndefined: Self = StObject.set(x, "initialValueType", js.undefined)
+    inline def setInitialValueTypeUndefined: Self = StObject.set(x, "initialValueType", js.undefined)
     
-    @scala.inline
-    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

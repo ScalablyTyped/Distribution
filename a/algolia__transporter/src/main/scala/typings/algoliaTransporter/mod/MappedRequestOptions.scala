@@ -34,37 +34,27 @@ trait MappedRequestOptions extends StObject {
 }
 object MappedRequestOptions {
   
-  @scala.inline
-  def apply(headers: Record[String, String], queryParameters: Record[String, js.Any]): MappedRequestOptions = {
+  inline def apply(headers: Record[String, String], queryParameters: Record[String, js.Any]): MappedRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], queryParameters = queryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappedRequestOptions]
   }
   
-  @scala.inline
-  implicit class MappedRequestOptionsMutableBuilder[Self <: MappedRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MappedRequestOptions](x: Self) {
     
-    @scala.inline
-    def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
+    inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
+    inline def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
-    @scala.inline
-    def setData(value: Record[String, String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Record[String, String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryParameters(value: Record[String, js.Any]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: Record[String, js.Any]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

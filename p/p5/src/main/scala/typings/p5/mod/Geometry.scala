@@ -38,8 +38,7 @@ trait Geometry extends StObject {
 }
 object Geometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     averageNormals: () => Geometry,
     averagePoleNormals: () => Geometry,
     computeFaces: () => Geometry,
@@ -50,22 +49,16 @@ object Geometry {
     __obj.asInstanceOf[Geometry]
   }
   
-  @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+  extension [Self <: Geometry](x: Self) {
     
-    @scala.inline
-    def setAverageNormals(value: () => Geometry): Self = StObject.set(x, "averageNormals", js.Any.fromFunction0(value))
+    inline def setAverageNormals(value: () => Geometry): Self = StObject.set(x, "averageNormals", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAveragePoleNormals(value: () => Geometry): Self = StObject.set(x, "averagePoleNormals", js.Any.fromFunction0(value))
+    inline def setAveragePoleNormals(value: () => Geometry): Self = StObject.set(x, "averagePoleNormals", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComputeFaces(value: () => Geometry): Self = StObject.set(x, "computeFaces", js.Any.fromFunction0(value))
+    inline def setComputeFaces(value: () => Geometry): Self = StObject.set(x, "computeFaces", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComputeNormals(value: () => Geometry): Self = StObject.set(x, "computeNormals", js.Any.fromFunction0(value))
+    inline def setComputeNormals(value: () => Geometry): Self = StObject.set(x, "computeNormals", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNormalize(value: () => Geometry): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+    inline def setNormalize(value: () => Geometry): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
   }
 }

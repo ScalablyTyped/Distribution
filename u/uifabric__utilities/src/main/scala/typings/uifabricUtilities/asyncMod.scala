@@ -17,23 +17,23 @@ object asyncMod {
     def this(parent: js.Object, onError: js.Function1[/* e */ js.Any, Unit]) = this()
     def this(parent: Unit, onError: js.Function1[/* e */ js.Any, Unit]) = this()
     
-    var _animationFrameIds: js.Any = js.native
+    /* private */ var _animationFrameIds: js.Any = js.native
     
-    var _immediateIds: js.Any = js.native
+    /* private */ var _immediateIds: js.Any = js.native
     
-    var _intervalIds: js.Any = js.native
+    /* private */ var _intervalIds: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
     /* protected */ def _logError(e: js.Any): Unit = js.native
     
-    var _noop: js.Any = js.native
+    /* private */ var _noop: js.Any = js.native
     
-    var _onErrorHandler: js.Any = js.native
+    /* private */ var _onErrorHandler: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
-    var _timeoutIds: js.Any = js.native
+    /* private */ var _timeoutIds: js.Any = js.native
     
     def cancelAnimationFrame(id: Double): Unit = js.native
     def cancelAnimationFrame(id: Double, targetElement: Element): Unit = js.native
@@ -141,23 +141,18 @@ object asyncMod {
   }
   object ICancelable {
     
-    @scala.inline
-    def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](cancel: () => Unit, flush: () => ReturnType[T], pending: () => Boolean): ICancelable[T] = {
+    inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](cancel: () => Unit, flush: () => ReturnType[T], pending: () => Boolean): ICancelable[T] = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), flush = js.Any.fromFunction0(flush), pending = js.Any.fromFunction0(pending))
       __obj.asInstanceOf[ICancelable[T]]
     }
     
-    @scala.inline
-    implicit class ICancelableMutableBuilder[Self <: ICancelable[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & ICancelable[T]) extends AnyVal {
+    extension [Self <: ICancelable[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & ICancelable[T]) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFlush(value: () => ReturnType[T]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => ReturnType[T]): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPending(value: () => Boolean): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
+      inline def setPending(value: () => Boolean): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
     }
   }
 }

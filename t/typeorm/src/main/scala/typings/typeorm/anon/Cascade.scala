@@ -15,22 +15,17 @@ trait Cascade extends StObject {
 }
 object Cascade {
   
-  @scala.inline
-  def apply(): Cascade = {
+  inline def apply(): Cascade = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cascade]
   }
   
-  @scala.inline
-  implicit class CascadeMutableBuilder[Self <: Cascade] (val x: Self) extends AnyVal {
+  extension [Self <: Cascade](x: Self) {
     
-    @scala.inline
-    def setCascade(value: Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+    inline def setCascade(value: Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+    inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
     
-    @scala.inline
-    def setCascadeVarargs(value: (insert | update | remove | `soft-remove` | recover)*): Self = StObject.set(x, "cascade", js.Array(value :_*))
+    inline def setCascadeVarargs(value: (insert | update | remove | `soft-remove` | recover)*): Self = StObject.set(x, "cascade", js.Array(value :_*))
   }
 }

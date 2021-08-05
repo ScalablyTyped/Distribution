@@ -36,8 +36,7 @@ trait Scopable
      with _Node
 object Scopable {
   
-  @scala.inline
-  def ArrowFunctionExpression_(
+  inline def ArrowFunctionExpression_(
     async: Boolean,
     body: BlockStatement_ | Expression,
     expression: Boolean,
@@ -49,37 +48,32 @@ object Scopable {
     __obj.asInstanceOf[typings.babelTypes.mod.ArrowFunctionExpression_]
   }
   
-  @scala.inline
-  def BlockStatement_(body: js.Array[Statement], directives: js.Array[Directive_]): typings.babelTypes.mod.BlockStatement_ = {
+  inline def BlockStatement_(body: js.Array[Statement], directives: js.Array[Directive_]): typings.babelTypes.mod.BlockStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("BlockStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.BlockStatement_]
   }
   
-  @scala.inline
-  def CatchClause_(body: BlockStatement_): typings.babelTypes.mod.CatchClause_ = {
+  inline def CatchClause_(body: BlockStatement_): typings.babelTypes.mod.CatchClause_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, param = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("CatchClause")
     __obj.asInstanceOf[typings.babelTypes.mod.CatchClause_]
   }
   
-  @scala.inline
-  def ClassDeclaration_(body: ClassBody_, id: Identifier_): typings.babelTypes.mod.ClassDeclaration_ = {
+  inline def ClassDeclaration_(body: ClassBody_, id: Identifier_): typings.babelTypes.mod.ClassDeclaration_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], declare = null, decorators = null, end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, superClass = null, superTypeParameters = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("ClassDeclaration")
     __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.ClassDeclaration_]
   }
   
-  @scala.inline
-  def ClassExpression_(body: ClassBody_): typings.babelTypes.mod.ClassExpression_ = {
+  inline def ClassExpression_(body: ClassBody_): typings.babelTypes.mod.ClassExpression_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], decorators = null, end = null, id = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, superClass = null, superTypeParameters = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("ClassExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.ClassExpression_]
   }
   
-  @scala.inline
-  def ClassMethod_(
+  inline def ClassMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -95,8 +89,7 @@ object Scopable {
     __obj.asInstanceOf[typings.babelTypes.mod.ClassMethod_]
   }
   
-  @scala.inline
-  def ClassPrivateMethod_(
+  inline def ClassPrivateMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -112,36 +105,31 @@ object Scopable {
     __obj.asInstanceOf[typings.babelTypes.mod.ClassPrivateMethod_]
   }
   
-  @scala.inline
-  def DoWhileStatement_(body: Statement, test: Expression): typings.babelTypes.mod.DoWhileStatement_ = {
+  inline def DoWhileStatement_(body: Statement, test: Expression): typings.babelTypes.mod.DoWhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.DoWhileStatement_]
   }
   
-  @scala.inline
-  def ForInStatement_(body: Statement, left: VariableDeclaration_ | LVal, right: Expression): typings.babelTypes.mod.ForInStatement_ = {
+  inline def ForInStatement_(body: Statement, left: VariableDeclaration_ | LVal, right: Expression): typings.babelTypes.mod.ForInStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ForInStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.ForInStatement_]
   }
   
-  @scala.inline
-  def ForOfStatement_(await: Boolean, body: Statement, left: VariableDeclaration_ | LVal, right: Expression): typings.babelTypes.mod.ForOfStatement_ = {
+  inline def ForOfStatement_(await: Boolean, body: Statement, left: VariableDeclaration_ | LVal, right: Expression): typings.babelTypes.mod.ForOfStatement_ = {
     val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ForOfStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.ForOfStatement_]
   }
   
-  @scala.inline
-  def ForStatement_(body: Statement): typings.babelTypes.mod.ForStatement_ = {
+  inline def ForStatement_(body: Statement): typings.babelTypes.mod.ForStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, init = null, innerComments = null, leadingComments = null, loc = null, start = null, test = null, trailingComments = null, update = null)
     __obj.updateDynamic("type")("ForStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.ForStatement_]
   }
   
-  @scala.inline
-  def FunctionDeclaration_(
+  inline def FunctionDeclaration_(
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
@@ -152,8 +140,7 @@ object Scopable {
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionDeclaration_]
   }
   
-  @scala.inline
-  def FunctionExpression_(
+  inline def FunctionExpression_(
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
@@ -164,8 +151,7 @@ object Scopable {
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionExpression_]
   }
   
-  @scala.inline
-  def ObjectMethod_(
+  inline def ObjectMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -179,8 +165,7 @@ object Scopable {
     __obj.asInstanceOf[typings.babelTypes.mod.ObjectMethod_]
   }
   
-  @scala.inline
-  def Program_(
+  inline def Program_(
     body: js.Array[Statement],
     directives: js.Array[Directive_],
     sourceFile: String,
@@ -191,29 +176,25 @@ object Scopable {
     __obj.asInstanceOf[typings.babelTypes.mod.Program_]
   }
   
-  @scala.inline
-  def StaticBlock_(body: js.Array[Statement]): typings.babelTypes.mod.StaticBlock_ = {
+  inline def StaticBlock_(body: js.Array[Statement]): typings.babelTypes.mod.StaticBlock_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("StaticBlock")
     __obj.asInstanceOf[typings.babelTypes.mod.StaticBlock_]
   }
   
-  @scala.inline
-  def SwitchStatement_(cases: js.Array[SwitchCase_], discriminant: Expression): typings.babelTypes.mod.SwitchStatement_ = {
+  inline def SwitchStatement_(cases: js.Array[SwitchCase_], discriminant: Expression): typings.babelTypes.mod.SwitchStatement_ = {
     val __obj = js.Dynamic.literal(cases = cases.asInstanceOf[js.Any], discriminant = discriminant.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("SwitchStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.SwitchStatement_]
   }
   
-  @scala.inline
-  def TSModuleBlock_(body: js.Array[Statement]): typings.babelTypes.mod.TSModuleBlock_ = {
+  inline def TSModuleBlock_(body: js.Array[Statement]): typings.babelTypes.mod.TSModuleBlock_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSModuleBlock")
     __obj.asInstanceOf[typings.babelTypes.mod.TSModuleBlock_]
   }
   
-  @scala.inline
-  def WhileStatement_(body: Statement, test: Expression): typings.babelTypes.mod.WhileStatement_ = {
+  inline def WhileStatement_(body: Statement, test: Expression): typings.babelTypes.mod.WhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.WhileStatement_]

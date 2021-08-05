@@ -18,28 +18,21 @@ trait SolutionStackDescription extends StObject {
 }
 object SolutionStackDescription {
   
-  @scala.inline
-  def apply(): SolutionStackDescription = {
+  inline def apply(): SolutionStackDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SolutionStackDescription]
   }
   
-  @scala.inline
-  implicit class SolutionStackDescriptionMutableBuilder[Self <: SolutionStackDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SolutionStackDescription](x: Self) {
     
-    @scala.inline
-    def setPermittedFileTypes(value: SolutionStackFileTypeList): Self = StObject.set(x, "PermittedFileTypes", value.asInstanceOf[js.Any])
+    inline def setPermittedFileTypes(value: SolutionStackFileTypeList): Self = StObject.set(x, "PermittedFileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermittedFileTypesUndefined: Self = StObject.set(x, "PermittedFileTypes", js.undefined)
+    inline def setPermittedFileTypesUndefined: Self = StObject.set(x, "PermittedFileTypes", js.undefined)
     
-    @scala.inline
-    def setPermittedFileTypesVarargs(value: FileTypeExtension*): Self = StObject.set(x, "PermittedFileTypes", js.Array(value :_*))
+    inline def setPermittedFileTypesVarargs(value: FileTypeExtension*): Self = StObject.set(x, "PermittedFileTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setSolutionStackName(value: SolutionStackName): Self = StObject.set(x, "SolutionStackName", value.asInstanceOf[js.Any])
+    inline def setSolutionStackName(value: SolutionStackName): Self = StObject.set(x, "SolutionStackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionStackNameUndefined: Self = StObject.set(x, "SolutionStackName", js.undefined)
+    inline def setSolutionStackNameUndefined: Self = StObject.set(x, "SolutionStackName", js.undefined)
   }
 }

@@ -12,22 +12,17 @@ trait UntrashParameters extends StObject {
 }
 object UntrashParameters {
   
-  @scala.inline
-  def apply(fileId: String): UntrashParameters = {
+  inline def apply(fileId: String): UntrashParameters = {
     val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntrashParameters]
   }
   
-  @scala.inline
-  implicit class UntrashParametersMutableBuilder[Self <: UntrashParameters] (val x: Self) extends AnyVal {
+  extension [Self <: UntrashParameters](x: Self) {
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait SyncStatus extends StObject {
 }
 object SyncStatus {
   
-  @scala.inline
-  def apply(): SyncStatus = {
+  inline def apply(): SyncStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncStatus]
   }
   
-  @scala.inline
-  implicit class SyncStatusMutableBuilder[Self <: SyncStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SyncStatus](x: Self) {
     
-    @scala.inline
-    def setMergeConflict(value: Boolean): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
+    inline def setMergeConflict(value: Boolean): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
+    inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
-    @scala.inline
-    def setSyncError(value: Boolean): Self = StObject.set(x, "syncError", value.asInstanceOf[js.Any])
+    inline def setSyncError(value: Boolean): Self = StObject.set(x, "syncError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncErrorUndefined: Self = StObject.set(x, "syncError", js.undefined)
+    inline def setSyncErrorUndefined: Self = StObject.set(x, "syncError", js.undefined)
   }
 }

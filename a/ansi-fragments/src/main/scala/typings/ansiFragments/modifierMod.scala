@@ -21,13 +21,12 @@ object modifierMod {
     /* CompleteClass */
     override def build(): String = js.native
     
-    val children: js.Any = js.native
+    /* private */ val children: js.Any = js.native
     
-    val modifier: js.Any = js.native
+    /* private */ val modifier: js.Any = js.native
   }
   
-  @scala.inline
-  def modifier(ansiModifier: AnsiModifier, children: (String | IFragment)*): Modifier_ = (^.asInstanceOf[js.Dynamic].applyDynamic("modifier")(ansiModifier.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Modifier_]
+  inline def modifier(ansiModifier: AnsiModifier, children: (String | IFragment)*): Modifier_ = (^.asInstanceOf[js.Dynamic].applyDynamic("modifier")(ansiModifier.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Modifier_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiFragments.ansiFragmentsStrings.dim
@@ -41,25 +40,18 @@ object modifierMod {
   trait AnsiModifier extends StObject
   object AnsiModifier {
     
-    @scala.inline
-    def bold: typings.ansiFragments.ansiFragmentsStrings.bold = "bold".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bold]
+    inline def bold: typings.ansiFragments.ansiFragmentsStrings.bold = "bold".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.bold]
     
-    @scala.inline
-    def dim: typings.ansiFragments.ansiFragmentsStrings.dim = "dim".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.dim]
+    inline def dim: typings.ansiFragments.ansiFragmentsStrings.dim = "dim".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.dim]
     
-    @scala.inline
-    def hidden: typings.ansiFragments.ansiFragmentsStrings.hidden = "hidden".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.hidden]
+    inline def hidden: typings.ansiFragments.ansiFragmentsStrings.hidden = "hidden".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.hidden]
     
-    @scala.inline
-    def italic: typings.ansiFragments.ansiFragmentsStrings.italic = "italic".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.italic]
+    inline def italic: typings.ansiFragments.ansiFragmentsStrings.italic = "italic".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.italic]
     
-    @scala.inline
-    def none: typings.ansiFragments.ansiFragmentsStrings.none = "none".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.none]
+    inline def none: typings.ansiFragments.ansiFragmentsStrings.none = "none".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.none]
     
-    @scala.inline
-    def strikethrough: typings.ansiFragments.ansiFragmentsStrings.strikethrough = "strikethrough".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.strikethrough]
+    inline def strikethrough: typings.ansiFragments.ansiFragmentsStrings.strikethrough = "strikethrough".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.strikethrough]
     
-    @scala.inline
-    def underline: typings.ansiFragments.ansiFragmentsStrings.underline = "underline".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.underline]
+    inline def underline: typings.ansiFragments.ansiFragmentsStrings.underline = "underline".asInstanceOf[typings.ansiFragments.ansiFragmentsStrings.underline]
   }
 }

@@ -12,10 +12,8 @@ object testMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def add(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def add(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def remove(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def remove(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

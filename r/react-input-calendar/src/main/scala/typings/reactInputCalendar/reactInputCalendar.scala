@@ -108,106 +108,74 @@ object reactInputCalendar {
   }
   object ReactInputCalendarProps {
     
-    @scala.inline
-    def apply(): ReactInputCalendarProps = {
+    inline def apply(): ReactInputCalendarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactInputCalendarProps]
     }
     
-    @scala.inline
-    implicit class ReactInputCalendarPropsMutableBuilder[Self <: ReactInputCalendarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactInputCalendarProps](x: Self) {
       
-      @scala.inline
-      def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
+      inline def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
+      inline def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
       
-      @scala.inline
-      def setComputableFormat(value: String): Self = StObject.set(x, "computableFormat", value.asInstanceOf[js.Any])
+      inline def setComputableFormat(value: String): Self = StObject.set(x, "computableFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputableFormatUndefined: Self = StObject.set(x, "computableFormat", js.undefined)
+      inline def setComputableFormatUndefined: Self = StObject.set(x, "computableFormat", js.undefined)
       
-      @scala.inline
-      def setDate(value: String | Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String | Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setInputFieldClass(value: String): Self = StObject.set(x, "inputFieldClass", value.asInstanceOf[js.Any])
+      inline def setInputFieldClass(value: String): Self = StObject.set(x, "inputFieldClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputFieldClassUndefined: Self = StObject.set(x, "inputFieldClass", js.undefined)
+      inline def setInputFieldClassUndefined: Self = StObject.set(x, "inputFieldClass", js.undefined)
       
-      @scala.inline
-      def setInputFieldId(value: String): Self = StObject.set(x, "inputFieldId", value.asInstanceOf[js.Any])
+      inline def setInputFieldId(value: String): Self = StObject.set(x, "inputFieldId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputFieldIdUndefined: Self = StObject.set(x, "inputFieldId", js.undefined)
+      inline def setInputFieldIdUndefined: Self = StObject.set(x, "inputFieldId", js.undefined)
       
-      @scala.inline
-      def setMaxDate(value: String | Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: String | Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+      inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      @scala.inline
-      def setMinDate(value: String | Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: String | Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+      inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      @scala.inline
-      def setMinView(value: Double): Self = StObject.set(x, "minView", value.asInstanceOf[js.Any])
+      inline def setMinView(value: Double): Self = StObject.set(x, "minView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinViewUndefined: Self = StObject.set(x, "minView", js.undefined)
+      inline def setMinViewUndefined: Self = StObject.set(x, "minView", js.undefined)
       
-      @scala.inline
-      def setOnBlur(
+      inline def setOnBlur(
         value: (/* event */ SyntheticEvent[ReactInputCalendar, Event], /* computableDate */ String) => Unit
       ): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* computableDate */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* computableDate */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: /* event */ SyntheticEvent[ReactInputCalendar, Event] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* event */ SyntheticEvent[ReactInputCalendar, Event] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOpenOnInputFocus(value: Boolean): Self = StObject.set(x, "openOnInputFocus", value.asInstanceOf[js.Any])
+      inline def setOpenOnInputFocus(value: Boolean): Self = StObject.set(x, "openOnInputFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenOnInputFocusUndefined: Self = StObject.set(x, "openOnInputFocus", js.undefined)
+      inline def setOpenOnInputFocusUndefined: Self = StObject.set(x, "openOnInputFocus", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     }
   }
   

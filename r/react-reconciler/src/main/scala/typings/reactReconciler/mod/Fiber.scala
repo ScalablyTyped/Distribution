@@ -139,8 +139,7 @@ trait Fiber extends StObject {
 }
 object Fiber {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childExpirationTime: ExpirationTime,
     effectTag: SideEffectTag,
     elementType: js.Any,
@@ -160,163 +159,110 @@ object Fiber {
     __obj.asInstanceOf[Fiber]
   }
   
-  @scala.inline
-  implicit class FiberMutableBuilder[Self <: Fiber] (val x: Self) extends AnyVal {
+  extension [Self <: Fiber](x: Self) {
     
-    @scala.inline
-    def setActualDuration(value: Double): Self = StObject.set(x, "actualDuration", value.asInstanceOf[js.Any])
+    inline def setActualDuration(value: Double): Self = StObject.set(x, "actualDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualDurationUndefined: Self = StObject.set(x, "actualDuration", js.undefined)
+    inline def setActualDurationUndefined: Self = StObject.set(x, "actualDuration", js.undefined)
     
-    @scala.inline
-    def setActualStartTime(value: Double): Self = StObject.set(x, "actualStartTime", value.asInstanceOf[js.Any])
+    inline def setActualStartTime(value: Double): Self = StObject.set(x, "actualStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualStartTimeUndefined: Self = StObject.set(x, "actualStartTime", js.undefined)
+    inline def setActualStartTimeUndefined: Self = StObject.set(x, "actualStartTime", js.undefined)
     
-    @scala.inline
-    def setAlternate(value: Fiber): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: Fiber): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateNull: Self = StObject.set(x, "alternate", null)
+    inline def setAlternateNull: Self = StObject.set(x, "alternate", null)
     
-    @scala.inline
-    def setChild(value: Fiber): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+    inline def setChild(value: Fiber): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildExpirationTime(value: ExpirationTime): Self = StObject.set(x, "childExpirationTime", value.asInstanceOf[js.Any])
+    inline def setChildExpirationTime(value: ExpirationTime): Self = StObject.set(x, "childExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNull: Self = StObject.set(x, "child", null)
+    inline def setChildNull: Self = StObject.set(x, "child", null)
     
-    @scala.inline
-    def setEffectTag(value: SideEffectTag): Self = StObject.set(x, "effectTag", value.asInstanceOf[js.Any])
+    inline def setEffectTag(value: SideEffectTag): Self = StObject.set(x, "effectTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementType(value: js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTime(value: ExpirationTime): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: ExpirationTime): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstContextDependency(value: ContextDependency[js.Any]): Self = StObject.set(x, "firstContextDependency", value.asInstanceOf[js.Any])
+    inline def setFirstContextDependency(value: ContextDependency[js.Any]): Self = StObject.set(x, "firstContextDependency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstContextDependencyNull: Self = StObject.set(x, "firstContextDependency", null)
+    inline def setFirstContextDependencyNull: Self = StObject.set(x, "firstContextDependency", null)
     
-    @scala.inline
-    def setFirstEffect(value: Fiber): Self = StObject.set(x, "firstEffect", value.asInstanceOf[js.Any])
+    inline def setFirstEffect(value: Fiber): Self = StObject.set(x, "firstEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstEffectNull: Self = StObject.set(x, "firstEffect", null)
+    inline def setFirstEffectNull: Self = StObject.set(x, "firstEffect", null)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNull: Self = StObject.set(x, "key", null)
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    @scala.inline
-    def setLastEffect(value: Fiber): Self = StObject.set(x, "lastEffect", value.asInstanceOf[js.Any])
+    inline def setLastEffect(value: Fiber): Self = StObject.set(x, "lastEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEffectNull: Self = StObject.set(x, "lastEffect", null)
+    inline def setLastEffectNull: Self = StObject.set(x, "lastEffect", null)
     
-    @scala.inline
-    def setMemoizedProps(value: js.Any): Self = StObject.set(x, "memoizedProps", value.asInstanceOf[js.Any])
+    inline def setMemoizedProps(value: js.Any): Self = StObject.set(x, "memoizedProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoizedState(value: js.Any): Self = StObject.set(x, "memoizedState", value.asInstanceOf[js.Any])
+    inline def setMemoizedState(value: js.Any): Self = StObject.set(x, "memoizedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: TypeOfMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: TypeOfMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextEffect(value: Fiber): Self = StObject.set(x, "nextEffect", value.asInstanceOf[js.Any])
+    inline def setNextEffect(value: Fiber): Self = StObject.set(x, "nextEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextEffectNull: Self = StObject.set(x, "nextEffect", null)
+    inline def setNextEffectNull: Self = StObject.set(x, "nextEffect", null)
     
-    @scala.inline
-    def setPendingProps(value: js.Any): Self = StObject.set(x, "pendingProps", value.asInstanceOf[js.Any])
+    inline def setPendingProps(value: js.Any): Self = StObject.set(x, "pendingProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: ((js.Function1[/* handle */ js.Any, Unit]) & StringRef) | RefObject): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: ((js.Function1[/* handle */ js.Any, Unit]) & StringRef) | RefObject): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefNull: Self = StObject.set(x, "ref", null)
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
     
-    @scala.inline
-    def setReturn(value: Fiber): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Fiber): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnNull: Self = StObject.set(x, "return", null)
+    inline def setReturnNull: Self = StObject.set(x, "return", null)
     
-    @scala.inline
-    def setSelfBaseDuration(value: Double): Self = StObject.set(x, "selfBaseDuration", value.asInstanceOf[js.Any])
+    inline def setSelfBaseDuration(value: Double): Self = StObject.set(x, "selfBaseDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfBaseDurationUndefined: Self = StObject.set(x, "selfBaseDuration", js.undefined)
+    inline def setSelfBaseDurationUndefined: Self = StObject.set(x, "selfBaseDuration", js.undefined)
     
-    @scala.inline
-    def setSibling(value: Fiber): Self = StObject.set(x, "sibling", value.asInstanceOf[js.Any])
+    inline def setSibling(value: Fiber): Self = StObject.set(x, "sibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiblingNull: Self = StObject.set(x, "sibling", null)
+    inline def setSiblingNull: Self = StObject.set(x, "sibling", null)
     
-    @scala.inline
-    def setStateNode(value: js.Any): Self = StObject.set(x, "stateNode", value.asInstanceOf[js.Any])
+    inline def setStateNode(value: js.Any): Self = StObject.set(x, "stateNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: WorkTag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: WorkTag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeBaseDuration(value: Double): Self = StObject.set(x, "treeBaseDuration", value.asInstanceOf[js.Any])
+    inline def setTreeBaseDuration(value: Double): Self = StObject.set(x, "treeBaseDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeBaseDurationUndefined: Self = StObject.set(x, "treeBaseDuration", js.undefined)
+    inline def setTreeBaseDurationUndefined: Self = StObject.set(x, "treeBaseDuration", js.undefined)
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateQueue(value: UpdateQueue[js.Any]): Self = StObject.set(x, "updateQueue", value.asInstanceOf[js.Any])
+    inline def setUpdateQueue(value: UpdateQueue[js.Any]): Self = StObject.set(x, "updateQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateQueueNull: Self = StObject.set(x, "updateQueue", null)
+    inline def setUpdateQueueNull: Self = StObject.set(x, "updateQueue", null)
     
-    @scala.inline
-    def set_debugID(value: Double): Self = StObject.set(x, "_debugID", value.asInstanceOf[js.Any])
+    inline def set_debugID(value: Double): Self = StObject.set(x, "_debugID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_debugIDUndefined: Self = StObject.set(x, "_debugID", js.undefined)
+    inline def set_debugIDUndefined: Self = StObject.set(x, "_debugID", js.undefined)
     
-    @scala.inline
-    def set_debugIsCurrentlyTiming(value: Boolean): Self = StObject.set(x, "_debugIsCurrentlyTiming", value.asInstanceOf[js.Any])
+    inline def set_debugIsCurrentlyTiming(value: Boolean): Self = StObject.set(x, "_debugIsCurrentlyTiming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_debugIsCurrentlyTimingUndefined: Self = StObject.set(x, "_debugIsCurrentlyTiming", js.undefined)
+    inline def set_debugIsCurrentlyTimingUndefined: Self = StObject.set(x, "_debugIsCurrentlyTiming", js.undefined)
     
-    @scala.inline
-    def set_debugOwner(value: Fiber): Self = StObject.set(x, "_debugOwner", value.asInstanceOf[js.Any])
+    inline def set_debugOwner(value: Fiber): Self = StObject.set(x, "_debugOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_debugOwnerNull: Self = StObject.set(x, "_debugOwner", null)
+    inline def set_debugOwnerNull: Self = StObject.set(x, "_debugOwner", null)
     
-    @scala.inline
-    def set_debugOwnerUndefined: Self = StObject.set(x, "_debugOwner", js.undefined)
+    inline def set_debugOwnerUndefined: Self = StObject.set(x, "_debugOwner", js.undefined)
     
-    @scala.inline
-    def set_debugSource(value: Source): Self = StObject.set(x, "_debugSource", value.asInstanceOf[js.Any])
+    inline def set_debugSource(value: Source): Self = StObject.set(x, "_debugSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_debugSourceNull: Self = StObject.set(x, "_debugSource", null)
+    inline def set_debugSourceNull: Self = StObject.set(x, "_debugSource", null)
     
-    @scala.inline
-    def set_debugSourceUndefined: Self = StObject.set(x, "_debugSource", js.undefined)
+    inline def set_debugSourceUndefined: Self = StObject.set(x, "_debugSource", js.undefined)
   }
 }

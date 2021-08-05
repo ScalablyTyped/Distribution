@@ -54,25 +54,19 @@ trait SchemaDuration extends StObject {
 }
 object SchemaDuration {
   
-  @scala.inline
-  def apply(): SchemaDuration = {
+  inline def apply(): SchemaDuration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDuration]
   }
   
-  @scala.inline
-  implicit class SchemaDurationMutableBuilder[Self <: SchemaDuration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDuration](x: Self) {
     
-    @scala.inline
-    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+    inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+    inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
-    @scala.inline
-    def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
   }
 }

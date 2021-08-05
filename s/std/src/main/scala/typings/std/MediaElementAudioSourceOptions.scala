@@ -10,16 +10,13 @@ trait MediaElementAudioSourceOptions extends StObject {
 }
 object MediaElementAudioSourceOptions {
   
-  @scala.inline
-  def apply(mediaElement: HTMLMediaElement): MediaElementAudioSourceOptions = {
+  inline def apply(mediaElement: HTMLMediaElement): MediaElementAudioSourceOptions = {
     val __obj = js.Dynamic.literal(mediaElement = mediaElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaElementAudioSourceOptions]
   }
   
-  @scala.inline
-  implicit class MediaElementAudioSourceOptionsMutableBuilder[Self <: MediaElementAudioSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MediaElementAudioSourceOptions](x: Self) {
     
-    @scala.inline
-    def setMediaElement(value: HTMLMediaElement): Self = StObject.set(x, "mediaElement", value.asInstanceOf[js.Any])
+    inline def setMediaElement(value: HTMLMediaElement): Self = StObject.set(x, "mediaElement", value.asInstanceOf[js.Any])
   }
 }

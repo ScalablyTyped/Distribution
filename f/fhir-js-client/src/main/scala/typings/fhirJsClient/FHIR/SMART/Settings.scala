@@ -27,19 +27,15 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  @scala.inline
-  def apply(fullSessionStorageSupport: Boolean, replaceBrowserHistory: Boolean): Settings = {
+  inline def apply(fullSessionStorageSupport: Boolean, replaceBrowserHistory: Boolean): Settings = {
     val __obj = js.Dynamic.literal(fullSessionStorageSupport = fullSessionStorageSupport.asInstanceOf[js.Any], replaceBrowserHistory = replaceBrowserHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setFullSessionStorageSupport(value: Boolean): Self = StObject.set(x, "fullSessionStorageSupport", value.asInstanceOf[js.Any])
+    inline def setFullSessionStorageSupport(value: Boolean): Self = StObject.set(x, "fullSessionStorageSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceBrowserHistory(value: Boolean): Self = StObject.set(x, "replaceBrowserHistory", value.asInstanceOf[js.Any])
+    inline def setReplaceBrowserHistory(value: Boolean): Self = StObject.set(x, "replaceBrowserHistory", value.asInstanceOf[js.Any])
   }
 }

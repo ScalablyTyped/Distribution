@@ -9,70 +9,57 @@ object vegaEmbedStrings {
   
   @js.native
   sealed trait center extends StObject
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait dark extends StObject
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait datum extends StObject
-  @scala.inline
-  def datum: datum = "datum".asInstanceOf[datum]
+  inline def datum: datum = "datum".asInstanceOf[datum]
   
   @js.native
   sealed trait datumDotdatum extends StObject
-  @scala.inline
-  def datumDotdatum: datumDotdatum = "datum.datum".asInstanceOf[datumDotdatum]
+  inline def datumDotdatum: datumDotdatum = "datum.datum".asInstanceOf[datumDotdatum]
   
   @js.native
   sealed trait excel extends StObject
-  @scala.inline
-  def excel: excel = "excel".asInstanceOf[excel]
+  inline def excel: excel = "excel".asInstanceOf[excel]
   
   @js.native
   sealed trait ggplot2 extends StObject
-  @scala.inline
-  def ggplot2: ggplot2 = "ggplot2".asInstanceOf[ggplot2]
+  inline def ggplot2: ggplot2 = "ggplot2".asInstanceOf[ggplot2]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait parent extends StObject
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
   sealed trait quartz extends StObject
-  @scala.inline
-  def quartz: quartz = "quartz".asInstanceOf[quartz]
+  inline def quartz: quartz = "quartz".asInstanceOf[quartz]
   
   @js.native
   sealed trait right extends StObject
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait vega
     extends StObject
        with Mode
-  @scala.inline
-  def vega: vega = "vega".asInstanceOf[vega]
+  inline def vega: vega = "vega".asInstanceOf[vega]
   
   @js.native
   sealed trait `vega-lite`
     extends StObject
        with Mode
-  @scala.inline
-  def `vega-lite`: `vega-lite` = "vega-lite".asInstanceOf[`vega-lite`]
+  inline def `vega-lite`: `vega-lite` = "vega-lite".asInstanceOf[`vega-lite`]
   
   @js.native
   sealed trait vox extends StObject
-  @scala.inline
-  def vox: vox = "vox".asInstanceOf[vox]
+  inline def vox: vox = "vox".asInstanceOf[vox]
 }

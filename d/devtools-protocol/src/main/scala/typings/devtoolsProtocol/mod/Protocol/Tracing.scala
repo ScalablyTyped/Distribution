@@ -36,32 +36,24 @@ object Tracing {
   }
   object BufferUsageEvent {
     
-    @scala.inline
-    def apply(): BufferUsageEvent = {
+    inline def apply(): BufferUsageEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BufferUsageEvent]
     }
     
-    @scala.inline
-    implicit class BufferUsageEventMutableBuilder[Self <: BufferUsageEvent] (val x: Self) extends AnyVal {
+    extension [Self <: BufferUsageEvent](x: Self) {
       
-      @scala.inline
-      def setEventCount(value: Double): Self = StObject.set(x, "eventCount", value.asInstanceOf[js.Any])
+      inline def setEventCount(value: Double): Self = StObject.set(x, "eventCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventCountUndefined: Self = StObject.set(x, "eventCount", js.undefined)
+      inline def setEventCountUndefined: Self = StObject.set(x, "eventCount", js.undefined)
       
-      @scala.inline
-      def setPercentFull(value: Double): Self = StObject.set(x, "percentFull", value.asInstanceOf[js.Any])
+      inline def setPercentFull(value: Double): Self = StObject.set(x, "percentFull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentFullUndefined: Self = StObject.set(x, "percentFull", js.undefined)
+      inline def setPercentFullUndefined: Self = StObject.set(x, "percentFull", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -71,20 +63,16 @@ object Tracing {
   }
   object DataCollectedEvent {
     
-    @scala.inline
-    def apply(value: js.Array[js.Any]): DataCollectedEvent = {
+    inline def apply(value: js.Array[js.Any]): DataCollectedEvent = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataCollectedEvent]
     }
     
-    @scala.inline
-    implicit class DataCollectedEventMutableBuilder[Self <: DataCollectedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DataCollectedEvent](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -97,20 +85,16 @@ object Tracing {
   }
   object GetCategoriesResponse {
     
-    @scala.inline
-    def apply(categories: js.Array[String]): GetCategoriesResponse = {
+    inline def apply(categories: js.Array[String]): GetCategoriesResponse = {
       val __obj = js.Dynamic.literal(categories = categories.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCategoriesResponse]
     }
     
-    @scala.inline
-    implicit class GetCategoriesResponseMutableBuilder[Self <: GetCategoriesResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetCategoriesResponse](x: Self) {
       
-      @scala.inline
-      def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     }
   }
   
@@ -125,17 +109,14 @@ object Tracing {
   }
   object RecordClockSyncMarkerRequest {
     
-    @scala.inline
-    def apply(syncId: String): RecordClockSyncMarkerRequest = {
+    inline def apply(syncId: String): RecordClockSyncMarkerRequest = {
       val __obj = js.Dynamic.literal(syncId = syncId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordClockSyncMarkerRequest]
     }
     
-    @scala.inline
-    implicit class RecordClockSyncMarkerRequestMutableBuilder[Self <: RecordClockSyncMarkerRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RecordClockSyncMarkerRequest](x: Self) {
       
-      @scala.inline
-      def setSyncId(value: String): Self = StObject.set(x, "syncId", value.asInstanceOf[js.Any])
+      inline def setSyncId(value: String): Self = StObject.set(x, "syncId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,20 +129,16 @@ object Tracing {
   }
   object RequestMemoryDumpRequest {
     
-    @scala.inline
-    def apply(): RequestMemoryDumpRequest = {
+    inline def apply(): RequestMemoryDumpRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestMemoryDumpRequest]
     }
     
-    @scala.inline
-    implicit class RequestMemoryDumpRequestMutableBuilder[Self <: RequestMemoryDumpRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RequestMemoryDumpRequest](x: Self) {
       
-      @scala.inline
-      def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
+      inline def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeterministicUndefined: Self = StObject.set(x, "deterministic", js.undefined)
+      inline def setDeterministicUndefined: Self = StObject.set(x, "deterministic", js.undefined)
     }
   }
   
@@ -179,20 +156,16 @@ object Tracing {
   }
   object RequestMemoryDumpResponse {
     
-    @scala.inline
-    def apply(dumpGuid: String, success: Boolean): RequestMemoryDumpResponse = {
+    inline def apply(dumpGuid: String, success: Boolean): RequestMemoryDumpResponse = {
       val __obj = js.Dynamic.literal(dumpGuid = dumpGuid.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestMemoryDumpResponse]
     }
     
-    @scala.inline
-    implicit class RequestMemoryDumpResponseMutableBuilder[Self <: RequestMemoryDumpResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RequestMemoryDumpResponse](x: Self) {
       
-      @scala.inline
-      def setDumpGuid(value: String): Self = StObject.set(x, "dumpGuid", value.asInstanceOf[js.Any])
+      inline def setDumpGuid(value: String): Self = StObject.set(x, "dumpGuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,56 +208,40 @@ object Tracing {
   }
   object StartRequest {
     
-    @scala.inline
-    def apply(): StartRequest = {
+    inline def apply(): StartRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartRequest]
     }
     
-    @scala.inline
-    implicit class StartRequestMutableBuilder[Self <: StartRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StartRequest](x: Self) {
       
-      @scala.inline
-      def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
+      inline def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUsageReportingIntervalUndefined: Self = StObject.set(x, "bufferUsageReportingInterval", js.undefined)
+      inline def setBufferUsageReportingIntervalUndefined: Self = StObject.set(x, "bufferUsageReportingInterval", js.undefined)
       
-      @scala.inline
-      def setCategories(value: String): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: String): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+      inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      @scala.inline
-      def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setStreamCompression(value: StreamCompression): Self = StObject.set(x, "streamCompression", value.asInstanceOf[js.Any])
+      inline def setStreamCompression(value: StreamCompression): Self = StObject.set(x, "streamCompression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamCompressionUndefined: Self = StObject.set(x, "streamCompression", js.undefined)
+      inline def setStreamCompressionUndefined: Self = StObject.set(x, "streamCompression", js.undefined)
       
-      @scala.inline
-      def setStreamFormat(value: StreamFormat): Self = StObject.set(x, "streamFormat", value.asInstanceOf[js.Any])
+      inline def setStreamFormat(value: StreamFormat): Self = StObject.set(x, "streamFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamFormatUndefined: Self = StObject.set(x, "streamFormat", js.undefined)
+      inline def setStreamFormatUndefined: Self = StObject.set(x, "streamFormat", js.undefined)
       
-      @scala.inline
-      def setTraceConfig(value: TraceConfig): Self = StObject.set(x, "traceConfig", value.asInstanceOf[js.Any])
+      inline def setTraceConfig(value: TraceConfig): Self = StObject.set(x, "traceConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceConfigUndefined: Self = StObject.set(x, "traceConfig", js.undefined)
+      inline def setTraceConfigUndefined: Self = StObject.set(x, "traceConfig", js.undefined)
       
-      @scala.inline
-      def setTransferMode(value: ReportEvents | ReturnAsStream): Self = StObject.set(x, "transferMode", value.asInstanceOf[js.Any])
+      inline def setTransferMode(value: ReportEvents | ReturnAsStream): Self = StObject.set(x, "transferMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferModeUndefined: Self = StObject.set(x, "transferMode", js.undefined)
+      inline def setTransferModeUndefined: Self = StObject.set(x, "transferMode", js.undefined)
     }
   }
   
@@ -295,11 +252,9 @@ object Tracing {
   trait StartRequestTransferMode extends StObject
   object StartRequestTransferMode {
     
-    @scala.inline
-    def ReportEvents: typings.devtoolsProtocol.devtoolsProtocolStrings.ReportEvents = "ReportEvents".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReportEvents]
+    inline def ReportEvents: typings.devtoolsProtocol.devtoolsProtocolStrings.ReportEvents = "ReportEvents".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReportEvents]
     
-    @scala.inline
-    def ReturnAsStream: typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsStream = "ReturnAsStream".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsStream]
+    inline def ReturnAsStream: typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsStream = "ReturnAsStream".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReturnAsStream]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -309,11 +264,9 @@ object Tracing {
   trait StreamCompression extends StObject
   object StreamCompression {
     
-    @scala.inline
-    def gzip: typings.devtoolsProtocol.devtoolsProtocolStrings.gzip = "gzip".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.gzip]
+    inline def gzip: typings.devtoolsProtocol.devtoolsProtocolStrings.gzip = "gzip".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.gzip]
     
-    @scala.inline
-    def none: none_ = "none".asInstanceOf[none_]
+    inline def none: none_ = "none".asInstanceOf[none_]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -323,11 +276,9 @@ object Tracing {
   trait StreamFormat extends StObject
   object StreamFormat {
     
-    @scala.inline
-    def json: typings.devtoolsProtocol.devtoolsProtocolStrings.json = "json".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.json]
+    inline def json: typings.devtoolsProtocol.devtoolsProtocolStrings.json = "json".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.json]
     
-    @scala.inline
-    def proto: typings.devtoolsProtocol.devtoolsProtocolStrings.proto = "proto".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.proto]
+    inline def proto: typings.devtoolsProtocol.devtoolsProtocolStrings.proto = "proto".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.proto]
   }
   
   trait TraceConfig extends StObject {
@@ -374,71 +325,50 @@ object Tracing {
   }
   object TraceConfig {
     
-    @scala.inline
-    def apply(): TraceConfig = {
+    inline def apply(): TraceConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TraceConfig]
     }
     
-    @scala.inline
-    implicit class TraceConfigMutableBuilder[Self <: TraceConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TraceConfig](x: Self) {
       
-      @scala.inline
-      def setEnableArgumentFilter(value: Boolean): Self = StObject.set(x, "enableArgumentFilter", value.asInstanceOf[js.Any])
+      inline def setEnableArgumentFilter(value: Boolean): Self = StObject.set(x, "enableArgumentFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableArgumentFilterUndefined: Self = StObject.set(x, "enableArgumentFilter", js.undefined)
+      inline def setEnableArgumentFilterUndefined: Self = StObject.set(x, "enableArgumentFilter", js.undefined)
       
-      @scala.inline
-      def setEnableSampling(value: Boolean): Self = StObject.set(x, "enableSampling", value.asInstanceOf[js.Any])
+      inline def setEnableSampling(value: Boolean): Self = StObject.set(x, "enableSampling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSamplingUndefined: Self = StObject.set(x, "enableSampling", js.undefined)
+      inline def setEnableSamplingUndefined: Self = StObject.set(x, "enableSampling", js.undefined)
       
-      @scala.inline
-      def setEnableSystrace(value: Boolean): Self = StObject.set(x, "enableSystrace", value.asInstanceOf[js.Any])
+      inline def setEnableSystrace(value: Boolean): Self = StObject.set(x, "enableSystrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSystraceUndefined: Self = StObject.set(x, "enableSystrace", js.undefined)
+      inline def setEnableSystraceUndefined: Self = StObject.set(x, "enableSystrace", js.undefined)
       
-      @scala.inline
-      def setExcludedCategories(value: js.Array[String]): Self = StObject.set(x, "excludedCategories", value.asInstanceOf[js.Any])
+      inline def setExcludedCategories(value: js.Array[String]): Self = StObject.set(x, "excludedCategories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludedCategoriesUndefined: Self = StObject.set(x, "excludedCategories", js.undefined)
+      inline def setExcludedCategoriesUndefined: Self = StObject.set(x, "excludedCategories", js.undefined)
       
-      @scala.inline
-      def setExcludedCategoriesVarargs(value: String*): Self = StObject.set(x, "excludedCategories", js.Array(value :_*))
+      inline def setExcludedCategoriesVarargs(value: String*): Self = StObject.set(x, "excludedCategories", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludedCategories(value: js.Array[String]): Self = StObject.set(x, "includedCategories", value.asInstanceOf[js.Any])
+      inline def setIncludedCategories(value: js.Array[String]): Self = StObject.set(x, "includedCategories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludedCategoriesUndefined: Self = StObject.set(x, "includedCategories", js.undefined)
+      inline def setIncludedCategoriesUndefined: Self = StObject.set(x, "includedCategories", js.undefined)
       
-      @scala.inline
-      def setIncludedCategoriesVarargs(value: String*): Self = StObject.set(x, "includedCategories", js.Array(value :_*))
+      inline def setIncludedCategoriesVarargs(value: String*): Self = StObject.set(x, "includedCategories", js.Array(value :_*))
       
-      @scala.inline
-      def setMemoryDumpConfig(value: MemoryDumpConfig): Self = StObject.set(x, "memoryDumpConfig", value.asInstanceOf[js.Any])
+      inline def setMemoryDumpConfig(value: MemoryDumpConfig): Self = StObject.set(x, "memoryDumpConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryDumpConfigUndefined: Self = StObject.set(x, "memoryDumpConfig", js.undefined)
+      inline def setMemoryDumpConfigUndefined: Self = StObject.set(x, "memoryDumpConfig", js.undefined)
       
-      @scala.inline
-      def setRecordMode(value: recordUntilFull | recordContinuously | recordAsMuchAsPossible | echoToConsole): Self = StObject.set(x, "recordMode", value.asInstanceOf[js.Any])
+      inline def setRecordMode(value: recordUntilFull | recordContinuously | recordAsMuchAsPossible | echoToConsole): Self = StObject.set(x, "recordMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordModeUndefined: Self = StObject.set(x, "recordMode", js.undefined)
+      inline def setRecordModeUndefined: Self = StObject.set(x, "recordMode", js.undefined)
       
-      @scala.inline
-      def setSyntheticDelays(value: js.Array[String]): Self = StObject.set(x, "syntheticDelays", value.asInstanceOf[js.Any])
+      inline def setSyntheticDelays(value: js.Array[String]): Self = StObject.set(x, "syntheticDelays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyntheticDelaysUndefined: Self = StObject.set(x, "syntheticDelays", js.undefined)
+      inline def setSyntheticDelaysUndefined: Self = StObject.set(x, "syntheticDelays", js.undefined)
       
-      @scala.inline
-      def setSyntheticDelaysVarargs(value: String*): Self = StObject.set(x, "syntheticDelays", js.Array(value :_*))
+      inline def setSyntheticDelaysVarargs(value: String*): Self = StObject.set(x, "syntheticDelays", js.Array(value :_*))
     }
   }
   
@@ -451,17 +381,13 @@ object Tracing {
   trait TraceConfigRecordMode extends StObject
   object TraceConfigRecordMode {
     
-    @scala.inline
-    def EchoToConsole: echoToConsole = "echoToConsole".asInstanceOf[echoToConsole]
+    inline def EchoToConsole: echoToConsole = "echoToConsole".asInstanceOf[echoToConsole]
     
-    @scala.inline
-    def RecordAsMuchAsPossible: recordAsMuchAsPossible = "recordAsMuchAsPossible".asInstanceOf[recordAsMuchAsPossible]
+    inline def RecordAsMuchAsPossible: recordAsMuchAsPossible = "recordAsMuchAsPossible".asInstanceOf[recordAsMuchAsPossible]
     
-    @scala.inline
-    def RecordContinuously: recordContinuously = "recordContinuously".asInstanceOf[recordContinuously]
+    inline def RecordContinuously: recordContinuously = "recordContinuously".asInstanceOf[recordContinuously]
     
-    @scala.inline
-    def RecordUntilFull: recordUntilFull = "recordUntilFull".asInstanceOf[recordUntilFull]
+    inline def RecordUntilFull: recordUntilFull = "recordUntilFull".asInstanceOf[recordUntilFull]
   }
   
   trait TracingCompleteEvent extends StObject {
@@ -489,35 +415,26 @@ object Tracing {
   }
   object TracingCompleteEvent {
     
-    @scala.inline
-    def apply(dataLossOccurred: Boolean): TracingCompleteEvent = {
+    inline def apply(dataLossOccurred: Boolean): TracingCompleteEvent = {
       val __obj = js.Dynamic.literal(dataLossOccurred = dataLossOccurred.asInstanceOf[js.Any])
       __obj.asInstanceOf[TracingCompleteEvent]
     }
     
-    @scala.inline
-    implicit class TracingCompleteEventMutableBuilder[Self <: TracingCompleteEvent] (val x: Self) extends AnyVal {
+    extension [Self <: TracingCompleteEvent](x: Self) {
       
-      @scala.inline
-      def setDataLossOccurred(value: Boolean): Self = StObject.set(x, "dataLossOccurred", value.asInstanceOf[js.Any])
+      inline def setDataLossOccurred(value: Boolean): Self = StObject.set(x, "dataLossOccurred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: StreamHandle): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamCompression(value: StreamCompression): Self = StObject.set(x, "streamCompression", value.asInstanceOf[js.Any])
+      inline def setStreamCompression(value: StreamCompression): Self = StObject.set(x, "streamCompression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamCompressionUndefined: Self = StObject.set(x, "streamCompression", js.undefined)
+      inline def setStreamCompressionUndefined: Self = StObject.set(x, "streamCompression", js.undefined)
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setTraceFormat(value: StreamFormat): Self = StObject.set(x, "traceFormat", value.asInstanceOf[js.Any])
+      inline def setTraceFormat(value: StreamFormat): Self = StObject.set(x, "traceFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceFormatUndefined: Self = StObject.set(x, "traceFormat", js.undefined)
+      inline def setTraceFormatUndefined: Self = StObject.set(x, "traceFormat", js.undefined)
     }
   }
 }

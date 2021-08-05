@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DOMException extends StObject {
   
-  @JSName("MSHTML.DOMException_typekey")
+  /* private */ @JSName("MSHTML.DOMException_typekey")
   var MSHTMLDotDOMException_typekey: DOMException
   
   var code: Double
@@ -15,23 +15,18 @@ trait DOMException extends StObject {
 }
 object DOMException {
   
-  @scala.inline
-  def apply(MSHTMLDotDOMException_typekey: DOMException, code: Double, message: String): DOMException = {
+  inline def apply(MSHTMLDotDOMException_typekey: DOMException, code: Double, message: String): DOMException = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.DOMException_typekey")(MSHTMLDotDOMException_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMException]
   }
   
-  @scala.inline
-  implicit class DOMExceptionMutableBuilder[Self <: DOMException] (val x: Self) extends AnyVal {
+  extension [Self <: DOMException](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotDOMException_typekey(value: DOMException): Self = StObject.set(x, "MSHTML.DOMException_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotDOMException_typekey(value: DOMException): Self = StObject.set(x, "MSHTML.DOMException_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

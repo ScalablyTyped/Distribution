@@ -27,24 +27,19 @@ object cloudwatch {
   }
   object EventPermissionCondition {
     
-    @scala.inline
-    def apply(key: Input[String], `type`: Input[String], value: Input[String]): EventPermissionCondition = {
+    inline def apply(key: Input[String], `type`: Input[String], value: Input[String]): EventPermissionCondition = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventPermissionCondition]
     }
     
-    @scala.inline
-    implicit class EventPermissionConditionMutableBuilder[Self <: EventPermissionCondition] (val x: Self) extends AnyVal {
+    extension [Self <: EventPermissionCondition](x: Self) {
       
-      @scala.inline
-      def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,32 +67,24 @@ object cloudwatch {
   }
   object EventTargetBatchTarget {
     
-    @scala.inline
-    def apply(jobDefinition: Input[String], jobName: Input[String]): EventTargetBatchTarget = {
+    inline def apply(jobDefinition: Input[String], jobName: Input[String]): EventTargetBatchTarget = {
       val __obj = js.Dynamic.literal(jobDefinition = jobDefinition.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventTargetBatchTarget]
     }
     
-    @scala.inline
-    implicit class EventTargetBatchTargetMutableBuilder[Self <: EventTargetBatchTarget] (val x: Self) extends AnyVal {
+    extension [Self <: EventTargetBatchTarget](x: Self) {
       
-      @scala.inline
-      def setArraySize(value: Input[Double]): Self = StObject.set(x, "arraySize", value.asInstanceOf[js.Any])
+      inline def setArraySize(value: Input[Double]): Self = StObject.set(x, "arraySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArraySizeUndefined: Self = StObject.set(x, "arraySize", js.undefined)
+      inline def setArraySizeUndefined: Self = StObject.set(x, "arraySize", js.undefined)
       
-      @scala.inline
-      def setJobAttempts(value: Input[Double]): Self = StObject.set(x, "jobAttempts", value.asInstanceOf[js.Any])
+      inline def setJobAttempts(value: Input[Double]): Self = StObject.set(x, "jobAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobAttemptsUndefined: Self = StObject.set(x, "jobAttempts", js.undefined)
+      inline def setJobAttemptsUndefined: Self = StObject.set(x, "jobAttempts", js.undefined)
       
-      @scala.inline
-      def setJobDefinition(value: Input[String]): Self = StObject.set(x, "jobDefinition", value.asInstanceOf[js.Any])
+      inline def setJobDefinition(value: Input[String]): Self = StObject.set(x, "jobDefinition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobName(value: Input[String]): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+      inline def setJobName(value: Input[String]): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,47 +122,34 @@ object cloudwatch {
   }
   object EventTargetEcsTarget {
     
-    @scala.inline
-    def apply(taskDefinitionArn: Input[String]): EventTargetEcsTarget = {
+    inline def apply(taskDefinitionArn: Input[String]): EventTargetEcsTarget = {
       val __obj = js.Dynamic.literal(taskDefinitionArn = taskDefinitionArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventTargetEcsTarget]
     }
     
-    @scala.inline
-    implicit class EventTargetEcsTargetMutableBuilder[Self <: EventTargetEcsTarget] (val x: Self) extends AnyVal {
+    extension [Self <: EventTargetEcsTarget](x: Self) {
       
-      @scala.inline
-      def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setLaunchType(value: Input[String]): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
+      inline def setLaunchType(value: Input[String]): Self = StObject.set(x, "launchType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
+      inline def setLaunchTypeUndefined: Self = StObject.set(x, "launchType", js.undefined)
       
-      @scala.inline
-      def setNetworkConfiguration(value: Input[EventTargetEcsTargetNetworkConfiguration]): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
+      inline def setNetworkConfiguration(value: Input[EventTargetEcsTargetNetworkConfiguration]): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
+      inline def setNetworkConfigurationUndefined: Self = StObject.set(x, "networkConfiguration", js.undefined)
       
-      @scala.inline
-      def setPlatformVersion(value: Input[String]): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
+      inline def setPlatformVersion(value: Input[String]): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
+      inline def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
       
-      @scala.inline
-      def setTaskCount(value: Input[Double]): Self = StObject.set(x, "taskCount", value.asInstanceOf[js.Any])
+      inline def setTaskCount(value: Input[Double]): Self = StObject.set(x, "taskCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskCountUndefined: Self = StObject.set(x, "taskCount", js.undefined)
+      inline def setTaskCountUndefined: Self = StObject.set(x, "taskCount", js.undefined)
       
-      @scala.inline
-      def setTaskDefinitionArn(value: Input[String]): Self = StObject.set(x, "taskDefinitionArn", value.asInstanceOf[js.Any])
+      inline def setTaskDefinitionArn(value: Input[String]): Self = StObject.set(x, "taskDefinitionArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,35 +172,26 @@ object cloudwatch {
   }
   object EventTargetEcsTargetNetworkConfiguration {
     
-    @scala.inline
-    def apply(subnets: Input[js.Array[Input[String]]]): EventTargetEcsTargetNetworkConfiguration = {
+    inline def apply(subnets: Input[js.Array[Input[String]]]): EventTargetEcsTargetNetworkConfiguration = {
       val __obj = js.Dynamic.literal(subnets = subnets.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventTargetEcsTargetNetworkConfiguration]
     }
     
-    @scala.inline
-    implicit class EventTargetEcsTargetNetworkConfigurationMutableBuilder[Self <: EventTargetEcsTargetNetworkConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: EventTargetEcsTargetNetworkConfiguration](x: Self) {
       
-      @scala.inline
-      def setAssignPublicIp(value: Input[Boolean]): Self = StObject.set(x, "assignPublicIp", value.asInstanceOf[js.Any])
+      inline def setAssignPublicIp(value: Input[Boolean]): Self = StObject.set(x, "assignPublicIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignPublicIpUndefined: Self = StObject.set(x, "assignPublicIp", js.undefined)
+      inline def setAssignPublicIpUndefined: Self = StObject.set(x, "assignPublicIp", js.undefined)
       
-      @scala.inline
-      def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
+      inline def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnets(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+      inline def setSubnets(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetsVarargs(value: Input[String]*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+      inline def setSubnetsVarargs(value: Input[String]*): Self = StObject.set(x, "subnets", js.Array(value :_*))
     }
   }
   
@@ -244,23 +209,18 @@ object cloudwatch {
   }
   object EventTargetInputTransformer {
     
-    @scala.inline
-    def apply(inputTemplate: Input[String]): EventTargetInputTransformer = {
+    inline def apply(inputTemplate: Input[String]): EventTargetInputTransformer = {
       val __obj = js.Dynamic.literal(inputTemplate = inputTemplate.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventTargetInputTransformer]
     }
     
-    @scala.inline
-    implicit class EventTargetInputTransformerMutableBuilder[Self <: EventTargetInputTransformer] (val x: Self) extends AnyVal {
+    extension [Self <: EventTargetInputTransformer](x: Self) {
       
-      @scala.inline
-      def setInputPaths(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "inputPaths", value.asInstanceOf[js.Any])
+      inline def setInputPaths(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "inputPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPathsUndefined: Self = StObject.set(x, "inputPaths", js.undefined)
+      inline def setInputPathsUndefined: Self = StObject.set(x, "inputPaths", js.undefined)
       
-      @scala.inline
-      def setInputTemplate(value: Input[String]): Self = StObject.set(x, "inputTemplate", value.asInstanceOf[js.Any])
+      inline def setInputTemplate(value: Input[String]): Self = StObject.set(x, "inputTemplate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,20 +233,16 @@ object cloudwatch {
   }
   object EventTargetKinesisTarget {
     
-    @scala.inline
-    def apply(): EventTargetKinesisTarget = {
+    inline def apply(): EventTargetKinesisTarget = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventTargetKinesisTarget]
     }
     
-    @scala.inline
-    implicit class EventTargetKinesisTargetMutableBuilder[Self <: EventTargetKinesisTarget] (val x: Self) extends AnyVal {
+    extension [Self <: EventTargetKinesisTarget](x: Self) {
       
-      @scala.inline
-      def setPartitionKeyPath(value: Input[String]): Self = StObject.set(x, "partitionKeyPath", value.asInstanceOf[js.Any])
+      inline def setPartitionKeyPath(value: Input[String]): Self = StObject.set(x, "partitionKeyPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitionKeyPathUndefined: Self = StObject.set(x, "partitionKeyPath", js.undefined)
+      inline def setPartitionKeyPathUndefined: Self = StObject.set(x, "partitionKeyPath", js.undefined)
     }
   }
   
@@ -304,23 +260,18 @@ object cloudwatch {
   }
   object EventTargetRunCommandTarget {
     
-    @scala.inline
-    def apply(key: Input[String], values: Input[js.Array[Input[String]]]): EventTargetRunCommandTarget = {
+    inline def apply(key: Input[String], values: Input[js.Array[Input[String]]]): EventTargetRunCommandTarget = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventTargetRunCommandTarget]
     }
     
-    @scala.inline
-    implicit class EventTargetRunCommandTargetMutableBuilder[Self <: EventTargetRunCommandTarget] (val x: Self) extends AnyVal {
+    extension [Self <: EventTargetRunCommandTarget](x: Self) {
       
-      @scala.inline
-      def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -333,20 +284,16 @@ object cloudwatch {
   }
   object EventTargetSqsTarget {
     
-    @scala.inline
-    def apply(): EventTargetSqsTarget = {
+    inline def apply(): EventTargetSqsTarget = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventTargetSqsTarget]
     }
     
-    @scala.inline
-    implicit class EventTargetSqsTargetMutableBuilder[Self <: EventTargetSqsTarget] (val x: Self) extends AnyVal {
+    extension [Self <: EventTargetSqsTarget](x: Self) {
       
-      @scala.inline
-      def setMessageGroupId(value: Input[String]): Self = StObject.set(x, "messageGroupId", value.asInstanceOf[js.Any])
+      inline def setMessageGroupId(value: Input[String]): Self = StObject.set(x, "messageGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageGroupIdUndefined: Self = StObject.set(x, "messageGroupId", js.undefined)
+      inline def setMessageGroupIdUndefined: Self = StObject.set(x, "messageGroupId", js.undefined)
     }
   }
   
@@ -374,29 +321,22 @@ object cloudwatch {
   }
   object LogMetricFilterMetricTransformation {
     
-    @scala.inline
-    def apply(name: Input[String], namespace: Input[String], value: Input[String]): LogMetricFilterMetricTransformation = {
+    inline def apply(name: Input[String], namespace: Input[String], value: Input[String]): LogMetricFilterMetricTransformation = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogMetricFilterMetricTransformation]
     }
     
-    @scala.inline
-    implicit class LogMetricFilterMetricTransformationMutableBuilder[Self <: LogMetricFilterMetricTransformation] (val x: Self) extends AnyVal {
+    extension [Self <: LogMetricFilterMetricTransformation](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: Input[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Input[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -429,41 +369,30 @@ object cloudwatch {
   }
   object MetricAlarmMetricQuery {
     
-    @scala.inline
-    def apply(id: Input[String]): MetricAlarmMetricQuery = {
+    inline def apply(id: Input[String]): MetricAlarmMetricQuery = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetricAlarmMetricQuery]
     }
     
-    @scala.inline
-    implicit class MetricAlarmMetricQueryMutableBuilder[Self <: MetricAlarmMetricQuery] (val x: Self) extends AnyVal {
+    extension [Self <: MetricAlarmMetricQuery](x: Self) {
       
-      @scala.inline
-      def setExpression(value: Input[String]): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: Input[String]): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+      inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
       
-      @scala.inline
-      def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: Input[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Input[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMetric(value: Input[MetricAlarmMetricQueryMetric]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+      inline def setMetric(value: Input[MetricAlarmMetricQueryMetric]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+      inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
       
-      @scala.inline
-      def setReturnData(value: Input[Boolean]): Self = StObject.set(x, "returnData", value.asInstanceOf[js.Any])
+      inline def setReturnData(value: Input[Boolean]): Self = StObject.set(x, "returnData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnDataUndefined: Self = StObject.set(x, "returnData", js.undefined)
+      inline def setReturnDataUndefined: Self = StObject.set(x, "returnData", js.undefined)
     }
   }
   
@@ -504,41 +433,30 @@ object cloudwatch {
   }
   object MetricAlarmMetricQueryMetric {
     
-    @scala.inline
-    def apply(metricName: Input[String], period: Input[Double], stat: Input[String]): MetricAlarmMetricQueryMetric = {
+    inline def apply(metricName: Input[String], period: Input[Double], stat: Input[String]): MetricAlarmMetricQueryMetric = {
       val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetricAlarmMetricQueryMetric]
     }
     
-    @scala.inline
-    implicit class MetricAlarmMetricQueryMetricMutableBuilder[Self <: MetricAlarmMetricQueryMetric] (val x: Self) extends AnyVal {
+    extension [Self <: MetricAlarmMetricQueryMetric](x: Self) {
       
-      @scala.inline
-      def setDimensions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      @scala.inline
-      def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+      inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setPeriod(value: Input[Double]): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: Input[Double]): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStat(value: Input[String]): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Input[String]): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnit(value: Input[String]): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: Input[String]): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
 }

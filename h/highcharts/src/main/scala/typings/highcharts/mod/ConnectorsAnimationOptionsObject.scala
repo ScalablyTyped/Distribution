@@ -10,19 +10,15 @@ trait ConnectorsAnimationOptionsObject extends StObject {
 }
 object ConnectorsAnimationOptionsObject {
   
-  @scala.inline
-  def apply(): ConnectorsAnimationOptionsObject = {
+  inline def apply(): ConnectorsAnimationOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectorsAnimationOptionsObject]
   }
   
-  @scala.inline
-  implicit class ConnectorsAnimationOptionsObjectMutableBuilder[Self <: ConnectorsAnimationOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorsAnimationOptionsObject](x: Self) {
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

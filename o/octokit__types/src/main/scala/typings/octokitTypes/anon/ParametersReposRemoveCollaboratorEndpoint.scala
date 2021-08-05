@@ -17,8 +17,7 @@ trait ParametersReposRemoveCollaboratorEndpoint extends StObject {
 }
 object ParametersReposRemoveCollaboratorEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposRemoveCollaboratorEndpoint,
     request: ReposRemoveCollaboratorRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersReposRemoveCollaboratorEndpoint {
     __obj.asInstanceOf[ParametersReposRemoveCollaboratorEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposRemoveCollaboratorEndpointMutableBuilder[Self <: ParametersReposRemoveCollaboratorEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposRemoveCollaboratorEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposRemoveCollaboratorEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposRemoveCollaboratorEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposRemoveCollaboratorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposRemoveCollaboratorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

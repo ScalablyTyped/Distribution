@@ -11,16 +11,13 @@ trait PickImplbackspace extends StObject {
 }
 object PickImplbackspace {
   
-  @scala.inline
-  def apply(backspace: Double): PickImplbackspace = {
+  inline def apply(backspace: Double): PickImplbackspace = {
     val __obj = js.Dynamic.literal(backspace = backspace.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbackspace]
   }
   
-  @scala.inline
-  implicit class PickImplbackspaceMutableBuilder[Self <: PickImplbackspace] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplbackspace](x: Self) {
     
-    @scala.inline
-    def setBackspace(value: Double): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
+    inline def setBackspace(value: Double): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
   }
 }

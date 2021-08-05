@@ -33,31 +33,23 @@ trait SchemaImportResourcesRequest extends StObject {
 }
 object SchemaImportResourcesRequest {
   
-  @scala.inline
-  def apply(): SchemaImportResourcesRequest = {
+  inline def apply(): SchemaImportResourcesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportResourcesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaImportResourcesRequestMutableBuilder[Self <: SchemaImportResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
+    inline def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentStructureUndefined: Self = StObject.set(x, "contentStructure", js.undefined)
+    inline def setContentStructureUndefined: Self = StObject.set(x, "contentStructure", js.undefined)
     
-    @scala.inline
-    def setGcsErrorLocation(value: SchemaGcsDataLocation): Self = StObject.set(x, "gcsErrorLocation", value.asInstanceOf[js.Any])
+    inline def setGcsErrorLocation(value: SchemaGcsDataLocation): Self = StObject.set(x, "gcsErrorLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsErrorLocationUndefined: Self = StObject.set(x, "gcsErrorLocation", js.undefined)
+    inline def setGcsErrorLocationUndefined: Self = StObject.set(x, "gcsErrorLocation", js.undefined)
     
-    @scala.inline
-    def setGcsSourceLocation(value: SchemaGcsDataLocation): Self = StObject.set(x, "gcsSourceLocation", value.asInstanceOf[js.Any])
+    inline def setGcsSourceLocation(value: SchemaGcsDataLocation): Self = StObject.set(x, "gcsSourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceLocationUndefined: Self = StObject.set(x, "gcsSourceLocation", js.undefined)
+    inline def setGcsSourceLocationUndefined: Self = StObject.set(x, "gcsSourceLocation", js.undefined)
   }
 }

@@ -13,20 +13,16 @@ trait ILanIdentifierData extends StObject {
 }
 object ILanIdentifierData {
   
-  @scala.inline
-  def apply(`type`: Double, value: IVectorView[Double]): ILanIdentifierData = {
+  inline def apply(`type`: Double, value: IVectorView[Double]): ILanIdentifierData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILanIdentifierData]
   }
   
-  @scala.inline
-  implicit class ILanIdentifierDataMutableBuilder[Self <: ILanIdentifierData] (val x: Self) extends AnyVal {
+  extension [Self <: ILanIdentifierData](x: Self) {
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: IVectorView[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: IVectorView[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

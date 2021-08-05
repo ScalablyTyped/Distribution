@@ -67,55 +67,40 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAppendNext(value: Boolean | String): Self = StObject.set(x, "appendNext", value.asInstanceOf[js.Any])
+      inline def setAppendNext(value: Boolean | String): Self = StObject.set(x, "appendNext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendNextUndefined: Self = StObject.set(x, "appendNext", js.undefined)
+      inline def setAppendNextUndefined: Self = StObject.set(x, "appendNext", js.undefined)
       
-      @scala.inline
-      def setCookie(value: ServerStateCookieOptionsn): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: ServerStateCookieOptionsn): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+      inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
+      inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
       
-      @scala.inline
-      def setRedirectTo(value: String | RedirectToFunction): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
+      inline def setRedirectTo(value: String | RedirectToFunction): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectToFunction1(value: /* request */ js.UndefOr[Request] => String): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
+      inline def setRedirectToFunction1(value: /* request */ js.UndefOr[Request] => String): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
+      inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
       
-      @scala.inline
-      def setRequestDecoratorName(value: String): Self = StObject.set(x, "requestDecoratorName", value.asInstanceOf[js.Any])
+      inline def setRequestDecoratorName(value: String): Self = StObject.set(x, "requestDecoratorName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDecoratorNameUndefined: Self = StObject.set(x, "requestDecoratorName", js.undefined)
+      inline def setRequestDecoratorNameUndefined: Self = StObject.set(x, "requestDecoratorName", js.undefined)
       
-      @scala.inline
-      def setValidateFunc(
+      inline def setValidateFunc(
         value: (/* request */ js.UndefOr[Request], /* session */ js.UndefOr[js.Object]) => js.Promise[ValidateResponse]
       ): Self = StObject.set(x, "validateFunc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValidateFuncUndefined: Self = StObject.set(x, "validateFunc", js.undefined)
+      inline def setValidateFuncUndefined: Self = StObject.set(x, "validateFunc", js.undefined)
     }
   }
   
@@ -135,23 +120,18 @@ object mod extends Shortcut {
   }
   object ValidateResponse {
     
-    @scala.inline
-    def apply(valid: Boolean): ValidateResponse = {
+    inline def apply(valid: Boolean): ValidateResponse = {
       val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidateResponse]
     }
     
-    @scala.inline
-    implicit class ValidateResponseMutableBuilder[Self <: ValidateResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateResponse](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: AuthCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: AuthCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,20 +149,16 @@ object mod extends Shortcut {
     }
     object PluginSpecificConfiguration {
       
-      @scala.inline
-      def apply(): PluginSpecificConfiguration = {
+      inline def apply(): PluginSpecificConfiguration = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PluginSpecificConfiguration]
       }
       
-      @scala.inline
-      implicit class PluginSpecificConfigurationMutableBuilder[Self <: PluginSpecificConfiguration] (val x: Self) extends AnyVal {
+      extension [Self <: PluginSpecificConfiguration](x: Self) {
         
-        @scala.inline
-        def `setHapi-auth-cookie`(value: RedirectTo): Self = StObject.set(x, "hapi-auth-cookie", value.asInstanceOf[js.Any])
+        inline def `setHapi-auth-cookie`(value: RedirectTo): Self = StObject.set(x, "hapi-auth-cookie", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setHapi-auth-cookieUndefined`: Self = StObject.set(x, "hapi-auth-cookie", js.undefined)
+        inline def `setHapi-auth-cookieUndefined`: Self = StObject.set(x, "hapi-auth-cookie", js.undefined)
       }
     }
     
@@ -192,17 +168,14 @@ object mod extends Shortcut {
     }
     object Request {
       
-      @scala.inline
-      def apply(cookieAuth: Clear): typings.hapiAuthCookie.mod.hapiAugmentingMod.Request = {
+      inline def apply(cookieAuth: Clear): typings.hapiAuthCookie.mod.hapiAugmentingMod.Request = {
         val __obj = js.Dynamic.literal(cookieAuth = cookieAuth.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.hapiAuthCookie.mod.hapiAugmentingMod.Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: typings.hapiAuthCookie.mod.hapiAugmentingMod.Request] (val x: Self) extends AnyVal {
+      extension [Self <: typings.hapiAuthCookie.mod.hapiAugmentingMod.Request](x: Self) {
         
-        @scala.inline
-        def setCookieAuth(value: Clear): Self = StObject.set(x, "cookieAuth", value.asInstanceOf[js.Any])
+        inline def setCookieAuth(value: Clear): Self = StObject.set(x, "cookieAuth", value.asInstanceOf[js.Any])
       }
     }
     

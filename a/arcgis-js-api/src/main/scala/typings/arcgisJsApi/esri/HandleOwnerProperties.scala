@@ -15,19 +15,15 @@ trait HandleOwnerProperties extends StObject {
 }
 object HandleOwnerProperties {
   
-  @scala.inline
-  def apply(): HandleOwnerProperties = {
+  inline def apply(): HandleOwnerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HandleOwnerProperties]
   }
   
-  @scala.inline
-  implicit class HandleOwnerPropertiesMutableBuilder[Self <: HandleOwnerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HandleOwnerProperties](x: Self) {
     
-    @scala.inline
-    def setHandles(value: HandlesProperties): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+    inline def setHandles(value: HandlesProperties): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
+    inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
   }
 }

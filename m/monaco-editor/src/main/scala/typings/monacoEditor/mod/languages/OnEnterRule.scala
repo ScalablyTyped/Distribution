@@ -29,31 +29,23 @@ trait OnEnterRule extends StObject {
 }
 object OnEnterRule {
   
-  @scala.inline
-  def apply(action: EnterAction, beforeText: RegExp): OnEnterRule = {
+  inline def apply(action: EnterAction, beforeText: RegExp): OnEnterRule = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], beforeText = beforeText.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnEnterRule]
   }
   
-  @scala.inline
-  implicit class OnEnterRuleMutableBuilder[Self <: OnEnterRule] (val x: Self) extends AnyVal {
+  extension [Self <: OnEnterRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: EnterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: EnterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterText(value: RegExp): Self = StObject.set(x, "afterText", value.asInstanceOf[js.Any])
+    inline def setAfterText(value: RegExp): Self = StObject.set(x, "afterText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterTextUndefined: Self = StObject.set(x, "afterText", js.undefined)
+    inline def setAfterTextUndefined: Self = StObject.set(x, "afterText", js.undefined)
     
-    @scala.inline
-    def setBeforeText(value: RegExp): Self = StObject.set(x, "beforeText", value.asInstanceOf[js.Any])
+    inline def setBeforeText(value: RegExp): Self = StObject.set(x, "beforeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneLineAboveText(value: RegExp): Self = StObject.set(x, "oneLineAboveText", value.asInstanceOf[js.Any])
+    inline def setOneLineAboveText(value: RegExp): Self = StObject.set(x, "oneLineAboveText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneLineAboveTextUndefined: Self = StObject.set(x, "oneLineAboveText", js.undefined)
+    inline def setOneLineAboveTextUndefined: Self = StObject.set(x, "oneLineAboveText", js.undefined)
   }
 }

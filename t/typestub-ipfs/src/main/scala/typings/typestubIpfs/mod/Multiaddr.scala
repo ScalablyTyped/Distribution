@@ -11,16 +11,13 @@ trait Multiaddr extends StObject {
 }
 object Multiaddr {
   
-  @scala.inline
-  def apply(buffer: Uint8Array): Multiaddr = {
+  inline def apply(buffer: Uint8Array): Multiaddr = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Multiaddr]
   }
   
-  @scala.inline
-  implicit class MultiaddrMutableBuilder[Self <: Multiaddr] (val x: Self) extends AnyVal {
+  extension [Self <: Multiaddr](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
   }
 }

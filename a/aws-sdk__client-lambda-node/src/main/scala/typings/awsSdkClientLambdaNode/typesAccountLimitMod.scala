@@ -35,44 +35,32 @@ object typesAccountLimitMod {
   }
   object AccountLimit {
     
-    @scala.inline
-    def apply(): AccountLimit = {
+    inline def apply(): AccountLimit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccountLimit]
     }
     
-    @scala.inline
-    implicit class AccountLimitMutableBuilder[Self <: AccountLimit] (val x: Self) extends AnyVal {
+    extension [Self <: AccountLimit](x: Self) {
       
-      @scala.inline
-      def setCodeSizeUnzipped(value: Double): Self = StObject.set(x, "CodeSizeUnzipped", value.asInstanceOf[js.Any])
+      inline def setCodeSizeUnzipped(value: Double): Self = StObject.set(x, "CodeSizeUnzipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeSizeUnzippedUndefined: Self = StObject.set(x, "CodeSizeUnzipped", js.undefined)
+      inline def setCodeSizeUnzippedUndefined: Self = StObject.set(x, "CodeSizeUnzipped", js.undefined)
       
-      @scala.inline
-      def setCodeSizeZipped(value: Double): Self = StObject.set(x, "CodeSizeZipped", value.asInstanceOf[js.Any])
+      inline def setCodeSizeZipped(value: Double): Self = StObject.set(x, "CodeSizeZipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeSizeZippedUndefined: Self = StObject.set(x, "CodeSizeZipped", js.undefined)
+      inline def setCodeSizeZippedUndefined: Self = StObject.set(x, "CodeSizeZipped", js.undefined)
       
-      @scala.inline
-      def setConcurrentExecutions(value: Double): Self = StObject.set(x, "ConcurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setConcurrentExecutions(value: Double): Self = StObject.set(x, "ConcurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentExecutionsUndefined: Self = StObject.set(x, "ConcurrentExecutions", js.undefined)
+      inline def setConcurrentExecutionsUndefined: Self = StObject.set(x, "ConcurrentExecutions", js.undefined)
       
-      @scala.inline
-      def setTotalCodeSize(value: Double): Self = StObject.set(x, "TotalCodeSize", value.asInstanceOf[js.Any])
+      inline def setTotalCodeSize(value: Double): Self = StObject.set(x, "TotalCodeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalCodeSizeUndefined: Self = StObject.set(x, "TotalCodeSize", js.undefined)
+      inline def setTotalCodeSizeUndefined: Self = StObject.set(x, "TotalCodeSize", js.undefined)
       
-      @scala.inline
-      def setUnreservedConcurrentExecutions(value: Double): Self = StObject.set(x, "UnreservedConcurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setUnreservedConcurrentExecutions(value: Double): Self = StObject.set(x, "UnreservedConcurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnreservedConcurrentExecutionsUndefined: Self = StObject.set(x, "UnreservedConcurrentExecutions", js.undefined)
+      inline def setUnreservedConcurrentExecutionsUndefined: Self = StObject.set(x, "UnreservedConcurrentExecutions", js.undefined)
     }
   }
   

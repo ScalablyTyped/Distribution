@@ -12,25 +12,19 @@ trait Subaccounts extends StObject {
 }
 object Subaccounts {
   
-  @scala.inline
-  def apply(): Subaccounts = {
+  inline def apply(): Subaccounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Subaccounts]
   }
   
-  @scala.inline
-  implicit class SubaccountsMutableBuilder[Self <: Subaccounts] (val x: Self) extends AnyVal {
+  extension [Self <: Subaccounts](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setSubaccounts(value: Boolean): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
+    inline def setSubaccounts(value: Boolean): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
+    inline def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
   }
 }

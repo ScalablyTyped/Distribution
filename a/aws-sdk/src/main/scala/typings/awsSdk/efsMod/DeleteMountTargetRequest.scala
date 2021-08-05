@@ -13,16 +13,13 @@ trait DeleteMountTargetRequest extends StObject {
 }
 object DeleteMountTargetRequest {
   
-  @scala.inline
-  def apply(MountTargetId: MountTargetId): DeleteMountTargetRequest = {
+  inline def apply(MountTargetId: MountTargetId): DeleteMountTargetRequest = {
     val __obj = js.Dynamic.literal(MountTargetId = MountTargetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMountTargetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMountTargetRequestMutableBuilder[Self <: DeleteMountTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMountTargetRequest](x: Self) {
     
-    @scala.inline
-    def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
+    inline def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
   }
 }

@@ -27,31 +27,23 @@ trait StreamMapping extends StObject {
 }
 object StreamMapping {
   
-  @scala.inline
-  def apply(): StreamMapping = {
+  inline def apply(): StreamMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamMapping]
   }
   
-  @scala.inline
-  implicit class StreamMappingMutableBuilder[Self <: StreamMapping] (val x: Self) extends AnyVal {
+  extension [Self <: StreamMapping](x: Self) {
     
-    @scala.inline
-    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
-    @scala.inline
-    def setMeasurementId(value: String): Self = StObject.set(x, "measurementId", value.asInstanceOf[js.Any])
+    inline def setMeasurementId(value: String): Self = StObject.set(x, "measurementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementIdUndefined: Self = StObject.set(x, "measurementId", js.undefined)
+    inline def setMeasurementIdUndefined: Self = StObject.set(x, "measurementId", js.undefined)
     
-    @scala.inline
-    def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
   }
 }

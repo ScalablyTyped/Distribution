@@ -12,8 +12,7 @@ trait EmailAuthProviderInstance
      with AuthProvider
 object EmailAuthProviderInstance {
   
-  @scala.inline
-  def apply(providerId: String): EmailAuthProviderInstance = {
+  inline def apply(providerId: String): EmailAuthProviderInstance = {
     val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailAuthProviderInstance]
   }

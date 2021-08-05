@@ -12,19 +12,15 @@ trait Addr extends StObject {
 }
 object Addr {
   
-  @scala.inline
-  def apply(addr: js.Any, peer: js.Any): Addr = {
+  inline def apply(addr: js.Any, peer: js.Any): Addr = {
     val __obj = js.Dynamic.literal(addr = addr.asInstanceOf[js.Any], peer = peer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Addr]
   }
   
-  @scala.inline
-  implicit class AddrMutableBuilder[Self <: Addr] (val x: Self) extends AnyVal {
+  extension [Self <: Addr](x: Self) {
     
-    @scala.inline
-    def setAddr(value: js.Any): Self = StObject.set(x, "addr", value.asInstanceOf[js.Any])
+    inline def setAddr(value: js.Any): Self = StObject.set(x, "addr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeer(value: js.Any): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
+    inline def setPeer(value: js.Any): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
   }
 }

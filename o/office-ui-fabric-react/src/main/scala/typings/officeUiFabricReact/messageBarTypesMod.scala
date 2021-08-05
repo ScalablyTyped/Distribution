@@ -161,100 +161,70 @@ object messageBarTypesMod {
   }
   object IMessageBarProps {
     
-    @scala.inline
-    def apply(): IMessageBarProps = {
+    inline def apply(): IMessageBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMessageBarProps]
     }
     
-    @scala.inline
-    implicit class IMessageBarPropsMutableBuilder[Self <: IMessageBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMessageBarProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: Element): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Element): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IMessageBar]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IMessageBar]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IMessageBar | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IMessageBar | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDismissButtonAriaLabel(value: String): Self = StObject.set(x, "dismissButtonAriaLabel", value.asInstanceOf[js.Any])
+      inline def setDismissButtonAriaLabel(value: String): Self = StObject.set(x, "dismissButtonAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissButtonAriaLabelUndefined: Self = StObject.set(x, "dismissButtonAriaLabel", js.undefined)
+      inline def setDismissButtonAriaLabelUndefined: Self = StObject.set(x, "dismissButtonAriaLabel", js.undefined)
       
-      @scala.inline
-      def setDismissIconProps(value: IIconProps): Self = StObject.set(x, "dismissIconProps", value.asInstanceOf[js.Any])
+      inline def setDismissIconProps(value: IIconProps): Self = StObject.set(x, "dismissIconProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissIconPropsUndefined: Self = StObject.set(x, "dismissIconProps", js.undefined)
+      inline def setDismissIconPropsUndefined: Self = StObject.set(x, "dismissIconProps", js.undefined)
       
-      @scala.inline
-      def setIsMultiline(value: Boolean): Self = StObject.set(x, "isMultiline", value.asInstanceOf[js.Any])
+      inline def setIsMultiline(value: Boolean): Self = StObject.set(x, "isMultiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMultilineUndefined: Self = StObject.set(x, "isMultiline", js.undefined)
+      inline def setIsMultilineUndefined: Self = StObject.set(x, "isMultiline", js.undefined)
       
-      @scala.inline
-      def setMessageBarIconProps(value: IIconProps): Self = StObject.set(x, "messageBarIconProps", value.asInstanceOf[js.Any])
+      inline def setMessageBarIconProps(value: IIconProps): Self = StObject.set(x, "messageBarIconProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageBarIconPropsUndefined: Self = StObject.set(x, "messageBarIconProps", js.undefined)
+      inline def setMessageBarIconPropsUndefined: Self = StObject.set(x, "messageBarIconProps", js.undefined)
       
-      @scala.inline
-      def setMessageBarType(value: MessageBarType): Self = StObject.set(x, "messageBarType", value.asInstanceOf[js.Any])
+      inline def setMessageBarType(value: MessageBarType): Self = StObject.set(x, "messageBarType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageBarTypeUndefined: Self = StObject.set(x, "messageBarType", js.undefined)
+      inline def setMessageBarTypeUndefined: Self = StObject.set(x, "messageBarType", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(
+      inline def setOnDismiss(
         value: /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]] => js.Any
       ): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setOverflowButtonAriaLabel(value: String): Self = StObject.set(x, "overflowButtonAriaLabel", value.asInstanceOf[js.Any])
+      inline def setOverflowButtonAriaLabel(value: String): Self = StObject.set(x, "overflowButtonAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowButtonAriaLabelUndefined: Self = StObject.set(x, "overflowButtonAriaLabel", js.undefined)
+      inline def setOverflowButtonAriaLabelUndefined: Self = StObject.set(x, "overflowButtonAriaLabel", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IMessageBarStyleProps, IMessageBarStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IMessageBarStyleProps, IMessageBarStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IMessageBarStyleProps => DeepPartial[IMessageBarStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IMessageBarStyleProps => DeepPartial[IMessageBarStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
+      inline def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
+      inline def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
     }
   }
   
@@ -302,59 +272,42 @@ object messageBarTypesMod {
   }
   object IMessageBarStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IMessageBarStyleProps = {
+    inline def apply(theme: ITheme): IMessageBarStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMessageBarStyleProps]
     }
     
-    @scala.inline
-    implicit class IMessageBarStylePropsMutableBuilder[Self <: IMessageBarStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMessageBarStyleProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: Boolean): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Boolean): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setExpandSingleLine(value: Boolean): Self = StObject.set(x, "expandSingleLine", value.asInstanceOf[js.Any])
+      inline def setExpandSingleLine(value: Boolean): Self = StObject.set(x, "expandSingleLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandSingleLineUndefined: Self = StObject.set(x, "expandSingleLine", js.undefined)
+      inline def setExpandSingleLineUndefined: Self = StObject.set(x, "expandSingleLine", js.undefined)
       
-      @scala.inline
-      def setIsMultiline(value: Boolean): Self = StObject.set(x, "isMultiline", value.asInstanceOf[js.Any])
+      inline def setIsMultiline(value: Boolean): Self = StObject.set(x, "isMultiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMultilineUndefined: Self = StObject.set(x, "isMultiline", js.undefined)
+      inline def setIsMultilineUndefined: Self = StObject.set(x, "isMultiline", js.undefined)
       
-      @scala.inline
-      def setMessageBarType(value: MessageBarType): Self = StObject.set(x, "messageBarType", value.asInstanceOf[js.Any])
+      inline def setMessageBarType(value: MessageBarType): Self = StObject.set(x, "messageBarType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageBarTypeUndefined: Self = StObject.set(x, "messageBarType", js.undefined)
+      inline def setMessageBarTypeUndefined: Self = StObject.set(x, "messageBarType", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: Boolean): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
+      inline def setOnDismiss(value: Boolean): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
+      inline def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
+      inline def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
     }
   }
   
@@ -417,113 +370,78 @@ object messageBarTypesMod {
   }
   object IMessageBarStyles {
     
-    @scala.inline
-    def apply(): IMessageBarStyles = {
+    inline def apply(): IMessageBarStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMessageBarStyles]
     }
     
-    @scala.inline
-    implicit class IMessageBarStylesMutableBuilder[Self <: IMessageBarStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IMessageBarStyles](x: Self) {
       
-      @scala.inline
-      def setActions(value: IStyle): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: IStyle): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsNull: Self = StObject.set(x, "actions", null)
+      inline def setActionsNull: Self = StObject.set(x, "actions", null)
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setContent(value: IStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: IStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentNull: Self = StObject.set(x, "content", null)
+      inline def setContentNull: Self = StObject.set(x, "content", null)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDismissSingleLine(value: IStyle): Self = StObject.set(x, "dismissSingleLine", value.asInstanceOf[js.Any])
+      inline def setDismissSingleLine(value: IStyle): Self = StObject.set(x, "dismissSingleLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissSingleLineNull: Self = StObject.set(x, "dismissSingleLine", null)
+      inline def setDismissSingleLineNull: Self = StObject.set(x, "dismissSingleLine", null)
       
-      @scala.inline
-      def setDismissSingleLineUndefined: Self = StObject.set(x, "dismissSingleLine", js.undefined)
+      inline def setDismissSingleLineUndefined: Self = StObject.set(x, "dismissSingleLine", js.undefined)
       
-      @scala.inline
-      def setDismissal(value: IStyle): Self = StObject.set(x, "dismissal", value.asInstanceOf[js.Any])
+      inline def setDismissal(value: IStyle): Self = StObject.set(x, "dismissal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissalNull: Self = StObject.set(x, "dismissal", null)
+      inline def setDismissalNull: Self = StObject.set(x, "dismissal", null)
       
-      @scala.inline
-      def setDismissalUndefined: Self = StObject.set(x, "dismissal", js.undefined)
+      inline def setDismissalUndefined: Self = StObject.set(x, "dismissal", js.undefined)
       
-      @scala.inline
-      def setExpand(value: IStyle): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: IStyle): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandNull: Self = StObject.set(x, "expand", null)
+      inline def setExpandNull: Self = StObject.set(x, "expand", null)
       
-      @scala.inline
-      def setExpandSingleLine(value: IStyle): Self = StObject.set(x, "expandSingleLine", value.asInstanceOf[js.Any])
+      inline def setExpandSingleLine(value: IStyle): Self = StObject.set(x, "expandSingleLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandSingleLineNull: Self = StObject.set(x, "expandSingleLine", null)
+      inline def setExpandSingleLineNull: Self = StObject.set(x, "expandSingleLine", null)
       
-      @scala.inline
-      def setExpandSingleLineUndefined: Self = StObject.set(x, "expandSingleLine", js.undefined)
+      inline def setExpandSingleLineUndefined: Self = StObject.set(x, "expandSingleLine", js.undefined)
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainer(value: IStyle): Self = StObject.set(x, "iconContainer", value.asInstanceOf[js.Any])
+      inline def setIconContainer(value: IStyle): Self = StObject.set(x, "iconContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainerNull: Self = StObject.set(x, "iconContainer", null)
+      inline def setIconContainerNull: Self = StObject.set(x, "iconContainer", null)
       
-      @scala.inline
-      def setIconContainerUndefined: Self = StObject.set(x, "iconContainer", js.undefined)
+      inline def setIconContainerUndefined: Self = StObject.set(x, "iconContainer", js.undefined)
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setInnerText(value: IStyle): Self = StObject.set(x, "innerText", value.asInstanceOf[js.Any])
+      inline def setInnerText(value: IStyle): Self = StObject.set(x, "innerText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerTextNull: Self = StObject.set(x, "innerText", null)
+      inline def setInnerTextNull: Self = StObject.set(x, "innerText", null)
       
-      @scala.inline
-      def setInnerTextUndefined: Self = StObject.set(x, "innerText", js.undefined)
+      inline def setInnerTextUndefined: Self = StObject.set(x, "innerText", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: IStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextNull: Self = StObject.set(x, "text", null)
+      inline def setTextNull: Self = StObject.set(x, "text", null)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

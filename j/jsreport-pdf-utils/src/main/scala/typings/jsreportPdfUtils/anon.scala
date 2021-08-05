@@ -16,23 +16,18 @@ object anon {
   }
   object Contrent {
     
-    @scala.inline
-    def apply(contrent: String, encoding: String, password: String): Contrent = {
+    inline def apply(contrent: String, encoding: String, password: String): Contrent = {
       val __obj = js.Dynamic.literal(contrent = contrent.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[Contrent]
     }
     
-    @scala.inline
-    implicit class ContrentMutableBuilder[Self <: Contrent] (val x: Self) extends AnyVal {
+    extension [Self <: Contrent](x: Self) {
       
-      @scala.inline
-      def setContrent(value: String): Self = StObject.set(x, "contrent", value.asInstanceOf[js.Any])
+      inline def setContrent(value: String): Self = StObject.set(x, "contrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
   }
 }

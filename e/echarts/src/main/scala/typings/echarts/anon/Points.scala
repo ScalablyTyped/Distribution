@@ -44,34 +44,25 @@ trait Points extends StObject {
 }
 object Points {
   
-  @scala.inline
-  def apply(): Points = {
+  inline def apply(): Points = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Points]
   }
   
-  @scala.inline
-  implicit class PointsMutableBuilder[Self <: Points] (val x: Self) extends AnyVal {
+  extension [Self <: Points](x: Self) {
     
-    @scala.inline
-    def setPoints(value: js.Array[js.Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[js.Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    @scala.inline
-    def setPointsVarargs(value: js.Any*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: js.Any*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setSmooth(value: Double | String): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+    inline def setSmooth(value: Double | String): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothConstraint(value: Boolean): Self = StObject.set(x, "smoothConstraint", value.asInstanceOf[js.Any])
+    inline def setSmoothConstraint(value: Boolean): Self = StObject.set(x, "smoothConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothConstraintUndefined: Self = StObject.set(x, "smoothConstraint", js.undefined)
+    inline def setSmoothConstraintUndefined: Self = StObject.set(x, "smoothConstraint", js.undefined)
     
-    @scala.inline
-    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+    inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
   }
 }

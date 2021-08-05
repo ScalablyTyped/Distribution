@@ -10,16 +10,13 @@ trait EnumValuesCommit extends StObject {
 }
 object EnumValuesCommit {
   
-  @scala.inline
-  def apply(enumValues: Commit): EnumValuesCommit = {
+  inline def apply(enumValues: Commit): EnumValuesCommit = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCommit]
   }
   
-  @scala.inline
-  implicit class EnumValuesCommitMutableBuilder[Self <: EnumValuesCommit] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCommit](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Commit): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Commit): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

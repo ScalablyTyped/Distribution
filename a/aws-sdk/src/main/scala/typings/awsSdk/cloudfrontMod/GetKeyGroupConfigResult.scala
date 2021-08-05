@@ -18,25 +18,19 @@ trait GetKeyGroupConfigResult extends StObject {
 }
 object GetKeyGroupConfigResult {
   
-  @scala.inline
-  def apply(): GetKeyGroupConfigResult = {
+  inline def apply(): GetKeyGroupConfigResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetKeyGroupConfigResult]
   }
   
-  @scala.inline
-  implicit class GetKeyGroupConfigResultMutableBuilder[Self <: GetKeyGroupConfigResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetKeyGroupConfigResult](x: Self) {
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setKeyGroupConfig(value: KeyGroupConfig): Self = StObject.set(x, "KeyGroupConfig", value.asInstanceOf[js.Any])
+    inline def setKeyGroupConfig(value: KeyGroupConfig): Self = StObject.set(x, "KeyGroupConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyGroupConfigUndefined: Self = StObject.set(x, "KeyGroupConfig", js.undefined)
+    inline def setKeyGroupConfigUndefined: Self = StObject.set(x, "KeyGroupConfig", js.undefined)
   }
 }

@@ -19,22 +19,17 @@ trait FormComponentGroup extends StObject {
 }
 object FormComponentGroup {
   
-  @scala.inline
-  def apply(components: js.Array[FormComponentlayoutFormIt], title: String): FormComponentGroup = {
+  inline def apply(components: js.Array[FormComponentlayoutFormIt], title: String): FormComponentGroup = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormComponentGroup]
   }
   
-  @scala.inline
-  implicit class FormComponentGroupMutableBuilder[Self <: FormComponentGroup] (val x: Self) extends AnyVal {
+  extension [Self <: FormComponentGroup](x: Self) {
     
-    @scala.inline
-    def setComponents(value: js.Array[FormComponentlayoutFormIt]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Array[FormComponentlayoutFormIt]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsVarargs(value: FormComponentlayoutFormIt*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: FormComponentlayoutFormIt*): Self = StObject.set(x, "components", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

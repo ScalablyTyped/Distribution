@@ -28,8 +28,7 @@ trait NotificationChange extends StObject {
 }
 object NotificationChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeType: ToStringLiteral[
       DELETED, 
       /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
@@ -44,11 +43,9 @@ object NotificationChange {
     __obj.asInstanceOf[NotificationChange]
   }
   
-  @scala.inline
-  implicit class NotificationChangeMutableBuilder[Self <: NotificationChange] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationChange](x: Self) {
     
-    @scala.inline
-    def setChangeType(
+    inline def setChangeType(
       value: ToStringLiteral[
           DELETED, 
           /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
@@ -59,7 +56,6 @@ object NotificationChange {
         ]
     ): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
+    inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
   }
 }

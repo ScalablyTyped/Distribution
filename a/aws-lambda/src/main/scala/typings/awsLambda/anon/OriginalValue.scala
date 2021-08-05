@@ -15,22 +15,17 @@ trait OriginalValue extends StObject {
 }
 object OriginalValue {
   
-  @scala.inline
-  def apply(originalValue: String, resolutions: js.Array[LexSlotResolution]): OriginalValue = {
+  inline def apply(originalValue: String, resolutions: js.Array[LexSlotResolution]): OriginalValue = {
     val __obj = js.Dynamic.literal(originalValue = originalValue.asInstanceOf[js.Any], resolutions = resolutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginalValue]
   }
   
-  @scala.inline
-  implicit class OriginalValueMutableBuilder[Self <: OriginalValue] (val x: Self) extends AnyVal {
+  extension [Self <: OriginalValue](x: Self) {
     
-    @scala.inline
-    def setOriginalValue(value: String): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+    inline def setOriginalValue(value: String): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutions(value: js.Array[LexSlotResolution]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
+    inline def setResolutions(value: js.Array[LexSlotResolution]): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionsVarargs(value: LexSlotResolution*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+    inline def setResolutionsVarargs(value: LexSlotResolution*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
   }
 }

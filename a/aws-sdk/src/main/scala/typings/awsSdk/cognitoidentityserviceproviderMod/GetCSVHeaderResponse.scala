@@ -18,28 +18,21 @@ trait GetCSVHeaderResponse extends StObject {
 }
 object GetCSVHeaderResponse {
   
-  @scala.inline
-  def apply(): GetCSVHeaderResponse = {
+  inline def apply(): GetCSVHeaderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCSVHeaderResponse]
   }
   
-  @scala.inline
-  implicit class GetCSVHeaderResponseMutableBuilder[Self <: GetCSVHeaderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCSVHeaderResponse](x: Self) {
     
-    @scala.inline
-    def setCSVHeader(value: ListOfStringTypes): Self = StObject.set(x, "CSVHeader", value.asInstanceOf[js.Any])
+    inline def setCSVHeader(value: ListOfStringTypes): Self = StObject.set(x, "CSVHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCSVHeaderUndefined: Self = StObject.set(x, "CSVHeader", js.undefined)
+    inline def setCSVHeaderUndefined: Self = StObject.set(x, "CSVHeader", js.undefined)
     
-    @scala.inline
-    def setCSVHeaderVarargs(value: StringType*): Self = StObject.set(x, "CSVHeader", js.Array(value :_*))
+    inline def setCSVHeaderVarargs(value: StringType*): Self = StObject.set(x, "CSVHeader", js.Array(value :_*))
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
+    inline def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
   }
 }

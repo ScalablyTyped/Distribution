@@ -10,19 +10,15 @@ trait ImageEditorMessagesPanesCropAspectRatioItems extends StObject {
 }
 object ImageEditorMessagesPanesCropAspectRatioItems {
   
-  @scala.inline
-  def apply(): ImageEditorMessagesPanesCropAspectRatioItems = {
+  inline def apply(): ImageEditorMessagesPanesCropAspectRatioItems = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageEditorMessagesPanesCropAspectRatioItems]
   }
   
-  @scala.inline
-  implicit class ImageEditorMessagesPanesCropAspectRatioItemsMutableBuilder[Self <: ImageEditorMessagesPanesCropAspectRatioItems] (val x: Self) extends AnyVal {
+  extension [Self <: ImageEditorMessagesPanesCropAspectRatioItems](x: Self) {
     
-    @scala.inline
-    def setOriginalRatio(value: String): Self = StObject.set(x, "originalRatio", value.asInstanceOf[js.Any])
+    inline def setOriginalRatio(value: String): Self = StObject.set(x, "originalRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalRatioUndefined: Self = StObject.set(x, "originalRatio", js.undefined)
+    inline def setOriginalRatioUndefined: Self = StObject.set(x, "originalRatio", js.undefined)
   }
 }

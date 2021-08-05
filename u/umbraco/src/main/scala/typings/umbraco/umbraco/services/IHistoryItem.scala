@@ -20,22 +20,17 @@ trait IHistoryItem extends StObject {
 }
 object IHistoryItem {
   
-  @scala.inline
-  def apply(icon: String, link: String, name: String): IHistoryItem = {
+  inline def apply(icon: String, link: String, name: String): IHistoryItem = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHistoryItem]
   }
   
-  @scala.inline
-  implicit class IHistoryItemMutableBuilder[Self <: IHistoryItem] (val x: Self) extends AnyVal {
+  extension [Self <: IHistoryItem](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

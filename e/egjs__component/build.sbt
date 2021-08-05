@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egjs__component"
-version := "2.0-dt-20200925Z-b46e94"
+version := "2.0-dt-20200925Z-913d36"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

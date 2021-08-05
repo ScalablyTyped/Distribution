@@ -37,37 +37,27 @@ trait ComponentOptions extends StObject {
 }
 object ComponentOptions {
   
-  @scala.inline
-  def apply(): ComponentOptions = {
+  inline def apply(): ComponentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentOptions]
   }
   
-  @scala.inline
-  implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentOptions](x: Self) {
     
-    @scala.inline
-    def setAddGlobalClass(value: Boolean): Self = StObject.set(x, "addGlobalClass", value.asInstanceOf[js.Any])
+    inline def setAddGlobalClass(value: Boolean): Self = StObject.set(x, "addGlobalClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddGlobalClassUndefined: Self = StObject.set(x, "addGlobalClass", js.undefined)
+    inline def setAddGlobalClassUndefined: Self = StObject.set(x, "addGlobalClass", js.undefined)
     
-    @scala.inline
-    def setMultipleSlots(value: Boolean): Self = StObject.set(x, "multipleSlots", value.asInstanceOf[js.Any])
+    inline def setMultipleSlots(value: Boolean): Self = StObject.set(x, "multipleSlots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleSlotsUndefined: Self = StObject.set(x, "multipleSlots", js.undefined)
+    inline def setMultipleSlotsUndefined: Self = StObject.set(x, "multipleSlots", js.undefined)
     
-    @scala.inline
-    def setPureDataPattern(value: RegExp): Self = StObject.set(x, "pureDataPattern", value.asInstanceOf[js.Any])
+    inline def setPureDataPattern(value: RegExp): Self = StObject.set(x, "pureDataPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPureDataPatternUndefined: Self = StObject.set(x, "pureDataPattern", js.undefined)
+    inline def setPureDataPatternUndefined: Self = StObject.set(x, "pureDataPattern", js.undefined)
     
-    @scala.inline
-    def setStyleIsolation(value: isolated | `apply-shared` | shared | `page-isolated` | `page-apply-shared` | `page-shared`): Self = StObject.set(x, "styleIsolation", value.asInstanceOf[js.Any])
+    inline def setStyleIsolation(value: isolated | `apply-shared` | shared | `page-isolated` | `page-apply-shared` | `page-shared`): Self = StObject.set(x, "styleIsolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleIsolationUndefined: Self = StObject.set(x, "styleIsolation", js.undefined)
+    inline def setStyleIsolationUndefined: Self = StObject.set(x, "styleIsolation", js.undefined)
   }
 }

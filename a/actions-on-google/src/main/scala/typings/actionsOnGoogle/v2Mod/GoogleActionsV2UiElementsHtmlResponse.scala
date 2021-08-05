@@ -25,31 +25,23 @@ trait GoogleActionsV2UiElementsHtmlResponse extends StObject {
 }
 object GoogleActionsV2UiElementsHtmlResponse {
   
-  @scala.inline
-  def apply(): GoogleActionsV2UiElementsHtmlResponse = {
+  inline def apply(): GoogleActionsV2UiElementsHtmlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2UiElementsHtmlResponse]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UiElementsHtmlResponseMutableBuilder[Self <: GoogleActionsV2UiElementsHtmlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2UiElementsHtmlResponse](x: Self) {
     
-    @scala.inline
-    def setSuppressMic(value: Boolean): Self = StObject.set(x, "suppressMic", value.asInstanceOf[js.Any])
+    inline def setSuppressMic(value: Boolean): Self = StObject.set(x, "suppressMic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressMicUndefined: Self = StObject.set(x, "suppressMic", js.undefined)
+    inline def setSuppressMicUndefined: Self = StObject.set(x, "suppressMic", js.undefined)
     
-    @scala.inline
-    def setUpdatedState(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "updatedState", value.asInstanceOf[js.Any])
+    inline def setUpdatedState(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "updatedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedStateUndefined: Self = StObject.set(x, "updatedState", js.undefined)
+    inline def setUpdatedStateUndefined: Self = StObject.set(x, "updatedState", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

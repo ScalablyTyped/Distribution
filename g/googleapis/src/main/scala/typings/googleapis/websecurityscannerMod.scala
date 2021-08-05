@@ -41,8 +41,7 @@ object websecurityscannerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Websecurityscanner
       ] = js.native
-    @scala.inline
-    def v1alpha_=(
+    inline def v1alpha_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -65,8 +64,7 @@ object websecurityscannerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner
       ] = js.native
-    @scala.inline
-    def v1beta_=(
+    inline def v1beta_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -108,8 +106,7 @@ object websecurityscannerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -153,14 +150,10 @@ object websecurityscannerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def websecurityscanner(options: Options): Websecurityscanner = ^.asInstanceOf[js.Dynamic].applyDynamic("websecurityscanner")(options.asInstanceOf[js.Any]).asInstanceOf[Websecurityscanner]
-  @scala.inline
-  def websecurityscanner(options: typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Options): typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner = ^.asInstanceOf[js.Dynamic].applyDynamic("websecurityscanner")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner]
+  inline def websecurityscanner(options: Options): Websecurityscanner = ^.asInstanceOf[js.Dynamic].applyDynamic("websecurityscanner")(options.asInstanceOf[js.Any]).asInstanceOf[Websecurityscanner]
+  inline def websecurityscanner(options: typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Options): typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner = ^.asInstanceOf[js.Dynamic].applyDynamic("websecurityscanner")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner]
   
-  @scala.inline
-  def websecurityscanner_v1alpha(version: v1alpha): Websecurityscanner = ^.asInstanceOf[js.Dynamic].applyDynamic("websecurityscanner")(version.asInstanceOf[js.Any]).asInstanceOf[Websecurityscanner]
+  inline def websecurityscanner_v1alpha(version: v1alpha): Websecurityscanner = ^.asInstanceOf[js.Dynamic].applyDynamic("websecurityscanner")(version.asInstanceOf[js.Any]).asInstanceOf[Websecurityscanner]
   
-  @scala.inline
-  def websecurityscanner_v1beta(version: v1beta): typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner = ^.asInstanceOf[js.Dynamic].applyDynamic("websecurityscanner")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner]
+  inline def websecurityscanner_v1beta(version: v1beta): typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner = ^.asInstanceOf[js.Dynamic].applyDynamic("websecurityscanner")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta.Websecurityscanner]
 }

@@ -23,31 +23,23 @@ trait ListEventBusesRequest extends StObject {
 }
 object ListEventBusesRequest {
   
-  @scala.inline
-  def apply(): ListEventBusesRequest = {
+  inline def apply(): ListEventBusesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEventBusesRequest]
   }
   
-  @scala.inline
-  implicit class ListEventBusesRequestMutableBuilder[Self <: ListEventBusesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListEventBusesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNamePrefix(value: EventBusName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
+    inline def setNamePrefix(value: EventBusName): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamePrefixUndefined: Self = StObject.set(x, "NamePrefix", js.undefined)
+    inline def setNamePrefixUndefined: Self = StObject.set(x, "NamePrefix", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

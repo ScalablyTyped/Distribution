@@ -20,37 +20,27 @@ trait GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation extends StO
 }
 object GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation = {
+  inline def apply(): GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotationMutableBuilder[Self <: GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
+    inline def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
+    inline def setMidUndefined: Self = StObject.set(x, "mid", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

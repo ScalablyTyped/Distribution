@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsClass extends StObject
 object DirectionsClass {
   
-  @scala.inline
-  def ferry: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry = "ferry".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry]
+  inline def ferry: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry = "ferry".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry]
   
-  @scala.inline
-  def motorway: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.motorway = "motorway".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.motorway]
+  inline def motorway: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.motorway = "motorway".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.motorway]
   
-  @scala.inline
-  def restricted: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.restricted = "restricted".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.restricted]
+  inline def restricted: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.restricted = "restricted".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.restricted]
   
-  @scala.inline
-  def toll: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.toll = "toll".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.toll]
+  inline def toll: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.toll = "toll".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.toll]
   
-  @scala.inline
-  def tunnel: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.tunnel = "tunnel".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.tunnel]
+  inline def tunnel: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.tunnel = "tunnel".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.tunnel]
 }

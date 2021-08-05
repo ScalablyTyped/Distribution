@@ -18,19 +18,15 @@ trait CommonWidgetProps extends StObject {
 }
 object CommonWidgetProps {
   
-  @scala.inline
-  def apply(): CommonWidgetProps = {
+  inline def apply(): CommonWidgetProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonWidgetProps]
   }
   
-  @scala.inline
-  implicit class CommonWidgetPropsMutableBuilder[Self <: CommonWidgetProps] (val x: Self) extends AnyVal {
+  extension [Self <: CommonWidgetProps](x: Self) {
     
-    @scala.inline
-    def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, js.Any])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, js.Any])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
   }
 }

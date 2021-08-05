@@ -55,8 +55,7 @@ trait b2ContactPoint extends StObject {
 }
 object b2ContactPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friction: Double,
     id: b2ContactID,
     normal: b2Vec2,
@@ -71,34 +70,24 @@ object b2ContactPoint {
     __obj.asInstanceOf[b2ContactPoint]
   }
   
-  @scala.inline
-  implicit class b2ContactPointMutableBuilder[Self <: b2ContactPoint] (val x: Self) extends AnyVal {
+  extension [Self <: b2ContactPoint](x: Self) {
     
-    @scala.inline
-    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: b2ContactID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: b2ContactID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: b2Vec2): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: b2Vec2): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: b2Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: b2Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
+    inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparation(value: Double): Self = StObject.set(x, "separation", value.asInstanceOf[js.Any])
+    inline def setSeparation(value: Double): Self = StObject.set(x, "separation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape1(value: b2Shape): Self = StObject.set(x, "shape1", value.asInstanceOf[js.Any])
+    inline def setShape1(value: b2Shape): Self = StObject.set(x, "shape1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape2(value: b2Shape): Self = StObject.set(x, "shape2", value.asInstanceOf[js.Any])
+    inline def setShape2(value: b2Shape): Self = StObject.set(x, "shape2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocity(value: b2Vec2): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    inline def setVelocity(value: b2Vec2): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
   }
 }

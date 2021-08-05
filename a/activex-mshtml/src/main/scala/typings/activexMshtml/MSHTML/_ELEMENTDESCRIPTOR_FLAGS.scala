@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _ELEMENTDESCRIPTOR_FLAGS extends StObject
 object _ELEMENTDESCRIPTOR_FLAGS {
   
-  @scala.inline
-  def ELEMENTDESCRIPTORFLAGS_LITERAL: `1` = 1.asInstanceOf[`1`]
+  inline def ELEMENTDESCRIPTORFLAGS_LITERAL: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ELEMENTDESCRIPTORFLAGS_NESTED_LITERAL: `2` = 2.asInstanceOf[`2`]
+  inline def ELEMENTDESCRIPTORFLAGS_NESTED_LITERAL: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ELEMENTDESCRIPTOR_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def ELEMENTDESCRIPTOR_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

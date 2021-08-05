@@ -21,22 +21,17 @@ trait DownwardAPIVolumeSource extends StObject {
 }
 object DownwardAPIVolumeSource {
   
-  @scala.inline
-  def apply(defaultMode: Double, items: js.Array[DownwardAPIVolumeFile]): DownwardAPIVolumeSource = {
+  inline def apply(defaultMode: Double, items: js.Array[DownwardAPIVolumeFile]): DownwardAPIVolumeSource = {
     val __obj = js.Dynamic.literal(defaultMode = defaultMode.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownwardAPIVolumeSource]
   }
   
-  @scala.inline
-  implicit class DownwardAPIVolumeSourceMutableBuilder[Self <: DownwardAPIVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: DownwardAPIVolumeSource](x: Self) {
     
-    @scala.inline
-    def setDefaultMode(value: Double): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
+    inline def setDefaultMode(value: Double): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[DownwardAPIVolumeFile]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[DownwardAPIVolumeFile]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: DownwardAPIVolumeFile*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DownwardAPIVolumeFile*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

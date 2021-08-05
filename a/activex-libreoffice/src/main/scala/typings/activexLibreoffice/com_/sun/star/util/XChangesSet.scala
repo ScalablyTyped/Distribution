@@ -34,8 +34,7 @@ trait XChangesSet
 }
 object XChangesSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllChanges: SafeArray[ElementChange],
     ElementType: `type`,
     acquire: () => Unit,
@@ -49,13 +48,10 @@ object XChangesSet {
     __obj.asInstanceOf[XChangesSet]
   }
   
-  @scala.inline
-  implicit class XChangesSetMutableBuilder[Self <: XChangesSet] (val x: Self) extends AnyVal {
+  extension [Self <: XChangesSet](x: Self) {
     
-    @scala.inline
-    def setAllChanges(value: SafeArray[ElementChange]): Self = StObject.set(x, "AllChanges", value.asInstanceOf[js.Any])
+    inline def setAllChanges(value: SafeArray[ElementChange]): Self = StObject.set(x, "AllChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllChanges(value: () => SafeArray[ElementChange]): Self = StObject.set(x, "getAllChanges", js.Any.fromFunction0(value))
+    inline def setGetAllChanges(value: () => SafeArray[ElementChange]): Self = StObject.set(x, "getAllChanges", js.Any.fromFunction0(value))
   }
 }

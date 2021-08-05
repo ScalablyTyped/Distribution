@@ -23,31 +23,23 @@ trait GetConformancePackComplianceDetailsResponse extends StObject {
 }
 object GetConformancePackComplianceDetailsResponse {
   
-  @scala.inline
-  def apply(ConformancePackName: ConformancePackName): GetConformancePackComplianceDetailsResponse = {
+  inline def apply(ConformancePackName: ConformancePackName): GetConformancePackComplianceDetailsResponse = {
     val __obj = js.Dynamic.literal(ConformancePackName = ConformancePackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConformancePackComplianceDetailsResponse]
   }
   
-  @scala.inline
-  implicit class GetConformancePackComplianceDetailsResponseMutableBuilder[Self <: GetConformancePackComplianceDetailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConformancePackComplianceDetailsResponse](x: Self) {
     
-    @scala.inline
-    def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
+    inline def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackRuleEvaluationResults(value: ConformancePackRuleEvaluationResultsList): Self = StObject.set(x, "ConformancePackRuleEvaluationResults", value.asInstanceOf[js.Any])
+    inline def setConformancePackRuleEvaluationResults(value: ConformancePackRuleEvaluationResultsList): Self = StObject.set(x, "ConformancePackRuleEvaluationResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformancePackRuleEvaluationResultsUndefined: Self = StObject.set(x, "ConformancePackRuleEvaluationResults", js.undefined)
+    inline def setConformancePackRuleEvaluationResultsUndefined: Self = StObject.set(x, "ConformancePackRuleEvaluationResults", js.undefined)
     
-    @scala.inline
-    def setConformancePackRuleEvaluationResultsVarargs(value: ConformancePackEvaluationResult*): Self = StObject.set(x, "ConformancePackRuleEvaluationResults", js.Array(value :_*))
+    inline def setConformancePackRuleEvaluationResultsVarargs(value: ConformancePackEvaluationResult*): Self = StObject.set(x, "ConformancePackRuleEvaluationResults", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -46,8 +46,7 @@ trait IgValidatorBaseRule extends StObject {
 }
 object IgValidatorBaseRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formatMessage: String => String,
     getMessageType: js.Object => String,
     getRuleMessage: js.Object => String,
@@ -58,22 +57,16 @@ object IgValidatorBaseRule {
     __obj.asInstanceOf[IgValidatorBaseRule]
   }
   
-  @scala.inline
-  implicit class IgValidatorBaseRuleMutableBuilder[Self <: IgValidatorBaseRule] (val x: Self) extends AnyVal {
+  extension [Self <: IgValidatorBaseRule](x: Self) {
     
-    @scala.inline
-    def setFormatMessage(value: String => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
+    inline def setFormatMessage(value: String => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMessageType(value: js.Object => String): Self = StObject.set(x, "getMessageType", js.Any.fromFunction1(value))
+    inline def setGetMessageType(value: js.Object => String): Self = StObject.set(x, "getMessageType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRuleMessage(value: js.Object => String): Self = StObject.set(x, "getRuleMessage", js.Any.fromFunction1(value))
+    inline def setGetRuleMessage(value: js.Object => String): Self = StObject.set(x, "getRuleMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsValid(value: (js.Object, js.Object) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction2(value))
+    inline def setIsValid(value: (js.Object, js.Object) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShouldRun(value: (js.Object, String) => Boolean): Self = StObject.set(x, "shouldRun", js.Any.fromFunction2(value))
+    inline def setShouldRun(value: (js.Object, String) => Boolean): Self = StObject.set(x, "shouldRun", js.Any.fromFunction2(value))
   }
 }

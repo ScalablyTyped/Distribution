@@ -23,17 +23,14 @@ object gapi {
       }
       object detections {
         
-        @scala.inline
-        def apply(list: Fields => HttpRequest[GoogleApiTranslateDetectionListResponse]): detections = {
+        inline def apply(list: Fields => HttpRequest[GoogleApiTranslateDetectionListResponse]): detections = {
           val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
           __obj.asInstanceOf[detections]
         }
         
-        @scala.inline
-        implicit class detectionsMutableBuilder[Self <: detections] (val x: Self) extends AnyVal {
+        extension [Self <: detections](x: Self) {
           
-          @scala.inline
-          def setList(value: Fields => HttpRequest[GoogleApiTranslateDetectionListResponse]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: Fields => HttpRequest[GoogleApiTranslateDetectionListResponse]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
       }
       
@@ -46,17 +43,14 @@ object gapi {
       }
       object languages {
         
-        @scala.inline
-        def apply(list: Target => HttpRequest[GoogleApiTranslateLanguageListResponse]): languages = {
+        inline def apply(list: Target => HttpRequest[GoogleApiTranslateLanguageListResponse]): languages = {
           val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
           __obj.asInstanceOf[languages]
         }
         
-        @scala.inline
-        implicit class languagesMutableBuilder[Self <: languages] (val x: Self) extends AnyVal {
+        extension [Self <: languages](x: Self) {
           
-          @scala.inline
-          def setList(value: Target => HttpRequest[GoogleApiTranslateLanguageListResponse]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: Target => HttpRequest[GoogleApiTranslateLanguageListResponse]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
       }
       
@@ -69,17 +63,14 @@ object gapi {
       }
       object translations {
         
-        @scala.inline
-        def apply(list: Cid => HttpRequest[GoogleApiTranslateTranslationListResponse]): translations = {
+        inline def apply(list: Cid => HttpRequest[GoogleApiTranslateTranslationListResponse]): translations = {
           val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list))
           __obj.asInstanceOf[translations]
         }
         
-        @scala.inline
-        implicit class translationsMutableBuilder[Self <: translations] (val x: Self) extends AnyVal {
+        extension [Self <: translations](x: Self) {
           
-          @scala.inline
-          def setList(value: Cid => HttpRequest[GoogleApiTranslateTranslationListResponse]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+          inline def setList(value: Cid => HttpRequest[GoogleApiTranslateTranslationListResponse]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
       }
     }

@@ -99,6 +99,7 @@
 | 5098 | [deepmerge](./d/deepmerge) | A library for deep (recursive) merging of Javascri
 | 5057 | [angular__http](./a/angular__http) | Angular - the http service
 | 4985 | [redis](./r/redis) | A high performance Redis client.
+| 4914 | [loader-utils](./l/loader-utils) | utils for webpack loaders
 | 4876 | [cors](./c/cors) | Node.js CORS middleware
 | 4809 | [cookie-parser](./c/cookie-parser) | Parse HTTP request cookies
 | 4771 | [marked](./m/marked) | A markdown parser built for speed
@@ -133,6 +134,7 @@
 | 3500 | [figlet](./f/figlet) | Creates ASCII Art from text. A full implementation
 | 3498 | [compression](./c/compression) | Node.js compression middleware
 | 3497 | [update-notifier](./u/update-notifier) | Update notifications for your CLI app
+| 3478 | [terser-webpack-plugin](./t/terser-webpack-plugin) | Terser plugin for webpack
 | 3427 | [isomorphic-fetch](./i/isomorphic-fetch) | Isomorphic WHATWG Fetch API, for Node & Browserify
 | 3379 | [eslint-config-prettier](./e/eslint-config-prettier) | Turns off all rules that are unnecessary or might 
 | 3376 | [npm](./n/npm) | a package manager for JavaScript
@@ -1370,6 +1372,7 @@
 | 247 | [brace-expansion](./b/brace-expansion) | Brace expansion as known from sh/bash
 | 247 | [enzyme-to-json](./e/enzyme-to-json) | convert enzyme wrapper to a format compatible with
 | 247 | [express-ws](./e/express-ws) | WebSocket endpoints for Express applications
+| 247 | [function-bind](./f/function-bind) | Implementation of Function.prototype.bind
 | 247 | [jsonld](./j/jsonld) | A JSON-LD Processor and API implementation in Java
 | 247 | [less-middleware](./l/less-middleware) | LESS.js middleware for connect.
 | 247 | [mobile-detect](./m/mobile-detect) | Device detection (phone, tablet, desktop, mobile g
@@ -8467,6 +8470,7 @@
 | 1 | [tokgen](./t/tokgen) | Generate cryptographically secure token strings
 | 1 | [trayballoon](./t/trayballoon) | Create a trayballoon on Windows
 | 1 | [ts3-nodejs-library](./t/ts3-nodejs-library) | TeamSpeak Server Query API
+| 1 | [tspromise](./t/tspromise) | A ES6-compatible node.js promise library for harmo
 | 1 | [turist__time](./t/turist__time) | Making time pass faster on the ship
 | 1 | [typescript-event-handler](./t/typescript-event-handler) | Event handler written in Typescript.
 | 1 | [typescript-logic](./t/typescript-logic) | TypeScript generics to work with boolean types

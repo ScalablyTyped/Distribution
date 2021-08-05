@@ -14,7 +14,7 @@ object stateMatcherMod {
   class StateMatcher protected () extends StObject {
     def this(_states: StringDictionary[StateObject]) = this()
     
-    var _states: js.Any = js.native
+    /* private */ var _states: js.Any = js.native
     
     def find(stateOrName: StateOrName): StateObject = js.native
     def find(stateOrName: StateOrName, base: Unit, matchGlob: Boolean): StateObject = js.native

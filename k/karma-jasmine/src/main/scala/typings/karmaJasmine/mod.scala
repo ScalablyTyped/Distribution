@@ -31,32 +31,24 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setJasmine(value: EnvConfigurationtimeoutIn): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
+      inline def setJasmine(value: EnvConfigurationtimeoutIn): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJasmineUndefined: Self = StObject.set(x, "jasmine", js.undefined)
+      inline def setJasmineUndefined: Self = StObject.set(x, "jasmine", js.undefined)
       
-      @scala.inline
-      def setShardIndex(value: Double): Self = StObject.set(x, "shardIndex", value.asInstanceOf[js.Any])
+      inline def setShardIndex(value: Double): Self = StObject.set(x, "shardIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardIndexUndefined: Self = StObject.set(x, "shardIndex", js.undefined)
+      inline def setShardIndexUndefined: Self = StObject.set(x, "shardIndex", js.undefined)
       
-      @scala.inline
-      def setTotalShards(value: Double): Self = StObject.set(x, "totalShards", value.asInstanceOf[js.Any])
+      inline def setTotalShards(value: Double): Self = StObject.set(x, "totalShards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalShardsUndefined: Self = StObject.set(x, "totalShards", js.undefined)
+      inline def setTotalShardsUndefined: Self = StObject.set(x, "totalShards", js.undefined)
     }
   }
 }

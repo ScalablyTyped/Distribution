@@ -13,25 +13,19 @@ trait RollupCache extends StObject {
 }
 object RollupCache {
   
-  @scala.inline
-  def apply(modules: js.Array[ModuleJSON]): RollupCache = {
+  inline def apply(modules: js.Array[ModuleJSON]): RollupCache = {
     val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupCache]
   }
   
-  @scala.inline
-  implicit class RollupCacheMutableBuilder[Self <: RollupCache] (val x: Self) extends AnyVal {
+  extension [Self <: RollupCache](x: Self) {
     
-    @scala.inline
-    def setModules(value: js.Array[ModuleJSON]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: js.Array[ModuleJSON]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModulesVarargs(value: ModuleJSON*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: ModuleJSON*): Self = StObject.set(x, "modules", js.Array(value :_*))
     
-    @scala.inline
-    def setPlugins(value: Record[String, SerializablePluginCache]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: Record[String, SerializablePluginCache]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
   }
 }

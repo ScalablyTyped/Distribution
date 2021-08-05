@@ -28,37 +28,27 @@ trait Relationship extends StObject {
 }
 object Relationship {
   
-  @scala.inline
-  def apply(): Relationship = {
+  inline def apply(): Relationship = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Relationship]
   }
   
-  @scala.inline
-  implicit class RelationshipMutableBuilder[Self <: Relationship] (val x: Self) extends AnyVal {
+  extension [Self <: Relationship](x: Self) {
     
-    @scala.inline
-    def setRelationshipName(value: RelationshipName): Self = StObject.set(x, "relationshipName", value.asInstanceOf[js.Any])
+    inline def setRelationshipName(value: RelationshipName): Self = StObject.set(x, "relationshipName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipNameUndefined: Self = StObject.set(x, "relationshipName", js.undefined)
+    inline def setRelationshipNameUndefined: Self = StObject.set(x, "relationshipName", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

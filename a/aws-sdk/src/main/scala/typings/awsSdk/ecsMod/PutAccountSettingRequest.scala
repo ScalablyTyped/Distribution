@@ -23,25 +23,19 @@ trait PutAccountSettingRequest extends StObject {
 }
 object PutAccountSettingRequest {
   
-  @scala.inline
-  def apply(name: SettingName, value: String): PutAccountSettingRequest = {
+  inline def apply(name: SettingName, value: String): PutAccountSettingRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAccountSettingRequest]
   }
   
-  @scala.inline
-  implicit class PutAccountSettingRequestMutableBuilder[Self <: PutAccountSettingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAccountSettingRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalArn(value: String): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
+    inline def setPrincipalArn(value: String): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
+    inline def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

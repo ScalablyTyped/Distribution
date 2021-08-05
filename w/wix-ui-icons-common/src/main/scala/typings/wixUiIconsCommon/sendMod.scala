@@ -22,20 +22,16 @@ object sendMod extends Shortcut {
   }
   object SendProps {
     
-    @scala.inline
-    def apply(): SendProps = {
+    inline def apply(): SendProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SendProps]
     }
     
-    @scala.inline
-    implicit class SendPropsMutableBuilder[Self <: SendProps] (val x: Self) extends AnyVal {
+    extension [Self <: SendProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

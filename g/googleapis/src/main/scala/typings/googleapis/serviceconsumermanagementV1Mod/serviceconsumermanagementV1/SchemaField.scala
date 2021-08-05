@@ -64,76 +64,53 @@ trait SchemaField extends StObject {
 }
 object SchemaField {
   
-  @scala.inline
-  def apply(): SchemaField = {
+  inline def apply(): SchemaField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaField]
   }
   
-  @scala.inline
-  implicit class SchemaFieldMutableBuilder[Self <: SchemaField] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaField](x: Self) {
     
-    @scala.inline
-    def setCardinality(value: String): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
+    inline def setCardinality(value: String): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
+    inline def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setJsonName(value: String): Self = StObject.set(x, "jsonName", value.asInstanceOf[js.Any])
+    inline def setJsonName(value: String): Self = StObject.set(x, "jsonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonNameUndefined: Self = StObject.set(x, "jsonName", js.undefined)
+    inline def setJsonNameUndefined: Self = StObject.set(x, "jsonName", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setOneofIndex(value: Double): Self = StObject.set(x, "oneofIndex", value.asInstanceOf[js.Any])
+    inline def setOneofIndex(value: Double): Self = StObject.set(x, "oneofIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneofIndexUndefined: Self = StObject.set(x, "oneofIndex", js.undefined)
+    inline def setOneofIndexUndefined: Self = StObject.set(x, "oneofIndex", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Array[SchemaOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[SchemaOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: SchemaOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: SchemaOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
+    inline def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
+    inline def setPackedUndefined: Self = StObject.set(x, "packed", js.undefined)
     
-    @scala.inline
-    def setTypeUrl(value: String): Self = StObject.set(x, "typeUrl", value.asInstanceOf[js.Any])
+    inline def setTypeUrl(value: String): Self = StObject.set(x, "typeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUrlUndefined: Self = StObject.set(x, "typeUrl", js.undefined)
+    inline def setTypeUrlUndefined: Self = StObject.set(x, "typeUrl", js.undefined)
   }
 }

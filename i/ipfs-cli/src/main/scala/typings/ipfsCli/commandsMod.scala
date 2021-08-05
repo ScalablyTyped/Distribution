@@ -19,6 +19,5 @@ object commandsMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasCtx: CtxAny): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtx.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasCtx: CtxAny): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtx.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

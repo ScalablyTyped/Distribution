@@ -27,35 +27,27 @@ trait Segment extends StObject {
 }
 object Segment {
   
-  @scala.inline
-  def apply(): Segment = {
+  inline def apply(): Segment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Segment]
   }
   
-  @scala.inline
-  implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
+  extension [Self <: Segment](x: Self) {
     
-    @scala.inline
-    def setFields(
+    inline def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Segment & TopLevel[js.Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+    inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
     
-    @scala.inline
-    def setSetId(value: String): Self = StObject.set(x, "setId", value.asInstanceOf[js.Any])
+    inline def setSetId(value: String): Self = StObject.set(x, "setId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
+    inline def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
   }
 }

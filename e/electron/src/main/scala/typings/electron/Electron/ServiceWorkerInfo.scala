@@ -26,22 +26,17 @@ trait ServiceWorkerInfo extends StObject {
 }
 object ServiceWorkerInfo {
   
-  @scala.inline
-  def apply(renderProcessId: Double, scope: String, scriptUrl: String): ServiceWorkerInfo = {
+  inline def apply(renderProcessId: Double, scope: String, scriptUrl: String): ServiceWorkerInfo = {
     val __obj = js.Dynamic.literal(renderProcessId = renderProcessId.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], scriptUrl = scriptUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceWorkerInfo]
   }
   
-  @scala.inline
-  implicit class ServiceWorkerInfoMutableBuilder[Self <: ServiceWorkerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceWorkerInfo](x: Self) {
     
-    @scala.inline
-    def setRenderProcessId(value: Double): Self = StObject.set(x, "renderProcessId", value.asInstanceOf[js.Any])
+    inline def setRenderProcessId(value: Double): Self = StObject.set(x, "renderProcessId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptUrl(value: String): Self = StObject.set(x, "scriptUrl", value.asInstanceOf[js.Any])
+    inline def setScriptUrl(value: String): Self = StObject.set(x, "scriptUrl", value.asInstanceOf[js.Any])
   }
 }

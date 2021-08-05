@@ -50,21 +50,16 @@ object principalAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PrincipalAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PrincipalAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PrincipalAssociationState): PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrincipalAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PrincipalAssociationState, opts: CustomResourceOptions): PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PrincipalAssociation]
+    inline def get(name: String, id: Input[ID]): PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PrincipalAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PrincipalAssociation]
+    inline def get(name: String, id: Input[ID], state: PrincipalAssociationState): PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrincipalAssociation]
+    inline def get(name: String, id: Input[ID], state: PrincipalAssociationState, opts: CustomResourceOptions): PrincipalAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PrincipalAssociation]
     
     /**
       * Returns true if the given object is an instance of PrincipalAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/principalAssociation.PrincipalAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/principalAssociation.PrincipalAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/principalAssociation.PrincipalAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/principalAssociation.PrincipalAssociation */ Boolean]
   }
   
   trait PrincipalAssociationArgs extends StObject {
@@ -81,20 +76,16 @@ object principalAssociationMod {
   }
   object PrincipalAssociationArgs {
     
-    @scala.inline
-    def apply(principal: Input[String], resourceShareArn: Input[String]): PrincipalAssociationArgs = {
+    inline def apply(principal: Input[String], resourceShareArn: Input[String]): PrincipalAssociationArgs = {
       val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any], resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrincipalAssociationArgs]
     }
     
-    @scala.inline
-    implicit class PrincipalAssociationArgsMutableBuilder[Self <: PrincipalAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PrincipalAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceShareArn(value: Input[String]): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+      inline def setResourceShareArn(value: Input[String]): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object principalAssociationMod {
   }
   object PrincipalAssociationState {
     
-    @scala.inline
-    def apply(): PrincipalAssociationState = {
+    inline def apply(): PrincipalAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrincipalAssociationState]
     }
     
-    @scala.inline
-    implicit class PrincipalAssociationStateMutableBuilder[Self <: PrincipalAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: PrincipalAssociationState](x: Self) {
       
-      @scala.inline
-      def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+      inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
       
-      @scala.inline
-      def setResourceShareArn(value: Input[String]): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+      inline def setResourceShareArn(value: Input[String]): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceShareArnUndefined: Self = StObject.set(x, "resourceShareArn", js.undefined)
+      inline def setResourceShareArnUndefined: Self = StObject.set(x, "resourceShareArn", js.undefined)
     }
   }
 }

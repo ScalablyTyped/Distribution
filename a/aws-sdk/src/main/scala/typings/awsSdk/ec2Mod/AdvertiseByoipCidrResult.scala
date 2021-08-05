@@ -13,19 +13,15 @@ trait AdvertiseByoipCidrResult extends StObject {
 }
 object AdvertiseByoipCidrResult {
   
-  @scala.inline
-  def apply(): AdvertiseByoipCidrResult = {
+  inline def apply(): AdvertiseByoipCidrResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvertiseByoipCidrResult]
   }
   
-  @scala.inline
-  implicit class AdvertiseByoipCidrResultMutableBuilder[Self <: AdvertiseByoipCidrResult] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiseByoipCidrResult](x: Self) {
     
-    @scala.inline
-    def setByoipCidr(value: ByoipCidr): Self = StObject.set(x, "ByoipCidr", value.asInstanceOf[js.Any])
+    inline def setByoipCidr(value: ByoipCidr): Self = StObject.set(x, "ByoipCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByoipCidrUndefined: Self = StObject.set(x, "ByoipCidr", js.undefined)
+    inline def setByoipCidrUndefined: Self = StObject.set(x, "ByoipCidr", js.undefined)
   }
 }

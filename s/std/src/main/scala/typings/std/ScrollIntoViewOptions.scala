@@ -14,25 +14,19 @@ trait ScrollIntoViewOptions
 }
 object ScrollIntoViewOptions {
   
-  @scala.inline
-  def apply(): ScrollIntoViewOptions = {
+  inline def apply(): ScrollIntoViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollIntoViewOptions]
   }
   
-  @scala.inline
-  implicit class ScrollIntoViewOptionsMutableBuilder[Self <: ScrollIntoViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollIntoViewOptions](x: Self) {
     
-    @scala.inline
-    def setBlock(value: ScrollLogicalPosition): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: ScrollLogicalPosition): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
-    @scala.inline
-    def setInline(value: ScrollLogicalPosition): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: ScrollLogicalPosition): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+    inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
   }
 }

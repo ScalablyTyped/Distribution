@@ -15,14 +15,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def combineReducers(reducers: SeamlessReducers): Reducer[js.Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[js.Any, AnyAction]]
+  inline def combineReducers(reducers: SeamlessReducers): Reducer[js.Any, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineReducers")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[js.Any, AnyAction]]
   
-  @scala.inline
-  def routerReducer[T /* <: Reducer[js.Any, AnyAction] */](state: T, action: Action[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("routerReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def routerReducer[T /* <: Reducer[js.Any, AnyAction] */](state: T, action: Action[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("routerReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def stateTransformer[T](state: Immutable[T, js.Object]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("stateTransformer")(state.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def stateTransformer[T](state: Immutable[T, js.Object]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("stateTransformer")(state.asInstanceOf[js.Any]).asInstanceOf[T]
   
   type SeamlessReducers = StringDictionary[Reducer[js.Any, js.Any]]
 }

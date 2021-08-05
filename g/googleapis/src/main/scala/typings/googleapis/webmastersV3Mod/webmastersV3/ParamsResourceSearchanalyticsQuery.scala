@@ -29,31 +29,23 @@ trait ParamsResourceSearchanalyticsQuery
 }
 object ParamsResourceSearchanalyticsQuery {
   
-  @scala.inline
-  def apply(): ParamsResourceSearchanalyticsQuery = {
+  inline def apply(): ParamsResourceSearchanalyticsQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSearchanalyticsQuery]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSearchanalyticsQueryMutableBuilder[Self <: ParamsResourceSearchanalyticsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSearchanalyticsQuery](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaSearchAnalyticsQueryRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaSearchAnalyticsQueryRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
+    inline def setSiteUrl(value: String): Self = StObject.set(x, "siteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
+    inline def setSiteUrlUndefined: Self = StObject.set(x, "siteUrl", js.undefined)
   }
 }

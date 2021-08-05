@@ -27,28 +27,21 @@ trait DistributionLoggingConfig extends StObject {
 }
 object DistributionLoggingConfig {
   
-  @scala.inline
-  def apply(bucket: Input[String]): DistributionLoggingConfig = {
+  inline def apply(bucket: Input[String]): DistributionLoggingConfig = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionLoggingConfig]
   }
   
-  @scala.inline
-  implicit class DistributionLoggingConfigMutableBuilder[Self <: DistributionLoggingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionLoggingConfig](x: Self) {
     
-    @scala.inline
-    def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCookies(value: Input[Boolean]): Self = StObject.set(x, "includeCookies", value.asInstanceOf[js.Any])
+    inline def setIncludeCookies(value: Input[Boolean]): Self = StObject.set(x, "includeCookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCookiesUndefined: Self = StObject.set(x, "includeCookies", js.undefined)
+    inline def setIncludeCookiesUndefined: Self = StObject.set(x, "includeCookies", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

@@ -8,16 +8,13 @@ object meteorUniverseI18nStrings {
   
   @js.native
   sealed trait code extends StObject
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait name extends StObject
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait nativeNames extends StObject
-  @scala.inline
-  def nativeNames: nativeNames = "nativeNames".asInstanceOf[nativeNames]
+  inline def nativeNames: nativeNames = "nativeNames".asInstanceOf[nativeNames]
 }

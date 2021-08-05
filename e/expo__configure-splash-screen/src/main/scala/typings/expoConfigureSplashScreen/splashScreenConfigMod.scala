@@ -30,41 +30,30 @@ object splashScreenConfigMod {
   }
   object AndroidSplashScreenConfig {
     
-    @scala.inline
-    def apply(backgroundColor: Color): AndroidSplashScreenConfig = {
+    inline def apply(backgroundColor: Color): AndroidSplashScreenConfig = {
       val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[AndroidSplashScreenConfig]
     }
     
-    @scala.inline
-    implicit class AndroidSplashScreenConfigMutableBuilder[Self <: AndroidSplashScreenConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AndroidSplashScreenConfig](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkMode(value: Image): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
+      inline def setDarkMode(value: Image): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
+      inline def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageResizeMode(value: SplashScreenImageResizeModeType): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
+      inline def setImageResizeMode(value: SplashScreenImageResizeModeType): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
+      inline def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setStatusBar(value: Style): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+      inline def setStatusBar(value: Style): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+      inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
     }
   }
   
@@ -82,41 +71,30 @@ object splashScreenConfigMod {
   }
   object AndroidSplashScreenConfigJSON {
     
-    @scala.inline
-    def apply(backgroundColor: String): AndroidSplashScreenConfigJSON = {
+    inline def apply(backgroundColor: String): AndroidSplashScreenConfigJSON = {
       val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[AndroidSplashScreenConfigJSON]
     }
     
-    @scala.inline
-    implicit class AndroidSplashScreenConfigJSONMutableBuilder[Self <: AndroidSplashScreenConfigJSON] (val x: Self) extends AnyVal {
+    extension [Self <: AndroidSplashScreenConfigJSON](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkMode(value: StatusBar): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
+      inline def setDarkMode(value: StatusBar): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
+      inline def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageResizeMode(value: String): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
+      inline def setImageResizeMode(value: String): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
+      inline def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setStatusBar(value: Translucent): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+      inline def setStatusBar(value: Translucent): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+      inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
     }
   }
   
@@ -134,41 +112,30 @@ object splashScreenConfigMod {
   }
   object IosSplashScreenConfig {
     
-    @scala.inline
-    def apply(backgroundColor: Color): IosSplashScreenConfig = {
+    inline def apply(backgroundColor: Color): IosSplashScreenConfig = {
       val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[IosSplashScreenConfig]
     }
     
-    @scala.inline
-    implicit class IosSplashScreenConfigMutableBuilder[Self <: IosSplashScreenConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IosSplashScreenConfig](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkMode(value: BackgroundColor): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
+      inline def setDarkMode(value: BackgroundColor): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
+      inline def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageResizeMode(value: SplashScreenImageResizeModeType): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
+      inline def setImageResizeMode(value: SplashScreenImageResizeModeType): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
+      inline def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setStatusBar(value: Hidden): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+      inline def setStatusBar(value: Hidden): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+      inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
     }
   }
   
@@ -186,41 +153,30 @@ object splashScreenConfigMod {
   }
   object IosSplashScreenConfigJSON {
     
-    @scala.inline
-    def apply(backgroundColor: String): IosSplashScreenConfigJSON = {
+    inline def apply(backgroundColor: String): IosSplashScreenConfigJSON = {
       val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[IosSplashScreenConfigJSON]
     }
     
-    @scala.inline
-    implicit class IosSplashScreenConfigJSONMutableBuilder[Self <: IosSplashScreenConfigJSON] (val x: Self) extends AnyVal {
+    extension [Self <: IosSplashScreenConfigJSON](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkMode(value: BackgroundColorImage): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
+      inline def setDarkMode(value: BackgroundColorImage): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
+      inline def setDarkModeUndefined: Self = StObject.set(x, "darkMode", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageResizeMode(value: String): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
+      inline def setImageResizeMode(value: String): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
+      inline def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setStatusBar(value: HiddenStyle): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+      inline def setStatusBar(value: HiddenStyle): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+      inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
     }
   }
 }

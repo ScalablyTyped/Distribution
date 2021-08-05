@@ -13,16 +13,13 @@ trait VideoId extends StObject {
 }
 object VideoId {
   
-  @scala.inline
-  def apply(videoId: String): VideoId = {
+  inline def apply(videoId: String): VideoId = {
     val __obj = js.Dynamic.literal(videoId = videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoId]
   }
   
-  @scala.inline
-  implicit class VideoIdMutableBuilder[Self <: VideoId] (val x: Self) extends AnyVal {
+  extension [Self <: VideoId](x: Self) {
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
   }
 }

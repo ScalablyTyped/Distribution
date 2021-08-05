@@ -10,22 +10,17 @@ trait PsbtGlobalUpdate extends StObject {
 }
 object PsbtGlobalUpdate {
   
-  @scala.inline
-  def apply(): PsbtGlobalUpdate = {
+  inline def apply(): PsbtGlobalUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PsbtGlobalUpdate]
   }
   
-  @scala.inline
-  implicit class PsbtGlobalUpdateMutableBuilder[Self <: PsbtGlobalUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: PsbtGlobalUpdate](x: Self) {
     
-    @scala.inline
-    def setGlobalXpub(value: js.Array[GlobalXpub]): Self = StObject.set(x, "globalXpub", value.asInstanceOf[js.Any])
+    inline def setGlobalXpub(value: js.Array[GlobalXpub]): Self = StObject.set(x, "globalXpub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalXpubUndefined: Self = StObject.set(x, "globalXpub", js.undefined)
+    inline def setGlobalXpubUndefined: Self = StObject.set(x, "globalXpub", js.undefined)
     
-    @scala.inline
-    def setGlobalXpubVarargs(value: GlobalXpub*): Self = StObject.set(x, "globalXpub", js.Array(value :_*))
+    inline def setGlobalXpubVarargs(value: GlobalXpub*): Self = StObject.set(x, "globalXpub", js.Array(value :_*))
   }
 }

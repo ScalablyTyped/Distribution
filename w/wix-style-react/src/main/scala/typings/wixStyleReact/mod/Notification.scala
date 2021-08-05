@@ -22,18 +22,15 @@ object Notification {
   @JSImport("wix-style-react", "Notification.ActionButton")
   @js.native
   def ActionButton: SFC[ActionButtonProps] = js.native
-  @scala.inline
-  def ActionButton_=(x: SFC[ActionButtonProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ActionButton")(x.asInstanceOf[js.Any])
+  inline def ActionButton_=(x: SFC[ActionButtonProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ActionButton")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Notification.CloseButton")
   @js.native
   def CloseButton: Instantiable0[typings.wixStyleReact.closeButtonMod.default] = js.native
-  @scala.inline
-  def CloseButton_=(x: Instantiable0[typings.wixStyleReact.closeButtonMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CloseButton")(x.asInstanceOf[js.Any])
+  inline def CloseButton_=(x: Instantiable0[typings.wixStyleReact.closeButtonMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CloseButton")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "Notification.TextLabel")
   @js.native
   def TextLabel: SFC[TextLabelProps] = js.native
-  @scala.inline
-  def TextLabel_=(x: SFC[TextLabelProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextLabel")(x.asInstanceOf[js.Any])
+  inline def TextLabel_=(x: SFC[TextLabelProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextLabel")(x.asInstanceOf[js.Any])
 }

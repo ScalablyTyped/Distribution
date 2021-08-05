@@ -12,22 +12,17 @@ trait ExternalDocs extends StObject {
 }
 object ExternalDocs {
   
-  @scala.inline
-  def apply(url: String): ExternalDocs = {
+  inline def apply(url: String): ExternalDocs = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalDocs]
   }
   
-  @scala.inline
-  implicit class ExternalDocsMutableBuilder[Self <: ExternalDocs] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalDocs](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

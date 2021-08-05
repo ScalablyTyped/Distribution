@@ -70,13 +70,10 @@ object cacheMod {
   trait CacheKeys extends StObject
   object CacheKeys {
     
-    @scala.inline
-    def after: typings.rrule.rruleStrings.after = "after".asInstanceOf[typings.rrule.rruleStrings.after]
+    inline def after: typings.rrule.rruleStrings.after = "after".asInstanceOf[typings.rrule.rruleStrings.after]
     
-    @scala.inline
-    def before: typings.rrule.rruleStrings.before = "before".asInstanceOf[typings.rrule.rruleStrings.before]
+    inline def before: typings.rrule.rruleStrings.before = "before".asInstanceOf[typings.rrule.rruleStrings.before]
     
-    @scala.inline
-    def between: typings.rrule.rruleStrings.between = "between".asInstanceOf[typings.rrule.rruleStrings.between]
+    inline def between: typings.rrule.rruleStrings.between = "between".asInstanceOf[typings.rrule.rruleStrings.between]
   }
 }

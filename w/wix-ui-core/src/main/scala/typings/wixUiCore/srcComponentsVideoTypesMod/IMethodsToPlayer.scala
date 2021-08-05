@@ -30,8 +30,7 @@ trait IMethodsToPlayer extends StObject {
 }
 object IMethodsToPlayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentTime: String | js.Function,
     getDuration: String | js.Function,
     getVolume: String | js.Function,
@@ -47,43 +46,30 @@ object IMethodsToPlayer {
     __obj.asInstanceOf[IMethodsToPlayer]
   }
   
-  @scala.inline
-  implicit class IMethodsToPlayerMutableBuilder[Self <: IMethodsToPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: IMethodsToPlayer](x: Self) {
     
-    @scala.inline
-    def setGetCurrentTime(value: String | js.Function): Self = StObject.set(x, "getCurrentTime", value.asInstanceOf[js.Any])
+    inline def setGetCurrentTime(value: String | js.Function): Self = StObject.set(x, "getCurrentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDuration(value: String | js.Function): Self = StObject.set(x, "getDuration", value.asInstanceOf[js.Any])
+    inline def setGetDuration(value: String | js.Function): Self = StObject.set(x, "getDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetVolume(value: String | js.Function): Self = StObject.set(x, "getVolume", value.asInstanceOf[js.Any])
+    inline def setGetVolume(value: String | js.Function): Self = StObject.set(x, "getVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMuted(value: String | js.Function): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
+    inline def setIsMuted(value: String | js.Function): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMute(value: String | js.Function): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
+    inline def setMute(value: String | js.Function): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: String | js.Function): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    inline def setPause(value: String | js.Function): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlay(value: String | js.Function): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    inline def setPlay(value: String | js.Function): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeekTo(value: String | js.Function): Self = StObject.set(x, "seekTo", value.asInstanceOf[js.Any])
+    inline def setSeekTo(value: String | js.Function): Self = StObject.set(x, "seekTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetVolume(value: String | js.Function): Self = StObject.set(x, "setVolume", value.asInstanceOf[js.Any])
+    inline def setSetVolume(value: String | js.Function): Self = StObject.set(x, "setVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: String | js.Function): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: String | js.Function): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
-    @scala.inline
-    def setUnMute(value: String | js.Function): Self = StObject.set(x, "unMute", value.asInstanceOf[js.Any])
+    inline def setUnMute(value: String | js.Function): Self = StObject.set(x, "unMute", value.asInstanceOf[js.Any])
   }
 }

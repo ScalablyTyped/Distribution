@@ -14,23 +14,18 @@ object anon {
   }
   object Down {
     
-    @scala.inline
-    def apply(up: () => js.Thenable[js.Any]): Down = {
+    inline def apply(up: () => js.Thenable[js.Any]): Down = {
       val __obj = js.Dynamic.literal(up = js.Any.fromFunction0(up))
       __obj.asInstanceOf[Down]
     }
     
-    @scala.inline
-    implicit class DownMutableBuilder[Self <: Down] (val x: Self) extends AnyVal {
+    extension [Self <: Down](x: Self) {
       
-      @scala.inline
-      def setDown(value: () => js.Thenable[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
+      inline def setDown(value: () => js.Thenable[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+      inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      @scala.inline
-      def setUp(value: () => js.Thenable[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
+      inline def setUp(value: () => js.Thenable[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
     }
   }
 }

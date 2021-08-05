@@ -31,10 +31,8 @@ object Namespace {
     * @param [toJSONOptions] JSON conversion options
     * @returns JSON object or `undefined` when array is empty
     */
-  @scala.inline
-  def arrayToJSON(array: js.Array[typings.apolloProtobufjs.mod.ReflectionObject]): js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToJSON")(array.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[StringDictionary[js.UndefOr[js.Any]]]]
-  @scala.inline
-  def arrayToJSON(array: js.Array[typings.apolloProtobufjs.mod.ReflectionObject], toJSONOptions: IToJSONOptions): js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayToJSON")(array.asInstanceOf[js.Any], toJSONOptions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[StringDictionary[js.UndefOr[js.Any]]]]
+  inline def arrayToJSON(array: js.Array[typings.apolloProtobufjs.mod.ReflectionObject]): js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToJSON")(array.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[StringDictionary[js.UndefOr[js.Any]]]]
+  inline def arrayToJSON(array: js.Array[typings.apolloProtobufjs.mod.ReflectionObject], toJSONOptions: IToJSONOptions): js.UndefOr[StringDictionary[js.UndefOr[js.Any]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayToJSON")(array.asInstanceOf[js.Any], toJSONOptions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[StringDictionary[js.UndefOr[js.Any]]]]
   
   /**
     * Constructs a namespace from JSON.
@@ -43,8 +41,7 @@ object Namespace {
     * @returns Created namespace
     * @throws {TypeError} If arguments are invalid
     */
-  @scala.inline
-  def fromJSON(name: String, json: StringDictionary[js.UndefOr[js.Any]]): typings.apolloProtobufjs.mod.Namespace = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Namespace]
+  inline def fromJSON(name: String, json: StringDictionary[js.UndefOr[js.Any]]): typings.apolloProtobufjs.mod.Namespace = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Namespace]
   
   /**
     * Tests if the specified id is reserved.
@@ -52,10 +49,8 @@ object Namespace {
     * @param id Id to test
     * @returns `true` if reserved, otherwise `false`
     */
-  @scala.inline
-  def isReservedId(reserved: js.Array[js.Array[Double] | String], id: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReservedId")(reserved.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isReservedId(reserved: Unit, id: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReservedId")(reserved.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReservedId(reserved: js.Array[js.Array[Double] | String], id: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReservedId")(reserved.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReservedId(reserved: Unit, id: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReservedId")(reserved.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Tests if the specified name is reserved.
@@ -63,8 +58,6 @@ object Namespace {
     * @param name Name to test
     * @returns `true` if reserved, otherwise `false`
     */
-  @scala.inline
-  def isReservedName(reserved: js.Array[js.Array[Double] | String], name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReservedName")(reserved.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isReservedName(reserved: Unit, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReservedName")(reserved.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReservedName(reserved: js.Array[js.Array[Double] | String], name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReservedName")(reserved.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReservedName(reserved: Unit, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReservedName")(reserved.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

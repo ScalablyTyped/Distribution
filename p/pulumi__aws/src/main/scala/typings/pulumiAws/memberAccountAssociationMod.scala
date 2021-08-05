@@ -45,21 +45,16 @@ object memberAccountAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MemberAccountAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MemberAccountAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MemberAccountAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MemberAccountAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MemberAccountAssociationState): MemberAccountAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MemberAccountAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MemberAccountAssociationState, opts: CustomResourceOptions): MemberAccountAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MemberAccountAssociation]
+    inline def get(name: String, id: Input[ID]): MemberAccountAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MemberAccountAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MemberAccountAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MemberAccountAssociation]
+    inline def get(name: String, id: Input[ID], state: MemberAccountAssociationState): MemberAccountAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MemberAccountAssociation]
+    inline def get(name: String, id: Input[ID], state: MemberAccountAssociationState, opts: CustomResourceOptions): MemberAccountAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MemberAccountAssociation]
     
     /**
       * Returns true if the given object is an instance of MemberAccountAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/memberAccountAssociation.MemberAccountAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/macie/memberAccountAssociation.MemberAccountAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/memberAccountAssociation.MemberAccountAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/macie/memberAccountAssociation.MemberAccountAssociation */ Boolean]
   }
   
   trait MemberAccountAssociationArgs extends StObject {
@@ -71,17 +66,14 @@ object memberAccountAssociationMod {
   }
   object MemberAccountAssociationArgs {
     
-    @scala.inline
-    def apply(memberAccountId: Input[String]): MemberAccountAssociationArgs = {
+    inline def apply(memberAccountId: Input[String]): MemberAccountAssociationArgs = {
       val __obj = js.Dynamic.literal(memberAccountId = memberAccountId.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemberAccountAssociationArgs]
     }
     
-    @scala.inline
-    implicit class MemberAccountAssociationArgsMutableBuilder[Self <: MemberAccountAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MemberAccountAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setMemberAccountId(value: Input[String]): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
+      inline def setMemberAccountId(value: Input[String]): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +86,16 @@ object memberAccountAssociationMod {
   }
   object MemberAccountAssociationState {
     
-    @scala.inline
-    def apply(): MemberAccountAssociationState = {
+    inline def apply(): MemberAccountAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MemberAccountAssociationState]
     }
     
-    @scala.inline
-    implicit class MemberAccountAssociationStateMutableBuilder[Self <: MemberAccountAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: MemberAccountAssociationState](x: Self) {
       
-      @scala.inline
-      def setMemberAccountId(value: Input[String]): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
+      inline def setMemberAccountId(value: Input[String]): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberAccountIdUndefined: Self = StObject.set(x, "memberAccountId", js.undefined)
+      inline def setMemberAccountIdUndefined: Self = StObject.set(x, "memberAccountId", js.undefined)
     }
   }
 }

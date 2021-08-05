@@ -24,8 +24,7 @@ object activityIndicatorIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/activity-indicator/index.native", "default.defaultProps")
     @js.native
     def defaultProps: Animating = js.native
-    @scala.inline
-    def defaultProps_=(x: Animating): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Animating): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ActivityIndicatorNativeProps
@@ -38,26 +37,20 @@ object activityIndicatorIndexNativeMod {
   }
   object ActivityIndicatorNativeProps {
     
-    @scala.inline
-    def apply(): ActivityIndicatorNativeProps = {
+    inline def apply(): ActivityIndicatorNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActivityIndicatorNativeProps]
     }
     
-    @scala.inline
-    implicit class ActivityIndicatorNativePropsMutableBuilder[Self <: ActivityIndicatorNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: ActivityIndicatorNativeProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IActivityIndicatorStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IActivityIndicatorStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   

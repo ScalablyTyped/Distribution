@@ -20,8 +20,7 @@ trait XAutoFormattable
 }
 object XAutoFormattable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     autoFormat: String => Unit,
     queryInterface: `type` => js.Any,
@@ -31,10 +30,8 @@ object XAutoFormattable {
     __obj.asInstanceOf[XAutoFormattable]
   }
   
-  @scala.inline
-  implicit class XAutoFormattableMutableBuilder[Self <: XAutoFormattable] (val x: Self) extends AnyVal {
+  extension [Self <: XAutoFormattable](x: Self) {
     
-    @scala.inline
-    def setAutoFormat(value: String => Unit): Self = StObject.set(x, "autoFormat", js.Any.fromFunction1(value))
+    inline def setAutoFormat(value: String => Unit): Self = StObject.set(x, "autoFormat", js.Any.fromFunction1(value))
   }
 }

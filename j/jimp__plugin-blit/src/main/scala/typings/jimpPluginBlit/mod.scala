@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Blit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Blit]
+  inline def default(): Blit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Blit]
   
   @js.native
   trait Blit extends StObject {

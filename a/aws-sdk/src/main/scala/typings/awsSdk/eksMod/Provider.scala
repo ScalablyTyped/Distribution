@@ -13,19 +13,15 @@ trait Provider extends StObject {
 }
 object Provider {
   
-  @scala.inline
-  def apply(): Provider = {
+  inline def apply(): Provider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Provider]
   }
   
-  @scala.inline
-  implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
+  extension [Self <: Provider](x: Self) {
     
-    @scala.inline
-    def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
+    inline def setKeyArn(value: String): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyArnUndefined: Self = StObject.set(x, "keyArn", js.undefined)
+    inline def setKeyArnUndefined: Self = StObject.set(x, "keyArn", js.undefined)
   }
 }

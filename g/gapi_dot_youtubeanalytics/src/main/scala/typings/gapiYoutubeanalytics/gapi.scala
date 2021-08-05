@@ -21,17 +21,14 @@ object gapi {
       }
       object reports {
         
-        @scala.inline
-        def apply(query: Dimensions => HttpRequest[js.Any]): reports = {
+        inline def apply(query: Dimensions => HttpRequest[js.Any]): reports = {
           val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
           __obj.asInstanceOf[reports]
         }
         
-        @scala.inline
-        implicit class reportsMutableBuilder[Self <: reports] (val x: Self) extends AnyVal {
+        extension [Self <: reports](x: Self) {
           
-          @scala.inline
-          def setQuery(value: Dimensions => HttpRequest[js.Any]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+          inline def setQuery(value: Dimensions => HttpRequest[js.Any]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
         }
       }
     }

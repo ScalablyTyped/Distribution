@@ -17,16 +17,13 @@ trait GroupTotals[T]
 }
 object GroupTotals {
   
-  @scala.inline
-  def apply[T](group: Group[T]): GroupTotals[T] = {
+  inline def apply[T](group: Group[T]): GroupTotals[T] = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupTotals[T]]
   }
   
-  @scala.inline
-  implicit class GroupTotalsMutableBuilder[Self <: GroupTotals[?], T] (val x: Self & GroupTotals[T]) extends AnyVal {
+  extension [Self <: GroupTotals[?], T](x: Self & GroupTotals[T]) {
     
-    @scala.inline
-    def setGroup(value: Group[T]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Group[T]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }
 }

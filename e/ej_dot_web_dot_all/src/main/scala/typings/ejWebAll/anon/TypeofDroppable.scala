@@ -15,19 +15,15 @@ trait TypeofDroppable extends StObject {
 }
 object TypeofDroppable {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Droppable): TypeofDroppable = {
+  inline def apply(Locale: js.Any, fn: Droppable): TypeofDroppable = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDroppable]
   }
   
-  @scala.inline
-  implicit class TypeofDroppableMutableBuilder[Self <: TypeofDroppable] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDroppable](x: Self) {
     
-    @scala.inline
-    def setFn(value: Droppable): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Droppable): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

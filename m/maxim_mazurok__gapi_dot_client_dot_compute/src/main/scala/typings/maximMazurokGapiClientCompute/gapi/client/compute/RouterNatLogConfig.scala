@@ -19,25 +19,19 @@ trait RouterNatLogConfig extends StObject {
 }
 object RouterNatLogConfig {
   
-  @scala.inline
-  def apply(): RouterNatLogConfig = {
+  inline def apply(): RouterNatLogConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouterNatLogConfig]
   }
   
-  @scala.inline
-  implicit class RouterNatLogConfigMutableBuilder[Self <: RouterNatLogConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RouterNatLogConfig](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

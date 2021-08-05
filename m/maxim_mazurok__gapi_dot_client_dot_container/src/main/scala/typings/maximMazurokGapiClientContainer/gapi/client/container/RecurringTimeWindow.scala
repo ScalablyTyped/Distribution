@@ -22,25 +22,19 @@ trait RecurringTimeWindow extends StObject {
 }
 object RecurringTimeWindow {
   
-  @scala.inline
-  def apply(): RecurringTimeWindow = {
+  inline def apply(): RecurringTimeWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecurringTimeWindow]
   }
   
-  @scala.inline
-  implicit class RecurringTimeWindowMutableBuilder[Self <: RecurringTimeWindow] (val x: Self) extends AnyVal {
+  extension [Self <: RecurringTimeWindow](x: Self) {
     
-    @scala.inline
-    def setRecurrence(value: String): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
+    inline def setRecurrence(value: String): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
+    inline def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
-    @scala.inline
-    def setWindow(value: TimeWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: TimeWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

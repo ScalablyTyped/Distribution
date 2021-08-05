@@ -13,20 +13,16 @@ object textAndNumberFilterParametersMod {
   }
   object TextAndNumberFilterParameters {
     
-    @scala.inline
-    def apply(): TextAndNumberFilterParameters = {
+    inline def apply(): TextAndNumberFilterParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextAndNumberFilterParameters]
     }
     
-    @scala.inline
-    implicit class TextAndNumberFilterParametersMutableBuilder[Self <: TextAndNumberFilterParameters] (val x: Self) extends AnyVal {
+    extension [Self <: TextAndNumberFilterParameters](x: Self) {
       
-      @scala.inline
-      def setNewRowsAction(value: String): Self = StObject.set(x, "newRowsAction", value.asInstanceOf[js.Any])
+      inline def setNewRowsAction(value: String): Self = StObject.set(x, "newRowsAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewRowsActionUndefined: Self = StObject.set(x, "newRowsAction", js.undefined)
+      inline def setNewRowsActionUndefined: Self = StObject.set(x, "newRowsAction", js.undefined)
     }
   }
 }

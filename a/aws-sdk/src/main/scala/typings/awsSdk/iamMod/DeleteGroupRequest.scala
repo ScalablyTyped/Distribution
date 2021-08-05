@@ -13,16 +13,13 @@ trait DeleteGroupRequest extends StObject {
 }
 object DeleteGroupRequest {
   
-  @scala.inline
-  def apply(GroupName: groupNameType): DeleteGroupRequest = {
+  inline def apply(GroupName: groupNameType): DeleteGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteGroupRequestMutableBuilder[Self <: DeleteGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGroupRequest](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
   }
 }

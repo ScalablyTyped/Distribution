@@ -15,8 +15,7 @@ trait Keyframes
 }
 object Keyframes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -37,16 +36,12 @@ object Keyframes {
     __obj.asInstanceOf[Keyframes]
   }
   
-  @scala.inline
-  implicit class KeyframesMutableBuilder[Self <: Keyframes] (val x: Self) extends AnyVal {
+  extension [Self <: Keyframes](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegments(value: js.Array[Node]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[Node]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value :_*))
   }
 }

@@ -30,31 +30,23 @@ trait SchemaClientUserInvitation extends StObject {
 }
 object SchemaClientUserInvitation {
   
-  @scala.inline
-  def apply(): SchemaClientUserInvitation = {
+  inline def apply(): SchemaClientUserInvitation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClientUserInvitation]
   }
   
-  @scala.inline
-  implicit class SchemaClientUserInvitationMutableBuilder[Self <: SchemaClientUserInvitation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClientUserInvitation](x: Self) {
     
-    @scala.inline
-    def setClientAccountId(value: String): Self = StObject.set(x, "clientAccountId", value.asInstanceOf[js.Any])
+    inline def setClientAccountId(value: String): Self = StObject.set(x, "clientAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAccountIdUndefined: Self = StObject.set(x, "clientAccountId", js.undefined)
+    inline def setClientAccountIdUndefined: Self = StObject.set(x, "clientAccountId", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
+    inline def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
   }
 }

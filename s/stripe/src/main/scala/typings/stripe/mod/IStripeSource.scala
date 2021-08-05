@@ -62,8 +62,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IStripeSource extends StObject
 object IStripeSource {
   
-  @scala.inline
-  def IBankAccount(
+  inline def IBankAccount(
     bank_name: String,
     country: String,
     currency: String,
@@ -79,8 +78,7 @@ object IStripeSource {
     __obj.asInstanceOf[typings.stripe.mod.bankAccounts.IBankAccount]
   }
   
-  @scala.inline
-  def IBitcoinReceiver(
+  inline def IBitcoinReceiver(
     active: Boolean,
     amount: Double,
     amount_received: Double,
@@ -108,8 +106,7 @@ object IStripeSource {
     __obj.asInstanceOf[typings.stripe.mod.bitcoinReceivers.IBitcoinReceiver]
   }
   
-  @scala.inline
-  def ICard(
+  inline def ICard(
     brand: Visa | (`American Express`) | MasterCard | Discover | JCB | (`Diners Club`) | Unknown,
     country: String,
     cvc_check: pass | fail | unavailable | unchecked,
@@ -125,8 +122,7 @@ object IStripeSource {
     __obj.asInstanceOf[typings.stripe.mod.cards.ICard]
   }
   
-  @scala.inline
-  def ISource(
+  inline def ISource(
     client_secret: String,
     created: Double,
     flow: redirect | receiver | code_verification | none,

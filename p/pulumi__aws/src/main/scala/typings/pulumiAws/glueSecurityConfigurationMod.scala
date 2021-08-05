@@ -51,21 +51,16 @@ object glueSecurityConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SecurityConfigurationState): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SecurityConfigurationState, opts: CustomResourceOptions): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
+    inline def get(name: String, id: Input[ID]): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
+    inline def get(name: String, id: Input[ID], state: SecurityConfigurationState): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
+    inline def get(name: String, id: Input[ID], state: SecurityConfigurationState, opts: CustomResourceOptions): SecurityConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityConfiguration]
     
     /**
       * Returns true if the given object is an instance of SecurityConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/securityConfiguration.SecurityConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/securityConfiguration.SecurityConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/securityConfiguration.SecurityConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/securityConfiguration.SecurityConfiguration */ Boolean]
   }
   
   trait SecurityConfigurationArgs extends StObject {
@@ -82,25 +77,20 @@ object glueSecurityConfigurationMod {
   }
   object SecurityConfigurationArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       encryptionConfiguration: Input[typings.pulumiAws.inputMod.glue.SecurityConfigurationEncryptionConfiguration]
     ): SecurityConfigurationArgs = {
       val __obj = js.Dynamic.literal(encryptionConfiguration = encryptionConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecurityConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class SecurityConfigurationArgsMutableBuilder[Self <: SecurityConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SecurityConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.glue.SecurityConfigurationEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.glue.SecurityConfigurationEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -120,26 +110,20 @@ object glueSecurityConfigurationMod {
   }
   object SecurityConfigurationState {
     
-    @scala.inline
-    def apply(): SecurityConfigurationState = {
+    inline def apply(): SecurityConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SecurityConfigurationState]
     }
     
-    @scala.inline
-    implicit class SecurityConfigurationStateMutableBuilder[Self <: SecurityConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: SecurityConfigurationState](x: Self) {
       
-      @scala.inline
-      def setEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.glue.SecurityConfigurationEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.glue.SecurityConfigurationEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurationUndefined: Self = StObject.set(x, "encryptionConfiguration", js.undefined)
+      inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "encryptionConfiguration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

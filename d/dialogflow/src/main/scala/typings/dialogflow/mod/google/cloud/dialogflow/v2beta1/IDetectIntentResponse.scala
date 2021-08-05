@@ -29,70 +29,49 @@ trait IDetectIntentResponse extends StObject {
 }
 object IDetectIntentResponse {
   
-  @scala.inline
-  def apply(): IDetectIntentResponse = {
+  inline def apply(): IDetectIntentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDetectIntentResponse]
   }
   
-  @scala.inline
-  implicit class IDetectIntentResponseMutableBuilder[Self <: IDetectIntentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IDetectIntentResponse](x: Self) {
     
-    @scala.inline
-    def setAlternativeQueryResults(value: js.Array[IQueryResult]): Self = StObject.set(x, "alternativeQueryResults", value.asInstanceOf[js.Any])
+    inline def setAlternativeQueryResults(value: js.Array[IQueryResult]): Self = StObject.set(x, "alternativeQueryResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativeQueryResultsNull: Self = StObject.set(x, "alternativeQueryResults", null)
+    inline def setAlternativeQueryResultsNull: Self = StObject.set(x, "alternativeQueryResults", null)
     
-    @scala.inline
-    def setAlternativeQueryResultsUndefined: Self = StObject.set(x, "alternativeQueryResults", js.undefined)
+    inline def setAlternativeQueryResultsUndefined: Self = StObject.set(x, "alternativeQueryResults", js.undefined)
     
-    @scala.inline
-    def setAlternativeQueryResultsVarargs(value: IQueryResult*): Self = StObject.set(x, "alternativeQueryResults", js.Array(value :_*))
+    inline def setAlternativeQueryResultsVarargs(value: IQueryResult*): Self = StObject.set(x, "alternativeQueryResults", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputAudio(value: Uint8Array | String): Self = StObject.set(x, "outputAudio", value.asInstanceOf[js.Any])
+    inline def setOutputAudio(value: Uint8Array | String): Self = StObject.set(x, "outputAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputAudioConfig(value: IOutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
+    inline def setOutputAudioConfig(value: IOutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputAudioConfigNull: Self = StObject.set(x, "outputAudioConfig", null)
+    inline def setOutputAudioConfigNull: Self = StObject.set(x, "outputAudioConfig", null)
     
-    @scala.inline
-    def setOutputAudioConfigUndefined: Self = StObject.set(x, "outputAudioConfig", js.undefined)
+    inline def setOutputAudioConfigUndefined: Self = StObject.set(x, "outputAudioConfig", js.undefined)
     
-    @scala.inline
-    def setOutputAudioNull: Self = StObject.set(x, "outputAudio", null)
+    inline def setOutputAudioNull: Self = StObject.set(x, "outputAudio", null)
     
-    @scala.inline
-    def setOutputAudioUndefined: Self = StObject.set(x, "outputAudio", js.undefined)
+    inline def setOutputAudioUndefined: Self = StObject.set(x, "outputAudio", js.undefined)
     
-    @scala.inline
-    def setQueryResult(value: IQueryResult): Self = StObject.set(x, "queryResult", value.asInstanceOf[js.Any])
+    inline def setQueryResult(value: IQueryResult): Self = StObject.set(x, "queryResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryResultNull: Self = StObject.set(x, "queryResult", null)
+    inline def setQueryResultNull: Self = StObject.set(x, "queryResult", null)
     
-    @scala.inline
-    def setQueryResultUndefined: Self = StObject.set(x, "queryResult", js.undefined)
+    inline def setQueryResultUndefined: Self = StObject.set(x, "queryResult", js.undefined)
     
-    @scala.inline
-    def setResponseId(value: String): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
+    inline def setResponseId(value: String): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseIdNull: Self = StObject.set(x, "responseId", null)
+    inline def setResponseIdNull: Self = StObject.set(x, "responseId", null)
     
-    @scala.inline
-    def setResponseIdUndefined: Self = StObject.set(x, "responseId", js.undefined)
+    inline def setResponseIdUndefined: Self = StObject.set(x, "responseId", js.undefined)
     
-    @scala.inline
-    def setWebhookStatus(value: IStatus): Self = StObject.set(x, "webhookStatus", value.asInstanceOf[js.Any])
+    inline def setWebhookStatus(value: IStatus): Self = StObject.set(x, "webhookStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookStatusNull: Self = StObject.set(x, "webhookStatus", null)
+    inline def setWebhookStatusNull: Self = StObject.set(x, "webhookStatus", null)
     
-    @scala.inline
-    def setWebhookStatusUndefined: Self = StObject.set(x, "webhookStatus", js.undefined)
+    inline def setWebhookStatusUndefined: Self = StObject.set(x, "webhookStatus", js.undefined)
   }
 }

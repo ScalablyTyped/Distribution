@@ -14,20 +14,16 @@ object anon {
   }
   object Complete {
     
-    @scala.inline
-    def apply(complete: () => Unit, error: js.Any => Unit): Complete = {
+    inline def apply(complete: () => Unit, error: js.Any => Unit): Complete = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error))
       __obj.asInstanceOf[Complete]
     }
     
-    @scala.inline
-    implicit class CompleteMutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
+    extension [Self <: Complete](x: Self) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     }
   }
 }

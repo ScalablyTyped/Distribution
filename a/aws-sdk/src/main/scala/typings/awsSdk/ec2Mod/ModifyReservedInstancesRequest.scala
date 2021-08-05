@@ -23,8 +23,7 @@ trait ModifyReservedInstancesRequest extends StObject {
 }
 object ModifyReservedInstancesRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ReservedInstancesIds: ReservedInstancesIdStringList,
     TargetConfigurations: ReservedInstancesConfigurationList
   ): ModifyReservedInstancesRequest = {
@@ -32,25 +31,18 @@ object ModifyReservedInstancesRequest {
     __obj.asInstanceOf[ModifyReservedInstancesRequest]
   }
   
-  @scala.inline
-  implicit class ModifyReservedInstancesRequestMutableBuilder[Self <: ModifyReservedInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyReservedInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesIds(value: ReservedInstancesIdStringList): Self = StObject.set(x, "ReservedInstancesIds", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesIds(value: ReservedInstancesIdStringList): Self = StObject.set(x, "ReservedInstancesIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value :_*))
+    inline def setReservedInstancesIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetConfigurations(value: ReservedInstancesConfigurationList): Self = StObject.set(x, "TargetConfigurations", value.asInstanceOf[js.Any])
+    inline def setTargetConfigurations(value: ReservedInstancesConfigurationList): Self = StObject.set(x, "TargetConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetConfigurationsVarargs(value: ReservedInstancesConfiguration*): Self = StObject.set(x, "TargetConfigurations", js.Array(value :_*))
+    inline def setTargetConfigurationsVarargs(value: ReservedInstancesConfiguration*): Self = StObject.set(x, "TargetConfigurations", js.Array(value :_*))
   }
 }

@@ -20,37 +20,27 @@ trait GoogleCloudMlV1SuggestTrialsMetadata extends StObject {
 }
 object GoogleCloudMlV1SuggestTrialsMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1SuggestTrialsMetadata = {
+  inline def apply(): GoogleCloudMlV1SuggestTrialsMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1SuggestTrialsMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1SuggestTrialsMetadataMutableBuilder[Self <: GoogleCloudMlV1SuggestTrialsMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1SuggestTrialsMetadata](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setStudy(value: String): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
+    inline def setStudy(value: String): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudyUndefined: Self = StObject.set(x, "study", js.undefined)
+    inline def setStudyUndefined: Self = StObject.set(x, "study", js.undefined)
     
-    @scala.inline
-    def setSuggestionCount(value: Double): Self = StObject.set(x, "suggestionCount", value.asInstanceOf[js.Any])
+    inline def setSuggestionCount(value: Double): Self = StObject.set(x, "suggestionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionCountUndefined: Self = StObject.set(x, "suggestionCount", js.undefined)
+    inline def setSuggestionCountUndefined: Self = StObject.set(x, "suggestionCount", js.undefined)
   }
 }

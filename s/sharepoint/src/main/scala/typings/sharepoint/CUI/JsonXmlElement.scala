@@ -18,8 +18,7 @@ trait JsonXmlElement extends StObject {
 }
 object JsonXmlElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: (String, js.Array[String]) => JsonXmlElement,
     appendChildNode: JsonXmlElement => JsonXmlElement,
     get_attributes: () => js.Array[String],
@@ -30,22 +29,16 @@ object JsonXmlElement {
     __obj.asInstanceOf[JsonXmlElement]
   }
   
-  @scala.inline
-  implicit class JsonXmlElementMutableBuilder[Self <: JsonXmlElement] (val x: Self) extends AnyVal {
+  extension [Self <: JsonXmlElement](x: Self) {
     
-    @scala.inline
-    def setAppendChild(value: (String, js.Array[String]) => JsonXmlElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction2(value))
+    inline def setAppendChild(value: (String, js.Array[String]) => JsonXmlElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAppendChildNode(value: JsonXmlElement => JsonXmlElement): Self = StObject.set(x, "appendChildNode", js.Any.fromFunction1(value))
+    inline def setAppendChildNode(value: JsonXmlElement => JsonXmlElement): Self = StObject.set(x, "appendChildNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_attributes(value: () => js.Array[String]): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
+    inline def setGet_attributes(value: () => js.Array[String]): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_childNodes(value: () => js.Array[JsonXmlElement]): Self = StObject.set(x, "get_childNodes", js.Any.fromFunction0(value))
+    inline def setGet_childNodes(value: () => js.Array[JsonXmlElement]): Self = StObject.set(x, "get_childNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
   }
 }

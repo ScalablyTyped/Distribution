@@ -20,19 +20,15 @@ trait PostCommandArgument extends StObject {
 }
 object PostCommandArgument {
   
-  @scala.inline
-  def apply(Sink: XInterface, Source: XInputStream): PostCommandArgument = {
+  inline def apply(Sink: XInterface, Source: XInputStream): PostCommandArgument = {
     val __obj = js.Dynamic.literal(Sink = Sink.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCommandArgument]
   }
   
-  @scala.inline
-  implicit class PostCommandArgumentMutableBuilder[Self <: PostCommandArgument] (val x: Self) extends AnyVal {
+  extension [Self <: PostCommandArgument](x: Self) {
     
-    @scala.inline
-    def setSink(value: XInterface): Self = StObject.set(x, "Sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: XInterface): Self = StObject.set(x, "Sink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: XInputStream): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: XInputStream): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

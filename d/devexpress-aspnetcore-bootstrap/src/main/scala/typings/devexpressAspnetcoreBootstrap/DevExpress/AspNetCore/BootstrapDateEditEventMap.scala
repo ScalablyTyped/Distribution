@@ -34,8 +34,7 @@ trait BootstrapDateEditEventMap
 }
 object BootstrapDateEditEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buttonClick: ButtonEditClickEventArgs,
     calendarCustomDisabledDate: CalendarCustomDisabledDateEventArgs,
     closeUp: EventArgs,
@@ -58,43 +57,30 @@ object BootstrapDateEditEventMap {
     __obj.asInstanceOf[BootstrapDateEditEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapDateEditEventMapMutableBuilder[Self <: BootstrapDateEditEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapDateEditEventMap](x: Self) {
     
-    @scala.inline
-    def setButtonClick(value: ButtonEditClickEventArgs): Self = StObject.set(x, "buttonClick", value.asInstanceOf[js.Any])
+    inline def setButtonClick(value: ButtonEditClickEventArgs): Self = StObject.set(x, "buttonClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarCustomDisabledDate(value: CalendarCustomDisabledDateEventArgs): Self = StObject.set(x, "calendarCustomDisabledDate", value.asInstanceOf[js.Any])
+    inline def setCalendarCustomDisabledDate(value: CalendarCustomDisabledDateEventArgs): Self = StObject.set(x, "calendarCustomDisabledDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUp(value: EventArgs): Self = StObject.set(x, "closeUp", value.asInstanceOf[js.Any])
+    inline def setCloseUp(value: EventArgs): Self = StObject.set(x, "closeUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "dateChanged", value.asInstanceOf[js.Any])
+    inline def setDateChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "dateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDown(value: EventArgs): Self = StObject.set(x, "dropDown", value.asInstanceOf[js.Any])
+    inline def setDropDown(value: EventArgs): Self = StObject.set(x, "dropDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
+    inline def setKeyDown(value: EditKeyEventArgs): Self = StObject.set(x, "keyDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPress(value: EditKeyEventArgs): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
+    inline def setKeyPress(value: EditKeyEventArgs): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUp(value: EditKeyEventArgs): Self = StObject.set(x, "keyUp", value.asInstanceOf[js.Any])
+    inline def setKeyUp(value: EditKeyEventArgs): Self = StObject.set(x, "keyUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseDate(value: ParseDateEventArgs): Self = StObject.set(x, "parseDate", value.asInstanceOf[js.Any])
+    inline def setParseDate(value: ParseDateEventArgs): Self = StObject.set(x, "parseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryCloseUp(value: CancelEventArgs): Self = StObject.set(x, "queryCloseUp", value.asInstanceOf[js.Any])
+    inline def setQueryCloseUp(value: CancelEventArgs): Self = StObject.set(x, "queryCloseUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
+    inline def setTextChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "textChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInput(value: EventArgs): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+    inline def setUserInput(value: EventArgs): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

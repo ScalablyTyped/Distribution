@@ -320,8 +320,7 @@ object storageMod {
         /* options */ js.UndefOr[typings.googleCloudStorage.bucketMod.BucketOptions], 
         typings.googleCloudStorage.bucketMod.Bucket
       ] = js.native
-    @scala.inline
-    def Bucket_=(
+    inline def Bucket_=(
       x: Instantiable3[
           /* storage */ Storage, 
           /* name */ String, 
@@ -345,8 +344,7 @@ object storageMod {
         /* resourceId */ String, 
         typings.googleCloudStorage.channelMod.Channel
       ] = js.native
-    @scala.inline
-    def Channel_=(x: Instantiable3[/* storage */ Storage, /* id */ String, /* resourceId */ String, Channel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Channel")(x.asInstanceOf[js.Any])
+    inline def Channel_=(x: Instantiable3[/* storage */ Storage, /* id */ String, /* resourceId */ String, Channel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Channel")(x.asInstanceOf[js.Any])
     
     /**
       * {@link File} class.
@@ -363,8 +361,7 @@ object storageMod {
         /* options */ js.UndefOr[FileOptions], 
         typings.googleCloudStorage.fileMod.File
       ] = js.native
-    @scala.inline
-    def File_=(
+    inline def File_=(
       x: Instantiable3[/* bucket */ Bucket, /* name */ String, /* options */ js.UndefOr[FileOptions], File]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("File")(x.asInstanceOf[js.Any])
     
@@ -383,8 +380,7 @@ object storageMod {
         /* options */ js.UndefOr[HmacKeyOptions], 
         typings.googleCloudStorage.hmacKeyMod.HmacKey
       ] = js.native
-    @scala.inline
-    def HmacKey_=(
+    inline def HmacKey_=(
       x: Instantiable3[
           /* storage */ Storage, 
           /* accessId */ String, 
@@ -452,14 +448,12 @@ object storageMod {
     @JSImport("@google-cloud/storage/build/src/storage", "Storage.acl")
     @js.native
     def acl: OWNERROLE = js.native
-    @scala.inline
-    def acl_=(x: OWNERROLE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("acl")(x.asInstanceOf[js.Any])
+    inline def acl_=(x: OWNERROLE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("acl")(x.asInstanceOf[js.Any])
     
     @JSImport("@google-cloud/storage/build/src/storage", "Storage.sanitizeEndpoint")
     @js.native
     def sanitizeEndpoint: js.Any = js.native
-    @scala.inline
-    def sanitizeEndpoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitizeEndpoint")(x.asInstanceOf[js.Any])
+    inline def sanitizeEndpoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitizeEndpoint")(x.asInstanceOf[js.Any])
   }
   
   type BucketCallback = js.Function3[
@@ -477,26 +471,20 @@ object storageMod {
   }
   object BucketOptions {
     
-    @scala.inline
-    def apply(): BucketOptions = {
+    inline def apply(): BucketOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BucketOptions]
     }
     
-    @scala.inline
-    implicit class BucketOptionsMutableBuilder[Self <: BucketOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BucketOptions](x: Self) {
       
-      @scala.inline
-      def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+      inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+      inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -512,47 +500,34 @@ object storageMod {
   }
   object Cors {
     
-    @scala.inline
-    def apply(): Cors = {
+    inline def apply(): Cors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cors]
     }
     
-    @scala.inline
-    implicit class CorsMutableBuilder[Self <: Cors] (val x: Self) extends AnyVal {
+    extension [Self <: Cors](x: Self) {
       
-      @scala.inline
-      def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
+      inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
+      inline def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
       
-      @scala.inline
-      def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
       
-      @scala.inline
-      def setOrigin(value: js.Array[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: js.Array[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value :_*))
+      inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value :_*))
       
-      @scala.inline
-      def setResponseHeader(value: js.Array[String]): Self = StObject.set(x, "responseHeader", value.asInstanceOf[js.Any])
+      inline def setResponseHeader(value: js.Array[String]): Self = StObject.set(x, "responseHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseHeaderUndefined: Self = StObject.set(x, "responseHeader", js.undefined)
+      inline def setResponseHeaderUndefined: Self = StObject.set(x, "responseHeader", js.undefined)
       
-      @scala.inline
-      def setResponseHeaderVarargs(value: String*): Self = StObject.set(x, "responseHeader", js.Array(value :_*))
+      inline def setResponseHeaderVarargs(value: String*): Self = StObject.set(x, "responseHeader", js.Array(value :_*))
     }
   }
   
@@ -564,20 +539,16 @@ object storageMod {
   }
   object CreateBucketQuery {
     
-    @scala.inline
-    def apply(project: String, userProject: String): CreateBucketQuery = {
+    inline def apply(project: String, userProject: String): CreateBucketQuery = {
       val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], userProject = userProject.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateBucketQuery]
     }
     
-    @scala.inline
-    implicit class CreateBucketQueryMutableBuilder[Self <: CreateBucketQuery] (val x: Self) extends AnyVal {
+    extension [Self <: CreateBucketQuery](x: Self) {
       
-      @scala.inline
-      def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     }
   }
   
@@ -613,101 +584,70 @@ object storageMod {
   }
   object CreateBucketRequest {
     
-    @scala.inline
-    def apply(): CreateBucketRequest = {
+    inline def apply(): CreateBucketRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateBucketRequest]
     }
     
-    @scala.inline
-    implicit class CreateBucketRequestMutableBuilder[Self <: CreateBucketRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CreateBucketRequest](x: Self) {
       
-      @scala.inline
-      def setArchive(value: Boolean): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
+      inline def setArchive(value: Boolean): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchiveUndefined: Self = StObject.set(x, "archive", js.undefined)
+      inline def setArchiveUndefined: Self = StObject.set(x, "archive", js.undefined)
       
-      @scala.inline
-      def setColdline(value: Boolean): Self = StObject.set(x, "coldline", value.asInstanceOf[js.Any])
+      inline def setColdline(value: Boolean): Self = StObject.set(x, "coldline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColdlineUndefined: Self = StObject.set(x, "coldline", js.undefined)
+      inline def setColdlineUndefined: Self = StObject.set(x, "coldline", js.undefined)
       
-      @scala.inline
-      def setCors(value: js.Array[Cors]): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+      inline def setCors(value: js.Array[Cors]): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+      inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
       
-      @scala.inline
-      def setCorsVarargs(value: Cors*): Self = StObject.set(x, "cors", js.Array(value :_*))
+      inline def setCorsVarargs(value: Cors*): Self = StObject.set(x, "cors", js.Array(value :_*))
       
-      @scala.inline
-      def setDra(value: Boolean): Self = StObject.set(x, "dra", value.asInstanceOf[js.Any])
+      inline def setDra(value: Boolean): Self = StObject.set(x, "dra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraUndefined: Self = StObject.set(x, "dra", js.undefined)
+      inline def setDraUndefined: Self = StObject.set(x, "dra", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setMultiRegional(value: Boolean): Self = StObject.set(x, "multiRegional", value.asInstanceOf[js.Any])
+      inline def setMultiRegional(value: Boolean): Self = StObject.set(x, "multiRegional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiRegionalUndefined: Self = StObject.set(x, "multiRegional", js.undefined)
+      inline def setMultiRegionalUndefined: Self = StObject.set(x, "multiRegional", js.undefined)
       
-      @scala.inline
-      def setNearline(value: Boolean): Self = StObject.set(x, "nearline", value.asInstanceOf[js.Any])
+      inline def setNearline(value: Boolean): Self = StObject.set(x, "nearline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearlineUndefined: Self = StObject.set(x, "nearline", js.undefined)
+      inline def setNearlineUndefined: Self = StObject.set(x, "nearline", js.undefined)
       
-      @scala.inline
-      def setRegional(value: Boolean): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+      inline def setRegional(value: Boolean): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+      inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
       
-      @scala.inline
-      def setRequesterPays(value: Boolean): Self = StObject.set(x, "requesterPays", value.asInstanceOf[js.Any])
+      inline def setRequesterPays(value: Boolean): Self = StObject.set(x, "requesterPays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequesterPaysUndefined: Self = StObject.set(x, "requesterPays", js.undefined)
+      inline def setRequesterPaysUndefined: Self = StObject.set(x, "requesterPays", js.undefined)
       
-      @scala.inline
-      def setRetentionPolicy(value: js.Object): Self = StObject.set(x, "retentionPolicy", value.asInstanceOf[js.Any])
+      inline def setRetentionPolicy(value: js.Object): Self = StObject.set(x, "retentionPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionPolicyUndefined: Self = StObject.set(x, "retentionPolicy", js.undefined)
+      inline def setRetentionPolicyUndefined: Self = StObject.set(x, "retentionPolicy", js.undefined)
       
-      @scala.inline
-      def setStandard(value: Boolean): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+      inline def setStandard(value: Boolean): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
+      inline def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
       
-      @scala.inline
-      def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
+      inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
       
-      @scala.inline
-      def setVersioning(value: Versioning): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
+      inline def setVersioning(value: Versioning): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
+      inline def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
     }
   }
   
@@ -729,26 +669,20 @@ object storageMod {
   }
   object CreateHmacKeyOptions {
     
-    @scala.inline
-    def apply(): CreateHmacKeyOptions = {
+    inline def apply(): CreateHmacKeyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateHmacKeyOptions]
     }
     
-    @scala.inline
-    implicit class CreateHmacKeyOptionsMutableBuilder[Self <: CreateHmacKeyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateHmacKeyOptions](x: Self) {
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -780,56 +714,40 @@ object storageMod {
   }
   object GetBucketsRequest {
     
-    @scala.inline
-    def apply(): GetBucketsRequest = {
+    inline def apply(): GetBucketsRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetBucketsRequest]
     }
     
-    @scala.inline
-    implicit class GetBucketsRequestMutableBuilder[Self <: GetBucketsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketsRequest](x: Self) {
       
-      @scala.inline
-      def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
+      inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
+      inline def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
       
-      @scala.inline
-      def setMaxApiCalls(value: Double): Self = StObject.set(x, "maxApiCalls", value.asInstanceOf[js.Any])
+      inline def setMaxApiCalls(value: Double): Self = StObject.set(x, "maxApiCalls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxApiCallsUndefined: Self = StObject.set(x, "maxApiCalls", js.undefined)
+      inline def setMaxApiCallsUndefined: Self = StObject.set(x, "maxApiCalls", js.undefined)
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+      inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+      inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -863,62 +781,44 @@ object storageMod {
   }
   object GetHmacKeysOptions {
     
-    @scala.inline
-    def apply(): GetHmacKeysOptions = {
+    inline def apply(): GetHmacKeysOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetHmacKeysOptions]
     }
     
-    @scala.inline
-    implicit class GetHmacKeysOptionsMutableBuilder[Self <: GetHmacKeysOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetHmacKeysOptions](x: Self) {
       
-      @scala.inline
-      def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
+      inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
+      inline def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
       
-      @scala.inline
-      def setMaxApiCalls(value: Double): Self = StObject.set(x, "maxApiCalls", value.asInstanceOf[js.Any])
+      inline def setMaxApiCalls(value: Double): Self = StObject.set(x, "maxApiCalls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxApiCallsUndefined: Self = StObject.set(x, "maxApiCalls", js.undefined)
+      inline def setMaxApiCallsUndefined: Self = StObject.set(x, "maxApiCalls", js.undefined)
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+      inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+      inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
       
-      @scala.inline
-      def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+      inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+      inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
       
-      @scala.inline
-      def setShowDeletedKeys(value: Boolean): Self = StObject.set(x, "showDeletedKeys", value.asInstanceOf[js.Any])
+      inline def setShowDeletedKeys(value: Boolean): Self = StObject.set(x, "showDeletedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDeletedKeysUndefined: Self = StObject.set(x, "showDeletedKeys", js.undefined)
+      inline def setShowDeletedKeysUndefined: Self = StObject.set(x, "showDeletedKeys", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -937,20 +837,16 @@ object storageMod {
   }
   object GetServiceAccountOptions {
     
-    @scala.inline
-    def apply(): GetServiceAccountOptions = {
+    inline def apply(): GetServiceAccountOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetServiceAccountOptions]
     }
     
-    @scala.inline
-    implicit class GetServiceAccountOptionsMutableBuilder[Self <: GetServiceAccountOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetServiceAccountOptions](x: Self) {
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -964,20 +860,16 @@ object storageMod {
   }
   object HmacKeyResourceResponse {
     
-    @scala.inline
-    def apply(metadata: HmacKeyMetadata, secret: String): HmacKeyResourceResponse = {
+    inline def apply(metadata: HmacKeyMetadata, secret: String): HmacKeyResourceResponse = {
       val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[HmacKeyResourceResponse]
     }
     
-    @scala.inline
-    implicit class HmacKeyResourceResponseMutableBuilder[Self <: HmacKeyResourceResponse] (val x: Self) extends AnyVal {
+    extension [Self <: HmacKeyResourceResponse](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: HmacKeyMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: HmacKeyMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
   
@@ -987,20 +879,16 @@ object storageMod {
   }
   object ServiceAccount {
     
-    @scala.inline
-    def apply(): ServiceAccount = {
+    inline def apply(): ServiceAccount = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceAccount]
     }
     
-    @scala.inline
-    implicit class ServiceAccountMutableBuilder[Self <: ServiceAccount] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceAccount](x: Self) {
       
-      @scala.inline
-      def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+      inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+      inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     }
   }
   
@@ -1024,44 +912,32 @@ object storageMod {
   }
   object StorageOptions {
     
-    @scala.inline
-    def apply(): StorageOptions = {
+    inline def apply(): StorageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StorageOptions]
     }
     
-    @scala.inline
-    implicit class StorageOptionsMutableBuilder[Self <: StorageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StorageOptions](x: Self) {
       
-      @scala.inline
-      def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+      inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
+      inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
       
-      @scala.inline
-      def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
+      inline def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
+      inline def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setPromise(value: PromiseConstructor): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   
@@ -1071,17 +947,14 @@ object storageMod {
   }
   object Versioning {
     
-    @scala.inline
-    def apply(enabled: Boolean): Versioning = {
+    inline def apply(enabled: Boolean): Versioning = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Versioning]
     }
     
-    @scala.inline
-    implicit class VersioningMutableBuilder[Self <: Versioning] (val x: Self) extends AnyVal {
+    extension [Self <: Versioning](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
 }

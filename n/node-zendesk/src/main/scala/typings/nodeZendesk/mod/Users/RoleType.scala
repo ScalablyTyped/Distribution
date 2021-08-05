@@ -18,12 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RoleType extends StObject
 object RoleType {
   
-  @scala.inline
-  def `0`: typings.nodeZendesk.nodeZendeskNumbers.`0` = 0.asInstanceOf[typings.nodeZendesk.nodeZendeskNumbers.`0`]
+  inline def `0`: typings.nodeZendesk.nodeZendeskNumbers.`0` = 0.asInstanceOf[typings.nodeZendesk.nodeZendeskNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.nodeZendesk.nodeZendeskNumbers.`1` = 1.asInstanceOf[typings.nodeZendesk.nodeZendeskNumbers.`1`]
+  inline def `1`: typings.nodeZendesk.nodeZendeskNumbers.`1` = 1.asInstanceOf[typings.nodeZendesk.nodeZendeskNumbers.`1`]
   
-  @scala.inline
-  def `2`: typings.nodeZendesk.nodeZendeskNumbers.`2` = 2.asInstanceOf[typings.nodeZendesk.nodeZendeskNumbers.`2`]
+  inline def `2`: typings.nodeZendesk.nodeZendeskNumbers.`2` = 2.asInstanceOf[typings.nodeZendesk.nodeZendeskNumbers.`2`]
 }

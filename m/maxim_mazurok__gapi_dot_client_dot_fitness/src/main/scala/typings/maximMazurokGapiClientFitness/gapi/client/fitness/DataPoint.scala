@@ -38,64 +38,45 @@ trait DataPoint extends StObject {
 }
 object DataPoint {
   
-  @scala.inline
-  def apply(): DataPoint = {
+  inline def apply(): DataPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataPoint]
   }
   
-  @scala.inline
-  implicit class DataPointMutableBuilder[Self <: DataPoint] (val x: Self) extends AnyVal {
+  extension [Self <: DataPoint](x: Self) {
     
-    @scala.inline
-    def setComputationTimeMillis(value: String): Self = StObject.set(x, "computationTimeMillis", value.asInstanceOf[js.Any])
+    inline def setComputationTimeMillis(value: String): Self = StObject.set(x, "computationTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputationTimeMillisUndefined: Self = StObject.set(x, "computationTimeMillis", js.undefined)
+    inline def setComputationTimeMillisUndefined: Self = StObject.set(x, "computationTimeMillis", js.undefined)
     
-    @scala.inline
-    def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
+    inline def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeNameUndefined: Self = StObject.set(x, "dataTypeName", js.undefined)
+    inline def setDataTypeNameUndefined: Self = StObject.set(x, "dataTypeName", js.undefined)
     
-    @scala.inline
-    def setEndTimeNanos(value: String): Self = StObject.set(x, "endTimeNanos", value.asInstanceOf[js.Any])
+    inline def setEndTimeNanos(value: String): Self = StObject.set(x, "endTimeNanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeNanosUndefined: Self = StObject.set(x, "endTimeNanos", js.undefined)
+    inline def setEndTimeNanosUndefined: Self = StObject.set(x, "endTimeNanos", js.undefined)
     
-    @scala.inline
-    def setModifiedTimeMillis(value: String): Self = StObject.set(x, "modifiedTimeMillis", value.asInstanceOf[js.Any])
+    inline def setModifiedTimeMillis(value: String): Self = StObject.set(x, "modifiedTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedTimeMillisUndefined: Self = StObject.set(x, "modifiedTimeMillis", js.undefined)
+    inline def setModifiedTimeMillisUndefined: Self = StObject.set(x, "modifiedTimeMillis", js.undefined)
     
-    @scala.inline
-    def setOriginDataSourceId(value: String): Self = StObject.set(x, "originDataSourceId", value.asInstanceOf[js.Any])
+    inline def setOriginDataSourceId(value: String): Self = StObject.set(x, "originDataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginDataSourceIdUndefined: Self = StObject.set(x, "originDataSourceId", js.undefined)
+    inline def setOriginDataSourceIdUndefined: Self = StObject.set(x, "originDataSourceId", js.undefined)
     
-    @scala.inline
-    def setRawTimestampNanos(value: String): Self = StObject.set(x, "rawTimestampNanos", value.asInstanceOf[js.Any])
+    inline def setRawTimestampNanos(value: String): Self = StObject.set(x, "rawTimestampNanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawTimestampNanosUndefined: Self = StObject.set(x, "rawTimestampNanos", js.undefined)
+    inline def setRawTimestampNanosUndefined: Self = StObject.set(x, "rawTimestampNanos", js.undefined)
     
-    @scala.inline
-    def setStartTimeNanos(value: String): Self = StObject.set(x, "startTimeNanos", value.asInstanceOf[js.Any])
+    inline def setStartTimeNanos(value: String): Self = StObject.set(x, "startTimeNanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeNanosUndefined: Self = StObject.set(x, "startTimeNanos", js.undefined)
+    inline def setStartTimeNanosUndefined: Self = StObject.set(x, "startTimeNanos", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Array[Value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: Value*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Value*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

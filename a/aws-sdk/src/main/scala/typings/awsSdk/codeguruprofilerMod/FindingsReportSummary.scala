@@ -33,43 +33,31 @@ trait FindingsReportSummary extends StObject {
 }
 object FindingsReportSummary {
   
-  @scala.inline
-  def apply(): FindingsReportSummary = {
+  inline def apply(): FindingsReportSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindingsReportSummary]
   }
   
-  @scala.inline
-  implicit class FindingsReportSummaryMutableBuilder[Self <: FindingsReportSummary] (val x: Self) extends AnyVal {
+  extension [Self <: FindingsReportSummary](x: Self) {
     
-    @scala.inline
-    def setId(value: FindingsReportId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: FindingsReportId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setProfileEndTime(value: Timestamp): Self = StObject.set(x, "profileEndTime", value.asInstanceOf[js.Any])
+    inline def setProfileEndTime(value: Timestamp): Self = StObject.set(x, "profileEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileEndTimeUndefined: Self = StObject.set(x, "profileEndTime", js.undefined)
+    inline def setProfileEndTimeUndefined: Self = StObject.set(x, "profileEndTime", js.undefined)
     
-    @scala.inline
-    def setProfileStartTime(value: Timestamp): Self = StObject.set(x, "profileStartTime", value.asInstanceOf[js.Any])
+    inline def setProfileStartTime(value: Timestamp): Self = StObject.set(x, "profileStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileStartTimeUndefined: Self = StObject.set(x, "profileStartTime", js.undefined)
+    inline def setProfileStartTimeUndefined: Self = StObject.set(x, "profileStartTime", js.undefined)
     
-    @scala.inline
-    def setProfilingGroupName(value: String): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: String): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfilingGroupNameUndefined: Self = StObject.set(x, "profilingGroupName", js.undefined)
+    inline def setProfilingGroupNameUndefined: Self = StObject.set(x, "profilingGroupName", js.undefined)
     
-    @scala.inline
-    def setTotalNumberOfFindings(value: Integer): Self = StObject.set(x, "totalNumberOfFindings", value.asInstanceOf[js.Any])
+    inline def setTotalNumberOfFindings(value: Integer): Self = StObject.set(x, "totalNumberOfFindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalNumberOfFindingsUndefined: Self = StObject.set(x, "totalNumberOfFindings", js.undefined)
+    inline def setTotalNumberOfFindingsUndefined: Self = StObject.set(x, "totalNumberOfFindings", js.undefined)
   }
 }

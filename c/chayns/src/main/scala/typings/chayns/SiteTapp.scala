@@ -31,8 +31,7 @@ trait SiteTapp extends StObject {
 }
 object SiteTapp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customUrl: String,
     id: Double,
     internalName: String,
@@ -47,37 +46,26 @@ object SiteTapp {
     __obj.asInstanceOf[SiteTapp]
   }
   
-  @scala.inline
-  implicit class SiteTappMutableBuilder[Self <: SiteTapp] (val x: Self) extends AnyVal {
+  extension [Self <: SiteTapp](x: Self) {
     
-    @scala.inline
-    def setCustomUrl(value: String): Self = StObject.set(x, "customUrl", value.asInstanceOf[js.Any])
+    inline def setCustomUrl(value: String): Self = StObject.set(x, "customUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalName(value: String): Self = StObject.set(x, "internalName", value.asInstanceOf[js.Any])
+    inline def setInternalName(value: String): Self = StObject.set(x, "internalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExclusiveView(value: Boolean): Self = StObject.set(x, "isExclusiveView", value.asInstanceOf[js.Any])
+    inline def setIsExclusiveView(value: Boolean): Self = StObject.set(x, "isExclusiveView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsKioskMode(value: Boolean): Self = StObject.set(x, "isKioskMode", value.asInstanceOf[js.Any])
+    inline def setIsKioskMode(value: Boolean): Self = StObject.set(x, "isKioskMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSubTapp(value: Boolean): Self = StObject.set(x, "isSubTapp", value.asInstanceOf[js.Any])
+    inline def setIsSubTapp(value: Boolean): Self = StObject.set(x, "isSubTapp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
+    inline def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortId(value: Double): Self = StObject.set(x, "sortId", value.asInstanceOf[js.Any])
+    inline def setSortId(value: Double): Self = StObject.set(x, "sortId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroupIds(value: js.Array[Double]): Self = StObject.set(x, "userGroupIds", value.asInstanceOf[js.Any])
+    inline def setUserGroupIds(value: js.Array[Double]): Self = StObject.set(x, "userGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroupIdsVarargs(value: Double*): Self = StObject.set(x, "userGroupIds", js.Array(value :_*))
+    inline def setUserGroupIdsVarargs(value: Double*): Self = StObject.set(x, "userGroupIds", js.Array(value :_*))
   }
 }

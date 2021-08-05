@@ -15,31 +15,23 @@ trait ServeStaticFiles_ extends StObject {
 }
 object ServeStaticFiles_ {
   
-  @scala.inline
-  def apply(): ServeStaticFiles_ = {
+  inline def apply(): ServeStaticFiles_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServeStaticFiles_]
   }
   
-  @scala.inline
-  implicit class ServeStaticFiles_MutableBuilder[Self <: ServeStaticFiles_] (val x: Self) extends AnyVal {
+  extension [Self <: ServeStaticFiles_](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+    inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
-    @scala.inline
-    def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ js.Any) => js.Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
+    inline def setSetHeaders(value: (/* res */ Response, /* path */ String, /* stat */ js.Any) => js.Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
+    inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
   }
 }

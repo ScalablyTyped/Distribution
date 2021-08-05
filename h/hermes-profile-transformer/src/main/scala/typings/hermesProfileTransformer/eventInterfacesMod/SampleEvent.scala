@@ -15,16 +15,13 @@ trait SampleEvent
 }
 object SampleEvent {
   
-  @scala.inline
-  def apply(ph: SAMPLE_EVENTS): SampleEvent = {
+  inline def apply(ph: SAMPLE_EVENTS): SampleEvent = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[SampleEvent]
   }
   
-  @scala.inline
-  implicit class SampleEventMutableBuilder[Self <: SampleEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SampleEvent](x: Self) {
     
-    @scala.inline
-    def setPh(value: SAMPLE_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: SAMPLE_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

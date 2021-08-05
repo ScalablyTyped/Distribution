@@ -23,34 +23,25 @@ trait GetDiscoveredResourceCountsResponse extends StObject {
 }
 object GetDiscoveredResourceCountsResponse {
   
-  @scala.inline
-  def apply(): GetDiscoveredResourceCountsResponse = {
+  inline def apply(): GetDiscoveredResourceCountsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDiscoveredResourceCountsResponse]
   }
   
-  @scala.inline
-  implicit class GetDiscoveredResourceCountsResponseMutableBuilder[Self <: GetDiscoveredResourceCountsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDiscoveredResourceCountsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceCounts(value: ResourceCounts): Self = StObject.set(x, "resourceCounts", value.asInstanceOf[js.Any])
+    inline def setResourceCounts(value: ResourceCounts): Self = StObject.set(x, "resourceCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceCountsUndefined: Self = StObject.set(x, "resourceCounts", js.undefined)
+    inline def setResourceCountsUndefined: Self = StObject.set(x, "resourceCounts", js.undefined)
     
-    @scala.inline
-    def setResourceCountsVarargs(value: ResourceCount*): Self = StObject.set(x, "resourceCounts", js.Array(value :_*))
+    inline def setResourceCountsVarargs(value: ResourceCount*): Self = StObject.set(x, "resourceCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalDiscoveredResources(value: Long): Self = StObject.set(x, "totalDiscoveredResources", value.asInstanceOf[js.Any])
+    inline def setTotalDiscoveredResources(value: Long): Self = StObject.set(x, "totalDiscoveredResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalDiscoveredResourcesUndefined: Self = StObject.set(x, "totalDiscoveredResources", js.undefined)
+    inline def setTotalDiscoveredResourcesUndefined: Self = StObject.set(x, "totalDiscoveredResources", js.undefined)
   }
 }

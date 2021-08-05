@@ -66,73 +66,51 @@ trait SchemaSchemaFieldSpec extends StObject {
 }
 object SchemaSchemaFieldSpec {
   
-  @scala.inline
-  def apply(): SchemaSchemaFieldSpec = {
+  inline def apply(): SchemaSchemaFieldSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSchemaFieldSpec]
   }
   
-  @scala.inline
-  implicit class SchemaSchemaFieldSpecMutableBuilder[Self <: SchemaSchemaFieldSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSchemaFieldSpec](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
+    inline def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
+    inline def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
-    @scala.inline
-    def setFieldType(value: String): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(value: String): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTypeUndefined: Self = StObject.set(x, "fieldType", js.undefined)
+    inline def setFieldTypeUndefined: Self = StObject.set(x, "fieldType", js.undefined)
     
-    @scala.inline
-    def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
+    inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
+    inline def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMultiValued(value: Boolean): Self = StObject.set(x, "multiValued", value.asInstanceOf[js.Any])
+    inline def setMultiValued(value: Boolean): Self = StObject.set(x, "multiValued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiValuedUndefined: Self = StObject.set(x, "multiValued", js.undefined)
+    inline def setMultiValuedUndefined: Self = StObject.set(x, "multiValued", js.undefined)
     
-    @scala.inline
-    def setNumericIndexingSpec(value: MaxValue): Self = StObject.set(x, "numericIndexingSpec", value.asInstanceOf[js.Any])
+    inline def setNumericIndexingSpec(value: MaxValue): Self = StObject.set(x, "numericIndexingSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericIndexingSpecUndefined: Self = StObject.set(x, "numericIndexingSpec", js.undefined)
+    inline def setNumericIndexingSpecUndefined: Self = StObject.set(x, "numericIndexingSpec", js.undefined)
     
-    @scala.inline
-    def setReadAccessType(value: String): Self = StObject.set(x, "readAccessType", value.asInstanceOf[js.Any])
+    inline def setReadAccessType(value: String): Self = StObject.set(x, "readAccessType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadAccessTypeUndefined: Self = StObject.set(x, "readAccessType", js.undefined)
+    inline def setReadAccessTypeUndefined: Self = StObject.set(x, "readAccessType", js.undefined)
   }
 }

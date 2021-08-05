@@ -13,16 +13,13 @@ trait RemoveAttributesFromFindingsResponse extends StObject {
 }
 object RemoveAttributesFromFindingsResponse {
   
-  @scala.inline
-  def apply(failedItems: FailedItems): RemoveAttributesFromFindingsResponse = {
+  inline def apply(failedItems: FailedItems): RemoveAttributesFromFindingsResponse = {
     val __obj = js.Dynamic.literal(failedItems = failedItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveAttributesFromFindingsResponse]
   }
   
-  @scala.inline
-  implicit class RemoveAttributesFromFindingsResponseMutableBuilder[Self <: RemoveAttributesFromFindingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveAttributesFromFindingsResponse](x: Self) {
     
-    @scala.inline
-    def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
+    inline def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
   }
 }

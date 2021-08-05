@@ -20,12 +20,10 @@ object MediaOverlay {
   @JSImport("wix-style-react", "MediaOverlay.Content")
   @js.native
   def Content: FC[MediaOverlayContentProps] = js.native
-  @scala.inline
-  def Content_=(x: FC[MediaOverlayContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  inline def Content_=(x: FC[MediaOverlayContentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "MediaOverlay.DragHandle")
   @js.native
   def DragHandle: FC[js.Object] = js.native
-  @scala.inline
-  def DragHandle_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragHandle")(x.asInstanceOf[js.Any])
+  inline def DragHandle_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragHandle")(x.asInstanceOf[js.Any])
 }

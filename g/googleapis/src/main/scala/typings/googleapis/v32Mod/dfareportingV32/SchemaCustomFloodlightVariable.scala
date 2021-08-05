@@ -29,31 +29,23 @@ trait SchemaCustomFloodlightVariable extends StObject {
 }
 object SchemaCustomFloodlightVariable {
   
-  @scala.inline
-  def apply(): SchemaCustomFloodlightVariable = {
+  inline def apply(): SchemaCustomFloodlightVariable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomFloodlightVariable]
   }
   
-  @scala.inline
-  implicit class SchemaCustomFloodlightVariableMutableBuilder[Self <: SchemaCustomFloodlightVariable] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomFloodlightVariable](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

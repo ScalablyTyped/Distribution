@@ -31,37 +31,27 @@ trait SchemaItemContent extends StObject {
 }
 object SchemaItemContent {
   
-  @scala.inline
-  def apply(): SchemaItemContent = {
+  inline def apply(): SchemaItemContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaItemContent]
   }
   
-  @scala.inline
-  implicit class SchemaItemContentMutableBuilder[Self <: SchemaItemContent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaItemContent](x: Self) {
     
-    @scala.inline
-    def setContentDataRef(value: SchemaUploadItemRef): Self = StObject.set(x, "contentDataRef", value.asInstanceOf[js.Any])
+    inline def setContentDataRef(value: SchemaUploadItemRef): Self = StObject.set(x, "contentDataRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDataRefUndefined: Self = StObject.set(x, "contentDataRef", js.undefined)
+    inline def setContentDataRefUndefined: Self = StObject.set(x, "contentDataRef", js.undefined)
     
-    @scala.inline
-    def setContentFormat(value: String): Self = StObject.set(x, "contentFormat", value.asInstanceOf[js.Any])
+    inline def setContentFormat(value: String): Self = StObject.set(x, "contentFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentFormatUndefined: Self = StObject.set(x, "contentFormat", js.undefined)
+    inline def setContentFormatUndefined: Self = StObject.set(x, "contentFormat", js.undefined)
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setInlineContent(value: String): Self = StObject.set(x, "inlineContent", value.asInstanceOf[js.Any])
+    inline def setInlineContent(value: String): Self = StObject.set(x, "inlineContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineContentUndefined: Self = StObject.set(x, "inlineContent", js.undefined)
+    inline def setInlineContentUndefined: Self = StObject.set(x, "inlineContent", js.undefined)
   }
 }

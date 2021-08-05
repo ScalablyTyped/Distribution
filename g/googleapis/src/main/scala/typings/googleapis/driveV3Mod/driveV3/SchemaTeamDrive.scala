@@ -76,73 +76,51 @@ trait SchemaTeamDrive extends StObject {
 }
 object SchemaTeamDrive {
   
-  @scala.inline
-  def apply(): SchemaTeamDrive = {
+  inline def apply(): SchemaTeamDrive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTeamDrive]
   }
   
-  @scala.inline
-  implicit class SchemaTeamDriveMutableBuilder[Self <: SchemaTeamDrive] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTeamDrive](x: Self) {
     
-    @scala.inline
-    def setBackgroundImageFile(value: XCoordinate): Self = StObject.set(x, "backgroundImageFile", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageFile(value: XCoordinate): Self = StObject.set(x, "backgroundImageFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageFileUndefined: Self = StObject.set(x, "backgroundImageFile", js.undefined)
+    inline def setBackgroundImageFileUndefined: Self = StObject.set(x, "backgroundImageFile", js.undefined)
     
-    @scala.inline
-    def setBackgroundImageLink(value: String): Self = StObject.set(x, "backgroundImageLink", value.asInstanceOf[js.Any])
+    inline def setBackgroundImageLink(value: String): Self = StObject.set(x, "backgroundImageLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageLinkUndefined: Self = StObject.set(x, "backgroundImageLink", js.undefined)
+    inline def setBackgroundImageLinkUndefined: Self = StObject.set(x, "backgroundImageLink", js.undefined)
     
-    @scala.inline
-    def setCapabilities(value: CanChangeCopyRequiresWriterPermissionRestriction): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: CanChangeCopyRequiresWriterPermissionRestriction): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setColorRgb(value: String): Self = StObject.set(x, "colorRgb", value.asInstanceOf[js.Any])
+    inline def setColorRgb(value: String): Self = StObject.set(x, "colorRgb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorRgbUndefined: Self = StObject.set(x, "colorRgb", js.undefined)
+    inline def setColorRgbUndefined: Self = StObject.set(x, "colorRgb", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: String): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: String): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRestrictions(value: AdminManagedRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: AdminManagedRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
+    inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
-    @scala.inline
-    def setThemeId(value: String): Self = StObject.set(x, "themeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: String): Self = StObject.set(x, "themeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeIdUndefined: Self = StObject.set(x, "themeId", js.undefined)
+    inline def setThemeIdUndefined: Self = StObject.set(x, "themeId", js.undefined)
   }
 }

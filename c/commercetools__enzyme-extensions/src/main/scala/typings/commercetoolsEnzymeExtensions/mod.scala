@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(s: Instantiable1[/* nodes */ js.Array[Element], ShallowWrapper[js.Object, js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(s: Instantiable1[/* nodes */ js.Array[Element], ShallowWrapper[js.Object, js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@commercetools/enzyme-extensions", JSImport.Namespace)
   @js.native
@@ -42,17 +41,14 @@ object mod {
     }
     object UntilOptions {
       
-      @scala.inline
-      def apply(maxDepth: Double): UntilOptions = {
+      inline def apply(maxDepth: Double): UntilOptions = {
         val __obj = js.Dynamic.literal(maxDepth = maxDepth.asInstanceOf[js.Any])
         __obj.asInstanceOf[UntilOptions]
       }
       
-      @scala.inline
-      implicit class UntilOptionsMutableBuilder[Self <: UntilOptions] (val x: Self) extends AnyVal {
+      extension [Self <: UntilOptions](x: Self) {
         
-        @scala.inline
-        def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+        inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       }
     }
   }

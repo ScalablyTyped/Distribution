@@ -13,7 +13,7 @@ object streamFromArrayStreamMod {
   class FromArrayStream protected () extends BaseStream {
     def this(array: js.Array[js.Any], scheduler: Scheduler) = this()
     
-    var _array: js.Any = js.native
+    /* private */ var _array: js.Any = js.native
   }
   /* static members */
   object FromArrayStream {
@@ -22,7 +22,6 @@ object streamFromArrayStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(array: js.Array[js.Any], scheduler: Scheduler): FromArrayStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(array.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[FromArrayStream]
+    inline def create(array: js.Array[js.Any], scheduler: Scheduler): FromArrayStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(array.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[FromArrayStream]
   }
 }

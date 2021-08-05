@@ -72,20 +72,15 @@ object mod {
   trait DraggabillyClickEventName extends StObject
   object DraggabillyClickEventName {
     
-    @scala.inline
-    def dragEnd: typings.draggabilly.draggabillyStrings.dragEnd = "dragEnd".asInstanceOf[typings.draggabilly.draggabillyStrings.dragEnd]
+    inline def dragEnd: typings.draggabilly.draggabillyStrings.dragEnd = "dragEnd".asInstanceOf[typings.draggabilly.draggabillyStrings.dragEnd]
     
-    @scala.inline
-    def dragStart: typings.draggabilly.draggabillyStrings.dragStart = "dragStart".asInstanceOf[typings.draggabilly.draggabillyStrings.dragStart]
+    inline def dragStart: typings.draggabilly.draggabillyStrings.dragStart = "dragStart".asInstanceOf[typings.draggabilly.draggabillyStrings.dragStart]
     
-    @scala.inline
-    def pointerDown: typings.draggabilly.draggabillyStrings.pointerDown = "pointerDown".asInstanceOf[typings.draggabilly.draggabillyStrings.pointerDown]
+    inline def pointerDown: typings.draggabilly.draggabillyStrings.pointerDown = "pointerDown".asInstanceOf[typings.draggabilly.draggabillyStrings.pointerDown]
     
-    @scala.inline
-    def pointerUp: typings.draggabilly.draggabillyStrings.pointerUp = "pointerUp".asInstanceOf[typings.draggabilly.draggabillyStrings.pointerUp]
+    inline def pointerUp: typings.draggabilly.draggabillyStrings.pointerUp = "pointerUp".asInstanceOf[typings.draggabilly.draggabillyStrings.pointerUp]
     
-    @scala.inline
-    def staticClick: typings.draggabilly.draggabillyStrings.staticClick = "staticClick".asInstanceOf[typings.draggabilly.draggabillyStrings.staticClick]
+    inline def staticClick: typings.draggabilly.draggabillyStrings.staticClick = "staticClick".asInstanceOf[typings.draggabilly.draggabillyStrings.staticClick]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -95,11 +90,9 @@ object mod {
   trait DraggabillyMoveEventName extends StObject
   object DraggabillyMoveEventName {
     
-    @scala.inline
-    def dragMove: typings.draggabilly.draggabillyStrings.dragMove = "dragMove".asInstanceOf[typings.draggabilly.draggabillyStrings.dragMove]
+    inline def dragMove: typings.draggabilly.draggabillyStrings.dragMove = "dragMove".asInstanceOf[typings.draggabilly.draggabillyStrings.dragMove]
     
-    @scala.inline
-    def pointerMove: typings.draggabilly.draggabillyStrings.pointerMove = "pointerMove".asInstanceOf[typings.draggabilly.draggabillyStrings.pointerMove]
+    inline def pointerMove: typings.draggabilly.draggabillyStrings.pointerMove = "pointerMove".asInstanceOf[typings.draggabilly.draggabillyStrings.pointerMove]
   }
   
   trait DraggabillyOptions extends StObject {
@@ -114,38 +107,28 @@ object mod {
   }
   object DraggabillyOptions {
     
-    @scala.inline
-    def apply(): DraggabillyOptions = {
+    inline def apply(): DraggabillyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DraggabillyOptions]
     }
     
-    @scala.inline
-    implicit class DraggabillyOptionsMutableBuilder[Self <: DraggabillyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DraggabillyOptions](x: Self) {
       
-      @scala.inline
-      def setAxis(value: typings.draggabilly.draggabillyStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: typings.draggabilly.draggabillyStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setContainment(value: Element | String | Boolean): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+      inline def setContainment(value: Element | String | Boolean): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
+      inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
       
-      @scala.inline
-      def setGrid(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     }
   }
   
@@ -157,20 +140,16 @@ object mod {
   }
   object Position {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Position = {
+    inline def apply(x: Double, y: Double): Position = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Position]
     }
     
-    @scala.inline
-    implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+    extension [Self <: Position](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

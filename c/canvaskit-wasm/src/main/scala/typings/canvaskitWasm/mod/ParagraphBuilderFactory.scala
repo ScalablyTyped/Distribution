@@ -22,8 +22,7 @@ trait ParagraphBuilderFactory extends StObject {
 }
 object ParagraphBuilderFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Make: (ParagraphStyle, SkFontMgr) => ParagraphBuilder,
     MakeFromFontProvider: (ParagraphStyle, TypefaceFontProvider) => ParagraphBuilder
   ): ParagraphBuilderFactory = {
@@ -31,13 +30,10 @@ object ParagraphBuilderFactory {
     __obj.asInstanceOf[ParagraphBuilderFactory]
   }
   
-  @scala.inline
-  implicit class ParagraphBuilderFactoryMutableBuilder[Self <: ParagraphBuilderFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphBuilderFactory](x: Self) {
     
-    @scala.inline
-    def setMake(value: (ParagraphStyle, SkFontMgr) => ParagraphBuilder): Self = StObject.set(x, "Make", js.Any.fromFunction2(value))
+    inline def setMake(value: (ParagraphStyle, SkFontMgr) => ParagraphBuilder): Self = StObject.set(x, "Make", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMakeFromFontProvider(value: (ParagraphStyle, TypefaceFontProvider) => ParagraphBuilder): Self = StObject.set(x, "MakeFromFontProvider", js.Any.fromFunction2(value))
+    inline def setMakeFromFontProvider(value: (ParagraphStyle, TypefaceFontProvider) => ParagraphBuilder): Self = StObject.set(x, "MakeFromFontProvider", js.Any.fromFunction2(value))
   }
 }

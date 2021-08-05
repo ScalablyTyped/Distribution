@@ -146,8 +146,7 @@ trait XGraphicDevice
 }
 object XGraphicDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BufferController: XBufferController,
     DeviceColorSpace: XColorSpace,
     ParametricPolyPolygonFactory: XMultiServiceFactory,
@@ -174,61 +173,42 @@ object XGraphicDevice {
     __obj.asInstanceOf[XGraphicDevice]
   }
   
-  @scala.inline
-  implicit class XGraphicDeviceMutableBuilder[Self <: XGraphicDevice] (val x: Self) extends AnyVal {
+  extension [Self <: XGraphicDevice](x: Self) {
     
-    @scala.inline
-    def setBufferController(value: XBufferController): Self = StObject.set(x, "BufferController", value.asInstanceOf[js.Any])
+    inline def setBufferController(value: XBufferController): Self = StObject.set(x, "BufferController", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCompatibleAlphaBitmap(value: IntegerSize2D => XBitmap): Self = StObject.set(x, "createCompatibleAlphaBitmap", js.Any.fromFunction1(value))
+    inline def setCreateCompatibleAlphaBitmap(value: IntegerSize2D => XBitmap): Self = StObject.set(x, "createCompatibleAlphaBitmap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCompatibleBezierPolyPolygon(value: SeqEquiv[SeqEquiv[RealBezierSegment2D]] => XBezierPolyPolygon2D): Self = StObject.set(x, "createCompatibleBezierPolyPolygon", js.Any.fromFunction1(value))
+    inline def setCreateCompatibleBezierPolyPolygon(value: SeqEquiv[SeqEquiv[RealBezierSegment2D]] => XBezierPolyPolygon2D): Self = StObject.set(x, "createCompatibleBezierPolyPolygon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCompatibleBitmap(value: IntegerSize2D => XBitmap): Self = StObject.set(x, "createCompatibleBitmap", js.Any.fromFunction1(value))
+    inline def setCreateCompatibleBitmap(value: IntegerSize2D => XBitmap): Self = StObject.set(x, "createCompatibleBitmap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateCompatibleLinePolyPolygon(value: SeqEquiv[SeqEquiv[RealPoint2D]] => XLinePolyPolygon2D): Self = StObject.set(x, "createCompatibleLinePolyPolygon", js.Any.fromFunction1(value))
+    inline def setCreateCompatibleLinePolyPolygon(value: SeqEquiv[SeqEquiv[RealPoint2D]] => XLinePolyPolygon2D): Self = StObject.set(x, "createCompatibleLinePolyPolygon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateVolatileAlphaBitmap(value: IntegerSize2D => XVolatileBitmap): Self = StObject.set(x, "createVolatileAlphaBitmap", js.Any.fromFunction1(value))
+    inline def setCreateVolatileAlphaBitmap(value: IntegerSize2D => XVolatileBitmap): Self = StObject.set(x, "createVolatileAlphaBitmap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateVolatileBitmap(value: IntegerSize2D => XVolatileBitmap): Self = StObject.set(x, "createVolatileBitmap", js.Any.fromFunction1(value))
+    inline def setCreateVolatileBitmap(value: IntegerSize2D => XVolatileBitmap): Self = StObject.set(x, "createVolatileBitmap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeviceColorSpace(value: XColorSpace): Self = StObject.set(x, "DeviceColorSpace", value.asInstanceOf[js.Any])
+    inline def setDeviceColorSpace(value: XColorSpace): Self = StObject.set(x, "DeviceColorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterFullScreenMode(value: Boolean => Boolean): Self = StObject.set(x, "enterFullScreenMode", js.Any.fromFunction1(value))
+    inline def setEnterFullScreenMode(value: Boolean => Boolean): Self = StObject.set(x, "enterFullScreenMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBufferController(value: () => XBufferController): Self = StObject.set(x, "getBufferController", js.Any.fromFunction0(value))
+    inline def setGetBufferController(value: () => XBufferController): Self = StObject.set(x, "getBufferController", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDeviceColorSpace(value: () => XColorSpace): Self = StObject.set(x, "getDeviceColorSpace", js.Any.fromFunction0(value))
+    inline def setGetDeviceColorSpace(value: () => XColorSpace): Self = StObject.set(x, "getDeviceColorSpace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParametricPolyPolygonFactory(value: () => XMultiServiceFactory): Self = StObject.set(x, "getParametricPolyPolygonFactory", js.Any.fromFunction0(value))
+    inline def setGetParametricPolyPolygonFactory(value: () => XMultiServiceFactory): Self = StObject.set(x, "getParametricPolyPolygonFactory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPhysicalResolution(value: () => RealSize2D): Self = StObject.set(x, "getPhysicalResolution", js.Any.fromFunction0(value))
+    inline def setGetPhysicalResolution(value: () => RealSize2D): Self = StObject.set(x, "getPhysicalResolution", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPhysicalSize(value: () => RealSize2D): Self = StObject.set(x, "getPhysicalSize", js.Any.fromFunction0(value))
+    inline def setGetPhysicalSize(value: () => RealSize2D): Self = StObject.set(x, "getPhysicalSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasFullScreenMode(value: () => Boolean): Self = StObject.set(x, "hasFullScreenMode", js.Any.fromFunction0(value))
+    inline def setHasFullScreenMode(value: () => Boolean): Self = StObject.set(x, "hasFullScreenMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParametricPolyPolygonFactory(value: XMultiServiceFactory): Self = StObject.set(x, "ParametricPolyPolygonFactory", value.asInstanceOf[js.Any])
+    inline def setParametricPolyPolygonFactory(value: XMultiServiceFactory): Self = StObject.set(x, "ParametricPolyPolygonFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalResolution(value: RealSize2D): Self = StObject.set(x, "PhysicalResolution", value.asInstanceOf[js.Any])
+    inline def setPhysicalResolution(value: RealSize2D): Self = StObject.set(x, "PhysicalResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalSize(value: RealSize2D): Self = StObject.set(x, "PhysicalSize", value.asInstanceOf[js.Any])
+    inline def setPhysicalSize(value: RealSize2D): Self = StObject.set(x, "PhysicalSize", value.asInstanceOf[js.Any])
   }
 }

@@ -49,43 +49,31 @@ trait InkWordCollectionLoadOptions extends StObject {
 }
 object InkWordCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): InkWordCollectionLoadOptions = {
+  inline def apply(): InkWordCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkWordCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class InkWordCollectionLoadOptionsMutableBuilder[Self <: InkWordCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InkWordCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLanguageId(value: Boolean): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+    inline def setLanguageId(value: Boolean): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
+    inline def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
     
-    @scala.inline
-    def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: ParagraphLoadOptions): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+    inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
-    @scala.inline
-    def setWordAlternates(value: Boolean): Self = StObject.set(x, "wordAlternates", value.asInstanceOf[js.Any])
+    inline def setWordAlternates(value: Boolean): Self = StObject.set(x, "wordAlternates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordAlternatesUndefined: Self = StObject.set(x, "wordAlternates", js.undefined)
+    inline def setWordAlternatesUndefined: Self = StObject.set(x, "wordAlternates", js.undefined)
   }
 }

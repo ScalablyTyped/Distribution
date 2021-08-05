@@ -22,28 +22,21 @@ trait SchemaListSessionsResponse extends StObject {
 }
 object SchemaListSessionsResponse {
   
-  @scala.inline
-  def apply(): SchemaListSessionsResponse = {
+  inline def apply(): SchemaListSessionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListSessionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListSessionsResponseMutableBuilder[Self <: SchemaListSessionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListSessionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSessions(value: js.Array[SchemaSession]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+    inline def setSessions(value: js.Array[SchemaSession]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
+    inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
     
-    @scala.inline
-    def setSessionsVarargs(value: SchemaSession*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+    inline def setSessionsVarargs(value: SchemaSession*): Self = StObject.set(x, "sessions", js.Array(value :_*))
   }
 }

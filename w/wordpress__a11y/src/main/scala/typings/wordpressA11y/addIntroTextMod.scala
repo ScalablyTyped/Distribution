@@ -11,6 +11,5 @@ object addIntroTextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): HTMLParagraphElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[HTMLParagraphElement]
+  inline def default(): HTMLParagraphElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[HTMLParagraphElement]
 }

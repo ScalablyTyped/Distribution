@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class AsyncDecompress () extends StObject {
   def this(cb: AsyncFlateStreamHandler) = this()
   
-  var G: js.Any = js.native
+  /* private */ var G: js.Any = js.native
   
-  var I: js.Any = js.native
+  /* private */ var I: js.Any = js.native
   
-  var Z: js.Any = js.native
+  /* private */ var Z: js.Any = js.native
   
   /**
     * The handler to call whenever data is available

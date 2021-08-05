@@ -33,24 +33,19 @@ object urlInterfaceMod {
   }
   object MatchResult {
     
-    @scala.inline
-    def apply(`match`: js.Any, rule: UrlRule, weight: Double): MatchResult = {
+    inline def apply(`match`: js.Any, rule: UrlRule, weight: Double): MatchResult = {
       val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchResult]
     }
     
-    @scala.inline
-    implicit class MatchResultMutableBuilder[Self <: MatchResult] (val x: Self) extends AnyVal {
+    extension [Self <: MatchResult](x: Self) {
       
-      @scala.inline
-      def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRule(value: UrlRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: UrlRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,8 +60,7 @@ object urlInterfaceMod {
   }
   object MatcherUrlRule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $id: Double,
       _group: Double,
       handler: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
@@ -82,14 +76,11 @@ object urlInterfaceMod {
       __obj.asInstanceOf[MatcherUrlRule]
     }
     
-    @scala.inline
-    implicit class MatcherUrlRuleMutableBuilder[Self <: MatcherUrlRule] (val x: Self) extends AnyVal {
+    extension [Self <: MatcherUrlRule](x: Self) {
       
-      @scala.inline
-      def setType(value: URLMATCHER | STATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: URLMATCHER | STATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlMatcher(value: UrlMatcher): Self = StObject.set(x, "urlMatcher", value.asInstanceOf[js.Any])
+      inline def setUrlMatcher(value: UrlMatcher): Self = StObject.set(x, "urlMatcher", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +95,7 @@ object urlInterfaceMod {
   }
   object RegExpRule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $id: Double,
       _group: Double,
       handler: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
@@ -120,14 +110,11 @@ object urlInterfaceMod {
       __obj.asInstanceOf[RegExpRule]
     }
     
-    @scala.inline
-    implicit class RegExpRuleMutableBuilder[Self <: RegExpRule] (val x: Self) extends AnyVal {
+    extension [Self <: RegExpRule](x: Self) {
       
-      @scala.inline
-      def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: RegExp): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: REGEXP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: REGEXP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,8 +129,7 @@ object urlInterfaceMod {
   }
   object StateRule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $id: Double,
       _group: Double,
       handler: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
@@ -159,14 +145,11 @@ object urlInterfaceMod {
       __obj.asInstanceOf[StateRule]
     }
     
-    @scala.inline
-    implicit class StateRuleMutableBuilder[Self <: StateRule] (val x: Self) extends AnyVal {
+    extension [Self <: StateRule](x: Self) {
       
-      @scala.inline
-      def setState(value: StateObject): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: StateObject): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: STATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: STATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,38 +171,28 @@ object urlInterfaceMod {
   }
   object UrlMatcherCompileConfig {
     
-    @scala.inline
-    def apply(): UrlMatcherCompileConfig = {
+    inline def apply(): UrlMatcherCompileConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UrlMatcherCompileConfig]
     }
     
-    @scala.inline
-    implicit class UrlMatcherCompileConfigMutableBuilder[Self <: UrlMatcherCompileConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UrlMatcherCompileConfig](x: Self) {
       
-      @scala.inline
-      def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
+      inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
+      inline def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
       
-      @scala.inline
-      def setDecodeParams(value: Boolean): Self = StObject.set(x, "decodeParams", value.asInstanceOf[js.Any])
+      inline def setDecodeParams(value: Boolean): Self = StObject.set(x, "decodeParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeParamsUndefined: Self = StObject.set(x, "decodeParams", js.undefined)
+      inline def setDecodeParamsUndefined: Self = StObject.set(x, "decodeParams", js.undefined)
       
-      @scala.inline
-      def setState(value: StateDeclaration): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: StateDeclaration): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -255,8 +228,7 @@ object urlInterfaceMod {
   }
   object UrlMatcherConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       caseInsensitive: /* value */ js.UndefOr[Boolean] => Boolean,
       defaultSquashPolicy: /* value */ js.UndefOr[Boolean | String] => String | Boolean,
       strictMode: /* value */ js.UndefOr[Boolean] => Boolean,
@@ -267,20 +239,15 @@ object urlInterfaceMod {
       __obj.asInstanceOf[UrlMatcherConfig]
     }
     
-    @scala.inline
-    implicit class UrlMatcherConfigMutableBuilder[Self <: UrlMatcherConfig] (val x: Self) extends AnyVal {
+    extension [Self <: UrlMatcherConfig](x: Self) {
       
-      @scala.inline
-      def setCaseInsensitive(value: /* value */ js.UndefOr[Boolean] => Boolean): Self = StObject.set(x, "caseInsensitive", js.Any.fromFunction1(value))
+      inline def setCaseInsensitive(value: /* value */ js.UndefOr[Boolean] => Boolean): Self = StObject.set(x, "caseInsensitive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultSquashPolicy(value: /* value */ js.UndefOr[Boolean | String] => String | Boolean): Self = StObject.set(x, "defaultSquashPolicy", js.Any.fromFunction1(value))
+      inline def setDefaultSquashPolicy(value: /* value */ js.UndefOr[Boolean | String] => String | Boolean): Self = StObject.set(x, "defaultSquashPolicy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStrictMode(value: /* value */ js.UndefOr[Boolean] => Boolean): Self = StObject.set(x, "strictMode", js.Any.fromFunction1(value))
+      inline def setStrictMode(value: /* value */ js.UndefOr[Boolean] => Boolean): Self = StObject.set(x, "strictMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: (/* name */ String, /* definition */ js.UndefOr[ParamTypeDefinition], /* definitionFn */ js.UndefOr[js.Function0[ParamTypeDefinition]]) => js.Any
       ): Self = StObject.set(x, "type", js.Any.fromFunction3(value))
     }
@@ -296,29 +263,22 @@ object urlInterfaceMod {
   }
   object UrlParts {
     
-    @scala.inline
-    def apply(path: String): UrlParts = {
+    inline def apply(path: String): UrlParts = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlParts]
     }
     
-    @scala.inline
-    implicit class UrlPartsMutableBuilder[Self <: UrlParts] (val x: Self) extends AnyVal {
+    extension [Self <: UrlParts](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: StringDictionary[js.Any]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: StringDictionary[js.Any]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     }
   }
   
@@ -400,8 +360,7 @@ object urlInterfaceMod {
   }
   object UrlRule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $id: Double,
       _group: Double,
       handler: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit,
@@ -416,31 +375,23 @@ object urlInterfaceMod {
       __obj.asInstanceOf[UrlRule]
     }
     
-    @scala.inline
-    implicit class UrlRuleMutableBuilder[Self <: UrlRule] (val x: Self) extends AnyVal {
+    extension [Self <: UrlRule](x: Self) {
       
-      @scala.inline
-      def set$id(value: Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
+      inline def set$id(value: Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandler(
+      inline def setHandler(
         value: (/* matchValue */ js.UndefOr[js.Any], /* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => String | TargetState | TargetStateDef | Unit
       ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMatch(value: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => js.Any): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
+      inline def setMatch(value: (/* url */ js.UndefOr[UrlParts], /* router */ js.UndefOr[UIRouter]) => js.Any): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMatchPriority(value: js.Any => Double): Self = StObject.set(x, "matchPriority", js.Any.fromFunction1(value))
+      inline def setMatchPriority(value: js.Any => Double): Self = StObject.set(x, "matchPriority", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: UrlRuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: UrlRuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_group(value: Double): Self = StObject.set(x, "_group", value.asInstanceOf[js.Any])
+      inline def set_group(value: Double): Self = StObject.set(x, "_group", value.asInstanceOf[js.Any])
     }
   }
   
@@ -463,20 +414,15 @@ object urlInterfaceMod {
   trait UrlRuleType extends StObject
   object UrlRuleType {
     
-    @scala.inline
-    def OTHER: typings.uirouterCore.uirouterCoreStrings.OTHER = "OTHER".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.OTHER]
+    inline def OTHER: typings.uirouterCore.uirouterCoreStrings.OTHER = "OTHER".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.OTHER]
     
-    @scala.inline
-    def RAW: typings.uirouterCore.uirouterCoreStrings.RAW = "RAW".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.RAW]
+    inline def RAW: typings.uirouterCore.uirouterCoreStrings.RAW = "RAW".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.RAW]
     
-    @scala.inline
-    def REGEXP: typings.uirouterCore.uirouterCoreStrings.REGEXP = "REGEXP".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.REGEXP]
+    inline def REGEXP: typings.uirouterCore.uirouterCoreStrings.REGEXP = "REGEXP".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.REGEXP]
     
-    @scala.inline
-    def STATE: typings.uirouterCore.uirouterCoreStrings.STATE = "STATE".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.STATE]
+    inline def STATE: typings.uirouterCore.uirouterCoreStrings.STATE = "STATE".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.STATE]
     
-    @scala.inline
-    def URLMATCHER: typings.uirouterCore.uirouterCoreStrings.URLMATCHER = "URLMATCHER".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.URLMATCHER]
+    inline def URLMATCHER: typings.uirouterCore.uirouterCoreStrings.URLMATCHER = "URLMATCHER".asInstanceOf[typings.uirouterCore.uirouterCoreStrings.URLMATCHER]
   }
   
   trait UrlRulesApi extends StObject {
@@ -537,8 +483,7 @@ object urlInterfaceMod {
   }
   object UrlRulesApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       initial: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit,
       otherwise: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit,
       removeRule: /* rule */ js.Any => Unit,
@@ -551,29 +496,21 @@ object urlInterfaceMod {
       __obj.asInstanceOf[UrlRulesApi]
     }
     
-    @scala.inline
-    implicit class UrlRulesApiMutableBuilder[Self <: UrlRulesApi] (val x: Self) extends AnyVal {
+    extension [Self <: UrlRulesApi](x: Self) {
       
-      @scala.inline
-      def setInitial(value: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))
+      inline def setInitial(value: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOtherwise(value: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
+      inline def setOtherwise(value: /* handler */ String | UrlRuleHandlerFn | TargetState | TargetStateDef => Unit): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveRule(value: /* rule */ js.Any => Unit): Self = StObject.set(x, "removeRule", js.Any.fromFunction1(value))
+      inline def setRemoveRule(value: /* rule */ js.Any => Unit): Self = StObject.set(x, "removeRule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRule(value: /* rule */ UrlRule => js.Function): Self = StObject.set(x, "rule", js.Any.fromFunction1(value))
+      inline def setRule(value: /* rule */ UrlRule => js.Function): Self = StObject.set(x, "rule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRules(value: () => js.Array[UrlRule]): Self = StObject.set(x, "rules", js.Any.fromFunction0(value))
+      inline def setRules(value: () => js.Array[UrlRule]): Self = StObject.set(x, "rules", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSort(value: /* compareFn */ js.UndefOr[js.Function2[/* a */ UrlRule, /* b */ UrlRule, Double]] => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+      inline def setSort(value: /* compareFn */ js.UndefOr[js.Function2[/* a */ UrlRule, /* b */ UrlRule, Double]] => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWhen(
+      inline def setWhen(
         value: (/* matcher */ RegExp | UrlMatcher | String, /* handler */ String | UrlRuleHandlerFn, /* options */ js.UndefOr[Priority]) => UrlRule
       ): Self = StObject.set(x, "when", js.Any.fromFunction3(value))
     }
@@ -598,8 +535,7 @@ object urlInterfaceMod {
   }
   object UrlSyncApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deferIntercept: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['deferIntercept'] */ js.Any) & (js.Function1[/* defer */ js.UndefOr[Boolean], Unit]),
       listen: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['listen'] */ js.Any) & (js.Function1[/* enabled */ js.UndefOr[Boolean], js.Function]),
       sync: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[js.Any], Unit])
@@ -608,21 +544,17 @@ object urlInterfaceMod {
       __obj.asInstanceOf[UrlSyncApi]
     }
     
-    @scala.inline
-    implicit class UrlSyncApiMutableBuilder[Self <: UrlSyncApi] (val x: Self) extends AnyVal {
+    extension [Self <: UrlSyncApi](x: Self) {
       
-      @scala.inline
-      def setDeferIntercept(
+      inline def setDeferIntercept(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['deferIntercept'] */ js.Any) & (js.Function1[/* defer */ js.UndefOr[Boolean], Unit])
       ): Self = StObject.set(x, "deferIntercept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListen(
+      inline def setListen(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['listen'] */ js.Any) & (js.Function1[/* enabled */ js.UndefOr[Boolean], js.Function])
       ): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSync(
+      inline def setSync(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: @uirouter/core.@uirouter/core/lib/url/urlService.UrlService['sync'] */ js.Any) & (js.Function1[/* evt */ js.UndefOr[js.Any], Unit])
       ): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }

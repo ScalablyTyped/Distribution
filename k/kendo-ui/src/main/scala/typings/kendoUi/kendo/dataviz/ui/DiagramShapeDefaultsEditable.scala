@@ -16,40 +16,29 @@ trait DiagramShapeDefaultsEditable extends StObject {
 }
 object DiagramShapeDefaultsEditable {
   
-  @scala.inline
-  def apply(): DiagramShapeDefaultsEditable = {
+  inline def apply(): DiagramShapeDefaultsEditable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramShapeDefaultsEditable]
   }
   
-  @scala.inline
-  implicit class DiagramShapeDefaultsEditableMutableBuilder[Self <: DiagramShapeDefaultsEditable] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramShapeDefaultsEditable](x: Self) {
     
-    @scala.inline
-    def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+    inline def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
-    @scala.inline
-    def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+    inline def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
-    @scala.inline
-    def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setTools(value: js.Array[DiagramShapeDefaultsEditableTool]): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+    inline def setTools(value: js.Array[DiagramShapeDefaultsEditableTool]): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+    inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
     
-    @scala.inline
-    def setToolsVarargs(value: DiagramShapeDefaultsEditableTool*): Self = StObject.set(x, "tools", js.Array(value :_*))
+    inline def setToolsVarargs(value: DiagramShapeDefaultsEditableTool*): Self = StObject.set(x, "tools", js.Array(value :_*))
   }
 }

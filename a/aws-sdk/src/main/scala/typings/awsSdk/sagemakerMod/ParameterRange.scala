@@ -23,31 +23,23 @@ trait ParameterRange extends StObject {
 }
 object ParameterRange {
   
-  @scala.inline
-  def apply(): ParameterRange = {
+  inline def apply(): ParameterRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterRange]
   }
   
-  @scala.inline
-  implicit class ParameterRangeMutableBuilder[Self <: ParameterRange] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterRange](x: Self) {
     
-    @scala.inline
-    def setCategoricalParameterRangeSpecification(value: CategoricalParameterRangeSpecification): Self = StObject.set(x, "CategoricalParameterRangeSpecification", value.asInstanceOf[js.Any])
+    inline def setCategoricalParameterRangeSpecification(value: CategoricalParameterRangeSpecification): Self = StObject.set(x, "CategoricalParameterRangeSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoricalParameterRangeSpecificationUndefined: Self = StObject.set(x, "CategoricalParameterRangeSpecification", js.undefined)
+    inline def setCategoricalParameterRangeSpecificationUndefined: Self = StObject.set(x, "CategoricalParameterRangeSpecification", js.undefined)
     
-    @scala.inline
-    def setContinuousParameterRangeSpecification(value: ContinuousParameterRangeSpecification): Self = StObject.set(x, "ContinuousParameterRangeSpecification", value.asInstanceOf[js.Any])
+    inline def setContinuousParameterRangeSpecification(value: ContinuousParameterRangeSpecification): Self = StObject.set(x, "ContinuousParameterRangeSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousParameterRangeSpecificationUndefined: Self = StObject.set(x, "ContinuousParameterRangeSpecification", js.undefined)
+    inline def setContinuousParameterRangeSpecificationUndefined: Self = StObject.set(x, "ContinuousParameterRangeSpecification", js.undefined)
     
-    @scala.inline
-    def setIntegerParameterRangeSpecification(value: IntegerParameterRangeSpecification): Self = StObject.set(x, "IntegerParameterRangeSpecification", value.asInstanceOf[js.Any])
+    inline def setIntegerParameterRangeSpecification(value: IntegerParameterRangeSpecification): Self = StObject.set(x, "IntegerParameterRangeSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerParameterRangeSpecificationUndefined: Self = StObject.set(x, "IntegerParameterRangeSpecification", js.undefined)
+    inline def setIntegerParameterRangeSpecificationUndefined: Self = StObject.set(x, "IntegerParameterRangeSpecification", js.undefined)
   }
 }

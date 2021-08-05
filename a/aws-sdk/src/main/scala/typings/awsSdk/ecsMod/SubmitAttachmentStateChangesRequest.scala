@@ -18,25 +18,19 @@ trait SubmitAttachmentStateChangesRequest extends StObject {
 }
 object SubmitAttachmentStateChangesRequest {
   
-  @scala.inline
-  def apply(attachments: AttachmentStateChanges): SubmitAttachmentStateChangesRequest = {
+  inline def apply(attachments: AttachmentStateChanges): SubmitAttachmentStateChangesRequest = {
     val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitAttachmentStateChangesRequest]
   }
   
-  @scala.inline
-  implicit class SubmitAttachmentStateChangesRequestMutableBuilder[Self <: SubmitAttachmentStateChangesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitAttachmentStateChangesRequest](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: AttachmentStateChanges): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: AttachmentStateChanges): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsVarargs(value: AttachmentStateChange*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: AttachmentStateChange*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
   }
 }

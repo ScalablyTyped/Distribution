@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "react-router-guard"
-version := "2.3-dt-20200902Z-858ee3"
+version := "2.3-dt-20200902Z-ab1733"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-b8d190",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20201002Z-9e47d2",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-a12f9a",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-c80121",
-  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20201028Z-f0ea17",
-  "org.scalablytyped" %%% "react-router" % "5.1-dt-20201002Z-d7c7cc",
-  "org.scalablytyped" %%% "react-router-dom" % "5.1-dt-20201006Z-db870e",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-344a29",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20201002Z-6d86d0",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-49dd4c",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-76d083",
+  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20201028Z-6e7984",
+  "org.scalablytyped" %%% "react-router" % "5.1-dt-20201002Z-d8a761",
+  "org.scalablytyped" %%% "react-router-dom" % "5.1-dt-20201006Z-398584",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

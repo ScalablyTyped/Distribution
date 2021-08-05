@@ -59,23 +59,17 @@ object mod {
   trait IOTAUnit extends StObject
   object IOTAUnit {
     
-    @scala.inline
-    def Gi: typings.iotaLibJs.iotaLibJsStrings.Gi = "Gi".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Gi]
+    inline def Gi: typings.iotaLibJs.iotaLibJsStrings.Gi = "Gi".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Gi]
     
-    @scala.inline
-    def Ki: typings.iotaLibJs.iotaLibJsStrings.Ki = "Ki".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Ki]
+    inline def Ki: typings.iotaLibJs.iotaLibJsStrings.Ki = "Ki".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Ki]
     
-    @scala.inline
-    def Mi: typings.iotaLibJs.iotaLibJsStrings.Mi = "Mi".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Mi]
+    inline def Mi: typings.iotaLibJs.iotaLibJsStrings.Mi = "Mi".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Mi]
     
-    @scala.inline
-    def Pi: typings.iotaLibJs.iotaLibJsStrings.Pi = "Pi".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Pi]
+    inline def Pi: typings.iotaLibJs.iotaLibJsStrings.Pi = "Pi".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Pi]
     
-    @scala.inline
-    def Ti: typings.iotaLibJs.iotaLibJsStrings.Ti = "Ti".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Ti]
+    inline def Ti: typings.iotaLibJs.iotaLibJsStrings.Ti = "Ti".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.Ti]
     
-    @scala.inline
-    def i: typings.iotaLibJs.iotaLibJsStrings.i = "i".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.i]
+    inline def i: typings.iotaLibJs.iotaLibJsStrings.i = "i".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.i]
   }
   
   trait InputObject extends StObject {
@@ -90,26 +84,20 @@ object mod {
   }
   object InputObject {
     
-    @scala.inline
-    def apply(address: String, balance: Double, keyIndex: Double, security: Security): InputObject = {
+    inline def apply(address: String, balance: Double, keyIndex: Double, security: Security): InputObject = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], keyIndex = keyIndex.asInstanceOf[js.Any], security = security.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputObject]
     }
     
-    @scala.inline
-    implicit class InputObjectMutableBuilder[Self <: InputObject] (val x: Self) extends AnyVal {
+    extension [Self <: InputObject](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
+      inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIndex(value: Double): Self = StObject.set(x, "keyIndex", value.asInstanceOf[js.Any])
+      inline def setKeyIndex(value: Double): Self = StObject.set(x, "keyIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurity(value: Security): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+      inline def setSecurity(value: Security): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     }
   }
   
@@ -284,29 +272,22 @@ object mod {
   }
   object IotaClass {
     
-    @scala.inline
-    def apply(api: IotaApi, multisig: IotaMultisig, utils: IotaUtils, valid: IotaValid, version: String): IotaClass = {
+    inline def apply(api: IotaApi, multisig: IotaMultisig, utils: IotaUtils, valid: IotaValid, version: String): IotaClass = {
       val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], multisig = multisig.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[IotaClass]
     }
     
-    @scala.inline
-    implicit class IotaClassMutableBuilder[Self <: IotaClass] (val x: Self) extends AnyVal {
+    extension [Self <: IotaClass](x: Self) {
       
-      @scala.inline
-      def setApi(value: IotaApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: IotaApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultisig(value: IotaMultisig): Self = StObject.set(x, "multisig", value.asInstanceOf[js.Any])
+      inline def setMultisig(value: IotaMultisig): Self = StObject.set(x, "multisig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtils(value: IotaUtils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: IotaUtils): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: IotaValid): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: IotaValid): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -491,8 +472,7 @@ object mod {
   }
   object IriApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addNeighbors: (js.Array[String], js.Function2[/* error */ Error, /* addedNeighbors */ Double, Unit]) => Unit,
       attachToTangle: (String, String, Double, js.Array[String], js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]) => Unit,
       broadcastTransactions: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit,
@@ -512,62 +492,47 @@ object mod {
       __obj.asInstanceOf[IriApi]
     }
     
-    @scala.inline
-    implicit class IriApiMutableBuilder[Self <: IriApi] (val x: Self) extends AnyVal {
+    extension [Self <: IriApi](x: Self) {
       
-      @scala.inline
-      def setAddNeighbors(
+      inline def setAddNeighbors(
         value: (js.Array[String], js.Function2[/* error */ Error, /* addedNeighbors */ Double, Unit]) => Unit
       ): Self = StObject.set(x, "addNeighbors", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAttachToTangle(
+      inline def setAttachToTangle(
         value: (String, String, Double, js.Array[String], js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]) => Unit
       ): Self = StObject.set(x, "attachToTangle", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setBroadcastTransactions(value: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit): Self = StObject.set(x, "broadcastTransactions", js.Any.fromFunction2(value))
+      inline def setBroadcastTransactions(value: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit): Self = StObject.set(x, "broadcastTransactions", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFindTransactions(value: (Addresses, js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "findTransactions", js.Any.fromFunction2(value))
+      inline def setFindTransactions(value: (Addresses, js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "findTransactions", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetBalances(
+      inline def setGetBalances(
         value: (js.Array[String], Double, js.Function2[/* error */ Error, /* response */ Balances, Unit]) => Unit
       ): Self = StObject.set(x, "getBalances", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetInclusionStates(
+      inline def setGetInclusionStates(
         value: (js.Array[String], js.Array[String], js.Function2[/* error */ Error, /* states */ js.Array[Boolean], Unit]) => Unit
       ): Self = StObject.set(x, "getInclusionStates", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetNeighbors(value: js.Function2[/* error */ Error, /* neighbors */ js.Array[Neighbor], Unit] => Unit): Self = StObject.set(x, "getNeighbors", js.Any.fromFunction1(value))
+      inline def setGetNeighbors(value: js.Function2[/* error */ Error, /* neighbors */ js.Array[Neighbor], Unit] => Unit): Self = StObject.set(x, "getNeighbors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNodeInfo(value: js.Function2[/* error */ Error, /* info */ NodeInfo, Unit] => Unit): Self = StObject.set(x, "getNodeInfo", js.Any.fromFunction1(value))
+      inline def setGetNodeInfo(value: js.Function2[/* error */ Error, /* info */ NodeInfo, Unit] => Unit): Self = StObject.set(x, "getNodeInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTips(value: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "getTips", js.Any.fromFunction1(value))
+      inline def setGetTips(value: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit] => Unit): Self = StObject.set(x, "getTips", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTransactionsToApprove(value: (Double, js.Function2[/* error */ Error, /* response */ BranchTransaction, Unit]) => Unit): Self = StObject.set(x, "getTransactionsToApprove", js.Any.fromFunction2(value))
+      inline def setGetTransactionsToApprove(value: (Double, js.Function2[/* error */ Error, /* response */ BranchTransaction, Unit]) => Unit): Self = StObject.set(x, "getTransactionsToApprove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetTrytes(
+      inline def setGetTrytes(
         value: (js.Array[String], js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]) => Unit
       ): Self = StObject.set(x, "getTrytes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInterruptAttachingToTangle(value: js.Function2[/* error */ Error, /* response */ js.Object, Unit] => Unit): Self = StObject.set(x, "interruptAttachingToTangle", js.Any.fromFunction1(value))
+      inline def setInterruptAttachingToTangle(value: js.Function2[/* error */ Error, /* response */ js.Object, Unit] => Unit): Self = StObject.set(x, "interruptAttachingToTangle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveNeighbors(
+      inline def setRemoveNeighbors(
         value: (js.Array[String], js.Function2[/* error */ Error, /* removedNeighbors */ js.Array[Double], Unit]) => Unit
       ): Self = StObject.set(x, "removeNeighbors", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStoreTransactions(value: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit): Self = StObject.set(x, "storeTransactions", js.Any.fromFunction2(value))
+      inline def setStoreTransactions(value: (js.Array[String], js.Function2[/* error */ Error, /* response */ js.Object, Unit]) => Unit): Self = StObject.set(x, "storeTransactions", js.Any.fromFunction2(value))
     }
   }
   
@@ -596,8 +561,7 @@ object mod {
   }
   object Neighbor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       connectionType: udp | tcp,
       numberOfAllTransactions: Double,
@@ -610,29 +574,21 @@ object mod {
       __obj.asInstanceOf[Neighbor]
     }
     
-    @scala.inline
-    implicit class NeighborMutableBuilder[Self <: Neighbor] (val x: Self) extends AnyVal {
+    extension [Self <: Neighbor](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionType(value: udp | tcp): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
+      inline def setConnectionType(value: udp | tcp): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfAllTransactions(value: Double): Self = StObject.set(x, "numberOfAllTransactions", value.asInstanceOf[js.Any])
+      inline def setNumberOfAllTransactions(value: Double): Self = StObject.set(x, "numberOfAllTransactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfInvalidTransactions(value: Double): Self = StObject.set(x, "numberOfInvalidTransactions", value.asInstanceOf[js.Any])
+      inline def setNumberOfInvalidTransactions(value: Double): Self = StObject.set(x, "numberOfInvalidTransactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfNewTransactions(value: Double): Self = StObject.set(x, "numberOfNewTransactions", value.asInstanceOf[js.Any])
+      inline def setNumberOfNewTransactions(value: Double): Self = StObject.set(x, "numberOfNewTransactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfRandomTransactionRequests(value: Double): Self = StObject.set(x, "numberOfRandomTransactionRequests", value.asInstanceOf[js.Any])
+      inline def setNumberOfRandomTransactionRequests(value: Double): Self = StObject.set(x, "numberOfRandomTransactionRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfSentTransactions(value: Double): Self = StObject.set(x, "numberOfSentTransactions", value.asInstanceOf[js.Any])
+      inline def setNumberOfSentTransactions(value: Double): Self = StObject.set(x, "numberOfSentTransactions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -674,8 +630,7 @@ object mod {
   }
   object NodeInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appName: String,
       appVersion: String,
       duration: Double,
@@ -698,59 +653,41 @@ object mod {
       __obj.asInstanceOf[NodeInfo]
     }
     
-    @scala.inline
-    implicit class NodeInfoMutableBuilder[Self <: NodeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: NodeInfo](x: Self) {
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
+      inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJreAvailableProcessors(value: Double): Self = StObject.set(x, "jreAvailableProcessors", value.asInstanceOf[js.Any])
+      inline def setJreAvailableProcessors(value: Double): Self = StObject.set(x, "jreAvailableProcessors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJreFreeMemory(value: Double): Self = StObject.set(x, "jreFreeMemory", value.asInstanceOf[js.Any])
+      inline def setJreFreeMemory(value: Double): Self = StObject.set(x, "jreFreeMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJreMaxMemory(value: Double): Self = StObject.set(x, "jreMaxMemory", value.asInstanceOf[js.Any])
+      inline def setJreMaxMemory(value: Double): Self = StObject.set(x, "jreMaxMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJreTotalMemory(value: Double): Self = StObject.set(x, "jreTotalMemory", value.asInstanceOf[js.Any])
+      inline def setJreTotalMemory(value: Double): Self = StObject.set(x, "jreTotalMemory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJreVersion(value: String): Self = StObject.set(x, "jreVersion", value.asInstanceOf[js.Any])
+      inline def setJreVersion(value: String): Self = StObject.set(x, "jreVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestMilestone(value: String): Self = StObject.set(x, "latestMilestone", value.asInstanceOf[js.Any])
+      inline def setLatestMilestone(value: String): Self = StObject.set(x, "latestMilestone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestMilestoneIndex(value: Double): Self = StObject.set(x, "latestMilestoneIndex", value.asInstanceOf[js.Any])
+      inline def setLatestMilestoneIndex(value: Double): Self = StObject.set(x, "latestMilestoneIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestSolidSubtangleMilestone(value: String): Self = StObject.set(x, "latestSolidSubtangleMilestone", value.asInstanceOf[js.Any])
+      inline def setLatestSolidSubtangleMilestone(value: String): Self = StObject.set(x, "latestSolidSubtangleMilestone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestSolidSubtangleMilestoneIndex(value: Double): Self = StObject.set(x, "latestSolidSubtangleMilestoneIndex", value.asInstanceOf[js.Any])
+      inline def setLatestSolidSubtangleMilestoneIndex(value: Double): Self = StObject.set(x, "latestSolidSubtangleMilestoneIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeighbors(value: Double): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
+      inline def setNeighbors(value: Double): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPacketsQueueSize(value: Double): Self = StObject.set(x, "packetsQueueSize", value.asInstanceOf[js.Any])
+      inline def setPacketsQueueSize(value: Double): Self = StObject.set(x, "packetsQueueSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTips(value: Double): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+      inline def setTips(value: Double): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionsToRequest(value: Double): Self = StObject.set(x, "transactionsToRequest", value.asInstanceOf[js.Any])
+      inline def setTransactionsToRequest(value: Double): Self = StObject.set(x, "transactionsToRequest", value.asInstanceOf[js.Any])
     }
   }
   
@@ -765,14 +702,11 @@ object mod {
   trait Security extends StObject
   object Security {
     
-    @scala.inline
-    def `1`: typings.iotaLibJs.iotaLibJsNumbers.`1` = 1.asInstanceOf[typings.iotaLibJs.iotaLibJsNumbers.`1`]
+    inline def `1`: typings.iotaLibJs.iotaLibJsNumbers.`1` = 1.asInstanceOf[typings.iotaLibJs.iotaLibJsNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.iotaLibJs.iotaLibJsNumbers.`2` = 2.asInstanceOf[typings.iotaLibJs.iotaLibJsNumbers.`2`]
+    inline def `2`: typings.iotaLibJs.iotaLibJsNumbers.`2` = 2.asInstanceOf[typings.iotaLibJs.iotaLibJsNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.iotaLibJs.iotaLibJsNumbers.`3` = 3.asInstanceOf[typings.iotaLibJs.iotaLibJsNumbers.`3`]
+    inline def `3`: typings.iotaLibJs.iotaLibJsNumbers.`3` = 3.asInstanceOf[typings.iotaLibJs.iotaLibJsNumbers.`3`]
   }
   
   //
@@ -812,8 +746,7 @@ object mod {
   }
   object TransactionObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       attachmentTimestamp: Double,
       attachmentTimestampLowerBound: Double,
@@ -834,53 +767,37 @@ object mod {
       __obj.asInstanceOf[TransactionObject]
     }
     
-    @scala.inline
-    implicit class TransactionObjectMutableBuilder[Self <: TransactionObject] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionObject](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentTimestamp(value: Double): Self = StObject.set(x, "attachmentTimestamp", value.asInstanceOf[js.Any])
+      inline def setAttachmentTimestamp(value: Double): Self = StObject.set(x, "attachmentTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentTimestampLowerBound(value: Double): Self = StObject.set(x, "attachmentTimestampLowerBound", value.asInstanceOf[js.Any])
+      inline def setAttachmentTimestampLowerBound(value: Double): Self = StObject.set(x, "attachmentTimestampLowerBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentTimestampUpperBound(value: Double): Self = StObject.set(x, "attachmentTimestampUpperBound", value.asInstanceOf[js.Any])
+      inline def setAttachmentTimestampUpperBound(value: Double): Self = StObject.set(x, "attachmentTimestampUpperBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchTransaction(value: String): Self = StObject.set(x, "branchTransaction", value.asInstanceOf[js.Any])
+      inline def setBranchTransaction(value: String): Self = StObject.set(x, "branchTransaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundle(value: Double): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
+      inline def setBundle(value: Double): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+      inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
+      inline def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureMessageFragment(value: String): Self = StObject.set(x, "signatureMessageFragment", value.asInstanceOf[js.Any])
+      inline def setSignatureMessageFragment(value: String): Self = StObject.set(x, "signatureMessageFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrunkTransaction(value: String): Self = StObject.set(x, "trunkTransaction", value.asInstanceOf[js.Any])
+      inline def setTrunkTransaction(value: String): Self = StObject.set(x, "trunkTransaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -896,26 +813,20 @@ object mod {
   }
   object TransferObject {
     
-    @scala.inline
-    def apply(address: String, message: String, tag: String, value: Double): TransferObject = {
+    inline def apply(address: String, message: String, tag: String, value: Double): TransferObject = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransferObject]
     }
     
-    @scala.inline
-    implicit class TransferObjectMutableBuilder[Self <: TransferObject] (val x: Self) extends AnyVal {
+    extension [Self <: TransferObject](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

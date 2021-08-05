@@ -13,19 +13,15 @@ trait NotAction
 }
 object NotAction {
   
-  @scala.inline
-  def apply(NotAction: String | js.Array[String]): NotAction = {
+  inline def apply(NotAction: String | js.Array[String]): NotAction = {
     val __obj = js.Dynamic.literal(NotAction = NotAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotAction]
   }
   
-  @scala.inline
-  implicit class NotActionMutableBuilder[Self <: NotAction] (val x: Self) extends AnyVal {
+  extension [Self <: NotAction](x: Self) {
     
-    @scala.inline
-    def setNotAction(value: String | js.Array[String]): Self = StObject.set(x, "NotAction", value.asInstanceOf[js.Any])
+    inline def setNotAction(value: String | js.Array[String]): Self = StObject.set(x, "NotAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotActionVarargs(value: String*): Self = StObject.set(x, "NotAction", js.Array(value :_*))
+    inline def setNotActionVarargs(value: String*): Self = StObject.set(x, "NotAction", js.Array(value :_*))
   }
 }

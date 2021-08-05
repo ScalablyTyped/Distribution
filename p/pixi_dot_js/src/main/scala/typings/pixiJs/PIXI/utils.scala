@@ -78,8 +78,7 @@ object utils {
   }
   object CanvasRenderTarget {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canvas: HTMLCanvasElement,
       context: CanvasRenderingContext2D,
       destroy: () => Unit,
@@ -91,26 +90,19 @@ object utils {
       __obj.asInstanceOf[CanvasRenderTarget]
     }
     
-    @scala.inline
-    implicit class CanvasRenderTargetMutableBuilder[Self <: CanvasRenderTarget] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasRenderTarget](x: Self) {
       
-      @scala.inline
-      def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResize(value: (Double, Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
+      inline def setResize(value: (Double, Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,29 +148,22 @@ object utils {
   }
   object DecomposedDataUri {
     
-    @scala.inline
-    def apply(charset: String, data: String, encoding: String, mediaType: String, subType: String): DecomposedDataUri = {
+    inline def apply(charset: String, data: String, encoding: String, mediaType: String, subType: String): DecomposedDataUri = {
       val __obj = js.Dynamic.literal(charset = charset.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], subType = subType.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecomposedDataUri]
     }
     
-    @scala.inline
-    implicit class DecomposedDataUriMutableBuilder[Self <: DecomposedDataUri] (val x: Self) extends AnyVal {
+    extension [Self <: DecomposedDataUri](x: Self) {
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubType(value: String): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
+      inline def setSubType(value: String): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
     }
   }
   

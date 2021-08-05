@@ -11,12 +11,8 @@ object strictLimitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(cfg: ScaleConfig): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def default(cfg: ScaleConfig, defaultMin: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any], defaultMin.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def default(cfg: ScaleConfig, defaultMin: Double, defaultMax: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any], defaultMin.asInstanceOf[js.Any], defaultMax.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def default(cfg: ScaleConfig, defaultMin: Unit, defaultMax: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any], defaultMin.asInstanceOf[js.Any], defaultMax.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def default(cfg: ScaleConfig): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def default(cfg: ScaleConfig, defaultMin: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any], defaultMin.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def default(cfg: ScaleConfig, defaultMin: Double, defaultMax: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any], defaultMin.asInstanceOf[js.Any], defaultMax.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def default(cfg: ScaleConfig, defaultMin: Unit, defaultMax: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cfg.asInstanceOf[js.Any], defaultMin.asInstanceOf[js.Any], defaultMax.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

@@ -28,25 +28,19 @@ trait WebApiProjectCollectionRef extends StObject {
 }
 object WebApiProjectCollectionRef {
   
-  @scala.inline
-  def apply(collectionUrl: String, id: String, name: String, url: String): WebApiProjectCollectionRef = {
+  inline def apply(collectionUrl: String, id: String, name: String, url: String): WebApiProjectCollectionRef = {
     val __obj = js.Dynamic.literal(collectionUrl = collectionUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebApiProjectCollectionRef]
   }
   
-  @scala.inline
-  implicit class WebApiProjectCollectionRefMutableBuilder[Self <: WebApiProjectCollectionRef] (val x: Self) extends AnyVal {
+  extension [Self <: WebApiProjectCollectionRef](x: Self) {
     
-    @scala.inline
-    def setCollectionUrl(value: String): Self = StObject.set(x, "collectionUrl", value.asInstanceOf[js.Any])
+    inline def setCollectionUrl(value: String): Self = StObject.set(x, "collectionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

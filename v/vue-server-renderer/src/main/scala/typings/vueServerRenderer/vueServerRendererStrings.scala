@@ -8,6 +8,5 @@ object vueServerRendererStrings {
   
   @js.native
   sealed trait once extends StObject
-  @scala.inline
-  def once: once = "once".asInstanceOf[once]
+  inline def once: once = "once".asInstanceOf[once]
 }

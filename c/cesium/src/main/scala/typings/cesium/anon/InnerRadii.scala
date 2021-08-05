@@ -28,67 +28,47 @@ trait InnerRadii extends StObject {
 }
 object InnerRadii {
   
-  @scala.inline
-  def apply(): InnerRadii = {
+  inline def apply(): InnerRadii = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InnerRadii]
   }
   
-  @scala.inline
-  implicit class InnerRadiiMutableBuilder[Self <: InnerRadii] (val x: Self) extends AnyVal {
+  extension [Self <: InnerRadii](x: Self) {
     
-    @scala.inline
-    def setInnerRadii(value: Cartesian3): Self = StObject.set(x, "innerRadii", value.asInstanceOf[js.Any])
+    inline def setInnerRadii(value: Cartesian3): Self = StObject.set(x, "innerRadii", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRadiiUndefined: Self = StObject.set(x, "innerRadii", js.undefined)
+    inline def setInnerRadiiUndefined: Self = StObject.set(x, "innerRadii", js.undefined)
     
-    @scala.inline
-    def setMaximumClock(value: Double): Self = StObject.set(x, "maximumClock", value.asInstanceOf[js.Any])
+    inline def setMaximumClock(value: Double): Self = StObject.set(x, "maximumClock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumClockUndefined: Self = StObject.set(x, "maximumClock", js.undefined)
+    inline def setMaximumClockUndefined: Self = StObject.set(x, "maximumClock", js.undefined)
     
-    @scala.inline
-    def setMaximumCone(value: Double): Self = StObject.set(x, "maximumCone", value.asInstanceOf[js.Any])
+    inline def setMaximumCone(value: Double): Self = StObject.set(x, "maximumCone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumConeUndefined: Self = StObject.set(x, "maximumCone", js.undefined)
+    inline def setMaximumConeUndefined: Self = StObject.set(x, "maximumCone", js.undefined)
     
-    @scala.inline
-    def setMinimumClock(value: Double): Self = StObject.set(x, "minimumClock", value.asInstanceOf[js.Any])
+    inline def setMinimumClock(value: Double): Self = StObject.set(x, "minimumClock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumClockUndefined: Self = StObject.set(x, "minimumClock", js.undefined)
+    inline def setMinimumClockUndefined: Self = StObject.set(x, "minimumClock", js.undefined)
     
-    @scala.inline
-    def setMinimumCone(value: Double): Self = StObject.set(x, "minimumCone", value.asInstanceOf[js.Any])
+    inline def setMinimumCone(value: Double): Self = StObject.set(x, "minimumCone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumConeUndefined: Self = StObject.set(x, "minimumCone", js.undefined)
+    inline def setMinimumConeUndefined: Self = StObject.set(x, "minimumCone", js.undefined)
     
-    @scala.inline
-    def setRadii(value: Cartesian3): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
+    inline def setRadii(value: Cartesian3): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
+    inline def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
     
-    @scala.inline
-    def setSlicePartitions(value: Double): Self = StObject.set(x, "slicePartitions", value.asInstanceOf[js.Any])
+    inline def setSlicePartitions(value: Double): Self = StObject.set(x, "slicePartitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicePartitionsUndefined: Self = StObject.set(x, "slicePartitions", js.undefined)
+    inline def setSlicePartitionsUndefined: Self = StObject.set(x, "slicePartitions", js.undefined)
     
-    @scala.inline
-    def setStackPartitions(value: Double): Self = StObject.set(x, "stackPartitions", value.asInstanceOf[js.Any])
+    inline def setStackPartitions(value: Double): Self = StObject.set(x, "stackPartitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackPartitionsUndefined: Self = StObject.set(x, "stackPartitions", js.undefined)
+    inline def setStackPartitionsUndefined: Self = StObject.set(x, "stackPartitions", js.undefined)
     
-    @scala.inline
-    def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    inline def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
+    inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }
 }

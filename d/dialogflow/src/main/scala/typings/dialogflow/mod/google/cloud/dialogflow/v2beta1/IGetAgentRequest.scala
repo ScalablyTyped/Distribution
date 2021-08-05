@@ -12,22 +12,17 @@ trait IGetAgentRequest extends StObject {
 }
 object IGetAgentRequest {
   
-  @scala.inline
-  def apply(): IGetAgentRequest = {
+  inline def apply(): IGetAgentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGetAgentRequest]
   }
   
-  @scala.inline
-  implicit class IGetAgentRequestMutableBuilder[Self <: IGetAgentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IGetAgentRequest](x: Self) {
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

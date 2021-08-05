@@ -15,17 +15,14 @@ trait ValueDescriptionNull
 }
 object ValueDescriptionNull {
   
-  @scala.inline
-  def apply(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): ValueDescriptionNull = {
+  inline def apply(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): ValueDescriptionNull = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("null")
     __obj.asInstanceOf[ValueDescriptionNull]
   }
   
-  @scala.inline
-  implicit class ValueDescriptionNullMutableBuilder[Self <: ValueDescriptionNull] (val x: Self) extends AnyVal {
+  extension [Self <: ValueDescriptionNull](x: Self) {
     
-    @scala.inline
-    def setType(value: `null`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `null`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

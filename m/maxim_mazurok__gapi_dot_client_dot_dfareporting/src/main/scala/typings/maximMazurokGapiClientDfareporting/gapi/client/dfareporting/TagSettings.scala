@@ -14,25 +14,19 @@ trait TagSettings extends StObject {
 }
 object TagSettings {
   
-  @scala.inline
-  def apply(): TagSettings = {
+  inline def apply(): TagSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagSettings]
   }
   
-  @scala.inline
-  implicit class TagSettingsMutableBuilder[Self <: TagSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TagSettings](x: Self) {
     
-    @scala.inline
-    def setDynamicTagEnabled(value: Boolean): Self = StObject.set(x, "dynamicTagEnabled", value.asInstanceOf[js.Any])
+    inline def setDynamicTagEnabled(value: Boolean): Self = StObject.set(x, "dynamicTagEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicTagEnabledUndefined: Self = StObject.set(x, "dynamicTagEnabled", js.undefined)
+    inline def setDynamicTagEnabledUndefined: Self = StObject.set(x, "dynamicTagEnabled", js.undefined)
     
-    @scala.inline
-    def setImageTagEnabled(value: Boolean): Self = StObject.set(x, "imageTagEnabled", value.asInstanceOf[js.Any])
+    inline def setImageTagEnabled(value: Boolean): Self = StObject.set(x, "imageTagEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTagEnabledUndefined: Self = StObject.set(x, "imageTagEnabled", js.undefined)
+    inline def setImageTagEnabledUndefined: Self = StObject.set(x, "imageTagEnabled", js.undefined)
   }
 }

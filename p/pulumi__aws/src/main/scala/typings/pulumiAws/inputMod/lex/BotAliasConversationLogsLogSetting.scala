@@ -34,34 +34,25 @@ trait BotAliasConversationLogsLogSetting extends StObject {
 }
 object BotAliasConversationLogsLogSetting {
   
-  @scala.inline
-  def apply(destination: Input[String], logType: Input[String], resourceArn: Input[String]): BotAliasConversationLogsLogSetting = {
+  inline def apply(destination: Input[String], logType: Input[String], resourceArn: Input[String]): BotAliasConversationLogsLogSetting = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], logType = logType.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[BotAliasConversationLogsLogSetting]
   }
   
-  @scala.inline
-  implicit class BotAliasConversationLogsLogSettingMutableBuilder[Self <: BotAliasConversationLogsLogSetting] (val x: Self) extends AnyVal {
+  extension [Self <: BotAliasConversationLogsLogSetting](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Input[String]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     
-    @scala.inline
-    def setLogType(value: Input[String]): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
+    inline def setLogType(value: Input[String]): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePrefix(value: Input[String]): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
+    inline def setResourcePrefix(value: Input[String]): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
+    inline def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
   }
 }

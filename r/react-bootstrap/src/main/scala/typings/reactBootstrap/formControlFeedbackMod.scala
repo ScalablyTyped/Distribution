@@ -25,20 +25,16 @@ object formControlFeedbackMod {
   }
   object FormControlFeedbackProps {
     
-    @scala.inline
-    def apply(): FormControlFeedbackProps = {
+    inline def apply(): FormControlFeedbackProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormControlFeedbackProps]
     }
     
-    @scala.inline
-    implicit class FormControlFeedbackPropsMutableBuilder[Self <: FormControlFeedbackProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormControlFeedbackProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
     }
   }
 }

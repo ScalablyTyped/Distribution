@@ -21,34 +21,25 @@ trait IViewState extends StObject {
 }
 object IViewState {
   
-  @scala.inline
-  def apply(firstPosition: IPosition, firstPositionDeltaTop: Double, scrollLeft: Double): IViewState = {
+  inline def apply(firstPosition: IPosition, firstPositionDeltaTop: Double, scrollLeft: Double): IViewState = {
     val __obj = js.Dynamic.literal(firstPosition = firstPosition.asInstanceOf[js.Any], firstPositionDeltaTop = firstPositionDeltaTop.asInstanceOf[js.Any], scrollLeft = scrollLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[IViewState]
   }
   
-  @scala.inline
-  implicit class IViewStateMutableBuilder[Self <: IViewState] (val x: Self) extends AnyVal {
+  extension [Self <: IViewState](x: Self) {
     
-    @scala.inline
-    def setFirstPosition(value: IPosition): Self = StObject.set(x, "firstPosition", value.asInstanceOf[js.Any])
+    inline def setFirstPosition(value: IPosition): Self = StObject.set(x, "firstPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPositionDeltaTop(value: Double): Self = StObject.set(x, "firstPositionDeltaTop", value.asInstanceOf[js.Any])
+    inline def setFirstPositionDeltaTop(value: Double): Self = StObject.set(x, "firstPositionDeltaTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
     
-    @scala.inline
-    def setScrollTopWithoutViewZones(value: Double): Self = StObject.set(x, "scrollTopWithoutViewZones", value.asInstanceOf[js.Any])
+    inline def setScrollTopWithoutViewZones(value: Double): Self = StObject.set(x, "scrollTopWithoutViewZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTopWithoutViewZonesUndefined: Self = StObject.set(x, "scrollTopWithoutViewZones", js.undefined)
+    inline def setScrollTopWithoutViewZonesUndefined: Self = StObject.set(x, "scrollTopWithoutViewZones", js.undefined)
   }
 }

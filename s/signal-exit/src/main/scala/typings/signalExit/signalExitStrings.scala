@@ -11,34 +11,29 @@ object signalExitStrings {
   sealed trait SIGABRT
     extends StObject
        with _Signal
-  @scala.inline
-  def SIGABRT: SIGABRT = "SIGABRT".asInstanceOf[SIGABRT]
+  inline def SIGABRT: SIGABRT = "SIGABRT".asInstanceOf[SIGABRT]
   
   @js.native
   sealed trait SIGALRM
     extends StObject
        with _Signal
-  @scala.inline
-  def SIGALRM: SIGALRM = "SIGALRM".asInstanceOf[SIGALRM]
+  inline def SIGALRM: SIGALRM = "SIGALRM".asInstanceOf[SIGALRM]
   
   @js.native
   sealed trait SIGHUP
     extends StObject
        with _Signal
-  @scala.inline
-  def SIGHUP: SIGHUP = "SIGHUP".asInstanceOf[SIGHUP]
+  inline def SIGHUP: SIGHUP = "SIGHUP".asInstanceOf[SIGHUP]
   
   @js.native
   sealed trait SIGINT
     extends StObject
        with _Signal
-  @scala.inline
-  def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
+  inline def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
   
   @js.native
   sealed trait SIGTERM
     extends StObject
        with _Signal
-  @scala.inline
-  def SIGTERM: SIGTERM = "SIGTERM".asInstanceOf[SIGTERM]
+  inline def SIGTERM: SIGTERM = "SIGTERM".asInstanceOf[SIGTERM]
 }

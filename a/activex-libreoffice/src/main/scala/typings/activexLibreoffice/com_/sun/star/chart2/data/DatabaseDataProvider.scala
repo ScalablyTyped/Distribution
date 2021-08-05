@@ -32,8 +32,7 @@ trait DatabaseDataProvider
 }
 object DatabaseDataProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveConnection: XConnection,
     ApplyFilter: Boolean,
     Command: String,
@@ -124,10 +123,8 @@ object DatabaseDataProvider {
     __obj.asInstanceOf[DatabaseDataProvider]
   }
   
-  @scala.inline
-  implicit class DatabaseDataProviderMutableBuilder[Self <: DatabaseDataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseDataProvider](x: Self) {
     
-    @scala.inline
-    def setCreateWithConnection(value: XConnection => Unit): Self = StObject.set(x, "createWithConnection", js.Any.fromFunction1(value))
+    inline def setCreateWithConnection(value: XConnection => Unit): Self = StObject.set(x, "createWithConnection", js.Any.fromFunction1(value))
   }
 }

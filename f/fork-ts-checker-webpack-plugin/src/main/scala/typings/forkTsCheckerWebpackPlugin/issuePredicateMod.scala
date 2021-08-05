@@ -11,11 +11,9 @@ object issuePredicateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def composeIssuePredicates(predicates: js.Array[IssuePredicate]): IssuePredicate = ^.asInstanceOf[js.Dynamic].applyDynamic("composeIssuePredicates")(predicates.asInstanceOf[js.Any]).asInstanceOf[IssuePredicate]
+  inline def composeIssuePredicates(predicates: js.Array[IssuePredicate]): IssuePredicate = ^.asInstanceOf[js.Dynamic].applyDynamic("composeIssuePredicates")(predicates.asInstanceOf[js.Any]).asInstanceOf[IssuePredicate]
   
-  @scala.inline
-  def createTrivialIssuePredicate(result: Boolean): IssuePredicate = ^.asInstanceOf[js.Dynamic].applyDynamic("createTrivialIssuePredicate")(result.asInstanceOf[js.Any]).asInstanceOf[IssuePredicate]
+  inline def createTrivialIssuePredicate(result: Boolean): IssuePredicate = ^.asInstanceOf[js.Dynamic].applyDynamic("createTrivialIssuePredicate")(result.asInstanceOf[js.Any]).asInstanceOf[IssuePredicate]
   
   type IssuePredicate = js.Function1[/* issue */ Issue, Boolean]
 }

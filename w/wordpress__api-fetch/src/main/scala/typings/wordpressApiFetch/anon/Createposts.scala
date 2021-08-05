@@ -38,8 +38,7 @@ trait Createposts extends StObject {
 }
 object Createposts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create_posts: String,
     delete_others_posts: String,
     delete_post: String,
@@ -60,52 +59,36 @@ object Createposts {
     __obj.asInstanceOf[Createposts]
   }
   
-  @scala.inline
-  implicit class CreatepostsMutableBuilder[Self <: Createposts] (val x: Self) extends AnyVal {
+  extension [Self <: Createposts](x: Self) {
     
-    @scala.inline
-    def setCreate_posts(value: String): Self = StObject.set(x, "create_posts", value.asInstanceOf[js.Any])
+    inline def setCreate_posts(value: String): Self = StObject.set(x, "create_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete_others_posts(value: String): Self = StObject.set(x, "delete_others_posts", value.asInstanceOf[js.Any])
+    inline def setDelete_others_posts(value: String): Self = StObject.set(x, "delete_others_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete_post(value: String): Self = StObject.set(x, "delete_post", value.asInstanceOf[js.Any])
+    inline def setDelete_post(value: String): Self = StObject.set(x, "delete_post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete_posts(value: String): Self = StObject.set(x, "delete_posts", value.asInstanceOf[js.Any])
+    inline def setDelete_posts(value: String): Self = StObject.set(x, "delete_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete_private_posts(value: String): Self = StObject.set(x, "delete_private_posts", value.asInstanceOf[js.Any])
+    inline def setDelete_private_posts(value: String): Self = StObject.set(x, "delete_private_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete_published_posts(value: String): Self = StObject.set(x, "delete_published_posts", value.asInstanceOf[js.Any])
+    inline def setDelete_published_posts(value: String): Self = StObject.set(x, "delete_published_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit_others_posts(value: String): Self = StObject.set(x, "edit_others_posts", value.asInstanceOf[js.Any])
+    inline def setEdit_others_posts(value: String): Self = StObject.set(x, "edit_others_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit_post(value: String): Self = StObject.set(x, "edit_post", value.asInstanceOf[js.Any])
+    inline def setEdit_post(value: String): Self = StObject.set(x, "edit_post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit_posts(value: String): Self = StObject.set(x, "edit_posts", value.asInstanceOf[js.Any])
+    inline def setEdit_posts(value: String): Self = StObject.set(x, "edit_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit_private_posts(value: String): Self = StObject.set(x, "edit_private_posts", value.asInstanceOf[js.Any])
+    inline def setEdit_private_posts(value: String): Self = StObject.set(x, "edit_private_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit_published_posts(value: String): Self = StObject.set(x, "edit_published_posts", value.asInstanceOf[js.Any])
+    inline def setEdit_published_posts(value: String): Self = StObject.set(x, "edit_published_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublish_posts(value: String): Self = StObject.set(x, "publish_posts", value.asInstanceOf[js.Any])
+    inline def setPublish_posts(value: String): Self = StObject.set(x, "publish_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: String): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: String): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead_post(value: String): Self = StObject.set(x, "read_post", value.asInstanceOf[js.Any])
+    inline def setRead_post(value: String): Self = StObject.set(x, "read_post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead_private_posts(value: String): Self = StObject.set(x, "read_private_posts", value.asInstanceOf[js.Any])
+    inline def setRead_private_posts(value: String): Self = StObject.set(x, "read_private_posts", value.asInstanceOf[js.Any])
   }
 }

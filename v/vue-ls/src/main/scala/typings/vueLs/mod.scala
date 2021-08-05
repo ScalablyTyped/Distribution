@@ -77,32 +77,24 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setStorage(value: Types): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Types): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     }
   }
   
@@ -120,17 +112,14 @@ object mod extends Shortcut {
     }
     object Vue {
       
-      @scala.inline
-      def apply($ls: WebStorage): Vue = {
+      inline def apply($ls: WebStorage): Vue = {
         val __obj = js.Dynamic.literal($ls = $ls.asInstanceOf[js.Any])
         __obj.asInstanceOf[Vue]
       }
       
-      @scala.inline
-      implicit class VueMutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
+      extension [Self <: Vue](x: Self) {
         
-        @scala.inline
-        def set$ls(value: WebStorage): Self = StObject.set(x, "$ls", value.asInstanceOf[js.Any])
+        inline def set$ls(value: WebStorage): Self = StObject.set(x, "$ls", value.asInstanceOf[js.Any])
       }
     }
     
@@ -140,17 +129,14 @@ object mod extends Shortcut {
     }
     object VueConstructor {
       
-      @scala.inline
-      def apply(ls: WebStorage): VueConstructor = {
+      inline def apply(ls: WebStorage): VueConstructor = {
         val __obj = js.Dynamic.literal(ls = ls.asInstanceOf[js.Any])
         __obj.asInstanceOf[VueConstructor]
       }
       
-      @scala.inline
-      implicit class VueConstructorMutableBuilder[Self <: VueConstructor] (val x: Self) extends AnyVal {
+      extension [Self <: VueConstructor](x: Self) {
         
-        @scala.inline
-        def setLs(value: WebStorage): Self = StObject.set(x, "ls", value.asInstanceOf[js.Any])
+        inline def setLs(value: WebStorage): Self = StObject.set(x, "ls", value.asInstanceOf[js.Any])
       }
     }
   }

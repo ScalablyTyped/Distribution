@@ -77,88 +77,61 @@ trait WindowsInformationProtectionPolicy
 }
 object WindowsInformationProtectionPolicy {
   
-  @scala.inline
-  def apply(): WindowsInformationProtectionPolicy = {
+  inline def apply(): WindowsInformationProtectionPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsInformationProtectionPolicy]
   }
   
-  @scala.inline
-  implicit class WindowsInformationProtectionPolicyMutableBuilder[Self <: WindowsInformationProtectionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsInformationProtectionPolicy](x: Self) {
     
-    @scala.inline
-    def setDaysWithoutContactBeforeUnenroll(value: Double): Self = StObject.set(x, "daysWithoutContactBeforeUnenroll", value.asInstanceOf[js.Any])
+    inline def setDaysWithoutContactBeforeUnenroll(value: Double): Self = StObject.set(x, "daysWithoutContactBeforeUnenroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysWithoutContactBeforeUnenrollUndefined: Self = StObject.set(x, "daysWithoutContactBeforeUnenroll", js.undefined)
+    inline def setDaysWithoutContactBeforeUnenrollUndefined: Self = StObject.set(x, "daysWithoutContactBeforeUnenroll", js.undefined)
     
-    @scala.inline
-    def setMdmEnrollmentUrl(value: NullableOption[String]): Self = StObject.set(x, "mdmEnrollmentUrl", value.asInstanceOf[js.Any])
+    inline def setMdmEnrollmentUrl(value: NullableOption[String]): Self = StObject.set(x, "mdmEnrollmentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdmEnrollmentUrlNull: Self = StObject.set(x, "mdmEnrollmentUrl", null)
+    inline def setMdmEnrollmentUrlNull: Self = StObject.set(x, "mdmEnrollmentUrl", null)
     
-    @scala.inline
-    def setMdmEnrollmentUrlUndefined: Self = StObject.set(x, "mdmEnrollmentUrl", js.undefined)
+    inline def setMdmEnrollmentUrlUndefined: Self = StObject.set(x, "mdmEnrollmentUrl", js.undefined)
     
-    @scala.inline
-    def setMinutesOfInactivityBeforeDeviceLock(value: Double): Self = StObject.set(x, "minutesOfInactivityBeforeDeviceLock", value.asInstanceOf[js.Any])
+    inline def setMinutesOfInactivityBeforeDeviceLock(value: Double): Self = StObject.set(x, "minutesOfInactivityBeforeDeviceLock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutesOfInactivityBeforeDeviceLockUndefined: Self = StObject.set(x, "minutesOfInactivityBeforeDeviceLock", js.undefined)
+    inline def setMinutesOfInactivityBeforeDeviceLockUndefined: Self = StObject.set(x, "minutesOfInactivityBeforeDeviceLock", js.undefined)
     
-    @scala.inline
-    def setNumberOfPastPinsRemembered(value: Double): Self = StObject.set(x, "numberOfPastPinsRemembered", value.asInstanceOf[js.Any])
+    inline def setNumberOfPastPinsRemembered(value: Double): Self = StObject.set(x, "numberOfPastPinsRemembered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfPastPinsRememberedUndefined: Self = StObject.set(x, "numberOfPastPinsRemembered", js.undefined)
+    inline def setNumberOfPastPinsRememberedUndefined: Self = StObject.set(x, "numberOfPastPinsRemembered", js.undefined)
     
-    @scala.inline
-    def setPasswordMaximumAttemptCount(value: Double): Self = StObject.set(x, "passwordMaximumAttemptCount", value.asInstanceOf[js.Any])
+    inline def setPasswordMaximumAttemptCount(value: Double): Self = StObject.set(x, "passwordMaximumAttemptCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordMaximumAttemptCountUndefined: Self = StObject.set(x, "passwordMaximumAttemptCount", js.undefined)
+    inline def setPasswordMaximumAttemptCountUndefined: Self = StObject.set(x, "passwordMaximumAttemptCount", js.undefined)
     
-    @scala.inline
-    def setPinExpirationDays(value: Double): Self = StObject.set(x, "pinExpirationDays", value.asInstanceOf[js.Any])
+    inline def setPinExpirationDays(value: Double): Self = StObject.set(x, "pinExpirationDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinExpirationDaysUndefined: Self = StObject.set(x, "pinExpirationDays", js.undefined)
+    inline def setPinExpirationDaysUndefined: Self = StObject.set(x, "pinExpirationDays", js.undefined)
     
-    @scala.inline
-    def setPinLowercaseLetters(value: WindowsInformationProtectionPinCharacterRequirements): Self = StObject.set(x, "pinLowercaseLetters", value.asInstanceOf[js.Any])
+    inline def setPinLowercaseLetters(value: WindowsInformationProtectionPinCharacterRequirements): Self = StObject.set(x, "pinLowercaseLetters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinLowercaseLettersUndefined: Self = StObject.set(x, "pinLowercaseLetters", js.undefined)
+    inline def setPinLowercaseLettersUndefined: Self = StObject.set(x, "pinLowercaseLetters", js.undefined)
     
-    @scala.inline
-    def setPinMinimumLength(value: Double): Self = StObject.set(x, "pinMinimumLength", value.asInstanceOf[js.Any])
+    inline def setPinMinimumLength(value: Double): Self = StObject.set(x, "pinMinimumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinMinimumLengthUndefined: Self = StObject.set(x, "pinMinimumLength", js.undefined)
+    inline def setPinMinimumLengthUndefined: Self = StObject.set(x, "pinMinimumLength", js.undefined)
     
-    @scala.inline
-    def setPinSpecialCharacters(value: WindowsInformationProtectionPinCharacterRequirements): Self = StObject.set(x, "pinSpecialCharacters", value.asInstanceOf[js.Any])
+    inline def setPinSpecialCharacters(value: WindowsInformationProtectionPinCharacterRequirements): Self = StObject.set(x, "pinSpecialCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinSpecialCharactersUndefined: Self = StObject.set(x, "pinSpecialCharacters", js.undefined)
+    inline def setPinSpecialCharactersUndefined: Self = StObject.set(x, "pinSpecialCharacters", js.undefined)
     
-    @scala.inline
-    def setPinUppercaseLetters(value: WindowsInformationProtectionPinCharacterRequirements): Self = StObject.set(x, "pinUppercaseLetters", value.asInstanceOf[js.Any])
+    inline def setPinUppercaseLetters(value: WindowsInformationProtectionPinCharacterRequirements): Self = StObject.set(x, "pinUppercaseLetters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinUppercaseLettersUndefined: Self = StObject.set(x, "pinUppercaseLetters", js.undefined)
+    inline def setPinUppercaseLettersUndefined: Self = StObject.set(x, "pinUppercaseLetters", js.undefined)
     
-    @scala.inline
-    def setRevokeOnMdmHandoffDisabled(value: Boolean): Self = StObject.set(x, "revokeOnMdmHandoffDisabled", value.asInstanceOf[js.Any])
+    inline def setRevokeOnMdmHandoffDisabled(value: Boolean): Self = StObject.set(x, "revokeOnMdmHandoffDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokeOnMdmHandoffDisabledUndefined: Self = StObject.set(x, "revokeOnMdmHandoffDisabled", js.undefined)
+    inline def setRevokeOnMdmHandoffDisabledUndefined: Self = StObject.set(x, "revokeOnMdmHandoffDisabled", js.undefined)
     
-    @scala.inline
-    def setWindowsHelloForBusinessBlocked(value: Boolean): Self = StObject.set(x, "windowsHelloForBusinessBlocked", value.asInstanceOf[js.Any])
+    inline def setWindowsHelloForBusinessBlocked(value: Boolean): Self = StObject.set(x, "windowsHelloForBusinessBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsHelloForBusinessBlockedUndefined: Self = StObject.set(x, "windowsHelloForBusinessBlocked", js.undefined)
+    inline def setWindowsHelloForBusinessBlockedUndefined: Self = StObject.set(x, "windowsHelloForBusinessBlocked", js.undefined)
   }
 }

@@ -17,28 +17,21 @@ trait FormatMessage extends StObject {
 }
 object FormatMessage {
   
-  @scala.inline
-  def apply(): FormatMessage = {
+  inline def apply(): FormatMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatMessage]
   }
   
-  @scala.inline
-  implicit class FormatMessageMutableBuilder[Self <: FormatMessage] (val x: Self) extends AnyVal {
+  extension [Self <: FormatMessage](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: String*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: String*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

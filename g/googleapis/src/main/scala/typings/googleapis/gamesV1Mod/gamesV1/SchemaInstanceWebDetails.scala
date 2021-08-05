@@ -27,31 +27,23 @@ trait SchemaInstanceWebDetails extends StObject {
 }
 object SchemaInstanceWebDetails {
   
-  @scala.inline
-  def apply(): SchemaInstanceWebDetails = {
+  inline def apply(): SchemaInstanceWebDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceWebDetails]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceWebDetailsMutableBuilder[Self <: SchemaInstanceWebDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceWebDetails](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLaunchUrl(value: String): Self = StObject.set(x, "launchUrl", value.asInstanceOf[js.Any])
+    inline def setLaunchUrl(value: String): Self = StObject.set(x, "launchUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchUrlUndefined: Self = StObject.set(x, "launchUrl", js.undefined)
+    inline def setLaunchUrlUndefined: Self = StObject.set(x, "launchUrl", js.undefined)
     
-    @scala.inline
-    def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
+    inline def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
+    inline def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
   }
 }

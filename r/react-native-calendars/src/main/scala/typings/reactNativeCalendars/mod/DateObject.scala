@@ -18,28 +18,21 @@ trait DateObject extends StObject {
 }
 object DateObject {
   
-  @scala.inline
-  def apply(dateString: String, day: Double, month: Double, timestamp: Double, year: Double): DateObject = {
+  inline def apply(dateString: String, day: Double, month: Double, timestamp: Double, year: Double): DateObject = {
     val __obj = js.Dynamic.literal(dateString = dateString.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateObject]
   }
   
-  @scala.inline
-  implicit class DateObjectMutableBuilder[Self <: DateObject] (val x: Self) extends AnyVal {
+  extension [Self <: DateObject](x: Self) {
     
-    @scala.inline
-    def setDateString(value: String): Self = StObject.set(x, "dateString", value.asInstanceOf[js.Any])
+    inline def setDateString(value: String): Self = StObject.set(x, "dateString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

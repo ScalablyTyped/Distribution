@@ -15,17 +15,14 @@ trait CDC
 }
 object CDC {
   
-  @scala.inline
-  def apply(): CDC = {
+  inline def apply(): CDC = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CDC")
     __obj.asInstanceOf[CDC]
   }
   
-  @scala.inline
-  implicit class CDCMutableBuilder[Self <: CDC] (val x: Self) extends AnyVal {
+  extension [Self <: CDC](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.CDC): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.CDC): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

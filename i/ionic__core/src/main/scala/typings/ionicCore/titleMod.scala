@@ -31,9 +31,9 @@ object titleMod {
     
     var el: HTMLElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
-    var getSize: js.Any = js.native
+    /* private */ var getSize: js.Any = js.native
     
     /**
       * Emitted when the styles change.

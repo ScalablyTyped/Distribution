@@ -16,25 +16,19 @@ trait ConnectConnectInfo extends StObject {
 }
 object ConnectConnectInfo {
   
-  @scala.inline
-  def apply(): ConnectConnectInfo = {
+  inline def apply(): ConnectConnectInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectConnectInfo]
   }
   
-  @scala.inline
-  implicit class ConnectConnectInfoMutableBuilder[Self <: ConnectConnectInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectConnectInfo](x: Self) {
     
-    @scala.inline
-    def setIncludeTlsChannelId(value: Boolean): Self = StObject.set(x, "includeTlsChannelId", value.asInstanceOf[js.Any])
+    inline def setIncludeTlsChannelId(value: Boolean): Self = StObject.set(x, "includeTlsChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTlsChannelIdUndefined: Self = StObject.set(x, "includeTlsChannelId", js.undefined)
+    inline def setIncludeTlsChannelIdUndefined: Self = StObject.set(x, "includeTlsChannelId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

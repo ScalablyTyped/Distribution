@@ -13,15 +13,11 @@ object ipMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def bitAt(rawAddress: js.Array[Double], idx: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bitAt")(rawAddress.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def bitAt(rawAddress: Buffer, idx: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bitAt")(rawAddress.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bitAt(rawAddress: js.Array[Double], idx: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bitAt")(rawAddress.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bitAt(rawAddress: Buffer, idx: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bitAt")(rawAddress.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def parse(ip: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(ip.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def parse(ip: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(ip.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    @scala.inline
-    def validate(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def validate(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

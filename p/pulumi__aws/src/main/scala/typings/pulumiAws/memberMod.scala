@@ -75,21 +75,16 @@ object memberMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Member]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Member]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MemberState): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Member]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MemberState, opts: CustomResourceOptions): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Member]
+    inline def get(name: String, id: Input[ID]): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Member]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Member]
+    inline def get(name: String, id: Input[ID], state: MemberState): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Member]
+    inline def get(name: String, id: Input[ID], state: MemberState, opts: CustomResourceOptions): Member = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Member]
     
     /**
       * Returns true if the given object is an instance of Member.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/member.Member */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/member.Member */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/member.Member */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/member.Member */ Boolean]
   }
   
   trait MemberArgs extends StObject {
@@ -126,41 +121,30 @@ object memberMod {
   }
   object MemberArgs {
     
-    @scala.inline
-    def apply(accountId: Input[String], detectorId: Input[String], email: Input[String]): MemberArgs = {
+    inline def apply(accountId: Input[String], detectorId: Input[String], email: Input[String]): MemberArgs = {
       val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], detectorId = detectorId.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemberArgs]
     }
     
-    @scala.inline
-    implicit class MemberArgsMutableBuilder[Self <: MemberArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MemberArgs](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEmailNotification(value: Input[Boolean]): Self = StObject.set(x, "disableEmailNotification", value.asInstanceOf[js.Any])
+      inline def setDisableEmailNotification(value: Input[Boolean]): Self = StObject.set(x, "disableEmailNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEmailNotificationUndefined: Self = StObject.set(x, "disableEmailNotification", js.undefined)
+      inline def setDisableEmailNotificationUndefined: Self = StObject.set(x, "disableEmailNotification", js.undefined)
       
-      @scala.inline
-      def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvitationMessage(value: Input[String]): Self = StObject.set(x, "invitationMessage", value.asInstanceOf[js.Any])
+      inline def setInvitationMessage(value: Input[String]): Self = StObject.set(x, "invitationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvitationMessageUndefined: Self = StObject.set(x, "invitationMessage", js.undefined)
+      inline def setInvitationMessageUndefined: Self = StObject.set(x, "invitationMessage", js.undefined)
       
-      @scala.inline
-      def setInvite(value: Input[Boolean]): Self = StObject.set(x, "invite", value.asInstanceOf[js.Any])
+      inline def setInvite(value: Input[Boolean]): Self = StObject.set(x, "invite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInviteUndefined: Self = StObject.set(x, "invite", js.undefined)
+      inline def setInviteUndefined: Self = StObject.set(x, "invite", js.undefined)
     }
   }
   
@@ -203,56 +187,40 @@ object memberMod {
   }
   object MemberState {
     
-    @scala.inline
-    def apply(): MemberState = {
+    inline def apply(): MemberState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MemberState]
     }
     
-    @scala.inline
-    implicit class MemberStateMutableBuilder[Self <: MemberState] (val x: Self) extends AnyVal {
+    extension [Self <: MemberState](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
+      inline def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
       
-      @scala.inline
-      def setDisableEmailNotification(value: Input[Boolean]): Self = StObject.set(x, "disableEmailNotification", value.asInstanceOf[js.Any])
+      inline def setDisableEmailNotification(value: Input[Boolean]): Self = StObject.set(x, "disableEmailNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEmailNotificationUndefined: Self = StObject.set(x, "disableEmailNotification", js.undefined)
+      inline def setDisableEmailNotificationUndefined: Self = StObject.set(x, "disableEmailNotification", js.undefined)
       
-      @scala.inline
-      def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Input[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setInvitationMessage(value: Input[String]): Self = StObject.set(x, "invitationMessage", value.asInstanceOf[js.Any])
+      inline def setInvitationMessage(value: Input[String]): Self = StObject.set(x, "invitationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvitationMessageUndefined: Self = StObject.set(x, "invitationMessage", js.undefined)
+      inline def setInvitationMessageUndefined: Self = StObject.set(x, "invitationMessage", js.undefined)
       
-      @scala.inline
-      def setInvite(value: Input[Boolean]): Self = StObject.set(x, "invite", value.asInstanceOf[js.Any])
+      inline def setInvite(value: Input[Boolean]): Self = StObject.set(x, "invite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInviteUndefined: Self = StObject.set(x, "invite", js.undefined)
+      inline def setInviteUndefined: Self = StObject.set(x, "invite", js.undefined)
       
-      @scala.inline
-      def setRelationshipStatus(value: Input[String]): Self = StObject.set(x, "relationshipStatus", value.asInstanceOf[js.Any])
+      inline def setRelationshipStatus(value: Input[String]): Self = StObject.set(x, "relationshipStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationshipStatusUndefined: Self = StObject.set(x, "relationshipStatus", js.undefined)
+      inline def setRelationshipStatusUndefined: Self = StObject.set(x, "relationshipStatus", js.undefined)
     }
   }
 }

@@ -21,22 +21,18 @@ object noRedundantJsdocRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def FAILURE_STRING_NO_COMMENT(tagName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_NO_COMMENT")(tagName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING_NO_COMMENT(tagName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_NO_COMMENT")(tagName.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def FAILURE_STRING_REDUNDANT_TAG(tagName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_REDUNDANT_TAG")(tagName.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING_REDUNDANT_TAG(tagName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_REDUNDANT_TAG")(tagName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noRedundantJsdocRule", "Rule.FAILURE_STRING_REDUNDANT_TYPE")
     @js.native
     def FAILURE_STRING_REDUNDANT_TYPE: String = js.native
-    @scala.inline
-    def FAILURE_STRING_REDUNDANT_TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_REDUNDANT_TYPE")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_REDUNDANT_TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_REDUNDANT_TYPE")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/noRedundantJsdocRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

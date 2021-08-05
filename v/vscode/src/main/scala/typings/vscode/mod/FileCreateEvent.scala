@@ -13,19 +13,15 @@ trait FileCreateEvent extends StObject {
 }
 object FileCreateEvent {
   
-  @scala.inline
-  def apply(files: js.Array[Uri]): FileCreateEvent = {
+  inline def apply(files: js.Array[Uri]): FileCreateEvent = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileCreateEvent]
   }
   
-  @scala.inline
-  implicit class FileCreateEventMutableBuilder[Self <: FileCreateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FileCreateEvent](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Array[Uri]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[Uri]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: Uri*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: Uri*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

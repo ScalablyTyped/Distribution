@@ -14,31 +14,23 @@ trait FilterValue[T] extends StObject {
 }
 object FilterValue {
   
-  @scala.inline
-  def apply[T](): FilterValue[T] = {
+  inline def apply[T](): FilterValue[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterValue[T]]
   }
   
-  @scala.inline
-  implicit class FilterValueMutableBuilder[Self <: FilterValue[?], T] (val x: Self & FilterValue[T]) extends AnyVal {
+  extension [Self <: FilterValue[?], T](x: Self & FilterValue[T]) {
     
-    @scala.inline
-    def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setFilterValue(value: js.Any): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
+    inline def setFilterValue(value: js.Any): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)
+    inline def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

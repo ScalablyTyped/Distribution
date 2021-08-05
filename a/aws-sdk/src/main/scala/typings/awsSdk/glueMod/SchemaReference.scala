@@ -23,31 +23,23 @@ trait SchemaReference extends StObject {
 }
 object SchemaReference {
   
-  @scala.inline
-  def apply(): SchemaReference = {
+  inline def apply(): SchemaReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReference]
   }
   
-  @scala.inline
-  implicit class SchemaReferenceMutableBuilder[Self <: SchemaReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReference](x: Self) {
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaIdUndefined: Self = StObject.set(x, "SchemaId", js.undefined)
+    inline def setSchemaIdUndefined: Self = StObject.set(x, "SchemaId", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
+    inline def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
     
-    @scala.inline
-    def setSchemaVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "SchemaVersionNumber", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "SchemaVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionNumberUndefined: Self = StObject.set(x, "SchemaVersionNumber", js.undefined)
+    inline def setSchemaVersionNumberUndefined: Self = StObject.set(x, "SchemaVersionNumber", js.undefined)
   }
 }

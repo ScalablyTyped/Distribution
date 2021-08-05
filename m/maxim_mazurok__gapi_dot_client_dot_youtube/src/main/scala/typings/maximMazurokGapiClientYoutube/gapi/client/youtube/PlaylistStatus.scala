@@ -11,19 +11,15 @@ trait PlaylistStatus extends StObject {
 }
 object PlaylistStatus {
   
-  @scala.inline
-  def apply(): PlaylistStatus = {
+  inline def apply(): PlaylistStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlaylistStatus]
   }
   
-  @scala.inline
-  implicit class PlaylistStatusMutableBuilder[Self <: PlaylistStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistStatus](x: Self) {
     
-    @scala.inline
-    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
+    inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
+    inline def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
   }
 }

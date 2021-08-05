@@ -113,8 +113,7 @@ trait Events extends StObject {
 }
 object Events {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: (String, ChatUserstate, String, Boolean) => Unit,
     anongiftpaidupgrade: (String, String, AnonSubGiftUpgradeUserstate) => Unit,
     ban: (String, String, String) => Unit,
@@ -162,133 +161,90 @@ object Events {
     __obj.asInstanceOf[Events]
   }
   
-  @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+  extension [Self <: Events](x: Self) {
     
-    @scala.inline
-    def setAction(value: (String, ChatUserstate, String, Boolean) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
+    inline def setAction(value: (String, ChatUserstate, String, Boolean) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAnongiftpaidupgrade(value: (String, String, AnonSubGiftUpgradeUserstate) => Unit): Self = StObject.set(x, "anongiftpaidupgrade", js.Any.fromFunction3(value))
+    inline def setAnongiftpaidupgrade(value: (String, String, AnonSubGiftUpgradeUserstate) => Unit): Self = StObject.set(x, "anongiftpaidupgrade", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBan(value: (String, String, String) => Unit): Self = StObject.set(x, "ban", js.Any.fromFunction3(value))
+    inline def setBan(value: (String, String, String) => Unit): Self = StObject.set(x, "ban", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setChat(value: (String, ChatUserstate, String, Boolean) => Unit): Self = StObject.set(x, "chat", js.Any.fromFunction4(value))
+    inline def setChat(value: (String, ChatUserstate, String, Boolean) => Unit): Self = StObject.set(x, "chat", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCheer(value: (String, ChatUserstate, String) => Unit): Self = StObject.set(x, "cheer", js.Any.fromFunction3(value))
+    inline def setCheer(value: (String, ChatUserstate, String) => Unit): Self = StObject.set(x, "cheer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setClearchat(value: String => Unit): Self = StObject.set(x, "clearchat", js.Any.fromFunction1(value))
+    inline def setClearchat(value: String => Unit): Self = StObject.set(x, "clearchat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConnected(value: (String, Double) => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction2(value))
+    inline def setConnected(value: (String, Double) => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConnecting(value: (String, Double) => Unit): Self = StObject.set(x, "connecting", js.Any.fromFunction2(value))
+    inline def setConnecting(value: (String, Double) => Unit): Self = StObject.set(x, "connecting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDisconnected(value: String => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction1(value))
+    inline def setDisconnected(value: String => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmoteonly(value: (String, Boolean) => Unit): Self = StObject.set(x, "emoteonly", js.Any.fromFunction2(value))
+    inline def setEmoteonly(value: (String, Boolean) => Unit): Self = StObject.set(x, "emoteonly", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmotesets(value: (String, EmoteObj) => Unit): Self = StObject.set(x, "emotesets", js.Any.fromFunction2(value))
+    inline def setEmotesets(value: (String, EmoteObj) => Unit): Self = StObject.set(x, "emotesets", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFollowersonly(value: (String, Boolean, Double) => Unit): Self = StObject.set(x, "followersonly", js.Any.fromFunction3(value))
+    inline def setFollowersonly(value: (String, Boolean, Double) => Unit): Self = StObject.set(x, "followersonly", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGiftpaidupgrade(value: (String, String, String, SubGiftUpgradeUserstate) => Unit): Self = StObject.set(x, "giftpaidupgrade", js.Any.fromFunction4(value))
+    inline def setGiftpaidupgrade(value: (String, String, String, SubGiftUpgradeUserstate) => Unit): Self = StObject.set(x, "giftpaidupgrade", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setHosted(value: (String, String, Double, Boolean) => Unit): Self = StObject.set(x, "hosted", js.Any.fromFunction4(value))
+    inline def setHosted(value: (String, String, Double, Boolean) => Unit): Self = StObject.set(x, "hosted", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setHosting(value: (String, String, Double) => Unit): Self = StObject.set(x, "hosting", js.Any.fromFunction3(value))
+    inline def setHosting(value: (String, String, Double) => Unit): Self = StObject.set(x, "hosting", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setJoin(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "join", js.Any.fromFunction3(value))
+    inline def setJoin(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "join", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLogon(value: () => Unit): Self = StObject.set(x, "logon", js.Any.fromFunction0(value))
+    inline def setLogon(value: () => Unit): Self = StObject.set(x, "logon", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessage(value: (String, ChatUserstate, String, Boolean) => Unit): Self = StObject.set(x, "message", js.Any.fromFunction4(value))
+    inline def setMessage(value: (String, ChatUserstate, String, Boolean) => Unit): Self = StObject.set(x, "message", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setMessagedeleted(value: (String, String, String, DeleteUserstate) => Unit): Self = StObject.set(x, "messagedeleted", js.Any.fromFunction4(value))
+    inline def setMessagedeleted(value: (String, String, String, DeleteUserstate) => Unit): Self = StObject.set(x, "messagedeleted", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setMod(value: (String, String) => Unit): Self = StObject.set(x, "mod", js.Any.fromFunction2(value))
+    inline def setMod(value: (String, String) => Unit): Self = StObject.set(x, "mod", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMods(value: (String, js.Array[String]) => Unit): Self = StObject.set(x, "mods", js.Any.fromFunction2(value))
+    inline def setMods(value: (String, js.Array[String]) => Unit): Self = StObject.set(x, "mods", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNotice(value: (String, MsgID, String) => Unit): Self = StObject.set(x, "notice", js.Any.fromFunction3(value))
+    inline def setNotice(value: (String, MsgID, String) => Unit): Self = StObject.set(x, "notice", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPart(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "part", js.Any.fromFunction3(value))
+    inline def setPart(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "part", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPing(value: () => Unit): Self = StObject.set(x, "ping", js.Any.fromFunction0(value))
+    inline def setPing(value: () => Unit): Self = StObject.set(x, "ping", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPong(value: Double => Unit): Self = StObject.set(x, "pong", js.Any.fromFunction1(value))
+    inline def setPong(value: Double => Unit): Self = StObject.set(x, "pong", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setR9kbeta(value: (String, Boolean) => Unit): Self = StObject.set(x, "r9kbeta", js.Any.fromFunction2(value))
+    inline def setR9kbeta(value: (String, Boolean) => Unit): Self = StObject.set(x, "r9kbeta", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRaided(value: (String, String, Double) => Unit): Self = StObject.set(x, "raided", js.Any.fromFunction3(value))
+    inline def setRaided(value: (String, String, Double) => Unit): Self = StObject.set(x, "raided", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRaw_message(value: (StringDictionary[js.Any], StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "raw_message", js.Any.fromFunction2(value))
+    inline def setRaw_message(value: (StringDictionary[js.Any], StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "raw_message", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReconnect(value: () => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction0(value))
+    inline def setReconnect(value: () => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResub(value: (String, String, Double, String, SubUserstate, SubMethods) => Unit): Self = StObject.set(x, "resub", js.Any.fromFunction6(value))
+    inline def setResub(value: (String, String, Double, String, SubUserstate, SubMethods) => Unit): Self = StObject.set(x, "resub", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setRoomstate(value: (String, RoomState) => Unit): Self = StObject.set(x, "roomstate", js.Any.fromFunction2(value))
+    inline def setRoomstate(value: (String, RoomState) => Unit): Self = StObject.set(x, "roomstate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setServerchange(value: String => Unit): Self = StObject.set(x, "serverchange", js.Any.fromFunction1(value))
+    inline def setServerchange(value: String => Unit): Self = StObject.set(x, "serverchange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSlowmode(value: (String, Boolean, Double) => Unit): Self = StObject.set(x, "slowmode", js.Any.fromFunction3(value))
+    inline def setSlowmode(value: (String, Boolean, Double) => Unit): Self = StObject.set(x, "slowmode", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSubgift(value: (String, String, Double, String, SubMethods, SubGiftUserstate) => Unit): Self = StObject.set(x, "subgift", js.Any.fromFunction6(value))
+    inline def setSubgift(value: (String, String, Double, String, SubMethods, SubGiftUserstate) => Unit): Self = StObject.set(x, "subgift", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setSubmysterygift(value: (String, String, Double, SubMethods, SubMysteryGiftUserstate) => Unit): Self = StObject.set(x, "submysterygift", js.Any.fromFunction5(value))
+    inline def setSubmysterygift(value: (String, String, Double, SubMethods, SubMysteryGiftUserstate) => Unit): Self = StObject.set(x, "submysterygift", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setSubscribers(value: (String, Boolean) => Unit): Self = StObject.set(x, "subscribers", js.Any.fromFunction2(value))
+    inline def setSubscribers(value: (String, Boolean) => Unit): Self = StObject.set(x, "subscribers", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSubscription(value: (String, String, SubMethods, String, SubUserstate) => Unit): Self = StObject.set(x, "subscription", js.Any.fromFunction5(value))
+    inline def setSubscription(value: (String, String, SubMethods, String, SubUserstate) => Unit): Self = StObject.set(x, "subscription", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTimeout(value: (String, String, String, Double) => Unit): Self = StObject.set(x, "timeout", js.Any.fromFunction4(value))
+    inline def setTimeout(value: (String, String, String, Double) => Unit): Self = StObject.set(x, "timeout", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setUnhost(value: (String, Double) => Unit): Self = StObject.set(x, "unhost", js.Any.fromFunction2(value))
+    inline def setUnhost(value: (String, Double) => Unit): Self = StObject.set(x, "unhost", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnmod(value: (String, String) => Unit): Self = StObject.set(x, "unmod", js.Any.fromFunction2(value))
+    inline def setUnmod(value: (String, String) => Unit): Self = StObject.set(x, "unmod", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVips(value: (String, js.Array[String]) => Unit): Self = StObject.set(x, "vips", js.Any.fromFunction2(value))
+    inline def setVips(value: (String, js.Array[String]) => Unit): Self = StObject.set(x, "vips", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWhisper(value: (String, ChatUserstate, String, Boolean) => Unit): Self = StObject.set(x, "whisper", js.Any.fromFunction4(value))
+    inline def setWhisper(value: (String, ChatUserstate, String, Boolean) => Unit): Self = StObject.set(x, "whisper", js.Any.fromFunction4(value))
   }
 }

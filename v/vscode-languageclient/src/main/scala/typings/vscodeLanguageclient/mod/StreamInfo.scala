@@ -16,25 +16,19 @@ trait StreamInfo extends StObject {
 }
 object StreamInfo {
   
-  @scala.inline
-  def apply(reader: ReadableStream, writer: WritableStream): StreamInfo = {
+  inline def apply(reader: ReadableStream, writer: WritableStream): StreamInfo = {
     val __obj = js.Dynamic.literal(reader = reader.asInstanceOf[js.Any], writer = writer.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamInfo]
   }
   
-  @scala.inline
-  implicit class StreamInfoMutableBuilder[Self <: StreamInfo] (val x: Self) extends AnyVal {
+  extension [Self <: StreamInfo](x: Self) {
     
-    @scala.inline
-    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
-    @scala.inline
-    def setReader(value: ReadableStream): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
+    inline def setReader(value: ReadableStream): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriter(value: WritableStream): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
+    inline def setWriter(value: WritableStream): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
   }
 }

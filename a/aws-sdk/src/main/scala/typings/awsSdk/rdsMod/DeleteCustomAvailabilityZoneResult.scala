@@ -10,19 +10,15 @@ trait DeleteCustomAvailabilityZoneResult extends StObject {
 }
 object DeleteCustomAvailabilityZoneResult {
   
-  @scala.inline
-  def apply(): DeleteCustomAvailabilityZoneResult = {
+  inline def apply(): DeleteCustomAvailabilityZoneResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteCustomAvailabilityZoneResult]
   }
   
-  @scala.inline
-  implicit class DeleteCustomAvailabilityZoneResultMutableBuilder[Self <: DeleteCustomAvailabilityZoneResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCustomAvailabilityZoneResult](x: Self) {
     
-    @scala.inline
-    def setCustomAvailabilityZone(value: CustomAvailabilityZone): Self = StObject.set(x, "CustomAvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setCustomAvailabilityZone(value: CustomAvailabilityZone): Self = StObject.set(x, "CustomAvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAvailabilityZoneUndefined: Self = StObject.set(x, "CustomAvailabilityZone", js.undefined)
+    inline def setCustomAvailabilityZoneUndefined: Self = StObject.set(x, "CustomAvailabilityZone", js.undefined)
   }
 }

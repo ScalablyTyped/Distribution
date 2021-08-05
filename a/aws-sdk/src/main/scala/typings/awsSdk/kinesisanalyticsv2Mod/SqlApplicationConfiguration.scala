@@ -23,40 +23,29 @@ trait SqlApplicationConfiguration extends StObject {
 }
 object SqlApplicationConfiguration {
   
-  @scala.inline
-  def apply(): SqlApplicationConfiguration = {
+  inline def apply(): SqlApplicationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlApplicationConfiguration]
   }
   
-  @scala.inline
-  implicit class SqlApplicationConfigurationMutableBuilder[Self <: SqlApplicationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SqlApplicationConfiguration](x: Self) {
     
-    @scala.inline
-    def setInputs(value: Inputs): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: Inputs): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputs(value: Outputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: Outputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    @scala.inline
-    def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
     
-    @scala.inline
-    def setReferenceDataSources(value: ReferenceDataSources): Self = StObject.set(x, "ReferenceDataSources", value.asInstanceOf[js.Any])
+    inline def setReferenceDataSources(value: ReferenceDataSources): Self = StObject.set(x, "ReferenceDataSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceDataSourcesUndefined: Self = StObject.set(x, "ReferenceDataSources", js.undefined)
+    inline def setReferenceDataSourcesUndefined: Self = StObject.set(x, "ReferenceDataSources", js.undefined)
     
-    @scala.inline
-    def setReferenceDataSourcesVarargs(value: ReferenceDataSource*): Self = StObject.set(x, "ReferenceDataSources", js.Array(value :_*))
+    inline def setReferenceDataSourcesVarargs(value: ReferenceDataSource*): Self = StObject.set(x, "ReferenceDataSources", js.Array(value :_*))
   }
 }

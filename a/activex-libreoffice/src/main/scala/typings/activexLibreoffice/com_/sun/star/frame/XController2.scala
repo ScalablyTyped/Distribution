@@ -56,8 +56,7 @@ trait XController2
 }
 object XController2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComponentWindow: XWindow,
     CreationArguments: SafeArray[PropertyValue],
     Frame: XFrame,
@@ -84,22 +83,16 @@ object XController2 {
     __obj.asInstanceOf[XController2]
   }
   
-  @scala.inline
-  implicit class XController2MutableBuilder[Self <: XController2] (val x: Self) extends AnyVal {
+  extension [Self <: XController2](x: Self) {
     
-    @scala.inline
-    def setComponentWindow(value: XWindow): Self = StObject.set(x, "ComponentWindow", value.asInstanceOf[js.Any])
+    inline def setComponentWindow(value: XWindow): Self = StObject.set(x, "ComponentWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationArguments(value: SafeArray[PropertyValue]): Self = StObject.set(x, "CreationArguments", value.asInstanceOf[js.Any])
+    inline def setCreationArguments(value: SafeArray[PropertyValue]): Self = StObject.set(x, "CreationArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSidebar(value: () => XSidebarProvider): Self = StObject.set(x, "getSidebar", js.Any.fromFunction0(value))
+    inline def setGetSidebar(value: () => XSidebarProvider): Self = StObject.set(x, "getSidebar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSidebar(value: XSidebarProvider): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
+    inline def setSidebar(value: XSidebarProvider): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewControllerName(value: String): Self = StObject.set(x, "ViewControllerName", value.asInstanceOf[js.Any])
+    inline def setViewControllerName(value: String): Self = StObject.set(x, "ViewControllerName", value.asInstanceOf[js.Any])
   }
 }

@@ -20,48 +20,48 @@ object screenViewMod {
   trait ScreenView
     extends typings.playable.viewMod.default[IScreenViewStyles] {
     
-    @JSName("_$canvas")
+    /* private */ @JSName("_$canvas")
     var _$canvas: js.Any = js.native
     
-    @JSName("_$playbackElement")
+    /* private */ @JSName("_$playbackElement")
     var _$playbackElement: js.Any = js.native
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: js.Any = js.native
     
-    var _clearBackground: js.Any = js.native
+    /* private */ var _clearBackground: js.Any = js.native
     
-    var _currentMode: js.Any = js.native
+    /* private */ var _currentMode: js.Any = js.native
     
-    var _drawAreaFromSource: js.Any = js.native
+    /* private */ var _drawAreaFromSource: js.Any = js.native
     
-    var _drawBackground: js.Any = js.native
+    /* private */ var _drawBackground: js.Any = js.native
     
-    var _getCanvasAreas: js.Any = js.native
+    /* private */ var _getCanvasAreas: js.Any = js.native
     
-    var _getSourceAreas: js.Any = js.native
+    /* private */ var _getSourceAreas: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
-    var _isHorizontalStripes: js.Any = js.native
+    /* private */ var _isHorizontalStripes: js.Any = js.native
     
-    var _requestAnimationFrameID: js.Any = js.native
+    /* private */ var _requestAnimationFrameID: js.Any = js.native
     
-    var _startUpdatingBackground: js.Any = js.native
+    /* private */ var _startUpdatingBackground: js.Any = js.native
     
-    var _stopUpdatingBackground: js.Any = js.native
+    /* private */ var _stopUpdatingBackground: js.Any = js.native
     
-    var _styleNamesByViewMode: js.Any = js.native
+    /* private */ var _styleNamesByViewMode: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
-    var _updateBackground: js.Any = js.native
+    /* private */ var _updateBackground: js.Any = js.native
     
     def destroy(): Unit = js.native
     

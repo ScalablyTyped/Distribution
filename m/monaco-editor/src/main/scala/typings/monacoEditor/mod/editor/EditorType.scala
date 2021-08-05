@@ -13,12 +13,10 @@ object EditorType {
   @JSImport("monaco-editor", "editor.EditorType.ICodeEditor")
   @js.native
   def ICodeEditor: String = js.native
-  @scala.inline
-  def ICodeEditor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICodeEditor")(x.asInstanceOf[js.Any])
+  inline def ICodeEditor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICodeEditor")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorType.IDiffEditor")
   @js.native
   def IDiffEditor: String = js.native
-  @scala.inline
-  def IDiffEditor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDiffEditor")(x.asInstanceOf[js.Any])
+  inline def IDiffEditor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDiffEditor")(x.asInstanceOf[js.Any])
 }

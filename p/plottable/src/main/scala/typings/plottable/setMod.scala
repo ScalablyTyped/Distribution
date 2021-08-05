@@ -10,9 +10,9 @@ object setMod {
   @js.native
   class Set[T] () extends StObject {
     
-    var _es6Set: js.Any = js.native
+    /* private */ var _es6Set: js.Any = js.native
     
-    var _values: js.Any = js.native
+    /* private */ var _values: js.Any = js.native
     
     def add(value: T): this.type = js.native
     

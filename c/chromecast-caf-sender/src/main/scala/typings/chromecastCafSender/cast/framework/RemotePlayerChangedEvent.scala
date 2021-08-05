@@ -14,20 +14,16 @@ trait RemotePlayerChangedEvent[T]
 }
 object RemotePlayerChangedEvent {
   
-  @scala.inline
-  def apply[T](field: String, `type`: String, value: T): RemotePlayerChangedEvent[T] = {
+  inline def apply[T](field: String, `type`: String, value: T): RemotePlayerChangedEvent[T] = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemotePlayerChangedEvent[T]]
   }
   
-  @scala.inline
-  implicit class RemotePlayerChangedEventMutableBuilder[Self <: RemotePlayerChangedEvent[?], T] (val x: Self & RemotePlayerChangedEvent[T]) extends AnyVal {
+  extension [Self <: RemotePlayerChangedEvent[?], T](x: Self & RemotePlayerChangedEvent[T]) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -22,22 +22,17 @@ trait ItranslateVoice
 }
 object ItranslateVoice {
   
-  @scala.inline
-  def apply(isShowProgressTips: Double, localId: String, success: TranslateResult => Unit): ItranslateVoice = {
+  inline def apply(isShowProgressTips: Double, localId: String, success: TranslateResult => Unit): ItranslateVoice = {
     val __obj = js.Dynamic.literal(isShowProgressTips = isShowProgressTips.asInstanceOf[js.Any], localId = localId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[ItranslateVoice]
   }
   
-  @scala.inline
-  implicit class ItranslateVoiceMutableBuilder[Self <: ItranslateVoice] (val x: Self) extends AnyVal {
+  extension [Self <: ItranslateVoice](x: Self) {
     
-    @scala.inline
-    def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
+    inline def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: TranslateResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: TranslateResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

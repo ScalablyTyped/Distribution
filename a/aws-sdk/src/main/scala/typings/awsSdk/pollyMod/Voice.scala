@@ -43,61 +43,43 @@ trait Voice extends StObject {
 }
 object Voice {
   
-  @scala.inline
-  def apply(): Voice = {
+  inline def apply(): Voice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Voice]
   }
   
-  @scala.inline
-  implicit class VoiceMutableBuilder[Self <: Voice] (val x: Self) extends AnyVal {
+  extension [Self <: Voice](x: Self) {
     
-    @scala.inline
-    def setAdditionalLanguageCodes(value: LanguageCodeList): Self = StObject.set(x, "AdditionalLanguageCodes", value.asInstanceOf[js.Any])
+    inline def setAdditionalLanguageCodes(value: LanguageCodeList): Self = StObject.set(x, "AdditionalLanguageCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalLanguageCodesUndefined: Self = StObject.set(x, "AdditionalLanguageCodes", js.undefined)
+    inline def setAdditionalLanguageCodesUndefined: Self = StObject.set(x, "AdditionalLanguageCodes", js.undefined)
     
-    @scala.inline
-    def setAdditionalLanguageCodesVarargs(value: LanguageCode*): Self = StObject.set(x, "AdditionalLanguageCodes", js.Array(value :_*))
+    inline def setAdditionalLanguageCodesVarargs(value: LanguageCode*): Self = StObject.set(x, "AdditionalLanguageCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setGender(value: Gender): Self = StObject.set(x, "Gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: Gender): Self = StObject.set(x, "Gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "Gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "Gender", js.undefined)
     
-    @scala.inline
-    def setId(value: VoiceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: VoiceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setLanguageName(value: LanguageName): Self = StObject.set(x, "LanguageName", value.asInstanceOf[js.Any])
+    inline def setLanguageName(value: LanguageName): Self = StObject.set(x, "LanguageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageNameUndefined: Self = StObject.set(x, "LanguageName", js.undefined)
+    inline def setLanguageNameUndefined: Self = StObject.set(x, "LanguageName", js.undefined)
     
-    @scala.inline
-    def setName(value: VoiceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: VoiceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSupportedEngines(value: EngineList): Self = StObject.set(x, "SupportedEngines", value.asInstanceOf[js.Any])
+    inline def setSupportedEngines(value: EngineList): Self = StObject.set(x, "SupportedEngines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedEnginesUndefined: Self = StObject.set(x, "SupportedEngines", js.undefined)
+    inline def setSupportedEnginesUndefined: Self = StObject.set(x, "SupportedEngines", js.undefined)
     
-    @scala.inline
-    def setSupportedEnginesVarargs(value: Engine*): Self = StObject.set(x, "SupportedEngines", js.Array(value :_*))
+    inline def setSupportedEnginesVarargs(value: Engine*): Self = StObject.set(x, "SupportedEngines", js.Array(value :_*))
   }
 }

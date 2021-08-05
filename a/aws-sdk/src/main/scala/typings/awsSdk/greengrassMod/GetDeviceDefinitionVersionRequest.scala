@@ -23,25 +23,19 @@ trait GetDeviceDefinitionVersionRequest extends StObject {
 }
 object GetDeviceDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(DeviceDefinitionId: string, DeviceDefinitionVersionId: string): GetDeviceDefinitionVersionRequest = {
+  inline def apply(DeviceDefinitionId: string, DeviceDefinitionVersionId: string): GetDeviceDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(DeviceDefinitionId = DeviceDefinitionId.asInstanceOf[js.Any], DeviceDefinitionVersionId = DeviceDefinitionVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeviceDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetDeviceDefinitionVersionRequestMutableBuilder[Self <: GetDeviceDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeviceDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceDefinitionId(value: string): Self = StObject.set(x, "DeviceDefinitionId", value.asInstanceOf[js.Any])
+    inline def setDeviceDefinitionId(value: string): Self = StObject.set(x, "DeviceDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceDefinitionVersionId(value: string): Self = StObject.set(x, "DeviceDefinitionVersionId", value.asInstanceOf[js.Any])
+    inline def setDeviceDefinitionVersionId(value: string): Self = StObject.set(x, "DeviceDefinitionVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

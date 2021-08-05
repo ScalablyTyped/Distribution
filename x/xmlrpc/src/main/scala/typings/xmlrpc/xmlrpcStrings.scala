@@ -8,6 +8,5 @@ object xmlrpcStrings {
   
   @js.native
   sealed trait NotFound extends StObject
-  @scala.inline
-  def NotFound: NotFound = "NotFound".asInstanceOf[NotFound]
+  inline def NotFound: NotFound = "NotFound".asInstanceOf[NotFound]
 }

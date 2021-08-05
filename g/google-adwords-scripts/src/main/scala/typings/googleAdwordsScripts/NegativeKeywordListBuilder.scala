@@ -12,8 +12,7 @@ trait NegativeKeywordListBuilder[NegativeKeywordList]
 }
 object NegativeKeywordListBuilder {
   
-  @scala.inline
-  def apply[NegativeKeywordList](
+  inline def apply[NegativeKeywordList](
     build: () => AdWordsOperation[NegativeKeywordList],
     withName: String => NegativeKeywordListBuilder[NegativeKeywordList]
   ): NegativeKeywordListBuilder[NegativeKeywordList] = {
@@ -21,10 +20,8 @@ object NegativeKeywordListBuilder {
     __obj.asInstanceOf[NegativeKeywordListBuilder[NegativeKeywordList]]
   }
   
-  @scala.inline
-  implicit class NegativeKeywordListBuilderMutableBuilder[Self <: NegativeKeywordListBuilder[?], NegativeKeywordList] (val x: Self & NegativeKeywordListBuilder[NegativeKeywordList]) extends AnyVal {
+  extension [Self <: NegativeKeywordListBuilder[?], NegativeKeywordList](x: Self & NegativeKeywordListBuilder[NegativeKeywordList]) {
     
-    @scala.inline
-    def setWithName(value: String => NegativeKeywordListBuilder[NegativeKeywordList]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+    inline def setWithName(value: String => NegativeKeywordListBuilder[NegativeKeywordList]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

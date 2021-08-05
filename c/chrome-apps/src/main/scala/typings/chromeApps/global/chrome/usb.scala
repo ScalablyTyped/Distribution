@@ -72,14 +72,12 @@ object usb {
     @JSGlobal("chrome.usb.Direction.IN")
     @js.native
     def IN: in_ = js.native
-    @scala.inline
-    def IN_=(x: in_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN")(x.asInstanceOf[js.Any])
+    inline def IN_=(x: in_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.Direction.OUT")
     @js.native
     def OUT: out_ = js.native
-    @scala.inline
-    def OUT_=(x: out_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUT")(x.asInstanceOf[js.Any])
+    inline def OUT_=(x: out_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUT")(x.asInstanceOf[js.Any])
   }
   
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
@@ -92,26 +90,22 @@ object usb {
     @JSGlobal("chrome.usb.Recipient.DEVICE")
     @js.native
     def DEVICE: device__ = js.native
-    @scala.inline
-    def DEVICE_=(x: device__): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEVICE")(x.asInstanceOf[js.Any])
+    inline def DEVICE_=(x: device__): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEVICE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.Recipient.ENDPOINT")
     @js.native
     def ENDPOINT: endpoint_ = js.native
-    @scala.inline
-    def ENDPOINT_=(x: endpoint_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENDPOINT")(x.asInstanceOf[js.Any])
+    inline def ENDPOINT_=(x: endpoint_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENDPOINT")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.Recipient.INTERFACE")
     @js.native
     def INTERFACE: interface_ = js.native
-    @scala.inline
-    def INTERFACE_=(x: interface_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERFACE")(x.asInstanceOf[js.Any])
+    inline def INTERFACE_=(x: interface_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERFACE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.Recipient.OTHER")
     @js.native
     def OTHER: other_ = js.native
-    @scala.inline
-    def OTHER_=(x: other_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OTHER")(x.asInstanceOf[js.Any])
+    inline def OTHER_=(x: other_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OTHER")(x.asInstanceOf[js.Any])
   }
   
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
@@ -124,26 +118,22 @@ object usb {
     @JSGlobal("chrome.usb.RequestType.CLASS")
     @js.native
     def CLASS: class_ = js.native
-    @scala.inline
-    def CLASS_=(x: class_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS")(x.asInstanceOf[js.Any])
+    inline def CLASS_=(x: class_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.RequestType.RESERVED")
     @js.native
     def RESERVED: reserved_ = js.native
-    @scala.inline
-    def RESERVED_=(x: reserved_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED")(x.asInstanceOf[js.Any])
+    inline def RESERVED_=(x: reserved_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.RequestType.STANDARD")
     @js.native
     def STANDARD: standard_ = js.native
-    @scala.inline
-    def STANDARD_=(x: standard_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STANDARD")(x.asInstanceOf[js.Any])
+    inline def STANDARD_=(x: standard_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STANDARD")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.RequestType.VENDOR")
     @js.native
     def VENDOR: vendor_ = js.native
-    @scala.inline
-    def VENDOR_=(x: vendor_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VENDOR")(x.asInstanceOf[js.Any])
+    inline def VENDOR_=(x: vendor_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VENDOR")(x.asInstanceOf[js.Any])
   }
   
   object SynchronizationType {
@@ -155,20 +145,17 @@ object usb {
     @JSGlobal("chrome.usb.SynchronizationType.ADAPTIVE")
     @js.native
     def ADAPTIVE: adaptive_ = js.native
-    @scala.inline
-    def ADAPTIVE_=(x: adaptive_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADAPTIVE")(x.asInstanceOf[js.Any])
+    inline def ADAPTIVE_=(x: adaptive_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADAPTIVE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.SynchronizationType.ASYNCHRONOUS")
     @js.native
     def ASYNCHRONOUS: asynchronous_ = js.native
-    @scala.inline
-    def ASYNCHRONOUS_=(x: asynchronous_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ASYNCHRONOUS")(x.asInstanceOf[js.Any])
+    inline def ASYNCHRONOUS_=(x: asynchronous_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ASYNCHRONOUS")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.SynchronizationType.SYNCHRONOUS")
     @js.native
     def SYNCHRONOUS: synchronous_ = js.native
-    @scala.inline
-    def SYNCHRONOUS_=(x: synchronous_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNCHRONOUS")(x.asInstanceOf[js.Any])
+    inline def SYNCHRONOUS_=(x: synchronous_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYNCHRONOUS")(x.asInstanceOf[js.Any])
   }
   
   /** Direction, Recipient, RequestType, and TransferType all map to their namesakes within the USB specification. */
@@ -181,26 +168,22 @@ object usb {
     @JSGlobal("chrome.usb.TransferType.BULK")
     @js.native
     def BULK: bulk_ = js.native
-    @scala.inline
-    def BULK_=(x: bulk_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BULK")(x.asInstanceOf[js.Any])
+    inline def BULK_=(x: bulk_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BULK")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.TransferType.CONTROL")
     @js.native
     def CONTROL: control_ = js.native
-    @scala.inline
-    def CONTROL_=(x: control_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTROL")(x.asInstanceOf[js.Any])
+    inline def CONTROL_=(x: control_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTROL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.TransferType.INTERRUPT")
     @js.native
     def INTERRUPT: interrupt_ = js.native
-    @scala.inline
-    def INTERRUPT_=(x: interrupt_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT")(x.asInstanceOf[js.Any])
+    inline def INTERRUPT_=(x: interrupt_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERRUPT")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.TransferType.ISOCHRONOUS")
     @js.native
     def ISOCHRONOUS: isochronous_ = js.native
-    @scala.inline
-    def ISOCHRONOUS_=(x: isochronous_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISOCHRONOUS")(x.asInstanceOf[js.Any])
+    inline def ISOCHRONOUS_=(x: isochronous_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISOCHRONOUS")(x.asInstanceOf[js.Any])
   }
   
   object UsageType {
@@ -212,32 +195,27 @@ object usb {
     @JSGlobal("chrome.usb.UsageType.DATA")
     @js.native
     def DATA: data_ = js.native
-    @scala.inline
-    def DATA_=(x: data_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA")(x.asInstanceOf[js.Any])
+    inline def DATA_=(x: data_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.UsageType.EXPLICIT_FEEDBACK")
     @js.native
     def EXPLICIT_FEEDBACK: explicitFeedback = js.native
-    @scala.inline
-    def EXPLICIT_FEEDBACK_=(x: explicitFeedback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXPLICIT_FEEDBACK")(x.asInstanceOf[js.Any])
+    inline def EXPLICIT_FEEDBACK_=(x: explicitFeedback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXPLICIT_FEEDBACK")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.UsageType.FEEDBACK")
     @js.native
     def FEEDBACK: feedback_ = js.native
-    @scala.inline
-    def FEEDBACK_=(x: feedback_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FEEDBACK")(x.asInstanceOf[js.Any])
+    inline def FEEDBACK_=(x: feedback_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FEEDBACK")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.UsageType.NOTIFICATION")
     @js.native
     def NOTIFICATION: notification_ = js.native
-    @scala.inline
-    def NOTIFICATION_=(x: notification_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTIFICATION")(x.asInstanceOf[js.Any])
+    inline def NOTIFICATION_=(x: notification_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOTIFICATION")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.usb.UsageType.PERIODIC")
     @js.native
     def PERIODIC: periodic_ = js.native
-    @scala.inline
-    def PERIODIC_=(x: periodic_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERIODIC")(x.asInstanceOf[js.Any])
+    inline def PERIODIC_=(x: periodic_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERIODIC")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -246,8 +224,7 @@ object usb {
     * @param transferInfo The transfer parameters.
     * @param callback
     */
-  @scala.inline
-  def bulkTransfer(
+  inline def bulkTransfer(
     handle: ConnectionHandle,
     transferInfo: GenericTransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
@@ -264,8 +241,7 @@ object usb {
     * @param interfaceNumber The interface to be claimed.
     * @param callback
     */
-  @scala.inline
-  def claimInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("claimInterface")(handle.asInstanceOf[js.Any], interfaceNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def claimInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("claimInterface")(handle.asInstanceOf[js.Any], interfaceNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Closes a connection handle.
@@ -273,10 +249,8 @@ object usb {
     * @param handle The ConnectionHandle to close.
     * @param [callback]
     */
-  @scala.inline
-  def closeDevice(handle: ConnectionHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDevice")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def closeDevice(handle: ConnectionHandle, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeDevice")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def closeDevice(handle: ConnectionHandle): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDevice")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def closeDevice(handle: ConnectionHandle, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeDevice")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Performs a control transfer on the specified device.
@@ -286,8 +260,7 @@ object usb {
     * @param transferInfo Transfer info
     * @param callback
     */
-  @scala.inline
-  def controlTransfer(
+  inline def controlTransfer(
     handle: ConnectionHandle,
     transferInfo: TransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
@@ -304,8 +277,7 @@ object usb {
     * @requires(CrOS) Chrome OS if you specify *interfaceId*
     * @param callback
     */
-  @scala.inline
-  def findDevices(options: InterfaceId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findDevices(options: InterfaceId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Finds USB devices specified by the vendor, product and (optionally) interface IDs and if permissions allow opens them for use.
     * If the access request is rejected or the device fails to be opened a connection handle will not be created or returned.
@@ -315,8 +287,7 @@ object usb {
     *                  - productId: The product ID.
     * @param callback
     */
-  @scala.inline
-  def findDevices(options: ProductId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def findDevices(options: ProductId, callback: js.Function1[/* handles */ js.Array[ConnectionHandle], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets the configuration descriptor for the currently selected configuration.
@@ -324,8 +295,7 @@ object usb {
     * @param handle An open connection to the device.
     * @param callback
     */
-  @scala.inline
-  def getConfiguration(handle: ConnectionHandle, callback: js.Function1[/* config */ ConfigDescriptor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfiguration")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getConfiguration(handle: ConnectionHandle, callback: js.Function1[/* config */ ConfigDescriptor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfiguration")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns the full set of device configuration descriptors.
@@ -333,8 +303,7 @@ object usb {
     * @param device The Device to fetch descriptors from.
     * @param callback
     */
-  @scala.inline
-  def getConfigurations(device: Device, callback: js.Function1[/* configs */ js.Array[ConfigDescriptor], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigurations")(device.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getConfigurations(device: Device, callback: js.Function1[/* configs */ js.Array[ConfigDescriptor], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfigurations")(device.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Enumerates connected USB devices.
@@ -342,8 +311,7 @@ object usb {
     * @param options The properties to search for on target devices.
     * @param callback
     */
-  @scala.inline
-  def getDevices(options: Filters, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getDevices(options: Filters, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Presents a device picker to the user and returns the Devices selected.
@@ -357,8 +325,7 @@ object usb {
     *                   If multiple filters are provided, devices matching any filter will be displayed.
     * @param callback Invoked with a list of chosen Devices.
     */
-  @scala.inline
-  def getUserSelectedDevices(options: Multiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserSelectedDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getUserSelectedDevices(options: Multiple, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserSelectedDevices")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Performs an interrupt transfer on the specified device.
@@ -366,8 +333,7 @@ object usb {
     * @param transferInfo The transfer parameters.
     * @param callback
     */
-  @scala.inline
-  def interruptTransfer(
+  inline def interruptTransfer(
     handle: ConnectionHandle,
     transferInfo: GenericTransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
@@ -379,8 +345,7 @@ object usb {
     * @param transferInfo
     * @param callback
     */
-  @scala.inline
-  def isochronousTransfer(
+  inline def isochronousTransfer(
     handle: ConnectionHandle,
     transferInfo: IsochronousTransferInfo,
     callback: js.Function1[/* info */ TransferResultInfo, Unit]
@@ -391,8 +356,7 @@ object usb {
     * @param handle An open connection to the device.
     * @param callback
     */
-  @scala.inline
-  def listInterfaces(
+  inline def listInterfaces(
     handle: ConnectionHandle,
     callback: js.Function1[/* descriptors */ js.Array[InterfaceDescriptor], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listInterfaces")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -424,8 +388,7 @@ object usb {
     * @param device The device to open.
     * @param callback
     */
-  @scala.inline
-  def openDevice(device: Device, callback: js.Function1[/* handle */ ConnectionHandle, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openDevice")(device.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def openDevice(device: Device, callback: js.Function1[/* handle */ ConnectionHandle, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openDevice")(device.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Releases a claimed interface.
@@ -433,15 +396,13 @@ object usb {
     * @param interfaceNumber The interface to be released.
     * @param callback
     */
-  @scala.inline
-  def releaseInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("releaseInterface")(handle.asInstanceOf[js.Any], interfaceNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def releaseInterface(handle: ConnectionHandle, interfaceNumber: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("releaseInterface")(handle.asInstanceOf[js.Any], interfaceNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @deprecated Since Chrome 40.
     * @requires(CrOS) Chrome OS specific. This operation is now implicitly performed as a part of *openDevice*.
     */
-  @scala.inline
-  def requestAccess(device: Device, interfaceId: integer, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAccess")(device.asInstanceOf[js.Any], interfaceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def requestAccess(device: Device, interfaceId: integer, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestAccess")(device.asInstanceOf[js.Any], interfaceId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Tries to reset the USB device. If the reset fails, the given connection handle will be closed
@@ -450,8 +411,7 @@ object usb {
     * @param handle A connection handle to reset.
     * @param callback
     */
-  @scala.inline
-  def resetDevice(handle: ConnectionHandle, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetDevice")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resetDevice(handle: ConnectionHandle, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetDevice")(handle.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Select a device configuration.
@@ -464,8 +424,7 @@ object usb {
     * @param configurationValue
     * @param callback
     */
-  @scala.inline
-  def setConfiguration(handle: ConnectionHandle, configurationValue: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfiguration")(handle.asInstanceOf[js.Any], configurationValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setConfiguration(handle: ConnectionHandle, configurationValue: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfiguration")(handle.asInstanceOf[js.Any], configurationValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @description Selects an alternate setting on a previously claimed interface.
@@ -474,8 +433,7 @@ object usb {
     * @param alternateSetting The alternate setting to configure.
     * @param callback
     */
-  @scala.inline
-  def setInterfaceAlternateSetting(
+  inline def setInterfaceAlternateSetting(
     handle: ConnectionHandle,
     interfaceNumber: integer,
     alternateSetting: integer,

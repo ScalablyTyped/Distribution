@@ -18,19 +18,15 @@ trait IMapLoadOptions
 }
 object IMapLoadOptions {
   
-  @scala.inline
-  def apply(): IMapLoadOptions = {
+  inline def apply(): IMapLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMapLoadOptions]
   }
   
-  @scala.inline
-  implicit class IMapLoadOptionsMutableBuilder[Self <: IMapLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMapLoadOptions](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
   }
 }

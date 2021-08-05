@@ -21,11 +21,11 @@ object taskMod {
        with UploadTask {
     def this(_delegate: typings.firebaseStorage.srcTaskMod.UploadTask, _ref: ReferenceCompat) = this()
     
-    val _delegate: js.Any = js.native
+    /* private */ val _delegate: js.Any = js.native
     
-    val _ref: js.Any = js.native
+    /* private */ val _ref: js.Any = js.native
     
-    val _snapshot: js.Any = js.native
+    /* private */ val _snapshot: js.Any = js.native
     
     def on(
       `type`: TaskEvent,

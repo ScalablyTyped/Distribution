@@ -18,16 +18,16 @@ object mod {
   class SmartBuffer () extends StObject {
     def this(options: SmartBufferOptions) = this()
     
-    var _buff: js.Any = js.native
+    /* private */ var _buff: js.Any = js.native
     
-    var _encoding: js.Any = js.native
+    /* private */ var _encoding: js.Any = js.native
     
     /**
       * Ensures that the internal Buffer is large enough to write at least the given amount of data.
       *
       * @param minLength { Number } The minimum length of the data needs to be written.
       */
-    var _ensureCapacity: js.Any = js.native
+    /* private */ var _ensureCapacity: js.Any = js.native
     
     /**
       * Ensures that the internal Buffer is large enough to write data.
@@ -35,7 +35,7 @@ object mod {
       * @param dataLength { Number } The length of the data that needs to be written.
       * @param offset { Number } The offset of the data to be written (defaults to writeOffset).
       */
-    var _ensureWriteable: js.Any = js.native
+    /* private */ var _ensureWriteable: js.Any = js.native
     
     /**
       * Handles writing or insert of a Buffer.
@@ -43,7 +43,7 @@ object mod {
       * @param value { Buffer } The Buffer to write.
       * @param offset { Number } The offset to write the Buffer to.
       */
-    var _handleBuffer: js.Any = js.native
+    /* private */ var _handleBuffer: js.Any = js.native
     
     /**
       * Handles inserting and writing strings.
@@ -53,7 +53,7 @@ object mod {
       * @param arg2 { Number | String } The offset to insert the string at, or the BufferEncoding to use.
       * @param encoding { String } The BufferEncoding to use for writing strings (defaults to instance encoding).
       */
-    var _handleString: js.Any = js.native
+    /* private */ var _handleString: js.Any = js.native
     
     /**
       * Inserts a numeric number value based on the given offset and value.
@@ -67,7 +67,7 @@ object mod {
       *
       * @returns SmartBuffer this buffer
       */
-    var _insertNumberValue: js.Any = js.native
+    /* private */ var _insertNumberValue: js.Any = js.native
     
     /**
       * Reads a numeric number value using the provided function.
@@ -80,9 +80,9 @@ object mod {
       *
       * @returns { T } the number value
       */
-    var _readNumberValue: js.Any = js.native
+    /* private */ var _readNumberValue: js.Any = js.native
     
-    var _readOffset: js.Any = js.native
+    /* private */ var _readOffset: js.Any = js.native
     
     /**
       * Writes a numeric number value based on the given offset and value.
@@ -96,9 +96,9 @@ object mod {
       *
       * @returns SmartBuffer this buffer
       */
-    var _writeNumberValue: js.Any = js.native
+    /* private */ var _writeNumberValue: js.Any = js.native
     
-    var _writeOffset: js.Any = js.native
+    /* private */ var _writeOffset: js.Any = js.native
     
     /**
       * Clears the SmartBuffer instance to its original empty state.
@@ -128,7 +128,7 @@ object mod {
       * @param dataLength { Number } The length of the data that needs to be written.
       * @param offset { Number } The offset of the data to be written.
       */
-    var ensureInsertable: js.Any = js.native
+    /* private */ var ensureInsertable: js.Any = js.native
     
     /**
       * Ensures that the internal Buffer is large enough to read data.
@@ -136,7 +136,7 @@ object mod {
       * @param length { Number } The length of the data that needs to be read.
       * @param offset { Number } The offset of the data that needs to be read.
       */
-    var ensureReadable: js.Any = js.native
+    /* private */ var ensureReadable: js.Any = js.native
     
     /**
       * Inserts a BigInt64BE value at the given offset value.
@@ -883,10 +883,8 @@ object mod {
       * @return { SmartBuffer }
       */
     /* static member */
-    @scala.inline
-    def fromBuffer(buff: Buffer): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buff.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
-    @scala.inline
-    def fromBuffer(buff: Buffer, encoding: BufferEncoding): SmartBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buff.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[SmartBuffer]
+    inline def fromBuffer(buff: Buffer): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buff.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
+    inline def fromBuffer(buff: Buffer, encoding: BufferEncoding): SmartBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buff.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[SmartBuffer]
     
     /**
       * Creates a new SmartBuffer instance with the provided SmartBufferOptions options.
@@ -894,8 +892,7 @@ object mod {
       * @param options { SmartBufferOptions } The options to use when creating the SmartBuffer instance.
       */
     /* static member */
-    @scala.inline
-    def fromOptions(options: SmartBufferOptions): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
+    inline def fromOptions(options: SmartBufferOptions): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
     
     /**
       * Creates a new SmartBuffer instance with the provided internal Buffer size and optional encoding.
@@ -906,17 +903,14 @@ object mod {
       * @return { SmartBuffer }
       */
     /* static member */
-    @scala.inline
-    def fromSize(size: Double): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSize")(size.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
-    @scala.inline
-    def fromSize(size: Double, encoding: BufferEncoding): SmartBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSize")(size.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[SmartBuffer]
+    inline def fromSize(size: Double): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSize")(size.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
+    inline def fromSize(size: Double, encoding: BufferEncoding): SmartBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSize")(size.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[SmartBuffer]
     
     /**
       * Type checking function that determines if an object is a SmartBufferOptions object.
       */
     /* static member */
-    @scala.inline
-    def isSmartBufferOptions(options: SmartBufferOptions): /* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSmartBufferOptions")(options.asInstanceOf[js.Any]).asInstanceOf[/* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean]
+    inline def isSmartBufferOptions(options: SmartBufferOptions): /* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSmartBufferOptions")(options.asInstanceOf[js.Any]).asInstanceOf[/* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean]
   }
   
   /**
@@ -932,32 +926,24 @@ object mod {
   }
   object SmartBufferOptions {
     
-    @scala.inline
-    def apply(): SmartBufferOptions = {
+    inline def apply(): SmartBufferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SmartBufferOptions]
     }
     
-    @scala.inline
-    implicit class SmartBufferOptionsMutableBuilder[Self <: SmartBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SmartBufferOptions](x: Self) {
       
-      @scala.inline
-      def setBuff(value: Buffer): Self = StObject.set(x, "buff", value.asInstanceOf[js.Any])
+      inline def setBuff(value: Buffer): Self = StObject.set(x, "buff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuffUndefined: Self = StObject.set(x, "buff", js.undefined)
+      inline def setBuffUndefined: Self = StObject.set(x, "buff", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

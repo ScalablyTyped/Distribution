@@ -11,17 +11,14 @@ trait OrgsListSamlSsoAuthorizationsEndpoint extends StObject {
 }
 object OrgsListSamlSsoAuthorizationsEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): OrgsListSamlSsoAuthorizationsEndpoint = {
+  inline def apply(org_ : String): OrgsListSamlSsoAuthorizationsEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsListSamlSsoAuthorizationsEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsListSamlSsoAuthorizationsEndpointMutableBuilder[Self <: OrgsListSamlSsoAuthorizationsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsListSamlSsoAuthorizationsEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

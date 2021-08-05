@@ -12,6 +12,5 @@ object linkStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: ILinkStyleProps): ILinkStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ILinkStyles]
+  inline def getStyles(props: ILinkStyleProps): ILinkStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ILinkStyles]
 }

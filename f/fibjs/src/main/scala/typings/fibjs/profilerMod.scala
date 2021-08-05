@@ -99,24 +99,16 @@ object profilerMod {
   @js.native
   val NodeSynthetic: /* 9 */ Double = js.native
   
-  @scala.inline
-  def diff(test: js.Function): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")(test.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def diff(test: js.Function): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")(test.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @scala.inline
-  def loadSnapshot(fname: String): ClassHeapSnapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSnapshot")(fname.asInstanceOf[js.Any]).asInstanceOf[ClassHeapSnapshot]
+  inline def loadSnapshot(fname: String): ClassHeapSnapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSnapshot")(fname.asInstanceOf[js.Any]).asInstanceOf[ClassHeapSnapshot]
   
-  @scala.inline
-  def saveSnapshot(fname: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveSnapshot")(fname.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def saveSnapshot(fname: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveSnapshot")(fname.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def start(fname: String): ClassTimer = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any]).asInstanceOf[ClassTimer]
-  @scala.inline
-  def start(fname: String, time: Double): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
-  @scala.inline
-  def start(fname: String, time: Double, interval: Double): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any], time.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
-  @scala.inline
-  def start(fname: String, time: Unit, interval: Double): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any], time.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+  inline def start(fname: String): ClassTimer = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any]).asInstanceOf[ClassTimer]
+  inline def start(fname: String, time: Double): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+  inline def start(fname: String, time: Double, interval: Double): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any], time.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+  inline def start(fname: String, time: Unit, interval: Double): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any], time.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
   
-  @scala.inline
-  def takeSnapshot(): ClassHeapSnapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("takeSnapshot")().asInstanceOf[ClassHeapSnapshot]
+  inline def takeSnapshot(): ClassHeapSnapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("takeSnapshot")().asInstanceOf[ClassHeapSnapshot]
 }

@@ -14,22 +14,17 @@ trait Sender extends StObject {
 }
 object Sender {
   
-  @scala.inline
-  def apply(content: Replacementroom, room_id: String, sender: String): Sender = {
+  inline def apply(content: Replacementroom, room_id: String, sender: String): Sender = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], room_id = room_id.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sender]
   }
   
-  @scala.inline
-  implicit class SenderMutableBuilder[Self <: Sender] (val x: Self) extends AnyVal {
+  extension [Self <: Sender](x: Self) {
     
-    @scala.inline
-    def setContent(value: Replacementroom): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Replacementroom): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
+    inline def setRoom_id(value: String): Self = StObject.set(x, "room_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

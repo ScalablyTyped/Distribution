@@ -21,8 +21,7 @@ trait IPropertyBase extends StObject {
 }
 object IPropertyBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IPropertyBase,
     GetData: () => js.Any,
     GetLocalized: () => String,
@@ -34,25 +33,18 @@ object IPropertyBase {
     __obj.asInstanceOf[IPropertyBase]
   }
   
-  @scala.inline
-  implicit class IPropertyBaseMutableBuilder[Self <: IPropertyBase] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyBase](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IPropertyBase): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyBase): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetData(value: () => js.Any): Self = StObject.set(x, "GetData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => js.Any): Self = StObject.set(x, "GetData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocalized(value: () => String): Self = StObject.set(x, "GetLocalized", js.Any.fromFunction0(value))
+    inline def setGetLocalized(value: () => String): Self = StObject.set(x, "GetLocalized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasDataValue(value: () => Boolean): Self = StObject.set(x, "HasDataValue", js.Any.fromFunction0(value))
+    inline def setHasDataValue(value: () => Boolean): Self = StObject.set(x, "HasDataValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasLocalizedValue(value: () => Boolean): Self = StObject.set(x, "HasLocalizedValue", js.Any.fromFunction0(value))
+    inline def setHasLocalizedValue(value: () => Boolean): Self = StObject.set(x, "HasLocalizedValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: (js.Any, String) => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (js.Any, String) => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
   }
 }

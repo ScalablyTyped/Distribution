@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModuleImportType extends StObject
 object ModuleImportType {
   
-  @scala.inline
-  def function: typings.fridaGum.fridaGumStrings.function = "function".asInstanceOf[typings.fridaGum.fridaGumStrings.function]
+  inline def function: typings.fridaGum.fridaGumStrings.function = "function".asInstanceOf[typings.fridaGum.fridaGumStrings.function]
   
-  @scala.inline
-  def variable: typings.fridaGum.fridaGumStrings.variable = "variable".asInstanceOf[typings.fridaGum.fridaGumStrings.variable]
+  inline def variable: typings.fridaGum.fridaGumStrings.variable = "variable".asInstanceOf[typings.fridaGum.fridaGumStrings.variable]
 }

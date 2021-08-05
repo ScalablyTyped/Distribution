@@ -35,8 +35,7 @@ trait TaskAgentUpdate extends StObject {
 }
 object TaskAgentUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentState: String,
     requestTime: Date,
     requestedBy: IdentityRef,
@@ -47,22 +46,16 @@ object TaskAgentUpdate {
     __obj.asInstanceOf[TaskAgentUpdate]
   }
   
-  @scala.inline
-  implicit class TaskAgentUpdateMutableBuilder[Self <: TaskAgentUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentUpdate](x: Self) {
     
-    @scala.inline
-    def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+    inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTime(value: Date): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
+    inline def setRequestTime(value: Date): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
+    inline def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVersion(value: PackageVersion): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
+    inline def setSourceVersion(value: PackageVersion): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVersion(value: PackageVersion): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
+    inline def setTargetVersion(value: PackageVersion): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
   }
 }

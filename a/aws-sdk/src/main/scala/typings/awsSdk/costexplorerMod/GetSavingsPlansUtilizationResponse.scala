@@ -18,25 +18,19 @@ trait GetSavingsPlansUtilizationResponse extends StObject {
 }
 object GetSavingsPlansUtilizationResponse {
   
-  @scala.inline
-  def apply(Total: SavingsPlansUtilizationAggregates): GetSavingsPlansUtilizationResponse = {
+  inline def apply(Total: SavingsPlansUtilizationAggregates): GetSavingsPlansUtilizationResponse = {
     val __obj = js.Dynamic.literal(Total = Total.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansUtilizationResponse]
   }
   
-  @scala.inline
-  implicit class GetSavingsPlansUtilizationResponseMutableBuilder[Self <: GetSavingsPlansUtilizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavingsPlansUtilizationResponse](x: Self) {
     
-    @scala.inline
-    def setSavingsPlansUtilizationsByTime(value: SavingsPlansUtilizationsByTime): Self = StObject.set(x, "SavingsPlansUtilizationsByTime", value.asInstanceOf[js.Any])
+    inline def setSavingsPlansUtilizationsByTime(value: SavingsPlansUtilizationsByTime): Self = StObject.set(x, "SavingsPlansUtilizationsByTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlansUtilizationsByTimeUndefined: Self = StObject.set(x, "SavingsPlansUtilizationsByTime", js.undefined)
+    inline def setSavingsPlansUtilizationsByTimeUndefined: Self = StObject.set(x, "SavingsPlansUtilizationsByTime", js.undefined)
     
-    @scala.inline
-    def setSavingsPlansUtilizationsByTimeVarargs(value: SavingsPlansUtilizationByTime*): Self = StObject.set(x, "SavingsPlansUtilizationsByTime", js.Array(value :_*))
+    inline def setSavingsPlansUtilizationsByTimeVarargs(value: SavingsPlansUtilizationByTime*): Self = StObject.set(x, "SavingsPlansUtilizationsByTime", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: SavingsPlansUtilizationAggregates): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: SavingsPlansUtilizationAggregates): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
   }
 }

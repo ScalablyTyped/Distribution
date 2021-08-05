@@ -21,20 +21,17 @@ object AssociationNavigability {
   @JSImport("mendixmodelsdk", "domainmodels.AssociationNavigability.BothDirections")
   @js.native
   def BothDirections: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationNavigability = js.native
-  @scala.inline
-  def BothDirections_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationNavigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BothDirections")(x.asInstanceOf[js.Any])
+  inline def BothDirections_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationNavigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BothDirections")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.AssociationNavigability.ChildToParent")
   @js.native
   def ChildToParent: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationNavigability = js.native
-  @scala.inline
-  def ChildToParent_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationNavigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChildToParent")(x.asInstanceOf[js.Any])
+  inline def ChildToParent_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationNavigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ChildToParent")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.AssociationNavigability.ParentToChild")
   @js.native
   def ParentToChild: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationNavigability = js.native
-  @scala.inline
-  def ParentToChild_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationNavigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParentToChild")(x.asInstanceOf[js.Any])
+  inline def ParentToChild_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AssociationNavigability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParentToChild")(x.asInstanceOf[js.Any])
 }

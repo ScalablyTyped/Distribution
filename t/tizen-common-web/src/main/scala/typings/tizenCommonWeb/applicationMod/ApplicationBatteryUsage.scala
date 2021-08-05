@@ -20,19 +20,15 @@ trait ApplicationBatteryUsage extends StObject {
 }
 object ApplicationBatteryUsage {
   
-  @scala.inline
-  def apply(appId: ApplicationId, batteryUsage: Double): ApplicationBatteryUsage = {
+  inline def apply(appId: ApplicationId, batteryUsage: Double): ApplicationBatteryUsage = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], batteryUsage = batteryUsage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationBatteryUsage]
   }
   
-  @scala.inline
-  implicit class ApplicationBatteryUsageMutableBuilder[Self <: ApplicationBatteryUsage] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationBatteryUsage](x: Self) {
     
-    @scala.inline
-    def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatteryUsage(value: Double): Self = StObject.set(x, "batteryUsage", value.asInstanceOf[js.Any])
+    inline def setBatteryUsage(value: Double): Self = StObject.set(x, "batteryUsage", value.asInstanceOf[js.Any])
   }
 }

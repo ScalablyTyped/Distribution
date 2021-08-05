@@ -25,14 +25,14 @@ object toastMod {
        with ComponentInterface
        with OverlayInterface {
     
-    var buttonClick: js.Any = js.native
+    /* private */ var buttonClick: js.Any = js.native
     
     /**
       * An array of buttons for the toast.
       */
     var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.native
     
-    var callButtonHandler: js.Any = js.native
+    /* private */ var callButtonHandler: js.Any = js.native
     
     /**
       * The color to use from your application's color palette.
@@ -50,7 +50,7 @@ object toastMod {
       */
     var cssClass: js.UndefOr[String | js.Array[String]] = js.native
     
-    var dispatchCancelHandler: js.Any = js.native
+    /* private */ var dispatchCancelHandler: js.Any = js.native
     
     /**
       * How many milliseconds to wait before hiding the toast. By default, it will show
@@ -58,12 +58,12 @@ object toastMod {
       */
     var duration: Double = js.native
     
-    var durationTimeout: js.Any = js.native
+    /* private */ var durationTimeout: js.Any = js.native
     
     @JSName("el")
     var el_Toast: HTMLIonToastElement = js.native
     
-    var getButtons: js.Any = js.native
+    /* private */ var getButtons: js.Any = js.native
     
     /**
       * Header to be shown in the toast.

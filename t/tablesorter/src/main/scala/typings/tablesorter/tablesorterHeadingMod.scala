@@ -52,56 +52,40 @@ object tablesorterHeadingMod {
   }
   object TablesorterHeading {
     
-    @scala.inline
-    def apply(): TablesorterHeading = {
+    inline def apply(): TablesorterHeading = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TablesorterHeading]
     }
     
-    @scala.inline
-    implicit class TablesorterHeadingMutableBuilder[Self <: TablesorterHeading] (val x: Self) extends AnyVal {
+    extension [Self <: TablesorterHeading](x: Self) {
       
-      @scala.inline
-      def setEmpty(value: EmptySorting): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: EmptySorting): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+      inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      @scala.inline
-      def setFilter(value: ColumnFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: ColumnFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLockedOrder(value: SortOrder): Self = StObject.set(x, "lockedOrder", value.asInstanceOf[js.Any])
+      inline def setLockedOrder(value: SortOrder): Self = StObject.set(x, "lockedOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockedOrderUndefined: Self = StObject.set(x, "lockedOrder", js.undefined)
+      inline def setLockedOrderUndefined: Self = StObject.set(x, "lockedOrder", js.undefined)
       
-      @scala.inline
-      def setParser(value: String | Boolean): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: String | Boolean): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
-      @scala.inline
-      def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+      inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+      inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
-      @scala.inline
-      def setSorter(value: String | Boolean): Self = StObject.set(x, "sorter", value.asInstanceOf[js.Any])
+      inline def setSorter(value: String | Boolean): Self = StObject.set(x, "sorter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
+      inline def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
       
-      @scala.inline
-      def setString(value: StringSorting): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: StringSorting): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     }
   }
 }

@@ -8,11 +8,9 @@ object stylableModuleUtilsStrings {
   
   @js.native
   sealed trait module extends StObject
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
+  inline def module: module = "module".asInstanceOf[module]
   
   @js.native
   sealed trait namespace extends StObject
-  @scala.inline
-  def namespace: namespace = "namespace".asInstanceOf[namespace]
+  inline def namespace: namespace = "namespace".asInstanceOf[namespace]
 }

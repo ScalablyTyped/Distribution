@@ -34,38 +34,28 @@ object breadcrumbMod {
   }
   object BreadcrumbProps {
     
-    @scala.inline
-    def apply(): BreadcrumbProps = {
+    inline def apply(): BreadcrumbProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbPropsMutableBuilder[Self <: BreadcrumbProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setListClassName(value: String): Self = StObject.set(x, "listClassName", value.asInstanceOf[js.Any])
+      inline def setListClassName(value: String): Self = StObject.set(x, "listClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListClassNameUndefined: Self = StObject.set(x, "listClassName", js.undefined)
+      inline def setListClassNameUndefined: Self = StObject.set(x, "listClassName", js.undefined)
       
-      @scala.inline
-      def setListTag(value: ElementType[js.Any]): Self = StObject.set(x, "listTag", value.asInstanceOf[js.Any])
+      inline def setListTag(value: ElementType[js.Any]): Self = StObject.set(x, "listTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListTagUndefined: Self = StObject.set(x, "listTag", js.undefined)
+      inline def setListTagUndefined: Self = StObject.set(x, "listTag", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

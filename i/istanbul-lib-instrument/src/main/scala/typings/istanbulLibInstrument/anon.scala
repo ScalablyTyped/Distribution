@@ -212,20 +212,16 @@ object anon {
   }
   object FileCoverage {
     
-    @scala.inline
-    def apply(fileCoverage: typings.istanbulLibCoverage.mod.FileCoverage, sourceMappingURL: String): FileCoverage = {
+    inline def apply(fileCoverage: typings.istanbulLibCoverage.mod.FileCoverage, sourceMappingURL: String): FileCoverage = {
       val __obj = js.Dynamic.literal(fileCoverage = fileCoverage.asInstanceOf[js.Any], sourceMappingURL = sourceMappingURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileCoverage]
     }
     
-    @scala.inline
-    implicit class FileCoverageMutableBuilder[Self <: FileCoverage] (val x: Self) extends AnyVal {
+    extension [Self <: FileCoverage](x: Self) {
       
-      @scala.inline
-      def setFileCoverage(value: typings.istanbulLibCoverage.mod.FileCoverage): Self = StObject.set(x, "fileCoverage", value.asInstanceOf[js.Any])
+      inline def setFileCoverage(value: typings.istanbulLibCoverage.mod.FileCoverage): Self = StObject.set(x, "fileCoverage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMappingURL(value: String): Self = StObject.set(x, "sourceMappingURL", value.asInstanceOf[js.Any])
+      inline def setSourceMappingURL(value: String): Self = StObject.set(x, "sourceMappingURL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,62 +246,44 @@ object anon {
   }
   object PartialInstrumenterOption {
     
-    @scala.inline
-    def apply(): PartialInstrumenterOption = {
+    inline def apply(): PartialInstrumenterOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialInstrumenterOption]
     }
     
-    @scala.inline
-    implicit class PartialInstrumenterOptionMutableBuilder[Self <: PartialInstrumenterOption] (val x: Self) extends AnyVal {
+    extension [Self <: PartialInstrumenterOption](x: Self) {
       
-      @scala.inline
-      def setAutoWrap(value: Boolean): Self = StObject.set(x, "autoWrap", value.asInstanceOf[js.Any])
+      inline def setAutoWrap(value: Boolean): Self = StObject.set(x, "autoWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoWrapUndefined: Self = StObject.set(x, "autoWrap", js.undefined)
+      inline def setAutoWrapUndefined: Self = StObject.set(x, "autoWrap", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
+      inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageVariableUndefined: Self = StObject.set(x, "coverageVariable", js.undefined)
+      inline def setCoverageVariableUndefined: Self = StObject.set(x, "coverageVariable", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setEsModules(value: Boolean): Self = StObject.set(x, "esModules", value.asInstanceOf[js.Any])
+      inline def setEsModules(value: Boolean): Self = StObject.set(x, "esModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEsModulesUndefined: Self = StObject.set(x, "esModules", js.undefined)
+      inline def setEsModulesUndefined: Self = StObject.set(x, "esModules", js.undefined)
       
-      @scala.inline
-      def setPreserveComments(value: Boolean): Self = StObject.set(x, "preserveComments", value.asInstanceOf[js.Any])
+      inline def setPreserveComments(value: Boolean): Self = StObject.set(x, "preserveComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveCommentsUndefined: Self = StObject.set(x, "preserveComments", js.undefined)
+      inline def setPreserveCommentsUndefined: Self = StObject.set(x, "preserveComments", js.undefined)
       
-      @scala.inline
-      def setProduceSourceMap(value: Boolean): Self = StObject.set(x, "produceSourceMap", value.asInstanceOf[js.Any])
+      inline def setProduceSourceMap(value: Boolean): Self = StObject.set(x, "produceSourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduceSourceMapUndefined: Self = StObject.set(x, "produceSourceMap", js.undefined)
+      inline def setProduceSourceMapUndefined: Self = StObject.set(x, "produceSourceMap", js.undefined)
       
-      @scala.inline
-      def setSourceMapUrlCallback(value: (/* filename */ String, /* url */ String) => Unit): Self = StObject.set(x, "sourceMapUrlCallback", js.Any.fromFunction2(value))
+      inline def setSourceMapUrlCallback(value: (/* filename */ String, /* url */ String) => Unit): Self = StObject.set(x, "sourceMapUrlCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSourceMapUrlCallbackUndefined: Self = StObject.set(x, "sourceMapUrlCallback", js.undefined)
+      inline def setSourceMapUrlCallbackUndefined: Self = StObject.set(x, "sourceMapUrlCallback", js.undefined)
     }
   }
   
@@ -318,26 +296,20 @@ object anon {
   }
   object PartialVisitorOptions {
     
-    @scala.inline
-    def apply(): PartialVisitorOptions = {
+    inline def apply(): PartialVisitorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialVisitorOptions]
     }
     
-    @scala.inline
-    implicit class PartialVisitorOptionsMutableBuilder[Self <: PartialVisitorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialVisitorOptions](x: Self) {
       
-      @scala.inline
-      def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
+      inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageVariableUndefined: Self = StObject.set(x, "coverageVariable", js.undefined)
+      inline def setCoverageVariableUndefined: Self = StObject.set(x, "coverageVariable", js.undefined)
       
-      @scala.inline
-      def setInputSourceMap(value: RawSourceMap): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
+      inline def setInputSourceMap(value: RawSourceMap): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputSourceMapUndefined: Self = StObject.set(x, "inputSourceMap", js.undefined)
+      inline def setInputSourceMapUndefined: Self = StObject.set(x, "inputSourceMap", js.undefined)
     }
   }
   

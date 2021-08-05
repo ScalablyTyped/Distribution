@@ -489,68 +489,48 @@ object threeTypesMod {
   }
   object EventHandlers {
     
-    @scala.inline
-    def apply(): EventHandlers = {
+    inline def apply(): EventHandlers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventHandlers]
     }
     
-    @scala.inline
-    implicit class EventHandlersMutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
+    extension [Self <: EventHandlers](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnContextMenu(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnDoubleClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnDoubleClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
+      inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
       
-      @scala.inline
-      def setOnPointerDown(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      inline def setOnPointerDown(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+      inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
       
-      @scala.inline
-      def setOnPointerMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      inline def setOnPointerMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+      inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
       
-      @scala.inline
-      def setOnPointerOut(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+      inline def setOnPointerOut(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
+      inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
       
-      @scala.inline
-      def setOnPointerOver(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+      inline def setOnPointerOver(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
+      inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
       
-      @scala.inline
-      def setOnPointerUp(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      inline def setOnPointerUp(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
+      inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
-      @scala.inline
-      def setOnWheel(value: /* event */ WheelEvent => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+      inline def setOnWheel(value: /* event */ WheelEvent => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
+      inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     }
   }
   
@@ -762,68 +742,48 @@ object threeTypesMod {
   }
   object NodeProps {
     
-    @scala.inline
-    def apply[T, P](): NodeProps[T, P] = {
+    inline def apply[T, P](): NodeProps[T, P] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeProps[T, P]]
     }
     
-    @scala.inline
-    implicit class NodePropsMutableBuilder[Self <: NodeProps[?, ?], T, P] (val x: Self & (NodeProps[T, P])) extends AnyVal {
+    extension [Self <: NodeProps[?, ?], T, P](x: Self & (NodeProps[T, P])) {
       
-      @scala.inline
-      def setArgs(value: Args[P]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Args[P]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setAttach(value: String): Self = StObject.set(x, "attach", value.asInstanceOf[js.Any])
+      inline def setAttach(value: String): Self = StObject.set(x, "attach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachArray(value: String): Self = StObject.set(x, "attachArray", value.asInstanceOf[js.Any])
+      inline def setAttachArray(value: String): Self = StObject.set(x, "attachArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachArrayUndefined: Self = StObject.set(x, "attachArray", js.undefined)
+      inline def setAttachArrayUndefined: Self = StObject.set(x, "attachArray", js.undefined)
       
-      @scala.inline
-      def setAttachObject(value: NamedArrayTuple[js.Function2[/* target */ String, /* name */ String, Unit]]): Self = StObject.set(x, "attachObject", value.asInstanceOf[js.Any])
+      inline def setAttachObject(value: NamedArrayTuple[js.Function2[/* target */ String, /* name */ String, Unit]]): Self = StObject.set(x, "attachObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachObjectUndefined: Self = StObject.set(x, "attachObject", js.undefined)
+      inline def setAttachObjectUndefined: Self = StObject.set(x, "attachObject", js.undefined)
       
-      @scala.inline
-      def setAttachUndefined: Self = StObject.set(x, "attach", js.undefined)
+      inline def setAttachUndefined: Self = StObject.set(x, "attach", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* self */ T => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* self */ T => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setRef(value: Ref[ReactNode]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[ReactNode]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ ReactNode | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ ReactNode | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
@@ -933,18 +893,15 @@ object threeTypesMod {
   }
   object PrimitiveProps {
     
-    @scala.inline
-    def apply(`object`: js.Any): PrimitiveProps = {
+    inline def apply(`object`: js.Any): PrimitiveProps = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrimitiveProps]
     }
     
-    @scala.inline
-    implicit class PrimitivePropsMutableBuilder[Self <: PrimitiveProps] (val x: Self) extends AnyVal {
+    extension [Self <: PrimitiveProps](x: Self) {
       
-      @scala.inline
-      def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1431,401 +1388,269 @@ object threeTypesMod {
       }
       object IntrinsicElements {
         
-        @scala.inline
-        implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+        extension [Self <: IntrinsicElements](x: Self) {
           
-          @scala.inline
-          def setAmbientLight(value: AmbientLightProps): Self = StObject.set(x, "ambientLight", value.asInstanceOf[js.Any])
+          inline def setAmbientLight(value: AmbientLightProps): Self = StObject.set(x, "ambientLight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAmbientLightProbe(value: AmbientLightProbeProps): Self = StObject.set(x, "ambientLightProbe", value.asInstanceOf[js.Any])
+          inline def setAmbientLightProbe(value: AmbientLightProbeProps): Self = StObject.set(x, "ambientLightProbe", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setArrayCamera(value: ArrayCameraProps): Self = StObject.set(x, "arrayCamera", value.asInstanceOf[js.Any])
+          inline def setArrayCamera(value: ArrayCameraProps): Self = StObject.set(x, "arrayCamera", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setArrowHelper(value: ArrowHelperProps): Self = StObject.set(x, "arrowHelper", value.asInstanceOf[js.Any])
+          inline def setArrowHelper(value: ArrowHelperProps): Self = StObject.set(x, "arrowHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAudioListener(value: AudioListenerProps): Self = StObject.set(x, "audioListener", value.asInstanceOf[js.Any])
+          inline def setAudioListener(value: AudioListenerProps): Self = StObject.set(x, "audioListener", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAxesHelper(value: AxesHelperProps): Self = StObject.set(x, "axesHelper", value.asInstanceOf[js.Any])
+          inline def setAxesHelper(value: AxesHelperProps): Self = StObject.set(x, "axesHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBone(value: BoneProps): Self = StObject.set(x, "bone", value.asInstanceOf[js.Any])
+          inline def setBone(value: BoneProps): Self = StObject.set(x, "bone", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBox3Helper(value: Box3HelperProps): Self = StObject.set(x, "box3Helper", value.asInstanceOf[js.Any])
+          inline def setBox3Helper(value: Box3HelperProps): Self = StObject.set(x, "box3Helper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBoxBufferGeometry(value: BoxBufferGeometryProps): Self = StObject.set(x, "boxBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setBoxBufferGeometry(value: BoxBufferGeometryProps): Self = StObject.set(x, "boxBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBoxGeometry(value: BoxGeometryProps): Self = StObject.set(x, "boxGeometry", value.asInstanceOf[js.Any])
+          inline def setBoxGeometry(value: BoxGeometryProps): Self = StObject.set(x, "boxGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBoxHelper(value: BoxHelperProps): Self = StObject.set(x, "boxHelper", value.asInstanceOf[js.Any])
+          inline def setBoxHelper(value: BoxHelperProps): Self = StObject.set(x, "boxHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBufferAttribute(value: BufferAttributeProps): Self = StObject.set(x, "bufferAttribute", value.asInstanceOf[js.Any])
+          inline def setBufferAttribute(value: BufferAttributeProps): Self = StObject.set(x, "bufferAttribute", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBufferGeometry(value: BufferGeometryProps): Self = StObject.set(x, "bufferGeometry", value.asInstanceOf[js.Any])
+          inline def setBufferGeometry(value: BufferGeometryProps): Self = StObject.set(x, "bufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCamera(value: CameraProps): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+          inline def setCamera(value: CameraProps): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCameraHelper(value: CameraHelperProps): Self = StObject.set(x, "cameraHelper", value.asInstanceOf[js.Any])
+          inline def setCameraHelper(value: CameraHelperProps): Self = StObject.set(x, "cameraHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCanvasTexture(value: CanvasTextureProps): Self = StObject.set(x, "canvasTexture", value.asInstanceOf[js.Any])
+          inline def setCanvasTexture(value: CanvasTextureProps): Self = StObject.set(x, "canvasTexture", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCircleBufferGeometry(value: CircleBufferGeometryProps): Self = StObject.set(x, "circleBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setCircleBufferGeometry(value: CircleBufferGeometryProps): Self = StObject.set(x, "circleBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCircleGeometry(value: CircleGeometryProps): Self = StObject.set(x, "circleGeometry", value.asInstanceOf[js.Any])
+          inline def setCircleGeometry(value: CircleGeometryProps): Self = StObject.set(x, "circleGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColor(value: ColorProps): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+          inline def setColor(value: ColorProps): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCompressedTexture(value: CompressedTextureProps): Self = StObject.set(x, "compressedTexture", value.asInstanceOf[js.Any])
+          inline def setCompressedTexture(value: CompressedTextureProps): Self = StObject.set(x, "compressedTexture", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setConeBufferGeometry(value: ConeBufferGeometryProps): Self = StObject.set(x, "coneBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setConeBufferGeometry(value: ConeBufferGeometryProps): Self = StObject.set(x, "coneBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setConeGeometry(value: ConeGeometryProps): Self = StObject.set(x, "coneGeometry", value.asInstanceOf[js.Any])
+          inline def setConeGeometry(value: ConeGeometryProps): Self = StObject.set(x, "coneGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCubeCamera(value: CubeCameraProps): Self = StObject.set(x, "cubeCamera", value.asInstanceOf[js.Any])
+          inline def setCubeCamera(value: CubeCameraProps): Self = StObject.set(x, "cubeCamera", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCubeTexture(value: CubeTextureProps): Self = StObject.set(x, "cubeTexture", value.asInstanceOf[js.Any])
+          inline def setCubeTexture(value: CubeTextureProps): Self = StObject.set(x, "cubeTexture", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCylinderBufferGeometry(value: CylinderBufferGeometryProps): Self = StObject.set(x, "cylinderBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setCylinderBufferGeometry(value: CylinderBufferGeometryProps): Self = StObject.set(x, "cylinderBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCylinderGeometry(value: CylinderGeometryProps): Self = StObject.set(x, "cylinderGeometry", value.asInstanceOf[js.Any])
+          inline def setCylinderGeometry(value: CylinderGeometryProps): Self = StObject.set(x, "cylinderGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDataTexture(value: DataTextureProps): Self = StObject.set(x, "dataTexture", value.asInstanceOf[js.Any])
+          inline def setDataTexture(value: DataTextureProps): Self = StObject.set(x, "dataTexture", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDataTexture3D(value: DataTexture3DProps): Self = StObject.set(x, "dataTexture3D", value.asInstanceOf[js.Any])
+          inline def setDataTexture3D(value: DataTexture3DProps): Self = StObject.set(x, "dataTexture3D", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDepthTexture(value: DepthTextureProps): Self = StObject.set(x, "depthTexture", value.asInstanceOf[js.Any])
+          inline def setDepthTexture(value: DepthTextureProps): Self = StObject.set(x, "depthTexture", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDirectionalLight(value: DirectionalLightProps): Self = StObject.set(x, "directionalLight", value.asInstanceOf[js.Any])
+          inline def setDirectionalLight(value: DirectionalLightProps): Self = StObject.set(x, "directionalLight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDirectionalLightHelper(value: DirectionalLightHelperProps): Self = StObject.set(x, "directionalLightHelper", value.asInstanceOf[js.Any])
+          inline def setDirectionalLightHelper(value: DirectionalLightHelperProps): Self = StObject.set(x, "directionalLightHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDirectionalLightShadow(value: DirectionalLightShadowProps): Self = StObject.set(x, "directionalLightShadow", value.asInstanceOf[js.Any])
+          inline def setDirectionalLightShadow(value: DirectionalLightShadowProps): Self = StObject.set(x, "directionalLightShadow", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDodecahedronBufferGeometry(value: DodecahedronBufferGeometryProps): Self = StObject.set(x, "dodecahedronBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setDodecahedronBufferGeometry(value: DodecahedronBufferGeometryProps): Self = StObject.set(x, "dodecahedronBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDodecahedronGeometry(value: DodecahedronGeometryProps): Self = StObject.set(x, "dodecahedronGeometry", value.asInstanceOf[js.Any])
+          inline def setDodecahedronGeometry(value: DodecahedronGeometryProps): Self = StObject.set(x, "dodecahedronGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEdgesGeometry(value: EdgesGeometryProps): Self = StObject.set(x, "edgesGeometry", value.asInstanceOf[js.Any])
+          inline def setEdgesGeometry(value: EdgesGeometryProps): Self = StObject.set(x, "edgesGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setEuler(value: EulerProps): Self = StObject.set(x, "euler", value.asInstanceOf[js.Any])
+          inline def setEuler(value: EulerProps): Self = StObject.set(x, "euler", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExtrudeBufferGeometry(value: ExtrudeBufferGeometryProps): Self = StObject.set(x, "extrudeBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setExtrudeBufferGeometry(value: ExtrudeBufferGeometryProps): Self = StObject.set(x, "extrudeBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExtrudeGeometry(value: ExtrudeGeometryProps): Self = StObject.set(x, "extrudeGeometry", value.asInstanceOf[js.Any])
+          inline def setExtrudeGeometry(value: ExtrudeGeometryProps): Self = StObject.set(x, "extrudeGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFace3(value: Face3Props): Self = StObject.set(x, "face3", value.asInstanceOf[js.Any])
+          inline def setFace3(value: Face3Props): Self = StObject.set(x, "face3", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFog(value: FogProps): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+          inline def setFog(value: FogProps): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setGeometry(value: GeometryProps): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+          inline def setGeometry(value: GeometryProps): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setGridHelper(value: GridHelperProps): Self = StObject.set(x, "gridHelper", value.asInstanceOf[js.Any])
+          inline def setGridHelper(value: GridHelperProps): Self = StObject.set(x, "gridHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setGroup(value: GroupProps): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+          inline def setGroup(value: GroupProps): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHemisphereLight(value: HemisphereLightProps): Self = StObject.set(x, "hemisphereLight", value.asInstanceOf[js.Any])
+          inline def setHemisphereLight(value: HemisphereLightProps): Self = StObject.set(x, "hemisphereLight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHemisphereLightHelper(value: HemisphereLightHelperProps): Self = StObject.set(x, "hemisphereLightHelper", value.asInstanceOf[js.Any])
+          inline def setHemisphereLightHelper(value: HemisphereLightHelperProps): Self = StObject.set(x, "hemisphereLightHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHemisphereLightProbe(value: HemisphereLightProbeProps): Self = StObject.set(x, "hemisphereLightProbe", value.asInstanceOf[js.Any])
+          inline def setHemisphereLightProbe(value: HemisphereLightProbeProps): Self = StObject.set(x, "hemisphereLightProbe", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIcosahedronBufferGeometry(value: IcosahedronBufferGeometryProps): Self = StObject.set(x, "icosahedronBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setIcosahedronBufferGeometry(value: IcosahedronBufferGeometryProps): Self = StObject.set(x, "icosahedronBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIcosahedronGeometry(value: IcosahedronGeometryProps): Self = StObject.set(x, "icosahedronGeometry", value.asInstanceOf[js.Any])
+          inline def setIcosahedronGeometry(value: IcosahedronGeometryProps): Self = StObject.set(x, "icosahedronGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImmediateRenderObject(value: ImmediateRenderObjectProps): Self = StObject.set(x, "immediateRenderObject", value.asInstanceOf[js.Any])
+          inline def setImmediateRenderObject(value: ImmediateRenderObjectProps): Self = StObject.set(x, "immediateRenderObject", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInstancedBufferAttribute(value: InstancedBufferAttributeProps): Self = StObject.set(x, "instancedBufferAttribute", value.asInstanceOf[js.Any])
+          inline def setInstancedBufferAttribute(value: InstancedBufferAttributeProps): Self = StObject.set(x, "instancedBufferAttribute", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInstancedBufferGeometry(value: InstancedBufferGeometryProps): Self = StObject.set(x, "instancedBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setInstancedBufferGeometry(value: InstancedBufferGeometryProps): Self = StObject.set(x, "instancedBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInstancedMesh(value: InstancedMeshProps): Self = StObject.set(x, "instancedMesh", value.asInstanceOf[js.Any])
+          inline def setInstancedMesh(value: InstancedMeshProps): Self = StObject.set(x, "instancedMesh", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLOD(value: LODProps): Self = StObject.set(x, "lOD", value.asInstanceOf[js.Any])
+          inline def setLOD(value: LODProps): Self = StObject.set(x, "lOD", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLatheBufferGeometry(value: LatheBufferGeometryProps): Self = StObject.set(x, "latheBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setLatheBufferGeometry(value: LatheBufferGeometryProps): Self = StObject.set(x, "latheBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLatheGeometry(value: LatheGeometryProps): Self = StObject.set(x, "latheGeometry", value.asInstanceOf[js.Any])
+          inline def setLatheGeometry(value: LatheGeometryProps): Self = StObject.set(x, "latheGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLight(value: LightProps): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+          inline def setLight(value: LightProps): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLightProbe(value: LightProbeProps): Self = StObject.set(x, "lightProbe", value.asInstanceOf[js.Any])
+          inline def setLightProbe(value: LightProbeProps): Self = StObject.set(x, "lightProbe", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLightShadow(value: LightShadowProps): Self = StObject.set(x, "lightShadow", value.asInstanceOf[js.Any])
+          inline def setLightShadow(value: LightShadowProps): Self = StObject.set(x, "lightShadow", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLineBasicMaterial(value: LineBasicMaterialProps): Self = StObject.set(x, "lineBasicMaterial", value.asInstanceOf[js.Any])
+          inline def setLineBasicMaterial(value: LineBasicMaterialProps): Self = StObject.set(x, "lineBasicMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLineDashedMaterial(value: LineDashedMaterialProps): Self = StObject.set(x, "lineDashedMaterial", value.asInstanceOf[js.Any])
+          inline def setLineDashedMaterial(value: LineDashedMaterialProps): Self = StObject.set(x, "lineDashedMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLineLoop(value: LineLoopProps): Self = StObject.set(x, "lineLoop", value.asInstanceOf[js.Any])
+          inline def setLineLoop(value: LineLoopProps): Self = StObject.set(x, "lineLoop", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLineSegments(value: LineSegmentsProps): Self = StObject.set(x, "lineSegments", value.asInstanceOf[js.Any])
+          inline def setLineSegments(value: LineSegmentsProps): Self = StObject.set(x, "lineSegments", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaterial(value: MaterialProps): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+          inline def setMaterial(value: MaterialProps): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMatrix3(value: Matrix3Props): Self = StObject.set(x, "matrix3", value.asInstanceOf[js.Any])
+          inline def setMatrix3(value: Matrix3Props): Self = StObject.set(x, "matrix3", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMatrix4(value: Matrix4Props): Self = StObject.set(x, "matrix4", value.asInstanceOf[js.Any])
+          inline def setMatrix4(value: Matrix4Props): Self = StObject.set(x, "matrix4", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMesh(value: MeshProps): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
+          inline def setMesh(value: MeshProps): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshBasicMaterial(value: MeshBasicMaterialProps): Self = StObject.set(x, "meshBasicMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshBasicMaterial(value: MeshBasicMaterialProps): Self = StObject.set(x, "meshBasicMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshDepthMaterial(value: MeshDepthMaterialProps): Self = StObject.set(x, "meshDepthMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshDepthMaterial(value: MeshDepthMaterialProps): Self = StObject.set(x, "meshDepthMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshDistanceMaterial(value: MeshDistanceMaterialProps): Self = StObject.set(x, "meshDistanceMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshDistanceMaterial(value: MeshDistanceMaterialProps): Self = StObject.set(x, "meshDistanceMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshLambertMaterial(value: MeshLambertMaterialProps): Self = StObject.set(x, "meshLambertMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshLambertMaterial(value: MeshLambertMaterialProps): Self = StObject.set(x, "meshLambertMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshMatcapMaterial(value: MeshMatcapMaterialProps): Self = StObject.set(x, "meshMatcapMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshMatcapMaterial(value: MeshMatcapMaterialProps): Self = StObject.set(x, "meshMatcapMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshNormalMaterial(value: MeshNormalMaterialProps): Self = StObject.set(x, "meshNormalMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshNormalMaterial(value: MeshNormalMaterialProps): Self = StObject.set(x, "meshNormalMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshPhongMaterial(value: MeshPhongMaterialProps): Self = StObject.set(x, "meshPhongMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshPhongMaterial(value: MeshPhongMaterialProps): Self = StObject.set(x, "meshPhongMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshPhysicalMaterial(value: MeshPhysicalMaterialProps): Self = StObject.set(x, "meshPhysicalMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshPhysicalMaterial(value: MeshPhysicalMaterialProps): Self = StObject.set(x, "meshPhysicalMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshStandardMaterial(value: MeshStandardMaterialProps): Self = StObject.set(x, "meshStandardMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshStandardMaterial(value: MeshStandardMaterialProps): Self = StObject.set(x, "meshStandardMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMeshToonMaterial(value: MeshToonMaterialProps): Self = StObject.set(x, "meshToonMaterial", value.asInstanceOf[js.Any])
+          inline def setMeshToonMaterial(value: MeshToonMaterialProps): Self = StObject.set(x, "meshToonMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOctahedronBufferGeometry(value: OctahedronBufferGeometryProps): Self = StObject.set(x, "octahedronBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setOctahedronBufferGeometry(value: OctahedronBufferGeometryProps): Self = StObject.set(x, "octahedronBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOctahedronGeometry(value: OctahedronGeometryProps): Self = StObject.set(x, "octahedronGeometry", value.asInstanceOf[js.Any])
+          inline def setOctahedronGeometry(value: OctahedronGeometryProps): Self = StObject.set(x, "octahedronGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOrthographicCamera(value: OrthographicCameraProps): Self = StObject.set(x, "orthographicCamera", value.asInstanceOf[js.Any])
+          inline def setOrthographicCamera(value: OrthographicCameraProps): Self = StObject.set(x, "orthographicCamera", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParametricBufferGeometry(value: ParametricBufferGeometryProps): Self = StObject.set(x, "parametricBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setParametricBufferGeometry(value: ParametricBufferGeometryProps): Self = StObject.set(x, "parametricBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParametricGeometry(value: ParametricGeometryProps): Self = StObject.set(x, "parametricGeometry", value.asInstanceOf[js.Any])
+          inline def setParametricGeometry(value: ParametricGeometryProps): Self = StObject.set(x, "parametricGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPerspectiveCamera(value: PerspectiveCameraProps): Self = StObject.set(x, "perspectiveCamera", value.asInstanceOf[js.Any])
+          inline def setPerspectiveCamera(value: PerspectiveCameraProps): Self = StObject.set(x, "perspectiveCamera", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPlaneBufferGeometry(value: PlaneBufferGeometryProps): Self = StObject.set(x, "planeBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setPlaneBufferGeometry(value: PlaneBufferGeometryProps): Self = StObject.set(x, "planeBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPlaneGeometry(value: PlaneGeometryProps): Self = StObject.set(x, "planeGeometry", value.asInstanceOf[js.Any])
+          inline def setPlaneGeometry(value: PlaneGeometryProps): Self = StObject.set(x, "planeGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPlaneHelper(value: PlaneHelperProps): Self = StObject.set(x, "planeHelper", value.asInstanceOf[js.Any])
+          inline def setPlaneHelper(value: PlaneHelperProps): Self = StObject.set(x, "planeHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPointLight(value: PointLightProps): Self = StObject.set(x, "pointLight", value.asInstanceOf[js.Any])
+          inline def setPointLight(value: PointLightProps): Self = StObject.set(x, "pointLight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPointLightHelper(value: PointLightHelperProps): Self = StObject.set(x, "pointLightHelper", value.asInstanceOf[js.Any])
+          inline def setPointLightHelper(value: PointLightHelperProps): Self = StObject.set(x, "pointLightHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPoints(value: PointsProps): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+          inline def setPoints(value: PointsProps): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPointsMaterial(value: PointsMaterialProps): Self = StObject.set(x, "pointsMaterial", value.asInstanceOf[js.Any])
+          inline def setPointsMaterial(value: PointsMaterialProps): Self = StObject.set(x, "pointsMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPolarGridHelper(value: PolarGridHelperProps): Self = StObject.set(x, "polarGridHelper", value.asInstanceOf[js.Any])
+          inline def setPolarGridHelper(value: PolarGridHelperProps): Self = StObject.set(x, "polarGridHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPolyhedronBufferGeometry(value: PolyhedronBufferGeometryProps): Self = StObject.set(x, "polyhedronBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setPolyhedronBufferGeometry(value: PolyhedronBufferGeometryProps): Self = StObject.set(x, "polyhedronBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPolyhedronGeometry(value: PolyhedronGeometryProps): Self = StObject.set(x, "polyhedronGeometry", value.asInstanceOf[js.Any])
+          inline def setPolyhedronGeometry(value: PolyhedronGeometryProps): Self = StObject.set(x, "polyhedronGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPositionalAudio(value: PositionalAudioProps): Self = StObject.set(x, "positionalAudio", value.asInstanceOf[js.Any])
+          inline def setPositionalAudio(value: PositionalAudioProps): Self = StObject.set(x, "positionalAudio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPrimitive(value: PrimitiveProps): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
+          inline def setPrimitive(value: PrimitiveProps): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setQuaternion(value: QuaternionProps): Self = StObject.set(x, "quaternion", value.asInstanceOf[js.Any])
+          inline def setQuaternion(value: QuaternionProps): Self = StObject.set(x, "quaternion", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRawShaderMaterial(value: RawShaderMaterialProps): Self = StObject.set(x, "rawShaderMaterial", value.asInstanceOf[js.Any])
+          inline def setRawShaderMaterial(value: RawShaderMaterialProps): Self = StObject.set(x, "rawShaderMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRaycaster(value: RaycasterProps): Self = StObject.set(x, "raycaster", value.asInstanceOf[js.Any])
+          inline def setRaycaster(value: RaycasterProps): Self = StObject.set(x, "raycaster", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRectAreaLight(value: RectAreaLightProps): Self = StObject.set(x, "rectAreaLight", value.asInstanceOf[js.Any])
+          inline def setRectAreaLight(value: RectAreaLightProps): Self = StObject.set(x, "rectAreaLight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRingBufferGeometry(value: RingBufferGeometryProps): Self = StObject.set(x, "ringBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setRingBufferGeometry(value: RingBufferGeometryProps): Self = StObject.set(x, "ringBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRingGeometry(value: RingGeometryProps): Self = StObject.set(x, "ringGeometry", value.asInstanceOf[js.Any])
+          inline def setRingGeometry(value: RingGeometryProps): Self = StObject.set(x, "ringGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScene(value: SceneProps): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+          inline def setScene(value: SceneProps): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setShaderMaterial(value: ShaderMaterialProps): Self = StObject.set(x, "shaderMaterial", value.asInstanceOf[js.Any])
+          inline def setShaderMaterial(value: ShaderMaterialProps): Self = StObject.set(x, "shaderMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setShadowMaterial(value: ShadowMaterialProps): Self = StObject.set(x, "shadowMaterial", value.asInstanceOf[js.Any])
+          inline def setShadowMaterial(value: ShadowMaterialProps): Self = StObject.set(x, "shadowMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setShapeBufferGeometry(value: ShapeBufferGeometryProps): Self = StObject.set(x, "shapeBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setShapeBufferGeometry(value: ShapeBufferGeometryProps): Self = StObject.set(x, "shapeBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setShapeGeometry(value: ShapeGeometryProps): Self = StObject.set(x, "shapeGeometry", value.asInstanceOf[js.Any])
+          inline def setShapeGeometry(value: ShapeGeometryProps): Self = StObject.set(x, "shapeGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSkeleton(value: SkeletonProps): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
+          inline def setSkeleton(value: SkeletonProps): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSkeletonHelper(value: SkeletonHelperProps): Self = StObject.set(x, "skeletonHelper", value.asInstanceOf[js.Any])
+          inline def setSkeletonHelper(value: SkeletonHelperProps): Self = StObject.set(x, "skeletonHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSkinnedMesh(value: SkinnedMeshProps): Self = StObject.set(x, "skinnedMesh", value.asInstanceOf[js.Any])
+          inline def setSkinnedMesh(value: SkinnedMeshProps): Self = StObject.set(x, "skinnedMesh", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSphereBufferGeometry(value: SphereBufferGeometryProps): Self = StObject.set(x, "sphereBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setSphereBufferGeometry(value: SphereBufferGeometryProps): Self = StObject.set(x, "sphereBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSphereGeometry(value: SphereGeometryProps): Self = StObject.set(x, "sphereGeometry", value.asInstanceOf[js.Any])
+          inline def setSphereGeometry(value: SphereGeometryProps): Self = StObject.set(x, "sphereGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpotLight(value: SpotLightProps): Self = StObject.set(x, "spotLight", value.asInstanceOf[js.Any])
+          inline def setSpotLight(value: SpotLightProps): Self = StObject.set(x, "spotLight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpotLightHelper(value: SpotLightHelperProps): Self = StObject.set(x, "spotLightHelper", value.asInstanceOf[js.Any])
+          inline def setSpotLightHelper(value: SpotLightHelperProps): Self = StObject.set(x, "spotLightHelper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpotLightShadow(value: SpotLightShadowProps): Self = StObject.set(x, "spotLightShadow", value.asInstanceOf[js.Any])
+          inline def setSpotLightShadow(value: SpotLightShadowProps): Self = StObject.set(x, "spotLightShadow", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSprite(value: SpriteProps): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
+          inline def setSprite(value: SpriteProps): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpriteMaterial(value: SpriteMaterialProps): Self = StObject.set(x, "spriteMaterial", value.asInstanceOf[js.Any])
+          inline def setSpriteMaterial(value: SpriteMaterialProps): Self = StObject.set(x, "spriteMaterial", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTetrahedronBufferGeometry(value: TetrahedronBufferGeometryProps): Self = StObject.set(x, "tetrahedronBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setTetrahedronBufferGeometry(value: TetrahedronBufferGeometryProps): Self = StObject.set(x, "tetrahedronBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTetrahedronGeometry(value: TetrahedronGeometryProps): Self = StObject.set(x, "tetrahedronGeometry", value.asInstanceOf[js.Any])
+          inline def setTetrahedronGeometry(value: TetrahedronGeometryProps): Self = StObject.set(x, "tetrahedronGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTextBufferGeometry(value: TextBufferGeometryProps): Self = StObject.set(x, "textBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setTextBufferGeometry(value: TextBufferGeometryProps): Self = StObject.set(x, "textBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTextGeometry(value: TextGeometryProps): Self = StObject.set(x, "textGeometry", value.asInstanceOf[js.Any])
+          inline def setTextGeometry(value: TextGeometryProps): Self = StObject.set(x, "textGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTexture(value: TextureProps): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+          inline def setTexture(value: TextureProps): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTorusBufferGeometry(value: TorusBufferGeometryProps): Self = StObject.set(x, "torusBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setTorusBufferGeometry(value: TorusBufferGeometryProps): Self = StObject.set(x, "torusBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTorusGeometry(value: TorusGeometryProps): Self = StObject.set(x, "torusGeometry", value.asInstanceOf[js.Any])
+          inline def setTorusGeometry(value: TorusGeometryProps): Self = StObject.set(x, "torusGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTorusKnotBufferGeometry(value: TorusKnotBufferGeometryProps): Self = StObject.set(x, "torusKnotBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setTorusKnotBufferGeometry(value: TorusKnotBufferGeometryProps): Self = StObject.set(x, "torusKnotBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTorusKnotGeometry(value: TorusKnotGeometryProps): Self = StObject.set(x, "torusKnotGeometry", value.asInstanceOf[js.Any])
+          inline def setTorusKnotGeometry(value: TorusKnotGeometryProps): Self = StObject.set(x, "torusKnotGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTubeBufferGeometry(value: TubeBufferGeometryProps): Self = StObject.set(x, "tubeBufferGeometry", value.asInstanceOf[js.Any])
+          inline def setTubeBufferGeometry(value: TubeBufferGeometryProps): Self = StObject.set(x, "tubeBufferGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTubeGeometry(value: TubeGeometryProps): Self = StObject.set(x, "tubeGeometry", value.asInstanceOf[js.Any])
+          inline def setTubeGeometry(value: TubeGeometryProps): Self = StObject.set(x, "tubeGeometry", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVector2(value: Vector2Props): Self = StObject.set(x, "vector2", value.asInstanceOf[js.Any])
+          inline def setVector2(value: Vector2Props): Self = StObject.set(x, "vector2", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVector3(value: Vector3Props): Self = StObject.set(x, "vector3", value.asInstanceOf[js.Any])
+          inline def setVector3(value: Vector3Props): Self = StObject.set(x, "vector3", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVector4(value: Vector4Props): Self = StObject.set(x, "vector4", value.asInstanceOf[js.Any])
+          inline def setVector4(value: Vector4Props): Self = StObject.set(x, "vector4", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVideoTexture(value: VideoTextureProps): Self = StObject.set(x, "videoTexture", value.asInstanceOf[js.Any])
+          inline def setVideoTexture(value: VideoTextureProps): Self = StObject.set(x, "videoTexture", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWireframeGeometry(value: WireframeGeometryProps): Self = StObject.set(x, "wireframeGeometry", value.asInstanceOf[js.Any])
+          inline def setWireframeGeometry(value: WireframeGeometryProps): Self = StObject.set(x, "wireframeGeometry", value.asInstanceOf[js.Any])
         }
       }
     }

@@ -26,12 +26,9 @@ object RNFetchBlobSession {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSession(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSession")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getSession(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSession")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def removeSession(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSession")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeSession(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSession")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setSession(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSession")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setSession(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSession")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

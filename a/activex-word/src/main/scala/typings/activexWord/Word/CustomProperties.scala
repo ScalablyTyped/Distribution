@@ -18,13 +18,12 @@ trait CustomProperties extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.CustomProperties_typekey")
+  /* private */ @JSName("Word.CustomProperties_typekey")
   var WordDotCustomProperties_typekey: CustomProperties
 }
 object CustomProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (String, String) => CustomProperty,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object CustomProperties {
     __obj.asInstanceOf[CustomProperties]
   }
   
-  @scala.inline
-  implicit class CustomPropertiesMutableBuilder[Self <: CustomProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CustomProperties](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, String) => CustomProperty): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, String) => CustomProperty): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => CustomProperty): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => CustomProperty): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotCustomProperties_typekey(value: CustomProperties): Self = StObject.set(x, "Word.CustomProperties_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCustomProperties_typekey(value: CustomProperties): Self = StObject.set(x, "Word.CustomProperties_typekey", value.asInstanceOf[js.Any])
   }
 }

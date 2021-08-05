@@ -20,8 +20,7 @@ trait OnMouseDown extends StObject {
 }
 object OnMouseDown {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onMouseDown: js.Any => Unit,
     onMouseLeave: js.Any => Unit,
     onMouseMove: js.Any => Unit,
@@ -33,25 +32,18 @@ object OnMouseDown {
     __obj.asInstanceOf[OnMouseDown]
   }
   
-  @scala.inline
-  implicit class OnMouseDownMutableBuilder[Self <: OnMouseDown] (val x: Self) extends AnyVal {
+  extension [Self <: OnMouseDown](x: Self) {
     
-    @scala.inline
-    def setOnMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    inline def setOnMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMouseLeave(value: js.Any => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    inline def setOnMouseLeave(value: js.Any => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMouseMove(value: js.Any => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    inline def setOnMouseMove(value: js.Any => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMouseOut(value: () => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction0(value))
+    inline def setOnMouseOut(value: () => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMouseOver(value: () => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction0(value))
+    inline def setOnMouseOver(value: () => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMouseUp(value: js.Any => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+    inline def setOnMouseUp(value: js.Any => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
   }
 }

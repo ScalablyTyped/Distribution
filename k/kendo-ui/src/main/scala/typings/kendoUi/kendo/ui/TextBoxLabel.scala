@@ -12,25 +12,19 @@ trait TextBoxLabel extends StObject {
 }
 object TextBoxLabel {
   
-  @scala.inline
-  def apply(): TextBoxLabel = {
+  inline def apply(): TextBoxLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextBoxLabel]
   }
   
-  @scala.inline
-  implicit class TextBoxLabelMutableBuilder[Self <: TextBoxLabel] (val x: Self) extends AnyVal {
+  extension [Self <: TextBoxLabel](x: Self) {
     
-    @scala.inline
-    def setContent(value: String | js.Function): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String | js.Function): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
+    inline def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
+    inline def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
   }
 }

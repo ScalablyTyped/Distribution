@@ -16,36 +16,31 @@ trait TSTypeElement
      with _Node
 object TSTypeElement {
   
-  @scala.inline
-  def TSCallSignatureDeclaration_(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.indexTs37Mod.TSCallSignatureDeclaration_ = {
+  inline def TSCallSignatureDeclaration_(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.indexTs37Mod.TSCallSignatureDeclaration_ = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
     __obj.updateDynamic("type")("TSCallSignatureDeclaration")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.TSCallSignatureDeclaration_]
   }
   
-  @scala.inline
-  def TSConstructSignatureDeclaration_(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.indexTs37Mod.TSConstructSignatureDeclaration_ = {
+  inline def TSConstructSignatureDeclaration_(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.indexTs37Mod.TSConstructSignatureDeclaration_ = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
     __obj.updateDynamic("type")("TSConstructSignatureDeclaration")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.TSConstructSignatureDeclaration_]
   }
   
-  @scala.inline
-  def TSIndexSignature_(parameters: js.Array[Identifier_]): typings.babelTypes.indexTs37Mod.TSIndexSignature_ = {
+  inline def TSIndexSignature_(parameters: js.Array[Identifier_]): typings.babelTypes.indexTs37Mod.TSIndexSignature_ = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("TSIndexSignature")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.TSIndexSignature_]
   }
   
-  @scala.inline
-  def TSMethodSignature_(key: Expression, parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.indexTs37Mod.TSMethodSignature_ = {
+  inline def TSMethodSignature_(key: Expression, parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.indexTs37Mod.TSMethodSignature_ = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], computed = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
     __obj.updateDynamic("type")("TSMethodSignature")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.TSMethodSignature_]
   }
   
-  @scala.inline
-  def TSPropertySignature_(key: Expression): typings.babelTypes.indexTs37Mod.TSPropertySignature_ = {
+  inline def TSPropertySignature_(key: Expression): typings.babelTypes.indexTs37Mod.TSPropertySignature_ = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], computed = null, end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("TSPropertySignature")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.TSPropertySignature_]

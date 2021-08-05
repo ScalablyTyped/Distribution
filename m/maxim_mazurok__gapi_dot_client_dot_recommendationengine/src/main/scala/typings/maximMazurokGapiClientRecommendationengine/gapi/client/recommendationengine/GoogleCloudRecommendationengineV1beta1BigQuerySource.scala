@@ -29,43 +29,31 @@ trait GoogleCloudRecommendationengineV1beta1BigQuerySource extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1BigQuerySource {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1BigQuerySource = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1BigQuerySource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1BigQuerySource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1BigQuerySourceMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1BigQuerySource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1BigQuerySource](x: Self) {
     
-    @scala.inline
-    def setDataSchema(value: String): Self = StObject.set(x, "dataSchema", value.asInstanceOf[js.Any])
+    inline def setDataSchema(value: String): Self = StObject.set(x, "dataSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSchemaUndefined: Self = StObject.set(x, "dataSchema", js.undefined)
+    inline def setDataSchemaUndefined: Self = StObject.set(x, "dataSchema", js.undefined)
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
+    inline def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
-    @scala.inline
-    def setGcsStagingDir(value: String): Self = StObject.set(x, "gcsStagingDir", value.asInstanceOf[js.Any])
+    inline def setGcsStagingDir(value: String): Self = StObject.set(x, "gcsStagingDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsStagingDirUndefined: Self = StObject.set(x, "gcsStagingDir", js.undefined)
+    inline def setGcsStagingDirUndefined: Self = StObject.set(x, "gcsStagingDir", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

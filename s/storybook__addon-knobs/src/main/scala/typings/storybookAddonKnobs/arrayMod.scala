@@ -28,22 +28,17 @@ object arrayMod {
     @JSImport("@storybook/addon-knobs/dist/components/types/Array", "default.defaultProps")
     @js.native
     def defaultProps: PartialArrayTypeProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialArrayTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialArrayTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def deserialize(value: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def deserialize(value: Record[String, String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def deserialize(value: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def deserialize(value: Record[String, String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Array", "default.propTypes")
     @js.native
     def propTypes: Knob = js.native
-    @scala.inline
-    def propTypes_=(x: Knob): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Knob): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serialize(value: ArrayTypeKnobValue): ArrayTypeKnobValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[ArrayTypeKnobValue]
+    inline def serialize(value: ArrayTypeKnobValue): ArrayTypeKnobValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[ArrayTypeKnobValue]
   }
   
   @js.native
@@ -64,17 +59,14 @@ object arrayMod {
   }
   object ArrayTypeKnob {
     
-    @scala.inline
-    def apply(name: String, separator: String, value: ArrayTypeKnobValue): ArrayTypeKnob = {
+    inline def apply(name: String, separator: String, value: ArrayTypeKnobValue): ArrayTypeKnob = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], separator = separator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArrayTypeKnob]
     }
     
-    @scala.inline
-    implicit class ArrayTypeKnobMutableBuilder[Self <: ArrayTypeKnob] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayTypeKnob](x: Self) {
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,17 +81,14 @@ object arrayMod {
   }
   object ArrayTypeProps {
     
-    @scala.inline
-    def apply(knob: ArrayTypeKnob, onChange: ArrayTypeKnobValue => ArrayTypeKnobValue): ArrayTypeProps = {
+    inline def apply(knob: ArrayTypeKnob, onChange: ArrayTypeKnobValue => ArrayTypeKnobValue): ArrayTypeProps = {
       val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[ArrayTypeProps]
     }
     
-    @scala.inline
-    implicit class ArrayTypePropsMutableBuilder[Self <: ArrayTypeProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayTypeProps](x: Self) {
       
-      @scala.inline
-      def setKnob(value: ArrayTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+      inline def setKnob(value: ArrayTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }
   }
 }

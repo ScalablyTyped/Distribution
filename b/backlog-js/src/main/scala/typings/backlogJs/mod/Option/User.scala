@@ -62,32 +62,24 @@ object User {
   }
   object GetRecentlyViewedParams {
     
-    @scala.inline
-    def apply(): GetRecentlyViewedParams = {
+    inline def apply(): GetRecentlyViewedParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetRecentlyViewedParams]
     }
     
-    @scala.inline
-    implicit class GetRecentlyViewedParamsMutableBuilder[Self <: GetRecentlyViewedParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetRecentlyViewedParams](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -105,47 +97,34 @@ object User {
   }
   object GetUserActivitiesParams {
     
-    @scala.inline
-    def apply(): GetUserActivitiesParams = {
+    inline def apply(): GetUserActivitiesParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetUserActivitiesParams]
     }
     
-    @scala.inline
-    implicit class GetUserActivitiesParamsMutableBuilder[Self <: GetUserActivitiesParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetUserActivitiesParams](x: Self) {
       
-      @scala.inline
-      def setActivityTypeId(value: js.Array[ActivityType]): Self = StObject.set(x, "activityTypeId", value.asInstanceOf[js.Any])
+      inline def setActivityTypeId(value: js.Array[ActivityType]): Self = StObject.set(x, "activityTypeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityTypeIdUndefined: Self = StObject.set(x, "activityTypeId", js.undefined)
+      inline def setActivityTypeIdUndefined: Self = StObject.set(x, "activityTypeId", js.undefined)
       
-      @scala.inline
-      def setActivityTypeIdVarargs(value: ActivityType*): Self = StObject.set(x, "activityTypeId", js.Array(value :_*))
+      inline def setActivityTypeIdVarargs(value: ActivityType*): Self = StObject.set(x, "activityTypeId", js.Array(value :_*))
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
+      inline def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxIdUndefined: Self = StObject.set(x, "maxId", js.undefined)
+      inline def setMaxIdUndefined: Self = StObject.set(x, "maxId", js.undefined)
       
-      @scala.inline
-      def setMinId(value: Double): Self = StObject.set(x, "minId", value.asInstanceOf[js.Any])
+      inline def setMinId(value: Double): Self = StObject.set(x, "minId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinIdUndefined: Self = StObject.set(x, "minId", js.undefined)
+      inline def setMinIdUndefined: Self = StObject.set(x, "minId", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -157,26 +136,20 @@ object User {
   }
   object GetUserStarsCountParams {
     
-    @scala.inline
-    def apply(): GetUserStarsCountParams = {
+    inline def apply(): GetUserStarsCountParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetUserStarsCountParams]
     }
     
-    @scala.inline
-    implicit class GetUserStarsCountParamsMutableBuilder[Self <: GetUserStarsCountParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetUserStarsCountParams](x: Self) {
       
-      @scala.inline
-      def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+      inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+      inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
       
-      @scala.inline
-      def setUntil(value: String): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+      inline def setUntil(value: String): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
+      inline def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
     }
   }
   
@@ -192,38 +165,28 @@ object User {
   }
   object GetUserStarsParams {
     
-    @scala.inline
-    def apply(): GetUserStarsParams = {
+    inline def apply(): GetUserStarsParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetUserStarsParams]
     }
     
-    @scala.inline
-    implicit class GetUserStarsParamsMutableBuilder[Self <: GetUserStarsParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetUserStarsParams](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
+      inline def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxIdUndefined: Self = StObject.set(x, "maxId", js.undefined)
+      inline def setMaxIdUndefined: Self = StObject.set(x, "maxId", js.undefined)
       
-      @scala.inline
-      def setMinId(value: Double): Self = StObject.set(x, "minId", value.asInstanceOf[js.Any])
+      inline def setMinId(value: Double): Self = StObject.set(x, "minId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinIdUndefined: Self = StObject.set(x, "minId", js.undefined)
+      inline def setMinIdUndefined: Self = StObject.set(x, "minId", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -239,38 +202,28 @@ object User {
   }
   object PatchUserParams {
     
-    @scala.inline
-    def apply(): PatchUserParams = {
+    inline def apply(): PatchUserParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PatchUserParams]
     }
     
-    @scala.inline
-    implicit class PatchUserParamsMutableBuilder[Self <: PatchUserParams] (val x: Self) extends AnyVal {
+    extension [Self <: PatchUserParams](x: Self) {
       
-      @scala.inline
-      def setMailAddress(value: String): Self = StObject.set(x, "mailAddress", value.asInstanceOf[js.Any])
+      inline def setMailAddress(value: String): Self = StObject.set(x, "mailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailAddressUndefined: Self = StObject.set(x, "mailAddress", js.undefined)
+      inline def setMailAddressUndefined: Self = StObject.set(x, "mailAddress", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setRoleType(value: RoleType): Self = StObject.set(x, "roleType", value.asInstanceOf[js.Any])
+      inline def setRoleType(value: RoleType): Self = StObject.set(x, "roleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleTypeUndefined: Self = StObject.set(x, "roleType", js.undefined)
+      inline def setRoleTypeUndefined: Self = StObject.set(x, "roleType", js.undefined)
     }
   }
   
@@ -288,29 +241,22 @@ object User {
   }
   object PostUserParams {
     
-    @scala.inline
-    def apply(mailAddress: String, name: String, password: String, roleType: RoleType, userId: String): PostUserParams = {
+    inline def apply(mailAddress: String, name: String, password: String, roleType: RoleType, userId: String): PostUserParams = {
       val __obj = js.Dynamic.literal(mailAddress = mailAddress.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], roleType = roleType.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostUserParams]
     }
     
-    @scala.inline
-    implicit class PostUserParamsMutableBuilder[Self <: PostUserParams] (val x: Self) extends AnyVal {
+    extension [Self <: PostUserParams](x: Self) {
       
-      @scala.inline
-      def setMailAddress(value: String): Self = StObject.set(x, "mailAddress", value.asInstanceOf[js.Any])
+      inline def setMailAddress(value: String): Self = StObject.set(x, "mailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleType(value: RoleType): Self = StObject.set(x, "roleType", value.asInstanceOf[js.Any])
+      inline def setRoleType(value: RoleType): Self = StObject.set(x, "roleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
 }

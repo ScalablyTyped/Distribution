@@ -18,19 +18,15 @@ trait PutDashboardInput extends StObject {
 }
 object PutDashboardInput {
   
-  @scala.inline
-  def apply(DashboardBody: DashboardBody, DashboardName: DashboardName): PutDashboardInput = {
+  inline def apply(DashboardBody: DashboardBody, DashboardName: DashboardName): PutDashboardInput = {
     val __obj = js.Dynamic.literal(DashboardBody = DashboardBody.asInstanceOf[js.Any], DashboardName = DashboardName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDashboardInput]
   }
   
-  @scala.inline
-  implicit class PutDashboardInputMutableBuilder[Self <: PutDashboardInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutDashboardInput](x: Self) {
     
-    @scala.inline
-    def setDashboardBody(value: DashboardBody): Self = StObject.set(x, "DashboardBody", value.asInstanceOf[js.Any])
+    inline def setDashboardBody(value: DashboardBody): Self = StObject.set(x, "DashboardBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardName(value: DashboardName): Self = StObject.set(x, "DashboardName", value.asInstanceOf[js.Any])
+    inline def setDashboardName(value: DashboardName): Self = StObject.set(x, "DashboardName", value.asInstanceOf[js.Any])
   }
 }

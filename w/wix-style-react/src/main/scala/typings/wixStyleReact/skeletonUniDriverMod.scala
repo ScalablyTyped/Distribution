@@ -24,8 +24,7 @@ object skeletonUniDriverMod {
   }
   object SkeletonUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -38,20 +37,15 @@ object skeletonUniDriverMod {
       __obj.asInstanceOf[SkeletonUniDriver]
     }
     
-    @scala.inline
-    implicit class SkeletonUniDriverMutableBuilder[Self <: SkeletonUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetNumLines(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumLines", js.Any.fromFunction0(value))
+      inline def setGetNumLines(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumLines", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasAlignment(value: SkeletonAlignment => js.Promise[Boolean]): Self = StObject.set(x, "hasAlignment", js.Any.fromFunction1(value))
+      inline def setHasAlignment(value: SkeletonAlignment => js.Promise[Boolean]): Self = StObject.set(x, "hasAlignment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasSizes(value: SkeletonContentSize => js.Promise[Boolean]): Self = StObject.set(x, "hasSizes", js.Any.fromFunction1(value))
+      inline def setHasSizes(value: SkeletonContentSize => js.Promise[Boolean]): Self = StObject.set(x, "hasSizes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasSpacing(value: SkeletonSpacing => js.Promise[Boolean]): Self = StObject.set(x, "hasSpacing", js.Any.fromFunction1(value))
+      inline def setHasSpacing(value: SkeletonSpacing => js.Promise[Boolean]): Self = StObject.set(x, "hasSpacing", js.Any.fromFunction1(value))
     }
   }
 }

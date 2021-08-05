@@ -39,37 +39,27 @@ trait ParamsResourceOrdersRefund
 }
 object ParamsResourceOrdersRefund {
   
-  @scala.inline
-  def apply(): ParamsResourceOrdersRefund = {
+  inline def apply(): ParamsResourceOrdersRefund = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOrdersRefund]
   }
   
-  @scala.inline
-  implicit class ParamsResourceOrdersRefundMutableBuilder[Self <: ParamsResourceOrdersRefund] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceOrdersRefund](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setRevoke(value: Boolean): Self = StObject.set(x, "revoke", value.asInstanceOf[js.Any])
+    inline def setRevoke(value: Boolean): Self = StObject.set(x, "revoke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokeUndefined: Self = StObject.set(x, "revoke", js.undefined)
+    inline def setRevokeUndefined: Self = StObject.set(x, "revoke", js.undefined)
   }
 }

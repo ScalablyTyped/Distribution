@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ThreeDFormat")
 @js.native
-class ThreeDFormat protected ()
+/* private */ class ThreeDFormat ()
   extends StObject
      with typings.activexWord.Word.ThreeDFormat {
   
@@ -134,7 +134,7 @@ class ThreeDFormat protected ()
   /* CompleteClass */
   var Visible: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ThreeDFormat_typekey")
   var WordDotThreeDFormat_typekey: typings.activexWord.Word.ThreeDFormat = js.native
   

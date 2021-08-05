@@ -14,31 +14,23 @@ trait Vector extends StObject {
 }
 object Vector {
   
-  @scala.inline
-  def apply(): Vector = {
+  inline def apply(): Vector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Vector]
   }
   
-  @scala.inline
-  implicit class VectorMutableBuilder[Self <: Vector] (val x: Self) extends AnyVal {
+  extension [Self <: Vector](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "X", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "X", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZUndefined: Self = StObject.set(x, "Z", js.undefined)
+    inline def setZUndefined: Self = StObject.set(x, "Z", js.undefined)
   }
 }

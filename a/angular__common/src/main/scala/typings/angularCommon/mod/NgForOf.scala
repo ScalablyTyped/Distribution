@@ -21,23 +21,23 @@ class NgForOf[T, U /* <: NgIterable[T] */] protected ()
     _differs: IterableDiffers
   ) = this()
   
-  var _applyChanges: js.Any = js.native
+  /* private */ var _applyChanges: js.Any = js.native
   
-  var _differ: js.Any = js.native
+  /* private */ var _differ: js.Any = js.native
   
-  var _differs: js.Any = js.native
+  /* private */ var _differs: js.Any = js.native
   
-  var _ngForOf: js.Any = js.native
+  /* private */ var _ngForOf: js.Any = js.native
   
-  var _ngForOfDirty: js.Any = js.native
+  /* private */ var _ngForOfDirty: js.Any = js.native
   
-  var _perViewChange: js.Any = js.native
+  /* private */ var _perViewChange: js.Any = js.native
   
-  var _template: js.Any = js.native
+  /* private */ var _template: js.Any = js.native
   
-  var _trackByFn: js.Any = js.native
+  /* private */ var _trackByFn: js.Any = js.native
   
-  var _viewContainer: js.Any = js.native
+  /* private */ var _viewContainer: js.Any = js.native
   
   /**
     * A callback method that performs change-detection, invoked
@@ -94,6 +94,5 @@ object NgForOf {
     * The presence of this method is a signal to the Ivy template type-check compiler that the
     * `NgForOf` structural directive renders its template with a specific context type.
     */
-  @scala.inline
-  def ngTemplateContextGuard[T, U /* <: NgIterable[T] */](dir: NgForOf[T, U], ctx: js.Any): /* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ngTemplateContextGuard")(dir.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean]
+  inline def ngTemplateContextGuard[T, U /* <: NgIterable[T] */](dir: NgForOf[T, U], ctx: js.Any): /* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ngTemplateContextGuard")(dir.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean]
 }

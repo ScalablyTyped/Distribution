@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceWorkerResponseSource extends StObject
 object ServiceWorkerResponseSource {
   
-  @scala.inline
-  def `cache-storage`: typings.devtoolsProtocol.devtoolsProtocolStrings.`cache-storage` = "cache-storage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`cache-storage`]
+  inline def `cache-storage`: typings.devtoolsProtocol.devtoolsProtocolStrings.`cache-storage` = "cache-storage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`cache-storage`]
   
-  @scala.inline
-  def `fallback-code`: typings.devtoolsProtocol.devtoolsProtocolStrings.`fallback-code` = "fallback-code".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`fallback-code`]
+  inline def `fallback-code`: typings.devtoolsProtocol.devtoolsProtocolStrings.`fallback-code` = "fallback-code".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`fallback-code`]
   
-  @scala.inline
-  def `http-cache`: typings.devtoolsProtocol.devtoolsProtocolStrings.`http-cache` = "http-cache".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`http-cache`]
+  inline def `http-cache`: typings.devtoolsProtocol.devtoolsProtocolStrings.`http-cache` = "http-cache".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`http-cache`]
   
-  @scala.inline
-  def network: typings.devtoolsProtocol.devtoolsProtocolStrings.network = "network".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.network]
+  inline def network: typings.devtoolsProtocol.devtoolsProtocolStrings.network = "network".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.network]
 }

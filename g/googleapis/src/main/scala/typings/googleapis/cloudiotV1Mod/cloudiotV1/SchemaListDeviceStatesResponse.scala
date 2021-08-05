@@ -17,22 +17,17 @@ trait SchemaListDeviceStatesResponse extends StObject {
 }
 object SchemaListDeviceStatesResponse {
   
-  @scala.inline
-  def apply(): SchemaListDeviceStatesResponse = {
+  inline def apply(): SchemaListDeviceStatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListDeviceStatesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListDeviceStatesResponseMutableBuilder[Self <: SchemaListDeviceStatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListDeviceStatesResponse](x: Self) {
     
-    @scala.inline
-    def setDeviceStates(value: js.Array[SchemaDeviceState]): Self = StObject.set(x, "deviceStates", value.asInstanceOf[js.Any])
+    inline def setDeviceStates(value: js.Array[SchemaDeviceState]): Self = StObject.set(x, "deviceStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
+    inline def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
     
-    @scala.inline
-    def setDeviceStatesVarargs(value: SchemaDeviceState*): Self = StObject.set(x, "deviceStates", js.Array(value :_*))
+    inline def setDeviceStatesVarargs(value: SchemaDeviceState*): Self = StObject.set(x, "deviceStates", js.Array(value :_*))
   }
 }

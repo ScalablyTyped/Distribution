@@ -14,6 +14,5 @@ object DEFAULT_CONFIG {
   @JSImport("gitana", "DEFAULT_CONFIG.baseURL")
   @js.native
   def baseURL: String = js.native
-  @scala.inline
-  def baseURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseURL")(x.asInstanceOf[js.Any])
+  inline def baseURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseURL")(x.asInstanceOf[js.Any])
 }

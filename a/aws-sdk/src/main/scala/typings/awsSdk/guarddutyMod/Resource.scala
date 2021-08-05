@@ -28,40 +28,29 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(): Resource = {
+  inline def apply(): Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setAccessKeyDetails(value: AccessKeyDetails): Self = StObject.set(x, "AccessKeyDetails", value.asInstanceOf[js.Any])
+    inline def setAccessKeyDetails(value: AccessKeyDetails): Self = StObject.set(x, "AccessKeyDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyDetailsUndefined: Self = StObject.set(x, "AccessKeyDetails", js.undefined)
+    inline def setAccessKeyDetailsUndefined: Self = StObject.set(x, "AccessKeyDetails", js.undefined)
     
-    @scala.inline
-    def setInstanceDetails(value: InstanceDetails): Self = StObject.set(x, "InstanceDetails", value.asInstanceOf[js.Any])
+    inline def setInstanceDetails(value: InstanceDetails): Self = StObject.set(x, "InstanceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceDetailsUndefined: Self = StObject.set(x, "InstanceDetails", js.undefined)
+    inline def setInstanceDetailsUndefined: Self = StObject.set(x, "InstanceDetails", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setS3BucketDetails(value: S3BucketDetails): Self = StObject.set(x, "S3BucketDetails", value.asInstanceOf[js.Any])
+    inline def setS3BucketDetails(value: S3BucketDetails): Self = StObject.set(x, "S3BucketDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketDetailsUndefined: Self = StObject.set(x, "S3BucketDetails", js.undefined)
+    inline def setS3BucketDetailsUndefined: Self = StObject.set(x, "S3BucketDetails", js.undefined)
     
-    @scala.inline
-    def setS3BucketDetailsVarargs(value: S3BucketDetail*): Self = StObject.set(x, "S3BucketDetails", js.Array(value :_*))
+    inline def setS3BucketDetailsVarargs(value: S3BucketDetail*): Self = StObject.set(x, "S3BucketDetails", js.Array(value :_*))
   }
 }

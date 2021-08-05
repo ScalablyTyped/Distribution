@@ -22,35 +22,26 @@ object postingPhotoOptionsMod {
   }
   object PostingPhotoOptions {
     
-    @scala.inline
-    def apply(file: Buffer): PostingPhotoOptions = {
+    inline def apply(file: Buffer): PostingPhotoOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostingPhotoOptions]
     }
     
-    @scala.inline
-    implicit class PostingPhotoOptionsMutableBuilder[Self <: PostingPhotoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostingPhotoOptions](x: Self) {
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: PostingLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: PostingLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setUsertags(value: PostingUsertags): Self = StObject.set(x, "usertags", value.asInstanceOf[js.Any])
+      inline def setUsertags(value: PostingUsertags): Self = StObject.set(x, "usertags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsertagsUndefined: Self = StObject.set(x, "usertags", js.undefined)
+      inline def setUsertagsUndefined: Self = StObject.set(x, "usertags", js.undefined)
     }
   }
   
@@ -62,17 +53,14 @@ object postingPhotoOptionsMod {
   }
   object PostingStoryPhotoOptions {
     
-    @scala.inline
-    def apply(file: Buffer): PostingStoryPhotoOptions = {
+    inline def apply(file: Buffer): PostingStoryPhotoOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostingStoryPhotoOptions]
     }
     
-    @scala.inline
-    implicit class PostingStoryPhotoOptionsMutableBuilder[Self <: PostingStoryPhotoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostingStoryPhotoOptions](x: Self) {
       
-      @scala.inline
-      def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
 }

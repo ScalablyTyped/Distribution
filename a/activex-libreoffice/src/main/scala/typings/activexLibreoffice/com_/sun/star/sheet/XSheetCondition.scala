@@ -72,8 +72,7 @@ trait XSheetCondition
 }
 object XSheetCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Formula1: String,
     Formula2: String,
     Operator: ConditionOperator,
@@ -94,43 +93,30 @@ object XSheetCondition {
     __obj.asInstanceOf[XSheetCondition]
   }
   
-  @scala.inline
-  implicit class XSheetConditionMutableBuilder[Self <: XSheetCondition] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetCondition](x: Self) {
     
-    @scala.inline
-    def setFormula1(value: String): Self = StObject.set(x, "Formula1", value.asInstanceOf[js.Any])
+    inline def setFormula1(value: String): Self = StObject.set(x, "Formula1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula2(value: String): Self = StObject.set(x, "Formula2", value.asInstanceOf[js.Any])
+    inline def setFormula2(value: String): Self = StObject.set(x, "Formula2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFormula1(value: () => String): Self = StObject.set(x, "getFormula1", js.Any.fromFunction0(value))
+    inline def setGetFormula1(value: () => String): Self = StObject.set(x, "getFormula1", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFormula2(value: () => String): Self = StObject.set(x, "getFormula2", js.Any.fromFunction0(value))
+    inline def setGetFormula2(value: () => String): Self = StObject.set(x, "getFormula2", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOperator(value: () => ConditionOperator): Self = StObject.set(x, "getOperator", js.Any.fromFunction0(value))
+    inline def setGetOperator(value: () => ConditionOperator): Self = StObject.set(x, "getOperator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSourcePosition(value: () => CellAddress): Self = StObject.set(x, "getSourcePosition", js.Any.fromFunction0(value))
+    inline def setGetSourcePosition(value: () => CellAddress): Self = StObject.set(x, "getSourcePosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOperator(value: ConditionOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: ConditionOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFormula1(value: String => Unit): Self = StObject.set(x, "setFormula1", js.Any.fromFunction1(value))
+    inline def setSetFormula1(value: String => Unit): Self = StObject.set(x, "setFormula1", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFormula2(value: String => Unit): Self = StObject.set(x, "setFormula2", js.Any.fromFunction1(value))
+    inline def setSetFormula2(value: String => Unit): Self = StObject.set(x, "setFormula2", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOperator(value: ConditionOperator => Unit): Self = StObject.set(x, "setOperator", js.Any.fromFunction1(value))
+    inline def setSetOperator(value: ConditionOperator => Unit): Self = StObject.set(x, "setOperator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSourcePosition(value: CellAddress => Unit): Self = StObject.set(x, "setSourcePosition", js.Any.fromFunction1(value))
+    inline def setSetSourcePosition(value: CellAddress => Unit): Self = StObject.set(x, "setSourcePosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSourcePosition(value: CellAddress): Self = StObject.set(x, "SourcePosition", value.asInstanceOf[js.Any])
+    inline def setSourcePosition(value: CellAddress): Self = StObject.set(x, "SourcePosition", value.asInstanceOf[js.Any])
   }
 }

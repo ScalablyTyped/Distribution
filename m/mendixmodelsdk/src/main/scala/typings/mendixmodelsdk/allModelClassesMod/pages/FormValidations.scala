@@ -21,20 +21,17 @@ object FormValidations {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormValidations.All")
   @js.native
   def All: typings.mendixmodelsdk.pagesMod.pages.FormValidations = js.native
-  @scala.inline
-  def All_=(x: typings.mendixmodelsdk.pagesMod.pages.FormValidations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
+  inline def All_=(x: typings.mendixmodelsdk.pagesMod.pages.FormValidations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormValidations.None")
   @js.native
   def None: typings.mendixmodelsdk.pagesMod.pages.FormValidations = js.native
-  @scala.inline
-  def None_=(x: typings.mendixmodelsdk.pagesMod.pages.FormValidations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: typings.mendixmodelsdk.pagesMod.pages.FormValidations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormValidations.Widget")
   @js.native
   def Widget: typings.mendixmodelsdk.pagesMod.pages.FormValidations = js.native
-  @scala.inline
-  def Widget_=(x: typings.mendixmodelsdk.pagesMod.pages.FormValidations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Widget")(x.asInstanceOf[js.Any])
+  inline def Widget_=(x: typings.mendixmodelsdk.pagesMod.pages.FormValidations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Widget")(x.asInstanceOf[js.Any])
 }

@@ -10,16 +10,13 @@ trait StepAttrs extends StObject {
 }
 object StepAttrs {
   
-  @scala.inline
-  def apply(alpha: Double): StepAttrs = {
+  inline def apply(alpha: Double): StepAttrs = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepAttrs]
   }
   
-  @scala.inline
-  implicit class StepAttrsMutableBuilder[Self <: StepAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: StepAttrs](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
   }
 }

@@ -41,31 +41,23 @@ trait QuobyteVolumeSource extends StObject {
 }
 object QuobyteVolumeSource {
   
-  @scala.inline
-  def apply(group: String, readOnly: Boolean, registry: String, tenant: String, user: String, volume: String): QuobyteVolumeSource = {
+  inline def apply(group: String, readOnly: Boolean, registry: String, tenant: String, user: String, volume: String): QuobyteVolumeSource = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], tenant = tenant.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuobyteVolumeSource]
   }
   
-  @scala.inline
-  implicit class QuobyteVolumeSourceMutableBuilder[Self <: QuobyteVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: QuobyteVolumeSource](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenant(value: String): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
+    inline def setTenant(value: String): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

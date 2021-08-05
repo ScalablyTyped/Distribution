@@ -25,29 +25,22 @@ object typesAccessControlPolicyMod {
   }
   object AccessControlPolicy {
     
-    @scala.inline
-    def apply(): AccessControlPolicy = {
+    inline def apply(): AccessControlPolicy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccessControlPolicy]
     }
     
-    @scala.inline
-    implicit class AccessControlPolicyMutableBuilder[Self <: AccessControlPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: AccessControlPolicy](x: Self) {
       
-      @scala.inline
-      def setGrants(value: js.Array[Grant] | Iterable[Grant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
+      inline def setGrants(value: js.Array[Grant] | Iterable[Grant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
+      inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
       
-      @scala.inline
-      def setGrantsVarargs(value: Grant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: Grant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
       
-      @scala.inline
-      def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     }
   }
   
@@ -69,29 +62,22 @@ object typesAccessControlPolicyMod {
   }
   object UnmarshalledAccessControlPolicy {
     
-    @scala.inline
-    def apply(): UnmarshalledAccessControlPolicy = {
+    inline def apply(): UnmarshalledAccessControlPolicy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledAccessControlPolicy]
     }
     
-    @scala.inline
-    implicit class UnmarshalledAccessControlPolicyMutableBuilder[Self <: UnmarshalledAccessControlPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledAccessControlPolicy](x: Self) {
       
-      @scala.inline
-      def setGrants(value: js.Array[UnmarshalledGrant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
+      inline def setGrants(value: js.Array[UnmarshalledGrant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
+      inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
       
-      @scala.inline
-      def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
       
-      @scala.inline
-      def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     }
   }
 }

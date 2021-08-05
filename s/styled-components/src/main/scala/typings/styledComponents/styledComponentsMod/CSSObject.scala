@@ -14,8 +14,7 @@ trait CSSObject
      with _InterpolationValue
 object CSSObject {
   
-  @scala.inline
-  def apply(): CSSObject = {
+  inline def apply(): CSSObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSObject]
   }

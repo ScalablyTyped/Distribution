@@ -10,16 +10,13 @@ trait StatusBar extends StObject {
 }
 object StatusBar {
   
-  @scala.inline
-  def apply(StatusBar: Boolean): StatusBar = {
+  inline def apply(StatusBar: Boolean): StatusBar = {
     val __obj = js.Dynamic.literal(StatusBar = StatusBar.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusBar]
   }
   
-  @scala.inline
-  implicit class StatusBarMutableBuilder[Self <: StatusBar] (val x: Self) extends AnyVal {
+  extension [Self <: StatusBar](x: Self) {
     
-    @scala.inline
-    def setStatusBar(value: Boolean): Self = StObject.set(x, "StatusBar", value.asInstanceOf[js.Any])
+    inline def setStatusBar(value: Boolean): Self = StObject.set(x, "StatusBar", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait ProcessorInfo extends StObject {
 }
 object ProcessorInfo {
   
-  @scala.inline
-  def apply(): ProcessorInfo = {
+  inline def apply(): ProcessorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProcessorInfo]
   }
   
-  @scala.inline
-  implicit class ProcessorInfoMutableBuilder[Self <: ProcessorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessorInfo](x: Self) {
     
-    @scala.inline
-    def setSupportedArchitectures(value: ArchitectureTypeList): Self = StObject.set(x, "SupportedArchitectures", value.asInstanceOf[js.Any])
+    inline def setSupportedArchitectures(value: ArchitectureTypeList): Self = StObject.set(x, "SupportedArchitectures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedArchitecturesUndefined: Self = StObject.set(x, "SupportedArchitectures", js.undefined)
+    inline def setSupportedArchitecturesUndefined: Self = StObject.set(x, "SupportedArchitectures", js.undefined)
     
-    @scala.inline
-    def setSupportedArchitecturesVarargs(value: ArchitectureType*): Self = StObject.set(x, "SupportedArchitectures", js.Array(value :_*))
+    inline def setSupportedArchitecturesVarargs(value: ArchitectureType*): Self = StObject.set(x, "SupportedArchitectures", js.Array(value :_*))
     
-    @scala.inline
-    def setSustainedClockSpeedInGhz(value: ProcessorSustainedClockSpeed): Self = StObject.set(x, "SustainedClockSpeedInGhz", value.asInstanceOf[js.Any])
+    inline def setSustainedClockSpeedInGhz(value: ProcessorSustainedClockSpeed): Self = StObject.set(x, "SustainedClockSpeedInGhz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSustainedClockSpeedInGhzUndefined: Self = StObject.set(x, "SustainedClockSpeedInGhz", js.undefined)
+    inline def setSustainedClockSpeedInGhzUndefined: Self = StObject.set(x, "SustainedClockSpeedInGhz", js.undefined)
   }
 }

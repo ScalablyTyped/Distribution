@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DistanceScalesInput extends StObject
 object DistanceScalesInput {
   
-  @scala.inline
-  def BaseDistanceScalesInputsc(latitude: Double, longitude: Double, scale: Double): typings.viewportMercatorProject.anon.BaseDistanceScalesInputsc = {
+  inline def BaseDistanceScalesInputsc(latitude: Double, longitude: Double, scale: Double): typings.viewportMercatorProject.anon.BaseDistanceScalesInputsc = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.viewportMercatorProject.anon.BaseDistanceScalesInputsc]
   }
   
-  @scala.inline
-  def BaseDistanceScalesInputzo(latitude: Double, longitude: Double, zoom: Double): typings.viewportMercatorProject.anon.BaseDistanceScalesInputzo = {
+  inline def BaseDistanceScalesInputzo(latitude: Double, longitude: Double, zoom: Double): typings.viewportMercatorProject.anon.BaseDistanceScalesInputzo = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.viewportMercatorProject.anon.BaseDistanceScalesInputzo]
   }

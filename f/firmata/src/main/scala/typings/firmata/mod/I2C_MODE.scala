@@ -18,15 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait I2C_MODE extends StObject
 object I2C_MODE {
   
-  @scala.inline
-  def CONTINUOUS_READ: `2` = 2.asInstanceOf[`2`]
+  inline def CONTINUOUS_READ: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def READ: `1` = 1.asInstanceOf[`1`]
+  inline def READ: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def STOP_READING: `3` = 3.asInstanceOf[`3`]
+  inline def STOP_READING: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def WRITE: `0` = 0.asInstanceOf[`0`]
+  inline def WRITE: `0` = 0.asInstanceOf[`0`]
 }

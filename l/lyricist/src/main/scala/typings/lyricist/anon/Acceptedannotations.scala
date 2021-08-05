@@ -24,8 +24,7 @@ trait Acceptedannotations extends StObject {
 }
 object Acceptedannotations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accepted_annotations: Double,
     contributors: Double,
     hot: Boolean,
@@ -39,31 +38,22 @@ object Acceptedannotations {
     __obj.asInstanceOf[Acceptedannotations]
   }
   
-  @scala.inline
-  implicit class AcceptedannotationsMutableBuilder[Self <: Acceptedannotations] (val x: Self) extends AnyVal {
+  extension [Self <: Acceptedannotations](x: Self) {
     
-    @scala.inline
-    def setAccepted_annotations(value: Double): Self = StObject.set(x, "accepted_annotations", value.asInstanceOf[js.Any])
+    inline def setAccepted_annotations(value: Double): Self = StObject.set(x, "accepted_annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributors(value: Double): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
+    inline def setContributors(value: Double): Self = StObject.set(x, "contributors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHot(value: Boolean): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
+    inline def setHot(value: Boolean): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIq_earners(value: Double): Self = StObject.set(x, "iq_earners", value.asInstanceOf[js.Any])
+    inline def setIq_earners(value: Double): Self = StObject.set(x, "iq_earners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageviews(value: Double): Self = StObject.set(x, "pageviews", value.asInstanceOf[js.Any])
+    inline def setPageviews(value: Double): Self = StObject.set(x, "pageviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscribers(value: Double): Self = StObject.set(x, "transcribers", value.asInstanceOf[js.Any])
+    inline def setTranscribers(value: Double): Self = StObject.set(x, "transcribers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnreviewed_annotations(value: Double): Self = StObject.set(x, "unreviewed_annotations", value.asInstanceOf[js.Any])
+    inline def setUnreviewed_annotations(value: Double): Self = StObject.set(x, "unreviewed_annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified_annotations(value: Double): Self = StObject.set(x, "verified_annotations", value.asInstanceOf[js.Any])
+    inline def setVerified_annotations(value: Double): Self = StObject.set(x, "verified_annotations", value.asInstanceOf[js.Any])
   }
 }

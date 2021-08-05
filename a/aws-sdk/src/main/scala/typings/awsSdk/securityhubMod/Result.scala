@@ -18,25 +18,19 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(): Result = {
+  inline def apply(): Result = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setProcessingResult(value: NonEmptyString): Self = StObject.set(x, "ProcessingResult", value.asInstanceOf[js.Any])
+    inline def setProcessingResult(value: NonEmptyString): Self = StObject.set(x, "ProcessingResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingResultUndefined: Self = StObject.set(x, "ProcessingResult", js.undefined)
+    inline def setProcessingResultUndefined: Self = StObject.set(x, "ProcessingResult", js.undefined)
   }
 }

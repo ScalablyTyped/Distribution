@@ -35,28 +35,21 @@ trait ASPxClientPivotMenuItemClickEventArgs
 }
 object ASPxClientPivotMenuItemClickEventArgs {
   
-  @scala.inline
-  def apply(Area: String, FieldID: String, FieldValueIndex: Double, MenuItemName: String, MenuType: String): ASPxClientPivotMenuItemClickEventArgs = {
+  inline def apply(Area: String, FieldID: String, FieldValueIndex: Double, MenuItemName: String, MenuType: String): ASPxClientPivotMenuItemClickEventArgs = {
     val __obj = js.Dynamic.literal(Area = Area.asInstanceOf[js.Any], FieldID = FieldID.asInstanceOf[js.Any], FieldValueIndex = FieldValueIndex.asInstanceOf[js.Any], MenuItemName = MenuItemName.asInstanceOf[js.Any], MenuType = MenuType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientPivotMenuItemClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientPivotMenuItemClickEventArgsMutableBuilder[Self <: ASPxClientPivotMenuItemClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPivotMenuItemClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setArea(value: String): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
+    inline def setArea(value: String): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldID(value: String): Self = StObject.set(x, "FieldID", value.asInstanceOf[js.Any])
+    inline def setFieldID(value: String): Self = StObject.set(x, "FieldID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldValueIndex(value: Double): Self = StObject.set(x, "FieldValueIndex", value.asInstanceOf[js.Any])
+    inline def setFieldValueIndex(value: Double): Self = StObject.set(x, "FieldValueIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuItemName(value: String): Self = StObject.set(x, "MenuItemName", value.asInstanceOf[js.Any])
+    inline def setMenuItemName(value: String): Self = StObject.set(x, "MenuItemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuType(value: String): Self = StObject.set(x, "MenuType", value.asInstanceOf[js.Any])
+    inline def setMenuType(value: String): Self = StObject.set(x, "MenuType", value.asInstanceOf[js.Any])
   }
 }

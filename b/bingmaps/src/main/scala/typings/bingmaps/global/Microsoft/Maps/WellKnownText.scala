@@ -12,13 +12,9 @@ object WellKnownText {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def read(wkt: String): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(wkt.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
-  @scala.inline
-  def read(wkt: String, styles: IStylesOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(wkt.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+  inline def read(wkt: String): IPrimitive | js.Array[IPrimitive] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(wkt.asInstanceOf[js.Any]).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
+  inline def read(wkt: String, styles: IStylesOptions): IPrimitive | js.Array[IPrimitive] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(wkt.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[IPrimitive | js.Array[IPrimitive]]
   
-  @scala.inline
-  def write(data: js.Array[IPrimitive]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def write(data: IPrimitive): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def write(data: js.Array[IPrimitive]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def write(data: IPrimitive): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -17,22 +17,17 @@ trait CHANGED extends StObject {
 }
 object CHANGED {
   
-  @scala.inline
-  def apply(): CHANGED = {
+  inline def apply(): CHANGED = {
     val __obj = js.Dynamic.literal(CHANGED = "changed", CREATED = "created", REMOVED = "removed")
     __obj.asInstanceOf[CHANGED]
   }
   
-  @scala.inline
-  implicit class CHANGEDMutableBuilder[Self <: CHANGED] (val x: Self) extends AnyVal {
+  extension [Self <: CHANGED](x: Self) {
     
-    @scala.inline
-    def setCHANGED(value: changed_): Self = StObject.set(x, "CHANGED", value.asInstanceOf[js.Any])
+    inline def setCHANGED(value: changed_): Self = StObject.set(x, "CHANGED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCREATED(value: created): Self = StObject.set(x, "CREATED", value.asInstanceOf[js.Any])
+    inline def setCREATED(value: created): Self = StObject.set(x, "CREATED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREMOVED(value: removed): Self = StObject.set(x, "REMOVED", value.asInstanceOf[js.Any])
+    inline def setREMOVED(value: removed): Self = StObject.set(x, "REMOVED", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait GetUserEndpointsRequest extends StObject {
 }
 object GetUserEndpointsRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, UserId: string): GetUserEndpointsRequest = {
+  inline def apply(ApplicationId: string, UserId: string): GetUserEndpointsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserEndpointsRequest]
   }
   
-  @scala.inline
-  implicit class GetUserEndpointsRequestMutableBuilder[Self <: GetUserEndpointsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserEndpointsRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: string): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: string): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

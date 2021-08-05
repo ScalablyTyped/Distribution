@@ -37,25 +37,19 @@ trait IFieldScores extends StObject {
 }
 object IFieldScores {
   
-  @scala.inline
-  def apply(qCardinalRatio: Double, qFieldName: String, qRowScore: Double, qSymbolScore: Double): IFieldScores = {
+  inline def apply(qCardinalRatio: Double, qFieldName: String, qRowScore: Double, qSymbolScore: Double): IFieldScores = {
     val __obj = js.Dynamic.literal(qCardinalRatio = qCardinalRatio.asInstanceOf[js.Any], qFieldName = qFieldName.asInstanceOf[js.Any], qRowScore = qRowScore.asInstanceOf[js.Any], qSymbolScore = qSymbolScore.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldScores]
   }
   
-  @scala.inline
-  implicit class IFieldScoresMutableBuilder[Self <: IFieldScores] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldScores](x: Self) {
     
-    @scala.inline
-    def setQCardinalRatio(value: Double): Self = StObject.set(x, "qCardinalRatio", value.asInstanceOf[js.Any])
+    inline def setQCardinalRatio(value: Double): Self = StObject.set(x, "qCardinalRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldName(value: String): Self = StObject.set(x, "qFieldName", value.asInstanceOf[js.Any])
+    inline def setQFieldName(value: String): Self = StObject.set(x, "qFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQRowScore(value: Double): Self = StObject.set(x, "qRowScore", value.asInstanceOf[js.Any])
+    inline def setQRowScore(value: Double): Self = StObject.set(x, "qRowScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSymbolScore(value: Double): Self = StObject.set(x, "qSymbolScore", value.asInstanceOf[js.Any])
+    inline def setQSymbolScore(value: Double): Self = StObject.set(x, "qSymbolScore", value.asInstanceOf[js.Any])
   }
 }

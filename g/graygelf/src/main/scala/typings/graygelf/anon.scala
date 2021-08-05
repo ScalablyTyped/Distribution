@@ -70,50 +70,36 @@ object anon {
   }
   object AlwaysCompress {
     
-    @scala.inline
-    def apply(): AlwaysCompress = {
+    inline def apply(): AlwaysCompress = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlwaysCompress]
     }
     
-    @scala.inline
-    implicit class AlwaysCompressMutableBuilder[Self <: AlwaysCompress] (val x: Self) extends AnyVal {
+    extension [Self <: AlwaysCompress](x: Self) {
       
-      @scala.inline
-      def setAlwaysCompress(value: Boolean): Self = StObject.set(x, "alwaysCompress", value.asInstanceOf[js.Any])
+      inline def setAlwaysCompress(value: Boolean): Self = StObject.set(x, "alwaysCompress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysCompressUndefined: Self = StObject.set(x, "alwaysCompress", js.undefined)
+      inline def setAlwaysCompressUndefined: Self = StObject.set(x, "alwaysCompress", js.undefined)
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setCompressType(value: gzip | deflate): Self = StObject.set(x, "compressType", value.asInstanceOf[js.Any])
+      inline def setCompressType(value: gzip | deflate): Self = StObject.set(x, "compressType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressTypeUndefined: Self = StObject.set(x, "compressType", js.undefined)
+      inline def setCompressTypeUndefined: Self = StObject.set(x, "compressType", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setMock(value: Boolean): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
+      inline def setMock(value: Boolean): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMockUndefined: Self = StObject.set(x, "mock", js.undefined)
+      inline def setMockUndefined: Self = StObject.set(x, "mock", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -131,20 +117,16 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
+      inline def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
+      inline def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
     }
   }
   
@@ -162,20 +144,16 @@ object anon {
   }
   object Facility {
     
-    @scala.inline
-    def apply(): Facility = {
+    inline def apply(): Facility = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Facility]
     }
     
-    @scala.inline
-    implicit class FacilityMutableBuilder[Self <: Facility] (val x: Self) extends AnyVal {
+    extension [Self <: Facility](x: Self) {
       
-      @scala.inline
-      def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
+      inline def setFacility(value: String): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
+      inline def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
     }
   }
 }

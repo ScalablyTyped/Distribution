@@ -17,8 +17,7 @@ trait StackInstance extends StObject {
 }
 object StackInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: Collapsible => StackInstanceEntry,
     hide: () => StackInstance,
     resize: () => Unit,
@@ -28,19 +27,14 @@ object StackInstance {
     __obj.asInstanceOf[StackInstance]
   }
   
-  @scala.inline
-  implicit class StackInstanceMutableBuilder[Self <: StackInstance] (val x: Self) extends AnyVal {
+  extension [Self <: StackInstance](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Collapsible => StackInstanceEntry): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Collapsible => StackInstanceEntry): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHide(value: () => StackInstance): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => StackInstance): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
+    inline def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => StackInstance): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => StackInstance): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

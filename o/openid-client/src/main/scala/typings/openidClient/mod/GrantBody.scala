@@ -13,16 +13,13 @@ trait GrantBody
 }
 object GrantBody {
   
-  @scala.inline
-  def apply(grant_type: String): GrantBody = {
+  inline def apply(grant_type: String): GrantBody = {
     val __obj = js.Dynamic.literal(grant_type = grant_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantBody]
   }
   
-  @scala.inline
-  implicit class GrantBodyMutableBuilder[Self <: GrantBody] (val x: Self) extends AnyVal {
+  extension [Self <: GrantBody](x: Self) {
     
-    @scala.inline
-    def setGrant_type(value: String): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
+    inline def setGrant_type(value: String): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
   }
 }

@@ -25,29 +25,22 @@ object pluginMod {
   }
   object Plugin {
     
-    @scala.inline
-    def apply(hooks: Hooks): Plugin = {
+    inline def apply(hooks: Hooks): Plugin = {
       val __obj = js.Dynamic.literal(hooks = hooks.asInstanceOf[js.Any])
       __obj.asInstanceOf[Plugin]
     }
     
-    @scala.inline
-    implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+    extension [Self <: Plugin](x: Self) {
       
-      @scala.inline
-      def setCommands(value: Commands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+      inline def setCommands(value: Commands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+      inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      @scala.inline
-      def setHooks(value: Hooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      inline def setHooks(value: Hooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableResolvers(value: VariableResolvers): Self = StObject.set(x, "variableResolvers", value.asInstanceOf[js.Any])
+      inline def setVariableResolvers(value: VariableResolvers): Self = StObject.set(x, "variableResolvers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableResolversUndefined: Self = StObject.set(x, "variableResolvers", js.undefined)
+      inline def setVariableResolversUndefined: Self = StObject.set(x, "variableResolvers", js.undefined)
     }
   }
   

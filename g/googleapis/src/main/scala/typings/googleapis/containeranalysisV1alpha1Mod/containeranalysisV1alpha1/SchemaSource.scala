@@ -52,52 +52,37 @@ trait SchemaSource extends StObject {
 }
 object SchemaSource {
   
-  @scala.inline
-  def apply(): SchemaSource = {
+  inline def apply(): SchemaSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSource]
   }
   
-  @scala.inline
-  implicit class SchemaSourceMutableBuilder[Self <: SchemaSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSource](x: Self) {
     
-    @scala.inline
-    def setAdditionalContexts(value: js.Array[SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext]): Self = StObject.set(x, "additionalContexts", value.asInstanceOf[js.Any])
+    inline def setAdditionalContexts(value: js.Array[SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext]): Self = StObject.set(x, "additionalContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalContextsUndefined: Self = StObject.set(x, "additionalContexts", js.undefined)
+    inline def setAdditionalContextsUndefined: Self = StObject.set(x, "additionalContexts", js.undefined)
     
-    @scala.inline
-    def setAdditionalContextsVarargs(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext*): Self = StObject.set(x, "additionalContexts", js.Array(value :_*))
+    inline def setAdditionalContextsVarargs(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext*): Self = StObject.set(x, "additionalContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setArtifactStorageSource(value: SchemaStorageSource): Self = StObject.set(x, "artifactStorageSource", value.asInstanceOf[js.Any])
+    inline def setArtifactStorageSource(value: SchemaStorageSource): Self = StObject.set(x, "artifactStorageSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactStorageSourceUndefined: Self = StObject.set(x, "artifactStorageSource", js.undefined)
+    inline def setArtifactStorageSourceUndefined: Self = StObject.set(x, "artifactStorageSource", js.undefined)
     
-    @scala.inline
-    def setContext(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setFileHashes(value: StringDictionary[SchemaFileHashes]): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
+    inline def setFileHashes(value: StringDictionary[SchemaFileHashes]): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
+    inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
     
-    @scala.inline
-    def setRepoSource(value: SchemaRepoSource): Self = StObject.set(x, "repoSource", value.asInstanceOf[js.Any])
+    inline def setRepoSource(value: SchemaRepoSource): Self = StObject.set(x, "repoSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoSourceUndefined: Self = StObject.set(x, "repoSource", js.undefined)
+    inline def setRepoSourceUndefined: Self = StObject.set(x, "repoSource", js.undefined)
     
-    @scala.inline
-    def setStorageSource(value: SchemaStorageSource): Self = StObject.set(x, "storageSource", value.asInstanceOf[js.Any])
+    inline def setStorageSource(value: SchemaStorageSource): Self = StObject.set(x, "storageSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageSourceUndefined: Self = StObject.set(x, "storageSource", js.undefined)
+    inline def setStorageSourceUndefined: Self = StObject.set(x, "storageSource", js.undefined)
   }
 }

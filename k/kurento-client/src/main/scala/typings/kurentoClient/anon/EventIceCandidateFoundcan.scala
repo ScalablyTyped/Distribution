@@ -24,8 +24,7 @@ trait EventIceCandidateFoundcan extends StObject {
 }
 object EventIceCandidateFoundcan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     candidate: IceCandidate,
     source: String,
     tags: js.Array[Tag],
@@ -37,28 +36,20 @@ object EventIceCandidateFoundcan {
     __obj.asInstanceOf[EventIceCandidateFoundcan]
   }
   
-  @scala.inline
-  implicit class EventIceCandidateFoundcanMutableBuilder[Self <: EventIceCandidateFoundcan] (val x: Self) extends AnyVal {
+  extension [Self <: EventIceCandidateFoundcan](x: Self) {
     
-    @scala.inline
-    def setCandidate(value: IceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
+    inline def setCandidate(value: IceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: IceCandidateFound): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IceCandidateFound): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

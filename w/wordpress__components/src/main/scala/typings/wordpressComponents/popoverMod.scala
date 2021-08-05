@@ -53,32 +53,23 @@ object popoverMod {
     trait Position extends StObject
     object Position {
       
-      @scala.inline
-      def `bottom center`: typings.wordpressComponents.wordpressComponentsStrings.`bottom center` = ("bottom center").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`bottom center`]
+      inline def `bottom center`: typings.wordpressComponents.wordpressComponentsStrings.`bottom center` = ("bottom center").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`bottom center`]
       
-      @scala.inline
-      def `bottom left`: typings.wordpressComponents.wordpressComponentsStrings.`bottom left` = ("bottom left").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`bottom left`]
+      inline def `bottom left`: typings.wordpressComponents.wordpressComponentsStrings.`bottom left` = ("bottom left").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`bottom left`]
       
-      @scala.inline
-      def `bottom right`: typings.wordpressComponents.wordpressComponentsStrings.`bottom right` = ("bottom right").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`bottom right`]
+      inline def `bottom right`: typings.wordpressComponents.wordpressComponentsStrings.`bottom right` = ("bottom right").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`bottom right`]
       
-      @scala.inline
-      def `middle center`: typings.wordpressComponents.wordpressComponentsStrings.`middle center` = ("middle center").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`middle center`]
+      inline def `middle center`: typings.wordpressComponents.wordpressComponentsStrings.`middle center` = ("middle center").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`middle center`]
       
-      @scala.inline
-      def `middle left`: typings.wordpressComponents.wordpressComponentsStrings.`middle left` = ("middle left").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`middle left`]
+      inline def `middle left`: typings.wordpressComponents.wordpressComponentsStrings.`middle left` = ("middle left").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`middle left`]
       
-      @scala.inline
-      def `middle right`: typings.wordpressComponents.wordpressComponentsStrings.`middle right` = ("middle right").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`middle right`]
+      inline def `middle right`: typings.wordpressComponents.wordpressComponentsStrings.`middle right` = ("middle right").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`middle right`]
       
-      @scala.inline
-      def `top center`: typings.wordpressComponents.wordpressComponentsStrings.`top center` = ("top center").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`top center`]
+      inline def `top center`: typings.wordpressComponents.wordpressComponentsStrings.`top center` = ("top center").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`top center`]
       
-      @scala.inline
-      def `top left`: typings.wordpressComponents.wordpressComponentsStrings.`top left` = ("top left").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`top left`]
+      inline def `top left`: typings.wordpressComponents.wordpressComponentsStrings.`top left` = ("top left").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`top left`]
       
-      @scala.inline
-      def `top right`: typings.wordpressComponents.wordpressComponentsStrings.`top right` = ("top right").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`top right`]
+      inline def `top right`: typings.wordpressComponents.wordpressComponentsStrings.`top right` = ("top right").asInstanceOf[typings.wordpressComponents.wordpressComponentsStrings.`top right`]
     }
     
     trait Props
@@ -179,86 +170,60 @@ object popoverMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setAnchorRect(value: DOMRect | ClientRect): Self = StObject.set(x, "anchorRect", value.asInstanceOf[js.Any])
+        inline def setAnchorRect(value: DOMRect | ClientRect): Self = StObject.set(x, "anchorRect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnchorRectUndefined: Self = StObject.set(x, "anchorRect", js.undefined)
+        inline def setAnchorRectUndefined: Self = StObject.set(x, "anchorRect", js.undefined)
         
-        @scala.inline
-        def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+        inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+        inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setExpandOnMobile(value: Boolean): Self = StObject.set(x, "expandOnMobile", value.asInstanceOf[js.Any])
+        inline def setExpandOnMobile(value: Boolean): Self = StObject.set(x, "expandOnMobile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpandOnMobileUndefined: Self = StObject.set(x, "expandOnMobile", js.undefined)
+        inline def setExpandOnMobileUndefined: Self = StObject.set(x, "expandOnMobile", js.undefined)
         
-        @scala.inline
-        def setFocusOnMount(value: firstElement | container | `false`): Self = StObject.set(x, "focusOnMount", value.asInstanceOf[js.Any])
+        inline def setFocusOnMount(value: firstElement | container | `false`): Self = StObject.set(x, "focusOnMount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFocusOnMountUndefined: Self = StObject.set(x, "focusOnMount", js.undefined)
+        inline def setFocusOnMountUndefined: Self = StObject.set(x, "focusOnMount", js.undefined)
         
-        @scala.inline
-        def setGetAnchorRect(value: /* currentAnchorElement */ HTMLSpanElement | Null => js.UndefOr[DOMRect | ClientRect]): Self = StObject.set(x, "getAnchorRect", js.Any.fromFunction1(value))
+        inline def setGetAnchorRect(value: /* currentAnchorElement */ HTMLSpanElement | Null => js.UndefOr[DOMRect | ClientRect]): Self = StObject.set(x, "getAnchorRect", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetAnchorRectUndefined: Self = StObject.set(x, "getAnchorRect", js.undefined)
+        inline def setGetAnchorRectUndefined: Self = StObject.set(x, "getAnchorRect", js.undefined)
         
-        @scala.inline
-        def setHeaderTitle(value: String): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
+        inline def setHeaderTitle(value: String): Self = StObject.set(x, "headerTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
+        inline def setHeaderTitleUndefined: Self = StObject.set(x, "headerTitle", js.undefined)
         
-        @scala.inline
-        def setNoArrow(value: Boolean): Self = StObject.set(x, "noArrow", value.asInstanceOf[js.Any])
+        inline def setNoArrow(value: Boolean): Self = StObject.set(x, "noArrow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoArrowUndefined: Self = StObject.set(x, "noArrow", js.undefined)
+        inline def setNoArrowUndefined: Self = StObject.set(x, "noArrow", js.undefined)
         
-        @scala.inline
-        def setOnClickOutside(value: () => Unit): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction0(value))
+        inline def setOnClickOutside(value: () => Unit): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
+        inline def setOnClickOutsideUndefined: Self = StObject.set(x, "onClickOutside", js.undefined)
         
-        @scala.inline
-        def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+        inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+        inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
         
-        @scala.inline
-        def setOnFocusOutside(value: /* event */ FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocusOutside", js.Any.fromFunction1(value))
+        inline def setOnFocusOutside(value: /* event */ FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocusOutside", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnFocusOutsideUndefined: Self = StObject.set(x, "onFocusOutside", js.undefined)
+        inline def setOnFocusOutsideUndefined: Self = StObject.set(x, "onFocusOutside", js.undefined)
         
-        @scala.inline
-        def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       }
     }
   }

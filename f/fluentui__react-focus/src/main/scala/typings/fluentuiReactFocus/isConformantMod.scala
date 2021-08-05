@@ -13,8 +13,7 @@ object isConformantMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isConformant_componentPath(
+  inline def isConformant_componentPath(
     testInfo: (Omit[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IsConformantOptions */ js.Any, 
       componentPath

@@ -10,16 +10,13 @@ trait Touch extends StObject {
 }
 object Touch {
   
-  @scala.inline
-  def apply(radialMenu: TouchRadialMenu): Touch = {
+  inline def apply(radialMenu: TouchRadialMenu): Touch = {
     val __obj = js.Dynamic.literal(radialMenu = radialMenu.asInstanceOf[js.Any])
     __obj.asInstanceOf[Touch]
   }
   
-  @scala.inline
-  implicit class TouchMutableBuilder[Self <: Touch] (val x: Self) extends AnyVal {
+  extension [Self <: Touch](x: Self) {
     
-    @scala.inline
-    def setRadialMenu(value: TouchRadialMenu): Self = StObject.set(x, "radialMenu", value.asInstanceOf[js.Any])
+    inline def setRadialMenu(value: TouchRadialMenu): Self = StObject.set(x, "radialMenu", value.asInstanceOf[js.Any])
   }
 }

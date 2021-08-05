@@ -22,8 +22,7 @@ trait XVolatileBitmap
 }
 object XVolatileBitmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Size: IntegerSize2D,
     acquire: () => Unit,
     getScaledBitmap: (RealSize2D, Boolean) => XBitmap,
@@ -37,10 +36,8 @@ object XVolatileBitmap {
     __obj.asInstanceOf[XVolatileBitmap]
   }
   
-  @scala.inline
-  implicit class XVolatileBitmapMutableBuilder[Self <: XVolatileBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: XVolatileBitmap](x: Self) {
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
   }
 }

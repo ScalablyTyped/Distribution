@@ -18,22 +18,17 @@ trait InstallabilityError extends StObject {
 }
 object InstallabilityError {
   
-  @scala.inline
-  def apply(errorArguments: js.Array[InstallabilityErrorArgument], errorId: String): InstallabilityError = {
+  inline def apply(errorArguments: js.Array[InstallabilityErrorArgument], errorId: String): InstallabilityError = {
     val __obj = js.Dynamic.literal(errorArguments = errorArguments.asInstanceOf[js.Any], errorId = errorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallabilityError]
   }
   
-  @scala.inline
-  implicit class InstallabilityErrorMutableBuilder[Self <: InstallabilityError] (val x: Self) extends AnyVal {
+  extension [Self <: InstallabilityError](x: Self) {
     
-    @scala.inline
-    def setErrorArguments(value: js.Array[InstallabilityErrorArgument]): Self = StObject.set(x, "errorArguments", value.asInstanceOf[js.Any])
+    inline def setErrorArguments(value: js.Array[InstallabilityErrorArgument]): Self = StObject.set(x, "errorArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorArgumentsVarargs(value: InstallabilityErrorArgument*): Self = StObject.set(x, "errorArguments", js.Array(value :_*))
+    inline def setErrorArgumentsVarargs(value: InstallabilityErrorArgument*): Self = StObject.set(x, "errorArguments", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorId(value: String): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
+    inline def setErrorId(value: String): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
   }
 }

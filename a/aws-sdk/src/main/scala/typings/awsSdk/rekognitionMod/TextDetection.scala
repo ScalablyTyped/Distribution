@@ -38,49 +38,35 @@ trait TextDetection extends StObject {
 }
 object TextDetection {
   
-  @scala.inline
-  def apply(): TextDetection = {
+  inline def apply(): TextDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextDetection]
   }
   
-  @scala.inline
-  implicit class TextDetectionMutableBuilder[Self <: TextDetection] (val x: Self) extends AnyVal {
+  extension [Self <: TextDetection](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setDetectedText(value: String): Self = StObject.set(x, "DetectedText", value.asInstanceOf[js.Any])
+    inline def setDetectedText(value: String): Self = StObject.set(x, "DetectedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedTextUndefined: Self = StObject.set(x, "DetectedText", js.undefined)
+    inline def setDetectedTextUndefined: Self = StObject.set(x, "DetectedText", js.undefined)
     
-    @scala.inline
-    def setGeometry(value: Geometry): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Geometry): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "Geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "Geometry", js.undefined)
     
-    @scala.inline
-    def setId(value: UInteger): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: UInteger): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setParentId(value: UInteger): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: UInteger): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
     
-    @scala.inline
-    def setType(value: TextTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: TextTypes): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

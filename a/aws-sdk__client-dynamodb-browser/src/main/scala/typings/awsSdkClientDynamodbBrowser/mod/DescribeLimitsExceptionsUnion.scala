@@ -10,8 +10,7 @@ trait DescribeLimitsExceptionsUnion
      with InternalServerError
 object DescribeLimitsExceptionsUnion {
   
-  @scala.inline
-  def apply(): DescribeLimitsExceptionsUnion = {
+  inline def apply(): DescribeLimitsExceptionsUnion = {
     val __obj = js.Dynamic.literal(name = "InternalServerError")
     __obj.asInstanceOf[DescribeLimitsExceptionsUnion]
   }

@@ -24,31 +24,23 @@ trait SchemaPushItemRequest extends StObject {
 }
 object SchemaPushItemRequest {
   
-  @scala.inline
-  def apply(): SchemaPushItemRequest = {
+  inline def apply(): SchemaPushItemRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPushItemRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPushItemRequestMutableBuilder[Self <: SchemaPushItemRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPushItemRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
+    inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
+    inline def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     
-    @scala.inline
-    def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
-    @scala.inline
-    def setItem(value: SchemaPushItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: SchemaPushItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

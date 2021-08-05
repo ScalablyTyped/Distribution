@@ -20,25 +20,19 @@ trait AppsGetUserInstallationRequestOptions extends StObject {
 }
 object AppsGetUserInstallationRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsGetUserInstallationRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsGetUserInstallationRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/users/:username/installation")
     __obj.asInstanceOf[AppsGetUserInstallationRequestOptions]
   }
   
-  @scala.inline
-  implicit class AppsGetUserInstallationRequestOptionsMutableBuilder[Self <: AppsGetUserInstallationRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppsGetUserInstallationRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashusersSlashColonusernameSlashinstallation): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashusersSlashColonusernameSlashinstallation): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

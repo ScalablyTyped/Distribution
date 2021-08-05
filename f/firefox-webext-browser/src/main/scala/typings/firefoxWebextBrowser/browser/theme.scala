@@ -23,23 +23,18 @@ object theme {
   }
   object ThemeUpdateInfo {
     
-    @scala.inline
-    def apply(theme: js.Object): ThemeUpdateInfo = {
+    inline def apply(theme: js.Object): ThemeUpdateInfo = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThemeUpdateInfo]
     }
     
-    @scala.inline
-    implicit class ThemeUpdateInfoMutableBuilder[Self <: ThemeUpdateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeUpdateInfo](x: Self) {
       
-      @scala.inline
-      def setTheme(value: js.Object): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: js.Object): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
 }

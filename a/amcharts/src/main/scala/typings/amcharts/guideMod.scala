@@ -325,8 +325,7 @@ object guideMod {
   }
   object Guide {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       above: Boolean,
       angle: Double,
       balloonColor: String,
@@ -359,89 +358,61 @@ object guideMod {
       __obj.asInstanceOf[Guide]
     }
     
-    @scala.inline
-    implicit class GuideMutableBuilder[Self <: Guide] (val x: Self) extends AnyVal {
+    extension [Self <: Guide](x: Self) {
       
-      @scala.inline
-      def setAbove(value: Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
+      inline def setAbove(value: Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalloonColor(value: String): Self = StObject.set(x, "balloonColor", value.asInstanceOf[js.Any])
+      inline def setBalloonColor(value: String): Self = StObject.set(x, "balloonColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalloonText(value: String): Self = StObject.set(x, "balloonText", value.asInstanceOf[js.Any])
+      inline def setBalloonText(value: String): Self = StObject.set(x, "balloonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldLabel(value: Boolean): Self = StObject.set(x, "boldLabel", value.asInstanceOf[js.Any])
+      inline def setBoldLabel(value: Boolean): Self = StObject.set(x, "boldLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDashLength(value: Double): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
+      inline def setDashLength(value: Double): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
+      inline def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
+      inline def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelRotation(value: Double): Self = StObject.set(x, "labelRotation", value.asInstanceOf[js.Any])
+      inline def setLabelRotation(value: Double): Self = StObject.set(x, "labelRotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineAlpha(value: Double): Self = StObject.set(x, "lineAlpha", value.asInstanceOf[js.Any])
+      inline def setLineAlpha(value: Double): Self = StObject.set(x, "lineAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+      inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineThickness(value: Double): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
+      inline def setLineThickness(value: Double): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickLength(value: Double): Self = StObject.set(x, "tickLength", value.asInstanceOf[js.Any])
+      inline def setTickLength(value: Double): Self = StObject.set(x, "tickLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToAngle(value: Double): Self = StObject.set(x, "toAngle", value.asInstanceOf[js.Any])
+      inline def setToAngle(value: Double): Self = StObject.set(x, "toAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToCategory(value: String): Self = StObject.set(x, "toCategory", value.asInstanceOf[js.Any])
+      inline def setToCategory(value: String): Self = StObject.set(x, "toCategory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToDate(value: Date): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+      inline def setToDate(value: Date): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToValue(value: Double): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+      inline def setToValue(value: Double): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueAxis(value: typings.amcharts.valueAxisMod.default): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
+      inline def setValueAxis(value: typings.amcharts.valueAxisMod.default): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
     }
   }
 }

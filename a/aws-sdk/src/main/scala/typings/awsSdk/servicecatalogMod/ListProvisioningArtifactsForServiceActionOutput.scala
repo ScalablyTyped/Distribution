@@ -18,28 +18,21 @@ trait ListProvisioningArtifactsForServiceActionOutput extends StObject {
 }
 object ListProvisioningArtifactsForServiceActionOutput {
   
-  @scala.inline
-  def apply(): ListProvisioningArtifactsForServiceActionOutput = {
+  inline def apply(): ListProvisioningArtifactsForServiceActionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProvisioningArtifactsForServiceActionOutput]
   }
   
-  @scala.inline
-  implicit class ListProvisioningArtifactsForServiceActionOutputMutableBuilder[Self <: ListProvisioningArtifactsForServiceActionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListProvisioningArtifactsForServiceActionOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifactViews(value: ProvisioningArtifactViews): Self = StObject.set(x, "ProvisioningArtifactViews", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifactViews(value: ProvisioningArtifactViews): Self = StObject.set(x, "ProvisioningArtifactViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactViewsUndefined: Self = StObject.set(x, "ProvisioningArtifactViews", js.undefined)
+    inline def setProvisioningArtifactViewsUndefined: Self = StObject.set(x, "ProvisioningArtifactViews", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifactViewsVarargs(value: ProvisioningArtifactView*): Self = StObject.set(x, "ProvisioningArtifactViews", js.Array(value :_*))
+    inline def setProvisioningArtifactViewsVarargs(value: ProvisioningArtifactView*): Self = StObject.set(x, "ProvisioningArtifactViews", js.Array(value :_*))
   }
 }

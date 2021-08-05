@@ -13,8 +13,7 @@ object AppEventsLogger {
   /**
     * Explicitly kicks off flushing of events to Facebook.
     */
-  @scala.inline
-  def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
+  inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
   /**
     * Logs an event with eventName and optional arguments.
@@ -25,58 +24,47 @@ object AppEventsLogger {
     * logEvent(eventName: string, valueToSum: number, parameters: {[key:string]:string|number});
     * See https://developers.facebook.com/docs/app-events/android for detail.
     */
-  @scala.inline
-  def logEvent(eventName: String, args: (Double | Params)*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logEvent(eventName: String, args: (Double | Params)*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Logs a purchase. See http://en.wikipedia.org/wiki/ISO_4217 for currencyCode.
     */
-  @scala.inline
-  def logPurchase(purchaseAmount: Double, currencyCode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logPurchase")(purchaseAmount.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logPurchase(purchaseAmount: Double, currencyCode: String, parameters: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logPurchase")(purchaseAmount.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logPurchase(purchaseAmount: Double, currencyCode: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logPurchase")(purchaseAmount.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logPurchase(purchaseAmount: Double, currencyCode: String, parameters: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logPurchase")(purchaseAmount.asInstanceOf[js.Any], currencyCode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Logs an app event that tracks that the application was open via Push Notification.
     */
-  @scala.inline
-  def logPushNotificationOpen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logPushNotificationOpen")().asInstanceOf[Unit]
-  @scala.inline
-  def logPushNotificationOpen(payload: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logPushNotificationOpen")(payload.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logPushNotificationOpen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logPushNotificationOpen")().asInstanceOf[Unit]
+  inline def logPushNotificationOpen(payload: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logPushNotificationOpen")(payload.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets the current event flushing behavior specifying when events
     * are sent back to Facebook servers.
     */
-  @scala.inline
-  def setFlushBehavior(flushBehavior: AppEventsFlushBehavior): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlushBehavior")(flushBehavior.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setFlushBehavior(flushBehavior: AppEventsFlushBehavior): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFlushBehavior")(flushBehavior.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * For iOS only, sets and sends device token to register the current application for push notifications.
     * @platform ios
     */
-  @scala.inline
-  def setPushNotificationsDeviceToken(deviceToken: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPushNotificationsDeviceToken")(deviceToken.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPushNotificationsDeviceToken(deviceToken: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPushNotificationsDeviceToken")(deviceToken.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * For Android only, sets and sends registration id to register the current app for push notifications.
     * @platform Android
     */
-  @scala.inline
-  def setPushNotificationsRegistrationId(registrationId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPushNotificationsRegistrationId")(registrationId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPushNotificationsRegistrationId(registrationId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPushNotificationsRegistrationId")(registrationId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Set additional data about the user to increase chances of matching a Facebook user.
     */
-  @scala.inline
-  def setUserData(userData: UserData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserData")(userData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUserData(userData: UserData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserData")(userData.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets a custom user ID to associate with all app events.
     * The userID is persisted until it is cleared by passing nil.
     */
-  @scala.inline
-  def setUserID(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserID")().asInstanceOf[Unit]
-  @scala.inline
-  def setUserID(userID: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserID")(userID.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUserID(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserID")().asInstanceOf[Unit]
+  inline def setUserID(userID: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserID")(userID.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

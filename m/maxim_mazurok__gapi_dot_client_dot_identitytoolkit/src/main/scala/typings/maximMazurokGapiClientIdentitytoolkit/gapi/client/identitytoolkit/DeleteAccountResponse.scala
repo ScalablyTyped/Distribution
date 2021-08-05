@@ -11,19 +11,15 @@ trait DeleteAccountResponse extends StObject {
 }
 object DeleteAccountResponse {
   
-  @scala.inline
-  def apply(): DeleteAccountResponse = {
+  inline def apply(): DeleteAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteAccountResponse]
   }
   
-  @scala.inline
-  implicit class DeleteAccountResponseMutableBuilder[Self <: DeleteAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccountResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

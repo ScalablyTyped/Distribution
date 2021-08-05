@@ -8,6 +8,5 @@ object angularGridsterStrings {
   
   @js.native
   sealed trait gridster extends StObject
-  @scala.inline
-  def gridster: gridster = "gridster".asInstanceOf[gridster]
+  inline def gridster: gridster = "gridster".asInstanceOf[gridster]
 }

@@ -18,19 +18,15 @@ trait PutJobFailureResultInput extends StObject {
 }
 object PutJobFailureResultInput {
   
-  @scala.inline
-  def apply(failureDetails: FailureDetails, jobId: JobId): PutJobFailureResultInput = {
+  inline def apply(failureDetails: FailureDetails, jobId: JobId): PutJobFailureResultInput = {
     val __obj = js.Dynamic.literal(failureDetails = failureDetails.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutJobFailureResultInput]
   }
   
-  @scala.inline
-  implicit class PutJobFailureResultInputMutableBuilder[Self <: PutJobFailureResultInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutJobFailureResultInput](x: Self) {
     
-    @scala.inline
-    def setFailureDetails(value: FailureDetails): Self = StObject.set(x, "failureDetails", value.asInstanceOf[js.Any])
+    inline def setFailureDetails(value: FailureDetails): Self = StObject.set(x, "failureDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
   }
 }

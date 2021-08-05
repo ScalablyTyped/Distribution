@@ -29,25 +29,19 @@ trait RotationVariableProperties
 }
 object RotationVariableProperties {
   
-  @scala.inline
-  def apply(): RotationVariableProperties = {
+  inline def apply(): RotationVariableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotationVariableProperties]
   }
   
-  @scala.inline
-  implicit class RotationVariablePropertiesMutableBuilder[Self <: RotationVariableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RotationVariableProperties](x: Self) {
     
-    @scala.inline
-    def setAxis(value: heading | tilt | roll): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: heading | tilt | roll): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setRotationType(value: geographic | arithmetic): Self = StObject.set(x, "rotationType", value.asInstanceOf[js.Any])
+    inline def setRotationType(value: geographic | arithmetic): Self = StObject.set(x, "rotationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationTypeUndefined: Self = StObject.set(x, "rotationType", js.undefined)
+    inline def setRotationTypeUndefined: Self = StObject.set(x, "rotationType", js.undefined)
   }
 }

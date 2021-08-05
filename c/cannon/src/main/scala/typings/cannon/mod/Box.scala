@@ -36,6 +36,5 @@ object Box {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calculateInertia(halfExtents: typings.cannon.CANNON.Vec3, mass: Double, target: typings.cannon.CANNON.Vec3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateInertia")(halfExtents.asInstanceOf[js.Any], mass.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def calculateInertia(halfExtents: typings.cannon.CANNON.Vec3, mass: Double, target: typings.cannon.CANNON.Vec3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateInertia")(halfExtents.asInstanceOf[js.Any], mass.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

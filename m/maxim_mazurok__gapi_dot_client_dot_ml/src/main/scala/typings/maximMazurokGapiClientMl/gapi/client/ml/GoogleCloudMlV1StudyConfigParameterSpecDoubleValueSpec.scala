@@ -14,25 +14,19 @@ trait GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec extends StObject {
 }
 object GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec = {
+  inline def apply(): GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpecMutableBuilder[Self <: GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

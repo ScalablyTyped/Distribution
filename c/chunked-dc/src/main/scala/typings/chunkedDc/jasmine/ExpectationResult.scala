@@ -22,8 +22,7 @@ trait ExpectationResult
 }
 object ExpectationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actual: js.Any,
     expected: js.Any,
     matcherName: String,
@@ -37,25 +36,18 @@ object ExpectationResult {
     __obj.asInstanceOf[ExpectationResult]
   }
   
-  @scala.inline
-  implicit class ExpectationResultMutableBuilder[Self <: ExpectationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ExpectationResult](x: Self) {
     
-    @scala.inline
-    def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+    inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatcherName(value: String): Self = StObject.set(x, "matcherName", value.asInstanceOf[js.Any])
+    inline def setMatcherName(value: String): Self = StObject.set(x, "matcherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassed(value: () => Boolean): Self = StObject.set(x, "passed", js.Any.fromFunction0(value))
+    inline def setPassed(value: () => Boolean): Self = StObject.set(x, "passed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTrace(value: Trace): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: Trace): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
   }
 }

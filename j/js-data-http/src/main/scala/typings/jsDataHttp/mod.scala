@@ -178,29 +178,21 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def extend(): TypeofHttpAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[TypeofHttpAdapter]
-    @scala.inline
-    def extend(instanceProps: Unit, classProps: IDict): TypeofHttpAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofHttpAdapter]
-    @scala.inline
-    def extend(instanceProps: IDict): TypeofHttpAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[TypeofHttpAdapter]
-    @scala.inline
-    def extend(instanceProps: IDict, classProps: IDict): TypeofHttpAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofHttpAdapter]
+    inline def extend(): TypeofHttpAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[TypeofHttpAdapter]
+    inline def extend(instanceProps: Unit, classProps: IDict): TypeofHttpAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofHttpAdapter]
+    inline def extend(instanceProps: IDict): TypeofHttpAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[TypeofHttpAdapter]
+    inline def extend(instanceProps: IDict, classProps: IDict): TypeofHttpAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofHttpAdapter]
     
     @JSImport("js-data-http", "HttpAdapter.version")
     @js.native
     def version: Alpha = js.native
-    @scala.inline
-    def version_=(x: Alpha): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+    inline def version_=(x: Alpha): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def addAction(name: String, opts: IActionOpts): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addAction")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def addAction(name: String, opts: IActionOpts): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("addAction")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  @scala.inline
-  def addActions(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("addActions")().asInstanceOf[js.Function]
-  @scala.inline
-  def addActions(opts: StringDictionary[IActionOpts]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("addActions")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def addActions(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("addActions")().asInstanceOf[js.Function]
+  inline def addActions(opts: StringDictionary[IActionOpts]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("addActions")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   trait IActionOpts extends StObject {
     
@@ -216,44 +208,32 @@ object mod {
   }
   object IActionOpts {
     
-    @scala.inline
-    def apply(): IActionOpts = {
+    inline def apply(): IActionOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IActionOpts]
     }
     
-    @scala.inline
-    implicit class IActionOptsMutableBuilder[Self <: IActionOpts] (val x: Self) extends AnyVal {
+    extension [Self <: IActionOpts](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
       
-      @scala.inline
-      def setRequest(value: js.Function): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Function): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setResponse(value: js.Function): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: js.Function): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseError(value: js.Function): Self = StObject.set(x, "responseError", value.asInstanceOf[js.Any])
+      inline def setResponseError(value: js.Function): Self = StObject.set(x, "responseError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
+      inline def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   
@@ -267,26 +247,20 @@ object mod {
   }
   object IBaseAdapter {
     
-    @scala.inline
-    def apply(): IBaseAdapter = {
+    inline def apply(): IBaseAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBaseAdapter]
     }
     
-    @scala.inline
-    implicit class IBaseAdapterMutableBuilder[Self <: IBaseAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: IBaseAdapter](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   
@@ -308,50 +282,36 @@ object mod {
   }
   object IBaseHttpAdapter {
     
-    @scala.inline
-    def apply(): IBaseHttpAdapter = {
+    inline def apply(): IBaseHttpAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBaseHttpAdapter]
     }
     
-    @scala.inline
-    implicit class IBaseHttpAdapterMutableBuilder[Self <: IBaseHttpAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: IBaseHttpAdapter](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setForceTrailingSlash(value: Boolean): Self = StObject.set(x, "forceTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setForceTrailingSlash(value: Boolean): Self = StObject.set(x, "forceTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceTrailingSlashUndefined: Self = StObject.set(x, "forceTrailingSlash", js.undefined)
+      inline def setForceTrailingSlashUndefined: Self = StObject.set(x, "forceTrailingSlash", js.undefined)
       
-      @scala.inline
-      def setHttp(value: js.Any): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: js.Any): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpConfig(value: IDict): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
+      inline def setHttpConfig(value: IDict): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
+      inline def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setUseFetch(value: Boolean): Self = StObject.set(x, "useFetch", value.asInstanceOf[js.Any])
+      inline def setUseFetch(value: Boolean): Self = StObject.set(x, "useFetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFetchUndefined: Self = StObject.set(x, "useFetch", js.undefined)
+      inline def setUseFetchUndefined: Self = StObject.set(x, "useFetch", js.undefined)
     }
   }
   

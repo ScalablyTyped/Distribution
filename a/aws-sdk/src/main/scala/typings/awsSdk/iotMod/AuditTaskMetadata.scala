@@ -23,31 +23,23 @@ trait AuditTaskMetadata extends StObject {
 }
 object AuditTaskMetadata {
   
-  @scala.inline
-  def apply(): AuditTaskMetadata = {
+  inline def apply(): AuditTaskMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditTaskMetadata]
   }
   
-  @scala.inline
-  implicit class AuditTaskMetadataMutableBuilder[Self <: AuditTaskMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AuditTaskMetadata](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: AuditTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: AuditTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     
-    @scala.inline
-    def setTaskStatus(value: AuditTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
+    inline def setTaskStatus(value: AuditTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
+    inline def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
     
-    @scala.inline
-    def setTaskType(value: AuditTaskType): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
+    inline def setTaskType(value: AuditTaskType): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
+    inline def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
   }
 }

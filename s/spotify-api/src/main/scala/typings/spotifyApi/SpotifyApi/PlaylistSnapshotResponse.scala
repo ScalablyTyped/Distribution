@@ -13,16 +13,13 @@ trait PlaylistSnapshotResponse extends StObject {
 }
 object PlaylistSnapshotResponse {
   
-  @scala.inline
-  def apply(snapshot_id: String): PlaylistSnapshotResponse = {
+  inline def apply(snapshot_id: String): PlaylistSnapshotResponse = {
     val __obj = js.Dynamic.literal(snapshot_id = snapshot_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistSnapshotResponse]
   }
   
-  @scala.inline
-  implicit class PlaylistSnapshotResponseMutableBuilder[Self <: PlaylistSnapshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistSnapshotResponse](x: Self) {
     
-    @scala.inline
-    def setSnapshot_id(value: String): Self = StObject.set(x, "snapshot_id", value.asInstanceOf[js.Any])
+    inline def setSnapshot_id(value: String): Self = StObject.set(x, "snapshot_id", value.asInstanceOf[js.Any])
   }
 }

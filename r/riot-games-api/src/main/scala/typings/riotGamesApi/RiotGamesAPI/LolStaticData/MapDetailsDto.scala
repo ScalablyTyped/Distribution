@@ -16,28 +16,21 @@ trait MapDetailsDto extends StObject {
 }
 object MapDetailsDto {
   
-  @scala.inline
-  def apply(image: ImageDto, mapId: Double, mapName: String, unpurchasableItemList: js.Array[Double]): MapDetailsDto = {
+  inline def apply(image: ImageDto, mapId: Double, mapName: String, unpurchasableItemList: js.Array[Double]): MapDetailsDto = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], mapId = mapId.asInstanceOf[js.Any], mapName = mapName.asInstanceOf[js.Any], unpurchasableItemList = unpurchasableItemList.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapDetailsDto]
   }
   
-  @scala.inline
-  implicit class MapDetailsDtoMutableBuilder[Self <: MapDetailsDto] (val x: Self) extends AnyVal {
+  extension [Self <: MapDetailsDto](x: Self) {
     
-    @scala.inline
-    def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
+    inline def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapName(value: String): Self = StObject.set(x, "mapName", value.asInstanceOf[js.Any])
+    inline def setMapName(value: String): Self = StObject.set(x, "mapName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnpurchasableItemList(value: js.Array[Double]): Self = StObject.set(x, "unpurchasableItemList", value.asInstanceOf[js.Any])
+    inline def setUnpurchasableItemList(value: js.Array[Double]): Self = StObject.set(x, "unpurchasableItemList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnpurchasableItemListVarargs(value: Double*): Self = StObject.set(x, "unpurchasableItemList", js.Array(value :_*))
+    inline def setUnpurchasableItemListVarargs(value: Double*): Self = StObject.set(x, "unpurchasableItemList", js.Array(value :_*))
   }
 }

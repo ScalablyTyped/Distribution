@@ -22,8 +22,7 @@ object ImageHelper {
     * @param aCssClassesToRemove all css clases that oImageControl has and which are contained in this
     * arrayare removed bevore adding the css classes listed in aCssClassesToAdd.
     */
-  @scala.inline
-  def getImageControl(
+  inline def getImageControl(
     sImgId: String,
     oImageControl: typings.openui5.sap.m.Image,
     oParent: Control,

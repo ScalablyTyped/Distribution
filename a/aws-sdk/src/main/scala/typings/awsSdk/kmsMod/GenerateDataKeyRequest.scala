@@ -33,43 +33,31 @@ trait GenerateDataKeyRequest extends StObject {
 }
 object GenerateDataKeyRequest {
   
-  @scala.inline
-  def apply(KeyId: KeyIdType): GenerateDataKeyRequest = {
+  inline def apply(KeyId: KeyIdType): GenerateDataKeyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataKeyRequest]
   }
   
-  @scala.inline
-  implicit class GenerateDataKeyRequestMutableBuilder[Self <: GenerateDataKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateDataKeyRequest](x: Self) {
     
-    @scala.inline
-    def setEncryptionContext(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContext", value.asInstanceOf[js.Any])
+    inline def setEncryptionContext(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionContextUndefined: Self = StObject.set(x, "EncryptionContext", js.undefined)
+    inline def setEncryptionContextUndefined: Self = StObject.set(x, "EncryptionContext", js.undefined)
     
-    @scala.inline
-    def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
+    inline def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
+    inline def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
     
-    @scala.inline
-    def setGrantTokensVarargs(value: GrantTokenType*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
+    inline def setGrantTokensVarargs(value: GrantTokenType*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySpec(value: DataKeySpec): Self = StObject.set(x, "KeySpec", value.asInstanceOf[js.Any])
+    inline def setKeySpec(value: DataKeySpec): Self = StObject.set(x, "KeySpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySpecUndefined: Self = StObject.set(x, "KeySpec", js.undefined)
+    inline def setKeySpecUndefined: Self = StObject.set(x, "KeySpec", js.undefined)
     
-    @scala.inline
-    def setNumberOfBytes(value: NumberOfBytesType): Self = StObject.set(x, "NumberOfBytes", value.asInstanceOf[js.Any])
+    inline def setNumberOfBytes(value: NumberOfBytesType): Self = StObject.set(x, "NumberOfBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfBytesUndefined: Self = StObject.set(x, "NumberOfBytes", js.undefined)
+    inline def setNumberOfBytesUndefined: Self = StObject.set(x, "NumberOfBytes", js.undefined)
   }
 }

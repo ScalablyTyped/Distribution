@@ -12,8 +12,7 @@ trait ChoreographyTask
 }
 object ChoreographyTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -33,13 +32,10 @@ object ChoreographyTask {
     __obj.asInstanceOf[ChoreographyTask]
   }
   
-  @scala.inline
-  implicit class ChoreographyTaskMutableBuilder[Self <: ChoreographyTask] (val x: Self) extends AnyVal {
+  extension [Self <: ChoreographyTask](x: Self) {
     
-    @scala.inline
-    def setMessageFlowRef(value: js.Array[MessageFlow]): Self = StObject.set(x, "messageFlowRef", value.asInstanceOf[js.Any])
+    inline def setMessageFlowRef(value: js.Array[MessageFlow]): Self = StObject.set(x, "messageFlowRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFlowRefVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlowRef", js.Array(value :_*))
+    inline def setMessageFlowRefVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlowRef", js.Array(value :_*))
   }
 }

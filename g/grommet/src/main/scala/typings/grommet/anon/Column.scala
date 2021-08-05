@@ -13,25 +13,19 @@ trait Column extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply(): Column = {
+  inline def apply(): Column = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Column]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+  extension [Self <: Column](x: Self) {
     
-    @scala.inline
-    def setColumn(value: GapType): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: GapType): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setRow(value: GapType): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: GapType): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

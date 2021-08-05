@@ -31,8 +31,7 @@ trait ParagraphTextValidationBuilder extends StObject {
 }
 object ParagraphTextValidationBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     requireTextContainsPattern: String => ParagraphTextValidationBuilder,
     requireTextDoesNotContainPattern: String => ParagraphTextValidationBuilder,
     requireTextDoesNotMatchPattern: String => ParagraphTextValidationBuilder,
@@ -44,25 +43,18 @@ object ParagraphTextValidationBuilder {
     __obj.asInstanceOf[ParagraphTextValidationBuilder]
   }
   
-  @scala.inline
-  implicit class ParagraphTextValidationBuilderMutableBuilder[Self <: ParagraphTextValidationBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphTextValidationBuilder](x: Self) {
     
-    @scala.inline
-    def setRequireTextContainsPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextContainsPattern", js.Any.fromFunction1(value))
+    inline def setRequireTextContainsPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextContainsPattern", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequireTextDoesNotContainPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextDoesNotContainPattern", js.Any.fromFunction1(value))
+    inline def setRequireTextDoesNotContainPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextDoesNotContainPattern", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequireTextDoesNotMatchPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextDoesNotMatchPattern", js.Any.fromFunction1(value))
+    inline def setRequireTextDoesNotMatchPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextDoesNotMatchPattern", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequireTextLengthGreaterThanOrEqualTo(value: Integer => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextLengthGreaterThanOrEqualTo", js.Any.fromFunction1(value))
+    inline def setRequireTextLengthGreaterThanOrEqualTo(value: Integer => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextLengthGreaterThanOrEqualTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequireTextLengthLessThanOrEqualTo(value: Integer => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextLengthLessThanOrEqualTo", js.Any.fromFunction1(value))
+    inline def setRequireTextLengthLessThanOrEqualTo(value: Integer => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextLengthLessThanOrEqualTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequireTextMatchesPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextMatchesPattern", js.Any.fromFunction1(value))
+    inline def setRequireTextMatchesPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextMatchesPattern", js.Any.fromFunction1(value))
   }
 }

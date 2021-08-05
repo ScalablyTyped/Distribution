@@ -41,19 +41,15 @@ trait DictionaryListEvent
 }
 object DictionaryListEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, aDictionaryEvents: SafeArray[DictionaryEvent], nCondensedEvent: Double): DictionaryListEvent = {
+  inline def apply(Source: XInterface, aDictionaryEvents: SafeArray[DictionaryEvent], nCondensedEvent: Double): DictionaryListEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], aDictionaryEvents = aDictionaryEvents.asInstanceOf[js.Any], nCondensedEvent = nCondensedEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictionaryListEvent]
   }
   
-  @scala.inline
-  implicit class DictionaryListEventMutableBuilder[Self <: DictionaryListEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DictionaryListEvent](x: Self) {
     
-    @scala.inline
-    def setADictionaryEvents(value: SafeArray[DictionaryEvent]): Self = StObject.set(x, "aDictionaryEvents", value.asInstanceOf[js.Any])
+    inline def setADictionaryEvents(value: SafeArray[DictionaryEvent]): Self = StObject.set(x, "aDictionaryEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNCondensedEvent(value: Double): Self = StObject.set(x, "nCondensedEvent", value.asInstanceOf[js.Any])
+    inline def setNCondensedEvent(value: Double): Self = StObject.set(x, "nCondensedEvent", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait InitiateDocumentVersionUploadResponse extends StObject {
 }
 object InitiateDocumentVersionUploadResponse {
   
-  @scala.inline
-  def apply(): InitiateDocumentVersionUploadResponse = {
+  inline def apply(): InitiateDocumentVersionUploadResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitiateDocumentVersionUploadResponse]
   }
   
-  @scala.inline
-  implicit class InitiateDocumentVersionUploadResponseMutableBuilder[Self <: InitiateDocumentVersionUploadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateDocumentVersionUploadResponse](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: DocumentMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: DocumentMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
-    @scala.inline
-    def setUploadMetadata(value: UploadMetadata): Self = StObject.set(x, "UploadMetadata", value.asInstanceOf[js.Any])
+    inline def setUploadMetadata(value: UploadMetadata): Self = StObject.set(x, "UploadMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadMetadataUndefined: Self = StObject.set(x, "UploadMetadata", js.undefined)
+    inline def setUploadMetadataUndefined: Self = StObject.set(x, "UploadMetadata", js.undefined)
   }
 }

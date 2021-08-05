@@ -19,19 +19,15 @@ trait VirtualGatewaySpecListenerTls extends StObject {
 }
 object VirtualGatewaySpecListenerTls {
   
-  @scala.inline
-  def apply(certificate: Input[VirtualGatewaySpecListenerTlsCertificate], mode: Input[String]): VirtualGatewaySpecListenerTls = {
+  inline def apply(certificate: Input[VirtualGatewaySpecListenerTlsCertificate], mode: Input[String]): VirtualGatewaySpecListenerTls = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewaySpecListenerTls]
   }
   
-  @scala.inline
-  implicit class VirtualGatewaySpecListenerTlsMutableBuilder[Self <: VirtualGatewaySpecListenerTls] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewaySpecListenerTls](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Input[VirtualGatewaySpecListenerTlsCertificate]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Input[VirtualGatewaySpecListenerTlsCertificate]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Input[String]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Input[String]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

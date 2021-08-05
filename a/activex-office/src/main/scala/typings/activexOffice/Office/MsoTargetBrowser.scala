@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoTargetBrowser extends StObject
 object MsoTargetBrowser {
   
-  @scala.inline
-  def msoTargetBrowserIE4: `2` = 2.asInstanceOf[`2`]
+  inline def msoTargetBrowserIE4: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoTargetBrowserIE5: `3` = 3.asInstanceOf[`3`]
+  inline def msoTargetBrowserIE5: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoTargetBrowserIE6: `4` = 4.asInstanceOf[`4`]
+  inline def msoTargetBrowserIE6: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoTargetBrowserV3: `0` = 0.asInstanceOf[`0`]
+  inline def msoTargetBrowserV3: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoTargetBrowserV4: `1` = 1.asInstanceOf[`1`]
+  inline def msoTargetBrowserV4: `1` = 1.asInstanceOf[`1`]
 }

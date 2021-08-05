@@ -66,8 +66,7 @@ trait MeshCreatePlaneParams
 }
 object MeshCreatePlaneParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -76,39 +75,28 @@ object MeshCreatePlaneParams {
     __obj.asInstanceOf[MeshCreatePlaneParams]
   }
   
-  @scala.inline
-  implicit class MeshCreatePlaneParamsMutableBuilder[Self <: MeshCreatePlaneParams] (val x: Self) extends AnyVal {
+  extension [Self <: MeshCreatePlaneParams](x: Self) {
     
-    @scala.inline
-    def setFacing(value: east | west | north | south | up | down): Self = StObject.set(x, "facing", value.asInstanceOf[js.Any])
+    inline def setFacing(value: east | west | north | south | up | down): Self = StObject.set(x, "facing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacingUndefined: Self = StObject.set(x, "facing", js.undefined)
+    inline def setFacingUndefined: Self = StObject.set(x, "facing", js.undefined)
     
-    @scala.inline
-    def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
+    inline def setGeographic(value: Boolean): Self = StObject.set(x, "geographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
+    inline def setGeographicUndefined: Self = StObject.set(x, "geographic", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: MeshMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: MeshMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | MeshCreatePlaneParamsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | MeshCreatePlaneParamsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setUnit(
+    inline def setUnit(
       value: millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
     ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

@@ -14,34 +14,25 @@ trait WebsocketAuthorizer extends StObject {
 }
 object WebsocketAuthorizer {
   
-  @scala.inline
-  def apply(): WebsocketAuthorizer = {
+  inline def apply(): WebsocketAuthorizer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebsocketAuthorizer]
   }
   
-  @scala.inline
-  implicit class WebsocketAuthorizerMutableBuilder[Self <: WebsocketAuthorizer] (val x: Self) extends AnyVal {
+  extension [Self <: WebsocketAuthorizer](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setIdentitySource(value: js.Array[String]): Self = StObject.set(x, "identitySource", value.asInstanceOf[js.Any])
+    inline def setIdentitySource(value: js.Array[String]): Self = StObject.set(x, "identitySource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitySourceUndefined: Self = StObject.set(x, "identitySource", js.undefined)
+    inline def setIdentitySourceUndefined: Self = StObject.set(x, "identitySource", js.undefined)
     
-    @scala.inline
-    def setIdentitySourceVarargs(value: String*): Self = StObject.set(x, "identitySource", js.Array(value :_*))
+    inline def setIdentitySourceVarargs(value: String*): Self = StObject.set(x, "identitySource", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

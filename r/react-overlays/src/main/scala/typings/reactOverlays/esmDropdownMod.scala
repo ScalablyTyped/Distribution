@@ -26,8 +26,7 @@ object esmDropdownMod {
     /**
       * @displayName Dropdown
       */
-    @scala.inline
-    def apply(
+    inline def apply(
       hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps
     ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -44,8 +43,7 @@ object esmDropdownMod {
         * @displayName DropdownMenu
         * @memberOf Dropdown
         */
-      @scala.inline
-      def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-overlays/esm/Dropdown", "default.Menu")
       @js.native
@@ -60,15 +58,13 @@ object esmDropdownMod {
         @JSImport("react-overlays/esm/Dropdown", "default.Menu.defaultProps.usePopper")
         @js.native
         def usePopper: Boolean = js.native
-        @scala.inline
-        def usePopper_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
+        inline def usePopper_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
       }
       
       @JSImport("react-overlays/esm/Dropdown", "default.Menu.displayName")
       @js.native
       def displayName: String = js.native
-      @scala.inline
-      def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       object propTypes {
         
@@ -84,8 +80,7 @@ object esmDropdownMod {
         @JSImport("react-overlays/esm/Dropdown", "default.Menu.propTypes.alignEnd")
         @js.native
         def alignEnd: Requireable[Boolean] = js.native
-        @scala.inline
-        def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
+        inline def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
         
         /**
           * A render prop that returns a Menu element. The `props`
@@ -112,8 +107,7 @@ object esmDropdownMod {
         @JSImport("react-overlays/esm/Dropdown", "default.Menu.propTypes.children")
         @js.native
         def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-        @scala.inline
-        def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+        inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
         
         /**
           * Enables the Popper.js `flip` modifier, allowing the Dropdown to
@@ -123,8 +117,7 @@ object esmDropdownMod {
         @JSImport("react-overlays/esm/Dropdown", "default.Menu.propTypes.flip")
         @js.native
         def flip: Requireable[Boolean] = js.native
-        @scala.inline
-        def flip_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flip")(x.asInstanceOf[js.Any])
+        inline def flip_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flip")(x.asInstanceOf[js.Any])
         
         /**
           * A set of popper options and props passed directly to react-popper's Popper component.
@@ -132,8 +125,7 @@ object esmDropdownMod {
         @JSImport("react-overlays/esm/Dropdown", "default.Menu.propTypes.popperConfig")
         @js.native
         def popperConfig: Requireable[js.Object] = js.native
-        @scala.inline
-        def popperConfig_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popperConfig")(x.asInstanceOf[js.Any])
+        inline def popperConfig_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popperConfig")(x.asInstanceOf[js.Any])
         
         /**
           * Override the default event used by RootCloseWrapper.
@@ -141,8 +133,7 @@ object esmDropdownMod {
         @JSImport("react-overlays/esm/Dropdown", "default.Menu.propTypes.rootCloseEvent")
         @js.native
         def rootCloseEvent: Requireable[String] = js.native
-        @scala.inline
-        def rootCloseEvent_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootCloseEvent")(x.asInstanceOf[js.Any])
+        inline def rootCloseEvent_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootCloseEvent")(x.asInstanceOf[js.Any])
         
         /**
           * Controls the visible state of the menu, generally this is
@@ -152,14 +143,12 @@ object esmDropdownMod {
         @JSImport("react-overlays/esm/Dropdown", "default.Menu.propTypes.show")
         @js.native
         def show: Requireable[Boolean] = js.native
-        @scala.inline
-        def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
+        inline def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
         
         @JSImport("react-overlays/esm/Dropdown", "default.Menu.propTypes.usePopper")
         @js.native
         def usePopper: Requireable[Boolean] = js.native
-        @scala.inline
-        def usePopper_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
+        inline def usePopper_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
       }
     }
     
@@ -172,8 +161,7 @@ object esmDropdownMod {
         * @displayName DropdownToggle
         * @memberOf Dropdown
         */
-      @scala.inline
-      def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-overlays/esm/Dropdown", "default.Toggle")
       @js.native
@@ -182,8 +170,7 @@ object esmDropdownMod {
       @JSImport("react-overlays/esm/Dropdown", "default.Toggle.displayName")
       @js.native
       def displayName: String = js.native
-      @scala.inline
-      def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       object propTypes {
         
@@ -209,16 +196,14 @@ object esmDropdownMod {
         @JSImport("react-overlays/esm/Dropdown", "default.Toggle.propTypes.children")
         @js.native
         def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-        @scala.inline
-        def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+        inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       }
     }
     
     @JSImport("react-overlays/esm/Dropdown", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     object propTypes {
       
@@ -232,8 +217,7 @@ object esmDropdownMod {
       @JSImport("react-overlays/esm/Dropdown", "default.propTypes.alignEnd")
       @js.native
       def alignEnd: Requireable[Boolean] = js.native
-      @scala.inline
-      def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
+      inline def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
       
       /**
         * A render prop that returns the root dropdown element. The `props`
@@ -249,8 +233,7 @@ object esmDropdownMod {
       @JSImport("react-overlays/esm/Dropdown", "default.propTypes.children")
       @js.native
       def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      @scala.inline
-      def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       /**
         * Sets the initial show position of the Dropdown.
@@ -258,8 +241,7 @@ object esmDropdownMod {
       @JSImport("react-overlays/esm/Dropdown", "default.propTypes.defaultShow")
       @js.native
       def defaultShow: Requireable[Boolean] = js.native
-      @scala.inline
-      def defaultShow_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultShow")(x.asInstanceOf[js.Any])
+      inline def defaultShow_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultShow")(x.asInstanceOf[js.Any])
       
       /**
         * Determines the direction and location of the Menu in relation to it's Toggle.
@@ -267,8 +249,7 @@ object esmDropdownMod {
       @JSImport("react-overlays/esm/Dropdown", "default.propTypes.drop")
       @js.native
       def drop: Requireable[String] = js.native
-      @scala.inline
-      def drop_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drop")(x.asInstanceOf[js.Any])
+      inline def drop_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drop")(x.asInstanceOf[js.Any])
       
       /**
         * Controls the focus behavior for when the Dropdown is opened. Set to
@@ -281,8 +262,7 @@ object esmDropdownMod {
       @JSImport("react-overlays/esm/Dropdown", "default.propTypes.focusFirstItemOnShow")
       @js.native
       def focusFirstItemOnShow: Requireable[String | Boolean] = js.native
-      @scala.inline
-      def focusFirstItemOnShow_=(x: Requireable[String | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusFirstItemOnShow")(x.asInstanceOf[js.Any])
+      inline def focusFirstItemOnShow_=(x: Requireable[String | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusFirstItemOnShow")(x.asInstanceOf[js.Any])
       
       /**
         * A css slector string that will return __focusable__ menu items.
@@ -292,8 +272,7 @@ object esmDropdownMod {
       @JSImport("react-overlays/esm/Dropdown", "default.propTypes.itemSelector")
       @js.native
       def itemSelector: Requireable[String] = js.native
-      @scala.inline
-      def itemSelector_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("itemSelector")(x.asInstanceOf[js.Any])
+      inline def itemSelector_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("itemSelector")(x.asInstanceOf[js.Any])
       
       /**
         * A callback fired when the Dropdown wishes to change visibility. Called with the requested
@@ -311,8 +290,7 @@ object esmDropdownMod {
       @JSImport("react-overlays/esm/Dropdown", "default.propTypes.onToggle")
       @js.native
       def onToggle: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      @scala.inline
-      def onToggle_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onToggle")(x.asInstanceOf[js.Any])
+      inline def onToggle_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onToggle")(x.asInstanceOf[js.Any])
       
       /**
         * Whether or not the Dropdown is visible.
@@ -322,8 +300,7 @@ object esmDropdownMod {
       @JSImport("react-overlays/esm/Dropdown", "default.propTypes.show")
       @js.native
       def show: Requireable[Boolean] = js.native
-      @scala.inline
-      def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
+      inline def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -342,17 +319,14 @@ object esmDropdownMod {
   }
   object DropdownInjectedProps {
     
-    @scala.inline
-    def apply(onKeyDown: KeyboardEvent[typings.std.Element] => Unit): DropdownInjectedProps = {
+    inline def apply(onKeyDown: KeyboardEvent[typings.std.Element] => Unit): DropdownInjectedProps = {
       val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction1(onKeyDown))
       __obj.asInstanceOf[DropdownInjectedProps]
     }
     
-    @scala.inline
-    implicit class DropdownInjectedPropsMutableBuilder[Self <: DropdownInjectedProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownInjectedProps](x: Self) {
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[typings.std.Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[typings.std.Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     }
   }
   

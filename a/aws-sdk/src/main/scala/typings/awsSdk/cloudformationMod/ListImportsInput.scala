@@ -18,22 +18,17 @@ trait ListImportsInput extends StObject {
 }
 object ListImportsInput {
   
-  @scala.inline
-  def apply(ExportName: ExportName): ListImportsInput = {
+  inline def apply(ExportName: ExportName): ListImportsInput = {
     val __obj = js.Dynamic.literal(ExportName = ExportName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListImportsInput]
   }
   
-  @scala.inline
-  implicit class ListImportsInputMutableBuilder[Self <: ListImportsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListImportsInput](x: Self) {
     
-    @scala.inline
-    def setExportName(value: ExportName): Self = StObject.set(x, "ExportName", value.asInstanceOf[js.Any])
+    inline def setExportName(value: ExportName): Self = StObject.set(x, "ExportName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

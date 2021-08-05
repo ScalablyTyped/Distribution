@@ -10,8 +10,7 @@ trait TrailEncodeEntry
      with DefinedProperty
 object TrailEncodeEntry {
   
-  @scala.inline
-  def apply(): TrailEncodeEntry = {
+  inline def apply(): TrailEncodeEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrailEncodeEntry]
   }

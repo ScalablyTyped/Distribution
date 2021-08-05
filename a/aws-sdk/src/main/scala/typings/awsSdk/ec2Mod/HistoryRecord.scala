@@ -23,31 +23,23 @@ trait HistoryRecord extends StObject {
 }
 object HistoryRecord {
   
-  @scala.inline
-  def apply(): HistoryRecord = {
+  inline def apply(): HistoryRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoryRecord]
   }
   
-  @scala.inline
-  implicit class HistoryRecordMutableBuilder[Self <: HistoryRecord] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryRecord](x: Self) {
     
-    @scala.inline
-    def setEventInformation(value: EventInformation): Self = StObject.set(x, "EventInformation", value.asInstanceOf[js.Any])
+    inline def setEventInformation(value: EventInformation): Self = StObject.set(x, "EventInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventInformationUndefined: Self = StObject.set(x, "EventInformation", js.undefined)
+    inline def setEventInformationUndefined: Self = StObject.set(x, "EventInformation", js.undefined)
     
-    @scala.inline
-    def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

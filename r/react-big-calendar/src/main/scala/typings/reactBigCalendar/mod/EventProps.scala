@@ -12,19 +12,15 @@ trait EventProps[TEvent /* <: js.Object */] extends StObject {
 }
 object EventProps {
   
-  @scala.inline
-  def apply[TEvent /* <: js.Object */](event: TEvent, title: String): EventProps[TEvent] = {
+  inline def apply[TEvent /* <: js.Object */](event: TEvent, title: String): EventProps[TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventProps[TEvent]]
   }
   
-  @scala.inline
-  implicit class EventPropsMutableBuilder[Self <: EventProps[?], TEvent /* <: js.Object */] (val x: Self & EventProps[TEvent]) extends AnyVal {
+  extension [Self <: EventProps[?], TEvent /* <: js.Object */](x: Self & EventProps[TEvent]) {
     
-    @scala.inline
-    def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

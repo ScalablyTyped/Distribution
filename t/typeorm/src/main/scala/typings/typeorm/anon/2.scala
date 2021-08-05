@@ -15,19 +15,16 @@ trait `2` extends StObject {
 }
 object `2` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mode: pessimistic_read | pessimistic_write | dirty_read | pessimistic_partial_write | pessimistic_write_or_fail
   ): `2` = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2`]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+  extension [Self <: `2`](x: Self) {
     
-    @scala.inline
-    def setMode(
+    inline def setMode(
       value: pessimistic_read | pessimistic_write | dirty_read | pessimistic_partial_write | pessimistic_write_or_fail
     ): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }

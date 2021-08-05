@@ -18,25 +18,19 @@ trait ListDirectoriesResponse extends StObject {
 }
 object ListDirectoriesResponse {
   
-  @scala.inline
-  def apply(Directories: DirectoryList): ListDirectoriesResponse = {
+  inline def apply(Directories: DirectoryList): ListDirectoriesResponse = {
     val __obj = js.Dynamic.literal(Directories = Directories.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDirectoriesResponse]
   }
   
-  @scala.inline
-  implicit class ListDirectoriesResponseMutableBuilder[Self <: ListDirectoriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDirectoriesResponse](x: Self) {
     
-    @scala.inline
-    def setDirectories(value: DirectoryList): Self = StObject.set(x, "Directories", value.asInstanceOf[js.Any])
+    inline def setDirectories(value: DirectoryList): Self = StObject.set(x, "Directories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoriesVarargs(value: Directory*): Self = StObject.set(x, "Directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: Directory*): Self = StObject.set(x, "Directories", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

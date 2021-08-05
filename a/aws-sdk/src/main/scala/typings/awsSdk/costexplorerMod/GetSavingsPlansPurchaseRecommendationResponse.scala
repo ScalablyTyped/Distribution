@@ -23,31 +23,23 @@ trait GetSavingsPlansPurchaseRecommendationResponse extends StObject {
 }
 object GetSavingsPlansPurchaseRecommendationResponse {
   
-  @scala.inline
-  def apply(): GetSavingsPlansPurchaseRecommendationResponse = {
+  inline def apply(): GetSavingsPlansPurchaseRecommendationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSavingsPlansPurchaseRecommendationResponse]
   }
   
-  @scala.inline
-  implicit class GetSavingsPlansPurchaseRecommendationResponseMutableBuilder[Self <: GetSavingsPlansPurchaseRecommendationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavingsPlansPurchaseRecommendationResponse](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: SavingsPlansPurchaseRecommendationMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SavingsPlansPurchaseRecommendationMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setSavingsPlansPurchaseRecommendation(value: SavingsPlansPurchaseRecommendation): Self = StObject.set(x, "SavingsPlansPurchaseRecommendation", value.asInstanceOf[js.Any])
+    inline def setSavingsPlansPurchaseRecommendation(value: SavingsPlansPurchaseRecommendation): Self = StObject.set(x, "SavingsPlansPurchaseRecommendation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlansPurchaseRecommendationUndefined: Self = StObject.set(x, "SavingsPlansPurchaseRecommendation", js.undefined)
+    inline def setSavingsPlansPurchaseRecommendationUndefined: Self = StObject.set(x, "SavingsPlansPurchaseRecommendation", js.undefined)
   }
 }

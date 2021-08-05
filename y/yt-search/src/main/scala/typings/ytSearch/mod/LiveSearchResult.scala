@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LiveSearchResult extends StObject
 object LiveSearchResult {
   
-  @scala.inline
-  def LiveLiveSearchResult(
+  inline def LiveLiveSearchResult(
     author: Author,
     description: String,
     image: String,
@@ -27,8 +26,7 @@ object LiveSearchResult {
     __obj.asInstanceOf[typings.ytSearch.mod.LiveLiveSearchResult]
   }
   
-  @scala.inline
-  def UpcomingLiveSearchResult(
+  inline def UpcomingLiveSearchResult(
     author: Author,
     description: String,
     image: String,

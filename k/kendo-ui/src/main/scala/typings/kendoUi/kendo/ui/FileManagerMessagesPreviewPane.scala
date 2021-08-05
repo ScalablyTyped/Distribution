@@ -20,49 +20,35 @@ trait FileManagerMessagesPreviewPane extends StObject {
 }
 object FileManagerMessagesPreviewPane {
   
-  @scala.inline
-  def apply(): FileManagerMessagesPreviewPane = {
+  inline def apply(): FileManagerMessagesPreviewPane = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerMessagesPreviewPane]
   }
   
-  @scala.inline
-  implicit class FileManagerMessagesPreviewPaneMutableBuilder[Self <: FileManagerMessagesPreviewPane] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerMessagesPreviewPane](x: Self) {
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
+    inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
-    @scala.inline
-    def setNoFileSelected(value: String): Self = StObject.set(x, "noFileSelected", value.asInstanceOf[js.Any])
+    inline def setNoFileSelected(value: String): Self = StObject.set(x, "noFileSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoFileSelectedUndefined: Self = StObject.set(x, "noFileSelected", js.undefined)
+    inline def setNoFileSelectedUndefined: Self = StObject.set(x, "noFileSelected", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait XmlElement
      with IXmlElement
 object XmlElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     attributes: XmlNamedNodeMap,
     childNodes: XmlNodeList,

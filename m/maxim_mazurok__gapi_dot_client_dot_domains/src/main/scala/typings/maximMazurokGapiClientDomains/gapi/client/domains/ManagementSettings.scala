@@ -14,25 +14,19 @@ trait ManagementSettings extends StObject {
 }
 object ManagementSettings {
   
-  @scala.inline
-  def apply(): ManagementSettings = {
+  inline def apply(): ManagementSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagementSettings]
   }
   
-  @scala.inline
-  implicit class ManagementSettingsMutableBuilder[Self <: ManagementSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ManagementSettings](x: Self) {
     
-    @scala.inline
-    def setRenewalMethod(value: String): Self = StObject.set(x, "renewalMethod", value.asInstanceOf[js.Any])
+    inline def setRenewalMethod(value: String): Self = StObject.set(x, "renewalMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenewalMethodUndefined: Self = StObject.set(x, "renewalMethod", js.undefined)
+    inline def setRenewalMethodUndefined: Self = StObject.set(x, "renewalMethod", js.undefined)
     
-    @scala.inline
-    def setTransferLockState(value: String): Self = StObject.set(x, "transferLockState", value.asInstanceOf[js.Any])
+    inline def setTransferLockState(value: String): Self = StObject.set(x, "transferLockState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferLockStateUndefined: Self = StObject.set(x, "transferLockState", js.undefined)
+    inline def setTransferLockStateUndefined: Self = StObject.set(x, "transferLockState", js.undefined)
   }
 }

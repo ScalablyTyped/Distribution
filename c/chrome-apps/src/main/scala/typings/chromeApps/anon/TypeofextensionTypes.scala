@@ -15,16 +15,13 @@ trait TypeofextensionTypes extends StObject {
 }
 object TypeofextensionTypes {
   
-  @scala.inline
-  def apply(_internal_ : js.Any): TypeofextensionTypes = {
+  inline def apply(_internal_ : js.Any): TypeofextensionTypes = {
     val __obj = js.Dynamic.literal(_internal_ = _internal_.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofextensionTypes]
   }
   
-  @scala.inline
-  implicit class TypeofextensionTypesMutableBuilder[Self <: TypeofextensionTypes] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofextensionTypes](x: Self) {
     
-    @scala.inline
-    def set_internal_(value: js.Any): Self = StObject.set(x, "_internal_", value.asInstanceOf[js.Any])
+    inline def set_internal_(value: js.Any): Self = StObject.set(x, "_internal_", value.asInstanceOf[js.Any])
   }
 }

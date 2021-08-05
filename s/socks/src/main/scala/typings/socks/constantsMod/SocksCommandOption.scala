@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SocksCommandOption extends StObject
 object SocksCommandOption {
   
-  @scala.inline
-  def associate: typings.socks.socksStrings.associate = "associate".asInstanceOf[typings.socks.socksStrings.associate]
+  inline def associate: typings.socks.socksStrings.associate = "associate".asInstanceOf[typings.socks.socksStrings.associate]
   
-  @scala.inline
-  def bind: typings.socks.socksStrings.bind = "bind".asInstanceOf[typings.socks.socksStrings.bind]
+  inline def bind: typings.socks.socksStrings.bind = "bind".asInstanceOf[typings.socks.socksStrings.bind]
   
-  @scala.inline
-  def connect: typings.socks.socksStrings.connect = "connect".asInstanceOf[typings.socks.socksStrings.connect]
+  inline def connect: typings.socks.socksStrings.connect = "connect".asInstanceOf[typings.socks.socksStrings.connect]
 }

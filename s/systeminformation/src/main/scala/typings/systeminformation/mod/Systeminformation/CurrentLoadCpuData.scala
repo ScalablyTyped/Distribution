@@ -32,8 +32,7 @@ trait CurrentLoadCpuData extends StObject {
 }
 object CurrentLoadCpuData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     load: Double,
     load_idle: Double,
     load_irq: Double,
@@ -51,43 +50,30 @@ object CurrentLoadCpuData {
     __obj.asInstanceOf[CurrentLoadCpuData]
   }
   
-  @scala.inline
-  implicit class CurrentLoadCpuDataMutableBuilder[Self <: CurrentLoadCpuData] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentLoadCpuData](x: Self) {
     
-    @scala.inline
-    def setLoad(value: Double): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: Double): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad_idle(value: Double): Self = StObject.set(x, "load_idle", value.asInstanceOf[js.Any])
+    inline def setLoad_idle(value: Double): Self = StObject.set(x, "load_idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad_irq(value: Double): Self = StObject.set(x, "load_irq", value.asInstanceOf[js.Any])
+    inline def setLoad_irq(value: Double): Self = StObject.set(x, "load_irq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad_nice(value: Double): Self = StObject.set(x, "load_nice", value.asInstanceOf[js.Any])
+    inline def setLoad_nice(value: Double): Self = StObject.set(x, "load_nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad_system(value: Double): Self = StObject.set(x, "load_system", value.asInstanceOf[js.Any])
+    inline def setLoad_system(value: Double): Self = StObject.set(x, "load_system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad_user(value: Double): Self = StObject.set(x, "load_user", value.asInstanceOf[js.Any])
+    inline def setLoad_user(value: Double): Self = StObject.set(x, "load_user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_load(value: Double): Self = StObject.set(x, "raw_load", value.asInstanceOf[js.Any])
+    inline def setRaw_load(value: Double): Self = StObject.set(x, "raw_load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_load_idle(value: Double): Self = StObject.set(x, "raw_load_idle", value.asInstanceOf[js.Any])
+    inline def setRaw_load_idle(value: Double): Self = StObject.set(x, "raw_load_idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_load_irq(value: Double): Self = StObject.set(x, "raw_load_irq", value.asInstanceOf[js.Any])
+    inline def setRaw_load_irq(value: Double): Self = StObject.set(x, "raw_load_irq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_load_nice(value: Double): Self = StObject.set(x, "raw_load_nice", value.asInstanceOf[js.Any])
+    inline def setRaw_load_nice(value: Double): Self = StObject.set(x, "raw_load_nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_load_system(value: Double): Self = StObject.set(x, "raw_load_system", value.asInstanceOf[js.Any])
+    inline def setRaw_load_system(value: Double): Self = StObject.set(x, "raw_load_system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_load_user(value: Double): Self = StObject.set(x, "raw_load_user", value.asInstanceOf[js.Any])
+    inline def setRaw_load_user(value: Double): Self = StObject.set(x, "raw_load_user", value.asInstanceOf[js.Any])
   }
 }

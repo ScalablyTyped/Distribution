@@ -24,11 +24,11 @@ object tableQuadrantStackMod {
     def this(props: ITableQuadrantStackProps) = this()
     def this(props: ITableQuadrantStackProps, context: js.Any) = this()
     
-    var adjustHorizontalGuides: js.Any = js.native
+    /* private */ var adjustHorizontalGuides: js.Any = js.native
     
-    var adjustVerticalGuides: js.Any = js.native
+    /* private */ var adjustVerticalGuides: js.Any = js.native
     
-    var cache: js.Any = js.native
+    /* private */ var cache: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MTableQuadrantStack(): Unit = js.native
@@ -36,118 +36,118 @@ object tableQuadrantStackMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MTableQuadrantStack(prevProps: ITableQuadrantStackProps): Unit = js.native
     
-    var debouncedViewSyncInterval: js.Any = js.native
+    /* private */ var debouncedViewSyncInterval: js.Any = js.native
     
-    var emitRefs: js.Any = js.native
+    /* private */ var emitRefs: js.Any = js.native
     
-    var generateQuadrantRefHandlers: js.Any = js.native
+    /* private */ var generateQuadrantRefHandlers: js.Any = js.native
     
-    var getNextScrollOffset: js.Any = js.native
+    /* private */ var getNextScrollOffset: js.Any = js.native
     
     /**
       * Returns the width or height of *only the grid* in the secondary quadrants
       * (TOP, LEFT, TOP_LEFT), based on the number of frozen rows and columns.
       */
-    var getSecondaryQuadrantGridSize: js.Any = js.native
+    /* private */ var getSecondaryQuadrantGridSize: js.Any = js.native
     
-    var handleColumnResizeGuideLeft: js.Any = js.native
+    /* private */ var handleColumnResizeGuideLeft: js.Any = js.native
     
-    var handleColumnResizeGuideMain: js.Any = js.native
+    /* private */ var handleColumnResizeGuideMain: js.Any = js.native
     
-    var handleColumnResizeGuideTop: js.Any = js.native
+    /* private */ var handleColumnResizeGuideTop: js.Any = js.native
     
-    var handleColumnResizeGuideTopLeft: js.Any = js.native
+    /* private */ var handleColumnResizeGuideTopLeft: js.Any = js.native
     
-    var handleColumnsReordering: js.Any = js.native
+    /* private */ var handleColumnsReordering: js.Any = js.native
     
-    var handleMainQuadrantScroll: js.Any = js.native
+    /* private */ var handleMainQuadrantScroll: js.Any = js.native
     
-    var handleRowResizeGuideLeft: js.Any = js.native
+    /* private */ var handleRowResizeGuideLeft: js.Any = js.native
     
-    var handleRowResizeGuideMain: js.Any = js.native
+    /* private */ var handleRowResizeGuideMain: js.Any = js.native
     
-    var handleRowResizeGuideTop: js.Any = js.native
+    /* private */ var handleRowResizeGuideTop: js.Any = js.native
     
-    var handleRowResizeGuideTopLeft: js.Any = js.native
+    /* private */ var handleRowResizeGuideTopLeft: js.Any = js.native
     
-    var handleRowsReordering: js.Any = js.native
+    /* private */ var handleRowsReordering: js.Any = js.native
     
-    var handleScrollOffsetChange: js.Any = js.native
+    /* private */ var handleScrollOffsetChange: js.Any = js.native
     
-    var handleWheel: js.Any = js.native
+    /* private */ var handleWheel: js.Any = js.native
     
-    var invokeColumnResizeHandler: js.Any = js.native
+    /* private */ var invokeColumnResizeHandler: js.Any = js.native
     
-    var invokeRowResizeHandler: js.Any = js.native
+    /* private */ var invokeRowResizeHandler: js.Any = js.native
     
-    var maybeIncreaseToDefaultColumnHeaderHeight: js.Any = js.native
+    /* private */ var maybeIncreaseToDefaultColumnHeaderHeight: js.Any = js.native
     
-    var maybeSetQuadrantMenuElementSize: js.Any = js.native
+    /* private */ var maybeSetQuadrantMenuElementSize: js.Any = js.native
     
-    var maybeSetQuadrantMenuElementSizes: js.Any = js.native
+    /* private */ var maybeSetQuadrantMenuElementSizes: js.Any = js.native
     
-    var maybeSetQuadrantPositionOffset: js.Any = js.native
+    /* private */ var maybeSetQuadrantPositionOffset: js.Any = js.native
     
-    var maybeSetQuadrantRowHeaderSize: js.Any = js.native
+    /* private */ var maybeSetQuadrantRowHeaderSize: js.Any = js.native
     
-    var maybeSetQuadrantScrollOffset: js.Any = js.native
+    /* private */ var maybeSetQuadrantScrollOffset: js.Any = js.native
     
-    var maybeSetQuadrantSizes: js.Any = js.native
+    /* private */ var maybeSetQuadrantSizes: js.Any = js.native
     
-    var maybesSetQuadrantRowHeaderSizes: js.Any = js.native
+    /* private */ var maybesSetQuadrantRowHeaderSizes: js.Any = js.native
     
-    var maybesSetQuadrantSize: js.Any = js.native
+    /* private */ var maybesSetQuadrantSize: js.Any = js.native
     
     /**
       * Measures the desired height of the column header based on its tallest
       * contents.
       */
-    var measureDesiredColumnHeaderHeight: js.Any = js.native
+    /* private */ var measureDesiredColumnHeaderHeight: js.Any = js.native
     
     /**
       * Measures the desired width of the row header based on its tallest
       * contents.
       */
-    var measureDesiredRowHeaderWidth: js.Any = js.native
+    /* private */ var measureDesiredRowHeaderWidth: js.Any = js.native
     
-    var quadrantRefHandlers: js.Any = js.native
+    /* private */ var quadrantRefHandlers: js.Any = js.native
     
-    var quadrantRefs: js.Any = js.native
+    /* private */ var quadrantRefs: js.Any = js.native
     
-    var renderLeftQuadrantColumnHeader: js.Any = js.native
+    /* private */ var renderLeftQuadrantColumnHeader: js.Any = js.native
     
-    var renderLeftQuadrantMenu: js.Any = js.native
+    /* private */ var renderLeftQuadrantMenu: js.Any = js.native
     
-    var renderLeftQuadrantRowHeader: js.Any = js.native
+    /* private */ var renderLeftQuadrantRowHeader: js.Any = js.native
     
-    var renderMainQuadrantColumnHeader: js.Any = js.native
+    /* private */ var renderMainQuadrantColumnHeader: js.Any = js.native
     
-    var renderMainQuadrantMenu: js.Any = js.native
+    /* private */ var renderMainQuadrantMenu: js.Any = js.native
     
-    var renderMainQuadrantRowHeader: js.Any = js.native
+    /* private */ var renderMainQuadrantRowHeader: js.Any = js.native
     
-    var renderTopLeftQuadrantColumnHeader: js.Any = js.native
+    /* private */ var renderTopLeftQuadrantColumnHeader: js.Any = js.native
     
-    var renderTopLeftQuadrantMenu: js.Any = js.native
+    /* private */ var renderTopLeftQuadrantMenu: js.Any = js.native
     
-    var renderTopLeftQuadrantRowHeader: js.Any = js.native
+    /* private */ var renderTopLeftQuadrantRowHeader: js.Any = js.native
     
-    var renderTopQuadrantColumnHeader: js.Any = js.native
+    /* private */ var renderTopQuadrantColumnHeader: js.Any = js.native
     
-    var renderTopQuadrantMenu: js.Any = js.native
+    /* private */ var renderTopQuadrantMenu: js.Any = js.native
     
-    var renderTopQuadrantRowHeader: js.Any = js.native
+    /* private */ var renderTopQuadrantRowHeader: js.Any = js.native
     
     /**
       * Scroll the main quadrant to the specified scroll offset, keeping all other quadrants in sync.
       */
     def scrollToPosition(scrollLeft: Double, scrollTop: Double): Unit = js.native
     
-    var shouldRenderLeftQuadrants: js.Any = js.native
+    /* private */ var shouldRenderLeftQuadrants: js.Any = js.native
     
-    var syncQuadrantViews: js.Any = js.native
+    /* private */ var syncQuadrantViews: js.Any = js.native
     
-    var syncQuadrantViewsDebounced: js.Any = js.native
+    /* private */ var syncQuadrantViewsDebounced: js.Any = js.native
     
     /**
       * Synchronizes quadrant sizes and scroll offsets based on the current
@@ -160,13 +160,13 @@ object tableQuadrantStackMod {
       */
     def synchronizeQuadrantViews(): Unit = js.native
     
-    var throttledHandleMainQuadrantScroll: js.Any = js.native
+    /* private */ var throttledHandleMainQuadrantScroll: js.Any = js.native
     
-    var throttledHandleWheel: js.Any = js.native
+    /* private */ var throttledHandleWheel: js.Any = js.native
     
-    var updateScrollContainerClientSize: js.Any = js.native
+    /* private */ var updateScrollContainerClientSize: js.Any = js.native
     
-    var wasMainQuadrantScrollTriggeredByWheelEvent: js.Any = js.native
+    /* private */ var wasMainQuadrantScrollTriggeredByWheelEvent: js.Any = js.native
   }
   /* static members */
   object TableQuadrantStack {
@@ -178,8 +178,7 @@ object tableQuadrantStackMod {
     @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrantStack", "TableQuadrantStack.defaultProps")
     @js.native
     def defaultProps: PartialITableQuadrantStac = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialITableQuadrantStac): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialITableQuadrantStac): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

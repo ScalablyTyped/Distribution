@@ -18,8 +18,7 @@ trait ChoreographyActivity
 }
 object ChoreographyActivity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -38,25 +37,18 @@ object ChoreographyActivity {
     __obj.asInstanceOf[ChoreographyActivity]
   }
   
-  @scala.inline
-  implicit class ChoreographyActivityMutableBuilder[Self <: ChoreographyActivity] (val x: Self) extends AnyVal {
+  extension [Self <: ChoreographyActivity](x: Self) {
     
-    @scala.inline
-    def setCorrelationKeys(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationKeys", value.asInstanceOf[js.Any])
+    inline def setCorrelationKeys(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value :_*))
+    inline def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setInitiatingParticipantRef(value: Participant): Self = StObject.set(x, "initiatingParticipantRef", value.asInstanceOf[js.Any])
+    inline def setInitiatingParticipantRef(value: Participant): Self = StObject.set(x, "initiatingParticipantRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopType(value: ChoreographyLoopType): Self = StObject.set(x, "loopType", value.asInstanceOf[js.Any])
+    inline def setLoopType(value: ChoreographyLoopType): Self = StObject.set(x, "loopType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantRef(value: js.Array[Participant]): Self = StObject.set(x, "participantRef", value.asInstanceOf[js.Any])
+    inline def setParticipantRef(value: js.Array[Participant]): Self = StObject.set(x, "participantRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantRefVarargs(value: Participant*): Self = StObject.set(x, "participantRef", js.Array(value :_*))
+    inline def setParticipantRefVarargs(value: Participant*): Self = StObject.set(x, "participantRef", js.Array(value :_*))
   }
 }

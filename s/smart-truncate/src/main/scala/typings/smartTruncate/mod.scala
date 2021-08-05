@@ -11,8 +11,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def smartTruncate(text: String, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("smartTruncate")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def smartTruncate(text: String, length: Double, options: Mark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("smartTruncate")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def smartTruncate(text: String, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("smartTruncate")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def smartTruncate(text: String, length: Double, options: Mark): String = (^.asInstanceOf[js.Dynamic].applyDynamic("smartTruncate")(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

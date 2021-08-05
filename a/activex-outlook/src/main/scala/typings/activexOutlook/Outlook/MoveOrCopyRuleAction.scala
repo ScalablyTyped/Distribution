@@ -16,7 +16,7 @@ trait MoveOrCopyRuleAction extends StObject {
   
   var Folder: typings.activexOutlook.Outlook.Folder
   
-  @JSName("Outlook.MoveOrCopyRuleAction_typekey")
+  /* private */ @JSName("Outlook.MoveOrCopyRuleAction_typekey")
   var OutlookDotMoveOrCopyRuleAction_typekey: MoveOrCopyRuleAction
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait MoveOrCopyRuleAction extends StObject {
 }
 object MoveOrCopyRuleAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionType: OlRuleActionType,
     Application: Application,
     Class: OlObjectClass,
@@ -41,31 +40,22 @@ object MoveOrCopyRuleAction {
     __obj.asInstanceOf[MoveOrCopyRuleAction]
   }
   
-  @scala.inline
-  implicit class MoveOrCopyRuleActionMutableBuilder[Self <: MoveOrCopyRuleAction] (val x: Self) extends AnyVal {
+  extension [Self <: MoveOrCopyRuleAction](x: Self) {
     
-    @scala.inline
-    def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolder(value: Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotMoveOrCopyRuleAction_typekey(value: MoveOrCopyRuleAction): Self = StObject.set(x, "Outlook.MoveOrCopyRuleAction_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotMoveOrCopyRuleAction_typekey(value: MoveOrCopyRuleAction): Self = StObject.set(x, "Outlook.MoveOrCopyRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

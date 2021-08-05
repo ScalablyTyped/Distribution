@@ -31,37 +31,27 @@ trait SchemaAndroidTest extends StObject {
 }
 object SchemaAndroidTest {
   
-  @scala.inline
-  def apply(): SchemaAndroidTest = {
+  inline def apply(): SchemaAndroidTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAndroidTest]
   }
   
-  @scala.inline
-  implicit class SchemaAndroidTestMutableBuilder[Self <: SchemaAndroidTest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAndroidTest](x: Self) {
     
-    @scala.inline
-    def setAndroidAppInfo(value: SchemaAndroidAppInfo): Self = StObject.set(x, "androidAppInfo", value.asInstanceOf[js.Any])
+    inline def setAndroidAppInfo(value: SchemaAndroidAppInfo): Self = StObject.set(x, "androidAppInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidAppInfoUndefined: Self = StObject.set(x, "androidAppInfo", js.undefined)
+    inline def setAndroidAppInfoUndefined: Self = StObject.set(x, "androidAppInfo", js.undefined)
     
-    @scala.inline
-    def setAndroidInstrumentationTest(value: SchemaAndroidInstrumentationTest): Self = StObject.set(x, "androidInstrumentationTest", value.asInstanceOf[js.Any])
+    inline def setAndroidInstrumentationTest(value: SchemaAndroidInstrumentationTest): Self = StObject.set(x, "androidInstrumentationTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidInstrumentationTestUndefined: Self = StObject.set(x, "androidInstrumentationTest", js.undefined)
+    inline def setAndroidInstrumentationTestUndefined: Self = StObject.set(x, "androidInstrumentationTest", js.undefined)
     
-    @scala.inline
-    def setAndroidRoboTest(value: SchemaAndroidRoboTest): Self = StObject.set(x, "androidRoboTest", value.asInstanceOf[js.Any])
+    inline def setAndroidRoboTest(value: SchemaAndroidRoboTest): Self = StObject.set(x, "androidRoboTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidRoboTestUndefined: Self = StObject.set(x, "androidRoboTest", js.undefined)
+    inline def setAndroidRoboTestUndefined: Self = StObject.set(x, "androidRoboTest", js.undefined)
     
-    @scala.inline
-    def setTestTimeout(value: SchemaDuration): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
+    inline def setTestTimeout(value: SchemaDuration): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTimeoutUndefined: Self = StObject.set(x, "testTimeout", js.undefined)
+    inline def setTestTimeoutUndefined: Self = StObject.set(x, "testTimeout", js.undefined)
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCalculatedMemberType extends StObject
 object XlCalculatedMemberType {
   
-  @scala.inline
-  def xlCalculatedMember: `0` = 0.asInstanceOf[`0`]
+  inline def xlCalculatedMember: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlCalculatedSet: `1` = 1.asInstanceOf[`1`]
+  inline def xlCalculatedSet: `1` = 1.asInstanceOf[`1`]
 }

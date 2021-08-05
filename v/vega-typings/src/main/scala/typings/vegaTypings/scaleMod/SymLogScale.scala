@@ -18,23 +18,18 @@ trait SymLogScale
 }
 object SymLogScale {
   
-  @scala.inline
-  def apply(name: String): SymLogScale = {
+  inline def apply(name: String): SymLogScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("symlog")
     __obj.asInstanceOf[SymLogScale]
   }
   
-  @scala.inline
-  implicit class SymLogScaleMutableBuilder[Self <: SymLogScale] (val x: Self) extends AnyVal {
+  extension [Self <: SymLogScale](x: Self) {
     
-    @scala.inline
-    def setConstant(value: Double | SignalRef): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
+    inline def setConstant(value: Double | SignalRef): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
+    inline def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
     
-    @scala.inline
-    def setType(value: symlog): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: symlog): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MixedContentType extends StObject
 object MixedContentType {
   
-  @scala.inline
-  def blockable: typings.devtoolsProtocol.devtoolsProtocolStrings.blockable = "blockable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.blockable]
+  inline def blockable: typings.devtoolsProtocol.devtoolsProtocolStrings.blockable = "blockable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.blockable]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def `optionally-blockable`: typings.devtoolsProtocol.devtoolsProtocolStrings.`optionally-blockable` = "optionally-blockable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`optionally-blockable`]
+  inline def `optionally-blockable`: typings.devtoolsProtocol.devtoolsProtocolStrings.`optionally-blockable` = "optionally-blockable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`optionally-blockable`]
 }

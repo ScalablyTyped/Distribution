@@ -77,88 +77,62 @@ object typesTraceSummaryMod {
   }
   object TraceSummary {
     
-    @scala.inline
-    def apply(): TraceSummary = {
+    inline def apply(): TraceSummary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TraceSummary]
     }
     
-    @scala.inline
-    implicit class TraceSummaryMutableBuilder[Self <: TraceSummary] (val x: Self) extends AnyVal {
+    extension [Self <: TraceSummary](x: Self) {
       
-      @scala.inline
-      def setAnnotations(
+      inline def setAnnotations(
         value: (StringDictionary[js.Array[ValueWithServiceIds] | Iterable[ValueWithServiceIds]]) | (Iterable[js.Tuple2[String, js.Array[ValueWithServiceIds] | Iterable[ValueWithServiceIds]]])
       ): Self = StObject.set(x, "Annotations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationsUndefined: Self = StObject.set(x, "Annotations", js.undefined)
+      inline def setAnnotationsUndefined: Self = StObject.set(x, "Annotations", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
       
-      @scala.inline
-      def setHasError(value: Boolean): Self = StObject.set(x, "HasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: Boolean): Self = StObject.set(x, "HasError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasErrorUndefined: Self = StObject.set(x, "HasError", js.undefined)
+      inline def setHasErrorUndefined: Self = StObject.set(x, "HasError", js.undefined)
       
-      @scala.inline
-      def setHasFault(value: Boolean): Self = StObject.set(x, "HasFault", value.asInstanceOf[js.Any])
+      inline def setHasFault(value: Boolean): Self = StObject.set(x, "HasFault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasFaultUndefined: Self = StObject.set(x, "HasFault", js.undefined)
+      inline def setHasFaultUndefined: Self = StObject.set(x, "HasFault", js.undefined)
       
-      @scala.inline
-      def setHasThrottle(value: Boolean): Self = StObject.set(x, "HasThrottle", value.asInstanceOf[js.Any])
+      inline def setHasThrottle(value: Boolean): Self = StObject.set(x, "HasThrottle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasThrottleUndefined: Self = StObject.set(x, "HasThrottle", js.undefined)
+      inline def setHasThrottleUndefined: Self = StObject.set(x, "HasThrottle", js.undefined)
       
-      @scala.inline
-      def setHttp(value: Http): Self = StObject.set(x, "Http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: Http): Self = StObject.set(x, "Http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "Http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "Http", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
       
-      @scala.inline
-      def setIsPartial(value: Boolean): Self = StObject.set(x, "IsPartial", value.asInstanceOf[js.Any])
+      inline def setIsPartial(value: Boolean): Self = StObject.set(x, "IsPartial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPartialUndefined: Self = StObject.set(x, "IsPartial", js.undefined)
+      inline def setIsPartialUndefined: Self = StObject.set(x, "IsPartial", js.undefined)
       
-      @scala.inline
-      def setResponseTime(value: Double): Self = StObject.set(x, "ResponseTime", value.asInstanceOf[js.Any])
+      inline def setResponseTime(value: Double): Self = StObject.set(x, "ResponseTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTimeUndefined: Self = StObject.set(x, "ResponseTime", js.undefined)
+      inline def setResponseTimeUndefined: Self = StObject.set(x, "ResponseTime", js.undefined)
       
-      @scala.inline
-      def setServiceIds(value: js.Array[ServiceId] | Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
+      inline def setServiceIds(value: js.Array[ServiceId] | Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
+      inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      @scala.inline
-      def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
       
-      @scala.inline
-      def setUsers(value: js.Array[TraceUser] | Iterable[TraceUser]): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[TraceUser] | Iterable[TraceUser]): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
+      inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
       
-      @scala.inline
-      def setUsersVarargs(value: TraceUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
+      inline def setUsersVarargs(value: TraceUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
     }
   }
   
@@ -192,44 +166,32 @@ object typesTraceSummaryMod {
   }
   object UnmarshalledTraceSummary {
     
-    @scala.inline
-    def apply(): UnmarshalledTraceSummary = {
+    inline def apply(): UnmarshalledTraceSummary = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledTraceSummary]
     }
     
-    @scala.inline
-    implicit class UnmarshalledTraceSummaryMutableBuilder[Self <: UnmarshalledTraceSummary] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledTraceSummary](x: Self) {
       
-      @scala.inline
-      def setAnnotations(value: StringDictionary[js.Array[UnmarshalledValueWithServiceIds]]): Self = StObject.set(x, "Annotations", value.asInstanceOf[js.Any])
+      inline def setAnnotations(value: StringDictionary[js.Array[UnmarshalledValueWithServiceIds]]): Self = StObject.set(x, "Annotations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationsUndefined: Self = StObject.set(x, "Annotations", js.undefined)
+      inline def setAnnotationsUndefined: Self = StObject.set(x, "Annotations", js.undefined)
       
-      @scala.inline
-      def setHttp(value: UnmarshalledHttp): Self = StObject.set(x, "Http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: UnmarshalledHttp): Self = StObject.set(x, "Http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "Http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "Http", js.undefined)
       
-      @scala.inline
-      def setServiceIds(value: js.Array[UnmarshalledServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
+      inline def setServiceIds(value: js.Array[UnmarshalledServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
+      inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      @scala.inline
-      def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
       
-      @scala.inline
-      def setUsers(value: js.Array[UnmarshalledTraceUser]): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[UnmarshalledTraceUser]): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
+      inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
       
-      @scala.inline
-      def setUsersVarargs(value: UnmarshalledTraceUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
+      inline def setUsersVarargs(value: UnmarshalledTraceUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
     }
   }
 }

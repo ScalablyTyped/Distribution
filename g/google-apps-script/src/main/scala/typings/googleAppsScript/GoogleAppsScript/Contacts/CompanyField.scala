@@ -25,8 +25,7 @@ trait CompanyField extends StObject {
 }
 object CompanyField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteCompanyField: () => Unit,
     getCompanyName: () => String,
     getJobTitle: () => String,
@@ -39,28 +38,20 @@ object CompanyField {
     __obj.asInstanceOf[CompanyField]
   }
   
-  @scala.inline
-  implicit class CompanyFieldMutableBuilder[Self <: CompanyField] (val x: Self) extends AnyVal {
+  extension [Self <: CompanyField](x: Self) {
     
-    @scala.inline
-    def setDeleteCompanyField(value: () => Unit): Self = StObject.set(x, "deleteCompanyField", js.Any.fromFunction0(value))
+    inline def setDeleteCompanyField(value: () => Unit): Self = StObject.set(x, "deleteCompanyField", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCompanyName(value: () => String): Self = StObject.set(x, "getCompanyName", js.Any.fromFunction0(value))
+    inline def setGetCompanyName(value: () => String): Self = StObject.set(x, "getCompanyName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetJobTitle(value: () => String): Self = StObject.set(x, "getJobTitle", js.Any.fromFunction0(value))
+    inline def setGetJobTitle(value: () => String): Self = StObject.set(x, "getJobTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPrimary(value: () => Boolean): Self = StObject.set(x, "isPrimary", js.Any.fromFunction0(value))
+    inline def setIsPrimary(value: () => Boolean): Self = StObject.set(x, "isPrimary", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAsPrimary(value: () => CompanyField): Self = StObject.set(x, "setAsPrimary", js.Any.fromFunction0(value))
+    inline def setSetAsPrimary(value: () => CompanyField): Self = StObject.set(x, "setAsPrimary", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCompanyName(value: String => CompanyField): Self = StObject.set(x, "setCompanyName", js.Any.fromFunction1(value))
+    inline def setSetCompanyName(value: String => CompanyField): Self = StObject.set(x, "setCompanyName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetJobTitle(value: String => CompanyField): Self = StObject.set(x, "setJobTitle", js.Any.fromFunction1(value))
+    inline def setSetJobTitle(value: String => CompanyField): Self = StObject.set(x, "setJobTitle", js.Any.fromFunction1(value))
   }
 }

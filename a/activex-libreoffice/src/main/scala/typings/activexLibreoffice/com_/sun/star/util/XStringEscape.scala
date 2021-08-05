@@ -33,8 +33,7 @@ trait XStringEscape
 }
 object XStringEscape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     escapeString: String => String,
     queryInterface: `type` => js.Any,
@@ -45,13 +44,10 @@ object XStringEscape {
     __obj.asInstanceOf[XStringEscape]
   }
   
-  @scala.inline
-  implicit class XStringEscapeMutableBuilder[Self <: XStringEscape] (val x: Self) extends AnyVal {
+  extension [Self <: XStringEscape](x: Self) {
     
-    @scala.inline
-    def setEscapeString(value: String => String): Self = StObject.set(x, "escapeString", js.Any.fromFunction1(value))
+    inline def setEscapeString(value: String => String): Self = StObject.set(x, "escapeString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnescapeString(value: String => String): Self = StObject.set(x, "unescapeString", js.Any.fromFunction1(value))
+    inline def setUnescapeString(value: String => String): Self = StObject.set(x, "unescapeString", js.Any.fromFunction1(value))
   }
 }

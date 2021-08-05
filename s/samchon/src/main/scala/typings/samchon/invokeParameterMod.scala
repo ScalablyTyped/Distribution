@@ -52,7 +52,7 @@ object invokeParameterMod {
       *
       * @details Optional property, can be omitted.
       */
-    var name: String = js.native
+    /* protected */ var name: String = js.native
     
     def setValue(value: String): Unit = js.native
     def setValue(value: Boolean): Unit = js.native
@@ -63,11 +63,11 @@ object invokeParameterMod {
     /**
       * Type of the parameter.
       */
-    var `type`: String = js.native
+    /* protected */ var `type`: String = js.native
     
     /**
       * Value of the parameter.
       */
-    var value: Boolean | Double | String | XML | Uint8Array = js.native
+    /* protected */ var value: Boolean | Double | String | XML | Uint8Array = js.native
   }
 }

@@ -16,8 +16,7 @@ trait IVaultDataSetOperations extends StObject {
 }
 object IVaultDataSetOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetDataSetExportingStatus: Double => IDataSetExportingStatus,
     GetDataSets: () => IDataSets,
     GetReportAccessCredentials: () => IReportAccessCredentials,
@@ -27,19 +26,14 @@ object IVaultDataSetOperations {
     __obj.asInstanceOf[IVaultDataSetOperations]
   }
   
-  @scala.inline
-  implicit class IVaultDataSetOperationsMutableBuilder[Self <: IVaultDataSetOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultDataSetOperations](x: Self) {
     
-    @scala.inline
-    def setGetDataSetExportingStatus(value: Double => IDataSetExportingStatus): Self = StObject.set(x, "GetDataSetExportingStatus", js.Any.fromFunction1(value))
+    inline def setGetDataSetExportingStatus(value: Double => IDataSetExportingStatus): Self = StObject.set(x, "GetDataSetExportingStatus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDataSets(value: () => IDataSets): Self = StObject.set(x, "GetDataSets", js.Any.fromFunction0(value))
+    inline def setGetDataSets(value: () => IDataSets): Self = StObject.set(x, "GetDataSets", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReportAccessCredentials(value: () => IReportAccessCredentials): Self = StObject.set(x, "GetReportAccessCredentials", js.Any.fromFunction0(value))
+    inline def setGetReportAccessCredentials(value: () => IReportAccessCredentials): Self = StObject.set(x, "GetReportAccessCredentials", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartDataSetExport(value: Double => Unit): Self = StObject.set(x, "StartDataSetExport", js.Any.fromFunction1(value))
+    inline def setStartDataSetExport(value: Double => Unit): Self = StObject.set(x, "StartDataSetExport", js.Any.fromFunction1(value))
   }
 }

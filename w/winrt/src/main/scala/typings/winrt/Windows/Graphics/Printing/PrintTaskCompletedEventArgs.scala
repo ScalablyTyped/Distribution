@@ -9,8 +9,7 @@ trait PrintTaskCompletedEventArgs
      with IPrintTaskCompletedEventArgs
 object PrintTaskCompletedEventArgs {
   
-  @scala.inline
-  def apply(completion: PrintTaskCompletion): PrintTaskCompletedEventArgs = {
+  inline def apply(completion: PrintTaskCompletion): PrintTaskCompletedEventArgs = {
     val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTaskCompletedEventArgs]
   }

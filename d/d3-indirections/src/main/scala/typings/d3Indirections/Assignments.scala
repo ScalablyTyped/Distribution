@@ -13,19 +13,15 @@ trait Assignments extends StObject {
 }
 object Assignments {
   
-  @scala.inline
-  def apply(assignments: Assignment | js.Array[Assignment]): Assignments = {
+  inline def apply(assignments: Assignment | js.Array[Assignment]): Assignments = {
     val __obj = js.Dynamic.literal(assignments = assignments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Assignments]
   }
   
-  @scala.inline
-  implicit class AssignmentsMutableBuilder[Self <: Assignments] (val x: Self) extends AnyVal {
+  extension [Self <: Assignments](x: Self) {
     
-    @scala.inline
-    def setAssignments(value: Assignment | js.Array[Assignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    inline def setAssignments(value: Assignment | js.Array[Assignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentsVarargs(value: Assignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: Assignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
   }
 }

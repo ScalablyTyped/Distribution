@@ -12,25 +12,19 @@ trait ToSQLOptions extends StObject {
 }
 object ToSQLOptions {
   
-  @scala.inline
-  def apply(): ToSQLOptions = {
+  inline def apply(): ToSQLOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToSQLOptions]
   }
   
-  @scala.inline
-  implicit class ToSQLOptionsMutableBuilder[Self <: ToSQLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ToSQLOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeOffset(value: Boolean): Self = StObject.set(x, "includeOffset", value.asInstanceOf[js.Any])
+    inline def setIncludeOffset(value: Boolean): Self = StObject.set(x, "includeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeOffsetUndefined: Self = StObject.set(x, "includeOffset", js.undefined)
+    inline def setIncludeOffsetUndefined: Self = StObject.set(x, "includeOffset", js.undefined)
     
-    @scala.inline
-    def setIncludeZone(value: Boolean): Self = StObject.set(x, "includeZone", value.asInstanceOf[js.Any])
+    inline def setIncludeZone(value: Boolean): Self = StObject.set(x, "includeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeZoneUndefined: Self = StObject.set(x, "includeZone", js.undefined)
+    inline def setIncludeZoneUndefined: Self = StObject.set(x, "includeZone", js.undefined)
   }
 }

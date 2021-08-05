@@ -18,22 +18,17 @@ trait MetricToRetain extends StObject {
 }
 object MetricToRetain {
   
-  @scala.inline
-  def apply(metric: BehaviorMetric): MetricToRetain = {
+  inline def apply(metric: BehaviorMetric): MetricToRetain = {
     val __obj = js.Dynamic.literal(metric = metric.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricToRetain]
   }
   
-  @scala.inline
-  implicit class MetricToRetainMutableBuilder[Self <: MetricToRetain] (val x: Self) extends AnyVal {
+  extension [Self <: MetricToRetain](x: Self) {
     
-    @scala.inline
-    def setMetric(value: BehaviorMetric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: BehaviorMetric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDimension(value: MetricDimension): Self = StObject.set(x, "metricDimension", value.asInstanceOf[js.Any])
+    inline def setMetricDimension(value: MetricDimension): Self = StObject.set(x, "metricDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDimensionUndefined: Self = StObject.set(x, "metricDimension", js.undefined)
+    inline def setMetricDimensionUndefined: Self = StObject.set(x, "metricDimension", js.undefined)
   }
 }

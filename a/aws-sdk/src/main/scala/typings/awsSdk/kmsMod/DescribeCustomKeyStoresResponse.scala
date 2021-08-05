@@ -23,34 +23,25 @@ trait DescribeCustomKeyStoresResponse extends StObject {
 }
 object DescribeCustomKeyStoresResponse {
   
-  @scala.inline
-  def apply(): DescribeCustomKeyStoresResponse = {
+  inline def apply(): DescribeCustomKeyStoresResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCustomKeyStoresResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCustomKeyStoresResponseMutableBuilder[Self <: DescribeCustomKeyStoresResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCustomKeyStoresResponse](x: Self) {
     
-    @scala.inline
-    def setCustomKeyStores(value: CustomKeyStoresList): Self = StObject.set(x, "CustomKeyStores", value.asInstanceOf[js.Any])
+    inline def setCustomKeyStores(value: CustomKeyStoresList): Self = StObject.set(x, "CustomKeyStores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomKeyStoresUndefined: Self = StObject.set(x, "CustomKeyStores", js.undefined)
+    inline def setCustomKeyStoresUndefined: Self = StObject.set(x, "CustomKeyStores", js.undefined)
     
-    @scala.inline
-    def setCustomKeyStoresVarargs(value: CustomKeyStoresListEntry*): Self = StObject.set(x, "CustomKeyStores", js.Array(value :_*))
+    inline def setCustomKeyStoresVarargs(value: CustomKeyStoresListEntry*): Self = StObject.set(x, "CustomKeyStores", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: BooleanType): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
+    inline def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
   }
 }

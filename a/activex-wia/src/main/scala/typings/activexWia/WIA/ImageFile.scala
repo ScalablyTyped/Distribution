@@ -74,7 +74,7 @@ trait ImageFile extends StObject {
   /** Returns the Vertical pixels per inch of the image */
   val VerticalResolution: Double
   
-  @JSName("WIA.ImageFile_typekey")
+  /* private */ @JSName("WIA.ImageFile_typekey")
   var WIADotImageFile_typekey: ImageFile
   
   /** Returns the Width of the image in pixels */
@@ -82,8 +82,7 @@ trait ImageFile extends StObject {
 }
 object ImageFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ARGBData: Vector[js.Any],
     ActiveFrame: Double,
     FileData: Vector[js.Any],
@@ -109,64 +108,44 @@ object ImageFile {
     __obj.asInstanceOf[ImageFile]
   }
   
-  @scala.inline
-  implicit class ImageFileMutableBuilder[Self <: ImageFile] (val x: Self) extends AnyVal {
+  extension [Self <: ImageFile](x: Self) {
     
-    @scala.inline
-    def setARGBData(value: Vector[js.Any]): Self = StObject.set(x, "ARGBData", value.asInstanceOf[js.Any])
+    inline def setARGBData(value: Vector[js.Any]): Self = StObject.set(x, "ARGBData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveFrame(value: Double): Self = StObject.set(x, "ActiveFrame", value.asInstanceOf[js.Any])
+    inline def setActiveFrame(value: Double): Self = StObject.set(x, "ActiveFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileData(value: Vector[js.Any]): Self = StObject.set(x, "FileData", value.asInstanceOf[js.Any])
+    inline def setFileData(value: Vector[js.Any]): Self = StObject.set(x, "FileData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileExtension(value: String): Self = StObject.set(x, "FileExtension", value.asInstanceOf[js.Any])
+    inline def setFileExtension(value: String): Self = StObject.set(x, "FileExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatID(value: String): Self = StObject.set(x, "FormatID", value.asInstanceOf[js.Any])
+    inline def setFormatID(value: String): Self = StObject.set(x, "FormatID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameCount(value: Double): Self = StObject.set(x, "FrameCount", value.asInstanceOf[js.Any])
+    inline def setFrameCount(value: Double): Self = StObject.set(x, "FrameCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalResolution(value: Double): Self = StObject.set(x, "HorizontalResolution", value.asInstanceOf[js.Any])
+    inline def setHorizontalResolution(value: Double): Self = StObject.set(x, "HorizontalResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAlphaPixelFormat(value: Boolean): Self = StObject.set(x, "IsAlphaPixelFormat", value.asInstanceOf[js.Any])
+    inline def setIsAlphaPixelFormat(value: Boolean): Self = StObject.set(x, "IsAlphaPixelFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAnimated(value: Boolean): Self = StObject.set(x, "IsAnimated", value.asInstanceOf[js.Any])
+    inline def setIsAnimated(value: Boolean): Self = StObject.set(x, "IsAnimated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExtendedPixelFormat(value: Boolean): Self = StObject.set(x, "IsExtendedPixelFormat", value.asInstanceOf[js.Any])
+    inline def setIsExtendedPixelFormat(value: Boolean): Self = StObject.set(x, "IsExtendedPixelFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIndexedPixelFormat(value: Boolean): Self = StObject.set(x, "IsIndexedPixelFormat", value.asInstanceOf[js.Any])
+    inline def setIsIndexedPixelFormat(value: Boolean): Self = StObject.set(x, "IsIndexedPixelFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadFile(value: String => Unit): Self = StObject.set(x, "LoadFile", js.Any.fromFunction1(value))
+    inline def setLoadFile(value: String => Unit): Self = StObject.set(x, "LoadFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPixelDepth(value: Double): Self = StObject.set(x, "PixelDepth", value.asInstanceOf[js.Any])
+    inline def setPixelDepth(value: Double): Self = StObject.set(x, "PixelDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveFile(value: String => Unit): Self = StObject.set(x, "SaveFile", js.Any.fromFunction1(value))
+    inline def setSaveFile(value: String => Unit): Self = StObject.set(x, "SaveFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerticalResolution(value: Double): Self = StObject.set(x, "VerticalResolution", value.asInstanceOf[js.Any])
+    inline def setVerticalResolution(value: Double): Self = StObject.set(x, "VerticalResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotImageFile_typekey(value: ImageFile): Self = StObject.set(x, "WIA.ImageFile_typekey", value.asInstanceOf[js.Any])
+    inline def setWIADotImageFile_typekey(value: ImageFile): Self = StObject.set(x, "WIA.ImageFile_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait VoidExpression
 }
 object VoidExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object VoidExpression {
     __obj.asInstanceOf[VoidExpression]
   }
   
-  @scala.inline
-  implicit class VoidExpressionMutableBuilder[Self <: VoidExpression] (val x: Self) extends AnyVal {
+  extension [Self <: VoidExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (VoidExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (VoidExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

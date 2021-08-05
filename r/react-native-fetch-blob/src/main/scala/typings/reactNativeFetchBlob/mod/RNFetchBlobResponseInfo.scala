@@ -28,8 +28,7 @@ trait RNFetchBlobResponseInfo extends StObject {
 }
 object RNFetchBlobResponseInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headers: js.Any,
     respType: text | blob | _empty | json,
     rnfbEncode: path | base64 | ascii | utf8,
@@ -41,25 +40,18 @@ object RNFetchBlobResponseInfo {
     __obj.asInstanceOf[RNFetchBlobResponseInfo]
   }
   
-  @scala.inline
-  implicit class RNFetchBlobResponseInfoMutableBuilder[Self <: RNFetchBlobResponseInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RNFetchBlobResponseInfo](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRespType(value: text | blob | _empty | json): Self = StObject.set(x, "respType", value.asInstanceOf[js.Any])
+    inline def setRespType(value: text | blob | _empty | json): Self = StObject.set(x, "respType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRnfbEncode(value: path | base64 | ascii | utf8): Self = StObject.set(x, "rnfbEncode", value.asInstanceOf[js.Any])
+    inline def setRnfbEncode(value: path | base64 | ascii | utf8): Self = StObject.set(x, "rnfbEncode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }
 }

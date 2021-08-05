@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlMailSystem extends StObject
 object XlMailSystem {
   
-  @scala.inline
-  def xlMAPI: `1` = 1.asInstanceOf[`1`]
+  inline def xlMAPI: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlNoMailSystem: `0` = 0.asInstanceOf[`0`]
+  inline def xlNoMailSystem: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlPowerTalk: `2` = 2.asInstanceOf[`2`]
+  inline def xlPowerTalk: `2` = 2.asInstanceOf[`2`]
 }

@@ -10,19 +10,15 @@ trait Multiple extends StObject {
 }
 object Multiple {
   
-  @scala.inline
-  def apply(): Multiple = {
+  inline def apply(): Multiple = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Multiple]
   }
   
-  @scala.inline
-  implicit class MultipleMutableBuilder[Self <: Multiple] (val x: Self) extends AnyVal {
+  extension [Self <: Multiple](x: Self) {
     
-    @scala.inline
-    def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

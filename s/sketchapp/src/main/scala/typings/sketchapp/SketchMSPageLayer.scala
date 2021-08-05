@@ -23,8 +23,7 @@ trait SketchMSPageLayer
 }
 object SketchMSPageLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _class: page | symbolMaster,
     booleanOperation: SketchMSLayerBooleanOperation,
     clippingMaskMode: SketchMSLayerClippingMaskMode,
@@ -55,22 +54,16 @@ object SketchMSPageLayer {
     __obj.asInstanceOf[SketchMSPageLayer]
   }
   
-  @scala.inline
-  implicit class SketchMSPageLayerMutableBuilder[Self <: SketchMSPageLayer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSPageLayer](x: Self) {
     
-    @scala.inline
-    def setHasClickThrough(value: Boolean): Self = StObject.set(x, "hasClickThrough", value.asInstanceOf[js.Any])
+    inline def setHasClickThrough(value: Boolean): Self = StObject.set(x, "hasClickThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalRulerData(value: SketchMSRulerData): Self = StObject.set(x, "horizontalRulerData", value.asInstanceOf[js.Any])
+    inline def setHorizontalRulerData(value: SketchMSRulerData): Self = StObject.set(x, "horizontalRulerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeInCloudUpload(value: Boolean): Self = StObject.set(x, "includeInCloudUpload", value.asInstanceOf[js.Any])
+    inline def setIncludeInCloudUpload(value: Boolean): Self = StObject.set(x, "includeInCloudUpload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalRulerData(value: SketchMSRulerData): Self = StObject.set(x, "verticalRulerData", value.asInstanceOf[js.Any])
+    inline def setVerticalRulerData(value: SketchMSRulerData): Self = StObject.set(x, "verticalRulerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: page | symbolMaster): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: page | symbolMaster): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait FormErrorEventUIParam extends StObject {
 }
 object FormErrorEventUIParam {
   
-  @scala.inline
-  def apply(): FormErrorEventUIParam = {
+  inline def apply(): FormErrorEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormErrorEventUIParam]
   }
   
-  @scala.inline
-  implicit class FormErrorEventUIParamMutableBuilder[Self <: FormErrorEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FormErrorEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

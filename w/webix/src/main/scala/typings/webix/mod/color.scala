@@ -21,6 +21,5 @@ trait color extends StObject {
 }
 object color {
   
-  @scala.inline
-  def apply: typings.webix.webix.color = ^.asInstanceOf[js.Dynamic].selectDynamic("color").asInstanceOf[typings.webix.webix.color]
+  inline def apply: typings.webix.webix.color = ^.asInstanceOf[js.Dynamic].selectDynamic("color").asInstanceOf[typings.webix.webix.color]
 }

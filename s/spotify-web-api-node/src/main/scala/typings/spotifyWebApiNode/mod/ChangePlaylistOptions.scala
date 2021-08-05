@@ -12,19 +12,15 @@ trait ChangePlaylistOptions
 }
 object ChangePlaylistOptions {
   
-  @scala.inline
-  def apply(): ChangePlaylistOptions = {
+  inline def apply(): ChangePlaylistOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangePlaylistOptions]
   }
   
-  @scala.inline
-  implicit class ChangePlaylistOptionsMutableBuilder[Self <: ChangePlaylistOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChangePlaylistOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

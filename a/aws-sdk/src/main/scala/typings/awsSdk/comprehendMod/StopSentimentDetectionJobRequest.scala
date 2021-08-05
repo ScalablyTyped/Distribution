@@ -13,16 +13,13 @@ trait StopSentimentDetectionJobRequest extends StObject {
 }
 object StopSentimentDetectionJobRequest {
   
-  @scala.inline
-  def apply(JobId: JobId): StopSentimentDetectionJobRequest = {
+  inline def apply(JobId: JobId): StopSentimentDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopSentimentDetectionJobRequest]
   }
   
-  @scala.inline
-  implicit class StopSentimentDetectionJobRequestMutableBuilder[Self <: StopSentimentDetectionJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopSentimentDetectionJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

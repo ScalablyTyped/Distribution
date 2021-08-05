@@ -16,19 +16,15 @@ trait HtmlOperatorOptions extends StObject {
 }
 object HtmlOperatorOptions {
   
-  @scala.inline
-  def apply(): HtmlOperatorOptions = {
+  inline def apply(): HtmlOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlOperatorOptions]
   }
   
-  @scala.inline
-  implicit class HtmlOperatorOptionsMutableBuilder[Self <: HtmlOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

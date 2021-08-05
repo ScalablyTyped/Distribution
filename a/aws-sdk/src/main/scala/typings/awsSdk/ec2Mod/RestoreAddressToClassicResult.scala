@@ -18,25 +18,19 @@ trait RestoreAddressToClassicResult extends StObject {
 }
 object RestoreAddressToClassicResult {
   
-  @scala.inline
-  def apply(): RestoreAddressToClassicResult = {
+  inline def apply(): RestoreAddressToClassicResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreAddressToClassicResult]
   }
   
-  @scala.inline
-  implicit class RestoreAddressToClassicResultMutableBuilder[Self <: RestoreAddressToClassicResult] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreAddressToClassicResult](x: Self) {
     
-    @scala.inline
-    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
+    inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

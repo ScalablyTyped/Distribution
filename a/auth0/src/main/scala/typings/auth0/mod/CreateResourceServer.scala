@@ -16,16 +16,13 @@ trait CreateResourceServer
 }
 object CreateResourceServer {
   
-  @scala.inline
-  def apply(identifier: String): CreateResourceServer = {
+  inline def apply(identifier: String): CreateResourceServer = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResourceServer]
   }
   
-  @scala.inline
-  implicit class CreateResourceServerMutableBuilder[Self <: CreateResourceServer] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResourceServer](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }
 }

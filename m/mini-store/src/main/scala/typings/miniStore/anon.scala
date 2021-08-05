@@ -13,17 +13,14 @@ object anon {
   }
   object WrappedComponent {
     
-    @scala.inline
-    def apply[C /* <: ComponentType[js.Any] */](WrappedComponent: C): WrappedComponent[C] = {
+    inline def apply[C /* <: ComponentType[js.Any] */](WrappedComponent: C): WrappedComponent[C] = {
       val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrappedComponent[C]]
     }
     
-    @scala.inline
-    implicit class WrappedComponentMutableBuilder[Self <: WrappedComponent[?], C /* <: ComponentType[js.Any] */] (val x: Self & WrappedComponent[C]) extends AnyVal {
+    extension [Self <: WrappedComponent[?], C /* <: ComponentType[js.Any] */](x: Self & WrappedComponent[C]) {
       
-      @scala.inline
-      def setWrappedComponent(value: C): Self = StObject.set(x, "WrappedComponent", value.asInstanceOf[js.Any])
+      inline def setWrappedComponent(value: C): Self = StObject.set(x, "WrappedComponent", value.asInstanceOf[js.Any])
     }
   }
 }

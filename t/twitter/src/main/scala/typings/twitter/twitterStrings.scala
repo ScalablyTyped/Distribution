@@ -8,11 +8,9 @@ object twitterStrings {
   
   @js.native
   sealed trait site extends StObject
-  @scala.inline
-  def site: site = "site".asInstanceOf[site]
+  inline def site: site = "site".asInstanceOf[site]
   
   @js.native
   sealed trait user extends StObject
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  inline def user: user = "user".asInstanceOf[user]
 }

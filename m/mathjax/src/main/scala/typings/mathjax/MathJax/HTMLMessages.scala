@@ -23,40 +23,29 @@ trait HTMLMessages extends StObject {
 }
 object HTMLMessages {
   
-  @scala.inline
-  def apply(): HTMLMessages = {
+  inline def apply(): HTMLMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HTMLMessages]
   }
   
-  @scala.inline
-  implicit class HTMLMessagesMutableBuilder[Self <: HTMLMessages] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLMessages](x: Self) {
     
-    @scala.inline
-    def setImageFonts(value: js.Array[js.Any]): Self = StObject.set(x, "imageFonts", value.asInstanceOf[js.Any])
+    inline def setImageFonts(value: js.Array[js.Any]): Self = StObject.set(x, "imageFonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageFontsUndefined: Self = StObject.set(x, "imageFonts", js.undefined)
+    inline def setImageFontsUndefined: Self = StObject.set(x, "imageFonts", js.undefined)
     
-    @scala.inline
-    def setImageFontsVarargs(value: js.Any*): Self = StObject.set(x, "imageFonts", js.Array(value :_*))
+    inline def setImageFontsVarargs(value: js.Any*): Self = StObject.set(x, "imageFonts", js.Array(value :_*))
     
-    @scala.inline
-    def setNoFonts(value: js.Array[js.Any]): Self = StObject.set(x, "noFonts", value.asInstanceOf[js.Any])
+    inline def setNoFonts(value: js.Array[js.Any]): Self = StObject.set(x, "noFonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoFontsUndefined: Self = StObject.set(x, "noFonts", js.undefined)
+    inline def setNoFontsUndefined: Self = StObject.set(x, "noFonts", js.undefined)
     
-    @scala.inline
-    def setNoFontsVarargs(value: js.Any*): Self = StObject.set(x, "noFonts", js.Array(value :_*))
+    inline def setNoFontsVarargs(value: js.Any*): Self = StObject.set(x, "noFonts", js.Array(value :_*))
     
-    @scala.inline
-    def setWebFont(value: js.Array[js.Any]): Self = StObject.set(x, "webFont", value.asInstanceOf[js.Any])
+    inline def setWebFont(value: js.Array[js.Any]): Self = StObject.set(x, "webFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebFontUndefined: Self = StObject.set(x, "webFont", js.undefined)
+    inline def setWebFontUndefined: Self = StObject.set(x, "webFont", js.undefined)
     
-    @scala.inline
-    def setWebFontVarargs(value: js.Any*): Self = StObject.set(x, "webFont", js.Array(value :_*))
+    inline def setWebFontVarargs(value: js.Any*): Self = StObject.set(x, "webFont", js.Array(value :_*))
   }
 }

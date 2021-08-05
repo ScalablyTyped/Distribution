@@ -12,20 +12,16 @@ object anon {
   }
   object Flash {
     
-    @scala.inline
-    def apply(): Flash = {
+    inline def apply(): Flash = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Flash]
     }
     
-    @scala.inline
-    implicit class FlashMutableBuilder[Self <: Flash] (val x: Self) extends AnyVal {
+    extension [Self <: Flash](x: Self) {
       
-      @scala.inline
-      def setFlash(value: typings.expressFlash2.mod.global.Express.Flash): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
+      inline def setFlash(value: typings.expressFlash2.mod.global.Express.Flash): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
+      inline def setFlashUndefined: Self = StObject.set(x, "flash", js.undefined)
     }
   }
 }

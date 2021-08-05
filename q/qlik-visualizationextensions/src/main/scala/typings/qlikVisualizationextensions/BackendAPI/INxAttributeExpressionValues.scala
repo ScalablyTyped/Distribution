@@ -14,19 +14,15 @@ trait INxAttributeExpressionValues extends StObject {
 }
 object INxAttributeExpressionValues {
   
-  @scala.inline
-  def apply(qValues: js.Array[INxSimpleValue]): INxAttributeExpressionValues = {
+  inline def apply(qValues: js.Array[INxSimpleValue]): INxAttributeExpressionValues = {
     val __obj = js.Dynamic.literal(qValues = qValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxAttributeExpressionValues]
   }
   
-  @scala.inline
-  implicit class INxAttributeExpressionValuesMutableBuilder[Self <: INxAttributeExpressionValues] (val x: Self) extends AnyVal {
+  extension [Self <: INxAttributeExpressionValues](x: Self) {
     
-    @scala.inline
-    def setQValues(value: js.Array[INxSimpleValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
+    inline def setQValues(value: js.Array[INxSimpleValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValuesVarargs(value: INxSimpleValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: INxSimpleValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
   }
 }

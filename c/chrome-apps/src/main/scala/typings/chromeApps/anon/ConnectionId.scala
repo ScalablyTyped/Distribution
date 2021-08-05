@@ -11,16 +11,13 @@ trait ConnectionId extends StObject {
 }
 object ConnectionId {
   
-  @scala.inline
-  def apply(connectionId: integer): ConnectionId = {
+  inline def apply(connectionId: integer): ConnectionId = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionId]
   }
   
-  @scala.inline
-  implicit class ConnectionIdMutableBuilder[Self <: ConnectionId] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionId](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: integer): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: integer): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait ProofServiceResourceToken extends StObject {
 }
 object ProofServiceResourceToken {
   
-  @scala.inline
-  def apply(): ProofServiceResourceToken = {
+  inline def apply(): ProofServiceResourceToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProofServiceResourceToken]
   }
   
-  @scala.inline
-  implicit class ProofServiceResourceTokenMutableBuilder[Self <: ProofServiceResourceToken] (val x: Self) extends AnyVal {
+  extension [Self <: ProofServiceResourceToken](x: Self) {
     
-    @scala.inline
-    def setResourceToken(value: String): Self = StObject.set(x, "ResourceToken", value.asInstanceOf[js.Any])
+    inline def setResourceToken(value: String): Self = StObject.set(x, "ResourceToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTokenUndefined: Self = StObject.set(x, "ResourceToken", js.undefined)
+    inline def setResourceTokenUndefined: Self = StObject.set(x, "ResourceToken", js.undefined)
   }
 }

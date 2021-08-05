@@ -10,6 +10,5 @@ object global {
   @JSGlobal("qwest")
   @js.native
   def qwest: Static = js.native
-  @scala.inline
-  def qwest_=(x: Static): Unit = js.Dynamic.global.updateDynamic("qwest")(x.asInstanceOf[js.Any])
+  inline def qwest_=(x: Static): Unit = js.Dynamic.global.updateDynamic("qwest")(x.asInstanceOf[js.Any])
 }

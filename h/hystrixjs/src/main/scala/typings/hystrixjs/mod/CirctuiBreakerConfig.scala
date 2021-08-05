@@ -22,8 +22,7 @@ trait CirctuiBreakerConfig extends StObject {
 }
 object CirctuiBreakerConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     circuitBreakerErrorThresholdPercentage: Double,
     circuitBreakerForceClosed: Boolean,
     circuitBreakerForceOpened: Boolean,
@@ -36,28 +35,20 @@ object CirctuiBreakerConfig {
     __obj.asInstanceOf[CirctuiBreakerConfig]
   }
   
-  @scala.inline
-  implicit class CirctuiBreakerConfigMutableBuilder[Self <: CirctuiBreakerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CirctuiBreakerConfig](x: Self) {
     
-    @scala.inline
-    def setCircuitBreakerErrorThresholdPercentage(value: Double): Self = StObject.set(x, "circuitBreakerErrorThresholdPercentage", value.asInstanceOf[js.Any])
+    inline def setCircuitBreakerErrorThresholdPercentage(value: Double): Self = StObject.set(x, "circuitBreakerErrorThresholdPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircuitBreakerForceClosed(value: Boolean): Self = StObject.set(x, "circuitBreakerForceClosed", value.asInstanceOf[js.Any])
+    inline def setCircuitBreakerForceClosed(value: Boolean): Self = StObject.set(x, "circuitBreakerForceClosed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircuitBreakerForceOpened(value: Boolean): Self = StObject.set(x, "circuitBreakerForceOpened", value.asInstanceOf[js.Any])
+    inline def setCircuitBreakerForceOpened(value: Boolean): Self = StObject.set(x, "circuitBreakerForceOpened", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircuitBreakerRequestVolumeThreshold(value: Double): Self = StObject.set(x, "circuitBreakerRequestVolumeThreshold", value.asInstanceOf[js.Any])
+    inline def setCircuitBreakerRequestVolumeThreshold(value: Double): Self = StObject.set(x, "circuitBreakerRequestVolumeThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircuitBreakerSleepWindowInMilliseconds(value: Double): Self = StObject.set(x, "circuitBreakerSleepWindowInMilliseconds", value.asInstanceOf[js.Any])
+    inline def setCircuitBreakerSleepWindowInMilliseconds(value: Double): Self = StObject.set(x, "circuitBreakerSleepWindowInMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandGroup(value: String): Self = StObject.set(x, "commandGroup", value.asInstanceOf[js.Any])
+    inline def setCommandGroup(value: String): Self = StObject.set(x, "commandGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandKey(value: String): Self = StObject.set(x, "commandKey", value.asInstanceOf[js.Any])
+    inline def setCommandKey(value: String): Self = StObject.set(x, "commandKey", value.asInstanceOf[js.Any])
   }
 }

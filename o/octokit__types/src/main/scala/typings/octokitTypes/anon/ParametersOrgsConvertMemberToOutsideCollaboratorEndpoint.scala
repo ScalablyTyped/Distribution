@@ -18,8 +18,7 @@ trait ParametersOrgsConvertMemberToOutsideCollaboratorEndpoint extends StObject 
 }
 object ParametersOrgsConvertMemberToOutsideCollaboratorEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: OrgsConvertMemberToOutsideCollaboratorEndpoint,
     request: OrgsConvertMemberToOutsideCollaboratorRequestOptions,
     response: OctokitResponse[OrgsConvertMemberToOutsideCollaboratorResponseData]
@@ -28,16 +27,12 @@ object ParametersOrgsConvertMemberToOutsideCollaboratorEndpoint {
     __obj.asInstanceOf[ParametersOrgsConvertMemberToOutsideCollaboratorEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersOrgsConvertMemberToOutsideCollaboratorEndpointMutableBuilder[Self <: ParametersOrgsConvertMemberToOutsideCollaboratorEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersOrgsConvertMemberToOutsideCollaboratorEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: OrgsConvertMemberToOutsideCollaboratorEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: OrgsConvertMemberToOutsideCollaboratorEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: OrgsConvertMemberToOutsideCollaboratorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: OrgsConvertMemberToOutsideCollaboratorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[OrgsConvertMemberToOutsideCollaboratorResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[OrgsConvertMemberToOutsideCollaboratorResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

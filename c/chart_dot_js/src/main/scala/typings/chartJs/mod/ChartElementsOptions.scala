@@ -16,37 +16,27 @@ trait ChartElementsOptions extends StObject {
 }
 object ChartElementsOptions {
   
-  @scala.inline
-  def apply(): ChartElementsOptions = {
+  inline def apply(): ChartElementsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartElementsOptions]
   }
   
-  @scala.inline
-  implicit class ChartElementsOptionsMutableBuilder[Self <: ChartElementsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartElementsOptions](x: Self) {
     
-    @scala.inline
-    def setArc(value: ChartArcOptions): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    inline def setArc(value: ChartArcOptions): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
+    inline def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
-    @scala.inline
-    def setLine(value: ChartLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: ChartLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setPoint(value: ChartPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: ChartPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    @scala.inline
-    def setRectangle(value: ChartRectangleOptions): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+    inline def setRectangle(value: ChartRectangleOptions): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+    inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
   }
 }

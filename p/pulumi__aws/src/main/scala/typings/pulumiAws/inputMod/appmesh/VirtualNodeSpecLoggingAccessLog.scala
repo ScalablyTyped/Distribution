@@ -14,19 +14,15 @@ trait VirtualNodeSpecLoggingAccessLog extends StObject {
 }
 object VirtualNodeSpecLoggingAccessLog {
   
-  @scala.inline
-  def apply(): VirtualNodeSpecLoggingAccessLog = {
+  inline def apply(): VirtualNodeSpecLoggingAccessLog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualNodeSpecLoggingAccessLog]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecLoggingAccessLogMutableBuilder[Self <: VirtualNodeSpecLoggingAccessLog] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecLoggingAccessLog](x: Self) {
     
-    @scala.inline
-    def setFile(value: Input[VirtualNodeSpecLoggingAccessLogFile]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Input[VirtualNodeSpecLoggingAccessLogFile]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

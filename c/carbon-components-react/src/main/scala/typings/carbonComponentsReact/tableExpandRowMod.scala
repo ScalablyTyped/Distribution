@@ -35,50 +35,36 @@ object tableExpandRowMod extends Shortcut {
   }
   object TableExpandRowProps {
     
-    @scala.inline
-    def apply(): TableExpandRowProps = {
+    inline def apply(): TableExpandRowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableExpandRowProps]
     }
     
-    @scala.inline
-    implicit class TableExpandRowPropsMutableBuilder[Self <: TableExpandRowProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableExpandRowProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setExpandHeader(value: String): Self = StObject.set(x, "expandHeader", value.asInstanceOf[js.Any])
+      inline def setExpandHeader(value: String): Self = StObject.set(x, "expandHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandHeaderUndefined: Self = StObject.set(x, "expandHeader", js.undefined)
+      inline def setExpandHeaderUndefined: Self = StObject.set(x, "expandHeader", js.undefined)
       
-      @scala.inline
-      def setExpandIconDescription(value: String): Self = StObject.set(x, "expandIconDescription", value.asInstanceOf[js.Any])
+      inline def setExpandIconDescription(value: String): Self = StObject.set(x, "expandIconDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIconDescriptionUndefined: Self = StObject.set(x, "expandIconDescription", js.undefined)
+      inline def setExpandIconDescriptionUndefined: Self = StObject.set(x, "expandIconDescription", js.undefined)
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      @scala.inline
-      def setOnExpand(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+      inline def setOnExpand(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
+      inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
     }
   }
   

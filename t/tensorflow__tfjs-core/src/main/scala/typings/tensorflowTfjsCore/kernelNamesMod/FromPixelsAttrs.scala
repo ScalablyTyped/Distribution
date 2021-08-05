@@ -10,16 +10,13 @@ trait FromPixelsAttrs extends StObject {
 }
 object FromPixelsAttrs {
   
-  @scala.inline
-  def apply(numChannels: Double): FromPixelsAttrs = {
+  inline def apply(numChannels: Double): FromPixelsAttrs = {
     val __obj = js.Dynamic.literal(numChannels = numChannels.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromPixelsAttrs]
   }
   
-  @scala.inline
-  implicit class FromPixelsAttrsMutableBuilder[Self <: FromPixelsAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: FromPixelsAttrs](x: Self) {
     
-    @scala.inline
-    def setNumChannels(value: Double): Self = StObject.set(x, "numChannels", value.asInstanceOf[js.Any])
+    inline def setNumChannels(value: Double): Self = StObject.set(x, "numChannels", value.asInstanceOf[js.Any])
   }
 }

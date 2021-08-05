@@ -22,8 +22,7 @@ trait CheckBox extends StObject {
 }
 object CheckBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkBox: scala.Double,
     combo: scala.Double,
     none: scala.Double,
@@ -36,28 +35,20 @@ object CheckBox {
     __obj.asInstanceOf[CheckBox]
   }
   
-  @scala.inline
-  implicit class CheckBoxMutableBuilder[Self <: CheckBox] (val x: Self) extends AnyVal {
+  extension [Self <: CheckBox](x: Self) {
     
-    @scala.inline
-    def setCheckBox(value: scala.Double): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
+    inline def setCheckBox(value: scala.Double): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCombo(value: scala.Double): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
+    inline def setCombo(value: scala.Double): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordBox(value: scala.Double): Self = StObject.set(x, "passwordBox", value.asInstanceOf[js.Any])
+    inline def setPasswordBox(value: scala.Double): Self = StObject.set(x, "passwordBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioButtons(value: scala.Double): Self = StObject.set(x, "radioButtons", value.asInstanceOf[js.Any])
+    inline def setRadioButtons(value: scala.Double): Self = StObject.set(x, "radioButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextArea(value: scala.Double): Self = StObject.set(x, "textArea", value.asInstanceOf[js.Any])
+    inline def setTextArea(value: scala.Double): Self = StObject.set(x, "textArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBox(value: scala.Double): Self = StObject.set(x, "textBox", value.asInstanceOf[js.Any])
+    inline def setTextBox(value: scala.Double): Self = StObject.set(x, "textBox", value.asInstanceOf[js.Any])
   }
 }

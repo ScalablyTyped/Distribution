@@ -24,19 +24,15 @@ trait LogEntry extends StObject {
 }
 object LogEntry {
   
-  @scala.inline
-  def apply(withException: Error => LogEntry, withObject: js.Object => LogEntry): LogEntry = {
+  inline def apply(withException: Error => LogEntry, withObject: js.Object => LogEntry): LogEntry = {
     val __obj = js.Dynamic.literal(withException = js.Any.fromFunction1(withException), withObject = js.Any.fromFunction1(withObject))
     __obj.asInstanceOf[LogEntry]
   }
   
-  @scala.inline
-  implicit class LogEntryMutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
+  extension [Self <: LogEntry](x: Self) {
     
-    @scala.inline
-    def setWithException(value: Error => LogEntry): Self = StObject.set(x, "withException", js.Any.fromFunction1(value))
+    inline def setWithException(value: Error => LogEntry): Self = StObject.set(x, "withException", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithObject(value: js.Object => LogEntry): Self = StObject.set(x, "withObject", js.Any.fromFunction1(value))
+    inline def setWithObject(value: js.Object => LogEntry): Self = StObject.set(x, "withObject", js.Any.fromFunction1(value))
   }
 }

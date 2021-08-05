@@ -15,29 +15,22 @@ trait DSNodeTypeOpts extends StObject {
 }
 object DSNodeTypeOpts {
   
-  @scala.inline
-  def apply(): DSNodeTypeOpts = {
+  inline def apply(): DSNodeTypeOpts = {
     val __obj = js.Dynamic.literal(max = null, min = null)
     __obj.updateDynamic("type")("Range")
     __obj.asInstanceOf[DSNodeTypeOpts]
   }
   
-  @scala.inline
-  implicit class DSNodeTypeOptsMutableBuilder[Self <: DSNodeTypeOpts] (val x: Self) extends AnyVal {
+  extension [Self <: DSNodeTypeOpts](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNull: Self = StObject.set(x, "max", null)
+    inline def setMaxNull: Self = StObject.set(x, "max", null)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinNull: Self = StObject.set(x, "min", null)
+    inline def setMinNull: Self = StObject.set(x, "min", null)
     
-    @scala.inline
-    def setType(value: Range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

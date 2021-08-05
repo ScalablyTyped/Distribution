@@ -31,47 +31,34 @@ trait TransformRaw[T /* <: Record[String, js.Any] */]
 }
 object TransformRaw {
   
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](): TransformRaw[T] = {
+  inline def apply[T /* <: Record[String, js.Any] */](): TransformRaw[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("raw")
     __obj.asInstanceOf[TransformRaw[T]]
   }
   
-  @scala.inline
-  implicit class TransformRawMutableBuilder[Self <: TransformRaw[?], T /* <: Record[String, js.Any] */] (val x: Self & TransformRaw[T]) extends AnyVal {
+  extension [Self <: TransformRaw[?], T /* <: Record[String, js.Any] */](x: Self & TransformRaw[T]) {
     
-    @scala.inline
-    def setIsMatch(value: /* node */ Node => Boolean): Self = StObject.set(x, "isMatch", js.Any.fromFunction1(value))
+    inline def setIsMatch(value: /* node */ Node => Boolean): Self = StObject.set(x, "isMatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsMatchUndefined: Self = StObject.set(x, "isMatch", js.undefined)
+    inline def setIsMatchUndefined: Self = StObject.set(x, "isMatch", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setSchema(value: TransformRawSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: TransformRawSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setTransform(value: /* node */ Node => BlockInstance[Partial[T]] | Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: /* node */ Node => BlockInstance[Partial[T]] | Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setType(value: raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

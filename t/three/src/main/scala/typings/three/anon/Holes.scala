@@ -13,25 +13,19 @@ trait Holes extends StObject {
 }
 object Holes {
   
-  @scala.inline
-  def apply(holes: js.Array[js.Array[Vector2]], shape: js.Array[Vector2]): Holes = {
+  inline def apply(holes: js.Array[js.Array[Vector2]], shape: js.Array[Vector2]): Holes = {
     val __obj = js.Dynamic.literal(holes = holes.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Holes]
   }
   
-  @scala.inline
-  implicit class HolesMutableBuilder[Self <: Holes] (val x: Self) extends AnyVal {
+  extension [Self <: Holes](x: Self) {
     
-    @scala.inline
-    def setHoles(value: js.Array[js.Array[Vector2]]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
+    inline def setHoles(value: js.Array[js.Array[Vector2]]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHolesVarargs(value: js.Array[Vector2]*): Self = StObject.set(x, "holes", js.Array(value :_*))
+    inline def setHolesVarargs(value: js.Array[Vector2]*): Self = StObject.set(x, "holes", js.Array(value :_*))
     
-    @scala.inline
-    def setShape(value: js.Array[Vector2]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: js.Array[Vector2]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeVarargs(value: Vector2*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Vector2*): Self = StObject.set(x, "shape", js.Array(value :_*))
   }
 }

@@ -68,121 +68,83 @@ trait GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettingsMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaEnhancedMeasurementSettings](x: Self) {
     
-    @scala.inline
-    def setArticlesAndBlogsEnabled(value: Boolean): Self = StObject.set(x, "articlesAndBlogsEnabled", value.asInstanceOf[js.Any])
+    inline def setArticlesAndBlogsEnabled(value: Boolean): Self = StObject.set(x, "articlesAndBlogsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArticlesAndBlogsEnabledUndefined: Self = StObject.set(x, "articlesAndBlogsEnabled", js.undefined)
+    inline def setArticlesAndBlogsEnabledUndefined: Self = StObject.set(x, "articlesAndBlogsEnabled", js.undefined)
     
-    @scala.inline
-    def setContentViewsEnabled(value: Boolean): Self = StObject.set(x, "contentViewsEnabled", value.asInstanceOf[js.Any])
+    inline def setContentViewsEnabled(value: Boolean): Self = StObject.set(x, "contentViewsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentViewsEnabledUndefined: Self = StObject.set(x, "contentViewsEnabled", js.undefined)
+    inline def setContentViewsEnabledUndefined: Self = StObject.set(x, "contentViewsEnabled", js.undefined)
     
-    @scala.inline
-    def setDataTaggedElementClicksEnabled(value: Boolean): Self = StObject.set(x, "dataTaggedElementClicksEnabled", value.asInstanceOf[js.Any])
+    inline def setDataTaggedElementClicksEnabled(value: Boolean): Self = StObject.set(x, "dataTaggedElementClicksEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTaggedElementClicksEnabledUndefined: Self = StObject.set(x, "dataTaggedElementClicksEnabled", js.undefined)
+    inline def setDataTaggedElementClicksEnabledUndefined: Self = StObject.set(x, "dataTaggedElementClicksEnabled", js.undefined)
     
-    @scala.inline
-    def setExcludedDomains(value: String): Self = StObject.set(x, "excludedDomains", value.asInstanceOf[js.Any])
+    inline def setExcludedDomains(value: String): Self = StObject.set(x, "excludedDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedDomainsUndefined: Self = StObject.set(x, "excludedDomains", js.undefined)
+    inline def setExcludedDomainsUndefined: Self = StObject.set(x, "excludedDomains", js.undefined)
     
-    @scala.inline
-    def setFileDownloadsEnabled(value: Boolean): Self = StObject.set(x, "fileDownloadsEnabled", value.asInstanceOf[js.Any])
+    inline def setFileDownloadsEnabled(value: Boolean): Self = StObject.set(x, "fileDownloadsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileDownloadsEnabledUndefined: Self = StObject.set(x, "fileDownloadsEnabled", js.undefined)
+    inline def setFileDownloadsEnabledUndefined: Self = StObject.set(x, "fileDownloadsEnabled", js.undefined)
     
-    @scala.inline
-    def setFormInteractionsEnabled(value: Boolean): Self = StObject.set(x, "formInteractionsEnabled", value.asInstanceOf[js.Any])
+    inline def setFormInteractionsEnabled(value: Boolean): Self = StObject.set(x, "formInteractionsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormInteractionsEnabledUndefined: Self = StObject.set(x, "formInteractionsEnabled", js.undefined)
+    inline def setFormInteractionsEnabledUndefined: Self = StObject.set(x, "formInteractionsEnabled", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOutboundClicksEnabled(value: Boolean): Self = StObject.set(x, "outboundClicksEnabled", value.asInstanceOf[js.Any])
+    inline def setOutboundClicksEnabled(value: Boolean): Self = StObject.set(x, "outboundClicksEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundClicksEnabledUndefined: Self = StObject.set(x, "outboundClicksEnabled", js.undefined)
+    inline def setOutboundClicksEnabledUndefined: Self = StObject.set(x, "outboundClicksEnabled", js.undefined)
     
-    @scala.inline
-    def setPageChangesEnabled(value: Boolean): Self = StObject.set(x, "pageChangesEnabled", value.asInstanceOf[js.Any])
+    inline def setPageChangesEnabled(value: Boolean): Self = StObject.set(x, "pageChangesEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageChangesEnabledUndefined: Self = StObject.set(x, "pageChangesEnabled", js.undefined)
+    inline def setPageChangesEnabledUndefined: Self = StObject.set(x, "pageChangesEnabled", js.undefined)
     
-    @scala.inline
-    def setPageLoadsEnabled(value: Boolean): Self = StObject.set(x, "pageLoadsEnabled", value.asInstanceOf[js.Any])
+    inline def setPageLoadsEnabled(value: Boolean): Self = StObject.set(x, "pageLoadsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLoadsEnabledUndefined: Self = StObject.set(x, "pageLoadsEnabled", js.undefined)
+    inline def setPageLoadsEnabledUndefined: Self = StObject.set(x, "pageLoadsEnabled", js.undefined)
     
-    @scala.inline
-    def setPageViewsEnabled(value: Boolean): Self = StObject.set(x, "pageViewsEnabled", value.asInstanceOf[js.Any])
+    inline def setPageViewsEnabled(value: Boolean): Self = StObject.set(x, "pageViewsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageViewsEnabledUndefined: Self = StObject.set(x, "pageViewsEnabled", js.undefined)
+    inline def setPageViewsEnabledUndefined: Self = StObject.set(x, "pageViewsEnabled", js.undefined)
     
-    @scala.inline
-    def setProductsAndEcommerceEnabled(value: Boolean): Self = StObject.set(x, "productsAndEcommerceEnabled", value.asInstanceOf[js.Any])
+    inline def setProductsAndEcommerceEnabled(value: Boolean): Self = StObject.set(x, "productsAndEcommerceEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductsAndEcommerceEnabledUndefined: Self = StObject.set(x, "productsAndEcommerceEnabled", js.undefined)
+    inline def setProductsAndEcommerceEnabledUndefined: Self = StObject.set(x, "productsAndEcommerceEnabled", js.undefined)
     
-    @scala.inline
-    def setScrollsEnabled(value: Boolean): Self = StObject.set(x, "scrollsEnabled", value.asInstanceOf[js.Any])
+    inline def setScrollsEnabled(value: Boolean): Self = StObject.set(x, "scrollsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollsEnabledUndefined: Self = StObject.set(x, "scrollsEnabled", js.undefined)
+    inline def setScrollsEnabledUndefined: Self = StObject.set(x, "scrollsEnabled", js.undefined)
     
-    @scala.inline
-    def setSearchQueryParameter(value: String): Self = StObject.set(x, "searchQueryParameter", value.asInstanceOf[js.Any])
+    inline def setSearchQueryParameter(value: String): Self = StObject.set(x, "searchQueryParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchQueryParameterUndefined: Self = StObject.set(x, "searchQueryParameter", js.undefined)
+    inline def setSearchQueryParameterUndefined: Self = StObject.set(x, "searchQueryParameter", js.undefined)
     
-    @scala.inline
-    def setSiteSearchEnabled(value: Boolean): Self = StObject.set(x, "siteSearchEnabled", value.asInstanceOf[js.Any])
+    inline def setSiteSearchEnabled(value: Boolean): Self = StObject.set(x, "siteSearchEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteSearchEnabledUndefined: Self = StObject.set(x, "siteSearchEnabled", js.undefined)
+    inline def setSiteSearchEnabledUndefined: Self = StObject.set(x, "siteSearchEnabled", js.undefined)
     
-    @scala.inline
-    def setStreamEnabled(value: Boolean): Self = StObject.set(x, "streamEnabled", value.asInstanceOf[js.Any])
+    inline def setStreamEnabled(value: Boolean): Self = StObject.set(x, "streamEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamEnabledUndefined: Self = StObject.set(x, "streamEnabled", js.undefined)
+    inline def setStreamEnabledUndefined: Self = StObject.set(x, "streamEnabled", js.undefined)
     
-    @scala.inline
-    def setUrlQueryParameter(value: String): Self = StObject.set(x, "urlQueryParameter", value.asInstanceOf[js.Any])
+    inline def setUrlQueryParameter(value: String): Self = StObject.set(x, "urlQueryParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlQueryParameterUndefined: Self = StObject.set(x, "urlQueryParameter", js.undefined)
+    inline def setUrlQueryParameterUndefined: Self = StObject.set(x, "urlQueryParameter", js.undefined)
     
-    @scala.inline
-    def setVideoEngagementEnabled(value: Boolean): Self = StObject.set(x, "videoEngagementEnabled", value.asInstanceOf[js.Any])
+    inline def setVideoEngagementEnabled(value: Boolean): Self = StObject.set(x, "videoEngagementEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoEngagementEnabledUndefined: Self = StObject.set(x, "videoEngagementEnabled", js.undefined)
+    inline def setVideoEngagementEnabledUndefined: Self = StObject.set(x, "videoEngagementEnabled", js.undefined)
   }
 }

@@ -69,8 +69,7 @@ trait GeometryServiceToGeoCoordinateStringParams
 }
 object GeometryServiceToGeoCoordinateStringParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     conversionType: mgrs | usng | utm | `geo-ref` | gars | dms | ddm | dd,
     coordinates: js.Array[js.Array[Double]],
@@ -82,43 +81,30 @@ object GeometryServiceToGeoCoordinateStringParams {
     __obj.asInstanceOf[GeometryServiceToGeoCoordinateStringParams]
   }
   
-  @scala.inline
-  implicit class GeometryServiceToGeoCoordinateStringParamsMutableBuilder[Self <: GeometryServiceToGeoCoordinateStringParams] (val x: Self) extends AnyVal {
+  extension [Self <: GeometryServiceToGeoCoordinateStringParams](x: Self) {
     
-    @scala.inline
-    def setAddSpaces(value: Boolean): Self = StObject.set(x, "addSpaces", value.asInstanceOf[js.Any])
+    inline def setAddSpaces(value: Boolean): Self = StObject.set(x, "addSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddSpacesUndefined: Self = StObject.set(x, "addSpaces", js.undefined)
+    inline def setAddSpacesUndefined: Self = StObject.set(x, "addSpaces", js.undefined)
     
-    @scala.inline
-    def setConversionMode(value: String): Self = StObject.set(x, "conversionMode", value.asInstanceOf[js.Any])
+    inline def setConversionMode(value: String): Self = StObject.set(x, "conversionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionModeUndefined: Self = StObject.set(x, "conversionMode", js.undefined)
+    inline def setConversionModeUndefined: Self = StObject.set(x, "conversionMode", js.undefined)
     
-    @scala.inline
-    def setConversionType(value: mgrs | usng | utm | `geo-ref` | gars | dms | ddm | dd): Self = StObject.set(x, "conversionType", value.asInstanceOf[js.Any])
+    inline def setConversionType(value: mgrs | usng | utm | `geo-ref` | gars | dms | ddm | dd): Self = StObject.set(x, "conversionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setNumOfDigits(value: Double): Self = StObject.set(x, "numOfDigits", value.asInstanceOf[js.Any])
+    inline def setNumOfDigits(value: Double): Self = StObject.set(x, "numOfDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumOfDigitsUndefined: Self = StObject.set(x, "numOfDigits", js.undefined)
+    inline def setNumOfDigitsUndefined: Self = StObject.set(x, "numOfDigits", js.undefined)
     
-    @scala.inline
-    def setRounding(value: Boolean): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
+    inline def setRounding(value: Boolean): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
+    inline def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
     
-    @scala.inline
-    def setSr(value: SpatialReference | String | Double): Self = StObject.set(x, "sr", value.asInstanceOf[js.Any])
+    inline def setSr(value: SpatialReference | String | Double): Self = StObject.set(x, "sr", value.asInstanceOf[js.Any])
   }
 }

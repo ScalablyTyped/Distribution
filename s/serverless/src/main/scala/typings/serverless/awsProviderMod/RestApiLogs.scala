@@ -22,55 +22,39 @@ trait RestApiLogs extends StObject {
 }
 object RestApiLogs {
   
-  @scala.inline
-  def apply(): RestApiLogs = {
+  inline def apply(): RestApiLogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestApiLogs]
   }
   
-  @scala.inline
-  implicit class RestApiLogsMutableBuilder[Self <: RestApiLogs] (val x: Self) extends AnyVal {
+  extension [Self <: RestApiLogs](x: Self) {
     
-    @scala.inline
-    def setAccessLogging(value: Boolean): Self = StObject.set(x, "accessLogging", value.asInstanceOf[js.Any])
+    inline def setAccessLogging(value: Boolean): Self = StObject.set(x, "accessLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLoggingUndefined: Self = StObject.set(x, "accessLogging", js.undefined)
+    inline def setAccessLoggingUndefined: Self = StObject.set(x, "accessLogging", js.undefined)
     
-    @scala.inline
-    def setExecutionLogging(value: Boolean): Self = StObject.set(x, "executionLogging", value.asInstanceOf[js.Any])
+    inline def setExecutionLogging(value: Boolean): Self = StObject.set(x, "executionLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionLoggingUndefined: Self = StObject.set(x, "executionLogging", js.undefined)
+    inline def setExecutionLoggingUndefined: Self = StObject.set(x, "executionLogging", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFullExecutionData(value: Boolean): Self = StObject.set(x, "fullExecutionData", value.asInstanceOf[js.Any])
+    inline def setFullExecutionData(value: Boolean): Self = StObject.set(x, "fullExecutionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullExecutionDataUndefined: Self = StObject.set(x, "fullExecutionData", js.undefined)
+    inline def setFullExecutionDataUndefined: Self = StObject.set(x, "fullExecutionData", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleManagedExternally(value: Boolean): Self = StObject.set(x, "roleManagedExternally", value.asInstanceOf[js.Any])
+    inline def setRoleManagedExternally(value: Boolean): Self = StObject.set(x, "roleManagedExternally", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleManagedExternallyUndefined: Self = StObject.set(x, "roleManagedExternally", js.undefined)
+    inline def setRoleManagedExternallyUndefined: Self = StObject.set(x, "roleManagedExternally", js.undefined)
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

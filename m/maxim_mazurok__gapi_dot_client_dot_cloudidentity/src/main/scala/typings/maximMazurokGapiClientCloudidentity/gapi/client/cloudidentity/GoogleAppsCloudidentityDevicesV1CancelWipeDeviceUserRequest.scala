@@ -14,19 +14,15 @@ trait GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest extends StObje
 }
 object GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequestMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1CancelWipeDeviceUserRequest](x: Self) {
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
   }
 }

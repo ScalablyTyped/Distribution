@@ -18,25 +18,19 @@ trait GetExecutionHistoryOutput extends StObject {
 }
 object GetExecutionHistoryOutput {
   
-  @scala.inline
-  def apply(events: HistoryEventList): GetExecutionHistoryOutput = {
+  inline def apply(events: HistoryEventList): GetExecutionHistoryOutput = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExecutionHistoryOutput]
   }
   
-  @scala.inline
-  implicit class GetExecutionHistoryOutputMutableBuilder[Self <: GetExecutionHistoryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetExecutionHistoryOutput](x: Self) {
     
-    @scala.inline
-    def setEvents(value: HistoryEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: HistoryEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(value: HistoryEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: HistoryEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

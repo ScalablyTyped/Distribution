@@ -10,19 +10,15 @@ trait NavigationInitActionPayload extends StObject {
 }
 object NavigationInitActionPayload {
   
-  @scala.inline
-  def apply(): NavigationInitActionPayload = {
+  inline def apply(): NavigationInitActionPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationInitActionPayload]
   }
   
-  @scala.inline
-  implicit class NavigationInitActionPayloadMutableBuilder[Self <: NavigationInitActionPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationInitActionPayload](x: Self) {
     
-    @scala.inline
-    def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

@@ -18,43 +18,31 @@ trait ChartTooltip extends StObject {
 }
 object ChartTooltip {
   
-  @scala.inline
-  def apply(): ChartTooltip = {
+  inline def apply(): ChartTooltip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartTooltip]
   }
   
-  @scala.inline
-  implicit class ChartTooltipMutableBuilder[Self <: ChartTooltip] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTooltip](x: Self) {
     
-    @scala.inline
-    def setIgnoreBounds(value: Boolean): Self = StObject.set(x, "ignoreBounds", value.asInstanceOf[js.Any])
+    inline def setIgnoreBounds(value: Boolean): Self = StObject.set(x, "ignoreBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreBoundsUndefined: Self = StObject.set(x, "ignoreBounds", js.undefined)
+    inline def setIgnoreBoundsUndefined: Self = StObject.set(x, "ignoreBounds", js.undefined)
     
-    @scala.inline
-    def setIsHtml(value: Boolean): Self = StObject.set(x, "isHtml", value.asInstanceOf[js.Any])
+    inline def setIsHtml(value: Boolean): Self = StObject.set(x, "isHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHtmlUndefined: Self = StObject.set(x, "isHtml", js.undefined)
+    inline def setIsHtmlUndefined: Self = StObject.set(x, "isHtml", js.undefined)
     
-    @scala.inline
-    def setShowColorCode(value: Boolean): Self = StObject.set(x, "showColorCode", value.asInstanceOf[js.Any])
+    inline def setShowColorCode(value: Boolean): Self = StObject.set(x, "showColorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowColorCodeUndefined: Self = StObject.set(x, "showColorCode", js.undefined)
+    inline def setShowColorCodeUndefined: Self = StObject.set(x, "showColorCode", js.undefined)
     
-    @scala.inline
-    def setTextStyle(value: ChartTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: ChartTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

@@ -19,28 +19,21 @@ trait CreateSessionParams extends StObject {
 }
 object CreateSessionParams {
   
-  @scala.inline
-  def apply(assistant_id: String): CreateSessionParams = {
+  inline def apply(assistant_id: String): CreateSessionParams = {
     val __obj = js.Dynamic.literal(assistant_id = assistant_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSessionParams]
   }
   
-  @scala.inline
-  implicit class CreateSessionParamsMutableBuilder[Self <: CreateSessionParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSessionParams](x: Self) {
     
-    @scala.inline
-    def setAssistant_id(value: String): Self = StObject.set(x, "assistant_id", value.asInstanceOf[js.Any])
+    inline def setAssistant_id(value: String): Self = StObject.set(x, "assistant_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ object typesPutBucketNotificationOutputMod {
        with _OutputTypesUnion
   object PutBucketNotificationOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutBucketNotificationOutput = {
+    inline def apply($metadata: ResponseMetadata): PutBucketNotificationOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutBucketNotificationOutput]
     }

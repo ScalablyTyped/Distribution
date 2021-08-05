@@ -30,34 +30,25 @@ trait SchemaCollectdPayloadError extends StObject {
 }
 object SchemaCollectdPayloadError {
   
-  @scala.inline
-  def apply(): SchemaCollectdPayloadError = {
+  inline def apply(): SchemaCollectdPayloadError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCollectdPayloadError]
   }
   
-  @scala.inline
-  implicit class SchemaCollectdPayloadErrorMutableBuilder[Self <: SchemaCollectdPayloadError] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCollectdPayloadError](x: Self) {
     
-    @scala.inline
-    def setError(value: SchemaStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: SchemaStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setValueErrors(value: js.Array[SchemaCollectdValueError]): Self = StObject.set(x, "valueErrors", value.asInstanceOf[js.Any])
+    inline def setValueErrors(value: js.Array[SchemaCollectdValueError]): Self = StObject.set(x, "valueErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueErrorsUndefined: Self = StObject.set(x, "valueErrors", js.undefined)
+    inline def setValueErrorsUndefined: Self = StObject.set(x, "valueErrors", js.undefined)
     
-    @scala.inline
-    def setValueErrorsVarargs(value: SchemaCollectdValueError*): Self = StObject.set(x, "valueErrors", js.Array(value :_*))
+    inline def setValueErrorsVarargs(value: SchemaCollectdValueError*): Self = StObject.set(x, "valueErrors", js.Array(value :_*))
   }
 }

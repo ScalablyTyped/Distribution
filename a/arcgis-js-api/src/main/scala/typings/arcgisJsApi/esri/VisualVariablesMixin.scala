@@ -15,19 +15,15 @@ trait VisualVariablesMixin extends StObject {
 }
 object VisualVariablesMixin {
   
-  @scala.inline
-  def apply(visualVariables: js.Array[VisualVariable]): VisualVariablesMixin = {
+  inline def apply(visualVariables: js.Array[VisualVariable]): VisualVariablesMixin = {
     val __obj = js.Dynamic.literal(visualVariables = visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualVariablesMixin]
   }
   
-  @scala.inline
-  implicit class VisualVariablesMixinMutableBuilder[Self <: VisualVariablesMixin] (val x: Self) extends AnyVal {
+  extension [Self <: VisualVariablesMixin](x: Self) {
     
-    @scala.inline
-    def setVisualVariables(value: js.Array[VisualVariable]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
+    inline def setVisualVariables(value: js.Array[VisualVariable]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualVariablesVarargs(value: VisualVariable*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: VisualVariable*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
   }
 }

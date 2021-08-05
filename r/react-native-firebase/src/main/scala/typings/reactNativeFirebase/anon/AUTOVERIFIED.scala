@@ -16,25 +16,19 @@ trait AUTOVERIFIED extends StObject {
 }
 object AUTOVERIFIED {
   
-  @scala.inline
-  def apply(AUTO_VERIFIED: String, AUTO_VERIFY_TIMEOUT: String, CODE_SENT: String, ERROR: String): AUTOVERIFIED = {
+  inline def apply(AUTO_VERIFIED: String, AUTO_VERIFY_TIMEOUT: String, CODE_SENT: String, ERROR: String): AUTOVERIFIED = {
     val __obj = js.Dynamic.literal(AUTO_VERIFIED = AUTO_VERIFIED.asInstanceOf[js.Any], AUTO_VERIFY_TIMEOUT = AUTO_VERIFY_TIMEOUT.asInstanceOf[js.Any], CODE_SENT = CODE_SENT.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any])
     __obj.asInstanceOf[AUTOVERIFIED]
   }
   
-  @scala.inline
-  implicit class AUTOVERIFIEDMutableBuilder[Self <: AUTOVERIFIED] (val x: Self) extends AnyVal {
+  extension [Self <: AUTOVERIFIED](x: Self) {
     
-    @scala.inline
-    def setAUTO_VERIFIED(value: String): Self = StObject.set(x, "AUTO_VERIFIED", value.asInstanceOf[js.Any])
+    inline def setAUTO_VERIFIED(value: String): Self = StObject.set(x, "AUTO_VERIFIED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAUTO_VERIFY_TIMEOUT(value: String): Self = StObject.set(x, "AUTO_VERIFY_TIMEOUT", value.asInstanceOf[js.Any])
+    inline def setAUTO_VERIFY_TIMEOUT(value: String): Self = StObject.set(x, "AUTO_VERIFY_TIMEOUT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCODE_SENT(value: String): Self = StObject.set(x, "CODE_SENT", value.asInstanceOf[js.Any])
+    inline def setCODE_SENT(value: String): Self = StObject.set(x, "CODE_SENT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
   }
 }

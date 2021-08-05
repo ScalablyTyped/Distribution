@@ -28,7 +28,7 @@ object mapitemMod {
     
     def dateUpdated: Date = js.native
     
-    val descriptor: js.Any = js.native
+    /* private */ val descriptor: js.Any = js.native
     
     def key: String = js.native
     
@@ -69,8 +69,7 @@ object mapitemMod {
   }
   object MapItemDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: js.Object,
       date_expires: String,
       date_updated: Date,
@@ -83,29 +82,21 @@ object mapitemMod {
       __obj.asInstanceOf[MapItemDescriptor]
     }
     
-    @scala.inline
-    implicit class MapItemDescriptorMutableBuilder[Self <: MapItemDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: MapItemDescriptor](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate_expires(value: String): Self = StObject.set(x, "date_expires", value.asInstanceOf[js.Any])
+      inline def setDate_expires(value: String): Self = StObject.set(x, "date_expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate_updated(value: Date): Self = StObject.set(x, "date_updated", value.asInstanceOf[js.Any])
+      inline def setDate_updated(value: Date): Self = StObject.set(x, "date_updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
+      inline def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

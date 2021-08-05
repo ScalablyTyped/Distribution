@@ -24,19 +24,15 @@ trait ChangePageOrientationCommand
 }
 object ChangePageOrientationCommand {
   
-  @scala.inline
-  def apply(execute: Orientation => Boolean, getState: () => CommandState[Orientation]): ChangePageOrientationCommand = {
+  inline def apply(execute: Orientation => Boolean, getState: () => CommandState[Orientation]): ChangePageOrientationCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangePageOrientationCommand]
   }
   
-  @scala.inline
-  implicit class ChangePageOrientationCommandMutableBuilder[Self <: ChangePageOrientationCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangePageOrientationCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: Orientation => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: Orientation => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[Orientation]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[Orientation]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

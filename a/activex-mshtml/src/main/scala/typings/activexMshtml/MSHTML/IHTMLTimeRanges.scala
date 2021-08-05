@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLTimeRanges extends StObject {
   
-  @JSName("MSHTML.IHTMLTimeRanges_typekey")
+  /* private */ @JSName("MSHTML.IHTMLTimeRanges_typekey")
   var MSHTMLDotIHTMLTimeRanges_typekey: IHTMLTimeRanges
   
   def end(index: Double): Double
@@ -17,8 +17,7 @@ trait IHTMLTimeRanges extends StObject {
 }
 object IHTMLTimeRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLTimeRanges_typekey: IHTMLTimeRanges,
     end: Double => Double,
     length: Double,
@@ -29,19 +28,14 @@ object IHTMLTimeRanges {
     __obj.asInstanceOf[IHTMLTimeRanges]
   }
   
-  @scala.inline
-  implicit class IHTMLTimeRangesMutableBuilder[Self <: IHTMLTimeRanges] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLTimeRanges](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double => Double): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+    inline def setEnd(value: Double => Double): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIHTMLTimeRanges_typekey(value: IHTMLTimeRanges): Self = StObject.set(x, "MSHTML.IHTMLTimeRanges_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLTimeRanges_typekey(value: IHTMLTimeRanges): Self = StObject.set(x, "MSHTML.IHTMLTimeRanges_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: Double => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
   }
 }

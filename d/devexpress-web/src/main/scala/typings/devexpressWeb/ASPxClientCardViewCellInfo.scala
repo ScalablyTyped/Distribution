@@ -21,19 +21,15 @@ trait ASPxClientCardViewCellInfo extends StObject {
 }
 object ASPxClientCardViewCellInfo {
   
-  @scala.inline
-  def apply(cardVisibleIndex: Double, column: ASPxClientCardViewColumn): ASPxClientCardViewCellInfo = {
+  inline def apply(cardVisibleIndex: Double, column: ASPxClientCardViewColumn): ASPxClientCardViewCellInfo = {
     val __obj = js.Dynamic.literal(cardVisibleIndex = cardVisibleIndex.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewCellInfo]
   }
   
-  @scala.inline
-  implicit class ASPxClientCardViewCellInfoMutableBuilder[Self <: ASPxClientCardViewCellInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCardViewCellInfo](x: Self) {
     
-    @scala.inline
-    def setCardVisibleIndex(value: Double): Self = StObject.set(x, "cardVisibleIndex", value.asInstanceOf[js.Any])
+    inline def setCardVisibleIndex(value: Double): Self = StObject.set(x, "cardVisibleIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }
 }

@@ -8,31 +8,25 @@ object maximMazurokGapiClientAnalyticsStrings {
   
   @js.native
   sealed trait Column extends StObject
-  @scala.inline
-  def Column: Column = "Column".asInstanceOf[Column]
+  inline def Column: Column = "Column".asInstanceOf[Column]
   
   @js.native
   sealed trait GaData extends StObject
-  @scala.inline
-  def GaData: GaData = "GaData".asInstanceOf[GaData]
+  inline def GaData: GaData = "GaData".asInstanceOf[GaData]
   
   @js.native
   sealed trait McfData extends StObject
-  @scala.inline
-  def McfData: McfData = "McfData".asInstanceOf[McfData]
+  inline def McfData: McfData = "McfData".asInstanceOf[McfData]
   
   @js.native
   sealed trait RealtimeData extends StObject
-  @scala.inline
-  def RealtimeData: RealtimeData = "RealtimeData".asInstanceOf[RealtimeData]
+  inline def RealtimeData: RealtimeData = "RealtimeData".asInstanceOf[RealtimeData]
   
   @js.native
   sealed trait analytics extends StObject
-  @scala.inline
-  def analytics: analytics = "analytics".asInstanceOf[analytics]
+  inline def analytics: analytics = "analytics".asInstanceOf[analytics]
   
   @js.native
   sealed trait v3 extends StObject
-  @scala.inline
-  def v3: v3 = "v3".asInstanceOf[v3]
+  inline def v3: v3 = "v3".asInstanceOf[v3]
 }

@@ -23,61 +23,43 @@ trait IFieldStat extends StObject {
 }
 object IFieldStat {
   
-  @scala.inline
-  def apply(): IFieldStat = {
+  inline def apply(): IFieldStat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFieldStat]
   }
   
-  @scala.inline
-  implicit class IFieldStatMutableBuilder[Self <: IFieldStat] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldStat](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountNull: Self = StObject.set(x, "count", null)
+    inline def setCountNull: Self = StObject.set(x, "count", null)
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setErrorsCount(value: Double): Self = StObject.set(x, "errorsCount", value.asInstanceOf[js.Any])
+    inline def setErrorsCount(value: Double): Self = StObject.set(x, "errorsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsCountNull: Self = StObject.set(x, "errorsCount", null)
+    inline def setErrorsCountNull: Self = StObject.set(x, "errorsCount", null)
     
-    @scala.inline
-    def setErrorsCountUndefined: Self = StObject.set(x, "errorsCount", js.undefined)
+    inline def setErrorsCountUndefined: Self = StObject.set(x, "errorsCount", js.undefined)
     
-    @scala.inline
-    def setLatencyCount(value: js.Array[Double]): Self = StObject.set(x, "latencyCount", value.asInstanceOf[js.Any])
+    inline def setLatencyCount(value: js.Array[Double]): Self = StObject.set(x, "latencyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyCountNull: Self = StObject.set(x, "latencyCount", null)
+    inline def setLatencyCountNull: Self = StObject.set(x, "latencyCount", null)
     
-    @scala.inline
-    def setLatencyCountUndefined: Self = StObject.set(x, "latencyCount", js.undefined)
+    inline def setLatencyCountUndefined: Self = StObject.set(x, "latencyCount", js.undefined)
     
-    @scala.inline
-    def setLatencyCountVarargs(value: Double*): Self = StObject.set(x, "latencyCount", js.Array(value :_*))
+    inline def setLatencyCountVarargs(value: Double*): Self = StObject.set(x, "latencyCount", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestsWithErrorsCount(value: Double): Self = StObject.set(x, "requestsWithErrorsCount", value.asInstanceOf[js.Any])
+    inline def setRequestsWithErrorsCount(value: Double): Self = StObject.set(x, "requestsWithErrorsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsWithErrorsCountNull: Self = StObject.set(x, "requestsWithErrorsCount", null)
+    inline def setRequestsWithErrorsCountNull: Self = StObject.set(x, "requestsWithErrorsCount", null)
     
-    @scala.inline
-    def setRequestsWithErrorsCountUndefined: Self = StObject.set(x, "requestsWithErrorsCount", js.undefined)
+    inline def setRequestsWithErrorsCountUndefined: Self = StObject.set(x, "requestsWithErrorsCount", js.undefined)
     
-    @scala.inline
-    def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
+    inline def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
     
-    @scala.inline
-    def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
+    inline def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
   }
 }

@@ -48,8 +48,7 @@ trait ASPxClientPanel
 }
 object ASPxClientPanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Collapse: () => Unit,
     Collapsed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]],
@@ -81,28 +80,20 @@ object ASPxClientPanel {
     __obj.asInstanceOf[ASPxClientPanel]
   }
   
-  @scala.inline
-  implicit class ASPxClientPanelMutableBuilder[Self <: ASPxClientPanel] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPanel](x: Self) {
     
-    @scala.inline
-    def setCollapse(value: () => Unit): Self = StObject.set(x, "Collapse", js.Any.fromFunction0(value))
+    inline def setCollapse(value: () => Unit): Self = StObject.set(x, "Collapse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollapsed(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]): Self = StObject.set(x, "Collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]): Self = StObject.set(x, "Collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpand(value: () => Unit): Self = StObject.set(x, "Expand", js.Any.fromFunction0(value))
+    inline def setExpand(value: () => Unit): Self = StObject.set(x, "Expand", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpanded(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]): Self = StObject.set(x, "Expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientPanel]]): Self = StObject.set(x, "Expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpandable(value: () => Boolean): Self = StObject.set(x, "IsExpandable", js.Any.fromFunction0(value))
+    inline def setIsExpandable(value: () => Boolean): Self = StObject.set(x, "IsExpandable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "IsExpanded", js.Any.fromFunction0(value))
+    inline def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "IsExpanded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: () => Unit): Self = StObject.set(x, "Toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => Unit): Self = StObject.set(x, "Toggle", js.Any.fromFunction0(value))
   }
 }

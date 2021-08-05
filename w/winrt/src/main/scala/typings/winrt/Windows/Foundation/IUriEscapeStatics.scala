@@ -12,19 +12,15 @@ trait IUriEscapeStatics extends StObject {
 }
 object IUriEscapeStatics {
   
-  @scala.inline
-  def apply(escapeComponent: String => String, unescapeComponent: String => String): IUriEscapeStatics = {
+  inline def apply(escapeComponent: String => String, unescapeComponent: String => String): IUriEscapeStatics = {
     val __obj = js.Dynamic.literal(escapeComponent = js.Any.fromFunction1(escapeComponent), unescapeComponent = js.Any.fromFunction1(unescapeComponent))
     __obj.asInstanceOf[IUriEscapeStatics]
   }
   
-  @scala.inline
-  implicit class IUriEscapeStaticsMutableBuilder[Self <: IUriEscapeStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IUriEscapeStatics](x: Self) {
     
-    @scala.inline
-    def setEscapeComponent(value: String => String): Self = StObject.set(x, "escapeComponent", js.Any.fromFunction1(value))
+    inline def setEscapeComponent(value: String => String): Self = StObject.set(x, "escapeComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnescapeComponent(value: String => String): Self = StObject.set(x, "unescapeComponent", js.Any.fromFunction1(value))
+    inline def setUnescapeComponent(value: String => String): Self = StObject.set(x, "unescapeComponent", js.Any.fromFunction1(value))
   }
 }

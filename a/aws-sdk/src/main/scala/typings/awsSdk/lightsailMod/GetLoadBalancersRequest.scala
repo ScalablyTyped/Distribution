@@ -13,19 +13,15 @@ trait GetLoadBalancersRequest extends StObject {
 }
 object GetLoadBalancersRequest {
   
-  @scala.inline
-  def apply(): GetLoadBalancersRequest = {
+  inline def apply(): GetLoadBalancersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLoadBalancersRequest]
   }
   
-  @scala.inline
-  implicit class GetLoadBalancersRequestMutableBuilder[Self <: GetLoadBalancersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoadBalancersRequest](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

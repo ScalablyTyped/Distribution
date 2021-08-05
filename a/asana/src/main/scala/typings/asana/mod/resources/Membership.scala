@@ -12,22 +12,17 @@ trait Membership extends StObject {
 }
 object Membership {
   
-  @scala.inline
-  def apply(project: Resource): Membership = {
+  inline def apply(project: Resource): Membership = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], section = null)
     __obj.asInstanceOf[Membership]
   }
   
-  @scala.inline
-  implicit class MembershipMutableBuilder[Self <: Membership] (val x: Self) extends AnyVal {
+  extension [Self <: Membership](x: Self) {
     
-    @scala.inline
-    def setProject(value: Resource): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: Resource): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSection(value: Resource): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: Resource): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionNull: Self = StObject.set(x, "section", null)
+    inline def setSectionNull: Self = StObject.set(x, "section", null)
   }
 }

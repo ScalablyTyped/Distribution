@@ -12,19 +12,15 @@ trait ColId extends StObject {
 }
 object ColId {
   
-  @scala.inline
-  def apply(colId: String, sort: String): ColId = {
+  inline def apply(colId: String, sort: String): ColId = {
     val __obj = js.Dynamic.literal(colId = colId.asInstanceOf[js.Any], sort = sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColId]
   }
   
-  @scala.inline
-  implicit class ColIdMutableBuilder[Self <: ColId] (val x: Self) extends AnyVal {
+  extension [Self <: ColId](x: Self) {
     
-    @scala.inline
-    def setColId(value: String): Self = StObject.set(x, "colId", value.asInstanceOf[js.Any])
+    inline def setColId(value: String): Self = StObject.set(x, "colId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
   }
 }

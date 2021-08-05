@@ -15,6 +15,6 @@ trait FolderItemVerbs extends StObject {
   def Item(): FolderItemVerb = js.native
   def Item(index: js.Any): FolderItemVerb = js.native
   
-  @JSName("Shell32.FolderItemVerbs_typekey")
+  /* private */ @JSName("Shell32.FolderItemVerbs_typekey")
   var Shell32DotFolderItemVerbs_typekey: FolderItemVerbs = js.native
 }

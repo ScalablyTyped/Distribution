@@ -25,17 +25,14 @@ object anon {
   }
   object Filter {
     
-    @scala.inline
-    def apply(filter: typings.realm.Realm.Services.MongoDB.Filter): Filter = {
+    inline def apply(filter: typings.realm.Realm.Services.MongoDB.Filter): Filter = {
       val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setFilter(value: typings.realm.Realm.Services.MongoDB.Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: typings.realm.Realm.Services.MongoDB.Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,17 +43,14 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply[IdType](_id: IdType): Id[IdType] = {
+    inline def apply[IdType](_id: IdType): Id[IdType] = {
       val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id[IdType]]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id[?], IdType] (val x: Self & Id[IdType]) extends AnyVal {
+    extension [Self <: Id[?], IdType](x: Self & Id[IdType]) {
       
-      @scala.inline
-      def set_id(value: IdType): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: IdType): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,8 +63,7 @@ object anon {
   }
   object Ids {
     
-    @scala.inline
-    def apply[T /* <: Document[js.Any] */](
+    inline def apply[T /* <: Document[js.Any] */](
       ids: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
         ]
@@ -79,18 +72,15 @@ object anon {
       __obj.asInstanceOf[Ids[T]]
     }
     
-    @scala.inline
-    implicit class IdsMutableBuilder[Self <: Ids[?], T /* <: Document[js.Any] */] (val x: Self & Ids[T]) extends AnyVal {
+    extension [Self <: Ids[?], T /* <: Document[js.Any] */](x: Self & Ids[T]) {
       
-      @scala.inline
-      def setIds(
+      inline def setIds(
         value: js.Array[
               /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
             ]
       ): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any)*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: (/* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any)*): Self = StObject.set(x, "ids", js.Array(value :_*))
     }
   }
   
@@ -106,17 +96,14 @@ object anon {
   }
   object OmitDocumentNamespacecoll {
     
-    @scala.inline
-    def apply(db: String): OmitDocumentNamespacecoll = {
+    inline def apply(db: String): OmitDocumentNamespacecoll = {
       val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any])
       __obj.asInstanceOf[OmitDocumentNamespacecoll]
     }
     
-    @scala.inline
-    implicit class OmitDocumentNamespacecollMutableBuilder[Self <: OmitDocumentNamespacecoll] (val x: Self) extends AnyVal {
+    extension [Self <: OmitDocumentNamespacecoll](x: Self) {
       
-      @scala.inline
-      def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,8 +197,7 @@ object anon {
   }
   object TypeofCredentials {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anonymous: () => Credentials[AnonymousPayload],
       apple: String => Credentials[ApplePayload],
       emailPassword: (String, String) => Credentials[EmailPasswordPayload],
@@ -226,35 +212,25 @@ object anon {
       __obj.asInstanceOf[TypeofCredentials]
     }
     
-    @scala.inline
-    implicit class TypeofCredentialsMutableBuilder[Self <: TypeofCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofCredentials](x: Self) {
       
-      @scala.inline
-      def setAnonymous(value: () => Credentials[AnonymousPayload]): Self = StObject.set(x, "anonymous", js.Any.fromFunction0(value))
+      inline def setAnonymous(value: () => Credentials[AnonymousPayload]): Self = StObject.set(x, "anonymous", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setApple(value: String => Credentials[ApplePayload]): Self = StObject.set(x, "apple", js.Any.fromFunction1(value))
+      inline def setApple(value: String => Credentials[ApplePayload]): Self = StObject.set(x, "apple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmailPassword(value: (String, String) => Credentials[EmailPasswordPayload]): Self = StObject.set(x, "emailPassword", js.Any.fromFunction2(value))
+      inline def setEmailPassword(value: (String, String) => Credentials[EmailPasswordPayload]): Self = StObject.set(x, "emailPassword", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFacebook(value: String => Credentials[FacebookPayload]): Self = StObject.set(x, "facebook", js.Any.fromFunction1(value))
+      inline def setFacebook(value: String => Credentials[FacebookPayload]): Self = StObject.set(x, "facebook", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFunction(value: js.Any => Credentials[js.Any]): Self = StObject.set(x, "function", js.Any.fromFunction1(value))
+      inline def setFunction(value: js.Any => Credentials[js.Any]): Self = StObject.set(x, "function", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGoogle(value: String => Credentials[GooglePayload]): Self = StObject.set(x, "google", js.Any.fromFunction1(value))
+      inline def setGoogle(value: String => Credentials[GooglePayload]): Self = StObject.set(x, "google", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setJwt(value: String => Credentials[JWTPayload]): Self = StObject.set(x, "jwt", js.Any.fromFunction1(value))
+      inline def setJwt(value: String => Credentials[JWTPayload]): Self = StObject.set(x, "jwt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServerApiKey(value: String => Credentials[ApiKeyPayload]): Self = StObject.set(x, "serverApiKey", js.Any.fromFunction1(value))
+      inline def setServerApiKey(value: String => Credentials[ApiKeyPayload]): Self = StObject.set(x, "serverApiKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUserApiKey(value: String => Credentials[ApiKeyPayload]): Self = StObject.set(x, "userApiKey", js.Any.fromFunction1(value))
+      inline def setUserApiKey(value: String => Credentials[ApiKeyPayload]): Self = StObject.set(x, "userApiKey", js.Any.fromFunction1(value))
     }
   }
 }

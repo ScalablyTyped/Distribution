@@ -10,19 +10,15 @@ trait AnnotationsCrookedLineTypeLineOptions extends StObject {
 }
 object AnnotationsCrookedLineTypeLineOptions {
   
-  @scala.inline
-  def apply(): AnnotationsCrookedLineTypeLineOptions = {
+  inline def apply(): AnnotationsCrookedLineTypeLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsCrookedLineTypeLineOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsCrookedLineTypeLineOptionsMutableBuilder[Self <: AnnotationsCrookedLineTypeLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsCrookedLineTypeLineOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

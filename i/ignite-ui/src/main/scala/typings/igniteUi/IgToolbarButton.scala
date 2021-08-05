@@ -55,49 +55,35 @@ trait IgToolbarButton
 }
 object IgToolbarButton {
   
-  @scala.inline
-  def apply(): IgToolbarButton = {
+  inline def apply(): IgToolbarButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgToolbarButton]
   }
   
-  @scala.inline
-  implicit class IgToolbarButtonMutableBuilder[Self <: IgToolbarButton] (val x: Self) extends AnyVal {
+  extension [Self <: IgToolbarButton](x: Self) {
     
-    @scala.inline
-    def setActivated(value: (/* event */ Event, /* ui */ ActivatedEventUIParam) => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction2(value))
+    inline def setActivated(value: (/* event */ Event, /* ui */ ActivatedEventUIParam) => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setActivatedUndefined: Self = StObject.set(x, "activated", js.undefined)
+    inline def setActivatedUndefined: Self = StObject.set(x, "activated", js.undefined)
     
-    @scala.inline
-    def setActivating(value: (/* event */ Event, /* ui */ ActivatingEventUIParam) => Unit): Self = StObject.set(x, "activating", js.Any.fromFunction2(value))
+    inline def setActivating(value: (/* event */ Event, /* ui */ ActivatingEventUIParam) => Unit): Self = StObject.set(x, "activating", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setActivatingUndefined: Self = StObject.set(x, "activating", js.undefined)
+    inline def setActivatingUndefined: Self = StObject.set(x, "activating", js.undefined)
     
-    @scala.inline
-    def setAllowToggling(value: Boolean): Self = StObject.set(x, "allowToggling", value.asInstanceOf[js.Any])
+    inline def setAllowToggling(value: Boolean): Self = StObject.set(x, "allowToggling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowTogglingUndefined: Self = StObject.set(x, "allowToggling", js.undefined)
+    inline def setAllowTogglingUndefined: Self = StObject.set(x, "allowToggling", js.undefined)
     
-    @scala.inline
-    def setDeactivated(value: (/* event */ Event, /* ui */ DeactivatedEventUIParam) => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction2(value))
+    inline def setDeactivated(value: (/* event */ Event, /* ui */ DeactivatedEventUIParam) => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeactivatedUndefined: Self = StObject.set(x, "deactivated", js.undefined)
+    inline def setDeactivatedUndefined: Self = StObject.set(x, "deactivated", js.undefined)
     
-    @scala.inline
-    def setDeactivating(value: (/* event */ Event, /* ui */ DeactivatingEventUIParam) => Unit): Self = StObject.set(x, "deactivating", js.Any.fromFunction2(value))
+    inline def setDeactivating(value: (/* event */ Event, /* ui */ DeactivatingEventUIParam) => Unit): Self = StObject.set(x, "deactivating", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeactivatingUndefined: Self = StObject.set(x, "deactivating", js.undefined)
+    inline def setDeactivatingUndefined: Self = StObject.set(x, "deactivating", js.undefined)
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+    inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
   }
 }

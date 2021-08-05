@@ -17,20 +17,16 @@ trait ExportNamespaceSpecifier_
 }
 object ExportNamespaceSpecifier_ {
   
-  @scala.inline
-  def apply(end: Double, exported: Identifier_, loc: SourceLocation, start: Double): ExportNamespaceSpecifier_ = {
+  inline def apply(end: Double, exported: Identifier_, loc: SourceLocation, start: Double): ExportNamespaceSpecifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportNamespaceSpecifier")
     __obj.asInstanceOf[ExportNamespaceSpecifier_]
   }
   
-  @scala.inline
-  implicit class ExportNamespaceSpecifier_MutableBuilder[Self <: ExportNamespaceSpecifier_] (val x: Self) extends AnyVal {
+  extension [Self <: ExportNamespaceSpecifier_](x: Self) {
     
-    @scala.inline
-    def setExported(value: Identifier_): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
+    inline def setExported(value: Identifier_): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ExportNamespaceSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExportNamespaceSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

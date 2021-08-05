@@ -18,31 +18,23 @@ trait DescribeWorkspaceSnapshotsResult extends StObject {
 }
 object DescribeWorkspaceSnapshotsResult {
   
-  @scala.inline
-  def apply(): DescribeWorkspaceSnapshotsResult = {
+  inline def apply(): DescribeWorkspaceSnapshotsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkspaceSnapshotsResult]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspaceSnapshotsResultMutableBuilder[Self <: DescribeWorkspaceSnapshotsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspaceSnapshotsResult](x: Self) {
     
-    @scala.inline
-    def setRebuildSnapshots(value: SnapshotList): Self = StObject.set(x, "RebuildSnapshots", value.asInstanceOf[js.Any])
+    inline def setRebuildSnapshots(value: SnapshotList): Self = StObject.set(x, "RebuildSnapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRebuildSnapshotsUndefined: Self = StObject.set(x, "RebuildSnapshots", js.undefined)
+    inline def setRebuildSnapshotsUndefined: Self = StObject.set(x, "RebuildSnapshots", js.undefined)
     
-    @scala.inline
-    def setRebuildSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RebuildSnapshots", js.Array(value :_*))
+    inline def setRebuildSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RebuildSnapshots", js.Array(value :_*))
     
-    @scala.inline
-    def setRestoreSnapshots(value: SnapshotList): Self = StObject.set(x, "RestoreSnapshots", value.asInstanceOf[js.Any])
+    inline def setRestoreSnapshots(value: SnapshotList): Self = StObject.set(x, "RestoreSnapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreSnapshotsUndefined: Self = StObject.set(x, "RestoreSnapshots", js.undefined)
+    inline def setRestoreSnapshotsUndefined: Self = StObject.set(x, "RestoreSnapshots", js.undefined)
     
-    @scala.inline
-    def setRestoreSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RestoreSnapshots", js.Array(value :_*))
+    inline def setRestoreSnapshotsVarargs(value: Snapshot*): Self = StObject.set(x, "RestoreSnapshots", js.Array(value :_*))
   }
 }

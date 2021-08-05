@@ -19,8 +19,7 @@ trait NormalizationCondition
 }
 object NormalizationCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     condition: String,
     kind: String,
     passingValue: Boolean,
@@ -30,22 +29,16 @@ object NormalizationCondition {
     __obj.asInstanceOf[NormalizationCondition]
   }
   
-  @scala.inline
-  implicit class NormalizationConditionMutableBuilder[Self <: NormalizationCondition] (val x: Self) extends AnyVal {
+  extension [Self <: NormalizationCondition](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassingValue(value: Boolean): Self = StObject.set(x, "passingValue", value.asInstanceOf[js.Any])
+    inline def setPassingValue(value: Boolean): Self = StObject.set(x, "passingValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
+    inline def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
   }
 }

@@ -13,16 +13,13 @@ trait DescribeAutoMLJobRequest extends StObject {
 }
 object DescribeAutoMLJobRequest {
   
-  @scala.inline
-  def apply(AutoMLJobName: AutoMLJobName): DescribeAutoMLJobRequest = {
+  inline def apply(AutoMLJobName: AutoMLJobName): DescribeAutoMLJobRequest = {
     val __obj = js.Dynamic.literal(AutoMLJobName = AutoMLJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAutoMLJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAutoMLJobRequestMutableBuilder[Self <: DescribeAutoMLJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAutoMLJobRequest](x: Self) {
     
-    @scala.inline
-    def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
+    inline def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
   }
 }

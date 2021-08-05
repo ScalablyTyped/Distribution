@@ -19,19 +19,15 @@ trait ParamsResourceColorsGet
 }
 object ParamsResourceColorsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceColorsGet = {
+  inline def apply(): ParamsResourceColorsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceColorsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceColorsGetMutableBuilder[Self <: ParamsResourceColorsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceColorsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

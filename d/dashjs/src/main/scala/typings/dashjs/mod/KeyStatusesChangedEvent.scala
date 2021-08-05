@@ -16,20 +16,16 @@ trait KeyStatusesChangedEvent
 }
 object KeyStatusesChangedEvent {
   
-  @scala.inline
-  def apply(data: SessionToken): KeyStatusesChangedEvent = {
+  inline def apply(data: SessionToken): KeyStatusesChangedEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("public_keyStatusesChanged")
     __obj.asInstanceOf[KeyStatusesChangedEvent]
   }
   
-  @scala.inline
-  implicit class KeyStatusesChangedEventMutableBuilder[Self <: KeyStatusesChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyStatusesChangedEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: SessionToken): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: SessionToken): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: public_keyStatusesChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: public_keyStatusesChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

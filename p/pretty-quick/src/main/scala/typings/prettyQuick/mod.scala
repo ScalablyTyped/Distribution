@@ -14,10 +14,8 @@ object mod {
     * * Git
     * * Mercurial
     */
-  @scala.inline
-  def apply(currentDirectory: String): Results = ^.asInstanceOf[js.Dynamic].apply(currentDirectory.asInstanceOf[js.Any]).asInstanceOf[Results]
-  @scala.inline
-  def apply(currentDirectory: String, options: Options): Results = (^.asInstanceOf[js.Dynamic].apply(currentDirectory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Results]
+  inline def apply(currentDirectory: String): Results = ^.asInstanceOf[js.Dynamic].apply(currentDirectory.asInstanceOf[js.Any]).asInstanceOf[Results]
+  inline def apply(currentDirectory: String, options: Options): Results = (^.asInstanceOf[js.Dynamic].apply(currentDirectory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Results]
   
   @JSImport("pretty-quick", JSImport.Namespace)
   @js.native
@@ -65,107 +63,74 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
+      inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
+      inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
       
-      @scala.inline
-      def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+      inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
       
-      @scala.inline
-      def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setConfig(value: ResolveConfigOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: ResolveConfigOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setOnCheckFile(value: (/* file */ String, /* isFormatted */ Boolean) => Unit): Self = StObject.set(x, "onCheckFile", js.Any.fromFunction2(value))
+      inline def setOnCheckFile(value: (/* file */ String, /* isFormatted */ Boolean) => Unit): Self = StObject.set(x, "onCheckFile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCheckFileUndefined: Self = StObject.set(x, "onCheckFile", js.undefined)
+      inline def setOnCheckFileUndefined: Self = StObject.set(x, "onCheckFile", js.undefined)
       
-      @scala.inline
-      def setOnExamineFile(value: /* file */ String => Unit): Self = StObject.set(x, "onExamineFile", js.Any.fromFunction1(value))
+      inline def setOnExamineFile(value: /* file */ String => Unit): Self = StObject.set(x, "onExamineFile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExamineFileUndefined: Self = StObject.set(x, "onExamineFile", js.undefined)
+      inline def setOnExamineFileUndefined: Self = StObject.set(x, "onExamineFile", js.undefined)
       
-      @scala.inline
-      def setOnFoundChangedFiles(value: /* changedFiles */ js.Array[String] => Unit): Self = StObject.set(x, "onFoundChangedFiles", js.Any.fromFunction1(value))
+      inline def setOnFoundChangedFiles(value: /* changedFiles */ js.Array[String] => Unit): Self = StObject.set(x, "onFoundChangedFiles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFoundChangedFilesUndefined: Self = StObject.set(x, "onFoundChangedFiles", js.undefined)
+      inline def setOnFoundChangedFilesUndefined: Self = StObject.set(x, "onFoundChangedFiles", js.undefined)
       
-      @scala.inline
-      def setOnFoundSinceRevision(value: (/* name */ String, /* revision */ String) => Unit): Self = StObject.set(x, "onFoundSinceRevision", js.Any.fromFunction2(value))
+      inline def setOnFoundSinceRevision(value: (/* name */ String, /* revision */ String) => Unit): Self = StObject.set(x, "onFoundSinceRevision", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFoundSinceRevisionUndefined: Self = StObject.set(x, "onFoundSinceRevision", js.undefined)
+      inline def setOnFoundSinceRevisionUndefined: Self = StObject.set(x, "onFoundSinceRevision", js.undefined)
       
-      @scala.inline
-      def setOnPartiallyStagedFile(value: /* file */ String => Unit): Self = StObject.set(x, "onPartiallyStagedFile", js.Any.fromFunction1(value))
+      inline def setOnPartiallyStagedFile(value: /* file */ String => Unit): Self = StObject.set(x, "onPartiallyStagedFile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPartiallyStagedFileUndefined: Self = StObject.set(x, "onPartiallyStagedFile", js.undefined)
+      inline def setOnPartiallyStagedFileUndefined: Self = StObject.set(x, "onPartiallyStagedFile", js.undefined)
       
-      @scala.inline
-      def setOnWriteFile(value: /* file */ String => Unit): Self = StObject.set(x, "onWriteFile", js.Any.fromFunction1(value))
+      inline def setOnWriteFile(value: /* file */ String => Unit): Self = StObject.set(x, "onWriteFile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWriteFileUndefined: Self = StObject.set(x, "onWriteFile", js.undefined)
+      inline def setOnWriteFileUndefined: Self = StObject.set(x, "onWriteFile", js.undefined)
       
-      @scala.inline
-      def setPattern(value: String | js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String | js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      @scala.inline
-      def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+      inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
       
-      @scala.inline
-      def setRestage(value: Boolean): Self = StObject.set(x, "restage", value.asInstanceOf[js.Any])
+      inline def setRestage(value: Boolean): Self = StObject.set(x, "restage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestageUndefined: Self = StObject.set(x, "restage", js.undefined)
+      inline def setRestageUndefined: Self = StObject.set(x, "restage", js.undefined)
       
-      @scala.inline
-      def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+      inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+      inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
       
-      @scala.inline
-      def setStaged(value: Boolean): Self = StObject.set(x, "staged", value.asInstanceOf[js.Any])
+      inline def setStaged(value: Boolean): Self = StObject.set(x, "staged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStagedUndefined: Self = StObject.set(x, "staged", js.undefined)
+      inline def setStagedUndefined: Self = StObject.set(x, "staged", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -177,23 +142,18 @@ object mod {
   }
   object Results {
     
-    @scala.inline
-    def apply(errors: js.Array[String], success: Boolean): Results = {
+    inline def apply(errors: js.Array[String], success: Boolean): Results = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
     
-    @scala.inline
-    implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+    extension [Self <: Results](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,22 +14,17 @@ trait PeerId extends StObject {
 }
 object PeerId {
   
-  @scala.inline
-  def apply(ctx: Print, peerId: js.Any, timeout: js.Any): PeerId = {
+  inline def apply(ctx: Print, peerId: js.Any, timeout: js.Any): PeerId = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeerId]
   }
   
-  @scala.inline
-  implicit class PeerIdMutableBuilder[Self <: PeerId] (val x: Self) extends AnyVal {
+  extension [Self <: PeerId](x: Self) {
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerId(value: js.Any): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    inline def setPeerId(value: js.Any): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

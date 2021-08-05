@@ -18,19 +18,15 @@ trait SchemaShieldedVmIntegrityPolicy extends StObject {
 }
 object SchemaShieldedVmIntegrityPolicy {
   
-  @scala.inline
-  def apply(): SchemaShieldedVmIntegrityPolicy = {
+  inline def apply(): SchemaShieldedVmIntegrityPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShieldedVmIntegrityPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaShieldedVmIntegrityPolicyMutableBuilder[Self <: SchemaShieldedVmIntegrityPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShieldedVmIntegrityPolicy](x: Self) {
     
-    @scala.inline
-    def setUpdateAutoLearnPolicy(value: Boolean): Self = StObject.set(x, "updateAutoLearnPolicy", value.asInstanceOf[js.Any])
+    inline def setUpdateAutoLearnPolicy(value: Boolean): Self = StObject.set(x, "updateAutoLearnPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAutoLearnPolicyUndefined: Self = StObject.set(x, "updateAutoLearnPolicy", js.undefined)
+    inline def setUpdateAutoLearnPolicyUndefined: Self = StObject.set(x, "updateAutoLearnPolicy", js.undefined)
   }
 }

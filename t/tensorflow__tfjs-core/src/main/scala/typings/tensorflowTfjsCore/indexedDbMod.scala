@@ -24,7 +24,7 @@ object indexedDbMod {
     extends StObject
        with ModelStoreManager {
     
-    var indexedDB: js.Any = js.native
+    /* private */ var indexedDB: js.Any = js.native
     
     /**
       * List all models in the model store.
@@ -69,14 +69,14 @@ object indexedDbMod {
       * @returns A `Promise` of `SaveResult`, if the action is put, or a `Promise`
       *   of `ModelArtifacts`, if the action is get.
       */
-    var databaseAction: js.Any = js.native
+    /* private */ var databaseAction: js.Any = js.native
     
-    val indexedDB: IDBFactory = js.native
+    /* protected */ val indexedDB: IDBFactory = js.native
     
     @JSName("load")
     def load_MBrowserIndexedDB_(): js.Promise[ModelArtifacts] = js.native
     
-    val modelPath: String = js.native
+    /* protected */ val modelPath: String = js.native
     
     @JSName("save")
     def save_MBrowserIndexedDB_(modelArtifacts: ModelArtifacts): js.Promise[SaveResult] = js.native
@@ -89,11 +89,9 @@ object indexedDbMod {
     val URL_SCHEME: /* "indexeddb://" */ String = js.native
   }
   
-  @scala.inline
-  def browserIndexedDB(modelPath: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserIndexedDB")(modelPath.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  inline def browserIndexedDB(modelPath: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserIndexedDB")(modelPath.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
   
-  @scala.inline
-  def deleteDatabase(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")().asInstanceOf[js.Promise[Unit]]
+  inline def deleteDatabase(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDatabase")().asInstanceOf[js.Promise[Unit]]
   
   @JSImport("@tensorflow/tfjs-core/dist/io/indexed_db", "indexedDBRouter")
   @js.native

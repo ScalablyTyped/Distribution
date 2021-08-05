@@ -26,8 +26,7 @@ trait TypeofPathConstraintMixTi extends StObject {
 }
 object TypeofPathConstraintMixTi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ENTRIES: Double,
     PREV_ROTATE: Double,
     PREV_TIME: Double,
@@ -39,25 +38,18 @@ object TypeofPathConstraintMixTi {
     __obj.asInstanceOf[TypeofPathConstraintMixTi]
   }
   
-  @scala.inline
-  implicit class TypeofPathConstraintMixTiMutableBuilder[Self <: TypeofPathConstraintMixTi] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPathConstraintMixTi](x: Self) {
     
-    @scala.inline
-    def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
+    inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_ROTATE(value: Double): Self = StObject.set(x, "PREV_ROTATE", value.asInstanceOf[js.Any])
+    inline def setPREV_ROTATE(value: Double): Self = StObject.set(x, "PREV_ROTATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
+    inline def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_TRANSLATE(value: Double): Self = StObject.set(x, "PREV_TRANSLATE", value.asInstanceOf[js.Any])
+    inline def setPREV_TRANSLATE(value: Double): Self = StObject.set(x, "PREV_TRANSLATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setROTATE(value: Double): Self = StObject.set(x, "ROTATE", value.asInstanceOf[js.Any])
+    inline def setROTATE(value: Double): Self = StObject.set(x, "ROTATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTRANSLATE(value: Double): Self = StObject.set(x, "TRANSLATE", value.asInstanceOf[js.Any])
+    inline def setTRANSLATE(value: Double): Self = StObject.set(x, "TRANSLATE", value.asInstanceOf[js.Any])
   }
 }

@@ -20,31 +20,23 @@ trait GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpecMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec](x: Self) {
     
-    @scala.inline
-    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setShardCount(value: String): Self = StObject.set(x, "shardCount", value.asInstanceOf[js.Any])
+    inline def setShardCount(value: String): Self = StObject.set(x, "shardCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardCountUndefined: Self = StObject.set(x, "shardCount", js.undefined)
+    inline def setShardCountUndefined: Self = StObject.set(x, "shardCount", js.undefined)
     
-    @scala.inline
-    def setTablePrefix(value: String): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
+    inline def setTablePrefix(value: String): Self = StObject.set(x, "tablePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
+    inline def setTablePrefixUndefined: Self = StObject.set(x, "tablePrefix", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait INDLicenseFetchCompletedEventArgs extends StObject {
 }
 object INDLicenseFetchCompletedEventArgs {
   
-  @scala.inline
-  def apply(responseCustomData: INDCustomData): INDLicenseFetchCompletedEventArgs = {
+  inline def apply(responseCustomData: INDCustomData): INDLicenseFetchCompletedEventArgs = {
     val __obj = js.Dynamic.literal(responseCustomData = responseCustomData.asInstanceOf[js.Any])
     __obj.asInstanceOf[INDLicenseFetchCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class INDLicenseFetchCompletedEventArgsMutableBuilder[Self <: INDLicenseFetchCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: INDLicenseFetchCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setResponseCustomData(value: INDCustomData): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
+    inline def setResponseCustomData(value: INDCustomData): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
   }
 }

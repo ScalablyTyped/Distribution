@@ -58,67 +58,47 @@ trait SchemaListUpdateResponse extends StObject {
 }
 object SchemaListUpdateResponse {
   
-  @scala.inline
-  def apply(): SchemaListUpdateResponse = {
+  inline def apply(): SchemaListUpdateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListUpdateResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListUpdateResponseMutableBuilder[Self <: SchemaListUpdateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListUpdateResponse](x: Self) {
     
-    @scala.inline
-    def setAdditions(value: js.Array[SchemaThreatEntrySet]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
+    inline def setAdditions(value: js.Array[SchemaThreatEntrySet]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionsUndefined: Self = StObject.set(x, "additions", js.undefined)
+    inline def setAdditionsUndefined: Self = StObject.set(x, "additions", js.undefined)
     
-    @scala.inline
-    def setAdditionsVarargs(value: SchemaThreatEntrySet*): Self = StObject.set(x, "additions", js.Array(value :_*))
+    inline def setAdditionsVarargs(value: SchemaThreatEntrySet*): Self = StObject.set(x, "additions", js.Array(value :_*))
     
-    @scala.inline
-    def setChecksum(value: SchemaChecksum): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: SchemaChecksum): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setNewClientState(value: String): Self = StObject.set(x, "newClientState", value.asInstanceOf[js.Any])
+    inline def setNewClientState(value: String): Self = StObject.set(x, "newClientState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewClientStateUndefined: Self = StObject.set(x, "newClientState", js.undefined)
+    inline def setNewClientStateUndefined: Self = StObject.set(x, "newClientState", js.undefined)
     
-    @scala.inline
-    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
+    inline def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
+    inline def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
-    @scala.inline
-    def setRemovals(value: js.Array[SchemaThreatEntrySet]): Self = StObject.set(x, "removals", value.asInstanceOf[js.Any])
+    inline def setRemovals(value: js.Array[SchemaThreatEntrySet]): Self = StObject.set(x, "removals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovalsUndefined: Self = StObject.set(x, "removals", js.undefined)
+    inline def setRemovalsUndefined: Self = StObject.set(x, "removals", js.undefined)
     
-    @scala.inline
-    def setRemovalsVarargs(value: SchemaThreatEntrySet*): Self = StObject.set(x, "removals", js.Array(value :_*))
+    inline def setRemovalsVarargs(value: SchemaThreatEntrySet*): Self = StObject.set(x, "removals", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setThreatEntryType(value: String): Self = StObject.set(x, "threatEntryType", value.asInstanceOf[js.Any])
+    inline def setThreatEntryType(value: String): Self = StObject.set(x, "threatEntryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatEntryTypeUndefined: Self = StObject.set(x, "threatEntryType", js.undefined)
+    inline def setThreatEntryTypeUndefined: Self = StObject.set(x, "threatEntryType", js.undefined)
     
-    @scala.inline
-    def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
+    inline def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
+    inline def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
   }
 }

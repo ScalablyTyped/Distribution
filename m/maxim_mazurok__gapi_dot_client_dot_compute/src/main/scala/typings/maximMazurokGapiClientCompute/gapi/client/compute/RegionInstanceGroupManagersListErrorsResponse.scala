@@ -17,28 +17,21 @@ trait RegionInstanceGroupManagersListErrorsResponse extends StObject {
 }
 object RegionInstanceGroupManagersListErrorsResponse {
   
-  @scala.inline
-  def apply(): RegionInstanceGroupManagersListErrorsResponse = {
+  inline def apply(): RegionInstanceGroupManagersListErrorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionInstanceGroupManagersListErrorsResponse]
   }
   
-  @scala.inline
-  implicit class RegionInstanceGroupManagersListErrorsResponseMutableBuilder[Self <: RegionInstanceGroupManagersListErrorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegionInstanceGroupManagersListErrorsResponse](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[InstanceManagedByIgmError]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[InstanceManagedByIgmError]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: InstanceManagedByIgmError*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: InstanceManagedByIgmError*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

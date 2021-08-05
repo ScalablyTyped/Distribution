@@ -13,22 +13,17 @@ trait DeleteAttributesResponse extends StObject {
 }
 object DeleteAttributesResponse {
   
-  @scala.inline
-  def apply(): DeleteAttributesResponse = {
+  inline def apply(): DeleteAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteAttributesResponse]
   }
   
-  @scala.inline
-  implicit class DeleteAttributesResponseMutableBuilder[Self <: DeleteAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
   }
 }

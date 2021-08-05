@@ -18,22 +18,17 @@ trait UpdateDimensionRequest extends StObject {
 }
 object UpdateDimensionRequest {
   
-  @scala.inline
-  def apply(name: DimensionName, stringValues: DimensionStringValues): UpdateDimensionRequest = {
+  inline def apply(name: DimensionName, stringValues: DimensionStringValues): UpdateDimensionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], stringValues = stringValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDimensionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDimensionRequestMutableBuilder[Self <: UpdateDimensionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDimensionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValues(value: DimensionStringValues): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
+    inline def setStringValues(value: DimensionStringValues): Self = StObject.set(x, "stringValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValuesVarargs(value: DimensionStringValue*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
+    inline def setStringValuesVarargs(value: DimensionStringValue*): Self = StObject.set(x, "stringValues", js.Array(value :_*))
   }
 }

@@ -14,28 +14,21 @@ trait DeleteAssignedTargetingOptionsRequest extends StObject {
 }
 object DeleteAssignedTargetingOptionsRequest {
   
-  @scala.inline
-  def apply(): DeleteAssignedTargetingOptionsRequest = {
+  inline def apply(): DeleteAssignedTargetingOptionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteAssignedTargetingOptionsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAssignedTargetingOptionsRequestMutableBuilder[Self <: DeleteAssignedTargetingOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAssignedTargetingOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setAssignedTargetingOptionIds(value: js.Array[String]): Self = StObject.set(x, "assignedTargetingOptionIds", value.asInstanceOf[js.Any])
+    inline def setAssignedTargetingOptionIds(value: js.Array[String]): Self = StObject.set(x, "assignedTargetingOptionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedTargetingOptionIdsUndefined: Self = StObject.set(x, "assignedTargetingOptionIds", js.undefined)
+    inline def setAssignedTargetingOptionIdsUndefined: Self = StObject.set(x, "assignedTargetingOptionIds", js.undefined)
     
-    @scala.inline
-    def setAssignedTargetingOptionIdsVarargs(value: String*): Self = StObject.set(x, "assignedTargetingOptionIds", js.Array(value :_*))
+    inline def setAssignedTargetingOptionIdsVarargs(value: String*): Self = StObject.set(x, "assignedTargetingOptionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
+    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingTypeUndefined: Self = StObject.set(x, "targetingType", js.undefined)
+    inline def setTargetingTypeUndefined: Self = StObject.set(x, "targetingType", js.undefined)
   }
 }

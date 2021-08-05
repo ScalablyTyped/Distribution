@@ -78,22 +78,18 @@ object anon {
   }
   object Typeofpromisify {
     
-    @scala.inline
-    def apply(): Typeofpromisify = {
+    inline def apply(): Typeofpromisify = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Typeofpromisify]
     }
     
-    @scala.inline
-    implicit class TypeofpromisifyMutableBuilder[Self <: Typeofpromisify] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofpromisify](x: Self) {
       
-      @scala.inline
-      def setCustomPromisifyArgs(
+      inline def setCustomPromisifyArgs(
         value: /* import warning: importer.ImportType#apply Failed type conversion: typeof polyfill.customPromisifyArgs */ js.Any
       ): Self = StObject.set(x, "customPromisifyArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomPromisifyArgsUndefined: Self = StObject.set(x, "customPromisifyArgs", js.undefined)
+      inline def setCustomPromisifyArgsUndefined: Self = StObject.set(x, "customPromisifyArgs", js.undefined)
     }
   }
 }

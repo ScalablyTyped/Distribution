@@ -15,20 +15,16 @@ trait MissingParams
 }
 object MissingParams {
   
-  @scala.inline
-  def apply(params: String | js.Array[String], `type`: String): MissingParams = {
+  inline def apply(params: String | js.Array[String], `type`: String): MissingParams = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MissingParams]
   }
   
-  @scala.inline
-  implicit class MissingParamsMutableBuilder[Self <: MissingParams] (val x: Self) extends AnyVal {
+  extension [Self <: MissingParams](x: Self) {
     
-    @scala.inline
-    def setParams(value: String | js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: String | js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
   }
 }

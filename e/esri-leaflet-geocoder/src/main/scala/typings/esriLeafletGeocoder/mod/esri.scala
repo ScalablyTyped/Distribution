@@ -1689,54 +1689,36 @@ object esri {
       def within(bounds: LatLngBoundsExpression): this.type = js.native
     }
     
-    @scala.inline
-    def arcgisOnlineProvider(): ArcgisOnlineProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arcgisOnlineProvider")().asInstanceOf[ArcgisOnlineProvider_]
-    @scala.inline
-    def arcgisOnlineProvider(options: ArcgisOnlineProviderOptions): ArcgisOnlineProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arcgisOnlineProvider")(options.asInstanceOf[js.Any]).asInstanceOf[ArcgisOnlineProvider_]
+    inline def arcgisOnlineProvider(): ArcgisOnlineProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arcgisOnlineProvider")().asInstanceOf[ArcgisOnlineProvider_]
+    inline def arcgisOnlineProvider(options: ArcgisOnlineProviderOptions): ArcgisOnlineProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arcgisOnlineProvider")(options.asInstanceOf[js.Any]).asInstanceOf[ArcgisOnlineProvider_]
     
-    @scala.inline
-    def featureLayerProvider(): FeatureLayerProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayerProvider")().asInstanceOf[FeatureLayerProvider_]
-    @scala.inline
-    def featureLayerProvider(options: FeatureLayerProviderOptions): FeatureLayerProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayerProvider")(options.asInstanceOf[js.Any]).asInstanceOf[FeatureLayerProvider_]
+    inline def featureLayerProvider(): FeatureLayerProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayerProvider")().asInstanceOf[FeatureLayerProvider_]
+    inline def featureLayerProvider(options: FeatureLayerProviderOptions): FeatureLayerProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("featureLayerProvider")(options.asInstanceOf[js.Any]).asInstanceOf[FeatureLayerProvider_]
     
-    @scala.inline
-    def geocode(): Geocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocode")().asInstanceOf[Geocode_]
-    @scala.inline
-    def geocode(
+    inline def geocode(): Geocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocode")().asInstanceOf[Geocode_]
+    inline def geocode(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service */ js.Any
     ): Geocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocode")(options.asInstanceOf[js.Any]).asInstanceOf[Geocode_]
     
-    @scala.inline
-    def geocodeService(): GeocodeService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeService")().asInstanceOf[GeocodeService_]
-    @scala.inline
-    def geocodeService(options: GeocodeServiceOptions): GeocodeService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeService")(options.asInstanceOf[js.Any]).asInstanceOf[GeocodeService_]
+    inline def geocodeService(): GeocodeService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeService")().asInstanceOf[GeocodeService_]
+    inline def geocodeService(options: GeocodeServiceOptions): GeocodeService_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeService")(options.asInstanceOf[js.Any]).asInstanceOf[GeocodeService_]
     
-    @scala.inline
-    def geocodeServiceProvider(): GeocodeServiceProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeServiceProvider")().asInstanceOf[GeocodeServiceProvider_]
-    @scala.inline
-    def geocodeServiceProvider(options: GeocodeServiceProviderOptions): GeocodeServiceProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeServiceProvider")(options.asInstanceOf[js.Any]).asInstanceOf[GeocodeServiceProvider_]
+    inline def geocodeServiceProvider(): GeocodeServiceProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeServiceProvider")().asInstanceOf[GeocodeServiceProvider_]
+    inline def geocodeServiceProvider(options: GeocodeServiceProviderOptions): GeocodeServiceProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeServiceProvider")(options.asInstanceOf[js.Any]).asInstanceOf[GeocodeServiceProvider_]
     
-    @scala.inline
-    def geosearch(): typings.esriLeafletGeocoder.mod.esri.Geocoding.Geosearch_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geosearch")().asInstanceOf[typings.esriLeafletGeocoder.mod.esri.Geocoding.Geosearch_]
-    @scala.inline
-    def geosearch(options: GeosearchObject): typings.esriLeafletGeocoder.mod.esri.Geocoding.Geosearch_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geosearch")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeafletGeocoder.mod.esri.Geocoding.Geosearch_]
+    inline def geosearch(): typings.esriLeafletGeocoder.mod.esri.Geocoding.Geosearch_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geosearch")().asInstanceOf[typings.esriLeafletGeocoder.mod.esri.Geocoding.Geosearch_]
+    inline def geosearch(options: GeosearchObject): typings.esriLeafletGeocoder.mod.esri.Geocoding.Geosearch_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geosearch")(options.asInstanceOf[js.Any]).asInstanceOf[typings.esriLeafletGeocoder.mod.esri.Geocoding.Geosearch_]
     
-    @scala.inline
-    def mapServiceProvider(): MapServiceProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapServiceProvider")().asInstanceOf[MapServiceProvider_]
-    @scala.inline
-    def mapServiceProvider(options: MapServiceProviderOptions): MapServiceProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapServiceProvider")(options.asInstanceOf[js.Any]).asInstanceOf[MapServiceProvider_]
+    inline def mapServiceProvider(): MapServiceProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapServiceProvider")().asInstanceOf[MapServiceProvider_]
+    inline def mapServiceProvider(options: MapServiceProviderOptions): MapServiceProvider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("mapServiceProvider")(options.asInstanceOf[js.Any]).asInstanceOf[MapServiceProvider_]
     
-    @scala.inline
-    def reverseGeocode(): ReverseGeocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")().asInstanceOf[ReverseGeocode_]
-    @scala.inline
-    def reverseGeocode(
+    inline def reverseGeocode(): ReverseGeocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")().asInstanceOf[ReverseGeocode_]
+    inline def reverseGeocode(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service */ js.Any
     ): ReverseGeocode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(options.asInstanceOf[js.Any]).asInstanceOf[ReverseGeocode_]
     
-    @scala.inline
-    def suggest(): Suggest_ = ^.asInstanceOf[js.Dynamic].applyDynamic("suggest")().asInstanceOf[Suggest_]
-    @scala.inline
-    def suggest(
+    inline def suggest(): Suggest_ = ^.asInstanceOf[js.Dynamic].applyDynamic("suggest")().asInstanceOf[Suggest_]
+    inline def suggest(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TaskOptions */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Service */ js.Any
     ): Suggest_ = ^.asInstanceOf[js.Dynamic].applyDynamic("suggest")(options.asInstanceOf[js.Any]).asInstanceOf[Suggest_]
     
@@ -1752,38 +1734,28 @@ object esri {
     }
     object ArcgisOnlineProviderOptions {
       
-      @scala.inline
-      def apply(): ArcgisOnlineProviderOptions = {
+      inline def apply(): ArcgisOnlineProviderOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ArcgisOnlineProviderOptions]
       }
       
-      @scala.inline
-      implicit class ArcgisOnlineProviderOptionsMutableBuilder[Self <: ArcgisOnlineProviderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ArcgisOnlineProviderOptions](x: Self) {
         
-        @scala.inline
-        def setCategories(value: String | js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+        inline def setCategories(value: String | js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+        inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
         
-        @scala.inline
-        def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+        inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
         
-        @scala.inline
-        def setCountries(value: String | js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+        inline def setCountries(value: String | js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
+        inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
         
-        @scala.inline
-        def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+        inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
         
-        @scala.inline
-        def setForStorage(value: Boolean): Self = StObject.set(x, "forStorage", value.asInstanceOf[js.Any])
+        inline def setForStorage(value: Boolean): Self = StObject.set(x, "forStorage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForStorageUndefined: Self = StObject.set(x, "forStorage", js.undefined)
+        inline def setForStorageUndefined: Self = StObject.set(x, "forStorage", js.undefined)
       }
     }
     
@@ -1799,41 +1771,30 @@ object esri {
     }
     object BaseProviderOptions {
       
-      @scala.inline
-      def apply(): BaseProviderOptions = {
+      inline def apply(): BaseProviderOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BaseProviderOptions]
       }
       
-      @scala.inline
-      implicit class BaseProviderOptionsMutableBuilder[Self <: BaseProviderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: BaseProviderOptions](x: Self) {
         
-        @scala.inline
-        def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+        inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+        inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+        inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+        inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
         
-        @scala.inline
-        def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+        inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTokenNull: Self = StObject.set(x, "token", null)
+        inline def setTokenNull: Self = StObject.set(x, "token", null)
         
-        @scala.inline
-        def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+        inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       }
     }
     
@@ -1851,38 +1812,28 @@ object esri {
     }
     object FeatureLayerProviderOptions {
       
-      @scala.inline
-      def apply(url: String): FeatureLayerProviderOptions = {
+      inline def apply(url: String): FeatureLayerProviderOptions = {
         val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[FeatureLayerProviderOptions]
       }
       
-      @scala.inline
-      implicit class FeatureLayerProviderOptionsMutableBuilder[Self <: FeatureLayerProviderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: FeatureLayerProviderOptions](x: Self) {
         
-        @scala.inline
-        def setBufferRadius(value: Double): Self = StObject.set(x, "bufferRadius", value.asInstanceOf[js.Any])
+        inline def setBufferRadius(value: Double): Self = StObject.set(x, "bufferRadius", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBufferRadiusUndefined: Self = StObject.set(x, "bufferRadius", js.undefined)
+        inline def setBufferRadiusUndefined: Self = StObject.set(x, "bufferRadius", js.undefined)
         
-        @scala.inline
-        def setFormatSuggestion(value: /* featureInformation */ js.Any => String): Self = StObject.set(x, "formatSuggestion", js.Any.fromFunction1(value))
+        inline def setFormatSuggestion(value: /* featureInformation */ js.Any => String): Self = StObject.set(x, "formatSuggestion", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFormatSuggestionUndefined: Self = StObject.set(x, "formatSuggestion", js.undefined)
+        inline def setFormatSuggestionUndefined: Self = StObject.set(x, "formatSuggestion", js.undefined)
         
-        @scala.inline
-        def setSearchFields(value: String | js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
+        inline def setSearchFields(value: String | js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearchFieldsUndefined: Self = StObject.set(x, "searchFields", js.undefined)
+        inline def setSearchFieldsUndefined: Self = StObject.set(x, "searchFields", js.undefined)
         
-        @scala.inline
-        def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
+        inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1893,20 +1844,16 @@ object esri {
     }
     object GeocodeServiceOptions {
       
-      @scala.inline
-      def apply(): GeocodeServiceOptions = {
+      inline def apply(): GeocodeServiceOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GeocodeServiceOptions]
       }
       
-      @scala.inline
-      implicit class GeocodeServiceOptionsMutableBuilder[Self <: GeocodeServiceOptions] (val x: Self) extends AnyVal {
+      extension [Self <: GeocodeServiceOptions](x: Self) {
         
-        @scala.inline
-        def setSupportsSuggest(value: Boolean): Self = StObject.set(x, "supportsSuggest", value.asInstanceOf[js.Any])
+        inline def setSupportsSuggest(value: Boolean): Self = StObject.set(x, "supportsSuggest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSupportsSuggestUndefined: Self = StObject.set(x, "supportsSuggest", js.undefined)
+        inline def setSupportsSuggestUndefined: Self = StObject.set(x, "supportsSuggest", js.undefined)
       }
     }
     
@@ -1918,17 +1865,14 @@ object esri {
     }
     object GeocodeServiceProviderOptions {
       
-      @scala.inline
-      def apply(url: String): GeocodeServiceProviderOptions = {
+      inline def apply(url: String): GeocodeServiceProviderOptions = {
         val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[GeocodeServiceProviderOptions]
       }
       
-      @scala.inline
-      implicit class GeocodeServiceProviderOptionsMutableBuilder[Self <: GeocodeServiceProviderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: GeocodeServiceProviderOptions](x: Self) {
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1975,83 +1919,58 @@ object esri {
     }
     object GeosearchObject {
       
-      @scala.inline
-      def apply(): GeosearchObject = {
+      inline def apply(): GeosearchObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GeosearchObject]
       }
       
-      @scala.inline
-      implicit class GeosearchObjectMutableBuilder[Self <: GeosearchObject] (val x: Self) extends AnyVal {
+      extension [Self <: GeosearchObject](x: Self) {
         
-        @scala.inline
-        def setAllowMultipleResults(value: Boolean): Self = StObject.set(x, "allowMultipleResults", value.asInstanceOf[js.Any])
+        inline def setAllowMultipleResults(value: Boolean): Self = StObject.set(x, "allowMultipleResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowMultipleResultsUndefined: Self = StObject.set(x, "allowMultipleResults", js.undefined)
+        inline def setAllowMultipleResultsUndefined: Self = StObject.set(x, "allowMultipleResults", js.undefined)
         
-        @scala.inline
-        def setCollapseAfterResult(value: Boolean): Self = StObject.set(x, "collapseAfterResult", value.asInstanceOf[js.Any])
+        inline def setCollapseAfterResult(value: Boolean): Self = StObject.set(x, "collapseAfterResult", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCollapseAfterResultUndefined: Self = StObject.set(x, "collapseAfterResult", js.undefined)
+        inline def setCollapseAfterResultUndefined: Self = StObject.set(x, "collapseAfterResult", js.undefined)
         
-        @scala.inline
-        def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+        inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+        inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
         
-        @scala.inline
-        def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+        inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+        inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
         
-        @scala.inline
-        def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setProviders(value: js.Array[GeosearchProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+        inline def setProviders(value: js.Array[GeosearchProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+        inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
         
-        @scala.inline
-        def setProvidersVarargs(value: GeosearchProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+        inline def setProvidersVarargs(value: GeosearchProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
         
-        @scala.inline
-        def setSearchBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "searchBounds", value.asInstanceOf[js.Any])
+        inline def setSearchBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "searchBounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearchBoundsNull: Self = StObject.set(x, "searchBounds", null)
+        inline def setSearchBoundsNull: Self = StObject.set(x, "searchBounds", null)
         
-        @scala.inline
-        def setSearchBoundsUndefined: Self = StObject.set(x, "searchBounds", js.undefined)
+        inline def setSearchBoundsUndefined: Self = StObject.set(x, "searchBounds", js.undefined)
         
-        @scala.inline
-        def setSearchBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "searchBounds", js.Array(value :_*))
+        inline def setSearchBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "searchBounds", js.Array(value :_*))
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setUseMapBounds(value: Boolean | Double): Self = StObject.set(x, "useMapBounds", value.asInstanceOf[js.Any])
+        inline def setUseMapBounds(value: Boolean | Double): Self = StObject.set(x, "useMapBounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseMapBoundsUndefined: Self = StObject.set(x, "useMapBounds", js.undefined)
+        inline def setUseMapBoundsUndefined: Self = StObject.set(x, "useMapBounds", js.undefined)
         
-        @scala.inline
-        def setZoomToResult(value: Boolean): Self = StObject.set(x, "zoomToResult", value.asInstanceOf[js.Any])
+        inline def setZoomToResult(value: Boolean): Self = StObject.set(x, "zoomToResult", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomToResultUndefined: Self = StObject.set(x, "zoomToResult", js.undefined)
+        inline def setZoomToResultUndefined: Self = StObject.set(x, "zoomToResult", js.undefined)
       }
     }
     
@@ -2083,8 +2002,7 @@ object esri {
     }
     object MapServiceProviderOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bufferRadius: Double | js.Array[Double],
         formatSuggestion: js.Any => String,
         layers: Double | js.Array[Double],
@@ -2095,32 +2013,23 @@ object esri {
         __obj.asInstanceOf[MapServiceProviderOptions]
       }
       
-      @scala.inline
-      implicit class MapServiceProviderOptionsMutableBuilder[Self <: MapServiceProviderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: MapServiceProviderOptions](x: Self) {
         
-        @scala.inline
-        def setBufferRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "bufferRadius", value.asInstanceOf[js.Any])
+        inline def setBufferRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "bufferRadius", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBufferRadiusVarargs(value: Double*): Self = StObject.set(x, "bufferRadius", js.Array(value :_*))
+        inline def setBufferRadiusVarargs(value: Double*): Self = StObject.set(x, "bufferRadius", js.Array(value :_*))
         
-        @scala.inline
-        def setFormatSuggestion(value: js.Any => String): Self = StObject.set(x, "formatSuggestion", js.Any.fromFunction1(value))
+        inline def setFormatSuggestion(value: js.Any => String): Self = StObject.set(x, "formatSuggestion", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLayers(value: Double | js.Array[Double]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+        inline def setLayers(value: Double | js.Array[Double]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayersVarargs(value: Double*): Self = StObject.set(x, "layers", js.Array(value :_*))
+        inline def setLayersVarargs(value: Double*): Self = StObject.set(x, "layers", js.Array(value :_*))
         
-        @scala.inline
-        def setSearchFields(value: String | js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
+        inline def setSearchFields(value: String | js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
+        inline def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
     
@@ -2140,47 +2049,34 @@ object esri {
     }
     object ResultObject {
       
-      @scala.inline
-      def apply(): ResultObject = {
+      inline def apply(): ResultObject = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ResultObject]
       }
       
-      @scala.inline
-      implicit class ResultObjectMutableBuilder[Self <: ResultObject] (val x: Self) extends AnyVal {
+      extension [Self <: ResultObject](x: Self) {
         
-        @scala.inline
-        def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+        inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
         
-        @scala.inline
-        def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
         
-        @scala.inline
-        def setGeojson(value: GeoJSON_[js.Any]): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
+        inline def setGeojson(value: GeoJSON_[js.Any]): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGeojsonUndefined: Self = StObject.set(x, "geojson", js.undefined)
+        inline def setGeojsonUndefined: Self = StObject.set(x, "geojson", js.undefined)
         
-        @scala.inline
-        def setLatlng(value: LatLngExpression): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
+        inline def setLatlng(value: LatLngExpression): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLatlngUndefined: Self = StObject.set(x, "latlng", js.undefined)
+        inline def setLatlngUndefined: Self = StObject.set(x, "latlng", js.undefined)
         
-        @scala.inline
-        def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+        inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+        inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+        inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       }
     }
     
@@ -2194,29 +2090,22 @@ object esri {
     }
     object Results {
       
-      @scala.inline
-      def apply(bounds: LatLngBoundsExpression, latlng: LatLngExpression, results: js.Array[ResultObject]): Results = {
+      inline def apply(bounds: LatLngBoundsExpression, latlng: LatLngExpression, results: js.Array[ResultObject]): Results = {
         val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], latlng = latlng.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
         __obj.asInstanceOf[Results]
       }
       
-      @scala.inline
-      implicit class ResultsMutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
+      extension [Self <: Results](x: Self) {
         
-        @scala.inline
-        def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
         
-        @scala.inline
-        def setLatlng(value: LatLngExpression): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
+        inline def setLatlng(value: LatLngExpression): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResults(value: js.Array[ResultObject]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+        inline def setResults(value: js.Array[ResultObject]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResultsVarargs(value: ResultObject*): Self = StObject.set(x, "results", js.Array(value :_*))
+        inline def setResultsVarargs(value: ResultObject*): Self = StObject.set(x, "results", js.Array(value :_*))
       }
     }
   }

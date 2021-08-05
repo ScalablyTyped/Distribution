@@ -20,23 +20,18 @@ trait Match extends StObject {
 }
 object Match {
   
-  @scala.inline
-  def apply(`match`: Alternatives): Match = {
+  inline def apply(`match`: Alternatives): Match = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Match]
   }
   
-  @scala.inline
-  implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
+  extension [Self <: Match](x: Self) {
     
-    @scala.inline
-    def setMatch(value: Alternatives): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: Alternatives): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

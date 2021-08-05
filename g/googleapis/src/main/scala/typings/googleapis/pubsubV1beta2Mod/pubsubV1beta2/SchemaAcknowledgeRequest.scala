@@ -17,22 +17,17 @@ trait SchemaAcknowledgeRequest extends StObject {
 }
 object SchemaAcknowledgeRequest {
   
-  @scala.inline
-  def apply(): SchemaAcknowledgeRequest = {
+  inline def apply(): SchemaAcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAcknowledgeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAcknowledgeRequestMutableBuilder[Self <: SchemaAcknowledgeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAcknowledgeRequest](x: Self) {
     
-    @scala.inline
-    def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
+    inline def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
+    inline def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
     
-    @scala.inline
-    def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
+    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
   }
 }

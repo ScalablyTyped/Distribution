@@ -8,6 +8,5 @@ object undertakerStrings {
   
   @js.native
   sealed trait Tasks extends StObject
-  @scala.inline
-  def Tasks: Tasks = "Tasks".asInstanceOf[Tasks]
+  inline def Tasks: Tasks = "Tasks".asInstanceOf[Tasks]
 }

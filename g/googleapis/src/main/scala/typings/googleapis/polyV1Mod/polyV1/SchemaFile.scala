@@ -30,31 +30,23 @@ trait SchemaFile extends StObject {
 }
 object SchemaFile {
   
-  @scala.inline
-  def apply(): SchemaFile = {
+  inline def apply(): SchemaFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFile]
   }
   
-  @scala.inline
-  implicit class SchemaFileMutableBuilder[Self <: SchemaFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFile](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+    inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
+    inline def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ object websocketMod {
     @JSImport("openfin/_v2/transport/websocket", "default.READY_STATE")
     @js.native
     def READY_STATE: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ js.Any = js.native
-    @scala.inline
-    def READY_STATE_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY_STATE")(x.asInstanceOf[js.Any])
+    inline def READY_STATE_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY_STATE")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -34,6 +33,6 @@ object websocketMod {
     
     def send(data: js.Any, flags: js.Any): js.Promise[js.Any] = js.native
     
-    var wire: ^ = js.native
+    /* protected */ var wire: ^ = js.native
   }
 }

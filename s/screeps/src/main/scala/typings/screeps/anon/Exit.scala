@@ -13,19 +13,15 @@ trait Exit extends StObject {
 }
 object Exit {
   
-  @scala.inline
-  def apply(exit: ExitConstant, room: String): Exit = {
+  inline def apply(exit: ExitConstant, room: String): Exit = {
     val __obj = js.Dynamic.literal(exit = exit.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[Exit]
   }
   
-  @scala.inline
-  implicit class ExitMutableBuilder[Self <: Exit] (val x: Self) extends AnyVal {
+  extension [Self <: Exit](x: Self) {
     
-    @scala.inline
-    def setExit(value: ExitConstant): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+    inline def setExit(value: ExitConstant): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

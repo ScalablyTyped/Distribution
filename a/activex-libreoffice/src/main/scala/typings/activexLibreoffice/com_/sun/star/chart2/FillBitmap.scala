@@ -54,8 +54,7 @@ trait FillBitmap extends StObject {
 }
 object FillBitmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aBitmapMode: BitmapMode,
     aOffset: Point,
     aPositionOffset: Point,
@@ -68,28 +67,20 @@ object FillBitmap {
     __obj.asInstanceOf[FillBitmap]
   }
   
-  @scala.inline
-  implicit class FillBitmapMutableBuilder[Self <: FillBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: FillBitmap](x: Self) {
     
-    @scala.inline
-    def setABitmapMode(value: BitmapMode): Self = StObject.set(x, "aBitmapMode", value.asInstanceOf[js.Any])
+    inline def setABitmapMode(value: BitmapMode): Self = StObject.set(x, "aBitmapMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAOffset(value: Point): Self = StObject.set(x, "aOffset", value.asInstanceOf[js.Any])
+    inline def setAOffset(value: Point): Self = StObject.set(x, "aOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAPositionOffset(value: Point): Self = StObject.set(x, "aPositionOffset", value.asInstanceOf[js.Any])
+    inline def setAPositionOffset(value: Point): Self = StObject.set(x, "aPositionOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARectanglePoint(value: RectanglePoint): Self = StObject.set(x, "aRectanglePoint", value.asInstanceOf[js.Any])
+    inline def setARectanglePoint(value: RectanglePoint): Self = StObject.set(x, "aRectanglePoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setASize(value: Size): Self = StObject.set(x, "aSize", value.asInstanceOf[js.Any])
+    inline def setASize(value: Size): Self = StObject.set(x, "aSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAURL(value: String): Self = StObject.set(x, "aURL", value.asInstanceOf[js.Any])
+    inline def setAURL(value: String): Self = StObject.set(x, "aURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBLogicalSize(value: Boolean): Self = StObject.set(x, "bLogicalSize", value.asInstanceOf[js.Any])
+    inline def setBLogicalSize(value: Boolean): Self = StObject.set(x, "bLogicalSize", value.asInstanceOf[js.Any])
   }
 }

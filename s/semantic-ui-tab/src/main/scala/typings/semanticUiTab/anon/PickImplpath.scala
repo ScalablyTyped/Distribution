@@ -12,16 +12,13 @@ trait PickImplpath extends StObject {
 }
 object PickImplpath {
   
-  @scala.inline
-  def apply(path: `false` | String): PickImplpath = {
+  inline def apply(path: `false` | String): PickImplpath = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpath]
   }
   
-  @scala.inline
-  implicit class PickImplpathMutableBuilder[Self <: PickImplpath] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplpath](x: Self) {
     
-    @scala.inline
-    def setPath(value: `false` | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: `false` | String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

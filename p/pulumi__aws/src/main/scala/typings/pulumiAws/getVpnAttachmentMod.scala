@@ -13,14 +13,10 @@ object getVpnAttachmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVpnAttachment(): js.Promise[GetVpnAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")().asInstanceOf[js.Promise[GetVpnAttachmentResult]]
-  @scala.inline
-  def getVpnAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
-  @scala.inline
-  def getVpnAttachment(args: GetVpnAttachmentArgs): js.Promise[GetVpnAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
-  @scala.inline
-  def getVpnAttachment(args: GetVpnAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  inline def getVpnAttachment(): js.Promise[GetVpnAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")().asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  inline def getVpnAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  inline def getVpnAttachment(args: GetVpnAttachmentArgs): js.Promise[GetVpnAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  inline def getVpnAttachment(args: GetVpnAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
   
   trait GetVpnAttachmentArgs extends StObject {
     
@@ -46,41 +42,30 @@ object getVpnAttachmentMod {
   }
   object GetVpnAttachmentArgs {
     
-    @scala.inline
-    def apply(): GetVpnAttachmentArgs = {
+    inline def apply(): GetVpnAttachmentArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetVpnAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class GetVpnAttachmentArgsMutableBuilder[Self <: GetVpnAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpnAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetVpnAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetVpnAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetVpnAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetVpnAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
+      inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
       
-      @scala.inline
-      def setVpnConnectionId(value: String): Self = StObject.set(x, "vpnConnectionId", value.asInstanceOf[js.Any])
+      inline def setVpnConnectionId(value: String): Self = StObject.set(x, "vpnConnectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnConnectionIdUndefined: Self = StObject.set(x, "vpnConnectionId", js.undefined)
+      inline def setVpnConnectionIdUndefined: Self = StObject.set(x, "vpnConnectionId", js.undefined)
     }
   }
   
@@ -104,41 +89,30 @@ object getVpnAttachmentMod {
   }
   object GetVpnAttachmentResult {
     
-    @scala.inline
-    def apply(id: String, tags: StringDictionary[String]): GetVpnAttachmentResult = {
+    inline def apply(id: String, tags: StringDictionary[String]): GetVpnAttachmentResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetVpnAttachmentResult]
     }
     
-    @scala.inline
-    implicit class GetVpnAttachmentResultMutableBuilder[Self <: GetVpnAttachmentResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpnAttachmentResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetVpnAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetVpnAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2transitgateway.GetVpnAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2transitgateway.GetVpnAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
+      inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
       
-      @scala.inline
-      def setVpnConnectionId(value: String): Self = StObject.set(x, "vpnConnectionId", value.asInstanceOf[js.Any])
+      inline def setVpnConnectionId(value: String): Self = StObject.set(x, "vpnConnectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnConnectionIdUndefined: Self = StObject.set(x, "vpnConnectionId", js.undefined)
+      inline def setVpnConnectionIdUndefined: Self = StObject.set(x, "vpnConnectionId", js.undefined)
     }
   }
 }

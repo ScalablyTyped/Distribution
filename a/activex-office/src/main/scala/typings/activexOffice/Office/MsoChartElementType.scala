@@ -261,384 +261,257 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoChartElementType extends StObject
 object MsoChartElementType {
   
-  @scala.inline
-  def msoElementChartFloorNone: `1200` = 1200.asInstanceOf[`1200`]
+  inline def msoElementChartFloorNone: `1200` = 1200.asInstanceOf[`1200`]
   
-  @scala.inline
-  def msoElementChartFloorShow: `1201` = 1201.asInstanceOf[`1201`]
+  inline def msoElementChartFloorShow: `1201` = 1201.asInstanceOf[`1201`]
   
-  @scala.inline
-  def msoElementChartTitleAboveChart: `2` = 2.asInstanceOf[`2`]
+  inline def msoElementChartTitleAboveChart: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoElementChartTitleCenteredOverlay: `1` = 1.asInstanceOf[`1`]
+  inline def msoElementChartTitleCenteredOverlay: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoElementChartTitleNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoElementChartTitleNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoElementChartWallNone: `1100` = 1100.asInstanceOf[`1100`]
+  inline def msoElementChartWallNone: `1100` = 1100.asInstanceOf[`1100`]
   
-  @scala.inline
-  def msoElementChartWallShow: `1101` = 1101.asInstanceOf[`1101`]
+  inline def msoElementChartWallShow: `1101` = 1101.asInstanceOf[`1101`]
   
-  @scala.inline
-  def msoElementDataLabelBestFit: `210` = 210.asInstanceOf[`210`]
+  inline def msoElementDataLabelBestFit: `210` = 210.asInstanceOf[`210`]
   
-  @scala.inline
-  def msoElementDataLabelBottom: `209` = 209.asInstanceOf[`209`]
+  inline def msoElementDataLabelBottom: `209` = 209.asInstanceOf[`209`]
   
-  @scala.inline
-  def msoElementDataLabelCallout: `211` = 211.asInstanceOf[`211`]
+  inline def msoElementDataLabelCallout: `211` = 211.asInstanceOf[`211`]
   
-  @scala.inline
-  def msoElementDataLabelCenter: `202` = 202.asInstanceOf[`202`]
+  inline def msoElementDataLabelCenter: `202` = 202.asInstanceOf[`202`]
   
-  @scala.inline
-  def msoElementDataLabelInsideBase: `204` = 204.asInstanceOf[`204`]
+  inline def msoElementDataLabelInsideBase: `204` = 204.asInstanceOf[`204`]
   
-  @scala.inline
-  def msoElementDataLabelInsideEnd: `203` = 203.asInstanceOf[`203`]
+  inline def msoElementDataLabelInsideEnd: `203` = 203.asInstanceOf[`203`]
   
-  @scala.inline
-  def msoElementDataLabelLeft: `206` = 206.asInstanceOf[`206`]
+  inline def msoElementDataLabelLeft: `206` = 206.asInstanceOf[`206`]
   
-  @scala.inline
-  def msoElementDataLabelNone: `200` = 200.asInstanceOf[`200`]
+  inline def msoElementDataLabelNone: `200` = 200.asInstanceOf[`200`]
   
-  @scala.inline
-  def msoElementDataLabelOutSideEnd: `205` = 205.asInstanceOf[`205`]
+  inline def msoElementDataLabelOutSideEnd: `205` = 205.asInstanceOf[`205`]
   
-  @scala.inline
-  def msoElementDataLabelRight: `207` = 207.asInstanceOf[`207`]
+  inline def msoElementDataLabelRight: `207` = 207.asInstanceOf[`207`]
   
-  @scala.inline
-  def msoElementDataLabelShow: `201` = 201.asInstanceOf[`201`]
+  inline def msoElementDataLabelShow: `201` = 201.asInstanceOf[`201`]
   
-  @scala.inline
-  def msoElementDataLabelTop: `208` = 208.asInstanceOf[`208`]
+  inline def msoElementDataLabelTop: `208` = 208.asInstanceOf[`208`]
   
-  @scala.inline
-  def msoElementDataTableNone: `500` = 500.asInstanceOf[`500`]
+  inline def msoElementDataTableNone: `500` = 500.asInstanceOf[`500`]
   
-  @scala.inline
-  def msoElementDataTableShow: `501` = 501.asInstanceOf[`501`]
+  inline def msoElementDataTableShow: `501` = 501.asInstanceOf[`501`]
   
-  @scala.inline
-  def msoElementDataTableWithLegendKeys: `502` = 502.asInstanceOf[`502`]
+  inline def msoElementDataTableWithLegendKeys: `502` = 502.asInstanceOf[`502`]
   
-  @scala.inline
-  def msoElementErrorBarNone: `700` = 700.asInstanceOf[`700`]
+  inline def msoElementErrorBarNone: `700` = 700.asInstanceOf[`700`]
   
-  @scala.inline
-  def msoElementErrorBarPercentage: `702` = 702.asInstanceOf[`702`]
+  inline def msoElementErrorBarPercentage: `702` = 702.asInstanceOf[`702`]
   
-  @scala.inline
-  def msoElementErrorBarStandardDeviation: `703` = 703.asInstanceOf[`703`]
+  inline def msoElementErrorBarStandardDeviation: `703` = 703.asInstanceOf[`703`]
   
-  @scala.inline
-  def msoElementErrorBarStandardError: `701` = 701.asInstanceOf[`701`]
+  inline def msoElementErrorBarStandardError: `701` = 701.asInstanceOf[`701`]
   
-  @scala.inline
-  def msoElementLegendBottom: `104` = 104.asInstanceOf[`104`]
+  inline def msoElementLegendBottom: `104` = 104.asInstanceOf[`104`]
   
-  @scala.inline
-  def msoElementLegendLeft: `103` = 103.asInstanceOf[`103`]
+  inline def msoElementLegendLeft: `103` = 103.asInstanceOf[`103`]
   
-  @scala.inline
-  def msoElementLegendLeftOverlay: `106` = 106.asInstanceOf[`106`]
+  inline def msoElementLegendLeftOverlay: `106` = 106.asInstanceOf[`106`]
   
-  @scala.inline
-  def msoElementLegendNone: `100` = 100.asInstanceOf[`100`]
+  inline def msoElementLegendNone: `100` = 100.asInstanceOf[`100`]
   
-  @scala.inline
-  def msoElementLegendRight: `101` = 101.asInstanceOf[`101`]
+  inline def msoElementLegendRight: `101` = 101.asInstanceOf[`101`]
   
-  @scala.inline
-  def msoElementLegendRightOverlay: `105` = 105.asInstanceOf[`105`]
+  inline def msoElementLegendRightOverlay: `105` = 105.asInstanceOf[`105`]
   
-  @scala.inline
-  def msoElementLegendTop: `102` = 102.asInstanceOf[`102`]
+  inline def msoElementLegendTop: `102` = 102.asInstanceOf[`102`]
   
-  @scala.inline
-  def msoElementLineDropHiLoLine: `804` = 804.asInstanceOf[`804`]
+  inline def msoElementLineDropHiLoLine: `804` = 804.asInstanceOf[`804`]
   
-  @scala.inline
-  def msoElementLineDropLine: `801` = 801.asInstanceOf[`801`]
+  inline def msoElementLineDropLine: `801` = 801.asInstanceOf[`801`]
   
-  @scala.inline
-  def msoElementLineHiLoLine: `802` = 802.asInstanceOf[`802`]
+  inline def msoElementLineHiLoLine: `802` = 802.asInstanceOf[`802`]
   
-  @scala.inline
-  def msoElementLineNone: `800` = 800.asInstanceOf[`800`]
+  inline def msoElementLineNone: `800` = 800.asInstanceOf[`800`]
   
-  @scala.inline
-  def msoElementLineSeriesLine: `803` = 803.asInstanceOf[`803`]
+  inline def msoElementLineSeriesLine: `803` = 803.asInstanceOf[`803`]
   
-  @scala.inline
-  def msoElementPlotAreaNone: `1000` = 1000.asInstanceOf[`1000`]
+  inline def msoElementPlotAreaNone: `1000` = 1000.asInstanceOf[`1000`]
   
-  @scala.inline
-  def msoElementPlotAreaShow: `1001` = 1001.asInstanceOf[`1001`]
+  inline def msoElementPlotAreaShow: `1001` = 1001.asInstanceOf[`1001`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisBillions: `374` = 374.asInstanceOf[`374`]
+  inline def msoElementPrimaryCategoryAxisBillions: `374` = 374.asInstanceOf[`374`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisLogScale: `375` = 375.asInstanceOf[`375`]
+  inline def msoElementPrimaryCategoryAxisLogScale: `375` = 375.asInstanceOf[`375`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisMillions: `373` = 373.asInstanceOf[`373`]
+  inline def msoElementPrimaryCategoryAxisMillions: `373` = 373.asInstanceOf[`373`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisNone: `348` = 348.asInstanceOf[`348`]
+  inline def msoElementPrimaryCategoryAxisNone: `348` = 348.asInstanceOf[`348`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisReverse: `351` = 351.asInstanceOf[`351`]
+  inline def msoElementPrimaryCategoryAxisReverse: `351` = 351.asInstanceOf[`351`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisShow: `349` = 349.asInstanceOf[`349`]
+  inline def msoElementPrimaryCategoryAxisShow: `349` = 349.asInstanceOf[`349`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisThousands: `372` = 372.asInstanceOf[`372`]
+  inline def msoElementPrimaryCategoryAxisThousands: `372` = 372.asInstanceOf[`372`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleAdjacentToAxis: `301` = 301.asInstanceOf[`301`]
+  inline def msoElementPrimaryCategoryAxisTitleAdjacentToAxis: `301` = 301.asInstanceOf[`301`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleBelowAxis: `302` = 302.asInstanceOf[`302`]
+  inline def msoElementPrimaryCategoryAxisTitleBelowAxis: `302` = 302.asInstanceOf[`302`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleHorizontal: `305` = 305.asInstanceOf[`305`]
+  inline def msoElementPrimaryCategoryAxisTitleHorizontal: `305` = 305.asInstanceOf[`305`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleNone: `300` = 300.asInstanceOf[`300`]
+  inline def msoElementPrimaryCategoryAxisTitleNone: `300` = 300.asInstanceOf[`300`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleRotated: `303` = 303.asInstanceOf[`303`]
+  inline def msoElementPrimaryCategoryAxisTitleRotated: `303` = 303.asInstanceOf[`303`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleVertical: `304` = 304.asInstanceOf[`304`]
+  inline def msoElementPrimaryCategoryAxisTitleVertical: `304` = 304.asInstanceOf[`304`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryAxisWithoutLabels: `350` = 350.asInstanceOf[`350`]
+  inline def msoElementPrimaryCategoryAxisWithoutLabels: `350` = 350.asInstanceOf[`350`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryGridLinesMajor: `334` = 334.asInstanceOf[`334`]
+  inline def msoElementPrimaryCategoryGridLinesMajor: `334` = 334.asInstanceOf[`334`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryGridLinesMinor: `333` = 333.asInstanceOf[`333`]
+  inline def msoElementPrimaryCategoryGridLinesMinor: `333` = 333.asInstanceOf[`333`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryGridLinesMinorMajor: `335` = 335.asInstanceOf[`335`]
+  inline def msoElementPrimaryCategoryGridLinesMinorMajor: `335` = 335.asInstanceOf[`335`]
   
-  @scala.inline
-  def msoElementPrimaryCategoryGridLinesNone: `332` = 332.asInstanceOf[`332`]
+  inline def msoElementPrimaryCategoryGridLinesNone: `332` = 332.asInstanceOf[`332`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisBillions: `356` = 356.asInstanceOf[`356`]
+  inline def msoElementPrimaryValueAxisBillions: `356` = 356.asInstanceOf[`356`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisLogScale: `357` = 357.asInstanceOf[`357`]
+  inline def msoElementPrimaryValueAxisLogScale: `357` = 357.asInstanceOf[`357`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisMillions: `355` = 355.asInstanceOf[`355`]
+  inline def msoElementPrimaryValueAxisMillions: `355` = 355.asInstanceOf[`355`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisNone: `352` = 352.asInstanceOf[`352`]
+  inline def msoElementPrimaryValueAxisNone: `352` = 352.asInstanceOf[`352`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisShow: `353` = 353.asInstanceOf[`353`]
+  inline def msoElementPrimaryValueAxisShow: `353` = 353.asInstanceOf[`353`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisThousands: `354` = 354.asInstanceOf[`354`]
+  inline def msoElementPrimaryValueAxisThousands: `354` = 354.asInstanceOf[`354`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleAdjacentToAxis: `306` = 306.asInstanceOf[`306`]
+  inline def msoElementPrimaryValueAxisTitleAdjacentToAxis: `306` = 306.asInstanceOf[`306`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleBelowAxis: `308` = 308.asInstanceOf[`308`]
+  inline def msoElementPrimaryValueAxisTitleBelowAxis: `308` = 308.asInstanceOf[`308`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleHorizontal: `311` = 311.asInstanceOf[`311`]
+  inline def msoElementPrimaryValueAxisTitleHorizontal: `311` = 311.asInstanceOf[`311`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleNone: `306` = 306.asInstanceOf[`306`]
+  inline def msoElementPrimaryValueAxisTitleNone: `306` = 306.asInstanceOf[`306`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleRotated: `309` = 309.asInstanceOf[`309`]
+  inline def msoElementPrimaryValueAxisTitleRotated: `309` = 309.asInstanceOf[`309`]
   
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleVertical: `310` = 310.asInstanceOf[`310`]
+  inline def msoElementPrimaryValueAxisTitleVertical: `310` = 310.asInstanceOf[`310`]
   
-  @scala.inline
-  def msoElementPrimaryValueGridLinesMajor: `330` = 330.asInstanceOf[`330`]
+  inline def msoElementPrimaryValueGridLinesMajor: `330` = 330.asInstanceOf[`330`]
   
-  @scala.inline
-  def msoElementPrimaryValueGridLinesMinor: `329` = 329.asInstanceOf[`329`]
+  inline def msoElementPrimaryValueGridLinesMinor: `329` = 329.asInstanceOf[`329`]
   
-  @scala.inline
-  def msoElementPrimaryValueGridLinesMinorMajor: `331` = 331.asInstanceOf[`331`]
+  inline def msoElementPrimaryValueGridLinesMinorMajor: `331` = 331.asInstanceOf[`331`]
   
-  @scala.inline
-  def msoElementPrimaryValueGridLinesNone: `328` = 328.asInstanceOf[`328`]
+  inline def msoElementPrimaryValueGridLinesNone: `328` = 328.asInstanceOf[`328`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisBillions: `378` = 378.asInstanceOf[`378`]
+  inline def msoElementSecondaryCategoryAxisBillions: `378` = 378.asInstanceOf[`378`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisLogScale: `379` = 379.asInstanceOf[`379`]
+  inline def msoElementSecondaryCategoryAxisLogScale: `379` = 379.asInstanceOf[`379`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisMillions: `377` = 377.asInstanceOf[`377`]
+  inline def msoElementSecondaryCategoryAxisMillions: `377` = 377.asInstanceOf[`377`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisNone: `358` = 358.asInstanceOf[`358`]
+  inline def msoElementSecondaryCategoryAxisNone: `358` = 358.asInstanceOf[`358`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisReverse: `361` = 361.asInstanceOf[`361`]
+  inline def msoElementSecondaryCategoryAxisReverse: `361` = 361.asInstanceOf[`361`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisShow: `359` = 359.asInstanceOf[`359`]
+  inline def msoElementSecondaryCategoryAxisShow: `359` = 359.asInstanceOf[`359`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisThousands: `376` = 376.asInstanceOf[`376`]
+  inline def msoElementSecondaryCategoryAxisThousands: `376` = 376.asInstanceOf[`376`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleAdjacentToAxis: `313` = 313.asInstanceOf[`313`]
+  inline def msoElementSecondaryCategoryAxisTitleAdjacentToAxis: `313` = 313.asInstanceOf[`313`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleBelowAxis: `314` = 314.asInstanceOf[`314`]
+  inline def msoElementSecondaryCategoryAxisTitleBelowAxis: `314` = 314.asInstanceOf[`314`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleHorizontal: `317` = 317.asInstanceOf[`317`]
+  inline def msoElementSecondaryCategoryAxisTitleHorizontal: `317` = 317.asInstanceOf[`317`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleNone: `312` = 312.asInstanceOf[`312`]
+  inline def msoElementSecondaryCategoryAxisTitleNone: `312` = 312.asInstanceOf[`312`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleRotated: `315` = 315.asInstanceOf[`315`]
+  inline def msoElementSecondaryCategoryAxisTitleRotated: `315` = 315.asInstanceOf[`315`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleVertical: `316` = 316.asInstanceOf[`316`]
+  inline def msoElementSecondaryCategoryAxisTitleVertical: `316` = 316.asInstanceOf[`316`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryAxisWithoutLabels: `360` = 360.asInstanceOf[`360`]
+  inline def msoElementSecondaryCategoryAxisWithoutLabels: `360` = 360.asInstanceOf[`360`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryGridLinesMajor: `342` = 342.asInstanceOf[`342`]
+  inline def msoElementSecondaryCategoryGridLinesMajor: `342` = 342.asInstanceOf[`342`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryGridLinesMinor: `341` = 341.asInstanceOf[`341`]
+  inline def msoElementSecondaryCategoryGridLinesMinor: `341` = 341.asInstanceOf[`341`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryGridLinesMinorMajor: `343` = 343.asInstanceOf[`343`]
+  inline def msoElementSecondaryCategoryGridLinesMinorMajor: `343` = 343.asInstanceOf[`343`]
   
-  @scala.inline
-  def msoElementSecondaryCategoryGridLinesNone: `340` = 340.asInstanceOf[`340`]
+  inline def msoElementSecondaryCategoryGridLinesNone: `340` = 340.asInstanceOf[`340`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisBillions: `366` = 366.asInstanceOf[`366`]
+  inline def msoElementSecondaryValueAxisBillions: `366` = 366.asInstanceOf[`366`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisLogScale: `367` = 367.asInstanceOf[`367`]
+  inline def msoElementSecondaryValueAxisLogScale: `367` = 367.asInstanceOf[`367`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisMillions: `365` = 365.asInstanceOf[`365`]
+  inline def msoElementSecondaryValueAxisMillions: `365` = 365.asInstanceOf[`365`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisNone: `362` = 362.asInstanceOf[`362`]
+  inline def msoElementSecondaryValueAxisNone: `362` = 362.asInstanceOf[`362`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisShow: `363` = 363.asInstanceOf[`363`]
+  inline def msoElementSecondaryValueAxisShow: `363` = 363.asInstanceOf[`363`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisThousands: `364` = 364.asInstanceOf[`364`]
+  inline def msoElementSecondaryValueAxisThousands: `364` = 364.asInstanceOf[`364`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleAdjacentToAxis: `319` = 319.asInstanceOf[`319`]
+  inline def msoElementSecondaryValueAxisTitleAdjacentToAxis: `319` = 319.asInstanceOf[`319`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleBelowAxis: `320` = 320.asInstanceOf[`320`]
+  inline def msoElementSecondaryValueAxisTitleBelowAxis: `320` = 320.asInstanceOf[`320`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleHorizontal: `323` = 323.asInstanceOf[`323`]
+  inline def msoElementSecondaryValueAxisTitleHorizontal: `323` = 323.asInstanceOf[`323`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleNone: `318` = 318.asInstanceOf[`318`]
+  inline def msoElementSecondaryValueAxisTitleNone: `318` = 318.asInstanceOf[`318`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleRotated: `321` = 321.asInstanceOf[`321`]
+  inline def msoElementSecondaryValueAxisTitleRotated: `321` = 321.asInstanceOf[`321`]
   
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleVertical: `322` = 322.asInstanceOf[`322`]
+  inline def msoElementSecondaryValueAxisTitleVertical: `322` = 322.asInstanceOf[`322`]
   
-  @scala.inline
-  def msoElementSecondaryValueGridLinesMajor: `338` = 338.asInstanceOf[`338`]
+  inline def msoElementSecondaryValueGridLinesMajor: `338` = 338.asInstanceOf[`338`]
   
-  @scala.inline
-  def msoElementSecondaryValueGridLinesMinor: `337` = 337.asInstanceOf[`337`]
+  inline def msoElementSecondaryValueGridLinesMinor: `337` = 337.asInstanceOf[`337`]
   
-  @scala.inline
-  def msoElementSecondaryValueGridLinesMinorMajor: `339` = 339.asInstanceOf[`339`]
+  inline def msoElementSecondaryValueGridLinesMinorMajor: `339` = 339.asInstanceOf[`339`]
   
-  @scala.inline
-  def msoElementSecondaryValueGridLinesNone: `336` = 336.asInstanceOf[`336`]
+  inline def msoElementSecondaryValueGridLinesNone: `336` = 336.asInstanceOf[`336`]
   
-  @scala.inline
-  def msoElementSeriesAxisGridLinesMajor: `346` = 346.asInstanceOf[`346`]
+  inline def msoElementSeriesAxisGridLinesMajor: `346` = 346.asInstanceOf[`346`]
   
-  @scala.inline
-  def msoElementSeriesAxisGridLinesMinor: `345` = 345.asInstanceOf[`345`]
+  inline def msoElementSeriesAxisGridLinesMinor: `345` = 345.asInstanceOf[`345`]
   
-  @scala.inline
-  def msoElementSeriesAxisGridLinesMinorMajor: `347` = 347.asInstanceOf[`347`]
+  inline def msoElementSeriesAxisGridLinesMinorMajor: `347` = 347.asInstanceOf[`347`]
   
-  @scala.inline
-  def msoElementSeriesAxisGridLinesNone: `344` = 344.asInstanceOf[`344`]
+  inline def msoElementSeriesAxisGridLinesNone: `344` = 344.asInstanceOf[`344`]
   
-  @scala.inline
-  def msoElementSeriesAxisNone: `368` = 368.asInstanceOf[`368`]
+  inline def msoElementSeriesAxisNone: `368` = 368.asInstanceOf[`368`]
   
-  @scala.inline
-  def msoElementSeriesAxisReverse: `371` = 371.asInstanceOf[`371`]
+  inline def msoElementSeriesAxisReverse: `371` = 371.asInstanceOf[`371`]
   
-  @scala.inline
-  def msoElementSeriesAxisShow: `369` = 369.asInstanceOf[`369`]
+  inline def msoElementSeriesAxisShow: `369` = 369.asInstanceOf[`369`]
   
-  @scala.inline
-  def msoElementSeriesAxisTitleHorizontal: `327` = 327.asInstanceOf[`327`]
+  inline def msoElementSeriesAxisTitleHorizontal: `327` = 327.asInstanceOf[`327`]
   
-  @scala.inline
-  def msoElementSeriesAxisTitleNone: `324` = 324.asInstanceOf[`324`]
+  inline def msoElementSeriesAxisTitleNone: `324` = 324.asInstanceOf[`324`]
   
-  @scala.inline
-  def msoElementSeriesAxisTitleRotated: `325` = 325.asInstanceOf[`325`]
+  inline def msoElementSeriesAxisTitleRotated: `325` = 325.asInstanceOf[`325`]
   
-  @scala.inline
-  def msoElementSeriesAxisTitleVertical: `326` = 326.asInstanceOf[`326`]
+  inline def msoElementSeriesAxisTitleVertical: `326` = 326.asInstanceOf[`326`]
   
-  @scala.inline
-  def msoElementSeriesAxisWithoutLabeling: `370` = 370.asInstanceOf[`370`]
+  inline def msoElementSeriesAxisWithoutLabeling: `370` = 370.asInstanceOf[`370`]
   
-  @scala.inline
-  def msoElementTrendlineAddExponential: `602` = 602.asInstanceOf[`602`]
+  inline def msoElementTrendlineAddExponential: `602` = 602.asInstanceOf[`602`]
   
-  @scala.inline
-  def msoElementTrendlineAddLinear: `601` = 601.asInstanceOf[`601`]
+  inline def msoElementTrendlineAddLinear: `601` = 601.asInstanceOf[`601`]
   
-  @scala.inline
-  def msoElementTrendlineAddLinearForecast: `603` = 603.asInstanceOf[`603`]
+  inline def msoElementTrendlineAddLinearForecast: `603` = 603.asInstanceOf[`603`]
   
-  @scala.inline
-  def msoElementTrendlineAddTwoPeriodMovingAverage: `604` = 604.asInstanceOf[`604`]
+  inline def msoElementTrendlineAddTwoPeriodMovingAverage: `604` = 604.asInstanceOf[`604`]
   
-  @scala.inline
-  def msoElementTrendlineNone: `600` = 600.asInstanceOf[`600`]
+  inline def msoElementTrendlineNone: `600` = 600.asInstanceOf[`600`]
   
-  @scala.inline
-  def msoElementUpDownBarsNone: `900` = 900.asInstanceOf[`900`]
+  inline def msoElementUpDownBarsNone: `900` = 900.asInstanceOf[`900`]
   
-  @scala.inline
-  def msoElementUpDownBarsShow: `901` = 901.asInstanceOf[`901`]
+  inline def msoElementUpDownBarsShow: `901` = 901.asInstanceOf[`901`]
 }

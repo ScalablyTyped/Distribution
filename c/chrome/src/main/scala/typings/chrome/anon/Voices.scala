@@ -10,19 +10,15 @@ trait Voices extends StObject {
 }
 object Voices {
   
-  @scala.inline
-  def apply(voices: js.Array[Eventtypes]): Voices = {
+  inline def apply(voices: js.Array[Eventtypes]): Voices = {
     val __obj = js.Dynamic.literal(voices = voices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Voices]
   }
   
-  @scala.inline
-  implicit class VoicesMutableBuilder[Self <: Voices] (val x: Self) extends AnyVal {
+  extension [Self <: Voices](x: Self) {
     
-    @scala.inline
-    def setVoices(value: js.Array[Eventtypes]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
+    inline def setVoices(value: js.Array[Eventtypes]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoicesVarargs(value: Eventtypes*): Self = StObject.set(x, "voices", js.Array(value :_*))
+    inline def setVoicesVarargs(value: Eventtypes*): Self = StObject.set(x, "voices", js.Array(value :_*))
   }
 }

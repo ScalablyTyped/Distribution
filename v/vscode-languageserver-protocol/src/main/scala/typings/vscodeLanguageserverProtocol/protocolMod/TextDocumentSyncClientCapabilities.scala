@@ -30,37 +30,27 @@ trait TextDocumentSyncClientCapabilities extends StObject {
 }
 object TextDocumentSyncClientCapabilities {
   
-  @scala.inline
-  def apply(): TextDocumentSyncClientCapabilities = {
+  inline def apply(): TextDocumentSyncClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextDocumentSyncClientCapabilities]
   }
   
-  @scala.inline
-  implicit class TextDocumentSyncClientCapabilitiesMutableBuilder[Self <: TextDocumentSyncClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentSyncClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDidSave(value: Boolean): Self = StObject.set(x, "didSave", value.asInstanceOf[js.Any])
+    inline def setDidSave(value: Boolean): Self = StObject.set(x, "didSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDidSaveUndefined: Self = StObject.set(x, "didSave", js.undefined)
+    inline def setDidSaveUndefined: Self = StObject.set(x, "didSave", js.undefined)
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
-    @scala.inline
-    def setWillSave(value: Boolean): Self = StObject.set(x, "willSave", value.asInstanceOf[js.Any])
+    inline def setWillSave(value: Boolean): Self = StObject.set(x, "willSave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillSaveUndefined: Self = StObject.set(x, "willSave", js.undefined)
+    inline def setWillSaveUndefined: Self = StObject.set(x, "willSave", js.undefined)
     
-    @scala.inline
-    def setWillSaveWaitUntil(value: Boolean): Self = StObject.set(x, "willSaveWaitUntil", value.asInstanceOf[js.Any])
+    inline def setWillSaveWaitUntil(value: Boolean): Self = StObject.set(x, "willSaveWaitUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillSaveWaitUntilUndefined: Self = StObject.set(x, "willSaveWaitUntil", js.undefined)
+    inline def setWillSaveWaitUntilUndefined: Self = StObject.set(x, "willSaveWaitUntil", js.undefined)
   }
 }

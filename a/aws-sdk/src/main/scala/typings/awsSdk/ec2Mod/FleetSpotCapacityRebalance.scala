@@ -13,19 +13,15 @@ trait FleetSpotCapacityRebalance extends StObject {
 }
 object FleetSpotCapacityRebalance {
   
-  @scala.inline
-  def apply(): FleetSpotCapacityRebalance = {
+  inline def apply(): FleetSpotCapacityRebalance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetSpotCapacityRebalance]
   }
   
-  @scala.inline
-  implicit class FleetSpotCapacityRebalanceMutableBuilder[Self <: FleetSpotCapacityRebalance] (val x: Self) extends AnyVal {
+  extension [Self <: FleetSpotCapacityRebalance](x: Self) {
     
-    @scala.inline
-    def setReplacementStrategy(value: FleetReplacementStrategy): Self = StObject.set(x, "ReplacementStrategy", value.asInstanceOf[js.Any])
+    inline def setReplacementStrategy(value: FleetReplacementStrategy): Self = StObject.set(x, "ReplacementStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementStrategyUndefined: Self = StObject.set(x, "ReplacementStrategy", js.undefined)
+    inline def setReplacementStrategyUndefined: Self = StObject.set(x, "ReplacementStrategy", js.undefined)
   }
 }

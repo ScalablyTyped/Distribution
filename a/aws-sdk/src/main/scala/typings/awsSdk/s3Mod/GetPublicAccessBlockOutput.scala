@@ -13,19 +13,15 @@ trait GetPublicAccessBlockOutput extends StObject {
 }
 object GetPublicAccessBlockOutput {
   
-  @scala.inline
-  def apply(): GetPublicAccessBlockOutput = {
+  inline def apply(): GetPublicAccessBlockOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPublicAccessBlockOutput]
   }
   
-  @scala.inline
-  implicit class GetPublicAccessBlockOutputMutableBuilder[Self <: GetPublicAccessBlockOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetPublicAccessBlockOutput](x: Self) {
     
-    @scala.inline
-    def setPublicAccessBlockConfiguration(value: PublicAccessBlockConfiguration): Self = StObject.set(x, "PublicAccessBlockConfiguration", value.asInstanceOf[js.Any])
+    inline def setPublicAccessBlockConfiguration(value: PublicAccessBlockConfiguration): Self = StObject.set(x, "PublicAccessBlockConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicAccessBlockConfigurationUndefined: Self = StObject.set(x, "PublicAccessBlockConfiguration", js.undefined)
+    inline def setPublicAccessBlockConfigurationUndefined: Self = StObject.set(x, "PublicAccessBlockConfiguration", js.undefined)
   }
 }

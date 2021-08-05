@@ -9,8 +9,7 @@ trait UpdateAliasInput
      with typings.awsSdkClientKmsBrowser.typesUpdateAliasInputMod.UpdateAliasInput
 object UpdateAliasInput {
   
-  @scala.inline
-  def apply(AliasName: String, TargetKeyId: String): UpdateAliasInput = {
+  inline def apply(AliasName: String, TargetKeyId: String): UpdateAliasInput = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], TargetKeyId = TargetKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAliasInput]
   }

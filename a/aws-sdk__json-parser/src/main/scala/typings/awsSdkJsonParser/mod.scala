@@ -13,13 +13,13 @@ object mod {
   class JsonParser protected () extends StObject {
     def this(base64Decoder: Decoder) = this()
     
-    val base64Decoder: js.Any = js.native
+    /* private */ val base64Decoder: js.Any = js.native
     
     def parse[OutputType](
       shape: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member */ js.Any,
       input: String
     ): OutputType = js.native
     
-    var unmarshall: js.Any = js.native
+    /* private */ var unmarshall: js.Any = js.native
   }
 }

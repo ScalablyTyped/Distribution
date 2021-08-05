@@ -21,19 +21,15 @@ trait OptionSetValue extends StObject {
 }
 object OptionSetValue {
   
-  @scala.inline
-  def apply(text: String, value: Double): OptionSetValue = {
+  inline def apply(text: String, value: Double): OptionSetValue = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionSetValue]
   }
   
-  @scala.inline
-  implicit class OptionSetValueMutableBuilder[Self <: OptionSetValue] (val x: Self) extends AnyVal {
+  extension [Self <: OptionSetValue](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

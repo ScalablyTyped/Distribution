@@ -101,11 +101,9 @@ object ResponseItem {
     /* 0 */ val RESPONSEITEMS_NOT_SET: typings.libraCore.getWithProofPbMod.ResponseItem.ResponseItemsCase.RESPONSEITEMS_NOT_SET & Double = js.native
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): ResponseItem = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ResponseItem]
+  inline def deserializeBinary(bytes: Uint8Array): ResponseItem = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ResponseItem]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: ResponseItem, reader: BinaryReader): ResponseItem = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ResponseItem]
+  inline def deserializeBinaryFromReader(message: ResponseItem, reader: BinaryReader): ResponseItem = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ResponseItem]
   
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "ResponseItem.extensions")
   @js.native
@@ -114,17 +112,13 @@ object ResponseItem {
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "ResponseItem.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: ResponseItem, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: ResponseItem, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: ResponseItem): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: ResponseItem): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -140,38 +134,28 @@ object ResponseItem {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(): AsObject = {
+    inline def apply(): AsObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setGetAccountStateResponse(value: typings.libraCore.getWithProofPbMod.GetAccountStateResponse.AsObject): Self = StObject.set(x, "getAccountStateResponse", value.asInstanceOf[js.Any])
+      inline def setGetAccountStateResponse(value: typings.libraCore.getWithProofPbMod.GetAccountStateResponse.AsObject): Self = StObject.set(x, "getAccountStateResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAccountStateResponseUndefined: Self = StObject.set(x, "getAccountStateResponse", js.undefined)
+      inline def setGetAccountStateResponseUndefined: Self = StObject.set(x, "getAccountStateResponse", js.undefined)
       
-      @scala.inline
-      def setGetAccountTransactionBySequenceNumberResponse(value: typings.libraCore.getWithProofPbMod.GetAccountTransactionBySequenceNumberResponse.AsObject): Self = StObject.set(x, "getAccountTransactionBySequenceNumberResponse", value.asInstanceOf[js.Any])
+      inline def setGetAccountTransactionBySequenceNumberResponse(value: typings.libraCore.getWithProofPbMod.GetAccountTransactionBySequenceNumberResponse.AsObject): Self = StObject.set(x, "getAccountTransactionBySequenceNumberResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAccountTransactionBySequenceNumberResponseUndefined: Self = StObject.set(x, "getAccountTransactionBySequenceNumberResponse", js.undefined)
+      inline def setGetAccountTransactionBySequenceNumberResponseUndefined: Self = StObject.set(x, "getAccountTransactionBySequenceNumberResponse", js.undefined)
       
-      @scala.inline
-      def setGetEventsByEventAccessPathResponse(value: typings.libraCore.getWithProofPbMod.GetEventsByEventAccessPathResponse.AsObject): Self = StObject.set(x, "getEventsByEventAccessPathResponse", value.asInstanceOf[js.Any])
+      inline def setGetEventsByEventAccessPathResponse(value: typings.libraCore.getWithProofPbMod.GetEventsByEventAccessPathResponse.AsObject): Self = StObject.set(x, "getEventsByEventAccessPathResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetEventsByEventAccessPathResponseUndefined: Self = StObject.set(x, "getEventsByEventAccessPathResponse", js.undefined)
+      inline def setGetEventsByEventAccessPathResponseUndefined: Self = StObject.set(x, "getEventsByEventAccessPathResponse", js.undefined)
       
-      @scala.inline
-      def setGetTransactionsResponse(value: typings.libraCore.getWithProofPbMod.GetTransactionsResponse.AsObject): Self = StObject.set(x, "getTransactionsResponse", value.asInstanceOf[js.Any])
+      inline def setGetTransactionsResponse(value: typings.libraCore.getWithProofPbMod.GetTransactionsResponse.AsObject): Self = StObject.set(x, "getTransactionsResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetTransactionsResponseUndefined: Self = StObject.set(x, "getTransactionsResponse", js.undefined)
+      inline def setGetTransactionsResponseUndefined: Self = StObject.set(x, "getTransactionsResponse", js.undefined)
     }
   }
 }

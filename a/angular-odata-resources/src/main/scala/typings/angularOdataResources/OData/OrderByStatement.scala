@@ -9,7 +9,7 @@ trait OrderByStatement
   extends StObject
      with IExecutable {
   
-  var direction: js.Any = js.native
+  /* private */ var direction: js.Any = js.native
   
-  var propertyName: js.Any = js.native
+  /* private */ var propertyName: js.Any = js.native
 }

@@ -13,22 +13,17 @@ trait ReadonlyState extends StObject {
 }
 object ReadonlyState {
   
-  @scala.inline
-  def apply(country: ReadonlyCountry): ReadonlyState = {
+  inline def apply(country: ReadonlyCountry): ReadonlyState = {
     val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyState]
   }
   
-  @scala.inline
-  implicit class ReadonlyStateMutableBuilder[Self <: ReadonlyState] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyState](x: Self) {
     
-    @scala.inline
-    def setCountry(value: ReadonlyCountry): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: ReadonlyCountry): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

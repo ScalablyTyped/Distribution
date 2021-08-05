@@ -24,8 +24,7 @@ trait Connection extends StObject {
 }
 object Connection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CELL_2G: Double,
     CELL_3G: Double,
     CELL_4G: Double,
@@ -40,31 +39,22 @@ object Connection {
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setCELL_2G(value: Double): Self = StObject.set(x, "CELL_2G", value.asInstanceOf[js.Any])
+    inline def setCELL_2G(value: Double): Self = StObject.set(x, "CELL_2G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCELL_3G(value: Double): Self = StObject.set(x, "CELL_3G", value.asInstanceOf[js.Any])
+    inline def setCELL_3G(value: Double): Self = StObject.set(x, "CELL_3G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCELL_4G(value: Double): Self = StObject.set(x, "CELL_4G", value.asInstanceOf[js.Any])
+    inline def setCELL_4G(value: Double): Self = StObject.set(x, "CELL_4G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETHERNET(value: Double): Self = StObject.set(x, "ETHERNET", value.asInstanceOf[js.Any])
+    inline def setETHERNET(value: Double): Self = StObject.set(x, "ETHERNET", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+    inline def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNKNOWN(value: Double): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
+    inline def setUNKNOWN(value: Double): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIFI(value: Double): Self = StObject.set(x, "WIFI", value.asInstanceOf[js.Any])
+    inline def setWIFI(value: Double): Self = StObject.set(x, "WIFI", value.asInstanceOf[js.Any])
   }
 }

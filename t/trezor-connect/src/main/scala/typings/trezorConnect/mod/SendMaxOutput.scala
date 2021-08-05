@@ -15,20 +15,16 @@ trait SendMaxOutput
 }
 object SendMaxOutput {
   
-  @scala.inline
-  def apply(address: String): SendMaxOutput = {
+  inline def apply(address: String): SendMaxOutput = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("send-max")
     __obj.asInstanceOf[SendMaxOutput]
   }
   
-  @scala.inline
-  implicit class SendMaxOutputMutableBuilder[Self <: SendMaxOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SendMaxOutput](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `send-max`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `send-max`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

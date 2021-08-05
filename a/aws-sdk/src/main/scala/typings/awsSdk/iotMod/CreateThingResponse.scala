@@ -23,31 +23,23 @@ trait CreateThingResponse extends StObject {
 }
 object CreateThingResponse {
   
-  @scala.inline
-  def apply(): CreateThingResponse = {
+  inline def apply(): CreateThingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateThingResponse]
   }
   
-  @scala.inline
-  implicit class CreateThingResponseMutableBuilder[Self <: CreateThingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateThingResponse](x: Self) {
     
-    @scala.inline
-    def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
+    inline def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
+    inline def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
     
-    @scala.inline
-    def setThingId(value: ThingId): Self = StObject.set(x, "thingId", value.asInstanceOf[js.Any])
+    inline def setThingId(value: ThingId): Self = StObject.set(x, "thingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingIdUndefined: Self = StObject.set(x, "thingId", js.undefined)
+    inline def setThingIdUndefined: Self = StObject.set(x, "thingId", js.undefined)
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
   }
 }

@@ -73,21 +73,16 @@ object endpointConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointConfigurationState): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EndpointConfigurationState, opts: CustomResourceOptions): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
+    inline def get(name: String, id: Input[ID]): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
+    inline def get(name: String, id: Input[ID], state: EndpointConfigurationState): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
+    inline def get(name: String, id: Input[ID], state: EndpointConfigurationState, opts: CustomResourceOptions): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
     
     /**
       * Returns true if the given object is an instance of EndpointConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean]
   }
   
   trait EndpointConfigurationArgs extends StObject {
@@ -125,8 +120,7 @@ object endpointConfigurationMod {
   }
   object EndpointConfigurationArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       productionVariants: Input[
           js.Array[
             Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationProductionVariant]
@@ -137,29 +131,21 @@ object endpointConfigurationMod {
       __obj.asInstanceOf[EndpointConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class EndpointConfigurationArgsMutableBuilder[Self <: EndpointConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setDataCaptureConfig(value: Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationDataCaptureConfig]): Self = StObject.set(x, "dataCaptureConfig", value.asInstanceOf[js.Any])
+      inline def setDataCaptureConfig(value: Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationDataCaptureConfig]): Self = StObject.set(x, "dataCaptureConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataCaptureConfigUndefined: Self = StObject.set(x, "dataCaptureConfig", js.undefined)
+      inline def setDataCaptureConfigUndefined: Self = StObject.set(x, "dataCaptureConfig", js.undefined)
       
-      @scala.inline
-      def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProductionVariants(
+      inline def setProductionVariants(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationProductionVariant]
@@ -167,14 +153,11 @@ object endpointConfigurationMod {
             ]
       ): Self = StObject.set(x, "productionVariants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductionVariantsVarargs(value: Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationProductionVariant]*): Self = StObject.set(x, "productionVariants", js.Array(value :_*))
+      inline def setProductionVariantsVarargs(value: Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationProductionVariant]*): Self = StObject.set(x, "productionVariants", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -220,41 +203,30 @@ object endpointConfigurationMod {
   }
   object EndpointConfigurationState {
     
-    @scala.inline
-    def apply(): EndpointConfigurationState = {
+    inline def apply(): EndpointConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointConfigurationState]
     }
     
-    @scala.inline
-    implicit class EndpointConfigurationStateMutableBuilder[Self <: EndpointConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointConfigurationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDataCaptureConfig(value: Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationDataCaptureConfig]): Self = StObject.set(x, "dataCaptureConfig", value.asInstanceOf[js.Any])
+      inline def setDataCaptureConfig(value: Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationDataCaptureConfig]): Self = StObject.set(x, "dataCaptureConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataCaptureConfigUndefined: Self = StObject.set(x, "dataCaptureConfig", js.undefined)
+      inline def setDataCaptureConfigUndefined: Self = StObject.set(x, "dataCaptureConfig", js.undefined)
       
-      @scala.inline
-      def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProductionVariants(
+      inline def setProductionVariants(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationProductionVariant]
@@ -262,17 +234,13 @@ object endpointConfigurationMod {
             ]
       ): Self = StObject.set(x, "productionVariants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductionVariantsUndefined: Self = StObject.set(x, "productionVariants", js.undefined)
+      inline def setProductionVariantsUndefined: Self = StObject.set(x, "productionVariants", js.undefined)
       
-      @scala.inline
-      def setProductionVariantsVarargs(value: Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationProductionVariant]*): Self = StObject.set(x, "productionVariants", js.Array(value :_*))
+      inline def setProductionVariantsVarargs(value: Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationProductionVariant]*): Self = StObject.set(x, "productionVariants", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

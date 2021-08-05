@@ -23,22 +23,17 @@ trait ASPxClientFileManagerFilesUploadedEventArgs
 }
 object ASPxClientFileManagerFilesUploadedEventArgs {
   
-  @scala.inline
-  def apply(fileNames: js.Array[String], folder: String): ASPxClientFileManagerFilesUploadedEventArgs = {
+  inline def apply(fileNames: js.Array[String], folder: String): ASPxClientFileManagerFilesUploadedEventArgs = {
     val __obj = js.Dynamic.literal(fileNames = fileNames.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerFilesUploadedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerFilesUploadedEventArgsMutableBuilder[Self <: ASPxClientFileManagerFilesUploadedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerFilesUploadedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFileNames(value: js.Array[String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
+    inline def setFileNames(value: js.Array[String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value :_*))
+    inline def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value :_*))
     
-    @scala.inline
-    def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
   }
 }

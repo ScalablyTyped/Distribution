@@ -13,19 +13,15 @@ trait SchemaOrdersAcknowledgeRequest extends StObject {
 }
 object SchemaOrdersAcknowledgeRequest {
   
-  @scala.inline
-  def apply(): SchemaOrdersAcknowledgeRequest = {
+  inline def apply(): SchemaOrdersAcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrdersAcknowledgeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaOrdersAcknowledgeRequestMutableBuilder[Self <: SchemaOrdersAcknowledgeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrdersAcknowledgeRequest](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
   }
 }

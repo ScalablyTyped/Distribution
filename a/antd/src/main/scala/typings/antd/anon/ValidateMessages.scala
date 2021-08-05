@@ -12,25 +12,19 @@ trait ValidateMessages extends StObject {
 }
 object ValidateMessages {
   
-  @scala.inline
-  def apply(): ValidateMessages = {
+  inline def apply(): ValidateMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateMessages]
   }
   
-  @scala.inline
-  implicit class ValidateMessagesMutableBuilder[Self <: ValidateMessages] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateMessages](x: Self) {
     
-    @scala.inline
-    def setRequiredMark(value: typings.antd.formFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
+    inline def setRequiredMark(value: typings.antd.formFormMod.RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
+    inline def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
     
-    @scala.inline
-    def setValidateMessages(value: typings.rcFieldForm.interfaceMod.ValidateMessages): Self = StObject.set(x, "validateMessages", value.asInstanceOf[js.Any])
+    inline def setValidateMessages(value: typings.rcFieldForm.interfaceMod.ValidateMessages): Self = StObject.set(x, "validateMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateMessagesUndefined: Self = StObject.set(x, "validateMessages", js.undefined)
+    inline def setValidateMessagesUndefined: Self = StObject.set(x, "validateMessages", js.undefined)
   }
 }

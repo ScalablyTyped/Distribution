@@ -17,19 +17,15 @@ trait SchemaGenerateDownloadUrlResponse extends StObject {
 }
 object SchemaGenerateDownloadUrlResponse {
   
-  @scala.inline
-  def apply(): SchemaGenerateDownloadUrlResponse = {
+  inline def apply(): SchemaGenerateDownloadUrlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGenerateDownloadUrlResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGenerateDownloadUrlResponseMutableBuilder[Self <: SchemaGenerateDownloadUrlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGenerateDownloadUrlResponse](x: Self) {
     
-    @scala.inline
-    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
+    inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
+    inline def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
   }
 }

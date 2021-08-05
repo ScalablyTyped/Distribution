@@ -19,32 +19,25 @@ trait TextContent extends StObject {
 }
 object TextContent {
   
-  @scala.inline
-  def apply(): TextContent = {
+  inline def apply(): TextContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextContent]
   }
   
-  @scala.inline
-  implicit class TextContentMutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
+  extension [Self <: TextContent](x: Self) {
     
-    @scala.inline
-    def setLists(
+    inline def setLists(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.slides.gapi.client.slides.List}
       */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.TextContent & TopLevel[js.Any]
     ): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
+    inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
-    @scala.inline
-    def setTextElements(value: js.Array[TextElement]): Self = StObject.set(x, "textElements", value.asInstanceOf[js.Any])
+    inline def setTextElements(value: js.Array[TextElement]): Self = StObject.set(x, "textElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextElementsUndefined: Self = StObject.set(x, "textElements", js.undefined)
+    inline def setTextElementsUndefined: Self = StObject.set(x, "textElements", js.undefined)
     
-    @scala.inline
-    def setTextElementsVarargs(value: TextElement*): Self = StObject.set(x, "textElements", js.Array(value :_*))
+    inline def setTextElementsVarargs(value: TextElement*): Self = StObject.set(x, "textElements", js.Array(value :_*))
   }
 }

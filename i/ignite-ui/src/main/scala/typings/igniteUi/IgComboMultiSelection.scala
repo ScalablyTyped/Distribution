@@ -38,37 +38,27 @@ trait IgComboMultiSelection
 }
 object IgComboMultiSelection {
   
-  @scala.inline
-  def apply(): IgComboMultiSelection = {
+  inline def apply(): IgComboMultiSelection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgComboMultiSelection]
   }
   
-  @scala.inline
-  implicit class IgComboMultiSelectionMutableBuilder[Self <: IgComboMultiSelection] (val x: Self) extends AnyVal {
+  extension [Self <: IgComboMultiSelection](x: Self) {
     
-    @scala.inline
-    def setAddWithKeyModifier(value: Boolean): Self = StObject.set(x, "addWithKeyModifier", value.asInstanceOf[js.Any])
+    inline def setAddWithKeyModifier(value: Boolean): Self = StObject.set(x, "addWithKeyModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddWithKeyModifierUndefined: Self = StObject.set(x, "addWithKeyModifier", js.undefined)
+    inline def setAddWithKeyModifierUndefined: Self = StObject.set(x, "addWithKeyModifier", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setItemSeparator(value: String): Self = StObject.set(x, "itemSeparator", value.asInstanceOf[js.Any])
+    inline def setItemSeparator(value: String): Self = StObject.set(x, "itemSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemSeparatorUndefined: Self = StObject.set(x, "itemSeparator", js.undefined)
+    inline def setItemSeparatorUndefined: Self = StObject.set(x, "itemSeparator", js.undefined)
     
-    @scala.inline
-    def setShowCheckboxes(value: Boolean): Self = StObject.set(x, "showCheckboxes", value.asInstanceOf[js.Any])
+    inline def setShowCheckboxes(value: Boolean): Self = StObject.set(x, "showCheckboxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCheckboxesUndefined: Self = StObject.set(x, "showCheckboxes", js.undefined)
+    inline def setShowCheckboxesUndefined: Self = StObject.set(x, "showCheckboxes", js.undefined)
   }
 }

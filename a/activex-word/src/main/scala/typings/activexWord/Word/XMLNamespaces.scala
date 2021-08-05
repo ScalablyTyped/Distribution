@@ -25,6 +25,6 @@ trait XMLNamespaces extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.XMLNamespaces_typekey")
+  /* private */ @JSName("Word.XMLNamespaces_typekey")
   var WordDotXMLNamespaces_typekey: XMLNamespaces = js.native
 }

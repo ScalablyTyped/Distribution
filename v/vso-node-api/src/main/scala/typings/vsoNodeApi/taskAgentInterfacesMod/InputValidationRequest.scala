@@ -11,16 +11,13 @@ trait InputValidationRequest extends StObject {
 }
 object InputValidationRequest {
   
-  @scala.inline
-  def apply(inputs: StringDictionary[InputValidationItem]): InputValidationRequest = {
+  inline def apply(inputs: StringDictionary[InputValidationItem]): InputValidationRequest = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputValidationRequest]
   }
   
-  @scala.inline
-  implicit class InputValidationRequestMutableBuilder[Self <: InputValidationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InputValidationRequest](x: Self) {
     
-    @scala.inline
-    def setInputs(value: StringDictionary[InputValidationItem]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: StringDictionary[InputValidationItem]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

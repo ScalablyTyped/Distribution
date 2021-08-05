@@ -34,7 +34,7 @@ object primitiveListPropertyMod {
     
     def deepCopyInto(clone: Structure[IAbstractModel, IContainer | Null]): Unit = js.native
     
-    var primitiveType: js.Any = js.native
+    /* private */ var primitiveType: js.Any = js.native
     
     def updateWithRawValue(value: js.Array[T]): Unit = js.native
   }

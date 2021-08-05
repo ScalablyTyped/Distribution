@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TicketRestriction extends StObject
 object TicketRestriction {
   
-  @scala.inline
-  def assigned: typings.nodeZendesk.nodeZendeskStrings.assigned = "assigned".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.assigned]
+  inline def assigned: typings.nodeZendesk.nodeZendeskStrings.assigned = "assigned".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.assigned]
   
-  @scala.inline
-  def groups: typings.nodeZendesk.nodeZendeskStrings.groups = "groups".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.groups]
+  inline def groups: typings.nodeZendesk.nodeZendeskStrings.groups = "groups".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.groups]
   
-  @scala.inline
-  def organization: typings.nodeZendesk.nodeZendeskStrings.organization = "organization".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.organization]
+  inline def organization: typings.nodeZendesk.nodeZendeskStrings.organization = "organization".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.organization]
   
-  @scala.inline
-  def requested: typings.nodeZendesk.nodeZendeskStrings.requested = "requested".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.requested]
+  inline def requested: typings.nodeZendesk.nodeZendeskStrings.requested = "requested".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.requested]
 }

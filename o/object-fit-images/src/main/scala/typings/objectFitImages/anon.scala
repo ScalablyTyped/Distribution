@@ -14,26 +14,20 @@ object anon {
   }
   object SkipTest {
     
-    @scala.inline
-    def apply(): SkipTest = {
+    inline def apply(): SkipTest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkipTest]
     }
     
-    @scala.inline
-    implicit class SkipTestMutableBuilder[Self <: SkipTest] (val x: Self) extends AnyVal {
+    extension [Self <: SkipTest](x: Self) {
       
-      @scala.inline
-      def setSkipTest(value: Boolean): Self = StObject.set(x, "skipTest", value.asInstanceOf[js.Any])
+      inline def setSkipTest(value: Boolean): Self = StObject.set(x, "skipTest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipTestUndefined: Self = StObject.set(x, "skipTest", js.undefined)
+      inline def setSkipTestUndefined: Self = StObject.set(x, "skipTest", js.undefined)
       
-      @scala.inline
-      def setWatchMQ(value: Boolean): Self = StObject.set(x, "watchMQ", value.asInstanceOf[js.Any])
+      inline def setWatchMQ(value: Boolean): Self = StObject.set(x, "watchMQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchMQUndefined: Self = StObject.set(x, "watchMQ", js.undefined)
+      inline def setWatchMQUndefined: Self = StObject.set(x, "watchMQ", js.undefined)
     }
   }
 }

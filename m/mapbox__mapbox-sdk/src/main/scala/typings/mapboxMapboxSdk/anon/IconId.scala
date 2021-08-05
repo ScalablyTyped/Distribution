@@ -14,25 +14,19 @@ trait IconId extends StObject {
 }
 object IconId {
   
-  @scala.inline
-  def apply(iconId: String, styleId: String): IconId = {
+  inline def apply(iconId: String, styleId: String): IconId = {
     val __obj = js.Dynamic.literal(iconId = iconId.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconId]
   }
   
-  @scala.inline
-  implicit class IconIdMutableBuilder[Self <: IconId] (val x: Self) extends AnyVal {
+  extension [Self <: IconId](x: Self) {
     
-    @scala.inline
-    def setIconId(value: String): Self = StObject.set(x, "iconId", value.asInstanceOf[js.Any])
+    inline def setIconId(value: String): Self = StObject.set(x, "iconId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     
-    @scala.inline
-    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+    inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
   }
 }

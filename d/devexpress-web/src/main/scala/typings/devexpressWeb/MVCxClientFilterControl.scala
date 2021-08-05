@@ -19,8 +19,7 @@ trait MVCxClientFilterControl
 }
 object MVCxClientFilterControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Applied: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]],
     Apply: () => Unit,
@@ -52,10 +51,8 @@ object MVCxClientFilterControl {
     __obj.asInstanceOf[MVCxClientFilterControl]
   }
   
-  @scala.inline
-  implicit class MVCxClientFilterControlMutableBuilder[Self <: MVCxClientFilterControl] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientFilterControl](x: Self) {
     
-    @scala.inline
-    def setFillStateObject(value: js.Any => Unit): Self = StObject.set(x, "FillStateObject", js.Any.fromFunction1(value))
+    inline def setFillStateObject(value: js.Any => Unit): Self = StObject.set(x, "FillStateObject", js.Any.fromFunction1(value))
   }
 }

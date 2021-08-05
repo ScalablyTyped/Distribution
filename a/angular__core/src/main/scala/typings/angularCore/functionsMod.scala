@@ -13,11 +13,8 @@ object functionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isFunctionLikeDeclaration(node: Node): /* is typescript.typescript.FunctionLikeDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionLikeDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.FunctionLikeDeclaration */ Boolean]
+  inline def isFunctionLikeDeclaration(node: Node): /* is typescript.typescript.FunctionLikeDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionLikeDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.FunctionLikeDeclaration */ Boolean]
   
-  @scala.inline
-  def unwrapExpression(node: Expression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
-  @scala.inline
-  def unwrapExpression(node: ParenthesizedExpression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  inline def unwrapExpression(node: Expression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  inline def unwrapExpression(node: ParenthesizedExpression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
 }

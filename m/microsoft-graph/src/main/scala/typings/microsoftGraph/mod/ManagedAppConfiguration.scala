@@ -16,22 +16,17 @@ trait ManagedAppConfiguration
 }
 object ManagedAppConfiguration {
   
-  @scala.inline
-  def apply(): ManagedAppConfiguration = {
+  inline def apply(): ManagedAppConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedAppConfiguration]
   }
   
-  @scala.inline
-  implicit class ManagedAppConfigurationMutableBuilder[Self <: ManagedAppConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedAppConfiguration](x: Self) {
     
-    @scala.inline
-    def setCustomSettings(value: js.Array[KeyValuePair]): Self = StObject.set(x, "customSettings", value.asInstanceOf[js.Any])
+    inline def setCustomSettings(value: js.Array[KeyValuePair]): Self = StObject.set(x, "customSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSettingsUndefined: Self = StObject.set(x, "customSettings", js.undefined)
+    inline def setCustomSettingsUndefined: Self = StObject.set(x, "customSettings", js.undefined)
     
-    @scala.inline
-    def setCustomSettingsVarargs(value: KeyValuePair*): Self = StObject.set(x, "customSettings", js.Array(value :_*))
+    inline def setCustomSettingsVarargs(value: KeyValuePair*): Self = StObject.set(x, "customSettings", js.Array(value :_*))
   }
 }

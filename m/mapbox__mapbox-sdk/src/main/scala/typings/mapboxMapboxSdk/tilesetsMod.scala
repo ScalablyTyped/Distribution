@@ -13,10 +13,8 @@ object tilesetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: SdkConfig): TilesetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TilesetsService]
-  @scala.inline
-  def default(config: typings.mapboxMapboxSdk.mod.default): TilesetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TilesetsService]
+  inline def default(config: SdkConfig): TilesetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TilesetsService]
+  inline def default(config: typings.mapboxMapboxSdk.mod.default): TilesetsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TilesetsService]
   
   trait Tileset extends StObject {
     
@@ -42,8 +40,7 @@ object tilesetsMod {
   }
   object Tileset {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       center: js.Array[Double],
       created: String,
       description: String,
@@ -60,41 +57,29 @@ object tilesetsMod {
       __obj.asInstanceOf[Tileset]
     }
     
-    @scala.inline
-    implicit class TilesetMutableBuilder[Self <: Tileset] (val x: Self) extends AnyVal {
+    extension [Self <: Tileset](x: Self) {
       
-      @scala.inline
-      def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
       
-      @scala.inline
-      def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesize(value: Double): Self = StObject.set(x, "filesize", value.asInstanceOf[js.Any])
+      inline def setFilesize(value: Double): Self = StObject.set(x, "filesize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+      inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,17 +89,14 @@ object tilesetsMod {
   }
   object TilesetsService {
     
-    @scala.inline
-    def apply(listTilesets: OwnerIdString => MapiRequest): TilesetsService = {
+    inline def apply(listTilesets: OwnerIdString => MapiRequest): TilesetsService = {
       val __obj = js.Dynamic.literal(listTilesets = js.Any.fromFunction1(listTilesets))
       __obj.asInstanceOf[TilesetsService]
     }
     
-    @scala.inline
-    implicit class TilesetsServiceMutableBuilder[Self <: TilesetsService] (val x: Self) extends AnyVal {
+    extension [Self <: TilesetsService](x: Self) {
       
-      @scala.inline
-      def setListTilesets(value: OwnerIdString => MapiRequest): Self = StObject.set(x, "listTilesets", js.Any.fromFunction1(value))
+      inline def setListTilesets(value: OwnerIdString => MapiRequest): Self = StObject.set(x, "listTilesets", js.Any.fromFunction1(value))
     }
   }
 }

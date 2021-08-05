@@ -18,25 +18,19 @@ trait WorkflowTypeInfos extends StObject {
 }
 object WorkflowTypeInfos {
   
-  @scala.inline
-  def apply(typeInfos: WorkflowTypeInfoList): WorkflowTypeInfos = {
+  inline def apply(typeInfos: WorkflowTypeInfoList): WorkflowTypeInfos = {
     val __obj = js.Dynamic.literal(typeInfos = typeInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowTypeInfos]
   }
   
-  @scala.inline
-  implicit class WorkflowTypeInfosMutableBuilder[Self <: WorkflowTypeInfos] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowTypeInfos](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTypeInfos(value: WorkflowTypeInfoList): Self = StObject.set(x, "typeInfos", value.asInstanceOf[js.Any])
+    inline def setTypeInfos(value: WorkflowTypeInfoList): Self = StObject.set(x, "typeInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeInfosVarargs(value: WorkflowTypeInfo*): Self = StObject.set(x, "typeInfos", js.Array(value :_*))
+    inline def setTypeInfosVarargs(value: WorkflowTypeInfo*): Self = StObject.set(x, "typeInfos", js.Array(value :_*))
   }
 }

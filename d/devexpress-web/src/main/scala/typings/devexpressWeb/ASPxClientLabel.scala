@@ -24,8 +24,7 @@ trait ASPxClientLabel
 }
 object ASPxClientLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Click: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]],
     GetCaption: () => String,
@@ -55,13 +54,10 @@ object ASPxClientLabel {
     __obj.asInstanceOf[ASPxClientLabel]
   }
   
-  @scala.inline
-  implicit class ASPxClientLabelMutableBuilder[Self <: ASPxClientLabel] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientLabel](x: Self) {
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
   }
 }

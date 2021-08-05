@@ -15,8 +15,7 @@ trait SkData
 }
 object SkData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: () => Unit,
     deleteAfter: () => Unit,
     isAliasOf: js.Any => Boolean,
@@ -27,10 +26,8 @@ object SkData {
     __obj.asInstanceOf[SkData]
   }
   
-  @scala.inline
-  implicit class SkDataMutableBuilder[Self <: SkData] (val x: Self) extends AnyVal {
+  extension [Self <: SkData](x: Self) {
     
-    @scala.inline
-    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+    inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
   }
 }

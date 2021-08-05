@@ -10,8 +10,7 @@ trait ModelDestroyOptions
      with PersistenceOptions
 object ModelDestroyOptions {
   
-  @scala.inline
-  def apply(): ModelDestroyOptions = {
+  inline def apply(): ModelDestroyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelDestroyOptions]
   }

@@ -82,8 +82,7 @@ trait Step extends StObject {
 }
 object Step {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bannerInstructions: js.Array[BannerInstruction],
     distance: Double,
     driving_side: DirectionsSide,
@@ -100,73 +99,50 @@ object Step {
     __obj.asInstanceOf[Step]
   }
   
-  @scala.inline
-  implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+  extension [Self <: Step](x: Self) {
     
-    @scala.inline
-    def setBannerInstructions(value: js.Array[BannerInstruction]): Self = StObject.set(x, "bannerInstructions", value.asInstanceOf[js.Any])
+    inline def setBannerInstructions(value: js.Array[BannerInstruction]): Self = StObject.set(x, "bannerInstructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannerInstructionsVarargs(value: BannerInstruction*): Self = StObject.set(x, "bannerInstructions", js.Array(value :_*))
+    inline def setBannerInstructionsVarargs(value: BannerInstruction*): Self = StObject.set(x, "bannerInstructions", js.Array(value :_*))
     
-    @scala.inline
-    def setDestinations(value: String): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: String): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
+    inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriving_side(value: DirectionsSide): Self = StObject.set(x, "driving_side", value.asInstanceOf[js.Any])
+    inline def setDriving_side(value: DirectionsSide): Self = StObject.set(x, "driving_side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExits(value: String): Self = StObject.set(x, "exits", value.asInstanceOf[js.Any])
+    inline def setExits(value: String): Self = StObject.set(x, "exits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitsUndefined: Self = StObject.set(x, "exits", js.undefined)
+    inline def setExitsUndefined: Self = StObject.set(x, "exits", js.undefined)
     
-    @scala.inline
-    def setGeometry(value: LineString | MultiLineString): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: LineString | MultiLineString): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
+    inline def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
+    inline def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
     
-    @scala.inline
-    def setManeuver(value: Maneuver): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
+    inline def setManeuver(value: Maneuver): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: DirectionsMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: DirectionsMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
+    inline def setPronunciation(value: String): Self = StObject.set(x, "pronunciation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPronunciationUndefined: Self = StObject.set(x, "pronunciation", js.undefined)
+    inline def setPronunciationUndefined: Self = StObject.set(x, "pronunciation", js.undefined)
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setVoiceInstructions(value: js.Array[VoiceInstruction]): Self = StObject.set(x, "voiceInstructions", value.asInstanceOf[js.Any])
+    inline def setVoiceInstructions(value: js.Array[VoiceInstruction]): Self = StObject.set(x, "voiceInstructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceInstructionsVarargs(value: VoiceInstruction*): Self = StObject.set(x, "voiceInstructions", js.Array(value :_*))
+    inline def setVoiceInstructionsVarargs(value: VoiceInstruction*): Self = StObject.set(x, "voiceInstructions", js.Array(value :_*))
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait MlDeleteModelSnapshot
 }
 object MlDeleteModelSnapshot {
   
-  @scala.inline
-  def apply(job_id: String, snapshot_id: String): MlDeleteModelSnapshot = {
+  inline def apply(job_id: String, snapshot_id: String): MlDeleteModelSnapshot = {
     val __obj = js.Dynamic.literal(job_id = job_id.asInstanceOf[js.Any], snapshot_id = snapshot_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlDeleteModelSnapshot]
   }
   
-  @scala.inline
-  implicit class MlDeleteModelSnapshotMutableBuilder[Self <: MlDeleteModelSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: MlDeleteModelSnapshot](x: Self) {
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshot_id(value: String): Self = StObject.set(x, "snapshot_id", value.asInstanceOf[js.Any])
+    inline def setSnapshot_id(value: String): Self = StObject.set(x, "snapshot_id", value.asInstanceOf[js.Any])
   }
 }

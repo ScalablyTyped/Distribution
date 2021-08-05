@@ -98,43 +98,31 @@ trait Downplay extends StObject {
 }
 object Downplay {
   
-  @scala.inline
-  def apply(): Downplay = {
+  inline def apply(): Downplay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Downplay]
   }
   
-  @scala.inline
-  implicit class DownplayMutableBuilder[Self <: Downplay] (val x: Self) extends AnyVal {
+  extension [Self <: Downplay](x: Self) {
     
-    @scala.inline
-    def setDownplay(value: `22`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
+    inline def setDownplay(value: `22`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownplayUndefined: Self = StObject.set(x, "downplay", js.undefined)
+    inline def setDownplayUndefined: Self = StObject.set(x, "downplay", js.undefined)
     
-    @scala.inline
-    def setEmphasis(value: `22`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+    inline def setEmphasis(value: `22`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
+    inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
-    @scala.inline
-    def setHighlight(value: `22`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: `22`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
-    @scala.inline
-    def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: MinAngle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: MinAngle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

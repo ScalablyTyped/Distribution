@@ -13,19 +13,15 @@ trait PickValidityStatebadInput extends StObject {
 }
 object PickValidityStatebadInput {
   
-  @scala.inline
-  def apply(badInput: Boolean, valid: Boolean): PickValidityStatebadInput = {
+  inline def apply(badInput: Boolean, valid: Boolean): PickValidityStatebadInput = {
     val __obj = js.Dynamic.literal(badInput = badInput.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickValidityStatebadInput]
   }
   
-  @scala.inline
-  implicit class PickValidityStatebadInputMutableBuilder[Self <: PickValidityStatebadInput] (val x: Self) extends AnyVal {
+  extension [Self <: PickValidityStatebadInput](x: Self) {
     
-    @scala.inline
-    def setBadInput(value: Boolean): Self = StObject.set(x, "badInput", value.asInstanceOf[js.Any])
+    inline def setBadInput(value: Boolean): Self = StObject.set(x, "badInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }
 }

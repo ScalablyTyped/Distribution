@@ -169,8 +169,7 @@ object Geofencing {
   }
   object Geofence {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       duration: Double,
       dwellTime: Double,
       geoshape: IGeoshape,
@@ -183,29 +182,21 @@ object Geofencing {
       __obj.asInstanceOf[Geofence]
     }
     
-    @scala.inline
-    implicit class GeofenceMutableBuilder[Self <: Geofence] (val x: Self) extends AnyVal {
+    extension [Self <: Geofence](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDwellTime(value: Double): Self = StObject.set(x, "dwellTime", value.asInstanceOf[js.Any])
+      inline def setDwellTime(value: Double): Self = StObject.set(x, "dwellTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoshape(value: IGeoshape): Self = StObject.set(x, "geoshape", value.asInstanceOf[js.Any])
+      inline def setGeoshape(value: IGeoshape): Self = StObject.set(x, "geoshape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitoredStates(value: MonitoredGeofenceStates): Self = StObject.set(x, "monitoredStates", value.asInstanceOf[js.Any])
+      inline def setMonitoredStates(value: MonitoredGeofenceStates): Self = StObject.set(x, "monitoredStates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleUse(value: Boolean): Self = StObject.set(x, "singleUse", value.asInstanceOf[js.Any])
+      inline def setSingleUse(value: Boolean): Self = StObject.set(x, "singleUse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,8 +261,7 @@ object Geofencing {
   }
   object GeofenceStateChangeReport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       geofence: Geofence,
       geoposition: Geoposition,
       newState: GeofenceState,
@@ -281,20 +271,15 @@ object Geofencing {
       __obj.asInstanceOf[GeofenceStateChangeReport]
     }
     
-    @scala.inline
-    implicit class GeofenceStateChangeReportMutableBuilder[Self <: GeofenceStateChangeReport] (val x: Self) extends AnyVal {
+    extension [Self <: GeofenceStateChangeReport](x: Self) {
       
-      @scala.inline
-      def setGeofence(value: Geofence): Self = StObject.set(x, "geofence", value.asInstanceOf[js.Any])
+      inline def setGeofence(value: Geofence): Self = StObject.set(x, "geofence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoposition(value: Geoposition): Self = StObject.set(x, "geoposition", value.asInstanceOf[js.Any])
+      inline def setGeoposition(value: Geoposition): Self = StObject.set(x, "geoposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewState(value: GeofenceState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+      inline def setNewState(value: GeofenceState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemovalReason(value: GeofenceRemovalReason): Self = StObject.set(x, "removalReason", value.asInstanceOf[js.Any])
+      inline def setRemovalReason(value: GeofenceRemovalReason): Self = StObject.set(x, "removalReason", value.asInstanceOf[js.Any])
     }
   }
 }

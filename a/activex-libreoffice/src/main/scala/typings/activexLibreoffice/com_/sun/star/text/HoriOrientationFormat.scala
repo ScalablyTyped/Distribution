@@ -32,25 +32,19 @@ trait HoriOrientationFormat extends StObject {
 }
 object HoriOrientationFormat {
   
-  @scala.inline
-  def apply(HorizontalOrientation: Double, HorizontalRelation: Double, PositionToggle: Boolean, XPos: Double): HoriOrientationFormat = {
+  inline def apply(HorizontalOrientation: Double, HorizontalRelation: Double, PositionToggle: Boolean, XPos: Double): HoriOrientationFormat = {
     val __obj = js.Dynamic.literal(HorizontalOrientation = HorizontalOrientation.asInstanceOf[js.Any], HorizontalRelation = HorizontalRelation.asInstanceOf[js.Any], PositionToggle = PositionToggle.asInstanceOf[js.Any], XPos = XPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoriOrientationFormat]
   }
   
-  @scala.inline
-  implicit class HoriOrientationFormatMutableBuilder[Self <: HoriOrientationFormat] (val x: Self) extends AnyVal {
+  extension [Self <: HoriOrientationFormat](x: Self) {
     
-    @scala.inline
-    def setHorizontalOrientation(value: Double): Self = StObject.set(x, "HorizontalOrientation", value.asInstanceOf[js.Any])
+    inline def setHorizontalOrientation(value: Double): Self = StObject.set(x, "HorizontalOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalRelation(value: Double): Self = StObject.set(x, "HorizontalRelation", value.asInstanceOf[js.Any])
+    inline def setHorizontalRelation(value: Double): Self = StObject.set(x, "HorizontalRelation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionToggle(value: Boolean): Self = StObject.set(x, "PositionToggle", value.asInstanceOf[js.Any])
+    inline def setPositionToggle(value: Boolean): Self = StObject.set(x, "PositionToggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXPos(value: Double): Self = StObject.set(x, "XPos", value.asInstanceOf[js.Any])
+    inline def setXPos(value: Double): Self = StObject.set(x, "XPos", value.asInstanceOf[js.Any])
   }
 }

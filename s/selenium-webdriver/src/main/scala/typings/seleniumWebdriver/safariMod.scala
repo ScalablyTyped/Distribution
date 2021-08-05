@@ -46,12 +46,9 @@ object safariMod {
       *     options for the new session.
       * @return {!Driver} A new driver instance.
       */
-    @scala.inline
-    def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Capabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
-    @scala.inline
-    def createSession(opt_config: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    inline def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
+    inline def createSession(opt_config: Capabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    inline def createSession(opt_config: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
   }
   
   @JSImport("selenium-webdriver/safari", "Options")
@@ -80,15 +77,11 @@ object safariMod {
   @js.native
   class Server () extends StObject
   
-  @scala.inline
-  def cleanSession(desiredCapabilities: Capabilities): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanSession")(desiredCapabilities.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def cleanSession(desiredCapabilities: Capabilities): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanSession")(desiredCapabilities.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def createConnectFile(serverUrl: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnectFile")(serverUrl.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createConnectFile(serverUrl: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnectFile")(serverUrl.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def findSafariDriver(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findSafariDriver")().asInstanceOf[js.Any]
+  inline def findSafariDriver(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findSafariDriver")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def getRandomString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomString")().asInstanceOf[String]
+  inline def getRandomString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomString")().asInstanceOf[String]
 }

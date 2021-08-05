@@ -14,25 +14,19 @@ trait GitCommitToCreate extends StObject {
 }
 object GitCommitToCreate {
   
-  @scala.inline
-  def apply(baseRef: GitRef, comment: String, pathActions: js.Array[GitPathAction]): GitCommitToCreate = {
+  inline def apply(baseRef: GitRef, comment: String, pathActions: js.Array[GitPathAction]): GitCommitToCreate = {
     val __obj = js.Dynamic.literal(baseRef = baseRef.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], pathActions = pathActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitCommitToCreate]
   }
   
-  @scala.inline
-  implicit class GitCommitToCreateMutableBuilder[Self <: GitCommitToCreate] (val x: Self) extends AnyVal {
+  extension [Self <: GitCommitToCreate](x: Self) {
     
-    @scala.inline
-    def setBaseRef(value: GitRef): Self = StObject.set(x, "baseRef", value.asInstanceOf[js.Any])
+    inline def setBaseRef(value: GitRef): Self = StObject.set(x, "baseRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathActions(value: js.Array[GitPathAction]): Self = StObject.set(x, "pathActions", value.asInstanceOf[js.Any])
+    inline def setPathActions(value: js.Array[GitPathAction]): Self = StObject.set(x, "pathActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathActionsVarargs(value: GitPathAction*): Self = StObject.set(x, "pathActions", js.Array(value :_*))
+    inline def setPathActionsVarargs(value: GitPathAction*): Self = StObject.set(x, "pathActions", js.Array(value :_*))
   }
 }

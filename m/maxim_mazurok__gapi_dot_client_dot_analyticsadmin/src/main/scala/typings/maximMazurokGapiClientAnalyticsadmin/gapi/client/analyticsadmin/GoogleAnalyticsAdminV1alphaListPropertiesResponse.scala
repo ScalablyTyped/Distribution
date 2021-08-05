@@ -14,28 +14,21 @@ trait GoogleAnalyticsAdminV1alphaListPropertiesResponse extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaListPropertiesResponse {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaListPropertiesResponse = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaListPropertiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListPropertiesResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaListPropertiesResponseMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListPropertiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaListPropertiesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setProperties(value: js.Array[GoogleAnalyticsAdminV1alphaProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[GoogleAnalyticsAdminV1alphaProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: GoogleAnalyticsAdminV1alphaProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: GoogleAnalyticsAdminV1alphaProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

@@ -29,8 +29,7 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     w2form: js.Object => W2Form,
     w2grid: js.Object => W2Grid,
     w2layout: js.Object => W2Layout,
@@ -43,28 +42,20 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setW2form(value: js.Object => W2Form): Self = StObject.set(x, "w2form", js.Any.fromFunction1(value))
+    inline def setW2form(value: js.Object => W2Form): Self = StObject.set(x, "w2form", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setW2grid(value: js.Object => W2Grid): Self = StObject.set(x, "w2grid", js.Any.fromFunction1(value))
+    inline def setW2grid(value: js.Object => W2Grid): Self = StObject.set(x, "w2grid", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setW2layout(value: js.Object => W2Layout): Self = StObject.set(x, "w2layout", js.Any.fromFunction1(value))
+    inline def setW2layout(value: js.Object => W2Layout): Self = StObject.set(x, "w2layout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setW2popup(value: js.Object => W2Popup): Self = StObject.set(x, "w2popup", js.Any.fromFunction1(value))
+    inline def setW2popup(value: js.Object => W2Popup): Self = StObject.set(x, "w2popup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setW2sidebar(value: js.Object => W2Sidebar): Self = StObject.set(x, "w2sidebar", js.Any.fromFunction1(value))
+    inline def setW2sidebar(value: js.Object => W2Sidebar): Self = StObject.set(x, "w2sidebar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setW2tabs(value: js.Object => W2Tabs): Self = StObject.set(x, "w2tabs", js.Any.fromFunction1(value))
+    inline def setW2tabs(value: js.Object => W2Tabs): Self = StObject.set(x, "w2tabs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setW2toolbar(value: js.Object => W2Toolbar): Self = StObject.set(x, "w2toolbar", js.Any.fromFunction1(value))
+    inline def setW2toolbar(value: js.Object => W2Toolbar): Self = StObject.set(x, "w2toolbar", js.Any.fromFunction1(value))
   }
 }

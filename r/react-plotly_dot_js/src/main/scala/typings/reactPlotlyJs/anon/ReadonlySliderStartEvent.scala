@@ -12,16 +12,13 @@ trait ReadonlySliderStartEvent extends StObject {
 }
 object ReadonlySliderStartEvent {
   
-  @scala.inline
-  def apply(slider: Slider): ReadonlySliderStartEvent = {
+  inline def apply(slider: Slider): ReadonlySliderStartEvent = {
     val __obj = js.Dynamic.literal(slider = slider.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlySliderStartEvent]
   }
   
-  @scala.inline
-  implicit class ReadonlySliderStartEventMutableBuilder[Self <: ReadonlySliderStartEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlySliderStartEvent](x: Self) {
     
-    @scala.inline
-    def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+    inline def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
   }
 }

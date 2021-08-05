@@ -30,22 +30,17 @@ trait INxValidationError extends StObject {
 }
 object INxValidationError {
   
-  @scala.inline
-  def apply(qContext: String, qErrorCode: Double, qExtendedMessage: String): INxValidationError = {
+  inline def apply(qContext: String, qErrorCode: Double, qExtendedMessage: String): INxValidationError = {
     val __obj = js.Dynamic.literal(qContext = qContext.asInstanceOf[js.Any], qErrorCode = qErrorCode.asInstanceOf[js.Any], qExtendedMessage = qExtendedMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxValidationError]
   }
   
-  @scala.inline
-  implicit class INxValidationErrorMutableBuilder[Self <: INxValidationError] (val x: Self) extends AnyVal {
+  extension [Self <: INxValidationError](x: Self) {
     
-    @scala.inline
-    def setQContext(value: String): Self = StObject.set(x, "qContext", value.asInstanceOf[js.Any])
+    inline def setQContext(value: String): Self = StObject.set(x, "qContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQErrorCode(value: Double): Self = StObject.set(x, "qErrorCode", value.asInstanceOf[js.Any])
+    inline def setQErrorCode(value: Double): Self = StObject.set(x, "qErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQExtendedMessage(value: String): Self = StObject.set(x, "qExtendedMessage", value.asInstanceOf[js.Any])
+    inline def setQExtendedMessage(value: String): Self = StObject.set(x, "qExtendedMessage", value.asInstanceOf[js.Any])
   }
 }

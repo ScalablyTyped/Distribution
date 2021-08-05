@@ -14,22 +14,17 @@ trait TagFeedResponseCreativeConfig extends StObject {
 }
 object TagFeedResponseCreativeConfig {
   
-  @scala.inline
-  def apply(camera_facing: String, capture_type: String, should_render_try_it_on: Boolean): TagFeedResponseCreativeConfig = {
+  inline def apply(camera_facing: String, capture_type: String, should_render_try_it_on: Boolean): TagFeedResponseCreativeConfig = {
     val __obj = js.Dynamic.literal(camera_facing = camera_facing.asInstanceOf[js.Any], capture_type = capture_type.asInstanceOf[js.Any], should_render_try_it_on = should_render_try_it_on.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagFeedResponseCreativeConfig]
   }
   
-  @scala.inline
-  implicit class TagFeedResponseCreativeConfigMutableBuilder[Self <: TagFeedResponseCreativeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TagFeedResponseCreativeConfig](x: Self) {
     
-    @scala.inline
-    def setCamera_facing(value: String): Self = StObject.set(x, "camera_facing", value.asInstanceOf[js.Any])
+    inline def setCamera_facing(value: String): Self = StObject.set(x, "camera_facing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapture_type(value: String): Self = StObject.set(x, "capture_type", value.asInstanceOf[js.Any])
+    inline def setCapture_type(value: String): Self = StObject.set(x, "capture_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShould_render_try_it_on(value: Boolean): Self = StObject.set(x, "should_render_try_it_on", value.asInstanceOf[js.Any])
+    inline def setShould_render_try_it_on(value: Boolean): Self = StObject.set(x, "should_render_try_it_on", value.asInstanceOf[js.Any])
   }
 }

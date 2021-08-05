@@ -13,16 +13,13 @@ trait PutLoggingConfigurationRequest extends StObject {
 }
 object PutLoggingConfigurationRequest {
   
-  @scala.inline
-  def apply(LoggingConfiguration: LoggingConfiguration): PutLoggingConfigurationRequest = {
+  inline def apply(LoggingConfiguration: LoggingConfiguration): PutLoggingConfigurationRequest = {
     val __obj = js.Dynamic.literal(LoggingConfiguration = LoggingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutLoggingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class PutLoggingConfigurationRequestMutableBuilder[Self <: PutLoggingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutLoggingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "LoggingConfiguration", value.asInstanceOf[js.Any])
+    inline def setLoggingConfiguration(value: LoggingConfiguration): Self = StObject.set(x, "LoggingConfiguration", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait LookupDeveloperIdentityResponse extends StObject {
 }
 object LookupDeveloperIdentityResponse {
   
-  @scala.inline
-  def apply(): LookupDeveloperIdentityResponse = {
+  inline def apply(): LookupDeveloperIdentityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LookupDeveloperIdentityResponse]
   }
   
-  @scala.inline
-  implicit class LookupDeveloperIdentityResponseMutableBuilder[Self <: LookupDeveloperIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LookupDeveloperIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setDeveloperUserIdentifierList(value: DeveloperUserIdentifierList): Self = StObject.set(x, "DeveloperUserIdentifierList", value.asInstanceOf[js.Any])
+    inline def setDeveloperUserIdentifierList(value: DeveloperUserIdentifierList): Self = StObject.set(x, "DeveloperUserIdentifierList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperUserIdentifierListUndefined: Self = StObject.set(x, "DeveloperUserIdentifierList", js.undefined)
+    inline def setDeveloperUserIdentifierListUndefined: Self = StObject.set(x, "DeveloperUserIdentifierList", js.undefined)
     
-    @scala.inline
-    def setDeveloperUserIdentifierListVarargs(value: DeveloperUserIdentifier*): Self = StObject.set(x, "DeveloperUserIdentifierList", js.Array(value :_*))
+    inline def setDeveloperUserIdentifierListVarargs(value: DeveloperUserIdentifier*): Self = StObject.set(x, "DeveloperUserIdentifierList", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

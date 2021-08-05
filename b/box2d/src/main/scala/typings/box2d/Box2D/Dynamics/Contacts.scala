@@ -87,8 +87,7 @@ object Contacts {
   }
   object b2Contact {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FlagForFiltering: () => Unit,
       GetFixtureA: () => b2Fixture,
       GetFixtureB: () => b2Fixture,
@@ -106,44 +105,31 @@ object Contacts {
       __obj.asInstanceOf[b2Contact]
     }
     
-    @scala.inline
-    implicit class b2ContactMutableBuilder[Self <: b2Contact] (val x: Self) extends AnyVal {
+    extension [Self <: b2Contact](x: Self) {
       
-      @scala.inline
-      def setFlagForFiltering(value: () => Unit): Self = StObject.set(x, "FlagForFiltering", js.Any.fromFunction0(value))
+      inline def setFlagForFiltering(value: () => Unit): Self = StObject.set(x, "FlagForFiltering", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFixtureA(value: () => b2Fixture): Self = StObject.set(x, "GetFixtureA", js.Any.fromFunction0(value))
+      inline def setGetFixtureA(value: () => b2Fixture): Self = StObject.set(x, "GetFixtureA", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFixtureB(value: () => b2Fixture): Self = StObject.set(x, "GetFixtureB", js.Any.fromFunction0(value))
+      inline def setGetFixtureB(value: () => b2Fixture): Self = StObject.set(x, "GetFixtureB", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetManifold(value: () => b2Manifold): Self = StObject.set(x, "GetManifold", js.Any.fromFunction0(value))
+      inline def setGetManifold(value: () => b2Manifold): Self = StObject.set(x, "GetManifold", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNext(value: () => b2Contact): Self = StObject.set(x, "GetNext", js.Any.fromFunction0(value))
+      inline def setGetNext(value: () => b2Contact): Self = StObject.set(x, "GetNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWorldManifold(value: b2WorldManifold => Unit): Self = StObject.set(x, "GetWorldManifold", js.Any.fromFunction1(value))
+      inline def setGetWorldManifold(value: b2WorldManifold => Unit): Self = StObject.set(x, "GetWorldManifold", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsContinuous(value: () => Boolean): Self = StObject.set(x, "IsContinuous", js.Any.fromFunction0(value))
+      inline def setIsContinuous(value: () => Boolean): Self = StObject.set(x, "IsContinuous", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "IsEnabled", js.Any.fromFunction0(value))
+      inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "IsEnabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSensor(value: () => Boolean): Self = StObject.set(x, "IsSensor", js.Any.fromFunction0(value))
+      inline def setIsSensor(value: () => Boolean): Self = StObject.set(x, "IsSensor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTouching(value: () => Boolean): Self = StObject.set(x, "IsTouching", js.Any.fromFunction0(value))
+      inline def setIsTouching(value: () => Boolean): Self = StObject.set(x, "IsTouching", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
+      inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSensor(value: Boolean => Unit): Self = StObject.set(x, "SetSensor", js.Any.fromFunction1(value))
+      inline def setSetSensor(value: Boolean => Unit): Self = StObject.set(x, "SetSensor", js.Any.fromFunction1(value))
     }
   }
   
@@ -171,26 +157,20 @@ object Contacts {
   }
   object b2ContactEdge {
     
-    @scala.inline
-    def apply(contact: b2Contact, next: b2ContactEdge, other: b2Body, prev: b2ContactEdge): b2ContactEdge = {
+    inline def apply(contact: b2Contact, next: b2ContactEdge, other: b2Body, prev: b2ContactEdge): b2ContactEdge = {
       val __obj = js.Dynamic.literal(contact = contact.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
       __obj.asInstanceOf[b2ContactEdge]
     }
     
-    @scala.inline
-    implicit class b2ContactEdgeMutableBuilder[Self <: b2ContactEdge] (val x: Self) extends AnyVal {
+    extension [Self <: b2ContactEdge](x: Self) {
       
-      @scala.inline
-      def setContact(value: b2Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+      inline def setContact(value: b2Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: b2ContactEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: b2ContactEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOther(value: b2Body): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: b2Body): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrev(value: b2ContactEdge): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: b2ContactEdge): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,8 +213,7 @@ object Contacts {
   }
   object b2ContactResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: b2ContactID,
       normal: b2Vec2,
       normalImpulse: Double,
@@ -247,29 +226,21 @@ object Contacts {
       __obj.asInstanceOf[b2ContactResult]
     }
     
-    @scala.inline
-    implicit class b2ContactResultMutableBuilder[Self <: b2ContactResult] (val x: Self) extends AnyVal {
+    extension [Self <: b2ContactResult](x: Self) {
       
-      @scala.inline
-      def setId(value: b2ContactID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: b2ContactID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormal(value: b2Vec2): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+      inline def setNormal(value: b2Vec2): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalImpulse(value: Double): Self = StObject.set(x, "normalImpulse", value.asInstanceOf[js.Any])
+      inline def setNormalImpulse(value: Double): Self = StObject.set(x, "normalImpulse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: b2Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: b2Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape1(value: b2Shape): Self = StObject.set(x, "shape1", value.asInstanceOf[js.Any])
+      inline def setShape1(value: b2Shape): Self = StObject.set(x, "shape1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape2(value: b2Shape): Self = StObject.set(x, "shape2", value.asInstanceOf[js.Any])
+      inline def setShape2(value: b2Shape): Self = StObject.set(x, "shape2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTangentImpulse(value: Double): Self = StObject.set(x, "tangentImpulse", value.asInstanceOf[js.Any])
+      inline def setTangentImpulse(value: Double): Self = StObject.set(x, "tangentImpulse", value.asInstanceOf[js.Any])
     }
   }
 }

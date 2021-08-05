@@ -18,19 +18,15 @@ trait ActivityTaskCancelRequestedEventAttributes extends StObject {
 }
 object ActivityTaskCancelRequestedEventAttributes {
   
-  @scala.inline
-  def apply(activityId: ActivityId, decisionTaskCompletedEventId: EventId): ActivityTaskCancelRequestedEventAttributes = {
+  inline def apply(activityId: ActivityId, decisionTaskCompletedEventId: EventId): ActivityTaskCancelRequestedEventAttributes = {
     val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTaskCancelRequestedEventAttributes]
   }
   
-  @scala.inline
-  implicit class ActivityTaskCancelRequestedEventAttributesMutableBuilder[Self <: ActivityTaskCancelRequestedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityTaskCancelRequestedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+    inline def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
   }
 }

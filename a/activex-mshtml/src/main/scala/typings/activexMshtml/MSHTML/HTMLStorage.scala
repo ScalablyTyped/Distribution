@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLStorage extends StObject {
   
-  @JSName("MSHTML.HTMLStorage_typekey")
+  /* private */ @JSName("MSHTML.HTMLStorage_typekey")
   var MSHTMLDotHTMLStorage_typekey: HTMLStorage
   
   def clear(): Unit
@@ -29,8 +29,7 @@ trait HTMLStorage extends StObject {
 }
 object HTMLStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLStorage_typekey: HTMLStorage,
     clear: () => Unit,
     constructor: js.Any,
@@ -47,37 +46,26 @@ object HTMLStorage {
     __obj.asInstanceOf[HTMLStorage]
   }
   
-  @scala.inline
-  implicit class HTMLStorageMutableBuilder[Self <: HTMLStorage] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLStorage](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetItem(value: String => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: String => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIe9_setItem(value: (String, String) => Unit): Self = StObject.set(x, "ie9_setItem", js.Any.fromFunction2(value))
+    inline def setIe9_setItem(value: (String, String) => Unit): Self = StObject.set(x, "ie9_setItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKey(value: Double => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+    inline def setKey(value: Double => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLStorage_typekey(value: HTMLStorage): Self = StObject.set(x, "MSHTML.HTMLStorage_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLStorage_typekey(value: HTMLStorage): Self = StObject.set(x, "MSHTML.HTMLStorage_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingSpace(value: Double): Self = StObject.set(x, "remainingSpace", value.asInstanceOf[js.Any])
+    inline def setRemainingSpace(value: Double): Self = StObject.set(x, "remainingSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+    inline def setRemoveItem(value: String => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+    inline def setSetItem(value: (String, String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
   }
 }

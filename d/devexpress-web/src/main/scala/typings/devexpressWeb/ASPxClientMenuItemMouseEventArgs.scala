@@ -18,16 +18,13 @@ trait ASPxClientMenuItemMouseEventArgs
 }
 object ASPxClientMenuItemMouseEventArgs {
   
-  @scala.inline
-  def apply(htmlElement: js.Any, item: ASPxClientMenuItem): ASPxClientMenuItemMouseEventArgs = {
+  inline def apply(htmlElement: js.Any, item: ASPxClientMenuItem): ASPxClientMenuItemMouseEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientMenuItemMouseEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientMenuItemMouseEventArgsMutableBuilder[Self <: ASPxClientMenuItemMouseEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientMenuItemMouseEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait PartialMatch extends StObject {
 }
 object PartialMatch {
   
-  @scala.inline
-  def apply(): PartialMatch = {
+  inline def apply(): PartialMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMatch]
   }
   
-  @scala.inline
-  implicit class PartialMatchMutableBuilder[Self <: PartialMatch] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMatch](x: Self) {
     
-    @scala.inline
-    def setReference(value: ReferenceRule): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: ReferenceRule): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "Reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "Reference", js.undefined)
     
-    @scala.inline
-    def setTargetViolationReasons(value: TargetViolationReasons): Self = StObject.set(x, "TargetViolationReasons", value.asInstanceOf[js.Any])
+    inline def setTargetViolationReasons(value: TargetViolationReasons): Self = StObject.set(x, "TargetViolationReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetViolationReasonsUndefined: Self = StObject.set(x, "TargetViolationReasons", js.undefined)
+    inline def setTargetViolationReasonsUndefined: Self = StObject.set(x, "TargetViolationReasons", js.undefined)
     
-    @scala.inline
-    def setTargetViolationReasonsVarargs(value: TargetViolationReason*): Self = StObject.set(x, "TargetViolationReasons", js.Array(value :_*))
+    inline def setTargetViolationReasonsVarargs(value: TargetViolationReason*): Self = StObject.set(x, "TargetViolationReasons", js.Array(value :_*))
   }
 }

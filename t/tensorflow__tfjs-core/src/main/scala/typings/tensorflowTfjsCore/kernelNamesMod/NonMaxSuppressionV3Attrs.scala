@@ -14,22 +14,17 @@ trait NonMaxSuppressionV3Attrs extends StObject {
 }
 object NonMaxSuppressionV3Attrs {
   
-  @scala.inline
-  def apply(iouThreshold: Double, maxOutputSize: Double, scoreThreshold: Double): NonMaxSuppressionV3Attrs = {
+  inline def apply(iouThreshold: Double, maxOutputSize: Double, scoreThreshold: Double): NonMaxSuppressionV3Attrs = {
     val __obj = js.Dynamic.literal(iouThreshold = iouThreshold.asInstanceOf[js.Any], maxOutputSize = maxOutputSize.asInstanceOf[js.Any], scoreThreshold = scoreThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonMaxSuppressionV3Attrs]
   }
   
-  @scala.inline
-  implicit class NonMaxSuppressionV3AttrsMutableBuilder[Self <: NonMaxSuppressionV3Attrs] (val x: Self) extends AnyVal {
+  extension [Self <: NonMaxSuppressionV3Attrs](x: Self) {
     
-    @scala.inline
-    def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
+    inline def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxOutputSize(value: Double): Self = StObject.set(x, "maxOutputSize", value.asInstanceOf[js.Any])
+    inline def setMaxOutputSize(value: Double): Self = StObject.set(x, "maxOutputSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreThreshold(value: Double): Self = StObject.set(x, "scoreThreshold", value.asInstanceOf[js.Any])
+    inline def setScoreThreshold(value: Double): Self = StObject.set(x, "scoreThreshold", value.asInstanceOf[js.Any])
   }
 }

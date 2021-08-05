@@ -13,22 +13,17 @@ trait VirtualInterfaces extends StObject {
 }
 object VirtualInterfaces {
   
-  @scala.inline
-  def apply(): VirtualInterfaces = {
+  inline def apply(): VirtualInterfaces = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualInterfaces]
   }
   
-  @scala.inline
-  implicit class VirtualInterfacesMutableBuilder[Self <: VirtualInterfaces] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualInterfaces](x: Self) {
     
-    @scala.inline
-    def setVirtualInterfaces(value: VirtualInterfaceList): Self = StObject.set(x, "virtualInterfaces", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaces(value: VirtualInterfaceList): Self = StObject.set(x, "virtualInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfacesUndefined: Self = StObject.set(x, "virtualInterfaces", js.undefined)
+    inline def setVirtualInterfacesUndefined: Self = StObject.set(x, "virtualInterfaces", js.undefined)
     
-    @scala.inline
-    def setVirtualInterfacesVarargs(value: VirtualInterface*): Self = StObject.set(x, "virtualInterfaces", js.Array(value :_*))
+    inline def setVirtualInterfacesVarargs(value: VirtualInterface*): Self = StObject.set(x, "virtualInterfaces", js.Array(value :_*))
   }
 }

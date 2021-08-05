@@ -18,31 +18,23 @@ trait BatchGetCrawlersResponse extends StObject {
 }
 object BatchGetCrawlersResponse {
   
-  @scala.inline
-  def apply(): BatchGetCrawlersResponse = {
+  inline def apply(): BatchGetCrawlersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetCrawlersResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetCrawlersResponseMutableBuilder[Self <: BatchGetCrawlersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetCrawlersResponse](x: Self) {
     
-    @scala.inline
-    def setCrawlers(value: CrawlerList): Self = StObject.set(x, "Crawlers", value.asInstanceOf[js.Any])
+    inline def setCrawlers(value: CrawlerList): Self = StObject.set(x, "Crawlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlersNotFound(value: CrawlerNameList): Self = StObject.set(x, "CrawlersNotFound", value.asInstanceOf[js.Any])
+    inline def setCrawlersNotFound(value: CrawlerNameList): Self = StObject.set(x, "CrawlersNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlersNotFoundUndefined: Self = StObject.set(x, "CrawlersNotFound", js.undefined)
+    inline def setCrawlersNotFoundUndefined: Self = StObject.set(x, "CrawlersNotFound", js.undefined)
     
-    @scala.inline
-    def setCrawlersNotFoundVarargs(value: NameString*): Self = StObject.set(x, "CrawlersNotFound", js.Array(value :_*))
+    inline def setCrawlersNotFoundVarargs(value: NameString*): Self = StObject.set(x, "CrawlersNotFound", js.Array(value :_*))
     
-    @scala.inline
-    def setCrawlersUndefined: Self = StObject.set(x, "Crawlers", js.undefined)
+    inline def setCrawlersUndefined: Self = StObject.set(x, "Crawlers", js.undefined)
     
-    @scala.inline
-    def setCrawlersVarargs(value: Crawler*): Self = StObject.set(x, "Crawlers", js.Array(value :_*))
+    inline def setCrawlersVarargs(value: Crawler*): Self = StObject.set(x, "Crawlers", js.Array(value :_*))
   }
 }

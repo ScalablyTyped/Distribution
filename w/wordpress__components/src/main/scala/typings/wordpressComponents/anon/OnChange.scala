@@ -21,31 +21,23 @@ trait OnChange[T /* <: String | js.Array[String] */] extends StObject {
 }
 object OnChange {
   
-  @scala.inline
-  def apply[T /* <: String | js.Array[String] */](onChange: T => Unit): OnChange[T] = {
+  inline def apply[T /* <: String | js.Array[String] */](onChange: T => Unit): OnChange[T] = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[OnChange[T]]
   }
   
-  @scala.inline
-  implicit class OnChangeMutableBuilder[Self <: OnChange[?], T /* <: String | js.Array[String] */] (val x: Self & OnChange[T]) extends AnyVal {
+  extension [Self <: OnChange[?], T /* <: String | js.Array[String] */](x: Self & OnChange[T]) {
     
-    @scala.inline
-    def setOnChange(value: T => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: T => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

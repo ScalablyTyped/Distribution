@@ -16,19 +16,15 @@ trait TypeofAnchorLink extends StObject {
 }
 object TypeofAnchorLink {
   
-  @scala.inline
-  def apply(contextType: Context[AntAnchor], defaultProps: HrefString): TypeofAnchorLink = {
+  inline def apply(contextType: Context[AntAnchor], defaultProps: HrefString): TypeofAnchorLink = {
     val __obj = js.Dynamic.literal(contextType = contextType.asInstanceOf[js.Any], defaultProps = defaultProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAnchorLink]
   }
   
-  @scala.inline
-  implicit class TypeofAnchorLinkMutableBuilder[Self <: TypeofAnchorLink] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofAnchorLink](x: Self) {
     
-    @scala.inline
-    def setContextType(value: Context[AntAnchor]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+    inline def setContextType(value: Context[AntAnchor]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultProps(value: HrefString): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: HrefString): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }
 }

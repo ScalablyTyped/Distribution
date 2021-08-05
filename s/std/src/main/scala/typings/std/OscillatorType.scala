@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OscillatorType extends StObject
 object OscillatorType {
   
-  @scala.inline
-  def custom: typings.std.stdStrings.custom = "custom".asInstanceOf[typings.std.stdStrings.custom]
+  inline def custom: typings.std.stdStrings.custom = "custom".asInstanceOf[typings.std.stdStrings.custom]
   
-  @scala.inline
-  def sawtooth: typings.std.stdStrings.sawtooth = "sawtooth".asInstanceOf[typings.std.stdStrings.sawtooth]
+  inline def sawtooth: typings.std.stdStrings.sawtooth = "sawtooth".asInstanceOf[typings.std.stdStrings.sawtooth]
   
-  @scala.inline
-  def sine: typings.std.stdStrings.sine = "sine".asInstanceOf[typings.std.stdStrings.sine]
+  inline def sine: typings.std.stdStrings.sine = "sine".asInstanceOf[typings.std.stdStrings.sine]
   
-  @scala.inline
-  def square: typings.std.stdStrings.square = "square".asInstanceOf[typings.std.stdStrings.square]
+  inline def square: typings.std.stdStrings.square = "square".asInstanceOf[typings.std.stdStrings.square]
   
-  @scala.inline
-  def triangle: typings.std.stdStrings.triangle = "triangle".asInstanceOf[typings.std.stdStrings.triangle]
+  inline def triangle: typings.std.stdStrings.triangle = "triangle".asInstanceOf[typings.std.stdStrings.triangle]
 }

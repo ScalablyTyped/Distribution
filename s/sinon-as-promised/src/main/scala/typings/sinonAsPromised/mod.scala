@@ -28,20 +28,16 @@ object mod {
   }
   object SinonStub {
     
-    @scala.inline
-    def apply(rejects: js.Any => SinonStub, resolves: js.Any => SinonStub): SinonStub = {
+    inline def apply(rejects: js.Any => SinonStub, resolves: js.Any => SinonStub): SinonStub = {
       val __obj = js.Dynamic.literal(rejects = js.Any.fromFunction1(rejects), resolves = js.Any.fromFunction1(resolves))
       __obj.asInstanceOf[SinonStub]
     }
     
-    @scala.inline
-    implicit class SinonStubMutableBuilder[Self <: SinonStub] (val x: Self) extends AnyVal {
+    extension [Self <: SinonStub](x: Self) {
       
-      @scala.inline
-      def setRejects(value: js.Any => SinonStub): Self = StObject.set(x, "rejects", js.Any.fromFunction1(value))
+      inline def setRejects(value: js.Any => SinonStub): Self = StObject.set(x, "rejects", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolves(value: js.Any => SinonStub): Self = StObject.set(x, "resolves", js.Any.fromFunction1(value))
+      inline def setResolves(value: js.Any => SinonStub): Self = StObject.set(x, "resolves", js.Any.fromFunction1(value))
     }
   }
 }

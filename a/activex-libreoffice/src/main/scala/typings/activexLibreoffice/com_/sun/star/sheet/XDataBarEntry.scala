@@ -23,8 +23,7 @@ trait XDataBarEntry extends StObject {
 }
 object XDataBarEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Formula: String,
     Type: Double,
     getFormula: () => String,
@@ -36,25 +35,18 @@ object XDataBarEntry {
     __obj.asInstanceOf[XDataBarEntry]
   }
   
-  @scala.inline
-  implicit class XDataBarEntryMutableBuilder[Self <: XDataBarEntry] (val x: Self) extends AnyVal {
+  extension [Self <: XDataBarEntry](x: Self) {
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
+    inline def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFormula(value: String => Unit): Self = StObject.set(x, "setFormula", js.Any.fromFunction1(value))
+    inline def setSetFormula(value: String => Unit): Self = StObject.set(x, "setFormula", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetType(value: Double => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+    inline def setSetType(value: Double => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

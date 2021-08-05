@@ -13,19 +13,15 @@ trait DescribeHubRequest extends StObject {
 }
 object DescribeHubRequest {
   
-  @scala.inline
-  def apply(): DescribeHubRequest = {
+  inline def apply(): DescribeHubRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeHubRequest]
   }
   
-  @scala.inline
-  implicit class DescribeHubRequestMutableBuilder[Self <: DescribeHubRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHubRequest](x: Self) {
     
-    @scala.inline
-    def setHubArn(value: NonEmptyString): Self = StObject.set(x, "HubArn", value.asInstanceOf[js.Any])
+    inline def setHubArn(value: NonEmptyString): Self = StObject.set(x, "HubArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHubArnUndefined: Self = StObject.set(x, "HubArn", js.undefined)
+    inline def setHubArnUndefined: Self = StObject.set(x, "HubArn", js.undefined)
   }
 }

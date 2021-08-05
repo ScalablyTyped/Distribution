@@ -13,25 +13,19 @@ trait With extends StObject {
 }
 object With {
   
-  @scala.inline
-  def apply(): With = {
+  inline def apply(): With = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[With]
   }
   
-  @scala.inline
-  implicit class WithMutableBuilder[Self <: With] (val x: Self) extends AnyVal {
+  extension [Self <: With](x: Self) {
     
-    @scala.inline
-    def setIfModifiedSince(value: Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
+    inline def setIfModifiedSince(value: Date): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
+    inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
     
-    @scala.inline
-    def set_with(value: String): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
+    inline def set_with(value: String): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
+    inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
   }
 }

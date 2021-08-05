@@ -16,8 +16,7 @@ trait FixedSizeListProps
 }
 object FixedSizeListProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: ComponentType[ListChildComponentProps],
     height: Double | String,
     itemCount: Double,
@@ -28,10 +27,8 @@ object FixedSizeListProps {
     __obj.asInstanceOf[FixedSizeListProps]
   }
   
-  @scala.inline
-  implicit class FixedSizeListPropsMutableBuilder[Self <: FixedSizeListProps] (val x: Self) extends AnyVal {
+  extension [Self <: FixedSizeListProps](x: Self) {
     
-    @scala.inline
-    def setItemSize(value: Double): Self = StObject.set(x, "itemSize", value.asInstanceOf[js.Any])
+    inline def setItemSize(value: Double): Self = StObject.set(x, "itemSize", value.asInstanceOf[js.Any])
   }
 }

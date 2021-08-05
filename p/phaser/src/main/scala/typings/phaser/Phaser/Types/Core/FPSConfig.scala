@@ -39,49 +39,35 @@ trait FPSConfig extends StObject {
 }
 object FPSConfig {
   
-  @scala.inline
-  def apply(): FPSConfig = {
+  inline def apply(): FPSConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FPSConfig]
   }
   
-  @scala.inline
-  implicit class FPSConfigMutableBuilder[Self <: FPSConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FPSConfig](x: Self) {
     
-    @scala.inline
-    def setDeltaHistory(value: integer): Self = StObject.set(x, "deltaHistory", value.asInstanceOf[js.Any])
+    inline def setDeltaHistory(value: integer): Self = StObject.set(x, "deltaHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaHistoryUndefined: Self = StObject.set(x, "deltaHistory", js.undefined)
+    inline def setDeltaHistoryUndefined: Self = StObject.set(x, "deltaHistory", js.undefined)
     
-    @scala.inline
-    def setForceSetTimeOut(value: Boolean): Self = StObject.set(x, "forceSetTimeOut", value.asInstanceOf[js.Any])
+    inline def setForceSetTimeOut(value: Boolean): Self = StObject.set(x, "forceSetTimeOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceSetTimeOutUndefined: Self = StObject.set(x, "forceSetTimeOut", js.undefined)
+    inline def setForceSetTimeOutUndefined: Self = StObject.set(x, "forceSetTimeOut", js.undefined)
     
-    @scala.inline
-    def setMin(value: integer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: integer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setPanicMax(value: integer): Self = StObject.set(x, "panicMax", value.asInstanceOf[js.Any])
+    inline def setPanicMax(value: integer): Self = StObject.set(x, "panicMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanicMaxUndefined: Self = StObject.set(x, "panicMax", js.undefined)
+    inline def setPanicMaxUndefined: Self = StObject.set(x, "panicMax", js.undefined)
     
-    @scala.inline
-    def setSmoothStep(value: Boolean): Self = StObject.set(x, "smoothStep", value.asInstanceOf[js.Any])
+    inline def setSmoothStep(value: Boolean): Self = StObject.set(x, "smoothStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothStepUndefined: Self = StObject.set(x, "smoothStep", js.undefined)
+    inline def setSmoothStepUndefined: Self = StObject.set(x, "smoothStep", js.undefined)
     
-    @scala.inline
-    def setTarget(value: integer): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: integer): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

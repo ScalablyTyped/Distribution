@@ -53,73 +53,51 @@ trait AutoScalingGroupRecommendation extends StObject {
 }
 object AutoScalingGroupRecommendation {
   
-  @scala.inline
-  def apply(): AutoScalingGroupRecommendation = {
+  inline def apply(): AutoScalingGroupRecommendation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoScalingGroupRecommendation]
   }
   
-  @scala.inline
-  implicit class AutoScalingGroupRecommendationMutableBuilder[Self <: AutoScalingGroupRecommendation] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScalingGroupRecommendation](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAutoScalingGroupArn(value: AutoScalingGroupArn): Self = StObject.set(x, "autoScalingGroupArn", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupArn(value: AutoScalingGroupArn): Self = StObject.set(x, "autoScalingGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupArnUndefined: Self = StObject.set(x, "autoScalingGroupArn", js.undefined)
+    inline def setAutoScalingGroupArnUndefined: Self = StObject.set(x, "autoScalingGroupArn", js.undefined)
     
-    @scala.inline
-    def setAutoScalingGroupName(value: AutoScalingGroupName): Self = StObject.set(x, "autoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: AutoScalingGroupName): Self = StObject.set(x, "autoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "autoScalingGroupName", js.undefined)
+    inline def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "autoScalingGroupName", js.undefined)
     
-    @scala.inline
-    def setCurrentConfiguration(value: AutoScalingGroupConfiguration): Self = StObject.set(x, "currentConfiguration", value.asInstanceOf[js.Any])
+    inline def setCurrentConfiguration(value: AutoScalingGroupConfiguration): Self = StObject.set(x, "currentConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentConfigurationUndefined: Self = StObject.set(x, "currentConfiguration", js.undefined)
+    inline def setCurrentConfigurationUndefined: Self = StObject.set(x, "currentConfiguration", js.undefined)
     
-    @scala.inline
-    def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
+    inline def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
+    inline def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
-    @scala.inline
-    def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = StObject.set(x, "lastRefreshTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastRefreshTimestamp(value: LastRefreshTimestamp): Self = StObject.set(x, "lastRefreshTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRefreshTimestampUndefined: Self = StObject.set(x, "lastRefreshTimestamp", js.undefined)
+    inline def setLastRefreshTimestampUndefined: Self = StObject.set(x, "lastRefreshTimestamp", js.undefined)
     
-    @scala.inline
-    def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = StObject.set(x, "lookBackPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = StObject.set(x, "lookBackPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookBackPeriodInDaysUndefined: Self = StObject.set(x, "lookBackPeriodInDays", js.undefined)
+    inline def setLookBackPeriodInDaysUndefined: Self = StObject.set(x, "lookBackPeriodInDays", js.undefined)
     
-    @scala.inline
-    def setRecommendationOptions(value: AutoScalingGroupRecommendationOptions): Self = StObject.set(x, "recommendationOptions", value.asInstanceOf[js.Any])
+    inline def setRecommendationOptions(value: AutoScalingGroupRecommendationOptions): Self = StObject.set(x, "recommendationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationOptionsUndefined: Self = StObject.set(x, "recommendationOptions", js.undefined)
+    inline def setRecommendationOptionsUndefined: Self = StObject.set(x, "recommendationOptions", js.undefined)
     
-    @scala.inline
-    def setRecommendationOptionsVarargs(value: AutoScalingGroupRecommendationOption*): Self = StObject.set(x, "recommendationOptions", js.Array(value :_*))
+    inline def setRecommendationOptionsVarargs(value: AutoScalingGroupRecommendationOption*): Self = StObject.set(x, "recommendationOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setUtilizationMetrics(value: UtilizationMetrics): Self = StObject.set(x, "utilizationMetrics", value.asInstanceOf[js.Any])
+    inline def setUtilizationMetrics(value: UtilizationMetrics): Self = StObject.set(x, "utilizationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationMetricsUndefined: Self = StObject.set(x, "utilizationMetrics", js.undefined)
+    inline def setUtilizationMetricsUndefined: Self = StObject.set(x, "utilizationMetrics", js.undefined)
     
-    @scala.inline
-    def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "utilizationMetrics", js.Array(value :_*))
+    inline def setUtilizationMetricsVarargs(value: UtilizationMetric*): Self = StObject.set(x, "utilizationMetrics", js.Array(value :_*))
   }
 }

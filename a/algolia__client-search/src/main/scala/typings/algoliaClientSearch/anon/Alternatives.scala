@@ -13,19 +13,15 @@ trait Alternatives extends StObject {
 }
 object Alternatives {
   
-  @scala.inline
-  def apply(alternatives: js.Array[Length]): Alternatives = {
+  inline def apply(alternatives: js.Array[Length]): Alternatives = {
     val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alternatives]
   }
   
-  @scala.inline
-  implicit class AlternativesMutableBuilder[Self <: Alternatives] (val x: Self) extends AnyVal {
+  extension [Self <: Alternatives](x: Self) {
     
-    @scala.inline
-    def setAlternatives(value: js.Array[Length]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+    inline def setAlternatives(value: js.Array[Length]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativesVarargs(value: Length*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: Length*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
   }
 }

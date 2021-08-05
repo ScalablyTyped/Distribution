@@ -39,8 +39,7 @@ trait TimeZoneResponse extends StObject {
 }
 object TimeZoneResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dstOffset: Double,
     errorMessage: String,
     rawOffset: Double,
@@ -52,25 +51,18 @@ object TimeZoneResponse {
     __obj.asInstanceOf[TimeZoneResponse]
   }
   
-  @scala.inline
-  implicit class TimeZoneResponseMutableBuilder[Self <: TimeZoneResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TimeZoneResponse](x: Self) {
     
-    @scala.inline
-    def setDstOffset(value: Double): Self = StObject.set(x, "dstOffset", value.asInstanceOf[js.Any])
+    inline def setDstOffset(value: Double): Self = StObject.set(x, "dstOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawOffset(value: Double): Self = StObject.set(x, "rawOffset", value.asInstanceOf[js.Any])
+    inline def setRawOffset(value: Double): Self = StObject.set(x, "rawOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: TimeZoneResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TimeZoneResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
+    inline def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+    inline def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
   }
 }

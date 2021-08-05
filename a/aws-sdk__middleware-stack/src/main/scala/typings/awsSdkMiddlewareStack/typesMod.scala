@@ -34,8 +34,7 @@ object typesMod {
   }
   object AbsoluteMiddlewareEntry {
     
-    @scala.inline
-    def apply[Input /* <: js.Object */, Output /* <: js.Object */](
+    inline def apply[Input /* <: js.Object */, Output /* <: js.Object */](
       middleware: ((/* next */ BuildHandler[Input, Output]) | (/* next */ DeserializeHandler[Input, Output]) | (/* next */ FinalizeHandler[Input, Output]) | (/* next */ InitializeHandler[Input, Output]) | (/* next */ SerializeHandler[Input, Output]), /* context */ HandlerExecutionContext) => (BuildHandler[Input, Output]) | (DeserializeHandler[Input, Output]) | (FinalizeHandler[Input, Output]) | (InitializeHandler[Input, Output]) | (SerializeHandler[Input, Output]),
       priority: Priority,
       step: Step
@@ -44,14 +43,11 @@ object typesMod {
       __obj.asInstanceOf[AbsoluteMiddlewareEntry[Input, Output]]
     }
     
-    @scala.inline
-    implicit class AbsoluteMiddlewareEntryMutableBuilder[Self <: AbsoluteMiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (AbsoluteMiddlewareEntry[Input, Output])) extends AnyVal {
+    extension [Self <: AbsoluteMiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */](x: Self & (AbsoluteMiddlewareEntry[Input, Output])) {
       
-      @scala.inline
-      def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,19 +59,16 @@ object typesMod {
   }
   object MiddlewareEntry {
     
-    @scala.inline
-    def apply[Input /* <: js.Object */, Output /* <: js.Object */](
+    inline def apply[Input /* <: js.Object */, Output /* <: js.Object */](
       middleware: ((/* next */ BuildHandler[Input, Output]) | (/* next */ DeserializeHandler[Input, Output]) | (/* next */ FinalizeHandler[Input, Output]) | (/* next */ InitializeHandler[Input, Output]) | (/* next */ SerializeHandler[Input, Output]), /* context */ HandlerExecutionContext) => (BuildHandler[Input, Output]) | (DeserializeHandler[Input, Output]) | (FinalizeHandler[Input, Output]) | (InitializeHandler[Input, Output]) | (SerializeHandler[Input, Output])
     ): MiddlewareEntry[Input, Output] = {
       val __obj = js.Dynamic.literal(middleware = js.Any.fromFunction2(middleware))
       __obj.asInstanceOf[MiddlewareEntry[Input, Output]]
     }
     
-    @scala.inline
-    implicit class MiddlewareEntryMutableBuilder[Self <: MiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (MiddlewareEntry[Input, Output])) extends AnyVal {
+    extension [Self <: MiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */](x: Self & (MiddlewareEntry[Input, Output])) {
       
-      @scala.inline
-      def setMiddleware(
+      inline def setMiddleware(
         value: ((/* next */ BuildHandler[Input, Output]) | (/* next */ DeserializeHandler[Input, Output]) | (/* next */ FinalizeHandler[Input, Output]) | (/* next */ InitializeHandler[Input, Output]) | (/* next */ SerializeHandler[Input, Output]), /* context */ HandlerExecutionContext) => (BuildHandler[Input, Output]) | (DeserializeHandler[Input, Output]) | (FinalizeHandler[Input, Output]) | (InitializeHandler[Input, Output]) | (SerializeHandler[Input, Output])
       ): Self = StObject.set(x, "middleware", js.Any.fromFunction2(value))
     }
@@ -102,8 +95,7 @@ object typesMod {
   }
   object NormalizedRelativeEntry {
     
-    @scala.inline
-    def apply[Input /* <: js.Object */, Output /* <: js.Object */](
+    inline def apply[Input /* <: js.Object */, Output /* <: js.Object */](
       middleware: ((/* next */ BuildHandler[Input, Output]) | (/* next */ DeserializeHandler[Input, Output]) | (/* next */ FinalizeHandler[Input, Output]) | (/* next */ InitializeHandler[Input, Output]) | (/* next */ SerializeHandler[Input, Output]), /* context */ HandlerExecutionContext) => (BuildHandler[Input, Output]) | (DeserializeHandler[Input, Output]) | (FinalizeHandler[Input, Output]) | (InitializeHandler[Input, Output]) | (SerializeHandler[Input, Output]),
       priority: Null,
       step: Step
@@ -112,31 +104,23 @@ object typesMod {
       __obj.asInstanceOf[NormalizedRelativeEntry[Input, Output]]
     }
     
-    @scala.inline
-    implicit class NormalizedRelativeEntryMutableBuilder[Self <: NormalizedRelativeEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (NormalizedRelativeEntry[Input, Output])) extends AnyVal {
+    extension [Self <: NormalizedRelativeEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */](x: Self & (NormalizedRelativeEntry[Input, Output])) {
       
-      @scala.inline
-      def setMiddleware(
+      inline def setMiddleware(
         value: ((/* next */ BuildHandler[Input, Output]) | (/* next */ DeserializeHandler[Input, Output]) | (/* next */ FinalizeHandler[Input, Output]) | (/* next */ InitializeHandler[Input, Output]) | (/* next */ SerializeHandler[Input, Output]), /* context */ HandlerExecutionContext) => (BuildHandler[Input, Output]) | (DeserializeHandler[Input, Output]) | (FinalizeHandler[Input, Output]) | (InitializeHandler[Input, Output]) | (SerializeHandler[Input, Output])
       ): Self = StObject.set(x, "middleware", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNext(value: NormalizedRelativeEntry[Input, Output]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: NormalizedRelativeEntry[Input, Output]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPrev(value: NormalizedRelativeEntry[Input, Output]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: NormalizedRelativeEntry[Input, Output]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Null): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Null): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,8 +130,7 @@ object typesMod {
        with RelativeLocation
   object RelativeMiddlewareEntry {
     
-    @scala.inline
-    def apply[Input /* <: js.Object */, Output /* <: js.Object */](
+    inline def apply[Input /* <: js.Object */, Output /* <: js.Object */](
       middleware: ((/* next */ BuildHandler[Input, Output]) | (/* next */ DeserializeHandler[Input, Output]) | (/* next */ FinalizeHandler[Input, Output]) | (/* next */ InitializeHandler[Input, Output]) | (/* next */ SerializeHandler[Input, Output]), /* context */ HandlerExecutionContext) => (BuildHandler[Input, Output]) | (DeserializeHandler[Input, Output]) | (FinalizeHandler[Input, Output]) | (InitializeHandler[Input, Output]) | (SerializeHandler[Input, Output]),
       relation: Relation,
       toMiddleware: String

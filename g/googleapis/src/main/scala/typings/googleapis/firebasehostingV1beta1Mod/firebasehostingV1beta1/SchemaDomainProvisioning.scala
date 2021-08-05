@@ -53,70 +53,49 @@ trait SchemaDomainProvisioning extends StObject {
 }
 object SchemaDomainProvisioning {
   
-  @scala.inline
-  def apply(): SchemaDomainProvisioning = {
+  inline def apply(): SchemaDomainProvisioning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomainProvisioning]
   }
   
-  @scala.inline
-  implicit class SchemaDomainProvisioningMutableBuilder[Self <: SchemaDomainProvisioning] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDomainProvisioning](x: Self) {
     
-    @scala.inline
-    def setCertChallengeDiscoveredTxt(value: js.Array[String]): Self = StObject.set(x, "certChallengeDiscoveredTxt", value.asInstanceOf[js.Any])
+    inline def setCertChallengeDiscoveredTxt(value: js.Array[String]): Self = StObject.set(x, "certChallengeDiscoveredTxt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertChallengeDiscoveredTxtUndefined: Self = StObject.set(x, "certChallengeDiscoveredTxt", js.undefined)
+    inline def setCertChallengeDiscoveredTxtUndefined: Self = StObject.set(x, "certChallengeDiscoveredTxt", js.undefined)
     
-    @scala.inline
-    def setCertChallengeDiscoveredTxtVarargs(value: String*): Self = StObject.set(x, "certChallengeDiscoveredTxt", js.Array(value :_*))
+    inline def setCertChallengeDiscoveredTxtVarargs(value: String*): Self = StObject.set(x, "certChallengeDiscoveredTxt", js.Array(value :_*))
     
-    @scala.inline
-    def setCertChallengeDns(value: SchemaCertDnsChallenge): Self = StObject.set(x, "certChallengeDns", value.asInstanceOf[js.Any])
+    inline def setCertChallengeDns(value: SchemaCertDnsChallenge): Self = StObject.set(x, "certChallengeDns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertChallengeDnsUndefined: Self = StObject.set(x, "certChallengeDns", js.undefined)
+    inline def setCertChallengeDnsUndefined: Self = StObject.set(x, "certChallengeDns", js.undefined)
     
-    @scala.inline
-    def setCertChallengeHttp(value: SchemaCertHttpChallenge): Self = StObject.set(x, "certChallengeHttp", value.asInstanceOf[js.Any])
+    inline def setCertChallengeHttp(value: SchemaCertHttpChallenge): Self = StObject.set(x, "certChallengeHttp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertChallengeHttpUndefined: Self = StObject.set(x, "certChallengeHttp", js.undefined)
+    inline def setCertChallengeHttpUndefined: Self = StObject.set(x, "certChallengeHttp", js.undefined)
     
-    @scala.inline
-    def setCertStatus(value: String): Self = StObject.set(x, "certStatus", value.asInstanceOf[js.Any])
+    inline def setCertStatus(value: String): Self = StObject.set(x, "certStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertStatusUndefined: Self = StObject.set(x, "certStatus", js.undefined)
+    inline def setCertStatusUndefined: Self = StObject.set(x, "certStatus", js.undefined)
     
-    @scala.inline
-    def setDiscoveredIps(value: js.Array[String]): Self = StObject.set(x, "discoveredIps", value.asInstanceOf[js.Any])
+    inline def setDiscoveredIps(value: js.Array[String]): Self = StObject.set(x, "discoveredIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoveredIpsUndefined: Self = StObject.set(x, "discoveredIps", js.undefined)
+    inline def setDiscoveredIpsUndefined: Self = StObject.set(x, "discoveredIps", js.undefined)
     
-    @scala.inline
-    def setDiscoveredIpsVarargs(value: String*): Self = StObject.set(x, "discoveredIps", js.Array(value :_*))
+    inline def setDiscoveredIpsVarargs(value: String*): Self = StObject.set(x, "discoveredIps", js.Array(value :_*))
     
-    @scala.inline
-    def setDnsFetchTime(value: String): Self = StObject.set(x, "dnsFetchTime", value.asInstanceOf[js.Any])
+    inline def setDnsFetchTime(value: String): Self = StObject.set(x, "dnsFetchTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsFetchTimeUndefined: Self = StObject.set(x, "dnsFetchTime", js.undefined)
+    inline def setDnsFetchTimeUndefined: Self = StObject.set(x, "dnsFetchTime", js.undefined)
     
-    @scala.inline
-    def setDnsStatus(value: String): Self = StObject.set(x, "dnsStatus", value.asInstanceOf[js.Any])
+    inline def setDnsStatus(value: String): Self = StObject.set(x, "dnsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsStatusUndefined: Self = StObject.set(x, "dnsStatus", js.undefined)
+    inline def setDnsStatusUndefined: Self = StObject.set(x, "dnsStatus", js.undefined)
     
-    @scala.inline
-    def setExpectedIps(value: js.Array[String]): Self = StObject.set(x, "expectedIps", value.asInstanceOf[js.Any])
+    inline def setExpectedIps(value: js.Array[String]): Self = StObject.set(x, "expectedIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedIpsUndefined: Self = StObject.set(x, "expectedIps", js.undefined)
+    inline def setExpectedIpsUndefined: Self = StObject.set(x, "expectedIps", js.undefined)
     
-    @scala.inline
-    def setExpectedIpsVarargs(value: String*): Self = StObject.set(x, "expectedIps", js.Array(value :_*))
+    inline def setExpectedIpsVarargs(value: String*): Self = StObject.set(x, "expectedIps", js.Array(value :_*))
   }
 }

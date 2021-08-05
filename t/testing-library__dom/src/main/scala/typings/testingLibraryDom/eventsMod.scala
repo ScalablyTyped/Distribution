@@ -531,8 +531,7 @@ object eventsMod {
   }
   object CreateObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       animationEnd: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
       animationIteration: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event,
@@ -621,421 +620,337 @@ object eventsMod {
       __obj.asInstanceOf[CreateObject]
     }
     
-    @scala.inline
-    implicit class CreateObjectMutableBuilder[Self <: CreateObject] (val x: Self) extends AnyVal {
+    extension [Self <: CreateObject](x: Self) {
       
-      @scala.inline
-      def setAbort(
+      inline def setAbort(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "abort", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationEnd(
+      inline def setAnimationEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "animationEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationIteration(
+      inline def setAnimationIteration(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "animationIteration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationStart(
+      inline def setAnimationStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "animationStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBlur(
+      inline def setBlur(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanPlay(
+      inline def setCanPlay(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "canPlay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanPlayThrough(
+      inline def setCanPlayThrough(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "canPlayThrough", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChange(
+      inline def setChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClick(
+      inline def setClick(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompositionEnd(
+      inline def setCompositionEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "compositionEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompositionStart(
+      inline def setCompositionStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "compositionStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompositionUpdate(
+      inline def setCompositionUpdate(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "compositionUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContextMenu(
+      inline def setContextMenu(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "contextMenu", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCopy(
+      inline def setCopy(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCut(
+      inline def setCut(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "cut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDblClick(
+      inline def setDblClick(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "dblClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDoubleClick(
+      inline def setDoubleClick(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "doubleClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDrag(
+      inline def setDrag(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragEnd(
+      inline def setDragEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "dragEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragEnter(
+      inline def setDragEnter(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragExit(
+      inline def setDragExit(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "dragExit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragLeave(
+      inline def setDragLeave(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragOver(
+      inline def setDragOver(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragStart(
+      inline def setDragStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDrop(
+      inline def setDrop(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDurationChange(
+      inline def setDurationChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "durationChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmptied(
+      inline def setEmptied(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "emptied", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEncrypted(
+      inline def setEncrypted(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "encrypted", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnded(
+      inline def setEnded(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "ended", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocus(
+      inline def setFocus(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocusIn(
+      inline def setFocusIn(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "focusIn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocusOut(
+      inline def setFocusOut(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "focusOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGotPointerCapture(
+      inline def setGotPointerCapture(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "gotPointerCapture", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInput(
+      inline def setInput(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvalid(
+      inline def setInvalid(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "invalid", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyDown(
+      inline def setKeyDown(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "keyDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyPress(
+      inline def setKeyPress(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "keyPress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyUp(
+      inline def setKeyUp(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "keyUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoad(
+      inline def setLoad(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadStart(
+      inline def setLoadStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "loadStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadedData(
+      inline def setLoadedData(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "loadedData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadedMetadata(
+      inline def setLoadedMetadata(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "loadedMetadata", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLostPointerCapture(
+      inline def setLostPointerCapture(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "lostPointerCapture", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseDown(
+      inline def setMouseDown(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "mouseDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseEnter(
+      inline def setMouseEnter(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseLeave(
+      inline def setMouseLeave(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseMove(
+      inline def setMouseMove(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "mouseMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseOut(
+      inline def setMouseOut(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "mouseOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseOver(
+      inline def setMouseOver(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "mouseOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseUp(
+      inline def setMouseUp(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "mouseUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPaste(
+      inline def setPaste(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "paste", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPause(
+      inline def setPause(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "pause", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlay(
+      inline def setPlay(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "play", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlaying(
+      inline def setPlaying(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "playing", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerCancel(
+      inline def setPointerCancel(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "pointerCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerDown(
+      inline def setPointerDown(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "pointerDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerEnter(
+      inline def setPointerEnter(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "pointerEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerLeave(
+      inline def setPointerLeave(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "pointerLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerMove(
+      inline def setPointerMove(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "pointerMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerOut(
+      inline def setPointerOut(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "pointerOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerOver(
+      inline def setPointerOver(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "pointerOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerUp(
+      inline def setPointerUp(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "pointerUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPopState(
+      inline def setPopState(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "popState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgress(
+      inline def setProgress(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRateChange(
+      inline def setRateChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "rateChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReset(
+      inline def setReset(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScroll(
+      inline def setScroll(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "scroll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSeeked(
+      inline def setSeeked(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "seeked", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSeeking(
+      inline def setSeeking(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "seeking", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSelect(
+      inline def setSelect(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStalled(
+      inline def setStalled(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "stalled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSubmit(
+      inline def setSubmit(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "submit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuspend(
+      inline def setSuspend(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "suspend", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTimeUpdate(
+      inline def setTimeUpdate(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "timeUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchCancel(
+      inline def setTouchCancel(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "touchCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchEnd(
+      inline def setTouchEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "touchEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchMove(
+      inline def setTouchMove(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "touchMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchStart(
+      inline def setTouchStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "touchStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransitionEnd(
+      inline def setTransitionEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVolumeChange(
+      inline def setVolumeChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "volumeChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWaiting(
+      inline def setWaiting(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "waiting", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWheel(
+      inline def setWheel(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Event
       ): Self = StObject.set(x, "wheel", js.Any.fromFunction2(value))
     }
@@ -1129,254 +1044,171 @@ object eventsMod {
   trait EventType extends StObject
   object EventType {
     
-    @scala.inline
-    def abort: typings.testingLibraryDom.testingLibraryDomStrings.abort = "abort".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.abort]
+    inline def abort: typings.testingLibraryDom.testingLibraryDomStrings.abort = "abort".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.abort]
     
-    @scala.inline
-    def animationEnd: typings.testingLibraryDom.testingLibraryDomStrings.animationEnd = "animationEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.animationEnd]
+    inline def animationEnd: typings.testingLibraryDom.testingLibraryDomStrings.animationEnd = "animationEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.animationEnd]
     
-    @scala.inline
-    def animationIteration: typings.testingLibraryDom.testingLibraryDomStrings.animationIteration = "animationIteration".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.animationIteration]
+    inline def animationIteration: typings.testingLibraryDom.testingLibraryDomStrings.animationIteration = "animationIteration".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.animationIteration]
     
-    @scala.inline
-    def animationStart: typings.testingLibraryDom.testingLibraryDomStrings.animationStart = "animationStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.animationStart]
+    inline def animationStart: typings.testingLibraryDom.testingLibraryDomStrings.animationStart = "animationStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.animationStart]
     
-    @scala.inline
-    def blur: typings.testingLibraryDom.testingLibraryDomStrings.blur = "blur".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.blur]
+    inline def blur: typings.testingLibraryDom.testingLibraryDomStrings.blur = "blur".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.blur]
     
-    @scala.inline
-    def canPlay: typings.testingLibraryDom.testingLibraryDomStrings.canPlay = "canPlay".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.canPlay]
+    inline def canPlay: typings.testingLibraryDom.testingLibraryDomStrings.canPlay = "canPlay".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.canPlay]
     
-    @scala.inline
-    def canPlayThrough: typings.testingLibraryDom.testingLibraryDomStrings.canPlayThrough = "canPlayThrough".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.canPlayThrough]
+    inline def canPlayThrough: typings.testingLibraryDom.testingLibraryDomStrings.canPlayThrough = "canPlayThrough".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.canPlayThrough]
     
-    @scala.inline
-    def change: typings.testingLibraryDom.testingLibraryDomStrings.change = "change".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.change]
+    inline def change: typings.testingLibraryDom.testingLibraryDomStrings.change = "change".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.change]
     
-    @scala.inline
-    def click: typings.testingLibraryDom.testingLibraryDomStrings.click = "click".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.click]
+    inline def click: typings.testingLibraryDom.testingLibraryDomStrings.click = "click".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.click]
     
-    @scala.inline
-    def compositionEnd: typings.testingLibraryDom.testingLibraryDomStrings.compositionEnd = "compositionEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.compositionEnd]
+    inline def compositionEnd: typings.testingLibraryDom.testingLibraryDomStrings.compositionEnd = "compositionEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.compositionEnd]
     
-    @scala.inline
-    def compositionStart: typings.testingLibraryDom.testingLibraryDomStrings.compositionStart = "compositionStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.compositionStart]
+    inline def compositionStart: typings.testingLibraryDom.testingLibraryDomStrings.compositionStart = "compositionStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.compositionStart]
     
-    @scala.inline
-    def compositionUpdate: typings.testingLibraryDom.testingLibraryDomStrings.compositionUpdate = "compositionUpdate".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.compositionUpdate]
+    inline def compositionUpdate: typings.testingLibraryDom.testingLibraryDomStrings.compositionUpdate = "compositionUpdate".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.compositionUpdate]
     
-    @scala.inline
-    def contextMenu: typings.testingLibraryDom.testingLibraryDomStrings.contextMenu = "contextMenu".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.contextMenu]
+    inline def contextMenu: typings.testingLibraryDom.testingLibraryDomStrings.contextMenu = "contextMenu".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.contextMenu]
     
-    @scala.inline
-    def copy: typings.testingLibraryDom.testingLibraryDomStrings.copy = "copy".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.copy]
+    inline def copy: typings.testingLibraryDom.testingLibraryDomStrings.copy = "copy".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.copy]
     
-    @scala.inline
-    def cut: typings.testingLibraryDom.testingLibraryDomStrings.cut = "cut".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.cut]
+    inline def cut: typings.testingLibraryDom.testingLibraryDomStrings.cut = "cut".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.cut]
     
-    @scala.inline
-    def dblClick: typings.testingLibraryDom.testingLibraryDomStrings.dblClick = "dblClick".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dblClick]
+    inline def dblClick: typings.testingLibraryDom.testingLibraryDomStrings.dblClick = "dblClick".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dblClick]
     
-    @scala.inline
-    def doubleClick: typings.testingLibraryDom.testingLibraryDomStrings.doubleClick = "doubleClick".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.doubleClick]
+    inline def doubleClick: typings.testingLibraryDom.testingLibraryDomStrings.doubleClick = "doubleClick".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.doubleClick]
     
-    @scala.inline
-    def drag: typings.testingLibraryDom.testingLibraryDomStrings.drag = "drag".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.drag]
+    inline def drag: typings.testingLibraryDom.testingLibraryDomStrings.drag = "drag".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.drag]
     
-    @scala.inline
-    def dragEnd: typings.testingLibraryDom.testingLibraryDomStrings.dragEnd = "dragEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragEnd]
+    inline def dragEnd: typings.testingLibraryDom.testingLibraryDomStrings.dragEnd = "dragEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragEnd]
     
-    @scala.inline
-    def dragEnter: typings.testingLibraryDom.testingLibraryDomStrings.dragEnter = "dragEnter".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragEnter]
+    inline def dragEnter: typings.testingLibraryDom.testingLibraryDomStrings.dragEnter = "dragEnter".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragEnter]
     
-    @scala.inline
-    def dragExit: typings.testingLibraryDom.testingLibraryDomStrings.dragExit = "dragExit".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragExit]
+    inline def dragExit: typings.testingLibraryDom.testingLibraryDomStrings.dragExit = "dragExit".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragExit]
     
-    @scala.inline
-    def dragLeave: typings.testingLibraryDom.testingLibraryDomStrings.dragLeave = "dragLeave".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragLeave]
+    inline def dragLeave: typings.testingLibraryDom.testingLibraryDomStrings.dragLeave = "dragLeave".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragLeave]
     
-    @scala.inline
-    def dragOver: typings.testingLibraryDom.testingLibraryDomStrings.dragOver = "dragOver".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragOver]
+    inline def dragOver: typings.testingLibraryDom.testingLibraryDomStrings.dragOver = "dragOver".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragOver]
     
-    @scala.inline
-    def dragStart: typings.testingLibraryDom.testingLibraryDomStrings.dragStart = "dragStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragStart]
+    inline def dragStart: typings.testingLibraryDom.testingLibraryDomStrings.dragStart = "dragStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.dragStart]
     
-    @scala.inline
-    def drop: typings.testingLibraryDom.testingLibraryDomStrings.drop = "drop".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.drop]
+    inline def drop: typings.testingLibraryDom.testingLibraryDomStrings.drop = "drop".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.drop]
     
-    @scala.inline
-    def durationChange: typings.testingLibraryDom.testingLibraryDomStrings.durationChange = "durationChange".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.durationChange]
+    inline def durationChange: typings.testingLibraryDom.testingLibraryDomStrings.durationChange = "durationChange".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.durationChange]
     
-    @scala.inline
-    def emptied: typings.testingLibraryDom.testingLibraryDomStrings.emptied = "emptied".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.emptied]
+    inline def emptied: typings.testingLibraryDom.testingLibraryDomStrings.emptied = "emptied".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.emptied]
     
-    @scala.inline
-    def encrypted: typings.testingLibraryDom.testingLibraryDomStrings.encrypted = "encrypted".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.encrypted]
+    inline def encrypted: typings.testingLibraryDom.testingLibraryDomStrings.encrypted = "encrypted".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.encrypted]
     
-    @scala.inline
-    def ended: typings.testingLibraryDom.testingLibraryDomStrings.ended = "ended".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.ended]
+    inline def ended: typings.testingLibraryDom.testingLibraryDomStrings.ended = "ended".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.ended]
     
-    @scala.inline
-    def error: typings.testingLibraryDom.testingLibraryDomStrings.error = "error".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.error]
+    inline def error: typings.testingLibraryDom.testingLibraryDomStrings.error = "error".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.error]
     
-    @scala.inline
-    def focus: typings.testingLibraryDom.testingLibraryDomStrings.focus = "focus".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.focus]
+    inline def focus: typings.testingLibraryDom.testingLibraryDomStrings.focus = "focus".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.focus]
     
-    @scala.inline
-    def focusIn: typings.testingLibraryDom.testingLibraryDomStrings.focusIn = "focusIn".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.focusIn]
+    inline def focusIn: typings.testingLibraryDom.testingLibraryDomStrings.focusIn = "focusIn".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.focusIn]
     
-    @scala.inline
-    def focusOut: typings.testingLibraryDom.testingLibraryDomStrings.focusOut = "focusOut".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.focusOut]
+    inline def focusOut: typings.testingLibraryDom.testingLibraryDomStrings.focusOut = "focusOut".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.focusOut]
     
-    @scala.inline
-    def gotPointerCapture: typings.testingLibraryDom.testingLibraryDomStrings.gotPointerCapture = "gotPointerCapture".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.gotPointerCapture]
+    inline def gotPointerCapture: typings.testingLibraryDom.testingLibraryDomStrings.gotPointerCapture = "gotPointerCapture".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.gotPointerCapture]
     
-    @scala.inline
-    def input: typings.testingLibraryDom.testingLibraryDomStrings.input = "input".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.input]
+    inline def input: typings.testingLibraryDom.testingLibraryDomStrings.input = "input".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.input]
     
-    @scala.inline
-    def invalid: typings.testingLibraryDom.testingLibraryDomStrings.invalid = "invalid".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.invalid]
+    inline def invalid: typings.testingLibraryDom.testingLibraryDomStrings.invalid = "invalid".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.invalid]
     
-    @scala.inline
-    def keyDown: typings.testingLibraryDom.testingLibraryDomStrings.keyDown = "keyDown".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.keyDown]
+    inline def keyDown: typings.testingLibraryDom.testingLibraryDomStrings.keyDown = "keyDown".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.keyDown]
     
-    @scala.inline
-    def keyPress: typings.testingLibraryDom.testingLibraryDomStrings.keyPress = "keyPress".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.keyPress]
+    inline def keyPress: typings.testingLibraryDom.testingLibraryDomStrings.keyPress = "keyPress".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.keyPress]
     
-    @scala.inline
-    def keyUp: typings.testingLibraryDom.testingLibraryDomStrings.keyUp = "keyUp".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.keyUp]
+    inline def keyUp: typings.testingLibraryDom.testingLibraryDomStrings.keyUp = "keyUp".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.keyUp]
     
-    @scala.inline
-    def load: typings.testingLibraryDom.testingLibraryDomStrings.load = "load".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.load]
+    inline def load: typings.testingLibraryDom.testingLibraryDomStrings.load = "load".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.load]
     
-    @scala.inline
-    def loadStart: typings.testingLibraryDom.testingLibraryDomStrings.loadStart = "loadStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.loadStart]
+    inline def loadStart: typings.testingLibraryDom.testingLibraryDomStrings.loadStart = "loadStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.loadStart]
     
-    @scala.inline
-    def loadedData: typings.testingLibraryDom.testingLibraryDomStrings.loadedData = "loadedData".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.loadedData]
+    inline def loadedData: typings.testingLibraryDom.testingLibraryDomStrings.loadedData = "loadedData".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.loadedData]
     
-    @scala.inline
-    def loadedMetadata: typings.testingLibraryDom.testingLibraryDomStrings.loadedMetadata = "loadedMetadata".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.loadedMetadata]
+    inline def loadedMetadata: typings.testingLibraryDom.testingLibraryDomStrings.loadedMetadata = "loadedMetadata".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.loadedMetadata]
     
-    @scala.inline
-    def lostPointerCapture: typings.testingLibraryDom.testingLibraryDomStrings.lostPointerCapture = "lostPointerCapture".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.lostPointerCapture]
+    inline def lostPointerCapture: typings.testingLibraryDom.testingLibraryDomStrings.lostPointerCapture = "lostPointerCapture".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.lostPointerCapture]
     
-    @scala.inline
-    def mouseDown: typings.testingLibraryDom.testingLibraryDomStrings.mouseDown = "mouseDown".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseDown]
+    inline def mouseDown: typings.testingLibraryDom.testingLibraryDomStrings.mouseDown = "mouseDown".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseDown]
     
-    @scala.inline
-    def mouseEnter: typings.testingLibraryDom.testingLibraryDomStrings.mouseEnter = "mouseEnter".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseEnter]
+    inline def mouseEnter: typings.testingLibraryDom.testingLibraryDomStrings.mouseEnter = "mouseEnter".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseEnter]
     
-    @scala.inline
-    def mouseLeave: typings.testingLibraryDom.testingLibraryDomStrings.mouseLeave = "mouseLeave".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseLeave]
+    inline def mouseLeave: typings.testingLibraryDom.testingLibraryDomStrings.mouseLeave = "mouseLeave".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseLeave]
     
-    @scala.inline
-    def mouseMove: typings.testingLibraryDom.testingLibraryDomStrings.mouseMove = "mouseMove".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseMove]
+    inline def mouseMove: typings.testingLibraryDom.testingLibraryDomStrings.mouseMove = "mouseMove".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseMove]
     
-    @scala.inline
-    def mouseOut: typings.testingLibraryDom.testingLibraryDomStrings.mouseOut = "mouseOut".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseOut]
+    inline def mouseOut: typings.testingLibraryDom.testingLibraryDomStrings.mouseOut = "mouseOut".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseOut]
     
-    @scala.inline
-    def mouseOver: typings.testingLibraryDom.testingLibraryDomStrings.mouseOver = "mouseOver".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseOver]
+    inline def mouseOver: typings.testingLibraryDom.testingLibraryDomStrings.mouseOver = "mouseOver".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseOver]
     
-    @scala.inline
-    def mouseUp: typings.testingLibraryDom.testingLibraryDomStrings.mouseUp = "mouseUp".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseUp]
+    inline def mouseUp: typings.testingLibraryDom.testingLibraryDomStrings.mouseUp = "mouseUp".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.mouseUp]
     
-    @scala.inline
-    def paste: typings.testingLibraryDom.testingLibraryDomStrings.paste = "paste".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.paste]
+    inline def paste: typings.testingLibraryDom.testingLibraryDomStrings.paste = "paste".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.paste]
     
-    @scala.inline
-    def pause: typings.testingLibraryDom.testingLibraryDomStrings.pause = "pause".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pause]
+    inline def pause: typings.testingLibraryDom.testingLibraryDomStrings.pause = "pause".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pause]
     
-    @scala.inline
-    def play: typings.testingLibraryDom.testingLibraryDomStrings.play = "play".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.play]
+    inline def play: typings.testingLibraryDom.testingLibraryDomStrings.play = "play".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.play]
     
-    @scala.inline
-    def playing: typings.testingLibraryDom.testingLibraryDomStrings.playing = "playing".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.playing]
+    inline def playing: typings.testingLibraryDom.testingLibraryDomStrings.playing = "playing".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.playing]
     
-    @scala.inline
-    def pointerCancel: typings.testingLibraryDom.testingLibraryDomStrings.pointerCancel = "pointerCancel".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerCancel]
+    inline def pointerCancel: typings.testingLibraryDom.testingLibraryDomStrings.pointerCancel = "pointerCancel".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerCancel]
     
-    @scala.inline
-    def pointerDown: typings.testingLibraryDom.testingLibraryDomStrings.pointerDown = "pointerDown".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerDown]
+    inline def pointerDown: typings.testingLibraryDom.testingLibraryDomStrings.pointerDown = "pointerDown".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerDown]
     
-    @scala.inline
-    def pointerEnter: typings.testingLibraryDom.testingLibraryDomStrings.pointerEnter = "pointerEnter".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerEnter]
+    inline def pointerEnter: typings.testingLibraryDom.testingLibraryDomStrings.pointerEnter = "pointerEnter".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerEnter]
     
-    @scala.inline
-    def pointerLeave: typings.testingLibraryDom.testingLibraryDomStrings.pointerLeave = "pointerLeave".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerLeave]
+    inline def pointerLeave: typings.testingLibraryDom.testingLibraryDomStrings.pointerLeave = "pointerLeave".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerLeave]
     
-    @scala.inline
-    def pointerMove: typings.testingLibraryDom.testingLibraryDomStrings.pointerMove = "pointerMove".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerMove]
+    inline def pointerMove: typings.testingLibraryDom.testingLibraryDomStrings.pointerMove = "pointerMove".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerMove]
     
-    @scala.inline
-    def pointerOut: typings.testingLibraryDom.testingLibraryDomStrings.pointerOut = "pointerOut".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerOut]
+    inline def pointerOut: typings.testingLibraryDom.testingLibraryDomStrings.pointerOut = "pointerOut".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerOut]
     
-    @scala.inline
-    def pointerOver: typings.testingLibraryDom.testingLibraryDomStrings.pointerOver = "pointerOver".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerOver]
+    inline def pointerOver: typings.testingLibraryDom.testingLibraryDomStrings.pointerOver = "pointerOver".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerOver]
     
-    @scala.inline
-    def pointerUp: typings.testingLibraryDom.testingLibraryDomStrings.pointerUp = "pointerUp".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerUp]
+    inline def pointerUp: typings.testingLibraryDom.testingLibraryDomStrings.pointerUp = "pointerUp".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.pointerUp]
     
-    @scala.inline
-    def popState: typings.testingLibraryDom.testingLibraryDomStrings.popState = "popState".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.popState]
+    inline def popState: typings.testingLibraryDom.testingLibraryDomStrings.popState = "popState".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.popState]
     
-    @scala.inline
-    def progress: typings.testingLibraryDom.testingLibraryDomStrings.progress = "progress".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.progress]
+    inline def progress: typings.testingLibraryDom.testingLibraryDomStrings.progress = "progress".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.progress]
     
-    @scala.inline
-    def rateChange: typings.testingLibraryDom.testingLibraryDomStrings.rateChange = "rateChange".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.rateChange]
+    inline def rateChange: typings.testingLibraryDom.testingLibraryDomStrings.rateChange = "rateChange".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.rateChange]
     
-    @scala.inline
-    def reset: typings.testingLibraryDom.testingLibraryDomStrings.reset = "reset".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.reset]
+    inline def reset: typings.testingLibraryDom.testingLibraryDomStrings.reset = "reset".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.reset]
     
-    @scala.inline
-    def scroll: typings.testingLibraryDom.testingLibraryDomStrings.scroll = "scroll".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.scroll]
+    inline def scroll: typings.testingLibraryDom.testingLibraryDomStrings.scroll = "scroll".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.scroll]
     
-    @scala.inline
-    def seeked: typings.testingLibraryDom.testingLibraryDomStrings.seeked = "seeked".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.seeked]
+    inline def seeked: typings.testingLibraryDom.testingLibraryDomStrings.seeked = "seeked".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.seeked]
     
-    @scala.inline
-    def seeking: typings.testingLibraryDom.testingLibraryDomStrings.seeking = "seeking".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.seeking]
+    inline def seeking: typings.testingLibraryDom.testingLibraryDomStrings.seeking = "seeking".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.seeking]
     
-    @scala.inline
-    def select: typings.testingLibraryDom.testingLibraryDomStrings.select = "select".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.select]
+    inline def select: typings.testingLibraryDom.testingLibraryDomStrings.select = "select".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.select]
     
-    @scala.inline
-    def stalled: typings.testingLibraryDom.testingLibraryDomStrings.stalled = "stalled".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.stalled]
+    inline def stalled: typings.testingLibraryDom.testingLibraryDomStrings.stalled = "stalled".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.stalled]
     
-    @scala.inline
-    def submit: typings.testingLibraryDom.testingLibraryDomStrings.submit = "submit".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.submit]
+    inline def submit: typings.testingLibraryDom.testingLibraryDomStrings.submit = "submit".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.submit]
     
-    @scala.inline
-    def suspend: typings.testingLibraryDom.testingLibraryDomStrings.suspend = "suspend".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.suspend]
+    inline def suspend: typings.testingLibraryDom.testingLibraryDomStrings.suspend = "suspend".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.suspend]
     
-    @scala.inline
-    def timeUpdate: typings.testingLibraryDom.testingLibraryDomStrings.timeUpdate = "timeUpdate".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.timeUpdate]
+    inline def timeUpdate: typings.testingLibraryDom.testingLibraryDomStrings.timeUpdate = "timeUpdate".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.timeUpdate]
     
-    @scala.inline
-    def touchCancel: typings.testingLibraryDom.testingLibraryDomStrings.touchCancel = "touchCancel".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.touchCancel]
+    inline def touchCancel: typings.testingLibraryDom.testingLibraryDomStrings.touchCancel = "touchCancel".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.touchCancel]
     
-    @scala.inline
-    def touchEnd: typings.testingLibraryDom.testingLibraryDomStrings.touchEnd = "touchEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.touchEnd]
+    inline def touchEnd: typings.testingLibraryDom.testingLibraryDomStrings.touchEnd = "touchEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.touchEnd]
     
-    @scala.inline
-    def touchMove: typings.testingLibraryDom.testingLibraryDomStrings.touchMove = "touchMove".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.touchMove]
+    inline def touchMove: typings.testingLibraryDom.testingLibraryDomStrings.touchMove = "touchMove".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.touchMove]
     
-    @scala.inline
-    def touchStart: typings.testingLibraryDom.testingLibraryDomStrings.touchStart = "touchStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.touchStart]
+    inline def touchStart: typings.testingLibraryDom.testingLibraryDomStrings.touchStart = "touchStart".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.touchStart]
     
-    @scala.inline
-    def transitionEnd: typings.testingLibraryDom.testingLibraryDomStrings.transitionEnd = "transitionEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.transitionEnd]
+    inline def transitionEnd: typings.testingLibraryDom.testingLibraryDomStrings.transitionEnd = "transitionEnd".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.transitionEnd]
     
-    @scala.inline
-    def volumeChange: typings.testingLibraryDom.testingLibraryDomStrings.volumeChange = "volumeChange".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.volumeChange]
+    inline def volumeChange: typings.testingLibraryDom.testingLibraryDomStrings.volumeChange = "volumeChange".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.volumeChange]
     
-    @scala.inline
-    def waiting: typings.testingLibraryDom.testingLibraryDomStrings.waiting = "waiting".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.waiting]
+    inline def waiting: typings.testingLibraryDom.testingLibraryDomStrings.waiting = "waiting".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.waiting]
     
-    @scala.inline
-    def wheel: typings.testingLibraryDom.testingLibraryDomStrings.wheel = "wheel".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.wheel]
+    inline def wheel: typings.testingLibraryDom.testingLibraryDomStrings.wheel = "wheel".asInstanceOf[typings.testingLibraryDom.testingLibraryDomStrings.wheel]
   }
   
   type FireFunction = js.Function2[/* element */ Document | Element | Window | Node, /* event */ Event, Boolean]
@@ -1884,8 +1716,7 @@ object eventsMod {
   }
   object FireObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       animationEnd: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
       animationIteration: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean,
@@ -1974,421 +1805,337 @@ object eventsMod {
       __obj.asInstanceOf[FireObject]
     }
     
-    @scala.inline
-    implicit class FireObjectMutableBuilder[Self <: FireObject] (val x: Self) extends AnyVal {
+    extension [Self <: FireObject](x: Self) {
       
-      @scala.inline
-      def setAbort(
+      inline def setAbort(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "abort", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationEnd(
+      inline def setAnimationEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "animationEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationIteration(
+      inline def setAnimationIteration(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "animationIteration", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationStart(
+      inline def setAnimationStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "animationStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBlur(
+      inline def setBlur(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanPlay(
+      inline def setCanPlay(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "canPlay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanPlayThrough(
+      inline def setCanPlayThrough(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "canPlayThrough", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChange(
+      inline def setChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClick(
+      inline def setClick(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompositionEnd(
+      inline def setCompositionEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "compositionEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompositionStart(
+      inline def setCompositionStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "compositionStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompositionUpdate(
+      inline def setCompositionUpdate(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "compositionUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContextMenu(
+      inline def setContextMenu(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "contextMenu", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCopy(
+      inline def setCopy(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCut(
+      inline def setCut(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "cut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDblClick(
+      inline def setDblClick(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "dblClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDoubleClick(
+      inline def setDoubleClick(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "doubleClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDrag(
+      inline def setDrag(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragEnd(
+      inline def setDragEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "dragEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragEnter(
+      inline def setDragEnter(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragExit(
+      inline def setDragExit(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "dragExit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragLeave(
+      inline def setDragLeave(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragOver(
+      inline def setDragOver(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDragStart(
+      inline def setDragStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDrop(
+      inline def setDrop(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDurationChange(
+      inline def setDurationChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "durationChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmptied(
+      inline def setEmptied(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "emptied", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEncrypted(
+      inline def setEncrypted(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "encrypted", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnded(
+      inline def setEnded(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "ended", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocus(
+      inline def setFocus(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocusIn(
+      inline def setFocusIn(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "focusIn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocusOut(
+      inline def setFocusOut(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "focusOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGotPointerCapture(
+      inline def setGotPointerCapture(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "gotPointerCapture", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInput(
+      inline def setInput(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvalid(
+      inline def setInvalid(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "invalid", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyDown(
+      inline def setKeyDown(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "keyDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyPress(
+      inline def setKeyPress(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "keyPress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyUp(
+      inline def setKeyUp(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "keyUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoad(
+      inline def setLoad(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadStart(
+      inline def setLoadStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "loadStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadedData(
+      inline def setLoadedData(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "loadedData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadedMetadata(
+      inline def setLoadedMetadata(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "loadedMetadata", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLostPointerCapture(
+      inline def setLostPointerCapture(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "lostPointerCapture", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseDown(
+      inline def setMouseDown(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "mouseDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseEnter(
+      inline def setMouseEnter(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseLeave(
+      inline def setMouseLeave(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseMove(
+      inline def setMouseMove(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "mouseMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseOut(
+      inline def setMouseOut(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "mouseOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseOver(
+      inline def setMouseOver(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "mouseOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMouseUp(
+      inline def setMouseUp(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "mouseUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPaste(
+      inline def setPaste(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "paste", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPause(
+      inline def setPause(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "pause", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlay(
+      inline def setPlay(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "play", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPlaying(
+      inline def setPlaying(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "playing", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerCancel(
+      inline def setPointerCancel(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "pointerCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerDown(
+      inline def setPointerDown(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "pointerDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerEnter(
+      inline def setPointerEnter(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "pointerEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerLeave(
+      inline def setPointerLeave(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "pointerLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerMove(
+      inline def setPointerMove(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "pointerMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerOut(
+      inline def setPointerOut(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "pointerOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerOver(
+      inline def setPointerOver(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "pointerOver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPointerUp(
+      inline def setPointerUp(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "pointerUp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPopState(
+      inline def setPopState(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "popState", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgress(
+      inline def setProgress(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRateChange(
+      inline def setRateChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "rateChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReset(
+      inline def setReset(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScroll(
+      inline def setScroll(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "scroll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSeeked(
+      inline def setSeeked(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "seeked", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSeeking(
+      inline def setSeeking(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "seeking", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSelect(
+      inline def setSelect(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStalled(
+      inline def setStalled(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "stalled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSubmit(
+      inline def setSubmit(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "submit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuspend(
+      inline def setSuspend(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "suspend", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTimeUpdate(
+      inline def setTimeUpdate(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "timeUpdate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchCancel(
+      inline def setTouchCancel(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "touchCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchEnd(
+      inline def setTouchEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "touchEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchMove(
+      inline def setTouchMove(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "touchMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTouchStart(
+      inline def setTouchStart(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "touchStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransitionEnd(
+      inline def setTransitionEnd(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVolumeChange(
+      inline def setVolumeChange(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "volumeChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWaiting(
+      inline def setWaiting(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "waiting", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWheel(
+      inline def setWheel(
         value: (/* element */ Document | Element | Window | Node, /* options */ js.UndefOr[js.Object]) => Boolean
       ): Self = StObject.set(x, "wheel", js.Any.fromFunction2(value))
     }

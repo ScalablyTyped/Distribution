@@ -13,19 +13,15 @@ trait DescribeSpotDatafeedSubscriptionResult extends StObject {
 }
 object DescribeSpotDatafeedSubscriptionResult {
   
-  @scala.inline
-  def apply(): DescribeSpotDatafeedSubscriptionResult = {
+  inline def apply(): DescribeSpotDatafeedSubscriptionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSpotDatafeedSubscriptionResult]
   }
   
-  @scala.inline
-  implicit class DescribeSpotDatafeedSubscriptionResultMutableBuilder[Self <: DescribeSpotDatafeedSubscriptionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSpotDatafeedSubscriptionResult](x: Self) {
     
-    @scala.inline
-    def setSpotDatafeedSubscription(value: SpotDatafeedSubscription): Self = StObject.set(x, "SpotDatafeedSubscription", value.asInstanceOf[js.Any])
+    inline def setSpotDatafeedSubscription(value: SpotDatafeedSubscription): Self = StObject.set(x, "SpotDatafeedSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotDatafeedSubscriptionUndefined: Self = StObject.set(x, "SpotDatafeedSubscription", js.undefined)
+    inline def setSpotDatafeedSubscriptionUndefined: Self = StObject.set(x, "SpotDatafeedSubscription", js.undefined)
   }
 }

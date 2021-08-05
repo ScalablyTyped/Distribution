@@ -23,34 +23,25 @@ trait AwsLambdaLayerVersionDetails extends StObject {
 }
 object AwsLambdaLayerVersionDetails {
   
-  @scala.inline
-  def apply(): AwsLambdaLayerVersionDetails = {
+  inline def apply(): AwsLambdaLayerVersionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsLambdaLayerVersionDetails]
   }
   
-  @scala.inline
-  implicit class AwsLambdaLayerVersionDetailsMutableBuilder[Self <: AwsLambdaLayerVersionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsLambdaLayerVersionDetails](x: Self) {
     
-    @scala.inline
-    def setCompatibleRuntimes(value: NonEmptyStringList): Self = StObject.set(x, "CompatibleRuntimes", value.asInstanceOf[js.Any])
+    inline def setCompatibleRuntimes(value: NonEmptyStringList): Self = StObject.set(x, "CompatibleRuntimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleRuntimesUndefined: Self = StObject.set(x, "CompatibleRuntimes", js.undefined)
+    inline def setCompatibleRuntimesUndefined: Self = StObject.set(x, "CompatibleRuntimes", js.undefined)
     
-    @scala.inline
-    def setCompatibleRuntimesVarargs(value: NonEmptyString*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value :_*))
+    inline def setCompatibleRuntimesVarargs(value: NonEmptyString*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value :_*))
     
-    @scala.inline
-    def setCreatedDate(value: NonEmptyString): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: NonEmptyString): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setVersion(value: AwsLambdaLayerVersionNumber): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: AwsLambdaLayerVersionNumber): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

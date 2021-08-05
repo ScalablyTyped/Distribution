@@ -23,43 +23,31 @@ trait SlashCommandMetadata extends StObject {
 }
 object SlashCommandMetadata {
   
-  @scala.inline
-  def apply(): SlashCommandMetadata = {
+  inline def apply(): SlashCommandMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlashCommandMetadata]
   }
   
-  @scala.inline
-  implicit class SlashCommandMetadataMutableBuilder[Self <: SlashCommandMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SlashCommandMetadata](x: Self) {
     
-    @scala.inline
-    def setBot(value: User): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
+    inline def setBot(value: User): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotUndefined: Self = StObject.set(x, "bot", js.undefined)
+    inline def setBotUndefined: Self = StObject.set(x, "bot", js.undefined)
     
-    @scala.inline
-    def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
+    inline def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandIdUndefined: Self = StObject.set(x, "commandId", js.undefined)
+    inline def setCommandIdUndefined: Self = StObject.set(x, "commandId", js.undefined)
     
-    @scala.inline
-    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandNameUndefined: Self = StObject.set(x, "commandName", js.undefined)
+    inline def setCommandNameUndefined: Self = StObject.set(x, "commandName", js.undefined)
     
-    @scala.inline
-    def setTriggersDialog(value: Boolean): Self = StObject.set(x, "triggersDialog", value.asInstanceOf[js.Any])
+    inline def setTriggersDialog(value: Boolean): Self = StObject.set(x, "triggersDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggersDialogUndefined: Self = StObject.set(x, "triggersDialog", js.undefined)
+    inline def setTriggersDialogUndefined: Self = StObject.set(x, "triggersDialog", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

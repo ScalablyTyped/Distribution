@@ -12,19 +12,15 @@ trait Contents extends StObject {
 }
 object Contents {
   
-  @scala.inline
-  def apply(contents: String, issues: String): Contents = {
+  inline def apply(contents: String, issues: String): Contents = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], issues = issues.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contents]
   }
   
-  @scala.inline
-  implicit class ContentsMutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
+  extension [Self <: Contents](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssues(value: String): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
+    inline def setIssues(value: String): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
   }
 }

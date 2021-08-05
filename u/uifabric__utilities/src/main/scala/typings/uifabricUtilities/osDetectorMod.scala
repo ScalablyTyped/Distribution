@@ -10,8 +10,6 @@ object osDetectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isMac(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")().asInstanceOf[Boolean]
-  @scala.inline
-  def isMac(reset: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")(reset.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMac(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")().asInstanceOf[Boolean]
+  inline def isMac(reset: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")(reset.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

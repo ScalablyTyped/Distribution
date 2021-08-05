@@ -19,22 +19,17 @@ trait PropertyBag
 }
 object PropertyBag {
   
-  @scala.inline
-  def apply(): PropertyBag = {
+  inline def apply(): PropertyBag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyBag]
   }
   
-  @scala.inline
-  implicit class PropertyBagMutableBuilder[Self <: PropertyBag] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyBag](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

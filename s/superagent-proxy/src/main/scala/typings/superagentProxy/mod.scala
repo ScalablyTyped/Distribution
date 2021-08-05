@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(s: SuperAgentStatic): Unit = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(s: SuperAgentStatic): Unit = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("superagent-proxy", JSImport.Namespace)
   @js.native
@@ -23,17 +22,14 @@ object mod {
     }
     object Request {
       
-      @scala.inline
-      def apply(proxy: String => Request): Request = {
+      inline def apply(proxy: String => Request): Request = {
         val __obj = js.Dynamic.literal(proxy = js.Any.fromFunction1(proxy))
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setProxy(value: String => Request): Self = StObject.set(x, "proxy", js.Any.fromFunction1(value))
+        inline def setProxy(value: String => Request): Self = StObject.set(x, "proxy", js.Any.fromFunction1(value))
       }
     }
   }

@@ -61,11 +61,9 @@ object ArithmeticError {
     /* 0 */ val UNKNOWNARITHMETICERROR: typings.libraCore.vmErrorsPbMod.ArithmeticError.ArithmeticErrorType.UNKNOWNARITHMETICERROR & Double = js.native
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): ArithmeticError = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ArithmeticError]
+  inline def deserializeBinary(bytes: Uint8Array): ArithmeticError = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ArithmeticError]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: ArithmeticError, reader: BinaryReader): ArithmeticError = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ArithmeticError]
+  inline def deserializeBinaryFromReader(message: ArithmeticError, reader: BinaryReader): ArithmeticError = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ArithmeticError]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ArithmeticError.extensions")
   @js.native
@@ -74,17 +72,13 @@ object ArithmeticError {
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ArithmeticError.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: ArithmeticError, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: ArithmeticError, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: ArithmeticError): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: ArithmeticError): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -92,17 +86,14 @@ object ArithmeticError {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(errorCode: ArithmeticErrorType): AsObject = {
+    inline def apply(errorCode: ArithmeticErrorType): AsObject = {
       val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: ArithmeticErrorType): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: ArithmeticErrorType): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     }
   }
 }

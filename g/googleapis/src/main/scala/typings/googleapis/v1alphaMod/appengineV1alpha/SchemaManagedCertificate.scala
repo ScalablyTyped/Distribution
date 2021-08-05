@@ -25,25 +25,19 @@ trait SchemaManagedCertificate extends StObject {
 }
 object SchemaManagedCertificate {
   
-  @scala.inline
-  def apply(): SchemaManagedCertificate = {
+  inline def apply(): SchemaManagedCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedCertificate]
   }
   
-  @scala.inline
-  implicit class SchemaManagedCertificateMutableBuilder[Self <: SchemaManagedCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedCertificate](x: Self) {
     
-    @scala.inline
-    def setLastRenewalTime(value: String): Self = StObject.set(x, "lastRenewalTime", value.asInstanceOf[js.Any])
+    inline def setLastRenewalTime(value: String): Self = StObject.set(x, "lastRenewalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRenewalTimeUndefined: Self = StObject.set(x, "lastRenewalTime", js.undefined)
+    inline def setLastRenewalTimeUndefined: Self = StObject.set(x, "lastRenewalTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

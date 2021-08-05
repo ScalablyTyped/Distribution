@@ -12,15 +12,13 @@ object baseControlMod {
   
   object default {
     
-    @scala.inline
-    def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/components/base-control", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def VisualLabel(props: VisualLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VisualLabel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def VisualLabel(props: VisualLabelProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("VisualLabel")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
   
   object BaseControl {
@@ -53,38 +51,28 @@ object baseControlMod {
     }
     object ControlProps {
       
-      @scala.inline
-      def apply(): ControlProps = {
+      inline def apply(): ControlProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ControlProps]
       }
       
-      @scala.inline
-      implicit class ControlPropsMutableBuilder[Self <: ControlProps] (val x: Self) extends AnyVal {
+      extension [Self <: ControlProps](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setHelp(value: ReactNode): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+        inline def setHelp(value: ReactNode): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+        inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
         
-        @scala.inline
-        def setHideLabelFromVision(value: Boolean): Self = StObject.set(x, "hideLabelFromVision", value.asInstanceOf[js.Any])
+        inline def setHideLabelFromVision(value: Boolean): Self = StObject.set(x, "hideLabelFromVision", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHideLabelFromVisionUndefined: Self = StObject.set(x, "hideLabelFromVision", js.undefined)
+        inline def setHideLabelFromVisionUndefined: Self = StObject.set(x, "hideLabelFromVision", js.undefined)
         
-        @scala.inline
-        def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       }
     }
     
@@ -105,23 +93,18 @@ object baseControlMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(id: String): Props = {
+      inline def apply(id: String): Props = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
     }
     
@@ -133,26 +116,20 @@ object baseControlMod {
     }
     object VisualLabelProps {
       
-      @scala.inline
-      def apply(): VisualLabelProps = {
+      inline def apply(): VisualLabelProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[VisualLabelProps]
       }
       
-      @scala.inline
-      implicit class VisualLabelPropsMutableBuilder[Self <: VisualLabelProps] (val x: Self) extends AnyVal {
+      extension [Self <: VisualLabelProps](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       }
     }
   }

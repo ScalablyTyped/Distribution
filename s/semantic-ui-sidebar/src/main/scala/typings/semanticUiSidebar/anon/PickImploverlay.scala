@@ -11,16 +11,13 @@ trait PickImploverlay extends StObject {
 }
 object PickImploverlay {
   
-  @scala.inline
-  def apply(overlay: String): PickImploverlay = {
+  inline def apply(overlay: String): PickImploverlay = {
     val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImploverlay]
   }
   
-  @scala.inline
-  implicit class PickImploverlayMutableBuilder[Self <: PickImploverlay] (val x: Self) extends AnyVal {
+  extension [Self <: PickImploverlay](x: Self) {
     
-    @scala.inline
-    def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: String): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
   }
 }

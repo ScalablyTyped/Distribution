@@ -25,35 +25,35 @@ object headerGroupWrapperCompMod {
     
     /* private */ def appendHeaderGroupComp(displayName: js.Any): js.Any = js.native
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
-    var childColumnsDestroyFuncs: js.Any = js.native
+    /* private */ var childColumnsDestroyFuncs: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    val columnGroup: js.Any = js.native
+    /* private */ val columnGroup: js.Any = js.native
     
-    var componentRecipes: js.Any = js.native
+    /* private */ var componentRecipes: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def destroyListenersOnChildrenColumns(): js.Any = js.native
     
-    var dragAndDropService: js.Any = js.native
+    /* private */ var dragAndDropService: js.Any = js.native
     
-    val dragSourceDropTarget: js.Any = js.native
+    /* private */ val dragSourceDropTarget: js.Any = js.native
     
-    var eHeaderCellResize: js.Any = js.native
+    /* private */ var eHeaderCellResize: js.Any = js.native
     
     def getDragItemForGroup(): DragItem = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var horizontalResizeService: js.Any = js.native
+    /* private */ var horizontalResizeService: js.Any = js.native
     
     /* private */ def isSuppressMoving(): js.Any = js.native
     
@@ -69,21 +69,21 @@ object headerGroupWrapperCompMod {
     
     /* private */ def onWidthChanged(): js.Any = js.native
     
-    val pinned: js.Any = js.native
+    /* private */ val pinned: js.Any = js.native
     
     /* private */ def postConstruct(): js.Any = js.native
     
-    var resizeCols: js.Any = js.native
+    /* private */ var resizeCols: js.Any = js.native
     
-    var resizeRatios: js.Any = js.native
+    /* private */ var resizeRatios: js.Any = js.native
     
-    var resizeStartWidth: js.Any = js.native
+    /* private */ var resizeStartWidth: js.Any = js.native
     
-    var resizeTakeFromCols: js.Any = js.native
+    /* private */ var resizeTakeFromCols: js.Any = js.native
     
-    var resizeTakeFromRatios: js.Any = js.native
+    /* private */ var resizeTakeFromRatios: js.Any = js.native
     
-    var resizeTakeFromStartWidth: js.Any = js.native
+    /* private */ var resizeTakeFromStartWidth: js.Any = js.native
     
     /* private */ def setupMove(eHeaderGroup: js.Any, displayName: js.Any): js.Any = js.native
     
@@ -105,7 +105,6 @@ object headerGroupWrapperCompMod {
     @JSImport("ag-grid/dist/lib/headerRendering/headerGroup/headerGroupWrapperComp", "HeaderGroupWrapperComp.TEMPLATE")
     @js.native
     def TEMPLATE: js.Any = js.native
-    @scala.inline
-    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
 }

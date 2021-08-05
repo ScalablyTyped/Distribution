@@ -49,53 +49,38 @@ object mod {
   }
   object RedBoxProps {
     
-    @scala.inline
-    def apply(error: Error): RedBoxProps = {
+    inline def apply(error: Error): RedBoxProps = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedBoxProps]
     }
     
-    @scala.inline
-    implicit class RedBoxPropsMutableBuilder[Self <: RedBoxProps] (val x: Self) extends AnyVal {
+    extension [Self <: RedBoxProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setEditorScheme(value: String): Self = StObject.set(x, "editorScheme", value.asInstanceOf[js.Any])
+      inline def setEditorScheme(value: String): Self = StObject.set(x, "editorScheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorSchemeUndefined: Self = StObject.set(x, "editorScheme", js.undefined)
+      inline def setEditorSchemeUndefined: Self = StObject.set(x, "editorScheme", js.undefined)
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setUseColumns(value: Boolean): Self = StObject.set(x, "useColumns", value.asInstanceOf[js.Any])
+      inline def setUseColumns(value: Boolean): Self = StObject.set(x, "useColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseColumnsUndefined: Self = StObject.set(x, "useColumns", js.undefined)
+      inline def setUseColumnsUndefined: Self = StObject.set(x, "useColumns", js.undefined)
       
-      @scala.inline
-      def setUseLines(value: Boolean): Self = StObject.set(x, "useLines", value.asInstanceOf[js.Any])
+      inline def setUseLines(value: Boolean): Self = StObject.set(x, "useLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLinesUndefined: Self = StObject.set(x, "useLines", js.undefined)
+      inline def setUseLinesUndefined: Self = StObject.set(x, "useLines", js.undefined)
     }
   }
 }

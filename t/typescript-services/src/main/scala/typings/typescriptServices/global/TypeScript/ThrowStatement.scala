@@ -11,16 +11,16 @@ class ThrowStatement protected ()
      with typings.typescriptServices.TypeScript.ThrowStatement {
   def this(expression: typings.typescriptServices.TypeScript.AST) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _astID: js.Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _postComments: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _preComments: js.Any = js.native
   
   /* CompleteClass */

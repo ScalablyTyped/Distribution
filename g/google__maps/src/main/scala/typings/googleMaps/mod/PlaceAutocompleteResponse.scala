@@ -24,8 +24,7 @@ trait PlaceAutocompleteResponse extends StObject {
 }
 object PlaceAutocompleteResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error_message: String,
     predictions: js.Array[PlaceAutocompleteResult],
     status: PlaceAutocompleteResponseStatus
@@ -34,19 +33,14 @@ object PlaceAutocompleteResponse {
     __obj.asInstanceOf[PlaceAutocompleteResponse]
   }
   
-  @scala.inline
-  implicit class PlaceAutocompleteResponseMutableBuilder[Self <: PlaceAutocompleteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceAutocompleteResponse](x: Self) {
     
-    @scala.inline
-    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+    inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictions(value: js.Array[PlaceAutocompleteResult]): Self = StObject.set(x, "predictions", value.asInstanceOf[js.Any])
+    inline def setPredictions(value: js.Array[PlaceAutocompleteResult]): Self = StObject.set(x, "predictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionsVarargs(value: PlaceAutocompleteResult*): Self = StObject.set(x, "predictions", js.Array(value :_*))
+    inline def setPredictionsVarargs(value: PlaceAutocompleteResult*): Self = StObject.set(x, "predictions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: PlaceAutocompleteResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PlaceAutocompleteResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

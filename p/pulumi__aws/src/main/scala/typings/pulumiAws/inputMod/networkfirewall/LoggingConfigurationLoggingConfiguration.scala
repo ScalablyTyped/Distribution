@@ -14,21 +14,17 @@ trait LoggingConfigurationLoggingConfiguration extends StObject {
 }
 object LoggingConfigurationLoggingConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     logDestinationConfigs: Input[js.Array[Input[LoggingConfigurationLoggingConfigurationLogDestinationConfig]]]
   ): LoggingConfigurationLoggingConfiguration = {
     val __obj = js.Dynamic.literal(logDestinationConfigs = logDestinationConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingConfigurationLoggingConfiguration]
   }
   
-  @scala.inline
-  implicit class LoggingConfigurationLoggingConfigurationMutableBuilder[Self <: LoggingConfigurationLoggingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingConfigurationLoggingConfiguration](x: Self) {
     
-    @scala.inline
-    def setLogDestinationConfigs(value: Input[js.Array[Input[LoggingConfigurationLoggingConfigurationLogDestinationConfig]]]): Self = StObject.set(x, "logDestinationConfigs", value.asInstanceOf[js.Any])
+    inline def setLogDestinationConfigs(value: Input[js.Array[Input[LoggingConfigurationLoggingConfigurationLogDestinationConfig]]]): Self = StObject.set(x, "logDestinationConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogDestinationConfigsVarargs(value: Input[LoggingConfigurationLoggingConfigurationLogDestinationConfig]*): Self = StObject.set(x, "logDestinationConfigs", js.Array(value :_*))
+    inline def setLogDestinationConfigsVarargs(value: Input[LoggingConfigurationLoggingConfigurationLogDestinationConfig]*): Self = StObject.set(x, "logDestinationConfigs", js.Array(value :_*))
   }
 }

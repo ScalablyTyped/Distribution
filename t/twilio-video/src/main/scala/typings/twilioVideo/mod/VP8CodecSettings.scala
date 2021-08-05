@@ -16,22 +16,17 @@ trait VP8CodecSettings
 }
 object VP8CodecSettings {
   
-  @scala.inline
-  def apply(): VP8CodecSettings = {
+  inline def apply(): VP8CodecSettings = {
     val __obj = js.Dynamic.literal(codec = "VP8")
     __obj.asInstanceOf[VP8CodecSettings]
   }
   
-  @scala.inline
-  implicit class VP8CodecSettingsMutableBuilder[Self <: VP8CodecSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VP8CodecSettings](x: Self) {
     
-    @scala.inline
-    def setCodec(value: VP8): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: VP8): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimulcast(value: Boolean): Self = StObject.set(x, "simulcast", value.asInstanceOf[js.Any])
+    inline def setSimulcast(value: Boolean): Self = StObject.set(x, "simulcast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimulcastUndefined: Self = StObject.set(x, "simulcast", js.undefined)
+    inline def setSimulcastUndefined: Self = StObject.set(x, "simulcast", js.undefined)
   }
 }

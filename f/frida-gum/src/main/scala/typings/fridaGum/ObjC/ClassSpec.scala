@@ -36,47 +36,35 @@ trait ClassSpec[D, T, S] extends StObject {
 }
 object ClassSpec {
   
-  @scala.inline
-  def apply[D, T, S](): ClassSpec[D, T, S] = {
+  inline def apply[D, T, S](): ClassSpec[D, T, S] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassSpec[D, T, S]]
   }
   
-  @scala.inline
-  implicit class ClassSpecMutableBuilder[Self <: ClassSpec[?, ?, ?], D, T, S] (val x: Self & (ClassSpec[D, T, S])) extends AnyVal {
+  extension [Self <: ClassSpec[?, ?, ?], D, T, S](x: Self & (ClassSpec[D, T, S])) {
     
-    @scala.inline
-    def setMethods(
+    inline def setMethods(
       value: StringDictionary[
           (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
         ]
     ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+    inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    inline def setProtocols(value: js.Array[Protocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
-    @scala.inline
-    def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     
-    @scala.inline
-    def setSuper(value: Object): Self = StObject.set(x, "super", value.asInstanceOf[js.Any])
+    inline def setSuper(value: Object): Self = StObject.set(x, "super", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperNull: Self = StObject.set(x, "super", null)
+    inline def setSuperNull: Self = StObject.set(x, "super", null)
     
-    @scala.inline
-    def setSuperUndefined: Self = StObject.set(x, "super", js.undefined)
+    inline def setSuperUndefined: Self = StObject.set(x, "super", js.undefined)
   }
 }

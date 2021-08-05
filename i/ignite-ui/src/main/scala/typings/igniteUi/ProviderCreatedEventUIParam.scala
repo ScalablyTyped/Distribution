@@ -18,25 +18,19 @@ trait ProviderCreatedEventUIParam extends StObject {
 }
 object ProviderCreatedEventUIParam {
   
-  @scala.inline
-  def apply(): ProviderCreatedEventUIParam = {
+  inline def apply(): ProviderCreatedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProviderCreatedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ProviderCreatedEventUIParamMutableBuilder[Self <: ProviderCreatedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderCreatedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setProvider(value: js.Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: js.Any): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }
 }

@@ -73,25 +73,19 @@ trait SchemaTimestamp extends StObject {
 }
 object SchemaTimestamp {
   
-  @scala.inline
-  def apply(): SchemaTimestamp = {
+  inline def apply(): SchemaTimestamp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTimestamp]
   }
   
-  @scala.inline
-  implicit class SchemaTimestampMutableBuilder[Self <: SchemaTimestamp] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTimestamp](x: Self) {
     
-    @scala.inline
-    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+    inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+    inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
-    @scala.inline
-    def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
   }
 }

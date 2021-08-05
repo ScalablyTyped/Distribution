@@ -18,22 +18,17 @@ trait RejectQualificationRequestRequest extends StObject {
 }
 object RejectQualificationRequestRequest {
   
-  @scala.inline
-  def apply(QualificationRequestId: String): RejectQualificationRequestRequest = {
+  inline def apply(QualificationRequestId: String): RejectQualificationRequestRequest = {
     val __obj = js.Dynamic.literal(QualificationRequestId = QualificationRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectQualificationRequestRequest]
   }
   
-  @scala.inline
-  implicit class RejectQualificationRequestRequestMutableBuilder[Self <: RejectQualificationRequestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RejectQualificationRequestRequest](x: Self) {
     
-    @scala.inline
-    def setQualificationRequestId(value: String): Self = StObject.set(x, "QualificationRequestId", value.asInstanceOf[js.Any])
+    inline def setQualificationRequestId(value: String): Self = StObject.set(x, "QualificationRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlignSetting extends StObject
 object AlignSetting {
   
-  @scala.inline
-  def center: typings.std.stdStrings.center = "center".asInstanceOf[typings.std.stdStrings.center]
+  inline def center: typings.std.stdStrings.center = "center".asInstanceOf[typings.std.stdStrings.center]
   
-  @scala.inline
-  def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
+  inline def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
   
-  @scala.inline
-  def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
+  inline def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
   
-  @scala.inline
-  def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
+  inline def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
   
-  @scala.inline
-  def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
+  inline def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
 }

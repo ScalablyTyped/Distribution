@@ -18,16 +18,13 @@ trait RemoveCookieParams[T] extends StObject {
 }
 object RemoveCookieParams {
   
-  @scala.inline
-  def apply[T](filter: T): RemoveCookieParams[T] = {
+  inline def apply[T](filter: T): RemoveCookieParams[T] = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveCookieParams[T]]
   }
   
-  @scala.inline
-  implicit class RemoveCookieParamsMutableBuilder[Self <: RemoveCookieParams[?], T] (val x: Self & RemoveCookieParams[T]) extends AnyVal {
+  extension [Self <: RemoveCookieParams[?], T](x: Self & RemoveCookieParams[T]) {
     
-    @scala.inline
-    def setFilter(value: T): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: T): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
   }
 }

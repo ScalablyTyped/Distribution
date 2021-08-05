@@ -32,7 +32,7 @@ object baseMod {
       */
     def applyMatrix(x: Double, y: Double): js.Array[Double] = js.native
     
-    var center: Point = js.native
+    /* protected */ var center: Point = js.native
     
     /**
       * 将归一化的坐标点数据转换为画布坐标
@@ -43,7 +43,7 @@ object baseMod {
     @JSName("endAngle")
     var endAngle_Coordinate: Double = js.native
     
-    var height: Double = js.native
+    /* protected */ var height: Double = js.native
     
     @JSName("innerRadius")
     var innerRadius_Coordinate: Double = js.native
@@ -72,14 +72,14 @@ object baseMod {
     @JSName("isRect")
     val isRect_Coordinate: Boolean = js.native
     
-    var isReflectX: js.Any = js.native
+    /* private */ var isReflectX: js.Any = js.native
     
-    var isReflectY: js.Any = js.native
+    /* private */ var isReflectY: js.Any = js.native
     
     @JSName("matrix")
     var matrix_Coordinate: Matrix3 = js.native
     
-    var originalMatrix: js.Any = js.native
+    /* private */ var originalMatrix: js.Any = js.native
     
     @JSName("radius")
     var radius_Coordinate: Double = js.native
@@ -89,7 +89,7 @@ object baseMod {
     @JSName("startAngle")
     var startAngle_Coordinate: Double = js.native
     
-    var width: Double = js.native
+    /* protected */ var width: Double = js.native
   }
   
   type CoordinateCtor = Instantiable1[/* cfg */ js.Any, Coordinate]

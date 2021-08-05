@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpMouseActivation extends StObject
 object PpMouseActivation {
   
-  @scala.inline
-  def ppMouseClick: `1` = 1.asInstanceOf[`1`]
+  inline def ppMouseClick: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppMouseOver: `2` = 2.asInstanceOf[`2`]
+  inline def ppMouseOver: `2` = 2.asInstanceOf[`2`]
 }

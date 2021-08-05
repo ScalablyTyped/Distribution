@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object chromeDebugMod {
   
-  @scala.inline
-  def apply(alt: Alt): Unit = ^.asInstanceOf[js.Dynamic].apply(alt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(alt: Alt): Unit = ^.asInstanceOf[js.Dynamic].apply(alt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("alt/utils/chromeDebug", JSImport.Namespace)
   @js.native

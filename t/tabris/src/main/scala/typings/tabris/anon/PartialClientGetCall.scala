@@ -16,31 +16,23 @@ trait PartialClientGetCall extends StObject {
 }
 object PartialClientGetCall {
   
-  @scala.inline
-  def apply(): PartialClientGetCall = {
+  inline def apply(): PartialClientGetCall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClientGetCall]
   }
   
-  @scala.inline
-  implicit class PartialClientGetCallMutableBuilder[Self <: PartialClientGetCall] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClientGetCall](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOp(value: get): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: get): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

@@ -18,40 +18,29 @@ trait IEnumValueDescriptorProto extends StObject {
 }
 object IEnumValueDescriptorProto {
   
-  @scala.inline
-  def apply(): IEnumValueDescriptorProto = {
+  inline def apply(): IEnumValueDescriptorProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEnumValueDescriptorProto]
   }
   
-  @scala.inline
-  implicit class IEnumValueDescriptorProtoMutableBuilder[Self <: IEnumValueDescriptorProto] (val x: Self) extends AnyVal {
+  extension [Self <: IEnumValueDescriptorProto](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberNull: Self = StObject.set(x, "number", null)
+    inline def setNumberNull: Self = StObject.set(x, "number", null)
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setOptions(value: IEnumValueOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IEnumValueOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

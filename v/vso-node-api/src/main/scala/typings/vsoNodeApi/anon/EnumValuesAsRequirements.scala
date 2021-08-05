@@ -10,16 +10,13 @@ trait EnumValuesAsRequirements extends StObject {
 }
 object EnumValuesAsRequirements {
   
-  @scala.inline
-  def apply(enumValues: AsRequirements): EnumValuesAsRequirements = {
+  inline def apply(enumValues: AsRequirements): EnumValuesAsRequirements = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAsRequirements]
   }
   
-  @scala.inline
-  implicit class EnumValuesAsRequirementsMutableBuilder[Self <: EnumValuesAsRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAsRequirements](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AsRequirements): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AsRequirements): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

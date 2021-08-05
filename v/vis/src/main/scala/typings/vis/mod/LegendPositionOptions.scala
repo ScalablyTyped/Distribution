@@ -12,25 +12,19 @@ trait LegendPositionOptions extends StObject {
 }
 object LegendPositionOptions {
   
-  @scala.inline
-  def apply(): LegendPositionOptions = {
+  inline def apply(): LegendPositionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendPositionOptions]
   }
   
-  @scala.inline
-  implicit class LegendPositionOptionsMutableBuilder[Self <: LegendPositionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LegendPositionOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: LegendPositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: LegendPositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

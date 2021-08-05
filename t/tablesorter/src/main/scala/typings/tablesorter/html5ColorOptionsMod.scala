@@ -20,8 +20,7 @@ object html5ColorOptionsMod {
        with TestableOptions
   object Html5ColorOptions {
     
-    @scala.inline
-    def apply(): Html5ColorOptions = {
+    inline def apply(): Html5ColorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Html5ColorOptions]
     }

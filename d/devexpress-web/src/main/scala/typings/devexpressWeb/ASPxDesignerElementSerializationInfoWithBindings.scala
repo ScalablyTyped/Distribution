@@ -12,8 +12,7 @@ trait ASPxDesignerElementSerializationInfoWithBindings
 }
 object ASPxDesignerElementSerializationInfoWithBindings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     array: Boolean,
     bindingName: String,
     defaultVal: js.Any,
@@ -32,10 +31,8 @@ object ASPxDesignerElementSerializationInfoWithBindings {
     __obj.asInstanceOf[ASPxDesignerElementSerializationInfoWithBindings]
   }
   
-  @scala.inline
-  implicit class ASPxDesignerElementSerializationInfoWithBindingsMutableBuilder[Self <: ASPxDesignerElementSerializationInfoWithBindings] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxDesignerElementSerializationInfoWithBindings](x: Self) {
     
-    @scala.inline
-    def setBindingName(value: String): Self = StObject.set(x, "bindingName", value.asInstanceOf[js.Any])
+    inline def setBindingName(value: String): Self = StObject.set(x, "bindingName", value.asInstanceOf[js.Any])
   }
 }

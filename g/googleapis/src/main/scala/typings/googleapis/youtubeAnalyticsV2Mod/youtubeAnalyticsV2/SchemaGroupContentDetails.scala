@@ -23,25 +23,19 @@ trait SchemaGroupContentDetails extends StObject {
 }
 object SchemaGroupContentDetails {
   
-  @scala.inline
-  def apply(): SchemaGroupContentDetails = {
+  inline def apply(): SchemaGroupContentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroupContentDetails]
   }
   
-  @scala.inline
-  implicit class SchemaGroupContentDetailsMutableBuilder[Self <: SchemaGroupContentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroupContentDetails](x: Self) {
     
-    @scala.inline
-    def setItemCount(value: String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
+    inline def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
     
-    @scala.inline
-    def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+    inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+    inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
   }
 }

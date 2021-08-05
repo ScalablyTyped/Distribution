@@ -41,40 +41,29 @@ trait SchemaGoogleCloudVisionV1p2beta1ProductSearchParams extends StObject {
 }
 object SchemaGoogleCloudVisionV1p2beta1ProductSearchParams {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1ProductSearchParams = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1ProductSearchParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1ProductSearchParams]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1ProductSearchParamsMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1ProductSearchParams] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1ProductSearchParams](x: Self) {
     
-    @scala.inline
-    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p2beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: SchemaGoogleCloudVisionV1p2beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setProductCategories(value: js.Array[String]): Self = StObject.set(x, "productCategories", value.asInstanceOf[js.Any])
+    inline def setProductCategories(value: js.Array[String]): Self = StObject.set(x, "productCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCategoriesUndefined: Self = StObject.set(x, "productCategories", js.undefined)
+    inline def setProductCategoriesUndefined: Self = StObject.set(x, "productCategories", js.undefined)
     
-    @scala.inline
-    def setProductCategoriesVarargs(value: String*): Self = StObject.set(x, "productCategories", js.Array(value :_*))
+    inline def setProductCategoriesVarargs(value: String*): Self = StObject.set(x, "productCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setProductSet(value: String): Self = StObject.set(x, "productSet", value.asInstanceOf[js.Any])
+    inline def setProductSet(value: String): Self = StObject.set(x, "productSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSetUndefined: Self = StObject.set(x, "productSet", js.undefined)
+    inline def setProductSetUndefined: Self = StObject.set(x, "productSet", js.undefined)
   }
 }

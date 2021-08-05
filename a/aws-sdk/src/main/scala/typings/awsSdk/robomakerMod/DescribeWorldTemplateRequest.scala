@@ -13,16 +13,13 @@ trait DescribeWorldTemplateRequest extends StObject {
 }
 object DescribeWorldTemplateRequest {
   
-  @scala.inline
-  def apply(template: Arn): DescribeWorldTemplateRequest = {
+  inline def apply(template: Arn): DescribeWorldTemplateRequest = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorldTemplateRequest]
   }
   
-  @scala.inline
-  implicit class DescribeWorldTemplateRequestMutableBuilder[Self <: DescribeWorldTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorldTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

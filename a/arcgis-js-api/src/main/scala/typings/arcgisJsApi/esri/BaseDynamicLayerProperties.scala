@@ -12,8 +12,7 @@ trait BaseDynamicLayerProperties
      with BlendLayerProperties
 object BaseDynamicLayerProperties {
   
-  @scala.inline
-  def apply(): BaseDynamicLayerProperties = {
+  inline def apply(): BaseDynamicLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseDynamicLayerProperties]
   }

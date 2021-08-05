@@ -12,19 +12,15 @@ trait NodesFontAwesome extends StObject {
 }
 object NodesFontAwesome {
   
-  @scala.inline
-  def apply(getIconList: () => js.Array[String], getIconUnicode: String => String): NodesFontAwesome = {
+  inline def apply(getIconList: () => js.Array[String], getIconUnicode: String => String): NodesFontAwesome = {
     val __obj = js.Dynamic.literal(getIconList = js.Any.fromFunction0(getIconList), getIconUnicode = js.Any.fromFunction1(getIconUnicode))
     __obj.asInstanceOf[NodesFontAwesome]
   }
   
-  @scala.inline
-  implicit class NodesFontAwesomeMutableBuilder[Self <: NodesFontAwesome] (val x: Self) extends AnyVal {
+  extension [Self <: NodesFontAwesome](x: Self) {
     
-    @scala.inline
-    def setGetIconList(value: () => js.Array[String]): Self = StObject.set(x, "getIconList", js.Any.fromFunction0(value))
+    inline def setGetIconList(value: () => js.Array[String]): Self = StObject.set(x, "getIconList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIconUnicode(value: String => String): Self = StObject.set(x, "getIconUnicode", js.Any.fromFunction1(value))
+    inline def setGetIconUnicode(value: String => String): Self = StObject.set(x, "getIconUnicode", js.Any.fromFunction1(value))
   }
 }

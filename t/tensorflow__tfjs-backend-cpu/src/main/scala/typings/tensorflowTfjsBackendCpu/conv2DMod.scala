@@ -13,8 +13,7 @@ object conv2DMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def conv2D(args: AttrsConv2DAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2D")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def conv2D(args: AttrsConv2DAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2D")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Conv2D", "conv2DConfig")
   @js.native

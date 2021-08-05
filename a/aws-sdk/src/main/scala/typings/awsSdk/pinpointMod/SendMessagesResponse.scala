@@ -10,16 +10,13 @@ trait SendMessagesResponse extends StObject {
 }
 object SendMessagesResponse {
   
-  @scala.inline
-  def apply(MessageResponse: MessageResponse): SendMessagesResponse = {
+  inline def apply(MessageResponse: MessageResponse): SendMessagesResponse = {
     val __obj = js.Dynamic.literal(MessageResponse = MessageResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMessagesResponse]
   }
   
-  @scala.inline
-  implicit class SendMessagesResponseMutableBuilder[Self <: SendMessagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendMessagesResponse](x: Self) {
     
-    @scala.inline
-    def setMessageResponse(value: MessageResponse): Self = StObject.set(x, "MessageResponse", value.asInstanceOf[js.Any])
+    inline def setMessageResponse(value: MessageResponse): Self = StObject.set(x, "MessageResponse", value.asInstanceOf[js.Any])
   }
 }

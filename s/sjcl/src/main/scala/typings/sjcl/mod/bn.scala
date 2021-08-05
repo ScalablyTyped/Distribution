@@ -17,6 +17,5 @@ class bn ()
 }
 object bn {
   
-  @scala.inline
-  def apply: BigNumberStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("bn").asInstanceOf[BigNumberStatic]
+  inline def apply: BigNumberStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("bn").asInstanceOf[BigNumberStatic]
 }

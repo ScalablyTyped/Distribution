@@ -18,31 +18,23 @@ trait DescribeMetricCollectionTypesAnswer extends StObject {
 }
 object DescribeMetricCollectionTypesAnswer {
   
-  @scala.inline
-  def apply(): DescribeMetricCollectionTypesAnswer = {
+  inline def apply(): DescribeMetricCollectionTypesAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMetricCollectionTypesAnswer]
   }
   
-  @scala.inline
-  implicit class DescribeMetricCollectionTypesAnswerMutableBuilder[Self <: DescribeMetricCollectionTypesAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMetricCollectionTypesAnswer](x: Self) {
     
-    @scala.inline
-    def setGranularities(value: MetricGranularityTypes): Self = StObject.set(x, "Granularities", value.asInstanceOf[js.Any])
+    inline def setGranularities(value: MetricGranularityTypes): Self = StObject.set(x, "Granularities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularitiesUndefined: Self = StObject.set(x, "Granularities", js.undefined)
+    inline def setGranularitiesUndefined: Self = StObject.set(x, "Granularities", js.undefined)
     
-    @scala.inline
-    def setGranularitiesVarargs(value: MetricGranularityType*): Self = StObject.set(x, "Granularities", js.Array(value :_*))
+    inline def setGranularitiesVarargs(value: MetricGranularityType*): Self = StObject.set(x, "Granularities", js.Array(value :_*))
     
-    @scala.inline
-    def setMetrics(value: MetricCollectionTypes): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: MetricCollectionTypes): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: MetricCollectionType*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricCollectionType*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
   }
 }

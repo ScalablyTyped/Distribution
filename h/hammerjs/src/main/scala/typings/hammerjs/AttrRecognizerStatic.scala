@@ -12,19 +12,15 @@ trait AttrRecognizerStatic extends StObject {
 }
 object AttrRecognizerStatic {
   
-  @scala.inline
-  def apply(attrTest: HammerInput => Boolean, process: HammerInput => js.Any): AttrRecognizerStatic = {
+  inline def apply(attrTest: HammerInput => Boolean, process: HammerInput => js.Any): AttrRecognizerStatic = {
     val __obj = js.Dynamic.literal(attrTest = js.Any.fromFunction1(attrTest), process = js.Any.fromFunction1(process))
     __obj.asInstanceOf[AttrRecognizerStatic]
   }
   
-  @scala.inline
-  implicit class AttrRecognizerStaticMutableBuilder[Self <: AttrRecognizerStatic] (val x: Self) extends AnyVal {
+  extension [Self <: AttrRecognizerStatic](x: Self) {
     
-    @scala.inline
-    def setAttrTest(value: HammerInput => Boolean): Self = StObject.set(x, "attrTest", js.Any.fromFunction1(value))
+    inline def setAttrTest(value: HammerInput => Boolean): Self = StObject.set(x, "attrTest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcess(value: HammerInput => js.Any): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+    inline def setProcess(value: HammerInput => js.Any): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
   }
 }

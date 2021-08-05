@@ -28,34 +28,25 @@ trait PutInsightRuleInput extends StObject {
 }
 object PutInsightRuleInput {
   
-  @scala.inline
-  def apply(RuleDefinition: InsightRuleDefinition, RuleName: InsightRuleName): PutInsightRuleInput = {
+  inline def apply(RuleDefinition: InsightRuleDefinition, RuleName: InsightRuleName): PutInsightRuleInput = {
     val __obj = js.Dynamic.literal(RuleDefinition = RuleDefinition.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutInsightRuleInput]
   }
   
-  @scala.inline
-  implicit class PutInsightRuleInputMutableBuilder[Self <: PutInsightRuleInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutInsightRuleInput](x: Self) {
     
-    @scala.inline
-    def setRuleDefinition(value: InsightRuleDefinition): Self = StObject.set(x, "RuleDefinition", value.asInstanceOf[js.Any])
+    inline def setRuleDefinition(value: InsightRuleDefinition): Self = StObject.set(x, "RuleDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleName(value: InsightRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: InsightRuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleState(value: InsightRuleState): Self = StObject.set(x, "RuleState", value.asInstanceOf[js.Any])
+    inline def setRuleState(value: InsightRuleState): Self = StObject.set(x, "RuleState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleStateUndefined: Self = StObject.set(x, "RuleState", js.undefined)
+    inline def setRuleStateUndefined: Self = StObject.set(x, "RuleState", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

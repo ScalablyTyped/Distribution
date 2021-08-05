@@ -29,43 +29,32 @@ object queuemessageresultMod {
         }
         object QueueMessageResponse {
           
-          @scala.inline
-          def apply(body: js.Any): QueueMessageResponse = {
+          inline def apply(body: js.Any): QueueMessageResponse = {
             val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
             __obj.asInstanceOf[QueueMessageResponse]
           }
           
-          @scala.inline
-          implicit class QueueMessageResponseMutableBuilder[Self <: QueueMessageResponse] (val x: Self) extends AnyVal {
+          extension [Self <: QueueMessageResponse](x: Self) {
             
-            @scala.inline
-            def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+            inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setBrokerProperties(value: BrokerProperties): Self = StObject.set(x, "brokerProperties", value.asInstanceOf[js.Any])
+            inline def setBrokerProperties(value: BrokerProperties): Self = StObject.set(x, "brokerProperties", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setBrokerPropertiesUndefined: Self = StObject.set(x, "brokerProperties", js.undefined)
+            inline def setBrokerPropertiesUndefined: Self = StObject.set(x, "brokerProperties", js.undefined)
             
-            @scala.inline
-            def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+            inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+            inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
             
-            @scala.inline
-            def setCustomProperties(
+            inline def setCustomProperties(
               value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<any> */ js.Any
             ): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setCustomPropertiesUndefined: Self = StObject.set(x, "customProperties", js.undefined)
+            inline def setCustomPropertiesUndefined: Self = StObject.set(x, "customProperties", js.undefined)
             
-            @scala.inline
-            def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+            inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+            inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
           }
         }
         
@@ -86,8 +75,7 @@ object queuemessageresultMod {
         }
         object QueueResponse {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             body: js.Any,
             headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
           ): QueueResponse = {
@@ -95,14 +83,11 @@ object queuemessageresultMod {
             __obj.asInstanceOf[QueueResponse]
           }
           
-          @scala.inline
-          implicit class QueueResponseMutableBuilder[Self <: QueueResponse] (val x: Self) extends AnyVal {
+          extension [Self <: QueueResponse](x: Self) {
             
-            @scala.inline
-            def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+            inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setHeaders(
+            inline def setHeaders(
               value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
             ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
           }

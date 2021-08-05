@@ -13,16 +13,13 @@ trait UpdateDeviceCertificateParams extends StObject {
 }
 object UpdateDeviceCertificateParams {
   
-  @scala.inline
-  def apply(action: DeviceCertificateUpdateAction): UpdateDeviceCertificateParams = {
+  inline def apply(action: DeviceCertificateUpdateAction): UpdateDeviceCertificateParams = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceCertificateParams]
   }
   
-  @scala.inline
-  implicit class UpdateDeviceCertificateParamsMutableBuilder[Self <: UpdateDeviceCertificateParams] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeviceCertificateParams](x: Self) {
     
-    @scala.inline
-    def setAction(value: DeviceCertificateUpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: DeviceCertificateUpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

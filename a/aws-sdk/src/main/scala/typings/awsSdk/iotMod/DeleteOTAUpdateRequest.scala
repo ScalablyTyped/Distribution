@@ -23,28 +23,21 @@ trait DeleteOTAUpdateRequest extends StObject {
 }
 object DeleteOTAUpdateRequest {
   
-  @scala.inline
-  def apply(otaUpdateId: OTAUpdateId): DeleteOTAUpdateRequest = {
+  inline def apply(otaUpdateId: OTAUpdateId): DeleteOTAUpdateRequest = {
     val __obj = js.Dynamic.literal(otaUpdateId = otaUpdateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOTAUpdateRequest]
   }
   
-  @scala.inline
-  implicit class DeleteOTAUpdateRequestMutableBuilder[Self <: DeleteOTAUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOTAUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setDeleteStream(value: DeleteStream): Self = StObject.set(x, "deleteStream", value.asInstanceOf[js.Any])
+    inline def setDeleteStream(value: DeleteStream): Self = StObject.set(x, "deleteStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteStreamUndefined: Self = StObject.set(x, "deleteStream", js.undefined)
+    inline def setDeleteStreamUndefined: Self = StObject.set(x, "deleteStream", js.undefined)
     
-    @scala.inline
-    def setForceDeleteAWSJob(value: ForceDeleteAWSJob): Self = StObject.set(x, "forceDeleteAWSJob", value.asInstanceOf[js.Any])
+    inline def setForceDeleteAWSJob(value: ForceDeleteAWSJob): Self = StObject.set(x, "forceDeleteAWSJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDeleteAWSJobUndefined: Self = StObject.set(x, "forceDeleteAWSJob", js.undefined)
+    inline def setForceDeleteAWSJobUndefined: Self = StObject.set(x, "forceDeleteAWSJob", js.undefined)
     
-    @scala.inline
-    def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
+    inline def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
   }
 }

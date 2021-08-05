@@ -27,8 +27,7 @@ object editableRowDriverMod {
   }
   object EditableRowDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clickApprove: () => Unit,
       clickCancel: () => Unit,
       exists: () => Boolean,
@@ -42,29 +41,21 @@ object editableRowDriverMod {
       __obj.asInstanceOf[EditableRowDriver]
     }
     
-    @scala.inline
-    implicit class EditableRowDriverMutableBuilder[Self <: EditableRowDriver] (val x: Self) extends AnyVal {
+    extension [Self <: EditableRowDriver](x: Self) {
       
-      @scala.inline
-      def setClickApprove(value: () => Unit): Self = StObject.set(x, "clickApprove", js.Any.fromFunction0(value))
+      inline def setClickApprove(value: () => Unit): Self = StObject.set(x, "clickApprove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickCancel(value: () => Unit): Self = StObject.set(x, "clickCancel", js.Any.fromFunction0(value))
+      inline def setClickCancel(value: () => Unit): Self = StObject.set(x, "clickCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsApproveDisabled(value: () => Boolean): Self = StObject.set(x, "isApproveDisabled", js.Any.fromFunction0(value))
+      inline def setIsApproveDisabled(value: () => Boolean): Self = StObject.set(x, "isApproveDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsInputFocused(value: () => Boolean): Self = StObject.set(x, "isInputFocused", js.Any.fromFunction0(value))
+      inline def setIsInputFocused(value: () => Boolean): Self = StObject.set(x, "isInputFocused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeyDown(value: Double => Unit): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
+      inline def setKeyDown(value: Double => Unit): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+      inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     }
   }
 }

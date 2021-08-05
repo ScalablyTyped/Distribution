@@ -13,16 +13,13 @@ trait HrefTo extends StObject {
 }
 object HrefTo {
   
-  @scala.inline
-  def apply(to: Path): HrefTo = {
+  inline def apply(to: Path): HrefTo = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[HrefTo]
   }
   
-  @scala.inline
-  implicit class HrefToMutableBuilder[Self <: HrefTo] (val x: Self) extends AnyVal {
+  extension [Self <: HrefTo](x: Self) {
     
-    @scala.inline
-    def setTo(value: Path): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Path): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

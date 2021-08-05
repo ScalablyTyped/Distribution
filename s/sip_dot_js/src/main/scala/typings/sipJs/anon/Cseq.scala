@@ -14,34 +14,25 @@ trait Cseq extends StObject {
 }
 object Cseq {
   
-  @scala.inline
-  def apply(): Cseq = {
+  inline def apply(): Cseq = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cseq]
   }
   
-  @scala.inline
-  implicit class CseqMutableBuilder[Self <: Cseq] (val x: Self) extends AnyVal {
+  extension [Self <: Cseq](x: Self) {
     
-    @scala.inline
-    def setBody(value: typings.sipJs.bodyMod.Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: typings.sipJs.bodyMod.Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setCseq(value: Double): Self = StObject.set(x, "cseq", value.asInstanceOf[js.Any])
+    inline def setCseq(value: Double): Self = StObject.set(x, "cseq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCseqUndefined: Self = StObject.set(x, "cseq", js.undefined)
+    inline def setCseqUndefined: Self = StObject.set(x, "cseq", js.undefined)
     
-    @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+    inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+    inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
-    @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+    inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
   }
 }

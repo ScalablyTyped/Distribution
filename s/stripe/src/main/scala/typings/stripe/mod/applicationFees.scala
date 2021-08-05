@@ -74,8 +74,7 @@ object applicationFees {
   }
   object IApplicationFee {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       account: String | IAccount,
       amount: Double,
       amount_refunded: Double,
@@ -96,44 +95,31 @@ object applicationFees {
       __obj.asInstanceOf[IApplicationFee]
     }
     
-    @scala.inline
-    implicit class IApplicationFeeMutableBuilder[Self <: IApplicationFee] (val x: Self) extends AnyVal {
+    extension [Self <: IApplicationFee](x: Self) {
       
-      @scala.inline
-      def setAccount(value: String | IAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: String | IAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_refunded(value: Double): Self = StObject.set(x, "amount_refunded", value.asInstanceOf[js.Any])
+      inline def setAmount_refunded(value: Double): Self = StObject.set(x, "amount_refunded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplication(value: String | IApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: String | IApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transaction(value: String | IBalanceTransaction): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
+      inline def setBalance_transaction(value: String | IBalanceTransaction): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharge(value: String | ICharge): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
+      inline def setCharge(value: String | ICharge): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginating_transaction(value: String): Self = StObject.set(x, "originating_transaction", value.asInstanceOf[js.Any])
+      inline def setOriginating_transaction(value: String): Self = StObject.set(x, "originating_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefunded(value: Boolean): Self = StObject.set(x, "refunded", value.asInstanceOf[js.Any])
+      inline def setRefunded(value: Boolean): Self = StObject.set(x, "refunded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefunds(value: IApplicationFeeRefunds): Self = StObject.set(x, "refunds", value.asInstanceOf[js.Any])
+      inline def setRefunds(value: IApplicationFeeRefunds): Self = StObject.set(x, "refunds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,17 +134,14 @@ object applicationFees {
   }
   object IApplicationFeeListOptions {
     
-    @scala.inline
-    def apply(charge: String): IApplicationFeeListOptions = {
+    inline def apply(charge: String): IApplicationFeeListOptions = {
       val __obj = js.Dynamic.literal(charge = charge.asInstanceOf[js.Any])
       __obj.asInstanceOf[IApplicationFeeListOptions]
     }
     
-    @scala.inline
-    implicit class IApplicationFeeListOptionsMutableBuilder[Self <: IApplicationFeeListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IApplicationFeeListOptions](x: Self) {
       
-      @scala.inline
-      def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
+      inline def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,8 +179,7 @@ object applicationFees {
   }
   object IApplicationFeeRefund {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       balance_transaction: String | IBalanceTransaction,
       created: Double,
@@ -212,26 +194,19 @@ object applicationFees {
       __obj.asInstanceOf[IApplicationFeeRefund]
     }
     
-    @scala.inline
-    implicit class IApplicationFeeRefundMutableBuilder[Self <: IApplicationFeeRefund] (val x: Self) extends AnyVal {
+    extension [Self <: IApplicationFeeRefund](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalance_transaction(value: String | IBalanceTransaction): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
+      inline def setBalance_transaction(value: String | IBalanceTransaction): Self = StObject.set(x, "balance_transaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFee(value: String | IApplicationFee): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
+      inline def setFee(value: String | IApplicationFee): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,20 +224,16 @@ object applicationFees {
   }
   object IApplicationFeeRefundCreationOptions {
     
-    @scala.inline
-    def apply(): IApplicationFeeRefundCreationOptions = {
+    inline def apply(): IApplicationFeeRefundCreationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IApplicationFeeRefundCreationOptions]
     }
     
-    @scala.inline
-    implicit class IApplicationFeeRefundCreationOptionsMutableBuilder[Self <: IApplicationFeeRefundCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IApplicationFeeRefundCreationOptions](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     }
   }
   

@@ -20,25 +20,19 @@ trait X11Info extends StObject {
 }
 object X11Info {
   
-  @scala.inline
-  def apply(cookie: String, protocol: String, screen: Double, single: Boolean): X11Info = {
+  inline def apply(cookie: String, protocol: String, screen: Double, single: Boolean): X11Info = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any])
     __obj.asInstanceOf[X11Info]
   }
   
-  @scala.inline
-  implicit class X11InfoMutableBuilder[Self <: X11Info] (val x: Self) extends AnyVal {
+  extension [Self <: X11Info](x: Self) {
     
-    @scala.inline
-    def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen(value: Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+    inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object linearMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def testLinearContainers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("test_linear_containers")().asInstanceOf[Unit]
+  inline def testLinearContainers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("test_linear_containers")().asInstanceOf[Unit]
 }

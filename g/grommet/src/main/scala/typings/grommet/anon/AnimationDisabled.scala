@@ -14,31 +14,23 @@ trait AnimationDisabled extends StObject {
 }
 object AnimationDisabled {
   
-  @scala.inline
-  def apply(): AnimationDisabled = {
+  inline def apply(): AnimationDisabled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationDisabled]
   }
   
-  @scala.inline
-  implicit class AnimationDisabledMutableBuilder[Self <: AnimationDisabled] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationDisabled](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: `23`): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: `23`): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: `24`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: `24`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setIcons(value: Current): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Current): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
   }
 }

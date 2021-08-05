@@ -16,17 +16,14 @@ trait ChannelUnhold
 }
 object ChannelUnhold {
   
-  @scala.inline
-  def apply(application: String, channel: Channel, timestamp: Date, `type`: String): ChannelUnhold = {
+  inline def apply(application: String, channel: Channel, timestamp: Date, `type`: String): ChannelUnhold = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelUnhold]
   }
   
-  @scala.inline
-  implicit class ChannelUnholdMutableBuilder[Self <: ChannelUnhold] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelUnhold](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

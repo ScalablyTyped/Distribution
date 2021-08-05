@@ -12,8 +12,7 @@ trait StringMappingType
 }
 object StringMappingType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -45,10 +44,8 @@ object StringMappingType {
     __obj.asInstanceOf[StringMappingType]
   }
   
-  @scala.inline
-  implicit class StringMappingTypeMutableBuilder[Self <: StringMappingType] (val x: Self) extends AnyVal {
+  extension [Self <: StringMappingType](x: Self) {
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

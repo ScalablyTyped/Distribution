@@ -14,25 +14,19 @@ trait ArrayParamUriParamcritica extends StObject {
 }
 object ArrayParamUriParamcritica {
   
-  @scala.inline
-  def apply(array: js.Array[UriParam]): ArrayParamUriParamcritica = {
+  inline def apply(array: js.Array[UriParam]): ArrayParamUriParamcritica = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayParamUriParamcritica]
   }
   
-  @scala.inline
-  implicit class ArrayParamUriParamcriticaMutableBuilder[Self <: ArrayParamUriParamcritica] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayParamUriParamcritica](x: Self) {
     
-    @scala.inline
-    def setArray(value: js.Array[UriParam]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: js.Array[UriParam]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayVarargs(value: UriParam*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: UriParam*): Self = StObject.set(x, "array", js.Array(value :_*))
     
-    @scala.inline
-    def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+    inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
+    inline def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
   }
 }

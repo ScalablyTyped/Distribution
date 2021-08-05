@@ -47,8 +47,7 @@ trait Scenario
 }
 object Scenario {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderColor: Double,
     CopyBack: Boolean,
     CopyFormulas: Boolean,
@@ -85,31 +84,22 @@ object Scenario {
     __obj.asInstanceOf[Scenario]
   }
   
-  @scala.inline
-  implicit class ScenarioMutableBuilder[Self <: Scenario] (val x: Self) extends AnyVal {
+  extension [Self <: Scenario](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyBack(value: Boolean): Self = StObject.set(x, "CopyBack", value.asInstanceOf[js.Any])
+    inline def setCopyBack(value: Boolean): Self = StObject.set(x, "CopyBack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyFormulas(value: Boolean): Self = StObject.set(x, "CopyFormulas", value.asInstanceOf[js.Any])
+    inline def setCopyFormulas(value: Boolean): Self = StObject.set(x, "CopyFormulas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyStyles(value: Boolean): Self = StObject.set(x, "CopyStyles", value.asInstanceOf[js.Any])
+    inline def setCopyStyles(value: Boolean): Self = StObject.set(x, "CopyStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintBorder(value: Boolean): Self = StObject.set(x, "PrintBorder", value.asInstanceOf[js.Any])
+    inline def setPrintBorder(value: Boolean): Self = StObject.set(x, "PrintBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtected(value: Boolean): Self = StObject.set(x, "Protected", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "Protected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBorder(value: Boolean): Self = StObject.set(x, "ShowBorder", value.asInstanceOf[js.Any])
+    inline def setShowBorder(value: Boolean): Self = StObject.set(x, "ShowBorder", value.asInstanceOf[js.Any])
   }
 }

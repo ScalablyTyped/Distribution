@@ -18,28 +18,21 @@ trait ListOfferingPromotionsResult extends StObject {
 }
 object ListOfferingPromotionsResult {
   
-  @scala.inline
-  def apply(): ListOfferingPromotionsResult = {
+  inline def apply(): ListOfferingPromotionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOfferingPromotionsResult]
   }
   
-  @scala.inline
-  implicit class ListOfferingPromotionsResultMutableBuilder[Self <: ListOfferingPromotionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListOfferingPromotionsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setOfferingPromotions(value: OfferingPromotions): Self = StObject.set(x, "offeringPromotions", value.asInstanceOf[js.Any])
+    inline def setOfferingPromotions(value: OfferingPromotions): Self = StObject.set(x, "offeringPromotions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingPromotionsUndefined: Self = StObject.set(x, "offeringPromotions", js.undefined)
+    inline def setOfferingPromotionsUndefined: Self = StObject.set(x, "offeringPromotions", js.undefined)
     
-    @scala.inline
-    def setOfferingPromotionsVarargs(value: OfferingPromotion*): Self = StObject.set(x, "offeringPromotions", js.Array(value :_*))
+    inline def setOfferingPromotionsVarargs(value: OfferingPromotion*): Self = StObject.set(x, "offeringPromotions", js.Array(value :_*))
   }
 }

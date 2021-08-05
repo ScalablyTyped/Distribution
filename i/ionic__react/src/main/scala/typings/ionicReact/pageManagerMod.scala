@@ -58,32 +58,24 @@ object pageManagerMod {
   }
   object PageManagerProps {
     
-    @scala.inline
-    def apply(): PageManagerProps = {
+    inline def apply(): PageManagerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageManagerProps]
     }
     
-    @scala.inline
-    implicit class PageManagerPropsMutableBuilder[Self <: PageManagerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PageManagerProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setForwardedRef(value: RefObject[HTMLDivElement]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
+      inline def setForwardedRef(value: RefObject[HTMLDivElement]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
+      inline def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
       
-      @scala.inline
-      def setRouteInfo(value: RouteInfo[js.Any]): Self = StObject.set(x, "routeInfo", value.asInstanceOf[js.Any])
+      inline def setRouteInfo(value: RouteInfo[js.Any]): Self = StObject.set(x, "routeInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteInfoUndefined: Self = StObject.set(x, "routeInfo", js.undefined)
+      inline def setRouteInfoUndefined: Self = StObject.set(x, "routeInfo", js.undefined)
     }
   }
 }

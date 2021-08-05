@@ -21,26 +21,20 @@ trait VariableDeclaration
 }
 object VariableDeclaration {
   
-  @scala.inline
-  def apply(declarations: js.Array[VariableDeclarator], kind: `var` | let | const): VariableDeclaration = {
+  inline def apply(declarations: js.Array[VariableDeclarator], kind: `var` | let | const): VariableDeclaration = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[VariableDeclaration]
   }
   
-  @scala.inline
-  implicit class VariableDeclarationMutableBuilder[Self <: VariableDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: VariableDeclaration](x: Self) {
     
-    @scala.inline
-    def setDeclarations(value: js.Array[VariableDeclarator]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: js.Array[VariableDeclarator]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarationsVarargs(value: VariableDeclarator*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: VariableDeclarator*): Self = StObject.set(x, "declarations", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: `var` | let | const): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: `var` | let | const): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.VariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.VariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -28,50 +28,36 @@ object anon {
   }
   object GenerateScopedName {
     
-    @scala.inline
-    def apply(): GenerateScopedName = {
+    inline def apply(): GenerateScopedName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateScopedName]
     }
     
-    @scala.inline
-    implicit class GenerateScopedNameMutableBuilder[Self <: GenerateScopedName] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateScopedName](x: Self) {
       
-      @scala.inline
-      def setGenerateScopedName(value: String | (js.Function3[/* name */ String, /* filename */ String, /* css */ String, String])): Self = StObject.set(x, "generateScopedName", value.asInstanceOf[js.Any])
+      inline def setGenerateScopedName(value: String | (js.Function3[/* name */ String, /* filename */ String, /* css */ String, String])): Self = StObject.set(x, "generateScopedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateScopedNameFunction3(value: (/* name */ String, /* filename */ String, /* css */ String) => String): Self = StObject.set(x, "generateScopedName", js.Any.fromFunction3(value))
+      inline def setGenerateScopedNameFunction3(value: (/* name */ String, /* filename */ String, /* css */ String) => String): Self = StObject.set(x, "generateScopedName", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGenerateScopedNameUndefined: Self = StObject.set(x, "generateScopedName", js.undefined)
+      inline def setGenerateScopedNameUndefined: Self = StObject.set(x, "generateScopedName", js.undefined)
       
-      @scala.inline
-      def setGlobalModulePaths(value: js.Array[String]): Self = StObject.set(x, "globalModulePaths", value.asInstanceOf[js.Any])
+      inline def setGlobalModulePaths(value: js.Array[String]): Self = StObject.set(x, "globalModulePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalModulePathsUndefined: Self = StObject.set(x, "globalModulePaths", js.undefined)
+      inline def setGlobalModulePathsUndefined: Self = StObject.set(x, "globalModulePaths", js.undefined)
       
-      @scala.inline
-      def setGlobalModulePathsVarargs(value: String*): Self = StObject.set(x, "globalModulePaths", js.Array(value :_*))
+      inline def setGlobalModulePathsVarargs(value: String*): Self = StObject.set(x, "globalModulePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
+      inline def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
+      inline def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
       
-      @scala.inline
-      def setLocalsConvention(value: camelCase | camelCaseOnly | dashes | dashesOnly): Self = StObject.set(x, "localsConvention", value.asInstanceOf[js.Any])
+      inline def setLocalsConvention(value: camelCase | camelCaseOnly | dashes | dashesOnly): Self = StObject.set(x, "localsConvention", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsConventionUndefined: Self = StObject.set(x, "localsConvention", js.undefined)
+      inline def setLocalsConventionUndefined: Self = StObject.set(x, "localsConvention", js.undefined)
       
-      @scala.inline
-      def setScopeBehaviour(value: global | local): Self = StObject.set(x, "scopeBehaviour", value.asInstanceOf[js.Any])
+      inline def setScopeBehaviour(value: global | local): Self = StObject.set(x, "scopeBehaviour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeBehaviourUndefined: Self = StObject.set(x, "scopeBehaviour", js.undefined)
+      inline def setScopeBehaviourUndefined: Self = StObject.set(x, "scopeBehaviour", js.undefined)
     }
   }
 }

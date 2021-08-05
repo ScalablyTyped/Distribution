@@ -21,6 +21,5 @@ object BindingBehaviorResource {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convention(name: String): BindingBehaviorResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[BindingBehaviorResource]
+  inline def convention(name: String): BindingBehaviorResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[BindingBehaviorResource]
 }

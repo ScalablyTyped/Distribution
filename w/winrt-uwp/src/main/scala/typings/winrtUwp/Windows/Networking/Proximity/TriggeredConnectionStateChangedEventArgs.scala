@@ -19,22 +19,17 @@ trait TriggeredConnectionStateChangedEventArgs extends StObject {
 }
 object TriggeredConnectionStateChangedEventArgs {
   
-  @scala.inline
-  def apply(id: Double, socket: StreamSocket, state: TriggeredConnectState): TriggeredConnectionStateChangedEventArgs = {
+  inline def apply(id: Double, socket: StreamSocket, state: TriggeredConnectState): TriggeredConnectionStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggeredConnectionStateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class TriggeredConnectionStateChangedEventArgsMutableBuilder[Self <: TriggeredConnectionStateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TriggeredConnectionStateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: TriggeredConnectState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: TriggeredConnectState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -15,16 +15,13 @@ trait StartLocalServiceDiscoveryFailCallbackResult extends StObject {
 }
 object StartLocalServiceDiscoveryFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): StartLocalServiceDiscoveryFailCallbackResult = {
+  inline def apply(errMsg: String): StartLocalServiceDiscoveryFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartLocalServiceDiscoveryFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class StartLocalServiceDiscoveryFailCallbackResultMutableBuilder[Self <: StartLocalServiceDiscoveryFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartLocalServiceDiscoveryFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

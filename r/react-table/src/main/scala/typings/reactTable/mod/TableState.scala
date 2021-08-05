@@ -10,22 +10,17 @@ trait TableState[D /* <: js.Object */] extends StObject {
 }
 object TableState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): TableState[D] = {
+  inline def apply[D /* <: js.Object */](): TableState[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableState[D]]
   }
   
-  @scala.inline
-  implicit class TableStateMutableBuilder[Self <: TableState[?], D /* <: js.Object */] (val x: Self & TableState[D]) extends AnyVal {
+  extension [Self <: TableState[?], D /* <: js.Object */](x: Self & TableState[D]) {
     
-    @scala.inline
-    def setHiddenColumns(value: js.Array[IdType[D]]): Self = StObject.set(x, "hiddenColumns", value.asInstanceOf[js.Any])
+    inline def setHiddenColumns(value: js.Array[IdType[D]]): Self = StObject.set(x, "hiddenColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenColumnsUndefined: Self = StObject.set(x, "hiddenColumns", js.undefined)
+    inline def setHiddenColumnsUndefined: Self = StObject.set(x, "hiddenColumns", js.undefined)
     
-    @scala.inline
-    def setHiddenColumnsVarargs(value: IdType[D]*): Self = StObject.set(x, "hiddenColumns", js.Array(value :_*))
+    inline def setHiddenColumnsVarargs(value: IdType[D]*): Self = StObject.set(x, "hiddenColumns", js.Array(value :_*))
   }
 }

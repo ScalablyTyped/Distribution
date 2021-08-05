@@ -23,25 +23,19 @@ trait SetInstanceHealthQuery extends StObject {
 }
 object SetInstanceHealthQuery {
   
-  @scala.inline
-  def apply(HealthStatus: XmlStringMaxLen32, InstanceId: XmlStringMaxLen19): SetInstanceHealthQuery = {
+  inline def apply(HealthStatus: XmlStringMaxLen32, InstanceId: XmlStringMaxLen19): SetInstanceHealthQuery = {
     val __obj = js.Dynamic.literal(HealthStatus = HealthStatus.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetInstanceHealthQuery]
   }
   
-  @scala.inline
-  implicit class SetInstanceHealthQueryMutableBuilder[Self <: SetInstanceHealthQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SetInstanceHealthQuery](x: Self) {
     
-    @scala.inline
-    def setHealthStatus(value: XmlStringMaxLen32): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
+    inline def setHealthStatus(value: XmlStringMaxLen32): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: XmlStringMaxLen19): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: XmlStringMaxLen19): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldRespectGracePeriod(value: ShouldRespectGracePeriod): Self = StObject.set(x, "ShouldRespectGracePeriod", value.asInstanceOf[js.Any])
+    inline def setShouldRespectGracePeriod(value: ShouldRespectGracePeriod): Self = StObject.set(x, "ShouldRespectGracePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldRespectGracePeriodUndefined: Self = StObject.set(x, "ShouldRespectGracePeriod", js.undefined)
+    inline def setShouldRespectGracePeriodUndefined: Self = StObject.set(x, "ShouldRespectGracePeriod", js.undefined)
   }
 }

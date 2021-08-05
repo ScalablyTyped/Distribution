@@ -10,13 +10,11 @@ object reducersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reduce(
+  inline def reduce(
     state: Unit,
     action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action<any> */ js.Any
   ): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
-  @scala.inline
-  def reduce(
+  inline def reduce(
     state: State,
     action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action<any> */ js.Any
   ): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
@@ -35,8 +33,7 @@ object reducersMod {
   }
   object State {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dirtyHandlerIds: typings.dndCore.dirtyHandlerIdsMod.State,
       dragOffset: typings.dndCore.dragOffsetMod.State,
       dragOperation: typings.dndCore.dragOperationMod.State,
@@ -47,26 +44,19 @@ object reducersMod {
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setDirtyHandlerIds(value: typings.dndCore.dirtyHandlerIdsMod.State): Self = StObject.set(x, "dirtyHandlerIds", value.asInstanceOf[js.Any])
+      inline def setDirtyHandlerIds(value: typings.dndCore.dirtyHandlerIdsMod.State): Self = StObject.set(x, "dirtyHandlerIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyHandlerIdsVarargs(value: String*): Self = StObject.set(x, "dirtyHandlerIds", js.Array(value :_*))
+      inline def setDirtyHandlerIdsVarargs(value: String*): Self = StObject.set(x, "dirtyHandlerIds", js.Array(value :_*))
       
-      @scala.inline
-      def setDragOffset(value: typings.dndCore.dragOffsetMod.State): Self = StObject.set(x, "dragOffset", value.asInstanceOf[js.Any])
+      inline def setDragOffset(value: typings.dndCore.dragOffsetMod.State): Self = StObject.set(x, "dragOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragOperation(value: typings.dndCore.dragOperationMod.State): Self = StObject.set(x, "dragOperation", value.asInstanceOf[js.Any])
+      inline def setDragOperation(value: typings.dndCore.dragOperationMod.State): Self = StObject.set(x, "dragOperation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefCount(value: typings.dndCore.refCountMod.State): Self = StObject.set(x, "refCount", value.asInstanceOf[js.Any])
+      inline def setRefCount(value: typings.dndCore.refCountMod.State): Self = StObject.set(x, "refCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateId(value: typings.dndCore.stateIdMod.State): Self = StObject.set(x, "stateId", value.asInstanceOf[js.Any])
+      inline def setStateId(value: typings.dndCore.stateIdMod.State): Self = StObject.set(x, "stateId", value.asInstanceOf[js.Any])
     }
   }
 }

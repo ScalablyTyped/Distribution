@@ -22,22 +22,17 @@ trait ILoadUIParameters extends StObject {
 }
 object ILoadUIParameters {
   
-  @scala.inline
-  def apply(path: String): ILoadUIParameters = {
+  inline def apply(path: String): ILoadUIParameters = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoadUIParameters]
   }
   
-  @scala.inline
-  implicit class ILoadUIParametersMutableBuilder[Self <: ILoadUIParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ILoadUIParameters](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Absorbsinput): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Absorbsinput): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait RmOptions
      with typings.node.fsMod.RmOptions
 object RmOptions {
   
-  @scala.inline
-  def apply(): RmOptions = {
+  inline def apply(): RmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RmOptions]
   }

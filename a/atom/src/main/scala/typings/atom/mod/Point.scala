@@ -92,13 +92,10 @@ object Point {
     *  Create a Point from an array containing two numbers representing the
     *  row and column.
     */
-  @scala.inline
-  def fromObject(`object`: PointCompatible): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Point]
-  @scala.inline
-  def fromObject(`object`: PointCompatible, copy: Boolean): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], copy.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def fromObject(`object`: PointCompatible): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Point]
+  inline def fromObject(`object`: PointCompatible, copy: Boolean): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], copy.asInstanceOf[js.Any])).asInstanceOf[Point]
   
   // Comparison
   /** Returns the given Point that is earlier in the buffer. */
-  @scala.inline
-  def min(point1: PointCompatible, point2: PointCompatible): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Point]
+  inline def min(point1: PointCompatible, point2: PointCompatible): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Point]
 }

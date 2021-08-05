@@ -12,22 +12,17 @@ trait IDeleteOperationRequest extends StObject {
 }
 object IDeleteOperationRequest {
   
-  @scala.inline
-  def apply(): IDeleteOperationRequest = {
+  inline def apply(): IDeleteOperationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDeleteOperationRequest]
   }
   
-  @scala.inline
-  implicit class IDeleteOperationRequestMutableBuilder[Self <: IDeleteOperationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IDeleteOperationRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

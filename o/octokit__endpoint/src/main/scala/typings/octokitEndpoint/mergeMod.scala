@@ -13,28 +13,16 @@ object mergeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def merge(): EndpointDefaults = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: Null, route: Unit, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: Null, route: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: Null, route: RequestParameters, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: Null, route: Route): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: Null, route: Route, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: EndpointDefaults): EndpointDefaults = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any]).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: EndpointDefaults, route: Unit, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: EndpointDefaults, route: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: EndpointDefaults, route: RequestParameters, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: EndpointDefaults, route: Route): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
-  @scala.inline
-  def merge(defaults: EndpointDefaults, route: Route, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(): EndpointDefaults = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")().asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: Null, route: Unit, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: Null, route: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: Null, route: RequestParameters, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: Null, route: Route): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: Null, route: Route, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: EndpointDefaults): EndpointDefaults = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any]).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: EndpointDefaults, route: Unit, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: EndpointDefaults, route: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: EndpointDefaults, route: RequestParameters, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: EndpointDefaults, route: Route): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
+  inline def merge(defaults: EndpointDefaults, route: Route, options: RequestParameters): EndpointDefaults = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(defaults.asInstanceOf[js.Any], route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EndpointDefaults]
 }

@@ -24,28 +24,21 @@ trait ListenerRuleActionFixedResponse extends StObject {
 }
 object ListenerRuleActionFixedResponse {
   
-  @scala.inline
-  def apply(contentType: Input[String]): ListenerRuleActionFixedResponse = {
+  inline def apply(contentType: Input[String]): ListenerRuleActionFixedResponse = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleActionFixedResponse]
   }
   
-  @scala.inline
-  implicit class ListenerRuleActionFixedResponseMutableBuilder[Self <: ListenerRuleActionFixedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleActionFixedResponse](x: Self) {
     
-    @scala.inline
-    def setContentType(value: Input[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: Input[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageBody(value: Input[String]): Self = StObject.set(x, "messageBody", value.asInstanceOf[js.Any])
+    inline def setMessageBody(value: Input[String]): Self = StObject.set(x, "messageBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageBodyUndefined: Self = StObject.set(x, "messageBody", js.undefined)
+    inline def setMessageBodyUndefined: Self = StObject.set(x, "messageBody", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Input[String]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

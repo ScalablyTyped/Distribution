@@ -57,8 +57,7 @@ object typesAddPermissionInputMod {
   }
   object AddPermissionInput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AWSAccountIds: js.Array[String] | Iterable[String],
       Actions: js.Array[String] | Iterable[String],
       Label: String,
@@ -68,46 +67,33 @@ object typesAddPermissionInputMod {
       __obj.asInstanceOf[AddPermissionInput]
     }
     
-    @scala.inline
-    implicit class AddPermissionInputMutableBuilder[Self <: AddPermissionInput] (val x: Self) extends AnyVal {
+    extension [Self <: AddPermissionInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setAWSAccountIds(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AWSAccountIds", value.asInstanceOf[js.Any])
+      inline def setAWSAccountIds(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AWSAccountIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAWSAccountIdsVarargs(value: String*): Self = StObject.set(x, "AWSAccountIds", js.Array(value :_*))
+      inline def setAWSAccountIdsVarargs(value: String*): Self = StObject.set(x, "AWSAccountIds", js.Array(value :_*))
       
-      @scala.inline
-      def setActions(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: String*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: String*): Self = StObject.set(x, "Actions", js.Array(value :_*))
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+      inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     }
   }
 }

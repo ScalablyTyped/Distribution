@@ -82,13 +82,12 @@ trait PageSetup extends StObject {
   
   var VerticalAlignment: WdVerticalAlignment
   
-  @JSName("Word.PageSetup_typekey")
+  /* private */ @JSName("Word.PageSetup_typekey")
   var WordDotPageSetup_typekey: PageSetup
 }
 object PageSetup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BookFoldPrinting: Boolean,
     BookFoldPrintingSheets: Double,
@@ -134,124 +133,84 @@ object PageSetup {
     __obj.asInstanceOf[PageSetup]
   }
   
-  @scala.inline
-  implicit class PageSetupMutableBuilder[Self <: PageSetup] (val x: Self) extends AnyVal {
+  extension [Self <: PageSetup](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookFoldPrinting(value: Boolean): Self = StObject.set(x, "BookFoldPrinting", value.asInstanceOf[js.Any])
+    inline def setBookFoldPrinting(value: Boolean): Self = StObject.set(x, "BookFoldPrinting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookFoldPrintingSheets(value: Double): Self = StObject.set(x, "BookFoldPrintingSheets", value.asInstanceOf[js.Any])
+    inline def setBookFoldPrintingSheets(value: Double): Self = StObject.set(x, "BookFoldPrintingSheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookFoldRevPrinting(value: Boolean): Self = StObject.set(x, "BookFoldRevPrinting", value.asInstanceOf[js.Any])
+    inline def setBookFoldRevPrinting(value: Boolean): Self = StObject.set(x, "BookFoldRevPrinting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
+    inline def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharsLine(value: Double): Self = StObject.set(x, "CharsLine", value.asInstanceOf[js.Any])
+    inline def setCharsLine(value: Double): Self = StObject.set(x, "CharsLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDifferentFirstPageHeaderFooter(value: Double): Self = StObject.set(x, "DifferentFirstPageHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setDifferentFirstPageHeaderFooter(value: Double): Self = StObject.set(x, "DifferentFirstPageHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPageTray(value: WdPaperTray): Self = StObject.set(x, "FirstPageTray", value.asInstanceOf[js.Any])
+    inline def setFirstPageTray(value: WdPaperTray): Self = StObject.set(x, "FirstPageTray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterDistance(value: Double): Self = StObject.set(x, "FooterDistance", value.asInstanceOf[js.Any])
+    inline def setFooterDistance(value: Double): Self = StObject.set(x, "FooterDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutter(value: Double): Self = StObject.set(x, "Gutter", value.asInstanceOf[js.Any])
+    inline def setGutter(value: Double): Self = StObject.set(x, "Gutter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutterOnTop(value: Boolean): Self = StObject.set(x, "GutterOnTop", value.asInstanceOf[js.Any])
+    inline def setGutterOnTop(value: Boolean): Self = StObject.set(x, "GutterOnTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutterPos(value: WdGutterStyle): Self = StObject.set(x, "GutterPos", value.asInstanceOf[js.Any])
+    inline def setGutterPos(value: WdGutterStyle): Self = StObject.set(x, "GutterPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutterStyle(value: WdGutterStyleOld): Self = StObject.set(x, "GutterStyle", value.asInstanceOf[js.Any])
+    inline def setGutterStyle(value: WdGutterStyleOld): Self = StObject.set(x, "GutterStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderDistance(value: Double): Self = StObject.set(x, "HeaderDistance", value.asInstanceOf[js.Any])
+    inline def setHeaderDistance(value: Double): Self = StObject.set(x, "HeaderDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutMode(value: WdLayoutMode): Self = StObject.set(x, "LayoutMode", value.asInstanceOf[js.Any])
+    inline def setLayoutMode(value: WdLayoutMode): Self = StObject.set(x, "LayoutMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
+    inline def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumbering(value: LineNumbering): Self = StObject.set(x, "LineNumbering", value.asInstanceOf[js.Any])
+    inline def setLineNumbering(value: LineNumbering): Self = StObject.set(x, "LineNumbering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesPage(value: Double): Self = StObject.set(x, "LinesPage", value.asInstanceOf[js.Any])
+    inline def setLinesPage(value: Double): Self = StObject.set(x, "LinesPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirrorMargins(value: Double): Self = StObject.set(x, "MirrorMargins", value.asInstanceOf[js.Any])
+    inline def setMirrorMargins(value: Double): Self = StObject.set(x, "MirrorMargins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOddAndEvenPagesHeaderFooter(value: Double): Self = StObject.set(x, "OddAndEvenPagesHeaderFooter", value.asInstanceOf[js.Any])
+    inline def setOddAndEvenPagesHeaderFooter(value: Double): Self = StObject.set(x, "OddAndEvenPagesHeaderFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: WdOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: WdOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherPagesTray(value: WdPaperTray): Self = StObject.set(x, "OtherPagesTray", value.asInstanceOf[js.Any])
+    inline def setOtherPagesTray(value: WdPaperTray): Self = StObject.set(x, "OtherPagesTray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageHeight(value: Double): Self = StObject.set(x, "PageHeight", value.asInstanceOf[js.Any])
+    inline def setPageHeight(value: Double): Self = StObject.set(x, "PageHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageWidth(value: Double): Self = StObject.set(x, "PageWidth", value.asInstanceOf[js.Any])
+    inline def setPageWidth(value: Double): Self = StObject.set(x, "PageWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperSize(value: WdPaperSize): Self = StObject.set(x, "PaperSize", value.asInstanceOf[js.Any])
+    inline def setPaperSize(value: WdPaperSize): Self = StObject.set(x, "PaperSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
+    inline def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionDirection(value: WdSectionDirection): Self = StObject.set(x, "SectionDirection", value.asInstanceOf[js.Any])
+    inline def setSectionDirection(value: WdSectionDirection): Self = StObject.set(x, "SectionDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionStart(value: WdSectionStart): Self = StObject.set(x, "SectionStart", value.asInstanceOf[js.Any])
+    inline def setSectionStart(value: WdSectionStart): Self = StObject.set(x, "SectionStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAsTemplateDefault(value: () => Unit): Self = StObject.set(x, "SetAsTemplateDefault", js.Any.fromFunction0(value))
+    inline def setSetAsTemplateDefault(value: () => Unit): Self = StObject.set(x, "SetAsTemplateDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowGrid(value: Boolean): Self = StObject.set(x, "ShowGrid", value.asInstanceOf[js.Any])
+    inline def setShowGrid(value: Boolean): Self = StObject.set(x, "ShowGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressEndnotes(value: Double): Self = StObject.set(x, "SuppressEndnotes", value.asInstanceOf[js.Any])
+    inline def setSuppressEndnotes(value: Double): Self = StObject.set(x, "SuppressEndnotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColumns(value: TextColumns): Self = StObject.set(x, "TextColumns", value.asInstanceOf[js.Any])
+    inline def setTextColumns(value: TextColumns): Self = StObject.set(x, "TextColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTogglePortrait(value: () => Unit): Self = StObject.set(x, "TogglePortrait", js.Any.fromFunction0(value))
+    inline def setTogglePortrait(value: () => Unit): Self = StObject.set(x, "TogglePortrait", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
+    inline def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoPagesOnOne(value: Boolean): Self = StObject.set(x, "TwoPagesOnOne", value.asInstanceOf[js.Any])
+    inline def setTwoPagesOnOne(value: Boolean): Self = StObject.set(x, "TwoPagesOnOne", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignment(value: WdVerticalAlignment): Self = StObject.set(x, "VerticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: WdVerticalAlignment): Self = StObject.set(x, "VerticalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotPageSetup_typekey(value: PageSetup): Self = StObject.set(x, "Word.PageSetup_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotPageSetup_typekey(value: PageSetup): Self = StObject.set(x, "Word.PageSetup_typekey", value.asInstanceOf[js.Any])
   }
 }

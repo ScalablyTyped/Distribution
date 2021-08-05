@@ -78,80 +78,56 @@ object Seamless {
   }
   object ConnectOptions {
     
-    @scala.inline
-    def apply(): ConnectOptions = {
+    inline def apply(): ConnectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    @scala.inline
-    implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectOptions](x: Self) {
       
-      @scala.inline
-      def setAllowAppendedStyleInjection(value: Boolean): Self = StObject.set(x, "allowAppendedStyleInjection", value.asInstanceOf[js.Any])
+      inline def setAllowAppendedStyleInjection(value: Boolean): Self = StObject.set(x, "allowAppendedStyleInjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowAppendedStyleInjectionUndefined: Self = StObject.set(x, "allowAppendedStyleInjection", js.undefined)
+      inline def setAllowAppendedStyleInjectionUndefined: Self = StObject.set(x, "allowAppendedStyleInjection", js.undefined)
       
-      @scala.inline
-      def setAllowStyleInjection(value: Boolean): Self = StObject.set(x, "allowStyleInjection", value.asInstanceOf[js.Any])
+      inline def setAllowStyleInjection(value: Boolean): Self = StObject.set(x, "allowStyleInjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowStyleInjectionUndefined: Self = StObject.set(x, "allowStyleInjection", js.undefined)
+      inline def setAllowStyleInjectionUndefined: Self = StObject.set(x, "allowStyleInjection", js.undefined)
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setCookieFallbackAfterMsg(value: String): Self = StObject.set(x, "cookieFallbackAfterMsg", value.asInstanceOf[js.Any])
+      inline def setCookieFallbackAfterMsg(value: String): Self = StObject.set(x, "cookieFallbackAfterMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieFallbackAfterMsgUndefined: Self = StObject.set(x, "cookieFallbackAfterMsg", js.undefined)
+      inline def setCookieFallbackAfterMsgUndefined: Self = StObject.set(x, "cookieFallbackAfterMsg", js.undefined)
       
-      @scala.inline
-      def setCookieFallbackLinkMsg(value: String): Self = StObject.set(x, "cookieFallbackLinkMsg", value.asInstanceOf[js.Any])
+      inline def setCookieFallbackLinkMsg(value: String): Self = StObject.set(x, "cookieFallbackLinkMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieFallbackLinkMsgUndefined: Self = StObject.set(x, "cookieFallbackLinkMsg", js.undefined)
+      inline def setCookieFallbackLinkMsgUndefined: Self = StObject.set(x, "cookieFallbackLinkMsg", js.undefined)
       
-      @scala.inline
-      def setCookieFallbackMsg(value: String): Self = StObject.set(x, "cookieFallbackMsg", value.asInstanceOf[js.Any])
+      inline def setCookieFallbackMsg(value: String): Self = StObject.set(x, "cookieFallbackMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieFallbackMsgUndefined: Self = StObject.set(x, "cookieFallbackMsg", js.undefined)
+      inline def setCookieFallbackMsgUndefined: Self = StObject.set(x, "cookieFallbackMsg", js.undefined)
       
-      @scala.inline
-      def setOnConnect(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
+      inline def setOnConnect(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+      inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
+      inline def setOnUpdate(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setRequireCookies(value: Boolean): Self = StObject.set(x, "requireCookies", value.asInstanceOf[js.Any])
+      inline def setRequireCookies(value: Boolean): Self = StObject.set(x, "requireCookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireCookiesUndefined: Self = StObject.set(x, "requireCookies", js.undefined)
+      inline def setRequireCookiesUndefined: Self = StObject.set(x, "requireCookies", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: Double): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Double): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -270,119 +246,82 @@ object Seamless {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackLinkAfter(value: String): Self = StObject.set(x, "fallbackLinkAfter", value.asInstanceOf[js.Any])
+      inline def setFallbackLinkAfter(value: String): Self = StObject.set(x, "fallbackLinkAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackLinkAfterUndefined: Self = StObject.set(x, "fallbackLinkAfter", js.undefined)
+      inline def setFallbackLinkAfterUndefined: Self = StObject.set(x, "fallbackLinkAfter", js.undefined)
       
-      @scala.inline
-      def setFallbackLinkHoverStyles(value: js.Array[String]): Self = StObject.set(x, "fallbackLinkHoverStyles", value.asInstanceOf[js.Any])
+      inline def setFallbackLinkHoverStyles(value: js.Array[String]): Self = StObject.set(x, "fallbackLinkHoverStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackLinkHoverStylesUndefined: Self = StObject.set(x, "fallbackLinkHoverStyles", js.undefined)
+      inline def setFallbackLinkHoverStylesUndefined: Self = StObject.set(x, "fallbackLinkHoverStyles", js.undefined)
       
-      @scala.inline
-      def setFallbackLinkHoverStylesVarargs(value: String*): Self = StObject.set(x, "fallbackLinkHoverStyles", js.Array(value :_*))
+      inline def setFallbackLinkHoverStylesVarargs(value: String*): Self = StObject.set(x, "fallbackLinkHoverStyles", js.Array(value :_*))
       
-      @scala.inline
-      def setFallbackLinkStyles(value: js.Array[String]): Self = StObject.set(x, "fallbackLinkStyles", value.asInstanceOf[js.Any])
+      inline def setFallbackLinkStyles(value: js.Array[String]): Self = StObject.set(x, "fallbackLinkStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackLinkStylesUndefined: Self = StObject.set(x, "fallbackLinkStyles", js.undefined)
+      inline def setFallbackLinkStylesUndefined: Self = StObject.set(x, "fallbackLinkStyles", js.undefined)
       
-      @scala.inline
-      def setFallbackLinkStylesVarargs(value: String*): Self = StObject.set(x, "fallbackLinkStyles", js.Array(value :_*))
+      inline def setFallbackLinkStylesVarargs(value: String*): Self = StObject.set(x, "fallbackLinkStyles", js.Array(value :_*))
       
-      @scala.inline
-      def setFallbackLinkText(value: String): Self = StObject.set(x, "fallbackLinkText", value.asInstanceOf[js.Any])
+      inline def setFallbackLinkText(value: String): Self = StObject.set(x, "fallbackLinkText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackLinkTextUndefined: Self = StObject.set(x, "fallbackLinkText", js.undefined)
+      inline def setFallbackLinkTextUndefined: Self = StObject.set(x, "fallbackLinkText", js.undefined)
       
-      @scala.inline
-      def setFallbackParams(value: String): Self = StObject.set(x, "fallbackParams", value.asInstanceOf[js.Any])
+      inline def setFallbackParams(value: String): Self = StObject.set(x, "fallbackParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackParamsUndefined: Self = StObject.set(x, "fallbackParams", js.undefined)
+      inline def setFallbackParamsUndefined: Self = StObject.set(x, "fallbackParams", js.undefined)
       
-      @scala.inline
-      def setFallbackStyles(value: js.Array[String]): Self = StObject.set(x, "fallbackStyles", value.asInstanceOf[js.Any])
+      inline def setFallbackStyles(value: js.Array[String]): Self = StObject.set(x, "fallbackStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackStylesUndefined: Self = StObject.set(x, "fallbackStyles", js.undefined)
+      inline def setFallbackStylesUndefined: Self = StObject.set(x, "fallbackStyles", js.undefined)
       
-      @scala.inline
-      def setFallbackStylesVarargs(value: String*): Self = StObject.set(x, "fallbackStyles", js.Array(value :_*))
+      inline def setFallbackStylesVarargs(value: String*): Self = StObject.set(x, "fallbackStyles", js.Array(value :_*))
       
-      @scala.inline
-      def setFallbackText(value: String): Self = StObject.set(x, "fallbackText", value.asInstanceOf[js.Any])
+      inline def setFallbackText(value: String): Self = StObject.set(x, "fallbackText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackTextUndefined: Self = StObject.set(x, "fallbackText", js.undefined)
+      inline def setFallbackTextUndefined: Self = StObject.set(x, "fallbackText", js.undefined)
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setFallbackWindowHeight(value: Double): Self = StObject.set(x, "fallbackWindowHeight", value.asInstanceOf[js.Any])
+      inline def setFallbackWindowHeight(value: Double): Self = StObject.set(x, "fallbackWindowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackWindowHeightUndefined: Self = StObject.set(x, "fallbackWindowHeight", js.undefined)
+      inline def setFallbackWindowHeightUndefined: Self = StObject.set(x, "fallbackWindowHeight", js.undefined)
       
-      @scala.inline
-      def setFallbackWindowWidth(value: Double): Self = StObject.set(x, "fallbackWindowWidth", value.asInstanceOf[js.Any])
+      inline def setFallbackWindowWidth(value: Double): Self = StObject.set(x, "fallbackWindowWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackWindowWidthUndefined: Self = StObject.set(x, "fallbackWindowWidth", js.undefined)
+      inline def setFallbackWindowWidthUndefined: Self = StObject.set(x, "fallbackWindowWidth", js.undefined)
       
-      @scala.inline
-      def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setOnConnect(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
+      inline def setOnConnect(value: /* data */ js.Any => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConnectNull: Self = StObject.set(x, "onConnect", null)
+      inline def setOnConnectNull: Self = StObject.set(x, "onConnect", null)
       
-      @scala.inline
-      def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+      inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      @scala.inline
-      def setShowLoadingIndicator(value: Boolean): Self = StObject.set(x, "showLoadingIndicator", value.asInstanceOf[js.Any])
+      inline def setShowLoadingIndicator(value: Boolean): Self = StObject.set(x, "showLoadingIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLoadingIndicatorUndefined: Self = StObject.set(x, "showLoadingIndicator", js.undefined)
+      inline def setShowLoadingIndicatorUndefined: Self = StObject.set(x, "showLoadingIndicator", js.undefined)
       
-      @scala.inline
-      def setSpinner(value: String): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
+      inline def setSpinner(value: String): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnerUndefined: Self = StObject.set(x, "spinner", js.undefined)
+      inline def setSpinnerUndefined: Self = StObject.set(x, "spinner", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
     }
   }
   
@@ -415,20 +354,16 @@ object Seamless {
   }
   object Static {
     
-    @scala.inline
-    def apply(connect: ConnectOptions => Connection, options: ConnectOptions): Static = {
+    inline def apply(connect: ConnectOptions => Connection, options: ConnectOptions): Static = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction1(connect), options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Static]
     }
     
-    @scala.inline
-    implicit class StaticMutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+    extension [Self <: Static](x: Self) {
       
-      @scala.inline
-      def setConnect(value: ConnectOptions => Connection): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+      inline def setConnect(value: ConnectOptions => Connection): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: ConnectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ConnectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

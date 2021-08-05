@@ -23,25 +23,19 @@ trait SqsAction extends StObject {
 }
 object SqsAction {
   
-  @scala.inline
-  def apply(queueUrl: QueueUrl, roleArn: AwsArn): SqsAction = {
+  inline def apply(queueUrl: QueueUrl, roleArn: AwsArn): SqsAction = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqsAction]
   }
   
-  @scala.inline
-  implicit class SqsActionMutableBuilder[Self <: SqsAction] (val x: Self) extends AnyVal {
+  extension [Self <: SqsAction](x: Self) {
     
-    @scala.inline
-    def setQueueUrl(value: QueueUrl): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: QueueUrl): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBase64(value: UseBase64): Self = StObject.set(x, "useBase64", value.asInstanceOf[js.Any])
+    inline def setUseBase64(value: UseBase64): Self = StObject.set(x, "useBase64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBase64Undefined: Self = StObject.set(x, "useBase64", js.undefined)
+    inline def setUseBase64Undefined: Self = StObject.set(x, "useBase64", js.undefined)
   }
 }

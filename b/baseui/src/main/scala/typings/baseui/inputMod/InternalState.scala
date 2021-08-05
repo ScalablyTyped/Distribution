@@ -12,25 +12,19 @@ trait InternalState extends StObject {
 }
 object InternalState {
   
-  @scala.inline
-  def apply(): InternalState = {
+  inline def apply(): InternalState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InternalState]
   }
   
-  @scala.inline
-  implicit class InternalStateMutableBuilder[Self <: InternalState] (val x: Self) extends AnyVal {
+  extension [Self <: InternalState](x: Self) {
     
-    @scala.inline
-    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+    inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
+    inline def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
     
-    @scala.inline
-    def setIsMasked(value: Boolean): Self = StObject.set(x, "isMasked", value.asInstanceOf[js.Any])
+    inline def setIsMasked(value: Boolean): Self = StObject.set(x, "isMasked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMaskedUndefined: Self = StObject.set(x, "isMasked", js.undefined)
+    inline def setIsMaskedUndefined: Self = StObject.set(x, "isMasked", js.undefined)
   }
 }

@@ -43,64 +43,45 @@ trait AutoSetAxis extends StObject {
 }
 object AutoSetAxis {
   
-  @scala.inline
-  def apply(): AutoSetAxis = {
+  inline def apply(): AutoSetAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoSetAxis]
   }
   
-  @scala.inline
-  implicit class AutoSetAxisMutableBuilder[Self <: AutoSetAxis] (val x: Self) extends AnyVal {
+  extension [Self <: AutoSetAxis](x: Self) {
     
-    @scala.inline
-    def setAutoSetAxis(value: Boolean): Self = StObject.set(x, "autoSetAxis", value.asInstanceOf[js.Any])
+    inline def setAutoSetAxis(value: Boolean): Self = StObject.set(x, "autoSetAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSetAxisUndefined: Self = StObject.set(x, "autoSetAxis", js.undefined)
+    inline def setAutoSetAxisUndefined: Self = StObject.set(x, "autoSetAxis", js.undefined)
     
-    @scala.inline
-    def setColTitle(value: OffsetY): Self = StObject.set(x, "colTitle", value.asInstanceOf[js.Any])
+    inline def setColTitle(value: OffsetY): Self = StObject.set(x, "colTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColTitleNull: Self = StObject.set(x, "colTitle", null)
+    inline def setColTitleNull: Self = StObject.set(x, "colTitle", null)
     
-    @scala.inline
-    def setColTitleUndefined: Self = StObject.set(x, "colTitle", js.undefined)
+    inline def setColTitleUndefined: Self = StObject.set(x, "colTitle", js.undefined)
     
-    @scala.inline
-    def setEachView(value: (/* view */ View, /* facet */ js.Any) => Unit): Self = StObject.set(x, "eachView", js.Any.fromFunction2(value))
+    inline def setEachView(value: (/* view */ View, /* facet */ js.Any) => Unit): Self = StObject.set(x, "eachView", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachViewUndefined: Self = StObject.set(x, "eachView", js.undefined)
+    inline def setEachViewUndefined: Self = StObject.set(x, "eachView", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setRowTitle(value: OffsetX): Self = StObject.set(x, "rowTitle", value.asInstanceOf[js.Any])
+    inline def setRowTitle(value: OffsetX): Self = StObject.set(x, "rowTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowTitleNull: Self = StObject.set(x, "rowTitle", null)
+    inline def setRowTitleNull: Self = StObject.set(x, "rowTitle", null)
     
-    @scala.inline
-    def setRowTitleUndefined: Self = StObject.set(x, "rowTitle", js.undefined)
+    inline def setRowTitleUndefined: Self = StObject.set(x, "rowTitle", js.undefined)
     
-    @scala.inline
-    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
+    inline def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
+    inline def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
   }
 }

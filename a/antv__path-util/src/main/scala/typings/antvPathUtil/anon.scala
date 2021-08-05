@@ -28,8 +28,7 @@ object anon {
   }
   object ArcFlag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arcFlag: js.Any,
       cx: Double,
       cy: Double,
@@ -44,35 +43,25 @@ object anon {
       __obj.asInstanceOf[ArcFlag]
     }
     
-    @scala.inline
-    implicit class ArcFlagMutableBuilder[Self <: ArcFlag] (val x: Self) extends AnyVal {
+    extension [Self <: ArcFlag](x: Self) {
       
-      @scala.inline
-      def setArcFlag(value: js.Any): Self = StObject.set(x, "arcFlag", value.asInstanceOf[js.Any])
+      inline def setArcFlag(value: js.Any): Self = StObject.set(x, "arcFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+      inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+      inline def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRx(value: js.Any): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+      inline def setRx(value: js.Any): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRy(value: js.Any): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+      inline def setRy(value: js.Any): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSweepFlag(value: js.Any): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
+      inline def setSweepFlag(value: js.Any): Self = StObject.set(x, "sweepFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXRotation(value: Double): Self = StObject.set(x, "xRotation", value.asInstanceOf[js.Any])
+      inline def setXRotation(value: Double): Self = StObject.set(x, "xRotation", value.asInstanceOf[js.Any])
     }
   }
 }

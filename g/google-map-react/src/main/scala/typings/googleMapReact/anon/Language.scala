@@ -14,34 +14,25 @@ trait Language extends StObject {
 }
 object Language {
   
-  @scala.inline
-  def apply(): Language = {
+  inline def apply(): Language = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Language]
   }
   
-  @scala.inline
-  implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
+  extension [Self <: Language](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLibraries(value: js.Array[String] | String): Self = StObject.set(x, "libraries", value.asInstanceOf[js.Any])
+    inline def setLibraries(value: js.Array[String] | String): Self = StObject.set(x, "libraries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibrariesUndefined: Self = StObject.set(x, "libraries", js.undefined)
+    inline def setLibrariesUndefined: Self = StObject.set(x, "libraries", js.undefined)
     
-    @scala.inline
-    def setLibrariesVarargs(value: String*): Self = StObject.set(x, "libraries", js.Array(value :_*))
+    inline def setLibrariesVarargs(value: String*): Self = StObject.set(x, "libraries", js.Array(value :_*))
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

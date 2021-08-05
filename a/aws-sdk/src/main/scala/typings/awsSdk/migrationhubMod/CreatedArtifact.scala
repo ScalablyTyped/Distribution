@@ -18,22 +18,17 @@ trait CreatedArtifact extends StObject {
 }
 object CreatedArtifact {
   
-  @scala.inline
-  def apply(Name: CreatedArtifactName): CreatedArtifact = {
+  inline def apply(Name: CreatedArtifactName): CreatedArtifact = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatedArtifact]
   }
   
-  @scala.inline
-  implicit class CreatedArtifactMutableBuilder[Self <: CreatedArtifact] (val x: Self) extends AnyVal {
+  extension [Self <: CreatedArtifact](x: Self) {
     
-    @scala.inline
-    def setDescription(value: CreatedArtifactDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: CreatedArtifactDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: CreatedArtifactName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CreatedArtifactName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

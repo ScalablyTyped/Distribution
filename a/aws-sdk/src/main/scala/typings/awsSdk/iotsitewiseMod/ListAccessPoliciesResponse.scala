@@ -18,25 +18,19 @@ trait ListAccessPoliciesResponse extends StObject {
 }
 object ListAccessPoliciesResponse {
   
-  @scala.inline
-  def apply(accessPolicySummaries: AccessPolicySummaries): ListAccessPoliciesResponse = {
+  inline def apply(accessPolicySummaries: AccessPolicySummaries): ListAccessPoliciesResponse = {
     val __obj = js.Dynamic.literal(accessPolicySummaries = accessPolicySummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccessPoliciesResponse]
   }
   
-  @scala.inline
-  implicit class ListAccessPoliciesResponseMutableBuilder[Self <: ListAccessPoliciesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccessPoliciesResponse](x: Self) {
     
-    @scala.inline
-    def setAccessPolicySummaries(value: AccessPolicySummaries): Self = StObject.set(x, "accessPolicySummaries", value.asInstanceOf[js.Any])
+    inline def setAccessPolicySummaries(value: AccessPolicySummaries): Self = StObject.set(x, "accessPolicySummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicySummariesVarargs(value: AccessPolicySummary*): Self = StObject.set(x, "accessPolicySummaries", js.Array(value :_*))
+    inline def setAccessPolicySummariesVarargs(value: AccessPolicySummary*): Self = StObject.set(x, "accessPolicySummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

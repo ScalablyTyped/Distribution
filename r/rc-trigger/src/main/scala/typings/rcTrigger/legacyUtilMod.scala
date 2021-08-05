@@ -13,8 +13,7 @@ object legacyUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getMotion(hasPrefixClsMotionAnimationTransitionName: GetMotionProps): CSSMotionProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getMotion")(hasPrefixClsMotionAnimationTransitionName.asInstanceOf[js.Any]).asInstanceOf[CSSMotionProps]
+  inline def getMotion(hasPrefixClsMotionAnimationTransitionName: GetMotionProps): CSSMotionProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getMotion")(hasPrefixClsMotionAnimationTransitionName.asInstanceOf[js.Any]).asInstanceOf[CSSMotionProps]
   
   trait GetMotionProps extends StObject {
     
@@ -28,8 +27,7 @@ object legacyUtilMod {
   }
   object GetMotionProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animation: AnimationType,
       motion: CSSMotionProps,
       prefixCls: String,
@@ -39,20 +37,15 @@ object legacyUtilMod {
       __obj.asInstanceOf[GetMotionProps]
     }
     
-    @scala.inline
-    implicit class GetMotionPropsMutableBuilder[Self <: GetMotionProps] (val x: Self) extends AnyVal {
+    extension [Self <: GetMotionProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: AnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: AnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+      inline def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionName(value: TransitionNameType): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+      inline def setTransitionName(value: TransitionNameType): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
     }
   }
 }

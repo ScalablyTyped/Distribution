@@ -13,17 +13,14 @@ object DataTables {
   }
   object Api {
     
-    @scala.inline
-    def apply(fixedHeader: FixedHeaderApi): Api = {
+    inline def apply(fixedHeader: FixedHeaderApi): Api = {
       val __obj = js.Dynamic.literal(fixedHeader = fixedHeader.asInstanceOf[js.Any])
       __obj.asInstanceOf[Api]
     }
     
-    @scala.inline
-    implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+    extension [Self <: Api](x: Self) {
       
-      @scala.inline
-      def setFixedHeader(value: FixedHeaderApi): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+      inline def setFixedHeader(value: FixedHeaderApi): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,8 +53,7 @@ object DataTables {
   }
   object FixedHeaderApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adjust: () => Api,
       disable: () => Api,
       enable: Boolean => Api,
@@ -68,23 +64,17 @@ object DataTables {
       __obj.asInstanceOf[FixedHeaderApi]
     }
     
-    @scala.inline
-    implicit class FixedHeaderApiMutableBuilder[Self <: FixedHeaderApi] (val x: Self) extends AnyVal {
+    extension [Self <: FixedHeaderApi](x: Self) {
       
-      @scala.inline
-      def setAdjust(value: () => Api): Self = StObject.set(x, "adjust", js.Any.fromFunction0(value))
+      inline def setAdjust(value: () => Api): Self = StObject.set(x, "adjust", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisable(value: () => Api): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => Api): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: Boolean => Api): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+      inline def setEnable(value: Boolean => Api): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFooterOffset(value: Double => Api): Self = StObject.set(x, "footerOffset", js.Any.fromFunction1(value))
+      inline def setFooterOffset(value: Double => Api): Self = StObject.set(x, "footerOffset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeaderOffset(value: Double => Api): Self = StObject.set(x, "headerOffset", js.Any.fromFunction1(value))
+      inline def setHeaderOffset(value: Double => Api): Self = StObject.set(x, "headerOffset", js.Any.fromFunction1(value))
     }
   }
   
@@ -115,38 +105,28 @@ object DataTables {
   }
   object FixedHeaderSettings {
     
-    @scala.inline
-    def apply(): FixedHeaderSettings = {
+    inline def apply(): FixedHeaderSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FixedHeaderSettings]
     }
     
-    @scala.inline
-    implicit class FixedHeaderSettingsMutableBuilder[Self <: FixedHeaderSettings] (val x: Self) extends AnyVal {
+    extension [Self <: FixedHeaderSettings](x: Self) {
       
-      @scala.inline
-      def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterOffset(value: Double): Self = StObject.set(x, "footerOffset", value.asInstanceOf[js.Any])
+      inline def setFooterOffset(value: Double): Self = StObject.set(x, "footerOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterOffsetUndefined: Self = StObject.set(x, "footerOffset", js.undefined)
+      inline def setFooterOffsetUndefined: Self = StObject.set(x, "footerOffset", js.undefined)
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderOffset(value: Double): Self = StObject.set(x, "headerOffset", value.asInstanceOf[js.Any])
+      inline def setHeaderOffset(value: Double): Self = StObject.set(x, "headerOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderOffsetUndefined: Self = StObject.set(x, "headerOffset", js.undefined)
+      inline def setHeaderOffsetUndefined: Self = StObject.set(x, "headerOffset", js.undefined)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
   
@@ -169,20 +149,16 @@ object DataTables {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setFixedHeader(value: Boolean | FixedHeaderSettings): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+      inline def setFixedHeader(value: Boolean | FixedHeaderSettings): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+      inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
     }
   }
   
@@ -192,17 +168,14 @@ object DataTables {
   }
   object StaticFunctions {
     
-    @scala.inline
-    def apply(FixedHeader: FixedHeaderStaticFunctions): StaticFunctions = {
+    inline def apply(FixedHeader: FixedHeaderStaticFunctions): StaticFunctions = {
       val __obj = js.Dynamic.literal(FixedHeader = FixedHeader.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticFunctions]
     }
     
-    @scala.inline
-    implicit class StaticFunctionsMutableBuilder[Self <: StaticFunctions] (val x: Self) extends AnyVal {
+    extension [Self <: StaticFunctions](x: Self) {
       
-      @scala.inline
-      def setFixedHeader(value: FixedHeaderStaticFunctions): Self = StObject.set(x, "FixedHeader", value.asInstanceOf[js.Any])
+      inline def setFixedHeader(value: FixedHeaderStaticFunctions): Self = StObject.set(x, "FixedHeader", value.asInstanceOf[js.Any])
     }
   }
 }

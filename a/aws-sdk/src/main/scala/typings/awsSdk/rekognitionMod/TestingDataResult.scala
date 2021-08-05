@@ -23,31 +23,23 @@ trait TestingDataResult extends StObject {
 }
 object TestingDataResult {
   
-  @scala.inline
-  def apply(): TestingDataResult = {
+  inline def apply(): TestingDataResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestingDataResult]
   }
   
-  @scala.inline
-  implicit class TestingDataResultMutableBuilder[Self <: TestingDataResult] (val x: Self) extends AnyVal {
+  extension [Self <: TestingDataResult](x: Self) {
     
-    @scala.inline
-    def setInput(value: TestingData): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: TestingData): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
-    @scala.inline
-    def setOutput(value: TestingData): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: TestingData): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
     
-    @scala.inline
-    def setValidation(value: ValidationData): Self = StObject.set(x, "Validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: ValidationData): Self = StObject.set(x, "Validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUndefined: Self = StObject.set(x, "Validation", js.undefined)
+    inline def setValidationUndefined: Self = StObject.set(x, "Validation", js.undefined)
   }
 }

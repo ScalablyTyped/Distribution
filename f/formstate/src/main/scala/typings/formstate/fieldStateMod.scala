@@ -26,11 +26,11 @@ object fieldStateMod {
     /**
       * Allows you to preserve the `_autoValidationEnabled` value across `reinit`s
       */
-    var _autoValidationDefault: Boolean = js.native
+    /* protected */ var _autoValidationDefault: Boolean = js.native
     
-    var _autoValidationEnabled: Boolean = js.native
+    /* protected */ var _autoValidationEnabled: Boolean = js.native
     
-    var _initValue: js.Any = js.native
+    /* private */ var _initValue: js.Any = js.native
     
     /* CompleteClass */
     @JSName("_on$Reinit")
@@ -52,7 +52,7 @@ object fieldStateMod {
     /* CompleteClass */
     override def _setCompositionParent(config: OnReinit): Unit = js.native
     
-    var _validators: js.Array[Validator[TValue]] = js.native
+    /* protected */ var _validators: js.Array[Validator[TValue]] = js.native
     
     /** If the field has been touched */
     var dirty: js.UndefOr[Boolean] = js.native
@@ -88,7 +88,7 @@ object fieldStateMod {
     def hasError_MFieldState: Boolean = js.native
     
     /** Trackers for validation */
-    var lastValidationRequest: Double = js.native
+    /* protected */ var lastValidationRequest: Double = js.native
     
     /** On change on the component side */
     def onChange(value: TValue): Unit = js.native
@@ -102,7 +102,7 @@ object fieldStateMod {
       */
     def onUpdate(handler: js.Function1[/* state */ FieldState[TValue], js.Any]): this.type = js.native
     
-    var preventNextQueuedValidation: Boolean = js.native
+    /* protected */ var preventNextQueuedValidation: Boolean = js.native
     
     /**
       * Runs validation with debouncing to keep the UI super smoothly responsive

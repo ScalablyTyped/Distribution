@@ -10,16 +10,13 @@ trait LoaderProps extends StObject {
 }
 object LoaderProps {
   
-  @scala.inline
-  def apply(bsSize: TypeaheadBsSizes): LoaderProps = {
+  inline def apply(bsSize: TypeaheadBsSizes): LoaderProps = {
     val __obj = js.Dynamic.literal(bsSize = bsSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderProps]
   }
   
-  @scala.inline
-  implicit class LoaderPropsMutableBuilder[Self <: LoaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: LoaderProps](x: Self) {
     
-    @scala.inline
-    def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+    inline def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
   }
 }

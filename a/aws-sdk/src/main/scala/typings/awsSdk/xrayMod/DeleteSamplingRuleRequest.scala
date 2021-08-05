@@ -18,25 +18,19 @@ trait DeleteSamplingRuleRequest extends StObject {
 }
 object DeleteSamplingRuleRequest {
   
-  @scala.inline
-  def apply(): DeleteSamplingRuleRequest = {
+  inline def apply(): DeleteSamplingRuleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSamplingRuleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSamplingRuleRequestMutableBuilder[Self <: DeleteSamplingRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSamplingRuleRequest](x: Self) {
     
-    @scala.inline
-    def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
+    inline def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
+    inline def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
     
-    @scala.inline
-    def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: String): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
+    inline def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
   }
 }

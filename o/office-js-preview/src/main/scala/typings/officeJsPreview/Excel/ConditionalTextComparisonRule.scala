@@ -35,8 +35,7 @@ trait ConditionalTextComparisonRule extends StObject {
 }
 object ConditionalTextComparisonRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     operator: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith,
     text: String
   ): ConditionalTextComparisonRule = {
@@ -44,13 +43,10 @@ object ConditionalTextComparisonRule {
     __obj.asInstanceOf[ConditionalTextComparisonRule]
   }
   
-  @scala.inline
-  implicit class ConditionalTextComparisonRuleMutableBuilder[Self <: ConditionalTextComparisonRule] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalTextComparisonRule](x: Self) {
     
-    @scala.inline
-    def setOperator(value: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

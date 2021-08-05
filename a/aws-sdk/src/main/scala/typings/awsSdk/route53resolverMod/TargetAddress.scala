@@ -18,22 +18,17 @@ trait TargetAddress extends StObject {
 }
 object TargetAddress {
   
-  @scala.inline
-  def apply(Ip: Ip): TargetAddress = {
+  inline def apply(Ip: Ip): TargetAddress = {
     val __obj = js.Dynamic.literal(Ip = Ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetAddress]
   }
   
-  @scala.inline
-  implicit class TargetAddressMutableBuilder[Self <: TargetAddress] (val x: Self) extends AnyVal {
+  extension [Self <: TargetAddress](x: Self) {
     
-    @scala.inline
-    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

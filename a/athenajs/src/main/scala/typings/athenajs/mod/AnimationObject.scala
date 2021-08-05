@@ -17,37 +17,27 @@ trait AnimationObject extends StObject {
 }
 object AnimationObject {
   
-  @scala.inline
-  def apply(frames: js.Array[Height]): AnimationObject = {
+  inline def apply(frames: js.Array[Height]): AnimationObject = {
     val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationObject]
   }
   
-  @scala.inline
-  implicit class AnimationObjectMutableBuilder[Self <: AnimationObject] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationObject](x: Self) {
     
-    @scala.inline
-    def setFrameDuration(value: Double): Self = StObject.set(x, "frameDuration", value.asInstanceOf[js.Any])
+    inline def setFrameDuration(value: Double): Self = StObject.set(x, "frameDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameDurationUndefined: Self = StObject.set(x, "frameDuration", js.undefined)
+    inline def setFrameDurationUndefined: Self = StObject.set(x, "frameDuration", js.undefined)
     
-    @scala.inline
-    def setFrames(value: js.Array[Height]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[Height]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesVarargs(value: Height*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Height*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
   }
 }

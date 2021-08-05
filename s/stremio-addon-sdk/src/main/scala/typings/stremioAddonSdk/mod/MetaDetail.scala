@@ -102,113 +102,78 @@ trait MetaDetail
 }
 object MetaDetail {
   
-  @scala.inline
-  def apply(id: String, name: String, `type`: ContentType): MetaDetail = {
+  inline def apply(id: String, name: String, `type`: ContentType): MetaDetail = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaDetail]
   }
   
-  @scala.inline
-  implicit class MetaDetailMutableBuilder[Self <: MetaDetail] (val x: Self) extends AnyVal {
+  extension [Self <: MetaDetail](x: Self) {
     
-    @scala.inline
-    def setAwards(value: String): Self = StObject.set(x, "awards", value.asInstanceOf[js.Any])
+    inline def setAwards(value: String): Self = StObject.set(x, "awards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwardsUndefined: Self = StObject.set(x, "awards", js.undefined)
+    inline def setAwardsUndefined: Self = StObject.set(x, "awards", js.undefined)
     
-    @scala.inline
-    def setBehaviourHints(value: DefaultVideo): Self = StObject.set(x, "behaviourHints", value.asInstanceOf[js.Any])
+    inline def setBehaviourHints(value: DefaultVideo): Self = StObject.set(x, "behaviourHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviourHintsUndefined: Self = StObject.set(x, "behaviourHints", js.undefined)
+    inline def setBehaviourHintsUndefined: Self = StObject.set(x, "behaviourHints", js.undefined)
     
-    @scala.inline
-    def setCast(value: js.Array[String]): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+    inline def setCast(value: js.Array[String]): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
+    inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
     
-    @scala.inline
-    def setCastVarargs(value: String*): Self = StObject.set(x, "cast", js.Array(value :_*))
+    inline def setCastVarargs(value: String*): Self = StObject.set(x, "cast", js.Array(value :_*))
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setDirector(value: js.Array[String]): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
+    inline def setDirector(value: js.Array[String]): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
+    inline def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
     
-    @scala.inline
-    def setDirectorVarargs(value: String*): Self = StObject.set(x, "director", js.Array(value :_*))
+    inline def setDirectorVarargs(value: String*): Self = StObject.set(x, "director", js.Array(value :_*))
     
-    @scala.inline
-    def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+    inline def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
+    inline def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
-    @scala.inline
-    def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
     
-    @scala.inline
-    def setImdbRating(value: String): Self = StObject.set(x, "imdbRating", value.asInstanceOf[js.Any])
+    inline def setImdbRating(value: String): Self = StObject.set(x, "imdbRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImdbRatingUndefined: Self = StObject.set(x, "imdbRating", js.undefined)
+    inline def setImdbRatingUndefined: Self = StObject.set(x, "imdbRating", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLinks(value: js.Array[MetaLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[MetaLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: MetaLink*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: MetaLink*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setReleaseInfo(value: String): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
+    inline def setReleaseInfo(value: String): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseInfoUndefined: Self = StObject.set(x, "releaseInfo", js.undefined)
+    inline def setReleaseInfoUndefined: Self = StObject.set(x, "releaseInfo", js.undefined)
     
-    @scala.inline
-    def setReleased(value: String): Self = StObject.set(x, "released", value.asInstanceOf[js.Any])
+    inline def setReleased(value: String): Self = StObject.set(x, "released", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleasedUndefined: Self = StObject.set(x, "released", js.undefined)
+    inline def setReleasedUndefined: Self = StObject.set(x, "released", js.undefined)
     
-    @scala.inline
-    def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+    inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+    inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
-    @scala.inline
-    def setVideos(value: js.Array[MetaVideo]): Self = StObject.set(x, "videos", value.asInstanceOf[js.Any])
+    inline def setVideos(value: js.Array[MetaVideo]): Self = StObject.set(x, "videos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideosUndefined: Self = StObject.set(x, "videos", js.undefined)
+    inline def setVideosUndefined: Self = StObject.set(x, "videos", js.undefined)
     
-    @scala.inline
-    def setVideosVarargs(value: MetaVideo*): Self = StObject.set(x, "videos", js.Array(value :_*))
+    inline def setVideosVarargs(value: MetaVideo*): Self = StObject.set(x, "videos", js.Array(value :_*))
     
-    @scala.inline
-    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+    inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+    inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

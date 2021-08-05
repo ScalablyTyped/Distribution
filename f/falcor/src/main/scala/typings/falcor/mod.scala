@@ -328,29 +328,19 @@ object mod {
     def dispose(): Unit = js.native
   }
   
-  @scala.inline
-  def atom(value: js.Any): Atom_ = ^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any]).asInstanceOf[Atom_]
-  @scala.inline
-  def atom(value: js.Any, props: Sentinel): Atom_ = (^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Atom_]
+  inline def atom(value: js.Any): Atom_ = ^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any]).asInstanceOf[Atom_]
+  inline def atom(value: js.Any, props: Sentinel): Atom_ = (^.asInstanceOf[js.Dynamic].applyDynamic("atom")(value.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Atom_]
   
-  @scala.inline
-  def error(errorValue: js.Any): Error_ = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any]).asInstanceOf[Error_]
-  @scala.inline
-  def error(errorValue: js.Any, props: Sentinel): Error_ = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error_]
+  inline def error(errorValue: js.Any): Error_ = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any]).asInstanceOf[Error_]
+  inline def error(errorValue: js.Any, props: Sentinel): Error_ = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(errorValue.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Error_]
   
-  @scala.inline
-  def pathValue(path: String, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
-  @scala.inline
-  def pathValue(path: PathSet, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
+  inline def pathValue(path: String, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
+  inline def pathValue(path: PathSet, value: js.Any): PathValue_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pathValue")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PathValue_]
   
-  @scala.inline
-  def ref(path: String): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
-  @scala.inline
-  def ref(path: String, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
-  @scala.inline
-  def ref(path: PathSet): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
-  @scala.inline
-  def ref(path: PathSet, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
+  inline def ref(path: String): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  inline def ref(path: String, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
+  inline def ref(path: PathSet): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  inline def ref(path: PathSet, props: Sentinel): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Reference]
   
   type ModelComparator = js.Function2[/* existingValue */ js.Any, /* newValue */ js.Any, Boolean]
   
@@ -376,56 +366,40 @@ object mod {
   }
   object ModelOptions {
     
-    @scala.inline
-    def apply(): ModelOptions = {
+    inline def apply(): ModelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModelOptions]
     }
     
-    @scala.inline
-    implicit class ModelOptionsMutableBuilder[Self <: ModelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ModelOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: JSONGraph): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: JSONGraph): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCollectRatio(value: Double): Self = StObject.set(x, "collectRatio", value.asInstanceOf[js.Any])
+      inline def setCollectRatio(value: Double): Self = StObject.set(x, "collectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollectRatioUndefined: Self = StObject.set(x, "collectRatio", js.undefined)
+      inline def setCollectRatioUndefined: Self = StObject.set(x, "collectRatio", js.undefined)
       
-      @scala.inline
-      def setComparator(value: (/* existingValue */ js.Any, /* newValue */ js.Any) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
+      inline def setComparator(value: (/* existingValue */ js.Any, /* newValue */ js.Any) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      @scala.inline
-      def setErrorSelector(value: /* jsonGraphError */ js.Any => js.Any): Self = StObject.set(x, "errorSelector", js.Any.fromFunction1(value))
+      inline def setErrorSelector(value: /* jsonGraphError */ js.Any => js.Any): Self = StObject.set(x, "errorSelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorSelectorUndefined: Self = StObject.set(x, "errorSelector", js.undefined)
+      inline def setErrorSelectorUndefined: Self = StObject.set(x, "errorSelector", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+      inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setSource(value: DataSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: DataSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -443,8 +417,7 @@ object mod {
   }
   object Scheduler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: js.Function1[/* exception */ js.Any, Boolean] => Scheduler,
       catchException: js.Function1[/* exception */ js.Any, Boolean] => Scheduler
     ): Scheduler = {
@@ -453,14 +426,11 @@ object mod {
       __obj.asInstanceOf[Scheduler]
     }
     
-    @scala.inline
-    implicit class SchedulerMutableBuilder[Self <: Scheduler] (val x: Self) extends AnyVal {
+    extension [Self <: Scheduler](x: Self) {
       
-      @scala.inline
-      def setCatch(value: js.Function1[/* exception */ js.Any, Boolean] => Scheduler): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
+      inline def setCatch(value: js.Function1[/* exception */ js.Any, Boolean] => Scheduler): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCatchException(value: js.Function1[/* exception */ js.Any, Boolean] => Scheduler): Self = StObject.set(x, "catchException", js.Any.fromFunction1(value))
+      inline def setCatchException(value: js.Function1[/* exception */ js.Any, Boolean] => Scheduler): Self = StObject.set(x, "catchException", js.Any.fromFunction1(value))
     }
   }
   

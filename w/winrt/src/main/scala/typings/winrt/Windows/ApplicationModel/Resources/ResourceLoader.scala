@@ -9,8 +9,7 @@ trait ResourceLoader
      with IResourceLoader
 object ResourceLoader {
   
-  @scala.inline
-  def apply(getString: String => String): ResourceLoader = {
+  inline def apply(getString: String => String): ResourceLoader = {
     val __obj = js.Dynamic.literal(getString = js.Any.fromFunction1(getString))
     __obj.asInstanceOf[ResourceLoader]
   }

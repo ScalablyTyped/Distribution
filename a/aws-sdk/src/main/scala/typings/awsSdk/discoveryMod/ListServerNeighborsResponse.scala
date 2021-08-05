@@ -23,31 +23,23 @@ trait ListServerNeighborsResponse extends StObject {
 }
 object ListServerNeighborsResponse {
   
-  @scala.inline
-  def apply(neighbors: NeighborDetailsList): ListServerNeighborsResponse = {
+  inline def apply(neighbors: NeighborDetailsList): ListServerNeighborsResponse = {
     val __obj = js.Dynamic.literal(neighbors = neighbors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListServerNeighborsResponse]
   }
   
-  @scala.inline
-  implicit class ListServerNeighborsResponseMutableBuilder[Self <: ListServerNeighborsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListServerNeighborsResponse](x: Self) {
     
-    @scala.inline
-    def setKnownDependencyCount(value: Long): Self = StObject.set(x, "knownDependencyCount", value.asInstanceOf[js.Any])
+    inline def setKnownDependencyCount(value: Long): Self = StObject.set(x, "knownDependencyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnownDependencyCountUndefined: Self = StObject.set(x, "knownDependencyCount", js.undefined)
+    inline def setKnownDependencyCountUndefined: Self = StObject.set(x, "knownDependencyCount", js.undefined)
     
-    @scala.inline
-    def setNeighbors(value: NeighborDetailsList): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
+    inline def setNeighbors(value: NeighborDetailsList): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeighborsVarargs(value: NeighborConnectionDetail*): Self = StObject.set(x, "neighbors", js.Array(value :_*))
+    inline def setNeighborsVarargs(value: NeighborConnectionDetail*): Self = StObject.set(x, "neighbors", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -10,8 +10,7 @@ trait GeographicRegion
      with IGeographicRegion
 object GeographicRegion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: String,
     codeThreeDigit: String,
     codeThreeLetter: String,

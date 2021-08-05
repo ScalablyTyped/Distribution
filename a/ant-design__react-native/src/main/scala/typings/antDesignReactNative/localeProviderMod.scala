@@ -32,14 +32,12 @@ object localeProviderMod {
     @JSImport("@ant-design/react-native/lib/locale-provider", "default.childContextTypes")
     @js.native
     def childContextTypes: AntLocale = js.native
-    @scala.inline
-    def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    inline def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/locale-provider", "default.propTypes")
     @js.native
     def propTypes: typings.antDesignReactNative.anon.Locale = js.native
-    @scala.inline
-    def propTypes_=(x: typings.antDesignReactNative.anon.Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: typings.antDesignReactNative.anon.Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait Locale extends StObject {
@@ -65,8 +63,7 @@ object localeProviderMod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DatePicker: DismissText,
       DatePickerView: Day,
       InputItem: BackspaceLabel,
@@ -81,35 +78,25 @@ object localeProviderMod {
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setDatePicker(value: DismissText): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
+      inline def setDatePicker(value: DismissText): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatePickerView(value: Day): Self = StObject.set(x, "DatePickerView", value.asInstanceOf[js.Any])
+      inline def setDatePickerView(value: Day): Self = StObject.set(x, "DatePickerView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputItem(value: BackspaceLabel): Self = StObject.set(x, "InputItem", value.asInstanceOf[js.Any])
+      inline def setInputItem(value: BackspaceLabel): Self = StObject.set(x, "InputItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListView(value: Done): Self = StObject.set(x, "ListView", value.asInstanceOf[js.Any])
+      inline def setListView(value: Done): Self = StObject.set(x, "ListView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModal(value: ButtonText): Self = StObject.set(x, "Modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: ButtonText): Self = StObject.set(x, "Modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagination(value: NextText): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: NextText): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicker(value: Extra): Self = StObject.set(x, "Picker", value.asInstanceOf[js.Any])
+      inline def setPicker(value: Extra): Self = StObject.set(x, "Picker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchBar(value: CancelText): Self = StObject.set(x, "SearchBar", value.asInstanceOf[js.Any])
+      inline def setSearchBar(value: CancelText): Self = StObject.set(x, "SearchBar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,26 +115,20 @@ object localeProviderMod {
   }
   object LocaleProviderProps {
     
-    @scala.inline
-    def apply(): LocaleProviderProps = {
+    inline def apply(): LocaleProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocaleProviderProps]
     }
     
-    @scala.inline
-    implicit class LocaleProviderPropsMutableBuilder[Self <: LocaleProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocaleProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setLocale(value: PartialLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: PartialLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     }
   }
 }

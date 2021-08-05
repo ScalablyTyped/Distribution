@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(opts: Transporter): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(opts: TransporterOpts): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(opts: Transporter): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(opts: TransporterOpts): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-logger", JSImport.Namespace)
   @js.native
@@ -30,17 +27,14 @@ object mod {
   }
   object TransporterOpts {
     
-    @scala.inline
-    def apply(transporter: (/* str */ String, /* args */ js.Object) => Unit): TransporterOpts = {
+    inline def apply(transporter: (/* str */ String, /* args */ js.Object) => Unit): TransporterOpts = {
       val __obj = js.Dynamic.literal(transporter = js.Any.fromFunction2(transporter))
       __obj.asInstanceOf[TransporterOpts]
     }
     
-    @scala.inline
-    implicit class TransporterOptsMutableBuilder[Self <: TransporterOpts] (val x: Self) extends AnyVal {
+    extension [Self <: TransporterOpts](x: Self) {
       
-      @scala.inline
-      def setTransporter(value: (/* str */ String, /* args */ js.Object) => Unit): Self = StObject.set(x, "transporter", js.Any.fromFunction2(value))
+      inline def setTransporter(value: (/* str */ String, /* args */ js.Object) => Unit): Self = StObject.set(x, "transporter", js.Any.fromFunction2(value))
     }
   }
 }

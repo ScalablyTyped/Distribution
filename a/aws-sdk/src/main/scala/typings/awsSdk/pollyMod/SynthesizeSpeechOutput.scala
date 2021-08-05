@@ -23,31 +23,23 @@ trait SynthesizeSpeechOutput extends StObject {
 }
 object SynthesizeSpeechOutput {
   
-  @scala.inline
-  def apply(): SynthesizeSpeechOutput = {
+  inline def apply(): SynthesizeSpeechOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SynthesizeSpeechOutput]
   }
   
-  @scala.inline
-  implicit class SynthesizeSpeechOutputMutableBuilder[Self <: SynthesizeSpeechOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SynthesizeSpeechOutput](x: Self) {
     
-    @scala.inline
-    def setAudioStream(value: AudioStream): Self = StObject.set(x, "AudioStream", value.asInstanceOf[js.Any])
+    inline def setAudioStream(value: AudioStream): Self = StObject.set(x, "AudioStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioStreamUndefined: Self = StObject.set(x, "AudioStream", js.undefined)
+    inline def setAudioStreamUndefined: Self = StObject.set(x, "AudioStream", js.undefined)
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setRequestCharacters(value: RequestCharacters): Self = StObject.set(x, "RequestCharacters", value.asInstanceOf[js.Any])
+    inline def setRequestCharacters(value: RequestCharacters): Self = StObject.set(x, "RequestCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestCharactersUndefined: Self = StObject.set(x, "RequestCharacters", js.undefined)
+    inline def setRequestCharactersUndefined: Self = StObject.set(x, "RequestCharacters", js.undefined)
   }
 }

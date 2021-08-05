@@ -21,13 +21,11 @@ object RenderType {
   @JSImport("mendixmodelsdk", "pages.RenderType.Button")
   @js.native
   def Button: typings.mendixmodelsdk.pagesMod.pages.RenderType = js.native
-  @scala.inline
-  def Button_=(x: typings.mendixmodelsdk.pagesMod.pages.RenderType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
+  inline def Button_=(x: typings.mendixmodelsdk.pagesMod.pages.RenderType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.RenderType.Link")
   @js.native
   def Link: typings.mendixmodelsdk.pagesMod.pages.RenderType = js.native
-  @scala.inline
-  def Link_=(x: typings.mendixmodelsdk.pagesMod.pages.RenderType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
+  inline def Link_=(x: typings.mendixmodelsdk.pagesMod.pages.RenderType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
 }

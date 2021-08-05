@@ -13,16 +13,13 @@ trait DeleteStateMachineInput extends StObject {
 }
 object DeleteStateMachineInput {
   
-  @scala.inline
-  def apply(stateMachineArn: Arn): DeleteStateMachineInput = {
+  inline def apply(stateMachineArn: Arn): DeleteStateMachineInput = {
     val __obj = js.Dynamic.literal(stateMachineArn = stateMachineArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStateMachineInput]
   }
   
-  @scala.inline
-  implicit class DeleteStateMachineInputMutableBuilder[Self <: DeleteStateMachineInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteStateMachineInput](x: Self) {
     
-    @scala.inline
-    def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
+    inline def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
   }
 }

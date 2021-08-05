@@ -37,8 +37,7 @@ trait SubmitRequest extends StObject {
 }
 object SubmitRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collection: String,
     id: String,
     index: String,
@@ -52,73 +51,50 @@ object SubmitRequest {
     __obj.asInstanceOf[SubmitRequest]
   }
   
-  @scala.inline
-  implicit class SubmitRequestMutableBuilder[Self <: SubmitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitRequest](x: Self) {
     
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsNull: Self = StObject.set(x, "channels", null)
+    inline def setChannelsNull: Self = StObject.set(x, "channels", null)
     
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesNull: Self = StObject.set(x, "maxRetries", null)
+    inline def setMaxRetriesNull: Self = StObject.set(x, "maxRetries", null)
     
-    @scala.inline
-    def setOp(value: CreateOp | DeleteOp | EditOp): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: CreateOp | DeleteOp | EditOp): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOps(value: js.Array[typings.sharedb.sharedbMod.Op]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: js.Array[typings.sharedb.sharedbMod.Op]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsVarargs(value: typings.sharedb.sharedbMod.Op*): Self = StObject.set(x, "ops", js.Array(value :_*))
+    inline def setOpsVarargs(value: typings.sharedb.sharedbMod.Op*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveMilestoneSnapshot(value: Boolean): Self = StObject.set(x, "saveMilestoneSnapshot", value.asInstanceOf[js.Any])
+    inline def setSaveMilestoneSnapshot(value: Boolean): Self = StObject.set(x, "saveMilestoneSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveMilestoneSnapshotNull: Self = StObject.set(x, "saveMilestoneSnapshot", null)
+    inline def setSaveMilestoneSnapshotNull: Self = StObject.set(x, "saveMilestoneSnapshot", null)
     
-    @scala.inline
-    def setSnapshot(value: Snapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: Snapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotNull: Self = StObject.set(x, "snapshot", null)
+    inline def setSnapshotNull: Self = StObject.set(x, "snapshot", null)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressPublish(value: Boolean): Self = StObject.set(x, "suppressPublish", value.asInstanceOf[js.Any])
+    inline def setSuppressPublish(value: Boolean): Self = StObject.set(x, "suppressPublish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressPublishNull: Self = StObject.set(x, "suppressPublish", null)
+    inline def setSuppressPublishNull: Self = StObject.set(x, "suppressPublish", null)
   }
 }

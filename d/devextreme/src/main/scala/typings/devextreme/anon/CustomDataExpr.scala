@@ -43,157 +43,107 @@ trait CustomDataExpr extends StObject {
 }
 object CustomDataExpr {
   
-  @scala.inline
-  def apply(): CustomDataExpr = {
+  inline def apply(): CustomDataExpr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomDataExpr]
   }
   
-  @scala.inline
-  implicit class CustomDataExprMutableBuilder[Self <: CustomDataExpr] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDataExpr](x: Self) {
     
-    @scala.inline
-    def setCustomDataExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "customDataExpr", value.asInstanceOf[js.Any])
+    inline def setCustomDataExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "customDataExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "customDataExpr", js.Any.fromFunction1(value))
+    inline def setCustomDataExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "customDataExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomDataExprUndefined: Self = StObject.set(x, "customDataExpr", js.undefined)
+    inline def setCustomDataExprUndefined: Self = StObject.set(x, "customDataExpr", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
-    @scala.inline
-    def setFromExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "fromExpr", value.asInstanceOf[js.Any])
+    inline def setFromExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "fromExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "fromExpr", js.Any.fromFunction1(value))
+    inline def setFromExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "fromExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromExprUndefined: Self = StObject.set(x, "fromExpr", js.undefined)
+    inline def setFromExprUndefined: Self = StObject.set(x, "fromExpr", js.undefined)
     
-    @scala.inline
-    def setFromLineEndExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "fromLineEndExpr", value.asInstanceOf[js.Any])
+    inline def setFromLineEndExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "fromLineEndExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromLineEndExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "fromLineEndExpr", js.Any.fromFunction1(value))
+    inline def setFromLineEndExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "fromLineEndExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromLineEndExprUndefined: Self = StObject.set(x, "fromLineEndExpr", js.undefined)
+    inline def setFromLineEndExprUndefined: Self = StObject.set(x, "fromLineEndExpr", js.undefined)
     
-    @scala.inline
-    def setFromPointIndexExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "fromPointIndexExpr", value.asInstanceOf[js.Any])
+    inline def setFromPointIndexExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "fromPointIndexExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPointIndexExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "fromPointIndexExpr", js.Any.fromFunction1(value))
+    inline def setFromPointIndexExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "fromPointIndexExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromPointIndexExprUndefined: Self = StObject.set(x, "fromPointIndexExpr", js.undefined)
+    inline def setFromPointIndexExprUndefined: Self = StObject.set(x, "fromPointIndexExpr", js.undefined)
     
-    @scala.inline
-    def setKeyExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
+    inline def setKeyExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "keyExpr", js.Any.fromFunction1(value))
+    inline def setKeyExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "keyExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
+    inline def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
     
-    @scala.inline
-    def setLineTypeExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "lineTypeExpr", value.asInstanceOf[js.Any])
+    inline def setLineTypeExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "lineTypeExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineTypeExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "lineTypeExpr", js.Any.fromFunction1(value))
+    inline def setLineTypeExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "lineTypeExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLineTypeExprUndefined: Self = StObject.set(x, "lineTypeExpr", js.undefined)
+    inline def setLineTypeExprUndefined: Self = StObject.set(x, "lineTypeExpr", js.undefined)
     
-    @scala.inline
-    def setLockedExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "lockedExpr", value.asInstanceOf[js.Any])
+    inline def setLockedExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "lockedExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "lockedExpr", js.Any.fromFunction1(value))
+    inline def setLockedExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "lockedExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLockedExprUndefined: Self = StObject.set(x, "lockedExpr", js.undefined)
+    inline def setLockedExprUndefined: Self = StObject.set(x, "lockedExpr", js.undefined)
     
-    @scala.inline
-    def setPointsExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "pointsExpr", value.asInstanceOf[js.Any])
+    inline def setPointsExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "pointsExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "pointsExpr", js.Any.fromFunction1(value))
+    inline def setPointsExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "pointsExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPointsExprUndefined: Self = StObject.set(x, "pointsExpr", js.undefined)
+    inline def setPointsExprUndefined: Self = StObject.set(x, "pointsExpr", js.undefined)
     
-    @scala.inline
-    def setStyleExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "styleExpr", value.asInstanceOf[js.Any])
+    inline def setStyleExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "styleExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "styleExpr", js.Any.fromFunction1(value))
+    inline def setStyleExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "styleExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyleExprUndefined: Self = StObject.set(x, "styleExpr", js.undefined)
+    inline def setStyleExprUndefined: Self = StObject.set(x, "styleExpr", js.undefined)
     
-    @scala.inline
-    def setTextExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "textExpr", value.asInstanceOf[js.Any])
+    inline def setTextExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "textExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "textExpr", js.Any.fromFunction1(value))
+    inline def setTextExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "textExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextExprUndefined: Self = StObject.set(x, "textExpr", js.undefined)
+    inline def setTextExprUndefined: Self = StObject.set(x, "textExpr", js.undefined)
     
-    @scala.inline
-    def setTextStyleExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "textStyleExpr", value.asInstanceOf[js.Any])
+    inline def setTextStyleExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "textStyleExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "textStyleExpr", js.Any.fromFunction1(value))
+    inline def setTextStyleExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "textStyleExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextStyleExprUndefined: Self = StObject.set(x, "textStyleExpr", js.undefined)
+    inline def setTextStyleExprUndefined: Self = StObject.set(x, "textStyleExpr", js.undefined)
     
-    @scala.inline
-    def setToExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "toExpr", value.asInstanceOf[js.Any])
+    inline def setToExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "toExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "toExpr", js.Any.fromFunction1(value))
+    inline def setToExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "toExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToExprUndefined: Self = StObject.set(x, "toExpr", js.undefined)
+    inline def setToExprUndefined: Self = StObject.set(x, "toExpr", js.undefined)
     
-    @scala.inline
-    def setToLineEndExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "toLineEndExpr", value.asInstanceOf[js.Any])
+    inline def setToLineEndExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "toLineEndExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToLineEndExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "toLineEndExpr", js.Any.fromFunction1(value))
+    inline def setToLineEndExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "toLineEndExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToLineEndExprUndefined: Self = StObject.set(x, "toLineEndExpr", js.undefined)
+    inline def setToLineEndExprUndefined: Self = StObject.set(x, "toLineEndExpr", js.undefined)
     
-    @scala.inline
-    def setToPointIndexExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "toPointIndexExpr", value.asInstanceOf[js.Any])
+    inline def setToPointIndexExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "toPointIndexExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPointIndexExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "toPointIndexExpr", js.Any.fromFunction1(value))
+    inline def setToPointIndexExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "toPointIndexExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToPointIndexExprUndefined: Self = StObject.set(x, "toPointIndexExpr", js.undefined)
+    inline def setToPointIndexExprUndefined: Self = StObject.set(x, "toPointIndexExpr", js.undefined)
     
-    @scala.inline
-    def setZIndexExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "zIndexExpr", value.asInstanceOf[js.Any])
+    inline def setZIndexExpr(value: String | (js.Function1[/* data */ js.Any, js.Any])): Self = StObject.set(x, "zIndexExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "zIndexExpr", js.Any.fromFunction1(value))
+    inline def setZIndexExprFunction1(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "zIndexExpr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setZIndexExprUndefined: Self = StObject.set(x, "zIndexExpr", js.undefined)
+    inline def setZIndexExprUndefined: Self = StObject.set(x, "zIndexExpr", js.undefined)
   }
 }

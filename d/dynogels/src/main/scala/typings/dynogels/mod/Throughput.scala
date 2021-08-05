@@ -12,19 +12,15 @@ trait Throughput extends StObject {
 }
 object Throughput {
   
-  @scala.inline
-  def apply(readCapacity: Double, writeCapacity: Double): Throughput = {
+  inline def apply(readCapacity: Double, writeCapacity: Double): Throughput = {
     val __obj = js.Dynamic.literal(readCapacity = readCapacity.asInstanceOf[js.Any], writeCapacity = writeCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Throughput]
   }
   
-  @scala.inline
-  implicit class ThroughputMutableBuilder[Self <: Throughput] (val x: Self) extends AnyVal {
+  extension [Self <: Throughput](x: Self) {
     
-    @scala.inline
-    def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
+    inline def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
+    inline def setWriteCapacity(value: Double): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
   }
 }

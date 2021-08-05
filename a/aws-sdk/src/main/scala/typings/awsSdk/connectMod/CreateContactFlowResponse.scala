@@ -18,25 +18,19 @@ trait CreateContactFlowResponse extends StObject {
 }
 object CreateContactFlowResponse {
   
-  @scala.inline
-  def apply(): CreateContactFlowResponse = {
+  inline def apply(): CreateContactFlowResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateContactFlowResponse]
   }
   
-  @scala.inline
-  implicit class CreateContactFlowResponseMutableBuilder[Self <: CreateContactFlowResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateContactFlowResponse](x: Self) {
     
-    @scala.inline
-    def setContactFlowArn(value: ARN): Self = StObject.set(x, "ContactFlowArn", value.asInstanceOf[js.Any])
+    inline def setContactFlowArn(value: ARN): Self = StObject.set(x, "ContactFlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactFlowArnUndefined: Self = StObject.set(x, "ContactFlowArn", js.undefined)
+    inline def setContactFlowArnUndefined: Self = StObject.set(x, "ContactFlowArn", js.undefined)
     
-    @scala.inline
-    def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
+    inline def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactFlowIdUndefined: Self = StObject.set(x, "ContactFlowId", js.undefined)
+    inline def setContactFlowIdUndefined: Self = StObject.set(x, "ContactFlowId", js.undefined)
   }
 }

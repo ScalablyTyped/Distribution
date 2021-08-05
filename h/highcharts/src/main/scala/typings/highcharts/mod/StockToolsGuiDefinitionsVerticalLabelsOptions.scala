@@ -20,40 +20,29 @@ trait StockToolsGuiDefinitionsVerticalLabelsOptions extends StObject {
 }
 object StockToolsGuiDefinitionsVerticalLabelsOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsVerticalLabelsOptions = {
+  inline def apply(): StockToolsGuiDefinitionsVerticalLabelsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsVerticalLabelsOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsVerticalLabelsOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsVerticalLabelsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsVerticalLabelsOptions](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setVerticalArrow(value: StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptions): Self = StObject.set(x, "verticalArrow", value.asInstanceOf[js.Any])
+    inline def setVerticalArrow(value: StockToolsGuiDefinitionsVerticalLabelsVerticalArrowOptions): Self = StObject.set(x, "verticalArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalArrowUndefined: Self = StObject.set(x, "verticalArrow", js.undefined)
+    inline def setVerticalArrowUndefined: Self = StObject.set(x, "verticalArrow", js.undefined)
     
-    @scala.inline
-    def setVerticalCounter(value: StockToolsGuiDefinitionsVerticalLabelsVerticalCounterOptions): Self = StObject.set(x, "verticalCounter", value.asInstanceOf[js.Any])
+    inline def setVerticalCounter(value: StockToolsGuiDefinitionsVerticalLabelsVerticalCounterOptions): Self = StObject.set(x, "verticalCounter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalCounterUndefined: Self = StObject.set(x, "verticalCounter", js.undefined)
+    inline def setVerticalCounterUndefined: Self = StObject.set(x, "verticalCounter", js.undefined)
     
-    @scala.inline
-    def setVerticalLabel(value: StockToolsGuiDefinitionsVerticalLabelsVerticalLabelOptions): Self = StObject.set(x, "verticalLabel", value.asInstanceOf[js.Any])
+    inline def setVerticalLabel(value: StockToolsGuiDefinitionsVerticalLabelsVerticalLabelOptions): Self = StObject.set(x, "verticalLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalLabelUndefined: Self = StObject.set(x, "verticalLabel", js.undefined)
+    inline def setVerticalLabelUndefined: Self = StObject.set(x, "verticalLabel", js.undefined)
   }
 }

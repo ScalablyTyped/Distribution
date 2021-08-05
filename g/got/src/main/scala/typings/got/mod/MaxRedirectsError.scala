@@ -25,22 +25,16 @@ object MaxRedirectsError {
   @js.native
   val ^ : Instantiable0[MaxRedirectsError] = js.native
   
-  @scala.inline
-  implicit class MaxRedirectsErrorMutableBuilder[Self <: MaxRedirectsError] (val x: Self) extends AnyVal {
+  extension [Self <: MaxRedirectsError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.got.gotStrings.MaxRedirectsError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.got.gotStrings.MaxRedirectsError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrls(value: js.Array[String]): Self = StObject.set(x, "redirectUrls", value.asInstanceOf[js.Any])
+    inline def setRedirectUrls(value: js.Array[String]): Self = StObject.set(x, "redirectUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrlsVarargs(value: String*): Self = StObject.set(x, "redirectUrls", js.Array(value :_*))
+    inline def setRedirectUrlsVarargs(value: String*): Self = StObject.set(x, "redirectUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

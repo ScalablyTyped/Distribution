@@ -26,8 +26,7 @@ trait XNamed
 }
 object XNamed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     acquire: () => Unit,
     getName: () => String,
@@ -39,16 +38,12 @@ object XNamed {
     __obj.asInstanceOf[XNamed]
   }
   
-  @scala.inline
-  implicit class XNamedMutableBuilder[Self <: XNamed] (val x: Self) extends AnyVal {
+  extension [Self <: XNamed](x: Self) {
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

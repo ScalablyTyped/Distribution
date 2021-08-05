@@ -65,8 +65,7 @@ object dashMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+    inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -74,29 +73,29 @@ object dashMod {
     extends StObject
        with IPlaybackAdapter {
     
-    var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: js.Any = js.native
     
-    var _broadcastError: js.Any = js.native
+    /* private */ var _broadcastError: js.Any = js.native
     
-    var _delayedInitPlayer: js.Any = js.native
+    /* private */ var _delayedInitPlayer: js.Any = js.native
     
-    var _initPlayer: js.Any = js.native
+    /* private */ var _initPlayer: js.Any = js.native
     
-    var _logError: js.Any = js.native
+    /* private */ var _logError: js.Any = js.native
     
-    var _startDelayedInitPlayer: js.Any = js.native
+    /* private */ var _startDelayedInitPlayer: js.Any = js.native
     
-    var _stopDelayedInitPlayer: js.Any = js.native
+    /* private */ var _stopDelayedInitPlayer: js.Any = js.native
     
     @JSName("currentUrl")
     def currentUrl_MDashAdapter: String = js.native
     
-    var dashPlayer: js.Any = js.native
+    /* private */ var dashPlayer: js.Any = js.native
     
     @JSName("debugInfo")
     def debugInfo_MDashAdapter: Bitrates = js.native
     
-    var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: js.Any = js.native
     
     @JSName("isDynamicContentEnded")
     def isDynamicContentEnded_MDashAdapter: Boolean = js.native
@@ -110,7 +109,7 @@ object dashMod {
     @JSName("isSyncWithLive")
     def isSyncWithLive_MDashAdapter: Boolean = js.native
     
-    var mediaStream: js.Any = js.native
+    /* private */ var mediaStream: js.Any = js.native
     
     @JSName("mediaStreamDeliveryPriority")
     def mediaStreamDeliveryPriority_MDashAdapter: MediaStreamDeliveryPriority = js.native
@@ -120,6 +119,6 @@ object dashMod {
     @JSName("syncWithLiveTime")
     def syncWithLiveTime_MDashAdapter: js.Any = js.native
     
-    var videoElement: js.Any = js.native
+    /* private */ var videoElement: js.Any = js.native
   }
 }

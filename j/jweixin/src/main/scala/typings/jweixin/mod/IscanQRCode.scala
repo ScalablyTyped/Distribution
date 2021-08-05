@@ -23,25 +23,19 @@ trait IscanQRCode
 }
 object IscanQRCode {
   
-  @scala.inline
-  def apply(needResult: `0` | `1`, scanType: js.Array[scanType], success: ResultStr => Unit): IscanQRCode = {
+  inline def apply(needResult: `0` | `1`, scanType: js.Array[scanType], success: ResultStr => Unit): IscanQRCode = {
     val __obj = js.Dynamic.literal(needResult = needResult.asInstanceOf[js.Any], scanType = scanType.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[IscanQRCode]
   }
   
-  @scala.inline
-  implicit class IscanQRCodeMutableBuilder[Self <: IscanQRCode] (val x: Self) extends AnyVal {
+  extension [Self <: IscanQRCode](x: Self) {
     
-    @scala.inline
-    def setNeedResult(value: `0` | `1`): Self = StObject.set(x, "needResult", value.asInstanceOf[js.Any])
+    inline def setNeedResult(value: `0` | `1`): Self = StObject.set(x, "needResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanType(value: js.Array[scanType]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    inline def setScanType(value: js.Array[scanType]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanTypeVarargs(value: scanType*): Self = StObject.set(x, "scanType", js.Array(value :_*))
+    inline def setScanTypeVarargs(value: scanType*): Self = StObject.set(x, "scanType", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: ResultStr => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: ResultStr => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

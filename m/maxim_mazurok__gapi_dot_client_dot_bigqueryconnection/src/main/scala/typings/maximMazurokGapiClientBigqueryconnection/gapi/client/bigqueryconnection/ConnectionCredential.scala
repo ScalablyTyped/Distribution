@@ -11,19 +11,15 @@ trait ConnectionCredential extends StObject {
 }
 object ConnectionCredential {
   
-  @scala.inline
-  def apply(): ConnectionCredential = {
+  inline def apply(): ConnectionCredential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionCredential]
   }
   
-  @scala.inline
-  implicit class ConnectionCredentialMutableBuilder[Self <: ConnectionCredential] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionCredential](x: Self) {
     
-    @scala.inline
-    def setCloudSql(value: CloudSqlCredential): Self = StObject.set(x, "cloudSql", value.asInstanceOf[js.Any])
+    inline def setCloudSql(value: CloudSqlCredential): Self = StObject.set(x, "cloudSql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudSqlUndefined: Self = StObject.set(x, "cloudSql", js.undefined)
+    inline def setCloudSqlUndefined: Self = StObject.set(x, "cloudSql", js.undefined)
   }
 }

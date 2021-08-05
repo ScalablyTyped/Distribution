@@ -86,21 +86,16 @@ object usagePlanMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UsagePlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UsagePlan]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UsagePlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlan]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UsagePlanState): UsagePlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UsagePlan]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UsagePlanState, opts: CustomResourceOptions): UsagePlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlan]
+    inline def get(name: String, id: Input[ID]): UsagePlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UsagePlan]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UsagePlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlan]
+    inline def get(name: String, id: Input[ID], state: UsagePlanState): UsagePlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UsagePlan]
+    inline def get(name: String, id: Input[ID], state: UsagePlanState, opts: CustomResourceOptions): UsagePlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UsagePlan]
     
     /**
       * Returns true if the given object is an instance of UsagePlan.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlan.UsagePlan */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/usagePlan.UsagePlan */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlan.UsagePlan */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/usagePlan.UsagePlan */ Boolean]
   }
   
   trait UsagePlanArgs extends StObject {
@@ -142,59 +137,42 @@ object usagePlanMod {
   }
   object UsagePlanArgs {
     
-    @scala.inline
-    def apply(): UsagePlanArgs = {
+    inline def apply(): UsagePlanArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UsagePlanArgs]
     }
     
-    @scala.inline
-    implicit class UsagePlanArgsMutableBuilder[Self <: UsagePlanArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UsagePlanArgs](x: Self) {
       
-      @scala.inline
-      def setApiStages(value: Input[js.Array[Input[typings.pulumiAws.inputMod.apigateway.UsagePlanApiStage]]]): Self = StObject.set(x, "apiStages", value.asInstanceOf[js.Any])
+      inline def setApiStages(value: Input[js.Array[Input[typings.pulumiAws.inputMod.apigateway.UsagePlanApiStage]]]): Self = StObject.set(x, "apiStages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiStagesUndefined: Self = StObject.set(x, "apiStages", js.undefined)
+      inline def setApiStagesUndefined: Self = StObject.set(x, "apiStages", js.undefined)
       
-      @scala.inline
-      def setApiStagesVarargs(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanApiStage]*): Self = StObject.set(x, "apiStages", js.Array(value :_*))
+      inline def setApiStagesVarargs(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanApiStage]*): Self = StObject.set(x, "apiStages", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProductCode(value: Input[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
+      inline def setProductCode(value: Input[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
+      inline def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
       
-      @scala.inline
-      def setQuotaSettings(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanQuotaSettings]): Self = StObject.set(x, "quotaSettings", value.asInstanceOf[js.Any])
+      inline def setQuotaSettings(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanQuotaSettings]): Self = StObject.set(x, "quotaSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaSettingsUndefined: Self = StObject.set(x, "quotaSettings", js.undefined)
+      inline def setQuotaSettingsUndefined: Self = StObject.set(x, "quotaSettings", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setThrottleSettings(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanThrottleSettings]): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
+      inline def setThrottleSettings(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanThrottleSettings]): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleSettingsUndefined: Self = StObject.set(x, "throttleSettings", js.undefined)
+      inline def setThrottleSettingsUndefined: Self = StObject.set(x, "throttleSettings", js.undefined)
     }
   }
   
@@ -242,65 +220,46 @@ object usagePlanMod {
   }
   object UsagePlanState {
     
-    @scala.inline
-    def apply(): UsagePlanState = {
+    inline def apply(): UsagePlanState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UsagePlanState]
     }
     
-    @scala.inline
-    implicit class UsagePlanStateMutableBuilder[Self <: UsagePlanState] (val x: Self) extends AnyVal {
+    extension [Self <: UsagePlanState](x: Self) {
       
-      @scala.inline
-      def setApiStages(value: Input[js.Array[Input[typings.pulumiAws.inputMod.apigateway.UsagePlanApiStage]]]): Self = StObject.set(x, "apiStages", value.asInstanceOf[js.Any])
+      inline def setApiStages(value: Input[js.Array[Input[typings.pulumiAws.inputMod.apigateway.UsagePlanApiStage]]]): Self = StObject.set(x, "apiStages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiStagesUndefined: Self = StObject.set(x, "apiStages", js.undefined)
+      inline def setApiStagesUndefined: Self = StObject.set(x, "apiStages", js.undefined)
       
-      @scala.inline
-      def setApiStagesVarargs(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanApiStage]*): Self = StObject.set(x, "apiStages", js.Array(value :_*))
+      inline def setApiStagesVarargs(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanApiStage]*): Self = StObject.set(x, "apiStages", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProductCode(value: Input[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
+      inline def setProductCode(value: Input[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
+      inline def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
       
-      @scala.inline
-      def setQuotaSettings(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanQuotaSettings]): Self = StObject.set(x, "quotaSettings", value.asInstanceOf[js.Any])
+      inline def setQuotaSettings(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanQuotaSettings]): Self = StObject.set(x, "quotaSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotaSettingsUndefined: Self = StObject.set(x, "quotaSettings", js.undefined)
+      inline def setQuotaSettingsUndefined: Self = StObject.set(x, "quotaSettings", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setThrottleSettings(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanThrottleSettings]): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
+      inline def setThrottleSettings(value: Input[typings.pulumiAws.inputMod.apigateway.UsagePlanThrottleSettings]): Self = StObject.set(x, "throttleSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleSettingsUndefined: Self = StObject.set(x, "throttleSettings", js.undefined)
+      inline def setThrottleSettingsUndefined: Self = StObject.set(x, "throttleSettings", js.undefined)
     }
   }
 }

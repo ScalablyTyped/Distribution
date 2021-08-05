@@ -38,37 +38,27 @@ trait PutMethodResponseRequest extends StObject {
 }
 object PutMethodResponseRequest {
   
-  @scala.inline
-  def apply(httpMethod: String, resourceId: String, restApiId: String, statusCode: StatusCode): PutMethodResponseRequest = {
+  inline def apply(httpMethod: String, resourceId: String, restApiId: String, statusCode: StatusCode): PutMethodResponseRequest = {
     val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutMethodResponseRequest]
   }
   
-  @scala.inline
-  implicit class PutMethodResponseRequestMutableBuilder[Self <: PutMethodResponseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutMethodResponseRequest](x: Self) {
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseModels(value: MapOfStringToString): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
+    inline def setResponseModels(value: MapOfStringToString): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
+    inline def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
     
-    @scala.inline
-    def setResponseParameters(value: MapOfStringToBoolean): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
+    inline def setResponseParameters(value: MapOfStringToBoolean): Self = StObject.set(x, "responseParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
+    inline def setResponseParametersUndefined: Self = StObject.set(x, "responseParameters", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

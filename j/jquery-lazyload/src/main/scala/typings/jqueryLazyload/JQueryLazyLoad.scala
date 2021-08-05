@@ -32,77 +32,54 @@ object JQueryLazyLoad {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAppear(value: (/* elementsLeft */ Double, Options) => Unit): Self = StObject.set(x, "appear", js.Any.fromFunction2(value))
+      inline def setAppear(value: (/* elementsLeft */ Double, Options) => Unit): Self = StObject.set(x, "appear", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAppearNull: Self = StObject.set(x, "appear", null)
+      inline def setAppearNull: Self = StObject.set(x, "appear", null)
       
-      @scala.inline
-      def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
+      inline def setAppearUndefined: Self = StObject.set(x, "appear", js.undefined)
       
-      @scala.inline
-      def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setData_attribute(value: String): Self = StObject.set(x, "data_attribute", value.asInstanceOf[js.Any])
+      inline def setData_attribute(value: String): Self = StObject.set(x, "data_attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData_attributeUndefined: Self = StObject.set(x, "data_attribute", js.undefined)
+      inline def setData_attributeUndefined: Self = StObject.set(x, "data_attribute", js.undefined)
       
-      @scala.inline
-      def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+      inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setFailure_limit(value: Double): Self = StObject.set(x, "failure_limit", value.asInstanceOf[js.Any])
+      inline def setFailure_limit(value: Double): Self = StObject.set(x, "failure_limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure_limitUndefined: Self = StObject.set(x, "failure_limit", js.undefined)
+      inline def setFailure_limitUndefined: Self = StObject.set(x, "failure_limit", js.undefined)
       
-      @scala.inline
-      def setLoad(value: (/* elementsLeft */ js.UndefOr[Double], /* options */ js.UndefOr[Options]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+      inline def setLoad(value: (/* elementsLeft */ js.UndefOr[Double], /* options */ js.UndefOr[Options]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setSkip_invisible(value: Boolean): Self = StObject.set(x, "skip_invisible", value.asInstanceOf[js.Any])
+      inline def setSkip_invisible(value: Boolean): Self = StObject.set(x, "skip_invisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip_invisibleUndefined: Self = StObject.set(x, "skip_invisible", js.undefined)
+      inline def setSkip_invisibleUndefined: Self = StObject.set(x, "skip_invisible", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

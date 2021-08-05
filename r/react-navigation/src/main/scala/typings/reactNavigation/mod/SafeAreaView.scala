@@ -18,6 +18,5 @@ class SafeAreaView protected ()
 }
 object SafeAreaView {
   
-  @scala.inline
-  def apply: ComponentClass[SafeAreaViewProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SafeAreaView").asInstanceOf[ComponentClass[SafeAreaViewProps, ComponentState]]
+  inline def apply: ComponentClass[SafeAreaViewProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SafeAreaView").asInstanceOf[ComponentClass[SafeAreaViewProps, ComponentState]]
 }

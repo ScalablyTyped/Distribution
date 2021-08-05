@@ -16,28 +16,21 @@ trait LayerPhotosDataItem extends StObject {
 }
 object LayerPhotosDataItem {
   
-  @scala.inline
-  def apply(alt: String, src: String, thumb: String): LayerPhotosDataItem = {
+  inline def apply(alt: String, src: String, thumb: String): LayerPhotosDataItem = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], thumb = thumb.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerPhotosDataItem]
   }
   
-  @scala.inline
-  implicit class LayerPhotosDataItemMutableBuilder[Self <: LayerPhotosDataItem] (val x: Self) extends AnyVal {
+  extension [Self <: LayerPhotosDataItem](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
+    inline def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumb(value: String): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: String): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
   }
 }

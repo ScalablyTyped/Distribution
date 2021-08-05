@@ -13,9 +13,7 @@ object redirectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isRedirect(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRedirect(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def makeRedirectOpts(res: Response, opts: FetchOptions, agentWrapper: default): js.Tuple2[String, FetchOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRedirectOpts")(res.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], agentWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, FetchOptions]]
+  inline def makeRedirectOpts(res: Response, opts: FetchOptions, agentWrapper: default): js.Tuple2[String, FetchOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRedirectOpts")(res.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], agentWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, FetchOptions]]
 }

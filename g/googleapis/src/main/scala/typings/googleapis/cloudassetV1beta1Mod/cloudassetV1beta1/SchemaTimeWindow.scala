@@ -22,25 +22,19 @@ trait SchemaTimeWindow extends StObject {
 }
 object SchemaTimeWindow {
   
-  @scala.inline
-  def apply(): SchemaTimeWindow = {
+  inline def apply(): SchemaTimeWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTimeWindow]
   }
   
-  @scala.inline
-  implicit class SchemaTimeWindowMutableBuilder[Self <: SchemaTimeWindow] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTimeWindow](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

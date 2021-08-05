@@ -80,8 +80,7 @@ trait XDataProvider
 }
 object XDataProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RangeSelection: XRangeSelection,
     acquire: () => Unit,
     createDataSequenceByRangeRepresentation: String => XDataSequence,
@@ -98,31 +97,22 @@ object XDataProvider {
     __obj.asInstanceOf[XDataProvider]
   }
   
-  @scala.inline
-  implicit class XDataProviderMutableBuilder[Self <: XDataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XDataProvider](x: Self) {
     
-    @scala.inline
-    def setCreateDataSequenceByRangeRepresentation(value: String => XDataSequence): Self = StObject.set(x, "createDataSequenceByRangeRepresentation", js.Any.fromFunction1(value))
+    inline def setCreateDataSequenceByRangeRepresentation(value: String => XDataSequence): Self = StObject.set(x, "createDataSequenceByRangeRepresentation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDataSequenceByRangeRepresentationPossible(value: String => Boolean): Self = StObject.set(x, "createDataSequenceByRangeRepresentationPossible", js.Any.fromFunction1(value))
+    inline def setCreateDataSequenceByRangeRepresentationPossible(value: String => Boolean): Self = StObject.set(x, "createDataSequenceByRangeRepresentationPossible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDataSequenceByValueArray(value: (String, String) => XDataSequence): Self = StObject.set(x, "createDataSequenceByValueArray", js.Any.fromFunction2(value))
+    inline def setCreateDataSequenceByValueArray(value: (String, String) => XDataSequence): Self = StObject.set(x, "createDataSequenceByValueArray", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateDataSource(value: SeqEquiv[PropertyValue] => XDataSource): Self = StObject.set(x, "createDataSource", js.Any.fromFunction1(value))
+    inline def setCreateDataSource(value: SeqEquiv[PropertyValue] => XDataSource): Self = StObject.set(x, "createDataSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDataSourcePossible(value: SeqEquiv[PropertyValue] => Boolean): Self = StObject.set(x, "createDataSourcePossible", js.Any.fromFunction1(value))
+    inline def setCreateDataSourcePossible(value: SeqEquiv[PropertyValue] => Boolean): Self = StObject.set(x, "createDataSourcePossible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDetectArguments(value: XDataSource => SafeArray[PropertyValue]): Self = StObject.set(x, "detectArguments", js.Any.fromFunction1(value))
+    inline def setDetectArguments(value: XDataSource => SafeArray[PropertyValue]): Self = StObject.set(x, "detectArguments", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRangeSelection(value: () => XRangeSelection): Self = StObject.set(x, "getRangeSelection", js.Any.fromFunction0(value))
+    inline def setGetRangeSelection(value: () => XRangeSelection): Self = StObject.set(x, "getRangeSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRangeSelection(value: XRangeSelection): Self = StObject.set(x, "RangeSelection", value.asInstanceOf[js.Any])
+    inline def setRangeSelection(value: XRangeSelection): Self = StObject.set(x, "RangeSelection", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait IKeyboardCapabilities extends StObject {
 }
 object IKeyboardCapabilities {
   
-  @scala.inline
-  def apply(keyboardPresent: Double): IKeyboardCapabilities = {
+  inline def apply(keyboardPresent: Double): IKeyboardCapabilities = {
     val __obj = js.Dynamic.literal(keyboardPresent = keyboardPresent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyboardCapabilities]
   }
   
-  @scala.inline
-  implicit class IKeyboardCapabilitiesMutableBuilder[Self <: IKeyboardCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: IKeyboardCapabilities](x: Self) {
     
-    @scala.inline
-    def setKeyboardPresent(value: Double): Self = StObject.set(x, "keyboardPresent", value.asInstanceOf[js.Any])
+    inline def setKeyboardPresent(value: Double): Self = StObject.set(x, "keyboardPresent", value.asInstanceOf[js.Any])
   }
 }

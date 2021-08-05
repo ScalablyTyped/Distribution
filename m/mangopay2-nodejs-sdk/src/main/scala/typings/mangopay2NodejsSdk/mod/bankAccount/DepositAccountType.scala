@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DepositAccountType extends StObject
 object DepositAccountType {
   
-  @scala.inline
-  def CHECKING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CHECKING = "CHECKING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CHECKING]
+  inline def CHECKING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CHECKING = "CHECKING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CHECKING]
   
-  @scala.inline
-  def SAVINGS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SAVINGS = "SAVINGS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SAVINGS]
+  inline def SAVINGS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SAVINGS = "SAVINGS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SAVINGS]
 }

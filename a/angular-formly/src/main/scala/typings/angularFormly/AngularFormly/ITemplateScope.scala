@@ -42,8 +42,7 @@ trait ITemplateScope extends StObject {
 }
 object ITemplateScope {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fc: IFormController | js.Array[IFormController],
     fields: IFieldArray,
     form: js.Any,
@@ -58,46 +57,32 @@ object ITemplateScope {
     __obj.asInstanceOf[ITemplateScope]
   }
   
-  @scala.inline
-  implicit class ITemplateScopeMutableBuilder[Self <: ITemplateScope] (val x: Self) extends AnyVal {
+  extension [Self <: ITemplateScope](x: Self) {
     
-    @scala.inline
-    def setFc(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "fc", value.asInstanceOf[js.Any])
+    inline def setFc(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "fc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFcVarargs(value: IFormController*): Self = StObject.set(x, "fc", js.Array(value :_*))
+    inline def setFcVarargs(value: IFormController*): Self = StObject.set(x, "fc", js.Array(value :_*))
     
-    @scala.inline
-    def setFields(value: IFieldArray): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: IFieldArray): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: (IFieldConfigurationObject | IFieldGroup)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (IFieldConfigurationObject | IFieldGroup)*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setForm(value: js.Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: js.Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormState(value: js.Object): Self = StObject.set(x, "formState", value.asInstanceOf[js.Any])
+    inline def setFormState(value: js.Object): Self = StObject.set(x, "formState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setOptions(value: ITemplateScopeOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ITemplateScopeOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowError(value: Boolean): Self = StObject.set(x, "showError", value.asInstanceOf[js.Any])
+    inline def setShowError(value: Boolean): Self = StObject.set(x, "showError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: ITemplateOptions): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: ITemplateOptions): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

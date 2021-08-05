@@ -28,8 +28,7 @@ trait UserUpdate extends StObject {
 }
 object UserUpdate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     avatarID: String,
     curatorPoints: Double,
     dateJoined: String,
@@ -45,37 +44,26 @@ object UserUpdate {
     __obj.asInstanceOf[UserUpdate]
   }
   
-  @scala.inline
-  implicit class UserUpdateMutableBuilder[Self <: UserUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: UserUpdate](x: Self) {
     
-    @scala.inline
-    def setAvatarID(value: String): Self = StObject.set(x, "avatarID", value.asInstanceOf[js.Any])
+    inline def setAvatarID(value: String): Self = StObject.set(x, "avatarID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCuratorPoints(value: Double): Self = StObject.set(x, "curatorPoints", value.asInstanceOf[js.Any])
+    inline def setCuratorPoints(value: Double): Self = StObject.set(x, "curatorPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateJoined(value: String): Self = StObject.set(x, "dateJoined", value.asInstanceOf[js.Any])
+    inline def setDateJoined(value: String): Self = StObject.set(x, "dateJoined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDjPoints(value: Double): Self = StObject.set(x, "djPoints", value.asInstanceOf[js.Any])
+    inline def setDjPoints(value: Double): Self = StObject.set(x, "djPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFans(value: Double): Self = StObject.set(x, "fans", value.asInstanceOf[js.Any])
+    inline def setFans(value: Double): Self = StObject.set(x, "fans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerPoints(value: Double): Self = StObject.set(x, "listenerPoints", value.asInstanceOf[js.Any])
+    inline def setListenerPoints(value: Double): Self = StObject.set(x, "listenerPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

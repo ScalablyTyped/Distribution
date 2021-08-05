@@ -33,37 +33,27 @@ trait UpdateGameServerInput extends StObject {
 }
 object UpdateGameServerInput {
   
-  @scala.inline
-  def apply(GameServerGroupName: GameServerGroupNameOrArn, GameServerId: GameServerId): UpdateGameServerInput = {
+  inline def apply(GameServerGroupName: GameServerGroupNameOrArn, GameServerId: GameServerId): UpdateGameServerInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any], GameServerId = GameServerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGameServerInput]
   }
   
-  @scala.inline
-  implicit class UpdateGameServerInputMutableBuilder[Self <: UpdateGameServerInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGameServerInput](x: Self) {
     
-    @scala.inline
-    def setGameServerData(value: GameServerData): Self = StObject.set(x, "GameServerData", value.asInstanceOf[js.Any])
+    inline def setGameServerData(value: GameServerData): Self = StObject.set(x, "GameServerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerDataUndefined: Self = StObject.set(x, "GameServerData", js.undefined)
+    inline def setGameServerDataUndefined: Self = StObject.set(x, "GameServerData", js.undefined)
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerId(value: GameServerId): Self = StObject.set(x, "GameServerId", value.asInstanceOf[js.Any])
+    inline def setGameServerId(value: GameServerId): Self = StObject.set(x, "GameServerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheck(value: GameServerHealthCheck): Self = StObject.set(x, "HealthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: GameServerHealthCheck): Self = StObject.set(x, "HealthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "HealthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "HealthCheck", js.undefined)
     
-    @scala.inline
-    def setUtilizationStatus(value: GameServerUtilizationStatus): Self = StObject.set(x, "UtilizationStatus", value.asInstanceOf[js.Any])
+    inline def setUtilizationStatus(value: GameServerUtilizationStatus): Self = StObject.set(x, "UtilizationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationStatusUndefined: Self = StObject.set(x, "UtilizationStatus", js.undefined)
+    inline def setUtilizationStatusUndefined: Self = StObject.set(x, "UtilizationStatus", js.undefined)
   }
 }

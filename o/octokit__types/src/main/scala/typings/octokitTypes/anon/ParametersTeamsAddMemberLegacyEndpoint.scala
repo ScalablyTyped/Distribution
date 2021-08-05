@@ -18,8 +18,7 @@ trait ParametersTeamsAddMemberLegacyEndpoint extends StObject {
 }
 object ParametersTeamsAddMemberLegacyEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: TeamsAddMemberLegacyEndpoint,
     request: TeamsAddMemberLegacyRequestOptions,
     response: OctokitResponse[TeamsAddMemberLegacyResponseData]
@@ -28,16 +27,12 @@ object ParametersTeamsAddMemberLegacyEndpoint {
     __obj.asInstanceOf[ParametersTeamsAddMemberLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersTeamsAddMemberLegacyEndpointMutableBuilder[Self <: ParametersTeamsAddMemberLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersTeamsAddMemberLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: TeamsAddMemberLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: TeamsAddMemberLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: TeamsAddMemberLegacyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: TeamsAddMemberLegacyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[TeamsAddMemberLegacyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[TeamsAddMemberLegacyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

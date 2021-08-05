@@ -10,16 +10,13 @@ trait SuggestionHighlightedParams extends StObject {
 }
 object SuggestionHighlightedParams {
   
-  @scala.inline
-  def apply(suggestion: js.Any): SuggestionHighlightedParams = {
+  inline def apply(suggestion: js.Any): SuggestionHighlightedParams = {
     val __obj = js.Dynamic.literal(suggestion = suggestion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestionHighlightedParams]
   }
   
-  @scala.inline
-  implicit class SuggestionHighlightedParamsMutableBuilder[Self <: SuggestionHighlightedParams] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestionHighlightedParams](x: Self) {
     
-    @scala.inline
-    def setSuggestion(value: js.Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+    inline def setSuggestion(value: js.Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
   }
 }

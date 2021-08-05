@@ -23,25 +23,19 @@ trait CreateDeploymentRequest extends StObject {
 }
 object CreateDeploymentRequest {
   
-  @scala.inline
-  def apply(appId: AppId, branchName: BranchName): CreateDeploymentRequest = {
+  inline def apply(appId: AppId, branchName: BranchName): CreateDeploymentRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class CreateDeploymentRequestMutableBuilder[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileMap(value: FileMap): Self = StObject.set(x, "fileMap", value.asInstanceOf[js.Any])
+    inline def setFileMap(value: FileMap): Self = StObject.set(x, "fileMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileMapUndefined: Self = StObject.set(x, "fileMap", js.undefined)
+    inline def setFileMapUndefined: Self = StObject.set(x, "fileMap", js.undefined)
   }
 }

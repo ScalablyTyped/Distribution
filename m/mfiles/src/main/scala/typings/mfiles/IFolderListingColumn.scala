@@ -23,8 +23,7 @@ trait IFolderListingColumn extends StObject {
 }
 object IFolderListingColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IFolderListingColumn,
     Flags: MFFolderListingColumnFlags,
     ID: Double,
@@ -37,28 +36,20 @@ object IFolderListingColumn {
     __obj.asInstanceOf[IFolderListingColumn]
   }
   
-  @scala.inline
-  implicit class IFolderListingColumnMutableBuilder[Self <: IFolderListingColumn] (val x: Self) extends AnyVal {
+  extension [Self <: IFolderListingColumn](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IFolderListingColumn): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IFolderListingColumn): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlags(value: MFFolderListingColumnFlags): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: MFFolderListingColumnFlags): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

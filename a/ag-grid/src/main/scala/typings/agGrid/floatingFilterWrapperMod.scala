@@ -27,17 +27,17 @@ object floatingFilterWrapperMod {
     
     /* private */ def addColumnHoverListener(): js.Any = js.native
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
     var column: Column = js.native
     
-    var columnHoverService: js.Any = js.native
+    /* private */ var columnHoverService: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     def enrichBody(body: HTMLElement): Unit = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     @JSName("init")
     def init_MBaseFilterWrapperComp(params: P): Unit | Promise[Unit] = js.native
@@ -70,12 +70,12 @@ object floatingFilterWrapperMod {
     
     var floatingFilterCompPromise: Promise[IFloatingFilterComp[M, F, PC]] = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     @JSName("init")
     def init_MFloatingFilterWrapperComp(params: P): Unit = js.native
     
-    var menuFactory: js.Any = js.native
+    /* private */ var menuFactory: js.Any = js.native
     
     def onParentModelChanged(parentModel: CombinedFilter[M]): Unit = js.native
     
@@ -90,17 +90,14 @@ object floatingFilterWrapperMod {
   }
   object IFloatingFilterWrapper {
     
-    @scala.inline
-    def apply[M](onParentModelChanged: M => Unit): IFloatingFilterWrapper[M] = {
+    inline def apply[M](onParentModelChanged: M => Unit): IFloatingFilterWrapper[M] = {
       val __obj = js.Dynamic.literal(onParentModelChanged = js.Any.fromFunction1(onParentModelChanged))
       __obj.asInstanceOf[IFloatingFilterWrapper[M]]
     }
     
-    @scala.inline
-    implicit class IFloatingFilterWrapperMutableBuilder[Self <: IFloatingFilterWrapper[?], M] (val x: Self & IFloatingFilterWrapper[M]) extends AnyVal {
+    extension [Self <: IFloatingFilterWrapper[?], M](x: Self & IFloatingFilterWrapper[M]) {
       
-      @scala.inline
-      def setOnParentModelChanged(value: M => Unit): Self = StObject.set(x, "onParentModelChanged", js.Any.fromFunction1(value))
+      inline def setOnParentModelChanged(value: M => Unit): Self = StObject.set(x, "onParentModelChanged", js.Any.fromFunction1(value))
     }
   }
   
@@ -110,8 +107,7 @@ object floatingFilterWrapperMod {
        with IComponent[P]
   object IFloatingFilterWrapperComp {
     
-    @scala.inline
-    def apply[M, F /* <: FloatingFilterChange */, PC /* <: IFloatingFilterParams[M, F] */, P /* <: IFloatingFilterWrapperParams[M, F, PC] */](getGui: () => HTMLElement, onParentModelChanged: M => Unit): IFloatingFilterWrapperComp[M, F, PC, P] = {
+    inline def apply[M, F /* <: FloatingFilterChange */, PC /* <: IFloatingFilterParams[M, F] */, P /* <: IFloatingFilterWrapperParams[M, F, PC] */](getGui: () => HTMLElement, onParentModelChanged: M => Unit): IFloatingFilterWrapperComp[M, F, PC, P] = {
       val __obj = js.Dynamic.literal(getGui = js.Any.fromFunction0(getGui), onParentModelChanged = js.Any.fromFunction1(onParentModelChanged))
       __obj.asInstanceOf[IFloatingFilterWrapperComp[M, F, PC, P]]
     }
@@ -127,8 +123,7 @@ object floatingFilterWrapperMod {
   }
   object IFloatingFilterWrapperParams {
     
-    @scala.inline
-    def apply[M, F /* <: FloatingFilterChange */, P /* <: IFloatingFilterParams[M, F] */](
+    inline def apply[M, F /* <: FloatingFilterChange */, P /* <: IFloatingFilterParams[M, F] */](
       column: Column,
       floatingFilterComp: Promise[IFloatingFilterComp[M, F, P]],
       suppressFilterButton: Boolean
@@ -137,17 +132,13 @@ object floatingFilterWrapperMod {
       __obj.asInstanceOf[IFloatingFilterWrapperParams[M, F, P]]
     }
     
-    @scala.inline
-    implicit class IFloatingFilterWrapperParamsMutableBuilder[Self <: IFloatingFilterWrapperParams[?, ?, ?], M, F /* <: FloatingFilterChange */, P /* <: IFloatingFilterParams[M, F] */] (val x: Self & (IFloatingFilterWrapperParams[M, F, P])) extends AnyVal {
+    extension [Self <: IFloatingFilterWrapperParams[?, ?, ?], M, F /* <: FloatingFilterChange */, P /* <: IFloatingFilterParams[M, F] */](x: Self & (IFloatingFilterWrapperParams[M, F, P])) {
       
-      @scala.inline
-      def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatingFilterComp(value: Promise[IFloatingFilterComp[M, F, P]]): Self = StObject.set(x, "floatingFilterComp", value.asInstanceOf[js.Any])
+      inline def setFloatingFilterComp(value: Promise[IFloatingFilterComp[M, F, P]]): Self = StObject.set(x, "floatingFilterComp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressFilterButton(value: Boolean): Self = StObject.set(x, "suppressFilterButton", value.asInstanceOf[js.Any])
+      inline def setSuppressFilterButton(value: Boolean): Self = StObject.set(x, "suppressFilterButton", value.asInstanceOf[js.Any])
     }
   }
 }

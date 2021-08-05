@@ -14,19 +14,15 @@ trait RevertVariableResponse extends StObject {
 }
 object RevertVariableResponse {
   
-  @scala.inline
-  def apply(): RevertVariableResponse = {
+  inline def apply(): RevertVariableResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevertVariableResponse]
   }
   
-  @scala.inline
-  implicit class RevertVariableResponseMutableBuilder[Self <: RevertVariableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RevertVariableResponse](x: Self) {
     
-    @scala.inline
-    def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
   }
 }

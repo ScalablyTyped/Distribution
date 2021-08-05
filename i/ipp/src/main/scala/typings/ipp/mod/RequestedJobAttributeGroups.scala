@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestedJobAttributeGroups extends StObject
 object RequestedJobAttributeGroups {
   
-  @scala.inline
-  def all: typings.ipp.ippStrings.all = "all".asInstanceOf[typings.ipp.ippStrings.all]
+  inline def all: typings.ipp.ippStrings.all = "all".asInstanceOf[typings.ipp.ippStrings.all]
   
-  @scala.inline
-  def `job-description`: typings.ipp.ippStrings.`job-description` = "job-description".asInstanceOf[typings.ipp.ippStrings.`job-description`]
+  inline def `job-description`: typings.ipp.ippStrings.`job-description` = "job-description".asInstanceOf[typings.ipp.ippStrings.`job-description`]
   
-  @scala.inline
-  def `job-template`: typings.ipp.ippStrings.`job-template` = "job-template".asInstanceOf[typings.ipp.ippStrings.`job-template`]
+  inline def `job-template`: typings.ipp.ippStrings.`job-template` = "job-template".asInstanceOf[typings.ipp.ippStrings.`job-template`]
 }

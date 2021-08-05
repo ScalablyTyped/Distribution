@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFileDialogType extends StObject
 object MsoFileDialogType {
   
-  @scala.inline
-  def msoFileDialogFilePicker: `3` = 3.asInstanceOf[`3`]
+  inline def msoFileDialogFilePicker: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoFileDialogFolderPicker: `4` = 4.asInstanceOf[`4`]
+  inline def msoFileDialogFolderPicker: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoFileDialogOpen: `1` = 1.asInstanceOf[`1`]
+  inline def msoFileDialogOpen: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoFileDialogSaveAs: `2` = 2.asInstanceOf[`2`]
+  inline def msoFileDialogSaveAs: `2` = 2.asInstanceOf[`2`]
 }

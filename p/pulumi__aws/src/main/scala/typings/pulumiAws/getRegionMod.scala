@@ -11,14 +11,10 @@ object getRegionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRegion(): js.Promise[GetRegionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")().asInstanceOf[js.Promise[GetRegionResult]]
-  @scala.inline
-  def getRegion(args: Unit, opts: InvokeOptions): js.Promise[GetRegionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionResult]]
-  @scala.inline
-  def getRegion(args: GetRegionArgs): js.Promise[GetRegionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRegionResult]]
-  @scala.inline
-  def getRegion(args: GetRegionArgs, opts: InvokeOptions): js.Promise[GetRegionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionResult]]
+  inline def getRegion(): js.Promise[GetRegionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")().asInstanceOf[js.Promise[GetRegionResult]]
+  inline def getRegion(args: Unit, opts: InvokeOptions): js.Promise[GetRegionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionResult]]
+  inline def getRegion(args: GetRegionArgs): js.Promise[GetRegionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRegionResult]]
+  inline def getRegion(args: GetRegionArgs, opts: InvokeOptions): js.Promise[GetRegionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegionResult]]
   
   trait GetRegionArgs extends StObject {
     
@@ -34,26 +30,20 @@ object getRegionMod {
   }
   object GetRegionArgs {
     
-    @scala.inline
-    def apply(): GetRegionArgs = {
+    inline def apply(): GetRegionArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetRegionArgs]
     }
     
-    @scala.inline
-    implicit class GetRegionArgsMutableBuilder[Self <: GetRegionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetRegionArgs](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -81,26 +71,20 @@ object getRegionMod {
   }
   object GetRegionResult {
     
-    @scala.inline
-    def apply(description: String, endpoint: String, id: String, name: String): GetRegionResult = {
+    inline def apply(description: String, endpoint: String, id: String, name: String): GetRegionResult = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRegionResult]
     }
     
-    @scala.inline
-    implicit class GetRegionResultMutableBuilder[Self <: GetRegionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetRegionResult](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

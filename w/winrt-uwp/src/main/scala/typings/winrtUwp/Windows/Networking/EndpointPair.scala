@@ -21,8 +21,7 @@ trait EndpointPair extends StObject {
 }
 object EndpointPair {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     localHostName: HostName,
     localServiceName: String,
     remoteHostName: HostName,
@@ -32,19 +31,14 @@ object EndpointPair {
     __obj.asInstanceOf[EndpointPair]
   }
   
-  @scala.inline
-  implicit class EndpointPairMutableBuilder[Self <: EndpointPair] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointPair](x: Self) {
     
-    @scala.inline
-    def setLocalHostName(value: HostName): Self = StObject.set(x, "localHostName", value.asInstanceOf[js.Any])
+    inline def setLocalHostName(value: HostName): Self = StObject.set(x, "localHostName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalServiceName(value: String): Self = StObject.set(x, "localServiceName", value.asInstanceOf[js.Any])
+    inline def setLocalServiceName(value: String): Self = StObject.set(x, "localServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteHostName(value: HostName): Self = StObject.set(x, "remoteHostName", value.asInstanceOf[js.Any])
+    inline def setRemoteHostName(value: HostName): Self = StObject.set(x, "remoteHostName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteServiceName(value: String): Self = StObject.set(x, "remoteServiceName", value.asInstanceOf[js.Any])
+    inline def setRemoteServiceName(value: String): Self = StObject.set(x, "remoteServiceName", value.asInstanceOf[js.Any])
   }
 }

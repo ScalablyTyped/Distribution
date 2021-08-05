@@ -12,10 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
-  @scala.inline
-  def default(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  inline def default(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   trait Options extends StObject {
     
@@ -62,50 +60,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDithering(value: Double | Boolean): Self = StObject.set(x, "dithering", value.asInstanceOf[js.Any])
+      inline def setDithering(value: Double | Boolean): Self = StObject.set(x, "dithering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDitheringUndefined: Self = StObject.set(x, "dithering", js.undefined)
+      inline def setDitheringUndefined: Self = StObject.set(x, "dithering", js.undefined)
       
-      @scala.inline
-      def setPosterize(value: Double): Self = StObject.set(x, "posterize", value.asInstanceOf[js.Any])
+      inline def setPosterize(value: Double): Self = StObject.set(x, "posterize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosterizeUndefined: Self = StObject.set(x, "posterize", js.undefined)
+      inline def setPosterizeUndefined: Self = StObject.set(x, "posterize", js.undefined)
       
-      @scala.inline
-      def setQuality(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+      inline def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
+      inline def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   

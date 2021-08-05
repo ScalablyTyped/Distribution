@@ -28,34 +28,25 @@ trait TransformInput extends StObject {
 }
 object TransformInput {
   
-  @scala.inline
-  def apply(DataSource: TransformDataSource): TransformInput = {
+  inline def apply(DataSource: TransformDataSource): TransformInput = {
     val __obj = js.Dynamic.literal(DataSource = DataSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformInput]
   }
   
-  @scala.inline
-  implicit class TransformInputMutableBuilder[Self <: TransformInput] (val x: Self) extends AnyVal {
+  extension [Self <: TransformInput](x: Self) {
     
-    @scala.inline
-    def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
+    inline def setCompressionType(value: CompressionType): Self = StObject.set(x, "CompressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
+    inline def setCompressionTypeUndefined: Self = StObject.set(x, "CompressionType", js.undefined)
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setDataSource(value: TransformDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: TransformDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitType(value: SplitType): Self = StObject.set(x, "SplitType", value.asInstanceOf[js.Any])
+    inline def setSplitType(value: SplitType): Self = StObject.set(x, "SplitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitTypeUndefined: Self = StObject.set(x, "SplitType", js.undefined)
+    inline def setSplitTypeUndefined: Self = StObject.set(x, "SplitType", js.undefined)
   }
 }

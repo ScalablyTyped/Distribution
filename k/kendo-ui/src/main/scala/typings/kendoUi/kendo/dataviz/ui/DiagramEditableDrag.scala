@@ -10,19 +10,15 @@ trait DiagramEditableDrag extends StObject {
 }
 object DiagramEditableDrag {
   
-  @scala.inline
-  def apply(): DiagramEditableDrag = {
+  inline def apply(): DiagramEditableDrag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramEditableDrag]
   }
   
-  @scala.inline
-  implicit class DiagramEditableDragMutableBuilder[Self <: DiagramEditableDrag] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramEditableDrag](x: Self) {
     
-    @scala.inline
-    def setSnap(value: Boolean | DiagramEditableDragSnap): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+    inline def setSnap(value: Boolean | DiagramEditableDragSnap): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+    inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
   }
 }

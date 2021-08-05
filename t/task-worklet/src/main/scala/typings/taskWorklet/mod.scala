@@ -32,20 +32,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -59,20 +55,15 @@ object mod {
   trait State extends StObject
   object State {
     
-    @scala.inline
-    def cancelled: typings.taskWorklet.taskWorkletStrings.cancelled = "cancelled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.cancelled]
+    inline def cancelled: typings.taskWorklet.taskWorkletStrings.cancelled = "cancelled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.cancelled]
     
-    @scala.inline
-    def completed: typings.taskWorklet.taskWorkletStrings.completed = "completed".asInstanceOf[typings.taskWorklet.taskWorkletStrings.completed]
+    inline def completed: typings.taskWorklet.taskWorkletStrings.completed = "completed".asInstanceOf[typings.taskWorklet.taskWorkletStrings.completed]
     
-    @scala.inline
-    def fulfilled: typings.taskWorklet.taskWorkletStrings.fulfilled = "fulfilled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.fulfilled]
+    inline def fulfilled: typings.taskWorklet.taskWorkletStrings.fulfilled = "fulfilled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.fulfilled]
     
-    @scala.inline
-    def pending: typings.taskWorklet.taskWorkletStrings.pending = "pending".asInstanceOf[typings.taskWorklet.taskWorkletStrings.pending]
+    inline def pending: typings.taskWorklet.taskWorkletStrings.pending = "pending".asInstanceOf[typings.taskWorklet.taskWorkletStrings.pending]
     
-    @scala.inline
-    def scheduled: typings.taskWorklet.taskWorkletStrings.scheduled = "scheduled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.scheduled]
+    inline def scheduled: typings.taskWorklet.taskWorkletStrings.scheduled = "scheduled".asInstanceOf[typings.taskWorklet.taskWorkletStrings.scheduled]
   }
   
   trait Task[T] extends StObject {
@@ -85,23 +76,18 @@ object mod {
   }
   object Task {
     
-    @scala.inline
-    def apply[T](id: Double, result: js.Promise[T], state: State): Task[T] = {
+    inline def apply[T](id: Double, result: js.Promise[T], state: State): Task[T] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Task[T]]
     }
     
-    @scala.inline
-    implicit class TaskMutableBuilder[Self <: Task[?], T] (val x: Self & Task[T]) extends AnyVal {
+    extension [Self <: Task[?], T](x: Self & Task[T]) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: js.Promise[T]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Promise[T]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,8 +113,7 @@ object mod {
   }
   object TaskQueue {
     
-    @scala.inline
-    def apply[T /* <: TaskDescriptor */](
+    inline def apply[T /* <: TaskDescriptor */](
       addModule: String => js.Promise[Unit],
       postTask: (/* import warning: importer.ImportType#apply Failed type conversion: U['name'] */ js.Any, Parameters[js.Any]) => Task[ReturnType[js.Any]]
     ): TaskQueue[T] = {
@@ -136,14 +121,11 @@ object mod {
       __obj.asInstanceOf[TaskQueue[T]]
     }
     
-    @scala.inline
-    implicit class TaskQueueMutableBuilder[Self <: TaskQueue[?], T /* <: TaskDescriptor */] (val x: Self & TaskQueue[T]) extends AnyVal {
+    extension [Self <: TaskQueue[?], T /* <: TaskDescriptor */](x: Self & TaskQueue[T]) {
       
-      @scala.inline
-      def setAddModule(value: String => js.Promise[Unit]): Self = StObject.set(x, "addModule", js.Any.fromFunction1(value))
+      inline def setAddModule(value: String => js.Promise[Unit]): Self = StObject.set(x, "addModule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPostTask(
+      inline def setPostTask(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: U['name'] */ js.Any, Parameters[js.Any]) => Task[ReturnType[js.Any]]
       ): Self = StObject.set(x, "postTask", js.Any.fromFunction2(value))
     }

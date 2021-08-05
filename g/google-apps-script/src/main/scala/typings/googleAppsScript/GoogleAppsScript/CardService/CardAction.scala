@@ -30,8 +30,7 @@ trait CardAction extends StObject {
 }
 object CardAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setAuthorizationAction: AuthorizationAction => CardAction,
     setComposeAction: (Action, ComposedEmailType) => CardAction,
     setOnClickAction: Action => CardAction,
@@ -43,25 +42,18 @@ object CardAction {
     __obj.asInstanceOf[CardAction]
   }
   
-  @scala.inline
-  implicit class CardActionMutableBuilder[Self <: CardAction] (val x: Self) extends AnyVal {
+  extension [Self <: CardAction](x: Self) {
     
-    @scala.inline
-    def setSetAuthorizationAction(value: AuthorizationAction => CardAction): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
+    inline def setSetAuthorizationAction(value: AuthorizationAction => CardAction): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetComposeAction(value: (Action, ComposedEmailType) => CardAction): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
+    inline def setSetComposeAction(value: (Action, ComposedEmailType) => CardAction): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetOnClickAction(value: Action => CardAction): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
+    inline def setSetOnClickAction(value: Action => CardAction): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnClickOpenLinkAction(value: Action => CardAction): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
+    inline def setSetOnClickOpenLinkAction(value: Action => CardAction): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpenLink(value: OpenLink => CardAction): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+    inline def setSetOpenLink(value: OpenLink => CardAction): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => CardAction): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => CardAction): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

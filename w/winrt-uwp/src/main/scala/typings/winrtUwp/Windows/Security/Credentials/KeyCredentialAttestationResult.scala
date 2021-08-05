@@ -19,8 +19,7 @@ trait KeyCredentialAttestationResult extends StObject {
 }
 object KeyCredentialAttestationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attestationBuffer: IBuffer,
     certificateChainBuffer: IBuffer,
     status: KeyCredentialAttestationStatus
@@ -29,16 +28,12 @@ object KeyCredentialAttestationResult {
     __obj.asInstanceOf[KeyCredentialAttestationResult]
   }
   
-  @scala.inline
-  implicit class KeyCredentialAttestationResultMutableBuilder[Self <: KeyCredentialAttestationResult] (val x: Self) extends AnyVal {
+  extension [Self <: KeyCredentialAttestationResult](x: Self) {
     
-    @scala.inline
-    def setAttestationBuffer(value: IBuffer): Self = StObject.set(x, "attestationBuffer", value.asInstanceOf[js.Any])
+    inline def setAttestationBuffer(value: IBuffer): Self = StObject.set(x, "attestationBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateChainBuffer(value: IBuffer): Self = StObject.set(x, "certificateChainBuffer", value.asInstanceOf[js.Any])
+    inline def setCertificateChainBuffer(value: IBuffer): Self = StObject.set(x, "certificateChainBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: KeyCredentialAttestationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: KeyCredentialAttestationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

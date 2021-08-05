@@ -23,25 +23,19 @@ trait StartImportTaskRequest extends StObject {
 }
 object StartImportTaskRequest {
   
-  @scala.inline
-  def apply(importUrl: ImportURL, name: ImportTaskName): StartImportTaskRequest = {
+  inline def apply(importUrl: ImportURL, name: ImportTaskName): StartImportTaskRequest = {
     val __obj = js.Dynamic.literal(importUrl = importUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImportTaskRequest]
   }
   
-  @scala.inline
-  implicit class StartImportTaskRequestMutableBuilder[Self <: StartImportTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartImportTaskRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setImportUrl(value: ImportURL): Self = StObject.set(x, "importUrl", value.asInstanceOf[js.Any])
+    inline def setImportUrl(value: ImportURL): Self = StObject.set(x, "importUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ImportTaskName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ImportTaskName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

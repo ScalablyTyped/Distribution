@@ -144,11 +144,9 @@ object PlayTo {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.Media.PlayTo.PlayToManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.Media.PlayTo.PlayToManager]
+    inline def getForCurrentView(): typings.winrt.Windows.Media.PlayTo.PlayToManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.Media.PlayTo.PlayToManager]
     
-    @scala.inline
-    def showPlayToUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showPlayToUI")().asInstanceOf[Unit]
+    inline def showPlayToUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showPlayToUI")().asInstanceOf[Unit]
   }
   
   @JSGlobal("Windows.Media.PlayTo.PlayToReceiver")

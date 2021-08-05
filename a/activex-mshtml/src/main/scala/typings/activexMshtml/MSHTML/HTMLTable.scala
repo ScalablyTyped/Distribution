@@ -10,7 +10,7 @@ trait HTMLTable extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLTable_typekey")
+  /* private */ @JSName("MSHTML.HTMLTable_typekey")
   var MSHTMLDotHTMLTable_typekey: HTMLTable = js.native
   
   var accessKey: String = js.native

@@ -17,20 +17,16 @@ trait Decorator_
 }
 object Decorator_ {
   
-  @scala.inline
-  def apply(expression: Expression): Decorator_ = {
+  inline def apply(expression: Expression): Decorator_ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("Decorator")
     __obj.asInstanceOf[Decorator_]
   }
   
-  @scala.inline
-  implicit class Decorator_MutableBuilder[Self <: Decorator_] (val x: Self) extends AnyVal {
+  extension [Self <: Decorator_](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Decorator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Decorator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SharedHookType extends StObject
 object SharedHookType {
   
-  @scala.inline
-  def afterAll: typings.jestTypes.jestTypesStrings.afterAll = "afterAll".asInstanceOf[typings.jestTypes.jestTypesStrings.afterAll]
+  inline def afterAll: typings.jestTypes.jestTypesStrings.afterAll = "afterAll".asInstanceOf[typings.jestTypes.jestTypesStrings.afterAll]
   
-  @scala.inline
-  def beforeAll: typings.jestTypes.jestTypesStrings.beforeAll = "beforeAll".asInstanceOf[typings.jestTypes.jestTypesStrings.beforeAll]
+  inline def beforeAll: typings.jestTypes.jestTypesStrings.beforeAll = "beforeAll".asInstanceOf[typings.jestTypes.jestTypesStrings.beforeAll]
 }

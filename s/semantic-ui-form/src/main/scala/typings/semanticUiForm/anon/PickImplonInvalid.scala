@@ -14,16 +14,13 @@ trait PickImplonInvalid extends StObject {
 }
 object PickImplonInvalid {
   
-  @scala.inline
-  def apply(onInvalid: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonInvalid = {
+  inline def apply(onInvalid: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonInvalid = {
     val __obj = js.Dynamic.literal(onInvalid = onInvalid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonInvalid]
   }
   
-  @scala.inline
-  implicit class PickImplonInvalidMutableBuilder[Self <: PickImplonInvalid] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonInvalid](x: Self) {
     
-    @scala.inline
-    def setOnInvalid(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
+    inline def setOnInvalid(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
   }
 }

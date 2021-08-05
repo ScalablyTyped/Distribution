@@ -26,8 +26,7 @@ trait MapContext extends StObject {
 }
 object MapContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCenterLocation: GetCenterLocationSuccCbOptions => Unit,
     getRegion: GetReginOptions => Unit,
     getScale: GetScaleOptions => Unit,
@@ -39,25 +38,18 @@ object MapContext {
     __obj.asInstanceOf[MapContext]
   }
   
-  @scala.inline
-  implicit class MapContextMutableBuilder[Self <: MapContext] (val x: Self) extends AnyVal {
+  extension [Self <: MapContext](x: Self) {
     
-    @scala.inline
-    def setGetCenterLocation(value: GetCenterLocationSuccCbOptions => Unit): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
+    inline def setGetCenterLocation(value: GetCenterLocationSuccCbOptions => Unit): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRegion(value: GetReginOptions => Unit): Self = StObject.set(x, "getRegion", js.Any.fromFunction1(value))
+    inline def setGetRegion(value: GetReginOptions => Unit): Self = StObject.set(x, "getRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScale(value: GetScaleOptions => Unit): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
+    inline def setGetScale(value: GetScaleOptions => Unit): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludePoints(value: zoomPointsOptions => Unit): Self = StObject.set(x, "includePoints", js.Any.fromFunction1(value))
+    inline def setIncludePoints(value: zoomPointsOptions => Unit): Self = StObject.set(x, "includePoints", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveToLocation(value: () => Unit): Self = StObject.set(x, "moveToLocation", js.Any.fromFunction0(value))
+    inline def setMoveToLocation(value: () => Unit): Self = StObject.set(x, "moveToLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTranslateMarker(value: translateMarkerOptions => Unit): Self = StObject.set(x, "translateMarker", js.Any.fromFunction1(value))
+    inline def setTranslateMarker(value: translateMarkerOptions => Unit): Self = StObject.set(x, "translateMarker", js.Any.fromFunction1(value))
   }
 }

@@ -72,8 +72,7 @@ object mod {
   @JSImport("priorityqueuejs", "DEFAULT_COMPARATOR")
   @js.native
   def DEFAULT_COMPARATOR: Comparator[Double | String] = js.native
-  @scala.inline
-  def DEFAULT_COMPARATOR_=(x: Comparator[Double | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_COMPARATOR")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_COMPARATOR_=(x: Comparator[Double | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_COMPARATOR")(x.asInstanceOf[js.Any])
   
   type Comparator[T] = js.Function2[/* a */ T, /* b */ T, Double]
   
@@ -116,8 +115,7 @@ object mod {
   }
   object PriorityQueue {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       deq: () => T,
       enq: T => Double,
       forEach: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit] => Unit,
@@ -129,26 +127,19 @@ object mod {
       __obj.asInstanceOf[PriorityQueue[T]]
     }
     
-    @scala.inline
-    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[?], T] (val x: Self & PriorityQueue[T]) extends AnyVal {
+    extension [Self <: PriorityQueue[?], T](x: Self & PriorityQueue[T]) {
       
-      @scala.inline
-      def setDeq(value: () => T): Self = StObject.set(x, "deq", js.Any.fromFunction0(value))
+      inline def setDeq(value: () => T): Self = StObject.set(x, "deq", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnq(value: T => Double): Self = StObject.set(x, "enq", js.Any.fromFunction1(value))
+      inline def setEnq(value: T => Double): Self = StObject.set(x, "enq", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeek(value: () => T): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => T): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     }
   }
 }

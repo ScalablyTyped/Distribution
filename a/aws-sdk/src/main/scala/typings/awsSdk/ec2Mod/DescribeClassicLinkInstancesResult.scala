@@ -18,28 +18,21 @@ trait DescribeClassicLinkInstancesResult extends StObject {
 }
 object DescribeClassicLinkInstancesResult {
   
-  @scala.inline
-  def apply(): DescribeClassicLinkInstancesResult = {
+  inline def apply(): DescribeClassicLinkInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeClassicLinkInstancesResult]
   }
   
-  @scala.inline
-  implicit class DescribeClassicLinkInstancesResultMutableBuilder[Self <: DescribeClassicLinkInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClassicLinkInstancesResult](x: Self) {
     
-    @scala.inline
-    def setInstances(value: ClassicLinkInstanceList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: ClassicLinkInstanceList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: ClassicLinkInstance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: ClassicLinkInstance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

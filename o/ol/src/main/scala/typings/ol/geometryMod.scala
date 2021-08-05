@@ -84,9 +84,9 @@ object geometryMod {
     def scale(sx: Double, opt_sy: Double, opt_anchor: Coordinate): Unit = js.native
     def scale(sx: Double, opt_sy: Unit, opt_anchor: Coordinate): Unit = js.native
     
-    var simplifiedGeometryMaxMinSquaredTolerance: Double = js.native
+    /* protected */ var simplifiedGeometryMaxMinSquaredTolerance: Double = js.native
     
-    var simplifiedGeometryRevision: Double = js.native
+    /* protected */ var simplifiedGeometryRevision: Double = js.native
     
     /**
       * Create a simplified version of this geometry.  For linestrings, this uses

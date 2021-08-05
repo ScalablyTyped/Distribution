@@ -462,26 +462,20 @@ object Chai {
   }
   object AssertionError {
     
-    @scala.inline
-    def apply(message: String, name: String, showDiff: Boolean, stack: String): AssertionError = {
+    inline def apply(message: String, name: String, showDiff: Boolean, stack: String): AssertionError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], showDiff = showDiff.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssertionError]
     }
     
-    @scala.inline
-    implicit class AssertionErrorMutableBuilder[Self <: AssertionError] (val x: Self) extends AnyVal {
+    extension [Self <: AssertionError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDiff(value: Boolean): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
+      inline def setShowDiff(value: Boolean): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -514,8 +508,7 @@ object Chai {
   }
   object ChaiStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assert: AssertStatic,
       config: Config,
       expect: (/* target */ js.Any, /* message */ js.UndefOr[String]) => Assertion,
@@ -526,23 +519,17 @@ object Chai {
       __obj.asInstanceOf[ChaiStatic]
     }
     
-    @scala.inline
-    implicit class ChaiStaticMutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ChaiStatic](x: Self) {
       
-      @scala.inline
-      def setAssert(value: AssertStatic): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+      inline def setAssert(value: AssertStatic): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpect(value: (/* target */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "expect", js.Any.fromFunction2(value))
+      inline def setExpect(value: (/* target */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "expect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShould(value: () => Should): Self = StObject.set(x, "should", js.Any.fromFunction0(value))
+      inline def setShould(value: () => Should): Self = StObject.set(x, "should", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUse(value: js.Function2[/* chai */ js.Any, /* utils */ js.Any, Unit] => js.Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
+      inline def setUse(value: js.Function2[/* chai */ js.Any, /* utils */ js.Any, Unit] => js.Any): Self = StObject.set(x, "use", js.Any.fromFunction1(value))
     }
   }
   
@@ -552,17 +539,14 @@ object Chai {
   }
   object Config {
     
-    @scala.inline
-    def apply(includeStack: Boolean): Config = {
+    inline def apply(includeStack: Boolean): Config = {
       val __obj = js.Dynamic.literal(includeStack = includeStack.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setIncludeStack(value: Boolean): Self = StObject.set(x, "includeStack", value.asInstanceOf[js.Any])
+      inline def setIncludeStack(value: Boolean): Self = StObject.set(x, "includeStack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -591,8 +575,7 @@ object Chai {
   }
   object Deep {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       equal: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion,
       include: Include,
       property: (/* name */ String, /* value */ js.UndefOr[js.Any], /* message */ js.UndefOr[String]) => Assertion
@@ -601,17 +584,13 @@ object Chai {
       __obj.asInstanceOf[Deep]
     }
     
-    @scala.inline
-    implicit class DeepMutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
+    extension [Self <: Deep](x: Self) {
       
-      @scala.inline
-      def setEqual(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
+      inline def setEqual(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(
+      inline def setProperty(
         value: (/* name */ String, /* value */ js.UndefOr[js.Any], /* message */ js.UndefOr[String]) => Assertion
       ): Self = StObject.set(x, "property", js.Any.fromFunction3(value))
     }
@@ -720,8 +699,7 @@ object Chai {
   }
   object LanguageChains {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       and: Assertion,
       at: Assertion,
       be: Assertion,
@@ -741,47 +719,33 @@ object Chai {
       __obj.asInstanceOf[LanguageChains]
     }
     
-    @scala.inline
-    implicit class LanguageChainsMutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
+    extension [Self <: LanguageChains](x: Self) {
       
-      @scala.inline
-      def setAnd(value: Assertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+      inline def setAnd(value: Assertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAt(value: Assertion): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+      inline def setAt(value: Assertion): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBe(value: Assertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
+      inline def setBe(value: Assertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeen(value: Assertion): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
+      inline def setBeen(value: Assertion): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas(value: Assertion): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
+      inline def setHas(value: Assertion): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHave(value: Assertion): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
+      inline def setHave(value: Assertion): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs(value: Assertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+      inline def setIs(value: Assertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOf(value: Assertion): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+      inline def setOf(value: Assertion): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSame(value: Assertion): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
+      inline def setSame(value: Assertion): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThat(value: Assertion): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
+      inline def setThat(value: Assertion): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: Assertion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Assertion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: Assertion): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Assertion): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWith(value: Assertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
+      inline def setWith(value: Assertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
     }
   }
   

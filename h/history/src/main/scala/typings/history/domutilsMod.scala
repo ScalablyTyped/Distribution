@@ -13,26 +13,19 @@ object domutilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addEventListener(node: EventTarget, event: String, listener: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addEventListener(node: EventTarget, event: String, listener: EventListenerObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener(node: EventTarget, event: String, listener: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener(node: EventTarget, event: String, listener: EventListenerObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getConfirmation(message: String, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfirmation")(message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getConfirmation(message: String, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfirmation")(message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("history/DOMUtils", "isExtraneousPopstateEvent")
   @js.native
   val isExtraneousPopstateEvent: Boolean = js.native
   
-  @scala.inline
-  def removeEventListener(node: EventTarget, event: String, listener: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeEventListener(node: EventTarget, event: String, listener: EventListenerObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(node: EventTarget, event: String, listener: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(node: EventTarget, event: String, listener: EventListenerObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def supportsGoWithoutReloadUsingHash(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsGoWithoutReloadUsingHash")().asInstanceOf[Boolean]
+  inline def supportsGoWithoutReloadUsingHash(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsGoWithoutReloadUsingHash")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def supportsHistory(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsHistory")().asInstanceOf[Boolean]
+  inline def supportsHistory(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsHistory")().asInstanceOf[Boolean]
 }

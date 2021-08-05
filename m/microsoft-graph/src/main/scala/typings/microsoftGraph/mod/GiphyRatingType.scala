@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GiphyRatingType extends StObject
 object GiphyRatingType {
   
-  @scala.inline
-  def moderate: typings.microsoftGraph.microsoftGraphStrings.moderate = "moderate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.moderate]
+  inline def moderate: typings.microsoftGraph.microsoftGraphStrings.moderate = "moderate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.moderate]
   
-  @scala.inline
-  def strict: typings.microsoftGraph.microsoftGraphStrings.strict = "strict".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.strict]
+  inline def strict: typings.microsoftGraph.microsoftGraphStrings.strict = "strict".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.strict]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

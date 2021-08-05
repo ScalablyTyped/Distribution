@@ -18,25 +18,19 @@ trait CreateRoutingProfileResponse extends StObject {
 }
 object CreateRoutingProfileResponse {
   
-  @scala.inline
-  def apply(): CreateRoutingProfileResponse = {
+  inline def apply(): CreateRoutingProfileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRoutingProfileResponse]
   }
   
-  @scala.inline
-  implicit class CreateRoutingProfileResponseMutableBuilder[Self <: CreateRoutingProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRoutingProfileResponse](x: Self) {
     
-    @scala.inline
-    def setRoutingProfileArn(value: ARN): Self = StObject.set(x, "RoutingProfileArn", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileArn(value: ARN): Self = StObject.set(x, "RoutingProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingProfileArnUndefined: Self = StObject.set(x, "RoutingProfileArn", js.undefined)
+    inline def setRoutingProfileArnUndefined: Self = StObject.set(x, "RoutingProfileArn", js.undefined)
     
-    @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingProfileIdUndefined: Self = StObject.set(x, "RoutingProfileId", js.undefined)
+    inline def setRoutingProfileIdUndefined: Self = StObject.set(x, "RoutingProfileId", js.undefined)
   }
 }

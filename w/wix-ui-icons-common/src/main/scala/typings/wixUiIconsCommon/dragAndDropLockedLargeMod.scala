@@ -22,20 +22,16 @@ object dragAndDropLockedLargeMod extends Shortcut {
   }
   object DragAndDropLockedLargeProps {
     
-    @scala.inline
-    def apply(): DragAndDropLockedLargeProps = {
+    inline def apply(): DragAndDropLockedLargeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DragAndDropLockedLargeProps]
     }
     
-    @scala.inline
-    implicit class DragAndDropLockedLargePropsMutableBuilder[Self <: DragAndDropLockedLargeProps] (val x: Self) extends AnyVal {
+    extension [Self <: DragAndDropLockedLargeProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

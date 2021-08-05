@@ -84,62 +84,44 @@ object headerCellMod {
   }
   object IHeaderCellProps {
     
-    @scala.inline
-    def apply(): IHeaderCellProps = {
+    inline def apply(): IHeaderCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHeaderCellProps]
     }
     
-    @scala.inline
-    implicit class IHeaderCellPropsMutableBuilder[Self <: IHeaderCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: IHeaderCellProps](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setMenuRenderer(value: /* index */ js.UndefOr[Double] => Element): Self = StObject.set(x, "menuRenderer", js.Any.fromFunction1(value))
+      inline def setMenuRenderer(value: /* index */ js.UndefOr[Double] => Element): Self = StObject.set(x, "menuRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMenuRendererUndefined: Self = StObject.set(x, "menuRenderer", js.undefined)
+      inline def setMenuRendererUndefined: Self = StObject.set(x, "menuRenderer", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setReorderHandle(value: Element): Self = StObject.set(x, "reorderHandle", value.asInstanceOf[js.Any])
+      inline def setReorderHandle(value: Element): Self = StObject.set(x, "reorderHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReorderHandleUndefined: Self = StObject.set(x, "reorderHandle", js.undefined)
+      inline def setReorderHandleUndefined: Self = StObject.set(x, "reorderHandle", js.undefined)
       
-      @scala.inline
-      def setResizeHandle(value: ResizeHandle): Self = StObject.set(x, "resizeHandle", value.asInstanceOf[js.Any])
+      inline def setResizeHandle(value: ResizeHandle): Self = StObject.set(x, "resizeHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeHandleUndefined: Self = StObject.set(x, "resizeHandle", js.undefined)
+      inline def setResizeHandleUndefined: Self = StObject.set(x, "resizeHandle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -149,17 +131,14 @@ object headerCellMod {
   }
   object IHeaderCellState {
     
-    @scala.inline
-    def apply(isActive: Boolean): IHeaderCellState = {
+    inline def apply(isActive: Boolean): IHeaderCellState = {
       val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHeaderCellState]
     }
     
-    @scala.inline
-    implicit class IHeaderCellStateMutableBuilder[Self <: IHeaderCellState] (val x: Self) extends AnyVal {
+    extension [Self <: IHeaderCellState](x: Self) {
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,20 +153,16 @@ object headerCellMod {
   }
   object IInternalHeaderCellProps {
     
-    @scala.inline
-    def apply(): IInternalHeaderCellProps = {
+    inline def apply(): IInternalHeaderCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IInternalHeaderCellProps]
     }
     
-    @scala.inline
-    implicit class IInternalHeaderCellPropsMutableBuilder[Self <: IInternalHeaderCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: IInternalHeaderCellProps](x: Self) {
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
     }
   }
 }

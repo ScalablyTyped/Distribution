@@ -12,25 +12,19 @@ trait SpreadsheetSheetFilterColumnCriteriaItem extends StObject {
 }
 object SpreadsheetSheetFilterColumnCriteriaItem {
   
-  @scala.inline
-  def apply(): SpreadsheetSheetFilterColumnCriteriaItem = {
+  inline def apply(): SpreadsheetSheetFilterColumnCriteriaItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpreadsheetSheetFilterColumnCriteriaItem]
   }
   
-  @scala.inline
-  implicit class SpreadsheetSheetFilterColumnCriteriaItemMutableBuilder[Self <: SpreadsheetSheetFilterColumnCriteriaItem] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetSheetFilterColumnCriteriaItem](x: Self) {
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

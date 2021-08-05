@@ -29,10 +29,8 @@ memoized('bar');
 */
 object mod {
   
-  @scala.inline
-  def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize): FunctionToMemoize = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[FunctionToMemoize]
-  @scala.inline
-  def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize, hasCacheKeyCacheMaxAge: Options[FunctionToMemoize, CacheKeyType]): FunctionToMemoize = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], hasCacheKeyCacheMaxAge.asInstanceOf[js.Any])).asInstanceOf[FunctionToMemoize]
+  inline def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize): FunctionToMemoize = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[FunctionToMemoize]
+  inline def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize, hasCacheKeyCacheMaxAge: Options[FunctionToMemoize, CacheKeyType]): FunctionToMemoize = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], hasCacheKeyCacheMaxAge.asInstanceOf[js.Any])).asInstanceOf[FunctionToMemoize]
   
   @JSImport("mem", JSImport.Namespace)
   @js.native
@@ -43,8 +41,7 @@ object mod {
     
     @param fn - Memoized function.
     */
-  @scala.inline
-  def clear(fn: AnyFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clear(fn: AnyFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type AnyFunction = js.Function1[/* arguments_ */ js.Any, js.Any]
   
@@ -62,8 +59,7 @@ object mod {
   }
   object CacheStorage {
     
-    @scala.inline
-    def apply[KeyType, ValueType](
+    inline def apply[KeyType, ValueType](
       delete: KeyType => Unit,
       get: KeyType => js.UndefOr[CacheStorageContent[ValueType]],
       has: KeyType => Boolean,
@@ -73,26 +69,19 @@ object mod {
       __obj.asInstanceOf[CacheStorage[KeyType, ValueType]]
     }
     
-    @scala.inline
-    implicit class CacheStorageMutableBuilder[Self <: CacheStorage[?, ?], KeyType, ValueType] (val x: Self & (CacheStorage[KeyType, ValueType])) extends AnyVal {
+    extension [Self <: CacheStorage[?, ?], KeyType, ValueType](x: Self & (CacheStorage[KeyType, ValueType])) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      @scala.inline
-      def setDelete(value: KeyType => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: KeyType => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: KeyType => js.UndefOr[CacheStorageContent[ValueType]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: KeyType => js.UndefOr[CacheStorageContent[ValueType]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: KeyType => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: KeyType => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (KeyType, CacheStorageContent[ValueType]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (KeyType, CacheStorageContent[ValueType]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -104,20 +93,16 @@ object mod {
   }
   object CacheStorageContent {
     
-    @scala.inline
-    def apply[ValueType](data: ValueType, maxAge: Double): CacheStorageContent[ValueType] = {
+    inline def apply[ValueType](data: ValueType, maxAge: Double): CacheStorageContent[ValueType] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], maxAge = maxAge.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheStorageContent[ValueType]]
     }
     
-    @scala.inline
-    implicit class CacheStorageContentMutableBuilder[Self <: CacheStorageContent[?], ValueType] (val x: Self & CacheStorageContent[ValueType]) extends AnyVal {
+    extension [Self <: CacheStorageContent[?], ValueType](x: Self & CacheStorageContent[ValueType]) {
       
-      @scala.inline
-      def setData(value: ValueType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ValueType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,32 +142,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](): Options[FunctionToMemoize, CacheKeyType] = {
+    inline def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](): Options[FunctionToMemoize, CacheKeyType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[FunctionToMemoize, CacheKeyType]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], FunctionToMemoize /* <: AnyFunction */, CacheKeyType] (val x: Self & (Options[FunctionToMemoize, CacheKeyType])) extends AnyVal {
+    extension [Self <: Options[?, ?], FunctionToMemoize /* <: AnyFunction */, CacheKeyType](x: Self & (Options[FunctionToMemoize, CacheKeyType])) {
       
-      @scala.inline
-      def setCache(value: CacheStorage[CacheKeyType, ReturnType[FunctionToMemoize]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: CacheStorage[CacheKeyType, ReturnType[FunctionToMemoize]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheKey(value: /* arguments_ */ Parameters[FunctionToMemoize] => CacheKeyType): Self = StObject.set(x, "cacheKey", js.Any.fromFunction1(value))
+      inline def setCacheKey(value: /* arguments_ */ Parameters[FunctionToMemoize] => CacheKeyType): Self = StObject.set(x, "cacheKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
+      inline def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     }
   }
 }

@@ -18,8 +18,7 @@ trait ParametersScimUpdateAttributeForUserEndpoint extends StObject {
 }
 object ParametersScimUpdateAttributeForUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ScimUpdateAttributeForUserEndpoint,
     request: ScimUpdateAttributeForUserRequestOptions,
     response: OctokitResponse[ScimUpdateAttributeForUserResponseData]
@@ -28,16 +27,12 @@ object ParametersScimUpdateAttributeForUserEndpoint {
     __obj.asInstanceOf[ParametersScimUpdateAttributeForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersScimUpdateAttributeForUserEndpointMutableBuilder[Self <: ParametersScimUpdateAttributeForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersScimUpdateAttributeForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ScimUpdateAttributeForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ScimUpdateAttributeForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ScimUpdateAttributeForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ScimUpdateAttributeForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ScimUpdateAttributeForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ScimUpdateAttributeForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

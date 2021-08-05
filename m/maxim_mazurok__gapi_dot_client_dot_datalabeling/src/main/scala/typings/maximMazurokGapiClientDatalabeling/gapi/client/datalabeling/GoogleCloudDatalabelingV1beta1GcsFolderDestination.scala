@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1GcsFolderDestination extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1GcsFolderDestination {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1GcsFolderDestination = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1GcsFolderDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1GcsFolderDestination]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1GcsFolderDestinationMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1GcsFolderDestination] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1GcsFolderDestination](x: Self) {
     
-    @scala.inline
-    def setOutputFolderUri(value: String): Self = StObject.set(x, "outputFolderUri", value.asInstanceOf[js.Any])
+    inline def setOutputFolderUri(value: String): Self = StObject.set(x, "outputFolderUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFolderUriUndefined: Self = StObject.set(x, "outputFolderUri", js.undefined)
+    inline def setOutputFolderUriUndefined: Self = StObject.set(x, "outputFolderUri", js.undefined)
   }
 }

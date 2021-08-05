@@ -14,20 +14,16 @@ object anon {
   }
   object Mgmt {
     
-    @scala.inline
-    def apply(mgmt: String, query: String): Mgmt = {
+    inline def apply(mgmt: String, query: String): Mgmt = {
       val __obj = js.Dynamic.literal(mgmt = mgmt.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mgmt]
     }
     
-    @scala.inline
-    implicit class MgmtMutableBuilder[Self <: Mgmt] (val x: Self) extends AnyVal {
+    extension [Self <: Mgmt](x: Self) {
       
-      @scala.inline
-      def setMgmt(value: String): Self = StObject.set(x, "mgmt", value.asInstanceOf[js.Any])
+      inline def setMgmt(value: String): Self = StObject.set(x, "mgmt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -33,8 +33,7 @@ trait TransformModuleJSON extends StObject {
 }
 object TransformModuleJSON {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: String,
     customTransformCache: Boolean,
     originalCode: String,
@@ -45,73 +44,50 @@ object TransformModuleJSON {
     __obj.asInstanceOf[TransformModuleJSON]
   }
   
-  @scala.inline
-  implicit class TransformModuleJSONMutableBuilder[Self <: TransformModuleJSON] (val x: Self) extends AnyVal {
+  extension [Self <: TransformModuleJSON](x: Self) {
     
-    @scala.inline
-    def setAst(value: AcornNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    inline def setAst(value: AcornNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
+    inline def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTransformCache(value: Boolean): Self = StObject.set(x, "customTransformCache", value.asInstanceOf[js.Any])
+    inline def setCustomTransformCache(value: Boolean): Self = StObject.set(x, "customTransformCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: CustomPluginOptions): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: CustomPluginOptions): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaNull: Self = StObject.set(x, "meta", null)
+    inline def setMetaNull: Self = StObject.set(x, "meta", null)
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setModuleSideEffects(value: Boolean | `no-treeshake`): Self = StObject.set(x, "moduleSideEffects", value.asInstanceOf[js.Any])
+    inline def setModuleSideEffects(value: Boolean | `no-treeshake`): Self = StObject.set(x, "moduleSideEffects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleSideEffectsNull: Self = StObject.set(x, "moduleSideEffects", null)
+    inline def setModuleSideEffectsNull: Self = StObject.set(x, "moduleSideEffects", null)
     
-    @scala.inline
-    def setModuleSideEffectsUndefined: Self = StObject.set(x, "moduleSideEffects", js.undefined)
+    inline def setModuleSideEffectsUndefined: Self = StObject.set(x, "moduleSideEffects", js.undefined)
     
-    @scala.inline
-    def setOriginalCode(value: String): Self = StObject.set(x, "originalCode", value.asInstanceOf[js.Any])
+    inline def setOriginalCode(value: String): Self = StObject.set(x, "originalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalSourcemap(value: ExistingDecodedSourceMap): Self = StObject.set(x, "originalSourcemap", value.asInstanceOf[js.Any])
+    inline def setOriginalSourcemap(value: ExistingDecodedSourceMap): Self = StObject.set(x, "originalSourcemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalSourcemapNull: Self = StObject.set(x, "originalSourcemap", null)
+    inline def setOriginalSourcemapNull: Self = StObject.set(x, "originalSourcemap", null)
     
-    @scala.inline
-    def setResolvedIds(value: ResolvedIdMap): Self = StObject.set(x, "resolvedIds", value.asInstanceOf[js.Any])
+    inline def setResolvedIds(value: ResolvedIdMap): Self = StObject.set(x, "resolvedIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedIdsUndefined: Self = StObject.set(x, "resolvedIds", js.undefined)
+    inline def setResolvedIdsUndefined: Self = StObject.set(x, "resolvedIds", js.undefined)
     
-    @scala.inline
-    def setSourcemapChain(value: js.Array[DecodedSourceMapOrMissing]): Self = StObject.set(x, "sourcemapChain", value.asInstanceOf[js.Any])
+    inline def setSourcemapChain(value: js.Array[DecodedSourceMapOrMissing]): Self = StObject.set(x, "sourcemapChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcemapChainVarargs(value: DecodedSourceMapOrMissing*): Self = StObject.set(x, "sourcemapChain", js.Array(value :_*))
+    inline def setSourcemapChainVarargs(value: DecodedSourceMapOrMissing*): Self = StObject.set(x, "sourcemapChain", js.Array(value :_*))
     
-    @scala.inline
-    def setSyntheticNamedExports(value: Boolean | String): Self = StObject.set(x, "syntheticNamedExports", value.asInstanceOf[js.Any])
+    inline def setSyntheticNamedExports(value: Boolean | String): Self = StObject.set(x, "syntheticNamedExports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntheticNamedExportsNull: Self = StObject.set(x, "syntheticNamedExports", null)
+    inline def setSyntheticNamedExportsNull: Self = StObject.set(x, "syntheticNamedExports", null)
     
-    @scala.inline
-    def setSyntheticNamedExportsUndefined: Self = StObject.set(x, "syntheticNamedExports", js.undefined)
+    inline def setSyntheticNamedExportsUndefined: Self = StObject.set(x, "syntheticNamedExports", js.undefined)
     
-    @scala.inline
-    def setTransformDependencies(value: js.Array[String]): Self = StObject.set(x, "transformDependencies", value.asInstanceOf[js.Any])
+    inline def setTransformDependencies(value: js.Array[String]): Self = StObject.set(x, "transformDependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformDependenciesVarargs(value: String*): Self = StObject.set(x, "transformDependencies", js.Array(value :_*))
+    inline def setTransformDependenciesVarargs(value: String*): Self = StObject.set(x, "transformDependencies", js.Array(value :_*))
   }
 }

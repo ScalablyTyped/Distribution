@@ -18,19 +18,15 @@ trait EventSubscription extends StObject {
 }
 object EventSubscription {
   
-  @scala.inline
-  def apply(event: InspectorEvent, subscribedAt: Timestamp): EventSubscription = {
+  inline def apply(event: InspectorEvent, subscribedAt: Timestamp): EventSubscription = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], subscribedAt = subscribedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSubscription]
   }
   
-  @scala.inline
-  implicit class EventSubscriptionMutableBuilder[Self <: EventSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: EventSubscription](x: Self) {
     
-    @scala.inline
-    def setEvent(value: InspectorEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: InspectorEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedAt(value: Timestamp): Self = StObject.set(x, "subscribedAt", value.asInstanceOf[js.Any])
+    inline def setSubscribedAt(value: Timestamp): Self = StObject.set(x, "subscribedAt", value.asInstanceOf[js.Any])
   }
 }

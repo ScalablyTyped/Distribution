@@ -26,8 +26,7 @@ trait IStateTransitionForClient extends StObject {
 }
 object IStateTransitionForClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IStateTransitionForClient,
     FromState: Double,
     GetAsLookup: () => ILookup,
@@ -42,34 +41,24 @@ object IStateTransitionForClient {
     __obj.asInstanceOf[IStateTransitionForClient]
   }
   
-  @scala.inline
-  implicit class IStateTransitionForClientMutableBuilder[Self <: IStateTransitionForClient] (val x: Self) extends AnyVal {
+  extension [Self <: IStateTransitionForClient](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IStateTransitionForClient): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IStateTransitionForClient): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFromState(value: Double): Self = StObject.set(x, "FromState", value.asInstanceOf[js.Any])
+    inline def setFromState(value: Double): Self = StObject.set(x, "FromState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAsLookup(value: () => ILookup): Self = StObject.set(x, "GetAsLookup", js.Any.fromFunction0(value))
+    inline def setGetAsLookup(value: () => ILookup): Self = StObject.set(x, "GetAsLookup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAsTypedValue(value: () => ITypedValue): Self = StObject.set(x, "GetAsTypedValue", js.Any.fromFunction0(value))
+    inline def setGetAsTypedValue(value: () => ITypedValue): Self = StObject.set(x, "GetAsTypedValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectable(value: Boolean): Self = StObject.set(x, "Selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "Selectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableFlagAffectedByPseudoUsers(value: Boolean): Self = StObject.set(x, "SelectableFlagAffectedByPseudoUsers", value.asInstanceOf[js.Any])
+    inline def setSelectableFlagAffectedByPseudoUsers(value: Boolean): Self = StObject.set(x, "SelectableFlagAffectedByPseudoUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToState(value: Double): Self = StObject.set(x, "ToState", value.asInstanceOf[js.Any])
+    inline def setToState(value: Double): Self = StObject.set(x, "ToState", value.asInstanceOf[js.Any])
   }
 }

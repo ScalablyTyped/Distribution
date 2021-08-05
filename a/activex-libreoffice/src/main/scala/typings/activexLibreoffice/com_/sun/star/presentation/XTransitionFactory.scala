@@ -40,8 +40,7 @@ trait XTransitionFactory
 }
 object XTransitionFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createTransition: (Double, Double, XSlideShowView, XBitmap, XBitmap) => XTransition,
     hasTransition: (Double, Double) => Boolean,
@@ -52,13 +51,10 @@ object XTransitionFactory {
     __obj.asInstanceOf[XTransitionFactory]
   }
   
-  @scala.inline
-  implicit class XTransitionFactoryMutableBuilder[Self <: XTransitionFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XTransitionFactory](x: Self) {
     
-    @scala.inline
-    def setCreateTransition(value: (Double, Double, XSlideShowView, XBitmap, XBitmap) => XTransition): Self = StObject.set(x, "createTransition", js.Any.fromFunction5(value))
+    inline def setCreateTransition(value: (Double, Double, XSlideShowView, XBitmap, XBitmap) => XTransition): Self = StObject.set(x, "createTransition", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setHasTransition(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasTransition", js.Any.fromFunction2(value))
+    inline def setHasTransition(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasTransition", js.Any.fromFunction2(value))
   }
 }

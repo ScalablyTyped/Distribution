@@ -47,8 +47,7 @@ object editableSelectorDriverMod {
   }
   object EditableSelectorDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addNewRow: String => Unit,
       clickApprove: () => Unit,
       clickCancel: () => Unit,
@@ -71,56 +70,39 @@ object editableSelectorDriverMod {
       __obj.asInstanceOf[EditableSelectorDriver]
     }
     
-    @scala.inline
-    implicit class EditableSelectorDriverMutableBuilder[Self <: EditableSelectorDriver] (val x: Self) extends AnyVal {
+    extension [Self <: EditableSelectorDriver](x: Self) {
       
-      @scala.inline
-      def setAddNewRow(value: String => Unit): Self = StObject.set(x, "addNewRow", js.Any.fromFunction1(value))
+      inline def setAddNewRow(value: String => Unit): Self = StObject.set(x, "addNewRow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickApprove(value: () => Unit): Self = StObject.set(x, "clickApprove", js.Any.fromFunction0(value))
+      inline def setClickApprove(value: () => Unit): Self = StObject.set(x, "clickApprove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickCancel(value: () => Unit): Self = StObject.set(x, "clickCancel", js.Any.fromFunction0(value))
+      inline def setClickCancel(value: () => Unit): Self = StObject.set(x, "clickCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeleteButtonAt(value: Double => HTMLElement): Self = StObject.set(x, "deleteButtonAt", js.Any.fromFunction1(value))
+      inline def setDeleteButtonAt(value: Double => HTMLElement): Self = StObject.set(x, "deleteButtonAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteRow(value: Double => Unit): Self = StObject.set(x, "deleteRow", js.Any.fromFunction1(value))
+      inline def setDeleteRow(value: Double => Unit): Self = StObject.set(x, "deleteRow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEditButtonAt(value: Double => HTMLElement): Self = StObject.set(x, "editButtonAt", js.Any.fromFunction1(value))
+      inline def setEditButtonAt(value: Double => HTMLElement): Self = StObject.set(x, "editButtonAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEditRow(value: (Double, String) => Unit): Self = StObject.set(x, "editRow", js.Any.fromFunction2(value))
+      inline def setEditRow(value: (Double, String) => Unit): Self = StObject.set(x, "editRow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsAddingRow(value: () => Boolean): Self = StObject.set(x, "isAddingRow", js.Any.fromFunction0(value))
+      inline def setIsAddingRow(value: () => Boolean): Self = StObject.set(x, "isAddingRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEditing(value: () => Boolean): Self = StObject.set(x, "isEditing", js.Any.fromFunction0(value))
+      inline def setIsEditing(value: () => Boolean): Self = StObject.set(x, "isEditing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEditingRow(value: () => Boolean): Self = StObject.set(x, "isEditingRow", js.Any.fromFunction0(value))
+      inline def setIsEditingRow(value: () => Boolean): Self = StObject.set(x, "isEditingRow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setItems(value: () => js.Array[SelectorDriver]): Self = StObject.set(x, "items", js.Any.fromFunction0(value))
+      inline def setItems(value: () => js.Array[SelectorDriver]): Self = StObject.set(x, "items", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNewRowButton(value: () => HTMLElement): Self = StObject.set(x, "newRowButton", js.Any.fromFunction0(value))
+      inline def setNewRowButton(value: () => HTMLElement): Self = StObject.set(x, "newRowButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartAdding(value: () => Unit): Self = StObject.set(x, "startAdding", js.Any.fromFunction0(value))
+      inline def setStartAdding(value: () => Unit): Self = StObject.set(x, "startAdding", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartEditing(value: Double => Unit): Self = StObject.set(x, "startEditing", js.Any.fromFunction1(value))
+      inline def setStartEditing(value: Double => Unit): Self = StObject.set(x, "startEditing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitle(value: () => String): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
+      inline def setTitle(value: () => String): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleItem(value: Double => String): Self = StObject.set(x, "toggleItem", js.Any.fromFunction1(value))
+      inline def setToggleItem(value: Double => String): Self = StObject.set(x, "toggleItem", js.Any.fromFunction1(value))
     }
   }
 }

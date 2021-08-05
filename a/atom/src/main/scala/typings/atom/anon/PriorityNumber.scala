@@ -10,16 +10,13 @@ trait PriorityNumber extends StObject {
 }
 object PriorityNumber {
   
-  @scala.inline
-  def apply(priority: Double): PriorityNumber = {
+  inline def apply(priority: Double): PriorityNumber = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriorityNumber]
   }
   
-  @scala.inline
-  implicit class PriorityNumberMutableBuilder[Self <: PriorityNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PriorityNumber](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
   }
 }

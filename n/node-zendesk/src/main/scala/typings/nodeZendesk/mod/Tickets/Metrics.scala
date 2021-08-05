@@ -14,20 +14,16 @@ object Metrics {
   }
   object ListPayload {
     
-    @scala.inline
-    def apply(ticket_metrics: js.Array[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]): typings.nodeZendesk.mod.Tickets.Metrics.ListPayload = {
+    inline def apply(ticket_metrics: js.Array[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]): typings.nodeZendesk.mod.Tickets.Metrics.ListPayload = {
       val __obj = js.Dynamic.literal(ticket_metrics = ticket_metrics.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Metrics.ListPayload]
     }
     
-    @scala.inline
-    implicit class ListPayloadMutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Metrics.ListPayload] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Tickets.Metrics.ListPayload](x: Self) {
       
-      @scala.inline
-      def setTicket_metrics(value: js.Array[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]): Self = StObject.set(x, "ticket_metrics", value.asInstanceOf[js.Any])
+      inline def setTicket_metrics(value: js.Array[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]): Self = StObject.set(x, "ticket_metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicket_metricsVarargs(value: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel*): Self = StObject.set(x, "ticket_metrics", js.Array(value :_*))
+      inline def setTicket_metricsVarargs(value: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel*): Self = StObject.set(x, "ticket_metrics", js.Array(value :_*))
     }
   }
   
@@ -39,20 +35,16 @@ object Metrics {
   }
   object MinutesObject {
     
-    @scala.inline
-    def apply(business: Double, calendar: Double): MinutesObject = {
+    inline def apply(business: Double, calendar: Double): MinutesObject = {
       val __obj = js.Dynamic.literal(business = business.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any])
       __obj.asInstanceOf[MinutesObject]
     }
     
-    @scala.inline
-    implicit class MinutesObjectMutableBuilder[Self <: MinutesObject] (val x: Self) extends AnyVal {
+    extension [Self <: MinutesObject](x: Self) {
       
-      @scala.inline
-      def setBusiness(value: Double): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
+      inline def setBusiness(value: Double): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalendar(value: Double): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+      inline def setCalendar(value: Double): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,134 +88,92 @@ object Metrics {
   }
   object ResponseModel {
     
-    @scala.inline
-    def apply(created_at: String, id: ZendeskID): typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel = {
+    inline def apply(created_at: String, id: ZendeskID): typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel = {
       val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updated_at = null)
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]
     }
     
-    @scala.inline
-    implicit class ResponseModelMutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel](x: Self) {
       
-      @scala.inline
-      def setAgent_wait_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "agent_wait_time_in_minutes", value.asInstanceOf[js.Any])
+      inline def setAgent_wait_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "agent_wait_time_in_minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgent_wait_time_in_minutesUndefined: Self = StObject.set(x, "agent_wait_time_in_minutes", js.undefined)
+      inline def setAgent_wait_time_in_minutesUndefined: Self = StObject.set(x, "agent_wait_time_in_minutes", js.undefined)
       
-      @scala.inline
-      def setAssigned_at(value: String): Self = StObject.set(x, "assigned_at", value.asInstanceOf[js.Any])
+      inline def setAssigned_at(value: String): Self = StObject.set(x, "assigned_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssigned_atNull: Self = StObject.set(x, "assigned_at", null)
+      inline def setAssigned_atNull: Self = StObject.set(x, "assigned_at", null)
       
-      @scala.inline
-      def setAssigned_atUndefined: Self = StObject.set(x, "assigned_at", js.undefined)
+      inline def setAssigned_atUndefined: Self = StObject.set(x, "assigned_at", js.undefined)
       
-      @scala.inline
-      def setAssignee_stations(value: Double): Self = StObject.set(x, "assignee_stations", value.asInstanceOf[js.Any])
+      inline def setAssignee_stations(value: Double): Self = StObject.set(x, "assignee_stations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignee_stationsUndefined: Self = StObject.set(x, "assignee_stations", js.undefined)
+      inline def setAssignee_stationsUndefined: Self = StObject.set(x, "assignee_stations", js.undefined)
       
-      @scala.inline
-      def setAssignee_updated_at(value: String): Self = StObject.set(x, "assignee_updated_at", value.asInstanceOf[js.Any])
+      inline def setAssignee_updated_at(value: String): Self = StObject.set(x, "assignee_updated_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignee_updated_atNull: Self = StObject.set(x, "assignee_updated_at", null)
+      inline def setAssignee_updated_atNull: Self = StObject.set(x, "assignee_updated_at", null)
       
-      @scala.inline
-      def setAssignee_updated_atUndefined: Self = StObject.set(x, "assignee_updated_at", js.undefined)
+      inline def setAssignee_updated_atUndefined: Self = StObject.set(x, "assignee_updated_at", js.undefined)
       
-      @scala.inline
-      def setFirst_resolution_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "first_resolution_time_in_minutes", value.asInstanceOf[js.Any])
+      inline def setFirst_resolution_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "first_resolution_time_in_minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirst_resolution_time_in_minutesUndefined: Self = StObject.set(x, "first_resolution_time_in_minutes", js.undefined)
+      inline def setFirst_resolution_time_in_minutesUndefined: Self = StObject.set(x, "first_resolution_time_in_minutes", js.undefined)
       
-      @scala.inline
-      def setFull_resolution_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "full_resolution_time_in_minutes", value.asInstanceOf[js.Any])
+      inline def setFull_resolution_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "full_resolution_time_in_minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_resolution_time_in_minutesUndefined: Self = StObject.set(x, "full_resolution_time_in_minutes", js.undefined)
+      inline def setFull_resolution_time_in_minutesUndefined: Self = StObject.set(x, "full_resolution_time_in_minutes", js.undefined)
       
-      @scala.inline
-      def setGroup_stations(value: Double): Self = StObject.set(x, "group_stations", value.asInstanceOf[js.Any])
+      inline def setGroup_stations(value: Double): Self = StObject.set(x, "group_stations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroup_stationsUndefined: Self = StObject.set(x, "group_stations", js.undefined)
+      inline def setGroup_stationsUndefined: Self = StObject.set(x, "group_stations", js.undefined)
       
-      @scala.inline
-      def setInitially_assigned_at(value: String): Self = StObject.set(x, "initially_assigned_at", value.asInstanceOf[js.Any])
+      inline def setInitially_assigned_at(value: String): Self = StObject.set(x, "initially_assigned_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitially_assigned_atNull: Self = StObject.set(x, "initially_assigned_at", null)
+      inline def setInitially_assigned_atNull: Self = StObject.set(x, "initially_assigned_at", null)
       
-      @scala.inline
-      def setInitially_assigned_atUndefined: Self = StObject.set(x, "initially_assigned_at", js.undefined)
+      inline def setInitially_assigned_atUndefined: Self = StObject.set(x, "initially_assigned_at", js.undefined)
       
-      @scala.inline
-      def setLatest_comment_added_at(value: String): Self = StObject.set(x, "latest_comment_added_at", value.asInstanceOf[js.Any])
+      inline def setLatest_comment_added_at(value: String): Self = StObject.set(x, "latest_comment_added_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_comment_added_atNull: Self = StObject.set(x, "latest_comment_added_at", null)
+      inline def setLatest_comment_added_atNull: Self = StObject.set(x, "latest_comment_added_at", null)
       
-      @scala.inline
-      def setLatest_comment_added_atUndefined: Self = StObject.set(x, "latest_comment_added_at", js.undefined)
+      inline def setLatest_comment_added_atUndefined: Self = StObject.set(x, "latest_comment_added_at", js.undefined)
       
-      @scala.inline
-      def setReopens(value: Double): Self = StObject.set(x, "reopens", value.asInstanceOf[js.Any])
+      inline def setReopens(value: Double): Self = StObject.set(x, "reopens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReopensUndefined: Self = StObject.set(x, "reopens", js.undefined)
+      inline def setReopensUndefined: Self = StObject.set(x, "reopens", js.undefined)
       
-      @scala.inline
-      def setReplies(value: Double): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
+      inline def setReplies(value: Double): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
+      inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
       
-      @scala.inline
-      def setReply_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "reply_time_in_minutes", value.asInstanceOf[js.Any])
+      inline def setReply_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "reply_time_in_minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReply_time_in_minutesUndefined: Self = StObject.set(x, "reply_time_in_minutes", js.undefined)
+      inline def setReply_time_in_minutesUndefined: Self = StObject.set(x, "reply_time_in_minutes", js.undefined)
       
-      @scala.inline
-      def setRequester_updated_at(value: String): Self = StObject.set(x, "requester_updated_at", value.asInstanceOf[js.Any])
+      inline def setRequester_updated_at(value: String): Self = StObject.set(x, "requester_updated_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequester_updated_atNull: Self = StObject.set(x, "requester_updated_at", null)
+      inline def setRequester_updated_atNull: Self = StObject.set(x, "requester_updated_at", null)
       
-      @scala.inline
-      def setRequester_updated_atUndefined: Self = StObject.set(x, "requester_updated_at", js.undefined)
+      inline def setRequester_updated_atUndefined: Self = StObject.set(x, "requester_updated_at", js.undefined)
       
-      @scala.inline
-      def setRequester_wait_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "requester_wait_time_in_minutes", value.asInstanceOf[js.Any])
+      inline def setRequester_wait_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "requester_wait_time_in_minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequester_wait_time_in_minutesUndefined: Self = StObject.set(x, "requester_wait_time_in_minutes", js.undefined)
+      inline def setRequester_wait_time_in_minutesUndefined: Self = StObject.set(x, "requester_wait_time_in_minutes", js.undefined)
       
-      @scala.inline
-      def setSolved_at(value: String): Self = StObject.set(x, "solved_at", value.asInstanceOf[js.Any])
+      inline def setSolved_at(value: String): Self = StObject.set(x, "solved_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolved_atNull: Self = StObject.set(x, "solved_at", null)
+      inline def setSolved_atNull: Self = StObject.set(x, "solved_at", null)
       
-      @scala.inline
-      def setSolved_atUndefined: Self = StObject.set(x, "solved_at", js.undefined)
+      inline def setSolved_atUndefined: Self = StObject.set(x, "solved_at", js.undefined)
       
-      @scala.inline
-      def setTicket_id(value: ZendeskID): Self = StObject.set(x, "ticket_id", value.asInstanceOf[js.Any])
+      inline def setTicket_id(value: ZendeskID): Self = StObject.set(x, "ticket_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicket_idUndefined: Self = StObject.set(x, "ticket_id", js.undefined)
+      inline def setTicket_idUndefined: Self = StObject.set(x, "ticket_id", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -233,17 +183,14 @@ object Metrics {
   }
   object ResponsePayload {
     
-    @scala.inline
-    def apply(ticket_metric: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel): typings.nodeZendesk.mod.Tickets.Metrics.ResponsePayload = {
+    inline def apply(ticket_metric: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel): typings.nodeZendesk.mod.Tickets.Metrics.ResponsePayload = {
       val __obj = js.Dynamic.literal(ticket_metric = ticket_metric.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Metrics.ResponsePayload]
     }
     
-    @scala.inline
-    implicit class ResponsePayloadMutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Metrics.ResponsePayload] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeZendesk.mod.Tickets.Metrics.ResponsePayload](x: Self) {
       
-      @scala.inline
-      def setTicket_metric(value: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel): Self = StObject.set(x, "ticket_metric", value.asInstanceOf[js.Any])
+      inline def setTicket_metric(value: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel): Self = StObject.set(x, "ticket_metric", value.asInstanceOf[js.Any])
     }
   }
 }

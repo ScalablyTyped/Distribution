@@ -16,19 +16,15 @@ trait TypeofTexture extends StObject {
 }
 object TypeofTexture {
   
-  @scala.inline
-  def apply(filterFromString: String => TextureFilter, wrapFromString: String => TextureWrap): TypeofTexture = {
+  inline def apply(filterFromString: String => TextureFilter, wrapFromString: String => TextureWrap): TypeofTexture = {
     val __obj = js.Dynamic.literal(filterFromString = js.Any.fromFunction1(filterFromString), wrapFromString = js.Any.fromFunction1(wrapFromString))
     __obj.asInstanceOf[TypeofTexture]
   }
   
-  @scala.inline
-  implicit class TypeofTextureMutableBuilder[Self <: TypeofTexture] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTexture](x: Self) {
     
-    @scala.inline
-    def setFilterFromString(value: String => TextureFilter): Self = StObject.set(x, "filterFromString", js.Any.fromFunction1(value))
+    inline def setFilterFromString(value: String => TextureFilter): Self = StObject.set(x, "filterFromString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrapFromString(value: String => TextureWrap): Self = StObject.set(x, "wrapFromString", js.Any.fromFunction1(value))
+    inline def setWrapFromString(value: String => TextureWrap): Self = StObject.set(x, "wrapFromString", js.Any.fromFunction1(value))
   }
 }

@@ -23,25 +23,19 @@ trait BaiduChannelRequest extends StObject {
 }
 object BaiduChannelRequest {
   
-  @scala.inline
-  def apply(ApiKey: string, SecretKey: string): BaiduChannelRequest = {
+  inline def apply(ApiKey: string, SecretKey: string): BaiduChannelRequest = {
     val __obj = js.Dynamic.literal(ApiKey = ApiKey.asInstanceOf[js.Any], SecretKey = SecretKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaiduChannelRequest]
   }
   
-  @scala.inline
-  implicit class BaiduChannelRequestMutableBuilder[Self <: BaiduChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BaiduChannelRequest](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: string): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: string): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setSecretKey(value: string): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
+    inline def setSecretKey(value: string): Self = StObject.set(x, "SecretKey", value.asInstanceOf[js.Any])
   }
 }

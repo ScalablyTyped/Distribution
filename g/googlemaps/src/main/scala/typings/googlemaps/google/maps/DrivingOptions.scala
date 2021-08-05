@@ -13,22 +13,17 @@ trait DrivingOptions extends StObject {
 }
 object DrivingOptions {
   
-  @scala.inline
-  def apply(departureTime: Date): DrivingOptions = {
+  inline def apply(departureTime: Date): DrivingOptions = {
     val __obj = js.Dynamic.literal(departureTime = departureTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrivingOptions]
   }
   
-  @scala.inline
-  implicit class DrivingOptionsMutableBuilder[Self <: DrivingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DrivingOptions](x: Self) {
     
-    @scala.inline
-    def setDepartureTime(value: Date): Self = StObject.set(x, "departureTime", value.asInstanceOf[js.Any])
+    inline def setDepartureTime(value: Date): Self = StObject.set(x, "departureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficModel(value: TrafficModel): Self = StObject.set(x, "trafficModel", value.asInstanceOf[js.Any])
+    inline def setTrafficModel(value: TrafficModel): Self = StObject.set(x, "trafficModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficModelUndefined: Self = StObject.set(x, "trafficModel", js.undefined)
+    inline def setTrafficModelUndefined: Self = StObject.set(x, "trafficModel", js.undefined)
   }
 }

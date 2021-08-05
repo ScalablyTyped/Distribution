@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextFormattingRule extends StObject
 object TextFormattingRule {
   
-  @scala.inline
-  def backlog: typings.backlogJs.backlogJsStrings.backlog = "backlog".asInstanceOf[typings.backlogJs.backlogJsStrings.backlog]
+  inline def backlog: typings.backlogJs.backlogJsStrings.backlog = "backlog".asInstanceOf[typings.backlogJs.backlogJsStrings.backlog]
   
-  @scala.inline
-  def markdown: typings.backlogJs.backlogJsStrings.markdown = "markdown".asInstanceOf[typings.backlogJs.backlogJsStrings.markdown]
+  inline def markdown: typings.backlogJs.backlogJsStrings.markdown = "markdown".asInstanceOf[typings.backlogJs.backlogJsStrings.markdown]
 }

@@ -19,22 +19,17 @@ trait NodeMessageInFlow
 }
 object NodeMessageInFlow {
   
-  @scala.inline
-  def apply(_msgid: String): NodeMessageInFlow = {
+  inline def apply(_msgid: String): NodeMessageInFlow = {
     val __obj = js.Dynamic.literal(_msgid = _msgid.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeMessageInFlow]
   }
   
-  @scala.inline
-  implicit class NodeMessageInFlowMutableBuilder[Self <: NodeMessageInFlow] (val x: Self) extends AnyVal {
+  extension [Self <: NodeMessageInFlow](x: Self) {
     
-    @scala.inline
-    def setParts(value: NodeMessageParts): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: NodeMessageParts): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
+    inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    @scala.inline
-    def set_msgid(value: String): Self = StObject.set(x, "_msgid", value.asInstanceOf[js.Any])
+    inline def set_msgid(value: String): Self = StObject.set(x, "_msgid", value.asInstanceOf[js.Any])
   }
 }

@@ -29,31 +29,23 @@ trait BrokerSoftwareInfo extends StObject {
 }
 object BrokerSoftwareInfo {
   
-  @scala.inline
-  def apply(): BrokerSoftwareInfo = {
+  inline def apply(): BrokerSoftwareInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrokerSoftwareInfo]
   }
   
-  @scala.inline
-  implicit class BrokerSoftwareInfoMutableBuilder[Self <: BrokerSoftwareInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BrokerSoftwareInfo](x: Self) {
     
-    @scala.inline
-    def setConfigurationArn(value: string): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setConfigurationArn(value: string): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationArnUndefined: Self = StObject.set(x, "ConfigurationArn", js.undefined)
+    inline def setConfigurationArnUndefined: Self = StObject.set(x, "ConfigurationArn", js.undefined)
     
-    @scala.inline
-    def setConfigurationRevision(value: long): Self = StObject.set(x, "ConfigurationRevision", value.asInstanceOf[js.Any])
+    inline def setConfigurationRevision(value: long): Self = StObject.set(x, "ConfigurationRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationRevisionUndefined: Self = StObject.set(x, "ConfigurationRevision", js.undefined)
+    inline def setConfigurationRevisionUndefined: Self = StObject.set(x, "ConfigurationRevision", js.undefined)
     
-    @scala.inline
-    def setKafkaVersion(value: string): Self = StObject.set(x, "KafkaVersion", value.asInstanceOf[js.Any])
+    inline def setKafkaVersion(value: string): Self = StObject.set(x, "KafkaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKafkaVersionUndefined: Self = StObject.set(x, "KafkaVersion", js.undefined)
+    inline def setKafkaVersionUndefined: Self = StObject.set(x, "KafkaVersion", js.undefined)
   }
 }

@@ -16,31 +16,23 @@ trait DeepPartialclientIdstring extends StObject {
 }
 object DeepPartialclientIdstring {
   
-  @scala.inline
-  def apply(): DeepPartialclientIdstring = {
+  inline def apply(): DeepPartialclientIdstring = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeepPartialclientIdstring]
   }
   
-  @scala.inline
-  implicit class DeepPartialclientIdstringMutableBuilder[Self <: DeepPartialclientIdstring] (val x: Self) extends AnyVal {
+  extension [Self <: DeepPartialclientIdstring](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: DeepPartial[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: DeepPartial[String]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setClientId(value: DeepPartial[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: DeepPartial[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setId(value: DeepPartial[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: DeepPartial[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

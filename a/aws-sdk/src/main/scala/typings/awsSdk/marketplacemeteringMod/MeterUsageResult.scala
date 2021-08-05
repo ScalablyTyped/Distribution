@@ -13,19 +13,15 @@ trait MeterUsageResult extends StObject {
 }
 object MeterUsageResult {
   
-  @scala.inline
-  def apply(): MeterUsageResult = {
+  inline def apply(): MeterUsageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeterUsageResult]
   }
   
-  @scala.inline
-  implicit class MeterUsageResultMutableBuilder[Self <: MeterUsageResult] (val x: Self) extends AnyVal {
+  extension [Self <: MeterUsageResult](x: Self) {
     
-    @scala.inline
-    def setMeteringRecordId(value: String): Self = StObject.set(x, "MeteringRecordId", value.asInstanceOf[js.Any])
+    inline def setMeteringRecordId(value: String): Self = StObject.set(x, "MeteringRecordId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeteringRecordIdUndefined: Self = StObject.set(x, "MeteringRecordId", js.undefined)
+    inline def setMeteringRecordIdUndefined: Self = StObject.set(x, "MeteringRecordId", js.undefined)
   }
 }

@@ -23,16 +23,13 @@ trait GoTo extends StObject {
 }
 object GoTo {
   
-  @scala.inline
-  def apply(goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): GoTo = {
+  inline def apply(goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): GoTo = {
     val __obj = js.Dynamic.literal(goToOverride = js.Any.fromFunction2(goToOverride))
     __obj.asInstanceOf[GoTo]
   }
   
-  @scala.inline
-  implicit class GoToMutableBuilder[Self <: GoTo] (val x: Self) extends AnyVal {
+  extension [Self <: GoTo](x: Self) {
     
-    @scala.inline
-    def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
+    inline def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Unit): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2(value))
   }
 }

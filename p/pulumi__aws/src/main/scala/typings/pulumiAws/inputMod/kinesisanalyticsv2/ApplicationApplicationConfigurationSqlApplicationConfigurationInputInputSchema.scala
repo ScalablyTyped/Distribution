@@ -32,8 +32,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     recordColumns: Input[
       js.Array[
         Input[
@@ -49,11 +48,9 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputS
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema](x: Self) {
     
-    @scala.inline
-    def setRecordColumns(
+    inline def setRecordColumns(
       value: Input[
           js.Array[
             Input[
@@ -63,21 +60,17 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputS
         ]
     ): Self = StObject.set(x, "recordColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordColumnsVarargs(
+    inline def setRecordColumnsVarargs(
       value: (Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn
         ])*
     ): Self = StObject.set(x, "recordColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setRecordEncoding(value: Input[String]): Self = StObject.set(x, "recordEncoding", value.asInstanceOf[js.Any])
+    inline def setRecordEncoding(value: Input[String]): Self = StObject.set(x, "recordEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordEncodingUndefined: Self = StObject.set(x, "recordEncoding", js.undefined)
+    inline def setRecordEncodingUndefined: Self = StObject.set(x, "recordEncoding", js.undefined)
     
-    @scala.inline
-    def setRecordFormat(
+    inline def setRecordFormat(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat
         ]

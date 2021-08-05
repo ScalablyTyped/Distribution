@@ -99,121 +99,83 @@ trait EventNotification extends StObject {
 }
 object EventNotification {
   
-  @scala.inline
-  def apply(): EventNotification = {
+  inline def apply(): EventNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventNotification]
   }
   
-  @scala.inline
-  implicit class EventNotificationMutableBuilder[Self <: EventNotification] (val x: Self) extends AnyVal {
+  extension [Self <: EventNotification](x: Self) {
     
-    @scala.inline
-    def setEnvelopeEvents(value: js.Array[/* For which envelope events should your webhook be called? */ EnvelopeEvent]): Self = StObject.set(x, "envelopeEvents", value.asInstanceOf[js.Any])
+    inline def setEnvelopeEvents(value: js.Array[/* For which envelope events should your webhook be called? */ EnvelopeEvent]): Self = StObject.set(x, "envelopeEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeEventsUndefined: Self = StObject.set(x, "envelopeEvents", js.undefined)
+    inline def setEnvelopeEventsUndefined: Self = StObject.set(x, "envelopeEvents", js.undefined)
     
-    @scala.inline
-    def setEnvelopeEventsVarargs(value: (/* For which envelope events should your webhook be called? */ EnvelopeEvent)*): Self = StObject.set(x, "envelopeEvents", js.Array(value :_*))
+    inline def setEnvelopeEventsVarargs(value: (/* For which envelope events should your webhook be called? */ EnvelopeEvent)*): Self = StObject.set(x, "envelopeEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setEventData(value: ConnectEventData): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
+    inline def setEventData(value: ConnectEventData): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
+    inline def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
     
-    @scala.inline
-    def setIncludeCertificateOfCompletion(value: String): Self = StObject.set(x, "includeCertificateOfCompletion", value.asInstanceOf[js.Any])
+    inline def setIncludeCertificateOfCompletion(value: String): Self = StObject.set(x, "includeCertificateOfCompletion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCertificateOfCompletionUndefined: Self = StObject.set(x, "includeCertificateOfCompletion", js.undefined)
+    inline def setIncludeCertificateOfCompletionUndefined: Self = StObject.set(x, "includeCertificateOfCompletion", js.undefined)
     
-    @scala.inline
-    def setIncludeCertificateWithSoap(value: String): Self = StObject.set(x, "includeCertificateWithSoap", value.asInstanceOf[js.Any])
+    inline def setIncludeCertificateWithSoap(value: String): Self = StObject.set(x, "includeCertificateWithSoap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCertificateWithSoapUndefined: Self = StObject.set(x, "includeCertificateWithSoap", js.undefined)
+    inline def setIncludeCertificateWithSoapUndefined: Self = StObject.set(x, "includeCertificateWithSoap", js.undefined)
     
-    @scala.inline
-    def setIncludeDocumentFields(value: String): Self = StObject.set(x, "includeDocumentFields", value.asInstanceOf[js.Any])
+    inline def setIncludeDocumentFields(value: String): Self = StObject.set(x, "includeDocumentFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDocumentFieldsUndefined: Self = StObject.set(x, "includeDocumentFields", js.undefined)
+    inline def setIncludeDocumentFieldsUndefined: Self = StObject.set(x, "includeDocumentFields", js.undefined)
     
-    @scala.inline
-    def setIncludeDocuments(value: String): Self = StObject.set(x, "includeDocuments", value.asInstanceOf[js.Any])
+    inline def setIncludeDocuments(value: String): Self = StObject.set(x, "includeDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDocumentsUndefined: Self = StObject.set(x, "includeDocuments", js.undefined)
+    inline def setIncludeDocumentsUndefined: Self = StObject.set(x, "includeDocuments", js.undefined)
     
-    @scala.inline
-    def setIncludeEnvelopeVoidReason(value: String): Self = StObject.set(x, "includeEnvelopeVoidReason", value.asInstanceOf[js.Any])
+    inline def setIncludeEnvelopeVoidReason(value: String): Self = StObject.set(x, "includeEnvelopeVoidReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeEnvelopeVoidReasonUndefined: Self = StObject.set(x, "includeEnvelopeVoidReason", js.undefined)
+    inline def setIncludeEnvelopeVoidReasonUndefined: Self = StObject.set(x, "includeEnvelopeVoidReason", js.undefined)
     
-    @scala.inline
-    def setIncludeHMAC(value: String): Self = StObject.set(x, "includeHMAC", value.asInstanceOf[js.Any])
+    inline def setIncludeHMAC(value: String): Self = StObject.set(x, "includeHMAC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeHMACUndefined: Self = StObject.set(x, "includeHMAC", js.undefined)
+    inline def setIncludeHMACUndefined: Self = StObject.set(x, "includeHMAC", js.undefined)
     
-    @scala.inline
-    def setIncludeSenderAccountAsCustomField(value: String): Self = StObject.set(x, "includeSenderAccountAsCustomField", value.asInstanceOf[js.Any])
+    inline def setIncludeSenderAccountAsCustomField(value: String): Self = StObject.set(x, "includeSenderAccountAsCustomField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSenderAccountAsCustomFieldUndefined: Self = StObject.set(x, "includeSenderAccountAsCustomField", js.undefined)
+    inline def setIncludeSenderAccountAsCustomFieldUndefined: Self = StObject.set(x, "includeSenderAccountAsCustomField", js.undefined)
     
-    @scala.inline
-    def setIncludeTimeZone(value: String): Self = StObject.set(x, "includeTimeZone", value.asInstanceOf[js.Any])
+    inline def setIncludeTimeZone(value: String): Self = StObject.set(x, "includeTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTimeZoneUndefined: Self = StObject.set(x, "includeTimeZone", js.undefined)
+    inline def setIncludeTimeZoneUndefined: Self = StObject.set(x, "includeTimeZone", js.undefined)
     
-    @scala.inline
-    def setLoggingEnabled(value: String): Self = StObject.set(x, "loggingEnabled", value.asInstanceOf[js.Any])
+    inline def setLoggingEnabled(value: String): Self = StObject.set(x, "loggingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingEnabledUndefined: Self = StObject.set(x, "loggingEnabled", js.undefined)
+    inline def setLoggingEnabledUndefined: Self = StObject.set(x, "loggingEnabled", js.undefined)
     
-    @scala.inline
-    def setRecipientEvents(value: js.Array[RecipientEvent]): Self = StObject.set(x, "recipientEvents", value.asInstanceOf[js.Any])
+    inline def setRecipientEvents(value: js.Array[RecipientEvent]): Self = StObject.set(x, "recipientEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientEventsUndefined: Self = StObject.set(x, "recipientEvents", js.undefined)
+    inline def setRecipientEventsUndefined: Self = StObject.set(x, "recipientEvents", js.undefined)
     
-    @scala.inline
-    def setRecipientEventsVarargs(value: RecipientEvent*): Self = StObject.set(x, "recipientEvents", js.Array(value :_*))
+    inline def setRecipientEventsVarargs(value: RecipientEvent*): Self = StObject.set(x, "recipientEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setRequireAcknowledgment(value: String): Self = StObject.set(x, "requireAcknowledgment", value.asInstanceOf[js.Any])
+    inline def setRequireAcknowledgment(value: String): Self = StObject.set(x, "requireAcknowledgment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireAcknowledgmentUndefined: Self = StObject.set(x, "requireAcknowledgment", js.undefined)
+    inline def setRequireAcknowledgmentUndefined: Self = StObject.set(x, "requireAcknowledgment", js.undefined)
     
-    @scala.inline
-    def setSignMessageWithX509Cert(value: String): Self = StObject.set(x, "signMessageWithX509Cert", value.asInstanceOf[js.Any])
+    inline def setSignMessageWithX509Cert(value: String): Self = StObject.set(x, "signMessageWithX509Cert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignMessageWithX509CertUndefined: Self = StObject.set(x, "signMessageWithX509Cert", js.undefined)
+    inline def setSignMessageWithX509CertUndefined: Self = StObject.set(x, "signMessageWithX509Cert", js.undefined)
     
-    @scala.inline
-    def setSoapNameSpace(value: String): Self = StObject.set(x, "soapNameSpace", value.asInstanceOf[js.Any])
+    inline def setSoapNameSpace(value: String): Self = StObject.set(x, "soapNameSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoapNameSpaceUndefined: Self = StObject.set(x, "soapNameSpace", js.undefined)
+    inline def setSoapNameSpaceUndefined: Self = StObject.set(x, "soapNameSpace", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUseSoapInterface(value: String): Self = StObject.set(x, "useSoapInterface", value.asInstanceOf[js.Any])
+    inline def setUseSoapInterface(value: String): Self = StObject.set(x, "useSoapInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSoapInterfaceUndefined: Self = StObject.set(x, "useSoapInterface", js.undefined)
+    inline def setUseSoapInterfaceUndefined: Self = StObject.set(x, "useSoapInterface", js.undefined)
   }
 }

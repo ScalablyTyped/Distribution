@@ -29,22 +29,17 @@ trait Column extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply(getMenuItems: () => ButtonMenuItemConfig, menu: ButtonMenu, resizable: Boolean): Column = {
+  inline def apply(getMenuItems: () => ButtonMenuItemConfig, menu: ButtonMenu, resizable: Boolean): Column = {
     val __obj = js.Dynamic.literal(getMenuItems = js.Any.fromFunction0(getMenuItems), menu = menu.asInstanceOf[js.Any], resizable = resizable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+  extension [Self <: Column](x: Self) {
     
-    @scala.inline
-    def setGetMenuItems(value: () => ButtonMenuItemConfig): Self = StObject.set(x, "getMenuItems", js.Any.fromFunction0(value))
+    inline def setGetMenuItems(value: () => ButtonMenuItemConfig): Self = StObject.set(x, "getMenuItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMenu(value: ButtonMenu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: ButtonMenu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait EventFilter extends StObject {
 }
 object EventFilter {
   
-  @scala.inline
-  def apply(): EventFilter = {
+  inline def apply(): EventFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventFilter]
   }
   
-  @scala.inline
-  implicit class EventFilterMutableBuilder[Self <: EventFilter] (val x: Self) extends AnyVal {
+  extension [Self <: EventFilter](x: Self) {
     
-    @scala.inline
-    def setDimensionFilter(value: PathQueryOptionsFilter): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
+    inline def setDimensionFilter(value: PathQueryOptionsFilter): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFilterUndefined: Self = StObject.set(x, "dimensionFilter", js.undefined)
+    inline def setDimensionFilterUndefined: Self = StObject.set(x, "dimensionFilter", js.undefined)
   }
 }

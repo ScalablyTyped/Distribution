@@ -36,52 +36,37 @@ trait AudienceGroupAssignedTargetingOptionDetails extends StObject {
 }
 object AudienceGroupAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): AudienceGroupAssignedTargetingOptionDetails = {
+  inline def apply(): AudienceGroupAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudienceGroupAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class AudienceGroupAssignedTargetingOptionDetailsMutableBuilder[Self <: AudienceGroupAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AudienceGroupAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setExcludedFirstAndThirdPartyAudienceGroup(value: FirstAndThirdPartyAudienceGroup): Self = StObject.set(x, "excludedFirstAndThirdPartyAudienceGroup", value.asInstanceOf[js.Any])
+    inline def setExcludedFirstAndThirdPartyAudienceGroup(value: FirstAndThirdPartyAudienceGroup): Self = StObject.set(x, "excludedFirstAndThirdPartyAudienceGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedFirstAndThirdPartyAudienceGroupUndefined: Self = StObject.set(x, "excludedFirstAndThirdPartyAudienceGroup", js.undefined)
+    inline def setExcludedFirstAndThirdPartyAudienceGroupUndefined: Self = StObject.set(x, "excludedFirstAndThirdPartyAudienceGroup", js.undefined)
     
-    @scala.inline
-    def setExcludedGoogleAudienceGroup(value: GoogleAudienceGroup): Self = StObject.set(x, "excludedGoogleAudienceGroup", value.asInstanceOf[js.Any])
+    inline def setExcludedGoogleAudienceGroup(value: GoogleAudienceGroup): Self = StObject.set(x, "excludedGoogleAudienceGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedGoogleAudienceGroupUndefined: Self = StObject.set(x, "excludedGoogleAudienceGroup", js.undefined)
+    inline def setExcludedGoogleAudienceGroupUndefined: Self = StObject.set(x, "excludedGoogleAudienceGroup", js.undefined)
     
-    @scala.inline
-    def setIncludedCombinedAudienceGroup(value: CombinedAudienceGroup): Self = StObject.set(x, "includedCombinedAudienceGroup", value.asInstanceOf[js.Any])
+    inline def setIncludedCombinedAudienceGroup(value: CombinedAudienceGroup): Self = StObject.set(x, "includedCombinedAudienceGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedCombinedAudienceGroupUndefined: Self = StObject.set(x, "includedCombinedAudienceGroup", js.undefined)
+    inline def setIncludedCombinedAudienceGroupUndefined: Self = StObject.set(x, "includedCombinedAudienceGroup", js.undefined)
     
-    @scala.inline
-    def setIncludedCustomListGroup(value: CustomListGroup): Self = StObject.set(x, "includedCustomListGroup", value.asInstanceOf[js.Any])
+    inline def setIncludedCustomListGroup(value: CustomListGroup): Self = StObject.set(x, "includedCustomListGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedCustomListGroupUndefined: Self = StObject.set(x, "includedCustomListGroup", js.undefined)
+    inline def setIncludedCustomListGroupUndefined: Self = StObject.set(x, "includedCustomListGroup", js.undefined)
     
-    @scala.inline
-    def setIncludedFirstAndThirdPartyAudienceGroups(value: js.Array[FirstAndThirdPartyAudienceGroup]): Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", value.asInstanceOf[js.Any])
+    inline def setIncludedFirstAndThirdPartyAudienceGroups(value: js.Array[FirstAndThirdPartyAudienceGroup]): Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedFirstAndThirdPartyAudienceGroupsUndefined: Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", js.undefined)
+    inline def setIncludedFirstAndThirdPartyAudienceGroupsUndefined: Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", js.undefined)
     
-    @scala.inline
-    def setIncludedFirstAndThirdPartyAudienceGroupsVarargs(value: FirstAndThirdPartyAudienceGroup*): Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", js.Array(value :_*))
+    inline def setIncludedFirstAndThirdPartyAudienceGroupsVarargs(value: FirstAndThirdPartyAudienceGroup*): Self = StObject.set(x, "includedFirstAndThirdPartyAudienceGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludedGoogleAudienceGroup(value: GoogleAudienceGroup): Self = StObject.set(x, "includedGoogleAudienceGroup", value.asInstanceOf[js.Any])
+    inline def setIncludedGoogleAudienceGroup(value: GoogleAudienceGroup): Self = StObject.set(x, "includedGoogleAudienceGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedGoogleAudienceGroupUndefined: Self = StObject.set(x, "includedGoogleAudienceGroup", js.undefined)
+    inline def setIncludedGoogleAudienceGroupUndefined: Self = StObject.set(x, "includedGoogleAudienceGroup", js.undefined)
   }
 }

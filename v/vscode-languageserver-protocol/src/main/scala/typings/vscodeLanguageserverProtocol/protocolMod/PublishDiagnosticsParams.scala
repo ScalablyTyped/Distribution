@@ -27,28 +27,21 @@ trait PublishDiagnosticsParams extends StObject {
 }
 object PublishDiagnosticsParams {
   
-  @scala.inline
-  def apply(diagnostics: js.Array[Diagnostic], uri: DocumentUri): PublishDiagnosticsParams = {
+  inline def apply(diagnostics: js.Array[Diagnostic], uri: DocumentUri): PublishDiagnosticsParams = {
     val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishDiagnosticsParams]
   }
   
-  @scala.inline
-  implicit class PublishDiagnosticsParamsMutableBuilder[Self <: PublishDiagnosticsParams] (val x: Self) extends AnyVal {
+  extension [Self <: PublishDiagnosticsParams](x: Self) {
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

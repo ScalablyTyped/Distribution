@@ -21,28 +21,21 @@ trait SchemaListVariablesResponse extends StObject {
 }
 object SchemaListVariablesResponse {
   
-  @scala.inline
-  def apply(): SchemaListVariablesResponse = {
+  inline def apply(): SchemaListVariablesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListVariablesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListVariablesResponseMutableBuilder[Self <: SchemaListVariablesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListVariablesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setVariable(value: js.Array[SchemaVariable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: js.Array[SchemaVariable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
-    @scala.inline
-    def setVariableVarargs(value: SchemaVariable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+    inline def setVariableVarargs(value: SchemaVariable*): Self = StObject.set(x, "variable", js.Array(value :_*))
   }
 }

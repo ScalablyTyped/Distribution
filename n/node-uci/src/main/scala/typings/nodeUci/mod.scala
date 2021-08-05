@@ -93,83 +93,58 @@ object mod {
   }
   object SearchOptions {
     
-    @scala.inline
-    def apply(): SearchOptions = {
+    inline def apply(): SearchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchOptions]
     }
     
-    @scala.inline
-    implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SearchOptions](x: Self) {
       
-      @scala.inline
-      def setBinc(value: Double): Self = StObject.set(x, "binc", value.asInstanceOf[js.Any])
+      inline def setBinc(value: Double): Self = StObject.set(x, "binc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBincUndefined: Self = StObject.set(x, "binc", js.undefined)
+      inline def setBincUndefined: Self = StObject.set(x, "binc", js.undefined)
       
-      @scala.inline
-      def setBtime(value: Double): Self = StObject.set(x, "btime", value.asInstanceOf[js.Any])
+      inline def setBtime(value: Double): Self = StObject.set(x, "btime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBtimeUndefined: Self = StObject.set(x, "btime", js.undefined)
+      inline def setBtimeUndefined: Self = StObject.set(x, "btime", js.undefined)
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setMate(value: Double): Self = StObject.set(x, "mate", value.asInstanceOf[js.Any])
+      inline def setMate(value: Double): Self = StObject.set(x, "mate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMateUndefined: Self = StObject.set(x, "mate", js.undefined)
+      inline def setMateUndefined: Self = StObject.set(x, "mate", js.undefined)
       
-      @scala.inline
-      def setMovestogo(value: Double): Self = StObject.set(x, "movestogo", value.asInstanceOf[js.Any])
+      inline def setMovestogo(value: Double): Self = StObject.set(x, "movestogo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovestogoUndefined: Self = StObject.set(x, "movestogo", js.undefined)
+      inline def setMovestogoUndefined: Self = StObject.set(x, "movestogo", js.undefined)
       
-      @scala.inline
-      def setMovetime(value: Double): Self = StObject.set(x, "movetime", value.asInstanceOf[js.Any])
+      inline def setMovetime(value: Double): Self = StObject.set(x, "movetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovetimeUndefined: Self = StObject.set(x, "movetime", js.undefined)
+      inline def setMovetimeUndefined: Self = StObject.set(x, "movetime", js.undefined)
       
-      @scala.inline
-      def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+      inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
-      @scala.inline
-      def setPonder(value: Boolean): Self = StObject.set(x, "ponder", value.asInstanceOf[js.Any])
+      inline def setPonder(value: Boolean): Self = StObject.set(x, "ponder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPonderUndefined: Self = StObject.set(x, "ponder", js.undefined)
+      inline def setPonderUndefined: Self = StObject.set(x, "ponder", js.undefined)
       
-      @scala.inline
-      def setSearchmoves(value: js.Array[String]): Self = StObject.set(x, "searchmoves", value.asInstanceOf[js.Any])
+      inline def setSearchmoves(value: js.Array[String]): Self = StObject.set(x, "searchmoves", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchmovesUndefined: Self = StObject.set(x, "searchmoves", js.undefined)
+      inline def setSearchmovesUndefined: Self = StObject.set(x, "searchmoves", js.undefined)
       
-      @scala.inline
-      def setSearchmovesVarargs(value: String*): Self = StObject.set(x, "searchmoves", js.Array(value :_*))
+      inline def setSearchmovesVarargs(value: String*): Self = StObject.set(x, "searchmoves", js.Array(value :_*))
       
-      @scala.inline
-      def setWinc(value: Double): Self = StObject.set(x, "winc", value.asInstanceOf[js.Any])
+      inline def setWinc(value: Double): Self = StObject.set(x, "winc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWincUndefined: Self = StObject.set(x, "winc", js.undefined)
+      inline def setWincUndefined: Self = StObject.set(x, "winc", js.undefined)
       
-      @scala.inline
-      def setWtime(value: Double): Self = StObject.set(x, "wtime", value.asInstanceOf[js.Any])
+      inline def setWtime(value: Double): Self = StObject.set(x, "wtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWtimeUndefined: Self = StObject.set(x, "wtime", js.undefined)
+      inline def setWtimeUndefined: Self = StObject.set(x, "wtime", js.undefined)
     }
   }
   
@@ -181,23 +156,18 @@ object mod {
   }
   object SearchResult {
     
-    @scala.inline
-    def apply(bestmove: String, info: js.Array[String]): SearchResult = {
+    inline def apply(bestmove: String, info: js.Array[String]): SearchResult = {
       val __obj = js.Dynamic.literal(bestmove = bestmove.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchResult]
     }
     
-    @scala.inline
-    implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+    extension [Self <: SearchResult](x: Self) {
       
-      @scala.inline
-      def setBestmove(value: String): Self = StObject.set(x, "bestmove", value.asInstanceOf[js.Any])
+      inline def setBestmove(value: String): Self = StObject.set(x, "bestmove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: js.Array[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
+      inline def setInfoVarargs(value: String*): Self = StObject.set(x, "info", js.Array(value :_*))
     }
   }
 }

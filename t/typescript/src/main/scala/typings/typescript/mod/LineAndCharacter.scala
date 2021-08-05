@@ -13,19 +13,15 @@ trait LineAndCharacter extends StObject {
 }
 object LineAndCharacter {
   
-  @scala.inline
-  def apply(character: Double, line: Double): LineAndCharacter = {
+  inline def apply(character: Double, line: Double): LineAndCharacter = {
     val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineAndCharacter]
   }
   
-  @scala.inline
-  implicit class LineAndCharacterMutableBuilder[Self <: LineAndCharacter] (val x: Self) extends AnyVal {
+  extension [Self <: LineAndCharacter](x: Self) {
     
-    @scala.inline
-    def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

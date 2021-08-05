@@ -34,37 +34,27 @@ trait ParamsResourceAccountsContainersTagsGet
 }
 object ParamsResourceAccountsContainersTagsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsContainersTagsGet = {
+  inline def apply(): ParamsResourceAccountsContainersTagsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsContainersTagsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsContainersTagsGetMutableBuilder[Self <: ParamsResourceAccountsContainersTagsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsContainersTagsGet](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setTagId(value: String): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
+    inline def setTagId(value: String): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
+    inline def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait ScreenTipText extends StObject {
 }
 object ScreenTipText {
   
-  @scala.inline
-  def apply(ScreenTipText: js.Any, SourceObject: js.Any): ScreenTipText = {
+  inline def apply(ScreenTipText: js.Any, SourceObject: js.Any): ScreenTipText = {
     val __obj = js.Dynamic.literal(ScreenTipText = ScreenTipText.asInstanceOf[js.Any], SourceObject = SourceObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenTipText]
   }
   
-  @scala.inline
-  implicit class ScreenTipTextMutableBuilder[Self <: ScreenTipText] (val x: Self) extends AnyVal {
+  extension [Self <: ScreenTipText](x: Self) {
     
-    @scala.inline
-    def setScreenTipText(value: js.Any): Self = StObject.set(x, "ScreenTipText", value.asInstanceOf[js.Any])
+    inline def setScreenTipText(value: js.Any): Self = StObject.set(x, "ScreenTipText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceObject(value: js.Any): Self = StObject.set(x, "SourceObject", value.asInstanceOf[js.Any])
+    inline def setSourceObject(value: js.Any): Self = StObject.set(x, "SourceObject", value.asInstanceOf[js.Any])
   }
 }

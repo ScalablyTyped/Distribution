@@ -23,8 +23,7 @@ trait ObserveResponse extends StObject {
 }
 object ObserveResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingClientRect: RectArea,
     dataset: js.Any,
     id: String,
@@ -37,28 +36,20 @@ object ObserveResponse {
     __obj.asInstanceOf[ObserveResponse]
   }
   
-  @scala.inline
-  implicit class ObserveResponseMutableBuilder[Self <: ObserveResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ObserveResponse](x: Self) {
     
-    @scala.inline
-    def setBoundingClientRect(value: RectArea): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
+    inline def setBoundingClientRect(value: RectArea): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataset(value: js.Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: js.Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
+    inline def setIntersectionRatio(value: Double): Self = StObject.set(x, "intersectionRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionRect(value: RectArea): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
+    inline def setIntersectionRect(value: RectArea): Self = StObject.set(x, "intersectionRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeRect(value: RectArea): Self = StObject.set(x, "relativeRect", value.asInstanceOf[js.Any])
+    inline def setRelativeRect(value: RectArea): Self = StObject.set(x, "relativeRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

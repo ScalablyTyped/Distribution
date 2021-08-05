@@ -13,8 +13,7 @@ object md {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
+    inline def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
   }
   
   object sha1 {
@@ -23,8 +22,7 @@ object md {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
+    inline def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
   }
   
   object sha256 {
@@ -33,8 +31,7 @@ object md {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
+    inline def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
   }
   
   object sha384 {
@@ -43,8 +40,7 @@ object md {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
+    inline def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
   }
   
   object sha512 {
@@ -53,8 +49,7 @@ object md {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
+    inline def create(): MessageDigest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[MessageDigest]
   }
   
   @js.native

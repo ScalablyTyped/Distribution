@@ -11,13 +11,10 @@ object panesMod {
     @JSGlobal("currentPane")
     @js.native
     def currentPane: String = js.native
-    @scala.inline
-    def currentPane_=(x: String): Unit = js.Dynamic.global.updateDynamic("currentPane")(x.asInstanceOf[js.Any])
+    inline def currentPane_=(x: String): Unit = js.Dynamic.global.updateDynamic("currentPane")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def hideall(): Unit = js.Dynamic.global.applyDynamic("hideall")().asInstanceOf[Unit]
+    inline def hideall(): Unit = js.Dynamic.global.applyDynamic("hideall")().asInstanceOf[Unit]
     
-    @scala.inline
-    def show(id: String): Unit = js.Dynamic.global.applyDynamic("show")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def show(id: String): Unit = js.Dynamic.global.applyDynamic("show")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

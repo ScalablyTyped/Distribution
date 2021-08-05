@@ -17,19 +17,15 @@ trait SchemaHealthCheckReference extends StObject {
 }
 object SchemaHealthCheckReference {
   
-  @scala.inline
-  def apply(): SchemaHealthCheckReference = {
+  inline def apply(): SchemaHealthCheckReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHealthCheckReference]
   }
   
-  @scala.inline
-  implicit class SchemaHealthCheckReferenceMutableBuilder[Self <: SchemaHealthCheckReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHealthCheckReference](x: Self) {
     
-    @scala.inline
-    def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
   }
 }

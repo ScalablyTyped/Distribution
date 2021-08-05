@@ -36,8 +36,7 @@ trait IModelContentChangedEvent extends StObject {
 }
 object IModelContentChangedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changes: js.Array[IModelContentChange],
     eol: String,
     isFlush: Boolean,
@@ -49,28 +48,20 @@ object IModelContentChangedEvent {
     __obj.asInstanceOf[IModelContentChangedEvent]
   }
   
-  @scala.inline
-  implicit class IModelContentChangedEventMutableBuilder[Self <: IModelContentChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IModelContentChangedEvent](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[IModelContentChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[IModelContentChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: IModelContentChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: IModelContentChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
-    @scala.inline
-    def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+    inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFlush(value: Boolean): Self = StObject.set(x, "isFlush", value.asInstanceOf[js.Any])
+    inline def setIsFlush(value: Boolean): Self = StObject.set(x, "isFlush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRedoing(value: Boolean): Self = StObject.set(x, "isRedoing", value.asInstanceOf[js.Any])
+    inline def setIsRedoing(value: Boolean): Self = StObject.set(x, "isRedoing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUndoing(value: Boolean): Self = StObject.set(x, "isUndoing", value.asInstanceOf[js.Any])
+    inline def setIsUndoing(value: Boolean): Self = StObject.set(x, "isUndoing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: Double): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: Double): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }
 }

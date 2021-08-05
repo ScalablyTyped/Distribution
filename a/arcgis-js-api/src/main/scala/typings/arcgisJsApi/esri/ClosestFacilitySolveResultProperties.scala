@@ -64,85 +64,59 @@ trait ClosestFacilitySolveResultProperties extends StObject {
 }
 object ClosestFacilitySolveResultProperties {
   
-  @scala.inline
-  def apply(): ClosestFacilitySolveResultProperties = {
+  inline def apply(): ClosestFacilitySolveResultProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClosestFacilitySolveResultProperties]
   }
   
-  @scala.inline
-  implicit class ClosestFacilitySolveResultPropertiesMutableBuilder[Self <: ClosestFacilitySolveResultProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ClosestFacilitySolveResultProperties](x: Self) {
     
-    @scala.inline
-    def setDirections(value: js.Array[DirectionsFeatureSetProperties]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
+    inline def setDirections(value: js.Array[DirectionsFeatureSetProperties]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
+    inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
-    @scala.inline
-    def setDirectionsVarargs(value: DirectionsFeatureSetProperties*): Self = StObject.set(x, "directions", js.Array(value :_*))
+    inline def setDirectionsVarargs(value: DirectionsFeatureSetProperties*): Self = StObject.set(x, "directions", js.Array(value :_*))
     
-    @scala.inline
-    def setFacilities(value: js.Array[PointProperties]): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
+    inline def setFacilities(value: js.Array[PointProperties]): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
+    inline def setFacilitiesUndefined: Self = StObject.set(x, "facilities", js.undefined)
     
-    @scala.inline
-    def setFacilitiesVarargs(value: PointProperties*): Self = StObject.set(x, "facilities", js.Array(value :_*))
+    inline def setFacilitiesVarargs(value: PointProperties*): Self = StObject.set(x, "facilities", js.Array(value :_*))
     
-    @scala.inline
-    def setIncidents(value: js.Array[PointProperties]): Self = StObject.set(x, "incidents", value.asInstanceOf[js.Any])
+    inline def setIncidents(value: js.Array[PointProperties]): Self = StObject.set(x, "incidents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncidentsUndefined: Self = StObject.set(x, "incidents", js.undefined)
+    inline def setIncidentsUndefined: Self = StObject.set(x, "incidents", js.undefined)
     
-    @scala.inline
-    def setIncidentsVarargs(value: PointProperties*): Self = StObject.set(x, "incidents", js.Array(value :_*))
+    inline def setIncidentsVarargs(value: PointProperties*): Self = StObject.set(x, "incidents", js.Array(value :_*))
     
-    @scala.inline
-    def setMessages(value: js.Array[NAMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[NAMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: NAMessageProperties*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: NAMessageProperties*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setPointBarriers(value: js.Array[PointProperties]): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
+    inline def setPointBarriers(value: js.Array[PointProperties]): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
+    inline def setPointBarriersUndefined: Self = StObject.set(x, "pointBarriers", js.undefined)
     
-    @scala.inline
-    def setPointBarriersVarargs(value: PointProperties*): Self = StObject.set(x, "pointBarriers", js.Array(value :_*))
+    inline def setPointBarriersVarargs(value: PointProperties*): Self = StObject.set(x, "pointBarriers", js.Array(value :_*))
     
-    @scala.inline
-    def setPolygonBarriers(value: js.Array[PolygonProperties]): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
+    inline def setPolygonBarriers(value: js.Array[PolygonProperties]): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
+    inline def setPolygonBarriersUndefined: Self = StObject.set(x, "polygonBarriers", js.undefined)
     
-    @scala.inline
-    def setPolygonBarriersVarargs(value: PolygonProperties*): Self = StObject.set(x, "polygonBarriers", js.Array(value :_*))
+    inline def setPolygonBarriersVarargs(value: PolygonProperties*): Self = StObject.set(x, "polygonBarriers", js.Array(value :_*))
     
-    @scala.inline
-    def setPolylineBarriers(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
+    inline def setPolylineBarriers(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
+    inline def setPolylineBarriersUndefined: Self = StObject.set(x, "polylineBarriers", js.undefined)
     
-    @scala.inline
-    def setPolylineBarriersVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylineBarriers", js.Array(value :_*))
+    inline def setPolylineBarriersVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylineBarriers", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutes(value: js.Array[GraphicProperties]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[GraphicProperties]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
-    @scala.inline
-    def setRoutesVarargs(value: GraphicProperties*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: GraphicProperties*): Self = StObject.set(x, "routes", js.Array(value :_*))
   }
 }

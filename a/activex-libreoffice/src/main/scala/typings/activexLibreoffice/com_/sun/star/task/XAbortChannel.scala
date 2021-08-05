@@ -12,16 +12,13 @@ trait XAbortChannel extends StObject {
 }
 object XAbortChannel {
   
-  @scala.inline
-  def apply(sendAbort: () => Unit): XAbortChannel = {
+  inline def apply(sendAbort: () => Unit): XAbortChannel = {
     val __obj = js.Dynamic.literal(sendAbort = js.Any.fromFunction0(sendAbort))
     __obj.asInstanceOf[XAbortChannel]
   }
   
-  @scala.inline
-  implicit class XAbortChannelMutableBuilder[Self <: XAbortChannel] (val x: Self) extends AnyVal {
+  extension [Self <: XAbortChannel](x: Self) {
     
-    @scala.inline
-    def setSendAbort(value: () => Unit): Self = StObject.set(x, "sendAbort", js.Any.fromFunction0(value))
+    inline def setSendAbort(value: () => Unit): Self = StObject.set(x, "sendAbort", js.Any.fromFunction0(value))
   }
 }

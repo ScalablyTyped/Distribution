@@ -20,17 +20,14 @@ object WrappedValue {
   val ^ : js.Any = js.native
   
   /** Returns true if `value` is a wrapped value. */
-  @scala.inline
-  def isWrapped(value: js.Any): /* is @angular/core.@angular/core.WrappedValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWrapped")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core.WrappedValue */ Boolean]
+  inline def isWrapped(value: js.Any): /* is @angular/core.@angular/core.WrappedValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWrapped")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core.WrappedValue */ Boolean]
   
   /**
     * Returns the underlying value of a wrapped value.
     * Returns the given `value` when it is not wrapped.
     **/
-  @scala.inline
-  def unwrap(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def unwrap(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** Creates a wrapped value. */
-  @scala.inline
-  def wrap(value: js.Any): WrappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(value.asInstanceOf[js.Any]).asInstanceOf[WrappedValue]
+  inline def wrap(value: js.Any): WrappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(value.asInstanceOf[js.Any]).asInstanceOf[WrappedValue]
 }

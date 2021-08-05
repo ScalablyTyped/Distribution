@@ -15,11 +15,11 @@ object AccWizObjects {
   /** Field List Control */
   @JSGlobal("AccWizObjects.FieldList")
   @js.native
-  class FieldList protected ()
+  /* private */ class FieldList ()
     extends StObject
        with typings.activexAccess.AccWizObjects.FieldList {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     @JSName("AccWizObjects.FieldList_typekey")
     var AccWizObjectsDotFieldList_typekey: typings.activexAccess.AccWizObjects.FieldList = js.native
     
@@ -93,11 +93,11 @@ object AccWizObjects {
   /** ImexGrid Control */
   @JSGlobal("AccWizObjects.ImexGrid")
   @js.native
-  class ImexGrid protected ()
+  /* private */ class ImexGrid ()
     extends StObject
        with typings.activexAccess.AccWizObjects.ImexGrid {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     @JSName("AccWizObjects.ImexGrid_typekey")
     var AccWizObjectsDotImexGrid_typekey: typings.activexAccess.AccWizObjects.ImexGrid = js.native
     
@@ -195,11 +195,11 @@ object AccWizObjects {
   /** WizShellLinkA Class */
   @JSGlobal("AccWizObjects.WizShellLinkA")
   @js.native
-  class WizShellLinkA protected ()
+  /* private */ class WizShellLinkA ()
     extends StObject
        with typings.activexAccess.AccWizObjects.WizShellLinkA {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     @JSName("AccWizObjects.WizShellLinkA_typekey")
     var AccWizObjectsDotWizShellLinkA_typekey: typings.activexAccess.AccWizObjects.WizShellLinkA = js.native
     

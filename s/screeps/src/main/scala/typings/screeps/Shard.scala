@@ -24,23 +24,18 @@ trait Shard extends StObject {
 }
 object Shard {
   
-  @scala.inline
-  def apply(name: String, ptr: Boolean): Shard = {
+  inline def apply(name: String, ptr: Boolean): Shard = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ptr = ptr.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("normal")
     __obj.asInstanceOf[Shard]
   }
   
-  @scala.inline
-  implicit class ShardMutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
+  extension [Self <: Shard](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPtr(value: Boolean): Self = StObject.set(x, "ptr", value.asInstanceOf[js.Any])
+    inline def setPtr(value: Boolean): Self = StObject.set(x, "ptr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: normal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: normal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

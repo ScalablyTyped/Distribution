@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TouchEventType extends StObject
 object TouchEventType {
   
-  @scala.inline
-  def tap: typings.weixinApp.weixinAppStrings.tap = "tap".asInstanceOf[typings.weixinApp.weixinAppStrings.tap]
+  inline def tap: typings.weixinApp.weixinAppStrings.tap = "tap".asInstanceOf[typings.weixinApp.weixinAppStrings.tap]
   
-  @scala.inline
-  def touchcancel: typings.weixinApp.weixinAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.weixinApp.weixinAppStrings.touchcancel]
+  inline def touchcancel: typings.weixinApp.weixinAppStrings.touchcancel = "touchcancel".asInstanceOf[typings.weixinApp.weixinAppStrings.touchcancel]
   
-  @scala.inline
-  def touchend: typings.weixinApp.weixinAppStrings.touchend = "touchend".asInstanceOf[typings.weixinApp.weixinAppStrings.touchend]
+  inline def touchend: typings.weixinApp.weixinAppStrings.touchend = "touchend".asInstanceOf[typings.weixinApp.weixinAppStrings.touchend]
   
-  @scala.inline
-  def touchforcechange: typings.weixinApp.weixinAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.weixinApp.weixinAppStrings.touchforcechange]
+  inline def touchforcechange: typings.weixinApp.weixinAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typings.weixinApp.weixinAppStrings.touchforcechange]
   
-  @scala.inline
-  def touchmove: typings.weixinApp.weixinAppStrings.touchmove = "touchmove".asInstanceOf[typings.weixinApp.weixinAppStrings.touchmove]
+  inline def touchmove: typings.weixinApp.weixinAppStrings.touchmove = "touchmove".asInstanceOf[typings.weixinApp.weixinAppStrings.touchmove]
   
-  @scala.inline
-  def touchstart: typings.weixinApp.weixinAppStrings.touchstart = "touchstart".asInstanceOf[typings.weixinApp.weixinAppStrings.touchstart]
+  inline def touchstart: typings.weixinApp.weixinAppStrings.touchstart = "touchstart".asInstanceOf[typings.weixinApp.weixinAppStrings.touchstart]
 }

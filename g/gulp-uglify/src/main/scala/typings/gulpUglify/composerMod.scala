@@ -31,17 +31,14 @@ object composerMod extends Shortcut {
   }
   object Logger {
     
-    @scala.inline
-    def apply(warn: /* repeated */ js.Any => Unit): Logger = {
+    inline def apply(warn: /* repeated */ js.Any => Unit): Logger = {
       val __obj = js.Dynamic.literal(warn = js.Any.fromFunction1(warn))
       __obj.asInstanceOf[Logger]
     }
     
-    @scala.inline
-    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    extension [Self <: Logger](x: Self) {
       
-      @scala.inline
-      def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -58,17 +55,14 @@ object composerMod extends Shortcut {
   }
   object Uglify {
     
-    @scala.inline
-    def apply(minify: FnCall): Uglify = {
+    inline def apply(minify: FnCall): Uglify = {
       val __obj = js.Dynamic.literal(minify = minify.asInstanceOf[js.Any])
       __obj.asInstanceOf[Uglify]
     }
     
-    @scala.inline
-    implicit class UglifyMutableBuilder[Self <: Uglify] (val x: Self) extends AnyVal {
+    extension [Self <: Uglify](x: Self) {
       
-      @scala.inline
-      def setMinify(value: FnCall): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+      inline def setMinify(value: FnCall): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     }
   }
   

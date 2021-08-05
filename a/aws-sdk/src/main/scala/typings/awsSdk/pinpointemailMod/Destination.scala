@@ -23,40 +23,29 @@ trait Destination extends StObject {
 }
 object Destination {
   
-  @scala.inline
-  def apply(): Destination = {
+  inline def apply(): Destination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Destination]
   }
   
-  @scala.inline
-  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
+  extension [Self <: Destination](x: Self) {
     
-    @scala.inline
-    def setBccAddresses(value: EmailAddressList): Self = StObject.set(x, "BccAddresses", value.asInstanceOf[js.Any])
+    inline def setBccAddresses(value: EmailAddressList): Self = StObject.set(x, "BccAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBccAddressesUndefined: Self = StObject.set(x, "BccAddresses", js.undefined)
+    inline def setBccAddressesUndefined: Self = StObject.set(x, "BccAddresses", js.undefined)
     
-    @scala.inline
-    def setBccAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "BccAddresses", js.Array(value :_*))
+    inline def setBccAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "BccAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setCcAddresses(value: EmailAddressList): Self = StObject.set(x, "CcAddresses", value.asInstanceOf[js.Any])
+    inline def setCcAddresses(value: EmailAddressList): Self = StObject.set(x, "CcAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcAddressesUndefined: Self = StObject.set(x, "CcAddresses", js.undefined)
+    inline def setCcAddressesUndefined: Self = StObject.set(x, "CcAddresses", js.undefined)
     
-    @scala.inline
-    def setCcAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "CcAddresses", js.Array(value :_*))
+    inline def setCcAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "CcAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setToAddresses(value: EmailAddressList): Self = StObject.set(x, "ToAddresses", value.asInstanceOf[js.Any])
+    inline def setToAddresses(value: EmailAddressList): Self = StObject.set(x, "ToAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToAddressesUndefined: Self = StObject.set(x, "ToAddresses", js.undefined)
+    inline def setToAddressesUndefined: Self = StObject.set(x, "ToAddresses", js.undefined)
     
-    @scala.inline
-    def setToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ToAddresses", js.Array(value :_*))
+    inline def setToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ToAddresses", js.Array(value :_*))
   }
 }

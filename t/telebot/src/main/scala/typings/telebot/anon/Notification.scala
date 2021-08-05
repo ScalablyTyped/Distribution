@@ -18,43 +18,31 @@ trait Notification extends StObject {
 }
 object Notification {
   
-  @scala.inline
-  def apply(): Notification = {
+  inline def apply(): Notification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Notification]
   }
   
-  @scala.inline
-  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
+  extension [Self <: Notification](x: Self) {
     
-    @scala.inline
-    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setParseMode(value: String): Self = StObject.set(x, "parseMode", value.asInstanceOf[js.Any])
+    inline def setParseMode(value: String): Self = StObject.set(x, "parseMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseModeUndefined: Self = StObject.set(x, "parseMode", js.undefined)
+    inline def setParseModeUndefined: Self = StObject.set(x, "parseMode", js.undefined)
     
-    @scala.inline
-    def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
+    inline def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
+    inline def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     
-    @scala.inline
-    def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
+    inline def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
+    inline def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
     
-    @scala.inline
-    def setWebPreview(value: Boolean): Self = StObject.set(x, "webPreview", value.asInstanceOf[js.Any])
+    inline def setWebPreview(value: Boolean): Self = StObject.set(x, "webPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPreviewUndefined: Self = StObject.set(x, "webPreview", js.undefined)
+    inline def setWebPreviewUndefined: Self = StObject.set(x, "webPreview", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait LoginResponse extends StObject {
 }
 object LoginResponse {
   
-  @scala.inline
-  def apply(androidId: String, masterToken: String): LoginResponse = {
+  inline def apply(androidId: String, masterToken: String): LoginResponse = {
     val __obj = js.Dynamic.literal(androidId = androidId.asInstanceOf[js.Any], masterToken = masterToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginResponse]
   }
   
-  @scala.inline
-  implicit class LoginResponseMutableBuilder[Self <: LoginResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LoginResponse](x: Self) {
     
-    @scala.inline
-    def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
+    inline def setAndroidId(value: String): Self = StObject.set(x, "androidId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterToken(value: String): Self = StObject.set(x, "masterToken", value.asInstanceOf[js.Any])
+    inline def setMasterToken(value: String): Self = StObject.set(x, "masterToken", value.asInstanceOf[js.Any])
   }
 }

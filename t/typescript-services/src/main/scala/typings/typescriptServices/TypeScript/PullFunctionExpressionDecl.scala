@@ -8,14 +8,13 @@ trait PullFunctionExpressionDecl
   extends StObject
      with NormalPullDecl {
   
-  var functionExpressionName: js.Any
+  /* private */ var functionExpressionName: js.Any
   
   def getFunctionExpressionName(): String
 }
 object PullFunctionExpressionDecl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _getEnclosingDeclFromParentDecl: () => PullDecl,
     _rootDecl: RootPullDecl,
     addChildDecl: PullDecl => Unit,
@@ -71,13 +70,10 @@ object PullFunctionExpressionDecl {
     __obj.asInstanceOf[PullFunctionExpressionDecl]
   }
   
-  @scala.inline
-  implicit class PullFunctionExpressionDeclMutableBuilder[Self <: PullFunctionExpressionDecl] (val x: Self) extends AnyVal {
+  extension [Self <: PullFunctionExpressionDecl](x: Self) {
     
-    @scala.inline
-    def setFunctionExpressionName(value: js.Any): Self = StObject.set(x, "functionExpressionName", value.asInstanceOf[js.Any])
+    inline def setFunctionExpressionName(value: js.Any): Self = StObject.set(x, "functionExpressionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFunctionExpressionName(value: () => String): Self = StObject.set(x, "getFunctionExpressionName", js.Any.fromFunction0(value))
+    inline def setGetFunctionExpressionName(value: () => String): Self = StObject.set(x, "getFunctionExpressionName", js.Any.fromFunction0(value))
   }
 }

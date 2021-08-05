@@ -52,8 +52,7 @@ trait KmlGroundOverlay
 }
 object KmlGroundOverlay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -115,25 +114,18 @@ object KmlGroundOverlay {
     __obj.asInstanceOf[KmlGroundOverlay]
   }
   
-  @scala.inline
-  implicit class KmlGroundOverlayMutableBuilder[Self <: KmlGroundOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: KmlGroundOverlay](x: Self) {
     
-    @scala.inline
-    def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
+    inline def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAltitudeMode(value: () => KmlAltitudeModeEnum): Self = StObject.set(x, "getAltitudeMode", js.Any.fromFunction0(value))
+    inline def setGetAltitudeMode(value: () => KmlAltitudeModeEnum): Self = StObject.set(x, "getAltitudeMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLatLonBox(value: () => KmlLatLonBox): Self = StObject.set(x, "getLatLonBox", js.Any.fromFunction0(value))
+    inline def setGetLatLonBox(value: () => KmlLatLonBox): Self = StObject.set(x, "getLatLonBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAltitude(value: Double => Unit): Self = StObject.set(x, "setAltitude", js.Any.fromFunction1(value))
+    inline def setSetAltitude(value: Double => Unit): Self = StObject.set(x, "setAltitude", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAltitudeMode(value: KmlAltitudeModeEnum => Unit): Self = StObject.set(x, "setAltitudeMode", js.Any.fromFunction1(value))
+    inline def setSetAltitudeMode(value: KmlAltitudeModeEnum => Unit): Self = StObject.set(x, "setAltitudeMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLatLonBox(value: KmlLatLonBox => Unit): Self = StObject.set(x, "setLatLonBox", js.Any.fromFunction1(value))
+    inline def setSetLatLonBox(value: KmlLatLonBox => Unit): Self = StObject.set(x, "setLatLonBox", js.Any.fromFunction1(value))
   }
 }

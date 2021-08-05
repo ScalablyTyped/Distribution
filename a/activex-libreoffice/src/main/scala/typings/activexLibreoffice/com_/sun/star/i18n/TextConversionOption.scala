@@ -17,16 +17,12 @@ object TextConversionOption {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CHARACTER_BY_CHARACTER: `1` = 1.asInstanceOf[`1`]
+    inline def CHARACTER_BY_CHARACTER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def IGNORE_POST_POSITIONAL_WORD: `2` = 2.asInstanceOf[`2`]
+    inline def IGNORE_POST_POSITIONAL_WORD: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def USE_CHARACTER_VARIANTS: `2` = 2.asInstanceOf[`2`]
+    inline def USE_CHARACTER_VARIANTS: `2` = 2.asInstanceOf[`2`]
   }
 }

@@ -43,48 +43,35 @@ trait HistogramViewModelProperties extends StObject {
 }
 object HistogramViewModelProperties {
   
-  @scala.inline
-  def apply(): HistogramViewModelProperties = {
+  inline def apply(): HistogramViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistogramViewModelProperties]
   }
   
-  @scala.inline
-  implicit class HistogramViewModelPropertiesMutableBuilder[Self <: HistogramViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+    inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
+    inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
-    @scala.inline
-    def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+    inline def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
+    inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
-    @scala.inline
-    def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
-    @scala.inline
-    def setLabelFormatFunction(
+    inline def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => String
     ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
+    inline def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

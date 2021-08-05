@@ -18,19 +18,15 @@ trait Artifact extends StObject {
 }
 object Artifact {
   
-  @scala.inline
-  def apply(artifactFileName: ArtifactFileName, artifactId: ArtifactId): Artifact = {
+  inline def apply(artifactFileName: ArtifactFileName, artifactId: ArtifactId): Artifact = {
     val __obj = js.Dynamic.literal(artifactFileName = artifactFileName.asInstanceOf[js.Any], artifactId = artifactId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Artifact]
   }
   
-  @scala.inline
-  implicit class ArtifactMutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
+  extension [Self <: Artifact](x: Self) {
     
-    @scala.inline
-    def setArtifactFileName(value: ArtifactFileName): Self = StObject.set(x, "artifactFileName", value.asInstanceOf[js.Any])
+    inline def setArtifactFileName(value: ArtifactFileName): Self = StObject.set(x, "artifactFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactId(value: ArtifactId): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
+    inline def setArtifactId(value: ArtifactId): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
   }
 }

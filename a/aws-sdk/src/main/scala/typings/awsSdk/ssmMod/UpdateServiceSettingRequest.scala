@@ -18,19 +18,15 @@ trait UpdateServiceSettingRequest extends StObject {
 }
 object UpdateServiceSettingRequest {
   
-  @scala.inline
-  def apply(SettingId: ServiceSettingId, SettingValue: ServiceSettingValue): UpdateServiceSettingRequest = {
+  inline def apply(SettingId: ServiceSettingId, SettingValue: ServiceSettingValue): UpdateServiceSettingRequest = {
     val __obj = js.Dynamic.literal(SettingId = SettingId.asInstanceOf[js.Any], SettingValue = SettingValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServiceSettingRequest]
   }
   
-  @scala.inline
-  implicit class UpdateServiceSettingRequestMutableBuilder[Self <: UpdateServiceSettingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateServiceSettingRequest](x: Self) {
     
-    @scala.inline
-    def setSettingId(value: ServiceSettingId): Self = StObject.set(x, "SettingId", value.asInstanceOf[js.Any])
+    inline def setSettingId(value: ServiceSettingId): Self = StObject.set(x, "SettingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingValue(value: ServiceSettingValue): Self = StObject.set(x, "SettingValue", value.asInstanceOf[js.Any])
+    inline def setSettingValue(value: ServiceSettingValue): Self = StObject.set(x, "SettingValue", value.asInstanceOf[js.Any])
   }
 }

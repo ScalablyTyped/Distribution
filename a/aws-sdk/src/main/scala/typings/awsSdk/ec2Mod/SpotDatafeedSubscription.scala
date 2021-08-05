@@ -33,43 +33,31 @@ trait SpotDatafeedSubscription extends StObject {
 }
 object SpotDatafeedSubscription {
   
-  @scala.inline
-  def apply(): SpotDatafeedSubscription = {
+  inline def apply(): SpotDatafeedSubscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpotDatafeedSubscription]
   }
   
-  @scala.inline
-  implicit class SpotDatafeedSubscriptionMutableBuilder[Self <: SpotDatafeedSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: SpotDatafeedSubscription](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setFault(value: SpotInstanceStateFault): Self = StObject.set(x, "Fault", value.asInstanceOf[js.Any])
+    inline def setFault(value: SpotInstanceStateFault): Self = StObject.set(x, "Fault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaultUndefined: Self = StObject.set(x, "Fault", js.undefined)
+    inline def setFaultUndefined: Self = StObject.set(x, "Fault", js.undefined)
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setState(value: DatafeedSubscriptionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: DatafeedSubscriptionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -21,28 +21,21 @@ trait SchemaListTensorFlowVersionsResponse extends StObject {
 }
 object SchemaListTensorFlowVersionsResponse {
   
-  @scala.inline
-  def apply(): SchemaListTensorFlowVersionsResponse = {
+  inline def apply(): SchemaListTensorFlowVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListTensorFlowVersionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListTensorFlowVersionsResponseMutableBuilder[Self <: SchemaListTensorFlowVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListTensorFlowVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTensorflowVersions(value: js.Array[SchemaTensorFlowVersion]): Self = StObject.set(x, "tensorflowVersions", value.asInstanceOf[js.Any])
+    inline def setTensorflowVersions(value: js.Array[SchemaTensorFlowVersion]): Self = StObject.set(x, "tensorflowVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTensorflowVersionsUndefined: Self = StObject.set(x, "tensorflowVersions", js.undefined)
+    inline def setTensorflowVersionsUndefined: Self = StObject.set(x, "tensorflowVersions", js.undefined)
     
-    @scala.inline
-    def setTensorflowVersionsVarargs(value: SchemaTensorFlowVersion*): Self = StObject.set(x, "tensorflowVersions", js.Array(value :_*))
+    inline def setTensorflowVersionsVarargs(value: SchemaTensorFlowVersion*): Self = StObject.set(x, "tensorflowVersions", js.Array(value :_*))
   }
 }

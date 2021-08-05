@@ -14,19 +14,15 @@ trait SchemaBucketBySession extends StObject {
 }
 object SchemaBucketBySession {
   
-  @scala.inline
-  def apply(): SchemaBucketBySession = {
+  inline def apply(): SchemaBucketBySession = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBucketBySession]
   }
   
-  @scala.inline
-  implicit class SchemaBucketBySessionMutableBuilder[Self <: SchemaBucketBySession] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBucketBySession](x: Self) {
     
-    @scala.inline
-    def setMinDurationMillis(value: String): Self = StObject.set(x, "minDurationMillis", value.asInstanceOf[js.Any])
+    inline def setMinDurationMillis(value: String): Self = StObject.set(x, "minDurationMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDurationMillisUndefined: Self = StObject.set(x, "minDurationMillis", js.undefined)
+    inline def setMinDurationMillisUndefined: Self = StObject.set(x, "minDurationMillis", js.undefined)
   }
 }

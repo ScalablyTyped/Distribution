@@ -36,46 +36,33 @@ trait SchemaPollItemsRequest extends StObject {
 }
 object SchemaPollItemsRequest {
   
-  @scala.inline
-  def apply(): SchemaPollItemsRequest = {
+  inline def apply(): SchemaPollItemsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPollItemsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPollItemsRequestMutableBuilder[Self <: SchemaPollItemsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPollItemsRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
+    inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
+    inline def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     
-    @scala.inline
-    def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    @scala.inline
-    def setStatusCodes(value: js.Array[String]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
+    inline def setStatusCodes(value: js.Array[String]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
+    inline def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
     
-    @scala.inline
-    def setStatusCodesVarargs(value: String*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
+    inline def setStatusCodesVarargs(value: String*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
   }
 }

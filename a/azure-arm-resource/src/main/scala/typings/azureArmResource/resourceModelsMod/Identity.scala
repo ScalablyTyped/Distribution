@@ -32,37 +32,27 @@ trait Identity extends StObject {
 }
 object Identity {
   
-  @scala.inline
-  def apply(): Identity = {
+  inline def apply(): Identity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Identity]
   }
   
-  @scala.inline
-  implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
+  extension [Self <: Identity](x: Self) {
     
-    @scala.inline
-    def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
     
-    @scala.inline
-    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+    inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUserAssignedIdentities(value: StringDictionary[IdentityUserAssignedIdentitiesValue]): Self = StObject.set(x, "userAssignedIdentities", value.asInstanceOf[js.Any])
+    inline def setUserAssignedIdentities(value: StringDictionary[IdentityUserAssignedIdentitiesValue]): Self = StObject.set(x, "userAssignedIdentities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAssignedIdentitiesUndefined: Self = StObject.set(x, "userAssignedIdentities", js.undefined)
+    inline def setUserAssignedIdentitiesUndefined: Self = StObject.set(x, "userAssignedIdentities", js.undefined)
   }
 }

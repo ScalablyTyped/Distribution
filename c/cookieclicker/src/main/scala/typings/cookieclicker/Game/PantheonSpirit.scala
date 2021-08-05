@@ -58,64 +58,45 @@ trait PantheonSpirit extends StObject {
 }
 object PantheonSpirit {
   
-  @scala.inline
-  def apply(icon: Icon, id: Double, name: String, quote: String, slot: `-1` | `0` | `1` | `2`): PantheonSpirit = {
+  inline def apply(icon: Icon, id: Double, name: String, quote: String, slot: `-1` | `0` | `1` | `2`): PantheonSpirit = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], quote = quote.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
     __obj.asInstanceOf[PantheonSpirit]
   }
   
-  @scala.inline
-  implicit class PantheonSpiritMutableBuilder[Self <: PantheonSpirit] (val x: Self) extends AnyVal {
+  extension [Self <: PantheonSpirit](x: Self) {
     
-    @scala.inline
-    def setActiveDescFunc(value: () => String): Self = StObject.set(x, "activeDescFunc", js.Any.fromFunction0(value))
+    inline def setActiveDescFunc(value: () => String): Self = StObject.set(x, "activeDescFunc", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActiveDescFuncUndefined: Self = StObject.set(x, "activeDescFunc", js.undefined)
+    inline def setActiveDescFuncUndefined: Self = StObject.set(x, "activeDescFunc", js.undefined)
     
-    @scala.inline
-    def setDesc1(value: String): Self = StObject.set(x, "desc1", value.asInstanceOf[js.Any])
+    inline def setDesc1(value: String): Self = StObject.set(x, "desc1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc1Undefined: Self = StObject.set(x, "desc1", js.undefined)
+    inline def setDesc1Undefined: Self = StObject.set(x, "desc1", js.undefined)
     
-    @scala.inline
-    def setDesc2(value: String): Self = StObject.set(x, "desc2", value.asInstanceOf[js.Any])
+    inline def setDesc2(value: String): Self = StObject.set(x, "desc2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc2Undefined: Self = StObject.set(x, "desc2", js.undefined)
+    inline def setDesc2Undefined: Self = StObject.set(x, "desc2", js.undefined)
     
-    @scala.inline
-    def setDesc3(value: String): Self = StObject.set(x, "desc3", value.asInstanceOf[js.Any])
+    inline def setDesc3(value: String): Self = StObject.set(x, "desc3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc3Undefined: Self = StObject.set(x, "desc3", js.undefined)
+    inline def setDesc3Undefined: Self = StObject.set(x, "desc3", js.undefined)
     
-    @scala.inline
-    def setDescAfter(value: String): Self = StObject.set(x, "descAfter", value.asInstanceOf[js.Any])
+    inline def setDescAfter(value: String): Self = StObject.set(x, "descAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescAfterUndefined: Self = StObject.set(x, "descAfter", js.undefined)
+    inline def setDescAfterUndefined: Self = StObject.set(x, "descAfter", js.undefined)
     
-    @scala.inline
-    def setDescBefore(value: String): Self = StObject.set(x, "descBefore", value.asInstanceOf[js.Any])
+    inline def setDescBefore(value: String): Self = StObject.set(x, "descBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescBeforeUndefined: Self = StObject.set(x, "descBefore", js.undefined)
+    inline def setDescBeforeUndefined: Self = StObject.set(x, "descBefore", js.undefined)
     
-    @scala.inline
-    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlot(value: `-1` | `0` | `1` | `2`): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+    inline def setSlot(value: `-1` | `0` | `1` | `2`): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
   }
 }

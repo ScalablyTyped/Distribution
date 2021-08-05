@@ -14,22 +14,17 @@ trait CreateWorkspaceRequest extends StObject {
 }
 object CreateWorkspaceRequest {
   
-  @scala.inline
-  def apply(name: String): CreateWorkspaceRequest = {
+  inline def apply(name: String): CreateWorkspaceRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkspaceRequest]
   }
   
-  @scala.inline
-  implicit class CreateWorkspaceRequestMutableBuilder[Self <: CreateWorkspaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorkspaceRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

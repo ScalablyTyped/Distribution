@@ -21,13 +21,11 @@ object SoapVersion {
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.SoapVersion.Soap11")
   @js.native
   def Soap11: SoapVersion = js.native
-  @scala.inline
-  def Soap11_=(x: SoapVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Soap11")(x.asInstanceOf[js.Any])
+  inline def Soap11_=(x: SoapVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Soap11")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.SoapVersion.Soap12")
   @js.native
   def Soap12: SoapVersion = js.native
-  @scala.inline
-  def Soap12_=(x: SoapVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Soap12")(x.asInstanceOf[js.Any])
+  inline def Soap12_=(x: SoapVersion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Soap12")(x.asInstanceOf[js.Any])
 }

@@ -130,164 +130,112 @@ object anon {
   }
   object Colshow {
     
-    @scala.inline
-    def apply(): Colshow = {
+    inline def apply(): Colshow = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Colshow]
     }
     
-    @scala.inline
-    implicit class ColshowMutableBuilder[Self <: Colshow] (val x: Self) extends AnyVal {
+    extension [Self <: Colshow](x: Self) {
       
-      @scala.inline
-      def setColshow(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "colshow", value.asInstanceOf[js.Any])
+      inline def setColshow(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "colshow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColshowUndefined: Self = StObject.set(x, "colshow", js.undefined)
+      inline def setColshowUndefined: Self = StObject.set(x, "colshow", js.undefined)
       
-      @scala.inline
-      def setColshowVarargs(value: js.Any*): Self = StObject.set(x, "colshow", js.Array(value :_*))
+      inline def setColshowVarargs(value: js.Any*): Self = StObject.set(x, "colshow", js.Array(value :_*))
       
-      @scala.inline
-      def setCsv(value: js.Array[js.Any]): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+      inline def setCsv(value: js.Array[js.Any]): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvNames(value: js.Array[js.Any]): Self = StObject.set(x, "csvNames", value.asInstanceOf[js.Any])
+      inline def setCsvNames(value: js.Array[js.Any]): Self = StObject.set(x, "csvNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvNamesUndefined: Self = StObject.set(x, "csvNames", js.undefined)
+      inline def setCsvNamesUndefined: Self = StObject.set(x, "csvNames", js.undefined)
       
-      @scala.inline
-      def setCsvNamesVarargs(value: js.Any*): Self = StObject.set(x, "csvNames", js.Array(value :_*))
+      inline def setCsvNamesVarargs(value: js.Any*): Self = StObject.set(x, "csvNames", js.Array(value :_*))
       
-      @scala.inline
-      def setCsvNumber(value: js.Array[js.Any]): Self = StObject.set(x, "csvNumber", value.asInstanceOf[js.Any])
+      inline def setCsvNumber(value: js.Array[js.Any]): Self = StObject.set(x, "csvNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvNumberUndefined: Self = StObject.set(x, "csvNumber", js.undefined)
+      inline def setCsvNumberUndefined: Self = StObject.set(x, "csvNumber", js.undefined)
       
-      @scala.inline
-      def setCsvNumberVarargs(value: js.Any*): Self = StObject.set(x, "csvNumber", js.Array(value :_*))
+      inline def setCsvNumberVarargs(value: js.Any*): Self = StObject.set(x, "csvNumber", js.Array(value :_*))
       
-      @scala.inline
-      def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+      inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
       
-      @scala.inline
-      def setCsvVarargs(value: js.Any*): Self = StObject.set(x, "csv", js.Array(value :_*))
+      inline def setCsvVarargs(value: js.Any*): Self = StObject.set(x, "csv", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setEditEvent(value: Boolean): Self = StObject.set(x, "editEvent", value.asInstanceOf[js.Any])
+      inline def setEditEvent(value: Boolean): Self = StObject.set(x, "editEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditEventUndefined: Self = StObject.set(x, "editEvent", js.undefined)
+      inline def setEditEventUndefined: Self = StObject.set(x, "editEvent", js.undefined)
       
-      @scala.inline
-      def setEditRow(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "editRow", value.asInstanceOf[js.Any])
+      inline def setEditRow(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "editRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditRowUndefined: Self = StObject.set(x, "editRow", js.undefined)
+      inline def setEditRowUndefined: Self = StObject.set(x, "editRow", js.undefined)
       
-      @scala.inline
-      def setEditRowVarargs(value: js.Any*): Self = StObject.set(x, "editRow", js.Array(value :_*))
+      inline def setEditRowVarargs(value: js.Any*): Self = StObject.set(x, "editRow", js.Array(value :_*))
       
-      @scala.inline
-      def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      @scala.inline
-      def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandEvent(value: Boolean): Self = StObject.set(x, "expandEvent", value.asInstanceOf[js.Any])
+      inline def setExpandEvent(value: Boolean): Self = StObject.set(x, "expandEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandEventUndefined: Self = StObject.set(x, "expandEvent", js.undefined)
+      inline def setExpandEventUndefined: Self = StObject.set(x, "expandEvent", js.undefined)
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setMoveRow(value: Boolean): Self = StObject.set(x, "moveRow", value.asInstanceOf[js.Any])
+      inline def setMoveRow(value: Boolean): Self = StObject.set(x, "moveRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveRowUndefined: Self = StObject.set(x, "moveRow", js.undefined)
+      inline def setMoveRowUndefined: Self = StObject.set(x, "moveRow", js.undefined)
       
-      @scala.inline
-      def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+      inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
+      inline def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      @scala.inline
-      def setSort(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortEvent(value: Boolean): Self = StObject.set(x, "sortEvent", value.asInstanceOf[js.Any])
+      inline def setSortEvent(value: Boolean): Self = StObject.set(x, "sortEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortEventUndefined: Self = StObject.set(x, "sortEvent", js.undefined)
+      inline def setSortEventUndefined: Self = StObject.set(x, "sortEvent", js.undefined)
       
-      @scala.inline
-      def setSortIndex(value: Double): Self = StObject.set(x, "sortIndex", value.asInstanceOf[js.Any])
+      inline def setSortIndex(value: Double): Self = StObject.set(x, "sortIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortIndexUndefined: Self = StObject.set(x, "sortIndex", js.undefined)
+      inline def setSortIndexUndefined: Self = StObject.set(x, "sortIndex", js.undefined)
       
-      @scala.inline
-      def setSortOrder(value: asc | desc): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+      inline def setSortOrder(value: asc | desc): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+      inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setSortVarargs(value: js.Any*): Self = StObject.set(x, "sort", js.Array(value :_*))
+      inline def setSortVarargs(value: js.Any*): Self = StObject.set(x, "sort", js.Array(value :_*))
       
-      @scala.inline
-      def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+      inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+      inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

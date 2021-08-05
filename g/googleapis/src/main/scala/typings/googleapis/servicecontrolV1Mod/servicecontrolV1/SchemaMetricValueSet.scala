@@ -23,28 +23,21 @@ trait SchemaMetricValueSet extends StObject {
 }
 object SchemaMetricValueSet {
   
-  @scala.inline
-  def apply(): SchemaMetricValueSet = {
+  inline def apply(): SchemaMetricValueSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetricValueSet]
   }
   
-  @scala.inline
-  implicit class SchemaMetricValueSetMutableBuilder[Self <: SchemaMetricValueSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetricValueSet](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
-    @scala.inline
-    def setMetricValues(value: js.Array[SchemaMetricValue]): Self = StObject.set(x, "metricValues", value.asInstanceOf[js.Any])
+    inline def setMetricValues(value: js.Array[SchemaMetricValue]): Self = StObject.set(x, "metricValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricValuesUndefined: Self = StObject.set(x, "metricValues", js.undefined)
+    inline def setMetricValuesUndefined: Self = StObject.set(x, "metricValues", js.undefined)
     
-    @scala.inline
-    def setMetricValuesVarargs(value: SchemaMetricValue*): Self = StObject.set(x, "metricValues", js.Array(value :_*))
+    inline def setMetricValuesVarargs(value: SchemaMetricValue*): Self = StObject.set(x, "metricValues", js.Array(value :_*))
   }
 }

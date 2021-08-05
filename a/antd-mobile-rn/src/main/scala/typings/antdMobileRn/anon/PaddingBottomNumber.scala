@@ -12,19 +12,15 @@ trait PaddingBottomNumber extends StObject {
 }
 object PaddingBottomNumber {
   
-  @scala.inline
-  def apply(paddingBottom: Double, paddingHorizontal: Double): PaddingBottomNumber = {
+  inline def apply(paddingBottom: Double, paddingHorizontal: Double): PaddingBottomNumber = {
     val __obj = js.Dynamic.literal(paddingBottom = paddingBottom.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingBottomNumber]
   }
   
-  @scala.inline
-  implicit class PaddingBottomNumberMutableBuilder[Self <: PaddingBottomNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PaddingBottomNumber](x: Self) {
     
-    @scala.inline
-    def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+    inline def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingHorizontal(value: Double): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
+    inline def setPaddingHorizontal(value: Double): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
   }
 }

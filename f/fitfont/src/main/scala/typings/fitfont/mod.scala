@@ -50,14 +50,11 @@ object mod {
   trait HorizontalAlign extends StObject
   object HorizontalAlign {
     
-    @scala.inline
-    def end: typings.fitfont.fitfontStrings.end = "end".asInstanceOf[typings.fitfont.fitfontStrings.end]
+    inline def end: typings.fitfont.fitfontStrings.end = "end".asInstanceOf[typings.fitfont.fitfontStrings.end]
     
-    @scala.inline
-    def middle: typings.fitfont.fitfontStrings.middle = "middle".asInstanceOf[typings.fitfont.fitfontStrings.middle]
+    inline def middle: typings.fitfont.fitfontStrings.middle = "middle".asInstanceOf[typings.fitfont.fitfontStrings.middle]
     
-    @scala.inline
-    def start: typings.fitfont.fitfontStrings.start = "start".asInstanceOf[typings.fitfont.fitfontStrings.start]
+    inline def start: typings.fitfont.fitfontStrings.start = "start".asInstanceOf[typings.fitfont.fitfontStrings.start]
   }
   
   trait Options extends StObject {
@@ -89,38 +86,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(font: String, id: String | js.Object): Options = {
+    inline def apply(font: String, id: String | js.Object): Options = {
       val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalign(value: HorizontalAlign): Self = StObject.set(x, "halign", value.asInstanceOf[js.Any])
+      inline def setHalign(value: HorizontalAlign): Self = StObject.set(x, "halign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalignUndefined: Self = StObject.set(x, "halign", js.undefined)
+      inline def setHalignUndefined: Self = StObject.set(x, "halign", js.undefined)
       
-      @scala.inline
-      def setId(value: String | js.Object): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | js.Object): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterspacing(value: Double): Self = StObject.set(x, "letterspacing", value.asInstanceOf[js.Any])
+      inline def setLetterspacing(value: Double): Self = StObject.set(x, "letterspacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterspacingUndefined: Self = StObject.set(x, "letterspacing", js.undefined)
+      inline def setLetterspacingUndefined: Self = StObject.set(x, "letterspacing", js.undefined)
       
-      @scala.inline
-      def setValign(value: VerticalAlign): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
+      inline def setValign(value: VerticalAlign): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
+      inline def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
     }
   }
   
@@ -133,16 +120,12 @@ object mod {
   trait VerticalAlign extends StObject
   object VerticalAlign {
     
-    @scala.inline
-    def baseline: typings.fitfont.fitfontStrings.baseline = "baseline".asInstanceOf[typings.fitfont.fitfontStrings.baseline]
+    inline def baseline: typings.fitfont.fitfontStrings.baseline = "baseline".asInstanceOf[typings.fitfont.fitfontStrings.baseline]
     
-    @scala.inline
-    def bottom: typings.fitfont.fitfontStrings.bottom = "bottom".asInstanceOf[typings.fitfont.fitfontStrings.bottom]
+    inline def bottom: typings.fitfont.fitfontStrings.bottom = "bottom".asInstanceOf[typings.fitfont.fitfontStrings.bottom]
     
-    @scala.inline
-    def middle: typings.fitfont.fitfontStrings.middle = "middle".asInstanceOf[typings.fitfont.fitfontStrings.middle]
+    inline def middle: typings.fitfont.fitfontStrings.middle = "middle".asInstanceOf[typings.fitfont.fitfontStrings.middle]
     
-    @scala.inline
-    def top: typings.fitfont.fitfontStrings.top = "top".asInstanceOf[typings.fitfont.fitfontStrings.top]
+    inline def top: typings.fitfont.fitfontStrings.top = "top".asInstanceOf[typings.fitfont.fitfontStrings.top]
   }
 }

@@ -13,16 +13,13 @@ trait GetSchemaAsJsonRequest extends StObject {
 }
 object GetSchemaAsJsonRequest {
   
-  @scala.inline
-  def apply(SchemaArn: Arn): GetSchemaAsJsonRequest = {
+  inline def apply(SchemaArn: Arn): GetSchemaAsJsonRequest = {
     val __obj = js.Dynamic.literal(SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSchemaAsJsonRequest]
   }
   
-  @scala.inline
-  implicit class GetSchemaAsJsonRequestMutableBuilder[Self <: GetSchemaAsJsonRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSchemaAsJsonRequest](x: Self) {
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

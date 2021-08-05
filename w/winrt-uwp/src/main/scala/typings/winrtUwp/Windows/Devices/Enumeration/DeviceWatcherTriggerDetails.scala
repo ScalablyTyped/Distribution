@@ -13,16 +13,13 @@ trait DeviceWatcherTriggerDetails extends StObject {
 }
 object DeviceWatcherTriggerDetails {
   
-  @scala.inline
-  def apply(deviceWatcherEvents: IVectorView[DeviceWatcherEvent]): DeviceWatcherTriggerDetails = {
+  inline def apply(deviceWatcherEvents: IVectorView[DeviceWatcherEvent]): DeviceWatcherTriggerDetails = {
     val __obj = js.Dynamic.literal(deviceWatcherEvents = deviceWatcherEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceWatcherTriggerDetails]
   }
   
-  @scala.inline
-  implicit class DeviceWatcherTriggerDetailsMutableBuilder[Self <: DeviceWatcherTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceWatcherTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setDeviceWatcherEvents(value: IVectorView[DeviceWatcherEvent]): Self = StObject.set(x, "deviceWatcherEvents", value.asInstanceOf[js.Any])
+    inline def setDeviceWatcherEvents(value: IVectorView[DeviceWatcherEvent]): Self = StObject.set(x, "deviceWatcherEvents", value.asInstanceOf[js.Any])
   }
 }

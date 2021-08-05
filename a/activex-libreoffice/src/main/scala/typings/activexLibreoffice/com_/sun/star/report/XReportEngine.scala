@@ -75,8 +75,7 @@ trait XReportEngine
 }
 object XReportEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveConnection: XConnection,
     MaxRows: Double,
     PropertySetInfo: XPropertySetInfo,
@@ -104,31 +103,22 @@ object XReportEngine {
     __obj.asInstanceOf[XReportEngine]
   }
   
-  @scala.inline
-  implicit class XReportEngineMutableBuilder[Self <: XReportEngine] (val x: Self) extends AnyVal {
+  extension [Self <: XReportEngine](x: Self) {
     
-    @scala.inline
-    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
+    inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDocument(value: () => URL): Self = StObject.set(x, "createDocument", js.Any.fromFunction0(value))
+    inline def setCreateDocument(value: () => URL): Self = StObject.set(x, "createDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateDocumentAlive(value: XFrame => XModel): Self = StObject.set(x, "createDocumentAlive", js.Any.fromFunction1(value))
+    inline def setCreateDocumentAlive(value: XFrame => XModel): Self = StObject.set(x, "createDocumentAlive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateDocumentModel(value: () => XModel): Self = StObject.set(x, "createDocumentModel", js.Any.fromFunction0(value))
+    inline def setCreateDocumentModel(value: () => XModel): Self = StObject.set(x, "createDocumentModel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInterrupt(value: () => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction0(value))
+    inline def setInterrupt(value: () => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMaxRows(value: Double): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
+    inline def setMaxRows(value: Double): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportDefinition(value: XReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
+    inline def setReportDefinition(value: XReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusIndicator(value: XStatusIndicator): Self = StObject.set(x, "StatusIndicator", value.asInstanceOf[js.Any])
+    inline def setStatusIndicator(value: XStatusIndicator): Self = StObject.set(x, "StatusIndicator", value.asInstanceOf[js.Any])
   }
 }

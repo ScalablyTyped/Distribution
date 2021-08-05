@@ -22,31 +22,25 @@ trait GridAreaProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
 }
 object GridAreaProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): GridAreaProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): GridAreaProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridAreaProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class GridAreaPropsMutableBuilder[Self <: GridAreaProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & GridAreaProps[ThemeType]) extends AnyVal {
+  extension [Self <: GridAreaProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridAreaProps[ThemeType]) {
     
-    @scala.inline
-    def setGridArea(
+    inline def setGridArea(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAreaNull: Self = StObject.set(x, "gridArea", null)
+    inline def setGridAreaNull: Self = StObject.set(x, "gridArea", null)
     
-    @scala.inline
-    def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
+    inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
-    @scala.inline
-    def setGridAreaVarargs(
+    inline def setGridAreaVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridArea", js.Array(value :_*))
   }

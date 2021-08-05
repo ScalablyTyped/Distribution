@@ -23,8 +23,7 @@ object listItemSelectUniDriverMod {
   }
   object ListItemSelectUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -38,23 +37,17 @@ object listItemSelectUniDriverMod {
       __obj.asInstanceOf[ListItemSelectUniDriver]
     }
     
-    @scala.inline
-    implicit class ListItemSelectUniDriverMutableBuilder[Self <: ListItemSelectUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemSelectUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetPrefix(value: () => js.Promise[BaseUniDriver]): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
+      inline def setGetPrefix(value: () => js.Promise[BaseUniDriver]): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubtitle(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
+      inline def setGetSubtitle(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSuffix(value: () => js.Promise[BaseUniDriver]): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
+      inline def setGetSuffix(value: () => js.Promise[BaseUniDriver]): Self = StObject.set(x, "getSuffix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasCheckbox(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasCheckbox", js.Any.fromFunction0(value))
+      inline def setHasCheckbox(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasCheckbox", js.Any.fromFunction0(value))
     }
   }
 }

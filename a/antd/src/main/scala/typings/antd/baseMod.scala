@@ -32,8 +32,7 @@ object baseMod {
     @JSImport("antd/lib/typography/Base", "default.contextType")
     @js.native
     def contextType: Context[ConfigConsumerProps] = js.native
-    @scala.inline
-    def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -45,13 +44,11 @@ object baseMod {
       @JSImport("antd/lib/typography/Base", "default.defaultProps.children")
       @js.native
       def children: String = js.native
-      @scala.inline
-      def children_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: BlockProps): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def getDerivedStateFromProps(nextProps: BlockProps): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
   
   @js.native
@@ -147,8 +144,7 @@ object baseMod {
   }
   object BaseState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientRendered: Boolean,
       copied: Boolean,
       edit: Boolean,
@@ -160,32 +156,23 @@ object baseMod {
       __obj.asInstanceOf[BaseState]
     }
     
-    @scala.inline
-    implicit class BaseStateMutableBuilder[Self <: BaseState] (val x: Self) extends AnyVal {
+    extension [Self <: BaseState](x: Self) {
       
-      @scala.inline
-      def setClientRendered(value: Boolean): Self = StObject.set(x, "clientRendered", value.asInstanceOf[js.Any])
+      inline def setClientRendered(value: Boolean): Self = StObject.set(x, "clientRendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopied(value: Boolean): Self = StObject.set(x, "copied", value.asInstanceOf[js.Any])
+      inline def setCopied(value: Boolean): Self = StObject.set(x, "copied", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdit(value: Boolean): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      inline def setEdit(value: Boolean): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisContent(value: ReactNode): Self = StObject.set(x, "ellipsisContent", value.asInstanceOf[js.Any])
+      inline def setEllipsisContent(value: ReactNode): Self = StObject.set(x, "ellipsisContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisContentUndefined: Self = StObject.set(x, "ellipsisContent", js.undefined)
+      inline def setEllipsisContentUndefined: Self = StObject.set(x, "ellipsisContent", js.undefined)
       
-      @scala.inline
-      def setEllipsisText(value: String): Self = StObject.set(x, "ellipsisText", value.asInstanceOf[js.Any])
+      inline def setEllipsisText(value: String): Self = StObject.set(x, "ellipsisText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEllipsis(value: Boolean): Self = StObject.set(x, "isEllipsis", value.asInstanceOf[js.Any])
+      inline def setIsEllipsis(value: Boolean): Self = StObject.set(x, "isEllipsis", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,17 +185,13 @@ object baseMod {
   trait BaseType extends StObject
   object BaseType {
     
-    @scala.inline
-    def danger: typings.antd.antdStrings.danger = "danger".asInstanceOf[typings.antd.antdStrings.danger]
+    inline def danger: typings.antd.antdStrings.danger = "danger".asInstanceOf[typings.antd.antdStrings.danger]
     
-    @scala.inline
-    def secondary: typings.antd.antdStrings.secondary = "secondary".asInstanceOf[typings.antd.antdStrings.secondary]
+    inline def secondary: typings.antd.antdStrings.secondary = "secondary".asInstanceOf[typings.antd.antdStrings.secondary]
     
-    @scala.inline
-    def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
+    inline def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
     
-    @scala.inline
-    def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
+    inline def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
   }
   
   trait BlockProps
@@ -241,86 +224,60 @@ object baseMod {
   }
   object BlockProps {
     
-    @scala.inline
-    def apply(): BlockProps = {
+    inline def apply(): BlockProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BlockProps]
     }
     
-    @scala.inline
-    implicit class BlockPropsMutableBuilder[Self <: BlockProps] (val x: Self) extends AnyVal {
+    extension [Self <: BlockProps](x: Self) {
       
-      @scala.inline
-      def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setCopyable(value: Boolean | CopyConfig): Self = StObject.set(x, "copyable", value.asInstanceOf[js.Any])
+      inline def setCopyable(value: Boolean | CopyConfig): Self = StObject.set(x, "copyable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyableUndefined: Self = StObject.set(x, "copyable", js.undefined)
+      inline def setCopyableUndefined: Self = StObject.set(x, "copyable", js.undefined)
       
-      @scala.inline
-      def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEditable(value: Boolean | EditConfig): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean | EditConfig): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+      inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
       
-      @scala.inline
-      def setEllipsis(value: Boolean | EllipsisConfig): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: Boolean | EllipsisConfig): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
       
-      @scala.inline
-      def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+      inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
-      @scala.inline
-      def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: Boolean): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
       
-      @scala.inline
-      def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
+      inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: BaseType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: BaseType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+      inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     }
   }
   
@@ -336,38 +293,28 @@ object baseMod {
   }
   object CopyConfig {
     
-    @scala.inline
-    def apply(): CopyConfig = {
+    inline def apply(): CopyConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CopyConfig]
     }
     
-    @scala.inline
-    implicit class CopyConfigMutableBuilder[Self <: CopyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CopyConfig](x: Self) {
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setOnCopy(value: () => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction0(value))
+      inline def setOnCopy(value: () => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+      inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTooltips(value: Boolean | ReactNode): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
+      inline def setTooltips(value: Boolean | ReactNode): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
+      inline def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
     }
   }
   
@@ -389,56 +336,40 @@ object baseMod {
   }
   object EditConfig {
     
-    @scala.inline
-    def apply(): EditConfig = {
+    inline def apply(): EditConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditConfig]
     }
     
-    @scala.inline
-    implicit class EditConfigMutableBuilder[Self <: EditConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EditConfig](x: Self) {
       
-      @scala.inline
-      def setAutoSize(value: Boolean | AutoSizeType): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
+      inline def setAutoSize(value: Boolean | AutoSizeType): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
+      inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
       
-      @scala.inline
-      def setEditing(value: Boolean): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
+      inline def setEditing(value: Boolean): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
+      inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
+      inline def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: Boolean | ReactNode): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Boolean | ReactNode): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }
   }
   
@@ -458,50 +389,36 @@ object baseMod {
   }
   object EllipsisConfig {
     
-    @scala.inline
-    def apply(): EllipsisConfig = {
+    inline def apply(): EllipsisConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EllipsisConfig]
     }
     
-    @scala.inline
-    implicit class EllipsisConfigMutableBuilder[Self <: EllipsisConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EllipsisConfig](x: Self) {
       
-      @scala.inline
-      def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+      inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
       
-      @scala.inline
-      def setOnEllipsis(value: /* ellipsis */ Boolean => Unit): Self = StObject.set(x, "onEllipsis", js.Any.fromFunction1(value))
+      inline def setOnEllipsis(value: /* ellipsis */ Boolean => Unit): Self = StObject.set(x, "onEllipsis", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEllipsisUndefined: Self = StObject.set(x, "onEllipsis", js.undefined)
+      inline def setOnEllipsisUndefined: Self = StObject.set(x, "onEllipsis", js.undefined)
       
-      @scala.inline
-      def setOnExpand(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+      inline def setOnExpand(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
+      inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setSymbol(value: ReactNode): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: ReactNode): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     }
   }
   
@@ -513,17 +430,14 @@ object baseMod {
   }
   object InternalBlockProps {
     
-    @scala.inline
-    def apply(component: String): InternalBlockProps = {
+    inline def apply(component: String): InternalBlockProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalBlockProps]
     }
     
-    @scala.inline
-    implicit class InternalBlockPropsMutableBuilder[Self <: InternalBlockProps] (val x: Self) extends AnyVal {
+    extension [Self <: InternalBlockProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
 }

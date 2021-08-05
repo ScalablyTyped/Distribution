@@ -23,8 +23,7 @@ trait IDateJSLiteral extends StObject {
 }
 object IDateJSLiteral {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     days: Double,
     hours: Double,
     milliseconds: Double,
@@ -37,28 +36,20 @@ object IDateJSLiteral {
     __obj.asInstanceOf[IDateJSLiteral]
   }
   
-  @scala.inline
-  implicit class IDateJSLiteralMutableBuilder[Self <: IDateJSLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: IDateJSLiteral](x: Self) {
     
-    @scala.inline
-    def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+    inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonths(value: Double): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: Double): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+    inline def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
   }
 }

@@ -14,20 +14,16 @@ object mod {
   }
   object Attributes {
     
-    @scala.inline
-    def apply(): Attributes = {
+    inline def apply(): Attributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attributes]
     }
     
-    @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+    extension [Self <: Attributes](x: Self) {
       
-      @scala.inline
-      def setSx(value: ThemedStyle): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
+      inline def setSx(value: ThemedStyle): Self = StObject.set(x, "sx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
+      inline def setSxUndefined: Self = StObject.set(x, "sx", js.undefined)
     }
   }
 }

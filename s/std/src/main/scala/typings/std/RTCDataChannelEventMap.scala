@@ -18,8 +18,7 @@ trait RTCDataChannelEventMap extends StObject {
 }
 object RTCDataChannelEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bufferedamountlow: Event,
     close: Event,
     error: RTCErrorEvent,
@@ -30,22 +29,16 @@ object RTCDataChannelEventMap {
     __obj.asInstanceOf[RTCDataChannelEventMap]
   }
   
-  @scala.inline
-  implicit class RTCDataChannelEventMapMutableBuilder[Self <: RTCDataChannelEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: RTCDataChannelEventMap](x: Self) {
     
-    @scala.inline
-    def setBufferedamountlow(value: Event): Self = StObject.set(x, "bufferedamountlow", value.asInstanceOf[js.Any])
+    inline def setBufferedamountlow(value: Event): Self = StObject.set(x, "bufferedamountlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: Event): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: Event): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: RTCErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: RTCErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Event): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Event): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

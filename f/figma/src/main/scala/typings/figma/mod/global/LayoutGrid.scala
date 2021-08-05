@@ -17,14 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayoutGrid extends StObject
 object LayoutGrid {
   
-  @scala.inline
-  def GridLayoutGrid(sectionSize: Double): typings.figma.mod.global.GridLayoutGrid = {
+  inline def GridLayoutGrid(sectionSize: Double): typings.figma.mod.global.GridLayoutGrid = {
     val __obj = js.Dynamic.literal(pattern = "GRID", sectionSize = sectionSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.figma.mod.global.GridLayoutGrid]
   }
   
-  @scala.inline
-  def RowsColsLayoutGrid(
+  inline def RowsColsLayoutGrid(
     alignment: MIN | MAX | STRETCH | CENTER,
     count: Double,
     gutterSize: Double,

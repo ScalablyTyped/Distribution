@@ -80,167 +80,114 @@ object mod extends Shortcut {
   }
   object ReactJsPaginationProps {
     
-    @scala.inline
-    def apply(activePage: Double, onChange: Double => Unit, totalItemsCount: Double): ReactJsPaginationProps = {
+    inline def apply(activePage: Double, onChange: Double => Unit, totalItemsCount: Double): ReactJsPaginationProps = {
       val __obj = js.Dynamic.literal(activePage = activePage.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), totalItemsCount = totalItemsCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactJsPaginationProps]
     }
     
-    @scala.inline
-    implicit class ReactJsPaginationPropsMutableBuilder[Self <: ReactJsPaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactJsPaginationProps](x: Self) {
       
-      @scala.inline
-      def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+      inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+      inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
       
-      @scala.inline
-      def setActiveLinkClass(value: String): Self = StObject.set(x, "activeLinkClass", value.asInstanceOf[js.Any])
+      inline def setActiveLinkClass(value: String): Self = StObject.set(x, "activeLinkClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveLinkClassUndefined: Self = StObject.set(x, "activeLinkClass", js.undefined)
+      inline def setActiveLinkClassUndefined: Self = StObject.set(x, "activeLinkClass", js.undefined)
       
-      @scala.inline
-      def setActivePage(value: Double): Self = StObject.set(x, "activePage", value.asInstanceOf[js.Any])
+      inline def setActivePage(value: Double): Self = StObject.set(x, "activePage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
+      inline def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
+      inline def setDisabledClassUndefined: Self = StObject.set(x, "disabledClass", js.undefined)
       
-      @scala.inline
-      def setFirstPageText(value: String | ReactElement): Self = StObject.set(x, "firstPageText", value.asInstanceOf[js.Any])
+      inline def setFirstPageText(value: String | ReactElement): Self = StObject.set(x, "firstPageText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstPageTextUndefined: Self = StObject.set(x, "firstPageText", js.undefined)
+      inline def setFirstPageTextUndefined: Self = StObject.set(x, "firstPageText", js.undefined)
       
-      @scala.inline
-      def setGetPageUrl(value: /* pageNumber */ Double => String): Self = StObject.set(x, "getPageUrl", js.Any.fromFunction1(value))
+      inline def setGetPageUrl(value: /* pageNumber */ Double => String): Self = StObject.set(x, "getPageUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageUrlUndefined: Self = StObject.set(x, "getPageUrl", js.undefined)
+      inline def setGetPageUrlUndefined: Self = StObject.set(x, "getPageUrl", js.undefined)
       
-      @scala.inline
-      def setHideDisabled(value: Boolean): Self = StObject.set(x, "hideDisabled", value.asInstanceOf[js.Any])
+      inline def setHideDisabled(value: Boolean): Self = StObject.set(x, "hideDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideDisabledUndefined: Self = StObject.set(x, "hideDisabled", js.undefined)
+      inline def setHideDisabledUndefined: Self = StObject.set(x, "hideDisabled", js.undefined)
       
-      @scala.inline
-      def setHideFirstLastPages(value: Boolean): Self = StObject.set(x, "hideFirstLastPages", value.asInstanceOf[js.Any])
+      inline def setHideFirstLastPages(value: Boolean): Self = StObject.set(x, "hideFirstLastPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideFirstLastPagesUndefined: Self = StObject.set(x, "hideFirstLastPages", js.undefined)
+      inline def setHideFirstLastPagesUndefined: Self = StObject.set(x, "hideFirstLastPages", js.undefined)
       
-      @scala.inline
-      def setHideNavigation(value: Boolean): Self = StObject.set(x, "hideNavigation", value.asInstanceOf[js.Any])
+      inline def setHideNavigation(value: Boolean): Self = StObject.set(x, "hideNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideNavigationUndefined: Self = StObject.set(x, "hideNavigation", js.undefined)
+      inline def setHideNavigationUndefined: Self = StObject.set(x, "hideNavigation", js.undefined)
       
-      @scala.inline
-      def setInnerClass(value: String): Self = StObject.set(x, "innerClass", value.asInstanceOf[js.Any])
+      inline def setInnerClass(value: String): Self = StObject.set(x, "innerClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerClassUndefined: Self = StObject.set(x, "innerClass", js.undefined)
+      inline def setInnerClassUndefined: Self = StObject.set(x, "innerClass", js.undefined)
       
-      @scala.inline
-      def setItemClass(value: String): Self = StObject.set(x, "itemClass", value.asInstanceOf[js.Any])
+      inline def setItemClass(value: String): Self = StObject.set(x, "itemClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemClassFirst(value: String): Self = StObject.set(x, "itemClassFirst", value.asInstanceOf[js.Any])
+      inline def setItemClassFirst(value: String): Self = StObject.set(x, "itemClassFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemClassFirstUndefined: Self = StObject.set(x, "itemClassFirst", js.undefined)
+      inline def setItemClassFirstUndefined: Self = StObject.set(x, "itemClassFirst", js.undefined)
       
-      @scala.inline
-      def setItemClassLast(value: String): Self = StObject.set(x, "itemClassLast", value.asInstanceOf[js.Any])
+      inline def setItemClassLast(value: String): Self = StObject.set(x, "itemClassLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemClassLastUndefined: Self = StObject.set(x, "itemClassLast", js.undefined)
+      inline def setItemClassLastUndefined: Self = StObject.set(x, "itemClassLast", js.undefined)
       
-      @scala.inline
-      def setItemClassNext(value: String): Self = StObject.set(x, "itemClassNext", value.asInstanceOf[js.Any])
+      inline def setItemClassNext(value: String): Self = StObject.set(x, "itemClassNext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemClassNextUndefined: Self = StObject.set(x, "itemClassNext", js.undefined)
+      inline def setItemClassNextUndefined: Self = StObject.set(x, "itemClassNext", js.undefined)
       
-      @scala.inline
-      def setItemClassPrev(value: String): Self = StObject.set(x, "itemClassPrev", value.asInstanceOf[js.Any])
+      inline def setItemClassPrev(value: String): Self = StObject.set(x, "itemClassPrev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemClassPrevUndefined: Self = StObject.set(x, "itemClassPrev", js.undefined)
+      inline def setItemClassPrevUndefined: Self = StObject.set(x, "itemClassPrev", js.undefined)
       
-      @scala.inline
-      def setItemClassUndefined: Self = StObject.set(x, "itemClass", js.undefined)
+      inline def setItemClassUndefined: Self = StObject.set(x, "itemClass", js.undefined)
       
-      @scala.inline
-      def setItemsCountPerPage(value: Double): Self = StObject.set(x, "itemsCountPerPage", value.asInstanceOf[js.Any])
+      inline def setItemsCountPerPage(value: Double): Self = StObject.set(x, "itemsCountPerPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsCountPerPageUndefined: Self = StObject.set(x, "itemsCountPerPage", js.undefined)
+      inline def setItemsCountPerPageUndefined: Self = StObject.set(x, "itemsCountPerPage", js.undefined)
       
-      @scala.inline
-      def setLastPageText(value: String | ReactElement): Self = StObject.set(x, "lastPageText", value.asInstanceOf[js.Any])
+      inline def setLastPageText(value: String | ReactElement): Self = StObject.set(x, "lastPageText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPageTextUndefined: Self = StObject.set(x, "lastPageText", js.undefined)
+      inline def setLastPageTextUndefined: Self = StObject.set(x, "lastPageText", js.undefined)
       
-      @scala.inline
-      def setLinkClass(value: String): Self = StObject.set(x, "linkClass", value.asInstanceOf[js.Any])
+      inline def setLinkClass(value: String): Self = StObject.set(x, "linkClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkClassFirst(value: String): Self = StObject.set(x, "linkClassFirst", value.asInstanceOf[js.Any])
+      inline def setLinkClassFirst(value: String): Self = StObject.set(x, "linkClassFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkClassFirstUndefined: Self = StObject.set(x, "linkClassFirst", js.undefined)
+      inline def setLinkClassFirstUndefined: Self = StObject.set(x, "linkClassFirst", js.undefined)
       
-      @scala.inline
-      def setLinkClassLast(value: String): Self = StObject.set(x, "linkClassLast", value.asInstanceOf[js.Any])
+      inline def setLinkClassLast(value: String): Self = StObject.set(x, "linkClassLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkClassLastUndefined: Self = StObject.set(x, "linkClassLast", js.undefined)
+      inline def setLinkClassLastUndefined: Self = StObject.set(x, "linkClassLast", js.undefined)
       
-      @scala.inline
-      def setLinkClassNext(value: String): Self = StObject.set(x, "linkClassNext", value.asInstanceOf[js.Any])
+      inline def setLinkClassNext(value: String): Self = StObject.set(x, "linkClassNext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkClassNextUndefined: Self = StObject.set(x, "linkClassNext", js.undefined)
+      inline def setLinkClassNextUndefined: Self = StObject.set(x, "linkClassNext", js.undefined)
       
-      @scala.inline
-      def setLinkClassPrev(value: String): Self = StObject.set(x, "linkClassPrev", value.asInstanceOf[js.Any])
+      inline def setLinkClassPrev(value: String): Self = StObject.set(x, "linkClassPrev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkClassPrevUndefined: Self = StObject.set(x, "linkClassPrev", js.undefined)
+      inline def setLinkClassPrevUndefined: Self = StObject.set(x, "linkClassPrev", js.undefined)
       
-      @scala.inline
-      def setLinkClassUndefined: Self = StObject.set(x, "linkClass", js.undefined)
+      inline def setLinkClassUndefined: Self = StObject.set(x, "linkClass", js.undefined)
       
-      @scala.inline
-      def setNextPageText(value: String | ReactElement): Self = StObject.set(x, "nextPageText", value.asInstanceOf[js.Any])
+      inline def setNextPageText(value: String | ReactElement): Self = StObject.set(x, "nextPageText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextPageTextUndefined: Self = StObject.set(x, "nextPageText", js.undefined)
+      inline def setNextPageTextUndefined: Self = StObject.set(x, "nextPageText", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPageRangeDisplayed(value: Double): Self = StObject.set(x, "pageRangeDisplayed", value.asInstanceOf[js.Any])
+      inline def setPageRangeDisplayed(value: Double): Self = StObject.set(x, "pageRangeDisplayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageRangeDisplayedUndefined: Self = StObject.set(x, "pageRangeDisplayed", js.undefined)
+      inline def setPageRangeDisplayedUndefined: Self = StObject.set(x, "pageRangeDisplayed", js.undefined)
       
-      @scala.inline
-      def setPrevPageText(value: String | ReactElement): Self = StObject.set(x, "prevPageText", value.asInstanceOf[js.Any])
+      inline def setPrevPageText(value: String | ReactElement): Self = StObject.set(x, "prevPageText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevPageTextUndefined: Self = StObject.set(x, "prevPageText", js.undefined)
+      inline def setPrevPageTextUndefined: Self = StObject.set(x, "prevPageText", js.undefined)
       
-      @scala.inline
-      def setTotalItemsCount(value: Double): Self = StObject.set(x, "totalItemsCount", value.asInstanceOf[js.Any])
+      inline def setTotalItemsCount(value: Double): Self = StObject.set(x, "totalItemsCount", value.asInstanceOf[js.Any])
     }
   }
   

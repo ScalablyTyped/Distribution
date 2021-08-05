@@ -18,8 +18,7 @@ trait ILocalContentSuggestionSettings extends StObject {
 }
 object ILocalContentSuggestionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aqsFilter: String,
     enabled: Boolean,
     locations: IVector[StorageFolder],
@@ -29,19 +28,14 @@ object ILocalContentSuggestionSettings {
     __obj.asInstanceOf[ILocalContentSuggestionSettings]
   }
   
-  @scala.inline
-  implicit class ILocalContentSuggestionSettingsMutableBuilder[Self <: ILocalContentSuggestionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ILocalContentSuggestionSettings](x: Self) {
     
-    @scala.inline
-    def setAqsFilter(value: String): Self = StObject.set(x, "aqsFilter", value.asInstanceOf[js.Any])
+    inline def setAqsFilter(value: String): Self = StObject.set(x, "aqsFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: IVector[StorageFolder]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: IVector[StorageFolder]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesToMatch(value: IVector[String]): Self = StObject.set(x, "propertiesToMatch", value.asInstanceOf[js.Any])
+    inline def setPropertiesToMatch(value: IVector[String]): Self = StObject.set(x, "propertiesToMatch", value.asInstanceOf[js.Any])
   }
 }

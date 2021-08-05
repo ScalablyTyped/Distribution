@@ -63,83 +63,58 @@ object optionsTableOptionsMod {
   }
   object TableOptions {
     
-    @scala.inline
-    def apply(name: String): TableOptions = {
+    inline def apply(name: String): TableOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableOptions]
     }
     
-    @scala.inline
-    implicit class TableOptionsMutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableOptions](x: Self) {
       
-      @scala.inline
-      def setChecks(value: js.Array[TableCheckOptions]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+      inline def setChecks(value: js.Array[TableCheckOptions]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
+      inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
       
-      @scala.inline
-      def setChecksVarargs(value: TableCheckOptions*): Self = StObject.set(x, "checks", js.Array(value :_*))
+      inline def setChecksVarargs(value: TableCheckOptions*): Self = StObject.set(x, "checks", js.Array(value :_*))
       
-      @scala.inline
-      def setColumns(value: js.Array[TableColumnOptions]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[TableColumnOptions]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: TableColumnOptions*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: TableColumnOptions*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
-      @scala.inline
-      def setExclusions(value: js.Array[TableExclusionOptions]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
+      inline def setExclusions(value: js.Array[TableExclusionOptions]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
+      inline def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
       
-      @scala.inline
-      def setExclusionsVarargs(value: TableExclusionOptions*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
+      inline def setExclusionsVarargs(value: TableExclusionOptions*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
       
-      @scala.inline
-      def setForeignKeys(value: js.Array[TableForeignKeyOptions]): Self = StObject.set(x, "foreignKeys", value.asInstanceOf[js.Any])
+      inline def setForeignKeys(value: js.Array[TableForeignKeyOptions]): Self = StObject.set(x, "foreignKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForeignKeysUndefined: Self = StObject.set(x, "foreignKeys", js.undefined)
+      inline def setForeignKeysUndefined: Self = StObject.set(x, "foreignKeys", js.undefined)
       
-      @scala.inline
-      def setForeignKeysVarargs(value: TableForeignKeyOptions*): Self = StObject.set(x, "foreignKeys", js.Array(value :_*))
+      inline def setForeignKeysVarargs(value: TableForeignKeyOptions*): Self = StObject.set(x, "foreignKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setIndices(value: js.Array[TableIndexOptions]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+      inline def setIndices(value: js.Array[TableIndexOptions]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+      inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
       
-      @scala.inline
-      def setIndicesVarargs(value: TableIndexOptions*): Self = StObject.set(x, "indices", js.Array(value :_*))
+      inline def setIndicesVarargs(value: TableIndexOptions*): Self = StObject.set(x, "indices", js.Array(value :_*))
       
-      @scala.inline
-      def setJustCreated(value: Boolean): Self = StObject.set(x, "justCreated", value.asInstanceOf[js.Any])
+      inline def setJustCreated(value: Boolean): Self = StObject.set(x, "justCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustCreatedUndefined: Self = StObject.set(x, "justCreated", js.undefined)
+      inline def setJustCreatedUndefined: Self = StObject.set(x, "justCreated", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniques(value: js.Array[TableUniqueOptions]): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
+      inline def setUniques(value: js.Array[TableUniqueOptions]): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniquesUndefined: Self = StObject.set(x, "uniques", js.undefined)
+      inline def setUniquesUndefined: Self = StObject.set(x, "uniques", js.undefined)
       
-      @scala.inline
-      def setUniquesVarargs(value: TableUniqueOptions*): Self = StObject.set(x, "uniques", js.Array(value :_*))
+      inline def setUniquesVarargs(value: TableUniqueOptions*): Self = StObject.set(x, "uniques", js.Array(value :_*))
     }
   }
 }

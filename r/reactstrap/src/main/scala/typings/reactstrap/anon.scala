@@ -14,20 +14,16 @@ object anon {
   }
   object Hide {
     
-    @scala.inline
-    def apply(hide: Double, show: Double): Hide = {
+    inline def apply(hide: Double, show: Double): Hide = {
       val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hide]
     }
     
-    @scala.inline
-    implicit class HideMutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
+    extension [Self <: Hide](x: Self) {
       
-      @scala.inline
-      def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+      inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,32 +37,24 @@ object anon {
   }
   object Offset {
     
-    @scala.inline
-    def apply(): Offset = {
+    inline def apply(): Offset = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Offset]
     }
     
-    @scala.inline
-    implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+    extension [Self <: Offset](x: Self) {
       
-      @scala.inline
-      def setOffset(value: String | Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: String | Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrder(value: String | Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: String | Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setSize(value: Boolean | Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Boolean | Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

@@ -17,25 +17,19 @@ trait TargetingExpansionConfig extends StObject {
 }
 object TargetingExpansionConfig {
   
-  @scala.inline
-  def apply(): TargetingExpansionConfig = {
+  inline def apply(): TargetingExpansionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetingExpansionConfig]
   }
   
-  @scala.inline
-  implicit class TargetingExpansionConfigMutableBuilder[Self <: TargetingExpansionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TargetingExpansionConfig](x: Self) {
     
-    @scala.inline
-    def setExcludeFirstPartyAudience(value: Boolean): Self = StObject.set(x, "excludeFirstPartyAudience", value.asInstanceOf[js.Any])
+    inline def setExcludeFirstPartyAudience(value: Boolean): Self = StObject.set(x, "excludeFirstPartyAudience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeFirstPartyAudienceUndefined: Self = StObject.set(x, "excludeFirstPartyAudience", js.undefined)
+    inline def setExcludeFirstPartyAudienceUndefined: Self = StObject.set(x, "excludeFirstPartyAudience", js.undefined)
     
-    @scala.inline
-    def setTargetingExpansionLevel(value: String): Self = StObject.set(x, "targetingExpansionLevel", value.asInstanceOf[js.Any])
+    inline def setTargetingExpansionLevel(value: String): Self = StObject.set(x, "targetingExpansionLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingExpansionLevelUndefined: Self = StObject.set(x, "targetingExpansionLevel", js.undefined)
+    inline def setTargetingExpansionLevelUndefined: Self = StObject.set(x, "targetingExpansionLevel", js.undefined)
   }
 }

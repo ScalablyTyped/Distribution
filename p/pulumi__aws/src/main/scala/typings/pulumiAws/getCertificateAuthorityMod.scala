@@ -13,10 +13,8 @@ object getCertificateAuthorityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCertificateAuthority(args: GetCertificateAuthorityArgs): js.Promise[GetCertificateAuthorityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateAuthority")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCertificateAuthorityResult]]
-  @scala.inline
-  def getCertificateAuthority(args: GetCertificateAuthorityArgs, opts: InvokeOptions): js.Promise[GetCertificateAuthorityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateAuthority")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateAuthorityResult]]
+  inline def getCertificateAuthority(args: GetCertificateAuthorityArgs): js.Promise[GetCertificateAuthorityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateAuthority")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCertificateAuthorityResult]]
+  inline def getCertificateAuthority(args: GetCertificateAuthorityArgs, opts: InvokeOptions): js.Promise[GetCertificateAuthorityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateAuthority")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateAuthorityResult]]
   
   trait GetCertificateAuthorityArgs extends StObject {
     
@@ -42,32 +40,24 @@ object getCertificateAuthorityMod {
   }
   object GetCertificateAuthorityArgs {
     
-    @scala.inline
-    def apply(arn: String): GetCertificateAuthorityArgs = {
+    inline def apply(arn: String): GetCertificateAuthorityArgs = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetCertificateAuthorityArgs]
     }
     
-    @scala.inline
-    implicit class GetCertificateAuthorityArgsMutableBuilder[Self <: GetCertificateAuthorityArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetCertificateAuthorityArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevocationConfigurations(value: js.Array[GetCertificateAuthorityRevocationConfiguration]): Self = StObject.set(x, "revocationConfigurations", value.asInstanceOf[js.Any])
+      inline def setRevocationConfigurations(value: js.Array[GetCertificateAuthorityRevocationConfiguration]): Self = StObject.set(x, "revocationConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevocationConfigurationsUndefined: Self = StObject.set(x, "revocationConfigurations", js.undefined)
+      inline def setRevocationConfigurationsUndefined: Self = StObject.set(x, "revocationConfigurations", js.undefined)
       
-      @scala.inline
-      def setRevocationConfigurationsVarargs(value: GetCertificateAuthorityRevocationConfiguration*): Self = StObject.set(x, "revocationConfigurations", js.Array(value :_*))
+      inline def setRevocationConfigurationsVarargs(value: GetCertificateAuthorityRevocationConfiguration*): Self = StObject.set(x, "revocationConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -139,8 +129,7 @@ object getCertificateAuthorityMod {
   }
   object GetCertificateAuthorityResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       certificate: String,
       certificateChain: String,
@@ -161,51 +150,37 @@ object getCertificateAuthorityMod {
       __obj.asInstanceOf[GetCertificateAuthorityResult]
     }
     
-    @scala.inline
-    implicit class GetCertificateAuthorityResultMutableBuilder[Self <: GetCertificateAuthorityResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetCertificateAuthorityResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateChain(value: String): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+      inline def setCertificateChain(value: String): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateSigningRequest(value: String): Self = StObject.set(x, "certificateSigningRequest", value.asInstanceOf[js.Any])
+      inline def setCertificateSigningRequest(value: String): Self = StObject.set(x, "certificateSigningRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotAfter(value: String): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
+      inline def setNotAfter(value: String): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotBefore(value: String): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+      inline def setNotBefore(value: String): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevocationConfigurations(
+      inline def setRevocationConfigurations(
         value: js.Array[
               typings.pulumiAws.outputMod.acmpca.GetCertificateAuthorityRevocationConfiguration
             ]
       ): Self = StObject.set(x, "revocationConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevocationConfigurationsVarargs(value: typings.pulumiAws.outputMod.acmpca.GetCertificateAuthorityRevocationConfiguration*): Self = StObject.set(x, "revocationConfigurations", js.Array(value :_*))
+      inline def setRevocationConfigurationsVarargs(value: typings.pulumiAws.outputMod.acmpca.GetCertificateAuthorityRevocationConfiguration*): Self = StObject.set(x, "revocationConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+      inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

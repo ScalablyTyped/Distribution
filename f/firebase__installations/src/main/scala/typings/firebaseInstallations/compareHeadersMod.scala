@@ -12,8 +12,7 @@ object compareHeadersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compareHeaders(expectedHeaders: HeadersWithEntries, actualHeaders: HeadersWithEntries): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compareHeaders")(expectedHeaders.asInstanceOf[js.Any], actualHeaders.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compareHeaders(expectedHeaders: HeadersWithEntries, actualHeaders: HeadersWithEntries): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compareHeaders")(expectedHeaders.asInstanceOf[js.Any], actualHeaders.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait HeadersWithEntries

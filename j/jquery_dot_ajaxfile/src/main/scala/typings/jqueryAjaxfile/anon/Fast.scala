@@ -12,19 +12,15 @@ trait Fast extends StObject {
 }
 object Fast {
   
-  @scala.inline
-  def apply(fast: Double, slow: Double): Fast = {
+  inline def apply(fast: Double, slow: Double): Fast = {
     val __obj = js.Dynamic.literal(fast = fast.asInstanceOf[js.Any], slow = slow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fast]
   }
   
-  @scala.inline
-  implicit class FastMutableBuilder[Self <: Fast] (val x: Self) extends AnyVal {
+  extension [Self <: Fast](x: Self) {
     
-    @scala.inline
-    def setFast(value: Double): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
+    inline def setFast(value: Double): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+    inline def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
   }
 }

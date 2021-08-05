@@ -19,17 +19,14 @@ object mod extends Shortcut {
   }
   object API {
     
-    @scala.inline
-    def apply(get: (/* stringifiedPostalCode */ String, /* callback */ Callback) => Unit): API = {
+    inline def apply(get: (/* stringifiedPostalCode */ String, /* callback */ Callback) => Unit): API = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
       __obj.asInstanceOf[API]
     }
     
-    @scala.inline
-    implicit class APIMutableBuilder[Self <: API] (val x: Self) extends AnyVal {
+    extension [Self <: API](x: Self) {
       
-      @scala.inline
-      def setGet(value: (/* stringifiedPostalCode */ String, /* callback */ Callback) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (/* stringifiedPostalCode */ String, /* callback */ Callback) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
   }
   
@@ -45,26 +42,20 @@ object mod extends Shortcut {
   }
   object AddressData {
     
-    @scala.inline
-    def apply(area: String, city: String, prefecture: String, street: String): AddressData = {
+    inline def apply(area: String, city: String, prefecture: String, street: String): AddressData = {
       val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any], prefecture = prefecture.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddressData]
     }
     
-    @scala.inline
-    implicit class AddressDataMutableBuilder[Self <: AddressData] (val x: Self) extends AnyVal {
+    extension [Self <: AddressData](x: Self) {
       
-      @scala.inline
-      def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefecture(value: String): Self = StObject.set(x, "prefecture", value.asInstanceOf[js.Any])
+      inline def setPrefecture(value: String): Self = StObject.set(x, "prefecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
+      inline def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
     }
   }
   

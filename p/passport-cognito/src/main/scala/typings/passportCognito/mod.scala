@@ -29,23 +29,18 @@ object mod {
   }
   object CognitoStrategyOptions {
     
-    @scala.inline
-    def apply(clientId: String, region: String, userPoolId: String): CognitoStrategyOptions = {
+    inline def apply(clientId: String, region: String, userPoolId: String): CognitoStrategyOptions = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CognitoStrategyOptions]
     }
     
-    @scala.inline
-    implicit class CognitoStrategyOptionsMutableBuilder[Self <: CognitoStrategyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoStrategyOptions](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolId(value: String): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: String): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
     }
   }
   

@@ -16,37 +16,27 @@ trait OverlayContentBackground extends StObject {
 }
 object OverlayContentBackground {
   
-  @scala.inline
-  def apply(): OverlayContentBackground = {
+  inline def apply(): OverlayContentBackground = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverlayContentBackground]
   }
   
-  @scala.inline
-  implicit class OverlayContentBackgroundMutableBuilder[Self <: OverlayContentBackground] (val x: Self) extends AnyVal {
+  extension [Self <: OverlayContentBackground](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setOverlayContentBackground(value: String): Self = StObject.set(x, "overlayContentBackground", value.asInstanceOf[js.Any])
+    inline def setOverlayContentBackground(value: String): Self = StObject.set(x, "overlayContentBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayContentBackgroundUndefined: Self = StObject.set(x, "overlayContentBackground", js.undefined)
+    inline def setOverlayContentBackgroundUndefined: Self = StObject.set(x, "overlayContentBackground", js.undefined)
     
-    @scala.inline
-    def setSubtitleColor(value: String): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
+    inline def setSubtitleColor(value: String): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
+    inline def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
     
-    @scala.inline
-    def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+    inline def setTitleColor(value: String): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+    inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
   }
 }

@@ -20,37 +20,27 @@ trait RunQueryRequest extends StObject {
 }
 object RunQueryRequest {
   
-  @scala.inline
-  def apply(): RunQueryRequest = {
+  inline def apply(): RunQueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunQueryRequest]
   }
   
-  @scala.inline
-  implicit class RunQueryRequestMutableBuilder[Self <: RunQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RunQueryRequest](x: Self) {
     
-    @scala.inline
-    def setDataRange(value: String): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
+    inline def setDataRange(value: String): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRangeUndefined: Self = StObject.set(x, "dataRange", js.undefined)
+    inline def setDataRangeUndefined: Self = StObject.set(x, "dataRange", js.undefined)
     
-    @scala.inline
-    def setReportDataEndTimeMs(value: String): Self = StObject.set(x, "reportDataEndTimeMs", value.asInstanceOf[js.Any])
+    inline def setReportDataEndTimeMs(value: String): Self = StObject.set(x, "reportDataEndTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportDataEndTimeMsUndefined: Self = StObject.set(x, "reportDataEndTimeMs", js.undefined)
+    inline def setReportDataEndTimeMsUndefined: Self = StObject.set(x, "reportDataEndTimeMs", js.undefined)
     
-    @scala.inline
-    def setReportDataStartTimeMs(value: String): Self = StObject.set(x, "reportDataStartTimeMs", value.asInstanceOf[js.Any])
+    inline def setReportDataStartTimeMs(value: String): Self = StObject.set(x, "reportDataStartTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportDataStartTimeMsUndefined: Self = StObject.set(x, "reportDataStartTimeMs", js.undefined)
+    inline def setReportDataStartTimeMsUndefined: Self = StObject.set(x, "reportDataStartTimeMs", js.undefined)
     
-    @scala.inline
-    def setTimezoneCode(value: String): Self = StObject.set(x, "timezoneCode", value.asInstanceOf[js.Any])
+    inline def setTimezoneCode(value: String): Self = StObject.set(x, "timezoneCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneCodeUndefined: Self = StObject.set(x, "timezoneCode", js.undefined)
+    inline def setTimezoneCodeUndefined: Self = StObject.set(x, "timezoneCode", js.undefined)
   }
 }

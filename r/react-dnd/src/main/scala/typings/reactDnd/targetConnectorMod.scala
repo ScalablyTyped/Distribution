@@ -15,41 +15,41 @@ object targetConnectorMod {
        with Connector {
     def this(backend: Backend) = this()
     
-    val backend: js.Any = js.native
+    /* private */ val backend: js.Any = js.native
     
-    var clearDropTarget: js.Any = js.native
+    /* private */ var clearDropTarget: js.Any = js.native
     
     @JSName("connectTarget")
     def connectTarget_MTargetConnector: js.Any = js.native
     
-    var didDropTargetChange: js.Any = js.native
+    /* private */ var didDropTargetChange: js.Any = js.native
     
-    var didHandlerIdChange: js.Any = js.native
+    /* private */ var didHandlerIdChange: js.Any = js.native
     
-    var didOptionsChange: js.Any = js.native
+    /* private */ var didOptionsChange: js.Any = js.native
     
-    var disconnectDropTarget: js.Any = js.native
+    /* private */ var disconnectDropTarget: js.Any = js.native
     
     /* private */ def dropTarget: js.Any = js.native
     
-    var dropTargetNode: js.Any = js.native
+    /* private */ var dropTargetNode: js.Any = js.native
     
     def dropTargetOptions: js.Any = js.native
     
-    var dropTargetOptionsInternal: js.Any = js.native
+    /* private */ var dropTargetOptionsInternal: js.Any = js.native
     
     def dropTargetOptions_=(options: js.Any): Unit = js.native
     
-    var dropTargetRef: js.Any = js.native
+    /* private */ var dropTargetRef: js.Any = js.native
     
-    var handlerId: js.Any = js.native
+    /* private */ var handlerId: js.Any = js.native
     
-    var lastConnectedDropTarget: js.Any = js.native
+    /* private */ var lastConnectedDropTarget: js.Any = js.native
     
-    var lastConnectedDropTargetOptions: js.Any = js.native
+    /* private */ var lastConnectedDropTargetOptions: js.Any = js.native
     
-    var lastConnectedHandlerId: js.Any = js.native
+    /* private */ var lastConnectedHandlerId: js.Any = js.native
     
-    var unsubscribeDropTarget: js.Any = js.native
+    /* private */ var unsubscribeDropTarget: js.Any = js.native
   }
 }

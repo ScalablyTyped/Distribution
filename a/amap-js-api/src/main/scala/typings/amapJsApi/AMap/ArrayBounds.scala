@@ -21,8 +21,7 @@ trait ArrayBounds extends StObject {
 }
 object ArrayBounds {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: js.Array[LngLat],
     contains: LocationValue => Boolean,
     getCenter: () => LngLat,
@@ -32,22 +31,16 @@ object ArrayBounds {
     __obj.asInstanceOf[ArrayBounds]
   }
   
-  @scala.inline
-  implicit class ArrayBoundsMutableBuilder[Self <: ArrayBounds] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayBounds](x: Self) {
     
-    @scala.inline
-    def setBounds(value: js.Array[LngLat]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: js.Array[LngLat]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsVarargs(value: LngLat*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: LngLat*): Self = StObject.set(x, "bounds", js.Array(value :_*))
     
-    @scala.inline
-    def setContains(value: LocationValue => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: LocationValue => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCenter(value: () => LngLat): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
+    inline def setGetCenter(value: () => LngLat): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToBounds(value: () => Bounds): Self = StObject.set(x, "toBounds", js.Any.fromFunction0(value))
+    inline def setToBounds(value: () => Bounds): Self = StObject.set(x, "toBounds", js.Any.fromFunction0(value))
   }
 }

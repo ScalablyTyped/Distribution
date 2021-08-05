@@ -19,8 +19,7 @@ trait QuoteValue
 }
 object QuoteValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -33,16 +32,12 @@ object QuoteValue {
     __obj.asInstanceOf[QuoteValue]
   }
   
-  @scala.inline
-  implicit class QuoteValueMutableBuilder[Self <: QuoteValue] (val x: Self) extends AnyVal {
+  extension [Self <: QuoteValue](x: Self) {
     
-    @scala.inline
-    def setStrValue(value: String | Errors): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
+    inline def setStrValue(value: String | Errors): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrValueNull: Self = StObject.set(x, "strValue", null)
+    inline def setStrValueNull: Self = StObject.set(x, "strValue", null)
     
-    @scala.inline
-    def setType(value: QUOTE_DOUBLE | QUOTE_SINGLE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: QUOTE_DOUBLE | QUOTE_SINGLE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

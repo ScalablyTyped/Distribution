@@ -15,19 +15,15 @@ trait ArrayOptions[TLeft, TRight]
 }
 object ArrayOptions {
   
-  @scala.inline
-  def apply[TLeft, TRight](): ArrayOptions[TLeft, TRight] = {
+  inline def apply[TLeft, TRight](): ArrayOptions[TLeft, TRight] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArrayOptions[TLeft, TRight]]
   }
   
-  @scala.inline
-  implicit class ArrayOptionsMutableBuilder[Self <: ArrayOptions[?, ?], TLeft, TRight] (val x: Self & (ArrayOptions[TLeft, TRight])) extends AnyVal {
+  extension [Self <: ArrayOptions[?, ?], TLeft, TRight](x: Self & (ArrayOptions[TLeft, TRight])) {
     
-    @scala.inline
-    def setComparator(value: (/* left */ TLeft, /* right */ TRight) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
+    inline def setComparator(value: (/* left */ TLeft, /* right */ TRight) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait BypassListManagement extends StObject {
 }
 object BypassListManagement {
   
-  @scala.inline
-  def apply(getEnable: () => Boolean, setEnable: Boolean => Unit, toJSON: () => EnableBoolean): BypassListManagement = {
+  inline def apply(getEnable: () => Boolean, setEnable: Boolean => Unit, toJSON: () => EnableBoolean): BypassListManagement = {
     val __obj = js.Dynamic.literal(getEnable = js.Any.fromFunction0(getEnable), setEnable = js.Any.fromFunction1(setEnable), toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[BypassListManagement]
   }
   
-  @scala.inline
-  implicit class BypassListManagementMutableBuilder[Self <: BypassListManagement] (val x: Self) extends AnyVal {
+  extension [Self <: BypassListManagement](x: Self) {
     
-    @scala.inline
-    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
+    inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
+    inline def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => EnableBoolean): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => EnableBoolean): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

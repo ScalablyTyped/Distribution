@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Promise[KssStyleguide] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[KssStyleguide]]
-  @scala.inline
-  def apply(options: KssOptions): js.Promise[KssStyleguide] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KssStyleguide]]
+  inline def apply(): js.Promise[KssStyleguide] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[KssStyleguide]]
+  inline def apply(options: KssOptions): js.Promise[KssStyleguide] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KssStyleguide]]
   
   @JSImport("kss", JSImport.Namespace)
   @js.native
@@ -152,16 +150,12 @@ object mod {
   }
   
   /** Parse a string of documented CSS, or an array of file anys with their content. */
-  @scala.inline
-  def parse(input: String, options: Options): KssStyleguide = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KssStyleguide]
-  @scala.inline
-  def parse(input: js.Array[File], options: Options): KssStyleguide = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KssStyleguide]
+  inline def parse(input: String, options: Options): KssStyleguide = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KssStyleguide]
+  inline def parse(input: js.Array[File], options: Options): KssStyleguide = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KssStyleguide]
   
   /** Traverse a directory, parse its contents, and create a `KssStyleGuide`. */
-  @scala.inline
-  def traverse(directory: String, options: Options): js.Promise[KssStyleguide] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(directory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KssStyleguide]]
-  @scala.inline
-  def traverse(directory: js.Array[String], options: Options): js.Promise[KssStyleguide] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(directory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KssStyleguide]]
+  inline def traverse(directory: String, options: Options): js.Promise[KssStyleguide] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(directory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KssStyleguide]]
+  inline def traverse(directory: js.Array[String], options: Options): js.Promise[KssStyleguide] = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(directory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KssStyleguide]]
   
   type CallbackFn = js.Function2[/* error */ Error | Null, /* styleguide */ KssStyleguide, Unit]
   
@@ -178,23 +172,18 @@ object mod {
   }
   object File {
     
-    @scala.inline
-    def apply(base: String, contents: String, path: String): File = {
+    inline def apply(base: String, contents: String, path: String): File = {
       val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,56 +208,40 @@ object mod {
   }
   object KssOptions {
     
-    @scala.inline
-    def apply(source: js.Array[String]): KssOptions = {
+    inline def apply(source: js.Array[String]): KssOptions = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[KssOptions]
     }
     
-    @scala.inline
-    implicit class KssOptionsMutableBuilder[Self <: KssOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KssOptions](x: Self) {
       
-      @scala.inline
-      def setBuilder(value: js.Any): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
+      inline def setBuilder(value: js.Any): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
+      inline def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
       
-      @scala.inline
-      def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
+      inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
+      inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
       
-      @scala.inline
-      def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setLogErrorFunction(value: /* repeated */ String => Unit): Self = StObject.set(x, "logErrorFunction", js.Any.fromFunction1(value))
+      inline def setLogErrorFunction(value: /* repeated */ String => Unit): Self = StObject.set(x, "logErrorFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogErrorFunctionUndefined: Self = StObject.set(x, "logErrorFunction", js.undefined)
+      inline def setLogErrorFunctionUndefined: Self = StObject.set(x, "logErrorFunction", js.undefined)
       
-      @scala.inline
-      def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -297,32 +270,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setMarkdown(value: Boolean): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
+      inline def setMarkdown(value: Boolean): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkdownUndefined: Self = StObject.set(x, "markdown", js.undefined)
+      inline def setMarkdownUndefined: Self = StObject.set(x, "markdown", js.undefined)
       
-      @scala.inline
-      def setMask(value: String | RegExp): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: String | RegExp): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     }
   }
   
@@ -339,23 +304,18 @@ object mod {
   }
   object Source {
     
-    @scala.inline
-    def apply(filename: String, line: Double, path: String): Source = {
+    inline def apply(filename: String, line: Double, path: String): Source = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Source]
     }
     
-    @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+    extension [Self <: Source](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

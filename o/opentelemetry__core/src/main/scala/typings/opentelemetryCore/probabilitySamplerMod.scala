@@ -16,9 +16,9 @@ object probabilitySamplerMod {
        with Sampler {
     def this(_probability: Double) = this()
     
-    var _normalize: js.Any = js.native
+    /* private */ var _normalize: js.Any = js.native
     
-    val _probability: js.Any = js.native
+    /* private */ val _probability: js.Any = js.native
     
     def shouldSample(): SamplingResult = js.native
     def shouldSample(parentContext: SpanContext): SamplingResult = js.native

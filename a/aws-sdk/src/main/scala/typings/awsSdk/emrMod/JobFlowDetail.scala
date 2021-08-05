@@ -83,8 +83,7 @@ trait JobFlowDetail extends StObject {
 }
 object JobFlowDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExecutionStatusDetail: JobFlowExecutionStatusDetail,
     Instances: JobFlowInstancesDetail,
     JobFlowId: XmlStringMaxLen256,
@@ -94,94 +93,64 @@ object JobFlowDetail {
     __obj.asInstanceOf[JobFlowDetail]
   }
   
-  @scala.inline
-  implicit class JobFlowDetailMutableBuilder[Self <: JobFlowDetail] (val x: Self) extends AnyVal {
+  extension [Self <: JobFlowDetail](x: Self) {
     
-    @scala.inline
-    def setAmiVersion(value: XmlStringMaxLen256): Self = StObject.set(x, "AmiVersion", value.asInstanceOf[js.Any])
+    inline def setAmiVersion(value: XmlStringMaxLen256): Self = StObject.set(x, "AmiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmiVersionUndefined: Self = StObject.set(x, "AmiVersion", js.undefined)
+    inline def setAmiVersionUndefined: Self = StObject.set(x, "AmiVersion", js.undefined)
     
-    @scala.inline
-    def setAutoScalingRole(value: XmlString): Self = StObject.set(x, "AutoScalingRole", value.asInstanceOf[js.Any])
+    inline def setAutoScalingRole(value: XmlString): Self = StObject.set(x, "AutoScalingRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingRoleUndefined: Self = StObject.set(x, "AutoScalingRole", js.undefined)
+    inline def setAutoScalingRoleUndefined: Self = StObject.set(x, "AutoScalingRole", js.undefined)
     
-    @scala.inline
-    def setBootstrapActions(value: BootstrapActionDetailList): Self = StObject.set(x, "BootstrapActions", value.asInstanceOf[js.Any])
+    inline def setBootstrapActions(value: BootstrapActionDetailList): Self = StObject.set(x, "BootstrapActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootstrapActionsUndefined: Self = StObject.set(x, "BootstrapActions", js.undefined)
+    inline def setBootstrapActionsUndefined: Self = StObject.set(x, "BootstrapActions", js.undefined)
     
-    @scala.inline
-    def setBootstrapActionsVarargs(value: BootstrapActionDetail*): Self = StObject.set(x, "BootstrapActions", js.Array(value :_*))
+    inline def setBootstrapActionsVarargs(value: BootstrapActionDetail*): Self = StObject.set(x, "BootstrapActions", js.Array(value :_*))
     
-    @scala.inline
-    def setExecutionStatusDetail(value: JobFlowExecutionStatusDetail): Self = StObject.set(x, "ExecutionStatusDetail", value.asInstanceOf[js.Any])
+    inline def setExecutionStatusDetail(value: JobFlowExecutionStatusDetail): Self = StObject.set(x, "ExecutionStatusDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstances(value: JobFlowInstancesDetail): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: JobFlowInstancesDetail): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
+    inline def setJobFlowId(value: XmlStringMaxLen256): Self = StObject.set(x, "JobFlowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobFlowRole(value: XmlString): Self = StObject.set(x, "JobFlowRole", value.asInstanceOf[js.Any])
+    inline def setJobFlowRole(value: XmlString): Self = StObject.set(x, "JobFlowRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobFlowRoleUndefined: Self = StObject.set(x, "JobFlowRole", js.undefined)
+    inline def setJobFlowRoleUndefined: Self = StObject.set(x, "JobFlowRole", js.undefined)
     
-    @scala.inline
-    def setLogEncryptionKmsKeyId(value: XmlString): Self = StObject.set(x, "LogEncryptionKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setLogEncryptionKmsKeyId(value: XmlString): Self = StObject.set(x, "LogEncryptionKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogEncryptionKmsKeyIdUndefined: Self = StObject.set(x, "LogEncryptionKmsKeyId", js.undefined)
+    inline def setLogEncryptionKmsKeyIdUndefined: Self = StObject.set(x, "LogEncryptionKmsKeyId", js.undefined)
     
-    @scala.inline
-    def setLogUri(value: XmlString): Self = StObject.set(x, "LogUri", value.asInstanceOf[js.Any])
+    inline def setLogUri(value: XmlString): Self = StObject.set(x, "LogUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUriUndefined: Self = StObject.set(x, "LogUri", js.undefined)
+    inline def setLogUriUndefined: Self = StObject.set(x, "LogUri", js.undefined)
     
-    @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDownBehavior(value: ScaleDownBehavior): Self = StObject.set(x, "ScaleDownBehavior", value.asInstanceOf[js.Any])
+    inline def setScaleDownBehavior(value: ScaleDownBehavior): Self = StObject.set(x, "ScaleDownBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDownBehaviorUndefined: Self = StObject.set(x, "ScaleDownBehavior", js.undefined)
+    inline def setScaleDownBehaviorUndefined: Self = StObject.set(x, "ScaleDownBehavior", js.undefined)
     
-    @scala.inline
-    def setServiceRole(value: XmlString): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
+    inline def setServiceRole(value: XmlString): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRoleUndefined: Self = StObject.set(x, "ServiceRole", js.undefined)
+    inline def setServiceRoleUndefined: Self = StObject.set(x, "ServiceRole", js.undefined)
     
-    @scala.inline
-    def setSteps(value: StepDetailList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: StepDetailList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: StepDetail*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: StepDetail*): Self = StObject.set(x, "Steps", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedProducts(value: SupportedProductsList): Self = StObject.set(x, "SupportedProducts", value.asInstanceOf[js.Any])
+    inline def setSupportedProducts(value: SupportedProductsList): Self = StObject.set(x, "SupportedProducts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedProductsUndefined: Self = StObject.set(x, "SupportedProducts", js.undefined)
+    inline def setSupportedProductsUndefined: Self = StObject.set(x, "SupportedProducts", js.undefined)
     
-    @scala.inline
-    def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "SupportedProducts", js.Array(value :_*))
+    inline def setSupportedProductsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "SupportedProducts", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibleToAllUsers(value: Boolean): Self = StObject.set(x, "VisibleToAllUsers", value.asInstanceOf[js.Any])
+    inline def setVisibleToAllUsers(value: Boolean): Self = StObject.set(x, "VisibleToAllUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleToAllUsersUndefined: Self = StObject.set(x, "VisibleToAllUsers", js.undefined)
+    inline def setVisibleToAllUsersUndefined: Self = StObject.set(x, "VisibleToAllUsers", js.undefined)
   }
 }

@@ -74,67 +74,47 @@ trait MapNavigationOptions extends StObject {
 }
 object MapNavigationOptions {
   
-  @scala.inline
-  def apply(): MapNavigationOptions = {
+  inline def apply(): MapNavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapNavigationOptions]
   }
   
-  @scala.inline
-  implicit class MapNavigationOptionsMutableBuilder[Self <: MapNavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapNavigationOptions](x: Self) {
     
-    @scala.inline
-    def setButtonOptions(value: MapNavigationButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
+    inline def setButtonOptions(value: MapNavigationButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
+    inline def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
     
-    @scala.inline
-    def setButtons(value: MapNavigationButtonsOptions): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: MapNavigationButtonsOptions): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setEnableButtons(value: Boolean): Self = StObject.set(x, "enableButtons", value.asInstanceOf[js.Any])
+    inline def setEnableButtons(value: Boolean): Self = StObject.set(x, "enableButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableButtonsUndefined: Self = StObject.set(x, "enableButtons", js.undefined)
+    inline def setEnableButtonsUndefined: Self = StObject.set(x, "enableButtons", js.undefined)
     
-    @scala.inline
-    def setEnableDoubleClickZoom(value: Boolean): Self = StObject.set(x, "enableDoubleClickZoom", value.asInstanceOf[js.Any])
+    inline def setEnableDoubleClickZoom(value: Boolean): Self = StObject.set(x, "enableDoubleClickZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDoubleClickZoomTo(value: Boolean): Self = StObject.set(x, "enableDoubleClickZoomTo", value.asInstanceOf[js.Any])
+    inline def setEnableDoubleClickZoomTo(value: Boolean): Self = StObject.set(x, "enableDoubleClickZoomTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDoubleClickZoomToUndefined: Self = StObject.set(x, "enableDoubleClickZoomTo", js.undefined)
+    inline def setEnableDoubleClickZoomToUndefined: Self = StObject.set(x, "enableDoubleClickZoomTo", js.undefined)
     
-    @scala.inline
-    def setEnableDoubleClickZoomUndefined: Self = StObject.set(x, "enableDoubleClickZoom", js.undefined)
+    inline def setEnableDoubleClickZoomUndefined: Self = StObject.set(x, "enableDoubleClickZoom", js.undefined)
     
-    @scala.inline
-    def setEnableMouseWheelZoom(value: Boolean): Self = StObject.set(x, "enableMouseWheelZoom", value.asInstanceOf[js.Any])
+    inline def setEnableMouseWheelZoom(value: Boolean): Self = StObject.set(x, "enableMouseWheelZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableMouseWheelZoomUndefined: Self = StObject.set(x, "enableMouseWheelZoom", js.undefined)
+    inline def setEnableMouseWheelZoomUndefined: Self = StObject.set(x, "enableMouseWheelZoom", js.undefined)
     
-    @scala.inline
-    def setEnableTouchZoom(value: Boolean): Self = StObject.set(x, "enableTouchZoom", value.asInstanceOf[js.Any])
+    inline def setEnableTouchZoom(value: Boolean): Self = StObject.set(x, "enableTouchZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableTouchZoomUndefined: Self = StObject.set(x, "enableTouchZoom", js.undefined)
+    inline def setEnableTouchZoomUndefined: Self = StObject.set(x, "enableTouchZoom", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMouseWheelSensitivity(value: Double): Self = StObject.set(x, "mouseWheelSensitivity", value.asInstanceOf[js.Any])
+    inline def setMouseWheelSensitivity(value: Double): Self = StObject.set(x, "mouseWheelSensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseWheelSensitivityUndefined: Self = StObject.set(x, "mouseWheelSensitivity", js.undefined)
+    inline def setMouseWheelSensitivityUndefined: Self = StObject.set(x, "mouseWheelSensitivity", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait Progress extends StObject {
 }
 object Progress {
   
-  @scala.inline
-  def apply(Progress: Double, ProgressMax: Double): Progress = {
+  inline def apply(Progress: Double, ProgressMax: Double): Progress = {
     val __obj = js.Dynamic.literal(Progress = Progress.asInstanceOf[js.Any], ProgressMax = ProgressMax.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
   
-  @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+  extension [Self <: Progress](x: Self) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressMax(value: Double): Self = StObject.set(x, "ProgressMax", value.asInstanceOf[js.Any])
+    inline def setProgressMax(value: Double): Self = StObject.set(x, "ProgressMax", value.asInstanceOf[js.Any])
   }
 }

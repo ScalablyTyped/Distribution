@@ -51,52 +51,37 @@ trait SchemaJobConfigurationTableCopy extends StObject {
 }
 object SchemaJobConfigurationTableCopy {
   
-  @scala.inline
-  def apply(): SchemaJobConfigurationTableCopy = {
+  inline def apply(): SchemaJobConfigurationTableCopy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobConfigurationTableCopy]
   }
   
-  @scala.inline
-  implicit class SchemaJobConfigurationTableCopyMutableBuilder[Self <: SchemaJobConfigurationTableCopy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobConfigurationTableCopy](x: Self) {
     
-    @scala.inline
-    def setCreateDisposition(value: String): Self = StObject.set(x, "createDisposition", value.asInstanceOf[js.Any])
+    inline def setCreateDisposition(value: String): Self = StObject.set(x, "createDisposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDispositionUndefined: Self = StObject.set(x, "createDisposition", js.undefined)
+    inline def setCreateDispositionUndefined: Self = StObject.set(x, "createDisposition", js.undefined)
     
-    @scala.inline
-    def setDestinationEncryptionConfiguration(value: SchemaEncryptionConfiguration): Self = StObject.set(x, "destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
+    inline def setDestinationEncryptionConfiguration(value: SchemaEncryptionConfiguration): Self = StObject.set(x, "destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationEncryptionConfigurationUndefined: Self = StObject.set(x, "destinationEncryptionConfiguration", js.undefined)
+    inline def setDestinationEncryptionConfigurationUndefined: Self = StObject.set(x, "destinationEncryptionConfiguration", js.undefined)
     
-    @scala.inline
-    def setDestinationTable(value: SchemaTableReference): Self = StObject.set(x, "destinationTable", value.asInstanceOf[js.Any])
+    inline def setDestinationTable(value: SchemaTableReference): Self = StObject.set(x, "destinationTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationTableUndefined: Self = StObject.set(x, "destinationTable", js.undefined)
+    inline def setDestinationTableUndefined: Self = StObject.set(x, "destinationTable", js.undefined)
     
-    @scala.inline
-    def setSourceTable(value: SchemaTableReference): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
+    inline def setSourceTable(value: SchemaTableReference): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
+    inline def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
     
-    @scala.inline
-    def setSourceTables(value: js.Array[SchemaTableReference]): Self = StObject.set(x, "sourceTables", value.asInstanceOf[js.Any])
+    inline def setSourceTables(value: js.Array[SchemaTableReference]): Self = StObject.set(x, "sourceTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTablesUndefined: Self = StObject.set(x, "sourceTables", js.undefined)
+    inline def setSourceTablesUndefined: Self = StObject.set(x, "sourceTables", js.undefined)
     
-    @scala.inline
-    def setSourceTablesVarargs(value: SchemaTableReference*): Self = StObject.set(x, "sourceTables", js.Array(value :_*))
+    inline def setSourceTablesVarargs(value: SchemaTableReference*): Self = StObject.set(x, "sourceTables", js.Array(value :_*))
     
-    @scala.inline
-    def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
+    inline def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
+    inline def setWriteDispositionUndefined: Self = StObject.set(x, "writeDisposition", js.undefined)
   }
 }

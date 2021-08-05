@@ -11,19 +11,15 @@ trait PartialIToggleState extends StObject {
 }
 object PartialIToggleState {
   
-  @scala.inline
-  def apply(): PartialIToggleState = {
+  inline def apply(): PartialIToggleState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialIToggleState]
   }
   
-  @scala.inline
-  implicit class PartialIToggleStateMutableBuilder[Self <: PartialIToggleState] (val x: Self) extends AnyVal {
+  extension [Self <: PartialIToggleState](x: Self) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
   }
 }

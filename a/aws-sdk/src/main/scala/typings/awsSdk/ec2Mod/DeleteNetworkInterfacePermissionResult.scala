@@ -13,19 +13,15 @@ trait DeleteNetworkInterfacePermissionResult extends StObject {
 }
 object DeleteNetworkInterfacePermissionResult {
   
-  @scala.inline
-  def apply(): DeleteNetworkInterfacePermissionResult = {
+  inline def apply(): DeleteNetworkInterfacePermissionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteNetworkInterfacePermissionResult]
   }
   
-  @scala.inline
-  implicit class DeleteNetworkInterfacePermissionResultMutableBuilder[Self <: DeleteNetworkInterfacePermissionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNetworkInterfacePermissionResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

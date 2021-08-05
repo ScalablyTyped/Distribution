@@ -92,35 +92,26 @@ object json2csvbaseMod {
     }
     object FieldInfo {
       
-      @scala.inline
-      def apply[T](value: String | FieldValueCallback[T]): FieldInfo[T] = {
+      inline def apply[T](value: String | FieldValueCallback[T]): FieldInfo[T] = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[FieldInfo[T]]
       }
       
-      @scala.inline
-      implicit class FieldInfoMutableBuilder[Self <: FieldInfo[?], T] (val x: Self & FieldInfo[T]) extends AnyVal {
+      extension [Self <: FieldInfo[?], T](x: Self & FieldInfo[T]) {
         
-        @scala.inline
-        def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+        inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+        inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setValue(value: String | FieldValueCallback[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String | FieldValueCallback[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueFunction1(value: T => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+        inline def setValueFunction1(value: T => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setValueFunction2(value: (T, /* field */ FieldValueCallbackInfo) => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction2(value))
+        inline def setValueFunction2(value: (T, /* field */ FieldValueCallbackInfo) => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction2(value))
       }
     }
     
@@ -134,23 +125,18 @@ object json2csvbaseMod {
     }
     object FieldValueCallbackInfo {
       
-      @scala.inline
-      def apply(label: String): FieldValueCallbackInfo = {
+      inline def apply(label: String): FieldValueCallbackInfo = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
         __obj.asInstanceOf[FieldValueCallbackInfo]
       }
       
-      @scala.inline
-      implicit class FieldValueCallbackInfoMutableBuilder[Self <: FieldValueCallbackInfo] (val x: Self) extends AnyVal {
+      extension [Self <: FieldValueCallbackInfo](x: Self) {
         
-        @scala.inline
-        def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+        inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+        inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       }
     }
     
@@ -166,26 +152,20 @@ object json2csvbaseMod {
     }
     object NormalizedFieldInfo {
       
-      @scala.inline
-      def apply[T](label: String, value: FieldValueCallback[T]): NormalizedFieldInfo[T] = {
+      inline def apply[T](label: String, value: FieldValueCallback[T]): NormalizedFieldInfo[T] = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[NormalizedFieldInfo[T]]
       }
       
-      @scala.inline
-      implicit class NormalizedFieldInfoMutableBuilder[Self <: NormalizedFieldInfo[?], T] (val x: Self & NormalizedFieldInfo[T]) extends AnyVal {
+      extension [Self <: NormalizedFieldInfo[?], T](x: Self & NormalizedFieldInfo[T]) {
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: FieldValueCallback[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: FieldValueCallback[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueFunction1(value: T => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+        inline def setValueFunction1(value: T => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setValueFunction2(value: (T, /* field */ FieldValueCallbackInfo) => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction2(value))
+        inline def setValueFunction2(value: (T, /* field */ FieldValueCallbackInfo) => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction2(value))
       }
     }
     
@@ -217,92 +197,64 @@ object json2csvbaseMod {
     }
     object Options {
       
-      @scala.inline
-      def apply[T](): Options[T] = {
+      inline def apply[T](): Options[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options[T]]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+      extension [Self <: Options[?], T](x: Self & Options[T]) {
         
-        @scala.inline
-        def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+        inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+        inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
         
-        @scala.inline
-        def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+        inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+        inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
         
-        @scala.inline
-        def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+        inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
+        inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
         
-        @scala.inline
-        def setEscapedQuote(value: String): Self = StObject.set(x, "escapedQuote", value.asInstanceOf[js.Any])
+        inline def setEscapedQuote(value: String): Self = StObject.set(x, "escapedQuote", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEscapedQuoteUndefined: Self = StObject.set(x, "escapedQuote", js.undefined)
+        inline def setEscapedQuoteUndefined: Self = StObject.set(x, "escapedQuote", js.undefined)
         
-        @scala.inline
-        def setExcelStrings(value: Boolean): Self = StObject.set(x, "excelStrings", value.asInstanceOf[js.Any])
+        inline def setExcelStrings(value: Boolean): Self = StObject.set(x, "excelStrings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExcelStringsUndefined: Self = StObject.set(x, "excelStrings", js.undefined)
+        inline def setExcelStringsUndefined: Self = StObject.set(x, "excelStrings", js.undefined)
         
-        @scala.inline
-        def setFields(value: js.Array[String | FieldInfo[T]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: js.Array[String | FieldInfo[T]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setFieldsVarargs(value: (String | FieldInfo[T])*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: (String | FieldInfo[T])*): Self = StObject.set(x, "fields", js.Array(value :_*))
         
-        @scala.inline
-        def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+        inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+        inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
         
-        @scala.inline
-        def setIncludeEmptyRows(value: Boolean): Self = StObject.set(x, "includeEmptyRows", value.asInstanceOf[js.Any])
+        inline def setIncludeEmptyRows(value: Boolean): Self = StObject.set(x, "includeEmptyRows", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncludeEmptyRowsUndefined: Self = StObject.set(x, "includeEmptyRows", js.undefined)
+        inline def setIncludeEmptyRowsUndefined: Self = StObject.set(x, "includeEmptyRows", js.undefined)
         
-        @scala.inline
-        def setNdjson(value: Boolean): Self = StObject.set(x, "ndjson", value.asInstanceOf[js.Any])
+        inline def setNdjson(value: Boolean): Self = StObject.set(x, "ndjson", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNdjsonUndefined: Self = StObject.set(x, "ndjson", js.undefined)
+        inline def setNdjsonUndefined: Self = StObject.set(x, "ndjson", js.undefined)
         
-        @scala.inline
-        def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+        inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+        inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
         
-        @scala.inline
-        def setTransforms(value: js.Array[Json2CsvTransform[js.Any, js.Any]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+        inline def setTransforms(value: js.Array[Json2CsvTransform[js.Any, js.Any]]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
+        inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
         
-        @scala.inline
-        def setTransformsVarargs(value: (Json2CsvTransform[js.Any, js.Any])*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+        inline def setTransformsVarargs(value: (Json2CsvTransform[js.Any, js.Any])*): Self = StObject.set(x, "transforms", js.Array(value :_*))
         
-        @scala.inline
-        def setWithBOM(value: Boolean): Self = StObject.set(x, "withBOM", value.asInstanceOf[js.Any])
+        inline def setWithBOM(value: Boolean): Self = StObject.set(x, "withBOM", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWithBOMUndefined: Self = StObject.set(x, "withBOM", js.undefined)
+        inline def setWithBOMUndefined: Self = StObject.set(x, "withBOM", js.undefined)
       }
     }
   }

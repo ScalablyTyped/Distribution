@@ -15,25 +15,19 @@ trait Operation extends StObject {
 }
 object Operation {
   
-  @scala.inline
-  def apply(operation: OperationDescriptor): Operation = {
+  inline def apply(operation: OperationDescriptor): Operation = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Operation]
   }
   
-  @scala.inline
-  implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
+  extension [Self <: Operation](x: Self) {
     
-    @scala.inline
-    def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
+    inline def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdaterNull: Self = StObject.set(x, "updater", null)
+    inline def setUpdaterNull: Self = StObject.set(x, "updater", null)
     
-    @scala.inline
-    def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
+    inline def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
   }
 }

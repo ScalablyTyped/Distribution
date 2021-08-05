@@ -14,13 +14,11 @@ object branchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TOutter](
+  inline def default[TOutter](
     test: predicate[TOutter],
     trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]
   ): ComponentEnhancer[js.Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, TOutter]]
-  @scala.inline
-  def default[TOutter](
+  inline def default[TOutter](
     test: predicate[TOutter],
     trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object],
     falseEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]

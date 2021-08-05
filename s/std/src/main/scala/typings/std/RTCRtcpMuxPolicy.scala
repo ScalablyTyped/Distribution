@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCRtcpMuxPolicy extends StObject
 object RTCRtcpMuxPolicy {
   
-  @scala.inline
-  def negotiate: typings.std.stdStrings.negotiate = "negotiate".asInstanceOf[typings.std.stdStrings.negotiate]
+  inline def negotiate: typings.std.stdStrings.negotiate = "negotiate".asInstanceOf[typings.std.stdStrings.negotiate]
   
-  @scala.inline
-  def require: typings.std.stdStrings.require = "require".asInstanceOf[typings.std.stdStrings.require]
+  inline def require: typings.std.stdStrings.require = "require".asInstanceOf[typings.std.stdStrings.require]
 }

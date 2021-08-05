@@ -15,10 +15,8 @@ object PropertySetInfoChange {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def PROPERTY_INSERTED: `0` = 0.asInstanceOf[`0`]
+    inline def PROPERTY_INSERTED: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PROPERTY_REMOVED: `1` = 1.asInstanceOf[`1`]
+    inline def PROPERTY_REMOVED: `1` = 1.asInstanceOf[`1`]
   }
 }

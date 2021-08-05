@@ -35,8 +35,7 @@ trait CheckinArgument extends StObject {
 }
 object CheckinArgument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MajorVersion: Boolean,
     MimeType: String,
     NewTitle: String,
@@ -48,25 +47,18 @@ object CheckinArgument {
     __obj.asInstanceOf[CheckinArgument]
   }
   
-  @scala.inline
-  implicit class CheckinArgumentMutableBuilder[Self <: CheckinArgument] (val x: Self) extends AnyVal {
+  extension [Self <: CheckinArgument](x: Self) {
     
-    @scala.inline
-    def setMajorVersion(value: Boolean): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
+    inline def setMajorVersion(value: Boolean): Self = StObject.set(x, "MajorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTitle(value: String): Self = StObject.set(x, "NewTitle", value.asInstanceOf[js.Any])
+    inline def setNewTitle(value: String): Self = StObject.set(x, "NewTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceURL(value: String): Self = StObject.set(x, "SourceURL", value.asInstanceOf[js.Any])
+    inline def setSourceURL(value: String): Self = StObject.set(x, "SourceURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetURL(value: String): Self = StObject.set(x, "TargetURL", value.asInstanceOf[js.Any])
+    inline def setTargetURL(value: String): Self = StObject.set(x, "TargetURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionComment(value: String): Self = StObject.set(x, "VersionComment", value.asInstanceOf[js.Any])
+    inline def setVersionComment(value: String): Self = StObject.set(x, "VersionComment", value.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MatchType extends StObject
 object MatchType {
   
-  @scala.inline
-  def begin: typings.highlightJs.highlightJsStrings.begin = "begin".asInstanceOf[typings.highlightJs.highlightJsStrings.begin]
+  inline def begin: typings.highlightJs.highlightJsStrings.begin = "begin".asInstanceOf[typings.highlightJs.highlightJsStrings.begin]
   
-  @scala.inline
-  def end: typings.highlightJs.highlightJsStrings.end = "end".asInstanceOf[typings.highlightJs.highlightJsStrings.end]
+  inline def end: typings.highlightJs.highlightJsStrings.end = "end".asInstanceOf[typings.highlightJs.highlightJsStrings.end]
   
-  @scala.inline
-  def illegal: typings.highlightJs.highlightJsStrings.illegal = "illegal".asInstanceOf[typings.highlightJs.highlightJsStrings.illegal]
+  inline def illegal: typings.highlightJs.highlightJsStrings.illegal = "illegal".asInstanceOf[typings.highlightJs.highlightJsStrings.illegal]
 }

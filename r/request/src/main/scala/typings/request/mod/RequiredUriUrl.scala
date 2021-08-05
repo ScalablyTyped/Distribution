@@ -12,14 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequiredUriUrl extends StObject
 object RequiredUriUrl {
   
-  @scala.inline
-  def UriOptions(uri: String | Url): typings.request.mod.UriOptions = {
+  inline def UriOptions(uri: String | Url): typings.request.mod.UriOptions = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.request.mod.UriOptions]
   }
   
-  @scala.inline
-  def UrlOptions(url: String | Url): typings.request.mod.UrlOptions = {
+  inline def UrlOptions(url: String | Url): typings.request.mod.UrlOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.request.mod.UrlOptions]
   }

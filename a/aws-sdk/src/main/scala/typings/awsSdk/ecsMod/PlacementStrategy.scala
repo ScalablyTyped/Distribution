@@ -18,25 +18,19 @@ trait PlacementStrategy extends StObject {
 }
 object PlacementStrategy {
   
-  @scala.inline
-  def apply(): PlacementStrategy = {
+  inline def apply(): PlacementStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementStrategy]
   }
   
-  @scala.inline
-  implicit class PlacementStrategyMutableBuilder[Self <: PlacementStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementStrategy](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setType(value: PlacementStrategyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PlacementStrategyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

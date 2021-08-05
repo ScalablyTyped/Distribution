@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def config(settings: Settings): Importer = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(settings.asInstanceOf[js.Any]).asInstanceOf[Importer]
+  inline def config(settings: Settings): Importer = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(settings.asInstanceOf[js.Any]).asInstanceOf[Importer]
   
   trait Importer extends StObject {
     
@@ -22,18 +21,15 @@ object mod {
   }
   object Importer {
     
-    @scala.inline
-    def apply(`import`: String => js.Promise[Unit]): Importer = {
+    inline def apply(`import`: String => js.Promise[Unit]): Importer = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
       __obj.asInstanceOf[Importer]
     }
     
-    @scala.inline
-    implicit class ImporterMutableBuilder[Self <: Importer] (val x: Self) extends AnyVal {
+    extension [Self <: Importer](x: Self) {
       
-      @scala.inline
-      def setImport(value: String => js.Promise[Unit]): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
+      inline def setImport(value: String => js.Promise[Unit]): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
     }
   }
   
@@ -71,38 +67,28 @@ object mod {
   }
   object Settings {
     
-    @scala.inline
-    def apply(database: String, host: String, password: String, user: String): Settings = {
+    inline def apply(database: String, host: String, password: String, user: String): Settings = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnerror(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+      inline def setOnerror(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
 }

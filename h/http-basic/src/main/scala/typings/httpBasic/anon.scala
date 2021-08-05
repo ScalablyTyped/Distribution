@@ -16,20 +16,16 @@ object anon {
   }
   object PickCachedResponseheaders {
     
-    @scala.inline
-    def apply(headers: Headers, requestTimestamp: Double): PickCachedResponseheaders = {
+    inline def apply(headers: Headers, requestTimestamp: Double): PickCachedResponseheaders = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], requestTimestamp = requestTimestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickCachedResponseheaders]
     }
     
-    @scala.inline
-    implicit class PickCachedResponseheadersMutableBuilder[Self <: PickCachedResponseheaders] (val x: Self) extends AnyVal {
+    extension [Self <: PickCachedResponseheaders](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTimestamp(value: Double): Self = StObject.set(x, "requestTimestamp", value.asInstanceOf[js.Any])
+      inline def setRequestTimestamp(value: Double): Self = StObject.set(x, "requestTimestamp", value.asInstanceOf[js.Any])
     }
   }
 }

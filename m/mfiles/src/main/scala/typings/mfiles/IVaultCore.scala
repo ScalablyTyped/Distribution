@@ -12,19 +12,15 @@ trait IVaultCore extends StObject {
 }
 object IVaultCore {
   
-  @scala.inline
-  def apply(Events: IVaultCoreEvents, ServerVault: IVault): IVaultCore = {
+  inline def apply(Events: IVaultCoreEvents, ServerVault: IVault): IVaultCore = {
     val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], ServerVault = ServerVault.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVaultCore]
   }
   
-  @scala.inline
-  implicit class IVaultCoreMutableBuilder[Self <: IVaultCore] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultCore](x: Self) {
     
-    @scala.inline
-    def setEvents(value: IVaultCoreEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IVaultCoreEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerVault(value: IVault): Self = StObject.set(x, "ServerVault", value.asInstanceOf[js.Any])
+    inline def setServerVault(value: IVault): Self = StObject.set(x, "ServerVault", value.asInstanceOf[js.Any])
   }
 }

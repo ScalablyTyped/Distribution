@@ -11,19 +11,15 @@ trait ChannelSectionLocalization extends StObject {
 }
 object ChannelSectionLocalization {
   
-  @scala.inline
-  def apply(): ChannelSectionLocalization = {
+  inline def apply(): ChannelSectionLocalization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelSectionLocalization]
   }
   
-  @scala.inline
-  implicit class ChannelSectionLocalizationMutableBuilder[Self <: ChannelSectionLocalization] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelSectionLocalization](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

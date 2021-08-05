@@ -29,41 +29,31 @@ trait Secret extends StObject {
 }
 object Secret {
   
-  @scala.inline
-  def apply(): Secret = {
+  inline def apply(): Secret = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Secret]
   }
   
-  @scala.inline
-  implicit class SecretMutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
+  extension [Self <: Secret](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientSecretmanager.maximMazurokGapiClientSecretmanagerStrings.Secret & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReplication(value: Replication): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
+    inline def setReplication(value: Replication): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
+    inline def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
   }
 }

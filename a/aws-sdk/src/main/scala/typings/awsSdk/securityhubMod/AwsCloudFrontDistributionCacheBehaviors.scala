@@ -13,22 +13,17 @@ trait AwsCloudFrontDistributionCacheBehaviors extends StObject {
 }
 object AwsCloudFrontDistributionCacheBehaviors {
   
-  @scala.inline
-  def apply(): AwsCloudFrontDistributionCacheBehaviors = {
+  inline def apply(): AwsCloudFrontDistributionCacheBehaviors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCloudFrontDistributionCacheBehaviors]
   }
   
-  @scala.inline
-  implicit class AwsCloudFrontDistributionCacheBehaviorsMutableBuilder[Self <: AwsCloudFrontDistributionCacheBehaviors] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCloudFrontDistributionCacheBehaviors](x: Self) {
     
-    @scala.inline
-    def setItems(value: AwsCloudFrontDistributionCacheBehaviorsItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: AwsCloudFrontDistributionCacheBehaviorsItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: AwsCloudFrontDistributionCacheBehavior*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: AwsCloudFrontDistributionCacheBehavior*): Self = StObject.set(x, "Items", js.Array(value :_*))
   }
 }

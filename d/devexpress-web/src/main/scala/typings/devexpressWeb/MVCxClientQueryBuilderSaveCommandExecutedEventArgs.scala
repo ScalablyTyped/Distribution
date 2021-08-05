@@ -18,16 +18,13 @@ trait MVCxClientQueryBuilderSaveCommandExecutedEventArgs
 }
 object MVCxClientQueryBuilderSaveCommandExecutedEventArgs {
   
-  @scala.inline
-  def apply(Result: String): MVCxClientQueryBuilderSaveCommandExecutedEventArgs = {
+  inline def apply(Result: String): MVCxClientQueryBuilderSaveCommandExecutedEventArgs = {
     val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[MVCxClientQueryBuilderSaveCommandExecutedEventArgs]
   }
   
-  @scala.inline
-  implicit class MVCxClientQueryBuilderSaveCommandExecutedEventArgsMutableBuilder[Self <: MVCxClientQueryBuilderSaveCommandExecutedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientQueryBuilderSaveCommandExecutedEventArgs](x: Self) {
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ object bemMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bem(base: Block): BEMResult = ^.asInstanceOf[js.Dynamic].applyDynamic("bem")(base.asInstanceOf[js.Any]).asInstanceOf[BEMResult]
+  inline def bem(base: Block): BEMResult = ^.asInstanceOf[js.Dynamic].applyDynamic("bem")(base.asInstanceOf[js.Any]).asInstanceOf[BEMResult]
   
   type BEMResult = js.Function2[
     /* elementOrModifier */ js.UndefOr[Element | Modifier], 

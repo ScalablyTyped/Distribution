@@ -63,55 +63,39 @@ trait SchemaPose extends StObject {
 }
 object SchemaPose {
   
-  @scala.inline
-  def apply(): SchemaPose = {
+  inline def apply(): SchemaPose = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPose]
   }
   
-  @scala.inline
-  implicit class SchemaPoseMutableBuilder[Self <: SchemaPose] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPose](x: Self) {
     
-    @scala.inline
-    def setAccuracyMeters(value: Double): Self = StObject.set(x, "accuracyMeters", value.asInstanceOf[js.Any])
+    inline def setAccuracyMeters(value: Double): Self = StObject.set(x, "accuracyMeters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccuracyMetersUndefined: Self = StObject.set(x, "accuracyMeters", js.undefined)
+    inline def setAccuracyMetersUndefined: Self = StObject.set(x, "accuracyMeters", js.undefined)
     
-    @scala.inline
-    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
-    @scala.inline
-    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
-    @scala.inline
-    def setLatLngPair(value: SchemaLatLng): Self = StObject.set(x, "latLngPair", value.asInstanceOf[js.Any])
+    inline def setLatLngPair(value: SchemaLatLng): Self = StObject.set(x, "latLngPair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngPairUndefined: Self = StObject.set(x, "latLngPair", js.undefined)
+    inline def setLatLngPairUndefined: Self = StObject.set(x, "latLngPair", js.undefined)
     
-    @scala.inline
-    def setLevel(value: SchemaLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: SchemaLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+    inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
-    @scala.inline
-    def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
+    inline def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollUndefined: Self = StObject.set(x, "roll", js.undefined)
+    inline def setRollUndefined: Self = StObject.set(x, "roll", js.undefined)
   }
 }

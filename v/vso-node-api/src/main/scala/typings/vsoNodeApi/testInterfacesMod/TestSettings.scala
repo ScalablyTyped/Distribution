@@ -43,8 +43,7 @@ trait TestSettings extends StObject {
 }
 object TestSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     areaPath: String,
     description: String,
     isPublic: Boolean,
@@ -57,28 +56,20 @@ object TestSettings {
     __obj.asInstanceOf[TestSettings]
   }
   
-  @scala.inline
-  implicit class TestSettingsMutableBuilder[Self <: TestSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TestSettings](x: Self) {
     
-    @scala.inline
-    def setAreaPath(value: String): Self = StObject.set(x, "areaPath", value.asInstanceOf[js.Any])
+    inline def setAreaPath(value: String): Self = StObject.set(x, "areaPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
+    inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineRoles(value: String): Self = StObject.set(x, "machineRoles", value.asInstanceOf[js.Any])
+    inline def setMachineRoles(value: String): Self = StObject.set(x, "machineRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSettingsContent(value: String): Self = StObject.set(x, "testSettingsContent", value.asInstanceOf[js.Any])
+    inline def setTestSettingsContent(value: String): Self = StObject.set(x, "testSettingsContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSettingsId(value: Double): Self = StObject.set(x, "testSettingsId", value.asInstanceOf[js.Any])
+    inline def setTestSettingsId(value: Double): Self = StObject.set(x, "testSettingsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSettingsName(value: String): Self = StObject.set(x, "testSettingsName", value.asInstanceOf[js.Any])
+    inline def setTestSettingsName(value: String): Self = StObject.set(x, "testSettingsName", value.asInstanceOf[js.Any])
   }
 }

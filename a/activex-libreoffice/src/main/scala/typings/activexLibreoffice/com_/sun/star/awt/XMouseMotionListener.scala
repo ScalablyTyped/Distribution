@@ -25,8 +25,7 @@ trait XMouseMotionListener
 }
 object XMouseMotionListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     mouseDragged: MouseEvent => Unit,
@@ -38,13 +37,10 @@ object XMouseMotionListener {
     __obj.asInstanceOf[XMouseMotionListener]
   }
   
-  @scala.inline
-  implicit class XMouseMotionListenerMutableBuilder[Self <: XMouseMotionListener] (val x: Self) extends AnyVal {
+  extension [Self <: XMouseMotionListener](x: Self) {
     
-    @scala.inline
-    def setMouseDragged(value: MouseEvent => Unit): Self = StObject.set(x, "mouseDragged", js.Any.fromFunction1(value))
+    inline def setMouseDragged(value: MouseEvent => Unit): Self = StObject.set(x, "mouseDragged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseMoved(value: MouseEvent => Unit): Self = StObject.set(x, "mouseMoved", js.Any.fromFunction1(value))
+    inline def setMouseMoved(value: MouseEvent => Unit): Self = StObject.set(x, "mouseMoved", js.Any.fromFunction1(value))
   }
 }

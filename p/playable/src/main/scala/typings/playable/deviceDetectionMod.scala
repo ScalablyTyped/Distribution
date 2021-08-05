@@ -10,24 +10,17 @@ object deviceDetectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isAndroid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroid")().asInstanceOf[Boolean]
+  inline def isAndroid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroid")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isDesktopSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDesktopSafari")().asInstanceOf[Boolean]
+  inline def isDesktopSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDesktopSafari")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[Boolean]
+  inline def isIOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIPad(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPad")().asInstanceOf[Boolean]
+  inline def isIPad(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPad")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIPhone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone")().asInstanceOf[Boolean]
+  inline def isIPhone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIPod(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPod")().asInstanceOf[Boolean]
+  inline def isIPod(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPod")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafari")().asInstanceOf[Boolean]
+  inline def isSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafari")().asInstanceOf[Boolean]
 }

@@ -11,6 +11,5 @@ object ethereumCryptographyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ripemd160(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def ripemd160(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("ripemd160")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

@@ -51,8 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object GroupShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     GluePoints: XIndexContainer,
@@ -113,13 +112,10 @@ object GroupShape {
     __obj.asInstanceOf[GroupShape]
   }
   
-  @scala.inline
-  implicit class GroupShapeMutableBuilder[Self <: GroupShape] (val x: Self) extends AnyVal {
+  extension [Self <: GroupShape](x: Self) {
     
-    @scala.inline
-    def setEnterGroup(value: () => Unit): Self = StObject.set(x, "enterGroup", js.Any.fromFunction0(value))
+    inline def setEnterGroup(value: () => Unit): Self = StObject.set(x, "enterGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLeaveGroup(value: () => Unit): Self = StObject.set(x, "leaveGroup", js.Any.fromFunction0(value))
+    inline def setLeaveGroup(value: () => Unit): Self = StObject.set(x, "leaveGroup", js.Any.fromFunction0(value))
   }
 }

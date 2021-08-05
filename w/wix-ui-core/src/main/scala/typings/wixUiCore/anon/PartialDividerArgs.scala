@@ -14,25 +14,19 @@ trait PartialDividerArgs extends StObject {
 }
 object PartialDividerArgs {
   
-  @scala.inline
-  def apply(): PartialDividerArgs = {
+  inline def apply(): PartialDividerArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDividerArgs]
   }
   
-  @scala.inline
-  implicit class PartialDividerArgsMutableBuilder[Self <: PartialDividerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDividerArgs](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setValue(value: ReactNode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ReactNode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait DescribeContributorInsightsInput extends StObject {
 }
 object DescribeContributorInsightsInput {
   
-  @scala.inline
-  def apply(TableName: TableName): DescribeContributorInsightsInput = {
+  inline def apply(TableName: TableName): DescribeContributorInsightsInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeContributorInsightsInput]
   }
   
-  @scala.inline
-  implicit class DescribeContributorInsightsInputMutableBuilder[Self <: DescribeContributorInsightsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContributorInsightsInput](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

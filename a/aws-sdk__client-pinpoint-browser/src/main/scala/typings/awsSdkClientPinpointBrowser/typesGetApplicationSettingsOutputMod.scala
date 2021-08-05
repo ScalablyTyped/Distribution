@@ -26,20 +26,16 @@ object typesGetApplicationSettingsOutputMod {
   }
   object GetApplicationSettingsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, ApplicationSettingsResource: UnmarshalledApplicationSettingsResource): GetApplicationSettingsOutput = {
+    inline def apply($metadata: ResponseMetadata, ApplicationSettingsResource: UnmarshalledApplicationSettingsResource): GetApplicationSettingsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationSettingsResource = ApplicationSettingsResource.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetApplicationSettingsOutput]
     }
     
-    @scala.inline
-    implicit class GetApplicationSettingsOutputMutableBuilder[Self <: GetApplicationSettingsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetApplicationSettingsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationSettingsResource(value: UnmarshalledApplicationSettingsResource): Self = StObject.set(x, "ApplicationSettingsResource", value.asInstanceOf[js.Any])
+      inline def setApplicationSettingsResource(value: UnmarshalledApplicationSettingsResource): Self = StObject.set(x, "ApplicationSettingsResource", value.asInstanceOf[js.Any])
     }
   }
 }

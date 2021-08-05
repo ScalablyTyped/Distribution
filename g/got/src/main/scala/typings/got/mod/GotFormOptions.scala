@@ -20,34 +20,25 @@ trait GotFormOptions[E /* <: String | Null */]
 }
 object GotFormOptions {
   
-  @scala.inline
-  def apply[E /* <: String | Null */](): GotFormOptions[E] = {
+  inline def apply[E /* <: String | Null */](): GotFormOptions[E] = {
     val __obj = js.Dynamic.literal(form = true)
     __obj.asInstanceOf[GotFormOptions[E]]
   }
   
-  @scala.inline
-  implicit class GotFormOptionsMutableBuilder[Self <: GotFormOptions[?], E /* <: String | Null */] (val x: Self & GotFormOptions[E]) extends AnyVal {
+  extension [Self <: GotFormOptions[?], E /* <: String | Null */](x: Self & GotFormOptions[E]) {
     
-    @scala.inline
-    def setBody(value: Record[String, js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Record[String, js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setForm(value: `true`): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: `true`): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooks(value: Hooks[GotFormOptions[E], Record[String, js.Any]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: Hooks[GotFormOptions[E], Record[String, js.Any]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
   }
 }

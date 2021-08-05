@@ -18,19 +18,15 @@ trait RouteSpecHttpRouteTimeoutPerRequest extends StObject {
 }
 object RouteSpecHttpRouteTimeoutPerRequest {
   
-  @scala.inline
-  def apply(unit: String, value: Double): RouteSpecHttpRouteTimeoutPerRequest = {
+  inline def apply(unit: String, value: Double): RouteSpecHttpRouteTimeoutPerRequest = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttpRouteTimeoutPerRequest]
   }
   
-  @scala.inline
-  implicit class RouteSpecHttpRouteTimeoutPerRequestMutableBuilder[Self <: RouteSpecHttpRouteTimeoutPerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecHttpRouteTimeoutPerRequest](x: Self) {
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

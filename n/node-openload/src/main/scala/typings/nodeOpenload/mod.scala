@@ -19,8 +19,7 @@ object mod {
     * @param config The base config containing the user credentials
     * @returns An Openload singleton
     */
-  @scala.inline
-  def apply(config: OpenloadConfig): Openload = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Openload]
+  inline def apply(config: OpenloadConfig): Openload = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Openload]
   
   @JSImport("node-openload", JSImport.Namespace)
   @js.native
@@ -47,8 +46,7 @@ object mod {
   }
   object AccountInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       balance: Double,
       email: String,
       extid: String,
@@ -61,29 +59,21 @@ object mod {
       __obj.asInstanceOf[AccountInfo]
     }
     
-    @scala.inline
-    implicit class AccountInfoMutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AccountInfo](x: Self) {
       
-      @scala.inline
-      def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
+      inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtid(value: String): Self = StObject.set(x, "extid", value.asInstanceOf[js.Any])
+      inline def setExtid(value: String): Self = StObject.set(x, "extid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignup_at(value: String): Self = StObject.set(x, "signup_at", value.asInstanceOf[js.Any])
+      inline def setSignup_at(value: String): Self = StObject.set(x, "signup_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorage_left(value: Double): Self = StObject.set(x, "storage_left", value.asInstanceOf[js.Any])
+      inline def setStorage_left(value: Double): Self = StObject.set(x, "storage_left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorage_used(value: String): Self = StObject.set(x, "storage_used", value.asInstanceOf[js.Any])
+      inline def setStorage_used(value: String): Self = StObject.set(x, "storage_used", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraffic(value: Left): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
+      inline def setTraffic(value: Left): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +95,7 @@ object mod {
   }
   object DownloadLink {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content_type: String,
       name: String,
       sha1: String,
@@ -119,29 +108,21 @@ object mod {
       __obj.asInstanceOf[DownloadLink]
     }
     
-    @scala.inline
-    implicit class DownloadLinkMutableBuilder[Self <: DownloadLink] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadLink](x: Self) {
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
+      inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload_at(value: String): Self = StObject.set(x, "upload_at", value.asInstanceOf[js.Any])
+      inline def setUpload_at(value: String): Self = StObject.set(x, "upload_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,23 +136,18 @@ object mod {
   }
   object DownloadLinkParam {
     
-    @scala.inline
-    def apply(captcha_response: String, file: String, ticket: String): DownloadLinkParam = {
+    inline def apply(captcha_response: String, file: String, ticket: String): DownloadLinkParam = {
       val __obj = js.Dynamic.literal(captcha_response = captcha_response.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], ticket = ticket.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadLinkParam]
     }
     
-    @scala.inline
-    implicit class DownloadLinkParamMutableBuilder[Self <: DownloadLinkParam] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadLinkParam](x: Self) {
       
-      @scala.inline
-      def setCaptcha_response(value: String): Self = StObject.set(x, "captcha_response", value.asInstanceOf[js.Any])
+      inline def setCaptcha_response(value: String): Self = StObject.set(x, "captcha_response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
+      inline def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,8 +167,7 @@ object mod {
   }
   object DownloadTicket {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       captcha_h: Double,
       captcha_url: String,
       captcha_w: Double,
@@ -204,26 +179,19 @@ object mod {
       __obj.asInstanceOf[DownloadTicket]
     }
     
-    @scala.inline
-    implicit class DownloadTicketMutableBuilder[Self <: DownloadTicket] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadTicket](x: Self) {
       
-      @scala.inline
-      def setCaptcha_h(value: Double): Self = StObject.set(x, "captcha_h", value.asInstanceOf[js.Any])
+      inline def setCaptcha_h(value: Double): Self = StObject.set(x, "captcha_h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptcha_url(value: String): Self = StObject.set(x, "captcha_url", value.asInstanceOf[js.Any])
+      inline def setCaptcha_url(value: String): Self = StObject.set(x, "captcha_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptcha_w(value: Double): Self = StObject.set(x, "captcha_w", value.asInstanceOf[js.Any])
+      inline def setCaptcha_w(value: Double): Self = StObject.set(x, "captcha_w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
+      inline def setTicket(value: String): Self = StObject.set(x, "ticket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid_until(value: String): Self = StObject.set(x, "valid_until", value.asInstanceOf[js.Any])
+      inline def setValid_until(value: String): Self = StObject.set(x, "valid_until", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_time(value: Double): Self = StObject.set(x, "wait_time", value.asInstanceOf[js.Any])
+      inline def setWait_time(value: Double): Self = StObject.set(x, "wait_time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,26 +205,20 @@ object mod {
   }
   object ListFolder {
     
-    @scala.inline
-    def apply(files: js.Array[Cstatus], folders: js.Array[Id]): ListFolder = {
+    inline def apply(files: js.Array[Cstatus], folders: js.Array[Id]): ListFolder = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], folders = folders.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListFolder]
     }
     
-    @scala.inline
-    implicit class ListFolderMutableBuilder[Self <: ListFolder] (val x: Self) extends AnyVal {
+    extension [Self <: ListFolder](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[Cstatus]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[Cstatus]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: Cstatus*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: Cstatus*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setFolders(value: js.Array[Id]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+      inline def setFolders(value: js.Array[Id]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoldersVarargs(value: Id*): Self = StObject.set(x, "folders", js.Array(value :_*))
+      inline def setFoldersVarargs(value: Id*): Self = StObject.set(x, "folders", js.Array(value :_*))
     }
   }
   
@@ -266,11 +228,11 @@ object mod {
   @js.native
   trait Openload extends StObject {
     
-    var _config: OpenloadConfig = js.native
+    /* private */ var _config: OpenloadConfig = js.native
     
-    var _locationPrefix: String = js.native
+    /* private */ var _locationPrefix: String = js.native
     
-    var _version: Double = js.native
+    /* private */ var _version: Double = js.native
     
     // TypeScript Version: 3.6
     def config: OpenloadConfig = js.native
@@ -319,26 +281,20 @@ object mod {
   }
   object OpenloadConfig {
     
-    @scala.inline
-    def apply(api_key: String, api_login: String): OpenloadConfig = {
+    inline def apply(api_key: String, api_login: String): OpenloadConfig = {
       val __obj = js.Dynamic.literal(api_key = api_key.asInstanceOf[js.Any], api_login = api_login.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenloadConfig]
     }
     
-    @scala.inline
-    implicit class OpenloadConfigMutableBuilder[Self <: OpenloadConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OpenloadConfig](x: Self) {
       
-      @scala.inline
-      def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
+      inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_login(value: String): Self = StObject.set(x, "api_login", value.asInstanceOf[js.Any])
+      inline def setApi_login(value: String): Self = StObject.set(x, "api_login", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_version(value: Double): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
+      inline def setApi_version(value: Double): Self = StObject.set(x, "api_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_versionUndefined: Self = StObject.set(x, "api_version", js.undefined)
+      inline def setApi_versionUndefined: Self = StObject.set(x, "api_version", js.undefined)
     }
   }
   
@@ -350,20 +306,16 @@ object mod {
   }
   object RemoteUpload {
     
-    @scala.inline
-    def apply(folderid: String, id: String): RemoteUpload = {
+    inline def apply(folderid: String, id: String): RemoteUpload = {
       val __obj = js.Dynamic.literal(folderid = folderid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoteUpload]
     }
     
-    @scala.inline
-    implicit class RemoteUploadMutableBuilder[Self <: RemoteUpload] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteUpload](x: Self) {
       
-      @scala.inline
-      def setFolderid(value: String): Self = StObject.set(x, "folderid", value.asInstanceOf[js.Any])
+      inline def setFolderid(value: String): Self = StObject.set(x, "folderid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -377,29 +329,22 @@ object mod {
   }
   object RemoteUploadParam {
     
-    @scala.inline
-    def apply(url: String): RemoteUploadParam = {
+    inline def apply(url: String): RemoteUploadParam = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoteUploadParam]
     }
     
-    @scala.inline
-    implicit class RemoteUploadParamMutableBuilder[Self <: RemoteUploadParam] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteUploadParam](x: Self) {
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -413,26 +358,20 @@ object mod {
   }
   object RemoteUploadStatusParam {
     
-    @scala.inline
-    def apply(): RemoteUploadStatusParam = {
+    inline def apply(): RemoteUploadStatusParam = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoteUploadStatusParam]
     }
     
-    @scala.inline
-    implicit class RemoteUploadStatusParamMutableBuilder[Self <: RemoteUploadStatusParam] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteUploadStatusParam](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
   
@@ -456,8 +395,7 @@ object mod {
   }
   object RunningFileConverts {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       last_update: String,
       link: String,
@@ -471,32 +409,23 @@ object mod {
       __obj.asInstanceOf[RunningFileConverts]
     }
     
-    @scala.inline
-    implicit class RunningFileConvertsMutableBuilder[Self <: RunningFileConverts] (val x: Self) extends AnyVal {
+    extension [Self <: RunningFileConverts](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_update(value: String): Self = StObject.set(x, "last_update", value.asInstanceOf[js.Any])
+      inline def setLast_update(value: String): Self = StObject.set(x, "last_update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkextid(value: String): Self = StObject.set(x, "linkextid", value.asInstanceOf[js.Any])
+      inline def setLinkextid(value: String): Self = StObject.set(x, "linkextid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetries(value: String): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: String): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -508,20 +437,16 @@ object mod {
   }
   object Upload {
     
-    @scala.inline
-    def apply(url: String, valid_until: String): Upload = {
+    inline def apply(url: String, valid_until: String): Upload = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any], valid_until = valid_until.asInstanceOf[js.Any])
       __obj.asInstanceOf[Upload]
     }
     
-    @scala.inline
-    implicit class UploadMutableBuilder[Self <: Upload] (val x: Self) extends AnyVal {
+    extension [Self <: Upload](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid_until(value: String): Self = StObject.set(x, "valid_until", value.asInstanceOf[js.Any])
+      inline def setValid_until(value: String): Self = StObject.set(x, "valid_until", value.asInstanceOf[js.Any])
     }
   }
   
@@ -537,35 +462,26 @@ object mod {
   }
   object UploadParam {
     
-    @scala.inline
-    def apply(file: String | ArrayBuffer): UploadParam = {
+    inline def apply(file: String | ArrayBuffer): UploadParam = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadParam]
     }
     
-    @scala.inline
-    implicit class UploadParamMutableBuilder[Self <: UploadParam] (val x: Self) extends AnyVal {
+    extension [Self <: UploadParam](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setFile(value: String | ArrayBuffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String | ArrayBuffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+      inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     }
   }
   
@@ -579,23 +495,18 @@ object mod {
   }
   object UploadProgress {
     
-    @scala.inline
-    def apply(percent: Double, total: Double, transferred: Double): UploadProgress = {
+    inline def apply(percent: Double, total: Double, transferred: Double): UploadProgress = {
       val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], transferred = transferred.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadProgress]
     }
     
-    @scala.inline
-    implicit class UploadProgressMutableBuilder[Self <: UploadProgress] (val x: Self) extends AnyVal {
+    extension [Self <: UploadProgress](x: Self) {
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
+      inline def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
     }
   }
 }

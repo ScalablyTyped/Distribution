@@ -34,40 +34,29 @@ trait IssuesCreateMilestoneEndpoint extends StObject {
 }
 object IssuesCreateMilestoneEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, title: String): IssuesCreateMilestoneEndpoint = {
+  inline def apply(owner: String, repo: String, title: String): IssuesCreateMilestoneEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesCreateMilestoneEndpoint]
   }
   
-  @scala.inline
-  implicit class IssuesCreateMilestoneEndpointMutableBuilder[Self <: IssuesCreateMilestoneEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesCreateMilestoneEndpoint](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDue_on(value: String): Self = StObject.set(x, "due_on", value.asInstanceOf[js.Any])
+    inline def setDue_on(value: String): Self = StObject.set(x, "due_on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDue_onUndefined: Self = StObject.set(x, "due_on", js.undefined)
+    inline def setDue_onUndefined: Self = StObject.set(x, "due_on", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

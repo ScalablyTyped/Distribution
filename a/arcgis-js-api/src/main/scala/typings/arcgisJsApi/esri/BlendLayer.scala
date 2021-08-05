@@ -45,19 +45,16 @@ trait BlendLayer extends StObject {
 }
 object BlendLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blendMode: average | `color-burn` | `color-dodge` | typings.arcgisJsApi.arcgisJsApiStrings.color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor
   ): BlendLayer = {
     val __obj = js.Dynamic.literal(blendMode = blendMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlendLayer]
   }
   
-  @scala.inline
-  implicit class BlendLayerMutableBuilder[Self <: BlendLayer] (val x: Self) extends AnyVal {
+  extension [Self <: BlendLayer](x: Self) {
     
-    @scala.inline
-    def setBlendMode(
+    inline def setBlendMode(
       value: average | `color-burn` | `color-dodge` | typings.arcgisJsApi.arcgisJsApiStrings.color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor
     ): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
   }

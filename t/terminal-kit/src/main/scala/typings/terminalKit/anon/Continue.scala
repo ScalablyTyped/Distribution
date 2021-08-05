@@ -16,34 +16,25 @@ trait Continue extends StObject {
 }
 object Continue {
   
-  @scala.inline
-  def apply(x: Double): Continue = {
+  inline def apply(x: Double): Continue = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], width = null)
     __obj.asInstanceOf[Continue]
   }
   
-  @scala.inline
-  implicit class ContinueMutableBuilder[Self <: Continue] (val x: Self) extends AnyVal {
+  extension [Self <: Continue](x: Self) {
     
-    @scala.inline
-    def setContinue(value: Boolean): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
+    inline def setContinue(value: Boolean): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
+    inline def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthNull: Self = StObject.set(x, "width", null)
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
   }
 }

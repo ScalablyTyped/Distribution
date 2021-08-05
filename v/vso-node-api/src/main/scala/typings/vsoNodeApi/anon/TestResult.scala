@@ -18,8 +18,7 @@ trait TestResult extends StObject {
 }
 object TestResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     none: scala.Double,
     system: scala.Double,
@@ -30,22 +29,16 @@ object TestResult {
     __obj.asInstanceOf[TestResult]
   }
   
-  @scala.inline
-  implicit class TestResultMutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
+  extension [Self <: TestResult](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem(value: scala.Double): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: scala.Double): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResult(value: scala.Double): Self = StObject.set(x, "testResult", value.asInstanceOf[js.Any])
+    inline def setTestResult(value: scala.Double): Self = StObject.set(x, "testResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRun(value: scala.Double): Self = StObject.set(x, "testRun", value.asInstanceOf[js.Any])
+    inline def setTestRun(value: scala.Double): Self = StObject.set(x, "testRun", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait DeleteRouteSettingsRequest extends StObject {
 }
 object DeleteRouteSettingsRequest {
   
-  @scala.inline
-  def apply(ApiId: string, RouteKey: string, StageName: string): DeleteRouteSettingsRequest = {
+  inline def apply(ApiId: string, RouteKey: string, StageName: string): DeleteRouteSettingsRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], RouteKey = RouteKey.asInstanceOf[js.Any], StageName = StageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRouteSettingsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRouteSettingsRequestMutableBuilder[Self <: DeleteRouteSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRouteSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteKey(value: string): Self = StObject.set(x, "RouteKey", value.asInstanceOf[js.Any])
+    inline def setRouteKey(value: string): Self = StObject.set(x, "RouteKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: string): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: string): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
   }
 }

@@ -77,91 +77,63 @@ trait SchemaNativeContent extends StObject {
 }
 object SchemaNativeContent {
   
-  @scala.inline
-  def apply(): SchemaNativeContent = {
+  inline def apply(): SchemaNativeContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNativeContent]
   }
   
-  @scala.inline
-  implicit class SchemaNativeContentMutableBuilder[Self <: SchemaNativeContent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNativeContent](x: Self) {
     
-    @scala.inline
-    def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
+    inline def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
+    inline def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
     
-    @scala.inline
-    def setAppIcon(value: SchemaImage): Self = StObject.set(x, "appIcon", value.asInstanceOf[js.Any])
+    inline def setAppIcon(value: SchemaImage): Self = StObject.set(x, "appIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIconUndefined: Self = StObject.set(x, "appIcon", js.undefined)
+    inline def setAppIconUndefined: Self = StObject.set(x, "appIcon", js.undefined)
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setCallToAction(value: String): Self = StObject.set(x, "callToAction", value.asInstanceOf[js.Any])
+    inline def setCallToAction(value: String): Self = StObject.set(x, "callToAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallToActionUndefined: Self = StObject.set(x, "callToAction", js.undefined)
+    inline def setCallToActionUndefined: Self = StObject.set(x, "callToAction", js.undefined)
     
-    @scala.inline
-    def setClickLinkUrl(value: String): Self = StObject.set(x, "clickLinkUrl", value.asInstanceOf[js.Any])
+    inline def setClickLinkUrl(value: String): Self = StObject.set(x, "clickLinkUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickLinkUrlUndefined: Self = StObject.set(x, "clickLinkUrl", js.undefined)
+    inline def setClickLinkUrlUndefined: Self = StObject.set(x, "clickLinkUrl", js.undefined)
     
-    @scala.inline
-    def setClickTrackingUrl(value: String): Self = StObject.set(x, "clickTrackingUrl", value.asInstanceOf[js.Any])
+    inline def setClickTrackingUrl(value: String): Self = StObject.set(x, "clickTrackingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickTrackingUrlUndefined: Self = StObject.set(x, "clickTrackingUrl", js.undefined)
+    inline def setClickTrackingUrlUndefined: Self = StObject.set(x, "clickTrackingUrl", js.undefined)
     
-    @scala.inline
-    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
+    inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
+    inline def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
     
-    @scala.inline
-    def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: SchemaImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setLogo(value: SchemaImage): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: SchemaImage): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    @scala.inline
-    def setPriceDisplayText(value: String): Self = StObject.set(x, "priceDisplayText", value.asInstanceOf[js.Any])
+    inline def setPriceDisplayText(value: String): Self = StObject.set(x, "priceDisplayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceDisplayTextUndefined: Self = StObject.set(x, "priceDisplayText", js.undefined)
+    inline def setPriceDisplayTextUndefined: Self = StObject.set(x, "priceDisplayText", js.undefined)
     
-    @scala.inline
-    def setStarRating(value: Double): Self = StObject.set(x, "starRating", value.asInstanceOf[js.Any])
+    inline def setStarRating(value: Double): Self = StObject.set(x, "starRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarRatingUndefined: Self = StObject.set(x, "starRating", js.undefined)
+    inline def setStarRatingUndefined: Self = StObject.set(x, "starRating", js.undefined)
     
-    @scala.inline
-    def setStoreUrl(value: String): Self = StObject.set(x, "storeUrl", value.asInstanceOf[js.Any])
+    inline def setStoreUrl(value: String): Self = StObject.set(x, "storeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUrlUndefined: Self = StObject.set(x, "storeUrl", js.undefined)
+    inline def setStoreUrlUndefined: Self = StObject.set(x, "storeUrl", js.undefined)
     
-    @scala.inline
-    def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
+    inline def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
+    inline def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
   }
 }

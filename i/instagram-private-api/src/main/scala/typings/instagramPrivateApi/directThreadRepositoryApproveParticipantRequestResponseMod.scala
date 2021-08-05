@@ -18,29 +18,22 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem {
     
-    @scala.inline
-    def apply(estimated_scans_sizes: js.Array[Double], height: Double, url: String, width: Double): DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem = {
+    inline def apply(estimated_scans_sizes: js.Array[Double], height: Double, url: String, width: Double): DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem = {
       val __obj = js.Dynamic.literal(estimated_scans_sizes = estimated_scans_sizes.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItemMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem](x: Self) {
       
-      @scala.inline
-      def setEstimated_scans_sizes(value: js.Array[Double]): Self = StObject.set(x, "estimated_scans_sizes", value.asInstanceOf[js.Any])
+      inline def setEstimated_scans_sizes(value: js.Array[Double]): Self = StObject.set(x, "estimated_scans_sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEstimated_scans_sizesVarargs(value: Double*): Self = StObject.set(x, "estimated_scans_sizes", js.Array(value :_*))
+      inline def setEstimated_scans_sizesVarargs(value: Double*): Self = StObject.set(x, "estimated_scans_sizes", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,20 +43,16 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags {
     
-    @scala.inline
-    def apply(in: js.Array[js.Any]): DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags = {
+    inline def apply(in: js.Array[js.Any]): DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseFbUserTagsMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags](x: Self) {
       
-      @scala.inline
-      def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
+      inline def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
     }
   }
   
@@ -85,8 +74,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blocking: Boolean,
       following: Boolean,
       incoming_request: Boolean,
@@ -99,29 +87,21 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatusMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus](x: Self) {
       
-      @scala.inline
-      def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
+      inline def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+      inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+      inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
+      inline def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+      inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,20 +111,16 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2 {
     
-    @scala.inline
-    def apply(candidates: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem]): DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2 = {
+    inline def apply(candidates: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem]): DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2 = {
       val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2MutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2](x: Self) {
       
-      @scala.inline
-      def setCandidates(value: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+      inline def setCandidates(value: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCandidatesVarargs(value: DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+      inline def setCandidatesVarargs(value: DirectThreadRepositoryApproveParticipantRequestResponseCandidatesItem*): Self = StObject.set(x, "candidates", js.Array(value :_*))
     }
   }
   
@@ -172,8 +148,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseInviter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowed_commenter_type: String,
       full_name: String,
       has_anonymous_profile_picture: Boolean,
@@ -189,38 +164,27 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseInviter]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseInviterMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseInviter] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseInviter](x: Self) {
       
-      @scala.inline
-      def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
+      inline def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
+      inline def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,8 +202,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseItemsItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       item_id: String,
       item_type: String,
       story_share: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare,
@@ -250,23 +213,17 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseItemsItem]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseItemsItemMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseItemsItem] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseItemsItem](x: Self) {
       
-      @scala.inline
-      def setItem_id(value: String): Self = StObject.set(x, "item_id", value.asInstanceOf[js.Any])
+      inline def setItem_id(value: String): Self = StObject.set(x, "item_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem_type(value: String): Self = StObject.set(x, "item_type", value.asInstanceOf[js.Any])
+      inline def setItem_type(value: String): Self = StObject.set(x, "item_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory_share(value: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare): Self = StObject.set(x, "story_share", value.asInstanceOf[js.Any])
+      inline def setStory_share(value: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare): Self = StObject.set(x, "story_share", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -284,8 +241,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       item_id: String,
       item_type: String,
       story_share: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare,
@@ -296,23 +252,17 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItemMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem](x: Self) {
       
-      @scala.inline
-      def setItem_id(value: String): Self = StObject.set(x, "item_id", value.asInstanceOf[js.Any])
+      inline def setItem_id(value: String): Self = StObject.set(x, "item_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem_type(value: String): Self = StObject.set(x, "item_type", value.asInstanceOf[js.Any])
+      inline def setItem_type(value: String): Self = StObject.set(x, "item_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory_share(value: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare): Self = StObject.set(x, "story_share", value.asInstanceOf[js.Any])
+      inline def setStory_share(value: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare): Self = StObject.set(x, "story_share", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -386,8 +336,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseMedia {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       can_view_more_preview_comments: Boolean,
       can_viewer_save: Boolean,
       caption: Null,
@@ -425,110 +374,75 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseMedia]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseMediaMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseMedia] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseMedia](x: Self) {
       
-      @scala.inline
-      def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
+      inline def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_viewer_save(value: Boolean): Self = StObject.set(x, "can_viewer_save", value.asInstanceOf[js.Any])
+      inline def setCan_viewer_save(value: Boolean): Self = StObject.set(x, "can_viewer_save", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption(value: Null): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: Null): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
+      inline def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption_position(value: Double): Self = StObject.set(x, "caption_position", value.asInstanceOf[js.Any])
+      inline def setCaption_position(value: Double): Self = StObject.set(x, "caption_position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_cache_key(value: String): Self = StObject.set(x, "client_cache_key", value.asInstanceOf[js.Any])
+      inline def setClient_cache_key(value: String): Self = StObject.set(x, "client_cache_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
+      inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
+      inline def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
+      inline def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevice_timestamp(value: Double): Self = StObject.set(x, "device_timestamp", value.asInstanceOf[js.Any])
+      inline def setDevice_timestamp(value: Double): Self = StObject.set(x, "device_timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
+      inline def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFb_user_tags(value: DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags): Self = StObject.set(x, "fb_user_tags", value.asInstanceOf[js.Any])
+      inline def setFb_user_tags(value: DirectThreadRepositoryApproveParticipantRequestResponseFbUserTags): Self = StObject.set(x, "fb_user_tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter_type(value: Double): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
+      inline def setFilter_type(value: Double): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_liked(value: Boolean): Self = StObject.set(x, "has_liked", value.asInstanceOf[js.Any])
+      inline def setHas_liked(value: Boolean): Self = StObject.set(x, "has_liked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
+      inline def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_versions2(value: DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
+      inline def setImage_versions2(value: DirectThreadRepositoryApproveParticipantRequestResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_reel_media(value: Boolean): Self = StObject.set(x, "is_reel_media", value.asInstanceOf[js.Any])
+      inline def setIs_reel_media(value: Boolean): Self = StObject.set(x, "is_reel_media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLike_count(value: Double): Self = StObject.set(x, "like_count", value.asInstanceOf[js.Any])
+      inline def setLike_count(value: Double): Self = StObject.set(x, "like_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLikers(value: js.Array[js.Any]): Self = StObject.set(x, "likers", value.asInstanceOf[js.Any])
+      inline def setLikers(value: js.Array[js.Any]): Self = StObject.set(x, "likers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLikersVarargs(value: js.Any*): Self = StObject.set(x, "likers", js.Array(value :_*))
+      inline def setLikersVarargs(value: js.Any*): Self = StObject.set(x, "likers", js.Array(value :_*))
       
-      @scala.inline
-      def setMax_num_visible_preview_comments(value: Double): Self = StObject.set(x, "max_num_visible_preview_comments", value.asInstanceOf[js.Any])
+      inline def setMax_num_visible_preview_comments(value: Double): Self = StObject.set(x, "max_num_visible_preview_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
+      inline def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
+      inline def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
+      inline def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
+      inline def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoto_of_you(value: Boolean): Self = StObject.set(x, "photo_of_you", value.asInstanceOf[js.Any])
+      inline def setPhoto_of_you(value: Boolean): Self = StObject.set(x, "photo_of_you", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+      inline def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
+      inline def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
       
-      @scala.inline
-      def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
+      inline def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezone_offset(value: Double): Self = StObject.set(x, "timezone_offset", value.asInstanceOf[js.Any])
+      inline def setTimezone_offset(value: Double): Self = StObject.set(x, "timezone_offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: DirectThreadRepositoryApproveParticipantRequestResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: DirectThreadRepositoryApproveParticipantRequestResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -540,20 +454,16 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseRootObject {
     
-    @scala.inline
-    def apply(status: String, thread: DirectThreadRepositoryApproveParticipantRequestResponseThread): DirectThreadRepositoryApproveParticipantRequestResponseRootObject = {
+    inline def apply(status: String, thread: DirectThreadRepositoryApproveParticipantRequestResponseThread): DirectThreadRepositoryApproveParticipantRequestResponseRootObject = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], thread = thread.asInstanceOf[js.Any])
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseRootObject]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseRootObjectMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThread(value: DirectThreadRepositoryApproveParticipantRequestResponseThread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
+      inline def setThread(value: DirectThreadRepositoryApproveParticipantRequestResponseThread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
     }
   }
   
@@ -573,8 +483,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseStoryShare {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       is_reel_persisted: Boolean,
       media: DirectThreadRepositoryApproveParticipantRequestResponseMedia,
       reel_id: Double,
@@ -586,26 +495,19 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseStoryShare]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseStoryShareMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseStoryShare](x: Self) {
       
-      @scala.inline
-      def setIs_reel_persisted(value: Boolean): Self = StObject.set(x, "is_reel_persisted", value.asInstanceOf[js.Any])
+      inline def setIs_reel_persisted(value: Boolean): Self = StObject.set(x, "is_reel_persisted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia(value: DirectThreadRepositoryApproveParticipantRequestResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: DirectThreadRepositoryApproveParticipantRequestResponseMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReel_id(value: Double): Self = StObject.set(x, "reel_id", value.asInstanceOf[js.Any])
+      inline def setReel_id(value: Double): Self = StObject.set(x, "reel_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
+      inline def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory_share_type(value: String): Self = StObject.set(x, "story_share_type", value.asInstanceOf[js.Any])
+      inline def setStory_share_type(value: String): Self = StObject.set(x, "story_share_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: Null): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Null): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -683,8 +585,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseThread {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       admin_user_ids: js.Array[Double],
       approval_required_for_new_members: Boolean,
       archived: Boolean,
@@ -725,125 +626,85 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseThread]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseThreadMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseThread] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseThread](x: Self) {
       
-      @scala.inline
-      def setAdmin_user_ids(value: js.Array[Double]): Self = StObject.set(x, "admin_user_ids", value.asInstanceOf[js.Any])
+      inline def setAdmin_user_ids(value: js.Array[Double]): Self = StObject.set(x, "admin_user_ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdmin_user_idsVarargs(value: Double*): Self = StObject.set(x, "admin_user_ids", js.Array(value :_*))
+      inline def setAdmin_user_idsVarargs(value: Double*): Self = StObject.set(x, "admin_user_ids", js.Array(value :_*))
       
-      @scala.inline
-      def setApproval_required_for_new_members(value: Boolean): Self = StObject.set(x, "approval_required_for_new_members", value.asInstanceOf[js.Any])
+      inline def setApproval_required_for_new_members(value: Boolean): Self = StObject.set(x, "approval_required_for_new_members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+      inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBusiness_thread_folder(value: Double): Self = StObject.set(x, "business_thread_folder", value.asInstanceOf[js.Any])
+      inline def setBusiness_thread_folder(value: Double): Self = StObject.set(x, "business_thread_folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
+      inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolder(value: Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: Double): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_newer(value: Boolean): Self = StObject.set(x, "has_newer", value.asInstanceOf[js.Any])
+      inline def setHas_newer(value: Boolean): Self = StObject.set(x, "has_newer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_older(value: Boolean): Self = StObject.set(x, "has_older", value.asInstanceOf[js.Any])
+      inline def setHas_older(value: Boolean): Self = StObject.set(x, "has_older", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput_mode(value: Double): Self = StObject.set(x, "input_mode", value.asInstanceOf[js.Any])
+      inline def setInput_mode(value: Double): Self = StObject.set(x, "input_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInviter(value: DirectThreadRepositoryApproveParticipantRequestResponseInviter): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
+      inline def setInviter(value: DirectThreadRepositoryApproveParticipantRequestResponseInviter): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_group(value: Boolean): Self = StObject.set(x, "is_group", value.asInstanceOf[js.Any])
+      inline def setIs_group(value: Boolean): Self = StObject.set(x, "is_group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_pin(value: Boolean): Self = StObject.set(x, "is_pin", value.asInstanceOf[js.Any])
+      inline def setIs_pin(value: Boolean): Self = StObject.set(x, "is_pin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: DirectThreadRepositoryApproveParticipantRequestResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: DirectThreadRepositoryApproveParticipantRequestResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLast_activity_at(value: String): Self = StObject.set(x, "last_activity_at", value.asInstanceOf[js.Any])
+      inline def setLast_activity_at(value: String): Self = StObject.set(x, "last_activity_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_permanent_item(value: DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem): Self = StObject.set(x, "last_permanent_item", value.asInstanceOf[js.Any])
+      inline def setLast_permanent_item(value: DirectThreadRepositoryApproveParticipantRequestResponseLastPermanentItem): Self = StObject.set(x, "last_permanent_item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_seen_at(value: DirectThreadRepositoryApproveParticipantRequestResponseLastSeenAt): Self = StObject.set(x, "last_seen_at", value.asInstanceOf[js.Any])
+      inline def setLast_seen_at(value: DirectThreadRepositoryApproveParticipantRequestResponseLastSeenAt): Self = StObject.set(x, "last_seen_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft_users(value: js.Array[js.Any]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
+      inline def setLeft_users(value: js.Array[js.Any]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft_usersVarargs(value: js.Any*): Self = StObject.set(x, "left_users", js.Array(value :_*))
+      inline def setLeft_usersVarargs(value: js.Any*): Self = StObject.set(x, "left_users", js.Array(value :_*))
       
-      @scala.inline
-      def setMentions_muted(value: Boolean): Self = StObject.set(x, "mentions_muted", value.asInstanceOf[js.Any])
+      inline def setMentions_muted(value: Boolean): Self = StObject.set(x, "mentions_muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+      inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+      inline def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewest_cursor(value: String): Self = StObject.set(x, "newest_cursor", value.asInstanceOf[js.Any])
+      inline def setNewest_cursor(value: String): Self = StObject.set(x, "newest_cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_cursor(value: String): Self = StObject.set(x, "next_cursor", value.asInstanceOf[js.Any])
+      inline def setNext_cursor(value: String): Self = StObject.set(x, "next_cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldest_cursor(value: String): Self = StObject.set(x, "oldest_cursor", value.asInstanceOf[js.Any])
+      inline def setOldest_cursor(value: String): Self = StObject.set(x, "oldest_cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending_score(value: String): Self = StObject.set(x, "pending_score", value.asInstanceOf[js.Any])
+      inline def setPending_score(value: String): Self = StObject.set(x, "pending_score", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrev_cursor(value: String): Self = StObject.set(x, "prev_cursor", value.asInstanceOf[js.Any])
+      inline def setPrev_cursor(value: String): Self = StObject.set(x, "prev_cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead_state(value: Double): Self = StObject.set(x, "read_state", value.asInstanceOf[js.Any])
+      inline def setRead_state(value: Double): Self = StObject.set(x, "read_state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThread_id(value: String): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
+      inline def setThread_id(value: String): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThread_title(value: String): Self = StObject.set(x, "thread_title", value.asInstanceOf[js.Any])
+      inline def setThread_title(value: String): Self = StObject.set(x, "thread_title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThread_type(value: String): Self = StObject.set(x, "thread_type", value.asInstanceOf[js.Any])
+      inline def setThread_type(value: String): Self = StObject.set(x, "thread_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThread_v2_id(value: String): Self = StObject.set(x, "thread_v2_id", value.asInstanceOf[js.Any])
+      inline def setThread_v2_id(value: String): Self = StObject.set(x, "thread_v2_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[DirectThreadRepositoryApproveParticipantRequestResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: DirectThreadRepositoryApproveParticipantRequestResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: DirectThreadRepositoryApproveParticipantRequestResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
       
-      @scala.inline
-      def setValued_request(value: Boolean): Self = StObject.set(x, "valued_request", value.asInstanceOf[js.Any])
+      inline def setValued_request(value: Boolean): Self = StObject.set(x, "valued_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVc_muted(value: Boolean): Self = StObject.set(x, "vc_muted", value.asInstanceOf[js.Any])
+      inline def setVc_muted(value: Boolean): Self = StObject.set(x, "vc_muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewer_id(value: Double): Self = StObject.set(x, "viewer_id", value.asInstanceOf[js.Any])
+      inline def setViewer_id(value: Double): Self = StObject.set(x, "viewer_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -877,8 +738,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowed_commenter_type: String,
       can_boost_post: Boolean,
       can_see_organic_insights: Boolean,
@@ -897,47 +757,33 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseUser]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseUserMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseUser](x: Self) {
       
-      @scala.inline
-      def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
+      inline def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
+      inline def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
+      inline def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_unpublished(value: Boolean): Self = StObject.set(x, "is_unpublished", value.asInstanceOf[js.Any])
+      inline def setIs_unpublished(value: Boolean): Self = StObject.set(x, "is_unpublished", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
+      inline def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
+      inline def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -967,8 +813,7 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
   }
   object DirectThreadRepositoryApproveParticipantRequestResponseUsersItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       friendship_status: DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus,
       full_name: String,
       has_anonymous_profile_picture: Boolean,
@@ -985,41 +830,29 @@ object directThreadRepositoryApproveParticipantRequestResponseMod {
       __obj.asInstanceOf[DirectThreadRepositoryApproveParticipantRequestResponseUsersItem]
     }
     
-    @scala.inline
-    implicit class DirectThreadRepositoryApproveParticipantRequestResponseUsersItemMutableBuilder[Self <: DirectThreadRepositoryApproveParticipantRequestResponseUsersItem] (val x: Self) extends AnyVal {
+    extension [Self <: DirectThreadRepositoryApproveParticipantRequestResponseUsersItem](x: Self) {
       
-      @scala.inline
-      def setFriendship_status(value: DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+      inline def setFriendship_status(value: DirectThreadRepositoryApproveParticipantRequestResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_directapp_installed(value: Boolean): Self = StObject.set(x, "is_directapp_installed", value.asInstanceOf[js.Any])
+      inline def setIs_directapp_installed(value: Boolean): Self = StObject.set(x, "is_directapp_installed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_using_unified_inbox_for_direct(value: Boolean): Self = StObject.set(x, "is_using_unified_inbox_for_direct", value.asInstanceOf[js.Any])
+      inline def setIs_using_unified_inbox_for_direct(value: Boolean): Self = StObject.set(x, "is_using_unified_inbox_for_direct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

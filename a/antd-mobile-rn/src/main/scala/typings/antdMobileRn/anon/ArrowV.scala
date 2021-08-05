@@ -42,8 +42,7 @@ trait ArrowV extends StObject {
 }
 object ArrowV {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Arrow: MarginLeftMarginTop,
     ArrowV: MarginLeftWidth,
     Body: BorderTopColor,
@@ -66,58 +65,40 @@ object ArrowV {
     __obj.asInstanceOf[ArrowV]
   }
   
-  @scala.inline
-  implicit class ArrowVMutableBuilder[Self <: ArrowV] (val x: Self) extends AnyVal {
+  extension [Self <: ArrowV](x: Self) {
     
-    @scala.inline
-    def setArrow(value: MarginLeftMarginTop): Self = StObject.set(x, "Arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(value: MarginLeftMarginTop): Self = StObject.set(x, "Arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowV(value: MarginLeftWidth): Self = StObject.set(x, "ArrowV", value.asInstanceOf[js.Any])
+    inline def setArrowV(value: MarginLeftWidth): Self = StObject.set(x, "ArrowV", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: BorderTopColor): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BorderTopColor): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyBottomLine(value: BorderBottomWidth): Self = StObject.set(x, "BodyBottomLine", value.asInstanceOf[js.Any])
+    inline def setBodyBottomLine(value: BorderBottomWidth): Self = StObject.set(x, "BodyBottomLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrief(value: MinHeightNumber): Self = StObject.set(x, "Brief", value.asInstanceOf[js.Any])
+    inline def setBrief(value: MinHeightNumber): Self = StObject.set(x, "Brief", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBriefText(value: FontSizePaddingTop): Self = StObject.set(x, "BriefText", value.asInstanceOf[js.Any])
+    inline def setBriefText(value: FontSizePaddingTop): Self = StObject.set(x, "BriefText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn(value: FlexFlexDirection): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: FlexFlexDirection): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: FontSizeTextAlignVertical): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: FontSizeTextAlignVertical): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtra(value: FontSizeTextAlign): Self = StObject.set(x, "Extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: FontSizeTextAlign): Self = StObject.set(x, "Extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooter(value: PaddingVertical): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: PaddingVertical): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: PaddingTop): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: PaddingTop): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: FlexGrow): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: FlexGrow): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: MinHeight): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+    inline def setLine(value: MinHeight): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleLine(value: PaddingVerticalNumber): Self = StObject.set(x, "multipleLine", value.asInstanceOf[js.Any])
+    inline def setMultipleLine(value: PaddingVerticalNumber): Self = StObject.set(x, "multipleLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleThumb(value: HeightWidth): Self = StObject.set(x, "multipleThumb", value.asInstanceOf[js.Any])
+    inline def setMultipleThumb(value: HeightWidth): Self = StObject.set(x, "multipleThumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumb(value: HeightMarginRight): Self = StObject.set(x, "Thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: HeightMarginRight): Self = StObject.set(x, "Thumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlayColor(value: BackgroundColorString): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
+    inline def setUnderlayColor(value: BackgroundColorString): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
   }
 }

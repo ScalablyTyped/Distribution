@@ -30,8 +30,7 @@ trait SecurityPrivilegeMetadata extends StObject {
 }
 object SecurityPrivilegeMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CanBeBasic: Boolean,
     CanBeDeep: Boolean,
     CanBeEntityReference: Boolean,
@@ -46,34 +45,24 @@ object SecurityPrivilegeMetadata {
     __obj.asInstanceOf[SecurityPrivilegeMetadata]
   }
   
-  @scala.inline
-  implicit class SecurityPrivilegeMetadataMutableBuilder[Self <: SecurityPrivilegeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityPrivilegeMetadata](x: Self) {
     
-    @scala.inline
-    def setCanBeBasic(value: Boolean): Self = StObject.set(x, "CanBeBasic", value.asInstanceOf[js.Any])
+    inline def setCanBeBasic(value: Boolean): Self = StObject.set(x, "CanBeBasic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeDeep(value: Boolean): Self = StObject.set(x, "CanBeDeep", value.asInstanceOf[js.Any])
+    inline def setCanBeDeep(value: Boolean): Self = StObject.set(x, "CanBeDeep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeEntityReference(value: Boolean): Self = StObject.set(x, "CanBeEntityReference", value.asInstanceOf[js.Any])
+    inline def setCanBeEntityReference(value: Boolean): Self = StObject.set(x, "CanBeEntityReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeGlobal(value: Boolean): Self = StObject.set(x, "CanBeGlobal", value.asInstanceOf[js.Any])
+    inline def setCanBeGlobal(value: Boolean): Self = StObject.set(x, "CanBeGlobal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeLocal(value: Boolean): Self = StObject.set(x, "CanBeLocal", value.asInstanceOf[js.Any])
+    inline def setCanBeLocal(value: Boolean): Self = StObject.set(x, "CanBeLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanBeParentEntityReference(value: Boolean): Self = StObject.set(x, "CanBeParentEntityReference", value.asInstanceOf[js.Any])
+    inline def setCanBeParentEntityReference(value: Boolean): Self = StObject.set(x, "CanBeParentEntityReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegeId(value: String): Self = StObject.set(x, "PrivilegeId", value.asInstanceOf[js.Any])
+    inline def setPrivilegeId(value: String): Self = StObject.set(x, "PrivilegeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegeType(value: PrivilegeType): Self = StObject.set(x, "PrivilegeType", value.asInstanceOf[js.Any])
+    inline def setPrivilegeType(value: PrivilegeType): Self = StObject.set(x, "PrivilegeType", value.asInstanceOf[js.Any])
   }
 }

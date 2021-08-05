@@ -31,8 +31,7 @@ trait ExecInspectInfo extends StObject {
 }
 object ExecInspectInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CanRemove: Boolean,
     ContainerID: String,
     DetachKeys: String,
@@ -48,43 +47,30 @@ object ExecInspectInfo {
     __obj.asInstanceOf[ExecInspectInfo]
   }
   
-  @scala.inline
-  implicit class ExecInspectInfoMutableBuilder[Self <: ExecInspectInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExecInspectInfo](x: Self) {
     
-    @scala.inline
-    def setCanRemove(value: Boolean): Self = StObject.set(x, "CanRemove", value.asInstanceOf[js.Any])
+    inline def setCanRemove(value: Boolean): Self = StObject.set(x, "CanRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerID(value: String): Self = StObject.set(x, "ContainerID", value.asInstanceOf[js.Any])
+    inline def setContainerID(value: String): Self = StObject.set(x, "ContainerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachKeys(value: String): Self = StObject.set(x, "DetachKeys", value.asInstanceOf[js.Any])
+    inline def setDetachKeys(value: String): Self = StObject.set(x, "DetachKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "ExitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "ExitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCodeNull: Self = StObject.set(x, "ExitCode", null)
+    inline def setExitCodeNull: Self = StObject.set(x, "ExitCode", null)
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenStderr(value: Boolean): Self = StObject.set(x, "OpenStderr", value.asInstanceOf[js.Any])
+    inline def setOpenStderr(value: Boolean): Self = StObject.set(x, "OpenStderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenStdin(value: Boolean): Self = StObject.set(x, "OpenStdin", value.asInstanceOf[js.Any])
+    inline def setOpenStdin(value: Boolean): Self = StObject.set(x, "OpenStdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenStdout(value: Boolean): Self = StObject.set(x, "OpenStdout", value.asInstanceOf[js.Any])
+    inline def setOpenStdout(value: Boolean): Self = StObject.set(x, "OpenStdout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessConfig(value: Arguments): Self = StObject.set(x, "ProcessConfig", value.asInstanceOf[js.Any])
+    inline def setProcessConfig(value: Arguments): Self = StObject.set(x, "ProcessConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunning(value: Boolean): Self = StObject.set(x, "Running", value.asInstanceOf[js.Any])
+    inline def setRunning(value: Boolean): Self = StObject.set(x, "Running", value.asInstanceOf[js.Any])
   }
 }

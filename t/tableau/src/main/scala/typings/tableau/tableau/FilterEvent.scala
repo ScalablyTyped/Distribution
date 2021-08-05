@@ -19,8 +19,7 @@ trait FilterEvent
 }
 object FilterEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEventName: () => TableauEventName,
     getFieldName: () => String,
     getFilterAsync: () => js.Promise[ConcreteFilter],
@@ -31,16 +30,12 @@ object FilterEvent {
     __obj.asInstanceOf[FilterEvent]
   }
   
-  @scala.inline
-  implicit class FilterEventMutableBuilder[Self <: FilterEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FilterEvent](x: Self) {
     
-    @scala.inline
-    def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
+    inline def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFilterAsync(value: () => js.Promise[ConcreteFilter]): Self = StObject.set(x, "getFilterAsync", js.Any.fromFunction0(value))
+    inline def setGetFilterAsync(value: () => js.Promise[ConcreteFilter]): Self = StObject.set(x, "getFilterAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorksheet(value: () => Worksheet): Self = StObject.set(x, "getWorksheet", js.Any.fromFunction0(value))
+    inline def setGetWorksheet(value: () => Worksheet): Self = StObject.set(x, "getWorksheet", js.Any.fromFunction0(value))
   }
 }

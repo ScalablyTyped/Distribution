@@ -110,40 +110,40 @@ object postgresPostgresQueryRunnerMod {
       disableEscape: Unit,
       skipSchema: Boolean
     ): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(table: Table, columnOrName: String, currentSchema: String, disableEscape: `true`): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(table: Table, columnOrName: String, currentSchema: String, disableEscape: `true`): String = js.native
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(
       table: Table,
       columnOrName: String,
       currentSchema: String,
       disableEscape: `true`,
       skipSchema: Boolean
     ): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(table: Table, columnOrName: String, currentSchema: Unit, disableEscape: `true`): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(table: Table, columnOrName: String, currentSchema: Unit, disableEscape: `true`): String = js.native
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(
       table: Table,
       columnOrName: String,
       currentSchema: Unit,
       disableEscape: `true`,
       skipSchema: Boolean
     ): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(table: Table, columnOrName: TableColumn, currentSchema: String, disableEscape: `true`): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(table: Table, columnOrName: TableColumn, currentSchema: String, disableEscape: `true`): String = js.native
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(
       table: Table,
       columnOrName: TableColumn,
       currentSchema: String,
       disableEscape: `true`,
       skipSchema: Boolean
     ): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(table: Table, columnOrName: TableColumn, currentSchema: Unit, disableEscape: `true`): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(table: Table, columnOrName: TableColumn, currentSchema: Unit, disableEscape: `true`): String = js.native
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(
       table: Table,
       columnOrName: TableColumn,
       currentSchema: Unit,
@@ -365,7 +365,7 @@ object postgresPostgresQueryRunnerMod {
     /**
       * Promise used to obtain a database connection for a first time.
       */
-    var databaseConnectionPromise: js.Promise[js.Any] = js.native
+    /* protected */ var databaseConnectionPromise: js.Promise[js.Any] = js.native
     
     /* protected */ def deleteViewDefinitionSql(viewOrPath: String): js.Promise[Query] = js.native
     /**
@@ -714,7 +714,7 @@ object postgresPostgresQueryRunnerMod {
     /**
       * Special callback provided by a driver used to release a created connection.
       */
-    var releaseCallback: js.Function = js.native
+    /* protected */ var releaseCallback: js.Function = js.native
     
     def renameColumn(tableOrName: String, oldTableColumnOrName: String, newTableColumnOrName: String): js.Promise[Unit] = js.native
     def renameColumn(tableOrName: String, oldTableColumnOrName: String, newTableColumnOrName: TableColumn): js.Promise[Unit] = js.native

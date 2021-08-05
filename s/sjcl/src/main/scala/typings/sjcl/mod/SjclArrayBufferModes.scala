@@ -10,16 +10,13 @@ trait SjclArrayBufferModes extends StObject {
 }
 object SjclArrayBufferModes {
   
-  @scala.inline
-  def apply(ccm: SjclArrayBufferCCMMode): SjclArrayBufferModes = {
+  inline def apply(ccm: SjclArrayBufferCCMMode): SjclArrayBufferModes = {
     val __obj = js.Dynamic.literal(ccm = ccm.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclArrayBufferModes]
   }
   
-  @scala.inline
-  implicit class SjclArrayBufferModesMutableBuilder[Self <: SjclArrayBufferModes] (val x: Self) extends AnyVal {
+  extension [Self <: SjclArrayBufferModes](x: Self) {
     
-    @scala.inline
-    def setCcm(value: SjclArrayBufferCCMMode): Self = StObject.set(x, "ccm", value.asInstanceOf[js.Any])
+    inline def setCcm(value: SjclArrayBufferCCMMode): Self = StObject.set(x, "ccm", value.asInstanceOf[js.Any])
   }
 }

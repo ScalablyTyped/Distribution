@@ -67,7 +67,7 @@ class LanguageServiceShimHostAdapter protected ()
   /* CompleteClass */
   override def resolveRelativePath(path: String, directory: String): String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var shimHost: js.Any = js.native
   
   /* CompleteClass */

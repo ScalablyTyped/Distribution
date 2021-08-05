@@ -14,17 +14,14 @@ trait JSXClosingElement
 }
 object JSXClosingElement {
   
-  @scala.inline
-  def apply(name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName): JSXClosingElement = {
+  inline def apply(name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName): JSXClosingElement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXClosingElement")
     __obj.asInstanceOf[JSXClosingElement]
   }
   
-  @scala.inline
-  implicit class JSXClosingElementMutableBuilder[Self <: JSXClosingElement] (val x: Self) extends AnyVal {
+  extension [Self <: JSXClosingElement](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXClosingElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXClosingElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

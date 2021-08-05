@@ -33,43 +33,31 @@ trait NetworkPolicySpec extends StObject {
 }
 object NetworkPolicySpec {
   
-  @scala.inline
-  def apply(podSelector: Input[LabelSelector]): NetworkPolicySpec = {
+  inline def apply(podSelector: Input[LabelSelector]): NetworkPolicySpec = {
     val __obj = js.Dynamic.literal(podSelector = podSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkPolicySpec]
   }
   
-  @scala.inline
-  implicit class NetworkPolicySpecMutableBuilder[Self <: NetworkPolicySpec] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPolicySpec](x: Self) {
     
-    @scala.inline
-    def setEgress(value: Input[js.Array[Input[NetworkPolicyEgressRule]]]): Self = StObject.set(x, "egress", value.asInstanceOf[js.Any])
+    inline def setEgress(value: Input[js.Array[Input[NetworkPolicyEgressRule]]]): Self = StObject.set(x, "egress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEgressUndefined: Self = StObject.set(x, "egress", js.undefined)
+    inline def setEgressUndefined: Self = StObject.set(x, "egress", js.undefined)
     
-    @scala.inline
-    def setEgressVarargs(value: Input[NetworkPolicyEgressRule]*): Self = StObject.set(x, "egress", js.Array(value :_*))
+    inline def setEgressVarargs(value: Input[NetworkPolicyEgressRule]*): Self = StObject.set(x, "egress", js.Array(value :_*))
     
-    @scala.inline
-    def setIngress(value: Input[js.Array[Input[NetworkPolicyIngressRule]]]): Self = StObject.set(x, "ingress", value.asInstanceOf[js.Any])
+    inline def setIngress(value: Input[js.Array[Input[NetworkPolicyIngressRule]]]): Self = StObject.set(x, "ingress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressUndefined: Self = StObject.set(x, "ingress", js.undefined)
+    inline def setIngressUndefined: Self = StObject.set(x, "ingress", js.undefined)
     
-    @scala.inline
-    def setIngressVarargs(value: Input[NetworkPolicyIngressRule]*): Self = StObject.set(x, "ingress", js.Array(value :_*))
+    inline def setIngressVarargs(value: Input[NetworkPolicyIngressRule]*): Self = StObject.set(x, "ingress", js.Array(value :_*))
     
-    @scala.inline
-    def setPodSelector(value: Input[LabelSelector]): Self = StObject.set(x, "podSelector", value.asInstanceOf[js.Any])
+    inline def setPodSelector(value: Input[LabelSelector]): Self = StObject.set(x, "podSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "policyTypes", value.asInstanceOf[js.Any])
+    inline def setPolicyTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "policyTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypesUndefined: Self = StObject.set(x, "policyTypes", js.undefined)
+    inline def setPolicyTypesUndefined: Self = StObject.set(x, "policyTypes", js.undefined)
     
-    @scala.inline
-    def setPolicyTypesVarargs(value: Input[String]*): Self = StObject.set(x, "policyTypes", js.Array(value :_*))
+    inline def setPolicyTypesVarargs(value: Input[String]*): Self = StObject.set(x, "policyTypes", js.Array(value :_*))
   }
 }

@@ -24,9 +24,7 @@ object mod {
     def this(manager: DragDropManager) = this()
   }
   
-  @scala.inline
-  def clearInstance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInstance")().asInstanceOf[Unit]
+  inline def clearInstance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInstance")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getInstance(): js.UndefOr[ITestBackend] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.UndefOr[ITestBackend]]
+  inline def getInstance(): js.UndefOr[ITestBackend] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.UndefOr[ITestBackend]]
 }

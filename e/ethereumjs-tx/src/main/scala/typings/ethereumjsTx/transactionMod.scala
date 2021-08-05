@@ -63,19 +63,19 @@ object transactionMod {
   @js.native
   trait Transaction extends StObject {
     
-    var _common: js.Any = js.native
+    /* private */ var _common: js.Any = js.native
     
-    var _from: js.UndefOr[Buffer] = js.native
+    /* protected */ var _from: js.UndefOr[Buffer] = js.native
     
-    var _implementsEIP155: js.Any = js.native
+    /* private */ var _implementsEIP155: js.Any = js.native
     
-    var _isSigned: js.Any = js.native
+    /* private */ var _isSigned: js.Any = js.native
     
-    var _overrideVSetterWithValidation: js.Any = js.native
+    /* private */ var _overrideVSetterWithValidation: js.Any = js.native
     
-    var _senderPubKey: js.Any = js.native
+    /* private */ var _senderPubKey: js.Any = js.native
     
-    var _validateV: js.Any = js.native
+    /* private */ var _validateV: js.Any = js.native
     
     var data: Buffer = js.native
     

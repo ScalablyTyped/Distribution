@@ -24,8 +24,7 @@ trait DrawPage
      with XFormsSupplier
 object DrawPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderBottom: Double,
     BorderLeft: Double,
     BorderRight: Double,

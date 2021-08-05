@@ -18,25 +18,19 @@ trait RemoveFlowSourceResponse extends StObject {
 }
 object RemoveFlowSourceResponse {
   
-  @scala.inline
-  def apply(): RemoveFlowSourceResponse = {
+  inline def apply(): RemoveFlowSourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveFlowSourceResponse]
   }
   
-  @scala.inline
-  implicit class RemoveFlowSourceResponseMutableBuilder[Self <: RemoveFlowSourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveFlowSourceResponse](x: Self) {
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
   }
 }

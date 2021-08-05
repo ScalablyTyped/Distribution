@@ -38,49 +38,35 @@ trait WorkGroupConfigurationUpdates extends StObject {
 }
 object WorkGroupConfigurationUpdates {
   
-  @scala.inline
-  def apply(): WorkGroupConfigurationUpdates = {
+  inline def apply(): WorkGroupConfigurationUpdates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkGroupConfigurationUpdates]
   }
   
-  @scala.inline
-  implicit class WorkGroupConfigurationUpdatesMutableBuilder[Self <: WorkGroupConfigurationUpdates] (val x: Self) extends AnyVal {
+  extension [Self <: WorkGroupConfigurationUpdates](x: Self) {
     
-    @scala.inline
-    def setBytesScannedCutoffPerQuery(value: BytesScannedCutoffValue): Self = StObject.set(x, "BytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
+    inline def setBytesScannedCutoffPerQuery(value: BytesScannedCutoffValue): Self = StObject.set(x, "BytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesScannedCutoffPerQueryUndefined: Self = StObject.set(x, "BytesScannedCutoffPerQuery", js.undefined)
+    inline def setBytesScannedCutoffPerQueryUndefined: Self = StObject.set(x, "BytesScannedCutoffPerQuery", js.undefined)
     
-    @scala.inline
-    def setEnforceWorkGroupConfiguration(value: BoxedBoolean): Self = StObject.set(x, "EnforceWorkGroupConfiguration", value.asInstanceOf[js.Any])
+    inline def setEnforceWorkGroupConfiguration(value: BoxedBoolean): Self = StObject.set(x, "EnforceWorkGroupConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceWorkGroupConfigurationUndefined: Self = StObject.set(x, "EnforceWorkGroupConfiguration", js.undefined)
+    inline def setEnforceWorkGroupConfigurationUndefined: Self = StObject.set(x, "EnforceWorkGroupConfiguration", js.undefined)
     
-    @scala.inline
-    def setPublishCloudWatchMetricsEnabled(value: BoxedBoolean): Self = StObject.set(x, "PublishCloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
+    inline def setPublishCloudWatchMetricsEnabled(value: BoxedBoolean): Self = StObject.set(x, "PublishCloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishCloudWatchMetricsEnabledUndefined: Self = StObject.set(x, "PublishCloudWatchMetricsEnabled", js.undefined)
+    inline def setPublishCloudWatchMetricsEnabledUndefined: Self = StObject.set(x, "PublishCloudWatchMetricsEnabled", js.undefined)
     
-    @scala.inline
-    def setRemoveBytesScannedCutoffPerQuery(value: BoxedBoolean): Self = StObject.set(x, "RemoveBytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
+    inline def setRemoveBytesScannedCutoffPerQuery(value: BoxedBoolean): Self = StObject.set(x, "RemoveBytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveBytesScannedCutoffPerQueryUndefined: Self = StObject.set(x, "RemoveBytesScannedCutoffPerQuery", js.undefined)
+    inline def setRemoveBytesScannedCutoffPerQueryUndefined: Self = StObject.set(x, "RemoveBytesScannedCutoffPerQuery", js.undefined)
     
-    @scala.inline
-    def setRequesterPaysEnabled(value: BoxedBoolean): Self = StObject.set(x, "RequesterPaysEnabled", value.asInstanceOf[js.Any])
+    inline def setRequesterPaysEnabled(value: BoxedBoolean): Self = StObject.set(x, "RequesterPaysEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterPaysEnabledUndefined: Self = StObject.set(x, "RequesterPaysEnabled", js.undefined)
+    inline def setRequesterPaysEnabledUndefined: Self = StObject.set(x, "RequesterPaysEnabled", js.undefined)
     
-    @scala.inline
-    def setResultConfigurationUpdates(value: ResultConfigurationUpdates): Self = StObject.set(x, "ResultConfigurationUpdates", value.asInstanceOf[js.Any])
+    inline def setResultConfigurationUpdates(value: ResultConfigurationUpdates): Self = StObject.set(x, "ResultConfigurationUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultConfigurationUpdatesUndefined: Self = StObject.set(x, "ResultConfigurationUpdates", js.undefined)
+    inline def setResultConfigurationUpdatesUndefined: Self = StObject.set(x, "ResultConfigurationUpdates", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait PickImplreturnScroll extends StObject {
 }
 object PickImplreturnScroll {
   
-  @scala.inline
-  def apply(returnScroll: Boolean): PickImplreturnScroll = {
+  inline def apply(returnScroll: Boolean): PickImplreturnScroll = {
     val __obj = js.Dynamic.literal(returnScroll = returnScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplreturnScroll]
   }
   
-  @scala.inline
-  implicit class PickImplreturnScrollMutableBuilder[Self <: PickImplreturnScroll] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplreturnScroll](x: Self) {
     
-    @scala.inline
-    def setReturnScroll(value: Boolean): Self = StObject.set(x, "returnScroll", value.asInstanceOf[js.Any])
+    inline def setReturnScroll(value: Boolean): Self = StObject.set(x, "returnScroll", value.asInstanceOf[js.Any])
   }
 }

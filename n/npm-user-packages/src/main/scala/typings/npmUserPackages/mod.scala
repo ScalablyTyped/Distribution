@@ -13,8 +13,7 @@ object mod {
     * Get packages by a npm user.
     * @param username User to fetch packages from.
     */
-  @scala.inline
-  def apply(username: String): js.Promise[js.Array[PackageData]] = ^.asInstanceOf[js.Dynamic].apply(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PackageData]]]
+  inline def apply(username: String): js.Promise[js.Array[PackageData]] = ^.asInstanceOf[js.Dynamic].apply(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PackageData]]]
   
   @JSImport("npm-user-packages", JSImport.Namespace)
   @js.native
@@ -44,8 +43,7 @@ object mod {
   }
   object PackageData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: Email,
       date: String,
       description: String,
@@ -61,44 +59,31 @@ object mod {
       __obj.asInstanceOf[PackageData]
     }
     
-    @scala.inline
-    implicit class PackageDataMutableBuilder[Self <: PackageData] (val x: Self) extends AnyVal {
+    extension [Self <: PackageData](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: Email): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: Email): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+      inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
       
-      @scala.inline
-      def setLinks(value: Bugs): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: Bugs): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintainers(value: js.Array[Username]): Self = StObject.set(x, "maintainers", value.asInstanceOf[js.Any])
+      inline def setMaintainers(value: js.Array[Username]): Self = StObject.set(x, "maintainers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintainersVarargs(value: Username*): Self = StObject.set(x, "maintainers", js.Array(value :_*))
+      inline def setMaintainersVarargs(value: Username*): Self = StObject.set(x, "maintainers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublisher(value: Username): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+      inline def setPublisher(value: Username): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

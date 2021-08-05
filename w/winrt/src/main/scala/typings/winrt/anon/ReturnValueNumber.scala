@@ -13,22 +13,17 @@ trait ReturnValueNumber extends StObject {
 }
 object ReturnValueNumber {
   
-  @scala.inline
-  def apply(items: js.Array[ResourceQualifier], returnValue: Double): ReturnValueNumber = {
+  inline def apply(items: js.Array[ResourceQualifier], returnValue: Double): ReturnValueNumber = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnValueNumber]
   }
   
-  @scala.inline
-  implicit class ReturnValueNumberMutableBuilder[Self <: ReturnValueNumber] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnValueNumber](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ResourceQualifier]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ResourceQualifier]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ResourceQualifier*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ResourceQualifier*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

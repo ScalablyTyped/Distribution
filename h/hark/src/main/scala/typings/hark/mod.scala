@@ -15,18 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(stream: HTMLAudioElement): Harker = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Harker]
-  @scala.inline
-  def apply(stream: HTMLAudioElement, option: Option): Harker = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Harker]
-  @scala.inline
-  def apply(stream: HTMLVideoElement): Harker = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Harker]
-  @scala.inline
-  def apply(stream: HTMLVideoElement, option: Option): Harker = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Harker]
-  @scala.inline
-  def apply(stream: MediaStream): Harker = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Harker]
-  @scala.inline
-  def apply(stream: MediaStream, option: Option): Harker = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Harker]
+  inline def apply(stream: HTMLAudioElement): Harker = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Harker]
+  inline def apply(stream: HTMLAudioElement, option: Option): Harker = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Harker]
+  inline def apply(stream: HTMLVideoElement): Harker = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Harker]
+  inline def apply(stream: HTMLVideoElement, option: Option): Harker = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Harker]
+  inline def apply(stream: MediaStream): Harker = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[Harker]
+  inline def apply(stream: MediaStream, option: Option): Harker = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Harker]
   
   @JSImport("hark", JSImport.Namespace)
   @js.native
@@ -80,50 +74,36 @@ object mod {
   }
   object Option {
     
-    @scala.inline
-    def apply(): Option = {
+    inline def apply(): Option = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setAudioContext(value: AudioContext): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
+      inline def setAudioContext(value: AudioContext): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioContextUndefined: Self = StObject.set(x, "audioContext", js.undefined)
+      inline def setAudioContextUndefined: Self = StObject.set(x, "audioContext", js.undefined)
       
-      @scala.inline
-      def setHistory(value: Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+      inline def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+      inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
       
-      @scala.inline
-      def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
+      inline def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
+      inline def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

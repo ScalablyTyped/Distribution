@@ -14,25 +14,19 @@ trait TableBorderCell extends StObject {
 }
 object TableBorderCell {
   
-  @scala.inline
-  def apply(): TableBorderCell = {
+  inline def apply(): TableBorderCell = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableBorderCell]
   }
   
-  @scala.inline
-  implicit class TableBorderCellMutableBuilder[Self <: TableBorderCell] (val x: Self) extends AnyVal {
+  extension [Self <: TableBorderCell](x: Self) {
     
-    @scala.inline
-    def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setTableBorderProperties(value: TableBorderProperties): Self = StObject.set(x, "tableBorderProperties", value.asInstanceOf[js.Any])
+    inline def setTableBorderProperties(value: TableBorderProperties): Self = StObject.set(x, "tableBorderProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableBorderPropertiesUndefined: Self = StObject.set(x, "tableBorderProperties", js.undefined)
+    inline def setTableBorderPropertiesUndefined: Self = StObject.set(x, "tableBorderProperties", js.undefined)
   }
 }

@@ -69,8 +69,7 @@ trait KnockoutBindingHandlers
 }
 object KnockoutBindingHandlers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attr: KnockoutBindingHandler,
     checked: KnockoutBindingHandler,
     click: KnockoutBindingHandler,
@@ -104,85 +103,58 @@ object KnockoutBindingHandlers {
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
   
-  @scala.inline
-  implicit class KnockoutBindingHandlersMutableBuilder[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutBindingHandlers](x: Self) {
     
-    @scala.inline
-    def setAttr(value: KnockoutBindingHandler): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: KnockoutBindingHandler): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecked(value: KnockoutBindingHandler): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: KnockoutBindingHandler): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick(value: KnockoutBindingHandler): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: KnockoutBindingHandler): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponent(value: KnockoutBindingHandler): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: KnockoutBindingHandler): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCss(value: KnockoutBindingHandler): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: KnockoutBindingHandler): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable(value: KnockoutBindingHandler): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: KnockoutBindingHandler): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnable(value: KnockoutBindingHandler): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: KnockoutBindingHandler): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: KnockoutBindingHandler): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: KnockoutBindingHandler): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeach(value: KnockoutBindingHandler): Self = StObject.set(x, "foreach", value.asInstanceOf[js.Any])
+    inline def setForeach(value: KnockoutBindingHandler): Self = StObject.set(x, "foreach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeachInit(value: KnockoutBindingHandler): Self = StObject.set(x, "foreachInit", value.asInstanceOf[js.Any])
+    inline def setForeachInit(value: KnockoutBindingHandler): Self = StObject.set(x, "foreachInit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasfocus(value: KnockoutBindingHandler): Self = StObject.set(x, "hasfocus", value.asInstanceOf[js.Any])
+    inline def setHasfocus(value: KnockoutBindingHandler): Self = StObject.set(x, "hasfocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: KnockoutBindingHandler): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: KnockoutBindingHandler): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIf(value: KnockoutBindingHandler): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
+    inline def setIf(value: KnockoutBindingHandler): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfnot(value: KnockoutBindingHandler): Self = StObject.set(x, "ifnot", value.asInstanceOf[js.Any])
+    inline def setIfnot(value: KnockoutBindingHandler): Self = StObject.set(x, "ifnot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: KnockoutBindingHandler): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: KnockoutBindingHandler): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: KnockoutBindingHandler): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: KnockoutBindingHandler): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedOptions(value: KnockoutBindingHandler): Self = StObject.set(x, "selectedOptions", value.asInstanceOf[js.Any])
+    inline def setSelectedOptions(value: KnockoutBindingHandler): Self = StObject.set(x, "selectedOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: KnockoutBindingHandler): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: KnockoutBindingHandler): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: KnockoutBindingHandler): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+    inline def setSubmit(value: KnockoutBindingHandler): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: KnockoutBindingHandler): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: KnockoutBindingHandler): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: KnockoutBindingHandler): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: KnockoutBindingHandler): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextInput(value: KnockoutBindingHandler): Self = StObject.set(x, "textInput", value.asInstanceOf[js.Any])
+    inline def setTextInput(value: KnockoutBindingHandler): Self = StObject.set(x, "textInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueName(value: KnockoutBindingHandler): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: KnockoutBindingHandler): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: KnockoutBindingHandler): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: KnockoutBindingHandler): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: KnockoutBindingHandler): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: KnockoutBindingHandler): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWith(value: KnockoutBindingHandler): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
+    inline def setWith(value: KnockoutBindingHandler): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
   }
 }

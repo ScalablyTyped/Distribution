@@ -13,19 +13,15 @@ trait GetSipMediaApplicationLoggingConfigurationResponse extends StObject {
 }
 object GetSipMediaApplicationLoggingConfigurationResponse {
   
-  @scala.inline
-  def apply(): GetSipMediaApplicationLoggingConfigurationResponse = {
+  inline def apply(): GetSipMediaApplicationLoggingConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSipMediaApplicationLoggingConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class GetSipMediaApplicationLoggingConfigurationResponseMutableBuilder[Self <: GetSipMediaApplicationLoggingConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSipMediaApplicationLoggingConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setSipMediaApplicationLoggingConfiguration(value: SipMediaApplicationLoggingConfiguration): Self = StObject.set(x, "SipMediaApplicationLoggingConfiguration", value.asInstanceOf[js.Any])
+    inline def setSipMediaApplicationLoggingConfiguration(value: SipMediaApplicationLoggingConfiguration): Self = StObject.set(x, "SipMediaApplicationLoggingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSipMediaApplicationLoggingConfigurationUndefined: Self = StObject.set(x, "SipMediaApplicationLoggingConfiguration", js.undefined)
+    inline def setSipMediaApplicationLoggingConfigurationUndefined: Self = StObject.set(x, "SipMediaApplicationLoggingConfiguration", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ object mod extends Shortcut {
        with ThisType[Instance[Data & Methods & (Record[Props, js.Any])]]
   object ComponentOptions {
     
-    @scala.inline
-    def apply[Props /* <: String */, Data, Methods](): ComponentOptions[Props, Data, Methods] = {
+    inline def apply[Props /* <: String */, Data, Methods](): ComponentOptions[Props, Data, Methods] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptions[Props, Data, Methods]]
     }
@@ -62,71 +61,50 @@ object mod extends Shortcut {
   }
   object ComponentOptionsProperties {
     
-    @scala.inline
-    def apply[Props /* <: String */, Data, Methods](): ComponentOptionsProperties[Props, Data, Methods] = {
+    inline def apply[Props /* <: String */, Data, Methods](): ComponentOptionsProperties[Props, Data, Methods] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptionsProperties[Props, Data, Methods]]
     }
     
-    @scala.inline
-    implicit class ComponentOptionsPropertiesMutableBuilder[Self <: ComponentOptionsProperties[?, ?, ?], Props /* <: String */, Data, Methods] (val x: Self & (ComponentOptionsProperties[Props, Data, Methods])) extends AnyVal {
+    extension [Self <: ComponentOptionsProperties[?, ?, ?], Props /* <: String */, Data, Methods](x: Self & (ComponentOptionsProperties[Props, Data, Methods])) {
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setEl(value: String | HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: String | HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+      inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
       
-      @scala.inline
-      def setFunctional(value: `true`): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
+      inline def setFunctional(value: `true`): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionalUndefined: Self = StObject.set(x, "functional", js.undefined)
+      inline def setFunctionalUndefined: Self = StObject.set(x, "functional", js.undefined)
       
-      @scala.inline
-      def setHooks(value: LifecycleHooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      inline def setHooks(value: LifecycleHooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+      inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
       
-      @scala.inline
-      def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProps(value: js.Array[Props]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Array[Props]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setPropsVarargs(value: Props*): Self = StObject.set(x, "props", js.Array(value :_*))
+      inline def setPropsVarargs(value: Props*): Self = StObject.set(x, "props", js.Array(value :_*))
       
-      @scala.inline
-      def setRender(value: (/* h */ CreateElement, /* ctx */ js.Any) => VDomElement): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* h */ CreateElement, /* ctx */ js.Any) => VDomElement): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -136,8 +114,7 @@ object mod extends Shortcut {
        with ThisType[Instance[Data & Methods & (Record[Props, js.Any])]]
   object ConstructorOptions {
     
-    @scala.inline
-    def apply[Props /* <: String */, Data, Methods](): ConstructorOptions[Props, Data, Methods] = {
+    inline def apply[Props /* <: String */, Data, Methods](): ConstructorOptions[Props, Data, Methods] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions[Props, Data, Methods]]
     }
@@ -219,38 +196,28 @@ object mod extends Shortcut {
   }
   object LifecycleHooks {
     
-    @scala.inline
-    def apply(): LifecycleHooks = {
+    inline def apply(): LifecycleHooks = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LifecycleHooks]
     }
     
-    @scala.inline
-    implicit class LifecycleHooksMutableBuilder[Self <: LifecycleHooks] (val x: Self) extends AnyVal {
+    extension [Self <: LifecycleHooks](x: Self) {
       
-      @scala.inline
-      def setDestroyed(value: () => Unit): Self = StObject.set(x, "destroyed", js.Any.fromFunction0(value))
+      inline def setDestroyed(value: () => Unit): Self = StObject.set(x, "destroyed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyedUndefined: Self = StObject.set(x, "destroyed", js.undefined)
+      inline def setDestroyedUndefined: Self = StObject.set(x, "destroyed", js.undefined)
       
-      @scala.inline
-      def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setMounted(value: () => Unit): Self = StObject.set(x, "mounted", js.Any.fromFunction0(value))
+      inline def setMounted(value: () => Unit): Self = StObject.set(x, "mounted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMountedUndefined: Self = StObject.set(x, "mounted", js.undefined)
+      inline def setMountedUndefined: Self = StObject.set(x, "mounted", js.undefined)
       
-      @scala.inline
-      def setUpdated(value: () => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction0(value))
+      inline def setUpdated(value: () => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+      inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     }
   }
   
@@ -268,8 +235,7 @@ object mod extends Shortcut {
   }
   object MoonConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delimiters: js.Array[String],
       keycodes: Record[String, Double] => Unit,
       prefix: String,
@@ -280,26 +246,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MoonConfig]
     }
     
-    @scala.inline
-    implicit class MoonConfigMutableBuilder[Self <: MoonConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MoonConfig](x: Self) {
       
-      @scala.inline
-      def setDelimiters(value: js.Array[String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+      inline def setDelimiters(value: js.Array[String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimitersVarargs(value: String*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: String*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
       
-      @scala.inline
-      def setKeycodes(value: Record[String, Double] => Unit): Self = StObject.set(x, "keycodes", js.Any.fromFunction1(value))
+      inline def setKeycodes(value: Record[String, Double] => Unit): Self = StObject.set(x, "keycodes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -344,8 +303,7 @@ object mod extends Shortcut {
   }
   object VDomElement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: js.Array[VDomElement],
       meta: js.Object,
       props: Record[String, js.Any],
@@ -358,26 +316,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VDomElement]
     }
     
-    @scala.inline
-    implicit class VDomElementMutableBuilder[Self <: VDomElement] (val x: Self) extends AnyVal {
+    extension [Self <: VDomElement](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[VDomElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[VDomElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: VDomElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: VDomElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
   

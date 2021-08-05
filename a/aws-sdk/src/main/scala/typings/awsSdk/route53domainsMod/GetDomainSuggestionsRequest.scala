@@ -23,22 +23,17 @@ trait GetDomainSuggestionsRequest extends StObject {
 }
 object GetDomainSuggestionsRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, OnlyAvailable: Boolean, SuggestionCount: Integer): GetDomainSuggestionsRequest = {
+  inline def apply(DomainName: DomainName, OnlyAvailable: Boolean, SuggestionCount: Integer): GetDomainSuggestionsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], OnlyAvailable = OnlyAvailable.asInstanceOf[js.Any], SuggestionCount = SuggestionCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainSuggestionsRequest]
   }
   
-  @scala.inline
-  implicit class GetDomainSuggestionsRequestMutableBuilder[Self <: GetDomainSuggestionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainSuggestionsRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyAvailable(value: Boolean): Self = StObject.set(x, "OnlyAvailable", value.asInstanceOf[js.Any])
+    inline def setOnlyAvailable(value: Boolean): Self = StObject.set(x, "OnlyAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionCount(value: Integer): Self = StObject.set(x, "SuggestionCount", value.asInstanceOf[js.Any])
+    inline def setSuggestionCount(value: Integer): Self = StObject.set(x, "SuggestionCount", value.asInstanceOf[js.Any])
   }
 }

@@ -284,8 +284,7 @@ trait XPackage
 }
 object XPackage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: String,
     DisplayName: String,
     Identifier: Optional[String],
@@ -334,112 +333,76 @@ object XPackage {
     __obj.asInstanceOf[XPackage]
   }
   
-  @scala.inline
-  implicit class XPackageMutableBuilder[Self <: XPackage] (val x: Self) extends AnyVal {
+  extension [Self <: XPackage](x: Self) {
     
-    @scala.inline
-    def setCheckDependencies(value: XCommandEnvironment => Boolean): Self = StObject.set(x, "checkDependencies", js.Any.fromFunction1(value))
+    inline def setCheckDependencies(value: XCommandEnvironment => Boolean): Self = StObject.set(x, "checkDependencies", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCheckPrerequisites(value: (XAbortChannel, XCommandEnvironment, Boolean) => Double): Self = StObject.set(x, "checkPrerequisites", js.Any.fromFunction3(value))
+    inline def setCheckPrerequisites(value: (XAbortChannel, XCommandEnvironment, Boolean) => Double): Self = StObject.set(x, "checkPrerequisites", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateAbortChannel(value: () => XAbortChannel): Self = StObject.set(x, "createAbortChannel", js.Any.fromFunction0(value))
+    inline def setCreateAbortChannel(value: () => XAbortChannel): Self = StObject.set(x, "createAbortChannel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportTo(value: (String, String, Double, XCommandEnvironment) => Unit): Self = StObject.set(x, "exportTo", js.Any.fromFunction4(value))
+    inline def setExportTo(value: (String, String, Double, XCommandEnvironment) => Unit): Self = StObject.set(x, "exportTo", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetBundle(value: (XAbortChannel, XCommandEnvironment) => SafeArray[XPackage]): Self = StObject.set(x, "getBundle", js.Any.fromFunction2(value))
+    inline def setGetBundle(value: (XAbortChannel, XCommandEnvironment) => SafeArray[XPackage]): Self = StObject.set(x, "getBundle", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
+    inline def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayName(value: () => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction0(value))
+    inline def setGetDisplayName(value: () => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIcon(value: Boolean => XGraphic): Self = StObject.set(x, "getIcon", js.Any.fromFunction1(value))
+    inline def setGetIcon(value: Boolean => XGraphic): Self = StObject.set(x, "getIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIdentifier(value: () => Optional[String]): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
+    inline def setGetIdentifier(value: () => Optional[String]): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLicenseText(value: () => String): Self = StObject.set(x, "getLicenseText", js.Any.fromFunction0(value))
+    inline def setGetLicenseText(value: () => String): Self = StObject.set(x, "getLicenseText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPackageType(value: () => XPackageTypeInfo): Self = StObject.set(x, "getPackageType", js.Any.fromFunction0(value))
+    inline def setGetPackageType(value: () => XPackageTypeInfo): Self = StObject.set(x, "getPackageType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPublisherInfo(value: () => StringPair): Self = StObject.set(x, "getPublisherInfo", js.Any.fromFunction0(value))
+    inline def setGetPublisherInfo(value: () => StringPair): Self = StObject.set(x, "getPublisherInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRegistrationDataURL(value: () => Optional[String]): Self = StObject.set(x, "getRegistrationDataURL", js.Any.fromFunction0(value))
+    inline def setGetRegistrationDataURL(value: () => Optional[String]): Self = StObject.set(x, "getRegistrationDataURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRepositoryName(value: () => String): Self = StObject.set(x, "getRepositoryName", js.Any.fromFunction0(value))
+    inline def setGetRepositoryName(value: () => String): Self = StObject.set(x, "getRepositoryName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
+    inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpdateInformationURLs(value: () => SafeArray[String]): Self = StObject.set(x, "getUpdateInformationURLs", js.Any.fromFunction0(value))
+    inline def setGetUpdateInformationURLs(value: () => SafeArray[String]): Self = StObject.set(x, "getUpdateInformationURLs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+    inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIdentifier(value: Optional[String]): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Optional[String]): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBundle(value: () => Boolean): Self = StObject.set(x, "isBundle", js.Any.fromFunction0(value))
+    inline def setIsBundle(value: () => Boolean): Self = StObject.set(x, "isBundle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRegistered(value: (XAbortChannel, XCommandEnvironment) => Optional[Ambiguous[Boolean]]): Self = StObject.set(x, "isRegistered", js.Any.fromFunction2(value))
+    inline def setIsRegistered(value: (XAbortChannel, XCommandEnvironment) => Optional[Ambiguous[Boolean]]): Self = StObject.set(x, "isRegistered", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsRemoved(value: () => Boolean): Self = StObject.set(x, "isRemoved", js.Any.fromFunction0(value))
+    inline def setIsRemoved(value: () => Boolean): Self = StObject.set(x, "isRemoved", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLicenseText(value: String): Self = StObject.set(x, "LicenseText", value.asInstanceOf[js.Any])
+    inline def setLicenseText(value: String): Self = StObject.set(x, "LicenseText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageType(value: XPackageTypeInfo): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
+    inline def setPackageType(value: XPackageTypeInfo): Self = StObject.set(x, "PackageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherInfo(value: StringPair): Self = StObject.set(x, "PublisherInfo", value.asInstanceOf[js.Any])
+    inline def setPublisherInfo(value: StringPair): Self = StObject.set(x, "PublisherInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterPackage(value: (Boolean, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "registerPackage", js.Any.fromFunction3(value))
+    inline def setRegisterPackage(value: (Boolean, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "registerPackage", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRegistrationDataURL(value: Optional[String]): Self = StObject.set(x, "RegistrationDataURL", value.asInstanceOf[js.Any])
+    inline def setRegistrationDataURL(value: Optional[String]): Self = StObject.set(x, "RegistrationDataURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: String): Self = StObject.set(x, "RepositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: String): Self = StObject.set(x, "RepositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevokePackage(value: (Boolean, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "revokePackage", js.Any.fromFunction3(value))
+    inline def setRevokePackage(value: (Boolean, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "revokePackage", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateInformationURLs(value: SafeArray[String]): Self = StObject.set(x, "UpdateInformationURLs", value.asInstanceOf[js.Any])
+    inline def setUpdateInformationURLs(value: SafeArray[String]): Self = StObject.set(x, "UpdateInformationURLs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

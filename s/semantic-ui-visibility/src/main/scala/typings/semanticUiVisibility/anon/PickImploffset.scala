@@ -11,16 +11,13 @@ trait PickImploffset extends StObject {
 }
 object PickImploffset {
   
-  @scala.inline
-  def apply(offset: Double): PickImploffset = {
+  inline def apply(offset: Double): PickImploffset = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImploffset]
   }
   
-  @scala.inline
-  implicit class PickImploffsetMutableBuilder[Self <: PickImploffset] (val x: Self) extends AnyVal {
+  extension [Self <: PickImploffset](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

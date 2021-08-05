@@ -41,44 +41,32 @@ object apiregistration {
     }
     object APIService {
       
-      @scala.inline
-      def apply(): APIService = {
+      inline def apply(): APIService = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[APIService]
       }
       
-      @scala.inline
-      implicit class APIServiceMutableBuilder[Self <: APIService] (val x: Self) extends AnyVal {
+      extension [Self <: APIService](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[apiregistrationDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[apiregistrationDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.APIService]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.APIService]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[APIServiceSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[APIServiceSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[APIServiceStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[APIServiceStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -114,39 +102,29 @@ object apiregistration {
     }
     object APIServiceCondition {
       
-      @scala.inline
-      def apply(status: Input[String], `type`: Input[String]): APIServiceCondition = {
+      inline def apply(status: Input[String], `type`: Input[String]): APIServiceCondition = {
         val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[APIServiceCondition]
       }
       
-      @scala.inline
-      implicit class APIServiceConditionMutableBuilder[Self <: APIServiceCondition] (val x: Self) extends AnyVal {
+      extension [Self <: APIServiceCondition](x: Self) {
         
-        @scala.inline
-        def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
+        inline def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
+        inline def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
         
-        @scala.inline
-        def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         
-        @scala.inline
-        def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -192,50 +170,36 @@ object apiregistration {
     }
     object APIServiceSpec {
       
-      @scala.inline
-      def apply(groupPriorityMinimum: Input[Double], versionPriority: Input[Double]): APIServiceSpec = {
+      inline def apply(groupPriorityMinimum: Input[Double], versionPriority: Input[Double]): APIServiceSpec = {
         val __obj = js.Dynamic.literal(groupPriorityMinimum = groupPriorityMinimum.asInstanceOf[js.Any], versionPriority = versionPriority.asInstanceOf[js.Any])
         __obj.asInstanceOf[APIServiceSpec]
       }
       
-      @scala.inline
-      implicit class APIServiceSpecMutableBuilder[Self <: APIServiceSpec] (val x: Self) extends AnyVal {
+      extension [Self <: APIServiceSpec](x: Self) {
         
-        @scala.inline
-        def setCaBundle(value: Input[String]): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
+        inline def setCaBundle(value: Input[String]): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaBundleUndefined: Self = StObject.set(x, "caBundle", js.undefined)
+        inline def setCaBundleUndefined: Self = StObject.set(x, "caBundle", js.undefined)
         
-        @scala.inline
-        def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupPriorityMinimum(value: Input[Double]): Self = StObject.set(x, "groupPriorityMinimum", value.asInstanceOf[js.Any])
+        inline def setGroupPriorityMinimum(value: Input[Double]): Self = StObject.set(x, "groupPriorityMinimum", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+        inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
         
-        @scala.inline
-        def setInsecureSkipTLSVerify(value: Input[Boolean]): Self = StObject.set(x, "insecureSkipTLSVerify", value.asInstanceOf[js.Any])
+        inline def setInsecureSkipTLSVerify(value: Input[Boolean]): Self = StObject.set(x, "insecureSkipTLSVerify", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsecureSkipTLSVerifyUndefined: Self = StObject.set(x, "insecureSkipTLSVerify", js.undefined)
+        inline def setInsecureSkipTLSVerifyUndefined: Self = StObject.set(x, "insecureSkipTLSVerify", js.undefined)
         
-        @scala.inline
-        def setService(value: Input[ServiceReference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+        inline def setService(value: Input[ServiceReference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+        inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
         
-        @scala.inline
-        def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionPriority(value: Input[Double]): Self = StObject.set(x, "versionPriority", value.asInstanceOf[js.Any])
+        inline def setVersionPriority(value: Input[Double]): Self = StObject.set(x, "versionPriority", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       }
     }
     
@@ -251,23 +215,18 @@ object apiregistration {
     }
     object APIServiceStatus {
       
-      @scala.inline
-      def apply(): APIServiceStatus = {
+      inline def apply(): APIServiceStatus = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[APIServiceStatus]
       }
       
-      @scala.inline
-      implicit class APIServiceStatusMutableBuilder[Self <: APIServiceStatus] (val x: Self) extends AnyVal {
+      extension [Self <: APIServiceStatus](x: Self) {
         
-        @scala.inline
-        def setConditions(value: Input[js.Array[Input[APIServiceCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+        inline def setConditions(value: Input[js.Array[Input[APIServiceCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+        inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
         
-        @scala.inline
-        def setConditionsVarargs(value: Input[APIServiceCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+        inline def setConditionsVarargs(value: Input[APIServiceCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
       }
     }
     
@@ -293,32 +252,24 @@ object apiregistration {
     }
     object ServiceReference {
       
-      @scala.inline
-      def apply(): ServiceReference = {
+      inline def apply(): ServiceReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ServiceReference]
       }
       
-      @scala.inline
-      implicit class ServiceReferenceMutableBuilder[Self <: ServiceReference] (val x: Self) extends AnyVal {
+      extension [Self <: ServiceReference](x: Self) {
         
-        @scala.inline
-        def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+        inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
         
-        @scala.inline
-        def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       }
     }
   }
@@ -354,44 +305,32 @@ object apiregistration {
     }
     object APIService {
       
-      @scala.inline
-      def apply(): APIService = {
+      inline def apply(): APIService = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[APIService]
       }
       
-      @scala.inline
-      implicit class APIServiceMutableBuilder[Self <: APIService] (val x: Self) extends AnyVal {
+      extension [Self <: APIService](x: Self) {
         
-        @scala.inline
-        def setApiVersion(value: Input[apiregistrationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+        inline def setApiVersion(value: Input[apiregistrationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+        inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
         
-        @scala.inline
-        def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.APIService]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.APIService]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+        inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
-        @scala.inline
-        def setSpec(value: Input[APIServiceSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+        inline def setSpec(value: Input[APIServiceSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+        inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[APIServiceStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[APIServiceStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -427,39 +366,29 @@ object apiregistration {
     }
     object APIServiceCondition {
       
-      @scala.inline
-      def apply(status: Input[String], `type`: Input[String]): APIServiceCondition = {
+      inline def apply(status: Input[String], `type`: Input[String]): APIServiceCondition = {
         val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[APIServiceCondition]
       }
       
-      @scala.inline
-      implicit class APIServiceConditionMutableBuilder[Self <: APIServiceCondition] (val x: Self) extends AnyVal {
+      extension [Self <: APIServiceCondition](x: Self) {
         
-        @scala.inline
-        def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
+        inline def setLastTransitionTime(value: Input[String]): Self = StObject.set(x, "lastTransitionTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
+        inline def setLastTransitionTimeUndefined: Self = StObject.set(x, "lastTransitionTime", js.undefined)
         
-        @scala.inline
-        def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         
-        @scala.inline
-        def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+        inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+        inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         
-        @scala.inline
-        def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -505,50 +434,36 @@ object apiregistration {
     }
     object APIServiceSpec {
       
-      @scala.inline
-      def apply(groupPriorityMinimum: Input[Double], versionPriority: Input[Double]): APIServiceSpec = {
+      inline def apply(groupPriorityMinimum: Input[Double], versionPriority: Input[Double]): APIServiceSpec = {
         val __obj = js.Dynamic.literal(groupPriorityMinimum = groupPriorityMinimum.asInstanceOf[js.Any], versionPriority = versionPriority.asInstanceOf[js.Any])
         __obj.asInstanceOf[APIServiceSpec]
       }
       
-      @scala.inline
-      implicit class APIServiceSpecMutableBuilder[Self <: APIServiceSpec] (val x: Self) extends AnyVal {
+      extension [Self <: APIServiceSpec](x: Self) {
         
-        @scala.inline
-        def setCaBundle(value: Input[String]): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
+        inline def setCaBundle(value: Input[String]): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaBundleUndefined: Self = StObject.set(x, "caBundle", js.undefined)
+        inline def setCaBundleUndefined: Self = StObject.set(x, "caBundle", js.undefined)
         
-        @scala.inline
-        def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupPriorityMinimum(value: Input[Double]): Self = StObject.set(x, "groupPriorityMinimum", value.asInstanceOf[js.Any])
+        inline def setGroupPriorityMinimum(value: Input[Double]): Self = StObject.set(x, "groupPriorityMinimum", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+        inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
         
-        @scala.inline
-        def setInsecureSkipTLSVerify(value: Input[Boolean]): Self = StObject.set(x, "insecureSkipTLSVerify", value.asInstanceOf[js.Any])
+        inline def setInsecureSkipTLSVerify(value: Input[Boolean]): Self = StObject.set(x, "insecureSkipTLSVerify", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsecureSkipTLSVerifyUndefined: Self = StObject.set(x, "insecureSkipTLSVerify", js.undefined)
+        inline def setInsecureSkipTLSVerifyUndefined: Self = StObject.set(x, "insecureSkipTLSVerify", js.undefined)
         
-        @scala.inline
-        def setService(value: Input[ServiceReference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+        inline def setService(value: Input[ServiceReference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+        inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
         
-        @scala.inline
-        def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionPriority(value: Input[Double]): Self = StObject.set(x, "versionPriority", value.asInstanceOf[js.Any])
+        inline def setVersionPriority(value: Input[Double]): Self = StObject.set(x, "versionPriority", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       }
     }
     
@@ -564,23 +479,18 @@ object apiregistration {
     }
     object APIServiceStatus {
       
-      @scala.inline
-      def apply(): APIServiceStatus = {
+      inline def apply(): APIServiceStatus = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[APIServiceStatus]
       }
       
-      @scala.inline
-      implicit class APIServiceStatusMutableBuilder[Self <: APIServiceStatus] (val x: Self) extends AnyVal {
+      extension [Self <: APIServiceStatus](x: Self) {
         
-        @scala.inline
-        def setConditions(value: Input[js.Array[Input[APIServiceCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+        inline def setConditions(value: Input[js.Array[Input[APIServiceCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+        inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
         
-        @scala.inline
-        def setConditionsVarargs(value: Input[APIServiceCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+        inline def setConditionsVarargs(value: Input[APIServiceCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
       }
     }
     
@@ -606,32 +516,24 @@ object apiregistration {
     }
     object ServiceReference {
       
-      @scala.inline
-      def apply(): ServiceReference = {
+      inline def apply(): ServiceReference = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ServiceReference]
       }
       
-      @scala.inline
-      implicit class ServiceReferenceMutableBuilder[Self <: ServiceReference] (val x: Self) extends AnyVal {
+      extension [Self <: ServiceReference](x: Self) {
         
-        @scala.inline
-        def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+        inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
         
-        @scala.inline
-        def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       }
     }
   }

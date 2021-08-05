@@ -44,46 +44,34 @@ object domainsTypesMod {
   }
   object DomainOptions {
     
-    @scala.inline
-    def apply(): DomainOptions = {
+    inline def apply(): DomainOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainOptions]
     }
     
-    @scala.inline
-    implicit class DomainOptionsMutableBuilder[Self <: DomainOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomainOptions](x: Self) {
       
-      @scala.inline
-      def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setConstraintName(value: String): Self = StObject.set(x, "constraintName", value.asInstanceOf[js.Any])
+      inline def setConstraintName(value: String): Self = StObject.set(x, "constraintName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintNameUndefined: Self = StObject.set(x, "constraintName", js.undefined)
+      inline def setConstraintNameUndefined: Self = StObject.set(x, "constraintName", js.undefined)
       
-      @scala.inline
-      def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultNull: Self = StObject.set(x, "default", null)
+      inline def setDefaultNull: Self = StObject.set(x, "default", null)
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefaultVarargs(
+      inline def setDefaultVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object)*
       ): Self = StObject.set(x, "default", js.Array(value :_*))
       
-      @scala.inline
-      def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
+      inline def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
+      inline def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
     }
   }
   
@@ -95,20 +83,16 @@ object domainsTypesMod {
   }
   object DomainOptionsAlter {
     
-    @scala.inline
-    def apply(): DomainOptionsAlter = {
+    inline def apply(): DomainOptionsAlter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainOptionsAlter]
     }
     
-    @scala.inline
-    implicit class DomainOptionsAlterMutableBuilder[Self <: DomainOptionsAlter] (val x: Self) extends AnyVal {
+    extension [Self <: DomainOptionsAlter](x: Self) {
       
-      @scala.inline
-      def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
+      inline def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
+      inline def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
     }
   }
   
@@ -120,20 +104,16 @@ object domainsTypesMod {
   }
   object DomainOptionsCreate {
     
-    @scala.inline
-    def apply(): DomainOptionsCreate = {
+    inline def apply(): DomainOptionsCreate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainOptionsCreate]
     }
     
-    @scala.inline
-    implicit class DomainOptionsCreateMutableBuilder[Self <: DomainOptionsCreate] (val x: Self) extends AnyVal {
+    extension [Self <: DomainOptionsCreate](x: Self) {
       
-      @scala.inline
-      def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+      inline def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+      inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     }
   }
   

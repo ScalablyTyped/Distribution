@@ -15,31 +15,23 @@ trait ChildListTagProps extends StObject {
 }
 object ChildListTagProps {
   
-  @scala.inline
-  def apply(): ChildListTagProps = {
+  inline def apply(): ChildListTagProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChildListTagProps]
   }
   
-  @scala.inline
-  implicit class ChildListTagPropsMutableBuilder[Self <: ChildListTagProps] (val x: Self) extends AnyVal {
+  extension [Self <: ChildListTagProps](x: Self) {
     
-    @scala.inline
-    def setParent(value: Obj): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Obj): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRenderChild(value: /* child */ js.Any => js.Any): Self = StObject.set(x, "renderChild", js.Any.fromFunction1(value))
+    inline def setRenderChild(value: /* child */ js.Any => js.Any): Self = StObject.set(x, "renderChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderChildUndefined: Self = StObject.set(x, "renderChild", js.undefined)
+    inline def setRenderChildUndefined: Self = StObject.set(x, "renderChild", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

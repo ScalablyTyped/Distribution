@@ -28,43 +28,31 @@ trait SegmentGroup extends StObject {
 }
 object SegmentGroup {
   
-  @scala.inline
-  def apply(): SegmentGroup = {
+  inline def apply(): SegmentGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentGroup]
   }
   
-  @scala.inline
-  implicit class SegmentGroupMutableBuilder[Self <: SegmentGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentGroup](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: ListOfSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: ListOfSegmentDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: SegmentDimensions*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: SegmentDimensions*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceSegments(value: ListOfSegmentReference): Self = StObject.set(x, "SourceSegments", value.asInstanceOf[js.Any])
+    inline def setSourceSegments(value: ListOfSegmentReference): Self = StObject.set(x, "SourceSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSegmentsUndefined: Self = StObject.set(x, "SourceSegments", js.undefined)
+    inline def setSourceSegmentsUndefined: Self = StObject.set(x, "SourceSegments", js.undefined)
     
-    @scala.inline
-    def setSourceSegmentsVarargs(value: SegmentReference*): Self = StObject.set(x, "SourceSegments", js.Array(value :_*))
+    inline def setSourceSegmentsVarargs(value: SegmentReference*): Self = StObject.set(x, "SourceSegments", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

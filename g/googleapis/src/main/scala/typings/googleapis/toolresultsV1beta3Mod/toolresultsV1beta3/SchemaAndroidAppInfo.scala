@@ -31,37 +31,27 @@ trait SchemaAndroidAppInfo extends StObject {
 }
 object SchemaAndroidAppInfo {
   
-  @scala.inline
-  def apply(): SchemaAndroidAppInfo = {
+  inline def apply(): SchemaAndroidAppInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAndroidAppInfo]
   }
   
-  @scala.inline
-  implicit class SchemaAndroidAppInfoMutableBuilder[Self <: SchemaAndroidAppInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAndroidAppInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
-    @scala.inline
-    def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
+    inline def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
+    inline def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
   }
 }

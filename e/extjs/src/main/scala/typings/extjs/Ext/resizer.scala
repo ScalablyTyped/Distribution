@@ -13,8 +13,7 @@ object resizer {
        with ISplitter
   object IBorderSplitter {
     
-    @scala.inline
-    def apply(): IBorderSplitter = {
+    inline def apply(): IBorderSplitter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBorderSplitter]
     }
@@ -25,8 +24,7 @@ object resizer {
        with ISplitterTracker
   object IBorderSplitterTracker {
     
-    @scala.inline
-    def apply(): IBorderSplitterTracker = {
+    inline def apply(): IBorderSplitterTracker = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBorderSplitterTracker]
     }
@@ -37,8 +35,7 @@ object resizer {
        with IComponent
   object IHandle {
     
-    @scala.inline
-    def apply(): IHandle = {
+    inline def apply(): IHandle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHandle]
     }
@@ -80,44 +77,32 @@ object resizer {
   }
   object IResizeTracker {
     
-    @scala.inline
-    def apply(): IResizeTracker = {
+    inline def apply(): IResizeTracker = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IResizeTracker]
     }
     
-    @scala.inline
-    implicit class IResizeTrackerMutableBuilder[Self <: IResizeTracker] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeTracker](x: Self) {
       
-      @scala.inline
-      def setCreateProxy(value: /* target */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "createProxy", js.Any.fromFunction1(value))
+      inline def setCreateProxy(value: /* target */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "createProxy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateProxyUndefined: Self = StObject.set(x, "createProxy", js.undefined)
+      inline def setCreateProxyUndefined: Self = StObject.set(x, "createProxy", js.undefined)
       
-      @scala.inline
-      def setOnBeforeStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
+      inline def setOnBeforeStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeStartUndefined: Self = StObject.set(x, "onBeforeStart", js.undefined)
+      inline def setOnBeforeStartUndefined: Self = StObject.set(x, "onBeforeStart", js.undefined)
       
-      @scala.inline
-      def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+      inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      @scala.inline
-      def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+      inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }
   }
   
@@ -199,140 +184,96 @@ object resizer {
   }
   object IResizer {
     
-    @scala.inline
-    def apply(): IResizer = {
+    inline def apply(): IResizer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IResizer]
     }
     
-    @scala.inline
-    implicit class IResizerMutableBuilder[Self <: IResizer] (val x: Self) extends AnyVal {
+    extension [Self <: IResizer](x: Self) {
       
-      @scala.inline
-      def setConstrainTo(value: js.Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
+      inline def setConstrainTo(value: js.Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
+      inline def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
       
-      @scala.inline
-      def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+      inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
+      inline def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
       
-      @scala.inline
-      def setEl(value: IElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: IElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+      inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
       
-      @scala.inline
-      def setGetEl(value: () => IElement): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
+      inline def setGetEl(value: () => IElement): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
+      inline def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
       
-      @scala.inline
-      def setGetTarget(value: () => js.Any): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+      inline def setGetTarget(value: () => js.Any): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
+      inline def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
       
-      @scala.inline
-      def setHandles(value: java.lang.String): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+      inline def setHandles(value: java.lang.String): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
+      inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightIncrement(value: Double): Self = StObject.set(x, "heightIncrement", value.asInstanceOf[js.Any])
+      inline def setHeightIncrement(value: Double): Self = StObject.set(x, "heightIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightIncrementUndefined: Self = StObject.set(x, "heightIncrement", js.undefined)
+      inline def setHeightIncrementUndefined: Self = StObject.set(x, "heightIncrement", js.undefined)
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setOriginalTarget(value: js.Any): Self = StObject.set(x, "originalTarget", value.asInstanceOf[js.Any])
+      inline def setOriginalTarget(value: js.Any): Self = StObject.set(x, "originalTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalTargetUndefined: Self = StObject.set(x, "originalTarget", js.undefined)
+      inline def setOriginalTargetUndefined: Self = StObject.set(x, "originalTarget", js.undefined)
       
-      @scala.inline
-      def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+      inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+      inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
       
-      @scala.inline
-      def setPreserveRatio(value: Boolean): Self = StObject.set(x, "preserveRatio", value.asInstanceOf[js.Any])
+      inline def setPreserveRatio(value: Boolean): Self = StObject.set(x, "preserveRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveRatioUndefined: Self = StObject.set(x, "preserveRatio", js.undefined)
+      inline def setPreserveRatioUndefined: Self = StObject.set(x, "preserveRatio", js.undefined)
       
-      @scala.inline
-      def setResizeTo(value: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "resizeTo", js.Any.fromFunction2(value))
+      inline def setResizeTo(value: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "resizeTo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResizeToUndefined: Self = StObject.set(x, "resizeTo", js.undefined)
+      inline def setResizeToUndefined: Self = StObject.set(x, "resizeTo", js.undefined)
       
-      @scala.inline
-      def setResizeTracker(value: IResizeTracker): Self = StObject.set(x, "resizeTracker", value.asInstanceOf[js.Any])
+      inline def setResizeTracker(value: IResizeTracker): Self = StObject.set(x, "resizeTracker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeTrackerUndefined: Self = StObject.set(x, "resizeTracker", js.undefined)
+      inline def setResizeTrackerUndefined: Self = StObject.set(x, "resizeTracker", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+      inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+      inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthIncrement(value: Double): Self = StObject.set(x, "widthIncrement", value.asInstanceOf[js.Any])
+      inline def setWidthIncrement(value: Double): Self = StObject.set(x, "widthIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthIncrementUndefined: Self = StObject.set(x, "widthIncrement", js.undefined)
+      inline def setWidthIncrementUndefined: Self = StObject.set(x, "widthIncrement", js.undefined)
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -382,86 +323,60 @@ object resizer {
   }
   object ISplitter {
     
-    @scala.inline
-    def apply(): ISplitter = {
+    inline def apply(): ISplitter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISplitter]
     }
     
-    @scala.inline
-    implicit class ISplitterMutableBuilder[Self <: ISplitter] (val x: Self) extends AnyVal {
+    extension [Self <: ISplitter](x: Self) {
       
-      @scala.inline
-      def setCollapseOnDblClick(value: Boolean): Self = StObject.set(x, "collapseOnDblClick", value.asInstanceOf[js.Any])
+      inline def setCollapseOnDblClick(value: Boolean): Self = StObject.set(x, "collapseOnDblClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseOnDblClickUndefined: Self = StObject.set(x, "collapseOnDblClick", js.undefined)
+      inline def setCollapseOnDblClickUndefined: Self = StObject.set(x, "collapseOnDblClick", js.undefined)
       
-      @scala.inline
-      def setCollapseTarget(value: js.Any): Self = StObject.set(x, "collapseTarget", value.asInstanceOf[js.Any])
+      inline def setCollapseTarget(value: js.Any): Self = StObject.set(x, "collapseTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseTargetUndefined: Self = StObject.set(x, "collapseTarget", js.undefined)
+      inline def setCollapseTargetUndefined: Self = StObject.set(x, "collapseTarget", js.undefined)
       
-      @scala.inline
-      def setCollapsedCls(value: java.lang.String): Self = StObject.set(x, "collapsedCls", value.asInstanceOf[js.Any])
+      inline def setCollapsedCls(value: java.lang.String): Self = StObject.set(x, "collapsedCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedClsUndefined: Self = StObject.set(x, "collapsedCls", js.undefined)
+      inline def setCollapsedClsUndefined: Self = StObject.set(x, "collapsedCls", js.undefined)
       
-      @scala.inline
-      def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+      inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+      inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
       
-      @scala.inline
-      def setDefaultSplitMax(value: Double): Self = StObject.set(x, "defaultSplitMax", value.asInstanceOf[js.Any])
+      inline def setDefaultSplitMax(value: Double): Self = StObject.set(x, "defaultSplitMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSplitMaxUndefined: Self = StObject.set(x, "defaultSplitMax", js.undefined)
+      inline def setDefaultSplitMaxUndefined: Self = StObject.set(x, "defaultSplitMax", js.undefined)
       
-      @scala.inline
-      def setDefaultSplitMin(value: Double): Self = StObject.set(x, "defaultSplitMin", value.asInstanceOf[js.Any])
+      inline def setDefaultSplitMin(value: Double): Self = StObject.set(x, "defaultSplitMin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSplitMinUndefined: Self = StObject.set(x, "defaultSplitMin", js.undefined)
+      inline def setDefaultSplitMinUndefined: Self = StObject.set(x, "defaultSplitMin", js.undefined)
       
-      @scala.inline
-      def setGetTrackerConfig(value: () => Unit): Self = StObject.set(x, "getTrackerConfig", js.Any.fromFunction0(value))
+      inline def setGetTrackerConfig(value: () => Unit): Self = StObject.set(x, "getTrackerConfig", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTrackerConfigUndefined: Self = StObject.set(x, "getTrackerConfig", js.undefined)
+      inline def setGetTrackerConfigUndefined: Self = StObject.set(x, "getTrackerConfig", js.undefined)
       
-      @scala.inline
-      def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
+      inline def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+      inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: java.lang.String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: java.lang.String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setPerformCollapse(value: Boolean): Self = StObject.set(x, "performCollapse", value.asInstanceOf[js.Any])
+      inline def setPerformCollapse(value: Boolean): Self = StObject.set(x, "performCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerformCollapseUndefined: Self = StObject.set(x, "performCollapse", js.undefined)
+      inline def setPerformCollapseUndefined: Self = StObject.set(x, "performCollapse", js.undefined)
       
-      @scala.inline
-      def setSetSize(value: () => IComponent): Self = StObject.set(x, "setSize", js.Any.fromFunction0(value))
+      inline def setSetSize(value: () => IComponent): Self = StObject.set(x, "setSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
+      inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -495,38 +410,28 @@ object resizer {
   }
   object ISplitterTracker {
     
-    @scala.inline
-    def apply(): ISplitterTracker = {
+    inline def apply(): ISplitterTracker = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISplitterTracker]
     }
     
-    @scala.inline
-    implicit class ISplitterTrackerMutableBuilder[Self <: ISplitterTracker] (val x: Self) extends AnyVal {
+    extension [Self <: ISplitterTracker](x: Self) {
       
-      @scala.inline
-      def setOnBeforeStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
+      inline def setOnBeforeStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeStartUndefined: Self = StObject.set(x, "onBeforeStart", js.undefined)
+      inline def setOnBeforeStartUndefined: Self = StObject.set(x, "onBeforeStart", js.undefined)
       
-      @scala.inline
-      def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+      inline def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+      inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      @scala.inline
-      def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+      inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }
   }
 }

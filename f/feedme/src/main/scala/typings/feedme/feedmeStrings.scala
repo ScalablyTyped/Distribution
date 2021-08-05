@@ -11,102 +11,85 @@ object feedmeStrings {
   sealed trait atom
     extends StObject
        with Type
-  @scala.inline
-  def atom: atom = "atom".asInstanceOf[atom]
+  inline def atom: atom = "atom".asInstanceOf[atom]
   
   @js.native
   sealed trait close extends StObject
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait drain extends StObject
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
+  inline def drain: drain = "drain".asInstanceOf[drain]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait finish extends StObject
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
+  inline def finish: finish = "finish".asInstanceOf[finish]
   
   @js.native
   sealed trait item extends StObject
-  @scala.inline
-  def item: item = "item".asInstanceOf[item]
+  inline def item: item = "item".asInstanceOf[item]
   
   @js.native
   sealed trait json
     extends StObject
        with Type
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait pipe extends StObject
-  @scala.inline
-  def pipe: pipe = "pipe".asInstanceOf[pipe]
+  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
   sealed trait `rss 0Dot90`
     extends StObject
        with Type
-  @scala.inline
-  def `rss 0Dot90`: `rss 0Dot90` = ("rss 0.90").asInstanceOf[`rss 0Dot90`]
+  inline def `rss 0Dot90`: `rss 0Dot90` = ("rss 0.90").asInstanceOf[`rss 0Dot90`]
   
   @js.native
   sealed trait `rss 0Dot91`
     extends StObject
        with Type
-  @scala.inline
-  def `rss 0Dot91`: `rss 0Dot91` = ("rss 0.91").asInstanceOf[`rss 0Dot91`]
+  inline def `rss 0Dot91`: `rss 0Dot91` = ("rss 0.91").asInstanceOf[`rss 0Dot91`]
   
   @js.native
   sealed trait `rss 0Dot92`
     extends StObject
        with Type
-  @scala.inline
-  def `rss 0Dot92`: `rss 0Dot92` = ("rss 0.92").asInstanceOf[`rss 0Dot92`]
+  inline def `rss 0Dot92`: `rss 0Dot92` = ("rss 0.92").asInstanceOf[`rss 0Dot92`]
   
   @js.native
   sealed trait `rss 0Dot93`
     extends StObject
        with Type
-  @scala.inline
-  def `rss 0Dot93`: `rss 0Dot93` = ("rss 0.93").asInstanceOf[`rss 0Dot93`]
+  inline def `rss 0Dot93`: `rss 0Dot93` = ("rss 0.93").asInstanceOf[`rss 0Dot93`]
   
   @js.native
   sealed trait `rss 0Dot94`
     extends StObject
        with Type
-  @scala.inline
-  def `rss 0Dot94`: `rss 0Dot94` = ("rss 0.94").asInstanceOf[`rss 0Dot94`]
+  inline def `rss 0Dot94`: `rss 0Dot94` = ("rss 0.94").asInstanceOf[`rss 0Dot94`]
   
   @js.native
   sealed trait `rss 1Dot0`
     extends StObject
        with Type
-  @scala.inline
-  def `rss 1Dot0`: `rss 1Dot0` = ("rss 1.0").asInstanceOf[`rss 1Dot0`]
+  inline def `rss 1Dot0`: `rss 1Dot0` = ("rss 1.0").asInstanceOf[`rss 1Dot0`]
   
   @js.native
   sealed trait `rss 2Dot0`
     extends StObject
        with Type
-  @scala.inline
-  def `rss 2Dot0`: `rss 2Dot0` = ("rss 2.0").asInstanceOf[`rss 2Dot0`]
+  inline def `rss 2Dot0`: `rss 2Dot0` = ("rss 2.0").asInstanceOf[`rss 2Dot0`]
   
   @js.native
   sealed trait `type` extends StObject
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
   sealed trait unpipe extends StObject
-  @scala.inline
-  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  inline def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
 }

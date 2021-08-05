@@ -23,25 +23,19 @@ trait GitImportStatusDetail extends StObject {
 }
 object GitImportStatusDetail {
   
-  @scala.inline
-  def apply(allSteps: js.Array[String], currentStep: Double, errorMessage: String): GitImportStatusDetail = {
+  inline def apply(allSteps: js.Array[String], currentStep: Double, errorMessage: String): GitImportStatusDetail = {
     val __obj = js.Dynamic.literal(allSteps = allSteps.asInstanceOf[js.Any], currentStep = currentStep.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitImportStatusDetail]
   }
   
-  @scala.inline
-  implicit class GitImportStatusDetailMutableBuilder[Self <: GitImportStatusDetail] (val x: Self) extends AnyVal {
+  extension [Self <: GitImportStatusDetail](x: Self) {
     
-    @scala.inline
-    def setAllSteps(value: js.Array[String]): Self = StObject.set(x, "allSteps", value.asInstanceOf[js.Any])
+    inline def setAllSteps(value: js.Array[String]): Self = StObject.set(x, "allSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllStepsVarargs(value: String*): Self = StObject.set(x, "allSteps", js.Array(value :_*))
+    inline def setAllStepsVarargs(value: String*): Self = StObject.set(x, "allSteps", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentStep(value: Double): Self = StObject.set(x, "currentStep", value.asInstanceOf[js.Any])
+    inline def setCurrentStep(value: Double): Self = StObject.set(x, "currentStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }
 }

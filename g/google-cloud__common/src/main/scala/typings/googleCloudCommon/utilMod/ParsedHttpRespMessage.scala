@@ -13,22 +13,17 @@ trait ParsedHttpRespMessage extends StObject {
 }
 object ParsedHttpRespMessage {
   
-  @scala.inline
-  def apply(resp: Response[js.Any]): ParsedHttpRespMessage = {
+  inline def apply(resp: Response[js.Any]): ParsedHttpRespMessage = {
     val __obj = js.Dynamic.literal(resp = resp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedHttpRespMessage]
   }
   
-  @scala.inline
-  implicit class ParsedHttpRespMessageMutableBuilder[Self <: ParsedHttpRespMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedHttpRespMessage](x: Self) {
     
-    @scala.inline
-    def setErr(value: ApiError): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+    inline def setErr(value: ApiError): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+    inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
     
-    @scala.inline
-    def setResp(value: Response[js.Any]): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
+    inline def setResp(value: Response[js.Any]): Self = StObject.set(x, "resp", value.asInstanceOf[js.Any])
   }
 }

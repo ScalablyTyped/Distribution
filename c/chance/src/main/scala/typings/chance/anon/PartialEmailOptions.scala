@@ -13,25 +13,19 @@ trait PartialEmailOptions extends StObject {
 }
 object PartialEmailOptions {
   
-  @scala.inline
-  def apply(): PartialEmailOptions = {
+  inline def apply(): PartialEmailOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialEmailOptions]
   }
   
-  @scala.inline
-  implicit class PartialEmailOptionsMutableBuilder[Self <: PartialEmailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialEmailOptions](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
   }
 }

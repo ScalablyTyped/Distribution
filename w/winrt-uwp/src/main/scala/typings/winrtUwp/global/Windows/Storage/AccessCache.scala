@@ -78,16 +78,14 @@ object AccessCache {
     @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions.futureAccessList")
     @js.native
     def futureAccessList: typings.winrtUwp.Windows.Storage.AccessCache.StorageItemAccessList = js.native
-    @scala.inline
-    def futureAccessList_=(x: typings.winrtUwp.Windows.Storage.AccessCache.StorageItemAccessList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("futureAccessList")(x.asInstanceOf[js.Any])
+    inline def futureAccessList_=(x: typings.winrtUwp.Windows.Storage.AccessCache.StorageItemAccessList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("futureAccessList")(x.asInstanceOf[js.Any])
     
     /** Gets an object that represents a list that an app can use to track the files and/or locations (like folders) that the app has accessed most recently. */
     /* static member */
     @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions.mostRecentlyUsedList")
     @js.native
     def mostRecentlyUsedList: typings.winrtUwp.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList = js.native
-    @scala.inline
-    def mostRecentlyUsedList_=(x: typings.winrtUwp.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mostRecentlyUsedList")(x.asInstanceOf[js.Any])
+    inline def mostRecentlyUsedList_=(x: typings.winrtUwp.Windows.Storage.AccessCache.StorageItemMostRecentlyUsedList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mostRecentlyUsedList")(x.asInstanceOf[js.Any])
   }
   
   /** Represents your app's future-access list (obtained from the static StorageApplicationPermissions.FutureAccessList property). By picking files and folders, your user grants your app permission to access items that might not be accessible otherwise. If you add these items to your future-access list then you'll retain that permission when your app wants to access those items again later. Items are stored in the future-access list as StorageFile and StorageFolder objects. */

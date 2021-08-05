@@ -19,37 +19,27 @@ trait PartialStylableGeneratorO extends StObject {
 }
 object PartialStylableGeneratorO {
   
-  @scala.inline
-  def apply(): PartialStylableGeneratorO = {
+  inline def apply(): PartialStylableGeneratorO = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStylableGeneratorO]
   }
   
-  @scala.inline
-  implicit class PartialStylableGeneratorOMutableBuilder[Self <: PartialStylableGeneratorO] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStylableGeneratorO](x: Self) {
     
-    @scala.inline
-    def setAfterTransform(value: js.Any): Self = StObject.set(x, "afterTransform", value.asInstanceOf[js.Any])
+    inline def setAfterTransform(value: js.Any): Self = StObject.set(x, "afterTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterTransformUndefined: Self = StObject.set(x, "afterTransform", js.undefined)
+    inline def setAfterTransformUndefined: Self = StObject.set(x, "afterTransform", js.undefined)
     
-    @scala.inline
-    def setExperimentalHMR(value: Boolean): Self = StObject.set(x, "experimentalHMR", value.asInstanceOf[js.Any])
+    inline def setExperimentalHMR(value: Boolean): Self = StObject.set(x, "experimentalHMR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentalHMRUndefined: Self = StObject.set(x, "experimentalHMR", js.undefined)
+    inline def setExperimentalHMRUndefined: Self = StObject.set(x, "experimentalHMR", js.undefined)
     
-    @scala.inline
-    def setIncludeCSSInJS(value: Boolean): Self = StObject.set(x, "includeCSSInJS", value.asInstanceOf[js.Any])
+    inline def setIncludeCSSInJS(value: Boolean): Self = StObject.set(x, "includeCSSInJS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCSSInJSUndefined: Self = StObject.set(x, "includeCSSInJS", js.undefined)
+    inline def setIncludeCSSInJSUndefined: Self = StObject.set(x, "includeCSSInJS", js.undefined)
     
-    @scala.inline
-    def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
+    inline def setRuntimeStylesheetId(value: module | namespace): Self = StObject.set(x, "runtimeStylesheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeStylesheetIdUndefined: Self = StObject.set(x, "runtimeStylesheetId", js.undefined)
+    inline def setRuntimeStylesheetIdUndefined: Self = StObject.set(x, "runtimeStylesheetId", js.undefined)
   }
 }

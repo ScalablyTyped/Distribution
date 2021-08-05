@@ -107,8 +107,7 @@ trait RecordDepositConstantComm extends StObject {
 }
 object RecordDepositConstantComm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     G: Double,
     H: Double,
     K: Double,
@@ -163,154 +162,104 @@ object RecordDepositConstantComm {
     __obj.asInstanceOf[RecordDepositConstantComm]
   }
   
-  @scala.inline
-  implicit class RecordDepositConstantCommMutableBuilder[Self <: RecordDepositConstantComm] (val x: Self) extends AnyVal {
+  extension [Self <: RecordDepositConstantComm](x: Self) {
     
-    @scala.inline
-    def setAlloy(value: Double): Self = StObject.set(x, "alloy", value.asInstanceOf[js.Any])
+    inline def setAlloy(value: Double): Self = StObject.set(x, "alloy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBattery(value: Double): Self = StObject.set(x, "battery", value.asInstanceOf[js.Any])
+    inline def setBattery(value: Double): Self = StObject.set(x, "battery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBiomass(value: Double): Self = StObject.set(x, "biomass", value.asInstanceOf[js.Any])
+    inline def setBiomass(value: Double): Self = StObject.set(x, "biomass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircuit(value: Double): Self = StObject.set(x, "circuit", value.asInstanceOf[js.Any])
+    inline def setCircuit(value: Double): Self = StObject.set(x, "circuit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComposite(value: Double): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
+    inline def setComposite(value: Double): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcentrate(value: Double): Self = StObject.set(x, "concentrate", value.asInstanceOf[js.Any])
+    inline def setConcentrate(value: Double): Self = StObject.set(x, "concentrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondensate(value: Double): Self = StObject.set(x, "condensate", value.asInstanceOf[js.Any])
+    inline def setCondensate(value: Double): Self = StObject.set(x, "condensate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrystal(value: Double): Self = StObject.set(x, "crystal", value.asInstanceOf[js.Any])
+    inline def setCrystal(value: Double): Self = StObject.set(x, "crystal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice(value: Double): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Double): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmanation(value: Double): Self = StObject.set(x, "emanation", value.asInstanceOf[js.Any])
+    inline def setEmanation(value: Double): Self = StObject.set(x, "emanation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
+    inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEssence(value: Double): Self = StObject.set(x, "essence", value.asInstanceOf[js.Any])
+    inline def setEssence(value: Double): Self = StObject.set(x, "essence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtract(value: Double): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
+    inline def setExtract(value: Double): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixtures(value: Double): Self = StObject.set(x, "fixtures", value.asInstanceOf[js.Any])
+    inline def setFixtures(value: Double): Self = StObject.set(x, "fixtures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: Double): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
+    inline def setG(value: Double): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGhodium_melt(value: Double): Self = StObject.set(x, "ghodium_melt", value.asInstanceOf[js.Any])
+    inline def setGhodium_melt(value: Double): Self = StObject.set(x, "ghodium_melt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHydraulics(value: Double): Self = StObject.set(x, "hydraulics", value.asInstanceOf[js.Any])
+    inline def setHydraulics(value: Double): Self = StObject.set(x, "hydraulics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setK(value: Double): Self = StObject.set(x, "K", value.asInstanceOf[js.Any])
+    inline def setK(value: Double): Self = StObject.set(x, "K", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeanium_bar(value: Double): Self = StObject.set(x, "keanium_bar", value.asInstanceOf[js.Any])
+    inline def setKeanium_bar(value: Double): Self = StObject.set(x, "keanium_bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: Double): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
+    inline def setL(value: Double): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLemergium_bar(value: Double): Self = StObject.set(x, "lemergium_bar", value.asInstanceOf[js.Any])
+    inline def setLemergium_bar(value: Double): Self = StObject.set(x, "lemergium_bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiquid(value: Double): Self = StObject.set(x, "liquid", value.asInstanceOf[js.Any])
+    inline def setLiquid(value: Double): Self = StObject.set(x, "liquid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachine(value: Double): Self = StObject.set(x, "machine", value.asInstanceOf[js.Any])
+    inline def setMachine(value: Double): Self = StObject.set(x, "machine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetal(value: Double): Self = StObject.set(x, "metal", value.asInstanceOf[js.Any])
+    inline def setMetal(value: Double): Self = StObject.set(x, "metal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrochip(value: Double): Self = StObject.set(x, "microchip", value.asInstanceOf[js.Any])
+    inline def setMicrochip(value: Double): Self = StObject.set(x, "microchip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMist(value: Double): Self = StObject.set(x, "mist", value.asInstanceOf[js.Any])
+    inline def setMist(value: Double): Self = StObject.set(x, "mist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuscle(value: Double): Self = StObject.set(x, "muscle", value.asInstanceOf[js.Any])
+    inline def setMuscle(value: Double): Self = StObject.set(x, "muscle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setO(value: Double): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
+    inline def setO(value: Double): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganism(value: Double): Self = StObject.set(x, "organism", value.asInstanceOf[js.Any])
+    inline def setOrganism(value: Double): Self = StObject.set(x, "organism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganoid(value: Double): Self = StObject.set(x, "organoid", value.asInstanceOf[js.Any])
+    inline def setOrganoid(value: Double): Self = StObject.set(x, "organoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOxidant(value: Double): Self = StObject.set(x, "oxidant", value.asInstanceOf[js.Any])
+    inline def setOxidant(value: Double): Self = StObject.set(x, "oxidant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhlegm(value: Double): Self = StObject.set(x, "phlegm", value.asInstanceOf[js.Any])
+    inline def setPhlegm(value: Double): Self = StObject.set(x, "phlegm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurifier(value: Double): Self = StObject.set(x, "purifier", value.asInstanceOf[js.Any])
+    inline def setPurifier(value: Double): Self = StObject.set(x, "purifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReductant(value: Double): Self = StObject.set(x, "reductant", value.asInstanceOf[js.Any])
+    inline def setReductant(value: Double): Self = StObject.set(x, "reductant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilicon(value: Double): Self = StObject.set(x, "silicon", value.asInstanceOf[js.Any])
+    inline def setSilicon(value: Double): Self = StObject.set(x, "silicon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpirit(value: Double): Self = StObject.set(x, "spirit", value.asInstanceOf[js.Any])
+    inline def setSpirit(value: Double): Self = StObject.set(x, "spirit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitch(value: Double): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
+    inline def setSwitch(value: Double): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTissue(value: Double): Self = StObject.set(x, "tissue", value.asInstanceOf[js.Any])
+    inline def setTissue(value: Double): Self = StObject.set(x, "tissue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransistor(value: Double): Self = StObject.set(x, "transistor", value.asInstanceOf[js.Any])
+    inline def setTransistor(value: Double): Self = StObject.set(x, "transistor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTube(value: Double): Self = StObject.set(x, "tube", value.asInstanceOf[js.Any])
+    inline def setTube(value: Double): Self = StObject.set(x, "tube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU(value: Double): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
+    inline def setU(value: Double): Self = StObject.set(x, "U", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtrium_bar(value: Double): Self = StObject.set(x, "utrium_bar", value.asInstanceOf[js.Any])
+    inline def setUtrium_bar(value: Double): Self = StObject.set(x, "utrium_bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWire(value: Double): Self = StObject.set(x, "wire", value.asInstanceOf[js.Any])
+    inline def setWire(value: Double): Self = StObject.set(x, "wire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZynthium_bar(value: Double): Self = StObject.set(x, "zynthium_bar", value.asInstanceOf[js.Any])
+    inline def setZynthium_bar(value: Double): Self = StObject.set(x, "zynthium_bar", value.asInstanceOf[js.Any])
   }
 }

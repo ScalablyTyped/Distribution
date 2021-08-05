@@ -32,44 +32,33 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(): Source = {
+  inline def apply(): Source = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setAdditionalContexts(value: js.Array[SourceContext]): Self = StObject.set(x, "additionalContexts", value.asInstanceOf[js.Any])
+    inline def setAdditionalContexts(value: js.Array[SourceContext]): Self = StObject.set(x, "additionalContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalContextsUndefined: Self = StObject.set(x, "additionalContexts", js.undefined)
+    inline def setAdditionalContextsUndefined: Self = StObject.set(x, "additionalContexts", js.undefined)
     
-    @scala.inline
-    def setAdditionalContextsVarargs(value: SourceContext*): Self = StObject.set(x, "additionalContexts", js.Array(value :_*))
+    inline def setAdditionalContextsVarargs(value: SourceContext*): Self = StObject.set(x, "additionalContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setArtifactStorageSourceUri(value: String): Self = StObject.set(x, "artifactStorageSourceUri", value.asInstanceOf[js.Any])
+    inline def setArtifactStorageSourceUri(value: String): Self = StObject.set(x, "artifactStorageSourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactStorageSourceUriUndefined: Self = StObject.set(x, "artifactStorageSourceUri", js.undefined)
+    inline def setArtifactStorageSourceUriUndefined: Self = StObject.set(x, "artifactStorageSourceUri", js.undefined)
     
-    @scala.inline
-    def setContext(value: SourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: SourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setFileHashes(
+    inline def setFileHashes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.FileHashes}
       */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Source & TopLevel[js.Any]
     ): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
+    inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
   }
 }

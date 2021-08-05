@@ -33,8 +33,7 @@ trait AutosuggestPropsMultiSection[TSuggestion, TSection]
 }
 object AutosuggestPropsMultiSection {
   
-  @scala.inline
-  def apply[TSuggestion, TSection](
+  inline def apply[TSuggestion, TSection](
     getSuggestionValue: TSuggestion => String,
     inputProps: InputProps[TSuggestion],
     onSuggestionsFetchRequested: /* request */ SuggestionsFetchRequestedParams => Unit,
@@ -45,28 +44,20 @@ object AutosuggestPropsMultiSection {
     __obj.asInstanceOf[AutosuggestPropsMultiSection[TSuggestion, TSection]]
   }
   
-  @scala.inline
-  implicit class AutosuggestPropsMultiSectionMutableBuilder[Self <: AutosuggestPropsMultiSection[?, ?], TSuggestion, TSection] (val x: Self & (AutosuggestPropsMultiSection[TSuggestion, TSection])) extends AnyVal {
+  extension [Self <: AutosuggestPropsMultiSection[?, ?], TSuggestion, TSection](x: Self & (AutosuggestPropsMultiSection[TSuggestion, TSection])) {
     
-    @scala.inline
-    def setGetSectionSuggestions(value: TSection => js.Array[TSuggestion]): Self = StObject.set(x, "getSectionSuggestions", js.Any.fromFunction1(value))
+    inline def setGetSectionSuggestions(value: TSection => js.Array[TSuggestion]): Self = StObject.set(x, "getSectionSuggestions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSectionSuggestionsUndefined: Self = StObject.set(x, "getSectionSuggestions", js.undefined)
+    inline def setGetSectionSuggestionsUndefined: Self = StObject.set(x, "getSectionSuggestions", js.undefined)
     
-    @scala.inline
-    def setMultiSection(value: `true`): Self = StObject.set(x, "multiSection", value.asInstanceOf[js.Any])
+    inline def setMultiSection(value: `true`): Self = StObject.set(x, "multiSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderSectionTitle(value: /* section */ js.Any => ReactNode): Self = StObject.set(x, "renderSectionTitle", js.Any.fromFunction1(value))
+    inline def setRenderSectionTitle(value: /* section */ js.Any => ReactNode): Self = StObject.set(x, "renderSectionTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderSectionTitleUndefined: Self = StObject.set(x, "renderSectionTitle", js.undefined)
+    inline def setRenderSectionTitleUndefined: Self = StObject.set(x, "renderSectionTitle", js.undefined)
     
-    @scala.inline
-    def setSuggestions(value: js.Array[TSection]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: js.Array[TSection]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsVarargs(value: TSection*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: TSection*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

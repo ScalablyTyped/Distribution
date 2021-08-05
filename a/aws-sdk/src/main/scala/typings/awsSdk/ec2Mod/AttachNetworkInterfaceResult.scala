@@ -18,25 +18,19 @@ trait AttachNetworkInterfaceResult extends StObject {
 }
 object AttachNetworkInterfaceResult {
   
-  @scala.inline
-  def apply(): AttachNetworkInterfaceResult = {
+  inline def apply(): AttachNetworkInterfaceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachNetworkInterfaceResult]
   }
   
-  @scala.inline
-  implicit class AttachNetworkInterfaceResultMutableBuilder[Self <: AttachNetworkInterfaceResult] (val x: Self) extends AnyVal {
+  extension [Self <: AttachNetworkInterfaceResult](x: Self) {
     
-    @scala.inline
-    def setAttachmentId(value: String): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: String): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentIdUndefined: Self = StObject.set(x, "AttachmentId", js.undefined)
+    inline def setAttachmentIdUndefined: Self = StObject.set(x, "AttachmentId", js.undefined)
     
-    @scala.inline
-    def setNetworkCardIndex(value: Integer): Self = StObject.set(x, "NetworkCardIndex", value.asInstanceOf[js.Any])
+    inline def setNetworkCardIndex(value: Integer): Self = StObject.set(x, "NetworkCardIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkCardIndexUndefined: Self = StObject.set(x, "NetworkCardIndex", js.undefined)
+    inline def setNetworkCardIndexUndefined: Self = StObject.set(x, "NetworkCardIndex", js.undefined)
   }
 }

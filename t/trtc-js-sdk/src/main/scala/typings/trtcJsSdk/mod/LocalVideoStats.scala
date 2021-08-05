@@ -17,8 +17,7 @@ trait LocalVideoStats
 }
 object LocalVideoStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bytesSent: Double,
     framesEncoded: Double,
     framesHeight: Double,
@@ -30,13 +29,10 @@ object LocalVideoStats {
     __obj.asInstanceOf[LocalVideoStats]
   }
   
-  @scala.inline
-  implicit class LocalVideoStatsMutableBuilder[Self <: LocalVideoStats] (val x: Self) extends AnyVal {
+  extension [Self <: LocalVideoStats](x: Self) {
     
-    @scala.inline
-    def setFramesEncoded(value: Double): Self = StObject.set(x, "framesEncoded", value.asInstanceOf[js.Any])
+    inline def setFramesEncoded(value: Double): Self = StObject.set(x, "framesEncoded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesSent(value: Double): Self = StObject.set(x, "framesSent", value.asInstanceOf[js.Any])
+    inline def setFramesSent(value: Double): Self = StObject.set(x, "framesSent", value.asInstanceOf[js.Any])
   }
 }

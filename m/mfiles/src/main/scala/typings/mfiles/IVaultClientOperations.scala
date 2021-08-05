@@ -22,8 +22,7 @@ trait IVaultClientOperations extends StObject {
 }
 object IVaultClientOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DisableCheckInReminderForCallingProcess: () => Unit,
     EnableCheckInReminderForCallingProcess: () => Unit,
     IsOffline: () => Boolean,
@@ -35,25 +34,18 @@ object IVaultClientOperations {
     __obj.asInstanceOf[IVaultClientOperations]
   }
   
-  @scala.inline
-  implicit class IVaultClientOperationsMutableBuilder[Self <: IVaultClientOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultClientOperations](x: Self) {
     
-    @scala.inline
-    def setDisableCheckInReminderForCallingProcess(value: () => Unit): Self = StObject.set(x, "DisableCheckInReminderForCallingProcess", js.Any.fromFunction0(value))
+    inline def setDisableCheckInReminderForCallingProcess(value: () => Unit): Self = StObject.set(x, "DisableCheckInReminderForCallingProcess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnableCheckInReminderForCallingProcess(value: () => Unit): Self = StObject.set(x, "EnableCheckInReminderForCallingProcess", js.Any.fromFunction0(value))
+    inline def setEnableCheckInReminderForCallingProcess(value: () => Unit): Self = StObject.set(x, "EnableCheckInReminderForCallingProcess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOffline(value: () => Boolean): Self = StObject.set(x, "IsOffline", js.Any.fromFunction0(value))
+    inline def setIsOffline(value: () => Boolean): Self = StObject.set(x, "IsOffline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOnline(value: () => Boolean): Self = StObject.set(x, "IsOnline", js.Any.fromFunction0(value))
+    inline def setIsOnline(value: () => Boolean): Self = StObject.set(x, "IsOnline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetVaultToOffline(value: Double => MFOfflineTransitionResultFlags): Self = StObject.set(x, "SetVaultToOffline", js.Any.fromFunction1(value))
+    inline def setSetVaultToOffline(value: Double => MFOfflineTransitionResultFlags): Self = StObject.set(x, "SetVaultToOffline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVaultToOnline(value: Double => MFOnlineTransitionResultFlags): Self = StObject.set(x, "SetVaultToOnline", js.Any.fromFunction1(value))
+    inline def setSetVaultToOnline(value: Double => MFOnlineTransitionResultFlags): Self = StObject.set(x, "SetVaultToOnline", js.Any.fromFunction1(value))
   }
 }

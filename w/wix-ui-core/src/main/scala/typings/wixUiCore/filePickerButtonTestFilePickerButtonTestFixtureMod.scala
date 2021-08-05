@@ -48,11 +48,11 @@ object filePickerButtonTestFilePickerButtonTestFixtureMod {
     extends Component[js.Object, FilePickerButtonTestFixtureState, js.Any] {
     def this(props: js.Any) = this()
     
-    val filePickerButtonRef: js.Any = js.native
+    /* private */ val filePickerButtonRef: js.Any = js.native
     
-    val handleFilePickerButtonOnChange: js.Any = js.native
+    /* private */ val handleFilePickerButtonOnChange: js.Any = js.native
     
-    val handleResetButtonClick: js.Any = js.native
+    /* private */ val handleResetButtonClick: js.Any = js.native
   }
   
   trait FilePickerButtonTestFixtureState extends StObject {
@@ -63,23 +63,18 @@ object filePickerButtonTestFilePickerButtonTestFixtureMod {
   }
   object FilePickerButtonTestFixtureState {
     
-    @scala.inline
-    def apply(onChangeCount: Double, selectedFiles: js.Array[File]): FilePickerButtonTestFixtureState = {
+    inline def apply(onChangeCount: Double, selectedFiles: js.Array[File]): FilePickerButtonTestFixtureState = {
       val __obj = js.Dynamic.literal(onChangeCount = onChangeCount.asInstanceOf[js.Any], selectedFiles = selectedFiles.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilePickerButtonTestFixtureState]
     }
     
-    @scala.inline
-    implicit class FilePickerButtonTestFixtureStateMutableBuilder[Self <: FilePickerButtonTestFixtureState] (val x: Self) extends AnyVal {
+    extension [Self <: FilePickerButtonTestFixtureState](x: Self) {
       
-      @scala.inline
-      def setOnChangeCount(value: Double): Self = StObject.set(x, "onChangeCount", value.asInstanceOf[js.Any])
+      inline def setOnChangeCount(value: Double): Self = StObject.set(x, "onChangeCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedFiles(value: js.Array[File]): Self = StObject.set(x, "selectedFiles", value.asInstanceOf[js.Any])
+      inline def setSelectedFiles(value: js.Array[File]): Self = StObject.set(x, "selectedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedFilesVarargs(value: File*): Self = StObject.set(x, "selectedFiles", js.Array(value :_*))
+      inline def setSelectedFilesVarargs(value: File*): Self = StObject.set(x, "selectedFiles", js.Array(value :_*))
     }
   }
 }

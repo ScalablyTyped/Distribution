@@ -90,8 +90,7 @@ trait Task extends StObject {
 }
 object Task {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callback: js.Function,
     cancelScheduleRequest: () => Unit,
     invoke: js.Function,
@@ -106,49 +105,34 @@ object Task {
     __obj.asInstanceOf[Task]
   }
   
-  @scala.inline
-  implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+  extension [Self <: Task](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelFn(value: Task => Unit): Self = StObject.set(x, "cancelFn", js.Any.fromFunction1(value))
+    inline def setCancelFn(value: Task => Unit): Self = StObject.set(x, "cancelFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancelFnUndefined: Self = StObject.set(x, "cancelFn", js.undefined)
+    inline def setCancelFnUndefined: Self = StObject.set(x, "cancelFn", js.undefined)
     
-    @scala.inline
-    def setCancelScheduleRequest(value: () => Unit): Self = StObject.set(x, "cancelScheduleRequest", js.Any.fromFunction0(value))
+    inline def setCancelScheduleRequest(value: () => Unit): Self = StObject.set(x, "cancelScheduleRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setData(value: TaskData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: TaskData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setInvoke(value: js.Function): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
+    inline def setInvoke(value: js.Function): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunCount(value: Double): Self = StObject.set(x, "runCount", value.asInstanceOf[js.Any])
+    inline def setRunCount(value: Double): Self = StObject.set(x, "runCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleFn(value: Task => Unit): Self = StObject.set(x, "scheduleFn", js.Any.fromFunction1(value))
+    inline def setScheduleFn(value: Task => Unit): Self = StObject.set(x, "scheduleFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScheduleFnUndefined: Self = StObject.set(x, "scheduleFn", js.undefined)
+    inline def setScheduleFnUndefined: Self = StObject.set(x, "scheduleFn", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TaskType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TaskType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }
 }

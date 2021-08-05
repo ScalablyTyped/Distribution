@@ -22,23 +22,23 @@ class NgModel protected ()
     valueAccessors: js.Array[ControlValueAccessor]
   ) = this()
   
-  var _checkForErrors: js.Any = js.native
+  /* private */ var _checkForErrors: js.Any = js.native
   
-  var _checkName: js.Any = js.native
+  /* private */ var _checkName: js.Any = js.native
   
-  var _checkParentType: js.Any = js.native
+  /* private */ var _checkParentType: js.Any = js.native
   
-  var _isStandalone: js.Any = js.native
+  /* private */ var _isStandalone: js.Any = js.native
   
-  var _setUpControl: js.Any = js.native
+  /* private */ var _setUpControl: js.Any = js.native
   
-  var _setUpStandalone: js.Any = js.native
+  /* private */ var _setUpStandalone: js.Any = js.native
   
-  var _setUpdateStrategy: js.Any = js.native
+  /* private */ var _setUpdateStrategy: js.Any = js.native
   
-  var _updateDisabled: js.Any = js.native
+  /* private */ var _updateDisabled: js.Any = js.native
   
-  var _updateValue: js.Any = js.native
+  /* private */ var _updateValue: js.Any = js.native
   
   @JSName("control")
   val control_FNgModel: FormControl = js.native
@@ -128,6 +128,5 @@ object NgModel {
   @JSImport("@angular/forms", "NgModel.ngAcceptInputType_isDisabled")
   @js.native
   def ngAcceptInputType_isDisabled: Boolean | String = js.native
-  @scala.inline
-  def ngAcceptInputType_isDisabled_=(x: Boolean | String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngAcceptInputType_isDisabled")(x.asInstanceOf[js.Any])
+  inline def ngAcceptInputType_isDisabled_=(x: Boolean | String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngAcceptInputType_isDisabled")(x.asInstanceOf[js.Any])
 }

@@ -14,25 +14,19 @@ trait PartnerGeneralConfig extends StObject {
 }
 object PartnerGeneralConfig {
   
-  @scala.inline
-  def apply(): PartnerGeneralConfig = {
+  inline def apply(): PartnerGeneralConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartnerGeneralConfig]
   }
   
-  @scala.inline
-  implicit class PartnerGeneralConfigMutableBuilder[Self <: PartnerGeneralConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PartnerGeneralConfig](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

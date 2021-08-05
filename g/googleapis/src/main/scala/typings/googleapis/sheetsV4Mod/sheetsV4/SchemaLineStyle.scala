@@ -21,25 +21,19 @@ trait SchemaLineStyle extends StObject {
 }
 object SchemaLineStyle {
   
-  @scala.inline
-  def apply(): SchemaLineStyle = {
+  inline def apply(): SchemaLineStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLineStyle]
   }
   
-  @scala.inline
-  implicit class SchemaLineStyleMutableBuilder[Self <: SchemaLineStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLineStyle](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

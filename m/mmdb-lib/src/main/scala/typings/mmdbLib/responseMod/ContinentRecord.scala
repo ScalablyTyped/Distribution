@@ -21,22 +21,17 @@ trait ContinentRecord extends StObject {
 }
 object ContinentRecord {
   
-  @scala.inline
-  def apply(code: AF | AN | AS | EU | NA | OC | SA, geoname_id: Double, names: Names): ContinentRecord = {
+  inline def apply(code: AF | AN | AS | EU | NA | OC | SA, geoname_id: Double, names: Names): ContinentRecord = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], geoname_id = geoname_id.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinentRecord]
   }
   
-  @scala.inline
-  implicit class ContinentRecordMutableBuilder[Self <: ContinentRecord] (val x: Self) extends AnyVal {
+  extension [Self <: ContinentRecord](x: Self) {
     
-    @scala.inline
-    def setCode(value: AF | AN | AS | EU | NA | OC | SA): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: AF | AN | AS | EU | NA | OC | SA): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoname_id(value: Double): Self = StObject.set(x, "geoname_id", value.asInstanceOf[js.Any])
+    inline def setGeoname_id(value: Double): Self = StObject.set(x, "geoname_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNames(value: Names): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Names): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
   }
 }

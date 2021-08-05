@@ -24,8 +24,7 @@ object X509 {
     * @return returns RSAKey/KJUR.crypto.{ECDSA,DSA} object of public key
     */
   /* static member */
-  @scala.inline
-  def getPublicKeyFromCertHex(h: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFromCertHex")(h.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getPublicKeyFromCertHex(h: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFromCertHex")(h.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
   
   /**
     * get RSA/DSA/ECDSA public key object from PEM certificate string
@@ -35,8 +34,7 @@ object X509 {
     * NOTE: DSA is also supported since x509 1.1.2.
     */
   /* static member */
-  @scala.inline
-  def getPublicKeyFromCertPEM(sCertPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFromCertPEM")(sCertPEM.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getPublicKeyFromCertPEM(sCertPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFromCertPEM")(sCertPEM.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
   
   /**
     * get public key information from PEM certificate
@@ -52,8 +50,7 @@ object X509 {
     * NOTE: X509v1 certificate is also supported since x509.js 1.1.9.
     */
   /* static member */
-  @scala.inline
-  def getPublicKeyInfoPropOfCertPEM(sCertPEM: String): PublicKeyInfoPropOfCertPEMResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyInfoPropOfCertPEM")(sCertPEM.asInstanceOf[js.Any]).asInstanceOf[PublicKeyInfoPropOfCertPEMResult]
+  inline def getPublicKeyInfoPropOfCertPEM(sCertPEM: String): PublicKeyInfoPropOfCertPEMResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyInfoPropOfCertPEM")(sCertPEM.asInstanceOf[js.Any]).asInstanceOf[PublicKeyInfoPropOfCertPEMResult]
   
   /**
     * get string from hexadecimal string of ASN.1 DER AttributeTypeAndValue
@@ -69,8 +66,7 @@ object X509 {
     * X509.hex2attrTypeValue("...3008060355040a0c0161...", 128) → O=a
     */
   /* static member */
-  @scala.inline
-  def hex2attrTypeValue(hex: String, idx: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2attrTypeValue")(hex.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hex2attrTypeValue(hex: String, idx: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2attrTypeValue")(hex.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * get distinguished name string in OpenSSL online format from hexadecimal string of ASN.1 DER X.500 name
@@ -85,8 +81,7 @@ object X509 {
     * X509.hex2dn("3031310b3...") → /C=US/O=a/CN=b2+OU=b1
     */
   /* static member */
-  @scala.inline
-  def hex2dn(hex: String, idx: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2dn")(hex.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hex2dn(hex: String, idx: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2dn")(hex.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * get relative distinguished name string in OpenSSL online format from hexadecimal string of ASN.1 DER RDN
@@ -103,8 +98,7 @@ object X509 {
     * X509.hex2rdn("31143008060355040a0c01613008060355040a0c0162") → O=a+O=b
     */
   /* static member */
-  @scala.inline
-  def hex2rdn(hex: String, idx: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2rdn")(hex.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hex2rdn(hex: String, idx: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2rdn")(hex.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
   @JSGlobal("jsrsasign.X509.version")

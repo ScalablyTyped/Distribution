@@ -19,8 +19,7 @@ trait InteractiveButtonCall[T] extends StObject {
 }
 object InteractiveButtonCall {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     headers: InteractiveButtonHttpHeaders,
     params: T,
     statusCode: Double,
@@ -32,25 +31,18 @@ object InteractiveButtonCall {
     __obj.asInstanceOf[InteractiveButtonCall[T]]
   }
   
-  @scala.inline
-  implicit class InteractiveButtonCallMutableBuilder[Self <: InteractiveButtonCall[?], T] (val x: Self & InteractiveButtonCall[T]) extends AnyVal {
+  extension [Self <: InteractiveButtonCall[?], T](x: Self & InteractiveButtonCall[T]) {
     
-    @scala.inline
-    def setHeaders(value: InteractiveButtonHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: InteractiveButtonHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: InteractiveButtonCallType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: InteractiveButtonCallType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: InteractiveButtonUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: InteractiveButtonUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

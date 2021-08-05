@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TabStatus extends StObject
 object TabStatus {
   
-  @scala.inline
-  def complete: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete = "complete".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete]
+  inline def complete: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete = "complete".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.complete]
   
-  @scala.inline
-  def loading: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.loading = "loading".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.loading]
+  inline def loading: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.loading = "loading".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.loading]
 }

@@ -21,8 +21,7 @@ trait ConfirmationStatus extends StObject {
 }
 object ConfirmationStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     confirmationStatus: None | Confirmed_ | Denied,
     name: String,
     slotDetails: LexSlotDetails,
@@ -32,19 +31,14 @@ object ConfirmationStatus {
     __obj.asInstanceOf[ConfirmationStatus]
   }
   
-  @scala.inline
-  implicit class ConfirmationStatusMutableBuilder[Self <: ConfirmationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmationStatus](x: Self) {
     
-    @scala.inline
-    def setConfirmationStatus(value: None | Confirmed_ | Denied): Self = StObject.set(x, "confirmationStatus", value.asInstanceOf[js.Any])
+    inline def setConfirmationStatus(value: None | Confirmed_ | Denied): Self = StObject.set(x, "confirmationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotDetails(value: LexSlotDetails): Self = StObject.set(x, "slotDetails", value.asInstanceOf[js.Any])
+    inline def setSlotDetails(value: LexSlotDetails): Self = StObject.set(x, "slotDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
   }
 }

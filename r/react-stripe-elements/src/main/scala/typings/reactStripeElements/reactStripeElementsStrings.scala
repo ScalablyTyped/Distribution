@@ -11,48 +11,41 @@ object reactStripeElementsStrings {
   sealed trait card
     extends StObject
        with TokenType
-  @scala.inline
-  def card: card = "card".asInstanceOf[card]
+  inline def card: card = "card".asInstanceOf[card]
   
   @js.native
   sealed trait cardCvc
     extends StObject
        with TokenType
-  @scala.inline
-  def cardCvc: cardCvc = "cardCvc".asInstanceOf[cardCvc]
+  inline def cardCvc: cardCvc = "cardCvc".asInstanceOf[cardCvc]
   
   @js.native
   sealed trait cardExpiry
     extends StObject
        with TokenType
-  @scala.inline
-  def cardExpiry: cardExpiry = "cardExpiry".asInstanceOf[cardExpiry]
+  inline def cardExpiry: cardExpiry = "cardExpiry".asInstanceOf[cardExpiry]
   
   @js.native
   sealed trait cardNumber
     extends StObject
        with TokenType
-  @scala.inline
-  def cardNumber: cardNumber = "cardNumber".asInstanceOf[cardNumber]
+  inline def cardNumber: cardNumber = "cardNumber".asInstanceOf[cardNumber]
   
   @js.native
   sealed trait iban
     extends StObject
        with TokenType
-  @scala.inline
-  def iban: iban = "iban".asInstanceOf[iban]
+  inline def iban: iban = "iban".asInstanceOf[iban]
   
   @js.native
   sealed trait idealBank
     extends StObject
        with TokenType
-  @scala.inline
-  def idealBank: idealBank = "idealBank".asInstanceOf[idealBank]
+  inline def idealBank: idealBank = "idealBank".asInstanceOf[idealBank]
   
   @js.native
   sealed trait paymentRequestButton
     extends StObject
        with TokenType
-  @scala.inline
-  def paymentRequestButton: paymentRequestButton = "paymentRequestButton".asInstanceOf[paymentRequestButton]
+  inline def paymentRequestButton: paymentRequestButton = "paymentRequestButton".asInstanceOf[paymentRequestButton]
 }

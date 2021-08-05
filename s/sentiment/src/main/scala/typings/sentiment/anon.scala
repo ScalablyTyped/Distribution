@@ -13,17 +13,14 @@ object anon {
   }
   object Apply {
     
-    @scala.inline
-    def apply(apply: (js.Array[String], Double, Double) => Double): Apply = {
+    inline def apply(apply: (js.Array[String], Double, Double) => Double): Apply = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction3(apply))
       __obj.asInstanceOf[Apply]
     }
     
-    @scala.inline
-    implicit class ApplyMutableBuilder[Self <: Apply] (val x: Self) extends AnyVal {
+    extension [Self <: Apply](x: Self) {
       
-      @scala.inline
-      def setApply(value: (js.Array[String], Double, Double) => Double): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
+      inline def setApply(value: (js.Array[String], Double, Double) => Double): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
     }
   }
 }

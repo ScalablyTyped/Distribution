@@ -11,26 +11,21 @@ trait BootstrapSchedulerAppointmentOperation extends StObject {
   
   def cancel(): Unit
   
-  val instance: js.Any
+  /* protected */ val instance: js.Any
 }
 object BootstrapSchedulerAppointmentOperation {
   
-  @scala.inline
-  def apply(apply: () => Unit, cancel: () => Unit, instance: js.Any): BootstrapSchedulerAppointmentOperation = {
+  inline def apply(apply: () => Unit, cancel: () => Unit, instance: js.Any): BootstrapSchedulerAppointmentOperation = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction0(apply), cancel = js.Any.fromFunction0(cancel), instance = instance.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapSchedulerAppointmentOperation]
   }
   
-  @scala.inline
-  implicit class BootstrapSchedulerAppointmentOperationMutableBuilder[Self <: BootstrapSchedulerAppointmentOperation] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapSchedulerAppointmentOperation](x: Self) {
     
-    @scala.inline
-    def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
+    inline def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
   }
 }

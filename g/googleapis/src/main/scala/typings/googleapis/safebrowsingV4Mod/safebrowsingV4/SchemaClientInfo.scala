@@ -22,25 +22,19 @@ trait SchemaClientInfo extends StObject {
 }
 object SchemaClientInfo {
   
-  @scala.inline
-  def apply(): SchemaClientInfo = {
+  inline def apply(): SchemaClientInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClientInfo]
   }
   
-  @scala.inline
-  implicit class SchemaClientInfoMutableBuilder[Self <: SchemaClientInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClientInfo](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
+    inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
+    inline def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait AmplitudeConnectorProfileCredentials extends StObject {
 }
 object AmplitudeConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(apiKey: ApiKey, secretKey: SecretKey): AmplitudeConnectorProfileCredentials = {
+  inline def apply(apiKey: ApiKey, secretKey: SecretKey): AmplitudeConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmplitudeConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class AmplitudeConnectorProfileCredentialsMutableBuilder[Self <: AmplitudeConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: AmplitudeConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretKey(value: SecretKey): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+    inline def setSecretKey(value: SecretKey): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
   }
 }

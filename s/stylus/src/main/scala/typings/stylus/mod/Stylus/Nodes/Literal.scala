@@ -17,8 +17,7 @@ trait Literal
 }
 object Literal {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -41,16 +40,12 @@ object Literal {
     __obj.asInstanceOf[Literal]
   }
   
-  @scala.inline
-  implicit class LiteralMutableBuilder[Self <: Literal] (val x: Self) extends AnyVal {
+  extension [Self <: Literal](x: Self) {
     
-    @scala.inline
-    def setPrefixed(value: scala.Boolean): Self = StObject.set(x, "prefixed", value.asInstanceOf[js.Any])
+    inline def setPrefixed(value: scala.Boolean): Self = StObject.set(x, "prefixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

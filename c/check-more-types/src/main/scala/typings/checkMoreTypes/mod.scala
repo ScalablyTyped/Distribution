@@ -19,8 +19,7 @@ object mod extends Shortcut {
   }
   object CheckModeTypes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defined: /* s */ js.Any => Boolean,
       empty: /* s */ js.Any => Boolean,
       fn: /* s */ js.Any => Boolean,
@@ -37,11 +36,9 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CheckModeTypes]
     }
     
-    @scala.inline
-    implicit class CheckModeTypesMutableBuilder[Self <: CheckModeTypes] (val x: Self) extends AnyVal {
+    extension [Self <: CheckModeTypes](x: Self) {
       
-      @scala.inline
-      def setNot(value: Predicates): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: Predicates): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,8 +79,7 @@ object mod extends Shortcut {
   }
   object Predicates {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defined: /* s */ js.Any => Boolean,
       empty: /* s */ js.Any => Boolean,
       fn: /* s */ js.Any => Boolean,
@@ -99,35 +95,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Predicates]
     }
     
-    @scala.inline
-    implicit class PredicatesMutableBuilder[Self <: Predicates] (val x: Self) extends AnyVal {
+    extension [Self <: Predicates](x: Self) {
       
-      @scala.inline
-      def setDefined(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "defined", js.Any.fromFunction1(value))
+      inline def setDefined(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "defined", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmpty(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction1(value))
+      inline def setEmpty(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFn(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+      inline def setFn(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNumber(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "number", js.Any.fromFunction1(value))
+      inline def setNumber(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "number", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setObject(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
+      inline def setObject(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "object", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOneOf(value: js.Any): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
+      inline def setOneOf(value: js.Any): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnemptyString(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "unemptyString", js.Any.fromFunction1(value))
+      inline def setUnemptyString(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "unemptyString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWebUrl(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "webUrl", js.Any.fromFunction1(value))
+      inline def setWebUrl(value: /* s */ js.Any => Boolean): Self = StObject.set(x, "webUrl", js.Any.fromFunction1(value))
     }
   }
   

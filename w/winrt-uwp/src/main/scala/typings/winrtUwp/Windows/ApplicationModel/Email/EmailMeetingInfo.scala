@@ -53,8 +53,7 @@ trait EmailMeetingInfo extends StObject {
 }
 object EmailMeetingInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowNewTimeProposal: Boolean,
     appointmentOriginalStartTime: Date,
     appointmentRoamingId: String,
@@ -74,49 +73,34 @@ object EmailMeetingInfo {
     __obj.asInstanceOf[EmailMeetingInfo]
   }
   
-  @scala.inline
-  implicit class EmailMeetingInfoMutableBuilder[Self <: EmailMeetingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMeetingInfo](x: Self) {
     
-    @scala.inline
-    def setAllowNewTimeProposal(value: Boolean): Self = StObject.set(x, "allowNewTimeProposal", value.asInstanceOf[js.Any])
+    inline def setAllowNewTimeProposal(value: Boolean): Self = StObject.set(x, "allowNewTimeProposal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentOriginalStartTime(value: Date): Self = StObject.set(x, "appointmentOriginalStartTime", value.asInstanceOf[js.Any])
+    inline def setAppointmentOriginalStartTime(value: Date): Self = StObject.set(x, "appointmentOriginalStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentRoamingId(value: String): Self = StObject.set(x, "appointmentRoamingId", value.asInstanceOf[js.Any])
+    inline def setAppointmentRoamingId(value: String): Self = StObject.set(x, "appointmentRoamingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
+    inline def setIsAllDay(value: Boolean): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReportedOutOfDateByServer(value: Boolean): Self = StObject.set(x, "isReportedOutOfDateByServer", value.asInstanceOf[js.Any])
+    inline def setIsReportedOutOfDateByServer(value: Boolean): Self = StObject.set(x, "isReportedOutOfDateByServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsResponseRequested(value: Boolean): Self = StObject.set(x, "isResponseRequested", value.asInstanceOf[js.Any])
+    inline def setIsResponseRequested(value: Boolean): Self = StObject.set(x, "isResponseRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposedDuration(value: Double): Self = StObject.set(x, "proposedDuration", value.asInstanceOf[js.Any])
+    inline def setProposedDuration(value: Double): Self = StObject.set(x, "proposedDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposedStartTime(value: Date): Self = StObject.set(x, "proposedStartTime", value.asInstanceOf[js.Any])
+    inline def setProposedStartTime(value: Date): Self = StObject.set(x, "proposedStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrence(value: AppointmentRecurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
+    inline def setRecurrence(value: AppointmentRecurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrenceStartTime(value: Date): Self = StObject.set(x, "recurrenceStartTime", value.asInstanceOf[js.Any])
+    inline def setRecurrenceStartTime(value: Date): Self = StObject.set(x, "recurrenceStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteChangeNumber(value: Double): Self = StObject.set(x, "remoteChangeNumber", value.asInstanceOf[js.Any])
+    inline def setRemoteChangeNumber(value: Double): Self = StObject.set(x, "remoteChangeNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

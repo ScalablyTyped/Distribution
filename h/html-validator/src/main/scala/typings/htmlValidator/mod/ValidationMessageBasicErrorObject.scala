@@ -14,23 +14,18 @@ trait ValidationMessageBasicErrorObject extends StObject {
 }
 object ValidationMessageBasicErrorObject {
   
-  @scala.inline
-  def apply(): ValidationMessageBasicErrorObject = {
+  inline def apply(): ValidationMessageBasicErrorObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[ValidationMessageBasicErrorObject]
   }
   
-  @scala.inline
-  implicit class ValidationMessageBasicErrorObjectMutableBuilder[Self <: ValidationMessageBasicErrorObject] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationMessageBasicErrorObject](x: Self) {
     
-    @scala.inline
-    def setSubType(value: fatal): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
+    inline def setSubType(value: fatal): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
+    inline def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
     
-    @scala.inline
-    def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

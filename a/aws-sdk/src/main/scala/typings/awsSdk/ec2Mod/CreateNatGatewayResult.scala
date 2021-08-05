@@ -18,25 +18,19 @@ trait CreateNatGatewayResult extends StObject {
 }
 object CreateNatGatewayResult {
   
-  @scala.inline
-  def apply(): CreateNatGatewayResult = {
+  inline def apply(): CreateNatGatewayResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNatGatewayResult]
   }
   
-  @scala.inline
-  implicit class CreateNatGatewayResultMutableBuilder[Self <: CreateNatGatewayResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNatGatewayResult](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setNatGateway(value: NatGateway): Self = StObject.set(x, "NatGateway", value.asInstanceOf[js.Any])
+    inline def setNatGateway(value: NatGateway): Self = StObject.set(x, "NatGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatGatewayUndefined: Self = StObject.set(x, "NatGateway", js.undefined)
+    inline def setNatGatewayUndefined: Self = StObject.set(x, "NatGateway", js.undefined)
   }
 }

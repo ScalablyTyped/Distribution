@@ -13,22 +13,17 @@ trait DiscoverInstancesResponse extends StObject {
 }
 object DiscoverInstancesResponse {
   
-  @scala.inline
-  def apply(): DiscoverInstancesResponse = {
+  inline def apply(): DiscoverInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiscoverInstancesResponse]
   }
   
-  @scala.inline
-  implicit class DiscoverInstancesResponseMutableBuilder[Self <: DiscoverInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DiscoverInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setInstances(value: HttpInstanceSummaryList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: HttpInstanceSummaryList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: HttpInstanceSummary*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: HttpInstanceSummary*): Self = StObject.set(x, "Instances", js.Array(value :_*))
   }
 }

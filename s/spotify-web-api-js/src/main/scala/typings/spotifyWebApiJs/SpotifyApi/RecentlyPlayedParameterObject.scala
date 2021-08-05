@@ -14,31 +14,23 @@ trait RecentlyPlayedParameterObject extends StObject {
 }
 object RecentlyPlayedParameterObject {
   
-  @scala.inline
-  def apply(): RecentlyPlayedParameterObject = {
+  inline def apply(): RecentlyPlayedParameterObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecentlyPlayedParameterObject]
   }
   
-  @scala.inline
-  implicit class RecentlyPlayedParameterObjectMutableBuilder[Self <: RecentlyPlayedParameterObject] (val x: Self) extends AnyVal {
+  extension [Self <: RecentlyPlayedParameterObject](x: Self) {
     
-    @scala.inline
-    def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
   }
 }

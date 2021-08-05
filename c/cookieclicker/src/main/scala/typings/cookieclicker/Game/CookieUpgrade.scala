@@ -11,16 +11,13 @@ trait CookieUpgrade extends StObject {
 }
 object CookieUpgrade {
   
-  @scala.inline
-  def apply(): CookieUpgrade = {
+  inline def apply(): CookieUpgrade = {
     val __obj = js.Dynamic.literal(pool = "cookie")
     __obj.asInstanceOf[CookieUpgrade]
   }
   
-  @scala.inline
-  implicit class CookieUpgradeMutableBuilder[Self <: CookieUpgrade] (val x: Self) extends AnyVal {
+  extension [Self <: CookieUpgrade](x: Self) {
     
-    @scala.inline
-    def setPool(value: cookie): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: cookie): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
   }
 }

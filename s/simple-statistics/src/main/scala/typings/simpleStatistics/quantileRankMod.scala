@@ -10,6 +10,5 @@ object quantileRankMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(x: js.Array[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(x: js.Array[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

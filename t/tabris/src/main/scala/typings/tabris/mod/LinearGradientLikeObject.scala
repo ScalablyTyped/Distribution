@@ -18,25 +18,19 @@ trait LinearGradientLikeObject
 }
 object LinearGradientLikeObject {
   
-  @scala.inline
-  def apply(colorStops: js.Array[ColorValue | (js.Tuple2[ColorValue, PercentValue])]): LinearGradientLikeObject = {
+  inline def apply(colorStops: js.Array[ColorValue | (js.Tuple2[ColorValue, PercentValue])]): LinearGradientLikeObject = {
     val __obj = js.Dynamic.literal(colorStops = colorStops.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearGradientLikeObject]
   }
   
-  @scala.inline
-  implicit class LinearGradientLikeObjectMutableBuilder[Self <: LinearGradientLikeObject] (val x: Self) extends AnyVal {
+  extension [Self <: LinearGradientLikeObject](x: Self) {
     
-    @scala.inline
-    def setColorStops(value: js.Array[ColorValue | (js.Tuple2[ColorValue, PercentValue])]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
+    inline def setColorStops(value: js.Array[ColorValue | (js.Tuple2[ColorValue, PercentValue])]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorStopsVarargs(value: (ColorValue | (js.Tuple2[ColorValue, PercentValue]))*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+    inline def setColorStopsVarargs(value: (ColorValue | (js.Tuple2[ColorValue, PercentValue]))*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
     
-    @scala.inline
-    def setDirection(value: Double | left | top | right | bottom): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double | left | top | right | bottom): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait WebhookTestingGateway extends StObject {
 }
 object WebhookTestingGateway {
   
-  @scala.inline
-  def apply(sampleNotification: (WebhookNotificationKind, String) => js.Promise[SampleNotification]): WebhookTestingGateway = {
+  inline def apply(sampleNotification: (WebhookNotificationKind, String) => js.Promise[SampleNotification]): WebhookTestingGateway = {
     val __obj = js.Dynamic.literal(sampleNotification = js.Any.fromFunction2(sampleNotification))
     __obj.asInstanceOf[WebhookTestingGateway]
   }
   
-  @scala.inline
-  implicit class WebhookTestingGatewayMutableBuilder[Self <: WebhookTestingGateway] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookTestingGateway](x: Self) {
     
-    @scala.inline
-    def setSampleNotification(value: (WebhookNotificationKind, String) => js.Promise[SampleNotification]): Self = StObject.set(x, "sampleNotification", js.Any.fromFunction2(value))
+    inline def setSampleNotification(value: (WebhookNotificationKind, String) => js.Promise[SampleNotification]): Self = StObject.set(x, "sampleNotification", js.Any.fromFunction2(value))
   }
 }

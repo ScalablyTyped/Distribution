@@ -19,8 +19,7 @@ trait Encryptor
      with XInitialization
 object Encryptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEncryptionResultListener: XEncryptionResultListener => Unit,
     endMission: () => Boolean,

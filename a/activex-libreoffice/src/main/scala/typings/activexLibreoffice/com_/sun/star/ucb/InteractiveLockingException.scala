@@ -22,16 +22,13 @@ trait InteractiveLockingException
 }
 object InteractiveLockingException {
   
-  @scala.inline
-  def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Url: String): InteractiveLockingException = {
+  inline def apply(Classification: InteractionClassification, Context: XInterface, Message: String, Url: String): InteractiveLockingException = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveLockingException]
   }
   
-  @scala.inline
-  implicit class InteractiveLockingExceptionMutableBuilder[Self <: InteractiveLockingException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveLockingException](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

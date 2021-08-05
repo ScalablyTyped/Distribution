@@ -28,37 +28,27 @@ trait OutputDestinationSettings extends StObject {
 }
 object OutputDestinationSettings {
   
-  @scala.inline
-  def apply(): OutputDestinationSettings = {
+  inline def apply(): OutputDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputDestinationSettings]
   }
   
-  @scala.inline
-  implicit class OutputDestinationSettingsMutableBuilder[Self <: OutputDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: OutputDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setPasswordParam(value: string): Self = StObject.set(x, "PasswordParam", value.asInstanceOf[js.Any])
+    inline def setPasswordParam(value: string): Self = StObject.set(x, "PasswordParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordParamUndefined: Self = StObject.set(x, "PasswordParam", js.undefined)
+    inline def setPasswordParamUndefined: Self = StObject.set(x, "PasswordParam", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: string): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: string): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     
-    @scala.inline
-    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     
-    @scala.inline
-    def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait CreateSnapshotFromVolumeRecoveryPointInput extends StObject {
 }
 object CreateSnapshotFromVolumeRecoveryPointInput {
   
-  @scala.inline
-  def apply(SnapshotDescription: SnapshotDescription, VolumeARN: VolumeARN): CreateSnapshotFromVolumeRecoveryPointInput = {
+  inline def apply(SnapshotDescription: SnapshotDescription, VolumeARN: VolumeARN): CreateSnapshotFromVolumeRecoveryPointInput = {
     val __obj = js.Dynamic.literal(SnapshotDescription = SnapshotDescription.asInstanceOf[js.Any], VolumeARN = VolumeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSnapshotFromVolumeRecoveryPointInput]
   }
   
-  @scala.inline
-  implicit class CreateSnapshotFromVolumeRecoveryPointInputMutableBuilder[Self <: CreateSnapshotFromVolumeRecoveryPointInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSnapshotFromVolumeRecoveryPointInput](x: Self) {
     
-    @scala.inline
-    def setSnapshotDescription(value: SnapshotDescription): Self = StObject.set(x, "SnapshotDescription", value.asInstanceOf[js.Any])
+    inline def setSnapshotDescription(value: SnapshotDescription): Self = StObject.set(x, "SnapshotDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
   }
 }

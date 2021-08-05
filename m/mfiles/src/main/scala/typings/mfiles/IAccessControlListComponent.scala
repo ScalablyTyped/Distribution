@@ -36,8 +36,7 @@ trait IAccessControlListComponent extends StObject {
 }
 object IAccessControlListComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessControlEntries: IAccessControlEntryContainer,
     CanDeactivate: Boolean,
     Clone: () => IAccessControlListComponent,
@@ -57,49 +56,34 @@ object IAccessControlListComponent {
     __obj.asInstanceOf[IAccessControlListComponent]
   }
   
-  @scala.inline
-  implicit class IAccessControlListComponentMutableBuilder[Self <: IAccessControlListComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IAccessControlListComponent](x: Self) {
     
-    @scala.inline
-    def setAccessControlEntries(value: IAccessControlEntryContainer): Self = StObject.set(x, "AccessControlEntries", value.asInstanceOf[js.Any])
+    inline def setAccessControlEntries(value: IAccessControlEntryContainer): Self = StObject.set(x, "AccessControlEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDeactivate(value: Boolean): Self = StObject.set(x, "CanDeactivate", value.asInstanceOf[js.Any])
+    inline def setCanDeactivate(value: Boolean): Self = StObject.set(x, "CanDeactivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IAccessControlListComponent): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAccessControlListComponent): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCurrentUserBinding(value: Double): Self = StObject.set(x, "CurrentUserBinding", value.asInstanceOf[js.Any])
+    inline def setCurrentUserBinding(value: Double): Self = StObject.set(x, "CurrentUserBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetACEByUserOrGroupID(value: (Double, Boolean) => IAccessControlEntryData): Self = StObject.set(x, "GetACEByUserOrGroupID", js.Any.fromFunction2(value))
+    inline def setGetACEByUserOrGroupID(value: (Double, Boolean) => IAccessControlEntryData): Self = StObject.set(x, "GetACEByUserOrGroupID", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetACEKeyByUserOrGroupID(value: (Double, Boolean) => IAccessControlEntryKey): Self = StObject.set(x, "GetACEKeyByUserOrGroupID", js.Any.fromFunction2(value))
+    inline def setGetACEKeyByUserOrGroupID(value: (Double, Boolean) => IAccessControlEntryKey): Self = StObject.set(x, "GetACEKeyByUserOrGroupID", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasCurrentUser(value: Boolean): Self = StObject.set(x, "HasCurrentUser", value.asInstanceOf[js.Any])
+    inline def setHasCurrentUser(value: Boolean): Self = StObject.set(x, "HasCurrentUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCurrentUserBinding(value: Boolean): Self = StObject.set(x, "HasCurrentUserBinding", value.asInstanceOf[js.Any])
+    inline def setHasCurrentUserBinding(value: Boolean): Self = StObject.set(x, "HasCurrentUserBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNamedACLLink(value: Boolean): Self = StObject.set(x, "HasNamedACLLink", value.asInstanceOf[js.Any])
+    inline def setHasNamedACLLink(value: Boolean): Self = StObject.set(x, "HasNamedACLLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPseudoUsers(value: Boolean): Self = StObject.set(x, "HasPseudoUsers", value.asInstanceOf[js.Any])
+    inline def setHasPseudoUsers(value: Boolean): Self = StObject.set(x, "HasPseudoUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedACLLink(value: Double): Self = StObject.set(x, "NamedACLLink", value.asInstanceOf[js.Any])
+    inline def setNamedACLLink(value: Double): Self = StObject.set(x, "NamedACLLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetCurrentUserBinding(value: () => Unit): Self = StObject.set(x, "ResetCurrentUserBinding", js.Any.fromFunction0(value))
+    inline def setResetCurrentUserBinding(value: () => Unit): Self = StObject.set(x, "ResetCurrentUserBinding", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetNamedACLLink(value: () => Unit): Self = StObject.set(x, "ResetNamedACLLink", js.Any.fromFunction0(value))
+    inline def setResetNamedACLLink(value: () => Unit): Self = StObject.set(x, "ResetNamedACLLink", js.Any.fromFunction0(value))
   }
 }

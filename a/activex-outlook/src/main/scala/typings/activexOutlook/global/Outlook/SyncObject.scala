@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.SyncObject")
 @js.native
-class SyncObject protected ()
+/* private */ class SyncObject ()
   extends StObject
      with typings.activexOutlook.Outlook.SyncObject {
   
@@ -20,7 +20,7 @@ class SyncObject protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.SyncObject_typekey")
   var OutlookDotSyncObject_typekey: typings.activexOutlook.Outlook.SyncObject = js.native
   

@@ -16,8 +16,7 @@ trait Association
 }
 object Association {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     associationDirection: AssociationDirection,
@@ -29,16 +28,12 @@ object Association {
     __obj.asInstanceOf[Association]
   }
   
-  @scala.inline
-  implicit class AssociationMutableBuilder[Self <: Association] (val x: Self) extends AnyVal {
+  extension [Self <: Association](x: Self) {
     
-    @scala.inline
-    def setAssociationDirection(value: AssociationDirection): Self = StObject.set(x, "associationDirection", value.asInstanceOf[js.Any])
+    inline def setAssociationDirection(value: AssociationDirection): Self = StObject.set(x, "associationDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRef(value: BaseElement): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
+    inline def setSourceRef(value: BaseElement): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRef(value: BaseElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+    inline def setTargetRef(value: BaseElement): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait EmptyInfiniteNonEmpty[Holder /* <: js.Array[js.Any] */, Tuple /* <: js.Arr
 }
 object EmptyInfiniteNonEmpty {
   
-  @scala.inline
-  def apply[Holder /* <: js.Array[js.Any] */, Tuple /* <: js.Array[js.Any] */](empty: Holder, infinite: js.Any, nonEmpty: js.Any): EmptyInfiniteNonEmpty[Holder, Tuple] = {
+  inline def apply[Holder /* <: js.Array[js.Any] */, Tuple /* <: js.Array[js.Any] */](empty: Holder, infinite: js.Any, nonEmpty: js.Any): EmptyInfiniteNonEmpty[Holder, Tuple] = {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmptyInfiniteNonEmpty[Holder, Tuple]]
   }
   
-  @scala.inline
-  implicit class EmptyInfiniteNonEmptyMutableBuilder[Self <: EmptyInfiniteNonEmpty[?, ?], Holder /* <: js.Array[js.Any] */, Tuple /* <: js.Array[js.Any] */] (val x: Self & (EmptyInfiniteNonEmpty[Holder, Tuple])) extends AnyVal {
+  extension [Self <: EmptyInfiniteNonEmpty[?, ?], Holder /* <: js.Array[js.Any] */, Tuple /* <: js.Array[js.Any] */](x: Self & (EmptyInfiniteNonEmpty[Holder, Tuple])) {
     
-    @scala.inline
-    def setEmpty(value: Holder): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: Holder): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfinite(value: js.Any): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+    inline def setInfinite(value: js.Any): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEmpty(value: js.Any): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
+    inline def setNonEmpty(value: js.Any): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
   }
 }

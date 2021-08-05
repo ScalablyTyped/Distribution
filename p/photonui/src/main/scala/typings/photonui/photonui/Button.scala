@@ -34,8 +34,7 @@ trait Button
 }
 object Button {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     appearance: String,
@@ -71,37 +70,26 @@ object Button {
     __obj.asInstanceOf[Button]
   }
   
-  @scala.inline
-  implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+  extension [Self <: Button](x: Self) {
     
-    @scala.inline
-    def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    inline def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonColor(value: String): Self = StObject.set(x, "buttonColor", value.asInstanceOf[js.Any])
+    inline def setButtonColor(value: String): Self = StObject.set(x, "buttonColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftIcon(value: BaseIcon): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
+    inline def setLeftIcon(value: BaseIcon): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftIconName(value: String): Self = StObject.set(x, "leftIconName", value.asInstanceOf[js.Any])
+    inline def setLeftIconName(value: String): Self = StObject.set(x, "leftIconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftIconVisible(value: Boolean): Self = StObject.set(x, "leftIconVisible", value.asInstanceOf[js.Any])
+    inline def setLeftIconVisible(value: Boolean): Self = StObject.set(x, "leftIconVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightIcon(value: BaseIcon): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
+    inline def setRightIcon(value: BaseIcon): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightIconName(value: String): Self = StObject.set(x, "rightIconName", value.asInstanceOf[js.Any])
+    inline def setRightIconName(value: String): Self = StObject.set(x, "rightIconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightIconVisible(value: Boolean): Self = StObject.set(x, "rightIconVisible", value.asInstanceOf[js.Any])
+    inline def setRightIconVisible(value: Boolean): Self = StObject.set(x, "rightIconVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextVisible(value: Boolean): Self = StObject.set(x, "textVisible", value.asInstanceOf[js.Any])
+    inline def setTextVisible(value: Boolean): Self = StObject.set(x, "textVisible", value.asInstanceOf[js.Any])
   }
 }

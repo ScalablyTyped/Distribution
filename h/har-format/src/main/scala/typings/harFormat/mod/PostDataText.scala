@@ -18,16 +18,13 @@ trait PostDataText extends StObject {
 }
 object PostDataText {
   
-  @scala.inline
-  def apply(text: String): PostDataText = {
+  inline def apply(text: String): PostDataText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostDataText]
   }
   
-  @scala.inline
-  implicit class PostDataTextMutableBuilder[Self <: PostDataText] (val x: Self) extends AnyVal {
+  extension [Self <: PostDataText](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

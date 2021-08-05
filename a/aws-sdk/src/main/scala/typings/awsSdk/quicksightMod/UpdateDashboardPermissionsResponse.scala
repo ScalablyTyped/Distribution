@@ -33,46 +33,33 @@ trait UpdateDashboardPermissionsResponse extends StObject {
 }
 object UpdateDashboardPermissionsResponse {
   
-  @scala.inline
-  def apply(): UpdateDashboardPermissionsResponse = {
+  inline def apply(): UpdateDashboardPermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDashboardPermissionsResponse]
   }
   
-  @scala.inline
-  implicit class UpdateDashboardPermissionsResponseMutableBuilder[Self <: UpdateDashboardPermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDashboardPermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setDashboardArn(value: Arn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
+    inline def setDashboardArn(value: Arn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
+    inline def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
     
-    @scala.inline
-    def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
+    inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: ResourcePermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: ResourcePermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -26,29 +26,22 @@ object anon {
   }
   object RESIZEBEZIER {
     
-    @scala.inline
-    def apply(): RESIZEBEZIER = {
+    inline def apply(): RESIZEBEZIER = {
       val __obj = js.Dynamic.literal(RESIZE_BEZIER = "bezierInterpolation", RESIZE_BICUBIC = "bicubicInterpolation", RESIZE_BILINEAR = "bilinearInterpolation", RESIZE_HERMITE = "hermiteInterpolation", RESIZE_NEAREST_NEIGHBOR = "nearestNeighbor")
       __obj.asInstanceOf[RESIZEBEZIER]
     }
     
-    @scala.inline
-    implicit class RESIZEBEZIERMutableBuilder[Self <: RESIZEBEZIER] (val x: Self) extends AnyVal {
+    extension [Self <: RESIZEBEZIER](x: Self) {
       
-      @scala.inline
-      def setRESIZE_BEZIER(value: bezierInterpolation): Self = StObject.set(x, "RESIZE_BEZIER", value.asInstanceOf[js.Any])
+      inline def setRESIZE_BEZIER(value: bezierInterpolation): Self = StObject.set(x, "RESIZE_BEZIER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESIZE_BICUBIC(value: bicubicInterpolation): Self = StObject.set(x, "RESIZE_BICUBIC", value.asInstanceOf[js.Any])
+      inline def setRESIZE_BICUBIC(value: bicubicInterpolation): Self = StObject.set(x, "RESIZE_BICUBIC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESIZE_BILINEAR(value: bilinearInterpolation): Self = StObject.set(x, "RESIZE_BILINEAR", value.asInstanceOf[js.Any])
+      inline def setRESIZE_BILINEAR(value: bilinearInterpolation): Self = StObject.set(x, "RESIZE_BILINEAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESIZE_HERMITE(value: hermiteInterpolation): Self = StObject.set(x, "RESIZE_HERMITE", value.asInstanceOf[js.Any])
+      inline def setRESIZE_HERMITE(value: hermiteInterpolation): Self = StObject.set(x, "RESIZE_HERMITE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESIZE_NEAREST_NEIGHBOR(value: nearestNeighbor): Self = StObject.set(x, "RESIZE_NEAREST_NEIGHBOR", value.asInstanceOf[js.Any])
+      inline def setRESIZE_NEAREST_NEIGHBOR(value: nearestNeighbor): Self = StObject.set(x, "RESIZE_NEAREST_NEIGHBOR", value.asInstanceOf[js.Any])
     }
   }
 }

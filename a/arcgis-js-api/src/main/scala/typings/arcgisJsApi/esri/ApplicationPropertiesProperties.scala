@@ -15,19 +15,15 @@ trait ApplicationPropertiesProperties extends StObject {
 }
 object ApplicationPropertiesProperties {
   
-  @scala.inline
-  def apply(): ApplicationPropertiesProperties = {
+  inline def apply(): ApplicationPropertiesProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationPropertiesProperties]
   }
   
-  @scala.inline
-  implicit class ApplicationPropertiesPropertiesMutableBuilder[Self <: ApplicationPropertiesProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationPropertiesProperties](x: Self) {
     
-    @scala.inline
-    def setViewing(value: ViewingProperties): Self = StObject.set(x, "viewing", value.asInstanceOf[js.Any])
+    inline def setViewing(value: ViewingProperties): Self = StObject.set(x, "viewing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewingUndefined: Self = StObject.set(x, "viewing", js.undefined)
+    inline def setViewingUndefined: Self = StObject.set(x, "viewing", js.undefined)
   }
 }

@@ -23,22 +23,17 @@ trait HostedZoneSummary extends StObject {
 }
 object HostedZoneSummary {
   
-  @scala.inline
-  def apply(HostedZoneId: ResourceId, Name: DNSName, Owner: HostedZoneOwner): HostedZoneSummary = {
+  inline def apply(HostedZoneId: ResourceId, Name: DNSName, Owner: HostedZoneOwner): HostedZoneSummary = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Owner = Owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedZoneSummary]
   }
   
-  @scala.inline
-  implicit class HostedZoneSummaryMutableBuilder[Self <: HostedZoneSummary] (val x: Self) extends AnyVal {
+  extension [Self <: HostedZoneSummary](x: Self) {
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: HostedZoneOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: HostedZoneOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
   }
 }

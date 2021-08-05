@@ -13,118 +13,101 @@ object reactPowerTooltipStrings {
   sealed trait `bottom center`
     extends StObject
        with PositionType
-  @scala.inline
-  def `bottom center`: `bottom center` = ("bottom center").asInstanceOf[`bottom center`]
+  inline def `bottom center`: `bottom center` = ("bottom center").asInstanceOf[`bottom center`]
   
   @js.native
   sealed trait `bottom end`
     extends StObject
        with PositionType
-  @scala.inline
-  def `bottom end`: `bottom end` = ("bottom end").asInstanceOf[`bottom end`]
+  inline def `bottom end`: `bottom end` = ("bottom end").asInstanceOf[`bottom end`]
   
   @js.native
   sealed trait `bottom start`
     extends StObject
        with PositionType
-  @scala.inline
-  def `bottom start`: `bottom start` = ("bottom start").asInstanceOf[`bottom start`]
+  inline def `bottom start`: `bottom start` = ("bottom start").asInstanceOf[`bottom start`]
   
   @js.native
   sealed trait bounce
     extends StObject
        with AnimationType
-  @scala.inline
-  def bounce: bounce = "bounce".asInstanceOf[bounce]
+  inline def bounce: bounce = "bounce".asInstanceOf[bounce]
   
   @js.native
   sealed trait center
     extends StObject
        with ArrowAlignType
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait end
     extends StObject
        with ArrowAlignType
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait fade
     extends StObject
        with AnimationType
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
   sealed trait `left center`
     extends StObject
        with PositionType
-  @scala.inline
-  def `left center`: `left center` = ("left center").asInstanceOf[`left center`]
+  inline def `left center`: `left center` = ("left center").asInstanceOf[`left center`]
   
   @js.native
   sealed trait `left end`
     extends StObject
        with PositionType
-  @scala.inline
-  def `left end`: `left end` = ("left end").asInstanceOf[`left end`]
+  inline def `left end`: `left end` = ("left end").asInstanceOf[`left end`]
   
   @js.native
   sealed trait `left start`
     extends StObject
        with PositionType
-  @scala.inline
-  def `left start`: `left start` = ("left start").asInstanceOf[`left start`]
+  inline def `left start`: `left start` = ("left start").asInstanceOf[`left start`]
   
   @js.native
   sealed trait `right center`
     extends StObject
        with PositionType
-  @scala.inline
-  def `right center`: `right center` = ("right center").asInstanceOf[`right center`]
+  inline def `right center`: `right center` = ("right center").asInstanceOf[`right center`]
   
   @js.native
   sealed trait `right end`
     extends StObject
        with PositionType
-  @scala.inline
-  def `right end`: `right end` = ("right end").asInstanceOf[`right end`]
+  inline def `right end`: `right end` = ("right end").asInstanceOf[`right end`]
   
   @js.native
   sealed trait `right start`
     extends StObject
        with PositionType
-  @scala.inline
-  def `right start`: `right start` = ("right start").asInstanceOf[`right start`]
+  inline def `right start`: `right start` = ("right start").asInstanceOf[`right start`]
   
   @js.native
   sealed trait start
     extends StObject
        with ArrowAlignType
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait `top center`
     extends StObject
        with PositionType
-  @scala.inline
-  def `top center`: `top center` = ("top center").asInstanceOf[`top center`]
+  inline def `top center`: `top center` = ("top center").asInstanceOf[`top center`]
   
   @js.native
   sealed trait `top end`
     extends StObject
        with PositionType
-  @scala.inline
-  def `top end`: `top end` = ("top end").asInstanceOf[`top end`]
+  inline def `top end`: `top end` = ("top end").asInstanceOf[`top end`]
   
   @js.native
   sealed trait `top start`
     extends StObject
        with PositionType
-  @scala.inline
-  def `top start`: `top start` = ("top start").asInstanceOf[`top start`]
+  inline def `top start`: `top start` = ("top start").asInstanceOf[`top start`]
 }

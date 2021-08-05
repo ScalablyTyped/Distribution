@@ -18,22 +18,17 @@ trait ocrVehicleLicenseResponse extends StObject {
 }
 object ocrVehicleLicenseResponse {
   
-  @scala.inline
-  def apply(log_id: String, words_result: StringDictionary[Words], words_result_num: Double): ocrVehicleLicenseResponse = {
+  inline def apply(log_id: String, words_result: StringDictionary[Words], words_result_num: Double): ocrVehicleLicenseResponse = {
     val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], words_result = words_result.asInstanceOf[js.Any], words_result_num = words_result_num.asInstanceOf[js.Any])
     __obj.asInstanceOf[ocrVehicleLicenseResponse]
   }
   
-  @scala.inline
-  implicit class ocrVehicleLicenseResponseMutableBuilder[Self <: ocrVehicleLicenseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ocrVehicleLicenseResponse](x: Self) {
     
-    @scala.inline
-    def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWords_result(value: StringDictionary[Words]): Self = StObject.set(x, "words_result", value.asInstanceOf[js.Any])
+    inline def setWords_result(value: StringDictionary[Words]): Self = StObject.set(x, "words_result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWords_result_num(value: Double): Self = StObject.set(x, "words_result_num", value.asInstanceOf[js.Any])
+    inline def setWords_result_num(value: Double): Self = StObject.set(x, "words_result_num", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ object kinesisFirehoseTransformationMod {
   }
   object FirehoseRecordMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       approximateArrivalTimestamp: Double,
       partitionKey: String,
       sequenceNumber: String,
@@ -34,23 +33,17 @@ object kinesisFirehoseTransformationMod {
       __obj.asInstanceOf[FirehoseRecordMetadata]
     }
     
-    @scala.inline
-    implicit class FirehoseRecordMetadataMutableBuilder[Self <: FirehoseRecordMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: FirehoseRecordMetadata](x: Self) {
       
-      @scala.inline
-      def setApproximateArrivalTimestamp(value: Double): Self = StObject.set(x, "approximateArrivalTimestamp", value.asInstanceOf[js.Any])
+      inline def setApproximateArrivalTimestamp(value: Double): Self = StObject.set(x, "approximateArrivalTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      inline def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardId(value: String): Self = StObject.set(x, "shardId", value.asInstanceOf[js.Any])
+      inline def setShardId(value: String): Self = StObject.set(x, "shardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubsequenceNumber(value: String): Self = StObject.set(x, "subsequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSubsequenceNumber(value: String): Self = StObject.set(x, "subsequenceNumber", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,14 +55,11 @@ object kinesisFirehoseTransformationMod {
   trait FirehoseRecordTransformationStatus extends StObject
   object FirehoseRecordTransformationStatus {
     
-    @scala.inline
-    def Dropped: typings.awsLambda.awsLambdaStrings.Dropped = "Dropped".asInstanceOf[typings.awsLambda.awsLambdaStrings.Dropped]
+    inline def Dropped: typings.awsLambda.awsLambdaStrings.Dropped = "Dropped".asInstanceOf[typings.awsLambda.awsLambdaStrings.Dropped]
     
-    @scala.inline
-    def Ok: typings.awsLambda.awsLambdaStrings.Ok = "Ok".asInstanceOf[typings.awsLambda.awsLambdaStrings.Ok]
+    inline def Ok: typings.awsLambda.awsLambdaStrings.Ok = "Ok".asInstanceOf[typings.awsLambda.awsLambdaStrings.Ok]
     
-    @scala.inline
-    def ProcessingFailed: typings.awsLambda.awsLambdaStrings.ProcessingFailed = "ProcessingFailed".asInstanceOf[typings.awsLambda.awsLambdaStrings.ProcessingFailed]
+    inline def ProcessingFailed: typings.awsLambda.awsLambdaStrings.ProcessingFailed = "ProcessingFailed".asInstanceOf[typings.awsLambda.awsLambdaStrings.ProcessingFailed]
   }
   
   type FirehoseTransformationCallback = Callback[FirehoseTransformationResult]
@@ -86,8 +76,7 @@ object kinesisFirehoseTransformationMod {
   }
   object FirehoseTransformationEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deliveryStreamArn: String,
       invocationId: String,
       records: js.Array[FirehoseTransformationEventRecord],
@@ -97,23 +86,17 @@ object kinesisFirehoseTransformationMod {
       __obj.asInstanceOf[FirehoseTransformationEvent]
     }
     
-    @scala.inline
-    implicit class FirehoseTransformationEventMutableBuilder[Self <: FirehoseTransformationEvent] (val x: Self) extends AnyVal {
+    extension [Self <: FirehoseTransformationEvent](x: Self) {
       
-      @scala.inline
-      def setDeliveryStreamArn(value: String): Self = StObject.set(x, "deliveryStreamArn", value.asInstanceOf[js.Any])
+      inline def setDeliveryStreamArn(value: String): Self = StObject.set(x, "deliveryStreamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationId(value: String): Self = StObject.set(x, "invocationId", value.asInstanceOf[js.Any])
+      inline def setInvocationId(value: String): Self = StObject.set(x, "invocationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecords(value: js.Array[FirehoseTransformationEventRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[FirehoseTransformationEventRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: FirehoseTransformationEventRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: FirehoseTransformationEventRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,29 +113,22 @@ object kinesisFirehoseTransformationMod {
   }
   object FirehoseTransformationEventRecord {
     
-    @scala.inline
-    def apply(approximateArrivalTimestamp: Double, data: String, recordId: String): FirehoseTransformationEventRecord = {
+    inline def apply(approximateArrivalTimestamp: Double, data: String, recordId: String): FirehoseTransformationEventRecord = {
       val __obj = js.Dynamic.literal(approximateArrivalTimestamp = approximateArrivalTimestamp.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], recordId = recordId.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirehoseTransformationEventRecord]
     }
     
-    @scala.inline
-    implicit class FirehoseTransformationEventRecordMutableBuilder[Self <: FirehoseTransformationEventRecord] (val x: Self) extends AnyVal {
+    extension [Self <: FirehoseTransformationEventRecord](x: Self) {
       
-      @scala.inline
-      def setApproximateArrivalTimestamp(value: Double): Self = StObject.set(x, "approximateArrivalTimestamp", value.asInstanceOf[js.Any])
+      inline def setApproximateArrivalTimestamp(value: Double): Self = StObject.set(x, "approximateArrivalTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisRecordMetadata(value: FirehoseRecordMetadata): Self = StObject.set(x, "kinesisRecordMetadata", value.asInstanceOf[js.Any])
+      inline def setKinesisRecordMetadata(value: FirehoseRecordMetadata): Self = StObject.set(x, "kinesisRecordMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisRecordMetadataUndefined: Self = StObject.set(x, "kinesisRecordMetadata", js.undefined)
+      inline def setKinesisRecordMetadataUndefined: Self = StObject.set(x, "kinesisRecordMetadata", js.undefined)
       
-      @scala.inline
-      def setRecordId(value: String): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
+      inline def setRecordId(value: String): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,20 +140,16 @@ object kinesisFirehoseTransformationMod {
   }
   object FirehoseTransformationResult {
     
-    @scala.inline
-    def apply(records: js.Array[FirehoseTransformationResultRecord]): FirehoseTransformationResult = {
+    inline def apply(records: js.Array[FirehoseTransformationResultRecord]): FirehoseTransformationResult = {
       val __obj = js.Dynamic.literal(records = records.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirehoseTransformationResult]
     }
     
-    @scala.inline
-    implicit class FirehoseTransformationResultMutableBuilder[Self <: FirehoseTransformationResult] (val x: Self) extends AnyVal {
+    extension [Self <: FirehoseTransformationResult](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[FirehoseTransformationResultRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[FirehoseTransformationResultRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: FirehoseTransformationResultRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: FirehoseTransformationResultRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
     }
   }
   
@@ -192,23 +164,18 @@ object kinesisFirehoseTransformationMod {
   }
   object FirehoseTransformationResultRecord {
     
-    @scala.inline
-    def apply(data: String, recordId: String, result: FirehoseRecordTransformationStatus): FirehoseTransformationResultRecord = {
+    inline def apply(data: String, recordId: String, result: FirehoseRecordTransformationStatus): FirehoseTransformationResultRecord = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], recordId = recordId.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirehoseTransformationResultRecord]
     }
     
-    @scala.inline
-    implicit class FirehoseTransformationResultRecordMutableBuilder[Self <: FirehoseTransformationResultRecord] (val x: Self) extends AnyVal {
+    extension [Self <: FirehoseTransformationResultRecord](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordId(value: String): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
+      inline def setRecordId(value: String): Self = StObject.set(x, "recordId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: FirehoseRecordTransformationStatus): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: FirehoseRecordTransformationStatus): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,10 +12,7 @@ object operatorRawMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Raw[T](sqlGenerator: js.Function1[/* columnAlias */ String, String]): FindOperator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Raw")(sqlGenerator.asInstanceOf[js.Any]).asInstanceOf[FindOperator[js.Any]]
-  @scala.inline
-  def Raw[T](sqlGenerator: js.Function1[/* columnAlias */ String, String], parameters: ObjectLiteral): FindOperator[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Raw")(sqlGenerator.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[FindOperator[js.Any]]
-  @scala.inline
-  def Raw[T](value: String): FindOperator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Raw")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[js.Any]]
+  inline def Raw[T](sqlGenerator: js.Function1[/* columnAlias */ String, String]): FindOperator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Raw")(sqlGenerator.asInstanceOf[js.Any]).asInstanceOf[FindOperator[js.Any]]
+  inline def Raw[T](sqlGenerator: js.Function1[/* columnAlias */ String, String], parameters: ObjectLiteral): FindOperator[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Raw")(sqlGenerator.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[FindOperator[js.Any]]
+  inline def Raw[T](value: String): FindOperator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Raw")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[js.Any]]
 }

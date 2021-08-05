@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPlacement extends StObject
 object XlPlacement {
   
-  @scala.inline
-  def xlFreeFloating: `3` = 3.asInstanceOf[`3`]
+  inline def xlFreeFloating: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlMove: `2` = 2.asInstanceOf[`2`]
+  inline def xlMove: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlMoveAndSize: `1` = 1.asInstanceOf[`1`]
+  inline def xlMoveAndSize: `1` = 1.asInstanceOf[`1`]
 }

@@ -11,6 +11,5 @@ object subtreeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def moveFacetDown(node: DataFlowNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("moveFacetDown")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def moveFacetDown(node: DataFlowNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("moveFacetDown")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -10,19 +10,15 @@ trait GetBucketEncryptionOutput extends StObject {
 }
 object GetBucketEncryptionOutput {
   
-  @scala.inline
-  def apply(): GetBucketEncryptionOutput = {
+  inline def apply(): GetBucketEncryptionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketEncryptionOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketEncryptionOutputMutableBuilder[Self <: GetBucketEncryptionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketEncryptionOutput](x: Self) {
     
-    @scala.inline
-    def setServerSideEncryptionConfiguration(value: ServerSideEncryptionConfiguration): Self = StObject.set(x, "ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
+    inline def setServerSideEncryptionConfiguration(value: ServerSideEncryptionConfiguration): Self = StObject.set(x, "ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "ServerSideEncryptionConfiguration", js.undefined)
+    inline def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "ServerSideEncryptionConfiguration", js.undefined)
   }
 }

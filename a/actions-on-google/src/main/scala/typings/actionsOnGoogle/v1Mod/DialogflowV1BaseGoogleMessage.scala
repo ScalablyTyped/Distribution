@@ -13,22 +13,17 @@ trait DialogflowV1BaseGoogleMessage[TType /* <: String */] extends StObject {
 }
 object DialogflowV1BaseGoogleMessage {
   
-  @scala.inline
-  def apply[TType /* <: String */](): DialogflowV1BaseGoogleMessage[TType] = {
+  inline def apply[TType /* <: String */](): DialogflowV1BaseGoogleMessage[TType] = {
     val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1BaseGoogleMessage[TType]]
   }
   
-  @scala.inline
-  implicit class DialogflowV1BaseGoogleMessageMutableBuilder[Self <: DialogflowV1BaseGoogleMessage[?], TType /* <: String */] (val x: Self & DialogflowV1BaseGoogleMessage[TType]) extends AnyVal {
+  extension [Self <: DialogflowV1BaseGoogleMessage[?], TType /* <: String */](x: Self & DialogflowV1BaseGoogleMessage[TType]) {
     
-    @scala.inline
-    def setPlatform(value: google): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: google): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

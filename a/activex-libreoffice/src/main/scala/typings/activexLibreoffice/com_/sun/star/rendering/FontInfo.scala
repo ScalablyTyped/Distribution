@@ -70,8 +70,7 @@ trait FontInfo extends StObject {
 }
 object FontInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FamilyName: String,
     FontDescription: Panose,
     IsSymbolFont: TriState,
@@ -86,34 +85,24 @@ object FontInfo {
     __obj.asInstanceOf[FontInfo]
   }
   
-  @scala.inline
-  implicit class FontInfoMutableBuilder[Self <: FontInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FontInfo](x: Self) {
     
-    @scala.inline
-    def setFamilyName(value: String): Self = StObject.set(x, "FamilyName", value.asInstanceOf[js.Any])
+    inline def setFamilyName(value: String): Self = StObject.set(x, "FamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontDescription(value: Panose): Self = StObject.set(x, "FontDescription", value.asInstanceOf[js.Any])
+    inline def setFontDescription(value: Panose): Self = StObject.set(x, "FontDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSymbolFont(value: TriState): Self = StObject.set(x, "IsSymbolFont", value.asInstanceOf[js.Any])
+    inline def setIsSymbolFont(value: TriState): Self = StObject.set(x, "IsSymbolFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVertical(value: TriState): Self = StObject.set(x, "IsVertical", value.asInstanceOf[js.Any])
+    inline def setIsVertical(value: TriState): Self = StObject.set(x, "IsVertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
+    inline def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicodeRanges0(value: Double): Self = StObject.set(x, "UnicodeRanges0", value.asInstanceOf[js.Any])
+    inline def setUnicodeRanges0(value: Double): Self = StObject.set(x, "UnicodeRanges0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicodeRanges1(value: Double): Self = StObject.set(x, "UnicodeRanges1", value.asInstanceOf[js.Any])
+    inline def setUnicodeRanges1(value: Double): Self = StObject.set(x, "UnicodeRanges1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicodeRanges2(value: Double): Self = StObject.set(x, "UnicodeRanges2", value.asInstanceOf[js.Any])
+    inline def setUnicodeRanges2(value: Double): Self = StObject.set(x, "UnicodeRanges2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicodeRanges3(value: Double): Self = StObject.set(x, "UnicodeRanges3", value.asInstanceOf[js.Any])
+    inline def setUnicodeRanges3(value: Double): Self = StObject.set(x, "UnicodeRanges3", value.asInstanceOf[js.Any])
   }
 }

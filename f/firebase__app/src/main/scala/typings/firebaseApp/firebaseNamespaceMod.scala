@@ -11,8 +11,7 @@ object firebaseNamespaceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFirebaseNamespace(): FirebaseNamespace = ^.asInstanceOf[js.Dynamic].applyDynamic("createFirebaseNamespace")().asInstanceOf[FirebaseNamespace]
+  inline def createFirebaseNamespace(): FirebaseNamespace = ^.asInstanceOf[js.Dynamic].applyDynamic("createFirebaseNamespace")().asInstanceOf[FirebaseNamespace]
   
   @JSImport("@firebase/app/dist/packages/app/src/firebaseNamespace", "firebase")
   @js.native

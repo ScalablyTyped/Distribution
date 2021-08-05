@@ -87,8 +87,7 @@ trait XAccessibleSelection
 }
 object XAccessibleSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SelectedAccessibleChildCount: Double,
     acquire: () => Unit,
     clearAccessibleSelection: () => Unit,
@@ -105,31 +104,22 @@ object XAccessibleSelection {
     __obj.asInstanceOf[XAccessibleSelection]
   }
   
-  @scala.inline
-  implicit class XAccessibleSelectionMutableBuilder[Self <: XAccessibleSelection] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleSelection](x: Self) {
     
-    @scala.inline
-    def setClearAccessibleSelection(value: () => Unit): Self = StObject.set(x, "clearAccessibleSelection", js.Any.fromFunction0(value))
+    inline def setClearAccessibleSelection(value: () => Unit): Self = StObject.set(x, "clearAccessibleSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeselectAccessibleChild(value: Double => Unit): Self = StObject.set(x, "deselectAccessibleChild", js.Any.fromFunction1(value))
+    inline def setDeselectAccessibleChild(value: Double => Unit): Self = StObject.set(x, "deselectAccessibleChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSelectedAccessibleChild(value: Double => XAccessible): Self = StObject.set(x, "getSelectedAccessibleChild", js.Any.fromFunction1(value))
+    inline def setGetSelectedAccessibleChild(value: Double => XAccessible): Self = StObject.set(x, "getSelectedAccessibleChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSelectedAccessibleChildCount(value: () => Double): Self = StObject.set(x, "getSelectedAccessibleChildCount", js.Any.fromFunction0(value))
+    inline def setGetSelectedAccessibleChildCount(value: () => Double): Self = StObject.set(x, "getSelectedAccessibleChildCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAccessibleChildSelected(value: Double => Boolean): Self = StObject.set(x, "isAccessibleChildSelected", js.Any.fromFunction1(value))
+    inline def setIsAccessibleChildSelected(value: Double => Boolean): Self = StObject.set(x, "isAccessibleChildSelected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectAccessibleChild(value: Double => Unit): Self = StObject.set(x, "selectAccessibleChild", js.Any.fromFunction1(value))
+    inline def setSelectAccessibleChild(value: Double => Unit): Self = StObject.set(x, "selectAccessibleChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectAllAccessibleChildren(value: () => Unit): Self = StObject.set(x, "selectAllAccessibleChildren", js.Any.fromFunction0(value))
+    inline def setSelectAllAccessibleChildren(value: () => Unit): Self = StObject.set(x, "selectAllAccessibleChildren", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectedAccessibleChildCount(value: Double): Self = StObject.set(x, "SelectedAccessibleChildCount", value.asInstanceOf[js.Any])
+    inline def setSelectedAccessibleChildCount(value: Double): Self = StObject.set(x, "SelectedAccessibleChildCount", value.asInstanceOf[js.Any])
   }
 }

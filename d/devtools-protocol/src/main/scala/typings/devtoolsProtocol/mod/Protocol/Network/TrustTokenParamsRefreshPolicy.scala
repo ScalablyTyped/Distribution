@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrustTokenParamsRefreshPolicy extends StObject
 object TrustTokenParamsRefreshPolicy {
   
-  @scala.inline
-  def Refresh: typings.devtoolsProtocol.devtoolsProtocolStrings.Refresh = "Refresh".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Refresh]
+  inline def Refresh: typings.devtoolsProtocol.devtoolsProtocolStrings.Refresh = "Refresh".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Refresh]
   
-  @scala.inline
-  def UseCached: typings.devtoolsProtocol.devtoolsProtocolStrings.UseCached = "UseCached".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UseCached]
+  inline def UseCached: typings.devtoolsProtocol.devtoolsProtocolStrings.UseCached = "UseCached".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.UseCached]
 }

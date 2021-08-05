@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("filing-cabinet", JSImport.Namespace)
   @js.native
@@ -21,8 +20,7 @@ object mod {
     * @param extension the extension of the file that should use the custom resolver (ex: '.py', '.php')
     * @param resolver  A resolver of partial paths
     */
-  @scala.inline
-  def register(`extension`: String, resolver: Resolver): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(`extension`.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(`extension`: String, resolver: Resolver): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(`extension`.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -71,59 +69,42 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(directory: String, filename: String, partial: String): Options = {
+    inline def apply(directory: String, filename: String, partial: String): Options = {
       val __obj = js.Dynamic.literal(directory = directory.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAst(value: js.Any): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+      inline def setAst(value: js.Any): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
+      inline def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
       
-      @scala.inline
-      def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoTypeDefinitions(value: Boolean): Self = StObject.set(x, "noTypeDefinitions", value.asInstanceOf[js.Any])
+      inline def setNoTypeDefinitions(value: Boolean): Self = StObject.set(x, "noTypeDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoTypeDefinitionsUndefined: Self = StObject.set(x, "noTypeDefinitions", js.undefined)
+      inline def setNoTypeDefinitionsUndefined: Self = StObject.set(x, "noTypeDefinitions", js.undefined)
       
-      @scala.inline
-      def setNodeModulesConfig(value: js.Any): Self = StObject.set(x, "nodeModulesConfig", value.asInstanceOf[js.Any])
+      inline def setNodeModulesConfig(value: js.Any): Self = StObject.set(x, "nodeModulesConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeModulesConfigUndefined: Self = StObject.set(x, "nodeModulesConfig", js.undefined)
+      inline def setNodeModulesConfigUndefined: Self = StObject.set(x, "nodeModulesConfig", js.undefined)
       
-      @scala.inline
-      def setPartial(value: String): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      inline def setPartial(value: String): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsConfig(value: String | js.Object): Self = StObject.set(x, "tsConfig", value.asInstanceOf[js.Any])
+      inline def setTsConfig(value: String | js.Object): Self = StObject.set(x, "tsConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsConfigUndefined: Self = StObject.set(x, "tsConfig", js.undefined)
+      inline def setTsConfigUndefined: Self = StObject.set(x, "tsConfig", js.undefined)
       
-      @scala.inline
-      def setWebpackConfig(value: js.Any): Self = StObject.set(x, "webpackConfig", value.asInstanceOf[js.Any])
+      inline def setWebpackConfig(value: js.Any): Self = StObject.set(x, "webpackConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebpackConfigUndefined: Self = StObject.set(x, "webpackConfig", js.undefined)
+      inline def setWebpackConfigUndefined: Self = StObject.set(x, "webpackConfig", js.undefined)
     }
   }
   

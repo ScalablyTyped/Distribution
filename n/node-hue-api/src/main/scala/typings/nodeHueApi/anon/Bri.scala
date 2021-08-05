@@ -26,8 +26,7 @@ trait Bri extends StObject {
 }
 object Bri {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bri: Double,
     colormode: ColorMode,
     ct: Double,
@@ -41,31 +40,22 @@ object Bri {
     __obj.asInstanceOf[Bri]
   }
   
-  @scala.inline
-  implicit class BriMutableBuilder[Self <: Bri] (val x: Self) extends AnyVal {
+  extension [Self <: Bri](x: Self) {
     
-    @scala.inline
-    def setBri(value: Double): Self = StObject.set(x, "bri", value.asInstanceOf[js.Any])
+    inline def setBri(value: Double): Self = StObject.set(x, "bri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColormode(value: ColorMode): Self = StObject.set(x, "colormode", value.asInstanceOf[js.Any])
+    inline def setColormode(value: ColorMode): Self = StObject.set(x, "colormode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCt(value: Double): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
+    inline def setCt(value: Double): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffect(value: LightEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: LightEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+    inline def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSat(value: Double): Self = StObject.set(x, "sat", value.asInstanceOf[js.Any])
+    inline def setSat(value: Double): Self = StObject.set(x, "sat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXy(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
+    inline def setXy(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
   }
 }

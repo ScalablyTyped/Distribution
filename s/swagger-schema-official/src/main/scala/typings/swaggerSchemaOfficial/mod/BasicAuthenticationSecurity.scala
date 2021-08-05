@@ -15,17 +15,14 @@ trait BasicAuthenticationSecurity
 }
 object BasicAuthenticationSecurity {
   
-  @scala.inline
-  def apply(): BasicAuthenticationSecurity = {
+  inline def apply(): BasicAuthenticationSecurity = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("basic")
     __obj.asInstanceOf[BasicAuthenticationSecurity]
   }
   
-  @scala.inline
-  implicit class BasicAuthenticationSecurityMutableBuilder[Self <: BasicAuthenticationSecurity] (val x: Self) extends AnyVal {
+  extension [Self <: BasicAuthenticationSecurity](x: Self) {
     
-    @scala.inline
-    def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

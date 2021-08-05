@@ -13,6 +13,5 @@ object resolveExportedComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(ast: File_): js.Tuple2[typings.tsMap.mod.default[String, NodePath[js.Any, js.Any]], ImportedVariableSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[typings.tsMap.mod.default[String, NodePath[js.Any, js.Any]], ImportedVariableSet]]
+  inline def default(ast: File_): js.Tuple2[typings.tsMap.mod.default[String, NodePath[js.Any, js.Any]], ImportedVariableSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[typings.tsMap.mod.default[String, NodePath[js.Any, js.Any]], ImportedVariableSet]]
 }

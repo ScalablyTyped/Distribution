@@ -10,19 +10,15 @@ trait Layout extends StObject {
 }
 object Layout {
   
-  @scala.inline
-  def apply(): Layout = {
+  inline def apply(): Layout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Layout]
   }
   
-  @scala.inline
-  implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
+  extension [Self <: Layout](x: Self) {
     
-    @scala.inline
-    def setLayout(value: typings.tabris.mod.Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: typings.tabris.mod.Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
   }
 }

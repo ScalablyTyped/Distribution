@@ -13,19 +13,15 @@ trait SpatialInteractionSource extends StObject {
 }
 object SpatialInteractionSource {
   
-  @scala.inline
-  def apply(id: js.Any, kind: js.Any): SpatialInteractionSource = {
+  inline def apply(id: js.Any, kind: js.Any): SpatialInteractionSource = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialInteractionSource]
   }
   
-  @scala.inline
-  implicit class SpatialInteractionSourceMutableBuilder[Self <: SpatialInteractionSource] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialInteractionSource](x: Self) {
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: js.Any): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: js.Any): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

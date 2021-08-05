@@ -18,19 +18,15 @@ trait TextAreaInputProperties
 }
 object TextAreaInputProperties {
   
-  @scala.inline
-  def apply(): TextAreaInputProperties = {
+  inline def apply(): TextAreaInputProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextAreaInputProperties]
   }
   
-  @scala.inline
-  implicit class TextAreaInputPropertiesMutableBuilder[Self <: TextAreaInputProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TextAreaInputProperties](x: Self) {
     
-    @scala.inline
-    def setType(value: `text-area`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `text-area`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

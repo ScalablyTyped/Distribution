@@ -17,8 +17,7 @@ trait CreateOp
 }
 object CreateOp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     c: String,
     create: Data,
     d: String,
@@ -33,16 +32,12 @@ object CreateOp {
     __obj.asInstanceOf[CreateOp]
   }
   
-  @scala.inline
-  implicit class CreateOpMutableBuilder[Self <: CreateOp] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOp](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Data): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Data): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDel(value: Unit): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+    inline def setDel(value: Unit): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOp(value: Unit): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: Unit): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
   }
 }

@@ -23,8 +23,7 @@ trait ExponentialRolloutRate extends StObject {
 }
 object ExponentialRolloutRate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseRatePerMinute: RolloutRatePerMinute,
     incrementFactor: IncrementFactor,
     rateIncreaseCriteria: RateIncreaseCriteria
@@ -33,16 +32,12 @@ object ExponentialRolloutRate {
     __obj.asInstanceOf[ExponentialRolloutRate]
   }
   
-  @scala.inline
-  implicit class ExponentialRolloutRateMutableBuilder[Self <: ExponentialRolloutRate] (val x: Self) extends AnyVal {
+  extension [Self <: ExponentialRolloutRate](x: Self) {
     
-    @scala.inline
-    def setBaseRatePerMinute(value: RolloutRatePerMinute): Self = StObject.set(x, "baseRatePerMinute", value.asInstanceOf[js.Any])
+    inline def setBaseRatePerMinute(value: RolloutRatePerMinute): Self = StObject.set(x, "baseRatePerMinute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementFactor(value: IncrementFactor): Self = StObject.set(x, "incrementFactor", value.asInstanceOf[js.Any])
+    inline def setIncrementFactor(value: IncrementFactor): Self = StObject.set(x, "incrementFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateIncreaseCriteria(value: RateIncreaseCriteria): Self = StObject.set(x, "rateIncreaseCriteria", value.asInstanceOf[js.Any])
+    inline def setRateIncreaseCriteria(value: RateIncreaseCriteria): Self = StObject.set(x, "rateIncreaseCriteria", value.asInstanceOf[js.Any])
   }
 }

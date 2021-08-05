@@ -34,30 +34,21 @@ object Spherical {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clone_(spherical: Spherical): Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(spherical.asInstanceOf[js.Any]).asInstanceOf[Spherical]
-  @scala.inline
-  def clone_(spherical: Spherical, result: Spherical): Spherical = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(spherical.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Spherical]
+  inline def clone_(spherical: Spherical): Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(spherical.asInstanceOf[js.Any]).asInstanceOf[Spherical]
+  inline def clone_(spherical: Spherical, result: Spherical): Spherical = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(spherical.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Spherical]
   
   /* static member */
-  @scala.inline
-  def equalsEpsilon(left: Spherical, right: Spherical): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equalsEpsilon(left: Spherical, right: Spherical, epsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equalsEpsilon(left: Spherical, right: Spherical): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equalsEpsilon(left: Spherical, right: Spherical, epsilon: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsEpsilon")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def equals_(left: Spherical, right: Spherical): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: Spherical, right: Spherical): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def fromCartesian3(cartesian3: Cartesian3): Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian3")(cartesian3.asInstanceOf[js.Any]).asInstanceOf[Spherical]
-  @scala.inline
-  def fromCartesian3(cartesian3: Cartesian3, spherical: Spherical): Spherical = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian3")(cartesian3.asInstanceOf[js.Any], spherical.asInstanceOf[js.Any])).asInstanceOf[Spherical]
+  inline def fromCartesian3(cartesian3: Cartesian3): Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian3")(cartesian3.asInstanceOf[js.Any]).asInstanceOf[Spherical]
+  inline def fromCartesian3(cartesian3: Cartesian3, spherical: Spherical): Spherical = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian3")(cartesian3.asInstanceOf[js.Any], spherical.asInstanceOf[js.Any])).asInstanceOf[Spherical]
   
   /* static member */
-  @scala.inline
-  def normalize(spherical: Spherical): Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spherical.asInstanceOf[js.Any]).asInstanceOf[Spherical]
-  @scala.inline
-  def normalize(spherical: Spherical, result: Spherical): Spherical = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spherical.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Spherical]
+  inline def normalize(spherical: Spherical): Spherical = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spherical.asInstanceOf[js.Any]).asInstanceOf[Spherical]
+  inline def normalize(spherical: Spherical, result: Spherical): Spherical = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(spherical.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Spherical]
 }

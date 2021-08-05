@@ -22,20 +22,16 @@ object excludeSmallMod extends Shortcut {
   }
   object ExcludeSmallProps {
     
-    @scala.inline
-    def apply(): ExcludeSmallProps = {
+    inline def apply(): ExcludeSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExcludeSmallProps]
     }
     
-    @scala.inline
-    implicit class ExcludeSmallPropsMutableBuilder[Self <: ExcludeSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExcludeSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

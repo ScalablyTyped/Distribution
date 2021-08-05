@@ -24,18 +24,18 @@ object resizeSensorMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MResizeSensor(): Unit = js.native
     
-    var element: js.Any = js.native
+    /* private */ var element: js.Any = js.native
     
-    var getElement: js.Any = js.native
+    /* private */ var getElement: js.Any = js.native
     
     /**
       * Observe the DOM element, if defined and different from the currently
       * observed element. Pass `force` argument to skip element checks and always
       * re-observe.
       */
-    var observeElement: js.Any = js.native
+    /* private */ var observeElement: js.Any = js.native
     
-    var observer: js.Any = js.native
+    /* private */ var observer: js.Any = js.native
   }
   /* static members */
   object ResizeSensor {
@@ -47,8 +47,7 @@ object resizeSensorMod {
     @JSImport("@blueprintjs/core/lib/esm/components/resize-sensor/resizeSensor", "ResizeSensor.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IResizeSensorProps extends StObject {
@@ -79,23 +78,18 @@ object resizeSensorMod {
   }
   object IResizeSensorProps {
     
-    @scala.inline
-    def apply(onResize: js.Array[IResizeEntry] => Unit): IResizeSensorProps = {
+    inline def apply(onResize: js.Array[IResizeEntry] => Unit): IResizeSensorProps = {
       val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
       __obj.asInstanceOf[IResizeSensorProps]
     }
     
-    @scala.inline
-    implicit class IResizeSensorPropsMutableBuilder[Self <: IResizeSensorProps] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeSensorProps](x: Self) {
       
-      @scala.inline
-      def setObserveParents(value: Boolean): Self = StObject.set(x, "observeParents", value.asInstanceOf[js.Any])
+      inline def setObserveParents(value: Boolean): Self = StObject.set(x, "observeParents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObserveParentsUndefined: Self = StObject.set(x, "observeParents", js.undefined)
+      inline def setObserveParentsUndefined: Self = StObject.set(x, "observeParents", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: js.Array[IResizeEntry] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: js.Array[IResizeEntry] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
     }
   }
 }

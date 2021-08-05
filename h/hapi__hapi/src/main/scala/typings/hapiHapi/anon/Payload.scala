@@ -13,19 +13,15 @@ trait Payload extends StObject {
 }
 object Payload {
   
-  @scala.inline
-  def apply(): Payload = {
+  inline def apply(): Payload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Payload]
   }
   
-  @scala.inline
-  implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+  extension [Self <: Payload](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Boolean): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Boolean): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

@@ -143,10 +143,8 @@ object viewportMod {
     def to_T_Unit[T](last: String, cb: ViewportCallback[T]): Unit = js.native
   }
   
-  @scala.inline
-  def range(breakpoints: js.Array[ViewportBreakpoint], first: String): js.Array[ViewportBreakpoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(breakpoints.asInstanceOf[js.Any], first.asInstanceOf[js.Any])).asInstanceOf[js.Array[ViewportBreakpoint]]
-  @scala.inline
-  def range(breakpoints: js.Array[ViewportBreakpoint], first: String, last: String): js.Array[ViewportBreakpoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(breakpoints.asInstanceOf[js.Any], first.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[js.Array[ViewportBreakpoint]]
+  inline def range(breakpoints: js.Array[ViewportBreakpoint], first: String): js.Array[ViewportBreakpoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(breakpoints.asInstanceOf[js.Any], first.asInstanceOf[js.Any])).asInstanceOf[js.Array[ViewportBreakpoint]]
+  inline def range(breakpoints: js.Array[ViewportBreakpoint], first: String, last: String): js.Array[ViewportBreakpoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(breakpoints.asInstanceOf[js.Any], first.asInstanceOf[js.Any], last.asInstanceOf[js.Any])).asInstanceOf[js.Array[ViewportBreakpoint]]
   
   trait ViewportBreakpoint extends StObject {
     
@@ -156,20 +154,16 @@ object viewportMod {
   }
   object ViewportBreakpoint {
     
-    @scala.inline
-    def apply(name: String, size: Height): ViewportBreakpoint = {
+    inline def apply(name: String, size: Height): ViewportBreakpoint = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewportBreakpoint]
     }
     
-    @scala.inline
-    implicit class ViewportBreakpointMutableBuilder[Self <: ViewportBreakpoint] (val x: Self) extends AnyVal {
+    extension [Self <: ViewportBreakpoint](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,23 +177,18 @@ object viewportMod {
   }
   object ViewportConfiguration {
     
-    @scala.inline
-    def apply(breakpoints: js.Array[ViewportBreakpoint], context: String): ViewportConfiguration = {
+    inline def apply(breakpoints: js.Array[ViewportBreakpoint], context: String): ViewportConfiguration = {
       val __obj = js.Dynamic.literal(breakpoints = breakpoints.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewportConfiguration]
     }
     
-    @scala.inline
-    implicit class ViewportConfigurationMutableBuilder[Self <: ViewportConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ViewportConfiguration](x: Self) {
       
-      @scala.inline
-      def setBreakpoints(value: js.Array[ViewportBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+      inline def setBreakpoints(value: js.Array[ViewportBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointsVarargs(value: ViewportBreakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+      inline def setBreakpointsVarargs(value: ViewportBreakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
   }
 }

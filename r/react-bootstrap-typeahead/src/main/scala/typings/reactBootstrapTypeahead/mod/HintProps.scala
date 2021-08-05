@@ -17,31 +17,23 @@ trait HintProps extends StObject {
 }
 object HintProps {
   
-  @scala.inline
-  def apply(): HintProps = {
+  inline def apply(): HintProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HintProps]
   }
   
-  @scala.inline
-  implicit class HintPropsMutableBuilder[Self <: HintProps] (val x: Self) extends AnyVal {
+  extension [Self <: HintProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setShouldSelect(value: (/* shouldSelect */ Boolean, /* e */ KeyboardEvent[HTMLInputElement]) => Boolean): Self = StObject.set(x, "shouldSelect", js.Any.fromFunction2(value))
+    inline def setShouldSelect(value: (/* shouldSelect */ Boolean, /* e */ KeyboardEvent[HTMLInputElement]) => Boolean): Self = StObject.set(x, "shouldSelect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShouldSelectUndefined: Self = StObject.set(x, "shouldSelect", js.undefined)
+    inline def setShouldSelectUndefined: Self = StObject.set(x, "shouldSelect", js.undefined)
   }
 }

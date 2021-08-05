@@ -22,25 +22,19 @@ trait SchemaI18nRegionSnippet extends StObject {
 }
 object SchemaI18nRegionSnippet {
   
-  @scala.inline
-  def apply(): SchemaI18nRegionSnippet = {
+  inline def apply(): SchemaI18nRegionSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaI18nRegionSnippet]
   }
   
-  @scala.inline
-  implicit class SchemaI18nRegionSnippetMutableBuilder[Self <: SchemaI18nRegionSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaI18nRegionSnippet](x: Self) {
     
-    @scala.inline
-    def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+    inline def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
+    inline def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -20,37 +20,27 @@ trait Profile extends StObject {
 }
 object Profile {
   
-  @scala.inline
-  def apply(): Profile = {
+  inline def apply(): Profile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Profile]
   }
   
-  @scala.inline
-  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+  extension [Self <: Profile](x: Self) {
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+    inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+    inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
-    @scala.inline
-    def setMessagesTotal(value: Double): Self = StObject.set(x, "messagesTotal", value.asInstanceOf[js.Any])
+    inline def setMessagesTotal(value: Double): Self = StObject.set(x, "messagesTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesTotalUndefined: Self = StObject.set(x, "messagesTotal", js.undefined)
+    inline def setMessagesTotalUndefined: Self = StObject.set(x, "messagesTotal", js.undefined)
     
-    @scala.inline
-    def setThreadsTotal(value: Double): Self = StObject.set(x, "threadsTotal", value.asInstanceOf[js.Any])
+    inline def setThreadsTotal(value: Double): Self = StObject.set(x, "threadsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadsTotalUndefined: Self = StObject.set(x, "threadsTotal", js.undefined)
+    inline def setThreadsTotalUndefined: Self = StObject.set(x, "threadsTotal", js.undefined)
   }
 }

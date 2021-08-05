@@ -199,8 +199,7 @@ object Input {
   }
   object GamepadReading {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buttons: GamepadButtons,
       leftThumbstickX: Double,
       leftThumbstickY: Double,
@@ -214,32 +213,23 @@ object Input {
       __obj.asInstanceOf[GamepadReading]
     }
     
-    @scala.inline
-    implicit class GamepadReadingMutableBuilder[Self <: GamepadReading] (val x: Self) extends AnyVal {
+    extension [Self <: GamepadReading](x: Self) {
       
-      @scala.inline
-      def setButtons(value: GamepadButtons): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: GamepadButtons): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftThumbstickX(value: Double): Self = StObject.set(x, "leftThumbstickX", value.asInstanceOf[js.Any])
+      inline def setLeftThumbstickX(value: Double): Self = StObject.set(x, "leftThumbstickX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftThumbstickY(value: Double): Self = StObject.set(x, "leftThumbstickY", value.asInstanceOf[js.Any])
+      inline def setLeftThumbstickY(value: Double): Self = StObject.set(x, "leftThumbstickY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftTrigger(value: Double): Self = StObject.set(x, "leftTrigger", value.asInstanceOf[js.Any])
+      inline def setLeftTrigger(value: Double): Self = StObject.set(x, "leftTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightThumbstickX(value: Double): Self = StObject.set(x, "rightThumbstickX", value.asInstanceOf[js.Any])
+      inline def setRightThumbstickX(value: Double): Self = StObject.set(x, "rightThumbstickX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightThumbstickY(value: Double): Self = StObject.set(x, "rightThumbstickY", value.asInstanceOf[js.Any])
+      inline def setRightThumbstickY(value: Double): Self = StObject.set(x, "rightThumbstickY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightTrigger(value: Double): Self = StObject.set(x, "rightTrigger", value.asInstanceOf[js.Any])
+      inline def setRightTrigger(value: Double): Self = StObject.set(x, "rightTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,26 +250,20 @@ object Input {
   }
   object GamepadVibration {
     
-    @scala.inline
-    def apply(leftMotor: Double, leftTrigger: Double, rightMotor: Double, rightTrigger: Double): GamepadVibration = {
+    inline def apply(leftMotor: Double, leftTrigger: Double, rightMotor: Double, rightTrigger: Double): GamepadVibration = {
       val __obj = js.Dynamic.literal(leftMotor = leftMotor.asInstanceOf[js.Any], leftTrigger = leftTrigger.asInstanceOf[js.Any], rightMotor = rightMotor.asInstanceOf[js.Any], rightTrigger = rightTrigger.asInstanceOf[js.Any])
       __obj.asInstanceOf[GamepadVibration]
     }
     
-    @scala.inline
-    implicit class GamepadVibrationMutableBuilder[Self <: GamepadVibration] (val x: Self) extends AnyVal {
+    extension [Self <: GamepadVibration](x: Self) {
       
-      @scala.inline
-      def setLeftMotor(value: Double): Self = StObject.set(x, "leftMotor", value.asInstanceOf[js.Any])
+      inline def setLeftMotor(value: Double): Self = StObject.set(x, "leftMotor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftTrigger(value: Double): Self = StObject.set(x, "leftTrigger", value.asInstanceOf[js.Any])
+      inline def setLeftTrigger(value: Double): Self = StObject.set(x, "leftTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightMotor(value: Double): Self = StObject.set(x, "rightMotor", value.asInstanceOf[js.Any])
+      inline def setRightMotor(value: Double): Self = StObject.set(x, "rightMotor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightTrigger(value: Double): Self = StObject.set(x, "rightTrigger", value.asInstanceOf[js.Any])
+      inline def setRightTrigger(value: Double): Self = StObject.set(x, "rightTrigger", value.asInstanceOf[js.Any])
     }
   }
   
@@ -294,20 +278,16 @@ object Input {
   }
   object Headset {
     
-    @scala.inline
-    def apply(captureDeviceId: String, renderDeviceId: String): Headset = {
+    inline def apply(captureDeviceId: String, renderDeviceId: String): Headset = {
       val __obj = js.Dynamic.literal(captureDeviceId = captureDeviceId.asInstanceOf[js.Any], renderDeviceId = renderDeviceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Headset]
     }
     
-    @scala.inline
-    implicit class HeadsetMutableBuilder[Self <: Headset] (val x: Self) extends AnyVal {
+    extension [Self <: Headset](x: Self) {
       
-      @scala.inline
-      def setCaptureDeviceId(value: String): Self = StObject.set(x, "captureDeviceId", value.asInstanceOf[js.Any])
+      inline def setCaptureDeviceId(value: String): Self = StObject.set(x, "captureDeviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderDeviceId(value: String): Self = StObject.set(x, "renderDeviceId", value.asInstanceOf[js.Any])
+      inline def setRenderDeviceId(value: String): Self = StObject.set(x, "renderDeviceId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -325,23 +305,18 @@ object Input {
   }
   object IGameController {
     
-    @scala.inline
-    def apply(headset: Headset, isWireless: Boolean, user: User): IGameController = {
+    inline def apply(headset: Headset, isWireless: Boolean, user: User): IGameController = {
       val __obj = js.Dynamic.literal(headset = headset.asInstanceOf[js.Any], isWireless = isWireless.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGameController]
     }
     
-    @scala.inline
-    implicit class IGameControllerMutableBuilder[Self <: IGameController] (val x: Self) extends AnyVal {
+    extension [Self <: IGameController](x: Self) {
       
-      @scala.inline
-      def setHeadset(value: Headset): Self = StObject.set(x, "headset", value.asInstanceOf[js.Any])
+      inline def setHeadset(value: Headset): Self = StObject.set(x, "headset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWireless(value: Boolean): Self = StObject.set(x, "isWireless", value.asInstanceOf[js.Any])
+      inline def setIsWireless(value: Boolean): Self = StObject.set(x, "isWireless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -106,9 +106,9 @@ object restClientMod {
       requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
     ) = this()
     
-    var _baseUrl: js.Any = js.native
+    /* private */ var _baseUrl: js.Any = js.native
     
-    var _headersFromOptions: js.Any = js.native
+    /* private */ var _headersFromOptions: js.Any = js.native
     
     var client: HttpClient = js.native
     
@@ -186,8 +186,7 @@ object restClientMod {
     @JSImport("typed-rest-client/RestClient", "RestClient.dateTimeDeserializer")
     @js.native
     def dateTimeDeserializer: js.Any = js.native
-    @scala.inline
-    def dateTimeDeserializer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateTimeDeserializer")(x.asInstanceOf[js.Any])
+    inline def dateTimeDeserializer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateTimeDeserializer")(x.asInstanceOf[js.Any])
   }
   
   trait IRequestOptions extends StObject {
@@ -204,44 +203,32 @@ object restClientMod {
   }
   object IRequestOptions {
     
-    @scala.inline
-    def apply(): IRequestOptions = {
+    inline def apply(): IRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRequestOptions]
     }
     
-    @scala.inline
-    implicit class IRequestOptionsMutableBuilder[Self <: IRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestOptions](x: Self) {
       
-      @scala.inline
-      def setAcceptHeader(value: String): Self = StObject.set(x, "acceptHeader", value.asInstanceOf[js.Any])
+      inline def setAcceptHeader(value: String): Self = StObject.set(x, "acceptHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptHeaderUndefined: Self = StObject.set(x, "acceptHeader", js.undefined)
+      inline def setAcceptHeaderUndefined: Self = StObject.set(x, "acceptHeader", js.undefined)
       
-      @scala.inline
-      def setAdditionalHeaders(value: IHeaders): Self = StObject.set(x, "additionalHeaders", value.asInstanceOf[js.Any])
+      inline def setAdditionalHeaders(value: IHeaders): Self = StObject.set(x, "additionalHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalHeadersUndefined: Self = StObject.set(x, "additionalHeaders", js.undefined)
+      inline def setAdditionalHeadersUndefined: Self = StObject.set(x, "additionalHeaders", js.undefined)
       
-      @scala.inline
-      def setDeserializeDates(value: Boolean): Self = StObject.set(x, "deserializeDates", value.asInstanceOf[js.Any])
+      inline def setDeserializeDates(value: Boolean): Self = StObject.set(x, "deserializeDates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeserializeDatesUndefined: Self = StObject.set(x, "deserializeDates", js.undefined)
+      inline def setDeserializeDatesUndefined: Self = StObject.set(x, "deserializeDates", js.undefined)
       
-      @scala.inline
-      def setQueryParameters(value: IRequestQueryParams): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+      inline def setQueryParameters(value: IRequestQueryParams): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
+      inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
       
-      @scala.inline
-      def setResponseProcessor(value: js.Function): Self = StObject.set(x, "responseProcessor", value.asInstanceOf[js.Any])
+      inline def setResponseProcessor(value: js.Function): Self = StObject.set(x, "responseProcessor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseProcessorUndefined: Self = StObject.set(x, "responseProcessor", js.undefined)
+      inline def setResponseProcessorUndefined: Self = StObject.set(x, "responseProcessor", js.undefined)
     }
   }
   
@@ -255,26 +242,20 @@ object restClientMod {
   }
   object IRestResponse {
     
-    @scala.inline
-    def apply[T](headers: js.Object, statusCode: Double): IRestResponse[T] = {
+    inline def apply[T](headers: js.Object, statusCode: Double): IRestResponse[T] = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], result = null)
       __obj.asInstanceOf[IRestResponse[T]]
     }
     
-    @scala.inline
-    implicit class IRestResponseMutableBuilder[Self <: IRestResponse[?], T] (val x: Self & IRestResponse[T]) extends AnyVal {
+    extension [Self <: IRestResponse[?], T](x: Self & IRestResponse[T]) {
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultNull: Self = StObject.set(x, "result", null)
+      inline def setResultNull: Self = StObject.set(x, "result", null)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

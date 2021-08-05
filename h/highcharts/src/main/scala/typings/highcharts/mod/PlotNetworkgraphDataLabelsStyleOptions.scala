@@ -10,19 +10,15 @@ trait PlotNetworkgraphDataLabelsStyleOptions extends StObject {
 }
 object PlotNetworkgraphDataLabelsStyleOptions {
   
-  @scala.inline
-  def apply(): PlotNetworkgraphDataLabelsStyleOptions = {
+  inline def apply(): PlotNetworkgraphDataLabelsStyleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotNetworkgraphDataLabelsStyleOptions]
   }
   
-  @scala.inline
-  implicit class PlotNetworkgraphDataLabelsStyleOptionsMutableBuilder[Self <: PlotNetworkgraphDataLabelsStyleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotNetworkgraphDataLabelsStyleOptions](x: Self) {
     
-    @scala.inline
-    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

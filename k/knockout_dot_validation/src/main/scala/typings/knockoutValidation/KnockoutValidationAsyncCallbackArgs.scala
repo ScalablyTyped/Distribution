@@ -12,19 +12,15 @@ trait KnockoutValidationAsyncCallbackArgs extends StObject {
 }
 object KnockoutValidationAsyncCallbackArgs {
   
-  @scala.inline
-  def apply(isValid: Boolean, message: String): KnockoutValidationAsyncCallbackArgs = {
+  inline def apply(isValid: Boolean, message: String): KnockoutValidationAsyncCallbackArgs = {
     val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutValidationAsyncCallbackArgs]
   }
   
-  @scala.inline
-  implicit class KnockoutValidationAsyncCallbackArgsMutableBuilder[Self <: KnockoutValidationAsyncCallbackArgs] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutValidationAsyncCallbackArgs](x: Self) {
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

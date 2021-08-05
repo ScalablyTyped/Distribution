@@ -260,68 +260,48 @@ object mod {
   }
   object AgendaConfiguration {
     
-    @scala.inline
-    def apply(): AgendaConfiguration = {
+    inline def apply(): AgendaConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AgendaConfiguration]
     }
     
-    @scala.inline
-    implicit class AgendaConfigurationMutableBuilder[Self <: AgendaConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: AgendaConfiguration](x: Self) {
       
-      @scala.inline
-      def setDb(value: Address): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: Address): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
       
-      @scala.inline
-      def setDefaultConcurrency(value: Double): Self = StObject.set(x, "defaultConcurrency", value.asInstanceOf[js.Any])
+      inline def setDefaultConcurrency(value: Double): Self = StObject.set(x, "defaultConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultConcurrencyUndefined: Self = StObject.set(x, "defaultConcurrency", js.undefined)
+      inline def setDefaultConcurrencyUndefined: Self = StObject.set(x, "defaultConcurrency", js.undefined)
       
-      @scala.inline
-      def setDefaultLockLifetime(value: Double): Self = StObject.set(x, "defaultLockLifetime", value.asInstanceOf[js.Any])
+      inline def setDefaultLockLifetime(value: Double): Self = StObject.set(x, "defaultLockLifetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLockLifetimeUndefined: Self = StObject.set(x, "defaultLockLifetime", js.undefined)
+      inline def setDefaultLockLifetimeUndefined: Self = StObject.set(x, "defaultLockLifetime", js.undefined)
       
-      @scala.inline
-      def setDefaultLockLimit(value: Double): Self = StObject.set(x, "defaultLockLimit", value.asInstanceOf[js.Any])
+      inline def setDefaultLockLimit(value: Double): Self = StObject.set(x, "defaultLockLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLockLimitUndefined: Self = StObject.set(x, "defaultLockLimit", js.undefined)
+      inline def setDefaultLockLimitUndefined: Self = StObject.set(x, "defaultLockLimit", js.undefined)
       
-      @scala.inline
-      def setLockLimit(value: Double): Self = StObject.set(x, "lockLimit", value.asInstanceOf[js.Any])
+      inline def setLockLimit(value: Double): Self = StObject.set(x, "lockLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockLimitUndefined: Self = StObject.set(x, "lockLimit", js.undefined)
+      inline def setLockLimitUndefined: Self = StObject.set(x, "lockLimit", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrency(value: Double): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
+      inline def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
       
-      @scala.inline
-      def setMongo(value: Db): Self = StObject.set(x, "mongo", value.asInstanceOf[js.Any])
+      inline def setMongo(value: Db): Self = StObject.set(x, "mongo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMongoUndefined: Self = StObject.set(x, "mongo", js.undefined)
+      inline def setMongoUndefined: Self = StObject.set(x, "mongo", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProcessEvery(value: String | Double): Self = StObject.set(x, "processEvery", value.asInstanceOf[js.Any])
+      inline def setProcessEvery(value: String | Double): Self = StObject.set(x, "processEvery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessEveryUndefined: Self = StObject.set(x, "processEvery", js.undefined)
+      inline def setProcessEveryUndefined: Self = StObject.set(x, "processEvery", js.undefined)
     }
   }
   
@@ -519,8 +499,7 @@ object mod {
   }
   object JobAttributes {
     
-    @scala.inline
-    def apply[T /* <: JobAttributesData */](
+    inline def apply[T /* <: JobAttributesData */](
       _id: ObjectID_,
       data: T,
       disabled: Boolean,
@@ -543,56 +522,39 @@ object mod {
       __obj.asInstanceOf[JobAttributes[T]]
     }
     
-    @scala.inline
-    implicit class JobAttributesMutableBuilder[Self <: JobAttributes[?], T /* <: JobAttributesData */] (val x: Self & JobAttributes[T]) extends AnyVal {
+    extension [Self <: JobAttributes[?], T /* <: JobAttributesData */](x: Self & JobAttributes[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailCount(value: Double): Self = StObject.set(x, "failCount", value.asInstanceOf[js.Any])
+      inline def setFailCount(value: Double): Self = StObject.set(x, "failCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailReason(value: String): Self = StObject.set(x, "failReason", value.asInstanceOf[js.Any])
+      inline def setFailReason(value: String): Self = StObject.set(x, "failReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedAt(value: Date): Self = StObject.set(x, "failedAt", value.asInstanceOf[js.Any])
+      inline def setFailedAt(value: Date): Self = StObject.set(x, "failedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFinishedAt(value: Date): Self = StObject.set(x, "lastFinishedAt", value.asInstanceOf[js.Any])
+      inline def setLastFinishedAt(value: Date): Self = StObject.set(x, "lastFinishedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
+      inline def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastRunAt(value: Date): Self = StObject.set(x, "lastRunAt", value.asInstanceOf[js.Any])
+      inline def setLastRunAt(value: Date): Self = StObject.set(x, "lastRunAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockedAt(value: Date): Self = StObject.set(x, "lockedAt", value.asInstanceOf[js.Any])
+      inline def setLockedAt(value: Date): Self = StObject.set(x, "lockedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextRunAt(value: Date): Self = StObject.set(x, "nextRunAt", value.asInstanceOf[js.Any])
+      inline def setNextRunAt(value: Date): Self = StObject.set(x, "nextRunAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatInterval(value: String | Double): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
+      inline def setRepeatInterval(value: String | Double): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatTimezone(value: String): Self = StObject.set(x, "repeatTimezone", value.asInstanceOf[js.Any])
+      inline def setRepeatTimezone(value: String): Self = StObject.set(x, "repeatTimezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_id(value: ObjectID_): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: ObjectID_): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -624,38 +586,28 @@ object mod {
   }
   object JobOptions {
     
-    @scala.inline
-    def apply(): JobOptions = {
+    inline def apply(): JobOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JobOptions]
     }
     
-    @scala.inline
-    implicit class JobOptionsMutableBuilder[Self <: JobOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JobOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setLockLifetime(value: Double): Self = StObject.set(x, "lockLifetime", value.asInstanceOf[js.Any])
+      inline def setLockLifetime(value: Double): Self = StObject.set(x, "lockLifetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockLifetimeUndefined: Self = StObject.set(x, "lockLifetime", js.undefined)
+      inline def setLockLifetimeUndefined: Self = StObject.set(x, "lockLifetime", js.undefined)
       
-      @scala.inline
-      def setLockLimit(value: Double): Self = StObject.set(x, "lockLimit", value.asInstanceOf[js.Any])
+      inline def setLockLimit(value: Double): Self = StObject.set(x, "lockLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockLimitUndefined: Self = StObject.set(x, "lockLimit", js.undefined)
+      inline def setLockLimitUndefined: Self = StObject.set(x, "lockLimit", js.undefined)
       
-      @scala.inline
-      def setPriority(value: String | Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: String | Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
   

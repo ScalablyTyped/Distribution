@@ -82,50 +82,36 @@ object typesScheduleMod {
   }
   object Schedule {
     
-    @scala.inline
-    def apply(): Schedule = {
+    inline def apply(): Schedule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Schedule]
     }
     
-    @scala.inline
-    implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
+    extension [Self <: Schedule](x: Self) {
       
-      @scala.inline
-      def setEndTime(value: String): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: String): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+      inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
       
-      @scala.inline
-      def setFrequency(value: ONCE | HOURLY | DAILY | WEEKLY | MONTHLY | String): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: ONCE | HOURLY | DAILY | WEEKLY | MONTHLY | String): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
       
-      @scala.inline
-      def setIsLocalTime(value: Boolean): Self = StObject.set(x, "IsLocalTime", value.asInstanceOf[js.Any])
+      inline def setIsLocalTime(value: Boolean): Self = StObject.set(x, "IsLocalTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLocalTimeUndefined: Self = StObject.set(x, "IsLocalTime", js.undefined)
+      inline def setIsLocalTimeUndefined: Self = StObject.set(x, "IsLocalTime", js.undefined)
       
-      @scala.inline
-      def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
+      inline def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
+      inline def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: String): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: String): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
+      inline def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
     }
   }
   
@@ -141,20 +127,16 @@ object typesScheduleMod {
   }
   object UnmarshalledSchedule {
     
-    @scala.inline
-    def apply(): UnmarshalledSchedule = {
+    inline def apply(): UnmarshalledSchedule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSchedule]
     }
     
-    @scala.inline
-    implicit class UnmarshalledScheduleMutableBuilder[Self <: UnmarshalledSchedule] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSchedule](x: Self) {
       
-      @scala.inline
-      def setQuietTime(value: UnmarshalledQuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
+      inline def setQuietTime(value: UnmarshalledQuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
+      inline def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
     }
   }
 }

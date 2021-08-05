@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsTextCombineHorizontal extends StObject
 object styleMsTextCombineHorizontal {
   
-  @scala.inline
-  def styleMsTextCombineHorizontalAll: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsTextCombineHorizontalAll: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsTextCombineHorizontalDigits: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsTextCombineHorizontalDigits: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsTextCombineHorizontalNone: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsTextCombineHorizontalNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsTextCombineHorizontalNotSet: `3` = 3.asInstanceOf[`3`]
+  inline def styleMsTextCombineHorizontalNotSet: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleMsTextCombineHorizontal_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsTextCombineHorizontal_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

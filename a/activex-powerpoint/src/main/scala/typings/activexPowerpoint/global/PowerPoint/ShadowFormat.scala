@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ShadowFormat")
 @js.native
-class ShadowFormat protected ()
+/* private */ class ShadowFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ShadowFormat {
   
@@ -43,7 +43,7 @@ class ShadowFormat protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ShadowFormat_typekey")
   var PowerPointDotShadowFormat_typekey: typings.activexPowerpoint.PowerPoint.ShadowFormat = js.native
   

@@ -16,25 +16,19 @@ trait DialogflowV1MessageImage
 }
 object DialogflowV1MessageImage {
   
-  @scala.inline
-  def apply(): DialogflowV1MessageImage = {
+  inline def apply(): DialogflowV1MessageImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1MessageImage]
   }
   
-  @scala.inline
-  implicit class DialogflowV1MessageImageMutableBuilder[Self <: DialogflowV1MessageImage] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1MessageImage](x: Self) {
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

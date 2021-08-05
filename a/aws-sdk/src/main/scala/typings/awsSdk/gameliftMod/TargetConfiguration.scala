@@ -13,16 +13,13 @@ trait TargetConfiguration extends StObject {
 }
 object TargetConfiguration {
   
-  @scala.inline
-  def apply(TargetValue: Double): TargetConfiguration = {
+  inline def apply(TargetValue: Double): TargetConfiguration = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetConfiguration]
   }
   
-  @scala.inline
-  implicit class TargetConfigurationMutableBuilder[Self <: TargetConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TargetConfiguration](x: Self) {
     
-    @scala.inline
-    def setTargetValue(value: Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
+    inline def setTargetValue(value: Double): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
   }
 }

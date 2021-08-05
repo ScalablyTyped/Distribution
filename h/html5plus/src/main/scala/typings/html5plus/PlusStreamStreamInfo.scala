@@ -39,31 +39,23 @@ trait PlusStreamStreamInfo extends StObject {
 }
 object PlusStreamStreamInfo {
   
-  @scala.inline
-  def apply(): PlusStreamStreamInfo = {
+  inline def apply(): PlusStreamStreamInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusStreamStreamInfo]
   }
   
-  @scala.inline
-  implicit class PlusStreamStreamInfoMutableBuilder[Self <: PlusStreamStreamInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PlusStreamStreamInfo](x: Self) {
     
-    @scala.inline
-    def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

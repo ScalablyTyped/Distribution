@@ -13,16 +13,13 @@ trait Iban extends StObject {
 }
 object Iban {
   
-  @scala.inline
-  def apply(iban: String): Iban = {
+  inline def apply(iban: String): Iban = {
     val __obj = js.Dynamic.literal(iban = iban.asInstanceOf[js.Any])
     __obj.asInstanceOf[Iban]
   }
   
-  @scala.inline
-  implicit class IbanMutableBuilder[Self <: Iban] (val x: Self) extends AnyVal {
+  extension [Self <: Iban](x: Self) {
     
-    @scala.inline
-    def setIban(value: String): Self = StObject.set(x, "iban", value.asInstanceOf[js.Any])
+    inline def setIban(value: String): Self = StObject.set(x, "iban", value.asInstanceOf[js.Any])
   }
 }

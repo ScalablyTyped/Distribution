@@ -13,19 +13,15 @@ trait GetStorageSuccessCallbackResult extends StObject {
 }
 object GetStorageSuccessCallbackResult {
   
-  @scala.inline
-  def apply(data: js.Any, errMsg: String): GetStorageSuccessCallbackResult = {
+  inline def apply(data: js.Any, errMsg: String): GetStorageSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStorageSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetStorageSuccessCallbackResultMutableBuilder[Self <: GetStorageSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

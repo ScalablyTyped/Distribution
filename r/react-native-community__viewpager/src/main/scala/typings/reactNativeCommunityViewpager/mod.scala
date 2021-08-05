@@ -34,17 +34,14 @@ object mod {
   }
   object PageScrollStateChangedEvent {
     
-    @scala.inline
-    def apply(pageScrollState: idle | dragging | settling): PageScrollStateChangedEvent = {
+    inline def apply(pageScrollState: idle | dragging | settling): PageScrollStateChangedEvent = {
       val __obj = js.Dynamic.literal(pageScrollState = pageScrollState.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageScrollStateChangedEvent]
     }
     
-    @scala.inline
-    implicit class PageScrollStateChangedEventMutableBuilder[Self <: PageScrollStateChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PageScrollStateChangedEvent](x: Self) {
       
-      @scala.inline
-      def setPageScrollState(value: idle | dragging | settling): Self = StObject.set(x, "pageScrollState", value.asInstanceOf[js.Any])
+      inline def setPageScrollState(value: idle | dragging | settling): Self = StObject.set(x, "pageScrollState", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,20 +73,16 @@ object mod {
   }
   object ViewPagerOnPageScrollEventData {
     
-    @scala.inline
-    def apply(offset: Double, position: Double): ViewPagerOnPageScrollEventData = {
+    inline def apply(offset: Double, position: Double): ViewPagerOnPageScrollEventData = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewPagerOnPageScrollEventData]
     }
     
-    @scala.inline
-    implicit class ViewPagerOnPageScrollEventDataMutableBuilder[Self <: ViewPagerOnPageScrollEventData] (val x: Self) extends AnyVal {
+    extension [Self <: ViewPagerOnPageScrollEventData](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,17 +92,14 @@ object mod {
   }
   object ViewPagerOnPageSelectedEventData {
     
-    @scala.inline
-    def apply(position: Double): ViewPagerOnPageSelectedEventData = {
+    inline def apply(position: Double): ViewPagerOnPageSelectedEventData = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewPagerOnPageSelectedEventData]
     }
     
-    @scala.inline
-    implicit class ViewPagerOnPageSelectedEventDataMutableBuilder[Self <: ViewPagerOnPageSelectedEventData] (val x: Self) extends AnyVal {
+    extension [Self <: ViewPagerOnPageSelectedEventData](x: Self) {
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,101 +196,70 @@ object mod {
   }
   object ViewPagerProps {
     
-    @scala.inline
-    def apply(): ViewPagerProps = {
+    inline def apply(): ViewPagerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewPagerProps]
     }
     
-    @scala.inline
-    implicit class ViewPagerPropsMutableBuilder[Self <: ViewPagerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ViewPagerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
+      inline def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
+      inline def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
       
-      @scala.inline
-      def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+      inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
+      inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
       
-      @scala.inline
-      def setOnMoveShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
+      inline def setOnMoveShouldSetResponderCapture(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
+      inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
       
-      @scala.inline
-      def setOnPageScroll(value: /* event */ NativeSyntheticEvent[ViewPagerOnPageScrollEventData] => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
+      inline def setOnPageScroll(value: /* event */ NativeSyntheticEvent[ViewPagerOnPageScrollEventData] => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageScrollStateChanged(value: /* event */ NativeSyntheticEvent[PageScrollStateChangedEvent] => Unit): Self = StObject.set(x, "onPageScrollStateChanged", js.Any.fromFunction1(value))
+      inline def setOnPageScrollStateChanged(value: /* event */ NativeSyntheticEvent[PageScrollStateChangedEvent] => Unit): Self = StObject.set(x, "onPageScrollStateChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageScrollStateChangedUndefined: Self = StObject.set(x, "onPageScrollStateChanged", js.undefined)
+      inline def setOnPageScrollStateChangedUndefined: Self = StObject.set(x, "onPageScrollStateChanged", js.undefined)
       
-      @scala.inline
-      def setOnPageScrollUndefined: Self = StObject.set(x, "onPageScroll", js.undefined)
+      inline def setOnPageScrollUndefined: Self = StObject.set(x, "onPageScroll", js.undefined)
       
-      @scala.inline
-      def setOnPageSelected(value: /* event */ NativeSyntheticEvent[ViewPagerOnPageSelectedEventData] => Unit): Self = StObject.set(x, "onPageSelected", js.Any.fromFunction1(value))
+      inline def setOnPageSelected(value: /* event */ NativeSyntheticEvent[ViewPagerOnPageSelectedEventData] => Unit): Self = StObject.set(x, "onPageSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageSelectedUndefined: Self = StObject.set(x, "onPageSelected", js.undefined)
+      inline def setOnPageSelectedUndefined: Self = StObject.set(x, "onPageSelected", js.undefined)
       
-      @scala.inline
-      def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
-      @scala.inline
-      def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
+      inline def setOverScrollMode(value: auto | always | never): Self = StObject.set(x, "overScrollMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
+      inline def setOverScrollModeUndefined: Self = StObject.set(x, "overScrollMode", js.undefined)
       
-      @scala.inline
-      def setPageMargin(value: Double): Self = StObject.set(x, "pageMargin", value.asInstanceOf[js.Any])
+      inline def setPageMargin(value: Double): Self = StObject.set(x, "pageMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageMarginUndefined: Self = StObject.set(x, "pageMargin", js.undefined)
+      inline def setPageMarginUndefined: Self = StObject.set(x, "pageMargin", js.undefined)
       
-      @scala.inline
-      def setScrollEnabled(value: Boolean): Self = StObject.set(x, "scrollEnabled", value.asInstanceOf[js.Any])
+      inline def setScrollEnabled(value: Boolean): Self = StObject.set(x, "scrollEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollEnabledUndefined: Self = StObject.set(x, "scrollEnabled", js.undefined)
+      inline def setScrollEnabledUndefined: Self = StObject.set(x, "scrollEnabled", js.undefined)
       
-      @scala.inline
-      def setShowPageIndicator(value: Boolean): Self = StObject.set(x, "showPageIndicator", value.asInstanceOf[js.Any])
+      inline def setShowPageIndicator(value: Boolean): Self = StObject.set(x, "showPageIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPageIndicatorUndefined: Self = StObject.set(x, "showPageIndicator", js.undefined)
+      inline def setShowPageIndicatorUndefined: Self = StObject.set(x, "showPageIndicator", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTransitionStyle(value: scroll | curl): Self = StObject.set(x, "transitionStyle", value.asInstanceOf[js.Any])
+      inline def setTransitionStyle(value: scroll | curl): Self = StObject.set(x, "transitionStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionStyleUndefined: Self = StObject.set(x, "transitionStyle", js.undefined)
+      inline def setTransitionStyleUndefined: Self = StObject.set(x, "transitionStyle", js.undefined)
     }
   }
 }

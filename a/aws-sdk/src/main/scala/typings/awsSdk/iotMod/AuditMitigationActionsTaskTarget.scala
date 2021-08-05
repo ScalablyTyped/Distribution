@@ -23,34 +23,25 @@ trait AuditMitigationActionsTaskTarget extends StObject {
 }
 object AuditMitigationActionsTaskTarget {
   
-  @scala.inline
-  def apply(): AuditMitigationActionsTaskTarget = {
+  inline def apply(): AuditMitigationActionsTaskTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditMitigationActionsTaskTarget]
   }
   
-  @scala.inline
-  implicit class AuditMitigationActionsTaskTargetMutableBuilder[Self <: AuditMitigationActionsTaskTarget] (val x: Self) extends AnyVal {
+  extension [Self <: AuditMitigationActionsTaskTarget](x: Self) {
     
-    @scala.inline
-    def setAuditCheckToReasonCodeFilter(value: AuditCheckToReasonCodeFilter): Self = StObject.set(x, "auditCheckToReasonCodeFilter", value.asInstanceOf[js.Any])
+    inline def setAuditCheckToReasonCodeFilter(value: AuditCheckToReasonCodeFilter): Self = StObject.set(x, "auditCheckToReasonCodeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditCheckToReasonCodeFilterUndefined: Self = StObject.set(x, "auditCheckToReasonCodeFilter", js.undefined)
+    inline def setAuditCheckToReasonCodeFilterUndefined: Self = StObject.set(x, "auditCheckToReasonCodeFilter", js.undefined)
     
-    @scala.inline
-    def setAuditTaskId(value: AuditTaskId): Self = StObject.set(x, "auditTaskId", value.asInstanceOf[js.Any])
+    inline def setAuditTaskId(value: AuditTaskId): Self = StObject.set(x, "auditTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditTaskIdUndefined: Self = StObject.set(x, "auditTaskId", js.undefined)
+    inline def setAuditTaskIdUndefined: Self = StObject.set(x, "auditTaskId", js.undefined)
     
-    @scala.inline
-    def setFindingIds(value: FindingIds): Self = StObject.set(x, "findingIds", value.asInstanceOf[js.Any])
+    inline def setFindingIds(value: FindingIds): Self = StObject.set(x, "findingIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIdsUndefined: Self = StObject.set(x, "findingIds", js.undefined)
+    inline def setFindingIdsUndefined: Self = StObject.set(x, "findingIds", js.undefined)
     
-    @scala.inline
-    def setFindingIdsVarargs(value: FindingId*): Self = StObject.set(x, "findingIds", js.Array(value :_*))
+    inline def setFindingIdsVarargs(value: FindingId*): Self = StObject.set(x, "findingIds", js.Array(value :_*))
   }
 }

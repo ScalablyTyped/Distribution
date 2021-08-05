@@ -12,37 +12,24 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateAuthCode(secret: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthCode")(secret.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def generateAuthCode(secret: String, timeOffset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthCode")(secret.asInstanceOf[js.Any], timeOffset.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def generateAuthCode(secret: String, timeOffset: TimeOffsetFunction): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthCode")(secret.asInstanceOf[js.Any], timeOffset.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateAuthCode(secret: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthCode")(secret.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateAuthCode(secret: String, timeOffset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthCode")(secret.asInstanceOf[js.Any], timeOffset.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateAuthCode(secret: String, timeOffset: TimeOffsetFunction): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthCode")(secret.asInstanceOf[js.Any], timeOffset.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def generateConfirmationKey(identitySecret: String, time: Double, tag: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateConfirmationKey")(identitySecret.asInstanceOf[js.Any], time.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def generateConfirmationKey(identitySecret: Buffer, time: Double, tag: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateConfirmationKey")(identitySecret.asInstanceOf[js.Any], time.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateConfirmationKey(identitySecret: String, time: Double, tag: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateConfirmationKey")(identitySecret.asInstanceOf[js.Any], time.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateConfirmationKey(identitySecret: Buffer, time: Double, tag: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateConfirmationKey")(identitySecret.asInstanceOf[js.Any], time.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getAuthCode(secret: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthCode")(secret.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getAuthCode(secret: String, timeOffset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthCode")(secret.asInstanceOf[js.Any], timeOffset.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getAuthCode(secret: String, timeOffset: TimeOffsetFunction): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthCode")(secret.asInstanceOf[js.Any], timeOffset.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getAuthCode(secret: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthCode")(secret.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getAuthCode(secret: String, timeOffset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthCode")(secret.asInstanceOf[js.Any], timeOffset.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getAuthCode(secret: String, timeOffset: TimeOffsetFunction): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthCode")(secret.asInstanceOf[js.Any], timeOffset.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getConfirmationKey(identitySecret: String, time: Double, tag: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfirmationKey")(identitySecret.asInstanceOf[js.Any], time.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getConfirmationKey(identitySecret: Buffer, time: Double, tag: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfirmationKey")(identitySecret.asInstanceOf[js.Any], time.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getConfirmationKey(identitySecret: String, time: Double, tag: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfirmationKey")(identitySecret.asInstanceOf[js.Any], time.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getConfirmationKey(identitySecret: Buffer, time: Double, tag: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfirmationKey")(identitySecret.asInstanceOf[js.Any], time.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getDeviceID(steamID: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceID")(steamID.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getDeviceID(steamID: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceID")(steamID.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDeviceID(steamID: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceID")(steamID.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDeviceID(steamID: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceID")(steamID.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getTimeOffset(
+  inline def getTimeOffset(
     callback: js.Function3[
       /* error */ Error, 
       /* offset */ js.UndefOr[Double], 
@@ -51,10 +38,8 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeOffset")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def time(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[Double]
-  @scala.inline
-  def time(timeOffset: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(timeOffset.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def time(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[Double]
+  inline def time(timeOffset: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(timeOffset.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   type TimeOffsetFunction = js.Function0[Double]
 }

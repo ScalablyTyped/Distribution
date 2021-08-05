@@ -10,16 +10,13 @@ trait Reason extends StObject {
 }
 object Reason {
   
-  @scala.inline
-  def apply(Reason: Double): Reason = {
+  inline def apply(Reason: Double): Reason = {
     val __obj = js.Dynamic.literal(Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reason]
   }
   
-  @scala.inline
-  implicit class ReasonMutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
+  extension [Self <: Reason](x: Self) {
     
-    @scala.inline
-    def setReason(value: Double): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Double): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

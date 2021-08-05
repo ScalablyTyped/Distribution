@@ -10,16 +10,13 @@ trait SpeechSynthesisEventMap extends StObject {
 }
 object SpeechSynthesisEventMap {
   
-  @scala.inline
-  def apply(voiceschanged: Event): SpeechSynthesisEventMap = {
+  inline def apply(voiceschanged: Event): SpeechSynthesisEventMap = {
     val __obj = js.Dynamic.literal(voiceschanged = voiceschanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechSynthesisEventMap]
   }
   
-  @scala.inline
-  implicit class SpeechSynthesisEventMapMutableBuilder[Self <: SpeechSynthesisEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechSynthesisEventMap](x: Self) {
     
-    @scala.inline
-    def setVoiceschanged(value: Event): Self = StObject.set(x, "voiceschanged", value.asInstanceOf[js.Any])
+    inline def setVoiceschanged(value: Event): Self = StObject.set(x, "voiceschanged", value.asInstanceOf[js.Any])
   }
 }

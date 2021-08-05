@@ -33,49 +33,35 @@ trait DescribeRouteTablesRequest extends StObject {
 }
 object DescribeRouteTablesRequest {
   
-  @scala.inline
-  def apply(): DescribeRouteTablesRequest = {
+  inline def apply(): DescribeRouteTablesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRouteTablesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRouteTablesRequestMutableBuilder[Self <: DescribeRouteTablesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRouteTablesRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: DescribeRouteTablesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeRouteTablesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRouteTableIds(value: RouteTableIdStringList): Self = StObject.set(x, "RouteTableIds", value.asInstanceOf[js.Any])
+    inline def setRouteTableIds(value: RouteTableIdStringList): Self = StObject.set(x, "RouteTableIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteTableIdsUndefined: Self = StObject.set(x, "RouteTableIds", js.undefined)
+    inline def setRouteTableIdsUndefined: Self = StObject.set(x, "RouteTableIds", js.undefined)
     
-    @scala.inline
-    def setRouteTableIdsVarargs(value: RouteTableId*): Self = StObject.set(x, "RouteTableIds", js.Array(value :_*))
+    inline def setRouteTableIdsVarargs(value: RouteTableId*): Self = StObject.set(x, "RouteTableIds", js.Array(value :_*))
   }
 }

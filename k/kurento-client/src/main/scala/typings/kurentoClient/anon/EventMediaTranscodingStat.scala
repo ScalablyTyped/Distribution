@@ -29,8 +29,7 @@ trait EventMediaTranscodingStat extends StObject {
 }
 object EventMediaTranscodingStat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     binName: String,
     mediaType: MediaType,
     source: String,
@@ -44,34 +43,24 @@ object EventMediaTranscodingStat {
     __obj.asInstanceOf[EventMediaTranscodingStat]
   }
   
-  @scala.inline
-  implicit class EventMediaTranscodingStatMutableBuilder[Self <: EventMediaTranscodingStat] (val x: Self) extends AnyVal {
+  extension [Self <: EventMediaTranscodingStat](x: Self) {
     
-    @scala.inline
-    def setBinName(value: String): Self = StObject.set(x, "binName", value.asInstanceOf[js.Any])
+    inline def setBinName(value: String): Self = StObject.set(x, "binName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: MediaTranscodingState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: MediaTranscodingState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MediaTranscodingStateChange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MediaTranscodingStateChange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

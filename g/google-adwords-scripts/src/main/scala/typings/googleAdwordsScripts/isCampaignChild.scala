@@ -10,16 +10,13 @@ trait isCampaignChild extends StObject {
 }
 object isCampaignChild {
   
-  @scala.inline
-  def apply(getCampaign: () => Campaign): isCampaignChild = {
+  inline def apply(getCampaign: () => Campaign): isCampaignChild = {
     val __obj = js.Dynamic.literal(getCampaign = js.Any.fromFunction0(getCampaign))
     __obj.asInstanceOf[isCampaignChild]
   }
   
-  @scala.inline
-  implicit class isCampaignChildMutableBuilder[Self <: isCampaignChild] (val x: Self) extends AnyVal {
+  extension [Self <: isCampaignChild](x: Self) {
     
-    @scala.inline
-    def setGetCampaign(value: () => Campaign): Self = StObject.set(x, "getCampaign", js.Any.fromFunction0(value))
+    inline def setGetCampaign(value: () => Campaign): Self = StObject.set(x, "getCampaign", js.Any.fromFunction0(value))
   }
 }

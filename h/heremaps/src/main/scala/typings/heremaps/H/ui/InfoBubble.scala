@@ -103,23 +103,18 @@ object InfoBubble {
   }
   object Options {
     
-    @scala.inline
-    def apply(content: String | Node): Options = {
+    inline def apply(content: String | Node): Options = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setContent(value: String | Node): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | Node): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStateChange(value: /* event */ Event => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
+      inline def setOnStateChange(value: /* event */ Event => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
+      inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
     }
   }
 }

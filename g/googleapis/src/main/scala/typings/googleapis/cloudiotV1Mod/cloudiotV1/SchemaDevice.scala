@@ -139,118 +139,81 @@ trait SchemaDevice extends StObject {
 }
 object SchemaDevice {
   
-  @scala.inline
-  def apply(): SchemaDevice = {
+  inline def apply(): SchemaDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDevice]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceMutableBuilder[Self <: SchemaDevice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDevice](x: Self) {
     
-    @scala.inline
-    def setBlocked(value: Boolean): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: Boolean): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
+    inline def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
-    @scala.inline
-    def setConfig(value: SchemaDeviceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SchemaDeviceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: js.Array[SchemaDeviceCredential]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: js.Array[SchemaDeviceCredential]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setCredentialsVarargs(value: SchemaDeviceCredential*): Self = StObject.set(x, "credentials", js.Array(value :_*))
+    inline def setCredentialsVarargs(value: SchemaDeviceCredential*): Self = StObject.set(x, "credentials", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayConfig(value: SchemaGatewayConfig): Self = StObject.set(x, "gatewayConfig", value.asInstanceOf[js.Any])
+    inline def setGatewayConfig(value: SchemaGatewayConfig): Self = StObject.set(x, "gatewayConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayConfigUndefined: Self = StObject.set(x, "gatewayConfig", js.undefined)
+    inline def setGatewayConfigUndefined: Self = StObject.set(x, "gatewayConfig", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLastConfigAckTime(value: String): Self = StObject.set(x, "lastConfigAckTime", value.asInstanceOf[js.Any])
+    inline def setLastConfigAckTime(value: String): Self = StObject.set(x, "lastConfigAckTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastConfigAckTimeUndefined: Self = StObject.set(x, "lastConfigAckTime", js.undefined)
+    inline def setLastConfigAckTimeUndefined: Self = StObject.set(x, "lastConfigAckTime", js.undefined)
     
-    @scala.inline
-    def setLastConfigSendTime(value: String): Self = StObject.set(x, "lastConfigSendTime", value.asInstanceOf[js.Any])
+    inline def setLastConfigSendTime(value: String): Self = StObject.set(x, "lastConfigSendTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastConfigSendTimeUndefined: Self = StObject.set(x, "lastConfigSendTime", js.undefined)
+    inline def setLastConfigSendTimeUndefined: Self = StObject.set(x, "lastConfigSendTime", js.undefined)
     
-    @scala.inline
-    def setLastErrorStatus(value: SchemaStatus): Self = StObject.set(x, "lastErrorStatus", value.asInstanceOf[js.Any])
+    inline def setLastErrorStatus(value: SchemaStatus): Self = StObject.set(x, "lastErrorStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorStatusUndefined: Self = StObject.set(x, "lastErrorStatus", js.undefined)
+    inline def setLastErrorStatusUndefined: Self = StObject.set(x, "lastErrorStatus", js.undefined)
     
-    @scala.inline
-    def setLastErrorTime(value: String): Self = StObject.set(x, "lastErrorTime", value.asInstanceOf[js.Any])
+    inline def setLastErrorTime(value: String): Self = StObject.set(x, "lastErrorTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastErrorTimeUndefined: Self = StObject.set(x, "lastErrorTime", js.undefined)
+    inline def setLastErrorTimeUndefined: Self = StObject.set(x, "lastErrorTime", js.undefined)
     
-    @scala.inline
-    def setLastEventTime(value: String): Self = StObject.set(x, "lastEventTime", value.asInstanceOf[js.Any])
+    inline def setLastEventTime(value: String): Self = StObject.set(x, "lastEventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEventTimeUndefined: Self = StObject.set(x, "lastEventTime", js.undefined)
+    inline def setLastEventTimeUndefined: Self = StObject.set(x, "lastEventTime", js.undefined)
     
-    @scala.inline
-    def setLastHeartbeatTime(value: String): Self = StObject.set(x, "lastHeartbeatTime", value.asInstanceOf[js.Any])
+    inline def setLastHeartbeatTime(value: String): Self = StObject.set(x, "lastHeartbeatTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastHeartbeatTimeUndefined: Self = StObject.set(x, "lastHeartbeatTime", js.undefined)
+    inline def setLastHeartbeatTimeUndefined: Self = StObject.set(x, "lastHeartbeatTime", js.undefined)
     
-    @scala.inline
-    def setLastStateTime(value: String): Self = StObject.set(x, "lastStateTime", value.asInstanceOf[js.Any])
+    inline def setLastStateTime(value: String): Self = StObject.set(x, "lastStateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStateTimeUndefined: Self = StObject.set(x, "lastStateTime", js.undefined)
+    inline def setLastStateTimeUndefined: Self = StObject.set(x, "lastStateTime", js.undefined)
     
-    @scala.inline
-    def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumId(value: String): Self = StObject.set(x, "numId", value.asInstanceOf[js.Any])
+    inline def setNumId(value: String): Self = StObject.set(x, "numId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumIdUndefined: Self = StObject.set(x, "numId", js.undefined)
+    inline def setNumIdUndefined: Self = StObject.set(x, "numId", js.undefined)
     
-    @scala.inline
-    def setState(value: SchemaDeviceState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: SchemaDeviceState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

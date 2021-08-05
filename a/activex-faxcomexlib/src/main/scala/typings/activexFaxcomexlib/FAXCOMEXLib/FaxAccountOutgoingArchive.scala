@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FaxAccountOutgoingArchive extends StObject {
   
-  @JSName("FAXCOMEXLib.FaxAccountOutgoingArchive_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxAccountOutgoingArchive_typekey")
   var FAXCOMEXLibDotFaxAccountOutgoingArchive_typekey: FaxAccountOutgoingArchive = js.native
   
   /** Get an archived message by its ID */

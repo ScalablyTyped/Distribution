@@ -11,19 +11,15 @@ trait PickCollapsibleclose extends StObject {
 }
 object PickCollapsibleclose {
   
-  @scala.inline
-  def apply(): PickCollapsibleclose = {
+  inline def apply(): PickCollapsibleclose = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickCollapsibleclose]
   }
   
-  @scala.inline
-  implicit class PickCollapsiblecloseMutableBuilder[Self <: PickCollapsibleclose] (val x: Self) extends AnyVal {
+  extension [Self <: PickCollapsibleclose](x: Self) {
     
-    @scala.inline
-    def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
   }
 }

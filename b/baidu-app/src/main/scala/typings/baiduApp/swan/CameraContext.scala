@@ -17,8 +17,7 @@ trait CameraContext extends StObject {
 }
 object CameraContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     startRecord: StartRecordOptions => Unit,
     stopRecord: StopRecordOptions => Unit,
     takePhoto: TakePhotoOptions => Unit
@@ -27,16 +26,12 @@ object CameraContext {
     __obj.asInstanceOf[CameraContext]
   }
   
-  @scala.inline
-  implicit class CameraContextMutableBuilder[Self <: CameraContext] (val x: Self) extends AnyVal {
+  extension [Self <: CameraContext](x: Self) {
     
-    @scala.inline
-    def setStartRecord(value: StartRecordOptions => Unit): Self = StObject.set(x, "startRecord", js.Any.fromFunction1(value))
+    inline def setStartRecord(value: StartRecordOptions => Unit): Self = StObject.set(x, "startRecord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopRecord(value: StopRecordOptions => Unit): Self = StObject.set(x, "stopRecord", js.Any.fromFunction1(value))
+    inline def setStopRecord(value: StopRecordOptions => Unit): Self = StObject.set(x, "stopRecord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTakePhoto(value: TakePhotoOptions => Unit): Self = StObject.set(x, "takePhoto", js.Any.fromFunction1(value))
+    inline def setTakePhoto(value: TakePhotoOptions => Unit): Self = StObject.set(x, "takePhoto", js.Any.fromFunction1(value))
   }
 }

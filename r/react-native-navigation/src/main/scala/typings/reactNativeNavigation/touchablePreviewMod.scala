@@ -33,7 +33,7 @@ object touchablePreviewMod {
     
     def onPressIn(): Unit | Null = js.native
     
-    var onRef: js.Any = js.native
+    /* private */ var onRef: js.Any = js.native
     
     def onTouchEnd(): Unit = js.native
     
@@ -41,9 +41,9 @@ object touchablePreviewMod {
     
     def onTouchStart(event: GestureResponderEvent): Unit = js.native
     
-    var timeout: js.Any = js.native
+    /* private */ var timeout: js.Any = js.native
     
-    var touchStartedAt: js.Any = js.native
+    /* private */ var touchStartedAt: js.Any = js.native
   }
   /* static members */
   object TouchablePreview {
@@ -55,20 +55,17 @@ object touchablePreviewMod {
     @JSImport("react-native-navigation/lib/dist/adapters/TouchablePreview", "TouchablePreview.defaultProps")
     @js.native
     def defaultProps: `0` = js.native
-    @scala.inline
-    def defaultProps_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-navigation/lib/dist/adapters/TouchablePreview", "TouchablePreview.peeking")
     @js.native
     def peeking: Boolean = js.native
-    @scala.inline
-    def peeking_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("peeking")(x.asInstanceOf[js.Any])
+    inline def peeking_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("peeking")(x.asInstanceOf[js.Any])
     
     @JSImport("react-native-navigation/lib/dist/adapters/TouchablePreview", "TouchablePreview.propTypes")
     @js.native
     def propTypes: Children = js.native
-    @scala.inline
-    def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   type GestureResponderEventWithForce = NativeSyntheticEvent[NativeTouchEventWithForce]
@@ -81,8 +78,7 @@ object touchablePreviewMod {
   }
   object NativeTouchEventWithForce {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changedTouches: js.Array[NativeTouchEvent],
       force: Double,
       identifier: String,
@@ -98,11 +94,9 @@ object touchablePreviewMod {
       __obj.asInstanceOf[NativeTouchEventWithForce]
     }
     
-    @scala.inline
-    implicit class NativeTouchEventWithForceMutableBuilder[Self <: NativeTouchEventWithForce] (val x: Self) extends AnyVal {
+    extension [Self <: NativeTouchEventWithForce](x: Self) {
       
-      @scala.inline
-      def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,52 +118,38 @@ object touchablePreviewMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOnPeekIn(value: () => Unit): Self = StObject.set(x, "onPeekIn", js.Any.fromFunction0(value))
+      inline def setOnPeekIn(value: () => Unit): Self = StObject.set(x, "onPeekIn", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPeekInUndefined: Self = StObject.set(x, "onPeekIn", js.undefined)
+      inline def setOnPeekInUndefined: Self = StObject.set(x, "onPeekIn", js.undefined)
       
-      @scala.inline
-      def setOnPeekOut(value: () => Unit): Self = StObject.set(x, "onPeekOut", js.Any.fromFunction0(value))
+      inline def setOnPeekOut(value: () => Unit): Self = StObject.set(x, "onPeekOut", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPeekOutUndefined: Self = StObject.set(x, "onPeekOut", js.undefined)
+      inline def setOnPeekOutUndefined: Self = StObject.set(x, "onPeekOut", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressIn(value: /* payload */ ReactTag => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+      inline def setOnPressIn(value: /* payload */ ReactTag => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+      inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setTouchableComponent(
+      inline def setTouchableComponent(
         value: TouchableHighlight | TouchableOpacity | TouchableNativeFeedback | TouchableWithoutFeedback | ReactNode
       ): Self = StObject.set(x, "touchableComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchableComponentUndefined: Self = StObject.set(x, "touchableComponent", js.undefined)
+      inline def setTouchableComponentUndefined: Self = StObject.set(x, "touchableComponent", js.undefined)
     }
   }
 }

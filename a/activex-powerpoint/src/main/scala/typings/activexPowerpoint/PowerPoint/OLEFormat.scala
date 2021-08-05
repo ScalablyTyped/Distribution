@@ -23,7 +23,7 @@ trait OLEFormat extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.OLEFormat_typekey")
+  /* private */ @JSName("PowerPoint.OLEFormat_typekey")
   var PowerPointDotOLEFormat_typekey: OLEFormat = js.native
   
   val ProgID: String = js.native

@@ -45,7 +45,7 @@ object mod {
     
     def has(k: K): Boolean = js.native
     
-    var keyStore: js.Any = js.native
+    /* private */ var keyStore: js.Any = js.native
     
     def keys(): js.Array[K] = js.native
     
@@ -53,7 +53,7 @@ object mod {
     
     var size: Double = js.native
     
-    var valueStore: js.Any = js.native
+    /* private */ var valueStore: js.Any = js.native
     
     def values(): js.Array[V] = js.native
   }

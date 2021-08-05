@@ -11,13 +11,11 @@ object imageSizeNumbers {
   sealed trait `16`
     extends StObject
        with Bits
-  @scala.inline
-  def `16`: `16` = 16.asInstanceOf[`16`]
+  inline def `16`: `16` = 16.asInstanceOf[`16`]
   
   @js.native
   sealed trait `32`
     extends StObject
        with Bits
-  @scala.inline
-  def `32`: `32` = 32.asInstanceOf[`32`]
+  inline def `32`: `32` = 32.asInstanceOf[`32`]
 }

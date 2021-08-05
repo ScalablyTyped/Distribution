@@ -12,19 +12,15 @@ trait AppointmentDeletingEventArgs
 }
 object AppointmentDeletingEventArgs {
   
-  @scala.inline
-  def apply(appointmentIds: js.Array[js.Object], cancel: Boolean, sender: Control): AppointmentDeletingEventArgs = {
+  inline def apply(appointmentIds: js.Array[js.Object], cancel: Boolean, sender: Control): AppointmentDeletingEventArgs = {
     val __obj = js.Dynamic.literal(appointmentIds = appointmentIds.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentDeletingEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentDeletingEventArgsMutableBuilder[Self <: AppointmentDeletingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentDeletingEventArgs](x: Self) {
     
-    @scala.inline
-    def setAppointmentIds(value: js.Array[js.Object]): Self = StObject.set(x, "appointmentIds", value.asInstanceOf[js.Any])
+    inline def setAppointmentIds(value: js.Array[js.Object]): Self = StObject.set(x, "appointmentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentIdsVarargs(value: js.Object*): Self = StObject.set(x, "appointmentIds", js.Array(value :_*))
+    inline def setAppointmentIdsVarargs(value: js.Object*): Self = StObject.set(x, "appointmentIds", js.Array(value :_*))
   }
 }

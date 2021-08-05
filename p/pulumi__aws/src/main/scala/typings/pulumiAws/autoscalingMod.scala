@@ -67,21 +67,16 @@ object autoscalingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.attachmentMod.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.attachmentMod.Attachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.attachmentMod.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.attachmentMod.Attachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AttachmentState): typings.pulumiAws.attachmentMod.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.attachmentMod.Attachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): typings.pulumiAws.attachmentMod.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.attachmentMod.Attachment]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.attachmentMod.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.attachmentMod.Attachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.attachmentMod.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.attachmentMod.Attachment]
+    inline def get(name: String, id: Input[ID], state: AttachmentState): typings.pulumiAws.attachmentMod.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.attachmentMod.Attachment]
+    inline def get(name: String, id: Input[ID], state: AttachmentState, opts: CustomResourceOptions): typings.pulumiAws.attachmentMod.Attachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.attachmentMod.Attachment]
     
     /**
       * Returns true if the given object is an instance of Attachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/attachment.Attachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/attachment.Attachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/attachment.Attachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/attachment.Attachment */ Boolean]
   }
   
   @JSImport("@pulumi/aws/autoscaling", "Group")
@@ -114,94 +109,77 @@ object autoscalingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.groupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.groupMod.Group]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.groupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.groupMod.Group]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GroupState): typings.pulumiAws.groupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.groupMod.Group]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): typings.pulumiAws.groupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.groupMod.Group]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.groupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.groupMod.Group]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.groupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.groupMod.Group]
+    inline def get(name: String, id: Input[ID], state: GroupState): typings.pulumiAws.groupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.groupMod.Group]
+    inline def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): typings.pulumiAws.groupMod.Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.groupMod.Group]
     
     /**
       * Returns true if the given object is an instance of Group.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/group.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/group.Group */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/group.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/group.Group */ Boolean]
   }
   
   @JSImport("@pulumi/aws/autoscaling", "GroupDesiredCapacityMetric")
   @js.native
   def GroupDesiredCapacityMetric: Metric = js.native
-  @scala.inline
-  def GroupDesiredCapacityMetric_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupDesiredCapacityMetric")(x.asInstanceOf[js.Any])
+  inline def GroupDesiredCapacityMetric_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupDesiredCapacityMetric")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "GroupInServiceInstancesMetric")
   @js.native
   def GroupInServiceInstancesMetric: Metric = js.native
-  @scala.inline
-  def GroupInServiceInstancesMetric_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupInServiceInstancesMetric")(x.asInstanceOf[js.Any])
+  inline def GroupInServiceInstancesMetric_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupInServiceInstancesMetric")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "GroupMaxSizeMetric")
   @js.native
   def GroupMaxSizeMetric: Metric = js.native
-  @scala.inline
-  def GroupMaxSizeMetric_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupMaxSizeMetric")(x.asInstanceOf[js.Any])
+  inline def GroupMaxSizeMetric_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupMaxSizeMetric")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "GroupMinSizeMetric")
   @js.native
   def GroupMinSizeMetric: Metric = js.native
-  @scala.inline
-  def GroupMinSizeMetric_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupMinSizeMetric")(x.asInstanceOf[js.Any])
+  inline def GroupMinSizeMetric_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupMinSizeMetric")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "GroupPendingInstances")
   @js.native
   def GroupPendingInstances: Metric = js.native
-  @scala.inline
-  def GroupPendingInstances_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupPendingInstances")(x.asInstanceOf[js.Any])
+  inline def GroupPendingInstances_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupPendingInstances")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "GroupStandbyInstances")
   @js.native
   def GroupStandbyInstances: Metric = js.native
-  @scala.inline
-  def GroupStandbyInstances_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupStandbyInstances")(x.asInstanceOf[js.Any])
+  inline def GroupStandbyInstances_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupStandbyInstances")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "GroupTerminatingInstances")
   @js.native
   def GroupTerminatingInstances: Metric = js.native
-  @scala.inline
-  def GroupTerminatingInstances_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupTerminatingInstances")(x.asInstanceOf[js.Any])
+  inline def GroupTerminatingInstances_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupTerminatingInstances")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "GroupTotalInstances")
   @js.native
   def GroupTotalInstances: Metric = js.native
-  @scala.inline
-  def GroupTotalInstances_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupTotalInstances")(x.asInstanceOf[js.Any])
+  inline def GroupTotalInstances_=(x: Metric): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GroupTotalInstances")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "InstanceLaunchErrorNotification")
   @js.native
   def InstanceLaunchErrorNotification: NotificationType = js.native
-  @scala.inline
-  def InstanceLaunchErrorNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstanceLaunchErrorNotification")(x.asInstanceOf[js.Any])
+  inline def InstanceLaunchErrorNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstanceLaunchErrorNotification")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "InstanceLaunchNotification")
   @js.native
   def InstanceLaunchNotification: NotificationType = js.native
-  @scala.inline
-  def InstanceLaunchNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstanceLaunchNotification")(x.asInstanceOf[js.Any])
+  inline def InstanceLaunchNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstanceLaunchNotification")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "InstanceTerminateErrorNotification")
   @js.native
   def InstanceTerminateErrorNotification: NotificationType = js.native
-  @scala.inline
-  def InstanceTerminateErrorNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstanceTerminateErrorNotification")(x.asInstanceOf[js.Any])
+  inline def InstanceTerminateErrorNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstanceTerminateErrorNotification")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "InstanceTerminateNotification")
   @js.native
   def InstanceTerminateNotification: NotificationType = js.native
-  @scala.inline
-  def InstanceTerminateNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstanceTerminateNotification")(x.asInstanceOf[js.Any])
+  inline def InstanceTerminateNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InstanceTerminateNotification")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "LifecycleHook")
   @js.native
@@ -233,21 +211,16 @@ object autoscalingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.lifecycleHookMod.LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lifecycleHookMod.LifecycleHook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.lifecycleHookMod.LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lifecycleHookMod.LifecycleHook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LifecycleHookState): typings.pulumiAws.lifecycleHookMod.LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lifecycleHookMod.LifecycleHook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LifecycleHookState, opts: CustomResourceOptions): typings.pulumiAws.lifecycleHookMod.LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lifecycleHookMod.LifecycleHook]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.lifecycleHookMod.LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lifecycleHookMod.LifecycleHook]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.lifecycleHookMod.LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lifecycleHookMod.LifecycleHook]
+    inline def get(name: String, id: Input[ID], state: LifecycleHookState): typings.pulumiAws.lifecycleHookMod.LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lifecycleHookMod.LifecycleHook]
+    inline def get(name: String, id: Input[ID], state: LifecycleHookState, opts: CustomResourceOptions): typings.pulumiAws.lifecycleHookMod.LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.lifecycleHookMod.LifecycleHook]
     
     /**
       * Returns true if the given object is an instance of LifecycleHook.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean]
   }
   
   object Metric {
@@ -342,21 +315,16 @@ object autoscalingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.notificationMod.Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notificationMod.Notification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.notificationMod.Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notificationMod.Notification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NotificationState): typings.pulumiAws.notificationMod.Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notificationMod.Notification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NotificationState, opts: CustomResourceOptions): typings.pulumiAws.notificationMod.Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notificationMod.Notification]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.notificationMod.Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notificationMod.Notification]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.notificationMod.Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notificationMod.Notification]
+    inline def get(name: String, id: Input[ID], state: NotificationState): typings.pulumiAws.notificationMod.Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notificationMod.Notification]
+    inline def get(name: String, id: Input[ID], state: NotificationState, opts: CustomResourceOptions): typings.pulumiAws.notificationMod.Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notificationMod.Notification]
     
     /**
       * Returns true if the given object is an instance of Notification.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean]
   }
   
   object NotificationType {
@@ -385,8 +353,7 @@ object autoscalingMod {
   @JSImport("@pulumi/aws/autoscaling", "OneMinuteMetricsGranularity")
   @js.native
   def OneMinuteMetricsGranularity: MetricsGranularity = js.native
-  @scala.inline
-  def OneMinuteMetricsGranularity_=(x: MetricsGranularity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OneMinuteMetricsGranularity")(x.asInstanceOf[js.Any])
+  inline def OneMinuteMetricsGranularity_=(x: MetricsGranularity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OneMinuteMetricsGranularity")(x.asInstanceOf[js.Any])
   
   @JSImport("@pulumi/aws/autoscaling", "Policy")
   @js.native
@@ -418,21 +385,16 @@ object autoscalingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.autoscalingPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.autoscalingPolicyMod.Policy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.autoscalingPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.autoscalingPolicyMod.Policy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PolicyState): typings.pulumiAws.autoscalingPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.autoscalingPolicyMod.Policy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): typings.pulumiAws.autoscalingPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.autoscalingPolicyMod.Policy]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.autoscalingPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.autoscalingPolicyMod.Policy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.autoscalingPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.autoscalingPolicyMod.Policy]
+    inline def get(name: String, id: Input[ID], state: PolicyState): typings.pulumiAws.autoscalingPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.autoscalingPolicyMod.Policy]
+    inline def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): typings.pulumiAws.autoscalingPolicyMod.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.autoscalingPolicyMod.Policy]
     
     /**
       * Returns true if the given object is an instance of Policy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ Boolean]
   }
   
   @JSImport("@pulumi/aws/autoscaling", "Schedule")
@@ -465,31 +427,23 @@ object autoscalingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): typings.pulumiAws.scheduleMod.Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.scheduleMod.Schedule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.scheduleMod.Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.scheduleMod.Schedule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ScheduleState): typings.pulumiAws.scheduleMod.Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.scheduleMod.Schedule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ScheduleState, opts: CustomResourceOptions): typings.pulumiAws.scheduleMod.Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.scheduleMod.Schedule]
+    inline def get(name: String, id: Input[ID]): typings.pulumiAws.scheduleMod.Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.scheduleMod.Schedule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.scheduleMod.Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.scheduleMod.Schedule]
+    inline def get(name: String, id: Input[ID], state: ScheduleState): typings.pulumiAws.scheduleMod.Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.scheduleMod.Schedule]
+    inline def get(name: String, id: Input[ID], state: ScheduleState, opts: CustomResourceOptions): typings.pulumiAws.scheduleMod.Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.scheduleMod.Schedule]
     
     /**
       * Returns true if the given object is an instance of Schedule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean]
   }
   
   @JSImport("@pulumi/aws/autoscaling", "TestNotification")
   @js.native
   def TestNotification: NotificationType = js.native
-  @scala.inline
-  def TestNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TestNotification")(x.asInstanceOf[js.Any])
+  inline def TestNotification_=(x: NotificationType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TestNotification")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetGroupResult]]
-  @scala.inline
-  def getGroup(args: GetGroupArgs, opts: InvokeOptions): js.Promise[GetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetGroupResult]]
+  inline def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetGroupResult]]
+  inline def getGroup(args: GetGroupArgs, opts: InvokeOptions): js.Promise[GetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetGroupResult]]
 }

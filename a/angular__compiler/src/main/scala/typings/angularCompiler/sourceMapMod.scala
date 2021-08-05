@@ -29,23 +29,22 @@ object sourceMapMod {
     def addSource(url: String): this.type = js.native
     def addSource(url: String, content: String): this.type = js.native
     
-    var file: js.Any = js.native
+    /* private */ var file: js.Any = js.native
     
-    var hasMappings: js.Any = js.native
+    /* private */ var hasMappings: js.Any = js.native
     
-    var lastCol0: js.Any = js.native
+    /* private */ var lastCol0: js.Any = js.native
     
-    var lines: js.Any = js.native
+    /* private */ var lines: js.Any = js.native
     
-    var sourcesContent: js.Any = js.native
+    /* private */ var sourcesContent: js.Any = js.native
     
     def toJSON(): SourceMap | Null = js.native
     
     def toJsComment(): String = js.native
   }
   
-  @scala.inline
-  def toBase64String(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase64String")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toBase64String(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase64String")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait SourceMap extends StObject {
     
@@ -63,8 +62,7 @@ object sourceMapMod {
   }
   object SourceMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       mappings: String,
       sourceRoot: String,
       sources: js.Array[String],
@@ -75,35 +73,25 @@ object sourceMapMod {
       __obj.asInstanceOf[SourceMap]
     }
     
-    @scala.inline
-    implicit class SourceMapMutableBuilder[Self <: SourceMap] (val x: Self) extends AnyVal {
+    extension [Self <: SourceMap](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+      inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
+      inline def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesContent(value: js.Array[String | Null]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
+      inline def setSourcesContent(value: js.Array[String | Null]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesContentVarargs(value: (String | Null)*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
+      inline def setSourcesContentVarargs(value: (String | Null)*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
       
-      @scala.inline
-      def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

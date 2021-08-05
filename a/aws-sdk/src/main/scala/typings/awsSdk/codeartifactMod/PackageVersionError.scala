@@ -18,25 +18,19 @@ trait PackageVersionError extends StObject {
 }
 object PackageVersionError {
   
-  @scala.inline
-  def apply(): PackageVersionError = {
+  inline def apply(): PackageVersionError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PackageVersionError]
   }
   
-  @scala.inline
-  implicit class PackageVersionErrorMutableBuilder[Self <: PackageVersionError] (val x: Self) extends AnyVal {
+  extension [Self <: PackageVersionError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: PackageVersionErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: PackageVersionErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

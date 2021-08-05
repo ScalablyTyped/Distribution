@@ -30,32 +30,24 @@ object ux {
   }
   object ICheckColumn {
     
-    @scala.inline
-    def apply(): ICheckColumn = {
+    inline def apply(): ICheckColumn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICheckColumn]
     }
     
-    @scala.inline
-    implicit class ICheckColumnMutableBuilder[Self <: ICheckColumn] (val x: Self) extends AnyVal {
+    extension [Self <: ICheckColumn](x: Self) {
       
-      @scala.inline
-      def setOnDisable(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "onDisable", js.Any.fromFunction1(value))
+      inline def setOnDisable(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "onDisable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDisableUndefined: Self = StObject.set(x, "onDisable", js.undefined)
+      inline def setOnDisableUndefined: Self = StObject.set(x, "onDisable", js.undefined)
       
-      @scala.inline
-      def setOnEnable(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "onEnable", js.Any.fromFunction1(value))
+      inline def setOnEnable(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "onEnable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEnableUndefined: Self = StObject.set(x, "onEnable", js.undefined)
+      inline def setOnEnableUndefined: Self = StObject.set(x, "onEnable", js.undefined)
       
-      @scala.inline
-      def setStopSelection(value: Boolean): Self = StObject.set(x, "stopSelection", value.asInstanceOf[js.Any])
+      inline def setStopSelection(value: Boolean): Self = StObject.set(x, "stopSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopSelectionUndefined: Self = StObject.set(x, "stopSelection", js.undefined)
+      inline def setStopSelectionUndefined: Self = StObject.set(x, "stopSelection", js.undefined)
     }
   }
   
@@ -111,86 +103,60 @@ object ux {
     }
     object IFileUploadField {
       
-      @scala.inline
-      def apply(): IFileUploadField = {
+      inline def apply(): IFileUploadField = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IFileUploadField]
       }
       
-      @scala.inline
-      implicit class IFileUploadFieldMutableBuilder[Self <: IFileUploadField] (val x: Self) extends AnyVal {
+      extension [Self <: IFileUploadField](x: Self) {
         
-        @scala.inline
-        def setButton(value: typings.extjs.Ext.button.IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+        inline def setButton(value: typings.extjs.Ext.button.IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonConfig(value: js.Any): Self = StObject.set(x, "buttonConfig", value.asInstanceOf[js.Any])
+        inline def setButtonConfig(value: js.Any): Self = StObject.set(x, "buttonConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonConfigUndefined: Self = StObject.set(x, "buttonConfig", js.undefined)
+        inline def setButtonConfigUndefined: Self = StObject.set(x, "buttonConfig", js.undefined)
         
-        @scala.inline
-        def setButtonMargin(value: Double): Self = StObject.set(x, "buttonMargin", value.asInstanceOf[js.Any])
+        inline def setButtonMargin(value: Double): Self = StObject.set(x, "buttonMargin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonMarginUndefined: Self = StObject.set(x, "buttonMargin", js.undefined)
+        inline def setButtonMarginUndefined: Self = StObject.set(x, "buttonMargin", js.undefined)
         
-        @scala.inline
-        def setButtonOnly(value: Boolean): Self = StObject.set(x, "buttonOnly", value.asInstanceOf[js.Any])
+        inline def setButtonOnly(value: Boolean): Self = StObject.set(x, "buttonOnly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonOnlyUndefined: Self = StObject.set(x, "buttonOnly", js.undefined)
+        inline def setButtonOnlyUndefined: Self = StObject.set(x, "buttonOnly", js.undefined)
         
-        @scala.inline
-        def setButtonText(value: java.lang.String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+        inline def setButtonText(value: java.lang.String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+        inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
         
-        @scala.inline
-        def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+        inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
         
-        @scala.inline
-        def setClearOnSubmit(value: Boolean): Self = StObject.set(x, "clearOnSubmit", value.asInstanceOf[js.Any])
+        inline def setClearOnSubmit(value: Boolean): Self = StObject.set(x, "clearOnSubmit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClearOnSubmitUndefined: Self = StObject.set(x, "clearOnSubmit", js.undefined)
+        inline def setClearOnSubmitUndefined: Self = StObject.set(x, "clearOnSubmit", js.undefined)
         
-        @scala.inline
-        def setExtractFileInput(value: () => HTMLElement): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
+        inline def setExtractFileInput(value: () => HTMLElement): Self = StObject.set(x, "extractFileInput", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setExtractFileInputUndefined: Self = StObject.set(x, "extractFileInput", js.undefined)
+        inline def setExtractFileInputUndefined: Self = StObject.set(x, "extractFileInput", js.undefined)
         
-        @scala.inline
-        def setFileInputEl(value: IElement): Self = StObject.set(x, "fileInputEl", value.asInstanceOf[js.Any])
+        inline def setFileInputEl(value: IElement): Self = StObject.set(x, "fileInputEl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileInputElUndefined: Self = StObject.set(x, "fileInputEl", js.undefined)
+        inline def setFileInputElUndefined: Self = StObject.set(x, "fileInputEl", js.undefined)
         
-        @scala.inline
-        def setGetTriggerMarkup(value: () => Unit): Self = StObject.set(x, "getTriggerMarkup", js.Any.fromFunction0(value))
+        inline def setGetTriggerMarkup(value: () => Unit): Self = StObject.set(x, "getTriggerMarkup", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetTriggerMarkupUndefined: Self = StObject.set(x, "getTriggerMarkup", js.undefined)
+        inline def setGetTriggerMarkupUndefined: Self = StObject.set(x, "getTriggerMarkup", js.undefined)
         
-        @scala.inline
-        def setIsFileUpload(value: () => Boolean): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
+        inline def setIsFileUpload(value: () => Boolean): Self = StObject.set(x, "isFileUpload", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsFileUploadUndefined: Self = StObject.set(x, "isFileUpload", js.undefined)
+        inline def setIsFileUploadUndefined: Self = StObject.set(x, "isFileUpload", js.undefined)
         
-        @scala.inline
-        def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+        inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+        inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
         
-        @scala.inline
-        def setSetValue(value: () => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
+        inline def setSetValue(value: () => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+        inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
       }
     }
   }

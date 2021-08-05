@@ -14,16 +14,13 @@ trait AllPermission extends StObject {
 }
 object AllPermission {
   
-  @scala.inline
-  def apply(dummy: Double): AllPermission = {
+  inline def apply(dummy: Double): AllPermission = {
     val __obj = js.Dynamic.literal(dummy = dummy.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllPermission]
   }
   
-  @scala.inline
-  implicit class AllPermissionMutableBuilder[Self <: AllPermission] (val x: Self) extends AnyVal {
+  extension [Self <: AllPermission](x: Self) {
     
-    @scala.inline
-    def setDummy(value: Double): Self = StObject.set(x, "dummy", value.asInstanceOf[js.Any])
+    inline def setDummy(value: Double): Self = StObject.set(x, "dummy", value.asInstanceOf[js.Any])
   }
 }

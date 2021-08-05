@@ -14,31 +14,23 @@ trait StructOptions extends StObject {
 }
 object StructOptions {
   
-  @scala.inline
-  def apply(): StructOptions = {
+  inline def apply(): StructOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StructOptions]
   }
   
-  @scala.inline
-  implicit class StructOptionsMutableBuilder[Self <: StructOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StructOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultProps(value: js.Object): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: js.Object): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
+    inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStrict(value: scala.Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: scala.Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

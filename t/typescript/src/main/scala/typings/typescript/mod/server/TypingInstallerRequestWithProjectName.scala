@@ -10,16 +10,13 @@ trait TypingInstallerRequestWithProjectName extends StObject {
 }
 object TypingInstallerRequestWithProjectName {
   
-  @scala.inline
-  def apply(projectName: String): TypingInstallerRequestWithProjectName = {
+  inline def apply(projectName: String): TypingInstallerRequestWithProjectName = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypingInstallerRequestWithProjectName]
   }
   
-  @scala.inline
-  implicit class TypingInstallerRequestWithProjectNameMutableBuilder[Self <: TypingInstallerRequestWithProjectName] (val x: Self) extends AnyVal {
+  extension [Self <: TypingInstallerRequestWithProjectName](x: Self) {
     
-    @scala.inline
-    def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

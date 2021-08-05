@@ -12,25 +12,19 @@ trait Additional extends StObject {
 }
 object Additional {
   
-  @scala.inline
-  def apply(additional: js.Array[String], minimum: js.Array[String]): Additional = {
+  inline def apply(additional: js.Array[String], minimum: js.Array[String]): Additional = {
     val __obj = js.Dynamic.literal(additional = additional.asInstanceOf[js.Any], minimum = minimum.asInstanceOf[js.Any])
     __obj.asInstanceOf[Additional]
   }
   
-  @scala.inline
-  implicit class AdditionalMutableBuilder[Self <: Additional] (val x: Self) extends AnyVal {
+  extension [Self <: Additional](x: Self) {
     
-    @scala.inline
-    def setAdditional(value: js.Array[String]): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
+    inline def setAdditional(value: js.Array[String]): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalVarargs(value: String*): Self = StObject.set(x, "additional", js.Array(value :_*))
+    inline def setAdditionalVarargs(value: String*): Self = StObject.set(x, "additional", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimum(value: js.Array[String]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: js.Array[String]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumVarargs(value: String*): Self = StObject.set(x, "minimum", js.Array(value :_*))
+    inline def setMinimumVarargs(value: String*): Self = StObject.set(x, "minimum", js.Array(value :_*))
   }
 }

@@ -23,43 +23,31 @@ trait CreateLabelWriterPrintParamsXmlParams extends StObject {
 }
 object CreateLabelWriterPrintParamsXmlParams {
   
-  @scala.inline
-  def apply(): CreateLabelWriterPrintParamsXmlParams = {
+  inline def apply(): CreateLabelWriterPrintParamsXmlParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLabelWriterPrintParamsXmlParams]
   }
   
-  @scala.inline
-  implicit class CreateLabelWriterPrintParamsXmlParamsMutableBuilder[Self <: CreateLabelWriterPrintParamsXmlParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLabelWriterPrintParamsXmlParams](x: Self) {
     
-    @scala.inline
-    def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
+    inline def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopiesUndefined: Self = StObject.set(x, "copies", js.undefined)
+    inline def setCopiesUndefined: Self = StObject.set(x, "copies", js.undefined)
     
-    @scala.inline
-    def setFlowDirection(value: FlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
+    inline def setFlowDirection(value: FlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowDirectionUndefined: Self = StObject.set(x, "flowDirection", js.undefined)
+    inline def setFlowDirectionUndefined: Self = StObject.set(x, "flowDirection", js.undefined)
     
-    @scala.inline
-    def setJobTitle(value: String): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
+    inline def setJobTitle(value: String): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTitleUndefined: Self = StObject.set(x, "jobTitle", js.undefined)
+    inline def setJobTitleUndefined: Self = StObject.set(x, "jobTitle", js.undefined)
     
-    @scala.inline
-    def setPrintQuality(value: LabelWriterPrintQuality): Self = StObject.set(x, "printQuality", value.asInstanceOf[js.Any])
+    inline def setPrintQuality(value: LabelWriterPrintQuality): Self = StObject.set(x, "printQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintQualityUndefined: Self = StObject.set(x, "printQuality", js.undefined)
+    inline def setPrintQualityUndefined: Self = StObject.set(x, "printQuality", js.undefined)
     
-    @scala.inline
-    def setTwinTurboRoll(value: TwinTurboRoll): Self = StObject.set(x, "twinTurboRoll", value.asInstanceOf[js.Any])
+    inline def setTwinTurboRoll(value: TwinTurboRoll): Self = StObject.set(x, "twinTurboRoll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwinTurboRollUndefined: Self = StObject.set(x, "twinTurboRoll", js.undefined)
+    inline def setTwinTurboRollUndefined: Self = StObject.set(x, "twinTurboRoll", js.undefined)
   }
 }

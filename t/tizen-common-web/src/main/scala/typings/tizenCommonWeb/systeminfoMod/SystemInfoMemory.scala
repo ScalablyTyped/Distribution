@@ -17,16 +17,13 @@ trait SystemInfoMemory
 }
 object SystemInfoMemory {
   
-  @scala.inline
-  def apply(status: SystemInfoLowMemoryStatus | NORMAL | WARNING): SystemInfoMemory = {
+  inline def apply(status: SystemInfoLowMemoryStatus | NORMAL | WARNING): SystemInfoMemory = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoMemory]
   }
   
-  @scala.inline
-  implicit class SystemInfoMemoryMutableBuilder[Self <: SystemInfoMemory] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoMemory](x: Self) {
     
-    @scala.inline
-    def setStatus(value: SystemInfoLowMemoryStatus | NORMAL | WARNING): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SystemInfoLowMemoryStatus | NORMAL | WARNING): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

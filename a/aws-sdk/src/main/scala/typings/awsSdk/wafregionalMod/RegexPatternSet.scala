@@ -23,28 +23,21 @@ trait RegexPatternSet extends StObject {
 }
 object RegexPatternSet {
   
-  @scala.inline
-  def apply(RegexPatternSetId: ResourceId, RegexPatternStrings: RegexPatternStrings): RegexPatternSet = {
+  inline def apply(RegexPatternSetId: ResourceId, RegexPatternStrings: RegexPatternStrings): RegexPatternSet = {
     val __obj = js.Dynamic.literal(RegexPatternSetId = RegexPatternSetId.asInstanceOf[js.Any], RegexPatternStrings = RegexPatternStrings.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexPatternSet]
   }
   
-  @scala.inline
-  implicit class RegexPatternSetMutableBuilder[Self <: RegexPatternSet] (val x: Self) extends AnyVal {
+  extension [Self <: RegexPatternSet](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRegexPatternSetId(value: ResourceId): Self = StObject.set(x, "RegexPatternSetId", value.asInstanceOf[js.Any])
+    inline def setRegexPatternSetId(value: ResourceId): Self = StObject.set(x, "RegexPatternSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexPatternStrings(value: RegexPatternStrings): Self = StObject.set(x, "RegexPatternStrings", value.asInstanceOf[js.Any])
+    inline def setRegexPatternStrings(value: RegexPatternStrings): Self = StObject.set(x, "RegexPatternStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexPatternStringsVarargs(value: RegexPatternString*): Self = StObject.set(x, "RegexPatternStrings", js.Array(value :_*))
+    inline def setRegexPatternStringsVarargs(value: RegexPatternString*): Self = StObject.set(x, "RegexPatternStrings", js.Array(value :_*))
   }
 }

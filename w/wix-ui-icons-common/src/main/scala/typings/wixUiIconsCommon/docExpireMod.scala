@@ -22,20 +22,16 @@ object docExpireMod extends Shortcut {
   }
   object DocExpireProps {
     
-    @scala.inline
-    def apply(): DocExpireProps = {
+    inline def apply(): DocExpireProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocExpireProps]
     }
     
-    @scala.inline
-    implicit class DocExpirePropsMutableBuilder[Self <: DocExpireProps] (val x: Self) extends AnyVal {
+    extension [Self <: DocExpireProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

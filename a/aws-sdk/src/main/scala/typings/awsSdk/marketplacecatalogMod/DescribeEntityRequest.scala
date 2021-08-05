@@ -18,19 +18,15 @@ trait DescribeEntityRequest extends StObject {
 }
 object DescribeEntityRequest {
   
-  @scala.inline
-  def apply(Catalog: Catalog, EntityId: ResourceId): DescribeEntityRequest = {
+  inline def apply(Catalog: Catalog, EntityId: ResourceId): DescribeEntityRequest = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], EntityId = EntityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEntityRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEntityRequestMutableBuilder[Self <: DescribeEntityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEntityRequest](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityId(value: ResourceId): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: ResourceId): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
   }
 }

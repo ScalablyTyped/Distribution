@@ -20,37 +20,27 @@ trait CreateParagraphBulletsRequest extends StObject {
 }
 object CreateParagraphBulletsRequest {
   
-  @scala.inline
-  def apply(): CreateParagraphBulletsRequest = {
+  inline def apply(): CreateParagraphBulletsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateParagraphBulletsRequest]
   }
   
-  @scala.inline
-  implicit class CreateParagraphBulletsRequestMutableBuilder[Self <: CreateParagraphBulletsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateParagraphBulletsRequest](x: Self) {
     
-    @scala.inline
-    def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
+    inline def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletPresetUndefined: Self = StObject.set(x, "bulletPreset", js.undefined)
+    inline def setBulletPresetUndefined: Self = StObject.set(x, "bulletPreset", js.undefined)
     
-    @scala.inline
-    def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+    inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+    inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
+    inline def setTextRange(value: Range): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
+    inline def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
   }
 }

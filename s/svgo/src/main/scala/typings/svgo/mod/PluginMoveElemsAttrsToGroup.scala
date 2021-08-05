@@ -12,16 +12,13 @@ trait PluginMoveElemsAttrsToGroup
 }
 object PluginMoveElemsAttrsToGroup {
   
-  @scala.inline
-  def apply(moveElemsAttrsToGroup: Boolean | js.Object): PluginMoveElemsAttrsToGroup = {
+  inline def apply(moveElemsAttrsToGroup: Boolean | js.Object): PluginMoveElemsAttrsToGroup = {
     val __obj = js.Dynamic.literal(moveElemsAttrsToGroup = moveElemsAttrsToGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginMoveElemsAttrsToGroup]
   }
   
-  @scala.inline
-  implicit class PluginMoveElemsAttrsToGroupMutableBuilder[Self <: PluginMoveElemsAttrsToGroup] (val x: Self) extends AnyVal {
+  extension [Self <: PluginMoveElemsAttrsToGroup](x: Self) {
     
-    @scala.inline
-    def setMoveElemsAttrsToGroup(value: Boolean | js.Object): Self = StObject.set(x, "moveElemsAttrsToGroup", value.asInstanceOf[js.Any])
+    inline def setMoveElemsAttrsToGroup(value: Boolean | js.Object): Self = StObject.set(x, "moveElemsAttrsToGroup", value.asInstanceOf[js.Any])
   }
 }

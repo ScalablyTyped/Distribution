@@ -18,19 +18,15 @@ trait ProcessingInput extends StObject {
 }
 object ProcessingInput {
   
-  @scala.inline
-  def apply(InputName: String, S3Input: ProcessingS3Input): ProcessingInput = {
+  inline def apply(InputName: String, S3Input: ProcessingS3Input): ProcessingInput = {
     val __obj = js.Dynamic.literal(InputName = InputName.asInstanceOf[js.Any], S3Input = S3Input.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessingInput]
   }
   
-  @scala.inline
-  implicit class ProcessingInputMutableBuilder[Self <: ProcessingInput] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingInput](x: Self) {
     
-    @scala.inline
-    def setInputName(value: String): Self = StObject.set(x, "InputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: String): Self = StObject.set(x, "InputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Input(value: ProcessingS3Input): Self = StObject.set(x, "S3Input", value.asInstanceOf[js.Any])
+    inline def setS3Input(value: ProcessingS3Input): Self = StObject.set(x, "S3Input", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ModifyVpcEndpointServiceConfigurationResult extends StObject {
 }
 object ModifyVpcEndpointServiceConfigurationResult {
   
-  @scala.inline
-  def apply(): ModifyVpcEndpointServiceConfigurationResult = {
+  inline def apply(): ModifyVpcEndpointServiceConfigurationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyVpcEndpointServiceConfigurationResult]
   }
   
-  @scala.inline
-  implicit class ModifyVpcEndpointServiceConfigurationResultMutableBuilder[Self <: ModifyVpcEndpointServiceConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVpcEndpointServiceConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

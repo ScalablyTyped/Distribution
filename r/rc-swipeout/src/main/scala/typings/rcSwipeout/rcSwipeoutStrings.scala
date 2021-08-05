@@ -8,21 +8,17 @@ object rcSwipeoutStrings {
   
   @js.native
   sealed trait default extends StObject
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait delete extends StObject
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait primary extends StObject
-  @scala.inline
-  def primary: primary = "primary".asInstanceOf[primary]
+  inline def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
   sealed trait secondary extends StObject
-  @scala.inline
-  def secondary: secondary = "secondary".asInstanceOf[secondary]
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
 }

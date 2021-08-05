@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _SAVE_SEGMENTS_FLAGS extends StObject
 object _SAVE_SEGMENTS_FLAGS {
   
-  @scala.inline
-  def SAVE_SEGMENTS_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def SAVE_SEGMENTS_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def SAVE_SEGMENTS_NoIE4SelectionCompat: `1` = 1.asInstanceOf[`1`]
+  inline def SAVE_SEGMENTS_NoIE4SelectionCompat: `1` = 1.asInstanceOf[`1`]
 }

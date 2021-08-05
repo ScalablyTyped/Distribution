@@ -2466,13 +2466,11 @@ object mod {
     @JSImport("grommet-icons", "base.global")
     @js.native
     def global: Colors = js.native
-    @scala.inline
-    def global_=(x: Colors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
+    inline def global_=(x: Colors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("global")(x.asInstanceOf[js.Any])
     
     @JSImport("grommet-icons", "base.icon")
     @js.native
     def icon: Size = js.native
-    @scala.inline
-    def icon_=(x: Size): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
+    inline def icon_=(x: Size): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon")(x.asInstanceOf[js.Any])
   }
 }

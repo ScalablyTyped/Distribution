@@ -12,25 +12,19 @@ trait Descendants extends StObject {
 }
 object Descendants {
   
-  @scala.inline
-  def apply(): Descendants = {
+  inline def apply(): Descendants = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Descendants]
   }
   
-  @scala.inline
-  implicit class DescendantsMutableBuilder[Self <: Descendants] (val x: Self) extends AnyVal {
+  extension [Self <: Descendants](x: Self) {
     
-    @scala.inline
-    def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
+    inline def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescendantsUndefined: Self = StObject.set(x, "descendants", js.undefined)
+    inline def setDescendantsUndefined: Self = StObject.set(x, "descendants", js.undefined)
     
-    @scala.inline
-    def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait DialogFacebookButton extends StObject {
 }
 object DialogFacebookButton {
   
-  @scala.inline
-  def apply(text: String, value: Double): DialogFacebookButton = {
+  inline def apply(text: String, value: Double): DialogFacebookButton = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogFacebookButton]
   }
   
-  @scala.inline
-  implicit class DialogFacebookButtonMutableBuilder[Self <: DialogFacebookButton] (val x: Self) extends AnyVal {
+  extension [Self <: DialogFacebookButton](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

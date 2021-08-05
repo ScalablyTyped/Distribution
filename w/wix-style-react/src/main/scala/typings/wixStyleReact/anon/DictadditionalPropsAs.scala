@@ -20,22 +20,17 @@ trait DictadditionalPropsAs
 }
 object DictadditionalPropsAs {
   
-  @scala.inline
-  def apply(as: ComponentType[js.Any]): DictadditionalPropsAs = {
+  inline def apply(as: ComponentType[js.Any]): DictadditionalPropsAs = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictadditionalPropsAs]
   }
   
-  @scala.inline
-  implicit class DictadditionalPropsAsMutableBuilder[Self <: DictadditionalPropsAs] (val x: Self) extends AnyVal {
+  extension [Self <: DictadditionalPropsAs](x: Self) {
     
-    @scala.inline
-    def setAs(value: ComponentType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: ComponentType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

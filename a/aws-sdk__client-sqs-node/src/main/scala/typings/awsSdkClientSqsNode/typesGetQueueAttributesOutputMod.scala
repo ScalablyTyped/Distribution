@@ -30,27 +30,22 @@ object typesGetQueueAttributesOutputMod {
   }
   object GetQueueAttributesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetQueueAttributesOutput = {
+    inline def apply($metadata: ResponseMetadata): GetQueueAttributesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetQueueAttributesOutput]
     }
     
-    @scala.inline
-    implicit class GetQueueAttributesOutputMutableBuilder[Self <: GetQueueAttributesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetQueueAttributesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributes(
+      inline def setAttributes(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
         */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.GetQueueAttributesOutput & TopLevel[js.Any]
       ): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     }
   }
 }

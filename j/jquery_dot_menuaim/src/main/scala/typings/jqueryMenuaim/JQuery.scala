@@ -14,16 +14,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(menuAim: JQueryMenuAimOptions => JQuery): JQuery = {
+  inline def apply(menuAim: JQueryMenuAimOptions => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(menuAim = js.Any.fromFunction1(menuAim))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setMenuAim(value: JQueryMenuAimOptions => JQuery): Self = StObject.set(x, "menuAim", js.Any.fromFunction1(value))
+    inline def setMenuAim(value: JQueryMenuAimOptions => JQuery): Self = StObject.set(x, "menuAim", js.Any.fromFunction1(value))
   }
 }

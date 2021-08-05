@@ -11,19 +11,15 @@ trait LinkedContentReferenceSuggestionState extends StObject {
 }
 object LinkedContentReferenceSuggestionState {
   
-  @scala.inline
-  def apply(): LinkedContentReferenceSuggestionState = {
+  inline def apply(): LinkedContentReferenceSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkedContentReferenceSuggestionState]
   }
   
-  @scala.inline
-  implicit class LinkedContentReferenceSuggestionStateMutableBuilder[Self <: LinkedContentReferenceSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedContentReferenceSuggestionState](x: Self) {
     
-    @scala.inline
-    def setSheetsChartReferenceSuggestionState(value: SheetsChartReferenceSuggestionState): Self = StObject.set(x, "sheetsChartReferenceSuggestionState", value.asInstanceOf[js.Any])
+    inline def setSheetsChartReferenceSuggestionState(value: SheetsChartReferenceSuggestionState): Self = StObject.set(x, "sheetsChartReferenceSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetsChartReferenceSuggestionStateUndefined: Self = StObject.set(x, "sheetsChartReferenceSuggestionState", js.undefined)
+    inline def setSheetsChartReferenceSuggestionStateUndefined: Self = StObject.set(x, "sheetsChartReferenceSuggestionState", js.undefined)
   }
 }

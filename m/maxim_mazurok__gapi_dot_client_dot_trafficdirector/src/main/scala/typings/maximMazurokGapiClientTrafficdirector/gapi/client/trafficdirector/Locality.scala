@@ -20,31 +20,23 @@ trait Locality extends StObject {
 }
 object Locality {
   
-  @scala.inline
-  def apply(): Locality = {
+  inline def apply(): Locality = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Locality]
   }
   
-  @scala.inline
-  implicit class LocalityMutableBuilder[Self <: Locality] (val x: Self) extends AnyVal {
+  extension [Self <: Locality](x: Self) {
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setSubZone(value: String): Self = StObject.set(x, "subZone", value.asInstanceOf[js.Any])
+    inline def setSubZone(value: String): Self = StObject.set(x, "subZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubZoneUndefined: Self = StObject.set(x, "subZone", js.undefined)
+    inline def setSubZoneUndefined: Self = StObject.set(x, "subZone", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object indexRecordMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def indexRecord[A](): Index_[Record[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexRecord")().asInstanceOf[Index_[Record[String, A], String, A]]
+  inline def indexRecord[A](): Index_[Record[String, A], String, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("indexRecord")().asInstanceOf[Index_[Record[String, A], String, A]]
 }

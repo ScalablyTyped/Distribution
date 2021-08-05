@@ -16,23 +16,18 @@ trait Data extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply(data: String | Buffer, name: String, `type`: String | `applicationSlashoctet-stream`): Data = {
+  inline def apply(data: String | Buffer, name: String, `type`: String | `applicationSlashoctet-stream`): Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String | `applicationSlashoctet-stream`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String | `applicationSlashoctet-stream`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

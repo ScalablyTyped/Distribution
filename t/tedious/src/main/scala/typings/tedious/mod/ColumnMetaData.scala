@@ -33,38 +33,28 @@ trait ColumnMetaData extends StObject {
 }
 object ColumnMetaData {
   
-  @scala.inline
-  def apply(colName: String, `type`: ColumnType): ColumnMetaData = {
+  inline def apply(colName: String, `type`: ColumnType): ColumnMetaData = {
     val __obj = js.Dynamic.literal(colName = colName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnMetaData]
   }
   
-  @scala.inline
-  implicit class ColumnMetaDataMutableBuilder[Self <: ColumnMetaData] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnMetaData](x: Self) {
     
-    @scala.inline
-    def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
+    inline def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
+    inline def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLengthUndefined: Self = StObject.set(x, "dataLength", js.undefined)
+    inline def setDataLengthUndefined: Self = StObject.set(x, "dataLength", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setType(value: ColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ColumnType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

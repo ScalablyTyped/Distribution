@@ -27,31 +27,23 @@ trait AxisAccessibilityOptionsObject extends StObject {
 }
 object AxisAccessibilityOptionsObject {
   
-  @scala.inline
-  def apply(): AxisAccessibilityOptionsObject = {
+  inline def apply(): AxisAccessibilityOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisAccessibilityOptionsObject]
   }
   
-  @scala.inline
-  implicit class AxisAccessibilityOptionsObjectMutableBuilder[Self <: AxisAccessibilityOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: AxisAccessibilityOptionsObject](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setRangeDescription(value: String): Self = StObject.set(x, "rangeDescription", value.asInstanceOf[js.Any])
+    inline def setRangeDescription(value: String): Self = StObject.set(x, "rangeDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeDescriptionUndefined: Self = StObject.set(x, "rangeDescription", js.undefined)
+    inline def setRangeDescriptionUndefined: Self = StObject.set(x, "rangeDescription", js.undefined)
   }
 }

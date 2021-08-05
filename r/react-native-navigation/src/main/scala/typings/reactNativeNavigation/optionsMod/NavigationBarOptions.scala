@@ -12,25 +12,19 @@ trait NavigationBarOptions extends StObject {
 }
 object NavigationBarOptions {
   
-  @scala.inline
-  def apply(): NavigationBarOptions = {
+  inline def apply(): NavigationBarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationBarOptions]
   }
   
-  @scala.inline
-  implicit class NavigationBarOptionsMutableBuilder[Self <: NavigationBarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBarOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

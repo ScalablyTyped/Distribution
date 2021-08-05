@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppStore extends StObject
 object AppStore {
   
-  @scala.inline
-  def Android: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.Android = "Android".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.Android]
+  inline def Android: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.Android = "Android".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.Android]
   
-  @scala.inline
-  def iOS: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.iOS = "iOS".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.iOS]
+  inline def iOS: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.iOS = "iOS".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.iOS]
 }

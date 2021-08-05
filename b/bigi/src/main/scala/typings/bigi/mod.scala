@@ -26,32 +26,24 @@ object mod {
   val ZERO: typings.bigi.mod.bigi & Constants = js.native
   
   /* static member */
-  @scala.inline
-  def fromBuffer(buffer: js.Any): typings.bigi.mod.bigi = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bigi.mod.bigi]
+  inline def fromBuffer(buffer: js.Any): typings.bigi.mod.bigi = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.bigi.mod.bigi]
   
   /* static member */
-  @scala.inline
-  def fromByteArrayUnsigned(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArrayUnsigned")().asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def fromByteArrayUnsigned(byteArray: js.Any): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArrayUnsigned")(byteArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def fromByteArrayUnsigned(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArrayUnsigned")().asInstanceOf[js.Array[Double]]
+  inline def fromByteArrayUnsigned(byteArray: js.Any): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArrayUnsigned")(byteArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   /* static member */
-  @scala.inline
-  def fromDERInteger(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDERInteger")().asInstanceOf[Double]
-  @scala.inline
-  def fromDERInteger(byteArray: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDERInteger")(byteArray.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def fromDERInteger(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDERInteger")().asInstanceOf[Double]
+  inline def fromDERInteger(byteArray: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDERInteger")(byteArray.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def fromHex(hex: String): typings.bigi.mod.bigi = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bigi.mod.bigi]
+  inline def fromHex(hex: String): typings.bigi.mod.bigi = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bigi.mod.bigi]
   
   /* static member */
-  @scala.inline
-  def isBigInteger(obj: js.Any, check_ver: js.Any): /* is bigi.bigi.bigi */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBigInteger")(obj.asInstanceOf[js.Any], check_ver.asInstanceOf[js.Any])).asInstanceOf[/* is bigi.bigi.bigi */ Boolean]
+  inline def isBigInteger(obj: js.Any, check_ver: js.Any): /* is bigi.bigi.bigi */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBigInteger")(obj.asInstanceOf[js.Any], check_ver.asInstanceOf[js.Any])).asInstanceOf[/* is bigi.bigi.bigi */ Boolean]
   
   /* static member */
-  @scala.inline
-  def valueOf_(i: js.Any): typings.bigi.mod.bigi = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(i.asInstanceOf[js.Any]).asInstanceOf[typings.bigi.mod.bigi]
+  inline def valueOf_(i: js.Any): typings.bigi.mod.bigi = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(i.asInstanceOf[js.Any]).asInstanceOf[typings.bigi.mod.bigi]
   
   trait Constants extends StObject {
     
@@ -73,38 +65,28 @@ object mod {
   }
   object Constants {
     
-    @scala.inline
-    def apply(DB: Double, DM: Double, DV: Double, F1: Double, F2: Double, FV: Double, s: Double, t: Double): Constants = {
+    inline def apply(DB: Double, DM: Double, DV: Double, F1: Double, F2: Double, FV: Double, s: Double, t: Double): Constants = {
       val __obj = js.Dynamic.literal(DB = DB.asInstanceOf[js.Any], DM = DM.asInstanceOf[js.Any], DV = DV.asInstanceOf[js.Any], F1 = F1.asInstanceOf[js.Any], F2 = F2.asInstanceOf[js.Any], FV = FV.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
       __obj.asInstanceOf[Constants]
     }
     
-    @scala.inline
-    implicit class ConstantsMutableBuilder[Self <: Constants] (val x: Self) extends AnyVal {
+    extension [Self <: Constants](x: Self) {
       
-      @scala.inline
-      def setDB(value: Double): Self = StObject.set(x, "DB", value.asInstanceOf[js.Any])
+      inline def setDB(value: Double): Self = StObject.set(x, "DB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDM(value: Double): Self = StObject.set(x, "DM", value.asInstanceOf[js.Any])
+      inline def setDM(value: Double): Self = StObject.set(x, "DM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDV(value: Double): Self = StObject.set(x, "DV", value.asInstanceOf[js.Any])
+      inline def setDV(value: Double): Self = StObject.set(x, "DV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF1(value: Double): Self = StObject.set(x, "F1", value.asInstanceOf[js.Any])
+      inline def setF1(value: Double): Self = StObject.set(x, "F1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF2(value: Double): Self = StObject.set(x, "F2", value.asInstanceOf[js.Any])
+      inline def setF2(value: Double): Self = StObject.set(x, "F2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFV(value: Double): Self = StObject.set(x, "FV", value.asInstanceOf[js.Any])
+      inline def setFV(value: Double): Self = StObject.set(x, "FV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
   

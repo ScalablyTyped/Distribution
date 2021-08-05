@@ -12,8 +12,6 @@ object filter2Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filter2(h: Matrix, X: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("filter2")(h.asInstanceOf[js.Any], X.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  @scala.inline
-  def filter2(h: Matrix, X: Matrix, shape: Shape): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("filter2")(h.asInstanceOf[js.Any], X.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def filter2(h: Matrix, X: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("filter2")(h.asInstanceOf[js.Any], X.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def filter2(h: Matrix, X: Matrix, shape: Shape): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("filter2")(h.asInstanceOf[js.Any], X.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

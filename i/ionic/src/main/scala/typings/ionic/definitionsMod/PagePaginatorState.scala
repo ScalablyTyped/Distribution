@@ -14,22 +14,17 @@ trait PagePaginatorState
 }
 object PagePaginatorState {
   
-  @scala.inline
-  def apply(done: Boolean, loaded: Double, page: Double): PagePaginatorState = {
+  inline def apply(done: Boolean, loaded: Double, page: Double): PagePaginatorState = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagePaginatorState]
   }
   
-  @scala.inline
-  implicit class PagePaginatorStateMutableBuilder[Self <: PagePaginatorState] (val x: Self) extends AnyVal {
+  extension [Self <: PagePaginatorState](x: Self) {
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+    inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
+    inline def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
   }
 }

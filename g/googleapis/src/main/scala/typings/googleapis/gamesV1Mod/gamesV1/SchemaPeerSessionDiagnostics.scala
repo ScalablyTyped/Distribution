@@ -37,43 +37,31 @@ trait SchemaPeerSessionDiagnostics extends StObject {
 }
 object SchemaPeerSessionDiagnostics {
   
-  @scala.inline
-  def apply(): SchemaPeerSessionDiagnostics = {
+  inline def apply(): SchemaPeerSessionDiagnostics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPeerSessionDiagnostics]
   }
   
-  @scala.inline
-  implicit class SchemaPeerSessionDiagnosticsMutableBuilder[Self <: SchemaPeerSessionDiagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPeerSessionDiagnostics](x: Self) {
     
-    @scala.inline
-    def setConnectedTimestampMillis(value: String): Self = StObject.set(x, "connectedTimestampMillis", value.asInstanceOf[js.Any])
+    inline def setConnectedTimestampMillis(value: String): Self = StObject.set(x, "connectedTimestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedTimestampMillisUndefined: Self = StObject.set(x, "connectedTimestampMillis", js.undefined)
+    inline def setConnectedTimestampMillisUndefined: Self = StObject.set(x, "connectedTimestampMillis", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
+    inline def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
+    inline def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
     
-    @scala.inline
-    def setReliableChannel(value: SchemaPeerChannelDiagnostics): Self = StObject.set(x, "reliableChannel", value.asInstanceOf[js.Any])
+    inline def setReliableChannel(value: SchemaPeerChannelDiagnostics): Self = StObject.set(x, "reliableChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReliableChannelUndefined: Self = StObject.set(x, "reliableChannel", js.undefined)
+    inline def setReliableChannelUndefined: Self = StObject.set(x, "reliableChannel", js.undefined)
     
-    @scala.inline
-    def setUnreliableChannel(value: SchemaPeerChannelDiagnostics): Self = StObject.set(x, "unreliableChannel", value.asInstanceOf[js.Any])
+    inline def setUnreliableChannel(value: SchemaPeerChannelDiagnostics): Self = StObject.set(x, "unreliableChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnreliableChannelUndefined: Self = StObject.set(x, "unreliableChannel", js.undefined)
+    inline def setUnreliableChannelUndefined: Self = StObject.set(x, "unreliableChannel", js.undefined)
   }
 }

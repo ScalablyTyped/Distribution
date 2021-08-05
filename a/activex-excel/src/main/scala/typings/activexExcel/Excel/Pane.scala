@@ -13,7 +13,7 @@ trait Pane extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.Pane_typekey")
+  /* private */ @JSName("Excel.Pane_typekey")
   var ExcelDotPane_typekey: Pane = js.native
   
   val Index: Double = js.native

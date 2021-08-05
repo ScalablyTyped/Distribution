@@ -12,19 +12,15 @@ trait DialogNodeOutputTextValuesElement extends StObject {
 }
 object DialogNodeOutputTextValuesElement {
   
-  @scala.inline
-  def apply(): DialogNodeOutputTextValuesElement = {
+  inline def apply(): DialogNodeOutputTextValuesElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogNodeOutputTextValuesElement]
   }
   
-  @scala.inline
-  implicit class DialogNodeOutputTextValuesElementMutableBuilder[Self <: DialogNodeOutputTextValuesElement] (val x: Self) extends AnyVal {
+  extension [Self <: DialogNodeOutputTextValuesElement](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

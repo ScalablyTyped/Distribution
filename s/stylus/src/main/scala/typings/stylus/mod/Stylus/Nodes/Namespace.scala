@@ -15,8 +15,7 @@ trait Namespace
 }
 object Namespace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -38,13 +37,10 @@ object Namespace {
     __obj.asInstanceOf[Namespace]
   }
   
-  @scala.inline
-  implicit class NamespaceMutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
+  extension [Self <: Namespace](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: java.lang.String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

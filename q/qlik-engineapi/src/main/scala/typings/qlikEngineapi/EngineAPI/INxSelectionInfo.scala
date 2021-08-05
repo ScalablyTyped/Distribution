@@ -23,19 +23,15 @@ trait INxSelectionInfo extends StObject {
 }
 object INxSelectionInfo {
   
-  @scala.inline
-  def apply(qInSelections: Boolean, qMadeSelections: Boolean): INxSelectionInfo = {
+  inline def apply(qInSelections: Boolean, qMadeSelections: Boolean): INxSelectionInfo = {
     val __obj = js.Dynamic.literal(qInSelections = qInSelections.asInstanceOf[js.Any], qMadeSelections = qMadeSelections.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxSelectionInfo]
   }
   
-  @scala.inline
-  implicit class INxSelectionInfoMutableBuilder[Self <: INxSelectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: INxSelectionInfo](x: Self) {
     
-    @scala.inline
-    def setQInSelections(value: Boolean): Self = StObject.set(x, "qInSelections", value.asInstanceOf[js.Any])
+    inline def setQInSelections(value: Boolean): Self = StObject.set(x, "qInSelections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMadeSelections(value: Boolean): Self = StObject.set(x, "qMadeSelections", value.asInstanceOf[js.Any])
+    inline def setQMadeSelections(value: Boolean): Self = StObject.set(x, "qMadeSelections", value.asInstanceOf[js.Any])
   }
 }

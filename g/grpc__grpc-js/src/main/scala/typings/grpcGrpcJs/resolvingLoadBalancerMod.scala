@@ -35,26 +35,26 @@ object resolvingLoadBalancerMod {
     /**
       * The backoff timer for handling name resolution failures.
       */
-    val backoffTimeout: js.Any = js.native
+    /* private */ val backoffTimeout: js.Any = js.native
     
-    val channelControlHelper: js.Any = js.native
+    /* private */ val channelControlHelper: js.Any = js.native
     
-    val channelOptions: js.Any = js.native
+    /* private */ val channelOptions: js.Any = js.native
     
-    var childLoadBalancer: js.Any = js.native
+    /* private */ var childLoadBalancer: js.Any = js.native
     
     /**
       * Indicates whether we should attempt to resolve again after the backoff
       * timer runs out.
       */
-    var continueResolving: js.Any = js.native
+    /* private */ var continueResolving: js.Any = js.native
     
     /**
       * This resolving load balancer's current connectivity state.
       */
-    var currentState: js.Any = js.native
+    /* private */ var currentState: js.Any = js.native
     
-    val defaultServiceConfig: js.Any = js.native
+    /* private */ val defaultServiceConfig: js.Any = js.native
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
@@ -77,23 +77,23 @@ object resolvingLoadBalancerMod {
     /* CompleteClass */
     override def getTypeName(): String = js.native
     
-    var handleResolutionFailure: js.Any = js.native
+    /* private */ var handleResolutionFailure: js.Any = js.native
     
     /**
       * The resolver class constructed for the target address.
       */
-    var innerResolver: js.Any = js.native
+    /* private */ var innerResolver: js.Any = js.native
     
-    var latestChildPicker: js.Any = js.native
+    /* private */ var latestChildPicker: js.Any = js.native
     
-    var latestChildState: js.Any = js.native
+    /* private */ var latestChildState: js.Any = js.native
     
     /**
       * The service config object from the last successful resolution, if
       * available. A value of null indicates that we have not yet received a valid
       * service config from the resolver.
       */
-    var previousServiceConfig: js.Any = js.native
+    /* private */ var previousServiceConfig: js.Any = js.native
     
     /**
       * If the load balancer is currently in the CONNECTING or TRANSIENT_FAILURE
@@ -103,7 +103,7 @@ object resolvingLoadBalancerMod {
     /* CompleteClass */
     override def resetBackoff(): Unit = js.native
     
-    val target: js.Any = js.native
+    /* private */ val target: js.Any = js.native
     
     def updateAddressList(addressList: js.Array[SubchannelAddress]): Unit = js.native
     def updateAddressList(addressList: js.Array[SubchannelAddress], lbConfig: LoadBalancingConfig): Unit = js.native
@@ -123,8 +123,8 @@ object resolvingLoadBalancerMod {
       attributes: StringDictionary[js.Any]
     ): Unit = js.native
     
-    var updateResolution: js.Any = js.native
+    /* private */ var updateResolution: js.Any = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
   }
 }

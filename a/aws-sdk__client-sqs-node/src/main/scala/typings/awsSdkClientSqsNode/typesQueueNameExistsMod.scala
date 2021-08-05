@@ -16,17 +16,14 @@ object typesQueueNameExistsMod {
   }
   object QueueNameExists {
     
-    @scala.inline
-    def apply(): QueueNameExists = {
+    inline def apply(): QueueNameExists = {
       val __obj = js.Dynamic.literal(name = "QueueNameExists")
       __obj.asInstanceOf[QueueNameExists]
     }
     
-    @scala.inline
-    implicit class QueueNameExistsMutableBuilder[Self <: QueueNameExists] (val x: Self) extends AnyVal {
+    extension [Self <: QueueNameExists](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueNameExists): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueNameExists): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

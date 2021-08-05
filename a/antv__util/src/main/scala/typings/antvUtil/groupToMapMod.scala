@@ -12,6 +12,5 @@ object groupToMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(data: js.Any, condition: js.Any): ObjectType[js.Any] | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[ObjectType[js.Any] | `0`]
+  inline def default(data: js.Any, condition: js.Any): ObjectType[js.Any] | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[ObjectType[js.Any] | `0`]
 }

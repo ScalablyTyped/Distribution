@@ -51,55 +51,39 @@ trait ScreenshotOptions extends StObject {
 }
 object ScreenshotOptions {
   
-  @scala.inline
-  def apply(): ScreenshotOptions = {
+  inline def apply(): ScreenshotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScreenshotOptions]
   }
   
-  @scala.inline
-  implicit class ScreenshotOptionsMutableBuilder[Self <: ScreenshotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScreenshotOptions](x: Self) {
     
-    @scala.inline
-    def setClip(value: BoundingBox): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: BoundingBox): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: base64 | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: base64 | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFullPage(value: Boolean): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
+    inline def setFullPage(value: Boolean): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullPageUndefined: Self = StObject.set(x, "fullPage", js.undefined)
+    inline def setFullPageUndefined: Self = StObject.set(x, "fullPage", js.undefined)
     
-    @scala.inline
-    def setOmitBackground(value: Boolean): Self = StObject.set(x, "omitBackground", value.asInstanceOf[js.Any])
+    inline def setOmitBackground(value: Boolean): Self = StObject.set(x, "omitBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmitBackgroundUndefined: Self = StObject.set(x, "omitBackground", js.undefined)
+    inline def setOmitBackgroundUndefined: Self = StObject.set(x, "omitBackground", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setType(value: jpeg | png): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: jpeg | png): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

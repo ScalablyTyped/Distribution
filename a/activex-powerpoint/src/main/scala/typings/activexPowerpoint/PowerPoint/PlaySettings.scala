@@ -21,7 +21,7 @@ trait PlaySettings extends StObject {
   
   var PlayOnEntry: MsoTriState
   
-  @JSName("PowerPoint.PlaySettings_typekey")
+  /* private */ @JSName("PowerPoint.PlaySettings_typekey")
   var PowerPointDotPlaySettings_typekey: PlaySettings
   
   var RewindMovie: MsoTriState
@@ -30,8 +30,7 @@ trait PlaySettings extends StObject {
 }
 object PlaySettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionVerb: String,
     Application: Application,
     HideWhileNotPlaying: MsoTriState,
@@ -48,37 +47,26 @@ object PlaySettings {
     __obj.asInstanceOf[PlaySettings]
   }
   
-  @scala.inline
-  implicit class PlaySettingsMutableBuilder[Self <: PlaySettings] (val x: Self) extends AnyVal {
+  extension [Self <: PlaySettings](x: Self) {
     
-    @scala.inline
-    def setActionVerb(value: String): Self = StObject.set(x, "ActionVerb", value.asInstanceOf[js.Any])
+    inline def setActionVerb(value: String): Self = StObject.set(x, "ActionVerb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideWhileNotPlaying(value: MsoTriState): Self = StObject.set(x, "HideWhileNotPlaying", value.asInstanceOf[js.Any])
+    inline def setHideWhileNotPlaying(value: MsoTriState): Self = StObject.set(x, "HideWhileNotPlaying", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUntilStopped(value: MsoTriState): Self = StObject.set(x, "LoopUntilStopped", value.asInstanceOf[js.Any])
+    inline def setLoopUntilStopped(value: MsoTriState): Self = StObject.set(x, "LoopUntilStopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPauseAnimation(value: MsoTriState): Self = StObject.set(x, "PauseAnimation", value.asInstanceOf[js.Any])
+    inline def setPauseAnimation(value: MsoTriState): Self = StObject.set(x, "PauseAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayOnEntry(value: MsoTriState): Self = StObject.set(x, "PlayOnEntry", value.asInstanceOf[js.Any])
+    inline def setPlayOnEntry(value: MsoTriState): Self = StObject.set(x, "PlayOnEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPlaySettings_typekey(value: PlaySettings): Self = StObject.set(x, "PowerPoint.PlaySettings_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPlaySettings_typekey(value: PlaySettings): Self = StObject.set(x, "PowerPoint.PlaySettings_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRewindMovie(value: MsoTriState): Self = StObject.set(x, "RewindMovie", value.asInstanceOf[js.Any])
+    inline def setRewindMovie(value: MsoTriState): Self = StObject.set(x, "RewindMovie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopAfterSlides(value: Double): Self = StObject.set(x, "StopAfterSlides", value.asInstanceOf[js.Any])
+    inline def setStopAfterSlides(value: Double): Self = StObject.set(x, "StopAfterSlides", value.asInstanceOf[js.Any])
   }
 }

@@ -97,8 +97,7 @@ object Annotation {
   @JSImport("vexflow", "Flow.Annotation.DEBUG")
   @js.native
   def DEBUG: Boolean = js.native
-  @scala.inline
-  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  inline def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
   
   @JSImport("vexflow", "Flow.Annotation.Justify")
   @js.native
@@ -133,6 +132,5 @@ object Annotation {
   }
   
   /* static member */
-  @scala.inline
-  def format(annotations: js.Array[typings.vexflow.Vex.Flow.Annotation], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(annotations.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def format(annotations: js.Array[typings.vexflow.Vex.Flow.Annotation], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(annotations.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

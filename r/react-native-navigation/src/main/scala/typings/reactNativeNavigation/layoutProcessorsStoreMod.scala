@@ -16,8 +16,8 @@ object layoutProcessorsStoreMod {
     
     def getProcessors(): js.Array[LayoutProcessor] = js.native
     
-    var layoutProcessors: js.Any = js.native
+    /* private */ var layoutProcessors: js.Any = js.native
     
-    var removeProcessor: js.Any = js.native
+    /* private */ var removeProcessor: js.Any = js.native
   }
 }

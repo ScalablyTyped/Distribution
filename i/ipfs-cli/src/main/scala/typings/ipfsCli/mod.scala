@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(command: js.Any, ctxMiddleware: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(command.asInstanceOf[js.Any], ctxMiddleware.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def apply(command: js.Any, ctxMiddleware: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(command.asInstanceOf[js.Any], ctxMiddleware.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   @JSImport("ipfs-cli/dist/src", JSImport.Namespace)
   @js.native

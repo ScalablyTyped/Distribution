@@ -22,8 +22,7 @@ trait SliderDragAction
 }
 object SliderDragAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientX: Double,
     clientY: Double,
     eventType: mousedown | mousemove | mouseup | touchstart | touchmove | touchend,
@@ -42,13 +41,10 @@ object SliderDragAction {
     __obj.asInstanceOf[SliderDragAction]
   }
   
-  @scala.inline
-  implicit class SliderDragActionMutableBuilder[Self <: SliderDragAction] (val x: Self) extends AnyVal {
+  extension [Self <: SliderDragAction](x: Self) {
     
-    @scala.inline
-    def setEventType(value: mousedown | mousemove | mouseup | touchstart | touchmove | touchend): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: mousedown | mousemove | mouseup | touchstart | touchmove | touchend): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

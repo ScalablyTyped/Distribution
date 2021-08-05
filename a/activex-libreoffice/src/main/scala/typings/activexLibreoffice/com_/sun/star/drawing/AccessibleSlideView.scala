@@ -33,8 +33,7 @@ trait AccessibleSlideView
      with XAccessibleSelection
 object AccessibleSlideView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleContext: XAccessibleContext,
     AccessibleDescription: String,

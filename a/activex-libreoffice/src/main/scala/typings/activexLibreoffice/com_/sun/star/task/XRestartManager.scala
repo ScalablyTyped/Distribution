@@ -34,8 +34,7 @@ trait XRestartManager
 }
 object XRestartManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     isRestartRequested: Boolean => Boolean,
     queryInterface: `type` => js.Any,
@@ -46,13 +45,10 @@ object XRestartManager {
     __obj.asInstanceOf[XRestartManager]
   }
   
-  @scala.inline
-  implicit class XRestartManagerMutableBuilder[Self <: XRestartManager] (val x: Self) extends AnyVal {
+  extension [Self <: XRestartManager](x: Self) {
     
-    @scala.inline
-    def setIsRestartRequested(value: Boolean => Boolean): Self = StObject.set(x, "isRestartRequested", js.Any.fromFunction1(value))
+    inline def setIsRestartRequested(value: Boolean => Boolean): Self = StObject.set(x, "isRestartRequested", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestRestart(value: XInteractionHandler => Unit): Self = StObject.set(x, "requestRestart", js.Any.fromFunction1(value))
+    inline def setRequestRestart(value: XInteractionHandler => Unit): Self = StObject.set(x, "requestRestart", js.Any.fromFunction1(value))
   }
 }

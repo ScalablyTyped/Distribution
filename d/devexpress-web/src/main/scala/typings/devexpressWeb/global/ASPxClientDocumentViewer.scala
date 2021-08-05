@@ -121,6 +121,5 @@ object ASPxClientDocumentViewer {
     * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
     */
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientDocumentViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientDocumentViewer]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientDocumentViewer = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientDocumentViewer]
 }

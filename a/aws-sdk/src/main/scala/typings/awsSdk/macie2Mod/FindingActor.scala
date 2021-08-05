@@ -23,31 +23,23 @@ trait FindingActor extends StObject {
 }
 object FindingActor {
   
-  @scala.inline
-  def apply(): FindingActor = {
+  inline def apply(): FindingActor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindingActor]
   }
   
-  @scala.inline
-  implicit class FindingActorMutableBuilder[Self <: FindingActor] (val x: Self) extends AnyVal {
+  extension [Self <: FindingActor](x: Self) {
     
-    @scala.inline
-    def setDomainDetails(value: DomainDetails): Self = StObject.set(x, "domainDetails", value.asInstanceOf[js.Any])
+    inline def setDomainDetails(value: DomainDetails): Self = StObject.set(x, "domainDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainDetailsUndefined: Self = StObject.set(x, "domainDetails", js.undefined)
+    inline def setDomainDetailsUndefined: Self = StObject.set(x, "domainDetails", js.undefined)
     
-    @scala.inline
-    def setIpAddressDetails(value: IpAddressDetails): Self = StObject.set(x, "ipAddressDetails", value.asInstanceOf[js.Any])
+    inline def setIpAddressDetails(value: IpAddressDetails): Self = StObject.set(x, "ipAddressDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressDetailsUndefined: Self = StObject.set(x, "ipAddressDetails", js.undefined)
+    inline def setIpAddressDetailsUndefined: Self = StObject.set(x, "ipAddressDetails", js.undefined)
     
-    @scala.inline
-    def setUserIdentity(value: UserIdentity): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
+    inline def setUserIdentity(value: UserIdentity): Self = StObject.set(x, "userIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdentityUndefined: Self = StObject.set(x, "userIdentity", js.undefined)
+    inline def setUserIdentityUndefined: Self = StObject.set(x, "userIdentity", js.undefined)
   }
 }

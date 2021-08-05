@@ -19,17 +19,14 @@ object typesDeleteRequestMod {
   }
   object DeleteRequest {
     
-    @scala.inline
-    def apply(Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): DeleteRequest = {
+    inline def apply(Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): DeleteRequest = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteRequest]
     }
     
-    @scala.inline
-    implicit class DeleteRequestMutableBuilder[Self <: DeleteRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteRequest](x: Self) {
       
-      @scala.inline
-      def setKey(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,17 +42,14 @@ object typesDeleteRequestMod {
   }
   object UnmarshalledDeleteRequest {
     
-    @scala.inline
-    def apply(Key: StringDictionary[UnmarshalledAttributeValue]): UnmarshalledDeleteRequest = {
+    inline def apply(Key: StringDictionary[UnmarshalledAttributeValue]): UnmarshalledDeleteRequest = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledDeleteRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledDeleteRequestMutableBuilder[Self <: UnmarshalledDeleteRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledDeleteRequest](x: Self) {
       
-      @scala.inline
-      def setKey(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     }
   }
 }

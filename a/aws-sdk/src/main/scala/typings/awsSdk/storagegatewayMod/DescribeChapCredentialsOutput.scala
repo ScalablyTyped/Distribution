@@ -13,22 +13,17 @@ trait DescribeChapCredentialsOutput extends StObject {
 }
 object DescribeChapCredentialsOutput {
   
-  @scala.inline
-  def apply(): DescribeChapCredentialsOutput = {
+  inline def apply(): DescribeChapCredentialsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeChapCredentialsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeChapCredentialsOutputMutableBuilder[Self <: DescribeChapCredentialsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChapCredentialsOutput](x: Self) {
     
-    @scala.inline
-    def setChapCredentials(value: ChapCredentials): Self = StObject.set(x, "ChapCredentials", value.asInstanceOf[js.Any])
+    inline def setChapCredentials(value: ChapCredentials): Self = StObject.set(x, "ChapCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChapCredentialsUndefined: Self = StObject.set(x, "ChapCredentials", js.undefined)
+    inline def setChapCredentialsUndefined: Self = StObject.set(x, "ChapCredentials", js.undefined)
     
-    @scala.inline
-    def setChapCredentialsVarargs(value: ChapInfo*): Self = StObject.set(x, "ChapCredentials", js.Array(value :_*))
+    inline def setChapCredentialsVarargs(value: ChapInfo*): Self = StObject.set(x, "ChapCredentials", js.Array(value :_*))
   }
 }

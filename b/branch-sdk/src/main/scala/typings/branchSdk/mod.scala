@@ -111,184 +111,140 @@ object mod {
     /* 1 */ val Smart: typings.branchSdk.mod.UriRedirectMode.Smart & Double = js.native
   }
   
-  @scala.inline
-  def addListener(event: Unit, listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addListener(event: JourneyEvent, listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(event: Unit, listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addListener(event: JourneyEvent, listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def autoAppIndex(data: AutoAppIndexData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("autoAppIndex")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def autoAppIndex(data: AutoAppIndexData, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoAppIndex")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def autoAppIndex(data: AutoAppIndexData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("autoAppIndex")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def autoAppIndex(data: AutoAppIndexData, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoAppIndex")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def closeJourney(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJourney")().asInstanceOf[Unit]
-  @scala.inline
-  def closeJourney(callback: js.Function1[/* err */ BranchError, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJourney")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def closeJourney(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJourney")().asInstanceOf[Unit]
+  inline def closeJourney(callback: js.Function1[/* err */ BranchError, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeJourney")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def creditHistory(
+  inline def creditHistory(
     options: CreditHistoryOptions,
     callback: js.Function2[/* err */ BranchError, /* data */ CreditHistoryCallbackResponse, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("creditHistory")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def credits(callback: js.Function2[/* err */ BranchError, /* data */ Record[String, Double], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("credits")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def credits(callback: js.Function2[/* err */ BranchError, /* data */ Record[String, Double], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("credits")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def crossPlatformIds(callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crossPlatformIds")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def crossPlatformIds(callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crossPlatformIds")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def data(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("data")().asInstanceOf[Unit]
-  @scala.inline
-  def data(callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def data(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("data")().asInstanceOf[Unit]
+  inline def data(callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def deepview(deepview_data: DeepLinkData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def deepview(deepview_data: DeepLinkData, options: Unit, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def deepview(deepview_data: DeepLinkData, options: DeepViewOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def deepview(
+  inline def deepview(deepview_data: DeepLinkData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deepview(deepview_data: DeepLinkData, options: Unit, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deepview(deepview_data: DeepLinkData, options: DeepViewOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deepview(
     deepview_data: DeepLinkData,
     options: DeepViewOptions,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepview")(deepview_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def deepviewCta(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepviewCta")().asInstanceOf[Unit]
+  inline def deepviewCta(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepviewCta")().asInstanceOf[Unit]
   
-  @scala.inline
-  def disableTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTracking")().asInstanceOf[Unit]
-  @scala.inline
-  def disableTracking(disable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTracking")(disable.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disableTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTracking")().asInstanceOf[Unit]
+  inline def disableTracking(disable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTracking")(disable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def first(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[Unit]
-  @scala.inline
-  def first(callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def first(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[Unit]
+  inline def first(callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getBrowserFingerprintId(callback: js.Function2[/* err */ BranchError, /* browser_fingerprint */ FingerprintResponse, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserFingerprintId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getBrowserFingerprintId(callback: js.Function2[/* err */ BranchError, /* browser_fingerprint */ FingerprintResponse, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserFingerprintId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def init(branch_key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def init(
+  inline def init(branch_key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(
     branch_key: String,
     options: Unit,
     callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def init(branch_key: String, options: InitOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def init(
+  inline def init(branch_key: String, options: InitOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(
     branch_key: String,
     options: InitOptions,
     callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def lastAttributedTouchData(attribution_window: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lastAttributedTouchData")(attribution_window.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def lastAttributedTouchData(attribution_window: Double, callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lastAttributedTouchData")(attribution_window.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lastAttributedTouchData(attribution_window: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lastAttributedTouchData")(attribution_window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def lastAttributedTouchData(attribution_window: Double, callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lastAttributedTouchData")(attribution_window.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def link(
+  inline def link(
     link_data: DeepLinkData,
     callback: js.Function2[/* err */ BranchError, /* link */ String | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(link_data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def logEvent(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(event: String, event_data_and_custom_data: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(event: String, event_data_and_custom_data: js.Object, content_items: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logEvent(event: String, event_data_and_custom_data: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logEvent(event: String, event_data_and_custom_data: js.Object, content_items: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: js.Object,
     content_items: js.Array[js.Object],
     customer_event_alias: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: js.Object,
     content_items: js.Array[js.Object],
     customer_event_alias: String,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: js.Object,
     content_items: js.Array[js.Object],
     customer_event_alias: Unit,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: js.Object,
     content_items: Unit,
     customer_event_alias: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: js.Object,
     content_items: Unit,
     customer_event_alias: String,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: js.Object,
     content_items: Unit,
     customer_event_alias: Unit,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(event: String, event_data_and_custom_data: Unit, content_items: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(event: String, event_data_and_custom_data: Unit, content_items: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: Unit,
     content_items: js.Array[js.Object],
     customer_event_alias: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: Unit,
     content_items: js.Array[js.Object],
     customer_event_alias: String,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: Unit,
     content_items: js.Array[js.Object],
     customer_event_alias: Unit,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(event: String, event_data_and_custom_data: Unit, content_items: Unit, customer_event_alias: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(event: String, event_data_and_custom_data: Unit, content_items: Unit, customer_event_alias: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: Unit,
     content_items: Unit,
     customer_event_alias: String,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def logEvent(
+  inline def logEvent(
     event: String,
     event_data_and_custom_data: Unit,
     content_items: Unit,
@@ -296,71 +252,51 @@ object mod {
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], event_data_and_custom_data.asInstanceOf[js.Any], content_items.asInstanceOf[js.Any], customer_event_alias.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def logout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[Unit]
-  @scala.inline
-  def logout(callback: js.Function1[/* err */ BranchError, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[Unit]
+  inline def logout(callback: js.Function1[/* err */ BranchError, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def redeem(amount: Double, bucket: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("redeem")(amount.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def redeem(amount: Double, bucket: String, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("redeem")(amount.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def redeem(amount: Double, bucket: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("redeem")(amount.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def redeem(amount: Double, bucket: String, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("redeem")(amount.asInstanceOf[js.Any], bucket.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeListener(listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeListener(listener: js.Function2[/* event */ JourneyEvent, /* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def sendSMS(phone: String, link_data: DeepLinkData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sendSMS(
+  inline def sendSMS(phone: String, link_data: DeepLinkData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendSMS(
     phone: String,
     link_data: DeepLinkData,
     options: Unit,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sendSMS(phone: String, link_data: DeepLinkData, options: Makenewlink): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sendSMS(
+  inline def sendSMS(phone: String, link_data: DeepLinkData, options: Makenewlink): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendSMS(
     phone: String,
     link_data: DeepLinkData,
     options: Makenewlink,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSMS")(phone.asInstanceOf[js.Any], link_data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setBranchViewData(view_data: DeepLinkData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBranchViewData")(view_data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBranchViewData(view_data: DeepLinkData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBranchViewData")(view_data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setIdentity(identity: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIdentity")(identity.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setIdentity(
+  inline def setIdentity(identity: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIdentity")(identity.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setIdentity(
     identity: String,
     callback: js.Function2[/* err */ BranchError, /* data */ IdentityCallbackData | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIdentity")(identity.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def track(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def track(event: String, metadata: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event: String, metadata: js.Object, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event: String, metadata: Unit, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def track(event: String, metadata: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event: String, metadata: js.Object, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event: String, metadata: Unit, callback: js.Function1[/* err */ BranchError, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def trackCommerceEvent_purchase(event: purchase, commerce_data: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCommerceEvent")(event.asInstanceOf[js.Any], commerce_data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def trackCommerceEvent_purchase(event: purchase, commerce_data: js.Object, metadata: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCommerceEvent")(event.asInstanceOf[js.Any], commerce_data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def trackCommerceEvent_purchase(
+  inline def trackCommerceEvent_purchase(event: purchase, commerce_data: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCommerceEvent")(event.asInstanceOf[js.Any], commerce_data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackCommerceEvent_purchase(event: purchase, commerce_data: js.Object, metadata: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCommerceEvent")(event.asInstanceOf[js.Any], commerce_data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackCommerceEvent_purchase(
     event: purchase,
     commerce_data: js.Object,
     metadata: js.Object,
     callback: js.Function1[/* err */ BranchError, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trackCommerceEvent")(event.asInstanceOf[js.Any], commerce_data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def trackCommerceEvent_purchase(
+  inline def trackCommerceEvent_purchase(
     event: purchase,
     commerce_data: js.Object,
     metadata: Unit,
@@ -381,44 +317,32 @@ object mod {
   }
   object AutoAppIndexData {
     
-    @scala.inline
-    def apply(): AutoAppIndexData = {
+    inline def apply(): AutoAppIndexData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoAppIndexData]
     }
     
-    @scala.inline
-    implicit class AutoAppIndexDataMutableBuilder[Self <: AutoAppIndexData] (val x: Self) extends AnyVal {
+    extension [Self <: AutoAppIndexData](x: Self) {
       
-      @scala.inline
-      def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
+      inline def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidPackageNameUndefined: Self = StObject.set(x, "androidPackageName", js.undefined)
+      inline def setAndroidPackageNameUndefined: Self = StObject.set(x, "androidPackageName", js.undefined)
       
-      @scala.inline
-      def setAndroidURL(value: String): Self = StObject.set(x, "androidURL", value.asInstanceOf[js.Any])
+      inline def setAndroidURL(value: String): Self = StObject.set(x, "androidURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidURLUndefined: Self = StObject.set(x, "androidURL", js.undefined)
+      inline def setAndroidURLUndefined: Self = StObject.set(x, "androidURL", js.undefined)
       
-      @scala.inline
-      def setData(value: StringDictionary[CustomLinkData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[CustomLinkData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setIosAppId(value: String): Self = StObject.set(x, "iosAppId", value.asInstanceOf[js.Any])
+      inline def setIosAppId(value: String): Self = StObject.set(x, "iosAppId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIosAppIdUndefined: Self = StObject.set(x, "iosAppId", js.undefined)
+      inline def setIosAppIdUndefined: Self = StObject.set(x, "iosAppId", js.undefined)
       
-      @scala.inline
-      def setIosURL(value: String): Self = StObject.set(x, "iosURL", value.asInstanceOf[js.Any])
+      inline def setIosURL(value: String): Self = StObject.set(x, "iosURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIosURLUndefined: Self = StObject.set(x, "iosURL", js.undefined)
+      inline def setIosURLUndefined: Self = StObject.set(x, "iosURL", js.undefined)
     }
   }
   
@@ -436,32 +360,24 @@ object mod {
   }
   object CreditHistoryOptions {
     
-    @scala.inline
-    def apply(): CreditHistoryOptions = {
+    inline def apply(): CreditHistoryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreditHistoryOptions]
     }
     
-    @scala.inline
-    implicit class CreditHistoryOptionsMutableBuilder[Self <: CreditHistoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreditHistoryOptions](x: Self) {
       
-      @scala.inline
-      def setBegin_after_id(value: String): Self = StObject.set(x, "begin_after_id", value.asInstanceOf[js.Any])
+      inline def setBegin_after_id(value: String): Self = StObject.set(x, "begin_after_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBegin_after_idUndefined: Self = StObject.set(x, "begin_after_id", js.undefined)
+      inline def setBegin_after_idUndefined: Self = StObject.set(x, "begin_after_id", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     }
   }
   
@@ -475,23 +391,18 @@ object mod {
   }
   object CreditHistoryTransaction {
     
-    @scala.inline
-    def apply(referree: String, referrer: String, transaction: Amount): CreditHistoryTransaction = {
+    inline def apply(referree: String, referrer: String, transaction: Amount): CreditHistoryTransaction = {
       val __obj = js.Dynamic.literal(referree = referree.asInstanceOf[js.Any], referrer = referrer.asInstanceOf[js.Any], transaction = transaction.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreditHistoryTransaction]
     }
     
-    @scala.inline
-    implicit class CreditHistoryTransactionMutableBuilder[Self <: CreditHistoryTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: CreditHistoryTransaction](x: Self) {
       
-      @scala.inline
-      def setReferree(value: String): Self = StObject.set(x, "referree", value.asInstanceOf[js.Any])
+      inline def setReferree(value: String): Self = StObject.set(x, "referree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+      inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransaction(value: Amount): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+      inline def setTransaction(value: Amount): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -530,53 +441,38 @@ object mod {
   }
   object DeepLinkData {
     
-    @scala.inline
-    def apply(): DeepLinkData = {
+    inline def apply(): DeepLinkData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeepLinkData]
     }
     
-    @scala.inline
-    implicit class DeepLinkDataMutableBuilder[Self <: DeepLinkData] (val x: Self) extends AnyVal {
+    extension [Self <: DeepLinkData](x: Self) {
       
-      @scala.inline
-      def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
+      inline def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
+      inline def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setData(value: Dictcustomkey): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Dictcustomkey): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+      inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
       
-      @scala.inline
-      def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+      inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
   
@@ -588,26 +484,20 @@ object mod {
   }
   object DeepViewOptions {
     
-    @scala.inline
-    def apply(): DeepViewOptions = {
+    inline def apply(): DeepViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeepViewOptions]
     }
     
-    @scala.inline
-    implicit class DeepViewOptionsMutableBuilder[Self <: DeepViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeepViewOptions](x: Self) {
       
-      @scala.inline
-      def setMake_new_link(value: Boolean): Self = StObject.set(x, "make_new_link", value.asInstanceOf[js.Any])
+      inline def setMake_new_link(value: Boolean): Self = StObject.set(x, "make_new_link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMake_new_linkUndefined: Self = StObject.set(x, "make_new_link", js.undefined)
+      inline def setMake_new_linkUndefined: Self = StObject.set(x, "make_new_link", js.undefined)
       
-      @scala.inline
-      def setOpen_app(value: Boolean): Self = StObject.set(x, "open_app", value.asInstanceOf[js.Any])
+      inline def setOpen_app(value: Boolean): Self = StObject.set(x, "open_app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen_appUndefined: Self = StObject.set(x, "open_app", js.undefined)
+      inline def setOpen_appUndefined: Self = StObject.set(x, "open_app", js.undefined)
     }
   }
   
@@ -625,32 +515,24 @@ object mod {
   }
   object IdentityCallbackData {
     
-    @scala.inline
-    def apply(identity_id: String, link: String): IdentityCallbackData = {
+    inline def apply(identity_id: String, link: String): IdentityCallbackData = {
       val __obj = js.Dynamic.literal(identity_id = identity_id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdentityCallbackData]
     }
     
-    @scala.inline
-    implicit class IdentityCallbackDataMutableBuilder[Self <: IdentityCallbackData] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityCallbackData](x: Self) {
       
-      @scala.inline
-      def setIdentity_id(value: String): Self = StObject.set(x, "identity_id", value.asInstanceOf[js.Any])
+      inline def setIdentity_id(value: String): Self = StObject.set(x, "identity_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferring_data_parsed(value: js.Object): Self = StObject.set(x, "referring_data_parsed", value.asInstanceOf[js.Any])
+      inline def setReferring_data_parsed(value: js.Object): Self = StObject.set(x, "referring_data_parsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferring_data_parsedUndefined: Self = StObject.set(x, "referring_data_parsed", js.undefined)
+      inline def setReferring_data_parsedUndefined: Self = StObject.set(x, "referring_data_parsed", js.undefined)
       
-      @scala.inline
-      def setReferring_identity(value: String): Self = StObject.set(x, "referring_identity", value.asInstanceOf[js.Any])
+      inline def setReferring_identity(value: String): Self = StObject.set(x, "referring_identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferring_identityUndefined: Self = StObject.set(x, "referring_identity", js.undefined)
+      inline def setReferring_identityUndefined: Self = StObject.set(x, "referring_identity", js.undefined)
     }
   }
   
@@ -680,80 +562,56 @@ object mod {
   }
   object InitOptions {
     
-    @scala.inline
-    def apply(): InitOptions = {
+    inline def apply(): InitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitOptions]
     }
     
-    @scala.inline
-    implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitOptions](x: Self) {
       
-      @scala.inline
-      def setBranch_match_id(value: String): Self = StObject.set(x, "branch_match_id", value.asInstanceOf[js.Any])
+      inline def setBranch_match_id(value: String): Self = StObject.set(x, "branch_match_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranch_match_idUndefined: Self = StObject.set(x, "branch_match_id", js.undefined)
+      inline def setBranch_match_idUndefined: Self = StObject.set(x, "branch_match_id", js.undefined)
       
-      @scala.inline
-      def setBranch_view_id(value: String): Self = StObject.set(x, "branch_view_id", value.asInstanceOf[js.Any])
+      inline def setBranch_view_id(value: String): Self = StObject.set(x, "branch_view_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranch_view_idUndefined: Self = StObject.set(x, "branch_view_id", js.undefined)
+      inline def setBranch_view_idUndefined: Self = StObject.set(x, "branch_view_id", js.undefined)
       
-      @scala.inline
-      def setDisable_entry_animation(value: Boolean): Self = StObject.set(x, "disable_entry_animation", value.asInstanceOf[js.Any])
+      inline def setDisable_entry_animation(value: Boolean): Self = StObject.set(x, "disable_entry_animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_entry_animationUndefined: Self = StObject.set(x, "disable_entry_animation", js.undefined)
+      inline def setDisable_entry_animationUndefined: Self = StObject.set(x, "disable_entry_animation", js.undefined)
       
-      @scala.inline
-      def setDisable_exit_animation(value: Boolean): Self = StObject.set(x, "disable_exit_animation", value.asInstanceOf[js.Any])
+      inline def setDisable_exit_animation(value: Boolean): Self = StObject.set(x, "disable_exit_animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_exit_animationUndefined: Self = StObject.set(x, "disable_exit_animation", js.undefined)
+      inline def setDisable_exit_animationUndefined: Self = StObject.set(x, "disable_exit_animation", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setNo_journeys(value: Boolean): Self = StObject.set(x, "no_journeys", value.asInstanceOf[js.Any])
+      inline def setNo_journeys(value: Boolean): Self = StObject.set(x, "no_journeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_journeysUndefined: Self = StObject.set(x, "no_journeys", js.undefined)
+      inline def setNo_journeysUndefined: Self = StObject.set(x, "no_journeys", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setRetry_delay(value: Double): Self = StObject.set(x, "retry_delay", value.asInstanceOf[js.Any])
+      inline def setRetry_delay(value: Double): Self = StObject.set(x, "retry_delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry_delayUndefined: Self = StObject.set(x, "retry_delay", js.undefined)
+      inline def setRetry_delayUndefined: Self = StObject.set(x, "retry_delay", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTracking_disabled(value: Boolean): Self = StObject.set(x, "tracking_disabled", value.asInstanceOf[js.Any])
+      inline def setTracking_disabled(value: Boolean): Self = StObject.set(x, "tracking_disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracking_disabledUndefined: Self = StObject.set(x, "tracking_disabled", js.undefined)
+      inline def setTracking_disabledUndefined: Self = StObject.set(x, "tracking_disabled", js.undefined)
     }
   }
   
@@ -770,32 +628,24 @@ object mod {
   }
   object SessionData {
     
-    @scala.inline
-    def apply(has_app: Boolean, identity: String): SessionData = {
+    inline def apply(has_app: Boolean, identity: String): SessionData = {
       val __obj = js.Dynamic.literal(has_app = has_app.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any])
       __obj.asInstanceOf[SessionData]
     }
     
-    @scala.inline
-    implicit class SessionDataMutableBuilder[Self <: SessionData] (val x: Self) extends AnyVal {
+    extension [Self <: SessionData](x: Self) {
       
-      @scala.inline
-      def setHas_app(value: Boolean): Self = StObject.set(x, "has_app", value.asInstanceOf[js.Any])
+      inline def setHas_app(value: Boolean): Self = StObject.set(x, "has_app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferring_identity(value: String): Self = StObject.set(x, "referring_identity", value.asInstanceOf[js.Any])
+      inline def setReferring_identity(value: String): Self = StObject.set(x, "referring_identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferring_identityUndefined: Self = StObject.set(x, "referring_identity", js.undefined)
+      inline def setReferring_identityUndefined: Self = StObject.set(x, "referring_identity", js.undefined)
       
-      @scala.inline
-      def setTildereferring_link(value: String): Self = StObject.set(x, "~referring_link", value.asInstanceOf[js.Any])
+      inline def setTildereferring_link(value: String): Self = StObject.set(x, "~referring_link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTildereferring_linkUndefined: Self = StObject.set(x, "~referring_link", js.undefined)
+      inline def setTildereferring_linkUndefined: Self = StObject.set(x, "~referring_link", js.undefined)
     }
   }
 }

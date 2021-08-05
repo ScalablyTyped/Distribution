@@ -24,8 +24,7 @@ trait SVGPathSegList extends StObject {
 }
 object SVGPathSegList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendItem: SVGPathSeg => SVGPathSeg,
     clear: () => Unit,
     getItem: Double => SVGPathSeg,
@@ -39,31 +38,22 @@ object SVGPathSegList {
     __obj.asInstanceOf[SVGPathSegList]
   }
   
-  @scala.inline
-  implicit class SVGPathSegListMutableBuilder[Self <: SVGPathSegList] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPathSegList](x: Self) {
     
-    @scala.inline
-    def setAppendItem(value: SVGPathSeg => SVGPathSeg): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
+    inline def setAppendItem(value: SVGPathSeg => SVGPathSeg): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItem(value: Double => SVGPathSeg): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: Double => SVGPathSeg): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitialize(value: SVGPathSeg => SVGPathSeg): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: SVGPathSeg => SVGPathSeg): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertItemBefore(value: (SVGPathSeg, Double) => SVGPathSeg): Self = StObject.set(x, "insertItemBefore", js.Any.fromFunction2(value))
+    inline def setInsertItemBefore(value: (SVGPathSeg, Double) => SVGPathSeg): Self = StObject.set(x, "insertItemBefore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNumberOfItems(value: Double): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
+    inline def setNumberOfItems(value: Double): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveItem(value: Double => SVGPathSeg): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+    inline def setRemoveItem(value: Double => SVGPathSeg): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceItem(value: (SVGPathSeg, Double) => SVGPathSeg): Self = StObject.set(x, "replaceItem", js.Any.fromFunction2(value))
+    inline def setReplaceItem(value: (SVGPathSeg, Double) => SVGPathSeg): Self = StObject.set(x, "replaceItem", js.Any.fromFunction2(value))
   }
 }

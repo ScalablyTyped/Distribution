@@ -11,22 +11,17 @@ trait SegmentDefinition extends StObject {
 }
 object SegmentDefinition {
   
-  @scala.inline
-  def apply(): SegmentDefinition = {
+  inline def apply(): SegmentDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentDefinition]
   }
   
-  @scala.inline
-  implicit class SegmentDefinitionMutableBuilder[Self <: SegmentDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentDefinition](x: Self) {
     
-    @scala.inline
-    def setSegmentFilters(value: js.Array[SegmentFilter]): Self = StObject.set(x, "segmentFilters", value.asInstanceOf[js.Any])
+    inline def setSegmentFilters(value: js.Array[SegmentFilter]): Self = StObject.set(x, "segmentFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentFiltersUndefined: Self = StObject.set(x, "segmentFilters", js.undefined)
+    inline def setSegmentFiltersUndefined: Self = StObject.set(x, "segmentFilters", js.undefined)
     
-    @scala.inline
-    def setSegmentFiltersVarargs(value: SegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value :_*))
+    inline def setSegmentFiltersVarargs(value: SegmentFilter*): Self = StObject.set(x, "segmentFilters", js.Array(value :_*))
   }
 }

@@ -13,25 +13,19 @@ trait EndDate extends StObject {
 }
 object EndDate {
   
-  @scala.inline
-  def apply(): EndDate = {
+  inline def apply(): EndDate = {
     val __obj = js.Dynamic.literal(endDate = null, startDate = null)
     __obj.asInstanceOf[EndDate]
   }
   
-  @scala.inline
-  implicit class EndDateMutableBuilder[Self <: EndDate] (val x: Self) extends AnyVal {
+  extension [Self <: EndDate](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: Moment): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Moment): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateNull: Self = StObject.set(x, "endDate", null)
+    inline def setEndDateNull: Self = StObject.set(x, "endDate", null)
     
-    @scala.inline
-    def setStartDate(value: Moment): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Moment): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateNull: Self = StObject.set(x, "startDate", null)
+    inline def setStartDateNull: Self = StObject.set(x, "startDate", null)
   }
 }

@@ -10,6 +10,5 @@ object debounceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](fn: js.Function): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
+  inline def default[T](fn: js.Function): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
 }

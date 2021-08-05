@@ -18,8 +18,7 @@ trait ParametersAppsGetSubscriptionPlanForAccountEndpoint extends StObject {
 }
 object ParametersAppsGetSubscriptionPlanForAccountEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsGetSubscriptionPlanForAccountEndpoint,
     request: AppsGetSubscriptionPlanForAccountRequestOptions,
     response: OctokitResponse[AppsGetSubscriptionPlanForAccountResponseData]
@@ -28,16 +27,12 @@ object ParametersAppsGetSubscriptionPlanForAccountEndpoint {
     __obj.asInstanceOf[ParametersAppsGetSubscriptionPlanForAccountEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsGetSubscriptionPlanForAccountEndpointMutableBuilder[Self <: ParametersAppsGetSubscriptionPlanForAccountEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsGetSubscriptionPlanForAccountEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsGetSubscriptionPlanForAccountEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsGetSubscriptionPlanForAccountEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsGetSubscriptionPlanForAccountRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsGetSubscriptionPlanForAccountRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsGetSubscriptionPlanForAccountResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsGetSubscriptionPlanForAccountResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

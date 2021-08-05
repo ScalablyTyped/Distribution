@@ -38,49 +38,35 @@ trait ResolverRuleAssociation extends StObject {
 }
 object ResolverRuleAssociation {
   
-  @scala.inline
-  def apply(): ResolverRuleAssociation = {
+  inline def apply(): ResolverRuleAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolverRuleAssociation]
   }
   
-  @scala.inline
-  implicit class ResolverRuleAssociationMutableBuilder[Self <: ResolverRuleAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: ResolverRuleAssociation](x: Self) {
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setResolverRuleId(value: ResourceId): Self = StObject.set(x, "ResolverRuleId", value.asInstanceOf[js.Any])
+    inline def setResolverRuleId(value: ResourceId): Self = StObject.set(x, "ResolverRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverRuleIdUndefined: Self = StObject.set(x, "ResolverRuleId", js.undefined)
+    inline def setResolverRuleIdUndefined: Self = StObject.set(x, "ResolverRuleId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ResolverRuleAssociationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ResolverRuleAssociationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVPCId(value: ResourceId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
+    inline def setVPCId(value: ResourceId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCIdUndefined: Self = StObject.set(x, "VPCId", js.undefined)
+    inline def setVPCIdUndefined: Self = StObject.set(x, "VPCId", js.undefined)
   }
 }

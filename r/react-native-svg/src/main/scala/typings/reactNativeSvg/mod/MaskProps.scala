@@ -26,55 +26,39 @@ trait MaskProps
 }
 object MaskProps {
   
-  @scala.inline
-  def apply(): MaskProps = {
+  inline def apply(): MaskProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaskProps]
   }
   
-  @scala.inline
-  implicit class MaskPropsMutableBuilder[Self <: MaskProps] (val x: Self) extends AnyVal {
+  extension [Self <: MaskProps](x: Self) {
     
-    @scala.inline
-    def setHeight(value: NumberProp): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: NumberProp): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setMaskContentUnits(value: TMaskUnits): Self = StObject.set(x, "maskContentUnits", value.asInstanceOf[js.Any])
+    inline def setMaskContentUnits(value: TMaskUnits): Self = StObject.set(x, "maskContentUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskContentUnitsUndefined: Self = StObject.set(x, "maskContentUnits", js.undefined)
+    inline def setMaskContentUnitsUndefined: Self = StObject.set(x, "maskContentUnits", js.undefined)
     
-    @scala.inline
-    def setMaskTransform(value: ColumnMajorTransformMatrix | String): Self = StObject.set(x, "maskTransform", value.asInstanceOf[js.Any])
+    inline def setMaskTransform(value: ColumnMajorTransformMatrix | String): Self = StObject.set(x, "maskTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskTransformUndefined: Self = StObject.set(x, "maskTransform", js.undefined)
+    inline def setMaskTransformUndefined: Self = StObject.set(x, "maskTransform", js.undefined)
     
-    @scala.inline
-    def setMaskUnits(value: TMaskUnits): Self = StObject.set(x, "maskUnits", value.asInstanceOf[js.Any])
+    inline def setMaskUnits(value: TMaskUnits): Self = StObject.set(x, "maskUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskUnitsUndefined: Self = StObject.set(x, "maskUnits", js.undefined)
+    inline def setMaskUnitsUndefined: Self = StObject.set(x, "maskUnits", js.undefined)
     
-    @scala.inline
-    def setWidth(value: NumberProp): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: NumberProp): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setX(value: NumberProp): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: NumberProp): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: NumberProp): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: NumberProp): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

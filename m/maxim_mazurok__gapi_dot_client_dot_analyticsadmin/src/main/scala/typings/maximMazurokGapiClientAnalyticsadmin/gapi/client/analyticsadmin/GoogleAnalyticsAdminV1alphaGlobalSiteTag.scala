@@ -11,19 +11,15 @@ trait GoogleAnalyticsAdminV1alphaGlobalSiteTag extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaGlobalSiteTag {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaGlobalSiteTag = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaGlobalSiteTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaGlobalSiteTag]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaGlobalSiteTagMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaGlobalSiteTag] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaGlobalSiteTag](x: Self) {
     
-    @scala.inline
-    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }
 }

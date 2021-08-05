@@ -14,31 +14,23 @@ trait EndpointDotOptions extends StObject {
 }
 object EndpointDotOptions {
   
-  @scala.inline
-  def apply(): EndpointDotOptions = {
+  inline def apply(): EndpointDotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointDotOptions]
   }
   
-  @scala.inline
-  implicit class EndpointDotOptionsMutableBuilder[Self <: EndpointDotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointDotOptions](x: Self) {
     
-    @scala.inline
-    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
+    inline def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
+    inline def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

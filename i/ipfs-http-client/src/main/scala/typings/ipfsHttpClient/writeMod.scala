@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object writeMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function3[
+  inline def apply(clientOptions: ClientOptions): js.Function3[
     /* path */ String, 
     /* input */ String | Blob | Uint8Array | AsyncIterable[Uint8Array], 
     /* options */ js.UndefOr[

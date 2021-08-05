@@ -19,19 +19,15 @@ trait DecorationLayerOptions
 }
 object DecorationLayerOptions {
   
-  @scala.inline
-  def apply(): DecorationLayerOptions = {
+  inline def apply(): DecorationLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DecorationLayerOptions]
   }
   
-  @scala.inline
-  implicit class DecorationLayerOptionsMutableBuilder[Self <: DecorationLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DecorationLayerOptions](x: Self) {
     
-    @scala.inline
-    def setType(value: line | `line-number` | text | highlight | block | cursor_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: line | `line-number` | text | highlight | block | cursor_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

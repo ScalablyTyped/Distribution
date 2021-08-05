@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlaceIdScope extends StObject
 object PlaceIdScope {
   
-  @scala.inline
-  def APP: typings.googleMaps.googleMapsStrings.APP = "APP".asInstanceOf[typings.googleMaps.googleMapsStrings.APP]
+  inline def APP: typings.googleMaps.googleMapsStrings.APP = "APP".asInstanceOf[typings.googleMaps.googleMapsStrings.APP]
   
-  @scala.inline
-  def GOOGLE: typings.googleMaps.googleMapsStrings.GOOGLE = "GOOGLE".asInstanceOf[typings.googleMaps.googleMapsStrings.GOOGLE]
+  inline def GOOGLE: typings.googleMaps.googleMapsStrings.GOOGLE = "GOOGLE".asInstanceOf[typings.googleMaps.googleMapsStrings.GOOGLE]
 }

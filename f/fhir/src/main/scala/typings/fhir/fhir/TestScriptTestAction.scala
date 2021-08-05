@@ -23,25 +23,19 @@ trait TestScriptTestAction
 }
 object TestScriptTestAction {
   
-  @scala.inline
-  def apply(): TestScriptTestAction = {
+  inline def apply(): TestScriptTestAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestScriptTestAction]
   }
   
-  @scala.inline
-  implicit class TestScriptTestActionMutableBuilder[Self <: TestScriptTestAction] (val x: Self) extends AnyVal {
+  extension [Self <: TestScriptTestAction](x: Self) {
     
-    @scala.inline
-    def setAssert(value: TestScriptSetupActionAssert): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: TestScriptSetupActionAssert): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
+    inline def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
     
-    @scala.inline
-    def setOperation(value: TestScriptSetupActionOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: TestScriptSetupActionOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

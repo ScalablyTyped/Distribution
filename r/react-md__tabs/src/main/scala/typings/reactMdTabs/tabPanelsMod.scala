@@ -42,32 +42,24 @@ object tabPanelsMod {
   }
   object TabPanelsProps {
     
-    @scala.inline
-    def apply(): TabPanelsProps = {
+    inline def apply(): TabPanelsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabPanelsProps]
     }
     
-    @scala.inline
-    implicit class TabPanelsPropsMutableBuilder[Self <: TabPanelsProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabPanelsProps](x: Self) {
       
-      @scala.inline
-      def setDisableScrollFix(value: Boolean): Self = StObject.set(x, "disableScrollFix", value.asInstanceOf[js.Any])
+      inline def setDisableScrollFix(value: Boolean): Self = StObject.set(x, "disableScrollFix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScrollFixUndefined: Self = StObject.set(x, "disableScrollFix", js.undefined)
+      inline def setDisableScrollFixUndefined: Self = StObject.set(x, "disableScrollFix", js.undefined)
       
-      @scala.inline
-      def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
+      inline def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
+      inline def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+      inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     }
   }
 }

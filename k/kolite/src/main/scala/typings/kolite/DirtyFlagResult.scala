@@ -14,8 +14,7 @@ trait DirtyFlagResult extends StObject {
 }
 object DirtyFlagResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     forceDirty: () => Unit,
     isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any,
     reset: () => Unit
@@ -24,18 +23,14 @@ object DirtyFlagResult {
     __obj.asInstanceOf[DirtyFlagResult]
   }
   
-  @scala.inline
-  implicit class DirtyFlagResultMutableBuilder[Self <: DirtyFlagResult] (val x: Self) extends AnyVal {
+  extension [Self <: DirtyFlagResult](x: Self) {
     
-    @scala.inline
-    def setForceDirty(value: () => Unit): Self = StObject.set(x, "forceDirty", js.Any.fromFunction0(value))
+    inline def setForceDirty(value: () => Unit): Self = StObject.set(x, "forceDirty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDirty(
+    inline def setIsDirty(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any
     ): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

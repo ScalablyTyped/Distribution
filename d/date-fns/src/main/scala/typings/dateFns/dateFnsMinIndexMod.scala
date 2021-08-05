@@ -9,8 +9,7 @@ object dateFnsMinIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(datesArray: js.Array[Date | Double]): Date = ^.asInstanceOf[js.Dynamic].apply(datesArray.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def apply(datesArray: js.Array[Date | Double]): Date = ^.asInstanceOf[js.Dynamic].apply(datesArray.asInstanceOf[js.Any]).asInstanceOf[Date]
     
     @JSImport("date-fns/min/index", JSImport.Default)
     @js.native

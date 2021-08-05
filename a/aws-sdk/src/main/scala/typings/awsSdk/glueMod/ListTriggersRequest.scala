@@ -28,37 +28,27 @@ trait ListTriggersRequest extends StObject {
 }
 object ListTriggersRequest {
   
-  @scala.inline
-  def apply(): ListTriggersRequest = {
+  inline def apply(): ListTriggersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTriggersRequest]
   }
   
-  @scala.inline
-  implicit class ListTriggersRequestMutableBuilder[Self <: ListTriggersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTriggersRequest](x: Self) {
     
-    @scala.inline
-    def setDependentJobName(value: NameString): Self = StObject.set(x, "DependentJobName", value.asInstanceOf[js.Any])
+    inline def setDependentJobName(value: NameString): Self = StObject.set(x, "DependentJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependentJobNameUndefined: Self = StObject.set(x, "DependentJobName", js.undefined)
+    inline def setDependentJobNameUndefined: Self = StObject.set(x, "DependentJobName", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

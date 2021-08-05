@@ -40,8 +40,7 @@ trait relationshipUpdateRendererParamsField2
 }
 object relationshipUpdateRendererParamsField2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     classBreakInfos: js.Array[ClassBreak],
     constructor: js.Function,
     field: String,
@@ -52,28 +51,20 @@ object relationshipUpdateRendererParamsField2 {
     __obj.asInstanceOf[relationshipUpdateRendererParamsField2]
   }
   
-  @scala.inline
-  implicit class relationshipUpdateRendererParamsField2MutableBuilder[Self <: relationshipUpdateRendererParamsField2] (val x: Self) extends AnyVal {
+  extension [Self <: relationshipUpdateRendererParamsField2](x: Self) {
     
-    @scala.inline
-    def setClassBreakInfos(value: js.Array[ClassBreak]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
+    inline def setClassBreakInfos(value: js.Array[ClassBreak]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassBreakInfosVarargs(value: ClassBreak*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
+    inline def setClassBreakInfosVarargs(value: ClassBreak*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
+    inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
+    inline def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
   }
 }

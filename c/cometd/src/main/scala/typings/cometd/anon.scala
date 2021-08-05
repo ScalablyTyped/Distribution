@@ -21,47 +21,34 @@ object anon {
   }
   object Hosts {
     
-    @scala.inline
-    def apply(): Hosts = {
+    inline def apply(): Hosts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Hosts]
     }
     
-    @scala.inline
-    implicit class HostsMutableBuilder[Self <: Hosts] (val x: Self) extends AnyVal {
+    extension [Self <: Hosts](x: Self) {
       
-      @scala.inline
-      def setHosts(value: js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+      inline def setHosts(value: js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+      inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
       
-      @scala.inline
-      def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: String*): Self = StObject.set(x, "hosts", js.Array(value :_*))
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def `setMultiple-clients`(value: Boolean): Self = StObject.set(x, "multiple-clients", value.asInstanceOf[js.Any])
+      inline def `setMultiple-clients`(value: Boolean): Self = StObject.set(x, "multiple-clients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMultiple-clientsUndefined`: Self = StObject.set(x, "multiple-clients", js.undefined)
+      inline def `setMultiple-clientsUndefined`: Self = StObject.set(x, "multiple-clients", js.undefined)
       
-      @scala.inline
-      def setReconnect(value: ReconnectAdvice): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
+      inline def setReconnect(value: ReconnectAdvice): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
+      inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

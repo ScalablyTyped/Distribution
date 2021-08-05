@@ -16,22 +16,17 @@ trait ReadonlyFrameAnimationEve extends StObject {
 }
 object ReadonlyFrameAnimationEve {
   
-  @scala.inline
-  def apply(animation: Frame, frame: typings.plotlyJs.mod.Frame, name: String): ReadonlyFrameAnimationEve = {
+  inline def apply(animation: Frame, frame: typings.plotlyJs.mod.Frame, name: String): ReadonlyFrameAnimationEve = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyFrameAnimationEve]
   }
   
-  @scala.inline
-  implicit class ReadonlyFrameAnimationEveMutableBuilder[Self <: ReadonlyFrameAnimationEve] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyFrameAnimationEve](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Frame): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Frame): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrame(value: typings.plotlyJs.mod.Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: typings.plotlyJs.mod.Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

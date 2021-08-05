@@ -17,19 +17,15 @@ trait ListItemUpdateData extends StObject {
 }
 object ListItemUpdateData {
   
-  @scala.inline
-  def apply(): ListItemUpdateData = {
+  inline def apply(): ListItemUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListItemUpdateData]
   }
   
-  @scala.inline
-  implicit class ListItemUpdateDataMutableBuilder[Self <: ListItemUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ListItemUpdateData](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

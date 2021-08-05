@@ -48,61 +48,43 @@ trait LogsLocation extends StObject {
 }
 object LogsLocation {
   
-  @scala.inline
-  def apply(): LogsLocation = {
+  inline def apply(): LogsLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogsLocation]
   }
   
-  @scala.inline
-  implicit class LogsLocationMutableBuilder[Self <: LogsLocation] (val x: Self) extends AnyVal {
+  extension [Self <: LogsLocation](x: Self) {
     
-    @scala.inline
-    def setCloudWatchLogs(value: CloudWatchLogsConfig): Self = StObject.set(x, "cloudWatchLogs", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLogs(value: CloudWatchLogsConfig): Self = StObject.set(x, "cloudWatchLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLogsArn(value: String): Self = StObject.set(x, "cloudWatchLogsArn", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLogsArn(value: String): Self = StObject.set(x, "cloudWatchLogsArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLogsArnUndefined: Self = StObject.set(x, "cloudWatchLogsArn", js.undefined)
+    inline def setCloudWatchLogsArnUndefined: Self = StObject.set(x, "cloudWatchLogsArn", js.undefined)
     
-    @scala.inline
-    def setCloudWatchLogsUndefined: Self = StObject.set(x, "cloudWatchLogs", js.undefined)
+    inline def setCloudWatchLogsUndefined: Self = StObject.set(x, "cloudWatchLogs", js.undefined)
     
-    @scala.inline
-    def setDeepLink(value: String): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
+    inline def setDeepLink(value: String): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeepLinkUndefined: Self = StObject.set(x, "deepLink", js.undefined)
+    inline def setDeepLinkUndefined: Self = StObject.set(x, "deepLink", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    @scala.inline
-    def setS3DeepLink(value: String): Self = StObject.set(x, "s3DeepLink", value.asInstanceOf[js.Any])
+    inline def setS3DeepLink(value: String): Self = StObject.set(x, "s3DeepLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DeepLinkUndefined: Self = StObject.set(x, "s3DeepLink", js.undefined)
+    inline def setS3DeepLinkUndefined: Self = StObject.set(x, "s3DeepLink", js.undefined)
     
-    @scala.inline
-    def setS3Logs(value: S3LogsConfig): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
+    inline def setS3Logs(value: S3LogsConfig): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LogsArn(value: String): Self = StObject.set(x, "s3LogsArn", value.asInstanceOf[js.Any])
+    inline def setS3LogsArn(value: String): Self = StObject.set(x, "s3LogsArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LogsArnUndefined: Self = StObject.set(x, "s3LogsArn", js.undefined)
+    inline def setS3LogsArnUndefined: Self = StObject.set(x, "s3LogsArn", js.undefined)
     
-    @scala.inline
-    def setS3LogsUndefined: Self = StObject.set(x, "s3Logs", js.undefined)
+    inline def setS3LogsUndefined: Self = StObject.set(x, "s3Logs", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: String): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: String): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
   }
 }

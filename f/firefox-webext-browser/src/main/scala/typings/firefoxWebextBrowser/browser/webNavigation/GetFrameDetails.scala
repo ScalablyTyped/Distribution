@@ -18,25 +18,19 @@ trait GetFrameDetails extends StObject {
 }
 object GetFrameDetails {
   
-  @scala.inline
-  def apply(frameId: Double, tabId: Double): GetFrameDetails = {
+  inline def apply(frameId: Double, tabId: Double): GetFrameDetails = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFrameDetails]
   }
   
-  @scala.inline
-  implicit class GetFrameDetailsMutableBuilder[Self <: GetFrameDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GetFrameDetails](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+    inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+    inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
     
-    @scala.inline
-    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
   }
 }

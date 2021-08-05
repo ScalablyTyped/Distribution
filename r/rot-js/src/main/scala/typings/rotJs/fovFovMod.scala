@@ -80,8 +80,7 @@ object fovFovMod {
   }
   object FOV {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _getCircle: (Double, Double, Double) => js.Array[js.Array[Double]],
       _lightPasses: (/* x */ Double, /* y */ Double) => Boolean,
       _options: Options,
@@ -91,20 +90,15 @@ object fovFovMod {
       __obj.asInstanceOf[FOV]
     }
     
-    @scala.inline
-    implicit class FOVMutableBuilder[Self <: FOV] (val x: Self) extends AnyVal {
+    extension [Self <: FOV](x: Self) {
       
-      @scala.inline
-      def setCompute(value: (Double, Double, Double, VisibilityCallback) => Unit): Self = StObject.set(x, "compute", js.Any.fromFunction4(value))
+      inline def setCompute(value: (Double, Double, Double, VisibilityCallback) => Unit): Self = StObject.set(x, "compute", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def set_getCircle(value: (Double, Double, Double) => js.Array[js.Array[Double]]): Self = StObject.set(x, "_getCircle", js.Any.fromFunction3(value))
+      inline def set_getCircle(value: (Double, Double, Double) => js.Array[js.Array[Double]]): Self = StObject.set(x, "_getCircle", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_lightPasses(value: (/* x */ Double, /* y */ Double) => Boolean): Self = StObject.set(x, "_lightPasses", js.Any.fromFunction2(value))
+      inline def set_lightPasses(value: (/* x */ Double, /* y */ Double) => Boolean): Self = StObject.set(x, "_lightPasses", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_options(value: Options): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: Options): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,17 +110,14 @@ object fovFovMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(topology: `4` | `6` | `8`): Options = {
+    inline def apply(topology: `4` | `6` | `8`): Options = {
       val __obj = js.Dynamic.literal(topology = topology.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
+      inline def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
     }
   }
   

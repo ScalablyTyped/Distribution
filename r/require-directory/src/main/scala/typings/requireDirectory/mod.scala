@@ -16,18 +16,12 @@ object mod {
     * @param options object with options for require-directory call
     * @returns hash of modules in specified directory
     */
-  @scala.inline
-  def apply[T, U](m: NodeModule): RequireDirectoryResult[U] = ^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any]).asInstanceOf[RequireDirectoryResult[U]]
-  @scala.inline
-  def apply[T, U](m: NodeModule, path: String): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  @scala.inline
-  def apply[T, U](m: NodeModule, path: String, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  @scala.inline
-  def apply[T, U](m: NodeModule, path: Unit, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  @scala.inline
-  def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  @scala.inline
-  def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U], options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule): RequireDirectoryResult[U] = ^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any]).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: String): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: String, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: Unit, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U], options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
   
   @JSImport("require-directory", JSImport.Namespace)
   @js.native
@@ -91,59 +85,42 @@ object mod {
   }
   object RequireDirectoryOptions {
     
-    @scala.inline
-    def apply[T, U](): RequireDirectoryOptions[T, U] = {
+    inline def apply[T, U](): RequireDirectoryOptions[T, U] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequireDirectoryOptions[T, U]]
     }
     
-    @scala.inline
-    implicit class RequireDirectoryOptionsMutableBuilder[Self <: RequireDirectoryOptions[?, ?], T, U] (val x: Self & (RequireDirectoryOptions[T, U])) extends AnyVal {
+    extension [Self <: RequireDirectoryOptions[?, ?], T, U](x: Self & (RequireDirectoryOptions[T, U])) {
       
-      @scala.inline
-      def setExclude(value: RegExp | CheckPathFn): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: RegExp | CheckPathFn): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeFunction1(value: /* path */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
+      inline def setExcludeFunction1(value: /* path */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: RegExp | CheckPathFn): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: RegExp | CheckPathFn): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeFunction1(value: /* path */ String => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
+      inline def setIncludeFunction1(value: /* path */ String => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
+      inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
+      inline def setRecurseUndefined: Self = StObject.set(x, "recurse", js.undefined)
       
-      @scala.inline
-      def setRename(value: /* name */ String => String): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
+      inline def setRename(value: /* name */ String => String): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+      inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
       
-      @scala.inline
-      def setVisit(value: /* obj */ T => U | Unit): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
+      inline def setVisit(value: /* obj */ T => U | Unit): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
+      inline def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
     }
   }
   
@@ -155,8 +132,7 @@ object mod {
   /* index */ StringDictionary[RequireDirectoryResult[T] | T]
   object RequireDirectoryResult {
     
-    @scala.inline
-    def apply[T](): RequireDirectoryResult[T] = {
+    inline def apply[T](): RequireDirectoryResult[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequireDirectoryResult[T]]
     }

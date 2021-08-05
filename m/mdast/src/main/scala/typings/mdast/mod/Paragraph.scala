@@ -18,23 +18,18 @@ trait Paragraph
 }
 object Paragraph {
   
-  @scala.inline
-  def apply(children: js.Array[PhrasingContent]): Paragraph = {
+  inline def apply(children: js.Array[PhrasingContent]): Paragraph = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("paragraph")
     __obj.asInstanceOf[Paragraph]
   }
   
-  @scala.inline
-  implicit class ParagraphMutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
+  extension [Self <: Paragraph](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: paragraph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: paragraph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait Readonlykindmissingfieldl extends StObject {
 }
 object Readonlykindmissingfieldl {
   
-  @scala.inline
-  def apply(fieldPath: String, owner: String): Readonlykindmissingfieldl = {
+  inline def apply(fieldPath: String, owner: String): Readonlykindmissingfieldl = {
     val __obj = js.Dynamic.literal(fieldPath = fieldPath.asInstanceOf[js.Any], kind = "missing_field.log", owner = owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlykindmissingfieldl]
   }
   
-  @scala.inline
-  implicit class ReadonlykindmissingfieldlMutableBuilder[Self <: Readonlykindmissingfieldl] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlykindmissingfieldl](x: Self) {
     
-    @scala.inline
-    def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+    inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: missing_fieldDotlog): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: missing_fieldDotlog): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
   }
 }

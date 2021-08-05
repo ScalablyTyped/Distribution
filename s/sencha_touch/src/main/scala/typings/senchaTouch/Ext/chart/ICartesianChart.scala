@@ -37,49 +37,35 @@ trait ICartesianChart
 }
 object ICartesianChart {
   
-  @scala.inline
-  def apply(): ICartesianChart = {
+  inline def apply(): ICartesianChart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICartesianChart]
   }
   
-  @scala.inline
-  implicit class ICartesianChartMutableBuilder[Self <: ICartesianChart] (val x: Self) extends AnyVal {
+  extension [Self <: ICartesianChart](x: Self) {
     
-    @scala.inline
-    def setFlipXY(value: Boolean): Self = StObject.set(x, "flipXY", value.asInstanceOf[js.Any])
+    inline def setFlipXY(value: Boolean): Self = StObject.set(x, "flipXY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipXYUndefined: Self = StObject.set(x, "flipXY", js.undefined)
+    inline def setFlipXYUndefined: Self = StObject.set(x, "flipXY", js.undefined)
     
-    @scala.inline
-    def setGetFlipXY(value: () => Boolean): Self = StObject.set(x, "getFlipXY", js.Any.fromFunction0(value))
+    inline def setGetFlipXY(value: () => Boolean): Self = StObject.set(x, "getFlipXY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFlipXYUndefined: Self = StObject.set(x, "getFlipXY", js.undefined)
+    inline def setGetFlipXYUndefined: Self = StObject.set(x, "getFlipXY", js.undefined)
     
-    @scala.inline
-    def setGetInnerRegion(value: () => Array): Self = StObject.set(x, "getInnerRegion", js.Any.fromFunction0(value))
+    inline def setGetInnerRegion(value: () => Array): Self = StObject.set(x, "getInnerRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInnerRegionUndefined: Self = StObject.set(x, "getInnerRegion", js.undefined)
+    inline def setGetInnerRegionUndefined: Self = StObject.set(x, "getInnerRegion", js.undefined)
     
-    @scala.inline
-    def setPerformLayout(value: () => Unit): Self = StObject.set(x, "performLayout", js.Any.fromFunction0(value))
+    inline def setPerformLayout(value: () => Unit): Self = StObject.set(x, "performLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPerformLayoutUndefined: Self = StObject.set(x, "performLayout", js.undefined)
+    inline def setPerformLayoutUndefined: Self = StObject.set(x, "performLayout", js.undefined)
     
-    @scala.inline
-    def setSetFlipXY(value: /* flipXY */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setFlipXY", js.Any.fromFunction1(value))
+    inline def setSetFlipXY(value: /* flipXY */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setFlipXY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFlipXYUndefined: Self = StObject.set(x, "setFlipXY", js.undefined)
+    inline def setSetFlipXYUndefined: Self = StObject.set(x, "setFlipXY", js.undefined)
     
-    @scala.inline
-    def setSetInnerRegion(value: /* innerRegion */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setInnerRegion", js.Any.fromFunction1(value))
+    inline def setSetInnerRegion(value: /* innerRegion */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setInnerRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInnerRegionUndefined: Self = StObject.set(x, "setInnerRegion", js.undefined)
+    inline def setSetInnerRegionUndefined: Self = StObject.set(x, "setInnerRegion", js.undefined)
   }
 }

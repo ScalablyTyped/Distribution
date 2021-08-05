@@ -10,19 +10,15 @@ trait UserAgentUnregisterOptions extends StObject {
 }
 object UserAgentUnregisterOptions {
   
-  @scala.inline
-  def apply(): UserAgentUnregisterOptions = {
+  inline def apply(): UserAgentUnregisterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserAgentUnregisterOptions]
   }
   
-  @scala.inline
-  implicit class UserAgentUnregisterOptionsMutableBuilder[Self <: UserAgentUnregisterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentUnregisterOptions](x: Self) {
     
-    @scala.inline
-    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
   }
 }

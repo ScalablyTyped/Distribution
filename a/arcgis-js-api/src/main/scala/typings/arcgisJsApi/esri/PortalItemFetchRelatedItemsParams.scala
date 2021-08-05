@@ -28,8 +28,7 @@ trait PortalItemFetchRelatedItemsParams
 }
 object PortalItemFetchRelatedItemsParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     direction: forward | reverse,
     hasOwnProperty: PropertyKey => Boolean,
@@ -40,13 +39,10 @@ object PortalItemFetchRelatedItemsParams {
     __obj.asInstanceOf[PortalItemFetchRelatedItemsParams]
   }
   
-  @scala.inline
-  implicit class PortalItemFetchRelatedItemsParamsMutableBuilder[Self <: PortalItemFetchRelatedItemsParams] (val x: Self) extends AnyVal {
+  extension [Self <: PortalItemFetchRelatedItemsParams](x: Self) {
     
-    @scala.inline
-    def setDirection(value: forward | reverse): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: forward | reverse): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipType(value: String): Self = StObject.set(x, "relationshipType", value.asInstanceOf[js.Any])
+    inline def setRelationshipType(value: String): Self = StObject.set(x, "relationshipType", value.asInstanceOf[js.Any])
   }
 }

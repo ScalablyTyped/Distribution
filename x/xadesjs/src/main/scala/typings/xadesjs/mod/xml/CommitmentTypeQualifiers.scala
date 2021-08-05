@@ -13,6 +13,5 @@ class CommitmentTypeQualifiers ()
   extends typings.xadesjs.xmlMod.CommitmentTypeQualifiers
 object CommitmentTypeQualifiers {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CommitmentTypeQualifiers] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommitmentTypeQualifiers").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CommitmentTypeQualifiers]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CommitmentTypeQualifiers] = ^.asInstanceOf[js.Dynamic].selectDynamic("CommitmentTypeQualifiers").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CommitmentTypeQualifiers]]
 }

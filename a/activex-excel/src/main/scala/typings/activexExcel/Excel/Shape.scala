@@ -91,7 +91,7 @@ trait Shape extends StObject {
   
   def Duplicate(): Shape = js.native
   
-  @JSName("Excel.Shape_typekey")
+  /* private */ @JSName("Excel.Shape_typekey")
   var ExcelDotShape_typekey: Shape = js.native
   
   val Fill: FillFormat = js.native

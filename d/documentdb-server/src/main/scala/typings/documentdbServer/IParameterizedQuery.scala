@@ -15,22 +15,17 @@ trait IParameterizedQuery extends StObject {
 }
 object IParameterizedQuery {
   
-  @scala.inline
-  def apply(parameters: js.Array[IQueryParam], query: String): IParameterizedQuery = {
+  inline def apply(parameters: js.Array[IQueryParam], query: String): IParameterizedQuery = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[IParameterizedQuery]
   }
   
-  @scala.inline
-  implicit class IParameterizedQueryMutableBuilder[Self <: IParameterizedQuery] (val x: Self) extends AnyVal {
+  extension [Self <: IParameterizedQuery](x: Self) {
     
-    @scala.inline
-    def setParameters(value: js.Array[IQueryParam]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[IQueryParam]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: IQueryParam*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: IQueryParam*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

@@ -22,10 +22,8 @@ object Blame {
     * @param path - to the file to get the blame of
     * @param [options] - Options for the blame
     */
-  @scala.inline
-  def file(repo: typings.nodegit.repositoryMod.Repository, path: String): js.Promise[typings.nodegit.blameMod.Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.blameMod.Blame]]
-  @scala.inline
-  def file(
+  inline def file(repo: typings.nodegit.repositoryMod.Repository, path: String): js.Promise[typings.nodegit.blameMod.Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.blameMod.Blame]]
+  inline def file(
     repo: typings.nodegit.repositoryMod.Repository,
     path: String,
     options: typings.nodegit.blameOptionsMod.BlameOptions
@@ -35,6 +33,5 @@ object Blame {
     * @param opts - The git_blame_options struct to initialize
     * @param version - Version of struct; pass GIT_BLAME_OPTIONS_VERSION
     */
-  @scala.inline
-  def initOptions(opts: typings.nodegit.blameOptionsMod.BlameOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def initOptions(opts: typings.nodegit.blameOptionsMod.BlameOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -23,25 +23,19 @@ trait CreateApplicationPresignedUrlRequest extends StObject {
 }
 object CreateApplicationPresignedUrlRequest {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, UrlType: UrlType): CreateApplicationPresignedUrlRequest = {
+  inline def apply(ApplicationName: ApplicationName, UrlType: UrlType): CreateApplicationPresignedUrlRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], UrlType = UrlType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationPresignedUrlRequest]
   }
   
-  @scala.inline
-  implicit class CreateApplicationPresignedUrlRequestMutableBuilder[Self <: CreateApplicationPresignedUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateApplicationPresignedUrlRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionExpirationDurationInSeconds(value: SessionExpirationDurationInSeconds): Self = StObject.set(x, "SessionExpirationDurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setSessionExpirationDurationInSeconds(value: SessionExpirationDurationInSeconds): Self = StObject.set(x, "SessionExpirationDurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionExpirationDurationInSecondsUndefined: Self = StObject.set(x, "SessionExpirationDurationInSeconds", js.undefined)
+    inline def setSessionExpirationDurationInSecondsUndefined: Self = StObject.set(x, "SessionExpirationDurationInSeconds", js.undefined)
     
-    @scala.inline
-    def setUrlType(value: UrlType): Self = StObject.set(x, "UrlType", value.asInstanceOf[js.Any])
+    inline def setUrlType(value: UrlType): Self = StObject.set(x, "UrlType", value.asInstanceOf[js.Any])
   }
 }

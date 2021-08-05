@@ -16,13 +16,12 @@ trait Dialogs extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.Dialogs_typekey")
+  /* private */ @JSName("Word.Dialogs_typekey")
   var WordDotDialogs_typekey: Dialogs
 }
 object Dialogs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object Dialogs {
     __obj.asInstanceOf[Dialogs]
   }
   
-  @scala.inline
-  implicit class DialogsMutableBuilder[Self <: Dialogs] (val x: Self) extends AnyVal {
+  extension [Self <: Dialogs](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: WdWordDialog => Dialog): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: WdWordDialog => Dialog): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotDialogs_typekey(value: Dialogs): Self = StObject.set(x, "Word.Dialogs_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotDialogs_typekey(value: Dialogs): Self = StObject.set(x, "Word.Dialogs_typekey", value.asInstanceOf[js.Any])
   }
 }

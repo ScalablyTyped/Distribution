@@ -17,20 +17,16 @@ trait UnicodeRange
 }
 object UnicodeRange {
   
-  @scala.inline
-  def apply(value: String): UnicodeRange = {
+  inline def apply(value: String): UnicodeRange = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("UnicodeRange")
     __obj.asInstanceOf[UnicodeRange]
   }
   
-  @scala.inline
-  implicit class UnicodeRangeMutableBuilder[Self <: UnicodeRange] (val x: Self) extends AnyVal {
+  extension [Self <: UnicodeRange](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.UnicodeRange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.UnicodeRange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -71,110 +71,76 @@ object mod {
   }
   object ReaptchaProps {
     
-    @scala.inline
-    def apply(onVerify: String => Unit, sitekey: String): ReaptchaProps = {
+    inline def apply(onVerify: String => Unit, sitekey: String): ReaptchaProps = {
       val __obj = js.Dynamic.literal(onVerify = js.Any.fromFunction1(onVerify), sitekey = sitekey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReaptchaProps]
     }
     
-    @scala.inline
-    implicit class ReaptchaPropsMutableBuilder[Self <: ReaptchaProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReaptchaProps](x: Self) {
       
-      @scala.inline
-      def setBadge(value: bottomright | bottomleft | `inline`): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: bottomright | bottomleft | `inline`): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setChildren(value: /* renderProps */ RenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* renderProps */ RenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
+      inline def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitUndefined: Self = StObject.set(x, "explicit", js.undefined)
+      inline def setExplicitUndefined: Self = StObject.set(x, "explicit", js.undefined)
       
-      @scala.inline
-      def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+      inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
+      inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInject(value: Boolean): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: Boolean): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      @scala.inline
-      def setIsolated(value: Boolean): Self = StObject.set(x, "isolated", value.asInstanceOf[js.Any])
+      inline def setIsolated(value: Boolean): Self = StObject.set(x, "isolated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsolatedUndefined: Self = StObject.set(x, "isolated", js.undefined)
+      inline def setIsolatedUndefined: Self = StObject.set(x, "isolated", js.undefined)
       
-      @scala.inline
-      def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+      inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnExpire(value: () => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction0(value))
+      inline def setOnExpire(value: () => Unit): Self = StObject.set(x, "onExpire", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
+      inline def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
+      inline def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+      inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
       
-      @scala.inline
-      def setOnVerify(value: String => Unit): Self = StObject.set(x, "onVerify", js.Any.fromFunction1(value))
+      inline def setOnVerify(value: String => Unit): Self = StObject.set(x, "onVerify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
+      inline def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: compact | normal | invisible): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: compact | normal | invisible): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
+      inline def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
+      inline def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
       
-      @scala.inline
-      def setTheme(value: light | dark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: light | dark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -192,8 +158,7 @@ object mod {
   }
   object RenderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       execute: () => js.Promise[Unit],
       getResponse: () => js.Promise[String],
       renderExplicitly: () => js.Promise[Unit],
@@ -203,26 +168,19 @@ object mod {
       __obj.asInstanceOf[RenderProps]
     }
     
-    @scala.inline
-    implicit class RenderPropsMutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: RenderProps](x: Self) {
       
-      @scala.inline
-      def setExecute(value: () => js.Promise[Unit]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => js.Promise[Unit]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetResponse(value: () => js.Promise[String]): Self = StObject.set(x, "getResponse", js.Any.fromFunction0(value))
+      inline def setGetResponse(value: () => js.Promise[String]): Self = StObject.set(x, "getResponse", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRecaptchaComponent(value: ReactNode): Self = StObject.set(x, "recaptchaComponent", value.asInstanceOf[js.Any])
+      inline def setRecaptchaComponent(value: ReactNode): Self = StObject.set(x, "recaptchaComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecaptchaComponentUndefined: Self = StObject.set(x, "recaptchaComponent", js.undefined)
+      inline def setRecaptchaComponentUndefined: Self = StObject.set(x, "recaptchaComponent", js.undefined)
       
-      @scala.inline
-      def setRenderExplicitly(value: () => js.Promise[Unit]): Self = StObject.set(x, "renderExplicitly", js.Any.fromFunction0(value))
+      inline def setRenderExplicitly(value: () => js.Promise[Unit]): Self = StObject.set(x, "renderExplicitly", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => js.Promise[Unit]): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => js.Promise[Unit]): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
 }

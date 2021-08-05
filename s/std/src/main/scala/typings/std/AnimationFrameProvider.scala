@@ -12,19 +12,15 @@ trait AnimationFrameProvider extends StObject {
 }
 object AnimationFrameProvider {
   
-  @scala.inline
-  def apply(cancelAnimationFrame: Double => Unit, requestAnimationFrame: FrameRequestCallback => Double): AnimationFrameProvider = {
+  inline def apply(cancelAnimationFrame: Double => Unit, requestAnimationFrame: FrameRequestCallback => Double): AnimationFrameProvider = {
     val __obj = js.Dynamic.literal(cancelAnimationFrame = js.Any.fromFunction1(cancelAnimationFrame), requestAnimationFrame = js.Any.fromFunction1(requestAnimationFrame))
     __obj.asInstanceOf[AnimationFrameProvider]
   }
   
-  @scala.inline
-  implicit class AnimationFrameProviderMutableBuilder[Self <: AnimationFrameProvider] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationFrameProvider](x: Self) {
     
-    @scala.inline
-    def setCancelAnimationFrame(value: Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
+    inline def setCancelAnimationFrame(value: Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestAnimationFrame(value: FrameRequestCallback => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
+    inline def setRequestAnimationFrame(value: FrameRequestCallback => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
   }
 }

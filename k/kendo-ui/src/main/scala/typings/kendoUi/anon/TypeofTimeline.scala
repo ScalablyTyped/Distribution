@@ -15,19 +15,15 @@ trait TypeofTimeline extends StObject {
 }
 object TypeofTimeline {
   
-  @scala.inline
-  def apply(extend: js.Object => Timeline, fn: Timeline): TypeofTimeline = {
+  inline def apply(extend: js.Object => Timeline, fn: Timeline): TypeofTimeline = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTimeline]
   }
   
-  @scala.inline
-  implicit class TypeofTimelineMutableBuilder[Self <: TypeofTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTimeline](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Timeline): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Timeline): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Timeline): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Timeline): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

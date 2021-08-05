@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcDisplayAsHyperlink extends StObject
 object AcDisplayAsHyperlink {
   
-  @scala.inline
-  def acDisplayAsHyperlinkAlways: `1` = 1.asInstanceOf[`1`]
+  inline def acDisplayAsHyperlinkAlways: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acDisplayAsHyperlinkIfHyperlink: `0` = 0.asInstanceOf[`0`]
+  inline def acDisplayAsHyperlinkIfHyperlink: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acDisplayAsHyperlinkOnScreenOnly: `2` = 2.asInstanceOf[`2`]
+  inline def acDisplayAsHyperlinkOnScreenOnly: `2` = 2.asInstanceOf[`2`]
 }

@@ -33,8 +33,7 @@ trait ElasticsearchAction extends StObject {
 }
 object ElasticsearchAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endpoint: ElasticsearchEndpoint,
     id: ElasticsearchId,
     index: ElasticsearchIndex,
@@ -46,22 +45,16 @@ object ElasticsearchAction {
     __obj.asInstanceOf[ElasticsearchAction]
   }
   
-  @scala.inline
-  implicit class ElasticsearchActionMutableBuilder[Self <: ElasticsearchAction] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticsearchAction](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: ElasticsearchEndpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: ElasticsearchEndpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: ElasticsearchId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ElasticsearchId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: ElasticsearchIndex): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: ElasticsearchIndex): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ElasticsearchType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ElasticsearchType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

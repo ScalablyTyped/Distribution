@@ -10,19 +10,15 @@ trait Interpolation extends StObject {
 }
 object Interpolation {
   
-  @scala.inline
-  def apply(): Interpolation = {
+  inline def apply(): Interpolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Interpolation]
   }
   
-  @scala.inline
-  implicit class InterpolationMutableBuilder[Self <: Interpolation] (val x: Self) extends AnyVal {
+  extension [Self <: Interpolation](x: Self) {
     
-    @scala.inline
-    def setInterpolation(value: Type): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: Type): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
   }
 }

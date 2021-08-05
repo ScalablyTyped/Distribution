@@ -20,31 +20,23 @@ trait ElectoralDistrict extends StObject {
 }
 object ElectoralDistrict {
   
-  @scala.inline
-  def apply(): ElectoralDistrict = {
+  inline def apply(): ElectoralDistrict = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElectoralDistrict]
   }
   
-  @scala.inline
-  implicit class ElectoralDistrictMutableBuilder[Self <: ElectoralDistrict] (val x: Self) extends AnyVal {
+  extension [Self <: ElectoralDistrict](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

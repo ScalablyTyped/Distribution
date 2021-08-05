@@ -33,10 +33,8 @@ object EnumValueDescriptorProto {
     * @returns EnumValueDescriptorProto instance
     */
   /* static member */
-  @scala.inline
-  def create(): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
-  @scala.inline
-  def create(properties: IEnumValueDescriptorProto): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
+  inline def create(): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
+  inline def create(properties: IEnumValueDescriptorProto): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
   
   /**
     * Decodes an EnumValueDescriptorProto message from the specified reader or buffer.
@@ -47,14 +45,10 @@ object EnumValueDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
-  @scala.inline
-  def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
-  @scala.inline
-  def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
+  inline def decode(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
+  inline def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
+  inline def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
+  inline def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
   
   /**
     * Decodes an EnumValueDescriptorProto message from the specified reader or buffer, length delimited.
@@ -64,10 +58,8 @@ object EnumValueDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
+  inline def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
+  inline def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
   
   /**
     * Encodes the specified EnumValueDescriptorProto message. Does not implicitly {@link google.protobuf.EnumValueDescriptorProto.verify|verify} messages.
@@ -76,10 +68,8 @@ object EnumValueDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IEnumValueDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IEnumValueDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IEnumValueDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IEnumValueDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified EnumValueDescriptorProto message, length delimited. Does not implicitly {@link google.protobuf.EnumValueDescriptorProto.verify|verify} messages.
@@ -88,10 +78,8 @@ object EnumValueDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IEnumValueDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IEnumValueDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IEnumValueDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IEnumValueDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an EnumValueDescriptorProto message from a plain object. Also converts values to their respective internal types.
@@ -99,8 +87,7 @@ object EnumValueDescriptorProto {
     * @returns EnumValueDescriptorProto
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
+  inline def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto]
   
   /**
     * Creates a plain object from an EnumValueDescriptorProto message. Also converts values to other types if specified.
@@ -109,10 +96,8 @@ object EnumValueDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(
+  inline def toObject(message: typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(
     message: typings.googleGax.iamServiceMod.google.protobuf.EnumValueDescriptorProto,
     options: IConversionOptions
   ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
@@ -123,6 +108,5 @@ object EnumValueDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

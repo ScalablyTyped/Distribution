@@ -8,11 +8,9 @@ object i18nextSprintfPostprocessorStrings {
   
   @js.native
   sealed trait postProcessor extends StObject
-  @scala.inline
-  def postProcessor: postProcessor = "postProcessor".asInstanceOf[postProcessor]
+  inline def postProcessor: postProcessor = "postProcessor".asInstanceOf[postProcessor]
   
   @js.native
   sealed trait sprintf extends StObject
-  @scala.inline
-  def sprintf: sprintf = "sprintf".asInstanceOf[sprintf]
+  inline def sprintf: sprintf = "sprintf".asInstanceOf[sprintf]
 }

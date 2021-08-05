@@ -62,139 +62,96 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAfterScreenshot(value: /* doc */ Document => Unit): Self = StObject.set(x, "afterScreenshot", js.Any.fromFunction1(value))
+      inline def setAfterScreenshot(value: /* doc */ Document => Unit): Self = StObject.set(x, "afterScreenshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterScreenshotUndefined: Self = StObject.set(x, "afterScreenshot", js.undefined)
+      inline def setAfterScreenshotUndefined: Self = StObject.set(x, "afterScreenshot", js.undefined)
       
-      @scala.inline
-      def setBeforeScreenshot(value: /* doc */ Document => Unit): Self = StObject.set(x, "beforeScreenshot", js.Any.fromFunction1(value))
+      inline def setBeforeScreenshot(value: /* doc */ Document => Unit): Self = StObject.set(x, "beforeScreenshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeScreenshotUndefined: Self = StObject.set(x, "beforeScreenshot", js.undefined)
+      inline def setBeforeScreenshotUndefined: Self = StObject.set(x, "beforeScreenshot", js.undefined)
       
-      @scala.inline
-      def setBlackout(value: js.Array[String]): Self = StObject.set(x, "blackout", value.asInstanceOf[js.Any])
+      inline def setBlackout(value: js.Array[String]): Self = StObject.set(x, "blackout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackoutUndefined: Self = StObject.set(x, "blackout", js.undefined)
+      inline def setBlackoutUndefined: Self = StObject.set(x, "blackout", js.undefined)
       
-      @scala.inline
-      def setBlackoutVarargs(value: String*): Self = StObject.set(x, "blackout", js.Array(value :_*))
+      inline def setBlackoutVarargs(value: String*): Self = StObject.set(x, "blackout", js.Array(value :_*))
       
-      @scala.inline
-      def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+      inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setCapture(value: runner | viewport | fullPage): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: runner | viewport | fullPage): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      @scala.inline
-      def setClip(value: Height): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      inline def setClip(value: Height): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+      inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
-      @scala.inline
-      def setCustomDiffConfig(value: IncludeAA): Self = StObject.set(x, "customDiffConfig", value.asInstanceOf[js.Any])
+      inline def setCustomDiffConfig(value: IncludeAA): Self = StObject.set(x, "customDiffConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDiffConfigUndefined: Self = StObject.set(x, "customDiffConfig", js.undefined)
+      inline def setCustomDiffConfigUndefined: Self = StObject.set(x, "customDiffConfig", js.undefined)
       
-      @scala.inline
-      def setCustomDiffDir(value: String): Self = StObject.set(x, "customDiffDir", value.asInstanceOf[js.Any])
+      inline def setCustomDiffDir(value: String): Self = StObject.set(x, "customDiffDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDiffDirUndefined: Self = StObject.set(x, "customDiffDir", js.undefined)
+      inline def setCustomDiffDirUndefined: Self = StObject.set(x, "customDiffDir", js.undefined)
       
-      @scala.inline
-      def setCustomSnapshotIdentifier(value: (js.Function1[/* parameters */ Counter, String]) | String): Self = StObject.set(x, "customSnapshotIdentifier", value.asInstanceOf[js.Any])
+      inline def setCustomSnapshotIdentifier(value: (js.Function1[/* parameters */ Counter, String]) | String): Self = StObject.set(x, "customSnapshotIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSnapshotIdentifierFunction1(value: /* parameters */ Counter => String): Self = StObject.set(x, "customSnapshotIdentifier", js.Any.fromFunction1(value))
+      inline def setCustomSnapshotIdentifierFunction1(value: /* parameters */ Counter => String): Self = StObject.set(x, "customSnapshotIdentifier", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomSnapshotIdentifierUndefined: Self = StObject.set(x, "customSnapshotIdentifier", js.undefined)
+      inline def setCustomSnapshotIdentifierUndefined: Self = StObject.set(x, "customSnapshotIdentifier", js.undefined)
       
-      @scala.inline
-      def setCustomSnapshotsDir(value: String): Self = StObject.set(x, "customSnapshotsDir", value.asInstanceOf[js.Any])
+      inline def setCustomSnapshotsDir(value: String): Self = StObject.set(x, "customSnapshotsDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSnapshotsDirUndefined: Self = StObject.set(x, "customSnapshotsDir", js.undefined)
+      inline def setCustomSnapshotsDirUndefined: Self = StObject.set(x, "customSnapshotsDir", js.undefined)
       
-      @scala.inline
-      def setDiffDirection(value: horizontal | vertical): Self = StObject.set(x, "diffDirection", value.asInstanceOf[js.Any])
+      inline def setDiffDirection(value: horizontal | vertical): Self = StObject.set(x, "diffDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffDirectionUndefined: Self = StObject.set(x, "diffDirection", js.undefined)
+      inline def setDiffDirectionUndefined: Self = StObject.set(x, "diffDirection", js.undefined)
       
-      @scala.inline
-      def setDisableTimersAndAnimations(value: Boolean): Self = StObject.set(x, "disableTimersAndAnimations", value.asInstanceOf[js.Any])
+      inline def setDisableTimersAndAnimations(value: Boolean): Self = StObject.set(x, "disableTimersAndAnimations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTimersAndAnimationsUndefined: Self = StObject.set(x, "disableTimersAndAnimations", js.undefined)
+      inline def setDisableTimersAndAnimationsUndefined: Self = StObject.set(x, "disableTimersAndAnimations", js.undefined)
       
-      @scala.inline
-      def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+      inline def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureThresholdType(value: pixel | percent): Self = StObject.set(x, "failureThresholdType", value.asInstanceOf[js.Any])
+      inline def setFailureThresholdType(value: pixel | percent): Self = StObject.set(x, "failureThresholdType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureThresholdTypeUndefined: Self = StObject.set(x, "failureThresholdType", js.undefined)
+      inline def setFailureThresholdTypeUndefined: Self = StObject.set(x, "failureThresholdType", js.undefined)
       
-      @scala.inline
-      def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
+      inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
       
-      @scala.inline
-      def setNoColors(value: Boolean): Self = StObject.set(x, "noColors", value.asInstanceOf[js.Any])
+      inline def setNoColors(value: Boolean): Self = StObject.set(x, "noColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoColorsUndefined: Self = StObject.set(x, "noColors", js.undefined)
+      inline def setNoColorsUndefined: Self = StObject.set(x, "noColors", js.undefined)
       
-      @scala.inline
-      def setPadding(
+      inline def setPadding(
         value: Double | js.Array[Double] | (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
       ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
       
-      @scala.inline
-      def setRunInProcess(value: Boolean): Self = StObject.set(x, "runInProcess", value.asInstanceOf[js.Any])
+      inline def setRunInProcess(value: Boolean): Self = StObject.set(x, "runInProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunInProcessUndefined: Self = StObject.set(x, "runInProcess", js.undefined)
+      inline def setRunInProcessUndefined: Self = StObject.set(x, "runInProcess", js.undefined)
       
-      @scala.inline
-      def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setUpdatePassedSnapshot(value: Boolean): Self = StObject.set(x, "updatePassedSnapshot", value.asInstanceOf[js.Any])
+      inline def setUpdatePassedSnapshot(value: Boolean): Self = StObject.set(x, "updatePassedSnapshot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatePassedSnapshotUndefined: Self = StObject.set(x, "updatePassedSnapshot", js.undefined)
+      inline def setUpdatePassedSnapshotUndefined: Self = StObject.set(x, "updatePassedSnapshot", js.undefined)
     }
   }
   

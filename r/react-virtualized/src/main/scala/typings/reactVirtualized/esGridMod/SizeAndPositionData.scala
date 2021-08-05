@@ -12,19 +12,15 @@ trait SizeAndPositionData extends StObject {
 }
 object SizeAndPositionData {
   
-  @scala.inline
-  def apply(offset: Double, size: Double): SizeAndPositionData = {
+  inline def apply(offset: Double, size: Double): SizeAndPositionData = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeAndPositionData]
   }
   
-  @scala.inline
-  implicit class SizeAndPositionDataMutableBuilder[Self <: SizeAndPositionData] (val x: Self) extends AnyVal {
+  extension [Self <: SizeAndPositionData](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

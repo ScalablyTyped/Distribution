@@ -17,31 +17,23 @@ trait SdfDownloadTaskMetadata extends StObject {
 }
 object SdfDownloadTaskMetadata {
   
-  @scala.inline
-  def apply(): SdfDownloadTaskMetadata = {
+  inline def apply(): SdfDownloadTaskMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SdfDownloadTaskMetadata]
   }
   
-  @scala.inline
-  implicit class SdfDownloadTaskMetadataMutableBuilder[Self <: SdfDownloadTaskMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SdfDownloadTaskMetadata](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

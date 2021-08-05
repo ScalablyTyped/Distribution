@@ -17,22 +17,18 @@ object mod {
   @JSImport("moxios", "delay")
   @js.native
   def delay: Double = js.native
-  @scala.inline
-  def delay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delay")(x.asInstanceOf[js.Any])
+  inline def delay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delay")(x.asInstanceOf[js.Any])
   
   /**
     * Install the mock adapter for axios
     */
-  @scala.inline
-  def install(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Unit]
-  @scala.inline
-  def install(instance: AxiosInstance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def install(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Unit]
+  inline def install(instance: AxiosInstance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("moxios", "requests")
   @js.native
   def requests: Tracker = js.native
-  @scala.inline
-  def requests_=(x: Tracker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requests")(x.asInstanceOf[js.Any])
+  inline def requests_=(x: Tracker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requests")(x.asInstanceOf[js.Any])
   
   /**
     * Stub a timed response to a request matching a method and a URL or RegExp. If
@@ -43,10 +39,8 @@ object mod {
     * @param urlOrRegExp A URL or RegExp to test against
     * @param response The response to use when a match is made
     */
-  @scala.inline
-  def stubFailure(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubFailure")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def stubFailure(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubFailure")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def stubFailure(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubFailure")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def stubFailure(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubFailure")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Stub a response to be used one or more times to respond to a request matching a
@@ -56,10 +50,8 @@ object mod {
     * @param urlOrRegExp A URL or RegExp to test against
     * @param response The response to use when a match is made
     */
-  @scala.inline
-  def stubOnce(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubOnce")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def stubOnce(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubOnce")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def stubOnce(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubOnce")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def stubOnce(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubOnce")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Stub a response to be used to respond to a request matching a URL or RegExp
@@ -67,40 +59,32 @@ object mod {
     * @param urlOrRegExp A URL or RegExp to test against
     * @param response The response to use when a match is made
     */
-  @scala.inline
-  def stubRequest(urlOrRegExp: String, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def stubRequest(urlOrRegExp: RegExp, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stubRequest(urlOrRegExp: String, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stubRequest(urlOrRegExp: RegExp, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Stub a timeout to be used to respond to a request matching a URL or RegExp
     *
     * @param urlOrRegExp A URL or RegExp to test against
     */
-  @scala.inline
-  def stubTimeout(urlOrRegExp: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stubTimeout")(urlOrRegExp.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stubTimeout(urlOrRegExp: RegExp): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stubTimeout")(urlOrRegExp.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stubTimeout(urlOrRegExp: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stubTimeout")(urlOrRegExp.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stubTimeout(urlOrRegExp: RegExp): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stubTimeout")(urlOrRegExp.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("moxios", "stubs")
   @js.native
   def stubs: Tracker = js.native
-  @scala.inline
-  def stubs_=(x: Tracker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stubs")(x.asInstanceOf[js.Any])
+  inline def stubs_=(x: Tracker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stubs")(x.asInstanceOf[js.Any])
   
   @JSImport("moxios", "timeoutException")
   @js.native
   def timeoutException: Error = js.native
-  @scala.inline
-  def timeoutException_=(x: Error): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeoutException")(x.asInstanceOf[js.Any])
+  inline def timeoutException_=(x: Error): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeoutException")(x.asInstanceOf[js.Any])
   
   /**
     * Uninstall the mock adapter and reset state
     */
-  @scala.inline
-  def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
-  @scala.inline
-  def uninstall(instance: AxiosInstance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
+  inline def uninstall(instance: AxiosInstance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Wait for request to be made before proceding.
@@ -110,10 +94,8 @@ object mod {
     * @param fn The function to execute once waiting is over
     * @param delay How much time in milliseconds to wait
     */
-  @scala.inline
-  def wait_(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def wait_(fn: js.Function0[Unit], delay: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wait_(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def wait_(fn: js.Function0[Unit], delay: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Run a single test with mock adapter installed.
@@ -122,8 +104,7 @@ object mod {
     *
     * @param fn The function to be executed
     */
-  @scala.inline
-  def withMock(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("withMock")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def withMock(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("withMock")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Item extends StObject {
     
@@ -139,44 +120,32 @@ object mod {
   }
   object Item {
     
-    @scala.inline
-    def apply(): Item = {
+    inline def apply(): Item = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+      inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
+      inline def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+      inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -211,8 +180,7 @@ object mod {
   }
   object Request {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: AxiosRequestConfig,
       headers: js.Any,
       respondWith: Item => js.Promise[Response],
@@ -226,32 +194,23 @@ object mod {
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespondWith(value: Item => js.Promise[Response]): Self = StObject.set(x, "respondWith", js.Any.fromFunction1(value))
+      inline def setRespondWith(value: Item => js.Promise[Response]): Self = StObject.set(x, "respondWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRespondWithTimeout(value: () => js.Promise[Response]): Self = StObject.set(x, "respondWithTimeout", js.Any.fromFunction0(value))
+      inline def setRespondWithTimeout(value: () => js.Promise[Response]): Self = StObject.set(x, "respondWithTimeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,47 +232,34 @@ object mod {
   }
   object Response {
     
-    @scala.inline
-    def apply(config: AxiosRequestConfig, headers: js.Any, request: Request): Response = {
+    inline def apply(config: AxiosRequestConfig, headers: js.Any, request: Request): Response = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+      inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   

@@ -23,31 +23,23 @@ trait Coverage extends StObject {
 }
 object Coverage {
   
-  @scala.inline
-  def apply(): Coverage = {
+  inline def apply(): Coverage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Coverage]
   }
   
-  @scala.inline
-  implicit class CoverageMutableBuilder[Self <: Coverage] (val x: Self) extends AnyVal {
+  extension [Self <: Coverage](x: Self) {
     
-    @scala.inline
-    def setCoverageCost(value: CoverageCost): Self = StObject.set(x, "CoverageCost", value.asInstanceOf[js.Any])
+    inline def setCoverageCost(value: CoverageCost): Self = StObject.set(x, "CoverageCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageCostUndefined: Self = StObject.set(x, "CoverageCost", js.undefined)
+    inline def setCoverageCostUndefined: Self = StObject.set(x, "CoverageCost", js.undefined)
     
-    @scala.inline
-    def setCoverageHours(value: CoverageHours): Self = StObject.set(x, "CoverageHours", value.asInstanceOf[js.Any])
+    inline def setCoverageHours(value: CoverageHours): Self = StObject.set(x, "CoverageHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageHoursUndefined: Self = StObject.set(x, "CoverageHours", js.undefined)
+    inline def setCoverageHoursUndefined: Self = StObject.set(x, "CoverageHours", js.undefined)
     
-    @scala.inline
-    def setCoverageNormalizedUnits(value: CoverageNormalizedUnits): Self = StObject.set(x, "CoverageNormalizedUnits", value.asInstanceOf[js.Any])
+    inline def setCoverageNormalizedUnits(value: CoverageNormalizedUnits): Self = StObject.set(x, "CoverageNormalizedUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageNormalizedUnitsUndefined: Self = StObject.set(x, "CoverageNormalizedUnits", js.undefined)
+    inline def setCoverageNormalizedUnitsUndefined: Self = StObject.set(x, "CoverageNormalizedUnits", js.undefined)
   }
 }

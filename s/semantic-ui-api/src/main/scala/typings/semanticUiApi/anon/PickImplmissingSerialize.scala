@@ -11,16 +11,13 @@ trait PickImplmissingSerialize extends StObject {
 }
 object PickImplmissingSerialize {
   
-  @scala.inline
-  def apply(missingSerialize: String): PickImplmissingSerialize = {
+  inline def apply(missingSerialize: String): PickImplmissingSerialize = {
     val __obj = js.Dynamic.literal(missingSerialize = missingSerialize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmissingSerialize]
   }
   
-  @scala.inline
-  implicit class PickImplmissingSerializeMutableBuilder[Self <: PickImplmissingSerialize] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmissingSerialize](x: Self) {
     
-    @scala.inline
-    def setMissingSerialize(value: String): Self = StObject.set(x, "missingSerialize", value.asInstanceOf[js.Any])
+    inline def setMissingSerialize(value: String): Self = StObject.set(x, "missingSerialize", value.asInstanceOf[js.Any])
   }
 }

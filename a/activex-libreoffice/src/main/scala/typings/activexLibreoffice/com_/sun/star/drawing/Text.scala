@@ -33,8 +33,7 @@ trait Text
      with TextProperties
 object Text {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BorderDistance: Double,
     BottomBorder: BorderLine,
     BottomBorderDistance: Double,

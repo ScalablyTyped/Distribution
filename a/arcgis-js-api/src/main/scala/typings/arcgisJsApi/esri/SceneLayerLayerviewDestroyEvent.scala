@@ -12,19 +12,15 @@ trait SceneLayerLayerviewDestroyEvent extends StObject {
 }
 object SceneLayerLayerviewDestroyEvent {
   
-  @scala.inline
-  def apply(layerView: LayerView, view: View): SceneLayerLayerviewDestroyEvent = {
+  inline def apply(layerView: LayerView, view: View): SceneLayerLayerviewDestroyEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneLayerLayerviewDestroyEvent]
   }
   
-  @scala.inline
-  implicit class SceneLayerLayerviewDestroyEventMutableBuilder[Self <: SceneLayerLayerviewDestroyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SceneLayerLayerviewDestroyEvent](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

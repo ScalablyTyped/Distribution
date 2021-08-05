@@ -10,17 +10,14 @@ trait OnAppShowCallbackResult extends StObject {
 }
 object OnAppShowCallbackResult {
   
-  @scala.inline
-  def apply(`object`: ResultOption): OnAppShowCallbackResult = {
+  inline def apply(`object`: ResultOption): OnAppShowCallbackResult = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnAppShowCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnAppShowCallbackResultMutableBuilder[Self <: OnAppShowCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnAppShowCallbackResult](x: Self) {
     
-    @scala.inline
-    def setObject(value: ResultOption): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ResultOption): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

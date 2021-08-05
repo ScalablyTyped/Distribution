@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsInformationProtectionPinCharacterRequirements extends StObject
 object WindowsInformationProtectionPinCharacterRequirements {
   
-  @scala.inline
-  def allow: typings.microsoftGraph.microsoftGraphStrings.allow = "allow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allow]
+  inline def allow: typings.microsoftGraph.microsoftGraphStrings.allow = "allow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allow]
   
-  @scala.inline
-  def notAllow: typings.microsoftGraph.microsoftGraphStrings.notAllow = "notAllow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notAllow]
+  inline def notAllow: typings.microsoftGraph.microsoftGraphStrings.notAllow = "notAllow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notAllow]
   
-  @scala.inline
-  def requireAtLeastOne: typings.microsoftGraph.microsoftGraphStrings.requireAtLeastOne = "requireAtLeastOne".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.requireAtLeastOne]
+  inline def requireAtLeastOne: typings.microsoftGraph.microsoftGraphStrings.requireAtLeastOne = "requireAtLeastOne".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.requireAtLeastOne]
 }

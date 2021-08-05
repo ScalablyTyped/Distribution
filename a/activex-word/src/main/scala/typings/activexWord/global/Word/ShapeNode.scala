@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ShapeNode")
 @js.native
-class ShapeNode protected ()
+/* private */ class ShapeNode ()
   extends StObject
      with typings.activexWord.Word.ShapeNode {
   
@@ -30,7 +30,7 @@ class ShapeNode protected ()
   /* CompleteClass */
   override val SegmentType: MsoSegmentType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ShapeNode_typekey")
   var WordDotShapeNode_typekey: typings.activexWord.Word.ShapeNode = js.native
 }

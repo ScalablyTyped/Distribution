@@ -20,8 +20,7 @@ trait KeyBinding extends StObject {
 }
 object KeyBinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addKeyboardHandler: (KeyboardHandler, Double) => Unit,
     getKeyboardHandler: () => KeyboardHandler,
     getStatusText: () => String,
@@ -33,25 +32,18 @@ object KeyBinding {
     __obj.asInstanceOf[KeyBinding]
   }
   
-  @scala.inline
-  implicit class KeyBindingMutableBuilder[Self <: KeyBinding] (val x: Self) extends AnyVal {
+  extension [Self <: KeyBinding](x: Self) {
     
-    @scala.inline
-    def setAddKeyboardHandler(value: (KeyboardHandler, Double) => Unit): Self = StObject.set(x, "addKeyboardHandler", js.Any.fromFunction2(value))
+    inline def setAddKeyboardHandler(value: (KeyboardHandler, Double) => Unit): Self = StObject.set(x, "addKeyboardHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetKeyboardHandler(value: () => KeyboardHandler): Self = StObject.set(x, "getKeyboardHandler", js.Any.fromFunction0(value))
+    inline def setGetKeyboardHandler(value: () => KeyboardHandler): Self = StObject.set(x, "getKeyboardHandler", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStatusText(value: () => String): Self = StObject.set(x, "getStatusText", js.Any.fromFunction0(value))
+    inline def setGetStatusText(value: () => String): Self = StObject.set(x, "getStatusText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveKeyboardHandler(value: KeyboardHandler => Boolean): Self = StObject.set(x, "removeKeyboardHandler", js.Any.fromFunction1(value))
+    inline def setRemoveKeyboardHandler(value: KeyboardHandler => Boolean): Self = StObject.set(x, "removeKeyboardHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultHandler(value: KeyboardHandler => Unit): Self = StObject.set(x, "setDefaultHandler", js.Any.fromFunction1(value))
+    inline def setSetDefaultHandler(value: KeyboardHandler => Unit): Self = StObject.set(x, "setDefaultHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetKeyboardHandler(value: KeyboardHandler => Unit): Self = StObject.set(x, "setKeyboardHandler", js.Any.fromFunction1(value))
+    inline def setSetKeyboardHandler(value: KeyboardHandler => Unit): Self = StObject.set(x, "setKeyboardHandler", js.Any.fromFunction1(value))
   }
 }

@@ -15,20 +15,16 @@ object anon {
   }
   object Crossorigin {
     
-    @scala.inline
-    def apply(crossorigin: String, integrity: String): Crossorigin = {
+    inline def apply(crossorigin: String, integrity: String): Crossorigin = {
       val __obj = js.Dynamic.literal(crossorigin = crossorigin.asInstanceOf[js.Any], integrity = integrity.asInstanceOf[js.Any])
       __obj.asInstanceOf[Crossorigin]
     }
     
-    @scala.inline
-    implicit class CrossoriginMutableBuilder[Self <: Crossorigin] (val x: Self) extends AnyVal {
+    extension [Self <: Crossorigin](x: Self) {
       
-      @scala.inline
-      def setCrossorigin(value: String): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
+      inline def setCrossorigin(value: String): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,26 +36,20 @@ object anon {
   }
   object Lasso {
     
-    @scala.inline
-    def apply(): Lasso = {
+    inline def apply(): Lasso = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Lasso]
     }
     
-    @scala.inline
-    implicit class LassoMutableBuilder[Self <: Lasso] (val x: Self) extends AnyVal {
+    extension [Self <: Lasso](x: Self) {
       
-      @scala.inline
-      def setLasso(value: default): Self = StObject.set(x, "lasso", value.asInstanceOf[js.Any])
+      inline def setLasso(value: default): Self = StObject.set(x, "lasso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLassoUndefined: Self = StObject.set(x, "lasso", js.undefined)
+      inline def setLassoUndefined: Self = StObject.set(x, "lasso", js.undefined)
       
-      @scala.inline
-      def setSendOptions(value: js.Any): Self = StObject.set(x, "sendOptions", value.asInstanceOf[js.Any])
+      inline def setSendOptions(value: js.Any): Self = StObject.set(x, "sendOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendOptionsUndefined: Self = StObject.set(x, "sendOptions", js.undefined)
+      inline def setSendOptionsUndefined: Self = StObject.set(x, "sendOptions", js.undefined)
     }
   }
   
@@ -71,23 +61,18 @@ object anon {
   }
   object Parts {
     
-    @scala.inline
-    def apply(parts: js.Array[String], value: String): Parts = {
+    inline def apply(parts: js.Array[String], value: String): Parts = {
       val __obj = js.Dynamic.literal(parts = parts.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parts]
     }
     
-    @scala.inline
-    implicit class PartsMutableBuilder[Self <: Parts] (val x: Self) extends AnyVal {
+    extension [Self <: Parts](x: Self) {
       
-      @scala.inline
-      def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

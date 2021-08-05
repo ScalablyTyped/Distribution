@@ -14,22 +14,17 @@ trait DecisionOptions extends StObject {
 }
 object DecisionOptions {
   
-  @scala.inline
-  def apply(cancelField: String, sessionKey: String, userProperty: String): DecisionOptions = {
+  inline def apply(cancelField: String, sessionKey: String, userProperty: String): DecisionOptions = {
     val __obj = js.Dynamic.literal(cancelField = cancelField.asInstanceOf[js.Any], sessionKey = sessionKey.asInstanceOf[js.Any], userProperty = userProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecisionOptions]
   }
   
-  @scala.inline
-  implicit class DecisionOptionsMutableBuilder[Self <: DecisionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DecisionOptions](x: Self) {
     
-    @scala.inline
-    def setCancelField(value: String): Self = StObject.set(x, "cancelField", value.asInstanceOf[js.Any])
+    inline def setCancelField(value: String): Self = StObject.set(x, "cancelField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
+    inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
+    inline def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
   }
 }

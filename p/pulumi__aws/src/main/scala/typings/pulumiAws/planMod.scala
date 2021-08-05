@@ -73,21 +73,16 @@ object planMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Plan]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Plan]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PlanState): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Plan]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PlanState, opts: CustomResourceOptions): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Plan]
+    inline def get(name: String, id: Input[ID]): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Plan]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Plan]
+    inline def get(name: String, id: Input[ID], state: PlanState): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Plan]
+    inline def get(name: String, id: Input[ID], state: PlanState, opts: CustomResourceOptions): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Plan]
     
     /**
       * Returns true if the given object is an instance of Plan.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/plan.Plan */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/plan.Plan */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/plan.Plan */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/plan.Plan */ Boolean]
   }
   
   trait PlanArgs extends StObject {
@@ -116,41 +111,30 @@ object planMod {
   }
   object PlanArgs {
     
-    @scala.inline
-    def apply(rules: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]]): PlanArgs = {
+    inline def apply(rules: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]]): PlanArgs = {
       val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlanArgs]
     }
     
-    @scala.inline
-    implicit class PlanArgsMutableBuilder[Self <: PlanArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PlanArgs](x: Self) {
       
-      @scala.inline
-      def setAdvancedBackupSettings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]]]): Self = StObject.set(x, "advancedBackupSettings", value.asInstanceOf[js.Any])
+      inline def setAdvancedBackupSettings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]]]): Self = StObject.set(x, "advancedBackupSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedBackupSettingsUndefined: Self = StObject.set(x, "advancedBackupSettings", js.undefined)
+      inline def setAdvancedBackupSettingsUndefined: Self = StObject.set(x, "advancedBackupSettings", js.undefined)
       
-      @scala.inline
-      def setAdvancedBackupSettingsVarargs(value: Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]*): Self = StObject.set(x, "advancedBackupSettings", js.Array(value :_*))
+      inline def setAdvancedBackupSettingsVarargs(value: Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]*): Self = StObject.set(x, "advancedBackupSettings", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: Input[typings.pulumiAws.inputMod.backup.PlanRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[typings.pulumiAws.inputMod.backup.PlanRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -190,56 +174,40 @@ object planMod {
   }
   object PlanState {
     
-    @scala.inline
-    def apply(): PlanState = {
+    inline def apply(): PlanState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PlanState]
     }
     
-    @scala.inline
-    implicit class PlanStateMutableBuilder[Self <: PlanState] (val x: Self) extends AnyVal {
+    extension [Self <: PlanState](x: Self) {
       
-      @scala.inline
-      def setAdvancedBackupSettings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]]]): Self = StObject.set(x, "advancedBackupSettings", value.asInstanceOf[js.Any])
+      inline def setAdvancedBackupSettings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]]]): Self = StObject.set(x, "advancedBackupSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedBackupSettingsUndefined: Self = StObject.set(x, "advancedBackupSettings", js.undefined)
+      inline def setAdvancedBackupSettingsUndefined: Self = StObject.set(x, "advancedBackupSettings", js.undefined)
       
-      @scala.inline
-      def setAdvancedBackupSettingsVarargs(value: Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]*): Self = StObject.set(x, "advancedBackupSettings", js.Array(value :_*))
+      inline def setAdvancedBackupSettingsVarargs(value: Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]*): Self = StObject.set(x, "advancedBackupSettings", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Input[typings.pulumiAws.inputMod.backup.PlanRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[typings.pulumiAws.inputMod.backup.PlanRule]*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsOrdersV3VerticalsTicketTicketEventType extends StObject
 object GoogleActionsOrdersV3VerticalsTicketTicketEventType {
   
-  @scala.inline
-  def CONCERT: typings.actionsOnGoogle.actionsOnGoogleStrings.CONCERT = "CONCERT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CONCERT]
+  inline def CONCERT: typings.actionsOnGoogle.actionsOnGoogleStrings.CONCERT = "CONCERT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CONCERT]
   
-  @scala.inline
-  def EVENT_TYPE_UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.EVENT_TYPE_UNKNOWN = "EVENT_TYPE_UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EVENT_TYPE_UNKNOWN]
+  inline def EVENT_TYPE_UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.EVENT_TYPE_UNKNOWN = "EVENT_TYPE_UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.EVENT_TYPE_UNKNOWN]
   
-  @scala.inline
-  def MOVIE: typings.actionsOnGoogle.actionsOnGoogleStrings.MOVIE = "MOVIE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.MOVIE]
+  inline def MOVIE: typings.actionsOnGoogle.actionsOnGoogleStrings.MOVIE = "MOVIE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.MOVIE]
   
-  @scala.inline
-  def SPORTS: typings.actionsOnGoogle.actionsOnGoogleStrings.SPORTS = "SPORTS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SPORTS]
+  inline def SPORTS: typings.actionsOnGoogle.actionsOnGoogleStrings.SPORTS = "SPORTS".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.SPORTS]
 }

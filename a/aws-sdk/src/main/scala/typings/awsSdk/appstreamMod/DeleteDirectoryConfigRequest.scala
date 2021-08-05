@@ -13,16 +13,13 @@ trait DeleteDirectoryConfigRequest extends StObject {
 }
 object DeleteDirectoryConfigRequest {
   
-  @scala.inline
-  def apply(DirectoryName: DirectoryName): DeleteDirectoryConfigRequest = {
+  inline def apply(DirectoryName: DirectoryName): DeleteDirectoryConfigRequest = {
     val __obj = js.Dynamic.literal(DirectoryName = DirectoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDirectoryConfigRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDirectoryConfigRequestMutableBuilder[Self <: DeleteDirectoryConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDirectoryConfigRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
+    inline def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
   }
 }

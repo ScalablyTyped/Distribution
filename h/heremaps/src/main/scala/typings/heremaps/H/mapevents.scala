@@ -41,8 +41,7 @@ object mapevents {
   }
   object Pointer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       button: Button,
       dragTarget: Object | Map_,
       id: Double,
@@ -101,29 +100,21 @@ object mapevents {
     // TODO not sure this is the right interpretation of the docs
     type Buttons = BitMask
     
-    @scala.inline
-    implicit class PointerMutableBuilder[Self <: Pointer] (val x: Self) extends AnyVal {
+    extension [Self <: Pointer](x: Self) {
       
-      @scala.inline
-      def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragTarget(value: Object | Map_): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
+      inline def setDragTarget(value: Object | Map_): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Object | Map_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Object | Map_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportX(value: Double): Self = StObject.set(x, "viewportX", value.asInstanceOf[js.Any])
+      inline def setViewportX(value: Double): Self = StObject.set(x, "viewportX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
+      inline def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,26 +171,20 @@ object mapevents {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setEnable(value: BitMask): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+        inline def setEnable(value: BitMask): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+        inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
         
-        @scala.inline
-        def setKinetics(value: IKinetics): Self = StObject.set(x, "kinetics", value.asInstanceOf[js.Any])
+        inline def setKinetics(value: IKinetics): Self = StObject.set(x, "kinetics", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKineticsUndefined: Self = StObject.set(x, "kinetics", js.undefined)
+        inline def setKineticsUndefined: Self = StObject.set(x, "kinetics", js.undefined)
       }
     }
   }
@@ -226,8 +211,7 @@ object mapevents {
   }
   object ContextMenuEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: js.Any,
       defaultPrevented: Boolean,
       originalEvent: Event,
@@ -243,20 +227,15 @@ object mapevents {
       __obj.asInstanceOf[ContextMenuEvent]
     }
     
-    @scala.inline
-    implicit class ContextMenuEventMutableBuilder[Self <: ContextMenuEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ContextMenuEvent](x: Self) {
       
-      @scala.inline
-      def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportX(value: js.Array[ContextItem]): Self = StObject.set(x, "viewportX", value.asInstanceOf[js.Any])
+      inline def setViewportX(value: js.Array[ContextItem]): Self = StObject.set(x, "viewportX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportXVarargs(value: ContextItem*): Self = StObject.set(x, "viewportX", js.Array(value :_*))
+      inline def setViewportXVarargs(value: ContextItem*): Self = StObject.set(x, "viewportX", js.Array(value :_*))
       
-      @scala.inline
-      def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
+      inline def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,8 +267,7 @@ object mapevents {
   }
   object Event {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changedPointers: js.Array[Pointer],
       currentPointer: Pointer,
       currentTarget: js.Any,
@@ -307,32 +285,23 @@ object mapevents {
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setChangedPointers(value: js.Array[Pointer]): Self = StObject.set(x, "changedPointers", value.asInstanceOf[js.Any])
+      inline def setChangedPointers(value: js.Array[Pointer]): Self = StObject.set(x, "changedPointers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedPointersVarargs(value: Pointer*): Self = StObject.set(x, "changedPointers", js.Array(value :_*))
+      inline def setChangedPointersVarargs(value: Pointer*): Self = StObject.set(x, "changedPointers", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentPointer(value: Pointer): Self = StObject.set(x, "currentPointer", value.asInstanceOf[js.Any])
+      inline def setCurrentPointer(value: Pointer): Self = StObject.set(x, "currentPointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointers(value: js.Array[Pointer]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
+      inline def setPointers(value: js.Array[Pointer]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointersVarargs(value: Pointer*): Self = StObject.set(x, "pointers", js.Array(value :_*))
+      inline def setPointersVarargs(value: Pointer*): Self = StObject.set(x, "pointers", js.Array(value :_*))
       
-      @scala.inline
-      def setTargetPointers(value: js.Array[Pointer]): Self = StObject.set(x, "targetPointers", value.asInstanceOf[js.Any])
+      inline def setTargetPointers(value: js.Array[Pointer]): Self = StObject.set(x, "targetPointers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetPointersVarargs(value: Pointer*): Self = StObject.set(x, "targetPointers", js.Array(value :_*))
+      inline def setTargetPointersVarargs(value: Pointer*): Self = StObject.set(x, "targetPointers", js.Array(value :_*))
     }
   }
   
@@ -384,8 +353,7 @@ object mapevents {
   }
   object WheelEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: js.Any,
       defaultPrevented: Boolean,
       delta: Double,
@@ -402,20 +370,15 @@ object mapevents {
       __obj.asInstanceOf[WheelEvent]
     }
     
-    @scala.inline
-    implicit class WheelEventMutableBuilder[Self <: WheelEvent] (val x: Self) extends AnyVal {
+    extension [Self <: WheelEvent](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportX(value: Double): Self = StObject.set(x, "viewportX", value.asInstanceOf[js.Any])
+      inline def setViewportX(value: Double): Self = StObject.set(x, "viewportX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
+      inline def setViewportY(value: Double): Self = StObject.set(x, "viewportY", value.asInstanceOf[js.Any])
     }
   }
 }

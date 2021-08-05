@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFileValidationMode extends StObject
 object MsoFileValidationMode {
   
-  @scala.inline
-  def msoFileValidationDefault: `0` = 0.asInstanceOf[`0`]
+  inline def msoFileValidationDefault: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoFileValidationSkip: `1` = 1.asInstanceOf[`1`]
+  inline def msoFileValidationSkip: `1` = 1.asInstanceOf[`1`]
 }

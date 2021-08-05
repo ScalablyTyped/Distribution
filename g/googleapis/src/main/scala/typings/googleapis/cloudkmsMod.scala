@@ -36,8 +36,7 @@ object cloudkmsMod {
     @JSImport("googleapis/build/src/apis/cloudkms", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudkms] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudkms]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object cloudkmsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object cloudkmsMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudkms(options: Options): Cloudkms = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudkms")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudkms]
+  inline def cloudkms(options: Options): Cloudkms = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudkms")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudkms]
   
-  @scala.inline
-  def cloudkms_v1(version: v1): Cloudkms = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudkms")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudkms]
+  inline def cloudkms_v1(version: v1): Cloudkms = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudkms")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudkms]
 }

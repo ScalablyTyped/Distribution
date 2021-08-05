@@ -18,20 +18,16 @@ trait PlatformDevice extends StObject {
 }
 object PlatformDevice {
   
-  @scala.inline
-  def apply(id: String, `type`: PlatformDeviceType): PlatformDevice = {
+  inline def apply(id: String, `type`: PlatformDeviceType): PlatformDevice = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformDevice]
   }
   
-  @scala.inline
-  implicit class PlatformDeviceMutableBuilder[Self <: PlatformDevice] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformDevice](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PlatformDeviceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PlatformDeviceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

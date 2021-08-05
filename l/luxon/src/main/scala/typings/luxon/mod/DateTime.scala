@@ -277,69 +277,46 @@ object DateTime {
   @js.native
   val TIME_WITH_SHORT_OFFSET: DateTimeFormatOptions = js.native
   
-  @scala.inline
-  def fromFormat(text: String, format: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[DateTime]
-  @scala.inline
-  def fromFormat(text: String, format: String, opts: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromFormat(text: String, format: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromFormat(text: String, format: String, opts: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormat")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @scala.inline
-  def fromFormatExplain(text: String, format: String): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormatExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
-  @scala.inline
-  def fromFormatExplain(text: String, format: String, opts: DateTimeOptions): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormatExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
+  inline def fromFormatExplain(text: String, format: String): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormatExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
+  inline def fromFormatExplain(text: String, format: String, opts: DateTimeOptions): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFormatExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
   
-  @scala.inline
-  def fromHTTP(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
-  @scala.inline
-  def fromHTTP(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromHTTP(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def fromHTTP(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTP")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @scala.inline
-  def fromISO(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
-  @scala.inline
-  def fromISO(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromISO(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def fromISO(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @scala.inline
-  def fromJSDate(date: Date): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any]).asInstanceOf[DateTime]
-  @scala.inline
-  def fromJSDate(date: Date, options: DateTimeJSOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromJSDate(date: Date): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def fromJSDate(date: Date, options: DateTimeJSOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSDate")(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @scala.inline
-  def fromMillis(ms: Double): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(ms.asInstanceOf[js.Any]).asInstanceOf[DateTime]
-  @scala.inline
-  def fromMillis(ms: Double, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(ms.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromMillis(ms: Double): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(ms.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def fromMillis(ms: Double, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(ms.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @scala.inline
-  def fromObject(obj: DateObject): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def fromObject(obj: DateObject): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
-  @scala.inline
-  def fromRFC2822(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
-  @scala.inline
-  def fromRFC2822(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromRFC2822(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def fromRFC2822(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRFC2822")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @scala.inline
-  def fromSQL(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
-  @scala.inline
-  def fromSQL(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromSQL(text: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def fromSQL(text: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSQL")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @scala.inline
-  def fromSeconds(seconds: Double): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[DateTime]
-  @scala.inline
-  def fromSeconds(seconds: Double, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromSeconds(seconds: Double): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def fromSeconds(seconds: Double, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
   /**
     * @deprecated since 0.3.0. Use fromFormat instead
     */
-  @scala.inline
-  def fromString(text: String, format: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[DateTime]
-  @scala.inline
-  def fromString(text: String, format: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromString(text: String, format: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def fromString(text: String, format: String, options: DateTimeOptions): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
   /**
     * @deprecated 0.3.0. Use fromFormatExplain instead
     */
-  @scala.inline
-  def fromStringExplain(text: String, format: String): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
-  @scala.inline
-  def fromStringExplain(text: String, format: String, options: DateTimeOptions): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
+  inline def fromStringExplain(text: String, format: String): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
+  inline def fromStringExplain(text: String, format: String, options: DateTimeOptions): ExplainedFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStringExplain")(text.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExplainedFormat]
   
   /**
     * Create an invalid DateTime.
@@ -347,16 +324,12 @@ object DateTime {
     * Should not contain parameters or anything else data-dependent
     * @param [explanation=null] - longer explanation, may include parameters and other useful debugging information
     */
-  @scala.inline
-  def invalid(reason: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[DateTime]
-  @scala.inline
-  def invalid(reason: String, explanation: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[DateTime]
+  inline def invalid(reason: String): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def invalid(reason: String, explanation: String): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @scala.inline
-  def isDateTime(o: js.Any): /* is luxon.luxon.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon.DateTime */ Boolean]
+  inline def isDateTime(o: js.Any): /* is luxon.luxon.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon.DateTime */ Boolean]
   
-  @scala.inline
-  def local(
+  inline def local(
     year: js.UndefOr[Double],
     month: js.UndefOr[Double],
     day: js.UndefOr[Double],
@@ -366,18 +339,13 @@ object DateTime {
     millisecond: js.UndefOr[Double]
   ): DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("local")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any])).asInstanceOf[DateTime]
   
-  @scala.inline
-  def max(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[Unit]
-  @scala.inline
-  def max(dateTimes: DateTime*): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dateTimes.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def max(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("max")().asInstanceOf[Unit]
+  inline def max(dateTimes: DateTime*): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dateTimes.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
-  @scala.inline
-  def min(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[Unit]
-  @scala.inline
-  def min(dateTimes: DateTime*): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dateTimes.asInstanceOf[js.Any]).asInstanceOf[DateTime]
+  inline def min(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("min")().asInstanceOf[Unit]
+  inline def min(dateTimes: DateTime*): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dateTimes.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
-  @scala.inline
-  def utc(
+  inline def utc(
     year: js.UndefOr[Double],
     month: js.UndefOr[Double],
     day: js.UndefOr[Double],

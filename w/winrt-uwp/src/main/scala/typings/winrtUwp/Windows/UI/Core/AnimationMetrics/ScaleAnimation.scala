@@ -40,8 +40,7 @@ trait ScaleAnimation extends StObject {
 }
 object ScaleAnimation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     control1: Point,
     control2: Point,
     delay: Double,
@@ -58,37 +57,26 @@ object ScaleAnimation {
     __obj.asInstanceOf[ScaleAnimation]
   }
   
-  @scala.inline
-  implicit class ScaleAnimationMutableBuilder[Self <: ScaleAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleAnimation](x: Self) {
     
-    @scala.inline
-    def setControl1(value: Point): Self = StObject.set(x, "control1", value.asInstanceOf[js.Any])
+    inline def setControl1(value: Point): Self = StObject.set(x, "control1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControl2(value: Point): Self = StObject.set(x, "control2", value.asInstanceOf[js.Any])
+    inline def setControl2(value: Point): Self = StObject.set(x, "control2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalScaleX(value: Double): Self = StObject.set(x, "finalScaleX", value.asInstanceOf[js.Any])
+    inline def setFinalScaleX(value: Double): Self = StObject.set(x, "finalScaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalScaleY(value: Double): Self = StObject.set(x, "finalScaleY", value.asInstanceOf[js.Any])
+    inline def setFinalScaleY(value: Double): Self = StObject.set(x, "finalScaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialScaleX(value: Double): Self = StObject.set(x, "initialScaleX", value.asInstanceOf[js.Any])
+    inline def setInitialScaleX(value: Double): Self = StObject.set(x, "initialScaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialScaleY(value: Double): Self = StObject.set(x, "initialScaleY", value.asInstanceOf[js.Any])
+    inline def setInitialScaleY(value: Double): Self = StObject.set(x, "initialScaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedOrigin(value: Point): Self = StObject.set(x, "normalizedOrigin", value.asInstanceOf[js.Any])
+    inline def setNormalizedOrigin(value: Point): Self = StObject.set(x, "normalizedOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PropertyAnimationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropertyAnimationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

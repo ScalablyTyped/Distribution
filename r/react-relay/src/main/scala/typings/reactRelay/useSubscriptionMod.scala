@@ -13,14 +13,12 @@ object useSubscriptionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useSubscription[TSubscriptionPayload /* <: OperationType */](
+  inline def useSubscription[TSubscriptionPayload /* <: OperationType */](
     // The actual subtype of OperationType is required to allow for type inference inside GraphQLSubscriptionConfig.s
   // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscriptionPayload]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useSubscription")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def useSubscription[TSubscriptionPayload /* <: OperationType */](
+  inline def useSubscription[TSubscriptionPayload /* <: OperationType */](
     // The actual subtype of OperationType is required to allow for type inference inside GraphQLSubscriptionConfig.s
   // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscriptionPayload],

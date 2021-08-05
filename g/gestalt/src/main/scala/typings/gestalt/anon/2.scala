@@ -14,8 +14,7 @@ trait `2` extends StObject {
 }
 object `2` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     event: typings.react.mod.SyntheticEvent[KeyboardEvent[HTMLInputElement], typings.std.Event],
     value: String
   ): `2` = {
@@ -23,13 +22,10 @@ object `2` {
     __obj.asInstanceOf[`2`]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+  extension [Self <: `2`](x: Self) {
     
-    @scala.inline
-    def setEvent(value: typings.react.mod.SyntheticEvent[KeyboardEvent[HTMLInputElement], typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: typings.react.mod.SyntheticEvent[KeyboardEvent[HTMLInputElement], typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

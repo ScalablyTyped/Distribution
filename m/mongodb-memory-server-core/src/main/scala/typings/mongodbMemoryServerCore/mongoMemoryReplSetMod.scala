@@ -109,44 +109,32 @@ object mongoMemoryReplSetMod {
   }
   object MongoMemoryReplSetConfigSettingsT {
     
-    @scala.inline
-    def apply(): MongoMemoryReplSetConfigSettingsT = {
+    inline def apply(): MongoMemoryReplSetConfigSettingsT = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MongoMemoryReplSetConfigSettingsT]
     }
     
-    @scala.inline
-    implicit class MongoMemoryReplSetConfigSettingsTMutableBuilder[Self <: MongoMemoryReplSetConfigSettingsT] (val x: Self) extends AnyVal {
+    extension [Self <: MongoMemoryReplSetConfigSettingsT](x: Self) {
       
-      @scala.inline
-      def setCatchUpTimeoutMillis(value: Double): Self = StObject.set(x, "catchUpTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setCatchUpTimeoutMillis(value: Double): Self = StObject.set(x, "catchUpTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatchUpTimeoutMillisUndefined: Self = StObject.set(x, "catchUpTimeoutMillis", js.undefined)
+      inline def setCatchUpTimeoutMillisUndefined: Self = StObject.set(x, "catchUpTimeoutMillis", js.undefined)
       
-      @scala.inline
-      def setChainingAllowed(value: Boolean): Self = StObject.set(x, "chainingAllowed", value.asInstanceOf[js.Any])
+      inline def setChainingAllowed(value: Boolean): Self = StObject.set(x, "chainingAllowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChainingAllowedUndefined: Self = StObject.set(x, "chainingAllowed", js.undefined)
+      inline def setChainingAllowedUndefined: Self = StObject.set(x, "chainingAllowed", js.undefined)
       
-      @scala.inline
-      def setElectionTimeoutMillis(value: Double): Self = StObject.set(x, "electionTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setElectionTimeoutMillis(value: Double): Self = StObject.set(x, "electionTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectionTimeoutMillisUndefined: Self = StObject.set(x, "electionTimeoutMillis", js.undefined)
+      inline def setElectionTimeoutMillisUndefined: Self = StObject.set(x, "electionTimeoutMillis", js.undefined)
       
-      @scala.inline
-      def setHeartbeatIntervalMillis(value: Double): Self = StObject.set(x, "heartbeatIntervalMillis", value.asInstanceOf[js.Any])
+      inline def setHeartbeatIntervalMillis(value: Double): Self = StObject.set(x, "heartbeatIntervalMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatIntervalMillisUndefined: Self = StObject.set(x, "heartbeatIntervalMillis", js.undefined)
+      inline def setHeartbeatIntervalMillisUndefined: Self = StObject.set(x, "heartbeatIntervalMillis", js.undefined)
       
-      @scala.inline
-      def setHeartbeatTimeoutSecs(value: Double): Self = StObject.set(x, "heartbeatTimeoutSecs", value.asInstanceOf[js.Any])
+      inline def setHeartbeatTimeoutSecs(value: Double): Self = StObject.set(x, "heartbeatTimeoutSecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatTimeoutSecsUndefined: Self = StObject.set(x, "heartbeatTimeoutSecs", js.undefined)
+      inline def setHeartbeatTimeoutSecsUndefined: Self = StObject.set(x, "heartbeatTimeoutSecs", js.undefined)
     }
   }
   
@@ -166,41 +154,30 @@ object mongoMemoryReplSetMod {
   }
   object MongoMemoryReplSetOptsT {
     
-    @scala.inline
-    def apply(): MongoMemoryReplSetOptsT = {
+    inline def apply(): MongoMemoryReplSetOptsT = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MongoMemoryReplSetOptsT]
     }
     
-    @scala.inline
-    implicit class MongoMemoryReplSetOptsTMutableBuilder[Self <: MongoMemoryReplSetOptsT] (val x: Self) extends AnyVal {
+    extension [Self <: MongoMemoryReplSetOptsT](x: Self) {
       
-      @scala.inline
-      def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+      inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+      inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
       
-      @scala.inline
-      def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      @scala.inline
-      def setInstanceOpts(value: js.Array[MongoMemoryInstancePropBaseT]): Self = StObject.set(x, "instanceOpts", value.asInstanceOf[js.Any])
+      inline def setInstanceOpts(value: js.Array[MongoMemoryInstancePropBaseT]): Self = StObject.set(x, "instanceOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceOptsUndefined: Self = StObject.set(x, "instanceOpts", js.undefined)
+      inline def setInstanceOptsUndefined: Self = StObject.set(x, "instanceOpts", js.undefined)
       
-      @scala.inline
-      def setInstanceOptsVarargs(value: MongoMemoryInstancePropBaseT*): Self = StObject.set(x, "instanceOpts", js.Array(value :_*))
+      inline def setInstanceOptsVarargs(value: MongoMemoryInstancePropBaseT*): Self = StObject.set(x, "instanceOpts", js.Array(value :_*))
       
-      @scala.inline
-      def setReplSet(value: ReplSetOpts): Self = StObject.set(x, "replSet", value.asInstanceOf[js.Any])
+      inline def setReplSet(value: ReplSetOpts): Self = StObject.set(x, "replSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplSetUndefined: Self = StObject.set(x, "replSet", js.undefined)
+      inline def setReplSetUndefined: Self = StObject.set(x, "replSet", js.undefined)
     }
   }
   
@@ -268,77 +245,54 @@ object mongoMemoryReplSetMod {
   }
   object ReplSetOpts {
     
-    @scala.inline
-    def apply(): ReplSetOpts = {
+    inline def apply(): ReplSetOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplSetOpts]
     }
     
-    @scala.inline
-    implicit class ReplSetOptsMutableBuilder[Self <: ReplSetOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ReplSetOpts](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setAuth(value: Boolean): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Boolean): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setConfigSettings(value: MongoMemoryReplSetConfigSettingsT): Self = StObject.set(x, "configSettings", value.asInstanceOf[js.Any])
+      inline def setConfigSettings(value: MongoMemoryReplSetConfigSettingsT): Self = StObject.set(x, "configSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigSettingsUndefined: Self = StObject.set(x, "configSettings", js.undefined)
+      inline def setConfigSettingsUndefined: Self = StObject.set(x, "configSettings", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
+      inline def setDbName(value: String): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
+      inline def setDbNameUndefined: Self = StObject.set(x, "dbName", js.undefined)
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOplogSize(value: Double): Self = StObject.set(x, "oplogSize", value.asInstanceOf[js.Any])
+      inline def setOplogSize(value: Double): Self = StObject.set(x, "oplogSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOplogSizeUndefined: Self = StObject.set(x, "oplogSize", js.undefined)
+      inline def setOplogSizeUndefined: Self = StObject.set(x, "oplogSize", js.undefined)
       
-      @scala.inline
-      def setSpawn(value: SpawnOptions): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
+      inline def setSpawn(value: SpawnOptions): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpawnUndefined: Self = StObject.set(x, "spawn", js.undefined)
+      inline def setSpawnUndefined: Self = StObject.set(x, "spawn", js.undefined)
       
-      @scala.inline
-      def setStorageEngine(value: StorageEngineT): Self = StObject.set(x, "storageEngine", value.asInstanceOf[js.Any])
+      inline def setStorageEngine(value: StorageEngineT): Self = StObject.set(x, "storageEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageEngineUndefined: Self = StObject.set(x, "storageEngine", js.undefined)
+      inline def setStorageEngineUndefined: Self = StObject.set(x, "storageEngine", js.undefined)
     }
   }
 }

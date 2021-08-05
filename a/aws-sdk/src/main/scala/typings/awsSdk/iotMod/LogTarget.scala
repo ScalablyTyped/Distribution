@@ -18,22 +18,17 @@ trait LogTarget extends StObject {
 }
 object LogTarget {
   
-  @scala.inline
-  def apply(targetType: LogTargetType): LogTarget = {
+  inline def apply(targetType: LogTargetType): LogTarget = {
     val __obj = js.Dynamic.literal(targetType = targetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogTarget]
   }
   
-  @scala.inline
-  implicit class LogTargetMutableBuilder[Self <: LogTarget] (val x: Self) extends AnyVal {
+  extension [Self <: LogTarget](x: Self) {
     
-    @scala.inline
-    def setTargetName(value: LogTargetName): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
+    inline def setTargetName(value: LogTargetName): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNameUndefined: Self = StObject.set(x, "targetName", js.undefined)
+    inline def setTargetNameUndefined: Self = StObject.set(x, "targetName", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: LogTargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: LogTargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
   }
 }

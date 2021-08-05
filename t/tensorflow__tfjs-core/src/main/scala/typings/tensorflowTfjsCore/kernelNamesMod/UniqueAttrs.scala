@@ -10,16 +10,13 @@ trait UniqueAttrs extends StObject {
 }
 object UniqueAttrs {
   
-  @scala.inline
-  def apply(axis: Double): UniqueAttrs = {
+  inline def apply(axis: Double): UniqueAttrs = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any])
     __obj.asInstanceOf[UniqueAttrs]
   }
   
-  @scala.inline
-  implicit class UniqueAttrsMutableBuilder[Self <: UniqueAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: UniqueAttrs](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
   }
 }

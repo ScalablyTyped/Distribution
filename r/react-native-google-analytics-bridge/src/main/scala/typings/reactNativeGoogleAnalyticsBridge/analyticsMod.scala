@@ -41,26 +41,20 @@ object analyticsMod {
   }
   object EventMetadata {
     
-    @scala.inline
-    def apply(): EventMetadata = {
+    inline def apply(): EventMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventMetadata]
     }
     
-    @scala.inline
-    implicit class EventMetadataMutableBuilder[Self <: EventMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: EventMetadata](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -86,74 +80,52 @@ object analyticsMod {
   }
   object HitPayload {
     
-    @scala.inline
-    def apply(): HitPayload = {
+    inline def apply(): HitPayload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HitPayload]
     }
     
-    @scala.inline
-    implicit class HitPayloadMutableBuilder[Self <: HitPayload] (val x: Self) extends AnyVal {
+    extension [Self <: HitPayload](x: Self) {
       
-      @scala.inline
-      def setCustomDimensions(value: CustomDimensionsByIndex | CustomDimensionsByField): Self = StObject.set(x, "customDimensions", value.asInstanceOf[js.Any])
+      inline def setCustomDimensions(value: CustomDimensionsByIndex | CustomDimensionsByField): Self = StObject.set(x, "customDimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDimensionsUndefined: Self = StObject.set(x, "customDimensions", js.undefined)
+      inline def setCustomDimensionsUndefined: Self = StObject.set(x, "customDimensions", js.undefined)
       
-      @scala.inline
-      def setCustomMetrics(value: CustomMetrics): Self = StObject.set(x, "customMetrics", value.asInstanceOf[js.Any])
+      inline def setCustomMetrics(value: CustomMetrics): Self = StObject.set(x, "customMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomMetricsUndefined: Self = StObject.set(x, "customMetrics", js.undefined)
+      inline def setCustomMetricsUndefined: Self = StObject.set(x, "customMetrics", js.undefined)
       
-      @scala.inline
-      def setImpressionList(value: String): Self = StObject.set(x, "impressionList", value.asInstanceOf[js.Any])
+      inline def setImpressionList(value: String): Self = StObject.set(x, "impressionList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImpressionListUndefined: Self = StObject.set(x, "impressionList", js.undefined)
+      inline def setImpressionListUndefined: Self = StObject.set(x, "impressionList", js.undefined)
       
-      @scala.inline
-      def setImpressionProducts(value: js.Array[Product]): Self = StObject.set(x, "impressionProducts", value.asInstanceOf[js.Any])
+      inline def setImpressionProducts(value: js.Array[Product]): Self = StObject.set(x, "impressionProducts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImpressionProductsUndefined: Self = StObject.set(x, "impressionProducts", js.undefined)
+      inline def setImpressionProductsUndefined: Self = StObject.set(x, "impressionProducts", js.undefined)
       
-      @scala.inline
-      def setImpressionProductsVarargs(value: Product*): Self = StObject.set(x, "impressionProducts", js.Array(value :_*))
+      inline def setImpressionProductsVarargs(value: Product*): Self = StObject.set(x, "impressionProducts", js.Array(value :_*))
       
-      @scala.inline
-      def setImpressionSource(value: String): Self = StObject.set(x, "impressionSource", value.asInstanceOf[js.Any])
+      inline def setImpressionSource(value: String): Self = StObject.set(x, "impressionSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImpressionSourceUndefined: Self = StObject.set(x, "impressionSource", js.undefined)
+      inline def setImpressionSourceUndefined: Self = StObject.set(x, "impressionSource", js.undefined)
       
-      @scala.inline
-      def setProductAction(value: ProductAction): Self = StObject.set(x, "productAction", value.asInstanceOf[js.Any])
+      inline def setProductAction(value: ProductAction): Self = StObject.set(x, "productAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductActionUndefined: Self = StObject.set(x, "productAction", js.undefined)
+      inline def setProductActionUndefined: Self = StObject.set(x, "productAction", js.undefined)
       
-      @scala.inline
-      def setProducts(value: js.Array[Product]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+      inline def setProducts(value: js.Array[Product]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
+      inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
       
-      @scala.inline
-      def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value :_*))
+      inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "products", js.Array(value :_*))
       
-      @scala.inline
-      def setSession(value: SessionState): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: SessionState): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
       
-      @scala.inline
-      def setUtmCampaignUrl(value: String): Self = StObject.set(x, "utmCampaignUrl", value.asInstanceOf[js.Any])
+      inline def setUtmCampaignUrl(value: String): Self = StObject.set(x, "utmCampaignUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtmCampaignUrlUndefined: Self = StObject.set(x, "utmCampaignUrl", js.undefined)
+      inline def setUtmCampaignUrlUndefined: Self = StObject.set(x, "utmCampaignUrl", js.undefined)
     }
   }
   
@@ -165,23 +137,18 @@ object analyticsMod {
   }
   object TimingMetadata {
     
-    @scala.inline
-    def apply(name: String): TimingMetadata = {
+    inline def apply(name: String): TimingMetadata = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimingMetadata]
     }
     
-    @scala.inline
-    implicit class TimingMetadataMutableBuilder[Self <: TimingMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: TimingMetadata](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

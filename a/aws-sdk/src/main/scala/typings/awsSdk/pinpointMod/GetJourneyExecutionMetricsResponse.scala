@@ -10,16 +10,13 @@ trait GetJourneyExecutionMetricsResponse extends StObject {
 }
 object GetJourneyExecutionMetricsResponse {
   
-  @scala.inline
-  def apply(JourneyExecutionMetricsResponse: JourneyExecutionMetricsResponse): GetJourneyExecutionMetricsResponse = {
+  inline def apply(JourneyExecutionMetricsResponse: JourneyExecutionMetricsResponse): GetJourneyExecutionMetricsResponse = {
     val __obj = js.Dynamic.literal(JourneyExecutionMetricsResponse = JourneyExecutionMetricsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetJourneyExecutionMetricsResponse]
   }
   
-  @scala.inline
-  implicit class GetJourneyExecutionMetricsResponseMutableBuilder[Self <: GetJourneyExecutionMetricsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetJourneyExecutionMetricsResponse](x: Self) {
     
-    @scala.inline
-    def setJourneyExecutionMetricsResponse(value: JourneyExecutionMetricsResponse): Self = StObject.set(x, "JourneyExecutionMetricsResponse", value.asInstanceOf[js.Any])
+    inline def setJourneyExecutionMetricsResponse(value: JourneyExecutionMetricsResponse): Self = StObject.set(x, "JourneyExecutionMetricsResponse", value.asInstanceOf[js.Any])
   }
 }

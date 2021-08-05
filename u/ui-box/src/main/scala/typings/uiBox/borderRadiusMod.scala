@@ -18,8 +18,7 @@ object borderRadiusMod {
     @JSImport("ui-box/dist/src/enhancers/border-radius", "propAliases.borderRadius")
     @js.native
     def borderRadius: js.Array[String] = js.native
-    @scala.inline
-    def borderRadius_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderRadius")(x.asInstanceOf[js.Any])
+    inline def borderRadius_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderRadius")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ui-box/dist/src/enhancers/border-radius", "propEnhancers")

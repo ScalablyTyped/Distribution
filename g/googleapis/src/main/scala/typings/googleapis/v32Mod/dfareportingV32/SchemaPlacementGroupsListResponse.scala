@@ -27,34 +27,25 @@ trait SchemaPlacementGroupsListResponse extends StObject {
 }
 object SchemaPlacementGroupsListResponse {
   
-  @scala.inline
-  def apply(): SchemaPlacementGroupsListResponse = {
+  inline def apply(): SchemaPlacementGroupsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlacementGroupsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPlacementGroupsListResponseMutableBuilder[Self <: SchemaPlacementGroupsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlacementGroupsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPlacementGroups(value: js.Array[SchemaPlacementGroup]): Self = StObject.set(x, "placementGroups", value.asInstanceOf[js.Any])
+    inline def setPlacementGroups(value: js.Array[SchemaPlacementGroup]): Self = StObject.set(x, "placementGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementGroupsUndefined: Self = StObject.set(x, "placementGroups", js.undefined)
+    inline def setPlacementGroupsUndefined: Self = StObject.set(x, "placementGroups", js.undefined)
     
-    @scala.inline
-    def setPlacementGroupsVarargs(value: SchemaPlacementGroup*): Self = StObject.set(x, "placementGroups", js.Array(value :_*))
+    inline def setPlacementGroupsVarargs(value: SchemaPlacementGroup*): Self = StObject.set(x, "placementGroups", js.Array(value :_*))
   }
 }

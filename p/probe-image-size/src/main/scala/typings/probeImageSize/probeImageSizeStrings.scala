@@ -8,6 +8,5 @@ object probeImageSizeStrings {
   
   @js.native
   sealed trait ECONTENT extends StObject
-  @scala.inline
-  def ECONTENT: ECONTENT = "ECONTENT".asInstanceOf[ECONTENT]
+  inline def ECONTENT: ECONTENT = "ECONTENT".asInstanceOf[ECONTENT]
 }

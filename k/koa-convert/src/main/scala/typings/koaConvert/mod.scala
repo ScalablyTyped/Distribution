@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(mw: js.Function2[/* context */ Context, /* next */ Next, Generator[js.Any, js.Any, js.Any]]): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(mw.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(mw: js.Function2[/* context */ Context, /* next */ Next, Generator[js.Any, js.Any, js.Any]]): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(mw.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-convert", JSImport.Namespace)
   @js.native

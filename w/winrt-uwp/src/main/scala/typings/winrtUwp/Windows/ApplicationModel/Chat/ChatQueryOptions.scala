@@ -12,16 +12,13 @@ trait ChatQueryOptions extends StObject {
 }
 object ChatQueryOptions {
   
-  @scala.inline
-  def apply(searchString: String): ChatQueryOptions = {
+  inline def apply(searchString: String): ChatQueryOptions = {
     val __obj = js.Dynamic.literal(searchString = searchString.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatQueryOptions]
   }
   
-  @scala.inline
-  implicit class ChatQueryOptionsMutableBuilder[Self <: ChatQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChatQueryOptions](x: Self) {
     
-    @scala.inline
-    def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
+    inline def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
   }
 }

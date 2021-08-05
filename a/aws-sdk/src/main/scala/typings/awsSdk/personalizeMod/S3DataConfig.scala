@@ -18,22 +18,17 @@ trait S3DataConfig extends StObject {
 }
 object S3DataConfig {
   
-  @scala.inline
-  def apply(path: S3Location): S3DataConfig = {
+  inline def apply(path: S3Location): S3DataConfig = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3DataConfig]
   }
   
-  @scala.inline
-  implicit class S3DataConfigMutableBuilder[Self <: S3DataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: S3DataConfig](x: Self) {
     
-    @scala.inline
-    def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     
-    @scala.inline
-    def setPath(value: S3Location): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: S3Location): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait GetResourcePolicyOutput extends StObject {
 }
 object GetResourcePolicyOutput {
   
-  @scala.inline
-  def apply(): GetResourcePolicyOutput = {
+  inline def apply(): GetResourcePolicyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourcePolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetResourcePolicyOutputMutableBuilder[Self <: GetResourcePolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourcePolicyOutput](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: NonEmptyString): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: NonEmptyString): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait SchemaAddNoteRequest extends StObject {
 }
 object SchemaAddNoteRequest {
   
-  @scala.inline
-  def apply(): SchemaAddNoteRequest = {
+  inline def apply(): SchemaAddNoteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddNoteRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAddNoteRequestMutableBuilder[Self <: SchemaAddNoteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddNoteRequest](x: Self) {
     
-    @scala.inline
-    def setNote(value: SchemaNote): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: SchemaNote): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
   }
 }

@@ -16,11 +16,9 @@ object mod {
   @js.native
   val PARAM_KEY: /* "a11y" */ String = js.native
   
-  @scala.inline
-  def highlightObject(color: String): BoxShadow = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightObject")(color.asInstanceOf[js.Any]).asInstanceOf[BoxShadow]
+  inline def highlightObject(color: String): BoxShadow = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightObject")(color.asInstanceOf[js.Any]).asInstanceOf[BoxShadow]
   
-  @scala.inline
-  def highlightStyle(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightStyle")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def highlightStyle(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightStyle")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@storybook/addon-a11y", "withA11y")
   @js.native

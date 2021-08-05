@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.XMLFileAdapterObject")
 @js.native
-class XMLFileAdapterObject protected ()
+/* private */ class XMLFileAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.XMLFileAdapterObject {
   
   /* CompleteClass */
   var FileURL: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.XMLFileAdapterObject_typekey")
   var InfoPathDotXMLFileAdapterObject_typekey: typings.activexInfopath.InfoPath.XMLFileAdapterObject = js.native
   

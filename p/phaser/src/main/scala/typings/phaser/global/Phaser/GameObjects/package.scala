@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param gameObject The initial GameObject.
   * @param config The config to build the GameObject with.
   */
-@scala.inline
-def BuildGameObject(
+inline def BuildGameObject(
   scene: typings.phaser.Phaser.Scene,
   gameObject: typings.phaser.Phaser.GameObjects.GameObject,
   config: typings.phaser.Phaser.Types.GameObjects.GameObjectConfig
@@ -23,5 +22,4 @@ def BuildGameObject(
   * @param sprite The sprite to add an Animation component to.
   * @param config The animation config.
   */
-@scala.inline
-def BuildGameObjectAnimation(sprite: typings.phaser.Phaser.GameObjects.Sprite, config: js.Object): typings.phaser.Phaser.GameObjects.Sprite = (typings.phaser.global.Phaser.GameObjects.^.asInstanceOf[js.Dynamic].applyDynamic("BuildGameObjectAnimation")(sprite.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.GameObjects.Sprite]
+inline def BuildGameObjectAnimation(sprite: typings.phaser.Phaser.GameObjects.Sprite, config: js.Object): typings.phaser.Phaser.GameObjects.Sprite = (typings.phaser.global.Phaser.GameObjects.^.asInstanceOf[js.Dynamic].applyDynamic("BuildGameObjectAnimation")(sprite.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.GameObjects.Sprite]

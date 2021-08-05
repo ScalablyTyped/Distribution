@@ -18,19 +18,15 @@ trait GetConfigRequest extends StObject {
 }
 object GetConfigRequest {
   
-  @scala.inline
-  def apply(configId: String, configType: ConfigCapabilityType): GetConfigRequest = {
+  inline def apply(configId: String, configType: ConfigCapabilityType): GetConfigRequest = {
     val __obj = js.Dynamic.literal(configId = configId.asInstanceOf[js.Any], configType = configType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConfigRequest]
   }
   
-  @scala.inline
-  implicit class GetConfigRequestMutableBuilder[Self <: GetConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConfigRequest](x: Self) {
     
-    @scala.inline
-    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
+    inline def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
   }
 }

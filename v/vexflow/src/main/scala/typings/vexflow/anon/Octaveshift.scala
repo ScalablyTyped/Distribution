@@ -10,19 +10,15 @@ trait Octaveshift extends StObject {
 }
 object Octaveshift {
   
-  @scala.inline
-  def apply(): Octaveshift = {
+  inline def apply(): Octaveshift = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Octaveshift]
   }
   
-  @scala.inline
-  implicit class OctaveshiftMutableBuilder[Self <: Octaveshift] (val x: Self) extends AnyVal {
+  extension [Self <: Octaveshift](x: Self) {
     
-    @scala.inline
-    def setOctave_shift(value: Double): Self = StObject.set(x, "octave_shift", value.asInstanceOf[js.Any])
+    inline def setOctave_shift(value: Double): Self = StObject.set(x, "octave_shift", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOctave_shiftUndefined: Self = StObject.set(x, "octave_shift", js.undefined)
+    inline def setOctave_shiftUndefined: Self = StObject.set(x, "octave_shift", js.undefined)
   }
 }

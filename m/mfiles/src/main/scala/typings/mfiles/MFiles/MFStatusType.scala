@@ -41,51 +41,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFStatusType extends StObject
 object MFStatusType {
   
-  @scala.inline
-  def CheckedOut: `0` = 0.asInstanceOf[`0`]
+  inline def CheckedOut: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def CheckedOutAt: `2` = 2.asInstanceOf[`2`]
+  inline def CheckedOutAt: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def CheckedOutTo: `1` = 1.asInstanceOf[`1`]
+  inline def CheckedOutTo: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Deleted: `5` = 5.asInstanceOf[`5`]
+  inline def Deleted: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ExtID: `8` = 8.asInstanceOf[`8`]
+  inline def ExtID: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def IsLatestCheckedInVersion: `7` = 7.asInstanceOf[`7`]
+  inline def IsLatestCheckedInVersion: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def LatestOrSpecific: `9` = 9.asInstanceOf[`9`]
+  inline def LatestOrSpecific: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def ObjectFlags: `11` = 11.asInstanceOf[`11`]
+  inline def ObjectFlags: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def ObjectID: `3` = 3.asInstanceOf[`3`]
+  inline def ObjectID: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ObjectTypeAndID: `10` = 10.asInstanceOf[`10`]
+  inline def ObjectTypeAndID: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def ObjectTypeID: `6` = 6.asInstanceOf[`6`]
+  inline def ObjectTypeID: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ObjectVersionID: `4` = 4.asInstanceOf[`4`]
+  inline def ObjectVersionID: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def OriginalObjectID: `14` = 14.asInstanceOf[`14`]
+  inline def OriginalObjectID: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def OriginalObjectIDSegment: `15` = 15.asInstanceOf[`15`]
+  inline def OriginalObjectIDSegment: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def OriginalObjectType: `13` = 13.asInstanceOf[`13`]
+  inline def OriginalObjectType: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def OriginalVaultGUID: `12` = 12.asInstanceOf[`12`]
+  inline def OriginalVaultGUID: `12` = 12.asInstanceOf[`12`]
 }

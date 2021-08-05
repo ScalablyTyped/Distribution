@@ -16,6 +16,5 @@ object DebugUtils {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def logBones(skeleton: typings.phaser.spine.Skeleton): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logBones")(skeleton.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logBones(skeleton: typings.phaser.spine.Skeleton): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logBones")(skeleton.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

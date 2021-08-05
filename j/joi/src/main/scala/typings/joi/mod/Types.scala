@@ -21,39 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Types extends StObject
 object Types {
   
-  @scala.inline
-  def alternatives: typings.joi.joiStrings.alternatives = "alternatives".asInstanceOf[typings.joi.joiStrings.alternatives]
+  inline def alternatives: typings.joi.joiStrings.alternatives = "alternatives".asInstanceOf[typings.joi.joiStrings.alternatives]
   
-  @scala.inline
-  def any: typings.joi.joiStrings.any = "any".asInstanceOf[typings.joi.joiStrings.any]
+  inline def any: typings.joi.joiStrings.any = "any".asInstanceOf[typings.joi.joiStrings.any]
   
-  @scala.inline
-  def array: typings.joi.joiStrings.array = "array".asInstanceOf[typings.joi.joiStrings.array]
+  inline def array: typings.joi.joiStrings.array = "array".asInstanceOf[typings.joi.joiStrings.array]
   
-  @scala.inline
-  def binary: typings.joi.joiStrings.binary = "binary".asInstanceOf[typings.joi.joiStrings.binary]
+  inline def binary: typings.joi.joiStrings.binary = "binary".asInstanceOf[typings.joi.joiStrings.binary]
   
-  @scala.inline
-  def boolean: typings.joi.joiStrings.boolean = "boolean".asInstanceOf[typings.joi.joiStrings.boolean]
+  inline def boolean: typings.joi.joiStrings.boolean = "boolean".asInstanceOf[typings.joi.joiStrings.boolean]
   
-  @scala.inline
-  def date: typings.joi.joiStrings.date = "date".asInstanceOf[typings.joi.joiStrings.date]
+  inline def date: typings.joi.joiStrings.date = "date".asInstanceOf[typings.joi.joiStrings.date]
   
-  @scala.inline
-  def function: typings.joi.joiStrings.function = "function".asInstanceOf[typings.joi.joiStrings.function]
+  inline def function: typings.joi.joiStrings.function = "function".asInstanceOf[typings.joi.joiStrings.function]
   
-  @scala.inline
-  def link: typings.joi.joiStrings.link = "link".asInstanceOf[typings.joi.joiStrings.link]
+  inline def link: typings.joi.joiStrings.link = "link".asInstanceOf[typings.joi.joiStrings.link]
   
-  @scala.inline
-  def number: typings.joi.joiStrings.number = "number".asInstanceOf[typings.joi.joiStrings.number]
+  inline def number: typings.joi.joiStrings.number = "number".asInstanceOf[typings.joi.joiStrings.number]
   
-  @scala.inline
-  def `object`: typings.joi.joiStrings.`object` = "object".asInstanceOf[typings.joi.joiStrings.`object`]
+  inline def `object`: typings.joi.joiStrings.`object` = "object".asInstanceOf[typings.joi.joiStrings.`object`]
   
-  @scala.inline
-  def string: typings.joi.joiStrings.string = "string".asInstanceOf[typings.joi.joiStrings.string]
+  inline def string: typings.joi.joiStrings.string = "string".asInstanceOf[typings.joi.joiStrings.string]
   
-  @scala.inline
-  def symbol: typings.joi.joiStrings.symbol = "symbol".asInstanceOf[typings.joi.joiStrings.symbol]
+  inline def symbol: typings.joi.joiStrings.symbol = "symbol".asInstanceOf[typings.joi.joiStrings.symbol]
 }

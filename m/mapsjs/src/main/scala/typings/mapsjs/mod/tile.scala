@@ -670,8 +670,7 @@ object tile {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def factoryQuadFromKey(key: String): quad = ^.asInstanceOf[js.Dynamic].applyDynamic("factoryQuadFromKey")(key.asInstanceOf[js.Any]).asInstanceOf[quad]
+    inline def factoryQuadFromKey(key: String): quad = ^.asInstanceOf[js.Dynamic].applyDynamic("factoryQuadFromKey")(key.asInstanceOf[js.Any]).asInstanceOf[quad]
   }
   
   @JSImport("mapsjs", "tile.renderer")

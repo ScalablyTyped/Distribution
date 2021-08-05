@@ -17,19 +17,15 @@ trait SchemaNavigationInfo extends StObject {
 }
 object SchemaNavigationInfo {
   
-  @scala.inline
-  def apply(): SchemaNavigationInfo = {
+  inline def apply(): SchemaNavigationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNavigationInfo]
   }
   
-  @scala.inline
-  implicit class SchemaNavigationInfoMutableBuilder[Self <: SchemaNavigationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNavigationInfo](x: Self) {
     
-    @scala.inline
-    def setEnableForcedRedirect(value: Boolean): Self = StObject.set(x, "enableForcedRedirect", value.asInstanceOf[js.Any])
+    inline def setEnableForcedRedirect(value: Boolean): Self = StObject.set(x, "enableForcedRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableForcedRedirectUndefined: Self = StObject.set(x, "enableForcedRedirect", js.undefined)
+    inline def setEnableForcedRedirectUndefined: Self = StObject.set(x, "enableForcedRedirect", js.undefined)
   }
 }

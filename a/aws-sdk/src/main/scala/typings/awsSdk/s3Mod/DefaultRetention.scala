@@ -23,31 +23,23 @@ trait DefaultRetention extends StObject {
 }
 object DefaultRetention {
   
-  @scala.inline
-  def apply(): DefaultRetention = {
+  inline def apply(): DefaultRetention = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultRetention]
   }
   
-  @scala.inline
-  implicit class DefaultRetentionMutableBuilder[Self <: DefaultRetention] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultRetention](x: Self) {
     
-    @scala.inline
-    def setDays(value: Days): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+    inline def setDays(value: Days): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysUndefined: Self = StObject.set(x, "Days", js.undefined)
+    inline def setDaysUndefined: Self = StObject.set(x, "Days", js.undefined)
     
-    @scala.inline
-    def setMode(value: ObjectLockRetentionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ObjectLockRetentionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    @scala.inline
-    def setYears(value: Years): Self = StObject.set(x, "Years", value.asInstanceOf[js.Any])
+    inline def setYears(value: Years): Self = StObject.set(x, "Years", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearsUndefined: Self = StObject.set(x, "Years", js.undefined)
+    inline def setYearsUndefined: Self = StObject.set(x, "Years", js.undefined)
   }
 }

@@ -32,31 +32,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object CreateOptions {
   
-  @scala.inline
-  def apply(): CreateOptions = {
+  inline def apply(): CreateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateOptions]
   }
   
-  @scala.inline
-  implicit class CreateOptionsMutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOptions](x: Self) {
     
-    @scala.inline
-    def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setOnDuplicate(value: String): Self = StObject.set(x, "onDuplicate", value.asInstanceOf[js.Any])
+    inline def setOnDuplicate(value: String): Self = StObject.set(x, "onDuplicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDuplicateUndefined: Self = StObject.set(x, "onDuplicate", js.undefined)
+    inline def setOnDuplicateUndefined: Self = StObject.set(x, "onDuplicate", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

@@ -19,26 +19,20 @@ trait FunctionCallExpression
 }
 object FunctionCallExpression {
   
-  @scala.inline
-  def apply(args: js.Array[Expression], function: String): FunctionCallExpression = {
+  inline def apply(args: js.Array[Expression], function: String): FunctionCallExpression = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("functionCall")
     __obj.asInstanceOf[FunctionCallExpression]
   }
   
-  @scala.inline
-  implicit class FunctionCallExpressionMutableBuilder[Self <: FunctionCallExpression] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionCallExpression](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[Expression]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[Expression]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: Expression*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Expression*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: functionCall): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: functionCall): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

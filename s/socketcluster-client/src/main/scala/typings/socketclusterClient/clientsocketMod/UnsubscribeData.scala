@@ -10,16 +10,13 @@ trait UnsubscribeData extends StObject {
 }
 object UnsubscribeData {
   
-  @scala.inline
-  def apply(channel: String): UnsubscribeData = {
+  inline def apply(channel: String): UnsubscribeData = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsubscribeData]
   }
   
-  @scala.inline
-  implicit class UnsubscribeDataMutableBuilder[Self <: UnsubscribeData] (val x: Self) extends AnyVal {
+  extension [Self <: UnsubscribeData](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

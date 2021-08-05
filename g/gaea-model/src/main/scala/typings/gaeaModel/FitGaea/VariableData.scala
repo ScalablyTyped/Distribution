@@ -18,22 +18,17 @@ trait VariableData extends StObject {
 }
 object VariableData {
   
-  @scala.inline
-  def apply(valueType: String, variableField: String, variableType: String): VariableData = {
+  inline def apply(valueType: String, variableField: String, variableType: String): VariableData = {
     val __obj = js.Dynamic.literal(valueType = valueType.asInstanceOf[js.Any], variableField = variableField.asInstanceOf[js.Any], variableType = variableType.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableData]
   }
   
-  @scala.inline
-  implicit class VariableDataMutableBuilder[Self <: VariableData] (val x: Self) extends AnyVal {
+  extension [Self <: VariableData](x: Self) {
     
-    @scala.inline
-    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableField(value: String): Self = StObject.set(x, "variableField", value.asInstanceOf[js.Any])
+    inline def setVariableField(value: String): Self = StObject.set(x, "variableField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableType(value: String): Self = StObject.set(x, "variableType", value.asInstanceOf[js.Any])
+    inline def setVariableType(value: String): Self = StObject.set(x, "variableType", value.asInstanceOf[js.Any])
   }
 }

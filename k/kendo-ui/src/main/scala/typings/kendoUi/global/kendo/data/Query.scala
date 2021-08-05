@@ -20,6 +20,5 @@ object Query {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def process(data: js.Array[js.Any], options: DataSourceTransportReadOptionsData): QueryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[QueryResult]
+  inline def process(data: js.Array[js.Any], options: DataSourceTransportReadOptionsData): QueryResult = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[QueryResult]
 }

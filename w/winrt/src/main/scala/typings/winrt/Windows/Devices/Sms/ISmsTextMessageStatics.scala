@@ -13,8 +13,7 @@ trait ISmsTextMessageStatics extends StObject {
 }
 object ISmsTextMessageStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromBinaryData: (SmsDataFormat, Uint8Array) => SmsTextMessage,
     fromBinaryMessage: SmsBinaryMessage => SmsTextMessage
   ): ISmsTextMessageStatics = {
@@ -22,13 +21,10 @@ object ISmsTextMessageStatics {
     __obj.asInstanceOf[ISmsTextMessageStatics]
   }
   
-  @scala.inline
-  implicit class ISmsTextMessageStaticsMutableBuilder[Self <: ISmsTextMessageStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ISmsTextMessageStatics](x: Self) {
     
-    @scala.inline
-    def setFromBinaryData(value: (SmsDataFormat, Uint8Array) => SmsTextMessage): Self = StObject.set(x, "fromBinaryData", js.Any.fromFunction2(value))
+    inline def setFromBinaryData(value: (SmsDataFormat, Uint8Array) => SmsTextMessage): Self = StObject.set(x, "fromBinaryData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFromBinaryMessage(value: SmsBinaryMessage => SmsTextMessage): Self = StObject.set(x, "fromBinaryMessage", js.Any.fromFunction1(value))
+    inline def setFromBinaryMessage(value: SmsBinaryMessage => SmsTextMessage): Self = StObject.set(x, "fromBinaryMessage", js.Any.fromFunction1(value))
   }
 }

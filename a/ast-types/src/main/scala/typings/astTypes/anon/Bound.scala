@@ -27,64 +27,45 @@ trait Bound extends StObject {
 }
 object Bound {
   
-  @scala.inline
-  def apply(name: String): Bound = {
+  inline def apply(name: String): Bound = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bound]
   }
   
-  @scala.inline
-  implicit class BoundMutableBuilder[Self <: Bound] (val x: Self) extends AnyVal {
+  extension [Self <: Bound](x: Self) {
     
-    @scala.inline
-    def setBound(value: TypeAnnotationKind): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
+    inline def setBound(value: TypeAnnotationKind): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundNull: Self = StObject.set(x, "bound", null)
+    inline def setBoundNull: Self = StObject.set(x, "bound", null)
     
-    @scala.inline
-    def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
+    inline def setBoundUndefined: Self = StObject.set(x, "bound", js.undefined)
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: FlowTypeKind): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: FlowTypeKind): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNull: Self = StObject.set(x, "default", null)
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariance(value: VarianceKind | plus | minus): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: VarianceKind | plus | minus): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarianceNull: Self = StObject.set(x, "variance", null)
+    inline def setVarianceNull: Self = StObject.set(x, "variance", null)
     
-    @scala.inline
-    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
+    inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
   }
 }

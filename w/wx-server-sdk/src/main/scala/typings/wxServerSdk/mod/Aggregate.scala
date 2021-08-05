@@ -50,8 +50,7 @@ trait Aggregate extends StObject {
 }
 object Aggregate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addFields: StringDictionary[js.Any] => Aggregate,
     bucket: Boundaries => Aggregate,
     bucketAuto: Buckets => Aggregate,
@@ -74,55 +73,38 @@ object Aggregate {
     __obj.asInstanceOf[Aggregate]
   }
   
-  @scala.inline
-  implicit class AggregateMutableBuilder[Self <: Aggregate] (val x: Self) extends AnyVal {
+  extension [Self <: Aggregate](x: Self) {
     
-    @scala.inline
-    def setAddFields(value: StringDictionary[js.Any] => Aggregate): Self = StObject.set(x, "addFields", js.Any.fromFunction1(value))
+    inline def setAddFields(value: StringDictionary[js.Any] => Aggregate): Self = StObject.set(x, "addFields", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBucket(value: Boundaries => Aggregate): Self = StObject.set(x, "bucket", js.Any.fromFunction1(value))
+    inline def setBucket(value: Boundaries => Aggregate): Self = StObject.set(x, "bucket", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBucketAuto(value: Buckets => Aggregate): Self = StObject.set(x, "bucketAuto", js.Any.fromFunction1(value))
+    inline def setBucketAuto(value: Buckets => Aggregate): Self = StObject.set(x, "bucketAuto", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: String => js.Any): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
+    inline def setCount(value: String => js.Any): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGeoNear(value: DistanceField => Aggregate): Self = StObject.set(x, "geoNear", js.Any.fromFunction1(value))
+    inline def setGeoNear(value: DistanceField => Aggregate): Self = StObject.set(x, "geoNear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroup(value: DictfieldName => Aggregate): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
+    inline def setGroup(value: DictfieldName => Aggregate): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLimit(value: Double => js.Any): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
+    inline def setLimit(value: Double => js.Any): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMatch(value: StringDictionary[js.Any] => Aggregate): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+    inline def setMatch(value: StringDictionary[js.Any] => Aggregate): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProject(value: StringDictionary[js.Any] => Aggregate): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
+    inline def setProject(value: StringDictionary[js.Any] => Aggregate): Self = StObject.set(x, "project", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceRoot(value: NewRoot => Aggregate): Self = StObject.set(x, "replaceRoot", js.Any.fromFunction1(value))
+    inline def setReplaceRoot(value: NewRoot => Aggregate): Self = StObject.set(x, "replaceRoot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSample(value: Size => Aggregate): Self = StObject.set(x, "sample", js.Any.fromFunction1(value))
+    inline def setSample(value: Size => Aggregate): Self = StObject.set(x, "sample", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkip(value: Double => js.Any): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+    inline def setSkip(value: Double => js.Any): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSort(value: StringDictionary[`1` | `-1`] => Aggregate): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+    inline def setSort(value: StringDictionary[`1` | `-1`] => Aggregate): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortByCount(value: String => Aggregate): Self = StObject.set(x, "sortByCount", js.Any.fromFunction1(value))
+    inline def setSortByCount(value: String => Aggregate): Self = StObject.set(x, "sortByCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnwind(value: IncludeArrayIndex => Aggregate): Self = StObject.set(x, "unwind", js.Any.fromFunction1(value))
+    inline def setUnwind(value: IncludeArrayIndex => Aggregate): Self = StObject.set(x, "unwind", js.Any.fromFunction1(value))
   }
 }

@@ -8,11 +8,9 @@ object globuleStrings {
   
   @js.native
   sealed trait first extends StObject
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait last extends StObject
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
+  inline def last: last = "last".asInstanceOf[last]
 }

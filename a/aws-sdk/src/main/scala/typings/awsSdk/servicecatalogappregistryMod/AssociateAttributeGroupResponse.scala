@@ -18,25 +18,19 @@ trait AssociateAttributeGroupResponse extends StObject {
 }
 object AssociateAttributeGroupResponse {
   
-  @scala.inline
-  def apply(): AssociateAttributeGroupResponse = {
+  inline def apply(): AssociateAttributeGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateAttributeGroupResponse]
   }
   
-  @scala.inline
-  implicit class AssociateAttributeGroupResponseMutableBuilder[Self <: AssociateAttributeGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateAttributeGroupResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
+    inline def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "applicationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationArnUndefined: Self = StObject.set(x, "applicationArn", js.undefined)
+    inline def setApplicationArnUndefined: Self = StObject.set(x, "applicationArn", js.undefined)
     
-    @scala.inline
-    def setAttributeGroupArn(value: AttributeGroupArn): Self = StObject.set(x, "attributeGroupArn", value.asInstanceOf[js.Any])
+    inline def setAttributeGroupArn(value: AttributeGroupArn): Self = StObject.set(x, "attributeGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeGroupArnUndefined: Self = StObject.set(x, "attributeGroupArn", js.undefined)
+    inline def setAttributeGroupArnUndefined: Self = StObject.set(x, "attributeGroupArn", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait ParametersReposSetAdminBranchProtectionEndpoint extends StObject {
 }
 object ParametersReposSetAdminBranchProtectionEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposSetAdminBranchProtectionEndpoint,
     request: ReposSetAdminBranchProtectionRequestOptions,
     response: OctokitResponse[ReposSetAdminBranchProtectionResponseData]
@@ -28,16 +27,12 @@ object ParametersReposSetAdminBranchProtectionEndpoint {
     __obj.asInstanceOf[ParametersReposSetAdminBranchProtectionEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposSetAdminBranchProtectionEndpointMutableBuilder[Self <: ParametersReposSetAdminBranchProtectionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposSetAdminBranchProtectionEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposSetAdminBranchProtectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposSetAdminBranchProtectionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposSetAdminBranchProtectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposSetAdminBranchProtectionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposSetAdminBranchProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposSetAdminBranchProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

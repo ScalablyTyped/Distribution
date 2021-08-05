@@ -18,25 +18,19 @@ trait IncompatibilityMessage extends StObject {
 }
 object IncompatibilityMessage {
   
-  @scala.inline
-  def apply(): IncompatibilityMessage = {
+  inline def apply(): IncompatibilityMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncompatibilityMessage]
   }
   
-  @scala.inline
-  implicit class IncompatibilityMessageMutableBuilder[Self <: IncompatibilityMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IncompatibilityMessage](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setType(value: DeviceAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeviceAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ActiveRowChangingEventUIParam extends StObject {
 }
 object ActiveRowChangingEventUIParam {
   
-  @scala.inline
-  def apply(): ActiveRowChangingEventUIParam = {
+  inline def apply(): ActiveRowChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActiveRowChangingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ActiveRowChangingEventUIParamMutableBuilder[Self <: ActiveRowChangingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveRowChangingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkCategory")
 @js.native
-class OlkCategory protected ()
+/* private */ class OlkCategory ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkCategory {
   
@@ -35,7 +35,7 @@ class OlkCategory protected ()
   /* CompleteClass */
   var MousePointer: OlMousePointer = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OlkCategory_typekey")
   var OutlookDotOlkCategory_typekey: typings.activexOutlook.Outlook.OlkCategory = js.native
 }

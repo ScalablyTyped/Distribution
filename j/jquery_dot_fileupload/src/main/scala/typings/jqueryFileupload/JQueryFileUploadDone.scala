@@ -12,8 +12,7 @@ trait JQueryFileUploadDone
      with JQueryFileUploadXhr
 object JQueryFileUploadDone {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorThrown: js.Any,
     headers: StringDictionary[js.Any],
     jqXHR: JQueryXHR,

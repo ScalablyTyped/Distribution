@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(absolutePath: String): String = ^.asInstanceOf[js.Dynamic].apply(absolutePath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(absolutePath: String): String = ^.asInstanceOf[js.Dynamic].apply(absolutePath.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("tildify", JSImport.Namespace)
   @js.native

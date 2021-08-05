@@ -18,19 +18,15 @@ trait InputChannelLevel extends StObject {
 }
 object InputChannelLevel {
   
-  @scala.inline
-  def apply(Gain: integerMinNegative60Max6, InputChannel: integerMin0Max15): InputChannelLevel = {
+  inline def apply(Gain: integerMinNegative60Max6, InputChannel: integerMin0Max15): InputChannelLevel = {
     val __obj = js.Dynamic.literal(Gain = Gain.asInstanceOf[js.Any], InputChannel = InputChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputChannelLevel]
   }
   
-  @scala.inline
-  implicit class InputChannelLevelMutableBuilder[Self <: InputChannelLevel] (val x: Self) extends AnyVal {
+  extension [Self <: InputChannelLevel](x: Self) {
     
-    @scala.inline
-    def setGain(value: integerMinNegative60Max6): Self = StObject.set(x, "Gain", value.asInstanceOf[js.Any])
+    inline def setGain(value: integerMinNegative60Max6): Self = StObject.set(x, "Gain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputChannel(value: integerMin0Max15): Self = StObject.set(x, "InputChannel", value.asInstanceOf[js.Any])
+    inline def setInputChannel(value: integerMin0Max15): Self = StObject.set(x, "InputChannel", value.asInstanceOf[js.Any])
   }
 }

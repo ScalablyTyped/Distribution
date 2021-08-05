@@ -13,8 +13,7 @@ trait ArgsEmbeddedMetadataArgs extends StObject {
 }
 object ArgsEmbeddedMetadataArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: EmbeddedMetadataArgs,
     entityMetadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata
   ): ArgsEmbeddedMetadataArgs = {
@@ -22,13 +21,10 @@ object ArgsEmbeddedMetadataArgs {
     __obj.asInstanceOf[ArgsEmbeddedMetadataArgs]
   }
   
-  @scala.inline
-  implicit class ArgsEmbeddedMetadataArgsMutableBuilder[Self <: ArgsEmbeddedMetadataArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ArgsEmbeddedMetadataArgs](x: Self) {
     
-    @scala.inline
-    def setArgs(value: EmbeddedMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: EmbeddedMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
+    inline def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
   }
 }

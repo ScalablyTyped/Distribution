@@ -21,28 +21,21 @@ trait CaptchaTemplates extends StObject {
 }
 object CaptchaTemplates {
   
-  @scala.inline
-  def apply(error: Error => String): CaptchaTemplates = {
+  inline def apply(error: Error => String): CaptchaTemplates = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
     __obj.asInstanceOf[CaptchaTemplates]
   }
   
-  @scala.inline
-  implicit class CaptchaTemplatesMutableBuilder[Self <: CaptchaTemplates] (val x: Self) extends AnyVal {
+  extension [Self <: CaptchaTemplates](x: Self) {
     
-    @scala.inline
-    def setAuth0(value: /* challenge */ Auth0Challenge => String): Self = StObject.set(x, "auth0", js.Any.fromFunction1(value))
+    inline def setAuth0(value: /* challenge */ Auth0Challenge => String): Self = StObject.set(x, "auth0", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAuth0Undefined: Self = StObject.set(x, "auth0", js.undefined)
+    inline def setAuth0Undefined: Self = StObject.set(x, "auth0", js.undefined)
     
-    @scala.inline
-    def setError(value: Error => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: Error => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRecaptcha_v2(value: /* challenge */ Auth0Challenge => String): Self = StObject.set(x, "recaptcha_v2", js.Any.fromFunction1(value))
+    inline def setRecaptcha_v2(value: /* challenge */ Auth0Challenge => String): Self = StObject.set(x, "recaptcha_v2", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRecaptcha_v2Undefined: Self = StObject.set(x, "recaptcha_v2", js.undefined)
+    inline def setRecaptcha_v2Undefined: Self = StObject.set(x, "recaptcha_v2", js.undefined)
   }
 }

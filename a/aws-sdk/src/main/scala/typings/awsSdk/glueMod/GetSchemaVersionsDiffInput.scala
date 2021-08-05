@@ -28,8 +28,7 @@ trait GetSchemaVersionsDiffInput extends StObject {
 }
 object GetSchemaVersionsDiffInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FirstSchemaVersionNumber: SchemaVersionNumber,
     SchemaDiffType: SchemaDiffType,
     SchemaId: SchemaId,
@@ -39,19 +38,14 @@ object GetSchemaVersionsDiffInput {
     __obj.asInstanceOf[GetSchemaVersionsDiffInput]
   }
   
-  @scala.inline
-  implicit class GetSchemaVersionsDiffInputMutableBuilder[Self <: GetSchemaVersionsDiffInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetSchemaVersionsDiffInput](x: Self) {
     
-    @scala.inline
-    def setFirstSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "FirstSchemaVersionNumber", value.asInstanceOf[js.Any])
+    inline def setFirstSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "FirstSchemaVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaDiffType(value: SchemaDiffType): Self = StObject.set(x, "SchemaDiffType", value.asInstanceOf[js.Any])
+    inline def setSchemaDiffType(value: SchemaDiffType): Self = StObject.set(x, "SchemaDiffType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SecondSchemaVersionNumber", value.asInstanceOf[js.Any])
+    inline def setSecondSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SecondSchemaVersionNumber", value.asInstanceOf[js.Any])
   }
 }

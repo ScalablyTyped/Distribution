@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ssecMiddleware[Input /* <: js.Object */](hasUtf8DecoderBase64EncoderHashConstructorSsecProperties: SsecMiddlewareConfiguration[Input]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ssecMiddleware")(hasUtf8DecoderBase64EncoderHashConstructorSsecProperties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def ssecMiddleware[Input /* <: js.Object */](hasUtf8DecoderBase64EncoderHashConstructorSsecProperties: SsecMiddlewareConfiguration[Input]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ssecMiddleware")(hasUtf8DecoderBase64EncoderHashConstructorSsecProperties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait SsecMiddlewareConfiguration[Input /* <: js.Object */] extends StObject {
     
@@ -34,8 +33,7 @@ object mod {
   }
   object SsecMiddlewareConfiguration {
     
-    @scala.inline
-    def apply[Input /* <: js.Object */](
+    inline def apply[Input /* <: js.Object */](
       base64Encoder: /* input */ Uint8Array => String,
       hashConstructor: Instantiable,
       ssecProperties: SsecPropertiesConfiguration[Input],
@@ -45,20 +43,15 @@ object mod {
       __obj.asInstanceOf[SsecMiddlewareConfiguration[Input]]
     }
     
-    @scala.inline
-    implicit class SsecMiddlewareConfigurationMutableBuilder[Self <: SsecMiddlewareConfiguration[?], Input /* <: js.Object */] (val x: Self & SsecMiddlewareConfiguration[Input]) extends AnyVal {
+    extension [Self <: SsecMiddlewareConfiguration[?], Input /* <: js.Object */](x: Self & SsecMiddlewareConfiguration[Input]) {
       
-      @scala.inline
-      def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHashConstructor(value: Instantiable): Self = StObject.set(x, "hashConstructor", value.asInstanceOf[js.Any])
+      inline def setHashConstructor(value: Instantiable): Self = StObject.set(x, "hashConstructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsecProperties(value: SsecPropertiesConfiguration[Input]): Self = StObject.set(x, "ssecProperties", value.asInstanceOf[js.Any])
+      inline def setSsecProperties(value: SsecPropertiesConfiguration[Input]): Self = StObject.set(x, "ssecProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
     }
   }
   

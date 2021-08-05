@@ -33,8 +33,7 @@ trait Tuplet extends StObject {
 }
 object Tuplet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attach: () => Unit,
     detach: () => Unit,
     draw: () => Unit,
@@ -52,43 +51,30 @@ object Tuplet {
     __obj.asInstanceOf[Tuplet]
   }
   
-  @scala.inline
-  implicit class TupletMutableBuilder[Self <: Tuplet] (val x: Self) extends AnyVal {
+  extension [Self <: Tuplet](x: Self) {
     
-    @scala.inline
-    def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
+    inline def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+    inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
+    inline def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBeatsOccupied(value: () => Double): Self = StObject.set(x, "getBeatsOccupied", js.Any.fromFunction0(value))
+    inline def setGetBeatsOccupied(value: () => Double): Self = StObject.set(x, "getBeatsOccupied", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNoteCount(value: () => Double): Self = StObject.set(x, "getNoteCount", js.Any.fromFunction0(value))
+    inline def setGetNoteCount(value: () => Double): Self = StObject.set(x, "getNoteCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNotes(value: () => js.Array[StaveNote]): Self = StObject.set(x, "getNotes", js.Any.fromFunction0(value))
+    inline def setGetNotes(value: () => js.Array[StaveNote]): Self = StObject.set(x, "getNotes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResolveGlyphs(value: () => Unit): Self = StObject.set(x, "resolveGlyphs", js.Any.fromFunction0(value))
+    inline def setResolveGlyphs(value: () => Unit): Self = StObject.set(x, "resolveGlyphs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBeatsOccupied(value: Double => Unit): Self = StObject.set(x, "setBeatsOccupied", js.Any.fromFunction1(value))
+    inline def setSetBeatsOccupied(value: Double => Unit): Self = StObject.set(x, "setBeatsOccupied", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBracketed(value: Boolean => Tuplet): Self = StObject.set(x, "setBracketed", js.Any.fromFunction1(value))
+    inline def setSetBracketed(value: Boolean => Tuplet): Self = StObject.set(x, "setBracketed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContext(value: IRenderContext => Tuplet): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: IRenderContext => Tuplet): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRatioed(value: Boolean => Tuplet): Self = StObject.set(x, "setRatioed", js.Any.fromFunction1(value))
+    inline def setSetRatioed(value: Boolean => Tuplet): Self = StObject.set(x, "setRatioed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTupletLocation(value: Double => Tuplet): Self = StObject.set(x, "setTupletLocation", js.Any.fromFunction1(value))
+    inline def setSetTupletLocation(value: Double => Tuplet): Self = StObject.set(x, "setTupletLocation", js.Any.fromFunction1(value))
   }
 }

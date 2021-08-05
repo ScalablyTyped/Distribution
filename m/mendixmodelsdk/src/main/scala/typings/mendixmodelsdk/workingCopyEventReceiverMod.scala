@@ -16,11 +16,11 @@ object workingCopyEventReceiverMod {
   class WorkingCopyEventReceiver protected () extends StObject {
     def this(workingCopyId: String, client: IModelServerClient, errorHandler: HandleError) = this()
     
-    var buildResultEventEmitter: js.Any = js.native
+    /* private */ var buildResultEventEmitter: js.Any = js.native
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
-    var errorHandler: js.Any = js.native
+    /* private */ var errorHandler: js.Any = js.native
     
     var eventSource: ^ | Null = js.native
     
@@ -34,8 +34,8 @@ object workingCopyEventReceiverMod {
     
     def stop(): Unit = js.native
     
-    var workingCopyDataEventEmitter: js.Any = js.native
+    /* private */ var workingCopyDataEventEmitter: js.Any = js.native
     
-    var workingCopyId: js.Any = js.native
+    /* private */ var workingCopyId: js.Any = js.native
   }
 }

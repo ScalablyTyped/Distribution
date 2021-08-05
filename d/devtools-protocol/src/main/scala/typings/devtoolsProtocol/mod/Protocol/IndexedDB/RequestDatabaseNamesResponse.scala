@@ -13,19 +13,15 @@ trait RequestDatabaseNamesResponse extends StObject {
 }
 object RequestDatabaseNamesResponse {
   
-  @scala.inline
-  def apply(databaseNames: js.Array[String]): RequestDatabaseNamesResponse = {
+  inline def apply(databaseNames: js.Array[String]): RequestDatabaseNamesResponse = {
     val __obj = js.Dynamic.literal(databaseNames = databaseNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDatabaseNamesResponse]
   }
   
-  @scala.inline
-  implicit class RequestDatabaseNamesResponseMutableBuilder[Self <: RequestDatabaseNamesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RequestDatabaseNamesResponse](x: Self) {
     
-    @scala.inline
-    def setDatabaseNames(value: js.Array[String]): Self = StObject.set(x, "databaseNames", value.asInstanceOf[js.Any])
+    inline def setDatabaseNames(value: js.Array[String]): Self = StObject.set(x, "databaseNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNamesVarargs(value: String*): Self = StObject.set(x, "databaseNames", js.Array(value :_*))
+    inline def setDatabaseNamesVarargs(value: String*): Self = StObject.set(x, "databaseNames", js.Array(value :_*))
   }
 }

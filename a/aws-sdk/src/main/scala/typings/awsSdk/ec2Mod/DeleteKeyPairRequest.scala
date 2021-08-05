@@ -23,31 +23,23 @@ trait DeleteKeyPairRequest extends StObject {
 }
 object DeleteKeyPairRequest {
   
-  @scala.inline
-  def apply(): DeleteKeyPairRequest = {
+  inline def apply(): DeleteKeyPairRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteKeyPairRequest]
   }
   
-  @scala.inline
-  implicit class DeleteKeyPairRequestMutableBuilder[Self <: DeleteKeyPairRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteKeyPairRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setKeyName(value: KeyPairName): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: KeyPairName): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
+    inline def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
     
-    @scala.inline
-    def setKeyPairId(value: KeyPairId): Self = StObject.set(x, "KeyPairId", value.asInstanceOf[js.Any])
+    inline def setKeyPairId(value: KeyPairId): Self = StObject.set(x, "KeyPairId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairIdUndefined: Self = StObject.set(x, "KeyPairId", js.undefined)
+    inline def setKeyPairIdUndefined: Self = StObject.set(x, "KeyPairId", js.undefined)
   }
 }

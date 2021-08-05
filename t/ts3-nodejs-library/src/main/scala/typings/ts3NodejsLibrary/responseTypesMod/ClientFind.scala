@@ -15,19 +15,15 @@ trait ClientFind
 }
 object ClientFind {
   
-  @scala.inline
-  def apply(clid: String, clientNickname: String): ClientFind = {
+  inline def apply(clid: String, clientNickname: String): ClientFind = {
     val __obj = js.Dynamic.literal(clid = clid.asInstanceOf[js.Any], clientNickname = clientNickname.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientFind]
   }
   
-  @scala.inline
-  implicit class ClientFindMutableBuilder[Self <: ClientFind] (val x: Self) extends AnyVal {
+  extension [Self <: ClientFind](x: Self) {
     
-    @scala.inline
-    def setClid(value: String): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
+    inline def setClid(value: String): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
+    inline def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ɵCurrencyIndex extends StObject
 object ɵCurrencyIndex {
   
-  @scala.inline
-  def NbOfDigits: `2` = 2.asInstanceOf[`2`]
+  inline def NbOfDigits: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Symbol: `0` = 0.asInstanceOf[`0`]
+  inline def Symbol: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SymbolNarrow: `1` = 1.asInstanceOf[`1`]
+  inline def SymbolNarrow: `1` = 1.asInstanceOf[`1`]
 }

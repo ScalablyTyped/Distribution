@@ -18,8 +18,7 @@ trait MaxPoolWithArgmaxAttrs extends StObject {
 }
 object MaxPoolWithArgmaxAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filterSize: (js.Tuple2[Double, Double]) | Double,
     includeBatchInIndex: Boolean,
     pad: valid_ | same_ | Double,
@@ -29,19 +28,14 @@ object MaxPoolWithArgmaxAttrs {
     __obj.asInstanceOf[MaxPoolWithArgmaxAttrs]
   }
   
-  @scala.inline
-  implicit class MaxPoolWithArgmaxAttrsMutableBuilder[Self <: MaxPoolWithArgmaxAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: MaxPoolWithArgmaxAttrs](x: Self) {
     
-    @scala.inline
-    def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
+    inline def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBatchInIndex(value: Boolean): Self = StObject.set(x, "includeBatchInIndex", value.asInstanceOf[js.Any])
+    inline def setIncludeBatchInIndex(value: Boolean): Self = StObject.set(x, "includeBatchInIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

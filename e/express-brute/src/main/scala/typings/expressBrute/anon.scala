@@ -12,20 +12,16 @@ object anon {
   }
   object Reset {
     
-    @scala.inline
-    def apply(): Reset = {
+    inline def apply(): Reset = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Reset]
     }
     
-    @scala.inline
-    implicit class ResetMutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
+    extension [Self <: Reset](x: Self) {
       
-      @scala.inline
-      def setReset(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+      inline def setReset(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+      inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     }
   }
 }

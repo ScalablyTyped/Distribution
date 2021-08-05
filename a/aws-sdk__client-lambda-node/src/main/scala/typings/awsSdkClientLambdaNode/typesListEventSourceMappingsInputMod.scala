@@ -56,58 +56,42 @@ object typesListEventSourceMappingsInputMod {
   }
   object ListEventSourceMappingsInput {
     
-    @scala.inline
-    def apply(): ListEventSourceMappingsInput = {
+    inline def apply(): ListEventSourceMappingsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListEventSourceMappingsInput]
     }
     
-    @scala.inline
-    implicit class ListEventSourceMappingsInputMutableBuilder[Self <: ListEventSourceMappingsInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListEventSourceMappingsInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setEventSourceArn(value: String): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
+      inline def setEventSourceArn(value: String): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
+      inline def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
+      inline def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
       
-      @scala.inline
-      def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+      inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
       
-      @scala.inline
-      def setMaxItems(value: Double): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+      inline def setMaxItems(value: Double): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+      inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     }
   }
 }

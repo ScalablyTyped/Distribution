@@ -11,6 +11,5 @@ object wonkaSourceFromArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromArray[A](array: js.Array[A]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
+  inline def fromArray[A](array: js.Array[A]): Source[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[Source[A]]
 }

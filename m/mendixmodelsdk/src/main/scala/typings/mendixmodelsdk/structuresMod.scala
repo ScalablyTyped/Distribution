@@ -132,23 +132,18 @@ object structuresMod {
   }
   object IChildHandle {
     
-    @scala.inline
-    def apply(containingProperty: AbstractStructureProperty, delete: () => Unit, detach: () => Unit): IChildHandle = {
+    inline def apply(containingProperty: AbstractStructureProperty, delete: () => Unit, detach: () => Unit): IChildHandle = {
       val __obj = js.Dynamic.literal(containingProperty = containingProperty.asInstanceOf[js.Any], delete = js.Any.fromFunction0(delete), detach = js.Any.fromFunction0(detach))
       __obj.asInstanceOf[IChildHandle]
     }
     
-    @scala.inline
-    implicit class IChildHandleMutableBuilder[Self <: IChildHandle] (val x: Self) extends AnyVal {
+    extension [Self <: IChildHandle](x: Self) {
       
-      @scala.inline
-      def setContainingProperty(value: AbstractStructureProperty): Self = StObject.set(x, "containingProperty", value.asInstanceOf[js.Any])
+      inline def setContainingProperty(value: AbstractStructureProperty): Self = StObject.set(x, "containingProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+      inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     }
   }
   
@@ -204,8 +199,7 @@ object structuresMod {
   }
   object IStructure {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allProperties: () => js.Array[AbstractProperty[js.Any, js.Any]],
       id: String,
       isLoaded: Boolean,
@@ -223,50 +217,35 @@ object structuresMod {
       __obj.asInstanceOf[IStructure]
     }
     
-    @scala.inline
-    implicit class IStructureMutableBuilder[Self <: IStructure] (val x: Self) extends AnyVal {
+    extension [Self <: IStructure](x: Self) {
       
-      @scala.inline
-      def setAllProperties(value: () => js.Array[AbstractProperty[js.Any, js.Any]]): Self = StObject.set(x, "allProperties", js.Any.fromFunction0(value))
+      inline def setAllProperties(value: () => js.Array[AbstractProperty[js.Any, js.Any]]): Self = StObject.set(x, "allProperties", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContainer(value: IContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: IContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
+      inline def setIsLoaded(value: Boolean): Self = StObject.set(x, "isLoaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedProperties(value: () => js.Array[AbstractProperty[js.Any, js.Any]]): Self = StObject.set(x, "loadedProperties", js.Any.fromFunction0(value))
+      inline def setLoadedProperties(value: () => js.Array[AbstractProperty[js.Any, js.Any]]): Self = StObject.set(x, "loadedProperties", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setModel(value: IAbstractModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: IAbstractModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicProperties(value: () => js.Array[AbstractProperty[js.Any, js.Any]]): Self = StObject.set(x, "publicProperties", js.Any.fromFunction0(value))
+      inline def setPublicProperties(value: () => js.Array[AbstractProperty[js.Any, js.Any]]): Self = StObject.set(x, "publicProperties", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStructureTypeName(value: String): Self = StObject.set(x, "structureTypeName", value.asInstanceOf[js.Any])
+      inline def setStructureTypeName(value: String): Self = StObject.set(x, "structureTypeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTraverse(value: js.Function1[IStructure, Unit] => Unit): Self = StObject.set(x, "traverse", js.Any.fromFunction1(value))
+      inline def setTraverse(value: js.Function1[IStructure, Unit] => Unit): Self = StObject.set(x, "traverse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTraverseFind(value: js.Function1[IStructure, js.Any] => js.Any | Null): Self = StObject.set(x, "traverseFind", js.Any.fromFunction1(value))
+      inline def setTraverseFind(value: js.Function1[IStructure, js.Any] => js.Any | Null): Self = StObject.set(x, "traverseFind", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTraversePublicParts(value: js.Function1[IStructure, Unit] => Unit): Self = StObject.set(x, "traversePublicParts", js.Any.fromFunction1(value))
+      inline def setTraversePublicParts(value: js.Function1[IStructure, Unit] => Unit): Self = StObject.set(x, "traversePublicParts", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnit(value: IAbstractUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: IAbstractUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -276,17 +255,14 @@ object structuresMod {
   }
   object IStructureClass {
     
-    @scala.inline
-    def apply(versionInfo: StructureVersionInfo): IStructureClass = {
+    inline def apply(versionInfo: StructureVersionInfo): IStructureClass = {
       val __obj = js.Dynamic.literal(versionInfo = versionInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStructureClass]
     }
     
-    @scala.inline
-    implicit class IStructureClassMutableBuilder[Self <: IStructureClass] (val x: Self) extends AnyVal {
+    extension [Self <: IStructureClass](x: Self) {
       
-      @scala.inline
-      def setVersionInfo(value: StructureVersionInfo): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
+      inline def setVersionInfo(value: StructureVersionInfo): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,17 +280,13 @@ object structuresMod {
   trait StructureState extends StObject
   object StructureState {
     
-    @scala.inline
-    def attached: typings.mendixmodelsdk.mendixmodelsdkStrings.attached = "attached".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.attached]
+    inline def attached: typings.mendixmodelsdk.mendixmodelsdkStrings.attached = "attached".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.attached]
     
-    @scala.inline
-    def deleted: typings.mendixmodelsdk.mendixmodelsdkStrings.deleted = "deleted".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.deleted]
+    inline def deleted: typings.mendixmodelsdk.mendixmodelsdkStrings.deleted = "deleted".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.deleted]
     
-    @scala.inline
-    def detached: typings.mendixmodelsdk.mendixmodelsdkStrings.detached = "detached".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.detached]
+    inline def detached: typings.mendixmodelsdk.mendixmodelsdkStrings.detached = "detached".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.detached]
     
-    @scala.inline
-    def `new`: typings.mendixmodelsdk.mendixmodelsdkStrings.`new` = "new".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.`new`]
+    inline def `new`: typings.mendixmodelsdk.mendixmodelsdkStrings.`new` = "new".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.`new`]
   }
   
   object aliases {

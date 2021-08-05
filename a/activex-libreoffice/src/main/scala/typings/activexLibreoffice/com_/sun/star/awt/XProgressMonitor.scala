@@ -25,8 +25,7 @@ trait XProgressMonitor
 }
 object XProgressMonitor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Value: Double,
     acquire: () => Unit,
     addText: (String, String, Boolean) => Unit,
@@ -44,16 +43,12 @@ object XProgressMonitor {
     __obj.asInstanceOf[XProgressMonitor]
   }
   
-  @scala.inline
-  implicit class XProgressMonitorMutableBuilder[Self <: XProgressMonitor] (val x: Self) extends AnyVal {
+  extension [Self <: XProgressMonitor](x: Self) {
     
-    @scala.inline
-    def setAddText(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "addText", js.Any.fromFunction3(value))
+    inline def setAddText(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "addText", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveText(value: (String, Boolean) => Unit): Self = StObject.set(x, "removeText", js.Any.fromFunction2(value))
+    inline def setRemoveText(value: (String, Boolean) => Unit): Self = StObject.set(x, "removeText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateText(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "updateText", js.Any.fromFunction3(value))
+    inline def setUpdateText(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "updateText", js.Any.fromFunction3(value))
   }
 }

@@ -65,61 +65,43 @@ trait AssociationOptions extends StObject {
 }
 object AssociationOptions {
   
-  @scala.inline
-  def apply(): AssociationOptions = {
+  inline def apply(): AssociationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociationOptions]
   }
   
-  @scala.inline
-  implicit class AssociationOptionsMutableBuilder[Self <: AssociationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationOptions](x: Self) {
     
-    @scala.inline
-    def setAs(value: String | Plural): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: String | Plural): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setConstraints(value: Boolean): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+    inline def setConstraints(value: Boolean): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+    inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
-    @scala.inline
-    def setForeignKey(value: String | AssociationForeignKeyOptions): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
+    inline def setForeignKey(value: String | AssociationForeignKeyOptions): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignKeyConstraint(value: Boolean): Self = StObject.set(x, "foreignKeyConstraint", value.asInstanceOf[js.Any])
+    inline def setForeignKeyConstraint(value: Boolean): Self = StObject.set(x, "foreignKeyConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignKeyConstraintUndefined: Self = StObject.set(x, "foreignKeyConstraint", js.undefined)
+    inline def setForeignKeyConstraintUndefined: Self = StObject.set(x, "foreignKeyConstraint", js.undefined)
     
-    @scala.inline
-    def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
+    inline def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     
-    @scala.inline
-    def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setOnDelete(value: String): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+    inline def setOnDelete(value: String): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+    inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
     
-    @scala.inline
-    def setOnUpdate(value: String): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+    inline def setOnUpdate(value: String): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+    inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
     
-    @scala.inline
-    def setScope(value: AssociationScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: AssociationScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(source: SliceSource): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
-  @scala.inline
-  def apply(source: ReadableStream[js.Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
-  @scala.inline
-  def apply(source: ReadableStreamReader[js.Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
+  inline def apply(source: SliceSource): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
+  inline def apply(source: ReadableStream[js.Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
+  inline def apply(source: ReadableStreamReader[js.Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
   
   @JSImport("slice-source", JSImport.Namespace)
   @js.native
@@ -28,20 +25,16 @@ object mod {
   }
   object SliceChunk {
     
-    @scala.inline
-    def apply(done: Boolean, value: Uint8Array): SliceChunk = {
+    inline def apply(done: Boolean, value: Uint8Array): SliceChunk = {
       val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliceChunk]
     }
     
-    @scala.inline
-    implicit class SliceChunkMutableBuilder[Self <: SliceChunk] (val x: Self) extends AnyVal {
+    extension [Self <: SliceChunk](x: Self) {
       
-      @scala.inline
-      def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,8 +48,7 @@ object mod {
   }
   object SliceSource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancel: () => js.Promise[Unit],
       read: () => js.Promise[SliceChunk],
       slice: Double => js.Promise[Uint8Array]
@@ -65,17 +57,13 @@ object mod {
       __obj.asInstanceOf[SliceSource]
     }
     
-    @scala.inline
-    implicit class SliceSourceMutableBuilder[Self <: SliceSource] (val x: Self) extends AnyVal {
+    extension [Self <: SliceSource](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRead(value: () => js.Promise[SliceChunk]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => js.Promise[SliceChunk]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSlice(value: Double => js.Promise[Uint8Array]): Self = StObject.set(x, "slice", js.Any.fromFunction1(value))
+      inline def setSlice(value: Double => js.Promise[Uint8Array]): Self = StObject.set(x, "slice", js.Any.fromFunction1(value))
     }
   }
 }

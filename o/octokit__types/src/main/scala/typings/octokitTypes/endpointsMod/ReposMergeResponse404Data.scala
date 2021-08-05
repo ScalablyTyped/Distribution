@@ -10,16 +10,13 @@ trait ReposMergeResponse404Data extends StObject {
 }
 object ReposMergeResponse404Data {
   
-  @scala.inline
-  def apply(message: String): ReposMergeResponse404Data = {
+  inline def apply(message: String): ReposMergeResponse404Data = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposMergeResponse404Data]
   }
   
-  @scala.inline
-  implicit class ReposMergeResponse404DataMutableBuilder[Self <: ReposMergeResponse404Data] (val x: Self) extends AnyVal {
+  extension [Self <: ReposMergeResponse404Data](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

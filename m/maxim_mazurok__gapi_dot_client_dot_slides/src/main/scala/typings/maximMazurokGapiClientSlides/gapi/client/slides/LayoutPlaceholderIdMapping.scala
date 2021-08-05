@@ -24,31 +24,23 @@ trait LayoutPlaceholderIdMapping extends StObject {
 }
 object LayoutPlaceholderIdMapping {
   
-  @scala.inline
-  def apply(): LayoutPlaceholderIdMapping = {
+  inline def apply(): LayoutPlaceholderIdMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayoutPlaceholderIdMapping]
   }
   
-  @scala.inline
-  implicit class LayoutPlaceholderIdMappingMutableBuilder[Self <: LayoutPlaceholderIdMapping] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutPlaceholderIdMapping](x: Self) {
     
-    @scala.inline
-    def setLayoutPlaceholder(value: Placeholder): Self = StObject.set(x, "layoutPlaceholder", value.asInstanceOf[js.Any])
+    inline def setLayoutPlaceholder(value: Placeholder): Self = StObject.set(x, "layoutPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutPlaceholderObjectId(value: String): Self = StObject.set(x, "layoutPlaceholderObjectId", value.asInstanceOf[js.Any])
+    inline def setLayoutPlaceholderObjectId(value: String): Self = StObject.set(x, "layoutPlaceholderObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutPlaceholderObjectIdUndefined: Self = StObject.set(x, "layoutPlaceholderObjectId", js.undefined)
+    inline def setLayoutPlaceholderObjectIdUndefined: Self = StObject.set(x, "layoutPlaceholderObjectId", js.undefined)
     
-    @scala.inline
-    def setLayoutPlaceholderUndefined: Self = StObject.set(x, "layoutPlaceholder", js.undefined)
+    inline def setLayoutPlaceholderUndefined: Self = StObject.set(x, "layoutPlaceholder", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

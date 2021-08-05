@@ -18,22 +18,17 @@ trait BackboneElement
 }
 object BackboneElement {
   
-  @scala.inline
-  def apply(): BackboneElement = {
+  inline def apply(): BackboneElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackboneElement]
   }
   
-  @scala.inline
-  implicit class BackboneElementMutableBuilder[Self <: BackboneElement] (val x: Self) extends AnyVal {
+  extension [Self <: BackboneElement](x: Self) {
     
-    @scala.inline
-    def setModifierExtension(value: js.Array[Extension]): Self = StObject.set(x, "modifierExtension", value.asInstanceOf[js.Any])
+    inline def setModifierExtension(value: js.Array[Extension]): Self = StObject.set(x, "modifierExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierExtensionUndefined: Self = StObject.set(x, "modifierExtension", js.undefined)
+    inline def setModifierExtensionUndefined: Self = StObject.set(x, "modifierExtension", js.undefined)
     
-    @scala.inline
-    def setModifierExtensionVarargs(value: Extension*): Self = StObject.set(x, "modifierExtension", js.Array(value :_*))
+    inline def setModifierExtensionVarargs(value: Extension*): Self = StObject.set(x, "modifierExtension", js.Array(value :_*))
   }
 }

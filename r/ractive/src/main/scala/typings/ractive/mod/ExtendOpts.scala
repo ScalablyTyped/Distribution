@@ -35,70 +35,49 @@ trait ExtendOpts[T /* <: Ractive[T] */]
 }
 object ExtendOpts {
   
-  @scala.inline
-  def apply[T /* <: Ractive[T] */](): ExtendOpts[T] = {
+  inline def apply[T /* <: Ractive[T] */](): ExtendOpts[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtendOpts[T]]
   }
   
-  @scala.inline
-  implicit class ExtendOptsMutableBuilder[Self <: ExtendOpts[?], T /* <: Ractive[T] */] (val x: Self & ExtendOpts[T]) extends AnyVal {
+  extension [Self <: ExtendOpts[?], T /* <: Ractive[T] */](x: Self & ExtendOpts[T]) {
     
-    @scala.inline
-    def setAttributes(value: js.Array[String] | Optional): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[String] | Optional): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setCss(value: String | CssFn): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | CssFn): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssData(value: ValueMap): Self = StObject.set(x, "cssData", value.asInstanceOf[js.Any])
+    inline def setCssData(value: ValueMap): Self = StObject.set(x, "cssData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssDataUndefined: Self = StObject.set(x, "cssData", js.undefined)
+    inline def setCssDataUndefined: Self = StObject.set(x, "cssData", js.undefined)
     
-    @scala.inline
-    def setCssFunction1(value: /* data */ DataGetFn => String): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+    inline def setCssFunction1(value: /* data */ DataGetFn => String): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCssId(value: String): Self = StObject.set(x, "cssId", value.asInstanceOf[js.Any])
+    inline def setCssId(value: String): Self = StObject.set(x, "cssId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssIdUndefined: Self = StObject.set(x, "cssId", js.undefined)
+    inline def setCssIdUndefined: Self = StObject.set(x, "cssId", js.undefined)
     
-    @scala.inline
-    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    @scala.inline
-    def setData(value: DataFn[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: DataFn[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setIsolated(value: Boolean): Self = StObject.set(x, "isolated", value.asInstanceOf[js.Any])
+    inline def setIsolated(value: Boolean): Self = StObject.set(x, "isolated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsolatedUndefined: Self = StObject.set(x, "isolated", js.undefined)
+    inline def setIsolatedUndefined: Self = StObject.set(x, "isolated", js.undefined)
     
-    @scala.inline
-    def setNoCssTransform(value: Boolean): Self = StObject.set(x, "noCssTransform", value.asInstanceOf[js.Any])
+    inline def setNoCssTransform(value: Boolean): Self = StObject.set(x, "noCssTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCssTransformUndefined: Self = StObject.set(x, "noCssTransform", js.undefined)
+    inline def setNoCssTransformUndefined: Self = StObject.set(x, "noCssTransform", js.undefined)
     
-    @scala.inline
-    def setUse(value: js.Array[PluginExtend]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: js.Array[PluginExtend]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
-    @scala.inline
-    def setUseVarargs(value: PluginExtend*): Self = StObject.set(x, "use", js.Array(value :_*))
+    inline def setUseVarargs(value: PluginExtend*): Self = StObject.set(x, "use", js.Array(value :_*))
   }
 }

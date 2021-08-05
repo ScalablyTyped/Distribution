@@ -28,31 +28,23 @@ trait SearchFacesRequest extends StObject {
 }
 object SearchFacesRequest {
   
-  @scala.inline
-  def apply(CollectionId: CollectionId, FaceId: FaceId): SearchFacesRequest = {
+  inline def apply(CollectionId: CollectionId, FaceId: FaceId): SearchFacesRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], FaceId = FaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFacesRequest]
   }
   
-  @scala.inline
-  implicit class SearchFacesRequestMutableBuilder[Self <: SearchFacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFacesRequest](x: Self) {
     
-    @scala.inline
-    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceId(value: FaceId): Self = StObject.set(x, "FaceId", value.asInstanceOf[js.Any])
+    inline def setFaceId(value: FaceId): Self = StObject.set(x, "FaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
+    inline def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
+    inline def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
     
-    @scala.inline
-    def setMaxFaces(value: MaxFaces): Self = StObject.set(x, "MaxFaces", value.asInstanceOf[js.Any])
+    inline def setMaxFaces(value: MaxFaces): Self = StObject.set(x, "MaxFaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFacesUndefined: Self = StObject.set(x, "MaxFaces", js.undefined)
+    inline def setMaxFacesUndefined: Self = StObject.set(x, "MaxFaces", js.undefined)
   }
 }

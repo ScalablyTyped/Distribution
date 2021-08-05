@@ -29,26 +29,20 @@ object octokitResponseMod {
   }
   object OctokitResponse {
     
-    @scala.inline
-    def apply[T](data: T, headers: ResponseHeaders, status: Double, url: Url): OctokitResponse[T] = {
+    inline def apply[T](data: T, headers: ResponseHeaders, status: Double, url: Url): OctokitResponse[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[OctokitResponse[T]]
     }
     
-    @scala.inline
-    implicit class OctokitResponseMutableBuilder[Self <: OctokitResponse[?], T] (val x: Self & OctokitResponse[T]) extends AnyVal {
+    extension [Self <: OctokitResponse[?], T](x: Self & OctokitResponse[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: ResponseHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: ResponseHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

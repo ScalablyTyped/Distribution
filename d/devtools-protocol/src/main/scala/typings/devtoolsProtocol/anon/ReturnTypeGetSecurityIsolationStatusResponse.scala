@@ -14,8 +14,7 @@ trait ReturnTypeGetSecurityIsolationStatusResponse extends StObject {
 }
 object ReturnTypeGetSecurityIsolationStatusResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[js.UndefOr[GetSecurityIsolationStatusRequest]],
     returnType: GetSecurityIsolationStatusResponse
   ): ReturnTypeGetSecurityIsolationStatusResponse = {
@@ -23,16 +22,12 @@ object ReturnTypeGetSecurityIsolationStatusResponse {
     __obj.asInstanceOf[ReturnTypeGetSecurityIsolationStatusResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetSecurityIsolationStatusResponseMutableBuilder[Self <: ReturnTypeGetSecurityIsolationStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetSecurityIsolationStatusResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[js.UndefOr[GetSecurityIsolationStatusRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[js.UndefOr[GetSecurityIsolationStatusRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: js.UndefOr[GetSecurityIsolationStatusRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: js.UndefOr[GetSecurityIsolationStatusRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetSecurityIsolationStatusResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetSecurityIsolationStatusResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

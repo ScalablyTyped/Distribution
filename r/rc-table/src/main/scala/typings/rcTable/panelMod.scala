@@ -12,8 +12,7 @@ object panelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasClassNameChildren: TitleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasClassNameChildren: TitleProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TitleProps extends StObject {
     
@@ -23,23 +22,18 @@ object panelMod {
   }
   object TitleProps {
     
-    @scala.inline
-    def apply(className: String): TitleProps = {
+    inline def apply(className: String): TitleProps = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[TitleProps]
     }
     
-    @scala.inline
-    implicit class TitlePropsMutableBuilder[Self <: TitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: TitleProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }
   }
 }

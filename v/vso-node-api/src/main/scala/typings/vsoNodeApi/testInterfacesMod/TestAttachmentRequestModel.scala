@@ -16,25 +16,19 @@ trait TestAttachmentRequestModel extends StObject {
 }
 object TestAttachmentRequestModel {
   
-  @scala.inline
-  def apply(attachmentType: String, comment: String, fileName: String, stream: String): TestAttachmentRequestModel = {
+  inline def apply(attachmentType: String, comment: String, fileName: String, stream: String): TestAttachmentRequestModel = {
     val __obj = js.Dynamic.literal(attachmentType = attachmentType.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestAttachmentRequestModel]
   }
   
-  @scala.inline
-  implicit class TestAttachmentRequestModelMutableBuilder[Self <: TestAttachmentRequestModel] (val x: Self) extends AnyVal {
+  extension [Self <: TestAttachmentRequestModel](x: Self) {
     
-    @scala.inline
-    def setAttachmentType(value: String): Self = StObject.set(x, "attachmentType", value.asInstanceOf[js.Any])
+    inline def setAttachmentType(value: String): Self = StObject.set(x, "attachmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: String): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: String): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

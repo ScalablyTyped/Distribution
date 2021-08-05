@@ -36,50 +36,37 @@ trait TableRowExpandableProps extends StObject {
 }
 object TableRowExpandableProps {
   
-  @scala.inline
-  def apply(accessibilityCollapseLabel: String, accessibilityExpandLabel: String, id: String): TableRowExpandableProps = {
+  inline def apply(accessibilityCollapseLabel: String, accessibilityExpandLabel: String, id: String): TableRowExpandableProps = {
     val __obj = js.Dynamic.literal(accessibilityCollapseLabel = accessibilityCollapseLabel.asInstanceOf[js.Any], accessibilityExpandLabel = accessibilityExpandLabel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowExpandableProps]
   }
   
-  @scala.inline
-  implicit class TableRowExpandablePropsMutableBuilder[Self <: TableRowExpandableProps] (val x: Self) extends AnyVal {
+  extension [Self <: TableRowExpandableProps](x: Self) {
     
-    @scala.inline
-    def setAccessibilityCollapseLabel(value: String): Self = StObject.set(x, "accessibilityCollapseLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityCollapseLabel(value: String): Self = StObject.set(x, "accessibilityCollapseLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityExpandLabel(value: String): Self = StObject.set(x, "accessibilityExpandLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityExpandLabel(value: String): Self = StObject.set(x, "accessibilityExpandLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setExpandedContents(value: ReactNode): Self = StObject.set(x, "expandedContents", value.asInstanceOf[js.Any])
+    inline def setExpandedContents(value: ReactNode): Self = StObject.set(x, "expandedContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedContentsUndefined: Self = StObject.set(x, "expandedContents", js.undefined)
+    inline def setExpandedContentsUndefined: Self = StObject.set(x, "expandedContents", js.undefined)
     
-    @scala.inline
-    def setHoverStyle(value: none | gray): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
+    inline def setHoverStyle(value: none | gray): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
+    inline def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnExpand(
+    inline def setOnExpand(
       value: /* arg */ js.Object & (Event[
           (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement])
         ]) => Unit
     ): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
+    inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
   }
 }

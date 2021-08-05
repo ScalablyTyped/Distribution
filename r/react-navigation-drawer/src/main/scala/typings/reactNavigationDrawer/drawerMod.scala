@@ -36,15 +36,14 @@ object drawerMod {
     @JSImport("react-navigation-drawer/lib/typescript/src/views/Drawer", "default.defaultProps")
     @js.native
     def defaultProps: DrawerPostion = js.native
-    @scala.inline
-    def defaultProps_=(x: DrawerPostion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DrawerPostion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait Drawer
     extends PureComponent[Props, js.Object, js.Any] {
     
-    var clock: js.Any = js.native
+    /* private */ var clock: js.Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDrawer(prevProps: Props): Unit = js.native
@@ -52,69 +51,69 @@ object drawerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDrawer(): Unit = js.native
     
-    var containerWidth: js.Any = js.native
+    /* private */ var containerWidth: js.Any = js.native
     
-    var currentOpenValue: js.Any = js.native
+    /* private */ var currentOpenValue: js.Any = js.native
     
-    var dragX: js.Any = js.native
+    /* private */ var dragX: js.Any = js.native
     
-    var drawerOpacity: js.Any = js.native
+    /* private */ var drawerOpacity: js.Any = js.native
     
-    var drawerPosition: js.Any = js.native
+    /* private */ var drawerPosition: js.Any = js.native
     
-    var drawerWidth: js.Any = js.native
+    /* private */ var drawerWidth: js.Any = js.native
     
-    var gestureState: js.Any = js.native
+    /* private */ var gestureState: js.Any = js.native
     
-    var gestureX: js.Any = js.native
+    /* private */ var gestureX: js.Any = js.native
     
-    var handleContainerLayout: js.Any = js.native
+    /* private */ var handleContainerLayout: js.Any = js.native
     
-    var handleDrawerLayout: js.Any = js.native
+    /* private */ var handleDrawerLayout: js.Any = js.native
     
-    var handleGestureEvent: js.Any = js.native
+    /* private */ var handleGestureEvent: js.Any = js.native
     
-    var handleGestureStateChange: js.Any = js.native
+    /* private */ var handleGestureStateChange: js.Any = js.native
     
-    var handleTapStateChange: js.Any = js.native
+    /* private */ var handleTapStateChange: js.Any = js.native
     
-    var isDrawerTypeFront: js.Any = js.native
+    /* private */ var isDrawerTypeFront: js.Any = js.native
     
-    var isOpen: js.Any = js.native
+    /* private */ var isOpen: js.Any = js.native
     
-    var isStatusBarHidden: js.Any = js.native
+    /* private */ var isStatusBarHidden: js.Any = js.native
     
-    var isSwiping: js.Any = js.native
+    /* private */ var isSwiping: js.Any = js.native
     
-    var manuallyTriggerSpring: js.Any = js.native
+    /* private */ var manuallyTriggerSpring: js.Any = js.native
     
-    var nextIsOpen: js.Any = js.native
+    /* private */ var nextIsOpen: js.Any = js.native
     
-    var offsetX: js.Any = js.native
+    /* private */ var offsetX: js.Any = js.native
     
-    var pendingOpenValue: js.Any = js.native
+    /* private */ var pendingOpenValue: js.Any = js.native
     
-    var position: js.Any = js.native
+    /* private */ var position: js.Any = js.native
     
-    var progress: js.Any = js.native
+    /* private */ var progress: js.Any = js.native
     
-    var swipeDistanceThreshold: js.Any = js.native
+    /* private */ var swipeDistanceThreshold: js.Any = js.native
     
-    var swipeVelocityThreshold: js.Any = js.native
+    /* private */ var swipeVelocityThreshold: js.Any = js.native
     
-    var toggleDrawer: js.Any = js.native
+    /* private */ var toggleDrawer: js.Any = js.native
     
-    var toggleStatusBar: js.Any = js.native
+    /* private */ var toggleStatusBar: js.Any = js.native
     
-    var touchDistanceFromDrawer: js.Any = js.native
+    /* private */ var touchDistanceFromDrawer: js.Any = js.native
     
-    var touchX: js.Any = js.native
+    /* private */ var touchX: js.Any = js.native
     
-    var transitionTo: js.Any = js.native
+    /* private */ var transitionTo: js.Any = js.native
     
-    var translateX: js.Any = js.native
+    /* private */ var translateX: js.Any = js.native
     
-    var velocityX: js.Any = js.native
+    /* private */ var velocityX: js.Any = js.native
   }
   
   trait Props extends StObject {
@@ -161,8 +160,7 @@ object drawerMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       drawerPosition: left | right,
       drawerType: front | back | slide,
       gestureEnabled: Boolean,
@@ -181,83 +179,57 @@ object drawerMod {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+      inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerStyle(value: ViewStyle): Self = StObject.set(x, "drawerStyle", value.asInstanceOf[js.Any])
+      inline def setDrawerStyle(value: ViewStyle): Self = StObject.set(x, "drawerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerStyleUndefined: Self = StObject.set(x, "drawerStyle", js.undefined)
+      inline def setDrawerStyleUndefined: Self = StObject.set(x, "drawerStyle", js.undefined)
       
-      @scala.inline
-      def setDrawerType(value: front | back | slide): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
+      inline def setDrawerType(value: front | back | slide): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
+      inline def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGestureHandlerProps(value: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
+      inline def setGestureHandlerProps(value: ComponentProps[Instantiable1[/* props */ ReadonlyPanGestureHandler, PanGestureHandler]]): Self = StObject.set(x, "gestureHandlerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGestureHandlerPropsUndefined: Self = StObject.set(x, "gestureHandlerProps", js.undefined)
+      inline def setGestureHandlerPropsUndefined: Self = StObject.set(x, "gestureHandlerProps", js.undefined)
       
-      @scala.inline
-      def setHideStatusBar(value: Boolean): Self = StObject.set(x, "hideStatusBar", value.asInstanceOf[js.Any])
+      inline def setHideStatusBar(value: Boolean): Self = StObject.set(x, "hideStatusBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+      inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnGestureRef(value: /* ref */ PanGestureHandler | Null => Unit): Self = StObject.set(x, "onGestureRef", js.Any.fromFunction1(value))
+      inline def setOnGestureRef(value: /* ref */ PanGestureHandler | Null => Unit): Self = StObject.set(x, "onGestureRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGestureRefUndefined: Self = StObject.set(x, "onGestureRef", js.undefined)
+      inline def setOnGestureRefUndefined: Self = StObject.set(x, "onGestureRef", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayStyle(value: ViewStyle): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+      inline def setOverlayStyle(value: ViewStyle): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+      inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
       
-      @scala.inline
-      def setRenderDrawerContent(value: /* props */ Progress => ReactNode): Self = StObject.set(x, "renderDrawerContent", js.Any.fromFunction1(value))
+      inline def setRenderDrawerContent(value: /* props */ Progress => ReactNode): Self = StObject.set(x, "renderDrawerContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderSceneContent(value: /* props */ Progress => ReactNode): Self = StObject.set(x, "renderSceneContent", js.Any.fromFunction1(value))
+      inline def setRenderSceneContent(value: /* props */ Progress => ReactNode): Self = StObject.set(x, "renderSceneContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSceneContainerStyle(value: ViewStyle): Self = StObject.set(x, "sceneContainerStyle", value.asInstanceOf[js.Any])
+      inline def setSceneContainerStyle(value: ViewStyle): Self = StObject.set(x, "sceneContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSceneContainerStyleUndefined: Self = StObject.set(x, "sceneContainerStyle", js.undefined)
+      inline def setSceneContainerStyleUndefined: Self = StObject.set(x, "sceneContainerStyle", js.undefined)
       
-      @scala.inline
-      def setStatusBarAnimation(value: slide | none | fade): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
+      inline def setStatusBarAnimation(value: slide | none | fade): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeDistanceThreshold(value: Double): Self = StObject.set(x, "swipeDistanceThreshold", value.asInstanceOf[js.Any])
+      inline def setSwipeDistanceThreshold(value: Double): Self = StObject.set(x, "swipeDistanceThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeDistanceThresholdUndefined: Self = StObject.set(x, "swipeDistanceThreshold", js.undefined)
+      inline def setSwipeDistanceThresholdUndefined: Self = StObject.set(x, "swipeDistanceThreshold", js.undefined)
       
-      @scala.inline
-      def setSwipeEdgeWidth(value: Double): Self = StObject.set(x, "swipeEdgeWidth", value.asInstanceOf[js.Any])
+      inline def setSwipeEdgeWidth(value: Double): Self = StObject.set(x, "swipeEdgeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeVelocityThreshold(value: Double): Self = StObject.set(x, "swipeVelocityThreshold", value.asInstanceOf[js.Any])
+      inline def setSwipeVelocityThreshold(value: Double): Self = StObject.set(x, "swipeVelocityThreshold", value.asInstanceOf[js.Any])
     }
   }
   

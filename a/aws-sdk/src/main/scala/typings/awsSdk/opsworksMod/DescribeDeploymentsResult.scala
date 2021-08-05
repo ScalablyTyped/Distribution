@@ -13,22 +13,17 @@ trait DescribeDeploymentsResult extends StObject {
 }
 object DescribeDeploymentsResult {
   
-  @scala.inline
-  def apply(): DescribeDeploymentsResult = {
+  inline def apply(): DescribeDeploymentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDeploymentsResult]
   }
   
-  @scala.inline
-  implicit class DescribeDeploymentsResultMutableBuilder[Self <: DescribeDeploymentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDeploymentsResult](x: Self) {
     
-    @scala.inline
-    def setDeployments(value: Deployments): Self = StObject.set(x, "Deployments", value.asInstanceOf[js.Any])
+    inline def setDeployments(value: Deployments): Self = StObject.set(x, "Deployments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentsUndefined: Self = StObject.set(x, "Deployments", js.undefined)
+    inline def setDeploymentsUndefined: Self = StObject.set(x, "Deployments", js.undefined)
     
-    @scala.inline
-    def setDeploymentsVarargs(value: Deployment*): Self = StObject.set(x, "Deployments", js.Array(value :_*))
+    inline def setDeploymentsVarargs(value: Deployment*): Self = StObject.set(x, "Deployments", js.Array(value :_*))
   }
 }

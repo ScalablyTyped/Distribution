@@ -17,31 +17,23 @@ trait EndSessionParameters
 }
 object EndSessionParameters {
   
-  @scala.inline
-  def apply(): EndSessionParameters = {
+  inline def apply(): EndSessionParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndSessionParameters]
   }
   
-  @scala.inline
-  implicit class EndSessionParametersMutableBuilder[Self <: EndSessionParameters] (val x: Self) extends AnyVal {
+  extension [Self <: EndSessionParameters](x: Self) {
     
-    @scala.inline
-    def setId_token_hint(value: TokenSet | String): Self = StObject.set(x, "id_token_hint", value.asInstanceOf[js.Any])
+    inline def setId_token_hint(value: TokenSet | String): Self = StObject.set(x, "id_token_hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId_token_hintUndefined: Self = StObject.set(x, "id_token_hint", js.undefined)
+    inline def setId_token_hintUndefined: Self = StObject.set(x, "id_token_hint", js.undefined)
     
-    @scala.inline
-    def setPost_logout_redirect_uri(value: String): Self = StObject.set(x, "post_logout_redirect_uri", value.asInstanceOf[js.Any])
+    inline def setPost_logout_redirect_uri(value: String): Self = StObject.set(x, "post_logout_redirect_uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPost_logout_redirect_uriUndefined: Self = StObject.set(x, "post_logout_redirect_uri", js.undefined)
+    inline def setPost_logout_redirect_uriUndefined: Self = StObject.set(x, "post_logout_redirect_uri", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

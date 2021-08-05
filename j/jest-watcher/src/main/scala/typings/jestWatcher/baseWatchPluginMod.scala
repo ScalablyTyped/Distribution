@@ -21,10 +21,10 @@ object baseWatchPluginMod {
        with BaseWatchPlugin {
     def this(hasStdinStdout: Stdin) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _stdin: ReadStream = js.native
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _stdout: WriteStream = js.native
     
     /* CompleteClass */
@@ -48,9 +48,9 @@ object baseWatchPluginMod {
     extends StObject
        with WatchPlugin {
     
-    var _stdin: ReadStream
+    /* protected */ var _stdin: ReadStream
     
-    var _stdout: WriteStream
+    /* protected */ var _stdout: WriteStream
     
     @JSName("apply")
     def apply_MBaseWatchPlugin(_hooks: JestHookSubscriber): Unit
@@ -66,8 +66,7 @@ object baseWatchPluginMod {
   }
   object BaseWatchPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _stdin: ReadStream,
       _stdout: WriteStream,
       apply: JestHookSubscriber => Unit,
@@ -79,26 +78,19 @@ object baseWatchPluginMod {
       __obj.asInstanceOf[BaseWatchPlugin]
     }
     
-    @scala.inline
-    implicit class BaseWatchPluginMutableBuilder[Self <: BaseWatchPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: BaseWatchPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: JestHookSubscriber => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: JestHookSubscriber => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUsageInfo(value: GlobalConfig => UsageData | Null): Self = StObject.set(x, "getUsageInfo", js.Any.fromFunction1(value))
+      inline def setGetUsageInfo(value: GlobalConfig => UsageData | Null): Self = StObject.set(x, "getUsageInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKey(value: String => Unit): Self = StObject.set(x, "onKey", js.Any.fromFunction1(value))
+      inline def setOnKey(value: String => Unit): Self = StObject.set(x, "onKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRun(value: (GlobalConfig, UpdateConfigCallback) => js.Promise[Unit | Boolean]): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
+      inline def setRun(value: (GlobalConfig, UpdateConfigCallback) => js.Promise[Unit | Boolean]): Self = StObject.set(x, "run", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_stdin(value: ReadStream): Self = StObject.set(x, "_stdin", value.asInstanceOf[js.Any])
+      inline def set_stdin(value: ReadStream): Self = StObject.set(x, "_stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stdout(value: WriteStream): Self = StObject.set(x, "_stdout", value.asInstanceOf[js.Any])
+      inline def set_stdout(value: WriteStream): Self = StObject.set(x, "_stdout", value.asInstanceOf[js.Any])
     }
   }
 }

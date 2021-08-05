@@ -12,8 +12,7 @@ object createActionTrackingMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createActionTrackingMiddleware[T](hooks: IActionTrackingMiddlewareHooks[T]): IMiddlewareHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createActionTrackingMiddleware")(hooks.asInstanceOf[js.Any]).asInstanceOf[IMiddlewareHandler]
+  inline def createActionTrackingMiddleware[T](hooks: IActionTrackingMiddlewareHooks[T]): IMiddlewareHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createActionTrackingMiddleware")(hooks.asInstanceOf[js.Any]).asInstanceOf[IMiddlewareHandler]
   
   trait IActionTrackingMiddlewareHooks[T] extends StObject {
     
@@ -31,8 +30,7 @@ object createActionTrackingMiddlewareMod {
   }
   object IActionTrackingMiddlewareHooks {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       onFail: (IMiddlewareEvent, T, js.Any) => Unit,
       onResume: (IMiddlewareEvent, T) => Unit,
       onStart: IMiddlewareEvent => T,
@@ -43,29 +41,21 @@ object createActionTrackingMiddlewareMod {
       __obj.asInstanceOf[IActionTrackingMiddlewareHooks[T]]
     }
     
-    @scala.inline
-    implicit class IActionTrackingMiddlewareHooksMutableBuilder[Self <: IActionTrackingMiddlewareHooks[?], T] (val x: Self & IActionTrackingMiddlewareHooks[T]) extends AnyVal {
+    extension [Self <: IActionTrackingMiddlewareHooks[?], T](x: Self & IActionTrackingMiddlewareHooks[T]) {
       
-      @scala.inline
-      def setFilter(value: /* call */ IMiddlewareEvent => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* call */ IMiddlewareEvent => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setOnFail(value: (IMiddlewareEvent, T, js.Any) => Unit): Self = StObject.set(x, "onFail", js.Any.fromFunction3(value))
+      inline def setOnFail(value: (IMiddlewareEvent, T, js.Any) => Unit): Self = StObject.set(x, "onFail", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnResume(value: (IMiddlewareEvent, T) => Unit): Self = StObject.set(x, "onResume", js.Any.fromFunction2(value))
+      inline def setOnResume(value: (IMiddlewareEvent, T) => Unit): Self = StObject.set(x, "onResume", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStart(value: IMiddlewareEvent => T): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: IMiddlewareEvent => T): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuccess(value: (IMiddlewareEvent, T, js.Any) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
+      inline def setOnSuccess(value: (IMiddlewareEvent, T, js.Any) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnSuspend(value: (IMiddlewareEvent, T) => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction2(value))
+      inline def setOnSuspend(value: (IMiddlewareEvent, T) => Unit): Self = StObject.set(x, "onSuspend", js.Any.fromFunction2(value))
     }
   }
 }

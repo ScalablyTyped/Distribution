@@ -12,16 +12,13 @@ trait SavedFileData extends StObject {
 }
 object SavedFileData {
   
-  @scala.inline
-  def apply(savedFilePath: String): SavedFileData = {
+  inline def apply(savedFilePath: String): SavedFileData = {
     val __obj = js.Dynamic.literal(savedFilePath = savedFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFileData]
   }
   
-  @scala.inline
-  implicit class SavedFileDataMutableBuilder[Self <: SavedFileData] (val x: Self) extends AnyVal {
+  extension [Self <: SavedFileData](x: Self) {
     
-    @scala.inline
-    def setSavedFilePath(value: String): Self = StObject.set(x, "savedFilePath", value.asInstanceOf[js.Any])
+    inline def setSavedFilePath(value: String): Self = StObject.set(x, "savedFilePath", value.asInstanceOf[js.Any])
   }
 }

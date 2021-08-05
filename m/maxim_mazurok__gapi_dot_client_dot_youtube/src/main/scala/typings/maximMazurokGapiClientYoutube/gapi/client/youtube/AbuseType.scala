@@ -10,19 +10,15 @@ trait AbuseType extends StObject {
 }
 object AbuseType {
   
-  @scala.inline
-  def apply(): AbuseType = {
+  inline def apply(): AbuseType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AbuseType]
   }
   
-  @scala.inline
-  implicit class AbuseTypeMutableBuilder[Self <: AbuseType] (val x: Self) extends AnyVal {
+  extension [Self <: AbuseType](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

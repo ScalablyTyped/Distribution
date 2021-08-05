@@ -14,19 +14,15 @@ trait SchemaRegionInstanceGroupManagersSetTemplateRequest extends StObject {
 }
 object SchemaRegionInstanceGroupManagersSetTemplateRequest {
   
-  @scala.inline
-  def apply(): SchemaRegionInstanceGroupManagersSetTemplateRequest = {
+  inline def apply(): SchemaRegionInstanceGroupManagersSetTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionInstanceGroupManagersSetTemplateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRegionInstanceGroupManagersSetTemplateRequestMutableBuilder[Self <: SchemaRegionInstanceGroupManagersSetTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionInstanceGroupManagersSetTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
+    inline def setInstanceTemplate(value: String): Self = StObject.set(x, "instanceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
+    inline def setInstanceTemplateUndefined: Self = StObject.set(x, "instanceTemplate", js.undefined)
   }
 }

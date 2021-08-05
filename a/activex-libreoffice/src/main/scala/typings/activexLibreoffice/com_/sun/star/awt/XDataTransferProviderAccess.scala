@@ -45,8 +45,7 @@ trait XDataTransferProviderAccess
 }
 object XDataTransferProviderAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getClipboard: String => XClipboard,
     getDragGestureRecognizer: XWindow => XDragGestureRecognizer,
@@ -59,19 +58,14 @@ object XDataTransferProviderAccess {
     __obj.asInstanceOf[XDataTransferProviderAccess]
   }
   
-  @scala.inline
-  implicit class XDataTransferProviderAccessMutableBuilder[Self <: XDataTransferProviderAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XDataTransferProviderAccess](x: Self) {
     
-    @scala.inline
-    def setGetClipboard(value: String => XClipboard): Self = StObject.set(x, "getClipboard", js.Any.fromFunction1(value))
+    inline def setGetClipboard(value: String => XClipboard): Self = StObject.set(x, "getClipboard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDragGestureRecognizer(value: XWindow => XDragGestureRecognizer): Self = StObject.set(x, "getDragGestureRecognizer", js.Any.fromFunction1(value))
+    inline def setGetDragGestureRecognizer(value: XWindow => XDragGestureRecognizer): Self = StObject.set(x, "getDragGestureRecognizer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDragSource(value: XWindow => XDragSource): Self = StObject.set(x, "getDragSource", js.Any.fromFunction1(value))
+    inline def setGetDragSource(value: XWindow => XDragSource): Self = StObject.set(x, "getDragSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDropTarget(value: XWindow => XDropTarget): Self = StObject.set(x, "getDropTarget", js.Any.fromFunction1(value))
+    inline def setGetDropTarget(value: XWindow => XDropTarget): Self = StObject.set(x, "getDropTarget", js.Any.fromFunction1(value))
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FormatCondition extends StObject {
   
-  @JSName("Access.FormatCondition_typekey")
+  /* private */ @JSName("Access.FormatCondition_typekey")
   var AccessDotFormatCondition_typekey: FormatCondition = js.native
   
   var BackColor: Double = js.native

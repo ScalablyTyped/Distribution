@@ -18,23 +18,23 @@ object adamaxOptimizerMod {
     def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double, decay: Double) = this()
     def this(learningRate: Double, beta1: Double, beta2: Double, epsilon: Unit, decay: Double) = this()
     
-    var accBeta1: js.Any = js.native
+    /* private */ var accBeta1: js.Any = js.native
     
-    var accumulatedFirstMoment: js.Any = js.native
+    /* private */ var accumulatedFirstMoment: js.Any = js.native
     
-    var accumulatedWeightedInfNorm: js.Any = js.native
+    /* private */ var accumulatedWeightedInfNorm: js.Any = js.native
     
-    var beta1: Double = js.native
+    /* protected */ var beta1: Double = js.native
     
-    var beta2: Double = js.native
+    /* protected */ var beta2: Double = js.native
     
-    var decay: Double = js.native
+    /* protected */ var decay: Double = js.native
     
-    var epsilon: Double = js.native
+    /* protected */ var epsilon: Double = js.native
     
-    var iteration: js.Any = js.native
+    /* private */ var iteration: js.Any = js.native
     
-    var learningRate: Double = js.native
+    /* protected */ var learningRate: Double = js.native
   }
   /* static members */
   object AdamaxOptimizer {
@@ -47,11 +47,9 @@ object adamaxOptimizerMod {
     @JSImport("@tensorflow/tfjs-core/dist/optimizers/adamax_optimizer", "AdamaxOptimizer.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
     
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
 }

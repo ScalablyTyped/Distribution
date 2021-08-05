@@ -18,19 +18,15 @@ trait UpdateKeyDescriptionRequest extends StObject {
 }
 object UpdateKeyDescriptionRequest {
   
-  @scala.inline
-  def apply(Description: DescriptionType, KeyId: KeyIdType): UpdateKeyDescriptionRequest = {
+  inline def apply(Description: DescriptionType, KeyId: KeyIdType): UpdateKeyDescriptionRequest = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateKeyDescriptionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateKeyDescriptionRequestMutableBuilder[Self <: UpdateKeyDescriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateKeyDescriptionRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }
 }

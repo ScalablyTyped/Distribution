@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdWrapTypeMerged extends StObject
 object WdWrapTypeMerged {
   
-  @scala.inline
-  def wdWrapMergeBehind: `3` = 3.asInstanceOf[`3`]
+  inline def wdWrapMergeBehind: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdWrapMergeFront: `4` = 4.asInstanceOf[`4`]
+  inline def wdWrapMergeFront: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdWrapMergeInline: `0` = 0.asInstanceOf[`0`]
+  inline def wdWrapMergeInline: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdWrapMergeSquare: `1` = 1.asInstanceOf[`1`]
+  inline def wdWrapMergeSquare: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdWrapMergeThrough: `5` = 5.asInstanceOf[`5`]
+  inline def wdWrapMergeThrough: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdWrapMergeTight: `2` = 2.asInstanceOf[`2`]
+  inline def wdWrapMergeTight: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdWrapMergeTopBottom: `6` = 6.asInstanceOf[`6`]
+  inline def wdWrapMergeTopBottom: `6` = 6.asInstanceOf[`6`]
 }

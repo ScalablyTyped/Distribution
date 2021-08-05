@@ -13,16 +13,13 @@ trait GetAnalyzerRequest extends StObject {
 }
 object GetAnalyzerRequest {
   
-  @scala.inline
-  def apply(analyzerName: Name): GetAnalyzerRequest = {
+  inline def apply(analyzerName: Name): GetAnalyzerRequest = {
     val __obj = js.Dynamic.literal(analyzerName = analyzerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAnalyzerRequest]
   }
   
-  @scala.inline
-  implicit class GetAnalyzerRequestMutableBuilder[Self <: GetAnalyzerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAnalyzerRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
+    inline def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
   }
 }

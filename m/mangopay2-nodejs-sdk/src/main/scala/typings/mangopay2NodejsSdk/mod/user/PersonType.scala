@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PersonType extends StObject
 object PersonType {
   
-  @scala.inline
-  def LEGAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL = "LEGAL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL]
+  inline def LEGAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL = "LEGAL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL]
   
-  @scala.inline
-  def NATURAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL = "NATURAL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL]
+  inline def NATURAL: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL = "NATURAL".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL]
 }

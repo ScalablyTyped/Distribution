@@ -13,16 +13,13 @@ trait MonitoringInput extends StObject {
 }
 object MonitoringInput {
   
-  @scala.inline
-  def apply(EndpointInput: EndpointInput): MonitoringInput = {
+  inline def apply(EndpointInput: EndpointInput): MonitoringInput = {
     val __obj = js.Dynamic.literal(EndpointInput = EndpointInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringInput]
   }
   
-  @scala.inline
-  implicit class MonitoringInputMutableBuilder[Self <: MonitoringInput] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringInput](x: Self) {
     
-    @scala.inline
-    def setEndpointInput(value: EndpointInput): Self = StObject.set(x, "EndpointInput", value.asInstanceOf[js.Any])
+    inline def setEndpointInput(value: EndpointInput): Self = StObject.set(x, "EndpointInput", value.asInstanceOf[js.Any])
   }
 }

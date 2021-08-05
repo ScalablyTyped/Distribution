@@ -13,19 +13,15 @@ trait GetSkewSuccessCallbackResult extends StObject {
 }
 object GetSkewSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, skew: Double): GetSkewSuccessCallbackResult = {
+  inline def apply(errMsg: String, skew: Double): GetSkewSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], skew = skew.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSkewSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetSkewSuccessCallbackResultMutableBuilder[Self <: GetSkewSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSkewSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkew(value: Double): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
+    inline def setSkew(value: Double): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
   }
 }

@@ -16,16 +16,13 @@ trait IMemberTypeResource extends StObject {
 }
 object IMemberTypeResource {
   
-  @scala.inline
-  def apply(getTypes: () => js.Any): IMemberTypeResource = {
+  inline def apply(getTypes: () => js.Any): IMemberTypeResource = {
     val __obj = js.Dynamic.literal(getTypes = js.Any.fromFunction0(getTypes))
     __obj.asInstanceOf[IMemberTypeResource]
   }
   
-  @scala.inline
-  implicit class IMemberTypeResourceMutableBuilder[Self <: IMemberTypeResource] (val x: Self) extends AnyVal {
+  extension [Self <: IMemberTypeResource](x: Self) {
     
-    @scala.inline
-    def setGetTypes(value: () => js.Any): Self = StObject.set(x, "getTypes", js.Any.fromFunction0(value))
+    inline def setGetTypes(value: () => js.Any): Self = StObject.set(x, "getTypes", js.Any.fromFunction0(value))
   }
 }

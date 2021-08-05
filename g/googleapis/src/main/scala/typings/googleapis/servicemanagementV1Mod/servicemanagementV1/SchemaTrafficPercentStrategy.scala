@@ -31,19 +31,15 @@ trait SchemaTrafficPercentStrategy extends StObject {
 }
 object SchemaTrafficPercentStrategy {
   
-  @scala.inline
-  def apply(): SchemaTrafficPercentStrategy = {
+  inline def apply(): SchemaTrafficPercentStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrafficPercentStrategy]
   }
   
-  @scala.inline
-  implicit class SchemaTrafficPercentStrategyMutableBuilder[Self <: SchemaTrafficPercentStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTrafficPercentStrategy](x: Self) {
     
-    @scala.inline
-    def setPercentages(value: StringDictionary[Double]): Self = StObject.set(x, "percentages", value.asInstanceOf[js.Any])
+    inline def setPercentages(value: StringDictionary[Double]): Self = StObject.set(x, "percentages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentagesUndefined: Self = StObject.set(x, "percentages", js.undefined)
+    inline def setPercentagesUndefined: Self = StObject.set(x, "percentages", js.undefined)
   }
 }

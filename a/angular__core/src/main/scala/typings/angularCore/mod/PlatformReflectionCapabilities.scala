@@ -46,8 +46,7 @@ trait PlatformReflectionCapabilities extends StObject {
 }
 object PlatformReflectionCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotations: Type[js.Any] => js.Array[js.Any],
     factory: Type[js.Any] => js.Function,
     getter: String => ɵGetterFn,
@@ -67,49 +66,34 @@ object PlatformReflectionCapabilities {
     __obj.asInstanceOf[PlatformReflectionCapabilities]
   }
   
-  @scala.inline
-  implicit class PlatformReflectionCapabilitiesMutableBuilder[Self <: PlatformReflectionCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformReflectionCapabilities](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: Type[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "annotations", js.Any.fromFunction1(value))
+    inline def setAnnotations(value: Type[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "annotations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFactory(value: Type[js.Any] => js.Function): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
+    inline def setFactory(value: Type[js.Any] => js.Function): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetter(value: String => ɵGetterFn): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
+    inline def setGetter(value: String => ɵGetterFn): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGuards(value: js.Any => StringDictionary[js.Any]): Self = StObject.set(x, "guards", js.Any.fromFunction1(value))
+    inline def setGuards(value: js.Any => StringDictionary[js.Any]): Self = StObject.set(x, "guards", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasLifecycleHook(value: (js.Any, String) => Boolean): Self = StObject.set(x, "hasLifecycleHook", js.Any.fromFunction2(value))
+    inline def setHasLifecycleHook(value: (js.Any, String) => Boolean): Self = StObject.set(x, "hasLifecycleHook", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setImportUri(value: Type[js.Any] => String): Self = StObject.set(x, "importUri", js.Any.fromFunction1(value))
+    inline def setImportUri(value: Type[js.Any] => String): Self = StObject.set(x, "importUri", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsReflectionEnabled(value: () => Boolean): Self = StObject.set(x, "isReflectionEnabled", js.Any.fromFunction0(value))
+    inline def setIsReflectionEnabled(value: () => Boolean): Self = StObject.set(x, "isReflectionEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMethod(value: String => ɵMethodFn): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
+    inline def setMethod(value: String => ɵMethodFn): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParameters(value: Type[js.Any] => js.Array[js.Array[js.Any]]): Self = StObject.set(x, "parameters", js.Any.fromFunction1(value))
+    inline def setParameters(value: Type[js.Any] => js.Array[js.Array[js.Any]]): Self = StObject.set(x, "parameters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropMetadata(value: Type[js.Any] => StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "propMetadata", js.Any.fromFunction1(value))
+    inline def setPropMetadata(value: Type[js.Any] => StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "propMetadata", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveEnum(value: (js.Any, String) => js.Any): Self = StObject.set(x, "resolveEnum", js.Any.fromFunction2(value))
+    inline def setResolveEnum(value: (js.Any, String) => js.Any): Self = StObject.set(x, "resolveEnum", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveIdentifier(value: (String, String, js.Array[String], js.Any) => js.Any): Self = StObject.set(x, "resolveIdentifier", js.Any.fromFunction4(value))
+    inline def setResolveIdentifier(value: (String, String, js.Array[String], js.Any) => js.Any): Self = StObject.set(x, "resolveIdentifier", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setResourceUri(value: Type[js.Any] => String): Self = StObject.set(x, "resourceUri", js.Any.fromFunction1(value))
+    inline def setResourceUri(value: Type[js.Any] => String): Self = StObject.set(x, "resourceUri", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetter(value: String => ɵSetterFn): Self = StObject.set(x, "setter", js.Any.fromFunction1(value))
+    inline def setSetter(value: String => ɵSetterFn): Self = StObject.set(x, "setter", js.Any.fromFunction1(value))
   }
 }

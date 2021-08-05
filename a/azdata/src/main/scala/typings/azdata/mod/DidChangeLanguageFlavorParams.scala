@@ -14,22 +14,17 @@ trait DidChangeLanguageFlavorParams extends StObject {
 }
 object DidChangeLanguageFlavorParams {
   
-  @scala.inline
-  def apply(flavor: String, language: String, uri: String): DidChangeLanguageFlavorParams = {
+  inline def apply(flavor: String, language: String, uri: String): DidChangeLanguageFlavorParams = {
     val __obj = js.Dynamic.literal(flavor = flavor.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[DidChangeLanguageFlavorParams]
   }
   
-  @scala.inline
-  implicit class DidChangeLanguageFlavorParamsMutableBuilder[Self <: DidChangeLanguageFlavorParams] (val x: Self) extends AnyVal {
+  extension [Self <: DidChangeLanguageFlavorParams](x: Self) {
     
-    @scala.inline
-    def setFlavor(value: String): Self = StObject.set(x, "flavor", value.asInstanceOf[js.Any])
+    inline def setFlavor(value: String): Self = StObject.set(x, "flavor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

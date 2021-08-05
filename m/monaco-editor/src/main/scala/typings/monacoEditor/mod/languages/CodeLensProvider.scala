@@ -25,32 +25,25 @@ trait CodeLensProvider extends StObject {
 }
 object CodeLensProvider {
   
-  @scala.inline
-  def apply(provideCodeLenses: (ITextModel, CancellationToken) => ProviderResult[CodeLensList]): CodeLensProvider = {
+  inline def apply(provideCodeLenses: (ITextModel, CancellationToken) => ProviderResult[CodeLensList]): CodeLensProvider = {
     val __obj = js.Dynamic.literal(provideCodeLenses = js.Any.fromFunction2(provideCodeLenses))
     __obj.asInstanceOf[CodeLensProvider]
   }
   
-  @scala.inline
-  implicit class CodeLensProviderMutableBuilder[Self <: CodeLensProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CodeLensProvider](x: Self) {
     
-    @scala.inline
-    def setOnDidChange(
+    inline def setOnDidChange(
       value: (/* listener */ js.Function1[CodeLensProvider, js.Any], /* thisArg */ js.UndefOr[js.Any]) => IDisposable
     ): Self = StObject.set(x, "onDidChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDidChangeUndefined: Self = StObject.set(x, "onDidChange", js.undefined)
+    inline def setOnDidChangeUndefined: Self = StObject.set(x, "onDidChange", js.undefined)
     
-    @scala.inline
-    def setProvideCodeLenses(value: (ITextModel, CancellationToken) => ProviderResult[CodeLensList]): Self = StObject.set(x, "provideCodeLenses", js.Any.fromFunction2(value))
+    inline def setProvideCodeLenses(value: (ITextModel, CancellationToken) => ProviderResult[CodeLensList]): Self = StObject.set(x, "provideCodeLenses", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveCodeLens(
+    inline def setResolveCodeLens(
       value: (/* model */ ITextModel, /* codeLens */ CodeLens, /* token */ CancellationToken) => ProviderResult[CodeLens]
     ): Self = StObject.set(x, "resolveCodeLens", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResolveCodeLensUndefined: Self = StObject.set(x, "resolveCodeLens", js.undefined)
+    inline def setResolveCodeLensUndefined: Self = StObject.set(x, "resolveCodeLens", js.undefined)
   }
 }

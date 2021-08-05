@@ -18,19 +18,15 @@ trait ModifyIdFormatRequest extends StObject {
 }
 object ModifyIdFormatRequest {
   
-  @scala.inline
-  def apply(Resource: String, UseLongIds: Boolean): ModifyIdFormatRequest = {
+  inline def apply(Resource: String, UseLongIds: Boolean): ModifyIdFormatRequest = {
     val __obj = js.Dynamic.literal(Resource = Resource.asInstanceOf[js.Any], UseLongIds = UseLongIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyIdFormatRequest]
   }
   
-  @scala.inline
-  implicit class ModifyIdFormatRequestMutableBuilder[Self <: ModifyIdFormatRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyIdFormatRequest](x: Self) {
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLongIds(value: Boolean): Self = StObject.set(x, "UseLongIds", value.asInstanceOf[js.Any])
+    inline def setUseLongIds(value: Boolean): Self = StObject.set(x, "UseLongIds", value.asInstanceOf[js.Any])
   }
 }

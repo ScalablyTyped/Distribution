@@ -14,19 +14,15 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(StdFont: StdFont, StdPicture: StdPicture): ActiveXObjectNameMap = {
+  inline def apply(StdFont: StdFont, StdPicture: StdPicture): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal(StdFont = StdFont.asInstanceOf[js.Any], StdPicture = StdPicture.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setStdFont(value: StdFont): Self = StObject.set(x, "StdFont", value.asInstanceOf[js.Any])
+    inline def setStdFont(value: StdFont): Self = StObject.set(x, "StdFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdPicture(value: StdPicture): Self = StObject.set(x, "StdPicture", value.asInstanceOf[js.Any])
+    inline def setStdPicture(value: StdPicture): Self = StObject.set(x, "StdPicture", value.asInstanceOf[js.Any])
   }
 }

@@ -17,19 +17,15 @@ trait SchemaAssignment extends StObject {
 }
 object SchemaAssignment {
   
-  @scala.inline
-  def apply(): SchemaAssignment = {
+  inline def apply(): SchemaAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAssignment]
   }
   
-  @scala.inline
-  implicit class SchemaAssignmentMutableBuilder[Self <: SchemaAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAssignment](x: Self) {
     
-    @scala.inline
-    def setStudentWorkFolder(value: SchemaDriveFolder): Self = StObject.set(x, "studentWorkFolder", value.asInstanceOf[js.Any])
+    inline def setStudentWorkFolder(value: SchemaDriveFolder): Self = StObject.set(x, "studentWorkFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentWorkFolderUndefined: Self = StObject.set(x, "studentWorkFolder", js.undefined)
+    inline def setStudentWorkFolderUndefined: Self = StObject.set(x, "studentWorkFolder", js.undefined)
   }
 }

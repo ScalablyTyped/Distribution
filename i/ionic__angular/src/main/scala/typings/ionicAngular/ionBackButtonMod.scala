@@ -16,11 +16,11 @@ object ionBackButtonMod {
   class IonBackButtonDelegate protected () extends StObject {
     def this(routerOutlet: IonRouterOutlet, navCtrl: NavController, config: Config) = this()
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     var defaultHref: js.UndefOr[String | Null] = js.native
     
-    var navCtrl: js.Any = js.native
+    /* private */ var navCtrl: js.Any = js.native
     
     /**
       * @internal
@@ -29,6 +29,6 @@ object ionBackButtonMod {
     
     var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     
-    var routerOutlet: js.Any = js.native
+    /* private */ var routerOutlet: js.Any = js.native
   }
 }

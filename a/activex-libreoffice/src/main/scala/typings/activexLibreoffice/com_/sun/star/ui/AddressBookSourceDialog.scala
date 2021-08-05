@@ -26,8 +26,7 @@ trait AddressBookSourceDialog
 }
 object AddressBookSourceDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createWithDataSource: (XWindow, XPropertySet, String, String, String) => Unit,
     execute: () => Double,
@@ -39,10 +38,8 @@ object AddressBookSourceDialog {
     __obj.asInstanceOf[AddressBookSourceDialog]
   }
   
-  @scala.inline
-  implicit class AddressBookSourceDialogMutableBuilder[Self <: AddressBookSourceDialog] (val x: Self) extends AnyVal {
+  extension [Self <: AddressBookSourceDialog](x: Self) {
     
-    @scala.inline
-    def setCreateWithDataSource(value: (XWindow, XPropertySet, String, String, String) => Unit): Self = StObject.set(x, "createWithDataSource", js.Any.fromFunction5(value))
+    inline def setCreateWithDataSource(value: (XWindow, XPropertySet, String, String, String) => Unit): Self = StObject.set(x, "createWithDataSource", js.Any.fromFunction5(value))
   }
 }

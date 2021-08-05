@@ -10,19 +10,15 @@ trait ShowCursor extends StObject {
 }
 object ShowCursor {
   
-  @scala.inline
-  def apply(): ShowCursor = {
+  inline def apply(): ShowCursor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShowCursor]
   }
   
-  @scala.inline
-  implicit class ShowCursorMutableBuilder[Self <: ShowCursor] (val x: Self) extends AnyVal {
+  extension [Self <: ShowCursor](x: Self) {
     
-    @scala.inline
-    def setShowCursor(value: Boolean): Self = StObject.set(x, "showCursor", value.asInstanceOf[js.Any])
+    inline def setShowCursor(value: Boolean): Self = StObject.set(x, "showCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCursorUndefined: Self = StObject.set(x, "showCursor", js.undefined)
+    inline def setShowCursorUndefined: Self = StObject.set(x, "showCursor", js.undefined)
   }
 }

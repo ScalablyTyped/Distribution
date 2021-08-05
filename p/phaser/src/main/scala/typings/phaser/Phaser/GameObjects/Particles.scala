@@ -284,8 +284,7 @@ object Particles {
   }
   object GravityWell {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       epsilon: Double,
       power: Double,
@@ -297,26 +296,19 @@ object Particles {
       __obj.asInstanceOf[GravityWell]
     }
     
-    @scala.inline
-    implicit class GravityWellMutableBuilder[Self <: GravityWell] (val x: Self) extends AnyVal {
+    extension [Self <: GravityWell](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
+      inline def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+      inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: (Particle, Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      inline def setUpdate(value: (Particle, Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -484,8 +476,7 @@ object Particles {
   }
   object Particle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accelerationX: Double,
       accelerationY: Double,
       alpha: Double,
@@ -519,92 +510,63 @@ object Particles {
       __obj.asInstanceOf[Particle]
     }
     
-    @scala.inline
-    implicit class ParticleMutableBuilder[Self <: Particle] (val x: Self) extends AnyVal {
+    extension [Self <: Particle](x: Self) {
       
-      @scala.inline
-      def setAccelerationX(value: Double): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
+      inline def setAccelerationX(value: Double): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccelerationY(value: Double): Self = StObject.set(x, "accelerationY", value.asInstanceOf[js.Any])
+      inline def setAccelerationY(value: Double): Self = StObject.set(x, "accelerationY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounce(value: Double): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+      inline def setBounce(value: Double): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckBounds(value: ParticleEmitter => Unit): Self = StObject.set(x, "checkBounds", js.Any.fromFunction1(value))
+      inline def setCheckBounds(value: ParticleEmitter => Unit): Self = StObject.set(x, "checkBounds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComputeVelocity(value: (ParticleEmitter, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "computeVelocity", js.Any.fromFunction4(value))
+      inline def setComputeVelocity(value: (ParticleEmitter, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "computeVelocity", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayCurrent(value: Double): Self = StObject.set(x, "delayCurrent", value.asInstanceOf[js.Any])
+      inline def setDelayCurrent(value: Double): Self = StObject.set(x, "delayCurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitter(value: ParticleEmitter): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
+      inline def setEmitter(value: ParticleEmitter): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFire(value: (Double, Double) => Unit): Self = StObject.set(x, "fire", js.Any.fromFunction2(value))
+      inline def setFire(value: (Double, Double) => Unit): Self = StObject.set(x, "fire", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlive(value: () => Boolean): Self = StObject.set(x, "isAlive", js.Any.fromFunction0(value))
+      inline def setIsAlive(value: () => Boolean): Self = StObject.set(x, "isAlive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
+      inline def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifeCurrent(value: Double): Self = StObject.set(x, "lifeCurrent", value.asInstanceOf[js.Any])
+      inline def setLifeCurrent(value: Double): Self = StObject.set(x, "lifeCurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifeT(value: Double): Self = StObject.set(x, "lifeT", value.asInstanceOf[js.Any])
+      inline def setLifeT(value: Double): Self = StObject.set(x, "lifeT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxVelocityX(value: Double): Self = StObject.set(x, "maxVelocityX", value.asInstanceOf[js.Any])
+      inline def setMaxVelocityX(value: Double): Self = StObject.set(x, "maxVelocityX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxVelocityY(value: Double): Self = StObject.set(x, "maxVelocityY", value.asInstanceOf[js.Any])
+      inline def setMaxVelocityY(value: Double): Self = StObject.set(x, "maxVelocityY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetPosition(value: () => Unit): Self = StObject.set(x, "resetPosition", js.Any.fromFunction0(value))
+      inline def setResetPosition(value: () => Unit): Self = StObject.set(x, "resetPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTint(value: integer): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+      inline def setTint(value: integer): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: (Double, Double, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      inline def setUpdate(value: (Double, Double, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
+      inline def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityY(value: Double): Self = StObject.set(x, "velocityY", value.asInstanceOf[js.Any])
+      inline def setVelocityY(value: Double): Self = StObject.set(x, "velocityY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1504,23 +1466,18 @@ object Particles {
     }
     object DeathZone {
       
-      @scala.inline
-      def apply(killOnEnter: Boolean, source: DeathZoneSource, willKill: Particle => Boolean): DeathZone = {
+      inline def apply(killOnEnter: Boolean, source: DeathZoneSource, willKill: Particle => Boolean): DeathZone = {
         val __obj = js.Dynamic.literal(killOnEnter = killOnEnter.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], willKill = js.Any.fromFunction1(willKill))
         __obj.asInstanceOf[DeathZone]
       }
       
-      @scala.inline
-      implicit class DeathZoneMutableBuilder[Self <: DeathZone] (val x: Self) extends AnyVal {
+      extension [Self <: DeathZone](x: Self) {
         
-        @scala.inline
-        def setKillOnEnter(value: Boolean): Self = StObject.set(x, "killOnEnter", value.asInstanceOf[js.Any])
+        inline def setKillOnEnter(value: Boolean): Self = StObject.set(x, "killOnEnter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSource(value: DeathZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: DeathZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWillKill(value: Particle => Boolean): Self = StObject.set(x, "willKill", js.Any.fromFunction1(value))
+        inline def setWillKill(value: Particle => Boolean): Self = StObject.set(x, "willKill", js.Any.fromFunction1(value))
       }
     }
     
@@ -1586,8 +1543,7 @@ object Particles {
     }
     object EdgeZone {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         changeSource: EdgeZoneSource => EdgeZone,
         counter: Double,
         getPoint: Particle => Unit,
@@ -1603,41 +1559,29 @@ object Particles {
         __obj.asInstanceOf[EdgeZone]
       }
       
-      @scala.inline
-      implicit class EdgeZoneMutableBuilder[Self <: EdgeZone] (val x: Self) extends AnyVal {
+      extension [Self <: EdgeZone](x: Self) {
         
-        @scala.inline
-        def setChangeSource(value: EdgeZoneSource => EdgeZone): Self = StObject.set(x, "changeSource", js.Any.fromFunction1(value))
+        inline def setChangeSource(value: EdgeZoneSource => EdgeZone): Self = StObject.set(x, "changeSource", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+        inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGetPoint(value: Particle => Unit): Self = StObject.set(x, "getPoint", js.Any.fromFunction1(value))
+        inline def setGetPoint(value: Particle => Unit): Self = StObject.set(x, "getPoint", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+        inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+        inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
         
-        @scala.inline
-        def setQuantity(value: integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+        inline def setQuantity(value: integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeamless(value: Boolean): Self = StObject.set(x, "seamless", value.asInstanceOf[js.Any])
+        inline def setSeamless(value: Boolean): Self = StObject.set(x, "seamless", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSource(value: EdgeZoneSource | RandomZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: EdgeZoneSource | RandomZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStepRate(value: Double): Self = StObject.set(x, "stepRate", value.asInstanceOf[js.Any])
+        inline def setStepRate(value: Double): Self = StObject.set(x, "stepRate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateSource(value: () => EdgeZone): Self = StObject.set(x, "updateSource", js.Any.fromFunction0(value))
+        inline def setUpdateSource(value: () => EdgeZone): Self = StObject.set(x, "updateSource", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
+        inline def setYoyo(value: Boolean): Self = StObject.set(x, "yoyo", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1659,20 +1603,16 @@ object Particles {
     }
     object RandomZone {
       
-      @scala.inline
-      def apply(getPoint: Particle => Unit, source: RandomZoneSource): RandomZone = {
+      inline def apply(getPoint: Particle => Unit, source: RandomZoneSource): RandomZone = {
         val __obj = js.Dynamic.literal(getPoint = js.Any.fromFunction1(getPoint), source = source.asInstanceOf[js.Any])
         __obj.asInstanceOf[RandomZone]
       }
       
-      @scala.inline
-      implicit class RandomZoneMutableBuilder[Self <: RandomZone] (val x: Self) extends AnyVal {
+      extension [Self <: RandomZone](x: Self) {
         
-        @scala.inline
-        def setGetPoint(value: Particle => Unit): Self = StObject.set(x, "getPoint", js.Any.fromFunction1(value))
+        inline def setGetPoint(value: Particle => Unit): Self = StObject.set(x, "getPoint", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSource(value: RandomZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: RandomZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       }
     }
   }

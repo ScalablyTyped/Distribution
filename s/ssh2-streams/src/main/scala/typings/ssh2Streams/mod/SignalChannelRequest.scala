@@ -17,22 +17,17 @@ trait SignalChannelRequest
 }
 object SignalChannelRequest {
   
-  @scala.inline
-  def apply(recipient: Double, signal: String): SignalChannelRequest = {
+  inline def apply(recipient: Double, signal: String): SignalChannelRequest = {
     val __obj = js.Dynamic.literal(recipient = recipient.asInstanceOf[js.Any], request = "signal", signal = signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalChannelRequest]
   }
   
-  @scala.inline
-  implicit class SignalChannelRequestMutableBuilder[Self <: SignalChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SignalChannelRequest](x: Self) {
     
-    @scala.inline
-    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: signal): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: signal): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait ECSService extends StObject {
 }
 object ECSService {
   
-  @scala.inline
-  def apply(): ECSService = {
+  inline def apply(): ECSService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ECSService]
   }
   
-  @scala.inline
-  implicit class ECSServiceMutableBuilder[Self <: ECSService] (val x: Self) extends AnyVal {
+  extension [Self <: ECSService](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: ECSClusterName): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: ECSClusterName): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: ECSServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ECSServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

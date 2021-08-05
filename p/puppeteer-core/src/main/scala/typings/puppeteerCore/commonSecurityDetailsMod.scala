@@ -14,17 +14,17 @@ object commonSecurityDetailsMod {
       */
     def this(securityPayload: typings.devtoolsProtocol.mod.Protocol.Network.SecurityDetails) = this()
     
-    var _issuer: js.Any = js.native
+    /* private */ var _issuer: js.Any = js.native
     
-    var _protocol: js.Any = js.native
+    /* private */ var _protocol: js.Any = js.native
     
-    var _sanList: js.Any = js.native
+    /* private */ var _sanList: js.Any = js.native
     
-    var _subjectName: js.Any = js.native
+    /* private */ var _subjectName: js.Any = js.native
     
-    var _validFrom: js.Any = js.native
+    /* private */ var _validFrom: js.Any = js.native
     
-    var _validTo: js.Any = js.native
+    /* private */ var _validTo: js.Any = js.native
     
     /**
       * @returns The name of the issuer of the certificate.

@@ -10,6 +10,5 @@ object parse {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def transform(transformString: String): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transformString.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def transform(transformString: String): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(transformString.asInstanceOf[js.Any]).asInstanceOf[Transform]
 }

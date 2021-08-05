@@ -9,8 +9,7 @@ trait QueryInput
      with typings.awsSdkClientDynamodbNode.typesQueryInputMod.QueryInput
 object QueryInput {
   
-  @scala.inline
-  def apply(TableName: String): QueryInput = {
+  inline def apply(TableName: String): QueryInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryInput]
   }

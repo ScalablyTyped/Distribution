@@ -41,8 +41,7 @@ trait EmailAddressDetails extends StObject {
 }
 object EmailAddressDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appointmentResponse: ResponseType | String,
     displayName: String,
     emailAddress: String,
@@ -52,19 +51,14 @@ object EmailAddressDetails {
     __obj.asInstanceOf[EmailAddressDetails]
   }
   
-  @scala.inline
-  implicit class EmailAddressDetailsMutableBuilder[Self <: EmailAddressDetails] (val x: Self) extends AnyVal {
+  extension [Self <: EmailAddressDetails](x: Self) {
     
-    @scala.inline
-    def setAppointmentResponse(value: ResponseType | String): Self = StObject.set(x, "appointmentResponse", value.asInstanceOf[js.Any])
+    inline def setAppointmentResponse(value: ResponseType | String): Self = StObject.set(x, "appointmentResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientType(value: RecipientType | String): Self = StObject.set(x, "recipientType", value.asInstanceOf[js.Any])
+    inline def setRecipientType(value: RecipientType | String): Self = StObject.set(x, "recipientType", value.asInstanceOf[js.Any])
   }
 }

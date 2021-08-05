@@ -13,19 +13,15 @@ trait AwsEc2SecurityGroupIpRange extends StObject {
 }
 object AwsEc2SecurityGroupIpRange {
   
-  @scala.inline
-  def apply(): AwsEc2SecurityGroupIpRange = {
+  inline def apply(): AwsEc2SecurityGroupIpRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsEc2SecurityGroupIpRange]
   }
   
-  @scala.inline
-  implicit class AwsEc2SecurityGroupIpRangeMutableBuilder[Self <: AwsEc2SecurityGroupIpRange] (val x: Self) extends AnyVal {
+  extension [Self <: AwsEc2SecurityGroupIpRange](x: Self) {
     
-    @scala.inline
-    def setCidrIp(value: NonEmptyString): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
+    inline def setCidrIp(value: NonEmptyString): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
+    inline def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
   }
 }

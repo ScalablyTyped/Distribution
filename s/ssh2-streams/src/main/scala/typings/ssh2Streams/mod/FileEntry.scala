@@ -14,22 +14,17 @@ trait FileEntry extends StObject {
 }
 object FileEntry {
   
-  @scala.inline
-  def apply(attrs: Attributes, filename: String, longname: String): FileEntry = {
+  inline def apply(attrs: Attributes, filename: String, longname: String): FileEntry = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], longname = longname.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileEntry]
   }
   
-  @scala.inline
-  implicit class FileEntryMutableBuilder[Self <: FileEntry] (val x: Self) extends AnyVal {
+  extension [Self <: FileEntry](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: Attributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: Attributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongname(value: String): Self = StObject.set(x, "longname", value.asInstanceOf[js.Any])
+    inline def setLongname(value: String): Self = StObject.set(x, "longname", value.asInstanceOf[js.Any])
   }
 }

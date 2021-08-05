@@ -18,8 +18,7 @@ trait ICreateSubscriptionOptions extends StObject {
 }
 object ICreateSubscriptionOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultMessageTimeToLive: String,
     EnableDeadLetteringOnFilterEvaluationExceptions: Boolean,
     EnableDeadLetteringOnMessageExpiration: Boolean,
@@ -30,22 +29,16 @@ object ICreateSubscriptionOptions {
     __obj.asInstanceOf[ICreateSubscriptionOptions]
   }
   
-  @scala.inline
-  implicit class ICreateSubscriptionOptionsMutableBuilder[Self <: ICreateSubscriptionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateSubscriptionOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
+    inline def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    inline def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
+    inline def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
+    inline def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
   }
 }

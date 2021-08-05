@@ -26,31 +26,27 @@ object checkboxesMod {
     @JSImport("@storybook/addon-knobs/dist/components/types/Checkboxes", "default.defaultProps")
     @js.native
     def defaultProps: CheckboxesTypeProps = js.native
-    @scala.inline
-    def defaultProps_=(x: CheckboxesTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CheckboxesTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def deserialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[CheckboxesTypeKnobValue]
+    inline def deserialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[CheckboxesTypeKnobValue]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Checkboxes", "default.propTypes")
     @js.native
     def propTypes: IsInline = js.native
-    @scala.inline
-    def propTypes_=(x: IsInline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: IsInline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[CheckboxesTypeKnobValue]
+    inline def serialize(value: CheckboxesTypeKnobValue): CheckboxesTypeKnobValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[CheckboxesTypeKnobValue]
   }
   
   @js.native
   trait CheckboxesType
     extends Component[CheckboxesTypeProps, CheckboxesTypeState, js.Any] {
     
-    var handleChange: js.Any = js.native
+    /* private */ var handleChange: js.Any = js.native
     
-    var renderCheckbox: js.Any = js.native
+    /* private */ var renderCheckbox: js.Any = js.native
     
-    var renderCheckboxList: js.Any = js.native
+    /* private */ var renderCheckboxList: js.Any = js.native
   }
   
   trait CheckboxesTypeKnob
@@ -61,17 +57,14 @@ object checkboxesMod {
   }
   object CheckboxesTypeKnob {
     
-    @scala.inline
-    def apply(name: String, options: Record[String, String], value: CheckboxesTypeKnobValue): CheckboxesTypeKnob = {
+    inline def apply(name: String, options: Record[String, String], value: CheckboxesTypeKnobValue): CheckboxesTypeKnob = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckboxesTypeKnob]
     }
     
-    @scala.inline
-    implicit class CheckboxesTypeKnobMutableBuilder[Self <: CheckboxesTypeKnob] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxesTypeKnob](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Record[String, String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Record[String, String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,8 +80,7 @@ object checkboxesMod {
   }
   object CheckboxesTypeProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isInline: Boolean,
       knob: CheckboxesTypeKnob,
       onChange: CheckboxesTypeKnobValue => CheckboxesTypeKnobValue
@@ -97,11 +89,9 @@ object checkboxesMod {
       __obj.asInstanceOf[CheckboxesTypeProps]
     }
     
-    @scala.inline
-    implicit class CheckboxesTypePropsMutableBuilder[Self <: CheckboxesTypeProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxesTypeProps](x: Self) {
       
-      @scala.inline
-      def setKnob(value: CheckboxesTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+      inline def setKnob(value: CheckboxesTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +101,16 @@ object checkboxesMod {
   }
   object CheckboxesTypeState {
     
-    @scala.inline
-    def apply(values: CheckboxesTypeKnobValue): CheckboxesTypeState = {
+    inline def apply(values: CheckboxesTypeKnobValue): CheckboxesTypeState = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckboxesTypeState]
     }
     
-    @scala.inline
-    implicit class CheckboxesTypeStateMutableBuilder[Self <: CheckboxesTypeState] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxesTypeState](x: Self) {
       
-      @scala.inline
-      def setValues(value: CheckboxesTypeKnobValue): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: CheckboxesTypeKnobValue): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -134,17 +120,14 @@ object checkboxesMod {
   }
   object CheckboxesWrapperProps {
     
-    @scala.inline
-    def apply(isInline: Boolean): CheckboxesWrapperProps = {
+    inline def apply(isInline: Boolean): CheckboxesWrapperProps = {
       val __obj = js.Dynamic.literal(isInline = isInline.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckboxesWrapperProps]
     }
     
-    @scala.inline
-    implicit class CheckboxesWrapperPropsMutableBuilder[Self <: CheckboxesWrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxesWrapperProps](x: Self) {
       
-      @scala.inline
-      def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+      inline def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     }
   }
 }

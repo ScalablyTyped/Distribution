@@ -13,19 +13,15 @@ trait PIN extends StObject {
 }
 object PIN {
   
-  @scala.inline
-  def apply(): PIN = {
+  inline def apply(): PIN = {
     val __obj = js.Dynamic.literal(PIN = "PIN", PUK = "PUK")
     __obj.asInstanceOf[PIN]
   }
   
-  @scala.inline
-  implicit class PINMutableBuilder[Self <: PIN] (val x: Self) extends AnyVal {
+  extension [Self <: PIN](x: Self) {
     
-    @scala.inline
-    def setPIN(value: typings.chromeApps.chromeAppsStrings.PIN): Self = StObject.set(x, "PIN", value.asInstanceOf[js.Any])
+    inline def setPIN(value: typings.chromeApps.chromeAppsStrings.PIN): Self = StObject.set(x, "PIN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPUK(value: PUK): Self = StObject.set(x, "PUK", value.asInstanceOf[js.Any])
+    inline def setPUK(value: PUK): Self = StObject.set(x, "PUK", value.asInstanceOf[js.Any])
   }
 }

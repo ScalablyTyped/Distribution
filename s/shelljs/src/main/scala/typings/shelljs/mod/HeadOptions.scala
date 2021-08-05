@@ -11,17 +11,14 @@ trait HeadOptions extends StObject {
 }
 object HeadOptions {
   
-  @scala.inline
-  def apply(`-n`: Double): HeadOptions = {
+  inline def apply(`-n`: Double): HeadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("-n")(`-n`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadOptions]
   }
   
-  @scala.inline
-  implicit class HeadOptionsMutableBuilder[Self <: HeadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HeadOptions](x: Self) {
     
-    @scala.inline
-    def `set-n`(value: Double): Self = StObject.set(x, "-n", value.asInstanceOf[js.Any])
+    inline def `set-n`(value: Double): Self = StObject.set(x, "-n", value.asInstanceOf[js.Any])
   }
 }

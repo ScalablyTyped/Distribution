@@ -23,22 +23,17 @@ trait Principal extends StObject {
 }
 object Principal {
   
-  @scala.inline
-  def apply(Access: ReadAccessType, Name: PrincipalName, Type: PrincipalType): Principal = {
+  inline def apply(Access: ReadAccessType, Name: PrincipalName, Type: PrincipalType): Principal = {
     val __obj = js.Dynamic.literal(Access = Access.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Principal]
   }
   
-  @scala.inline
-  implicit class PrincipalMutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
+  extension [Self <: Principal](x: Self) {
     
-    @scala.inline
-    def setAccess(value: ReadAccessType): Self = StObject.set(x, "Access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: ReadAccessType): Self = StObject.set(x, "Access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: PrincipalName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: PrincipalName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PrincipalType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PrincipalType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

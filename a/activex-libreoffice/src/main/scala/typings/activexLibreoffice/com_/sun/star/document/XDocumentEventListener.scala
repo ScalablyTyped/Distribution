@@ -21,8 +21,7 @@ trait XDocumentEventListener
 }
 object XDocumentEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit,
     documentEventOccured: DocumentEvent => Unit,
@@ -33,10 +32,8 @@ object XDocumentEventListener {
     __obj.asInstanceOf[XDocumentEventListener]
   }
   
-  @scala.inline
-  implicit class XDocumentEventListenerMutableBuilder[Self <: XDocumentEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentEventListener](x: Self) {
     
-    @scala.inline
-    def setDocumentEventOccured(value: DocumentEvent => Unit): Self = StObject.set(x, "documentEventOccured", js.Any.fromFunction1(value))
+    inline def setDocumentEventOccured(value: DocumentEvent => Unit): Self = StObject.set(x, "documentEventOccured", js.Any.fromFunction1(value))
   }
 }

@@ -16,25 +16,19 @@ trait ResponseGetDashboardMessageForUser200
 }
 object ResponseGetDashboardMessageForUser200 {
   
-  @scala.inline
-  def apply(): ResponseGetDashboardMessageForUser200 = {
+  inline def apply(): ResponseGetDashboardMessageForUser200 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseGetDashboardMessageForUser200]
   }
   
-  @scala.inline
-  implicit class ResponseGetDashboardMessageForUser200MutableBuilder[Self <: ResponseGetDashboardMessageForUser200] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseGetDashboardMessageForUser200](x: Self) {
     
-    @scala.inline
-    def setResponse(value: Cta): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Cta): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

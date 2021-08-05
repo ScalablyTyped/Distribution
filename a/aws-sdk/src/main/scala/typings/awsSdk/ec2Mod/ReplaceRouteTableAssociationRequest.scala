@@ -23,25 +23,19 @@ trait ReplaceRouteTableAssociationRequest extends StObject {
 }
 object ReplaceRouteTableAssociationRequest {
   
-  @scala.inline
-  def apply(AssociationId: RouteTableAssociationId, RouteTableId: RouteTableId): ReplaceRouteTableAssociationRequest = {
+  inline def apply(AssociationId: RouteTableAssociationId, RouteTableId: RouteTableId): ReplaceRouteTableAssociationRequest = {
     val __obj = js.Dynamic.literal(AssociationId = AssociationId.asInstanceOf[js.Any], RouteTableId = RouteTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceRouteTableAssociationRequest]
   }
   
-  @scala.inline
-  implicit class ReplaceRouteTableAssociationRequestMutableBuilder[Self <: ReplaceRouteTableAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceRouteTableAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: RouteTableAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: RouteTableAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setRouteTableId(value: RouteTableId): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
+    inline def setRouteTableId(value: RouteTableId): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
   }
 }

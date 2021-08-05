@@ -10,16 +10,13 @@ trait TrackPublicationOptions extends StObject {
 }
 object TrackPublicationOptions {
   
-  @scala.inline
-  def apply(logLevel: LogLevel | LogLevels): TrackPublicationOptions = {
+  inline def apply(logLevel: LogLevel | LogLevels): TrackPublicationOptions = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackPublicationOptions]
   }
   
-  @scala.inline
-  implicit class TrackPublicationOptionsMutableBuilder[Self <: TrackPublicationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TrackPublicationOptions](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
   }
 }

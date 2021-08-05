@@ -22,22 +22,17 @@ trait MultiFactorSettings extends StObject {
 }
 object MultiFactorSettings {
   
-  @scala.inline
-  def apply(enrolledFactors: js.Array[MultiFactorInfo], toJSON: () => js.Object): MultiFactorSettings = {
+  inline def apply(enrolledFactors: js.Array[MultiFactorInfo], toJSON: () => js.Object): MultiFactorSettings = {
     val __obj = js.Dynamic.literal(enrolledFactors = enrolledFactors.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[MultiFactorSettings]
   }
   
-  @scala.inline
-  implicit class MultiFactorSettingsMutableBuilder[Self <: MultiFactorSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MultiFactorSettings](x: Self) {
     
-    @scala.inline
-    def setEnrolledFactors(value: js.Array[MultiFactorInfo]): Self = StObject.set(x, "enrolledFactors", value.asInstanceOf[js.Any])
+    inline def setEnrolledFactors(value: js.Array[MultiFactorInfo]): Self = StObject.set(x, "enrolledFactors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrolledFactorsVarargs(value: MultiFactorInfo*): Self = StObject.set(x, "enrolledFactors", js.Array(value :_*))
+    inline def setEnrolledFactorsVarargs(value: MultiFactorInfo*): Self = StObject.set(x, "enrolledFactors", js.Array(value :_*))
     
-    @scala.inline
-    def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

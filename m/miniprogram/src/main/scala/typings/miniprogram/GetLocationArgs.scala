@@ -22,25 +22,19 @@ trait GetLocationArgs
 }
 object GetLocationArgs {
   
-  @scala.inline
-  def apply(): GetLocationArgs = {
+  inline def apply(): GetLocationArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLocationArgs]
   }
   
-  @scala.inline
-  implicit class GetLocationArgsMutableBuilder[Self <: GetLocationArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GetLocationArgs](x: Self) {
     
-    @scala.inline
-    def setCatchTimeout(value: Double): Self = StObject.set(x, "catchTimeout", value.asInstanceOf[js.Any])
+    inline def setCatchTimeout(value: Double): Self = StObject.set(x, "catchTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatchTimeoutUndefined: Self = StObject.set(x, "catchTimeout", js.undefined)
+    inline def setCatchTimeoutUndefined: Self = StObject.set(x, "catchTimeout", js.undefined)
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

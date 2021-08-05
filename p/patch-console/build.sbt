@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "patch-console"
-version := "1.0.0-68d463"
+version := "1.0.0-cfaafe"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

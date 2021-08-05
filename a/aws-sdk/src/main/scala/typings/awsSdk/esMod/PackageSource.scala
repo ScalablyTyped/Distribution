@@ -18,25 +18,19 @@ trait PackageSource extends StObject {
 }
 object PackageSource {
   
-  @scala.inline
-  def apply(): PackageSource = {
+  inline def apply(): PackageSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PackageSource]
   }
   
-  @scala.inline
-  implicit class PackageSourceMutableBuilder[Self <: PackageSource] (val x: Self) extends AnyVal {
+  extension [Self <: PackageSource](x: Self) {
     
-    @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
-    @scala.inline
-    def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
+    inline def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
   }
 }

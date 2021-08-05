@@ -37,68 +37,48 @@ object anon {
   }
   object All {
     
-    @scala.inline
-    def apply(): All = {
+    inline def apply(): All = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[All]
     }
     
-    @scala.inline
-    implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
+    extension [Self <: All](x: Self) {
       
-      @scala.inline
-      def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setBool(value: String): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+      inline def setBool(value: String): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoolUndefined: Self = StObject.set(x, "bool", js.undefined)
+      inline def setBoolUndefined: Self = StObject.set(x, "bool", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
       
-      @scala.inline
-      def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+      inline def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
+      inline def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
       
-      @scala.inline
-      def setSpecial(value: String): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
+      inline def setSpecial(value: String): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecialUndefined: Self = StObject.set(x, "special", js.undefined)
+      inline def setSpecialUndefined: Self = StObject.set(x, "special", js.undefined)
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     }
   }
 }

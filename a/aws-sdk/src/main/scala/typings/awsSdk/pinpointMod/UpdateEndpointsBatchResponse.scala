@@ -10,16 +10,13 @@ trait UpdateEndpointsBatchResponse extends StObject {
 }
 object UpdateEndpointsBatchResponse {
   
-  @scala.inline
-  def apply(MessageBody: MessageBody): UpdateEndpointsBatchResponse = {
+  inline def apply(MessageBody: MessageBody): UpdateEndpointsBatchResponse = {
     val __obj = js.Dynamic.literal(MessageBody = MessageBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointsBatchResponse]
   }
   
-  @scala.inline
-  implicit class UpdateEndpointsBatchResponseMutableBuilder[Self <: UpdateEndpointsBatchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEndpointsBatchResponse](x: Self) {
     
-    @scala.inline
-    def setMessageBody(value: MessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
+    inline def setMessageBody(value: MessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
   }
 }

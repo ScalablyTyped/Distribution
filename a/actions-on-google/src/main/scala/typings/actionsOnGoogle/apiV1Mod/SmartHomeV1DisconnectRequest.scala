@@ -15,22 +15,17 @@ trait SmartHomeV1DisconnectRequest
 }
 object SmartHomeV1DisconnectRequest {
   
-  @scala.inline
-  def apply(inputs: js.Array[Intent], requestId: String): SmartHomeV1DisconnectRequest = {
+  inline def apply(inputs: js.Array[Intent], requestId: String): SmartHomeV1DisconnectRequest = {
     val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1DisconnectRequest]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1DisconnectRequestMutableBuilder[Self <: SmartHomeV1DisconnectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1DisconnectRequest](x: Self) {
     
-    @scala.inline
-    def setInputs(value: js.Array[Intent]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[Intent]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: Intent*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: Intent*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

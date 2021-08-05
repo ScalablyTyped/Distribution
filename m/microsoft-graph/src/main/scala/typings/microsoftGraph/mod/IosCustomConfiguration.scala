@@ -19,34 +19,25 @@ trait IosCustomConfiguration
 }
 object IosCustomConfiguration {
   
-  @scala.inline
-  def apply(): IosCustomConfiguration = {
+  inline def apply(): IosCustomConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosCustomConfiguration]
   }
   
-  @scala.inline
-  implicit class IosCustomConfigurationMutableBuilder[Self <: IosCustomConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: IosCustomConfiguration](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadFileName(value: NullableOption[String]): Self = StObject.set(x, "payloadFileName", value.asInstanceOf[js.Any])
+    inline def setPayloadFileName(value: NullableOption[String]): Self = StObject.set(x, "payloadFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadFileNameNull: Self = StObject.set(x, "payloadFileName", null)
+    inline def setPayloadFileNameNull: Self = StObject.set(x, "payloadFileName", null)
     
-    @scala.inline
-    def setPayloadFileNameUndefined: Self = StObject.set(x, "payloadFileName", js.undefined)
+    inline def setPayloadFileNameUndefined: Self = StObject.set(x, "payloadFileName", js.undefined)
     
-    @scala.inline
-    def setPayloadName(value: String): Self = StObject.set(x, "payloadName", value.asInstanceOf[js.Any])
+    inline def setPayloadName(value: String): Self = StObject.set(x, "payloadName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadNameUndefined: Self = StObject.set(x, "payloadName", js.undefined)
+    inline def setPayloadNameUndefined: Self = StObject.set(x, "payloadName", js.undefined)
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

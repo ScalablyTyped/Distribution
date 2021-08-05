@@ -22,19 +22,15 @@ trait SchemaDisplayedProperty extends StObject {
 }
 object SchemaDisplayedProperty {
   
-  @scala.inline
-  def apply(): SchemaDisplayedProperty = {
+  inline def apply(): SchemaDisplayedProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDisplayedProperty]
   }
   
-  @scala.inline
-  implicit class SchemaDisplayedPropertyMutableBuilder[Self <: SchemaDisplayedProperty] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDisplayedProperty](x: Self) {
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNameUndefined: Self = StObject.set(x, "propertyName", js.undefined)
+    inline def setPropertyNameUndefined: Self = StObject.set(x, "propertyName", js.undefined)
   }
 }

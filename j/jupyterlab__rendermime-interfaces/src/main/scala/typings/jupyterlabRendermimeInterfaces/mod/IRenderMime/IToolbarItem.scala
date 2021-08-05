@@ -16,19 +16,15 @@ trait IToolbarItem extends StObject {
 }
 object IToolbarItem {
   
-  @scala.inline
-  def apply(name: String, widget: Widget): IToolbarItem = {
+  inline def apply(name: String, widget: Widget): IToolbarItem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], widget = widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToolbarItem]
   }
   
-  @scala.inline
-  implicit class IToolbarItemMutableBuilder[Self <: IToolbarItem] (val x: Self) extends AnyVal {
+  extension [Self <: IToolbarItem](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidget(value: Widget): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
+    inline def setWidget(value: Widget): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
   }
 }

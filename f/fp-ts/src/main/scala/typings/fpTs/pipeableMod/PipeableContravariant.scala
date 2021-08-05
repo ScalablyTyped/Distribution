@@ -13,8 +13,7 @@ trait PipeableContravariant[F] extends StObject {
 }
 object PipeableContravariant {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     contramap: js.Function1[js.Any, js.Any] => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
@@ -24,11 +23,9 @@ object PipeableContravariant {
     __obj.asInstanceOf[PipeableContravariant[F]]
   }
   
-  @scala.inline
-  implicit class PipeableContravariantMutableBuilder[Self <: PipeableContravariant[?], F] (val x: Self & PipeableContravariant[F]) extends AnyVal {
+  extension [Self <: PipeableContravariant[?], F](x: Self & PipeableContravariant[F]) {
     
-    @scala.inline
-    def setContramap(
+    inline def setContramap(
       value: js.Function1[js.Any, js.Any] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any

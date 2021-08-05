@@ -55,26 +55,20 @@ object leaderElectionMod {
   }
   object LeaderElectionOptions {
     
-    @scala.inline
-    def apply(): LeaderElectionOptions = {
+    inline def apply(): LeaderElectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LeaderElectionOptions]
     }
     
-    @scala.inline
-    implicit class LeaderElectionOptionsMutableBuilder[Self <: LeaderElectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LeaderElectionOptions](x: Self) {
       
-      @scala.inline
-      def setFallbackInterval(value: Double): Self = StObject.set(x, "fallbackInterval", value.asInstanceOf[js.Any])
+      inline def setFallbackInterval(value: Double): Self = StObject.set(x, "fallbackInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackIntervalUndefined: Self = StObject.set(x, "fallbackInterval", js.undefined)
+      inline def setFallbackIntervalUndefined: Self = StObject.set(x, "fallbackInterval", js.undefined)
       
-      @scala.inline
-      def setResponseTime(value: Double): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
+      inline def setResponseTime(value: Double): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTimeUndefined: Self = StObject.set(x, "responseTime", js.undefined)
+      inline def setResponseTimeUndefined: Self = StObject.set(x, "responseTime", js.undefined)
     }
   }
 }

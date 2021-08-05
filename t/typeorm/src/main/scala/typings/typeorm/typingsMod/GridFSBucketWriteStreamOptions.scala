@@ -33,43 +33,31 @@ trait GridFSBucketWriteStreamOptions extends StObject {
 }
 object GridFSBucketWriteStreamOptions {
   
-  @scala.inline
-  def apply(): GridFSBucketWriteStreamOptions = {
+  inline def apply(): GridFSBucketWriteStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridFSBucketWriteStreamOptions]
   }
   
-  @scala.inline
-  implicit class GridFSBucketWriteStreamOptionsMutableBuilder[Self <: GridFSBucketWriteStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridFSBucketWriteStreamOptions](x: Self) {
     
-    @scala.inline
-    def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
+    inline def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
+    inline def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
     
-    @scala.inline
-    def setId(value: String | scala.Double | js.Object): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | scala.Double | js.Object): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setJ(value: scala.Double): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+    inline def setJ(value: scala.Double): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
+    inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
-    @scala.inline
-    def setW(value: scala.Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: scala.Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
+    inline def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
+    inline def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

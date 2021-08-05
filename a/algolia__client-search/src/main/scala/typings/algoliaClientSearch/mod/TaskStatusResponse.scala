@@ -19,19 +19,15 @@ trait TaskStatusResponse extends StObject {
 }
 object TaskStatusResponse {
   
-  @scala.inline
-  def apply(pendingTask: Boolean, status: String): TaskStatusResponse = {
+  inline def apply(pendingTask: Boolean, status: String): TaskStatusResponse = {
     val __obj = js.Dynamic.literal(pendingTask = pendingTask.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskStatusResponse]
   }
   
-  @scala.inline
-  implicit class TaskStatusResponseMutableBuilder[Self <: TaskStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TaskStatusResponse](x: Self) {
     
-    @scala.inline
-    def setPendingTask(value: Boolean): Self = StObject.set(x, "pendingTask", value.asInstanceOf[js.Any])
+    inline def setPendingTask(value: Boolean): Self = StObject.set(x, "pendingTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

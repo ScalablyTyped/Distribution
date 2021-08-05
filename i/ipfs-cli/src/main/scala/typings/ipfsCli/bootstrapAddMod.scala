@@ -44,6 +44,5 @@ object bootstrapAddMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintPeerDefaultPeersTimeout: Timeout): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintPeerDefaultPeersTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintPeerDefaultPeersTimeout: Timeout): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintPeerDefaultPeersTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

@@ -13,19 +13,15 @@ trait GetBranchOutput extends StObject {
 }
 object GetBranchOutput {
   
-  @scala.inline
-  def apply(): GetBranchOutput = {
+  inline def apply(): GetBranchOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBranchOutput]
   }
   
-  @scala.inline
-  implicit class GetBranchOutputMutableBuilder[Self <: GetBranchOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBranchOutput](x: Self) {
     
-    @scala.inline
-    def setBranch(value: BranchInfo): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: BranchInfo): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
   }
 }

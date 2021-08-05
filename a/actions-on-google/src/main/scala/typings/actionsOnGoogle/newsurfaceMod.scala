@@ -46,8 +46,7 @@ object newsurfaceMod {
   }
   object NewSurfaceOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       capabilities: SurfaceCapability | js.Array[SurfaceCapability],
       context: String,
       notification: String
@@ -56,20 +55,15 @@ object newsurfaceMod {
       __obj.asInstanceOf[NewSurfaceOptions]
     }
     
-    @scala.inline
-    implicit class NewSurfaceOptionsMutableBuilder[Self <: NewSurfaceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NewSurfaceOptions](x: Self) {
       
-      @scala.inline
-      def setCapabilities(value: SurfaceCapability | js.Array[SurfaceCapability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: SurfaceCapability | js.Array[SurfaceCapability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilitiesVarargs(value: SurfaceCapability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: SurfaceCapability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification(value: String): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: String): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
 }

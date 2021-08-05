@@ -54,8 +54,7 @@ trait Images extends StObject {
 }
 object Images {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     downsized: BaseImagesizestring,
     downsized_large: BaseImagesizestring,
     downsized_medium: BaseImagesizestring,
@@ -81,67 +80,46 @@ object Images {
     __obj.asInstanceOf[Images]
   }
   
-  @scala.inline
-  implicit class ImagesMutableBuilder[Self <: Images] (val x: Self) extends AnyVal {
+  extension [Self <: Images](x: Self) {
     
-    @scala.inline
-    def setDownsized(value: BaseImagesizestring): Self = StObject.set(x, "downsized", value.asInstanceOf[js.Any])
+    inline def setDownsized(value: BaseImagesizestring): Self = StObject.set(x, "downsized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownsized_large(value: BaseImagesizestring): Self = StObject.set(x, "downsized_large", value.asInstanceOf[js.Any])
+    inline def setDownsized_large(value: BaseImagesizestring): Self = StObject.set(x, "downsized_large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownsized_medium(value: BaseImagesizestring): Self = StObject.set(x, "downsized_medium", value.asInstanceOf[js.Any])
+    inline def setDownsized_medium(value: BaseImagesizestring): Self = StObject.set(x, "downsized_medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownsized_small(value: BaseImagesizestring): Self = StObject.set(x, "downsized_small", value.asInstanceOf[js.Any])
+    inline def setDownsized_small(value: BaseImagesizestring): Self = StObject.set(x, "downsized_small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownsized_still(value: BaseImage): Self = StObject.set(x, "downsized_still", value.asInstanceOf[js.Any])
+    inline def setDownsized_still(value: BaseImage): Self = StObject.set(x, "downsized_still", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_height(value: BaseImagesizestringmp4str): Self = StObject.set(x, "fixed_height", value.asInstanceOf[js.Any])
+    inline def setFixed_height(value: BaseImagesizestringmp4str): Self = StObject.set(x, "fixed_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_height_downsampled(value: BaseImagesizestringwebpst): Self = StObject.set(x, "fixed_height_downsampled", value.asInstanceOf[js.Any])
+    inline def setFixed_height_downsampled(value: BaseImagesizestringwebpst): Self = StObject.set(x, "fixed_height_downsampled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_height_small(value: BaseImagesizestringmp4str): Self = StObject.set(x, "fixed_height_small", value.asInstanceOf[js.Any])
+    inline def setFixed_height_small(value: BaseImagesizestringmp4str): Self = StObject.set(x, "fixed_height_small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_height_small_still(value: BaseImage): Self = StObject.set(x, "fixed_height_small_still", value.asInstanceOf[js.Any])
+    inline def setFixed_height_small_still(value: BaseImage): Self = StObject.set(x, "fixed_height_small_still", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_height_still(value: BaseImage): Self = StObject.set(x, "fixed_height_still", value.asInstanceOf[js.Any])
+    inline def setFixed_height_still(value: BaseImage): Self = StObject.set(x, "fixed_height_still", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_width(value: BaseImagesizestringmp4str): Self = StObject.set(x, "fixed_width", value.asInstanceOf[js.Any])
+    inline def setFixed_width(value: BaseImagesizestringmp4str): Self = StObject.set(x, "fixed_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_width_downsampled(value: BaseImagesizestringwebpst): Self = StObject.set(x, "fixed_width_downsampled", value.asInstanceOf[js.Any])
+    inline def setFixed_width_downsampled(value: BaseImagesizestringwebpst): Self = StObject.set(x, "fixed_width_downsampled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_width_small(value: BaseImagesizestringmp4str): Self = StObject.set(x, "fixed_width_small", value.asInstanceOf[js.Any])
+    inline def setFixed_width_small(value: BaseImagesizestringmp4str): Self = StObject.set(x, "fixed_width_small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_width_small_still(value: BaseImage): Self = StObject.set(x, "fixed_width_small_still", value.asInstanceOf[js.Any])
+    inline def setFixed_width_small_still(value: BaseImage): Self = StObject.set(x, "fixed_width_small_still", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixed_width_still(value: BaseImage): Self = StObject.set(x, "fixed_width_still", value.asInstanceOf[js.Any])
+    inline def setFixed_width_still(value: BaseImage): Self = StObject.set(x, "fixed_width_still", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLooping(value: Mp4): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
+    inline def setLooping(value: Mp4): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal(value: BaseImagesizestringframes): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: BaseImagesizestringframes): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal_still(value: BaseImage): Self = StObject.set(x, "original_still", value.asInstanceOf[js.Any])
+    inline def setOriginal_still(value: BaseImage): Self = StObject.set(x, "original_still", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview(value: Height): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Height): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview_gif(value: BaseImagesizestring): Self = StObject.set(x, "preview_gif", value.asInstanceOf[js.Any])
+    inline def setPreview_gif(value: BaseImagesizestring): Self = StObject.set(x, "preview_gif", value.asInstanceOf[js.Any])
   }
 }

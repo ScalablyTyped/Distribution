@@ -20,8 +20,7 @@ trait XFormulaTokens extends StObject {
 }
 object XFormulaTokens {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Tokens: SafeArray[FormulaToken],
     getTokens: () => SafeArray[FormulaToken],
     setTokens: SeqEquiv[FormulaToken] => Unit
@@ -30,16 +29,12 @@ object XFormulaTokens {
     __obj.asInstanceOf[XFormulaTokens]
   }
   
-  @scala.inline
-  implicit class XFormulaTokensMutableBuilder[Self <: XFormulaTokens] (val x: Self) extends AnyVal {
+  extension [Self <: XFormulaTokens](x: Self) {
     
-    @scala.inline
-    def setGetTokens(value: () => SafeArray[FormulaToken]): Self = StObject.set(x, "getTokens", js.Any.fromFunction0(value))
+    inline def setGetTokens(value: () => SafeArray[FormulaToken]): Self = StObject.set(x, "getTokens", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTokens(value: SeqEquiv[FormulaToken] => Unit): Self = StObject.set(x, "setTokens", js.Any.fromFunction1(value))
+    inline def setSetTokens(value: SeqEquiv[FormulaToken] => Unit): Self = StObject.set(x, "setTokens", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTokens(value: SafeArray[FormulaToken]): Self = StObject.set(x, "Tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: SafeArray[FormulaToken]): Self = StObject.set(x, "Tokens", value.asInstanceOf[js.Any])
   }
 }

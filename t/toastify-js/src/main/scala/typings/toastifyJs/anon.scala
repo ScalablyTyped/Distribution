@@ -12,17 +12,14 @@ object anon {
   }
   object ShowToast {
     
-    @scala.inline
-    def apply(showToast: () => Unit): ShowToast = {
+    inline def apply(showToast: () => Unit): ShowToast = {
       val __obj = js.Dynamic.literal(showToast = js.Any.fromFunction0(showToast))
       __obj.asInstanceOf[ShowToast]
     }
     
-    @scala.inline
-    implicit class ShowToastMutableBuilder[Self <: ShowToast] (val x: Self) extends AnyVal {
+    extension [Self <: ShowToast](x: Self) {
       
-      @scala.inline
-      def setShowToast(value: () => Unit): Self = StObject.set(x, "showToast", js.Any.fromFunction0(value))
+      inline def setShowToast(value: () => Unit): Self = StObject.set(x, "showToast", js.Any.fromFunction0(value))
     }
   }
 }

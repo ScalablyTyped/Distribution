@@ -59,26 +59,19 @@ object mod {
   trait KawaiiMood extends StObject
   object KawaiiMood {
     
-    @scala.inline
-    def blissful: typings.reactKawaii.reactKawaiiStrings.blissful = "blissful".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.blissful]
+    inline def blissful: typings.reactKawaii.reactKawaiiStrings.blissful = "blissful".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.blissful]
     
-    @scala.inline
-    def excited: typings.reactKawaii.reactKawaiiStrings.excited = "excited".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.excited]
+    inline def excited: typings.reactKawaii.reactKawaiiStrings.excited = "excited".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.excited]
     
-    @scala.inline
-    def happy: typings.reactKawaii.reactKawaiiStrings.happy = "happy".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.happy]
+    inline def happy: typings.reactKawaii.reactKawaiiStrings.happy = "happy".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.happy]
     
-    @scala.inline
-    def ko: typings.reactKawaii.reactKawaiiStrings.ko = "ko".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.ko]
+    inline def ko: typings.reactKawaii.reactKawaiiStrings.ko = "ko".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.ko]
     
-    @scala.inline
-    def lovestruck: typings.reactKawaii.reactKawaiiStrings.lovestruck = "lovestruck".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.lovestruck]
+    inline def lovestruck: typings.reactKawaii.reactKawaiiStrings.lovestruck = "lovestruck".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.lovestruck]
     
-    @scala.inline
-    def sad: typings.reactKawaii.reactKawaiiStrings.sad = "sad".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.sad]
+    inline def sad: typings.reactKawaii.reactKawaiiStrings.sad = "sad".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.sad]
     
-    @scala.inline
-    def shocked: typings.reactKawaii.reactKawaiiStrings.shocked = "shocked".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.shocked]
+    inline def shocked: typings.reactKawaii.reactKawaiiStrings.shocked = "shocked".asInstanceOf[typings.reactKawaii.reactKawaiiStrings.shocked]
   }
   
   trait KawaiiProps extends StObject {
@@ -91,32 +84,24 @@ object mod {
   }
   object KawaiiProps {
     
-    @scala.inline
-    def apply(): KawaiiProps = {
+    inline def apply(): KawaiiProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KawaiiProps]
     }
     
-    @scala.inline
-    implicit class KawaiiPropsMutableBuilder[Self <: KawaiiProps] (val x: Self) extends AnyVal {
+    extension [Self <: KawaiiProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setMood(value: KawaiiMood): Self = StObject.set(x, "mood", value.asInstanceOf[js.Any])
+      inline def setMood(value: KawaiiMood): Self = StObject.set(x, "mood", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoodUndefined: Self = StObject.set(x, "mood", js.undefined)
+      inline def setMoodUndefined: Self = StObject.set(x, "mood", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

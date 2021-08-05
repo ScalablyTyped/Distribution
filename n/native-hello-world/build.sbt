@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "native-hello-world"
-version := "2.0-dt-20200908Z-a354a7"
+version := "2.0-dt-20200908Z-56f05b"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -33,15 +33,15 @@ object navigationMod {
       */
     def addOptionProcessor[T](optionPath: String, processor: js.Function2[/* value */ T, /* commandName */ CommandName, T]): ProcessorSubscription = js.native
     
-    val commands: js.Any = js.native
+    /* private */ val commands: js.Any = js.native
     
-    val commandsObserver: js.Any = js.native
+    /* private */ val commandsObserver: js.Any = js.native
     
-    val componentEventsObserver: js.Any = js.native
+    /* private */ val componentEventsObserver: js.Any = js.native
     
-    val componentRegistry: js.Any = js.native
+    /* private */ val componentRegistry: js.Any = js.native
     
-    val componentWrapper: js.Any = js.native
+    /* private */ val componentWrapper: js.Any = js.native
     
     /**
       * Constants coming from native
@@ -70,29 +70,29 @@ object navigationMod {
       */
     def events(): EventsRegistry = js.native
     
-    val eventsRegistry: js.Any = js.native
+    /* private */ val eventsRegistry: js.Any = js.native
     
     /**
       * Resolves arguments passed on launch
       */
     def getLaunchArgs(): js.Promise[js.Any] = js.native
     
-    val layoutProcessorsStore: js.Any = js.native
+    /* private */ val layoutProcessorsStore: js.Any = js.native
     
-    val layoutTreeCrawler: js.Any = js.native
+    /* private */ val layoutTreeCrawler: js.Any = js.native
     
-    val layoutTreeParser: js.Any = js.native
+    /* private */ val layoutTreeParser: js.Any = js.native
     
     /**
       * Change a component's navigation options
       */
     def mergeOptions(componentId: String, options: Options): Unit = js.native
     
-    val nativeCommandsSender: js.Any = js.native
+    /* private */ val nativeCommandsSender: js.Any = js.native
     
-    val nativeEventsReceiver: js.Any = js.native
+    /* private */ val nativeEventsReceiver: js.Any = js.native
     
-    val optionProcessorsStore: js.Any = js.native
+    /* private */ val optionProcessorsStore: js.Any = js.native
     
     /**
       * Pop a component from the stack, regardless of it's position.
@@ -180,9 +180,9 @@ object navigationMod {
       */
     def showOverlay[P](layout: Layout[P]): js.Promise[String] = js.native
     
-    val store: js.Any = js.native
+    /* private */ val store: js.Any = js.native
     
-    val uniqueIdProvider: js.Any = js.native
+    /* private */ val uniqueIdProvider: js.Any = js.native
     
     /**
       * Update a mounted component's props

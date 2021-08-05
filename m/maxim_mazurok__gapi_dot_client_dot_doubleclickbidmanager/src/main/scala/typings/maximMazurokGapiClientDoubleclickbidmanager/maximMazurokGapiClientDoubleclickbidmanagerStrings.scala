@@ -8,11 +8,9 @@ object maximMazurokGapiClientDoubleclickbidmanagerStrings {
   
   @js.native
   sealed trait doubleclickbidmanager extends StObject
-  @scala.inline
-  def doubleclickbidmanager: doubleclickbidmanager = "doubleclickbidmanager".asInstanceOf[doubleclickbidmanager]
+  inline def doubleclickbidmanager: doubleclickbidmanager = "doubleclickbidmanager".asInstanceOf[doubleclickbidmanager]
   
   @js.native
   sealed trait v1Dot1 extends StObject
-  @scala.inline
-  def v1Dot1: v1Dot1 = "v1.1".asInstanceOf[v1Dot1]
+  inline def v1Dot1: v1Dot1 = "v1.1".asInstanceOf[v1Dot1]
 }

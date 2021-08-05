@@ -23,25 +23,19 @@ trait ActivityTaskCompletedEventAttributes extends StObject {
 }
 object ActivityTaskCompletedEventAttributes {
   
-  @scala.inline
-  def apply(scheduledEventId: EventId, startedEventId: EventId): ActivityTaskCompletedEventAttributes = {
+  inline def apply(scheduledEventId: EventId, startedEventId: EventId): ActivityTaskCompletedEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTaskCompletedEventAttributes]
   }
   
-  @scala.inline
-  implicit class ActivityTaskCompletedEventAttributesMutableBuilder[Self <: ActivityTaskCompletedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityTaskCompletedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
+    inline def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
+    inline def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
   }
 }

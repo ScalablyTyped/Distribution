@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(input: js.Any): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
-  @scala.inline
-  def apply(input: js.Any, options: Options): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  inline def apply(input: js.Any): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+  inline def apply(input: js.Any, options: Options): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   /**
   Parse yes/no like values.
   The following case-insensitive values are recognized: `'y', 'yes', 'true', true, '1', 1, 'n', 'no', 'false', false, '0', 0`, 'on', 'off'
@@ -32,8 +30,7 @@ object mod {
   //=> false
   ```
   */
-  @scala.inline
-  def apply(input: js.Any, options: OptionsWithDefault): Boolean = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(input: js.Any, options: OptionsWithDefault): Boolean = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("yn", JSImport.Namespace)
   @js.native
@@ -55,26 +52,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
+      inline def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLenientUndefined: Self = StObject.set(x, "lenient", js.undefined)
+      inline def setLenientUndefined: Self = StObject.set(x, "lenient", js.undefined)
     }
   }
   
@@ -87,17 +78,14 @@ object mod {
   }
   object OptionsWithDefault {
     
-    @scala.inline
-    def apply(default: Boolean): OptionsWithDefault = {
+    inline def apply(default: Boolean): OptionsWithDefault = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsWithDefault]
     }
     
-    @scala.inline
-    implicit class OptionsWithDefaultMutableBuilder[Self <: OptionsWithDefault] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsWithDefault](x: Self) {
       
-      @scala.inline
-      def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
 }

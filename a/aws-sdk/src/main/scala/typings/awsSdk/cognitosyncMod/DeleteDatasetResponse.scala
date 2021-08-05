@@ -13,19 +13,15 @@ trait DeleteDatasetResponse extends StObject {
 }
 object DeleteDatasetResponse {
   
-  @scala.inline
-  def apply(): DeleteDatasetResponse = {
+  inline def apply(): DeleteDatasetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDatasetResponse]
   }
   
-  @scala.inline
-  implicit class DeleteDatasetResponseMutableBuilder[Self <: DeleteDatasetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDatasetResponse](x: Self) {
     
-    @scala.inline
-    def setDataset(value: Dataset): Self = StObject.set(x, "Dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: Dataset): Self = StObject.set(x, "Dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "Dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "Dataset", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait ListTransferJobsResponse extends StObject {
 }
 object ListTransferJobsResponse {
   
-  @scala.inline
-  def apply(): ListTransferJobsResponse = {
+  inline def apply(): ListTransferJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTransferJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListTransferJobsResponseMutableBuilder[Self <: ListTransferJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTransferJobsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTransferJobs(value: js.Array[TransferJob]): Self = StObject.set(x, "transferJobs", value.asInstanceOf[js.Any])
+    inline def setTransferJobs(value: js.Array[TransferJob]): Self = StObject.set(x, "transferJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferJobsUndefined: Self = StObject.set(x, "transferJobs", js.undefined)
+    inline def setTransferJobsUndefined: Self = StObject.set(x, "transferJobs", js.undefined)
     
-    @scala.inline
-    def setTransferJobsVarargs(value: TransferJob*): Self = StObject.set(x, "transferJobs", js.Array(value :_*))
+    inline def setTransferJobsVarargs(value: TransferJob*): Self = StObject.set(x, "transferJobs", js.Array(value :_*))
   }
 }

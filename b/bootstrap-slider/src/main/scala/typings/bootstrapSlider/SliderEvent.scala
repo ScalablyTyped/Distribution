@@ -13,8 +13,7 @@ trait SliderEvent
 }
 object SliderEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
     isPropagationStopped: () => Boolean,
@@ -30,10 +29,8 @@ object SliderEvent {
     __obj.asInstanceOf[SliderEvent]
   }
   
-  @scala.inline
-  implicit class SliderEventMutableBuilder[Self <: SliderEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SliderEvent](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double | ChangeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | ChangeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

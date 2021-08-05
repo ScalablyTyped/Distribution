@@ -34,8 +34,7 @@ trait SignedExchangeHeader extends StObject {
 }
 object SignedExchangeHeader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headerIntegrity: String,
     requestUrl: String,
     responseCode: integer,
@@ -46,25 +45,18 @@ object SignedExchangeHeader {
     __obj.asInstanceOf[SignedExchangeHeader]
   }
   
-  @scala.inline
-  implicit class SignedExchangeHeaderMutableBuilder[Self <: SignedExchangeHeader] (val x: Self) extends AnyVal {
+  extension [Self <: SignedExchangeHeader](x: Self) {
     
-    @scala.inline
-    def setHeaderIntegrity(value: String): Self = StObject.set(x, "headerIntegrity", value.asInstanceOf[js.Any])
+    inline def setHeaderIntegrity(value: String): Self = StObject.set(x, "headerIntegrity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
+    inline def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCode(value: integer): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: integer): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeaders(value: Headers): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: Headers): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatures(value: js.Array[SignedExchangeSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[SignedExchangeSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturesVarargs(value: SignedExchangeSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: SignedExchangeSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
   }
 }

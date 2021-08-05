@@ -23,28 +23,21 @@ trait DescribeAccountCustomizationRequest extends StObject {
 }
 object DescribeAccountCustomizationRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId): DescribeAccountCustomizationRequest = {
+  inline def apply(AwsAccountId: AwsAccountId): DescribeAccountCustomizationRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccountCustomizationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAccountCustomizationRequestMutableBuilder[Self <: DescribeAccountCustomizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountCustomizationRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
-    @scala.inline
-    def setResolved(value: scala.Boolean): Self = StObject.set(x, "Resolved", value.asInstanceOf[js.Any])
+    inline def setResolved(value: scala.Boolean): Self = StObject.set(x, "Resolved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedUndefined: Self = StObject.set(x, "Resolved", js.undefined)
+    inline def setResolvedUndefined: Self = StObject.set(x, "Resolved", js.undefined)
   }
 }

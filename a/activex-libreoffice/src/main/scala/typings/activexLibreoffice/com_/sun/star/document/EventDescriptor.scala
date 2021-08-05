@@ -23,19 +23,15 @@ trait EventDescriptor extends StObject {
 }
 object EventDescriptor {
   
-  @scala.inline
-  def apply(EventType: String, Script: String): EventDescriptor = {
+  inline def apply(EventType: String, Script: String): EventDescriptor = {
     val __obj = js.Dynamic.literal(EventType = EventType.asInstanceOf[js.Any], Script = Script.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventDescriptor]
   }
   
-  @scala.inline
-  implicit class EventDescriptorMutableBuilder[Self <: EventDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: EventDescriptor](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript(value: String): Self = StObject.set(x, "Script", value.asInstanceOf[js.Any])
+    inline def setScript(value: String): Self = StObject.set(x, "Script", value.asInstanceOf[js.Any])
   }
 }

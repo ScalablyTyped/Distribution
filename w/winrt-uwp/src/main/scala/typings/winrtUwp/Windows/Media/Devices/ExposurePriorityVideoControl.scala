@@ -15,19 +15,15 @@ trait ExposurePriorityVideoControl extends StObject {
 }
 object ExposurePriorityVideoControl {
   
-  @scala.inline
-  def apply(enabled: Boolean, supported: Boolean): ExposurePriorityVideoControl = {
+  inline def apply(enabled: Boolean, supported: Boolean): ExposurePriorityVideoControl = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExposurePriorityVideoControl]
   }
   
-  @scala.inline
-  implicit class ExposurePriorityVideoControlMutableBuilder[Self <: ExposurePriorityVideoControl] (val x: Self) extends AnyVal {
+  extension [Self <: ExposurePriorityVideoControl](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
   }
 }

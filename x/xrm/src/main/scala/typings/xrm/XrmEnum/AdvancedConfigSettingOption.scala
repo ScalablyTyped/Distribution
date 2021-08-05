@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdvancedConfigSettingOption extends StObject
 object AdvancedConfigSettingOption {
   
-  @scala.inline
-  def MaxChildIncidentNumber: typings.xrm.xrmStrings.MaxChildIncidentNumber = "MaxChildIncidentNumber".asInstanceOf[typings.xrm.xrmStrings.MaxChildIncidentNumber]
+  inline def MaxChildIncidentNumber: typings.xrm.xrmStrings.MaxChildIncidentNumber = "MaxChildIncidentNumber".asInstanceOf[typings.xrm.xrmStrings.MaxChildIncidentNumber]
   
-  @scala.inline
-  def MaxIncidentMergeNumber: typings.xrm.xrmStrings.MaxIncidentMergeNumber = "MaxIncidentMergeNumber".asInstanceOf[typings.xrm.xrmStrings.MaxIncidentMergeNumber]
+  inline def MaxIncidentMergeNumber: typings.xrm.xrmStrings.MaxIncidentMergeNumber = "MaxIncidentMergeNumber".asInstanceOf[typings.xrm.xrmStrings.MaxIncidentMergeNumber]
 }

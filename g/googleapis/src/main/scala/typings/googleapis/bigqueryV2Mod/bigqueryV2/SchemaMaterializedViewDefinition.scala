@@ -19,25 +19,19 @@ trait SchemaMaterializedViewDefinition extends StObject {
 }
 object SchemaMaterializedViewDefinition {
   
-  @scala.inline
-  def apply(): SchemaMaterializedViewDefinition = {
+  inline def apply(): SchemaMaterializedViewDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMaterializedViewDefinition]
   }
   
-  @scala.inline
-  implicit class SchemaMaterializedViewDefinitionMutableBuilder[Self <: SchemaMaterializedViewDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMaterializedViewDefinition](x: Self) {
     
-    @scala.inline
-    def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
+    inline def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
+    inline def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

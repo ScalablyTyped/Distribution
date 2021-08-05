@@ -63,79 +63,55 @@ trait ProductViewSummary extends StObject {
 }
 object ProductViewSummary {
   
-  @scala.inline
-  def apply(): ProductViewSummary = {
+  inline def apply(): ProductViewSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductViewSummary]
   }
   
-  @scala.inline
-  implicit class ProductViewSummaryMutableBuilder[Self <: ProductViewSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ProductViewSummary](x: Self) {
     
-    @scala.inline
-    def setDistributor(value: ProductViewDistributor): Self = StObject.set(x, "Distributor", value.asInstanceOf[js.Any])
+    inline def setDistributor(value: ProductViewDistributor): Self = StObject.set(x, "Distributor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributorUndefined: Self = StObject.set(x, "Distributor", js.undefined)
+    inline def setDistributorUndefined: Self = StObject.set(x, "Distributor", js.undefined)
     
-    @scala.inline
-    def setHasDefaultPath(value: HasDefaultPath): Self = StObject.set(x, "HasDefaultPath", value.asInstanceOf[js.Any])
+    inline def setHasDefaultPath(value: HasDefaultPath): Self = StObject.set(x, "HasDefaultPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDefaultPathUndefined: Self = StObject.set(x, "HasDefaultPath", js.undefined)
+    inline def setHasDefaultPathUndefined: Self = StObject.set(x, "HasDefaultPath", js.undefined)
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: ProductViewName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProductViewName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOwner(value: ProductViewOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: ProductViewOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
-    @scala.inline
-    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "ProductId", js.undefined)
     
-    @scala.inline
-    def setShortDescription(value: ProductViewShortDescription): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
+    inline def setShortDescription(value: ProductViewShortDescription): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescriptionUndefined: Self = StObject.set(x, "ShortDescription", js.undefined)
+    inline def setShortDescriptionUndefined: Self = StObject.set(x, "ShortDescription", js.undefined)
     
-    @scala.inline
-    def setSupportDescription(value: SupportDescription): Self = StObject.set(x, "SupportDescription", value.asInstanceOf[js.Any])
+    inline def setSupportDescription(value: SupportDescription): Self = StObject.set(x, "SupportDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportDescriptionUndefined: Self = StObject.set(x, "SupportDescription", js.undefined)
+    inline def setSupportDescriptionUndefined: Self = StObject.set(x, "SupportDescription", js.undefined)
     
-    @scala.inline
-    def setSupportEmail(value: SupportEmail): Self = StObject.set(x, "SupportEmail", value.asInstanceOf[js.Any])
+    inline def setSupportEmail(value: SupportEmail): Self = StObject.set(x, "SupportEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportEmailUndefined: Self = StObject.set(x, "SupportEmail", js.undefined)
+    inline def setSupportEmailUndefined: Self = StObject.set(x, "SupportEmail", js.undefined)
     
-    @scala.inline
-    def setSupportUrl(value: SupportUrl): Self = StObject.set(x, "SupportUrl", value.asInstanceOf[js.Any])
+    inline def setSupportUrl(value: SupportUrl): Self = StObject.set(x, "SupportUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportUrlUndefined: Self = StObject.set(x, "SupportUrl", js.undefined)
+    inline def setSupportUrlUndefined: Self = StObject.set(x, "SupportUrl", js.undefined)
     
-    @scala.inline
-    def setType(value: ProductType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ProductType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

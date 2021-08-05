@@ -53,55 +53,39 @@ trait ElementDefinitionMapping
 }
 object ElementDefinitionMapping {
   
-  @scala.inline
-  def apply(identity: id, map: String): ElementDefinitionMapping = {
+  inline def apply(identity: id, map: String): ElementDefinitionMapping = {
     val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionMapping]
   }
   
-  @scala.inline
-  implicit class ElementDefinitionMappingMutableBuilder[Self <: ElementDefinitionMapping] (val x: Self) extends AnyVal {
+  extension [Self <: ElementDefinitionMapping](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setIdentity(value: id): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: id): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
+    inline def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
+    inline def set_commentUndefined: Self = StObject.set(x, "_comment", js.undefined)
     
-    @scala.inline
-    def set_identity(value: Element): Self = StObject.set(x, "_identity", value.asInstanceOf[js.Any])
+    inline def set_identity(value: Element): Self = StObject.set(x, "_identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_identityUndefined: Self = StObject.set(x, "_identity", js.undefined)
+    inline def set_identityUndefined: Self = StObject.set(x, "_identity", js.undefined)
     
-    @scala.inline
-    def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
+    inline def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
+    inline def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
     
-    @scala.inline
-    def set_map(value: Element): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
+    inline def set_map(value: Element): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_mapUndefined: Self = StObject.set(x, "_map", js.undefined)
+    inline def set_mapUndefined: Self = StObject.set(x, "_map", js.undefined)
   }
 }

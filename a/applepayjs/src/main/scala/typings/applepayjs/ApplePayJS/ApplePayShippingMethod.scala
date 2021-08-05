@@ -31,25 +31,19 @@ trait ApplePayShippingMethod extends StObject {
 }
 object ApplePayShippingMethod {
   
-  @scala.inline
-  def apply(amount: String, detail: String, identifier: String, label: String): ApplePayShippingMethod = {
+  inline def apply(amount: String, detail: String, identifier: String, label: String): ApplePayShippingMethod = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayShippingMethod]
   }
   
-  @scala.inline
-  implicit class ApplePayShippingMethodMutableBuilder[Self <: ApplePayShippingMethod] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePayShippingMethod](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

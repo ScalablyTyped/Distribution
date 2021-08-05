@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OSActionType extends StObject
 object OSActionType {
   
-  @scala.inline
-  def ActionTake: `1` = 1.asInstanceOf[`1`]
+  inline def ActionTake: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Opened: `0` = 0.asInstanceOf[`0`]
+  inline def Opened: `0` = 0.asInstanceOf[`0`]
 }

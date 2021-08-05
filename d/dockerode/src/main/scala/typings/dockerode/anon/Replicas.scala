@@ -10,19 +10,15 @@ trait Replicas extends StObject {
 }
 object Replicas {
   
-  @scala.inline
-  def apply(): Replicas = {
+  inline def apply(): Replicas = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Replicas]
   }
   
-  @scala.inline
-  implicit class ReplicasMutableBuilder[Self <: Replicas] (val x: Self) extends AnyVal {
+  extension [Self <: Replicas](x: Self) {
     
-    @scala.inline
-    def setReplicas(value: Double): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: Double): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
+    inline def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
   }
 }

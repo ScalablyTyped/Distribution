@@ -39,8 +39,7 @@ trait ResponseReceivedEvent extends StObject {
 }
 object ResponseReceivedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     loaderId: LoaderId,
     requestId: RequestId,
     response: Response,
@@ -52,28 +51,20 @@ object ResponseReceivedEvent {
     __obj.asInstanceOf[ResponseReceivedEvent]
   }
   
-  @scala.inline
-  implicit class ResponseReceivedEventMutableBuilder[Self <: ResponseReceivedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseReceivedEvent](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+    inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
     
-    @scala.inline
-    def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
+    inline def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait Human extends StObject {
 }
 object Human {
   
-  @scala.inline
-  def apply(ctx: Print, human: js.Any, sizeOnly: js.Any, timeout: js.Any): Human = {
+  inline def apply(ctx: Print, human: js.Any, sizeOnly: js.Any, timeout: js.Any): Human = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], human = human.asInstanceOf[js.Any], sizeOnly = sizeOnly.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Human]
   }
   
-  @scala.inline
-  implicit class HumanMutableBuilder[Self <: Human] (val x: Self) extends AnyVal {
+  extension [Self <: Human](x: Self) {
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHuman(value: js.Any): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
+    inline def setHuman(value: js.Any): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeOnly(value: js.Any): Self = StObject.set(x, "sizeOnly", value.asInstanceOf[js.Any])
+    inline def setSizeOnly(value: js.Any): Self = StObject.set(x, "sizeOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

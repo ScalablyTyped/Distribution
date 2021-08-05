@@ -10,16 +10,13 @@ trait VoiceRecognizeResponse extends StObject {
 }
 object VoiceRecognizeResponse {
   
-  @scala.inline
-  def apply(result: String): VoiceRecognizeResponse = {
+  inline def apply(result: String): VoiceRecognizeResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceRecognizeResponse]
   }
   
-  @scala.inline
-  implicit class VoiceRecognizeResponseMutableBuilder[Self <: VoiceRecognizeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceRecognizeResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

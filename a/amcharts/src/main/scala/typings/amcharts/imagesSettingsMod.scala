@@ -255,8 +255,7 @@ object imagesSettingsMod {
   }
   object ImagesSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha: Double,
       balloonText: String,
       centered: Boolean,
@@ -280,62 +279,43 @@ object imagesSettingsMod {
       __obj.asInstanceOf[ImagesSettings]
     }
     
-    @scala.inline
-    implicit class ImagesSettingsMutableBuilder[Self <: ImagesSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ImagesSettings](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalloonText(value: String): Self = StObject.set(x, "balloonText", value.asInstanceOf[js.Any])
+      inline def setBalloonText(value: String): Self = StObject.set(x, "balloonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
+      inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionWindowHeight(value: Double): Self = StObject.set(x, "descriptionWindowHeight", value.asInstanceOf[js.Any])
+      inline def setDescriptionWindowHeight(value: Double): Self = StObject.set(x, "descriptionWindowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionWindowWidth(value: Double): Self = StObject.set(x, "descriptionWindowWidth", value.asInstanceOf[js.Any])
+      inline def setDescriptionWindowWidth(value: Double): Self = StObject.set(x, "descriptionWindowWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionWindowX(value: Double): Self = StObject.set(x, "descriptionWindowX", value.asInstanceOf[js.Any])
+      inline def setDescriptionWindowX(value: Double): Self = StObject.set(x, "descriptionWindowX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionWindowY(value: Double): Self = StObject.set(x, "descriptionWindowY", value.asInstanceOf[js.Any])
+      inline def setDescriptionWindowY(value: Double): Self = StObject.set(x, "descriptionWindowY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
+      inline def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPosition(value: String): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+      inline def setLabelPosition(value: String): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelRollOverColor(value: String): Self = StObject.set(x, "labelRollOverColor", value.asInstanceOf[js.Any])
+      inline def setLabelRollOverColor(value: String): Self = StObject.set(x, "labelRollOverColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelfontSize(value: String): Self = StObject.set(x, "labelfontSize", value.asInstanceOf[js.Any])
+      inline def setLabelfontSize(value: String): Self = StObject.set(x, "labelfontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineAlpha(value: Double): Self = StObject.set(x, "outlineAlpha", value.asInstanceOf[js.Any])
+      inline def setOutlineAlpha(value: Double): Self = StObject.set(x, "outlineAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+      inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineThickness(value: Double): Self = StObject.set(x, "outlineThickness", value.asInstanceOf[js.Any])
+      inline def setOutlineThickness(value: Double): Self = StObject.set(x, "outlineThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollOverColor(value: String): Self = StObject.set(x, "rollOverColor", value.asInstanceOf[js.Any])
+      inline def setRollOverColor(value: String): Self = StObject.set(x, "rollOverColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollOverScale(value: Double): Self = StObject.set(x, "rollOverScale", value.asInstanceOf[js.Any])
+      inline def setRollOverScale(value: Double): Self = StObject.set(x, "rollOverScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedScale(value: Double): Self = StObject.set(x, "selectedScale", value.asInstanceOf[js.Any])
+      inline def setSelectedScale(value: Double): Self = StObject.set(x, "selectedScale", value.asInstanceOf[js.Any])
     }
   }
 }

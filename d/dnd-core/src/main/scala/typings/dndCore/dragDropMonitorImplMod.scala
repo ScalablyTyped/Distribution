@@ -34,7 +34,7 @@ object dragDropMonitorImplMod {
     
     val registry: HandlerRegistry = js.native
     
-    var store: js.Any = js.native
+    /* private */ var store: js.Any = js.native
     
     def subscribeToStateChange(listener: Listener, options: HandlerIds): Unsubscribe = js.native
   }

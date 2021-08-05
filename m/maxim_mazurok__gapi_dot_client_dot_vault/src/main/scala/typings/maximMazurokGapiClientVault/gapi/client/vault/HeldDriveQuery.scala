@@ -14,25 +14,19 @@ trait HeldDriveQuery extends StObject {
 }
 object HeldDriveQuery {
   
-  @scala.inline
-  def apply(): HeldDriveQuery = {
+  inline def apply(): HeldDriveQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeldDriveQuery]
   }
   
-  @scala.inline
-  implicit class HeldDriveQueryMutableBuilder[Self <: HeldDriveQuery] (val x: Self) extends AnyVal {
+  extension [Self <: HeldDriveQuery](x: Self) {
     
-    @scala.inline
-    def setIncludeSharedDriveFiles(value: Boolean): Self = StObject.set(x, "includeSharedDriveFiles", value.asInstanceOf[js.Any])
+    inline def setIncludeSharedDriveFiles(value: Boolean): Self = StObject.set(x, "includeSharedDriveFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSharedDriveFilesUndefined: Self = StObject.set(x, "includeSharedDriveFiles", js.undefined)
+    inline def setIncludeSharedDriveFilesUndefined: Self = StObject.set(x, "includeSharedDriveFiles", js.undefined)
     
-    @scala.inline
-    def setIncludeTeamDriveFiles(value: Boolean): Self = StObject.set(x, "includeTeamDriveFiles", value.asInstanceOf[js.Any])
+    inline def setIncludeTeamDriveFiles(value: Boolean): Self = StObject.set(x, "includeTeamDriveFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTeamDriveFilesUndefined: Self = StObject.set(x, "includeTeamDriveFiles", js.undefined)
+    inline def setIncludeTeamDriveFilesUndefined: Self = StObject.set(x, "includeTeamDriveFiles", js.undefined)
   }
 }

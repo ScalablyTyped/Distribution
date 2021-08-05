@@ -14,8 +14,7 @@ object uploadMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapUpload(http: AxiosInstance, data: UploadProps): deletePromisevoidtoPlainO = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUpload")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[deletePromisevoidtoPlainO]
+  inline def wrapUpload(http: AxiosInstance, data: UploadProps): deletePromisevoidtoPlainO = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUpload")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[deletePromisevoidtoPlainO]
   
   trait Upload
     extends StObject
@@ -42,17 +41,14 @@ object uploadMod {
   }
   object Upload {
     
-    @scala.inline
-    def apply(delete: () => js.Promise[Unit], sys: MetaSysProps, toPlainObject: () => UploadProps): Upload = {
+    inline def apply(delete: () => js.Promise[Unit], sys: MetaSysProps, toPlainObject: () => UploadProps): Upload = {
       val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), sys = sys.asInstanceOf[js.Any], toPlainObject = js.Any.fromFunction0(toPlainObject))
       __obj.asInstanceOf[Upload]
     }
     
-    @scala.inline
-    implicit class UploadMutableBuilder[Self <: Upload] (val x: Self) extends AnyVal {
+    extension [Self <: Upload](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }
   }
   
@@ -65,17 +61,14 @@ object uploadMod {
   }
   object UploadProps {
     
-    @scala.inline
-    def apply(sys: MetaSysProps): UploadProps = {
+    inline def apply(sys: MetaSysProps): UploadProps = {
       val __obj = js.Dynamic.literal(sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[UploadProps]
     }
     
-    @scala.inline
-    implicit class UploadPropsMutableBuilder[Self <: UploadProps] (val x: Self) extends AnyVal {
+    extension [Self <: UploadProps](x: Self) {
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

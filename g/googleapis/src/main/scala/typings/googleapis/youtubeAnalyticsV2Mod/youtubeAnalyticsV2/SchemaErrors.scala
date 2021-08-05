@@ -29,34 +29,25 @@ trait SchemaErrors extends StObject {
 }
 object SchemaErrors {
   
-  @scala.inline
-  def apply(): SchemaErrors = {
+  inline def apply(): SchemaErrors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaErrors]
   }
   
-  @scala.inline
-  implicit class SchemaErrorsMutableBuilder[Self <: SchemaErrors] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaErrors](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setError(value: js.Array[SchemaErrorProto]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Array[SchemaErrorProto]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setErrorVarargs(value: SchemaErrorProto*): Self = StObject.set(x, "error", js.Array(value :_*))
+    inline def setErrorVarargs(value: SchemaErrorProto*): Self = StObject.set(x, "error", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

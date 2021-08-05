@@ -33,40 +33,29 @@ trait UpdateDocumentRequest extends StObject {
 }
 object UpdateDocumentRequest {
   
-  @scala.inline
-  def apply(DocumentId: ResourceIdType): UpdateDocumentRequest = {
+  inline def apply(DocumentId: ResourceIdType): UpdateDocumentRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDocumentRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDocumentRequestMutableBuilder[Self <: UpdateDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setParentFolderId(value: ResourceIdType): Self = StObject.set(x, "ParentFolderId", value.asInstanceOf[js.Any])
+    inline def setParentFolderId(value: ResourceIdType): Self = StObject.set(x, "ParentFolderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFolderIdUndefined: Self = StObject.set(x, "ParentFolderId", js.undefined)
+    inline def setParentFolderIdUndefined: Self = StObject.set(x, "ParentFolderId", js.undefined)
     
-    @scala.inline
-    def setResourceState(value: ResourceStateType): Self = StObject.set(x, "ResourceState", value.asInstanceOf[js.Any])
+    inline def setResourceState(value: ResourceStateType): Self = StObject.set(x, "ResourceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceStateUndefined: Self = StObject.set(x, "ResourceState", js.undefined)
+    inline def setResourceStateUndefined: Self = StObject.set(x, "ResourceState", js.undefined)
   }
 }

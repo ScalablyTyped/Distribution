@@ -10,19 +10,15 @@ trait ResetCacheOutput extends StObject {
 }
 object ResetCacheOutput {
   
-  @scala.inline
-  def apply(): ResetCacheOutput = {
+  inline def apply(): ResetCacheOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetCacheOutput]
   }
   
-  @scala.inline
-  implicit class ResetCacheOutputMutableBuilder[Self <: ResetCacheOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ResetCacheOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

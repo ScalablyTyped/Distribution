@@ -33,52 +33,37 @@ trait ConfluenceSpaceConfiguration extends StObject {
 }
 object ConfluenceSpaceConfiguration {
   
-  @scala.inline
-  def apply(): ConfluenceSpaceConfiguration = {
+  inline def apply(): ConfluenceSpaceConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfluenceSpaceConfiguration]
   }
   
-  @scala.inline
-  implicit class ConfluenceSpaceConfigurationMutableBuilder[Self <: ConfluenceSpaceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ConfluenceSpaceConfiguration](x: Self) {
     
-    @scala.inline
-    def setCrawlArchivedSpaces(value: Boolean): Self = StObject.set(x, "CrawlArchivedSpaces", value.asInstanceOf[js.Any])
+    inline def setCrawlArchivedSpaces(value: Boolean): Self = StObject.set(x, "CrawlArchivedSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlArchivedSpacesUndefined: Self = StObject.set(x, "CrawlArchivedSpaces", js.undefined)
+    inline def setCrawlArchivedSpacesUndefined: Self = StObject.set(x, "CrawlArchivedSpaces", js.undefined)
     
-    @scala.inline
-    def setCrawlPersonalSpaces(value: Boolean): Self = StObject.set(x, "CrawlPersonalSpaces", value.asInstanceOf[js.Any])
+    inline def setCrawlPersonalSpaces(value: Boolean): Self = StObject.set(x, "CrawlPersonalSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlPersonalSpacesUndefined: Self = StObject.set(x, "CrawlPersonalSpaces", js.undefined)
+    inline def setCrawlPersonalSpacesUndefined: Self = StObject.set(x, "CrawlPersonalSpaces", js.undefined)
     
-    @scala.inline
-    def setExcludeSpaces(value: ConfluenceSpaceList): Self = StObject.set(x, "ExcludeSpaces", value.asInstanceOf[js.Any])
+    inline def setExcludeSpaces(value: ConfluenceSpaceList): Self = StObject.set(x, "ExcludeSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeSpacesUndefined: Self = StObject.set(x, "ExcludeSpaces", js.undefined)
+    inline def setExcludeSpacesUndefined: Self = StObject.set(x, "ExcludeSpaces", js.undefined)
     
-    @scala.inline
-    def setExcludeSpacesVarargs(value: ConfluenceSpaceIdentifier*): Self = StObject.set(x, "ExcludeSpaces", js.Array(value :_*))
+    inline def setExcludeSpacesVarargs(value: ConfluenceSpaceIdentifier*): Self = StObject.set(x, "ExcludeSpaces", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeSpaces(value: ConfluenceSpaceList): Self = StObject.set(x, "IncludeSpaces", value.asInstanceOf[js.Any])
+    inline def setIncludeSpaces(value: ConfluenceSpaceList): Self = StObject.set(x, "IncludeSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSpacesUndefined: Self = StObject.set(x, "IncludeSpaces", js.undefined)
+    inline def setIncludeSpacesUndefined: Self = StObject.set(x, "IncludeSpaces", js.undefined)
     
-    @scala.inline
-    def setIncludeSpacesVarargs(value: ConfluenceSpaceIdentifier*): Self = StObject.set(x, "IncludeSpaces", js.Array(value :_*))
+    inline def setIncludeSpacesVarargs(value: ConfluenceSpaceIdentifier*): Self = StObject.set(x, "IncludeSpaces", js.Array(value :_*))
     
-    @scala.inline
-    def setSpaceFieldMappings(value: ConfluenceSpaceFieldMappingsList): Self = StObject.set(x, "SpaceFieldMappings", value.asInstanceOf[js.Any])
+    inline def setSpaceFieldMappings(value: ConfluenceSpaceFieldMappingsList): Self = StObject.set(x, "SpaceFieldMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceFieldMappingsUndefined: Self = StObject.set(x, "SpaceFieldMappings", js.undefined)
+    inline def setSpaceFieldMappingsUndefined: Self = StObject.set(x, "SpaceFieldMappings", js.undefined)
     
-    @scala.inline
-    def setSpaceFieldMappingsVarargs(value: ConfluenceSpaceToIndexFieldMapping*): Self = StObject.set(x, "SpaceFieldMappings", js.Array(value :_*))
+    inline def setSpaceFieldMappingsVarargs(value: ConfluenceSpaceToIndexFieldMapping*): Self = StObject.set(x, "SpaceFieldMappings", js.Array(value :_*))
   }
 }

@@ -19,23 +19,18 @@ trait DoWhileStatement
 }
 object DoWhileStatement {
   
-  @scala.inline
-  def apply(body: Statement, condition: Expression): DoWhileStatement = {
+  inline def apply(body: Statement, condition: Expression): DoWhileStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], condition = condition.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[DoWhileStatement]
   }
   
-  @scala.inline
-  implicit class DoWhileStatementMutableBuilder[Self <: DoWhileStatement] (val x: Self) extends AnyVal {
+  extension [Self <: DoWhileStatement](x: Self) {
     
-    @scala.inline
-    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondition(value: Expression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Expression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.DoWhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.DoWhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

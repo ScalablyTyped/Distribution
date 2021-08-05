@@ -25,11 +25,11 @@ object geojsonMod {
     
     def assemble(): GeoJSONTransform = js.native
     
-    var fields: js.Any = js.native
+    /* private */ var fields: js.Any = js.native
     
-    var geojson: js.Any = js.native
+    /* private */ var geojson: js.Any = js.native
     
-    var signal: js.Any = js.native
+    /* private */ var signal: js.Any = js.native
   }
   /* static members */
   object GeoJSONNode {
@@ -38,7 +38,6 @@ object geojsonMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def parseAll(parent: DataFlowNode, model: UnitModel): DataFlowNode = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[DataFlowNode]
+    inline def parseAll(parent: DataFlowNode, model: UnitModel): DataFlowNode = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[DataFlowNode]
   }
 }

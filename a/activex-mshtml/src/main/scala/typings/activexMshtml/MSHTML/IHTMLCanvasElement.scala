@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLCanvasElement extends StObject {
   
-  @JSName("MSHTML.IHTMLCanvasElement_typekey")
+  /* private */ @JSName("MSHTML.IHTMLCanvasElement_typekey")
   var MSHTMLDotIHTMLCanvasElement_typekey: IHTMLCanvasElement
   
   def getContext(contextId: String): ICanvasRenderingContext2D
@@ -19,8 +19,7 @@ trait IHTMLCanvasElement extends StObject {
 }
 object IHTMLCanvasElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLCanvasElement_typekey: IHTMLCanvasElement,
     getContext: String => ICanvasRenderingContext2D,
     height: Double,
@@ -32,22 +31,16 @@ object IHTMLCanvasElement {
     __obj.asInstanceOf[IHTMLCanvasElement]
   }
   
-  @scala.inline
-  implicit class IHTMLCanvasElementMutableBuilder[Self <: IHTMLCanvasElement] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLCanvasElement](x: Self) {
     
-    @scala.inline
-    def setGetContext(value: String => ICanvasRenderingContext2D): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+    inline def setGetContext(value: String => ICanvasRenderingContext2D): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIHTMLCanvasElement_typekey(value: IHTMLCanvasElement): Self = StObject.set(x, "MSHTML.IHTMLCanvasElement_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLCanvasElement_typekey(value: IHTMLCanvasElement): Self = StObject.set(x, "MSHTML.IHTMLCanvasElement_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDataURL(value: (String, js.Any) => String): Self = StObject.set(x, "toDataURL", js.Any.fromFunction2(value))
+    inline def setToDataURL(value: (String, js.Any) => String): Self = StObject.set(x, "toDataURL", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

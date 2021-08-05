@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2TransformationErrorHandling extends StObject {
 }
 object GooglePrivacyDlpV2TransformationErrorHandling {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2TransformationErrorHandling = {
+  inline def apply(): GooglePrivacyDlpV2TransformationErrorHandling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2TransformationErrorHandling]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2TransformationErrorHandlingMutableBuilder[Self <: GooglePrivacyDlpV2TransformationErrorHandling] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2TransformationErrorHandling](x: Self) {
     
-    @scala.inline
-    def setLeaveUntransformed(value: js.Any): Self = StObject.set(x, "leaveUntransformed", value.asInstanceOf[js.Any])
+    inline def setLeaveUntransformed(value: js.Any): Self = StObject.set(x, "leaveUntransformed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveUntransformedUndefined: Self = StObject.set(x, "leaveUntransformed", js.undefined)
+    inline def setLeaveUntransformedUndefined: Self = StObject.set(x, "leaveUntransformed", js.undefined)
     
-    @scala.inline
-    def setThrowError(value: js.Any): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
+    inline def setThrowError(value: js.Any): Self = StObject.set(x, "throwError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrowErrorUndefined: Self = StObject.set(x, "throwError", js.undefined)
+    inline def setThrowErrorUndefined: Self = StObject.set(x, "throwError", js.undefined)
   }
 }

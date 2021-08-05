@@ -10,8 +10,7 @@ trait NestedDirectoryJSON
      with /* key */ StringDictionary[DirectoryContent | NestedDirectoryJSON]
 object NestedDirectoryJSON {
   
-  @scala.inline
-  def apply(): NestedDirectoryJSON = {
+  inline def apply(): NestedDirectoryJSON = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NestedDirectoryJSON]
   }

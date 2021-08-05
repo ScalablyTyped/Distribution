@@ -23,28 +23,21 @@ trait AddIpRoutesRequest extends StObject {
 }
 object AddIpRoutesRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, IpRoutes: IpRoutes): AddIpRoutesRequest = {
+  inline def apply(DirectoryId: DirectoryId, IpRoutes: IpRoutes): AddIpRoutesRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], IpRoutes = IpRoutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddIpRoutesRequest]
   }
   
-  @scala.inline
-  implicit class AddIpRoutesRequestMutableBuilder[Self <: AddIpRoutesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddIpRoutesRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpRoutes(value: IpRoutes): Self = StObject.set(x, "IpRoutes", value.asInstanceOf[js.Any])
+    inline def setIpRoutes(value: IpRoutes): Self = StObject.set(x, "IpRoutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpRoutesVarargs(value: IpRoute*): Self = StObject.set(x, "IpRoutes", js.Array(value :_*))
+    inline def setIpRoutesVarargs(value: IpRoute*): Self = StObject.set(x, "IpRoutes", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateSecurityGroupForDirectoryControllers(value: UpdateSecurityGroupForDirectoryControllers): Self = StObject.set(x, "UpdateSecurityGroupForDirectoryControllers", value.asInstanceOf[js.Any])
+    inline def setUpdateSecurityGroupForDirectoryControllers(value: UpdateSecurityGroupForDirectoryControllers): Self = StObject.set(x, "UpdateSecurityGroupForDirectoryControllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateSecurityGroupForDirectoryControllersUndefined: Self = StObject.set(x, "UpdateSecurityGroupForDirectoryControllers", js.undefined)
+    inline def setUpdateSecurityGroupForDirectoryControllersUndefined: Self = StObject.set(x, "UpdateSecurityGroupForDirectoryControllers", js.undefined)
   }
 }

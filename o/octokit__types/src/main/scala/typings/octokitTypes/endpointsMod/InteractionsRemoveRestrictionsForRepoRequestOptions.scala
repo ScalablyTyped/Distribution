@@ -20,25 +20,19 @@ trait InteractionsRemoveRestrictionsForRepoRequestOptions extends StObject {
 }
 object InteractionsRemoveRestrictionsForRepoRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): InteractionsRemoveRestrictionsForRepoRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): InteractionsRemoveRestrictionsForRepoRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/interaction-limits")
     __obj.asInstanceOf[InteractionsRemoveRestrictionsForRepoRequestOptions]
   }
   
-  @scala.inline
-  implicit class InteractionsRemoveRestrictionsForRepoRequestOptionsMutableBuilder[Self <: InteractionsRemoveRestrictionsForRepoRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionsRemoveRestrictionsForRepoRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: `SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

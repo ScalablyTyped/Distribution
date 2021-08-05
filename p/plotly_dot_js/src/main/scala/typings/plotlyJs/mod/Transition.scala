@@ -62,8 +62,7 @@ trait Transition extends StObject {
 }
 object Transition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: Double,
     easing: linear | quad | cubic | sin | exp | circle | elastic | back | bounce | `linear-in` | `quad-in` | `cubic-in` | `sin-in` | `exp-in` | `circle-in` | `elastic-in` | `back-in` | `bounce-in` | `linear-out` | `quad-out` | `cubic-out` | `sin-out` | `exp-out` | `circle-out` | `elastic-out` | `back-out` | `bounce-out` | `linear-in-out` | `quad-in-out` | `cubic-in-out` | `sin-in-out` | `exp-in-out` | `circle-in-out` | `elastic-in-out` | `back-in-out` | `bounce-in-out`
   ): Transition = {
@@ -71,21 +70,16 @@ object Transition {
     __obj.asInstanceOf[Transition]
   }
   
-  @scala.inline
-  implicit class TransitionMutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
+  extension [Self <: Transition](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasing(
+    inline def setEasing(
       value: linear | quad | cubic | sin | exp | circle | elastic | back | bounce | `linear-in` | `quad-in` | `cubic-in` | `sin-in` | `exp-in` | `circle-in` | `elastic-in` | `back-in` | `bounce-in` | `linear-out` | `quad-out` | `cubic-out` | `sin-out` | `exp-out` | `circle-out` | `elastic-out` | `back-out` | `bounce-out` | `linear-in-out` | `quad-in-out` | `cubic-in-out` | `sin-in-out` | `exp-in-out` | `circle-in-out` | `elastic-in-out` | `back-in-out` | `bounce-in-out`
     ): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdering(value: (`layout first`) | (`traces first`)): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
+    inline def setOrdering(value: (`layout first`) | (`traces first`)): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderingUndefined: Self = StObject.set(x, "ordering", js.undefined)
+    inline def setOrderingUndefined: Self = StObject.set(x, "ordering", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait Directive[DirectiveT /* <: DirectiveMeta */] extends StObject {
 }
 object Directive {
   
-  @scala.inline
-  def apply[DirectiveT /* <: DirectiveMeta */](directive: DirectiveT, node: Element | Template): Directive[DirectiveT] = {
+  inline def apply[DirectiveT /* <: DirectiveMeta */](directive: DirectiveT, node: Element | Template): Directive[DirectiveT] = {
     val __obj = js.Dynamic.literal(directive = directive.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Directive[DirectiveT]]
   }
   
-  @scala.inline
-  implicit class DirectiveMutableBuilder[Self <: Directive[?], DirectiveT /* <: DirectiveMeta */] (val x: Self & Directive[DirectiveT]) extends AnyVal {
+  extension [Self <: Directive[?], DirectiveT /* <: DirectiveMeta */](x: Self & Directive[DirectiveT]) {
     
-    @scala.inline
-    def setDirective(value: DirectiveT): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
+    inline def setDirective(value: DirectiveT): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: Element | Template): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Element | Template): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

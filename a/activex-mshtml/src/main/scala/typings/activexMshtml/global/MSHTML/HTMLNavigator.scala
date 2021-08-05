@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLNavigator")
 @js.native
-class HTMLNavigator protected ()
+/* private */ class HTMLNavigator ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLNavigator {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLNavigator_typekey")
   var MSHTMLDotHTMLNavigator_typekey: typings.activexMshtml.MSHTML.HTMLNavigator = js.native
   

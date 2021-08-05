@@ -10,16 +10,13 @@ trait OpacityNumber extends StObject {
 }
 object OpacityNumber {
   
-  @scala.inline
-  def apply(opacity: Double): OpacityNumber = {
+  inline def apply(opacity: Double): OpacityNumber = {
     val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpacityNumber]
   }
   
-  @scala.inline
-  implicit class OpacityNumberMutableBuilder[Self <: OpacityNumber] (val x: Self) extends AnyVal {
+  extension [Self <: OpacityNumber](x: Self) {
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
   }
 }

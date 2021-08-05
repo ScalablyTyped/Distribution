@@ -36,8 +36,7 @@ trait ContinuousDeploymentDefinition extends StObject {
 }
 object ContinuousDeploymentDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectedService: WebApiConnectedServiceRef,
     definition: XamlDefinitionReference,
     gitBranch: String,
@@ -53,37 +52,26 @@ object ContinuousDeploymentDefinition {
     __obj.asInstanceOf[ContinuousDeploymentDefinition]
   }
   
-  @scala.inline
-  implicit class ContinuousDeploymentDefinitionMutableBuilder[Self <: ContinuousDeploymentDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousDeploymentDefinition](x: Self) {
     
-    @scala.inline
-    def setConnectedService(value: WebApiConnectedServiceRef): Self = StObject.set(x, "connectedService", value.asInstanceOf[js.Any])
+    inline def setConnectedService(value: WebApiConnectedServiceRef): Self = StObject.set(x, "connectedService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinition(value: XamlDefinitionReference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: XamlDefinitionReference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitBranch(value: String): Self = StObject.set(x, "gitBranch", value.asInstanceOf[js.Any])
+    inline def setGitBranch(value: String): Self = StObject.set(x, "gitBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedServiceName(value: String): Self = StObject.set(x, "hostedServiceName", value.asInstanceOf[js.Any])
+    inline def setHostedServiceName(value: String): Self = StObject.set(x, "hostedServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+    inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageAccountName(value: String): Self = StObject.set(x, "storageAccountName", value.asInstanceOf[js.Any])
+    inline def setStorageAccountName(value: String): Self = StObject.set(x, "storageAccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+    inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebspace(value: String): Self = StObject.set(x, "webspace", value.asInstanceOf[js.Any])
+    inline def setWebspace(value: String): Self = StObject.set(x, "webspace", value.asInstanceOf[js.Any])
   }
 }

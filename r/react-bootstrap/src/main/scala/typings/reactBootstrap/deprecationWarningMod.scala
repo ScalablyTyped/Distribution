@@ -10,14 +10,10 @@ object deprecationWarningMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(oldname: js.Any, newname: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(oldname.asInstanceOf[js.Any], newname.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(oldname: js.Any, newname: String, link: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(oldname.asInstanceOf[js.Any], newname.asInstanceOf[js.Any], link.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(oldname: js.Any, newname: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(oldname.asInstanceOf[js.Any], newname.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(oldname: js.Any, newname: String, link: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(oldname.asInstanceOf[js.Any], newname.asInstanceOf[js.Any], link.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def resetWarned(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_resetWarned")().asInstanceOf[Unit]
+  inline def resetWarned(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_resetWarned")().asInstanceOf[Unit]
   
-  @scala.inline
-  def wrapper(Component: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapper")(Component.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def wrapper(Component: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapper")(Component.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

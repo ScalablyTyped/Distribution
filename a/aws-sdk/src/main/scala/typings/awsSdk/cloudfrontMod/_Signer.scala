@@ -18,25 +18,19 @@ trait _Signer extends StObject {
 }
 object _Signer {
   
-  @scala.inline
-  def apply(): _Signer = {
+  inline def apply(): _Signer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[_Signer]
   }
   
-  @scala.inline
-  implicit class _SignerMutableBuilder[Self <: _Signer] (val x: Self) extends AnyVal {
+  extension [Self <: _Signer](x: Self) {
     
-    @scala.inline
-    def setAwsAccountNumber(value: String): Self = StObject.set(x, "AwsAccountNumber", value.asInstanceOf[js.Any])
+    inline def setAwsAccountNumber(value: String): Self = StObject.set(x, "AwsAccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountNumberUndefined: Self = StObject.set(x, "AwsAccountNumber", js.undefined)
+    inline def setAwsAccountNumberUndefined: Self = StObject.set(x, "AwsAccountNumber", js.undefined)
     
-    @scala.inline
-    def setKeyPairIds(value: KeyPairIds): Self = StObject.set(x, "KeyPairIds", value.asInstanceOf[js.Any])
+    inline def setKeyPairIds(value: KeyPairIds): Self = StObject.set(x, "KeyPairIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairIdsUndefined: Self = StObject.set(x, "KeyPairIds", js.undefined)
+    inline def setKeyPairIdsUndefined: Self = StObject.set(x, "KeyPairIds", js.undefined)
   }
 }

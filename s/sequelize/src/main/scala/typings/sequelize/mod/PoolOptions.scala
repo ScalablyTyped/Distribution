@@ -44,49 +44,35 @@ trait PoolOptions extends StObject {
 }
 object PoolOptions {
   
-  @scala.inline
-  def apply(): PoolOptions = {
+  inline def apply(): PoolOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PoolOptions]
   }
   
-  @scala.inline
-  implicit class PoolOptionsMutableBuilder[Self <: PoolOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PoolOptions](x: Self) {
     
-    @scala.inline
-    def setAcquire(value: Double): Self = StObject.set(x, "acquire", value.asInstanceOf[js.Any])
+    inline def setAcquire(value: Double): Self = StObject.set(x, "acquire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcquireUndefined: Self = StObject.set(x, "acquire", js.undefined)
+    inline def setAcquireUndefined: Self = StObject.set(x, "acquire", js.undefined)
     
-    @scala.inline
-    def setEvict(value: Double): Self = StObject.set(x, "evict", value.asInstanceOf[js.Any])
+    inline def setEvict(value: Double): Self = StObject.set(x, "evict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvictUndefined: Self = StObject.set(x, "evict", js.undefined)
+    inline def setEvictUndefined: Self = StObject.set(x, "evict", js.undefined)
     
-    @scala.inline
-    def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+    inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setValidate(value: /* client */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: /* client */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

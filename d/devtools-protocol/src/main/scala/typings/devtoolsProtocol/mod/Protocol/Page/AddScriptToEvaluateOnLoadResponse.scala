@@ -13,16 +13,13 @@ trait AddScriptToEvaluateOnLoadResponse extends StObject {
 }
 object AddScriptToEvaluateOnLoadResponse {
   
-  @scala.inline
-  def apply(identifier: ScriptIdentifier): AddScriptToEvaluateOnLoadResponse = {
+  inline def apply(identifier: ScriptIdentifier): AddScriptToEvaluateOnLoadResponse = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddScriptToEvaluateOnLoadResponse]
   }
   
-  @scala.inline
-  implicit class AddScriptToEvaluateOnLoadResponseMutableBuilder[Self <: AddScriptToEvaluateOnLoadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddScriptToEvaluateOnLoadResponse](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: ScriptIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: ScriptIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }
 }

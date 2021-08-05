@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdReadingOrder extends StObject
 object WdReadingOrder {
   
-  @scala.inline
-  def wdReadingOrderLtr: `1` = 1.asInstanceOf[`1`]
+  inline def wdReadingOrderLtr: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdReadingOrderRtl: `0` = 0.asInstanceOf[`0`]
+  inline def wdReadingOrderRtl: `0` = 0.asInstanceOf[`0`]
 }

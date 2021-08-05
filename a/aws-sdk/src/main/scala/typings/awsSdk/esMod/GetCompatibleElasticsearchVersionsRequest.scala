@@ -10,19 +10,15 @@ trait GetCompatibleElasticsearchVersionsRequest extends StObject {
 }
 object GetCompatibleElasticsearchVersionsRequest {
   
-  @scala.inline
-  def apply(): GetCompatibleElasticsearchVersionsRequest = {
+  inline def apply(): GetCompatibleElasticsearchVersionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCompatibleElasticsearchVersionsRequest]
   }
   
-  @scala.inline
-  implicit class GetCompatibleElasticsearchVersionsRequestMutableBuilder[Self <: GetCompatibleElasticsearchVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCompatibleElasticsearchVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
   }
 }

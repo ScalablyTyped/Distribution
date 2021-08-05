@@ -32,8 +32,7 @@ trait FPSMeter extends StObject {
 }
 object FPSMeter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     hide: () => FPSMeter,
     options: FPSMeterOptions,
@@ -51,43 +50,30 @@ object FPSMeter {
     __obj.asInstanceOf[FPSMeter]
   }
   
-  @scala.inline
-  implicit class FPSMeterMutableBuilder[Self <: FPSMeter] (val x: Self) extends AnyVal {
+  extension [Self <: FPSMeter](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => FPSMeter): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => FPSMeter): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptions(value: FPSMeterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: FPSMeterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: () => FPSMeter): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => FPSMeter): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResume(value: () => FPSMeter): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => FPSMeter): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (String, js.Any) => FPSMeter): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, js.Any) => FPSMeter): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShow(value: () => FPSMeter): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => FPSMeter): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowDuration(value: () => FPSMeter): Self = StObject.set(x, "showDuration", js.Any.fromFunction0(value))
+    inline def setShowDuration(value: () => FPSMeter): Self = StObject.set(x, "showDuration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowFps(value: () => FPSMeter): Self = StObject.set(x, "showFps", js.Any.fromFunction0(value))
+    inline def setShowFps(value: () => FPSMeter): Self = StObject.set(x, "showFps", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
+    inline def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTickStart(value: () => Unit): Self = StObject.set(x, "tickStart", js.Any.fromFunction0(value))
+    inline def setTickStart(value: () => Unit): Self = StObject.set(x, "tickStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: () => FPSMeter): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+    inline def setToggle(value: () => FPSMeter): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

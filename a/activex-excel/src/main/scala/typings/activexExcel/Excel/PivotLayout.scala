@@ -39,7 +39,7 @@ trait PivotLayout extends StObject {
   def DataFields(): js.Any = js.native
   def DataFields(Index: js.Any): js.Any = js.native
   
-  @JSName("Excel.PivotLayout_typekey")
+  /* private */ @JSName("Excel.PivotLayout_typekey")
   var ExcelDotPivotLayout_typekey: PivotLayout = js.native
   
   def HiddenFields(): js.Any = js.native

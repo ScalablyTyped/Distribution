@@ -12,19 +12,15 @@ trait Color extends StObject {
 }
 object Color {
   
-  @scala.inline
-  def apply(components: ColorComponents, format: ColorFormat): Color = {
+  inline def apply(components: ColorComponents, format: ColorFormat): Color = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setComponents(value: ColorComponents): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: ColorComponents): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: ColorFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ColorFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

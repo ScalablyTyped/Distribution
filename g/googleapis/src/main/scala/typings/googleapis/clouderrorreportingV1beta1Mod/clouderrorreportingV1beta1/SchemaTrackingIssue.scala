@@ -17,19 +17,15 @@ trait SchemaTrackingIssue extends StObject {
 }
 object SchemaTrackingIssue {
   
-  @scala.inline
-  def apply(): SchemaTrackingIssue = {
+  inline def apply(): SchemaTrackingIssue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTrackingIssue]
   }
   
-  @scala.inline
-  implicit class SchemaTrackingIssueMutableBuilder[Self <: SchemaTrackingIssue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTrackingIssue](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

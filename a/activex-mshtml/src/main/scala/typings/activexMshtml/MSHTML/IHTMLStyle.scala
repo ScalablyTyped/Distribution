@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IHTMLStyle extends StObject {
   
-  @JSName("MSHTML.IHTMLStyle_typekey")
+  /* private */ @JSName("MSHTML.IHTMLStyle_typekey")
   var MSHTMLDotIHTMLStyle_typekey: IHTMLStyle = js.native
   
   var background: String = js.native

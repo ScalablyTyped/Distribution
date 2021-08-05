@@ -19,22 +19,22 @@ object overlayViewMod {
   trait OverlayView
     extends typings.playable.viewMod.default[IOverlayViewStyles] {
     
-    @JSName("_$content")
+    /* private */ @JSName("_$content")
     var _$content: js.Any = js.native
     
-    @JSName("_$playButton")
+    /* private */ @JSName("_$playButton")
     var _$playButton: js.Any = js.native
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     def destroy(): Unit = js.native
     

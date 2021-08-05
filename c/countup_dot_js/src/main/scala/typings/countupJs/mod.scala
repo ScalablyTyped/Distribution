@@ -23,11 +23,11 @@ object mod {
     
     def count(timestamp: Double): Unit = js.native
     
-    var countDown: js.Any = js.native
+    /* private */ var countDown: js.Any = js.native
     
-    var defaults: js.Any = js.native
+    /* private */ var defaults: js.Any = js.native
     
-    var determineDirectionAndSmartEasing: js.Any = js.native
+    /* private */ var determineDirectionAndSmartEasing: js.Any = js.native
     
     var duration: Double = js.native
     
@@ -37,15 +37,15 @@ object mod {
         js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
       ] = js.native
     
-    var el: js.Any = js.native
+    /* private */ var el: js.Any = js.native
     
-    var endVal: js.Any = js.native
+    /* private */ var endVal: js.Any = js.native
     
     def ensureNumber(n: js.Any): Boolean = js.native
     
     var error: String = js.native
     
-    var finalEndVal: js.Any = js.native
+    /* private */ var finalEndVal: js.Any = js.native
     
     def formatNumber(num: Double): String = js.native
     
@@ -61,27 +61,27 @@ object mod {
     
     def printValue(`val`: Double): Unit = js.native
     
-    var rAF: js.Any = js.native
+    /* private */ var rAF: js.Any = js.native
     
-    var remaining: js.Any = js.native
+    /* private */ var remaining: js.Any = js.native
     
     def reset(): Unit = js.native
     
-    var resetDuration: js.Any = js.native
+    /* private */ var resetDuration: js.Any = js.native
     
     def start(): Unit = js.native
     def start(callback: js.Function1[/* args */ js.UndefOr[js.Any], js.Any]): Unit = js.native
     
-    var startTime: js.Any = js.native
+    /* private */ var startTime: js.Any = js.native
     
     var startVal: Double = js.native
     
-    var target: js.Any = js.native
+    /* private */ var target: js.Any = js.native
     
     def update(newEndVal: String): Unit = js.native
     def update(newEndVal: Double): Unit = js.native
     
-    var useEasing: js.Any = js.native
+    /* private */ var useEasing: js.Any = js.native
     
     def validateValue(value: String): Double = js.native
     def validateValue(value: Double): Double = js.native
@@ -123,101 +123,70 @@ object mod {
   }
   object CountUpOptions {
     
-    @scala.inline
-    def apply(): CountUpOptions = {
+    inline def apply(): CountUpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CountUpOptions]
     }
     
-    @scala.inline
-    implicit class CountUpOptionsMutableBuilder[Self <: CountUpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CountUpOptions](x: Self) {
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalPlaces(value: Double): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
+      inline def setDecimalPlaces(value: Double): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalPlacesUndefined: Self = StObject.set(x, "decimalPlaces", js.undefined)
+      inline def setDecimalPlacesUndefined: Self = StObject.set(x, "decimalPlaces", js.undefined)
       
-      @scala.inline
-      def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+      inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasingFn(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easingFn", js.Any.fromFunction4(value))
+      inline def setEasingFn(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easingFn", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setEasingFnUndefined: Self = StObject.set(x, "easingFn", js.undefined)
+      inline def setEasingFnUndefined: Self = StObject.set(x, "easingFn", js.undefined)
       
-      @scala.inline
-      def setFormattingFn(value: /* n */ Double => String): Self = StObject.set(x, "formattingFn", js.Any.fromFunction1(value))
+      inline def setFormattingFn(value: /* n */ Double => String): Self = StObject.set(x, "formattingFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormattingFnUndefined: Self = StObject.set(x, "formattingFn", js.undefined)
+      inline def setFormattingFnUndefined: Self = StObject.set(x, "formattingFn", js.undefined)
       
-      @scala.inline
-      def setNumerals(value: js.Array[String]): Self = StObject.set(x, "numerals", value.asInstanceOf[js.Any])
+      inline def setNumerals(value: js.Array[String]): Self = StObject.set(x, "numerals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumeralsUndefined: Self = StObject.set(x, "numerals", js.undefined)
+      inline def setNumeralsUndefined: Self = StObject.set(x, "numerals", js.undefined)
       
-      @scala.inline
-      def setNumeralsVarargs(value: String*): Self = StObject.set(x, "numerals", js.Array(value :_*))
+      inline def setNumeralsVarargs(value: String*): Self = StObject.set(x, "numerals", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setSmartEasingAmount(value: Double): Self = StObject.set(x, "smartEasingAmount", value.asInstanceOf[js.Any])
+      inline def setSmartEasingAmount(value: Double): Self = StObject.set(x, "smartEasingAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartEasingAmountUndefined: Self = StObject.set(x, "smartEasingAmount", js.undefined)
+      inline def setSmartEasingAmountUndefined: Self = StObject.set(x, "smartEasingAmount", js.undefined)
       
-      @scala.inline
-      def setSmartEasingThreshold(value: Double): Self = StObject.set(x, "smartEasingThreshold", value.asInstanceOf[js.Any])
+      inline def setSmartEasingThreshold(value: Double): Self = StObject.set(x, "smartEasingThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartEasingThresholdUndefined: Self = StObject.set(x, "smartEasingThreshold", js.undefined)
+      inline def setSmartEasingThresholdUndefined: Self = StObject.set(x, "smartEasingThreshold", js.undefined)
       
-      @scala.inline
-      def setStartVal(value: Double): Self = StObject.set(x, "startVal", value.asInstanceOf[js.Any])
+      inline def setStartVal(value: Double): Self = StObject.set(x, "startVal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartValUndefined: Self = StObject.set(x, "startVal", js.undefined)
+      inline def setStartValUndefined: Self = StObject.set(x, "startVal", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setUseEasing(value: Boolean): Self = StObject.set(x, "useEasing", value.asInstanceOf[js.Any])
+      inline def setUseEasing(value: Boolean): Self = StObject.set(x, "useEasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseEasingUndefined: Self = StObject.set(x, "useEasing", js.undefined)
+      inline def setUseEasingUndefined: Self = StObject.set(x, "useEasing", js.undefined)
       
-      @scala.inline
-      def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+      inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
+      inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
     }
   }
 }

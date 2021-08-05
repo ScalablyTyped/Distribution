@@ -12,8 +12,7 @@ object activityItemStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(
+  inline def getStyles(
     theme: js.UndefOr[ITheme],
     customStyles: js.UndefOr[IActivityItemStyles],
     animateBeaconSignal: js.UndefOr[Boolean],

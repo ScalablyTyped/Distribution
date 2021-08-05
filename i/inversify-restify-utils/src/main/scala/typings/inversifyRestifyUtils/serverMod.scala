@@ -19,21 +19,21 @@ object serverMod {
       opts: ServerOptions & typings.inversifyRestifyUtils.interfacesMod.interfaces.ServerOptions
     ) = this()
     
-    var app: js.Any = js.native
+    /* private */ var app: js.Any = js.native
     
     def build(): Server = js.native
     
-    var configFn: js.Any = js.native
+    /* private */ var configFn: js.Any = js.native
     
-    var container: js.Any = js.native
+    /* private */ var container: js.Any = js.native
     
-    var defaultRoot: js.Any = js.native
+    /* private */ var defaultRoot: js.Any = js.native
     
-    var handlerFactory: js.Any = js.native
+    /* private */ var handlerFactory: js.Any = js.native
     
-    var registerControllers: js.Any = js.native
+    /* private */ var registerControllers: js.Any = js.native
     
-    var resolveMiddleware: js.Any = js.native
+    /* private */ var resolveMiddleware: js.Any = js.native
     
     def setConfig(fn: ConfigFunction): InversifyRestifyServer = js.native
   }

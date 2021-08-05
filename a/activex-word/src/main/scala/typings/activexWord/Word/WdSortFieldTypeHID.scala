@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object WdSortFieldTypeHID {
   
-  @scala.inline
-  def emptyenum: `0` = 0.asInstanceOf[`0`]
+  inline def emptyenum: `0` = 0.asInstanceOf[`0`]
 }

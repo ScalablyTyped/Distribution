@@ -13,16 +13,13 @@ trait ScreencastVisibilityChangedEvent extends StObject {
 }
 object ScreencastVisibilityChangedEvent {
   
-  @scala.inline
-  def apply(visible: Boolean): ScreencastVisibilityChangedEvent = {
+  inline def apply(visible: Boolean): ScreencastVisibilityChangedEvent = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreencastVisibilityChangedEvent]
   }
   
-  @scala.inline
-  implicit class ScreencastVisibilityChangedEventMutableBuilder[Self <: ScreencastVisibilityChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ScreencastVisibilityChangedEvent](x: Self) {
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

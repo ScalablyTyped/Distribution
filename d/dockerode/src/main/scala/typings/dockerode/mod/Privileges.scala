@@ -14,25 +14,19 @@ trait Privileges extends StObject {
 }
 object Privileges {
   
-  @scala.inline
-  def apply(): Privileges = {
+  inline def apply(): Privileges = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Privileges]
   }
   
-  @scala.inline
-  implicit class PrivilegesMutableBuilder[Self <: Privileges] (val x: Self) extends AnyVal {
+  extension [Self <: Privileges](x: Self) {
     
-    @scala.inline
-    def setCredentialSpec(value: File): Self = StObject.set(x, "CredentialSpec", value.asInstanceOf[js.Any])
+    inline def setCredentialSpec(value: File): Self = StObject.set(x, "CredentialSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialSpecUndefined: Self = StObject.set(x, "CredentialSpec", js.undefined)
+    inline def setCredentialSpecUndefined: Self = StObject.set(x, "CredentialSpec", js.undefined)
     
-    @scala.inline
-    def setSELinuxContext(value: Disable): Self = StObject.set(x, "SELinuxContext", value.asInstanceOf[js.Any])
+    inline def setSELinuxContext(value: Disable): Self = StObject.set(x, "SELinuxContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSELinuxContextUndefined: Self = StObject.set(x, "SELinuxContext", js.undefined)
+    inline def setSELinuxContextUndefined: Self = StObject.set(x, "SELinuxContext", js.undefined)
   }
 }

@@ -16,23 +16,18 @@ trait StandardErrorAppender
 }
 object StandardErrorAppender {
   
-  @scala.inline
-  def apply(): StandardErrorAppender = {
+  inline def apply(): StandardErrorAppender = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("stderr")
     __obj.asInstanceOf[StandardErrorAppender]
   }
   
-  @scala.inline
-  implicit class StandardErrorAppenderMutableBuilder[Self <: StandardErrorAppender] (val x: Self) extends AnyVal {
+  extension [Self <: StandardErrorAppender](x: Self) {
     
-    @scala.inline
-    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setType(value: stderr): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: stderr): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

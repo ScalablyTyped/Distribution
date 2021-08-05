@@ -103,17 +103,14 @@ object searchconsoleV1Mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -133,26 +130,20 @@ object searchconsoleV1Mod {
     }
     object ParamsResourceUrltestingtoolsMobilefriendlytestRun {
       
-      @scala.inline
-      def apply(): ParamsResourceUrltestingtoolsMobilefriendlytestRun = {
+      inline def apply(): ParamsResourceUrltestingtoolsMobilefriendlytestRun = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceUrltestingtoolsMobilefriendlytestRun]
       }
       
-      @scala.inline
-      implicit class ParamsResourceUrltestingtoolsMobilefriendlytestRunMutableBuilder[Self <: ParamsResourceUrltestingtoolsMobilefriendlytestRun] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceUrltestingtoolsMobilefriendlytestRun](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setRequestBody(value: SchemaRunMobileFriendlyTestRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+        inline def setRequestBody(value: SchemaRunMobileFriendlyTestRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+        inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
       }
     }
     
@@ -168,20 +159,16 @@ object searchconsoleV1Mod {
     }
     object SchemaBlockedResource {
       
-      @scala.inline
-      def apply(): SchemaBlockedResource = {
+      inline def apply(): SchemaBlockedResource = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaBlockedResource]
       }
       
-      @scala.inline
-      implicit class SchemaBlockedResourceMutableBuilder[Self <: SchemaBlockedResource] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaBlockedResource](x: Self) {
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       }
     }
     
@@ -204,26 +191,20 @@ object searchconsoleV1Mod {
     }
     object SchemaImage {
       
-      @scala.inline
-      def apply(): SchemaImage = {
+      inline def apply(): SchemaImage = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaImage]
       }
       
-      @scala.inline
-      implicit class SchemaImageMutableBuilder[Self <: SchemaImage] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaImage](x: Self) {
         
-        @scala.inline
-        def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+        inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        @scala.inline
-        def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+        inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+        inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
       }
     }
     
@@ -239,20 +220,16 @@ object searchconsoleV1Mod {
     }
     object SchemaMobileFriendlyIssue {
       
-      @scala.inline
-      def apply(): SchemaMobileFriendlyIssue = {
+      inline def apply(): SchemaMobileFriendlyIssue = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaMobileFriendlyIssue]
       }
       
-      @scala.inline
-      implicit class SchemaMobileFriendlyIssueMutableBuilder[Self <: SchemaMobileFriendlyIssue] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaMobileFriendlyIssue](x: Self) {
         
-        @scala.inline
-        def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+        inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+        inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
       }
     }
     
@@ -268,20 +245,16 @@ object searchconsoleV1Mod {
     }
     object SchemaResourceIssue {
       
-      @scala.inline
-      def apply(): SchemaResourceIssue = {
+      inline def apply(): SchemaResourceIssue = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaResourceIssue]
       }
       
-      @scala.inline
-      implicit class SchemaResourceIssueMutableBuilder[Self <: SchemaResourceIssue] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaResourceIssue](x: Self) {
         
-        @scala.inline
-        def setBlockedResource(value: SchemaBlockedResource): Self = StObject.set(x, "blockedResource", value.asInstanceOf[js.Any])
+        inline def setBlockedResource(value: SchemaBlockedResource): Self = StObject.set(x, "blockedResource", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockedResourceUndefined: Self = StObject.set(x, "blockedResource", js.undefined)
+        inline def setBlockedResourceUndefined: Self = StObject.set(x, "blockedResource", js.undefined)
       }
     }
     
@@ -302,26 +275,20 @@ object searchconsoleV1Mod {
     }
     object SchemaRunMobileFriendlyTestRequest {
       
-      @scala.inline
-      def apply(): SchemaRunMobileFriendlyTestRequest = {
+      inline def apply(): SchemaRunMobileFriendlyTestRequest = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaRunMobileFriendlyTestRequest]
       }
       
-      @scala.inline
-      implicit class SchemaRunMobileFriendlyTestRequestMutableBuilder[Self <: SchemaRunMobileFriendlyTestRequest] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaRunMobileFriendlyTestRequest](x: Self) {
         
-        @scala.inline
-        def setRequestScreenshot(value: Boolean): Self = StObject.set(x, "requestScreenshot", value.asInstanceOf[js.Any])
+        inline def setRequestScreenshot(value: Boolean): Self = StObject.set(x, "requestScreenshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestScreenshotUndefined: Self = StObject.set(x, "requestScreenshot", js.undefined)
+        inline def setRequestScreenshotUndefined: Self = StObject.set(x, "requestScreenshot", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       }
     }
     
@@ -358,50 +325,36 @@ object searchconsoleV1Mod {
     }
     object SchemaRunMobileFriendlyTestResponse {
       
-      @scala.inline
-      def apply(): SchemaRunMobileFriendlyTestResponse = {
+      inline def apply(): SchemaRunMobileFriendlyTestResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaRunMobileFriendlyTestResponse]
       }
       
-      @scala.inline
-      implicit class SchemaRunMobileFriendlyTestResponseMutableBuilder[Self <: SchemaRunMobileFriendlyTestResponse] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaRunMobileFriendlyTestResponse](x: Self) {
         
-        @scala.inline
-        def setMobileFriendliness(value: String): Self = StObject.set(x, "mobileFriendliness", value.asInstanceOf[js.Any])
+        inline def setMobileFriendliness(value: String): Self = StObject.set(x, "mobileFriendliness", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMobileFriendlinessUndefined: Self = StObject.set(x, "mobileFriendliness", js.undefined)
+        inline def setMobileFriendlinessUndefined: Self = StObject.set(x, "mobileFriendliness", js.undefined)
         
-        @scala.inline
-        def setMobileFriendlyIssues(value: js.Array[SchemaMobileFriendlyIssue]): Self = StObject.set(x, "mobileFriendlyIssues", value.asInstanceOf[js.Any])
+        inline def setMobileFriendlyIssues(value: js.Array[SchemaMobileFriendlyIssue]): Self = StObject.set(x, "mobileFriendlyIssues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMobileFriendlyIssuesUndefined: Self = StObject.set(x, "mobileFriendlyIssues", js.undefined)
+        inline def setMobileFriendlyIssuesUndefined: Self = StObject.set(x, "mobileFriendlyIssues", js.undefined)
         
-        @scala.inline
-        def setMobileFriendlyIssuesVarargs(value: SchemaMobileFriendlyIssue*): Self = StObject.set(x, "mobileFriendlyIssues", js.Array(value :_*))
+        inline def setMobileFriendlyIssuesVarargs(value: SchemaMobileFriendlyIssue*): Self = StObject.set(x, "mobileFriendlyIssues", js.Array(value :_*))
         
-        @scala.inline
-        def setResourceIssues(value: js.Array[SchemaResourceIssue]): Self = StObject.set(x, "resourceIssues", value.asInstanceOf[js.Any])
+        inline def setResourceIssues(value: js.Array[SchemaResourceIssue]): Self = StObject.set(x, "resourceIssues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResourceIssuesUndefined: Self = StObject.set(x, "resourceIssues", js.undefined)
+        inline def setResourceIssuesUndefined: Self = StObject.set(x, "resourceIssues", js.undefined)
         
-        @scala.inline
-        def setResourceIssuesVarargs(value: SchemaResourceIssue*): Self = StObject.set(x, "resourceIssues", js.Array(value :_*))
+        inline def setResourceIssuesVarargs(value: SchemaResourceIssue*): Self = StObject.set(x, "resourceIssues", js.Array(value :_*))
         
-        @scala.inline
-        def setScreenshot(value: SchemaImage): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
+        inline def setScreenshot(value: SchemaImage): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
+        inline def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
         
-        @scala.inline
-        def setTestStatus(value: SchemaTestStatus): Self = StObject.set(x, "testStatus", value.asInstanceOf[js.Any])
+        inline def setTestStatus(value: SchemaTestStatus): Self = StObject.set(x, "testStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTestStatusUndefined: Self = StObject.set(x, "testStatus", js.undefined)
+        inline def setTestStatusUndefined: Self = StObject.set(x, "testStatus", js.undefined)
       }
     }
     
@@ -422,26 +375,20 @@ object searchconsoleV1Mod {
     }
     object SchemaTestStatus {
       
-      @scala.inline
-      def apply(): SchemaTestStatus = {
+      inline def apply(): SchemaTestStatus = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaTestStatus]
       }
       
-      @scala.inline
-      implicit class SchemaTestStatusMutableBuilder[Self <: SchemaTestStatus] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaTestStatus](x: Self) {
         
-        @scala.inline
-        def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+        inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -509,80 +456,56 @@ object searchconsoleV1Mod {
     }
     object StandardParameters {
       
-      @scala.inline
-      def apply(): StandardParameters = {
+      inline def apply(): StandardParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StandardParameters]
       }
       
-      @scala.inline
-      implicit class StandardParametersMutableBuilder[Self <: StandardParameters] (val x: Self) extends AnyVal {
+      extension [Self <: StandardParameters](x: Self) {
         
-        @scala.inline
-        def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+        inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+        inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
         
-        @scala.inline
-        def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+        inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+        inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
         
-        @scala.inline
-        def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+        inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
         
-        @scala.inline
-        def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+        inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+        inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+        inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+        inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
         
-        @scala.inline
-        def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+        inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+        inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
         
-        @scala.inline
-        def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+        inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+        inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
         
-        @scala.inline
-        def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+        inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+        inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
         
-        @scala.inline
-        def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+        inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+        inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
       }
     }
   }

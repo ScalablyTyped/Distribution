@@ -28,37 +28,27 @@ trait CreateKeysAndCertificateResponse extends StObject {
 }
 object CreateKeysAndCertificateResponse {
   
-  @scala.inline
-  def apply(): CreateKeysAndCertificateResponse = {
+  inline def apply(): CreateKeysAndCertificateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateKeysAndCertificateResponse]
   }
   
-  @scala.inline
-  implicit class CreateKeysAndCertificateResponseMutableBuilder[Self <: CreateKeysAndCertificateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateKeysAndCertificateResponse](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
+    inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
-    @scala.inline
-    def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
+    inline def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
+    inline def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
     
-    @scala.inline
-    def setKeyPair(value: KeyPair): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
+    inline def setKeyPair(value: KeyPair): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairUndefined: Self = StObject.set(x, "keyPair", js.undefined)
+    inline def setKeyPairUndefined: Self = StObject.set(x, "keyPair", js.undefined)
   }
 }

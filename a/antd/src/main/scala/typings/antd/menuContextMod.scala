@@ -23,29 +23,22 @@ object menuContextMod extends Shortcut {
   }
   object MenuContextProps {
     
-    @scala.inline
-    def apply(inlineCollapsed: Boolean): MenuContextProps = {
+    inline def apply(inlineCollapsed: Boolean): MenuContextProps = {
       val __obj = js.Dynamic.literal(inlineCollapsed = inlineCollapsed.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuContextProps]
     }
     
-    @scala.inline
-    implicit class MenuContextPropsMutableBuilder[Self <: MenuContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuContextProps](x: Self) {
       
-      @scala.inline
-      def setAntdMenuTheme(value: MenuTheme): Self = StObject.set(x, "antdMenuTheme", value.asInstanceOf[js.Any])
+      inline def setAntdMenuTheme(value: MenuTheme): Self = StObject.set(x, "antdMenuTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAntdMenuThemeUndefined: Self = StObject.set(x, "antdMenuTheme", js.undefined)
+      inline def setAntdMenuThemeUndefined: Self = StObject.set(x, "antdMenuTheme", js.undefined)
       
-      @scala.inline
-      def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setInlineCollapsed(value: Boolean): Self = StObject.set(x, "inlineCollapsed", value.asInstanceOf[js.Any])
+      inline def setInlineCollapsed(value: Boolean): Self = StObject.set(x, "inlineCollapsed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,11 +49,9 @@ object menuContextMod extends Shortcut {
   trait MenuTheme extends StObject
   object MenuTheme {
     
-    @scala.inline
-    def dark: typings.antd.antdStrings.dark = "dark".asInstanceOf[typings.antd.antdStrings.dark]
+    inline def dark: typings.antd.antdStrings.dark = "dark".asInstanceOf[typings.antd.antdStrings.dark]
     
-    @scala.inline
-    def light: typings.antd.antdStrings.light = "light".asInstanceOf[typings.antd.antdStrings.light]
+    inline def light: typings.antd.antdStrings.light = "light".asInstanceOf[typings.antd.antdStrings.light]
   }
   
   type _To = Context[MenuContextProps]

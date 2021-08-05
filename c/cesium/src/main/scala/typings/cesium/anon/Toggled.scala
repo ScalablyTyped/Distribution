@@ -12,25 +12,19 @@ trait Toggled extends StObject {
 }
 object Toggled {
   
-  @scala.inline
-  def apply(): Toggled = {
+  inline def apply(): Toggled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Toggled]
   }
   
-  @scala.inline
-  implicit class ToggledMutableBuilder[Self <: Toggled] (val x: Self) extends AnyVal {
+  extension [Self <: Toggled](x: Self) {
     
-    @scala.inline
-    def setToggled(value: Boolean): Self = StObject.set(x, "toggled", value.asInstanceOf[js.Any])
+    inline def setToggled(value: Boolean): Self = StObject.set(x, "toggled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggledUndefined: Self = StObject.set(x, "toggled", js.undefined)
+    inline def setToggledUndefined: Self = StObject.set(x, "toggled", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

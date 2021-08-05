@@ -63,8 +63,7 @@ trait Policy extends StObject {
 }
 object Policy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExcludeResourceTags: Boolean,
     PolicyName: ResourceName,
     RemediationEnabled: Boolean,
@@ -75,64 +74,44 @@ object Policy {
     __obj.asInstanceOf[Policy]
   }
   
-  @scala.inline
-  implicit class PolicyMutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
+  extension [Self <: Policy](x: Self) {
     
-    @scala.inline
-    def setExcludeMap(value: CustomerPolicyScopeMap): Self = StObject.set(x, "ExcludeMap", value.asInstanceOf[js.Any])
+    inline def setExcludeMap(value: CustomerPolicyScopeMap): Self = StObject.set(x, "ExcludeMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeMapUndefined: Self = StObject.set(x, "ExcludeMap", js.undefined)
+    inline def setExcludeMapUndefined: Self = StObject.set(x, "ExcludeMap", js.undefined)
     
-    @scala.inline
-    def setExcludeResourceTags(value: Boolean): Self = StObject.set(x, "ExcludeResourceTags", value.asInstanceOf[js.Any])
+    inline def setExcludeResourceTags(value: Boolean): Self = StObject.set(x, "ExcludeResourceTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeMap(value: CustomerPolicyScopeMap): Self = StObject.set(x, "IncludeMap", value.asInstanceOf[js.Any])
+    inline def setIncludeMap(value: CustomerPolicyScopeMap): Self = StObject.set(x, "IncludeMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeMapUndefined: Self = StObject.set(x, "IncludeMap", js.undefined)
+    inline def setIncludeMapUndefined: Self = StObject.set(x, "IncludeMap", js.undefined)
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
+    inline def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUpdateToken(value: PolicyUpdateToken): Self = StObject.set(x, "PolicyUpdateToken", value.asInstanceOf[js.Any])
+    inline def setPolicyUpdateToken(value: PolicyUpdateToken): Self = StObject.set(x, "PolicyUpdateToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUpdateTokenUndefined: Self = StObject.set(x, "PolicyUpdateToken", js.undefined)
+    inline def setPolicyUpdateTokenUndefined: Self = StObject.set(x, "PolicyUpdateToken", js.undefined)
     
-    @scala.inline
-    def setRemediationEnabled(value: Boolean): Self = StObject.set(x, "RemediationEnabled", value.asInstanceOf[js.Any])
+    inline def setRemediationEnabled(value: Boolean): Self = StObject.set(x, "RemediationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTags(value: ResourceTags): Self = StObject.set(x, "ResourceTags", value.asInstanceOf[js.Any])
+    inline def setResourceTags(value: ResourceTags): Self = StObject.set(x, "ResourceTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTagsUndefined: Self = StObject.set(x, "ResourceTags", js.undefined)
+    inline def setResourceTagsUndefined: Self = StObject.set(x, "ResourceTags", js.undefined)
     
-    @scala.inline
-    def setResourceTagsVarargs(value: ResourceTag*): Self = StObject.set(x, "ResourceTags", js.Array(value :_*))
+    inline def setResourceTagsVarargs(value: ResourceTag*): Self = StObject.set(x, "ResourceTags", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeList(value: ResourceTypeList): Self = StObject.set(x, "ResourceTypeList", value.asInstanceOf[js.Any])
+    inline def setResourceTypeList(value: ResourceTypeList): Self = StObject.set(x, "ResourceTypeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeListUndefined: Self = StObject.set(x, "ResourceTypeList", js.undefined)
+    inline def setResourceTypeListUndefined: Self = StObject.set(x, "ResourceTypeList", js.undefined)
     
-    @scala.inline
-    def setResourceTypeListVarargs(value: ResourceType*): Self = StObject.set(x, "ResourceTypeList", js.Array(value :_*))
+    inline def setResourceTypeListVarargs(value: ResourceType*): Self = StObject.set(x, "ResourceTypeList", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurityServicePolicyData(value: SecurityServicePolicyData): Self = StObject.set(x, "SecurityServicePolicyData", value.asInstanceOf[js.Any])
+    inline def setSecurityServicePolicyData(value: SecurityServicePolicyData): Self = StObject.set(x, "SecurityServicePolicyData", value.asInstanceOf[js.Any])
   }
 }

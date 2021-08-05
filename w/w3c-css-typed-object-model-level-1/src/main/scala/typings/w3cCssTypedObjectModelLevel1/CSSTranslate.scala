@@ -17,8 +17,7 @@ trait CSSTranslate
 }
 object CSSTranslate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     is2D: Boolean,
     toMatrix: () => DOMMatrix,
     x: CSSNumericValue,
@@ -29,16 +28,12 @@ object CSSTranslate {
     __obj.asInstanceOf[CSSTranslate]
   }
   
-  @scala.inline
-  implicit class CSSTranslateMutableBuilder[Self <: CSSTranslate] (val x: Self) extends AnyVal {
+  extension [Self <: CSSTranslate](x: Self) {
     
-    @scala.inline
-    def setX(value: CSSNumericValue): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: CSSNumericValue): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: CSSNumericValue): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: CSSNumericValue): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: CSSNumericValue): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: CSSNumericValue): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

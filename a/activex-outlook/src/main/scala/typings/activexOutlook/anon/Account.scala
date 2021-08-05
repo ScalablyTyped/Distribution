@@ -10,16 +10,13 @@ trait Account extends StObject {
 }
 object Account {
   
-  @scala.inline
-  def apply(Account: typings.activexOutlook.Outlook.Account): Account = {
+  inline def apply(Account: typings.activexOutlook.Outlook.Account): Account = {
     val __obj = js.Dynamic.literal(Account = Account.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
   
-  @scala.inline
-  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+  extension [Self <: Account](x: Self) {
     
-    @scala.inline
-    def setAccount(value: typings.activexOutlook.Outlook.Account): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: typings.activexOutlook.Outlook.Account): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
   }
 }

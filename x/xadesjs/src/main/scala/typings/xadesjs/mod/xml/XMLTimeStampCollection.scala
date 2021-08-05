@@ -13,6 +13,5 @@ class XMLTimeStampCollection ()
   extends typings.xadesjs.xmlMod.XMLTimeStampCollection
 object XMLTimeStampCollection {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.XMLTimeStampCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("XMLTimeStampCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.XMLTimeStampCollection]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.XMLTimeStampCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("XMLTimeStampCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.XMLTimeStampCollection]]
 }

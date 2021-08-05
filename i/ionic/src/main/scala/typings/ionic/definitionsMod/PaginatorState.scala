@@ -12,19 +12,15 @@ trait PaginatorState extends StObject {
 }
 object PaginatorState {
   
-  @scala.inline
-  def apply(done: Boolean, loaded: Double): PaginatorState = {
+  inline def apply(done: Boolean, loaded: Double): PaginatorState = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginatorState]
   }
   
-  @scala.inline
-  implicit class PaginatorStateMutableBuilder[Self <: PaginatorState] (val x: Self) extends AnyVal {
+  extension [Self <: PaginatorState](x: Self) {
     
-    @scala.inline
-    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
   }
 }

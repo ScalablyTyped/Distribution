@@ -17,19 +17,15 @@ trait PluginTaskSpec
 }
 object PluginTaskSpec {
   
-  @scala.inline
-  def apply(PluginSpec: PluginSpec): PluginTaskSpec = {
+  inline def apply(PluginSpec: PluginSpec): PluginTaskSpec = {
     val __obj = js.Dynamic.literal(PluginSpec = PluginSpec.asInstanceOf[js.Any], Runtime = "plugin")
     __obj.asInstanceOf[PluginTaskSpec]
   }
   
-  @scala.inline
-  implicit class PluginTaskSpecMutableBuilder[Self <: PluginTaskSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PluginTaskSpec](x: Self) {
     
-    @scala.inline
-    def setPluginSpec(value: PluginSpec): Self = StObject.set(x, "PluginSpec", value.asInstanceOf[js.Any])
+    inline def setPluginSpec(value: PluginSpec): Self = StObject.set(x, "PluginSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntime(value: plugin): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
+    inline def setRuntime(value: plugin): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
   }
 }

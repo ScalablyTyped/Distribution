@@ -13,16 +13,13 @@ trait Document extends StObject {
 }
 object Document {
   
-  @scala.inline
-  def apply(createElement: webview => WebviewTag): Document = {
+  inline def apply(createElement: webview => WebviewTag): Document = {
     val __obj = js.Dynamic.literal(createElement = js.Any.fromFunction1(createElement))
     __obj.asInstanceOf[Document]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+  extension [Self <: Document](x: Self) {
     
-    @scala.inline
-    def setCreateElement(value: webview => WebviewTag): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
+    inline def setCreateElement(value: webview => WebviewTag): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
   }
 }

@@ -24,12 +24,10 @@ object Events {
     def on(`type`: String, listener: EventListener): Dispatcher = js.native
   }
   
-  @scala.inline
-  def Event(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Event")().asInstanceOf[Unit]
+  inline def Event(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Event")().asInstanceOf[Unit]
   
   /**
     * Return a new dispatcher that creates event types using the supplied string argument list. The returned Dispatcher will have methods with the names of the event types.
     */
-  @scala.inline
-  def dispatch(): Dispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")().asInstanceOf[Dispatcher]
+  inline def dispatch(): Dispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")().asInstanceOf[Dispatcher]
 }

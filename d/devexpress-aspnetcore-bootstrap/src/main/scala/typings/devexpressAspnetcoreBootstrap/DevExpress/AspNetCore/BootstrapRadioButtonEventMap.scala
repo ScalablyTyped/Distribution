@@ -12,8 +12,7 @@ trait BootstrapRadioButtonEventMap
 }
 object BootstrapRadioButtonEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkedChanged: ProcessingModeEventArgs,
     gotFocus: EventArgs,
     init: EventArgs,
@@ -25,10 +24,8 @@ object BootstrapRadioButtonEventMap {
     __obj.asInstanceOf[BootstrapRadioButtonEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapRadioButtonEventMapMutableBuilder[Self <: BootstrapRadioButtonEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapRadioButtonEventMap](x: Self) {
     
-    @scala.inline
-    def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
+    inline def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait ParseJSON extends StObject {
 }
 object ParseJSON {
   
-  @scala.inline
-  def apply(parseJSON: String => js.Object): ParseJSON = {
+  inline def apply(parseJSON: String => js.Object): ParseJSON = {
     val __obj = js.Dynamic.literal(parseJSON = js.Any.fromFunction1(parseJSON))
     __obj.asInstanceOf[ParseJSON]
   }
   
-  @scala.inline
-  implicit class ParseJSONMutableBuilder[Self <: ParseJSON] (val x: Self) extends AnyVal {
+  extension [Self <: ParseJSON](x: Self) {
     
-    @scala.inline
-    def setParseJSON(value: String => js.Object): Self = StObject.set(x, "parseJSON", js.Any.fromFunction1(value))
+    inline def setParseJSON(value: String => js.Object): Self = StObject.set(x, "parseJSON", js.Any.fromFunction1(value))
   }
 }

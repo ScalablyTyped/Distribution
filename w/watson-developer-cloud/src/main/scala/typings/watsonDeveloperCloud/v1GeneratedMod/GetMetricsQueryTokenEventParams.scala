@@ -16,31 +16,23 @@ trait GetMetricsQueryTokenEventParams extends StObject {
 }
 object GetMetricsQueryTokenEventParams {
   
-  @scala.inline
-  def apply(): GetMetricsQueryTokenEventParams = {
+  inline def apply(): GetMetricsQueryTokenEventParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMetricsQueryTokenEventParams]
   }
   
-  @scala.inline
-  implicit class GetMetricsQueryTokenEventParamsMutableBuilder[Self <: GetMetricsQueryTokenEventParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricsQueryTokenEventParams](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

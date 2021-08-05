@@ -18,25 +18,19 @@ trait RowEditDialogAfterOpenEventUIParam extends StObject {
 }
 object RowEditDialogAfterOpenEventUIParam {
   
-  @scala.inline
-  def apply(): RowEditDialogAfterOpenEventUIParam = {
+  inline def apply(): RowEditDialogAfterOpenEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowEditDialogAfterOpenEventUIParam]
   }
   
-  @scala.inline
-  implicit class RowEditDialogAfterOpenEventUIParamMutableBuilder[Self <: RowEditDialogAfterOpenEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: RowEditDialogAfterOpenEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDialogElement(value: js.Any): Self = StObject.set(x, "dialogElement", value.asInstanceOf[js.Any])
+    inline def setDialogElement(value: js.Any): Self = StObject.set(x, "dialogElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogElementUndefined: Self = StObject.set(x, "dialogElement", js.undefined)
+    inline def setDialogElementUndefined: Self = StObject.set(x, "dialogElement", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

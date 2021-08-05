@@ -10,19 +10,15 @@ trait LinearGaugeExportSVGOptions extends StObject {
 }
 object LinearGaugeExportSVGOptions {
   
-  @scala.inline
-  def apply(): LinearGaugeExportSVGOptions = {
+  inline def apply(): LinearGaugeExportSVGOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinearGaugeExportSVGOptions]
   }
   
-  @scala.inline
-  implicit class LinearGaugeExportSVGOptionsMutableBuilder[Self <: LinearGaugeExportSVGOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LinearGaugeExportSVGOptions](x: Self) {
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
   }
 }

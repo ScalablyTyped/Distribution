@@ -14,19 +14,15 @@ trait Classes extends StObject {
 }
 object Classes {
   
-  @scala.inline
-  def apply(configurable: Configurable, graph: Graph): Classes = {
+  inline def apply(configurable: Configurable, graph: Graph): Classes = {
     val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], graph = graph.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classes]
   }
   
-  @scala.inline
-  implicit class ClassesMutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
+  extension [Self <: Classes](x: Self) {
     
-    @scala.inline
-    def setConfigurable(value: Configurable): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+    inline def setConfigurable(value: Configurable): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraph(value: Graph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: Graph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
   }
 }

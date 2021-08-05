@@ -49,55 +49,39 @@ trait SchemaRoleAssignment extends StObject {
 }
 object SchemaRoleAssignment {
   
-  @scala.inline
-  def apply(): SchemaRoleAssignment = {
+  inline def apply(): SchemaRoleAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoleAssignment]
   }
   
-  @scala.inline
-  implicit class SchemaRoleAssignmentMutableBuilder[Self <: SchemaRoleAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoleAssignment](x: Self) {
     
-    @scala.inline
-    def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
+    inline def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
+    inline def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
+    inline def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
+    inline def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
     
-    @scala.inline
-    def setRoleAssignmentId(value: String): Self = StObject.set(x, "roleAssignmentId", value.asInstanceOf[js.Any])
+    inline def setRoleAssignmentId(value: String): Self = StObject.set(x, "roleAssignmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleAssignmentIdUndefined: Self = StObject.set(x, "roleAssignmentId", js.undefined)
+    inline def setRoleAssignmentIdUndefined: Self = StObject.set(x, "roleAssignmentId", js.undefined)
     
-    @scala.inline
-    def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
+    inline def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
+    inline def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
     
-    @scala.inline
-    def setScopeType(value: String): Self = StObject.set(x, "scopeType", value.asInstanceOf[js.Any])
+    inline def setScopeType(value: String): Self = StObject.set(x, "scopeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeTypeUndefined: Self = StObject.set(x, "scopeType", js.undefined)
+    inline def setScopeTypeUndefined: Self = StObject.set(x, "scopeType", js.undefined)
   }
 }

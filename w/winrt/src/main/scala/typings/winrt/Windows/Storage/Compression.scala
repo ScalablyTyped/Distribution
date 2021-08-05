@@ -57,8 +57,7 @@ object Compression {
   }
   object Compressor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       detachStream: () => IOutputStream,
       dispose: () => Unit,
@@ -70,11 +69,9 @@ object Compression {
       __obj.asInstanceOf[Compressor]
     }
     
-    @scala.inline
-    implicit class CompressorMutableBuilder[Self <: Compressor] (val x: Self) extends AnyVal {
+    extension [Self <: Compressor](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -86,8 +83,7 @@ object Compression {
   }
   object Decompressor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       detachStream: () => IInputStream,
       dispose: () => Unit,
@@ -97,11 +93,9 @@ object Compression {
       __obj.asInstanceOf[Decompressor]
     }
     
-    @scala.inline
-    implicit class DecompressorMutableBuilder[Self <: Decompressor] (val x: Self) extends AnyVal {
+    extension [Self <: Decompressor](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -115,8 +109,7 @@ object Compression {
   }
   object ICompressor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       detachStream: () => IOutputStream,
       finishAsync: () => IAsyncOperation[Boolean],
@@ -127,14 +120,11 @@ object Compression {
       __obj.asInstanceOf[ICompressor]
     }
     
-    @scala.inline
-    implicit class ICompressorMutableBuilder[Self <: ICompressor] (val x: Self) extends AnyVal {
+    extension [Self <: ICompressor](x: Self) {
       
-      @scala.inline
-      def setDetachStream(value: () => IOutputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
+      inline def setDetachStream(value: () => IOutputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinishAsync(value: () => IAsyncOperation[Boolean]): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
+      inline def setFinishAsync(value: () => IAsyncOperation[Boolean]): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
     }
   }
   
@@ -146,8 +136,7 @@ object Compression {
   }
   object ICompressorFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createCompressor: IOutputStream => Compressor,
       createCompressorEx: (IOutputStream, CompressAlgorithm, Double) => Compressor
     ): ICompressorFactory = {
@@ -155,14 +144,11 @@ object Compression {
       __obj.asInstanceOf[ICompressorFactory]
     }
     
-    @scala.inline
-    implicit class ICompressorFactoryMutableBuilder[Self <: ICompressorFactory] (val x: Self) extends AnyVal {
+    extension [Self <: ICompressorFactory](x: Self) {
       
-      @scala.inline
-      def setCreateCompressor(value: IOutputStream => Compressor): Self = StObject.set(x, "createCompressor", js.Any.fromFunction1(value))
+      inline def setCreateCompressor(value: IOutputStream => Compressor): Self = StObject.set(x, "createCompressor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateCompressorEx(value: (IOutputStream, CompressAlgorithm, Double) => Compressor): Self = StObject.set(x, "createCompressorEx", js.Any.fromFunction3(value))
+      inline def setCreateCompressorEx(value: (IOutputStream, CompressAlgorithm, Double) => Compressor): Self = StObject.set(x, "createCompressorEx", js.Any.fromFunction3(value))
     }
   }
   
@@ -174,8 +160,7 @@ object Compression {
   }
   object IDecompressor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       detachStream: () => IInputStream,
       readAsync: (IBuffer, Double, InputStreamOptions) => IAsyncOperationWithProgress[IBuffer, Double]
@@ -184,11 +169,9 @@ object Compression {
       __obj.asInstanceOf[IDecompressor]
     }
     
-    @scala.inline
-    implicit class IDecompressorMutableBuilder[Self <: IDecompressor] (val x: Self) extends AnyVal {
+    extension [Self <: IDecompressor](x: Self) {
       
-      @scala.inline
-      def setDetachStream(value: () => IInputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
+      inline def setDetachStream(value: () => IInputStream): Self = StObject.set(x, "detachStream", js.Any.fromFunction0(value))
     }
   }
   
@@ -198,17 +181,14 @@ object Compression {
   }
   object IDecompressorFactory {
     
-    @scala.inline
-    def apply(createDecompressor: IInputStream => Decompressor): IDecompressorFactory = {
+    inline def apply(createDecompressor: IInputStream => Decompressor): IDecompressorFactory = {
       val __obj = js.Dynamic.literal(createDecompressor = js.Any.fromFunction1(createDecompressor))
       __obj.asInstanceOf[IDecompressorFactory]
     }
     
-    @scala.inline
-    implicit class IDecompressorFactoryMutableBuilder[Self <: IDecompressorFactory] (val x: Self) extends AnyVal {
+    extension [Self <: IDecompressorFactory](x: Self) {
       
-      @scala.inline
-      def setCreateDecompressor(value: IInputStream => Decompressor): Self = StObject.set(x, "createDecompressor", js.Any.fromFunction1(value))
+      inline def setCreateDecompressor(value: IInputStream => Decompressor): Self = StObject.set(x, "createDecompressor", js.Any.fromFunction1(value))
     }
   }
 }

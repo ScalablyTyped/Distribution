@@ -8,37 +8,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(types: FlagTypeMap): OptionsParsed = ^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any]).asInstanceOf[OptionsParsed]
-  @scala.inline
-  def apply(types: FlagTypeMap, shorthands: Unit, args: js.Array[String]): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
-  @scala.inline
-  def apply(types: FlagTypeMap, shorthands: Unit, args: js.Array[String], slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
-  @scala.inline
-  def apply(types: FlagTypeMap, shorthands: Unit, args: Unit, slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
-  @scala.inline
-  def apply(types: FlagTypeMap, shorthands: ShortFlags): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
-  @scala.inline
-  def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String]): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
-  @scala.inline
-  def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String], slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
-  @scala.inline
-  def apply(types: FlagTypeMap, shorthands: ShortFlags, args: Unit, slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  inline def apply(types: FlagTypeMap): OptionsParsed = ^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any]).asInstanceOf[OptionsParsed]
+  inline def apply(types: FlagTypeMap, shorthands: Unit, args: js.Array[String]): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  inline def apply(types: FlagTypeMap, shorthands: Unit, args: js.Array[String], slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  inline def apply(types: FlagTypeMap, shorthands: Unit, args: Unit, slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  inline def apply(types: FlagTypeMap, shorthands: ShortFlags): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  inline def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String]): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  inline def apply(types: FlagTypeMap, shorthands: ShortFlags, args: js.Array[String], slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
+  inline def apply(types: FlagTypeMap, shorthands: ShortFlags, args: Unit, slice: Double): OptionsParsed = (^.asInstanceOf[js.Dynamic].apply(types.asInstanceOf[js.Any], shorthands.asInstanceOf[js.Any], args.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[OptionsParsed]
   
   @JSImport("nopt", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clean(data: CommandData, types: FlagTypeMap): String = (^.asInstanceOf[js.Dynamic].applyDynamic("clean")(data.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def clean(data: CommandData, types: FlagTypeMap, typeDefs: TypeDefs_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("clean")(data.asInstanceOf[js.Any], types.asInstanceOf[js.Any], typeDefs.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def clean(data: CommandData, types: FlagTypeMap): String = (^.asInstanceOf[js.Dynamic].applyDynamic("clean")(data.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def clean(data: CommandData, types: FlagTypeMap, typeDefs: TypeDefs_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("clean")(data.asInstanceOf[js.Any], types.asInstanceOf[js.Any], typeDefs.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("nopt", "typeDefs")
   @js.native
   def typeDefs: TypeDefs_ = js.native
-  @scala.inline
-  def typeDefs_=(x: TypeDefs_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeDefs")(x.asInstanceOf[js.Any])
+  inline def typeDefs_=(x: TypeDefs_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeDefs")(x.asInstanceOf[js.Any])
   
   type CommandData = StringDictionary[String]
   
@@ -52,17 +41,14 @@ object mod {
   }
   object OptionsParsed {
     
-    @scala.inline
-    def apply(argv: Cooked): OptionsParsed = {
+    inline def apply(argv: Cooked): OptionsParsed = {
       val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsParsed]
     }
     
-    @scala.inline
-    implicit class OptionsParsedMutableBuilder[Self <: OptionsParsed] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsParsed](x: Self) {
       
-      @scala.inline
-      def setArgv(value: Cooked): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      inline def setArgv(value: Cooked): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,21 +64,17 @@ object mod {
   }
   object TypeInfo {
     
-    @scala.inline
-    def apply(`type`: js.Object, validate: (CommandData, String, String) => Boolean): TypeInfo = {
+    inline def apply(`type`: js.Object, validate: (CommandData, String, String) => Boolean): TypeInfo = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeInfo]
     }
     
-    @scala.inline
-    implicit class TypeInfoMutableBuilder[Self <: TypeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TypeInfo](x: Self) {
       
-      @scala.inline
-      def setType(value: js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidate(value: (CommandData, String, String) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
+      inline def setValidate(value: (CommandData, String, String) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
     }
   }
 }

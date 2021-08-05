@@ -13,19 +13,15 @@ trait IRouteSummary extends StObject {
 }
 object IRouteSummary {
   
-  @scala.inline
-  def apply(totalDistance: Double, totalTime: Double): IRouteSummary = {
+  inline def apply(totalDistance: Double, totalTime: Double): IRouteSummary = {
     val __obj = js.Dynamic.literal(totalDistance = totalDistance.asInstanceOf[js.Any], totalTime = totalTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRouteSummary]
   }
   
-  @scala.inline
-  implicit class IRouteSummaryMutableBuilder[Self <: IRouteSummary] (val x: Self) extends AnyVal {
+  extension [Self <: IRouteSummary](x: Self) {
     
-    @scala.inline
-    def setTotalDistance(value: Double): Self = StObject.set(x, "totalDistance", value.asInstanceOf[js.Any])
+    inline def setTotalDistance(value: Double): Self = StObject.set(x, "totalDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
+    inline def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
   }
 }

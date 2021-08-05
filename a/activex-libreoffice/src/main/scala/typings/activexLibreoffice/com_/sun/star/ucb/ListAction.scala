@@ -38,25 +38,19 @@ trait ListAction extends StObject {
 }
 object ListAction {
   
-  @scala.inline
-  def apply(ActionInfo: js.Any, Count: Double, ListActionType: Double, Position: Double): ListAction = {
+  inline def apply(ActionInfo: js.Any, Count: Double, ListActionType: Double, Position: Double): ListAction = {
     val __obj = js.Dynamic.literal(ActionInfo = ActionInfo.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], ListActionType = ListActionType.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAction]
   }
   
-  @scala.inline
-  implicit class ListActionMutableBuilder[Self <: ListAction] (val x: Self) extends AnyVal {
+  extension [Self <: ListAction](x: Self) {
     
-    @scala.inline
-    def setActionInfo(value: js.Any): Self = StObject.set(x, "ActionInfo", value.asInstanceOf[js.Any])
+    inline def setActionInfo(value: js.Any): Self = StObject.set(x, "ActionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListActionType(value: Double): Self = StObject.set(x, "ListActionType", value.asInstanceOf[js.Any])
+    inline def setListActionType(value: Double): Self = StObject.set(x, "ListActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

@@ -12,15 +12,14 @@ trait EffectParameter extends StObject {
   
   val Name: String
   
-  @JSName("Office.EffectParameter_typekey")
+  /* private */ @JSName("Office.EffectParameter_typekey")
   var OfficeDotEffectParameter_typekey: EffectParameter
   
   var Value: js.Any
 }
 object EffectParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Name: String,
@@ -32,22 +31,16 @@ object EffectParameter {
     __obj.asInstanceOf[EffectParameter]
   }
   
-  @scala.inline
-  implicit class EffectParameterMutableBuilder[Self <: EffectParameter] (val x: Self) extends AnyVal {
+  extension [Self <: EffectParameter](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotEffectParameter_typekey(value: EffectParameter): Self = StObject.set(x, "Office.EffectParameter_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotEffectParameter_typekey(value: EffectParameter): Self = StObject.set(x, "Office.EffectParameter_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

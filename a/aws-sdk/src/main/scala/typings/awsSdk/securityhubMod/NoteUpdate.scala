@@ -18,19 +18,15 @@ trait NoteUpdate extends StObject {
 }
 object NoteUpdate {
   
-  @scala.inline
-  def apply(Text: NonEmptyString, UpdatedBy: NonEmptyString): NoteUpdate = {
+  inline def apply(Text: NonEmptyString, UpdatedBy: NonEmptyString): NoteUpdate = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any], UpdatedBy = UpdatedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoteUpdate]
   }
   
-  @scala.inline
-  implicit class NoteUpdateMutableBuilder[Self <: NoteUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: NoteUpdate](x: Self) {
     
-    @scala.inline
-    def setText(value: NonEmptyString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: NonEmptyString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedBy(value: NonEmptyString): Self = StObject.set(x, "UpdatedBy", value.asInstanceOf[js.Any])
+    inline def setUpdatedBy(value: NonEmptyString): Self = StObject.set(x, "UpdatedBy", value.asInstanceOf[js.Any])
   }
 }

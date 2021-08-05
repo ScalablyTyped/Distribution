@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(name: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(name: String, defaults: StringDictionary[js.Any]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(
+  inline def apply(name: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def apply(name: String, defaults: StringDictionary[js.Any]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def apply(
     name: String,
     defaults: StringDictionary[js.Any],
     /**
@@ -21,8 +18,7 @@ object mod {
     */
   argv: StringDictionary[js.Any]
   ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     defaults: StringDictionary[js.Any],
     /**
@@ -37,8 +33,7 @@ object mod {
     */
   parse: js.Function1[/* content */ String, StringDictionary[js.Any]]
   ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     defaults: StringDictionary[js.Any],
     /**
@@ -53,8 +48,7 @@ object mod {
     */
   parse: js.Function1[/* content */ String, StringDictionary[js.Any]]
   ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     defaults: StringDictionary[js.Any],
     /**
@@ -69,8 +63,7 @@ object mod {
     */
   parse: js.Function1[/* content */ String, StringDictionary[js.Any]]
   ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     defaults: Unit,
     /**
@@ -79,8 +72,7 @@ object mod {
     */
   argv: StringDictionary[js.Any]
   ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     defaults: Unit,
     /**
@@ -95,8 +87,7 @@ object mod {
     */
   parse: js.Function1[/* content */ String, StringDictionary[js.Any]]
   ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     defaults: Unit,
     /**
@@ -111,8 +102,7 @@ object mod {
     */
   parse: js.Function1[/* content */ String, StringDictionary[js.Any]]
   ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], argv.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     defaults: Unit,
     /**

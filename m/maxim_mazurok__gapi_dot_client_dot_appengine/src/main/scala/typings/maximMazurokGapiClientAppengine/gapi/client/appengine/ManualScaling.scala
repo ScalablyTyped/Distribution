@@ -14,19 +14,15 @@ trait ManualScaling extends StObject {
 }
 object ManualScaling {
   
-  @scala.inline
-  def apply(): ManualScaling = {
+  inline def apply(): ManualScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManualScaling]
   }
   
-  @scala.inline
-  implicit class ManualScalingMutableBuilder[Self <: ManualScaling] (val x: Self) extends AnyVal {
+  extension [Self <: ManualScaling](x: Self) {
     
-    @scala.inline
-    def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
   }
 }

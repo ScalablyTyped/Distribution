@@ -29,8 +29,7 @@ trait VirtualElementsAllowedBindings
 }
 object VirtualElementsAllowedBindings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     component: Boolean,
     foreach: Boolean,
     `if`: Boolean,
@@ -48,34 +47,24 @@ object VirtualElementsAllowedBindings {
     __obj.asInstanceOf[VirtualElementsAllowedBindings]
   }
   
-  @scala.inline
-  implicit class VirtualElementsAllowedBindingsMutableBuilder[Self <: VirtualElementsAllowedBindings] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualElementsAllowedBindings](x: Self) {
     
-    @scala.inline
-    def setComponent(value: Boolean): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Boolean): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeach(value: Boolean): Self = StObject.set(x, "foreach", value.asInstanceOf[js.Any])
+    inline def setForeach(value: Boolean): Self = StObject.set(x, "foreach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIf(value: Boolean): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
+    inline def setIf(value: Boolean): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfnot(value: Boolean): Self = StObject.set(x, "ifnot", value.asInstanceOf[js.Any])
+    inline def setIfnot(value: Boolean): Self = StObject.set(x, "ifnot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLet(value: Boolean): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
+    inline def setLet(value: Boolean): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: Boolean): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Boolean): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsing(value: Boolean): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
+    inline def setUsing(value: Boolean): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWith(value: Boolean): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
+    inline def setWith(value: Boolean): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
   }
 }

@@ -34,14 +34,12 @@ object timeAxisMod {
     @JSImport("plottable/build/src/axes/timeAxis", "TierLabelPosition.between")
     @js.native
     def between: typings.plottable.plottableStrings.between = js.native
-    @scala.inline
-    def between_=(x: between): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("between")(x.asInstanceOf[js.Any])
+    inline def between_=(x: between): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("between")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "TierLabelPosition.center")
     @js.native
     def center: typings.plottable.plottableStrings.center = js.native
-    @scala.inline
-    def center_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
+    inline def center_=(x: center): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable/build/src/axes/timeAxis", "Time")
@@ -86,17 +84,17 @@ object timeAxisMod {
     
     /* private */ def _hideOverlappingAndCutOffLabels(index: js.Any): js.Any = js.native
     
-    var _maxTimeIntervalPrecision: js.Any = js.native
+    /* private */ var _maxTimeIntervalPrecision: js.Any = js.native
     
     /* private */ def _maxWidthForInterval(config: js.Any): js.Any = js.native
     
-    var _measurer: js.Any = js.native
+    /* private */ var _measurer: js.Any = js.native
     
-    var _mostPreciseConfigIndex: js.Any = js.native
+    /* private */ var _mostPreciseConfigIndex: js.Any = js.native
     
-    var _numTiers: js.Any = js.native
+    /* private */ var _numTiers: js.Any = js.native
     
-    var _possibleTimeAxisConfigurations: js.Any = js.native
+    /* private */ var _possibleTimeAxisConfigurations: js.Any = js.native
     
     /* private */ def _renderLabellessTickMarks(tickValues: js.Any): js.Any = js.native
     
@@ -106,17 +104,17 @@ object timeAxisMod {
     
     /* private */ def _setupDomElements(): js.Any = js.native
     
-    var _tierBaselines: js.Any = js.native
+    /* private */ var _tierBaselines: js.Any = js.native
     
-    var _tierHeights: js.Any = js.native
+    /* private */ var _tierHeights: js.Any = js.native
     
-    var _tierLabelContainers: js.Any = js.native
+    /* private */ var _tierLabelContainers: js.Any = js.native
     
-    var _tierLabelPositions: js.Any = js.native
+    /* private */ var _tierLabelPositions: js.Any = js.native
     
-    var _tierMarkContainers: js.Any = js.native
+    /* private */ var _tierMarkContainers: js.Any = js.native
     
-    var _useUTC: js.Any = js.native
+    /* private */ var _useUTC: js.Any = js.native
     
     /**
       * Gets the possible TimeAxisConfigurations.
@@ -184,26 +182,22 @@ object timeAxisMod {
     @JSImport("plottable/build/src/axes/timeAxis", "Time.TIME_AXIS_TIER_CLASS")
     @js.native
     def TIME_AXIS_TIER_CLASS: String = js.native
-    @scala.inline
-    def TIME_AXIS_TIER_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIME_AXIS_TIER_CLASS")(x.asInstanceOf[js.Any])
+    inline def TIME_AXIS_TIER_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIME_AXIS_TIER_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "Time._DEFAULT_TIME_AXIS_CONFIGURATIONS")
     @js.native
     def _DEFAULT_TIME_AXIS_CONFIGURATIONS: js.Any = js.native
-    @scala.inline
-    def _DEFAULT_TIME_AXIS_CONFIGURATIONS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_TIME_AXIS_CONFIGURATIONS")(x.asInstanceOf[js.Any])
+    inline def _DEFAULT_TIME_AXIS_CONFIGURATIONS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_TIME_AXIS_CONFIGURATIONS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "Time._LONG_DATE")
     @js.native
     def _LONG_DATE: js.Any = js.native
-    @scala.inline
-    def _LONG_DATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LONG_DATE")(x.asInstanceOf[js.Any])
+    inline def _LONG_DATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LONG_DATE")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "Time._SORTED_TIME_INTERVAL_INDEX")
     @js.native
     def _SORTED_TIME_INTERVAL_INDEX: js.Any = js.native
-    @scala.inline
-    def _SORTED_TIME_INTERVAL_INDEX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SORTED_TIME_INTERVAL_INDEX")(x.asInstanceOf[js.Any])
+    inline def _SORTED_TIME_INTERVAL_INDEX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SORTED_TIME_INTERVAL_INDEX")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.Top */ /* Rewritten from type alias, can be one of: 
@@ -220,14 +214,12 @@ object timeAxisMod {
     @JSImport("plottable/build/src/axes/timeAxis", "TimeAxisOrientation.bottom")
     @js.native
     def bottom: typings.plottable.plottableStrings.bottom = js.native
-    @scala.inline
-    def bottom_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+    inline def bottom_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "TimeAxisOrientation.top")
     @js.native
     def top: typings.plottable.plottableStrings.top = js.native
-    @scala.inline
-    def top_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+    inline def top_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.Day */ /* Rewritten from type alias, can be one of: 
@@ -249,44 +241,37 @@ object timeAxisMod {
     @JSImport("plottable/build/src/axes/timeAxis", "TimeInterval.day")
     @js.native
     def day: typings.plottable.plottableStrings.day = js.native
-    @scala.inline
-    def day_=(x: day): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day")(x.asInstanceOf[js.Any])
+    inline def day_=(x: day): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "TimeInterval.hour")
     @js.native
     def hour: typings.plottable.plottableStrings.hour = js.native
-    @scala.inline
-    def hour_=(x: hour): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hour")(x.asInstanceOf[js.Any])
+    inline def hour_=(x: hour): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hour")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "TimeInterval.minute")
     @js.native
     def minute: typings.plottable.plottableStrings.minute = js.native
-    @scala.inline
-    def minute_=(x: minute): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minute")(x.asInstanceOf[js.Any])
+    inline def minute_=(x: minute): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minute")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "TimeInterval.month")
     @js.native
     def month: typings.plottable.plottableStrings.month = js.native
-    @scala.inline
-    def month_=(x: month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("month")(x.asInstanceOf[js.Any])
+    inline def month_=(x: month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("month")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "TimeInterval.second")
     @js.native
     def second: typings.plottable.plottableStrings.second = js.native
-    @scala.inline
-    def second_=(x: second): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("second")(x.asInstanceOf[js.Any])
+    inline def second_=(x: second): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("second")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "TimeInterval.week")
     @js.native
     def week: typings.plottable.plottableStrings.week = js.native
-    @scala.inline
-    def week_=(x: week): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("week")(x.asInstanceOf[js.Any])
+    inline def week_=(x: week): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("week")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "TimeInterval.year")
     @js.native
     def year: typings.plottable.plottableStrings.year = js.native
-    @scala.inline
-    def year_=(x: year): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("year")(x.asInstanceOf[js.Any])
+    inline def year_=(x: year): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("year")(x.asInstanceOf[js.Any])
   }
   
   type TimeAxisConfiguration = js.Array[TimeAxisTierConfiguration]
@@ -317,23 +302,18 @@ object timeAxisMod {
   }
   object TimeAxisTierConfiguration {
     
-    @scala.inline
-    def apply(formatter: /* value */ js.Any => String, interval: String, step: Double): TimeAxisTierConfiguration = {
+    inline def apply(formatter: /* value */ js.Any => String, interval: String, step: Double): TimeAxisTierConfiguration = {
       val __obj = js.Dynamic.literal(formatter = js.Any.fromFunction1(formatter), interval = interval.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimeAxisTierConfiguration]
     }
     
-    @scala.inline
-    implicit class TimeAxisTierConfigurationMutableBuilder[Self <: TimeAxisTierConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: TimeAxisTierConfiguration](x: Self) {
       
-      @scala.inline
-      def setFormatter(value: /* value */ js.Any => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* value */ js.Any => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
 }

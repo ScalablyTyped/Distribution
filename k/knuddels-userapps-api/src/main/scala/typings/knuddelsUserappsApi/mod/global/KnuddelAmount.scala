@@ -45,13 +45,11 @@ object KnuddelAmount {
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelAmount.html#method_fromCents
   		 */
   /* static member */
-  @scala.inline
-  def fromCents(knuddel: Double): KnuddelAmount = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCents")(knuddel.asInstanceOf[js.Any]).asInstanceOf[KnuddelAmount]
+  inline def fromCents(knuddel: Double): KnuddelAmount = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCents")(knuddel.asInstanceOf[js.Any]).asInstanceOf[KnuddelAmount]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelAmount.html#method_fromKnuddel
   		 */
   /* static member */
-  @scala.inline
-  def fromKnuddel(knuddel: Double): KnuddelAmount = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKnuddel")(knuddel.asInstanceOf[js.Any]).asInstanceOf[KnuddelAmount]
+  inline def fromKnuddel(knuddel: Double): KnuddelAmount = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKnuddel")(knuddel.asInstanceOf[js.Any]).asInstanceOf[KnuddelAmount]
 }

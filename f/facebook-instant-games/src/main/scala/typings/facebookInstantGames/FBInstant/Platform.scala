@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Platform extends StObject
 object Platform {
   
-  @scala.inline
-  def ANDROID: typings.facebookInstantGames.facebookInstantGamesStrings.ANDROID = "ANDROID".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.ANDROID]
+  inline def ANDROID: typings.facebookInstantGames.facebookInstantGamesStrings.ANDROID = "ANDROID".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.ANDROID]
   
-  @scala.inline
-  def IOS: typings.facebookInstantGames.facebookInstantGamesStrings.IOS = "IOS".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.IOS]
+  inline def IOS: typings.facebookInstantGames.facebookInstantGamesStrings.IOS = "IOS".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.IOS]
   
-  @scala.inline
-  def MOBILE_WEB: typings.facebookInstantGames.facebookInstantGamesStrings.MOBILE_WEB = "MOBILE_WEB".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.MOBILE_WEB]
+  inline def MOBILE_WEB: typings.facebookInstantGames.facebookInstantGamesStrings.MOBILE_WEB = "MOBILE_WEB".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.MOBILE_WEB]
   
-  @scala.inline
-  def WEB: typings.facebookInstantGames.facebookInstantGamesStrings.WEB = "WEB".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.WEB]
+  inline def WEB: typings.facebookInstantGames.facebookInstantGamesStrings.WEB = "WEB".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.WEB]
 }

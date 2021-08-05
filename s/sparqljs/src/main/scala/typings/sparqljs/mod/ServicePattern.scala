@@ -19,29 +19,22 @@ trait ServicePattern
 }
 object ServicePattern {
   
-  @scala.inline
-  def apply(name: IriTerm, patterns: js.Array[Pattern], silent: Boolean): ServicePattern = {
+  inline def apply(name: IriTerm, patterns: js.Array[Pattern], silent: Boolean): ServicePattern = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("service")
     __obj.asInstanceOf[ServicePattern]
   }
   
-  @scala.inline
-  implicit class ServicePatternMutableBuilder[Self <: ServicePattern] (val x: Self) extends AnyVal {
+  extension [Self <: ServicePattern](x: Self) {
     
-    @scala.inline
-    def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: service): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: service): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

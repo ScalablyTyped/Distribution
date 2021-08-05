@@ -28,31 +28,23 @@ trait IncreaseNodeGroupsInGlobalReplicationGroupMessage extends StObject {
 }
 object IncreaseNodeGroupsInGlobalReplicationGroupMessage {
   
-  @scala.inline
-  def apply(ApplyImmediately: Boolean, GlobalReplicationGroupId: String, NodeGroupCount: Integer): IncreaseNodeGroupsInGlobalReplicationGroupMessage = {
+  inline def apply(ApplyImmediately: Boolean, GlobalReplicationGroupId: String, NodeGroupCount: Integer): IncreaseNodeGroupsInGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ApplyImmediately = ApplyImmediately.asInstanceOf[js.Any], GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any], NodeGroupCount = NodeGroupCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncreaseNodeGroupsInGlobalReplicationGroupMessage]
   }
   
-  @scala.inline
-  implicit class IncreaseNodeGroupsInGlobalReplicationGroupMessageMutableBuilder[Self <: IncreaseNodeGroupsInGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IncreaseNodeGroupsInGlobalReplicationGroupMessage](x: Self) {
     
-    @scala.inline
-    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
+    inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupCount(value: Integer): Self = StObject.set(x, "NodeGroupCount", value.asInstanceOf[js.Any])
+    inline def setNodeGroupCount(value: Integer): Self = StObject.set(x, "NodeGroupCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalConfigurations(value: RegionalConfigurationList): Self = StObject.set(x, "RegionalConfigurations", value.asInstanceOf[js.Any])
+    inline def setRegionalConfigurations(value: RegionalConfigurationList): Self = StObject.set(x, "RegionalConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalConfigurationsUndefined: Self = StObject.set(x, "RegionalConfigurations", js.undefined)
+    inline def setRegionalConfigurationsUndefined: Self = StObject.set(x, "RegionalConfigurations", js.undefined)
     
-    @scala.inline
-    def setRegionalConfigurationsVarargs(value: RegionalConfiguration*): Self = StObject.set(x, "RegionalConfigurations", js.Array(value :_*))
+    inline def setRegionalConfigurationsVarargs(value: RegionalConfiguration*): Self = StObject.set(x, "RegionalConfigurations", js.Array(value :_*))
   }
 }

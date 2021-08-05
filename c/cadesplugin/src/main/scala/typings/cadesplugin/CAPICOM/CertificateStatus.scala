@@ -10,16 +10,13 @@ trait CertificateStatus extends StObject {
 }
 object CertificateStatus {
   
-  @scala.inline
-  def apply(Result: Boolean): CertificateStatus = {
+  inline def apply(Result: Boolean): CertificateStatus = {
     val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateStatus]
   }
   
-  @scala.inline
-  implicit class CertificateStatusMutableBuilder[Self <: CertificateStatus] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateStatus](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

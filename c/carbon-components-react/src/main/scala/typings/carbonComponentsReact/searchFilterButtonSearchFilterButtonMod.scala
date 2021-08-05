@@ -27,26 +27,20 @@ object searchFilterButtonSearchFilterButtonMod extends Shortcut {
   }
   object SearchFilterButtonProps {
     
-    @scala.inline
-    def apply(): SearchFilterButtonProps = {
+    inline def apply(): SearchFilterButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchFilterButtonProps]
     }
     
-    @scala.inline
-    implicit class SearchFilterButtonPropsMutableBuilder[Self <: SearchFilterButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SearchFilterButtonProps](x: Self) {
       
-      @scala.inline
-      def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
+      inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
+      inline def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
       
-      @scala.inline
-      def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
+      inline def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
+      inline def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
     }
   }
   

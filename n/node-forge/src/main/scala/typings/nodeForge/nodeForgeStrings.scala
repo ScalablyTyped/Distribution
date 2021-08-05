@@ -14,205 +14,172 @@ object nodeForgeStrings {
   sealed trait `3DES-CBC`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `3DES-CBC`: `3DES-CBC` = "3DES-CBC".asInstanceOf[`3DES-CBC`]
+  inline def `3DES-CBC`: `3DES-CBC` = "3DES-CBC".asInstanceOf[`3DES-CBC`]
   
   @js.native
   sealed trait `3DES-ECB`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `3DES-ECB`: `3DES-ECB` = "3DES-ECB".asInstanceOf[`3DES-ECB`]
+  inline def `3DES-ECB`: `3DES-ECB` = "3DES-ECB".asInstanceOf[`3DES-ECB`]
   
   @js.native
   sealed trait `3des` extends StObject
-  @scala.inline
-  def `3des`: `3des` = "3des".asInstanceOf[`3des`]
+  inline def `3des`: `3des` = "3des".asInstanceOf[`3des`]
   
   @js.native
   sealed trait `AES-CBC`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `AES-CBC`: `AES-CBC` = "AES-CBC".asInstanceOf[`AES-CBC`]
+  inline def `AES-CBC`: `AES-CBC` = "AES-CBC".asInstanceOf[`AES-CBC`]
   
   @js.native
   sealed trait `AES-CFB`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `AES-CFB`: `AES-CFB` = "AES-CFB".asInstanceOf[`AES-CFB`]
+  inline def `AES-CFB`: `AES-CFB` = "AES-CFB".asInstanceOf[`AES-CFB`]
   
   @js.native
   sealed trait `AES-CTR`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `AES-CTR`: `AES-CTR` = "AES-CTR".asInstanceOf[`AES-CTR`]
+  inline def `AES-CTR`: `AES-CTR` = "AES-CTR".asInstanceOf[`AES-CTR`]
   
   @js.native
   sealed trait `AES-ECB`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `AES-ECB`: `AES-ECB` = "AES-ECB".asInstanceOf[`AES-ECB`]
+  inline def `AES-ECB`: `AES-ECB` = "AES-ECB".asInstanceOf[`AES-ECB`]
   
   @js.native
   sealed trait `AES-GCM`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `AES-GCM`: `AES-GCM` = "AES-GCM".asInstanceOf[`AES-GCM`]
+  inline def `AES-GCM`: `AES-GCM` = "AES-GCM".asInstanceOf[`AES-GCM`]
   
   @js.native
   sealed trait `AES-OFB`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `AES-OFB`: `AES-OFB` = "AES-OFB".asInstanceOf[`AES-OFB`]
+  inline def `AES-OFB`: `AES-OFB` = "AES-OFB".asInstanceOf[`AES-OFB`]
   
   @js.native
   sealed trait `DES-CBC`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `DES-CBC`: `DES-CBC` = "DES-CBC".asInstanceOf[`DES-CBC`]
+  inline def `DES-CBC`: `DES-CBC` = "DES-CBC".asInstanceOf[`DES-CBC`]
   
   @js.native
   sealed trait `DES-ECB`
     extends StObject
        with Algorithm
-  @scala.inline
-  def `DES-ECB`: `DES-ECB` = "DES-ECB".asInstanceOf[`DES-ECB`]
+  inline def `DES-ECB`: `DES-ECB` = "DES-ECB".asInstanceOf[`DES-ECB`]
   
   @js.native
   sealed trait NONE
     extends StObject
        with _EncryptionScheme
        with _SignatureScheme
-  @scala.inline
-  def NONE: NONE = "NONE".asInstanceOf[NONE]
+  inline def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
   sealed trait RAW
     extends StObject
        with _EncryptionScheme
-  @scala.inline
-  def RAW: RAW = "RAW".asInstanceOf[RAW]
+  inline def RAW: RAW = "RAW".asInstanceOf[RAW]
   
   @js.native
   sealed trait `RSA-OAEP`
     extends StObject
        with _EncryptionScheme
-  @scala.inline
-  def `RSA-OAEP`: `RSA-OAEP` = "RSA-OAEP".asInstanceOf[`RSA-OAEP`]
+  inline def `RSA-OAEP`: `RSA-OAEP` = "RSA-OAEP".asInstanceOf[`RSA-OAEP`]
   
   @js.native
   sealed trait `RSAES-PKCS1-V1_5`
     extends StObject
        with _EncryptionScheme
-  @scala.inline
-  def `RSAES-PKCS1-V1_5`: `RSAES-PKCS1-V1_5` = "RSAES-PKCS1-V1_5".asInstanceOf[`RSAES-PKCS1-V1_5`]
+  inline def `RSAES-PKCS1-V1_5`: `RSAES-PKCS1-V1_5` = "RSAES-PKCS1-V1_5".asInstanceOf[`RSAES-PKCS1-V1_5`]
   
   @js.native
   sealed trait RSAPublicKey extends StObject
-  @scala.inline
-  def RSAPublicKey: RSAPublicKey = "RSAPublicKey".asInstanceOf[RSAPublicKey]
+  inline def RSAPublicKey: RSAPublicKey = "RSAPublicKey".asInstanceOf[RSAPublicKey]
   
   @js.native
   sealed trait `RSASSA-PKCS1-V1_5`
     extends StObject
        with _SignatureScheme
-  @scala.inline
-  def `RSASSA-PKCS1-V1_5`: `RSASSA-PKCS1-V1_5` = "RSASSA-PKCS1-V1_5".asInstanceOf[`RSASSA-PKCS1-V1_5`]
+  inline def `RSASSA-PKCS1-V1_5`: `RSASSA-PKCS1-V1_5` = "RSASSA-PKCS1-V1_5".asInstanceOf[`RSASSA-PKCS1-V1_5`]
   
   @js.native
   sealed trait SubjectPublicKeyInfo extends StObject
-  @scala.inline
-  def SubjectPublicKeyInfo: SubjectPublicKeyInfo = "SubjectPublicKeyInfo".asInstanceOf[SubjectPublicKeyInfo]
+  inline def SubjectPublicKeyInfo: SubjectPublicKeyInfo = "SubjectPublicKeyInfo".asInstanceOf[SubjectPublicKeyInfo]
   
   @js.native
   sealed trait aes128 extends StObject
-  @scala.inline
-  def aes128: aes128 = "aes128".asInstanceOf[aes128]
+  inline def aes128: aes128 = "aes128".asInstanceOf[aes128]
   
   @js.native
   sealed trait aes192 extends StObject
-  @scala.inline
-  def aes192: aes192 = "aes192".asInstanceOf[aes192]
+  inline def aes192: aes192 = "aes192".asInstanceOf[aes192]
   
   @js.native
   sealed trait aes256 extends StObject
-  @scala.inline
-  def aes256: aes256 = "aes256".asInstanceOf[aes256]
+  inline def aes256: aes256 = "aes256".asInstanceOf[aes256]
   
   @js.native
   sealed trait binary extends StObject
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
   sealed trait client extends StObject
-  @scala.inline
-  def client: client = "client".asInstanceOf[client]
+  inline def client: client = "client".asInstanceOf[client]
   
   @js.native
   sealed trait hex extends StObject
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
   sealed trait md5
     extends StObject
        with typings.nodeForge.mod.hmac.Algorithm
-  @scala.inline
-  def md5: md5 = "md5".asInstanceOf[md5]
+  inline def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
   sealed trait raw_
     extends StObject
        with Encoding
-  @scala.inline
-  def raw_ : raw_ = "raw".asInstanceOf[raw_]
+  inline def raw_ : raw_ = "raw".asInstanceOf[raw_]
   
   @js.native
   sealed trait server extends StObject
-  @scala.inline
-  def server: server = "server".asInstanceOf[server]
+  inline def server: server = "server".asInstanceOf[server]
   
   @js.native
   sealed trait sha1
     extends StObject
        with typings.nodeForge.mod.hmac.Algorithm
-  @scala.inline
-  def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
   sealed trait sha224 extends StObject
-  @scala.inline
-  def sha224: sha224 = "sha224".asInstanceOf[sha224]
+  inline def sha224: sha224 = "sha224".asInstanceOf[sha224]
   
   @js.native
   sealed trait sha256
     extends StObject
        with typings.nodeForge.mod.hmac.Algorithm
-  @scala.inline
-  def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
   
   @js.native
   sealed trait sha384 extends StObject
-  @scala.inline
-  def sha384: sha384 = "sha384".asInstanceOf[sha384]
+  inline def sha384: sha384 = "sha384".asInstanceOf[sha384]
   
   @js.native
   sealed trait sha512 extends StObject
-  @scala.inline
-  def sha512: sha512 = "sha512".asInstanceOf[sha512]
+  inline def sha512: sha512 = "sha512".asInstanceOf[sha512]
   
   @js.native
   sealed trait utf8
     extends StObject
        with Encoding
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }

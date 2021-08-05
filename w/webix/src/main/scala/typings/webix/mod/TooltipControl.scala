@@ -34,6 +34,5 @@ trait TooltipControl extends StObject {
 }
 object TooltipControl {
   
-  @scala.inline
-  def apply: TooltipControl = ^.asInstanceOf[js.Dynamic].selectDynamic("TooltipControl").asInstanceOf[TooltipControl]
+  inline def apply: TooltipControl = ^.asInstanceOf[js.Dynamic].selectDynamic("TooltipControl").asInstanceOf[TooltipControl]
 }

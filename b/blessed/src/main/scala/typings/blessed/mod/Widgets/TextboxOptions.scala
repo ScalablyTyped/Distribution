@@ -20,25 +20,19 @@ trait TextboxOptions
 }
 object TextboxOptions {
   
-  @scala.inline
-  def apply(): TextboxOptions = {
+  inline def apply(): TextboxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextboxOptions]
   }
   
-  @scala.inline
-  implicit class TextboxOptionsMutableBuilder[Self <: TextboxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextboxOptions](x: Self) {
     
-    @scala.inline
-    def setCensor(value: Boolean): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
+    inline def setCensor(value: Boolean): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCensorUndefined: Self = StObject.set(x, "censor", js.undefined)
+    inline def setCensorUndefined: Self = StObject.set(x, "censor", js.undefined)
     
-    @scala.inline
-    def setSecret(value: Boolean): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: Boolean): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
   }
 }

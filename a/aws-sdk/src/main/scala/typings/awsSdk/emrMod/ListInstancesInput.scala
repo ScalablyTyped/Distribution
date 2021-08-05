@@ -43,58 +43,41 @@ trait ListInstancesInput extends StObject {
 }
 object ListInstancesInput {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId): ListInstancesInput = {
+  inline def apply(ClusterId: ClusterId): ListInstancesInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInstancesInput]
   }
   
-  @scala.inline
-  implicit class ListInstancesInputMutableBuilder[Self <: ListInstancesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListInstancesInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFleetId(value: InstanceFleetId): Self = StObject.set(x, "InstanceFleetId", value.asInstanceOf[js.Any])
+    inline def setInstanceFleetId(value: InstanceFleetId): Self = StObject.set(x, "InstanceFleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFleetIdUndefined: Self = StObject.set(x, "InstanceFleetId", js.undefined)
+    inline def setInstanceFleetIdUndefined: Self = StObject.set(x, "InstanceFleetId", js.undefined)
     
-    @scala.inline
-    def setInstanceFleetType(value: InstanceFleetType): Self = StObject.set(x, "InstanceFleetType", value.asInstanceOf[js.Any])
+    inline def setInstanceFleetType(value: InstanceFleetType): Self = StObject.set(x, "InstanceFleetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFleetTypeUndefined: Self = StObject.set(x, "InstanceFleetType", js.undefined)
+    inline def setInstanceFleetTypeUndefined: Self = StObject.set(x, "InstanceFleetType", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupId(value: InstanceGroupId): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupId(value: InstanceGroupId): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupIdUndefined: Self = StObject.set(x, "InstanceGroupId", js.undefined)
+    inline def setInstanceGroupIdUndefined: Self = StObject.set(x, "InstanceGroupId", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupTypes(value: InstanceGroupTypeList): Self = StObject.set(x, "InstanceGroupTypes", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupTypes(value: InstanceGroupTypeList): Self = StObject.set(x, "InstanceGroupTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupTypesUndefined: Self = StObject.set(x, "InstanceGroupTypes", js.undefined)
+    inline def setInstanceGroupTypesUndefined: Self = StObject.set(x, "InstanceGroupTypes", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupTypesVarargs(value: InstanceGroupType*): Self = StObject.set(x, "InstanceGroupTypes", js.Array(value :_*))
+    inline def setInstanceGroupTypesVarargs(value: InstanceGroupType*): Self = StObject.set(x, "InstanceGroupTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceStates(value: InstanceStateList): Self = StObject.set(x, "InstanceStates", value.asInstanceOf[js.Any])
+    inline def setInstanceStates(value: InstanceStateList): Self = StObject.set(x, "InstanceStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStatesUndefined: Self = StObject.set(x, "InstanceStates", js.undefined)
+    inline def setInstanceStatesUndefined: Self = StObject.set(x, "InstanceStates", js.undefined)
     
-    @scala.inline
-    def setInstanceStatesVarargs(value: InstanceState*): Self = StObject.set(x, "InstanceStates", js.Array(value :_*))
+    inline def setInstanceStatesVarargs(value: InstanceState*): Self = StObject.set(x, "InstanceStates", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

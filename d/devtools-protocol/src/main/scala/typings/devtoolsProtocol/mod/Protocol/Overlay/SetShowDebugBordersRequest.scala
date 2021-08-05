@@ -13,16 +13,13 @@ trait SetShowDebugBordersRequest extends StObject {
 }
 object SetShowDebugBordersRequest {
   
-  @scala.inline
-  def apply(show: Boolean): SetShowDebugBordersRequest = {
+  inline def apply(show: Boolean): SetShowDebugBordersRequest = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetShowDebugBordersRequest]
   }
   
-  @scala.inline
-  implicit class SetShowDebugBordersRequestMutableBuilder[Self <: SetShowDebugBordersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetShowDebugBordersRequest](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait JQueryFileUploadChunkObject
 }
 object JQueryFileUploadChunkObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blob: js.Any,
     chunkSize: Double,
     contentRange: String,
@@ -34,16 +33,12 @@ object JQueryFileUploadChunkObject {
     __obj.asInstanceOf[JQueryFileUploadChunkObject]
   }
   
-  @scala.inline
-  implicit class JQueryFileUploadChunkObjectMutableBuilder[Self <: JQueryFileUploadChunkObject] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryFileUploadChunkObject](x: Self) {
     
-    @scala.inline
-    def setBlob(value: js.Any): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: js.Any): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+    inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentRange(value: String): Self = StObject.set(x, "contentRange", value.asInstanceOf[js.Any])
+    inline def setContentRange(value: String): Self = StObject.set(x, "contentRange", value.asInstanceOf[js.Any])
   }
 }

@@ -53,79 +53,55 @@ trait RegisterContainerInstanceRequest extends StObject {
 }
 object RegisterContainerInstanceRequest {
   
-  @scala.inline
-  def apply(): RegisterContainerInstanceRequest = {
+  inline def apply(): RegisterContainerInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterContainerInstanceRequest]
   }
   
-  @scala.inline
-  implicit class RegisterContainerInstanceRequestMutableBuilder[Self <: RegisterContainerInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterContainerInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setContainerInstanceArn(value: String): Self = StObject.set(x, "containerInstanceArn", value.asInstanceOf[js.Any])
+    inline def setContainerInstanceArn(value: String): Self = StObject.set(x, "containerInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstanceArnUndefined: Self = StObject.set(x, "containerInstanceArn", js.undefined)
+    inline def setContainerInstanceArnUndefined: Self = StObject.set(x, "containerInstanceArn", js.undefined)
     
-    @scala.inline
-    def setInstanceIdentityDocument(value: String): Self = StObject.set(x, "instanceIdentityDocument", value.asInstanceOf[js.Any])
+    inline def setInstanceIdentityDocument(value: String): Self = StObject.set(x, "instanceIdentityDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdentityDocumentSignature(value: String): Self = StObject.set(x, "instanceIdentityDocumentSignature", value.asInstanceOf[js.Any])
+    inline def setInstanceIdentityDocumentSignature(value: String): Self = StObject.set(x, "instanceIdentityDocumentSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdentityDocumentSignatureUndefined: Self = StObject.set(x, "instanceIdentityDocumentSignature", js.undefined)
+    inline def setInstanceIdentityDocumentSignatureUndefined: Self = StObject.set(x, "instanceIdentityDocumentSignature", js.undefined)
     
-    @scala.inline
-    def setInstanceIdentityDocumentUndefined: Self = StObject.set(x, "instanceIdentityDocument", js.undefined)
+    inline def setInstanceIdentityDocumentUndefined: Self = StObject.set(x, "instanceIdentityDocument", js.undefined)
     
-    @scala.inline
-    def setPlatformDevices(value: PlatformDevices): Self = StObject.set(x, "platformDevices", value.asInstanceOf[js.Any])
+    inline def setPlatformDevices(value: PlatformDevices): Self = StObject.set(x, "platformDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformDevicesUndefined: Self = StObject.set(x, "platformDevices", js.undefined)
+    inline def setPlatformDevicesUndefined: Self = StObject.set(x, "platformDevices", js.undefined)
     
-    @scala.inline
-    def setPlatformDevicesVarargs(value: PlatformDevice*): Self = StObject.set(x, "platformDevices", js.Array(value :_*))
+    inline def setPlatformDevicesVarargs(value: PlatformDevice*): Self = StObject.set(x, "platformDevices", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalResources(value: Resources): Self = StObject.set(x, "totalResources", value.asInstanceOf[js.Any])
+    inline def setTotalResources(value: Resources): Self = StObject.set(x, "totalResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResourcesUndefined: Self = StObject.set(x, "totalResources", js.undefined)
+    inline def setTotalResourcesUndefined: Self = StObject.set(x, "totalResources", js.undefined)
     
-    @scala.inline
-    def setTotalResourcesVarargs(value: Resource*): Self = StObject.set(x, "totalResources", js.Array(value :_*))
+    inline def setTotalResourcesVarargs(value: Resource*): Self = StObject.set(x, "totalResources", js.Array(value :_*))
     
-    @scala.inline
-    def setVersionInfo(value: VersionInfo): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
+    inline def setVersionInfo(value: VersionInfo): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
+    inline def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
   }
 }

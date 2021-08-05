@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object polyfillMod {
   
-  @scala.inline
-  def apply(): FnCall | Typeofpromisify = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FnCall | Typeofpromisify]
+  inline def apply(): FnCall | Typeofpromisify = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FnCall | Typeofpromisify]
   
   @JSImport("util.promisify/polyfill", JSImport.Namespace)
   @js.native

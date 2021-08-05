@@ -10,6 +10,5 @@ object selectorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isViewportMatch(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isViewportMatch")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isViewportMatch(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isViewportMatch")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

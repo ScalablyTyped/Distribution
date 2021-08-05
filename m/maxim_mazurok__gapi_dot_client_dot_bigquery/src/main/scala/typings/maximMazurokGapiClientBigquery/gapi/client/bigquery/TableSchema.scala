@@ -11,22 +11,17 @@ trait TableSchema extends StObject {
 }
 object TableSchema {
   
-  @scala.inline
-  def apply(): TableSchema = {
+  inline def apply(): TableSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableSchema]
   }
   
-  @scala.inline
-  implicit class TableSchemaMutableBuilder[Self <: TableSchema] (val x: Self) extends AnyVal {
+  extension [Self <: TableSchema](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[TableFieldSchema]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[TableFieldSchema]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: TableFieldSchema*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: TableFieldSchema*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

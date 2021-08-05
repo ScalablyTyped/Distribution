@@ -14,19 +14,15 @@ trait Coordinate extends StObject {
 }
 object Coordinate {
   
-  @scala.inline
-  def apply(coordinate: LatLng, position: Point): Coordinate = {
+  inline def apply(coordinate: LatLng, position: Point): Coordinate = {
     val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coordinate]
   }
   
-  @scala.inline
-  implicit class CoordinateMutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
+  extension [Self <: Coordinate](x: Self) {
     
-    @scala.inline
-    def setCoordinate(value: LatLng): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    inline def setCoordinate(value: LatLng): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

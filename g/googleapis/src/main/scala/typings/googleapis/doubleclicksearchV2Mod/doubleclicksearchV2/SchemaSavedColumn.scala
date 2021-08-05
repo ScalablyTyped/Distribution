@@ -27,31 +27,23 @@ trait SchemaSavedColumn extends StObject {
 }
 object SchemaSavedColumn {
   
-  @scala.inline
-  def apply(): SchemaSavedColumn = {
+  inline def apply(): SchemaSavedColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSavedColumn]
   }
   
-  @scala.inline
-  implicit class SchemaSavedColumnMutableBuilder[Self <: SchemaSavedColumn] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSavedColumn](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSavedColumnName(value: String): Self = StObject.set(x, "savedColumnName", value.asInstanceOf[js.Any])
+    inline def setSavedColumnName(value: String): Self = StObject.set(x, "savedColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedColumnNameUndefined: Self = StObject.set(x, "savedColumnName", js.undefined)
+    inline def setSavedColumnNameUndefined: Self = StObject.set(x, "savedColumnName", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -30,22 +30,19 @@ object mod {
         * Reads a single DOT graph from the str and returns it a Graph representation.
         * @param str a string in the DOT language representing a graph
         */
-      @scala.inline
-      def read(str: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[Graph]
+      inline def read(str: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[Graph]
       
       /**
         * Parses one or more DOT graphs from str in a manner similar to that used by parse for individual graphs.
         * @param str a string in the DOT language representing one or more graphs
         */
-      @scala.inline
-      def readMany(str: String): js.Array[Graph] = ^.asInstanceOf[js.Dynamic].applyDynamic("readMany")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Graph]]
+      inline def readMany(str: String): js.Array[Graph] = ^.asInstanceOf[js.Dynamic].applyDynamic("readMany")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Graph]]
       
       /**
         * Writes a String representation of the given graph in the DOT language.
         * @param g a graphlib Graph object
         */
-      @scala.inline
-      def write(g: Graph): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(g.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def write(g: Graph): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(g.asInstanceOf[js.Any]).asInstanceOf[String]
     }
   }
   
@@ -53,12 +50,9 @@ object mod {
   @js.native
   val graphlib: js.Any = js.native
   
-  @scala.inline
-  def read(str: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[Graph]
+  inline def read(str: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[Graph]
   
-  @scala.inline
-  def readMany(str: String): js.Array[Graph] = ^.asInstanceOf[js.Dynamic].applyDynamic("readMany")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Graph]]
+  inline def readMany(str: String): js.Array[Graph] = ^.asInstanceOf[js.Dynamic].applyDynamic("readMany")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Graph]]
   
-  @scala.inline
-  def write(g: Graph): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(g.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def write(g: Graph): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(g.asInstanceOf[js.Any]).asInstanceOf[String]
 }

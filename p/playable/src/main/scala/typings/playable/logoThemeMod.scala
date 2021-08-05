@@ -16,7 +16,6 @@ object logoThemeMod {
     @JSImport("playable/dist/src/modules/ui/controls/logo/logo.theme", "default.logoButtonSvgFill")
     @js.native
     def logoButtonSvgFill: Fill = js.native
-    @scala.inline
-    def logoButtonSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logoButtonSvgFill")(x.asInstanceOf[js.Any])
+    inline def logoButtonSvgFill_=(x: Fill): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logoButtonSvgFill")(x.asInstanceOf[js.Any])
   }
 }

@@ -16,28 +16,21 @@ trait SchemaManagedZoneForwardingConfig extends StObject {
 }
 object SchemaManagedZoneForwardingConfig {
   
-  @scala.inline
-  def apply(): SchemaManagedZoneForwardingConfig = {
+  inline def apply(): SchemaManagedZoneForwardingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedZoneForwardingConfig]
   }
   
-  @scala.inline
-  implicit class SchemaManagedZoneForwardingConfigMutableBuilder[Self <: SchemaManagedZoneForwardingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedZoneForwardingConfig](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTargetNameServers(value: js.Array[SchemaManagedZoneForwardingConfigNameServerTarget]): Self = StObject.set(x, "targetNameServers", value.asInstanceOf[js.Any])
+    inline def setTargetNameServers(value: js.Array[SchemaManagedZoneForwardingConfigNameServerTarget]): Self = StObject.set(x, "targetNameServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNameServersUndefined: Self = StObject.set(x, "targetNameServers", js.undefined)
+    inline def setTargetNameServersUndefined: Self = StObject.set(x, "targetNameServers", js.undefined)
     
-    @scala.inline
-    def setTargetNameServersVarargs(value: SchemaManagedZoneForwardingConfigNameServerTarget*): Self = StObject.set(x, "targetNameServers", js.Array(value :_*))
+    inline def setTargetNameServersVarargs(value: SchemaManagedZoneForwardingConfigNameServerTarget*): Self = StObject.set(x, "targetNameServers", js.Array(value :_*))
   }
 }

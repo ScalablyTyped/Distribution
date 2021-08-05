@@ -10,16 +10,13 @@ trait ExtSettings extends StObject {
 }
 object ExtSettings {
   
-  @scala.inline
-  def apply(buttons: ExtButtonsSettings): ExtSettings = {
+  inline def apply(buttons: ExtButtonsSettings): ExtSettings = {
     val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtSettings]
   }
   
-  @scala.inline
-  implicit class ExtSettingsMutableBuilder[Self <: ExtSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ExtSettings](x: Self) {
     
-    @scala.inline
-    def setButtons(value: ExtButtonsSettings): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: ExtButtonsSettings): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
   }
 }

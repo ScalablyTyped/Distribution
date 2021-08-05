@@ -43,8 +43,7 @@ trait XKeyHandler
 }
 object XKeyHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     keyPressed: KeyEvent => Boolean,
@@ -56,13 +55,10 @@ object XKeyHandler {
     __obj.asInstanceOf[XKeyHandler]
   }
   
-  @scala.inline
-  implicit class XKeyHandlerMutableBuilder[Self <: XKeyHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XKeyHandler](x: Self) {
     
-    @scala.inline
-    def setKeyPressed(value: KeyEvent => Boolean): Self = StObject.set(x, "keyPressed", js.Any.fromFunction1(value))
+    inline def setKeyPressed(value: KeyEvent => Boolean): Self = StObject.set(x, "keyPressed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeyReleased(value: KeyEvent => Boolean): Self = StObject.set(x, "keyReleased", js.Any.fromFunction1(value))
+    inline def setKeyReleased(value: KeyEvent => Boolean): Self = StObject.set(x, "keyReleased", js.Any.fromFunction1(value))
   }
 }

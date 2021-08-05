@@ -13,19 +13,15 @@ trait StartExportLabelsTaskRunResponse extends StObject {
 }
 object StartExportLabelsTaskRunResponse {
   
-  @scala.inline
-  def apply(): StartExportLabelsTaskRunResponse = {
+  inline def apply(): StartExportLabelsTaskRunResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartExportLabelsTaskRunResponse]
   }
   
-  @scala.inline
-  implicit class StartExportLabelsTaskRunResponseMutableBuilder[Self <: StartExportLabelsTaskRunResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartExportLabelsTaskRunResponse](x: Self) {
     
-    @scala.inline
-    def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
+    inline def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskRunIdUndefined: Self = StObject.set(x, "TaskRunId", js.undefined)
+    inline def setTaskRunIdUndefined: Self = StObject.set(x, "TaskRunId", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait GoogleDatastoreAdminV1IndexOperationMetadata extends StObject {
 }
 object GoogleDatastoreAdminV1IndexOperationMetadata {
   
-  @scala.inline
-  def apply(): GoogleDatastoreAdminV1IndexOperationMetadata = {
+  inline def apply(): GoogleDatastoreAdminV1IndexOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDatastoreAdminV1IndexOperationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleDatastoreAdminV1IndexOperationMetadataMutableBuilder[Self <: GoogleDatastoreAdminV1IndexOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDatastoreAdminV1IndexOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setCommon(value: GoogleDatastoreAdminV1CommonMetadata): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: GoogleDatastoreAdminV1CommonMetadata): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
+    inline def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
-    @scala.inline
-    def setIndexId(value: String): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: String): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexIdUndefined: Self = StObject.set(x, "indexId", js.undefined)
+    inline def setIndexIdUndefined: Self = StObject.set(x, "indexId", js.undefined)
     
-    @scala.inline
-    def setProgressEntities(value: GoogleDatastoreAdminV1Progress): Self = StObject.set(x, "progressEntities", value.asInstanceOf[js.Any])
+    inline def setProgressEntities(value: GoogleDatastoreAdminV1Progress): Self = StObject.set(x, "progressEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressEntitiesUndefined: Self = StObject.set(x, "progressEntities", js.undefined)
+    inline def setProgressEntitiesUndefined: Self = StObject.set(x, "progressEntities", js.undefined)
   }
 }

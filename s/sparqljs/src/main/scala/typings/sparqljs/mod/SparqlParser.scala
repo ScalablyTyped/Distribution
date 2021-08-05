@@ -10,16 +10,13 @@ trait SparqlParser extends StObject {
 }
 object SparqlParser {
   
-  @scala.inline
-  def apply(parse: String => SparqlQuery): SparqlParser = {
+  inline def apply(parse: String => SparqlQuery): SparqlParser = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
     __obj.asInstanceOf[SparqlParser]
   }
   
-  @scala.inline
-  implicit class SparqlParserMutableBuilder[Self <: SparqlParser] (val x: Self) extends AnyVal {
+  extension [Self <: SparqlParser](x: Self) {
     
-    @scala.inline
-    def setParse(value: String => SparqlQuery): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => SparqlQuery): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }
 }

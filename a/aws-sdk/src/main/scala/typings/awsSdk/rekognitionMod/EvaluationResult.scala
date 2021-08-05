@@ -18,25 +18,19 @@ trait EvaluationResult extends StObject {
 }
 object EvaluationResult {
   
-  @scala.inline
-  def apply(): EvaluationResult = {
+  inline def apply(): EvaluationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EvaluationResult]
   }
   
-  @scala.inline
-  implicit class EvaluationResultMutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluationResult](x: Self) {
     
-    @scala.inline
-    def setF1Score(value: Float): Self = StObject.set(x, "F1Score", value.asInstanceOf[js.Any])
+    inline def setF1Score(value: Float): Self = StObject.set(x, "F1Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF1ScoreUndefined: Self = StObject.set(x, "F1Score", js.undefined)
+    inline def setF1ScoreUndefined: Self = StObject.set(x, "F1Score", js.undefined)
     
-    @scala.inline
-    def setSummary(value: Summary): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: Summary): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ trait MapItem
 }
 object MapItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -31,16 +30,12 @@ object MapItem {
     __obj.asInstanceOf[MapItem]
   }
   
-  @scala.inline
-  implicit class MapItemMutableBuilder[Self <: MapItem] (val x: Self) extends AnyVal {
+  extension [Self <: MapItem](x: Self) {
     
-    @scala.inline
-    def setNode(value: ContentNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: ContentNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeNull: Self = StObject.set(x, "node", null)
+    inline def setNodeNull: Self = StObject.set(x, "node", null)
     
-    @scala.inline
-    def setType(value: MAP_KEY | MAP_VALUE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MAP_KEY | MAP_VALUE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

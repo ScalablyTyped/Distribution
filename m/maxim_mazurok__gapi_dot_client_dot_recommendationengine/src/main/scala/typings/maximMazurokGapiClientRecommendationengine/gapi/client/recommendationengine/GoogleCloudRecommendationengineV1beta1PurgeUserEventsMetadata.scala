@@ -14,25 +14,19 @@ trait GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata extends StOb
 }
 object GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadataMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setOperationName(value: String): Self = StObject.set(x, "operationName", value.asInstanceOf[js.Any])
+    inline def setOperationName(value: String): Self = StObject.set(x, "operationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationNameUndefined: Self = StObject.set(x, "operationName", js.undefined)
+    inline def setOperationNameUndefined: Self = StObject.set(x, "operationName", js.undefined)
   }
 }

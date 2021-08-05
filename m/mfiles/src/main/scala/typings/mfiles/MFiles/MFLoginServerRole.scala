@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFLoginServerRole extends StObject
 object MFLoginServerRole {
   
-  @scala.inline
-  def BackupOperator: `4` = 4.asInstanceOf[`4`]
+  inline def BackupOperator: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def LogIn: `8` = 8.asInstanceOf[`8`]
+  inline def LogIn: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SystemAdministrator: `1` = 1.asInstanceOf[`1`]
+  inline def SystemAdministrator: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def VaultCreator: `2` = 2.asInstanceOf[`2`]
+  inline def VaultCreator: `2` = 2.asInstanceOf[`2`]
 }

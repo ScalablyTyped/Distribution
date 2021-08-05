@@ -23,37 +23,27 @@ trait Compliance extends StObject {
 }
 object Compliance {
   
-  @scala.inline
-  def apply(): Compliance = {
+  inline def apply(): Compliance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Compliance]
   }
   
-  @scala.inline
-  implicit class ComplianceMutableBuilder[Self <: Compliance] (val x: Self) extends AnyVal {
+  extension [Self <: Compliance](x: Self) {
     
-    @scala.inline
-    def setRelatedRequirements(value: RelatedRequirementsList): Self = StObject.set(x, "RelatedRequirements", value.asInstanceOf[js.Any])
+    inline def setRelatedRequirements(value: RelatedRequirementsList): Self = StObject.set(x, "RelatedRequirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedRequirementsUndefined: Self = StObject.set(x, "RelatedRequirements", js.undefined)
+    inline def setRelatedRequirementsUndefined: Self = StObject.set(x, "RelatedRequirements", js.undefined)
     
-    @scala.inline
-    def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = StObject.set(x, "RelatedRequirements", js.Array(value :_*))
+    inline def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = StObject.set(x, "RelatedRequirements", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: ComplianceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ComplianceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasons(value: StatusReasonsList): Self = StObject.set(x, "StatusReasons", value.asInstanceOf[js.Any])
+    inline def setStatusReasons(value: StatusReasonsList): Self = StObject.set(x, "StatusReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonsUndefined: Self = StObject.set(x, "StatusReasons", js.undefined)
+    inline def setStatusReasonsUndefined: Self = StObject.set(x, "StatusReasons", js.undefined)
     
-    @scala.inline
-    def setStatusReasonsVarargs(value: StatusReason*): Self = StObject.set(x, "StatusReasons", js.Array(value :_*))
+    inline def setStatusReasonsVarargs(value: StatusReason*): Self = StObject.set(x, "StatusReasons", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

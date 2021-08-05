@@ -15,15 +15,10 @@ object urlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def format(args: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(args: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parse(url: String): ClassUrlObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[ClassUrlObject]
-  @scala.inline
-  def parse(url: String, parseQueryString: Boolean): ClassUrlObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[ClassUrlObject]
-  @scala.inline
-  def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): ClassUrlObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[ClassUrlObject]
-  @scala.inline
-  def parse(url: String, parseQueryString: Unit, slashesDenoteHost: Boolean): ClassUrlObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[ClassUrlObject]
+  inline def parse(url: String): ClassUrlObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[ClassUrlObject]
+  inline def parse(url: String, parseQueryString: Boolean): ClassUrlObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[ClassUrlObject]
+  inline def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): ClassUrlObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[ClassUrlObject]
+  inline def parse(url: String, parseQueryString: Unit, slashesDenoteHost: Boolean): ClassUrlObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[ClassUrlObject]
 }

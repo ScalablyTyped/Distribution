@@ -21,10 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("enhanced-resolve", JSImport.Namespace)
   @js.native
@@ -141,8 +139,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createResolver(options: ResolverOption): typings.enhancedResolve.resolverMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(options.asInstanceOf[js.Any]).asInstanceOf[typings.enhancedResolve.resolverMod.^]
+    inline def createResolver(options: ResolverOption): typings.enhancedResolve.resolverMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(options.asInstanceOf[js.Any]).asInstanceOf[typings.enhancedResolve.resolverMod.^]
     
     trait AliasItem extends StObject {
       
@@ -154,26 +151,20 @@ object mod {
     }
     object AliasItem {
       
-      @scala.inline
-      def apply(alias: String, name: String): AliasItem = {
+      inline def apply(alias: String, name: String): AliasItem = {
         val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[AliasItem]
       }
       
-      @scala.inline
-      implicit class AliasItemMutableBuilder[Self <: AliasItem] (val x: Self) extends AnyVal {
+      extension [Self <: AliasItem](x: Self) {
         
-        @scala.inline
-        def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+        inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnlyModule(value: Boolean): Self = StObject.set(x, "onlyModule", value.asInstanceOf[js.Any])
+        inline def setOnlyModule(value: Boolean): Self = StObject.set(x, "onlyModule", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnlyModuleUndefined: Self = StObject.set(x, "onlyModule", js.undefined)
+        inline def setOnlyModuleUndefined: Self = StObject.set(x, "onlyModule", js.undefined)
       }
     }
     
@@ -217,205 +208,145 @@ object mod {
     }
     object ResolverOption {
       
-      @scala.inline
-      def apply(): ResolverOption = {
+      inline def apply(): ResolverOption = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ResolverOption]
       }
       
-      @scala.inline
-      implicit class ResolverOptionMutableBuilder[Self <: ResolverOption] (val x: Self) extends AnyVal {
+      extension [Self <: ResolverOption](x: Self) {
         
-        @scala.inline
-        def setAlias(value: js.Array[AliasItem] | Dictionary[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+        inline def setAlias(value: js.Array[AliasItem] | Dictionary[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAliasFields(value: js.Array[String]): Self = StObject.set(x, "aliasFields", value.asInstanceOf[js.Any])
+        inline def setAliasFields(value: js.Array[String]): Self = StObject.set(x, "aliasFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAliasFieldsUndefined: Self = StObject.set(x, "aliasFields", js.undefined)
+        inline def setAliasFieldsUndefined: Self = StObject.set(x, "aliasFields", js.undefined)
         
-        @scala.inline
-        def setAliasFieldsVarargs(value: String*): Self = StObject.set(x, "aliasFields", js.Array(value :_*))
+        inline def setAliasFieldsVarargs(value: String*): Self = StObject.set(x, "aliasFields", js.Array(value :_*))
         
-        @scala.inline
-        def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+        inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
         
-        @scala.inline
-        def setAliasVarargs(value: AliasItem*): Self = StObject.set(x, "alias", js.Array(value :_*))
+        inline def setAliasVarargs(value: AliasItem*): Self = StObject.set(x, "alias", js.Array(value :_*))
         
-        @scala.inline
-        def setCachePredicate(value: /* val */ ResolverRequest => Boolean): Self = StObject.set(x, "cachePredicate", js.Any.fromFunction1(value))
+        inline def setCachePredicate(value: /* val */ ResolverRequest => Boolean): Self = StObject.set(x, "cachePredicate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCachePredicateUndefined: Self = StObject.set(x, "cachePredicate", js.undefined)
+        inline def setCachePredicateUndefined: Self = StObject.set(x, "cachePredicate", js.undefined)
         
-        @scala.inline
-        def setDescriptionFiles(value: js.Array[String]): Self = StObject.set(x, "descriptionFiles", value.asInstanceOf[js.Any])
+        inline def setDescriptionFiles(value: js.Array[String]): Self = StObject.set(x, "descriptionFiles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionFilesUndefined: Self = StObject.set(x, "descriptionFiles", js.undefined)
+        inline def setDescriptionFilesUndefined: Self = StObject.set(x, "descriptionFiles", js.undefined)
         
-        @scala.inline
-        def setDescriptionFilesVarargs(value: String*): Self = StObject.set(x, "descriptionFiles", js.Array(value :_*))
+        inline def setDescriptionFilesVarargs(value: String*): Self = StObject.set(x, "descriptionFiles", js.Array(value :_*))
         
-        @scala.inline
-        def setEnforceExtension(value: Boolean): Self = StObject.set(x, "enforceExtension", value.asInstanceOf[js.Any])
+        inline def setEnforceExtension(value: Boolean): Self = StObject.set(x, "enforceExtension", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnforceExtensionUndefined: Self = StObject.set(x, "enforceExtension", js.undefined)
+        inline def setEnforceExtensionUndefined: Self = StObject.set(x, "enforceExtension", js.undefined)
         
-        @scala.inline
-        def setEnforceModuleExtension(value: Boolean): Self = StObject.set(x, "enforceModuleExtension", value.asInstanceOf[js.Any])
+        inline def setEnforceModuleExtension(value: Boolean): Self = StObject.set(x, "enforceModuleExtension", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnforceModuleExtensionUndefined: Self = StObject.set(x, "enforceModuleExtension", js.undefined)
+        inline def setEnforceModuleExtensionUndefined: Self = StObject.set(x, "enforceModuleExtension", js.undefined)
         
-        @scala.inline
-        def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+        inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+        inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
         
-        @scala.inline
-        def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+        inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
         
-        @scala.inline
-        def setFileSystem(value: AbstractInputFileSystem): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
+        inline def setFileSystem(value: AbstractInputFileSystem): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFileSystemUndefined: Self = StObject.set(x, "fileSystem", js.undefined)
+        inline def setFileSystemUndefined: Self = StObject.set(x, "fileSystem", js.undefined)
         
-        @scala.inline
-        def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+        inline def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
+        inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
         
-        @scala.inline
-        def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+        inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
         
-        @scala.inline
-        def setMainFiles(value: js.Array[String]): Self = StObject.set(x, "mainFiles", value.asInstanceOf[js.Any])
+        inline def setMainFiles(value: js.Array[String]): Self = StObject.set(x, "mainFiles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMainFilesUndefined: Self = StObject.set(x, "mainFiles", js.undefined)
+        inline def setMainFilesUndefined: Self = StObject.set(x, "mainFiles", js.undefined)
         
-        @scala.inline
-        def setMainFilesVarargs(value: String*): Self = StObject.set(x, "mainFiles", js.Array(value :_*))
+        inline def setMainFilesVarargs(value: String*): Self = StObject.set(x, "mainFiles", js.Array(value :_*))
         
-        @scala.inline
-        def setModuleExtensions(value: js.Array[String]): Self = StObject.set(x, "moduleExtensions", value.asInstanceOf[js.Any])
+        inline def setModuleExtensions(value: js.Array[String]): Self = StObject.set(x, "moduleExtensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModuleExtensionsUndefined: Self = StObject.set(x, "moduleExtensions", js.undefined)
+        inline def setModuleExtensionsUndefined: Self = StObject.set(x, "moduleExtensions", js.undefined)
         
-        @scala.inline
-        def setModuleExtensionsVarargs(value: String*): Self = StObject.set(x, "moduleExtensions", js.Array(value :_*))
+        inline def setModuleExtensionsVarargs(value: String*): Self = StObject.set(x, "moduleExtensions", js.Array(value :_*))
         
-        @scala.inline
-        def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+        inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+        inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
         
-        @scala.inline
-        def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
+        inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
         
-        @scala.inline
-        def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+        inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+        inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
         
-        @scala.inline
-        def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+        inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
         
-        @scala.inline
-        def setResolveToContext(value: Boolean): Self = StObject.set(x, "resolveToContext", value.asInstanceOf[js.Any])
+        inline def setResolveToContext(value: Boolean): Self = StObject.set(x, "resolveToContext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResolveToContextUndefined: Self = StObject.set(x, "resolveToContext", js.undefined)
+        inline def setResolveToContextUndefined: Self = StObject.set(x, "resolveToContext", js.undefined)
         
-        @scala.inline
-        def setResolver(value: typings.enhancedResolve.resolverMod.^): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+        inline def setResolver(value: typings.enhancedResolve.resolverMod.^): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
+        inline def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
         
-        @scala.inline
-        def setSymlinks(value: js.Array[String] | Boolean): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
+        inline def setSymlinks(value: js.Array[String] | Boolean): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
+        inline def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
         
-        @scala.inline
-        def setSymlinksVarargs(value: String*): Self = StObject.set(x, "symlinks", js.Array(value :_*))
+        inline def setSymlinksVarargs(value: String*): Self = StObject.set(x, "symlinks", js.Array(value :_*))
         
-        @scala.inline
-        def setUnsafeCache(value: Boolean | Dictionary[js.Any]): Self = StObject.set(x, "unsafeCache", value.asInstanceOf[js.Any])
+        inline def setUnsafeCache(value: Boolean | Dictionary[js.Any]): Self = StObject.set(x, "unsafeCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnsafeCacheUndefined: Self = StObject.set(x, "unsafeCache", js.undefined)
+        inline def setUnsafeCacheUndefined: Self = StObject.set(x, "unsafeCache", js.undefined)
         
-        @scala.inline
-        def setUseSyncFileSystemCalls(value: Boolean): Self = StObject.set(x, "useSyncFileSystemCalls", value.asInstanceOf[js.Any])
+        inline def setUseSyncFileSystemCalls(value: Boolean): Self = StObject.set(x, "useSyncFileSystemCalls", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseSyncFileSystemCallsUndefined: Self = StObject.set(x, "useSyncFileSystemCalls", js.undefined)
+        inline def setUseSyncFileSystemCallsUndefined: Self = StObject.set(x, "useSyncFileSystemCalls", js.undefined)
       }
     }
   }
   
   object context {
     
-    @scala.inline
-    def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("enhanced-resolve", "context")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def sync(context: ResolveContext, path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sync(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sync(context: ResolveContext, path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sync(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   object create {
     
-    @scala.inline
-    def apply(options: ResolverOption): FnCallContextPathRequestCallback = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FnCallContextPathRequestCallback]
+    inline def apply(options: ResolverOption): FnCallContextPathRequestCallback = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FnCallContextPathRequestCallback]
     
     @JSImport("enhanced-resolve", "create")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def sync(options: ResolverOption): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+    inline def sync(options: ResolverOption): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[FnCall]
   }
   
   object loader {
     
-    @scala.inline
-    def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(context: ResolveContext, path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(path: String, request: String, callback: LoggingCallbackWrapper): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("enhanced-resolve", "loader")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def sync(context: ResolveContext, path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sync(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sync(context: ResolveContext, path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sync(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @scala.inline
-  def sync(context: ResolveContext, path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sync(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sync(context: ResolveContext, path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(context.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sync(path: String, request: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[String]
 }

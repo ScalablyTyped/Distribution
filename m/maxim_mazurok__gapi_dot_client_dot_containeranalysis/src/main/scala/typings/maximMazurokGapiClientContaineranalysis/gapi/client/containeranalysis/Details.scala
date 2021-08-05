@@ -11,19 +11,15 @@ trait Details extends StObject {
 }
 object Details {
   
-  @scala.inline
-  def apply(): Details = {
+  inline def apply(): Details = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Details]
   }
   
-  @scala.inline
-  implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+  extension [Self <: Details](x: Self) {
     
-    @scala.inline
-    def setAttestation(value: Attestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
+    inline def setAttestation(value: Attestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
+    inline def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
   }
 }

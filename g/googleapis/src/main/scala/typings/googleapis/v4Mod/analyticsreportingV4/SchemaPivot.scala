@@ -60,52 +60,37 @@ trait SchemaPivot extends StObject {
 }
 object SchemaPivot {
   
-  @scala.inline
-  def apply(): SchemaPivot = {
+  inline def apply(): SchemaPivot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPivot]
   }
   
-  @scala.inline
-  implicit class SchemaPivotMutableBuilder[Self <: SchemaPivot] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPivot](x: Self) {
     
-    @scala.inline
-    def setDimensionFilterClauses(value: js.Array[SchemaDimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
+    inline def setDimensionFilterClauses(value: js.Array[SchemaDimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFilterClausesUndefined: Self = StObject.set(x, "dimensionFilterClauses", js.undefined)
+    inline def setDimensionFilterClausesUndefined: Self = StObject.set(x, "dimensionFilterClauses", js.undefined)
     
-    @scala.inline
-    def setDimensionFilterClausesVarargs(value: SchemaDimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value :_*))
+    inline def setDimensionFilterClausesVarargs(value: SchemaDimensionFilterClause*): Self = StObject.set(x, "dimensionFilterClauses", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensions(value: js.Array[SchemaDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[SchemaDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxGroupCount(value: Double): Self = StObject.set(x, "maxGroupCount", value.asInstanceOf[js.Any])
+    inline def setMaxGroupCount(value: Double): Self = StObject.set(x, "maxGroupCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxGroupCountUndefined: Self = StObject.set(x, "maxGroupCount", js.undefined)
+    inline def setMaxGroupCountUndefined: Self = StObject.set(x, "maxGroupCount", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[SchemaMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[SchemaMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: SchemaMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: SchemaMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setStartGroup(value: Double): Self = StObject.set(x, "startGroup", value.asInstanceOf[js.Any])
+    inline def setStartGroup(value: Double): Self = StObject.set(x, "startGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartGroupUndefined: Self = StObject.set(x, "startGroup", js.undefined)
+    inline def setStartGroupUndefined: Self = StObject.set(x, "startGroup", js.undefined)
   }
 }

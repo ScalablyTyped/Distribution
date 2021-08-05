@@ -18,25 +18,19 @@ trait DescribeLifecycleHooksType extends StObject {
 }
 object DescribeLifecycleHooksType {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName): DescribeLifecycleHooksType = {
+  inline def apply(AutoScalingGroupName: ResourceName): DescribeLifecycleHooksType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLifecycleHooksType]
   }
   
-  @scala.inline
-  implicit class DescribeLifecycleHooksTypeMutableBuilder[Self <: DescribeLifecycleHooksType] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLifecycleHooksType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleHookNames(value: LifecycleHookNames): Self = StObject.set(x, "LifecycleHookNames", value.asInstanceOf[js.Any])
+    inline def setLifecycleHookNames(value: LifecycleHookNames): Self = StObject.set(x, "LifecycleHookNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleHookNamesUndefined: Self = StObject.set(x, "LifecycleHookNames", js.undefined)
+    inline def setLifecycleHookNamesUndefined: Self = StObject.set(x, "LifecycleHookNames", js.undefined)
     
-    @scala.inline
-    def setLifecycleHookNamesVarargs(value: AsciiStringMaxLen255*): Self = StObject.set(x, "LifecycleHookNames", js.Array(value :_*))
+    inline def setLifecycleHookNamesVarargs(value: AsciiStringMaxLen255*): Self = StObject.set(x, "LifecycleHookNames", js.Array(value :_*))
   }
 }

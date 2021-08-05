@@ -119,20 +119,16 @@ object Transfer {
   }
   object Alter {
     
-    @scala.inline
-    def apply(id: String, name: String): Alter = {
+    inline def apply(id: String, name: String): Alter = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alter]
     }
     
-    @scala.inline
-    implicit class AlterMutableBuilder[Self <: Alter] (val x: Self) extends AnyVal {
+    extension [Self <: Alter](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,20 +140,16 @@ object Transfer {
   }
   object EventMap {
     
-    @scala.inline
-    def apply(complete: Event_[complete, SearchResult], error: Event_[error, Info]): EventMap = {
+    inline def apply(complete: Event_[complete, SearchResult], error: Event_[error, Info]): EventMap = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventMap]
     }
     
-    @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+    extension [Self <: EventMap](x: Self) {
       
-      @scala.inline
-      def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,83 +217,58 @@ object Transfer {
   }
   object Options {
     
-    @scala.inline
-    def apply(city: String): Options = {
+    inline def apply(city: String): Options = {
       val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
+      inline def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFitViewUndefined: Self = StObject.set(x, "autoFitView", js.undefined)
+      inline def setAutoFitViewUndefined: Self = StObject.set(x, "autoFitView", js.undefined)
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityd(value: String): Self = StObject.set(x, "cityd", value.asInstanceOf[js.Any])
+      inline def setCityd(value: String): Self = StObject.set(x, "cityd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCitydUndefined: Self = StObject.set(x, "cityd", js.undefined)
+      inline def setCitydUndefined: Self = StObject.set(x, "cityd", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: all | base): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: all | base): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setHideMarkers(value: Boolean): Self = StObject.set(x, "hideMarkers", value.asInstanceOf[js.Any])
+      inline def setHideMarkers(value: Boolean): Self = StObject.set(x, "hideMarkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideMarkersUndefined: Self = StObject.set(x, "hideMarkers", js.undefined)
+      inline def setHideMarkersUndefined: Self = StObject.set(x, "hideMarkers", js.undefined)
       
-      @scala.inline
-      def setIsOutline(value: Boolean): Self = StObject.set(x, "isOutline", value.asInstanceOf[js.Any])
+      inline def setIsOutline(value: Boolean): Self = StObject.set(x, "isOutline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOutlineUndefined: Self = StObject.set(x, "isOutline", js.undefined)
+      inline def setIsOutlineUndefined: Self = StObject.set(x, "isOutline", js.undefined)
       
-      @scala.inline
-      def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setNightflag(value: Boolean): Self = StObject.set(x, "nightflag", value.asInstanceOf[js.Any])
+      inline def setNightflag(value: Boolean): Self = StObject.set(x, "nightflag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNightflagUndefined: Self = StObject.set(x, "nightflag", js.undefined)
+      inline def setNightflagUndefined: Self = StObject.set(x, "nightflag", js.undefined)
       
-      @scala.inline
-      def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+      inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+      inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
       
-      @scala.inline
-      def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+      inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: TransferPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: TransferPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setShowDir(value: Boolean): Self = StObject.set(x, "showDir", value.asInstanceOf[js.Any])
+      inline def setShowDir(value: Boolean): Self = StObject.set(x, "showDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDirUndefined: Self = StObject.set(x, "showDir", js.undefined)
+      inline def setShowDirUndefined: Self = StObject.set(x, "showDir", js.undefined)
     }
   }
   
@@ -315,24 +282,19 @@ object Transfer {
   }
   object Poi {
     
-    @scala.inline
-    def apply(location: LngLat, name: String, `type`: start | end): Poi = {
+    inline def apply(location: LngLat, name: String, `type`: start | end): Poi = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Poi]
     }
     
-    @scala.inline
-    implicit class PoiMutableBuilder[Self <: Poi] (val x: Self) extends AnyVal {
+    extension [Self <: Poi](x: Self) {
       
-      @scala.inline
-      def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: start | end): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: start | end): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -370,41 +332,30 @@ object Transfer {
   }
   object RailStop {
     
-    @scala.inline
-    def apply(adcode: String, id: String, location: LngLat, name: String, time: Double): RailStop = {
+    inline def apply(adcode: String, id: String, location: LngLat, name: String, time: Double): RailStop = {
       val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[RailStop]
     }
     
-    @scala.inline
-    implicit class RailStopMutableBuilder[Self <: RailStop] (val x: Self) extends AnyVal {
+    extension [Self <: RailStop](x: Self) {
       
-      @scala.inline
-      def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+      inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegment(value: RailwaySegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+      inline def setSegment(value: RailwaySegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+      inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
   
@@ -415,8 +366,7 @@ object Transfer {
   trait RailwayDetails extends StObject
   object RailwayDetails {
     
-    @scala.inline
-    def RailwayDetailsBase(
+    inline def RailwayDetailsBase(
       arrival_stop: RailStop,
       departure_stop: RailStop,
       distance: Double,
@@ -432,8 +382,7 @@ object Transfer {
       __obj.asInstanceOf[typings.amapJsApiTransfer.AMap.Transfer.RailwayDetailsBase]
     }
     
-    @scala.inline
-    def RailwayDetailsExt(
+    inline def RailwayDetailsExt(
       alters: js.Array[Alter],
       arrival_stop: RailStop,
       departure_stop: RailStop,
@@ -504,8 +453,7 @@ object Transfer {
   }
   object RailwayDetailsBase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrival_stop: RailStop,
       departure_stop: RailStop,
       distance: Double,
@@ -521,38 +469,27 @@ object Transfer {
       __obj.asInstanceOf[RailwayDetailsBase]
     }
     
-    @scala.inline
-    implicit class RailwayDetailsBaseMutableBuilder[Self <: RailwayDetailsBase] (val x: Self) extends AnyVal {
+    extension [Self <: RailwayDetailsBase](x: Self) {
       
-      @scala.inline
-      def setArrival_stop(value: RailStop): Self = StObject.set(x, "arrival_stop", value.asInstanceOf[js.Any])
+      inline def setArrival_stop(value: RailStop): Self = StObject.set(x, "arrival_stop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeparture_stop(value: RailStop): Self = StObject.set(x, "departure_stop", value.asInstanceOf[js.Any])
+      inline def setDeparture_stop(value: RailStop): Self = StObject.set(x, "departure_stop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaces(value: js.Array[Space]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      inline def setSpaces(value: js.Array[Space]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacesVarargs(value: Space*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+      inline def setSpacesVarargs(value: Space*): Self = StObject.set(x, "spaces", js.Array(value :_*))
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrip(value: String): Self = StObject.set(x, "trip", value.asInstanceOf[js.Any])
+      inline def setTrip(value: String): Self = StObject.set(x, "trip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -578,8 +515,7 @@ object Transfer {
   }
   object RailwayDetailsExt {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alters: js.Array[Alter],
       arrival_stop: RailStop,
       departure_stop: RailStop,
@@ -598,23 +534,17 @@ object Transfer {
       __obj.asInstanceOf[RailwayDetailsExt]
     }
     
-    @scala.inline
-    implicit class RailwayDetailsExtMutableBuilder[Self <: RailwayDetailsExt] (val x: Self) extends AnyVal {
+    extension [Self <: RailwayDetailsExt](x: Self) {
       
-      @scala.inline
-      def setAlters(value: js.Array[Alter]): Self = StObject.set(x, "alters", value.asInstanceOf[js.Any])
+      inline def setAlters(value: js.Array[Alter]): Self = StObject.set(x, "alters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltersVarargs(value: Alter*): Self = StObject.set(x, "alters", js.Array(value :_*))
+      inline def setAltersVarargs(value: Alter*): Self = StObject.set(x, "alters", js.Array(value :_*))
       
-      @scala.inline
-      def setVia_num(value: Double): Self = StObject.set(x, "via_num", value.asInstanceOf[js.Any])
+      inline def setVia_num(value: Double): Self = StObject.set(x, "via_num", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVia_stops(value: js.Array[ViaStop]): Self = StObject.set(x, "via_stops", value.asInstanceOf[js.Any])
+      inline def setVia_stops(value: js.Array[ViaStop]): Self = StObject.set(x, "via_stops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVia_stopsVarargs(value: ViaStop*): Self = StObject.set(x, "via_stops", js.Array(value :_*))
+      inline def setVia_stopsVarargs(value: ViaStop*): Self = StObject.set(x, "via_stops", js.Array(value :_*))
     }
   }
   
@@ -635,20 +565,16 @@ object Transfer {
   }
   object RailwaySegment {
     
-    @scala.inline
-    def apply(distance: Double, instruction: String, time: Double, transit: RailwayDetails): RailwaySegment = {
+    inline def apply(distance: Double, instruction: String, time: Double, transit: RailwayDetails): RailwaySegment = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "RAILWAY")
       __obj.asInstanceOf[RailwaySegment]
     }
     
-    @scala.inline
-    implicit class RailwaySegmentMutableBuilder[Self <: RailwaySegment] (val x: Self) extends AnyVal {
+    extension [Self <: RailwaySegment](x: Self) {
       
-      @scala.inline
-      def setTransit(value: RailwayDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
+      inline def setTransit(value: RailwayDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransit_mode(value: RAILWAY): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
+      inline def setTransit_mode(value: RAILWAY): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -661,17 +587,14 @@ object Transfer {
   }
   object SearchPoint {
     
-    @scala.inline
-    def apply(keyword: String): SearchPoint = {
+    inline def apply(keyword: String): SearchPoint = {
       val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchPoint]
     }
     
-    @scala.inline
-    implicit class SearchPointMutableBuilder[Self <: SearchPoint] (val x: Self) extends AnyVal {
+    extension [Self <: SearchPoint](x: Self) {
       
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     }
   }
   
@@ -682,8 +605,7 @@ object Transfer {
   trait SearchResult extends StObject
   object SearchResult {
     
-    @scala.inline
-    def SearchResultBase(
+    inline def SearchResultBase(
       destination: LngLat,
       info: String,
       origin: LngLat,
@@ -694,8 +616,7 @@ object Transfer {
       __obj.asInstanceOf[typings.amapJsApiTransfer.AMap.Transfer.SearchResultBase]
     }
     
-    @scala.inline
-    def SearchResultExt(
+    inline def SearchResultExt(
       destination: LngLat,
       destinationName: String,
       end: PoiExt,
@@ -728,8 +649,7 @@ object Transfer {
   }
   object SearchResultBase {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destination: LngLat,
       info: String,
       origin: LngLat,
@@ -740,20 +660,15 @@ object Transfer {
       __obj.asInstanceOf[SearchResultBase]
     }
     
-    @scala.inline
-    implicit class SearchResultBaseMutableBuilder[Self <: SearchResultBase] (val x: Self) extends AnyVal {
+    extension [Self <: SearchResultBase](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Poi): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Poi): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setStart(value: Poi): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Poi): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -786,8 +701,7 @@ object Transfer {
   }
   object SearchResultCommon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destination: LngLat,
       info: String,
       origin: LngLat,
@@ -798,26 +712,19 @@ object Transfer {
       __obj.asInstanceOf[SearchResultCommon]
     }
     
-    @scala.inline
-    implicit class SearchResultCommonMutableBuilder[Self <: SearchResultCommon] (val x: Self) extends AnyVal {
+    extension [Self <: SearchResultCommon](x: Self) {
       
-      @scala.inline
-      def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlans(value: js.Array[TransferPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
+      inline def setPlans(value: js.Array[TransferPlan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlansVarargs(value: TransferPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+      inline def setPlansVarargs(value: TransferPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
       
-      @scala.inline
-      def setTaxi_cost(value: Double): Self = StObject.set(x, "taxi_cost", value.asInstanceOf[js.Any])
+      inline def setTaxi_cost(value: Double): Self = StObject.set(x, "taxi_cost", value.asInstanceOf[js.Any])
     }
   }
   
@@ -848,8 +755,7 @@ object Transfer {
   }
   object SearchResultExt {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destination: LngLat,
       destinationName: String,
       end: PoiExt,
@@ -864,20 +770,15 @@ object Transfer {
       __obj.asInstanceOf[SearchResultExt]
     }
     
-    @scala.inline
-    implicit class SearchResultExtMutableBuilder[Self <: SearchResultExt] (val x: Self) extends AnyVal {
+    extension [Self <: SearchResultExt](x: Self) {
       
-      @scala.inline
-      def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+      inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: PoiExt): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: PoiExt): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginName(value: String): Self = StObject.set(x, "originName", value.asInstanceOf[js.Any])
+      inline def setOriginName(value: String): Self = StObject.set(x, "originName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: PoiExt): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: PoiExt): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -889,14 +790,11 @@ object Transfer {
   trait SearchStatus extends StObject
   object SearchStatus {
     
-    @scala.inline
-    def complete: typings.amapJsApiTransfer.amapJsApiTransferStrings.complete = "complete".asInstanceOf[typings.amapJsApiTransfer.amapJsApiTransferStrings.complete]
+    inline def complete: typings.amapJsApiTransfer.amapJsApiTransferStrings.complete = "complete".asInstanceOf[typings.amapJsApiTransfer.amapJsApiTransferStrings.complete]
     
-    @scala.inline
-    def error: typings.amapJsApiTransfer.amapJsApiTransferStrings.error = "error".asInstanceOf[typings.amapJsApiTransfer.amapJsApiTransferStrings.error]
+    inline def error: typings.amapJsApiTransfer.amapJsApiTransferStrings.error = "error".asInstanceOf[typings.amapJsApiTransfer.amapJsApiTransferStrings.error]
     
-    @scala.inline
-    def no_data: typings.amapJsApiTransfer.amapJsApiTransferStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiTransfer.amapJsApiTransferStrings.no_data]
+    inline def no_data: typings.amapJsApiTransfer.amapJsApiTransferStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiTransfer.amapJsApiTransferStrings.no_data]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -908,20 +806,17 @@ object Transfer {
   trait Segment extends StObject
   object Segment {
     
-    @scala.inline
-    def RailwaySegment(distance: Double, instruction: String, time: Double, transit: RailwayDetails): typings.amapJsApiTransfer.AMap.Transfer.RailwaySegment = {
+    inline def RailwaySegment(distance: Double, instruction: String, time: Double, transit: RailwayDetails): typings.amapJsApiTransfer.AMap.Transfer.RailwaySegment = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "RAILWAY")
       __obj.asInstanceOf[typings.amapJsApiTransfer.AMap.Transfer.RailwaySegment]
     }
     
-    @scala.inline
-    def TaxiSegment(distance: Double, instruction: String, time: Double, transit: TaxiDetails): typings.amapJsApiTransfer.AMap.Transfer.TaxiSegment = {
+    inline def TaxiSegment(distance: Double, instruction: String, time: Double, transit: TaxiDetails): typings.amapJsApiTransfer.AMap.Transfer.TaxiSegment = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "TAXI")
       __obj.asInstanceOf[typings.amapJsApiTransfer.AMap.Transfer.TaxiSegment]
     }
     
-    @scala.inline
-    def TransitSegment(
+    inline def TransitSegment(
       distance: Double,
       instruction: String,
       time: Double,
@@ -932,8 +827,7 @@ object Transfer {
       __obj.asInstanceOf[typings.amapJsApiTransfer.AMap.Transfer.TransitSegment]
     }
     
-    @scala.inline
-    def WalkSegment(distance: Double, instruction: String, time: Double, transit: WalkDetails): typings.amapJsApiTransfer.AMap.Transfer.WalkSegment = {
+    inline def WalkSegment(distance: Double, instruction: String, time: Double, transit: WalkDetails): typings.amapJsApiTransfer.AMap.Transfer.WalkSegment = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "WALK")
       __obj.asInstanceOf[typings.amapJsApiTransfer.AMap.Transfer.WalkSegment]
     }
@@ -958,23 +852,18 @@ object Transfer {
   }
   object SegmentCommon {
     
-    @scala.inline
-    def apply(distance: Double, instruction: String, time: Double): SegmentCommon = {
+    inline def apply(distance: Double, instruction: String, time: Double): SegmentCommon = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[SegmentCommon]
     }
     
-    @scala.inline
-    implicit class SegmentCommonMutableBuilder[Self <: SegmentCommon] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentCommon](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
+      inline def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -992,24 +881,19 @@ object Transfer {
   }
   object Space {
     
-    @scala.inline
-    def apply(cost: Double, `type`: String | js.Array[scala.Nothing]): Space = {
+    inline def apply(cost: Double, `type`: String | js.Array[scala.Nothing]): Space = {
       val __obj = js.Dynamic.literal(cost = cost.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Space]
     }
     
-    @scala.inline
-    implicit class SpaceMutableBuilder[Self <: Space] (val x: Self) extends AnyVal {
+    extension [Self <: Space](x: Self) {
       
-      @scala.inline
-      def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+      inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeVarargs(value: scala.Nothing*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: scala.Nothing*): Self = StObject.set(x, "type", js.Array(value :_*))
     }
   }
   
@@ -1034,29 +918,22 @@ object Transfer {
   }
   object Stop {
     
-    @scala.inline
-    def apply(id: String, location: LngLat, name: String): Stop = {
+    inline def apply(id: String, location: LngLat, name: String): Stop = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stop]
     }
     
-    @scala.inline
-    implicit class StopMutableBuilder[Self <: Stop] (val x: Self) extends AnyVal {
+    extension [Self <: Stop](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegment(value: TransitSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+      inline def setSegment(value: TransitSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+      inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     }
   }
   
@@ -1074,20 +951,16 @@ object Transfer {
   }
   object SubwayEntrance {
     
-    @scala.inline
-    def apply(location: LngLat, name: String): SubwayEntrance = {
+    inline def apply(location: LngLat, name: String): SubwayEntrance = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubwayEntrance]
     }
     
-    @scala.inline
-    implicit class SubwayEntranceMutableBuilder[Self <: SubwayEntrance] (val x: Self) extends AnyVal {
+    extension [Self <: SubwayEntrance](x: Self) {
       
-      @scala.inline
-      def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1125,32 +998,24 @@ object Transfer {
   }
   object TaxiDetails {
     
-    @scala.inline
-    def apply(destination: LngLat, distance: Double, origin: LngLat, sname: String, time: Double, tname: String): TaxiDetails = {
+    inline def apply(destination: LngLat, distance: Double, origin: LngLat, sname: String, time: Double, tname: String): TaxiDetails = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], sname = sname.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], tname = tname.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaxiDetails]
     }
     
-    @scala.inline
-    implicit class TaxiDetailsMutableBuilder[Self <: TaxiDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TaxiDetails](x: Self) {
       
-      @scala.inline
-      def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSname(value: String): Self = StObject.set(x, "sname", value.asInstanceOf[js.Any])
+      inline def setSname(value: String): Self = StObject.set(x, "sname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTname(value: String): Self = StObject.set(x, "tname", value.asInstanceOf[js.Any])
+      inline def setTname(value: String): Self = StObject.set(x, "tname", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1171,20 +1036,16 @@ object Transfer {
   }
   object TaxiSegment {
     
-    @scala.inline
-    def apply(distance: Double, instruction: String, time: Double, transit: TaxiDetails): TaxiSegment = {
+    inline def apply(distance: Double, instruction: String, time: Double, transit: TaxiDetails): TaxiSegment = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "TAXI")
       __obj.asInstanceOf[TaxiSegment]
     }
     
-    @scala.inline
-    implicit class TaxiSegmentMutableBuilder[Self <: TaxiSegment] (val x: Self) extends AnyVal {
+    extension [Self <: TaxiSegment](x: Self) {
       
-      @scala.inline
-      def setTransit(value: TaxiDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
+      inline def setTransit(value: TaxiDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransit_mode(value: TAXI): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
+      inline def setTransit_mode(value: TAXI): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1242,8 +1103,7 @@ object Transfer {
   }
   object TransferPlan {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cost: Double,
       distance: Double,
       nightLine: Boolean,
@@ -1259,44 +1119,31 @@ object Transfer {
       __obj.asInstanceOf[TransferPlan]
     }
     
-    @scala.inline
-    implicit class TransferPlanMutableBuilder[Self <: TransferPlan] (val x: Self) extends AnyVal {
+    extension [Self <: TransferPlan](x: Self) {
       
-      @scala.inline
-      def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+      inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNightLine(value: Boolean): Self = StObject.set(x, "nightLine", value.asInstanceOf[js.Any])
+      inline def setNightLine(value: Boolean): Self = StObject.set(x, "nightLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setRailway_distance(value: Double): Self = StObject.set(x, "railway_distance", value.asInstanceOf[js.Any])
+      inline def setRailway_distance(value: Double): Self = StObject.set(x, "railway_distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
       
-      @scala.inline
-      def setTaxi_distance(value: Double): Self = StObject.set(x, "taxi_distance", value.asInstanceOf[js.Any])
+      inline def setTaxi_distance(value: Double): Self = StObject.set(x, "taxi_distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransit_distance(value: Double): Self = StObject.set(x, "transit_distance", value.asInstanceOf[js.Any])
+      inline def setTransit_distance(value: Double): Self = StObject.set(x, "transit_distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWalking_distance(value: Double): Self = StObject.set(x, "walking_distance", value.asInstanceOf[js.Any])
+      inline def setWalking_distance(value: Double): Self = StObject.set(x, "walking_distance", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1344,8 +1191,7 @@ object Transfer {
   }
   object TransitDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lines: js.Array[TransitLine],
       off_station: Stop,
       on_station: Stop,
@@ -1357,47 +1203,33 @@ object Transfer {
       __obj.asInstanceOf[TransitDetails]
     }
     
-    @scala.inline
-    implicit class TransitDetailsMutableBuilder[Self <: TransitDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TransitDetails](x: Self) {
       
-      @scala.inline
-      def setEntrance(value: SubwayEntrance): Self = StObject.set(x, "entrance", value.asInstanceOf[js.Any])
+      inline def setEntrance(value: SubwayEntrance): Self = StObject.set(x, "entrance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntranceUndefined: Self = StObject.set(x, "entrance", js.undefined)
+      inline def setEntranceUndefined: Self = StObject.set(x, "entrance", js.undefined)
       
-      @scala.inline
-      def setExit(value: SubwayEntrance): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: SubwayEntrance): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+      inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
       
-      @scala.inline
-      def setLines(value: js.Array[TransitLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[TransitLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: TransitLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: TransitLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
       
-      @scala.inline
-      def setOff_station(value: Stop): Self = StObject.set(x, "off_station", value.asInstanceOf[js.Any])
+      inline def setOff_station(value: Stop): Self = StObject.set(x, "off_station", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn_station(value: Stop): Self = StObject.set(x, "on_station", value.asInstanceOf[js.Any])
+      inline def setOn_station(value: Stop): Self = StObject.set(x, "on_station", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setVia_num(value: Double): Self = StObject.set(x, "via_num", value.asInstanceOf[js.Any])
+      inline def setVia_num(value: Double): Self = StObject.set(x, "via_num", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVia_stops(value: js.Array[Stop]): Self = StObject.set(x, "via_stops", value.asInstanceOf[js.Any])
+      inline def setVia_stops(value: js.Array[Stop]): Self = StObject.set(x, "via_stops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVia_stopsVarargs(value: Stop*): Self = StObject.set(x, "via_stops", js.Array(value :_*))
+      inline def setVia_stopsVarargs(value: Stop*): Self = StObject.set(x, "via_stops", js.Array(value :_*))
     }
   }
   
@@ -1430,8 +1262,7 @@ object Transfer {
   }
   object TransitLine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       etime: String | js.Array[scala.Nothing],
       id: String,
       name: String,
@@ -1443,29 +1274,21 @@ object Transfer {
       __obj.asInstanceOf[TransitLine]
     }
     
-    @scala.inline
-    implicit class TransitLineMutableBuilder[Self <: TransitLine] (val x: Self) extends AnyVal {
+    extension [Self <: TransitLine](x: Self) {
       
-      @scala.inline
-      def setEtime(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
+      inline def setEtime(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "etime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtimeVarargs(value: scala.Nothing*): Self = StObject.set(x, "etime", js.Array(value :_*))
+      inline def setEtimeVarargs(value: scala.Nothing*): Self = StObject.set(x, "etime", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStime(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
+      inline def setStime(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "stime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStimeVarargs(value: scala.Nothing*): Self = StObject.set(x, "stime", js.Array(value :_*))
+      inline def setStimeVarargs(value: scala.Nothing*): Self = StObject.set(x, "stime", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1486,8 +1309,7 @@ object Transfer {
   }
   object TransitSegment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       distance: Double,
       instruction: String,
       time: Double,
@@ -1498,14 +1320,11 @@ object Transfer {
       __obj.asInstanceOf[TransitSegment]
     }
     
-    @scala.inline
-    implicit class TransitSegmentMutableBuilder[Self <: TransitSegment] (val x: Self) extends AnyVal {
+    extension [Self <: TransitSegment](x: Self) {
       
-      @scala.inline
-      def setTransit(value: TransitDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
+      inline def setTransit(value: TransitDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransit_mode(value: SUBWAY | METRO_RAIL | BUS): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
+      inline def setTransit_mode(value: SUBWAY | METRO_RAIL | BUS): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1539,30 +1358,23 @@ object Transfer {
   }
   object ViaStop {
     
-    @scala.inline
-    def apply(id: String, location: LngLat, name: String, time: Double, wait_ : Double): ViaStop = {
+    inline def apply(id: String, location: LngLat, name: String, time: Double, wait_ : Double): ViaStop = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViaStop]
     }
     
-    @scala.inline
-    implicit class ViaStopMutableBuilder[Self <: ViaStop] (val x: Self) extends AnyVal {
+    extension [Self <: ViaStop](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1590,32 +1402,24 @@ object Transfer {
   }
   object WalkDetails {
     
-    @scala.inline
-    def apply(destination: LngLat, origin: LngLat, path: js.Array[LngLat], steps: js.Array[WalkStep]): WalkDetails = {
+    inline def apply(destination: LngLat, origin: LngLat, path: js.Array[LngLat], steps: js.Array[WalkStep]): WalkDetails = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], steps = steps.asInstanceOf[js.Any])
       __obj.asInstanceOf[WalkDetails]
     }
     
-    @scala.inline
-    implicit class WalkDetailsMutableBuilder[Self <: WalkDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WalkDetails](x: Self) {
       
-      @scala.inline
-      def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setSteps(value: js.Array[WalkStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[WalkStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: WalkStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: WalkStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
     }
   }
   
@@ -1636,20 +1440,16 @@ object Transfer {
   }
   object WalkSegment {
     
-    @scala.inline
-    def apply(distance: Double, instruction: String, time: Double, transit: WalkDetails): WalkSegment = {
+    inline def apply(distance: Double, instruction: String, time: Double, transit: WalkDetails): WalkSegment = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], instruction = instruction.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], transit = transit.asInstanceOf[js.Any], transit_mode = "WALK")
       __obj.asInstanceOf[WalkSegment]
     }
     
-    @scala.inline
-    implicit class WalkSegmentMutableBuilder[Self <: WalkSegment] (val x: Self) extends AnyVal {
+    extension [Self <: WalkSegment](x: Self) {
       
-      @scala.inline
-      def setTransit(value: WalkDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
+      inline def setTransit(value: WalkDetails): Self = StObject.set(x, "transit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransit_mode(value: WALK): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
+      inline def setTransit_mode(value: WALK): Self = StObject.set(x, "transit_mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1692,8 +1492,7 @@ object Transfer {
   }
   object WalkStep {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: String,
       assist_action: String,
       distance: Double,
@@ -1706,32 +1505,23 @@ object Transfer {
       __obj.asInstanceOf[WalkStep]
     }
     
-    @scala.inline
-    implicit class WalkStepMutableBuilder[Self <: WalkStep] (val x: Self) extends AnyVal {
+    extension [Self <: WalkStep](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssist_action(value: String): Self = StObject.set(x, "assist_action", value.asInstanceOf[js.Any])
+      inline def setAssist_action(value: String): Self = StObject.set(x, "assist_action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
+      inline def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
+      inline def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

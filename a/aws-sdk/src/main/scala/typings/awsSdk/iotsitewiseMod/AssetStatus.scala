@@ -18,22 +18,17 @@ trait AssetStatus extends StObject {
 }
 object AssetStatus {
   
-  @scala.inline
-  def apply(state: AssetState): AssetStatus = {
+  inline def apply(state: AssetState): AssetStatus = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetStatus]
   }
   
-  @scala.inline
-  implicit class AssetStatusMutableBuilder[Self <: AssetStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AssetStatus](x: Self) {
     
-    @scala.inline
-    def setError(value: ErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setState(value: AssetState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: AssetState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

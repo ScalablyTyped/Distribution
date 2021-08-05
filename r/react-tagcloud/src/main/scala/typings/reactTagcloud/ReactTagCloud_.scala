@@ -31,32 +31,24 @@ object ReactTagCloud_ {
   }
   object DefaultRendererFactoryOptions {
     
-    @scala.inline
-    def apply(): DefaultRendererFactoryOptions = {
+    inline def apply(): DefaultRendererFactoryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultRendererFactoryOptions]
     }
     
-    @scala.inline
-    implicit class DefaultRendererFactoryOptionsMutableBuilder[Self <: DefaultRendererFactoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultRendererFactoryOptions](x: Self) {
       
-      @scala.inline
-      def setColorOptions(value: js.Any): Self = StObject.set(x, "colorOptions", value.asInstanceOf[js.Any])
+      inline def setColorOptions(value: js.Any): Self = StObject.set(x, "colorOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorOptionsUndefined: Self = StObject.set(x, "colorOptions", js.undefined)
+      inline def setColorOptionsUndefined: Self = StObject.set(x, "colorOptions", js.undefined)
       
-      @scala.inline
-      def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setTagRenderer(value: js.Function): Self = StObject.set(x, "tagRenderer", value.asInstanceOf[js.Any])
+      inline def setTagRenderer(value: js.Function): Self = StObject.set(x, "tagRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagRendererUndefined: Self = StObject.set(x, "tagRenderer", js.undefined)
+      inline def setTagRendererUndefined: Self = StObject.set(x, "tagRenderer", js.undefined)
     }
   }
   
@@ -94,62 +86,44 @@ object ReactTagCloud_ {
   }
   object TagCloudProps {
     
-    @scala.inline
-    def apply(maxSize: Double, minSize: Double, tags: js.Array[js.Any]): TagCloudProps = {
+    inline def apply(maxSize: Double, minSize: Double, tags: js.Array[js.Any]): TagCloudProps = {
       val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagCloudProps]
     }
     
-    @scala.inline
-    implicit class TagCloudPropsMutableBuilder[Self <: TagCloudProps] (val x: Self) extends AnyVal {
+    extension [Self <: TagCloudProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColorOptions(value: js.Object): Self = StObject.set(x, "colorOptions", value.asInstanceOf[js.Any])
+      inline def setColorOptions(value: js.Object): Self = StObject.set(x, "colorOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorOptionsUndefined: Self = StObject.set(x, "colorOptions", js.undefined)
+      inline def setColorOptionsUndefined: Self = StObject.set(x, "colorOptions", js.undefined)
       
-      @scala.inline
-      def setDisableRandomColor(value: Boolean): Self = StObject.set(x, "disableRandomColor", value.asInstanceOf[js.Any])
+      inline def setDisableRandomColor(value: Boolean): Self = StObject.set(x, "disableRandomColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableRandomColorUndefined: Self = StObject.set(x, "disableRandomColor", js.undefined)
+      inline def setDisableRandomColorUndefined: Self = StObject.set(x, "disableRandomColor", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+      inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      inline def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRenderer(value: js.Function): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: js.Function): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      @scala.inline
-      def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
+      inline def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
+      inline def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
     }
   }
 }

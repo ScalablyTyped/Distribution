@@ -14,25 +14,19 @@ trait ClientOptions extends StObject {
 }
 object ClientOptions {
   
-  @scala.inline
-  def apply(environment: ENVIRONMENT, publishableKey: String): ClientOptions = {
+  inline def apply(environment: ENVIRONMENT, publishableKey: String): ClientOptions = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], publishableKey = publishableKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
   
-  @scala.inline
-  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientOptions](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: ENVIRONMENT): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: ENVIRONMENT): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPublishableKey(value: String): Self = StObject.set(x, "publishableKey", value.asInstanceOf[js.Any])
+    inline def setPublishableKey(value: String): Self = StObject.set(x, "publishableKey", value.asInstanceOf[js.Any])
   }
 }

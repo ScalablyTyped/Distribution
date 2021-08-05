@@ -16,19 +16,15 @@ trait IProgressBar
 }
 object IProgressBar {
   
-  @scala.inline
-  def apply(): IProgressBar = {
+  inline def apply(): IProgressBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IProgressBar]
   }
   
-  @scala.inline
-  implicit class IProgressBarMutableBuilder[Self <: IProgressBar] (val x: Self) extends AnyVal {
+  extension [Self <: IProgressBar](x: Self) {
     
-    @scala.inline
-    def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
+    inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait Projection extends StObject {
 }
 object Projection {
   
-  @scala.inline
-  def apply(fromCoordToPoint: Coord => Point, fromPointToCoord: Point => Coord): Projection = {
+  inline def apply(fromCoordToPoint: Coord => Point, fromPointToCoord: Point => Coord): Projection = {
     val __obj = js.Dynamic.literal(fromCoordToPoint = js.Any.fromFunction1(fromCoordToPoint), fromPointToCoord = js.Any.fromFunction1(fromPointToCoord))
     __obj.asInstanceOf[Projection]
   }
   
-  @scala.inline
-  implicit class ProjectionMutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
+  extension [Self <: Projection](x: Self) {
     
-    @scala.inline
-    def setFromCoordToPoint(value: Coord => Point): Self = StObject.set(x, "fromCoordToPoint", js.Any.fromFunction1(value))
+    inline def setFromCoordToPoint(value: Coord => Point): Self = StObject.set(x, "fromCoordToPoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromPointToCoord(value: Point => Coord): Self = StObject.set(x, "fromPointToCoord", js.Any.fromFunction1(value))
+    inline def setFromPointToCoord(value: Point => Coord): Self = StObject.set(x, "fromPointToCoord", js.Any.fromFunction1(value))
   }
 }

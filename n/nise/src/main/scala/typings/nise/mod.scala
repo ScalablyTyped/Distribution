@@ -70,8 +70,7 @@ object mod {
   }
   object FakeServerOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoRespond: Boolean,
       autoRespondAfter: Double,
       fakeHTTPMethods: Boolean,
@@ -81,20 +80,15 @@ object mod {
       __obj.asInstanceOf[FakeServerOptions]
     }
     
-    @scala.inline
-    implicit class FakeServerOptionsMutableBuilder[Self <: FakeServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FakeServerOptions](x: Self) {
       
-      @scala.inline
-      def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
+      inline def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRespondAfter(value: Double): Self = StObject.set(x, "autoRespondAfter", value.asInstanceOf[js.Any])
+      inline def setAutoRespondAfter(value: Double): Self = StObject.set(x, "autoRespondAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFakeHTTPMethods(value: Boolean): Self = StObject.set(x, "fakeHTTPMethods", value.asInstanceOf[js.Any])
+      inline def setFakeHTTPMethods(value: Boolean): Self = StObject.set(x, "fakeHTTPMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespondImmediately(value: Boolean): Self = StObject.set(x, "respondImmediately", value.asInstanceOf[js.Any])
+      inline def setRespondImmediately(value: Boolean): Self = StObject.set(x, "respondImmediately", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,8 +238,7 @@ object mod {
   }
   object FakeUploadProgress {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListener: (String, js.Function1[/* e */ Event, js.Any]) => Unit,
       dispatchEvent: Event => Unit,
       eventListeners: Abort,
@@ -255,20 +248,15 @@ object mod {
       __obj.asInstanceOf[FakeUploadProgress]
     }
     
-    @scala.inline
-    implicit class FakeUploadProgressMutableBuilder[Self <: FakeUploadProgress] (val x: Self) extends AnyVal {
+    extension [Self <: FakeUploadProgress](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDispatchEvent(value: Event => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+      inline def setDispatchEvent(value: Event => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEventListeners(value: Abort): Self = StObject.set(x, "eventListeners", value.asInstanceOf[js.Any])
+      inline def setEventListeners(value: Abort): Self = StObject.set(x, "eventListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+      inline def setRemoveEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     }
   }
   
@@ -280,8 +268,7 @@ object mod {
   }
   object FakeXHR_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FakeXMLHttpRequest: FakeXMLHttpRequestStatic,
       useFakeXMLHttpRequest: () => FakeXMLHttpRequestStatic
     ): FakeXHR_ = {
@@ -289,14 +276,11 @@ object mod {
       __obj.asInstanceOf[FakeXHR_]
     }
     
-    @scala.inline
-    implicit class FakeXHR_MutableBuilder[Self <: FakeXHR_] (val x: Self) extends AnyVal {
+    extension [Self <: FakeXHR_](x: Self) {
       
-      @scala.inline
-      def setFakeXMLHttpRequest(value: FakeXMLHttpRequestStatic): Self = StObject.set(x, "FakeXMLHttpRequest", value.asInstanceOf[js.Any])
+      inline def setFakeXMLHttpRequest(value: FakeXMLHttpRequestStatic): Self = StObject.set(x, "FakeXMLHttpRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFakeXMLHttpRequest(value: () => FakeXMLHttpRequestStatic): Self = StObject.set(x, "useFakeXMLHttpRequest", js.Any.fromFunction0(value))
+      inline def setUseFakeXMLHttpRequest(value: () => FakeXMLHttpRequestStatic): Self = StObject.set(x, "useFakeXMLHttpRequest", js.Any.fromFunction0(value))
     }
   }
   

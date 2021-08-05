@@ -14,16 +14,13 @@ trait OnBeginUndoDataUpdateChange
 }
 object OnBeginUndoDataUpdateChange {
   
-  @scala.inline
-  def apply(changeKey: IChangeKey): OnBeginUndoDataUpdateChange = {
+  inline def apply(changeKey: IChangeKey): OnBeginUndoDataUpdateChange = {
     val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeginUndoDataUpdateChange]
   }
   
-  @scala.inline
-  implicit class OnBeginUndoDataUpdateChangeMutableBuilder[Self <: OnBeginUndoDataUpdateChange] (val x: Self) extends AnyVal {
+  extension [Self <: OnBeginUndoDataUpdateChange](x: Self) {
     
-    @scala.inline
-    def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
+    inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
   }
 }

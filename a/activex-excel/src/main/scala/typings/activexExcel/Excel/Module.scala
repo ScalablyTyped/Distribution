@@ -22,7 +22,7 @@ trait Module extends StObject {
   
   def Delete(): Unit = js.native
   
-  @JSName("Excel.Module_typekey")
+  /* private */ @JSName("Excel.Module_typekey")
   var ExcelDotModule_typekey: Module = js.native
   
   val Index: Double = js.native

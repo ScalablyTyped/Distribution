@@ -13,19 +13,15 @@ trait ItemsResourceQualifier extends StObject {
 }
 object ItemsResourceQualifier {
   
-  @scala.inline
-  def apply(items: ResourceQualifier, returnValue: Double): ItemsResourceQualifier = {
+  inline def apply(items: ResourceQualifier, returnValue: Double): ItemsResourceQualifier = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsResourceQualifier]
   }
   
-  @scala.inline
-  implicit class ItemsResourceQualifierMutableBuilder[Self <: ItemsResourceQualifier] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsResourceQualifier](x: Self) {
     
-    @scala.inline
-    def setItems(value: ResourceQualifier): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ResourceQualifier): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

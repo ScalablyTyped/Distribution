@@ -19,6 +19,5 @@ object RadioGroup {
   @JSImport("wix-style-react", "RadioGroup.Radio")
   @js.native
   def Radio: Instantiable0[typings.wixStyleReact.radioGroupMod.RadioButton] = js.native
-  @scala.inline
-  def Radio_=(x: Instantiable0[typings.wixStyleReact.radioGroupMod.RadioButton]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Radio")(x.asInstanceOf[js.Any])
+  inline def Radio_=(x: Instantiable0[typings.wixStyleReact.radioGroupMod.RadioButton]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Radio")(x.asInstanceOf[js.Any])
 }

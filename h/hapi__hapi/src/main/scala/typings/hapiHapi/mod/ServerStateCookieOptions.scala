@@ -81,112 +81,77 @@ trait ServerStateCookieOptions extends StObject {
 }
 object ServerStateCookieOptions {
   
-  @scala.inline
-  def apply(): ServerStateCookieOptions = {
+  inline def apply(): ServerStateCookieOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerStateCookieOptions]
   }
   
-  @scala.inline
-  implicit class ServerStateCookieOptionsMutableBuilder[Self <: ServerStateCookieOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerStateCookieOptions](x: Self) {
     
-    @scala.inline
-    def setAutoValue(value: /* request */ Request => Unit): Self = StObject.set(x, "autoValue", js.Any.fromFunction1(value))
+    inline def setAutoValue(value: /* request */ Request => Unit): Self = StObject.set(x, "autoValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
+    inline def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
     
-    @scala.inline
-    def setClearInvalid(value: Boolean): Self = StObject.set(x, "clearInvalid", value.asInstanceOf[js.Any])
+    inline def setClearInvalid(value: Boolean): Self = StObject.set(x, "clearInvalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
+    inline def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNull: Self = StObject.set(x, "domain", null)
+    inline def setDomainNull: Self = StObject.set(x, "domain", null)
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: none_ | base64 | base64json | form | iron): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: none_ | base64 | base64json | form | iron): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+    inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+    inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
     
-    @scala.inline
-    def setIron(value: SealOptions): Self = StObject.set(x, "iron", value.asInstanceOf[js.Any])
+    inline def setIron(value: SealOptions): Self = StObject.set(x, "iron", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIronUndefined: Self = StObject.set(x, "iron", js.undefined)
+    inline def setIronUndefined: Self = StObject.set(x, "iron", js.undefined)
     
-    @scala.inline
-    def setIsHttpOnly(value: Boolean): Self = StObject.set(x, "isHttpOnly", value.asInstanceOf[js.Any])
+    inline def setIsHttpOnly(value: Boolean): Self = StObject.set(x, "isHttpOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHttpOnlyUndefined: Self = StObject.set(x, "isHttpOnly", js.undefined)
+    inline def setIsHttpOnlyUndefined: Self = StObject.set(x, "isHttpOnly", js.undefined)
     
-    @scala.inline
-    def setIsSameSite(value: SameSitePolicy): Self = StObject.set(x, "isSameSite", value.asInstanceOf[js.Any])
+    inline def setIsSameSite(value: SameSitePolicy): Self = StObject.set(x, "isSameSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSameSiteUndefined: Self = StObject.set(x, "isSameSite", js.undefined)
+    inline def setIsSameSiteUndefined: Self = StObject.set(x, "isSameSite", js.undefined)
     
-    @scala.inline
-    def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
+    inline def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
+    inline def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
     
-    @scala.inline
-    def setPassThrough(value: js.Any): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
+    inline def setPassThrough(value: js.Any): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassThroughUndefined: Self = StObject.set(x, "passThrough", js.undefined)
+    inline def setPassThroughUndefined: Self = StObject.set(x, "passThrough", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathNull: Self = StObject.set(x, "path", null)
+    inline def setPathNull: Self = StObject.set(x, "path", null)
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSign(value: Integrity): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
+    inline def setSign(value: Integrity): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
+    inline def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
     
-    @scala.inline
-    def setStrictHeader(value: Boolean): Self = StObject.set(x, "strictHeader", value.asInstanceOf[js.Any])
+    inline def setStrictHeader(value: Boolean): Self = StObject.set(x, "strictHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictHeaderUndefined: Self = StObject.set(x, "strictHeader", js.undefined)
+    inline def setStrictHeaderUndefined: Self = StObject.set(x, "strictHeader", js.undefined)
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlNull: Self = StObject.set(x, "ttl", null)
+    inline def setTtlNull: Self = StObject.set(x, "ttl", null)
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

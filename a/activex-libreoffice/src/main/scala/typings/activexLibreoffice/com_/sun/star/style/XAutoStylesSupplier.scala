@@ -25,8 +25,7 @@ trait XAutoStylesSupplier
 }
 object XAutoStylesSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoStyles: XAutoStyles,
     acquire: () => Unit,
     getAutoStyles: () => XAutoStyles,
@@ -37,13 +36,10 @@ object XAutoStylesSupplier {
     __obj.asInstanceOf[XAutoStylesSupplier]
   }
   
-  @scala.inline
-  implicit class XAutoStylesSupplierMutableBuilder[Self <: XAutoStylesSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XAutoStylesSupplier](x: Self) {
     
-    @scala.inline
-    def setAutoStyles(value: XAutoStyles): Self = StObject.set(x, "AutoStyles", value.asInstanceOf[js.Any])
+    inline def setAutoStyles(value: XAutoStyles): Self = StObject.set(x, "AutoStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAutoStyles(value: () => XAutoStyles): Self = StObject.set(x, "getAutoStyles", js.Any.fromFunction0(value))
+    inline def setGetAutoStyles(value: () => XAutoStyles): Self = StObject.set(x, "getAutoStyles", js.Any.fromFunction0(value))
   }
 }

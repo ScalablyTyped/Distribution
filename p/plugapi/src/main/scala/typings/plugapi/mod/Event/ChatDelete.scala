@@ -12,19 +12,15 @@ trait ChatDelete extends StObject {
 }
 object ChatDelete {
   
-  @scala.inline
-  def apply(chatID: String, mi: Double): ChatDelete = {
+  inline def apply(chatID: String, mi: Double): ChatDelete = {
     val __obj = js.Dynamic.literal(chatID = chatID.asInstanceOf[js.Any], mi = mi.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatDelete]
   }
   
-  @scala.inline
-  implicit class ChatDeleteMutableBuilder[Self <: ChatDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ChatDelete](x: Self) {
     
-    @scala.inline
-    def setChatID(value: String): Self = StObject.set(x, "chatID", value.asInstanceOf[js.Any])
+    inline def setChatID(value: String): Self = StObject.set(x, "chatID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMi(value: Double): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
+    inline def setMi(value: Double): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
   }
 }

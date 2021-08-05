@@ -13,8 +13,7 @@ trait GetContentElement extends StObject {
 }
 object GetContentElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContentElement: () => js.Promise[UniDriver[js.Any]],
     queryDocumentOrElement: String => js.Promise[UniDriver[js.Any]]
   ): GetContentElement = {
@@ -22,13 +21,10 @@ object GetContentElement {
     __obj.asInstanceOf[GetContentElement]
   }
   
-  @scala.inline
-  implicit class GetContentElementMutableBuilder[Self <: GetContentElement] (val x: Self) extends AnyVal {
+  extension [Self <: GetContentElement](x: Self) {
     
-    @scala.inline
-    def setGetContentElement(value: () => js.Promise[UniDriver[js.Any]]): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
+    inline def setGetContentElement(value: () => js.Promise[UniDriver[js.Any]]): Self = StObject.set(x, "getContentElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryDocumentOrElement(value: String => js.Promise[UniDriver[js.Any]]): Self = StObject.set(x, "queryDocumentOrElement", js.Any.fromFunction1(value))
+    inline def setQueryDocumentOrElement(value: String => js.Promise[UniDriver[js.Any]]): Self = StObject.set(x, "queryDocumentOrElement", js.Any.fromFunction1(value))
   }
 }

@@ -47,8 +47,7 @@ trait XAreaLink
 }
 object XAreaLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DestArea: CellRangeAddress,
     SourceArea: String,
     acquire: () => Unit,
@@ -63,25 +62,18 @@ object XAreaLink {
     __obj.asInstanceOf[XAreaLink]
   }
   
-  @scala.inline
-  implicit class XAreaLinkMutableBuilder[Self <: XAreaLink] (val x: Self) extends AnyVal {
+  extension [Self <: XAreaLink](x: Self) {
     
-    @scala.inline
-    def setDestArea(value: CellRangeAddress): Self = StObject.set(x, "DestArea", value.asInstanceOf[js.Any])
+    inline def setDestArea(value: CellRangeAddress): Self = StObject.set(x, "DestArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDestArea(value: () => CellRangeAddress): Self = StObject.set(x, "getDestArea", js.Any.fromFunction0(value))
+    inline def setGetDestArea(value: () => CellRangeAddress): Self = StObject.set(x, "getDestArea", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSourceArea(value: () => String): Self = StObject.set(x, "getSourceArea", js.Any.fromFunction0(value))
+    inline def setGetSourceArea(value: () => String): Self = StObject.set(x, "getSourceArea", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDestArea(value: CellRangeAddress => Unit): Self = StObject.set(x, "setDestArea", js.Any.fromFunction1(value))
+    inline def setSetDestArea(value: CellRangeAddress => Unit): Self = StObject.set(x, "setDestArea", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSourceArea(value: String => Unit): Self = StObject.set(x, "setSourceArea", js.Any.fromFunction1(value))
+    inline def setSetSourceArea(value: String => Unit): Self = StObject.set(x, "setSourceArea", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSourceArea(value: String): Self = StObject.set(x, "SourceArea", value.asInstanceOf[js.Any])
+    inline def setSourceArea(value: String): Self = StObject.set(x, "SourceArea", value.asInstanceOf[js.Any])
   }
 }

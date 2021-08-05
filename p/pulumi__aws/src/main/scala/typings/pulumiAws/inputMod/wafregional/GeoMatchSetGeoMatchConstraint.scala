@@ -21,20 +21,16 @@ trait GeoMatchSetGeoMatchConstraint extends StObject {
 }
 object GeoMatchSetGeoMatchConstraint {
   
-  @scala.inline
-  def apply(`type`: Input[String], value: Input[String]): GeoMatchSetGeoMatchConstraint = {
+  inline def apply(`type`: Input[String], value: Input[String]): GeoMatchSetGeoMatchConstraint = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoMatchSetGeoMatchConstraint]
   }
   
-  @scala.inline
-  implicit class GeoMatchSetGeoMatchConstraintMutableBuilder[Self <: GeoMatchSetGeoMatchConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: GeoMatchSetGeoMatchConstraint](x: Self) {
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait UserPoolClientDescription extends StObject {
 }
 object UserPoolClientDescription {
   
-  @scala.inline
-  def apply(): UserPoolClientDescription = {
+  inline def apply(): UserPoolClientDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPoolClientDescription]
   }
   
-  @scala.inline
-  implicit class UserPoolClientDescriptionMutableBuilder[Self <: UserPoolClientDescription] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolClientDescription](x: Self) {
     
-    @scala.inline
-    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
-    @scala.inline
-    def setClientName(value: ClientNameType): Self = StObject.set(x, "ClientName", value.asInstanceOf[js.Any])
+    inline def setClientName(value: ClientNameType): Self = StObject.set(x, "ClientName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientNameUndefined: Self = StObject.set(x, "ClientName", js.undefined)
+    inline def setClientNameUndefined: Self = StObject.set(x, "ClientName", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
+    inline def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait ConfigureShard extends StObject {
 }
 object ConfigureShard {
   
-  @scala.inline
-  def apply(NewReplicaCount: Integer, NodeGroupId: AllowedNodeGroupId): ConfigureShard = {
+  inline def apply(NewReplicaCount: Integer, NodeGroupId: AllowedNodeGroupId): ConfigureShard = {
     val __obj = js.Dynamic.literal(NewReplicaCount = NewReplicaCount.asInstanceOf[js.Any], NodeGroupId = NodeGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureShard]
   }
   
-  @scala.inline
-  implicit class ConfigureShardMutableBuilder[Self <: ConfigureShard] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigureShard](x: Self) {
     
-    @scala.inline
-    def setNewReplicaCount(value: Integer): Self = StObject.set(x, "NewReplicaCount", value.asInstanceOf[js.Any])
+    inline def setNewReplicaCount(value: Integer): Self = StObject.set(x, "NewReplicaCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupId(value: AllowedNodeGroupId): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
+    inline def setNodeGroupId(value: AllowedNodeGroupId): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredAvailabilityZones(value: PreferredAvailabilityZoneList): Self = StObject.set(x, "PreferredAvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setPreferredAvailabilityZones(value: PreferredAvailabilityZoneList): Self = StObject.set(x, "PreferredAvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredAvailabilityZonesUndefined: Self = StObject.set(x, "PreferredAvailabilityZones", js.undefined)
+    inline def setPreferredAvailabilityZonesUndefined: Self = StObject.set(x, "PreferredAvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setPreferredAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "PreferredAvailabilityZones", js.Array(value :_*))
+    inline def setPreferredAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "PreferredAvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setPreferredOutpostArns(value: PreferredOutpostArnList): Self = StObject.set(x, "PreferredOutpostArns", value.asInstanceOf[js.Any])
+    inline def setPreferredOutpostArns(value: PreferredOutpostArnList): Self = StObject.set(x, "PreferredOutpostArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredOutpostArnsUndefined: Self = StObject.set(x, "PreferredOutpostArns", js.undefined)
+    inline def setPreferredOutpostArnsUndefined: Self = StObject.set(x, "PreferredOutpostArns", js.undefined)
     
-    @scala.inline
-    def setPreferredOutpostArnsVarargs(value: String*): Self = StObject.set(x, "PreferredOutpostArns", js.Array(value :_*))
+    inline def setPreferredOutpostArnsVarargs(value: String*): Self = StObject.set(x, "PreferredOutpostArns", js.Array(value :_*))
   }
 }

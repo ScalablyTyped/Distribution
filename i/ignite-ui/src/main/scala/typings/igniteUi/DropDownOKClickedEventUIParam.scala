@@ -23,31 +23,23 @@ trait DropDownOKClickedEventUIParam extends StObject {
 }
 object DropDownOKClickedEventUIParam {
   
-  @scala.inline
-  def apply(): DropDownOKClickedEventUIParam = {
+  inline def apply(): DropDownOKClickedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropDownOKClickedEventUIParam]
   }
   
-  @scala.inline
-  implicit class DropDownOKClickedEventUIParamMutableBuilder[Self <: DropDownOKClickedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DropDownOKClickedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setEventData(value: js.Any): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
+    inline def setEventData(value: js.Any): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
+    inline def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

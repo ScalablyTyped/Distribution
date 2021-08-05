@@ -14,25 +14,19 @@ trait ProjectRepoId extends StObject {
 }
 object ProjectRepoId {
   
-  @scala.inline
-  def apply(): ProjectRepoId = {
+  inline def apply(): ProjectRepoId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectRepoId]
   }
   
-  @scala.inline
-  implicit class ProjectRepoIdMutableBuilder[Self <: ProjectRepoId] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectRepoId](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
+    inline def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
+    inline def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
   }
 }

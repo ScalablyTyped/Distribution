@@ -13,10 +13,8 @@ object accessibleNameAndDescriptionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeTextAlternative(root: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTextAlternative")(root.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def computeTextAlternative(root: Element, options: ComputeTextAlternativeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeTextAlternative")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def computeTextAlternative(root: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTextAlternative")(root.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def computeTextAlternative(root: Element, options: ComputeTextAlternativeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeTextAlternative")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ComputeTextAlternativeOptions extends StObject {
     
@@ -34,34 +32,26 @@ object accessibleNameAndDescriptionMod {
   }
   object ComputeTextAlternativeOptions {
     
-    @scala.inline
-    def apply(): ComputeTextAlternativeOptions = {
+    inline def apply(): ComputeTextAlternativeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComputeTextAlternativeOptions]
     }
     
-    @scala.inline
-    implicit class ComputeTextAlternativeOptionsMutableBuilder[Self <: ComputeTextAlternativeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ComputeTextAlternativeOptions](x: Self) {
       
-      @scala.inline
-      def setCompute(value: description | name): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
+      inline def setCompute(value: description | name): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
+      inline def setComputeUndefined: Self = StObject.set(x, "compute", js.undefined)
       
-      @scala.inline
-      def setComputedStyleSupportsPseudoElements(value: Boolean): Self = StObject.set(x, "computedStyleSupportsPseudoElements", value.asInstanceOf[js.Any])
+      inline def setComputedStyleSupportsPseudoElements(value: Boolean): Self = StObject.set(x, "computedStyleSupportsPseudoElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputedStyleSupportsPseudoElementsUndefined: Self = StObject.set(x, "computedStyleSupportsPseudoElements", js.undefined)
+      inline def setComputedStyleSupportsPseudoElementsUndefined: Self = StObject.set(x, "computedStyleSupportsPseudoElements", js.undefined)
       
-      @scala.inline
-      def setGetComputedStyle(
+      inline def setGetComputedStyle(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.getComputedStyle */ js.Any
       ): Self = StObject.set(x, "getComputedStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetComputedStyleUndefined: Self = StObject.set(x, "getComputedStyle", js.undefined)
+      inline def setGetComputedStyleUndefined: Self = StObject.set(x, "getComputedStyle", js.undefined)
     }
   }
 }

@@ -18,19 +18,15 @@ trait DeleteRuleRequest extends StObject {
 }
 object DeleteRuleRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, RuleId: ResourceId): DeleteRuleRequest = {
+  inline def apply(ChangeToken: ChangeToken, RuleId: ResourceId): DeleteRuleRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], RuleId = RuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRuleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRuleRequestMutableBuilder[Self <: DeleteRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRuleRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }
 }

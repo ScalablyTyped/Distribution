@@ -13,28 +13,21 @@ trait HasuraAggregateResult[T /* <: Record[String, js.Any] */] extends StObject 
 }
 object HasuraAggregateResult {
   
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](): HasuraAggregateResult[T] = {
+  inline def apply[T /* <: Record[String, js.Any] */](): HasuraAggregateResult[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HasuraAggregateResult[T]]
   }
   
-  @scala.inline
-  implicit class HasuraAggregateResultMutableBuilder[Self <: HasuraAggregateResult[?], T /* <: Record[String, js.Any] */] (val x: Self & HasuraAggregateResult[T]) extends AnyVal {
+  extension [Self <: HasuraAggregateResult[?], T /* <: Record[String, js.Any] */](x: Self & HasuraAggregateResult[T]) {
     
-    @scala.inline
-    def setAggregate(value: AggregateResult[T]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: AggregateResult[T]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    @scala.inline
-    def setNodes(value: js.Array[HasuraDataItem[T]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[HasuraDataItem[T]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: HasuraDataItem[T]*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: HasuraDataItem[T]*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

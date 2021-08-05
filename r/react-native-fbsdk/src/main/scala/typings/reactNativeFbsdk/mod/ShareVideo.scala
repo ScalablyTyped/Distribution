@@ -13,16 +13,13 @@ trait ShareVideo extends StObject {
 }
 object ShareVideo {
   
-  @scala.inline
-  def apply(localUrl: String): ShareVideo = {
+  inline def apply(localUrl: String): ShareVideo = {
     val __obj = js.Dynamic.literal(localUrl = localUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareVideo]
   }
   
-  @scala.inline
-  implicit class ShareVideoMutableBuilder[Self <: ShareVideo] (val x: Self) extends AnyVal {
+  extension [Self <: ShareVideo](x: Self) {
     
-    @scala.inline
-    def setLocalUrl(value: String): Self = StObject.set(x, "localUrl", value.asInstanceOf[js.Any])
+    inline def setLocalUrl(value: String): Self = StObject.set(x, "localUrl", value.asInstanceOf[js.Any])
   }
 }

@@ -69,8 +69,7 @@ trait ToolEvent
 }
 object ToolEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: Double,
     delta: Point,
     downPoint: Point,
@@ -90,31 +89,22 @@ object ToolEvent {
     __obj.asInstanceOf[ToolEvent]
   }
   
-  @scala.inline
-  implicit class ToolEventMutableBuilder[Self <: ToolEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ToolEvent](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelta(value: Point): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Point): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownPoint(value: Point): Self = StObject.set(x, "downPoint", value.asInstanceOf[js.Any])
+    inline def setDownPoint(value: Point): Self = StObject.set(x, "downPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPoint(value: Point): Self = StObject.set(x, "lastPoint", value.asInstanceOf[js.Any])
+    inline def setLastPoint(value: Point): Self = StObject.set(x, "lastPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddlePoint(value: Point): Self = StObject.set(x, "middlePoint", value.asInstanceOf[js.Any])
+    inline def setMiddlePoint(value: Point): Self = StObject.set(x, "middlePoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

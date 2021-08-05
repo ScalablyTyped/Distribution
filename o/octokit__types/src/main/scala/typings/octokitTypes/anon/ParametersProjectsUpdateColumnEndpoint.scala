@@ -18,8 +18,7 @@ trait ParametersProjectsUpdateColumnEndpoint extends StObject {
 }
 object ParametersProjectsUpdateColumnEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ProjectsUpdateColumnEndpoint,
     request: ProjectsUpdateColumnRequestOptions,
     response: OctokitResponse[ProjectsUpdateColumnResponseData]
@@ -28,16 +27,12 @@ object ParametersProjectsUpdateColumnEndpoint {
     __obj.asInstanceOf[ParametersProjectsUpdateColumnEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersProjectsUpdateColumnEndpointMutableBuilder[Self <: ParametersProjectsUpdateColumnEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersProjectsUpdateColumnEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ProjectsUpdateColumnEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ProjectsUpdateColumnEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ProjectsUpdateColumnRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ProjectsUpdateColumnRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ProjectsUpdateColumnResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ProjectsUpdateColumnResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

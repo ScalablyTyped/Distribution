@@ -14,16 +14,13 @@ trait GatewayRouteSpecHttp2RouteAction extends StObject {
 }
 object GatewayRouteSpecHttp2RouteAction {
   
-  @scala.inline
-  def apply(target: Input[GatewayRouteSpecHttp2RouteActionTarget]): GatewayRouteSpecHttp2RouteAction = {
+  inline def apply(target: Input[GatewayRouteSpecHttp2RouteActionTarget]): GatewayRouteSpecHttp2RouteAction = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayRouteSpecHttp2RouteAction]
   }
   
-  @scala.inline
-  implicit class GatewayRouteSpecHttp2RouteActionMutableBuilder[Self <: GatewayRouteSpecHttp2RouteAction] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayRouteSpecHttp2RouteAction](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Input[GatewayRouteSpecHttp2RouteActionTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Input[GatewayRouteSpecHttp2RouteActionTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

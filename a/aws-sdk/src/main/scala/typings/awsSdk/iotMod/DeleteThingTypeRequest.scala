@@ -13,16 +13,13 @@ trait DeleteThingTypeRequest extends StObject {
 }
 object DeleteThingTypeRequest {
   
-  @scala.inline
-  def apply(thingTypeName: ThingTypeName): DeleteThingTypeRequest = {
+  inline def apply(thingTypeName: ThingTypeName): DeleteThingTypeRequest = {
     val __obj = js.Dynamic.literal(thingTypeName = thingTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteThingTypeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteThingTypeRequestMutableBuilder[Self <: DeleteThingTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteThingTypeRequest](x: Self) {
     
-    @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
+    inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
   }
 }

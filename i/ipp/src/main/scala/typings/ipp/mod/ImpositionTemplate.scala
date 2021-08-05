@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImpositionTemplate extends StObject
 object ImpositionTemplate {
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def signature: typings.ipp.ippStrings.signature = "signature".asInstanceOf[typings.ipp.ippStrings.signature]
+  inline def signature: typings.ipp.ippStrings.signature = "signature".asInstanceOf[typings.ipp.ippStrings.signature]
 }

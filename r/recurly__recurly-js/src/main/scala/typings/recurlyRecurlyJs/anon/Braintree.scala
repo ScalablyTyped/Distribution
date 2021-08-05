@@ -14,31 +14,23 @@ trait Braintree extends StObject {
 }
 object Braintree {
   
-  @scala.inline
-  def apply(): Braintree = {
+  inline def apply(): Braintree = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Braintree]
   }
   
-  @scala.inline
-  implicit class BraintreeMutableBuilder[Self <: Braintree] (val x: Self) extends AnyVal {
+  extension [Self <: Braintree](x: Self) {
     
-    @scala.inline
-    def setBraintree(value: DeviceData): Self = StObject.set(x, "braintree", value.asInstanceOf[js.Any])
+    inline def setBraintree(value: DeviceData): Self = StObject.set(x, "braintree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBraintreeUndefined: Self = StObject.set(x, "braintree", js.undefined)
+    inline def setBraintreeUndefined: Self = StObject.set(x, "braintree", js.undefined)
     
-    @scala.inline
-    def setKount(value: DataCollector): Self = StObject.set(x, "kount", value.asInstanceOf[js.Any])
+    inline def setKount(value: DataCollector): Self = StObject.set(x, "kount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKountUndefined: Self = StObject.set(x, "kount", js.undefined)
+    inline def setKountUndefined: Self = StObject.set(x, "kount", js.undefined)
     
-    @scala.inline
-    def setLitle(value: SessionId): Self = StObject.set(x, "litle", value.asInstanceOf[js.Any])
+    inline def setLitle(value: SessionId): Self = StObject.set(x, "litle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLitleUndefined: Self = StObject.set(x, "litle", js.undefined)
+    inline def setLitleUndefined: Self = StObject.set(x, "litle", js.undefined)
   }
 }

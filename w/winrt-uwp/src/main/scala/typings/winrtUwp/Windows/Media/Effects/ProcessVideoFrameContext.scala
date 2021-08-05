@@ -16,19 +16,15 @@ trait ProcessVideoFrameContext extends StObject {
 }
 object ProcessVideoFrameContext {
   
-  @scala.inline
-  def apply(inputFrame: VideoFrame, outputFrame: VideoFrame): ProcessVideoFrameContext = {
+  inline def apply(inputFrame: VideoFrame, outputFrame: VideoFrame): ProcessVideoFrameContext = {
     val __obj = js.Dynamic.literal(inputFrame = inputFrame.asInstanceOf[js.Any], outputFrame = outputFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessVideoFrameContext]
   }
   
-  @scala.inline
-  implicit class ProcessVideoFrameContextMutableBuilder[Self <: ProcessVideoFrameContext] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessVideoFrameContext](x: Self) {
     
-    @scala.inline
-    def setInputFrame(value: VideoFrame): Self = StObject.set(x, "inputFrame", value.asInstanceOf[js.Any])
+    inline def setInputFrame(value: VideoFrame): Self = StObject.set(x, "inputFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFrame(value: VideoFrame): Self = StObject.set(x, "outputFrame", value.asInstanceOf[js.Any])
+    inline def setOutputFrame(value: VideoFrame): Self = StObject.set(x, "outputFrame", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait UiTooltipInitConfig extends StObject {
 }
 object UiTooltipInitConfig {
   
-  @scala.inline
-  def apply(preventAnimation: Boolean, tooltipClass: String): UiTooltipInitConfig = {
+  inline def apply(preventAnimation: Boolean, tooltipClass: String): UiTooltipInitConfig = {
     val __obj = js.Dynamic.literal(preventAnimation = preventAnimation.asInstanceOf[js.Any], tooltipClass = tooltipClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[UiTooltipInitConfig]
   }
   
-  @scala.inline
-  implicit class UiTooltipInitConfigMutableBuilder[Self <: UiTooltipInitConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UiTooltipInitConfig](x: Self) {
     
-    @scala.inline
-    def setPreventAnimation(value: Boolean): Self = StObject.set(x, "preventAnimation", value.asInstanceOf[js.Any])
+    inline def setPreventAnimation(value: Boolean): Self = StObject.set(x, "preventAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipClass(value: String): Self = StObject.set(x, "tooltipClass", value.asInstanceOf[js.Any])
+    inline def setTooltipClass(value: String): Self = StObject.set(x, "tooltipClass", value.asInstanceOf[js.Any])
   }
 }

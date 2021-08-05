@@ -23,11 +23,11 @@ object backoffretrierMod {
     
     def cancel(): Unit = js.native
     
-    var cleanRetrier: js.Any = js.native
+    /* private */ var cleanRetrier: js.Any = js.native
     
-    var createRetrier: js.Any = js.native
+    /* private */ var createRetrier: js.Any = js.native
     
-    var getRetryPolicy: js.Any = js.native
+    /* private */ var getRetryPolicy: js.Any = js.native
     
     def inProgress: Boolean = js.native
     
@@ -42,11 +42,11 @@ object backoffretrierMod {
       */
     def modifyBackoff(delay: Double): Unit = js.native
     
-    var newBackoff: js.Any = js.native
+    /* private */ var newBackoff: js.Any = js.native
     
-    val options: js.Any = js.native
+    /* private */ val options: js.Any = js.native
     
-    var retrier: js.Any = js.native
+    /* private */ var retrier: js.Any = js.native
     
     /**
       * Should be called once per attempt series to start retrier.
@@ -58,6 +58,6 @@ object backoffretrierMod {
       */
     def stop(): Unit = js.native
     
-    var usedBackoff: js.Any = js.native
+    /* private */ var usedBackoff: js.Any = js.native
   }
 }

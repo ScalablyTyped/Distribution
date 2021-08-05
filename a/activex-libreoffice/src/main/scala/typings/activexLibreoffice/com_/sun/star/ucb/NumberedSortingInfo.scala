@@ -20,19 +20,15 @@ trait NumberedSortingInfo extends StObject {
 }
 object NumberedSortingInfo {
   
-  @scala.inline
-  def apply(Ascending: Boolean, ColumnIndex: Double): NumberedSortingInfo = {
+  inline def apply(Ascending: Boolean, ColumnIndex: Double): NumberedSortingInfo = {
     val __obj = js.Dynamic.literal(Ascending = Ascending.asInstanceOf[js.Any], ColumnIndex = ColumnIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberedSortingInfo]
   }
   
-  @scala.inline
-  implicit class NumberedSortingInfoMutableBuilder[Self <: NumberedSortingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NumberedSortingInfo](x: Self) {
     
-    @scala.inline
-    def setAscending(value: Boolean): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: Boolean): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "ColumnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "ColumnIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object quadMod {
   
-  @scala.inline
-  def apply(quad: Quad): String = ^.asInstanceOf[js.Dynamic].apply(quad.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(quad: Quad): String = ^.asInstanceOf[js.Dynamic].apply(quad.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@rdfjs/to-ntriples/lib/quad", JSImport.Namespace)
   @js.native

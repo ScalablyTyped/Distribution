@@ -23,8 +23,7 @@ trait DERSequence
 }
 object DERSequence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendASN1Object: ASN1Object => Unit,
     asn1Array: js.Array[ASN1Object],
     getFreshValueHex: () => String,
@@ -34,10 +33,8 @@ object DERSequence {
     __obj.asInstanceOf[DERSequence]
   }
   
-  @scala.inline
-  implicit class DERSequenceMutableBuilder[Self <: DERSequence] (val x: Self) extends AnyVal {
+  extension [Self <: DERSequence](x: Self) {
     
-    @scala.inline
-    def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
+    inline def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
   }
 }

@@ -22,27 +22,21 @@ object tracedMod {
   val URI: /* "Traced" */ String = js.native
   type URI = /* "Traced" */ String
   
-  @scala.inline
-  def censor[P](f: js.Function1[/* p */ P, P]): js.Function1[/* wa */ Traced_[P, js.Any], Traced_[P, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("censor")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wa */ Traced_[P, js.Any], Traced_[P, js.Any]]]
+  inline def censor[P](f: js.Function1[/* p */ P, P]): js.Function1[/* wa */ Traced_[P, js.Any], Traced_[P, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("censor")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wa */ Traced_[P, js.Any], Traced_[P, js.Any]]]
   
-  @scala.inline
-  def getComonad[P](monoid: Monoid[P]): Comonad2C[typings.fpTs.tracedMod.URI, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComonad")(monoid.asInstanceOf[js.Any]).asInstanceOf[Comonad2C[typings.fpTs.tracedMod.URI, P]]
+  inline def getComonad[P](monoid: Monoid[P]): Comonad2C[typings.fpTs.tracedMod.URI, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComonad")(monoid.asInstanceOf[js.Any]).asInstanceOf[Comonad2C[typings.fpTs.tracedMod.URI, P]]
   
-  @scala.inline
-  def listen[P, A](wa: Traced_[P, A]): Traced_[P, js.Tuple2[A, P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(wa.asInstanceOf[js.Any]).asInstanceOf[Traced_[P, js.Tuple2[A, P]]]
+  inline def listen[P, A](wa: Traced_[P, A]): Traced_[P, js.Tuple2[A, P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(wa.asInstanceOf[js.Any]).asInstanceOf[Traced_[P, js.Tuple2[A, P]]]
   
-  @scala.inline
-  def listens[P, B](f: js.Function1[/* p */ P, B]): js.Function1[/* wa */ Traced_[P, js.Any], Traced_[P, js.Tuple2[js.Any, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listens")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wa */ Traced_[P, js.Any], Traced_[P, js.Tuple2[js.Any, B]]]]
+  inline def listens[P, B](f: js.Function1[/* p */ P, B]): js.Function1[/* wa */ Traced_[P, js.Any], Traced_[P, js.Tuple2[js.Any, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listens")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wa */ Traced_[P, js.Any], Traced_[P, js.Tuple2[js.Any, B]]]]
   
-  @scala.inline
-  def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Traced_[js.Any, A], Traced_[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Traced_[js.Any, A], Traced_[js.Any, B]]]
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Traced_[js.Any, A], Traced_[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Traced_[js.Any, A], Traced_[js.Any, B]]]
   
   @JSImport("fp-ts/lib/Traced", "traced")
   @js.native
   val traced: Functor2[typings.fpTs.tracedMod.URI] = js.native
   
-  @scala.inline
-  def tracks[P, A](M: Monoid[P], f: js.Function1[/* a */ A, P]): js.Function1[/* wa */ Traced_[P, A], A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tracks")(M.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* wa */ Traced_[P, A], A]]
+  inline def tracks[P, A](M: Monoid[P], f: js.Function1[/* a */ A, P]): js.Function1[/* wa */ Traced_[P, A], A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tracks")(M.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* wa */ Traced_[P, A], A]]
   
   object HKTAugmentingMod {
     

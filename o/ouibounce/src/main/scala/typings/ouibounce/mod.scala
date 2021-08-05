@@ -9,18 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Ouibounce = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Ouibounce]
-  @scala.inline
-  def apply(el: Null, custom_config: OuibounceConfig): Ouibounce = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], custom_config.asInstanceOf[js.Any])).asInstanceOf[Ouibounce]
-  @scala.inline
-  def apply(el: `false`): Ouibounce = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[Ouibounce]
-  @scala.inline
-  def apply(el: `false`, custom_config: OuibounceConfig): Ouibounce = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], custom_config.asInstanceOf[js.Any])).asInstanceOf[Ouibounce]
-  @scala.inline
-  def apply(el: Element): Ouibounce = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[Ouibounce]
-  @scala.inline
-  def apply(el: Element, custom_config: OuibounceConfig): Ouibounce = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], custom_config.asInstanceOf[js.Any])).asInstanceOf[Ouibounce]
+  inline def apply(): Ouibounce = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Ouibounce]
+  inline def apply(el: Null, custom_config: OuibounceConfig): Ouibounce = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], custom_config.asInstanceOf[js.Any])).asInstanceOf[Ouibounce]
+  inline def apply(el: `false`): Ouibounce = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[Ouibounce]
+  inline def apply(el: `false`, custom_config: OuibounceConfig): Ouibounce = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], custom_config.asInstanceOf[js.Any])).asInstanceOf[Ouibounce]
+  inline def apply(el: Element): Ouibounce = ^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any]).asInstanceOf[Ouibounce]
+  inline def apply(el: Element, custom_config: OuibounceConfig): Ouibounce = (^.asInstanceOf[js.Dynamic].apply(el.asInstanceOf[js.Any], custom_config.asInstanceOf[js.Any])).asInstanceOf[Ouibounce]
   
   @JSImport("ouibounce", JSImport.Namespace)
   @js.native
@@ -123,68 +117,48 @@ object mod {
   }
   object OuibounceConfig {
     
-    @scala.inline
-    def apply(): OuibounceConfig = {
+    inline def apply(): OuibounceConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OuibounceConfig]
     }
     
-    @scala.inline
-    implicit class OuibounceConfigMutableBuilder[Self <: OuibounceConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OuibounceConfig](x: Self) {
       
-      @scala.inline
-      def setAggressive(value: Boolean): Self = StObject.set(x, "aggressive", value.asInstanceOf[js.Any])
+      inline def setAggressive(value: Boolean): Self = StObject.set(x, "aggressive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggressiveUndefined: Self = StObject.set(x, "aggressive", js.undefined)
+      inline def setAggressiveUndefined: Self = StObject.set(x, "aggressive", js.undefined)
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
+      inline def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
+      inline def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
       
-      @scala.inline
-      def setCookieExpire(value: Double): Self = StObject.set(x, "cookieExpire", value.asInstanceOf[js.Any])
+      inline def setCookieExpire(value: Double): Self = StObject.set(x, "cookieExpire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieExpireUndefined: Self = StObject.set(x, "cookieExpire", js.undefined)
+      inline def setCookieExpireUndefined: Self = StObject.set(x, "cookieExpire", js.undefined)
       
-      @scala.inline
-      def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
+      inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
+      inline def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+      inline def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
+      inline def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
       
-      @scala.inline
-      def setSitewide(value: Boolean): Self = StObject.set(x, "sitewide", value.asInstanceOf[js.Any])
+      inline def setSitewide(value: Boolean): Self = StObject.set(x, "sitewide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSitewideUndefined: Self = StObject.set(x, "sitewide", js.undefined)
+      inline def setSitewideUndefined: Self = StObject.set(x, "sitewide", js.undefined)
       
-      @scala.inline
-      def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+      inline def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
+      inline def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
     }
   }
 }

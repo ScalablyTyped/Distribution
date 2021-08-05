@@ -13,16 +13,13 @@ trait PathMoveCommand
 }
 object PathMoveCommand {
   
-  @scala.inline
-  def apply(move: VectorOptions): PathMoveCommand = {
+  inline def apply(move: VectorOptions): PathMoveCommand = {
     val __obj = js.Dynamic.literal(move = move.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathMoveCommand]
   }
   
-  @scala.inline
-  implicit class PathMoveCommandMutableBuilder[Self <: PathMoveCommand] (val x: Self) extends AnyVal {
+  extension [Self <: PathMoveCommand](x: Self) {
     
-    @scala.inline
-    def setMove(value: VectorOptions): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    inline def setMove(value: VectorOptions): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
   }
 }

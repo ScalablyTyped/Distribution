@@ -17,19 +17,15 @@ trait InlineData
 }
 object InlineData {
   
-  @scala.inline
-  def apply(values: InlineDataset): InlineData = {
+  inline def apply(values: InlineDataset): InlineData = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineData]
   }
   
-  @scala.inline
-  implicit class InlineDataMutableBuilder[Self <: InlineData] (val x: Self) extends AnyVal {
+  extension [Self <: InlineData](x: Self) {
     
-    @scala.inline
-    def setValues(value: InlineDataset): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: InlineDataset): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: (Boolean | Double | js.Object | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (Boolean | Double | js.Object | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

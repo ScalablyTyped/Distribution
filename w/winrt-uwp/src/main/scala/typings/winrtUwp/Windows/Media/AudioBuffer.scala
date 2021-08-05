@@ -25,25 +25,19 @@ trait AudioBuffer extends StObject {
 }
 object AudioBuffer {
   
-  @scala.inline
-  def apply(capacity: Double, close: () => Unit, createReference: () => IMemoryBufferReference, length: Double): AudioBuffer = {
+  inline def apply(capacity: Double, close: () => Unit, createReference: () => IMemoryBufferReference, length: Double): AudioBuffer = {
     val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), createReference = js.Any.fromFunction0(createReference), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioBuffer]
   }
   
-  @scala.inline
-  implicit class AudioBufferMutableBuilder[Self <: AudioBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: AudioBuffer](x: Self) {
     
-    @scala.inline
-    def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateReference(value: () => IMemoryBufferReference): Self = StObject.set(x, "createReference", js.Any.fromFunction0(value))
+    inline def setCreateReference(value: () => IMemoryBufferReference): Self = StObject.set(x, "createReference", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

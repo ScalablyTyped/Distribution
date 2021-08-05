@@ -13,16 +13,13 @@ trait DescribeContinuousBackupsInput extends StObject {
 }
 object DescribeContinuousBackupsInput {
   
-  @scala.inline
-  def apply(TableName: TableName): DescribeContinuousBackupsInput = {
+  inline def apply(TableName: TableName): DescribeContinuousBackupsInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeContinuousBackupsInput]
   }
   
-  @scala.inline
-  implicit class DescribeContinuousBackupsInputMutableBuilder[Self <: DescribeContinuousBackupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContinuousBackupsInput](x: Self) {
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

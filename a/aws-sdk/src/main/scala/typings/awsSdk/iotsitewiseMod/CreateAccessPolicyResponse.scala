@@ -18,19 +18,15 @@ trait CreateAccessPolicyResponse extends StObject {
 }
 object CreateAccessPolicyResponse {
   
-  @scala.inline
-  def apply(accessPolicyArn: ARN, accessPolicyId: ID): CreateAccessPolicyResponse = {
+  inline def apply(accessPolicyArn: ARN, accessPolicyId: ID): CreateAccessPolicyResponse = {
     val __obj = js.Dynamic.literal(accessPolicyArn = accessPolicyArn.asInstanceOf[js.Any], accessPolicyId = accessPolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccessPolicyResponse]
   }
   
-  @scala.inline
-  implicit class CreateAccessPolicyResponseMutableBuilder[Self <: CreateAccessPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccessPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setAccessPolicyArn(value: ARN): Self = StObject.set(x, "accessPolicyArn", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyArn(value: ARN): Self = StObject.set(x, "accessPolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
   }
 }

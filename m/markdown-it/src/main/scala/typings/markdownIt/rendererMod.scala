@@ -127,86 +127,66 @@ object rendererMod {
   }
   object RenderRuleRecord {
     
-    @scala.inline
-    def apply(): RenderRuleRecord = {
+    inline def apply(): RenderRuleRecord = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderRuleRecord]
     }
     
-    @scala.inline
-    implicit class RenderRuleRecordMutableBuilder[Self <: RenderRuleRecord] (val x: Self) extends AnyVal {
+    extension [Self <: RenderRuleRecord](x: Self) {
       
-      @scala.inline
-      def setCode_block(
+      inline def setCode_block(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "code_block", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setCode_blockUndefined: Self = StObject.set(x, "code_block", js.undefined)
+      inline def setCode_blockUndefined: Self = StObject.set(x, "code_block", js.undefined)
       
-      @scala.inline
-      def setCode_inline(
+      inline def setCode_inline(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "code_inline", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setCode_inlineUndefined: Self = StObject.set(x, "code_inline", js.undefined)
+      inline def setCode_inlineUndefined: Self = StObject.set(x, "code_inline", js.undefined)
       
-      @scala.inline
-      def setFence(
+      inline def setFence(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "fence", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setFenceUndefined: Self = StObject.set(x, "fence", js.undefined)
+      inline def setFenceUndefined: Self = StObject.set(x, "fence", js.undefined)
       
-      @scala.inline
-      def setHardbreak(
+      inline def setHardbreak(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "hardbreak", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setHardbreakUndefined: Self = StObject.set(x, "hardbreak", js.undefined)
+      inline def setHardbreakUndefined: Self = StObject.set(x, "hardbreak", js.undefined)
       
-      @scala.inline
-      def setHtml_block(
+      inline def setHtml_block(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "html_block", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setHtml_blockUndefined: Self = StObject.set(x, "html_block", js.undefined)
+      inline def setHtml_blockUndefined: Self = StObject.set(x, "html_block", js.undefined)
       
-      @scala.inline
-      def setHtml_inline(
+      inline def setHtml_inline(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "html_inline", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setHtml_inlineUndefined: Self = StObject.set(x, "html_inline", js.undefined)
+      inline def setHtml_inlineUndefined: Self = StObject.set(x, "html_inline", js.undefined)
       
-      @scala.inline
-      def setImage(
+      inline def setImage(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "image", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setSoftbreak(
+      inline def setSoftbreak(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "softbreak", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setSoftbreakUndefined: Self = StObject.set(x, "softbreak", js.undefined)
+      inline def setSoftbreakUndefined: Self = StObject.set(x, "softbreak", js.undefined)
       
-      @scala.inline
-      def setText(
+      inline def setText(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "text", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -287,8 +267,7 @@ object rendererMod {
   }
   object Renderer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       render: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String,
       renderAttrs: typings.markdownIt.tokenMod.^ => String,
       renderInline: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String,
@@ -300,26 +279,19 @@ object rendererMod {
       __obj.asInstanceOf[Renderer]
     }
     
-    @scala.inline
-    implicit class RendererMutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
+    extension [Self <: Renderer](x: Self) {
       
-      @scala.inline
-      def setRender(value: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+      inline def setRender(value: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderAttrs(value: typings.markdownIt.tokenMod.^ => String): Self = StObject.set(x, "renderAttrs", js.Any.fromFunction1(value))
+      inline def setRenderAttrs(value: typings.markdownIt.tokenMod.^ => String): Self = StObject.set(x, "renderAttrs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderInline(value: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String): Self = StObject.set(x, "renderInline", js.Any.fromFunction3(value))
+      inline def setRenderInline(value: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String): Self = StObject.set(x, "renderInline", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderInlineAsText(value: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String): Self = StObject.set(x, "renderInlineAsText", js.Any.fromFunction3(value))
+      inline def setRenderInlineAsText(value: (js.Array[typings.markdownIt.tokenMod.^], Options, js.Any) => String): Self = StObject.set(x, "renderInlineAsText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderToken(value: (js.Array[typings.markdownIt.tokenMod.^], Double, Options) => String): Self = StObject.set(x, "renderToken", js.Any.fromFunction3(value))
+      inline def setRenderToken(value: (js.Array[typings.markdownIt.tokenMod.^], Double, Options) => String): Self = StObject.set(x, "renderToken", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRules(value: RenderRuleRecord): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: RenderRuleRecord): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     }
   }
 }

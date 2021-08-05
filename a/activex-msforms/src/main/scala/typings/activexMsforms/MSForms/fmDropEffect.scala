@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmDropEffect extends StObject
 object fmDropEffect {
   
-  @scala.inline
-  def fmDropEffectCopy: `1` = 1.asInstanceOf[`1`]
+  inline def fmDropEffectCopy: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmDropEffectCopyOrMove: `3` = 3.asInstanceOf[`3`]
+  inline def fmDropEffectCopyOrMove: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def fmDropEffectMove: `2` = 2.asInstanceOf[`2`]
+  inline def fmDropEffectMove: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmDropEffectNone: `0` = 0.asInstanceOf[`0`]
+  inline def fmDropEffectNone: `0` = 0.asInstanceOf[`0`]
 }

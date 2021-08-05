@@ -20,32 +20,24 @@ trait RelayWebhook extends StObject {
 }
 object RelayWebhook {
   
-  @scala.inline
-  def apply(`match`: Match, target: String): RelayWebhook = {
+  inline def apply(`match`: Match, target: String): RelayWebhook = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayWebhook]
   }
   
-  @scala.inline
-  implicit class RelayWebhookMutableBuilder[Self <: RelayWebhook] (val x: Self) extends AnyVal {
+  extension [Self <: RelayWebhook](x: Self) {
     
-    @scala.inline
-    def setAuth_token(value: String): Self = StObject.set(x, "auth_token", value.asInstanceOf[js.Any])
+    inline def setAuth_token(value: String): Self = StObject.set(x, "auth_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth_tokenUndefined: Self = StObject.set(x, "auth_token", js.undefined)
+    inline def setAuth_tokenUndefined: Self = StObject.set(x, "auth_token", js.undefined)
     
-    @scala.inline
-    def setMatch(value: Match): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: Match): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

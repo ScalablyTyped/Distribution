@@ -12,6 +12,5 @@ object downsampleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def downsample(pixels: js.Tuple2[Matrix, Matrix], options: Options): js.Tuple2[Matrix, Matrix] = (^.asInstanceOf[js.Dynamic].applyDynamic("downsample")(pixels.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Matrix, Matrix]]
+  inline def downsample(pixels: js.Tuple2[Matrix, Matrix], options: Options): js.Tuple2[Matrix, Matrix] = (^.asInstanceOf[js.Dynamic].applyDynamic("downsample")(pixels.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Matrix, Matrix]]
 }

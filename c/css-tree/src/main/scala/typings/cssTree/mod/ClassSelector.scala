@@ -17,20 +17,16 @@ trait ClassSelector
 }
 object ClassSelector {
   
-  @scala.inline
-  def apply(name: String): ClassSelector = {
+  inline def apply(name: String): ClassSelector = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassSelector")
     __obj.asInstanceOf[ClassSelector]
   }
   
-  @scala.inline
-  implicit class ClassSelectorMutableBuilder[Self <: ClassSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ClassSelector](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.ClassSelector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.ClassSelector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

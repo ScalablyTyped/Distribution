@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.CustomXMLPrefixMapping")
 @js.native
-class CustomXMLPrefixMapping protected ()
+/* private */ class CustomXMLPrefixMapping ()
   extends StObject
      with typings.activexOffice.Office.CustomXMLPrefixMapping {
   
@@ -19,7 +19,7 @@ class CustomXMLPrefixMapping protected ()
   /* CompleteClass */
   override val NamespaceURI: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.CustomXMLPrefixMapping_typekey")
   var OfficeDotCustomXMLPrefixMapping_typekey: typings.activexOffice.Office.CustomXMLPrefixMapping = js.native
   

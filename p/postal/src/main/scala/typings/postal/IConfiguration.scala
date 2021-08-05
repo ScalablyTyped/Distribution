@@ -14,22 +14,17 @@ trait IConfiguration extends StObject {
 }
 object IConfiguration {
   
-  @scala.inline
-  def apply(DEFAULT_CHANNEL: String, SYSTEM_CHANNEL: String, resolver: IResolver): IConfiguration = {
+  inline def apply(DEFAULT_CHANNEL: String, SYSTEM_CHANNEL: String, resolver: IResolver): IConfiguration = {
     val __obj = js.Dynamic.literal(DEFAULT_CHANNEL = DEFAULT_CHANNEL.asInstanceOf[js.Any], SYSTEM_CHANNEL = SYSTEM_CHANNEL.asInstanceOf[js.Any], resolver = resolver.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfiguration]
   }
   
-  @scala.inline
-  implicit class IConfigurationMutableBuilder[Self <: IConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: IConfiguration](x: Self) {
     
-    @scala.inline
-    def setDEFAULT_CHANNEL(value: String): Self = StObject.set(x, "DEFAULT_CHANNEL", value.asInstanceOf[js.Any])
+    inline def setDEFAULT_CHANNEL(value: String): Self = StObject.set(x, "DEFAULT_CHANNEL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+    inline def setResolver(value: IResolver): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSYSTEM_CHANNEL(value: String): Self = StObject.set(x, "SYSTEM_CHANNEL", value.asInstanceOf[js.Any])
+    inline def setSYSTEM_CHANNEL(value: String): Self = StObject.set(x, "SYSTEM_CHANNEL", value.asInstanceOf[js.Any])
   }
 }

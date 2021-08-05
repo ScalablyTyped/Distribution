@@ -25,32 +25,24 @@ object PhonegapPluginPush {
   }
   object CategoryAction {
     
-    @scala.inline
-    def apply(): CategoryAction = {
+    inline def apply(): CategoryAction = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CategoryAction]
     }
     
-    @scala.inline
-    implicit class CategoryActionMutableBuilder[Self <: CategoryAction] (val x: Self) extends AnyVal {
+    extension [Self <: CategoryAction](x: Self) {
       
-      @scala.inline
-      def setMaybe(value: CategoryActionData): Self = StObject.set(x, "maybe", value.asInstanceOf[js.Any])
+      inline def setMaybe(value: CategoryActionData): Self = StObject.set(x, "maybe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaybeUndefined: Self = StObject.set(x, "maybe", js.undefined)
+      inline def setMaybeUndefined: Self = StObject.set(x, "maybe", js.undefined)
       
-      @scala.inline
-      def setNo(value: CategoryActionData): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
+      inline def setNo(value: CategoryActionData): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoUndefined: Self = StObject.set(x, "no", js.undefined)
+      inline def setNoUndefined: Self = StObject.set(x, "no", js.undefined)
       
-      @scala.inline
-      def setYes(value: CategoryActionData): Self = StObject.set(x, "yes", value.asInstanceOf[js.Any])
+      inline def setYes(value: CategoryActionData): Self = StObject.set(x, "yes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYesUndefined: Self = StObject.set(x, "yes", js.undefined)
+      inline def setYesUndefined: Self = StObject.set(x, "yes", js.undefined)
     }
   }
   
@@ -66,26 +58,20 @@ object PhonegapPluginPush {
   }
   object CategoryActionData {
     
-    @scala.inline
-    def apply(callback: String, destructive: Boolean, foreground: Boolean, title: String): CategoryActionData = {
+    inline def apply(callback: String, destructive: Boolean, foreground: Boolean, title: String): CategoryActionData = {
       val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], destructive = destructive.asInstanceOf[js.Any], foreground = foreground.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[CategoryActionData]
     }
     
-    @scala.inline
-    implicit class CategoryActionDataMutableBuilder[Self <: CategoryActionData] (val x: Self) extends AnyVal {
+    extension [Self <: CategoryActionData](x: Self) {
       
-      @scala.inline
-      def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructive(value: Boolean): Self = StObject.set(x, "destructive", value.asInstanceOf[js.Any])
+      inline def setDestructive(value: Boolean): Self = StObject.set(x, "destructive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForeground(value: Boolean): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
+      inline def setForeground(value: Boolean): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,38 +111,28 @@ object PhonegapPluginPush {
   }
   object InitOptions {
     
-    @scala.inline
-    def apply(): InitOptions = {
+    inline def apply(): InitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitOptions]
     }
     
-    @scala.inline
-    implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitOptions](x: Self) {
       
-      @scala.inline
-      def setAndroid(value: ClearBadge): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(value: ClearBadge): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+      inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
       
-      @scala.inline
-      def setBrowser(value: ApplicationServerKey): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: ApplicationServerKey): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
       
-      @scala.inline
-      def setIos(value: Alert): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+      inline def setIos(value: Alert): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+      inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
       
-      @scala.inline
-      def setWindows(value: js.Object): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: js.Object): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
+      inline def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
     }
   }
   
@@ -190,44 +166,32 @@ object PhonegapPluginPush {
   }
   object NotificationEventAdditionalData {
     
-    @scala.inline
-    def apply(): NotificationEventAdditionalData = {
+    inline def apply(): NotificationEventAdditionalData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotificationEventAdditionalData]
     }
     
-    @scala.inline
-    implicit class NotificationEventAdditionalDataMutableBuilder[Self <: NotificationEventAdditionalData] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationEventAdditionalData](x: Self) {
       
-      @scala.inline
-      def setColdstart(value: Boolean): Self = StObject.set(x, "coldstart", value.asInstanceOf[js.Any])
+      inline def setColdstart(value: Boolean): Self = StObject.set(x, "coldstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColdstartUndefined: Self = StObject.set(x, "coldstart", js.undefined)
+      inline def setColdstartUndefined: Self = StObject.set(x, "coldstart", js.undefined)
       
-      @scala.inline
-      def setCollapse_key(value: String): Self = StObject.set(x, "collapse_key", value.asInstanceOf[js.Any])
+      inline def setCollapse_key(value: String): Self = StObject.set(x, "collapse_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapse_keyUndefined: Self = StObject.set(x, "collapse_key", js.undefined)
+      inline def setCollapse_keyUndefined: Self = StObject.set(x, "collapse_key", js.undefined)
       
-      @scala.inline
-      def setForeground(value: Boolean): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
+      inline def setForeground(value: Boolean): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
+      inline def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setNotId(value: String): Self = StObject.set(x, "notId", value.asInstanceOf[js.Any])
+      inline def setNotId(value: String): Self = StObject.set(x, "notId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotIdUndefined: Self = StObject.set(x, "notId", js.undefined)
+      inline def setNotIdUndefined: Self = StObject.set(x, "notId", js.undefined)
     }
   }
   
@@ -268,8 +232,7 @@ object PhonegapPluginPush {
   }
   object NotificationEventResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       additionalData: NotificationEventAdditionalData,
       count: String,
       image: String,
@@ -280,29 +243,21 @@ object PhonegapPluginPush {
       __obj.asInstanceOf[NotificationEventResponse]
     }
     
-    @scala.inline
-    implicit class NotificationEventResponseMutableBuilder[Self <: NotificationEventResponse] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationEventResponse](x: Self) {
       
-      @scala.inline
-      def setAdditionalData(value: NotificationEventAdditionalData): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+      inline def setAdditionalData(value: NotificationEventAdditionalData): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+      inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -449,25 +404,21 @@ object PhonegapPluginPush {
   }
   object RegistrationEventResponse {
     
-    @scala.inline
-    def apply(registrationId: String): RegistrationEventResponse = {
+    inline def apply(registrationId: String): RegistrationEventResponse = {
       val __obj = js.Dynamic.literal(registrationId = registrationId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegistrationEventResponse]
     }
     
-    @scala.inline
-    implicit class RegistrationEventResponseMutableBuilder[Self <: RegistrationEventResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RegistrationEventResponse](x: Self) {
       
-      @scala.inline
-      def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
+      inline def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     }
   }
   
   trait _EventResponse extends StObject
   object _EventResponse {
     
-    @scala.inline
-    def NotificationEventResponse(
+    inline def NotificationEventResponse(
       additionalData: NotificationEventAdditionalData,
       count: String,
       image: String,
@@ -478,8 +429,7 @@ object PhonegapPluginPush {
       __obj.asInstanceOf[typings.phonegapPluginPush.PhonegapPluginPush.NotificationEventResponse]
     }
     
-    @scala.inline
-    def RegistrationEventResponse(registrationId: String): typings.phonegapPluginPush.PhonegapPluginPush.RegistrationEventResponse = {
+    inline def RegistrationEventResponse(registrationId: String): typings.phonegapPluginPush.PhonegapPluginPush.RegistrationEventResponse = {
       val __obj = js.Dynamic.literal(registrationId = registrationId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.phonegapPluginPush.PhonegapPluginPush.RegistrationEventResponse]
     }

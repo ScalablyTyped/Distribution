@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MSWebViewPermissionState extends StObject
 object MSWebViewPermissionState {
   
-  @scala.inline
-  def allow: typings.std.stdStrings.allow = "allow".asInstanceOf[typings.std.stdStrings.allow]
+  inline def allow: typings.std.stdStrings.allow = "allow".asInstanceOf[typings.std.stdStrings.allow]
   
-  @scala.inline
-  def defer: typings.std.stdStrings.defer = "defer".asInstanceOf[typings.std.stdStrings.defer]
+  inline def defer: typings.std.stdStrings.defer = "defer".asInstanceOf[typings.std.stdStrings.defer]
   
-  @scala.inline
-  def deny: typings.std.stdStrings.deny = "deny".asInstanceOf[typings.std.stdStrings.deny]
+  inline def deny: typings.std.stdStrings.deny = "deny".asInstanceOf[typings.std.stdStrings.deny]
   
-  @scala.inline
-  def unknown: typings.std.stdStrings.unknown = "unknown".asInstanceOf[typings.std.stdStrings.unknown]
+  inline def unknown: typings.std.stdStrings.unknown = "unknown".asInstanceOf[typings.std.stdStrings.unknown]
 }

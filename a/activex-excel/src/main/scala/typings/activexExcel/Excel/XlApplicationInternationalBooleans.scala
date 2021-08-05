@@ -37,42 +37,29 @@ trait XlApplicationInternationalBooleans
      with XlApplicationInternational
 object XlApplicationInternationalBooleans {
   
-  @scala.inline
-  def xl24HourClock: `33` = 33.asInstanceOf[`33`]
+  inline def xl24HourClock: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def xl4DigitYears: `43` = 43.asInstanceOf[`43`]
+  inline def xl4DigitYears: `43` = 43.asInstanceOf[`43`]
   
-  @scala.inline
-  def xlCurrencyBefore: `37` = 37.asInstanceOf[`37`]
+  inline def xlCurrencyBefore: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def xlCurrencyLeadingZeros: `40` = 40.asInstanceOf[`40`]
+  inline def xlCurrencyLeadingZeros: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def xlCurrencyMinusSign: `38` = 38.asInstanceOf[`38`]
+  inline def xlCurrencyMinusSign: `38` = 38.asInstanceOf[`38`]
   
-  @scala.inline
-  def xlCurrencySpaceBefore: `36` = 36.asInstanceOf[`36`]
+  inline def xlCurrencySpaceBefore: `36` = 36.asInstanceOf[`36`]
   
-  @scala.inline
-  def xlCurrencyTrailingZeros: `39` = 39.asInstanceOf[`39`]
+  inline def xlCurrencyTrailingZeros: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def xlDayLeadingZero: `42` = 42.asInstanceOf[`42`]
+  inline def xlDayLeadingZero: `42` = 42.asInstanceOf[`42`]
   
-  @scala.inline
-  def xlMDY: `44` = 44.asInstanceOf[`44`]
+  inline def xlMDY: `44` = 44.asInstanceOf[`44`]
   
-  @scala.inline
-  def xlMetric: `35` = 35.asInstanceOf[`35`]
+  inline def xlMetric: `35` = 35.asInstanceOf[`35`]
   
-  @scala.inline
-  def xlMonthLeadingZero: `41` = 41.asInstanceOf[`41`]
+  inline def xlMonthLeadingZero: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def xlNonEnglishFunctions: `34` = 34.asInstanceOf[`34`]
+  inline def xlNonEnglishFunctions: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def xlTimeLeadingZero: `45` = 45.asInstanceOf[`45`]
+  inline def xlTimeLeadingZero: `45` = 45.asInstanceOf[`45`]
 }

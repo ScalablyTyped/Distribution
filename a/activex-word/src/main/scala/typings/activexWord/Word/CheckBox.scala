@@ -22,13 +22,12 @@ trait CheckBox extends StObject {
   
   var Value: Boolean
   
-  @JSName("Word.CheckBox_typekey")
+  /* private */ @JSName("Word.CheckBox_typekey")
   var WordDotCheckBox_typekey: CheckBox
 }
 object CheckBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     AutoSize: Boolean,
     Creator: Double,
@@ -44,34 +43,24 @@ object CheckBox {
     __obj.asInstanceOf[CheckBox]
   }
   
-  @scala.inline
-  implicit class CheckBoxMutableBuilder[Self <: CheckBox] (val x: Self) extends AnyVal {
+  extension [Self <: CheckBox](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
+    inline def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotCheckBox_typekey(value: CheckBox): Self = StObject.set(x, "Word.CheckBox_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCheckBox_typekey(value: CheckBox): Self = StObject.set(x, "Word.CheckBox_typekey", value.asInstanceOf[js.Any])
   }
 }

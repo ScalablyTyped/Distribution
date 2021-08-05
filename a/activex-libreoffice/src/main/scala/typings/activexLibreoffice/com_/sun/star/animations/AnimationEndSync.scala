@@ -19,16 +19,12 @@ object AnimationEndSync {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALL: `2` = 2.asInstanceOf[`2`]
+    inline def ALL: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def FIRST: `0` = 0.asInstanceOf[`0`]
+    inline def FIRST: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def LAST: `1` = 1.asInstanceOf[`1`]
+    inline def LAST: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def MEDIA: `3` = 3.asInstanceOf[`3`]
+    inline def MEDIA: `3` = 3.asInstanceOf[`3`]
   }
 }

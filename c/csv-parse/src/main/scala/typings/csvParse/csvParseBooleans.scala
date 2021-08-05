@@ -12,6 +12,5 @@ object csvParseBooleans {
     extends StObject
        with _ColumnOption
        with typings.csvParse.mod._ColumnOption
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

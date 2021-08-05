@@ -26,37 +26,27 @@ trait SslConfig extends StObject {
 }
 object SslConfig {
   
-  @scala.inline
-  def apply(): SslConfig = {
+  inline def apply(): SslConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SslConfig]
   }
   
-  @scala.inline
-  implicit class SslConfigMutableBuilder[Self <: SslConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SslConfig](x: Self) {
     
-    @scala.inline
-    def setCaCertificate(value: String): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
+    inline def setCaCertificate(value: String): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaCertificateUndefined: Self = StObject.set(x, "caCertificate", js.undefined)
+    inline def setCaCertificateUndefined: Self = StObject.set(x, "caCertificate", js.undefined)
     
-    @scala.inline
-    def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
+    inline def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
+    inline def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
     
-    @scala.inline
-    def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
+    inline def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
+    inline def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

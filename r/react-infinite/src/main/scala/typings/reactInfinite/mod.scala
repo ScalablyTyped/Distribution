@@ -18,8 +18,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def containerHeightScaleFactor(n: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("containerHeightScaleFactor")(n.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def containerHeightScaleFactor(n: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("containerHeightScaleFactor")(n.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @js.native
   trait Infinite
@@ -59,98 +58,68 @@ object mod {
   }
   object InfiniteProps {
     
-    @scala.inline
-    def apply(elementHeight: Double | js.Array[Double]): InfiniteProps = {
+    inline def apply(elementHeight: Double | js.Array[Double]): InfiniteProps = {
       val __obj = js.Dynamic.literal(elementHeight = elementHeight.asInstanceOf[js.Any])
       __obj.asInstanceOf[InfiniteProps]
     }
     
-    @scala.inline
-    implicit class InfinitePropsMutableBuilder[Self <: InfiniteProps] (val x: Self) extends AnyVal {
+    extension [Self <: InfiniteProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
+      inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerHeightUndefined: Self = StObject.set(x, "containerHeight", js.undefined)
+      inline def setContainerHeightUndefined: Self = StObject.set(x, "containerHeight", js.undefined)
       
-      @scala.inline
-      def setDisplayBottomUpwards(value: Boolean): Self = StObject.set(x, "displayBottomUpwards", value.asInstanceOf[js.Any])
+      inline def setDisplayBottomUpwards(value: Boolean): Self = StObject.set(x, "displayBottomUpwards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayBottomUpwardsUndefined: Self = StObject.set(x, "displayBottomUpwards", js.undefined)
+      inline def setDisplayBottomUpwardsUndefined: Self = StObject.set(x, "displayBottomUpwards", js.undefined)
       
-      @scala.inline
-      def setElementHeight(value: Double | js.Array[Double]): Self = StObject.set(x, "elementHeight", value.asInstanceOf[js.Any])
+      inline def setElementHeight(value: Double | js.Array[Double]): Self = StObject.set(x, "elementHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementHeightVarargs(value: Double*): Self = StObject.set(x, "elementHeight", js.Array(value :_*))
+      inline def setElementHeightVarargs(value: Double*): Self = StObject.set(x, "elementHeight", js.Array(value :_*))
       
-      @scala.inline
-      def setHandleScroll(value: /* node */ ReactElement => Unit): Self = StObject.set(x, "handleScroll", js.Any.fromFunction1(value))
+      inline def setHandleScroll(value: /* node */ ReactElement => Unit): Self = StObject.set(x, "handleScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleScrollUndefined: Self = StObject.set(x, "handleScroll", js.undefined)
+      inline def setHandleScrollUndefined: Self = StObject.set(x, "handleScroll", js.undefined)
       
-      @scala.inline
-      def setInfiniteLoadBeginBottomOffset(value: Double): Self = StObject.set(x, "infiniteLoadBeginBottomOffset", value.asInstanceOf[js.Any])
+      inline def setInfiniteLoadBeginBottomOffset(value: Double): Self = StObject.set(x, "infiniteLoadBeginBottomOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfiniteLoadBeginBottomOffsetUndefined: Self = StObject.set(x, "infiniteLoadBeginBottomOffset", js.undefined)
+      inline def setInfiniteLoadBeginBottomOffsetUndefined: Self = StObject.set(x, "infiniteLoadBeginBottomOffset", js.undefined)
       
-      @scala.inline
-      def setInfiniteLoadBeginEdgeOffset(value: Double): Self = StObject.set(x, "infiniteLoadBeginEdgeOffset", value.asInstanceOf[js.Any])
+      inline def setInfiniteLoadBeginEdgeOffset(value: Double): Self = StObject.set(x, "infiniteLoadBeginEdgeOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfiniteLoadBeginEdgeOffsetUndefined: Self = StObject.set(x, "infiniteLoadBeginEdgeOffset", js.undefined)
+      inline def setInfiniteLoadBeginEdgeOffsetUndefined: Self = StObject.set(x, "infiniteLoadBeginEdgeOffset", js.undefined)
       
-      @scala.inline
-      def setIsInfiniteLoading(value: Boolean): Self = StObject.set(x, "isInfiniteLoading", value.asInstanceOf[js.Any])
+      inline def setIsInfiniteLoading(value: Boolean): Self = StObject.set(x, "isInfiniteLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInfiniteLoadingUndefined: Self = StObject.set(x, "isInfiniteLoading", js.undefined)
+      inline def setIsInfiniteLoadingUndefined: Self = StObject.set(x, "isInfiniteLoading", js.undefined)
       
-      @scala.inline
-      def setLoadingSpinnerDelegate(value: ReactElement): Self = StObject.set(x, "loadingSpinnerDelegate", value.asInstanceOf[js.Any])
+      inline def setLoadingSpinnerDelegate(value: ReactElement): Self = StObject.set(x, "loadingSpinnerDelegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingSpinnerDelegateUndefined: Self = StObject.set(x, "loadingSpinnerDelegate", js.undefined)
+      inline def setLoadingSpinnerDelegateUndefined: Self = StObject.set(x, "loadingSpinnerDelegate", js.undefined)
       
-      @scala.inline
-      def setOnInfiniteLoad(value: () => Unit): Self = StObject.set(x, "onInfiniteLoad", js.Any.fromFunction0(value))
+      inline def setOnInfiniteLoad(value: () => Unit): Self = StObject.set(x, "onInfiniteLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnInfiniteLoadUndefined: Self = StObject.set(x, "onInfiniteLoad", js.undefined)
+      inline def setOnInfiniteLoadUndefined: Self = StObject.set(x, "onInfiniteLoad", js.undefined)
       
-      @scala.inline
-      def setPreloadAdditionalHeight(value: Double | js.Object): Self = StObject.set(x, "preloadAdditionalHeight", value.asInstanceOf[js.Any])
+      inline def setPreloadAdditionalHeight(value: Double | js.Object): Self = StObject.set(x, "preloadAdditionalHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadAdditionalHeightUndefined: Self = StObject.set(x, "preloadAdditionalHeight", js.undefined)
+      inline def setPreloadAdditionalHeightUndefined: Self = StObject.set(x, "preloadAdditionalHeight", js.undefined)
       
-      @scala.inline
-      def setPreloadBatchSize(value: Double | js.Object): Self = StObject.set(x, "preloadBatchSize", value.asInstanceOf[js.Any])
+      inline def setPreloadBatchSize(value: Double | js.Object): Self = StObject.set(x, "preloadBatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadBatchSizeUndefined: Self = StObject.set(x, "preloadBatchSize", js.undefined)
+      inline def setPreloadBatchSizeUndefined: Self = StObject.set(x, "preloadBatchSize", js.undefined)
       
-      @scala.inline
-      def setTimeScrollStateLastsForAfterUserScrolls(value: Double): Self = StObject.set(x, "timeScrollStateLastsForAfterUserScrolls", value.asInstanceOf[js.Any])
+      inline def setTimeScrollStateLastsForAfterUserScrolls(value: Double): Self = StObject.set(x, "timeScrollStateLastsForAfterUserScrolls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeScrollStateLastsForAfterUserScrollsUndefined: Self = StObject.set(x, "timeScrollStateLastsForAfterUserScrolls", js.undefined)
+      inline def setTimeScrollStateLastsForAfterUserScrollsUndefined: Self = StObject.set(x, "timeScrollStateLastsForAfterUserScrolls", js.undefined)
       
-      @scala.inline
-      def setUseWindowAsScrollContainer(value: Boolean): Self = StObject.set(x, "useWindowAsScrollContainer", value.asInstanceOf[js.Any])
+      inline def setUseWindowAsScrollContainer(value: Boolean): Self = StObject.set(x, "useWindowAsScrollContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseWindowAsScrollContainerUndefined: Self = StObject.set(x, "useWindowAsScrollContainer", js.undefined)
+      inline def setUseWindowAsScrollContainerUndefined: Self = StObject.set(x, "useWindowAsScrollContainer", js.undefined)
     }
   }
 }

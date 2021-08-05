@@ -10,10 +10,8 @@ object infiniteMod {
   /**
     * Create an unending stream by repeatedly calling a generator function (by default, `Math.random`).
     */
-  @scala.inline
-  def apply[T](): Source[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Source[T]]
-  @scala.inline
-  def apply[T](generator: js.Function0[T]): Source[T] = ^.asInstanceOf[js.Dynamic].apply(generator.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
+  inline def apply[T](): Source[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Source[T]]
+  inline def apply[T](generator: js.Function0[T]): Source[T] = ^.asInstanceOf[js.Dynamic].apply(generator.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
   
   @JSImport("pull-stream/sources/infinite", JSImport.Namespace)
   @js.native

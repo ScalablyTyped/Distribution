@@ -8,11 +8,9 @@ object reactNavigationNativeStrings {
   
   @js.native
   sealed trait link extends StObject
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait popstate extends StObject
-  @scala.inline
-  def popstate: popstate = "popstate".asInstanceOf[popstate]
+  inline def popstate: popstate = "popstate".asInstanceOf[popstate]
 }

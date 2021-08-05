@@ -57,8 +57,7 @@ object Game {
   }
   object SFSGameSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       events: RoomEvents,
       `extension`: RoomExtension,
       groupId: String,
@@ -86,44 +85,31 @@ object Game {
       __obj.asInstanceOf[SFSGameSettings]
     }
     
-    @scala.inline
-    implicit class SFSGameSettingsMutableBuilder[Self <: SFSGameSettings] (val x: Self) extends AnyVal {
+    extension [Self <: SFSGameSettings](x: Self) {
       
-      @scala.inline
-      def setInvitationExpiryTime(value: Double): Self = StObject.set(x, "invitationExpiryTime", value.asInstanceOf[js.Any])
+      inline def setInvitationExpiryTime(value: Double): Self = StObject.set(x, "invitationExpiryTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvitiationParams(value: js.Object): Self = StObject.set(x, "invitiationParams", value.asInstanceOf[js.Any])
+      inline def setInvitiationParams(value: js.Object): Self = StObject.set(x, "invitiationParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvitiedPlayers(value: js.Array[SFSUser]): Self = StObject.set(x, "invitiedPlayers", value.asInstanceOf[js.Any])
+      inline def setInvitiedPlayers(value: js.Array[SFSUser]): Self = StObject.set(x, "invitiedPlayers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvitiedPlayersVarargs(value: SFSUser*): Self = StObject.set(x, "invitiedPlayers", js.Array(value :_*))
+      inline def setInvitiedPlayersVarargs(value: SFSUser*): Self = StObject.set(x, "invitiedPlayers", js.Array(value :_*))
       
-      @scala.inline
-      def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
+      inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeaveLastJoinedRoom(value: Boolean): Self = StObject.set(x, "leaveLastJoinedRoom", value.asInstanceOf[js.Any])
+      inline def setLeaveLastJoinedRoom(value: Boolean): Self = StObject.set(x, "leaveLastJoinedRoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPlayersToStartGame(value: Double): Self = StObject.set(x, "minPlayersToStartGame", value.asInstanceOf[js.Any])
+      inline def setMinPlayersToStartGame(value: Double): Self = StObject.set(x, "minPlayersToStartGame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifyGameStarted(value: Boolean): Self = StObject.set(x, "notifyGameStarted", value.asInstanceOf[js.Any])
+      inline def setNotifyGameStarted(value: Boolean): Self = StObject.set(x, "notifyGameStarted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayerMatchExpression(value: MatchExpression): Self = StObject.set(x, "playerMatchExpression", value.asInstanceOf[js.Any])
+      inline def setPlayerMatchExpression(value: MatchExpression): Self = StObject.set(x, "playerMatchExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerachableRooms(value: js.Array[String]): Self = StObject.set(x, "serachableRooms", value.asInstanceOf[js.Any])
+      inline def setSerachableRooms(value: js.Array[String]): Self = StObject.set(x, "serachableRooms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerachableRoomsVarargs(value: String*): Self = StObject.set(x, "serachableRooms", js.Array(value :_*))
+      inline def setSerachableRoomsVarargs(value: String*): Self = StObject.set(x, "serachableRooms", js.Array(value :_*))
       
-      @scala.inline
-      def setSpectatorMatchExpression(value: MatchExpression): Self = StObject.set(x, "spectatorMatchExpression", value.asInstanceOf[js.Any])
+      inline def setSpectatorMatchExpression(value: MatchExpression): Self = StObject.set(x, "spectatorMatchExpression", value.asInstanceOf[js.Any])
     }
   }
 }

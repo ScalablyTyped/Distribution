@@ -12,19 +12,15 @@ trait GroupId extends StObject {
 }
 object GroupId {
   
-  @scala.inline
-  def apply(groupId: String, open: Boolean): GroupId = {
+  inline def apply(groupId: String, open: Boolean): GroupId = {
     val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupId]
   }
   
-  @scala.inline
-  implicit class GroupIdMutableBuilder[Self <: GroupId] (val x: Self) extends AnyVal {
+  extension [Self <: GroupId](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

@@ -27,8 +27,7 @@ object resizeObserverTypesMod {
   }
   object IDOMRectReadOnly {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: Double,
       height: Double,
       left: Double,
@@ -42,32 +41,23 @@ object resizeObserverTypesMod {
       __obj.asInstanceOf[IDOMRectReadOnly]
     }
     
-    @scala.inline
-    implicit class IDOMRectReadOnlyMutableBuilder[Self <: IDOMRectReadOnly] (val x: Self) extends AnyVal {
+    extension [Self <: IDOMRectReadOnly](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,20 +71,16 @@ object resizeObserverTypesMod {
   }
   object IResizeEntry {
     
-    @scala.inline
-    def apply(contentRect: IDOMRectReadOnly, target: Element): IResizeEntry = {
+    inline def apply(contentRect: IDOMRectReadOnly, target: Element): IResizeEntry = {
       val __obj = js.Dynamic.literal(contentRect = contentRect.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResizeEntry]
     }
     
-    @scala.inline
-    implicit class IResizeEntryMutableBuilder[Self <: IResizeEntry] (val x: Self) extends AnyVal {
+    extension [Self <: IResizeEntry](x: Self) {
       
-      @scala.inline
-      def setContentRect(value: IDOMRectReadOnly): Self = StObject.set(x, "contentRect", value.asInstanceOf[js.Any])
+      inline def setContentRect(value: IDOMRectReadOnly): Self = StObject.set(x, "contentRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

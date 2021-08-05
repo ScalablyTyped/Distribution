@@ -10,8 +10,7 @@ trait QueryOutput
      with typings.awsSdkClientDynamodbBrowser.typesQueryOutputMod.QueryOutput
 object QueryOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): QueryOutput = {
+  inline def apply($metadata: ResponseMetadata): QueryOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOutput]
   }

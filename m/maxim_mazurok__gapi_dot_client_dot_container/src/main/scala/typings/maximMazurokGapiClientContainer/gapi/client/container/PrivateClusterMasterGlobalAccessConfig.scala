@@ -11,19 +11,15 @@ trait PrivateClusterMasterGlobalAccessConfig extends StObject {
 }
 object PrivateClusterMasterGlobalAccessConfig {
   
-  @scala.inline
-  def apply(): PrivateClusterMasterGlobalAccessConfig = {
+  inline def apply(): PrivateClusterMasterGlobalAccessConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrivateClusterMasterGlobalAccessConfig]
   }
   
-  @scala.inline
-  implicit class PrivateClusterMasterGlobalAccessConfigMutableBuilder[Self <: PrivateClusterMasterGlobalAccessConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PrivateClusterMasterGlobalAccessConfig](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

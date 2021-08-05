@@ -22,25 +22,19 @@ trait RuntimeClassStrategyOptions extends StObject {
 }
 object RuntimeClassStrategyOptions {
   
-  @scala.inline
-  def apply(allowedRuntimeClassNames: Input[js.Array[Input[String]]]): RuntimeClassStrategyOptions = {
+  inline def apply(allowedRuntimeClassNames: Input[js.Array[Input[String]]]): RuntimeClassStrategyOptions = {
     val __obj = js.Dynamic.literal(allowedRuntimeClassNames = allowedRuntimeClassNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuntimeClassStrategyOptions]
   }
   
-  @scala.inline
-  implicit class RuntimeClassStrategyOptionsMutableBuilder[Self <: RuntimeClassStrategyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimeClassStrategyOptions](x: Self) {
     
-    @scala.inline
-    def setAllowedRuntimeClassNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedRuntimeClassNames", value.asInstanceOf[js.Any])
+    inline def setAllowedRuntimeClassNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedRuntimeClassNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedRuntimeClassNamesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedRuntimeClassNames", js.Array(value :_*))
+    inline def setAllowedRuntimeClassNamesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedRuntimeClassNames", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultRuntimeClassName(value: Input[String]): Self = StObject.set(x, "defaultRuntimeClassName", value.asInstanceOf[js.Any])
+    inline def setDefaultRuntimeClassName(value: Input[String]): Self = StObject.set(x, "defaultRuntimeClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRuntimeClassNameUndefined: Self = StObject.set(x, "defaultRuntimeClassName", js.undefined)
+    inline def setDefaultRuntimeClassNameUndefined: Self = StObject.set(x, "defaultRuntimeClassName", js.undefined)
   }
 }

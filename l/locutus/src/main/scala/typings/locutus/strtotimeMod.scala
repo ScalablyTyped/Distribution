@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strtotimeMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(text: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(text: js.Any, now: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(text: Unit, now: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(text: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(text: js.Any, now: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(text: Unit, now: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/datetime/strtotime", JSImport.Namespace)
   @js.native

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CellEditClickMode extends StObject
 object CellEditClickMode {
   
-  @scala.inline
-  def click: typings.reactBootstrapTable.reactBootstrapTableStrings.click = "click".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.click]
+  inline def click: typings.reactBootstrapTable.reactBootstrapTableStrings.click = "click".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.click]
   
-  @scala.inline
-  def dbclick: typings.reactBootstrapTable.reactBootstrapTableStrings.dbclick = "dbclick".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.dbclick]
+  inline def dbclick: typings.reactBootstrapTable.reactBootstrapTableStrings.dbclick = "dbclick".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.dbclick]
   
-  @scala.inline
-  def none: typings.reactBootstrapTable.reactBootstrapTableStrings.none = "none".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.none]
+  inline def none: typings.reactBootstrapTable.reactBootstrapTableStrings.none = "none".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.none]
 }

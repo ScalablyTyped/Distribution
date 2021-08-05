@@ -26,8 +26,7 @@ object agreeItemNativeMod {
     @JSImport("antd-mobile-rn/lib/checkbox/AgreeItem.native", "default.defaultProps")
     @js.native
     def defaultProps: Styles = js.native
-    @scala.inline
-    def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -49,38 +48,28 @@ object agreeItemNativeMod {
   }
   object AgreeItemNativeProps {
     
-    @scala.inline
-    def apply(): AgreeItemNativeProps = {
+    inline def apply(): AgreeItemNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AgreeItemNativeProps]
     }
     
-    @scala.inline
-    implicit class AgreeItemNativePropsMutableBuilder[Self <: AgreeItemNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: AgreeItemNativeProps](x: Self) {
       
-      @scala.inline
-      def setCheckboxStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "checkboxStyle", value.asInstanceOf[js.Any])
+      inline def setCheckboxStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "checkboxStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckboxStyleNull: Self = StObject.set(x, "checkboxStyle", null)
+      inline def setCheckboxStyleNull: Self = StObject.set(x, "checkboxStyle", null)
       
-      @scala.inline
-      def setCheckboxStyleUndefined: Self = StObject.set(x, "checkboxStyle", js.undefined)
+      inline def setCheckboxStyleUndefined: Self = StObject.set(x, "checkboxStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: ICheckboxStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: ICheckboxStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

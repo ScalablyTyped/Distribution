@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(position: Double): js.Any = ^.asInstanceOf[js.Dynamic].apply(position.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(position: Double): js.Any = ^.asInstanceOf[js.Dynamic].apply(position.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("get-caller-file", JSImport.Namespace)
   @js.native

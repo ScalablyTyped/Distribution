@@ -15,12 +15,10 @@ object proxy {
   @JSImport("sinon-chrome", "proxy.onProxyError")
   @js.native
   def onProxyError: Event = js.native
-  @scala.inline
-  def onProxyError_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onProxyError")(x.asInstanceOf[js.Any])
+  inline def onProxyError_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onProxyError")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "proxy.settings")
   @js.native
   def settings: StubbedChromeSetting = js.native
-  @scala.inline
-  def settings_=(x: StubbedChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
+  inline def settings_=(x: StubbedChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
 }

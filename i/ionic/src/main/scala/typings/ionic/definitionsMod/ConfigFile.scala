@@ -60,127 +60,87 @@ trait ConfigFile extends StObject {
 }
 object ConfigFile {
   
-  @scala.inline
-  def apply(npmClient: NpmClient, telemetry: Boolean, version: String): ConfigFile = {
+  inline def apply(npmClient: NpmClient, telemetry: Boolean, version: String): ConfigFile = {
     val __obj = js.Dynamic.literal(npmClient = npmClient.asInstanceOf[js.Any], telemetry = telemetry.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigFile]
   }
   
-  @scala.inline
-  implicit class ConfigFileMutableBuilder[Self <: ConfigFile] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigFile](x: Self) {
     
-    @scala.inline
-    def `setFeaturesDotssl-commands`(value: Boolean): Self = StObject.set(x, "features.ssl-commands", value.asInstanceOf[js.Any])
+    inline def `setFeaturesDotssl-commands`(value: Boolean): Self = StObject.set(x, "features.ssl-commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFeaturesDotssl-commandsUndefined`: Self = StObject.set(x, "features.ssl-commands", js.undefined)
+    inline def `setFeaturesDotssl-commandsUndefined`: Self = StObject.set(x, "features.ssl-commands", js.undefined)
     
-    @scala.inline
-    def setGitDothost(value: String): Self = StObject.set(x, "git.host", value.asInstanceOf[js.Any])
+    inline def setGitDothost(value: String): Self = StObject.set(x, "git.host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitDothostUndefined: Self = StObject.set(x, "git.host", js.undefined)
+    inline def setGitDothostUndefined: Self = StObject.set(x, "git.host", js.undefined)
     
-    @scala.inline
-    def setGitDotport(value: Double): Self = StObject.set(x, "git.port", value.asInstanceOf[js.Any])
+    inline def setGitDotport(value: Double): Self = StObject.set(x, "git.port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitDotportUndefined: Self = StObject.set(x, "git.port", js.undefined)
+    inline def setGitDotportUndefined: Self = StObject.set(x, "git.port", js.undefined)
     
-    @scala.inline
-    def setGitDotsetup(value: Boolean): Self = StObject.set(x, "git.setup", value.asInstanceOf[js.Any])
+    inline def setGitDotsetup(value: Boolean): Self = StObject.set(x, "git.setup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitDotsetupUndefined: Self = StObject.set(x, "git.setup", js.undefined)
+    inline def setGitDotsetupUndefined: Self = StObject.set(x, "git.setup", js.undefined)
     
-    @scala.inline
-    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
-    @scala.inline
-    def setNpmClient(value: NpmClient): Self = StObject.set(x, "npmClient", value.asInstanceOf[js.Any])
+    inline def setNpmClient(value: NpmClient): Self = StObject.set(x, "npmClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgDotid(value: String): Self = StObject.set(x, "org.id", value.asInstanceOf[js.Any])
+    inline def setOrgDotid(value: String): Self = StObject.set(x, "org.id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgDotidUndefined: Self = StObject.set(x, "org.id", js.undefined)
+    inline def setOrgDotidUndefined: Self = StObject.set(x, "org.id", js.undefined)
     
-    @scala.inline
-    def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setSslDotcafile(value: String | js.Array[String]): Self = StObject.set(x, "ssl.cafile", value.asInstanceOf[js.Any])
+    inline def setSslDotcafile(value: String | js.Array[String]): Self = StObject.set(x, "ssl.cafile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslDotcafileUndefined: Self = StObject.set(x, "ssl.cafile", js.undefined)
+    inline def setSslDotcafileUndefined: Self = StObject.set(x, "ssl.cafile", js.undefined)
     
-    @scala.inline
-    def setSslDotcafileVarargs(value: String*): Self = StObject.set(x, "ssl.cafile", js.Array(value :_*))
+    inline def setSslDotcafileVarargs(value: String*): Self = StObject.set(x, "ssl.cafile", js.Array(value :_*))
     
-    @scala.inline
-    def setSslDotcertfile(value: String | js.Array[String]): Self = StObject.set(x, "ssl.certfile", value.asInstanceOf[js.Any])
+    inline def setSslDotcertfile(value: String | js.Array[String]): Self = StObject.set(x, "ssl.certfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslDotcertfileUndefined: Self = StObject.set(x, "ssl.certfile", js.undefined)
+    inline def setSslDotcertfileUndefined: Self = StObject.set(x, "ssl.certfile", js.undefined)
     
-    @scala.inline
-    def setSslDotcertfileVarargs(value: String*): Self = StObject.set(x, "ssl.certfile", js.Array(value :_*))
+    inline def setSslDotcertfileVarargs(value: String*): Self = StObject.set(x, "ssl.certfile", js.Array(value :_*))
     
-    @scala.inline
-    def setSslDotkeyfile(value: String | js.Array[String]): Self = StObject.set(x, "ssl.keyfile", value.asInstanceOf[js.Any])
+    inline def setSslDotkeyfile(value: String | js.Array[String]): Self = StObject.set(x, "ssl.keyfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslDotkeyfileUndefined: Self = StObject.set(x, "ssl.keyfile", js.undefined)
+    inline def setSslDotkeyfileUndefined: Self = StObject.set(x, "ssl.keyfile", js.undefined)
     
-    @scala.inline
-    def setSslDotkeyfileVarargs(value: String*): Self = StObject.set(x, "ssl.keyfile", js.Array(value :_*))
+    inline def setSslDotkeyfileVarargs(value: String*): Self = StObject.set(x, "ssl.keyfile", js.Array(value :_*))
     
-    @scala.inline
-    def setTelemetry(value: Boolean): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
+    inline def setTelemetry(value: Boolean): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensDottelemetry(value: String): Self = StObject.set(x, "tokens.telemetry", value.asInstanceOf[js.Any])
+    inline def setTokensDottelemetry(value: String): Self = StObject.set(x, "tokens.telemetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensDottelemetryUndefined: Self = StObject.set(x, "tokens.telemetry", js.undefined)
+    inline def setTokensDottelemetryUndefined: Self = StObject.set(x, "tokens.telemetry", js.undefined)
     
-    @scala.inline
-    def setTokensDotuser(value: String): Self = StObject.set(x, "tokens.user", value.asInstanceOf[js.Any])
+    inline def setTokensDotuser(value: String): Self = StObject.set(x, "tokens.user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensDotuserUndefined: Self = StObject.set(x, "tokens.user", js.undefined)
+    inline def setTokensDotuserUndefined: Self = StObject.set(x, "tokens.user", js.undefined)
     
-    @scala.inline
-    def setUrlsDotapi(value: String): Self = StObject.set(x, "urls.api", value.asInstanceOf[js.Any])
+    inline def setUrlsDotapi(value: String): Self = StObject.set(x, "urls.api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsDotapiUndefined: Self = StObject.set(x, "urls.api", js.undefined)
+    inline def setUrlsDotapiUndefined: Self = StObject.set(x, "urls.api", js.undefined)
     
-    @scala.inline
-    def setUrlsDotdash(value: String): Self = StObject.set(x, "urls.dash", value.asInstanceOf[js.Any])
+    inline def setUrlsDotdash(value: String): Self = StObject.set(x, "urls.dash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsDotdashUndefined: Self = StObject.set(x, "urls.dash", js.undefined)
+    inline def setUrlsDotdashUndefined: Self = StObject.set(x, "urls.dash", js.undefined)
     
-    @scala.inline
-    def setUserDotemail(value: String): Self = StObject.set(x, "user.email", value.asInstanceOf[js.Any])
+    inline def setUserDotemail(value: String): Self = StObject.set(x, "user.email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDotemailUndefined: Self = StObject.set(x, "user.email", js.undefined)
+    inline def setUserDotemailUndefined: Self = StObject.set(x, "user.email", js.undefined)
     
-    @scala.inline
-    def setUserDotid(value: Double): Self = StObject.set(x, "user.id", value.asInstanceOf[js.Any])
+    inline def setUserDotid(value: Double): Self = StObject.set(x, "user.id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDotidUndefined: Self = StObject.set(x, "user.id", js.undefined)
+    inline def setUserDotidUndefined: Self = StObject.set(x, "user.id", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

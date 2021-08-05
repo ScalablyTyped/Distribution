@@ -10,12 +10,9 @@ object sortMod {
   /**
     * Sorts an array of semver entries in ascending order using `compareBuild()`.
     */
-  @scala.inline
-  def apply[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def apply[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T], optionsOrLoose: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(list.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  @scala.inline
-  def apply[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T], optionsOrLoose: Options): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(list.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def apply[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def apply[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T], optionsOrLoose: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(list.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def apply[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T], optionsOrLoose: Options): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(list.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   @JSImport("semver/functions/sort", JSImport.Namespace)
   @js.native

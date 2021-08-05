@@ -18,16 +18,13 @@ trait CircleGridCfg
 }
 object CircleGridCfg {
   
-  @scala.inline
-  def apply(center: Point, container: IGroup, items: js.Array[GridItem]): CircleGridCfg = {
+  inline def apply(center: Point, container: IGroup, items: js.Array[GridItem]): CircleGridCfg = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleGridCfg]
   }
   
-  @scala.inline
-  implicit class CircleGridCfgMutableBuilder[Self <: CircleGridCfg] (val x: Self) extends AnyVal {
+  extension [Self <: CircleGridCfg](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
   }
 }

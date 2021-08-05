@@ -12,19 +12,15 @@ trait CanvasState extends StObject {
 }
 object CanvasState {
   
-  @scala.inline
-  def apply(restore: () => Unit, save: () => Unit): CanvasState = {
+  inline def apply(restore: () => Unit, save: () => Unit): CanvasState = {
     val __obj = js.Dynamic.literal(restore = js.Any.fromFunction0(restore), save = js.Any.fromFunction0(save))
     __obj.asInstanceOf[CanvasState]
   }
   
-  @scala.inline
-  implicit class CanvasStateMutableBuilder[Self <: CanvasState] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasState](x: Self) {
     
-    @scala.inline
-    def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+    inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
   }
 }

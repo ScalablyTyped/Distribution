@@ -11,16 +11,13 @@ trait MediaQueryObserverObserveCallbackResult extends StObject {
 }
 object MediaQueryObserverObserveCallbackResult {
   
-  @scala.inline
-  def apply(matches: Boolean): MediaQueryObserverObserveCallbackResult = {
+  inline def apply(matches: Boolean): MediaQueryObserverObserveCallbackResult = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaQueryObserverObserveCallbackResult]
   }
   
-  @scala.inline
-  implicit class MediaQueryObserverObserveCallbackResultMutableBuilder[Self <: MediaQueryObserverObserveCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: MediaQueryObserverObserveCallbackResult](x: Self) {
     
-    @scala.inline
-    def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
   }
 }

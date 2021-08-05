@@ -37,27 +37,21 @@ object userScripts {
   }
   object OnBeforeScriptUserScript {
     
-    @scala.inline
-    def apply(defineGlobals: js.Object => Unit, `export`: js.Any => js.Any, global: js.Any, metadata: js.Any): OnBeforeScriptUserScript = {
+    inline def apply(defineGlobals: js.Object => Unit, `export`: js.Any => js.Any, global: js.Any, metadata: js.Any): OnBeforeScriptUserScript = {
       val __obj = js.Dynamic.literal(defineGlobals = js.Any.fromFunction1(defineGlobals), global = global.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
       __obj.updateDynamic("export")(js.Any.fromFunction1(`export`))
       __obj.asInstanceOf[OnBeforeScriptUserScript]
     }
     
-    @scala.inline
-    implicit class OnBeforeScriptUserScriptMutableBuilder[Self <: OnBeforeScriptUserScript] (val x: Self) extends AnyVal {
+    extension [Self <: OnBeforeScriptUserScript](x: Self) {
       
-      @scala.inline
-      def setDefineGlobals(value: js.Object => Unit): Self = StObject.set(x, "defineGlobals", js.Any.fromFunction1(value))
+      inline def setDefineGlobals(value: js.Object => Unit): Self = StObject.set(x, "defineGlobals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExport(value: js.Any => js.Any): Self = StObject.set(x, "export", js.Any.fromFunction1(value))
+      inline def setExport(value: js.Any => js.Any): Self = StObject.set(x, "export", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGlobal(value: js.Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: js.Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,17 +63,14 @@ object userScripts {
   }
   object RegisteredUserScript {
     
-    @scala.inline
-    def apply(unregister: () => js.Promise[js.Any]): RegisteredUserScript = {
+    inline def apply(unregister: () => js.Promise[js.Any]): RegisteredUserScript = {
       val __obj = js.Dynamic.literal(unregister = js.Any.fromFunction0(unregister))
       __obj.asInstanceOf[RegisteredUserScript]
     }
     
-    @scala.inline
-    implicit class RegisteredUserScriptMutableBuilder[Self <: RegisteredUserScript] (val x: Self) extends AnyVal {
+    extension [Self <: RegisteredUserScript](x: Self) {
       
-      @scala.inline
-      def setUnregister(value: () => js.Promise[js.Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
+      inline def setUnregister(value: () => js.Promise[js.Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
     }
   }
   
@@ -117,81 +108,57 @@ object userScripts {
   }
   object UserScriptOptions {
     
-    @scala.inline
-    def apply(js_ : js.Array[ExtensionFileOrCode], matches: js.Array[MatchPattern]): UserScriptOptions = {
+    inline def apply(js_ : js.Array[ExtensionFileOrCode], matches: js.Array[MatchPattern]): UserScriptOptions = {
       val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
       __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserScriptOptions]
     }
     
-    @scala.inline
-    implicit class UserScriptOptionsMutableBuilder[Self <: UserScriptOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UserScriptOptions](x: Self) {
       
-      @scala.inline
-      def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
+      inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
+      inline def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
       
-      @scala.inline
-      def setExcludeGlobs(value: js.Array[String]): Self = StObject.set(x, "excludeGlobs", value.asInstanceOf[js.Any])
+      inline def setExcludeGlobs(value: js.Array[String]): Self = StObject.set(x, "excludeGlobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeGlobsUndefined: Self = StObject.set(x, "excludeGlobs", js.undefined)
+      inline def setExcludeGlobsUndefined: Self = StObject.set(x, "excludeGlobs", js.undefined)
       
-      @scala.inline
-      def setExcludeGlobsVarargs(value: String*): Self = StObject.set(x, "excludeGlobs", js.Array(value :_*))
+      inline def setExcludeGlobsVarargs(value: String*): Self = StObject.set(x, "excludeGlobs", js.Array(value :_*))
       
-      @scala.inline
-      def setExcludeMatches(value: js.Array[MatchPattern]): Self = StObject.set(x, "excludeMatches", value.asInstanceOf[js.Any])
+      inline def setExcludeMatches(value: js.Array[MatchPattern]): Self = StObject.set(x, "excludeMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeMatchesUndefined: Self = StObject.set(x, "excludeMatches", js.undefined)
+      inline def setExcludeMatchesUndefined: Self = StObject.set(x, "excludeMatches", js.undefined)
       
-      @scala.inline
-      def setExcludeMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "excludeMatches", js.Array(value :_*))
+      inline def setExcludeMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "excludeMatches", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludeGlobs(value: js.Array[String]): Self = StObject.set(x, "includeGlobs", value.asInstanceOf[js.Any])
+      inline def setIncludeGlobs(value: js.Array[String]): Self = StObject.set(x, "includeGlobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeGlobsUndefined: Self = StObject.set(x, "includeGlobs", js.undefined)
+      inline def setIncludeGlobsUndefined: Self = StObject.set(x, "includeGlobs", js.undefined)
       
-      @scala.inline
-      def setIncludeGlobsVarargs(value: String*): Self = StObject.set(x, "includeGlobs", js.Array(value :_*))
+      inline def setIncludeGlobsVarargs(value: String*): Self = StObject.set(x, "includeGlobs", js.Array(value :_*))
       
-      @scala.inline
-      def setJs_(value: js.Array[ExtensionFileOrCode]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+      inline def setJs_(value: js.Array[ExtensionFileOrCode]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJs_Varargs(value: ExtensionFileOrCode*): Self = StObject.set(x, "js", js.Array(value :_*))
+      inline def setJs_Varargs(value: ExtensionFileOrCode*): Self = StObject.set(x, "js", js.Array(value :_*))
       
-      @scala.inline
-      def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
+      inline def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchAboutBlankUndefined: Self = StObject.set(x, "matchAboutBlank", js.undefined)
+      inline def setMatchAboutBlankUndefined: Self = StObject.set(x, "matchAboutBlank", js.undefined)
       
-      @scala.inline
-      def setMatches(value: js.Array[MatchPattern]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: js.Array[MatchPattern]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "matches", js.Array(value :_*))
       
-      @scala.inline
-      def setRunAt(value: RunAt): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
+      inline def setRunAt(value: RunAt): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunAtUndefined: Self = StObject.set(x, "runAt", js.undefined)
+      inline def setRunAtUndefined: Self = StObject.set(x, "runAt", js.undefined)
       
-      @scala.inline
-      def setScriptMetadata(value: PlainJSONValue): Self = StObject.set(x, "scriptMetadata", value.asInstanceOf[js.Any])
+      inline def setScriptMetadata(value: PlainJSONValue): Self = StObject.set(x, "scriptMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptMetadataNull: Self = StObject.set(x, "scriptMetadata", null)
+      inline def setScriptMetadataNull: Self = StObject.set(x, "scriptMetadata", null)
       
-      @scala.inline
-      def setScriptMetadataUndefined: Self = StObject.set(x, "scriptMetadata", js.undefined)
+      inline def setScriptMetadataUndefined: Self = StObject.set(x, "scriptMetadata", js.undefined)
     }
   }
 }

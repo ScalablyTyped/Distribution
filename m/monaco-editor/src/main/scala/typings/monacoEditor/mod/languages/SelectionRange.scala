@@ -11,16 +11,13 @@ trait SelectionRange extends StObject {
 }
 object SelectionRange {
   
-  @scala.inline
-  def apply(range: IRange): SelectionRange = {
+  inline def apply(range: IRange): SelectionRange = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionRange]
   }
   
-  @scala.inline
-  implicit class SelectionRangeMutableBuilder[Self <: SelectionRange] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionRange](x: Self) {
     
-    @scala.inline
-    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

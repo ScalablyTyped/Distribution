@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object BlockquoteCloseToken {
   
-  @scala.inline
-  def apply(level: Double): BlockquoteCloseToken = {
+  inline def apply(level: Double): BlockquoteCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("blockquote_close")
     __obj.asInstanceOf[BlockquoteCloseToken]
   }
   
-  @scala.inline
-  implicit class BlockquoteCloseTokenMutableBuilder[Self <: BlockquoteCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: BlockquoteCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: blockquote_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: blockquote_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

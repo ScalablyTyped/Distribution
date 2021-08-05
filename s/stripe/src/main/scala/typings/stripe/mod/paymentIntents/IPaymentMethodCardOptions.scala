@@ -17,19 +17,15 @@ trait IPaymentMethodCardOptions extends StObject {
 }
 object IPaymentMethodCardOptions {
   
-  @scala.inline
-  def apply(): IPaymentMethodCardOptions = {
+  inline def apply(): IPaymentMethodCardOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPaymentMethodCardOptions]
   }
   
-  @scala.inline
-  implicit class IPaymentMethodCardOptionsMutableBuilder[Self <: IPaymentMethodCardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentMethodCardOptions](x: Self) {
     
-    @scala.inline
-    def setRequest_three_d_secure(value: automatic | challenge_only | any): Self = StObject.set(x, "request_three_d_secure", value.asInstanceOf[js.Any])
+    inline def setRequest_three_d_secure(value: automatic | challenge_only | any): Self = StObject.set(x, "request_three_d_secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_three_d_secureUndefined: Self = StObject.set(x, "request_three_d_secure", js.undefined)
+    inline def setRequest_three_d_secureUndefined: Self = StObject.set(x, "request_three_d_secure", js.undefined)
   }
 }

@@ -50,7 +50,7 @@ trait OLEObject extends StObject {
   
   var Enabled: Boolean = js.native
   
-  @JSName("Excel.OLEObject_typekey")
+  /* private */ @JSName("Excel.OLEObject_typekey")
   var ExcelDotOLEObject_typekey: OLEObject = js.native
   
   var Height: Double = js.native

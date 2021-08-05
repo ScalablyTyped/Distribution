@@ -12,16 +12,14 @@ object msMod {
     * @see {@link https://mochajs.org/api/module-milliseconds.html}
     * @see {@link https://mochajs.org/api/module-milliseconds.html#~parse}
     */
-  @scala.inline
-  def apply(`val`: String): Double = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(`val`: String): Double = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   /**
     * Format for `ms`.
     *
     * @see {@link https://mochajs.org/api/module-milliseconds.html}
     * @see {@link https://mochajs.org/api/module-milliseconds.html#~format}
     */
-  @scala.inline
-  def apply(`val`: Double): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(`val`: Double): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("mocha/lib/ms", JSImport.Namespace)
   @js.native

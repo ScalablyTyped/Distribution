@@ -21,6 +21,5 @@ object Barometer {
     * @return The default barometer.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Barometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Barometer]
+  inline def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Barometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Barometer]
 }

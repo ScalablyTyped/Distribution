@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: InMemoryOptions): SyncOrAsyncLimiter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SyncOrAsyncLimiter]
-  @scala.inline
-  def apply(options: WithRedisOptions): AsyncLimiter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AsyncLimiter]
+  inline def apply(options: InMemoryOptions): SyncOrAsyncLimiter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SyncOrAsyncLimiter]
+  inline def apply(options: WithRedisOptions): AsyncLimiter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AsyncLimiter]
   
   @JSImport("rolling-rate-limiter", JSImport.Namespace)
   @js.native
@@ -29,17 +27,14 @@ object mod {
   }
   object CompatibleRedisClient {
     
-    @scala.inline
-    def apply(multi: () => js.Any): CompatibleRedisClient = {
+    inline def apply(multi: () => js.Any): CompatibleRedisClient = {
       val __obj = js.Dynamic.literal(multi = js.Any.fromFunction0(multi))
       __obj.asInstanceOf[CompatibleRedisClient]
     }
     
-    @scala.inline
-    implicit class CompatibleRedisClientMutableBuilder[Self <: CompatibleRedisClient] (val x: Self) extends AnyVal {
+    extension [Self <: CompatibleRedisClient](x: Self) {
       
-      @scala.inline
-      def setMulti(value: () => js.Any): Self = StObject.set(x, "multi", js.Any.fromFunction0(value))
+      inline def setMulti(value: () => js.Any): Self = StObject.set(x, "multi", js.Any.fromFunction0(value))
     }
   }
   
@@ -53,26 +48,20 @@ object mod {
   }
   object GeneralOptions {
     
-    @scala.inline
-    def apply(interval: Double, maxInInterval: Double): GeneralOptions = {
+    inline def apply(interval: Double, maxInInterval: Double): GeneralOptions = {
       val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], maxInInterval = maxInInterval.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeneralOptions]
     }
     
-    @scala.inline
-    implicit class GeneralOptionsMutableBuilder[Self <: GeneralOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeneralOptions](x: Self) {
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInInterval(value: Double): Self = StObject.set(x, "maxInInterval", value.asInstanceOf[js.Any])
+      inline def setMaxInInterval(value: Double): Self = StObject.set(x, "maxInInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDifference(value: Double): Self = StObject.set(x, "minDifference", value.asInstanceOf[js.Any])
+      inline def setMinDifference(value: Double): Self = StObject.set(x, "minDifference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDifferenceUndefined: Self = StObject.set(x, "minDifference", js.undefined)
+      inline def setMinDifferenceUndefined: Self = StObject.set(x, "minDifference", js.undefined)
     }
   }
   
@@ -101,23 +90,18 @@ object mod {
   }
   object WithRedisOptions {
     
-    @scala.inline
-    def apply(interval: Double, maxInInterval: Double, redis: CompatibleRedisClient): WithRedisOptions = {
+    inline def apply(interval: Double, maxInInterval: Double, redis: CompatibleRedisClient): WithRedisOptions = {
       val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], maxInInterval = maxInInterval.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithRedisOptions]
     }
     
-    @scala.inline
-    implicit class WithRedisOptionsMutableBuilder[Self <: WithRedisOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WithRedisOptions](x: Self) {
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setRedis(value: CompatibleRedisClient): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+      inline def setRedis(value: CompatibleRedisClient): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
     }
   }
 }

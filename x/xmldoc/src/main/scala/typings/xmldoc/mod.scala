@@ -149,38 +149,28 @@ object mod {
   }
   object XmlOptions {
     
-    @scala.inline
-    def apply(): XmlOptions = {
+    inline def apply(): XmlOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlOptions]
     }
     
-    @scala.inline
-    implicit class XmlOptionsMutableBuilder[Self <: XmlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XmlOptions](x: Self) {
       
-      @scala.inline
-      def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
+      inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressedUndefined: Self = StObject.set(x, "compressed", js.undefined)
+      inline def setCompressedUndefined: Self = StObject.set(x, "compressed", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
+      inline def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
+      inline def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
       
-      @scala.inline
-      def setTrimmed(value: Boolean): Self = StObject.set(x, "trimmed", value.asInstanceOf[js.Any])
+      inline def setTrimmed(value: Boolean): Self = StObject.set(x, "trimmed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimmedUndefined: Self = StObject.set(x, "trimmed", js.undefined)
+      inline def setTrimmedUndefined: Self = StObject.set(x, "trimmed", js.undefined)
     }
   }
   
@@ -192,20 +182,16 @@ object mod {
   }
   object XmlTag {
     
-    @scala.inline
-    def apply(attributes: XmlAttributes, name: String): XmlTag = {
+    inline def apply(attributes: XmlAttributes, name: String): XmlTag = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[XmlTag]
     }
     
-    @scala.inline
-    implicit class XmlTagMutableBuilder[Self <: XmlTag] (val x: Self) extends AnyVal {
+    extension [Self <: XmlTag](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: XmlAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: XmlAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

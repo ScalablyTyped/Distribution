@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefenderPromptForSampleSubmission extends StObject
 object DefenderPromptForSampleSubmission {
   
-  @scala.inline
-  def alwaysPrompt: typings.microsoftGraph.microsoftGraphStrings.alwaysPrompt = "alwaysPrompt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alwaysPrompt]
+  inline def alwaysPrompt: typings.microsoftGraph.microsoftGraphStrings.alwaysPrompt = "alwaysPrompt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alwaysPrompt]
   
-  @scala.inline
-  def neverSendData: typings.microsoftGraph.microsoftGraphStrings.neverSendData = "neverSendData".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.neverSendData]
+  inline def neverSendData: typings.microsoftGraph.microsoftGraphStrings.neverSendData = "neverSendData".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.neverSendData]
   
-  @scala.inline
-  def promptBeforeSendingPersonalData: typings.microsoftGraph.microsoftGraphStrings.promptBeforeSendingPersonalData = "promptBeforeSendingPersonalData".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.promptBeforeSendingPersonalData]
+  inline def promptBeforeSendingPersonalData: typings.microsoftGraph.microsoftGraphStrings.promptBeforeSendingPersonalData = "promptBeforeSendingPersonalData".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.promptBeforeSendingPersonalData]
   
-  @scala.inline
-  def sendAllDataWithoutPrompting: typings.microsoftGraph.microsoftGraphStrings.sendAllDataWithoutPrompting = "sendAllDataWithoutPrompting".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendAllDataWithoutPrompting]
+  inline def sendAllDataWithoutPrompting: typings.microsoftGraph.microsoftGraphStrings.sendAllDataWithoutPrompting = "sendAllDataWithoutPrompting".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendAllDataWithoutPrompting]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

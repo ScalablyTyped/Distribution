@@ -13,19 +13,15 @@ trait SslProperties extends StObject {
 }
 object SslProperties {
   
-  @scala.inline
-  def apply(): SslProperties = {
+  inline def apply(): SslProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SslProperties]
   }
   
-  @scala.inline
-  implicit class SslPropertiesMutableBuilder[Self <: SslProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SslProperties](x: Self) {
     
-    @scala.inline
-    def setDisableSsl(value: Boolean): Self = StObject.set(x, "DisableSsl", value.asInstanceOf[js.Any])
+    inline def setDisableSsl(value: Boolean): Self = StObject.set(x, "DisableSsl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableSslUndefined: Self = StObject.set(x, "DisableSsl", js.undefined)
+    inline def setDisableSslUndefined: Self = StObject.set(x, "DisableSsl", js.undefined)
   }
 }

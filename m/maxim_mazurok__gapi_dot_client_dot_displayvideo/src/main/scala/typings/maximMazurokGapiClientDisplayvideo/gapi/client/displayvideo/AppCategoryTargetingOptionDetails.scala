@@ -11,19 +11,15 @@ trait AppCategoryTargetingOptionDetails extends StObject {
 }
 object AppCategoryTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): AppCategoryTargetingOptionDetails = {
+  inline def apply(): AppCategoryTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppCategoryTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class AppCategoryTargetingOptionDetailsMutableBuilder[Self <: AppCategoryTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AppCategoryTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

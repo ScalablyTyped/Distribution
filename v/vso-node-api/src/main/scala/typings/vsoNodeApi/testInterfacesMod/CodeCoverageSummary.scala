@@ -23,25 +23,19 @@ trait CodeCoverageSummary extends StObject {
 }
 object CodeCoverageSummary {
   
-  @scala.inline
-  def apply(build: ShallowReference, coverageData: js.Array[CodeCoverageData], deltaBuild: ShallowReference): CodeCoverageSummary = {
+  inline def apply(build: ShallowReference, coverageData: js.Array[CodeCoverageData], deltaBuild: ShallowReference): CodeCoverageSummary = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], coverageData = coverageData.asInstanceOf[js.Any], deltaBuild = deltaBuild.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeCoverageSummary]
   }
   
-  @scala.inline
-  implicit class CodeCoverageSummaryMutableBuilder[Self <: CodeCoverageSummary] (val x: Self) extends AnyVal {
+  extension [Self <: CodeCoverageSummary](x: Self) {
     
-    @scala.inline
-    def setBuild(value: ShallowReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: ShallowReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageData(value: js.Array[CodeCoverageData]): Self = StObject.set(x, "coverageData", value.asInstanceOf[js.Any])
+    inline def setCoverageData(value: js.Array[CodeCoverageData]): Self = StObject.set(x, "coverageData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageDataVarargs(value: CodeCoverageData*): Self = StObject.set(x, "coverageData", js.Array(value :_*))
+    inline def setCoverageDataVarargs(value: CodeCoverageData*): Self = StObject.set(x, "coverageData", js.Array(value :_*))
     
-    @scala.inline
-    def setDeltaBuild(value: ShallowReference): Self = StObject.set(x, "deltaBuild", value.asInstanceOf[js.Any])
+    inline def setDeltaBuild(value: ShallowReference): Self = StObject.set(x, "deltaBuild", value.asInstanceOf[js.Any])
   }
 }

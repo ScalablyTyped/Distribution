@@ -12,16 +12,13 @@ trait ElementObject extends StObject {
 }
 object ElementObject {
   
-  @scala.inline
-  def apply(element: ReactElement | ReactType[js.Any]): ElementObject = {
+  inline def apply(element: ReactElement | ReactType[js.Any]): ElementObject = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementObject]
   }
   
-  @scala.inline
-  implicit class ElementObjectMutableBuilder[Self <: ElementObject] (val x: Self) extends AnyVal {
+  extension [Self <: ElementObject](x: Self) {
     
-    @scala.inline
-    def setElement(value: ReactElement | ReactType[js.Any]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: ReactElement | ReactType[js.Any]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

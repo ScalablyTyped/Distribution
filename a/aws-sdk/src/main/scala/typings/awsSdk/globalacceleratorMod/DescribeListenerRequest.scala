@@ -13,16 +13,13 @@ trait DescribeListenerRequest extends StObject {
 }
 object DescribeListenerRequest {
   
-  @scala.inline
-  def apply(ListenerArn: GenericString): DescribeListenerRequest = {
+  inline def apply(ListenerArn: GenericString): DescribeListenerRequest = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeListenerRequest]
   }
   
-  @scala.inline
-  implicit class DescribeListenerRequestMutableBuilder[Self <: DescribeListenerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeListenerRequest](x: Self) {
     
-    @scala.inline
-    def setListenerArn(value: GenericString): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
+    inline def setListenerArn(value: GenericString): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
   }
 }

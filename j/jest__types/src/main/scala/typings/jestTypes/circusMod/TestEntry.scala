@@ -36,8 +36,7 @@ trait TestEntry extends StObject {
 }
 object TestEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asyncError: Exception,
     errors: js.Array[TestError],
     fn: /* done */ js.UndefOr[typings.jestTypes.globalMod.DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit],
@@ -51,69 +50,48 @@ object TestEntry {
     __obj.asInstanceOf[TestEntry]
   }
   
-  @scala.inline
-  implicit class TestEntryMutableBuilder[Self <: TestEntry] (val x: Self) extends AnyVal {
+  extension [Self <: TestEntry](x: Self) {
     
-    @scala.inline
-    def setAsyncError(value: Exception): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
+    inline def setAsyncError(value: Exception): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationNull: Self = StObject.set(x, "duration", null)
+    inline def setDurationNull: Self = StObject.set(x, "duration", null)
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[TestError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[TestError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: TestError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: TestError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setFn(
+    inline def setFn(
       value: /* done */ js.UndefOr[typings.jestTypes.globalMod.DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]
     ): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInvocations(value: Double): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
+    inline def setInvocations(value: Double): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: TestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: TestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: TestName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: TestName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: DescribeBlock): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: DescribeBlock): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAt(value: Double): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: Double): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAtNull: Self = StObject.set(x, "startedAt", null)
+    inline def setStartedAtNull: Self = StObject.set(x, "startedAt", null)
     
-    @scala.inline
-    def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
+    inline def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setType(value: test): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: test): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait SchemaGetDebugConfigResponse extends StObject {
 }
 object SchemaGetDebugConfigResponse {
   
-  @scala.inline
-  def apply(): SchemaGetDebugConfigResponse = {
+  inline def apply(): SchemaGetDebugConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetDebugConfigResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetDebugConfigResponseMutableBuilder[Self <: SchemaGetDebugConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetDebugConfigResponse](x: Self) {
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
   }
 }

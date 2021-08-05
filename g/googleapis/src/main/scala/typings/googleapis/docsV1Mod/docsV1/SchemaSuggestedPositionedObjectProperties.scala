@@ -25,25 +25,19 @@ trait SchemaSuggestedPositionedObjectProperties extends StObject {
 }
 object SchemaSuggestedPositionedObjectProperties {
   
-  @scala.inline
-  def apply(): SchemaSuggestedPositionedObjectProperties = {
+  inline def apply(): SchemaSuggestedPositionedObjectProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSuggestedPositionedObjectProperties]
   }
   
-  @scala.inline
-  implicit class SchemaSuggestedPositionedObjectPropertiesMutableBuilder[Self <: SchemaSuggestedPositionedObjectProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSuggestedPositionedObjectProperties](x: Self) {
     
-    @scala.inline
-    def setPositionedObjectProperties(value: SchemaPositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
+    inline def setPositionedObjectProperties(value: SchemaPositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionedObjectPropertiesSuggestionState(value: SchemaPositionedObjectPropertiesSuggestionState): Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    inline def setPositionedObjectPropertiesSuggestionState(value: SchemaPositionedObjectPropertiesSuggestionState): Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionedObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", js.undefined)
+    inline def setPositionedObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", js.undefined)
     
-    @scala.inline
-    def setPositionedObjectPropertiesUndefined: Self = StObject.set(x, "positionedObjectProperties", js.undefined)
+    inline def setPositionedObjectPropertiesUndefined: Self = StObject.set(x, "positionedObjectProperties", js.undefined)
   }
 }

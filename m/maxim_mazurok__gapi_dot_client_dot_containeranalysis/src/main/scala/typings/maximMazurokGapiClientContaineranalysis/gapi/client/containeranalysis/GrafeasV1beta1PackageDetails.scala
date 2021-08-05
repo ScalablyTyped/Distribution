@@ -11,19 +11,15 @@ trait GrafeasV1beta1PackageDetails extends StObject {
 }
 object GrafeasV1beta1PackageDetails {
   
-  @scala.inline
-  def apply(): GrafeasV1beta1PackageDetails = {
+  inline def apply(): GrafeasV1beta1PackageDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrafeasV1beta1PackageDetails]
   }
   
-  @scala.inline
-  implicit class GrafeasV1beta1PackageDetailsMutableBuilder[Self <: GrafeasV1beta1PackageDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GrafeasV1beta1PackageDetails](x: Self) {
     
-    @scala.inline
-    def setInstallation(value: Installation): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
+    inline def setInstallation(value: Installation): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationUndefined: Self = StObject.set(x, "installation", js.undefined)
+    inline def setInstallationUndefined: Self = StObject.set(x, "installation", js.undefined)
   }
 }

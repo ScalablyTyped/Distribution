@@ -22,8 +22,7 @@ object mod {
     def this(options: ResponsivePopupOptions, source: Layer) = this()
   }
   
-  @scala.inline
-  def responsivePopup(options: js.UndefOr[ResponsivePopupOptions], source: js.UndefOr[Layer]): ResponsivePopup_ = (^.asInstanceOf[js.Dynamic].applyDynamic("responsivePopup")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[ResponsivePopup_]
+  inline def responsivePopup(options: js.UndefOr[ResponsivePopupOptions], source: js.UndefOr[Layer]): ResponsivePopup_ = (^.asInstanceOf[js.Dynamic].applyDynamic("responsivePopup")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[ResponsivePopup_]
   
   trait ResponsivePopupOptions
     extends StObject
@@ -33,20 +32,16 @@ object mod {
   }
   object ResponsivePopupOptions {
     
-    @scala.inline
-    def apply(): ResponsivePopupOptions = {
+    inline def apply(): ResponsivePopupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponsivePopupOptions]
     }
     
-    @scala.inline
-    implicit class ResponsivePopupOptionsMutableBuilder[Self <: ResponsivePopupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResponsivePopupOptions](x: Self) {
       
-      @scala.inline
-      def setHasTip(value: Boolean): Self = StObject.set(x, "hasTip", value.asInstanceOf[js.Any])
+      inline def setHasTip(value: Boolean): Self = StObject.set(x, "hasTip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasTipUndefined: Self = StObject.set(x, "hasTip", js.undefined)
+      inline def setHasTipUndefined: Self = StObject.set(x, "hasTip", js.undefined)
     }
   }
 }

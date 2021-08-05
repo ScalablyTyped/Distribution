@@ -26,23 +26,18 @@ object stateValidatorsMod {
   }
   object StateParamType {
     
-    @scala.inline
-    def apply(validate: (js.Any, StateArguments, js.Any, Boolean, Boolean) => StateResult): StateParamType = {
+    inline def apply(validate: (js.Any, StateArguments, js.Any, Boolean, Boolean) => StateResult): StateParamType = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction5(validate))
       __obj.asInstanceOf[StateParamType]
     }
     
-    @scala.inline
-    implicit class StateParamTypeMutableBuilder[Self <: StateParamType] (val x: Self) extends AnyVal {
+    extension [Self <: StateParamType](x: Self) {
       
-      @scala.inline
-      def setSubValidators(value: Record[String, SubValidator]): Self = StObject.set(x, "subValidators", value.asInstanceOf[js.Any])
+      inline def setSubValidators(value: Record[String, SubValidator]): Self = StObject.set(x, "subValidators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubValidatorsUndefined: Self = StObject.set(x, "subValidators", js.undefined)
+      inline def setSubValidatorsUndefined: Self = StObject.set(x, "subValidators", js.undefined)
       
-      @scala.inline
-      def setValidate(value: (js.Any, StateArguments, js.Any, Boolean, Boolean) => StateResult): Self = StObject.set(x, "validate", js.Any.fromFunction5(value))
+      inline def setValidate(value: (js.Any, StateArguments, js.Any, Boolean, Boolean) => StateResult): Self = StObject.set(x, "validate", js.Any.fromFunction5(value))
     }
   }
   
@@ -54,26 +49,20 @@ object stateValidatorsMod {
   }
   object StateResult {
     
-    @scala.inline
-    def apply(res: String): StateResult = {
+    inline def apply(res: String): StateResult = {
       val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any], errors = null)
       __obj.asInstanceOf[StateResult]
     }
     
-    @scala.inline
-    implicit class StateResultMutableBuilder[Self <: StateResult] (val x: Self) extends AnyVal {
+    extension [Self <: StateResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsNull: Self = StObject.set(x, "errors", null)
+      inline def setErrorsNull: Self = StObject.set(x, "errors", null)
       
-      @scala.inline
-      def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setRes(value: String): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: String): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }
   }
   

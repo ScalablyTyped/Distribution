@@ -18,19 +18,15 @@ trait UpdateVTLDeviceTypeInput extends StObject {
 }
 object UpdateVTLDeviceTypeInput {
   
-  @scala.inline
-  def apply(DeviceType: DeviceType, VTLDeviceARN: VTLDeviceARN): UpdateVTLDeviceTypeInput = {
+  inline def apply(DeviceType: DeviceType, VTLDeviceARN: VTLDeviceARN): UpdateVTLDeviceTypeInput = {
     val __obj = js.Dynamic.literal(DeviceType = DeviceType.asInstanceOf[js.Any], VTLDeviceARN = VTLDeviceARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVTLDeviceTypeInput]
   }
   
-  @scala.inline
-  implicit class UpdateVTLDeviceTypeInputMutableBuilder[Self <: UpdateVTLDeviceTypeInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateVTLDeviceTypeInput](x: Self) {
     
-    @scala.inline
-    def setDeviceType(value: DeviceType): Self = StObject.set(x, "DeviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: DeviceType): Self = StObject.set(x, "DeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVTLDeviceARN(value: VTLDeviceARN): Self = StObject.set(x, "VTLDeviceARN", value.asInstanceOf[js.Any])
+    inline def setVTLDeviceARN(value: VTLDeviceARN): Self = StObject.set(x, "VTLDeviceARN", value.asInstanceOf[js.Any])
   }
 }

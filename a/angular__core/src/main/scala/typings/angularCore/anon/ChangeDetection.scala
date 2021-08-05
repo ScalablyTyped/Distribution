@@ -314,199 +314,138 @@ trait ChangeDetection[T] extends StObject {
 }
 object ChangeDetection {
   
-  @scala.inline
-  def apply[T](decls: Double, template: (/* rf */ ɵRenderFlags, T) => Unit, `type`: Type[T], vars: Double): ChangeDetection[T] = {
+  inline def apply[T](decls: Double, template: (/* rf */ ɵRenderFlags, T) => Unit, `type`: Type[T], vars: Double): ChangeDetection[T] = {
     val __obj = js.Dynamic.literal(decls = decls.asInstanceOf[js.Any], template = js.Any.fromFunction2(template), vars = vars.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeDetection[T]]
   }
   
-  @scala.inline
-  implicit class ChangeDetectionMutableBuilder[Self <: ChangeDetection[?], T] (val x: Self & ChangeDetection[T]) extends AnyVal {
+  extension [Self <: ChangeDetection[?], T](x: Self & ChangeDetection[T]) {
     
-    @scala.inline
-    def setChangeDetection(value: ChangeDetectionStrategy): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
+    inline def setChangeDetection(value: ChangeDetectionStrategy): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeDetectionUndefined: Self = StObject.set(x, "changeDetection", js.undefined)
+    inline def setChangeDetectionUndefined: Self = StObject.set(x, "changeDetection", js.undefined)
     
-    @scala.inline
-    def setConsts(value: TConstantsOrFactory): Self = StObject.set(x, "consts", value.asInstanceOf[js.Any])
+    inline def setConsts(value: TConstantsOrFactory): Self = StObject.set(x, "consts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstsFunction0(value: () => TConstants): Self = StObject.set(x, "consts", js.Any.fromFunction0(value))
+    inline def setConstsFunction0(value: () => TConstants): Self = StObject.set(x, "consts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConstsUndefined: Self = StObject.set(x, "consts", js.undefined)
+    inline def setConstsUndefined: Self = StObject.set(x, "consts", js.undefined)
     
-    @scala.inline
-    def setConstsVarargs(value: (TAttributes | String)*): Self = StObject.set(x, "consts", js.Array(value :_*))
+    inline def setConstsVarargs(value: (TAttributes | String)*): Self = StObject.set(x, "consts", js.Array(value :_*))
     
-    @scala.inline
-    def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
+    inline def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setContentQueriesUndefined: Self = StObject.set(x, "contentQueries", js.undefined)
+    inline def setContentQueriesUndefined: Self = StObject.set(x, "contentQueries", js.undefined)
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDecls(value: Double): Self = StObject.set(x, "decls", value.asInstanceOf[js.Any])
+    inline def setDecls(value: Double): Self = StObject.set(x, "decls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectives(value: DirectiveTypesOrFactory): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: DirectiveTypesOrFactory): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesFunction0(value: () => DirectiveTypeList): Self = StObject.set(x, "directives", js.Any.fromFunction0(value))
+    inline def setDirectivesFunction0(value: () => DirectiveTypeList): Self = StObject.set(x, "directives", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDirectivesNull: Self = StObject.set(x, "directives", null)
+    inline def setDirectivesNull: Self = StObject.set(x, "directives", null)
     
-    @scala.inline
-    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    @scala.inline
-    def setDirectivesVarargs(value: (ɵDirectiveType[js.Any] | ɵComponentType[js.Any] | Type[js.Any])*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: (ɵDirectiveType[js.Any] | ɵComponentType[js.Any] | Type[js.Any])*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
+    inline def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncapsulationUndefined: Self = StObject.set(x, "encapsulation", js.undefined)
+    inline def setEncapsulationUndefined: Self = StObject.set(x, "encapsulation", js.undefined)
     
-    @scala.inline
-    def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
+    inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportAsUndefined: Self = StObject.set(x, "exportAs", js.undefined)
+    inline def setExportAsUndefined: Self = StObject.set(x, "exportAs", js.undefined)
     
-    @scala.inline
-    def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
+    inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
     
-    @scala.inline
-    def setFeatures(value: js.Array[ComponentDefFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[ComponentDefFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: ComponentDefFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: ComponentDefFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setHostAttrs(value: TAttributes): Self = StObject.set(x, "hostAttrs", value.asInstanceOf[js.Any])
+    inline def setHostAttrs(value: TAttributes): Self = StObject.set(x, "hostAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostAttrsUndefined: Self = StObject.set(x, "hostAttrs", js.undefined)
+    inline def setHostAttrsUndefined: Self = StObject.set(x, "hostAttrs", js.undefined)
     
-    @scala.inline
-    def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value :_*))
+    inline def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value :_*))
     
-    @scala.inline
-    def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "hostBindings", js.Any.fromFunction2(value))
+    inline def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "hostBindings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHostBindingsUndefined: Self = StObject.set(x, "hostBindings", js.undefined)
+    inline def setHostBindingsUndefined: Self = StObject.set(x, "hostBindings", js.undefined)
     
-    @scala.inline
-    def setHostVars(value: Double): Self = StObject.set(x, "hostVars", value.asInstanceOf[js.Any])
+    inline def setHostVars(value: Double): Self = StObject.set(x, "hostVars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostVarsUndefined: Self = StObject.set(x, "hostVars", js.undefined)
+    inline def setHostVarsUndefined: Self = StObject.set(x, "hostVars", js.undefined)
     
-    @scala.inline
-    def setInputs(
+    inline def setInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? string | [string, string]}
       */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
+    inline def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNgContentSelectorsUndefined: Self = StObject.set(x, "ngContentSelectors", js.undefined)
+    inline def setNgContentSelectorsUndefined: Self = StObject.set(x, "ngContentSelectors", js.undefined)
     
-    @scala.inline
-    def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
+    inline def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputs(
+    inline def setOutputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? string}
       */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    @scala.inline
-    def setPipes(value: PipeTypesOrFactory): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
+    inline def setPipes(value: PipeTypesOrFactory): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipesFunction0(value: () => PipeTypeList): Self = StObject.set(x, "pipes", js.Any.fromFunction0(value))
+    inline def setPipesFunction0(value: () => PipeTypeList): Self = StObject.set(x, "pipes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPipesNull: Self = StObject.set(x, "pipes", null)
+    inline def setPipesNull: Self = StObject.set(x, "pipes", null)
     
-    @scala.inline
-    def setPipesUndefined: Self = StObject.set(x, "pipes", js.undefined)
+    inline def setPipesUndefined: Self = StObject.set(x, "pipes", js.undefined)
     
-    @scala.inline
-    def setPipesVarargs(value: (PipeType[js.Any] | Type[js.Any])*): Self = StObject.set(x, "pipes", js.Array(value :_*))
+    inline def setPipesVarargs(value: (PipeType[js.Any] | Type[js.Any])*): Self = StObject.set(x, "pipes", js.Array(value :_*))
     
-    @scala.inline
-    def setSchemas(value: js.Array[SchemaMetadata]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[SchemaMetadata]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasNull: Self = StObject.set(x, "schemas", null)
+    inline def setSchemasNull: Self = StObject.set(x, "schemas", null)
     
-    @scala.inline
-    def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+    inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
     
-    @scala.inline
-    def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectors(value: ɵCssSelectorList): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: ɵCssSelectorList): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+    inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    @scala.inline
-    def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
     
-    @scala.inline
-    def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplate(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    inline def setTemplate(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVars(value: Double): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+    inline def setVars(value: Double): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewQuery(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "viewQuery", js.Any.fromFunction2(value))
+    inline def setViewQuery(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "viewQuery", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setViewQueryNull: Self = StObject.set(x, "viewQuery", null)
+    inline def setViewQueryNull: Self = StObject.set(x, "viewQuery", null)
     
-    @scala.inline
-    def setViewQueryUndefined: Self = StObject.set(x, "viewQuery", js.undefined)
+    inline def setViewQueryUndefined: Self = StObject.set(x, "viewQuery", js.undefined)
   }
 }

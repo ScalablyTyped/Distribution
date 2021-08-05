@@ -14,8 +14,7 @@ trait IDeviceActivatedEventArgs
 }
 object IDeviceActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceInformationId: String,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -26,13 +25,10 @@ object IDeviceActivatedEventArgs {
     __obj.asInstanceOf[IDeviceActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class IDeviceActivatedEventArgsMutableBuilder[Self <: IDeviceActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IDeviceActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setDeviceInformationId(value: String): Self = StObject.set(x, "deviceInformationId", value.asInstanceOf[js.Any])
+    inline def setDeviceInformationId(value: String): Self = StObject.set(x, "deviceInformationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }
 }

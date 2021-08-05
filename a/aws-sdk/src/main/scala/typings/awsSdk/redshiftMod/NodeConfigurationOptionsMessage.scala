@@ -18,28 +18,21 @@ trait NodeConfigurationOptionsMessage extends StObject {
 }
 object NodeConfigurationOptionsMessage {
   
-  @scala.inline
-  def apply(): NodeConfigurationOptionsMessage = {
+  inline def apply(): NodeConfigurationOptionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeConfigurationOptionsMessage]
   }
   
-  @scala.inline
-  implicit class NodeConfigurationOptionsMessageMutableBuilder[Self <: NodeConfigurationOptionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: NodeConfigurationOptionsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setNodeConfigurationOptionList(value: NodeConfigurationOptionList): Self = StObject.set(x, "NodeConfigurationOptionList", value.asInstanceOf[js.Any])
+    inline def setNodeConfigurationOptionList(value: NodeConfigurationOptionList): Self = StObject.set(x, "NodeConfigurationOptionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeConfigurationOptionListUndefined: Self = StObject.set(x, "NodeConfigurationOptionList", js.undefined)
+    inline def setNodeConfigurationOptionListUndefined: Self = StObject.set(x, "NodeConfigurationOptionList", js.undefined)
     
-    @scala.inline
-    def setNodeConfigurationOptionListVarargs(value: NodeConfigurationOption*): Self = StObject.set(x, "NodeConfigurationOptionList", js.Array(value :_*))
+    inline def setNodeConfigurationOptionListVarargs(value: NodeConfigurationOption*): Self = StObject.set(x, "NodeConfigurationOptionList", js.Array(value :_*))
   }
 }

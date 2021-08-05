@@ -90,6 +90,5 @@ object ElseClauseSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(statement: IStatementSyntax): typings.typescriptServices.TypeScript.ElseClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(statement.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ElseClauseSyntax]
+  inline def create1(statement: IStatementSyntax): typings.typescriptServices.TypeScript.ElseClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(statement.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ElseClauseSyntax]
 }

@@ -14,31 +14,23 @@ trait CollectionChangeEvent[T] extends StObject {
 }
 object CollectionChangeEvent {
   
-  @scala.inline
-  def apply[T](added: js.Array[T], moved: js.Array[T], removed: js.Array[T]): CollectionChangeEvent[T] = {
+  inline def apply[T](added: js.Array[T], moved: js.Array[T], removed: js.Array[T]): CollectionChangeEvent[T] = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], moved = moved.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionChangeEvent[T]]
   }
   
-  @scala.inline
-  implicit class CollectionChangeEventMutableBuilder[Self <: CollectionChangeEvent[?], T] (val x: Self & CollectionChangeEvent[T]) extends AnyVal {
+  extension [Self <: CollectionChangeEvent[?], T](x: Self & CollectionChangeEvent[T]) {
     
-    @scala.inline
-    def setAdded(value: js.Array[T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: js.Array[T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedVarargs(value: T*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: T*): Self = StObject.set(x, "added", js.Array(value :_*))
     
-    @scala.inline
-    def setMoved(value: js.Array[T]): Self = StObject.set(x, "moved", value.asInstanceOf[js.Any])
+    inline def setMoved(value: js.Array[T]): Self = StObject.set(x, "moved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovedVarargs(value: T*): Self = StObject.set(x, "moved", js.Array(value :_*))
+    inline def setMovedVarargs(value: T*): Self = StObject.set(x, "moved", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoved(value: js.Array[T]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: js.Array[T]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value :_*))
   }
 }

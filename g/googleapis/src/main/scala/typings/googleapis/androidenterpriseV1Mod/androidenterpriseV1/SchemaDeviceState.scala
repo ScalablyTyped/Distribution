@@ -27,25 +27,19 @@ trait SchemaDeviceState extends StObject {
 }
 object SchemaDeviceState {
   
-  @scala.inline
-  def apply(): SchemaDeviceState = {
+  inline def apply(): SchemaDeviceState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeviceState]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceStateMutableBuilder[Self <: SchemaDeviceState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeviceState](x: Self) {
     
-    @scala.inline
-    def setAccountState(value: String): Self = StObject.set(x, "accountState", value.asInstanceOf[js.Any])
+    inline def setAccountState(value: String): Self = StObject.set(x, "accountState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountStateUndefined: Self = StObject.set(x, "accountState", js.undefined)
+    inline def setAccountStateUndefined: Self = StObject.set(x, "accountState", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

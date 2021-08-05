@@ -30,25 +30,19 @@ trait SchemaStretchedPictureFill extends StObject {
 }
 object SchemaStretchedPictureFill {
   
-  @scala.inline
-  def apply(): SchemaStretchedPictureFill = {
+  inline def apply(): SchemaStretchedPictureFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStretchedPictureFill]
   }
   
-  @scala.inline
-  implicit class SchemaStretchedPictureFillMutableBuilder[Self <: SchemaStretchedPictureFill] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStretchedPictureFill](x: Self) {
     
-    @scala.inline
-    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
-    @scala.inline
-    def setSize(value: SchemaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: SchemaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

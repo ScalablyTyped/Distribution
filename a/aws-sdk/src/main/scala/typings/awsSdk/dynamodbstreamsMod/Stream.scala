@@ -23,31 +23,23 @@ trait Stream extends StObject {
 }
 object Stream {
   
-  @scala.inline
-  def apply(): Stream = {
+  inline def apply(): Stream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Stream]
   }
   
-  @scala.inline
-  implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+  extension [Self <: Stream](x: Self) {
     
-    @scala.inline
-    def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
+    inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamArnUndefined: Self = StObject.set(x, "StreamArn", js.undefined)
+    inline def setStreamArnUndefined: Self = StObject.set(x, "StreamArn", js.undefined)
     
-    @scala.inline
-    def setStreamLabel(value: String): Self = StObject.set(x, "StreamLabel", value.asInstanceOf[js.Any])
+    inline def setStreamLabel(value: String): Self = StObject.set(x, "StreamLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamLabelUndefined: Self = StObject.set(x, "StreamLabel", js.undefined)
+    inline def setStreamLabelUndefined: Self = StObject.set(x, "StreamLabel", js.undefined)
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

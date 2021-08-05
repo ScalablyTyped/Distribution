@@ -49,8 +49,7 @@ trait XVclWindowPeer
 }
 object XVclWindowPeer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Toolkit: XToolkit,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
@@ -77,34 +76,24 @@ object XVclWindowPeer {
     __obj.asInstanceOf[XVclWindowPeer]
   }
   
-  @scala.inline
-  implicit class XVclWindowPeerMutableBuilder[Self <: XVclWindowPeer] (val x: Self) extends AnyVal {
+  extension [Self <: XVclWindowPeer](x: Self) {
     
-    @scala.inline
-    def setEnableClipSiblings(value: Boolean => Unit): Self = StObject.set(x, "enableClipSiblings", js.Any.fromFunction1(value))
+    inline def setEnableClipSiblings(value: Boolean => Unit): Self = StObject.set(x, "enableClipSiblings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProperty(value: String => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
+    inline def setGetProperty(value: String => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStyles(value: (Double, js.Array[FontDescriptor], js.Array[Color], js.Array[Color]) => Unit): Self = StObject.set(x, "getStyles", js.Any.fromFunction4(value))
+    inline def setGetStyles(value: (Double, js.Array[FontDescriptor], js.Array[Color], js.Array[Color]) => Unit): Self = StObject.set(x, "getStyles", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setIsChild(value: XWindowPeer => Boolean): Self = StObject.set(x, "isChild", js.Any.fromFunction1(value))
+    inline def setIsChild(value: XWindowPeer => Boolean): Self = StObject.set(x, "isChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDesignMode(value: () => Boolean): Self = StObject.set(x, "isDesignMode", js.Any.fromFunction0(value))
+    inline def setIsDesignMode(value: () => Boolean): Self = StObject.set(x, "isDesignMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetControlFont(value: FontDescriptor => Unit): Self = StObject.set(x, "setControlFont", js.Any.fromFunction1(value))
+    inline def setSetControlFont(value: FontDescriptor => Unit): Self = StObject.set(x, "setControlFont", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDesignMode(value: Boolean => Unit): Self = StObject.set(x, "setDesignMode", js.Any.fromFunction1(value))
+    inline def setSetDesignMode(value: Boolean => Unit): Self = StObject.set(x, "setDesignMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetForeground(value: Color => Unit): Self = StObject.set(x, "setForeground", js.Any.fromFunction1(value))
+    inline def setSetForeground(value: Color => Unit): Self = StObject.set(x, "setForeground", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction2(value))
+    inline def setSetProperty(value: (String, js.Any) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction2(value))
   }
 }

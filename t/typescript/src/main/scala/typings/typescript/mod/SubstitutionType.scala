@@ -14,8 +14,7 @@ trait SubstitutionType
 }
 object SubstitutionType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseType: Type,
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
@@ -47,13 +46,10 @@ object SubstitutionType {
     __obj.asInstanceOf[SubstitutionType]
   }
   
-  @scala.inline
-  implicit class SubstitutionTypeMutableBuilder[Self <: SubstitutionType] (val x: Self) extends AnyVal {
+  extension [Self <: SubstitutionType](x: Self) {
     
-    @scala.inline
-    def setBaseType(value: Type): Self = StObject.set(x, "baseType", value.asInstanceOf[js.Any])
+    inline def setBaseType(value: Type): Self = StObject.set(x, "baseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitute(value: Type): Self = StObject.set(x, "substitute", value.asInstanceOf[js.Any])
+    inline def setSubstitute(value: Type): Self = StObject.set(x, "substitute", value.asInstanceOf[js.Any])
   }
 }

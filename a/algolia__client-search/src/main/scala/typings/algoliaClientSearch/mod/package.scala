@@ -5,23 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def ApiKeyACLEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.ApiKeyACLType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ApiKeyACLEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.ApiKeyACLType]]
+inline def ApiKeyACLEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.ApiKeyACLType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ApiKeyACLEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.ApiKeyACLType]]
 
-@scala.inline
-def BatchActionEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.BatchActionType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BatchActionEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.BatchActionType]]
+inline def BatchActionEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.BatchActionType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("BatchActionEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.BatchActionType]]
 
-@scala.inline
-def ScopeEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.ScopeType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScopeEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.ScopeType]]
+inline def ScopeEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.ScopeType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ScopeEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.ScopeType]]
 
-@scala.inline
-def StrategyEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.StrategyType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StrategyEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.StrategyType]]
+inline def StrategyEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.StrategyType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StrategyEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.StrategyType]]
 
-@scala.inline
-def SynonymEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.SynonymType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SynonymEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.SynonymType]]
+inline def SynonymEnum: typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.SynonymType] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SynonymEnum").asInstanceOf[typings.std.Record[java.lang.String, typings.algoliaClientSearch.mod.SynonymType]]
 
-@scala.inline
-def addApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def addApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* acl */ js.Array[typings.algoliaClientSearch.mod.ApiKeyACLType], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.AddApiKeyOptions & (typings.std.Pick[typings.algoliaTransporter.mod.RequestOptions, java.lang.String | scala.Double])
@@ -33,8 +27,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseAd] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseAd]]
 
-@scala.inline
-def assignUserID(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
+inline def assignUserID(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
 /* userID */ java.lang.String, 
 /* clusterName */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
@@ -44,8 +37,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseAssignUser] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseAssignUser]]
 
-@scala.inline
-def assignUserIDs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
+inline def assignUserIDs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
 /* userIDs */ js.Array[java.lang.String], 
 /* clusterName */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
@@ -55,8 +47,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseAssignUserCatch] = typings.algol
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseAssignUserCatch]]
 
-@scala.inline
-def batch(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def batch(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* requests */ js.Array[typings.algoliaClientSearch.mod.BatchRequest], 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseBa] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("batch")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -64,8 +55,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseBa] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseBa]]
 
-@scala.inline
-def browseObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
+inline def browseObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.SearchOptions & typings.algoliaClientSearch.mod.BrowseOptions[js.Any] & typings.algoliaTransporter.mod.RequestOptions
 ], 
@@ -75,8 +65,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromisevoid] = typings.algoliaClientSea
 ], 
 typings.algoliaClientSearch.anon.ReadonlyPromisevoid]]
 
-@scala.inline
-def browseRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
+inline def browseRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.SearchRulesOptions & typings.algoliaClientSearch.mod.BrowseOptions[typings.algoliaClientSearch.mod.Rule] & typings.algoliaTransporter.mod.RequestOptions
 ], 
@@ -86,8 +75,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromisevoid] = typings.algoliaClientSea
 ], 
 typings.algoliaClientSearch.anon.ReadonlyPromisevoid]]
 
-@scala.inline
-def browseSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
+inline def browseSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.SearchSynonymsOptions & typings.algoliaClientSearch.mod.BrowseOptions[typings.algoliaClientSearch.mod.Synonym] & typings.algoliaTransporter.mod.RequestOptions
 ], 
@@ -97,8 +85,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromisevoid] = typings.algoliaClientSea
 ], 
 typings.algoliaClientSearch.anon.ReadonlyPromisevoid]]
 
-@scala.inline
-def chunkedBatch(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function3[
+inline def chunkedBatch(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function3[
 /* bodies */ js.Array[js.Object], 
 /* action */ typings.algoliaClientSearch.mod.BatchActionType, 
 /* requestOptions */ js.UndefOr[
@@ -112,15 +99,13 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh]]
 
-@scala.inline
-def clearObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
+inline def clearObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearObjects")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe]]
 
-@scala.inline
-def clearRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
+inline def clearRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.ClearRulesOptions
 ], 
@@ -130,8 +115,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe]]
 
-@scala.inline
-def clearSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
+inline def clearSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.ClearSynonymsOptions & typings.algoliaTransporter.mod.RequestOptions
 ], 
@@ -141,8 +125,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe]]
 
-@scala.inline
-def copyIndex(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
+inline def copyIndex(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
 /* from */ java.lang.String, 
 /* to */ java.lang.String, 
 /* requestOptions */ js.UndefOr[
@@ -156,8 +139,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn]]
 
-@scala.inline
-def copyRules(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
+inline def copyRules(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
 /* from */ java.lang.String, 
 /* to */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
@@ -167,8 +149,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn]]
 
-@scala.inline
-def copySettings(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
+inline def copySettings(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
 /* from */ java.lang.String, 
 /* to */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
@@ -178,8 +159,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn]]
 
-@scala.inline
-def copySynonyms(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
+inline def copySynonyms(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
 /* from */ java.lang.String, 
 /* to */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
@@ -189,29 +169,23 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn]]
 
-@scala.inline
-def createBrowsablePromise[TObject](
+inline def createBrowsablePromise[TObject](
   options: typings.algoliaClientSearch.anon.Request[TObject] & typings.algoliaClientSearch.mod.BrowseOptions[TObject]
 ): typings.algoliaClientSearch.anon.ReadonlyPromisevoid = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrowsablePromise")(options.asInstanceOf[js.Any]).asInstanceOf[typings.algoliaClientSearch.anon.ReadonlyPromisevoid]
 
-@scala.inline
-def createMissingObjectIDError(): typings.std.Error = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMissingObjectIDError")().asInstanceOf[typings.std.Error]
+inline def createMissingObjectIDError(): typings.std.Error = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMissingObjectIDError")().asInstanceOf[typings.std.Error]
 
-@scala.inline
-def createObjectNotFoundError(): typings.std.Error = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createObjectNotFoundError")().asInstanceOf[typings.std.Error]
+inline def createObjectNotFoundError(): typings.std.Error = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createObjectNotFoundError")().asInstanceOf[typings.std.Error]
 
-@scala.inline
-def createSearchClient: typings.algoliaClientCommon.mod.CreateClient[
+inline def createSearchClient: typings.algoliaClientCommon.mod.CreateClient[
 typings.algoliaClientSearch.mod.SearchClient, 
 typings.algoliaClientSearch.mod.SearchClientOptions & typings.algoliaClientCommon.mod.ClientTransporterOptions] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("createSearchClient").asInstanceOf[typings.algoliaClientCommon.mod.CreateClient[
 typings.algoliaClientSearch.mod.SearchClient, 
 typings.algoliaClientSearch.mod.SearchClientOptions & typings.algoliaClientCommon.mod.ClientTransporterOptions]]
 
-@scala.inline
-def createValidUntilNotFoundError(): typings.std.Error = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createValidUntilNotFoundError")().asInstanceOf[typings.std.Error]
+inline def createValidUntilNotFoundError(): typings.std.Error = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createValidUntilNotFoundError")().asInstanceOf[typings.std.Error]
 
-@scala.inline
-def deleteApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def deleteApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* apiKey */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDeCatch] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteApiKey")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -219,8 +193,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDeCatch] = typings.algol
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDeCatch]]
 
-@scala.inline
-def deleteBy(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def deleteBy(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* filters */ typings.algoliaClientSearch.mod.DeleteByFiltersOptions, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteBy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -228,15 +201,13 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe]]
 
-@scala.inline
-def deleteIndex(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
+inline def deleteIndex(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteIndex")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe]]
 
-@scala.inline
-def deleteObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def deleteObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objectID */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteObject")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -244,8 +215,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe]]
 
-@scala.inline
-def deleteObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def deleteObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objectIDs */ js.Array[java.lang.String], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.ChunkOptions
@@ -257,8 +227,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh]]
 
-@scala.inline
-def deleteRule(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def deleteRule(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objectID */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("deleteRule")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -266,8 +235,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe]]
 
-@scala.inline
-def deleteSynonym(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def deleteSynonym(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objectID */ java.lang.String, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.DeleteSynonymOptions
@@ -279,15 +247,13 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseDe]]
 
-@scala.inline
-def exists(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
+inline def exists(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseboolean] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exists")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseboolean]]
 
-@scala.inline
-def findAnswers(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function3[
+inline def findAnswers(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function3[
 /* query */ java.lang.String, 
 /* queryLanguages */ js.Array[java.lang.String], 
 /* requestOptions */ js.UndefOr[
@@ -301,8 +267,7 @@ js.Promise[typings.algoliaClientSearch.mod.FindAnswersResponse[js.Any]]] = typin
 ], 
 js.Promise[typings.algoliaClientSearch.mod.FindAnswersResponse[js.Any]]]]
 
-@scala.inline
-def findObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def findObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* callback */ js.Function1[
   /* object */ js.Any & typings.algoliaClientSearch.mod.ObjectWithObjectID, 
   scala.Boolean
@@ -320,8 +285,7 @@ js.Promise[typings.algoliaClientSearch.mod.FindObjectResponse[js.Any]]] = typing
 ], 
 js.Promise[typings.algoliaClientSearch.mod.FindObjectResponse[js.Any]]]]
 
-@scala.inline
-def generateSecuredApiKey(): js.Function2[
+inline def generateSecuredApiKey(): js.Function2[
 /* parentApiKey */ java.lang.String, 
 /* restrictions */ typings.algoliaClientSearch.mod.SecuredApiKeyRestrictions, 
 java.lang.String] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateSecuredApiKey")().asInstanceOf[js.Function2[
@@ -329,8 +293,7 @@ java.lang.String] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].a
 /* restrictions */ typings.algoliaClientSearch.mod.SecuredApiKeyRestrictions, 
 java.lang.String]]
 
-@scala.inline
-def getApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def getApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* apiKey */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseGetApiKeyR] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -338,15 +301,13 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseGetApiKeyR] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseGetApiKeyR]]
 
-@scala.inline
-def getLogs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
+inline def getLogs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseGetLogsRes] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getLogs")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseGetLogsRes]]
 
-@scala.inline
-def getObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def getObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objectID */ java.lang.String, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.GetObjectOptions
@@ -358,8 +319,7 @@ js.Promise[js.Any & typings.algoliaClientSearch.mod.ObjectWithObjectID]] = typin
 ], 
 js.Promise[js.Any & typings.algoliaClientSearch.mod.ObjectWithObjectID]]]
 
-@scala.inline
-def getObjectPosition[TObject](): js.Function2[
+inline def getObjectPosition[TObject](): js.Function2[
 /* searchResponse */ typings.algoliaClientSearch.mod.SearchResponse[TObject], 
 /* objectID */ java.lang.String, 
 scala.Double] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getObjectPosition")().asInstanceOf[js.Function2[
@@ -367,8 +327,7 @@ scala.Double] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].apply
 /* objectID */ java.lang.String, 
 scala.Double]]
 
-@scala.inline
-def getObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def getObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objectIDs */ js.Array[java.lang.String], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.GetObjectsOptions
@@ -380,8 +339,7 @@ js.Promise[typings.algoliaClientSearch.mod.GetObjectsResponse[js.Any]]] = typing
 ], 
 js.Promise[typings.algoliaClientSearch.mod.GetObjectsResponse[js.Any]]]]
 
-@scala.inline
-def getRule(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def getRule(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objectID */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseRule] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getRule")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -389,18 +347,15 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseRule] = typings.algoliaClientSea
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseRule]]
 
-@scala.inline
-def getSecuredApiKeyRemainingValidity(): js.Function1[/* securedApiKey */ java.lang.String, scala.Double] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSecuredApiKeyRemainingValidity")().asInstanceOf[js.Function1[/* securedApiKey */ java.lang.String, scala.Double]]
+inline def getSecuredApiKeyRemainingValidity(): js.Function1[/* securedApiKey */ java.lang.String, scala.Double] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSecuredApiKeyRemainingValidity")().asInstanceOf[js.Function1[/* securedApiKey */ java.lang.String, scala.Double]]
 
-@scala.inline
-def getSettings(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
+inline def getSettings(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseSettings] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseSettings]]
 
-@scala.inline
-def getSynonym(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def getSynonym(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objectID */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseSynonym] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSynonym")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -408,8 +363,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseSynonym] = typings.algoliaClient
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseSynonym]]
 
-@scala.inline
-def getTask(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def getTask(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* taskID */ scala.Double, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseTaskStatus] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getTask")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -417,15 +371,13 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseTaskStatus] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseTaskStatus]]
 
-@scala.inline
-def getTopUserIDs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
+inline def getTopUserIDs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseGetTopUser] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getTopUserIDs")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseGetTopUser]]
 
-@scala.inline
-def getUserID(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def getUserID(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* userID */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseUserIDResp] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getUserID")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -433,8 +385,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseUserIDResp] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseUserIDResp]]
 
-@scala.inline
-def hasPendingMappings(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
+inline def hasPendingMappings(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.HasPendingMappingsOptions & typings.algoliaTransporter.mod.RequestOptions
 ], 
@@ -444,32 +395,27 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseHasPending] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseHasPending]]
 
-@scala.inline
-def initIndex(base: typings.algoliaClientSearch.mod.SearchClient): typings.algoliaClientSearch.mod.CreateIndex = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initIndex")(base.asInstanceOf[js.Any]).asInstanceOf[typings.algoliaClientSearch.mod.CreateIndex]
+inline def initIndex(base: typings.algoliaClientSearch.mod.SearchClient): typings.algoliaClientSearch.mod.CreateIndex = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("initIndex")(base.asInstanceOf[js.Any]).asInstanceOf[typings.algoliaClientSearch.mod.CreateIndex]
 
-@scala.inline
-def listApiKeys(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
+inline def listApiKeys(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseListApiKey] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("listApiKeys")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseListApiKey]]
 
-@scala.inline
-def listClusters(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
+inline def listClusters(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseListCluste] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("listClusters")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseListCluste]]
 
-@scala.inline
-def listIndices(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
+inline def listIndices(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseListIndice] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("listIndices")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseListIndice]]
 
-@scala.inline
-def listUserIDs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
+inline def listUserIDs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function1[
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.ListUserIDsOptions & typings.algoliaTransporter.mod.RequestOptions
 ], 
@@ -479,8 +425,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseListUserID] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseListUserID]]
 
-@scala.inline
-def moveIndex(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
+inline def moveIndex(base: typings.algoliaClientSearch.mod.SearchClient): js.Function3[
 /* from */ java.lang.String, 
 /* to */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
@@ -490,8 +435,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseIn]]
 
-@scala.inline
-def multipleBatch(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def multipleBatch(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* requests */ js.Array[typings.algoliaClientSearch.mod.MultipleBatchRequest], 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseMu] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("multipleBatch")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -499,8 +443,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseMu] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseMu]]
 
-@scala.inline
-def multipleGetObjects(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def multipleGetObjects(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* requests */ js.Array[typings.algoliaClientSearch.mod.MultipleGetObject], 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 js.Promise[typings.algoliaClientSearch.mod.MultipleGetObjectsResponse[js.Any]]] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("multipleGetObjects")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -508,8 +451,7 @@ js.Promise[typings.algoliaClientSearch.mod.MultipleGetObjectsResponse[js.Any]]] 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 js.Promise[typings.algoliaClientSearch.mod.MultipleGetObjectsResponse[js.Any]]]]
 
-@scala.inline
-def multipleQueries(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def multipleQueries(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* queries */ js.Array[typings.algoliaClientSearch.mod.MultipleQueriesQuery], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.MultipleQueriesOptions
@@ -521,8 +463,7 @@ js.Promise[typings.algoliaClientSearch.mod.MultipleQueriesResponse[js.Any]]] = t
 ], 
 js.Promise[typings.algoliaClientSearch.mod.MultipleQueriesResponse[js.Any]]]]
 
-@scala.inline
-def multipleSearchForFacetValues(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def multipleSearchForFacetValues(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* queries */ js.Array[typings.algoliaClientSearch.anon.IndexName_], 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseArraySearc] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("multipleSearchForFacetValues")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -530,8 +471,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseArraySearc] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseArraySearc]]
 
-@scala.inline
-def partialUpdateObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def partialUpdateObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* object */ typings.std.Record[java.lang.String, js.Any], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.ChunkOptions & typings.algoliaClientSearch.mod.PartialUpdateObjectsOptions
@@ -543,8 +483,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromisePa] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromisePa]]
 
-@scala.inline
-def partialUpdateObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def partialUpdateObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objects */ js.Array[typings.std.Record[java.lang.String, js.Any]], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.ChunkOptions & typings.algoliaClientSearch.mod.PartialUpdateObjectsOptions
@@ -556,8 +495,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh]]
 
-@scala.inline
-def removeUserID(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def removeUserID(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* userID */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseRemoveUser] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeUserID")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -565,8 +503,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseRemoveUser] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseRemoveUser]]
 
-@scala.inline
-def replaceAllObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def replaceAllObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objects */ js.Array[typings.std.Record[java.lang.String, js.Any]], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.ReplaceAllObjectsOptions & typings.algoliaClientSearch.mod.ChunkOptions & typings.algoliaClientSearch.mod.SaveObjectsOptions & typings.algoliaTransporter.mod.RequestOptions
@@ -578,8 +515,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh]]
 
-@scala.inline
-def replaceAllRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def replaceAllRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* rules */ js.Array[typings.algoliaClientSearch.mod.Rule], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.SaveRulesOptions
@@ -591,8 +527,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSa] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSa]]
 
-@scala.inline
-def replaceAllSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def replaceAllSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* synonyms */ js.Array[typings.algoliaClientSearch.mod.Synonym], 
 /* requestOptions */ js.UndefOr[typings.algoliaClientSearch.anon.RequestOptionsPickSaveSyn], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaCatch] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("replaceAllSynonyms")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -600,8 +535,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaCatch] = typings.algol
 /* requestOptions */ js.UndefOr[typings.algoliaClientSearch.anon.RequestOptionsPickSaveSyn], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaCatch]]
 
-@scala.inline
-def restoreApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def restoreApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* apiKey */ java.lang.String, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseRe] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("restoreApiKey")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
@@ -609,8 +543,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseRe] = typings.algoliaCli
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseRe]]
 
-@scala.inline
-def saveObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def saveObject(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* object */ typings.std.Record[java.lang.String, js.Any], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.ChunkOptions & typings.algoliaClientSearch.mod.SaveObjectsOptions
@@ -622,8 +555,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaFinally] = typings.alg
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaFinally]]
 
-@scala.inline
-def saveObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def saveObjects(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* objects */ js.Array[typings.std.Record[java.lang.String, js.Any]], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.ChunkOptions & typings.algoliaClientSearch.mod.SaveObjectsOptions
@@ -635,8 +567,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseCh]]
 
-@scala.inline
-def saveRule(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def saveRule(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* rule */ typings.algoliaClientSearch.mod.Rule, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.SaveRulesOptions
@@ -648,8 +579,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaThen] = typings.algoli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaThen]]
 
-@scala.inline
-def saveRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def saveRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* rules */ js.Array[typings.algoliaClientSearch.mod.Rule], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.SaveRulesOptions
@@ -661,8 +591,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSa] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSa]]
 
-@scala.inline
-def saveSynonym(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def saveSynonym(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* synonym */ typings.algoliaClientSearch.mod.Synonym, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.SaveSynonymsOptions
@@ -674,8 +603,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaWait] = typings.algoli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaWait]]
 
-@scala.inline
-def saveSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def saveSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* synonyms */ js.Array[typings.algoliaClientSearch.mod.Synonym], 
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.SaveSynonymsOptions & typings.algoliaTransporter.mod.RequestOptions
@@ -687,8 +615,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaCatch] = typings.algol
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSaCatch]]
 
-@scala.inline
-def search(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def search(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* query */ java.lang.String, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.SearchOptions
@@ -700,8 +627,7 @@ js.Promise[typings.algoliaClientSearch.mod.SearchResponse[js.Any]]] = typings.al
 ], 
 js.Promise[typings.algoliaClientSearch.mod.SearchResponse[js.Any]]]]
 
-@scala.inline
-def searchForFacetValues(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function3[
+inline def searchForFacetValues(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function3[
 /* facetName */ java.lang.String, 
 /* facetQuery */ java.lang.String, 
 /* requestOptions */ js.UndefOr[
@@ -715,8 +641,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseSearchForF] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseSearchForF]]
 
-@scala.inline
-def searchRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def searchRules(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* query */ java.lang.String, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.SearchRulesOptions
@@ -728,8 +653,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseSearchResp] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseSearchResp]]
 
-@scala.inline
-def searchSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def searchSynonyms(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* query */ java.lang.String, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.SearchSynonymsOptions & typings.algoliaTransporter.mod.RequestOptions
@@ -741,8 +665,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseSearchSyno] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseSearchSyno]]
 
-@scala.inline
-def searchUserIDs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def searchUserIDs(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* query */ java.lang.String, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.SearchUserIDsOptions & typings.algoliaTransporter.mod.RequestOptions
@@ -754,8 +677,7 @@ typings.algoliaClientSearch.anon.ReadonlyPromiseSearchUser] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyPromiseSearchUser]]
 
-@scala.inline
-def setSettings(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def setSettings(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* settings */ typings.algoliaClientSearch.mod.Settings, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaTransporter.mod.RequestOptions & typings.algoliaClientSearch.mod.SetSettingsOptions
@@ -767,8 +689,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSe] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseSe]]
 
-@scala.inline
-def updateApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
+inline def updateApiKey(base: typings.algoliaClientSearch.mod.SearchClient): js.Function2[
 /* apiKey */ java.lang.String, 
 /* requestOptions */ js.UndefOr[
   typings.algoliaClientSearch.mod.UpdateApiKeyOptions & (typings.std.Pick[typings.algoliaTransporter.mod.RequestOptions, java.lang.String | scala.Double])
@@ -780,8 +701,7 @@ typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseUp] = typings.algoliaCli
 ], 
 typings.algoliaClientSearch.anon.ReadonlyWaitablePromiseUp]]
 
-@scala.inline
-def waitTask(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
+inline def waitTask(base: typings.algoliaClientSearch.mod.SearchIndex): js.Function2[
 /* taskID */ scala.Double, 
 /* requestOptions */ js.UndefOr[typings.algoliaTransporter.mod.RequestOptions], 
 typings.algoliaClientSearch.anon.ReadonlyPromisevoid] = typings.algoliaClientSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("waitTask")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[

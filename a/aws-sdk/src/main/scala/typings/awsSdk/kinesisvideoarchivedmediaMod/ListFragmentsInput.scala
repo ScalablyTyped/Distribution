@@ -28,34 +28,25 @@ trait ListFragmentsInput extends StObject {
 }
 object ListFragmentsInput {
   
-  @scala.inline
-  def apply(StreamName: StreamName): ListFragmentsInput = {
+  inline def apply(StreamName: StreamName): ListFragmentsInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFragmentsInput]
   }
   
-  @scala.inline
-  implicit class ListFragmentsInputMutableBuilder[Self <: ListFragmentsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListFragmentsInput](x: Self) {
     
-    @scala.inline
-    def setFragmentSelector(value: FragmentSelector): Self = StObject.set(x, "FragmentSelector", value.asInstanceOf[js.Any])
+    inline def setFragmentSelector(value: FragmentSelector): Self = StObject.set(x, "FragmentSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentSelectorUndefined: Self = StObject.set(x, "FragmentSelector", js.undefined)
+    inline def setFragmentSelectorUndefined: Self = StObject.set(x, "FragmentSelector", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

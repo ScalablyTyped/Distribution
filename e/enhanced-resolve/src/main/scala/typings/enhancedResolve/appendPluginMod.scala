@@ -40,8 +40,7 @@ object appendPluginMod {
   }
   object AppendPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appending: String,
       apply: typings.enhancedResolve.resolverMod.^ => Unit,
       source: String,
@@ -51,20 +50,15 @@ object appendPluginMod {
       __obj.asInstanceOf[AppendPlugin]
     }
     
-    @scala.inline
-    implicit class AppendPluginMutableBuilder[Self <: AppendPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: AppendPlugin](x: Self) {
       
-      @scala.inline
-      def setAppending(value: String): Self = StObject.set(x, "appending", value.asInstanceOf[js.Any])
+      inline def setAppending(value: String): Self = StObject.set(x, "appending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

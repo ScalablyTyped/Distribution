@@ -13,16 +13,13 @@ trait GetChangeRequest extends StObject {
 }
 object GetChangeRequest {
   
-  @scala.inline
-  def apply(Id: ResourceId): GetChangeRequest = {
+  inline def apply(Id: ResourceId): GetChangeRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChangeRequest]
   }
   
-  @scala.inline
-  implicit class GetChangeRequestMutableBuilder[Self <: GetChangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetChangeRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ trait WebSocketKeepAlive
      with IBackgroundTask
 object WebSocketKeepAlive {
   
-  @scala.inline
-  def apply(run: IBackgroundTaskInstance => Unit): WebSocketKeepAlive = {
+  inline def apply(run: IBackgroundTaskInstance => Unit): WebSocketKeepAlive = {
     val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
     __obj.asInstanceOf[WebSocketKeepAlive]
   }

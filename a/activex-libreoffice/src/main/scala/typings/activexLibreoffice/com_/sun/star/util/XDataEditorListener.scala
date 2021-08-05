@@ -16,8 +16,7 @@ trait XDataEditorListener
 }
 object XDataEditorListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -27,10 +26,8 @@ object XDataEditorListener {
     __obj.asInstanceOf[XDataEditorListener]
   }
   
-  @scala.inline
-  implicit class XDataEditorListenerMutableBuilder[Self <: XDataEditorListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDataEditorListener](x: Self) {
     
-    @scala.inline
-    def setUpdateDataEditorState(value: DataEditorEvent => Unit): Self = StObject.set(x, "updateDataEditorState", js.Any.fromFunction1(value))
+    inline def setUpdateDataEditorState(value: DataEditorEvent => Unit): Self = StObject.set(x, "updateDataEditorState", js.Any.fromFunction1(value))
   }
 }

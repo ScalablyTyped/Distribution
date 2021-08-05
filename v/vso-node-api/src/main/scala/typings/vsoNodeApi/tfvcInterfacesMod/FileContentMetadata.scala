@@ -22,8 +22,7 @@ trait FileContentMetadata extends StObject {
 }
 object FileContentMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentType: String,
     encoding: Double,
     `extension`: String,
@@ -37,28 +36,20 @@ object FileContentMetadata {
     __obj.asInstanceOf[FileContentMetadata]
   }
   
-  @scala.inline
-  implicit class FileContentMetadataMutableBuilder[Self <: FileContentMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: FileContentMetadata](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
+    inline def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsImage(value: Boolean): Self = StObject.set(x, "isImage", value.asInstanceOf[js.Any])
+    inline def setIsImage(value: Boolean): Self = StObject.set(x, "isImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVsLink(value: String): Self = StObject.set(x, "vsLink", value.asInstanceOf[js.Any])
+    inline def setVsLink(value: String): Self = StObject.set(x, "vsLink", value.asInstanceOf[js.Any])
   }
 }

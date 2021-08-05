@@ -23,19 +23,15 @@ trait ASPxClientDashboardItemWidgetEventArgs
 }
 object ASPxClientDashboardItemWidgetEventArgs {
   
-  @scala.inline
-  def apply(GetWidget: () => js.Any, ItemName: String): ASPxClientDashboardItemWidgetEventArgs = {
+  inline def apply(GetWidget: () => js.Any, ItemName: String): ASPxClientDashboardItemWidgetEventArgs = {
     val __obj = js.Dynamic.literal(GetWidget = js.Any.fromFunction0(GetWidget), ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemWidgetEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemWidgetEventArgsMutableBuilder[Self <: ASPxClientDashboardItemWidgetEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemWidgetEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetWidget(value: () => js.Any): Self = StObject.set(x, "GetWidget", js.Any.fromFunction0(value))
+    inline def setGetWidget(value: () => js.Any): Self = StObject.set(x, "GetWidget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait InstanceFleetTimeline extends StObject {
 }
 object InstanceFleetTimeline {
   
-  @scala.inline
-  def apply(): InstanceFleetTimeline = {
+  inline def apply(): InstanceFleetTimeline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceFleetTimeline]
   }
   
-  @scala.inline
-  implicit class InstanceFleetTimelineMutableBuilder[Self <: InstanceFleetTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceFleetTimeline](x: Self) {
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
+    inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     
-    @scala.inline
-    def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
-    @scala.inline
-    def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
+    inline def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
+    inline def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
   }
 }

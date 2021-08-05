@@ -29,7 +29,6 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromNumber(number: Double): typings.awsSdkEventstreamMarshaller.int64Mod.Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkEventstreamMarshaller.int64Mod.Int64]
+    inline def fromNumber(number: Double): typings.awsSdkEventstreamMarshaller.int64Mod.Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(number.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkEventstreamMarshaller.int64Mod.Int64]
   }
 }

@@ -27,8 +27,7 @@ trait BulkWriterError
 }
 object BulkWriterError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: GrpcStatus,
     documentRef: DocumentReference[js.Any],
     failedAttempts: Double,
@@ -40,19 +39,14 @@ object BulkWriterError {
     __obj.asInstanceOf[BulkWriterError]
   }
   
-  @scala.inline
-  implicit class BulkWriterErrorMutableBuilder[Self <: BulkWriterError] (val x: Self) extends AnyVal {
+  extension [Self <: BulkWriterError](x: Self) {
     
-    @scala.inline
-    def setCode(value: GrpcStatus): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: GrpcStatus): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentRef(value: DocumentReference[js.Any]): Self = StObject.set(x, "documentRef", value.asInstanceOf[js.Any])
+    inline def setDocumentRef(value: DocumentReference[js.Any]): Self = StObject.set(x, "documentRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedAttempts(value: Double): Self = StObject.set(x, "failedAttempts", value.asInstanceOf[js.Any])
+    inline def setFailedAttempts(value: Double): Self = StObject.set(x, "failedAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationType(value: create | set | update | delete): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: create | set | update | delete): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }
 }

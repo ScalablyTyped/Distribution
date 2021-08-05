@@ -25,8 +25,7 @@ object searchCategoryMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object SearchCategoryProps {
     
-    @scala.inline
-    def apply(): SearchCategoryProps = {
+    inline def apply(): SearchCategoryProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchCategoryProps]
     }
@@ -76,71 +75,50 @@ object searchCategoryMod extends Shortcut {
   }
   object StrictSearchCategoryProps {
     
-    @scala.inline
-    def apply(): StrictSearchCategoryProps = {
+    inline def apply(): StrictSearchCategoryProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictSearchCategoryProps]
     }
     
-    @scala.inline
-    implicit class StrictSearchCategoryPropsMutableBuilder[Self <: StrictSearchCategoryProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictSearchCategoryProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setLayoutRenderer(value: (/* categoryContent */ ReactElement, /* resultsContent */ ReactElement) => ReactElement): Self = StObject.set(x, "layoutRenderer", js.Any.fromFunction2(value))
+      inline def setLayoutRenderer(value: (/* categoryContent */ ReactElement, /* resultsContent */ ReactElement) => ReactElement): Self = StObject.set(x, "layoutRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLayoutRendererUndefined: Self = StObject.set(x, "layoutRenderer", js.undefined)
+      inline def setLayoutRendererUndefined: Self = StObject.set(x, "layoutRenderer", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRenderer(value: /* props */ SearchCategoryProps => ReactElement): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
+      inline def setRenderer(value: /* props */ SearchCategoryProps => ReactElement): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      @scala.inline
-      def setResults(value: js.Array[ComponentClass[SearchResultProps, ComponentState]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[ComponentClass[SearchResultProps, ComponentState]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      @scala.inline
-      def setResultsVarargs(value: (ComponentClass[SearchResultProps, ComponentState])*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: (ComponentClass[SearchResultProps, ComponentState])*): Self = StObject.set(x, "results", js.Array(value :_*))
     }
   }
   

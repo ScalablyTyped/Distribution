@@ -18,25 +18,19 @@ trait MethodSnapshot extends StObject {
 }
 object MethodSnapshot {
   
-  @scala.inline
-  def apply(): MethodSnapshot = {
+  inline def apply(): MethodSnapshot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MethodSnapshot]
   }
   
-  @scala.inline
-  implicit class MethodSnapshotMutableBuilder[Self <: MethodSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: MethodSnapshot](x: Self) {
     
-    @scala.inline
-    def setApiKeyRequired(value: Boolean): Self = StObject.set(x, "apiKeyRequired", value.asInstanceOf[js.Any])
+    inline def setApiKeyRequired(value: Boolean): Self = StObject.set(x, "apiKeyRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiKeyRequiredUndefined: Self = StObject.set(x, "apiKeyRequired", js.undefined)
+    inline def setApiKeyRequiredUndefined: Self = StObject.set(x, "apiKeyRequired", js.undefined)
     
-    @scala.inline
-    def setAuthorizationType(value: String): Self = StObject.set(x, "authorizationType", value.asInstanceOf[js.Any])
+    inline def setAuthorizationType(value: String): Self = StObject.set(x, "authorizationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationTypeUndefined: Self = StObject.set(x, "authorizationType", js.undefined)
+    inline def setAuthorizationTypeUndefined: Self = StObject.set(x, "authorizationType", js.undefined)
   }
 }

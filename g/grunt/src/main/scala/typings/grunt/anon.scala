@@ -20,44 +20,32 @@ object anon {
   }
   object Custom {
     
-    @scala.inline
-    def apply(): Custom = {
+    inline def apply(): Custom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Custom]
     }
     
-    @scala.inline
-    implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
+    extension [Self <: Custom](x: Self) {
       
-      @scala.inline
-      def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setCwd(value: java.lang.String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: java.lang.String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+      inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+      inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      @scala.inline
-      def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setStdio(value: js.Any): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+      inline def setStdio(value: js.Any): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
+      inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     }
   }
   
@@ -67,20 +55,16 @@ object anon {
   }
   object Force {
     
-    @scala.inline
-    def apply(): Force = {
+    inline def apply(): Force = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Force]
     }
     
-    @scala.inline
-    implicit class ForceMutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
+    extension [Self <: Force](x: Self) {
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     }
   }
 }

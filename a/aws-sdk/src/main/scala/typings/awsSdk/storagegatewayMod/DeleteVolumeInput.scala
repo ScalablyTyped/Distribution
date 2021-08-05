@@ -13,16 +13,13 @@ trait DeleteVolumeInput extends StObject {
 }
 object DeleteVolumeInput {
   
-  @scala.inline
-  def apply(VolumeARN: VolumeARN): DeleteVolumeInput = {
+  inline def apply(VolumeARN: VolumeARN): DeleteVolumeInput = {
     val __obj = js.Dynamic.literal(VolumeARN = VolumeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVolumeInput]
   }
   
-  @scala.inline
-  implicit class DeleteVolumeInputMutableBuilder[Self <: DeleteVolumeInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVolumeInput](x: Self) {
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
   }
 }

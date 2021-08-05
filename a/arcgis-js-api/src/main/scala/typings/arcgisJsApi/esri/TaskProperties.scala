@@ -22,25 +22,19 @@ trait TaskProperties extends StObject {
 }
 object TaskProperties {
   
-  @scala.inline
-  def apply(): TaskProperties = {
+  inline def apply(): TaskProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskProperties]
   }
   
-  @scala.inline
-  implicit class TaskPropertiesMutableBuilder[Self <: TaskProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TaskProperties](x: Self) {
     
-    @scala.inline
-    def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRequestOptions(value: js.Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

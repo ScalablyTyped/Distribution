@@ -19,6 +19,5 @@ class BrowserPreviewWidget protected ()
 }
 object BrowserPreviewWidget {
   
-  @scala.inline
-  def apply: ComponentClass[BrowserPreviewWidgetProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("BrowserPreviewWidget").asInstanceOf[ComponentClass[BrowserPreviewWidgetProps, ComponentState]]
+  inline def apply: ComponentClass[BrowserPreviewWidgetProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("BrowserPreviewWidget").asInstanceOf[ComponentClass[BrowserPreviewWidgetProps, ComponentState]]
 }

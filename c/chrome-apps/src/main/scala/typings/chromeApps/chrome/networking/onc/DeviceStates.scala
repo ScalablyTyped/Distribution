@@ -37,37 +37,27 @@ trait DeviceStates extends StObject {
 }
 object DeviceStates {
   
-  @scala.inline
-  def apply(State: DeviceState, Type: NetworkType): DeviceStates = {
+  inline def apply(State: DeviceState, Type: NetworkType): DeviceStates = {
     val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceStates]
   }
   
-  @scala.inline
-  implicit class DeviceStatesMutableBuilder[Self <: DeviceStates] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceStates](x: Self) {
     
-    @scala.inline
-    def setSIMLockStatus(value: SIMLockStatus): Self = StObject.set(x, "SIMLockStatus", value.asInstanceOf[js.Any])
+    inline def setSIMLockStatus(value: SIMLockStatus): Self = StObject.set(x, "SIMLockStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSIMLockStatusUndefined: Self = StObject.set(x, "SIMLockStatus", js.undefined)
+    inline def setSIMLockStatusUndefined: Self = StObject.set(x, "SIMLockStatus", js.undefined)
     
-    @scala.inline
-    def setSIMPresent(value: Boolean): Self = StObject.set(x, "SIMPresent", value.asInstanceOf[js.Any])
+    inline def setSIMPresent(value: Boolean): Self = StObject.set(x, "SIMPresent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSIMPresentUndefined: Self = StObject.set(x, "SIMPresent", js.undefined)
+    inline def setSIMPresentUndefined: Self = StObject.set(x, "SIMPresent", js.undefined)
     
-    @scala.inline
-    def setScanning(value: Boolean): Self = StObject.set(x, "Scanning", value.asInstanceOf[js.Any])
+    inline def setScanning(value: Boolean): Self = StObject.set(x, "Scanning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanningUndefined: Self = StObject.set(x, "Scanning", js.undefined)
+    inline def setScanningUndefined: Self = StObject.set(x, "Scanning", js.undefined)
     
-    @scala.inline
-    def setState(value: DeviceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: DeviceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NetworkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: NetworkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

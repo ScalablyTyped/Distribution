@@ -23,8 +23,7 @@ trait ChatMediaInfo extends StObject {
 }
 object ChatMediaInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contactId: String,
     getConnectionToken: () => js.Promise[ConnectionToken],
     initialContactId: String,
@@ -36,25 +35,18 @@ object ChatMediaInfo {
     __obj.asInstanceOf[ChatMediaInfo]
   }
   
-  @scala.inline
-  implicit class ChatMediaInfoMutableBuilder[Self <: ChatMediaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMediaInfo](x: Self) {
     
-    @scala.inline
-    def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConnectionToken(value: () => js.Promise[ConnectionToken]): Self = StObject.set(x, "getConnectionToken", js.Any.fromFunction0(value))
+    inline def setGetConnectionToken(value: () => js.Promise[ConnectionToken]): Self = StObject.set(x, "getConnectionToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitialContactId(value: String): Self = StObject.set(x, "initialContactId", value.asInstanceOf[js.Any])
+    inline def setInitialContactId(value: String): Self = StObject.set(x, "initialContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalInfo(value: ChatAutoAccept): Self = StObject.set(x, "originalInfo", value.asInstanceOf[js.Any])
+    inline def setOriginalInfo(value: ChatAutoAccept): Self = StObject.set(x, "originalInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
+    inline def setParticipantId(value: String): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantToken(value: String): Self = StObject.set(x, "participantToken", value.asInstanceOf[js.Any])
+    inline def setParticipantToken(value: String): Self = StObject.set(x, "participantToken", value.asInstanceOf[js.Any])
   }
 }

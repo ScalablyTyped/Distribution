@@ -13,25 +13,19 @@ trait DeviceAndAppManagementRoleAssignment
 }
 object DeviceAndAppManagementRoleAssignment {
   
-  @scala.inline
-  def apply(): DeviceAndAppManagementRoleAssignment = {
+  inline def apply(): DeviceAndAppManagementRoleAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceAndAppManagementRoleAssignment]
   }
   
-  @scala.inline
-  implicit class DeviceAndAppManagementRoleAssignmentMutableBuilder[Self <: DeviceAndAppManagementRoleAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceAndAppManagementRoleAssignment](x: Self) {
     
-    @scala.inline
-    def setMembers(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersNull: Self = StObject.set(x, "members", null)
+    inline def setMembersNull: Self = StObject.set(x, "members", null)
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
   }
 }

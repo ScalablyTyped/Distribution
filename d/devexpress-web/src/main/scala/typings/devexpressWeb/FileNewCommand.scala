@@ -18,16 +18,13 @@ trait FileNewCommand
 }
 object FileNewCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): FileNewCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): FileNewCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[FileNewCommand]
   }
   
-  @scala.inline
-  implicit class FileNewCommandMutableBuilder[Self <: FileNewCommand] (val x: Self) extends AnyVal {
+  extension [Self <: FileNewCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

@@ -13,16 +13,13 @@ trait EntryPathRecursiveRequestedEventOptions
 }
 object EntryPathRecursiveRequestedEventOptions {
   
-  @scala.inline
-  def apply(entryPath: String, fileSystemId: String, recursive: Boolean, requestId: Double): EntryPathRecursiveRequestedEventOptions = {
+  inline def apply(entryPath: String, fileSystemId: String, recursive: Boolean, requestId: Double): EntryPathRecursiveRequestedEventOptions = {
     val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryPathRecursiveRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class EntryPathRecursiveRequestedEventOptionsMutableBuilder[Self <: EntryPathRecursiveRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EntryPathRecursiveRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }
 }

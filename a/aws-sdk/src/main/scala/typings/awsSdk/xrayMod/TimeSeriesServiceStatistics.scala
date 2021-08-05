@@ -27,46 +27,33 @@ trait TimeSeriesServiceStatistics extends StObject {
 }
 object TimeSeriesServiceStatistics {
   
-  @scala.inline
-  def apply(): TimeSeriesServiceStatistics = {
+  inline def apply(): TimeSeriesServiceStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeSeriesServiceStatistics]
   }
   
-  @scala.inline
-  implicit class TimeSeriesServiceStatisticsMutableBuilder[Self <: TimeSeriesServiceStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: TimeSeriesServiceStatistics](x: Self) {
     
-    @scala.inline
-    def setEdgeSummaryStatistics(value: EdgeStatistics): Self = StObject.set(x, "EdgeSummaryStatistics", value.asInstanceOf[js.Any])
+    inline def setEdgeSummaryStatistics(value: EdgeStatistics): Self = StObject.set(x, "EdgeSummaryStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeSummaryStatisticsUndefined: Self = StObject.set(x, "EdgeSummaryStatistics", js.undefined)
+    inline def setEdgeSummaryStatisticsUndefined: Self = StObject.set(x, "EdgeSummaryStatistics", js.undefined)
     
-    @scala.inline
-    def setResponseTimeHistogram(value: Histogram): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
+    inline def setResponseTimeHistogram(value: Histogram): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
+    inline def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
     
-    @scala.inline
-    def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
+    inline def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceForecastStatistics(value: ForecastStatistics): Self = StObject.set(x, "ServiceForecastStatistics", value.asInstanceOf[js.Any])
+    inline def setServiceForecastStatistics(value: ForecastStatistics): Self = StObject.set(x, "ServiceForecastStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceForecastStatisticsUndefined: Self = StObject.set(x, "ServiceForecastStatistics", js.undefined)
+    inline def setServiceForecastStatisticsUndefined: Self = StObject.set(x, "ServiceForecastStatistics", js.undefined)
     
-    @scala.inline
-    def setServiceSummaryStatistics(value: ServiceStatistics): Self = StObject.set(x, "ServiceSummaryStatistics", value.asInstanceOf[js.Any])
+    inline def setServiceSummaryStatistics(value: ServiceStatistics): Self = StObject.set(x, "ServiceSummaryStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceSummaryStatisticsUndefined: Self = StObject.set(x, "ServiceSummaryStatistics", js.undefined)
+    inline def setServiceSummaryStatisticsUndefined: Self = StObject.set(x, "ServiceSummaryStatistics", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait GetComponentResponse extends StObject {
 }
 object GetComponentResponse {
   
-  @scala.inline
-  def apply(): GetComponentResponse = {
+  inline def apply(): GetComponentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetComponentResponse]
   }
   
-  @scala.inline
-  implicit class GetComponentResponseMutableBuilder[Self <: GetComponentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetComponentResponse](x: Self) {
     
-    @scala.inline
-    def setComponent(value: Component): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Component): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

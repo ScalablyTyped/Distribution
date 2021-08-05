@@ -18,19 +18,15 @@ trait TrustedAdvisorCostOptimizingSummary extends StObject {
 }
 object TrustedAdvisorCostOptimizingSummary {
   
-  @scala.inline
-  def apply(estimatedMonthlySavings: Double, estimatedPercentMonthlySavings: Double): TrustedAdvisorCostOptimizingSummary = {
+  inline def apply(estimatedMonthlySavings: Double, estimatedPercentMonthlySavings: Double): TrustedAdvisorCostOptimizingSummary = {
     val __obj = js.Dynamic.literal(estimatedMonthlySavings = estimatedMonthlySavings.asInstanceOf[js.Any], estimatedPercentMonthlySavings = estimatedPercentMonthlySavings.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustedAdvisorCostOptimizingSummary]
   }
   
-  @scala.inline
-  implicit class TrustedAdvisorCostOptimizingSummaryMutableBuilder[Self <: TrustedAdvisorCostOptimizingSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TrustedAdvisorCostOptimizingSummary](x: Self) {
     
-    @scala.inline
-    def setEstimatedMonthlySavings(value: Double): Self = StObject.set(x, "estimatedMonthlySavings", value.asInstanceOf[js.Any])
+    inline def setEstimatedMonthlySavings(value: Double): Self = StObject.set(x, "estimatedMonthlySavings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedPercentMonthlySavings(value: Double): Self = StObject.set(x, "estimatedPercentMonthlySavings", value.asInstanceOf[js.Any])
+    inline def setEstimatedPercentMonthlySavings(value: Double): Self = StObject.set(x, "estimatedPercentMonthlySavings", value.asInstanceOf[js.Any])
   }
 }

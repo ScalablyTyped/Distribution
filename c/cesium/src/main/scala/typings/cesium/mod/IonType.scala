@@ -14,8 +14,7 @@ trait IonType extends StObject {
 }
 object IonType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultAccessToken: String,
     defaultServer: String | Resource,
     getDefaultTokenCredit: String => Credit
@@ -24,16 +23,12 @@ object IonType {
     __obj.asInstanceOf[IonType]
   }
   
-  @scala.inline
-  implicit class IonTypeMutableBuilder[Self <: IonType] (val x: Self) extends AnyVal {
+  extension [Self <: IonType](x: Self) {
     
-    @scala.inline
-    def setDefaultAccessToken(value: String): Self = StObject.set(x, "defaultAccessToken", value.asInstanceOf[js.Any])
+    inline def setDefaultAccessToken(value: String): Self = StObject.set(x, "defaultAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultServer(value: String | Resource): Self = StObject.set(x, "defaultServer", value.asInstanceOf[js.Any])
+    inline def setDefaultServer(value: String | Resource): Self = StObject.set(x, "defaultServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultTokenCredit(value: String => Credit): Self = StObject.set(x, "getDefaultTokenCredit", js.Any.fromFunction1(value))
+    inline def setGetDefaultTokenCredit(value: String => Credit): Self = StObject.set(x, "getDefaultTokenCredit", js.Any.fromFunction1(value))
   }
 }

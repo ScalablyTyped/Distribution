@@ -13,19 +13,15 @@ trait DeleteGroupOutput extends StObject {
 }
 object DeleteGroupOutput {
   
-  @scala.inline
-  def apply(): DeleteGroupOutput = {
+  inline def apply(): DeleteGroupOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteGroupOutput]
   }
   
-  @scala.inline
-  implicit class DeleteGroupOutputMutableBuilder[Self <: DeleteGroupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGroupOutput](x: Self) {
     
-    @scala.inline
-    def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
   }
 }

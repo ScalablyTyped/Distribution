@@ -23,28 +23,21 @@ trait DescribeEffectivePatchesForPatchBaselineRequest extends StObject {
 }
 object DescribeEffectivePatchesForPatchBaselineRequest {
   
-  @scala.inline
-  def apply(BaselineId: BaselineId): DescribeEffectivePatchesForPatchBaselineRequest = {
+  inline def apply(BaselineId: BaselineId): DescribeEffectivePatchesForPatchBaselineRequest = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEffectivePatchesForPatchBaselineRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEffectivePatchesForPatchBaselineRequestMutableBuilder[Self <: DescribeEffectivePatchesForPatchBaselineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEffectivePatchesForPatchBaselineRequest](x: Self) {
     
-    @scala.inline
-    def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
+    inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: PatchBaselineMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PatchBaselineMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

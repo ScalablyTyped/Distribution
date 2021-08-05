@@ -16,16 +16,13 @@ trait PpapiBrokerSetDetails
 }
 object PpapiBrokerSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block | ask): PpapiBrokerSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block | ask): PpapiBrokerSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[PpapiBrokerSetDetails]
   }
   
-  @scala.inline
-  implicit class PpapiBrokerSetDetailsMutableBuilder[Self <: PpapiBrokerSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PpapiBrokerSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

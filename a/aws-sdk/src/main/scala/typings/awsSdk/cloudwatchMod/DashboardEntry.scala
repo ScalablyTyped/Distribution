@@ -28,37 +28,27 @@ trait DashboardEntry extends StObject {
 }
 object DashboardEntry {
   
-  @scala.inline
-  def apply(): DashboardEntry = {
+  inline def apply(): DashboardEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashboardEntry]
   }
   
-  @scala.inline
-  implicit class DashboardEntryMutableBuilder[Self <: DashboardEntry] (val x: Self) extends AnyVal {
+  extension [Self <: DashboardEntry](x: Self) {
     
-    @scala.inline
-    def setDashboardArn(value: DashboardArn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
+    inline def setDashboardArn(value: DashboardArn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
+    inline def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
     
-    @scala.inline
-    def setDashboardName(value: DashboardName): Self = StObject.set(x, "DashboardName", value.asInstanceOf[js.Any])
+    inline def setDashboardName(value: DashboardName): Self = StObject.set(x, "DashboardName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardNameUndefined: Self = StObject.set(x, "DashboardName", js.undefined)
+    inline def setDashboardNameUndefined: Self = StObject.set(x, "DashboardName", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

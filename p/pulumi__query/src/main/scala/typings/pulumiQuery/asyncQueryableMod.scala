@@ -20,7 +20,7 @@ object asyncQueryableMod {
   - typings.pulumiQuery.interfacesMod.AsyncQueryable because var conflicts: `return`, `throw`. Inlined filter, flatMap, flatMap, map, skip, skipWhile, take, takeWhile, join, groupJoin, concat, reverse, orderBy, orderByDescending, groupBy, groupBy, distinct, union, intersect, except, first, first, firstOrDefault, firstOrDefault, last, last, lastOrDefault, lastOrDefault, single, single, singleOrDefault, singleOrDefault, elementAt, elementAtOrDefault, elementAtOrDefault, defaultIfEmpty, any, any, all, contains, count, count, sum, sum, min, min, max, max, average, average, aggregate, toArray, toMap, toMap, ofType, forEach, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe */ @JSImport("@pulumi/query/asyncQueryable", "AsyncQueryableImpl")
   @js.native
   class AsyncQueryableImpl[TSource] protected () extends IterableBase[TSource] {
-    protected def this(source: AsyncIterableIterator[TSource]) = this()
+    /* protected */ def this(source: AsyncIterableIterator[TSource]) = this()
     
     /**
       * Accumulates a value over a sequence. `func` is applied to each element in the sequence, an
@@ -421,8 +421,7 @@ object asyncQueryableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def from[TSource](source: AsyncQuerySource[TSource]): AsyncQueryableImpl[TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryableImpl[TSource]]
+    inline def from[TSource](source: AsyncQuerySource[TSource]): AsyncQueryableImpl[TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryableImpl[TSource]]
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

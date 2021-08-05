@@ -15,28 +15,21 @@ trait GatewayResponses extends StObject {
 }
 object GatewayResponses {
   
-  @scala.inline
-  def apply(): GatewayResponses = {
+  inline def apply(): GatewayResponses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GatewayResponses]
   }
   
-  @scala.inline
-  implicit class GatewayResponsesMutableBuilder[Self <: GatewayResponses] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayResponses](x: Self) {
     
-    @scala.inline
-    def setItems(value: ListOfGatewayResponse): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ListOfGatewayResponse): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: GatewayResponse*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GatewayResponse*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

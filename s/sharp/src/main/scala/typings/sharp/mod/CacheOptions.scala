@@ -17,31 +17,23 @@ trait CacheOptions extends StObject {
 }
 object CacheOptions {
   
-  @scala.inline
-  def apply(): CacheOptions = {
+  inline def apply(): CacheOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheOptions]
   }
   
-  @scala.inline
-  implicit class CacheOptionsMutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CacheOptions](x: Self) {
     
-    @scala.inline
-    def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: Double): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+    inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
   }
 }

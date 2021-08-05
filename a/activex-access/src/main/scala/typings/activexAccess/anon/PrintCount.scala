@@ -12,19 +12,15 @@ trait PrintCount extends StObject {
 }
 object PrintCount {
   
-  @scala.inline
-  def apply(Cancel: Double, PrintCount: Double): PrintCount = {
+  inline def apply(Cancel: Double, PrintCount: Double): PrintCount = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], PrintCount = PrintCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintCount]
   }
   
-  @scala.inline
-  implicit class PrintCountMutableBuilder[Self <: PrintCount] (val x: Self) extends AnyVal {
+  extension [Self <: PrintCount](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Double): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Double): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintCount(value: Double): Self = StObject.set(x, "PrintCount", value.asInstanceOf[js.Any])
+    inline def setPrintCount(value: Double): Self = StObject.set(x, "PrintCount", value.asInstanceOf[js.Any])
   }
 }

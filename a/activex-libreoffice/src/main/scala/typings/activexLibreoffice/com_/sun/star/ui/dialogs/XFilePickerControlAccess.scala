@@ -68,8 +68,7 @@ trait XFilePickerControlAccess
 }
 object XFilePickerControlAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DisplayDirectory: String,
     Files: SafeArray[String],
     acquire: () => Unit,
@@ -92,22 +91,16 @@ object XFilePickerControlAccess {
     __obj.asInstanceOf[XFilePickerControlAccess]
   }
   
-  @scala.inline
-  implicit class XFilePickerControlAccessMutableBuilder[Self <: XFilePickerControlAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XFilePickerControlAccess](x: Self) {
     
-    @scala.inline
-    def setEnableControl(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enableControl", js.Any.fromFunction2(value))
+    inline def setEnableControl(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enableControl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLabel(value: Double => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction1(value))
+    inline def setGetLabel(value: Double => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValue(value: (Double, Double) => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction2(value))
+    inline def setGetValue(value: (Double, Double) => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetLabel(value: (Double, String) => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction2(value))
+    inline def setSetLabel(value: (Double, String) => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetValue(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
+    inline def setSetValue(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
   }
 }

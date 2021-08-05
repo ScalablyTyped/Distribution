@@ -13,16 +13,13 @@ trait MediaSourceError extends StObject {
 }
 object MediaSourceError {
   
-  @scala.inline
-  def apply(extendedError: WinRTError): MediaSourceError = {
+  inline def apply(extendedError: WinRTError): MediaSourceError = {
     val __obj = js.Dynamic.literal(extendedError = extendedError.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaSourceError]
   }
   
-  @scala.inline
-  implicit class MediaSourceErrorMutableBuilder[Self <: MediaSourceError] (val x: Self) extends AnyVal {
+  extension [Self <: MediaSourceError](x: Self) {
     
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
+    inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
   }
 }

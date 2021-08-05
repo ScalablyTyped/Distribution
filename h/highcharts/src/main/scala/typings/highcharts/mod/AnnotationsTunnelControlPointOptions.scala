@@ -10,19 +10,15 @@ trait AnnotationsTunnelControlPointOptions extends StObject {
 }
 object AnnotationsTunnelControlPointOptions {
   
-  @scala.inline
-  def apply(): AnnotationsTunnelControlPointOptions = {
+  inline def apply(): AnnotationsTunnelControlPointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsTunnelControlPointOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsTunnelControlPointOptionsMutableBuilder[Self <: AnnotationsTunnelControlPointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsTunnelControlPointOptions](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }
 }

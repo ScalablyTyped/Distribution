@@ -70,17 +70,14 @@ object Spi {
     }
     object ISpiProvider {
       
-      @scala.inline
-      def apply(getControllersAsync: js.Any): ISpiProvider = {
+      inline def apply(getControllersAsync: js.Any): ISpiProvider = {
         val __obj = js.Dynamic.literal(getControllersAsync = getControllersAsync.asInstanceOf[js.Any])
         __obj.asInstanceOf[ISpiProvider]
       }
       
-      @scala.inline
-      implicit class ISpiProviderMutableBuilder[Self <: ISpiProvider] (val x: Self) extends AnyVal {
+      extension [Self <: ISpiProvider](x: Self) {
         
-        @scala.inline
-        def setGetControllersAsync(value: js.Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
+        inline def setGetControllersAsync(value: js.Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
       }
     }
     
@@ -102,8 +99,7 @@ object Spi {
     }
     object ProviderSpiConnectionSettings {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         chipSelectLine: js.Any,
         clockFrequency: js.Any,
         dataBitLength: js.Any,
@@ -114,23 +110,17 @@ object Spi {
         __obj.asInstanceOf[ProviderSpiConnectionSettings]
       }
       
-      @scala.inline
-      implicit class ProviderSpiConnectionSettingsMutableBuilder[Self <: ProviderSpiConnectionSettings] (val x: Self) extends AnyVal {
+      extension [Self <: ProviderSpiConnectionSettings](x: Self) {
         
-        @scala.inline
-        def setChipSelectLine(value: js.Any): Self = StObject.set(x, "chipSelectLine", value.asInstanceOf[js.Any])
+        inline def setChipSelectLine(value: js.Any): Self = StObject.set(x, "chipSelectLine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClockFrequency(value: js.Any): Self = StObject.set(x, "clockFrequency", value.asInstanceOf[js.Any])
+        inline def setClockFrequency(value: js.Any): Self = StObject.set(x, "clockFrequency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataBitLength(value: js.Any): Self = StObject.set(x, "dataBitLength", value.asInstanceOf[js.Any])
+        inline def setDataBitLength(value: js.Any): Self = StObject.set(x, "dataBitLength", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: js.Any): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSharingMode(value: js.Any): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
+        inline def setSharingMode(value: js.Any): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -152,8 +142,7 @@ object Spi {
   }
   object SpiBusInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chipSelectLineCount: Double,
       maxClockFrequency: Double,
       minClockFrequency: Double,
@@ -163,20 +152,15 @@ object Spi {
       __obj.asInstanceOf[SpiBusInfo]
     }
     
-    @scala.inline
-    implicit class SpiBusInfoMutableBuilder[Self <: SpiBusInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SpiBusInfo](x: Self) {
       
-      @scala.inline
-      def setChipSelectLineCount(value: Double): Self = StObject.set(x, "chipSelectLineCount", value.asInstanceOf[js.Any])
+      inline def setChipSelectLineCount(value: Double): Self = StObject.set(x, "chipSelectLineCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxClockFrequency(value: Double): Self = StObject.set(x, "maxClockFrequency", value.asInstanceOf[js.Any])
+      inline def setMaxClockFrequency(value: Double): Self = StObject.set(x, "maxClockFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinClockFrequency(value: Double): Self = StObject.set(x, "minClockFrequency", value.asInstanceOf[js.Any])
+      inline def setMinClockFrequency(value: Double): Self = StObject.set(x, "minClockFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedDataBitLengths(value: IVectorView[Double]): Self = StObject.set(x, "supportedDataBitLengths", value.asInstanceOf[js.Any])
+      inline def setSupportedDataBitLengths(value: IVectorView[Double]): Self = StObject.set(x, "supportedDataBitLengths", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,8 +184,7 @@ object Spi {
   }
   object SpiConnectionSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chipSelectLine: Double,
       clockFrequency: Double,
       dataBitLength: Double,
@@ -212,23 +195,17 @@ object Spi {
       __obj.asInstanceOf[SpiConnectionSettings]
     }
     
-    @scala.inline
-    implicit class SpiConnectionSettingsMutableBuilder[Self <: SpiConnectionSettings] (val x: Self) extends AnyVal {
+    extension [Self <: SpiConnectionSettings](x: Self) {
       
-      @scala.inline
-      def setChipSelectLine(value: Double): Self = StObject.set(x, "chipSelectLine", value.asInstanceOf[js.Any])
+      inline def setChipSelectLine(value: Double): Self = StObject.set(x, "chipSelectLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockFrequency(value: Double): Self = StObject.set(x, "clockFrequency", value.asInstanceOf[js.Any])
+      inline def setClockFrequency(value: Double): Self = StObject.set(x, "clockFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBitLength(value: Double): Self = StObject.set(x, "dataBitLength", value.asInstanceOf[js.Any])
+      inline def setDataBitLength(value: Double): Self = StObject.set(x, "dataBitLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: SpiMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: SpiMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharingMode(value: SpiSharingMode): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
+      inline def setSharingMode(value: SpiSharingMode): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,17 +221,14 @@ object Spi {
   }
   object SpiController {
     
-    @scala.inline
-    def apply(getDevice: SpiConnectionSettings => SpiDevice): SpiController = {
+    inline def apply(getDevice: SpiConnectionSettings => SpiDevice): SpiController = {
       val __obj = js.Dynamic.literal(getDevice = js.Any.fromFunction1(getDevice))
       __obj.asInstanceOf[SpiController]
     }
     
-    @scala.inline
-    implicit class SpiControllerMutableBuilder[Self <: SpiController] (val x: Self) extends AnyVal {
+    extension [Self <: SpiController](x: Self) {
       
-      @scala.inline
-      def setGetDevice(value: SpiConnectionSettings => SpiDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction1(value))
+      inline def setGetDevice(value: SpiConnectionSettings => SpiDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction1(value))
     }
   }
   
@@ -298,8 +272,7 @@ object Spi {
   }
   object SpiDevice {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       connectionSettings: SpiConnectionSettings,
       deviceId: String,
@@ -312,29 +285,21 @@ object Spi {
       __obj.asInstanceOf[SpiDevice]
     }
     
-    @scala.inline
-    implicit class SpiDeviceMutableBuilder[Self <: SpiDevice] (val x: Self) extends AnyVal {
+    extension [Self <: SpiDevice](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConnectionSettings(value: SpiConnectionSettings): Self = StObject.set(x, "connectionSettings", value.asInstanceOf[js.Any])
+      inline def setConnectionSettings(value: SpiConnectionSettings): Self = StObject.set(x, "connectionSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead(value: () => js.Array[Double]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+      inline def setRead(value: () => js.Array[Double]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTransferFullDuplex(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "transferFullDuplex", js.Any.fromFunction1(value))
+      inline def setTransferFullDuplex(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "transferFullDuplex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransferSequential(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "transferSequential", js.Any.fromFunction1(value))
+      inline def setTransferSequential(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "transferSequential", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: js.Array[Double] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: js.Array[Double] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
 }

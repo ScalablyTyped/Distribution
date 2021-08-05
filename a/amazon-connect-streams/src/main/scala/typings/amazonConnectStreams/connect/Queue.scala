@@ -17,22 +17,17 @@ trait Queue extends StObject {
 }
 object Queue {
   
-  @scala.inline
-  def apply(name: String, queueARN: String, queueId: String): Queue = {
+  inline def apply(name: String, queueARN: String, queueId: String): Queue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], queueARN = queueARN.asInstanceOf[js.Any], queueId = queueId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Queue]
   }
   
-  @scala.inline
-  implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
+  extension [Self <: Queue](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueARN(value: String): Self = StObject.set(x, "queueARN", value.asInstanceOf[js.Any])
+    inline def setQueueARN(value: String): Self = StObject.set(x, "queueARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueId(value: String): Self = StObject.set(x, "queueId", value.asInstanceOf[js.Any])
+    inline def setQueueId(value: String): Self = StObject.set(x, "queueId", value.asInstanceOf[js.Any])
   }
 }

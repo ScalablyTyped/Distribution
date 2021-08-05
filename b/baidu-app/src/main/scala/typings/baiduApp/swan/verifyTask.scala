@@ -15,22 +15,17 @@ trait verifyTask extends StObject {
 }
 object verifyTask {
   
-  @scala.inline
-  def apply(data: Result, errmsg: String, errno: String): verifyTask = {
+  inline def apply(data: Result, errmsg: String, errno: String): verifyTask = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errmsg = errmsg.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any])
     __obj.asInstanceOf[verifyTask]
   }
   
-  @scala.inline
-  implicit class verifyTaskMutableBuilder[Self <: verifyTask] (val x: Self) extends AnyVal {
+  extension [Self <: verifyTask](x: Self) {
     
-    @scala.inline
-    def setData(value: Result): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Result): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrmsg(value: String): Self = StObject.set(x, "errmsg", value.asInstanceOf[js.Any])
+    inline def setErrmsg(value: String): Self = StObject.set(x, "errmsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrno(value: String): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
+    inline def setErrno(value: String): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
   }
 }

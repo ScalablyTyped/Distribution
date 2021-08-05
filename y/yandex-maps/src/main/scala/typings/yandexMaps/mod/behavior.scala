@@ -142,26 +142,20 @@ object behavior {
   }
   object IDblClickZoomOptions {
     
-    @scala.inline
-    def apply(): IDblClickZoomOptions = {
+    inline def apply(): IDblClickZoomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDblClickZoomOptions]
     }
     
-    @scala.inline
-    implicit class IDblClickZoomOptionsMutableBuilder[Self <: IDblClickZoomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDblClickZoomOptions](x: Self) {
       
-      @scala.inline
-      def setCentering(value: Boolean): Self = StObject.set(x, "centering", value.asInstanceOf[js.Any])
+      inline def setCentering(value: Boolean): Self = StObject.set(x, "centering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteringUndefined: Self = StObject.set(x, "centering", js.undefined)
+      inline def setCenteringUndefined: Self = StObject.set(x, "centering", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     }
   }
   
@@ -179,44 +173,32 @@ object behavior {
   }
   object IDragOptions {
     
-    @scala.inline
-    def apply(): IDragOptions = {
+    inline def apply(): IDragOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDragOptions]
     }
     
-    @scala.inline
-    implicit class IDragOptionsMutableBuilder[Self <: IDragOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDragOptions](x: Self) {
       
-      @scala.inline
-      def setActionCursor(value: String): Self = StObject.set(x, "actionCursor", value.asInstanceOf[js.Any])
+      inline def setActionCursor(value: String): Self = StObject.set(x, "actionCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionCursorUndefined: Self = StObject.set(x, "actionCursor", js.undefined)
+      inline def setActionCursorUndefined: Self = StObject.set(x, "actionCursor", js.undefined)
       
-      @scala.inline
-      def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setInertia(value: Boolean): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
+      inline def setInertia(value: Boolean): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInertiaDuration(value: Double): Self = StObject.set(x, "inertiaDuration", value.asInstanceOf[js.Any])
+      inline def setInertiaDuration(value: Double): Self = StObject.set(x, "inertiaDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInertiaDurationUndefined: Self = StObject.set(x, "inertiaDuration", js.undefined)
+      inline def setInertiaDurationUndefined: Self = StObject.set(x, "inertiaDuration", js.undefined)
       
-      @scala.inline
-      def setInertiaUndefined: Self = StObject.set(x, "inertia", js.undefined)
+      inline def setInertiaUndefined: Self = StObject.set(x, "inertia", js.undefined)
       
-      @scala.inline
-      def setTremor(value: Double): Self = StObject.set(x, "tremor", value.asInstanceOf[js.Any])
+      inline def setTremor(value: Double): Self = StObject.set(x, "tremor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTremorUndefined: Self = StObject.set(x, "tremor", js.undefined)
+      inline def setTremorUndefined: Self = StObject.set(x, "tremor", js.undefined)
     }
   }
   
@@ -230,32 +212,24 @@ object behavior {
   }
   object ILeftMouseButtonMagnifierOptions {
     
-    @scala.inline
-    def apply(): ILeftMouseButtonMagnifierOptions = {
+    inline def apply(): ILeftMouseButtonMagnifierOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILeftMouseButtonMagnifierOptions]
     }
     
-    @scala.inline
-    implicit class ILeftMouseButtonMagnifierOptionsMutableBuilder[Self <: ILeftMouseButtonMagnifierOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ILeftMouseButtonMagnifierOptions](x: Self) {
       
-      @scala.inline
-      def setActionCursor(value: String): Self = StObject.set(x, "actionCursor", value.asInstanceOf[js.Any])
+      inline def setActionCursor(value: String): Self = StObject.set(x, "actionCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionCursorUndefined: Self = StObject.set(x, "actionCursor", js.undefined)
+      inline def setActionCursorUndefined: Self = StObject.set(x, "actionCursor", js.undefined)
       
-      @scala.inline
-      def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     }
   }
   
@@ -265,20 +239,16 @@ object behavior {
   }
   object IMultiTouchOptions {
     
-    @scala.inline
-    def apply(): IMultiTouchOptions = {
+    inline def apply(): IMultiTouchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMultiTouchOptions]
     }
     
-    @scala.inline
-    implicit class IMultiTouchOptionsMutableBuilder[Self <: IMultiTouchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IMultiTouchOptions](x: Self) {
       
-      @scala.inline
-      def setTremor(value: Double): Self = StObject.set(x, "tremor", value.asInstanceOf[js.Any])
+      inline def setTremor(value: Double): Self = StObject.set(x, "tremor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTremorUndefined: Self = StObject.set(x, "tremor", js.undefined)
+      inline def setTremorUndefined: Self = StObject.set(x, "tremor", js.undefined)
     }
   }
   
@@ -290,26 +260,20 @@ object behavior {
   }
   object IRightMouseButtonMagnifierOptions {
     
-    @scala.inline
-    def apply(): IRightMouseButtonMagnifierOptions = {
+    inline def apply(): IRightMouseButtonMagnifierOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRightMouseButtonMagnifierOptions]
     }
     
-    @scala.inline
-    implicit class IRightMouseButtonMagnifierOptionsMutableBuilder[Self <: IRightMouseButtonMagnifierOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRightMouseButtonMagnifierOptions](x: Self) {
       
-      @scala.inline
-      def setActionCursor(value: String): Self = StObject.set(x, "actionCursor", value.asInstanceOf[js.Any])
+      inline def setActionCursor(value: String): Self = StObject.set(x, "actionCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionCursorUndefined: Self = StObject.set(x, "actionCursor", js.undefined)
+      inline def setActionCursorUndefined: Self = StObject.set(x, "actionCursor", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     }
   }
   
@@ -319,20 +283,16 @@ object behavior {
   }
   object IRulerOptions {
     
-    @scala.inline
-    def apply(): IRulerOptions = {
+    inline def apply(): IRulerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRulerOptions]
     }
     
-    @scala.inline
-    implicit class IRulerOptionsMutableBuilder[Self <: IRulerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRulerOptions](x: Self) {
       
-      @scala.inline
-      def setBalloonAutoPan(value: Boolean): Self = StObject.set(x, "balloonAutoPan", value.asInstanceOf[js.Any])
+      inline def setBalloonAutoPan(value: Boolean): Self = StObject.set(x, "balloonAutoPan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBalloonAutoPanUndefined: Self = StObject.set(x, "balloonAutoPan", js.undefined)
+      inline def setBalloonAutoPanUndefined: Self = StObject.set(x, "balloonAutoPan", js.undefined)
     }
   }
   
@@ -344,26 +304,20 @@ object behavior {
   }
   object IScrollZoomOptions {
     
-    @scala.inline
-    def apply(): IScrollZoomOptions = {
+    inline def apply(): IScrollZoomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IScrollZoomOptions]
     }
     
-    @scala.inline
-    implicit class IScrollZoomOptionsMutableBuilder[Self <: IScrollZoomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollZoomOptions](x: Self) {
       
-      @scala.inline
-      def setMaximumDelta(value: Double): Self = StObject.set(x, "maximumDelta", value.asInstanceOf[js.Any])
+      inline def setMaximumDelta(value: Double): Self = StObject.set(x, "maximumDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumDeltaUndefined: Self = StObject.set(x, "maximumDelta", js.undefined)
+      inline def setMaximumDeltaUndefined: Self = StObject.set(x, "maximumDelta", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     }
   }
 }

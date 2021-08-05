@@ -24,8 +24,7 @@ trait TextMode extends StObject {
 }
 object TextMode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoOutdent: (js.Any, js.Any, js.Any) => Unit,
     checkOutdent: (js.Any, js.Any, js.Any) => Boolean,
     createModeDelegates: js.Any => Unit,
@@ -39,31 +38,22 @@ object TextMode {
     __obj.asInstanceOf[TextMode]
   }
   
-  @scala.inline
-  implicit class TextModeMutableBuilder[Self <: TextMode] (val x: Self) extends AnyVal {
+  extension [Self <: TextMode](x: Self) {
     
-    @scala.inline
-    def setAutoOutdent(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "autoOutdent", js.Any.fromFunction3(value))
+    inline def setAutoOutdent(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "autoOutdent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCheckOutdent(value: (js.Any, js.Any, js.Any) => Boolean): Self = StObject.set(x, "checkOutdent", js.Any.fromFunction3(value))
+    inline def setCheckOutdent(value: (js.Any, js.Any, js.Any) => Boolean): Self = StObject.set(x, "checkOutdent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateModeDelegates(value: js.Any => Unit): Self = StObject.set(x, "createModeDelegates", js.Any.fromFunction1(value))
+    inline def setCreateModeDelegates(value: js.Any => Unit): Self = StObject.set(x, "createModeDelegates", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWorker(value: js.Any => js.Any): Self = StObject.set(x, "createWorker", js.Any.fromFunction1(value))
+    inline def setCreateWorker(value: js.Any => js.Any): Self = StObject.set(x, "createWorker", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNextLineIndent(value: (js.Any, js.Any, js.Any) => String): Self = StObject.set(x, "getNextLineIndent", js.Any.fromFunction3(value))
+    inline def setGetNextLineIndent(value: (js.Any, js.Any, js.Any) => String): Self = StObject.set(x, "getNextLineIndent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetTokenizer(value: () => js.Any): Self = StObject.set(x, "getTokenizer", js.Any.fromFunction0(value))
+    inline def setGetTokenizer(value: () => js.Any): Self = StObject.set(x, "getTokenizer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggleCommentLines(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "toggleCommentLines", js.Any.fromFunction4(value))
+    inline def setToggleCommentLines(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "toggleCommentLines", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setTransformAction(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "transformAction", js.Any.fromFunction5(value))
+    inline def setTransformAction(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "transformAction", js.Any.fromFunction5(value))
   }
 }

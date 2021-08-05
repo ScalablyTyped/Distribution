@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SubForm extends StObject {
   
-  @JSName("Access.SubForm_typekey")
+  /* private */ @JSName("Access.SubForm_typekey")
   var AccessDotSubForm_typekey: SubForm = js.native
   
   var AddColon: Boolean = js.native

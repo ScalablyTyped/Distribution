@@ -17,8 +17,7 @@ trait DiffRemove
 }
 object DiffRemove {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childs: StringDictionary[ViewportComponentInfo],
     componentInfo: ViewportComponentInfo,
     index: Double,
@@ -29,13 +28,10 @@ object DiffRemove {
     __obj.asInstanceOf[DiffRemove]
   }
   
-  @scala.inline
-  implicit class DiffRemoveMutableBuilder[Self <: DiffRemove] (val x: Self) extends AnyVal {
+  extension [Self <: DiffRemove](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
+    inline def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
   }
 }

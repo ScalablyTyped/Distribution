@@ -34,8 +34,7 @@ trait PerspectiveTransform extends StObject {
 }
 object PerspectiveTransform {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a11: Double,
     a12: Double,
     a13: Double,
@@ -54,46 +53,32 @@ object PerspectiveTransform {
     __obj.asInstanceOf[PerspectiveTransform]
   }
   
-  @scala.inline
-  implicit class PerspectiveTransformMutableBuilder[Self <: PerspectiveTransform] (val x: Self) extends AnyVal {
+  extension [Self <: PerspectiveTransform](x: Self) {
     
-    @scala.inline
-    def setA11(value: Double): Self = StObject.set(x, "a11", value.asInstanceOf[js.Any])
+    inline def setA11(value: Double): Self = StObject.set(x, "a11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA12(value: Double): Self = StObject.set(x, "a12", value.asInstanceOf[js.Any])
+    inline def setA12(value: Double): Self = StObject.set(x, "a12", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA13(value: Double): Self = StObject.set(x, "a13", value.asInstanceOf[js.Any])
+    inline def setA13(value: Double): Self = StObject.set(x, "a13", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA21(value: Double): Self = StObject.set(x, "a21", value.asInstanceOf[js.Any])
+    inline def setA21(value: Double): Self = StObject.set(x, "a21", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA22(value: Double): Self = StObject.set(x, "a22", value.asInstanceOf[js.Any])
+    inline def setA22(value: Double): Self = StObject.set(x, "a22", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA23(value: Double): Self = StObject.set(x, "a23", value.asInstanceOf[js.Any])
+    inline def setA23(value: Double): Self = StObject.set(x, "a23", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA31(value: Double): Self = StObject.set(x, "a31", value.asInstanceOf[js.Any])
+    inline def setA31(value: Double): Self = StObject.set(x, "a31", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA32(value: Double): Self = StObject.set(x, "a32", value.asInstanceOf[js.Any])
+    inline def setA32(value: Double): Self = StObject.set(x, "a32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA33(value: Double): Self = StObject.set(x, "a33", value.asInstanceOf[js.Any])
+    inline def setA33(value: Double): Self = StObject.set(x, "a33", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildAdjoint(value: () => PerspectiveTransform): Self = StObject.set(x, "buildAdjoint", js.Any.fromFunction0(value))
+    inline def setBuildAdjoint(value: () => PerspectiveTransform): Self = StObject.set(x, "buildAdjoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTimes(value: PerspectiveTransform => PerspectiveTransform): Self = StObject.set(x, "times", js.Any.fromFunction1(value))
+    inline def setTimes(value: PerspectiveTransform => PerspectiveTransform): Self = StObject.set(x, "times", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformPoints1(value: js.Array[Double] => Unit): Self = StObject.set(x, "transformPoints1", js.Any.fromFunction1(value))
+    inline def setTransformPoints1(value: js.Array[Double] => Unit): Self = StObject.set(x, "transformPoints1", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformPoints2(value: (js.Array[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "transformPoints2", js.Any.fromFunction2(value))
+    inline def setTransformPoints2(value: (js.Array[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "transformPoints2", js.Any.fromFunction2(value))
   }
 }

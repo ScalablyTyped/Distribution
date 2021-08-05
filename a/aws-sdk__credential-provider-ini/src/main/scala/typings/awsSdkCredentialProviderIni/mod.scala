@@ -19,16 +19,12 @@ object mod {
   @js.native
   val ENV_PROFILE: /* "AWS_PROFILE" */ String = js.native
   
-  @scala.inline
-  def fromIni(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")().asInstanceOf[CredentialProvider]
-  @scala.inline
-  def fromIni(init: FromIniInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromIni(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")().asInstanceOf[CredentialProvider]
+  inline def fromIni(init: FromIniInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
   
-  @scala.inline
-  def getMasterProfileName(init: FromIniInit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMasterProfileName")(init.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getMasterProfileName(init: FromIniInit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMasterProfileName")(init.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parseKnownFiles(init: FromIniInit): js.Promise[ParsedIniData] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKnownFiles")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParsedIniData]]
+  inline def parseKnownFiles(init: FromIniInit): js.Promise[ParsedIniData] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKnownFiles")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParsedIniData]]
   
   trait AssumeRoleParams extends StObject {
     
@@ -61,38 +57,28 @@ object mod {
   }
   object AssumeRoleParams {
     
-    @scala.inline
-    def apply(RoleArn: String, RoleSessionName: String): AssumeRoleParams = {
+    inline def apply(RoleArn: String, RoleSessionName: String): AssumeRoleParams = {
       val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], RoleSessionName = RoleSessionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssumeRoleParams]
     }
     
-    @scala.inline
-    implicit class AssumeRoleParamsMutableBuilder[Self <: AssumeRoleParams] (val x: Self) extends AnyVal {
+    extension [Self <: AssumeRoleParams](x: Self) {
       
-      @scala.inline
-      def setExternalId(value: String): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
+      inline def setExternalId(value: String): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
+      inline def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleSessionName(value: String): Self = StObject.set(x, "RoleSessionName", value.asInstanceOf[js.Any])
+      inline def setRoleSessionName(value: String): Self = StObject.set(x, "RoleSessionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumber(value: String): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: String): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
+      inline def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
       
-      @scala.inline
-      def setTokenCode(value: String): Self = StObject.set(x, "TokenCode", value.asInstanceOf[js.Any])
+      inline def setTokenCode(value: String): Self = StObject.set(x, "TokenCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenCodeUndefined: Self = StObject.set(x, "TokenCode", js.undefined)
+      inline def setTokenCodeUndefined: Self = StObject.set(x, "TokenCode", js.undefined)
     }
   }
   
@@ -138,38 +124,28 @@ object mod {
   }
   object FromIniInit {
     
-    @scala.inline
-    def apply(): FromIniInit = {
+    inline def apply(): FromIniInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FromIniInit]
     }
     
-    @scala.inline
-    implicit class FromIniInitMutableBuilder[Self <: FromIniInit] (val x: Self) extends AnyVal {
+    extension [Self <: FromIniInit](x: Self) {
       
-      @scala.inline
-      def setLoadedConfig(value: js.Promise[SharedConfigFiles]): Self = StObject.set(x, "loadedConfig", value.asInstanceOf[js.Any])
+      inline def setLoadedConfig(value: js.Promise[SharedConfigFiles]): Self = StObject.set(x, "loadedConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadedConfigUndefined: Self = StObject.set(x, "loadedConfig", js.undefined)
+      inline def setLoadedConfigUndefined: Self = StObject.set(x, "loadedConfig", js.undefined)
       
-      @scala.inline
-      def setMfaCodeProvider(value: /* mfaSerial */ String => js.Promise[String]): Self = StObject.set(x, "mfaCodeProvider", js.Any.fromFunction1(value))
+      inline def setMfaCodeProvider(value: /* mfaSerial */ String => js.Promise[String]): Self = StObject.set(x, "mfaCodeProvider", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMfaCodeProviderUndefined: Self = StObject.set(x, "mfaCodeProvider", js.undefined)
+      inline def setMfaCodeProviderUndefined: Self = StObject.set(x, "mfaCodeProvider", js.undefined)
       
-      @scala.inline
-      def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setRoleAssumer(value: (/* sourceCreds */ Credentials, /* params */ AssumeRoleParams) => js.Promise[Credentials]): Self = StObject.set(x, "roleAssumer", js.Any.fromFunction2(value))
+      inline def setRoleAssumer(value: (/* sourceCreds */ Credentials, /* params */ AssumeRoleParams) => js.Promise[Credentials]): Self = StObject.set(x, "roleAssumer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRoleAssumerUndefined: Self = StObject.set(x, "roleAssumer", js.undefined)
+      inline def setRoleAssumerUndefined: Self = StObject.set(x, "roleAssumer", js.undefined)
     }
   }
 }

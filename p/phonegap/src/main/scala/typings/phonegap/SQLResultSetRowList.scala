@@ -12,19 +12,15 @@ trait SQLResultSetRowList extends StObject {
 }
 object SQLResultSetRowList {
   
-  @scala.inline
-  def apply(item: Double => js.Any, length: Double): SQLResultSetRowList = {
+  inline def apply(item: Double => js.Any, length: Double): SQLResultSetRowList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[SQLResultSetRowList]
   }
   
-  @scala.inline
-  implicit class SQLResultSetRowListMutableBuilder[Self <: SQLResultSetRowList] (val x: Self) extends AnyVal {
+  extension [Self <: SQLResultSetRowList](x: Self) {
     
-    @scala.inline
-    def setItem(value: Double => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

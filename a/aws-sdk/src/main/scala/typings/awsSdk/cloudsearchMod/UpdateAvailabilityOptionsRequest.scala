@@ -15,19 +15,15 @@ trait UpdateAvailabilityOptionsRequest extends StObject {
 }
 object UpdateAvailabilityOptionsRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, MultiAZ: Boolean): UpdateAvailabilityOptionsRequest = {
+  inline def apply(DomainName: DomainName, MultiAZ: Boolean): UpdateAvailabilityOptionsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], MultiAZ = MultiAZ.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAvailabilityOptionsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAvailabilityOptionsRequestMutableBuilder[Self <: UpdateAvailabilityOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAvailabilityOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiAZ(value: Boolean): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
+    inline def setMultiAZ(value: Boolean): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait NotificationEventRole extends StObject {
 }
 object NotificationEventRole {
   
-  @scala.inline
-  def apply(id: String, name: String, supportsGroups: Boolean): NotificationEventRole = {
+  inline def apply(id: String, name: String, supportsGroups: Boolean): NotificationEventRole = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], supportsGroups = supportsGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationEventRole]
   }
   
-  @scala.inline
-  implicit class NotificationEventRoleMutableBuilder[Self <: NotificationEventRole] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationEventRole](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsGroups(value: Boolean): Self = StObject.set(x, "supportsGroups", value.asInstanceOf[js.Any])
+    inline def setSupportsGroups(value: Boolean): Self = StObject.set(x, "supportsGroups", value.asInstanceOf[js.Any])
   }
 }
